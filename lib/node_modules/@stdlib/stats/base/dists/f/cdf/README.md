@@ -109,7 +109,7 @@ y = cdf( 2.0, 0.5, 0.0 );
 
 #### cdf.factory( d1, d2 )
 
-Returns a function for evaluating the [cumulative distribution function][cdf] of a [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
+Returns a function for evaluating the [cumulative distribution function][cdf] of an [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
 
 ```javascript
 var mycdf = cdf.factory( 10.0, 2.0 );

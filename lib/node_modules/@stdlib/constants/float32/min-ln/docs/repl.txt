@@ -1,0 +1,12 @@
+
+{{alias}}
+    Natural logarithm of the smallest normalized single-precision floating-point
+    number.
+
+    Examples
+    --------
+    > {{alias}}
+    -87.3365478515625
+
+    See Also
+    --------

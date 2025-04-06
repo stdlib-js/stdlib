@@ -91,6 +91,8 @@ plugins.push([
 	[ 'error' ]
 ]);
 
+/* eslint-disable stdlib/jsdoc-no-multiple-blank-lines */
+
 /**
 * Require `fenced` code block style.
 *
@@ -117,6 +119,8 @@ plugins.push([
 	require( 'remark-lint-code-block-style' ),
 	[ 'error', 'fenced' ]
 ]);
+
+/* eslint-enable stdlib/jsdoc-no-multiple-blank-lines */
 
 /**
 * Require lowercased definition labels.
@@ -158,6 +162,8 @@ plugins.push([
 	[ 'error' ]
 ]);
 
+/* eslint-disable stdlib/jsdoc-no-multiple-blank-lines */
+
 /**
 * Require `_` be used as the emphasis marker.
 *
@@ -177,6 +183,8 @@ plugins.push([
 	require( 'remark-lint-emphasis-marker' ),
 	[ 'error', '_' ]
 ]);
+
+/* eslint-enable stdlib/jsdoc-no-multiple-blank-lines */
 
 /**
 * Require fenced code blocks to have a language flag.
@@ -1065,6 +1073,14 @@ plugins.push([
 ]);
 
 /**
+* Never allow trailing whitespace.
+*
+* @see [no-trailing-spaces]{@link https://github.com/Trott/remark-lint-no-trailing-spaces}
+*/
+
+// plugins.push([require( 'remark-lint-no-trailing-spaces' ), [ 'error' ]]); // NOTE: disabled as requiring an ES module in CommonJS is still experimental
+
+/**
 * Never allow undefined references.
 *
 * @see [no-undefined-references]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-undefined-references}
@@ -1080,7 +1096,6 @@ plugins.push([
 * [foo][]
 *
 * [foo]: https://example.com
-*
 */
 plugins.push([
 	require( 'remark-lint-no-undefined-references' ),
@@ -1160,6 +1175,8 @@ plugins.push([
 	[ 'off', 'ordered' ]
 ]);
 
+/* eslint-disable stdlib/jsdoc-no-multiple-blank-lines */
+
 /**
 * Require that the horizontal rule style be three consecutive asterisks `---`.
 *
@@ -1180,6 +1197,8 @@ plugins.push([
 	require( 'remark-lint-rule-style' ),
 	[ 'error', '* * *' ]
 ]);
+
+/* eslint-enable stdlib/jsdoc-no-multiple-blank-lines */
 
 /**
 * Set the strong marker to asterisks.

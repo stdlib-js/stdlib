@@ -16,14 +16,14 @@
 * limitations under the License.
 */
 
+#include "stdlib/random/base/mt19937.h"
+#include "stdlib/random/base/shared.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <math.h>
 #include <time.h>
 #include <sys/time.h>
-#include "stdlib/random/base.h"
-#include "stdlib/random/base/mt19937.h"
 
 #define NAME "base/mt19937"
 #define ITERATIONS 1000000
