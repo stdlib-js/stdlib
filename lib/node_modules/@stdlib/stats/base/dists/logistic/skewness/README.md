@@ -210,7 +210,7 @@ int main( void ) {
     int i;
 
     for ( i = 0; i < 25; i++ ) {
-        mu = random_uniform( 0.0, 10.0 ) - 5.0;
+        mu = random_uniform( -5.0, 5.0 );
         s = random_uniform( 0.0, 20.0 );
         y = stdlib_base_dists_logistic_skewness( mu, s );
         printf( "µ:: %lf, s: %lf, Skewness(X;µ,s): %lf\n", mu, s, y );

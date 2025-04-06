@@ -17,8 +17,7 @@
 */
 
 #include "stdlib/math/base/special/secd.h"
-#include "stdlib/math/base/special/cos.h"
-#include "stdlib/math/base/special/deg2rad.h"
+#include "stdlib/math/base/special/cosd.h"
 
 /**
 * Computes the secant of an angle measured in degrees.
@@ -31,5 +30,5 @@
 * // returns ~1.15
 */
 double stdlib_base_secd( const double x ) {
-	return 1.0 / stdlib_base_cos( stdlib_base_deg2rad( x ) );
+	return 1.0 / stdlib_base_cosd( x );
 }
