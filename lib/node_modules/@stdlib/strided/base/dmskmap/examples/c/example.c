@@ -28,10 +28,10 @@ static double scale( const double x ) {
 
 int main( void ) {
 	// Create an input strided array:
-	double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
+	const double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 };
 
 	// Create a mask strided array:
-	uint8_t M[] = { 0, 0, 1, 0, 0, 1 };
+	const uint8_t M[] = { 0, 0, 1, 0, 0, 1 };
 
 	// Create an output strided array:
 	double Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };

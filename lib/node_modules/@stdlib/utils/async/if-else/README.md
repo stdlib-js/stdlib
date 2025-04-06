@@ -66,17 +66,17 @@ ifelseAsync( predicate, 1.0, -1.0, done );
 
 The `predicate` function is provided a single argument:
 
--   `clbk`: callback to invoke upon `predicate` function completion
+-   `clbk`: callback to invoke upon `predicate` function completion.
 
 The callback accepts two arguments:
 
--   `error`: error object
--   `bool`: condition used to determine whether to return `x` or `y`
+-   `error`: error object.
+-   `bool`: condition used to determine whether to return `x` or `y`.
 
 The `done` callback is invoked upon function completion and is provided at most two arguments:
 
--   `error`: error object
--   `result`: either `x` or `y`
+-   `error`: error object.
+-   `result`: either `x` or `y`.
 
 </section>
 

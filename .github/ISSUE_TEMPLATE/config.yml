@@ -18,10 +18,10 @@
 
 contact_links:
   - name: 👩‍🏫 Frequently Asked Questions
-    url:  https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
+    url: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
     about: Consult the FAQ in case we have already answered your question there.
   - name: 💬 Question
-    url:  https://gitter.im/stdlib-js/stdlib
+    url: https://gitter.im/stdlib-js/stdlib
     about: Got a (non-bug related) question we haven't already answered? Ask us on Gitter! 🤗
   - name: 👏 Support Us
     url: https://github.com/stdlib-js/stdlib/blob/develop/docs/support_the_project.md
