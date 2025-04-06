@@ -91,15 +91,18 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double x;
+	double x[ 100 ];
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = (int)floor( ( 75.0 * rand_double() ) + 3.0 );
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = (int)floor( ( 75.0 * rand_double() ) + 3.0 );
-		y = stdlib_base_fibonacci_index( x );
+		y = stdlib_base_fibonacci_index( x[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

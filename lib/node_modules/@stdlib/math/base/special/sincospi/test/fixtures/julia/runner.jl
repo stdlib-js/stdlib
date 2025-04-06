@@ -19,31 +19,38 @@
 import JSON
 
 """
-    gen( domain, filepath )
+	gen( domain, name )
 
 Generate fixture data and write to file.
 
 # Arguments
 
 * `domain`: domain
-* `filepath::AbstractString`: filepath of the output file
+* `name::AbstractString`: output filename
 
 # Examples
 
 ``` julia
-julia> x = range( -1000, stop = 1000, length = 2001 );
-julia> gen( x, \"./data.json\" );
+julia> x = linspace( -1000, 1000, 2001 );
+julia> gen( x, \"data.json\" );
 ```
 """
-function gen( domain, filepath )
+function gen( domain, name )
 	x = collect( domain );
 	s = sinpi.( x );
 	c = cospi.( x );
+
+	# Store data to be written to file as a collection:
 	data = Dict([
 		("x", x),
 		("sin", s),
 		("cos", c)
 	]);
+
+	# Based on the script directory, create an output filepath:
+	filepath = joinpath( dir, name );
+
+	# Write the data to the output filepath as JSON:
 	outfile = open( filepath, "w" );
 	write( outfile, JSON.json(data) );
 	write( outfile, "\n" );
@@ -58,10 +65,8 @@ dir = dirname( file );
 
 # Generate fixture data for integer values:
 x = range( -1000.0, stop = 1000.0, length = 2001 );
-out = joinpath( dir, "integers.json" );
-gen( x, out );
+gen( x, "integers.json" );
 
 # Generate fixture data for decimal values:
 x = range( -100.0, stop = 100.0, length = 2003 )
-out = joinpath( dir, "decimals.json" );
-gen( x, out );
+gen( x, "decimals.json" );

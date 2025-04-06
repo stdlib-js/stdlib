@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,43 @@
   ],
   "confs": [
     {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-even",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/create-int32"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-even"
+      ]
+    },
+    {
+      "task": "examples",
       "src": [
         "./src/main.c"
       ],

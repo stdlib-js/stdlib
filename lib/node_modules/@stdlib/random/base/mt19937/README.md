@@ -89,23 +89,20 @@ var r = rand();
 To return a generator having a specific initial state, set the generator `state` option.
 
 ```javascript
-var rand;
-var bool;
+// Generate pseudorandom numbers, thus progressing the generator state:
 var r;
 var i;
-
-// Generate pseudorandom numbers, thus progressing the generator state:
 for ( i = 0; i < 1000; i++ ) {
     r = mt19937();
 }
 
 // Create a new MT19937 PRNG initialized to the current state of `mt19937`:
-rand = mt19937.factory({
+var rand = mt19937.factory({
     'state': mt19937.state
 });
 
 // Test that the generated pseudorandom numbers are the same:
-bool = ( rand() === mt19937() );
+var bool = ( rand() === mt19937() );
 // returns true
 ```
 
@@ -141,17 +138,15 @@ var max = mt19937.MAX;
 The value used to seed `mt19937()`.
 
 ```javascript
-var rand;
+// Generate pseudorandom values...
 var r;
 var i;
-
-// Generate pseudorandom values...
 for ( i = 0; i < 100; i++ ) {
     r = mt19937();
 }
 
 // Generate the same pseudorandom values...
-rand = mt19937.factory({
+var rand = mt19937.factory({
     'seed': mt19937.seed
 });
 for ( i = 0; i < 100; i++ ) {
@@ -259,18 +254,15 @@ var o = mt19937.toJSON();
 ```javascript
 var mt19937 = require( '@stdlib/random/base/mt19937' );
 
-var seed;
-var rand;
-var i;
-
 // Generate pseudorandom numbers...
+var i;
 for ( i = 0; i < 100; i++ ) {
     console.log( mt19937() );
 }
 
 // Create a new pseudorandom number generator...
-seed = 1234;
-rand = mt19937.factory({
+var seed = 1234;
+var rand = mt19937.factory({
     'seed': seed
 });
 for ( i = 0; i < 100; i++ ) {

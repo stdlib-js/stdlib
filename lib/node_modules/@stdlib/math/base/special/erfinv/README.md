@@ -39,7 +39,7 @@ The [inverse error function][inverse-error-function] is defined in terms of the 
 
 <!-- </equation> -->
 
-where `c_0 = 1` and 
+where `c_0 = 1` and
 
 <!-- <equation class="equation" label="eq:inverse_error_function_series_coefficients" align="center" raw="c_k=\sum_{m=0}^{k-1}\frac{c_m c_{k-1-m}}{(m+1)(2m+1)} = \left\{1,1,\frac{7}{6},\frac{127}{90},\frac{4369}{2520},\frac{34807}{16200},\ldots\right\}" alt="Series coefficients."> -->
 
@@ -116,15 +116,16 @@ var y = erfinv( -0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var erfinv = require( '@stdlib/math/base/special/erfinv' );
 
-var x = linspace( -1.0, 1.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -1.0, 1.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'x: %d, erfinv(x): %d', x[ i ], erfinv( x[ i ] ) );
-}
+logEachMap( 'x: %0.4f, erfinv(x): %0.4f', x, erfinv );
 ```
 
 </section>

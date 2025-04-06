@@ -21,13 +21,13 @@
 #include <stdio.h>
 
 int main( void ) {
-    double m;
-    double v;
-    int i;
-    
-    for ( i = 0; i < 100; i++ ) {
-        m = -1.0 + ( ( (double)rand() / (double)RAND_MAX ) * 2.0 );
-        v = stdlib_base_ellipk( m );
-        printf( "ellipk(%lf) = %lf\n", m, v );
-    }
+	double m;
+	double v;
+	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		m = -1.0 + ( ( (double)rand() / (double)RAND_MAX ) * 2.0 );
+		v = stdlib_base_ellipk( m );
+		printf( "ellipk(%lf) = %lf\n", m, v );
+	}
 }
