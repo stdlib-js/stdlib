@@ -59,9 +59,8 @@ Computes the sum of absolute values ([_L1_ norm][l1norm]) of double-precision fl
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
-var N = x.length;
 
-var v = dnanasum( N, x, 1 );
+var v = dnanasum( x.length, x, 1 );
 // returns 5.0
 ```
 
@@ -69,9 +68,9 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **strideX**: index increment for `x`.
+-   **strideX**: stride length.
 
-The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of absolute values ([_L1_ norm][l1norm]) for every other element in the strided array,
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of absolute values ([_L1_ norm][l1norm]) for every other element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -111,9 +110,9 @@ var v = dnanasum.ndarray( 4, x, 1, 0 );
 
 The function has the following additional parameters:
 
--   **offsetX**: starting index for `x`.
+-   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the sum of absolute values ([_L1_ norm][l1norm]) for every other value in the strided array starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the sum of absolute values ([_L1_ norm][l1norm]) for every other value in the strided array starting from the second value:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -152,7 +151,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 var dnanasum = require( '@stdlib/blas/ext/base/dnanasum' );
 
 function rand() {
-    if ( bernoulli( 0.8 ) > 0 ) {
+    if ( bernoulli( 0.5 ) < 1 ) {
         return discreteUniform( 0, 100 );
     }
     return NaN;
@@ -210,7 +209,7 @@ The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **X**: `[in] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length.
 
 ```c
 double stdlib_strided_dnanasum( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
@@ -231,8 +230,8 @@ The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **X**: `[in] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
--   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length.
+-   **offsetX**: `[in] CBLAS_INT` starting index.
 
 ```c
 double stdlib_strided_dnanasum_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );

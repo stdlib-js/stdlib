@@ -37,6 +37,29 @@
 *
 * -   The user is responsible for freeing the allocated memory.
 *
+* -   To create a zero-dimensional array,
+*
+*     -   provide an `ndims` argument equal to `0`.
+*     -   a `shape` argument equal to a null pointer.
+*     -   a `strides` argument containing a single element equal to `0`.
+*
+*     The `order` argument can be either row-major or column-major and has no effect on data storage or access.
+*
+*     ```javascript
+*     #include "stdlib/ndarray/ctor.h"
+*     #include "stdlib/ndarray/dtypes.h"
+*     #include "stdlib/ndarray/index_modes.h"
+*     #include "stdlib/ndarray/orders.h"
+*     #include <stdint.h>
+*
+*     uint8_t buffer[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+*     int64_t *shape = NULL;
+*     int64_t strides = { 0 };
+*     int64_t offset = 0;
+*
+*     struct ndarray *x = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT64, buffer, 0, shape, strides, offset, STDLIB_NDARRAY_ROW_MAJOR, STDLIB_NDARRAY_INDEX_ERROR, 1, { STDLIB_NDARRAY_INDEX_ERROR } );
+*     ```
+*
 * @param dtype      data type
 * @param data       pointer to the underlying byte array
 * @param ndims      number of dimensions
@@ -115,7 +138,11 @@ struct ndarray * stdlib_ndarray_allocate( int16_t dtype, uint8_t *data, int64_t 
 	arr->strides = strides;
 	arr->submodes = submodes;
 
-	len = stdlib_ndarray_numel( ndims, shape );
+	if ( shape == NULL ) {
+		len = 1;
+	} else {
+		len = stdlib_ndarray_numel( ndims, shape );
+	}
 	arr->length = len;
 
 	arr->BYTES_PER_ELEMENT = stdlib_ndarray_bytes_per_element( dtype );
@@ -146,17 +173,21 @@ uint8_t * stdlib_ndarray_data( const struct ndarray *arr ) {
 }
 
 /**
-* Returns an ndarray dimension.
+* Returns an ndarray dimension size.
 *
 * ## Notes
 *
 * -   The function does not perform any sanity checks.
+* -   If an input ndarray is zero-dimensional, the function always returns `-1`.
 *
 * @param arr  input ndarray
 * @param i    dimension index
-* @return     dimension
+* @return     dimension size
 */
 int64_t stdlib_ndarray_dimension( const struct ndarray *arr, const int64_t i ) {
+	if ( arr->shape == NULL ) {
+		return -1;
+	}
 	return arr->shape[ i ];
 }
 
@@ -229,8 +260,11 @@ int64_t stdlib_ndarray_flags( const struct ndarray *arr ) {
 
 	// Determine if the array can be stored contiguously...
 	if ( len == 0 || stdlib_ndarray_iteration_order( ndims, strides ) == 0 ) {
-		// If an array does not contain any elements, then no data to store, and, if the array is unordered, adjacent array elements are not guaranteed to be stored next to each other.
+		// If an array does not contain any elements, then no data to store, and, if the array is unordered, adjacent array elements are not guaranteed to be stored next to each other:
 		contiguous = 0;
+	} else if ( ndims == 0 ) {
+		// If an array is zero-dimensional, data consists of a single element which means it is trivially compatible with a single memory segment:
+		contiguous = 1;
 	} else {
 		// Ensure that the array is compatible with a single memory segment:
 		stdlib_ndarray_minmax_view_buffer_index( ndims, arr->shape, strides, arr->offset, tmp );
@@ -342,6 +376,10 @@ int8_t stdlib_ndarray_order( const struct ndarray *arr ) {
 
 /**
 * Returns a pointer to an array containing an ndarray shape (dimensions).
+*
+* ## Notes
+*
+* -   If an input ndarray is zero-dimensional, the function returns a null pointer.
 *
 * @param arr  input ndarray
 * @return     array shape (dimensions)
