@@ -1,0 +1,98 @@
+{
+  "options": {
+    "task": "build",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/math/base/special/expm1",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/log1p",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/constants/float64/ln-half",
+        "@stdlib/constants/float64/ninf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/constants/float64/eps",
+        "@stdlib/math/base/special/expm1",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/log1p",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/constants/float64/ln-half",
+        "@stdlib/constants/float64/ninf"
+      ]
+    },
+    {
+      "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/expm1",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/log1p",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/constants/float64/ln-half",
+        "@stdlib/constants/float64/ninf"
+      ]
+    }
+  ]
+}

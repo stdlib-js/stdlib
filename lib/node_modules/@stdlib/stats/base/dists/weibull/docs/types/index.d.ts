@@ -44,8 +44,8 @@ interface Namespace {
 	* Weibull distribution cumulative distribution function (CDF).
 	*
 	* @param x - input value
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns evaluated CDF
 	*
 	* @example
@@ -149,8 +149,8 @@ interface Namespace {
 	* Weibull distribution logarithm of cumulative distribution function (CDF).
 	*
 	* @param x - input value
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns evaluated logCDF
 	*
 	* @example
@@ -351,8 +351,8 @@ interface Namespace {
 	* Weibull distribution quantile function.
 	*
 	* @param p - input value
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns evaluated quantile function
 	*
 	* @example

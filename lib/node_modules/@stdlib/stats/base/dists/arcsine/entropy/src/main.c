@@ -29,7 +29,7 @@
 * @return     entropy
 *
 * @example
-* double y = stdlib_base_arcsine_entropy( 4.0, 12.0 );
+* double y = stdlib_base_dists_arcsine_entropy( 4.0, 12.0 );
 * // returns ~1.838
 */
 double stdlib_base_dists_arcsine_entropy( const double a, const double b ) {

@@ -33,7 +33,7 @@
 * @return       Node-API value
 */
 static napi_value addon( napi_env env, napi_callback_info info ) {
-    STDLIB_NAPI_ARGV( env, info, argv, argc, 6 );
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 6 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_DOUBLE( env, sum, argv, 1 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );

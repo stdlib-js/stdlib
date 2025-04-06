@@ -30,7 +30,7 @@ int main( void ) {
 	const int strideX = 1;
 
 	// Add a constant to each element:
-	c_dapx( N, 5.0, x, strideX );
+	stdlib_strided_dapx( N, 5.0, x, strideX );
 
 	// Print the result:
 	for ( int i = 0; i < 8; i++ ) {
