@@ -23,7 +23,7 @@
 * Tests if a double-precision floating-point numeric value is a positive finite number.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * #include <stdbool.h>

@@ -159,12 +159,12 @@ for ( i = 0; i < 100; i++ ) {
 #include "stdlib/math/base/special/fast/alpha_max_plus_beta_min.h"
 ```
 
-#### stdlib_base_fast_ampbm( x, y ) 
+#### stdlib_base_fast_ampbm( x, y )
 
 Computes the hypotenuse using the alpha max plus beta min algorithm.
 
 ```c
-double h = stdlib_base_fast_ampbm( -5.0, 12.0 ); 
+double h = stdlib_base_fast_ampbm( -5.0, 12.0 );
 // returns ~13.5
 ```
 
