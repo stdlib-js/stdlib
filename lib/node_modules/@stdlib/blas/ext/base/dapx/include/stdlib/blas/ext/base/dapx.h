@@ -31,12 +31,12 @@ extern "C" {
 /**
 * Adds a scalar constant to each element in a double-precision floating-point strided array.
 */
-void API_SUFFIX(c_dapx)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX );
+void API_SUFFIX(stdlib_strided_dapx)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX );
 
 /**
 * Adds a scalar constant to each element in a double-precision floating-point strided array using alternative indexing semantics.
 */
-void API_SUFFIX(c_dapx_ndarray)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+void API_SUFFIX(stdlib_strided_dapx_ndarray)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }

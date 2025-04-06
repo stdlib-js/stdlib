@@ -30,7 +30,7 @@
 * @return       differential entropy of the normal distribution
 *
 * @example
-* double y = stdlib_base_normal_entropy( 0.0, 1.0 );
+* double y = stdlib_base_dists_normal_entropy( 0.0, 1.0 );
 * // returns ~1.419
 */
 double stdlib_base_dists_normal_entropy( const double mu, const double sigma ) {

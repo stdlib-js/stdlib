@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Tests if a single-precision floating-point number value is a probability.
+
+    A probability is defined as a number on the closed interval [0,1].
+
+    Parameters
+    ----------
+    x: number
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the value is a probability.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 0.5 )
+    true
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( NaN )
+    false
+
+    See Also
+    --------
+

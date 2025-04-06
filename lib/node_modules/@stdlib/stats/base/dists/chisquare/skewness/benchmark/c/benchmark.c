@@ -100,7 +100,7 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		k[ i ] = random_uniform( 0.0, 20.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+		k[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 	}
 
 	t = tic();

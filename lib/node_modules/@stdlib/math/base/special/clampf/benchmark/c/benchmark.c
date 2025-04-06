@@ -109,14 +109,17 @@ float clampf( float v, float min, float max ) {
 static double benchmark( void ) {
 	double elapsed;
 	double t;
-	float x;
+	float x[ 100 ];
 	float y;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 20.0f*rand_float() ) - 10.0f;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 20.0f*rand_float() ) - 10.0f;
-		y = clampf( x, -5.0f, 5.0f );
+		y = clampf( x[ i%100 ], -5.0f, 5.0f );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

@@ -66,7 +66,7 @@ static const double XMAX = 3.745194030963158e306;
 * -   Fox, Leslie, and Ian Bax Parker. 1968. _Chebyshev polynomials in numerical analysis_. Oxford Mathematical Handbooks. London, United Kingdom: Oxford University Press. <https://books.google.com/books?id=F8NzsEtJCD0C>.
 *
 * @param x    value at which the series is to be evaluated
-* @returns    series value
+* @return     series value
 */
 static double dceval( const double x ) {
 	double twox;
@@ -119,7 +119,7 @@ static double gammaCorrection( const double x ) {
 *
 * @param a    first input value
 * @param b    second input value
-* @returns    natural logarithm of beta function
+* @return     natural logarithm of beta function
 *
 * @example
 * double out = stdlib_base_betaln( 5.0, 0.2 );
