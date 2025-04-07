@@ -29,7 +29,7 @@
 #   GITHUB_TOKEN   GitHub token for authentication.
 #
 
-# shellcheck disable=SC2153
+# shellcheck disable=SC2153,SC2155
 
 # Ensure that the exit status of pipelines is non-zero in the event that at least one
 # of the commands in a pipeline fails:
@@ -253,7 +253,11 @@ update_commit_map() {
 	for existing in "${commit_keys[@]}"; do
 		if [ "$existing" = "$key" ]; then
 			commit_counts[i]=$(( commit_counts[i] + 1 ))
-			commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}"
+			if [ "$line" = "null" ]; then
+				commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > ${formatted_body}"$'\n\n'"    ${code_snippet}"
+			else
+				commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}"
+			fi
 			found=1
 			break
 		fi

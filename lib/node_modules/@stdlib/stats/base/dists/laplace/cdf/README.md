@@ -135,6 +135,104 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/laplace/cdf.h"
+```
+
+#### stdlib_base_dists_laplace_cdf( x, mu, b )
+
+Evaluates the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at value `x`.
+
+```c
+double out = stdlib_base_dists_laplace_cdf( 2.0, 0.0, 1.0 );
+// returns ~0.932
+```
+
+The function accepts the following arguments:
+
+-   **p**: `[in] double` input value.
+-   **mu**: `[in] double` location parameter.
+-   **b**: `[in] double` rate parameter.
+
+```c
+double stdlib_base_dists_laplace_cdf( const double x, const double mu, const double b );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/laplace/cdf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double mu;
+    double b;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        mu = random_uniform( -5.0, 5.0 );
+        b = random_uniform( 0.0, 20.0 );
+        x = random_uniform( 0.0, 1.0 );
+        y = stdlib_base_dists_laplace_cdf( p, mu, b );
+        printf( "x: %lf, µ: %lf, b: %lf, F(x;µ,b): %lf\n", x, mu, b, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
