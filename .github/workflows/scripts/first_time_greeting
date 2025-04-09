@@ -138,7 +138,7 @@ main() {
 	## Getting Started
 
 	-   Please read our [contributing guidelines][stdlib-contributing] if you haven't already.
-	-   For development guidance, refer to the [development guide][stdlib-development]
+	-   For development guidance, refer to the [development guide][stdlib-development].
 
 	## Next Steps
 
@@ -170,7 +170,7 @@ main() {
 	-   [Developtment Guide][stdlib-development]
 	-   [Gitter channel][stdlib-gitter]
 	-   [make rules for running examples][make-docs-examples]
-	-   [make rules for running project unit tests][make-docs-test]
+	-   [make rules for running unit tests][make-docs-test]
 	-   [make rules for running benchmarks][make-docs-benchmark]
 
 	[stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
