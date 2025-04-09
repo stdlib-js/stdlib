@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Script to post a comment with relevant `make` commands tailored to package changed in a PR.
+# Script to post a comment with relevant `make` commands tailored to packages changed in a PR.
 #
 # Usage: package_commands_comment <pr_number>
 #
@@ -177,7 +177,7 @@ ${docs_links}"
 		if [[ "${#c_files[@]}" -eq 0 ]]; then
 			comment="Hello! 👋
 
-Pro-tip: Use the below \`make\` commands during local development to ensure that all tests, examples, and benchmark files in your PR run successfully.
+Pro-tip: Use the \`make\` commands below during local development to ensure that all tests, examples, and benchmark files in your PR run successfully.
 
 For each of the commands, please run them from the root stdlib repository directory (not the package folder!).
 
@@ -202,11 +202,11 @@ ${docs_links}"
 		else
 			comment="Hello! 👋
 
-Pro-tip: Use the below \`make\` commands during local development to ensure that all tests, examples, and benchmark files in your PR run successfully.
+Pro-tip: Use the \`make\` below commands during local development to ensure that all tests, examples, and benchmark files in your PR run successfully.
 
 For each of the commands, please run them from the root stdlib repository directory (not the package folder!).
 
-To build the native add-on,
+To build a native add-on,
 
 \`\`\`bash
 NODE_ADDONS_PATTERN=\"${packages}\" make install-node-addons
