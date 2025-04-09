@@ -259,21 +259,6 @@ rules[ 'no-use-before-define' ] = [ 'error', {
 	'classes': true
 }];
 
-/**
-* Allow identifiers up to 30 characters in length.
-*
-* @name id-length
-* @memberof rules
-* @type {Array}
-* @default [ 'warn', { max: 30 } ]
-* @see [id-length]{@link https://eslint.org/docs/rules/id-length}
-*
-* @example
-* // Okay...
-* var hasDefinePropertiesSupport = true;
-*/
-rules[ 'id-length' ] = [ 'warn', { 'max': 30 } ];
-
 
 // EXPORTS //
 
