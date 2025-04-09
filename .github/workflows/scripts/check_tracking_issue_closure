@@ -1,0 +1,281 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to check PRs for auto-closing language referencing tracking issues.
+#
+# Usage: check_tracking_issue_closure <days>
+#
+# Arguments:
+#
+#   days        Number of days to look back for PRs.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+
+# shellcheck disable=SC2153
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one
+# of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Assign command line arguments to variables:
+if [ "$#" -lt 1 ]; then
+	echo "Usage: $0 <days>" >&2
+	exit 1
+fi
+days="$1"
+
+# Get the GitHub authentication token:
+github_token="${GITHUB_TOKEN}"
+if [ -z "$github_token" ]; then
+	echo "Error: GITHUB_TOKEN environment variable not set." >&2
+	exit 1
+fi
+
+# GitHub API base URL:
+github_api_url="https://api.github.com"
+
+# Repository owner and name:
+repo_owner="stdlib-js"
+repo_name="stdlib"
+
+# Regular expressions for auto-closing language:
+closing_keywords="(close|closes|closed|fix|fixes|fixed|resolve|resolves|resolved)"
+
+# Unique identifier for our bot comments:
+comment_identifier="<!-- stdlib-bot-tracking-issue-closure-check -->"
+
+
+# FUNCTIONS #
+
+# Error handler.
+on_error() {
+	echo "Error: An error was encountered during execution." >&2
+	exit 1
+}
+
+# Exit handler.
+on_exit() {
+	echo "Script execution completed."
+	return 0
+}
+
+# Performs a GitHub API request.
+#
+# $1 - HTTP method (GET or POST)
+# $2 - API endpoint
+# $3 - data for POST requests
+github_api() {
+	local method="$1"
+	local endpoint="$2"
+	local data="$3"
+
+	# Initialize an array to hold curl headers:
+	local headers=()
+
+	# If GITHUB_TOKEN is set, add the Authorization header:
+	if [ -n "${github_token}" ]; then
+		headers+=("-H" "Authorization: token ${github_token}")
+	fi
+
+	# Determine the HTTP method and construct the curl command accordingly...
+	case "${method}" in
+		GET)
+			curl -s "${headers[@]}" "${github_api_url}${endpoint}"
+			;;
+		POST)
+			# For POST requests, always set the Content-Type header:
+			headers+=("-H" "Content-Type: application/json")
+
+			# If data is provided, include it in the request:
+			if [ -n "${data}" ]; then
+				curl -s -X POST "${headers[@]}" -d "${data}" "${github_api_url}${endpoint}"
+			else
+				# Handle cases where POST data is required but not provided:
+				echo "ERROR: POST request requires data." >&2
+				return 1
+			fi
+			;;
+		*)
+			echo "ERROR: Invalid HTTP method: ${method}." >&2
+			return 1
+			;;
+	esac
+}
+
+# Get date in ISO 8601 format for N days ago.
+#
+# $1 - Number of days ago
+get_date_n_days_ago() {
+	local days="$1"
+
+	# Check if we're on macOS or Linux:
+	if [[ "$(uname)" == "Darwin" ]]; then
+		# macOS date command:
+		date -u -v-"${days}"d "+%Y-%m-%dT%H:%M:%SZ"
+	else
+		# Linux date command:
+		date -u -d "${days} days ago" "+%Y-%m-%dT%H:%M:%SZ"
+	fi
+}
+
+# Check if a PR has already been commented on by the bot regarding tracking issue closure.
+#
+# $1 - PR number
+has_bot_comment() {
+	local pr_number="$1"
+	local response
+
+	# Get all comments on the PR:
+	response=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/comments")
+
+	# Check if any comment contains our unique identifier:
+	if echo "$response" | jq -r '.[] | .body' | grep -q "${comment_identifier}"; then
+		return 0
+	else
+		return 1
+	fi
+}
+
+# Check if an issue has the "Tracking Issue" label.
+#
+# $1 - Issue number
+is_tracking_issue() {
+	local issue_number="$1"
+	local response
+
+	# Get the issue:
+	response=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/issues/${issue_number}")
+
+	# Check if the issue exists and has the "Tracking Issue" label:
+	if echo "$response" | jq -r '.labels[].name' | grep -q "Tracking Issue"; then
+		return 0
+	else
+		return 1
+	fi
+}
+
+# Post a comment on a PR.
+#
+# $1 - PR number
+post_comment() {
+	local pr_number="$1"
+	local comment_body
+	local json_payload
+
+	comment_body="${comment_identifier}
+:warning: **Tracking Issue Closure Warning** :warning:
+
+I noticed your PR description contains closing keywords (\"Resolves\", \"Closes\", or \"Fixes\") referencing a \"Tracking Issue\".
+
+**Why this matters:**
+Tracking issues should typically remain open until all related sub-issues are completed. GitHub automatically closes issues with such closing keywords when the PR is merged. For more information, see [GitHub's documentation on using keywords in issues and pull requests][github-keywords].
+
+**Required action:**
+Use \"Progresses\" instead to reference the tracking issue without automatically closing it.
+
+Thank you for your contribution to the project!
+
+[github-keywords]: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests"
+
+	# Create properly escaped JSON payload using jq
+	json_payload=$(jq -n --arg body "$comment_body" '{"body": $body}')
+
+	# Post the comment:
+	github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/comments" "$json_payload"
+	return $?
+}
+
+# Main function to check PRs for tracking issue closure.
+main() {
+	# Set up error handling:
+	trap "on_error" ERR
+	trap "on_exit" EXIT
+
+	# Get recent PRs:
+	echo "Fetching PRs from the last ${days} days..."
+	since_date=$(get_date_n_days_ago "$days")
+	echo "Looking for PRs updated since: ${since_date}"
+
+	response=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/pulls?state=open&sort=updated&direction=desc&per_page=100&since=${since_date}")
+
+	# Count PRs:
+	pr_count=$(echo "$response" | jq -r 'length')
+	echo "Found ${pr_count} open PRs updated in the last ${days} days."
+
+	# Loop through each PR:
+	echo "$response" | jq -r '.[] | .number' | while read -r pr_number; do
+		echo "Checking PR #${pr_number}..."
+
+		# Get PR body:
+		pr_response=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/pulls/${pr_number}")
+		pr_body=$(echo "$pr_response" | jq -r '.body')
+
+		# If PR body is null, skip:
+		if [ "$pr_body" = "null" ]; then
+			echo "PR #${pr_number} has no description."
+			continue
+		fi
+
+		# Extract issue numbers referenced with closing keywords:
+		issue_refs=$(echo "$pr_body" | grep -oiE "${closing_keywords} +#[0-9]+" | grep -oE "#[0-9]+" | sed 's/#//')
+
+		# If no closing references found, continue to next PR:
+		if [ -z "$issue_refs" ]; then
+			echo "No closing references found in PR #${pr_number}."
+			continue
+		fi
+
+		# Check if the PR has already been commented on:
+		if has_bot_comment "$pr_number"; then
+			echo "PR #${pr_number} already has a bot comment about tracking issues."
+			continue
+		fi
+
+		# Flag to track if we found any tracking issues:
+		found_tracking_issue=false
+
+		# Check each referenced issue:
+		for issue_number in $issue_refs; do
+			if is_tracking_issue "$issue_number"; then
+				echo "PR #${pr_number} references tracking issue #${issue_number} with closing language."
+				found_tracking_issue=true
+				break
+			fi
+		done
+
+		# If we found a tracking issue referenced with closing language, post a comment:
+		if [ "$found_tracking_issue" = true ]; then
+			echo "Posting comment on PR #${pr_number}..."
+			if post_comment "$pr_number"; then
+				echo "Successfully posted comment on PR #${pr_number}."
+			else
+				echo "Failed to post comment on PR #${pr_number}."
+			fi
+		fi
+	done
+
+	return 0
+}
+
+# Call the main function:
+main

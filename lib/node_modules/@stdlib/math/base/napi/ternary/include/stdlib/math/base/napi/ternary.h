@@ -26,6 +26,7 @@
 #include "stdlib/math/base/napi/ternary/dii_d.h"
 #include "stdlib/math/base/napi/ternary/fff_f.h"
 #include "stdlib/math/base/napi/ternary/fif_f.h"
+#include "stdlib/math/base/napi/ternary/fii_f.h"
 #include "stdlib/math/base/napi/ternary/iid_d.h"
 #include "stdlib/math/base/napi/ternary/iii_d.h"
 #include "stdlib/math/base/napi/ternary/zzz_z.h"
