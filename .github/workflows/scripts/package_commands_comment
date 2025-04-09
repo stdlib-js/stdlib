@@ -117,7 +117,7 @@ main() {
 		on_error 1
 	fi
 
-	# Fetch changed files in pull request (no need to paginate because skipping PRs affecting multiple packages anyway):
+	# Fetch changed files in pull request:
 	response=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/pulls/${pr_number}/files?per_page=100")
 	files=$(echo "${response}" | jq -r '.[] | .filename')
 
