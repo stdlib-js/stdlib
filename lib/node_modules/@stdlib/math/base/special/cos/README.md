@@ -59,16 +59,17 @@ v = cos( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var TWO_PI = require( '@stdlib/constants/float64/two-pi' );
 var cos = require( '@stdlib/math/base/special/cos' );
 
-var x = linspace( 0.0, TWO_PI, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, 0.0, TWO_PI, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( cos( x[ i ] ) );
-}
+logEachMap( 'cos(%0.4f) = %0.4f', x, cos );
 ```
 
 </section>
