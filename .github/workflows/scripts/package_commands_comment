@@ -139,7 +139,7 @@ main() {
 ## Documentation Links
 
 -   [make rules for running examples][make-docs-examples]
--   [make rules for running project unit tests][make-docs-test]
+-   [make rules for running unit tests][make-docs-test]
 -   [make rules for running benchmarks][make-docs-benchmark]
 
 [make-docs-examples]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/examples/README.md
