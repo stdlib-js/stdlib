@@ -95,9 +95,9 @@ static double random_uniform( const double min, const double max ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	double elapsed;
-	int32_t k[ 100 ];
 	double lambda[ 100 ];
+	int32_t k[ 100 ];
+	double elapsed;
 	double y;
 	double t;
 	int i;
