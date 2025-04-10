@@ -84,19 +84,16 @@ h = hypotf( 5.0, NaN );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var hypotf = require( '@stdlib/math/base/special/hypotf' );
 
-var len = 100;
 var opts = {
     'dtype': 'float32'
 };
-var x = discreteUniform( len, -50, 50, opts );
-var y = discreteUniform( len, -50, 50, opts );
+var x = discreteUniform( 100, -50, 50, opts );
+var y = discreteUniform( 100, -50, 50, opts );
 
-var i;
-for ( i = 0; i < len; i++ ) {
-    console.log( 'h(%d,%d) = %d', x[ i ], y[ i ], hypotf( x[ i ], y[ i ] ) );
-}
+logEachMap( 'h(%d,%d) = %0.4f', x, y, hypotf );
 ```
 
 </section>
