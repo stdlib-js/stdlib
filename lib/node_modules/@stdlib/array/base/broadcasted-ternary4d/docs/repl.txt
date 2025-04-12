@@ -1,0 +1,32 @@
+
+{{alias}}( arrays, shapes, fcn )
+    Applies a ternary callback to elements in three broadcasted input arrays and
+    assigns results to elements in a four-dimensional nested output array.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject
+        Array-like object containing three input nested arrays and one output
+        nested array.
+
+    shapes: Array<Array<integer>>
+        Array shapes.
+
+    fcn: Function
+        Ternary callback.
+
+    Examples
+    --------
+    > function fcn( x, y, z ) { return x + y + z };
+    > var x = [ [ [ 1.0 ] ] ];
+    > var y = [ [ [ 2.0, 3.0 ] ] ];
+    > var z = [ [ [ [ 4.0, 5.0 ] ] ] ];
+    > var out = [ [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ] ];
+    > var shapes =[ [ 1, 1, 1 ], [ 1, 1, 2 ], [ 1, 1, 1, 2 ], [ 1, 1, 2, 2 ] ];
+    > {{alias}}( [ x, y, z, out ], shapes, fcn );
+    > out
+    [ [ [ [ 7.0, 9.0 ], [ 7.0, 9.0 ] ] ] ]
+
+    See Also
+    --------
+

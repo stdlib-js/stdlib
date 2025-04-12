@@ -1,6 +1,6 @@
 
 {{alias}}
-    The minimum base 10 exponent for a normalized single-precision floating-
+    The minimum base 10 exponent for a normal single-precision floating-
     point number.
 
     Examples

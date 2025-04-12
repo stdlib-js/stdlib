@@ -2,7 +2,8 @@
 {{alias}}( x, y )
     Computes the hypotenuse avoiding overflow and underflow (single-precision).
 
-    If either argument is `NaN`, the function returns `NaN`.
+    If either argument is `NaN` and the other argument is not `+-Infinity`,
+    the function returns `NaN`.
 
     Parameters
     ----------

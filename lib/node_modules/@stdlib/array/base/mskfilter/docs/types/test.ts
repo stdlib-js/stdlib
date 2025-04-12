@@ -39,7 +39,7 @@ import mskfilter = require( './index' );
 	mskfilter( {}, [ 0, 0 ] ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not an array-like object containing numbers...
+// The compiler throws an error if the function is provided a second argument which is not an array-like object...
 {
 	mskfilter( [], 1 ); // $ExpectError
 	mskfilter( [], true ); // $ExpectError

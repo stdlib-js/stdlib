@@ -28,49 +28,51 @@
     {
       "task": "build",
       "src": [
-        "./src/srev.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-float32array"
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/srev.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/srev.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
+      ]
     }
   ]
 }

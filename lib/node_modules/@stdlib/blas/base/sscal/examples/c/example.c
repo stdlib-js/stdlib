@@ -36,4 +36,12 @@ int main( void ) {
 	for ( int i = 0; i < 8; i++ ) {
 		printf( "x[ %i ] = %f\n", i, x[ i ] );
 	}
+
+	// Scale the vector using alternative indexing semantics:
+	c_sscal_ndarray( N, 5.0f, x, -strideX, N-1 );
+
+	// Print the result:
+	for ( int i = 0; i < 8; i++ ) {
+		printf( "x[ %i ] = %f\n", i, x[ i ] );
+	}
 }
