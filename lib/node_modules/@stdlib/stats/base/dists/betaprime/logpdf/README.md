@@ -197,7 +197,7 @@ for ( i = 0; i < 10; i++ ) {
 Evaluates the natural logarithm of the [probability density function][pdf] (PDF) for a [beta prime][betaprime-distribution]  distribution with parameters `alpha` (first shape parameter) and `beta` (second shape parameter).
 
 ```c
-double y = stdlib_base_dists_betaprime_logpdf( 0.5, 1.0, 1.0 );
+double y = stdlib_base_dists_betaprime_logpdf( 0.5, 0.5, 1.0 );
 // returns ~-0.955
 ```
 
