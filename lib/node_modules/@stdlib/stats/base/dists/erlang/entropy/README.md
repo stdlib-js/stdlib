@@ -176,7 +176,7 @@ for ( i = 0; i < 10; i++ ) {
 Returns the [differential entropy][entropy] of an [Erlang][erlang-distribution] distribution with parameters shape `k` and rate `lambda` (in [nats][nats]).
 
 ```c
-double y = stdlib_base_dists_erlang_entropy( 1.0, 1.0 );
+double y = stdlib_base_dists_erlang_entropy( 1, 1.0 );
 // returns 1.0
 ```
 
