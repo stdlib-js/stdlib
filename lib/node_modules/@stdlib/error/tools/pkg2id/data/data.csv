@@ -8537,3 +8537,15 @@
 "@stdlib/stats-strided-svarianceyc",2ER
 "@stdlib/string/base/slice-code-points",2ES
 "@stdlib/string-base-slice-code-points",2ET
+"@stdlib/array/base/count-ifs",2EU
+"@stdlib/array-base-count-ifs",2EV
+"@stdlib/math/base/special/fibonacci-indexf",2EW
+"@stdlib/math-base-special-fibonacci-indexf",2EX
+"@stdlib/stats/array/max",2EY
+"@stdlib/stats-array-max",2EZ
+"@stdlib/stats/array/mskmax",2Ea
+"@stdlib/stats-array-mskmax",2Eb
+"@stdlib/stats/array/nanmax",2Ec
+"@stdlib/stats-array-nanmax",2Ed
+"@stdlib/stats/array/varianceyc",2Ee
+"@stdlib/stats-array-varianceyc",2Ef
