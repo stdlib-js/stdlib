@@ -109,6 +109,7 @@ static double benchmark1( int iterations, int len ) {
 	z = 0.0f;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
 		z = c_sdot( len, x, 1, y, 1 );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
@@ -144,6 +145,7 @@ static double benchmark2( int iterations, int len ) {
 	z = 0.0f;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
 		z = c_sdot_ndarray( len, x, 1, 0, y, 1, 0 );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );

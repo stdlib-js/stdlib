@@ -23,7 +23,7 @@
         Callback function.
 
     thisArg: any (optional)
-        Callback function execution context.
+        Callback execution context.
 
     Examples
     --------

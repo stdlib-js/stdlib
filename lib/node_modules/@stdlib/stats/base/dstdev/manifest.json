@@ -38,7 +38,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/dstdevpn",
+        "@stdlib/stats/strided/dstdevpn",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -60,7 +60,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/dstdevpn"
+        "@stdlib/stats/strided/dstdevpn"
       ]
     },
     {
@@ -76,7 +76,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/dstdevpn"
+        "@stdlib/stats/strided/dstdevpn"
       ]
     }
   ]

@@ -66,7 +66,6 @@ v = stdev( 1.5 );
 
 If provided a shape parameter `λ` which is nonpositive, the function returns `NaN`.
 
-
 ```javascript
 var v = stdev( NaN );
 // returns NaN

@@ -766,7 +766,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
 
-[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md
+[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 

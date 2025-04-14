@@ -30,7 +30,7 @@
 *
 * @example
 * double y = stdlib_base_dists_binomial_median( 100, 0.1 );
-* // returns 10
+* // returns 10.0
 */
 double stdlib_base_dists_binomial_median( const int32_t n, const double p ) {
 	if (
