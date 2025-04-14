@@ -26,6 +26,19 @@ limitations under the License.
 
 ## 2025
 
+### Numeric and Scientific Computing inside your Web Browser
+
+> [Gunj Joshi][gunjjoshi], FOSSASIA, March 2025
+
+<div class="image" align="center">
+    <a title="Numeric and Scientific Computing inside your Web Browser" href="https://www.youtube.com/watch?v=hHCiinxsnbo&list=PLzZVLecTsGpKdcmeM76jS3hB-3eP4vZzp&index=10">
+        <img width="480" src="" alt="Numeric and Scientific Computing inside your Web Browser">
+    </a>
+    <br>
+</div>
+
+## 2025
+
 ### Exploring stdlib: JavaScript's Answer to Technical Computing
 
 > [Athan Reines][kgryte], Inspiring Computing, February 2025
