@@ -3,3 +3,4 @@ microbenchmark
 jsonlite
 VGAM
 distr
+sn
