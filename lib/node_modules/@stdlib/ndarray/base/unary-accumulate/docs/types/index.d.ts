@@ -24,20 +24,20 @@ import { ArrayLike } from '@stdlib/types/array';
 import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
-* Accumulator callback invoked for each ndarray element.
+* Callback invoked for each ndarray element.
 *
 * @param acc - accumulated result
 * @param value - current ndarray element
 * @returns result
 */
-type Accumulator<T = unknown, U = unknown> = ( acc: T, value: U ) => T;
+type Callback<T = unknown, U = unknown> = ( acc: T, value: U ) => T;
 
 /**
 * Performs a reduction over elements in an ndarray.
 *
 * @param arrays - array-like object containing one input ndarray
 * @param initial - initial value
-* @param accumulator - callback function
+* @param clbk - callback function
 * @returns accumulated result
 *
 * @example
@@ -73,7 +73,7 @@ type Accumulator<T = unknown, U = unknown> = ( acc: T, value: U ) => T;
 * var v = accumulateUnary( [ x ], 0.0, add );
 * // returns 39.0
 */
-declare function accumulateUnary<T = unknown, U = unknown>( arrays: ArrayLike<typedndarray<U>>, initial: T, accumulator: Accumulator<T, U> ): T;
+declare function accumulateUnary<T = unknown, U = unknown>( arrays: ArrayLike<typedndarray<U>>, initial: T, clbk: Callback<T, U> ): T;
 
 
 // EXPORTS //

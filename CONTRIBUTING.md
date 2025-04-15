@@ -435,15 +435,15 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 
 [stdlib-style-guides-git]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides/git
 
-[stdlib-doctest]: https://github.com/stdlib-js/stdlib/blob/develop/docs/doctest.md
+[stdlib-doctest]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/doctest.md
 
-[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md
+[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
-[stdlib-branching]: https://github.com/stdlib-js/stdlib/blob/develop/docs/branching.md
+[stdlib-branching]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/branching.md
 
-[stdlib-packages]: https://github.com/stdlib-js/stdlib/blob/develop/docs/packages.md
+[stdlib-packages]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/packages.md
 
-[stdlib-repl-text]: https://github.com/stdlib-js/stdlib/blob/develop/docs/repl_text.md
+[stdlib-repl-text]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/repl_text.md
 
 [stdlib-faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
 

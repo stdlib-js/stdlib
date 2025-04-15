@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/base/zscal.h"
+#include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"
 #include "stdlib/napi/argv_int64.h"
@@ -35,10 +36,28 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 4 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
-	STDLIB_NAPI_ARGV_COMPLEX128( env, za, argv, 1 );
-	STDLIB_NAPI_ARGV_STRIDED_COMPLEX128ARRAY( env, ZX, N, strideX, argv, 2 );
-	c_zscal( N, za, (void *)ZX, strideX );
+	STDLIB_NAPI_ARGV_COMPLEX128( env, alpha, argv, 1 );
+	STDLIB_NAPI_ARGV_STRIDED_COMPLEX128ARRAY( env, X, N, strideX, argv, 2 );
+	API_SUFFIX(c_zscal)( N, alpha, (void *)X, strideX );
 	return NULL;
 }
 
-STDLIB_NAPI_MODULE_EXPORT_FCN( addon )
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+static napi_value addon_method( napi_env env, napi_callback_info info ) {
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 5 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 4 );
+	STDLIB_NAPI_ARGV_COMPLEX128( env, alpha, argv, 1 );
+	STDLIB_NAPI_ARGV_STRIDED_COMPLEX128ARRAY( env, X, N, strideX, argv, 2 );
+	API_SUFFIX(c_zscal_ndarray)( N, alpha, (void *)X, strideX, offsetX );
+	return NULL;
+}
+
+STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "ndarray", addon_method )
