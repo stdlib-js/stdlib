@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `varianceyc`.
@@ -32,16 +37,16 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length for `x`
 	* @returns variance
 	*
 	* @example
 	* var x = [ 1.0, -2.0, 2.0 ];
 	*
-	* var v = varianceyc( x.length, 1, x, 1 );
+	* var v = varianceyc( x.length, 1.0, x, 1 );
 	* // returns ~4.3333
 	*/
-	( N: number, correction: number, x: NumericArray, stride: number ): number;
+	( N: number, correction: number, x: InputArray, strideX: number ): number;
 
 	/**
 	* Computes the variance of a strided array using a one-pass algorithm proposed by Youngs and Cramer and alternative indexing semantics.
@@ -49,17 +54,17 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length for `x`
+	* @param offsetX - starting index for `x`
 	* @returns variance
 	*
 	* @example
 	* var x = [ 1.0, -2.0, 2.0 ];
 	*
-	* var v = varianceyc.ndarray( x.length, 1, x, 1, 0 );
+	* var v = varianceyc.ndarray( x.length, 1.0, x, 1, 0 );
 	* // returns ~4.3333
 	*/
-	ndarray( N: number, correction: number, x: NumericArray, stride: number, offset: number ): number;
+	ndarray( N: number, correction: number, x: InputArray, strideX: number, offsetX: number ): number;
 }
 
 /**
@@ -68,19 +73,19 @@ interface Routine {
 * @param N - number of indexed elements
 * @param correction - degrees of freedom adjustment
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length for `x`
 * @returns variance
 *
 * @example
 * var x = [ 1.0, -2.0, 2.0 ];
 *
-* var v = varianceyc( x.length, 1, x, 1 );
+* var v = varianceyc( x.length, 1.0, x, 1 );
 * // returns ~4.3333
 *
 * @example
 * var x = [ 1.0, -2.0, 2.0 ];
 *
-* var v = varianceyc.ndarray( x.length, 1, x, 1, 0 );
+* var v = varianceyc.ndarray( x.length, 1.0, x, 1, 0 );
 * // returns ~4.3333
 */
 declare var varianceyc: Routine;

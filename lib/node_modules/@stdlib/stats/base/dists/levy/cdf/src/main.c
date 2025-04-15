@@ -30,8 +30,8 @@
 * @return     evaluated CDF
 *
 * @example
-* double y = stdlib_base_dists_levy_cdf( 9.0, 0.0, 1.0 );
-* // returns ~0.999
+* double y = stdlib_base_dists_levy_cdf( 2.0, 0.0, 1.0 );
+* // returns ~0.48
 */
 double stdlib_base_dists_levy_cdf( const double x, const double mu, const double c ) {
 	double z;

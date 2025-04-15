@@ -170,8 +170,8 @@ for ( i = 0; i < 100; i++ ) {
 Evaluates the [cumulative distribution function][cdf] (CDF) for a [Lévy][levy-distribution] distribution with parameters `mu` (location parameter) and `c > 0` (scale parameter).
 
 ```c
-double out = stdlib_base_levy_cdf( 0.5, 0.0, 2.0 );
-// returns ~0.520
+double out = stdlib_base_levy_cdf( 2.0, 0.0, 1.0 );
+// returns ~0.48
 ```
 
 The function accepts the following arguments:
@@ -213,8 +213,8 @@ static double random_uniform( const double min, const double max ) {
 }
 
 int main( void ) {
-    double x;
     double mu;
+    double x;
     double c;
     double y;
     int i;

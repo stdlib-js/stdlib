@@ -157,7 +157,7 @@ double out = stdlib_base_dists_planck_mean( 0.1 );
 
 The function accepts the following arguments:
 
--   **lambda**: `[in] double` shape parameter
+-   **lambda**: `[in] double` shape parameter.
 
 ```c
 double stdlib_base_dists_planck_mean( const double lambda );

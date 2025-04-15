@@ -1,0 +1,219 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to greet first-time contributors.
+#
+# Usage: first_time_greeting <issue_number>
+#
+# Arguments:
+#
+#   issue_number    Issue or pull request number.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Resolve the issue or pull request number:
+issue_number="$1"
+
+# GitHub API base URL:
+github_api_url="https://api.github.com"
+
+# Repository owner and name:
+repo_owner="stdlib-js"
+repo_name="stdlib"
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit "$1"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Performs a GitHub API request.
+#
+# $1 - HTTP method (GET or POST)
+# $2 - API endpoint
+# $3 - data for POST requests
+github_api() {
+	local method="$1"
+	local endpoint="$2"
+	local data="$3"
+
+	# Initialize an array to hold curl headers:
+	local headers=()
+
+	# If GITHUB_TOKEN is set, add the Authorization header:
+	if [ -n "${GITHUB_TOKEN}" ]; then
+		headers+=("-H" "Authorization: token ${GITHUB_TOKEN}")
+	fi
+
+	# Determine the HTTP method and construct the curl command accordingly...
+	case "${method}" in
+		GET)
+			curl -s "${headers[@]}" "${github_api_url}${endpoint}"
+			;;
+		POST)
+			# For POST requests, always set the Content-Type header:
+			headers+=("-H" "Content-Type: application/json")
+
+			# If data is provided, include it in the request:
+			if [ -n "${data}" ]; then
+				curl -s -X POST "${headers[@]}" -d "${data}" "${github_api_url}${endpoint}"
+			else
+				# Handle cases where POST data is required but not provided:
+				echo "ERROR: POST request requires data."
+				on_error 1
+			fi
+			;;
+		*)
+			echo "ERROR: Invalid HTTP method: ${method}."
+			on_error 1
+			;;
+	esac
+}
+
+# Main execution sequence.
+main() {
+	local user_issues
+	local user_login
+	local user_prs
+	local details
+	local is_pr
+
+	if [ -z "${issue_number}" ]; then
+		echo "ERROR: Issue or pull request number is required." >&2
+		on_error 1
+	fi
+
+	# Fetch details:
+	details=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/issues/${issue_number}")
+	user_login=$(echo "${details}" | jq -r '.user.login')
+
+	is_pr=$(echo "$details" | jq -r 'has("pull_request")')
+
+	if [ "${is_pr}" = "true" ]; then
+		# Fetch PRs opened by the user:
+		user_prs=$(github_api "GET" "/search/issues?q=repo%3A${repo_owner}%2F${repo_name}+author%3A${user_login}+type%3Apr")
+
+		# Extract number of PRs by the user:
+		num_prs=$(echo "${user_prs}" | jq -r '.total_count')
+
+		if [ "${num_prs}" = "1" ]; then
+			# Post a comment on the PR:
+			comment=":wave: Hi there! :wave:
+
+	And thank you for opening your first pull request! We will review it shortly. :runner: :dash:
+
+	## Getting Started
+
+	-   Please read our [contributing guidelines][stdlib-contributing] if you haven't already.
+	-   For development guidance, refer to the [development guide][stdlib-development].
+
+	## Next Steps
+
+	1.  A project maintainer will approve GitHub Actions workflows for your PR.
+	2.  All CI checks must pass before your submission can be fully reviewed.
+	3.  You'll need to address any failures in linting or unit tests.
+
+	## Running Tests Locally
+
+	You can use \`make\` to run any of the CI commands locally from the **root directory** of the stdlib repository:
+
+	\`\`\`bash
+	# Run tests for all packages in the math namespace:
+	make test TESTS_FILTER=\".*/@stdlib/math/.*\"
+
+	# Run benchmarks for a specific package:
+	make benchmark BENCHMARKS_FILTER=\".*/@stdlib/math/base/special/sin/.*\"
+	\`\`\`
+
+	If you haven't heard back from us within two weeks, please ping us by tagging the \"reviewers\" team in a comment on this PR.
+
+	If you have any further questions while waiting for a response, please join our [Gitter channel][stdlib-gitter] to chat with project maintainers and other community members.
+
+	We appreciate your contribution!
+
+	## Documentation Links
+
+	-   [Contributing Guidelines][stdlib-contributing]
+	-   [Developtment Guide][stdlib-development]
+	-   [Gitter channel][stdlib-gitter]
+	-   [make rules for running examples][make-docs-examples]
+	-   [make rules for running unit tests][make-docs-test]
+	-   [make rules for running benchmarks][make-docs-benchmark]
+
+	[stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
+	[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
+	[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+
+	[make-docs-examples]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/examples/README.md
+	[make-docs-test]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/test/README.md
+	[make-docs-benchmark]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/benchmark/README.md"
+			if ! github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${issue_number}/comments" "{\"body\":$(echo "${comment}" | jq -R -s -c .)}"; then
+				echo "Failed to post comment on PR."
+				on_error 1
+			fi
+		else
+			echo "PR is not the first contribution from the respective user."
+		fi
+	else
+		# Fetch issues opened by the user:
+		user_issues=$(github_api "GET" "/search/issues?q=repo%3A${repo_owner}%2F${repo_name}+author%3A${user_login}+type%3Aissue")
+
+		# Extract number of issues by the user:
+		num_issues=$(echo "${user_issues}" | jq -r '.total_count')
+
+		if [ "${num_issues}" = "1" ]; then
+			# Post a comment on the issue:
+			comment="wave: Hi there! :wave:
+
+	And thank you for opening your first issue! We will get back to you shortly. :runner: :dash:
+
+	If you have any further questions while waiting for a response, please join our [Gitter channel][stdlib-gitter] to chat with project maintainers and other community members.
+
+	[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib"
+			if ! github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${issue_number}/comments" "{\"body\":$(echo "${comment}" | jq -R -s -c .)}"; then
+				echo "Failed to post comment on issue."
+				on_error 1
+			fi
+		else
+			echo "Issue is not the first contribution from the respective user."
+		fi
+	fi
+
+	print_success
+	exit 0
+}
+
+main

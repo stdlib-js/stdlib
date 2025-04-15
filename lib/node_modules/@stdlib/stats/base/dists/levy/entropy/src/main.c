@@ -21,7 +21,9 @@
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/eulergamma.h"
 #include "stdlib/constants/float64/pi.h"
-#include "stdlib/math/base/special/pow.h"
+
+static const double ONE_PLUS_THREE_GAMMA = 1.0 + ( 3.0 * STDLIB_CONSTANT_FLOAT64_EULERGAMMA );
+static const double PI_TIMES_SIXTEEN = 16.0 * STDLIB_CONSTANT_FLOAT64_PI;
 
 /**
 * Returns the differential entropy for a Lévy distribution with location `mu` and scale `c`.
@@ -42,5 +44,5 @@ double stdlib_base_dists_levy_entropy( const double mu, const double c ) {
 	) {
 		return 0.0/0.0; // NaN
 	}
-	return ( 1.0 + ( 3.0 * STDLIB_CONSTANT_FLOAT64_EULERGAMMA ) + stdlib_base_ln( 16.0 * stdlib_base_pow( c, 2.0 ) * STDLIB_CONSTANT_FLOAT64_PI ) ) / 2.0;
+	return ( ONE_PLUS_THREE_GAMMA + stdlib_base_ln( c*c*PI_TIMES_SIXTEEN ) ) / 2.0;
 }

@@ -92,27 +92,27 @@ static double random_uniform( const double min, const double max ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double lambda[ 100 ];
 	double elapsed;
-	double lambda[100];
 	double y;
 	double t;
 	int i;
 
-	for (i = 0; i < 100; i++) {
-		lambda[i] = random_uniform(0.1, 10.0);
+	for ( i = 0; i < 100; i++ ) {
+		lambda[ i ] = random_uniform( 0.1, 10.0 );
 	}
 
 	t = tic();
-	for (i = 0; i < ITERATIONS; i++) {
-		y = stdlib_base_dists_planck_mean(lambda[i % 100]);
-		if (y != y) {
-			printf("should not return NaN\n");
+	for ( i = 0; i < ITERATIONS; i++ ) {
+		y = stdlib_base_dists_planck_mean( lambda[ i % 100 ] );
+		if ( y != y ) {
+			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if (y != y) {
-		printf("should not return NaN\n");
+	if ( y != y ) {
+		printf( "should not return NaN\n" );
 	}
 	return elapsed;
 }
@@ -120,21 +120,21 @@ static double benchmark( void ) {
 /**
 * Main execution sequence.
 */
-int main(void) {
+int main( void ) {
 	double elapsed;
 	int i;
 
 	// Use the current time to seed the random number generator:
-	srand(time(NULL));
+	srand( time( NULL ) );
 
 	print_version();
-	for (i = 0; i < REPEATS; i++) {
-		printf("# c::%s\n", NAME);
+	for ( i = 0; i < REPEATS; i++ ) {
+		printf( "# c::%s\n", NAME );
 		elapsed = benchmark();
-		print_results(elapsed);
-		printf("ok %d benchmark finished\n", i + 1);
+		print_results( elapsed );
+		printf( "ok %d benchmark finished\n", i + 1 );
 	}
-	print_summary(REPEATS, REPEATS);
+	print_summary( REPEATS, REPEATS );
 
 	return 0;
 }
