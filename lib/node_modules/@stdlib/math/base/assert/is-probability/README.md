@@ -57,14 +57,18 @@ bool = isProbability( NaN );
 
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var isProbability = require( '@stdlib/math/base/assert/is-probability' );
 
-var x = uniform( 100, -1.0, 1.0 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -1.0, 1.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( '%d is %s', x[ i ], ( isProbability( x[ i ] ) ) ? 'a probability' : 'not a probability' );
+function isProbabilityWrapper( integer ) {
+    return ( isProbability( integer ) ) ? 'a probability' : 'not a probability';
 }
+logEachMap( '%0.4f is %s', x, isProbabilityWrapper );
 ```
 
 </section>
