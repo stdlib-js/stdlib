@@ -350,6 +350,8 @@
 "1s7",@stdlib/array-base-count-falsy
 "1sO",@stdlib/array/base/count-if
 "1sP",@stdlib/array-base-count-if
+"2EU",@stdlib/array/base/count-ifs
+"2EV",@stdlib/array-base-count-ifs
 "1sQ",@stdlib/array/base/count-same-value-zero
 "1sR",@stdlib/array-base-count-same-value-zero
 "1s8",@stdlib/array/base/count-same-value
@@ -3295,6 +3297,8 @@
 "0VT",@stdlib/math-base-special-fast-uint32-sqrt
 "0VU",@stdlib/math/base/special/fibonacci-index
 "0VV",@stdlib/math-base-special-fibonacci-index
+"2EW",@stdlib/math/base/special/fibonacci-indexf
+"2EX",@stdlib/math-base-special-fibonacci-indexf
 "0VW",@stdlib/math/base/special/fibonacci
 "0VX",@stdlib/math-base-special-fibonacci
 "2Dw",@stdlib/math/base/special/fibonaccif
@@ -5467,6 +5471,14 @@
 "1j5",@stdlib/slice-seq2slice
 "0te",@stdlib/stats/anova1
 "0tf",@stdlib/stats-anova1
+"2EY",@stdlib/stats/array/max
+"2EZ",@stdlib/stats-array-max
+"2Ea",@stdlib/stats/array/mskmax
+"2Eb",@stdlib/stats-array-mskmax
+"2Ec",@stdlib/stats/array/nanmax
+"2Ed",@stdlib/stats-array-nanmax
+"2Ee",@stdlib/stats/array/varianceyc
+"2Ef",@stdlib/stats-array-varianceyc
 "0tg",@stdlib/stats/bartlett-test
 "0th",@stdlib/stats-bartlett-test
 "0ti",@stdlib/stats/base/cumax

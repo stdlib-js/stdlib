@@ -1104,3 +1104,4 @@
 "Hn","invalid argument. Number of specified dimensions cannot exceed the number of dimensions in the input array. Number of dimensions: %d. Value: [%s].","RangeError"
 "Ho","invalid argument. Arrays which are not being reduced must have the same number of non-reduced dimensions. Input array shape: [%s]. Number of non-reduced dimensions: %d. Array shape: [%s] (index: %d).","Error"
 "Hp","invalid argument. Second argument must be an ndarray-like object. Value: `%s`.","TypeError"
+"Hq","invalid argument. Second argument must have one of the following data types: ""%s"". Data type: `%s`.","TypeError"
