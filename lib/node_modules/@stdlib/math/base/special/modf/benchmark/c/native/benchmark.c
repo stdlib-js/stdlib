@@ -92,15 +92,18 @@ static double rand_double( void ) {
 static double benchmark( void ) {
 	double integral;
 	double elapsed;
-	double x;
+	double x[ 100 ];
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 1.0e7*rand_double() ) - 5.0e6;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 1.0e7 * rand_double() ) - 5.0e6;
-		stdlib_base_modf( x, &integral, &y );
+		stdlib_base_modf( x[ i%100 ], &integral, &y );
 		if ( y != y || integral != integral) {
 			printf( "unexpected results\n" );
 			break;

@@ -29,7 +29,7 @@ extern "C" {
 /**
 * Evaluates the Riemann zeta function.
 */
-double stdlib_base_zeta( const double x );
+double stdlib_base_zeta( const double s );
 
 #ifdef __cplusplus
 }
