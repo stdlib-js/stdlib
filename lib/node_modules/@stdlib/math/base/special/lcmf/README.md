@@ -101,16 +101,17 @@ v = lcmf( 48, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/array/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var lcmf = require( '@stdlib/math/base/special/lcmf' );
 
-var a = randu( 100, 0, 50 );
-var b = randu( 100, 0, 50 );
+var opts = {
+    'dtype': 'float32'
+};
+var a = discreteUniform( 100, 0, 50, opts );
+var b = discreteUniform( 100, 0, 50, opts );
 
-var i;
-for ( i = 0; i < 100; i++ ) {
-    console.log( 'lcmf(%d,%d) = %d', a[ i ], b[ i ], lcmf( a[ i ], b[ i ] ) );
-}
+logEachMap( 'lcmf(%0.4f,%0.4f) = %0.4f', a, b, lcmf );
 ```
 
 </section>

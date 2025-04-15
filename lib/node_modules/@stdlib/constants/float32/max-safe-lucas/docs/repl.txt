@@ -1,0 +1,12 @@
+
+{{alias}}
+    Maximum safe Lucas number when stored in single-precision floating-point
+    format.
+
+    Examples
+    --------
+    > {{alias}}
+    12752043
+
+    See Also
+    --------

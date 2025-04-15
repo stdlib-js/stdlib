@@ -1,0 +1,34 @@
+
+{{alias}}( str, start, end )
+    Slices a string based on grapheme cluster (i.e., user-perceived character)
+    indices.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    start: integer
+        The `ith` grapheme cluster to start a slice (inclusive).
+
+    end: integer
+        The `jth` grapheme cluster to end a slice (exclusive).
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep', 0, 2 )
+    'be'
+    > out = {{alias}}( 'Boop', 1, 3 )
+    'oo'
+    > out = {{alias}}( 'foo bar', 4, 7 )
+    'bar'
+    > out = {{alias}}( '🐶🐮🐷🐰🐸', 0, 2 )
+    '🐶🐮'
+
+    See Also
+    --------

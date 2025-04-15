@@ -200,7 +200,7 @@ The function accepts the following arguments:
 -   **n**: `[in] int32_t` number of draws.
 
 ```c
-double stdlib_base_dists_hypergeometric_logpmf ( const double x, const int32_t N, const int32_t K, const int32_t n );
+double stdlib_base_dists_hypergeometric_logpmf( const double x, const int32_t N, const int32_t K, const int32_t n );
 ```
 
 </section>
