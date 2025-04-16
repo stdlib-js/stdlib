@@ -880,6 +880,7 @@ struct ndarray * stdlib_ndarray_allocate( int16_t dtype, uint8_t *data, int64_t 
 Notes:
 
 -   The user is responsible for freeing the allocated memory.
+-   To allocate a zero-dimensional ndarray, provide a `shape` argument equal to a null pointer, an `ndims` argument equal to `0`, and a `strides` argument consisting of a single element equal to `0`. The `order` argument can be either row-major or column-major and has no effect on data storage or access.
 
 #### stdlib_ndarray_bytelength( \*arr )
 
@@ -999,6 +1000,7 @@ int64_t stdlib_ndarray_dimension( const struct ndarray *arr, const int64_t i );
 Notes:
 
 -   The function does perform bounds checking for the dimension index.
+-   If an input ndarray is zero-dimensional, the function always returns `-1`.
 
 #### stdlib_ndarray_disable_flags( \*arr, flags )
 
@@ -1505,6 +1507,10 @@ The function accepts the following arguments:
 int64_t * stdlib_ndarray_shape( const struct ndarray *arr );
 ```
 
+Notes:
+
+-   If an input ndarray is zero-dimensional, the function returns a null pointer.
+
 #### stdlib_ndarray_stride( \*arr, i )
 
 Returns an ndarray stride (in bytes).
@@ -1546,7 +1552,7 @@ int64_t stdlib_ndarray_stride( const struct ndarray *arr, const int64_t i );
 
 Notes:
 
--   the function does perform bounds checking for the dimension index.
+-   The function does perform bounds checking for the dimension index.
 
 #### stdlib_ndarray_strides( \*arr )
 
