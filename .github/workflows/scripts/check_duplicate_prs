@@ -89,12 +89,12 @@ github_api() {
 	fi
 }
 
-# Extracts issue numbers from PR body that are being resolved/closed.
+# Extracts issue numbers resolved/closed in PRs for stdlib-js/stdlib.
 #
 # $1 - PR body text
 extract_resolved_issues() {
 	local body="$1"
-	echo "$body" | grep -Eio "(resolves|closes|close|fix|fixes|fixed|resolve)[[:space:]]*(#[0-9]+|https?://github\.com/[^/]+/[^/]+/issues/[0-9]+)" |
+	echo "$body" | grep -Eio "(resolves|closes|close|fix|fixes|fixed|resolve)[[:space:]]*(#[0-9]+|https?://github\.com/stdlib-js/stdlib/issues/[0-9]+)" |
 		grep -Eo "([0-9]+)$" | sort -u
 }
 
