@@ -18,8 +18,21 @@
 
 #include "stdlib/stats/base/dists/triangular/mgf.h"
 #include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/special/expm1.h"
 #include "stdlib/math/base/special/exp.h"
-#include "stdlib/math/base/special/pow.h"
+
+/**
+* Helper function for repeated computation in the MGF formula.
+*
+* @param x   input value
+* @return    evaluated result
+*/
+static double phi2( const double x ) {
+	if ( x == 0.0 ) {
+		return 1.0;
+	}
+	return ( 2.0 * ( stdlib_base_expm1( x ) - x ) ) / ( x*x );
+}
 
 /**
 * Evaluates the moment-generating function (MGF) for a triangular distribution with lower limit `a`, upper limit `b`, and mode `c` at a value `t`.
@@ -35,29 +48,19 @@
 * // returns ~1.021
 */
 double stdlib_base_dists_triangular_mgf( const double t, const double a, const double b, const double c ) {
-	double bmc;
-	double bma;
-	double cma;
-	double ret;
-	if (
-		stdlib_base_is_nan( t ) ||
-		stdlib_base_is_nan( a ) ||
-		stdlib_base_is_nan( b ) ||
-		stdlib_base_is_nan( c ) ||
-		a > c ||
-		c > b
-	) {
-		return 0.0/0.0; // NaN
+	if ( stdlib_base_is_nan( t ) || stdlib_base_is_nan( a ) || stdlib_base_is_nan( b ) || stdlib_base_is_nan( c ) || a > c || c > b ) {
+		return 0.0 / 0.0; // NaN
 	}
-	if ( t == 0.0 ) {
-		return 1.0;
+	if ( a < c ) {
+		if ( c < b ) {
+			double term1 = ( c-a ) * phi2( ( a-c ) * t );
+			double term2 = ( b-c ) * phi2( ( b-c ) * t );
+			return stdlib_base_exp( c*t ) * ( term1+term2 ) / ( b-a );
+		}
+		return stdlib_base_exp( c*t ) * phi2( ( a-c ) * t );
 	}
-	bmc = b - c;
-	bma = b - a;
-	cma = c - a;
-	ret = ( bmc * stdlib_base_exp( a*t ) ) - ( bma * stdlib_base_exp( c*t ) );
-	ret += cma * stdlib_base_exp( b*t );
-	ret *= 2.0;
-	ret /= bma * cma * bmc * stdlib_base_pow( t, 2.0 );
-	return ret;
+	if ( c < b ) {
+		return stdlib_base_exp( c*t ) * phi2( ( b-c ) * t );
+	}
+	return stdlib_base_exp( c*t );
 }

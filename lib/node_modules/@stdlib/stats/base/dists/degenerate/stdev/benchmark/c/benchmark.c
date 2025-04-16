@@ -17,9 +17,9 @@
 */
 
 #include "stdlib/stats/base/dists/degenerate/stdev.h"
-#include <math.h>
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 #include <time.h>
 #include <sys/time.h>
 
@@ -27,10 +27,19 @@
 #define ITERATIONS 1000000
 #define REPEATS 3
 
+/**
+* Prints the TAP version.
+*/
 static void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
+/**
+* Prints the TAP summary.
+*
+* @param total     total number of tests
+* @param passing   total number of passing tests
+*/
 static void print_summary( int total, int passing ) {
 	printf( "#\n" );
 	printf( "1..%d\n", total ); // TAP plan
@@ -40,6 +49,11 @@ static void print_summary( int total, int passing ) {
 	printf( "# ok\n" );
 }
 
+/**
+* Prints benchmarks results.
+*
+* @param elapsed   elapsed time in seconds
+*/
 static void print_results( double elapsed ) {
 	double rate = (double)ITERATIONS / elapsed;
 	printf( "  ---\n" );
@@ -49,49 +63,68 @@ static void print_results( double elapsed ) {
 	printf( "  ...\n" );
 }
 
+/**
+* Returns a clock time.
+*
+* @return clock time
+*/
 static double tic( void ) {
 	struct timeval now;
 	gettimeofday( &now, NULL );
-	return (double)now.tv_sec + (double)now.tv_usec / 1.0e6;
+	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
 }
 
+/**
+* Generates a random number on the interval [min,max).
+*
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
+*/
 static double random_uniform( const double min, const double max ) {
 	double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
-	return min + ( v * ( max - min ) );
+	return min + ( v*(max-min) );
 }
 
+/**
+* Runs a benchmark.
+*
+* @return elapsed time in seconds
+*/
 static double benchmark( void ) {
 	double elapsed;
 	double mu[ 100 ];
 	double y;
-	double start;
+	double t;
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
 		mu[ i ] = random_uniform( -20.0, 20.0 );
 	}
 
-	start = tic();
+	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		y = stdlib_base_dists_degenerate_stdev( mu[ i % 100 ] );
-		if ( isnan( y ) ) {
+		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
-	elapsed = tic() - start;
-
-	if ( isnan( y ) ) {
+	elapsed = tic() - t;
+	if ( y != y ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;
 }
 
+/**
+* Main execution sequence.
+*/
 int main( void ) {
 	double elapsed;
 	int i;
 
-	// Seed the random number generator:
+	// Use the current time to seed the random number generator:
 	srand( time( NULL ) );
 
 	print_version();
@@ -99,7 +132,7 @@ int main( void ) {
 		printf( "# c::%s\n", NAME );
 		elapsed = benchmark();
 		print_results( elapsed );
-		printf( "ok %d benchmark finished\n", i + 1 );
+		printf( "ok %d benchmark finished\n", i+1 );
 	}
 	print_summary( REPEATS, REPEATS );
 }

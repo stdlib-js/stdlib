@@ -21,10 +21,10 @@
 #include "stdlib/constants/float32/pinf.h"
 
 /**
-* Evaluates the Dirac delta function in single-precision floating-point format.
+* Evaluates the Dirac delta function for a single-precision floating-point number.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * float out = stdlib_base_dirac_deltaf( 3.14f );

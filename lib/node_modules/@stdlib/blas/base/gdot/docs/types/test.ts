@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import gdot = require( './index' );
 
 
@@ -27,6 +28,7 @@ import gdot = require( './index' );
 	const y = new Float64Array( 10 );
 
 	gdot( x.length, x, 1, y, 1 ); // $ExpectType number
+	gdot( x.length, new AccessorArray( x ), 1, y, 1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -124,6 +126,7 @@ import gdot = require( './index' );
 	const y = new Float64Array( 10 );
 
 	gdot.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType number
+	gdot.ndarray( x.length, new AccessorArray( x ), 1, 0, y, 1, 0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

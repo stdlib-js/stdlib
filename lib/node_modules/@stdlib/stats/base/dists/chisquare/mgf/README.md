@@ -189,7 +189,7 @@ double out = stdlib_base_dists_chisquare_mgf( 0.4, 2.0 );
 The function accepts the following arguments:
 
 -   **t**: `[in] double` input value.
--   **k**: `[in] double` degrees of freedom (must be non-negative).
+-   **k**: `[in] double` degrees of freedom (must be nonnegative).
 
 ```c
 double stdlib_base_dists_chisquare_mgf( const double t, const double k );

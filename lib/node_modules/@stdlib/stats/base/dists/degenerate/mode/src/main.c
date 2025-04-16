@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+#include "stdlib/stats/base/dists/degenerate/mode.h"
 #include "stdlib/math/base/assert/is_nan.h"
 
 /**

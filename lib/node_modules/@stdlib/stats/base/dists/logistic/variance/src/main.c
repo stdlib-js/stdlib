@@ -28,7 +28,7 @@
 * @return      variance
 *
 * @example
-* double y = stdlib_base_logistic_variance( 0.0, 1.0 );
+* double y = stdlib_base_dists_logistic_variance( 0.0, 1.0 );
 * // returns ~3.29
 */
 double stdlib_base_dists_logistic_variance( const double mu, const double s ) {
