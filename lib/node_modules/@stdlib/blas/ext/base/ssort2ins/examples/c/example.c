@@ -18,12 +18,11 @@
 
 #include "stdlib/blas/ext/base/ssort2ins.h"
 #include <stdio.h>
-#include <inttypes.h>
 
 int main( void ) {
 	// Create strided arrays:
-	float x[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
-	float y[] = { 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0 };
+	float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+	float y[] = { 0.0f, 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f };
 
 	// Specify the number of elements:
 	int N = 8;
@@ -33,12 +32,12 @@ int main( void ) {
 	int strideY = 1;
 
 	// Sort the arrays:
-	c_ssort2ins( N, 1.0f, x, strideX, y, strideY );
+	stdlib_strided_ssort2ins( N, 1.0f, x, strideX, y, strideY );
 
 	// Print the result:
 	for ( int i = 0; i < 8; i++ ) {
 		printf( "x[ %i ] = %f\n", i, x[ i ] );
-		printf( "y[ %i ] = %"PRId64"\n", i, (int64_t)y[ i ] );
+		printf( "y[ %i ] = %f\n", i, y[ i ] );
 	}
 }
 

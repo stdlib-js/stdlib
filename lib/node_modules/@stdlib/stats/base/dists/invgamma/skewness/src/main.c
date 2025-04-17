@@ -28,7 +28,7 @@
 * @return         skewness
 *
 * @example
-* double y = stdlib_base_invgamma_skewness( 4.0, 12.0 );
+* double y = stdlib_base_dists_invgamma_skewness( 4.0, 12.0 );
 * // returns ~5.657
 */
 double stdlib_base_dists_invgamma_skewness( const double alpha, const double beta ) {

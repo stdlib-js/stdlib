@@ -21,7 +21,6 @@
     "example": "./examples",
     "include": "./include",
     "lib": "./lib",
-    "scripts": "./scripts",
     "src": "./src",
     "test": "./test"
   },
