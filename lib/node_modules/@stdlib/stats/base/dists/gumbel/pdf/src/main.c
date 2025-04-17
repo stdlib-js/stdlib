@@ -47,5 +47,5 @@ double stdlib_base_dists_gumbel_pdf( const double x, const double mu, const doub
 		return 0.0;
 	}
 	z = ( x - mu ) / beta;
-	return ( 1.0 / beta ) * stdlib_base_exp( -z -stdlib_base_exp( -z ) );
+	return ( 1.0 / beta ) * stdlib_base_exp( -z - stdlib_base_exp( -z ) );
 }
