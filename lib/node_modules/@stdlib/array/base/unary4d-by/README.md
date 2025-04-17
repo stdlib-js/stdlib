@@ -108,16 +108,16 @@ var cnt = context.count;
 
     ```javascript
     var abs = require( '@stdlib/math/base/special/abs' );
-    
+
     function accessor() {
         // No-op...
     }
-    
+
     var x = [ [ [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] ] ];
     var y = [ [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ] ];
-    
+
     var shape = [ 1, 1, 2, 2 ];
-    
+
     unary4dBy( [ x, y ], shape, abs, accessor );
     // y => [ [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ] ]
     ```

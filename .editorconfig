@@ -86,7 +86,6 @@ indent_style = tab
 [*.{f,f.txt}]
 indent_style = space
 indent_size = 2
-insert_final_newline = false
 
 # Set properties for shell files:
 [*.{sh,sh.txt}]
@@ -121,7 +120,7 @@ indent_style = tab
 [*.{md,md.txt}]
 indent_style = space
 indent_size = 4
-trim_trailing_whitespace = false
+trim_trailing_whitespace = true # Note: this disables using two spaces to force a hard line break, which is permitted in Markdown. As we don't typically follow that practice (TMK), we should be safe to automatically trim.
 
 # Set properties for `usage.txt` files:
 [usage.txt]

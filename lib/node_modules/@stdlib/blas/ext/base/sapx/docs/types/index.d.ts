@@ -23,12 +23,12 @@
 */
 interface Routine {
 	/**
-	* Adds a constant to each element in a single-precision floating-point strided array.
+	* Adds a scalar constant to each element in a single-precision floating-point strided array.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns `x`
 	*
 	* @example
@@ -39,16 +39,16 @@ interface Routine {
 	* sapx( x.length, 5.0, x, 1 );
 	* // x => <Float32Array>[ 3.0, 6.0, 8.0, 0.0, 9.0, 5.0, 4.0, 2.0 ]
 	*/
-	( N: number, alpha: number, x: Float32Array, stride: number ): Float32Array;
+	( N: number, alpha: number, x: Float32Array, strideX: number ): Float32Array;
 
 	/**
-	* Adds a constant to each element in a single-precision floating-point strided array using alternative indexing semantics.
+	* Adds a scalar constant to each element in a single-precision floating-point strided array using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns `x`
 	*
 	* @example
@@ -59,16 +59,16 @@ interface Routine {
 	* sapx.ndarray( x.length, 5.0, x, 1, 0 );
 	* // x => <Float32Array>[ 3.0, 6.0, 8.0, 0.0, 9.0, 5.0, 4.0, 2.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: Float32Array, stride: number, offset: number ): Float32Array;
+	ndarray( N: number, alpha: number, x: Float32Array, strideX: number, offsetX: number ): Float32Array;
 }
 
 /**
-* Adds a constant to each element in a single-precision floating-point strided array.
+* Adds a scalar constant to each element in a single-precision floating-point strided array.
 *
 * @param N - number of indexed elements
-* @param alpha - constant
+* @param alpha - scalar constant
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns `x`
 *
 * @example
