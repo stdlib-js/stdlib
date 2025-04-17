@@ -20,7 +20,17 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
+
+/**
+* Output array.
+*/
+type OutputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `gcusumkbn2`.
@@ -44,7 +54,7 @@ interface Routine {
 	* gcusumkbn2( x.length, 0.0, x, 1, y, 1 );
 	* // y => [ 1.0, -1.0, 1.0 ]
 	*/
-	( N: number, sum: number, x: NumericArray, strideX: number, y: NumericArray, strideY: number ): NumericArray;
+	<T extends OutputArray>( N: number, sum: number, x: InputArray, strideX: number, y: T, strideY: number ): T;
 
 	/**
 	* Computes the cumulative sum of strided array elements using a second-order iterative Kahan–Babuška algorithm and alternative indexing semantics.
@@ -66,7 +76,7 @@ interface Routine {
 	* gcusumkbn2.ndarray( x.length, 0.0, x, 1, 0, y, 1, 0 );
 	* // y => [ 1.0, -1.0, 1.0 ]
 	*/
-	ndarray( N: number, sum: number, x: NumericArray, strideX: number, offsetX: number, y: NumericArray, strideY: number, offsetY: number ): NumericArray;
+	ndarray<T extends OutputArray>( N: number, sum: number, x: InputArray, strideX: number, offsetX: number, y: T, strideY: number, offsetY: number ): T;
 }
 
 /**

@@ -1505,9 +1505,14 @@ declare module '@stdlib/types/ndarray' {
 	type DataTypeKind = StrictDataTypeKind | 'all' | 'typed_and_generic' | 'numeric_and_generic' | 'real_and_generic' | 'floating_point_and_generic' | 'real_floating_point_and_generic' | 'complex_floating_point_and_generic' | 'integer_and_generic' | 'signed_integer_and_generic' | 'unsigned_integer_and_generic' | 'boolean_and_generic';
 
 	/**
+	* Strict output data type policy.
+	*/
+	type StrictOutputPolicy = 'default' | 'same' | 'promoted' | 'boolean' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer';
+
+	/**
 	* Output data type policy.
 	*/
-	type OutputPolicy = 'default' | 'same' | 'promoted' | 'boolean' | 'numeric' | 'real' | 'floating_point' | 'real_floating_point' | 'complex_floating_point' | 'integer' | 'signed_integer' | 'unsigned_integer';
+	type OutputPolicy = StrictOutputPolicy | 'boolean_and_generic' | 'numeric_and_generic' | 'real_and_generic' | 'floating_point_and_generic' | 'real_floating_point_and_generic' | 'complex_floating_point_and_generic' | 'integer_and_generic' | 'signed_integer_and_generic' | 'unsigned_integer_and_generic';
 
 	/**
 	* Array order.

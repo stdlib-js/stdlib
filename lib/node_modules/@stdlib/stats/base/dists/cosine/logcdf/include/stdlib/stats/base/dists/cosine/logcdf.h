@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the natural logarithm of the cumulative distribution function (LOGCDF) for a raised cosine distribution with parameters `mu` (location parameter) and `s` (scale parameter).
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a raised cosine distribution with parameters `mu` (location parameter) and `s` (scale parameter).
 */
 double stdlib_base_dists_cosine_logcdf( const double x, const double mu, const double s );
 

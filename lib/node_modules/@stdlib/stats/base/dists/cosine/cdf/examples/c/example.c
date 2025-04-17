@@ -38,6 +38,6 @@ int main( void ) {
 		mu = random_uniform( -50.0, 50.0 );
 		s = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 		y = stdlib_base_dists_cosine_cdf( x, mu, s );
-		printf( "x: %lf, µ: %lf, s: %lf, F(x;µ,s): %lf\n", x, mu, s , y );
+		printf( "x: %lf, µ: %lf, s: %lf, F(x;µ,s): %lf\n", x, mu, s, y );
 	}
 }

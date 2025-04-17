@@ -38,8 +38,8 @@ int main( void ) {
 	for ( i = 0; i < 25; i++ ) {
 		x = random_uniform( 0.0, 30.0 );
 		a = random_uniform( 0.0, 10.0 );
-		b = random_uniform( a, 40.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
-		c = a + random_uniform( 0.0, b - a );
+		b = random_uniform( a + STDLIB_CONSTANT_FLOAT64_EPS, 40.0 );
+		c = random_uniform( a, b );
 		y = stdlib_base_dists_triangular_logpdf( x, a, b, c );
 		printf( "x: %lf, a: %lf, b: %lf, c: %lf, ln(f(x;a,b,c)): %lf\n", x, a, b, c, y );
 	}

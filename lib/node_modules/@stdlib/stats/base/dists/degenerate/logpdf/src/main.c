@@ -29,7 +29,7 @@
 * @return     evaluated logPDF
 *
 * @example
-* double y = stdlib_base_dists_arcsine_logpdf( 2.0, 3.0 );
+* double y = stdlib_base_dists_degenerate_logpdf( 2.0, 3.0 );
 * // returns -Infinity
 */
 double stdlib_base_dists_degenerate_logpdf( const double x, const double mu ) {

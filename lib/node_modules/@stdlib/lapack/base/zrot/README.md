@@ -20,7 +20,7 @@ limitations under the License.
 
 # zrot
 
-> Apply a plane rotation with real cosine and complex sine to a pair of complex vectors.
+> Apply a plane rotation with real cosine and complex sine to a pair of double-precision complex floating-point vectors.
 
 <section class="usage">
 
