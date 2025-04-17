@@ -17,9 +17,12 @@
 */
 
 #include "stdlib/math/base/special/cosd.h"
-#include "stdlib/math/base/special/cos.h"
+#include "stdlib/math/base/special/kernel_sin.h"
+#include "stdlib/math/base/special/kernel_cos.h"
 #include "stdlib/math/base/special/deg2rad.h"
-#include "stdlib/math/base/assert/is_integer.h"
+#include "stdlib/math/base/special/abs.h"
+#include "stdlib/math/base/special/fmod.h"
+#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_infinite.h"
 
 /**
@@ -33,13 +36,25 @@
 * // returns 1.0
 */
 double stdlib_base_cosd( const double x ) {
-	double xRad;
-	if ( stdlib_base_is_infinite( x ) ) {
+	double rx;
+
+	if ( stdlib_base_is_infinite( x ) || stdlib_base_is_nan( x ) ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( stdlib_base_is_integer( ( ( x / 90.0 ) - 1.0 ) / 2.0 ) ) {
-		return 0.0;
+
+	rx = stdlib_base_abs( stdlib_base_fmod( x, 360.0 ) );
+
+	if ( rx <= 45.0 ) {
+		return stdlib_base_kernel_cos( stdlib_base_deg2rad( rx ), 0.0 );
 	}
-	xRad = stdlib_base_deg2rad( x );
-	return stdlib_base_cos( xRad );
+	if ( rx < 135.0 ) {
+		return stdlib_base_kernel_sin( stdlib_base_deg2rad( 90.0-rx ), 0.0 );
+	}
+	if ( rx <= 225.0 ) {
+		return -stdlib_base_kernel_cos( stdlib_base_deg2rad( 180.0-rx ), 0.0 );
+	}
+	if ( rx < 315.0 ) {
+		return stdlib_base_kernel_sin( stdlib_base_deg2rad( rx-270.0 ), 0.0 );
+	}
+	return stdlib_base_kernel_cos( stdlib_base_deg2rad( 360.0-rx ), 0.0 );
 }

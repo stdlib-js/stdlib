@@ -1,0 +1,74 @@
+
+{{alias}}( p, c )
+    Evaluates the quantile function for a Bradford distribution with shape
+    parameter `c` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If `c <= 0`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    c: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.1, 0.1 )
+    ~0.096
+    > y = {{alias}}( 0.5, 5.0 )
+    ~0.290
+    > y = {{alias}}( 1.0, 10.0 )
+    1.0
+
+    > y = {{alias}}( 0.5, 0.0 )
+    NaN
+
+    > y = {{alias}}( 2.0, 0.5 )
+    NaN
+    > y = {{alias}}( -1.0, 0.5 )
+    NaN
+
+    > y = {{alias}}( NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 1.0, NaN )
+    NaN
+
+
+{{alias}}.factory( c )
+    Returns a function for evaluating the quantile function of a Bradford
+    distribution with shape parameter `c`.
+
+    Parameters
+    ----------
+    c: number
+        Shape parameter.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myquantile = {{alias}}.factory( 5.0 );
+    > var y = myquantile( 0.4 )
+    ~0.210
+    > y = myquantile( 0.8 )
+    ~0.639
+    > y = myquantile( 1.0 )
+    1.0
+
+    See Also
+    --------
+
