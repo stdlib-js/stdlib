@@ -64,7 +64,7 @@ static const double FACTORIAL_169 = 4.269068009004705e+304;
 *
 * @param z        first gamma parameter
 * @param delta    difference
-* @returns        gamma ratio
+* @return         gamma ratio
 */
 static double gammaDeltaRatioLanczos( const double z, const double delta ) {
 	double result;

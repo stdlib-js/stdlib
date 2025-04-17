@@ -145,6 +145,109 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/geometric/quantile.h"
+```
+
+#### stdlib_base_dists_geometric_quantile( r, p )
+
+Evaluates the [quantile function][quantile-function] for a [geometric][geometric-distribution] distribution with success probability `p` at a value `r`.
+
+```c
+double out = stdlib_base_dists_geometric_quantile( 0.5, 0.4 );
+// returns 1
+```
+
+The function accepts the following arguments:
+
+-   **r**: `[in] double` input probability.
+-   **p**: `[in] double` success probability.
+
+```c
+double stdlib_base_dists_geometric_quantile( const double r, const double p );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/geometric/quantile.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double p;
+    double r;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        r = random_uniform( 0.0, 1.0 );
+        p = random_uniform( 0.0, 1.0 );
+        y = stdlib_base_dists_geometric_quantile( r, p );
+        printf( "r: %lf, p: %lf, Q(r;p): %lf\n", r, p, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
