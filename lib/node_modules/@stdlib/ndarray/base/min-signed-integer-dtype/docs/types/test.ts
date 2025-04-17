@@ -21,7 +21,7 @@ import minSignedIntegerDataType = require( './index' );
 
 // TESTS //
 
-// The function returns a data type..
+// The function returns a data type...
 {
 	minSignedIntegerDataType( 2 ); // $ExpectType DataType
 }

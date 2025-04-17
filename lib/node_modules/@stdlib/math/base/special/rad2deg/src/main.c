@@ -25,7 +25,7 @@ static const double CONST_180_DIV_PI = 57.29577951308232;
 * Converts an angle from radians to degrees.
 *
 * @param x    input value (in radians)
-* @return	  output value (in degrees)
+* @return     output value (in degrees)
 *
 * @example
 * double x = 3.141592653589793/2.0
