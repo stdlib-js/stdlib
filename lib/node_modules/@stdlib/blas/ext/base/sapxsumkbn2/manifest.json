@@ -33,9 +33,7 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
@@ -43,7 +41,10 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-float",
         "@stdlib/napi/argv-strided-float32array",
-        "@stdlib/napi/create-double"
+        "@stdlib/napi/create-double",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/absf"
       ]
     },
     {
@@ -54,11 +55,13 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/absf"
+      ]
     },
     {
       "task": "examples",
@@ -68,11 +71,13 @@
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared",
+        "@stdlib/math/base/special/absf"
+      ]
     }
   ]
 }

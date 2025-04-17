@@ -61,8 +61,8 @@
     ignoring `NaN` values and using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the offset parameters support indexing semantics based on
-    starting indices.
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
 
     Parameters
     ----------

@@ -116,6 +116,98 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/chisquare/stdev.h"
+```
+
+#### stdlib_base_dists_chisquare_stdev( k )
+
+Returns the [standard deviation][stdev] of a [chi-squared][chisquare-distribution] distribution with degrees of freedom `k`.
+
+```c
+double out = stdlib_base_dists_chisquare_stdev( 9.0 );
+// returns ~4.243
+```
+
+The function accepts the following arguments:
+
+-   **k**: `[in] double` degrees of freedom.
+
+```c
+double stdlib_base_dists_chisquare_stdev( const double k );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/chisquare/stdev.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double k;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        k = random_uniform( 0.0, 20.0 );
+        y = stdlib_base_dists_chisquare_stdev( k );
+        printf( "k: %lf, SD(X;k): %lf\n", k, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">

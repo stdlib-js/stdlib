@@ -144,7 +144,7 @@ double stdlib_base_fmod( const double x, const double y ) {
 		if ( n <= 31 ) {
 			hx = ( (uint32_t)hx << n ) | ( lx >> ( 32 - n ) );
 			lx <<= n;
-	    } else {
+		} else {
 			hx = lx << ( n - 32 );
 			lx = 0;
 		}
