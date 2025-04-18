@@ -133,53 +133,53 @@ main() {
 			# Post a comment on the PR:
 			comment=":wave: Hi there! :wave:
 
-	And thank you for opening your first pull request! We will review it shortly. :runner: :dash:
+And thank you for opening your first pull request! We will review it shortly. :runner: :dash:
 
-	## Getting Started
+## Getting Started
 
-	-   Please read our [contributing guidelines][stdlib-contributing] if you haven't already.
-	-   For development guidance, refer to the [development guide][stdlib-development].
+-   Please read our [contributing guidelines][stdlib-contributing] if you haven't already.
+-   For development guidance, refer to the [development guide][stdlib-development].
 
-	## Next Steps
+## Next Steps
 
-	1.  A project maintainer will approve GitHub Actions workflows for your PR.
-	2.  All CI checks must pass before your submission can be fully reviewed.
-	3.  You'll need to address any failures in linting or unit tests.
+1.  A project maintainer will approve GitHub Actions workflows for your PR.
+2.  All CI checks must pass before your submission can be fully reviewed.
+3.  You'll need to address any failures in linting or unit tests.
 
-	## Running Tests Locally
+## Running Tests Locally
 
-	You can use \`make\` to run any of the CI commands locally from the **root directory** of the stdlib repository:
+You can use \`make\` to run any of the CI commands locally from the **root directory** of the stdlib repository:
 
-	\`\`\`bash
-	# Run tests for all packages in the math namespace:
-	make test TESTS_FILTER=\".*/@stdlib/math/.*\"
+\`\`\`bash
+# Run tests for all packages in the math namespace:
+make test TESTS_FILTER=\".*/@stdlib/math/.*\"
 
-	# Run benchmarks for a specific package:
-	make benchmark BENCHMARKS_FILTER=\".*/@stdlib/math/base/special/sin/.*\"
-	\`\`\`
+# Run benchmarks for a specific package:
+make benchmark BENCHMARKS_FILTER=\".*/@stdlib/math/base/special/sin/.*\"
+\`\`\`
 
-	If you haven't heard back from us within two weeks, please ping us by tagging the \"reviewers\" team in a comment on this PR.
+If you haven't heard back from us within two weeks, please ping us by tagging the \"reviewers\" team in a comment on this PR.
 
-	If you have any further questions while waiting for a response, please join our [Gitter channel][stdlib-gitter] to chat with project maintainers and other community members.
+If you have any further questions while waiting for a response, please join our [Gitter channel][stdlib-gitter] to chat with project maintainers and other community members.
 
-	We appreciate your contribution!
+We appreciate your contribution!
 
-	## Documentation Links
+## Documentation Links
 
-	-   [Contributing Guidelines][stdlib-contributing]
-	-   [Developtment Guide][stdlib-development]
-	-   [Gitter channel][stdlib-gitter]
-	-   [make rules for running examples][make-docs-examples]
-	-   [make rules for running unit tests][make-docs-test]
-	-   [make rules for running benchmarks][make-docs-benchmark]
+-   [Contributing Guidelines][stdlib-contributing]
+-   [Developtment Guide][stdlib-development]
+-   [Gitter channel][stdlib-gitter]
+-   [make rules for running examples][make-docs-examples]
+-   [make rules for running unit tests][make-docs-test]
+-   [make rules for running benchmarks][make-docs-benchmark]
 
-	[stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
-	[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
-	[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+[stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
+[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
+[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
 
-	[make-docs-examples]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/examples/README.md
-	[make-docs-test]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/test/README.md
-	[make-docs-benchmark]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/benchmark/README.md"
+[make-docs-examples]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/examples/README.md
+[make-docs-test]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/test/README.md
+[make-docs-benchmark]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/benchmark/README.md"
 			if ! github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${issue_number}/comments" "{\"body\":$(echo "${comment}" | jq -R -s -c .)}"; then
 				echo "Failed to post comment on PR."
 				on_error 1
@@ -196,13 +196,13 @@ main() {
 
 		if [ "${num_issues}" = "1" ]; then
 			# Post a comment on the issue:
-			comment="wave: Hi there! :wave:
+			comment=":wave: Hi there! :wave:
 
-	And thank you for opening your first issue! We will get back to you shortly. :runner: :dash:
+And thank you for opening your first issue! We will get back to you shortly. :runner: :dash:
 
-	If you have any further questions while waiting for a response, please join our [Gitter channel][stdlib-gitter] to chat with project maintainers and other community members.
+If you have any further questions while waiting for a response, please join our [Gitter channel][stdlib-gitter] to chat with project maintainers and other community members.
 
-	[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib"
+[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib"
 			if ! github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${issue_number}/comments" "{\"body\":$(echo "${comment}" | jq -R -s -c .)}"; then
 				echo "Failed to post comment on issue."
 				on_error 1

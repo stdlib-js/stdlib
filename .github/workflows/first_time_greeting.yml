@@ -20,7 +20,11 @@
 name: first_time_greeting
 
 # Workflow triggers:
-on: [pull_request_target, issues]
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
 
 # Global permissions:
 permissions:
