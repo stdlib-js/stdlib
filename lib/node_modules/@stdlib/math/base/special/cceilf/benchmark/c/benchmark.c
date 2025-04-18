@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,9 +16,8 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/special/cceilf.h"
-#include "stdlib/complex/float32/ctor.h"
-#include "stdlib/complex/float32/reim.h"
+#include "stdlib/math/base/special/ceilf.h"
+#include <complex.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -92,15 +91,12 @@ static float rand_float( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	float complex x;
+	float complex y;
 	double elapsed;
 	float v[ 100 ];
-	float re;
-	float im;
 	double t;
 	int i;
-
-	stdlib_complex64_t x;
-	stdlib_complex64_t y;
 
 	for ( i = 0; i < 100; i++ ) {
 		v[ i ] = ( 1000.0f*rand_float() ) - 500.0f;
@@ -108,16 +104,15 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = stdlib_complex64( v[ i%100 ], v[ i%100 ] );
-		y = stdlib_base_cceilf( x );
-		stdlib_complex64_reim( y, &re, &im );
-		if ( re != re ) {
+		x = v[ i%100 ] + v[ i%100 ]*I;
+		y = stdlib_base_ceilf( crealf( x ) ) + stdlib_base_ceilf( cimagf( x ) )*I;
+		if ( crealf( y ) != crealf( y ) ) {
 			printf( "unexpected result\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( im != im ) {
+	if ( cimagf( y ) != cimagf( y ) ) {
 		printf( "unexpected result\n" );
 	}
 	return elapsed;
@@ -135,7 +130,7 @@ int main( void ) {
 
 	print_version();
 	for ( i = 0; i < REPEATS; i++ ) {
-		printf( "# c::native::%s\n", NAME );
+		printf( "# c::%s\n", NAME );
 		elapsed = benchmark();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", i+1 );
