@@ -37,8 +37,6 @@ limitations under the License.
     <br>
 </div>
 
-## 2025
-
 ### Exploring stdlib: JavaScript's Answer to Technical Computing
 
 > [Athan Reines][kgryte], Inspiring Computing, February 2025
