@@ -37,11 +37,13 @@ double stdlib_base_hypot( const double x, const double y ) {
 	double tmp;
 	double a;
 	double b;
-	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
-		return 0.0 / 0.0; // NaN
-	}
+
+	// If one of the arguments is `+-infinity`, return `+infinity` even if the other argument is `NaN` (IEEE 754-2019)...
 	if ( stdlib_base_is_infinite( x ) || stdlib_base_is_infinite( y ) ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;
+	}
+	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
+		return 0.0 / 0.0; // NaN
 	}
 	a = x;
 	b = y;

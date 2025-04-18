@@ -86,14 +86,18 @@ bool = isOdd( NaN );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var isOdd = require( '@stdlib/math/base/assert/is-odd' );
 
-var x = discreteUniform( 100, 0, 1000 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 100, 0, 1000, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( '%d is %s', x[ i ], ( isOdd( x[ i ] ) ) ? 'odd' : 'not odd' );
+function isOddWrapper( integer ) {
+    return ( isOdd( integer ) ) ? 'odd' : 'not odd';
 }
+logEachMap( '%d is %s', x, isOddWrapper );
 ```
 
 </section>
