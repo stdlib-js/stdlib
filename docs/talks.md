@@ -31,7 +31,7 @@ limitations under the License.
 > [Gunj Joshi][gunjjoshi], FOSSASIA, March 2025
 
 <div class="image" align="center">
-    <a title="Numeric and Scientific Computing inside your Web Browser" href="https://www.youtube.com/watch?v=hHCiinxsnbo&list=PLzZVLecTsGpKdcmeM76jS3hB-3eP4vZzp&index=10">
+    <a title="Numeric and Scientific Computing inside your Web Browser" href="https://www.youtube.com/watch?v=hHCiinxsnbo">
         <img width="480" src="" alt="Numeric and Scientific Computing inside your Web Browser">
     </a>
     <br>
