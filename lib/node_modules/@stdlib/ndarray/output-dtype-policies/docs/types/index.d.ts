@@ -19,6 +19,33 @@
 // TypeScript Version: 4.1
 
 /**
+* Data type policies.
+*/
+type Policies = [
+	'same',
+	'promoted',
+	'boolean',
+	'boolean_and_generic',
+	'signed_integer',
+	'signed_integer_and_generic',
+	'unsigned_integer',
+	'unsigned_integer_and_generic',
+	'integer',
+	'integer_and_generic',
+	'floating_point',
+	'floating_point_and_generic',
+	'real_floating_point',
+	'real_floating_point_and_generic',
+	'complex_floating_point',
+	'complex_floating_point_and_generic',
+	'real_and_generic',
+	'real',
+	'numeric',
+	'numeric_and_generic',
+	'default'
+];
+
+/**
 * Returns a list of output ndarray data type policies.
 *
 * ## Notes
@@ -27,15 +54,24 @@
 *
 *     -   `same`: return the same data type.
 *     -   `promoted`: return a promoted data type.
-*     -   `bool`: return a boolean data type.
-*     -   `numeric`: return a numeric data type.
-*     -   `real`: return a real-valued data type.
+*     -   `boolean`: return a boolean data type.
+*     -   `boolean_and_generic`: return a boolean or "generic" data type.
 *     -   `signed_integer`: return a signed integer data type.
+*     -   `signed_integer_and_generic`: return a signed integer or "generic" data type.
 *     -   `unsigned_integer`: return an unsigned integer data type.
+*     -   `unsigned_integer_and_generic`: return an unsigned integer or "generic" data type.
 *     -   `integer`: return an integer data type (i.e., either signed or unsigned).
+*     -   `integer_and_generic`: return an integer (i.e., either signed or unsigned) or "generic" data type.
 *     -   `floating_point`: return a floating-point data type (i.e., either real-valued or complex-valued).
+*     -   `floating_point_and_generic`: return a floating-point (i.e., either real-valued or complex-valued) or "generic" data type.
 *     -   `real_floating_point`: return a real-valued floating-point data type.
+*     -   `real_floating_point_and_generic`: return a real-valued or "generic" floating-point data type.
 *     -   `complex_floating_point`: return a complex-valued floating-point data type.
+*     -   `complex_floating_point_and_generic`: return a complex-valued or "generic" floating-point data type.
+*     -   `real`: return a real-valued data type.
+*     -   `real_and_generic`: return a real-valued or "generic" data type.
+*     -   `numeric`: return a numeric data type.
+*     -   `numeric_and_generic`: return a numeric or "generic" data type.
 *     -   `default`: return the default data type.
 *
 * @returns list of data type policies
@@ -44,7 +80,7 @@
 * var list = policies();
 * // returns [...]
 */
-declare function policies(): Array<string>;
+declare function policies(): Policies;
 
 
 // EXPORTS //

@@ -41,7 +41,7 @@ var mskbinary4d = require( '@stdlib/array/base/mskbinary4d' );
 Applies a binary callback to elements in two four-dimensional nested input arrays according to elements in a four-dimensional nested mask array and assigns results to elements in a four-dimensional nested output array.
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var zeros4d = require( '@stdlib/array/base/zeros4d' );
 
 var x = [ [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ] ];
@@ -86,7 +86,7 @@ var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var bernoulli = require( '@stdlib/random/base/bernoulli' ).factory;
 var filled4dBy = require( '@stdlib/array/base/filled4d-by' );
 var zeros4d = require( '@stdlib/array/base/zeros4d' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var mskbinary4d = require( '@stdlib/array/base/mskbinary4d' );
 
 var shape = [ 2, 1, 3, 3 ];
