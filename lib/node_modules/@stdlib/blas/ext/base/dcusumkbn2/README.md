@@ -61,11 +61,11 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **sum**: initial sum.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **strideX**: index increment for `x`.
+-   **strideX**: stride length for `x`.
 -   **y**: output [`Float64Array`][@stdlib/array/float64].
--   **strideY**: index increment for `y`.
+-   **strideY**: stride length for `y`.
 
-The `N` and stride parameters determine which elements in `x` and `y` are accessed at runtime. For example, to compute the cumulative sum of every other element in `x`,
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compute the cumulative sum of every other element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -73,9 +73,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
 var y = new Float64Array( x.length );
 
-var N = 4;
-
-var v = dcusumkbn2( N, 0.0, x, 2, y, 1 );
+var v = dcusumkbn2( 4, 0.0, x, 2, y, 1 );
 // y => <Float64Array>[ 1.0, 3.0, 1.0, 5.0, 0.0, 0.0, 0.0, 0.0 ]
 ```
 
@@ -94,9 +92,7 @@ var y0 = new Float64Array( x0.length );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 
-var N = 4;
-
-dcusumkbn2( N, 0.0, x1, -2, y1, 1 );
+dcusumkbn2( 4, 0.0, x1, -2, y1, 1 );
 // y0 => <Float64Array>[ 0.0, 0.0, 0.0, 4.0, 6.0, 4.0, 5.0, 0.0 ]
 ```
 
@@ -119,7 +115,7 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, offsetX and offsetY parameters support indexing semantics based on a starting indices. For example, to calculate the cumulative sum of every other value in `x` starting from the second value and to store in the last `N` elements of `y` starting from the last element
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to calculate the cumulative sum of every other value in `x` starting from the second value and to store in the last `N` elements of `y` starting from the last element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -127,9 +123,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var y = new Float64Array( x.length );
 
-var N = 4;
-
-dcusumkbn2.ndarray( N, 0.0, x, 2, 1, y, -1, y.length-1 );
+dcusumkbn2.ndarray( 4, 0.0, x, 2, 1, y, -1, y.length-1 );
 // y => <Float64Array>[ 0.0, 0.0, 0.0, 0.0, 5.0, 1.0, -1.0, 1.0 ]
 ```
 
@@ -216,9 +210,9 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **sum**: `[in] double` initial sum.
 -   **X**: `[in] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **Y**: `[out] double*` output array.
--   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
 
 ```c
 void stdlib_strided_dcusumkbn2( const CBLAS_INT N, const double sum, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY );
@@ -244,10 +238,10 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **sum**: `[in] double` initial sum.
 -   **X**: `[in] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 -   **Y**: `[out] double*` output array.
--   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
 -   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
 
 ```c

@@ -98,16 +98,16 @@ v = ellipe( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var ellipe = require( '@stdlib/math/base/special/ellipe' );
 
-var m;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var m = uniform( 100, -1.0, 1.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    m = -1.0 + ( randu() * 2.0 );
-    console.log( 'ellipe(%d) = %d', m, ellipe( m ) );
-}
+logEachMap( 'ellipe(%0.4f) = %0.4f', m, ellipe );
 ```
 
 </section>

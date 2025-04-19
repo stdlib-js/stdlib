@@ -65,18 +65,16 @@ v = truncsd( 0.0313, 2, 2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var truncsd = require( '@stdlib/math/base/special/truncsd' );
 
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -5000.0, 5000.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*10000.0) - 5000.0;
-    y = truncsd( x, 5, 10 );
-    console.log( 'x: %d. Rounded: %d.', x, y );
-}
+logEachMap( 'x: %0.4f. a: %d. b: %d. Rounded: %0.4f.', x, 5, 10, truncsd );
 ```
 
 </section>

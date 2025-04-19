@@ -1,0 +1,239 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to identify potentially duplicate pull requests based on the issues they resolve.
+#
+# Usage: check_duplicate_prs
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+
+# shellcheck disable=SC2317
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# GitHub API base URL:
+github_api_url="https://api.github.com"
+
+# Repository owner and name:
+repo_owner="stdlib-js"
+repo_name="stdlib"
+
+# Label to add/remove for duplicate PRs:
+duplicate_label="Potential Duplicate"
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit "$1"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Performs a GitHub API request.
+#
+# $1 - HTTP method (GET, POST, PATCH, etc.)
+# $2 - API endpoint
+# $3 - data for POST/PATCH requests
+github_api() {
+	local method="$1"
+	local endpoint="$2"
+	local data="$3"
+
+	# Initialize an array to hold curl headers:
+	local headers=()
+
+	# If GITHUB_TOKEN is set, add the Authorization header:
+	if [ -n "${GITHUB_TOKEN}" ]; then
+		headers+=("-H" "Authorization: token ${GITHUB_TOKEN}")
+	fi
+
+	# For POST/PATCH requests, always set the Content-Type header:
+	if [ "$method" != "GET" ]; then
+		headers+=("-H" "Content-Type: application/json")
+	fi
+
+	# Make the API request:
+	if [ -n "${data}" ]; then
+		curl -s -X "${method}" "${headers[@]}" -d "${data}" "${github_api_url}${endpoint}"
+	else
+		curl -s -X "${method}" "${headers[@]}" "${github_api_url}${endpoint}"
+	fi
+}
+
+# Extracts issue numbers resolved/closed in PRs for stdlib-js/stdlib.
+#
+# $1 - PR body text
+extract_resolved_issues() {
+	local body="$1"
+	echo "$body" | grep -Eio "(resolves|closes|close|fix|fixes|fixed|resolve)[[:space:]]*(#[0-9]+|https?://github\.com/stdlib-js/stdlib/issues/[0-9]+)" |
+		grep -Eo "([0-9]+)$" | sort -u
+}
+
+# Removes a label from a PR.
+#
+# $1 - PR number
+# $2 - label name
+remove_label() {
+	local pr_number="$1"
+	local label="$2"
+
+	github_api "DELETE" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/labels/${label}" || true
+}
+
+# Main execution sequence.
+main() {
+	echo "Fetching open pull requests..."
+
+	# Get all open PRs with pagination:
+	open_prs="[]"
+	page=1
+
+	while true; do
+		# Fetch current page of PRs:
+		page_data=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/pulls?state=open&per_page=100&page=${page}")
+
+		# Check if we got any results:
+		page_count=$(echo "$page_data" | jq length)
+
+		if [ "$page_count" -eq 0 ]; then
+			# No more results, break the loop
+			break
+		fi
+
+		# Merge results with our accumulated results:
+		open_prs=$(echo "$open_prs" "$page_data" | jq -s '.[0] + .[1]')
+
+		# Move to next page:
+		page=$((page + 1))
+	done
+
+	# Check if we found any PRs:
+	pr_count=$(echo "$open_prs" | jq length)
+	if [ "$pr_count" -eq 0 ]; then
+		echo "No open pull requests found."
+		print_success
+		exit 0
+	fi
+
+	echo "Found ${pr_count} open pull requests."
+
+	# Create arrays to store mappings and track labeled PRs:
+	declare -a issue_prs_keys
+	declare -a issue_prs_values
+	declare -a labeled_prs_list
+
+	# Get all issues with the duplicate label in one API call
+	echo "Fetching PRs with duplicate label..."
+	encoded_label=${duplicate_label// /%20}
+	labeled_prs_data=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/issues?labels=${encoded_label}&state=open&per_page=100")
+
+	if ! echo "$labeled_prs_data" | jq -e 'if type=="array" then true else false end' > /dev/null 2>&1; then
+		echo "Warning: Invalid response when fetching labeled PRs: ${labeled_prs_data}" >&2
+	elif [ -n "$labeled_prs_data" ]; then
+		while IFS= read -r labeled_pr; do
+			pr_number=$(echo "$labeled_pr" | jq -r '.number')
+			labeled_prs_list+=("$pr_number")
+		done < <(echo "$labeled_prs_data" | jq -c '.[]')
+	fi
+	echo "Found ${#labeled_prs_list[@]} PRs with duplicate label"
+
+	# Process each PR to build issue mappings:
+	echo "Processing PRs for issue references..."
+	pr_count=0
+	while IFS= read -r pr; do
+		pr_number=$(echo "$pr" | jq -r '.number')
+		pr_body=$(echo "$pr" | jq -r '.body')
+		resolved_issues=$(extract_resolved_issues "$pr_body")
+
+		pr_count=$((pr_count + 1))
+		if [ $((pr_count % 50)) -eq 0 ]; then
+			echo "Processed ${pr_count} PRs..."
+		fi
+
+		for issue in $resolved_issues; do
+			# Find existing issue index
+			index=-1
+			for i in "${!issue_prs_keys[@]}"; do
+				if [ "${issue_prs_keys[$i]}" = "$issue" ]; then
+					index=$i
+					break
+				fi
+			done
+			if [ "$index" -eq -1 ]; then
+				issue_prs_keys+=("$issue")
+				issue_prs_values+=("$pr_number")
+			else
+				issue_prs_values[index]="${issue_prs_values[index]} $pr_number"
+			fi
+		done
+	done < <(echo "${open_prs}" | jq -c '.[]')
+
+	# Process the mappings to find duplicates:
+	declare -a should_be_labeled_list
+
+	for i in "${!issue_prs_keys[@]}"; do
+		read -r -a prs <<< "${issue_prs_values[$i]}"
+		if [ ${#prs[@]} -gt 1 ]; then
+			for pr in "${prs[@]}"; do
+				should_be_labeled_list+=("$pr")
+			done
+		fi
+	done
+
+	echo "PRs that should have label: ${should_be_labeled_list[*]}"
+	echo "PRs that currently have label: ${labeled_prs_list[*]}"
+
+	for pr in "${labeled_prs_list[@]}"; do
+		echo "Checking if PR #${pr} should still have label..."
+		if ! printf '%s\n' "${should_be_labeled_list[@]}" | grep -q "^${pr}$"; then
+			echo "Removing duplicate label from PR #${pr}..."
+			remove_label "$pr" "$duplicate_label"
+		fi
+	done
+
+	for pr in "${should_be_labeled_list[@]}"; do
+		echo "Checking if PR #${pr} needs label..."
+		if ! printf '%s\n' "${labeled_prs_list[@]}" | grep -q "^${pr}$"; then
+			echo "Adding duplicate label to PR #${pr}..."
+			github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${pr}/labels" \
+				"{\"labels\":[\"${duplicate_label}\"]}"
+		else
+			echo "PR #${pr} already has label, skipping..."
+		fi
+	done
+
+	print_success
+	exit 0
+}
+
+# Run main:
+main
