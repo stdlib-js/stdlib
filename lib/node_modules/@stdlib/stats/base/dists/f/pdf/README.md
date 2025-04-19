@@ -103,7 +103,7 @@ y = pdf( 2.0, 1.0, -1.0 );
 
 #### pdf.factory( d1, d2 )
 
-Returns a `function` for evaluating the [PDF][pdf] of a [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
+Returns a `function` for evaluating the [PDF][pdf] of an [F][f-distribution] distribution with parameters `d1` (numerator degrees of freedom) and `d2` (denominator degrees of freedom).
 
 ```javascript
 var mypdf = pdf.factory( 6.0, 7.0 );

@@ -95,20 +95,18 @@ v = clamp( 3.14, 0.0, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var clamp = require( '@stdlib/math/base/special/clamp' );
 
-var min;
-var max;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var min = discreteUniform( 100, 0, 10, opts );
+var max = discreteUniform( 100, 5, 15, opts );
+var v = discreteUniform( 100, -20, 20, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    min = discreteUniform( 0.0, 10.0 );
-    max = discreteUniform( 5.0, 15.0 );
-    v = discreteUniform( -20.0, 20.0 );
-    console.log( 'clamp(%d,%d,%d) => %d', v, min, max, clamp( v, min, max ) );
-}
+logEachMap( 'clamp(%d,%d,%d) => %d', v, min, max, clamp );
 ```
 
 </section>
