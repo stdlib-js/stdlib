@@ -32,7 +32,7 @@ limitations under the License.
 
 <div class="image" align="center">
     <a title="Numeric and Scientific Computing inside your Web Browser" href="https://www.youtube.com/watch?v=hHCiinxsnbo">
-        <img width="480" src="" alt="Numeric and Scientific Computing inside your Web Browser">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@12ca211729e1f82c5e461d62aa28f52d46b12bdf/docs/assets/talks/fossasia_bangkok_2025_gunj_joshi.png" alt="Numeric and Scientific Computing inside your Web Browser">
     </a>
     <br>
 </div>
