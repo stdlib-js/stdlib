@@ -107,7 +107,8 @@ jobs:
             'flags': {
               'since': '$UNTIL - 1 week',
               'until': '$UNTIL'
-            }
+            },
+            'format': 'aggregated'
           });
           console.log( changelog.content );
           " > ./www-blog-monthly-changelog/monthly_changelog_$UNTIL.md
