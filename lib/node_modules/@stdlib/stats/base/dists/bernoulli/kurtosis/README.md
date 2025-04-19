@@ -117,7 +117,92 @@ logEachMap( 'p: %0.4f, Kurt(X;p): %0.4f', p, kurtosis );
 
 </section>
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/bernoulli/kurtosis.h"
+```
+
+#### stdlib_base_dists_bernoulli_kurtosis( p )
+
+Returns the [excess kurtosis][kurtosis] of a [Bernoulli][bernoulli-distribution] distribution with success probability `p`.
+
+```c
+double out = stdlib_base_dists_bernoulli_kurtosis( 0.1 );
+// returns ~5.111
+```
+
+The function accepts the following arguments:
+
+-   **p**: `[in] double` success probability.
+
+```c
+double stdlib_base_dists_bernoulli_kurtosis( const double p );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/bernoulli/kurtosis.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    double p;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        p = (double)rand() / ( (double)RAND_MAX + 1.0 );
+        y = stdlib_base_dists_bernoulli_kurtosis( p );
+        printf( "p: %lf, Kurt(X;p): %lf\n", p, y );
+    }
+}
+```
+
+</section>
+
 <!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

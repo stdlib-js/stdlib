@@ -157,7 +157,7 @@ for ( i = 0; i < 10; i++ ) {
 #include "stdlib/stats/base/dists/cosine/mean.h"
 ```
 
-#### stdlib_base_dists_cosine_mean( a, b )
+#### stdlib_base_dists_cosine_mean( mu, s )
 
 Returns the [expected value][mean] for a [raised cosine][cosine-distribution] distribution with location parameter `mu` and scale parameter `s`.
 

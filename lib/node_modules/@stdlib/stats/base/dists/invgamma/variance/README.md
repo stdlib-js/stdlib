@@ -210,15 +210,18 @@ double stdlib_base_dists_invgamma_variance( const double alpha, const double bet
 #include "stdlib/stats/base/dists/invgamma/variance.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 static double random_uniform( const double min, const double max ) {
     double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
     return min + ( v*(max-min) );
 }
+
 int main( void ) {
     double alpha;
     double beta;
     double y;
     int i;
+
     for ( i = 0; i < 25; i++ ) {
         alpha = random_uniform( 0.0, 20.0 );
         beta = random_uniform( 0.0, 20.0 );

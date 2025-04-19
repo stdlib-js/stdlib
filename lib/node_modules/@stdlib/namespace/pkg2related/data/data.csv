@@ -2977,7 +2977,7 @@
 "@stdlib/utils/async/some-by","@stdlib/utils/async/any-by,@stdlib/utils/async/every-by,@stdlib/utils/async/for-each,@stdlib/utils/async/none-by,@stdlib/utils/some-by,@stdlib/utils/async/some-by-right"
 "@stdlib/utils/some-by-right","@stdlib/utils/any-by-right,@stdlib/utils/every-by-right,@stdlib/utils/for-each-right,@stdlib/utils/none-by-right,@stdlib/utils/some-by,@stdlib/utils/async/some-by-right"
 "@stdlib/utils/async/some-by-right","@stdlib/utils/async/any-by-right,@stdlib/utils/async/every-by-right,@stdlib/utils/async/for-each-right,@stdlib/utils/async/none-by-right,@stdlib/utils/async/some-by,@stdlib/utils/some-by-right"
-"@stdlib/utils/some-in-by","@stdlib/utils/any-in-by,@stdlib/utils/every-in-by,@stdlib/utils/some-by,@stdlib/utils/some-own-by"
+"@stdlib/utils/some-in-by","@stdlib/utils/any-in-by,@stdlib/object/every-in-by,@stdlib/utils/some-by,@stdlib/utils/some-own-by"
 "@stdlib/utils/some-own-by","@stdlib/utils/any-own-by,@stdlib/utils/every-own-by,@stdlib/utils/some-by,@stdlib/utils/some-in-by"
 "@stdlib/datasets/sotu",""
 "@stdlib/datasets/spache-revised",""

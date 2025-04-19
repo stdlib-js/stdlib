@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_STATS_BASE_DISTS_CDF_H
-#define STDLIB_STATS_BASE_DISTS_CDF_H
+#ifndef STDLIB_STATS_BASE_DISTS_LAPLACE_CDF_H
+#define STDLIB_STATS_BASE_DISTS_LAPLACE_CDF_H
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at value `x`.
+* Evaluates the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
 */
 double stdlib_base_dists_laplace_cdf( const double x, const double mu, const double b );
 
@@ -35,4 +35,4 @@ double stdlib_base_dists_laplace_cdf( const double x, const double mu, const dou
 }
 #endif
 
-#endif // !STDLIB_STATS_BASE_DISTS_CDF_H
+#endif // !STDLIB_STATS_BASE_DISTS_LAPLACE_CDF_H

@@ -267,7 +267,11 @@ update_commit_map() {
 	if [ "$found" -eq 0 ]; then
 		commit_keys+=("$key")
 		commit_counts+=("1")
-		commit_comments+=("-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}")
+		if [ "$line" = "null" ]; then
+			commit_comments+=("-   ${link}"$'\n\n'"    > ${formatted_body}"$'\n\n'"    ${code_snippet}")
+		else
+			commit_comments+=("-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}")
+		fi
 	fi
 }
 
