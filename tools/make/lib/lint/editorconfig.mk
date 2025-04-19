@@ -35,9 +35,16 @@ EDITORCONFIG_CHECKER_CONF ?= $(CONFIG_DIR)/editorconfig-checker/.editorconfig_ch
 # Define the path to the editorconfig-checker configuration file for Markdown files:
 EDITORCONFIG_CHECKER_MARKDOWN_CONF ?= $(CONFIG_DIR)/editorconfig-checker/.editorconfig_checker.markdown.json
 
+# Define the output format (default is unset, which uses editorconfig-checker's default format)
+EDITORCONFIG_FORMAT ?=
+
+# Add the format flag if EDITORCONFIG_FORMAT is set
+EDITORCONFIG_FORMAT_FLAG := $(if $(EDITORCONFIG_FORMAT),--format=$(EDITORCONFIG_FORMAT))
+
 # Define the command-line options to use when invoking the editorconfig-checker executable:
 EDITORCONFIG_CHECKER_CONF_FLAGS ?= \
-	--ignore-defaults
+	--ignore-defaults \
+	$(EDITORCONFIG_FORMAT_FLAG)
 
 
 # RULES #
@@ -57,7 +64,7 @@ lint-editorconfig: $(NODE_MODULES)
 	$(QUIET) $(FIND_PACKAGES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
 		echo ''; \
 		echo "Linting package for basic formatting errors: $$pkg"; \
-		cd "$$pkg" && ( $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) && $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) && echo 'Success. No detected EditorConfig lint errors.' && echo '' ) || exit 1; \
+		cd "$$pkg" && ( $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) ./ && $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && echo 'Success. No detected EditorConfig lint errors.' && echo '' ) || exit 1; \
 	done
 
 .PHONY: lint-editorconfig
@@ -81,8 +88,8 @@ lint-editorconfig-files: $(NODE_MODULES)
 	$(QUIET) $(MKDIR_RECURSIVE) "$(BUILD_DIR)/editorconfig-checker"
 	$(QUIET) echo $(FILES) | tr ' ' '\n' | $(TAR) -cf - -T - | $(TAR) -xf - -C "$(BUILD_DIR)/editorconfig-checker/"
 	$(QUIET) cd "$(BUILD_DIR)/editorconfig-checker" && \
-		$(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) && \
-		$(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) && \
+		$(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) ./ && \
+		$(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && \
 		echo 'Success. No detected EditorConfig lint errors.' && \
 		echo ''
 

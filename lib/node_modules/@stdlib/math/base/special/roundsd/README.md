@@ -69,18 +69,16 @@ var v = roundsd( 0.0313, 2, 2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var roundsd = require( '@stdlib/math/base/special/roundsd' );
 
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -5000.0, 5000.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*10000.0) - 5000.0;
-    y = roundsd( x, 5 );
-    console.log( 'x: %d. Rounded: %d.', x, y );
-}
+logEachMap( 'x: %0.4f. y: %d. Rounded: %0.4f.', x, 5, roundsd );
 ```
 
 </section>
