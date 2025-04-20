@@ -276,6 +276,8 @@
 "1oh",@stdlib/array-base-atnd
 "29O",@stdlib/array/base/banded/filled2d-by
 "29P",@stdlib/array-base-banded-filled2d-by
+"2Eg",@stdlib/array/base/banded
+"2Eh",@stdlib/array-base-banded
 "29Q",@stdlib/array/base/banded/to-compact
 "29R",@stdlib/array-base-banded-to-compact
 "1ne",@stdlib/array/base/bifurcate-entries-by
@@ -612,10 +614,14 @@
 "1kv",@stdlib/array-base-strided2array5d
 "29W",@stdlib/array/base/symmetric-banded/filled2d-by
 "29X",@stdlib/array-base-symmetric-banded-filled2d-by
+"2Ei",@stdlib/array/base/symmetric-banded
+"2Ej",@stdlib/array-base-symmetric-banded
 "29Y",@stdlib/array/base/symmetric-banded/to-compact
 "29Z",@stdlib/array-base-symmetric-banded-to-compact
 "29a",@stdlib/array/base/symmetric/filled2d-by
 "29b",@stdlib/array-base-symmetric-filled2d-by
+"2Ek",@stdlib/array/base/symmetric
+"2El",@stdlib/array-base-symmetric
 "1ly",@stdlib/array/base/take-indexed
 "1lz",@stdlib/array-base-take-indexed
 "25o",@stdlib/array/base/take-indexed2
@@ -1746,6 +1752,8 @@
 "26z",@stdlib/blas-base-wasm-sdot
 "29c",@stdlib/blas/base/wasm/srotm
 "29d",@stdlib/blas-base-wasm-srotm
+"2Em",@stdlib/blas/base/wasm/sswap
+"2En",@stdlib/blas-base-wasm-sswap
 "27A",@stdlib/blas/base/wasm/zswap
 "27B",@stdlib/blas-base-wasm-zswap
 "1ug",@stdlib/blas/base/xerbla
@@ -3429,6 +3437,8 @@
 "0XD",@stdlib/math-base-special-logit
 "0XE",@stdlib/math/base/special/lucas
 "0XF",@stdlib/math-base-special-lucas
+"2Eo",@stdlib/math/base/special/lucasf
+"2Ep",@stdlib/math-base-special-lucasf
 "0XG",@stdlib/math/base/special/max
 "0XH",@stdlib/math-base-special-max
 "0XI",@stdlib/math/base/special/maxabs
@@ -4349,6 +4359,8 @@
 "1d5",@stdlib/ndarray-base-empty-like
 "1d6",@stdlib/ndarray/base/empty
 "1d7",@stdlib/ndarray-base-empty
+"2Eq",@stdlib/ndarray/base/every-by
+"2Er",@stdlib/ndarray-base-every-by
 "2AU",@stdlib/ndarray/base/every
 "2AV",@stdlib/ndarray-base-every
 "0ie",@stdlib/ndarray/base/expand-dimensions
@@ -4497,6 +4509,8 @@
 "1dP",@stdlib/ndarray-base-unary-loop-interchange-order
 "1dQ",@stdlib/ndarray/base/unary-output-dtype
 "1dR",@stdlib/ndarray-base-unary-output-dtype
+"2Es",@stdlib/ndarray/base/unary-reduce-strided1d
+"2Et",@stdlib/ndarray-base-unary-reduce-strided1d
 "2AY",@stdlib/ndarray/base/unary-reduce-subarray
 "2AZ",@stdlib/ndarray-base-unary-reduce-subarray
 "1dS",@stdlib/ndarray/base/unary-tiling-block-size
@@ -4821,6 +4835,8 @@
 "1dp",@stdlib/object-assign
 "1dq",@stdlib/object/ctor
 "1dr",@stdlib/object-ctor
+"2Eu",@stdlib/object/every-in-by
+"2Ev",@stdlib/object-every-in-by
 "1dt",@stdlib/object
 "0mG",@stdlib/os/arch
 "0mH",@stdlib/os-arch
@@ -5473,6 +5489,8 @@
 "0tf",@stdlib/stats-anova1
 "2EY",@stdlib/stats/array/max
 "2EZ",@stdlib/stats-array-max
+"2Ew",@stdlib/stats/array/min
+"2Ex",@stdlib/stats-array-min
 "2Ea",@stdlib/stats/array/mskmax
 "2Eb",@stdlib/stats-array-mskmax
 "2Ec",@stdlib/stats/array/nanmax
@@ -6571,6 +6589,14 @@
 "1EH",@stdlib/stats-base-nanvariancewd
 "1EI",@stdlib/stats/base/nanvarianceyc
 "1EJ",@stdlib/stats-base-nanvarianceyc
+"2Ey",@stdlib/stats/base/ndarray/dmax
+"2Ez",@stdlib/stats-base-ndarray-dmax
+"2F0",@stdlib/stats/base/ndarray/max
+"2F1",@stdlib/stats-base-ndarray-max
+"2F2",@stdlib/stats/base/ndarray
+"2F3",@stdlib/stats-base-ndarray
+"2F4",@stdlib/stats/base/ndarray/smax
+"2F5",@stdlib/stats-base-ndarray-smax
 "1EK",@stdlib/stats/base
 "1EL",@stdlib/stats-base
 "1EM",@stdlib/stats/base/range-by
@@ -6961,6 +6987,8 @@
 "1Lf",@stdlib/stats-levene-test
 "1Lg",@stdlib/stats/lowess
 "1Lh",@stdlib/stats-lowess
+"2F6",@stdlib/stats/max
+"2F7",@stdlib/stats-max
 "1Lj",@stdlib/stats
 "1Lk",@stdlib/stats/padjust
 "1Ll",@stdlib/stats-padjust
@@ -7178,6 +7206,10 @@
 "2EP",@stdlib/stats-strided-svariancetk
 "2EQ",@stdlib/stats/strided/svarianceyc
 "2ER",@stdlib/stats-strided-svarianceyc
+"2F8",@stdlib/stats/tools/reduce/unary-strided-dispatch-factory
+"2F9",@stdlib/stats-tools-reduce-unary-strided-dispatch-factory
+"2FA",@stdlib/stats/tools/reduce/unary-strided-dispatch
+"2FB",@stdlib/stats-tools-reduce-unary-strided-dispatch
 "1Lq",@stdlib/stats/ttest
 "1Lr",@stdlib/stats-ttest
 "1Ls",@stdlib/stats/ttest2
@@ -7844,8 +7876,6 @@
 "1Td",@stdlib/utils-every-by-right
 "1Te",@stdlib/utils/every-by
 "1Tf",@stdlib/utils-every-by
-"1su",@stdlib/utils/every-in-by
-"1sv",@stdlib/utils-every-in-by
 "1uE",@stdlib/utils/every-own-by
 "1uF",@stdlib/utils-every-own-by
 "1Tg",@stdlib/utils/every
