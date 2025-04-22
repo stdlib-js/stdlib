@@ -74,9 +74,11 @@ dir = dirname( file );
 # Generate fixtures:
 a = rand( 500 ) .* 10.0;
 b = ( rand( 500 ) .* 10.0 ) .+ a;
+
 # Case: c < (a + b) / 2
 c1 = a .+ ( b .- a ) .* ( 0.5 .* rand( 500 ) );
 gen( a, b, c1, "data1.json" );
+
 # Case: c >= (a + b) / 2
 c2 = ( a .+ b ) ./ 2 .+ ( b .- a ) .* ( 0.5 .* rand( 500 ) );
 gen( a, b, c2, "data2.json" );

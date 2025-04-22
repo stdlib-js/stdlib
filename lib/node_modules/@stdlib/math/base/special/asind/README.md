@@ -71,15 +71,15 @@ var v = asind( -3.14 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var asind = require( '@stdlib/math/base/special/asind' );
 
-var x = linspace( -1.0, 1.0, 100 );
+var x = uniform( 100, -1.0, 1.0, {
+    'dtype': 'float64'
+});
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( asind( x[ i ] ) );
-}
+logEachMap( 'asind(%0.4f) = %0.4f', x, asind );
 ```
 
 </section>

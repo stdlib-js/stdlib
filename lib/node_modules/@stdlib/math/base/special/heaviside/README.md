@@ -148,15 +148,16 @@ v = heaviside( 0.0, 'right-continuous' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var heaviside = require( '@stdlib/math/base/special/heaviside' );
 
-var x = linspace( -10.0, 10.0, 101 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 101, -10.0, 10.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'H(%d) = %d', x[ i ], heaviside( x[ i ] ) );
-}
+logEachMap( 'H(%0.4f) = %0.4f', x, heaviside );
 ```
 
 </section>
