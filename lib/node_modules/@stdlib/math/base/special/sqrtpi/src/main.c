@@ -24,7 +24,7 @@
 * Compute the principal square root of the product of π and a positive double-precision floating-point number.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_sqrtpi( 4.0 );
