@@ -189,7 +189,7 @@ var fcns = special;
 -   <span class="signature">[`round2( x )`][@stdlib/math/base/special/round2]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest power of two on a linear scale.</span>
 -   <span class="signature">[`roundb( x, n, b )`][@stdlib/math/base/special/roundb]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest multiple of b^n on a linear scale.</span>
 -   <span class="signature">[`roundn( x, n )`][@stdlib/math/base/special/roundn]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number to the nearest multiple of 10^n.</span>
--   <span class="signature">[`roundsd( x, n[, b] )`][@stdlib/math/base/special/roundsd]</span><span class="delimiter">: </span><span class="description">round a numeric value to the nearest number with `n` significant figures.</span>
+-   <span class="signature">[`roundsd( x, n[, b] )`][@stdlib/math/base/special/roundsd]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number to the nearest value with `n` significant figures.</span>
 -   <span class="signature">[`signum( x )`][@stdlib/math/base/special/signum]</span><span class="delimiter">: </span><span class="description">signum function.</span>
 -   <span class="signature">[`signumf( x )`][@stdlib/math/base/special/signumf]</span><span class="delimiter">: </span><span class="description">signum function.</span>
 -   <span class="signature">[`trunc( x )`][@stdlib/math/base/special/trunc]</span><span class="delimiter">: </span><span class="description">round a double-precision floating-point number toward zero.</span>

@@ -318,7 +318,6 @@ The function has the following additional parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var hasWebAssemblySupport = require( '@stdlib/assert/has-wasm-support' );
 var oneTo = require( '@stdlib/array/one-to' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var Complex64Array = require( '@stdlib/array/complex64' );

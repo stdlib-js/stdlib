@@ -1620,7 +1620,7 @@ base.round2,"\nbase.round2( x:number )\n    Rounds a numeric value to the neares
 base.round10,"\nbase.round10( x:number )\n    Rounds a numeric value to the nearest power of ten on a linear scale.\n"
 base.roundb,"\nbase.roundb( x:number, n:integer, b:integer )\n    Rounds a numeric value to the nearest multiple of `b^n` on a linear scale.\n"
 base.roundn,"\nbase.roundn( x:number, n:integer )\n    Rounds a numeric value to the nearest multiple of `10^n`.\n"
-base.roundsd,"\nbase.roundsd( x:number, n:integer[, b:integer] )\n    Rounds a numeric value to the nearest number with `n` significant figures.\n"
+base.roundsd,"\nbase.roundsd( x:number, n:integer[, b:integer] )\n    Rounds a double-precision floating-point number to the nearest value with\n    `n` significant figures.\n"
 base.rsqrt,"\nbase.rsqrt( x:number )\n    Computes the reciprocal square root of a double-precision floating-point\n    number.\n"
 base.rsqrtf,"\nbase.rsqrtf( x:number )\n    Computes the reciprocal square root of a single-precision floating-point\n    number.\n"
 base.sargs2multislice,"\nbase.sargs2multislice( str:string )\n    Creates a MultiSlice object from a comma-separated list of string-serialized\n    MultiSlice constructor arguments.\n"
