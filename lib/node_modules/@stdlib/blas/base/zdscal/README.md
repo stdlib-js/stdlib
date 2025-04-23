@@ -30,35 +30,35 @@ limitations under the License.
 var zdscal = require( '@stdlib/blas/base/zdscal' );
 ```
 
-#### zdscal( N, da, zx, strideZX )
+#### zdscal( N, alpha, x, strideX )
 
 Scales a double-precision complex floating-point vector by a double-precision floating-point constant.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 
-var zx = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+var x = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 
-zdscal( 3, 2.0, zx, 1 );
-// zx => <Complex128Array>[ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ]
+zdscal( 3, 2.0, x, 1 );
+// x => <Complex128Array>[ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ]
 ```
 
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **da**: scalar constant.
--   **zx**: input [`Complex128Array`][@stdlib/array/complex128].
--   **strideZX**: stride length for `zx`.
+-   **alpha**: scalar constant.
+-   **x**: input [`Complex128Array`][@stdlib/array/complex128].
+-   **strideX**: stride length for `x`.
 
-The `N` and stride parameters determine which elements in `zx` are scaled by `da`. For example, to scale every other element in `zx` by `da`,
+The `N` and stride parameters determine which elements in `x` are scaled by `alpha`. For example, to scale every other element in `x` by `alpha`,
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 
-var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
-zdscal( 2, 2.0, zx, 2 );
-// zx => <Complex128Array>[ 2.0, 4.0, 3.0, 4.0, 10.0, 12.0, 7.0, 8.0 ]
+zdscal( 2, 2.0, x, 2 );
+// x => <Complex128Array>[ 2.0, 4.0, 3.0, 4.0, 10.0, 12.0, 7.0, 8.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -69,42 +69,42 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 var Complex128Array = require( '@stdlib/array/complex128' );
 
 // Initial array:
-var zx0 = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+var x0 = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 // Create an offset view:
-var zx1 = new Complex128Array( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
+var x1 = new Complex128Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Scale every element in `zx1`:
-zdscal( 3, 2.0, zx1, 1 );
-// zx0 => <Complex128Array>[ 1.0, 2.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0 ]
+// Scale every element in `x1`:
+zdscal( 3, 2.0, x1, 1 );
+// x0 => <Complex128Array>[ 1.0, 2.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0 ]
 ```
 
-#### zdscal.ndarray( N, da, zx, strideZX, offsetZX )
+#### zdscal.ndarray( N, alpha, x, strideX, offsetX )
 
 Scales a double-precision complex floating-point vector by a double-precision floating-point constant using alternative indexing semantics.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 
-var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
-zdscal.ndarray( 3, 2.0, zx, 1, 0 );
-// zx => <Complex128Array>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
+zdscal.ndarray( 3, 2.0, x, 1, 0 );
+// x => <Complex128Array>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
 ```
 
 The function has the following additional parameters:
 
--   **offsetZX**: starting index for `zx`.
+-   **offsetX**: starting index for `x`.
 
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to scale every other element in the input strided array starting from the second element,
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 
-var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
-zdscal.ndarray( 2, 2.0, zx, 2, 1 );
-// zx => <Complex128Array>[ 1.0, 2.0, 6.0, 8.0, 5.0, 6.0, 14.0, 16.0 ]
+zdscal.ndarray( 2, 2.0, x, 2, 1 );
+// x => <Complex128Array>[ 1.0, 2.0, 6.0, 8.0, 5.0, 6.0, 14.0, 16.0 ]
 ```
 
 </section>
@@ -115,7 +115,7 @@ zdscal.ndarray( 2, 2.0, zx, 2, 1 );
 
 ## Notes
 
--   If `N <= 0`, both functions return `zx` unchanged.
+-   If `N <= 0`, both functions return `x` unchanged.
 -   `zdscal()` corresponds to the [BLAS][blas] level 1 function [`zdscal`][zdscal].
 
 </section>
@@ -138,11 +138,11 @@ function rand() {
     return new Complex128( discreteUniform( 0, 10 ), discreteUniform( -5, 5 ) );
 }
 
-var zx = filledarrayBy( 10, 'complex128', rand );
-console.log( zx.toString() );
+var x = filledarrayBy( 10, 'complex128', rand );
+console.log( x.toString() );
 
-zdscal( zx.length, 2.0, zx, 1 );
-console.log( zx.toString() );
+zdscal( x.length, 2.0, x, 1 );
+console.log( x.toString() );
 ```
 
 </section>
