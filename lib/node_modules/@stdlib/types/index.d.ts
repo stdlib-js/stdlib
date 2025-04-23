@@ -1892,80 +1892,6 @@ declare module '@stdlib/types/ndarray' {
 	}
 
 	/**
-	* Interface describing an ndarray having a generic data type.
-	*
-	* @example
-	* const arr: genericndarray<any> = {
-	*     'byteLength': null,
-	*     'BYTES_PER_ELEMENT': null,
-	*     'data': [ 1, 2, 3 ],
-	*     'dtype': 'generic',
-	*     'flags': {
-	*         'ROW_MAJOR_CONTIGUOUS': true,
-	*         'COLUMN_MAJOR_CONTIGUOUS': false
-	*     },
-	*     'length': 3,
-	*     'ndims': 1,
-	*     'offset': 0,
-	*     'order': 'row-major',
-	*     'shape': [ 3 ],
-	*     'strides': [ 1 ],
-	*     'get': function get( i ) {
-	*         return this.data[ i ];
-	*     },
-	*     'set': function set( i, v ) {
-	*         this.data[ i ] = v;
-	*         return this;
-	*     }
-	* };
-	*/
-	interface genericndarray<T> extends ndarray {
-		/**
-		* Size (in bytes) of the array.
-		*/
-		byteLength: null;
-
-		/**
-		* Size (in bytes) of each array element.
-		*/
-		BYTES_PER_ELEMENT: null;
-
-		/**
-		* Underlying data type.
-		*/
-		dtype: 'generic';
-
-		/**
-		* A reference to the underlying data buffer.
-		*/
-		data: ArrayLike<T>;
-
-		/**
-		* Returns an array element specified according to provided subscripts.
-		*
-		* ## Notes
-		*
-		* -   The number of provided subscripts should equal the number of dimensions.
-		*
-		* @param args - subscripts
-		* @returns array element
-		*/
-		get( ...args: Array<number> ): T;
-
-		/**
-		* Sets an array element specified according to provided subscripts.
-		*
-		* ## Notes
-		*
-		* -   The number of provided subscripts should equal the number of dimensions.
-		*
-		* @param args - subscripts and value to set
-		* @returns ndarray instance
-		*/
-		set( ...args: Array<number|T> ): genericndarray<T>;
-	}
-
-	/**
 	* Interface describing an ndarray having a homogeneous data type.
 	*
 	* @example
@@ -2022,6 +1948,80 @@ declare module '@stdlib/types/ndarray' {
 		* @returns ndarray instance
 		*/
 		set( ...args: Array<number | T> ): typedndarray<T>;
+	}
+
+	/**
+	* Interface describing an ndarray having a generic data type.
+	*
+	* @example
+	* const arr: genericndarray<any> = {
+	*     'byteLength': null,
+	*     'BYTES_PER_ELEMENT': null,
+	*     'data': [ 1, 2, 3 ],
+	*     'dtype': 'generic',
+	*     'flags': {
+	*         'ROW_MAJOR_CONTIGUOUS': true,
+	*         'COLUMN_MAJOR_CONTIGUOUS': false
+	*     },
+	*     'length': 3,
+	*     'ndims': 1,
+	*     'offset': 0,
+	*     'order': 'row-major',
+	*     'shape': [ 3 ],
+	*     'strides': [ 1 ],
+	*     'get': function get( i ) {
+	*         return this.data[ i ];
+	*     },
+	*     'set': function set( i, v ) {
+	*         this.data[ i ] = v;
+	*         return this;
+	*     }
+	* };
+	*/
+	interface genericndarray<T> extends typedndarray<T> {
+		/**
+		* Size (in bytes) of the array.
+		*/
+		byteLength: null;
+
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: null;
+
+		/**
+		* Underlying data type.
+		*/
+		dtype: 'generic';
+
+		/**
+		* A reference to the underlying data buffer.
+		*/
+		data: ArrayLike<T>;
+
+		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): T;
+
+		/**
+		* Sets an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts and value to set
+		* @returns ndarray instance
+		*/
+		set( ...args: Array<number|T> ): genericndarray<T>;
 	}
 
 	/**
@@ -2989,7 +2989,7 @@ declare module '@stdlib/types/ndarray' {
 	*     }
 	* };
 	*/
-	interface realcomplexndarray extends ndarray {
+	interface realcomplexndarray extends typedndarray<number | ComplexLike> {
 		/**
 		* Size (in bytes) of the array.
 		*/
@@ -3009,18 +3009,6 @@ declare module '@stdlib/types/ndarray' {
 		* Underlying data type.
 		*/
 		dtype: NumericDataType;
-
-		/**
-		* Returns an array element specified according to provided subscripts.
-		*
-		* ## Notes
-		*
-		* -   The number of provided subscripts should equal the number of dimensions.
-		*
-		* @param args - subscripts
-		* @returns array element
-		*/
-		get( ...args: Array<number> ): number | ComplexLike | void;
 
 		/**
 		* Sets an array element specified according to provided subscripts.
@@ -3063,7 +3051,7 @@ declare module '@stdlib/types/ndarray' {
 	*     }
 	* };
 	*/
-	interface floatcomplexndarray extends ndarray {
+	interface floatcomplexndarray extends typedndarray<number | ComplexLike> {
 		/**
 		* Size (in bytes) of the array.
 		*/
@@ -3083,18 +3071,6 @@ declare module '@stdlib/types/ndarray' {
 		* Underlying data type.
 		*/
 		dtype: FloatingPointDataType;
-
-		/**
-		* Returns an array element specified according to provided subscripts.
-		*
-		* ## Notes
-		*
-		* -   The number of provided subscripts should equal the number of dimensions.
-		*
-		* @param args - subscripts
-		* @returns array element
-		*/
-		get( ...args: Array<number> ): number | ComplexLike | void;
 
 		/**
 		* Sets an array element specified according to provided subscripts.
@@ -3137,7 +3113,7 @@ declare module '@stdlib/types/ndarray' {
 	*     }
 	* };
 	*/
-	interface complexndarray extends ndarray {
+	interface complexndarray extends typedndarray<ComplexLike> {
 		/**
 		* Size (in bytes) of the array.
 		*/
@@ -3168,7 +3144,7 @@ declare module '@stdlib/types/ndarray' {
 		* @param args - subscripts
 		* @returns array element
 		*/
-		get( ...args: Array<number> ): ComplexLike | void;
+		get( ...args: Array<number> ): ComplexLike;
 
 		/**
 		* Sets an array element specified according to provided subscripts.
@@ -3237,7 +3213,7 @@ declare module '@stdlib/types/ndarray' {
 		* @param args - subscripts
 		* @returns array element
 		*/
-		get( ...args: Array<number> ): Complex128 | void;
+		get( ...args: Array<number> ): Complex128;
 
 		/**
 		* Sets an array element specified according to provided subscripts.
@@ -3306,7 +3282,7 @@ declare module '@stdlib/types/ndarray' {
 		* @param args - subscripts
 		* @returns array element
 		*/
-		get( ...args: Array<number> ): Complex64 | void;
+		get( ...args: Array<number> ): Complex64;
 
 		/**
 		* Sets an array element specified according to provided subscripts.
