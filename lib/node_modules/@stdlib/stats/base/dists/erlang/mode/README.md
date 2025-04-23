@@ -145,6 +145,104 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/erlang/mode.h"
+```
+
+#### stdlib_base_dists_erlang_mode( k, lambda )
+
+Returns the [mode][mode] of an [Erlang][erlang-distribution] distribution with parameters `k` (shape parameter) and `lambda` (rate parameter).
+
+```c
+double out = stdlib_base_dists_erlang_mode( 1, 1.0 );
+// returns 0.0
+```
+
+The function accepts the following arguments:
+
+-   **k**: `[in] int32_t` shape parameter.
+-   **lambda**: `[in] double` rate parameter.
+
+```c
+double stdlib_base_dists_erlang_mode( const int32_t k, const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/erlang/mode.h"
+#include "stdlib/math/base/special/round.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double lambda;
+    int32_t k;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        k = stdlib_base_round( random_uniform( 0.0, 10.0 ) );
+        lambda = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
+        y = stdlib_base_dists_erlang_mode( k, lambda );
+        printf( "k: %d, λ: %lf, mode(X;k,λ): %lf\n", k, lambda, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">

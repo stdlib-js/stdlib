@@ -210,7 +210,7 @@ int main( void ) {
     int i;
 
     for ( i = 0; i < 25; i++ ) {
-        mu = random_uniform( 0.0, 10.0 ) - 5.0;
+        mu = random_uniform( -5.0, 5.0 );
         beta = random_uniform( 0.0, 20.0 );
         y = stdlib_base_dists_gumbel_variance( mu, beta );
         printf( "µ: %lf, β: %lf, Var(X;µ,β): %lf\n", mu, beta, y );
