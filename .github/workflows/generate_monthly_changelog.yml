@@ -105,13 +105,14 @@ jobs:
           var generate = require( '@stdlib/_tools/changelog/generate' );
           var changelog = generate( '@stdlib', {
             'flags': {
-              'since': '$UNTIL - 1 week',
+              'since': '$UNTIL - 1 month',
               'until': '$UNTIL'
             },
             'format': 'aggregated'
           });
           console.log( changelog.content );
-          " > ./www-blog-monthly-changelog/monthly_changelog_$UNTIL.md
+
+          " > ./www-blog-monthly-changelog/monthly_changelog_${UNTIL//-/_}.md
 
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
