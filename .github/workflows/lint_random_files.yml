@@ -326,8 +326,29 @@ jobs:
           fi
 
           # Combined error file:
-          ERR_FILE="lint_javascript_errors.txt"
+          ERR_FILE="$GITHUB_WORKSPACE/lint_javascript_errors.txt"
           > "$ERR_FILE"  # Initialize a clean file
+
+          # Initialize error flag:
+          error_occurred=0
+
+          run_make_lint() {
+            local files_to_lint="$1"
+            local make_args="$2"
+            local eslint_conf_arg="$3"
+            local error_log_file="$4"
+
+            local make_cmd="make lint-javascript-files FIX=${FIX} FAST_FAIL=0 FILES=\"${files_to_lint}\" ${make_args} ${eslint_conf_arg}"
+
+            echo "Running: ${make_cmd}"
+            if ! eval "${make_cmd}"; then
+              echo "Initial linting failed. Retrying with --quiet and logging errors..."
+
+              # Run again with --quiet flag and log output:
+              eval "${make_cmd} ESLINT_FLAGS='--quiet'" >> "${error_log_file}" 2>&1
+              error_occurred=1
+            fi
+          }
 
           # Lint JavaScript source files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
@@ -341,31 +362,38 @@ jobs:
           done
 
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_ERROR_LOG="$ERR_FILE"
+            run_make_lint "${files}" "" "" "${ERR_FILE}"
           fi
 
-          # Lint JavaScript command-line interfaces...
+          # Lint JavaScript command-line interfaces:
           file=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ')
           if [[ -n "${file}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${file}" ESLINT_ERROR_LOG="$ERR_FILE"
+            run_make_lint "${file}" "" "" "${ERR_FILE}"
           fi
 
           # Lint JavaScript example files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_examples_conf}" ESLINT_ERROR_LOG="$ERR_FILE"
+            run_make_lint "${files}" "" "ESLINT_CONF=\"${eslint_examples_conf}\"" "${ERR_FILE}"
           fi
 
           # Lint JavaScript test files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/test/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_tests_conf}" ESLINT_ERROR_LOG="$ERR_FILE"
+            run_make_lint "${files}" "" "ESLINT_CONF=\"${eslint_tests_conf}\"" "${ERR_FILE}"
           fi
 
           # Lint JavaScript benchmark files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}" ESLINT_ERROR_LOG="$ERR_FILE"
+            run_make_lint "${files}" "" "ESLINT_CONF=\"${eslint_benchmarks_conf}\"" "${ERR_FILE}"
+          fi
+
+          # Check if any errors occurred during linting:
+          if [[ "$error_occurred" -eq 1 ]]; then
+            echo "JavaScript linting errors occurred. See details below or in the artifact."
+            cat "$ERR_FILE" # Print errors to the workflow log
+            exit 1
           fi
 
       # Create sub-issue for JavaScript lint failures:
@@ -404,7 +432,7 @@ jobs:
             "5377" \
             "Good First Issue"
 
-          rm "$BODY_FILE"
+          rm "$BODY_FILE" "$ERR_FILE"
 
       # Lint Python files:
       - name: 'Lint Python files'

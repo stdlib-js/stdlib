@@ -44,26 +44,29 @@ ESLINT_CONF_BENCHMARKS ?= $(CONFIG_DIR)/eslint/.eslintrc.benchmarks.js
 # Define the path to the ESLint ignore file:
 ESLINT_IGNORE ?= $(ROOT_DIR)/.eslintignore
 
-# Define optional path for storing lint failure reports:
-ESLINT_ERROR_LOG ?=
-
 # Define the command-line options to use when invoking the ESLint executable:
-ESLINT_FLAGS ?= \
+eslint_flags := \
 	--ignore-path $(ESLINT_IGNORE) \
 	--report-unused-disable-directives
 
+# Define user-supplied command-line options:
+ESLINT_FLAGS ?=
+
 ifeq ($(AUTOFIX),true)
-	ESLINT_FLAGS += --fix
+	eslint_flags += --fix
 endif
 
 FIX_TYPE ?=
 ifneq ($(FIX_TYPE),)
-	ESLINT_FLAGS += --fix-type $(FIX_TYPE)
+	eslint_flags += --fix-type $(FIX_TYPE)
 else
 ifeq ($(AUTOFIX),true)
-	ESLINT_FLAGS += --fix-type problem,layout,directive
+	eslint_flags += --fix-type problem,layout,directive
 endif
 endif
+
+# Append user-supplied command-line options:
+eslint_flags += ESLINT_FLAGS
 
 # RULES #
 
@@ -91,14 +94,14 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file || exit 1; \
+		$(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file || exit 1; \
 	done
 else
 	$(QUIET) status=0; \
 	$(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		if ! $(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file; then \
+		if ! $(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file; then \
 			echo 'Linting failed.'; \
 			status=1; \
 		fi; \
@@ -132,14 +135,14 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_TESTS) $$file || exit 1; \
+		$(ESLINT) $(eslint_flags) --config $(ESLINT_CONF_TESTS) $$file || exit 1; \
 	done
 else
 	$(QUIET) status=0; \
 	$(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		if ! $(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_TESTS) $$file; then \
+		if ! $(ESLINT) $(eslint_flags) --config $(ESLINT_CONF_TESTS) $$file; then \
 			echo 'Linting failed.'; \
 			status=1; \
 		fi; \
@@ -173,14 +176,14 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_EXAMPLES) $$file || exit 1; \
+		$(ESLINT) $(eslint_flags) --config $(ESLINT_CONF_EXAMPLES) $$file || exit 1; \
 	done
 else
 	$(QUIET) status=0; \
 	$(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		if ! $(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_EXAMPLES) $$file; then \
+		if ! $(ESLINT) $(eslint_flags) --config $(ESLINT_CONF_EXAMPLES) $$file; then \
 			echo 'Linting failed.'; \
 			status=1; \
 		fi; \
@@ -214,14 +217,14 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_BENCHMARKS) $$file || exit 1; \
+		$(ESLINT) $(eslint_flags) --config $(ESLINT_CONF_BENCHMARKS) $$file || exit 1; \
 	done
 else
 	$(QUIET) status=0; \
 	$(FIND_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		if ! $(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_BENCHMARKS) $$file; then \
+		if ! $(ESLINT) $(eslint_flags) --config $(ESLINT_CONF_BENCHMARKS) $$file; then \
 			echo 'Linting failed.'; \
 			status=1; \
 		fi; \
@@ -252,26 +255,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file || exit 1; \
-	done
-else ifneq ($(ESLINT_ERROR_LOG),)
-	$(QUIET) status=0; \
-	for file in $(FILES); do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		if ! $(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file; then \
-			echo 'Linting failed.'; \
-			$(ESLINT) $(ESLINT_FLAGS) --quiet --config $(ESLINT_CONF) $$file >> $(ESLINT_ERROR_LOG); \
-			status=1; \
-		fi; \
-	done; \
-	exit $$status;
+		$(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file || exit 1; \
 else
 	$(QUIET) status=0; \
 	for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		if ! $(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file; then \
+		if ! $(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file; then \
 			echo 'Linting failed.'; \
 			status=1; \
 		fi; \
