@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> Evaluate the natural logarithm of the [cumulative distribution function][cdf] for a [beta prime][betaprime-distribution] distribution .
+> Evaluate the natural logarithm of the [cumulative distribution function][cdf] for a [beta prime][betaprime-distribution] distribution.
 
 <section class="intro">
 

@@ -35,7 +35,7 @@ int main( void ) {
 
 	for ( i = 0; i < 10; i++ ) {
 		a = stdlib_base_round( random_uniform( 0.0, 10.0 ) );
-		b = stdlib_base_round( random_uniform( 0.0, 10.0 ) ) + a;
+		b = stdlib_base_round( random_uniform( a, a+10.0 ) );
 		y = stdlib_base_dists_discrete_uniform_entropy( a, b );
 		printf( "a: %d, b: %d, H(X;a,b): %lf\n", a, b, y );
 	}
