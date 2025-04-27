@@ -165,18 +165,12 @@ var v = dsempn.ndarray( 4, 1, x, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
-var Float64Array = require( '@stdlib/array/float64' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dsempn = require( '@stdlib/stats/base/dsempn' );
 
-var x;
-var i;
-
-x = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = round( (randu()*100.0) - 50.0 );
-}
+var x = discreteUniform( 10, -50, 50, {
+    'dtype': 'float64'
+});
 console.log( x );
 
 var v = dsempn( x.length, 1, x, 1 );
