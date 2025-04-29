@@ -176,7 +176,7 @@ The method has the following parameters:
 -   **out**: output [ndarray][@stdlib/ndarray/ctor].
 -   **options**: function options (_optional_).
 
-The function accepts the following options:
+The method accepts the following options:
 
 -   **dims**: list of dimensions over which to perform a reduction. If not provided, the function performs a reduction over all elements in a provided input [ndarray][@stdlib/ndarray/ctor].
 

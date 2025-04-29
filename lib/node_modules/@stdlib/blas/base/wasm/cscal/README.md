@@ -160,7 +160,7 @@ mod.initializeSync();
 
 #### cscal.Module.prototype.main( N, cap, cxp, sx )
 
-Scales values from `cx` by `ca` .
+Scales values from `cx` by `ca`.
 
 <!-- eslint-disable node/no-sync -->
 

@@ -204,7 +204,7 @@ console.log( v );
 
 #### stdlib_strided_dsnanmeanpn( N, \*X, strideX )
 
-Computes the arithmetic mean of a single-precision floating-point strided array , ignoring `NaN` values, using a two-pass error correction algorithm with extended accumulation, and returning an extended precision result.
+Computes the arithmetic mean of a single-precision floating-point strided array, ignoring `NaN` values, using a two-pass error correction algorithm with extended accumulation, and returning an extended precision result.
 
 ```c
 const float x[] = { 1.0f, 2.0f, 0.0f/0.0f, 3.0f, 0.0f/0.0f, 4.0f, 5.0f, 6.0f, 0.0f/0.0f, 7.0f, 8.0f, 0.0f/0.0f };
