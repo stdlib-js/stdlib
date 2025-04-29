@@ -42,7 +42,7 @@ function fcn( value) {
 var x = [ 0, 0, 0, 1, 1 ];
 
 var y = cusomeBy( x, 2, fcn );
-// returns [ false, false, false , false, true ]
+// returns [ false, false, false, false, true ]
 ```
 
 The invoked `predicate` function is provided three arguments:
