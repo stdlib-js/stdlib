@@ -37,7 +37,7 @@
 * var dir = configdir( 'appname/config' );
 * // e.g., returns '/Users/<username>/Library/Preferences/appname/config'
 */
-declare function configdir( p?: string ): string;
+declare function configdir( p?: string ): string | null;
 
 
 // EXPORTS //

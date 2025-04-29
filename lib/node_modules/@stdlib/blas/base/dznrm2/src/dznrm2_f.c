@@ -19,6 +19,8 @@
 #include "stdlib/blas/base/dznrm2.h"
 #include "stdlib/blas/base/dznrm2_fortran.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Computes the L2-norm of a complex double-precision floating-point vector.
@@ -31,5 +33,22 @@
 double API_SUFFIX(c_dznrm2)( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX ) {
 	double nrm2;
 	dznrm2sub( &N, ZX, &strideX, &nrm2 );
+	return nrm2;
+}
+
+/**
+* Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param ZX       input array
+* @param strideX  ZX stride length
+* @param offsetX  starting index for ZX
+* @return         L2-norm
+*/
+double API_SUFFIX(c_dznrm2_ndarray)( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	stdlib_complex128_t *zx = (stdlib_complex128_t *)ZX;
+	double nrm2;
+	zx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	dznrm2sub( &N, (void *)zx, &strideX, &nrm2 );
 	return nrm2;
 }

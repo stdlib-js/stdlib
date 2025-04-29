@@ -47,7 +47,7 @@ interface Namespace {
 	* Formats an error message for production.
 	*
 	* @param code - error code
-	* @param ...args - error message arguments
+	* @param args - error message arguments
 	* @returns formatted error message
 	*
 	* @example

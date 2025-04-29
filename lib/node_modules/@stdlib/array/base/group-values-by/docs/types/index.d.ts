@@ -74,11 +74,11 @@ type Indicator<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 /**
 * Interface describing returned group results.
 */
-interface ValuesResults<K, T> {
+interface ValuesResults<T> {
 	/**
 	* Object properties.
 	*/
-	[key: K]: Array<T>;
+	[key: Key]: Array<T>;
 }
 
 /**
@@ -99,7 +99,7 @@ interface ValuesResults<K, T> {
 * var out = groupValuesBy( x, indicator );
 * // returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
 */
-declare function groupValuesBy<T = unknown, U = unknown>( x: Collection<T> | AccessorArrayLike<T>, indicator: Indicator<T, U>, thisArg?: ThisParameterType<Indicator<T, U>> ): ValuesResults<Key, T>;
+declare function groupValuesBy<T = unknown, U = unknown>( x: Collection<T> | AccessorArrayLike<T>, indicator: Indicator<T, U>, thisArg?: ThisParameterType<Indicator<T, U>> ): ValuesResults<T>;
 
 
 // EXPORTS //

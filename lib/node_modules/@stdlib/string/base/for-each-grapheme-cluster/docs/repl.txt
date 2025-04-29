@@ -5,9 +5,9 @@
 
     When invoked, the provided function is provided three arguments:
 
-    - value: grapheme cluster
-    - index: starting grapheme cluster index
-    - str: input string
+    - value: grapheme cluster.
+    - index: starting grapheme cluster index.
+    - str: input string.
 
     Parameters
     ----------

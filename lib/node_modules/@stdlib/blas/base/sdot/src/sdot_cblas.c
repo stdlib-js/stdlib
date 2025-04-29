@@ -18,6 +18,8 @@
 
 #include "stdlib/blas/base/sdot.h"
 #include "stdlib/blas/base/sdot_cblas.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Computes the dot product of two single-precision floating-point vectors.
@@ -29,6 +31,24 @@
 * @param strideY  Y stride length
 * @return         the dot product
 */
-float c_sdot( const int N, const float *X, const int strideX, const float *Y, const int strideY ) {
-	return cblas_sdot( N, X, strideX, Y, strideY );
+float API_SUFFIX(c_sdot)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const float *Y, const CBLAS_INT strideY ) {
+	return API_SUFFIX(cblas_sdot)( N, X, strideX, Y, strideY );
+}
+
+/**
+* Computes the dot product of two single-precision floating-point vectors using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        first array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y        second array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
+* @return         the dot product
+*/
+float API_SUFFIX(c_sdot_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+	X += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
+	Y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
+	return API_SUFFIX(cblas_sdot)( N, X, strideX, Y, strideY );
 }

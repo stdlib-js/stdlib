@@ -29,7 +29,7 @@
 *
 * @example
 * float v = stdlib_base_maxabsf( 3.14f, -4.2f );
-* // returns ~4.2f
+* // returns 4.2f
 *
 * @example
 * float v = stdlib_base_maxabsf( 0.0f, -0.0f );

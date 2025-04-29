@@ -19,6 +19,7 @@
 #include "stdlib/blas/base/drotm.h"
 #include "stdlib/blas/base/drotm_cblas.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Applies a modified Givens plane rotation.
@@ -31,5 +32,23 @@
 * @param param    parameters for the modified Givens transformation
 */
 void API_SUFFIX(c_drotm)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, const double *param ) {
+	API_SUFFIX(cblas_drotm)( N, X, strideX, Y, strideY, param );
+}
+
+/**
+* Applies a modified Givens plane rotation using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        first input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y        second input array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
+* @param param    parameters for the modified Givens transformation
+*/
+void API_SUFFIX(c_drotm_ndarray)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const double *param ) {
+	X += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
+	Y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
 	API_SUFFIX(cblas_drotm)( N, X, strideX, Y, strideY, param );
 }

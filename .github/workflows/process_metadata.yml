@@ -67,7 +67,7 @@ jobs:
         if: steps.assert-write-access.outcome == 'success'
 
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -127,7 +127,7 @@ jobs:
       - name: 'Dispatch workflow with inputs'
 
         # Pin action to full length commit SHA
-        uses: benc-uk/workflow-dispatch@25b02cc069be46d637e8fe2f1e8484008e9e9609 # v1.2.3
+        uses: benc-uk/workflow-dispatch@e2e5e9a103e331dad343f381a29e654aea3cf8fc # v1.2.4
         if: ${{ steps.assert-write-access.outcome == 'success' && steps.check-workflow-dispatch.outputs.dispatch == 'true' }}
         with:
           workflow: ${{ steps.check-workflow-dispatch.outputs.workflow }}

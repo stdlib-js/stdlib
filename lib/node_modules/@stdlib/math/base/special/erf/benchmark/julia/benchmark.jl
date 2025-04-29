@@ -17,6 +17,7 @@
 # limitations under the License.
 
 import BenchmarkTools
+using SpecialFunctions
 using Printf
 
 # Benchmark variables:
@@ -107,7 +108,7 @@ julia> out = benchmark();
 ```
 """
 function benchmark()
-	t = BenchmarkTools.@benchmark erf( (1000.0*rand()) - 500.0 ) samples=1e6
+	t = BenchmarkTools.@benchmark erf( (2.0*rand()) - 1.0 ) samples=1e6
 
 	# Compute the total "elapsed" time and convert from nanoseconds to seconds:
 	s = sum( t.times ) / 1.0e9;

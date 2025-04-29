@@ -33,7 +33,7 @@
 * var proto = getPrototypeOf( {} );
 * // returns {}
 */
-declare function getPrototypeOf( v: any ): Object | null;
+declare function getPrototypeOf( value: any ): Object | null;
 
 
 // EXPORTS //

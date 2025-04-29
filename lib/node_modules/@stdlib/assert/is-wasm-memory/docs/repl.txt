@@ -1,0 +1,22 @@
+
+{{alias}}( value )
+    Tests if a value is a WebAssembly memory instance.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a WebAssembly memory instance.
+
+    Examples
+    --------
+    > var bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

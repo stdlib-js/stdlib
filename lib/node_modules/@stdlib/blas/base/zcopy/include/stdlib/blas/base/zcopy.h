@@ -22,6 +22,8 @@
 #ifndef ZCOPY_H
 #define ZCOPY_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,12 @@ extern "C" {
 /**
 * Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
 */
-void c_zcopy( const int N, const void *X, const int strideX, void *Y, const int strideY );
+void API_SUFFIX(c_zcopy)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
+
+/**
+* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector using alternative indexing semantics.
+*/
+void API_SUFFIX(c_zcopy_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 
 #ifdef __cplusplus
 }

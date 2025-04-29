@@ -26,8 +26,8 @@
 * @returns maximum absolute value
 *
 * @example
-* var v = maxabsf( 3.14, -4.2 );
-* // returns 4.2
+* var v = maxabsf( -4.0, 3.0 );
+* // returns 4.0
 *
 * @example
 * var v = maxabsf( 3.14, NaN );

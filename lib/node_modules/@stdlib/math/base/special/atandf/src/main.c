@@ -24,7 +24,7 @@
 * Computes the arctangent (in degrees) of a single-precision floating-point number.
 *
 * @param x    input value
-* @return     evaluated rational function
+* @return     arctangent (in degrees)
 *
 * @example
 * float out = stdlib_base_atandf( 0.5f );

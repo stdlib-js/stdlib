@@ -23,7 +23,7 @@ name: track_todos
 on:
   schedule:
     # Run the workflow once a month on the 1st day of every month:
-    - cron:  "0 0 1 * *"
+    - cron: '0 0 1 * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
@@ -53,7 +53,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -80,12 +80,12 @@ jobs:
       # Create or update issue for TODO comments:
       - name: 'Create or update issue for TODO comments'
         # Pin action to full length commit SHA
-        uses: peter-evans/create-issue-from-file@24452a72d85239eacf1468b0f1982a9f3fec4c94 # v5.0.0
+        uses: peter-evans/create-issue-from-file@e8ef132d6df98ed982188e460ebb3b5d4ef3a9cd # v5.0.1
         with:
           title: 'TODO comments'
           content-filepath: ./tracking_issue_todos.md
           issue-number: 803
-          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
             todos
             automated-issue
@@ -93,12 +93,12 @@ jobs:
       # Create or update issue for FIXME comments:
       - name: 'Create or update issue for FIXME comments'
         # Pin action to full length commit SHA
-        uses: peter-evans/create-issue-from-file@24452a72d85239eacf1468b0f1982a9f3fec4c94 # v5.0.0
+        uses: peter-evans/create-issue-from-file@e8ef132d6df98ed982188e460ebb3b5d4ef3a9cd # v5.0.1
         with:
           title: 'FIXME comments'
           content-filepath: ./tracking_issue_fixmes.md
           issue-number: 804
-          token: ${{ secrets.PULL_REQUEST_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
             fixmes
             automated-issue

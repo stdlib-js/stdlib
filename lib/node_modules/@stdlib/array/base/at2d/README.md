@@ -42,7 +42,7 @@ var at2d = require( '@stdlib/array/base/at2d' );
 
 #### at2d( x, i0, i1 )
 
-Return an element from a two-dimensional nested array.
+Returns an element from a two-dimensional nested array.
 
 ```javascript
 var x = [ [ 1, 2 ], [ 3, 4 ] ];

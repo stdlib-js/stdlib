@@ -1,0 +1,23 @@
+
+{{alias}}( str )
+    Returns the number of code points in a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Number of code points.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep' )
+    4
+    > out = {{alias}}( '六' )
+    1
+
+    See Also
+    --------

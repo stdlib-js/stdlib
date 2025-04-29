@@ -4,9 +4,9 @@
 
     An accessor function accepts the following arguments:
 
-    - arr: input array
-    - idx: element index
-    - value: value to set
+    - arr: input array.
+    - idx: element index.
+    - value: value to set.
 
     If provided an array-like object having an unsupported data type, the
     function returns a default accessor function for accessing elements in any

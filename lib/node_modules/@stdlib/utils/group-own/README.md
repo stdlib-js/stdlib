@@ -61,8 +61,8 @@ var out = groupOwn( obj, indicator );
 
 An `indicator` function is provided two arguments:
 
--   `value`: object value
--   `key`: object index
+-   **value**: object value.
+-   **key**: object index.
 
 ```javascript
 function indicator( v, k ) {
@@ -82,8 +82,8 @@ var out = groupOwn( obj, indicator );
 
 The function accepts the following `options`:
 
--   `returns`: specifies the output format. If the option equals `'values'`, the function outputs values. If the option equals `'keys'`, the function outputs keys. If the option equals `'*'`, the function outputs both keys and values. Default: `'values'`.
--   `thisArg`: execution context.
+-   **returns**: specifies the output format. If the option equals `'values'`, the function outputs values. If the option equals `'keys'`, the function outputs keys. If the option equals `'*'`, the function outputs both keys and values. Default: `'values'`.
+-   **thisArg**: execution context.
 
 By default, the function returns object values. To return object keys, set the `returns` option to `'keys'`.
 

@@ -32,7 +32,7 @@ var unlink = require( '@stdlib/fs/unlink' );
 
 #### unlink( path, clbk )
 
-Asynchronously remove a directory entry specified by `path`.
+Asynchronously removes a directory entry specified by `path`.
 
 <!-- run-disable -->
 
