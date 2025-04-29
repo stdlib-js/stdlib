@@ -40,6 +40,7 @@ import factory = require( './index' );
 	};
 
 	factory<number, number>( table, [ dtypes ], dtypes, policies ); // $ExpectType UnaryFunction<number, number>
+	factory<number, number>( table, [ dtypes ], dtypes, policies, {} ); // $ExpectType UnaryFunction<number, number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a dispatch table...
@@ -59,6 +60,16 @@ import factory = require( './index' );
 	factory( 'abc', [ dtypes ], dtypes, policies ); // $ExpectError
 	factory( {}, [ dtypes ], dtypes, policies ); // $ExpectError
 	factory( ( x: number, y: number ): number => x + y, [ dtypes ], dtypes, policies ); // $ExpectError
+
+	factory( '5', [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	factory( 5, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	factory( true, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	factory( false, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	factory( null, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	factory( void 0, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	factory( 'abc', [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	factory( {}, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	factory( ( x: number, y: number ): number => x + y, [ dtypes ], dtypes, policies, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a list of data type lists...
@@ -81,6 +92,16 @@ import factory = require( './index' );
 	factory<number, number>( table, 'abc', dtypes, policies ); // $ExpectError
 	factory<number, number>( table, {}, dtypes, policies ); // $ExpectError
 	factory<number, number>( table, ( x: number ): number => x, dtypes, policies ); // $ExpectError
+
+	factory<number, number>( table, '5', dtypes, policies, {} ); // $ExpectError
+	factory<number, number>( table, 5, dtypes, policies, {} ); // $ExpectError
+	factory<number, number>( table, true, dtypes, policies, {} ); // $ExpectError
+	factory<number, number>( table, false, dtypes, policies, {} ); // $ExpectError
+	factory<number, number>( table, null, dtypes, policies, {} ); // $ExpectError
+	factory<number, number>( table, void 0, dtypes, policies, {} ); // $ExpectError
+	factory<number, number>( table, 'abc', dtypes, policies, {} ); // $ExpectError
+	factory<number, number>( table, {}, dtypes, policies, {} ); // $ExpectError
+	factory<number, number>( table, ( x: number ): number => x, dtypes, policies, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a list of data types...
@@ -103,6 +124,16 @@ import factory = require( './index' );
 	factory<number, number>( table, [ dtypes ], 'abc', policies ); // $ExpectError
 	factory<number, number>( table, [ dtypes ], {}, policies ); // $ExpectError
 	factory<number, number>( table, [ dtypes ], ( x: number ): number => x, policies ); // $ExpectError
+
+	factory<number, number>( table, [ dtypes ], '5', policies, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], 5, policies, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], true, policies, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], false, policies, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], null, policies, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], void 0, policies, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], 'abc', policies, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], {}, policies, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], ( x: number ): number => x, policies, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a valid policy object...
@@ -121,6 +152,36 @@ import factory = require( './index' );
 	factory<number, number>( table, [ dtypes ], dtypes, 'abc' ); // $ExpectError
 	factory<number, number>( table, [ dtypes ], dtypes, {} ); // $ExpectError
 	factory<number, number>( table, [ dtypes ], dtypes, ( x: number ): number => x ); // $ExpectError
+
+	factory<number, number>( table, [ dtypes ], dtypes, '5', {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, 5, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, true, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, false, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, null, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, void 0, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, 'abc', {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, {}, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, ( x: number ): number => x, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a fifth argument which is not an object...
+{
+	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
+	const table = {
+		'default': cumax
+	};
+	const policies = {
+		'output': 'same' as OutputPolicy,
+		'casting': 'none' as InputCastingPolicy
+	};
+
+	factory<number, number>( table, [ dtypes ], dtypes, policies, '5' ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, policies, 5 ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, policies, true ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, policies, false ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, policies, null ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, policies, 'abc' ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, policies, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -137,7 +198,7 @@ import factory = require( './index' );
 	factory(); // $ExpectError
 	factory<number, number>( abs ); // $ExpectError
 	factory<number, number>( table, [ dtypes ] ); // $ExpectError
-	factory<number, number>( table, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	factory<number, number>( table, [ dtypes ], dtypes, policies, {}, {} ); // $ExpectError
 }
 
 // The function returns a function which returns an ndarray...

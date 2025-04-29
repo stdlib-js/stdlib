@@ -30,7 +30,7 @@ limitations under the License.
 var UnaryStrided1dDispatch = require( '@stdlib/ndarray/base/unary-strided1d-dispatch' );
 ```
 
-#### UnaryStrided1dDispatch( table, idtypes, odtypes, policies )
+#### UnaryStrided1dDispatch( table, idtypes, odtypes, policies\[, options] )
 
 Returns an interface for applying a strided function to an input ndarray.
 
@@ -69,6 +69,12 @@ The constructor has the following parameters:
 
     -   **output**: output data type [policy][@stdlib/ndarray/output-dtype-policies].
     -   **casting**: input ndarray casting [policy][@stdlib/ndarray/input-casting-policies].
+
+-   **options**: function options (_optional_).
+
+The constructor supports the following options:
+
+-   **strictTraversalOrder**: boolean specifying whether the order of element traversal must match the memory layout order of an input ndarray. Default: `false`.
 
 #### UnaryStrided1dDispatch.prototype.apply( x\[, ...args]\[, options] )
 

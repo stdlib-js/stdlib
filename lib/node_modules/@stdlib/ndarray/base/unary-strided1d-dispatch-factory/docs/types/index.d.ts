@@ -54,6 +54,16 @@ interface Options extends BaseOptions {
 }
 
 /**
+* Interface defining factory options.
+*/
+interface FactoryOptions {
+	/**
+	* Boolean specifying whether the order of element traversal must match the memory layout of an input ndarray.
+	*/
+	strictTraversalOrder?: boolean;
+}
+
+/**
 * Strided function.
 *
 * @param arrays - input ndarrays
@@ -245,6 +255,7 @@ interface UnaryFunction<T, U> {
 * @param idtypes - list containing lists of supported input data types for each ndarray argument
 * @param odtypes - list of supported output data types
 * @param policies - dispatch policies
+* @param options - function options
 * @returns function for applying a unary function
 *
 * @example
@@ -274,7 +285,7 @@ interface UnaryFunction<T, U> {
 * var arr = ndarray2array( y );
 * // returns [ -1.0, 2.0, 2.0 ]
 */
-declare function factory<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): UnaryFunction<T, U>;
+declare function factory<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies, options?: FactoryOptions ): UnaryFunction<T, U>;
 
 
 // EXPORTS //
