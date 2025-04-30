@@ -1,6 +1,7 @@
 [
   "same",
   "promoted",
+  "accumulation",
   "boolean",
   "boolean_and_generic",
   "signed_integer",
@@ -19,5 +20,12 @@
   "real",
   "numeric",
   "numeric_and_generic",
-  "default"
+  "integer_index",
+  "integer_index_and_generic",
+  "boolean_index",
+  "boolean_index_and_generic",
+  "mask_index",
+  "mask_index_and_generic",
+  "default",
+  "default_index"
 ]
