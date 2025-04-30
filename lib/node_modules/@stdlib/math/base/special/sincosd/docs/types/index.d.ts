@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { NumericArray } from '@stdlib/types/array';
 
 interface sincosd {
 	/**
@@ -67,7 +67,7 @@ interface sincosd {
 	* var bool = ( v === out );
 	* // returns true
 	*/
-	assign<T = unknown>( x: number, out: Collection<T>, stride: number, offset: number ): Collection<T | number>;
+	assign<T extends NumericArray>( x: number, out: T, stride: number, offset: number ): T ;
 }
 
 /**
