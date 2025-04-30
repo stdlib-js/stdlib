@@ -230,6 +230,12 @@ jobs:
           \`\`\`
           $(cat lint_editorconfig_errors.txt | strip_ansi)
           \`\`\`
+
+          ### Pull Request Instructions
+
+          -   Please use the following PR title format:
+          "chore: fix EditorConfig lint errors (issue #<ISSUE_NUMBER>)".
+          -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
@@ -370,20 +376,26 @@ jobs:
         run: |
           BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
           cat << EOF > "$BODY_FILE"
-          ## JavaScript Linting Failures
+            ## JavaScript Linting Failures
 
-          Linting failures were detected in the automated JavaScript lint workflow run.
+            Linting failures were detected in the automated JavaScript lint workflow run.
 
-          ### Workflow Details
+            ### Workflow Details
 
-          - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          - Type: JavaScript Linting
-          - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+            - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            - Type: JavaScript Linting
+            - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
-          ### Error Details
-          \`\`\`
-          $(cat lint_javascript_errors.txt)
-          \`\`\`
+            ### Error Details
+            \`\`\`
+            $(cat lint_javascript_errors.txt)
+            \`\`\`
+
+            ### Pull Request Instructions
+
+            -   Please use the following PR title format:
+            "chore: fix JavaScript lint errors (issue #<ISSUE_NUMBER>)".
+            -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
@@ -411,7 +423,7 @@ jobs:
       - name: 'Setup R'
         if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@14a7e741c1cb130261263aa1593718ba42cf443b # v2.11.2
+        uses: r-lib/actions/setup-r@bd49c52ffe281809afa6f0fecbf37483c5dd0b93 # v2.11.3
         with:
           r-version: '4.3.3'
 
@@ -524,6 +536,12 @@ jobs:
           \`\`\`
           $(grep -B 1 -A 2 "style:\|warning:\|error:" "lint_c_errors.txt")
           \`\`\`
+
+          ### Pull Request Instructions
+
+          -   Please use the following PR title format:
+          "chore: fix C lint errors (issue #<ISSUE_NUMBER>)".
+          -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
@@ -561,7 +579,7 @@ jobs:
       - name: 'Import GPG key to sign commits'
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
+        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
         with:
           gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
@@ -573,7 +591,7 @@ jobs:
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         id: cpr
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
+        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
         with:
           title: 'style: fix lint errors'
           add-paths: ${{ steps.random-files.outputs.files }}
