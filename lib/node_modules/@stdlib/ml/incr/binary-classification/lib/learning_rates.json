@@ -1,6 +1,6 @@
 [
-	"basic",
-	"constant",
-	"invscaling",
-	"pegasos"
+  "basic",
+  "constant",
+  "invscaling",
+  "pegasos"
 ]
