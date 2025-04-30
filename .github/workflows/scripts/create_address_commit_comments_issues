@@ -29,7 +29,7 @@
 #   GITHUB_TOKEN   GitHub token for authentication.
 #
 
-# shellcheck disable=SC2153
+# shellcheck disable=SC2153,SC2155
 
 # Ensure that the exit status of pipelines is non-zero in the event that at least one
 # of the commands in a pipeline fails:
@@ -253,7 +253,11 @@ update_commit_map() {
 	for existing in "${commit_keys[@]}"; do
 		if [ "$existing" = "$key" ]; then
 			commit_counts[i]=$(( commit_counts[i] + 1 ))
-			commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}"
+			if [ "$line" = "null" ]; then
+				commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > ${formatted_body}"$'\n\n'"    ${code_snippet}"
+			else
+				commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}"
+			fi
 			found=1
 			break
 		fi
@@ -263,7 +267,11 @@ update_commit_map() {
 	if [ "$found" -eq 0 ]; then
 		commit_keys+=("$key")
 		commit_counts+=("1")
-		commit_comments+=("-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}")
+		if [ "$line" = "null" ]; then
+			commit_comments+=("-   ${link}"$'\n\n'"    > ${formatted_body}"$'\n\n'"    ${code_snippet}")
+		else
+			commit_comments+=("-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}")
+		fi
 	fi
 }
 
@@ -410,6 +418,14 @@ Thank you for your help in reducing the project backlog and in improving the qua
 * * *
 
 ## Notes
+
+-  When creating your pull request, please use the following format for the PR title:
+
+   \`\`\`
+   chore: address commit comments for commit \`${short_sha}\` (issue #NNNN)
+   \`\`\`
+
+   where \`NNNN\` is the issue number assigned to this issue.
 
 -  For older commits, there is a chance that comments will have been already been addressed due to other refactorings. If you find that to be true, don't worry! Just move on to addressing the next comment, and, when opening your pull request and describing your proposed changes, be sure to link to the comment and mention that it has been addressed. This will help reviewers when reviewing your code!
 
