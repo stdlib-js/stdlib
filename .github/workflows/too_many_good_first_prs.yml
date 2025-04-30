@@ -43,7 +43,6 @@ jobs:
     # Define job permissions:
     permissions:
       contents: read
-      pull-requests: write
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -55,14 +54,10 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          # Specify whether to remove untracked files before checking out the repository:
-          clean: true
-
-          # Limit clone depth to the most recent commit:
-          fetch-depth: 1
-
-          # Specify whether to download Git-LFS files:
-          lfs: false
+          # Ensure we have access to the scripts directory:
+          sparse-checkout: |
+            .github/workflows/scripts
+          sparse-checkout-cone-mode: false
         timeout-minutes: 10
 
       # Prevent contributors from opening too many "Good First PR"s:

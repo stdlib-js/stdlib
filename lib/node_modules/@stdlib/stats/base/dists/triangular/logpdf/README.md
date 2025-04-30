@@ -134,7 +134,7 @@ y = mylogpdf( 12.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/base/uniform' );
 var logpdf = require( '@stdlib/stats/base/dists/triangular/logpdf' );
 
 var a;
@@ -145,10 +145,10 @@ var y;
 var i;
 
 for ( i = 0; i < 25; i++ ) {
-    x = randu() * 30.0;
-    a = randu() * 10.0;
-    b = a + (randu() * 40.0);
-    c = a + ((b-a) * randu());
+    x = uniform( 0.0, 30.0 );
+    a = uniform( 0.0, 10.0 );
+    b = uniform( a, a + 40.0 );
+    c = uniform( a, b );
     y = logpdf( x, a, b, c );
     console.log( 'x: %d, a: %d, b: %d, c: %d, ln(f(x;a,b,c)): %d', x.toFixed( 4 ), a.toFixed( 4 ), b.toFixed( 4 ), c.toFixed( 4 ), y.toFixed( 4 ) );
 }

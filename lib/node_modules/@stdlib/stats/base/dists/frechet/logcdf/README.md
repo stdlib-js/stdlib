@@ -202,7 +202,7 @@ Evaluates the natural logarithm of the [cumulative distribution function][cdf] (
 
 ```c
 double y = stdlib_base_frechet_logcdf( 10.0, 2.0, 3.0, 2.0 );
-// returns ~0.141
+// returns ~-0.141
 ```
 
 The function accepts the following arguments:
