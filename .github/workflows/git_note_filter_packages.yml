@@ -23,7 +23,7 @@ name: git_note_filter_packages
 on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
-    # Define the input parameters for the workflow:a
+    # Define the input parameters for the workflow:
     inputs:
       commit_hash:
         description: 'Commit hash to create note for'
