@@ -66,16 +66,17 @@ v = kernelLog1p( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var sqrt = require( '@stdlib/math/base/special/sqrt' );
 var kernelLog1p = require( '@stdlib/math/base/special/kernel-log1p' );
 
-var x = linspace( sqrt( 2.0 ) / 2.0, sqrt( 2.0 ), 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, sqrt( 2.0 ) / 2.0, sqrt( 2.0 ), opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'kernelLog1p(%d) = %d', x[ i ], kernelLog1p( x[ i ] ) );
-}
+logEachMap( 'kernelLog1p(%0.4f) = %0.4f', x, kernelLog1p );
 ```
 
 </section>

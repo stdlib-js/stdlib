@@ -50,7 +50,7 @@ void API_SUFFIX(c_cscal_ndarray)( const CBLAS_INT N, const stdlib_complex64_t ca
 	stdlib_complex64_t *cx = (stdlib_complex64_t *)CX;
 	CBLAS_INT sx = strideX;
 
-    cx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	cx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
 	if ( sx < 0 ) {
 		sx = -sx;
 	}

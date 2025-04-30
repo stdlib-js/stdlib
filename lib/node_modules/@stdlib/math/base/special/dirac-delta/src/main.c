@@ -24,7 +24,7 @@
 * Evaluates the Dirac delta function.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_dirac_delta( 3.14 );
