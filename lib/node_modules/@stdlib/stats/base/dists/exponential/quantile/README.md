@@ -230,7 +230,7 @@ int main( void ) {
 
 </section>
 
-<!-- ./c -->
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

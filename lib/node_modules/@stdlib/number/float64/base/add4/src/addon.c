@@ -19,5 +19,4 @@
 #include "stdlib/number/float64/base/add4.h"
 #include "stdlib/math/base/napi/quaternary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DDDD_D( stdlib_base_float64_add4 )
