@@ -28,13 +28,6 @@ extern "C" {
 
 /**
 * Evaluates the mode for a Student's t-distribution with degrees of freedom `v`.
-*
-* @param v    degrees of freedom
-* @return     mode
-*
-* @example
-* double y = stdlib_base_dists_t_mode( 5.0 );
-* // returns 0.0
 */
 double stdlib_base_dists_t_mode( const double v );
 

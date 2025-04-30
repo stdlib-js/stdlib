@@ -1,0 +1,37 @@
+
+{{alias}}( N, clbk[, thisArg] )
+    Returns a filled two-dimensional symmetric nested array according to a
+    provided callback function.
+
+    The callback function is provided one argument:
+
+    - indices: current array element indices.
+
+    As the output array is symmetric, the provided callback is only invoked for
+    elements in the upper triangle (i.e., indices[1] >= indices[0]).
+
+    Parameters
+    ----------
+    N: integer
+        Number of rows and columns.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > function clbk( idx ) { return idx[ 0 ] + idx[ 1 ]; };
+    > var out = {{alias}}( 2, clbk )
+    [ [ 0, 1 ], [ 1, 2 ] ]
+
+    See Also
+    --------
+

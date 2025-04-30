@@ -121,7 +121,7 @@ y = mgf( 0.2, 20, 1.5 );
 
 #### mgf.factory( r, p )
 
-Returns a function for evaluating the [moment-generating function][mgf] of  a [negative binomial][negative-binomial-distribution] distribution with number of successes until experiment is stopped `r` and success probability `p`.
+Returns a function for evaluating the [moment-generating function][mgf] of a [negative binomial][negative-binomial-distribution] distribution with number of successes until experiment is stopped `r` and success probability `p`.
 
 ```javascript
 var myMGF = mgf.factory( 4.3, 0.4 );

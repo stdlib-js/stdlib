@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `gnrm2`.
@@ -40,7 +45,7 @@ interface Routine {
 	* var z = gnrm2( x.length, x, 1 );
 	* // returns 3.0
 	*/
-	( N: number, x: NumericArray, stride: number ): number;
+	( N: number, x: InputArray, stride: number ): number;
 
 	/**
 	* Computes the L2-norm of a vector using alternative indexing semantics.
@@ -57,7 +62,7 @@ interface Routine {
 	* var z = gnrm2.ndarray( x.length, x, 1, 0 );
 	* // returns 3.0
 	*/
-	ndarray( N: number, x: NumericArray, stride: number, offset: number ): number;
+	ndarray( N: number, x: InputArray, stride: number, offset: number ): number;
 }
 
 /**

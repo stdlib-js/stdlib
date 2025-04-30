@@ -79,7 +79,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/abs"
       ]
     },
     {

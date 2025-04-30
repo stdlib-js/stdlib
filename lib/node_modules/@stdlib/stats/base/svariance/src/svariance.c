@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/stats/base/svariance.h"
-#include "stdlib/stats/base/svariancepn.h"
+#include "stdlib/stats/strided/svariancepn.h"
 #include <stdint.h>
 
 /**
