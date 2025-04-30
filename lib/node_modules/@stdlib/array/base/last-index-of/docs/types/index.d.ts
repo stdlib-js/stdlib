@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, Complex64Array, Complex128Array } from '@stdlib/types/array';
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
 * Returns the index of the last element which equals a provided search element.
@@ -34,13 +34,12 @@ import { Collection, Complex64Array, Complex128Array } from '@stdlib/types/array
 * @param x - input array
 * @param searchElement - search element
 * @param fromIndex - starting index (inclusive)
-* @param equalNaNs - boolean indicating whether NaNs should be considered equal
 * @returns index
 *
 * @example
 * var x = [ 1, 2, 3, 4 ];
 *
-* var idx = lastIndexOf( x, 2, 3, false );
+* var idx = lastIndexOf( x, 2, 3 );
 * // returns 1
 *
 * @example
@@ -48,10 +47,10 @@ import { Collection, Complex64Array, Complex128Array } from '@stdlib/types/array
 *
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 *
-* var idx = lastIndexOf( x, 2, 3, false );
+* var idx = lastIndexOf( x, 2, 3 );
 * // returns 1
 */
-declare function lastIndexOf( x: Collection | Complex64Array | Complex128Array, searchElement: any, fromIndex: number, equalNaNs: boolean ): number;
+declare function lastIndexOf( x: Collection | AccessorArrayLike<unknown>, searchElement: unknown, fromIndex: number ): number;
 
 
 // EXPORTS //
