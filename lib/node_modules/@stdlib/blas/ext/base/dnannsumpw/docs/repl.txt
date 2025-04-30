@@ -62,7 +62,7 @@
     semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, offset parameters support indexing semantics based on starting
+    buffer, the offset parameters support indexing semantics based on starting
     indices.
 
     Parameters

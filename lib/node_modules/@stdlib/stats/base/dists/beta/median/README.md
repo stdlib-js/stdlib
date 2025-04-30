@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-The [median][median] for a [beta][beta-distribution] random variable is the value for which 
+The [median][median] for a [beta][beta-distribution] random variable is the value for which
 the regularized incomplete beta function `I(α,β)` is equal to `0.5`, i.e.
 
 <!-- <equation class="equation" label="eq:beta_median" align="center" raw="\operatorname{Median}\left[ X \right] = I_{\frac{1}{2}}^{[-1]}(\alpha,\beta)" alt="Median for a beta distribution."> -->
@@ -124,21 +124,18 @@ v = median( 1.0, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var median = require( '@stdlib/stats/base/dists/beta/median' );
 
-var alpha;
-var beta;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var alpha = uniform( 10, EPS, 10.0, opts );
+var beta = uniform( 10, EPS, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    alpha = ( randu()*10.0 ) + EPS;
-    beta = ( randu()*10.0 ) + EPS;
-    v = median( alpha, beta );
-    console.log( 'α: %d, β: %d, Median(X;α,β): %d', alpha.toFixed( 4 ), beta.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'α: %0.4f, β: %0.4f, Median(X;α,β): %0.4f', alpha, beta, median );
 ```
 
 </section>

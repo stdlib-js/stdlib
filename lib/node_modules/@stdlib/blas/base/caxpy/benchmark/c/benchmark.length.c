@@ -93,7 +93,7 @@ static float rand_float( void ) {
 *
 * @param iterations   number of iterations
 * @param len          array length
-* @return elapsed time in seconds
+* @return             elapsed time in seconds
 */
 static double benchmark1( int iterations, int len ) {
 	stdlib_complex64_t ca;
@@ -130,7 +130,7 @@ static double benchmark1( int iterations, int len ) {
 *
 * @param iterations   number of iterations
 * @param len          array length
-* @return elapsed time in seconds
+* @return             elapsed time in seconds
 */
 static double benchmark2( int iterations, int len ) {
 	stdlib_complex64_t ca;

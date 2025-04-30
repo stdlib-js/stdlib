@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/gapx",
   "version": "0.0.0",
-  "description": "Add a constant to each element in a strided array.",
+  "description": "Add a scalar constant to each element in a strided array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
