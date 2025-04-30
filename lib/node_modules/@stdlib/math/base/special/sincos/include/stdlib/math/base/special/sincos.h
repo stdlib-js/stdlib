@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Simultaneously computes the sine and cosine of a number.
+* Simultaneously computes the sine and cosine of an angle measured in radians.
 */
 void stdlib_base_sincos( const double x, double *sine, double *cosine );
 

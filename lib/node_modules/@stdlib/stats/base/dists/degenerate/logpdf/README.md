@@ -190,7 +190,7 @@ double stdlib_base_dists_degenerate_logpdf( const double x, const double mu );
 ### Examples
 
 ```c
-#include "stdlib/stats/base/dists/degerate/logpdf.h"
+#include "stdlib/stats/base/dists/degenerate/logpdf.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -208,7 +208,7 @@ int main( void ) {
     for ( i = 0; i < 25; i++ ) {
         x = random_uniform( 0.0, 5.0 );
         mu = random_uniform( 0.0, 5.0 );
-        y = stdlib_base_dists_degerate_logpdf( x, mu );
+        y = stdlib_base_dists_degenerate_logpdf( x, mu );
         printf( "x: %lf, µ: %lf, ln(f(x;µ)): %lf\n", x, mu, y );
     }
 }
