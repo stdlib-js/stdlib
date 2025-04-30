@@ -20,7 +20,11 @@
 name: first_time_greeting
 
 # Workflow triggers:
-on: [pull_request_target, issues]
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
 
 # Global permissions:
 permissions:
@@ -56,7 +60,7 @@ jobs:
       # Greet first-time contributors:
       - name: 'Greet first-time contributors'
         env:
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_NUMBER: ${{ github.event.issue.number || github.event.pull_request.number }}
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/first_time_greeting" $ISSUE_NUMBER

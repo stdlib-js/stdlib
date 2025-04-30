@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_STATS_BASE_DISTS_LOGPDF_H
-#define STDLIB_STATS_BASE_DISTS_LOGPDF_H
+#ifndef STDLIB_STATS_BASE_DISTS_LAPLACE_LOGPDF_H
+#define STDLIB_STATS_BASE_DISTS_LAPLACE_LOGPDF_H
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -35,4 +35,4 @@ double stdlib_base_dists_laplace_logpdf( const double x, const double mu, const 
 }
 #endif
 
-#endif // !STDLIB_STATS_BASE_DISTS_LOGPDF_H
+#endif // !STDLIB_STATS_BASE_DISTS_LAPLACE_LOGPDF_H

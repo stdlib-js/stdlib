@@ -28,6 +28,15 @@ on:
 
   # Allow manual triggering:
   workflow_dispatch:
+    inputs:
+      debug:
+        description: 'Enable debug output'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
 
 # Workflow jobs:
 jobs:
@@ -61,3 +70,4 @@ jobs:
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/check_tracking_issue_closure" 1
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          DEBUG: ${{ inputs.debug || 'false' }}

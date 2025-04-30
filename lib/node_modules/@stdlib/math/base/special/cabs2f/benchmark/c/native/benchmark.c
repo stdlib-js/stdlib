@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/math/base/special/cabs2f.h"
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -91,7 +92,6 @@ static float rand_float( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	float complex z;
 	double elapsed;
 	double t;
 	float re;
@@ -99,12 +99,17 @@ static double benchmark( void ) {
 	float y;
 	int i;
 
-	t = tic();
-	for ( i = 0; i < ITERATIONS; i++ ) {
+	stdlib_complex64_t z[ 100 ];
+
+	for ( i = 0; i < 100; i++ ) {
 		re = ( 1000.0f*rand_float() ) - 500.0f;
 		im = ( 1000.0f*rand_float() ) - 500.0f;
-		z = re + im*I;
-		y = stdlib_base_cabs2f( z );
+		z[ i ] = stdlib_complex64( re, im );
+	}
+
+	t = tic();
+	for ( i = 0; i < ITERATIONS; i++ ) {
+		y = stdlib_base_cabs2f( z[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

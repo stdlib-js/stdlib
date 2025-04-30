@@ -38,7 +38,7 @@ var mskmax = require( '@stdlib/stats/base/mskmax' );
 
 #### mskmax( N, x, strideX, mask, strideMask )
 
-Computes the maximum value of a strided array `x` according to a `mask`.
+Computes the maximum value of a strided array according to a mask.
 
 ```javascript
 var x = [ 1.0, -2.0, 4.0, 2.0 ];

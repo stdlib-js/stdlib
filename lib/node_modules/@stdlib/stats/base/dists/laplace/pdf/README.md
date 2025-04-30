@@ -167,7 +167,7 @@ for ( i = 0; i < 100; i++ ) {
 #include "stdlib/stats/base/dists/laplace/pdf.h"
 ```
 
-#### stdlib_base_dists_laplace_pdf( mu, b )
+#### stdlib_base_dists_laplace_pdf( x, mu, b )
 
 Evaluates the [probability density function][pdf] (PDF) for a [Laplace][laplace-distribution] distribution with parameters `mu` (location parameter) and `b > 0` (scale parameter).
 
@@ -178,7 +178,7 @@ double out = stdlib_base_dists_laplace_pdf( 2.0, 0.0, 1.0 );
 
 The function accepts the following arguments:
 
--   **x**: `[in] double` input parameter.
+-   **x**: `[in] double` input value.
 -   **mu**: `[in] double` location parameter.
 -   **b**: `[in] double` scale parameter.
 
@@ -206,7 +206,6 @@ double stdlib_base_dists_laplace_pdf( const double x, const double mu, const dou
 
 ```c
 #include "stdlib/stats/base/dists/laplace/pdf.h"
-#include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -227,12 +226,18 @@ int main( void ) {
         mu = random_uniform( 0.0, 10.0 );
         b = random_uniform( 0.0, 10.0 );
         y = stdlib_base_dists_laplace_pdf( x, mu, b );
-        printf("x: %lf, µ: %lf, b: %lf, f(x;µ,b): %lf\n", x, mu, b, y);
+        printf( "x: %lf, µ: %lf, b: %lf, f(x;µ,b): %lf\n", x, mu, b, y );
     }
 }
 ```
 
 </section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

@@ -346,7 +346,7 @@ rules[ 'type-max-length' ] = [ 1, 'always', 20 ];
 rules[ 'type-min-length' ] = [ 2, 'always', 1 ];
 
 /**
-* Do not require the present of the `Signed-off-by` trailer.
+* Do not require the presence of the `Signed-off-by` trailer.
 *
 * @name signed-off-by
 * @memberof rules
