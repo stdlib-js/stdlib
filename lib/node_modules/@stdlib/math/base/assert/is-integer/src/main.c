@@ -32,5 +32,5 @@
 * // returns true
 */
 bool stdlib_base_is_integer( const double x ) {
-    return ( x == stdlib_base_floor( x ) );
+	return ( x == stdlib_base_floor( x ) );
 }

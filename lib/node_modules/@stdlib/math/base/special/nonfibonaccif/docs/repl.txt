@@ -1,0 +1,32 @@
+
+{{alias}}( n )
+    Computes the nth non-Fibonacci single-precision floating-point number.
+
+    If not provided a nonnegative integer value, the function returns `NaN`.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    n: integer
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Non-Fibonacci number.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1 )
+    4
+    > v = {{alias}}( 2 )
+    6
+    > v = {{alias}}( 3 )
+    7
+    > v = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

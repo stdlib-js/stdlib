@@ -28,53 +28,57 @@
     {
       "task": "build",
       "src": [
-        "./src/snansumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nanf",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-float32array"
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-double",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/snansumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nanf"
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/snansumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nanf"
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/blas/base/shared"
       ]
     }
   ]
