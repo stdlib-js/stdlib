@@ -27,7 +27,7 @@
 * @return     mode
 *
 * @example
-* double v = mode( -4.0, 4.0 );
+* double v = stdlib_base_dists_arcsine_mode( -4.0, 4.0 );
 * // returns -4.0
 */
 double stdlib_base_dists_arcsine_mode( const double a, const double b ) {

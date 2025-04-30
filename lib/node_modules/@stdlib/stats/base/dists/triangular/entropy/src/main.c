@@ -29,7 +29,7 @@
 * @return     differential entropy
 *
 * @example
-* double y = stdlib_base_triangular_entropy( 0.0, 1.0, 0.5 );
+* double y = stdlib_base_dists_triangular_entropy( 0.0, 1.0, 0.5 );
 * // returns ~-0.193
 */
 double stdlib_base_dists_triangular_entropy( const double a, const double b, const double c ) {

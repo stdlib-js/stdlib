@@ -99,16 +99,16 @@ var v = spence( -4.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var spence = require( '@stdlib/math/base/special/spence' );
 
-var x;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, 0.0, 100.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = randu() * 100.0;
-    console.log( 'spence( %d ) = %d', x, spence( x ) );
-}
+logEachMap( 'spence( %0.4f ) = %0.4f', x, spence );
 ```
 
 </section>

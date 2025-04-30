@@ -28,7 +28,7 @@
 * @return      standard deviation
 *
 * @example
-* double y = stdlib_base_f_stdev( 3.0, 5.0 );
+* double y = stdlib_base_dists_f_stdev( 3.0, 5.0 );
 * // returns ~3.333
 */
 double stdlib_base_dists_f_stdev( const double d1, const double d2 ) {

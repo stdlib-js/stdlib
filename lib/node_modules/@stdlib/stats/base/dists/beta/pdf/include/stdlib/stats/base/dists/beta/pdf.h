@@ -20,7 +20,7 @@
 #define STDLIB_STATS_BASE_DISTS_BETA_PDF_H
 
 /*
-* If C++, prevent name mangling so that the compiler emits a ternary file having undecorated names, thus mirroring the behavior of a C compiler.
+* If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
 #ifdef __cplusplus
 extern "C" {
