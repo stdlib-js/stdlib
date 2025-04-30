@@ -36,7 +36,7 @@ int main( void ) {
 		b = random_uniform( 0.1, 10.0 );
 
 		y = stdlib_base_dists_kumaraswamy_median( a, b );
-		printf( "a: %lf, b: %lf, Median(a,b): %lf\n", a, b, y );
+		printf( "a: %lf, b: %lf, Median(X;a,b): %lf\n", a, b, y );
 	}
 
 	return 0;

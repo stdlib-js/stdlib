@@ -1,0 +1,84 @@
+
+{{alias}}( x[, options] )
+    Computes the cumulative maximum value along one or more ndarray dimensions.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a real-valued or "generic" data type.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output array data type. Must be a real-valued or "generic" data type.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided, the
+        function performs the operation over all elements in a provided input
+        ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var buf = [ -1.0, 2.0, -3.0, -4.0 ];
+    > var dt = 'generic';
+    > var sh = [ buf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, buf, sh, sx, ox, ord );
+    > var y = {{alias}}( x );
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ -1.0, 2.0, 2.0, 2.0 ]
+
+
+{{alias}}.assign( x, out[, options] )
+    Computes the cumulative maximum value along one or more ndarray dimensions
+    and assigns results to a provided output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a real-valued or generic data type.
+
+    out: ndarray
+        Output array.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided, the
+        function performs the operation over all elements in a provided input
+        ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var buf = [ -1.0, 2.0, -3.0, -4.0 ];
+    > var dt = 'generic';
+    > var sh = [ buf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, buf, sh, sx, ox, ord );
+    > var out = {{alias:@stdlib/ndarray/zeros-like}}( x );
+    > var y = {{alias}}.assign( x, out )
+    <ndarray>
+    > var bool = ( out === y )
+    true
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ -1.0, 2.0, 2.0, 2.0 ]
+
+    See Also
+    --------
+

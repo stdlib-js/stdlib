@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Probability Density Function
 
-> Evaluate the natural logarithm of the [probability density function][pdf] (PDF) for a [chi][chi-distribution] distribution .
+> Evaluate the natural logarithm of the [probability density function][pdf] (PDF) for a [chi][chi-distribution] distribution.
 
 <section class="intro">
 
@@ -39,7 +39,7 @@ f(x;\,k) = \frac{2^{{1-k/2}}x^{{k-1}}e^{{-x^{2}/2}}}{\Gamma(k/2)}
 
 <!-- </equation> -->
 
-where `k` is the degrees of freedom and `Γ` denotes the [gamma][gamma-function] function. 
+where `k` is the degrees of freedom and `Γ` denotes the [gamma][gamma-function] function.
 
 </section>
 

@@ -72,7 +72,7 @@ v = nonfibonacci( 3 );
 // returns 7
 ```
 
-If provided either a non-integer or `n < 1`, the function returns `NaN`. 
+If provided either a non-integer or `n < 1`, the function returns `NaN`.
 
 ```javascript
 var v = nonfibonacci( -1 );
@@ -195,7 +195,7 @@ int main( void ) {
     int i;
     for ( i = 1; i < 12; i++ ) {
         double result = stdlib_base_nonfibonacci( i );
-        printf( "x: %i => result: %lf", i , result );
+        printf( "x: %i => result: %lf", i, result );
     }
 }
 ```
