@@ -19,7 +19,7 @@
 #ifndef STDLIB_STATS_BASE_DSEM_H
 #define STDLIB_STATS_BASE_DSEM_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Computes the standard error of the mean for a double-precision floating-point strided array.
 */
-double stdlib_strided_dsem( const int64_t N, const double correction, const double *X, const int64_t stride );
+double API_SUFFIX(stdlib_strided_dsem)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX );
+
+/**
+* Computes the standard error of the mean of a double-precision floating-point strided array using alternative indexing semantics.
+*/
+double API_SUFFIX(stdlib_strided_dsem_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }

@@ -21,7 +21,7 @@
 #include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/math/base/assert/is_even.h"
 #include "stdlib/constants/float64/pinf.h"
-#include "stdlib/constants/float64/max_safe_nth_double_factorial.h"
+#include "stdlib/constants/float64/max_nth_double_factorial.h"
 #include <stdint.h>
 
 /**
@@ -42,7 +42,7 @@ double stdlib_base_factorial2( const int32_t n ) {
 	if ( stdlib_base_is_nan( n ) ) {
 		return 0.0/0.0; // NaN
 	}
-	if ( n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_DOUBLE_FACTORIAL ) {
+	if ( n > STDLIB_CONSTANT_FLOAT64_MAX_NTH_DOUBLE_FACTORIAL ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;
 	}
 	if ( n < 0 || !stdlib_base_is_integer( n ) ) {

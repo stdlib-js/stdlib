@@ -189,7 +189,6 @@ double stdlib_base_dists_erlang_variance( const int32_t k, const double lambda )
 
 </section>
 
-
 <!-- /.usage -->
 
 <!-- C API usage notes. Make sure to keep an empty line after the `section`
