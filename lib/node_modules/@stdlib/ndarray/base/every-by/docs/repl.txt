@@ -1,0 +1,74 @@
+
+{{alias}}( arrays, predicate[, thisArg] )
+    Tests whether all elements in an ndarray pass a test implemented by a
+    predicate function.
+
+    A provided "ndarray" should be an `object` with the following properties:
+
+    - dtype: data type.
+    - data: data buffer.
+    - shape: dimensions.
+    - strides: stride lengths.
+    - offset: index offset.
+    - order: specifies whether an ndarray is row-major (C-style) or column-major
+    (Fortran-style).
+
+    The predicate function is provided the following arguments:
+
+    - value: current array element.
+    - indices: current array element indices.
+    - arr: the input ndarray.
+
+    If provided an empty ndarray, the function returns `true`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing an input ndarray.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Predicate function execution context.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether all elements in an ndarray pass a test
+        implemented by a predicate function.
+
+    Examples
+    --------
+    // Define ndarray data and meta data...
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, 1.0, 1.0 ] );
+    > var dt = 'float64';
+    > var sh = [ 2, 2 ];
+    > var sx = [ 2, 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+
+    // Define a callback...
+    > function clbk( v ) { return v > 0.0; };
+
+    // Using an ndarray...
+    > var x = {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > {{alias}}( [ x ], clbk )
+    true
+
+    // Using a minimal ndarray-like object...
+    > xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, 1.0, 0.0 ] );
+    > x = {
+    ...     'dtype': dt,
+    ...     'data': xbuf,
+    ...     'shape': sh,
+    ...     'strides': sx,
+    ...     'offset': ox,
+    ...     'order': ord
+    ... };
+    > {{alias}}( [ x ], clbk )
+    false
+
+    See Also
+    --------
+
