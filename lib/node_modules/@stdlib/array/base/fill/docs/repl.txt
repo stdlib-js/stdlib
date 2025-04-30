@@ -8,8 +8,12 @@
 
         x.fill( value, start, end )
 
-    If provided an array-like object without a `value` method, the function
+    If provided an array-like object without a `fill` method, the function
     manually sets input array elements to the specified value.
+
+    Negative `start` and `end` indices are resolved to positive indices by
+    counting from the end of the array with `-1` corresponding to the last
+    indexed element.
 
     Parameters
     ----------
