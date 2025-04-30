@@ -19,5 +19,4 @@
 #include "stdlib/stats/base/dists/cauchy/entropy.h"
 #include "stdlib/math/base/napi/binary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DD_D( stdlib_base_dists_cauchy_entropy )

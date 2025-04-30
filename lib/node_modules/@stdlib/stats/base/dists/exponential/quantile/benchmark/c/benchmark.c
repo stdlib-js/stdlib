@@ -95,8 +95,8 @@ static double random_uniform( const double min, const double max ) {
 static double benchmark( void ) {
 	double elapsed;
 	double lambda[ 100 ];
-	double y;
 	double p[ 100 ];
+	double y;
 	double t;
 	int i;
 
