@@ -127,7 +127,7 @@ zscal.ndarray( 2, alpha, x, 2, 1 );
 
 ## Notes
 
--   If `N <= 0` , both functions return `x` unchanged.
+-   If `N <= 0`, both functions return `x` unchanged.
 -   `zscal()` corresponds to the [BLAS][blas] level 1 function [`zscal`][zscal].
 
 </section>
