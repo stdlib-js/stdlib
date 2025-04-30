@@ -59,16 +59,16 @@ v = floorf( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var floorf = require( '@stdlib/math/base/special/floorf' );
 
-var x;
-var i;
+var opts = {
+    'dtype': 'float32'
+};
+var x = uniform( 100, -50.0, 50.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*100.0) - 50.0;
-    console.log( 'floorf(%d) = %d', x, floorf( x ) );
-}
+logEachMap( 'floorf(%0.4f) = %d', x, floorf );
 ```
 
 </section>
