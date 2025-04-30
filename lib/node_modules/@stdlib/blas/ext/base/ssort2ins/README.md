@@ -231,14 +231,14 @@ stdlib_strided_ssort2ins( 4, 1.0f, x, 1, y, 1 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **order**: `[in] float` sort order. If `order < 0.0`, the input strided array `x` is sorted in **decreasing** order. If `order > 0.0`, the input strided array `x` is sorted in **increasing** order. If `order == 0.0`, the input strided arrays are left unchanged.
+-   **order**: `[in] float` sort order. If `order < 0.0`, the input strided array `X` is sorted in **decreasing** order. If `order > 0.0`, the input strided array `X` is sorted in **increasing** order. If `order == 0.0`, the input strided arrays are left unchanged.
 -   **X**: `[inout] float*` first input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **Y**: `[inout] float*` second input array.
 -   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
 
 ```c
-stdlib_strided_ssort2ins( const CBLAS_INT N, const float order, float *X, CBLAS_INT strideX, float *Y, CBLAS_INT strideY );
+stdlib_strided_ssort2ins( const CBLAS_INT N, const float order, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY );
 ```
 
 <!--lint disable maximum-heading-length-->
@@ -259,7 +259,7 @@ stdlib_strided_ssort2ins_ndarray( 4, 1.0f, x, 1, 0, y, 1, 0 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **order**: `[in] float` sort order. If `order < 0.0`, the input strided array `x` is sorted in **decreasing** order. If `order > 0.0`, the input strided array `x` is sorted in **increasing** order. If `order == 0.0`, the input strided arrays are left unchanged.
+-   **order**: `[in] float` sort order. If `order < 0.0`, the input strided array `X` is sorted in **decreasing** order. If `order > 0.0`, the input strided array `X` is sorted in **increasing** order. If `order == 0.0`, the input strided arrays are left unchanged.
 -   **X**: `[inout] float*` first input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
@@ -268,7 +268,7 @@ The function accepts the following arguments:
 -   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
 
 ```c
-stdlib_strided_ssort2ins_ndarray( const CBLAS_INT N, const float order, float *X, CBLAS_INT strideX, CBLAS_INT offsetX, float *Y, CBLAS_INT strideY, CBLAS_INT offsetY );
+stdlib_strided_ssort2ins_ndarray( const CBLAS_INT N, const float order, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 ```
 
 </section>

@@ -41,7 +41,7 @@ void API_SUFFIX(stdlib_strided_ssort2ins)( const CBLAS_INT N, const float order,
 
 
 /**
-* Simultaneously sorts two signle-precision floating-point strided arrays based on the sort order of the first array using insertion sort and alternative indexing semantics.
+* Simultaneously sorts two single-precision floating-point strided arrays based on the sort order of the first array using insertion sort and alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param order    sort order
@@ -52,7 +52,7 @@ void API_SUFFIX(stdlib_strided_ssort2ins)( const CBLAS_INT N, const float order,
 * @param strideY  stride length for `Y`
 * @param offsetY  starting index for `Y`
 */
-void API_SUFFIX(stdlib_strided_ssort2ins_ndarray)( const CBLAS_INT N, const float order, float *X, CBLAS_INT strideX, CBLAS_INT offsetX, float *Y, CBLAS_INT strideY, CBLAS_INT offsetY ) {
+void API_SUFFIX(stdlib_strided_ssort2ins_ndarray)( const CBLAS_INT N, const float order, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
 	CBLAS_INT sx;
 	CBLAS_INT sy;
 	CBLAS_INT ox;
@@ -76,8 +76,8 @@ void API_SUFFIX(stdlib_strided_ssort2ins_ndarray)( const CBLAS_INT N, const floa
 	}
 	// For a positive stride, sorting in decreasing order is equivalent to providing a negative stride and sorting in increasing order, and, for a negative stride, sorting in decreasing order is equivalent to providing a positive stride and sorting in increasing order...
 	if ( order < 0.0f ) {
-		sx = strideX * -1;
-		sy = strideY * -1;
+		sx = -strideX;
+		sy = -strideY;
 		ox = offsetX - ( (N-1) * sx );
 		oy = offsetY - ( (N-1) * sy );
 	} else {

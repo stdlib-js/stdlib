@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the moment-generating function (MGF) for the geometric distribution with probability `p` at a value `x`.
+* Evaluates the moment-generating function (MGF) for the geometric distribution with probability `p` at a value `t`.
 */
 double stdlib_base_dists_geometric_mgf( const double t, const double p );
 

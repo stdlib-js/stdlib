@@ -1,0 +1,253 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to post a comment with relevant `make` commands tailored to packages changed in a PR.
+#
+# Usage: package_commands_comment <pr_number>
+#
+# Arguments:
+#
+#   pr_number    Pull request number.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Resolve the pull request number:
+pr_number="$1"
+
+# GitHub API base URL:
+github_api_url="https://api.github.com"
+
+# Repository owner and name:
+repo_owner="stdlib-js"
+repo_name="stdlib"
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit "$1"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Performs a GitHub API request.
+#
+# $1 - HTTP method (GET or POST)
+# $2 - API endpoint
+# $3 - data for POST requests
+github_api() {
+	local method="$1"
+	local endpoint="$2"
+	local data="$3"
+
+	# Initialize an array to hold curl headers:
+	local headers=()
+
+	# If GITHUB_TOKEN is set, add the Authorization header:
+	if [ -n "${GITHUB_TOKEN}" ]; then
+		headers+=("-H" "Authorization: token ${GITHUB_TOKEN}")
+	fi
+
+	# Determine the HTTP method and construct the curl command accordingly...
+	case "${method}" in
+		GET)
+			curl -s "${headers[@]}" "${github_api_url}${endpoint}"
+			;;
+		POST)
+			# For POST requests, always set the Content-Type header:
+			headers+=("-H" "Content-Type: application/json")
+
+			# If data is provided, include it in the request:
+			if [ -n "${data}" ]; then
+				curl -s -X POST "${headers[@]}" -d "${data}" "${github_api_url}${endpoint}"
+			else
+				# Handle cases where POST data is required but not provided:
+				echo "ERROR: POST request requires data."
+				on_error 1
+			fi
+			;;
+		*)
+			echo "ERROR: Invalid HTTP method: ${method}."
+			on_error 1
+			;;
+	esac
+}
+
+# Main execution sequence.
+main() {
+	local directories
+	local packages
+	local response
+	local c_files
+	local comment
+	local files
+
+	if [ -z "${pr_number}" ]; then
+		echo "ERROR: Pull request number is required." >&2
+		on_error 1
+	fi
+
+	# Fetch changed files in pull request:
+	response=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/pulls/${pr_number}/files?per_page=100")
+	files=$(echo "${response}" | jq -r '.[] | .filename')
+
+	# Extract files associated with native add-ons:
+	c_files=$(echo "${files}" | grep -e '/benchmark/c' -e '/examples/c' -e '/binding.gyp' -e '/include.gypi' -e '/src/')
+
+	# Find unique package directories:
+	directories=$(echo "${files}" | tr ' ' '\n' | \
+		xargs dirname | \
+		grep '^lib/node_modules/@stdlib' | \
+		sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?$//' | \
+		sort -u)
+
+	# Extract package names from changed package directories (e.g., @stdlib/math/base/special/sin) by removing the leading 'lib/node_modules/':
+	packages=$(echo "${directories}" | sed -E 's/^lib\/node_modules\///')
+
+	# Documentation links:
+	docs_links="
+## Documentation Links
+
+-   [make rules for running examples][make-docs-examples]
+-   [make rules for running unit tests][make-docs-test]
+-   [make rules for running benchmarks][make-docs-benchmark]
+
+[make-docs-examples]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/examples/README.md
+[make-docs-test]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/test/README.md
+[make-docs-benchmark]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/benchmark/README.md"
+
+	# Count the number of packages:
+	package_count=$(echo "${packages}" | wc -l)
+
+	if [[ $package_count -gt 1 ]]; then
+		# Multiple packages case:
+		comment="Hello! 👋
+
+Pro-tip: This PR changes multiple packages. You can use various \`make\` rules with \`*_FILTER\` environment variables to run tests, benchmarks, and examples for specific packages.
+
+For each of the commands, please run them from the root stdlib repository directory (not the package folder!).
+
+You can use pattern matching to target specific packages as follows:
+
+\`\`\`bash
+# Run tests for all packages in the math namespace:
+make test TESTS_FILTER=\".*/@stdlib/math/.*\"
+
+# Run benchmarks for specific packages (using OR pattern):
+make benchmark BENCHMARKS_FILTER=\".*/@stdlib/math/base/special/(sin|cos)/.*\"
+\`\`\`
+
+## Changed Packages
+
+$(echo "${packages}" | sed 's/^/-   `/' | sed 's/$/`/')
+${docs_links}"
+
+	else
+		# Single package case:
+		if [[ "${#c_files[@]}" -eq 0 ]]; then
+			comment="Hello! 👋
+
+Pro-tip: Use the \`make\` commands below during local development to ensure that all tests, examples, and benchmark files in your PR run successfully.
+
+For each of the commands, please run them from the root stdlib repository directory (not the package folder!).
+
+To run unit tests,
+
+\`\`\`bash
+make test TESTS_FILTER=\".*/${packages}/.*\"
+\`\`\`
+
+To run benchmarks,
+
+\`\`\`bash
+make benchmark BENCHMARKS_FILTER=\".*/${packages}/.*\"
+\`\`\`
+
+To run examples,
+
+\`\`\`bash
+make examples EXAMPLES_FILTER=\".*/${packages}/.*\"
+\`\`\`
+${docs_links}"
+		else
+			comment="Hello! 👋
+
+Pro-tip: Use the \`make\` below commands during local development to ensure that all tests, examples, and benchmark files in your PR run successfully.
+
+For each of the commands, please run them from the root stdlib repository directory (not the package folder!).
+
+To build a native add-on,
+
+\`\`\`bash
+NODE_ADDONS_PATTERN=\"${packages}\" make install-node-addons
+\`\`\`
+
+To run unit tests,
+
+\`\`\`bash
+make test TESTS_FILTER=\".*/${packages}/.*\"
+\`\`\`
+
+To run benchmarks,
+
+\`\`\`bash
+make benchmark BENCHMARKS_FILTER=\".*/${packages}/.*\"
+\`\`\`
+
+\`\`\`bash
+make benchmark-c BENCHMARKS_FILTER=\".*/${packages}/.*\"
+\`\`\`
+
+To run examples,
+
+\`\`\`bash
+make examples EXAMPLES_FILTER=\".*/${packages}/.*\"
+\`\`\`
+
+\`\`\`bash
+make examples-c EXAMPLES_FILTER=\".*/${packages}/.*\"
+\`\`\`
+${docs_links}"
+		fi
+	fi
+
+	if ! github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/comments" "{\"body\":$(echo "${comment}" | jq -R -s -c .)}"; then
+		echo "Failed to post comment on PR."
+		on_error 1
+	fi
+
+	print_success
+	exit 0
+}
+
+main

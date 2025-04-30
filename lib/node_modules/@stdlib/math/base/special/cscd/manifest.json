@@ -37,8 +37,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/special/sin",
-        "@stdlib/math/base/special/deg2rad"
+        "@stdlib/math/base/special/sind"
       ]
     },
     {
@@ -52,8 +51,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/sin",
-        "@stdlib/math/base/special/deg2rad"
+        "@stdlib/math/base/special/sind"
       ]
     },
     {
@@ -67,8 +65,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/sin",
-        "@stdlib/math/base/special/deg2rad"
+        "@stdlib/math/base/special/sind"
       ]
     }
   ]

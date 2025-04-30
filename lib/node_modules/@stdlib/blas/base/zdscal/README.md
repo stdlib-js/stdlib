@@ -36,21 +36,11 @@ Scales a double-precision complex floating-point vector by a double-precision fl
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 
 zdscal( 3, 2.0, zx, 1 );
-
-var z = zx.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 2.0
-
-var im = imag( z );
-// returns 2.0
+// zx => <Complex128Array>[ 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 ]
 ```
 
 The function has the following parameters:
@@ -64,21 +54,11 @@ The `N` and stride parameters determine which elements in `zx` are scaled by `da
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 zdscal( 2, 2.0, zx, 2 );
-
-var z = zx.get( 2 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 10.0
-
-var im = imag( z );
-// returns 12.0
+// zx => <Complex128Array>[ 2.0, 4.0, 3.0, 4.0, 10.0, 12.0, 7.0, 8.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -87,8 +67,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 // Initial array:
 var zx0 = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -98,24 +76,7 @@ var zx1 = new Complex128Array( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 ); // start a
 
 // Scale every element in `zx1`:
 zdscal( 3, 2.0, zx1, 1 );
-
-var z = zx0.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 1.0
-
-var im = imag( z );
-// returns 2.0
-
-z = zx0.get( 1 );
-// returns <Complex128>
-
-re = real( z );
-// returns 6.0
-
-im = imag( z );
-// returns 8.0
+// zx0 => <Complex128Array>[ 1.0, 2.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0 ]
 ```
 
 #### zdscal.ndarray( N, da, zx, strideZX, offsetZX )
@@ -124,21 +85,11 @@ Scales a double-precision complex floating-point vector by a double-precision fl
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 zdscal.ndarray( 3, 2.0, zx, 1, 0 );
-
-var z = zx.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 2.0
-
-var im = imag( z );
-// returns 4.0
+// zx => <Complex128Array>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
 ```
 
 The function has the following additional parameters:
@@ -149,21 +100,11 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 zdscal.ndarray( 2, 2.0, zx, 2, 1 );
-
-var z = zx.get( 3 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 14.0
-
-var im = imag( z );
-// returns 16.0
+// zx => <Complex128Array>[ 1.0, 2.0, 6.0, 8.0, 5.0, 6.0, 14.0, 16.0 ]
 ```
 
 </section>
