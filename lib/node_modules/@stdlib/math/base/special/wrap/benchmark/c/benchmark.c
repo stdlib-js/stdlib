@@ -110,16 +110,19 @@ double wrap( double v, double min, double max ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double x[ 100 ];
 	double elapsed;
-	double x;
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 20.0*rand_double() ) - 10.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 20.0*rand_double() ) - 10.0;
-		y = wrap( x, -5.0, 5.0 );
+		y = wrap( x[ i%100 ], -5.0, 5.0 );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
