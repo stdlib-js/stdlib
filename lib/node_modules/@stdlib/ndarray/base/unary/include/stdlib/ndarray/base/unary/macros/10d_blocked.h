@@ -45,8 +45,8 @@
 * STDLIB_NDARRAY_UNARY_10D_BLOCKED_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_UNARY_10D_BLOCKED_LOOP_PREAMBLE                         \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
-	struct ndarray *x2 = arrays[ 1 ];                                          \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
+	const struct ndarray *x2 = arrays[ 1 ];                                    \
 	int64_t shape[10];                                                         \
 	int64_t sx1[10];                                                           \
 	int64_t sx2[10];                                                           \
@@ -309,9 +309,9 @@
 * STDLIB_NDARRAY_UNARY_10D_BLOCKED_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_UNARY_10D_BLOCKED_LOOP_TWO_OUT_PREAMBLE                 \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
-	struct ndarray *x2 = arrays[ 1 ];                                          \
-	struct ndarray *x3 = arrays[ 2 ];                                          \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
+	const struct ndarray *x2 = arrays[ 1 ];                                    \
+	const struct ndarray *x3 = arrays[ 2 ];                                    \
 	int64_t shape[10];                                                         \
 	int64_t sx1[10];                                                           \
 	int64_t sx2[10];                                                           \
