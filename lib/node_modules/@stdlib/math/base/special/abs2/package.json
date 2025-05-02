@@ -68,5 +68,81 @@
     "double",
     "dbl"
   ],
-  "__stdlib__": {}
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "abs2",
+      "alias": "abs2",
+      "pkg_desc": "compute the squared absolute value",
+      "desc": "computes the squared absolute value",
+      "short_desc": "squared absolute value",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            64,
+            27,
+            0,
+            0.1,
+            -9,
+            8,
+            -1,
+            125,
+            -10.2,
+            11.3,
+            -12.4,
+            3.5,
+            -1.6,
+            15.7,
+            -16,
+            17.9,
+            -188,
+            19.11,
+            -200,
+            21.15
+          ]
+        }
+      ],
+      "returns": {
+        "desc": "squared absolute value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "abs",
+        "abs2",
+        "squared",
+        "square",
+        "absolute",
+        "magnitude"
+      ],
+      "extra_keywords": [
+        "math.abs"
+      ]
+    }
+  }
 }
