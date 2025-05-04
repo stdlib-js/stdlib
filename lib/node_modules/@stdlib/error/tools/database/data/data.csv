@@ -1129,3 +1129,4 @@
 "IC","invalid option. `%s` option must have %s `%s` property.","TypeError"
 "ID","invalid argument. Second argument must be either an ndarray or a numeric scalar value. Value: `%s`.","TypeError"
 "IE","invalid argument. Eleventh argument must be non-zero. Value: `%d`.","RangeError"
+"IF","invalid option. `%s` option must be a valid memory layout. Option: `%s`.","TypeError"
