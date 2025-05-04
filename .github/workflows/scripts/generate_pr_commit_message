@@ -259,9 +259,9 @@ main() {
 		#
 		#   - https://github.com/stdlib-js/stdlib/issues/123
 		#   - stdlib-js/stdlib#123
-		#   - #123 (**not** preceded by a word‑char, “/”, or “>”)
+		#   - #123 (**not** preceded by a word‑char, "/", or ">")
 		grep -oE 'https://github\.com/stdlib-js/stdlib/issues/[0-9]+|stdlib-js/stdlib#[0-9]+|(^|[^[:alnum:]_/>])#[0-9]+' |
-		# Strip the prefix so we’re left with the bare issue number:
+		# Strip the prefix so we're left with the bare issue number:
 		sed -E '
 		s@https://github\.com/stdlib-js/stdlib/issues/([0-9]+)@\1@;
 		s@stdlib-js/stdlib#([0-9]+)@\1@;
