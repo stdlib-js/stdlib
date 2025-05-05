@@ -69,6 +69,8 @@ function factorial( n ) {
     return a;
 }
 
+var v;
+var i;
 for ( i = 0; i < 200; i++ ) {
     v = factorial( i );
     if ( i > FLOAT64_MAX_NTH_FACTORIAL ) {

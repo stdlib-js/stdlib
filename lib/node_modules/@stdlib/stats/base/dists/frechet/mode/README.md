@@ -147,13 +147,104 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
-<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+<!-- C interface documentation. -->
 
-<section class="references">
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
 
 </section>
 
-<!-- /.references -->
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/frechet/mode.h"
+```
+
+#### stdlib_base_dists_frechet_mode( alpha, s, m )
+
+Returns the mode for a Fréchet distribution with shape `alpha`, scale `s`, and location `m`.
+
+```c
+double y = stdlib_base_frechet_mode( 5.0, 2.0, 0.0 );
+// returns ~1.928
+```
+
+The function accepts the following arguments:
+
+-   **alpha**: `[in] double` shape parameter.
+-   **s**: `[in] double` scale parameter.
+-   **m**: `[in] double` location parameter.
+
+```c
+double stdlib_base_dists_frechet_mode( const double alpha, const double s, const double m );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/frechet/mode.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+   double alpha;
+   double s;
+   double m;
+   double y;
+   int i;
+
+    for ( i = 0; i < 10; i++ ) {
+       alpha = random_uniform( 0.0, 20.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+       s = random_uniform( 0.0, 20.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+       m = random_uniform( 0.0, 20.0 ) - 40.0;
+       y = stdlib_base_dists_frechet_mode( alpha, s, m );
+       printf( "α: %.4lf, s: %.4lf, m: %.4lf, Mode(X;α,s,m): %.4lf\n", alpha, s, m, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
