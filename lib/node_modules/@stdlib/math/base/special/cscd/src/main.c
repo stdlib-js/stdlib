@@ -17,8 +17,7 @@
 */
 
 #include "stdlib/math/base/special/cscd.h"
-#include "stdlib/math/base/special/sin.h"
-#include "stdlib/math/base/special/deg2rad.h"
+#include "stdlib/math/base/special/sind.h"
 
 /**
 * Computes the cosecant of a degree.
@@ -31,5 +30,5 @@
 * // returns ~2.0
 */
 double stdlib_base_cscd( const double x ) {
-	return 1.0 / stdlib_base_sin( stdlib_base_deg2rad( x ) );
+	return 1.0 / stdlib_base_sind( x );
 }

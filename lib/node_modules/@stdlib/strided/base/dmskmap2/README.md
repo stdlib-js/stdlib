@@ -45,7 +45,7 @@ Applies a binary function to double-precision floating-point strided input array
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 var x = new Float64Array( [ -2.0, 1.0, -3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 var y = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -74,7 +74,7 @@ The `N` and stride parameters determine which elements in the strided arrays are
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0 ] );
 var y = new Float64Array( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0 ] );
@@ -90,7 +90,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 // Initial arrays...
 var x0 = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0 ] );
@@ -115,7 +115,7 @@ Applies a binary function to double-precision floating-point strided input array
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0 ] );
 var y = new Float64Array( [ 1.0, 1.0, 2.0, 2.0, 3.0 ] );
@@ -138,7 +138,7 @@ While [`typed array`][@stdlib/array/float64] views mandate a view offset based o
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 var x = new Float64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0 ] );
 var y = new Float64Array( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0 ] );
@@ -170,7 +170,7 @@ var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var bernoulli = require( '@stdlib/random/base/bernoulli' ).factory;
 var Float64Array = require( '@stdlib/array/float64' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var dmskmap2 = require( '@stdlib/strided/base/dmskmap2' );
 
 var x = filledarrayBy( 10, 'float64', discreteUniform( -100, 100 ) );
