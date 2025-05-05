@@ -1,11 +1,11 @@
 
-{{alias}}( val, searchValue[, position] )
+{{alias}}( value, searchValue[, position] )
     Tests if an array-like value contains a search value.
 
-    When `val` is a string, the function checks whether the characters of the
+    When `value` is a string, the function checks whether the characters of the
     search string are found in the input string. The search is case-sensitive.
 
-    When `val` is an array-like object, the function checks whether the input
+    When `value` is an array-like object, the function checks whether the input
     array contains an element strictly equal to the specified search value.
 
     For strings, this function is modeled after `String.prototype.includes`,
@@ -13,7 +13,7 @@
     call to `String.prototype.includes.call` insofar as type-checking is
     performed for all arguments.
 
-    The function does not distinguish between positive and negative zero.
+    The function does distinguish between positive and negative zero.
 
     If `position < 0`, the search is performed for the entire input array or
     string.
@@ -21,7 +21,7 @@
 
     Parameters
     ----------
-    val: ArrayLike
+    value: ArrayLike
         Input value.
 
     searchValue: any
