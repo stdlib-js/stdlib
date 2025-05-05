@@ -23,6 +23,7 @@
 #include "stdlib/math/base/special/round.h"
 #include "stdlib/constants/float64/phi.h"
 #include "stdlib/constants/float64/pinf.h"
+#include <stdbool.h>
 
 static const double SQRT_5 = 2.23606797749979;
 

@@ -85,6 +85,11 @@ The function supports the following data type kinds:
 -   `real`: real-valued data types.
 -   `numeric`: numeric data types.
 -   `typed`: typed data types.
+-   `integer_index`: integer index data types.
+-   `boolean_index`: boolean index data types.
+-   `mask_index`: mask index data types.
+-   `typed_index`: typed index data types.
+-   `index`: index data types.
 -   `all`: all data types.
 
 Additionally, the function supports extending the "kinds" listed above by appending an `_and_generic` suffix to the kind name (e.g., `real_and_generic`).
