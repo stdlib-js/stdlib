@@ -1,0 +1,120 @@
+
+{{alias}}( order, uplo, M, N, A, LDA, B, LDB )
+    Copies all or part of a matrix `A` to another matrix `B`.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    Parameters
+    ----------
+    order: string
+        Row-major (C-style) or column-major (Fortran-style) order. Must be
+        either 'row-major' or 'column-major'.
+
+    uplo: string
+        Specifies whether to copy the upper or lower triangular/trapezoidal part
+        of a matrix `A`.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    A: Complex64Array
+        Input matrix `A`.
+
+    LDA: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    B: Complex64Array
+        Output matrix `B`.
+
+    LDB: integer
+        Stride of the first dimension of `B` (a.k.a., leading dimension of the
+        matrix `B`).
+
+    Returns
+    -------
+    B: Complex64Array
+        Output matrix.
+
+    Examples
+    --------
+    > var abuf = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ];
+    > var bbuf = [ 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ];
+    > var A = new {{alias:@stdlib/array/complex64}}( abuf );
+    > var B = new {{alias:@stdlib/array/complex64}}( bbuf );
+    > {{alias}}( 'row-major', 'all', 2, 2, A, 2, B, 2 );
+    > var z = B.get( 0 );
+    > {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > {{alias:@stdlib/complex/float32/imag}}( z )
+    2.0
+
+
+{{alias}}.ndarray( uplo, M, N, A, sa1, sa2, oa, B, sb1, sb2, ob )
+    Copies all or part of a matrix `A` to another matrix `B` using alternative
+    indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    uplo: string
+        Specifies whether to copy the upper or lower triangular/trapezoidal part
+        of a matrix `A`.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    A: Complex64Array
+        Input matrix `A`.
+
+    sa1: integer
+        Stride of the first dimension of `A`.
+
+    sa2: integer
+        Stride of the second dimension of `A`.
+
+    oa: integer
+        Starting index for `A`.
+
+    B: Complex64Array
+        Output matrix `B`.
+
+    sb1: integer
+        Stride of the first dimension of `B`.
+
+    sb2: integer
+        Stride of the second dimension of `B`.
+
+    ob: integer
+        Starting index for `B`.
+
+    Returns
+    -------
+    B: Complex64Array
+        Output matrix.
+
+    Examples
+    --------
+    > var abuf = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ];
+    > var bbuf = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > var A = new {{alias:@stdlib/array/complex64}}( abuf );
+    > var B = new {{alias:@stdlib/array/complex64}}( bbuf );
+    > {{alias}}.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
+    > var z = B.get( 2 );
+    > {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > {{alias:@stdlib/complex/float32/imag}}( z )
+    4.0
+
+    See Also
+    --------

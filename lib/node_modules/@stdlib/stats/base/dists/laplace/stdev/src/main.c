@@ -28,7 +28,7 @@
 * @return        standard deviation
 *
 * @example
-* double y = stdlib_base_laplace_stdev( 0.0, 1.0 );
+* double y = stdlib_base_dists_laplace_stdev( 0.0, 1.0 );
 * // returns ~1.414
 */
 double stdlib_base_dists_laplace_stdev( const double mu, const double b ) {
