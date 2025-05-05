@@ -1,0 +1,27 @@
+
+{{alias}}( λ )
+    Returns the excess kurtosis of a Planck distribution with shape parameter
+    `λ`.
+
+    If `λ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Excess kurtosis.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    ~6.0100
+    > v = {{alias}}( 1.5 )
+    ~8.7048
+
+    See Also
+    --------
+

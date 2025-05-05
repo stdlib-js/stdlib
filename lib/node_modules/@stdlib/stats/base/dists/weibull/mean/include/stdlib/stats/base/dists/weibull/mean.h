@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the mean of an weibull distribution.
+* Returns the expected value of a Weibull distribution.
 */
 double stdlib_base_dists_weibull_mean( const double k, const double lambda );
 

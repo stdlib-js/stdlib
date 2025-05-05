@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/clamp.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -46,7 +46,7 @@
     {
       "task": "benchmark",
       "src": [
-        "./src/clamp.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -63,7 +63,7 @@
     {
       "task": "examples",
       "src": [
-        "./src/clamp.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
