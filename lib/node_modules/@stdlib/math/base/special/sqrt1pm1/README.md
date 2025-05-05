@@ -32,7 +32,7 @@ var sqrt1pm1 = require( '@stdlib/math/base/special/sqrt1pm1' );
 
 #### sqrt1pm1( x )
 
-Computes `sqrt( 1 + x ) - 1` more accurately for small `x`. 
+Computes `sqrt( 1 + x ) - 1` more accurately for small `x`.
 
 ```javascript
 var v = sqrt1pm1( 3.0 );
@@ -65,17 +65,16 @@ v = sqrt1pm1( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var sqrt1pm1 = require( '@stdlib/math/base/special/sqrt1pm1' );
 
-var x;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 100, 0, 100, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = round( randu() * 100.0 );
-    console.log( 'sqrt(1+%d) - 1 = %d', x, sqrt1pm1( x ) );
-}
+logEachMap( 'sqrt(1+%d) - 1 = %0.4f', x, sqrt1pm1 );
 ```
 
 </section>
@@ -110,7 +109,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_sqrt1pm1( x )
 
-Computes `sqrt( 1 + x ) - 1` more accurately for small `x`. 
+Computes `sqrt( 1 + x ) - 1` more accurately for small `x`.
 
 ```c
 double out = stdlib_base_sqrt1pm1( 3.0 );

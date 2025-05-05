@@ -213,7 +213,7 @@ import Random = require( './index' );
 // The function returns an instance having an `assign` method which returns an array...
 {
 	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
-	const x = zeros( 10, dtypes[ 0 ] );
+	const x = zeros( 10, 'float64' );
 
 	const r1 = new Random<number, number, number, number>( triangular, dtypes, dtypes[ 0 ] );
 	r1.assign( 2.0, 5.0, 3.33, x ); // $ExpectType OutputArray<number>
@@ -241,7 +241,7 @@ import Random = require( './index' );
 // The compiler throws an error if the `assign` method is provided an unsupported number of arguments...
 {
 	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
-	const x = zeros( 10, dtypes[ 0 ] );
+	const x = zeros( 10, 'float64' );
 
 	const r1 = new Random<number, number, number, number>( triangular, dtypes, dtypes[ 0 ] );
 	r1.assign(); // $ExpectError

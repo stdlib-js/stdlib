@@ -29,7 +29,7 @@
 * @return          median
 *
 * @example
-* double y = stdlib_base_weibull_median( 1.0, 1.0 );
+* double y = stdlib_base_dists_weibull_median( 1.0, 1.0 );
 * // returns ~0.693
 */
 double stdlib_base_dists_weibull_median( const double k, const double lambda ) {

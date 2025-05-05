@@ -1,0 +1,59 @@
+
+{{alias}}( t, λ )
+    Evaluates the moment-generating function (MGF) for a Planck distribution
+    with shape parameter `λ` at a value `t`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If `λ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.2, 0.5 )
+    ~1.5181
+    > y = {{alias}}( 0.4, 1.5 )
+    ~1.1645
+    > y = {{alias}}( NaN, 0.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+    > y = {{alias}}( 2.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( λ )
+    Returns a function for evaluating the moment-generating function (MGF) of a
+    Planck distribution with shape parameter `λ`.
+
+    Parameters
+    ----------
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var mymgf = {{alias}}.factory( 0.8 );
+    > var y = mymgf( -0.2 )
+    ~0.8711
+
+    See Also
+    --------
+
