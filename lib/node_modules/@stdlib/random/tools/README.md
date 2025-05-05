@@ -55,8 +55,8 @@ The namespace exports the following:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`unaryFactory( prng, idtypes odtypes, policies[, options] )`][@stdlib/random/tools/unary-factory]</span><span class="delimiter">: </span><span class="description">create a function for generating pseudorandom values drawn from a unary PRNG.</span>
--   <span class="signature">[`unary( prng, idtypes odtypes, policies[, options] )`][@stdlib/random/tools/unary]</span><span class="delimiter">: </span><span class="description">constructor for creating ndarrays filled with pseudorandom values drawn from a unary PRNG.</span>
+-   <span class="signature">[`unaryFactory( prng, idtypes, odtypes, policies[, options] )`][@stdlib/random/tools/unary-factory]</span><span class="delimiter">: </span><span class="description">create a function for generating pseudorandom values drawn from a unary PRNG.</span>
+-   <span class="signature">[`unary( prng, idtypes, odtypes, policies[, options] )`][@stdlib/random/tools/unary]</span><span class="delimiter">: </span><span class="description">constructor for creating ndarrays filled with pseudorandom values drawn from a unary PRNG.</span>
 
 </div>
 
