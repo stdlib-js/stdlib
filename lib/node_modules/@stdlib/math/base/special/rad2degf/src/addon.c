@@ -19,5 +19,4 @@
 #include "stdlib/math/base/special/rad2degf.h"
 #include "stdlib/math/base/napi/unary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_F_F( stdlib_base_rad2degf )

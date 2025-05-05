@@ -224,8 +224,8 @@ int main( void ) {
     int i;
 
     for ( i = 0; i < 25; i++ ) {
-        k = random_uniform( 0.0, 10.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
-        lambda = random_uniform( 0.0, 10.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+        k = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
+        lambda = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
         y = stdlib_base_dists_weibull_mean( k, lambda );
         printf( "k: %lf, λ: %lf, E(X;k,λ): %lf\n", k, lambda, y );
     }

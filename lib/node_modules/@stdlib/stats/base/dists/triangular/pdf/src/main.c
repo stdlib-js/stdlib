@@ -18,10 +18,9 @@
 
 #include "stdlib/stats/base/dists/triangular/pdf.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include <math.h>
 
 /**
-* Evaluates the probability density function (PDF) for a triangular distribution with lower limit `a` and upper limit `b` and mode `c` at a value `x`.
+* Evaluates the probability density function (PDF) for a triangular distribution with lower limit `a`, upper limit `b`, and mode `c` at a value `x`.
 *
 * @param x   input value
 * @param a   lower limit
@@ -53,7 +52,7 @@ double stdlib_base_dists_triangular_pdf( const double x, const double a, const d
 	if ( x == c ) {
 		return ( 2.0 / ( b - a ) );
 	}
-	if( x <= b ){
+	if ( x <= b ) {
 		return ( 2.0 * (b - x) ) / ( (b - a) * (b - c) );
 	}
 	return 0.0;

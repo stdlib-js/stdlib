@@ -92,15 +92,16 @@ v = gammasgn( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var gammasgn = require( '@stdlib/math/base/special/gammasgn' );
 
-var x = linspace( -10.0, 10.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -10.0, 10.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'x: %d, f(x): %d', x[ i ], gammasgn( x[ i ] ) );
-}
+logEachMap( 'x: %0.4f, f(x): %0.4f', x, gammasgn );
 ```
 
 </section>
