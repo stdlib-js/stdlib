@@ -61,7 +61,7 @@ When filing an [issue][stdlib-issues], provide the following, where possible:
 -   The expected results.
 -   List of affected environments (e.g., browser, browser version, `npm` version, Node.js version, operating system, and stdlib version).
 
-When pasting code blocks or output, use triple backticks to enable proper formatting. Surround inline code with single backticks. For other Markdown formatting tips and trips, see GitHub's [Markdown guide][github-markdown-guide].
+When pasting code blocks or output, use triple backticks to enable proper formatting. Surround inline code with single backticks. For other Markdown formatting tips and tricks, see GitHub's [Markdown guide][github-markdown-guide].
 
 Be aware that the `@` symbol tags users on GitHub, so **always** surround package names with backticks (e.g., `@stdlib/utils/copy`).
 
@@ -87,7 +87,7 @@ If you have found a bug that you would like to fix,
 
 If you want to contribute a new feature or a breaking change to stdlib, be sure to
 
--   consult the [Gitter][stdlib-gitter] channel to discuss ideas and to gather feedback as to whether a feature would be better developed as an external package. Discussing the design upfront helps ensure that we're ready to accept to your work.
+-   consult the [Gitter][stdlib-gitter] channel to discuss ideas and to gather feedback as to whether a feature would be better developed as an external package. Discussing the design upfront helps ensure that we're ready to accept your work.
 -   write an RFC (request for comments) detailing the proposed change and submit as an issue on the project GitHub issue tracker.
 -   wait for RFC approval.
 -   submit a [pull request][stdlib-pull-requests], making sure to adhere to the guidance set forth in the RFC.
@@ -435,15 +435,15 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 
 [stdlib-style-guides-git]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides/git
 
-[stdlib-doctest]: https://github.com/stdlib-js/stdlib/blob/develop/docs/doctest.md
+[stdlib-doctest]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/doctest.md
 
-[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md
+[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
-[stdlib-branching]: https://github.com/stdlib-js/stdlib/blob/develop/docs/branching.md
+[stdlib-branching]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/branching.md
 
-[stdlib-packages]: https://github.com/stdlib-js/stdlib/blob/develop/docs/packages.md
+[stdlib-packages]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/packages.md
 
-[stdlib-repl-text]: https://github.com/stdlib-js/stdlib/blob/develop/docs/repl_text.md
+[stdlib-repl-text]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/repl_text.md
 
 [stdlib-faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
 

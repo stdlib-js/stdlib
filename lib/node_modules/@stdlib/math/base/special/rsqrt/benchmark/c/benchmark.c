@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -89,16 +89,19 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double x[ 100 ];
 	double elapsed;
-	double x;
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = 100000.0 * rand_double();
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = rand_double() * 100000.0;
-		y = 1.0 / sqrt( x );
+		y = 1.0 / sqrt( x[ i % 100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
