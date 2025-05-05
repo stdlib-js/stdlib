@@ -32,18 +32,18 @@
 * // returns ~0.693
 */
 double stdlib_base_log1pexp( const double x ) {
-    if ( stdlib_base_is_nan( x ) ) {
-        return 0.0 / 0.0; // NaN
-    }
-    if ( x <= -37.0 ) {
-        return stdlib_base_exp( x );
-    }
-    if ( x <= 18.0 ) {
-        return stdlib_base_log1p( stdlib_base_exp( x ) );
-    }
-    if ( x <= 33.3 ) {
-        return x + stdlib_base_exp( -x );
-    }
-    // Case: x > 33.3
-    return x;
+	if ( stdlib_base_is_nan( x ) ) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( x <= -37.0 ) {
+		return stdlib_base_exp( x );
+	}
+	if ( x <= 18.0 ) {
+		return stdlib_base_log1p( stdlib_base_exp( x ) );
+	}
+	if ( x <= 33.3 ) {
+		return x + stdlib_base_exp( -x );
+	}
+	// Case: x > 33.3
+	return x;
 }
