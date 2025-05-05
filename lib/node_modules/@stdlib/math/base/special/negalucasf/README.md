@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# negaLucas
+# negaLucasf
 
 > Compute the nth [negaLucas number][lucas-number] in single-precision floating-point format.
 

@@ -39,9 +39,9 @@
 * STDLIB_NDARRAY_NULLARY_1D_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_NULLARY_1D_LOOP_PREAMBLE                                \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
-	int64_t *shape = stdlib_ndarray_shape( x1 );                               \
-	int64_t *sx1 = stdlib_ndarray_strides( x1 );                               \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
+	const int64_t *shape = stdlib_ndarray_shape( x1 );                         \
+	const int64_t *sx1 = stdlib_ndarray_strides( x1 );                         \
 	uint8_t *px1 = stdlib_ndarray_data( x1 );                                  \
 	int64_t d0x1;                                                              \
 	int64_t S0;                                                                \
@@ -71,11 +71,11 @@
 * STDLIB_NDARRAY_NULLARY_1D_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_NULLARY_1D_LOOP_TWO_OUT_PREAMBLE                        \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
-	struct ndarray *x2 = arrays[ 1 ];                                          \
-	int64_t *shape = stdlib_ndarray_shape( x1 );                               \
-	int64_t *sx1 = stdlib_ndarray_strides( x1 );                               \
-	int64_t *sx2 = stdlib_ndarray_strides( x2 );                               \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
+	const struct ndarray *x2 = arrays[ 1 ];                                    \
+	const int64_t *shape = stdlib_ndarray_shape( x1 );                         \
+	const int64_t *sx1 = stdlib_ndarray_strides( x1 );                         \
+	const int64_t *sx2 = stdlib_ndarray_strides( x2 );                         \
 	uint8_t *px1 = stdlib_ndarray_data( x1 );                                  \
 	uint8_t *px2 = stdlib_ndarray_data( x2 );                                  \
 	int64_t d0x1;                                                              \
@@ -199,7 +199,7 @@
 * STDLIB_NDARRAY_NULLARY_1D_VIA_STRIDED( stdlib_strided_b )
 */
 #define STDLIB_NDARRAY_NULLARY_1D_VIA_STRIDED( strided_array_fcn )             \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
 	int64_t shape[] = {                                                        \
 		stdlib_ndarray_dimension( x1, 0 )                                      \
 	};                                                                         \
