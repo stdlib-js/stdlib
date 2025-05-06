@@ -108,16 +108,19 @@ double pdiff( double x, double y ) {
 static double benchmark( void ) {
 	double elapsed;
 	double t;
-	double x;
-	double y;
+	double x[ 100 ];
+	double y[ 100 ];
 	double z;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 1000.0*rand_double() ) - 500.0;
+		y[ i ] = ( 1000.0*rand_double() ) - 500.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 1000.0*rand_double() ) - 500.0;
-		y = ( 1000.0*rand_double() ) - 500.0;
-		z = pdiff( x, y );
+		z = pdiff( x[ i%100 ], y[ i%100 ] );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;

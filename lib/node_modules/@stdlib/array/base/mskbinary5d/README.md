@@ -41,7 +41,7 @@ var mskbinary5d = require( '@stdlib/array/base/mskbinary5d' );
 Applies a binary callback to elements in two five-dimensional nested input arrays according to elements in a five-dimensional nested mask array and assigns results to elements in a five-dimensional nested output array.
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var zeros5d = require( '@stdlib/array/base/zeros5d' );
 
 var x = [ [ [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ] ] ];
@@ -86,7 +86,7 @@ var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var bernoulli = require( '@stdlib/random/base/bernoulli' ).factory;
 var filled5dBy = require( '@stdlib/array/base/filled5d-by' );
 var zeros5d = require( '@stdlib/array/base/zeros5d' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var mskbinary5d = require( '@stdlib/array/base/mskbinary5d' );
 
 var shape = [ 1, 2, 1, 3, 3 ];

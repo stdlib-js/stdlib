@@ -91,15 +91,18 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	int32_t x;
+	int32_t x[ 100 ];
 	double t;
 	double y;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = (int32_t)floor( 40.0*rand_double() );
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = (int32_t)floor( 40.0*rand_double() );
-		y = stdlib_base_fibonacci( x );
+		y = stdlib_base_fibonacci( x[ i%100 ] );
 		if ( y < 0 ) {
 			printf( "should return a nonnegative integer\n" );
 			break;
