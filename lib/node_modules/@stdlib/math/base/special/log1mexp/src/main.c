@@ -37,17 +37,17 @@
 * // returns ~-0.00676
 */
 double stdlib_base_log1mexp( const double x ) {
-    double ax;
-    if ( stdlib_base_is_nan( x ) ) {
-        return 0.0 / 0.0; // NaN
-    }
-    if ( x == 0.0 ) {
-        return STDLIB_CONSTANT_FLOAT64_NINF;
-    }
-    ax = stdlib_base_abs( x );
-    if ( 0.0 < ax && ax <= STDLIB_CONSTANT_FLOAT64_LN2 ) {
-        return stdlib_base_ln( -stdlib_base_expm1( -ax ) );
-    }
-    // Case: |x| > ln(2)
-    return stdlib_base_log1p( -stdlib_base_exp( -ax ) );
+	double ax;
+	if ( stdlib_base_is_nan( x ) ) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( x == 0.0 ) {
+		return STDLIB_CONSTANT_FLOAT64_NINF;
+	}
+	ax = stdlib_base_abs( x );
+	if ( 0.0 < ax && ax <= STDLIB_CONSTANT_FLOAT64_LN2 ) {
+		return stdlib_base_ln( -stdlib_base_expm1( -ax ) );
+	}
+	// Case: |x| > ln(2)
+	return stdlib_base_log1p( -stdlib_base_exp( -ax ) );
 }

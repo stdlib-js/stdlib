@@ -20,12 +20,12 @@
 #include <stdio.h>
 
 int main( void ) {
-    const float x[] = { -5.0f, -3.89f, -2.78f, -1.67f, -0.56f, 0.56f, 1.67f, 2.78f, 3.89f, 5.0f };
+	const float x[] = { -5.0f, -3.89f, -2.78f, -1.67f, -0.56f, 0.56f, 1.67f, 2.78f, 3.89f, 5.0f };
 
-    float v;
-    int i;
-    for ( i = 0; i < 1; i++ ) {
-        v = stdlib_base_roundf( x[ i ] );
-        printf( "roundf(%f) = %f\n", x[ i ], v );
-    }
+	float v;
+	int i;
+	for ( i = 0; i < 1; i++ ) {
+		v = stdlib_base_roundf( x[ i ] );
+		printf( "roundf(%f) = %f\n", x[ i ], v );
+	}
 }

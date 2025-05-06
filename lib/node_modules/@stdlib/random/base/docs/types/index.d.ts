@@ -1017,8 +1017,8 @@ interface Namespace {
 	* -   If `k <= 0` or `lambda <= 0`, the function returns `NaN`.
 	* -   If `k` or `lambda` is `NaN`, the function returns `NaN`.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns pseudorandom number
 	*
 	* @example

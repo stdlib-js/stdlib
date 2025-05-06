@@ -82,15 +82,16 @@ v = sinc( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var sinc = require( '@stdlib/math/base/special/sinc' );
 
-var x = linspace( -5.0, 5.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -5.0, 5.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( sinc( x[ i ] ) );
-}
+logEachMap( 'sinc( %0.4f ) = %0.4f', x, sinc );
 ```
 
 </section>
