@@ -30,5 +30,5 @@
 * // returns ~0.5493
 */
 double stdlib_base_acoth( const double x ) {
-    return stdlib_base_atanh( 1.0 / x );
+	return stdlib_base_atanh( 1.0 / x );
 }
