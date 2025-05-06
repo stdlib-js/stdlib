@@ -26,10 +26,10 @@ static double random_uniform( const double min, const double max ) {
 }
 
 int main( void ) {
-    double sigma;
+	double sigma;
 	double mu;
-    double y;
-    int i;
+	double y;
+	int i;
 
 	for ( i = 0; i < 10; i++ ) {
 		mu = random_uniform( -5.0, 5.0 );
