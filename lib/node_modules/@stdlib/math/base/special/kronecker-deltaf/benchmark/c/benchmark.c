@@ -88,7 +88,7 @@ static float rand_float( void ) {
 *
 * @param i   input value
 * @param j   input value
-* @return function result
+* @return    function result
 */
 float kronecker_deltaf( float i, float j ) {
 	if ( i == j ) {

@@ -39,7 +39,7 @@ F(x;r,p)=1-I_p(x+1,r)
 
 <!-- </equation> -->
 
-where `r` is the number of successes until experiment is stopped, `p` is the success probability in each trial and `I` is the [lower regularized incomplete beta function][incomplete-beta]. The random variable `X` denotes the number of failures until the `r` success is reached. 
+where `r` is the number of successes until experiment is stopped, `p` is the success probability in each trial and `I` is the [lower regularized incomplete beta function][incomplete-beta]. The random variable `X` denotes the number of failures until the `r` success is reached.
 
 </section>
 
@@ -116,7 +116,7 @@ y = cdf( 2.0, 20, 1.5 );
 
 #### cdf.factory( r, p )
 
-Returns a function for evaluating the [cumulative distribution function][cdf] of  a [negative binomial][negative-binomial-distribution] distribution with number of successes until experiment is stopped `r` and success probability `p`.
+Returns a function for evaluating the [cumulative distribution function][cdf] of a [negative binomial][negative-binomial-distribution] distribution with number of successes until experiment is stopped `r` and success probability `p`.
 
 ```javascript
 var mycdf = cdf.factory( 10, 0.5 );

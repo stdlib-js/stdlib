@@ -35,5 +35,5 @@
 * // returns false
 */
 bool stdlib_base_is_probability( const double x ) {
-    return ( x >= 0.0 && x <= 1.0 );
+	return ( x >= 0.0 && x <= 1.0 );
 }
