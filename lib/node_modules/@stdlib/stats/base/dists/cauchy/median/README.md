@@ -108,21 +108,18 @@ v = median( 1.0, 0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var median = require( '@stdlib/stats/base/dists/cauchy/median' );
 
-var gamma;
-var x0;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var gamma = uniform( 10, EPS, 10.0, opts );
+var x0 = uniform( 10, 0.0, 100.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x0 = randu() * 100.0;
-    gamma = ( randu()*10.0 ) + EPS;
-    v = median( x0, gamma );
-    console.log( 'x0: %d, γ: %d, Median(X;x0,γ): %d', x0.toFixed( 4 ), gamma.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'x0: %0.4f, γ: %0.4f, Median(X;x0,γ): %0.4f', x0, gamma, median );
 ```
 
 </section>

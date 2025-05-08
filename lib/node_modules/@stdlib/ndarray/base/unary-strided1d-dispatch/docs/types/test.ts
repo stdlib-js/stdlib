@@ -41,8 +41,11 @@ import UnaryStrided1dDispatch = require( './index' );
 
 	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, policies ); // $ExpectType UnaryStrided1dDispatch<number, number>
 
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, policies, {} ); // $ExpectType UnaryStrided1dDispatch<number, number>
+
 	const unary = UnaryStrided1dDispatch;
 	unary<number, number>( table, [ dtypes ], dtypes, policies ); // $ExpectType UnaryStrided1dDispatch<number, number>
+	unary<number, number>( table, [ dtypes ], dtypes, policies, {} ); // $ExpectType UnaryStrided1dDispatch<number, number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a dispatch table...
@@ -64,6 +67,17 @@ import UnaryStrided1dDispatch = require( './index' );
 	new UnaryStrided1dDispatch( {}, [ dtypes ], dtypes, policies ); // $ExpectError
 	new UnaryStrided1dDispatch( ( x: number, y: number ): number => x + y, [ dtypes ], dtypes, policies ); // $ExpectError
 
+	new UnaryStrided1dDispatch( '5', [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch( 5, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch( true, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch( false, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch( null, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch( void 0, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch( 'abc', [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch( [], [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch( {}, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch( ( x: number, y: number ): number => x + y, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+
 	const unary = UnaryStrided1dDispatch;
 	unary( '5', [ dtypes ], dtypes, policies ); // $ExpectError
 	unary( 5, [ dtypes ], dtypes, policies ); // $ExpectError
@@ -75,6 +89,17 @@ import UnaryStrided1dDispatch = require( './index' );
 	unary( [], [ dtypes ], dtypes, policies ); // $ExpectError
 	unary( {}, [ dtypes ], dtypes, policies ); // $ExpectError
 	unary( ( x: number, y: number ): number => x + y, [ dtypes ], dtypes, policies ); // $ExpectError
+
+	unary( '5', [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	unary( 5, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	unary( true, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	unary( false, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	unary( null, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	unary( void 0, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	unary( 'abc', [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	unary( [], [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	unary( {}, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	unary( ( x: number, y: number ): number => x + y, [ dtypes ], dtypes, policies, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a a list of data type lists...
@@ -98,6 +123,16 @@ import UnaryStrided1dDispatch = require( './index' );
 	new UnaryStrided1dDispatch<number, number>( table, {}, dtypes, policies ); // $ExpectError
 	new UnaryStrided1dDispatch<number, number>( table, ( x: number ): number => x, dtypes, policies ); // $ExpectError
 
+	new UnaryStrided1dDispatch<number, number>( table, '5', dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, 5, dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, true, dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, false, dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, null, dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, void 0, dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, 'abc', dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, {}, dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, ( x: number ): number => x, dtypes, policies, {} ); // $ExpectError
+
 	const unary = UnaryStrided1dDispatch;
 	unary<number, number>( table, '5', dtypes, policies ); // $ExpectError
 	unary<number, number>( table, 5, dtypes, policies ); // $ExpectError
@@ -108,6 +143,16 @@ import UnaryStrided1dDispatch = require( './index' );
 	unary<number, number>( table, 'abc', dtypes, policies ); // $ExpectError
 	unary<number, number>( table, {}, dtypes, policies ); // $ExpectError
 	unary<number, number>( table, ( x: number ): number => x, dtypes, policies ); // $ExpectError
+
+	unary<number, number>( table, '5', dtypes, policies, {} ); // $ExpectError
+	unary<number, number>( table, 5, dtypes, policies, {} ); // $ExpectError
+	unary<number, number>( table, true, dtypes, policies, {} ); // $ExpectError
+	unary<number, number>( table, false, dtypes, policies, {} ); // $ExpectError
+	unary<number, number>( table, null, dtypes, policies, {} ); // $ExpectError
+	unary<number, number>( table, void 0, dtypes, policies, {} ); // $ExpectError
+	unary<number, number>( table, 'abc', dtypes, policies, {} ); // $ExpectError
+	unary<number, number>( table, {}, dtypes, policies, {} ); // $ExpectError
+	unary<number, number>( table, ( x: number ): number => x, dtypes, policies, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a list of data types...
@@ -131,6 +176,16 @@ import UnaryStrided1dDispatch = require( './index' );
 	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], {}, policies ); // $ExpectError
 	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], ( x: number ): number => x, policies ); // $ExpectError
 
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], '5', policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], 5, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], true, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], false, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], null, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], void 0, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], 'abc', policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], {}, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], ( x: number ): number => x, policies, {} ); // $ExpectError
+
 	const unary = UnaryStrided1dDispatch;
 	unary<number, number>( table, [ dtypes ], '5', policies ); // $ExpectError
 	unary<number, number>( table, [ dtypes ], 5, policies ); // $ExpectError
@@ -141,6 +196,16 @@ import UnaryStrided1dDispatch = require( './index' );
 	unary<number, number>( table, [ dtypes ], 'abc', policies ); // $ExpectError
 	unary<number, number>( table, [ dtypes ], {}, policies ); // $ExpectError
 	unary<number, number>( table, [ dtypes ], ( x: number ): number => x, policies ); // $ExpectError
+
+	unary<number, number>( table, [ dtypes ], '5', policies, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], 5, policies, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], true, policies, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], false, policies, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], null, policies, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], void 0, policies, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], 'abc', policies, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], {}, policies, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], ( x: number ): number => x, policies, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not valid policy object...
@@ -160,6 +225,16 @@ import UnaryStrided1dDispatch = require( './index' );
 	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, {} ); // $ExpectError
 	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, ( x: number ): number => x ); // $ExpectError
 
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, '5', {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, 5, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, true, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, false, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, null, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, void 0, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, 'abc', {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, {}, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, ( x: number ): number => x, {} ); // $ExpectError
+
 	const unary = UnaryStrided1dDispatch;
 	unary<number, number>( table, [ dtypes ], dtypes, '5' ); // $ExpectError
 	unary<number, number>( table, [ dtypes ], dtypes, 5 ); // $ExpectError
@@ -170,6 +245,45 @@ import UnaryStrided1dDispatch = require( './index' );
 	unary<number, number>( table, [ dtypes ], dtypes, 'abc' ); // $ExpectError
 	unary<number, number>( table, [ dtypes ], dtypes, {} ); // $ExpectError
 	unary<number, number>( table, [ dtypes ], dtypes, ( x: number ): number => x ); // $ExpectError
+
+	unary<number, number>( table, [ dtypes ], dtypes, '5', {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, 5, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, true, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, false, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, null, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, void 0, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, 'abc', {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, {}, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, ( x: number ): number => x, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a fifth argument which is an object...
+{
+	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
+	const table = {
+		'default': cumax
+	};
+	const policies = {
+		'output': 'same' as OutputPolicy,
+		'casting': 'none' as InputCastingPolicy
+	};
+
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, policies, '5' ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, policies, 5 ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, policies, true ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, policies, false ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, policies, null ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, policies, 'abc' ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, policies, ( x: number ): number => x ); // $ExpectError
+
+	const unary = UnaryStrided1dDispatch;
+	unary<number, number>( table, [ dtypes ], dtypes, policies, '5' ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, policies, 5 ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, policies, true ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, policies, false ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, policies, null ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, policies, 'abc' ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, policies, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -186,13 +300,13 @@ import UnaryStrided1dDispatch = require( './index' );
 	new UnaryStrided1dDispatch(); // $ExpectError
 	new UnaryStrided1dDispatch<number, number>( table ); // $ExpectError
 	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ] ); // $ExpectError
-	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	new UnaryStrided1dDispatch<number, number>( table, [ dtypes ], dtypes, policies, {}, {} ); // $ExpectError
 
 	const unary = UnaryStrided1dDispatch;
 	unary(); // $ExpectError
 	unary<number, number>( table ); // $ExpectError
 	unary<number, number>( table, [ dtypes ] ); // $ExpectError
-	unary<number, number>( table, [ dtypes ], dtypes, policies, {} ); // $ExpectError
+	unary<number, number>( table, [ dtypes ], dtypes, policies, {}, {} ); // $ExpectError
 }
 
 // The function returns an instance having an `apply` method which returns an ndarray...

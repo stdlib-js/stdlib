@@ -54,6 +54,16 @@ interface Options extends BaseOptions {
 }
 
 /**
+* Interface defining constructor options.
+*/
+interface ConstructorOptions {
+	/**
+	* Boolean specifying whether the order of element traversal must match the memory layout of an input ndarray.
+	*/
+	strictTraversalOrder?: boolean;
+}
+
+/**
 * Strided function.
 *
 * @param arrays - input ndarrays
@@ -122,6 +132,7 @@ declare class UnaryStrided1dDispatch<T, U> {
 	* @param idtypes - list containing lists of supported input data types for each ndarray argument
 	* @param odtypes - list of supported output data types
 	* @param policies - dispatch policies
+	* @param options - function options
 	* @returns instance
 	*
 	* @example
@@ -151,7 +162,7 @@ declare class UnaryStrided1dDispatch<T, U> {
 	* var arr = ndarray2array( y );
 	* // returns [ -1.0, 2.0, 2.0 ]
 	*/
-	constructor( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies );
+	constructor( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies, options?: ConstructorOptions );
 
 	/**
 	* Applies a strided function to a provided input ndarray.
@@ -287,6 +298,7 @@ interface UnaryStrided1dDispatchConstructor {
 	* @param idtypes - list containing lists of supported input data types for each ndarray argument
 	* @param odtypes - list of supported output data types
 	* @param policies - dispatch policies
+	* @param options - function options
 	* @returns instance
 	*
 	* @example
@@ -316,7 +328,7 @@ interface UnaryStrided1dDispatchConstructor {
 	* var arr = ndarray2array( y );
 	* // returns [ -1.0, 2.0, 2.0 ]
 	*/
-	new<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): UnaryStrided1dDispatch<T, U>;
+	new<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies, options?: ConstructorOptions ): UnaryStrided1dDispatch<T, U>;
 
 	/**
 	* Constructor for applying a strided function to an input ndarray.
@@ -325,6 +337,7 @@ interface UnaryStrided1dDispatchConstructor {
 	* @param idtypes - list containing lists of supported input data types for each ndarray argument
 	* @param odtypes - list of supported output data types
 	* @param policies - dispatch policies
+	* @param options - function options
 	* @returns instance
 	*
 	* @example
@@ -354,7 +367,7 @@ interface UnaryStrided1dDispatchConstructor {
 	* var arr = ndarray2array( y );
 	* // returns [ -1.0, 2.0, 2.0 ]
 	*/
-	<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): UnaryStrided1dDispatch<T, U>;
+	<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies, options?: ConstructorOptions ): UnaryStrided1dDispatch<T, U>;
 }
 
 /**
@@ -364,6 +377,7 @@ interface UnaryStrided1dDispatchConstructor {
 * @param idtypes - list containing lists of supported input data types for each ndarray argument
 * @param odtypes - list of supported output data types
 * @param policies - dispatch policies
+* @param options - function options
 * @returns instance
 *
 * @example
