@@ -139,11 +139,6 @@ jobs:
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
 
-      # Install c8
-      - name: Install c8
-        run: npm install c8
-        timeout-minutes: 5
-
       # Initialize development environment:
       - name: 'Initialize development environment'
         run: |
