@@ -26,9 +26,9 @@
 * @param N        number of indexed elements
 * @param sum      initial sum
 * @param X        input array
-* @param strideX  X stride length
+* @param strideX  stride length for X
 * @param Y        output array
-* @param strideY  Y stride length
+* @param strideY  stride length for Y
 */
 void API_SUFFIX(stdlib_strided_dcusumors)( const CBLAS_INT N, double sum, const double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY ) {
 	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
@@ -42,11 +42,11 @@ void API_SUFFIX(stdlib_strided_dcusumors)( const CBLAS_INT N, double sum, const 
 * @param N        number of indexed elements
 * @param sum      initial sum
 * @param X        input array
-* @param strideX  X index increment
-* @param offsetX  X starting index
+* @param strideX  stride length for X
+* @param offsetX  starting index for X
 * @param Y        output array
-* @param strideY  Y index increment
-* @param offsetY  Y starting index
+* @param strideY  stride length for Y
+* @param offsetY  stating index for Y
 */
 void API_SUFFIX(stdlib_strided_dcusumors_ndarray)( const CBLAS_INT N, double sum, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
 	CBLAS_INT ix;

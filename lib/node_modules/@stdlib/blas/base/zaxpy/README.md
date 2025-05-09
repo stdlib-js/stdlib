@@ -37,23 +37,13 @@ Scales values from `zx` by `za` and adds the result to `zy`.
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var zy = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 var za = new Complex128( 2.0, 2.0 );
 
 zaxpy( 3, za, zx, 1, zy, 1 );
-
-var z = zy.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns -1.0
-
-var im = imag( z );
-// returns 7.0
+// zy => <Complex128Array>[ -1.0, 7.0, -1.0, 15.0, -1.0, 23.0 ]
 ```
 
 The function has the following parameters:
@@ -70,23 +60,13 @@ The `N` and stride parameters determine how values from `zx` are scaled by `za` 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var zy = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 var za = new Complex128( 2.0, 2.0 );
 
 zaxpy( 2, za, zx, 2, zy, 2 );
-
-var z = zy.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns -1.0
-
-var im = imag( z );
-// returns 7.0
+// zy => <Complex128Array>[ -1.0, 7.0, 1.0, 1.0, -1.0, 23.0, 1.0, 1.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -96,8 +76,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 // Initial arrays...
 var zx0 = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -112,15 +90,7 @@ var zy1 = new Complex128Array( zy0.buffer, zy0.BYTES_PER_ELEMENT*2 ); // start a
 
 // Scales values of `zx0` by `za` starting from second index and add the result to `zy0` starting from third index...
 zaxpy( 2, za, zx1, 1, zy1, 1 );
-
-var z = zy0.get( 2 );
-// returns <Complex128>
-
-var re = real( z );
-// returns -1.0
-
-var im = imag( z );
-// returns 15.0
+// zy0 => <Complex128Array>[ 1.0, 1.0, 1.0, 1.0, -1.0, 15.0, -1.0, 23.0 ]
 ```
 
 #### zaxpy.ndarray( N, za, zx, strideX, offsetX, zy, strideY, offsetY )
@@ -130,23 +100,13 @@ Scales values from `zx` by `za` and adds the result to `zy` using alternative in
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var zy = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 var za = new Complex128( 2.0, 2.0 );
 
 zaxpy.ndarray( 3, za, zx, 1, 0, zy, 1, 0 );
-
-var z = zy.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns -1.0
-
-var im = imag( z );
-// returns 7.0
+// zy => <Complex128Array>[ -1.0, 7.0, -1.0, 15.0, -1.0, 23.0 ]
 ```
 
 The function has the following additional parameters:
@@ -159,23 +119,13 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var zy = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 var za = new Complex128( 2.0, 2.0 );
 
 zaxpy.ndarray( 3, za, zx, 1, 1, zy, 1, 1 );
-
-var z = zy.get( 3 );
-// returns <Complex128>
-
-var re = real( z );
-// returns -1.0
-
-var im = imag( z );
-// returns 31.0
+// zy => <Complex128Array>[ 1.0, 1.0, -1.0, 15.0, -1.0, 23.0, -1.0, 31.0 ]
 ```
 
 </section>
