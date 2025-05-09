@@ -239,7 +239,7 @@ var o = foo();
 
 #### Deep Approximate Equality
 
-Asserting approximately equality is extended to complex data structures. For example,
+Asserting approximate equality is extended to complex data structures. For example,
 
 <!-- run-disable -->
 
@@ -504,7 +504,7 @@ indicates that `foo()` returns a JavaScript `object` having the properties `a` a
 
 -   Write doctests with care. Avoid the extravagant. Prefer simple test cases.
 -   Avoid obscure test cases, as these typically make for bad documentation.
--   Doctests complement, but are **not** a substitute for, unit testing. While both doctests and unit tests aid in regression testing, one of the principle strengths of doctests is the ability to interleave (in a more natural manner) code and explanatory text. Doctests are **not** the place to exhaustively test, especially with little explanation, complex edge cases involving significant preceding code. As a general rule, use doctests to convey essential aspects as simply and concisely as possible in a literate manner. Use unit tests to thoroughly and exhaustively explore and probe API contracts and expected behavior.
+-   Doctests complement, but are **not** a substitute for, unit testing. While both doctests and unit tests aid in regression testing, one of the principal strengths of doctests is the ability to interleave (in a more natural manner) code and explanatory text. Doctests are **not** the place to exhaustively test, especially with little explanation, complex edge cases involving significant preceding code. As a general rule, use doctests to convey essential aspects as simply and concisely as possible in a literate manner. Use unit tests to thoroughly and exhaustively explore and probe API contracts and expected behavior.
 -   Writing effective doctests is an _art_ in knowing when, how much, and (precisely) what you want to convey to the reader. The more you write and use doctests, the better your intuition will be in recognizing what is truly essential and how each essential aspect should be conveyed.
 
 * * *
