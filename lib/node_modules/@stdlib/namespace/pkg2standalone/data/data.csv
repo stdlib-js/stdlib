@@ -1616,7 +1616,7 @@
 "@stdlib/utils/async/every-by","@stdlib/utils-async-every-by"
 "@stdlib/utils/every-by-right","@stdlib/utils-every-by-right"
 "@stdlib/utils/async/every-by-right","@stdlib/utils-async-every-by-right"
-"@stdlib/utils/every-in-by","@stdlib/utils-every-in-by"
+"@stdlib/object/every-in-by","@stdlib/object-every-in-by"
 "@stdlib/utils/every-own-by","@stdlib/utils-every-own-by"
 "@stdlib/utils/eval","@stdlib/utils-eval"
 "@stdlib/process/exec-path","@stdlib/process-exec-path"
