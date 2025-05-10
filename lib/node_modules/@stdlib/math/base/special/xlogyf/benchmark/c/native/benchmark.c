@@ -91,20 +91,20 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	float out;
 	double t;
 	float x[ 100 ];
 	float y[ 100 ];
+	float out;
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		x[ i ] = ( 100.0f * rand_float() );
-		y[ i ] = ( 5.0f * rand_float() );
+		x[ i ] = 100.0f * rand_float();
+		y[ i ] = 5.0f * rand_float();
 	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		out = stdlib_base_xlogyf( x[ i % 100 ], y[ i % 100 ] );
+		out = stdlib_base_xlogyf( x[ i%100 ], y[ i%100 ] );
 		if ( out != out ) {
 			printf( "should not return NaN\n" );
 			break;
