@@ -44,7 +44,7 @@ type Binary<T, U, V> = ( v1: T, v2: U ) => V;
 * @param fcn - binary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var onesnd = require( '@stdlib/array/base/onesnd' );
 * var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
@@ -73,7 +73,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var onesnd = require( '@stdlib/array/base/onesnd' );
 * var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
@@ -102,7 +102,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var onesnd = require( '@stdlib/array/base/onesnd' );
 * var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
@@ -131,7 +131,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var onesnd = require( '@stdlib/array/base/onesnd' );
 * var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
@@ -160,7 +160,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var onesnd = require( '@stdlib/array/base/onesnd' );
 * var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
@@ -189,7 +189,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var onesnd = require( '@stdlib/array/base/onesnd' );
 * var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
@@ -218,7 +218,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var onesnd = require( '@stdlib/array/base/onesnd' );
 * var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
@@ -247,7 +247,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var onesnd = require( '@stdlib/array/base/onesnd' );
 * var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
@@ -276,7 +276,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var onesnd = require( '@stdlib/array/base/onesnd' );
 * var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
@@ -305,7 +305,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var onesnd = require( '@stdlib/array/base/onesnd' );
 * var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
@@ -334,7 +334,7 @@ declare function binarynd<T = unknown, U = unknown, V = unknown>( arrays: [ Arra
 * @param fcn - binary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var onesnd = require( '@stdlib/array/base/onesnd' );
 * var zerosnd = require( '@stdlib/array/base/zerosnd' );
 *
