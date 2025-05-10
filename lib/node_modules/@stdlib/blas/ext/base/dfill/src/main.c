@@ -24,9 +24,9 @@
 * Fills a double-precision floating-point strided array with a specified scalar constant.
 *
 * @param N        number of indexed elements
-* @param alpha    scalar
+* @param alpha    scalar constant
 * @param X        input array
-* @param strideX  index increment
+* @param strideX  stride length
 */
 void API_SUFFIX(stdlib_strided_dfill)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
@@ -37,9 +37,9 @@ void API_SUFFIX(stdlib_strided_dfill)( const CBLAS_INT N, const double alpha, do
 * Fills a double-precision floating-point strided array with a specified scalar constant using alternative indexing semantics.
 *
 * @param N        number of indexed elements
-* @param alpha    scalar
+* @param alpha    scalar constant
 * @param X        input array
-* @param strideX  index increment
+* @param strideX  stride length
 * @param offsetX  starting index
 */
 void API_SUFFIX(stdlib_strided_dfill_ndarray)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
