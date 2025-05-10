@@ -33,7 +33,7 @@
 * Computes the nth non-Fibonacci number.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double y = stdlib_base_nonfibonacci( 2 );
