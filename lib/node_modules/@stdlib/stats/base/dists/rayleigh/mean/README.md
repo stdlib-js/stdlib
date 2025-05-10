@@ -198,7 +198,7 @@ int main( void ) {
     for ( i = 0; i < 25; i++ ) {
         sigma = random_uniform( 0.0, 20.0 );
         y = stdlib_base_dists_rayleigh_mean( sigma );
-        printf( "σ: %lf, Mean(X;σ): %lf\n", sigma, y );
+        printf( "σ: %lf, E(X;σ): %lf\n", sigma, y );
     }
 }
 ```

@@ -24,7 +24,7 @@
 *
 * @param x    input value
 * @param b    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_log( 100.0, 10.0 );

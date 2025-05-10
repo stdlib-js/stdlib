@@ -92,17 +92,20 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double x;
-	double y;
+	double x[ 100 ];
+	double y[ 100 ];
 	double v;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 200.0*rand_double() ) - 100.0;;
+		y[ i ] = ( 200.0*rand_double() ) - 100.0;;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 200.0*rand_double() ) - 100.0;
-		y = ( 200.0*rand_double() ) - 100.0;
-		v = stdlib_base_logaddexp( x, y );
+		v = stdlib_base_logaddexp( x[ i%100 ], y[ i%100 ] );
 		if ( v != v ) {
 			printf( "should not return NaN\n" );
 			break;

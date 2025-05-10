@@ -123,7 +123,7 @@ type ArrayReducer<T, U, V> = Nullary<U, V> | Unary<U, V> | Binary<T, U, V> | Ter
 *
 * @example
 * var naryFunction = require( '@stdlib/utils/nary-function' );
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var opts = {
