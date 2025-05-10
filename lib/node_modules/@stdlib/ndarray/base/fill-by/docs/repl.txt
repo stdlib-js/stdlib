@@ -1,0 +1,37 @@
+
+{{alias}}( x, fcn[, thisArg] )
+    Fills an input ndarray according to a callback function.
+
+    The function *mutates* the input ndarray.
+
+    Parameters
+    ----------
+    x: ndarrayLike
+        Input ndarray-like object.
+
+    fcn: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback function execution context.
+
+    Examples
+    --------
+    > var opts = { 'dtype': 'float64' };
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ], opts );
+    > x.get( 0, 0 )
+    0.0
+    > function fcn() { return 10.0; };
+    > {{alias}}( x, fcn );
+    > x.get( 0, 0 )
+    10.0
+    > x.get( 0, 1 )
+    10.0
+    > x.get( 1, 0 )
+    10.0
+    > x.get( 1, 1 )
+    10.0
+
+    See Also
+    --------
+
