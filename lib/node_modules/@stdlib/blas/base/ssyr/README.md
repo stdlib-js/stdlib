@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2024 The Stdlib Authors.
+Copyright (c) 2025 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -183,21 +183,65 @@ console.log( A );
 ### Usage
 
 ```c
-TODO
+#include "stdlib/blas/base/ssyr.h"
 ```
 
-#### TODO
+#### c_ssyr( order, uplo, N, alpha, \*X, strideX, \*A, LDA )
 
-TODO.
+Performs the symmetric rank 1 operation `A = α*x*x^T + A`.
 
 ```c
-TODO
+#include "stdlib/blas/base/shared.h"
+
+float A[] = { 1.0f, 0.0f, 0.0f, 2.0f, 1.0f, 0.0f, 3.0f, 2.0f, 1.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f };
+
+c_ssyr( CblasColMajor, CblasUpper, 3, 1.0f, x, 1, A, 3 );
 ```
 
-TODO
+The function accepts the following arguments:
+
+-   **order**: `[in] CBLAS_LAYOUT` storage layout.
+-   **uplo**: `[in] CBLAS_UPLO` specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced.
+-   **N**: `[in] CBLAS_INT` number of elements along each dimension of `A`.
+-   **alpha**: `[in] float` scalar.
+-   **X**: `[in] float*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **A**: `[inout] float*` input matrix.
+-   **LDA**: `[in] CBLAS_INT` stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
 
 ```c
-TODO
+void c_ssyr( const CBLAS_LAYOUT order, const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, float *A, const CBLAS_INT LDA )
+```
+
+#### c_ssyr_ndarray( uplo, N, alpha, \*X, strideX, offsetX, \*A, sa1, sa2, oa )
+
+Performs the symmetric rank 1 operation `A = α*x*x^T + A` using alternative indexing semantics.
+
+```c
+#include "stdlib/blas/base/shared.h"
+
+float A[] = { 1.0f, 2.0f, 3.0f, 0.0f, 1.0f, 2.0f, 0.0f, 0.0f, 1.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f };
+
+c_ssyr_ndarray( CblasUpper, 3, 1.0f, x, 1, 0, A, 3, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **uplo**: `[in] CBLAS_UPLO` specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced.
+-   **N**: `[in] CBLAS_INT` number of elements along each dimension of `A`.
+-   **alpha**: `[in] float` scalar.
+-   **X**: `[in] float*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **A**: `[inout] float*` input matrix.
+-   **sa1**: `[in] CBLAS_INT` stride of the first dimension of `A`.
+-   **sa2**: `[in] CBLAS_INT` stride of the second dimension of `A`.
+-   **oa**: `[in] CBLAS_INT` starting index for `A`.
+
+```c
+void c_ssyr_ndarray( const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *A, const CBLAS_INT sa1, const CBLAS_INT sa2, const CBLAS_INT oa )
 ```
 
 </section>
@@ -219,7 +263,34 @@ TODO
 ### Examples
 
 ```c
-TODO
+#include "stdlib/blas/base/ssyr.h"
+#include "stdlib/blas/base/shared.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided arrays:
+    float A[] = { 1.0f, 0.0f, 0.0f, 2.0f, 1.0f, 0.0f, 3.0f, 2.0f, 1.0f };
+    const float x[] = { 1.0f, 2.0f, 3.0f };
+
+    // Specify the number of elements along each dimension of `A`:
+    const int N = 3;
+
+    // Perform the symmetric rank 1 operation `A = α*x*x^T + A`:
+    c_ssyr( CblasColMajor, CblasUpper, N, 1.0f, x, 1, A, N );
+
+    // Print the result:
+    for ( int i = 0; i < N*N; i++ ) {
+        printf( "A[ %i ] = %f\n", i, A[ i ] );
+    }
+
+    // Perform the symmetric rank 1 operation `A = α*x*x^T + A`:
+    c_ssyr_ndarray( CblasUpper, N, 1.0f, x, 1, 0, A, N, 1, 0 );
+
+    // Print the result:
+    for ( int i = 0; i < N*N; i++ ) {
+        printf( "A[ %i ] = %f\n", i, A[ i ] );
+    }
+}
 ```
 
 </section>

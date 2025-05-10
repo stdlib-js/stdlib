@@ -66,15 +66,16 @@ var v = sqrtpif( -4.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/array/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var sqrtpif = require( '@stdlib/math/base/special/sqrtpif' );
 
-var x = randu( 100, 0.0, 100.0 );
+var opts = {
+    'dtype': 'float32'
+};
+var x = discreteUniform( 100, 0, 100, opts );
 
-var i;
-for ( i = 0; i < 100; i++ ) {
-    console.log( 'sqrtpif(%d) = %d', x[ i ], sqrtpif( x[ i ] ) );
-}
+logEachMap( 'sqrtpif(%d) = %0.4f', x, sqrtpif );
 ```
 
 </section>

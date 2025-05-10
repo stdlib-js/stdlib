@@ -18,12 +18,12 @@
 
 #include "stdlib/math/base/special/cinv.h"
 #include "stdlib/math/base/special/abs.h"
+#include "stdlib/math/base/special/max.h"
 #include "stdlib/constants/float64/max.h"
 #include "stdlib/constants/float64/eps.h"
 #include "stdlib/constants/float64/smallest_normal.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/reim.h"
-#include <math.h>
 
 
 // VARIABLES //
@@ -70,8 +70,7 @@ stdlib_complex128_t stdlib_base_cinv( const stdlib_complex128_t z ) {
 
 	stdlib_complex128_reim( z, &re, &im );
 
-	// TODO: replace `fmax` with stdlib max implementation once available
-	ab = fmax( stdlib_base_abs( re ), stdlib_base_abs( im ) );
+	ab = stdlib_base_max( stdlib_base_abs( re ), stdlib_base_abs( im ) );
 	s = 1.0;
 	if ( ab >= LARGE_THRESHOLD ) {
 		re *= 0.5;
