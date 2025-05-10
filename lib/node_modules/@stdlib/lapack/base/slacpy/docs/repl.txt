@@ -42,10 +42,10 @@
 
     Examples
     --------
-    > var A = new {{alias:@stdlib/array/float32}}( [ 1.0, 3.0, 0.0, 4.0 ] );
-    > var B = new {{alias:@stdlib/array/float32}}( [ 5.0, 7.0, 0.0, 8.0 ] );
+    > var A = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var B = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0, 0.0 ] );
     > {{alias}}( 'row-major', 'all', 2, 2, A, 2, B, 2 )
-    <Float32Array>[ 1.0, 3.0, 0.0, 4.0 ]
+    <Float32Array>[ 1.0, 2.0, 3.0, 4.0 ]
 
 
 {{alias}}.ndarray( uplo, M, N, A, sa1, sa2, oa, B, sb1, sb2, ob )
@@ -99,10 +99,10 @@
 
     Examples
     --------
-    > var A = new {{alias:@stdlib/array/float32}}( [ 0.0, 1.0, 3.0, 0.0, 4.0 ] );
-    > var B = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 5.0, 7.0, 0.0, 8.0 ] );
+    > var A = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > var B = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
     > {{alias}}.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 )
-    <Float32Array>[ 0.0, 0.0, 1.0, 3.0, 0.0, 4.0 ]
+    <Float32Array>[ 0.0, 0.0, 2.0, 3.0, 4.0, 5.0 ]
 
     See Also
     --------

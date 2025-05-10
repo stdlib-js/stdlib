@@ -72,7 +72,7 @@ static const double MOREBITS = 6.123233995736765886130e-17; // pi/2 = PIO2 + MOR
 *     | IEEE       | -1, 1  | 10^6     | 2.2e-16 | 6.5e-17 |
 *
 * @param x    input value ( in radians )
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_acos( 0.0 );
