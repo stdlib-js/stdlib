@@ -1,0 +1,91 @@
+{
+  "options": {
+    "task": "build",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/ternary",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/math/base/special/sinpi",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/constants/float64/ninf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/math/base/special/sinpi",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/constants/float64/ninf"
+      ]
+    },
+    {
+      "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/math/base/special/sinpi",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/constants/float64/ninf"
+      ]
+    }
+  ]
+}
