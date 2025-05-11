@@ -66,16 +66,17 @@ v = csc( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
-var PI = require( '@stdlib/constants/float64/pi' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var TWO_PI = require( '@stdlib/constants/float64/two-pi' );
 var csc = require( '@stdlib/math/base/special/csc' );
 
-var x = linspace( -PI/2.0, PI/2.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -TWO_PI, TWO_PI, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( csc( x[ i ] ) );
-}
+logEachMap( 'csc(%0.4f) = %0.4f', x, csc );
 ```
 
 </section>

@@ -107,11 +107,11 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
-var A = new Float64Array( [ 0.0, 1.0, 2.0, 3.0, 4.0 ] );
-var B = new Float64Array( [ 0.0, 0.0, 11.0, 312.0, 53.0, 412.0 ] );
+var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+var B = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 dlacpy.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
-// B => <Float64Array>[ 0.0, 0.0, 1.0, 2.0, 3.0, 4.0 ]
+// B => <Float64Array>[ 0.0, 0.0, 2.0, 3.0, 4.0, 5.0 ]
 ```
 
 </section>

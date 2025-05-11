@@ -109,6 +109,7 @@ static double benchmark( int iterations, int len ) {
 
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
 		stdlib_strided_dmeanvarpn( len, 1, x, 1, out, 1 );
 		if ( out[ i%2 ] != out[ i%2 ] ) {
 			printf( "should not return NaN\n" );
