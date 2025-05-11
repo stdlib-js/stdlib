@@ -36,31 +36,13 @@ Applies a plane rotation.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 csrot( cx.length, cx, 1, cy, 1, 0.8, 0.6 );
-
-var z = cy.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns ~-0.6
-
-var im = imagf( z );
-// returns ~-1.2
-
-z = cx.get( 0 );
-// returns <Complex64>
-
-re = realf( z );
-// returns ~0.8
-
-im = imagf( z );
-// returns ~1.6
+// cx => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4 ]
+// cy => <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8 ]
 ```
 
 The function has the following parameters:
@@ -75,31 +57,13 @@ The `N` and stride parameters determine how values from `cx` and `cy` are access
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 csrot( 2, cx, 2, cy, 2, 0.8, 0.6 );
-
-var z = cy.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns ~-0.6
-
-var im = imagf( z );
-// returns ~-1.2
-
-z = cx.get( 0 );
-// returns <Complex64>
-
-re = realf( z );
-// returns ~0.8
-
-im = imagf( z );
-// returns ~1.6
+// cx => <Complex64Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
+// cy => <Complex64Array>[ ~-0.6, ~-1.2,  0.0, 0.0, -3.0, ~-3.6,  0.0, 0.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -108,8 +72,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 // Initial arrays...
 var cx0 = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -120,24 +82,8 @@ var cx1 = new Complex64Array( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 ); // start at
 var cy1 = new Complex64Array( cy0.buffer, cy0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
 
 csrot( 2, cx1, -2, cy1, 1, 0.8, 0.6 );
-
-var z = cy0.get( 2 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns ~-4.2
-
-var im = imagf( z );
-// returns ~-4.8
-
-z = cx0.get( 3 );
-// returns <Complex64>
-
-re = realf( z );
-// returns ~5.6
-
-im = imagf( z );
-// returns ~6.4
+// cx0 => <Complex64Array>[ 1.0, 2.0, ~2.4, ~3.2, 5.0, 6.0, ~5.6, ~6.4 ]
+// cy0 => <Complex64Array>[ 0.0, 0.0,  0.0, 0.0, ~-4.2, ~-4.8, ~-1.8, ~-2.4 ]
 ```
 
 #### csrot.ndarray( N, cx, strideX, offsetX, cy, strideY, offsetY, c, s )
@@ -146,31 +92,13 @@ Applies a plane rotation using alternative indexing semantics.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 csrot.ndarray( cx.length, cx, 1, 0, cy, 1, 0, 0.8, 0.6 );
-
-var z = cy.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns ~-0.6
-
-var im = imagf( z );
-// returns ~-1.2
-
-z = cx.get( 0 );
-// returns <Complex64>
-
-re = realf( z );
-// returns ~0.8
-
-im = imagf( z );
-// returns ~1.6
+// cx => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8 ]
+// cy => <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6 ]
 ```
 
 The function has the following additional parameters:
@@ -182,31 +110,13 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 csrot.ndarray( 2, cx, 2, 1, cy, 2, 1, 0.8, 0.6 );
-
-var z = cy.get( 3 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns ~-4.2
-
-var im = imagf( z );
-// returns ~-4.8
-
-z = cx.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns ~2.4
-
-im = imagf( z );
-// returns ~3.2
+// cx => <Complex64Array>[ 1.0, 2.0, ~2.4, ~3.2, 5.0, 6.0, ~5.6, ~6.4 ]
+// cy => <Complex64Array>[ 0.0, 0.0, ~-1.8, ~-2.4, 0.0, 0.0, ~-4.2, ~-4.8 ]
 ```
 
 </section>

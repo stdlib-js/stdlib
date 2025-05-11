@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Evaluates the double factorial of `n`.
 */
-double stdlib_base_factorial2( const int32_t x );
+double stdlib_base_factorial2( const int32_t n );
 
 #ifdef __cplusplus
 }

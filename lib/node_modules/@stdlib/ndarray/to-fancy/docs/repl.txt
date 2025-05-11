@@ -15,9 +15,9 @@
     numeric literals and strings), Slice and MultiSlice instances, subsequence
     expressions, mask ndarrays, boolean ndarrays, and integer ndarrays.
 
-    A fancy array supports all properties and methods of the input array, and,
-    thus, a fancy array can be consumed by any API which supports array-like
-    objects.
+    A fancy ndarray supports all properties and methods of the input ndarray,
+    and, thus, a fancy ndarray can be consumed by any API which supports
+    ndarray-like objects.
 
     For operations returning a new ndarray (e.g., when slicing or invoking an
     instance method), a fancy ndarray returns a new fancy ndarray having the
@@ -72,6 +72,7 @@
 
         - data: the underlying index ndarray.
         - type: the index type. Must be either 'mask', 'bool', or 'int'.
+        - kind: the index kind. Must be either '', 'cartesian', or 'linear'.
         - dtype: the data type of the underlying ndarray.
 
         If an ndarray index is not associated with a provided identifier, the
@@ -137,6 +138,7 @@
 
         - data: the underlying index ndarray.
         - type: the index type. Must be either 'mask', 'bool', or 'int'.
+        - kind: the index kind. Must be either '', 'cartesian', or 'linear'.
         - dtype: the data type of the underlying ndarray.
 
         If an ndarray index is not associated with a provided identifier, the
@@ -182,6 +184,17 @@
     options.persist: boolean (optional)
         Boolean indicating whether to continue persisting an index object after
         first usage. Default: false.
+
+    options.kind: string (optional)
+        Specifies whether a provided ndarray is a specialized input ndarray
+        "kind". This option is only applicable for integer input ndarrays. Must
+        be one of the following:
+
+        - cartesian: a provided input ndarray contains Cartesian indices.
+        - linear: a provided input ndarray contains indices representing
+          locations in linear memory.
+
+        Default: ''.
 
     Returns
     -------
