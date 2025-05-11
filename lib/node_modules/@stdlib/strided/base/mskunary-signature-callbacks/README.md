@@ -48,7 +48,7 @@ Assigns callbacks to masked unary interfaces according to type [promotion rules]
 var signatures = require( '@stdlib/strided/base/mskunary-dtype-signatures' );
 var identity = require( '@stdlib/number/float64/base/identity' );
 var cidentity = require( '@stdlib/complex/float64/base/identity' );
-var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
+var cidentityf = require( '@stdlib/complex/float32/base/identity' );
 
 var dtypes = [
     'float64',
@@ -114,7 +114,7 @@ var dtypes = require( '@stdlib/strided/dtypes' );
 var signatures = require( '@stdlib/strided/base/mskunary-dtype-signatures' );
 var identity = require( '@stdlib/number/float64/base/identity' );
 var cidentity = require( '@stdlib/complex/float64/base/identity' );
-var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
+var cidentityf = require( '@stdlib/complex/float32/base/identity' );
 var callbacks = require( '@stdlib/strided/base/mskunary-signature-callbacks' );
 
 // Get the list of supported strided array data types:
