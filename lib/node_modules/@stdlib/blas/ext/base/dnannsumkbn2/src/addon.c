@@ -42,10 +42,9 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Out, 2, strideOut, argv, 3 );
 
 	int64_t io = stdlib_strided_stride2offset( 2, strideOut );
-	double *out = Out;
 	CBLAS_INT n;
-	out[ io ] = API_SUFFIX(stdlib_strided_dnannsumkbn2)( N, X, strideX, &n );
-	out[ io+strideOut ] = (double)n;
+	Out[ io ] = API_SUFFIX(stdlib_strided_dnannsumkbn2)( N, X, strideX, &n );
+	Out[ io+strideOut ] = (double)n;
 
 	return NULL;
 }
@@ -67,10 +66,9 @@ static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 1 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Out, 2, strideOut, argv, 4 );
 
-	double *out = Out;
 	CBLAS_INT n;
-	out[ offsetOut ] = API_SUFFIX(stdlib_strided_dnannsumkbn2_ndarray)( N, X, strideX, offsetX, &n );
-	out[ offsetOut+strideOut ] = (double)n;
+	Out[ offsetOut ] = API_SUFFIX(stdlib_strided_dnannsumkbn2_ndarray)( N, X, strideX, offsetX, &n );
+	Out[ offsetOut+strideOut ] = (double)n;
 
 	return NULL;
 }

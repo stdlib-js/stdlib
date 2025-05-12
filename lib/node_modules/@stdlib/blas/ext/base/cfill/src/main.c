@@ -27,7 +27,7 @@
 * @param N       number of indexed elements
 * @param alpha   scalar constant
 * @param X       input array
-* @param strideX  index increment
+* @param strideX  stride length
 */
 
 void API_SUFFIX(stdlib_strided_cfill)( const CBLAS_INT N, const stdlib_complex64_t alpha, stdlib_complex64_t *X, const CBLAS_INT strideX ) {
@@ -41,7 +41,7 @@ void API_SUFFIX(stdlib_strided_cfill)( const CBLAS_INT N, const stdlib_complex64
 * @param N        number of indexed elements
 * @param alpha    scalar
 * @param X        input array
-* @param strideX  index increment
+* @param strideX  stride length
 * @param offsetX  starting index
 */
 

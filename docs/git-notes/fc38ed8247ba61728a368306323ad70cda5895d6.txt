@@ -1,0 +1,11 @@
+---
+type: amend-message
+---
+feat: add `math/base/special/ahavercosf
+
+PR-URL: #3072
+Ref: #649
+
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: Philipp Burckhardt <pburckhardt@outlook.com>

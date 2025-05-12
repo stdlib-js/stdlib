@@ -36,6 +36,11 @@ extern "C" {
 */
 float API_SUFFIX(c_scnrm2)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX );
 
+/**
+* Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
+*/
+float API_SUFFIX(c_scnrm2_ndarray)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+
 #ifdef __cplusplus
 }
 #endif

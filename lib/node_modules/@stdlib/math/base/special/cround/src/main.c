@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/cround.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/reim.h"
-#include <math.h>
+#include "stdlib/math/base/special/round.h"
 
 /**
 * Rounds each component of a double-precision complex floating-point number to the nearest integer.
@@ -48,7 +48,7 @@ stdlib_complex128_t stdlib_base_cround( const stdlib_complex128_t z ) {
 
 	stdlib_complex128_reim( z, &re, &im );
 
-	re = round( re ); // TODO: replace with stdlib function once available
-	im = round( im ); // TODO: replace with stdlib function once available
+	re = stdlib_base_round( re );
+	im = stdlib_base_round( im );
 	return stdlib_complex128( re, im );
 }

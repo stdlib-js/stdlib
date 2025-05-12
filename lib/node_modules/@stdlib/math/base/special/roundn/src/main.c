@@ -116,7 +116,7 @@ double stdlib_base_roundn( const double x, const int32_t n ) {
 	double s;
 	double y;
 
-	if ( stdlib_base_is_nan( x ) ){
+	if ( stdlib_base_is_nan( x ) ) {
 		return 0.0 / 0.0; // NaN
 	}
 
@@ -136,21 +136,21 @@ double stdlib_base_roundn( const double x, const int32_t n ) {
 		return x;
 	}
 	// The maximum absolute double is ~1.8e308. Accordingly, any possible finite `x` rounded to the nearest >=10^309 is 0.0.
-	if ( n > STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ){
+	if ( n > STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ) {
 		return 0.0 * x; // preserve the sign (same behavior as round)
 	}
 	// If we overflow, return `x`, as the number of digits to the right of the decimal is too small (i.e., `x` is too large / lacks sufficient fractional precision) for there to be any effect when rounding...
-	if ( n < STDLIB_CONSTANT_FLOAT64_MIN_BASE10_EXPONENT ){
+	if ( n < STDLIB_CONSTANT_FLOAT64_MIN_BASE10_EXPONENT ) {
 		s = stdlib_base_pow( 10.0, -( n + STDLIB_CONSTANT_FLOAT64_MAX_BASE10_EXPONENT ) );
 		y = ( x * HUGE_VALUE ) * s; // order of operation matters!
-		if ( stdlib_base_is_infinite( y ) ){
+		if ( stdlib_base_is_infinite( y ) ) {
 			return x;
 		}
 		return ( stdlib_base_round( y ) / HUGE_VALUE ) / s;
 	}
 	s = stdlib_base_pow( 10.0, -n );
 	y = x * s;
-	if ( stdlib_base_is_infinite( y ) ){
+	if ( stdlib_base_is_infinite( y ) ) {
 		return x;
 	}
 	return stdlib_base_round( y ) / s;

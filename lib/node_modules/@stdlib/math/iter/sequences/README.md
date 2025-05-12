@@ -97,13 +97,9 @@ var squares = ns.iterSquaresSeq();
 var cubes = ns.iterCubesSeq();
 
 // Iterate over both sequences and log the first five pairs:
-var square;
-var cube;
 var i;
 for ( i = 0; i < 5; i++ ) {
-    square = squares.next().value;
-    cube = cubes.next().value;
-    console.log( 'Square: %d, Cube: %d', square, cube );
+    console.log( 'Square: %d, Cube: %d', squares.next().value, cubes.next().value );
 }
 
 // Calculate the sum of the first ten Fibonacci numbers:

@@ -29,7 +29,7 @@ extern "C" {
 /**
 * Evaluates the natural logarithm of the beta function.
 */
-double stdlib_base_betaln( const double x, const double y );
+double stdlib_base_betaln( const double a, const double b );
 
 #ifdef __cplusplus
 }

@@ -1,0 +1,13 @@
+
+{{alias}}
+    Maximum safe nth Tribonacci number when stored in double-precision
+    floating-point format.
+
+    Examples
+    --------
+    > {{alias}}
+    63
+
+    See Also
+    --------
+
