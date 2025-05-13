@@ -178,7 +178,6 @@ console.log( v );
 
 <!-- C usage documentation. -->
 
-
 <section class="usage">
 
 ### Usage

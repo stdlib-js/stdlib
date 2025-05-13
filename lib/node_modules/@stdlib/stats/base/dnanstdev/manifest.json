@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,17 +28,17 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
-        "./src/dnanstdev.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/stats/strided/dnanstdevpn",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
@@ -49,33 +50,49 @@
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
-        "./src/dnanstdev.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/stats/strided/dnanstdevpn"
       ]
     },
     {
       "task": "examples",
+      "wasm": false,
       "src": [
-        "./src/dnanstdev.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/stats/strided/dnanstdevpn"
+      ]
+    },
+    {
+      "task": "",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
         "@stdlib/stats/strided/dnanstdevpn"
       ]
     }

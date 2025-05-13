@@ -1130,3 +1130,6 @@
 "ID","invalid argument. Second argument must be either an ndarray or a numeric scalar value. Value: `%s`.","TypeError"
 "IE","invalid argument. Eleventh argument must be non-zero. Value: `%d`.","RangeError"
 "IF","invalid option. `%s` option must be a valid memory layout. Option: `%s`.","TypeError"
+"IG","invalid arguments. Arrays must have the same number of dimensions (i.e., same rank). ndims(x) == %d. ndims(y) == %d. ndims(z) == %d.","Error"
+"IH","invalid argument. Unable to resolve an output data type. The output data type policy is ""same"" and yet the input data types are not equal. Data types: [%s].","Error"
+"II","invalid argument. Unable to apply type promotion rules when resolving a data type to which the input data types can be safely cast. Data types: [%s].","Error"

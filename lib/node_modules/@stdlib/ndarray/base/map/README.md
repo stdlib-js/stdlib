@@ -96,7 +96,7 @@ The function accepts the following arguments:
 
 The callback function is provided the following arguments:
 
--   **values**: current array element.
+-   **value**: current array element.
 -   **indices**: current array element indices.
 -   **arr**: the input ndarray.
 
