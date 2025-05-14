@@ -150,6 +150,8 @@ Each provided ndarray should be an object with the following properties:
     -   **arrays**: array containing a one-dimensional subarray of the input ndarray, a one-dimensional subarray of the output ndarray, and any additional ndarray arguments as zero-dimensional ndarrays.
     -   **options**: function options (_optional_).
 
+-   The function iterates over ndarray elements according to the memory layout of the input ndarray.
+
 -   For very high-dimensional ndarrays which are non-contiguous, one should consider copying the underlying data to contiguous memory before performing a reduction in order to achieve better performance.
 
 </section>

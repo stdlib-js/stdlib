@@ -161,7 +161,7 @@ int main( void ) {
 
 -   <span class="package-name">[`@stdlib/math/base/special/acot`][@stdlib/math/base/special/acot]</span><span class="delimiter">: </span><span class="description">compute the inverse cotangent.</span>
 -   <span class="package-name">[`@stdlib/math/base/special/acoth`][@stdlib/math/base/special/acoth]</span><span class="delimiter">: </span><span class="description">compute the inverse hyperbolic cotangent.</span>
--   <span class="package-name">[`@stdlib/math/base/special/atand`][@stdlib/math/base/special/atand]</span><span class="delimiter">: </span><span class="description">compute the arctangent(in degrees) of a double-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/atand`][@stdlib/math/base/special/atand]</span><span class="delimiter">: </span><span class="description">compute the arctangent (in degrees) of a double-precision floating-point number.</span>
 -   <span class="package-name">[`@stdlib/math/base/special/cotd`][@stdlib/math/base/special/cotd]</span><span class="delimiter">: </span><span class="description">compute the cotangent of an angle measured in degrees.</span>
 
 </section>

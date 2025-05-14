@@ -33,10 +33,10 @@ Assert:
   has-sharedarraybuffer-support   Detect SharedArrayBuffer support.
   has-symbol-support              Detect Symbol support.
   has-tostringtag-support         Detect Symbol.toStringTag support.
-  has-uint16array-support         Detect Uit16Array support.
-  has-uint32array-support         Detect Uit32Array support.
-  has-uint8array-support          Detect Uit8Array support.
-  has-uint8clampedarray-support   Detect Uit8ClampedArray support.
+  has-uint16array-support         Detect Uint16Array support.
+  has-uint32array-support         Detect Uint32Array support.
+  has-uint8array-support          Detect Uint8Array support.
+  has-uint8clampedarray-support   Detect Uint8ClampedArray support.
   has-wasm-support                Detect WebAssembly support.
   has-weakmap-support             Detect WeakMap support.
   has-weakset-support             Detect WeakSet support.
