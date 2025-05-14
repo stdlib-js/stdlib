@@ -91,17 +91,20 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double b;
-	double x;
+	double b[ 100 ];
+	double x[ 100 ];
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		b[ i ] = rand_double() * 10.0;
+		x[ i ] = rand_double() * 5.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		b = rand_double() * 10.0;
-		x = rand_double() * 5.0;
-		y = stdlib_base_pow( b, x );
+		y = stdlib_base_pow( b[ i%100 ], x[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

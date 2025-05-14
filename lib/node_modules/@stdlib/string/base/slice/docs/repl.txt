@@ -1,0 +1,31 @@
+
+{{alias}}( str, start, end )
+    Slices UTF-16 code units from a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    start: integer
+        Slice start index (inclusive).
+
+    end: integer
+        Slice end index (exclusive).
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep', 1, 4 )
+    'eep'
+    > out = {{alias}}( 'Boop', 1, 4 )
+    'oop'
+    > out = {{alias}}( 'foo bar', 5, 7 )
+    'ar'
+
+    See Also
+    --------

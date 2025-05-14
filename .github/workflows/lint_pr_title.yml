@@ -62,8 +62,8 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
-          # Limit clone depth to the most recent 100 commits:
-          fetch-depth: 100
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
 
           # Specify whether to download Git-LFS files:
           lfs: false
@@ -72,7 +72,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -90,5 +90,7 @@ jobs:
         run: |
           echo "Pull request titles should follow stdlib's Git commit message conventions."
           echo "Linting pull request title..."
-          make lint-commit-message GIT_COMMIT_MESSAGE="${PR_TITLE}"
+          PR_TITLE_FILE="${GITHUB_WORKSPACE}/pr_title.txt"
+          printf '%s\n' "$PR_TITLE" > "$PR_TITLE_FILE"
+          make lint-commit-files FILES="$PR_TITLE_FILE"
         timeout-minutes: 5
