@@ -104,7 +104,7 @@ static double benchmark( void ) {
 	for ( i = 0; i < 100; i++ ) {
 		mu[ i ] = random_uniform( -50.0, 50.0 );
 		beta[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
-		_t[ i ] = random_uniform( 1.0 / beta[ i ], 0 );
+		_t[ i ] = random_uniform( 0.0, 1.0 / beta[ i ] );
 	}
 
 	t = tic();

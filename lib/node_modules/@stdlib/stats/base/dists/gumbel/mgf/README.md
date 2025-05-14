@@ -184,14 +184,13 @@ for ( i = 0; i < 10; i++ ) {
 #include "stdlib/stats/base/dists/gumbel/mgf.h"
 ```
 
-#### stdlib_base_dists_gumbel_median( t, mu, beta )
+#### stdlib_base_dists_gumbel_mgf( t, mu, beta )
 
 Evaluates the [moment-generating function][mgf] (MGF) for a [Gumbel][gumbel-distribution] distribution with parameters `mu` (location parameter) and `beta > 0` (scale parameter).
 
-
 ```c
-double out = stdlib_base_dists_gumbel_mgf( -1.0, 0.0, 1.0 );
-// returns ~6.0
+double out = stdlib_base_dists_gumbel_mgf( -1.0, 0.0, 3.0 );
+// returns 6.0
 ```
 
 The function accepts the following arguments:
