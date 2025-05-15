@@ -127,8 +127,8 @@ stdlib_base_sincos( 4.0, &sine, &cosine );
 
 The function accepts the following arguments:
 
--   **x**:      `[in] double` input value.
--   **sine**:   `[out] double*` destination for the sine.
+-   **x**: `[in] double` input value.
+-   **sine**: `[out] double*` destination for the sine.
 -   **cosine**: `[out] double*` destination for the cosine.
 
 ```c
