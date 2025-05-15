@@ -97,20 +97,17 @@ var v = minabsn();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var minabsn = require( '@stdlib/math/base/special/minabsn' );
 
-var x;
-var y;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -500.0, 500.0, opts );
+var y = uniform( 100, -500.0, 500.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = ( randu()*1000.0 ) - 500.0;
-    y = ( randu()*1000.0 ) - 500.0;
-    v = minabsn( x, y );
-    console.log( 'minabs(%d,%d) = %d', x, y, v );
-}
+logEachMap( 'minabs(%0.4f,%0.4f) = %0.4f', x, y, minabsn );
 ```
 
 </section>

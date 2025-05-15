@@ -1,0 +1,110 @@
+{
+  "options": {},
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "src": [
+        "./src/dispatch.c",
+        "./src/inline/b_x.c",
+        "./src/inline/c_x.c",
+        "./src/inline/d_x.c",
+        "./src/inline/f_x.c",
+        "./src/inline/i_x.c",
+        "./src/inline/k_x.c",
+        "./src/inline/s_x.c",
+        "./src/inline/t_x.c",
+        "./src/inline/u_x.c",
+        "./src/inline/x_x.c",
+        "./src/inline/z_x.c",
+        "./src/internal/permute.c",
+        "./src/internal/range.c",
+        "./src/internal/sort2ins.c",
+        "./src/predicate/b_x.c",
+        "./src/predicate/b_x_as_c_x.c",
+        "./src/predicate/b_x_as_d_x.c",
+        "./src/predicate/b_x_as_f_x.c",
+        "./src/predicate/b_x_as_i_x.c",
+        "./src/predicate/b_x_as_k_x.c",
+        "./src/predicate/b_x_as_t_x.c",
+        "./src/predicate/b_x_as_u_x.c",
+        "./src/predicate/b_x_as_z_x.c",
+        "./src/predicate/c_x.c",
+        "./src/predicate/c_x_as_z_x.c",
+        "./src/predicate/d_x.c",
+        "./src/predicate/d_x_as_z_x.c",
+        "./src/predicate/f_x.c",
+        "./src/predicate/f_x_as_c_x.c",
+        "./src/predicate/f_x_as_d_x.c",
+        "./src/predicate/f_x_as_z_x.c",
+        "./src/predicate/i_x.c",
+        "./src/predicate/i_x_as_d_x.c",
+        "./src/predicate/i_x_as_z_x.c",
+        "./src/predicate/k_x.c",
+        "./src/predicate/k_x_as_c_x.c",
+        "./src/predicate/k_x_as_d_x.c",
+        "./src/predicate/k_x_as_f_x.c",
+        "./src/predicate/k_x_as_i_x.c",
+        "./src/predicate/k_x_as_z_x.c",
+        "./src/predicate/s_x.c",
+        "./src/predicate/s_x_as_c_x.c",
+        "./src/predicate/s_x_as_d_x.c",
+        "./src/predicate/s_x_as_f_x.c",
+        "./src/predicate/s_x_as_i_x.c",
+        "./src/predicate/s_x_as_k_x.c",
+        "./src/predicate/s_x_as_z_x.c",
+        "./src/predicate/t_x.c",
+        "./src/predicate/t_x_as_c_x.c",
+        "./src/predicate/t_x_as_d_x.c",
+        "./src/predicate/t_x_as_f_x.c",
+        "./src/predicate/t_x_as_i_x.c",
+        "./src/predicate/t_x_as_u_x.c",
+        "./src/predicate/t_x_as_z_x.c",
+        "./src/predicate/u_x.c",
+        "./src/predicate/u_x_as_d_x.c",
+        "./src/predicate/u_x_as_z_x.c",
+        "./src/predicate/x_x.c",
+        "./src/predicate/z_x.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/complex/float32/real",
+        "@stdlib/complex/float32/imag",
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/real",
+        "@stdlib/complex/float64/imag",
+        "@stdlib/ndarray/base/bytes-per-element",
+        "@stdlib/ndarray/base/iteration-order",
+        "@stdlib/ndarray/base/vind2bind",
+        "@stdlib/ndarray/ctor",
+        "@stdlib/ndarray/index-modes",
+        "@stdlib/ndarray/orders"
+      ]
+    }
+  ]
+}

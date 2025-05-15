@@ -83,22 +83,17 @@ v = minabsf( NaN, 3.14 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/array/uniform' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var minabsf = require( '@stdlib/math/base/special/minabsf' );
 
 var opts = {
     'dtype': 'float32'
 };
+var x = uniform( 100, -500.0, 500.0, opts );
+var y = uniform( 100, -500.0, 500.0, opts );
 
-var x = randu( 100, -500.0, 500.0, opts );
-var y = randu( 100, -500.0, 500.0, opts );
-
-var v;
-var i;
-for ( i = 0; i < 100; i++ ) {
-    v = minabsf( x[ i ], y[ i ] );
-    console.log( 'minabsf(%d,%d) = %d', x[ i ], y[ i ], v );
-}
+logEachMap( 'minabsf(%0.4f,%0.4f) = %0.4f', x, y, minabsf );
 ```
 
 </section>

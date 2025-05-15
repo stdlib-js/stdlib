@@ -19,5 +19,4 @@
 #include "stdlib/complex/float64/base/mul_add.h"
 #include "stdlib/math/base/napi/ternary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_ZZZ_Z( stdlib_base_complex128_muladd )
