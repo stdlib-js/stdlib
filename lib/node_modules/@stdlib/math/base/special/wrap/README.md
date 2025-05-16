@@ -106,20 +106,18 @@ var v = wrap( 3.14, 3.0, 3.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var wrap = require( '@stdlib/math/base/special/wrap' );
 
-var min;
-var max;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var min = discreteUniform( 100, 0, 10, opts );
+var max = discreteUniform( 100, 5, 15, opts );
+var v = discreteUniform( 100, -20, 20, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    min = discreteUniform( 0.0, 10.0 );
-    max = discreteUniform( 5.0, 15.0 );
-    v = discreteUniform( -20.0, 20.0 );
-    console.log( 'wrap(%d,%d,%d) => %d', v, min, max, wrap( v, min, max ) );
-}
+logEachMap( 'wrap(%d,%d,%d) => %0.4f', v, min, max, wrap );
 ```
 
 </section>
