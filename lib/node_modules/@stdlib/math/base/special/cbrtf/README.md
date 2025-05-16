@@ -65,16 +65,16 @@ v = cbrtf( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cbrtf = require( '@stdlib/math/base/special/cbrtf' );
 
-var x;
-var i;
+var opts = {
+    'dtype': 'float32'
+};
+var x = uniform( 100, -100.0, 100.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*200.0) - 100.0;
-    console.log( 'cbrt(%d) = %d', x, cbrtf( x ) );
-}
+logEachMap( 'cbrt(%0.4f) = %0.4f', x, cbrtf );
 ```
 
 </section>

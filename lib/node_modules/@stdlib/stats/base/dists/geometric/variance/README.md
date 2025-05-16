@@ -154,7 +154,7 @@ Returns the [variance][variance] of a [geometric][geometric-distribution] distri
 
 ```c
 double out = stdlib_base_dists_geometric_variance( 0.5 );
-// returns 2
+// returns 2.0
 ```
 
 The function accepts the following arguments:
