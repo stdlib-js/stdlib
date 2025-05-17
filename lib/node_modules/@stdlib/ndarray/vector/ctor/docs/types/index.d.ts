@@ -76,7 +76,7 @@ interface GenericVector {
 	/**
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
-	* @param obj - array-like object or iterable from which to generate a typed array
+	* @param obj - array-like object or iterable from which to generate a vector
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
 	* @param options.mode - specifies how to handle indices which exceed vector dimensions
@@ -116,7 +116,7 @@ interface TypedVector<T extends keyof TypedDataTypeMap> {
 	/**
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
-	* @param obj - array-like object or iterable from which to generate a typed array
+	* @param obj - array-like object or iterable from which to generate a vector
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
 	* @param options.mode - specifies how to handle indices which exceed vector dimensions
@@ -141,7 +141,7 @@ interface TypedVector<T extends keyof TypedDataTypeMap> {
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
 	* @param buffer - underlying ArrayBuffer
-	* @param byteOffset - integer byte offset specifying the location of the first typed array element
+	* @param byteOffset - integer byte offset specifying the location of the first vector element
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
 	* @param options.mode - specifies how to handle indices which exceed vector dimensions
@@ -154,7 +154,7 @@ interface TypedVector<T extends keyof TypedDataTypeMap> {
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
 	* @param buffer - underlying ArrayBuffer
-	* @param byteOffset - integer byte offset specifying the location of the first typed array element
+	* @param byteOffset - integer byte offset specifying the location of the first vector element
 	* @param length - view length; if not provided, the view spans from the byteOffset to the end of the underlying ArrayBuffer
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
@@ -324,7 +324,7 @@ interface Vector {
 	/**
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
-	* @param obj - array-like object or iterable from which to generate a typed array
+	* @param obj - array-like object or iterable from which to generate a vector
 	* @param dtype - data type (default: 'float64')
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
@@ -376,7 +376,7 @@ interface Vector {
 	/**
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
-	* @param obj - array-like object or iterable from which to generate a typed array
+	* @param obj - array-like object or iterable from which to generate a vector
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
 	* @param options.mode - specifies how to handle indices which exceed vector dimensions
@@ -487,7 +487,7 @@ interface Vector {
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
 	* @param buffer - underlying ArrayBuffer
-	* @param byteOffset - integer byte offset specifying the location of the first typed array element (default: 0)
+	* @param byteOffset - integer byte offset specifying the location of the first vector element (default: 0)
 	* @param dtype - data type (default: 'float64')
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
@@ -546,7 +546,7 @@ interface Vector {
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
 	* @param buffer - underlying ArrayBuffer
-	* @param byteOffset - integer byte offset specifying the location of the first typed array element
+	* @param byteOffset - integer byte offset specifying the location of the first vector element
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
 	* @param options.mode - specifies how to handle indices which exceed vector dimensions
@@ -589,7 +589,7 @@ interface Vector {
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
 	* @param buffer - underlying ArrayBuffer
-	* @param byteOffset - integer byte offset specifying the location of the first typed array element (default: 0)
+	* @param byteOffset - integer byte offset specifying the location of the first vector element (default: 0)
 	* @param length - view length; if not provided, the view spans from the byteOffset to the end of the underlying ArrayBuffer
 	* @param dtype - data type (default: 'float64')
 	* @param options - function options
@@ -647,7 +647,7 @@ interface Vector {
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
 	* @param buffer - underlying ArrayBuffer
-	* @param byteOffset - integer byte offset specifying the location of the first typed array element
+	* @param byteOffset - integer byte offset specifying the location of the first vector element
 	* @param length - view length; if not provided, the view spans from the byteOffset to the end of the underlying ArrayBuffer
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
@@ -812,7 +812,7 @@ interface Vector {
 * Creates a vector (i.e., a one-dimensional ndarray).
 *
 * @param arg - length, typed array, array-like object, buffer, or iterable
-* @param byteOffset - integer byte offset specifying the location of the first typed array element (default: 0)
+* @param byteOffset - integer byte offset specifying the location of the first vector element (default: 0)
 * @param length - view length; if not provided, the view spans from the byteOffset to the end of the underlying ArrayBuffer
 * @param dtype - data type (default: 'float64')
 * @param options - function options

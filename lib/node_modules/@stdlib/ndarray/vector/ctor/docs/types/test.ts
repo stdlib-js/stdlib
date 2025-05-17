@@ -61,7 +61,7 @@ import vector = require( './index' );
 	vector( new ArrayBuffer( 10 ), 8, 0, 'float32', {} ); // $ExpectType float32ndarray
 }
 
-// The compiler throws an error if the function is provided a first argument which is not a data type, number, array-like object, iterable, or options objects...
+// The compiler throws an error if the function is provided a first argument which is not a data type, number, array-like object, iterable, or options object...
 {
 	vector( true ); // $ExpectError
 	vector( false ); // $ExpectError
@@ -135,7 +135,7 @@ import vector = require( './index' );
 	f3( [ 1, 2, 3 ], {} ); // $ExpectType genericndarray<number>
 }
 
-// The compiler throws an error if the function returned by the `factory` method is provided a first argument which is not a data type, number, array-like object, iterable, or options objects...
+// The compiler throws an error if the function returned by the `factory` method is provided a first argument which is not a data type, number, array-like object, iterable, or options object...
 {
 	const f = vector.factory( 'float64' );
 
