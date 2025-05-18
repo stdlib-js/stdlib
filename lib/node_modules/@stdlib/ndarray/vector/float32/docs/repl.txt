@@ -164,7 +164,7 @@
 
     Examples
     --------
-    > var buf = new {{alias:@stdlib/array/buffer}}( 16 );
+    > var buf = new {{alias:@stdlib/array/buffer}}( 32 );
     > var arr = {{alias}}( buf, 0, 4 )
     <ndarray>
     > var len = {{alias:@stdlib/ndarray/numel}}( arr )

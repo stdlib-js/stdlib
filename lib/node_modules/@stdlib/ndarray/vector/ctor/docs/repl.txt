@@ -189,7 +189,7 @@
 
     Examples
     --------
-    > var buf = new {{alias:@stdlib/array/buffer}}( 16 );
+    > var buf = new {{alias:@stdlib/array/buffer}}( 32 );
     > var arr = {{alias}}( buf, 0, 4, 'float32' )
     <ndarray>
     > var dt = {{alias:@stdlib/ndarray/dtype}}( arr )
