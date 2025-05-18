@@ -43,8 +43,8 @@ EDITORCONFIG_FORMAT_FLAG := $(if $(EDITORCONFIG_FORMAT),--format=$(EDITORCONFIG_
 
 # Define the command-line options to use when invoking the editorconfig-checker executable:
 EDITORCONFIG_CHECKER_CONF_FLAGS ?= \
-	--ignore-defaults \
-	$(EDITORCONFIG_FORMAT_FLAG)
+    --ignore-defaults \
+    $(EDITORCONFIG_FORMAT_FLAG)
 
 
 # RULES #
@@ -61,11 +61,11 @@ EDITORCONFIG_CHECKER_CONF_FLAGS ?= \
 # make lint-editorconfig PACKAGES_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-editorconfig: $(NODE_MODULES)
-	$(QUIET) $(FIND_PACKAGES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
-		echo ''; \
-		echo "Linting package for basic formatting errors: $$pkg"; \
-		cd "$$pkg" && ( $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) ./ && $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && echo 'Success. No detected EditorConfig lint errors.' && echo '' ) || exit 1; \
-	done
+    $(QUIET) $(FIND_PACKAGES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
+        echo ''; \
+        echo "Linting package for basic formatting errors: $$pkg"; \
+        cd "$$pkg" && ( $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) ./ && $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && echo 'Success. No detected EditorConfig lint errors.' && echo '' ) || exit 1; \
+    done
 
 .PHONY: lint-editorconfig
 
@@ -83,14 +83,14 @@ lint-editorconfig: $(NODE_MODULES)
 # make lint-editorconfig-files FILES='foo/test.js bar/index.d.ts'
 #/
 lint-editorconfig-files: $(NODE_MODULES)
-	$(QUIET) $(DELETE) $(DELETE_FLAGS) "$(BUILD_DIR)/editorconfig-checker"
-	$(QUIET) echo 'Linting files for basic formatting errors...'
-	$(QUIET) $(MKDIR_RECURSIVE) "$(BUILD_DIR)/editorconfig-checker"
-	$(QUIET) echo $(FILES) | tr ' ' '\n' | $(TAR) -cf - -T - | $(TAR) -xf - -C "$(BUILD_DIR)/editorconfig-checker/"
-	$(QUIET) cd "$(BUILD_DIR)/editorconfig-checker" && \
-		$(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) ./ && \
-		$(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && \
-		echo 'Success. No detected EditorConfig lint errors.' && \
-		echo ''
+    $(QUIET) $(DELETE) $(DELETE_FLAGS) "$(BUILD_DIR)/editorconfig-checker"
+    $(QUIET) echo 'Linting files for basic formatting errors...'
+    $(QUIET) $(MKDIR_RECURSIVE) "$(BUILD_DIR)/editorconfig-checker"
+    $(QUIET) echo $(FILES) | tr ' ' '\n' | $(TAR) -cf - -T - | $(TAR) -xf - -C "$(BUILD_DIR)/editorconfig-checker/"
+    $(QUIET) cd "$(BUILD_DIR)/editorconfig-checker" && \
+        $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) ./ && \
+        $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && \
+        echo 'Success. No detected EditorConfig lint errors.' && \
+        echo ''
 
 .PHONY: lint-editorconfig-files
