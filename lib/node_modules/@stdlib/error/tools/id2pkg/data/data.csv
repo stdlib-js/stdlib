@@ -1814,6 +1814,8 @@
 "0Cl",@stdlib/blas-ext-base-dnanasum
 "0Cm",@stdlib/blas/ext/base/dnanasumors
 "0Cn",@stdlib/blas-ext-base-dnanasumors
+"2Gw",@stdlib/blas/ext/base/dnancusumkbn
+"2Gx",@stdlib/blas-ext-base-dnancusumkbn
 "0Co",@stdlib/blas/ext/base/dnannsum
 "0Cp",@stdlib/blas-ext-base-dnannsum
 "0Cq",@stdlib/blas/ext/base/dnannsumkbn
@@ -2028,6 +2030,8 @@
 "0Fz",@stdlib/blas-ext-base-ssumors
 "0G0",@stdlib/blas/ext/base/ssumpw
 "0G1",@stdlib/blas-ext-base-ssumpw
+"2Gy",@stdlib/blas/ext/base/wasm/dapx
+"2Gz",@stdlib/blas-ext-base-wasm-dapx
 "29e",@stdlib/blas/ext/base/wasm/dapxsum
 "29f",@stdlib/blas-ext-base-wasm-dapxsum
 "27C",@stdlib/blas/ext/base/wasm/dapxsumkbn
@@ -2922,6 +2926,8 @@
 "27f",@stdlib/lapack-base-clacpy
 "27g",@stdlib/lapack/base/claset
 "27h",@stdlib/lapack-base-claset
+"2H0",@stdlib/lapack/base/claswp
+"2H1",@stdlib/lapack-base-claswp
 "27i",@stdlib/lapack/base/crot
 "27j",@stdlib/lapack-base-crot
 "1zK",@stdlib/lapack/base/dge-trans
@@ -3149,6 +3155,8 @@
 "20R",@stdlib/math-base-special-aversinf
 "0SY",@stdlib/math/base/special/bernoulli
 "0SZ",@stdlib/math-base-special-bernoulli
+"2H2",@stdlib/math/base/special/bernoullif
+"2H3",@stdlib/math-base-special-bernoullif
 "0Sa",@stdlib/math/base/special/besselj0
 "0Sb",@stdlib/math-base-special-besselj0
 "0Sc",@stdlib/math/base/special/besselj1
@@ -3403,6 +3411,8 @@
 "0WD",@stdlib/math-base-special-gammaln
 "1bC",@stdlib/math/base/special/gammasgn
 "1bD",@stdlib/math-base-special-gammasgn
+"2H4",@stdlib/math/base/special/gammasgnf
+"2H5",@stdlib/math-base-special-gammasgnf
 "0WE",@stdlib/math/base/special/gcd
 "0WF",@stdlib/math-base-special-gcd
 "23g",@stdlib/math/base/special/gcdf
@@ -4451,6 +4461,8 @@
 "0in",@stdlib/ndarray-base-ind2sub
 "0io",@stdlib/ndarray/base/iteration-order
 "0ip",@stdlib/ndarray-base-iteration-order
+"2H6",@stdlib/ndarray/base/loop-interchange-order
+"2H7",@stdlib/ndarray-base-loop-interchange-order
 "1zU",@stdlib/ndarray/base/map
 "1zV",@stdlib/ndarray-base-map
 "0iq",@stdlib/ndarray/base/max-view-buffer-index
@@ -4740,6 +4752,12 @@
 "0kF",@stdlib/ndarray-sub2ind
 "1de",@stdlib/ndarray/to-array
 "1df",@stdlib/ndarray-to-array
+"2H8",@stdlib/ndarray/vector/ctor
+"2H9",@stdlib/ndarray-vector-ctor
+"2HA",@stdlib/ndarray/vector/float32
+"2HB",@stdlib/ndarray-vector-float32
+"2HC",@stdlib/ndarray/vector/float64
+"2HD",@stdlib/ndarray-vector-float64
 "0kG",@stdlib/ndarray/zeros-like
 "0kH",@stdlib/ndarray-zeros-like
 "0kI",@stdlib/ndarray/zeros
@@ -5421,12 +5439,18 @@
 "1ez",@stdlib/random-strided-uniform
 "1f0",@stdlib/random/strided/weibull
 "1f1",@stdlib/random-strided-weibull
+"2HE",@stdlib/random/tools/binary-factory
+"2HF",@stdlib/random-tools-binary-factory
+"2HG",@stdlib/random/tools/binary
+"2HH",@stdlib/random-tools-binary
 "2GK",@stdlib/random/tools
 "2GL",@stdlib/random-tools
 "2GM",@stdlib/random/tools/unary-factory
 "2GN",@stdlib/random-tools-unary-factory
 "2GO",@stdlib/random/tools/unary
 "2GP",@stdlib/random-tools-unary
+"2HI",@stdlib/random/uniform
+"2HJ",@stdlib/random-uniform
 "0s2",@stdlib/regexp/basename-posix
 "0s3",@stdlib/regexp-basename-posix
 "0s4",@stdlib/regexp/basename-windows
@@ -5577,6 +5601,8 @@
 "2GR",@stdlib/stats-array-maxabs
 "2GS",@stdlib/stats/array/maxsorted
 "2GT",@stdlib/stats-array-maxsorted
+"2HK",@stdlib/stats/array/mean
+"2HL",@stdlib/stats-array-mean
 "2Ew",@stdlib/stats/array/min
 "2Ex",@stdlib/stats-array-min
 "2Gq",@stdlib/stats/array/minabs
@@ -5587,8 +5613,12 @@
 "2Eb",@stdlib/stats-array-mskmax
 "2Gu",@stdlib/stats/array/mskmin
 "2Gv",@stdlib/stats-array-mskmin
+"2HM",@stdlib/stats/array/mskrange
+"2HN",@stdlib/stats-array-mskrange
 "2Ec",@stdlib/stats/array/nanmax
 "2Ed",@stdlib/stats-array-nanmax
+"2HO",@stdlib/stats/array/nanmin
+"2HP",@stdlib/stats-array-nanmin
 "2Ee",@stdlib/stats/array/varianceyc
 "2Ef",@stdlib/stats-array-varianceyc
 "0tg",@stdlib/stats/bartlett-test
