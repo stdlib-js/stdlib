@@ -26,7 +26,7 @@
 * @return         expected value
 *
 * @example
-* double y = stdlib_base_gamma_mean( 1.0, 1.0 );
+* double y = stdlib_base_dists_gamma_mean( 1.0, 1.0 );
 * // returns 1.0
 */
 double stdlib_base_dists_gamma_mean( const double alpha, const double beta ) {

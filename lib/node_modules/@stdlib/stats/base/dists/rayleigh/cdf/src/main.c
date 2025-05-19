@@ -29,7 +29,7 @@
 * @return         evaluated CDF
 *
 * @example
-* double y = stdlib_base_arcsine_cdf( 2.0, 3.0 );
+* double y = stdlib_base_dists_rayleigh_cdf( 2.0, 3.0 );
 * // returns ~0.199
 */
 double stdlib_base_dists_rayleigh_cdf( const double x, const double sigma ) {

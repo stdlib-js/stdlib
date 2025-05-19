@@ -1,0 +1,42 @@
+
+{{alias}}( x, searchElement, fromIndex )
+    Returns the index of the last element which equals a provided search
+    element according to the same value algorithm.
+
+    The function performs a linear scan and returns immediately upon finding a
+    match.
+
+    If unable to find an element which equals a provided search element, the
+    function returns -1.
+
+    The function scans an input array from the starting index to the beginning
+    of the array (i.e., backward).
+
+    The function treats `-0` and `+0` as distinct and `NaNs` as the same.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    searchElement: any
+        Search element.
+
+    fromIndex: integer
+        Starting index (inclusive). If less than zero, the starting index is
+        resolved relative to the last array element, with the last array element
+        corresponding to `fromIndex = -1`.
+
+    Returns
+    -------
+    out: integer
+        Index or -1.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 3, 3, 4 ], 3, 3 )
+    2
+
+    See Also
+    --------
+
