@@ -118,13 +118,16 @@ jobs:
         run: |
           make markdown-svg-equations-files FILES="${{ steps.changed.outputs.files }}"
 
-          if [[ -z "$(git status --porcelain)" ]]; then
-            # If no files were changed, exit with a success status code:
+          # Stage *all* tracked and untracked changes first…
+          git add -A
+
+          if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
+
+            # Exit with a success status code:
             exit 0
           else
-            # Otherwise, add changed files to the staging area and commit:
-            git add -A && git commit -m "docs: update Markdown equation SVGs"
+            git commit -m "docs: update Markdown equation SVGs"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
         timeout-minutes: 15
@@ -136,13 +139,16 @@ jobs:
           make markdown-img-equations-files FILES="${{ steps.changed.outputs.files }}"
           make markdown-img-equations-src-urls-files FILES="${{ steps.changed.outputs.files }}"
 
-          if [[ -z "$(git status --porcelain)" ]]; then
-            # If no files were changed, exit with a success status code:
+          # Stage *all* tracked and untracked changes first…
+          git add -A
+
+          if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
+
+            # Exit with a success status code:
             exit 0
           else
-            # Otherwise, add changed files to the staging area and commit:
-            git add -A && git commit -m "docs: update Markdown equation elements"
+            git commit -m "docs: update Markdown equation elements"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
         timeout-minutes: 15

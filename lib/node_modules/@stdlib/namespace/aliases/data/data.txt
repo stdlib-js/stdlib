@@ -2065,6 +2065,7 @@ isEmptyString
 isEnumerableProperty
 isEnumerablePropertyIn
 isEqualArray
+isEqualDateObject
 isError
 isEvalError
 isEven
@@ -2187,7 +2188,6 @@ isSameComplex64
 isSameComplex64Array
 isSameComplex128
 isSameComplex128Array
-isSameDateObject
 isSameFloat32Array
 isSameFloat64Array
 isSameNativeClass
