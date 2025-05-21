@@ -3507,6 +3507,7 @@ isEmptyString.isObject,"\nisEmptyString.isObject( value:any )\n    Tests if a va
 isEnumerableProperty,"\nisEnumerableProperty( value:any, property:any )\n    Tests if an object's own property is enumerable.\n"
 isEnumerablePropertyIn,"\nisEnumerablePropertyIn( value:any, property:any )\n    Tests if an object's own or inherited property is enumerable.\n"
 isEqualArray,"\nisEqualArray( v1:any, v2:any )\n    Tests if two arguments are both generic arrays and have equal values.\n"
+isEqualDateObject,"\nisEqualDateObject( d1, d2 )\n    Tests if two values are both Date objects corresponding  to the same date\n    and time.\n"
 isError,"\nisError( value:any )\n    Tests if a value is an Error object.\n"
 isEvalError,"\nisEvalError( value:any )\n    Tests if a value is an EvalError object.\n"
 isEven,"\nisEven( value:any )\n    Tests if a value is an even number.\n"
