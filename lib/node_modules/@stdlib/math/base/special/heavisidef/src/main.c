@@ -30,7 +30,7 @@
 * float y = stdlib_base_heavisidef( 0.0f, STDLIB_BASE_HEAVISIDEF_CONTINUITY_HALF_MAXIMUM );
 * // returns 0.5f
 */
-float stdlib_base_heavisidef( const float x, const STDLIB_BASE_HEAVISIDEF_CONTINUITY continuity ) {
+float stdlib_base_heavisidef( const float x, const enum STDLIB_BASE_HEAVISIDEF_CONTINUITY continuity ) {
 	if ( stdlib_base_is_nanf( x ) ) {
 		return 0.0f / 0.0f; // NaN
 	}

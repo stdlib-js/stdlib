@@ -2065,6 +2065,7 @@
 "@stdlib/assert/is-enumerable-property",isEnumerableProperty
 "@stdlib/assert/is-enumerable-property-in",isEnumerablePropertyIn
 "@stdlib/assert/is-equal-array",isEqualArray
+"@stdlib/assert/is-equal-date-object",isEqualDateObject
 "@stdlib/assert/is-error",isError
 "@stdlib/assert/is-eval-error",isEvalError
 "@stdlib/assert/is-even",isEven
@@ -2187,7 +2188,6 @@
 "@stdlib/assert/is-same-complex64array",isSameComplex64Array
 "@stdlib/assert/is-same-complex128",isSameComplex128
 "@stdlib/assert/is-same-complex128array",isSameComplex128Array
-"@stdlib/assert/is-same-date-object",isSameDateObject
 "@stdlib/assert/is-same-float32array",isSameFloat32Array
 "@stdlib/assert/is-same-float64array",isSameFloat64Array
 "@stdlib/assert/is-same-native-class",isSameNativeClass

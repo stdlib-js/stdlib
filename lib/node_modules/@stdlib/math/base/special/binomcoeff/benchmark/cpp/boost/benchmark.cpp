@@ -22,10 +22,10 @@
 #include <time.h>
 #include <sys/time.h>
 #include <boost/random/mersenne_twister.hpp>
-#include <boost/random/uniform_real_distribution.hpp>
+#include <boost/random/uniform_int_distribution.hpp>
 #include <boost/math/special_functions/binomial.hpp>
 
-using boost::random::uniform_real_distribution;
+using boost::random::uniform_int_distribution;
 using boost::random::mt19937;
 
 #define NAME "binomcoeff"
@@ -86,24 +86,27 @@ double tic() {
 */
 double benchmark() {
 	double elapsed;
+	int x[ 100 ];
+	int y[ 100 ];
 	double t;
-	float x;
-	float y;
 	float z;
 	int i;
 
 	// Define a new pseudorandom number generator:
 	mt19937 rng;
 
-	// Define a uniform distribution for generating pseudorandom numbers as "floats" between a minimum value (inclusive) and a maximum value (exclusive):
-	uniform_real_distribution<> randu1( 20.0f, 70.0f );
-	uniform_real_distribution<> randu2( 0.0f, 20.0f );
+	// Define a uniform distribution for generating pseudorandom numbers as "ints" between a minimum value and a maximum value, both inclusive:
+	uniform_int_distribution<> randu1( 20, 70 );
+	uniform_int_distribution<> randu2( 0, 20 );
+
+	for( i = 0; i < 100; i++ ) {
+		x[ i ] = randu1( rng );
+		y[ i ] = randu2( rng );
+	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = (int)randu1( rng );
-		y = (int)randu2( rng );
-		z = boost::math::binomial_coefficient<float>( x, y );
+		z = boost::math::binomial_coefficient<float>( x[ i%100 ], y[ i%100 ] );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;
