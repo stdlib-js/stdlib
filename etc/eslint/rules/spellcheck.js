@@ -80,8 +80,6 @@ rules[ '@cspell/spellchecker' ] = [ 'warn', {
 			'dilogarithm',
 			'dtype',
 			'dtypes',
-			'makie',
-			'mathrm',
 			'exponentiated',
 			'evalpoly',
 			'evalrational',
