@@ -118,7 +118,7 @@ jobs:
         run: |
           make markdown-svg-equations-files FILES="${{ steps.changed.outputs.files }}"
 
-          # Stage *all* tracked and untracked changes first…
+          # Stage *all* tracked and untracked changes first...
           git add -A
 
           if git diff --cached --quiet; then
@@ -139,7 +139,7 @@ jobs:
           make markdown-img-equations-files FILES="${{ steps.changed.outputs.files }}"
           make markdown-img-equations-src-urls-files FILES="${{ steps.changed.outputs.files }}"
 
-          # Stage *all* tracked and untracked changes first…
+          # Stage *all* tracked and untracked changes first...
           git add -A
 
           if git diff --cached --quiet; then
