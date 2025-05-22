@@ -19,6 +19,7 @@
 #include "stdlib/blas/ext/base/dapxsumors.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/blas/ext/base/dsumors.h"
 
 /**
 * Adds a scalar constant to each double-precision floating-point strided array element and computes the sum using ordinary recursive summation.
@@ -44,21 +45,5 @@ double API_SUFFIX(stdlib_strided_dapxsumors)( const CBLAS_INT N, const double al
 * @param offsetX  starting index
 */
 double API_SUFFIX(stdlib_strided_dapxsumors_ndarray)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	CBLAS_INT ix;
-	CBLAS_INT i;
-	double sum;
-
-	if ( N <= 0 ) {
-		return 0.0;
-	}
-	ix = offsetX;
-	if ( strideX == 0 ) {
-		return N * ( alpha + X[ ix ] );
-	}
-	sum = 0.0;
-	for ( i = 0; i < N; i++ ) {
-		sum += alpha + X[ ix ];
-		ix += strideX;
-	}
-	return sum;
+	return ( N * alpha ) + API_SUFFIX(stdlib_strided_dsumors_ndarray)( N, X, strideX, offsetX );
 }
