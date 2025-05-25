@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/blas/ext/base/dnansumpw.h"
-#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/blas/ext/base/dnannsumpw.h"
 #include "stdlib/strided/base/stride2offset.h"
 #include "stdlib/blas/base/shared.h"
 
@@ -60,94 +60,6 @@ double API_SUFFIX(stdlib_strided_dnansumpw)( const CBLAS_INT N, const double *X,
 * @return         output value
 */
 double API_SUFFIX(stdlib_strided_dnansumpw_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	CBLAS_INT ix;
-	CBLAS_INT M;
-	CBLAS_INT n;
-	CBLAS_INT i;
-	double sum;
-	double s0;
-	double s1;
-	double s2;
-	double s3;
-	double s4;
-	double s5;
-	double s6;
-	double s7;
-
-	if ( N <= 0 ) {
-		return 0.0;
-	}
-	if ( strideX == 0 ) {
-		if ( stdlib_base_is_nan( X[ 0 ] ) ) {
-			return 0.0;
-		}
-		return X[ 0 ] * N;
-	}
-	ix = offsetX;
-	if ( N < 8 ) {
-		// Use simple summation...
-		sum = 0.0;
-		for ( i = 0; i < N; i++ ) {
-			if ( !stdlib_base_is_nan( X[ ix ] ) ) {
-				sum += X[ ix ];
-			}
-			ix += strideX;
-		}
-		return sum;
-	}
-	// Blocksize for pairwise summation: 128 (NOTE: decreasing the blocksize decreases rounding error as more pairs are summed, but also decreases performance. Because the inner loop is unrolled eight times, the blocksize is effectively `16`.)
-	if ( N <= 128 ) {
-		// Sum a block with 8 accumulators (by loop unrolling, we lower the effective blocksize to 16)...
-		s0 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += strideX;
-		s1 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += strideX;
-		s2 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += strideX;
-		s3 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += strideX;
-		s4 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += strideX;
-		s5 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += strideX;
-		s6 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += strideX;
-		s7 = ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-		ix += strideX;
-
-		M = N % 8;
-		for ( i = 8; i < N-M; i += 8 ) {
-			s0 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += strideX;
-			s1 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += strideX;
-			s2 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += strideX;
-			s3 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += strideX;
-			s4 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += strideX;
-			s5 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += strideX;
-			s6 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += strideX;
-			s7 += ( stdlib_base_is_nan( X[ ix ] ) ) ? 0.0 : X[ ix ];
-			ix += strideX;
-		}
-		// Pairwise sum the accumulators:
-		sum = ( (s0+s1) + (s2+s3)) + ((s4+s5) + (s6+s7) );
-
-		// Clean-up loop...
-		for (; i < N; i++ ) {
-			if ( !stdlib_base_is_nan( X[ ix ] ) ) {
-				sum += X[ ix ];
-			}
-			ix += strideX;
-		}
-		return sum;
-	}
-	// Recurse by dividing by two, but avoiding non-multiples of unroll factor...
-	n = N / 2;
-	n -= n % 8;
-	return API_SUFFIX(stdlib_strided_dnansumpw_ndarray)( n, X, strideX, ix ) + API_SUFFIX(stdlib_strided_dnansumpw_ndarray)( N-n, X, strideX, ix+(n*strideX) );
+	CBLAS_INT n = 0;
+	return API_SUFFIX(stdlib_strided_dnannsumpw_ndarray)( N, X, strideX, offsetX, &n );
 }
