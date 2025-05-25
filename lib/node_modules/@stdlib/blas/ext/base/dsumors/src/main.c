@@ -65,14 +65,16 @@ double API_SUFFIX(stdlib_strided_dsumors_ndarray)( const CBLAS_INT N, const doub
 		// If we have a remainder, run a clean-up loop...
 		if ( m > 0 ) {
 			for ( i = 0; i < m; i++ ) {
-				sum += X[ i ];
+				sum += X[ ix ];
+				ix += strideX;
 			}
 		}
 		if ( N < 6 ) {
 			return sum;
 		}
 		for ( i = m; i < N-1; i += 6 ) {
-			sum += X[i] + X[i+1] + X[i+2] + X[i+3] + X[i+4] + X[i+5];
+			sum += X[ix] + X[ix+1] + X[ix+2] + X[ix+3] + X[ix+4] + X[ix+5];
+			ix += 6;
 		}
 		return sum;
 	}
