@@ -65,14 +65,16 @@ float API_SUFFIX(stdlib_strided_ssumors_ndarray)( const CBLAS_INT N, const float
 		// If we have a remainder, run a clean-up loop...
 		if ( m > 0 ) {
 			for ( i = 0; i < m; i++ ) {
-				sum += X[ ix + i ];
+				sum += X[ ix ];
+				ix += strideX;
 			}
 		}
 		if ( N-1 < 6 ) {
 			return sum;
 		}
-		for ( i = m; i < N; i += 6 ) {
-			sum += X[ix+i] + X[ix+i+1] + X[ix+i+2] + X[ix+i+3] + X[ix+i+4] + X[ix+i+5];
+		for ( i = m; i < N-1; i += 6 ) {
+			sum += X[ix] + X[ix+1] + X[ix+2] + X[ix+3] + X[ix+4] + X[ix+5];
+			ix += strideX;
 		}
 		return sum;
 	}
