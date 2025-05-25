@@ -46,5 +46,8 @@ float API_SUFFIX(stdlib_strided_sapxsumors)( const CBLAS_INT N, const float alph
 * @return         output value
 */
 float API_SUFFIX(stdlib_strided_sapxsumors_ndarray)( const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	if ( N <= 0 ) {
+		return 0.0f;
+	}
 	return ( N * alpha ) + API_SUFFIX(stdlib_strided_ssumors_ndarray)( N, X, strideX, offsetX );
 }

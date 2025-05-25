@@ -62,5 +62,8 @@ double API_SUFFIX(stdlib_strided_dapxsumpw)( const CBLAS_INT N, const double alp
 * @return         output value
 */
 double API_SUFFIX(stdlib_strided_dapxsumpw_ndarray)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	if ( N <= 0 ) {
+		return 0.0;
+	}
 	return ( N * alpha ) + API_SUFFIX(stdlib_strided_dsumpw_ndarray)( N, X, strideX, offsetX );
 }

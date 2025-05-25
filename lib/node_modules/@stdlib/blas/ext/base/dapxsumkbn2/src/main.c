@@ -62,5 +62,8 @@ double API_SUFFIX(stdlib_strided_dapxsumkbn2)( const CBLAS_INT N, const double a
 * @return         output value
 */
 double API_SUFFIX(stdlib_strided_dapxsumkbn2_ndarray)( const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX  ) {
+	if ( N <= 0 ) {
+		return 0.0;
+	}
 	return ( N * alpha ) + API_SUFFIX(stdlib_strided_dsumkbn2_ndarray)( N, X, strideX, offsetX );
 }
