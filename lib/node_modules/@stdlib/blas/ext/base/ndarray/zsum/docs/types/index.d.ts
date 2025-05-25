@@ -21,6 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { complex128ndarray } from '@stdlib/types/ndarray';
+import { Complex128 } from '@stdlib/types/complex';
 
 /**
 * Computes the sum of all elements in a one-dimensional double-precision complex floating-point ndarray.
@@ -38,7 +39,7 @@ import { complex128ndarray } from '@stdlib/types/ndarray';
 * var v = zsum( [ x ] );
 * // returns <Complex128>[ 5.0, 5.0 ]
 */
-declare function zsum( arrays: [ complex128ndarray ] ): number;
+declare function zsum( arrays: [ complex128ndarray ] ): Complex128;
 
 
 // EXPORTS //

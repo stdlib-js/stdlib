@@ -24,13 +24,13 @@ import zsum = require( './index' );
 
 // TESTS //
 
-// The function returns a number...
+// The function returns a complex number...
 {
 	const x = zeros( [ 10 ], {
 		'dtype': 'complex128'
 	});
 
-	zsum( [ x ] ); // $ExpectType number
+	zsum( [ x ] ); // $ExpectType Complex128
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...
