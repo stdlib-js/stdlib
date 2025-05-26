@@ -26,7 +26,7 @@ limitations under the License.
 
 We appreciate your interest in contributing to stdlib! Below, we've provided a step-by-step tutorial on how to set up the project locally on your device using a dev container.
 
-Dev containers, are Docker containers that are specifically configured to provide a fully featured development environment with the right tooling, extensions, linting and formatting. They allow you to open any folder inside (or mounted into) a container and take advantage of Visual Studio Code's full feature set.
+Dev containers are Docker containers that are specifically configured to provide a fully featured development environment with the right tooling, extensions, linting and formatting. They allow you to open any folder inside (or mounted into) a container and take advantage of Visual Studio Code's full feature set.
 
 The stdlib repository includes a preconfigured dev container, making it the easiest way to set up your development environment. It ensures proper linting, EditorConfig, and tooling are configured right from the start.
 

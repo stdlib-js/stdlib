@@ -127,7 +127,7 @@ cscal.ndarray( 2, ca, cx, 2, 1 );
 
 ## Notes
 
--   If `N <= 0` or `strideX <= 0` , both functions return `cx` unchanged.
+-   If `N <= 0` or `strideX <= 0`, both functions return `cx` unchanged.
 -   `cscal()` corresponds to the [BLAS][blas] level 1 function [`cscal`][cscal].
 
 </section>

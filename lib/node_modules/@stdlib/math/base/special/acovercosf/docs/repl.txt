@@ -3,9 +3,9 @@
     Computes the inverse coversed cosine of a single-precision floating-
     point number (in radians).
 
-    The inverse coversed cosine is defined as `asin(1+x)`.
+    The inverse coversed cosine is defined as `asin(x-1)`.
 
-    If `x < -2`, `x > 0`, or `x` is `NaN`, the function returns `NaN`.
+    If `x < 0`, `x > 2`, or `x` is `NaN`, the function returns `NaN`.
 
     Parameters
     ----------
@@ -19,10 +19,10 @@
 
     Examples
     --------
-    > var y = {{alias}}( -1.5 )
-    ~-0.5236
+    > var y = {{alias}}( 1.5 )
+    ~0.5236
     > y = {{alias}}( -0.0 )
-    ~1.5708
+    ~-1.5708
 
     See Also
     --------
