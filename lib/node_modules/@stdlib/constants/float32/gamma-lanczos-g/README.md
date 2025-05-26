@@ -120,18 +120,6 @@ Macro for the arbitrary constant `g` to be used in [Lanczos approximation][lancz
 
 <!-- /.c -->
 
-* * *
-
-<section class="references">
-
-## References
-
--   Boost C++ Libraries. "The Lanczos Approximation." [https://beta.boost.org/doc/libs/1_82_0/libs/math/doc/html/math_toolkit/lanczos.html][@boost:lanczos].
-
-</section>
-
-<!-- /.references -->
-
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -145,8 +133,6 @@ Macro for the arbitrary constant `g` to be used in [Lanczos approximation][lancz
 <section class="links">
 
 [lanczos-approximation]: https://en.wikipedia.org/wiki/Lanczos_approximation
-
-[@boost:lanczos]: https://beta.boost.org/doc/libs/1_82_0/libs/math/doc/html/math_toolkit/lanczos.html
 
 </section>
 
