@@ -41,7 +41,7 @@ var FLOAT32_GAMMA_LANCZOS_G = require( '@stdlib/constants/float32/gamma-lanczos-
 Arbitrary constant `g` to be used in [Lanczos approximation][lanczos-approximation] functions.
 
 ```javascript
-var bool = ( FLOAT32_GAMMA_LANCZOS_G === 10.900510787963867 );
+var bool = ( FLOAT32_GAMMA_LANCZOS_G === 1.42845618724823 );
 // returns true
 ```
 
@@ -59,7 +59,7 @@ var bool = ( FLOAT32_GAMMA_LANCZOS_G === 10.900510787963867 );
 var FLOAT32_GAMMA_LANCZOS_G = require( '@stdlib/constants/float32/gamma-lanczos-g' );
 
 console.log( FLOAT32_GAMMA_LANCZOS_G );
-// => 10.900510787963867
+// => 1.42845618724823
 ```
 
 </section>
@@ -126,7 +126,7 @@ Macro for the arbitrary constant `g` to be used in [Lanczos approximation][lancz
 
 ## References
 
--   Pugh, Glendon R. 2004. "An analysis of the Lanczos gamma approximation." PhD thesis, University of British Columbia. [&lt;https://web.viu.ca/pughg/phdThesis/phdThesis.pdf>][@pugh:2004a].
+-   Boost C++ Libraries. "The Lanczos Approximation." [https://beta.boost.org/doc/libs/1_82_0/libs/math/doc/html/math_toolkit/lanczos.html][@boost:lanczos].
 
 </section>
 
@@ -146,7 +146,7 @@ Macro for the arbitrary constant `g` to be used in [Lanczos approximation][lancz
 
 [lanczos-approximation]: https://en.wikipedia.org/wiki/Lanczos_approximation
 
-[@pugh:2004a]: https://web.viu.ca/pughg/phdThesis/phdThesis.pdf
+[@boost:lanczos]: https://beta.boost.org/doc/libs/1_82_0/libs/math/doc/html/math_toolkit/lanczos.html
 
 </section>
 
