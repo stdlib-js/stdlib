@@ -26,21 +26,21 @@ import nanvarianceyc = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	nanvarianceyc( x.length, 1, new AccessorArray( x ), 1 ); // $ExpectType number
+	nanvarianceyc( x.length, 1.0, new AccessorArray( x ), 1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 
-	nanvarianceyc( '10', 1, x, 1 ); // $ExpectError
-	nanvarianceyc( true, 1, x, 1 ); // $ExpectError
-	nanvarianceyc( false, 1, x, 1 ); // $ExpectError
-	nanvarianceyc( null, 1, x, 1 ); // $ExpectError
-	nanvarianceyc( undefined, 1, x, 1 ); // $ExpectError
-	nanvarianceyc( [], 1, x, 1 ); // $ExpectError
-	nanvarianceyc( {}, 1, x, 1 ); // $ExpectError
-	nanvarianceyc( ( x: number ): number => x, 1, x, 1 ); // $ExpectError
+	nanvarianceyc( '10', 1.0, x, 1 ); // $ExpectError
+	nanvarianceyc( true, 1.0, x, 1 ); // $ExpectError
+	nanvarianceyc( false, 1.0, x, 1 ); // $ExpectError
+	nanvarianceyc( null, 1.0, x, 1 ); // $ExpectError
+	nanvarianceyc( undefined, 1.0, x, 1 ); // $ExpectError
+	nanvarianceyc( [], 1.0, x, 1 ); // $ExpectError
+	nanvarianceyc( {}, 1.0, x, 1 ); // $ExpectError
+	nanvarianceyc( ( x: number ): number => x, 1.0, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a number...
@@ -61,29 +61,29 @@ import nanvarianceyc = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	nanvarianceyc( x.length, 1, 10, 1 ); // $ExpectError
-	nanvarianceyc( x.length, 1, '10', 1 ); // $ExpectError
-	nanvarianceyc( x.length, 1, true, 1 ); // $ExpectError
-	nanvarianceyc( x.length, 1, false, 1 ); // $ExpectError
-	nanvarianceyc( x.length, 1, null, 1 ); // $ExpectError
-	nanvarianceyc( x.length, 1, undefined, 1 ); // $ExpectError
-	nanvarianceyc( x.length, 1, [ '1' ], 1 ); // $ExpectError
-	nanvarianceyc( x.length, 1, {}, 1 ); // $ExpectError
-	nanvarianceyc( x.length, 1, ( x: number ): number => x, 1 ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, 10, 1 ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, '10', 1 ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, true, 1 ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, false, 1 ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, null, 1 ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, undefined, 1 ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, [ '1' ], 1 ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, {}, 1 ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 
-	nanvarianceyc( x.length, 1, x, '10' ); // $ExpectError
-	nanvarianceyc( x.length, 1, x, true ); // $ExpectError
-	nanvarianceyc( x.length, 1, x, false ); // $ExpectError
-	nanvarianceyc( x.length, 1, x, null ); // $ExpectError
-	nanvarianceyc( x.length, 1, x, undefined ); // $ExpectError
-	nanvarianceyc( x.length, 1, x, [] ); // $ExpectError
-	nanvarianceyc( x.length, 1, x, {} ); // $ExpectError
-	nanvarianceyc( x.length, 1, x, ( x: number ): number => x ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, x, '10' ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, x, true ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, x, false ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, x, null ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, x, undefined ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, x, [] ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, x, {} ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -92,9 +92,9 @@ import nanvarianceyc = require( './index' );
 
 	nanvarianceyc(); // $ExpectError
 	nanvarianceyc( x.length ); // $ExpectError
-	nanvarianceyc( x.length, 1 ); // $ExpectError
-	nanvarianceyc( x.length, 1, x ); // $ExpectError
-	nanvarianceyc( x.length, 1, x, 1, 10 ); // $ExpectError
+	nanvarianceyc( x.length, 1.0 ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, x ); // $ExpectError
+	nanvarianceyc( x.length, 1.0, x, 1, 10 ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
@@ -108,14 +108,14 @@ import nanvarianceyc = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	nanvarianceyc.ndarray( '10', 1, x, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( true, 1, x, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( false, 1, x, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( null, 1, x, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( undefined, 1, x, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( [], 1, x, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( {}, 1, x, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( ( x: number ): number => x, 1, x, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( '10', 1.0, x, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( true, 1.0, x, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( false, 1.0, x, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( null, 1.0, x, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( undefined, 1.0, x, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( [], 1.0, x, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( {}, 1.0, x, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( ( x: number ): number => x, 1.0, x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a number...
@@ -136,43 +136,43 @@ import nanvarianceyc = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	nanvarianceyc.ndarray( x.length, 1, 10, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, '10', 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, true, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, false, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, null, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, undefined, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, [ '1' ], 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, {}, 1, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, ( x: number ): number => x, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, 10, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, '10', 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, true, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, false, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, null, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, undefined, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, [ '1' ], 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, {}, 1, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 
-	nanvarianceyc.ndarray( x.length, 1, x, '10', 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, true, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, false, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, null, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, undefined, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, [], 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, {}, 0 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, ( x: number ): number => x, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, '10', 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, true, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, false, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, null, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, undefined, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, [], 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, {}, 0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, ( x: number ): number => x, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 
-	nanvarianceyc.ndarray( x.length, 1, x, 1, '10' ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, 1, true ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, 1, false ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, 1, null ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, 1, undefined ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, 1, [] ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, 1, {} ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, 1, ( x: number ): number => x ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, 1, '10' ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, 1, true ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, 1, false ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, 1, null ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, 1, undefined ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, 1, [] ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, 1, {} ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
@@ -181,8 +181,8 @@ import nanvarianceyc = require( './index' );
 
 	nanvarianceyc.ndarray(); // $ExpectError
 	nanvarianceyc.ndarray( x.length ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, 1 ); // $ExpectError
-	nanvarianceyc.ndarray( x.length, 1, x, 1, 0, 10 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, 1 ); // $ExpectError
+	nanvarianceyc.ndarray( x.length, 1.0, x, 1, 0, 10 ); // $ExpectError
 }

@@ -99,7 +99,7 @@ var opts = {
 };
 var x = discreteUniform( 100, 0, 100, opts );
 
-logEachMap( 'log10(%0.4f) = %0.4f', x, log10 );
+logEachMap( 'log10(%d) = %0.4f', x, log10 );
 ```
 
 </section>

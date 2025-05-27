@@ -30,8 +30,8 @@
 * @return     evaluated PDF
 *
 * @example
-* double y = stdlib_base_dists_t_pdf( 2.0, 1.0 );
-* // returns ~0.063
+* double y = stdlib_base_dists_t_pdf( 0.3, 4.0 );
+* // returns ~0.355
 */
 double stdlib_base_dists_t_pdf( const double x, const double v ) {
 	double betaTerm;

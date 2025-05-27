@@ -163,8 +163,8 @@ for ( i = 0; i < 10; i++ ) {
 Evaluates the [probability density function][pdf] (PDF) for a [Student's t][t-distribution] distribution with degrees of freedom `v`.
 
 ```c
-double out = stdlib_base_dists_t_pdf( 0.5, 2.0 );
-// returns ~0.352
+double out = stdlib_base_dists_t_pdf( 0.3, 4.0 );
+// returns ~0.355
 ```
 
 The function accepts the following arguments:

@@ -18,7 +18,9 @@
 
 #include "stdlib/stats/base/dists/cosine/variance.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/constants/float64/pi_squared.h"
+
+// (1/3) - (2/π^2):
+static const double scalar = 0.13069096604865776;
 
 /**
 * Returns the variance for a raised cosine distribution with location `mu` and scale `s`.
@@ -39,5 +41,5 @@ double stdlib_base_dists_cosine_variance( const double mu, const double s ) {
 	) {
 		return 0.0 / 0.0; // NaN
 	}
-	return ( s * s ) * ( ( 1.0 / 3.0 ) - ( 2 / STDLIB_CONSTANT_FLOAT64_PI_SQUARED ) );
+	return ( s * s ) * scalar;
 }

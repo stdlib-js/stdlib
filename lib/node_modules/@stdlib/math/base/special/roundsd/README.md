@@ -20,7 +20,7 @@ limitations under the License.
 
 # roundsd
 
-> Round a numeric value to the nearest number with `n` significant figures.
+> Round a double-precision floating-point number to the nearest value with `n` significant figures.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var roundsd = require( '@stdlib/math/base/special/roundsd' );
 
 #### roundsd( x, n\[, b] )
 
-Rounds a `numeric` value to the nearest `number` with `n` significant figures.
+Rounds a double-precision floating-point number to the nearest value with `n` significant figures.
 
 ```javascript
 var v = roundsd( 3.141592653589793, 3 );
@@ -84,6 +84,93 @@ logEachMap( 'x: %0.4f. y: %d. Rounded: %0.4f.', x, 5, roundsd );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/roundsd.h"
+```
+
+#### stdlib_base_roundsd( x, n, b )
+
+Rounds a double-precision floating-point number to the nearest value with `n` significant figures.
+
+```c
+double v = stdlib_base_roundsd( 3.141592653589793, 3, 10 );
+// returns 3.14
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **n**: `[in] int32_t` number of significant figures.
+-   **b**: `[in] int32_t` base.
+
+```c
+double stdlib_base_roundsd( const double x, const int32_t n, const int32_t b );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/roundsd.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 3.143546, -3.142635, 0.0, 0.0/0.0 };
+
+    double y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_roundsd( x[ i ], 2, 10 );
+        printf( "roundsd(%lf) = %lf\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

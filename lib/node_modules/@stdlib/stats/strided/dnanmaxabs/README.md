@@ -183,7 +183,7 @@ console.log( v );
 
 #### stdlib_strided_dnanmax( N, \*X, strideX )
 
-Computes the maximum absolute value of a double-precision floating-point strided array , ignoring `NaN` values.
+Computes the maximum absolute value of a double-precision floating-point strided array, ignoring `NaN` values.
 
 ```c
 const double x[] = { 1.0, -2.0, 0.0 / 0.0, -4.0 };
