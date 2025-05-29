@@ -112,7 +112,7 @@ var countTruthy = require( '@stdlib/ndarray/base/count-truthy' );
 
 var x = {
     'dtype': 'generic',
-    'data': bernoulli( 10, 0.9, {
+    'data': bernoulli( 10, 0.75, {
         'dtype': 'generic'
     }),
     'shape': [ 5, 2 ],
