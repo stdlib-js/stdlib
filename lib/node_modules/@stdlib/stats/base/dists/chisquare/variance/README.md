@@ -97,19 +97,16 @@ var v = variance( -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var variance = require( '@stdlib/stats/base/dists/chisquare/variance' );
 
-var k;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var k = uniform( 10, 0.0, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    k = randu() * 20.0;
-    v = variance( k );
-    console.log( 'k: %d, Var(X,k): %d', k.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'k: %0.4f, Var(X;k): %0.4f', k, variance );
 ```
 
 </section>

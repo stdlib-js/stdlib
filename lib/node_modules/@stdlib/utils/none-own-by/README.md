@@ -86,7 +86,7 @@ var bool = noneOwnBy( obj, isUnderage );
 
 ## Notes
 
--   If the 1st argument is not an object or the second argument is not a fuction , the function throws a Type Error.
+-   If the 1st argument is not an object or the second argument is not a function, the function throws a Type Error.
 
 -   If provided an empty object, the function returns `true`.
 

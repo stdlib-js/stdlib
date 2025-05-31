@@ -1,6 +1,7 @@
 {
   "options": {
-    "task": "build"
+    "task": "build",
+    "wasm": false
   },
   "fields": [
     {
@@ -27,56 +28,79 @@
   "confs": [
     {
       "task": "build",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/dsumpw",
+        "@stdlib/math/base/assert/is-nan",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-double",
-        "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/blas/base/shared",
-        "@stdlib/blas/ext/base/dsumpw"
+        "@stdlib/napi/argv-strided-float64array"
       ]
     },
     {
       "task": "benchmark",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/dsumpw"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/dsumpw",
+        "@stdlib/math/base/assert/is-nan"
       ]
     },
     {
       "task": "examples",
+      "wasm": false,
       "src": [
         "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/dsumpw"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/dsumpw",
+        "@stdlib/math/base/assert/is-nan"
+      ]
+    },
+    {
+      "task": "",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/dsumpw",
+        "@stdlib/math/base/assert/is-nan"
       ]
     }
   ]
