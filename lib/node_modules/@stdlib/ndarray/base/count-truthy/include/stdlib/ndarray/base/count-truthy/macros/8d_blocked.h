@@ -46,7 +46,7 @@
 * }
 * STDLIB_NDARRAY_COUNT_TRUTHY_8D_BLOCKED_LOOP_EPILOGUE( int32_t )
 */
-#define STDLIB_NDARRAY_COUNT_TRUTHY_8D_BLOCKED_LOOP_PREAMBLE                          \
+#define STDLIB_NDARRAY_COUNT_TRUTHY_8D_BLOCKED_LOOP_PREAMBLE                   \
 	const struct ndarray *x1 = arrays[ 0 ];                                    \
 	const struct ndarray *x2 = arrays[ 1 ];                                    \
 	uint8_t *px2 = stdlib_ndarray_data( x2 );                                  \

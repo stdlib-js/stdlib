@@ -105,7 +105,7 @@ int main( void ) {
 	// Define an array containing the ndarrays:
 	struct ndarray *arrays[] = { x, y };
 
-	// Test elements:
+	// Perform operation:
 	int8_t status = stdlib_ndarray_count_truthy_c_i( arrays, NULL );
 	if ( status != 0 ) {
 		fprintf( stderr, "Error during computation.\n" );

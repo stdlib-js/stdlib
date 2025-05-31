@@ -42,7 +42,7 @@
 * STDLIB_NDARRAY_COUNT_TRUTHY_ND_LOOP_PREMABLE {
 *     // Innermost loop body...
 * }
-* STDLIB_NDARRAY_COUNT_TRUTHY_ND_LOOP_EPILOGUE
+* STDLIB_NDARRAY_COUNT_TRUTHY_ND_LOOP_EPILOGUE( int32_t )
 */
 #define STDLIB_NDARRAY_COUNT_TRUTHY_ND_LOOP_PREAMBLE                           \
 	const struct ndarray *x1 = arrays[ 0 ];                                    \
