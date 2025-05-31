@@ -67,7 +67,7 @@ var x = {
     'order': 'row-major'
 };
 
-// Test elements:
+// Perform operation:
 var out = countTruthy( [ x ] );
 // returns 6
 ```
@@ -2197,7 +2197,7 @@ int main( void ) {
     // Define an array containing the ndarrays:
     struct ndarray *arrays[] = { x, y };
 
-    // Test elements:
+    // Perform operation:
     int8_t status = stdlib_ndarray_count_truthy_b_i( arrays );
     if ( status != 0 ) {
         fprintf( stderr, "Error during computation.\n" );
