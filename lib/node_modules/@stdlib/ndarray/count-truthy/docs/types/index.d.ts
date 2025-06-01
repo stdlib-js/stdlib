@@ -75,7 +75,7 @@ interface CountTruthy {
 	* // Create an input ndarray:
 	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
 	*
-	* // Perform operation:
+	* // Perform reduction:
 	* var out = countTruthy( x );
 	* // returns <ndarray>
 	*
@@ -118,7 +118,7 @@ interface CountTruthy {
 	*     'dtype': 'int32'
 	* });
 	*
-	* // Perform operation:
+	* // Perform reduction:
 	* var out = countTruthy.assign( x, y );
 	* // returns <ndarray>
 	*
@@ -156,7 +156,7 @@ interface CountTruthy {
 * // Create an input ndarray:
 * var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
 *
-* // Perform operation:
+* // Perform reduction:
 * var out = countTruthy( x );
 * // returns <ndarray>
 *
@@ -188,7 +188,7 @@ interface CountTruthy {
 *     'dtype': 'int32'
 * });
 *
-* // Perform operation:
+* // Perform reduction:
 * var out = countTruthy.assign( x, y );
 * // returns <ndarray>
 *

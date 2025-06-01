@@ -75,7 +75,7 @@ interface Every {
 	* // Create an input ndarray:
 	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
 	*
-	* // Test elements:
+	* // Perform reduction:
 	* var out = every( x );
 	* // returns <ndarray>
 	*
@@ -118,7 +118,7 @@ interface Every {
 	*     'dtype': 'bool'
 	* });
 	*
-	* // Test elements:
+	* // Perform reduction:
 	* var out = every.assign( x, y );
 	* // returns <ndarray>
 	*
@@ -156,7 +156,7 @@ interface Every {
 * // Create an input ndarray:
 * var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
 *
-* // Test elements:
+* // Perform reduction:
 * var out = every( x );
 * // returns <ndarray>
 *
@@ -188,7 +188,7 @@ interface Every {
 *     'dtype': 'bool'
 * });
 *
-* // Test elements:
+* // Perform reduction:
 * var out = every.assign( x, y );
 * // returns <ndarray>
 *

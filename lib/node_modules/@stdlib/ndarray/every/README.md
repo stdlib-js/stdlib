@@ -47,7 +47,7 @@ var array = require( '@stdlib/ndarray/array' );
 var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
 // returns <ndarray>
 
-// Test elements:
+// Perform reduction:
 var out = every( x );
 // returns <ndarray>
 
@@ -75,7 +75,7 @@ var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
 // returns <ndarray>
 
-// Test elements:
+// Perform reduction:
 var out = every( x, {
     'dims': [ 1, 2 ]
 });
@@ -95,7 +95,7 @@ var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
 // returns <ndarray>
 
-// Test elements:
+// Perform reduction:
 var out = every( x, {
     'dims': [ 1, 2 ],
     'keepdims': true
@@ -123,7 +123,7 @@ var y = empty( [], {
     'dtype': 'bool'
 });
 
-// Test elements:
+// Perform reduction:
 var out = every.assign( x, y );
 // returns <ndarray>
 
@@ -160,7 +160,7 @@ var y = empty( [ 3 ], {
     'dtype': 'bool'
 });
 
-// Test elements:
+// Perform reduction:
 var out = every.assign( x, y, {
     'dims': [ 1, 2 ]
 });

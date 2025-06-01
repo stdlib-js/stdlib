@@ -35,7 +35,7 @@ extern "C" {
 /**
 * Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant.
 */
-void API_SUFFIX(cblas_cscal)( const CBLAS_INT N, const stdlib_complex64_t ca, void *CX, const CBLAS_INT strideX );
+void API_SUFFIX(cblas_cscal)( const CBLAS_INT N, const stdlib_complex64_t alpha, void *X, const CBLAS_INT strideX );
 
 #ifdef __cplusplus
 }
