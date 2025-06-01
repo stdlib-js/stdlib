@@ -20,7 +20,17 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
+
+/**
+* Output array.
+*/
+type OutputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `gnannsumkbn`.
@@ -43,7 +53,7 @@ interface Routine {
 	* var v = gnannsumkbn( x.length, x, 1, out, 1 );
 	* // returns [ 1.0, 3 ]
 	*/
-	( N: number, x: NumericArray, strideX: number, out: NumericArray, strideOut: number ): NumericArray;
+	<T extends OutputArray>( N: number, x: InputArray, strideX: number, out: T, strideOut: number ): T;
 
 	/**
 	* Computes the sum of strided array elements, ignoring `NaN` values and using an improved Kahan–Babuška algorithm and alternative indexing semantics.
@@ -64,7 +74,7 @@ interface Routine {
 	* var v = gnannsumkbn( x.length, x, 1, 0, out, 1, 0 );
 	* // returns [ 1.0, 3 ]
 	*/
-	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, out: NumericArray, strideOut: number, offsetOut: number ): NumericArray;
+	ndarray<T extends OutputArray>( N: number, x: InputArray, strideX: number, offsetX: number, out: T, strideOut: number, offsetOut: number ): T;
 }
 
 /**

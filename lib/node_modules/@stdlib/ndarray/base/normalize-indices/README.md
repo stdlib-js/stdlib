@@ -67,6 +67,7 @@ var idx = normalizeIndices( [ 15, -15 ], 10 );
 ## Notes
 
 -   The function mutates the input array, even when provided an out-of-bounds index. If mutation is undesired, copy the input array before calling this function.
+-   During normalization, a negative index is converted to a nonnegative index according to `max + idx + 1`. If, after normalization, the resolved index is still negative, the value is considered out-of-bounds.
 
 </section>
 

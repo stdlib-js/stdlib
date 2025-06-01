@@ -102,14 +102,14 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		alpha[ i ] = random_uniform( 0.0, 20.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
-		s[ i ] = random_uniform( 0.0, 20.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
-		m[ i ] = random_uniform( 0.0, 20.0 ) - 40.0;
+		alpha[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
+		s[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
+		m[ i ] = random_uniform( -20.0, 20.0 );
 	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		 y = stdlib_base_dists_frechet_skewness( alpha[ i%100 ], s[ i%100 ], m[ i%100 ] );
+		y = stdlib_base_dists_frechet_skewness( alpha[ i%100 ], s[ i%100 ], m[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
