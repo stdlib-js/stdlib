@@ -201,7 +201,7 @@ for ( i = 0; i < 100; i++ ) {
 Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [Fréchet][frechet-distribution] distribution with shape `alpha`, scale `s`, and location `m` at a value `x`.
 
 ```c
-double y = stdlib_base_frechet_logcdf( 10.0, 2.0, 3.0, 2.0 );
+double y = stdlib_base_dists_frechet_logcdf( 10.0, 2.0, 3.0, 2.0 );
 // returns ~-0.141
 ```
 

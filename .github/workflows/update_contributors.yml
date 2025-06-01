@@ -78,10 +78,15 @@ jobs:
         run: |
           make update-contributors
 
-          if [[ -z "$(git status --porcelain)" ]]; then
+          # Stage *all* tracked and untracked changes first...
+          git add -A
+
+          # If the index is identical to HEAD, nothing real changed:
+          if git diff --cached --quiet; then
             echo "No changes to commit."
             echo "changed=false" >> $GITHUB_OUTPUT
           else
+            echo "Changes detected."
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
@@ -129,6 +134,7 @@ jobs:
 
       # Create a pull request summary:
       - name: 'Create summary'
+        if: steps.update-contributors.outputs.changed == 'true'
         run: |
           echo "# :tada: Pull Request created! :tada:" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
