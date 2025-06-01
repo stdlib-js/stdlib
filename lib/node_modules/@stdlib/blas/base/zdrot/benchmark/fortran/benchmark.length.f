@@ -117,8 +117,8 @@ contains
     ! ..
     ! External functions:
     interface
-      subroutine zdrot( N, zx, strideX, zy, strideY, c, s )
-        complex(kind=kind(0.0d0)) :: zx(*), zy(*)
+      subroutine zdrot( N, x, strideX, y, strideY, c, s )
+        complex(kind=kind(0.0d0)) :: x(*), y(*)
         integer :: strideX, strideY, N
         double precision :: c, s
       end subroutine zdrot
