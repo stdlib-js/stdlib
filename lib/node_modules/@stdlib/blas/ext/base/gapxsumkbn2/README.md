@@ -109,7 +109,7 @@ var v = gapxsumkbn2.ndarray( 4, 5.0, x, 2, 1 );
 ## Notes
 
 -   If `N <= 0`, both functions return `0.0`.
--   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor])
+-   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 -   Depending on the environment, the typed versions ([`dapxsumkbn2`][@stdlib/blas/ext/base/dapxsumkbn2], [`sapxsumkbn2`][@stdlib/blas/ext/base/sapxsumkbn2], etc.) are likely to be significantly more performant.
 
 </section>

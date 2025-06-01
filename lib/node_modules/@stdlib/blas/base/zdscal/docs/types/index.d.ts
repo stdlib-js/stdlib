@@ -30,7 +30,7 @@ interface Routine {
 	* Scales a double-precision complex floating-point vector by a double-precision floating-point constant.
 	*
 	* @param N - number of indexed elements
-	* @param za - scalar constant
+	* @param da - scalar constant
 	* @param zx - input array
 	* @param strideZX - `zx` stride length
 	* @returns input array

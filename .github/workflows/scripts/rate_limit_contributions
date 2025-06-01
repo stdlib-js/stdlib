@@ -38,7 +38,7 @@ set -o pipefail
 pr_number="$1"
 
 # Threshold of open "Good First PR"s above which to post comment:
-max_good_first_prs=5
+max_good_first_prs=10
 
 # GitHub API base URL:
 github_api_url="https://api.github.com"
@@ -133,7 +133,7 @@ main() {
 	pr_author=$(echo "${pr_details}" | jq -r '.user.login')
 
 	# Fetch other PRs of the same user:
-	user_prs=$(github_api "GET" "/search/issues?q=repo%3A${repo_owner}%2F${repo_name}+state%3Aopen+author%3A${pr_author}+type%3Apr")
+	user_prs=$(github_api "GET" "/search/issues?q=repo%3A${repo_owner}%2F${repo_name}+author%3A${pr_author}+type%3Apr")
 
 	# Count number of PRs labeled "Good First PR":
 	num_good_first_prs=$(echo "${user_prs}" | jq -r '.items | map( select( .labels | any( .name == "Good First PR" ))) | length')
