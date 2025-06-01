@@ -81,8 +81,30 @@ void API_SUFFIX(stdlib_strided_dnancusumkbn_ndarray)( const CBLAS_INT N, const d
 	ix = offsetX;
 	iy = offsetY;
 	s = sum;
+
+	// In order to preserve the sign of zero which can be lost during compensated summation below, find the first non-zero element...
+	if ( s == 0.0 ) {
+		for ( i = 0; i < N; i++ ) {
+			v = X[ ix ];
+			if ( stdlib_base_is_nan( v ) ) {
+				Y[ iy ] = s;
+				ix += strideX;
+				iy += strideY;
+				continue;
+			}
+			if ( v != 0.0 ) {
+				break;
+			}
+			s += v;
+			Y[ iy ] = s;
+			ix += strideX;
+			iy += strideY;
+		}
+	} else {
+		i = 0;
+	}
 	c = 0.0;
-	for ( i = 0; i < N; i++ ) {
+	for ( ; i < N; i++ ) {
 		v = X[ ix ];
 		if ( stdlib_base_is_nan( v ) ) {
 			Y[ iy ] = s + c;

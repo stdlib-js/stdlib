@@ -111,21 +111,17 @@ var y = mymgf( 0.1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mgf = require( '@stdlib/stats/base/dists/degenerate/mgf' );
 
-var mu;
-var t;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var t = discreteUniform( 100, 0, 5, opts );
+var mu = discreteUniform( 100, 0, 5, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    t = round( randu()*5.0 );
-    mu = round( randu()*5.0 );
-    y = mgf( t, mu );
-    console.log( 'x: %d, µ: %d, M_X(t;µ): %d', t, mu, y );
-}
+logEachMap( 'x: %0.4f, µ: %0.4f, M_X(t;µ): %0.4f', t, mu, mgf );
 ```
 
 </section>
