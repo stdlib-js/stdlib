@@ -117,8 +117,8 @@ contains
     ! ..
     ! External functions:
     interface
-      subroutine ccopy( N, cx, strideX, cy, strideY )
-        complex :: cx(*), cy(*)
+      subroutine ccopy( N, x, strideX, y, strideY )
+        complex :: x(*), y(*)
         integer :: strideX, strideY, N
       end subroutine ccopy
     end interface
