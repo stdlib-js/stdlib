@@ -19,7 +19,7 @@
 #ifndef STDLIB_STATS_BASE_DNANMSKRANGE_H
 #define STDLIB_STATS_BASE_DNANMSKRANGE_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Computes the range of a double-precision floating-point strided array according to a mask, ignoring `NaN` values.
 */
-double stdlib_strided_dnanmskrange( const int64_t N, const double *X, const int64_t strideX, const uint8_t *Mask, const int64_t strideMask );
+double API_SUFFIX(stdlib_strided_dnanmskrange)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const uint8_t *Mask, const CBLAS_INT strideMask );
+
+/**
+* Computes the range of a double-precision floating-point strided array according to a mask, ignoring `NaN` values and using alternative indexing semantics.
+*/
+double API_SUFFIX(stdlib_strided_dnanmskrange_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const uint8_t *Mask, const CBLAS_INT strideMask, const CBLAS_INT offsetMask );
 
 #ifdef __cplusplus
 }
