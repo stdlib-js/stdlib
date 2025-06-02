@@ -124,8 +124,8 @@ contains
     ! ..
     ! External functions:
     interface
-      real function scnrm2( N, cx, strideX )
-        complex :: cx(*)
+      real function scnrm2( N, x, strideX )
+        complex :: x(*)
         integer :: strideX, N
       end function scnrm2
     end interface
