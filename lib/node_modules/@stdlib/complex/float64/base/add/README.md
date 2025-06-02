@@ -132,8 +132,8 @@ var add = require( '@stdlib/complex/float64/base/add' );
 var z1 = new Complex128Array( discreteUniform( 200, -50, 50 ) );
 var z2 = new Complex128Array( discreteUniform( 200, -50, 50 ) );
 
-// Perform multiplication on each element of arrays:
-logEachMap( '(%s) * (%s) = %s', z1, z2, add );
+// Perform element-wise addition:
+logEachMap( '(%s) + (%s) = %s', z1, z2, add );
 ```
 
 </section>
