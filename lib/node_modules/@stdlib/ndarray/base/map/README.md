@@ -130,9 +130,8 @@ The callback function is provided the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarray = require( '@stdlib/array/filled' );
-var filledarrayBy = require( '@stdlib/array/filled-by' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var zeros = require( '@stdlib/array/zeros' );
 var abs = require( '@stdlib/math/base/special/abs' );
 var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
 var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
@@ -142,7 +141,9 @@ var map = require( '@stdlib/ndarray/base/map' );
 var N = 10;
 var x = {
     'dtype': 'generic',
-    'data': filledarrayBy( N, 'generic', discreteUniform( -100, 100 ) ),
+    'data': discreteUniform( N, -100, 100, {
+        'dtype': 'generic'
+    }),
     'shape': [ 5, 2 ],
     'strides': [ 2, 1 ],
     'offset': 0,
@@ -150,7 +151,7 @@ var x = {
 };
 var y = {
     'dtype': 'generic',
-    'data': filledarray( 0, N, 'generic' ),
+    'data': zeros( N, 'generic' ),
     'shape': x.shape.slice(),
     'strides': shape2strides( x.shape, 'column-major' ),
     'offset': 0,
