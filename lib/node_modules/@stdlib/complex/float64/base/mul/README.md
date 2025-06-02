@@ -138,7 +138,7 @@ var mul = require( '@stdlib/complex/float64/base/mul' );
 var z1 = new Complex128Array( discreteUniform( 200, -50, 50 ) );
 var z2 = new Complex128Array( discreteUniform( 200, -50, 50 ) );
 
-// Perform multiplication on each element of arrays:
+// Perform element-wise multiplication:
 logEachMap( '(%s) * (%s) = %s', z1, z2, mul );
 ```
 
