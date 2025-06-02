@@ -2552,7 +2552,7 @@ base.uncapitalize,"\nbase.uncapitalize( str:string )\n    Lowercases the first c
 base.uppercase,"\nbase.uppercase( str:string )\n    Converts a string to uppercase.\n"
 base.vercos,"\nbase.vercos( x:number )\n    Computes the versed cosine.\n"
 base.versin,"\nbase.versin( x:number )\n    Computes the versed sine.\n"
-base.wrap,"\nbase.wrap( v:number, min:number, max:number )\n    Wraps a value on the half-open interval `[min,max)`.\n"
+base.wrap,"\nbase.wrap( v:number, min:number, max:number )\n    Wraps a value to the half-open interval `[min,max)`.\n"
 base.xlog1py,"\nbase.xlog1py( x:number, y:number )\n    Computes `x * ln(y+1)` so that the result is `0` if `x = 0`.\n"
 base.xlogy,"\nbase.xlogy( x:number, y:number )\n    Computes `x * ln(y)` so that the result is `0` if `x = 0`.\n"
 base.zeta,"\nbase.zeta( s:number )\n    Evaluates the Riemann zeta function as a function of a real variable `s`.\n"
