@@ -124,22 +124,17 @@ The function supports the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var Complex64Array = require( '@stdlib/array/complex64' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mul = require( '@stdlib/complex/float32/base/mul' );
 
-var rand = discreteUniform( -50, 50 );
+// Generate arrays of random values:
+var z1 = new Complex64Array( discreteUniform( 200, -50, 50 ) );
+var z2 = new Complex64Array( discreteUniform( 200, -50, 50 ) );
 
-var z1;
-var z2;
-var z3;
-var i;
-for ( i = 0; i < 100; i++ ) {
-    z1 = new Complex64( rand(), rand() );
-    z2 = new Complex64( rand(), rand() );
-    z3 = mul( z1, z2 );
-    console.log( '(%s) * (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
-}
+// Perform multiplication on each element of arrays:
+logEachMap( '(%s) * (%s) = %s', z1, z2, mul );
 ```
 
 </section>
