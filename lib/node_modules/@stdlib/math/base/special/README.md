@@ -326,7 +326,7 @@ var fcns = special;
 -   <span class="signature">[`sqrtpi( x )`][@stdlib/math/base/special/sqrtpi]</span><span class="delimiter">: </span><span class="description">compute the principal square root of the product of π and a positive number.</span>
 -   <span class="signature">[`tribonacci( n )`][@stdlib/math/base/special/tribonacci]</span><span class="delimiter">: </span><span class="description">compute the nth Tribonacci number.</span>
 -   <span class="signature">[`trigamma( x )`][@stdlib/math/base/special/trigamma]</span><span class="delimiter">: </span><span class="description">trigamma function.</span>
--   <span class="signature">[`wrap( v, min, max )`][@stdlib/math/base/special/wrap]</span><span class="delimiter">: </span><span class="description">wrap a value on the half-open interval `[min,max)`.</span>
+-   <span class="signature">[`wrap( v, min, max )`][@stdlib/math/base/special/wrap]</span><span class="delimiter">: </span><span class="description">wrap a value to the half-open interval `[min,max)`.</span>
 
 </div>
 
