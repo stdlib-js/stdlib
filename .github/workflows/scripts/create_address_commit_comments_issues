@@ -29,7 +29,7 @@
 #   GITHUB_TOKEN   GitHub token for authentication.
 #
 
-# shellcheck disable=SC2153
+# shellcheck disable=SC2153,SC2155
 
 # Ensure that the exit status of pipelines is non-zero in the event that at least one
 # of the commands in a pipeline fails:
@@ -194,7 +194,7 @@ issue_exists_for_commit() {
 	local query
 
 	# Build a search query that looks for the commit short SHA in the issue title:
-	local raw_query="repo:${owner}/${repo} in:title \"commit ${short_sha}\""
+	local raw_query="repo:${owner}/${repo} in:title \"commit \`${short_sha}\`\""
 
 	# URL-encode the query using jq:
 	query=$(echo "$raw_query" | jq -sRr @uri)
@@ -211,8 +211,7 @@ issue_exists_for_commit() {
 	local total_count
 	total_count=$(echo "$response" | jq -r '.total_count')
 
-	if [ "$total_count" -gt 0 ]; then
-		# An issue already exists:
+	if [ "$total_count" = "null" ] || [ "$total_count" -gt 0 ]; then
 		return 0
 	else
 		return 1
@@ -234,19 +233,31 @@ is_core_contributor() {
 
 # Updates two indexed arrays (commit_keys and commit_counts) to simulate a map.
 #
-# $1 - Commit SHA (the key)
-# $2 - Comment URL (the link)
+# $1 - Full comment object (JSON)
 update_commit_map() {
-	local key="$1"
-	local link="$2"
+	local comment="$1"
+	local key=$(echo "$comment" | jq -r '.commit_id')
+	local link=$(echo "$comment" | jq -r '.html_url')
+	local body=$(echo "$comment" | jq -r '.body')
+	local line=$(echo "$comment" | jq -r '.line')
+	local path=$(echo "$comment" | jq -r '.path')
 	local found=0
 	local i=0
+
+	local startLine=$(( line - 3 ))
+	local endLine=$(( line + 3 ))
+	local code_snippet="https://github.com/stdlib-js/stdlib/blob/${key}/${path}#L${startLine}-L${endLine}"
+
+	local formatted_body=$(echo "${body}" | awk '{if(NR==1) {print $0} else {print "    " $0}}')
 
 	for existing in "${commit_keys[@]}"; do
 		if [ "$existing" = "$key" ]; then
 			commit_counts[i]=$(( commit_counts[i] + 1 ))
-			# Append the comment URL (on a new bullet) to the existing list:
-			commit_links[i]="${commit_links[i]}"$'\n'"-   ${link}"
+			if [ "$line" = "null" ]; then
+				commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > ${formatted_body}"$'\n\n'"    ${code_snippet}"
+			else
+				commit_comments[i]="${commit_comments[i]}"$'\n\n'"-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}"
+			fi
 			found=1
 			break
 		fi
@@ -256,7 +267,11 @@ update_commit_map() {
 	if [ "$found" -eq 0 ]; then
 		commit_keys+=("$key")
 		commit_counts+=("1")
-		commit_links+=("-   ${link}")
+		if [ "$line" = "null" ]; then
+			commit_comments+=("-   ${link}"$'\n\n'"    > ${formatted_body}"$'\n\n'"    ${code_snippet}")
+		else
+			commit_comments+=("-   ${link}"$'\n\n'"    > **Line ${line}**: ${formatted_body}"$'\n\n'"    ${code_snippet}")
+		fi
 	fi
 }
 
@@ -340,12 +355,11 @@ main() {
 
 	commit_keys=()
 	commit_counts=()
-	commit_links=()
+	commit_comments=()
 
 	for comment in "${all_comments[@]}"; do
 		# Extract the comment body:
-		local comment_body
-		comment_body=$(echo "$comment" | jq -r '.body')
+		local comment_body=$(echo "$comment" | jq -r '.body')
 
 		# Check if the comment body contains '@stdlib-bot':
 		if [[ "$comment_body" == *"@stdlib-bot"* ]]; then
@@ -358,10 +372,7 @@ main() {
 				local commit_sha
 				commit_sha=$(echo "$comment" | jq -r '.commit_id')
 				if [ -n "$commit_sha" ]; then
-					# Extract the comment URL:
-					local comment_url
-					comment_url=$(echo "$comment" | jq -r '.html_url')
-					update_commit_map "$commit_sha" "$comment_url"
+					update_commit_map "$comment"
 				fi
 			else
 				echo "Skipping comment by non-core contributor: ${comment_author}" >&2
@@ -374,7 +385,7 @@ main() {
 	for idx in $(seq 0 $(( ${#commit_keys[@]} - 1 ))); do
 		local commit_sha="${commit_keys[$idx]}"
 		local count="${commit_counts[$idx]}"
-		local links="${commit_links[$idx]}"
+		local comments="${commit_comments[$idx]}"
 
 		# Generate a short SHA (first 7 characters):
 		local short_sha=${commit_sha:0:7}
@@ -386,7 +397,7 @@ main() {
 
 **Comments:**
 
-${links}
+${comments}
 
 Interested in helping improve the project? If you are, the comment linked to above has **${count}** comment(s) from core contributors that could use your attention.
 
@@ -394,7 +405,7 @@ What do you need to do?
 
 1.  Open the above linked comments mentioning @stdlib-bot.
 2.  Review the suggested changes or follow-up tasks (e.g., formatting improvements, small refactorings, or clean-up).
-3.  If you are a first-time contributor, follow the [contributing](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md) and [development](https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md) guides to setup your local environment for contributing to stdlib. If you are already a seasoned stdlib contributor, create a new branch on your local fork for making the changes.
+3.  If you are a first-time contributor, follow the [contributing](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md) and [development](https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md) guides to setup your local environment for contributing to stdlib. If you are already a seasoned stdlib contributor, create a new branch on your local fork for making the changes.
 4.  Make all the desired changes and commit those changes to a local branch.
 5.  Push the changes to GitHub and open a new pull request against the \`develop\` branch of the main stdlib development [repository](https://github.com/stdlib-js/stdlib).
 
@@ -407,6 +418,14 @@ Thank you for your help in reducing the project backlog and in improving the qua
 * * *
 
 ## Notes
+
+-  When creating your pull request, please use the following format for the PR title:
+
+   \`\`\`
+   chore: address commit comments for commit \`${short_sha}\` (issue #NNNN)
+   \`\`\`
+
+   where \`NNNN\` is the issue number assigned to this issue.
 
 -  For older commits, there is a chance that comments will have been already been addressed due to other refactorings. If you find that to be true, don't worry! Just move on to addressing the next comment, and, when opening your pull request and describing your proposed changes, be sure to link to the comment and mention that it has been addressed. This will help reviewers when reviewing your code!
 
