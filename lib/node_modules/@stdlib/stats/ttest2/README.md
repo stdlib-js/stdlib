@@ -32,7 +32,7 @@ var ttest2 = require( '@stdlib/stats/ttest2' );
 
 #### ttest2( x, y\[, opts] )
 
-By default, the function performs a two-sample t-test for the null hypothesis that the data in [arrays][mdn-array] or [typed arrays][mdn-typed-array] `x` and `y` is  independently drawn from normal distributions with _equal_ means.
+By default, the function performs a two-sample t-test for the null hypothesis that the data in [arrays][mdn-array] or [typed arrays][mdn-typed-array] `x` and `y` is independently drawn from normal distributions with _equal_ means.
 
 ```javascript
 // Student's sleep data:

@@ -90,8 +90,8 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	double elapsed;
 	double x[ 100 ];
+	double elapsed;
 	double y;
 	double t;
 	int i;

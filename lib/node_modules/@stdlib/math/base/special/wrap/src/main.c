@@ -23,7 +23,7 @@
 #include "stdlib/math/base/assert/is_negative_zero.h"
 
 /**
-* Wraps a value on the half-open interval [min,max).
+* Wraps a value to the half-open interval [min,max).
 *
 * @param v    input value
 * @param min  minimum value
