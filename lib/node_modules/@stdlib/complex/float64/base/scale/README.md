@@ -124,20 +124,16 @@ The function supports the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var Complex128Array = require( '@stdlib/array/complex128' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var scale = require( '@stdlib/complex/float64/base/scale' );
 
-var rand = discreteUniform( -50, 50 );
+// Generate an array of random values:
+var values = new Complex128Array( discreteUniform( 200, -50, 50 ) );
 
-var z1;
-var z2;
-var i;
-for ( i = 0; i < 100; i++ ) {
-    z1 = new Complex128( rand(), rand() );
-    z2 = scale( 5.0, z1 );
-    console.log( '(%s) * 5.0 = %s', z1.toString(), z2.toString() );
-}
+// Scale each by a scalar constant:
+logEachMap( '%0.1f * (%s) = %s', 5.0, values, scale );
 ```
 
 </section>

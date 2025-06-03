@@ -124,8 +124,8 @@ contains
     ! ..
     ! External functions:
     interface
-      subroutine cscal( N, ca, cx, strideX )
-        complex :: ca, cx(*)
+      subroutine cscal( N, alpha, x, strideX )
+        complex :: alpha, x(*)
         integer :: strideX, N
       end subroutine cscal
     end interface
@@ -142,7 +142,7 @@ contains
     complex, allocatable :: x(:)
     ! ..
     ! Local scalar:
-    complex :: ca
+    complex :: alpha
     ! ..
     ! Intrinsic functions:
     intrinsic random_number, cpu_time, cmplx
@@ -152,7 +152,7 @@ contains
     ! ..
     call random_number( r1 )
     call random_number( r2 )
-    ca = cmplx( (real(r1)*5.0), (real(r2)*5.0) )
+    alpha = cmplx( (real(r1)*5.0), (real(r2)*5.0) )
     do i = 1, len
       call random_number( r1 )
       call random_number( r2 )
@@ -162,7 +162,7 @@ contains
     call cpu_time( t1 )
     ! ..
     do i = 1, iterations
-      call cscal( len, ca, x, 1 );
+      call cscal( len, alpha, x, 1 );
       if ( x( 1 ) /= x( 1 ) ) then
         print '(A)', 'should not return NaN'
         exit
