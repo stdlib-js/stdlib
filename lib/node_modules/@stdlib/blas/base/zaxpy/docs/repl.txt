@@ -1,69 +1,69 @@
 
-{{alias}}( N, za, zx, strideX, zy, strideY )
+{{alias}}( N, alpha, x, strideX, y, strideY )
     Scales a double-precision complex floating-point vector by a double-
     precision complex floating point constant and adds the result to a double-
     precision complex floating-point vector.
 
-    The `N` and stride parameters determine how values from `zx` are scaled by
-    `za` and added to `zy`.
+    The `N` and stride parameters determine how values from `x` are scaled by
+    `alpha` and added to `y`.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    If `N` is less than or equal to `0`, the function returns `zy` unchanged.
+    If `N` is less than or equal to `0`, the function returns `y` unchanged.
 
     Parameters
     ----------
     N: integer
         Number of indexed elements.
 
-    za: Complex128
+    alpha: Complex128
         Scalar constant.
 
-    zx: Complex128Array
+    x: Complex128Array
         First input array.
 
     strideX: integer
-        Index increment for `zx`.
+        Index increment for `x`.
 
-    zy: Complex128Array
+    y: Complex128Array
         Second input array.
 
     strideY: integer
-        Index increment for `zy`.
+        Index increment for `y`.
 
     Returns
     -------
-    zy: Complex128Array
+    y: Complex128Array
         Second input array.
 
     Examples
     --------
     // Standard usage:
-    > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > var zy = new {{alias:@stdlib/array/complex128}}( [ 1.0, 1.0, 1.0, 1.0 ] );
-    > var za = new {{alias:@stdlib/complex/float64/ctor}}( 2.0, 2.0 );
-    > {{alias}}( 2, za, zx, 1, zy, 1 )
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = new {{alias:@stdlib/array/complex128}}( [ 1.0, 1.0, 1.0, 1.0 ] );
+    > var alpha = new {{alias:@stdlib/complex/float64/ctor}}( 2.0, 2.0 );
+    > {{alias}}( 2, alpha, x, 1, y, 1 )
     <Complex128Array>[ -1.0, 7.0, -1.0, 15.0 ]
 
     // Advanced indexing:
-    > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-    > zy = new {{alias:@stdlib/array/complex128}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-    > {{alias}}( 2, za, zx, -2, zy, 1 )
+    > x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/complex128}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+    > {{alias}}( 2, alpha, x, -2, y, 1 )
     <Complex128Array>[ -1.0, 23.0, -1.0, 7.0, 1.0, 1.0 ]
 
     // Using typed array views:
-    > var zx0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > var zy0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 1.0, 1.0, 1.0 ] );
-    > var zx1 = new {{alias:@stdlib/array/complex128}}( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 );
-    > var zy1 = new {{alias:@stdlib/array/complex128}}( zy0.buffer, zy0.BYTES_PER_ELEMENT*1 );
-    > {{alias}}( 1, za, zx1, 1, zy1, 1 )
+    > var x0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 1.0, 1.0, 1.0 ] );
+    > var x1 = new {{alias:@stdlib/array/complex128}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/complex128}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 1, alpha, x1, 1, y1, 1 )
     <Complex128Array>[ -1.0, 15.0 ]
-    > zy0
+    > y0
     <Complex128Array>[ 1.0, 1.0, -1.0, 15.0 ]
 
 
-{{alias}}.ndarray( N, za, zx, strideX, offsetX, zy, strideY, offsetY )
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX, y, strideY, offsetY )
     Scales a double-precision complex floating-point vector by a double-
     precision complex floating-point constant and adds the result to a double-
     precision complex floating-point vector using alternative indexing
@@ -78,45 +78,45 @@
     N: integer
         Number of indexed elements.
 
-    za: Complex128
+    alpha: Complex128
         Scalar constant.
 
-    zx: Complex128Array
+    x: Complex128Array
         First input array.
 
     strideX: integer
-        Index increment for `zx`.
+        Index increment for `x`.
 
     offsetX: integer
-        Starting index for `zx`.
+        Starting index for `x`.
 
-    zy: Complex128Array
+    y: Complex128Array
         Second input array.
 
     strideY: integer
-        Index increment for `zy`.
+        Index increment for `y`.
 
     offsetY: integer
-        Starting index for `zy`.
+        Starting index for `y`.
 
     Returns
     -------
-    zy: Complex128Array
+    y: Complex128Array
         Second input array.
 
     Examples
     --------
     // Standard usage:
-    > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > var zy = new {{alias:@stdlib/array/complex128}}( [ 1.0, 1.0, 1.0, 1.0 ] );
-    > var za = new {{alias:@stdlib/complex/float64/ctor}}( 2.0, 2.0 );
-    > {{alias}}.ndarray( zx.length, za, zx, 1, 0, zy, 1, 0 )
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = new {{alias:@stdlib/array/complex128}}( [ 1.0, 1.0, 1.0, 1.0 ] );
+    > var alpha = new {{alias:@stdlib/complex/float64/ctor}}( 2.0, 2.0 );
+    > {{alias}}.ndarray( x.length, alpha, x, 1, 0, y, 1, 0 )
     <Complex128Array>[ -1.0, 7.0, -1.0, 15.0 ]
 
     // Advanced indexing:
-    > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-    > zy = new {{alias:@stdlib/array/complex128}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-    > {{alias}}.ndarray( 2, za, zx, 1, 1, zy, 1, 1 )
+    > x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/complex128}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+    > {{alias}}.ndarray( 2, alpha, x, 1, 1, y, 1, 1 )
     <Complex128Array>[ 1.0, 1.0, -1.0, 15.0, -1.0, 23.0 ]
 
     See Also

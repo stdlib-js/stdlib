@@ -101,16 +101,16 @@ v = mean( -1.5 );
 
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mean = require( '@stdlib/stats/base/dists/bradford/mean' );
 
-var c = uniform( 10, 0.1, 10.0 );
+var opts = {
+    'dtype': 'float64'
+};
+var c = uniform( 10, 0.1, 10.0, opts );
 
-var v;
-var i;
-for ( i = 0; i < c.length; i++ ) {
-    v = mean( c[ i ] );
-    console.log( 'c: %d, E(X;c): %d', c[ i ].toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'c: %0.4f, E(X;c): %0.4f', c, mean );
+
 ```
 
 </section>
