@@ -51,7 +51,7 @@ function clbk( value ) {
 var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 0.0, 6.0 ] ] ] );
 // returns <ndarray>
 
-// Perform operation:
+// Perform reduction:
 var out = countIf( x, clbk );
 // returns <ndarray>
 
@@ -85,7 +85,7 @@ function clbk( value ) {
 var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 0.0, 6.0 ] ] ] );
 // returns <ndarray>
 
-// Perform operation:
+// Perform reduction:
 var opts = {
     'dims': [ 1, 2 ]
 };
@@ -110,7 +110,7 @@ function clbk( value ) {
 var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 0.0, 6.0 ] ] ] );
 // returns <ndarray>
 
-// Perform operation:
+// Perform reduction:
 var opts = {
     'dims': [ 1, 2 ],
     'keepdims': true
@@ -144,7 +144,7 @@ var ctx = {
     'count': 0
 };
 
-// Perform operation:
+// Perform reduction:
 var out = countIf( x, clbk, ctx );
 // returns <ndarray>
 
@@ -176,7 +176,7 @@ var y = empty( [], {
     'dtype': 'int32'
 });
 
-// Perform operation:
+// Perform reduction:
 var out = countIf.assign( x, y, clbk );
 // returns <ndarray>
 
@@ -219,7 +219,7 @@ var y = empty( [ 3 ], {
     'dtype': 'int32'
 });
 
-// Perform operation:
+// Perform reduction:
 var opts = {
     'dims': [ 1, 2 ]
 };

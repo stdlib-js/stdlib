@@ -122,7 +122,7 @@ interface CountIf {
 	* // Create an input ndarray:
 	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
 	*
-	* // Perform operation:
+	* // Perform reduction:
 	* var out = countIf( x, predicate );
 	* // returns <ndarray>
 	*
@@ -165,7 +165,7 @@ interface CountIf {
 	* // Create an input ndarray:
 	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
 	*
-	* // Perform operation:
+	* // Perform reduction:
 	* var out = countIf( x, {}, predicate );
 	* // returns <ndarray>
 	*
@@ -214,7 +214,7 @@ interface CountIf {
 	*     'dtype': 'int32'
 	* });
 	*
-	* // Perform operation:
+	* // Perform reduction:
 	* var out = countIf.assign( x, y, predicate );
 	* // returns <ndarray>
 	*
@@ -263,7 +263,7 @@ interface CountIf {
 	*     'dtype': 'int32'
 	* });
 	*
-	* // Perform operation:
+	* // Perform reduction:
 	* var out = countIf.assign( x, y, {}, predicate );
 	* // returns <ndarray>
 	*
@@ -307,7 +307,7 @@ interface CountIf {
 * // Create an input ndarray:
 * var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
 *
-* // Perform operation:
+* // Perform reduction:
 * var out = countIf( x, predicate );
 * // returns <ndarray>
 *
@@ -343,7 +343,7 @@ interface CountIf {
 *     'dtype': 'int32'
 * });
 *
-* // Perform operation:
+* // Perform reduction:
 * var out = countIf.assign( x, y, predicate );
 * // returns <ndarray>
 *
