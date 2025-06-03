@@ -124,8 +124,8 @@ contains
     ! ..
     ! External functions:
     interface
-      real function scasum( N, cx, strideX )
-        complex :: cx(*)
+      real function scasum( N, x, strideX )
+        complex :: x(*)
         integer :: strideX, N
       end function scasum
     end interface
