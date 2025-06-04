@@ -59,6 +59,20 @@ interface Namespace {
 	*
 	* ns.logEach( '%d < %d ', x, y );
 	* // e.g., => '1 < 4\n2 < 5\n3 < 6\n'
+	*
+	* @example
+	* var x = [ 0.5, 1.0, 1.5 ];
+	* var y = [ 0.25, 0.5, 0.75 ];
+	*
+	* ns.logEach( '%0.2f > %0.2f', x, y );
+	* // e.g., => '0.50 > 0.25\n1.00 > 0.50\n1.50 > 0.75\n'
+	*
+	* @example
+	* var x = [ 'foo', 'bar' ];
+	* var y = [ 'beep', 'boop' ];
+	*
+	* ns.logEach( 'x: %s, y: %s', x, y );
+	* // e.g., => 'x: foo, y: beep\nx: bar, y: boop\n'
 	*/
 	logEach: typeof logEach;
 

@@ -23,7 +23,7 @@ import acovercos = require( './index' );
 
 // The function returns a number...
 {
-	acovercos( 8 ); // $ExpectType number
+	acovercos( 1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a value other than a number...
