@@ -124,8 +124,8 @@ contains
     ! ..
     ! External functions:
     interface
-      double precision function dznrm2( N, zx, strideX )
-        complex(kind=kind(0.0d0)) :: zx(*)
+      double precision function dznrm2( N, x, strideX )
+        complex(kind=kind(0.0d0)) :: x(*)
         integer :: strideX, N
       end function dznrm2
     end interface

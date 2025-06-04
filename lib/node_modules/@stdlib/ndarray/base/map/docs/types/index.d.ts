@@ -20,7 +20,6 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
 import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
@@ -28,7 +27,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *
 * @returns output value
 */
-type Nullary<U, ThisArg> = ( this: ThisArg ) => U;
+type Nullary<V, ThisArg> = ( this: ThisArg ) => V;
 
 /**
 * Callback invoked for each ndarray element.
@@ -36,26 +35,16 @@ type Nullary<U, ThisArg> = ( this: ThisArg ) => U;
 * @param value - current array element
 * @returns output value
 */
-type Unary<T, U, ThisArg> = ( this: ThisArg, value: T ) => U;
-
-/**
-* Callback invoked for each ndarray element.
-*
-* @param value - current array element
-* @param indices - current array element indices
-* @returns output value
-*/
-type Binary<T, U, ThisArg> = ( this: ThisArg, value: T, indices: Array<number> ) => U;
+type Unary<T, V, ThisArg> = ( this: ThisArg, value: T ) => V;
 
 /**
 * Callback invoked for each ndarray element.
 *
 * @param value - current array element
 * @param indices - current array element indices
-* @param arr - input array
 * @returns output value
 */
-type Ternary<T, U, ThisArg> = ( this: ThisArg, value: T, indices: Array<number>, arr: typedndarray<T> ) => U;
+type Binary<T, V, ThisArg> = ( this: ThisArg, value: T, indices: Array<number> ) => V;
 
 /**
 * Callback invoked for each ndarray element.
@@ -65,7 +54,17 @@ type Ternary<T, U, ThisArg> = ( this: ThisArg, value: T, indices: Array<number>,
 * @param arr - input array
 * @returns output value
 */
-type Callback<T, U, ThisArg> = Nullary<U, ThisArg> | Unary<T, U, ThisArg> | Binary<T, U, ThisArg> | Ternary<T, U, ThisArg>;
+type Ternary<T, U, V, ThisArg> = ( this: ThisArg, value: T, indices: Array<number>, arr: U ) => V;
+
+/**
+* Callback invoked for each ndarray element.
+*
+* @param value - current array element
+* @param indices - current array element indices
+* @param arr - input array
+* @returns output value
+*/
+type Callback<T, U, V, ThisArg> = Nullary<V, ThisArg> | Unary<T, V, ThisArg> | Binary<T, V, ThisArg> | Ternary<T, U, V, ThisArg>;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in an output ndarray.
@@ -109,7 +108,7 @@ type Callback<T, U, ThisArg> = Nullary<U, ThisArg> | Unary<T, U, ThisArg> | Bina
 * console.log( y.data );
 * // => <Float64Array>[ 20.0, 30.0, 60.0, 70.0, 100.0, 110.0 ]
 */
-declare function map<T = unknown, U = unknown, ThisArg = unknown>( arrays: ArrayLike<typedndarray<T>>, fcn: Callback<T, U, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, ThisArg>> ): void;
+declare function map<T = unknown, U extends typedndarray<T> = typedndarray<T>, V = unknown, ThisArg = unknown>( arrays: [ U, typedndarray<V> ], fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): void;
 
 
 // EXPORTS //
