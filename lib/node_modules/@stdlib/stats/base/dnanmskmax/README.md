@@ -229,6 +229,8 @@ double stdlib_strided_dnanmskmax( const CBLAS_INT N, const double *X, const CBLA
 Computes the maximum value of a double-precision floating-point strided array according to a `mask`, ignoring `NaN` values and using alternative indexing semantics.
 
 ```c
+#include <stdint.h>
+
 const double x[] = { 1.0, -2.0, 4.0, 2.0, 0.0/0.0 };
 const uint8_t mask[] = { 0, 0, 1, 0, 0 };
 
