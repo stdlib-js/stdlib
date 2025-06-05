@@ -30,84 +30,84 @@ interface Routine {
 	* Applies a plane rotation.
 	*
 	* @param N - number of indexed elements
-	* @param cx - first input array
-	* @param strideX - `cx` stride length
-	* @param cy - second input array
-	* @param strideY - `cy` stride length
+	* @param x - first input array
+	* @param strideX - `x` stride length
+	* @param y - second input array
+	* @param strideY - `y` stride length
 	* @param c - cosine of the angle of rotation
 	* @param s - sine of the angle of rotation
-	* @returns `cy`
+	* @returns `y`
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	*
-	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-	* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+	* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+	* var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
-	* csrot( cx.length, cx, 1, cy, 1, 0.8, 0.6 );
-	* // cx => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4 ]
-	* // cy => <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8 ]
+	* csrot( x.length, x, 1, y, 1, 0.8, 0.6 );
+	* // x => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4 ]
+	* // y => <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8 ]
 	*/
-	( N: number, cx: Complex64Array, strideX: number, cy: Complex64Array, strideY: number, c: number, s: number ): Complex64Array;
+	( N: number, x: Complex64Array, strideX: number, y: Complex64Array, strideY: number, c: number, s: number ): Complex64Array;
 
 	/**
 	* Applies a plane rotation using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param cx - first input array
-	* @param strideX - `cx` stride length
-	* @param offsetX - starting index for `cx`
-	* @param cy - second input array
-	* @param strideY - `cy` stride length
-	* @param offsetY - starting index for `cy`
+	* @param x - first input array
+	* @param strideX - `x` stride length
+	* @param offsetX - starting index for `x`
+	* @param y - second input array
+	* @param strideY - `y` stride length
+	* @param offsetY - starting index for `y`
 	* @param c - cosine of the angle of rotation
 	* @param s - sine of the angle of rotation
-	* @returns `cy`
+	* @returns `y`
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	*
-	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-	* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+	* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+	* var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
-	* csrot.ndarray( cx.length, cx, 1, 0, cy, 1, 0, 0.8, 0.6 );
-	* // cx => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4 ]
-	* // cy => <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8 ]
+	* csrot.ndarray( x.length, x, 1, 0, y, 1, 0, 0.8, 0.6 );
+	* // x => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4 ]
+	* // y => <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8 ]
 	*/
-	ndarray( N: number, cx: Complex64Array, strideX: number, offsetX: number, cy: Complex64Array, strideY: number, offsetY: number, c: number, s: number ): Complex64Array;
+	ndarray( N: number, x: Complex64Array, strideX: number, offsetX: number, y: Complex64Array, strideY: number, offsetY: number, c: number, s: number ): Complex64Array;
 }
 
 /**
 * Applies a plane rotation.
 *
 * @param N - number of indexed elements
-* @param cx - first input array
-* @param strideX - `cx` stride length
-* @param cy - second input array
-* @param strideY - `cy` stride length
+* @param x - first input array
+* @param strideX - `x` stride length
+* @param y - second input array
+* @param strideY - `y` stride length
 * @param c - cosine of the angle of rotation
 * @param s - sine of the angle of rotation
-* @returns `cy`
+* @returns `y`
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 *
-* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+* var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
-* csrot( 2, cx, 2, cy, 1, 0.8, 0.6 );
-* // cx => <Complex64Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
-* // cy => <Complex64Array>[ ~-0.6, ~-1.2, -3.0, ~-3.6, 0.0, 0.0, 0.0, 0.0 ]
+* csrot( 2, x, 2, y, 1, 0.8, 0.6 );
+* // x => <Complex64Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
+* // y => <Complex64Array>[ ~-0.6, ~-1.2, -3.0, ~-3.6, 0.0, 0.0, 0.0, 0.0 ]
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 *
-* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+* var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
-* csrot.ndarray( 2, cx, 2, 0, cy, 1, 0, 0.8, 0.6 );
-* // cx => <Complex64Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
-* // cy => <Complex64Array>[ ~-0.6, ~-1.2, -3.0, ~-3.6, 0.0, 0.0, 0.0, 0.0 ]
+* csrot.ndarray( 2, x, 2, 0, y, 1, 0, 0.8, 0.6 );
+* // x => <Complex64Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
+* // y => <Complex64Array>[ ~-0.6, ~-1.2, -3.0, ~-3.6, 0.0, 0.0, 0.0, 0.0 ]
 */
 declare var csrot: Routine;
 

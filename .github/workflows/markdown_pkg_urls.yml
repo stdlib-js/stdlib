@@ -124,7 +124,7 @@ jobs:
         run: |
           make markdown-pkg-urls MARKDOWN_FILTER='.*/lib/node_modules/@stdlib/.*'
 
-          # Stage *all* tracked and untracked changes first…
+          # Stage *all* tracked and untracked changes first...
           git add -A
 
           if git diff --cached --quiet; then

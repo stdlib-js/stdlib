@@ -78,7 +78,7 @@ jobs:
         run: |
           make update-contributors
 
-          # Stage *all* tracked and untracked changes first…
+          # Stage *all* tracked and untracked changes first...
           git add -A
 
           # If the index is identical to HEAD, nothing real changed:
