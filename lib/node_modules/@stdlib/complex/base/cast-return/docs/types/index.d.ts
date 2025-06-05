@@ -222,7 +222,7 @@ declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): WrappedNulla
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var identityf = require( '@stdlib/math/base/special/identityf' );
+* var identityf = require( '@stdlib/number/float32/base/identity' );
 * var realf = require( '@stdlib/complex/float32/real' );
 * var imagf = require( '@stdlib/complex/float32/imag' );
 *

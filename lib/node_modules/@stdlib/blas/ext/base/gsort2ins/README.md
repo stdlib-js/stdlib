@@ -140,7 +140,7 @@ console.log( y );
 ## Notes
 
 -   If `N <= 0` or `order == 0.0`, both functions leave `x` and `y` unchanged.
--   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor])
+-   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 -   The algorithm distinguishes between `-0` and `+0`. When sorted in increasing order, `-0` is sorted before `+0`. When sorted in decreasing order, `-0` is sorted after `+0`.
 -   The algorithm sorts `NaN` values to the end. When sorted in increasing order, `NaN` values are sorted last. When sorted in decreasing order, `NaN` values are sorted first.
 -   The algorithm has space complexity `O(1)` and worst case time complexity `O(N^2)`.

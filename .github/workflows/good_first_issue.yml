@@ -40,7 +40,6 @@ jobs:
     # Define job permissions:
     permissions:
       contents: read
-      pull-requests: write
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
