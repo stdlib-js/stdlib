@@ -24,6 +24,8 @@ limitations under the License.
 
 <section class="intro">
 
+</section>
+
 <!-- /.intro -->
 
 <section class="usage">
@@ -61,7 +63,7 @@ v = bernoullif( 20 );
 // returns ~-529.124
 ```
 
-For even integers `n >= 66`, the function alternates between returning positive and negative infinity, as larger [Bernoulli numbers][bernoulli-number] cannot be safely represented in [single-precision floating-point format][ieee754]
+For even integers `n >= 66`, the function alternates between returning positive and negative infinity, as larger [Bernoulli numbers][bernoulli-number] cannot be safely represented in [single-precision floating-point format][ieee754].
 
 ```javascript
 var v = bernoullif( 66 );

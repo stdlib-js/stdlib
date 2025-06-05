@@ -44,7 +44,7 @@ function fcn2(): ComplexLike {
 
 // TESTS //
 
-// The function returns `undefined`...
+// The function returns an ndarray...
 {
 	fillBy( zeros( 'float64', [ 2, 2 ], 'row-major' ), fcn1 ); // $ExpectType float64ndarray
 	fillBy( zeros( 'complex128', [ 2, 2 ], 'row-major' ), fcn2 ); // $ExpectType complex128ndarray

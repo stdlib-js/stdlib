@@ -69,28 +69,17 @@ var im = imag( v );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
+var Complex128Array = require( '@stdlib/array/complex128' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cdiv = require( '@stdlib/complex/float64/base/div' );
 
-function randomComplex() {
-    var re = discreteUniform( -50, 50 );
-    var im = discreteUniform( -50, 50 );
-    return new Complex128( re, im );
-}
+// Generate arrays of random values:
+var z1 = new Complex128Array( discreteUniform( 200, -50, 50 ) );
+var z2 = new Complex128Array( discreteUniform( 200, -50, 50 ) );
 
-var z1;
-var z2;
-var z3;
-var i;
-for ( i = 0; i < 100; i++ ) {
-    z1 = randomComplex();
-    z2 = randomComplex();
-    z3 = cdiv( z1, z2 );
-    console.log( '(%s) / (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
-}
+// Perform element-wise division:
+logEachMap( '(%s) / (%s) = %s', z1, z2, cdiv );
 ```
 
 </section>

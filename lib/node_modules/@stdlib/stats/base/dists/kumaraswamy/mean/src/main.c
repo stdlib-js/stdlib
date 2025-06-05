@@ -40,5 +40,5 @@ double stdlib_base_dists_kumaraswamy_mean( const double a, const double b ) {
 	) {
 		return 0.0/0.0; // NaN
 	}
-	return b * stdlib_base_beta( 1.0 + (1.0 / a), b );
+	return b * stdlib_base_beta( 1.0 + ( 1.0/a ), b );
 }
