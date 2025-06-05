@@ -124,8 +124,8 @@ contains
     ! ..
     ! External functions:
     interface
-      subroutine zscal( N, za, zx, strideX )
-        complex(kind=kind(0.0d0)) :: za, zx(*)
+      subroutine zscal( N, alpha, x, strideX )
+        complex(kind=kind(0.0d0)) :: alpha, x(*)
         integer :: strideX, N
       end subroutine zscal
     end interface
@@ -142,7 +142,7 @@ contains
     complex(kind=kind(0.0d0)), allocatable :: x(:)
     ! ..
     ! Local scalar:
-    complex(kind=kind(0.0d0)) :: za
+    complex(kind=kind(0.0d0)) :: alpha
     ! ..
     ! Intrinsic functions:
     intrinsic random_number, cpu_time, cmplx
@@ -152,7 +152,7 @@ contains
     ! ..
     call random_number( r1 )
     call random_number( r2 )
-    za = cmplx( (r1*1.0d0), (r2*0.0d0), kind=kind(0.0d0) )
+    alpha = cmplx( (r1*1.0d0), (r2*0.0d0), kind=kind(0.0d0) )
     do i = 1, len
       call random_number( r1 )
       call random_number( r2 )
@@ -162,7 +162,7 @@ contains
     call cpu_time( t1 )
     ! ..
     do i = 1, iterations
-      call zscal( len, za, x, 1 );
+      call zscal( len, alpha, x, 1 );
       if ( x( 1 ) /= x( 1 ) ) then
         print '(A)', 'should not return NaN'
         exit

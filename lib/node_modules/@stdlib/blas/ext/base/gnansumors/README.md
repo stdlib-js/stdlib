@@ -109,7 +109,7 @@ var v = gnansumors.ndarray( 5, x, 2, 1 );
 ## Notes
 
 -   If `N <= 0`, both functions return `0.0`.
--   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor])
+-   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 -   Ordinary recursive summation (i.e., a "simple" sum) is performant, but can incur significant numerical error. If performance is paramount and error tolerated, using ordinary recursive summation is acceptable; in all other cases, exercise due caution.
 -   Depending on the environment, the typed versions ([`dnansumors`][@stdlib/blas/ext/base/dnansumors], [`snansumors`][@stdlib/blas/ext/base/snansumors], etc.) are likely to be significantly more performant.
 

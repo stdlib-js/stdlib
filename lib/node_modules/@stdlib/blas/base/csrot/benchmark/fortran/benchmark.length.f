@@ -117,8 +117,8 @@ contains
     ! ..
     ! External functions:
     interface
-      subroutine csrot( N, cx, strideX, cy, strideY, c, s )
-        complex :: cx(*), cy(*)
+      subroutine csrot( N, x, strideX, y, strideY, c, s )
+        complex :: x(*), y(*)
         integer :: strideX, strideY, N
         real :: c, s
       end subroutine csrot
