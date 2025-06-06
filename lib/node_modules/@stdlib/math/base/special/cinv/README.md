@@ -77,20 +77,16 @@ var im = imag( v );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var uniform = require( '@stdlib/random/base/uniform' );
+var Complex128Array = require( '@stdlib/array/complex64' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cinv = require( '@stdlib/math/base/special/cinv' );
 
-var z1;
-var z2;
-var i;
+// Create an array of random numbers:
+var arr = new Complex128Array( uniform( 200, -100.0, 100.0 ) );
 
-for ( i = 0; i < 100; i++ ) {
-    z1 = new Complex128( uniform( -50.0, 50.0 ), uniform( -50.0, 50.0 ) );
-    z2 = cinv( z1 );
-
-    console.log( '1.0 / (%s) = %s', z1.toString(), z2.toString() );
-}
+// Compute the inverse of each number in the array:
+logEachMap( '1.0 / (%s) = %s', arr, cinv );
 ```
 
 </section>
