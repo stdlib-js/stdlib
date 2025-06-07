@@ -1,0 +1,50 @@
+
+{{alias}}( arrays, clbk[, thisArg] )
+    Computes the maximum value of a one-dimensional ndarray via a callback
+    function.
+
+    If provided an empty ndarray, the function returns `NaN`.
+
+    The callback function is provided three arguments:
+
+    - value: current array element.
+    - index: current array index.
+    - array: the input ndarray.
+
+    The callback function should return a numeric value.
+
+    If the callback function does not return any value (or equivalently,
+    explicitly returns `undefined`), the value is ignored.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: number
+        Maximum value.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, -2.0, 2.0 ];
+    > var dt = 'generic';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > function f ( v ) { return v * 2.0; };
+    > {{alias}}( [ x ], f )
+    4.0
+
+    See Also
+    --------
+
