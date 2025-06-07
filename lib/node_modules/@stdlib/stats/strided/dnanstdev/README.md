@@ -33,7 +33,7 @@ The population [standard deviation][standard-deviation] of a finite size populat
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\sigma = \sqrt{\frac{1}{N} \sum_{i=0}^{N-1} (x_i - \mu)^2}" data-equation="eq:population_standard_deviation">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@8d3edee773621acb26e638a5526260a233cfaf8b/lib/node_modules/@stdlib/stats/base/dnanstdev/docs/img/equation_population_standard_deviation.svg" alt="Equation for the population standard deviation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@8d3edee773621acb26e638a5526260a233cfaf8b/lib/node_modules/@stdlib/stats/strided/dnanstdev/docs/img/equation_population_standard_deviation.svg" alt="Equation for the population standard deviation.">
     <br>
 </div> -->
 
@@ -48,7 +48,7 @@ where the population mean is given by
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i" data-equation="eq:population_mean">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@8d3edee773621acb26e638a5526260a233cfaf8b/lib/node_modules/@stdlib/stats/base/dnanstdev/docs/img/equation_population_mean.svg" alt="Equation for the population mean.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@8d3edee773621acb26e638a5526260a233cfaf8b/lib/node_modules/@stdlib/stats/strided/dnanstdev/docs/img/equation_population_mean.svg" alt="Equation for the population mean.">
     <br>
 </div> -->
 
@@ -63,7 +63,7 @@ s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="s = \sqrt{\frac{1}{n-1} \sum_{i=0}^{n-1} (x_i - \bar{x})^2}" data-equation="eq:corrected_sample_standard_deviation">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@8d3edee773621acb26e638a5526260a233cfaf8b/lib/node_modules/@stdlib/stats/base/dnanstdev/docs/img/equation_corrected_sample_standard_deviation.svg" alt="Equation for computing a corrected sample standard deviation.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@8d3edee773621acb26e638a5526260a233cfaf8b/lib/node_modules/@stdlib/stats/strided/dnanstdev/docs/img/equation_corrected_sample_standard_deviation.svg" alt="Equation for computing a corrected sample standard deviation.">
     <br>
 </div> -->
 
@@ -78,7 +78,7 @@ where the sample mean is given by
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\bar{x} = \frac{1}{n} \sum_{i=0}^{n-1} x_i" data-equation="eq:sample_mean">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@8d3edee773621acb26e638a5526260a233cfaf8b/lib/node_modules/@stdlib/stats/base/dnanstdev/docs/img/equation_sample_mean.svg" alt="Equation for the sample mean.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@8d3edee773621acb26e638a5526260a233cfaf8b/lib/node_modules/@stdlib/stats/strided/dnanstdev/docs/img/equation_sample_mean.svg" alt="Equation for the sample mean.">
     <br>
 </div> -->
 
@@ -95,7 +95,7 @@ The use of the term `n-1` is commonly referred to as Bessel's correction. Note, 
 ## Usage
 
 ```javascript
-var dnanstdev = require( '@stdlib/stats/base/dnanstdev' );
+var dnanstdev = require( '@stdlib/stats/strided/dnanstdev' );
 ```
 
 #### dnanstdev( N, correction, x, strideX )
@@ -196,7 +196,7 @@ var v = dnanstdev.ndarray( 4, 1, x, 2, 1 );
 var uniform = require( '@stdlib/random/base/uniform' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var bernoulli = require( '@stdlib/random/base/bernoulli' );
-var dnanstdev = require( '@stdlib/stats/base/dnanstdev' );
+var dnanstdev = require( '@stdlib/stats/strided/dnanstdev' );
 
 function rand() {
     if ( bernoulli( 0.8 ) < 1 ) {
@@ -239,7 +239,7 @@ console.log( v );
 ### Usage
 
 ```c
-#include "stdlib/stats/base/dnanstdev.h"
+#include "stdlib/stats/strided/dnanstdev.h"
 ```
 
 #### stdlib_strided_dnanstdev( N, correction, \*X, strideX )
@@ -306,7 +306,7 @@ double stdlib_strided_dnanstdev_ndarray( const CBLAS_INT N, const double correct
 ### Examples
 
 ```c
-#include "stdlib/stats/base/dnanstdev.h"
+#include "stdlib/stats/strided/dnanstdev.h"
 #include <stdio.h>
 
 int main( void ) {

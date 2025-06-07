@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/stats/base/dnanstdev.h"
+#include "stdlib/stats/strided/dnanstdev.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

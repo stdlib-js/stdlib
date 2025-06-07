@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/stats/base/dnanstdev.h"
+#include "stdlib/stats/strided/dnanstdev.h"
 #include "stdlib/stats/strided/dnanstdevpn.h"
 #include "stdlib/blas/base/shared.h"
 

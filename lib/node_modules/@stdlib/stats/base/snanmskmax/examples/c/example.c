@@ -22,17 +22,17 @@
 
 int main( void ) {
 	// Create a strided array:
-	const float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 };
+	const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f, 0.0f/0.0f, 0.0f/0.0f };
 
 	// Create a mask array:
 	const uint8_t mask[] = { 0, 0, 0, 0, 0, 0, 0, 0, 1, 1 };
 
 	// Specify the number of elements:
-	int64_t N = 5;
+	const int N = 5;
 
 	// Specify the stride lengths:
-	int64_t strideX = 2;
-	int64_t strideMask = 2;
+	const int strideX = 2;
+	const int strideMask = 2;
 
 	// Compute the maximum value:
 	float v = stdlib_strided_snanmskmax( N, x, strideX, mask, strideMask );
