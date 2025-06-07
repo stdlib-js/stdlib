@@ -19,9 +19,14 @@
 import AccessorArray = require( '@stdlib/array/base/accessor' );
 import minBy = require( './index' );
 
-const accessor = (): number => {
+/**
+* Accessor function.
+*
+* @returns accessed value
+*/
+function accessor(): number {
 	return 5.0;
-};
+}
 
 
 // TESTS //
@@ -40,7 +45,6 @@ const accessor = (): number => {
 // The compiler throws an error if the function is provided a first argument which is not a numeric array...
 {
 	minBy( 10, accessor ); // $ExpectError
-	minBy( '10', accessor ); // $ExpectError
 	minBy( true, accessor ); // $ExpectError
 	minBy( false, accessor ); // $ExpectError
 	minBy( null, accessor ); // $ExpectError

@@ -69,23 +69,17 @@ var im = imag( v );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
+var Complex128Array = require( '@stdlib/array/complex128' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var csub = require( '@stdlib/complex/float64/base/sub' );
 
-var rand;
-var z1;
-var z2;
-var z3;
-var i;
+// Generate arrays of random values:
+var z1 = new Complex128Array( discreteUniform( 200, -50, 50 ) );
+var z2 = new Complex128Array( discreteUniform( 200, -50, 50 ) );
 
-rand = discreteUniform( -50, 50 );
-for ( i = 0; i < 100; i++ ) {
-    z1 = new Complex128( rand(), rand() );
-    z2 = new Complex128( rand(), rand() );
-    z3 = csub( z1, z2 );
-    console.log( '(%s) - (%s) = %s', z1.toString(), z2.toString(), z3.toString() );
-}
+// Perform element-wise subtraction:
+logEachMap( '(%s) - (%s) = %s', z1, z2, csub );
 ```
 
 </section>

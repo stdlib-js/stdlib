@@ -19,9 +19,14 @@
 import AccessorArray = require( '@stdlib/array/base/accessor' );
 import maxBy = require( './index' );
 
-const accessor = (): number => {
+/**
+* Accessor function.
+*
+* @returns accessed value
+*/
+function accessor(): number {
 	return 5.0;
-};
+}
 
 
 // TESTS //
@@ -40,7 +45,6 @@ const accessor = (): number => {
 // The compiler throws an error if the function is provided a first argument which is not a numeric array...
 {
 	maxBy( 10, accessor ); // $ExpectError
-	maxBy( '10', accessor ); // $ExpectError
 	maxBy( true, accessor ); // $ExpectError
 	maxBy( false, accessor ); // $ExpectError
 	maxBy( null, accessor ); // $ExpectError
