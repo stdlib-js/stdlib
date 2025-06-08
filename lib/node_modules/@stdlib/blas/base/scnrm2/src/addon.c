@@ -36,8 +36,8 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 3 );
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
-	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, CX, N, strideX, argv, 1 );
-	STDLIB_NAPI_CREATE_DOUBLE( env, (double)API_SUFFIX(c_scnrm2)( N, (void *)CX, strideX ), norm );
+	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, X, N, strideX, argv, 1 );
+	STDLIB_NAPI_CREATE_DOUBLE( env, (double)API_SUFFIX(c_scnrm2)( N, (void *)X, strideX ), norm );
 	return norm;
 }
 
@@ -53,8 +53,8 @@ static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 2 );
 	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 3 );
-	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, CX, N, strideX, argv, 1 );
-	STDLIB_NAPI_CREATE_DOUBLE( env, (double)API_SUFFIX(c_scnrm2_ndarray)( N, (void *)CX, strideX, offsetX ), norm );
+	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, X, N, strideX, argv, 1 );
+	STDLIB_NAPI_CREATE_DOUBLE( env, (double)API_SUFFIX(c_scnrm2_ndarray)( N, (void *)X, strideX, offsetX ), norm );
 	return norm;
 }
 

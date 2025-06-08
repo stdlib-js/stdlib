@@ -1,0 +1,30 @@
+
+{{alias}}( x, y, z )
+    Computes `sqrt(x^2 + y^2 + z^2)` in a manner which doesn't cause
+    unnecessary overflow.
+
+    Parameters
+    ----------
+    x: number
+        First input number.
+
+    y: number
+        Second input number.
+
+    z: number
+        Third input number.
+
+    Returns
+    -------
+    out: number
+        Square root of sum of squares.
+
+    Examples
+    --------
+    > var h = {{alias}}( 3.0, 4.0, 12.0 )
+    13.0
+    > h = {{alias}}( -0.0, -0.0, 0.0 )
+    0.0
+
+    See Also
+    --------

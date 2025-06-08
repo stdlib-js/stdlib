@@ -30,43 +30,43 @@ limitations under the License.
 var caxpy = require( '@stdlib/blas/base/caxpy' );
 ```
 
-#### caxpy( N, ca, cx, strideX, cy, strideY )
+#### caxpy( N, alpha, x, strideX, y, strideY )
 
-Scales values from `cx` by `ca` and adds the result to `cy`.
+Scales values from `x` by `alpha` and adds the result to `y`.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
-var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-var cy = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-var ca = new Complex64( 2.0, 2.0 );
+var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+var y = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+var alpha = new Complex64( 2.0, 2.0 );
 
-caxpy( 3, ca, cx, 1, cy, 1 );
-// cy => <Complex64Array>[ -1.0, 7.0, -1.0, 15.0, -1.0, 23.0 ]
+caxpy( 3, alpha, x, 1, y, 1 );
+// y => <Complex64Array>[ -1.0, 7.0, -1.0, 15.0, -1.0, 23.0 ]
 ```
 
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **ca**: scalar [`Complex64`][@stdlib/complex/float32/ctor] constant.
--   **cx**: first input [`Complex64Array`][@stdlib/array/complex64].
--   **strideX**: index increment for `cx`.
--   **cy**: second input [`Complex64Array`][@stdlib/array/complex64].
--   **strideY**: index increment for `cy`.
+-   **alpha**: scalar [`Complex64`][@stdlib/complex/float32/ctor] constant.
+-   **x**: first input [`Complex64Array`][@stdlib/array/complex64].
+-   **strideX**: index increment for `x`.
+-   **y**: second input [`Complex64Array`][@stdlib/array/complex64].
+-   **strideY**: index increment for `y`.
 
-The `N` and stride parameters determine how values from `cx` are scaled by `ca` and added to `cy`. For example, to scale every other value in `cx` by `ca` and add the result to every other value of `cy`,
+The `N` and stride parameters determine how values from `x` are scaled by `alpha` and added to `y`. For example, to scale every other value in `x` by `alpha` and add the result to every other value of `y`,
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
-var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-var cy = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-var ca = new Complex64( 2.0, 2.0 );
+var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+var y = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+var alpha = new Complex64( 2.0, 2.0 );
 
-caxpy( 2, ca, cx, 2, cy, 2 );
-// cy => <Complex64Array>[ -1.0, 7.0, 1.0, 1.0, -1.0, 23.0, 1.0, 1.0 ]
+caxpy( 2, alpha, x, 2, y, 2 );
+// y => <Complex64Array>[ -1.0, 7.0, 1.0, 1.0, -1.0, 23.0, 1.0, 1.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -78,41 +78,41 @@ var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 // Initial arrays...
-var cx0 = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-var cy0 = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+var x0 = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+var y0 = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 
 // Define a scalar constant:
-var ca = new Complex64( 2.0, 2.0 );
+var alpha = new Complex64( 2.0, 2.0 );
 
 // Create offset views...
-var cx1 = new Complex64Array( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var cy1 = new Complex64Array( cy0.buffer, cy0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
+var x1 = new Complex64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
+var y1 = new Complex64Array( y0.buffer, y0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
 
-// Scales values of `cx0` by `ca` starting from second index and add the result to `cy0` starting from third index...
-caxpy( 2, ca, cx1, 1, cy1, 1 );
-// cy0 => <Complex64Array>[ 1.0, 1.0, 1.0, 1.0, -1.0, 15.0, -1.0, 23.0 ]
+// Scales values of `x0` by `alpha` starting from second index and add the result to `y0` starting from third index...
+caxpy( 2, alpha, x1, 1, y1, 1 );
+// y0 => <Complex64Array>[ 1.0, 1.0, 1.0, 1.0, -1.0, 15.0, -1.0, 23.0 ]
 ```
 
-#### caxpy.ndarray( N, ca, cx, strideX, offsetX, cy, strideY, offsetY )
+#### caxpy.ndarray( N, alpha, x, strideX, offsetX, y, strideY, offsetY )
 
-Scales values from `cx` by `ca` and adds the result to `cy` using alternative indexing semantics.
+Scales values from `x` by `alpha` and adds the result to `y` using alternative indexing semantics.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
-var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-var cy = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-var ca = new Complex64( 2.0, 2.0 );
+var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+var y = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+var alpha = new Complex64( 2.0, 2.0 );
 
-caxpy.ndarray( 3, ca, cx, 1, 0, cy, 1, 0 );
-// cy => <Complex64Array>[ -1.0, 7.0, -1.0, 15.0, -1.0, 23.0 ]
+caxpy.ndarray( 3, alpha, x, 1, 0, y, 1, 0 );
+// y => <Complex64Array>[ -1.0, 7.0, -1.0, 15.0, -1.0, 23.0 ]
 ```
 
 The function has the following additional parameters:
 
--   **offsetX**: starting index for `cx`.
--   **offsetY**: starting index for `cy`.
+-   **offsetX**: starting index for `x`.
+-   **offsetY**: starting index for `y`.
 
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to scale values in the first input strided array starting from the second element and add the result to the second input array starting from the second element,
 
@@ -120,12 +120,12 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
-var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-var cy = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-var ca = new Complex64( 2.0, 2.0 );
+var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+var y = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+var alpha = new Complex64( 2.0, 2.0 );
 
-caxpy.ndarray( 3, ca, cx, 1, 1, cy, 1, 1 );
-// cy => <Complex64Array>[ 1.0, 1.0, -1.0, 15.0, -1.0, 23.0, -1.0, 31.0 ]
+caxpy.ndarray( 3, alpha, x, 1, 1, y, 1, 1 );
+// y => <Complex64Array>[ 1.0, 1.0, -1.0, 15.0, -1.0, 23.0, -1.0, 31.0 ]
 ```
 
 </section>
@@ -136,7 +136,7 @@ caxpy.ndarray( 3, ca, cx, 1, 1, cy, 1, 1 );
 
 ## Notes
 
--   If `N <= 0`, both functions return `cy` unchanged.
+-   If `N <= 0`, both functions return `y` unchanged.
 -   `caxpy()` corresponds to the [BLAS][blas] level 1 function [`caxpy`][caxpy].
 
 </section>
@@ -162,17 +162,17 @@ function rand() {
     return new Complex64( discreteUniform( 0, 10 ), discreteUniform( -5, 5 ) );
 }
 
-var cx = filledarrayBy( 10, 'complex64', rand );
-var cy = filledarrayBy( 10, 'complex64', rand );
-var cyc = ccopy( cy.length, cy, 1, zeros( cy.length, 'complex64' ), 1 );
+var x = filledarrayBy( 10, 'complex64', rand );
+var y = filledarrayBy( 10, 'complex64', rand );
+var yc = ccopy( y.length, y, 1, zeros( y.length, 'complex64' ), 1 );
 
-var ca = new Complex64( 2.0, 2.0 );
+var alpha = new Complex64( 2.0, 2.0 );
 
-// Scale values from `cx` by `ca` and add the result to `cy`:
-caxpy( cx.length, ca, cx, 1, cy, 1 );
+// Scale values from `x` by `alpha` and add the result to `y`:
+caxpy( x.length, alpha, x, 1, y, 1 );
 
 // Print the results:
-logEach( '(%s)*(%s) + (%s) = %s', ca, cx, cyc, cy );
+logEach( '(%s)*(%s) + (%s) = %s', alpha, x, yc, y );
 ```
 
 </section>
@@ -205,60 +205,60 @@ logEach( '(%s)*(%s) + (%s) = %s', ca, cx, cyc, cy );
 #include "stdlib/blas/base/caxpy.h"
 ```
 
-#### c_caxpy( N, ca, \*CX, strideX, \*CY, strideY )
+#### c_caxpy( N, alpha, \*X, strideX, \*Y, strideY )
 
-Scales values from `cx` by `ca` and adds the result to `cy`.
+Scales values from `X` by `alpha` and adds the result to `Y`.
 
 ```c
 #include "stdlib/complex/float32/ctor.h"
 
-float cx[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
-float cy[] = { -1.0f, -2.0f, -3.0f, -4.0f, -5.0f, -6.0f, -7.0f, -8.0f };
-const stdlib_complex64_t ca = stdlib_complex64( 2.0f, 2.0f );
+float X[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
+float Y[] = { -1.0f, -2.0f, -3.0f, -4.0f, -5.0f, -6.0f, -7.0f, -8.0f };
+const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
 
-c_caxpy( 4, ca, (void *)cx, 1, (void *)cy, 1 );
+c_caxpy( 4, alpha, (void *)X, 1, (void *)Y, 1 );
 ```
 
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **ca**: `[in] stdlib_complex64_t` scalar constant.
--   **CX**: `[in] void*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `CX`.
--   **CY**: `[inout] void*` output array.
--   **strideY**: `[in] CBLAS_INT` index increment for `CY`.
+-   **alpha**: `[in] stdlib_complex64_t` scalar constant.
+-   **X**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **Y**: `[inout] void*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
 
 ```c
-void c_caxpy( const CBLAS_INT N, const stdlib_complex64_t ca, const void *CX, const CBLAS_INT strideX, void *CY, const CBLAS_INT strideY );
+void c_caxpy( const CBLAS_INT N, const stdlib_complex64_t alpha, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
 ```
 
-#### c_caxpy_ndarray( N, ca, \*CX, strideX, offsetX, \*CY, strideY, offsetY )
+#### c_caxpy_ndarray( N, alpha, \*X, strideX, offsetX, \*Y, strideY, offsetY )
 
-Scales values from `cx` by `ca` and adds the result to `cy` using alternative indexing semantics.
+Scales values from `X` by `alpha` and adds the result to `Y` using alternative indexing semantics.
 
 ```c
 #include "stdlib/complex/float32/ctor.h"
 
-float cx[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
-float cy[] = { -1.0f, -2.0f, -3.0f, -4.0f, -5.0f, -6.0f, -7.0f, -8.0f }
-const stdlib_complex64_t ca = stdlib_complex64( 2.0f, 2.0f );
+float X[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
+float Y[] = { -1.0f, -2.0f, -3.0f, -4.0f, -5.0f, -6.0f, -7.0f, -8.0f }
+const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
 
-c_caxpy_ndarray( 4, ca, (void *)cx, 1, 0, (void *)cy, 1, 0 );
+c_caxpy_ndarray( 4, alpha, (void *)X, 1, 0, (void *)Y, 1, 0 );
 ```
 
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **ca**: `[in] stdlib_complex64_t` scalar constant.
--   **CX**: `[in] void*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `CX`.
--   **offsetX**: `[in] CBLAS_INT` starting index for `CX`.
--   **CY**: `[inout] void*` output array.
--   **strideY**: `[in] CBLAS_INT` index increment for `CY`.
--   **offsetY**: `[in] CBLAS_INT` starting index for `CY`.
+-   **alpha**: `[in] stdlib_complex64_t` scalar constant.
+-   **X**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[inout] void*` output array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
 
 ```c
-void c_caxpy_ndarray( const CBLAS_INT N, const stdlib_complex64_t ca, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *CY, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+void c_caxpy_ndarray( const CBLAS_INT N, const stdlib_complex64_t alpha, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 ```
 
 </section>
@@ -286,11 +286,11 @@ void c_caxpy_ndarray( const CBLAS_INT N, const stdlib_complex64_t ca, const void
 
 int main( void ) {
     // Create strided arrays of interleaved real and imaginary components...
-    float cx[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
-    float cy[] = { -1.0f, -2.0f, -3.0f, -4.0f, -5.0f, -6.0f, -7.0f, -8.0f };
+    float X[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
+    float Y[] = { -1.0f, -2.0f, -3.0f, -4.0f, -5.0f, -6.0f, -7.0f, -8.0f };
 
     // Create a complex scalar:
-    const stdlib_complex64_t ca = stdlib_complex64( 2.0f, 2.0f );
+    const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
 
     // Specify the number of elements:
     const int N = 4;
@@ -299,20 +299,20 @@ int main( void ) {
     const int strideX = 1;
     const int strideY = 1;
 
-    // Scale values from `cx` by `ca` and adds the result to `cy`:
-    c_caxpy( N, ca, (void *)cx, strideX, (void *)cy, strideY );
+    // Scale values from `X` by `alpha` and adds the result to `Y`:
+    c_caxpy( N, alpha, (void *)X, strideX, (void *)Y, strideY );
 
     // Print the result:
     for ( int i = 0; i < N; i++ ) {
-        printf( "cy[ %i ] = %f + %fj\n", i, cy[ i*2 ], cy[ (i*2)+1 ] );
+        printf( "Y[ %i ] = %f + %fj\n", i, Y[ i*2 ], Y[ (i*2)+1 ] );
     }
 
-    // Scales values from `cx` by `ca` and adds the result to `cy` using alternative indexing semantics:
-    c_caxpy_ndarray( N, ca, (void *)cx, -strideX, 3, (void *)cy, -strideY, 3 );
+    // Scales values from `X` by `alpha` and adds the result to `Y` using alternative indexing semantics:
+    c_caxpy_ndarray( N, alpha, (void *)X, -strideX, 3, (void *)Y, -strideY, 3 );
 
     // Print the result:
     for ( int i = 0; i < N; i++ ) {
-        printf( "cy[ %i ] = %f + %fj\n", i, cy[ i*2 ], cy[ (i*2)+1 ] );
+        printf( "Y[ %i ] = %f + %fj\n", i, Y[ i*2 ], Y[ (i*2)+1 ] );
     }
 }
 ```

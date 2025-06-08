@@ -34,7 +34,7 @@ extern "C" {
 /**
 * Computes the sum of the absolute values of the real and imaginary components of a single-precision complex floating-point vector.
 */
-float API_SUFFIX(cblas_scasum)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX );
+float API_SUFFIX(cblas_scasum)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX );
 
 #ifdef __cplusplus
 }
