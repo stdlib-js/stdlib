@@ -44,11 +44,11 @@
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
 ! @param {integer} N - number of indexed elements
-! @param {Array<complex<double>>} zx - array
-! @param {integer} strideX - `zx` stride length
+! @param {Array<complex<double>>} x - array
+! @param {integer} strideX - `x` stride length
 ! @returns {double} L2-norm
 !<
-double precision function dznrm2( N, zx, strideX )
+double precision function dznrm2( N, x, strideX )
   implicit none
   ! ..
   ! Define a kind parameter for single precision:
@@ -69,7 +69,7 @@ double precision function dznrm2( N, zx, strideX )
   integer :: N, strideX
   ! ..
   ! Array arguments:
-  complex( wp ) :: zx( * )
+  complex( wp ) :: x( * )
   ! ..
   ! Local scalars:
   integer :: i, ix
@@ -104,7 +104,7 @@ double precision function dznrm2( N, zx, strideX )
   end if
   ! ..
   do i = 1, N
-    ax = abs( real( zx( ix ) ) )
+    ax = abs( real( x( ix ) ) )
     if ( ax > tbig ) then
       abig = abig + ( ax * sbig )**2
       notbig = .false.
@@ -115,7 +115,7 @@ double precision function dznrm2( N, zx, strideX )
     else
       amed = amed + ax**2
     end if
-    ax = abs( aimag( zx( ix ) ) )
+    ax = abs( aimag( x( ix ) ) )
     if ( ax > tbig ) then
       abig = abig + ( ax * sbig )**2
       notbig = .false.

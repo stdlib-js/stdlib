@@ -20,12 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
 * Input array.
 */
-type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
+type InputArray<T> = Collection<T> | AccessorArrayLike<T>;
 
 /**
 * Returns an accessed value.
@@ -89,7 +89,7 @@ type Callback<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T, 
 * var v = maxBy( x, accessor );
 * // returns 8.0
 */
-declare function maxBy<T = number, U extends InputArray = InputArray, ThisArg = unknown>( x: U, clbk: Callback<T, U, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, ThisArg>> ): number;
+declare function maxBy<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, clbk: Callback<T, U, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, ThisArg>> ): number;
 
 
 // EXPORTS //
