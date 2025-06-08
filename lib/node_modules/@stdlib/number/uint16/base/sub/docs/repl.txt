@@ -1,0 +1,32 @@
+
+{{alias}}( x, y )
+    Subtracts two unsigned 16-bit integers `x` and `y`.
+
+    The function performs C-like subtraction of two unsigned 16-bit integers,
+    including wraparound semantics.
+
+    Parameters
+    ----------
+    x: integer
+        First input value.
+
+    y: integer
+        Second input value.
+
+    Returns
+    -------
+    z: integer
+        Result.
+
+    Examples
+    --------
+    > var v = {{alias}}( 5, 1 )
+    4
+    > v = {{alias}}( 5, 2 )
+    3
+    > v = {{alias}}( 5, 0 )
+    5
+
+    See Also
+    --------
+

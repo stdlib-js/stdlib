@@ -97,19 +97,16 @@ var v = skewness( -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var skewness = require( '@stdlib/stats/base/dists/chisquare/skewness' );
 
-var k;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var k = uniform( 10, 0.0, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    k = randu() * 20.0;
-    v = skewness( k );
-    console.log( 'k: %d, skew(X,k): %d', k.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'k: %0.4f, skew(X;k): %0.4f', k, skewness );
 ```
 
 </section>

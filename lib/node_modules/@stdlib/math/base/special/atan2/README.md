@@ -68,18 +68,17 @@ v = atan2( 3.0, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var atan2 = require( '@stdlib/math/base/special/atan2' );
 
-var y;
-var x;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, 0.0, 100.0, opts );
+var y = uniform( 100, 0.0, 100.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    y = randu() * 100.0;
-    x = randu() * 100.0;
-    console.log( 'y: %d, \t x: %d, \t atan2(y,x): %d', y.toFixed( 4 ), x.toFixed( 4 ), atan2( y, x ).toFixed( 4 ) );
-}
+logEachMap( 'atan2(%0.4f,%0.4f) = %0.4f', y, x, atan2 );
 ```
 
 </section>
