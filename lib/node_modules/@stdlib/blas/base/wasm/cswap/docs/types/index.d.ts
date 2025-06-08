@@ -333,8 +333,8 @@ interface Routine extends ModuleWrapper {
 	*
 	* // Perform operation:
 	* cswap.main( x.length, x, 1, y, 1 );
-	* // x => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
-	* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+	* // x => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+	* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 	*/
 	main( N: number, x: Complex64Array, strideX: number, y: Complex64Array, strideY: number ): Complex64Array;
 
@@ -358,8 +358,8 @@ interface Routine extends ModuleWrapper {
 	*
 	* // Perform operation:
 	* cswap.ndarray( x.length, x, 1, 0, y, 1, 0 );
-	* // x => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
-	* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+	* // x => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+	* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 	*/
 	ndarray( N: number, x: Complex64Array, strideX: number, offsetX: number, y: Complex64Array, strideY: number, offsetY: number ): Complex64Array;
 
@@ -450,8 +450,8 @@ interface Routine extends ModuleWrapper {
 *
 * // Perform operation:
 * cswap.main( x.length, x, -1, y, 1 );
-* // x => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
-* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+* // x => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
@@ -461,8 +461,8 @@ interface Routine extends ModuleWrapper {
 *
 * // Perform operation:
 * cswap.ndarray( x.length, x, 1, 0, y, 1, 0 );
-* // x => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
-* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+* // x => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 */
 declare var cswap: Routine;
 
