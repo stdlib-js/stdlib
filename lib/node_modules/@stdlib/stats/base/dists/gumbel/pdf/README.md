@@ -169,8 +169,8 @@ for ( i = 0; i < 10; i++ ) {
 Evaluates the [probability density function][pdf] (PDF) for a [Gumbel][gumbel-distribution] distribution with parameters `mu` (location parameter) and `beta` (scale parameter).
 
 ```c
-double out = stdlib_base_dists_gumbel_pdf( 2.0, 3.0 );
-// returns ~0.199
+double out = stdlib_base_dists_gumbel_pdf( 0.0, 0.0, 2.0 );
+// returns ~0.184
 ```
 
 The function accepts the following arguments:

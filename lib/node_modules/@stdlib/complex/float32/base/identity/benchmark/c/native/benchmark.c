@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/complex/float32/base/identity.h"
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -91,25 +92,29 @@ static float rand_float( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	float complex x;
-	float complex y;
 	double elapsed;
 	double t;
+	float re;
+	float im;
 	float v;
 	int i;
+
+	stdlib_complex64_t x;
+	stdlib_complex64_t y;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		v = ( 1000.0f*rand_float() ) - 500.0f;
-		x = v + v*I;
+		x = stdlib_complex64( v, v );
 		y = stdlib_base_complex64_identity( x );
-		if ( crealf( y ) != v ) {
+		stdlib_complex64_reim( y, &re, &im );
+		if ( re != re ) {
 			printf( "unexpected result\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( cimagf( y ) != v ) {
+	if ( im != im ) {
 		printf( "unexpected result\n" );
 	}
 	return elapsed;

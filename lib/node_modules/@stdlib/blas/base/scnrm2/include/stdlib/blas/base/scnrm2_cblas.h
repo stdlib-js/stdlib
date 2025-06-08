@@ -34,7 +34,7 @@ extern "C" {
 /**
 * Computes the L2-norm of a complex single-precision floating-point vector.
 */
-float API_SUFFIX(cblas_scnrm2)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX );
+float API_SUFFIX(cblas_scnrm2)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX );
 
 #ifdef __cplusplus
 }

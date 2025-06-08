@@ -77,7 +77,7 @@
         Stride length for `x`.
 
     offsetX: integer
-        Starting index for the strided array.
+        Starting index for `x`.
 
     out: Float64Array
         Output array.
@@ -103,7 +103,7 @@
     <Float64Array>[ 1.0, 3 ]
 
     // Using offset parameter:
-    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, 1.0, NaN, NaN ] );
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, 1.0, NaN, NaN ] );
     > out = new {{alias:@stdlib/array/float64}}( 2 );
     > {{alias}}.ndarray( 4, x, 2, 1, out, 1, 0 )
     <Float64Array>[ 1.0, 3 ]
