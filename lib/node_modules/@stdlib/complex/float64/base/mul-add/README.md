@@ -51,13 +51,7 @@ var z3 = new Complex128( 7.0, -8.0 );
 
 // Compute `alpha*x + y`:
 var v = muladd( z1, z2, z3 );
-// returns <Complex128>
-
-var re = real( v );
-// returns -6.0
-
-var im = imag( v );
-// returns -9.0
+// returns <Complex128>[ -6.0, -9.0 ]
 ```
 
 The function supports the following parameters:
