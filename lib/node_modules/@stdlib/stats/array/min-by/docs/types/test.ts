@@ -42,7 +42,7 @@ function accessor(): number {
 	minBy( new AccessorArray( x ), accessor, {} ); // $ExpectType number
 }
 
-// The compiler throws an error if the function is provided a first argument which is not a numeric array...
+// The compiler throws an error if the function is provided a first argument which is not an array-like object...
 {
 	minBy( 10, accessor ); // $ExpectError
 	minBy( true, accessor ); // $ExpectError

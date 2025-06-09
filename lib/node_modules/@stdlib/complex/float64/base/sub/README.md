@@ -42,20 +42,12 @@ Subtracts two double-precision complex floating-point numbers.
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var z1 = new Complex128( 5.0, 3.0 );
 var z2 = new Complex128( -2.0, 1.0 );
 
 var v = csub( z1, z2 );
-// returns <Complex128>
-
-var re = real( v );
-// returns 7.0
-
-var im = imag( v );
-// returns 2.0
+// returns <Complex128>[ 7.0, 2.0 ]
 ```
 
 </section>

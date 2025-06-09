@@ -77,7 +77,7 @@ var im = imag( v );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Complex128Array = require( '@stdlib/array/complex64' );
+var Complex128Array = require( '@stdlib/array/complex128' );
 var uniform = require( '@stdlib/random/array/uniform' );
 var logEachMap = require( '@stdlib/console/log-each-map' );
 var cinv = require( '@stdlib/math/base/special/cinv' );
