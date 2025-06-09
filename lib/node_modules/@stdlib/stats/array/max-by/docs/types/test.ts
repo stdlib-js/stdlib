@@ -42,7 +42,7 @@ function accessor(): number {
 	maxBy( new AccessorArray( x ), accessor, {} ); // $ExpectType number
 }
 
-// The compiler throws an error if the function is provided a first argument which is not a numeric array...
+// The compiler throws an error if the function is provided a first argument which is not an array-like object...
 {
 	maxBy( 10, accessor ); // $ExpectError
 	maxBy( true, accessor ); // $ExpectError
