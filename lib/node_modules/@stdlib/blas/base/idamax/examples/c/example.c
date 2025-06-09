@@ -23,7 +23,7 @@ int main( void ) {
 	// Create strided array:
 	const double x[] = { 1.0, -2.0, 3.0, -4.0, 5.0, -6.0, 7.0, -8.0 };
 
-	// Specify the number of element:
+	// Specify the number of elements:
 	const int N = 8;
 
 	// Specify stride:

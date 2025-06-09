@@ -19,13 +19,13 @@
         Constant.
 
     x: Array<number>|TypedArray
-        Input array.
+        First input array.
 
     strideX: integer
         Index increment for `x`.
 
     y: Array<number>|TypedArray
-        Output array.
+        Second input array.
 
     strideY: integer
         Index increment for `y`.
@@ -33,7 +33,7 @@
     Returns
     -------
     y: Array<number>|TypedArray
-        Output array.
+        Input array `y`.
 
     Examples
     --------
@@ -77,7 +77,7 @@
         Constant.
 
     x: Array<number>|TypedArray
-        Input array.
+        First input array.
 
     strideX: integer
         Index increment for `x`.
@@ -86,7 +86,7 @@
         Starting index for `x`.
 
     y: Array<number>|TypedArray
-        Output array.
+        Second input array.
 
     strideY: integer
         Index increment for `y`.
@@ -97,7 +97,7 @@
     Returns
     -------
     y: Array<number>|TypedArray
-        Output array.
+        Input array `y`.
 
     Examples
     --------
