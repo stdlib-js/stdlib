@@ -1346,13 +1346,13 @@
 "@stdlib/stats/strided/smaxabs",base.strided.smaxabs
 "@stdlib/stats/strided/smaxabssorted",base.strided.smaxabssorted
 "@stdlib/stats/strided/smaxsorted",base.strided.smaxsorted
-"@stdlib/stats/base/smean",base.strided.smean
+"@stdlib/stats/strided/smean",base.strided.smean
 "@stdlib/stats/base/smeankbn",base.strided.smeankbn
 "@stdlib/stats/base/smeankbn2",base.strided.smeankbn2
 "@stdlib/stats/strided/smeanli",base.strided.smeanli
 "@stdlib/stats/base/smeanlipw",base.strided.smeanlipw
 "@stdlib/stats/base/smeanors",base.strided.smeanors
-"@stdlib/stats/base/smeanpn",base.strided.smeanpn
+"@stdlib/stats/strided/smeanpn",base.strided.smeanpn
 "@stdlib/stats/strided/smeanpw",base.strided.smeanpw
 "@stdlib/stats/strided/smeanwd",base.strided.smeanwd
 "@stdlib/stats/strided/smediansorted",base.strided.smediansorted
@@ -1418,7 +1418,7 @@
 "@stdlib/blas/ext/base/ssortins",base.strided.ssortins
 "@stdlib/blas/ext/base/ssortsh",base.strided.ssortsh
 "@stdlib/math/strided/special/ssqrt",base.strided.ssqrt
-"@stdlib/stats/base/sstdev",base.strided.sstdev
+"@stdlib/stats/strided/sstdev",base.strided.sstdev
 "@stdlib/stats/strided/sstdevch",base.strided.sstdevch
 "@stdlib/stats/strided/sstdevpn",base.strided.sstdevpn
 "@stdlib/stats/strided/sstdevtk",base.strided.sstdevtk
