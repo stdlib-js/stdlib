@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import range = require( './index' );
 
 
@@ -26,6 +27,7 @@ import range = require( './index' );
 	const x = new Float64Array( 10 );
 
 	range( x.length, x, 1 ); // $ExpectType number
+	range( x.length, new AccessorArray( x ), 1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -85,6 +87,7 @@ import range = require( './index' );
 	const x = new Float64Array( 10 );
 
 	range.ndarray( x.length, x, 1, 0 ); // $ExpectType number
+	range.ndarray( x.length, new AccessorArray( x ), 1, 0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

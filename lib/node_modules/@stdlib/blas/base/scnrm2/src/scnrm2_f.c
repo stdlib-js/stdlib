@@ -26,13 +26,13 @@
 * Computes the L2-norm of a complex single-precision floating-point vector.
 *
 * @param N        number of indexed elements
-* @param CX       input array
-* @param strideX  CX stride length
+* @param X        input array
+* @param strideX  X stride length
 * @return         L2-norm
 */
-float API_SUFFIX(c_scnrm2)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX ) {
+float API_SUFFIX(c_scnrm2)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX ) {
 	float nrm2;
-	scnrm2sub( &N, CX, &strideX, &nrm2 );
+	scnrm2sub( &N, X, &strideX, &nrm2 );
 	return nrm2;
 }
 
@@ -40,15 +40,15 @@ float API_SUFFIX(c_scnrm2)( const CBLAS_INT N, const void *CX, const CBLAS_INT s
 * Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
 *
 * @param N        number of indexed elements
-* @param CX       input array
-* @param strideX  CX stride length
-* @param offsetX  starting index for CX
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
 * @return         L2-norm
 */
-float API_SUFFIX(c_scnrm2_ndarray)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	stdlib_complex64_t *cx = (stdlib_complex64_t *)CX;
+float API_SUFFIX(c_scnrm2_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	stdlib_complex64_t *x = (stdlib_complex64_t *)X;
 	float nrm2;
-	cx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
-	scnrm2sub( &N, (void *)cx, &strideX, &nrm2 );
+	x += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	scnrm2sub( &N, (void *)x, &strideX, &nrm2 );
 	return nrm2;
 }

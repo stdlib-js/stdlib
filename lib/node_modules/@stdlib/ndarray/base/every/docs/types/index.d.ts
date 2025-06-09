@@ -33,7 +33,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
-* // Create data buffers:
+* // Create a data buffer:
 * var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 *
 * // Define the shape of the input array:

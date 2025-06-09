@@ -15,7 +15,7 @@ This document lists domain names which are officially affiliated with the projec
 List of active domains:
 
 -   [stdlib.io](https://stdlib.io): the domain of the website
--   [stdlib.blog](https://stdlib.blog): the domain of the development blog
+-   [stdlib.blog](https://www.stdlib.blog): the domain of the development blog
 
 ## Idle
 
@@ -23,8 +23,8 @@ List of **currently** unused domains:
 
 -   [libstd.com](http://libstd.com): redirects to repository
 -   [libstd.org](http://libstd.org): redirects to repository
--   [stdlib.ai](http://stdlib.ai): redirects to website
--   [stdlib.app](http://stdlib.app): ????
+-   [stdlib.ai](http://www.stdlib.ai): redirects to website
+-   [stdlib.app](http://www.stdlib.app): redirects to website
 -   [stdlibjs.com](http://stdlibjs.com): redirects to website
 -   [stdlib.co](http://stdlib.co): redirects to repository
 -   [stdlibjs.co](http://stdlibjs.co): redirects to repository
@@ -38,6 +38,10 @@ List of **currently** unused domains:
 -   [stdlibjs.studio](http://stdlibjs.studio): redirects to website
 -   [stdlibjs.xyz](http://stdlibjs.xyz): redirects to website
 -   [stdlibjs.org](http://stdlibjs.org): redirects to website
+-   [stdlib.dev](http://www.stdlib.dev): redirects to repository
+-   [stdlibjs.dev](http://www.stdlibjs.dev): redirects to repository
+-   [stdlibjs.blog](https://www.stdlibjs.blog): redirects to development blog
+-   [stdlibhq.com](http://www.stdlibhq.com): redirects to website
 
 ## Former
 

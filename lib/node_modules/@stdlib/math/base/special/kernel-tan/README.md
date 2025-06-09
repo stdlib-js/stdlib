@@ -148,7 +148,7 @@ for ( i = 0; i < x.length; i++ ) {
 #include "stdlib/math/base/special/kernel_tan.h"
 ```
 
-#### stdlib_base_kernel_tan( x, y, k)
+#### stdlib_base_kernel_tan( x, y, k )
 
 Computes the [tangent][tangent] of a double-precision floating-point number on `[-π/4, π/4]`.
 

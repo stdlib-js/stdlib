@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import nanminBy = require( './index' );
 
 const accessor = (): number => {
@@ -30,7 +31,10 @@ const accessor = (): number => {
 	const x = new Float64Array( 10 );
 
 	nanminBy( x.length, x, 1, accessor ); // $ExpectType number
+	nanminBy( x.length, new AccessorArray( x ), 1, accessor ); // $ExpectType number
+
 	nanminBy( x.length, x, 1, accessor, {} ); // $ExpectType number
+	nanminBy( x.length, new AccessorArray( x ), 1, accessor, {} ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -70,7 +74,7 @@ const accessor = (): number => {
 	nanminBy( x.length, x, undefined, accessor ); // $ExpectError
 	nanminBy( x.length, x, [], accessor ); // $ExpectError
 	nanminBy( x.length, x, {}, accessor ); // $ExpectError
-	nanminBy( x.length, x, ( x: number, accessor ): number => x, accessor ); // $ExpectError
+	nanminBy( x.length, x, ( x: number ): number => x, accessor ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a function...
@@ -102,7 +106,10 @@ const accessor = (): number => {
 	const x = new Float64Array( 10 );
 
 	nanminBy.ndarray( x.length, x, 1, 0, accessor ); // $ExpectType number
+	nanminBy.ndarray( x.length, new AccessorArray( x ), 1, 0, accessor ); // $ExpectType number
+
 	nanminBy.ndarray( x.length, x, 1, 0, accessor, {} ); // $ExpectType number
+	nanminBy.ndarray( x.length, new AccessorArray( x ), 1, 0, accessor, {} ); // $ExpectType number
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
