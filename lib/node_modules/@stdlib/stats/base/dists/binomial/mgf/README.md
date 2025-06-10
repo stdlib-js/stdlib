@@ -140,23 +140,19 @@ var y = myMGF( 0.3 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mgf = require( '@stdlib/stats/base/dists/binomial/mgf' );
 
-var n;
-var p;
-var t;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var t = discreteUniform( 10, 0, 5, opts );
+var n = discreteUniform( 10, 0, 10, opts );
+var p = uniform( 10, 0.0, 1.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    t = round( randu() * 5.0 );
-    n = round( randu() * 10.0 );
-    p = randu();
-    y = mgf( t, n, p );
-    console.log( 't: %d, n: %d, p: %d, M_X(t;n,p): %d', t, n, p.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 't: %0.4f, n: %0.4f, p: %0.4f, M_X(t;n,p): %0.4f', t, n, p, mgf );
 ```
 
 </section>

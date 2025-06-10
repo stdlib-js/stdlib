@@ -26,16 +26,11 @@ limitations under the License.
 
 The sign of the [gamma-function][@stdlib/math/base/special/gamma] is defined as
 
-<!-- <equation class="equation" label="eq:gamma_sign_function" align="center" raw="\operatorname{gammasgn} ( x ) = \begin{cases} 1 & \textrm{if}\ \Gamma > 1 \\ -1 & \textrm{if}\ \Gamma < 1 \\ 0 & \textrm{otherwise}\ \end{cases}" alt="Sign of the gamma function"> -->
+<!-- <equation class="equation" label="eq:gamma_sign_function" align="center" raw="\operatorname{gammasgn} ( x ) = \begin{cases} 1 & \textrm{if}\ \Gamma > 0 \\ -1 & \textrm{if}\ \Gamma < 0 \\ 0 & \textrm{otherwise}\ \end{cases}" alt="Sign of the gamma function"> -->
 
 ```math
-\mathop{\mathrm{gammasgn}} ( x ) = \begin{cases} 1 & \textrm{if}\ \Gamma > 1 \\ -1 & \textrm{if}\ \Gamma < 1 \\ 0 & \textrm{otherwise}\ \end{cases}
+\mathop{\mathrm{gammasgn}} ( x ) = \begin{cases} 1 & \textrm{if}\ \Gamma > 0 \\ -1 & \textrm{if}\ \Gamma < 0 \\ 0 & \textrm{otherwise}\ \end{cases}
 ```
-
-<!-- <div class="equation" align="center" data-raw-text="\operatorname{gammasgn} ( x ) = \begin{cases} 1 &amp; \textrm{if}\ \Gamma &gt; 1 \\ -1 &amp; \textrm{if}\ \Gamma &lt; 1 \\ 0 &amp; \textrm{otherwise}\ \end{cases}" data-equation="eq:gamma_sign_function">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@50b141156b147529227e2eb4247eda81c781dec9/lib/node_modules/@stdlib/math/base/special/gammasgn/docs/img/equation_gamma_sign_function.svg" alt="Sign of the gamma function">
-    <br>
-</div> -->
 
 <!-- </equation> -->
 
@@ -185,7 +180,7 @@ int main( void ) {
     for ( i = 0; i < 100; i++ ) {
         x = ( (double)rand() / (double)RAND_MAX ) * 100.0;
         v = stdlib_base_gammasgn( x );
-        printf( "gammasgn%lf = %lf\n", x, v );
+        printf( "gammasgn(%lf) = %lf\n", x, v );
     }
 }
 ```
