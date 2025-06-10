@@ -36,6 +36,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/math/base/napi/unary",
         "@stdlib/complex/float64/ctor"
       ]
     },
