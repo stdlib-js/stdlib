@@ -33,13 +33,7 @@
 
     Examples
     --------
-    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > var dt = 'float64';
-    > var sh = [ 2, 2 ];
-    > var sx = [ 2, 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
     > var y = {{alias}}( x, 3.0 )
     <ndarray>
     > y.get()
@@ -85,13 +79,7 @@
 
     Examples
     --------
-    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > var dt = 'float64';
-    > var sh = [ 2, 2 ];
-    > var sx = [ 2, 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
     > var y = {{alias:@stdlib/ndarray/from-scalar}}( false );
     > var out = {{alias}}.assign( x, 3.0, y )
     <ndarray>

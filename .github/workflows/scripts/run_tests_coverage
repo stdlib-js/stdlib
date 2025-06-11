@@ -144,8 +144,10 @@ compare_cov() {
 main() {
 	start_heartbeat "${heartbeat_interval}"
 
-	# Only keep files which reside in package directories:
-	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
+	# Only keep files which reside in package directories, but exclude _tools:
+	changed=$(echo "${changed}" | tr ' ' '\n' | \
+	  grep '^lib/node_modules/@stdlib' | \
+	  grep -v '^lib/node_modules/@stdlib/_tools') || true
 
 	# Find unique package directories:
 	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?\/?$//' | uniq)
