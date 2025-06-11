@@ -90,18 +90,16 @@ v = median( -0.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var median = require( '@stdlib/stats/base/dists/degenerate/median' );
 
-var mu;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var mu = uniform( 10, 0.0, 1.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    mu = randu();
-    v = median( mu );
-    console.log( 'µ: %d, Median(X;µ): %d', mu.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'µ: %0.4f, Median(X;µ): %0.4f', mu, median );
 ```
 
 </section>
