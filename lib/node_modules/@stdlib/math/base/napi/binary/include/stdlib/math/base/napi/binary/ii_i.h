@@ -31,7 +31,7 @@
 * @example
 * #include <stdint.h>
 *
-* static int_32 add( const int_32 x, const int_32 y ) {
+* static int32_t add( const int32_t x, const int32_t y ) {
 *     return x + y;
 * }
 *
