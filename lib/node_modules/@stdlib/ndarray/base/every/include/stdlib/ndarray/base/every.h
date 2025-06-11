@@ -31,8 +31,86 @@
 * The following is auto-generated. Do not manually edit. See scripts/loops.js.
 */
 
-// BEGIN LOOPS
+// BEGIN INLINE LOOPS
+#include "every/inline/b_x.h"
 
-// END LOOPS
+#include "every/inline/c_x.h"
+
+#include "every/inline/d_x.h"
+
+#include "every/inline/f_x.h"
+
+#include "every/inline/i_x.h"
+
+#include "every/inline/k_x.h"
+
+#include "every/inline/s_x.h"
+
+#include "every/inline/t_x.h"
+
+#include "every/inline/u_x.h"
+
+#include "every/inline/x_x.h"
+
+#include "every/inline/z_x.h"
+// END INLINE LOOPS
+
+// BEGIN PREDICATE LOOPS
+#include "every/predicate/b_x.h"
+#include "every/predicate/b_x_as_c_x.h"
+#include "every/predicate/b_x_as_d_x.h"
+#include "every/predicate/b_x_as_f_x.h"
+#include "every/predicate/b_x_as_i_x.h"
+#include "every/predicate/b_x_as_k_x.h"
+#include "every/predicate/b_x_as_t_x.h"
+#include "every/predicate/b_x_as_u_x.h"
+#include "every/predicate/b_x_as_z_x.h"
+
+#include "every/predicate/c_x.h"
+#include "every/predicate/c_x_as_z_x.h"
+
+#include "every/predicate/d_x.h"
+#include "every/predicate/d_x_as_z_x.h"
+
+#include "every/predicate/f_x.h"
+#include "every/predicate/f_x_as_c_x.h"
+#include "every/predicate/f_x_as_d_x.h"
+#include "every/predicate/f_x_as_z_x.h"
+
+#include "every/predicate/i_x.h"
+#include "every/predicate/i_x_as_d_x.h"
+#include "every/predicate/i_x_as_z_x.h"
+
+#include "every/predicate/k_x.h"
+#include "every/predicate/k_x_as_c_x.h"
+#include "every/predicate/k_x_as_d_x.h"
+#include "every/predicate/k_x_as_f_x.h"
+#include "every/predicate/k_x_as_i_x.h"
+#include "every/predicate/k_x_as_z_x.h"
+
+#include "every/predicate/s_x.h"
+#include "every/predicate/s_x_as_c_x.h"
+#include "every/predicate/s_x_as_d_x.h"
+#include "every/predicate/s_x_as_f_x.h"
+#include "every/predicate/s_x_as_i_x.h"
+#include "every/predicate/s_x_as_k_x.h"
+#include "every/predicate/s_x_as_z_x.h"
+
+#include "every/predicate/t_x.h"
+#include "every/predicate/t_x_as_c_x.h"
+#include "every/predicate/t_x_as_d_x.h"
+#include "every/predicate/t_x_as_f_x.h"
+#include "every/predicate/t_x_as_i_x.h"
+#include "every/predicate/t_x_as_u_x.h"
+#include "every/predicate/t_x_as_z_x.h"
+
+#include "every/predicate/u_x.h"
+#include "every/predicate/u_x_as_d_x.h"
+#include "every/predicate/u_x_as_z_x.h"
+
+#include "every/predicate/x_x.h"
+
+#include "every/predicate/z_x.h"
+// END PREDICATE LOOPS
 
 #endif // !STDLIB_NDARRAY_BASE_EVERY_H

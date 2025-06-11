@@ -54,7 +54,7 @@
 	int64_t *sx1 = stdlib_ndarray_strides( x1 );                               \
 	int64_t ox1 = stdlib_ndarray_offset( x1 );                                 \
 	int64_t len = stdlib_ndarray_length( x1 );                                 \
-	bool *px2 = stdlib_ndarray_data( x2 );                                     \
+	uint8_t *px2 = stdlib_ndarray_data( x2 );                                  \
 	uint8_t *px1;                                                              \
 	int64_t i;                                                                 \
 	/* Iterate over each ndarray element based on the linear **view** index, regardless as to how the data is stored in memory... */ \
@@ -96,7 +96,7 @@
 		const tin in1 = *(tin *)px1;                                           \
 		if ( !( expr ) ) {                                                     \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_ND_LOOP_EPILOGUE
@@ -120,7 +120,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( x ) ) ) {                                                   \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_ND_LOOP_EPILOGUE
@@ -146,7 +146,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( (fin)x ) ) ) {                                              \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_ND_LOOP_EPILOGUE
@@ -174,7 +174,7 @@
 		const tin x = *(tin *)px1;                                             \
 		if ( !( f( cin( x ) ) ) ) {                                            \
 			*px2 = false;                                                      \
-			return;                                                            \
+			return 0;                                                          \
 		}                                                                      \
 	}                                                                          \
 	STDLIB_NDARRAY_EVERY_ND_LOOP_EPILOGUE

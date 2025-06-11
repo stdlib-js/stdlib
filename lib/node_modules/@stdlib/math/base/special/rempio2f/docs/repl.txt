@@ -1,0 +1,34 @@
+
+{{alias}}( x, y )
+    Computes `x - nπ/2 = r` (single-precision).
+
+    The function returns `n` and stores the remainder `r` as `y[0]`.
+
+    For input values larger than `2^28 * π/2` in magnitude, the function only
+    returns the last three binary digits of `n` and not the full result.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    y: Array|TypedArray|Object
+        Remainder element.
+
+    Returns
+    -------
+    n: integer
+        Factor of `π/2`.
+
+    Examples
+    --------
+    > var y = [ 0.0 ];
+    > var n = {{alias}}( 128.0, y )
+    81
+    > var y1 = y[ 0 ]
+    ~0.765
+
+
+    See Also
+    --------
+

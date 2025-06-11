@@ -30,17 +30,9 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var real = require( '@stdlib/complex/float32/real' );
-* var imag = require( '@stdlib/complex/float32/imag' );
 *
 * var v = cidentityf( new Complex64( -1.0, 2.0 ) );
-* // returns <Complex64>
-*
-* var re = real( v );
-* // returns -1.0
-*
-* var im = imag( v );
-* // returns 2.0
+* // returns <Complex64>[ -1.0, 2.0 ]
 */
 declare function cidentityf( z: Complex64 ): Complex64;
 

@@ -78,8 +78,6 @@ var bool = ( v === out );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var randu = require( '@stdlib/random/base/randu' );
 var round = require( '@stdlib/math/base/special/round' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 var cpolar = require( '@stdlib/math/base/special/cpolar' );
 
 var re;
