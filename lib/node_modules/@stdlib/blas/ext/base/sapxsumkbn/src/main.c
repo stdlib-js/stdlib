@@ -19,7 +19,7 @@
 #include "stdlib/blas/ext/base/sapxsumkbn.h"
 #include "stdlib/strided/base/stride2offset.h"
 #include "stdlib/blas/base/shared.h"
-#include "stdlib/math/base/special/absf.h"
+#include "stdlib/blas/ext/base/ssumkbn.h"
 
 /**
 * Adds a scalar constant to each single-precision floating-point strided array element and computes the sum using an improved Kahan–Babuška algorithm.
@@ -62,32 +62,8 @@ float API_SUFFIX(stdlib_strided_sapxsumkbn)( const CBLAS_INT N, const float alph
 * @return         output value
 */
 float API_SUFFIX(stdlib_strided_sapxsumkbn_ndarray)( const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	CBLAS_INT ix;
-	CBLAS_INT i;
-	float sum;
-	float v;
-	float t;
-	float c;
-
 	if ( N <= 0 ) {
 		return 0.0f;
 	}
-	ix = offsetX;
-	if ( strideX == 0 ) {
-		return N * ( alpha + X[ ix ] );
-	}
-	sum = 0.0f;
-	c = 0.0f;
-	for ( i = 0; i < N; i++ ) {
-		v = alpha + X[ ix ];
-		t = sum + v;
-		if ( stdlib_base_absf( sum ) >= stdlib_base_absf( v ) ) {
-			c += (sum-t) + v;
-		} else {
-			c += (v-t) + sum;
-		}
-		sum = t;
-		ix += strideX;
-	}
-	return sum + c;
+	return ( N * alpha ) + API_SUFFIX(stdlib_strided_ssumkbn_ndarray)( N, X, strideX, offsetX );
 }

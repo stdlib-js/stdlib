@@ -93,18 +93,16 @@ v = variance( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var variance = require( '@stdlib/stats/base/dists/degenerate/variance' );
 
-var mu;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var mu = uniform( 10, 0.0, 1.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    mu = randu();
-    v = variance( mu );
-    console.log( 'µ: %d, Var(X;µ): %d', mu.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'µ: %0.4f, Var(X;µ): %0.4f', mu, variance );
 ```
 
 </section>

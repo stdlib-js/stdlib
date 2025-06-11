@@ -21,7 +21,7 @@
 
 int main( void ) {
 	// Create a strided array of interleaved real and imaginary components:
-	const float cx[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
+	const float X[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
 
 	// Specify the number of elements:
 	const int N = 4;
@@ -30,13 +30,13 @@ int main( void ) {
 	const int strideX = 1;
 
 	// Compute the sum of the absolute values of real and imaginary components:
-	float out = c_scasum( N, (void *)cx, strideX );
+	float out = c_scasum( N, (void *)X, strideX );
 
 	// Print the result:
 	printf( "out: %f\n", out );
 
 	// Compute the sum of the absolute values of real and imaginary components using alternative indexing semantics:
-	out = c_scasum_ndarray( N, (void *)cx, -strideX, N-1 );
+	out = c_scasum_ndarray( N, (void *)X, -strideX, N-1 );
 
 	// Print the result:
 	printf( "out: %f\n", out );

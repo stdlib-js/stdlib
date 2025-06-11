@@ -205,7 +205,7 @@ y = stdlib_base_heavisidef( 0.0f, STDLIB_BASE_HEAVISIDEF_CONTINUITY_LEFT_CONTINU
 The function accepts the following arguments:
 
 -   **x**: `[in] float` input value.
--   **continuity**: `[in] STDLIB_BASE_HEAVISIDEF_CONTINUITY` continuity option.
+-   **continuity**: `[in] enum STDLIB_BASE_HEAVISIDEF_CONTINUITY` continuity option.
 
 The `continuity` parameter may be one of the following values:
 
@@ -217,7 +217,7 @@ The `continuity` parameter may be one of the following values:
 If provided a `continuity` argument which is not one of the enumeration constants listed above, the function returns `NaN` for `x == 0`, behaving like the discontinuous case.
 
 ```c
-float stdlib_base_heavisidef( const float x, const STDLIB_BASE_HEAVISIDEF_CONTINUITY continuity );
+float stdlib_base_heavisidef( const float x, const enum STDLIB_BASE_HEAVISIDEF_CONTINUITY continuity );
 ```
 
 </section>

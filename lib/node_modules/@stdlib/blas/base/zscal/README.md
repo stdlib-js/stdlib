@@ -82,7 +82,7 @@ var alpha = new Complex128( 2.0, 2.0 );
 // Create an offset view:
 var x1 = new Complex128Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Scales every other value from `zx1` by `za`...
+// Scales every other value from `x1` by `alpha`...
 zscal( 3, alpha, x1, 1 );
 // x0 => <Complex128Array>[ 1.0, 2.0, -2.0, 14.0, -2.0, 22.0, -2.0, 30.0 ]
 ```
