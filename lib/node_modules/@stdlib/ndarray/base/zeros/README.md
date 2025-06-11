@@ -57,7 +57,7 @@ var dt = arr.dtype;
 
 The function accepts the following arguments:
 
--   **dtype**: underlying [data type][@stdlib/ndarray/dtypes]. Must be a numeric [data type][@stdlib/ndarray/dtypes] or "generic". 
+-   **dtype**: underlying [data type][@stdlib/ndarray/dtypes]. Must be a numeric [data type][@stdlib/ndarray/dtypes] or "generic".
 -   **shape**: array shape.
 -   **order**: specifies whether an [ndarray][@stdlib/ndarray/base/ctor] is `'row-major'` (C-style) or `'column-major'` (Fortran-style).
 
