@@ -152,7 +152,7 @@ Each provided ndarray should be an object with the following properties:
 
 -   The function iterates over ndarray elements according to the memory layout of the input ndarray.
 
--   For very high-dimensional ndarrays which are non-contiguous, one should consider copying the underlying data to contiguous memory before performing a reduction in order to achieve better performance.
+-   For very high-dimensional ndarrays which are non-contiguous, one should consider copying the underlying data to contiguous memory before performing an operation in order to achieve better performance.
 
 </section>
 

@@ -36,7 +36,7 @@ static const double RECIP_EPS_SQR = 2.0 / ( STDLIB_CONSTANT_FLOAT64_EPS * STDLIB
 // MAIN //
 
 /**
-Computes the inverse of a double-precision complex floating-point number.
+* Computes the inverse of a double-precision complex floating-point number.
 *
 * ## References
 *
