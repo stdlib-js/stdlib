@@ -40,7 +40,7 @@
 * int8_t b = stdlib_ndarray_is_column_major( ndims, strides );
 * // returns 1
 */
-int8_t stdlib_ndarray_is_column_major( int64_t ndims, int64_t *strides ) {
+int8_t stdlib_ndarray_is_column_major( const int64_t ndims, const int64_t *strides ) {
 	int64_t s1;
 	int64_t s2;
 	int64_t i;

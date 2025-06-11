@@ -35,10 +35,10 @@ int main( void ) {
 	uint8_t *arrays[] = { x, out };
 
 	// Define the strides:
-	int64_t strides[] = { 1, 8 }; // 1 byte per uint8, 8 bytes per double
+	const int64_t strides[] = { 1, 8 }; // 1 byte per uint8, 8 bytes per double
 
 	// Define the number of elements over which to iterate:
-	int64_t shape[] = { 3 };
+	const int64_t shape[] = { 3 };
 
 	// Apply the callback:
 	stdlib_strided_b_d_as_d_d( arrays, shape, strides, (void *)scale );

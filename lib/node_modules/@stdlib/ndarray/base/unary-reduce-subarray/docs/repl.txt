@@ -29,7 +29,7 @@
 
         where
 
-        - arrays: array containing subarray from the input ndarray and any
+        - arrays: array containing a subarray of the input ndarray and any
         additional ndarray arguments as zero-dimensional ndarrays.
         - options: function options.
 

@@ -35,7 +35,7 @@
 * @param A        matrix of coefficients
 * @param LDA      stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 */
-void API_SUFFIX(c_dger)( const CBLAS_LAYOUT layout, const CBLAS_INT M, const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, double *A, const CBLAS_INT LDA ) {
+void API_SUFFIX(c_dger)( const CBLAS_LAYOUT layout, const CBLAS_INT M, const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY, double *A, const CBLAS_INT LDA ) {
 	extern int RowMajorStrg; // global flag
 
 	RowMajorStrg = 0;
