@@ -1,0 +1,94 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-float",
+        "@stdlib/napi/argv-float64array",
+        "@stdlib/napi/create-double",
+        "@stdlib/napi/export",
+        "@stdlib/math/base/special/roundf",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/exponent-mask"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/roundf",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/exponent-mask"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/roundf",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/ldexp",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/exponent-mask"
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "name": "@stdlib/math/base/special/atan2f",
   "version": "0.0.0",
   "description": "Compute the angle in the plane (in radians) between the positive x-axis and the ray from (0,0) to the point (x,y) as a single-precision floating-point number.",
-  "license": "Apache-2.0 AND BSD-3-Clause",
+  "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
     "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
