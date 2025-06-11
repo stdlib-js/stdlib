@@ -56,7 +56,7 @@ type ReductionArrays<T, V> = [ InputArray<T>, ...Array<AdditionalArray<V>> ];
 type Nullary<W, ThisArg> = ( this: ThisArg ) => W;
 
 /**
-* Returns the results of the callback function.
+* Callback invoked for each ndarray element.
 *
 * @param value - current array element
 * @returns output value

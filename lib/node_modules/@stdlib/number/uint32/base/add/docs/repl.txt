@@ -1,0 +1,32 @@
+
+{{alias}}( x, y )
+    Computes the sum of two unsigned 32-bit integers `x` and `y`.
+
+    The function performs C-like addition of two unsigned 32-bit integers,
+    including wraparound semantics.
+
+    Parameters
+    ----------
+    x: integer
+        First unsigned 32-bit integer.
+
+    y: integer
+        Second unsigned 32-bit integer.
+
+    Returns
+    -------
+    z: integer
+        Sum.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1>>>0, 5>>>0 )
+    6
+    > v = {{alias}}( 2>>>0, 5>>>0 )
+    7
+    > v = {{alias}}( 0>>>0, 5>>>0 )
+    5
+
+    See Also
+    --------
+

@@ -96,30 +96,30 @@ static float rand_float( void ) {
 * @return             elapsed time in seconds
 */
 static double benchmark1( int iterations, int len ) {
-	stdlib_complex64_t ca;
-	float cx[ len*2 ];
-	float cy[ len*2 ];
+	stdlib_complex64_t alpha;
+	float x[ len*2 ];
+	float y[ len*2 ];
 	double elapsed;
 	double t;
 	int i;
 
-	ca = stdlib_complex64( 1.0f, 0.0f );
+	alpha = stdlib_complex64( 1.0f, 0.0f );
 	for ( i = 0; i < len*2; i += 2 ) {
-		cx[ i ] = ( rand_float()*2.0f ) - 1.0f;
-		cx[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
-		cy[ i ] = ( rand_float()*2.0f ) - 1.0f;
-		cy[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
+		x[ i ] = ( rand_float()*2.0f ) - 1.0f;
+		x[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
+		y[ i ] = ( rand_float()*2.0f ) - 1.0f;
+		y[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		c_caxpy( len, ca, (void *)cx, 1, (void *)cy, 1 );
-		if ( cy[ 0 ] != cy[ 0 ] ) {
+		c_caxpy( len, alpha, (void *)x, 1, (void *)y, 1 );
+		if ( y[ 0 ] != y[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( cy[ 0 ] != cy[ 0 ] ) {
+	if ( y[ 0 ] != y[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;
@@ -133,30 +133,30 @@ static double benchmark1( int iterations, int len ) {
 * @return             elapsed time in seconds
 */
 static double benchmark2( int iterations, int len ) {
-	stdlib_complex64_t ca;
-	float cx[ len*2 ];
-	float cy[ len*2 ];
+	stdlib_complex64_t alpha;
+	float x[ len*2 ];
+	float y[ len*2 ];
 	double elapsed;
 	double t;
 	int i;
 
-	ca = stdlib_complex64( 1.0f, 0.0f );
+	alpha = stdlib_complex64( 1.0f, 0.0f );
 	for ( i = 0; i < len*2; i += 2 ) {
-		cx[ i ] = ( rand_float()*2.0f ) - 1.0f;
-		cx[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
-		cy[ i ] = ( rand_float()*2.0f ) - 1.0f;
-		cy[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
+		x[ i ] = ( rand_float()*2.0f ) - 1.0f;
+		x[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
+		y[ i ] = ( rand_float()*2.0f ) - 1.0f;
+		y[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		c_caxpy_ndarray( len, ca, (void *)cx, 1, 0, (void *)cy, 1, 0 );
-		if ( cy[ 0 ] != cy[ 0 ] ) {
+		c_caxpy_ndarray( len, alpha, (void *)x, 1, 0, (void *)y, 1, 0 );
+		if ( y[ 0 ] != y[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( cy[ 0 ] != cy[ 0 ] ) {
+	if ( y[ 0 ] != y[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;

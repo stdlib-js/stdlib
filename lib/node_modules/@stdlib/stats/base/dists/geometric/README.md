@@ -117,7 +117,7 @@ var negativeBinomial = require( '@stdlib/stats/base/dists/negative-binomial' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var variance = require( '@stdlib/stats/base/variance' );
 var linspace = require( '@stdlib/array/base/linspace' );
-var mean = require( '@stdlib/stats/base/mean' );
+var mean = require( '@stdlib/stats/strided/mean' );
 var abs = require( '@stdlib/math/base/special/abs' );
 var geometric = require( '@stdlib/stats/base/dists/geometric' );
 
