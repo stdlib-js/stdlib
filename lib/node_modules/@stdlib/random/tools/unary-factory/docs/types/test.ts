@@ -260,12 +260,12 @@ import createFactory = require( './index' );
 	const factory = createFactory<number, number>( exponential, dtypes, dtypes, policies );
 
 	const r1 = factory();
-	r1( [ 2,2  ], 2.0, '5' ); // $ExpectError
-	r1( [ 2,2  ], 2.0, true ); // $ExpectError
-	r1( [ 2,2  ], 2.0, false ); // $ExpectError
-	r1( [ 2,2  ], 2.0, null ); // $ExpectError
-	r1( [ 2,2  ], 2.0, [] ); // $ExpectError
-	r1( [ 2,2  ], 2.0, ( x: number ): number => x ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, '5' ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, true ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, false ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, null ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, [] ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided an invalid `dtype` option...
@@ -278,14 +278,14 @@ import createFactory = require( './index' );
 	const factory = createFactory<number, number>( exponential, dtypes, dtypes, policies );
 
 	const r1 = factory();
-	r1( [ 2,2  ], 2.0, { 'dtype': '5' } ); // $ExpectError
-	r1( [ 2,2  ], 2.0, { 'dtype': 5 } ); // $ExpectError
-	r1( [ 2,2  ], 2.0, { 'dtype': true } ); // $ExpectError
-	r1( [ 2,2  ], 2.0, { 'dtype': false } ); // $ExpectError
-	r1( [ 2,2  ], 2.0, { 'dtype': null } ); // $ExpectError
-	r1( [ 2,2  ], 2.0, { 'dtype': [] } ); // $ExpectError
-	r1( [ 2,2  ], 2.0, { 'dtype': {} } ); // $ExpectError
-	r1( [ 2,2  ], 2.0, { 'dtype': ( x: number ): number => x } ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, { 'dtype': '5' } ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, { 'dtype': 5 } ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, { 'dtype': true } ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, { 'dtype': false } ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, { 'dtype': null } ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, { 'dtype': [] } ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, { 'dtype': {} } ); // $ExpectError
+	r1( [ 2, 2 ], 2.0, { 'dtype': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided an unsupported number of arguments...

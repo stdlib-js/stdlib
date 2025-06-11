@@ -22,6 +22,6 @@
 /**
 * Macro for the arbitrary constant `g` to be used in Lanczos approximation functions.
 */
-#define STDLIB_CONSTANT_FLOAT32_GAMMA_LANCZOS_G 10.900511f
+#define STDLIB_CONSTANT_FLOAT32_GAMMA_LANCZOS_G 1.428456135094165802001953125f
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_GAMMA_LANCZOS_G_H

@@ -51,7 +51,7 @@ float API_SUFFIX(c_sdot_ndarray)( const CBLAS_INT N, const float *X, const CBLAS
 	}
 	ix = offsetX;
 	iy = offsetY;
-	
+
 	// If both strides are equal to `1`, use unrolled loops...
 	if ( strideX == 1 && strideY == 1 ) {
 		m = N % M;

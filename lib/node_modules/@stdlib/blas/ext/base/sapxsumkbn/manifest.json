@@ -45,7 +45,7 @@
         "@stdlib/napi/argv-strided-float32array",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf",
+        "@stdlib/blas/ext/base/ssumkbn",
         "@stdlib/napi/create-double"
       ]
     },
@@ -63,7 +63,7 @@
       "dependencies": [
         "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/blas/ext/base/ssumkbn"
       ]
     },
     {
@@ -80,7 +80,7 @@
       "dependencies": [
         "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/blas/ext/base/ssumkbn"
       ]
     },
     {
@@ -97,7 +97,7 @@
       "dependencies": [
         "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/blas/ext/base/ssumkbn"
       ]
     }
   ]
