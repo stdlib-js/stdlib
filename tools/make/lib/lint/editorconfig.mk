@@ -18,7 +18,7 @@
 
 # VARIABLES #
 
-# Define the path to the [editorconfig-checker][1] executable.
+# Define a command to run editorconfig-checker with fallback for environments without Node.js
 #
 # To install editorconfig-checker:
 #
@@ -26,8 +26,9 @@
 # $ npm install editorconfig-checker
 # ```
 #
+# Use a Python fallback script to avoid GitHub API rate limiting
 # [1]: https://editorconfig-checker.github.io
-EDITORCONFIG_CHECKER ?= $(BIN_DIR)/editorconfig-checker
+EDITORCONFIG_CHECKER ?= python3 $(TOOLS_DIR)/scripts/editorconfig_check.py
 
 # Define the path to the editorconfig-checker configuration file:
 EDITORCONFIG_CHECKER_CONF ?= $(CONFIG_DIR)/editorconfig-checker/.editorconfig_checker.json
@@ -60,11 +61,11 @@ EDITORCONFIG_CHECKER_CONF_FLAGS ?= \
 # @example
 # make lint-editorconfig PACKAGES_FILTER=".*/math/base/special/abs/.*"
 #/
-lint-editorconfig: $(NODE_MODULES)
+lint-editorconfig: 
 	$(QUIET) $(FIND_PACKAGES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r pkg; do \
 		echo ''; \
 		echo "Linting package for basic formatting errors: $$pkg"; \
-		cd "$$pkg" && ( $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) ./ && $(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && echo 'Success. No detected EditorConfig lint errors.' && echo '' ) || exit 1; \
+		cd "$$pkg" && ( $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) ./ && $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && echo 'Success. No detected EditorConfig lint errors.' && echo '' ) || exit 1; \
 	done
 
 .PHONY: lint-editorconfig
@@ -82,14 +83,14 @@ lint-editorconfig: $(NODE_MODULES)
 # @example
 # make lint-editorconfig-files FILES='foo/test.js bar/index.d.ts'
 #/
-lint-editorconfig-files: $(NODE_MODULES)
+lint-editorconfig-files: 
 	$(QUIET) $(DELETE) $(DELETE_FLAGS) "$(BUILD_DIR)/editorconfig-checker"
 	$(QUIET) echo 'Linting files for basic formatting errors...'
 	$(QUIET) $(MKDIR_RECURSIVE) "$(BUILD_DIR)/editorconfig-checker"
 	$(QUIET) echo $(FILES) | tr ' ' '\n' | $(TAR) -cf - -T - | $(TAR) -xf - -C "$(BUILD_DIR)/editorconfig-checker/"
 	$(QUIET) cd "$(BUILD_DIR)/editorconfig-checker" && \
-		$(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) ./ && \
-		$(NODE) $(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && \
+		$(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_CONF) ./ && \
+		$(EDITORCONFIG_CHECKER) $(EDITORCONFIG_CHECKER_CONF_FLAGS) --config $(EDITORCONFIG_CHECKER_MARKDOWN_CONF) ./ && \
 		echo 'Success. No detected EditorConfig lint errors.' && \
 		echo ''
 
