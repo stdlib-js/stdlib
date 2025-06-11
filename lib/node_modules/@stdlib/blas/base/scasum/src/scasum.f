@@ -44,18 +44,18 @@
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
 ! @param {integer} N - number of indexed elements
-! @param {Array<complex>} cx - array
-! @param {integer} strideX - `cx` stride length
+! @param {Array<complex>} x - array
+! @param {integer} strideX - `x` stride length
 ! @returns {real} result
 !<
-real function scasum( N, cx, strideX )
+real function scasum( N, x, strideX )
   implicit none
   ! ..
   ! Scalar arguments:
   integer :: N, strideX
   ! ..
   ! Array arguments:
-  complex :: cx( * )
+  complex :: x( * )
   ! ..
   ! Local scalars:
   integer :: i, nix
@@ -70,12 +70,12 @@ real function scasum( N, cx, strideX )
   if ( N <= 0 .or. strideX <= 0 ) return
   if( strideX == 1 ) then
     do i = 1, N
-      stemp = stemp + abs( real( cx( i ) ) ) + abs( aimag( cx( i ) ) )
+      stemp = stemp + abs( real( x( i ) ) ) + abs( aimag( x( i ) ) )
     end do
   else
     nix = N*strideX
     do i = 1, nix, strideX
-      stemp = stemp + abs( real( cx( i ) ) ) + abs( aimag( cx( i ) ) )
+      stemp = stemp + abs( real( x( i ) ) ) + abs( aimag( x( i ) ) )
     end do
   end if
   scasum = stemp

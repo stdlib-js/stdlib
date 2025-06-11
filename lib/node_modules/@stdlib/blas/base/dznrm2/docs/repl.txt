@@ -1,5 +1,5 @@
 
-{{alias}}( N, zx, strideX )
+{{alias}}( N, x, strideX )
     Computes the L2-norm of a complex double-precision floating-point vector.
 
     The `N` and stride parameters determine which elements in the strided array
@@ -15,11 +15,11 @@
     N: integer
         Number of indexed elements.
 
-    zx: Complex128Array
+    x: Complex128Array
         Input array.
 
     strideX: integer
-        Index increment for `zx`.
+        Index increment for `x`.
 
     Returns
     -------
@@ -29,23 +29,23 @@
     Examples
     --------
     // Standard Usage:
-    > var zx = new {{alias:@stdlib/array/complex128}}( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5 ] );
-    > var out = {{alias}}( 3, zx, 1 )
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5 ] );
+    > var out = {{alias}}( 3, x, 1 )
     ~0.77
 
     // Using `N` and stride parameters:
-    > zx = new {{alias:@stdlib/array/complex128}}( [ 3.0, -4.0, 0.0, 0.0, 5.0, -6.0 ] );
-    > out = {{alias}}( 2, zx, 2 )
+    > x = new {{alias:@stdlib/array/complex128}}( [ 3.0, -4.0, 0.0, 0.0, 5.0, -6.0 ] );
+    > out = {{alias}}( 2, x, 2 )
     ~9.3
 
     // Using view offsets:
-    > var zx0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
-    > var zx1 = new {{alias:@stdlib/array/complex128}}( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 );
-    > out = {{alias}}( 2, zx1, 1 )
+    > var x0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
+    > var x1 = new {{alias:@stdlib/array/complex128}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > out = {{alias}}( 2, x1, 1 )
     ~9.3
 
 
-{{alias}}.ndarray( N, zx, strideX, offsetX )
+{{alias}}.ndarray( N, x, strideX, offsetX )
     Computes the L2-norm of a complex double-precision floating-point vector
     using alternative indexing semantics.
 
@@ -58,14 +58,14 @@
     N: integer
         Number of indexed elements.
 
-    zx: Complex128Array
+    x: Complex128Array
         Input array.
 
     strideX: integer
-        Index increment for `zx`.
+        Index increment for `x`.
 
     offsetX: integer
-        Starting index of `zx`.
+        Starting index of `x`.
 
     Returns
     -------
@@ -75,13 +75,13 @@
     Examples
     --------
     // Standard Usage:
-    > var zx = new {{alias:@stdlib/array/complex128}}( [ 3.0, -4.0, 0.0, 0.0, 5.0, -6.0 ] );
-    > var out = {{alias}}.ndarray( 2, zx, 2, 0 )
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 3.0, -4.0, 0.0, 0.0, 5.0, -6.0 ] );
+    > var out = {{alias}}.ndarray( 2, x, 2, 0 )
     ~9.3
 
     // Using an index offset:
-    > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
-    > out = {{alias}}.ndarray( 2, zx, 1, 1 )
+    > x = new {{alias:@stdlib/array/complex128}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
+    > out = {{alias}}.ndarray( 2, x, 1, 1 )
     ~9.3
 
     See Also

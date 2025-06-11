@@ -1,69 +1,69 @@
 
-{{alias}}( N, ca, cx, strideX, cy, strideY )
+{{alias}}( N, alpha, x, strideX, y, strideY )
     Scales a single-precision complex floating-point vector by a single-
     precision complex floating point constant and adds the result to a single-
     precision complex floating-point vector.
 
-    The `N` and stride parameters determine how values from `cx` are scaled by
-    `ca` and added to `cy`.
+    The `N` and stride parameters determine how values from `x` are scaled by
+    `alpha` and added to `y`.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    If `N` is less than or equal to `0`, the function returns `cy` unchanged.
+    If `N` is less than or equal to `0`, the function returns `y` unchanged.
 
     Parameters
     ----------
     N: integer
         Number of indexed elements.
 
-    ca: Complex64
+    alpha: Complex64
         Scalar constant.
 
-    cx: Complex64Array
+    x: Complex64Array
         First input array.
 
     strideX: integer
-        Index increment for `cx`.
+        Index increment for `x`.
 
-    cy: Complex64Array
+    y: Complex64Array
         Second input array.
 
     strideY: integer
-        Index increment for `cy`.
+        Index increment for `y`.
 
     Returns
     -------
-    cy: Complex64Array
+    y: Complex64Array
         Second input array.
 
     Examples
     --------
     // Standard usage:
-    > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > var cy = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0 ] );
-    > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
-    > {{alias}}( 2, ca, cx, 1, cy, 1 )
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0 ] );
+    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
+    > {{alias}}( 2, alpha, x, 1, y, 1 )
     <Complex64Array>[ -1.0, 7.0, -1.0, 15.0 ]
 
     // Advanced indexing:
-    > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-    > cy = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-    > {{alias}}( 2, ca, cx, -2, cy, 1 )
+    > x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+    > {{alias}}( 2, alpha, x, -2, y, 1 )
     <Complex64Array>[ -1.0, 23.0, -1.0, 7.0, 1.0, 1.0 ]
 
     // Using typed array views:
-    > var cx0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > var cy0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0 ] );
-    > var cx1 = new {{alias:@stdlib/array/complex64}}( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 );
-    > var cy1 = new {{alias:@stdlib/array/complex64}}( cy0.buffer, cy0.BYTES_PER_ELEMENT*1 );
-    > {{alias}}( 1, ca, cx1, 1, cy1, 1 )
+    > var x0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0 ] );
+    > var x1 = new {{alias:@stdlib/array/complex64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/complex64}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 1, alpha, x1, 1, y1, 1 )
     <Complex64Array>[ -1.0, 15.0 ]
-    > cy0
+    > y0
     <Complex64Array>[ 1.0, 1.0, -1.0, 15.0 ]
 
 
-{{alias}}.ndarray( N, ca, cx, strideX, offsetX, cy, strideY, offsetY )
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX, y, strideY, offsetY )
     Scales a single-precision complex floating-point vector by a single-
     precision complex floating-point constant and adds the result to a single-
     precision complex floating-point vector using alternative indexing
@@ -78,45 +78,45 @@
     N: integer
         Number of indexed elements.
 
-    ca: Complex64
+    alpha: Complex64
         Scalar constant.
 
-    cx: Complex64Array
+    x: Complex64Array
         First input array.
 
     strideX: integer
-        Index increment for `cx`.
+        Index increment for `x`.
 
     offsetX: integer
-        Starting index for `cx`.
+        Starting index for `x`.
 
-    cy: Complex64Array
+    y: Complex64Array
         Second input array.
 
     strideY: integer
-        Index increment for `cy`.
+        Index increment for `y`.
 
     offsetY: integer
-        Starting index for `cy`.
+        Starting index for `y`.
 
     Returns
     -------
-    cy: Complex64Array
+    y: Complex64Array
         Second input array.
 
     Examples
     --------
     // Standard usage:
-    > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > var cy = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0 ] );
-    > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
-    > {{alias}}.ndarray( cx.length, ca, cx, 1, 0, cy, 1, 0 )
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0 ] );
+    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
+    > {{alias}}.ndarray( x.length, alpha, x, 1, 0, y, 1, 0 )
     <Complex64Array>[ -1.0, 7.0, -1.0, 15.0 ]
 
     // Advanced indexing:
-    > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-    > cy = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-    > {{alias}}.ndarray( 2, ca, cx, 1, 1, cy, 1, 1 )
+    > x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/complex64}}( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
+    > {{alias}}.ndarray( 2, alpha, x, 1, 1, y, 1, 1 )
     <Complex64Array>[ 1.0, 1.0, -1.0, 15.0, -1.0, 23.0 ]
 
     See Also

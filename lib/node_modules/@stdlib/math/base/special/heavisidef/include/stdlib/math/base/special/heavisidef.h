@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 // Enumeration of function continuity:
-typedef enum STDLIB_BASE_HEAVISIDEF_CONTINUITY {
+enum STDLIB_BASE_HEAVISIDEF_CONTINUITY {
 	// Half-maximum:
 	STDLIB_BASE_HEAVISIDEF_CONTINUITY_HALF_MAXIMUM = 0,
 
@@ -39,12 +39,12 @@ typedef enum STDLIB_BASE_HEAVISIDEF_CONTINUITY {
 
 	// Discontinuous:
 	STDLIB_BASE_HEAVISIDEF_CONTINUITY_DISCONTINUOUS = 3
-} STDLIB_BASE_HEAVISIDEF_CONTINUITY;
+};
 
 /**
 * Evaluates the Heaviside function for a single-precision floating-point number.
 */
-float stdlib_base_heavisidef( const float x, const STDLIB_BASE_HEAVISIDEF_CONTINUITY continuity );
+float stdlib_base_heavisidef( const float x, const enum STDLIB_BASE_HEAVISIDEF_CONTINUITY continuity );
 
 #ifdef __cplusplus
 }
