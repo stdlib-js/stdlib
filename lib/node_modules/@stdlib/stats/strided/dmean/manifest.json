@@ -39,7 +39,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/stats/base/dmeanpn",
+        "@stdlib/stats/strided/dmeanpn",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -60,7 +60,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/stats/base/dmeanpn"
+        "@stdlib/stats/strided/dmeanpn"
       ]
     },
     {
@@ -76,7 +76,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/stats/base/dmeanpn"
+        "@stdlib/stats/strided/dmeanpn"
       ]
     },
     {
@@ -92,7 +92,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/stats/base/dmeanpn"
+        "@stdlib/stats/strided/dmeanpn"
       ]
     }
   ]

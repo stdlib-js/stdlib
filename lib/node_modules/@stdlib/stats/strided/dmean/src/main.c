@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/stats/strided/dmean.h"
-#include "stdlib/stats/base/dmeanpn.h"
+#include "stdlib/stats/strided/dmeanpn.h"
 #include "stdlib/blas/base/shared.h"
 
 /**
