@@ -1246,8 +1246,8 @@
 "@stdlib/stats/strided/maxsorted",base.strided.maxsorted
 "@stdlib/strided/base/max-view-buffer-index",base.strided.maxViewBufferIndex
 "@stdlib/stats/strided/mean",base.strided.mean
-"@stdlib/stats/base/meankbn",base.strided.meankbn
-"@stdlib/stats/base/meankbn2",base.strided.meankbn2
+"@stdlib/stats/strided/meankbn",base.strided.meankbn
+"@stdlib/stats/strided/meankbn2",base.strided.meankbn2
 "@stdlib/stats/base/meanors",base.strided.meanors
 "@stdlib/stats/base/meanpn",base.strided.meanpn
 "@stdlib/stats/base/meanpw",base.strided.meanpw

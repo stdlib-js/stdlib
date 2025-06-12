@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/stats/base/meankbn2",
+  "name": "@stdlib/stats/strided/meankbn",
   "version": "0.0.0",
-  "description": "Calculate the arithmetic mean of a strided array using a second-order iterative Kahan–Babuška algorithm.",
+  "description": "Calculate the arithmetic mean of a strided array using an improved Kahan–Babuška algorithm.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
