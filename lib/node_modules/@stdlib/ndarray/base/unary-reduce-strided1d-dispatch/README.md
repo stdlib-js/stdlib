@@ -209,7 +209,7 @@ The method accepts the following options:
 
     -   **arrays**: array containing an input ndarray, followed by any additional ndarray arguments.
 
--   The output data type policy only applies to the `apply` method. For the `assign` method, the output ndarray is allowed to have any data type.
+-   The output data type policy only applies to the `apply` method. For the `assign` method, the output ndarray is allowed to have any supported output data type.
 
 </section>
 
