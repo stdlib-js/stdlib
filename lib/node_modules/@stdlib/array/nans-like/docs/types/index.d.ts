@@ -88,7 +88,7 @@ declare function nansLike( x: AnyArray, dtype: 'complex128' ): Complex128Array;
 /**
 * Creates an array filled with NaNs and having the same length as a provided input array.
 *
- ## Notes
+* ## Notes
 *
 * -   Each element of the returned array has a real component equal to `NaN` and an imaginary component equal to `NaN`.
 *
@@ -188,7 +188,7 @@ declare function nansLike( x: Float32Array, dtype?: DataType ): Float32Array;
 * -   `complex64`: single-precision complex floating-point numbers
 * -   `generic`: generic JavaScript values
 *
- ## Notes
+* ## Notes
 *
 * -   Each element of the returned array has a real component equal to `NaN` and an imaginary component equal to `NaN`.
 *
@@ -218,7 +218,7 @@ declare function nansLike( x: Complex128Array, dtype?: DataType ): Complex128Arr
 * -   `complex64`: single-precision complex floating-point numbers
 * -   `generic`: generic JavaScript values
 *
- ## Notes
+* ## Notes
 *
 * -   Each element of the returned array has a real component equal to `NaN` and an imaginary component equal to `NaN`.
 *

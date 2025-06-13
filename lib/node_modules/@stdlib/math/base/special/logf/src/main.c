@@ -24,7 +24,7 @@
 *
 * @param x    input value
 * @param b    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * float out = stdlib_base_logf( 100.0f, 10.0f );

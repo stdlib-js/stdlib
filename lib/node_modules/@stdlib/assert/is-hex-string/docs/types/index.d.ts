@@ -21,7 +21,7 @@
 /**
 * Tests whether a string contains only hexadecimal digits.
 *
-* @param x - value to test
+* @param value - value to test
 * @returns boolean indicating if a string contains only hexadecimal digits
 *
 * @example

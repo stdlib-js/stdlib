@@ -1,3 +1,4 @@
+
 {{alias}}( target, ...source )
     Copies own enumerable properties from one or more source objects to a target
     object.

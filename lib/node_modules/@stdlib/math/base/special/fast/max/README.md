@@ -187,7 +187,7 @@ int main( void ) {
     double y;
     double v;
     int i;
-    
+
     for ( i = 0; i < 100; i++ ) {
         x = ( ( (double)rand() / (double)RAND_MAX ) * 2000.0 ) - 1000.0;
         y = ( ( (double)rand() / (double)RAND_MAX ) * 2000.0 ) - 1000.0;

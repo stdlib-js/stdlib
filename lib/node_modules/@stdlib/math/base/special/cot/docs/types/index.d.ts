@@ -23,26 +23,26 @@
 *
 * @param x - input value (in radians)
 * @returns cotangent
- *
- * @example
- * var v = cot( 0.0 );
- * // returns Infinity
- *
- * @example
- * var v = cot( 3.141592653589793/2.0 );
- * // returns ~0.0
- *
- * @example
- * var v = cot( -3.141592653589793/4.0 );
- * // returns ~-1.0
- *
- * @example
- * var v = cot( 3.141592653589793/4.0 );
- * // returns ~1.0
- *
- * @example
- * var v = cot( NaN );
- * // returns NaN
+*
+* @example
+* var v = cot( 0.0 );
+* // returns Infinity
+*
+* @example
+* var v = cot( 3.141592653589793/2.0 );
+* // returns ~0.0
+*
+* @example
+* var v = cot( -3.141592653589793/4.0 );
+* // returns ~-1.0
+*
+* @example
+* var v = cot( 3.141592653589793/4.0 );
+* // returns ~1.0
+*
+* @example
+* var v = cot( NaN );
+* // returns NaN
 */
 declare function cot( x: number ): number;
 

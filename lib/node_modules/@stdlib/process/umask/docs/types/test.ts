@@ -21,7 +21,7 @@ import umask = require( './index' );
 
 // TESTS //
 
-// The function returns a string or null...
+// The function returns a string or number...
 {
 	umask(); // $ExpectType string | number
 	umask( 0 ); // $ExpectType string | number

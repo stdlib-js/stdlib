@@ -38,4 +38,12 @@ int main( void ) {
 	for ( int i = 0; i < N; i++ ) {
 		printf( "y[ %i ] = %lf + %lfj\n", i, y[ i*2 ], y[ (i*2)+1 ] );
 	}
+
+	// Copy elements using alternative indexing semantics:
+	c_zcopy_ndarray( N, (void *)x, -strideX, N-1, (void *)y, strideY, N-1 );
+
+	// Print the result:
+	for ( int i = 0; i < N; i++ ) {
+		printf( "y[ %i ] = %lf + %lfj\n", i, y[ i*2 ], y[ (i*2)+1 ] );
+	}
 }

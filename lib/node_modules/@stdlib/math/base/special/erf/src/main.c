@@ -524,7 +524,7 @@ double stdlib_base_erf( const double x ) {
 	}
 	z = ax;
 	stdlib_base_float64_set_low_word( 0, &z ); // pseudo-single (20-bit) precision x
-	r = stdlib_base_exp( -( z * z ) - 0.5625 ) * exp( ( ( z - ax ) * ( z + ax ) ) + ( r / s ) );
+	r = stdlib_base_exp( -( z * z ) - 0.5625 ) * stdlib_base_exp( ( ( z - ax ) * ( z + ax ) ) + ( r / s ) );
 	if ( sign == 1 ) {
 		return ( r / ax ) - 1.0;
 	}

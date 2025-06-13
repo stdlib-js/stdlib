@@ -24,7 +24,7 @@ import ndarraylike2ndarray = require( './index' );
 /**
 * Mock function to create an ndarray-like object.
 *
-* @return ndarray-like object
+* @returns ndarray-like object
 */
 function array(): typedndarray<number> {
 	const obj: typedndarray<number> = {

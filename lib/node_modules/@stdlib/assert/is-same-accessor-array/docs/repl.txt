@@ -1,0 +1,36 @@
+
+{{alias}}( v1, v2 )
+    Tests if two arguments are both accessor arrays and have the same values.
+
+    The function differs from the `===` operator in that the function treats
+    `-0` and `+0` as distinct and `NaNs` as the same.
+
+    Parameters
+    ----------
+    v1: any
+        First input value.
+
+    v2: any
+        Second input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arguments are both accessor arrays 
+        having the same values.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var bool = {{alias}}( x, y )
+    true
+
+    > x = new {{alias:@stdlib/array/complex128}}( [] );
+    > y = new {{alias:@stdlib/array/complex128}}( [] );
+    > bool = {{alias}}( x, y )
+    true
+
+    See Also
+    --------
+

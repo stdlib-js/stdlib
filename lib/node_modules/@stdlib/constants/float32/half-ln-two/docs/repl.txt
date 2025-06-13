@@ -1,0 +1,13 @@
+
+{{alias}}
+    One half times the natural logarithm of 2 as a single-precision
+    floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    0.3465735912322998
+
+    See Also
+    --------
+

@@ -22,7 +22,7 @@ limitations under the License.
 
 > Solve one of the systems of equations `A*x = b` or `A^T*x = b`.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 

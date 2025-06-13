@@ -18,14 +18,22 @@
 
 import mapArguments = require( './index' );
 
-/**
-* Callback function.
-*
-* @param v - argument
-* @returns result
-*/
-function clbk( v: any ): any {
+// FUNCTIONS //
+
+function clbk<T>( v: T ): T {
 	return v;
+}
+
+function stringify( n: number ): string {
+	return n.toString();
+}
+
+function sum( ...numbers: Array<number> ): number {
+	return numbers.reduce( ( a, b ) => a + b, 0 );
+}
+
+function greet( this: { name: string }, greeting: string ): string {
+	return `${greeting}, ${this.name}!`; // eslint-disable-line no-invalid-this
 }
 
 
@@ -33,8 +41,14 @@ function clbk( v: any ): any {
 
 // The function returns a function...
 {
-	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], clbk ); // $ExpectType Function
-	mapArguments( ( x: any, y: any, z: any ): Array<any> => [ x, y, z ], clbk, {} ); // $ExpectType Function
+	mapArguments( ( x: number, y: number, z: number ): Array<number> => [ x, y, z ], clbk ); // $ExpectType (x: number, y: number, z: number) => number[]
+	mapArguments( ( x: string, y: string, z: string ): Array<string> => [ x, y, z ], clbk, {} ); // $ExpectType (this: {}, x: string, y: string, z: string) => string[]
+	mapArguments( ( x: number, y: number ): number => x + y, clbk ); // $ExpectType (x: number, y: number) => number
+
+	mapArguments( stringify, ( x: number ) => x * 2 ); // $ExpectType (n: number) => string
+	mapArguments( sum, ( x: number ) => x * 2 ); // $ExpectType (...args: number[]) => number
+
+	mapArguments( greet, ( s: string ) => s.toUpperCase(), { 'name': 'World' } ); // $ExpectType (this: { name: string; }, greeting: string) => string
 }
 
 // The compiler throws an error if the function is provided a first argument other than a function...

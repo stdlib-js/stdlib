@@ -56,8 +56,8 @@ var out = countBy( arr, indicator );
 
 An `indicator` function is provided two arguments:
 
--   `value`: collection element
--   `index`: collection index
+-   **value**: collection element.
+-   **index**: collection index.
 
 ```javascript
 function indicator( v, i ) {
@@ -72,7 +72,7 @@ var out = countBy( arr, indicator );
 
 The function accepts the following `options`:
 
--   `thisArg`: execution context.
+-   **thisArg**: execution context.
 
 To set the `indicator` execution context, provide a `thisArg`.
 
