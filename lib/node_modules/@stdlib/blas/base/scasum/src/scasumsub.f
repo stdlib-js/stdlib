@@ -19,17 +19,17 @@
 !> Wraps `scasum` as a subroutine.
 !
 ! @param {integer} N - number of indexed elements
-! @param {Array<complex>} cx - input array
-! @param {integer} strideX - `cx` stride length
+! @param {Array<complex>} x - input array
+! @param {integer} strideX - `x` stride length
 ! @param {real} out - output variable reference
 !<
-subroutine scasumsub( N, cx, strideX, out )
+subroutine scasumsub( N, x, strideX, out )
   implicit none
   ! ..
   ! External functions:
   interface
-    real function scasum( N, cx, strideX )
-      complex :: cx(*)
+    real function scasum( N, x, strideX )
+      complex :: x(*)
       integer :: strideX, N
     end function scasum
   end interface
@@ -39,8 +39,8 @@ subroutine scasumsub( N, cx, strideX, out )
   real :: out
   ! ..
   ! Array arguments:
-  complex :: cx(*)
+  complex :: x(*)
   ! ..
-  out = scasum( N, cx, strideX )
+  out = scasum( N, x, strideX )
   return
 end subroutine scasumsub

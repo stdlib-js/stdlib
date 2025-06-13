@@ -30,7 +30,7 @@
 * @return     skewness
 *
 * @example
-* double y = stdlib_base_triangular_skewness( 0.0, 1.0, 0.5 );
+* double y = stdlib_base_dists_triangular_skewness( 0.0, 1.0, 0.5 );
 * // returns 0.0
 */
 double stdlib_base_dists_triangular_skewness( const double a, const double b, const double c ) {
