@@ -71,5 +71,90 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "coversin",
+      "alias": "coversinf",
+      "pkg_desc": "compute the coversed sine of a single-precision floating-point number (in radians)",
+      "desc": "computes the coversed sine of a single-precision floating-point number (in radians)",
+      "short_desc": "coversed sine",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in radians)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            64,
+            27,
+            0,
+            0.1,
+            -9,
+            8,
+            -1,
+            125,
+            -10.2,
+            11.3,
+            -12.4,
+            3.5,
+            -1.6,
+            15.7,
+            -16,
+            17.9,
+            -188,
+            19.11,
+            -200,
+            21.15
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "coversed sine",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "coversin",
+        "coversinf",
+        "coversine",
+        "coversed",
+        "coversinus",
+        "covers",
+        "cosiv",
+        "cvs",
+        "versed",
+        "sine",
+        "sin",
+        "trig",
+        "trigonometry",
+        "radians",
+        "angle"
+      ],
+      "extra_keywords": []
+    }
+  }
 }
