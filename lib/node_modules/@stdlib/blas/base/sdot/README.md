@@ -177,6 +177,138 @@ console.log( out );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/base/sdot.h"
+```
+
+#### c_sdot( N, \*X, strideX, \*Y, strideY )
+
+Computes the dot product of two single-precision floating-point vectors.
+
+```c
+const float x[] = { 4.0f, 2.0f, -3.0f, 5.0f, -1.0f };
+const float y[] = { 2.0f, 6.0f, -1.0f, -4.0f, 8.0f };
+
+float d = c_sdot( 5, x, 1, y, 1 );
+// returns -5.0f
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] float*` first input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **Y**: `[in] float*` second input array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+
+```c
+float c_sdot( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const float *Y, const CBLAS_INT strideY );
+```
+
+#### c_sdot_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
+
+Computes the dot product of two single-precision floating-point vectors using alternative indexing semantics.
+
+```c
+const float x[] = { 4.0f, 2.0f, -3.0f, 5.0f, -1.0f };
+const float y[] = { 2.0f, 6.0f, -1.0f, -4.0f, 8.0f };
+
+float d = c_sdot_ndarray( 3, x, 1, 2, y, 1, 2 );
+// returns -25.0f
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] float*` first input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[in] float*` second input array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+float c_sdot_ndarray( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/base/sdot.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create strided arrays:
+    const float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+    const float y[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+
+    // Specify the number of indexed elements:
+    const int N = 8;
+
+    // Specify strides:
+    const int strideX = 1;
+    const int strideY = -1;
+
+    // Compute the dot product:
+    float d = c_sdot( N, x, strideX, y, strideY );
+
+    // Print the result:
+    printf( "dot product: %f\n", d );
+
+    // Compute the dot product:
+    d = c_sdot_ndarray( N, x, strideX, 0, y, strideY, 7 );
+
+    // Print the result:
+    printf( "dot product: %f\n", d );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

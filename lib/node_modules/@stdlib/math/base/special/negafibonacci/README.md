@@ -194,7 +194,7 @@ Computes the nth [negaFibonacci number][fibonacci-number].
 double out = stdlib_base_negafibonacci( 0 );
 // returns 0
 
-out = stdlib_base_fibonacci( -1 );
+out = stdlib_base_negafibonacci( -1 );
 // returns 1
 ```
 

@@ -22,6 +22,8 @@
 #ifndef SASUM_H
 #define SASUM_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,12 @@ extern "C" {
 /**
 * Computes the sum of absolute values.
 */
-float c_sasum( const int N, const float *X, const int stride );
+float API_SUFFIX(c_sasum)( const CBLAS_INT N, const float *X, const CBLAS_INT stride );
+
+/**
+* Computes the sum of absolute values using alternative indexing semantics.
+*/
+float API_SUFFIX(c_sasum_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT stride, const CBLAS_INT offset );
 
 #ifdef __cplusplus
 }

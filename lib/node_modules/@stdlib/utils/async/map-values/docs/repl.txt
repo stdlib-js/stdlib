@@ -4,30 +4,30 @@
 
     When invoked, `transform` is provided a maximum of four arguments:
 
-    - `value`: object value corresponding to `key`
-    - `key`: object key
-    - `obj`: the input object
-    - `next`: a callback to be invoked after processing an object `value`
+    - value: object value corresponding to `key`.
+    - key: object key.
+    - obj: the input object.
+    - next: a callback to be invoked after processing an object `value`.
 
     The actual number of provided arguments depends on function length. If
     `transform` accepts two arguments, `transform` is provided:
 
-    - `value`
-    - `next`
+    - value
+    - next
 
     If `transform` accepts three arguments, `transform` is provided:
 
-    - `value`
-    - `key`
-    - `next`
+    - value
+    - key
+    - next
 
     For every other `transform` signature, `transform` is provided all four
     arguments.
 
     The `next` callback accepts two arguments:
 
-    - `error`: error argument
-    - `value`: transformed value
+    - error: error argument.
+    - value: transformed value.
 
     If a `transform` function calls the `next` callback with a truthy `error`
     argument, the function suspends execution and immediately calls the `done`

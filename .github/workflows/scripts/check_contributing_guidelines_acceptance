@@ -43,6 +43,7 @@ GITHUB_REPOSITORY="stdlib-js/stdlib"
 # Set the contributing guidelines link:
 CONTRIBUTING_LINK="https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md"
 
+
 # FUNCTIONS #
 
 # Error handler.
@@ -71,7 +72,7 @@ main() {
 	fi
 
 	# Check for the contributing guidelines checkbox:
-	if echo "${pr_body}" | grep -qE '^\s*-\s*\[x\]\s*Read,\s*understood,\s*and\s*followed\s*the\s*\[contributing\s*guidelines\]'; then
+	if echo "${pr_body}" | grep -qE '^\s*-\s*\[[xX]\]\s*Read,\s*understood,\s*and\s*followed\s*the\s*\[contributing\s*guidelines\]'; then
 		echo "Contributing guidelines acknowledged."
 		print_success
 		exit 0

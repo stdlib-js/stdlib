@@ -22,6 +22,8 @@
 #ifndef SNRM2_H
 #define SNRM2_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,12 @@ extern "C" {
 /**
 * Computes the L2-norm of a single-precision floating-point vector.
 */
-float c_snrm2( const int N, const float *X, const int stride );
+float API_SUFFIX(c_snrm2)( const CBLAS_INT N, const float *X, const CBLAS_INT stride );
+
+/**
+* Computes the L2-norm of a single-precision floating-point vector using alternative indexing semantics.
+*/
+float API_SUFFIX(c_snrm2_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT stride, const CBLAS_INT offset );
 
 #ifdef __cplusplus
 }

@@ -23,8 +23,8 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
- * Interface describing `sici`.
- */
+* Interface describing `sici`.
+*/
 interface Sici {
 	/**
 	* Computes the sine and cosine integrals.

@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/dnansum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -41,13 +41,15 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float64array",
         "@stdlib/napi/create-double",
-        "@stdlib/blas/ext/base/dnansumkbn"
+        "@stdlib/blas/ext/base/dnansumkbn",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/dnansum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -55,13 +57,15 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/dnansumkbn"
+        "@stdlib/blas/ext/base/dnansumkbn",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dnansum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -69,7 +73,9 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/dnansumkbn"
+        "@stdlib/blas/ext/base/dnansumkbn",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     }
   ]

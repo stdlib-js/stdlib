@@ -85,7 +85,7 @@ interface ValuesResults<T> {
 /**
 * Interface describing group results when returning indices.
 */
-interface IndicesResults<T> {
+interface IndicesResults {
 	/**
 	* Results for an individual group.
 	*/
@@ -128,7 +128,7 @@ type ValuesBinary<T> = ( error: Error | null, result: ValuesResults<T> ) => void
 * @param error - encountered error or null
 * @param result - group results
 */
-type IndicesBinary<T> = ( error: Error | null, result: IndicesResults<T> ) => void;
+type IndicesBinary<T> = ( error: Error | null, result: IndicesResults ) => void;
 
 /**
 * Callback invoked either upon processing all collection elements or upon encountering an error.

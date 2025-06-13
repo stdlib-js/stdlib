@@ -1,0 +1,29 @@
+
+{{alias}}( binary, memory[, imports] )
+    WebAssembly module wrapper constructor.
+
+    TODO: document methods and properties
+
+    Parameters
+    ----------
+    binary: Uint8Array|ArrayBuffer
+        WebAssembly binary code.
+
+    memory: Memory
+        WebAssembly memory instance.
+
+    imports: Object (optional)
+        WebAssembly module import object.
+
+    Returns
+    -------
+    out: Object
+        WebAssembly module wrapper instance.
+
+    Examples
+    --------
+    > var m = new {{alias}}();
+
+    See Also
+    --------
+

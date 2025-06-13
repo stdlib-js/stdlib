@@ -213,7 +213,7 @@ Applies a plane rotation.
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f };
 float y[] = { 6.0f, 7.0f, 8.0f, 9.0f, 10.0f };
 
-c_drot( 5, x, 1, y, 1, 0.8f, 0.6f );
+c_srot( 5, x, 1, y, 1, 0.8f, 0.6f );
 ```
 
 The function accepts the following arguments:
@@ -227,7 +227,34 @@ The function accepts the following arguments:
 -   **s**: `[in] float` sine of the angle of rotation.
 
 ```c
-void c_drot( const CBLAS_INT N, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY, const float c, const float s );
+void c_srot( const CBLAS_INT N, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY, const float c, const float s );
+```
+
+#### c_srot_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY, c, s )
+
+Applies a plane rotation using alternative indexing semantics.
+
+```c
+float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f };
+float y[] = { 6.0f, 7.0f, 8.0f, 9.0f, 10.0f };
+
+c_srot_ndarray( 5, x, 1, 0, y, 1, 0, 0.8f, 0.6f );
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[inout] float*` first input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **Y**: `[inout] float*` second input array.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
+-   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
+-   **c**: `[in] float` cosine of the angle of rotation.
+-   **s**: `[in] float` sine of the angle of rotation.
+
+```c
+void c_srot_ndarray( const CBLAS_INT N, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const float c, const float s );
 ```
 
 </section>
@@ -249,7 +276,7 @@ void c_drot( const CBLAS_INT N, float *X, const CBLAS_INT strideX, float *Y, con
 ### Examples
 
 ```c
-#include "stdlib/blas/base/drot.h"
+#include "stdlib/blas/base/srot.h"
 #include <stdio.h>
 
 int main( void ) {
@@ -258,18 +285,26 @@ int main( void ) {
     float y[] = { 6.0f, 7.0f, 8.0f, 9.0f, 10.0f };
 
     // Specify the number of elements:
-    const int N = 5;
+    const int N = 3;
 
     // Specify stride lengths:
-    const int strideX = 1;
-    const int strideY = 1;
+    const int strideX = 2;
+    const int strideY = -2;
 
     // Specify angle of rotation:
     const float c = 0.8f;
     const float s = 0.6f;
 
     // Apply plane rotation:
-    c_drot( N, x, strideX, y, strideY, c, s );
+    c_srot( N, x, strideX, y, strideY, c, s );
+
+    // Print the result:
+    for ( int i = 0; i < 5; i++ ) {
+        printf( "x[ %i ] = %f, y[ %i ] = %f\n", i, x[ i ], i, y[ i ] );
+    }
+
+    // Apply plane rotation:
+    c_srot_ndarray( N, x, strideX, 0, y, strideY, 4, c, s );
 
     // Print the result:
     for ( int i = 0; i < 5; i++ ) {

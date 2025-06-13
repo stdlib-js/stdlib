@@ -1,0 +1,92 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/math/base/special/copysignf",
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/precision",
+        "@stdlib/constants/float32/abs-mask"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/math/base/special/copysignf",
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/precision",
+        "@stdlib/constants/float32/abs-mask"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/math/base/special/copysignf",
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/precision",
+        "@stdlib/constants/float32/abs-mask"
+      ]
+    }
+  ]
+}

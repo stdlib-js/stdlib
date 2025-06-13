@@ -107,8 +107,8 @@ interface Parallel {
 	* var fcns = [ foo, bar ];
 	*
 	* var opts = {
-	* 	'thisArg': {},
-	* 	'limit': 2
+	*     'thisArg': {},
+	*     'limit': 2
 	* }
 	*
 	* parallel( fcns, opts, done );
@@ -218,8 +218,8 @@ interface Parallel {
 	* var fcns = [ a, b ];
 	*
 	* var opts = {
-	* 	'thisArg': {},
-	* 	'limit': 2
+	*     'thisArg': {},
+	*     'limit': 2
 	* }
 	*
 	* var run = parallel.factory( fcns, opts );

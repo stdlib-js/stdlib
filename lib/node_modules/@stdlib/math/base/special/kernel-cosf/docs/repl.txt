@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Computes the cosine of a number on the interval [-π/4, π/4] in
+    single-precision floating-point format.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    out: number
+        Cosine.
+
+    Examples
+    --------
+    > var out = {{alias}}( 0.0 )
+    ~1.0
+    > out = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/6.0 )
+    ~0.866
+    > out = {{alias}}( 0.785 )
+    ~0.707
+    > out = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

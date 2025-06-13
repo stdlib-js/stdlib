@@ -104,6 +104,29 @@ console.log( headerDir );
 #include "stdlib/math/base/napi/quinary.h"
 ```
 
+<!-- NOTE: keep in alphabetical order according to the suffix XXXXX_X -->
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_DDDDD_D( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a quinary function accepting and returning double-precision floating-point numbers.
+
+```c
+static double add( const double x, const double y, const double z, const double w, const double u ) {
+    return x + y + z + w + u;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_DDDDD_D( add );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `double (*fcn)( double, double, double, double, double )` quinary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
 #### stdlib_math_base_napi_ddddd_d( env, info, fcn )
 
 Invokes a quinary function accepting and returning double-precision floating-point numbers.
@@ -143,6 +166,27 @@ The function accepts the following arguments:
 void stdlib_math_base_napi_ddddd_d( napi_env env, napi_callback_info info, double (*fcn)( double, double, double, double, double ) );
 ```
 
+#### STDLIB_MATH_BASE_NAPI_MODULE_FFFFF_F( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a quinary function accepting and returning single-precision floating-point numbers.
+
+```c
+static float addf( const float x, const float y, const float z, const float w, const float u ) {
+    return x + y + z + w + u;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_FFFFF_F( addf );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `float (*fcn)( float, float, float, float, float )` quinary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
 #### stdlib_math_base_napi_fffff_f( env, info, fcn )
 
 Invokes a quinary function accepting and returning single-precision floating-point numbers.
@@ -181,48 +225,6 @@ The function accepts the following arguments:
 ```c
 void stdlib_math_base_napi_fffff_f( napi_env env, napi_callback_info info, float (*fcn)( float, float, float, float, float ) );
 ```
-
-#### STDLIB_MATH_BASE_NAPI_MODULE_DDDDD_D( fcn )
-
-Macro for registering a Node-API module exporting an interface for invoking a quinary function accepting and returning double-precision floating-point numbers.
-
-```c
-static double add( const double x, const double y, const double z, const double w, const double u ) {
-    return x + y + z + w + u;
-}
-
-// ...
-
-// Register a Node-API module:
-STDLIB_MATH_BASE_NAPI_MODULE_DDDDD_D( add );
-```
-
-The macro expects the following arguments:
-
--   **fcn**: `double (*fcn)( double, double, double, double, double )` quinary function.
-
-When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
-
-#### STDLIB_MATH_BASE_NAPI_MODULE_FFFFF_F( fcn )
-
-Macro for registering a Node-API module exporting an interface for invoking a quinary function accepting and returning single-precision floating-point numbers.
-
-```c
-static float addf( const float x, const float y, const float z, const float w, const float u ) {
-    return x + y + z + w + u;
-}
-
-// ...
-
-// Register a Node-API module:
-STDLIB_MATH_BASE_NAPI_MODULE_FFFFF_F( addf );
-```
-
-The macro expects the following arguments:
-
--   **fcn**: `float (*fcn)( float, float, float, float, float )` quinary function.
-
-When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
 
 </section>
 

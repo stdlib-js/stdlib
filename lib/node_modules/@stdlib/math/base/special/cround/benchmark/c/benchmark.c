@@ -90,20 +90,23 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double re;
-	double im;
+	double re[ 100 ];
+	double im[ 100 ];
 	double t;
 	int i;
 
 	double complex z;
 	double complex y;
 
+	for ( i = 0; i < 100; i++ ) {
+		re[ i ] = ( 1000.0 * rand_double() ) - 500.0;
+		im[ i ] = ( 1000.0 * rand_double() ) - 500.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		re = ( 1000.0*rand_double() ) - 500.0;
-		im = ( 1000.0*rand_double() ) - 500.0;
-		z = re + im*I;
-		y = round( creal(z) ) + round( cimag(z) )*I;
+		z = re[ i % 100 ] + im[ i % 100 ]*I;
+		y = round( creal( z ) ) + round( cimag( z ) )*I;
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

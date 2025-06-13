@@ -16,13 +16,13 @@
 * limitations under the License.
 */
 
+#include "stdlib/ndarray/base/min_view_buffer_index.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <math.h>
 #include <time.h>
 #include <sys/time.h>
-#include "stdlib/ndarray/base/min_view_buffer_index.h"
 
 #define NAME "min-view-buffer-index"
 #define ITERATIONS 1000000
