@@ -76,7 +76,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -135,13 +135,17 @@ jobs:
           make markdown-related-files FILES="${files}"
           make markdown-pkg-urls-files FILES="${files}"
 
-          if [[ -z "$(git status --porcelain)" ]]; then
-            # If no files were changed, exit with a success status code:
+          # Stage *all* tracked and untracked changes first...
+          git add -A
+
+          # If the index is identical to HEAD, nothing really changed:
+          if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
+
+            # Exit with a success status code:
             exit 0
           else
-            # Otherwise, add changed files to the staging area and commit:
-            git add -A && git commit -m "docs: update related packages sections"
+            git commit -m "docs: update related packages sections"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
         timeout-minutes: 10

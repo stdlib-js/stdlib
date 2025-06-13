@@ -111,7 +111,7 @@ double out = stdlib_base_cos( 0.0 );
 // returns 1.0
 
 out = stdlib_base_cos( 3.141592653589793 / 4.0 );
-// returns ~-0.707
+// returns ~0.707
 ```
 
 The function accepts the following arguments:

@@ -36,6 +36,10 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-float64array",
+        "@stdlib/napi/export",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/number/float64/base/from-words",
         "@stdlib/number/float64/base/to-words",

@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/math/base/special/cflipsignf.h"
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -91,28 +92,32 @@ static float rand_float( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	float v[ 100 ];
-	float complex x;
-	float complex y;
 	double elapsed;
+	float v[ 100 ];
 	double t;
+	float re;
+	float im;
 	int i;
+
+	stdlib_complex64_t x[ 100 ];
+	stdlib_complex64_t y;
 
 	for ( i = 0; i < 100; i++ ) {
 		v[ i ] = ( 1000.0f*rand_float() ) - 500.0f;
+		x[ i ] = stdlib_complex64( v[ i ], v[ i ] );
 	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = v[ i%100 ] + v[ i%100 ]*I;
-		y = stdlib_base_cflipsignf( x, -v[ i%100 ] );
-		if ( crealf( y ) != crealf( y ) ) {
+		y = stdlib_base_cflipsignf( x[ i%100 ], -v[ i%100 ] );
+		stdlib_complex64_reim( y, &re, &im );
+		if ( re != re ) {
 			printf( "unexpected result\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( cimagf( y ) != cimagf( y ) ) {
+	if ( im != im ) {
 		printf( "unexpected result\n" );
 	}
 	return elapsed;
