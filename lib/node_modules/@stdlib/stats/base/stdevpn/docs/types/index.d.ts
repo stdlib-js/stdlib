@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `stdevpn`.
@@ -32,7 +37,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns standard deviation
 	*
 	* @example
@@ -41,7 +46,7 @@ interface Routine {
 	* var v = stdevpn( x.length, 1, x, 1 );
 	* // returns ~2.0817
 	*/
-	( N: number, correction: number, x: NumericArray, stride: number ): number;
+	( N: number, correction: number, x: InputArray, strideX: number ): number;
 
 	/**
 	* Computes the standard deviation of a strided array using a two-pass algorithm and alternative indexing semantics.
@@ -49,8 +54,8 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param correction - degrees of freedom adjustment
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns standard deviation
 	*
 	* @example
@@ -59,7 +64,7 @@ interface Routine {
 	* var v = stdevpn.ndarray( x.length, 1, x, 1, 0 );
 	* // returns ~2.0817
 	*/
-	ndarray( N: number, correction: number, x: NumericArray, stride: number, offset: number ): number;
+	ndarray( N: number, correction: number, x: InputArray, strideX: number, offsetX: number ): number;
 }
 
 /**
@@ -68,7 +73,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param correction - degrees of freedom adjustment
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns standard deviation
 *
 * @example

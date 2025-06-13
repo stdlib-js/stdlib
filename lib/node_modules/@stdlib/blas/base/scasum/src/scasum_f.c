@@ -26,11 +26,11 @@
 * Computes the sum of the absolute values of the real and imaginary components of a single-precision complex floating-point vector.
 *
 * @param N        number of indexed elements
-* @param CX       input array
-* @param strideX  CX stride length
+* @param X        input array
+* @param strideX  X stride length
 * @return         result
 */
-float API_SUFFIX(c_scasum)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX ) {
+float API_SUFFIX(c_scasum)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX ) {
 	CBLAS_INT sx;
 	float out;
 
@@ -38,7 +38,7 @@ float API_SUFFIX(c_scasum)( const CBLAS_INT N, const void *CX, const CBLAS_INT s
 	if ( sx < 0 ) {
 		sx = -sx;
 	}
-	scasumsub( &N, CX, &sx, &out );
+	scasumsub( &N, X, &sx, &out );
 	return out;
 }
 
@@ -46,20 +46,20 @@ float API_SUFFIX(c_scasum)( const CBLAS_INT N, const void *CX, const CBLAS_INT s
 * Computes the sum of the absolute values of the real and imaginary components of a single-precision complex floating-point vector using alternative indexing semantics.
 *
 * @param N        number of indexed elements
-* @param CX       input array
-* @param strideX  CX stride length
-* @param offsetX  starting index for CX
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
 * @return         result
 */
-float API_SUFFIX(c_scasum_ndarray)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	stdlib_complex64_t *cx = (stdlib_complex64_t *)CX;
+float API_SUFFIX(c_scasum_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	const stdlib_complex64_t *x = (const stdlib_complex64_t *)X;
 	CBLAS_INT sx = strideX;
 	float out;
 
-	cx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	x += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
 	if ( sx < 0 ) {
 		sx = -sx;
 	}
-	scasumsub( &N, (void *)cx, &sx, &out );
+	scasumsub( &N, (void *)x, &sx, &out );
 	return out;
 }

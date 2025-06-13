@@ -42,19 +42,11 @@ Adds two double-precision complex floating-point numbers.
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var z = new Complex128( -1.5, 2.5 );
 
 var v = add( z, z );
-// returns <Complex128>
-
-var re = real( v );
-// returns -3.0
-
-var im = imag( v );
-// returns 5.0
+// returns <Complex128>[ -3.0, 5.0 ]
 ```
 
 #### add.assign( re1, im1, re2, im2, out, strideOut, offsetOut )
