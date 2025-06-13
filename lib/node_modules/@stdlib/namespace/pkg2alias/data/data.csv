@@ -1248,10 +1248,10 @@
 "@stdlib/stats/strided/mean",base.strided.mean
 "@stdlib/stats/strided/meankbn",base.strided.meankbn
 "@stdlib/stats/strided/meankbn2",base.strided.meankbn2
-"@stdlib/stats/base/meanors",base.strided.meanors
-"@stdlib/stats/base/meanpn",base.strided.meanpn
-"@stdlib/stats/base/meanpw",base.strided.meanpw
-"@stdlib/stats/base/meanwd",base.strided.meanwd
+"@stdlib/stats/strided/meanors",base.strided.meanors
+"@stdlib/stats/strided/meanpn",base.strided.meanpn
+"@stdlib/stats/strided/meanpw",base.strided.meanpw
+"@stdlib/stats/strided/meanwd",base.strided.meanwd
 "@stdlib/stats/strided/mediansorted",base.strided.mediansorted
 "@stdlib/strided/base/meta-data-props",base.strided.metaDataProps
 "@stdlib/stats/strided/min",base.strided.min
