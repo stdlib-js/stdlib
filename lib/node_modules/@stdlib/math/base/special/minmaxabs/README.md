@@ -119,6 +119,100 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/minmaxabs.h"
+```
+
+#### stdlib_base_minmaxabs( x, y, &min, &max )
+
+Evaluates the minimum and maximum absolute values in a single pass.
+
+```c
+double x = -3.14;
+double y = 2.71;
+
+double min;
+double max;
+stdlib_base_minmaxabs( x, y, &min, &max );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` first number.
+-   **y**: `[in] double` second number.
+-   **min**: `[out] double` destination for the minimum absolute value.
+-   **max**: `[out] double` destination for the maximum absolute value.
+
+```c
+void stdlib_base_minmaxabs( const double x, const double y, double* min, double* max );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/minmaxabs.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 1.0, 0.45, -0.89, 0.0 / 0.0, -0.78, -0.22, 0.66, 0.11, -0.55, 0.0 };
+    const double y[] = { -0.22, 0.66, 0.0, -0.55, 0.33, 1.0, 0.0 / 0.0, 0.11, 0.45, -0.78 };
+
+    double min;
+    double max;
+    int i;
+    for ( i = 0; i < 10; i++ ) {
+        stdlib_base_minmaxabs( x[ i ], y[ i ], &min, &max );
+        printf( "x: %lf, y: %lf => min: %lf, max: %lf\n", x[ i ], y[ i ], min, max );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
