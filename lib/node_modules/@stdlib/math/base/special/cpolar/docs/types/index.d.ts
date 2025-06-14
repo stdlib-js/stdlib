@@ -39,7 +39,7 @@ interface Cpolar {
 	* var v = cpolar( new Complex128( 5.0, 3.0 ) );
 	* // returns [ ~5.83, ~0.5404 ]
 	*/
-	( z: Complex128 ): Array<number>;
+	( z: Complex128 ): [ number, number ];
 
 	/**
 	* Computes the absolute value and the phase of a double-precision complex floating-point number and assigns results to a provided output array.

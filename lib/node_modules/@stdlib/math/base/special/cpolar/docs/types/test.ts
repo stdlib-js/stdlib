@@ -24,7 +24,7 @@ import cpolar = require( './index' );
 
 // The function returns an array of numbers...
 {
-	cpolar( new Complex128( 5.0, 3.0 ) ); // $ExpectType number[]
+	cpolar( new Complex128( 5.0, 3.0 ) ); // $ExpectType [number, number]
 }
 
 // The compiler throws an error if the function is provided a complex number...

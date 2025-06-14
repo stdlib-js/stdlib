@@ -45,7 +45,7 @@ interface MinMaxAbs {
 	* var v = minmaxabs( +0.0, -0.0 );
 	* // returns [ 0.0, 0.0 ]
 	*/
-	( x: number, y: number ): Array<number>;
+	( x: number, y: number ): [ number, number ];
 
 	/**
 	* Returns the minimum and maximum absolute values and assigns results to a provided output array.
