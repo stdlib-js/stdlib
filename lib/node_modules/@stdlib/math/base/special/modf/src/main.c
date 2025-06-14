@@ -32,8 +32,8 @@ static const uint32_t ALL_ONES = 4294967295;
 * Decomposes a double-precision floating-point number into integral and fractional parts, each having the same type and sign as the input value, and assigns results to a provided output array.
 *
 * @param x           input value
-* @param frac        destination to store the normalized fraction
-* @param integral    destination to store the exponent
+* @param integral    destination pointer for the integral part
+* @param frac        destination pointer for the fractional part
 *
 * @example
 * double x = 3.141592653589793;
@@ -99,7 +99,6 @@ void stdlib_base_modf( const double x, double* integral, double* frac ) {
 		high &= ( ~i );
 
 		// Generate the integral part:
-		j = i;
 		stdlib_base_float64_from_words( high, 0, &j );
 		*integral = j;
 		*frac = x - j;
@@ -124,7 +123,6 @@ void stdlib_base_modf( const double x, double* integral, double* frac ) {
 	low &= ( ~i );
 
 	// Generate the integral part:
-	j = i;
 	stdlib_base_float64_from_words( high, low, &j );
 	*integral = j;
 	*frac = x - j;

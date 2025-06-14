@@ -145,8 +145,8 @@ stdlib_base_modf( 4.0, &integral, &frac );
 The function accepts the following arguments:
 
 -   **x**: `[in] double` input value.
--   **frac**: `[out] double*` destination for the integral part.
--   **exp**: `[out] double*` destination for the fractional part.
+-   **integral**: `[out] float*` destination for the integral part.
+-   **frac**: `[out] float*` destination for the fractional part.
 
 ```c
 void stdlib_base_modf( const double x, double *integral, double *frac );
