@@ -1196,7 +1196,7 @@
 "@stdlib/stats/strided/dvariancewd",base.strided.dvariancewd
 "@stdlib/stats/strided/dvarianceyc",base.strided.dvarianceyc
 "@stdlib/stats/base/dvarm",base.strided.dvarm
-"@stdlib/stats/base/dvarmpn",base.strided.dvarmpn
+"@stdlib/stats/strided/dvarmpn",base.strided.dvarmpn
 "@stdlib/stats/strided/dvarmtk",base.strided.dvarmtk
 "@stdlib/strided/base/function-object",base.strided.functionObject
 "@stdlib/blas/ext/base/gapx",base.strided.gapx
