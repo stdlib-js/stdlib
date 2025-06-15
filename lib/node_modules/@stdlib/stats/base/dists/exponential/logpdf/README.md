@@ -117,20 +117,17 @@ y = mylogpdf( 5.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var logpdf = require( '@stdlib/stats/base/dists/exponential/logpdf' );
 
-var lambda;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 10, 0.0, 10.0, opts );
+var lambda = uniform( 10, 0.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = randu() * 10.0;
-    lambda = randu() * 10.0;
-    y = logpdf( x, lambda );
-    console.log( 'x: %d, λ: %d, ln(f(x;λ)): %d', x, lambda, y );
-}
+logEachMap( 'x: %0.4f, λ: %0.4f, ln(f(x;λ)): %0.4f', x, lambda, logpdf );
 ```
 
 </section>
