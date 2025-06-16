@@ -1,0 +1,32 @@
+
+{{alias}}( x, y )
+    Computes the sum of two unsigned 16-bit integers `x` and `y`.
+
+    The function performs C-like addition of two unsigned 16-bit integers,
+    including wraparound semantics.
+
+    Parameters
+    ----------
+    x: integer
+        First input value.
+
+    y: integer
+        Second input value.
+
+    Returns
+    -------
+    z: integer
+        Sum.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1, 5 )
+    6
+    > v = {{alias}}( 2, 5 )
+    7
+    > v = {{alias}}( 0, 5 )
+    5
+
+    See Also
+    --------
+

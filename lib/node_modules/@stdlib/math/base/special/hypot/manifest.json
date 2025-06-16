@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/hypot.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -41,13 +41,14 @@
         "@stdlib/math/base/napi/binary",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/constants/float64/pinf"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/hypot.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -59,13 +60,14 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/constants/float64/pinf"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/hypot.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -77,7 +79,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/constants/float64/pinf"
       ]
     }
   ]

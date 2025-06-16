@@ -1,9 +1,9 @@
 
-{{alias}}( N, x, stride )
+{{alias}}( N, x, strideX )
     Computes the sum of strided array elements using pairwise summation.
 
-    The `N` and `stride` parameters determine which elements in `x` are accessed
-    at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
     array view.
@@ -18,8 +18,8 @@
     x: Array<number>|TypedArray
         Input array.
 
-    stride: integer
-        Index increment.
+    strideX: integer
+        Stride length.
 
     Returns
     -------
@@ -33,27 +33,24 @@
     > {{alias}}( x.length, x, 1 )
     1.0
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ];
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > var stride = 2;
-    > {{alias}}( N, x, stride )
+    > {{alias}}( 3, x, 2 )
     1.0
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > stride = 2;
-    > {{alias}}( N, x1, stride )
+    > {{alias}}( 3, x1, 2 )
     -1.0
 
-{{alias}}.ndarray( N, x, stride, offset )
+
+{{alias}}.ndarray( N, x, strideX, offsetX )
     Computes the sum of strided array elements using pairwise summation and
     alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
+    buffer, the offset parameter supports indexing semantics based on a
     starting index.
 
     Parameters
@@ -64,10 +61,10 @@
     x: Array<number>|TypedArray
         Input array.
 
-    stride: integer
-        Index increment.
+    strideX: integer
+        Stride length.
 
-    offset: integer
+    offsetX: integer
         Starting index.
 
     Returns
@@ -84,8 +81,7 @@
 
     // Using offset parameter:
     > var x = [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ];
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, x, 2, 1 )
+    > {{alias}}.ndarray( 3, x, 2, 1 )
     -1.0
 
     See Also
