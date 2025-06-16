@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
+#include "stdlib/random/base/uniform.h"
+#include "stdlib/random/base/randu.h"
+#include "stdlib/random/base/shared.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "stdlib/random/base.h"
-#include "stdlib/random/base/randu.h"
-#include "stdlib/random/base/uniform.h"
 
 int main( void ) {
 	int32_t i;

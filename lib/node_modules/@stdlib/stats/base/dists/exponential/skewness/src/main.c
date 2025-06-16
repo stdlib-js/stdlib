@@ -26,7 +26,7 @@
 * @return          skewness
 *
 * @example
-* double y = stdlib_base_exponential_skewness( 9.0 );
+* double y = stdlib_base_dists_exponential_skewness( 9.0 );
 * // returns 2.0
 */
 double stdlib_base_dists_exponential_skewness( const double lambda ) {

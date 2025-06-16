@@ -92,21 +92,17 @@ y = powm1( 5.0, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var powm1 = require( '@stdlib/math/base/special/powm1' );
 
-var b;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var b = discreteUniform( 100, 0, 10, opts );
+var x = discreteUniform( 100, -5, 5, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    b = round( randu()*10.0 );
-    x = round( randu()*10.0 ) - 5.0;
-    y = powm1( b, x );
-    console.log( '%d^%d - 1 = %d', b, x, y );
-}
+logEachMap( '%d^%d - 1 = %0.4f', b, x, powm1 );
 ```
 
 </section>

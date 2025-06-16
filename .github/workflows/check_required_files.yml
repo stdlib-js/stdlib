@@ -73,12 +73,14 @@ jobs:
       # Get list of added files:
       - name: 'Get list of added files'
         id: added-files
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          PR_NUMBER: ${{ inputs.pull_request_number }}
         run: |
           page=1
           files=""
           while true; do
-              new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_GITHUB_TOKEN
-                 }}" "https://api.github.com/repos/stdlib-js/stdlib/pulls/${{ inputs.pull_request_number }}/files?page=$page&per_page=100" | jq -r '.[] | select(.status == "added") | .filename')
+              new_files=$(curl -s -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/stdlib-js/stdlib/pulls/$PR_NUMBER/files?page=$page&per_page=100" | jq -r '.[] | select(.status == "added") | .filename')
               if [ -z "$new_files" ]; then
                   break
               fi
