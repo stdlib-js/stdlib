@@ -98,8 +98,8 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
-	* @param clbk - callback
+	* @param strideX - stride length
+	* @param clbk - callback function
 	* @param thisArg - execution context
 	* @returns `x`
 	*
@@ -113,7 +113,7 @@ interface Routine {
 	* gfillBy( x.length, x, 1, fill );
 	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
-	<T = unknown, U = unknown, V = unknown, W = unknown>( N: number, x: Collection<V>, stride: number, clbk: Callback<T, U, V, W>, thisArg?: ThisParameterType<Callback<T, U, V, W>> ): Collection<U | V>;
+	<T = unknown, U = unknown, V = unknown, W = unknown>( N: number, x: Collection<V>, strideX: number, clbk: Callback<T, U, V, W>, thisArg?: ThisParameterType<Callback<T, U, V, W>> ): Collection<U | V>;
 
 	/**
 	* Fills a strided array according to a provided callback function and using alternative indexing semantics.
@@ -131,9 +131,9 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
-	* @param clbk - callback
+	* @param strideX - stride length
+	* @param offsetX - starting index
+	* @param clbk - callback function
 	* @param thisArg - execution context
 	* @returns `x`
 	*
@@ -147,7 +147,7 @@ interface Routine {
 	* gfillBy.ndarray( x.length, x, 1, 0, fill );
 	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
-	ndarray<T = unknown, U = unknown, V = unknown, W = unknown>( N: number, x: Collection<V>, stride: number, offset: number, clbk: Callback<T, U, V, W>, thisArg?: ThisParameterType<Callback<T, U, V, W>> ): Collection<U | V>;
+	ndarray<T = unknown, U = unknown, V = unknown, W = unknown>( N: number, x: Collection<V>, strideX: number, offsetX: number, clbk: Callback<T, U, V, W>, thisArg?: ThisParameterType<Callback<T, U, V, W>> ): Collection<U | V>;
 }
 
 /**
@@ -166,8 +166,8 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param stride - stride length
-* @param clbk - callback
+* @param strideX - stride length
+* @param clbk - callback function
 * @param thisArg - execution context
 * @returns `x`
 *

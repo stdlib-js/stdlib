@@ -58,7 +58,7 @@ v = kernelCos( NaN, 0.0 );
 
 -   For increased accuracy, the number for which the [cosine][cosine] should be evaluated can be supplied as a [double-double number][double-double-arithmetic] (i.e., a non-evaluated sum of two [double-precision floating-point numbers][ieee754] `x` and `y`).
 
--   As components of a [double-double number][double-double-arithmetic], the two [double-precision floating-point numbers][ieee754] `x` and `y` must satisfy 
+-   As components of a [double-double number][double-double-arithmetic], the two [double-precision floating-point numbers][ieee754] `x` and `y` must satisfy
 
     <!-- <equation class="equation" label="eq:double_double_inequality" align="center" raw="|y| \leq \frac{1}{2} \operatorname{ulp}(x)" alt="Inequality for the two components of a double-double number."> -->
 
@@ -82,16 +82,17 @@ v = kernelCos( NaN, 0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var PI = require( '@stdlib/constants/float64/pi' );
 var kernelCos = require( '@stdlib/math/base/special/kernel-cos' );
 
-var x = linspace( -PI/4.0, PI/4.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -PI/4.0, PI/4.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'kernelCos(%d) = %d', x[ i ], kernelCos( x[ i ], 0.0 ) );
-}
+logEachMap( 'kernelCos(%0.4f, %0.4f) = %0.4f', x, 0.0, kernelCos );
 ```
 
 </section>

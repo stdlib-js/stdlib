@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import gapxsumpw = require( './index' );
 
 
@@ -26,6 +27,7 @@ import gapxsumpw = require( './index' );
 	const x = new Float64Array( 10 );
 
 	gapxsumpw( x.length, 5.0, x, 1 ); // $ExpectType number
+	gapxsumpw( x.length, 5.0, new AccessorArray( x ), 1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -100,6 +102,7 @@ import gapxsumpw = require( './index' );
 	const x = new Float64Array( 10 );
 
 	gapxsumpw.ndarray( x.length, 5.0, x, 1, 0 ); // $ExpectType number
+	gapxsumpw.ndarray( x.length, 5.0, new AccessorArray( x ), 1, 0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

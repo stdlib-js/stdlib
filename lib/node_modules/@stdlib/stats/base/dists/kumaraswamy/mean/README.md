@@ -143,13 +143,100 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
-<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+<!-- C interface documentation. -->
 
-<section class="references">
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
 
 </section>
 
-<!-- /.references -->
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/kumaraswamy/mean.h"
+```
+
+#### stdlib_base_dists_kumaraswamy_mean( a, b )
+
+Returns the [expected value][mean] of a [Kumaraswamy's double bounded][kumaraswamy-distribution] distribution with first shape parameter `a` and second shape parameter `b`.
+
+```c
+double out = stdlib_base_dists_kumaraswamy_mean( 1.5, 1.5 );
+// returns ~0.512
+```
+
+The function accepts the following arguments:
+
+-   **a**: `[in] double` first shape parameter.
+-   **b**: `[in] double` second shape parameter.
+
+```c
+double stdlib_base_dists_kumaraswamy_mean( const double a, const double b );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/kumaraswamy/mean.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double mean;
+    double a;
+    double b;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+       a = random_uniform( 0.0, 10.0 );
+       b = random_uniform( 0.0, 10.0 );
+       mean = stdlib_base_dists_kumaraswamy_mean( a, b );
+       printf( "a: %.4f, b: %.4f, E(X;a,b): %.4f\n", a, b, mean );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
