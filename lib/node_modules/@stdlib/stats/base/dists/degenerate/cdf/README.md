@@ -93,21 +93,17 @@ y = mycdf( 8.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cdf = require( '@stdlib/stats/base/dists/degenerate/cdf' );
 
-var mu;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 10, 0.0, 10.0, opts );
+var mu = discreteUniform( 10, 0.0, 10.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = round( randu()*10.0 );
-    mu = round( randu()*10.0 );
-    y = cdf( x, mu );
-    console.log( 'x: %d, µ: %d, F(x;µ): %d', x, mu, y );
-}
+logEachMap( 'x: %0.4f, µ: %0.4f, F(x;µ): %0.4f', x, mu, cdf );
 ```
 
 </section>

@@ -35,7 +35,7 @@ type Nullary<T, V> = ( this: V ) => T;
 * @param indices - current array element indices
 * @returns fill value
 */
-type Unary<T, V> = ( this: V, indices: Array<number> ) => T;
+type Unary<T, V> = ( this: V, indices: [ number, number ] ) => T;
 
 /**
 * Callback function.
