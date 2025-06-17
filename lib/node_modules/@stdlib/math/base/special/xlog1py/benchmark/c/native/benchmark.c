@@ -90,18 +90,21 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double x[ 100 ];
+	double y[ 100 ];
 	double elapsed;
 	double out;
-	double x;
-	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 100.0*rand_double() );
+		y[ i ] = ( 5.0*rand_double() );
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 100.0*rand_double() );
-		y = ( 5.0*rand_double() );
-		out = stdlib_base_xlog1py( x, y );
+		out = stdlib_base_xlog1py( x[ i%100 ], y[ i%100 ] );
 		if ( out != out ) {
 			printf( "should not return NaN\n" );
 			break;

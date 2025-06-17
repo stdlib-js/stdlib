@@ -1,0 +1,27 @@
+
+{{alias}}( λ )
+    Returns the standard deviation of a Planck distribution with shape parameter
+    `λ`.
+
+    If `λ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Standard deviation.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    ~9.9958
+    > v = {{alias}}( 1.5 )
+    ~0.6080
+
+    See Also
+    --------
+

@@ -50,8 +50,8 @@ jobs:
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
-    # Run workflow job if `publish` workflow run is successful or when the workflow is manually run:
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    # Run workflow job if `publish` workflow run is successful or when the workflow is manually triggered or on a schedule:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' }}
 
     # Define the sequence of job steps...
     steps:

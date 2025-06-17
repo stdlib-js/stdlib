@@ -75,8 +75,8 @@ The returned iterator protocol-compliant object has the following properties:
 
 The invoked function is provided two arguments:
 
--   **value**: iterated value
--   **index**: iteration index (zero-based)
+-   **value**: iterated value.
+-   **index**: iteration index (zero-based).
 
 ```javascript
 var array2iterator = require( '@stdlib/array/to-iterator' );

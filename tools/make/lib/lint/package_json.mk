@@ -34,6 +34,7 @@ PACKAGE_JSON_LINTER_FLAGS ?=
 # make lint-pkg-json
 #/
 lint-pkg-json: $(NODE_MODULES)
+	$(QUIET) echo 'Linting package.json files...'
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(PACKAGE_JSON_LINTER)" $(PACKAGE_JSON_LINTER_FLAGS) "$(ROOT_DIR)"
 
 .PHONY: lint-pkg-json

@@ -41,7 +41,7 @@ var quaternary3d = require( '@stdlib/array/base/quaternary3d' );
 Applies a quaternary callback to elements in four three-dimensional nested input arrays and assigns results to elements in a three-dimensional nested output array.
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add4' );
+var add = require( '@stdlib/number/float64/base/add4' );
 var zeros3d = require( '@stdlib/array/base/zeros3d' );
 
 var x = [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ];
@@ -83,7 +83,7 @@ The function accepts the following arguments:
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filled3dBy = require( '@stdlib/array/base/filled3d-by' );
 var zeros3d = require( '@stdlib/array/base/zeros3d' );
-var add = require( '@stdlib/math/base/ops/add4' );
+var add = require( '@stdlib/number/float64/base/add4' );
 var quaternary3d = require( '@stdlib/array/base/quaternary3d' );
 
 var shape = [ 3, 3, 3 ];
