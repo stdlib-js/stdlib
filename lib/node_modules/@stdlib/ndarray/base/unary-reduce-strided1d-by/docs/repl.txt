@@ -77,7 +77,7 @@
     ...    var d = x.data;
     ...    var s = x.strides[ 0 ];
     ...    var o = x.offset;
-    ...    return {{alias:@stdlib/stats/base/max-by}}.ndarray( N, d, s, o, cb, ctx );
+    ...    return {{alias:@stdlib/stats/strided/max-by}}.ndarray( N, d, s, o, cb, ctx );
     ... };
 
     // Using minimal ndarray-like objects...

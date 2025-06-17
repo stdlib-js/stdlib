@@ -42,20 +42,12 @@ Multiples two single-precision complex floating-point numbers.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var z1 = new Complex64( 5.0, 3.0 );
 var z2 = new Complex64( -2.0, 1.0 );
 
 var v = mul( z1, z2 );
-// returns <Complex64>
-
-var re = realf( v );
-// returns -13.0
-
-var im = imagf( v );
-// returns -1.0
+// returns <Complex64>[ -13.0, -1.0 ]
 ```
 
 #### mul.assign( re1, im1, re2, im2, out, strideOut, offsetOut )
