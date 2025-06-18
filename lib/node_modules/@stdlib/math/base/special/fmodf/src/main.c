@@ -21,12 +21,12 @@
 * The following copyright and license were part of the original implementation available as part of [Openlibm]{@link https://github.com/JuliaMath/openlibm/blob/master/src/e_fmodf.c}. The implementation follows the original, but has been modified for use in stdlib.
 *
 * ```text
- * Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
- *
- * Developed at SunSoft, a Sun Microsystems, Inc. business.
- * Permission to use, copy, modify, and distribute this
- * software is freely granted, provided that this notice
- * is preserved.
+* Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
+*
+* Developed at SunSoft, a Sun Microsystems, Inc. business.
+* Permission to use, copy, modify, and distribute this
+* software is freely granted, provided that this notice
+* is preserved.
 * ```
 */
 

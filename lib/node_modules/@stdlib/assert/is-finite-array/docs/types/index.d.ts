@@ -23,7 +23,7 @@
 */
 interface IsFiniteArray {
 	/**
- 	* Tests if a value is an array-like object of finite numbers.
+	* Tests if a value is an array-like object of finite numbers.
 	*
 	* @param value - value to test
 	* @returns boolean indicating whether a value is an array-like object of finite numbers
