@@ -78,10 +78,12 @@ base.acartesianProduct
 base.acartesianSquare
 base.acos
 base.acosd
+base.acosdf
 base.acosf
 base.acosh
 base.acot
 base.acotd
+base.acotdf
 base.acotf
 base.acoth
 base.acovercos
@@ -209,6 +211,7 @@ base.cfloorn
 base.cidentity
 base.cidentityf
 base.cinv
+base.cinvf
 base.clamp
 base.clampf
 base.cmul

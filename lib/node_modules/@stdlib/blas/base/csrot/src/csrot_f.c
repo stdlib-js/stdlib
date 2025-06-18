@@ -26,35 +26,35 @@
 * Applies a plane rotation.
 *
 * @param N        number of indexed elements
-* @param CX       first input array
-* @param strideX  CX stride length
-* @param CY       second input array
-* @param strideY  CY stride length
+* @param X       first input array
+* @param strideX  X stride length
+* @param Y       second input array
+* @param strideY  Y stride length
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
-void API_SUFFIX(c_csrot)( const CBLAS_INT N, void *CX, const CBLAS_INT strideX, void *CY, const CBLAS_INT strideY, const float c, const float s ) {
-	csrot( &N, CX, &strideX, CY, &strideY, &c, &s );
+void API_SUFFIX(c_csrot)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY, const float c, const float s ) {
+	csrot( &N, X, &strideX, Y, &strideY, &c, &s );
 }
 
 /**
 * Applies a plane rotation using alternative indexing semantics.
 *
 * @param N        number of indexed elements
-* @param CX       first input array
-* @param strideX  CX stride length
-* @param offsetX  starting index for CX
-* @param CY       second input array
-* @param strideY  CY stride length
-* @param offsetY  starting index for CY
+* @param X       first input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y       second input array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
-void API_SUFFIX(c_csrot_ndarray)( const CBLAS_INT N, void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *CY, const CBLAS_INT strideY, const CBLAS_INT offsetY, const float c, const float s ) {
-	stdlib_complex64_t *cx = (stdlib_complex64_t *)CX;
-	stdlib_complex64_t *cy = (stdlib_complex64_t *)CY;
+void API_SUFFIX(c_csrot_ndarray)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const float c, const float s ) {
+	stdlib_complex64_t *x = (stdlib_complex64_t *)X;
+	stdlib_complex64_t *y = (stdlib_complex64_t *)Y;
 
-	cx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
-	cy += stdlib_strided_min_view_buffer_index( N, strideY, offsetY );
-	csrot( &N, (void *)cx, &strideX, (void *)cy, &strideY, &c, &s );
+	x += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY );
+	csrot( &N, (void *)x, &strideX, (void *)y, &strideY, &c, &s );
 }
