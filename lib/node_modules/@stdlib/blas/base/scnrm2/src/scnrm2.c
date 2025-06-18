@@ -24,10 +24,10 @@
 * Computes the L2-norm of a complex single-precision floating-point vector.
 *
 * @param N         number of indexed elements
-* @param CX        input array
-* @param strideX   CX stride length
+* @param X         input array
+* @param strideX   X stride length
 */
-float API_SUFFIX(c_scnrm2)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX ) {
+float API_SUFFIX(c_scnrm2)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	return API_SUFFIX(c_scnrm2_ndarray)( N, CX, strideX, ox );
+	return API_SUFFIX(c_scnrm2_ndarray)( N, X, strideX, ox );
 }

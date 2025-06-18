@@ -81,8 +81,8 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 A `predicate` function is provided two arguments:
 
--   **value**: iterated value
--   **index**: iteration index (zero-based)
+-   **value**: iterated value.
+-   **index**: iteration index (zero-based).
 
 To set the `predicate` function execution context, provide a `thisArg`.
 

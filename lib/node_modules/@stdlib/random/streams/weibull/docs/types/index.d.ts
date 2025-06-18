@@ -86,8 +86,8 @@ declare class RandomStream extends Readable {
 	/**
 	* Returns a readable stream for generating a stream of pseudorandom numbers drawn from a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - stream options
 	* @throws `k` must be a positive number
 	* @throws `lambda` must be a positive number
@@ -207,8 +207,8 @@ interface Constructor {
 	/**
 	* Returns a readable stream for generating a stream of pseudorandom numbers drawn from a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - stream options
 	* @throws `k` must be a positive number
 	* @throws `lambda` must be a positive number
@@ -236,8 +236,8 @@ interface Constructor {
 	/**
 	* Returns a readable stream for generating a stream of pseudorandom numbers drawn from a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - stream options
 	* @throws `k` must be a positive number
 	* @throws `lambda` must be a positive number
@@ -265,8 +265,8 @@ interface Constructor {
 	/**
 	* Returns a function for creating readable streams which generate pseudorandom numbers drawn from a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - stream options
 	* @returns factory function
 	*
@@ -317,8 +317,8 @@ interface Constructor {
 	/**
 	* Returns an "objectMode" readable stream for generating a stream of pseudorandom numbers drawn from a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - stream options
 	* @throws `k` must be a positive number
 	* @throws `lambda` must be a positive number
@@ -347,8 +347,8 @@ interface Constructor {
 /**
 * Returns a readable stream for generating a stream of pseudorandom numbers drawn from a Weibull distribution.
 *
-* @param k - scale parameter
-* @param lambda - shape parameter
+* @param k - shape parameter
+* @param lambda - scale parameter
 * @param options - stream options
 * @throws `k` must be a positive number
 * @throws `lambda` must be a positive number

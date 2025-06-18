@@ -19,7 +19,7 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_dscal`.
 */
-#ifndef DSCAL_CLBAS_H
+#ifndef DSCAL_CBLAS_H
 #define DSCAL_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"

@@ -110,7 +110,7 @@ interface Namespace {
 	entropy: typeof entropy;
 
 	/**
-	* Returns the kurtosis of a binomial distribution.
+	* Returns the excess kurtosis of a binomial distribution.
 	*
 	* ## Notes
 	*
