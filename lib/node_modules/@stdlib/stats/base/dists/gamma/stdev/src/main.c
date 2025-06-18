@@ -27,7 +27,7 @@
 * @return         standard deviation
 *
 * @example
-* double y = stdlib_base_gamma_stdev( 1.0, 1.0 );
+* double y = stdlib_base_dists_gamma_stdev( 1.0, 1.0 );
 * // returns 1.0
 */
 double stdlib_base_dists_gamma_stdev( const double alpha, const double beta ) {

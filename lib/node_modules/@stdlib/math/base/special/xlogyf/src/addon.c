@@ -19,5 +19,4 @@
 #include "stdlib/math/base/special/xlogyf.h"
 #include "stdlib/math/base/napi/binary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_FF_F( stdlib_base_xlogyf )

@@ -61,30 +61,62 @@ double API_SUFFIX(stdlib_strided_dnansumkbn2)( const CBLAS_INT N, const double *
 * @return         output value
 */
 double API_SUFFIX(stdlib_strided_dnansumkbn2_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	double sum;
-	double ccs;
 	CBLAS_INT ix;
 	CBLAS_INT i;
+	double sum;
+	double ccs;
 	double cs;
 	double cc;
 	double v;
 	double t;
 	double c;
+	int flg;
 
-	sum = 0.0;
 	if ( N <= 0 ) {
-		return sum;
+		return 0.0;
 	}
 	ix = offsetX;
 	if ( strideX == 0 ) {
 		if ( stdlib_base_is_nan( X[ ix ] ) ) {
-			return sum;
+			return 0.0;
 		}
 		return X[ ix ] * N;
 	}
+	// Find the first non-NaN element...
+	for ( i = 0; i < N; i++ ) {
+		v = X[ ix ];
+		if ( !stdlib_base_is_nan( v ) ) {
+			break;
+		}
+		ix += strideX;
+	}
+	if ( i == N ) {
+		return 0.0;
+	}
+	sum = v;
+	ix += strideX;
+	flg = 0;
+	i += 1;
+
+	// In order to preserve the sign of zero which can be lost during compensated summation below, find the first non-zero element...
+	if ( sum == 0.0 ) {
+		for ( ; i < N; i++ ) {
+			v = X[ ix ];
+			if ( !stdlib_base_is_nan( v ) ) {
+				if ( v != 0.0 ) {
+					flg = 1;
+					break;
+				}
+				sum += v;
+			}
+			ix += strideX;
+		}
+	} else {
+		flg = 1;
+	}
 	ccs = 0.0; // second order correction term for lost lower order bits
 	cs = 0.0; // first order correction term for lost low order bits
-	for ( i = 0; i < N; i++ ) {
+	for ( ; i < N; i++ ) {
 		v = X[ ix ];
 		if ( !stdlib_base_is_nan( v ) ) {
 			t = sum + v;
@@ -105,5 +137,5 @@ double API_SUFFIX(stdlib_strided_dnansumkbn2_ndarray)( const CBLAS_INT N, const 
 		}
 		ix += strideX;
 	}
-	return sum + cs + ccs;
+	return ( flg == 1 ) ? sum+cs+ccs : sum;
 }

@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# signbit
+# signbitf
 
 > Return a boolean indicating if the sign bit for a [single-precision floating-point number][ieee754] is on (true) or off (false).
 
@@ -32,7 +32,7 @@ var signbitf = require( '@stdlib/number/float32/base/signbit' );
 
 #### signbitf( x )
 
-Returns a `boolean` indicating if the sign bit for a [single-precision floating-point number][ieee754] is on (`true`) or off (`false`).
+Returns a boolean indicating if the sign bit for a [single-precision floating-point number][ieee754] is on (`true`) or off (`false`).
 
 ```javascript
 var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
@@ -81,6 +81,88 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float32/base/signbit.h"
+```
+
+#### stdlib_base_float32_signbit( x )
+
+Returns an integer indicating whether the sign bit for a single-precision floating-point number is on (`1`) or off (`0`).
+
+```c
+#include <stdint.h>
+
+int8_t out = stdlib_base_float32_signbit( 3.14f );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] float` input value.
+
+```c
+int8_t stdlib_base_float32_signbit( const float x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float32/base/signbit.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <inttypes.h>
+
+int main( void ) {
+    float x[] = { 3.14f, -3.14f, 0.0f, -0.0f, 4.0f, 1.0f, -1.0f, 1.0e38f, -1.0e38f };
+
+    int8_t out;
+    int i;
+    for ( i = 0; i < 9; i++ ) {
+        stdlib_base_float32_signbit( x[ i ], &out );
+        printf( "%f => signbit: %" PRId8 "\n", x[ i ], out );
+    }
+}
+```
+
+</section>
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
