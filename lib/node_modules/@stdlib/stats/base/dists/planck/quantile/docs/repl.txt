@@ -1,0 +1,74 @@
+
+{{alias}}( p, λ )
+    Evaluates the quantile function for a Planck distribution with shape
+    parameter `λ` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If `λ <= 0`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 0.4 )
+    4
+    > y = {{alias}}( 0.5, 1.4 )
+    0
+    > y = {{alias}}( 0.9, 2.1 )
+    1
+
+    > y = {{alias}}( 0.2, -0.1 )
+    NaN
+
+    > y = {{alias}}( NaN, 0.8 )
+    NaN
+    > y = {{alias}}( 0.4, NaN )
+    NaN
+
+    > y = {{alias}}( -0.5, 1.0 )
+    NaN
+    > y = {{alias}}( 1.5, 1.0 )
+    NaN
+
+
+{{alias}}.factory( λ )
+    Returns a function for evaluating the quantile function of a Planck
+    distribution with shape parameter `λ`.
+
+    Parameters
+    ----------
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myquantile = {{alias}}.factory( 0.4 );
+    > var y = myquantile( 0.4 )
+    1
+    > y = myquantile( 0.8 )
+    4
+    > y = myquantile( 1.0 )
+    Infinity
+
+    See Also
+    --------
+

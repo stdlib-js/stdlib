@@ -3,8 +3,8 @@
     Simultaneously sorts two strided arrays based on the sort order of the first
     array using Shellsort.
 
-    The `N` and `stride` parameters determine which elements in `x` and `y` are
-    accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
@@ -44,13 +44,13 @@
         First input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     y: Array<number>|TypedArray
         Second input array.
 
     strideY: integer
-        Index increment for `y`.
+        Stride length for `y`.
 
     Returns
     -------
@@ -67,11 +67,10 @@
     > y
     [ 3.0, 1.0, 0.0, 2.0 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = [ 1.0, -2.0, 3.0, -4.0 ];
     > y = [ 0.0, 1.0, 2.0, 3.0 ];
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}( N, -1, x, 2, y, 2 )
+    > {{alias}}( 2, -1, x, 2, y, 2 )
     [ 3.0, -2.0, 1.0, -4.0 ]
     > y
     [ 2.0, 1.0, 0.0, 3.0 ]
@@ -81,21 +80,21 @@
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
     > var y0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 2.0, 3.0 ] );
     > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > {{alias}}( N, 1, x1, 2, y1, 2 )
+    > {{alias}}( 2, 1, x1, 2, y1, 2 )
     <Float64Array>[ -4.0, 3.0, -2.0 ]
     > x0
     <Float64Array>[ 1.0, -4.0, 3.0, -2.0 ]
     > y0
     <Float64Array>[ 0.0, 3.0, 2.0, 1.0 ]
 
+
 {{alias}}.ndarray( N, order, x, strideX, offsetX, y, strideY, offsetY )
     Simultaneously sorts two strided arrays based on the sort order of the first
     array using Shellsort and alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
 
     Parameters
     ----------
@@ -110,19 +109,19 @@
         First input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     offsetX: integer
-        Starting index of `x`.
+        Starting index for `x`.
 
     y: Array<number>|TypedArray
         Second input array.
 
     strideY: integer
-        Index increment for `y`.
+        Stride length for `y`.
 
     offsetY: integer
-        Starting index of `y`.
+        Starting index for `y`.
 
     Returns
     -------
@@ -142,8 +141,7 @@
     // Using an index offset:
     > x = [ 1.0, -2.0, 3.0, -4.0 ];
     > y = [ 0.0, 1.0, 2.0, 3.0 ];
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, 1, x, 2, 1, y, 2, 1 )
+    > {{alias}}.ndarray( 2, 1, x, 2, 1, y, 2, 1 )
     [ 1.0, -4.0, 3.0, -2.0 ]
     > y
     [ 0.0, 3.0, 2.0, 1.0 ]

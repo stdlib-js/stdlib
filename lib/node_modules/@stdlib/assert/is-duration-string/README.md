@@ -52,7 +52,7 @@ bool = isDurationString( '1d2h' );
 
 -   The function validates that a `value` is a `string`. For all other types, the function returns `false`.
 
--   A duration string is a string containing a sequence of time units. A time unit is a non-negative integer followed by a unit identifier. The following unit identifiers are supported:
+-   A duration string is a string containing a sequence of time units. A time unit is a nonnegative integer followed by a unit identifier. The following unit identifiers are supported:
 
     -   `d`: days
     -   `h`: hours

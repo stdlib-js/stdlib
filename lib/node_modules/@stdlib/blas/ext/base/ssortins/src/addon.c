@@ -32,13 +32,13 @@
 * @return       Node-API value
 */
 static napi_value addon( napi_env env, napi_callback_info info ) {
-    STDLIB_NAPI_ARGV( env, info, argv, argc, 4 );
-    STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 4 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_FLOAT( env, order, argv, 1 );
 	STDLIB_NAPI_ARGV_INT64( env, stride, argv, 3 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, stride, argv, 2 );
-    c_ssortins( N, order, X, stride );
-    return NULL;
+	c_ssortins( N, order, X, stride );
+	return NULL;
 }
 
 STDLIB_NAPI_MODULE_EXPORT_FCN( addon )

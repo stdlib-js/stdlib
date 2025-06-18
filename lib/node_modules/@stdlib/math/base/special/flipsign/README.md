@@ -75,21 +75,18 @@ z = flipsign( 0.0, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var flipsign = require( '@stdlib/math/base/special/flipsign' );
 
-var x;
-var y;
-var z;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -50.0, 50.0, opts );
+var y = uniform( 100, -5.0, 5.0, opts );
 
 // Generate random numbers `x` and `y` and flip the sign of `x` only if `y` is negative...
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*100.0) - 50.0;
-    y = (randu()*10.0) - 5.0;
-    z = flipsign( x, y );
-    console.log( 'x: %d, y: %d => %d', x, y, z );
-}
+logEachMap( 'x: %0.4f, y: %0.4f => %0.4f', x, y, flipsign );
 ```
 
 </section>
