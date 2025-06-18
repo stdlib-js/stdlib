@@ -87,7 +87,7 @@ static double rand_double( void ) {
 * Computes the Dirac delta function.
 *
 * @param x   input value
-* @return function result
+* @return    function result
 */
 double dirac_delta( double x ) {
 	if ( x == 0.0 ) {

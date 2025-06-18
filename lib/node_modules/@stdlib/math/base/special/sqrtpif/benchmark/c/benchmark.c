@@ -90,19 +90,19 @@ static float rand_float( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	double elapsed;
 	float x[ 100 ];
+	double elapsed;
 	double t;
 	float y;
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		x[ i ] = ( 100000.0f * rand_float() );
+		x[ i ] = 100000.0f * rand_float();
 	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = stdlib_base_sqrtpif( x[ i % 100 ] );
+		y = stdlib_base_sqrtpif( x[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

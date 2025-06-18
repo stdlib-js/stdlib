@@ -1,0 +1,79 @@
+
+{{alias}}( arrays, fcn )
+    Applies a binary callback to elements in input ndarrays and assigns results
+    to elements in an output ndarray.
+
+    Each provided "ndarray" should be an object with the following properties:
+
+    - dtype: data type.
+    - data: data buffer.
+    - shape: dimensions.
+    - strides: stride lengths.
+    - offset: index offset.
+    - order: specifies whether an ndarray is row-major (C-style) or column-major
+    (Fortran-style).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing two input ndarrays and one output ndarray.
+
+    fcn: Function
+        Binary callback.
+
+    Examples
+    --------
+    // Define ndarray data and meta data...
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var ybuf = new {{alias:@stdlib/array/float64}}( [ 5.0, 6.0, 7.0, 8.0 ] );
+    > var zbuf = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var dtype = 'float64';
+    > var shape = [ 2, 2 ];
+    > var sx = [ 2, 1 ];
+    > var sy = [ 2, 1 ];
+    > var sz = [ 2, 1 ];
+    > var ox = 0;
+    > var oy = 0;
+    > var oz = 0;
+    > var order = 'row-major';
+
+    // Using ndarrays...
+    > var x = {{alias:@stdlib/ndarray/ctor}}( dtype, xbuf, shape, sx, ox, order );
+    > var y = {{alias:@stdlib/ndarray/ctor}}( dtype, ybuf, shape, sy, oy, order );
+    > var z = {{alias:@stdlib/ndarray/ctor}}( dtype, zbuf, shape, sz, oz, order );
+    > {{alias}}( [ x, y, z ], {{alias:@stdlib/number/float64/base/add}} );
+    > {{alias:@stdlib/ndarray/data-buffer}}( z )
+    <Float64Array>[ 6.0, 8.0, 10.0, 12.0 ]
+
+    // Using minimal ndarray-like objects...
+    > x = {
+    ...     'dtype': dtype,
+    ...     'data': xbuf,
+    ...     'shape': shape,
+    ...     'strides': sx,
+    ...     'offset': ox,
+    ...     'order': order
+    ... };
+    > y = {
+    ...     'dtype': dtype,
+    ...     'data': ybuf,
+    ...     'shape': shape,
+    ...     'strides': sy,
+    ...     'offset': oy,
+    ...     'order': order
+    ... };
+    > z = {
+    ...     'dtype': dtype,
+    ...     'data': zbuf,
+    ...     'shape': shape,
+    ...     'strides': sz,
+    ...     'offset': oz,
+    ...     'order': order
+    ... };
+    > {{alias}}( [ x, y, z ], {{alias:@stdlib/number/float64/base/add}} );
+    > {{alias:@stdlib/ndarray/data-buffer}}( z )
+    <Float64Array>[ 6.0, 8.0, 10.0, 12.0 ]
+
+    See Also
+    --------
+

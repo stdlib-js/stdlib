@@ -1,0 +1,12 @@
+
+{{alias}}
+    Natural logarithm of `10` as a single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+     2.3025851249694824
+
+    See Also
+    --------
+

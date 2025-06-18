@@ -92,14 +92,17 @@ static double rand_double( void ) {
 static double benchmark( void ) {
 	double elapsed;
 	double t;
-	double v;
+	double v[ 100 ];
 	double y;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		v[ i ] = ( 1000.0*rand_double() ) - 500.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		v = ( 1000.0*rand_double() ) - 500.0;
-		y = stdlib_base_roundn( v, -2 );
+		y = stdlib_base_roundn( v[ i%100 ], -2 );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
