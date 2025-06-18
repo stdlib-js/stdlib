@@ -103,7 +103,7 @@ static double add( const double x, const double y ) {
 *
 * @param iterations   number of iterations
 * @param len          array length
-* @return elapsed time in seconds
+* @return             elapsed time in seconds
 */
 static double benchmark( int iterations, int len ) {
 	double elapsed;

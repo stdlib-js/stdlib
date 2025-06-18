@@ -40,6 +40,7 @@ HEADER_FILENAME_LINTER_FLAGS ?=
 # make lint-filenames
 #/
 lint-filenames: $(NODE_MODULES)
+	$(QUIET) echo 'Linting filenames...'
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(FILENAME_LINTER)" $(FILENAME_LINTER_FLAGS) "$(ROOT_DIR)"
 
 .PHONY: lint-filenames
@@ -51,6 +52,7 @@ lint-filenames: $(NODE_MODULES)
 # make lint-header-filenames
 #/
 lint-header-filenames: $(NODE_MODULES)
+	$(QUIET) echo 'Linting header filenames...'
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(HEADER_FILENAME_LINTER)" $(HEADER_FILENAME_LINTER_FLAGS) "$(ROOT_DIR)"
 
 .PHONY: lint-header-filenames

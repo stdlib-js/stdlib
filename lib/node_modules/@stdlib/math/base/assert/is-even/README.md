@@ -85,19 +85,19 @@ bool = isEven( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var isEven = require( '@stdlib/math/base/assert/is-even' );
 
-var bool;
-var x;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 100, 0, 100, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = round( randu()*100.0 );
-    bool = isEven( x );
-    console.log( '%d is %s', x, ( bool ) ? 'even' : 'not even' );
+function isEvenWrapper( integer ) {
+    return ( isEven( integer ) ) ? 'even' : 'not even';
 }
+logEachMap( '%d is %s', x, isEvenWrapper );
 ```
 
 </section>

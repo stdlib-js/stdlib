@@ -31,20 +31,11 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var z = new Complex64( 5.0, 3.0 );
-* // returns <Complex64>
 *
 * var out = add( z, z );
-* // returns <Complex64>
-*
-* var re = realf( out );
-* // returns 10.0
-*
-* var im = imagf( out );
-* // returns 6.0
+* // returns <Complex64>[ 10.0, 6.0 ]
 */
 declare function add( z1: Complex64, z2: Complex64 ): Complex64;
 
