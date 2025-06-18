@@ -74,7 +74,7 @@ v = polygamma( 2, -1.0 );
 If `x` on the other hand is a negative even `integer`, the function returns `NaN`.
 
 ```javascript
-v = polygamma( 2, -4.0 );
+var v = polygamma( 2, -4.0 );
 // returns NaN
 
 v = polygamma( 2, -2.0 );
@@ -105,21 +105,18 @@ v = polygamma( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var polygamma = require( '@stdlib/math/base/special/polygamma' );
 
-var n;
-var x;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -50.0, 50.0, opts );
+var n = discreteUniform( 100, 0, 50, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*100.0) - 50.0;
-    n = round( randu()*50.0 );
-    v = polygamma( x, n );
-    console.log( 'x: %d, ψ^(%d)(x): %d', x, n, v );
-}
+logEachMap( 'x: %0.4f, ψ^(%d)(x): %0.4f', x, n, polygamma );
 ```
 
 </section>

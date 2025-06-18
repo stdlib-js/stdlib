@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the mode of a triangular distribution with lower bound `a`, upper bound `b`, and mode `c`.
+* Returns the mode of a triangular distribution.
 */
 double stdlib_base_dists_triangular_mode( const double a, const double b, const double c );
 

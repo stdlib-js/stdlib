@@ -85,9 +85,9 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 The callback function is provided three arguments:
 
--   **value**: iterated value
--   **index**: source iteration index (zero-based)
--   **n**: iteration index (zero-based)
+-   **value**: iterated value.
+-   **index**: source iteration index (zero-based).
+-   **n**: iteration index (zero-based).
 
 To set the callback execution context, provide a `thisArg`.
 
