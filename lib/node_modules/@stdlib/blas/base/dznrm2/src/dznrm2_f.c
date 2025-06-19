@@ -26,13 +26,13 @@
 * Computes the L2-norm of a complex double-precision floating-point vector.
 *
 * @param N        number of indexed elements
-* @param ZX       input array
-* @param strideX  ZX stride length
+* @param X        input array
+* @param strideX  X stride length
 * @return         L2-norm
 */
-double API_SUFFIX(c_dznrm2)( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX ) {
+double API_SUFFIX(c_dznrm2)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX ) {
 	double nrm2;
-	dznrm2sub( &N, ZX, &strideX, &nrm2 );
+	dznrm2sub( &N, X, &strideX, &nrm2 );
 	return nrm2;
 }
 
@@ -40,15 +40,15 @@ double API_SUFFIX(c_dznrm2)( const CBLAS_INT N, const void *ZX, const CBLAS_INT 
 * Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
 *
 * @param N        number of indexed elements
-* @param ZX       input array
-* @param strideX  ZX stride length
-* @param offsetX  starting index for ZX
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
 * @return         L2-norm
 */
-double API_SUFFIX(c_dznrm2_ndarray)( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	stdlib_complex128_t *zx = (stdlib_complex128_t *)ZX;
+double API_SUFFIX(c_dznrm2_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	stdlib_complex128_t *x = (stdlib_complex128_t *)X;
 	double nrm2;
-	zx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
-	dznrm2sub( &N, (void *)zx, &strideX, &nrm2 );
+	x += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	dznrm2sub( &N, (void *)x, &strideX, &nrm2 );
 	return nrm2;
 }

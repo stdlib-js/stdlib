@@ -40,8 +40,7 @@
         "@stdlib/complex/float64/ctor",
         "@stdlib/complex/float64/reim",
         "@stdlib/math/base/special/exp",
-        "@stdlib/math/base/special/cos",
-        "@stdlib/math/base/special/sin"
+        "@stdlib/math/base/special/sincos"
       ]
     },
     {
@@ -58,8 +57,7 @@
         "@stdlib/complex/float64/ctor",
         "@stdlib/complex/float64/reim",
         "@stdlib/math/base/special/exp",
-        "@stdlib/math/base/special/cos",
-        "@stdlib/math/base/special/sin"
+        "@stdlib/math/base/special/sincos"
       ]
     },
     {
@@ -76,8 +74,7 @@
         "@stdlib/complex/float64/ctor",
         "@stdlib/complex/float64/reim",
         "@stdlib/math/base/special/exp",
-        "@stdlib/math/base/special/cos",
-        "@stdlib/math/base/special/sin"
+        "@stdlib/math/base/special/sincos"
       ]
     }
   ]

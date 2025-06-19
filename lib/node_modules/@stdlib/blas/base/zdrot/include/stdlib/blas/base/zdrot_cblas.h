@@ -34,7 +34,7 @@ extern "C" {
 /**
 * Applies a plane rotation.
 */
-void API_SUFFIX(cblas_zdrot)( const CBLAS_INT N, void *ZX, const CBLAS_INT strideX, void *ZY, const CBLAS_INT strideY, const double c, const double s );
+void API_SUFFIX(cblas_zdrot)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY, const double c, const double s );
 
 #ifdef __cplusplus
 }
