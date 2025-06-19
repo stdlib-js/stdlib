@@ -34,7 +34,7 @@ CPPCHECK_SUPPRESSIONS_LIST_BENCHMARKS ?= $(CONFIG_DIR)/cppcheck/suppressions.ben
 CPPCHECK_SUPPRESSIONS_LIST_TESTS_FIXTURES ?= $(CONFIG_DIR)/cppcheck/suppressions.tests_fixtures.txt
 
 # Define the command-line options to use when invoking the cppcheck executable:
-CPPCHECK_FLAGS ?= \
+CPPCHECK_DEFAULT_FLAGS ?= \
 	--std=c99 \
 	--enable=warning,style,performance,portability,information,missingInclude \
 	--inconclusive \
@@ -44,6 +44,9 @@ CPPCHECK_FLAGS ?= \
 	--inline-suppr \
 	--check-level=exhaustive \
 	--quiet
+
+# Additional flags that a user can set:
+CPPCHECK_FLAGS ?=
 
 
 # RULES #
@@ -106,13 +109,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_C_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || exit 1; \
+		$(CPPCHECK) $(CPPCHECK_DEFAULT_FLAGS) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_C_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || echo 'Linting failed.'; \
+		$(CPPCHECK) $(CPPCHECK_DEFAULT_FLAGS) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -142,13 +145,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_C_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --enable=unusedFunction --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_EXAMPLES) $$file || exit 1; \
+		$(CPPCHECK) $(CPPCHECK_DEFAULT_FLAGS) $(CPPCHECK_FLAGS) --enable=unusedFunction --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_EXAMPLES) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_C_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --enable=unusedFunction --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_EXAMPLES) $$file || echo 'Linting failed.'; \
+		$(CPPCHECK) $(CPPCHECK_DEFAULT_FLAGS) $(CPPCHECK_FLAGS) --enable=unusedFunction --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_EXAMPLES) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -178,13 +181,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_C_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_BENCHMARKS) $$file || exit 1; \
+		$(CPPCHECK) $(CPPCHECK_DEFAULT_FLAGS) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_BENCHMARKS) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_C_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_BENCHMARKS) $$file || echo 'Linting failed.'; \
+		$(CPPCHECK) $(CPPCHECK_DEFAULT_FLAGS) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_BENCHMARKS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -214,13 +217,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_C_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_TESTS_FIXTURES) $$file || exit 1; \
+		$(CPPCHECK) $(CPPCHECK_DEFAULT_FLAGS) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_TESTS_FIXTURES) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_C_TESTS_FIXTURES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_TESTS_FIXTURES) $$file || echo 'Linting failed.'; \
+		$(CPPCHECK) $(CPPCHECK_DEFAULT_FLAGS) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST_TESTS_FIXTURES) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -247,13 +250,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || exit 1; \
+		$(CPPCHECK) $(CPPCHECK_DEFAULT_FLAGS) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || exit 1; \
 	done
 else
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		$(CPPCHECK) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || echo 'Linting failed.'; \
+		$(CPPCHECK) $(CPPCHECK_DEFAULT_FLAGS) $(CPPCHECK_FLAGS) --suppressions-list=$(CPPCHECK_SUPPRESSIONS_LIST) $$file || echo 'Linting failed.'; \
 	done
 endif
 

@@ -8993,7 +8993,7 @@
       "policy"
     ]
   },
-  "https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md": {
+  "https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md": {
     "id": "stdlib-development",
     "description": "The stdlib development guidelines.",
     "short_url": "",

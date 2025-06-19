@@ -91,8 +91,8 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	float x[ 100 ];
 	double t;
+	float x[ 100 ];
 	float y;
 	int i;
 

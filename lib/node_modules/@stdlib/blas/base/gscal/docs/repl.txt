@@ -1,14 +1,14 @@
 
-{{alias}}( N, alpha, x, stride )
-    Multiplies a vector `x` by a constant `alpha`.
+{{alias}}( N, alpha, x, strideX )
+    Multiplies a vector by a scalar constant.
 
-    The `N` and `stride` parameters determine which elements in `x` are accessed
-    at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    If `N <= 0` or `stride <= 0`, the function returns `x` unchanged.
+    If `N <= 0`, the function returns `x` unchanged.
 
     Parameters
     ----------
@@ -16,13 +16,13 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Array<number>|TypedArray
         Input array.
 
-    stride: integer
-        Index increment for `x`.
+    strideX: integer
+        Stride length.
 
     Returns
     -------
@@ -32,12 +32,11 @@
     Examples
     --------
     // Standard Usage:
-    > var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ];
-    > var alpha = 5.0;
-    > {{alias}}( x.length, alpha, x, 1 )
-    [ -10.0, 5.0, 15.0, -25.0, 20.0, -5.0, -15.0 ]
+    > var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
+    > {{alias}}( x.length, 5.0, x, 1 )
+    [ -10.0, 5.0, 15.0, -25.0, 20.0, 0.0, -5.0, -15.0 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ];
     > {{alias}}( 3, 5.0, x, 2 )
     [ -10.0, 1.0, 15.0, -5.0, 20.0, -1.0, -3.0 ]
@@ -51,12 +50,13 @@
     <Float64Array>[ 1.0, -10.0, 3.0, -20.0, 5.0, -30.0 ]
 
 
-{{alias}}.ndarray( N, alpha, x, stride, offset )
-    Multiplies `x` by a constant `alpha` using alternative indexing semantics.
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX )
+    Multiplies a vector by a scalar constant using alternative indexing
+    semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
 
     Parameters
     ----------
@@ -64,16 +64,16 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Array<number>|TypedArray
         Input array.
 
-    stride: integer
-        Index increment for `x`.
+    strideX: integer
+        Stride length.
 
-    offset: integer
-        Starting index of `x`.
+    offsetX: integer
+        Starting index.
 
     Returns
     -------
@@ -83,9 +83,9 @@
     Examples
     --------
     // Standard Usage:
-    > var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ];
+    > var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
     > {{alias}}.ndarray( x.length, 5.0, x, 1, 0 )
-    [ -10.0, 5.0, 15.0, -25.0, 20.0, -5.0, -15.0 ]
+    [ -10.0, 5.0, 15.0, -25.0, 20.0, 0.0, -5.0, -15.0 ]
 
     // Using an index offset:
     > x = [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ];
