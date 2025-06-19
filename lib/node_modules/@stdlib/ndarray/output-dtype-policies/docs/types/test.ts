@@ -23,7 +23,7 @@ import policies = require( './index' );
 
 // The function returns an array of strings...
 {
-	policies(); // $ExpectType string[]
+	policies(); // $ExpectType Policies
 }
 
 // The compiler throws an error if the function is provided any arguments...

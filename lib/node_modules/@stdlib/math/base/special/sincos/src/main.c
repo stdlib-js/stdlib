@@ -76,7 +76,7 @@ static void kernelSincos( const double x, const double y, double* sine, double* 
 }
 
 /**
-* Simultaneously computes the sine and cosine of a number.
+* Simultaneously computes the sine and cosine of an angle measured in radians.
 *
 * ## Method
 *

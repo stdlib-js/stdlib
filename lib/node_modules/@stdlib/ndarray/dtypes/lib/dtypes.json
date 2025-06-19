@@ -90,5 +90,25 @@
     "uint32",
     "uint8",
     "uint8c"
+  ],
+  "index": [
+    "int32",
+    "uint8",
+    "bool",
+    "generic"
+  ],
+  "integer_index": [
+    "int32"
+  ],
+  "boolean_index": [
+    "bool"
+  ],
+  "mask_index": [
+    "uint8"
+  ],
+  "typed_index": [
+    "int32",
+    "uint8",
+    "bool"
   ]
 }

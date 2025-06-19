@@ -1,0 +1,37 @@
+
+{{alias}}( x, iy )
+    Computes the tangent of a number on the interval [-π/4, π/4] in
+    single-precision floating-point format.
+
+    If provided `NaN` for `x`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    iy: integer
+        If `iy=1`, the function returns `tan(x)`. If `iy=-1`, the function
+        returns the negative inverse `-1/tan(x)`.
+
+    Returns
+    -------
+    out: number
+        Tangent.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/constants/float32/pi}}/4.0, 1 )
+    ~1.0
+    > out = {{alias}}( {{alias:@stdlib/constants/float32/pi}}/4.0, -1 )
+    ~-1.0
+    > out = {{alias}}( {{alias:@stdlib/constants/float32/pi}}/6.0, 1 )
+    ~0.577
+    > out = {{alias}}( 0.664, 1 )
+    ~0.783
+    > out = {{alias}}( NaN, 1 )
+    NaN
+
+    See Also
+    --------
+

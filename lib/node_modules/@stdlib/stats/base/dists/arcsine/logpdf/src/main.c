@@ -43,7 +43,7 @@ double stdlib_base_dists_arcsine_logpdf( const double x, const double a, const d
 	) {
 		return 0.0/0.0; // NaN
 	}
-	if ( x < a || x > b ){
+	if ( x < a || x > b ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;
 	}
 	return -( STDLIB_CONSTANT_FLOAT64_LN_PI + ( stdlib_base_ln( ( x-a ) * ( b-x ) ) / 2.0 ) );
