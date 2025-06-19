@@ -21,7 +21,7 @@
 #include <stdint.h>
 
 int main( void ) {
-	const int32_t x[] = { 1, 10, 1, 301, 302 };
+	const int32_t x[] = { 1, 10, 100, 301, 302 };
 
 	double b;
 	int i;

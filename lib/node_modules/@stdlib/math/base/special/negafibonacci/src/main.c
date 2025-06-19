@@ -18,8 +18,6 @@
 
 #include "stdlib/math/base/special/negafibonacci.h"
 #include "stdlib/math/base/special/abs.h"
-#include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/constants/float64/max_safe_nth_fibonacci.h"
 
 static const double negafibonacci_value[ 79 ] = {

@@ -39,7 +39,7 @@ limitations under the License.
 
 <!-- </equation> -->
 
-where `ζ(s)` is the [Riemann zeta function][@stdlib/math/base/special/riemann-zeta]
+where `ζ(s)` is the [Riemann zeta function][@stdlib/math/base/special/riemann-zeta].
 
 </section>
 

@@ -1,0 +1,113 @@
+
+{{alias}}( order, uplo, M, N, alpha, beta, A, LDA )
+    Sets the off-diagonal elements and the diagonal elements of a single-
+    precision complex floating-point matrix `A` to specified values.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    Parameters
+    ----------
+    order: string
+        Row-major (C-style) or column-major (Fortran-style) order. Must be
+        either 'row-major' or 'column-major'.
+
+    uplo: string
+        Specifies whether to copy the upper or lower triangular/trapezoidal part
+        of a matrix `A`.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    alpha: Complex64
+        Value assigned to off-diagonal elements.
+
+    beta: Complex64
+        Value assigned to diagonal elements.
+
+    A: Complex64Array
+        Input matrix `A`.
+
+    LDA: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    Returns
+    -------
+    A: Complex64Array
+        Input matrix.
+
+    Examples
+    --------
+    > var A = new {{alias:@stdlib/array/complex64}}( 4 );
+    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 2.0 );
+    > var beta = new {{alias:@stdlib/complex/float32/ctor}}( 3.0, 4.0 );
+    > {{alias}}( 'row-major', 'all', 2, 2, alpha, beta, A, 2 );
+    > var z = A.get( 0 );
+    > {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > {{alias:@stdlib/complex/float32/imag}}( z )
+    4.0
+
+
+{{alias}}.ndarray( uplo, M, N, alpha, beta, A, sa1, sa2, oa )
+    Sets the off-diagonal elements and the diagonal elements of a single-
+    precision complex floating-point matrix `A` to specified values using
+    alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    uplo: string
+        Specifies whether to copy the upper or lower triangular/trapezoidal part
+        of a matrix `A`.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    alpha: Complex64
+        Value assigned to off-diagonal elements.
+
+    beta: Complex64
+        Value assigned to diagonal elements.
+
+    A: Complex64Array
+        Input matrix `A`.
+
+    sa1: integer
+        Stride of the first dimension of `A`.
+
+    sa2: integer
+        Stride of the second dimension of `A`.
+
+    oa: integer
+        Starting index for `A`.
+
+    Returns
+    -------
+    A: Complex64Array
+        Input matrix.
+
+    Examples
+    --------
+    > var A = new {{alias:@stdlib/array/complex64}}( 5 );
+    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 2.0 );
+    > var beta = new {{alias:@stdlib/complex/float32/ctor}}( 3.0, 4.0 );
+    > {{alias}}.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 1 );
+    > var z = A.get( 1 );
+    > {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > {{alias:@stdlib/complex/float32/imag}}( z )
+    4.0
+
+    See Also
+    --------
