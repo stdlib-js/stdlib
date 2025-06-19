@@ -95,20 +95,20 @@ static double rand_double( void ) {
 * @return             elapsed time in seconds
 */
 static double benchmark1( int iterations, int len ) {
-	double zx[ len*2 ];
+	double X[ len*2 ];
 	double elapsed;
 	double norm;
 	double t;
 	int i;
 
 	for ( i = 0; i < len*2; i += 2 ) {
-		zx[ i ] = ( rand_double()*10000.0 ) - 5000.0;
-		zx[ i+1 ] = ( rand_double()*10000.0 ) - 5000.0;
+		X[ i ] = ( rand_double()*10000.0 ) - 5000.0;
+		X[ i+1 ] = ( rand_double()*10000.0 ) - 5000.0;
 	}
 	norm = 0.0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		norm = c_dznrm2( len, (void *)zx, 1 );
+		norm = c_dznrm2( len, (void *)X, 1 );
 		if ( norm != norm ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -129,20 +129,20 @@ static double benchmark1( int iterations, int len ) {
 * @return             elapsed time in seconds
 */
 static double benchmark2( int iterations, int len ) {
-	double zx[ len*2 ];
+	double X[ len*2 ];
 	double elapsed;
 	double norm;
 	double t;
 	int i;
 
 	for ( i = 0; i < len*2; i += 2 ) {
-		zx[ i ] = ( rand_double()*10000.0 ) - 5000.0;
-		zx[ i+1 ] = ( rand_double()*10000.0 ) - 5000.0;
+		X[ i ] = ( rand_double()*10000.0 ) - 5000.0;
+		X[ i+1 ] = ( rand_double()*10000.0 ) - 5000.0;
 	}
 	norm = 0.0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		norm = c_dznrm2_ndarray( len, (void *)zx, 1, 0 );
+		norm = c_dznrm2_ndarray( len, (void *)X, 1, 0 );
 		if ( norm != norm ) {
 			printf( "should not return NaN\n" );
 			break;

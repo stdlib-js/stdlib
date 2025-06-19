@@ -19,5 +19,4 @@
 #include "stdlib/complex/float32/base/add.h"
 #include "stdlib/math/base/napi/binary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_CC_C( stdlib_base_complex64_add )

@@ -38,7 +38,7 @@
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/constants/float64/max.h"
 #include "stdlib/constants/float64/pinf.h"
-#include "stdlib/constants/float64/max_safe_nth_factorial.h"
+#include "stdlib/constants/float64/max_nth_factorial.h"
 #include <stdint.h>
 #include <stdbool.h>
 
@@ -160,10 +160,10 @@ double stdlib_base_falling_factorial( const double x, const int32_t n ) {
 	}
 	if ( x < 0.5 ) {
 		// Computing `1 + x` will throw away digits, so split up calculation...
-		if ( n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FACTORIAL - 2 ) {
+		if ( n > STDLIB_CONSTANT_FLOAT64_MAX_NTH_FACTORIAL - 2 ) {
 			// Given a ratio of two very large numbers, we need to split the calculation up into two blocks:
-			t1 = x * stdlib_base_falling_factorial( x - 1.0, STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FACTORIAL - 2 );
-			t2 = stdlib_base_falling_factorial( x - STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FACTORIAL + 1.0, n - STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FACTORIAL + 1 );
+			t1 = x * stdlib_base_falling_factorial( x - 1.0, STDLIB_CONSTANT_FLOAT64_MAX_NTH_FACTORIAL - 2 );
+			t2 = stdlib_base_falling_factorial( x - STDLIB_CONSTANT_FLOAT64_MAX_NTH_FACTORIAL + 1.0, n - STDLIB_CONSTANT_FLOAT64_MAX_NTH_FACTORIAL + 1 );
 			if ( ( STDLIB_CONSTANT_FLOAT64_MAX / stdlib_base_abs( t1 ) ) < stdlib_base_abs( t2 ) ) {
 				return STDLIB_CONSTANT_FLOAT64_PINF;
 			}
