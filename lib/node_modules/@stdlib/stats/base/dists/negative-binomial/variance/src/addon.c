@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,19 +16,7 @@
 * limitations under the License.
 */
 
-'use strict';
+#include "stdlib/stats/base/dists/negative-binomial/variance.h"
+#include "stdlib/math/base/napi/binary.h"
 
-var randu = require( '@stdlib/random/base/randu' );
-var variance = require( './../lib' );
-
-var v;
-var i;
-var r;
-var p;
-
-for ( i = 0; i < 10; i++ ) {
-	r = randu() * 100;
-	p = randu();
-	v = variance( r, p );
-	console.log( 'r: %d, p: %d, Var(X;r,p): %d', r.toFixed( 4 ), p.toFixed( 4 ), v.toFixed( 4 ) );
-}
+STDLIB_MATH_BASE_NAPI_MODULE_DD_D( stdlib_base_dists_negative_binomial_variance )
