@@ -173,6 +173,106 @@ logEachMap( 'x: %0.4f, \t s: %0.4f, \t f(x,s): %0.4f', x, s, gammainc );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/gammainc.h"
+```
+
+#### stdlib_base_gammainc( x, a, regularized, upper )
+
+Evaluates the [incomplete gamma function][incomplete-gamma-function] for inputs `x` and `a`. The third and fourth parameters of the function can be used to specify whether instead to evaluate the non-regularized and/or upper incomplete gamma functions, respectively.
+
+```c
+double out = stdlib_base_gammainc( 0.0, 1.0, true, false );
+// returns 0.0
+
+out = stdlib_base_gammainc( 6.0, 2.0, true, false );
+// returns ~0.9826
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **a**: `[in] double` input value.
+-   **regularized**: `[in] bool` input value.
+-   **upper**: `[in] bool` input value.
+
+```c
+double stdlib_base_gammainc( const double x, const double a, const bool regularized, const bool upper );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/gammainc.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double x;
+    double a;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        x = random_uniform( 0.0, 1000.0 );
+        a = random_uniform( 1.0, 1000.0 );
+        y = stdlib_base_gammainc( x, a, true, false );
+        printf( "x: %lf, s: %lf, f(x,s): %lf\n", x, a, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
