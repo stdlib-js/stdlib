@@ -1,0 +1,32 @@
+
+{{alias}}( v1, v2 )
+    Tests if two arguments are both Int16Arrays and have equal values.
+
+    Parameters
+    ----------
+    v1: any
+        First input value.
+
+    v2: any
+        Second input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arguments are equal.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/int16}}( [ 1, 2, 3 ] );
+    > var y = new {{alias:@stdlib/array/int16}}( [ 1, 2, 3 ] );
+    > var bool = {{alias}}( x, y )
+    true
+
+    > x = new {{alias:@stdlib/array/int16}}( [ 1, 2, 3 ] );
+    > y = new {{alias:@stdlib/array/int16}}( [ 1, 2, 4 ] );
+    > bool = {{alias}}( x, y )
+    false
+
+    See Also
+    --------
+

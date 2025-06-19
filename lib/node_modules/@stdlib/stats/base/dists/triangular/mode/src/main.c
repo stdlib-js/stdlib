@@ -25,10 +25,10 @@
 * @param a  minimum support
 * @param b  maximum support
 * @param c  mode
-* @returns  mode
+* @return   mode
 *
 * @example
-* double v = mode( 0.0, 10.0, 5.0 );
+* double v = stdlib_base_dists_triangular_mode( 0.0, 10.0, 5.0 );
 * // returns 5.0
 */
 double stdlib_base_dists_triangular_mode( const double a, const double b, const double c ) {

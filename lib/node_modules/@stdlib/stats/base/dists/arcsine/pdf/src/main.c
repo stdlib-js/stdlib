@@ -30,7 +30,7 @@
 * @return     evaluated PDF
 *
 * @example
-* double y = stdlib_base_arcsine_pdf( 2.0, 0.0, 4.0 );
+* double y = stdlib_base_dists_arcsine_pdf( 2.0, 0.0, 4.0 );
 * // returns ~0.159
 */
 double stdlib_base_dists_arcsine_pdf( const double x, const double a, const double b ) {

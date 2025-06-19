@@ -70,7 +70,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 The invoked `function` is provided one argument:
 
--   `value`: iterated value
+-   `value`: iterated value.
 
 ```javascript
 var array2iterator = require( '@stdlib/array/to-iterator' );

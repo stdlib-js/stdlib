@@ -24,10 +24,10 @@
 * Computes the L2-norm of a complex double-precision floating-point vector.
 *
 * @param N         number of indexed elements
-* @param ZX        input array
-* @param strideX   ZX stride length
+* @param X         input array
+* @param strideX   X stride length
 */
-double API_SUFFIX(c_dznrm2)( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX ) {
+double API_SUFFIX(c_dznrm2)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	return API_SUFFIX(c_dznrm2_ndarray)( N, ZX, strideX, ox );
+	return API_SUFFIX(c_dznrm2_ndarray)( N, X, strideX, ox );
 }

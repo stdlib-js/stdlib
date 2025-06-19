@@ -1,0 +1,137 @@
+{
+  "options": {
+    "task": "build",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-int32",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-dataview-cast",
+        "@stdlib/napi/argv-strided-float64array",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/stats/strided/dmean",
+        "@stdlib/stats/base/dists/normal/cdf",
+        "@stdlib/stats/base/dists/normal/quantile",
+        "@stdlib/stats/base/ztest/alternatives",
+        "@stdlib/stats/base/ztest/one-sample/results/float64",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/stats/strided/dmean",
+        "@stdlib/stats/base/dists/normal/cdf",
+        "@stdlib/stats/base/dists/normal/quantile",
+        "@stdlib/stats/base/ztest/alternatives",
+        "@stdlib/stats/base/ztest/one-sample/results/float64",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf"
+      ]
+    },
+    {
+      "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/stats/strided/dmean",
+        "@stdlib/stats/base/dists/normal/cdf",
+        "@stdlib/stats/base/dists/normal/quantile",
+        "@stdlib/stats/base/ztest/alternatives",
+        "@stdlib/stats/base/ztest/one-sample/results/float64",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf"
+      ]
+    },
+    {
+      "task": "",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/stats/strided/dmean",
+        "@stdlib/stats/base/dists/normal/cdf",
+        "@stdlib/stats/base/dists/normal/quantile",
+        "@stdlib/stats/base/ztest/alternatives",
+        "@stdlib/stats/base/ztest/one-sample/results/float64",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf"
+      ]
+    }
+  ]
+}

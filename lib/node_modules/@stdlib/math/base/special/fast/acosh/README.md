@@ -79,15 +79,16 @@ var v = acosh( 0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var acosh = require( '@stdlib/math/base/special/fast/acosh' );
 
-var x = linspace( 1.0, 5.0, 103 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 103, 1.0, 5.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( acosh( x[ i ] ) );
-}
+logEachMap( 'acosh(%0.4f) = %0.4f', x, acosh );
 ```
 
 </section>
