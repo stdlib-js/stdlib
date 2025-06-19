@@ -180,10 +180,10 @@ var IPIV0 = new Int32Array( [ 0, 0, 0, 0 ] );
 
 // Create offset views...
 var DL = new Float64Array( DL0.buffer, DL0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var D = new Float64Array( D0.buffer, D0.BYTES_PER_ELEMENT*1 );
-var DU = new Float64Array( DU0.buffer, DU0.BYTES_PER_ELEMENT*1 );
-var DU2 = new Float64Array( DU20.buffer, DU20.BYTES_PER_ELEMENT*1 );
-var IPIV = new Int32Array( IPIV0.buffer, IPIV0.BYTES_PER_ELEMENT*1 );
+var D = new Float64Array( D0.buffer, D0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
+var DU = new Float64Array( DU0.buffer, DU0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
+var DU2 = new Float64Array( DU20.buffer, DU20.BYTES_PER_ELEMENT*1 ); // start at 2nd element
+var IPIV = new Int32Array( IPIV0.buffer, IPIV0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
 dgttrf( 3, DL, D, DU, DU2, IPIV );
 // DL0 => <Float64Array>[ 0.0, 0.3, ~0.22 ]
