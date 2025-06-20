@@ -253,7 +253,6 @@ The function accepts the following arguments:
 -   **X**: `[in] float*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 
-
 ```c
 float stdlib_strided_svariancewd( const CBLAS_INT N, const float correction, const float *X, const CBLAS_INT strideX );
 ```
