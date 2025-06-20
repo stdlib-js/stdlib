@@ -27,7 +27,7 @@
 * @return         median
 *
 * @example
-* double y = stdlib_base_cauchy_median( 10.0, 5.0 );
+* double y = stdlib_base_dists_cauchy_median( 10.0, 5.0 );
 * // returns 10.0
 */
 double stdlib_base_dists_cauchy_median( const double x0, const double gamma ) {

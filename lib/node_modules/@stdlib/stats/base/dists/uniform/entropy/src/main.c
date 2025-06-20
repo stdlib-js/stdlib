@@ -28,7 +28,7 @@
 * @return    differential entropy
 *
 * @example
-* double v = entropy( 0.0, 1.0 );
+* double v = stdlib_base_dists_uniform_entropy( 0.0, 1.0 );
 * // returns 0.0
 */
 double stdlib_base_dists_uniform_entropy( const double a, const double b ) {

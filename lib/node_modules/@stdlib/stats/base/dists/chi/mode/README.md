@@ -100,19 +100,16 @@ v = mode( 0.9 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mode = require( '@stdlib/stats/base/dists/chi/mode' );
 
-var k;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var k = uniform( 10, 0.0, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    k = randu() * 20.0;
-    v = mode( k );
-    console.log( 'k: %d, mode(X,k): %d', k.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'k: %0.4f, mode(X;k): %0.4f', k, mode );
 ```
 
 </section>
@@ -194,7 +191,7 @@ int main( void ) {
     double k;
     double y;
     int i;
-    
+
     for ( i = 0; i < 25; i++ ) {
         k = random_uniform( 0.0, 20.0 );
         y = stdlib_base_dists_chi_mode( k );

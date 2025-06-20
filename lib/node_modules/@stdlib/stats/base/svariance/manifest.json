@@ -26,7 +26,7 @@
   ],
   "confs": [
     {
-     "task": "build",
+      "task": "build",
       "src": [
         "./src/svariance.c"
       ],
@@ -38,7 +38,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/svariancepn",
+        "@stdlib/stats/strided/svariancepn",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -60,7 +60,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/svariancepn"
+        "@stdlib/stats/strided/svariancepn"
       ]
     },
     {
@@ -76,7 +76,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/svariancepn"
+        "@stdlib/stats/strided/svariancepn"
       ]
     }
   ]

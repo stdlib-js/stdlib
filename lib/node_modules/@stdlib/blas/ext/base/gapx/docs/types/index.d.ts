@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `gapx`.
@@ -41,7 +46,7 @@ interface Routine {
 	* gapx( x.length, 5.0, x, 1 );
 	* // x => [ 3.0, 6.0, 8.0, 0.0, 9.0, 5.0, 4.0, 2.0 ]
 	*/
-	( N: number, alpha: number, x: NumericArray, strideX: number ): NumericArray;
+	<T extends InputArray>( N: number, alpha: number, x: T, strideX: number ): T;
 
 	/**
 	* Adds a scalar constant to each element in a strided array using alternative indexing semantics.
@@ -59,7 +64,7 @@ interface Routine {
 	* gapx.ndarray( x.length, 5.0, x, 1, 0 );
 	* // x => [ 3.0, 6.0, 8.0, 0.0, 9.0, 5.0, 4.0, 2.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: NumericArray, strideX: number, offsetX: number ): NumericArray;
+	ndarray<T extends InputArray>( N: number, alpha: number, x: T, strideX: number, offsetX: number ): T;
 }
 
 /**

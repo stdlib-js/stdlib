@@ -18,7 +18,9 @@
 
 #include "stdlib/stats/base/dmeanvarpn.h"
 #include "stdlib/blas/ext/base/dsumpw.h"
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/math/base/assert/is_nan.h"
 
 /**
 * Computes the mean and variance of a double-precision floating-point strided array using a two-pass algorithm.
@@ -39,10 +41,29 @@
 * @param Out         output array
 * @param strideOut   Out stride length
 */
-void stdlib_strided_dmeanvarpn( const int64_t N, const double correction, const double *X, const int64_t strideX, double *Out, const int64_t strideOut ) {
-	int64_t ix;
-	int64_t io;
-	int64_t i;
+void API_SUFFIX(stdlib_strided_dmeanvarpn)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, double *Out, const CBLAS_INT strideOut ) {
+	const CBLAS_INT oo = ( strideOut >= 0 ) ? 0 : -strideOut;
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	API_SUFFIX(stdlib_strided_dmeanvarpn_ndarray)( N, correction, X, strideX, ox, Out, strideOut, oo );
+	return;
+}
+
+/**
+* Computes the mean and variance of a double-precision floating-point strided array using a two-pass algorithm and alternative indexing semantics.
+*
+* @param N           number of indexed elements
+* @param correction  degrees of freedom adjustment
+* @param X           input array
+* @param strideX     X stride length
+* @param offsetX     starting index for X
+* @param Out         output array
+* @param strideOut   Out stride length
+* @param offsetOut   starting index for Out
+*/
+void API_SUFFIX(stdlib_strided_dmeanvarpn_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Out, const CBLAS_INT strideOut, const CBLAS_INT offsetOut ) {
+	CBLAS_INT ix;
+	CBLAS_INT io;
+	CBLAS_INT i;
 	double M2;
 	double mu;
 	double dN;
@@ -51,16 +72,8 @@ void stdlib_strided_dmeanvarpn( const int64_t N, const double correction, const 
 	double c;
 	double n;
 
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideOut < 0 ) {
-		io = -strideOut;
-	} else {
-		io = 0;
-	}
+	ix = offsetX;
+	io = offsetOut;
 	if ( N <= 0 ) {
 		Out[ io ] = 0.0 / 0.0; // NaN
 		Out[ io+strideOut ] = 0.0 / 0.0; // NaN
@@ -78,8 +91,8 @@ void stdlib_strided_dmeanvarpn( const int64_t N, const double correction, const 
 		return;
 	}
 	// Compute an estimate for the mean:
-	mu = stdlib_strided_dsumpw( N, X, strideX ) / dN;
-	if ( mu != mu ) {
+	mu = API_SUFFIX(stdlib_strided_dsumpw_ndarray)( N, X, strideX, offsetX ) / dN;
+	if ( stdlib_base_is_nan( mu ) ) {
 		Out[ io ] = 0.0 / 0.0; // NaN
 		Out[ io+strideOut ] = 0.0 / 0.0; // NaN
 		return;

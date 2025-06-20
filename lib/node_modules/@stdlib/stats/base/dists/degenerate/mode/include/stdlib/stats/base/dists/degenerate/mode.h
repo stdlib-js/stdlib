@@ -28,9 +28,6 @@ extern "C" {
 
 /**
 * Returns the mode of a degenerate distribution with constant value `mu`.
-*
-* @param mu   constant value of the distribution
-* @return     mode of the distribution
 */
 double stdlib_base_dists_degenerate_mode( const double mu );
 
