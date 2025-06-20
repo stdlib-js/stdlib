@@ -156,18 +156,17 @@ y = gammainc( 2.0, 0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var gammainc = require( '@stdlib/math/base/special/gammainc' );
 
-var i;
-var x;
-var s;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, 0.0, 10.0, opts );
+var s = uniform( 100, 0.0, 10.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = randu() * 10.0;
-    s = randu() * 10.0;
-    console.log( 'x: %d, \t s: %d, \t f(x,s): %d', x.toFixed( 4 ), s.toFixed( 4 ), gammainc( x, s ).toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, \t s: %0.4f, \t f(x,s): %0.4f', x, s, gammainc );
 ```
 
 </section>

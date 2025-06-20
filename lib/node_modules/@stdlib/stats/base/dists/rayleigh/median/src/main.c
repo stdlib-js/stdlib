@@ -18,8 +18,8 @@
 
 #include "stdlib/stats/base/dists/rayleigh/median.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/math/base/special/sqrt.h"
-#include "stdlib/constants/float64/ln_two.h"
+
+static const double SQRT2LN2 = 1.1774100225154747; // sqrt(2*ln(2))
 
 /**
 * Returns the median of a Rayleigh distribution.
@@ -35,5 +35,5 @@ double stdlib_base_dists_rayleigh_median( const double sigma ) {
 	if ( stdlib_base_is_nan( sigma ) || sigma < 0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	return sigma * stdlib_base_sqrt( 2.0 * STDLIB_CONSTANT_FLOAT64_LN2 );
+	return sigma * SQRT2LN2;
 }

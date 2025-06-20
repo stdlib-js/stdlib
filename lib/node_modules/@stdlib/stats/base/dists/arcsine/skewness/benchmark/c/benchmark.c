@@ -19,6 +19,7 @@
 #include "stdlib/stats/base/dists/arcsine/skewness.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include <time.h>
 #include <sys/time.h>
 
