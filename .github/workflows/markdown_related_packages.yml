@@ -135,13 +135,17 @@ jobs:
           make markdown-related-files FILES="${files}"
           make markdown-pkg-urls-files FILES="${files}"
 
-          if [[ -z "$(git status --porcelain)" ]]; then
-            # If no files were changed, exit with a success status code:
+          # Stage *all* tracked and untracked changes first...
+          git add -A
+
+          # If the index is identical to HEAD, nothing really changed:
+          if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
+
+            # Exit with a success status code:
             exit 0
           else
-            # Otherwise, add changed files to the staging area and commit:
-            git add -A && git commit -m "docs: update related packages sections"
+            git commit -m "docs: update related packages sections"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
         timeout-minutes: 10
