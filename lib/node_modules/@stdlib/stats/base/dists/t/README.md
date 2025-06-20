@@ -67,7 +67,7 @@ The namespace contains the following functions for calculating distribution prop
 -   <span class="signature">[`median( v )`][@stdlib/stats/base/dists/t/median]</span><span class="delimiter">: </span><span class="description">Student's t distribution median.</span>
 -   <span class="signature">[`mode( v )`][@stdlib/stats/base/dists/t/mode]</span><span class="delimiter">: </span><span class="description">Student's t distribution mode.</span>
 -   <span class="signature">[`skewness( v )`][@stdlib/stats/base/dists/t/skewness]</span><span class="delimiter">: </span><span class="description">Student's t distribution skewness.</span>
--   <span class="signature">[`stdev( v )`][@stdlib/stats/base/dists/t/stdev]</span><span class="delimiter">: </span><span class="description">Student's t distribution variance.</span>
+-   <span class="signature">[`stdev( v )`][@stdlib/stats/base/dists/t/stdev]</span><span class="delimiter">: </span><span class="description">Student's t distribution standard deviation.</span>
 -   <span class="signature">[`variance( v )`][@stdlib/stats/base/dists/t/variance]</span><span class="delimiter">: </span><span class="description">Student's t distribution variance.</span>
 
 </div>

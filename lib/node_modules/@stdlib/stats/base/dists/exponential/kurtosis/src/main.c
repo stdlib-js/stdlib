@@ -26,7 +26,7 @@
 * @return          excess kurtosis
 *
 * @example
-* double y = stdlib_base_exponential_kurtosis( 9.0 );
+* double y = stdlib_base_dists_exponential_kurtosis( 9.0 );
 * // returns 6.0
 */
 double stdlib_base_dists_exponential_kurtosis( const double lambda ) {
