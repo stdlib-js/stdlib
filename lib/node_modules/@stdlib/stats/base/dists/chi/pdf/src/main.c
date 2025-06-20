@@ -32,7 +32,7 @@
 *
 * @example
 * double y = stdlib_base_dists_chi_pdf( 2.0, 2.0 );
-* // returns ~0.270
+* // returns ~0.2707
 */
 double stdlib_base_dists_chi_pdf( const double x, const double k ) {
 	double out;

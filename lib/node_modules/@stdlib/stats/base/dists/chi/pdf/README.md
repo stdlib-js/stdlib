@@ -169,7 +169,7 @@ Evaluates the [probability density function][pdf] (PDF) for a [chi][chi-distribu
 
 ```c
 double out = stdlib_base_dists_chi_pdf( 2.0, 2.0 );
-// returns ~0.270
+// returns ~0.2707
 ```
 
 The function accepts the following arguments:
