@@ -62,8 +62,7 @@
         "@stdlib/math/base/special/pow",
         "@stdlib/math/base/special/ln",
         "@stdlib/constants/float64/ninf",
-        "@stdlib/constants/float64/nan",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/nan"
       ]
     },
     {

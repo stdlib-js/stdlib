@@ -26,7 +26,11 @@ limitations under the License.
 
 <section class="intro">
 
-TODO: add introduction
+A Z-test commonly refers to a one-sample location test which compares the mean of a set of measurements `X` to a given constant when the standard deviation is known. A Z-test supports testing three different null hypotheses `H0`:
+
+-   `H0: μ ≥ μ0` versus the alternative hypothesis `H1: μ < μ0`.
+-   `H0: μ ≤ μ0` versus the alternative hypothesis `H1: μ > μ0`.
+-   `H0: μ = μ0` versus the alternative hypothesis `H1: μ ≠ μ0`.
 
 </section>
 
@@ -149,6 +153,10 @@ var bool = ( out === results );
 <!-- /.usage -->
 
 <section class="notes">
+
+## Notes
+
+-   As a general rule of thumb, a Z-test is most reliable when `N >= 50`. For smaller sample sizes or when the standard deviation is unknown, prefer a t-test.
 
 </section>
 
