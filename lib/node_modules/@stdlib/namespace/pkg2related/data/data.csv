@@ -3054,6 +3054,7 @@
 "@stdlib/array/to-strided-iterator","@stdlib/array/from-iterator,@stdlib/array/to-iterator"
 "@stdlib/streams/node/from-strided-array","@stdlib/streams/node/from-array"
 "@stdlib/buffer/from-string","@stdlib/buffer/ctor,@stdlib/buffer/from-array,@stdlib/buffer/from-arraybuffer,@stdlib/buffer/from-buffer"
+"@stdlib/dstructs/struct",""
 "@stdlib/ndarray/sub2ind","@stdlib/ndarray/array,@stdlib/ndarray/ctor,@stdlib/ndarray/ind2sub"
 "@stdlib/string/substring-after","@stdlib/string/substring-before,@stdlib/string/substring-before-last,@stdlib/string/substring-after-last"
 "@stdlib/string/substring-after-last","@stdlib/string/substring-before,@stdlib/string/substring-before-last,@stdlib/string/substring-after"

@@ -142,7 +142,7 @@ interface Routine {
 	* var bool = ( out === results );
 	* // returns true
 	*/
-	( N: number, alternative: Alternative, alpha: number, mu: number, sigma: number, x: Float64Array, strideX: number, out: BaseResults ): Results;
+	<T extends BaseResults>( N: number, alternative: Alternative, alpha: number, mu: number, sigma: number, x: Float64Array, strideX: number, out: T ): Results;
 
 	/**
 	* Computes a one-sample Z-test for a double-precision floating-point strided array using alternative indexing semantics.
@@ -171,7 +171,7 @@ interface Routine {
 	* var bool = ( out === results );
 	* // returns true
 	*/
-	ndarray( N: number, alternative: Alternative, alpha: number, mu: number, sigma: number, x: Float64Array, strideX: number, offsetX: number, out: BaseResults ): Results;
+	ndarray<T extends BaseResults>( N: number, alternative: Alternative, alpha: number, mu: number, sigma: number, x: Float64Array, strideX: number, offsetX: number, out: T ): Results;
 }
 
 /**

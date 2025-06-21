@@ -30,7 +30,7 @@ interface Results<T> {
 	/**
 	* Alternative hypothesis.
 	*/
-	alternative?: string;
+	alternative?: number;
 
 	/**
 	* Significance level.
@@ -85,7 +85,7 @@ declare class Struct<T> {
 	/**
 	* Alternative hypothesis.
 	*/
-	alternative: string;
+	alternative: number;
 
 	/**
 	* Significance level.
@@ -116,11 +116,6 @@ declare class Struct<T> {
 	* Standard error of the mean.
 	*/
 	sd: number;
-
-	/**
-	* Test method.
-	*/
-	method: string;
 }
 
 /**

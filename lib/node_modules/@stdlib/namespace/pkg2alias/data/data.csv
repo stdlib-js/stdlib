@@ -3054,6 +3054,7 @@
 "@stdlib/array/to-strided-iterator",stridedarray2iterator
 "@stdlib/streams/node/from-strided-array",stridedArrayStream
 "@stdlib/buffer/from-string",string2buffer
+"@stdlib/dstructs/struct",structFactory
 "@stdlib/ndarray/sub2ind",sub2ind
 "@stdlib/string/substring-after",substringAfter
 "@stdlib/string/substring-after-last",substringAfterLast

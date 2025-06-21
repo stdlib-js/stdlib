@@ -19,6 +19,11 @@
 // TypeScript Version: 4.1
 
 /**
+* Alternative hypothesis.
+*/
+type Alternative = 'two-sided' | 'greater' | 'less';
+
+/**
 * Interface describing test results.
 */
 interface Results {
@@ -30,7 +35,7 @@ interface Results {
 	/**
 	* Alternative hypothesis.
 	*/
-	alternative?: string;
+	alternative?: Alternative;
 
 	/**
 	* Significance level.
@@ -85,7 +90,7 @@ declare class ResultsStruct {
 	/**
 	* Alternative hypothesis.
 	*/
-	alternative: string;
+	alternative: Alternative;
 
 	/**
 	* Significance level.

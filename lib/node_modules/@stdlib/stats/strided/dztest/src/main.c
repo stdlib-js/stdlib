@@ -22,6 +22,7 @@
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
 #include "stdlib/stats/strided/dmean.h"
+#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/stats/base/dists/normal/cdf.h"
@@ -68,7 +69,15 @@ void API_SUFFIX(stdlib_strided_dztest_ndarray)( const CBLAS_INT N, const enum ST
 	double *ci;
 	double q;
 
-	if ( N <= 0 || sigma <= 0.0 || alpha < 0.0 || alpha > 1.0 ) {
+	if (
+		N <= 0 ||
+		stdlib_base_is_nan( alpha ) ||
+		stdlib_base_is_nan( mu ) ||
+		stdlib_base_is_nan( sigma ) ||
+		sigma <= 0.0 ||
+		alpha < 0.0 ||
+		alpha > 1.0
+	) {
 		results->rejected = false;
 		results->alternative = alternative;
 
