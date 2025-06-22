@@ -147,13 +147,104 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
-<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+<!-- C interface documentation. -->
 
-<section class="references">
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
 
 </section>
 
-<!-- /.references -->
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/hypergeometric/mode.h"
+```
+
+#### stdlib_base_dists_hypergeometric_mode( N, K, n )
+
+Returns the mode of a hypergeometric distribution.
+
+```c
+double out = stdlib_base_dists_hypergeometric_mode( 16, 11, 4 );
+// returns 3.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] int32_t` population size.
+-   **K**: `[in] int32_t` subpopulation size.
+-   **n**: `[in] int32_t` number of draws.
+
+```c
+double stdlib_base_dists_hypergeometric_mode( const int32_t N, const int32_t K, const int32_t n );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/hypergeometric/mode.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdint.h>
+
+static int32_t random_int( const int32_t min, const int32_t max ) {
+    int32_t v = rand() % ( max - min + 1 );
+    return min + v;
+}
+
+int main( void ) {
+    int32_t N;
+    int32_t K;
+    int32_t n;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        N = random_int( 1, 20 );
+        K = random_int( 0, N );
+        n = random_int( 0, K );
+        y = stdlib_base_dists_hypergeometric_mode( N, K, n );
+        printf( "N: %d, K: %d, n: %d, mode(X;N,K,n): %.4f\n", N, K, n, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
