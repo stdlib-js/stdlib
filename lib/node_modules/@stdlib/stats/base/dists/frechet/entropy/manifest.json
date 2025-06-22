@@ -58,8 +58,7 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/eulergamma",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/eulergamma"
       ]
     },
     {
@@ -76,8 +75,7 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/eulergamma",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/eulergamma"
       ]
     }
   ]
