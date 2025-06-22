@@ -160,7 +160,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_gumbel_logcdf( x, mu, beta )
 
-Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [Gumbel][gumbel-distribution] distribution with parameters `mu` (location parameter) and `beta > 0` (scale parameter).```
+Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [Gumbel][gumbel-distribution] distribution with parameters `mu` (location parameter) and `beta > 0` (scale parameter).
 
 ```c
 double out = stdlib_base_dists_gumbel_logpdf( 0.0, 0.0, 2.0 );

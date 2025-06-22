@@ -33,7 +33,7 @@
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/ln_sqrt_two_pi.h"
 #include "stdlib/constants/float64/pinf.h"
-#include "stdlib//constants/float64/ninf.h"
+#include "stdlib/constants/float64/ninf.h"
 #include <stdint.h>
 
 static const double ALGMCS[ 15 ] = {

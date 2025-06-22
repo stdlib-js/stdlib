@@ -43,8 +43,7 @@
         "@stdlib/math/base/special/erfc",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/ninf",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/ninf"
       ]
     },
     {
@@ -63,8 +62,7 @@
         "@stdlib/math/base/special/erfc",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/ninf",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/ninf"
       ]
     },
     {
@@ -83,8 +81,7 @@
         "@stdlib/math/base/special/erfc",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/ninf",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/ninf"
       ]
     }
   ]

@@ -59,8 +59,6 @@
 #include "stdlib/constants/float32/pinf.h"
 #include "stdlib/constants/float32/pi.h"
 
-// MAIN //
-
 /**
 * Computes the angle in the plane (in radians) between the positive x-axis and the ray from `(0,0)` to the point `(x,y)` as a single-precision floating-point number.
 *

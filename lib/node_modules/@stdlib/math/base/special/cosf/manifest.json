@@ -39,6 +39,7 @@
         "@stdlib/math/base/napi/unary",
         "@stdlib/number/float32/base/to-word",
         "@stdlib/constants/float64/half-pi",
+        "@stdlib/constants/float32/abs-mask",
         "@stdlib/constants/float32/exponent-mask",
         "@stdlib/math/base/special/kernel-cosf",
         "@stdlib/math/base/special/kernel-sinf",
@@ -58,6 +59,7 @@
       "dependencies": [
         "@stdlib/number/float32/base/to-word",
         "@stdlib/constants/float64/half-pi",
+        "@stdlib/constants/float32/abs-mask",
         "@stdlib/constants/float32/exponent-mask",
         "@stdlib/math/base/special/kernel-cosf",
         "@stdlib/math/base/special/kernel-sinf",
@@ -77,6 +79,7 @@
       "dependencies": [
         "@stdlib/number/float32/base/to-word",
         "@stdlib/constants/float64/half-pi",
+        "@stdlib/constants/float32/abs-mask",
         "@stdlib/constants/float32/exponent-mask",
         "@stdlib/math/base/special/kernel-cosf",
         "@stdlib/math/base/special/kernel-sinf",
