@@ -26,7 +26,7 @@
 * @return         evaluated value
 *
 * @example
-* double y = stdlib_base_beta_mean( 1.0, 1.0 );
+* double y = stdlib_base_dists_beta_mean( 1.0, 1.0 );
 * // returns 0.5
 */
 double stdlib_base_dists_beta_mean( const double alpha, const double beta ) {

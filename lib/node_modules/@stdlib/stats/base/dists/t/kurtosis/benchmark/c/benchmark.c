@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/stats/base/dists/t/kurtosis.h"
-#include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -100,7 +99,7 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		v[ i ] = random_uniform( 0.0, 20.0 ) + 2.0 + STDLIB_CONSTANT_FLOAT64_EPS;
+		v[ i ] = random_uniform( 2.0, 22.0 );
 	}
 
 	t = tic();

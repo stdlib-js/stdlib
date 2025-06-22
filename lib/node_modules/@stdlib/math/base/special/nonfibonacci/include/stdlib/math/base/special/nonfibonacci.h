@@ -32,7 +32,7 @@ extern "C"
 /**
 * Computes the nth non-Fibonacci number.
 */
-double stdlib_base_nonfibonacci( const int32_t x );
+double stdlib_base_nonfibonacci( const int32_t n );
 
 #ifdef __cplusplus
 }

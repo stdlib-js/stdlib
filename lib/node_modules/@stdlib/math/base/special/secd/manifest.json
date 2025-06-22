@@ -37,8 +37,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/special/deg2rad",
-        "@stdlib/math/base/special/cos"
+        "@stdlib/math/base/special/cosd"
       ]
     },
     {
@@ -52,8 +51,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/deg2rad",
-        "@stdlib/math/base/special/cos"
+        "@stdlib/math/base/special/cosd"
       ]
     },
     {
@@ -67,8 +65,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/deg2rad",
-        "@stdlib/math/base/special/cos"
+        "@stdlib/math/base/special/cosd"
       ]
     }
   ]

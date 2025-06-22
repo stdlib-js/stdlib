@@ -40,7 +40,7 @@ f(x;\mu,\sigma,a,b) =  \begin{cases} \frac{\frac{1}{\sigma}\phi(\frac{x - \mu}{\
 
 <!-- </equation> -->
 
-where `Phi` and `phi` denote the [cumulative distribution function][cdf] and [density function][pdf] of the [normal][normal-distribution] distribution, respectively, `mu` is the location  and `sigma > 0` is the scale parameter of the distribution. `a` and `b` are the minimum and maximum support.
+where `Phi` and `phi` denote the [cumulative distribution function][cdf] and [density function][pdf] of the [normal][normal-distribution] distribution, respectively, `mu` is the location and `sigma > 0` is the scale parameter of the distribution. `a` and `b` are the minimum and maximum support.
 
 </section>
 

@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#include <sys/time.h>
 #include "stdlib/stats/base/dists/t/mode.h"
+#include <sys/time.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
