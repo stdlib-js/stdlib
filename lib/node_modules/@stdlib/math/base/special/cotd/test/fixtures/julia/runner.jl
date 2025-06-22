@@ -19,7 +19,7 @@
 import JSON
 
 """
-    gen( domain, name )
+	gen( domain, name )
 
 Generate fixture data and write to file.
 
@@ -62,9 +62,9 @@ file = @__FILE__;
 dir = dirname( file );
 
 # Generate fixture data for negative values:
-x = range( -1.0, stop = -10.0, length = 1000 );
+x = range( -179.0, stop = 0.0, length = 1000 );
 gen( x, "negative.json" );
 
 # Generate fixture data for positive values:
-x = range( 1.0, stop = 10.0, length = 1000 );
+x = range( 0.0, stop = 179.0, length = 1000 );
 gen( x, "positive.json" );

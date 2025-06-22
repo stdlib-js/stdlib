@@ -50,7 +50,7 @@ duration = ms2duration( 3600000 );
 
 ## Notes
 
--   A duration string is a string containing a sequence of time units. A time unit is a non-negative integer followed by a unit identifier. The following unit identifiers are supported:
+-   A duration string is a string containing a sequence of time units. A time unit is a nonnegative integer followed by a unit identifier. The following unit identifiers are supported:
 
     -   `d`: days
     -   `h`: hours

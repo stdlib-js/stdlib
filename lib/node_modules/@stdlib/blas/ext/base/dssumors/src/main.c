@@ -48,34 +48,38 @@ double API_SUFFIX(stdlib_strided_dssumors_ndarray)( const CBLAS_INT N, const flo
 	CBLAS_INT i;
 	double sum;
 
-	sum = 0.0;
 	if ( N <= 0 ) {
-		return sum;
+		return 0.0;
 	}
 	ix = offsetX;
 	if ( strideX == 0 ) {
 		return N * X[ ix ];
 	}
+	sum = X[ ix ];
+	ix += strideX;
+
 	// If the stride is equal to `1`, use unrolled loops...
 	if ( strideX == 1 ) {
-		m = N % 6;
+		m = (N-1) % 6;
 
 		// If we have a remainder, run a clean-up loop...
 		if ( m > 0 ) {
 			for ( i = 0; i < m; i++ ) {
-				sum += (double)X[ i ];
+				sum += (double)X[ ix ];
+				ix += strideX;
 			}
 		}
 		if ( N < 6 ) {
 			return sum;
 		}
-		for ( i = m; i < N; i += 6 ) {
-			sum += (double)X[i] + (double)X[i+1] + (double)X[i+2] + (double)X[i+3] + (double)X[i+4] + (double)X[i+5];
+		for ( i = m; i < N-1; i += 6 ) {
+			sum += (double)X[ix] + (double)X[ix+1] + (double)X[ix+2] + (double)X[ix+3] + (double)X[ix+4] + (double)X[ix+5];
+			ix += 6;
 		}
 		return sum;
 	}
 
-	for ( i = 0; i < N; i++ ) {
+	for ( i = 1; i < N; i++ ) {
 		sum += (double)X[ ix ];
 		ix += strideX;
 	}
