@@ -19,5 +19,4 @@
 #include "stdlib/stats/base/dists/binomial/kurtosis.h"
 #include "stdlib/math/base/napi/binary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_ID_D( stdlib_base_dists_binomial_kurtosis );

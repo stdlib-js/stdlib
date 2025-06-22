@@ -40,7 +40,6 @@
       "dependencies": [
         "@stdlib/math/base/napi/ternary",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/constants/float64/eps",
         "@stdlib/math/base/special/sinpi",
         "@stdlib/constants/float64/pi",
         "@stdlib/math/base/special/ln",
@@ -60,7 +59,6 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/constants/float64/eps",
         "@stdlib/math/base/special/sinpi",
         "@stdlib/constants/float64/pi",
         "@stdlib/math/base/special/ln",
@@ -80,7 +78,6 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/constants/float64/eps",
         "@stdlib/math/base/special/sinpi",
         "@stdlib/constants/float64/pi",
         "@stdlib/math/base/special/ln",

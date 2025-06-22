@@ -19,5 +19,4 @@
 #include "stdlib/math/base/napi/ternary.h"
 #include "stdlib/stats/base/dists/triangular/mode.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DDD_D( stdlib_base_dists_triangular_mode )

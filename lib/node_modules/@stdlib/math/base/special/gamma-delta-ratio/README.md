@@ -56,18 +56,17 @@ y = gammaDeltaRatio( 100.0, 0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var gammaDeltaRatio = require( '@stdlib/math/base/special/gamma-delta-ratio' );
 
-var delta;
-var z;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var z = uniform( 100, 0.0, 10.0, opts );
+var delta = uniform( 100, 0.0, 10.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    z = randu()*10.0;
-    delta = randu()*10.0;
-    console.log( 'gamma( %d ) / gamma( %d + %d ) = %d', z, z, delta, gammaDeltaRatio( z, delta ) );
-}
+logEachMap( 'gamma( %0.4f ) / gamma( %0.4f + %0.4f ) = %0.4f', z, z, delta, gammaDeltaRatio );
 ```
 
 </section>

@@ -149,7 +149,7 @@ var opts = {
 var n = discreteUniform( 100, -10, 30, opts );
 var k = discreteUniform( 100, 0, 20, opts );
 
-logEachMap( 'ln( %d choose %d ) = %d', n, k, binomcoefln );
+logEachMap( 'ln( %d choose %d ) = %0.4f', n, k, binomcoefln );
 ```
 
 </section>

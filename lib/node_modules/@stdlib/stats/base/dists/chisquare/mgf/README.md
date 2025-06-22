@@ -131,20 +131,17 @@ y = mymgf( 0.4 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mgf = require( '@stdlib/stats/base/dists/chisquare/mgf' );
 
-var t;
-var k;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var t = uniform( 10, 0.0, 0.5, opts );
+var k = uniform( 10, 0.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    t = randu() * 0.5;
-    k = randu() * 10.0;
-    y = mgf( t, k );
-    console.log( 'x: %d, k: %d, M_X(t;k): %d', t.toFixed( 4 ), k.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, k: %0.4f, M_X(t;k): %0.4f', t, k, mgf );
 ```
 
 </section>

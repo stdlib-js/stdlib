@@ -1,0 +1,122 @@
+
+{{alias}}( prng, idtypes, odtypes, policies[, options] )
+    Returns an interface for creating ndarrays filled with pseudorandom values
+    drawn from a unary PRNG.
+
+    Parameters
+    ----------
+    prng: Function
+        Unary pseudorandom value generator.
+
+    idtypes: Array<string>
+        List of supported input data types.
+
+    odtypes: Array<string>
+        List of supported output data types.
+
+    policies: Object
+        Interface policies. Must have the following properties:
+
+        - output: output data type policy.
+
+    options: Object (optional)
+        Function options.
+
+    options.order: string (optional)
+        Default memory layout.
+
+    Returns
+    -------
+    out: Object
+        Instance having methods for generating pseudorandom values.
+
+    Examples
+    --------
+    > var dts = [ 'float64', 'float32', 'generic' ];
+    > var p = { 'output': 'real_floating_point_and_generic' };
+    > var r = {{alias:@stdlib/random/base/exponential}};
+    > var out = new {{alias}}( r, dts, dts, p );
+
+
+{{alias}}.prototype.generate( shape, param1[, options] )
+    Returns an ndarray filled with pseudorandom values drawn from a unary PRNG.
+
+    Parameters
+    ----------
+    shape: Array<integer>
+        Output shape.
+
+    param1: ndarray|any
+        PRNG parameter. If an ndarray, must be broadcast compatible with the
+        specified output shape.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output data type. Setting this option overrides the output data type
+        policy.
+
+    options.order: string (optional)
+        Output memory layout. Setting this option overrides the default memory
+        layout order.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed ndarray dimensions.
+
+    options.submode: string (optional)
+        Specifies how to handle subscripts which exceed ndarray dimensions on a
+        per dimension basis.
+
+    options.readonly: string (optional)
+        Boolean indicating whether an ndarray should be read-only.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var dts = [ 'float64', 'float32', 'generic' ];
+    > var p = { 'output': 'real_floating_point_and_generic' };
+    > var r = {{alias:@stdlib/random/base/exponential}};
+    > var f = new {{alias}}( r, dts, dts, p );
+    > var y = f.generate( [ 2, 2 ], 2.0 );
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [...]
+
+
+{{alias}}.prototype.assign( param1, out )
+    Fills an ndarray with pseudorandom values drawn from a unary PRNG.
+
+    Parameters
+    ----------
+    param1: ndarray|any
+        PRNG parameter. If an ndarray, must be broadcast compatible with the
+        output ndarray.
+
+    out: ndarray
+        Output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var dts = [ 'float64', 'float32', 'generic' ];
+    > var p = { 'output': 'real_floating_point_and_generic' };
+    > var r = {{alias:@stdlib/random/base/exponential}};
+    > var f = new {{alias}}( r, dts, dts, p );
+    > var out = {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ] );
+    > var y = f.assign( 2.0, out );
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [...]
+    > var bool = ( out === y )
+    true
+
+    See Also
+    --------
+
