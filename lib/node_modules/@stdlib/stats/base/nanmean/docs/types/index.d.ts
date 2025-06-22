@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `nanmean`.
@@ -31,7 +36,7 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns arithmetic mean
 	*
 	* @example
@@ -40,15 +45,15 @@ interface Routine {
 	* var v = nanmean( x.length, x, 1 );
 	* // returns ~0.3333
 	*/
-	( N: number, x: NumericArray, stride: number ): number;
+	( N: number, x: InputArray, strideX: number ): number;
 
 	/**
 	* Computes the arithmetic mean of a strided array, ignoring `NaN` values and using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns arithmetic mean
 	*
 	* @example
@@ -57,7 +62,7 @@ interface Routine {
 	* var v = nanmean.ndarray( x.length, x, 1, 0 );
 	* // returns ~0.3333
 	*/
-	ndarray( N: number, x: NumericArray, stride: number, offset: number ): number;
+	ndarray( N: number, x: InputArray, strideX: number, offsetX: number ): number;
 }
 
 /**
@@ -65,7 +70,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns arithmetic mean
 *
 * @example

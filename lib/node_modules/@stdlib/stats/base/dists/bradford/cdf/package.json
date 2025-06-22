@@ -53,17 +53,12 @@
     "stdmath",
     "statistics",
     "stats",
+    "cumulative",
     "distribution",
     "dist",
     "bradford",
-    "bradford-distribution",
-    "parameter",
-    "shape-parameter",
     "continuous",
     "skewed",
-    "cdf",
-    "cumulative",
-    "cumulative-distribution",
-    "cumulative-distribution-function"
+    "cdf"
   ]
 }

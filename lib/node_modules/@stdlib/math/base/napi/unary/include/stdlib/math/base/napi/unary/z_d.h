@@ -51,17 +51,17 @@
 		napi_env env,                                                          \
 		napi_value exports                                                     \
 	) {                                                                        \
-		napi_value fcn;                                                        \
+		napi_value f;                                                          \
 		napi_status status = napi_create_function(                             \
 			env,                                                               \
 			"exports",                                                         \
 			NAPI_AUTO_LENGTH,                                                  \
 			stdlib_math_base_napi_z_d_wrapper,                                 \
 			NULL,                                                              \
-			&fcn                                                               \
+			&f                                                                 \
 		);                                                                     \
 		assert( status == napi_ok );                                           \
-		return fcn;                                                            \
+		return f;                                                              \
 	};                                                                         \
 	NAPI_MODULE( NODE_GYP_MODULE_NAME, stdlib_math_base_napi_z_d_init )
 

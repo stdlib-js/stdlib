@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/atand",
   "version": "0.0.0",
-  "description": "Compute the arctangent(in degrees) of a double-precision floating-point number.",
+  "description": "Compute the arctangent (in degrees) of a double-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

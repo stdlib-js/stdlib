@@ -56,13 +56,8 @@
     "distribution",
     "dist",
     "bradford",
-    "bradford-distribution",
-    "parameter",
-    "shape-parameter",
     "continuous",
     "skewed",
-    "mode",
-    "mode-value",
-    "mode-location"
+    "mode"
   ]
 }
