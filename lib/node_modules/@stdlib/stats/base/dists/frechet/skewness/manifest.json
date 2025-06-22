@@ -59,9 +59,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/pow",
-       "@stdlib/math/base/special/gamma",
-        "@stdlib/constants/float64/pinf",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/constants/float64/pinf"
       ]
     },
     {
@@ -78,9 +77,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/pow",
-         "@stdlib/math/base/special/gamma",
-        "@stdlib/constants/float64/pinf",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/constants/float64/pinf"
       ]
     }
   ]

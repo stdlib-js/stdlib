@@ -3054,6 +3054,7 @@ strided.trunc,"strided.ceil,base.strided.dtrunc,strided.floor,base.strided.strun
 stridedarray2iterator,"iterator2array,array2iterator"
 stridedArrayStream,"arrayStream"
 string2buffer,"Buffer,array2buffer,arraybuffer2buffer,copyBuffer"
+structFactory,""
 sub2ind,"array,ndarray,ind2sub"
 substringAfter,"substringBefore,substringBeforeLast,substringAfterLast"
 substringAfterLast,"substringBefore,substringBeforeLast,substringAfter"

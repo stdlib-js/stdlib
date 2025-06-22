@@ -21,7 +21,6 @@
 #include "stdlib/math/base/special/gamma.h"
 #include "stdlib/constants/float64/eps.h"
 
-
 /**
 * Evaluates the moment-generating function (MGF) for a Weibull distribution with shape `k` and scale `lambda` at a value `t`.
 *

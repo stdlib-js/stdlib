@@ -136,18 +136,22 @@ var v = nanmskrange.ndarray( 4, x, 2, 1, mask, 2, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/array/uniform' );
-var bernoulli = require( '@stdlib/random/array/bernoulli' );
+var uniform = require( '@stdlib/random/base/uniform' );
+var bernoulli = require( '@stdlib/random/base/bernoulli' );
+var filledarrayBy = require( '@stdlib/array/filled-by' );
 var nanmskrange = require( '@stdlib/stats/base/nanmskrange' );
 
-var x = uniform( 10, -50.0, 50.0, {
-    'dtype': 'float64'
-});
+function rand() {
+    if ( bernoulli( 0.8 ) < 1 ) {
+        return NaN;
+    }
+    return uniform( -50.0, 50.0 );
+}
+
+var x = filledarrayBy( 10, 'float64', rand );
 console.log( x );
 
-var mask = bernoulli( x.length, 0.2, {
-    'dtype': 'uint8'
-});
+var mask = filledarrayBy( x.length, 'uint8', bernoulli.factory( 0.2 ) );
 console.log( mask );
 
 var v = nanmskrange( x.length, x, 1, mask, 1 );
