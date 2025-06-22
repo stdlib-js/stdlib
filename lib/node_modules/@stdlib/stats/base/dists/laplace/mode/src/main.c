@@ -27,7 +27,7 @@
 * @return      mode
 *
 * @example
-* double y = stdlib_base_laplace_mode( 0.0, 1.0 );
+* double y = stdlib_base_dists_laplace_mode( 0.0, 1.0 );
 * // returns 0.0
 */
 double stdlib_base_dists_laplace_mode( const double mu, const double b ) {

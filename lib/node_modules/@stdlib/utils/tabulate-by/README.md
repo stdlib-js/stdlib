@@ -56,8 +56,8 @@ var out = tabulateBy( arr, indicator );
 
 An `indicator` function is provided two arguments:
 
--   `value`: collection element
--   `index`: collection index
+-   `value`: collection element.
+-   `index`: collection index.
 
 ```javascript
 function indicator( v, i ) {
@@ -98,9 +98,9 @@ console.log( context.count );
 
 The returned frequency table is an `array` of `arrays`. Each sub-array corresponds to a unique value in the input `collection` and is structured as follows:
 
--   `0`: unique value
--   `1`: value count
--   `2`: frequency percentage
+-   `0`: unique value.
+-   `1`: value count.
+-   `2`: frequency percentage.
 
 </section>
 

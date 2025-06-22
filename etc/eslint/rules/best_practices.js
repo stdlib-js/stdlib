@@ -796,7 +796,7 @@ rules[ 'no-labels' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-line-blocks]{@link https://eslint.org/docs/rules/no-lone-blocks}
+* @see [no-lone-blocks]{@link https://eslint.org/docs/rules/no-lone-blocks}
 *
 * @example
 * // Bad...
@@ -1390,7 +1390,7 @@ rules[ 'no-useless-escape' ] = 'error';
 *     return;
 * }
 *
-*@ example
+* @example
 * // Good...
 * function foo( x ) {
 *     if ( x === x ) {

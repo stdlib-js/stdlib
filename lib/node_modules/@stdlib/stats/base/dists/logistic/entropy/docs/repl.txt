@@ -1,7 +1,7 @@
 
 {{alias}}( μ, s )
-    Returns the entropy of a logistic distribution with location parameter `μ`
-    and scale parameter `s`.
+    Returns the differential entropy of a logistic distribution with location
+    parameter `μ` and scale parameter `s`.
 
     If provided `NaN` as any argument, the function returns `NaN`.
 
@@ -18,7 +18,7 @@
     Returns
     -------
     out: number
-        Entropy.
+        Differential entropy.
 
     Examples
     --------
