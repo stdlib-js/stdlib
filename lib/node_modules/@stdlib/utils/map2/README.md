@@ -48,7 +48,7 @@ Applies a function to elements in two input arrays and assigns the results to a 
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 var x = [ 1, 2, 3, 4, 5, 6 ];
 var y = [ 1, 1, 1, 1, 1, 1 ];
@@ -61,7 +61,7 @@ The function accepts both array-like objects and [`ndarray`][@stdlib/ndarray/cto
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var array = require( '@stdlib/ndarray/array' );
 
 var opts = {
@@ -89,7 +89,7 @@ To set the `this` context when invoking the input function, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 function fcn( v1, v2 ) {
     this.count += 1;
@@ -118,7 +118,7 @@ Applies a function to elements in two input arrays and assigns the results to an
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 var x = [ 1, 2, 3, 4, 5, 6 ];
 var y = [ 1, 1, 1, 1, 1, 1 ];
@@ -134,7 +134,7 @@ The method accepts both array-like objects and [`ndarray`][@stdlib/ndarray/ctor]
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var array = require( '@stdlib/ndarray/array' );
 
 var opts = {
@@ -157,7 +157,7 @@ If input and output arrays are [`ndarray`][@stdlib/ndarray/ctor]-like objects, t
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var array = require( '@stdlib/ndarray/array' );
 
 var opts = {
@@ -245,7 +245,7 @@ The applied function is provided the same arguments as with [`map2`](#fcn-map2).
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var naryFunction = require( '@stdlib/utils/nary-function' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var array = require( '@stdlib/ndarray/array' );
 var map2 = require( '@stdlib/utils/map2' );
 

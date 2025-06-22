@@ -41,7 +41,7 @@ P( x, a ) = \frac{\gamma(a,x)}{\Gamma(a)} = \frac{1}{\Gamma(a)} \int_0^x t^{a-1}
 
 Specifically, for given `p` and `a` it finds the `x` such that `p =  P(x, a)`.
 
-The function can also be used to invert the upper incomplete gamma function, which is defined as follows:  
+The function can also be used to invert the upper incomplete gamma function, which is defined as follows:
 
 <!-- <equation class="equation" label="eq:upper_incomplete_gamma" align="center" raw="Q( x, a ) = \frac{\Gamma(a,x)}{\Gamma(a)} = \frac{1}{\Gamma(a)} \int_x^\infty t^{a-1} e^{-t} \; dt" alt="Regularized upper incomplete gamma function."> -->
 
@@ -119,18 +119,17 @@ y = gammaincinv( -0.5, 1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var gammaincinv = require( '@stdlib/math/base/special/gammaincinv' );
 
-var a;
-var i;
-var p;
+var opts = {
+    'dtype': 'float64'
+};
+var p = uniform( 100, 0.0, 1.0, opts );
+var a = uniform( 100, 0.0, 50.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    p = randu();
-    a = randu() * 50.0;
-    console.log( 'p: %d, \t a: %d, \t P^(-1)(p, a): %d', p.toFixed( 4 ), a.toFixed( 4 ), gammaincinv( p, a ).toFixed( 4 ) );
-}
+logEachMap( 'p: %0.4f, \t a: %0.4f, \t P^(-1)(p, a): %0.4f', p, a, gammaincinv );
 ```
 
 </section>

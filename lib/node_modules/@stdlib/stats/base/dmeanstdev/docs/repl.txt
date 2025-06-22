@@ -3,8 +3,8 @@
     Computes the mean and standard deviation of a double-precision floating-
     point strided array.
 
-    The `N` and `stride` parameters determine which elements are accessed at
-    runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
     array view.
@@ -33,13 +33,13 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     out: Float64Array
         Output array.
 
     strideOut: integer
-        Index increment for `out`.
+        Stride length for `out`.
 
     Returns
     -------
@@ -54,20 +54,19 @@
     > {{alias}}( x.length, 1, x, 1, out, 1 )
     <Float64Array>[ ~0.3333, ~2.0817 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] );
     > out = new {{alias:@stdlib/array/float64}}( 2 );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}( N, 1, x, 2, out, 1 )
+    > {{alias}}( 3, 1, x, 2, out, 1 )
     <Float64Array>[ ~0.3333, ~2.0817 ]
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, 1.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
     > out = new {{alias:@stdlib/array/float64}}( 2 );
-    > {{alias}}( N, 1, x1, 2, out, 1 )
+    > {{alias}}( 3, 1, x1, 2, out, 1 )
     <Float64Array>[ ~0.3333, ~2.0817 ]
+
 
 {{alias}}.ndarray( N, c, x, strideX, offsetX, out, strideOut, offsetOut )
     Computes the mean and standard deviation of a double-precision floating-
@@ -98,7 +97,7 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     offsetX: integer
         Starting index for `x`.
@@ -107,7 +106,7 @@
         Output array.
 
     strideOut: integer
-        Index increment for `out`.
+        Stride length for `out`.
 
     offsetOut: integer
         Starting index for `out`.
@@ -126,10 +125,9 @@
     <Float64Array>[ ~0.3333, ~2.0817 ]
 
     // Using offset parameter:
-    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, 1.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, 1.0 ] );
     > out = new {{alias:@stdlib/array/float64}}( 2 );
-    > {{alias}}.ndarray( N, 1, x, 2, 1, out, 1, 0 )
+    > {{alias}}.ndarray( 3, 1, x, 2, 1, out, 1, 0 )
     <Float64Array>[ ~0.3333, ~2.0817 ]
 
     See Also

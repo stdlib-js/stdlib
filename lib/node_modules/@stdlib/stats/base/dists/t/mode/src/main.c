@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/stats/base/dists/t/mode.h"
+#include "stdlib/math/base/assert/is_nan.h"
 
 /**
 * Evaluates the mode for a Student's t-distribution with degrees of freedom `v`.
