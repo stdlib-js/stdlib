@@ -1437,11 +1437,11 @@
 "@stdlib/stats/base/stdevwd",base.strided.stdevwd
 "@stdlib/stats/base/stdevyc",base.strided.stdevyc
 "@stdlib/math/strided/special/strunc",base.strided.strunc
-"@stdlib/stats/base/svariance",base.strided.svariance
+"@stdlib/stats/strided/svariance",base.strided.svariance
 "@stdlib/stats/strided/svariancech",base.strided.svariancech
 "@stdlib/stats/strided/svariancepn",base.strided.svariancepn
 "@stdlib/stats/strided/svariancetk",base.strided.svariancetk
-"@stdlib/stats/base/svariancewd",base.strided.svariancewd
+"@stdlib/stats/strided/svariancewd",base.strided.svariancewd
 "@stdlib/stats/strided/svarianceyc",base.strided.svarianceyc
 "@stdlib/strided/base/ternary",base.strided.ternary
 "@stdlib/strided/base/unary",base.strided.unary
