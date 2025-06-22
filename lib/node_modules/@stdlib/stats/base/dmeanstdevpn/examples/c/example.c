@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/stats/base/dmeanstdevpn.h"
-#include <stdint.h>
 #include <stdio.h>
 
 int main( void ) {
@@ -28,14 +27,14 @@ int main( void ) {
 	double out[] = { 0.0, 0.0 };
 
 	// Specify the number of elements:
-	int64_t N = 4;
+	const int N = 4;
 
 	// Specify the stride lengths:
-	int64_t strideX = 2;
-	int64_t strideOut = 1;
+	const int strideX = 2;
+	const int strideOut = 1;
 
 	// Compute the mean and standard deviation:
-	stdlib_strided_dmeanstdevpn( N, 1, x, strideX, out, strideOut );
+	stdlib_strided_dmeanstdevpn( N, 1.0, x, strideX, out, strideOut );
 
 	// Print the result:
 	printf( "sample mean: %lf\n", out[ 0 ] );

@@ -16,8 +16,6 @@
 * limitations under the License.
 */
 
-// MODULES //
-
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/pow.h"
 #include "stdlib/math/base/assert/is_infinite.h"
@@ -28,9 +26,6 @@
 #include "stdlib/number/float64/base/exponent.h"
 #include "stdlib/math/base/special/round.h"
 #include <stdint.h>
-
-
-// MAIN //
 
 /**
 * Rounds a double-precision floating-point number to the nearest value with `n` significant figures.
