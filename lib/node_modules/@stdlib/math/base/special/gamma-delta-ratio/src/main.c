@@ -37,7 +37,7 @@
 #include "stdlib/math/base/special/floor.h"
 #include "stdlib/math/base/special/gamma.h"
 #include "stdlib/math/base/special/factorial.h"
-#include "stdlib/constants/float64/max_safe_nth_factorial.h"
+#include "stdlib/constants/float64/max_nth_factorial.h"
 #include "stdlib/math/base/special/gamma_lanczos_sum.h"
 #include "stdlib/math/base/special/log1p.h"
 #include "stdlib/math/base/special/exp.h"
@@ -72,8 +72,8 @@ static double gammaDeltaRatioLanczos( const double z, const double delta ) {
 	double zgh;
 
 	if ( z < STDLIB_CONSTANT_FLOAT64_EPS ) {
-		if ( delta >= STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FACTORIAL ) {
-			ratio = gammaDeltaRatioLanczos( delta, STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FACTORIAL - delta );
+		if ( delta >= STDLIB_CONSTANT_FLOAT64_MAX_NTH_FACTORIAL ) {
+			ratio = gammaDeltaRatioLanczos( delta, STDLIB_CONSTANT_FLOAT64_MAX_NTH_FACTORIAL - delta );
 			ratio *= z;
 			ratio *= FACTORIAL_169;
 			return 1.0 / ratio;
@@ -135,7 +135,7 @@ double stdlib_base_gamma_delta_ratio( const double z, const double delta ) {
 		iz = stdlib_base_floor( z );
 		if ( iz == z ) {
 			// As both `z` and `delta` are integers, see if we can use a table lookup:
-			if ( z <= STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FACTORIAL && ( z + delta <= STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FACTORIAL ) ) {
+			if ( z <= STDLIB_CONSTANT_FLOAT64_MAX_NTH_FACTORIAL && ( z + delta <= STDLIB_CONSTANT_FLOAT64_MAX_NTH_FACTORIAL ) ) {
 				return stdlib_base_factorial( iz - 1.0 ) / stdlib_base_factorial( idelta + iz - 1.0 );
 			}
 		}

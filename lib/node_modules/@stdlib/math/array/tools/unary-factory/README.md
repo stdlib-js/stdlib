@@ -43,7 +43,7 @@ var policy = 'same';
 var unary = factory( abs, dtypes, dtypes, policy );
 ```
 
-The constructor has the following parameters:
+The function has the following parameters:
 
 -   **fcn**: unary function to apply.
 -   **idtypes**: list of supported input data types.

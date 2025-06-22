@@ -101,15 +101,18 @@ bool is_negative_zero( double x ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double x;
+	double x[ 100 ];
 	double t;
 	bool y;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 1.0e7*rand_double() ) - 5.0e6;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 1.0e7*rand_double() ) - 5.0e6;
-		y = is_negative_zero( x );
+		y = is_negative_zero( x[ i%100 ] );
 		if ( y != true && y != false ) {
 			printf( "should return true or false\n" );
 			break;

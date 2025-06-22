@@ -40,7 +40,6 @@
       "dependencies": [
         "@stdlib/math/base/napi/binary",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/exp",
         "@stdlib/constants/float64/eulergamma"
       ]
     },
@@ -56,9 +55,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/constants/float64/eps",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/exp",
         "@stdlib/constants/float64/eulergamma"
       ]
     },
@@ -75,7 +72,6 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/exp",
         "@stdlib/constants/float64/eulergamma"
       ]
     }
