@@ -229,8 +229,8 @@ var arr = Float64Array.from( [ 1.0, -1.0 ], mapFcn );
 
 A callback function is provided two arguments:
 
--   `value`: source value
--   `index`: source index
+-   `value`: source value.
+-   `index`: source index.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -363,9 +363,9 @@ var bool = arr.every( predicate );
 
 A `predicate` function is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -482,9 +482,9 @@ var arr2 = arr1.filter( predicate );
 
 A `predicate` function is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -544,9 +544,9 @@ var v = arr.find( predicate );
 
 A `predicate` function is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -607,9 +607,9 @@ var idx = arr.findIndex( predicate );
 
 A `predicate` function is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -662,9 +662,9 @@ console.log( str );
 
 The callback is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -885,9 +885,9 @@ var arr2 = arr1.map( fcn );
 
 A callback is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -949,10 +949,10 @@ var v = arr.reduce( fcn, 0.0 );
 
 A callback is provided four arguments:
 
--   `acc`: accumulated result
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `acc`: accumulated result.
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 <a name="method-reduce-right"></a>
 
@@ -992,10 +992,10 @@ var v = arr.reduce( fcn, 0.0 );
 
 A callback is provided four arguments:
 
--   `acc`: accumulated result
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `acc`: accumulated result.
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 <a name="method-reverse"></a>
 
@@ -1168,9 +1168,9 @@ var bool = arr.some( predicate );
 
 A `predicate` function is provided three arguments:
 
--   `value`: array element
--   `index`: array index
--   `arr`: array on which the method is invoked
+-   `value`: array element.
+-   `index`: array index.
+-   `arr`: array on which the method is invoked.
 
 To set the callback execution context, provide a `thisArg`.
 
