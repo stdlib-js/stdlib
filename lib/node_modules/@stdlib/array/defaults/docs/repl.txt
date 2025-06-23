@@ -28,9 +28,6 @@
     out.dtypes.complex_floating_point: string
         Default complex-valued floating-point data type.
 
-    out.dtypes.boolean: string
-        Default boolean data type.
-
     out.dtypes.integer: string
         Default integer data type.
 
@@ -39,6 +36,21 @@
 
     out.dtypes.unsigned_integer: string
         Default unsigned integer data type.
+
+    out.dtypes.boolean: string
+        Default boolean data type.
+
+    out.dtypes.index: string
+        Default index data type.
+
+    out.dtypes.integer_index: string
+        Default integer index data type.
+
+    out.dtypes.boolean_index: string
+        Default boolean index data type.
+
+    out.dtypes.mask_index: string
+        Default mask index data type.
 
     Examples
     --------

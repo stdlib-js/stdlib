@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the kurtosis of a gamma distribution.
+* Returns the excess kurtosis of a gamma distribution.
 */
 double stdlib_base_dists_gamma_kurtosis( const double alpha, const double beta );
 

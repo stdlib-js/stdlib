@@ -1,0 +1,114 @@
+
+{{alias}}( N, correction, x, strideX )
+    Computes the variance of a single-precision floating-point strided array
+    using a one-pass trial mean algorithm.
+
+    The `N` and stride parameters determine which elements in `x` are accessed
+    at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    correction: number
+        Degrees of freedom adjustment. Setting this parameter to a value other
+        than `0` has the effect of adjusting the divisor during the calculation
+        of the variance according to `N - c` where `c` corresponds to the
+        provided degrees of freedom adjustment. When computing the variance of a
+        population, setting this parameter to `0` is the standard choice (i.e.,
+        the provided array contains data constituting an entire population).
+        When computing the unbiased sample variance, setting this parameter to
+        `1` is the standard choice (i.e., the provided array contains data
+        sampled from a larger population; this is commonly referred to as
+        Bessel's correction).
+
+    x: Float32Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    Returns
+    -------
+    out: number
+        The variance.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 2.0 ] );
+    > {{alias}}( x.length, 1, x, 1 )
+    ~4.3333
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] );
+    > {{alias}}( 3, 1, x, 2 )
+    ~4.3333
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 3, 1, x1, 2 )
+    ~4.3333
+
+
+{{alias}}.ndarray( N, correction, x, strideX, offsetX )
+    Computes the variance of a single-precision floating-point strided array
+    using a one-pass trial mean algorithm and alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the `offset` parameter supports indexing semantics based on a
+    starting index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    correction: number
+        Degrees of freedom adjustment. Setting this parameter to a value other
+        than `0` has the effect of adjusting the divisor during the calculation
+        of the variance according to `N - c` where `c` corresponds to the
+        provided degrees of freedom adjustment. When computing the variance of a
+        population, setting this parameter to `0` is the standard choice (i.e.,
+        the provided array contains data constituting an entire population).
+        When computing the unbiased sample variance, setting this parameter to
+        `1` is the standard choice (i.e., the provided array contains data
+        sampled from a larger population; this is commonly referred to as
+        Bessel's correction).
+
+    x: Float32Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    Returns
+    -------
+    out: number
+        The variance.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 2.0 ] );
+    > {{alias}}.ndarray( x.length, 1, x, 1, 0 )
+    ~4.3333
+
+    // Using offset parameter:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ] );
+    > {{alias}}.ndarray( 3, 1, x, 2, 1 )
+    ~4.3333
+
+    See Also
+    --------
+
