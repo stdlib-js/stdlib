@@ -34,12 +34,12 @@ extern "C" {
 /**
 * Computes the L2-norm of a complex double-precision floating-point vector.
 */
-double API_SUFFIX(c_dznrm2)( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX );
+double API_SUFFIX(c_dznrm2)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX );
 
 /**
 * Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
 */
-double API_SUFFIX(c_dznrm2_ndarray)( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+double API_SUFFIX(c_dznrm2_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }

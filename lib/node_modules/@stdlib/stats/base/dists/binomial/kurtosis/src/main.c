@@ -41,5 +41,5 @@ double stdlib_base_dists_binomial_kurtosis( const int32_t n, const double p ) {
 		return 0.0 / 0.0;
 	}
 	const double pq = p * ( 1.0 - p );
-	return ( 1.0 - ( 6.0 * pq ) ) / ( n * pq );
+	return ( 1.0 - ( 6.0 * pq ) ) / ( (double)n * pq );
 }
