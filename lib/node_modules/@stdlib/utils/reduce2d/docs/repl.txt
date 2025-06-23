@@ -34,7 +34,7 @@
 
     Examples
     --------
-    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/math/base/ops/add}}, 2 );
+    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/number/float64/base/add}}, 2 );
     > var arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ] ];
     > var out = {{alias}}( arr, [ 0, 0 ], f )
     [ 6, 15 ]

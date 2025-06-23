@@ -73,7 +73,7 @@ def print_results(elapsed):
 def benchmark():
     """Run the benchmark and print benchmark results."""
     setup = "from scipy.special import gammasgn; from random import random;"
-    stmt = "y = gammasgn(171.0*random() - 0.0)"
+    stmt = "y = gammasgn(100.0*random() - 50.0)"
 
     t = timeit.Timer(stmt, setup=setup)
 

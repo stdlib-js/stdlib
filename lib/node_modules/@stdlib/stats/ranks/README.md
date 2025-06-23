@@ -47,7 +47,7 @@ out = ranks( arr );
 // Missing values are placed last:
 arr = [ null, 2, 2, 1, 4, 3, NaN, NaN ];
 out = ranks( arr );
-// returns [ 6, 2.5, 2.5, 1, 5, 4, 7 ,8 ]
+// returns [ 6, 2.5, 2.5, 1, 5, 4, 7, 8 ]
 ```
 
 The function accepts the following options:
@@ -100,7 +100,7 @@ var out = ranks( data, {
 out = ranks( data, {
     'missing': 'last'
 });
-// returns [ 6, 2.5, 2.5, 1, 5, 4, 7 ,8 ]
+// returns [ 6, 2.5, 2.5, 1, 5, 4, 7, 8 ]
 
 out = ranks( data, {
     'missing': 'remove'
@@ -142,9 +142,9 @@ var out;
 var i;
 
 // Plain arrays...
-data = new Array( 10 );
+data = [];
 for ( i = 0; i < data.length; i++ ) {
-    data[ i ] = round( randu()*10.0 );
+    data.push( round( randu()*10.0 ) );
 }
 
 out = ranks( data );
