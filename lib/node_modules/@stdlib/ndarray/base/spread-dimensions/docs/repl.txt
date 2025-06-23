@@ -1,0 +1,51 @@
+
+{{alias}}( ndims, x, dims )
+    Expands the shape of an array to a specified dimensionality by spreading its
+    dimensions to specified dimension indices and inserting dimensions of size
+    one for the remaining dimensions.
+
+    Each provided dimension index must reside on the interval [-ndims, ndims-1].
+
+    If provided a negative dimension index, the position at which to place a
+    respective dimension is computed as `ndims + index`.
+
+    Parameters
+    ----------
+    ndims: integer
+        Number of dimensions in the output array. Must be greater than or equal
+        to the number of dimensions in the input array.
+
+    x: ndarray
+        Input array.
+
+    dims: ArrayLikeObject<integer>
+        Dimension indices specifying where to place the dimensions of the input
+        array. Must resolve to normalized indices arranged in ascending order.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > var sh = x.shape
+    [ 2, 2 ]
+    > var y = {{alias}}( 5, x, [ 1, 3 ] )
+    <ndarray>
+    > sh = y.shape
+    [ 1, 2, 1, 2, 1 ]
+    > var v = y.get( 0, 0, 0, 0, 0 )
+    1
+    > v = y.get( 0, 0, 0, 1, 0 )
+    2
+    > v = y.get( 0, 1, 0, 0, 0 )
+    3
+    > v = y.get( 0, 1, 0, 1, 0 )
+    4
+
+    See Also
+    --------
+
