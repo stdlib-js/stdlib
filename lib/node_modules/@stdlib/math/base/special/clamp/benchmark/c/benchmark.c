@@ -108,15 +108,18 @@ double clamp( double v, double min, double max ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double x;
+	double x[ 100 ];
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 20.0*rand_double() ) - 10.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 20.0*rand_double() ) - 10.0;
-		y = clamp( x, -5.0, 5.0 );
+		y = clamp( x[ i%100 ], -5.0, 5.0 );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

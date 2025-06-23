@@ -25,7 +25,7 @@
 * Returns the differential entropy for a Gumbel distribution with location `mu` and scale `beta`.
 *
 * @param mu      location parameter
-* @param beta    sclae parameter
+* @param beta    scale parameter
 * @return        entropy
 *
 * @example

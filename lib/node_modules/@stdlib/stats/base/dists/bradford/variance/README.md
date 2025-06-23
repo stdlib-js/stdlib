@@ -101,16 +101,15 @@ v = variance( -1.5 );
 
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var variance = require( '@stdlib/stats/base/dists/bradford/variance' );
 
-var c = uniform( 10, 0.1, 10.0 );
+var opts = {
+    'dtype': 'float64'
+};
+var c = uniform( 10, 0.1, 10.0, opts );
 
-var v;
-var i;
-for ( i = 0; i < c.length; i++ ) {
-    v = variance( c[ i ] );
-    console.log( 'c: %d, Var(X;c): %d', c[ i ].toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'c: %0.4f, Var(X;c): %0.4f', c, variance );
 ```
 
 </section>

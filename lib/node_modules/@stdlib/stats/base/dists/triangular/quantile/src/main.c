@@ -21,7 +21,7 @@
 #include "stdlib/math/base/special/sqrt.h"
 
 /**
-* Evaluates the quantile function for a triangular distribution with parameters `a` (lower limit), `b` (upper limit) and `c` (mode).
+* Evaluates the quantile function for a triangular distribution with parameters `a` (lower limit), `b` (upper limit), and `c` (mode).
 *
 * @param p    input probability
 * @param a    minimum support
@@ -48,7 +48,7 @@ double stdlib_base_dists_triangular_quantile( const double p, const double a, co
 	}
 	double pInflection = ( c - a ) / ( b - a );
 	if ( p < pInflection ) {
-		return a + stdlib_base_sqrt( ( b - a ) * ( c - a) * p );
+		return a + stdlib_base_sqrt( ( b - a ) * ( c - a ) * p );
 	}
 	if ( p > pInflection ) {
 		return b - stdlib_base_sqrt( ( b - a ) * ( b - c ) * ( 1.0 - p ) );
