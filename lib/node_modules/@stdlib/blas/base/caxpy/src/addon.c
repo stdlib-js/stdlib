@@ -37,10 +37,10 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
 	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 5 );
-	STDLIB_NAPI_ARGV_COMPLEX64( env, ca, argv, 1 );
-	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, CX, N, strideX, argv, 2 );
-	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, CY, N, strideY, argv, 4 );
-	API_SUFFIX(c_caxpy)( N, ca, (void *)CX, strideX, (void *)CY, strideY );
+	STDLIB_NAPI_ARGV_COMPLEX64( env, alpha, argv, 1 );
+	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, X, N, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, Y, N, strideY, argv, 4 );
+	API_SUFFIX(c_caxpy)( N, alpha, (void *)X, strideX, (void *)Y, strideY );
 	return NULL;
 }
 
@@ -58,10 +58,10 @@ static napi_value addon_method( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 4 );
 	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 6 );
 	STDLIB_NAPI_ARGV_INT64( env, offsetY, argv, 7 );
-	STDLIB_NAPI_ARGV_COMPLEX64( env, ca, argv, 1 );
-	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, CX, N, strideX, argv, 2 );
-	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, CY, N, strideY, argv, 5 );
-	API_SUFFIX(c_caxpy_ndarray)( N, ca, (void *)CX, strideX, offsetX, (void *)CY, strideY, offsetY );
+	STDLIB_NAPI_ARGV_COMPLEX64( env, alpha, argv, 1 );
+	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, X, N, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_STRIDED_COMPLEX64ARRAY( env, Y, N, strideY, argv, 5 );
+	API_SUFFIX(c_caxpy_ndarray)( N, alpha, (void *)X, strideX, offsetX, (void *)Y, strideY, offsetY );
 	return NULL;
 }
 

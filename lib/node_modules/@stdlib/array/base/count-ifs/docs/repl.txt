@@ -1,0 +1,50 @@
+
+{{alias}}( x0, predicate0[, x1, predicate1[, x2, predicate2[, ...args]] )
+    Performs element-wise evaluation of one or more input arrays according to
+    provided predicate functions and counts the number of elements for which all
+    predicates respectively return `true`.
+
+    Each predicate function is provided three arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the corresponding input array.
+
+    Parameters
+    ----------
+    x0: ArrayLikeObject
+        First input array.
+
+    predicate0: Function
+        First predicate function.
+
+    x1: ArrayLikeObject (optional)
+        Second input array.
+
+    predicate1: Function (optional)
+        Second predicate function.
+
+    x2: ArrayLikeObject (optional)
+        Third input array.
+
+    predicate2: Function (optional)
+        Third predicate function.
+
+    ...args: ArrayLikeObject|Function (optional)
+        Additional input arrays and corresponding predicate functions.
+
+    Returns
+    -------
+    out: integer
+        Result.
+
+    Examples
+    --------
+    > function f1( v ) { return ( v > 0 ); };
+    > function f2( v ) { return ( v < 0 ); };
+    > var out = {{alias}}( [ 0, 1, 1 ], f1, [ 1, -1, -1 ], f2 )
+    2
+
+    See Also
+    --------
+

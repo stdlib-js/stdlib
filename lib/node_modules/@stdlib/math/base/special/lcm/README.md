@@ -101,21 +101,17 @@ v = lcm( 48, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var lcm = require( '@stdlib/math/base/special/lcm' );
 
-var a;
-var b;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var a = discreteUniform( 100, 0, 50, opts );
+var b = discreteUniform( 100, 0, 50, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    a = round( randu()*50 );
-    b = round( randu()*50 );
-    v = lcm( a, b );
-    console.log( 'lcm(%d,%d) = %d', a, b, v );
-}
+logEachMap( 'lcm(%0.4f,%0.4f) = %0.4f', a, b, lcm );
 ```
 
 </section>

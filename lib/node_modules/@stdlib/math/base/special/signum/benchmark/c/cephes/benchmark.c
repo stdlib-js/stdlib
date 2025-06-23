@@ -96,16 +96,19 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double x[ 100 ];
 	double elapsed;
-	double x;
 	double t;
 	int y;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 1000.0*rand_double() ) - 500.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 1000.0*rand_double() ) - 500.0;
-		y = signbit( x );
+		y = signbit( x[ i%100 ] );
 		if ( y > 1 || y < -1 ) {
 			printf( "should not return a number greater than 1\n" );
 			break;

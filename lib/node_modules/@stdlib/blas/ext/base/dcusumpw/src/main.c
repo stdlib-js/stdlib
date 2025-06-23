@@ -68,10 +68,14 @@ void API_SUFFIX(stdlib_strided_dcusumpw_ndarray)( const CBLAS_INT N, const doubl
 	}
 	ix = offsetX;
 	iy = offsetY;
+
 	// Blocksize for pairwise summation...
 	if ( N <= 128 ) {
-		s = 0.0;
-		for ( i = 0; i < N; i++ ) {
+		s = X[ ix ];
+		Y[ iy ] = sum + s;
+		ix += strideX;
+		iy += strideY;
+		for ( i = 1; i < N; i++ ) {
 			s += X[ ix ];
 			Y[ iy ] = sum + s;
 			ix += strideX;
