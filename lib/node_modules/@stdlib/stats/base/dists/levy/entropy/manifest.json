@@ -41,7 +41,6 @@
           "@stdlib/math/base/napi/binary",
           "@stdlib/math/base/assert/is-nan",
           "@stdlib/math/base/special/ln",
-          "@stdlib/math/base/special/pow",
           "@stdlib/constants/float64/eulergamma",
           "@stdlib/constants/float64/pi"
         ]
@@ -60,7 +59,6 @@
         "dependencies": [
           "@stdlib/math/base/assert/is-nan",
           "@stdlib/math/base/special/ln",
-          "@stdlib/math/base/special/pow",
           "@stdlib/constants/float64/eulergamma",
           "@stdlib/constants/float64/pi",
           "@stdlib/constants/float64/eps"
@@ -80,7 +78,6 @@
         "dependencies": [
           "@stdlib/math/base/assert/is-nan",
           "@stdlib/math/base/special/ln",
-          "@stdlib/math/base/special/pow",
           "@stdlib/constants/float64/eulergamma",
           "@stdlib/constants/float64/pi"
         ]

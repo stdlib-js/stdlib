@@ -18,8 +18,9 @@
 
 #include "stdlib/stats/base/dmeanstdevpn.h"
 #include "stdlib/stats/base/dmeanvarpn.h"
-#include <stdint.h>
-#include <math.h>
+#include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Computes the mean and standard deviation of a double-precision floating-point strided array using a two-pass algorithm.
@@ -31,15 +32,35 @@
 * @param Out         output array
 * @param strideOut   Out stride length
 */
-void stdlib_strided_dmeanstdevpn( const int64_t N, const double correction, const double *X, const int64_t strideX, double *Out, const int64_t strideOut ) {
-	int64_t io;
+void API_SUFFIX(stdlib_strided_dmeanstdevpn)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, double *Out, const CBLAS_INT strideOut ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	const CBLAS_INT oo = ( strideOut >= 0 ) ? 0 : -strideOut;
+	API_SUFFIX(stdlib_strided_dmeanstdevpn_ndarray)( N, correction, X, strideX, ox, Out, strideOut, oo );
+	return;
+}
 
-	stdlib_strided_dmeanvarpn( N, correction, X, strideX, Out, strideOut );
+/**
+* Computes the mean and standard deviation of a double-precision floating-point strided array using a two-pass algorithm and alternative indexing semantics.
+*
+* @param N           number of indexed elements
+* @param correction  degrees of freedom adjustment
+* @param X           input array
+* @param strideX     X stride length
+* @param offsetX     starting index for X
+* @param Out         output array
+* @param strideOut   Out stride length
+* @param offsetOut   starting index for Out
+*/
+void API_SUFFIX(stdlib_strided_dmeanstdevpn_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Out, const CBLAS_INT strideOut, const CBLAS_INT offsetOut ) {
+	CBLAS_INT io;
+
+	API_SUFFIX(stdlib_strided_dmeanvarpn_ndarray)( N, correction, X, strideX, offsetX, Out, strideOut, offsetOut );
+
 	if ( strideOut < 0 ) {
 		io = 0;
 	} else {
-		io = strideOut;
+		io = strideOut + offsetOut;
 	}
-	Out[ io ] = sqrt( Out[ io ] );
+	Out[ io ] = stdlib_base_sqrt( Out[ io ] );
 	return;
 }

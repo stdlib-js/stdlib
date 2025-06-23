@@ -101,16 +101,15 @@ v = mode( -1.5 );
 
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mode = require( '@stdlib/stats/base/dists/bradford/mode' );
 
-var c = uniform( 10, 0.1, 10.0 );
+var opts = {
+    'dtype': 'float64'
+};
+var c = uniform( 10, 0.1, 10.0, opts );
 
-var v;
-var i;
-for ( i = 0; i < c.length; i++ ) {
-    v = mode( c[ i ] );
-    console.log( 'c: %d, mode(X;c): %d', c[ i ].toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'c: %0.4f, mode(X;c): %0.4f', c, mode );
 ```
 
 </section>

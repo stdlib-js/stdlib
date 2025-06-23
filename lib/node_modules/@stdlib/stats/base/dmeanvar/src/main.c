@@ -18,7 +18,8 @@
 
 #include "stdlib/stats/base/dmeanvar.h"
 #include "stdlib/stats/base/dmeanvarpn.h"
-#include <stdint.h>
+#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/blas/base/shared.h"
 
 /**
 * Computes the mean and variance of a double-precision floating-point strided array.
@@ -30,6 +31,26 @@
 * @param Out         output array
 * @param strideOut   Out stride length
 */
-void stdlib_strided_dmeanvar( const int64_t N, const double correction, const double *X, const int64_t strideX, double *Out, const int64_t strideOut ) {
-	stdlib_strided_dmeanvarpn( N, correction, X, strideX, Out, strideOut );
+void API_SUFFIX(stdlib_strided_dmeanvar)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, double *Out, const CBLAS_INT strideOut ) {
+	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	const CBLAS_INT oo = ( strideOut >= 0 ) ? 0 : -strideOut;
+	API_SUFFIX(stdlib_strided_dmeanvar_ndarray)( N, correction, X, strideX, ox, Out, strideOut, oo  );
+	return;
+}
+
+/**
+* Computes the mean and variance of a double-precision floating-point strided array using alternative indexing semantics.
+*
+* @param N           number of indexed elements
+* @param correction  degrees of freedom adjustment
+* @param X           input array
+* @param strideX     X stride length
+* @param offsetX     starting index for X
+* @param Out         output array
+* @param strideOut   Out stride length
+* @param offsetOut   starting index for Out
+*/
+void API_SUFFIX(stdlib_strided_dmeanvar_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, double *Out, const CBLAS_INT strideOut, const CBLAS_INT offsetOut ) {
+	API_SUFFIX(stdlib_strided_dmeanvarpn_ndarray)( N, correction, X, strideX, offsetX, Out, strideOut, offsetOut );
+	return;
 }

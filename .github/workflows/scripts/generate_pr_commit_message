@@ -153,6 +153,30 @@ main() {
 	# Resolve the PR author's name and email using .mailmap:
 	pr_author_resolved=$(resolve_user "$pr_author_login")
 
+	pr_author_id=$(echo "$pr_details" | jq -r '.user.id')
+	pr_author_emails=$(
+	{
+		# 1) the address obtained via .mailmap
+		echo "$pr_author_resolved"
+
+		# 2) the default GitHub‑generated noreply address
+		echo "$pr_author_login@users.noreply.github.com"
+
+		# 3) ID+login GitHub noreply address (needed for bots & private e‑mails)
+		echo "${pr_author_id}+${pr_author_login}@users.noreply.github.com"
+
+		# 4) any address that appears in commits whose author *login* matches
+		echo "$pr_commits" | jq -r --arg login "$pr_author_login" '
+			.[]
+			| select(.author.login==$login or .committer.login==$login)
+			| .commit.author.email
+		'
+	} |
+	sed -E 's/^.*<([^>]+)>.*/\1/' | # Keep only the e‑mail part
+	tr "[:upper:]" "[:lower:]" |
+	sort -u
+	)
+
 	# Extract reviewers:
 	pr_reviews=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/reviews")
 	reviewers=$(echo "$pr_reviews" | jq -r '.[] | select(.state == "APPROVED" ) | .user.login' | sort -u)
@@ -173,8 +197,12 @@ main() {
 		email=$(echo "$name_email" | sed -E 's/^.*<(.*)>$/\1/' | xargs)
 		resolved_author=$(resolve_name_email "$name" "$email")
 
-		# Skip if the resolved author matches the resolved PR author:
-		if [ "$resolved_author" == "$pr_author_resolved" ]; then
+		# Skip if the resolved author's email matches any of the resolved PR author's emails:
+		resolved_email=$(echo "$resolved_author" |
+			sed -E 's/^.*<([^>]+)>.*/\1/' |
+			tr '[:upper:]' '[:lower:]')
+
+		if echo "$pr_author_emails" | grep -Fxq "$resolved_email"; then
 			continue
 		fi
 		processed_co_authors+="Co-authored-by: $resolved_author"$'\n'
@@ -198,8 +226,12 @@ main() {
 		# Resolve name and email using .mailmap:
 		resolved_author=$(resolve_name_email "$name" "$email")
 
-		# Skip if the resolved author matches the resolved PR author:
-		if [ "$resolved_author" == "$pr_author_resolved" ]; then
+		# Skip if the resolved commit author's email matches any of the resolved PR author's emails:
+		resolved_email=$(echo "$resolved_author" |
+			sed -E 's/^.*<([^>]+)>.*/\1/' |
+			tr '[:upper:]' '[:lower:]')
+
+		if echo "$pr_author_emails" | grep -Fxq "$resolved_email"; then
 			continue
 		fi
 
@@ -220,8 +252,25 @@ main() {
 	# Extract 'Signed-off-by' lines from commits:
 	signed_off_bys=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -Eio 'Signed-off-by:.*' | sort -u)
 
-	# Extract linked issues from PR body (e.g., #123):
-	issue_numbers=$(echo "$pr_body" | grep -oE '#[0-9]+' | grep -oE '[0-9]+' | sort | uniq)
+	# Extract linked issues from PR body:
+	issue_numbers=$(
+		echo "$pr_body" |
+		# Handle GitHub-supported issue references to stdlib-js/stdlib:
+		#
+		#   - https://github.com/stdlib-js/stdlib/issues/123
+		#   - stdlib-js/stdlib#123
+		#   - #123 (**not** preceded by a word‑char, "/", or ">")
+		grep -oE 'https://github\.com/stdlib-js/stdlib/issues/[0-9]+|stdlib-js/stdlib#[0-9]+|(^|[^[:alnum:]_/>])#[0-9]+' |
+		# Strip the prefix so we're left with the bare issue number:
+		sed -E '
+		s@https://github\.com/stdlib-js/stdlib/issues/([0-9]+)@\1@;
+		s@stdlib-js/stdlib#([0-9]+)@\1@;
+		s@(^|[^[:alnum:]_/>])#([0-9]+)@\2@
+    	' |
+		# Remove duplicates:
+		sort -u |
+		uniq
+	)
 	closes_issues=""
 	ref_issues=""
 

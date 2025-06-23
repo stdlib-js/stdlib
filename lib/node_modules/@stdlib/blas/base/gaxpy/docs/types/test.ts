@@ -21,12 +21,12 @@ import gaxpy = require( './index' );
 
 // TESTS //
 
-// The function returns a numeric array...
+// The function returns an array...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	gaxpy( x.length, 5.0, x, 1, y, 1 ); // $ExpectType NumericArray
+	gaxpy( x.length, 5.0, x, 1, y, 1 ); // $ExpectType Float64Array
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -134,12 +134,12 @@ import gaxpy = require( './index' );
 	gaxpy( x.length, 5.0, x, 1, y, 1, 10 ); // $ExpectError
 }
 
-// Attached to main export is an `ndarray` method which returns a numeric array...
+// Attached to main export is an `ndarray` method which returns an array...
 {
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	gaxpy.ndarray( x.length, 5.0, x, 1, 0, y, 1, 0 ); // $ExpectType NumericArray
+	gaxpy.ndarray( x.length, 5.0, x, 1, 0, y, 1, 0 ); // $ExpectType Float64Array
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

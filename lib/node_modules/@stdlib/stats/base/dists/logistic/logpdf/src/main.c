@@ -31,7 +31,7 @@
 * @param x   input value
 * @param mu  location parameter
 * @param s   scale parameter
-* @returns   evaluated logPDF
+* @return    evaluated logPDF
 *
 * @example
 * double y = stdlib_base_dists_logistic_logpdf( 2.0, 0.0, 1.0 );
