@@ -24,15 +24,15 @@
 * Applies a plane rotation.
 *
 * @param N        number of indexed elements
-* @param ZX       first input array
-* @param strideX  ZX stride length
-* @param ZY       second input array
-* @param strideY  ZY stride length
+* @param X       first input array
+* @param strideX  X stride length
+* @param Y       second input array
+* @param strideY  Y stride length
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
-void API_SUFFIX(c_zdrot)( const CBLAS_INT N, void *ZX, const CBLAS_INT strideX, void *ZY, const CBLAS_INT strideY, const double c, const double s ) {
+void API_SUFFIX(c_zdrot)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY, const double c, const double s ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
 	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
-	API_SUFFIX(c_zdrot_ndarray)( N, ZX, strideX, ox, ZY, strideY, oy, c, s );
+	API_SUFFIX(c_zdrot_ndarray)( N, X, strideX, ox, Y, strideY, oy, c, s );
 }

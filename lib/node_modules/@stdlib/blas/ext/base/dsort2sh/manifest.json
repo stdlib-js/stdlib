@@ -47,7 +47,7 @@
         "@stdlib/napi/argv-strided-float64array"
       ]
     },
-     {
+    {
       "task": "benchmark",
       "src": [
         "./src/dsort2sh.c"

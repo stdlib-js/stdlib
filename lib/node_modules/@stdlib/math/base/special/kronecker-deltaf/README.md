@@ -83,15 +83,16 @@ v = kroneckerDeltaf( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var kroneckerDeltaf = require( '@stdlib/math/base/special/kronecker-deltaf' );
 
-var x = linspace( -1.0, 1.0, 101 );
+var opts = {
+    'dtype': 'float32'
+};
+var x = uniform( 101, -1.0, 1.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'kronecker(%d,%d) = %d', x[ i ], 0.0, kroneckerDeltaf( x[ i ], 0.0 ) );
-}
+logEachMap( 'kronecker(%0.4f,%0.4f) = %0.4f', x, 0.0, kroneckerDeltaf );
 ```
 
 </section>

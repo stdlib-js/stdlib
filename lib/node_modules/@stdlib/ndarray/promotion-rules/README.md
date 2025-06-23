@@ -97,28 +97,23 @@ var out = promotionRules( 'foo', 'generic' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var cartesianProduct = require( '@stdlib/array/cartesian-product' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
+var unzip = require( '@stdlib/utils/unzip' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var promotionRules = require( '@stdlib/ndarray/promotion-rules' );
 
-var DTYPES;
-var dt1;
-var dt2;
-var dt;
-var i;
-var j;
-
 // Get the list of supported ndarray data types:
-DTYPES = dtypes();
+var dt = dtypes();
 
-// Print the promotion rule for each pair of ndarray data types...
-for ( i = 0; i < DTYPES.length; i++ ) {
-    dt1 = DTYPES[ i ];
-    for ( j = 0; j < DTYPES.length; j++ ) {
-        dt2 = DTYPES[ j ];
-        dt = promotionRules( dt1, dt2 );
-        console.log( '(%s, %s) => %s', dt1, dt2, dt );
-    }
-}
+// Generate a list of data type pairs:
+var pairs = cartesianProduct( dt, dt );
+
+// Split the pairs into separate arrays:
+var args = unzip( pairs );
+
+// Print the promotion rule for each pair of ndarray data types:
+logEachMap( '(%s, %s) => %s', args[ 0 ], args[ 1 ], promotionRules );
 ```
 
 </section>

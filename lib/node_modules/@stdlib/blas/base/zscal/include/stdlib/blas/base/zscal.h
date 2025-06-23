@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -35,7 +35,12 @@ extern "C" {
 /**
 * Scales a double-precision complex floating-point vector by a double-precision complex floating-point constant.
 */
-void API_SUFFIX(c_zscal)( const CBLAS_INT N, const stdlib_complex128_t za, void *ZX, const CBLAS_INT strideX );
+void API_SUFFIX(c_zscal)( const CBLAS_INT N, const stdlib_complex128_t alpha, void *X, const CBLAS_INT strideX );
+
+/**
+* Scales a double-precision complex floating-point vector by a double-precision complex floating-point constant using alternative indexing semantics.
+*/
+void API_SUFFIX(c_zscal_ndarray)( const CBLAS_INT N, const stdlib_complex128_t alpha, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }

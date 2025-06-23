@@ -59,16 +59,16 @@ v = gamma1pm1( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var gamma1pm1 = require( '@stdlib/math/base/special/gamma1pm1' );
 
-var x;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -5.0, 5.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*10.0) - 5.0;
-    console.log( 'gamma(%d+1) - 1 = %d', x, gamma1pm1( x ) );
-}
+logEachMap( 'gamma(%0.4f+1) - 1 = %0.4f', x, gamma1pm1 );
 ```
 
 </section>
