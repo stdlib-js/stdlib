@@ -20,7 +20,7 @@ limitations under the License.
 
 # forEach
 
-> Invoke a callback funcion once for each array element.
+> Invoke a callback function once for each array element.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 

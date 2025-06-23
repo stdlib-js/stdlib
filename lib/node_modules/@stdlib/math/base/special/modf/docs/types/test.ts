@@ -25,7 +25,7 @@ import modf = require( './index' );
 
 // The function returns a numeric array...
 {
-	modf( 1.0 ); // $ExpectType number[]
+	modf( 1.0 ); // $ExpectType [number, number]
 }
 
 // The compiler throws an error if the function is provided an argument other than a number...

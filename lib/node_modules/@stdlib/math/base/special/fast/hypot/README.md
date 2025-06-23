@@ -86,21 +86,17 @@ var h = hypot( -5.0, 12.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var hypot = require( '@stdlib/math/base/special/fast/hypot' );
 
-var x;
-var y;
-var h;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 100, -50, 50, opts );
+var y = discreteUniform( 100, -50, 50, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = round( randu()*100.0 ) - 50.0;
-    y = round( randu()*100.0 ) - 50.0;
-    h = hypot( x, y );
-    console.log( 'hypot(%d,%d) = %d', x, y, h );
-}
+logEachMap( 'hypot(%d,%d) = %0.4f', x, y, hypot );
 ```
 
 </section>

@@ -112,7 +112,7 @@ main() {
 	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
 
 	# Find unique package directories:
-	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
+	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?$//' | uniq)
 
 	if [ -z "${directories}" ]; then
 		echo 'No packages to run benchmarks for.' >&2
@@ -132,7 +132,14 @@ main() {
 	done
 
 	# Find all benchmark files in package directories:
-	js_bench_files=$(find "${directories}" -maxdepth 3 -wholename '**/benchmark/benchmark*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+	js_bench_files=""
+	for dir in ${directories}; do
+		if [ -d "${dir}" ]; then
+			files=$(find "${dir}" -maxdepth 3 -wholename '**/benchmark/benchmark*.js' | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+			js_bench_files="${js_bench_files} ${files}"
+		fi
+	done
+	js_bench_files=$(echo "${js_bench_files}" | xargs)
 
 	# Run JS benchmarks:
 	if [ -n "${js_bench_files}" ]; then
@@ -143,10 +150,25 @@ main() {
 
 	# Run C benchmarks:
 	echo "Finding C benchmark files in ${directories}..."
-	c_bench_files=$(find "${directories}" -maxdepth 5 \( -wholename '**/benchmark/c/benchmark*.c' -or -wholename '**/benchmark/c/**/benchmark*.c' \) -exec realpath {} \; | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+	c_bench_files=""
+	for dir in ${directories}; do
+		if [ -d "${dir}" ]; then
+			files=$(find "${dir}" -maxdepth 5 \( -wholename '**/benchmark/c/benchmark*.c' -or -wholename '**/benchmark/c/**/benchmark*.c' \) -exec realpath {} \; | grep -v '/fixtures/' | sort -u | tr '\n' ' ') || true
+			c_bench_files="${c_bench_files} ${files}"
+		fi
+	done
+	c_bench_files=$(echo "${c_bench_files}" | xargs)
 
 	# If benchmarks requiring Cephes are found, install the Cephes library:
-	c_cephes_makefiles=$(find "${directories}" -maxdepth 5 -wholename '**/benchmark/c/**/Makefile' -exec grep -l 'CEPHES' {} + || true)
+	c_cephes_makefiles=""
+	for dir in ${directories}; do
+		if [ -d "${dir}" ]; then
+			files=$(find "${dir}" -maxdepth 5 -wholename '**/benchmark/c/**/Makefile' -exec grep -l 'CEPHES' {} + || true)
+			c_cephes_makefiles="${c_cephes_makefiles} ${files}"
+		fi
+	done
+	c_cephes_makefiles=$(echo "${c_cephes_makefiles}" | xargs)
+
 	if [ -n "${c_cephes_makefiles}" ]; then
 		make install-deps-cephes
 	fi
