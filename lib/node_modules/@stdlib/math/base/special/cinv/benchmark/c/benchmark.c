@@ -89,20 +89,23 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double re[ 100 ];
+	double im[ 100 ];
 	double elapsed;
-	double re;
-	double im;
 	double t;
 	int i;
 
 	double complex z1;
 	double complex z2;
 
+	for ( i = 0; i < 100; i++ ) {
+		re[ i ] = ( 1000.0*rand_double() ) - 500.0;
+		im[ i ] = ( 1000.0*rand_double() ) - 500.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		re = ( 1000.0*rand_double() ) - 500.0;
-		im = ( 1000.0*rand_double() ) - 500.0;
-		z1 = re + im*I;
+		z1 = re[ i%100 ] + im[ i%100 ]*I;
 
 		z2 = 1.0 / z1;
 		if ( z2 != z2 ) {

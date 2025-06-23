@@ -102,15 +102,18 @@ int fibonacci_index( int F ) {
 static double benchmark( void ) {
 	double elapsed;
 	double t;
-	int x;
+	int x[ 100 ];
 	int y;
 	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = (int)floor( (100000.0*rand_double()) + 2.0 );
+	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		// note: using actual Fibonacci numbers is not important
-		x = (int)floor( (100000.0*rand_double()) + 2.0 );
-		y = fibonacci_index( x );
+		y = fibonacci_index( x[ i%100 ] );
 		if ( y < 0 ) {
 			printf( "should return a nonnegative integer\n" );
 			break;

@@ -83,18 +83,16 @@ v = floor2( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var floor2 = require( '@stdlib/math/base/special/floor2' );
 
-var x;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -50.0, 50.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*100.0) - 50.0;
-    v = floor2( x );
-    console.log( 'Value: %d. Rounded: %d.', x, v );
-}
+logEachMap( 'x: %0.4f. Rounded: %d.', x, floor2 );
 ```
 
 </section>

@@ -20,7 +20,7 @@
 #include "stdlib/math/base/special/floor.h"
 #include "stdlib/math/base/special/gcd.h"
 #include "stdlib/constants/float64/pinf.h"
-#include "stdlib//constants/float64/max_safe_integer.h"
+#include "stdlib/constants/float64/max_safe_integer.h"
 #include <stdint.h>
 
 /**
