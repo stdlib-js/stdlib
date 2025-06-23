@@ -27,7 +27,7 @@
 * @return     expected value
 *
 * @example
-* double v = mean( 0.0, 1.0 );
+* double v = stdlib_base_dists_arcsine_mean( 0.0, 1.0 );
 * // returns 0.5
 */
 double stdlib_base_dists_arcsine_mean( const double a, const double b ) {

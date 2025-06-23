@@ -18,7 +18,8 @@
 
 #include "stdlib/math/base/special/cabsf.h"
 #include "stdlib/math/base/special/hypotf.h"
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
 
 /**
 * Computes the absolute value of a single-precision complex floating-point number.
@@ -27,9 +28,16 @@
 * @return        result
 *
 * @example
-* float y = stdlib_base_cabsf( 5.0+3.0*I );
+* #include "stdlib/complex/float32/ctor.h"
+*
+* stdlib_complex64_t z = stdlib_complex64( 5.0f, 3.0f );
+*
+* float y = stdlib_base_cabsf( z );
 * // returns ~5.83f
 */
-float stdlib_base_cabsf( const float complex z ) {
-	return stdlib_base_hypotf( crealf( z ), cimagf( z ) );
+float stdlib_base_cabsf( const stdlib_complex64_t z ) {
+	float re;
+	float im;
+	stdlib_complex64_reim( z, &re, &im );
+	return stdlib_base_hypotf( re, im );
 }

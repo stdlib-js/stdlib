@@ -84,7 +84,7 @@ config.questions[ 'type' ] = {
 			'emoji': '🛠'
 		},
 		'refactor': {
-			'description': 'Neither a fix nor a feature (i.e., a change which does not affect behavior as experienced by downstream consumers',
+			'description': 'Neither a fix nor a feature (i.e., a change which does not affect behavior as experienced by downstream consumers)',
 			'title': 'Code Refactoring',
 			'emoji': '🚧'
 		},

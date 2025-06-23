@@ -1,0 +1,88 @@
+
+{{alias}}( fcn, idtypes, odtypes, policy )
+    Returns function for applying a unary function to each element in an input
+    array.
+
+    Parameters
+    ----------
+    fcn: Function
+        Unary function to apply.
+
+    idtypes: Array<string>
+        List of supported input array data types.
+
+    odtypes: Array<string>
+        List of supported output array data types.
+
+    policy: string
+        Output data type policy.
+
+    Returns
+    -------
+    fcn: Function
+        Function for applying a function to arrays.
+
+    Examples
+    --------
+    > var dt = [ 'float64', 'float32', 'generic' ];
+    > var f = {{alias}}( {{alias:@stdlib/math/base/special/abs}}, dt, dt, 'same' );
+
+
+fcn( x[, options] )
+    Applies a unary function to each element in a provided input array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output array data type. Setting this option overrides the output data
+        type policy.
+
+    Returns
+    -------
+    out: Array|TypedArray
+        Output array.
+
+    Examples
+    --------
+    > var dt = [ 'float64', 'float32', 'generic' ];
+    > var f = {{alias}}( {{alias:@stdlib/math/base/special/abs}}, dt, dt, 'same' );
+    > var v = f( [ -1.0, 2.0, -3.0, 4.0 ] )
+    [ 1.0, 2.0, 3.0, 4.0 ]
+
+
+fcn.assign( x, out )
+    Applies a unary function to each element in a provided input array and
+    assigns results to a provided output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var dt = [ 'float64', 'float32', 'generic' ];
+    > var f = {{alias}}( {{alias:@stdlib/math/base/special/abs}}, dt, dt, 'same' );
+    > var out = {{alias:@stdlib/array/zeros}}( 4, 'float64' );
+    > var v = f.assign( [ -1.0, 2.0, -3.0, 4.0 ], out )
+    <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
+    > var bool = ( out === v )
+    true
+
+    See Also
+    --------
+

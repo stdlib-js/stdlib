@@ -27,7 +27,7 @@
 * @return        kurtosis
 *
 * @example
-* double y = stdlib_base_gumbel_kurtosis( 0.0, 1.0 );
+* double y = stdlib_base_dists_gumbel_kurtosis( 0.0, 1.0 );
 * // returns 2.4
 */
 double stdlib_base_dists_gumbel_kurtosis( const double mu, const double beta ) {

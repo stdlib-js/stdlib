@@ -28,9 +28,9 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - first input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - second input array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns first input array
 	*
 	* @example
@@ -55,11 +55,11 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - first input array
-	* @param strideX - `x` stride length
-	* @param offsetX - `x` starting index
+	* @param strideX - stride length for `x`
+	* @param offsetX - starting index for `x`
 	* @param y - second input array
-	* @param strideY - `y` stride length
-	* @param offsetY - `y` starting index
+	* @param strideY - stride length for `y`
+	* @param offsetY - starting index for `y`
 	* @returns first input array
 	*
 	* @example
@@ -85,9 +85,9 @@ interface Routine {
 * @param N - number of indexed elements
 * @param order - sort order
 * @param x - first input array
-* @param strideX - `x` stride length
+* @param strideX - stride length for `x`
 * @param y - second input array
-* @param strideY - `y` stride length
+* @param strideY - stride length for `y`
 * @returns first input array
 *
 * @example
