@@ -101,16 +101,15 @@ v = stdev( -1.5 );
 
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var stdev = require( '@stdlib/stats/base/dists/bradford/stdev' );
 
-var c = uniform( 10, 0.1, 10.0 );
+var opts = {
+    'dtype': 'float64'
+};
+var c = uniform( 10, 0.1, 10.0, opts );
 
-var v;
-var i;
-for ( i = 0; i < c.length; i++ ) {
-    v = stdev( c[ i ] );
-    console.log( 'c: %d, SD(X;c): %d', c[ i ].toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'c: %0.4f, SD(X;c): %0.4f', c, stdev );
 ```
 
 </section>

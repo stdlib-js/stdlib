@@ -40,6 +40,7 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/dsumors",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -61,7 +62,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/dsumors"
       ]
     },
     {
@@ -77,7 +79,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/dsumors"
       ]
     },
     {
@@ -93,7 +96,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/strided/base/stride2offset"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/ext/base/dsumors"
       ]
     }
   ]

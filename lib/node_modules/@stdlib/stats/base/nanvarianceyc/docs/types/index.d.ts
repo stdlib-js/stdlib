@@ -43,7 +43,7 @@ interface Routine {
 	* @example
 	* var x = [ 1.0, -2.0, NaN, 2.0 ];
 	*
-	* var v = nanvarianceyc( x.length, 1, x, 1 );
+	* var v = nanvarianceyc( x.length, 1.0, x, 1 );
 	* // returns ~4.3333
 	*/
 	( N: number, correction: number, x: InputArray, strideX: number ): number;
@@ -61,7 +61,7 @@ interface Routine {
 	* @example
 	* var x = [ 1.0, -2.0, NaN, 2.0 ];
 	*
-	* var v = nanvarianceyc.ndarray( x.length, 1, x, 1, 0 );
+	* var v = nanvarianceyc.ndarray( x.length, 1.0, x, 1, 0 );
 	* // returns ~4.3333
 	*/
 	ndarray( N: number, correction: number, x: InputArray, strideX: number, offsetX: number ): number;
@@ -79,13 +79,13 @@ interface Routine {
 * @example
 * var x = [ 1.0, -2.0, NaN, 2.0 ];
 *
-* var v = nanvarianceyc( x.length, 1, x, 1 );
+* var v = nanvarianceyc( x.length, 1.0, x, 1 );
 * // returns ~4.3333
 *
 * @example
 * var x = [ 1.0, -2.0, NaN, 2.0 ];
 *
-* var v = nanvarianceyc.ndarray( x.length, 1, x, 1, 0 );
+* var v = nanvarianceyc.ndarray( x.length, 1.0, x, 1, 0 );
 * // returns ~4.3333
 */
 declare var nanvarianceyc: Routine;
