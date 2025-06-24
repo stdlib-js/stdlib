@@ -14,6 +14,7 @@
     }
   ],
   "main": "./lib",
+  "gypfile": true,
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",
@@ -23,7 +24,6 @@
     "src": "./src",
     "test": "./test"
   },
-  "gypfile": true,
   "types": "./docs/types",
   "scripts": {},
   "homepage": "https://github.com/stdlib-js/stdlib",
