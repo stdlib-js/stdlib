@@ -31,12 +31,12 @@ extern "C" {
 /**
 * Returns the first index of a specified search element in a single-precision floating-point strided array.
 */
-CBLAS_INT API_SUFFIX(stdlib_strided_sindex_of)( const CBLAS_INT N, const CBLAS_INT searchElement, const float *X, const CBLAS_INT strideX );
+CBLAS_INT API_SUFFIX(stdlib_strided_sindex_of)( const CBLAS_INT N, const float searchElement, const float *X, const CBLAS_INT strideX );
 
 /**
 * Returns the first index of a specified search element in a single-precision floating-point strided array using alternative indexing semantics.
 */
-CBLAS_INT API_SUFFIX(stdlib_strided_sindex_of_ndarray)( const CBLAS_INT N, const CBLAS_INT searchElement, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+CBLAS_INT API_SUFFIX(stdlib_strided_sindex_of_ndarray)( const CBLAS_INT N, const float searchElement, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }
