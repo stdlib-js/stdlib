@@ -3739,6 +3739,8 @@ isString.isObject,"\nisString.isObject( value:any )\n    Tests if a value is a `
 isStringArray,"\nisStringArray( value:any )\n    Tests if a value is an array of strings.\n"
 isStringArray.primitives,"\nisStringArray.primitives( value:any )\n    Tests if a value is an array containing only string primitives.\n"
 isStringArray.objects,"\nisStringArray.objects( value:any )\n    Tests if a value is an array containing only `String` objects.\n"
+isStruct,"\nisStruct( value:any )\n    Tests if a value is a `struct` instance.\n"
+isStructConstructorLike,"\nisStructConstructorLike( value:any )\n    Tests if a value is struct constructor-like.\n"
 isSymbol,"\nisSymbol( value:any )\n    Tests if a value is a symbol.\n"
 isSymbolArray,"\nisSymbolArray( value:any )\n    Tests if a value is an array-like object containing only symbols.\n"
 isSymbolArray.primitives,"\nisSymbolArray.primitives( value:any )\n    Tests if a value is an array-like object containing only `symbol`\n    primitives.\n"
