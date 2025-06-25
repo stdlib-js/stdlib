@@ -29,9 +29,9 @@
 * @param N        number of columns in the matrix `A`
 * @param alpha    scalar constant
 * @param X        an `M` element vector
-* @param strideX  X stride length
+* @param strideX  stride length for `X`
 * @param Y        an `N` element vector
-* @param strideY  Y stride length
+* @param strideY  stride length for `Y`
 * @param A        matrix of coefficients
 * @param LDA      stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 */
