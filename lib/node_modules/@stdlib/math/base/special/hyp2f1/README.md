@@ -99,18 +99,19 @@ v = hyp2f1( NaN, 3.0, 2.0, 0.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var hyp2f1 = require( '@stdlib/math/base/special/hyp2f1' );
 
-var a = linspace( -50.0, 50.0, 100 );
-var b = linspace( -50.0, 50.0, 100 );
-var c = linspace( -50.0, 50.0, 100 );
-var x = linspace( -50.0, 50.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var a = uniform( 100, -50.0, 50.0, opts );
+var b = uniform( 100, -50.0, 50.0, opts );
+var c = uniform( 100, -50.0, 50.0, opts );
+var x = uniform( 100, -50.0, 50.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'a: %d, b: %d, c: %d, x: %d, 2F1(a,b;c;x): %d', a[ i ], b[ i ], c[ i ], x[ i ], hyp2f1( a[ i ], b[ i ], c[ i ], x[ i ] ) );
-}
+logEachMap( 'a: %0.4f, b: %0.4f, c: %0.4f, x: %0.4f, 2F1(a,b;c;x): %0.4f', a, b, c, x, hyp2f1 );
 ```
 
 </section>

@@ -101,16 +101,15 @@ v = entropy( -1.5 );
 
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var entropy = require( '@stdlib/stats/base/dists/bradford/entropy' );
 
-var c = uniform( 10, 0.1, 10.0 );
+var opts = {
+    'dtype': 'float64'
+};
+var c = uniform( 10, 0.1, 10.0, opts );
 
-var v;
-var i;
-for ( i = 0; i < c.length; i++ ) {
-    v = entropy( c[ i ] );
-    console.log( 'c: %d, h(X;c): %d', c[ i ].toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'c: %0.4f, h(X;c): %0.4f', c, entropy );
 ```
 
 </section>

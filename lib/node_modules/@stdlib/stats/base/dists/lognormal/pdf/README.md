@@ -116,7 +116,8 @@ y = mypdf( 2.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/base/uniform' );
+var EPS = require( '@stdlib/constants/float64/eps' );
 var pdf = require( '@stdlib/stats/base/dists/lognormal/pdf' );
 
 var sigma;
@@ -126,9 +127,9 @@ var y;
 var i;
 
 for ( i = 0; i < 10; i++ ) {
-    x = randu() * 10.0;
-    mu = (randu() * 10.0) - 5.0;
-    sigma = randu() * 20.0;
+    x = uniform( 0.1, 10.0 );
+    mu = uniform( -5.0, 5.0 );
+    sigma = uniform( EPS, 5.0 );
     y = pdf( x, mu, sigma );
     console.log( 'x: %d, µ: %d, σ: %d, f(x;µ,σ): %d', x.toFixed( 4 ), mu.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
 }
@@ -137,6 +138,105 @@ for ( i = 0; i < 10; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/lognormal/pdf.h"
+```
+
+#### stdlib_base_dists_lognormal_pdf( x, mu, sigma )
+
+Evaluates the [probability density function][pdf] (PDF) of a [lognormal][lognormal-distribution] distribution with parameters input value `x`, location parameter `mu` and scale parameter `sigma`.
+
+```c
+double y = stdlib_base_dists_lognormal_pdf( 2.0, 0.0, 1.0 );
+// returns ~0.157
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **mu**: `[in] double` location parameter.
+-   **sigma**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_lognormal_pdf( const double x, const double mu, const double sigma );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/lognormal/pdf.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double sigma;
+    double mu;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        x = random_uniform( 0.1, 10.0 );
+        mu = random_uniform( -5.0, 5.0 );
+        sigma = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 5.0 );
+        y = stdlib_base_dists_lognormal_pdf( x, mu, sigma );
+        printf( "x: %lf, μ: %lf, σ: %lf, f(x;μ,σ): %lf\n", x, mu, sigma, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
