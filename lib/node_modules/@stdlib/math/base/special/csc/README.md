@@ -117,7 +117,7 @@ Evaluates the [cosecant][trigonometric-functions] of `x` (in radians).
 double out = stdlib_base_csc( 0.0 );
 // returns Infinity
 
-out = stdlib_base_cos( 3.141592653589793 / 2.0 );
+out = stdlib_base_csc( 3.141592653589793 / 2.0 );
 // returns 1.0
 ```
 
