@@ -206,7 +206,7 @@ int main( void ) {
         x = stdlib_base_round( random_uniform( 0.0, 11.0 ) );
         lambda = random_uniform( 0.1, 5.0 );
         y = stdlib_base_dists_planck_pmf( x, lambda );
-        printf( "x: %.0f, lambda: %lf, P(X = x; lambda): %lf\n", x, lambda, y );
+        printf( "x: %.0f, λ: %lf, P(X = x; λ): %lf\n", x, lambda, y );
     }
 }
 ```

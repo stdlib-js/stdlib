@@ -37,7 +37,7 @@ int main( void ) {
 		k = random_uniform( 0.1, 5.0 );
 		lambda = random_uniform( 0.1, 5.0 );
 		y = stdlib_base_dists_weibull_quantile( p, k, lambda );
-		printf( "p: %lf, k: %lf, lambda: %lf, Q(p;k,lambda): %lf\n", p, k, lambda, y );
+		printf( "p: %lf, k: %lf, λ: %lf, Q(p;k,λ): %lf\n", p, k, lambda, y );
 	}
 	return 0;
 }
