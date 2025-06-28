@@ -140,7 +140,7 @@ logEachMap( '(e^%0.3f - 1)/%0.3f = %0.3f', x, x, expm1rel );
 #include "stdlib/math/base/special/expm1rel.h"
 ```
 
-#### stdlib_base_exmp1rel( x )
+#### stdlib_base_expm1rel( x )
 
 Computes the relative error exponential.
 

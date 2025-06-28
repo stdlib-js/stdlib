@@ -61,7 +61,9 @@ x = ldexp( -Infinity, -118 );
 // returns -Infinity
 ```
 
-<section class="usage">
+</section>
+
+<!-- /.usage -->
 
 <section class="notes">
 

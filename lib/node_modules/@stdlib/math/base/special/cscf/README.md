@@ -34,7 +34,7 @@ limitations under the License.
 var cscf = require( '@stdlib/math/base/special/cscf' );
 ```
 
-## cscf( x )
+#### cscf( x )
 
 Evaluates the [cosecant][trigonometric-functions] of a single-precision floating-point number (in radians).
 
