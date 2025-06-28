@@ -132,6 +132,93 @@ y = mycdf( 8.0 );
 
 <!-- /.usage -->
 
+* * *
+
+<section class="c">
+
+## C APIs
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/gamma/cdf.h"
+```
+
+#### stdlib_base_dists_gamma_cdf( x, alpha, beta )
+
+Evaluates the [cumulative distribution function][cdf] (CDF) for a [gamma][gamma-distribution] distribution with parameters `alpha` (shape parameter) and `beta` (rate parameter).
+
+```c
+double out = stdlib_base_dists_gamma_cdf( 2.0, 1.0, 1.0 );
+// returns ~0.865
+
+out = stdlib_base_dists_gamma_cdf( 2.0, 3.0, 1.0 );
+// returns ~0.323
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **alpha**: `[in] double` shape parameter.
+-   **beta**: `[in] double` rate parameter.
+
+```c
+double stdlib_base_dists_gamma_cdf( const double x, const double alpha, const double beta );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/gamma/cdf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( double min, double max ) {
+    double scale = rand() / (double) RAND_MAX;
+    return min + ( scale * ( max - min ) );
+}
+
+int main( void ) {
+    double x;
+    double alpha;
+    double beta;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        x = random_uniform( 0.0, 3.0 );
+        alpha = random_uniform( 0.1, 5.0 );
+        beta = random_uniform( 0.1, 5.0 );
+        y = stdlib_base_dists_gamma_cdf( x, alpha, beta );
+        printf( "x: %lf, α: %lf, β: %lf, F(x;α,β): %lf\n", x, alpha, beta, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+* * *
+
 <section class="examples">
 
 ## Examples

@@ -212,7 +212,7 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` stride length.
 
 ```c
-CBLAS_INT N stdlib_strided_sindex_of( const CBLAS_INT N, const float searchElement, float *X, const CBLAS_INT strideX );
+CBLAS_INT N stdlib_strided_sindex_of( const CBLAS_INT N, const float searchElement, const float *X, const CBLAS_INT strideX );
 ```
 
 #### stdlib_strided_sindex_of_ndarray( N, searchElement, \*X, strideX, offsetX )
@@ -235,7 +235,7 @@ The function accepts the following arguments:
 -   **offsetX**: `[in] CBLAS_INT` starting index.
 
 ```c
-CBLAS_INT stdlib_strided_sindex_of_ndarray( const CBLAS_INT N, const float searchElement, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+CBLAS_INT stdlib_strided_sindex_of_ndarray( const CBLAS_INT N, const float searchElement, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>

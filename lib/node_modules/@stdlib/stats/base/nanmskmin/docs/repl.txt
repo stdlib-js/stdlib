@@ -3,8 +3,8 @@
     Computes the minimum value of a strided array according to a mask and
     ignoring `NaN` values.
 
-    The `N` and `stride` parameters determine which elements are accessed at
-    runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce offsets, use a typed
     array views.
@@ -26,13 +26,13 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     mask: Array<number>|TypedArray
         Mask array.
 
     strideMask: integer
-        Index increment for `mask`.
+        Stride length for `mask`.
 
     Returns
     -------
@@ -47,21 +47,20 @@
     > {{alias}}( x.length, x, 1, mask, 1 )
     -2.0
 
-    // Using `N` and `stride` parameters:
-    > x = [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0, -4.0 ];
+    // Using `N` and stride parameters:
+    > x = [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0, NaN ];
     > mask = [ 0, 0, 0, 0, 0, 0, 1 ];
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}( N, x, 2, mask, 2 )
+    > {{alias}}( 4, x, 2, mask, 2 )
     -2.0
 
     // Using view offsets:
-    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0, -4.0 ] );
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0, NaN, NaN ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > var mask0 = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 0, 0, 0, 0, 1 ] );
+    > var mask0 = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 0, 0, 0, 0, 1, 1 ] );
     > var mask1 = new {{alias:@stdlib/array/uint8}}( mask0.buffer, mask0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > {{alias}}( N, x1, 2, mask1, 2 )
+    > {{alias}}( 4, x1, 2, mask1, 2 )
     -2.0
+
 
 {{alias}}.ndarray( N, x, strideX, offsetX, mask, strideMask, offsetMask )
     Computes the minimum value of a strided array according to a mask, ignoring
@@ -80,7 +79,7 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     offsetX: integer
         Starting index for `x`.
@@ -89,7 +88,7 @@
         Mask array.
 
     strideMask: integer
-        Index increment for `mask`.
+        Stride length for `mask`.
 
     offsetMask: integer
         Starting index for `mask`.
@@ -108,10 +107,9 @@
     -2.0
 
     // Using offset parameter:
-    > x = [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0, -4.0 ];
-    > mask = [ 0, 0, 0, 0, 0, 0, 1 ];
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, x, 2, 1, mask, 2, 1 )
+    > x = [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0, -4.0, NaN, NaN ];
+    > mask = [ 0, 0, 0, 0, 0, 0, 1, 0, 0 ];
+    > {{alias}}.ndarray( 4, x, 2, 1, mask, 2, 1 )
     -2.0
 
     See Also

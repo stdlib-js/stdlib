@@ -88,6 +88,6 @@ jobs:
           git_commit_gpgsign: true
 
       # Setup a terminal session:
-      - name: 'Setup upterm session'
+      - name: 'Setup tmate session'
         # Pin action to full length commit SHA
-        uses: lhotari/action-upterm@b0357f23233f5ea6d58947c0c402e0631bab7334 # v1.0.0
+        uses: mxschmitt/action-tmate@7b6a61a73bbb9793cb80ad69b8dd8ac19261834c # v3.2.2
