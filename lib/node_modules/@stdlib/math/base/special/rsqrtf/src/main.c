@@ -26,9 +26,9 @@
 * @return        reciprocal square root
 *
 * @example
-* float y = stdlib_base_rsqrtf( 4.0 );
+* float y = stdlib_base_rsqrtf( 4.0f );
 * // returns 0.5
 */
 float stdlib_base_rsqrtf( const float x ) {
-	return 1.0 / stdlib_base_sqrt( x );
+	return 1.0f / stdlib_base_sqrtf( x );
 }
