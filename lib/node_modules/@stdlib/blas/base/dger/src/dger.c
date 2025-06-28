@@ -17,142 +17,81 @@
 */
 
 #include "stdlib/blas/base/dger.h"
-#include "stdlib/blas/base/xerbla.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/blas/base/xerbla.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Performs the rank 1 operation `A = alpha*x*y^T + A`, where `alpha` is a scalar, `x` is an `M` element vector, `y` is an `N` element vector, and `A` is an `M`-by-`N` matrix.
-*
-* ## Notes
-*
-* -   The function follows the CBLAS interface which reflects the corresponding Fortran interface, which in turn assumes column-major order. As a matrix stored in row-major order is equivalent to storing the matrix's transpose in column-major order, we can interpret an M-by-N row-major matrix "B" as the matrix "A^T" stored in column-major. In which case, we can derive an update equation for `B` as follows:
-*
-*     ```tex
-*     \begin{align*}
-*     B &= A^T \\
-*       &= (\alpha \bar{x} \bar{y}^T + A)^T \\
-*       &= (\alpha \bar{x} \bar{y}^T)^T + A^T \\
-*       &= \alpha (\bar{x} \bar{y}^T)^T + A^T \\
-*       &= \alpha \bar{y} \bar{x}^T + A^T \\
-*       &= \alpha \bar{y} \bar{x}^T + B
-*     \end{align*}
-*     ```
-*
-*     Accordingly, the C calling convention for row-major order is to swap the order of input arguments such that for a column-major `A` where the stride of the "major" (outer) dimension is `LDA = N`
-*
-*     ```c
-*     c_dger( CblasColMajor, M, N, alpha, X, strideX, Y, strideY, A, N )
-*     ```
-*
-*     and for a row-major `B = A^T` where the stride of the "major" (outer) dimension is `LDA = M`
-*
-*     ```c
-*     c_dger( CblasRowMajor, N, M, alpha, Y, strideY, X, strideX, A^T, M )
-*     ```
 *
 * @param layout   storage layout
 * @param M        number of rows in the matrix `A`
 * @param N        number of columns in the matrix `A`
 * @param alpha    scalar constant
 * @param X        an `M` element vector
-* @param strideX  X stride length
+* @param strideX  stride length for `X`
 * @param Y        an `N` element vector
-* @param strideY  Y stride length
+* @param strideY  stride length for `Y`
 * @param A        matrix of coefficients
 * @param LDA      stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 */
-void API_SUFFIX(c_dger)( const CBLAS_LAYOUT layout, const CBLAS_INT M, const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, double *A, const CBLAS_INT LDA ) {
-	CBLAS_INT info;
-	CBLAS_INT sx;
-	CBLAS_INT sy;
-	CBLAS_INT ix;
-	CBLAS_INT jy;
-	CBLAS_INT kx;
-	CBLAS_INT i;
-	CBLAS_INT j;
-	CBLAS_INT m;
-	CBLAS_INT n;
-	double tmp;
-	double *x;
-	double *y;
+void API_SUFFIX(c_dger)( const CBLAS_LAYOUT layout, const CBLAS_INT M, const CBLAS_INT N, const double alpha, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY, double *A, const CBLAS_INT LDA ) {
+	CBLAS_INT vala;
+	CBLAS_INT sa1;
+	CBLAS_INT sa2;
+	CBLAS_INT ox;
+	CBLAS_INT oy;
+	CBLAS_INT v;
 
 	// Perform input argument validation...
-	info = 0;
-	if ( M < 0 ) {
-		info = 1;
-	} else if ( N < 0 ) {
-		info = 2;
-	} else if ( strideX == 0 ) {
-		info = 5;
-	} else if ( strideY == 0 ) {
-		info = 7;
-	} else {
-		if ( M < 1 ) {
-			j = 1;
-		} else {
-			j = M;
-		}
-		if ( LDA < j ) {
-			info = 9;
-		}
+	if ( layout != CblasRowMajor && layout != CblasColMajor ) {
+		c_xerbla( 1, "c_dger", "Error: invalid argument. First argument must be a valid storage layout. Value: `%d`.", layout );
+		return;
 	}
-	if ( info != 0 ) {
-		c_xerbla( info, "c_dger", "" );
+	if ( M < 0 ) {
+		c_xerbla( 2, "c_dger", "Error: invalid argument. Second argument must be a nonnegative integer. Value: `%d`.", M );
+		return;
+	}
+	if ( N < 0 ) {
+		c_xerbla( 3, "c_dger", "Error: invalid argument. Third argument must be a nonnegative integer. Value: `%d`.", N );
+		return;
+	}
+	if ( strideX == 0 ) {
+		c_xerbla( 6, "c_dger", "Error: invalid argument. Sixth argument must be nonzero. Value: `%d`.", strideX );
+		return;
+	}
+	if ( strideY == 0 ) {
+		c_xerbla( 8, "c_dger", "Error: invalid argument. Eighth argument must be nonzero. Value: `%d`.", strideX );
+		return;
+	}
+	if ( layout == CblasColMajor ) {
+		v = M;
+	} else {
+		v = N;
+	}
+	// max(1, v)
+	if ( v < 1 ) {
+		vala = 1;
+	} else {
+		vala = v;
+	}
+	if ( LDA < v ) {
+		c_xerbla( 10, "c_dger", "Error: invalid argument. Tenth argument must be greater than or equal to max(1,%d). Value: `%d`.", vala, LDA );
 		return;
 	}
 	// Check whether we can avoid computation altogether...
 	if ( M == 0 || N == 0 || alpha == 0.0 ) {
 		return;
 	}
-	// When provided a row-major matrix, we need to swap arguments...
-	if ( layout == CblasRowMajor ) {
-		x = Y;
-		y = X;
-		m = N;
-		n = M;
-		sx = strideY;
-		sy = strideX;
-	} else {
-		x = X;
-		y = Y;
-		m = M;
-		n = N;
-		sx = strideX;
-		sy = strideY;
+	ox = stdlib_strided_stride2offset( N, strideX );
+	oy = stdlib_strided_stride2offset( N, strideY );
+	if ( layout == CblasColMajor ) {
+		sa1 = 1;
+		sa2 = LDA;
+	} else { // layout == CblasRowMajor
+		sa1 = LDA;
+		sa2 = 1;
 	}
-	// Proceed with computation...
-	if ( sy > 0 ) {
-		jy = 0;
-	} else {
-		jy = ( 1 - n ) * sy;
-	}
-	if ( sx == 1 ) {
-		for ( j = 0; j < n; j++ ) {
-			if ( y[ jy ] != 0.0 ) {
-				tmp = alpha * y[ jy ];
-				for ( i = 0; i < m; i++ ) {
-					A[ (j*LDA)+i ] += x[ i ] * tmp; // per above, x has unit stride
-				}
-			}
-			jy += sy;
-		}
-		return;
-	}
-	if ( sx > 0 ) {
-		kx = 0;
-	} else {
-		kx = ( 1 - m ) * sx;
-	}
-	for ( j = 0; j < n; j++ ) {
-		if ( y[ jy ] != 0.0 ) {
-			tmp = alpha * y[ jy ];
-			ix = kx;
-			for ( i = 0; i < m; i++ ) {
-				A[ (j*LDA)+i ] += x[ ix ] * tmp;
-				ix += sx;
-			}
-		}
-		jy += sy;
-	}
+	API_SUFFIX(c_dger_ndarray)( M, N, alpha, X, strideX, ox, Y, strideY, oy, A, sa1, sa2, 0 );
 	return;
 }

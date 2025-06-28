@@ -71,7 +71,7 @@ var x0 = new Complex64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 // Create an offset view:
 var x1 = new Complex64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-// Compute the L2-out:
+// Compute the sum of absolute values:
 var out = scasum( 2, x1, 1 );
 // returns 18.0
 ```
