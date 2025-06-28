@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/math/base/special/rsqrtf.h"
-#include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/math/base/special/sqrtf.h"
 
 /**
 * Computes the reciprocal square root of a single-precision floating-point number.
