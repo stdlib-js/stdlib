@@ -32,7 +32,7 @@ var vartest = require( '@stdlib/stats/vartest' );
 
 #### vartest( x, y\[, opts] )
 
-By default, the function performs a two-sample F-test for the null hypothesis that the data in [arrays][mdn-array] or [typed arrays][mdn-typed-array] `x` and `y` is  independently drawn from normal distributions with _equal_ variances.
+By default, the function performs a two-sample F-test for the null hypothesis that the data in [arrays][mdn-array] or [typed arrays][mdn-typed-array] `x` and `y` is independently drawn from normal distributions with _equal_ variances.
 
 ```javascript
 var x = [ 610, 610, 550, 590, 565, 570 ];
