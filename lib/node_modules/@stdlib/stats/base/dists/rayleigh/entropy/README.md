@@ -108,7 +108,7 @@ var i;
 for ( i = 0; i < 10; i++ ) {
     sigma = randu() * 20.0;
     y = entropy( sigma );
-    console.log( 'sigma: %d, h(X,v): %d', sigma.toFixed( 4 ), y.toFixed( 4 ) );
+    console.log( 'σ: %d, h(X,v): %d', sigma.toFixed( 4 ), y.toFixed( 4 ) );
 }
 ```
 

@@ -49,7 +49,7 @@ var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
 var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
 
 var ybuf = [ 0.0, 0.0, 0.0, 0.0 ];
-var y = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var y = new ndarray( 'generic', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 
 var initial = scalar2ndarray( 0.0, 'generic', 'row-major' );
 

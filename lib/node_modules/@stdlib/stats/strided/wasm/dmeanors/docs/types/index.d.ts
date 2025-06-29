@@ -42,7 +42,7 @@ interface ModuleConstructor {
 	*     'maximum': 100
 	* });
 	*
-	* // Create a BLAS routine:
+	* // Create a new routine:
 	* var mod = new dmeanors.Module( mem );
 	* // returns <Module>
 	*
@@ -83,7 +83,7 @@ interface ModuleConstructor {
 	*     'maximum': 100
 	* });
 	*
-	* // Create a BLAS routine:
+	* // Create a new routine:
 	* var mod = dmeanors.Module( mem );
 	* // returns <Module>
 	*
@@ -131,7 +131,7 @@ interface Module extends ModuleWrapper {
 	*     'maximum': 100
 	* });
 	*
-	* // Create a BLAS routine:
+	* // Create a new routine:
 	* var mod = new dmeanors.Module( mem );
 	* // returns <Module>
 	*
@@ -175,7 +175,7 @@ interface Module extends ModuleWrapper {
 	*     'maximum': 100
 	* });
 	*
-	* // Create a BLAS routine:
+	* // Create a new routine:
 	* var mod = new dmeanors.Module( mem );
 	* // returns <Module>
 	*
@@ -258,7 +258,7 @@ interface Routine extends ModuleWrapper {
 	*     'maximum': 100
 	* });
 	*
-	* // Create a BLAS routine:
+	* // Create a new routine:
 	* var mod = new dmeanors.Module( mem );
 	* // returns <Module>
 	*

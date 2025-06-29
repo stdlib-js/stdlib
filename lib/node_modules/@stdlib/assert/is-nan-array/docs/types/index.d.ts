@@ -96,9 +96,9 @@ interface IsNaNArray {
 * var bool = isNaNArray.objects( [ new Number( NaN ), new Number( NaN ) ] );
 * // returns true
 */
-declare var isNumberArray: IsNaNArray;
+declare var isNaNArray: IsNaNArray;
 
 
 // EXPORTS //
 
-export = isNumberArray;
+export = isNaNArray;

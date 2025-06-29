@@ -96,27 +96,27 @@ static float rand_float( void ) {
 * @return             elapsed time in seconds
 */
 static double benchmark1( int iterations, int len ) {
-	stdlib_complex64_t ca;
-	float cx[ len*2 ];
+	stdlib_complex64_t alpha;
+	float x[ len*2 ];
 	double elapsed;
 	double t;
 	int i;
 
-	ca = stdlib_complex64( 1.0f, 0.0f );
+	alpha = stdlib_complex64( 1.0f, 0.0f );
 	for ( i = 0; i < len*2; i += 2 ) {
-		cx[ i ] = ( rand_float()*2.0f ) - 1.0f;
-		cx[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
+		x[ i ] = ( rand_float()*2.0f ) - 1.0f;
+		x[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		c_cscal( len, ca, (void *)cx, 1 );
-		if ( cx[ 0 ] != cx[ 0 ] ) {
+		c_cscal( len, alpha, (void *)x, 1 );
+		if ( x[ 0 ] != x[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( cx[ 0 ] != cx[ 0 ] ) {
+	if ( x[ 0 ] != x[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;
@@ -130,27 +130,27 @@ static double benchmark1( int iterations, int len ) {
 * @return             elapsed time in seconds
 */
 static double benchmark2( int iterations, int len ) {
-	stdlib_complex64_t ca;
-	float cx[ len*2 ];
+	stdlib_complex64_t alpha;
+	float x[ len*2 ];
 	double elapsed;
 	double t;
 	int i;
 
-	ca = stdlib_complex64( 1.0f, 0.0f );
+	alpha = stdlib_complex64( 1.0f, 0.0f );
 	for ( i = 0; i < len*2; i += 2 ) {
-		cx[ i ] = ( rand_float()*2.0f ) - 1.0f;
-		cx[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
+		x[ i ] = ( rand_float()*2.0f ) - 1.0f;
+		x[ i+1 ] = ( rand_float()*2.0f ) - 1.0f;
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		c_cscal_ndarray( len, ca, (void *)cx, 1, 0 );
-		if ( cx[ 0 ] != cx[ 0 ] ) {
+		c_cscal_ndarray( len, alpha, (void *)x, 1, 0 );
+		if ( x[ 0 ] != x[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( cx[ 0 ] != cx[ 0 ] ) {
+	if ( x[ 0 ] != x[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;
