@@ -23,7 +23,7 @@
 *
 * ## Notes
 *
-* -   For increased accuracy, the number for which the cosine should be evaluated can be supplied as a double-double number (i.e., a non-evaluated sum of two double-precision floating-point numbers `x` and `y`).
+* -   For increased accuracy, the number for which the sine should be evaluated can be supplied as a double-double number (i.e., a non-evaluated sum of two double-precision floating-point numbers `x` and `y`).
 * -   The two numbers must satisfy `|y| < 0.5 * ulp( x )`.
 *
 * @param x - input value (in radians, assumed to be bounded by `~pi/4` in magnitude)

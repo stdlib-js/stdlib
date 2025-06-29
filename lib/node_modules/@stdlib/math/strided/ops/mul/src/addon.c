@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -99,6 +99,7 @@ static const char name[] = "stdlib_strided_mul";
 
 // Define a list of strided array functions:
 static StridedArrayFcn functions[] = {
+	stdlib_strided_xx_x,
 	stdlib_strided_cc_c,
 	stdlib_strided_cc_z_as_zz_z,
 	stdlib_strided_cz_z_as_zz_z,
@@ -369,6 +370,7 @@ static StridedArrayFcn functions[] = {
 
 // Define the **strided array** argument types for each strided array function:
 static int32_t types[] = {
+	STDLIB_STRIDED_BOOL, STDLIB_STRIDED_BOOL, STDLIB_STRIDED_BOOL,
 	STDLIB_STRIDED_COMPLEX64, STDLIB_STRIDED_COMPLEX64, STDLIB_STRIDED_COMPLEX64,
 	STDLIB_STRIDED_COMPLEX64, STDLIB_STRIDED_COMPLEX64, STDLIB_STRIDED_COMPLEX128,
 	STDLIB_STRIDED_COMPLEX64, STDLIB_STRIDED_COMPLEX128, STDLIB_STRIDED_COMPLEX128,
@@ -639,6 +641,7 @@ static int32_t types[] = {
 
 // Define a list of strided array function "data" (in this case, callbacks):
 static void *data[] = {
+	(void *)mulx,
 	(void *)stdlib_base_complex64_mul,
 	(void *)stdlib_base_complex128_mul,
 	(void *)stdlib_base_complex128_mul,
@@ -925,7 +928,7 @@ static const struct StridedFunctionObject obj = {
 	functions,
 
 	// Number of strided array functions:
-	266,
+	267,
 
 	// Array of type "numbers" (as enumerated elsewhere), where the total number of types equals `narrays * nfunctions` and where each set of `narrays` consecutive types (non-overlapping) corresponds to the set of strided array argument types for a corresponding strided array function:
 	types,

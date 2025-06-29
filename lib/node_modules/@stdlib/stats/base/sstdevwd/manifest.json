@@ -26,7 +26,7 @@
   ],
   "confs": [
     {
-     "task": "build",
+      "task": "build",
       "src": [
         "./src/sstdevwd.c"
       ],
@@ -38,7 +38,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/svariancewd",
+        "@stdlib/stats/strided/svariancewd",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -60,7 +60,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/svariancewd"
+        "@stdlib/stats/strided/svariancewd"
       ]
     },
     {
@@ -76,7 +76,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/svariancewd"
+        "@stdlib/stats/strided/svariancewd"
       ]
     }
   ]
