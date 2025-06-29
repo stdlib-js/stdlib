@@ -73,7 +73,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/pow"
+        "@stdlib/math/base/special/pow",
+        "@stdlib/constants/float64/eps"
       ]
     }
   ]

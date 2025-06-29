@@ -76,7 +76,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/pow",
-        "@stdlib/constants/float64/ln-two"
+        "@stdlib/constants/float64/ln-two",
+        "@stdlib/constants/float64/eps"
       ]
     }
   ]
