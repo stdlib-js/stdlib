@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import nanmskmin = require( './index' );
 
 
@@ -27,6 +28,7 @@ import nanmskmin = require( './index' );
 	const mask = new Uint8Array( 10 );
 
 	nanmskmin( x.length, x, 1, mask, 1 ); // $ExpectType number
+	nanmskmin( x.length, new AccessorArray( x ), 1, mask, 1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -123,6 +125,7 @@ import nanmskmin = require( './index' );
 	const mask = new Uint8Array( 10 );
 
 	nanmskmin.ndarray( x.length, x, 1, 0, mask, 1, 0 ); // $ExpectType number
+	nanmskmin.ndarray( x.length, new AccessorArray( x ), 1, 0, mask, 1, 0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

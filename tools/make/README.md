@@ -22,7 +22,7 @@ limitations under the License.
 
 > Development utility.
 
-This project uses [`make`][make] as its development utility. For an overview of `make`, see the `make` [manual][make]. 
+This project uses [`make`][make] as its development utility. For an overview of `make`, see the `make` [manual][make].
 
 ## Usage
 
@@ -402,7 +402,7 @@ $ make BENCHMARKS_FILTER=".*/math/base/special/.*" BENCHMARKS_PATTERN=benchmark.
 To generate documentation from [JSDoc][jsdoc] source code comments,
 
 ```bash
-$ make docs-src
+$ make src-docs
 ```
 
 To view the documentation in a local web browser,

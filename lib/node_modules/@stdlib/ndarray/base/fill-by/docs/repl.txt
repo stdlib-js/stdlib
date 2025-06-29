@@ -4,6 +4,16 @@
 
     The function *mutates* the input ndarray.
 
+    The function assumes that each element in the underlying input ndarray data
+    buffer has one, and only one, corresponding element in input ndarray view
+    (i.e., a provided ndarray is not a broadcasted ndarray view).
+
+    The callback function is provided the following arguments:
+
+    - value: current array element.
+    - indices: current array element indices.
+    - arr: the input ndarray.
+
     Parameters
     ----------
     x: ndarrayLike

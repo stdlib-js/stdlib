@@ -1,7 +1,7 @@
 
 {{alias}}()
     Returns a `Buffer` containing image data of Karl Blossfeldt's gelatin silver
-    print *Allium ostrowskianum*.
+    print *Allium oreophilum*.
 
     Returns
     -------
@@ -15,7 +15,7 @@
 
     References
     ----------
-    - Blossfeldt, Karl. 1928. *Allium ostrowskianum*. <http://www.getty.edu/art/
+    - Blossfeldt, Karl. 1928. *Allium oreophilum*. <http://www.getty.edu/art/
     collection/objects/35448/karl-blossfeldt-allium-ostrowskianum-
     knoblauchpflanze-german-1928/>.
 

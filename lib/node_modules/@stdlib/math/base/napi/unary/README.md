@@ -509,7 +509,7 @@ When used, this macro should be used **instead of** `NAPI_MODULE`. The macro inc
 
 #### stdlib_math_base_napi_i_d( env, info, fcn )
 
-Invokes a unary function accepting a signed 32-bit integer and returning a single-precision floating-point number.
+Invokes a unary function accepting a signed 32-bit integer and returning a double-precision floating-point number.
 
 ```c
 #include <node_api.h>
