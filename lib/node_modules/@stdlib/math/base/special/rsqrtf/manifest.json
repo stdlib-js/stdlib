@@ -39,7 +39,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/special/sqrtf"
+        "@stdlib/math/base/special/sqrt"
       ]
     },
     {
@@ -55,7 +55,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/sqrtf"
+        "@stdlib/math/base/special/sqrt"
       ]
     },
     {
@@ -71,7 +71,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/sqrtf"
+        "@stdlib/math/base/special/sqrt"
       ]
     }
   ]

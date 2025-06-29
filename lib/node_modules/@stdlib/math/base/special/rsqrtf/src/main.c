@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/math/base/special/rsqrtf.h"
-#include "stdlib/math/base/special/sqrtf.h"
+#include "stdlib/math/base/special/sqrt.h"
 
 /**
 * Computes the reciprocal square root of a single-precision floating-point number.
@@ -30,5 +30,6 @@
 * // returns 0.5
 */
 float stdlib_base_rsqrtf( const float x ) {
-	return 1.0f / stdlib_base_sqrtf( x );
+	// As the square root is a fundamental numerical operation, compute in extended precision in order to avoid precision loss:
+	return 1.0f / stdlib_base_sqrt( x );
 }
