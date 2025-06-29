@@ -35,4 +35,3 @@
 double stdlib_base_dists_gamma_logcdf( const double x, const double alpha, const double beta ) {
 	return stdlib_base_ln( stdlib_base_dists_gamma_cdf( x, alpha, beta ) );
 }
-

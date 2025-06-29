@@ -20,4 +20,3 @@
 #include "stdlib/math/base/napi/ternary.h"
 
 STDLIB_MATH_BASE_NAPI_MODULE_DDD_D( stdlib_base_dists_gamma_logcdf )
-
