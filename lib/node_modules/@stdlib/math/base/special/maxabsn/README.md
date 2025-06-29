@@ -107,7 +107,7 @@ var opts = {
 var x = uniform( 100, -500.0, 500.0, opts );
 var y = uniform( 100, -500.0, 500.0, opts );
 
-logEachMap( 'maxabs(%0.4f,%0.4f) = %0.4f', x, y, maxabsn );
+logEachMap( 'maxabsn(%0.4f,%0.4f) = %0.4f', x, y, maxabsn );
 ```
 
 </section>
