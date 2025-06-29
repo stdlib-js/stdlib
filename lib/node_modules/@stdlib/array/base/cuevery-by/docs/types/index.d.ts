@@ -85,7 +85,7 @@ interface CuEveryBy {
 	* var x = [ 1, 1, 1, 0, 0 ];
 	*
 	* var y = cueveryBy( x, isPositive );
-	*  // returns [ true, true, true, false, false ];
+	* // returns [ true, true, true, false, false ];
 	*/
 	<T = unknown, U = unknown>( x: Collection<T> | AccessorArrayLike<T>, predicate: Predicate<T, U>, thisArg?: ThisParameterType<Predicate<T, U>> ): Array<boolean>;
 

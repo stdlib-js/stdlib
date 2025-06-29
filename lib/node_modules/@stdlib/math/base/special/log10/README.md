@@ -175,7 +175,7 @@ double stdlib_base_log10( const double x );
 #include <stdlib.h>
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     double x;
     double v;
     int i;
