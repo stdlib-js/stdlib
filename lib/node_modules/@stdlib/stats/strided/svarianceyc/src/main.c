@@ -42,7 +42,6 @@ float API_SUFFIX(stdlib_strided_svarianceyc)( const CBLAS_INT N, const float cor
 	return API_SUFFIX(stdlib_strided_svarianceyc_ndarray)( N, correction, X, strideX, ox );
 }
 
-
 /**
 * Computes the variance of a single-precision floating-point strided array using a one-pass algorithm proposed by Youngs and Cramer and alternative indexing semantics.
 *

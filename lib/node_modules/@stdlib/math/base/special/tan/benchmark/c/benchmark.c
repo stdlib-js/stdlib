@@ -22,6 +22,7 @@
 #include <time.h>
 #include <sys/time.h>
 
+#define NAME "tan"
 #define ITERATIONS 1000000
 #define REPEATS 3
 
@@ -125,7 +126,7 @@ int main( void ) {
 
 	print_version();
 	for ( i = 0; i < REPEATS; i++ ) {
-		printf( "# c::%s\n", "tan" );
+		printf( "# c::%s\n", NAME );
 		elapsed = benchmark();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", i+1 );

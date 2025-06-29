@@ -81,17 +81,18 @@ v = fallingFactorial( 3.0, -2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/array/uniform' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var fallingFactorial = require( '@stdlib/math/base/special/falling-factorial' );
 
-var x = randu( 100, -20.0, 20.0 );
-var n = discreteUniform( 100, 0, 20 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -20.0, 20.0, opts );
+var n = discreteUniform( 100, 0, 20, opts );
 
-var i;
-for ( i = 0; i < 100; i++ ) {
-    console.log( 'fallingFactorial(%d,%d) = %d', x[ i ], n[ i ], fallingFactorial( x[ i ], n[ i ] ) );
-}
+logEachMap( 'fallingFactorial(%0.4f,%0.4f) = %d', x, n, fallingFactorial );
 ```
 
 </section>
