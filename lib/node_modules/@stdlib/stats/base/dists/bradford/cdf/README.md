@@ -135,6 +135,91 @@ logEachMap( 'x: %0.4f, c: %0.4f, F(x;c): %0.4f', x, c, cdf );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+<section class="c">
+
+## C APIs
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/bradford/cdf.h"
+```
+
+#### stdlib_base_dists_bradford_cdf( x, c )
+
+Evaluates the cumulative distribution function for a Bradford distribution.
+
+```c
+double out = stdlib_base_dists_bradford_cdf( 0.5, 5.0 );
+// returns ~0.699
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **c**: `[in] double` shape parameter.
+
+```c
+double stdlib_base_dists_bradford_cdf( const double x, const double c );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/bradford/cdf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double x;
+    double c;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        x = random_uniform( 0.0, 1.0 );
+        c = random_uniform( 0.01, 10.0 );
+        y = stdlib_base_dists_bradford_cdf( x, c );
+        printf( "x: %lf, c: %lf, F(x;c): %lf\n", x, c, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

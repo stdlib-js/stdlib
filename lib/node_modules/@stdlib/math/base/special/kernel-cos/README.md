@@ -130,8 +130,8 @@ logEachMap( 'kernelCos(%0.4f, %0.4f) = %0.4f', x, 0.0, kernelCos );
 Computes the [cosine][cosine] of a double-precision floating-point number on `[-π/4, π/4]`.
 
 ```c
-var v = stdlib_base_kernel_cos( 0.0, 0.0 );
-// returns ~0.0
+double v = stdlib_base_kernel_cos( 0.0, 0.0 );
+// returns ~1.0
 
 v = stdlib_base_kernel_cos( 3.141592653589793/6.0, 0.0 );
 // returns ~0.866

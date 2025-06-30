@@ -133,7 +133,8 @@ y = mypdf( 4.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var EPS = require( '@stdlib/constants/float64/eps' );
 var pdf = require( '@stdlib/stats/base/dists/gamma/pdf' );
 
 var alpha;
@@ -142,18 +143,118 @@ var x;
 var y;
 var i;
 
-for ( i = 0; i < 10; i++ ) {
-    x = randu() * 3.0;
-    alpha = randu() * 5.0;
-    beta = randu() * 5.0;
-    y = pdf( x, alpha, beta );
-    console.log( 'x: %d, α: %d, β: %d, f(x;α,β): %d', x.toFixed( 4 ), alpha.toFixed( 4 ), beta.toFixed( 4 ), y.toFixed( 4 ) );
+x = uniform( 10, 0.0, 3.0 );
+alpha = uniform( 10, EPS, 5.0 );
+beta = uniform( 10, EPS, 5.0 );
+
+for ( i = 0; i < x.length; i++ ) {
+    y = pdf( x[ i ], alpha[ i ], beta[ i ] );
+    console.log( 'x: %d, α: %d, β: %d, f(x;α,β): %d', x[ i ].toFixed( 4 ), alpha[ i ].toFixed( 4 ), beta[ i ].toFixed( 4 ), y.toFixed( 4 ) );
 }
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/gamma/pdf.h"
+```
+
+#### stdlib_base_dists_gamma_pdf( x, alpha, beta )
+
+Evaluates the [probability density function][pdf] (PDF) for a [gamma][gamma-distribution] distribution with parameters `alpha` (shape parameter) and `beta` (rate parameter).
+
+```c
+double y = stdlib_base_dists_gamma_pdf( 2.0, 0.5, 1.0 );
+// returns ~0.054
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **alpha**: `[in] double` shape parameter.
+-   **beta**: `[in] double` rate parameter.
+
+```c
+double stdlib_base_dists_gamma_pdf( const double x, const double alpha, const double beta );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/gamma/pdf.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double alpha;
+    double beta;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        x = random_uniform( 0.0, 3.0 );
+        alpha = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 5.0 );
+        beta = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 5.0 );
+        y = stdlib_base_dists_gamma_pdf( x, alpha, beta );
+        printf( "x: %lf, α: %lf, β: %lf, f(x;α,β): %lf\n", x, alpha, beta, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

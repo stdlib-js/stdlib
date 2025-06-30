@@ -69,6 +69,6 @@ interface Options {
 declare function iterTribonacciSeq( options?: Options ): Iterator;
 
 
-// EXPORTS //s
+// EXPORTS //
 
 export = iterTribonacciSeq;

@@ -1,5 +1,5 @@
 
-{{alias}}( ord, trans, M, N, α, A, lda, x, sx, β, y, sy )
+{{alias}}( order, trans, M, N, α, A, lda, x, sx, β, y, sy )
     Performs one of the matrix-vector operations `y = α*A*x + β*y` or
     `y = α*A**T*x + β*y`, where `α` and `β` are scalars, `x` and `y` are
     vectors, and `A` is an `M` by `N` matrix.
@@ -9,11 +9,11 @@
 
     If `M` or `N` is equal to `0`, the function returns `y` unchanged.
 
-    If `α` equals `0` and β equals `1`, the function returns `y` unchanged.
+    If `α` equals `0` and `β` equals `1`, the function returns `y` unchanged.
 
     Parameters
     ----------
-    ord: string
+    order: string
         Row-major (C-style) or column-major (Fortran-style) order.
 
     trans: string
@@ -75,14 +75,14 @@
     <Float64Array>[ 8.0, 4.0 ]
 
     // Using typed array views:
-    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, 1.0 ] );
-    > var y0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 1.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 1.0 ] );
     > A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
     > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
     > {{alias}}( ord, trans, 2, 2, 1.0, A, 2, x1, -1, 1.0, y1, -1 );
     > y0
-    <Float64Array>[ 1.0, 8.0 ]
+    <Float64Array>[ 0.0, 8.0, 4.0 ]
 
 
 {{alias}}.ndarray( trans, M, N, α, A, sa1, sa2, oa, x, sx, ox, β, y, sy, oy )
