@@ -25,8 +25,7 @@
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 /**

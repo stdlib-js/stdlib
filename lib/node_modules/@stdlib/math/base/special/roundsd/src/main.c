@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+#include "stdlib/math/base/special/roundsd.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/pow.h"
 #include "stdlib/math/base/assert/is_infinite.h"

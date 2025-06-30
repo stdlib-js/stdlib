@@ -109,7 +109,7 @@ logEachMap( 'x: %0.4f. y: %d. z: %d. Rounded: %0.4f.', x, 5, 10, ceilsd );
 
 #### stdlib_base_ceilsd( x, n, b )
 
-Rounds a `numeric` value to the nearest `number` toward negative infinity with `n` significant figures.
+Rounds a `numeric` value to the nearest `number` toward positive infinity with `n` significant figures.
 
 ```c
 double out = stdlib_base_ceilsd( 0.0313, 2, 2 );

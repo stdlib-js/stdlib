@@ -62,7 +62,8 @@
         "@stdlib/math/base/special/sinpi",
         "@stdlib/constants/float64/pi",
         "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/ninf"
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/eps"
       ]
     },
     {
@@ -81,7 +82,8 @@
         "@stdlib/math/base/special/sinpi",
         "@stdlib/constants/float64/pi",
         "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/ninf"
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/eps"
       ]
     }
   ]

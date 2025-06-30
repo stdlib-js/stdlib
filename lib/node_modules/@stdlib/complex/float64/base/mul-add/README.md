@@ -201,8 +201,8 @@ double im = stdlib_complex128_imag( out );
 The function accepts the following arguments:
 
 -   **alpha**: `[in] stdlib_complex128_t` input value.
--   **z1**: `[in] stdlib_complex128_t` input value.
--   **z2**: `[in] stdlib_complex128_t` input value.
+-   **x**: `[in] stdlib_complex128_t` input value.
+-   **y**: `[in] stdlib_complex128_t` input value.
 
 ```c
 stdlib_complex128_t stdlib_base_complex128_muladd( const stdlib_complex128_t alpha, const stdlib_complex128_t x, const stdlib_complex128_t y );
