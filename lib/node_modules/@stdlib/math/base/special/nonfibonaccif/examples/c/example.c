@@ -23,6 +23,6 @@ int main( void ) {
 	int i;
 
 	for ( i = 1; i < 12; i++ ) {
-		printf( "x: %i => result: %f", i , stdlib_base_nonfibonaccif( i ) );
+		printf( "x: %i => result: %f\n", i, stdlib_base_nonfibonaccif( i ) );
 	}
 }

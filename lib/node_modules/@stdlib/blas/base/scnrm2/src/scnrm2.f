@@ -44,11 +44,11 @@
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
 ! @param {integer} N - number of indexed elements
-! @param {Array<complex>} cx - array
-! @param {integer} strideX - `cx` stride length
+! @param {Array<complex>} x - array
+! @param {integer} strideX - `x` stride length
 ! @returns {real} L2-norm
 !<
-real function scnrm2( N, cx, strideX )
+real function scnrm2( N, x, strideX )
   implicit none
   ! ..
   ! Define a kind parameter for single precision:
@@ -69,7 +69,7 @@ real function scnrm2( N, cx, strideX )
   integer :: N, strideX
   ! ..
   ! Array arguments:
-  complex( wp ) :: cx( * )
+  complex( wp ) :: x( * )
   ! ..
   ! Local scalars:
   integer :: i, ix
@@ -104,7 +104,7 @@ real function scnrm2( N, cx, strideX )
   end if
   ! ..
   do i = 1, N
-    ax = abs( real( cx( ix ) ) )
+    ax = abs( real( x( ix ) ) )
     if ( ax > tbig ) then
       abig = abig + ( ax * sbig )**2
       notbig = .false.
@@ -115,7 +115,7 @@ real function scnrm2( N, cx, strideX )
     else
       amed = amed + ax**2
     end if
-    ax = abs( aimag( cx( ix ) ) )
+    ax = abs( aimag( x( ix ) ) )
     if ( ax > tbig ) then
       abig = abig + ( ax * sbig )**2
       notbig = .false.

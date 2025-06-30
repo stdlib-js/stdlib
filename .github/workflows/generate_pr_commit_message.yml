@@ -65,6 +65,7 @@ jobs:
       # Generate commit message:
       - name: 'Generate commit message'
         id: commit_message
+        shell: bash {0} # Omit -e to avoid triggering a failure if the script returns a non-zero exit code
         run: |
           COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message $PR_NUMBER)
           EXIT_CODE=$?

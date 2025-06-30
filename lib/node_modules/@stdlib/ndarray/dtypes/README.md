@@ -46,15 +46,17 @@ Returns a list of ndarray data types.
 
 ```javascript
 var out = dtypes();
-// e.g., returns [ 'binary', 'complex64', 'complex128', ... ]
+// e.g., returns [ 'binary', 'complex32', 'complex64', 'complex128', ... ]
 ```
 
 When not provided a data type "kind", the function returns an array containing the following data types:
 
 -   `binary`: binary.
 -   `bool`: boolean values.
+-   `complex32`: half-precision complex floating-point numbers.
 -   `complex64`: single-precision complex floating-point numbers.
 -   `complex128`: double-precision complex floating-point numbers.
+-   `float16`: half-precision floating-point numbers.
 -   `float32`: single-precision floating-point numbers.
 -   `float64`: double-precision floating-point numbers.
 -   `generic`: values of any type.
