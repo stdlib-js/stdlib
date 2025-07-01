@@ -123,7 +123,7 @@ logEachMap( 'h(%d,%d) = %0.4f', x, y, hypotf );
 ### Usage
 
 ```c
-#include "stdlib/math/base/special/hypotf.h
+#include "stdlib/math/base/special/hypotf.h"
 ```
 
 #### stdlib_base_hypotf( x, y )
