@@ -1,6 +1,5 @@
 [
   [
-    "bool",
     "complex64",
     "complex128",
     "float32",
@@ -14,7 +13,6 @@
     "uint8"
   ],
   [
-    "bool",
     "complex64",
     "complex128",
     "float32",
@@ -28,7 +26,6 @@
     "uint8"
   ],
   [
-    "bool",
     "complex64",
     "complex128",
     "float32",

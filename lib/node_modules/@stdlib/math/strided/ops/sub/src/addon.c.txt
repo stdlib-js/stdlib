@@ -19,7 +19,7 @@
 /* {{NOTE}} */
 
 #include "stdlib/number/float64/base/{{FCN_BASENAME}}.h"
-#include "stdlib/number/float64/base/{{FCN_BASENAME}}.h"
+#include "stdlib/number/float32/base/{{FCN_BASENAME}}.h"
 #include "stdlib/complex/float64/base/{{FCN_BASENAME}}.h"
 #include "stdlib/complex/float32/base/{{FCN_BASENAME}}.h"
 #include "stdlib/strided/dtypes.h"
