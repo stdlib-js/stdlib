@@ -98,7 +98,7 @@
 * @param strideY    stride length for `Y`
 * @param offsetY    starting index for `Y`
 * @param A          matrix of coefficients
-* @param strideA1   stride length of the first dimnension of `A`
+* @param strideA1   stride length of the first dimension of `A`
 * @param strideA2   stride length of the second dimension of `A`
 * @param offsetA    starting index for `A`
 */
