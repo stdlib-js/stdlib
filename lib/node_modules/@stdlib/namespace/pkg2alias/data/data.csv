@@ -1275,9 +1275,9 @@
 "@stdlib/stats/strided/nanmin",base.strided.nanmin
 "@stdlib/stats/strided/nanminabs",base.strided.nanminabs
 "@stdlib/stats/strided/nanmin-by",base.strided.nanminBy
-"@stdlib/stats/base/nanmskmax",base.strided.nanmskmax
-"@stdlib/stats/base/nanmskmin",base.strided.nanmskmin
-"@stdlib/stats/base/nanmskrange",base.strided.nanmskrange
+"@stdlib/stats/strided/nanmskmax",base.strided.nanmskmax
+"@stdlib/stats/strided/nanmskmin",base.strided.nanmskmin
+"@stdlib/stats/strided/nanmskrange",base.strided.nanmskrange
 "@stdlib/stats/base/nanrange",base.strided.nanrange
 "@stdlib/stats/base/nanrange-by",base.strided.nanrangeBy
 "@stdlib/stats/base/nanstdev",base.strided.nanstdev
