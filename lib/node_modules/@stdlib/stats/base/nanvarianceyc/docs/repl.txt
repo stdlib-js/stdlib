@@ -46,18 +46,18 @@
     --------
     // Standard Usage:
     > var x = [ 1.0, -2.0, NaN, 2.0 ];
-    > {{alias}}( 4, 1, x, 1 )
+    > {{alias}}( 4, 1.0, x, 1 )
     ~4.3333
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ];
-    > {{alias}}( 3, 1, x, 2 )
+    > {{alias}}( 3, 1.0, x, 2 )
     ~4.3333
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > {{alias}}( 3, 1, x1, 2 )
+    > {{alias}}( 3, 1.0, x1, 2 )
     ~4.3333
 
 
@@ -106,12 +106,12 @@
     --------
     // Standard Usage:
     > var x = [ 1.0, -2.0, NaN, 2.0 ];
-    > {{alias}}.ndarray( 4, 1, x, 1, 0 )
+    > {{alias}}.ndarray( 4, 1.0, x, 1, 0 )
     ~4.3333
 
     // Using offset parameter:
     > var x = [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0 ];
-    > {{alias}}.ndarray( 3, 1, x, 2, 1 )
+    > {{alias}}.ndarray( 3, 1.0, x, 2, 1 )
     ~4.3333
 
     See Also

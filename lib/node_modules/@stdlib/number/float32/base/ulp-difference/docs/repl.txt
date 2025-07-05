@@ -1,0 +1,45 @@
+
+{{alias}}( x, y )
+    Computes the number of representable single-precision floating-point values
+    that separate two single-precision floating-point numbers along the real
+    number line.
+
+    Adjacent single-precision floating-point numbers differ by 1 ulp (unit in
+    the last place).
+
+    Signed zeros differ only in the sign bit but are considered numerically
+    equal, and thus their ULP difference is 0.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        First input value.
+
+    y: number
+        Second input value.
+
+    Returns
+    -------
+    z: number
+        Result.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1.0, 1.0+{{alias:@stdlib/constants/float32/eps}} )
+    1.0
+    > v = {{alias}}( 1.0+{{alias:@stdlib/constants/float32/eps}}, 1.0 )
+    1.0
+    > v = {{alias}}( 1.0, 1.0+{{alias:@stdlib/constants/float32/eps}}*2.0 )
+    2.0
+    > v = {{alias}}( 1.0, NaN )
+    NaN
+    > v = {{alias}}( NaN, 1.0 )
+    NaN
+    > v = {{alias}}( NaN, NaN )
+    NaN
+
+    See Also
+    --------
+

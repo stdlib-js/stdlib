@@ -95,11 +95,11 @@ interface PRNG {
 }
 
 /**
-* Interface for generating pseudorandom integers on the interval `[1, 4294967295]`.
+* Interface for generating pseudorandom integers on the interval `[0, 4294967295]`.
 */
 interface NullaryFunction extends PRNG {
 	/**
-	* Returns a pseudorandom integer on the interval `[1, 4294967295]`.
+	* Returns a pseudorandom integer on the interval `[0, 4294967295]`.
 	*
 	* @returns pseudorandom number
 	*/

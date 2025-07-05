@@ -149,14 +149,14 @@ int main( void ) {
     bool b;
     int i;
 
-    for ( i = 0; i < 9; i++ ) {
+    for ( i = 0; i < 10; i++ ) {
         b = stdlib_base_uint32_is_pow2( x[ i ] );
         printf( "Value: %u. is a power of 2? %s.\n", x[ i ], ( b ) ? "True" : "False" );
     }
 }
 ```
 
-</section>s
+</section>
 
 <!-- /.examples -->
 

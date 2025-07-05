@@ -158,6 +158,104 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/logistic/logcdf.h"
+```
+
+#### stdlib_base_dists_logistic_logcdf( x, mu, s )
+
+Evaluates the logarithm of the cumulative distribution function (CDF) for a logistic distribution with location parameter `mu` and scale parameter `s` at a value `x`.
+
+```c
+double out = stdlib_base_dists_logistic_logcdf( 2.0, 0.0, 1.0 );
+// returns ~-0.127
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input parameter.
+-   **mu**: `[in] double` location parameter.
+-   **s**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_logistic_logcdf( const double x, const double mu, const double s );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/logistic/logcdf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double mu;
+    double s;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        mu = random_uniform( -5.0, 5.0 );
+        s = random_uniform( 0.0, 20.0 );
+        x = random_uniform( -10.0, 10.0 );
+        y = stdlib_base_dists_logistic_logcdf( x, mu, s );
+        printf( "x: %lf, µ: %lf, s: %lf, ln(F(x;µ,s)): %lf\n", x, mu, s, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
