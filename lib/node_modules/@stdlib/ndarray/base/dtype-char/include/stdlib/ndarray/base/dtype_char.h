@@ -55,6 +55,7 @@ enum STDLIB_NDARRAY_DTYPE_CHAR {
 	STDLIB_NDARRAY_FLOAT64_CHAR = 'd',       // *d*ouble
 	STDLIB_NDARRAY_FLOAT128_CHAR = 'g',
 
+	STDLIB_NDARRAY_COMPLEX32_CHAR = 'j',
 	STDLIB_NDARRAY_COMPLEX64_CHAR = 'c',     // *c*omplex (BLAS convention)
 	STDLIB_NDARRAY_COMPLEX128_CHAR = 'z',    // *z* (BLAS convention)
 

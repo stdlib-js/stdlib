@@ -2,8 +2,10 @@
   "all": [
     "binary",
     "bool",
+    "complex32",
     "complex64",
     "complex128",
+    "float16",
     "float32",
     "float64",
     "generic",
@@ -18,8 +20,10 @@
   "typed": [
     "binary",
     "bool",
+    "complex32",
     "complex64",
     "complex128",
+    "float16",
     "float32",
     "float64",
     "int16",
@@ -31,16 +35,20 @@
     "uint8c"
   ],
   "floating_point": [
+    "complex32",
     "complex64",
     "complex128",
+    "float16",
     "float32",
     "float64"
   ],
   "real_floating_point": [
+    "float16",
     "float32",
     "float64"
   ],
   "complex_floating_point": [
+    "complex32",
     "complex64",
     "complex128"
   ],
@@ -68,6 +76,7 @@
     "uint8c"
   ],
   "real": [
+    "float16",
     "float32",
     "float64",
     "int16",
@@ -79,8 +88,10 @@
     "uint8c"
   ],
   "numeric": [
+    "complex32",
     "complex64",
     "complex128",
+    "float16",
     "float32",
     "float64",
     "int16",

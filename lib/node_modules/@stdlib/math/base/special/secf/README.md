@@ -117,7 +117,7 @@ Evaluates the [secant][trigonometric-functions] of a single-precision floating-p
 float out = stdlib_base_secf( 0.0f );
 // returns 1.0f
 
-out = stdlib_base_cos( 3.1415927410125732f );
+out = stdlib_base_secf( 3.1415927410125732f );
 // returns -1.0f
 ```
 

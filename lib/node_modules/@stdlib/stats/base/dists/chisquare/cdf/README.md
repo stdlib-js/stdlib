@@ -125,6 +125,90 @@ y = mycdf( 1.5 );
 
 <!-- /.usage -->
 
+* * *
+
+<section class="c">
+
+## C APIs
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/chisquare/cdf.h"
+```
+
+#### stdlib_base_dists_chisquare_cdf( x, k )
+
+Evaluates the [cumulative distribution function][cdf] (CDF) for a [chi-squared][chisquare-distribution] distribution with degrees of freedom `k`.
+
+```c
+double out = stdlib_base_dists_chisquare_cdf( 2.0, 1.0 );
+// returns ~0.843
+
+out = stdlib_base_dists_chisquare_cdf( 2.0, 3.0 );
+// returns ~0.428
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **k**: `[in] double` degrees of freedom.
+
+```c
+double stdlib_base_dists_chisquare_cdf( const double x, const double k );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/chisquare/cdf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( double min, double max ) {
+    double scale = rand() / (double) RAND_MAX;
+    return min + ( scale * ( max - min ) );
+}
+
+int main( void ) {
+    double x;
+    double k;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        x = random_uniform( 0.0, 10.0 );
+        k = random_uniform( 1.0, 10.0 );
+        y = stdlib_base_dists_chisquare_cdf( x, k );
+        printf( "x: %lf, k: %lf, F(x;k): %lf\n", x, k, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+* * *
+
 <section class="examples">
 
 ## Examples
