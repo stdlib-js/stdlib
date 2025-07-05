@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray<T> = Collection<T> | AccessorArrayLike<T>;
 
 /**
 * Returns an accessed value.
@@ -83,7 +88,7 @@ type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U> | 
 */
 interface Routine {
 	/**
-	* Calculates the range of a strided array via a callback function.
+	* Computes the range of a strided array via a callback function.
 	*
 	* ## Notes
 	*
@@ -98,7 +103,7 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @param clbk - callback
 	* @param thisArg - execution context
 	* @returns range
@@ -113,10 +118,10 @@ interface Routine {
 	* var v = rangeBy( x.length, x, 1, accessor );
 	* // returns 18.0
 	*/
-	<T = unknown, U = unknown>( N: number, x: Collection<T>, stride: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): number;
+	<T = unknown, U = unknown>( N: number, x: InputArray<T>, strideX: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): number;
 
 	/**
-	* Calculates the range of a strided array via a callback function and using alternative indexing semantics.
+	* Computes the range of a strided array via a callback function and using alternative indexing semantics.
 	*
 	* ## Notes
 	*
@@ -131,8 +136,8 @@ interface Routine {
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @param clbk - callback
 	* @param thisArg - execution context
 	* @returns range
@@ -147,11 +152,11 @@ interface Routine {
 	* var v = rangeBy.ndarray( x.length, x, 1, 0, accessor );
 	* // returns 18.0
 	*/
-	ndarray<T = unknown, U = unknown>( N: number, x: Collection<T>, stride: number, offset: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): number;
+	ndarray<T = unknown, U = unknown>( N: number, x: InputArray<T>, strideX: number, offsetX: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): number;
 }
 
 /**
-* Calculates the range of a strided array via a callback function.
+* Computes the range of a strided array via a callback function.
 *
 * ## Notes
 *
@@ -166,7 +171,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @param clbk - callback
 * @param thisArg - execution context
 * @returns range
