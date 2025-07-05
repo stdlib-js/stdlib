@@ -112,7 +112,7 @@ main() {
 	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
 
 	# Find unique package directories:
-	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | uniq)
+	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?$//' | uniq)
 
 	if [ -z "${directories}" ]; then
 		echo 'No packages to test.' >&2
@@ -132,7 +132,7 @@ main() {
 		dependents=$(find lib/node_modules/@stdlib -type f -name '*.js' -exec grep -ol -E "require\( [']${escaped_package}['] \)" {} +) || true
 		echo "Found: ${dependents}"
 		if [ -n "${dependents}" ]; then
-			dependents=$(dirname $dependents | sed -E 's/\/(bin|data|etc|include|lib|src|test)\/?$//' | sort -u)
+			dependents=$(dirname $dependents | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?$//' | sort -u)
 			echo "List of dependents: ${dependents}"
 			required_by="${required_by} ${dependents}"
 		fi

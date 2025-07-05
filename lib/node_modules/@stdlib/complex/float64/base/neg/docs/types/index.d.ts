@@ -30,54 +30,27 @@ import { Complex128 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var z1 = new Complex128( -4.2, 5.5 );
-* // returns <Complex128>
 *
 * var out = cneg( z1 );
-* // returns <Complex128>
-*
-* var re = real( out );
-* // returns 4.2
-*
-* var im = imag( out );
-* // returns -5.5
+* // returns <Complex128>[ 4.2, -5.5 ]
 *
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var z2 = new Complex128( 0.0, 0.0 );
-* // returns <Complex128>
 *
 * var out = cneg( z2 );
-* // returns <Complex128>
-*
-* var re = real( out );
-* // returns -0.0
-*
-* var im = imag( out );
-* // returns -0.0
+* // returns <Complex128>[ -0.0, -0.0 ]
 *
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var z3 = new Complex128( NaN, NaN );
-* // returns <Complex128>
 *
 * var out = cneg( z3 );
-* // returns <Complex128>
-*
-* var re = real( out );
-* // returns NaN
-*
-* var im = imag( out );
-* // returns NaN
+* // returns <Complex128>[ NaN, NaN ]
 */
 declare function cneg( z: Complex128 ): Complex128;
 

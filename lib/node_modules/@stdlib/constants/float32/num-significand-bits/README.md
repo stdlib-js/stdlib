@@ -94,7 +94,7 @@ console.log( FLOAT32_NUM_SIGNIFICAND_BITS );
 
 #### STDLIB_CONSTANT_FLOAT32_NUM_SIGNIFICAND_BITS
 
-Number of significand bits for a [single-precision floating-point number][ieee754].
+Macro for the number of significand bits for a [single-precision floating-point number][ieee754].
 
 </section>
 
