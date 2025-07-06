@@ -19,7 +19,7 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_ISAMAX`.
 */
-#ifndef ISAMAX_CLBAS_H
+#ifndef ISAMAX_CBLAS_H
 #define ISAMAX_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"

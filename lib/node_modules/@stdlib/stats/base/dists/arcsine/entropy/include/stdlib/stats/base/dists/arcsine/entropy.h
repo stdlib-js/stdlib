@@ -35,4 +35,4 @@ double stdlib_base_dists_arcsine_entropy( const double a, const double b );
 }
 #endif
 
-#endif // !STDLIB_STATS_BASE_DISTS_ENTROPY_H
+#endif // !STDLIB_STATS_BASE_DISTS_ARCSINE_ENTROPY_H

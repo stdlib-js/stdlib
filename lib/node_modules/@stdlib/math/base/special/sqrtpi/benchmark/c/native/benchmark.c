@@ -75,21 +75,34 @@ static double tic( void ) {
 }
 
 /**
+* Generates a random number on the interval [0,1).
+*
+* @return random number
+*/
+static double rand_double( void ) {
+	int r = rand();
+	return (double)r / ( (double)RAND_MAX + 1.0 );
+}
+
+/**
 * Runs a benchmark.
 *
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double x[ 100 ];
 	double elapsed;
-	double x;
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = 100000.0 * rand_double();
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( (double)rand() * 100000.0 ) - 0.0;
-		y = stdlib_base_sqrtpi( x );
+		y = stdlib_base_sqrtpi( x[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

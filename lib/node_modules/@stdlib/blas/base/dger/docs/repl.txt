@@ -1,0 +1,141 @@
+
+{{alias}}( ord, M, N, α, x, sx, y, sy, A, lda )
+    Performs the rank 1 operation `A = α*x*y^T + A`, where `α` is a scalar, `x`
+    is an `M` element vector, `y` is an `N` element vector, and `A` is an `M` by
+    `N` matrix.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `M`, `N`, or `α` is equal to `0`, the function returns `A` unchanged.
+
+    Parameters
+    ----------
+    ord: string
+        Row-major (C-style) or column-major (Fortran-style) order.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    α: number
+        Scalar constant.
+
+    x: Float64Array
+        First input vector.
+
+    sx: integer
+        Stride length for `x`.
+
+    y: Float64Array
+        Second input vector.
+
+    sy: integer
+        Stride length for `y`.
+
+    A: Float64Array
+        Input Matrix.
+
+    lda: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    Returns
+    -------
+    A: Float64Array
+        Input Matrix.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var ord = 'row-major';
+    > {{alias}}( ord, 2, 2, 1.0, x, 1, y, 1, A, 2 )
+    <Float64Array>[ 2.0, 3.0, 4.0, 5.0 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > {{alias}}( ord, 2, 2, 1.0, x, -1, y, -1, A, 2 )
+    <Float64Array>[ 2.0, 3.0, 4.0, 5.0 ]
+
+    // Using typed array views:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 1.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 1.0 ] );
+    > A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( ord, 2, 2, 1.0, x1, -1, y1, -1, A, 2 )
+    <Float64Array>[ 2.0, 3.0, 4.0, 5.0 ]
+
+
+{{alias}}.ndarray( M, N, α, x, sx, ox, y, sy, oy, A, sa1, sa2, oa )
+    Performs the rank 1 operation `A = α*x*y^T + A`, using alternative indexing
+    semantics and where `α` is a scalar, `x` is an `M` element vector, `y` is an
+    `N` element vector, and `A` is an `M` by `N` matrix.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    α: number
+        Scalar constant.
+
+    x: Float64Array
+        First input vector.
+
+    sx: integer
+        Stride length for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    y: Float64Array
+        Second input vector.
+
+    sy: integer
+        Stride length for `y`.
+
+    oy: integer
+        Starting index for `y`.
+
+    A: Float64Array
+        Input Matrix.
+
+    sa1: integer
+        Stride of the first dimension of `A`.
+
+    sa2: integer
+        Stride of the second dimension of `A`.
+
+    oa: integer
+        Starting index for `A`.
+
+    Returns
+    -------
+    A: Float64Array
+        Input Matrix.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > {{alias}}.ndarray( 2, 2, 1.0, x, 1, 0, y, 1, 0, A, 2, 1, 0 )
+    <Float64Array>[ 2.0, 3.0, 4.0, 5.0 ]
+
+    See Also
+    --------

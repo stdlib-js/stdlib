@@ -101,8 +101,8 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		alpha[ i ] = random_uniform( 0.0, 10.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
-		beta[ i ] = random_uniform( 0.0, 10.0 ) + STDLIB_CONSTANT_FLOAT64_EPS;
+		alpha[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
+		beta[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
 	}
 
 	t = tic();

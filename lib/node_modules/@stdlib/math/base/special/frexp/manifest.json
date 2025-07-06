@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,30 @@
   ],
   "confs": [
     {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-float64array",
+        "@stdlib/napi/export",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/number/float64/base/normalize",
+        "@stdlib/number/float64/base/exponent",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/number/float64/base/to-words"
+      ]
+    },
+    {
+      "task": "benchmark",
       "src": [
         "./src/main.c"
       ],
@@ -35,13 +61,30 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/abs",
         "@stdlib/number/float64/base/normalize",
         "@stdlib/number/float64/base/exponent",
         "@stdlib/number/float64/base/from-words",
-        "@stdlib/number/float32/base/to-word"
+        "@stdlib/number/float64/base/to-words"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/number/float64/base/normalize",
+        "@stdlib/number/float64/base/exponent",
+        "@stdlib/number/float64/base/from-words",
+        "@stdlib/number/float64/base/to-words"
       ]
     }
   ]
 }
-

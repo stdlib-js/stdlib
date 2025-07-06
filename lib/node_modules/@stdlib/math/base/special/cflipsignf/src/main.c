@@ -18,7 +18,8 @@
 
 #include "stdlib/math/base/special/cflipsignf.h"
 #include "stdlib/math/base/assert/is_negative_zerof.h"
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
 
 /**
 * Returns a single-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.
@@ -28,15 +29,29 @@
 * @return        result
 *
 * @example
-* float complex y = stdlib_base_cflipsignf( 3.0-2.0*I, -1.0 );
-* // returns -3.0+2.0*I
+* #include "stdlib/complex/float32/ctor.h"
+* #include "stdlib/complex/float32/real.h"
+* #include "stdlib/complex/float32/imag.h"
+*
+* stdlib_complex64_t z = stdlib_complex64( 3.5f, -2.5f );
+*
+* stdlib_complex64_t out = stdlib_base_cflipsignf( z, -1.0f );
+*
+* float re = stdlib_complex64_real( out );
+* // returns -3.5f
+*
+* float im = stdlib_complex64_imag( out );
+* // returns 2.5f
 */
-float complex stdlib_base_cflipsignf( const float complex z, const float y ) {
-	float re = crealf( z );
-	float im = cimagf( z );
+stdlib_complex64_t stdlib_base_cflipsignf( const stdlib_complex64_t z, const float y ) {
+	float re;
+	float im;
+
+	stdlib_complex64_reim( z, &re, &im );
+
 	if ( y < 0 || stdlib_base_is_negative_zerof( y ) ) {
 		re = -re;
 		im = -im;
 	}
-	return re + im*I;
+	return stdlib_complex64( re, im );
 }

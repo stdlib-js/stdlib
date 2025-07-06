@@ -36,8 +36,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/napi/unary",
-        "@stdlib/constants/float64/pinf"
+        "@stdlib/math/base/napi/unary"
       ]
     },
     {
@@ -50,9 +49,7 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": [
-        "@stdlib/constants/float64/pinf"
-      ]
+      "dependencies": []
     },
     {
       "task": "examples",
@@ -64,9 +61,7 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": [
-        "@stdlib/constants/float64/pinf"
-      ]
+      "dependencies": []
     }
   ]
 }

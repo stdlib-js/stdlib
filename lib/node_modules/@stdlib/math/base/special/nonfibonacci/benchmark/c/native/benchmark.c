@@ -92,13 +92,16 @@ static double benchmark( void ) {
 	double elapsed;
 	double t;
 	double y;
-	int x;
+	int x[ 100 ];
 	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = (int)floor( (100.0*rand_double()) + 1.0 );
+	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = (int)floor( (100.0*rand_double()) + 1.0 );
-		y = stdlib_base_nonfibonacci( x );
+		y = stdlib_base_nonfibonacci( x[ i%100 ] );
 		if ( y < 0 ) {
 			printf( "should return a nonnegative integer\n" );
 			break;
