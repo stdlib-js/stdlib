@@ -1,0 +1,37 @@
+
+{{alias}}( arrays )
+    Computes the cumulative minimum value of a one-dimensional double-precision
+    floating-point ndarray.
+
+    If provided an empty input ndarray, the function returns the output ndarray
+    unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray and a one-
+        dimensional output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 2.0 ] );
+    > var ybuf = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0 ] );
+    > var dt = 'float64';
+    > var sh = [ xbuf.length ];
+    > var st = [ 1 ];
+    > var oo = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
+    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, st, oo, ord );
+    > {{alias}}( [ x, y ] );
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ 1.0, -2.0, -2.0 ]
+
+    See Also
+    --------
+

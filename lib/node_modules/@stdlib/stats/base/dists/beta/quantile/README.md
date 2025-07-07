@@ -39,7 +39,7 @@ Q(p;\alpha,\beta)\,=\,\inf\left\{ x\in [0,1] : p \le F(x;\alpha,\beta) \right\}
 
 <!-- </equation> -->
 
-for `0 <= p <= 1`, where `alpha > 0` is the first shape parameter and `beta > 0` is the second shape parameter and `F(x;alpha,beta)` denotes the cumulative distribution function of a [beta][beta-distribution] random variable with parameters `alpha` and `beta`.
+for `0 <= p <= 1`, where `α > 0` is the first shape parameter and `β > 0` is the second shape parameter and `F(x;α,β)` denotes the cumulative distribution function of a [beta][beta-distribution] random variable with parameters `α` and `β`.
 
 </section>
 

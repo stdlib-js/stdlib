@@ -145,6 +145,113 @@ logEachMap( 'p: %0.4f, x0: %0.4f γ: %0.4f, Q(p;x0,γ): %0.4f', p, x0, gamma, qu
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/cauchy/quantile.h"
+```
+
+#### stdlib_base_dists_cauchy_quantile( p, x0, gamma )
+
+Evaluates the [quantile function][quantile-function] of a [Cauchy][cauchy-distribution] distribution with location parameter `x0` and scale parameter `gamma`.
+
+```c
+double out = stdlib_base_dists_cauchy_quantile( 0.3, 2.0, 2.0 );
+// returns ~0.547
+```
+
+The function accepts the following arguments:
+
+-   **p**: `[in] double` probability.
+-   **x0**: `[in] double` location parameter.
+-   **gamma**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_cauchy_quantile( const double p, const double x0, const double gamma );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/cauchy/quantile.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double gamma;
+    double x0;
+    double y;
+    double p;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        p = random_uniform( 0.0, 1.0 );
+        x0 = random_uniform( -5.0, 5.0 );
+        gamma = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
+        y = stdlib_base_dists_cauchy_quantile( p, x0, gamma );
+        printf( "p: %lf, x0: %lf, γ: %lf, Q(p;x0,γ): %lf\n", p, x0, gamma, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

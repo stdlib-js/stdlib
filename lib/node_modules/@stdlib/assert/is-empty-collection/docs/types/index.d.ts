@@ -20,8 +20,6 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
-
 /**
 * Tests if a value is an empty collection.
 *
@@ -44,7 +42,7 @@ import { Collection } from '@stdlib/types/array';
 * var bool = isEmptyCollection( {} );
 * // returns false
 */
-declare function isEmptyCollection( value: any ): value is Collection;
+declare function isEmptyCollection( value: any ): boolean;
 
 
 // EXPORTS //

@@ -25,15 +25,9 @@
 #include "stdlib/complex/float32/ctor.h"
 #include "stdlib/complex/float32/reim.h"
 
-
-// VARIABLES //
-
 static const float LARGE_THRESHOLD = STDLIB_CONSTANT_FLOAT32_MAX * 0.5f;
 static const float SMALL_THRESHOLD = STDLIB_CONSTANT_FLOAT32_SMALLEST_NORMAL * ( 2.0f / STDLIB_CONSTANT_FLOAT32_EPS );
 static const float RECIP_EPS_SQR = 2.0f / ( STDLIB_CONSTANT_FLOAT32_EPS * STDLIB_CONSTANT_FLOAT32_EPS );
-
-
-// MAIN //
 
 /**
 * Computes the inverse of a single-precision complex floating-point number.

@@ -231,7 +231,7 @@ int main( void ) {
     double out;
     int i;
     for ( i = 0; i < 5; i++ ) {
-        out = stdlib_base_binomcoef( a[ i ], b[ i ] );
+        out = stdlib_base_binomcoefln( a[ i ], b[ i ] );
         printf( "binomcoefln(%" PRId64 ", %" PRId64 ") = %lf\n", a[ i ], b[ i ], out );
     }
 }

@@ -781,10 +781,9 @@ The function accepts the following arguments:
 -   **info**: `[in] napi_callback_info` callback data.
 -   **fcn**: `[in] float (*fcn)( float, float )` binary function.
 
-````c
+```c
 void stdlib_math_base_napi_ff_f( napi_env env, napi_callback_info info, float (*fcn)( float, float ) );
-```de "stdlib/math/base/napi/binary.h"
-````
+```
 
 #### STDLIB_MATH_BASE_NAPI_MODULE_FI_F( fcn )
 
