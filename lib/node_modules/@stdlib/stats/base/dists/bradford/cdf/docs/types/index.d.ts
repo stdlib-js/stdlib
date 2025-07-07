@@ -87,11 +87,11 @@ interface CDF {
 	* @returns CDF
 	*
 	* @example
-	* var mypdf = cdf.factory( 5.0 );
-	* var y = mypdf( 0.5 );
+	* var mycdf = cdf.factory( 5.0 );
+	* var y = mycdf( 0.5 );
 	* // returns ~0.699
 	*
-	* y = mypdf( 1.0 );
+	* y = mycdf( 1.0 );
 	* // returns 1.0
 	*/
 	factory( c: number ): Unary;

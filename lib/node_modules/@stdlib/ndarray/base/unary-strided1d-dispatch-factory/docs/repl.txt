@@ -1,5 +1,5 @@
 
-{{alias}}( table, idtypes, odtypes, policies )
+{{alias}}( table, idtypes, odtypes, policies[, options] )
     Returns function for applying a strided function to an input ndarray.
 
     Parameters
@@ -40,6 +40,13 @@
 
         - output: output data type policy.
         - casting: input ndarray casting policy.
+
+    options: Object (optional)
+        Function options.
+
+    options.strictTraversalOrder: boolean (optional)
+        Boolean specifying whether the order of element traversal must match the
+        memory layout order of an input ndarray.
 
     Returns
     -------

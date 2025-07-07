@@ -199,8 +199,8 @@ console.log( y );
 Computes the cumulative sum of double-precision floating-point strided array elements.
 
 ```c
-const double x[] = { 1.0, 2.0, 3.0, 4.0 }
-double y[] = { 0.0, 0.0, 0.0, 0.0 }
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
+double y[] = { 0.0, 0.0, 0.0, 0.0 };
 
 stdlib_strided_dcusum( 4, 0.0, x, 1, y, 1 );
 ```
@@ -227,8 +227,8 @@ void stdlib_strided_dcusum( const CBLAS_INT N, const double sum, const double *X
 Computes the cumulative sum of double-precision floating-point strided array elements using alternative indexing semantics.
 
 ```c
-const double x[] = { 1.0, 2.0, 3.0, 4.0 }
-double y[] = { 0.0, 0.0, 0.0, 0.0 }
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
+double y[] = { 0.0, 0.0, 0.0, 0.0 };
 
 stdlib_strided_dcusum_ndarray( 4, 0.0, x, 1, 0, y, 1, 0 );
 ```

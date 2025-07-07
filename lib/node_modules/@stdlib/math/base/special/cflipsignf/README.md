@@ -131,19 +131,28 @@ for ( i = 0; i < 100; i++ ) {
 Returns a single-precision complex floating-point number with the same magnitude as `z` and the sign of `y*z`.
 
 ```c
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/real.h"
+#include "stdlib/complex/float32/imag.h"
 
-float complex y = stdlib_base_cflipsignf( 2.0-1.0*I, -1.0 );
-// returns -2.0+1.0*I
+stdlib_complex64_t z = stdlib_complex64( 2.5f, -1.5f );
+
+stdlib_complex64_t out = stdlib_base_cflipsignf( z, -1.0f );
+
+float re = stdlib_complex64_real( out );
+// returns -2.5f
+
+float im = stdlib_complex64_imag( out );
+// returns 1.5f
 ```
 
 The function accepts the following arguments:
 
--   **z**: `[in] float complex` input value.
+-   **z**: `[in] stdlib_complex64_t` input value.
 -   **y**: `[in] float` number from which to derive the sign.
 
 ```c
-float complex stdlib_base_cflipsignf( const float complex z, const float y );
+stdlib_complex64_t stdlib_base_cflipsignf( const stdlib_complex64_t z, const float y );
 ```
 
 </section>
@@ -166,19 +175,31 @@ float complex stdlib_base_cflipsignf( const float complex z, const float y );
 
 ```c
 #include "stdlib/math/base/special/cflipsignf.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
 #include <stdio.h>
-#include <complex.h>
 
 int main( void ) {
-    const float complex x[] = { 3.14f+1.5f*I, -3.14f-1.5f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
+    const stdlib_complex64_t x[] = {
+        stdlib_complex64( 3.14f, 1.5f ),
+        stdlib_complex64( -3.14f, -1.5f ),
+        stdlib_complex64( 0.0f, 0.0f ),
+        stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f )
+    };
 
-    float complex v;
-    float complex y;
+    stdlib_complex64_t v;
+    stdlib_complex64_t y;
+    float re1;
+    float im1;
+    float re2;
+    float im2;
     int i;
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
         y = stdlib_base_cflipsignf( v, -1.0f );
-        printf( "cflipsignf(%f + %fi, %f) = %f + %fi\n", crealf( v ), cimagf( v ), -1.0f, crealf( y ), cimagf( y ) );
+        stdlib_complex64_reim( v, &re1, &im1 );
+        stdlib_complex64_reim( y, &re2, &im2 );
+        printf( "cflipsignf(%f + %fi, %f) = %f + %fi\n", re1, im1, -1.0f, re2, im2 );
     }
 }
 ```
