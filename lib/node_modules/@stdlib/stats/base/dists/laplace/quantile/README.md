@@ -182,7 +182,7 @@ double out = stdlib_base_dists_laplace_quantile( 0.8, 0.0, 1.0 );
 
 The function accepts the following arguments:
 
--   **p**: `[in] double` probability paarmeter.
+-   **p**: `[in] double` probability.
 -   **mu**: `[in] double` location parameter.
 -   **b**: `[in] double` rate parameter.
 

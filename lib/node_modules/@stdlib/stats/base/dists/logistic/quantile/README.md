@@ -180,7 +180,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_logistic_quantile( p, mu, s )
 
-Returns the quantile for a logistic distribution with probability `p`, location `mu` and scale `s`.
+Evaluates the [quantile function][quantile-function] for a [logistic][logistic-distribution] distribution with parameters `mu` (location parameter) and `s` (scale parameter).
 
 ```c
 double out = stdlib_base_dists_logistic_quantile( 0.8, 0.0, 1.0 );
@@ -189,7 +189,7 @@ double out = stdlib_base_dists_logistic_quantile( 0.8, 0.0, 1.0 );
 
 The function accepts the following arguments:
 
--   **p**: `[in] double` probability parameter.
+-   **p**: `[in] double` input probability.
 -   **mu**: `[in] double` location parameter.
 -   **s**: `[in] double` scale parameter.
 
@@ -245,6 +245,10 @@ int main( void ) {
 </section>
 
 <!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

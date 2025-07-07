@@ -86,19 +86,27 @@ static double random_uniform( const double min, const double max ) {
 	return min + ( v*(max-min) );
 }
 
+/**
+* Runs a benchmark.
+*
+* @return elapsed time in seconds
+*/
 static double benchmark( void ) {
 	double elapsed;
-	double scale;
-	double mu;
+	double mu[ 100 ];
+	double b[ 100 ];
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		mu[ i ] = random_uniform( -50.0, 50.0 );
+		b[ i ] = random_uniform( 1.0, 20.0 );
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		scale = random_uniform( 0.0, 20.0 );
-		mu = random_uniform( -50.0, 50.0 );
-		y = stdlib_base_dists_laplace_mean( scale, mu );
+		y = stdlib_base_dists_laplace_mean( mu[ i%100 ], b[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

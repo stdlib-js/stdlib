@@ -23,7 +23,7 @@
 #include "stdlib/constants/float64/ln_half.h"
 
 /**
-* Returns the logarithm of the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at value `x`.
+* Returns the logarithm of the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
 *
 * @param x    input value
 * @param mu   location parameter

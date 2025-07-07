@@ -41,8 +41,7 @@
         "@stdlib/math/base/napi/ternary",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/exp",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/math/base/special/exp"
       ]
     },
     {
@@ -77,8 +76,7 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/abs",
-        "@stdlib/math/base/special/exp",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/math/base/special/exp"
       ]
     }
   ]

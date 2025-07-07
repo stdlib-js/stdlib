@@ -173,7 +173,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_dists_laplace_logcdf( x, mu, b )
 
-Evaluates the logarithm of the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at value `x`.
+Evaluates the logarithm of the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
 
 ```c
 double out = stdlib_base_dists_laplace_logcdf( 2.0, 0.0, 1.0 );

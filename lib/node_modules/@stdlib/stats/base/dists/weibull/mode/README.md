@@ -176,7 +176,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_weibull_mode( k, lambda )
 
-Evaluates the mode for an weibull distribution.
+Returns the [mode][mode] of a [Weibull][weibull-distribution] distribution with parameters `k` (shape parameter) and `lambda` (scale parameter).
 
 ```c
 double out = stdlib_base_dists_weibull_mode( 4.0, 12.0 );
@@ -186,7 +186,7 @@ double out = stdlib_base_dists_weibull_mode( 4.0, 12.0 );
 The function accepts the following arguments:
 
 -   **k**: `[in] double` shape parameter.
--   **λ**: `[in] double` scale parameter.
+-   **lambda**: `[in] double` scale parameter.
 
 ```c
 double stdlib_base_dists_weibull_mode( const double k, const double λ );
@@ -237,6 +237,12 @@ int main( void ) {
 ```
 
 </section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

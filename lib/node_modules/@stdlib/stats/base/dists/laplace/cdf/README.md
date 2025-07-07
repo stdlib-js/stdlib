@@ -163,7 +163,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_dists_laplace_cdf( x, mu, b )
 
-Evaluates the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at value `x`.
+Evaluates the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
 
 ```c
 double out = stdlib_base_dists_laplace_cdf( 2.0, 0.0, 1.0 );
@@ -219,7 +219,7 @@ int main( void ) {
         mu = random_uniform( -5.0, 5.0 );
         b = random_uniform( 0.0, 20.0 );
         x = random_uniform( 0.0, 1.0 );
-        y = stdlib_base_dists_laplace_cdf( p, mu, b );
+        y = stdlib_base_dists_laplace_cdf( x, mu, b );
         printf( "x: %lf, µ: %lf, b: %lf, F(x;µ,b): %lf\n", x, mu, b, y );
     }
 }

@@ -11,7 +11,7 @@
         Function options.
 
     options.iter: integer (optional)
-        Number of iterations. Default: 9741.
+        Number of iterations. Default: 1552.
 
     Returns
     -------

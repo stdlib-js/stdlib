@@ -75,23 +75,38 @@ static double tic( void ) {
 }
 
 /**
+* Generates a random number on the interval [min,max).
+*
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
+*/
+static double random_uniform( const double min, const double max ) {
+	double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+	return min + ( v*(max-min) );
+}
+
+/**
 * Runs a benchmark.
 *
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
 	double elapsed;
-	double mu;
-	double s;
+	double mu[ 100 ];
+	double s[ 100 ];
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		mu[ i ] = random_uniform( -50.0, 50.0 );
+		s[ i ] = random_uniform( 1.0, 20.0 );
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		mu = 100.0*( (double)rand() / (double)RAND_MAX ) - 50.0;
-		s = 20.0*( (double)rand() / (double)RAND_MAX );
-		y = stdlib_base_dists_cosine_mean( mu, s );
+		y = stdlib_base_dists_cosine_mean( mu[ i%100 ], s[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
