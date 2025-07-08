@@ -1278,8 +1278,8 @@
 "@stdlib/stats/strided/nanmskmax",base.strided.nanmskmax
 "@stdlib/stats/strided/nanmskmin",base.strided.nanmskmin
 "@stdlib/stats/strided/nanmskrange",base.strided.nanmskrange
-"@stdlib/stats/base/nanrange",base.strided.nanrange
-"@stdlib/stats/base/nanrange-by",base.strided.nanrangeBy
+"@stdlib/stats/strided/nanrange",base.strided.nanrange
+"@stdlib/stats/strided/nanrange-by",base.strided.nanrangeBy
 "@stdlib/stats/base/nanstdev",base.strided.nanstdev
 "@stdlib/stats/base/nanstdevch",base.strided.nanstdevch
 "@stdlib/stats/base/nanstdevpn",base.strided.nanstdevpn
@@ -1296,8 +1296,8 @@
 "@stdlib/strided/base/offset-view",base.strided.offsetView
 "@stdlib/strided/base/quaternary",base.strided.quaternary
 "@stdlib/strided/base/quinary",base.strided.quinary
-"@stdlib/stats/base/range",base.strided.range
-"@stdlib/stats/base/range-by",base.strided.rangeBy
+"@stdlib/stats/strided/range",base.strided.range
+"@stdlib/stats/strided/range-by",base.strided.rangeBy
 "@stdlib/strided/base/reinterpret-complex",base.strided.reinterpretComplex
 "@stdlib/strided/base/reinterpret-complex64",base.strided.reinterpretComplex64
 "@stdlib/strided/base/reinterpret-complex128",base.strided.reinterpretComplex128
