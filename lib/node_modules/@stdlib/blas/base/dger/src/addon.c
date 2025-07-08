@@ -25,6 +25,7 @@
 #include "stdlib/napi/argv_int32.h"
 #include "stdlib/napi/argv_double.h"
 #include "stdlib/napi/argv_strided_float64array.h"
+#include "stdlib/napi/argv_strided_float64array2d.h"
 #include <node_api.h>
 
 /**
@@ -51,11 +52,46 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, M, strideX, argv, 4 );
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, strideY, argv, 6 );
 
-	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, A, ((M-1)*LDA) + N, 1, argv, 8 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY2D( env, A, M, N, LDA, 1, argv, 8 );
 
 	API_SUFFIX(c_dger)( layout, M, N, alpha, X, strideX, Y, strideY, A, LDA );
 
 	return NULL;
 }
 
-STDLIB_NAPI_MODULE_EXPORT_FCN( addon )
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+static napi_value addon_method( napi_env env, napi_callback_info info ) {
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 13 );
+
+	STDLIB_NAPI_ARGV_INT64( env, M, argv, 0 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 1 );
+
+	STDLIB_NAPI_ARGV_DOUBLE( env, alpha, argv, 2 );
+
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 4 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 5 );
+
+	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 7 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetY, argv, 8 );
+
+	STDLIB_NAPI_ARGV_INT64( env, strideA1, argv, 10 );
+	STDLIB_NAPI_ARGV_INT64( env, strideA2, argv, 11 );
+	STDLIB_NAPI_ARGV_INT64( env, offsetA, argv, 12 );
+
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, M, strideX, argv, 3 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, strideY, argv, 6 );
+
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY2D( env, A, M, N, strideA1, strideA2, argv, 9 );
+
+	API_SUFFIX(c_dger_ndarray)( M, N, alpha, X, strideX, offsetX, Y, strideY, offsetY, A, strideA1, strideA2, offsetA );
+
+	return NULL;
+}
+
+STDLIB_NAPI_MODULE_EXPORT_FCN_WITH_METHOD( addon, "ndarray", addon_method )

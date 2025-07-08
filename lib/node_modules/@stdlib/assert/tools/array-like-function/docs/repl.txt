@@ -13,7 +13,7 @@
     The returned function returns `false` if provided an empty array-like
     object.
 
-    The returned function returns `false` is not provided an array-like object.
+    The returned function returns `false` if not provided an array-like object.
 
     Parameters
     ----------

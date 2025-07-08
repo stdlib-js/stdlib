@@ -104,7 +104,6 @@ static double benchmark( void ) {
 		x[ i ] = rand_double() * 100000.0;
 	}
 
-
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		y = 1.0 / cbrt( x[ i%100 ] );

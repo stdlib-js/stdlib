@@ -79,7 +79,7 @@
           "desc": "first input value",
           "type": {
             "javascript": "number",
-            "jsdoc": "integer",
+            "jsdoc": "uinteger",
             "c": "uint16_t",
             "dtype": "uint16"
           },
@@ -124,7 +124,7 @@
           "desc": "second input value",
           "type": {
             "javascript": "number",
-            "jsdoc": "integer",
+            "jsdoc": "uinteger",
             "c": "uint16_t",
             "dtype": "uint16"
           },
@@ -170,7 +170,7 @@
         "desc": "result",
         "type": {
           "javascript": "number",
-          "jsdoc": "integer",
+          "jsdoc": "uinteger",
           "c": "uint16_t",
           "dtype": "uint16"
         }

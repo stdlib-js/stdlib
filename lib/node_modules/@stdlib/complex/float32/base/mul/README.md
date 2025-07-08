@@ -38,7 +38,7 @@ var mul = require( '@stdlib/complex/float32/base/mul' );
 
 #### mul( z1, z2 )
 
-Multiples two single-precision complex floating-point numbers.
+Multiplies two single-precision complex floating-point numbers.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );

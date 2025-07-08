@@ -62,7 +62,7 @@ interface Frexpf {
 	* var out = frexpf( -Infinity );
 	* // returns [ -Infinity , 0 ]
 	*/
-	( x: number ): Array<number>;
+	( x: number ): [ number, number ];
 
 	/**
 	* Splits a single-precision floating-point number into a normalized fraction and an integer power of two and assigns results to a provided output array.

@@ -41,7 +41,7 @@ Y_1(x) = \frac{1}{\pi} \int_0^\pi \sin(x \sin\theta - \theta) \, d\theta -\frac{
 
 </section>
 
-<!-- ./intro -->
+<!-- /.intro -->
 
 <section class="usage">
 
