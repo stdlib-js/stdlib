@@ -115,6 +115,90 @@ y = mycdf( 8.0 );
 
 <!-- /.usage -->
 
+* * *
+
+<section class="c">
+
+## C APIs
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/poisson/cdf.h"
+```
+
+#### stdlib_base_dists_poisson_cdf( x, lambda )
+
+Evaluates the [cumulative distribution function][cdf] for a [Poisson][poisson-distribution] distribution with mean parameter `lambda`.
+
+```c
+double out = stdlib_base_dists_poisson_cdf( 2.0, 0.5 );
+// returns ~0.986
+
+out = stdlib_base_dists_poisson_cdf( 2.0, 10.0 );
+// returns ~0.003
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **lambda**: `[in] double` mean parameter.
+
+```c
+double stdlib_base_dists_poisson_cdf( const double x, const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/poisson/cdf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( double min, double max ) {
+    double scale = rand() / (double) RAND_MAX;
+    return min + ( scale * ( max - min ) );
+}
+
+int main( void ) {
+    double x;
+    double lambda;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        x = random_uniform( 0.0, 10.0 );
+        lambda = random_uniform( 0.1, 20.0 );
+        y = stdlib_base_dists_poisson_cdf( x, lambda );
+        printf( "x: %lf, λ: %lf, F(x;λ): %lf\n", x, lambda, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+* * *
+
 <section class="examples">
 
 ## Examples

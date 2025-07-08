@@ -136,7 +136,8 @@ y = mycdf( 7.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/base/uniform' );
+var EPS = require( '@stdlib/constants/float64/eps' );
 var cdf = require( '@stdlib/stats/base/dists/frechet/cdf' );
 
 var alpha;
@@ -147,10 +148,10 @@ var y;
 var i;
 
 for ( i = 0; i < 100; i++ ) {
-    alpha = randu() * 10.0;
-    x = randu() * 10.0;
-    s = randu() * 10.0;
-    m = randu() * 10.0;
+    alpha = uniform( EPS, 5.0 );
+    s = uniform( EPS, 5.0 );
+    m = uniform( -2.0, 2.0 );
+    x = uniform( m + 0.1, m + 10.0 );
     y = cdf( x, alpha, s, m );
     console.log( 'x: %d, α: %d, s: %d, m: %d, F(x;α,s,m): %d', x.toFixed( 4 ), alpha.toFixed( 4 ), s.toFixed( 4 ), m.toFixed( 4 ), y.toFixed( 4 ) );
 }
@@ -159,6 +160,110 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/frechet/cdf.h"
+```
+
+#### stdlib_base_dists_frechet_cdf( x, alpha, s, m )
+
+Evaluates the cumulative distribution function (CDF) for a Fréchet distribution with shape `alpha`, scale `s`, and location `m` at a value `x`.
+
+```c
+double y = stdlib_base_frechet_cdf( 10.0, 2.0, 3.0, 2.0 );
+// returns ~0.869
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **alpha**: `[in] double` shape parameter.
+-   **s**: `[in] double` scale parameter.
+-   **m**: `[in] double` location parameter.
+
+```c
+double stdlib_base_dists_frechet_cdf( const double x, const double alpha, const double s, const double m );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/frechet/cdf.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double alpha;
+    double x;
+    double s;
+    double m;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        alpha = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 5.0 );
+        s = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 5.0 );
+        m = random_uniform( -2.0, 2.0 );
+        x = random_uniform( m + 0.1, m + 10.0 );
+        y = stdlib_base_dists_frechet_cdf( x, alpha, s, m );
+        printf( "x: %lf, α: %lf, s: %lf, m: %lf, F(x;α,s,m): %lf\n", x, alpha, s, m, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

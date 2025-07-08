@@ -17,8 +17,6 @@
 */
 
 #include "stdlib/math/base/special/factorial2.h"
-#include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/math/base/assert/is_even.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/max_nth_double_factorial.h"
@@ -39,13 +37,10 @@ double stdlib_base_factorial2( const int32_t n ) {
 	double out;
 	int32_t v;
 	int32_t i;
-	if ( stdlib_base_is_nan( n ) ) {
-		return 0.0/0.0; // NaN
-	}
 	if ( n > STDLIB_CONSTANT_FLOAT64_MAX_NTH_DOUBLE_FACTORIAL ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;
 	}
-	if ( n < 0 || !stdlib_base_is_integer( n ) ) {
+	if ( n < 0 ) {
 		return 0.0/0.0;
 	}
 	v = n;

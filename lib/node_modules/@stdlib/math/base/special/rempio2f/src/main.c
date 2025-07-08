@@ -381,7 +381,6 @@ recompute:
 	return n & 7;
 }
 
-
 /**
 * Computes `x - nπ/2 = r` (single-precision).
 *
