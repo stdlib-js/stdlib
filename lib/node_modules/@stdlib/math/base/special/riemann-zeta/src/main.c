@@ -46,7 +46,7 @@
 #include "stdlib/constants/float64/two_pi.h"
 #include "stdlib/constants/float64/sqrt_eps.h"
 #include "stdlib/constants/float64/ln_sqrt_two_pi.h"
-#include "stdlib/constants/float64/max_safe_nth_factorial.h"
+#include "stdlib/constants/float64/max_nth_factorial.h"
 #include <stdint.h>
 
 static const int32_t MAX_BERNOULLI_2N = 129;
@@ -768,7 +768,7 @@ double stdlib_base_zeta( const double s ) {
 		sc = tmp;
 
 		// Determine if computation will overflow:
-		if ( scc > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FACTORIAL ) {
+		if ( scc > STDLIB_CONSTANT_FLOAT64_MAX_NTH_FACTORIAL ) {
 			tmp = stdlib_base_sinpi( 0.5 * sc ) * 2.0 * stdlib_base_zeta( scc );
 			r = stdlib_base_gammaln( scc );
 			r -= scc * stdlib_base_ln( STDLIB_CONSTANT_FLOAT64_TWO_PI );

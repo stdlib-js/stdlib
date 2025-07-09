@@ -29,7 +29,7 @@
 * @return    skewness
 *
 * @example
-* var v = skewness( 0.5, 1.0 );
+* double v = stdlib_base_dists_kumaraswamy_skewness( 0.5, 1.0 );
 * // returns ~0.639
 */
 double stdlib_base_dists_kumaraswamy_skewness( const double a, const double b ) {

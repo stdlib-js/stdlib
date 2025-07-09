@@ -26,8 +26,8 @@ Generate fixture data and write to file.
 
 # Arguments
 
-* `a`: shape parameter a (must be positive)
-* `b`: shape parameter b (must be positive)
+* `a`: first shape parameter
+* `b`: second shape parameter
 * `name::AbstractString`: output filename
 
 # Examples

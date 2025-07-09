@@ -27,7 +27,7 @@
 * @return     excess kurtosis
 *
 * @example
-* double y = stdlib_base_arcsine_kurtosis( 0.0, 1.0 );
+* double y = stdlib_base_dists_arcsine_kurtosis( 0.0, 1.0 );
 * // returns 1.5
 */
 double stdlib_base_dists_arcsine_kurtosis( const double a, const double b ) {

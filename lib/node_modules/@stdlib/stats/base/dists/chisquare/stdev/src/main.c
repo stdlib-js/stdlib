@@ -27,7 +27,7 @@
 * @return     standard deviation
 *
 * @example
-* double y = stdlib_base_chisquare_stdev( 9.0 );
+* double y = stdlib_base_dists_chisquare_stdev( 9.0 );
 * // returns ~4.243
 */
 double stdlib_base_dists_chisquare_stdev( const double k ) {

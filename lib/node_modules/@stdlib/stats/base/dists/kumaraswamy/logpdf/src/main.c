@@ -31,7 +31,7 @@
 * @return     evaluated logPDF
 *
 * @example
-* double y = stdlib_base_kumaraswamy_logpdf( 0.5, 1.0, 1.0 );
+* double y = stdlib_base_dists_kumaraswamy_logpdf( 0.5, 1.0, 1.0 );
 * // returns 0.0
 */
 double stdlib_base_dists_kumaraswamy_logpdf( const double x, const double a, const double b ) {

@@ -168,7 +168,6 @@ static double benchmark2( int iterations, int len ) {
 	return elapsed;
 }
 
-
 /**
 * Main execution sequence.
 */
