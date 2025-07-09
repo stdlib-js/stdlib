@@ -1,0 +1,62 @@
+
+{{alias}}( arrays )
+    Computes a one-sample Z-test for a one-dimensional single-precision
+    floating-point ndarray.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays in order:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional output ndarray containing a results object.
+        - a zero-dimensional ndarray specifying the alternative hypothesis.
+        - a zero-dimensional ndarray specifying the significance level.
+        - a zero-dimensional ndarray specifying the mean under the null
+        hypothesis.
+        - a zero-dimensional ndarray specifying the known standard deviation.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    // Create the input ndarray:
+    > var xbuf = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 2.0 ] );
+    > var dt = 'float32';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+
+    // Create the output ndarray:
+    > var S = {{alias:@stdlib/stats/base/ztest/one-sample/results/float32}};
+    > var Results = {{alias:@stdlib/array/struct-factory}}( S );
+    > var obuf = new Results( 1 );
+    > var out = new {{alias:@stdlib/ndarray/ctor}}( S, obuf, [], [ 0 ], 0, ord );
+
+    // Specify the alternative hypothesis:
+    > var alt = {{alias:@stdlib/ndarray/from-scalar}}( 'two-sided' );
+
+    // Specify the significance level:
+    > var opts = { 'dtype': dt };
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 0.05, opts );
+
+    // Specify the mean under the null hypothesis:
+    > var mu = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, opts );
+
+    // Specify the known standard deviation:
+    > var sigma = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
+
+    // Perform a Z-test:
+    > {{alias}}( [ x, out, alt, alpha, mu, sigma ] );
+
+    // Print the results:
+    > out.get().toString()
+
+    See Also
+    --------
+

@@ -48,7 +48,7 @@ double stdlib_base_sind( const double x ) {
 	arx = stdlib_base_abs( rx );
 
 	if ( rx == 0.0 ) {
-		return 0.0;
+		return rx;
 	}
 	if ( arx < 45.0 ) {
 		return stdlib_base_kernel_sin( stdlib_base_deg2rad( rx ), 0.0 );

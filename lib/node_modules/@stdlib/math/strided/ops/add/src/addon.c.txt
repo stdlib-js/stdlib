@@ -18,10 +18,10 @@
 
 /* {{NOTE}} */
 
-#include "stdlib/math/base/ops/{{FCN_BASENAME}}.h"
-#include "stdlib/math/base/ops/{{FCN_BASENAME}}f.h"
-#include "stdlib/math/base/ops/c{{FCN_BASENAME}}.h"
-#include "stdlib/math/base/ops/c{{FCN_BASENAME}}f.h"
+#include "stdlib/number/float64/base/{{FCN_BASENAME}}.h"
+#include "stdlib/number/float32/base/{{FCN_BASENAME}}.h"
+#include "stdlib/complex/float64/base/{{FCN_BASENAME}}.h"
+#include "stdlib/complex/float32/base/{{FCN_BASENAME}}.h"
 #include "stdlib/strided/dtypes.h"
 #include "stdlib/strided/base/function_object.h"
 #include "stdlib/strided/base/binary.h"

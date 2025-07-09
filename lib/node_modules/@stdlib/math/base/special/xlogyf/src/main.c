@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+#include "stdlib/math/base/special/xlogyf.h"
 #include "stdlib/math/base/special/lnf.h"
 #include "stdlib/math/base/assert/is_nanf.h"
 

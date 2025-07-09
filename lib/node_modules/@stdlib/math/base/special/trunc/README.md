@@ -68,14 +68,16 @@ v = trunc( -Infinity );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/array/uniform' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var trunc = require( '@stdlib/math/base/special/trunc' );
 
-var x = randu( 100, -50.0, 50.0 );
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'trunc(%d) = %d', x[ i ], trunc( x[ i ] ) );
-}
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -50.0, 50.0, opts );
+
+logEachMap( 'trunc(%0.4f) = %0.4f', x, trunc );
 ```
 
 </section>
