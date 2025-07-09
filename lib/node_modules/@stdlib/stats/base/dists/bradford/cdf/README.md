@@ -99,11 +99,11 @@ y = cdf( 0.5, -5.0 );
 Returns a function for evaluating the [CDF][cdf] of a [Bradford][bradford-distribution] distribution with shape parameter `c`.
 
 ```javascript
-var myPDF = cdf.factory( 5.0 );
-var y = myPDF( 0.5 );
+var myCDF = cdf.factory( 5.0 );
+var y = myCDF( 0.5 );
 // returns ~0.699
 
-y = myPDF( 1.0 );
+y = myCDF( 1.0 );
 // returns 1.0
 ```
 
