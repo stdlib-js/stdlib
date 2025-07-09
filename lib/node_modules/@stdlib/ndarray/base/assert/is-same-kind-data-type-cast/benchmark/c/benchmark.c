@@ -99,7 +99,7 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		b = stdlib_ndarray_is_same_kind_data_type_cast( i%STDLIB_NDARRAY_NDTYPES, (i%STDLIB_NDARRAY_NDTYPES)+1 );
+		b = stdlib_ndarray_is_same_kind_data_type_cast( i%STDLIB_NDARRAY_NDTYPES, (i+1)%STDLIB_NDARRAY_NDTYPES );
 		if ( b != 0 && b!= 1 ) {
 			printf( "unexpected result\n" );
 			break;

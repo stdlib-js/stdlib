@@ -58,7 +58,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/sinpi",
-        "@stdlib/constants/float64/pi"
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/eps"
       ]
     },
     {
@@ -75,7 +76,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/sinpi",
-        "@stdlib/constants/float64/pi"
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/eps"
       ]
     }
   ]

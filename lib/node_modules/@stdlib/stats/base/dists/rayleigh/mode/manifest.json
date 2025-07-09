@@ -54,7 +54,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nan"
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/eps"
       ]
     },
     {

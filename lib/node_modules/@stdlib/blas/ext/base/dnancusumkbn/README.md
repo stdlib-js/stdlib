@@ -206,8 +206,8 @@ console.log( y );
 Computes the cumulative sum of double-precision floating-point strided array elements ignoring `NaN` values and using an improved Kahan–Babuška algorithm.
 
 ```c
-const double x[] = { 1.0, 2.0, 3.0, 4.0 }
-double y[] = { 0.0, 0.0, 0.0, 0.0 }
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
+double y[] = { 0.0, 0.0, 0.0, 0.0 };
 
 stdlib_strided_dnancusumkbn( 4, 0.0, x, 1, y, 1 );
 ```
@@ -234,8 +234,8 @@ void stdlib_strided_dnancusumkbn( const CBLAS_INT N, const double sum, const dou
 Computes the cumulative sum of double-precision floating-point strided array elements ignoring `NaN` values and using an improved Kahan–Babuška algorithm and alternative indexing semantics.
 
 ```c
-const double x[] = { 1.0, 2.0, 3.0, 4.0 }
-double y[] = { 0.0, 0.0, 0.0, 0.0 }
+const double x[] = { 1.0, 2.0, 3.0, 4.0 };
+double y[] = { 0.0, 0.0, 0.0, 0.0 };
 
 stdlib_strided_dnancusumkbn_ndarray( 4, 0.0, x, 1, 0, y, 1, 0 );
 ```

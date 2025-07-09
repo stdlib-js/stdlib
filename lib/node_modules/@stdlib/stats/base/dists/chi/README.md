@@ -106,7 +106,7 @@ var mu = dist.mean;
 ```javascript
 var chiRandomFactory = require( '@stdlib/random/base/chi' ).factory;
 var filledarrayBy = require( '@stdlib/array/filled-by' );
-var variance = require( '@stdlib/stats/base/variance' );
+var variance = require( '@stdlib/stats/strided/variance' );
 var linspace = require( '@stdlib/array/base/linspace' );
 var rayleigh = require( '@stdlib/stats/base/dists/rayleigh' );
 var absdiff = require( '@stdlib/math/base/utils/absolute-difference' );

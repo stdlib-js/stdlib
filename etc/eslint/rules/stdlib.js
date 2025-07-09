@@ -4607,6 +4607,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'Boolean',
 		'Buffer', // Node.js
 		'DataView',
+		'Float16Array', // ES16/ES2025
 		'Float32Array',
 		'Float64Array',
 		'Function',

@@ -2211,6 +2211,8 @@ isStartcase
 isStrictEqual
 isString
 isStringArray
+isStruct
+isStructConstructorLike
 isSymbol
 isSymbolArray
 isSymmetricMatrix
