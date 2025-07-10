@@ -42,7 +42,7 @@ interface Routine {
 	* var y = new Float64Array( [ 2.0, -2.0, 1.0 ] );
 	*
 	* var v = dcovarmtk( x.length, 1, 1.0/3.0, x, 1, 1.0/3.0, y, 1 );
-	* // returns ~7.6667
+	* // returns ~3.8333
 	*/
 	( N: number, correction: number, meanx: number, x: Float64Array, strideX: number, meany: number, y: Float64Array, strideY: number ): number;
 
@@ -56,7 +56,7 @@ interface Routine {
 	* @param strideX - stride length of `x`
 	* @param offsetX - starting index of `x`
 	* @param meany - mean of `y`
-	* @param y - first input array
+	* @param y - second input array
 	* @param strideY - stride length of `y`
 	* @param offsetY - starting index of `y`
 	* @returns covariance
@@ -68,7 +68,7 @@ interface Routine {
 	* var y = new Float64Array( [ 2.0, -2.0, 1.0 ] );
 	*
 	* var v = dcovarmtk.ndarray( x.length, 1, 1.0/3.0, x, 1, 0, 1.0/3.0, y, 1, 0 );
-	* // returns ~7.6667
+	* // returns ~3.8333
 	*/
 	ndarray( N: number, correction: number, meanx: number, x: Float64Array, strideX: number, offsetX: number, meany: number, y: Float64Array, strideY: number, offsetY: number ): number;
 }
@@ -93,7 +93,7 @@ interface Routine {
 * var y = new Float64Array( [ 2.0, -2.0, 1.0 ] );
 *
 * var v = dcovarmtk( x.length, 1, 1.0/3.0, x, 1, 1.0/3.0, y, 1 );
-* // returns ~7.6667
+* // returns ~3.8333
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -102,7 +102,7 @@ interface Routine {
 * var y = new Float64Array( [ 2.0, -2.0, 1.0 ] );
 *
 * var v = dcovarmtk.ndarray( x.length, 1, 1.0/3.0, x, 1, 0, 1.0/3.0, y, 1, 0 );
-* // returns ~7.6667
+* // returns ~3.8333
 */
 declare var dcovarmtk: Routine;
 
