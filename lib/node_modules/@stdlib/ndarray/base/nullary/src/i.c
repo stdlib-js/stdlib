@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -104,7 +104,7 @@
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_0d( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_0d( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	int8_t status = stdlib_ndarray_iset_int32( arrays[ 0 ], 0, f() );
@@ -190,7 +190,7 @@ int8_t stdlib_ndarray_i_0d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_1d( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_1d( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_1D_LOOP_CLBK( int32_t )
@@ -273,7 +273,7 @@ int8_t stdlib_ndarray_i_1d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_2d( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_2d( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_2D_LOOP_CLBK( int32_t )
@@ -356,7 +356,7 @@ int8_t stdlib_ndarray_i_2d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_2d_blocked( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_2d_blocked( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_2D_BLOCKED_LOOP_CLBK( int32_t )
@@ -439,7 +439,7 @@ int8_t stdlib_ndarray_i_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_3d( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_3d( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_3D_LOOP_CLBK( int32_t )
@@ -522,7 +522,7 @@ int8_t stdlib_ndarray_i_3d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_3d_blocked( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_3d_blocked( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_3D_BLOCKED_LOOP_CLBK( int32_t )
@@ -605,7 +605,7 @@ int8_t stdlib_ndarray_i_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_4d( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_4d( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_4D_LOOP_CLBK( int32_t )
@@ -688,7 +688,7 @@ int8_t stdlib_ndarray_i_4d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_4d_blocked( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_4d_blocked( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_4D_BLOCKED_LOOP_CLBK( int32_t )
@@ -771,7 +771,7 @@ int8_t stdlib_ndarray_i_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_5d( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_5d( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_5D_LOOP_CLBK( int32_t )
@@ -854,7 +854,7 @@ int8_t stdlib_ndarray_i_5d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_5d_blocked( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_5d_blocked( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_5D_BLOCKED_LOOP_CLBK( int32_t )
@@ -937,7 +937,7 @@ int8_t stdlib_ndarray_i_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_6d( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_6d( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_6D_LOOP_CLBK( int32_t )
@@ -1020,7 +1020,7 @@ int8_t stdlib_ndarray_i_6d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_6d_blocked( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_6d_blocked( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_6D_BLOCKED_LOOP_CLBK( int32_t )
@@ -1103,7 +1103,7 @@ int8_t stdlib_ndarray_i_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_7d( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_7d( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_7D_LOOP_CLBK( int32_t )
@@ -1186,7 +1186,7 @@ int8_t stdlib_ndarray_i_7d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_7d_blocked( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_7d_blocked( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_7D_BLOCKED_LOOP_CLBK( int32_t )
@@ -1269,7 +1269,7 @@ int8_t stdlib_ndarray_i_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_8d( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_8d( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_8D_LOOP_CLBK( int32_t )
@@ -1352,7 +1352,7 @@ int8_t stdlib_ndarray_i_8d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_8d_blocked( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_8d_blocked( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_8D_BLOCKED_LOOP_CLBK( int32_t )
@@ -1435,7 +1435,7 @@ int8_t stdlib_ndarray_i_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_9d( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_9d( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_9D_LOOP_CLBK( int32_t )
@@ -1518,7 +1518,7 @@ int8_t stdlib_ndarray_i_9d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_9d_blocked( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_9d_blocked( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_9D_BLOCKED_LOOP_CLBK( int32_t )
@@ -1601,7 +1601,7 @@ int8_t stdlib_ndarray_i_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_10d( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_10d( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_10D_LOOP_CLBK( int32_t )
@@ -1684,7 +1684,7 @@ int8_t stdlib_ndarray_i_10d( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_10d_blocked( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_10d_blocked( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress[constParameterCallback,constParameter]
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_10D_BLOCKED_LOOP_CLBK( int32_t )
@@ -1767,7 +1767,7 @@ int8_t stdlib_ndarray_i_10d_blocked( struct ndarray *arrays[], void *fcn ) {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i_nd( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i_nd( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress[constParameterCallback,constParameter]
 	typedef int32_t func_type( void );
 	func_type *f = (func_type *)fcn;
 	STDLIB_NDARRAY_NULLARY_ND_LOOP_CLBK( int32_t )
@@ -1894,6 +1894,6 @@ static const struct ndarrayNullaryDispatchObject obj = {
 * // Free allocated memory:
 * stdlib_ndarray_free( x );
 */
-int8_t stdlib_ndarray_i( struct ndarray *arrays[], void *fcn ) {
+int8_t stdlib_ndarray_i( struct ndarray *arrays[], void *fcn ) { // cppcheck-suppress constParameterCallback
 	return stdlib_ndarray_nullary_dispatch( &obj, arrays, fcn );
 }

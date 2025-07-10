@@ -16,19 +16,19 @@
 * limitations under the License.
 */
 
-import isFloatingPointDataType = require( './index' );
+import isBooleanDataType = require( './index' );
 
 
 // TESTS //
 
 // The function returns a boolean...
 {
-	isFloatingPointDataType( 'binary' ); // $ExpectType boolean
-	isFloatingPointDataType( 'foo' ); // $ExpectType boolean
+	isBooleanDataType( 'binary' ); // $ExpectType boolean
+	isBooleanDataType( 'foo' ); // $ExpectType boolean
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	isFloatingPointDataType(); // $ExpectError
-	isFloatingPointDataType( undefined, 123 ); // $ExpectError
+	isBooleanDataType(); // $ExpectError
+	isBooleanDataType( undefined, 123 ); // $ExpectError
 }
