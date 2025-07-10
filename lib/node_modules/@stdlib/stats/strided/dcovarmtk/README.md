@@ -111,7 +111,7 @@ var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 var y = new Float64Array( [ 2.0, -2.0, 1.0 ] );
 
 var v = dcovarmtk( x.length, 1, 1.0/3.0, x, 1, 1.0/3.0, y, 1 );
-// returns ~7.6667
+// returns ~3.8333
 ```
 
 The function has the following parameters:
@@ -165,7 +165,7 @@ var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 var y = new Float64Array( [ 2.0, -2.0, 1.0 ] );
 
 var v = dcovarmtk.ndarray( x.length, 1, 1.0/3.0, x, 1, 0, 1.0/3.0, y, 1, 0 );
-// returns ~7.6667
+// returns ~3.8333
 ```
 
 The function has the following additional parameters:
@@ -277,7 +277,7 @@ The function accepts the following arguments:
 -   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
 
 ```c
-double stdlib_strided_dcovarmtk( const CBLAS_INT N, const double correction, const double meanx, const double *X, const CBLAS_INT strideX, const double meanY, const double *Y, const CBLAS_INT strideY );
+double stdlib_strided_dcovarmtk( const CBLAS_INT N, const double correction, const double meanx, const double *X, const CBLAS_INT strideX, const double meany, const double *Y, const CBLAS_INT strideY );
 ```
 
 #### stdlib_strided_dcovarmtk_ndarray( N, correction, meanx, \*X, strideX, offsetX, meany, \*Y, strideY, offsetY )
