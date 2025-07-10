@@ -15,10 +15,10 @@
     N: integer
         Number of indexed elements.
 
-    searchElement: number
+    searchElement: any
         Search element.
 
-    x: Array<number>|TypedArray
+    x: Array|TypedArray
         Input array.
 
     strideX: integer
@@ -49,10 +49,10 @@
     N: integer
         Number of indexed elements.
 
-    searchElement: number
+    searchElement: any
         Search element.
 
-    x: Array<number>|TypedArray
+    x: Array|TypedArray
         Input array.
 
     strideX: integer
