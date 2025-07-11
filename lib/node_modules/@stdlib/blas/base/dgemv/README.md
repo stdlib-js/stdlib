@@ -30,7 +30,7 @@ limitations under the License.
 var dgemv = require( '@stdlib/blas/base/dgemv' );
 ```
 
-#### dgemv( ord, trans, M, N, α, A, LDA, x, sx, β, y, sy )
+#### dgemv( order, trans, M, N, α, A, LDA, x, sx, β, y, sy )
 
 Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A**T*x + β*y`, where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
 
@@ -47,7 +47,7 @@ dgemv( 'row-major', 'no-transpose', 2, 3, 1.0, A, 3, x, 1, 1.0, y, 1 );
 
 The function has the following parameters:
 
--   **ord**: storage layout.
+-   **order**: storage layout.
 -   **trans**: specifies whether `A` should be transposed, conjugate-transposed, or not transposed.
 -   **M**: number of rows in the matrix `A`.
 -   **N**: number of columns in the matrix `A`.
@@ -55,10 +55,10 @@ The function has the following parameters:
 -   **A**: input matrix stored in linear memory as a [`Float64Array`][mdn-float64array].
 -   **lda**: stride of the first dimension of `A` (leading dimension of `A`).
 -   **x**: input [`Float64Array`][mdn-float64array].
--   **sx**: index increment for `x`.
+-   **sx**: stride length for `x`.
 -   **β**: scalar constant.
 -   **y**: output [`Float64Array`][mdn-float64array].
--   **sy**: index increment for `y`.
+-   **sy**: stride length for `y`.
 
 The stride parameters determine how operations are performed. For example, to iterate over every other element in `x` and `y`,
 
@@ -92,6 +92,8 @@ var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*1 ); // start at 2nd 
 dgemv( 'row-major', 'no-transpose', 2, 2, 1.0, A, 2, x1, -1, 1.0, y1, -1 );
 // y0 => <Float64Array>[ 0.0, 8.0, 4.0 ]
 ```
+
+<!-- lint disable maximum-heading-length -->
 
 #### dgemv.ndarray( trans, M, N, α, A, sa1, sa2, oa, x, sx, ox, β, y, sy, oy )
 
@@ -199,18 +201,73 @@ console.log( y );
 #include "stdlib/blas/base/dgemv.h"
 ```
 
-#### TODO
+#### c_dgemv( layout, trans, M, N, alpha, \*A, LDA, \*X, strideX, beta, \*Y, strideY )
 
-TODO.
+Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`, where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
 
 ```c
-TODO
+#include "stdlib/blas/base/shared.h"
+
+const double A[] = { 1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 3.0, 2.0, 1.0 };
+const double x[] = { 1.0, 2.0, 3.0 };
+double y[] = { 1.0, 2.0, 3.0 };
+
+c_dgemv( CblasColMajor, CblasNoTrans, 3, 3, 1.0, A, 3, x, 1, 1.0, y, 1 );
 ```
 
-TODO
+The function accepts the following arguments:
+
+-   **layout**: `[in] CBLAS_LAYOUT` storage layout.
+-   **trans**: `[in] CBLAS_TRANSPOSE` specifies whether `A` should be transposed, conjugate-transposed, or not transposed.
+-   **M**: `[in] CBLAS_INT` number of rows in the matrix `A`.
+-   **N**: `[in] CBLAS_INT` number of columns in the matrix `A`.
+-   **alpha**: `[in] double` scalar constant.
+-   **A**: `[in] double*` input matrix.
+-   **LDA**: `[in] CBLAS_INT` stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+-   **X**: `[in] double*` first input vector.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **beta**: `[in] double` scalar constant.
+-   **Y**: `[inout] double*` second input vector.
+-   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
 
 ```c
-TODO
+void c_dgemv( const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE trans, const CBLAS_INT M, const CBLAS_INT N, const double alpha, const double *A, const CBLAS_INT LDA, const double *X, const CBLAS_INT strideX, const double beta, double *Y, const CBLAS_INT strideY )
+```
+
+#### c_dgemv_ndarray( trans, M, N, alpha, \*A, sa1, sa2, oa, \*X, sx, ox, beta, \*Y, sy, oy )
+
+Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`, using indexing alternative semantics and where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
+
+```c
+#include "stdlib/blas/base/shared.h"
+
+const double A[] = { 1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 3.0, 2.0, 1.0 };
+const double x[] = { 1.0, 2.0, 3.0 };
+double y[] = { 1.0, 2.0, 3.0 };
+
+c_dgemv_ndarray( CblasNoTrans, 3, 3, 1.0, A, 1, 3, 0, x, 1, 0, 1.0, y, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **trans**: `[in] CBLAS_TRANSPOSE` specifies whether `A` should be transposed, conjugate-transposed, or not transposed.
+-   **M**: `[in] CBLAS_INT` number of rows in the matrix `A`.
+-   **N**: `[in] CBLAS_INT` number of columns in the matrix `A`.
+-   **alpha**: `[in] double` scalar.
+-   **A**: `[in] double*` input matrix.
+-   **sa1**: `[in] CBLAS_INT` stride of the first dimension of `A`.
+-   **sa2**: `[in] CBLAS_INT` stride of the second dimension of `A`.
+-   **oa**: `[in] CBLAS_INT` starting index for `A`.
+-   **X**: `[in] double*` first input vector.
+-   **sx**: `[in] CBLAS_INT` stride length for `X`.
+-   **ox**: `[in] CBLAS_INT` starting index for `X`.
+-   **beta**: `[in] double` scalar.
+-   **Y**: `[inout] double*` second input vector.
+-   **sy**: `[in] CBLAS_INT` stride length for `Y`.
+-   **oy**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+void c_dgemv_ndarray( const CBLAS_TRANSPOSE trans, const CBLAS_INT M, const CBLAS_INT N, const double alpha, const double *A, const CBLAS_INT strideA1, const CBLAS_INT strideA2, const CBLAS_INT offsetA, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double beta, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY )
 ```
 
 </section>
@@ -232,7 +289,42 @@ TODO
 ### Examples
 
 ```c
-TODO
+#include "stdlib/blas/base/dgemv.h"
+#include "stdlib/blas/base/shared.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Define a 3x3 matrix stored in row-major order:
+    const double A[ 3*3 ] = {
+        1.0, 2.0, 3.0,
+        4.0, 5.0, 6.0,
+        7.0, 8.0, 9.0
+    };
+
+    // Define `x` and `y` vectors:
+    const double x[ 3 ] = { 1.0, 2.0, 3.0 };
+    double y[ 3 ] = { 1.0, 2.0, 3.0 };
+
+    // Specify the number of elements along each dimension of `A`:
+    const int M = 3;
+    const int N = 3;
+
+    // Perform the matrix-vector operation `y = α*A*x + β*y`:
+    c_dgemv( CblasRowMajor, CblasNoTrans, M, N, 1.0, A, M, x, 1, 1.0, y, 1 );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "y[ %i ] = %lf\n", i, y[ i ] );
+    }
+
+    // Perform the matrix-vector operation `y = α*A*x + β*y` using alternative indexing semantics:
+    c_dgemv_ndarray( CblasNoTrans, M, N, 1.0, A, N, 1, 0, x, 1, 0, 1.0, y, 1, 0 );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "y[ %i ] = %lf\n", i, y[ i ] );
+    }
+}
 ```
 
 </section>

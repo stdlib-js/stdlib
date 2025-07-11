@@ -108,7 +108,7 @@ static double benchmark1( int iterations, int len ) {
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		// cppcheck-suppress uninitvar
-		v = stdlib_strided_dvarmtk( len, 0.0, 1, x, 1 );
+		v = stdlib_strided_dvarmtk( len, 1, 0.0, x, 1 );
 		if ( v != v ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -142,7 +142,7 @@ static double benchmark2( int iterations, int len ) {
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
 		// cppcheck-suppress uninitvar
-		v = stdlib_strided_dvarmtk_ndarray( len, 0.0, 1, x, 1, 0 );
+		v = stdlib_strided_dvarmtk_ndarray( len, 1, 0.0, x, 1, 0 );
 		if ( v != v ) {
 			printf( "should not return NaN\n" );
 			break;
