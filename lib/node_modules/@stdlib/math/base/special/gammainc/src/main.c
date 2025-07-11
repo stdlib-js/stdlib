@@ -348,7 +348,7 @@ static double upperGammaFraction( const double a, const double z ) {
 * Computes the next term in the series expansion of the lower incomplete gamma function.
 *
 * @param a          pointer to function parameter
-* @param x          pointer to function parameter
+* @param z          function parameter
 * @param result     pointer to result so far in series
 * @return           next term in series
 */
@@ -558,8 +558,7 @@ static double fullIGammaPrefix( const double a, const double z ) {
 		} else {
 			prefix = stdlib_base_exp( alz - z );
 		}
-	}
-	else {
+	} else {
 		if ( alz > MIN_LN ) {
 			prefix = stdlib_base_pow( z, a ) * stdlib_base_exp( -z );
 		} else if ( z/a < MAX_LN ) {
@@ -791,7 +790,7 @@ static double igammaTemmeLarge( const double a, const double x ) {
 * @param upper              boolean indicating if the function should return the upper tail of the incomplete gamma function
 * @return                   function value
 */
-static double igammaFinal( const double a, const double x, const bool regularized, const bool upper ) {
+static double igammaFinal( const double x, const double a, const bool regularized, const bool upper ) {
 	bool optimisedInvert;
 	int32_t evalMethod;
 	double initValue;
@@ -829,7 +828,7 @@ static double igammaFinal( const double a, const double x, const bool regularize
 	} else if ( x < SQRT_EPS && a > 1.0 ) {
 		evalMethod = 6;
 	} else if ( ( x > 1000.0 ) && ( ( a < x ) || ( stdlib_base_abs( a - 50.0 ) / x < 1.0 ) ) ) {
-		// calculate Q via asymptotic approximation:
+		// Calculate Q via asymptotic approximation:
 		invert = !invert;
 		evalMethod = 7;
 	} else if ( x < 0.5 ) {
@@ -1016,7 +1015,7 @@ double stdlib_base_gammainc( const double x, const double a, const bool regulari
 			initValue = 0.0;
 			result += stdlib_base_ln( lowerGammaSeries( a, x, initValue ) / a );
 		} else {
-			result = igammaFinal( a, x, true, invert );
+			result = igammaFinal( x, a, true, invert );
 			if ( result == 0.0 ) {
 				if ( invert ) {
 					// Try http://functions.wolfram.com/06.06.06.0039.01:
@@ -1039,5 +1038,5 @@ double stdlib_base_gammainc( const double x, const double a, const bool regulari
 		return stdlib_base_exp( result );
 	}
 	// If no special handling is required then we proceed as normal:
-	return igammaFinal( a, x, regularized, invert );
+	return igammaFinal( x, a, regularized, invert );
 }
