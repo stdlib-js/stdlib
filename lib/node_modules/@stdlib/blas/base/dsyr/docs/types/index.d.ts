@@ -42,11 +42,11 @@ interface Routine {
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0 ], [ 0.0, 0.0, 1.0 ] ]
+	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 2.0, 1.0, 2.0 ], [ 3.0, 2.0, 1.0 ] ]
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* dsyr( 'row-major', 'upper', 3, 1.0, x, 1, A, 3 );
-	* // A => <Float64Array>[ 2.0, 4.0, 6.0, 0.0, 5.0, 8.0, 0.0, 0.0, 10.0 ]
+	* // A => <Float64Array>[ 2.0, 4.0, 6.0, 2.0, 5.0, 8.0, 3.0, 2.0, 10.0 ]
 	*/
 	( order: Layout, uplo: MatrixTriangle, N: number, alpha: number, x: Float64Array, strideX: number, A: Float64Array, LDA: number ): Float64Array;
 
@@ -68,11 +68,11 @@ interface Routine {
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0 ], [ 0.0, 0.0, 1.0 ] ]
+	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 2.0, 1.0, 2.0 ], [ 3.0, 2.0, 1.0 ] ]
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* dsyr.ndarray( 'upper', 3, 1.0, x, 1, 0, A, 3, 1, 0 );
-	* // A => <Float64Array>[ 2.0, 4.0, 6.0, 0.0, 5.0, 8.0, 0.0, 0.0, 10.0 ]
+	* // A => <Float64Array>[ 2.0, 4.0, 6.0, 2.0, 5.0, 8.0, 3.0, 2.0, 10.0 ]
 	*/
 	ndarray( uplo: MatrixTriangle, N: number, alpha: number, x: Float64Array, strideX: number, offsetX: number, A: Float64Array, strideA1: number, strideA2: number, offsetA: number ): Float64Array;
 }
@@ -93,20 +93,20 @@ interface Routine {
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 *
-* var A = new Float64Array( [ 1.0, 1.0, 1.0, 0.0, 2.0, 2.0, 0.0, 0.0, 3.0 ] );
+* var A = new Float64Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] );
 * var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 *
-* dsyr( 'column-major', 'lower', 3, 2.0, x, 1, A, 3 );
-* // y => <Float64Array>[ 3.0, 5.0, 7.0, 0.0, 10.0, 14.0, 0.0, 0.0, 21.0 ]
+* dsyr( 'row-major', 'upper', 3, 1.0, x, 1, A, 3 );
+* // A => <Float64Array>[ 2.0, 4.0, 6.0, 2.0, 5.0, 8.0, 3.0, 2.0, 10.0 ]
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 *
-* var A = new Float64Array( [ 1.0, 1.0, 1.0, 0.0, 2.0, 2.0, 0.0, 0.0, 3.0 ] );
+* var A = new Float64Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] );
 * var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 *
-* dsyr.ndarray( 'lower', 3, 2.0, x, 1, 0, A, 3, 1, 0 );
-* // y => <Float64Array>[ 3.0, 5.0, 7.0, 0.0, 10.0, 14.0, 0.0, 0.0, 21.0 ]
+* dsyr.ndarray( 'upper', 3, 1.0, x, 1, 0, A, 3, 1, 0 );
+* // A => <Float64Array>[ 2.0, 4.0, 6.0, 2.0, 5.0, 8.0, 3.0, 2.0, 10.0 ]
 */
 declare var dsyr: Routine;
 

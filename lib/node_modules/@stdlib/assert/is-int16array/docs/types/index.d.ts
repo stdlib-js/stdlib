@@ -25,6 +25,8 @@
 * @returns boolean indicating whether value is an Int16Array
 *
 * @example
+* var Int16Array = require( '@stdlib/array/int16' );
+*
 * var bool = isInt16Array( new Int16Array( 10 ) );
 * // returns true
 *

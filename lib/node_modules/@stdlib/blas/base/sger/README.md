@@ -279,7 +279,7 @@ The function accepts the following arguments:
 -   **oa**: `[in] CBLAS_INT` starting index for `A`.
 
 ```c
-void c_sger( onst CBLAS_INT M, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, float *A, const CBLAS_INT strideA1, const CBLAS_INT strideA2, const CBLAS_INT offsetA );
+void c_sger_ndarray( const CBLAS_INT M, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, float *A, const CBLAS_INT strideA1, const CBLAS_INT strideA2, const CBLAS_INT offsetA );
 ```
 
 </section>
@@ -334,7 +334,7 @@ int main( void ) {
       }
    }
 
-   // Perform operation using alterntive indexing semantics:
+   // Perform operation using alternative indexing semantics:
    c_sger( CblasRowMajor, M, N, 1.0f, x, strideX, 0, y, 0, strideY, A, N, 1, 0 );
 
    // Print the result:

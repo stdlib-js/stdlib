@@ -66,11 +66,11 @@ void API_SUFFIX(c_sgemv)( const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE trans
 		return;
 	}
 	if ( strideX == 0 ) {
-		c_xerbla( 9, "c_sgemv", "Error: invalid argument. Ninth argument must be a nonzero. Value: `%d`.", strideX );
+		c_xerbla( 9, "c_sgemv", "Error: invalid argument. Ninth argument must be nonzero. Value: `%d`.", strideX );
 		return;
 	}
 	if ( strideY == 0 ) {
-		c_xerbla( 12, "c_sgemv", "Error: invalid argument. Twelfth argument must be a nonzero. Value: `%d`.", strideY );
+		c_xerbla( 12, "c_sgemv", "Error: invalid argument. Twelfth argument must be nonzero. Value: `%d`.", strideY );
 		return;
 	}
 	if ( layout == CblasColMajor ) {
@@ -102,7 +102,7 @@ void API_SUFFIX(c_sgemv)( const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE trans
 	if ( layout == CblasColMajor ) {
 		sa1 = 1;
 		sa2 = LDA;
-	} else { // layout === CblasRowMajor
+	} else { // layout == CblasRowMajor
 		sa1 = LDA;
 		sa2 = 1;
 	}

@@ -32,7 +32,7 @@
 * @param alpha     scalar constant
 * @param A         input matrix
 * @param strideA1  stride of the first dimension of `A`
-* @param strideA1  stride of the second dimension of `A`
+* @param strideA2  stride of the second dimension of `A`
 * @param offsetA   starting index for `A`
 * @param X         first input vector
 * @param strideX   `X` stride length
@@ -73,11 +73,11 @@ void API_SUFFIX(c_sgemv_ndarray)( const CBLAS_TRANSPOSE trans, const CBLAS_INT M
 		return;
 	}
 	if ( strideX == 0 ) {
-		c_xerbla( 10, "c_sgemv_ndarray", "Error: invalid argument. Tenth argument must be a nonzero. Value: `%d`.", strideX );
+		c_xerbla( 10, "c_sgemv_ndarray", "Error: invalid argument. Tenth argument must be nonzero. Value: `%d`.", strideX );
 		return;
 	}
 	if ( strideY == 0 ) {
-		c_xerbla( 14, "c_sgemv_ndarray", "Error: invalid argument. Fourteenth argument must be a nonzero. Value: `%d`.", strideY );
+		c_xerbla( 14, "c_sgemv_ndarray", "Error: invalid argument. Fourteenth argument must be nonzero. Value: `%d`.", strideY );
 		return;
 	}
 	// Check whether we can avoid computation altogether...
@@ -139,7 +139,7 @@ void API_SUFFIX(c_sgemv_ndarray)( const CBLAS_TRANSPOSE trans, const CBLAS_INT M
 	}
 	// Form: Y = α*A^T*X + Y
 
-	// ( !isrm && trans !== CblasNoTrans ) || ( isrm && trans === CblasNoTrans )
+	// ( !isrm && trans != CblasNoTrans ) || ( isrm && trans == CblasNoTrans )
 	if ( isrm ) {
 		// For row-major matrices, the last dimension has the fastest changing index...
 		da0 = strideA2;                     // offset increment for innermost loop
