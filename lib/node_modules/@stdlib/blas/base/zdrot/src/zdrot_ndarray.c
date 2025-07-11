@@ -23,18 +23,18 @@
 * Applies a plane rotation using alternative indexing semantics.
 *
 * @param N        number of indexed elements
-* @param ZX       first input array
-* @param strideX  ZX stride length
-* @param offsetX  starting index for ZX
-* @param ZY       second input array
-* @param strideY  ZY stride length
-* @param offsetY  starting index for ZY
+* @param X       first input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y       second input array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
-void API_SUFFIX(c_zdrot_ndarray)( const CBLAS_INT N, void *ZX, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *ZY, const CBLAS_INT strideY, const CBLAS_INT offsetY, const double c, const double s ) {
-	double *zx = (double *)ZX;
-	double *zy = (double *)ZY;
+void API_SUFFIX(c_zdrot_ndarray)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const double c, const double s ) {
+	double *x = (double *)X;
+	double *y = (double *)Y;
 	CBLAS_INT ix;
 	CBLAS_INT iy;
 	CBLAS_INT sx;
@@ -50,13 +50,13 @@ void API_SUFFIX(c_zdrot_ndarray)( const CBLAS_INT N, void *ZX, const CBLAS_INT s
 	ix = offsetX * 2;
 	iy = offsetY * 2;
 	for ( i = 0; i < N; i++ ) {
-		tmp = ( c*zx[ ix ] ) + ( s*zy[ iy ] );
-		zy[ iy ] = ( c*zy[ iy ] ) - ( s*zx[ ix ] );
-		zx[ ix ] = tmp;
+		tmp = ( c*x[ ix ] ) + ( s*y[ iy ] );
+		y[ iy ] = ( c*y[ iy ] ) - ( s*x[ ix ] );
+		x[ ix ] = tmp;
 
-		tmp = ( c*zx[ ix+1 ] ) + ( s*zy[ iy+1 ] );
-		zy[ iy+1 ] = ( c*zy[ iy+1 ] ) - ( s*zx[ ix+1 ] );
-		zx[ ix+1 ] = tmp;
+		tmp = ( c*x[ ix+1 ] ) + ( s*y[ iy+1 ] );
+		y[ iy+1 ] = ( c*y[ iy+1 ] ) - ( s*x[ ix+1 ] );
+		x[ ix+1 ] = tmp;
 
 		ix += sx;
 		iy += sy;

@@ -135,13 +135,119 @@ for ( i = 0; i < 25; i++ ) {
     x = randb( a, a+randa() );
     b = randb( a, a+randa() );
     y = logpmf( x, a, b );
-    console.log( 'x: %d, a: %d, b: %d, ln(P(X=x;a,b)): %d', x.toFixed( 4 ), a.toFixed( 4 ), b.toFixed( 4 ), y.toFixed( 4 ) );
+    console.log( 'x: %d, a: %d, b: %d, ln(P(X=x;a,b)): %d', x, a, b, y.toFixed( 4 ) );
 }
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/discrete-uniform/logpmf.h"
+```
+
+#### stdlib_base_dists_discrete_uniform_logpmf( x, a, b )
+
+Evaluates the natural logarithm of the [probability mass function][pmf] (PMF) for a [discrete uniform][discrete-uniform-distribution] distribution with parameters `a` (minimum support) and `b` (maximum support).
+
+```c
+double out = stdlib_base_dists_discrete_uniform_logpmf( 2.0, 0, 4 );
+// returns ~-1.609
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **a**: `[in] int32_t` minimum support.
+-   **b**: `[in] int32_t` maximum support.
+
+```c
+double stdlib_base_dists_discrete_uniform_logpmf( const double x, const int32_t a, const int32_t b );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/discrete-uniform/logpmf.h"
+#include "stdlib/math/base/special/round.h"
+#include <stdint.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    int32_t a;
+    int32_t b;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        a = stdlib_base_round( random_uniform( 0.0, 10.0 ) );
+        b = stdlib_base_round( random_uniform( a, a+10.0 ) );
+        x = stdlib_base_round( random_uniform( a*1.0, b*1.0 ) );
+        y = stdlib_base_dists_discrete_uniform_logpmf( x, a, b );
+        printf( "x:%lf, a: %d, b: %d, ln(P(X=x;a,b)): %lf\n", x, a, b, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

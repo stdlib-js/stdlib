@@ -41,7 +41,7 @@ var bternary3d = require( '@stdlib/array/base/broadcasted-ternary3d' );
 Applies a ternary callback to elements in three [broadcasted][@stdlib/array/base/broadcast-array] nested input arrays and assigns results to elements in a three-dimensional nested output array.
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add3' );
+var add = require( '@stdlib/number/float64/base/add3' );
 var zeros3d = require( '@stdlib/array/base/zeros3d' );
 
 var x = [ [ [ 1.0 ], [ 2.0 ] ] ];
@@ -90,7 +90,7 @@ The function accepts the following arguments:
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filled3dBy = require( '@stdlib/array/base/filled3d-by' );
 var zeros3d = require( '@stdlib/array/base/zeros3d' );
-var add = require( '@stdlib/math/base/ops/add3' );
+var add = require( '@stdlib/number/float64/base/add3' );
 var bternary3d = require( '@stdlib/array/base/broadcasted-ternary3d' );
 
 var shapes = [

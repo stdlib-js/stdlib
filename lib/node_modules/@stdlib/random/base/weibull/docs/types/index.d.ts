@@ -113,8 +113,8 @@ interface BinaryFunction extends PRNG {
 	/**
 	* Returns a Weibull distributed pseudorandom number.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns pseudorandom number
 	*/
 	( k: number, lambda: number ): number;
@@ -132,8 +132,8 @@ interface Random extends PRNG {
 	* -   If `k <= 0` or `lambda <= 0`, the function returns `NaN`.
 	* -   If `k` or `lambda` is `NaN`, the function returns `NaN`.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @returns pseudorandom number
 	*
 	* @example
@@ -149,8 +149,8 @@ interface Random extends PRNG {
 	*
 	* -   When provided `k` and `lambda`, the returned PRNG returns random variates drawn from the specified distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - function options
 	* @param options.prng - pseudorandom number generator which generates uniformly distributed pseudorandom numbers
 	* @param options.seed - pseudorandom number generator seed
@@ -213,8 +213,8 @@ interface Random extends PRNG {
 * -   If `k <= 0` or `lambda <= 0`, the function returns `NaN`.
 * -   If `k` or `lambda` is `NaN`, the function returns `NaN`.
 *
-* @param k - scale parameter
-* @param lambda - shape parameter
+* @param k - shape parameter
+* @param lambda - scale parameter
 * @returns pseudorandom number
 *
 * @example
