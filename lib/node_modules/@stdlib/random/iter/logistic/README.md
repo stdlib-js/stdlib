@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Logstic Random Numbers
+# Logistic Random Numbers
 
 > Create an iterator for generating pseudorandom numbers drawn from a [logistic][logistic] distribution.
 

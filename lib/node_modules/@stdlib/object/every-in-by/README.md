@@ -124,4 +124,12 @@ bool = everyInBy( o, isPositive );
 
 </section>
 
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
 <!-- /.links -->

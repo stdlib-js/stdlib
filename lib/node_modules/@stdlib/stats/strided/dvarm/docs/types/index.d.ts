@@ -26,8 +26,8 @@ interface Routine {
 	* Computes the variance of a double-precision floating-point strided array provided a known mean.
 	*
 	* @param N - number of indexed elements
-	* @param mean - mean
 	* @param correction - degrees of freedom adjustment
+	* @param mean - mean
 	* @param x - input array
 	* @param strideX - stride length
 	* @returns variance
@@ -37,17 +37,17 @@ interface Routine {
 	*
 	* var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 	*
-	* var v = dvarm( x.length, 1.0/3.0, 1, x, 1 );
+	* var v = dvarm( x.length, 1, 1.0/3.0, x, 1 );
 	* // returns ~4.3333
 	*/
-	( N: number, mean: number, correction: number, x: Float64Array, strideX: number ): number;
+	( N: number, correction: number, mean: number, x: Float64Array, strideX: number ): number;
 
 	/**
 	* Computes the variance of a double-precision floating-point strided array provided a known mean and using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param mean - mean
 	* @param correction - degrees of freedom adjustment
+	* @param mean - mean
 	* @param x - input array
 	* @param strideX - stride length
 	* @param offsetX - starting index
@@ -58,18 +58,18 @@ interface Routine {
 	*
 	* var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 	*
-	* var v = dvarm.ndarray( x.length, 1.0/3.0, 1, x, 1, 0 );
+	* var v = dvarm.ndarray( x.length, 1, 1.0/3.0, x, 1, 0 );
 	* // returns ~4.3333
 	*/
-	ndarray( N: number, mean: number, correction: number, x: Float64Array, strideX: number, offsetX: number ): number;
+	ndarray( N: number, correction: number, mean: number, x: Float64Array, strideX: number, offsetX: number ): number;
 }
 
 /**
 * Computes the variance of a double-precision floating-point strided array provided a known mean.
 *
 * @param N - number of indexed elements
-* @param mean - mean
 * @param correction - degrees of freedom adjustment
+* @param mean - mean
 * @param x - input array
 * @param strideX - stride length
 * @returns variance
@@ -79,7 +79,7 @@ interface Routine {
 *
 * var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 *
-* var v = dvarm( x.length, 1.0/3.0, 1, x, 1 );
+* var v = dvarm( x.length, 1, 1.0/3.0, x, 1 );
 * // returns ~4.3333
 *
 * @example
@@ -87,7 +87,7 @@ interface Routine {
 *
 * var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 *
-* var v = dvarm.ndarray( x.length, 1.0/3.0, 1, x, 1, 0 );
+* var v = dvarm.ndarray( x.length, 1, 1.0/3.0, x, 1, 0 );
 * // returns ~4.3333
 */
 declare var dvarm: Routine;

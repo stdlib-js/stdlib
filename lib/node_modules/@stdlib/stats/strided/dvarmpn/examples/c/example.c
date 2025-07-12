@@ -30,7 +30,7 @@ int main( void ) {
 	const int strideX = 2;
 
 	// Compute the variance:
-	double v = stdlib_strided_dvarmpn( N, 4.5, 1, x, strideX );
+	double v = stdlib_strided_dvarmpn( N, 1, 4.5, x, strideX );
 
 	// Print the result:
 	printf( "sample variance: %lf\n", v );
