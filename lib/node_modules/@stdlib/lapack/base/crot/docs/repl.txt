@@ -1,0 +1,172 @@
+
+{{alias}}( N, cx, strideCX, cy, strideCY, c, s )
+    Applies a plane rotation with real cosine and complex sine.
+
+    The `N` and stride parameters determine how values in the strided arrays are
+    accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is less than or equal to `0`, the vectors are unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    cx: Complex64Array
+        First input array.
+
+    strideCX: integer
+        Index increment for `cx`.
+
+    cy: Complex64Array
+        Second input array.
+
+    strideCY: integer
+        Index increment for `cy`.
+
+    c: number
+        Cosine of the angle of rotation.
+
+    s: Complex64
+        Sine of the angle of rotation.
+
+    Returns
+    -------
+    cy: Complex64Array
+        Input array `cy`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var cy = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var s = new {{alias:@stdlib/complex/float32/ctor}}( 0.3, 0.4 );
+    > {{alias}}( cx.length, cx, 1, cy, 1, 0.8, s );
+    > var z = cy.get( 0 );
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    ~-1.1
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    ~-0.2
+    > z = cx.get( 0 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    ~0.8
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    ~1.6
+
+    // Advanced indexing:
+    > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+    > cy = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > var s = new {{alias:@stdlib/complex/float32/ctor}}( 0.3, 0.4 );
+    > {{alias}}( 2, cx, -2, cy, 1, 0.8, s );
+    > z = cy.get( 0 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    ~-3.9
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    ~0.2
+    > z = cx.get( 2 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    ~4.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    ~4.8
+
+    // Using typed array views:
+    > var cx0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var cy0 = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > var cx1 = new {{alias:@stdlib/array/complex64}}( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 );
+    > var cy1 = new {{alias:@stdlib/array/complex64}}( cy0.buffer, cy0.BYTES_PER_ELEMENT*2 );
+    > var s = new {{alias:@stdlib/complex/float32/ctor}}( 0.3, 0.4 );
+    > {{alias}}( 1, cx1, 1, cy1, 1, 0.8, s );
+    > z = cy0.get( 2 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    ~-2.5
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    ~0.0
+    > z = cx0.get( 1 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    ~2.4
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    ~3.2
+
+
+{{alias}}.ndarray( N, cx, strideCX, offsetCX, cy, strideCY, offsetCY, c, s )
+    Applies a plane rotation with real cosine and complex sine using alternative
+    indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    cx: Complex64Array
+        First input array.
+
+    strideCX: integer
+        Index increment for `cx`.
+
+    offsetCX: integer
+        Starting index for `cx`.
+
+    cy: Complex64Array
+        Second input array.
+
+    strideCY: integer
+        Index increment for `cy`.
+
+    offsetCY: integer
+        Starting index for `cy`.
+
+    c: number
+        Cosine of the angle of rotation.
+
+    s: Complex64
+        Sine of the angle of rotation.
+
+    Returns
+    -------
+    cy: Complex64Array
+        Input array `cy`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var cy = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var s = new {{alias:@stdlib/complex/float32/ctor}}( 0.3, 0.4 );
+    > {{alias}}.ndarray( cx.length, cx, 1, 0, cy, 1, 0, 0.8, s );
+    > var z = cy.get( 0 );
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    ~-1.1
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    ~-0.2
+    > z = cx.get( 0 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    ~0.8
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    ~1.6
+
+    // Advanced indexing:
+    > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > cy = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > var s = new {{alias:@stdlib/complex/float32/ctor}}( 0.3, 0.4 );
+    > {{alias}}.ndarray( 1, cx, 2, 1, cy, 2, 1, 0.8, s );
+    > z = cy.get( 1 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    ~-2.5
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    ~0.0
+    > z = cx.get( 1 );
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    ~2.4
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    ~3.2
+
+    See Also
+    --------
+

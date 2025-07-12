@@ -22,9 +22,9 @@
 /**
 * Returns the standard deviation for a normal distribution with mean `mu` and standard deviation `sigma`.
 *
-* @param mu     mean of the distribution
-* @param sigma  standard deviation of the distribution
-* @return       standard deviation of the normal distribution
+* @param mu     mean
+* @param sigma  standard deviation
+* @return       standard deviation
 *
 * @example
 * double y = stdlib_base_dists_normal_stdev( 0.0, 1.0 );
