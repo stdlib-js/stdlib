@@ -48,7 +48,7 @@ bool = isPositiveNumberArray( [ 3.0, '3.0' ] );
 
 #### isPositiveNumberArray.primitives( value )
 
-Tests if a `value` is an array-like object `array` containing **only** primitive positive numbers.
+Tests if a `value` is an array-like object containing **only** primitive positive numbers.
 
 <!-- eslint-disable no-new-wrappers -->
 
@@ -64,7 +64,7 @@ bool = isPositiveNumberArray.primitives( [ 3.0, new Number(1.0) ] );
 
 #### isPositiveNumberArray.objects( value )
 
-Tests if a `value` is an array-like object `array` containing **only** object positive numbers.
+Tests if a `value` is an array-like object containing **only** object positive numbers.
 
 <!-- eslint-disable no-new-wrappers, max-len -->
 

@@ -110,7 +110,7 @@ try {
 }
 ```
 
-By default, the method copies from the beginning of the [`SharedArrayBuffer`][mdn-sharedarraybuffer]. To beginning copying from a different byte index, provide a `start` argument, specifying the starting byte index (inclusive).
+By default, the method copies from the beginning of the [`SharedArrayBuffer`][mdn-sharedarraybuffer]. To begin copying from a different byte index, provide a `start` argument, specifying the starting byte index (inclusive).
 
 <!-- eslint-disable stdlib/require-globals, no-unused-vars, no-inner-declarations -->
 

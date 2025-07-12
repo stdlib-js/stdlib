@@ -1,9 +1,10 @@
 {
   "binary": null,
   "bool": "bool",
+  "complex32": "stdlib_complex32_t",
   "complex64": "stdlib_complex64_t",
   "complex128": "stdlib_complex128_t",
-  "float16": null,
+  "float16": "stdlib_float16_t",
   "bfloat16": null,
   "float32": "float",
   "float64": "double",
