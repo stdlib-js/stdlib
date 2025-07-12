@@ -16,23 +16,19 @@
 * limitations under the License.
 */
 
-#include <stdint.h>
-
+#include "stdlib/math/base/special/nonfibonacci.h"
 #include "stdlib/constants/float64/nan.h"
-#include "stdlib/constants/float64/phi.h"
-#include "stdlib/constants/float64/pinf.h"
-#include "stdlib/math/base/assert/is_integer.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/floor.h"
 #include "stdlib/math/base/special/ln.h"
+#include <stdint.h>
 
-#define SQRT5 2.23606797749979
-#define LN_PHI 0.48121182506
+static const double SQRT5 = 2.23606797749979;
+static const double LN_PHI = 0.48121182506;
 
 /**
 * Computes the nth non-Fibonacci number.
 *
-* @param x    input value
+* @param n    input value
 * @return     output value
 *
 * @example
@@ -48,14 +44,6 @@
 * // returns 7.0
 *
 * @example
-* double y = stdlib_base_nonfibonacci( NaN );
-* // returns NaN
-*
-* @example
-* double y = stdlib_base_nonfibonacci( 3.14 );
-* // returns NaN
-*
-* @example
 * double y = stdlib_base_nonfibonacci( -1 );
 * // returns NaN
 */
@@ -64,12 +52,7 @@ double stdlib_base_nonfibonacci( const int32_t n ) {
 	double b;
 	int32_t mut_n = n;
 
-	if (
-		stdlib_base_is_nan( n ) ||
-		!stdlib_base_is_integer( n ) ||
-		n < 1.0 ||
-		n == STDLIB_CONSTANT_FLOAT64_PINF
-	) {
+	if ( n < 1 ) {
 		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 

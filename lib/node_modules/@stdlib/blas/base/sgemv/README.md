@@ -20,7 +20,7 @@ limitations under the License.
 
 # sgemv
 
-> Perform one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`.
+> Perform one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A**T*x + β*y`.
 
 <section class="usage">
 
@@ -30,9 +30,9 @@ limitations under the License.
 var sgemv = require( '@stdlib/blas/base/sgemv' );
 ```
 
-#### sgemv( ord, trans, M, N, α, A, LDA, x, sx, β, y, sy )
+#### sgemv( order, trans, M, N, α, A, LDA, x, sx, β, y, sy )
 
-Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`, where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
+Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A**T*x + β*y`, where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -47,7 +47,7 @@ sgemv( 'row-major', 'no-transpose', 2, 3, 1.0, A, 3, x, 1, 1.0, y, 1 );
 
 The function has the following parameters:
 
--   **ord**: storage layout.
+-   **order**: storage layout.
 -   **trans**: specifies whether `A` should be transposed, conjugate-transposed, or not transposed.
 -   **M**: number of rows in the matrix `A`.
 -   **N**: number of columns in the matrix `A`.
@@ -55,10 +55,10 @@ The function has the following parameters:
 -   **A**: input matrix stored in linear memory as a [`Float32Array`][mdn-float32array].
 -   **lda**: stride of the first dimension of `A` (leading dimension of `A`).
 -   **x**: input [`Float32Array`][mdn-float32array].
--   **sx**: index increment for `x`.
+-   **sx**: stride length for `x`.
 -   **β**: scalar constant.
 -   **y**: output [`Float32Array`][mdn-float32array].
--   **sy**: index increment for `y`.
+-   **sy**: stride length for `y`.
 
 The stride parameters determine how operations are performed. For example, to iterate over every other element in `x` and `y`,
 
@@ -93,9 +93,11 @@ sgemv( 'row-major', 'no-transpose', 2, 2, 1.0, A, 2, x1, -1, 1.0, y1, -1 );
 // y0 => <Float32Array>[ 0.0, 8.0, 4.0 ]
 ```
 
+<!-- lint disable maximum-heading-length -->
+
 #### sgemv.ndarray( trans, M, N, α, A, sa1, sa2, oa, x, sx, ox, β, y, sy, oy )
 
-Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`, using alternative indexing semantics and where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
+Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A**T*x + β*y`, using alternative indexing semantics and where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -199,18 +201,73 @@ console.log( y );
 #include "stdlib/blas/base/sgemv.h"
 ```
 
-#### TODO
+#### c_sgemv( layout, trans, M, N, alpha, \*A, LDA, \*X, strideX, beta, \*Y, strideY )
 
-TODO.
+Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`, where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
 
 ```c
-TODO
+#include "stdlib/blas/base/shared.h"
+
+const float A[] = { 1.0f, 0.0f, 0.0f, 2.0f, 1.0f, 0.0f, 3.0f, 2.0f, 1.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f };
+float y[] = { 1.0f, 2.0f, 3.0f };
+
+c_sgemv( CblasColMajor, CblasNoTrans, 3, 3, 1.0f, A, 3, x, 1, 1.0f, y, 1 );
 ```
 
-TODO
+The function accepts the following arguments:
+
+-   **layout**: `[in] CBLAS_LAYOUT` storage layout.
+-   **trans**: `[in] CBLAS_TRANSPOSE` specifies whether `A` should be transposed, conjugate-transposed, or not transposed.
+-   **M**: `[in] CBLAS_INT` number of rows in the matrix `A`.
+-   **N**: `[in] CBLAS_INT` number of columns in the matrix `A`.
+-   **alpha**: `[in] float` scalar constant.
+-   **A**: `[in] float*` input matrix.
+-   **LDA**: `[in] CBLAS_INT` stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+-   **X**: `[in] float*` first input vector.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **beta**: `[in] float` scalar constant.
+-   **Y**: `[inout] float*` second input vector.
+-   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
 
 ```c
-TODO
+void c_sgemv( const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE trans, const CBLAS_INT M, const CBLAS_INT N, const float alpha, const float *A, const CBLAS_INT LDA, const float *X, const CBLAS_INT strideX, const float beta, float *Y, const CBLAS_INT strideY )
+```
+
+#### c_sgemv_ndarray( trans, M, N, alpha, \*A, sa1, sa2, oa, \*X, sx, ox, beta, \*Y, sy, oy )
+
+Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`, using indexing alternative semantics and where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
+
+```c
+#include "stdlib/blas/base/shared.h"
+
+const float A[] = { 1.0f, 0.0f, 0.0f, 2.0f, 1.0f, 0.0f, 3.0f, 2.0f, 1.0f };
+const float x[] = { 1.0f, 2.0f, 3.0f };
+float y[] = { 1.0f, 2.0f, 3.0f };
+
+c_sgemv_ndarray( CblasNoTrans, 3, 3, 1.0f, A, 1, 3, 0, x, 1, 0, 1.0f, y, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **trans**: `[in] CBLAS_TRANSPOSE` specifies whether `A` should be transposed, conjugate-transposed, or not transposed.
+-   **M**: `[in] CBLAS_INT` number of rows in the matrix `A`.
+-   **N**: `[in] CBLAS_INT` number of columns in the matrix `A`.
+-   **alpha**: `[in] float` scalar constant.
+-   **A**: `[in] float*` input matrix.
+-   **sa1**: `[in] CBLAS_INT` stride of the first dimension of `A`.
+-   **sa2**: `[in] CBLAS_INT` stride of the second dimension of `A`.
+-   **oa**: `[in] CBLAS_INT` starting index for `A`.
+-   **X**: `[in] float*` first input vector.
+-   **sx**: `[in] CBLAS_INT` stride length for `X`.
+-   **ox**: `[in] CBLAS_INT` starting index for `X`.
+-   **beta**: `[in] float` scalar constant.
+-   **Y**: `[inout] float*` second input vector.
+-   **sy**: `[in] CBLAS_INT` stride length for `Y`.
+-   **oy**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+void c_sgemv_ndarray( const CBLAS_TRANSPOSE trans, const CBLAS_INT M, const CBLAS_INT N, const float alpha, const float *A, const CBLAS_INT strideA1, const CBLAS_INT strideA2, const CBLAS_INT offsetA, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const float beta, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY )
 ```
 
 </section>
@@ -232,7 +289,42 @@ TODO
 ### Examples
 
 ```c
-TODO
+#include "stdlib/blas/base/sgemv.h"
+#include "stdlib/blas/base/shared.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Define a 3x3 matrix stored in row-major order:
+    const float A[ 3*3 ] = {
+        1.0f, 2.0f, 3.0f,
+        4.0f, 5.0f, 6.0f,
+        7.0f, 8.0f, 9.0f
+    };
+
+    // Define `x` and `y` vectors:
+    const float x[ 3 ] = { 1.0f, 2.0f, 3.0f };
+    float y[ 3 ] = { 1.0f, 2.0f, 3.0f };
+
+    // Specify the number of elements along each dimension of `A`:
+    const int M = 3;
+    const int N = 3;
+
+    // Perform the matrix-vector operation `y = α*A*x + β*y`:
+    c_sgemv( CblasRowMajor, CblasNoTrans, M, N, 1.0f, A, M, x, 1, 1.0f, y, 1 );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "y[ %i ] = %f\n", i, y[ i ] );
+    }
+
+    // Perform the matrix-vector operation `y = α*A*x + β*y` using alternative indexing semantics:
+    c_sgemv_ndarray( CblasNoTrans, M, N, 1.0f, A, N, 1, 0, x, 1, 0, 1.0f, y, 1, 0 );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "y[ %i ] = %f\n", i, y[ i ] );
+    }
+}
 ```
 
 </section>
@@ -257,7 +349,7 @@ TODO
 
 [blas]: http://www.netlib.org/blas
 
-[blas-sgemv]: https://www.netlib.org/lapack/explore-html/d7/dda/group__gemv_ga0d35d880b663ad18204bb23bd186e380.html#ga0d35d880b663ad18204bb23bd186e380
+[blas-sgemv]: https://www.netlib.org/lapack/explore-html-3.6.1/d6/d30/group__single__blas__level2_gafc92361b74c6d41c7e5afa0aa5d13ec9.html
 
 [mdn-float32array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array
 

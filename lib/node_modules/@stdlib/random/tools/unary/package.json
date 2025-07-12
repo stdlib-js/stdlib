@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/random/tools/unary",
   "version": "0.0.0",
-  "description": "Constructor for creating ndarrays filled with pseudorandom numbers drawn from a single-parameter probability distribution.",
+  "description": "Constructor for creating ndarrays filled with pseudorandom values drawn from a unary PRNG.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

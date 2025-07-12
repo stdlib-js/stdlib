@@ -42,7 +42,7 @@ var pdifff = require( '@stdlib/math/base/special/pdifff' );
 
 #### pdifff( x, y )
 
-Returns the positive difference between `x` and `y` if `x < y`; otherwise, returns `0`.
+Returns the positive difference between `x` and `y` if `x > y`; otherwise, returns `0`.
 
 ```javascript
 var v = pdifff( 4.15, 3.15 );
@@ -136,7 +136,7 @@ for ( i = 0; i < 100; i++ ) {
 ### Usage
 
 ```c
-#include "stdlib/math/base/special/pdifff.h
+#include "stdlib/math/base/special/pdifff.h"
 ```
 
 #### stdlib_base_pdifff( x, y )

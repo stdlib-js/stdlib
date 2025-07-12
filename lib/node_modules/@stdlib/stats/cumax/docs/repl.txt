@@ -25,13 +25,7 @@
 
     Examples
     --------
-    > var buf = [ -1.0, 2.0, -3.0, -4.0 ];
-    > var dt = 'generic';
-    > var sh = [ buf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, buf, sh, sx, ox, ord );
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
     > var y = {{alias}}( x );
     > {{alias:@stdlib/ndarray/to-array}}( y )
     [ -1.0, 2.0, 2.0, 2.0 ]
@@ -64,13 +58,7 @@
 
     Examples
     --------
-    > var buf = [ -1.0, 2.0, -3.0, -4.0 ];
-    > var dt = 'generic';
-    > var sh = [ buf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, buf, sh, sx, ox, ord );
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
     > var out = {{alias:@stdlib/ndarray/zeros-like}}( x );
     > var y = {{alias}}.assign( x, out )
     <ndarray>

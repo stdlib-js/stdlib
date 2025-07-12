@@ -23,7 +23,7 @@
 *
 * @example
 * var g = FLOAT32_GAMMA_LANCZOS_G;
-* // returns 10.900510787963867
+* // returns 1.42845618724823
 */
 declare const FLOAT32_GAMMA_LANCZOS_G: number;
 
