@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,8 +22,8 @@
 
 #include "stdlib/strided/base/binary/cs_z_as_zz_z.h"
 #include "stdlib/strided/base/binary/macros.h"
-#include "stdlib/complex/float32.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 
 /**
@@ -36,7 +36,7 @@
 *
 * @example
 * #include "stdlib/strided/base/binary/cs_z_as_zz_z.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 *
 * // Create underlying byte arrays:
@@ -54,12 +54,12 @@
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* static stdlib_complex128_t add( stdlib_complex128_t x, stdlib_complex128_t y ) {
+* static stdlib_complex128_t fcn( stdlib_complex128_t x, stdlib_complex128_t y ) {
 *     // ...
 * }
 *
 * // Apply the callback:
-* stdlib_strided_cs_z_as_zz_z( arrays, shape, strides, (void *)add );
+* stdlib_strided_cs_z_as_zz_z( arrays, shape, strides, (void *)fcn );
 */
 void stdlib_strided_cs_z_as_zz_z( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	typedef stdlib_complex128_t func_type( const stdlib_complex128_t x, const stdlib_complex128_t y );

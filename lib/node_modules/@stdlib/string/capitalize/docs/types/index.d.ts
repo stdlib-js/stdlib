@@ -18,6 +18,8 @@
 
 // TypeScript Version: 4.1
 
+type Capitalize<S extends string> = S extends `${infer F}${infer R}` ? `${Uppercase<F>}${R}` : S;
+
 /**
 * Capitalizes the first character in a string.
 *
@@ -40,7 +42,7 @@
 * var out = capitalize( 'Hidden Treasures' );
 * // returns 'Hidden Treasures'
 */
-declare function capitalize( str: string ): string;
+declare function capitalize<S extends string>( str: S ): Capitalize<S>;
 
 
 // EXPORTS //

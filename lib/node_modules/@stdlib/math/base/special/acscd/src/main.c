@@ -24,7 +24,7 @@
 * Computes the arccosecant (in degrees) of a double-precision floating-point number.
 *
 * @param x    input value
-* @returns    arccosecant (in degrees)
+* @return     arccosecant (in degrees)
 *
 * @example
 * double v = stdlib_base_acscd( 1.0 );

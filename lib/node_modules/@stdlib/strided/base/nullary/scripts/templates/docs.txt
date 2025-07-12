@@ -1,4 +1,4 @@
-#### stdlib_strided_{{SIGNATURE}}( \*arrays[], \*shape, \*strides, \*fcn )
+#### stdlib_strided_{{SIGNATURE}}( \*arrays\[], \*shape, \*strides, \*fcn )
 
 Applies a nullary callback and assigns results to elements in a strided output array.
 

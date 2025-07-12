@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType, Mode } from '@stdlib/types/ndarray';
+import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, complex128ndarray, complex64ndarray, genericndarray, DataType, Mode } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing function options.
@@ -198,6 +198,34 @@ interface Uint8COptions extends Options {
 	* -   This option overrides the input array's inferred data type.
 	*/
 	dtype: 'uint8c';
+}
+
+/**
+* Interface describing function options.
+*/
+interface BoolOptions extends Options {
+	/**
+	* Underlying data type.
+	*
+	* ## Notes
+	*
+	* -   This option overrides the input array's inferred data type.
+	*/
+	dtype: 'bool';
+}
+
+/**
+* Interface describing function options.
+*/
+interface GenericOptions extends Options {
+	/**
+	* Underlying data type.
+	*
+	* ## Notes
+	*
+	* -   This option overrides the input array's inferred data type.
+	*/
+	dtype: 'generic';
 }
 
 /**
@@ -494,6 +522,56 @@ declare function empty( shape: Shape | number, options: Uint8COptions ): uint8cn
 *
 * @param shape - array shape
 * @param options - options
+* @param options.dtype - underlying data type
+* @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @returns zero-filled array
+*
+* @example
+* var arr = empty( [ 2, 2 ], {
+*     'dtype': bool'
+* });
+* // returns <ndarray>
+*
+* var sh = arr.shape;
+* // returns [ 2, 2 ]
+*
+* var dt = arr.dtype;
+* // returns 'bool'
+*/
+declare function empty( shape: Shape | number, options: BoolOptions ): boolndarray;
+
+/**
+* Creates an uninitialized array having a specified shape and data type.
+*
+* @param shape - array shape
+* @param options - options
+* @param options.dtype - underlying data type
+* @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @returns zero-filled array
+*
+* @example
+* var arr = empty( [ 2, 2 ], {
+*     'dtype': generic'
+* });
+* // returns <ndarray>
+*
+* var sh = arr.shape;
+* // returns [ 2, 2 ]
+*
+* var dt = arr.dtype;
+* // returns 'generic'
+*/
+declare function empty( shape: Shape | number, options: GenericOptions ): genericndarray<number>;
+
+/**
+* Creates an uninitialized array having a specified shape and data type.
+*
+* @param shape - array shape
+* @param options - options
 * @param options.dtype - underlying data type (default: 'float64')
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
@@ -533,7 +611,7 @@ declare function empty( shape: Shape | number, options?: Options ): float64ndarr
 * var dt = arr.dtype;
 * // returns 'float64'
 */
-declare function empty( shape: Shape | number, options?: OptionsWithDType ): typedndarray<number>;
+declare function empty<T = unknown>( shape: Shape | number, options?: OptionsWithDType ): typedndarray<T>;
 
 
 // EXPORTS //

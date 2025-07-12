@@ -1,4 +1,4 @@
-#### stdlib_ndarray_{{SIGNATURE}}( \*arrays[], \*fcn )
+#### stdlib_ndarray_{{SIGNATURE}}( \*arrays\[], \*fcn )
 
 Applies a nullary callback and assigns results to elements in an output ndarray.
 

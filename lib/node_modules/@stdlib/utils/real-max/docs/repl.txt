@@ -5,9 +5,9 @@
 
     The following numeric real types are supported:
 
-    - float64: double-precision floating-point numbers
-    - float32: single-precision floating-point numbers
-    - float16: half-precision floating-point numbers
+    - float64: double-precision floating-point numbers.
+    - float32: single-precision floating-point numbers.
+    - float16: half-precision floating-point numbers.
 
     Parameters
     ----------

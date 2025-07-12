@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -28,6 +28,7 @@ import empty = require( './index' );
 	empty( 10, 'float32' ); // $ExpectType Float32Array
 	empty( 10, 'complex128' ); // $ExpectType Complex128Array
 	empty( 10, 'complex64' ); // $ExpectType Complex64Array
+	empty( 10, 'bool' ); // $ExpectType BooleanArray
 	empty( 10, 'int32' ); // $ExpectType Int32Array
 	empty( 10, 'int16' ); // $ExpectType Int16Array
 	empty( 10, 'int8' ); // $ExpectType Int8Array

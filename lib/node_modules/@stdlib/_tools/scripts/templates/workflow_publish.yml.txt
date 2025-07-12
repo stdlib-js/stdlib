@@ -72,8 +72,8 @@ jobs:
           node-version: 20
         timeout-minutes: 5
 
-      # Configure git:
-      - name: 'Configure git'
+      # Configure Git:
+      - name: 'Configure Git'
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
@@ -93,6 +93,10 @@ jobs:
 
           # Replace branch in README.md link definitions for badges with the new version:
           find . -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/branch([=:])[^ ]+/branch\1v${NEW_VERSION}/g"
+
+          # Rewrite CHANGELOG.md to replace "Unreleased" with the new version:
+          sed -Ei "s/Unreleased/${NEW_VERSION}/g" CHANGELOG.md
+          sed -Ei "s/unreleased/v${NEW_VERSION}/g" CHANGELOG.md
 
           # Create a new commit and tag:
           git add package.json README.md
@@ -202,7 +206,7 @@ jobs:
       # Publish package to npm:
       - name: 'Publish package to npm'
         # Pin action to full length commit SHA
-        uses: JS-DevTools/npm-publish@4b07b26a2f6e0a51846e1870223e545bae91c552 # v3.0.1
+        uses: JS-DevTools/npm-publish@19c28f1ef146469e409470805ea4279d47c3d35c # v3.1.1
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: public

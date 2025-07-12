@@ -17,9 +17,9 @@
 */
 
 #include "stdlib/napi/argv_complex64.h"
-#include "stdlib/complex/float32.h"
-#include "stdlib/complex/realf.h"
-#include "stdlib/complex/imagf.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/real.h"
+#include "stdlib/complex/float32/imag.h"
 #include "stdlib/napi/argv.h"
 #include <node_api.h>
 #include <assert.h>
@@ -27,7 +27,6 @@
 /**
 * Identity function.
 *
-* @private
 * @param v      input value
 * @return       input value
 */
@@ -38,7 +37,6 @@ static stdlib_complex64_t identity( const stdlib_complex64_t v ) {
 /**
 * Receives JavaScript callback invocation data.
 *
-* @private
 * @param env    environment under which the function is invoked
 * @param info   callback data
 * @return       Node-API value
@@ -49,10 +47,10 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 
 	stdlib_complex64_t out = identity( value );
 
-	float re = stdlib_realf( out );
+	float re = stdlib_complex64_real( out );
 	assert( re == 3.0f );
 
-	float im = stdlib_imagf( out );
+	float im = stdlib_complex64_imag( out );
 	assert( im == 5.0f );
 
 	return NULL;
@@ -61,7 +59,6 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 /**
 * Initializes a Node-API module.
 *
-* @private
 * @param env      environment under which the function is invoked
 * @param exports  exports object
 * @return         main export

@@ -36,6 +36,11 @@ extern "C" {
 */
 void API_SUFFIX(c_dscal)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT stride );
 
+/**
+* Multiplies each element of a double-precision floating-point vector by a constant using alternative indexing semantics.
+*/
+void API_SUFFIX(c_dscal_ndarray)( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT stride, const CBLAS_INT offset );
+
 #ifdef __cplusplus
 }
 #endif

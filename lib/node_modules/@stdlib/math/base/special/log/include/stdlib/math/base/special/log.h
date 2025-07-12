@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the base b logarithm of x.
+* Computes the base `b` logarithm of a double-precision floating-point number.
 */
 double stdlib_base_log( const double x, const double b );
 

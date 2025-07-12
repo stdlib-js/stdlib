@@ -22,6 +22,8 @@
 #ifndef SROT_CBLAS_H
 #define SROT_CBLAS_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Applies a plane rotation.
 */
-void cblas_srot( const int N, float *X, const int strideX, float *Y, const int strideY, const float c, const float s );
+void API_SUFFIX(cblas_srot)( const CBLAS_INT N, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY, const float c, const float s );
 
 #ifdef __cplusplus
 }

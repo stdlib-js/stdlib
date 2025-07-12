@@ -18,8 +18,8 @@
 /// <reference types="@stdlib/types"/>
 
 import { Complex64 as Cmplx64, Complex128 as Cmplx128 } from '@stdlib/types/complex';
-import Complex64 = require( '@stdlib/complex/float32' );
-import Complex128 = require( '@stdlib/complex/float64' );
+import Complex64 = require( '@stdlib/complex/float32/ctor' );
+import Complex128 = require( '@stdlib/complex/float64/ctor' );
 import callbacks = require( './index' );
 
 /**

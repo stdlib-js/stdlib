@@ -18,6 +18,8 @@
 
 #include "stdlib/blas/base/sscal.h"
 #include "stdlib/blas/base/sscal_cblas.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Multiplies a single-precision floating-point vector `X` by a constant.
@@ -27,6 +29,28 @@
 * @param X       input array
 * @param stride  index increment
 */
-void c_sscal( const int N, const float alpha, float *X, const int stride ) {
-	cblas_sscal( N, alpha, X, stride );
+void API_SUFFIX(c_sscal)( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT stride ) {
+	CBLAS_INT sx = stride;
+	if ( sx < 0 ) {
+		sx = -sx;
+	}
+	API_SUFFIX(cblas_sscal)( N, alpha, X, sx );
+}
+
+/**
+* Multiplies a single-precision floating-point vector `X` by a constant using alternative indexing semantics.
+*
+* @param N       number of indexed elements
+* @param alpha   scalar
+* @param X       input array
+* @param stride  index increment
+* @param offset  starting index
+*/
+void API_SUFFIX(c_sscal_ndarray)( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT stride, const CBLAS_INT offset ) {
+	CBLAS_INT sx = stride;
+	X += stdlib_strided_min_view_buffer_index( N, stride, offset ); // adjust array pointer
+	if ( sx < 0 ) {
+		sx = -sx;
+	}
+	API_SUFFIX(cblas_sscal)( N, alpha, X, sx );
 }

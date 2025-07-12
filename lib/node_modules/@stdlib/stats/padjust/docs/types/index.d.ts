@@ -69,7 +69,7 @@ type Method = 'bh' | 'bonferroni' | 'by' | 'holm' | 'hommel';
 * var out = padjust( pvalues, 'hommel' );
 * // returns [ 0.032, 0.12, ..., 0.6, 0.4 ]
 */
-declare function padjust( x: Array<number>, method: Method, comparisons?: number ): Array<number>;
+declare function padjust( pvals: Array<number>, method: Method, comparisons?: number ): Array<number>;
 
 
 // EXPORTS //

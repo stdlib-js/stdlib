@@ -118,7 +118,7 @@ dt = y.dtype;
 
 ```javascript
 var dtypes = require( '@stdlib/ndarray/dtypes' );
-var zeros = require( '@stdlib/ndarray/zeros' );
+var empty = require( '@stdlib/ndarray/empty' );
 var emptyLike = require( '@stdlib/ndarray/empty-like' );
 
 // Get a list of data types:
@@ -129,7 +129,7 @@ var x;
 var y;
 var i;
 for ( i = 0; i < dt.length; i++ ) {
-    x = zeros( [ 2, 2 ], {
+    x = empty( [ 2, 2 ], {
         'dtype': dt[ i ]
     });
     y = emptyLike( x );

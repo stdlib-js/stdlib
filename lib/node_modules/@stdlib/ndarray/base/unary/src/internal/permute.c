@@ -22,7 +22,6 @@
 /**
 * Permutes an input array according to a provided index array.
 *
-* @private
 * @param n    number of elements to permute
 * @param arr  input array
 * @param idx  permutation indices

@@ -90,11 +90,7 @@ var out = char2dtype();
 var dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
 var char2dtype = require( '@stdlib/ndarray/base/char2dtype' );
 
-var chars;
-var out;
-var i;
-
-chars = [
+var chars = [
     dtypeChar( 'float64' ),
     dtypeChar( 'float32' ),
     dtypeChar( 'int8' ),
@@ -109,9 +105,9 @@ chars = [
     '('
 ];
 
+var i;
 for ( i = 0; i < chars.length; i++ ) {
-    out = char2dtype( chars[ i ] );
-    console.log( '%s => %s', chars[ i ], out );
+    console.log( '%s => %s', chars[ i ], char2dtype( chars[ i ] ) );
 }
 ```
 

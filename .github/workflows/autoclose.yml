@@ -1,0 +1,250 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: autoclose
+
+# Workflow triggers:
+on:
+  pull_request_target:
+    types:
+      - labeled
+
+# Workflow jobs:
+jobs:
+
+  # Define a job which closes a pull request if a contributor failed to setup EditorConfig:
+  editorconfig:
+
+    # Define job name:
+    name: 'Check for EditorConfig label'
+
+    # Only run this job if the pull request has a specific label:
+    if: "${{ github.event.label.name == 'autoclose: EditorConfig' }}"
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Close the pull request:
+      - name: 'Close pull request'
+        run: gh pr close "$NUMBER" --comment "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          BODY: |
+            Thank you for working on this pull request. However, we cannot accept your contribution as this pull request does not follow our [contributing guidelines](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md).
+
+            Per the guidelines outlined in our [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md), you should download and setup [EditorConfig](http://editorconfig.org/) to ensure that files are automatically configured to use expected indentation and line endings.
+
+            If you would prefer to avoid manual setup, you could also consider using a pre-configured [development container](https://github.com/stdlib-js/stdlib/tree/develop/.devcontainer) for use locally or in GitHub Codespaces.
+
+            Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
+
+  # Define a job which closes a pull request if a contributor failed to follow contributing guidelines:
+  contributor_guidelines:
+
+    # Define job name:
+    name: 'Check for contributor guidelines label'
+
+    # Only run this job if the pull request has a specific label:
+    if: "${{ github.event.label.name == 'autoclose: Contributor Guidelines' }}"
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Close the pull request:
+      - name: 'Close pull request'
+        run: gh pr close "$NUMBER" --comment "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          BODY: |
+            Thank you for working on this pull request. However, we cannot accept your contribution as this pull request does not follow our [contributing guidelines](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md).
+
+            Per the guidelines outlined in our [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md), you should have setup your local development environment such that automated development processes for linting, license verification, and unit testing can run prior to authoring commits and pushing changes. We encourage you to refer to that guide **before** continuing to work on this pull request.
+
+            If you would prefer to avoid manual setup, you could also consider using a pre-configured [development container](https://github.com/stdlib-js/stdlib/tree/develop/.devcontainer) for use locally or in GitHub Codespaces.
+
+            Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
+
+  # Define a job which closes a pull request if a contributor failed to follow project conventions:
+  project_conventions:
+
+    # Define job name:
+    name: 'Check for project conventions label'
+
+    # Only run this job if the pull request has a specific label:
+    if: "${{ github.event.label.name == 'autoclose: Project Conventions' }}"
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Close the pull request:
+      - name: 'Close pull request'
+        run: gh pr close "$NUMBER" --comment "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          BODY: |
+            Thank you for working on this pull request. However, we cannot accept your contribution as this pull request does not follow project conventions.
+
+            We place a high value on consistency throughout the stdlib codebase, and this pull request was found to significantly deviate from stdlib conventions. We encourage you to closely examine other packages in stdlib and attempt to emulate the practices and conventions found therein.
+
+            -   If you are attempting to contribute a new package, sometimes the best approach is to simply copy the contents of an existing package and then modify the minimum amount necessary to implement the feature (e.g., changing descriptions, parameter names, and implementation).
+            -   If you are contributing tests, find a package implementing a similar feature and emulate the tests of that package.
+            -   If you are updating documentation, examine several similar packages and emulate the content, style, and prose of those packages.
+
+            In short, the more effort you put in to ensure that your contribution looks and feels like stdlib—including variables names, bracket spacing, line breaks, etc—the more likely that your contribution will be reviewed and ultimately accepted. We encourage you to closely study the codebase **before** continuing to work on this pull request.
+
+            Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
+
+  # Define a job which closes a pull request if a pull request is considered spam:
+  spam:
+
+    # Define job name:
+    name: 'Check for spam label'
+
+    # Only run this job if the pull request has a specific label:
+    if: "${{ github.event.label.name == 'autoclose: Spam' }}"
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Close the pull request:
+      - name: 'Close pull request'
+        run: gh pr close "$NUMBER" --comment "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          BODY: |
+            Thank you for working on this pull request. However, we cannot accept your contribution as this pull request does not meet the standards of this project.
+
+            Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
+
+      # Lock pull request conversation:
+      - name: 'Lock conversation'
+        run: gh pr lock "$NUMBER" --reason spam
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+
+  # Define a job which closes a pull request if a pull request is considered stale:
+  stale:
+
+    # Define job name:
+    name: 'Check for stale label'
+
+    # Only run this job if the pull request has a specific label:
+    if: "${{ github.event.label.name == 'autoclose: Stale' }}"
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+      # Close the pull request:
+      - name: 'Close pull request'
+        run: gh pr close "$NUMBER" --comment "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          BODY: |
+            This pull request has been automatically closed because it has been inactive for an extended period after changes were requested. If you still wish to pursue this contribution, feel free to reopen the pull request or submit a new one.
+
+            We appreciate your interest in contributing to stdlib!
+
+  # Define a job which closes a pull request if a PR has an inappropriate Git history:
+  git_history:
+
+    # Define job name:
+    name: 'Check for Git History label'
+
+    # Only run this job if the pull request has a specific label:
+    if: "${{ github.event.label.name == 'autoclose: Git History' }}"
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Close the pull request:
+      - name: 'Close pull request'
+        run: gh pr close "$NUMBER" --comment "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          BODY: |
+            Thank you for working on this pull request. However, we cannot accept your contribution due to Git history issues.
+
+            Some common issues include:
+
+            -   Merge conflicts
+            -   Inappropriate commit messages
+            -   Unrelated commits
+            -   Including changes from merged branches that weren't intended for this PR
+
+            We recommend opening a new pull request with only the intended changes.
+
+            Thank you for your interest in stdlib, and we look forward to your future contributions.
+
+  # Define a job which closes a pull request if proposed changes duplicate already included changes:
+  already_resolved:
+
+    # Define job name:
+    name: 'Check for already resolved label'
+
+    # Only run this job if the pull request has a specific label:
+    if: "${{ github.event.label.name == 'autoclose: Already Resolved' }}"
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Close the pull request:
+      - name: 'Close pull request'
+        run: gh pr close "$NUMBER" --comment "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          BODY: |
+            Thank you for working on this pull request. However, we cannot accept your contribution as the issue this pull request seeks to resolve has already been addressed in a different pull request or commit.
+
+            Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.

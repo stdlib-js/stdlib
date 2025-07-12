@@ -22,16 +22,16 @@
 /// <reference types="node"/>
 
 import { Buffer } from 'buffer';
-import { TypedArray } from '@stdlib/types/array';
+import { TypedArray, ComplexTypedArray, BooleanTypedArray } from '@stdlib/types/array';
 import { DataType } from '@stdlib/types/ndarray';
 
 /**
 * Array or typed array.
 */
-type ArrayOrBufferOrTypedArray = Array<any> | TypedArray | Buffer | null;
+type ArrayOrBufferOrTypedArray = Array<any> | TypedArray | ComplexTypedArray | BooleanTypedArray | Buffer | null;
 
 /**
-* Returns a zero-filled contiguous linear ndarray data buffer.
+* Returns a contiguous linear ndarray data buffer.
 *
 * @param dtype - data type
 * @param size - buffer size

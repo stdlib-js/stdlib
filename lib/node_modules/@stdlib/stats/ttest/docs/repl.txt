@@ -128,7 +128,7 @@
     significance level
 
     // Choose custom significance level:
-    > arr = [ 2, 4, 3, 1, 0 ];
+    > var arr = [ 2, 4, 3, 1, 0 ];
     > out = {{alias}}( arr, { 'alpha': 0.01 } );
     > table = out.print()
     One-sample t-test
@@ -144,7 +144,7 @@
     significance level
 
     // Test for a mean equal to five:
-    > var arr = [ 4, 4, 6, 6, 5 ];
+    > arr = [ 4, 4, 6, 6, 5 ];
     > out = {{alias}}( arr, { 'mu': 5 } )
     {
         rejected: false,

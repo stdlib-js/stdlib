@@ -36,6 +36,11 @@ extern "C" {
 */
 double API_SUFFIX(c_dnrm2)( const CBLAS_INT N, const double *X, const CBLAS_INT stride );
 
+/**
+* Computes the L2-norm of a double-precision floating-point vector using alternative indexing semantics.
+*/
+double API_SUFFIX(c_dnrm2_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT stride, const CBLAS_INT offset );
+
 #ifdef __cplusplus
 }
 #endif

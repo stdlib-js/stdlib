@@ -18,6 +18,8 @@
 
 #include "stdlib/blas/base/scopy.h"
 #include "stdlib/blas/base/scopy_fortran.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Copies values from `X` into `Y`.
@@ -28,6 +30,23 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void c_scopy( const int N, const float *X, const int strideX, float *Y, const int strideY ) {
+void API_SUFFIX(c_scopy)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY ) {
+	scopy( &N, X, &strideX, Y, &strideY );
+}
+
+/**
+* Copies values from `X` into `Y` using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y        output array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
+*/
+void API_SUFFIX(c_scopy_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+	X += stdlib_strided_min_view_buffer_index( N, strideX, offsetX ); // adjust array pointer
+	Y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY ); // adjust array pointer
 	scopy( &N, X, &strideX, Y, &strideY );
 }

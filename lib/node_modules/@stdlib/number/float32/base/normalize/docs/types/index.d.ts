@@ -23,8 +23,8 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
- * Interface describing `normalizef`.
- */
+* Interface describing `normalizef`.
+*/
 interface Normalizef {
 	/**
 	* Returns a normal number `y` and exponent `exp` satisfying \\(x = y \cdot 2^\mathrm{exp}\\).

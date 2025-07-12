@@ -17,9 +17,9 @@
 */
 
 #include "stdlib/napi/argv_complex128.h"
-#include "stdlib/complex/float64.h"
-#include "stdlib/complex/real.h"
-#include "stdlib/complex/imag.h"
+#include "stdlib/complex/float64/ctor.h"
+#include "stdlib/complex/float64/real.h"
+#include "stdlib/complex/float64/imag.h"
 #include "stdlib/napi/argv.h"
 #include <node_api.h>
 #include <assert.h>
@@ -27,7 +27,6 @@
 /**
 * Identity function.
 *
-* @private
 * @param v      input value
 * @return       input value
 */
@@ -38,7 +37,6 @@ static stdlib_complex128_t identity( const stdlib_complex128_t v ) {
 /**
 * Receives JavaScript callback invocation data.
 *
-* @private
 * @param env    environment under which the function is invoked
 * @param info   callback data
 * @return       Node-API value
@@ -49,10 +47,10 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 
 	stdlib_complex128_t out = identity( value );
 
-	double re = stdlib_real( out );
+	double re = stdlib_complex128_real( out );
 	assert( re == 3.0 );
 
-	double im = stdlib_imag( out );
+	double im = stdlib_complex128_imag( out );
 	assert( im == 5.0 );
 
 	return NULL;
@@ -61,7 +59,6 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 /**
 * Initializes a Node-API module.
 *
-* @private
 * @param env      environment under which the function is invoked
 * @param exports  exports object
 * @return         main export

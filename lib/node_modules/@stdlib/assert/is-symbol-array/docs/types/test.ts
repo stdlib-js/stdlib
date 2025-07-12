@@ -46,7 +46,6 @@ import isSymbolArray = require( './index' );
 	isSymbolArray.primitives( [ Symbol( 'abc' ) ], 123 ); // $ExpectError
 }
 
-
 // Attached to main export is an `objects` method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers

@@ -23,7 +23,11 @@ import uppercase = require( './index' );
 
 // The function returns a string...
 {
-	uppercase( 'Last man standing' ); // $ExpectType string
+	uppercase( 'Last man standing' ); // $ExpectType "LAST MAN STANDING"
+	uppercase( 'Hello World!' ); // $ExpectType "HELLO WORLD!"
+	uppercase( 'beep' ); // $ExpectType "BEEP"
+	uppercase( 'BOOP' ); // $ExpectType "BOOP"
+	uppercase( 'foo' as string ); // $ExpectType string
 }
 
 // The compiler throws an error if the function is provided a value other than a string...

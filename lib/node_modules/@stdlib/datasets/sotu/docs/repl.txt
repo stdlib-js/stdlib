@@ -5,10 +5,10 @@
     Each State of the Union address is represented by an object with the
     following fields:
 
-    - year: speech year
-    - name: President name
-    - party: the President's political party
-    - text: speech text
+    - year: speech year.
+    - name: President name.
+    - party: the President's political party.
+    - text: speech text.
 
     The following political parties are recognized:
 

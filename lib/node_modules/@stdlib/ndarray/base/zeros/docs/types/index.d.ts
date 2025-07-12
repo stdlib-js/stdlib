@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType } from '@stdlib/types/ndarray';
+import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, genericndarray, complex128ndarray, complex64ndarray, NumericAndGenericDataType } from '@stdlib/types/ndarray';
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -260,7 +260,7 @@ declare function zeros( dtype: 'uint8c', shape: Shape, order: Order ): uint8cnda
 * var dt = arr.dtype;
 * // returns 'generic'
 */
-declare function zeros( dtype: 'generic', shape: Shape, order: Order ): typedndarray<number>;
+declare function zeros( dtype: 'generic', shape: Shape, order: Order ): genericndarray<number>;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -271,16 +271,16 @@ declare function zeros( dtype: 'generic', shape: Shape, order: Order ): typednda
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'float32', [ 2, 2 ], 'row-major' );
+* var arr = zeros( 'float64', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
 * var sh = arr.shape;
 * // returns [ 2, 2 ]
 *
 * var dt = arr.dtype;
-* // returns 'float32'
+* // returns 'float64'
 */
-declare function zeros( dtype: DataType, shape: Shape, order: Order ): typedndarray<number>;
+declare function zeros( dtype: NumericAndGenericDataType, shape: Shape, order: Order ): typedndarray<number>;
 
 
 // EXPORTS //

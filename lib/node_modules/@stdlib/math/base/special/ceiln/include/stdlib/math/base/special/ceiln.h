@@ -18,9 +18,6 @@
 
 #include <stdint.h>
 
-/**
-* Header file containing function declarations.
-*/
 #ifndef STDLIB_MATH_BASE_SPECIAL_CEILN_H
 #define STDLIB_MATH_BASE_SPECIAL_CEILN_H
 

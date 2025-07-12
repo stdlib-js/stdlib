@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,8 +19,10 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_sscal`.
 */
-#ifndef SSCAL_CLBAS_H
+#ifndef SSCAL_CBLAS_H
 #define SSCAL_CBLAS_H
+
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Multiplies each element of a single-precision floating-point vector by a constant.
 */
-void cblas_sscal( const int N, const float alpha, float *X, const int stride );
+void API_SUFFIX(cblas_sscal)( const CBLAS_INT N, const float alpha, float *X, const CBLAS_INT stride );
 
 #ifdef __cplusplus
 }

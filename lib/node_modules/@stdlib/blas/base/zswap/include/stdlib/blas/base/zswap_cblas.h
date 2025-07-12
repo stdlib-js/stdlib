@@ -22,6 +22,8 @@
 #ifndef ZSWAP_CBLAS_H
 #define ZSWAP_CBLAS_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Interchanges two complex double-precision floating-point vectors.
 */
-void cblas_zswap( const int N, void *X, const int strideX, void *Y, const int strideY );
+void API_SUFFIX(cblas_zswap)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
 
 #ifdef __cplusplus
 }

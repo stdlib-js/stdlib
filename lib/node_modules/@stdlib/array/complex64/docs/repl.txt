@@ -1,0 +1,1421 @@
+
+{{alias}}()
+    A 64-bit complex number array.
+
+    Returns
+    -------
+    out: Complex64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}()
+    <Complex64Array>
+
+
+{{alias}}( length )
+    Creates a 64-bit complex number array having a specified length.
+
+    Parameters
+    ----------
+    length: integer
+        Typed array length.
+
+    Returns
+    -------
+    out: Complex64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 10 )
+    <Complex64Array>
+    > var len = arr.length
+    10
+
+
+{{alias}}( complexarray )
+    Creates a 64-bit complex number array from another complex number array.
+
+    Parameters
+    ----------
+    complexarray: Complex64Array
+        Complex array from which to generate another complex array.
+
+    Returns
+    -------
+    out: Complex64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr1 = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var arr2 = new {{alias}}( arr1 )
+    <Complex64Array>
+    > var len = arr2.length
+    2
+
+
+{{alias}}( typedarray )
+    Creates a 64-bit complex number array from a typed array
+    containing interleaved real and imaginary components.
+
+    Parameters
+    ----------
+    typedarray: TypedArray
+        Typed array from which to generate complex array.
+
+    Returns
+    -------
+    out: Complex64Array
+        A typed array.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/float32}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Float32Array>
+    > var arr = new {{alias}}( buf )
+    <Complex64Array>
+    > var len = arr.length
+    2
+
+
+{{alias}}( obj )
+    Creates a 64-bit complex number array from an array-like object or iterable.
+
+    Parameters
+    ----------
+    obj: Object
+        Array-like object or iterable from which to generate a complex array.
+
+    Returns
+    -------
+    out: Complex64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr1 = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var len = arr1.length
+    2
+    > var buf = [ new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 ), new {{alias:@stdlib/complex/float32/ctor}}( 2.0, -2.0 )];
+    > var arr2 = new {{alias}}( buf )
+    <Complex64Array>
+    > len = arr2.length
+    2
+
+
+{{alias}}( buffer[, byteOffset[, length]] )
+    Returns a 64-bit complex number array view of an ArrayBuffer.
+
+    Parameters
+    ----------
+    buffer: ArrayBuffer
+        Underlying ArrayBuffer.
+
+    byteOffset: integer (optional)
+        Integer byte offset specifying the location of the first typed array
+        element. Default: 0.
+
+    length: integer (optional)
+        View length. If not provided, the view spans from the byteOffset to
+        the end of the underlying ArrayBuffer.
+
+    Returns
+    -------
+    out: Complex64Array
+        A typed array.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 240 );
+    > var arr1 = new {{alias}}( buf )
+    <Complex64Array>
+    > var len = arr1.length
+    30
+    > var arr2 = new {{alias}}( buf, 8 )
+    <Complex64Array>
+    > len = arr2.length
+    29
+    > var arr3 = new {{alias}}( buf, 8, 20 )
+    <Complex64Array>
+    > len = arr3.length
+    20
+
+
+{{alias}}.from( src[, clbk[, thisArg]] )
+    Creates a new 64-bit complex number array from an array-like object or an
+    iterable.
+
+    A callback function is provided two arguments:
+
+    - value: source value.
+    - index: source index.
+
+    Parameters
+    ----------
+    src: ArrayLike|Iterable
+        Source of array elements.
+
+    clbk: Function (optional)
+        Callback to invoke for each source element.
+
+    thisArg: Any (optional)
+        Callback execution context.
+    
+    Returns
+    -------
+    out: Complex64Array
+        A typed array.
+    
+    Examples
+    --------
+    > function clbkFcn( v ) { return v * 2.0 };
+    > var arr = {{alias}}.from( [ 1.0, -1.0, 2.0, -2.0 ], clbkFcn )
+    <Complex64Array>
+    > var len = arr.length
+    2
+    > var z = arr.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+
+
+{{alias}}.of( element0[, element1[, ...elementN]] )
+    Creates a new 64-bit complex number array from a variable number of
+    arguments.
+
+    Parameters
+    ----------
+    element0: number
+        Array element.
+
+    element1: number (optional)
+        Array element.
+
+    elementN: ...number (optional)
+        Array elements.
+
+    Returns
+    -------
+    out: Complex64Array
+        A typed array.
+
+    Examples
+    --------
+    > var arr = {{alias}}.of( 1.0, -1.0, 2.0, -2.0 )
+    <Complex64Array>
+    > var len = arr.length
+    2
+    > var z1 = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 );
+    > var z2 = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, -2.0 );
+    > arr = {{alias}}.of( z1, z2 )
+    <Complex64Array>
+    > len = arr.length
+    2
+    > var z = arr.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -1.0
+
+
+{{alias}}.BYTES_PER_ELEMENT
+    The size of each array element in bytes.
+
+    Examples
+    --------
+    > var nbytes = {{alias}}.BYTES_PER_ELEMENT
+    8
+
+
+{{alias}}.name
+    Typed array constructor name.
+
+    Examples
+    --------
+    > var str = {{alias}}.name
+    'Complex64Array'
+
+
+{{alias}}.prototype.buffer
+    Pointer to the underlying data buffer.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 2 )
+    <Complex64Array>
+    > var buf = arr.buffer
+    <ArrayBuffer>
+
+
+{{alias}}.prototype.byteLength
+    Length of the array in bytes.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 10 )
+    <Complex64Array>
+    > var nbytes = arr.byteLength
+    80
+
+
+{{alias}}.prototype.byteOffset
+    Offset (in bytes) of the array from the start of its underlying
+    ArrayBuffer.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 5 )
+    <Complex64Array>
+    > var offset = arr.byteOffset
+    0
+    > var buf = new {{alias:@stdlib/array/buffer}}( 240 );
+    > arr = new {{alias}}( buf, 64 )
+    <Complex64Array>
+    > offset = arr.byteOffset
+    64
+
+
+{{alias}}.prototype.BYTES_PER_ELEMENT
+    Size (in bytes) of each array element.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 10 )
+    <Complex64Array>
+    > arr.BYTES_PER_ELEMENT
+    8
+
+
+{{alias}}.prototype.length
+    The number of array elements.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 10 )
+    <Complex64Array>
+    > var len = arr.length
+    10
+
+
+{{alias}}.prototype.at( i )
+    Returns an array element located at integer position (index) `i`, with
+    support for noth nonnegative and negative integer positions.
+
+    If provided an index outside the array index range, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    i: integer
+        Element index.
+
+    Returns
+    -------
+    out: Complex64|void
+        An array element.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var z = arr.at( 1 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+
+
+{{alias}}.prototype.copyWithin( target, start[, end] )
+    Copies a sequence of elements within the array starting at `start` and
+    ending at `end` (non-inclusive) to the position starting at `target`.
+
+    Parameters
+    ----------
+    target: integer
+        Target start index position.
+    
+    start: integer
+        Source start index position.
+    
+    end: integer (optional)
+        Source end index position. Default: out.length.
+
+    Returns
+    -------
+    out: Complex64Array
+        Modified array.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0 ] )
+    <Complex64Array>
+    > arr.copyWithin( 0, 2 )
+    <Complex64Array>
+    > var z = arr.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -3.0
+
+
+{{alias}}.prototype.entries()
+    Returns an iterator for iterating over array key-value pairs.
+
+    Returns
+    -------
+    iterator: Iterator
+        Iterator for iterating over array key-value pairs.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0 ] )
+    <Complex64Array>
+    > var it = arr.entries();
+    > var v = it.next().value
+    [ 0, <Complex64> ]
+    > var re = {{alias:@stdlib/complex/float32/real}}( v[ 1 ] )
+    1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( v[ 1 ] )
+    -1.0
+    > v = it.next().value
+    [ 1, <Complex64> ]
+    > re = {{alias:@stdlib/complex/float32/real}}( v[ 1 ] )
+    2.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( v[ 1 ] )
+    -2.0
+    > v = it.next().value
+    [ 2, <Complex64> ]
+    > re = {{alias:@stdlib/complex/float32/real}}( v[ 1 ] )
+    3.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( v[ 1 ] )
+    -3.0
+    > var bool = it.next().done
+    true
+
+
+{{alias}}.prototype.every( predicate[, thisArg] )
+    Returns a boolean indicating whether all elements in the array pass a test.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements. If a predicate function
+        returns a truthy value, an array element passes; otherwise, an array
+        element fails.
+
+    thisArg: Any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether all elements pass the test.
+
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) > 0.0 ); };
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var bool = arr.every( predicate )
+    true
+
+
+{{alias}}.prototype.fill( value[, start[, end]] )
+    Returns a modified typed array filled with a fill value.
+
+    Parameters
+    ----------
+    value: Complex64
+        Fill value.
+
+    start: integer (optional)
+        Start index. If less than zero, the start index is resolved relative to
+        the last array element. Default: 0.
+
+    end: integer (optional)
+        End index (non-inclusive). If less than zero, the end index is resolved
+        relative to the last array element. Default: out.length.
+
+    Returns
+    -------
+    out: Complex64Array
+        Modified array.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( 3 )
+    <Complex64Array>
+    > arr.fill( new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 1.0 ) );
+    > var z = arr.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    1.0
+    > z = arr.get( 1 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    1.0
+    > z = arr.get( 2 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    1.0
+
+
+{{alias}}.prototype.filter( predicate[, thisArg] )
+    Returns a new array containing the elements of an array which pass a test
+    implemented by a predicate function.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    The returned array has the same data type as the host array.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which filters array elements. If a predicate function
+        returns a truthy value, an array element is included in the output
+        array; otherwise, an array element is not included in the output array.
+
+    thisArg: Any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Complex64Array
+        A new typed array.
+    
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, 2.0, 3.0, -3.0 ] )
+    <Complex64Array>
+    > var out = arr.filter( predicate )
+    <Complex64Array>
+    > var len = out.length
+    1
+    > var z = out.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    2.0
+
+
+{{alias}}.prototype.find( predicate[, thisArg] )
+    Returns the first element in an array for which a predicate function
+    returns a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If a predicate function never returns a truthy value, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements.
+
+    thisArg: Any (optional)
+        Execution context.
+    
+    Returns
+    -------
+    out: Complex64|void
+        Array element or `undefined`.
+    
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
+    > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
+    <Complex64Array>
+    > var z = arr.find( predicate )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    1.0
+
+
+{{alias}}.prototype.findIndex( predicate[, thisArg] )
+    Returns the index of the first element in an array for which a predicate
+    function returns a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If a predicate function never returns a truthy value, the method returns
+    `-1`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements.
+
+    thisArg: Any (optional)
+        Execution context.
+    
+    Returns
+    -------
+    out: integer
+        Array index or `-1`.
+    
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
+    > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
+    <Complex64Array>
+    > var idx = arr.findIndex( predicate )
+    0
+
+
+{{alias}}.prototype.findLast( predicate[, thisArg] )
+    Returns the last element in an array for which a predicate function returns
+    a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If a predicate function never returns a truthy value, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements.
+
+    thisArg: Any (optional)
+        Execution context.  
+    
+    Returns
+    -------
+    out: Complex64|void
+        Array element or `undefined`.
+    
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
+    > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
+    <Complex64Array>
+    > var z = arr.findLast( predicate )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    2.0
+
+
+{{alias}}.prototype.findLastIndex( predicate[, thisArg] )
+    Returns the index of the last element in an array for which a predicate
+    function returns a truthy value.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If a predicate function never returns a truthy value, the method returns
+    `-1`.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements.
+
+    thisArg: Any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: integer
+        Array index or `-1`.
+    
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
+    > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
+    <Complex64Array>
+    > var idx = arr.findLastIndex( predicate )
+    1
+
+
+{{alias}}.prototype.forEach( clbk[, thisArg] )
+    Invokes a function once for each array element.
+
+    A callback function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    Parameters
+    ----------
+    clbk: Function
+        Function to invoke for each array element.
+
+    thisArg: Any (optional)
+        Execution context.
+    
+    Examples
+    --------
+    > var str = '%';
+    > function clbk( v ) { str += v.toString() + '%'; };
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > arr.forEach( clbk );
+    > str
+    '%1 - 1i%2 - 2i%'
+
+
+{{alias}}.prototype.get( i )
+    Returns an array element located at integer position (index) `i`.
+
+    If provided an index outside the array index range, the method returns
+    `undefined`.
+
+    Parameters
+    ----------
+    i: integer
+        Element index.
+    
+    Returns
+    -------
+    out: Complex64|void
+        Array element or `undefined`.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var z = arr.get( 1 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+
+
+{{alias}}.prototype.includes( searchElement[, fromIndex] )
+    Returns a boolean indicating whether an array includes a provided value.
+
+    Parameters
+    ----------
+    searchElement: Complex64
+        Search element.
+
+    fromIndex: integer (optional)
+        Array index at which to start the search. If provided a negative value,
+        the method resolves the start index relative to the last array element.
+        Default: 0.
+    
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether an array includes a search element.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0 ] )
+    <Complex64Array>
+    > var bool = arr.includes( new {{alias:@stdlib/complex/float32/ctor}}( 3.0, -3.0 ) )
+    true
+    > bool = arr.includes( new {{alias:@stdlib/complex/float32/ctor}}( 3.0, -3.0 ), 3 )
+    false
+
+
+{{alias}}.prototype.indexOf( searchElement[, fromIndex] )
+    Returns the first index at which a given element can be found.
+
+    If method does not find a search element, the method returns `-1`.
+
+    Parameters
+    ----------
+    searchElement: Complex64
+        Search element.
+
+    fromIndex: integer (optional)
+        Array index at which to start the search. If provided a negative value,
+        the method resolves the start index relative to the last array element.
+        Default: 0.
+
+    Returns
+    -------
+    out: integer
+        Array index or `-1`.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0 ] )
+    <Complex64Array>
+    > var idx = arr.indexOf( new {{alias:@stdlib/complex/float32/ctor}}( 3.0, -3.0 ) )
+    2
+    > idx = arr.indexOf( new {{alias:@stdlib/complex/float32/ctor}}( 3.0, -3.0 ), 3 )
+    -1
+
+
+{{alias}}.prototype.join( [separator] )
+    Returns a new string by concatenating all array elements separated by a
+    separator string.
+
+    Parameters
+    ----------
+    separator: string (optional)
+        Separator string. Default: ','.
+    
+    Returns
+    -------
+    out: string
+        Array serialized as a string.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var str = arr.join()
+    '1 - 1i,2 - 2i'
+    > str = arr.join( '/' )
+    '1 - 1i/2 - 2i'
+
+
+{{alias}}.prototype.keys()
+    Returns an iterator for iterating over each index key in a typed array.
+
+    Returns
+    -------
+    iterator: Iterator
+        Iterator for iterating over array index keys.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var it = arr.keys();
+    > var v = it.next().value
+    0
+    > v = it.next().value
+    1
+    > v = it.next().done
+    true
+
+
+{{alias}}.prototype.lastIndexOf( searchElement[, fromIndex] )
+    Returns the last index at which a given element can be found.
+
+    If method does not find a search element, the method returns `-1`.
+
+    Parameters
+    ----------
+    searchElement: Complex64
+        Search element.
+
+    fromIndex: integer (optional)
+        Array index at which to start the search. If provided a negative value,
+        the method resolves the start index relative to the last array element.
+        Default: out.length-1.
+    
+    Returns
+    -------
+    out: integer
+        Array index or `-1`.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 1.0, -1.0 ] )
+    <Complex64Array>
+    > var idx = arr.lastIndexOf( new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 ) )
+    3
+    > idx = arr.lastIndexOf( new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 ), 2 )
+    0
+
+
+{{alias}}.prototype.map( clbk[, thisArg] )
+    Returns a new array with each element being the result of a provided
+    callback function.
+
+    A callback function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    The returned array has the same data type as the host array.
+
+    Parameters
+    ----------
+    clbk: Function
+        Function which maps array elements to elements in the new array.
+
+    thisArg: Any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Complex64Array
+        A new typed array.
+    
+    Examples
+    --------
+    > function clbk( v ) { return v; };
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var out = arr.map( clbk )
+    <Complex64Array>
+    > var z = out.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -1.0
+    > z = out.get( 1 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+
+
+{{alias}}.prototype.reduce( reducerFn[, initialValue] )
+    Applies a provided function to each element of the array, in order, passing
+    in the return value from the calculation on the preceding element and
+    returning the accumulated result upon completion.
+
+    A reducer function is provided the following arguments:
+
+    - acc: accumulated result.
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If provided an initial value, the method invokes a provided function with
+    the initial value as the first argument and the first array element as the
+    second argument.
+
+    If not provided an initial value, the method invokes a provided function
+    with the first array element as the first argument and the second array
+    element as the second argument.
+
+    Parameters
+    ----------
+    reducerFn: Function
+        Function to apply to each array element.    
+
+    initialValue: any (optional)
+        Initial accumulation value.
+    
+    Returns
+    -------
+    out: any
+        Accumulated result.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var z = arr.reduce( {{alias:@stdlib/complex/float32/base/add}} )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -3.0
+
+
+{{alias}}.prototype.reduceRight( reducerFn[, initialValue] )
+    Applies a provided function to each element of the array, in reverse order,
+    passing in the return value from the calculation on the preceding element
+    and returning the accumulated result upon completion.
+
+    A reducer function is provided the following arguments:
+
+    - acc: accumulated result.
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    If provided an initial value, the method invokes a provided function with
+    the initial value as the first argument and the last array element as the
+    second argument.
+
+    If not provided an initial value, the method invokes a provided function
+    with the last array element as the first argument and the second-to-last
+    array element as the second argument.
+
+    Parameters
+    ----------
+    reducerFn: Function
+        Function to apply to each array element.
+
+    initialValue: any (optional)
+        Initial accumulation value.
+    
+    Returns
+    -------
+    out: any
+        Accumulated result.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var z = arr.reduceRight( {{alias:@stdlib/complex/float32/base/add}} )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -3.0
+
+
+{{alias}}.prototype.reverse()
+    Reverses the array *in-place*.
+
+    This method mutates the array on which the method is invoked.
+
+    Returns
+    -------
+    out: Complex64Array
+        Modified array.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0 ] )
+    <Complex64Array>
+    > arr.reverse();
+    > var z = arr.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -3.0
+    > z = arr.get( 1 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+    > z = arr.get( 2 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -1.0
+
+
+{{alias}}.prototype.set( z[, i] )
+    Sets one or more array elements.
+
+    If provided a single argument, the method sets array elements starting at
+    position (index) `i = 0`. To set elements starting elsewhere in the array,
+    provide an index argument `i`.
+
+    To set one or more array elements, provide an array-like object containing
+    either complex numbers or interleaved real and imaginary components.
+
+    Parameters
+    ----------
+    z: Complex64|Complex64Array|ArrayLikeObject
+        Complex number or complex number array.
+
+    i: integer (optional)
+        Array index at which to start setting elements. Default: 0.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( 2 )
+    <Complex64Array>
+    > arr.set( new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 ) );
+    > var z = arr.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -1.0
+    > arr.set( new {{alias:@stdlib/complex/float32/ctor}}( 2.0, -2.0 ), 1 );
+    > z = arr.get( 1 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+
+
+{{alias}}.prototype.slice( [start[, end]] )
+    Copies a portion of a typed array to a new typed array.
+
+    Parameters
+    ----------
+    start: integer (optional)
+        Start index. If less than zero, the start index is resolved relative to
+        the last array element. Default: 0.
+
+    end: integer (optional)
+        End index (non-inclusive). If less than zero, the end index is resolved
+        relative to the last array element. Default: out.length.
+    
+    Returns
+    -------
+    out: Complex64Array
+        New typed array.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0 ] )
+    <Complex64Array>
+    > var out = arr.slice( 1 )
+    <Complex64Array>
+    > var len = out.length
+    2
+    > var z = out.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+    > z = out.get( 1 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -3.0
+
+
+{{alias}}.prototype.some( predicate[, thisArg] )
+    Returns a boolean indicating whether at least one element passes a test.
+
+    A predicate function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the array on which the method was called.
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function which tests array elements. If a predicate function
+        returns a truthy value, an array element passes; otherwise, an array
+        element fails.
+    
+    thisArg: Any (optional)
+        Execution context.
+    
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether at least one element passes the test.
+    
+    Examples
+    --------
+    > function predicate( v ) { return ( {{alias:@stdlib/complex/float32/real}}( v ) === {{alias:@stdlib/complex/float32/imag}}( v ) ); };
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, 2.0, 3.0, -3.0 ] )
+    <Complex64Array>
+    > var bool = arr.some( predicate )
+    true
+
+
+{{alias}}.prototype.sort( compareFunction )
+    Sorts an array in-place.
+
+    A comparison function determines the order of the array elements. The
+    function is provided two arguments:
+
+    - a: first element for comparison.
+    - b: second element for comparison.
+
+    The function should return a value less than zero if `a` comes before `b`,
+    a value greater than zero if `a` comes after `b`, and zero if `a` and `b`
+    are equivalent.
+
+    Parameters
+    ----------
+    compareFunction: Function
+        Comparison function.
+    
+    Returns
+    -------
+    out: Complex64Array
+        Modified array.
+    
+    Examples
+    --------
+    > function compare( a, b ) { return ( {{alias:@stdlib/complex/float32/real}}( a ) - {{alias:@stdlib/complex/float32/real}}( b ) ); };
+    > var arr = new {{alias}}( [ 2.0, -2.0, 3.0, -3.0, 1.0, -1.0 ] )
+    <Complex64Array>
+    > arr.sort( compare );
+    > var z = arr.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -1.0
+    > z = arr.get( 1 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+    > z = arr.get( 2 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -3.0
+
+
+{{alias}}.prototype.subarray( [begin[, end]] )
+    Creates a new typed array view over the same underlying `ArrayBuffer` and
+    with the same underlying data type as the host array.
+
+    Parameters
+    ----------
+    begin: integer (optional)
+        Start index. If less than zero, the start index is resolved relative to
+        the last array element. Default: 0.
+
+    end: integer (optional)
+        End index (non-inclusive). If less than zero, the end index is resolved
+        relative to the last array element. Default: out.length.
+
+    Returns
+    -------
+    out: Complex64Array
+        New typed array view.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0 ] )
+    <Complex64Array>
+    > var out = arr.subarray( 1, 3 )
+    <Complex64Array>
+    > var len = out.length
+    2
+    > var z = out.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+    > z = out.get( 1 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -3.0
+
+
+{{alias}}.prototype.toLocaleString( [locales[, options]] )
+    Serializes an array as a locale-specific string.
+
+    Parameters
+    ----------
+    locales: string|Array (optional)
+        Locale identifier(s).
+    
+    options: Object (optional)
+        An object containing serialization options.
+    
+    Returns
+    -------
+    str: string
+        Local-specific string.
+
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0 ] )
+    <Complex64Array>
+    > var str = arr.toLocaleString()
+    '1 + 1i,2 + 2i'
+
+
+{{alias}}.prototype.toReversed()
+    Returns a new typed array containing the elements in reversed order.
+
+    Returns
+    -------
+    out: Complex64Array
+        New typed array.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0 ] )
+    <Complex64Array>
+    > var out = arr.toReversed()
+    <Complex64Array>
+    > var z = out.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    3.0
+    > z = out.get( 1 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    2.0
+    > z = out.get( 2 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    1.0
+
+
+{{alias}}.prototype.toSorted( compareFcn )
+    Returns a new typed array containing the elements in sorted order.
+
+    A comparison function determines the order of the array elements. The
+    function is provided two arguments:
+
+    - a: first element for comparison.
+    - b: second element for comparison.
+
+    The function should return a value less than zero if `a` comes before `b`,
+    a value greater than zero if `a` comes after `b`, and zero if `a` and `b`
+    are equivalent.
+
+    Parameters
+    ----------
+    compareFcn: Function
+        Comparison function.
+    
+    Returns
+    -------
+    out: Complex64Array
+        New typed array.
+    
+    Examples
+    --------
+    > function compare( a, b ) { return ( {{alias:@stdlib/complex/float32/real}}( a ) - {{alias:@stdlib/complex/float32/real}}( b ) ); };
+    > var arr = new {{alias}}( [ 2.0, -2.0, 3.0, -3.0, 1.0, -1.0 ] )
+    <Complex64Array>
+    > var out = arr.toSorted( compare );
+    > var z = out.get( 0 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -1.0
+    > z = out.get( 1 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    2.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -2.0
+    > z = out.get( 2 )
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -3.0
+
+
+{{alias}}.prototype.toString()
+    Serializes an array as a string.
+
+    Returns
+    -------
+    str: string
+        String serialization of the array.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, -2.0, 3.0, 3.0 ] )
+    <Complex64Array>
+    > var str = arr.toString()
+    '1 + 1i,2 - 2i,3 + 3i'
+
+
+{{alias}}.prototype.values()
+    Returns an iterator for iterating over each value in a typed array.
+
+    Returns
+    -------
+    iterator: Iterator
+        Iterator for iterating over array values.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var it = arr.values();
+    > var v = it.next().value
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( v )
+    1.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( v )
+    -1.0
+    > v = it.next().value
+    <Complex64>
+    > re = {{alias:@stdlib/complex/float32/real}}( v )
+    2.0
+    > im = {{alias:@stdlib/complex/float32/imag}}( v )
+    -2.0
+    > var bool = it.next().done
+    true
+
+
+{{alias}}.prototype.with( index, value )
+    Returns a new typed array with the element at a provided index replaced
+    with a provided value.
+
+    Parameters
+    ----------
+    index: integer
+        Element index.
+    
+    value: Complex64
+        Element value.  
+
+    Returns
+    -------
+    out: Complex64Array
+        New typed array.
+    
+    Examples
+    --------
+    > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
+    <Complex64Array>
+    > var out = arr.with( 1, new {{alias:@stdlib/complex/float32/ctor}}( 3.0, -3.0 ) )
+    <Complex64Array>
+    > var z = out.get( 1 )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( z )
+    3.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
+    -3.0
+
+
+    See Also
+    --------

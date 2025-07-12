@@ -21,7 +21,7 @@
 #include "stdlib/ndarray/index_modes.h"
 #include "stdlib/ndarray/orders.h"
 #include "stdlib/ndarray/ctor.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>

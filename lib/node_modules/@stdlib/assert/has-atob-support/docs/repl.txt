@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests for native `atob` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has `atob` support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

@@ -21,7 +21,7 @@
 
 #include "stdlib/napi/argv.h"
 #include "stdlib/assert/napi/status_ok.h"
-#include "stdlib/complex/float64.h"
+#include "stdlib/complex/float64/ctor.h"
 #include <node_api.h>
 
 /**
@@ -35,7 +35,7 @@
 * @example
 * #include "stdlib/napi/argv_complex128.h"
 * #include "stdlib/napi/argv.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <node_api.h>
 *
 * static stdlib_complex128_t fcn( const stdlib_complex128_t v ) {

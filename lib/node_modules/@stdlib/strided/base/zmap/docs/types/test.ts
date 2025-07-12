@@ -20,7 +20,7 @@
 
 import { Complex128 } from '@stdlib/types/complex';
 import Complex128Array = require( '@stdlib/array/complex128' );
-import cmplx64 = require( '@stdlib/complex/float64' );
+import cmplx64 = require( '@stdlib/complex/float64/ctor' );
 import zmap = require( './index' );
 
 /**

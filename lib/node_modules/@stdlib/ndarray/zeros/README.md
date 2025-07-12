@@ -70,7 +70,7 @@ var dt = arr.dtype;
 
 The function accepts the following `options`:
 
--   **dtype**: underlying [data type][@stdlib/ndarray/dtypes]. Default: `'float64'`.
+-   **dtype**: underlying [data type][@stdlib/ndarray/dtypes]. Must be a numeric [data type][@stdlib/ndarray/dtypes] or "generic". Default: `'float64'`.
 -   **order**: specifies whether an [ndarray][@stdlib/ndarray/ctor] is `'row-major'` (C-style) or `'column-major'` (Fortran-style). Default: `'row-major'`.
 -   **mode**: specifies how to handle indices which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). Default: `'throw'`.
 -   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions  (see [`ndarray`][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
@@ -116,7 +116,7 @@ var dtypes = require( '@stdlib/ndarray/dtypes' );
 var zeros = require( '@stdlib/ndarray/zeros' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'numeric' );
 
 // Generate zero-filled arrays...
 var arr;

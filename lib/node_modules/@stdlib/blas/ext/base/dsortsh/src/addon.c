@@ -27,7 +27,6 @@
 /**
 * Receives JavaScript callback invocation data.
 *
-* @private
 * @param env    environment under which the function is invoked
 * @param info   callback data
 * @return       Node-API value

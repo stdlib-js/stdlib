@@ -4,16 +4,16 @@
 
     The `method` parameter can be one of the following values:
 
-    -   **bh**: Benjamini-Hochberg procedure controlling the False Discovery
+    - bh: Benjamini-Hochberg procedure controlling the False Discovery
     Rate (FDR).
-    -   **bonferroni**: Bonferroni correction fixing the family-wise error rate
+    - bonferroni: Bonferroni correction fixing the family-wise error rate
     by multiplying the p-values with the number of comparisons. The Bonferroni
     correction is usually a too conservative adjustment compared to the others.
-    -   **by**: Procedure by Benjamini & Yekutieli for controlling the False
+    - by: Procedure by Benjamini & Yekutieli for controlling the False
     Discovery Rate (FDR) under dependence.
-    -   **holm**: Hommel's method controlling family-wise error rate. It is
+    - holm: Hommel's method controlling family-wise error rate. It is
     uniformly more powerful than the Bonferroni correction.
-    -   **hommel**: Hommel's method, which is valid when hypothesis tests are
+    - hommel: Hommel's method, which is valid when hypothesis tests are
     independent. It is more expensive to compute than the other methods.
 
     By default, the number of comparisons for which the p-values should be

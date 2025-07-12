@@ -143,7 +143,7 @@
     element1: number (optional)
         Array element.
 
-    elementN: number (optional)
+    elementN: ...number (optional)
         Array elements.
 
     Returns
@@ -594,7 +594,7 @@
     Returns
     -------
     idx: integer
-        array index.
+        Array index.
 
     Examples
     --------
@@ -633,7 +633,7 @@
     --------
     > var arr1 = new {{alias}}( [ 1, 2, 3 ] );
     > function fcn( v ) { return v * 2; };
-    > var arr2 = arr1.map( fcn );
+    > var arr2 = arr1.map( fcn )
     <Uint8Array>[ 2, 4, 6 ]
 
 
@@ -730,7 +730,7 @@
     Examples
     --------
     > var arr = new {{alias}}( [ 1, 2, 3 ] )
-    <Uint8Array>[ 1, 2, 3 ]
+    <Uint8Array>
     > arr.reverse()
     <Uint8Array>[ 3, 2, 1 ]
 
@@ -785,9 +785,9 @@
     > arr2.length
     2
     > arr2[ 0 ]
-    1
-    > arr2[ 1 ]
     2
+    > arr2[ 1 ]
+    3
 
 
 {{alias}}.prototype.some( predicate[, thisArg] )

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,6 +22,8 @@
 #ifndef SSCAL_FORTRAN_H
 #define SSCAL_FORTRAN_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C/Fortran compiler (a Fortran compiler must be configured to not attach underscores).
 */
@@ -32,7 +34,7 @@ extern "C" {
 /**
 * Multiplies each element of a single-precision floating-point vector by a constant.
 */
-void sscal( const int *, const float *, float *, const int * );
+void sscal( const CBLAS_INT *, const float *, float *, const CBLAS_INT * );
 
 #ifdef __cplusplus
 }

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@
 
 #include "stdlib/strided/base/binary/ff_c.h"
 #include "stdlib/strided/base/binary/macros.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <stdint.h>
 
 /**
@@ -52,12 +52,12 @@
 * int64_t shape[] = { 3 };
 *
 * // Define a callback:
-* static float add( float x, float y ) {
+* static float fcn( float x, float y ) {
 *     return x + y;
 * }
 *
 * // Apply the callback:
-* stdlib_strided_ff_c( arrays, shape, strides, (void *)add );
+* stdlib_strided_ff_c( arrays, shape, strides, (void *)fcn );
 */
 void stdlib_strided_ff_c( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	typedef float func_type( const float x, const float y );

@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType } from '@stdlib/types/ndarray';
+import { typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Creates an uninitialized array having the same shape and data type as a provided input ndarray.
@@ -348,6 +348,35 @@ declare function emptyLike( x: uint8cndarray ): uint8cndarray;
 * @returns output array
 *
 * @example
+* var empty = require( '@stdlib/ndarray/base/empty' );
+*
+* var x = empty( 'bool', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>
+*
+* var sh = x.shape;
+* // returns [ 2, 2 ]
+*
+* var dt = x.dtype;
+* // returns 'bool'
+*
+* var y = emptyLike( x );
+* // returns <ndarray>
+*
+* sh = y.shape;
+* // returns [ 2, 2 ]
+*
+* dt = y.dtype;
+* // returns 'bool'
+*/
+declare function emptyLike( x: boolndarray ): boolndarray;
+
+/**
+* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
+*
+* @param x - input array
+* @returns output array
+*
+* @example
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'generic', [ 2, 2 ], 'row-major' );
@@ -368,7 +397,7 @@ declare function emptyLike( x: uint8cndarray ): uint8cndarray;
 * dt = y.dtype;
 * // returns 'generic'
 */
-declare function emptyLike( x: ndarray ): typedndarray<number>;
+declare function emptyLike<T = unknown>( x: typedndarray<T> ): typedndarray<T>;
 
 
 // EXPORTS //

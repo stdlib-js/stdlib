@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the arccosecant of a number.
+* Computes the arccosecant of a double-precision floating-point number.
 */
 double stdlib_base_acsc( const double x );
 

@@ -29,8 +29,8 @@ import { Complex128, Complex64 } from '@stdlib/types/complex';
 * @returns boolean indicating if a value is a 64-bit or 128-bit complex number
 *
 * @example
-* var Complex128 = require( '@stdlib/complex/float64' );
-* var Complex64 = require( '@stdlib/complex/float32' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var x = new Complex128( 4.0, 2.0 );
 * var bool = isComplex( x );

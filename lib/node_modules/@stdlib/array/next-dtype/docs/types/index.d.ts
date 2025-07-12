@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -191,6 +191,22 @@ declare function nextDataType( dtype: 'uint8c' ): 'uint16'; // eslint-disable-li
 * // returns -1
 */
 declare function nextDataType( dtype: 'generic' ): number; // eslint-disable-line @typescript-eslint/unified-signatures
+
+/**
+* Returns the next larger array data type of the same kind.
+*
+* ## Notes
+*
+* -   If a data type does not have a next larger data type or the next larger type is not supported, the function returns `-1`.
+*
+* @param dtype - array data type
+* @returns next larger data type
+*
+* @example
+* var dt = nextDataType( 'bool' );
+* // returns -1
+*/
+declare function nextDataType( dtype: 'bool' ): number; // eslint-disable-line @typescript-eslint/unified-signatures
 
 /**
 * Returns the next larger array data type of the same kind.

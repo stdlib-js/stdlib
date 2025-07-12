@@ -89,11 +89,7 @@ var obj = dtypeChar();
 ```javascript
 var dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
 
-var dtypes;
-var ch;
-var i;
-
-dtypes = [
+var dtypes = [
     'float64',
     'float32',
     'int8',
@@ -108,9 +104,9 @@ dtypes = [
     'foobar'
 ];
 
+var i;
 for ( i = 0; i < dtypes.length; i++ ) {
-    ch = dtypeChar( dtypes[ i ] );
-    console.log( '%s => %s', dtypes[ i ], ch );
+    console.log( '%s => %s', dtypes[ i ], dtypeChar( dtypes[ i ] ) );
 }
 ```
 

@@ -473,7 +473,7 @@ Copyright © 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
 
-[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md
+[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
@@ -491,7 +491,7 @@ Copyright © 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
-[stdlib-twitter]: https://twitter.com/stdlibjs
+[stdlib-twitter]: https://x.com/stdlibjs
 
 [stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
 

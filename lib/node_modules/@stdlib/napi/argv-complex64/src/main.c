@@ -20,7 +20,7 @@
 #include "stdlib/assert/napi/status_ok.h"
 #include "stdlib/assert/napi/is_type.h"
 #include "stdlib/assert/napi/has_property.h"
-#include "stdlib/complex/float32.h"
+#include "stdlib/complex/float32/ctor.h"
 #include <node_api.h>
 
 /**
@@ -35,7 +35,7 @@
 *
 * @example
 * #include "stdlib/napi/argv_complex64.h"
-* #include "stdlib/complex/float32.h"
+* #include "stdlib/complex/float32/ctor.h"
 * #include <node_api.h>
 *
 * static napi_value addon( napi_env env, napi_callback_info info ) {

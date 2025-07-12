@@ -22,6 +22,8 @@
 #ifndef SSWAP_H
 #define SSWAP_H
 
+#include "stdlib/blas/base/shared.h"
+
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +34,12 @@ extern "C" {
 /**
 * Interchanges two single-precision floating-point vectors.
 */
-void c_sswap( const int N, float *X, const int strideX, float *Y, const int strideY );
+void API_SUFFIX(c_sswap)( const CBLAS_INT N, float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY );
+
+/**
+* Interchanges two single-precision floating-point vectors using alternative indexing semantics.
+*/
+void API_SUFFIX(c_sswap_ndarray)( const CBLAS_INT N, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 
 #ifdef __cplusplus
 }

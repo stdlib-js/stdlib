@@ -1,0 +1,54 @@
+
+{{alias}}( x )
+    Cumulatively tests whether every element in a provided array is truthy.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var x = [ true, true, true, false, true ];
+    > var y = {{alias}}( x )
+    [ true, true, true, false, false ];
+
+
+{{alias}}.assign( x, y, stride, offset )
+    Cumulatively tests whether every element in an array is truthy and assigns
+    results to a provided output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    y: ArrayLikeObject
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array offset.
+
+    Returns
+    -------
+    y: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = [ true, true, true, false, true ];
+    > var y = [ false, null, false, null, false, null, false, null, false ];
+    > var result = {{alias}}.assign( x, y, 2, 0 )
+    [ true, null, true, null, true, null, false, null, false ]
+
+    See Also
+    --------
+

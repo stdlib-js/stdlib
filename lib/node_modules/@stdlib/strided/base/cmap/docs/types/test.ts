@@ -20,7 +20,7 @@
 
 import { Complex64 } from '@stdlib/types/complex';
 import Complex64Array = require( '@stdlib/array/complex64' );
-import cmplx64 = require( '@stdlib/complex/float32' );
+import cmplx64 = require( '@stdlib/complex/float32/ctor' );
 import cmap = require( './index' );
 
 /**

@@ -21,7 +21,8 @@
 // ESLint plugins:
 var plugins = [
 	'node',
-	'stdlib'
+	'stdlib',
+	'@cspell'
 ];
 
 

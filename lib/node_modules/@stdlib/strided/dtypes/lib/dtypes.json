@@ -1,5 +1,6 @@
 [
-	"binary",
+  "binary",
+  "bool",
   "complex64",
   "complex128",
   "float32",

@@ -136,7 +136,7 @@ console.log( poisson.variance( lambda ) );
 console.log( poisson.pmf( 4, lambda ) );
 // => ~0.1680
 
-// CDF can be used to calculate probability upto certain number of inquiries in an hour:
+// CDF can be used to calculate probability up to certain number of inquiries in an hour:
 console.log( poisson.cdf( 2, lambda ) );
 // => ~0.4232
 

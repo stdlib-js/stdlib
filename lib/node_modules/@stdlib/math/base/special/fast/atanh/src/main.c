@@ -26,7 +26,7 @@
 * Computes the hyperbolic arctangent of a number.
 *
 * @param x    input value
-* @returns    hyperbolic arctangent (in radians)
+* @return     hyperbolic arctangent (in radians)
 *
 * @example
 * double v = stdlib_base_fast_atanh( 0.0 );

@@ -32,7 +32,7 @@ var writeFile = require( '@stdlib/fs/write-file' );
 
 #### writeFile( file, data\[, options], clbk )
 
-Asynchronously write `data` to a `file`.
+Asynchronously writes `data` to a `file`.
 
 ```javascript
 var join = require( 'path' ).join;

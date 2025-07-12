@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Returns the diagonal type string associated with a supported BLAS diagonal
+    type value.
+
+    Parameters
+    ----------
+    value: any
+        Diagonal type value.
+
+    Returns
+    -------
+    out: string|null
+        Diagonal type string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'unit' )
+    'unit'
+    > out = {{alias}}( {{alias:@stdlib/blas/base/diagonal-type-str2enum}}( 'unit' ) )
+    'unit'
+
+    See Also
+    --------
+

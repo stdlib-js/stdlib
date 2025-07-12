@@ -28,7 +28,7 @@
 * var str = uppercase( 'bEEp' );
 * // returns 'BEEP'
 */
-declare function uppercase( str: string ): string;
+declare function uppercase<S extends string>( str: S ): Uppercase<S>;
 
 
 // EXPORTS //

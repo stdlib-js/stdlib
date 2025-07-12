@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark Boost `rising_factorial`.
-*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

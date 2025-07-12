@@ -143,7 +143,7 @@
     element1: number (optional)
         Array element.
 
-    elementN: number (optional)
+    elementN: ...number (optional)
         Array elements.
 
     Returns
@@ -600,7 +600,7 @@
     Returns
     -------
     idx: integer
-        array index.
+        Array index.
 
     Examples
     --------
@@ -639,7 +639,7 @@
     --------
     > var arr1 = new {{alias}}( [ 1.0, 0.0, -1.0 ] );
     > function fcn( v ) { return v * 2.0; };
-    > var arr2 = arr1.map( fcn );
+    > var arr2 = arr1.map( fcn )
     <Float64Array>[ 2.0, 0.0, -2.0 ]
 
 
@@ -736,7 +736,7 @@
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, 0.0, -1.0 ] )
-    <Float64Array>[ 1.0, 0.0, -1.0 ]
+    <Float64Array>
     > arr.reverse()
     <Float64Array>[ -1.0, 0.0, 1.0 ]
 

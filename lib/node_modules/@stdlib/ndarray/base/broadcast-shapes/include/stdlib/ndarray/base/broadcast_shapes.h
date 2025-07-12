@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Broadcasts array shapes to a single shape.
 */
-int8_t stdlib_ndarray_broadcast_shapes( int64_t M, int64_t *shapes[], int64_t ndims[], int64_t *out );
+int8_t stdlib_ndarray_broadcast_shapes( const int64_t M, const int64_t *shapes[], const int64_t ndims[], int64_t *out );
 
 #ifdef __cplusplus
 }

@@ -23,22 +23,22 @@
 *
 * @param x - input value (in degrees)
 * @returns cotangent
- *
- * @example
- * var v = cotd( 0.0 );
- * // returns Infinity
- *
- * @example
- * var v = cotd( 60.0 );
- * // returns ~0.58
- *
- * @example
- * var v = cotd( 90.0 );
- * // returns 0.0
- *
- * @example
- * var v = cotd( NaN );
- * // returns NaN
+*
+* @example
+* var v = cotd( 0.0 );
+* // returns Infinity
+*
+* @example
+* var v = cotd( 60.0 );
+* // returns ~0.58
+*
+* @example
+* var v = cotd( 90.0 );
+* // returns 0.0
+*
+* @example
+* var v = cotd( NaN );
+* // returns NaN
 */
 declare function cotd( x: number ): number;
 

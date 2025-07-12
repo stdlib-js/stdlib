@@ -19,7 +19,7 @@
 # VARIABLES #
 
 # Define the download URL:
-DEPS_OPENBLAS_URL ?= https://github.com/xianyi/OpenBLAS/archive/v$(DEPS_OPENBLAS_VERSION).tar.gz
+DEPS_OPENBLAS_URL ?= https://github.com/OpenMathLib/OpenBLAS/archive/v$(DEPS_OPENBLAS_VERSION).tar.gz
 
 # Determine the basename for the download:
 deps_openblas_basename := openblas_$(deps_openblas_version_slug).tar.gz
@@ -102,10 +102,14 @@ endif
 
 # Allow disabling AVX for older `binutils`:
 ifeq ($(DEPS_OPENBLAS_NO_AVX), 1)
-	DEPS_OPENBLAS_BUILD_OPTS += NO_AVX=1 NO_AVX2=1
+	DEPS_OPENBLAS_BUILD_OPTS += NO_AVX=1 NO_AVX2=1 NO_AVX512=1
 else
 ifeq ($(DEPS_OPENBLAS_NO_AVX2), 1)
-	DEPS_OPENBLAS_BUILD_OPTS += NO_AVX2=1
+	DEPS_OPENBLAS_BUILD_OPTS += NO_AVX2=1 NO_AVX512=1
+else
+ifeq ($(DEPS_OPENBLAS_NO_AVX512), 1)
+	DEPS_OPENBLAS_BUILD_OPTS += NO_AVX512=1
+endif
 endif
 endif
 

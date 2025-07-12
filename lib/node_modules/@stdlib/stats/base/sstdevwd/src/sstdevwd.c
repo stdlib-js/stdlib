@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/stats/base/sstdevwd.h"
-#include "stdlib/stats/base/svariancewd.h"
+#include "stdlib/stats/strided/svariancewd.h"
 #include <stdint.h>
 #include <math.h>
 

@@ -18,6 +18,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable function-call-argument-newline */
+
 'use strict';
 
 // MODULES //
@@ -39,12 +41,13 @@ var rules = merge(
 	{},
 	require( './programmer_errors.js' ),
 	require( './best_practices.js' ),
+	require( './spellcheck.js' ),
 	require( './strict.js' ),
 	require( './variables.js' ),
 	require( './nodejs.js' ),
 	require( './style.js' ),
 	require( './es2015.js' ),
-	require( './stdlib.js')
+	require( './stdlib.js' )
 );
 
 

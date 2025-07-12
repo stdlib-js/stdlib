@@ -30,7 +30,7 @@
 * @returns boolean indicating whether two arguments are the same
 *
 * @example
-* var Complex128 = require( '@stdlib/complex/float64' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var x = new Complex128( 1.0, 2.0 );
 * var y = new Complex128( 1.0, 2.0 );
@@ -39,7 +39,7 @@
 * // returns true
 *
 * @example
-* var Complex128 = require( '@stdlib/complex/float64' );
+* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
 * var x = new Complex128( 1.0, 2.0 );
 * var y = new Complex128( -1.0, -2.0 );
