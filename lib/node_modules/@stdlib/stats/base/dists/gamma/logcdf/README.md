@@ -125,6 +125,99 @@ y = mylogcdf( 4.0 );
 // returns ~-0.064
 ```
 
+* * *
+
+### C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+#### Usage
+
+```c
+#include "stdlib/stats/base/dists/gamma/logcdf.h"
+```
+
+#### stdlib_base_dists_gamma_logcdf( x, alpha, beta )
+
+Evaluates the natural logarithm of the cumulative distribution function (CDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta`.
+
+```c
+double out = stdlib_base_dists_gamma_logcdf( 2.0, 0.5, 1.0 );
+// returns ~-0.047
+
+out = stdlib_base_dists_gamma_logcdf( 0.1, 1.0, 1.0 );
+// returns ~-2.352
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **alpha**: `[in] double` shape parameter.
+-   **beta**: `[in] double` rate parameter.
+
+```c
+double stdlib_base_dists_gamma_logcdf( const double x, const double alpha, const double beta );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/gamma/logcdf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( double a, double b ) {
+    double r = ( (double)rand() / ( (double)RAND_MAX + 1.0 ) );
+    return a + ( r * ( b - a ) );
+}
+
+int main( void ) {
+    double alpha;
+    double beta;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        x = random_uniform( 0.0, 2.0 );
+        alpha = random_uniform( 1.0, 10.0 );
+        beta = random_uniform( 1.0, 10.0 );
+        y = stdlib_base_dists_gamma_logcdf( x, alpha, beta );
+        printf( "x: %lf, α: %lf, β: %lf, ln(F(x;α,β)): %lf\n", x, alpha, beta, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
 </section>
 
 <!-- /.usage -->

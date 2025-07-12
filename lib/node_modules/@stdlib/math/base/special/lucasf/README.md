@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Lucasf
+# lucasf
 
 > Compute the nth [Lucas number][lucas-number] as a single-precision floating-point number.
 
@@ -161,7 +161,7 @@ logEachMap( 'lucasf(%d) = %0.1f', x, lucasf );
 
 #### stdlib_base_lucasf( n )
 
-Compute the nth [Lucas number][lucas-number] as a single-precision floating-point number.
+Computes the nth [Lucas number][lucas-number] as a single-precision floating-point number.
 
 ```c
 float out = stdlib_base_lucasf( 0 );

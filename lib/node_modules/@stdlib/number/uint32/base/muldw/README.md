@@ -111,7 +111,7 @@ for ( i = 0xFFFFFFF0; i < 0xFFFFFFFF; i++ ) {
 ## See Also
 
 -   <span class="package-name">[`@stdlib/number/int32/base/muldw`][@stdlib/number/int32/base/muldw]</span><span class="delimiter">: </span><span class="description">compute the double word product of two signed 32-bit integers.</span>
--   <span class="package-name">[`@stdlib/number/uint32/base/mul`][@stdlib/number/uint32/base/mul]</span><span class="delimiter">: </span><span class="description">perform C-like multiplication of two unsigned 32-bit integers.</span>
+-   <span class="package-name">[`@stdlib/number/uint32/base/mul`][@stdlib/number/uint32/base/mul]</span><span class="delimiter">: </span><span class="description">multiply two unsigned 32-bit integers.</span>
 
 </section>
 

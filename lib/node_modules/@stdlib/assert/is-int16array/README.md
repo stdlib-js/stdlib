@@ -93,7 +93,7 @@ bool = isInt16Array( new Float32Array( 10 ) );
 bool = isInt16Array( new Float64Array( 10 ) );
 // returns false
 
-bool = isInt16Array( new Array( 10 ) );
+bool = isInt16Array( [] );
 // returns false
 
 bool = isInt16Array( {} );
