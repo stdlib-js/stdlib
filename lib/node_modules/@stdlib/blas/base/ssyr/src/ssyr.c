@@ -44,7 +44,7 @@ void API_SUFFIX(c_ssyr)( const CBLAS_LAYOUT order, const CBLAS_UPLO uplo, const 
 	if ( order == CblasColMajor ) {
 		sa1 = 1;
 		sa2 = LDA;
-	} else { // order === 'row-major'
+	} else { // order == 'row-major'
 		sa1 = LDA;
 		sa2 = 1;
 	}
@@ -113,7 +113,7 @@ void API_SUFFIX(c_ssyr_ndarray)( const CBLAS_UPLO uplo, const CBLAS_INT N, const
 		}
 		return;
 	}
-	// ( isrm && uplo == 'CblasUpper' ) || ( !isrm && uplo === 'CblasLower' )
+	// ( isrm && uplo == 'CblasUpper' ) || ( !isrm && uplo == 'CblasLower' )
 	ix1 = ox;
 	for ( i1 = 0; i1 < N; i1++ ) {
 		if ( X[ ix1 ] != 0.0f ) {

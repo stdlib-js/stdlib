@@ -355,7 +355,7 @@
     The returned array has the same data type as the host array.
 
     If a predicate function does not return a truthy value for any array
-    element, the method returns `null`.
+    element, the method returns an empty array.
 
     Parameters
     ----------
@@ -761,7 +761,7 @@
     the host array.
 
     If the method is unable to resolve indices to a non-empty array subsequence,
-    the method returns `null`.
+    the method returns an empty array.
 
     Parameters
     ----------
@@ -804,7 +804,7 @@
     ----------
     predicate: Function
         Predicate function which tests array elements. If a predicate function
-        returns a truthy value, a array element passes; otherwise, an array
+        returns a truthy value, an array element passes; otherwise, an array
         element fails.
 
     thisArg: Any (optional)

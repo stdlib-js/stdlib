@@ -76,7 +76,7 @@ if ( err instanceof Error ) {
 
 ## Notes
 
--   The difference between this API and [`fs.closSync()`][node-fs] is that [`fs.closeSync()`][node-fs] will throw if an `error` is encountered (e.g., if given an invalid file descriptor) and this API will return an `error`.
+-   The difference between this API and [`fs.closeSync()`][node-fs] is that [`fs.closeSync()`][node-fs] will throw if an `error` is encountered (e.g., if given an invalid file descriptor) and this API will return an `error`.
 
 </section>
 

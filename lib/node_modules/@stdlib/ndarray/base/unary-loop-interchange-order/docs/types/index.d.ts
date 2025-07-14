@@ -67,9 +67,9 @@ interface LoopOrderObject {
 *
 * -   The function assumes that the input and output ndarrays have the same shape. Hence, loop interchange order should only be determined **after** broadcasting.
 *
-* @param sh - array dimensions
-* @param sx - input array stride lengths
-* @param sy - output array stride lengths
+* @param shape - array dimensions
+* @param stridesX - input array stride lengths
+* @param stridesY - output array stride lengths
 * @returns loop interchange data
 *
 * @example
