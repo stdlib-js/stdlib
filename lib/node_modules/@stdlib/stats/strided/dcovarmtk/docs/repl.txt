@@ -19,14 +19,14 @@
     correction: number
         Degrees of freedom adjustment. Setting this parameter to a value other
         than `0` has the effect of adjusting the divisor during the calculation
-        of the variance according to `N - c` where `c` corresponds to the
-        provided degrees of freedom adjustment. When computing the variance of a
-        population, setting this parameter to `0` is the standard choice (i.e.,
-        the provided array contains data constituting an entire population).
-        When computing the unbiased sample variance, setting this parameter to
-        `1` is the standard choice (i.e., the provided array contains data
-        sampled from a larger population; this is commonly referred to as
-        Bessel's correction).
+        of the covariance according to `N - c` where `c` corresponds to the
+        provided degrees of freedom adjustment. When computing the population
+        covariance, setting this parameter to `0` is the standard choice (i.e.,
+        the provided arrays contain data constituting entire populations). When
+        computing the unbiased sample covariance, setting this parameter to `1`
+        is the standard choice (i.e., the provided array contains data sampled
+        from larger populations; this is commonly referred to as Bessel's
+        correction).
 
     meanx: number
         Mean of `x`.
@@ -91,10 +91,10 @@
         provided degrees of freedom adjustment. When computing the population
         covariance, setting this parameter to `0` is the standard choice (i.e.,
         the provided arrays contain data constituting entire populations). When
-        computing the unbiased sample covariance, setting this parameter to
-        `1` is the standard choice (i.e., the provided arrays contain data
-        sampled from larger populations; this is commonly referred to as
-        Bessel's correction).
+        computing the unbiased sample covariance, setting this parameter to `1`
+        is the standard choice (i.e., the provided array contains data sampled
+        from larger populations; this is commonly referred to as Bessel's
+        correction).
 
     meanx: number
         Mean of `x`.
