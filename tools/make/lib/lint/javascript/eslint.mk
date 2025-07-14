@@ -92,7 +92,7 @@ ifeq ($(FAIL_FAST), true)
 	done
 else
 	$(QUIET) status=0; \
-	for file in $$($(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]'); do \
+	$(FIND_SOURCES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		if ! $(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF) $$file; then \
@@ -133,7 +133,7 @@ ifeq ($(FAIL_FAST), true)
 	done
 else
 	$(QUIET) status=0; \
-	for file in $$($(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]'); do \
+	$(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		if ! $(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_TESTS) $$file; then \
@@ -174,7 +174,7 @@ ifeq ($(FAIL_FAST), true)
 	done
 else
 	$(QUIET) status=0; \
-	for file in $$($(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]'); do \
+	$(FIND_EXAMPLES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		if ! $(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_EXAMPLES) $$file; then \
@@ -215,7 +215,7 @@ ifeq ($(FAIL_FAST), true)
 	done
 else
 	$(QUIET) status=0; \
-	for file in $$($(FIND_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]'); do \
+	$(FIND_BENCHMARKS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		if ! $(ESLINT) $(ESLINT_FLAGS) --config $(ESLINT_CONF_BENCHMARKS) $$file; then \

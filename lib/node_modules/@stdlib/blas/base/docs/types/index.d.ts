@@ -1171,10 +1171,10 @@ interface Namespace {
 	gnrm2: typeof gnrm2;
 
 	/**
-	* Multiplies a vector `x` by a constant `alpha`.
+	* Multiplies a vector by a scalar constant.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param stride - stride length
 	* @returns input array

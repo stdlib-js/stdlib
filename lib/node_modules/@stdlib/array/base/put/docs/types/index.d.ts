@@ -85,7 +85,7 @@ declare function put<T extends TypedArray | BooleanTypedArray, U = unknown>( x: 
 * var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 *
 * var indices = [ 1, 2 ];
-* var values = new Complex128Array( [ 20.0, 30.0, 40, 5.0 ] );
+* var values = new Complex128Array( [ 20.0, 30.0, 40.0, 5.0 ] );
 *
 * var out = put( x, indices, values, 'throw' );
 * // returns <Complex128Array>

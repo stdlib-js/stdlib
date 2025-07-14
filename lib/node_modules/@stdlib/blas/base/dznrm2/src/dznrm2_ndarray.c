@@ -34,12 +34,12 @@ static const double sbig = 1.1113793747425387E-162;
 * Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
 *
 * @param N         number of indexed elements
-* @param ZX        input array
-* @param strideX   ZX stride length
-* @param offsetX   starting index for ZX
+* @param X         input array
+* @param strideX   X stride length
+* @param offsetX   starting index for X
 */
-double API_SUFFIX(c_dznrm2_ndarray)( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	const double *x = (double *)ZX;
+double API_SUFFIX(c_dznrm2_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	const double *x = (double *)X;
 	CBLAS_INT sx;
 	CBLAS_INT ix;
 	bool notbig;

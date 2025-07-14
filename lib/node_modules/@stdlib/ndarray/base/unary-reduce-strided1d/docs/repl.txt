@@ -1,0 +1,95 @@
+
+{{alias}}( fcn, arrays, dims[, options] )
+    Performs a reduction over a list of specified dimensions in an input ndarray
+    via a one-dimensional strided array reduction function and assigns results
+    to a provided output ndarray.
+
+    Each provided "ndarray" should be an object with the following properties:
+
+    - dtype: data type.
+    - data: data buffer.
+    - shape: dimensions.
+    - strides: stride lengths.
+    - offset: index offset.
+    - order: specifies whether an ndarray is row-major (C-style) or column-major
+    (Fortran-style).
+
+    The output ndarray and any additional ndarray arguments are expected to have
+    the same dimensions as the non-reduced dimensions of the input ndarray. When
+    calling the reduction function, any additional ndarray arguments are
+    provided as zero-dimensional ndarray-like objects.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function which will be applied to a one-dimensional subarray and should
+        reduce the subarray to a single scalar value. The function should have
+        the following signature:
+
+            fcn( arrays[, options] )
+
+        where
+
+        - arrays: array containing a one-dimensional subarray of the input
+        ndarray and any additional ndarray arguments as zero-dimensional
+        ndarrays.
+        - options: function options.
+
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing one input ndarray and one output ndarray,
+        followed by any additional ndarray arguments.
+
+    dims: Array<integer>
+        List of dimensions over which to perform a reduction.
+
+    options: Object (optional)
+        Function options.
+
+    Examples
+    --------
+    // Define ndarray data and meta data...
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var ybuf = new {{alias:@stdlib/array/float64}}( [ 0.0 ] );
+    > var dtype = 'float64';
+    > var shx = [ 2, 2 ];
+    > var shy = [];
+    > var sx = [ 2, 1 ];
+    > var sy = [ 0 ];
+    > var ox = 0;
+    > var oy = 0;
+    > var order = 'row-major';
+
+    // Define a wrapper for an extended BLAS function...
+    > function fcn( arrays ) {
+    ...    var x = arrays[ 0 ];
+    ...    var N = x.shape[ 0 ];
+    ...    var d = x.data;
+    ...    var s = x.strides[ 0 ];
+    ...    var o = x.offset;
+    ...    return {{alias:@stdlib/blas/ext/base/gsum}}.ndarray( N, d, s, o );
+    ... };
+
+    // Using minimal ndarray-like objects...
+    > var x = {
+    ...     'dtype': dtype,
+    ...     'data': xbuf,
+    ...     'shape': shx,
+    ...     'strides': sx,
+    ...     'offset': ox,
+    ...     'order': order
+    ... };
+    > var y = {
+    ...     'dtype': dtype,
+    ...     'data': ybuf,
+    ...     'shape': shy,
+    ...     'strides': sy,
+    ...     'offset': oy,
+    ...     'order': order
+    ... };
+    > {{alias}}( fcn, [ x, y ], [ 0, 1 ] );
+    > y.data
+    <Float64Array>[ 10.0 ]
+
+    See Also
+    --------
+

@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Returns the enumeration constant associated with a matrix orientation.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `ROWS == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    value: string
+        Matrix orientation string.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'rows' )
+    <number>
+
+    See Also
+    --------

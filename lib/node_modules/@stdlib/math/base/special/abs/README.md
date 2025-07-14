@@ -84,16 +84,14 @@ v = abs( NaN );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var abs = require( '@stdlib/math/base/special/abs' );
 
 var x = discreteUniform( 100, -100, 100, {
     'dtype': 'float64'
 });
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'abs(%d) = %d', x[ i ], abs( x[ i ] ) );
-}
+logEachMap( 'abs(%d) = %d', x, abs );
 ```
 
 </section>
