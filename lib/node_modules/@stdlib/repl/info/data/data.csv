@@ -1085,7 +1085,7 @@ base.kernelBetainc,"\nbase.kernelBetainc( x:number, a:number, b:number, regulari
 base.kernelBetainc.assign,"\nbase.kernelBetainc.assign( x:number, a:number, b:number, regularized:boolean, \n  upper:boolean, out:Array|TypedArray|Object, stride:integer, offset:integer )\n    Computes the kernel function for the regularized incomplete beta function.\n"
 base.kernelBetaincinv,"\nbase.kernelBetaincinv( a:number, b:number, p:number, q:number )\n    Computes the inverse of the lower incomplete beta function.\n"
 base.kernelCos,"\nbase.kernelCos( x:number, y:number )\n    Computes the cosine of a double-precision floating-point number on the\n    interval [-π/4, π/4].\n"
-base.kernelLog1p,"\nbase.kernelLog1p( f:number )\n    Computes `log(1+f) - f` for `1+f` in ~[sqrt(2)/2, sqrt(2)].\n"
+base.kernelLog1p,"\nbase.kernelLog1p( f:number )\n    Evaluates a correction term for double-precision base-2 and base-10\n    logarithms when `1+f` is in `[√2/2, √2]`.\n"
 base.kernelSin,"\nbase.kernelSin( x:number, y:number )\n    Computes the sine of a double-precision floating-point number on [-π/4,π/4].\n"
 base.kernelTan,"\nbase.kernelTan( x:number, y:number, k:integer )\n    Computes the tangent of a double-precision floating-point number on the\n    interval [-π/4, π/4].\n"
 base.kroneckerDelta,"\nbase.kroneckerDelta( i:number, j:number )\n    Evaluates the Kronecker delta.\n"
