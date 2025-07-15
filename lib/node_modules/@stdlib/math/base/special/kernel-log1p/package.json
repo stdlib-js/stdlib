@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/kernel-log1p",
   "version": "0.0.0",
-  "description": "Evaluates a correction term for double-precision base-2 and base-10 logarithms when 1+f is in [√2/2, √2].",
+  "description": "Evaluate a correction term for double-precision base-2 and base-10 logarithms when 1+f is in [√2/2, √2].",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
