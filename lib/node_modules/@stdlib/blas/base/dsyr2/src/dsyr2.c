@@ -60,7 +60,7 @@ void API_SUFFIX(c_dsyr2)( const CBLAS_LAYOUT layout, const CBLAS_UPLO uplo, cons
 		return;
 	}
 	if ( strideY == 0 ) {
-		c_xerbla( 8, "c_dsyr2", "Error: invalid argument. Eighth argument must be nonzero. Value: `%d`.", strideX );
+		c_xerbla( 8, "c_dsyr2", "Error: invalid argument. Eighth argument must be nonzero. Value: `%d`.", strideY );
 		return;
 	}
 	// max(1, N)

@@ -64,7 +64,7 @@ interface Routine {
 	* var v = nanvariancech.ndarray( x.length, 1, x, 1, 0 );
 	* // returns ~4.3333
 	*/
-	ndarray( N: number, correction: number, x: InputArray, strideX: number, offset: number ): number;
+	ndarray( N: number, correction: number, x: InputArray, strideX: number, offsetX: number ): number;
 }
 
 /**

@@ -87,7 +87,7 @@ interface BaseResults {
 	ci: Float32Array;
 
 	/**
-	* Value of the mean under the null hypothesis
+	* Difference in means under the null hypothesis.
 	*/
 	nullValue: number;
 

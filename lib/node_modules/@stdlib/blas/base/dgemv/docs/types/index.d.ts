@@ -82,7 +82,7 @@ interface Routine {
 	* var x = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 	* var y = new Float64Array( [ 1.0, 1.0 ] );
 	*
-	* dgemv( 'no-transpose', 2, 3, 1.0, A, 3, 1, 0, x, 1, 0, 1.0, y, 1, 0 );
+	* dgemv.ndarray( 'no-transpose', 2, 3, 1.0, A, 3, 1, 0, x, 1, 0, 1.0, y, 1, 0 );
 	* // y => <Float64Array>[ 7.0, 16.0 ]
 	*/
 	ndarray( trans: TransposeOperation, M: number, N: number, alpha: number, A: Float64Array, strideA1: number, strideA2: number, offsetA: number, x: Float64Array, strideX: number, offsetX: number, beta: number, y: Float64Array, strideY: number, offsetY: number ): Float64Array;
