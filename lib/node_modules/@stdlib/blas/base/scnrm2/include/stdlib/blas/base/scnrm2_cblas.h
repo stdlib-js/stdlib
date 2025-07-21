@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_scnrm2`.
 */
-#ifndef SCNRM2_CBLAS_H
-#define SCNRM2_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_SCNRM2_CBLAS_H
+#define STDLIB_BLAS_BASE_SCNRM2_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -40,4 +40,4 @@ float API_SUFFIX(cblas_scnrm2)( const CBLAS_INT N, const void *X, const CBLAS_IN
 }
 #endif
 
-#endif // !SCNRM2_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_SCNRM2_CBLAS_H
