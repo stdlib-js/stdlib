@@ -1184,3 +1184,5 @@
 "J5","invalid argument. ArrayBuffer view byte length must be a multiple of %u. View byte length: `%u`.","RangeError"
 "J6","invalid invocation. `this` is not a %s.","TypeError"
 "J7","invalid argument. Must provide either a valid object or a struct instance. Value: `%s`.","TypeError"
+"J8","invalid argument. First argument must be a valid orientation. Value: `%s`.","TypeError"
+"J9","invalid argument. Second argument must be a valid orientation. Value: `%s`.","TypeError"
