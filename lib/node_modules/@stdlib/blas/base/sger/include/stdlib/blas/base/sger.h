@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 2 routine `sger`.
 */
-#ifndef SGER_H
-#define SGER_H
+#ifndef STDLIB_BLAS_BASE_SGER_H
+#define STDLIB_BLAS_BASE_SGER_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_sger_ndarray)( const CBLAS_INT M, const CBLAS_INT N, const flo
 }
 #endif
 
-#endif // !SGER_H
+#endif // !STDLIB_BLAS_BASE_SGER_H

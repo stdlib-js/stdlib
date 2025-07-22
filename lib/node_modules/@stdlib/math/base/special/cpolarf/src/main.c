@@ -22,7 +22,7 @@
 #include "stdlib/complex/float32/ctor.h"
 
 /**
-* Computes the absolute value and the phase of a complex single-precision complex floating-point number.
+* Computes the absolute value and the phase of a single-precision complex floating-point number.
 *
 * @param z        input value
 * @param cabsf    destination for the absolute value

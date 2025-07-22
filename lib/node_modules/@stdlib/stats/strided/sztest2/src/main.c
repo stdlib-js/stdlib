@@ -112,7 +112,7 @@ void API_SUFFIX(stdlib_strided_sztest2_ndarray)( const CBLAS_INT NX, const CBLAS
 	ci = results->ci;
 
 	// Compute the standard error of the mean:
-	xvar = sigmax * sigmay;
+	xvar = sigmax * sigmax;
 	yvar = sigmay * sigmay;
 	stderr = stdlib_base_sqrt( ( xvar / (double)NX ) + ( yvar / (double)NY ) ); // note: intentionally evaluated in double-precision to avoid `NX` and `NY` exceeding max safe float32 integer
 
