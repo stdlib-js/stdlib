@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_dcabs1`.
 */
-#ifndef DCABS1_CBLAS_H
-#define DCABS1_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_DCABS1_CBLAS_H
+#define STDLIB_BLAS_BASE_DCABS1_CBLAS_H
 
 #include "stdlib/complex/float64/ctor.h"
 
@@ -40,4 +40,4 @@ double cblas_dcabs1( const stdlib_complex128_t z );
 }
 #endif
 
-#endif // !DCABS1_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_DCABS1_CBLAS_H

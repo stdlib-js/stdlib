@@ -81,7 +81,10 @@ var logEachMap = require( '@stdlib/console/log-each-map' );
 var cpolarf = require( '@stdlib/math/base/special/cpolarf' );
 
 // Create an array of random numbers:
-var arr = new Complex64Array( uniform( 200, -100.0, 100.0 ) );
+var opts = {
+    'dtype': 'float32'
+};
+var arr = new Complex64Array( uniform( 200, -100.0, 100.0, opts ) );
 
 // Compute the polar form of each number in the array:
 logEachMap( 'cpolarf(%s) = [%s]', arr, cpolarf );
