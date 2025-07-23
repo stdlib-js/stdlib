@@ -1,0 +1,708 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>&nbsp;</title>
+	<style>
+		/* http://meyerweb.com/eric/tools/css/reset/
+		   v2.0 | 20110126
+		   License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed,
+		figure, figcaption, footer, header, hgroup,
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure,
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+	</style>
+	<style>
+		/* D3: Category10 */
+		.category10-1,
+		[data-color="category10-1"] {
+			stroke: #1f77b4;
+		}
+		.category10-2,
+		[data-color="category10-2"] {
+			stroke: #ff7f0e;
+		}
+		.category10-3,
+		[data-color="category10-3"] {
+			stroke: #2ca02c;
+		}
+		.category10-4,
+		[data-color="category10-4"] {
+			stroke: #d62728;
+		}
+		.category10-5,
+		[data-color="category10-5"] {
+			stroke: #9467bd;
+		}
+		.category10-6,
+		[data-color="category10-6"] {
+			stroke: #8c564b;
+		}
+		.category10-7,
+		[data-color="category10-7"] {
+			stroke: #e377c2;
+		}
+		.category10-8,
+		[data-color="category10-8"] {
+			stroke: #7f7f7f;
+		}
+		.category10-9,
+		[data-color="category10-9"] {
+			stroke: #bcdb22;
+		}
+		.category10-10,
+		[data-color="category10-10"] {
+			stroke: #17becf;
+		}
+
+		/* D3: category20 */
+		.category20-1,
+		[data-color="category20-1"] {
+			stroke: #1f77b4;
+		}
+		.category20-2,
+		[data-color="category20-2"] {
+			stroke: #aec7e8;
+		}
+		.category20-3,
+		[data-color="category20-3"] {
+			stroke: #ff7f0e;
+		}
+		.category20-4,
+		[data-color="category20-4"] {
+			stroke: #ffbb78;
+		}
+		.category20-5,
+		[data-color="category20-5"] {
+			stroke: #2ca02c;
+		}
+		.category20-6,
+		[data-color="category20-6"] {
+			stroke: #98df8a;
+		}
+		.category20-7,
+		[data-color="category20-7"] {
+			stroke: #d62728;
+		}
+		.category20-8,
+		[data-color="category20-8"] {
+			stroke: #ff9896;
+		}
+		.category20-9,
+		[data-color="category20-9"] {
+			stroke: #9467bd;
+		}
+		.category20-10,
+		[data-color="category20-10"] {
+			stroke: #c5b0d5;
+		}
+		.category20-11,
+		[data-color="category20-11"] {
+			stroke: #8c564b;
+		}
+		.category20-12,
+		[data-color="category20-12"] {
+			stroke: #c49c94;
+		}
+		.category20-13,
+		[data-color="category20-13"] {
+			stroke: #e377c2;
+		}
+		.category20-14,
+		[data-color="category20-14"] {
+			stroke: #f7b6d2;
+		}
+		.category20-15,
+		[data-color="category20-15"] {
+			stroke: #7f7f7f;
+		}
+		.category20-16,
+		[data-color="category20-16"] {
+			stroke: #c7c7c7;
+		}
+		.category20-17,
+		[data-color="category20-17"] {
+			stroke: #bcbd22;
+		}
+		.category20-18,
+		[data-color="category20-18"] {
+			stroke: #dbdb8d;
+		}
+		.category20-19,
+		[data-color="category20-19"] {
+			stroke: #17becf;
+		}
+		.category20-20,
+		[data-color="category20-20"] {
+			stroke: #9edae5;
+		}
+
+		/* D3: category20b */
+		.category20b-1,
+		[data-color="category20b-1"] {
+			stroke: #393b79;
+		}
+		.category20b-2,
+		[data-color="category20b-2"] {
+			stroke: #5254a3;
+		}
+		.category20b-3,
+		[data-color="category20b-3"] {
+			stroke: #6b6ecf;
+		}
+		.category20b-4,
+		[data-color="category20b-4"] {
+			stroke: #9c9ede;
+		}
+		.category20b-5,
+		[data-color="category20b-5"] {
+			stroke: #637939;
+		}
+		.category20b-6,
+		[data-color="category20b-6"] {
+			stroke: #8ca252;
+		}
+		.category20b-7,
+		[data-color="category20b-7"] {
+			stroke: #b5cf6b;
+		}
+		.category20b-8,
+		[data-color="category20b-8"] {
+			stroke: #cedb9c;
+		}
+		.category20b-9,
+		[data-color="category20b-9"] {
+			stroke: #8c6d31;
+		}
+		.category20b-10,
+		[data-color="category20b-10"] {
+			stroke: #bd9e39;
+		}
+		.category20b-11,
+		[data-color="category20b-11"] {
+			stroke: #e7ba52;
+		}
+		.category20b-12,
+		[data-color="category20b-12"] {
+			stroke: #e7cb94;
+		}
+		.category20b-13,
+		[data-color="category20b-13"] {
+			stroke: #843c39;
+		}
+		.category20b-14,
+		[data-color="category20b-14"] {
+			stroke: #ad494a;
+		}
+		.category20b-15,
+		[data-color="category20b-15"] {
+			stroke: #d6616b;
+		}
+		.category20b-16,
+		[data-color="category20b-16"] {
+			stroke: #e7969c;
+		}
+		.category20b-17,
+		[data-color="category20b-17"] {
+			stroke: #7b4173;
+		}
+		.category20b-18,
+		[data-color="category20b-18"] {
+			stroke: #a55194;
+		}
+		.category20b-19,
+		[data-color="category20b-19"] {
+			stroke: #ce6dbd;
+		}
+		.category20b-20,
+		[data-color="category20b-20"] {
+			stroke: #de9ed6;
+		}
+
+		/* D3: category20c */
+		.category20c-1,
+		[data-color="category20c-1"] {
+			stroke: #3182bd;
+		}
+		.category20c-2,
+		[data-color="category20c-2"] {
+			stroke: #6baed6;
+		}
+		.category20c-3,
+		[data-color="category20c-3"] {
+			stroke: #9ecae1;
+		}
+		.category20c-4,
+		[data-color="category20c-4"] {
+			stroke: #c6dbef;
+		}
+		.category20c-5,
+		[data-color="category20c-5"] {
+			stroke: #e6550d;
+		}
+		.category20c-6,
+		[data-color="category20c-6"] {
+			stroke: #fd8d3c;
+		}
+		.category20c-7,
+		[data-color="category20c-7"] {
+			stroke: #fdae6b;
+		}
+		.category20c-8,
+		[data-color="category20c-8"] {
+			stroke: #fdd0a2;
+		}
+		.category20c-9,
+		[data-color="category20c-9"] {
+			stroke: #31a354;
+		}
+		.category20c-10,
+		[data-color="category20c-10"] {
+			stroke: #74c476;
+		}
+		.category20c-11,
+		[data-color="category20c-11"] {
+			stroke: #a1d99b;
+		}
+		.category20c-12,
+		[data-color="category20c-12"] {
+			stroke: #c7e9c0;
+		}
+		.category20c-13,
+		[data-color="category20c-13"] {
+			stroke: #756bb1;
+		}
+		.category20c-14,
+		[data-color="category20c-14"] {
+			stroke: #9e9ac8;
+		}
+		.category20c-15,
+		[data-color="category20c-15"] {
+			stroke: #bcbddc;
+		}
+		.category20c-16,
+		[data-color="category20c-16"] {
+			stroke: #dadaeb;
+		}
+		.category20c-17,
+		[data-color="category20c-17"] {
+			stroke: #636363;
+		}
+		.category20c-18,
+		[data-color="category20c-18"] {
+			stroke: #969696;
+		}
+		.category20c-19,
+		[data-color="category20c-19"] {
+			stroke: #bdbdbd;
+		}
+		.category20c-20,
+		[data-color="category20c-20"] {
+			stroke: #d9d9d9;
+		}
+
+		/* D3: Category10 */
+		.category10-1-span {
+			background-color: #1f77b4;
+		}
+		.category10-2-span {
+			background-color: #ff7f0e;
+		}
+		.category10-3-span {
+			background-color: #2ca02c;
+		}
+		.category10-4-span {
+			background-color: #d62728;
+		}
+		.category10-5-span {
+			background-color: #9467bd;
+		}
+		.category10-6-span {
+			background-color: #8c564b;
+		}
+		.category10-7-span {
+			background-color: #e377c2;
+		}
+		.category10-8-span {
+			background-color: #7f7f7f;
+		}
+		.category10-9-span {
+			background-color: #bcdb22;
+		}
+		.category10-10-span {
+			background-color: #17becf;
+		}
+
+		/* D3: category20 */
+		.category20-1-span {
+			background-color: #1f77b4;
+		}
+		.category20-2-span {
+			background-color: #aec7e8;
+		}
+		.category20-3-span {
+			background-color: #ff7f0e;
+		}
+		.category20-4-span {
+			background-color: #ffbb78;
+		}
+		.category20-5-span {
+			background-color: #2ca02c;
+		}
+		.category20-6-span {
+			background-color: #98df8a;
+		}
+		.category20-7-span {
+			background-color: #d62728;
+		}
+		.category20-8-span {
+			background-color: #ff9896;
+		}
+		.category20-9-span {
+			background-color: #9467bd;
+		}
+		.category20-10-span {
+			background-color: #c5b0d5;
+		}
+		.category20-11-span {
+			background-color: #8c564b;
+		}
+		.category20-12-span {
+			background-color: #c49c94;
+		}
+		.category20-13-span {
+			background-color: #e377c2;
+		}
+		.category20-14-span {
+			background-color: #f7b6d2;
+		}
+		.category20-15-span {
+			background-color: #7f7f7f;
+		}
+		.category20-16-span {
+			background-color: #c7c7c7;
+		}
+		.category20-17-span {
+			background-color: #bcbd22;
+		}
+		.category20-18-span {
+			background-color: #dbdb8d;
+		}
+		.category20-19-span {
+			background-color: #17becf;
+		}
+		.category20-20-span {
+			background-color: #9edae5;
+		}
+
+		/* D3: category20b */
+		.category20b-1-span {
+			background-color: #393b79;
+		}
+		.category20b-2-span {
+			background-color: #5254a3;
+		}
+		.category20b-3-span {
+			background-color: #6b6ecf;
+		}
+		.category20b-4-span {
+			background-color: #9c9ede;
+		}
+		.category20b-5-span {
+			background-color: #637939;
+		}
+		.category20b-6-span {
+			background-color: #8ca252;
+		}
+		.category20b-7-span {
+			background-color: #b5cf6b;
+		}
+		.category20b-8-span {
+			background-color: #cedb9c;
+		}
+		.category20b-9-span {
+			background-color: #8c6d31;
+		}
+		.category20b-10-span {
+			background-color: #bd9e39;
+		}
+		.category20b-11-span {
+			background-color: #e7ba52;
+		}
+		.category20b-12-span {
+			background-color: #e7cb94;
+		}
+		.category20b-13-span {
+			background-color: #843c39;
+		}
+		.category20b-14-span {
+			background-color: #ad494a;
+		}
+		.category20b-15-span {
+			background-color: #d6616b;
+		}
+		.category20b-16-span {
+			background-color: #e7969c;
+		}
+		.category20b-17-span {
+			background-color: #7b4173;
+		}
+		.category20b-18-span {
+			background-color: #a55194;
+		}
+		.category20b-19-span {
+			background-color: #ce6dbd;
+		}
+		.category20b-20-span {
+			background-color: #de9ed6;
+		}
+
+		/* D3: category20c */
+		.category20c-1-span {
+			background-color: #3182bd;
+		}
+		.category20c-2-span {
+			background-color: #6baed6;
+		}
+		.category20c-3-span {
+			background-color: #9ecae1;
+		}
+		.category20c-4-span {
+			background-color: #c6dbef;
+		}
+		.category20c-5-span {
+			background-color: #e6550d;
+		}
+		.category20c-6-span {
+			background-color: #fd8d3c;
+		}
+		.category20c-7-span {
+			background-color: #fdae6b;
+		}
+		.category20c-8-span {
+			background-color: #fdd0a2;
+		}
+		.category20c-9-span {
+			background-color: #31a354;
+		}
+		.category20c-10-span {
+			background-color: #74c476;
+		}
+		.category20c-11-span {
+			background-color: #a1d99b;
+		}
+		.category20c-12-span {
+			background-color: #c7e9c0;
+		}
+		.category20c-13-span {
+			background-color: #756bb1;
+		}
+		.category20c-14-span {
+			background-color: #9e9ac8;
+		}
+		.category20c-15-span {
+			background-color: #bcbddc;
+		}
+		.category20c-16-span {
+			background-color: #dadaeb;
+		}
+		.category20c-17-span {
+			background-color: #636363;
+		}
+		.category20c-18-span {
+			background-color: #969696;
+		}
+		.category20c-19-span {
+			background-color: #bdbdbd;
+		}
+		.category20c-20-span {
+			background-color: #d9d9d9;
+		}
+	</style>
+	<style>
+		.canvas {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.graph .hidden {
+			opacity: 0;
+		}
+
+		/*.annotation .marker {
+			cursor: pointer;
+			opacity: 0.2;
+			fill: #ff0000;
+			stroke: none;
+		}
+
+		.annotation .vline {
+			stroke: #000;
+			stroke-opacity: 0.2;
+		}*/
+
+		.annotations .title {
+			display: block;
+			/*font-size: 2em;*/
+			line-height: 2em;
+			padding: 0 10px;
+			/*background-color: #474747;*/
+			/*color: #ffffff;*/
+			font-size: 1.5em;
+			color: #474747;
+		}
+
+		.legend {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 60px;
+		}
+
+		.legend .entry {
+			cursor: pointer;
+			margin-bottom: 10px;
+		}
+
+		.legend .symbol {
+			display: inline-block;
+			height: 4px;
+			width: 10px;
+			line-height: 0.3em;
+		}
+
+		.legend .label {
+			margin-left: 10px;
+		}
+
+		.legend .hidden {
+			opacity: 0.25;
+		}
+
+		.noselect {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		/* http://css-tricks.com/guide-responsive-friendly-css-columns/ */
+		.multicolumn-1 {
+			-webkit-column-count: 1;
+			   -moz-column-count: 1;
+				-ms-column-count: 1;
+					column-count: 1;
+
+			-webkit-column-width: 150px;
+			   -moz-column-width: 150px;
+				-ms-column-width: 150px;
+					column-width: 150px;
+		}
+
+		.multicolumn-2 {
+			-webkit-column-count: 2;
+			   -moz-column-count: 2;
+				-ms-column-count: 2;
+					column-count: 2;
+
+			-webkit-column-width: 150px;
+			   -moz-column-width: 150px;
+				-ms-column-width: 150px;
+					column-width: 150px;
+		}
+
+		.multicolumn-3 {
+			-webkit-column-count: 3;
+			   -moz-column-count: 3;
+				-ms-column-count: 3;
+					column-count: 3;
+
+			-webkit-column-width: 150px;
+			   -moz-column-width: 150px;
+				-ms-column-width: 150px;
+					column-width: 150px;
+		}
+
+		.multicolumn-4 {
+			-webkit-column-count: 4;
+			   -moz-column-count: 4;
+				-ms-column-count: 4;
+					column-count: 4;
+
+			-webkit-column-width: 150px;
+			   -moz-column-width: 150px;
+				-ms-column-width: 150px;
+					column-width: 150px;
+		}
+	</style>
+</head>
+<body>
+	<figure>{{plot}}</figure>
+</body>
+</html>
