@@ -18,6 +18,10 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { NumericArray } from '@stdlib/types/array';
+
 /**
 * Simultaneously computes the sine and cosine of an angle measured in radians within the interval `[-π/4, π/4]` and stores the results in a provided output array.
 *
@@ -44,7 +48,7 @@
 * var v = kernelSincos( NaN, 0.0, [ 0.0, 0.0 ], 1, 0 );
 * // returns [ NaN, NaN ]
 */
-declare function kernelSincos( x: number, y: number, out: Array<number>, stride: number, offset: number ): Array<number>;
+declare function kernelSincos<T extends NumericArray>( x: number, y: number, out: T, stride: number, offset: number ): T;
 
 
 // EXPORTS //

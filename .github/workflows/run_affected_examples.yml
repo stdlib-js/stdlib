@@ -51,6 +51,9 @@ jobs:
     # Define a display name:
     name: 'Run changed examples'
 
+    # Only run this job if a pull request does not have a "ci: Skip" label:
+    if: "${{ github.event_name != 'pull_request' || !contains(github.event.pull_request.labels.*.name, 'ci: Skip') }}"
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 

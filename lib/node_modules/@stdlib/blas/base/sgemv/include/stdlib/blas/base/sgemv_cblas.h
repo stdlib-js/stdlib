@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 2 routine `sgemv`.
 */
-#ifndef SGEMV_CBLAS_H
-#define SGEMV_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_SGEMV_CBLAS_H
+#define STDLIB_BLAS_BASE_SGEMV_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_sgemv_ndarray)( const CBLAS_TRANSPOSE trans, const CBLAS_INT M
 }
 #endif
 
-#endif // !SGEMV_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_SGEMV_CBLAS_H

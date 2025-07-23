@@ -16,7 +16,6 @@
 * limitations under the License.
 */
 
-
 #include "stdlib/math/base/special/kernel_sincos.h"
 #include <stdio.h>
 
