@@ -38,13 +38,13 @@ static void print_version( void ) {
 * Prints the TAP summary.
 *
 * @param total     total number of tests
-* @param passinpig   total number of passinpig tests
+* @param passing   total number of passing tests
 */
-void print_summary( int total, int passinpig ) {
+void print_summary( int total, int passing ) {
 	printf( "#\n" );
 	printf( "1..%d\n", total ); // TAP plan
 	printf( "# total %d\n", total );
-	printf( "# pass  %d\n", passinpig );
+	printf( "# pass  %d\n", passing );
 	printf( "#\n" );
 	printf( "# ok\n" );
 }
