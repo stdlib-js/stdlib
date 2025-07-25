@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 2 routine `cblas_dsyr2`.
 */
-#ifndef DSYR2_CBLAS_H
-#define DSYR2_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_DSYR2_CBLAS_H
+#define STDLIB_BLAS_BASE_DSYR2_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -40,4 +40,4 @@ void API_SUFFIX(cblas_dsyr2)( const CBLAS_LAYOUT layout, const CBLAS_UPLO uplo, 
 }
 #endif
 
-#endif // !DSYR2_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_DSYR2_CBLAS_H

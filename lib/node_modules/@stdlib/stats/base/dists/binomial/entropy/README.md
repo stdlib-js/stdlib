@@ -138,6 +138,106 @@ logEachMap( 'n: %0.4f, p: %0.4f, H(X;n,p): %0.4f', n, p, entropy );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/binomial/entropy.h"
+```
+
+#### stdlib_base_dists_binomial_entropy( n, p )
+
+Evaluates the [entropy][entropy] of a [Binomial][binomial-distribution] distribution with `n` the number of trials and `p` the success probability.
+
+```c
+double out = stdlib_base_dists_binomial_entropy( 20, 0.1 );
+// returns ~1.667
+```
+
+The function accepts the following arguments:
+
+-   **n**: `[in] int32_t` number of trials.
+-   **p**: `[in] double` success probability.
+
+```c
+double stdlib_base_dists_binomial_entropy( const int32_t n, const double p );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/binomial/entropy.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdint.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+static int32_t random_int( const int32_t min, const int32_t max ) {
+    return min + (int32_t)( random_uniform( 0.0, 1.0 ) * ( max - min + 1 ) );
+}
+
+int main( void ) {
+    int32_t n;
+    double p;
+    double v;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        n = random_int( 0, 100 );
+        p = random_uniform( 0.0, 1.0 );
+        v = stdlib_base_dists_binomial_entropy( n, p );
+        printf( "n: %d, p: %lf, H(X;n,p): %lf\n", n, p, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
