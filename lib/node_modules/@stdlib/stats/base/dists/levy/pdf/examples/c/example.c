@@ -38,6 +38,6 @@ int main( void ) {
 		x = random_uniform( mu, mu + 10.0 );
 		c = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 		y = stdlib_base_dists_levy_pdf( x, mu, c );
-		printf( "x: %lf, mu: %lf, c: %lf, f(x;mu,c): %lf\n", x, mu, c, y );
+		printf( "x: %lf, µ: %lf, c: %lf, f(x;µ,c): %lf\n", x, mu, c, y );
 	}
 }

@@ -24,6 +24,8 @@ limitations under the License.
 
 <section class="intro">
 
+The [**range**][range] is defined as the difference between the maximum and minimum values.
+
 </section>
 
 <!-- /.intro -->

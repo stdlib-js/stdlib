@@ -68,7 +68,7 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input [`Float32Array`][@stdlib/array/float32].
--   **stride**: stride length.
+-   **strideX**: stride length.
 
 The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the sum of absolute values of every other element:
 
@@ -192,7 +192,7 @@ console.log( v );
 Computes the sum of absolute values ([_L1_ norm][l1norm]) of single-precision floating-point strided array elements using pairwise summation.
 
 ```c
-const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f }
+const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 
 float v = stdlib_strided_sasumpw( 4, x, 1 );
 // returns 10.0f
@@ -213,7 +213,7 @@ float stdlib_strided_sasumpw( const CBLAS_INT N, const float *X, const CBLAS_INT
 Computes the sum of absolute values ([_L1_ norm][l1norm]) of single-precision floating-point strided array elements using pairwise summation and alternative indexing semantics.
 
 ```c
-const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f }
+const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
 
 float v = stdlib_strided_sasumpw_ndarray( 4, x, 1, 0 );
 // returns 10.0f

@@ -26,7 +26,7 @@
 * @return     secant
 *
 * @example
-* float y = stdlib_base_sec( 3.1415927410125732f );
+* float y = stdlib_base_secf( 3.1415927410125732f );
 * // returns -1.0f
 */
 float stdlib_base_secf( const float x ) {
