@@ -52,7 +52,9 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/constants/float64/eps"
+      ]
     },
     {
       "task": "examples",

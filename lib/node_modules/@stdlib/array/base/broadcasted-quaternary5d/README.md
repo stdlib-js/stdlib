@@ -116,7 +116,7 @@ var w = filled5dBy( shapes[ 3 ], discreteUniform( -100, 100 ) );
 console.log( w );
 
 var out = zeros5d( shapes[ 4 ] );
-console.log( z );
+console.log( out );
 
 bquaternary5d( [ x, y, z, w, out ], shapes, add );
 console.log( out );

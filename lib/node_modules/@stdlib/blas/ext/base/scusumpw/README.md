@@ -201,8 +201,8 @@ console.log( y );
 Computes the cumulative sum of single-precision floating-point strided array elements using pairwise summation.
 
 ```c
-const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f }
-float y[] = { 0.0f, 0.0f, 0.0f, 0.0f }
+const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
+float y[] = { 0.0f, 0.0f, 0.0f, 0.0f };
 
 stdlib_strided_scusumpw( 4, 0.0f, x, 1, y, 1 );
 ```
@@ -229,8 +229,8 @@ void stdlib_strided_scusumpw( const CBLAS_INT N, const float sum, const float *X
 Computes the cumulative sum of single-precision floating-point strided array elements using pairwise summation and alternative indexing semantics.
 
 ```c
-const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f }
-float y[] = { 0.0f, 0.0f, 0.0f, 0.0f }
+const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f };
+float y[] = { 0.0f, 0.0f, 0.0f, 0.0f };
 
 stdlib_strided_scusumpw_ndarray( 4, 0.0f, x, 1, 0, y, 1, 0 );
 ```
