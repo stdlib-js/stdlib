@@ -10,7 +10,7 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        The function expects the following ndarrays in order:
+        Array-like object containing the following ndarrays in order:
 
         -   first one-dimensional input ndarray.
         -   second one-dimensional input ndarray.
