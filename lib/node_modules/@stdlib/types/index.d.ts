@@ -1340,6 +1340,16 @@ declare module '@stdlib/types/blas' {
 	type Layout = 'row-major' | 'column-major';
 
 	/**
+	* Matrix orientation.
+	*
+	* ## Notes
+	*
+	* -   **rows**: data is stored along matrix rows.
+	* -   **columns**: data is stored along matrix columns.
+	*/
+	type MatrixOrientation = 'rows' | 'columns';
+
+	/**
 	* Matrix triangle.
 	*
 	* ## Notes
