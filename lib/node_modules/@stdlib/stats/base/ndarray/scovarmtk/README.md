@@ -205,10 +205,6 @@ console.log( v );
 
 <section class="links">
 
-</section>
-
-<!-- /.links -->
-
 [covariance]: https://en.wikipedia.org/wiki/Covariance
 
 </section>
