@@ -1186,3 +1186,7 @@
 "J7","invalid argument. Must provide either a valid object or a struct instance. Value: `%s`.","TypeError"
 "J8","invalid argument. First argument must be a valid orientation. Value: `%s`.","TypeError"
 "J9","invalid argument. Second argument must be a valid orientation. Value: `%s`.","TypeError"
+"JA","invalid argument. The first argument must be an ndarray. Value: `%s`.","TypeError"
+"JB","invalid argument. Second argument must be either an ndarray or a scalar value. Value: `%s`.","TypeError"
+"JC","invalid argument. Third argument must be an ndarray. Value: `%s`.","TypeError"
+"JD","invalid argument. Third argument must be either an ndarray or an integer. Value: `%s`.","TypeError"
