@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/blas/base/dgemv",
+  "name": "@stdlib/blas/base/ggemv",
   "version": "0.0.0",
   "description": "Perform one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`.",
   "license": "Apache-2.0",
@@ -14,15 +14,11 @@
     }
   ],
   "main": "./lib",
-  "browser": "./lib/main.js",
-  "gypfile": true,
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
-    "include": "./include",
     "lib": "./lib",
-    "src": "./src",
     "test": "./test"
   },
   "types": "./docs/types",
@@ -59,14 +55,11 @@
     "math",
     "blas",
     "level 2",
-    "dgemv",
+    "ggemv",
     "linear",
     "algebra",
     "subroutines",
     "array",
-    "ndarray",
-    "float64",
-    "double",
-    "float64array"
+    "ndarray"
   ]
 }
