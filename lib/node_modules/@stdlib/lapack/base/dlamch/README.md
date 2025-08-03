@@ -22,7 +22,7 @@ limitations under the License.
 
 > Determine double-precision floating-point machine parameters.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 

@@ -21,13 +21,13 @@
 #include <stdio.h>
 
 int main( void ) {
-    double x;
-    double v;
-    int i;
+	double x;
+	double v;
+	int i;
 
-    for ( i = 0; i < 100; i++ ) {
-        x = ( ( (double)rand() / (double)RAND_MAX ) * 100.0 ) - 50.0;
-        v = stdlib_base_exp2( x );
-        printf( "2^%lf = %lf\n", x, v );
-    }
+	for ( i = 0; i < 100; i++ ) {
+		x = ( ( (double)rand() / (double)RAND_MAX ) * 100.0 ) - 50.0;
+		v = stdlib_base_exp2( x );
+		printf( "2^%lf = %lf\n", x, v );
+	}
 }

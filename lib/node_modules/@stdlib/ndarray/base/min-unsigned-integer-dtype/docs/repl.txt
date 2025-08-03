@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Returns the minimum ndarray data type for storing a provided unsigned
+    integer value.
+
+    Parameters
+    ----------
+    value: number
+        Unsigned integer value.
+
+    Returns
+    -------
+    dt: string
+        ndarray data type.
+
+    Examples
+    --------
+    > var dt = {{alias}}( 3 )
+    'uint8'
+    > dt = {{alias}}( 1280 )
+    'uint16'
+
+    See Also
+    --------
+

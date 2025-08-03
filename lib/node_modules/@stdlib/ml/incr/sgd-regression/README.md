@@ -158,7 +158,7 @@ If `intercept` is `true`, an element equal to one is implicitly added to each `x
 
 #### accumulator( x, y )
 
-Update the model coefficients in light of incoming data. `y` must be a numeric response value, `x` a `numeric array` of predictors. The number of predictors is decided upon first invocation of this method. All subsequent calls must supply `x` vectors of the same dimensionality.
+Updates the model coefficients in light of incoming data. `y` must be a numeric response value, `x` a `numeric array` of predictors. The number of predictors is decided upon first invocation of this method. All subsequent calls must supply `x` vectors of the same dimensionality.
 
 <!-- run-disable -->
 
@@ -170,7 +170,7 @@ accumulator( [ 1.0, 0.0 ], 5.0 );
 
 #### accumulator.predict( x )
 
-Predict the response for a new feature vector `x`, where `x` must be a `numeric array` of predictors. Given feature vector `x = [x_0, x_1, ...]` and model coefficients `c = [c_0, c_1, ...]`, the prediction is equal to `x_0*c_0 + x_1*c_1 + ... + c_intercept`.
+Predicts the response for a new feature vector `x`, where `x` must be a `numeric array` of predictors. Given feature vector `x = [x_0, x_1, ...]` and model coefficients `c = [c_0, c_1, ...]`, the prediction is equal to `x_0*c_0 + x_1*c_1 + ... + c_intercept`.
 
 <!-- run-disable -->
 

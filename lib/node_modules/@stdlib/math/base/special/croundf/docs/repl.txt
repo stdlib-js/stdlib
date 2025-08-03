@@ -1,0 +1,27 @@
+
+{{alias}}( z )
+    Rounds each component of a single-precision complex floating-point number
+    to the nearest integer.
+
+    Parameters
+    ----------
+    z: Complex64
+        Complex number.
+
+    Returns
+    -------
+    out: Complex64
+        Rounded complex number.
+
+    Examples
+    --------
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float32/ctor}}( 5.5, 3.3 ) )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( v )
+    6.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( v )
+    3.0
+
+    See Also
+    --------
+

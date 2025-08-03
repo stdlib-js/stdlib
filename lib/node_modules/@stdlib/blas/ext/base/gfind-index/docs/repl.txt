@@ -1,0 +1,105 @@
+
+{{alias}}( N, x, strideX, clbk[, thisArg] )
+    Returns the index of the first element which passes a test implemented by a
+    predicate function.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0` or no element passes a test implemented by a predicate function,
+    the function returns `-1`.
+
+    The callback function is provided the following arguments:
+
+    - value: current array element.
+    - aidx: array index.
+    - sidx: strided index (offset + aidx*stride).
+    - array: the input array.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: ArrayLikeObject
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    idx: integer
+        Index.
+
+    Examples
+    --------
+    // Standard Usage:
+    > function isEven( v ) { return v % 2.0 === 0.0; };
+    > var x = [ 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ];
+    > {{alias}}( x.length, x, 1, isEven )
+    3
+
+    // Using `N` and stride parameters:
+    > x = [ 1.0, 3.0, 4.0, -5.0, -1.0, -3.0 ];
+    > {{alias}}( x.length, x, 2, isEven )
+    1
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 3.0, -4.0, 5.0, -6.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 3, x1, 1, isEven )
+    1
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX, clbk[, thisArg] )
+    Returns the index of the first element which passes a test implemented by a
+    predicate function using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: ArrayLikeObject
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    idx: integer
+        Index.
+
+    Examples
+    --------
+    > function isEven( v ) { return v % 2.0 === 0.0; };
+    > var x = [ 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ];
+    > {{alias}}.ndarray( x.length, x, 1, 2, isEven )
+    1
+
+    See Also
+    --------

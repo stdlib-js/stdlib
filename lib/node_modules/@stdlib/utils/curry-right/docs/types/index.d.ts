@@ -24,8 +24,8 @@
 type ReverseTuple<T extends Array<any>> = T extends [infer First, ...infer Rest] ? [...ReverseTuple<Rest>, First] : []; // eslint-disable-line @typescript-eslint/no-explicit-any
 
 /**
- * Curry function type for curryRight.
- */
+* Curry function type for curryRight.
+*/
 type CurryRightFunction<
 	TThis,
 	TArgs extends Array<any>, // eslint-disable-line @typescript-eslint/no-explicit-any

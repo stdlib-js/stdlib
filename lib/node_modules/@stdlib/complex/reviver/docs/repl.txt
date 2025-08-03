@@ -5,9 +5,9 @@
     The serialization format for complex numbers is an object having the
     following fields:
 
-    - type: complex number type (e.g., "Complex128", "Complex64")
-    - re: real component (number)
-    - im: imaginary component (number)
+    - type: complex number type (e.g., "Complex128", "Complex64").
+    - re: real component (number).
+    - im: imaginary component (number).
 
     Parameters
     ----------

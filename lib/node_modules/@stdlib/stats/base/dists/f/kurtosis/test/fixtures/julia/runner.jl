@@ -70,6 +70,6 @@ dir = dirname( file );
 
 # Generate fixtures:
 d1 = ( rand( 100 ) .* 10.0 ) .+ 2.0;
-d2 = ( rand( 100 ) .* 10.0 ) .+ 6.5;
+d2 = ( rand( 100 ) .* 10.0 ) .+ 8.5;
 gen( d1, d2, "data.json" );
 

@@ -44,7 +44,7 @@ var sargs2multislice = require( '@stdlib/slice/base/sargs2multislice' );
 
 #### sargs2multislice( str )
 
-Create a [`MultiSlice`][@stdlib/slice/multi] object from a comma-separated list of string-serialized [`MultiSlice`][@stdlib/slice/multi] constructor arguments.
+Creates a [`MultiSlice`][@stdlib/slice/multi] object from a comma-separated list of string-serialized [`MultiSlice`][@stdlib/slice/multi] constructor arguments.
 
 ```javascript
 var s = sargs2multislice( '0,Slice(2,10,1),1' );

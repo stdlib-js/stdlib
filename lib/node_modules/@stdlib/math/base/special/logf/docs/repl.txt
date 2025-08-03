@@ -1,0 +1,39 @@
+
+{{alias}}( x, b )
+    Computes the base `b` logarithm of a single-precision floating-point number.
+
+    For negative `b` or `x`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    b: number
+        Base.
+
+    Returns
+    -------
+    y: number
+        Logarithm (base `b`).
+
+    Examples
+    --------
+    > var y = {{alias}}( 100.0, 10.0 )
+    2.0
+    > y = {{alias}}( 16.0, 2.0 )
+    4.0
+    > y = {{alias}}( 5.0, 1.0 )
+    Infinity
+    > y = {{alias}}( NaN, 2.0 )
+    NaN
+    > y = {{alias}}( 1.0, NaN )
+    NaN
+    > y = {{alias}}( -4.0, 2.0 )
+    NaN
+    > y = {{alias}}( 4.0, -2.0 )
+    NaN
+
+    See Also
+    --------
+

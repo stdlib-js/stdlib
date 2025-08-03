@@ -1,0 +1,46 @@
+
+{{alias}}( arrays, shape, fcn, clbk[, thisArg] )
+    Applies a unary function to each element retrieved from a three-dimensional
+    nested input array according to a callback function and assigns results to
+    elements in a three-dimensional nested output array.
+
+    The callback function is provided the following arguments:
+
+    - value: array element.
+    - indices: current array element indices.
+    - arrays: input and output arrays.
+
+    If the callback function does not return any value (or equivalently,
+    explicitly returns `undefined`), the value is ignored.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject
+        Array-like object containing one input nested array and one output
+        nested array.
+
+    shape: Array<integer>
+        Array shape.
+
+    fcn: Function
+        Unary function to apply to callback return values.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Examples
+    --------
+    > var x = [ [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] ];
+    > var y = [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ];
+    > var shape = [ 1, 2, 2 ];
+    > function clbk( v ) { return v * 2.0; };
+    > {{alias}}( [ x, y ], shape, {{alias:@stdlib/math/base/special/abs}}, clbk );
+    > y
+    [ [ [ 2.0, 4.0 ], [ 6.0, 8.0 ] ] ]
+
+    See Also
+    --------
+

@@ -22,13 +22,13 @@
 #include <stdbool.h>
 
 int main( void ) {
-    double x;
-    bool v;
-    int i;
-    
-    for ( i = 0; i < 100; i++ ) {
-        x = ( ( (double)rand() / (double)RAND_MAX ) * 100.0 );
-        v = stdlib_base_is_even( x );
-        printf( "x = %lf, is_even(x) = %s\n", x, ( v ) ? "even" : "not even" );
-    }
+	double x;
+	bool v;
+	int i;
+
+	for ( i = 0; i < 100; i++ ) {
+		x = ( ( (double)rand() / (double)RAND_MAX ) * 100.0 );
+		v = stdlib_base_is_even( x );
+		printf( "x = %lf, is_even(x) = %s\n", x, ( v ) ? "even" : "not even" );
+	}
 }

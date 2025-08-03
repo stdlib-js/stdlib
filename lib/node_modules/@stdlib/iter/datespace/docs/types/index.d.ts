@@ -65,7 +65,7 @@ interface Options {
 * // returns <Date>
 *
 * v = iter.next().value;
-* // returns 2
+* // returns <Date>
 *
 * // ...
 */

@@ -25,11 +25,11 @@ int main( void ) {
 	double y[] = { 6.0, 7.0, 8.0, 9.0, 10.0 };
 
 	// Specify the number of elements:
-	const int N = 5;
+	const int N = 3;
 
 	// Specify stride lengths:
-	const int strideX = 1;
-	const int strideY = 1;
+	const int strideX = 2;
+	const int strideY = -2;
 
 	// Specify angle of rotation:
 	const double c = 0.8;
@@ -37,6 +37,14 @@ int main( void ) {
 
 	// Apply plane rotation:
 	c_drot( N, x, strideX, y, strideY, c, s );
+
+	// Print the result:
+	for ( int i = 0; i < 5; i++ ) {
+		printf( "x[ %i ] = %lf, y[ %i ] = %lf\n", i, x[ i ], i, y[ i ] );
+	}
+
+	// Apply plane rotation:
+	c_drot_ndarray( N, x, strideX, 0, y, strideY, 4, c, s );
 
 	// Print the result:
 	for ( int i = 0; i < 5; i++ ) {

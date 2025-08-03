@@ -9,7 +9,7 @@
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    If `N <= 0` or `stride <= 0`, the function returns `x` unchanged.
+    If `N <= 0`, the function returns `x` unchanged.
 
     Parameters
     ----------

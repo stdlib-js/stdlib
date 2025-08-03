@@ -212,7 +212,6 @@ declare function scalar2array<T = unknown>( value: T, dtype: 'generic' ): Array<
 * Returns a single-element array containing a provided scalar value.
 *
 * @param value - scalar value
-* @param dtype - output array data type
 * @returns output array
 *
 * @example
@@ -225,7 +224,6 @@ declare function scalar2array( value: number ): Float64Array;
 * Returns a single-element array containing a provided scalar value.
 *
 * @param value - scalar value
-* @param dtype - output array data type
 * @returns output array
 *
 * @example
@@ -238,7 +236,6 @@ declare function scalar2array( value: boolean ): BooleanArray;
 * Returns a single-element array containing a provided scalar value.
 *
 * @param value - scalar value
-* @param dtype - output array data type
 * @returns output array
 *
 * @example
@@ -255,7 +252,6 @@ declare function scalar2array( value: Complex64 ): Complex64Array;
 * Returns a single-element array containing a provided scalar value.
 *
 * @param value - scalar value
-* @param dtype - output array data type
 * @returns output array
 *
 * @example

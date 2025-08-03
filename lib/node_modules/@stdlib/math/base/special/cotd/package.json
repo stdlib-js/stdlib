@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/cotd",
   "version": "0.0.0",
-  "description": "Compute the cotangent of an angle measured in degrees",
+  "description": "Compute the cotangent of an angle measured in degrees.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

@@ -1,12 +1,13 @@
+
 {{alias}}( object, predicate[, thisArg ] )
     Tests whether at least one value in an object passes a test implemented by
     a predicate function.
 
     The predicate function is provided three arguments:
 
-    - `value`: the value of the current property being processed in the object
-    - `key`: the key of the current property being processed in the object
-    - `object`: the input object
+    - value: the value of the current property being processed in the object
+    - key: the key of the current property being processed in the object
+    - object: the input object
 
     The function immediately returns upon encountering a truthy return value.
 

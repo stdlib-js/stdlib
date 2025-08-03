@@ -22,7 +22,7 @@ limitations under the License.
 
 > Perform the symmetric rank 2 operation `A = α*x*y^T + α*y*x^T + A`.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 

@@ -67,9 +67,9 @@ forOwn( obj, log );
 
 The invoked `function` is provided three arguments:
 
--   `value`: object property value
--   `key`: object property
--   `obj`: the input object
+-   **value**: object property value.
+-   **key**: object property.
+-   **obj**: the input object.
 
 To terminate iteration before visiting all properties, the provided function must explicitly return `false`.
 

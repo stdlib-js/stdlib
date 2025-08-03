@@ -6,8 +6,8 @@
     Or can have a object having the following
     fields:
 
-    - type: value type (float64)
-    - value: 'NaN' or '+Infinity' or '-Infinity'
+    - type: value type (float64).
+    - value: 'NaN' or '+Infinity' or '-Infinity'.
 
     Parameters
     ----------

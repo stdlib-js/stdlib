@@ -41,7 +41,7 @@ The [skewness][skewness] for a [negative binomial][negative-binomial-distributio
 
 <!-- </equation> -->
 
-where `r` is the number of successes until experiment is stopped and `p` is the success probability in each trial. The random variable `X` denotes the number of failures until the `r` success is reached. 
+where `r` is the number of successes until experiment is stopped and `p` is the success probability in each trial. The random variable `X` denotes the number of failures until the `r` success is reached.
 
 </section>
 
@@ -137,13 +137,100 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
-<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+<!-- C interface documentation. -->
 
-<section class="references">
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
 
 </section>
 
-<!-- /.references -->
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/negative-binomial/skewness.h"
+```
+
+#### stdlib_base_dists_negative_binomial_skewness( r, p )
+
+Returns the skewness of a negative binomial distribution.
+
+```c
+ double y = stdlib_base_dists_negative_binomial_skewness( 100.0, 0.2 );
+// returns ~0.201
+```
+
+The function accepts the following arguments:
+
+-   **r**: `[in] double` number of failures until experiment is stopped.
+-   **p**: `[in] double` success probability.
+
+```c
+double stdlib_base_dists_negative_binomial_skewness( const double r, const double p );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/negative-binomial/skewness.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+   double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+   return min + ( v*(max-min) );
+}
+
+int main( void ) {
+   double r;
+   double p;
+   double y;
+   int i;
+
+   for ( i = 0; i < 10; i++ ) {
+       r = random_uniform( 1.0, 100.0 );
+       p = random_uniform( 0.01, 0.99 );
+       y = stdlib_base_dists_negative_binomial_skewness( r, p );
+       printf( "r: %.2f, p: %.4f, skew(X;r,p): %.4f\n", r, p, y );
+   }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

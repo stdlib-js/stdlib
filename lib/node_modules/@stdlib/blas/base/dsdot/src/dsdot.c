@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/base/dsdot.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the dot product of two single-precision floating-point vectors with extended accumulation and result.
@@ -30,49 +31,8 @@
 * @return         the dot product
 */
 double API_SUFFIX(c_dsdot)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const float *Y, const CBLAS_INT strideY ) {
-	double dot;
-	CBLAS_INT ix;
-	CBLAS_INT iy;
-	CBLAS_INT m;
-	CBLAS_INT i;
-
-	dot = 0.0;
-	if ( N <= 0 ) {
-		return dot;
-	}
-	// If both strides are equal to `1`, use unrolled loops...
-	if ( strideX == 1 && strideY == 1 ) {
-		m = N % 5;
-
-		// If we have a remainder, do a clean-up loop...
-		if ( m > 0 ) {
-			for ( i = 0; i < m; i++ ) {
-				dot += (double)X[ i ] * (double)Y[ i ];
-			}
-		}
-		if ( N < 5 ) {
-			return dot;
-		}
-		for ( i = m; i < N; i += 5 ) {
-			dot += ( (double)X[i]*(double)Y[i] ) + ( (double)X[i+1]*(double)Y[i+1]) + ( (double)X[i+2]*(double)Y[i+2] ) + ( (double)X[i+3]*(double)Y[i+3] ) + ( (double)X[i+4]*(double)Y[i+4] );
-		}
-		return dot;
-	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
-	for ( i = 0; i < N; i++ ) {
-		dot += (double)X[ ix ] * (double)Y[ iy ];
-		ix += strideX;
-		iy += strideY;
-	}
-	return dot;
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	return API_SUFFIX(c_dsdot_ndarray)( N, X, strideX, ox, Y, strideY, oy );
 }
 

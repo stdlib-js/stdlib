@@ -84,7 +84,7 @@ interface Options {
 *     'period': 10
 * };
 *
-* var iter = iterBarlettHannPulse( opts );
+* var iter = iterBartlettHannPulse( opts );
 *
 * var v = iter.next().value;
 * // returns <number>
@@ -97,9 +97,9 @@ interface Options {
 *
 * // ...
 */
-declare function iterBarlettHannPulse( options?: Options ): Iterator;
+declare function iterBartlettHannPulse( options?: Options ): Iterator;
 
 
 // EXPORTS //
 
-export = iterBarlettHannPulse;
+export = iterBartlettHannPulse;

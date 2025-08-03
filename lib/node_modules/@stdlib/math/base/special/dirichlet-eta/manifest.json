@@ -1,0 +1,81 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/special/powm1",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/riemann-zeta",
+        "@stdlib/constants/float64/ln-two"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/powm1",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/riemann-zeta",
+        "@stdlib/constants/float64/ln-two"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/powm1",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/riemann-zeta",
+        "@stdlib/constants/float64/ln-two"
+      ]
+    }
+  ]
+}

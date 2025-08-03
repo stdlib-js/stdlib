@@ -5,7 +5,7 @@
 
     When invoked, the input function is provided one argument:
 
-    - value: iterated value
+    - value: iterated value.
 
     If an environment supports Symbol.iterator and a provided iterator is
     iterable, the returned iterator is iterable.

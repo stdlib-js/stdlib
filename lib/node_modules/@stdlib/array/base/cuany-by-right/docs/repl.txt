@@ -1,0 +1,84 @@
+
+{{alias}}( x, predicate[, thisArg] )
+    Cumulatively tests whether at least one array element in a provided array
+    passes a test implemented by a predicate function, while iterating from
+    right-to-left.
+
+    The predicate function is provided three arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > function predicate( v ) { return ( v > 0 ); };
+    > var x = [ 1, 1, 0, 0, 0 ];
+    > var y = {{alias}}( x, predicate )
+    [ false, false, false, true, true ]
+
+
+{{alias}}.assign( x, out, stride, offset, predicate[, thisArg] )
+    Cumulatively tests whether at least one array element in a provided array
+    passes a test implemented by a predicate function, while iterating from
+    right-to-left, and assigns the results to the provided output array.
+
+    The predicate function is provided three arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    out: ArrayLikeObject
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array offset.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 1, 0, 0 ];
+    > var out = [ false, null, false, null, false, null, false, null ];
+    > function predicate( v ) { return ( v > 0 ); };
+    > var arr = {{alias}}.assign( x, out, 2, 0, predicate )
+    [ false, null, ..., true, null ]
+    > var bool = ( arr === out )
+    true
+
+    See Also
+    --------

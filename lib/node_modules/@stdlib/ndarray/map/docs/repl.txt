@@ -1,0 +1,39 @@
+
+{{alias}}( x[, options], fcn[, thisArg] )
+    Applies a callback function to elements in an input ndarray and assigns
+    results to elements in a new output ndarray.
+
+    The callback function is provided the following arguments:
+
+    - value: current array element.
+    - indices: current array element indices.
+    - arr: the input ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output ndarray data type. Overrides using the input array's inferred
+        data type.
+
+    fcn: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback function execution context.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+    > function f( v ) { return v*10.0; };
+    > var y = {{alias}}( x, f );
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ [ 10.0, 20.0 ], [ 30.0, 40.0 ] ]
+
+    See Also
+    --------

@@ -58,17 +58,15 @@ The function has the following parameters:
 -   **y**: second input [`Float32Array`][@stdlib/array/float32].
 -   **strideY**: `y` index increment.
 
-The `N` and `stride` parameters determine which elements in `x` and `y` are accessed at runtime. For example, to sort every other element
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to sort every other element
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 var x = new Float32Array( [ 1.0, -2.0, 3.0, -4.0 ] );
 var y = new Float32Array( [ 0.0, 1.0, 2.0, 3.0 ] );
-var N = floor( x.length / 2 );
 
-ssort2hp( N, -1.0, x, 2, y, 2 );
+ssort2hp( 2, -1.0, x, 2, y, 2 );
 
 console.log( x );
 // => <Float32Array>[ 3.0, -2.0, 1.0, -4.0 ]
@@ -81,7 +79,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial arrays...
 var x0 = new Float32Array( [ 1.0, 2.0, 3.0, 4.0 ] );
@@ -90,10 +87,9 @@ var y0 = new Float32Array( [ 0.0, 1.0, 2.0, 3.0 ] );
 // Create offset views...
 var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float32Array( y0.buffer, y0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var N = floor( x0.length/2 );
 
 // Sort every other element...
-ssort2hp( N, -1.0, x1, 2, y1, 2 );
+ssort2hp( 2, -1.0, x1, 2, y1, 2 );
 
 console.log( x0 );
 // => <Float32Array>[ 1.0, 4.0, 3.0, 2.0 ]
@@ -126,7 +122,7 @@ The function has the following additional parameters:
 -   **offsetX**: `x` starting index.
 -   **offsetY**: `y` starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -176,12 +172,10 @@ var ssort2hp = require( '@stdlib/blas/ext/base/ssort2hp' );
 
 var rand;
 var sign;
-var x;
-var y;
 var i;
 
-x = new Float32Array( 10 );
-y = new Float32Array( 10 ); // index array
+var x = new Float32Array( 10 );
+var y = new Float32Array( 10 ); // index array
 for ( i = 0; i < x.length; i++ ) {
     rand = round( randu()*100.0 );
     sign = randu();

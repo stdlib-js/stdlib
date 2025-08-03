@@ -4,24 +4,24 @@
 
     Each array element has the following fields:
 
-    - id: message id (relative to message group)
-    - group: message group
-    - checksum: object containing checksum info
-    - text: message text (including headers)
+    - id: message id (relative to message group).
+    - group: message group.
+    - checksum: object containing checksum info.
+    - text: message text (including headers).
 
     The message group may be one of the following:
 
-    - easy-ham-1: easier to detect non-spam e-mails (2500 messages)
+    - easy-ham-1: easier to detect non-spam e-mails (2500 messages).
     - easy-ham-2: easier to detect non-spam e-mails collected at a later date
-      (1400 messages)
-    - hard-ham-1: harder to detect non-spam e-mails (250 messages)
-    - spam-1: spam e-mails (500 messages)
-    - spam-2: spam e-mails collected at a later date (1396 messages)
+      (1400 messages).
+    - hard-ham-1: harder to detect non-spam e-mails (250 messages).
+    - spam-1: spam e-mails (500 messages).
+    - spam-2: spam e-mails collected at a later date (1396 messages).
 
     The checksum object contains the following fields:
 
-    - type: checksum type (e.g., MD5)
-    - value: checksum value
+    - type: checksum type (e.g., MD5).
+    - value: checksum value.
 
     Returns
     -------
