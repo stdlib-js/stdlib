@@ -20,7 +20,7 @@ limitations under the License.
 
 # dgemv
 
-> Perform one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A**T*x + β*y`.
+> Perform one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var dgemv = require( '@stdlib/blas/base/dgemv' );
 
 #### dgemv( order, trans, M, N, α, A, LDA, x, sx, β, y, sy )
 
-Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A**T*x + β*y`, where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
+Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`, where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -53,7 +53,7 @@ The function has the following parameters:
 -   **N**: number of columns in the matrix `A`.
 -   **α**: scalar constant.
 -   **A**: input matrix stored in linear memory as a [`Float64Array`][mdn-float64array].
--   **lda**: stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+-   **LDA**: stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
 -   **x**: input [`Float64Array`][mdn-float64array].
 -   **sx**: stride length for `x`.
 -   **β**: scalar constant.
@@ -97,7 +97,7 @@ dgemv( 'row-major', 'no-transpose', 2, 2, 1.0, A, 2, x1, -1, 1.0, y1, -1 );
 
 #### dgemv.ndarray( trans, M, N, α, A, sa1, sa2, oa, x, sx, ox, β, y, sy, oy )
 
-Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A**T*x + β*y`, using alternative indexing semantics and where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
+Performs one of the matrix-vector operations `y = α*A*x + β*y` or `y = α*A^T*x + β*y`, using alternative indexing semantics and where `α` and `β` are scalars, `x` and `y` are vectors, and `A` is an `M` by `N` matrix.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
