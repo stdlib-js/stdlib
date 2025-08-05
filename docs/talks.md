@@ -26,6 +26,17 @@ limitations under the License.
 
 ## 2025
 
+### The Future of Numerical Computing in JavaScript
+
+> [Gunj Joshi][gunjjoshi], JSNation, June 2025
+
+<div class="image" align="center">
+    <a title="The Future of Numerical Computing in JavaScript" href="https://gitnation.com/contents/the-future-of-numerical-computing-in-javascript">
+        <img width="480" src="" alt="The Future of Numerical Computing in JavaScript">
+    </a>
+    <br>
+</div>
+
 ### Numeric and Scientific Computing inside your Web Browser
 
 > [Gunj Joshi][gunjjoshi], FOSSASIA, March 2025
