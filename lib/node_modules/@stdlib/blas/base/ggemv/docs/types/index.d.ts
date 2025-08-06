@@ -112,7 +112,7 @@ interface Routine {
 * var x = [ 1.0, 1.0, 1.0 ];
 * var y = [ 1.0, 1.0, 1.0 ];
 *
-* ggemv( 'row-major', 'no-transpose', 3, 3, 1.0, A, 3, x1, -1, 1.0, y1, -1 );
+* ggemv( 'row-major', 'no-transpose', 3, 3, 1.0, A, 3, x, -1, 1.0, y, -1 );
 * // y => [ 25.0, 16.0, 7.0 ]
 *
 * @example
@@ -120,7 +120,7 @@ interface Routine {
 * var x = [ 1.0, 1.0, 1.0 ];
 * var y = [ 1.0, 1.0, 1.0 ];
 *
-* ggemv.ndarray( 'no-transpose', 3, 3, 1.0, A, 3, 1, 0, x1, -1, 2, 1.0, y1, -1, 2 );
+* ggemv.ndarray( 'no-transpose', 3, 3, 1.0, A, 3, 1, 0, x, -1, 2, 1.0, y, -1, 2 );
 * // y => [ 25.0, 16.0, 7.0 ]
 */
 declare var ggemv: Routine;
