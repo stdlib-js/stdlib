@@ -138,7 +138,7 @@ declare function scalar2array( value: number, dtype: 'int16' ): Int16Array;
 * @returns output array
 *
 * @example
-* var x = scalar2array( 1, int8'  }
+* var x = scalar2array( 1, 'int8'  }
 * // returns <Int8Array>[ 1 ]
 */
 declare function scalar2array( value: number, dtype: 'int8' ): Int8Array;
@@ -151,7 +151,7 @@ declare function scalar2array( value: number, dtype: 'int8' ): Int8Array;
 * @returns output array
 *
 * @example
-* var x = scalar2array( 1, uint32' );
+* var x = scalar2array( 1, 'uint32' );
 * // returns <Uint32Array>[ 1 ]
 */
 declare function scalar2array( value: number, dtype: 'uint32' ): Uint32Array;
@@ -164,7 +164,7 @@ declare function scalar2array( value: number, dtype: 'uint32' ): Uint32Array;
 * @returns output array
 *
 * @example
-* var x = scalar2array( 1, uint16' );
+* var x = scalar2array( 1, 'uint16' );
 * // returns <Uint16Array>[ 1 ]
 */
 declare function scalar2array( value: number, dtype: 'uint16' ): Uint16Array;
@@ -203,7 +203,7 @@ declare function scalar2array( value: number, dtype: 'uint8c' ): Uint8ClampedArr
 * @returns output array
 *
 * @example
-* var x = scalar2array( 1.0, generic' );
+* var x = scalar2array( 1.0, 'generic' );
 * // returns [ 1.0 ]
 */
 declare function scalar2array<T = unknown>( value: T, dtype: 'generic' ): Array<T>;
@@ -282,7 +282,7 @@ declare function scalar2array( value: Complex128 | ComplexLike ): Complex128Arra
 * @returns output array
 *
 * @example
-* var x = scalar2array( 1.0, generic' );
+* var x = scalar2array( 1.0, 'generic' );
 * // returns [ 1.0 ]
 */
 declare function scalar2array<T = unknown>( value: T, dtype?: DataType ): Array<T>;
