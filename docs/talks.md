@@ -32,7 +32,7 @@ limitations under the License.
 
 <div class="image" align="center">
     <a title="The Future of Numerical Computing in JavaScript" href="https://gitnation.com/contents/the-future-of-numerical-computing-in-javascript">
-        <img width="480" src="" alt="The Future of Numerical Computing in JavaScript">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5bee167f21165026dcf85c79048488ea384a9ede/docs/assets/talks/jsnation_2025_gunj_joshi.png" alt="The Future of Numerical Computing in JavaScript">
     </a>
     <br>
 </div>
