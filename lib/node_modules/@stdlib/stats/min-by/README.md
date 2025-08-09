@@ -52,7 +52,7 @@ var v = y.get();
 
 The function has the following parameters:
 
--   **x**: input [ndarray][@stdlib/ndarray/ctor]. Must have a real-valued or "generic" [data type][@stdlib/ndarray/dtypes].
+-   **x**: input [ndarray][@stdlib/ndarray/ctor].
 -   **options**: function options (_optional_).
 -   **clbk**: callback function.
 -   **thisArg**: callback function execution context (_optional_).
