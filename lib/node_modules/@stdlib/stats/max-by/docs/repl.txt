@@ -17,7 +17,7 @@
     Parameters
     ----------
     x: ndarray
-        Input array. Must have a real-valued or "generic" data type.
+        Input array.
 
     options: Object (optional)
         Function options.
@@ -72,7 +72,7 @@
     Parameters
     ----------
     x: ndarray
-        Input array. Must have a real-valued or generic data type.
+        Input array.
 
     out: ndarray
         Output array.
