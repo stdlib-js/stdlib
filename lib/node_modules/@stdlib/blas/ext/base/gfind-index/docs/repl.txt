@@ -44,20 +44,20 @@
     Examples
     --------
     // Standard Usage:
-    > function isEven( v ) { return v % 2.0 === 0.0; };
+    > function f( v ) { return v % 2.0 === 0.0; };
     > var x = [ 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ];
-    > {{alias}}( x.length, x, 1, isEven )
+    > {{alias}}( x.length, x, 1, f )
     3
 
     // Using `N` and stride parameters:
     > x = [ 1.0, 3.0, 4.0, -5.0, -1.0, -3.0 ];
-    > {{alias}}( x.length, x, 2, isEven )
+    > {{alias}}( x.length, x, 2, f )
     1
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 3.0, -4.0, 5.0, -6.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > {{alias}}( 3, x1, 1, isEven )
+    > {{alias}}( 3, x1, 1, f )
     1
 
 
@@ -96,9 +96,9 @@
 
     Examples
     --------
-    > function isEven( v ) { return v % 2.0 === 0.0; };
+    > function f( v ) { return v % 2.0 === 0.0; };
     > var x = [ 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ];
-    > {{alias}}.ndarray( x.length, x, 1, 2, isEven )
+    > {{alias}}.ndarray( x.length, x, 1, 2, f )
     1
 
     See Also
