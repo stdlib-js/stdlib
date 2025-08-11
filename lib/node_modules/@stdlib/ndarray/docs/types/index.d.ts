@@ -775,7 +775,7 @@ interface Namespace {
 	*
 	* @example
 	* var x = ns.scalar2ndarray( 1.0, {
-	*     'dtype': generic'
+	*     'dtype': 'generic'
 	* });
 	* // returns <ndarray>
 	*
