@@ -20,6 +20,7 @@
 #define STDLIB_MATH_BASE_NAPI_UNARY_H
 
 // NOTE: keep in alphabetical order...
+#include "stdlib/math/base/napi/unary/b_b.h"
 #include "stdlib/math/base/napi/unary/c_c.h"
 #include "stdlib/math/base/napi/unary/c_f.h"
 #include "stdlib/math/base/napi/unary/d_d.h"
@@ -29,6 +30,8 @@
 #include "stdlib/math/base/napi/unary/i_d.h"
 #include "stdlib/math/base/napi/unary/i_f.h"
 #include "stdlib/math/base/napi/unary/i_i.h"
+#include "stdlib/math/base/napi/unary/t_t.h"
+#include "stdlib/math/base/napi/unary/u_u.h"
 #include "stdlib/math/base/napi/unary/z_d.h"
 #include "stdlib/math/base/napi/unary/z_z.h"
 

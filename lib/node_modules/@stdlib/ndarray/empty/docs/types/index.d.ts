@@ -255,7 +255,7 @@ interface OptionsWithDType extends Options {
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': float64'
+*     'dtype': 'float64'
 * });
 * // returns <ndarray>
 *
@@ -280,7 +280,7 @@ declare function empty( shape: Shape | number, options: Float64Options ): float6
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': float32'
+*     'dtype': 'float32'
 * });
 * // returns <ndarray>
 *
@@ -355,7 +355,7 @@ declare function empty( shape: Shape | number, options: Complex64Options ): comp
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': int32'
+*     'dtype': 'int32'
 * });
 * // returns <ndarray>
 *
@@ -405,7 +405,7 @@ declare function empty( shape: Shape | number, options: Int16Options ): int16nda
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': int8'
+*     'dtype': 'int8'
 * });
 * // returns <ndarray>
 *
@@ -430,7 +430,7 @@ declare function empty( shape: Shape | number, options: Int8Options ): int8ndarr
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': uint32'
+*     'dtype': 'uint32'
 * });
 * // returns <ndarray>
 *
@@ -455,7 +455,7 @@ declare function empty( shape: Shape | number, options: Uint32Options ): uint32n
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': uint16'
+*     'dtype': 'uint16'
 * });
 * // returns <ndarray>
 *
@@ -480,7 +480,7 @@ declare function empty( shape: Shape | number, options: Uint16Options ): uint16n
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': uint8'
+*     'dtype': 'uint8'
 * });
 * // returns <ndarray>
 *
@@ -530,7 +530,7 @@ declare function empty( shape: Shape | number, options: Uint8COptions ): uint8cn
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': bool'
+*     'dtype': 'bool'
 * });
 * // returns <ndarray>
 *
@@ -555,7 +555,7 @@ declare function empty( shape: Shape | number, options: BoolOptions ): boolndarr
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': generic'
+*     'dtype': 'generic'
 * });
 * // returns <ndarray>
 *
