@@ -41,7 +41,7 @@ The [excess kurtosis][kurtosis] for a [negative binomial][negative-binomial-dist
 
 <!-- </equation> -->
 
-where `r` is the number of successes until experiment is stopped and `p` is the success probability in each trial. The random variable `X` denotes the number of failures until the `r` success is reached. 
+where `r` is the number of successes until experiment is stopped and `p` is the success probability in each trial. The random variable `X` denotes the number of failures until the `r` success is reached.
 
 </section>
 
@@ -216,7 +216,7 @@ int main( void ) {
    int i;
 
    for ( i = 0; i < 10; i++ ) {
-       r = random_uniform( 1.0, 100.0 ); 
+       r = random_uniform( 1.0, 100.0 );
        p = random_uniform( 0.01, 0.99 );
        y = stdlib_base_dists_negative_binomial_kurtosis( r, p );
        printf( "r: %f, p: %.4f, Kurt(X;r,p): %.4f\n", r, p, y );
