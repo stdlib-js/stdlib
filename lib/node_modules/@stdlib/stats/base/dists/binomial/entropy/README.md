@@ -166,7 +166,7 @@ logEachMap( 'n: %0.4f, p: %0.4f, H(X;n,p): %0.4f', n, p, entropy );
 
 #### stdlib_base_dists_binomial_entropy( n, p )
 
-Evaluates the [entropy][entropy] of a [Binomial][binomial-distribution] distribution with `n` the number of trials and `p` the success probability.
+Evaluates the [entropy][entropy] of a [binomial][binomial-distribution] distribution with `n` the number of trials and `p` the success probability.
 
 ```c
 double out = stdlib_base_dists_binomial_entropy( 20, 0.1 );

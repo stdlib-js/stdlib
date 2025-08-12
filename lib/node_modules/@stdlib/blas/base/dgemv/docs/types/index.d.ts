@@ -112,7 +112,7 @@ interface Routine {
 * var x = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 * var y = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 *
-* dgemv( 'row-major', 'no-transpose', 3, 3, 1.0, A, 3, x1, -1, 1.0, y1, -1 );
+* dgemv( 'row-major', 'no-transpose', 3, 3, 1.0, A, 3, x, -1, 1.0, y, -1 );
 * // y => <Float64Array>[ 25.0, 16.0, 7.0 ]
 *
 * @example
@@ -122,7 +122,7 @@ interface Routine {
 * var x = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 * var y = new Float64Array( [ 1.0, 1.0, 1.0 ] );
 *
-* dgemv.ndarray( 'no-transpose', 3, 3, 1.0, A, 3, 1, 0, x1, -1, 2, 1.0, y1, -1, 2 );
+* dgemv.ndarray( 'no-transpose', 3, 3, 1.0, A, 3, 1, 0, x, -1, 2, 1.0, y, -1, 2 );
 * // y => <Float64Array>[ 25.0, 16.0, 7.0 ]
 */
 declare var dgemv: Routine;
