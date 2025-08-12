@@ -20,7 +20,7 @@ limitations under the License.
 
 # sindf
 
-> Computes the [sine][trigonometric-functions] of a single-precision floating-point number (in degrees).
+> Compute the [sine][trigonometric-functions] of a single-precision floating-point number (in degrees).
 
 <section class="intro">
 

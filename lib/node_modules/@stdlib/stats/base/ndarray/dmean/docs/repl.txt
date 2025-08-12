@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Computes the arithmetic mean of a one-dimensional double-precision floating
+    -point ndarray.
+
+    If provided an empty ndarray, the function returns `NaN`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: number
+        Arithmetic mean.
+
+    Examples
+    --------
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 2.0 ] );
+    > var dt = 'float64';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > {{alias}}( [ x ] )
+    ~0.3333
+
+    See Also
+    --------
+
