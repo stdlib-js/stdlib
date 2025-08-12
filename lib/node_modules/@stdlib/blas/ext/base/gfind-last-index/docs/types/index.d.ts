@@ -139,7 +139,7 @@ interface Routine {
 	* @param strideX - stride length
 	* @param offsetX - starting index
 	* @param clbk - predicate function
-	* @param thisArg - predication function execution context
+	* @param thisArg - predicate function execution context
 	* @returns index
 	*
 	* @example
