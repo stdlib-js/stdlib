@@ -347,7 +347,7 @@ interface Namespace {
 	* Size (in bytes) of a single-precision floating-point number.
 	*
 	* @example
-	* var bytes = ns.NUM_BYTES
+	* var bytes = ns.NUM_BYTES;
 	* // returns 4
 	*/
 	NUM_BYTES: typeof NUM_BYTES;
