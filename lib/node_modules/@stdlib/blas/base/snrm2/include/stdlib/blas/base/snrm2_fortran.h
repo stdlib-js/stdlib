@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the Fortran interface to the BLAS Level 1 routine `snrm2`.
 */
-#ifndef SNRM2_FORTRAN_H
-#define SNRM2_FORTRAN_H
+#ifndef STDLIB_BLAS_BASE_SNRM2_FORTRAN_H
+#define STDLIB_BLAS_BASE_SNRM2_FORTRAN_H
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -38,4 +38,4 @@ void snrm2sub( const int *, const float *, const int *, float * );
 }
 #endif
 
-#endif // !SNRM2_FORTRAN_H
+#endif // !STDLIB_BLAS_BASE_SNRM2_FORTRAN_H

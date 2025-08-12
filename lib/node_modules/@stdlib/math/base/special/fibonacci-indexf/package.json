@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/math/base/special/fibonacci-index",
+  "name": "@stdlib/math/base/special/fibonacci-indexf",
   "version": "0.0.0",
   "description": "Compute the Fibonacci number index of a single-precision floating-point number.",
   "license": "Apache-2.0",

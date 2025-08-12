@@ -25,6 +25,7 @@
   "confs": [
     {
       "src": [
+        "./src/b_b.c",
         "./src/c_c.c",
         "./src/c_f.c",
         "./src/d_d.c",
@@ -34,6 +35,8 @@
         "./src/i_d.c",
         "./src/i_f.c",
         "./src/i_i.c",
+        "./src/t_t.c",
+        "./src/u_u.c",
         "./src/z_d.c",
         "./src/z_z.c"
       ],

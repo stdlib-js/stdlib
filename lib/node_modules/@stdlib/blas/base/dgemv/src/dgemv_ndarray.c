@@ -22,6 +22,7 @@
 #include "stdlib/blas/base/dscal.h"
 #include "stdlib/blas/ext/base/dfill.h"
 #include "stdlib/ndarray/base/assert/is_row_major.h"
+#include <stdbool.h>
 
 /**
 * Performs one of the matrix-vector operations `Y = α*A*X + β*Y` or `Y = α*A^T*X + β*Y`, using alternative indexing semantics and where `α` and `β` are scalars, `X` and `Y` are vectors, and `A` is an `M` by `N` matrix.
@@ -41,11 +42,9 @@
 * @param Y         second input vector
 * @param strideY   `Y` stride length
 * @param offsetY   starting index for `Y`
-* @return          output value
 */
 void API_SUFFIX(c_dgemv_ndarray)( const CBLAS_TRANSPOSE trans, const CBLAS_INT M, const CBLAS_INT N, const double alpha, const double *A, const CBLAS_INT strideA1, const CBLAS_INT strideA2, const CBLAS_INT offsetA, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double beta, double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
 	int64_t sa[ 2 ];
-	CBLAS_INT isrm;
 	CBLAS_INT xlen;
 	CBLAS_INT ylen;
 	CBLAS_INT da0;
@@ -56,6 +55,7 @@ void API_SUFFIX(c_dgemv_ndarray)( const CBLAS_TRANSPOSE trans, const CBLAS_INT M
 	CBLAS_INT i0;
 	CBLAS_INT i1;
 	double tmp;
+	bool isrm;
 
 	// Note on variable naming convention: da#, i# where # corresponds to the loop number, with `0` being the innermost loop...
 

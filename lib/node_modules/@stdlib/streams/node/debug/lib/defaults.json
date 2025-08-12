@@ -1,6 +1,6 @@
 {
-	"objectMode": false,
-	"allowHalfOpen": false,
-	"readableObjectMode": false,
-	"name": ""
+  "objectMode": false,
+  "allowHalfOpen": false,
+  "readableObjectMode": false,
+  "name": ""
 }

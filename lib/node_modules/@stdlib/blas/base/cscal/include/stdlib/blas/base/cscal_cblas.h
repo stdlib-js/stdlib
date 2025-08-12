@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_ccopy`.
 */
-#ifndef CSCAL_CBLAS_H
-#define CSCAL_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_CSCAL_CBLAS_H
+#define STDLIB_BLAS_BASE_CSCAL_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/complex/float32/ctor.h"
@@ -41,4 +41,4 @@ void API_SUFFIX(cblas_cscal)( const CBLAS_INT N, const stdlib_complex64_t alpha,
 }
 #endif
 
-#endif // !CSCAL_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_CSCAL_CBLAS_H
