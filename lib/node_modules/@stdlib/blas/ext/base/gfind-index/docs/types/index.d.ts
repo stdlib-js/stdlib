@@ -81,7 +81,7 @@ type Quaternary<T, U, V> = ( this: U, value: T, aidx: number, sidx: number, arra
 * @param array - input array
 * @returns boolean indicating whether an element passes a test
 */
-type Callback<T, U, V> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U> | Quaternary<T, U, V>;
+type Predicate<T, U, V> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U> | Quaternary<T, U, V>;
 
 /**
 * Interface describing `gfindIndex`.
@@ -99,11 +99,13 @@ interface Routine {
 	*     -   `sidx`: strided index (offset + aidx*stride)
 	*     -   `array`: input array
 	*
+	* -   If no element passes a test implemented by a predicate function, the function returns `-1`.
+	*
 	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - stride length
-	* @param clbk - callback function
-	* @param thisArg - execution context
+	* @param clbk - predicate function
+	* @param thisArg - predicate function execution context
 	* @returns index
 	*
 	* @example
@@ -116,7 +118,7 @@ interface Routine {
 	* var idx = gfindIndex( x.length, x, 1, isEven );
 	* // returns 3
 	*/
-	<T = unknown, U = unknown, V = unknown>( N: number, x: InputArray<V>, strideX: number, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): number;
+	<T = unknown, U = unknown, V = unknown>( N: number, x: InputArray<V>, strideX: number, clbk: Predicate<T, U, V>, thisArg?: ThisParameterType<Predicate<T, U, V>> ): number;
 
 	/**
 	* Returns the index of the first element which passes a test implemented by a predicate function using alternative indexing semantics.
@@ -130,12 +132,14 @@ interface Routine {
 	*     -   `sidx`: strided index (offset + aidx*stride)
 	*     -   `array`: input array
 	*
+	* -   If no element passes a test implemented by a predicate function, the function returns `-1`.
+	*
 	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - stride length
 	* @param offsetX - starting index
-	* @param clbk - callback function
-	* @param thisArg - execution context
+	* @param clbk - predicate function
+	* @param thisArg - predicate function execution context
 	* @returns index
 	*
 	* @example
@@ -148,7 +152,7 @@ interface Routine {
 	* var idx = gfindIndex.ndarray( x.length, x, 1, 0, isEven );
 	* // returns 3
 	*/
-	ndarray<T = unknown, U = unknown, V = unknown>( N: number, x: InputArray<V>, strideX: number, offsetX: number, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): number;
+	ndarray<T = unknown, U = unknown, V = unknown>( N: number, x: InputArray<V>, strideX: number, offsetX: number, clbk: Predicate<T, U, V>, thisArg?: ThisParameterType<Predicate<T, U, V>> ): number;
 }
 
 /**
@@ -163,11 +167,13 @@ interface Routine {
 *     -   `sidx`: strided index (offset + aidx*stride)
 *     -   `array`: input array
 *
+* -   If no element passes a test implemented by a predicate function, the function returns `-1`.
+*
 * @param N - number of indexed elements
 * @param x - input array
 * @param strideX - stride length
-* @param clbk - callback function
-* @param thisArg - execution context
+* @param clbk - predicate function
+* @param thisArg - predicate function execution context
 * @returns index
 *
 * @example
