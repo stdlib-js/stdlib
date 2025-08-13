@@ -190,7 +190,7 @@ var bool = ( v === buf[ 0 ] );
 ## Notes
 
 -   The number of elements in a data source `buffer` **must** agree with a specified array `shape` (i.e., the function assumes a single-segment contiguous [`ndarray`][@stdlib/ndarray/ctor]). To create arbitrary multidimensional views over linear data buffers, use a [lower-level constructor][@stdlib/ndarray/ctor].
--   The function supports arbitrary casting between data types. Note, however, that casting from a larger data type to a smaller data type (e.g., `int32` to `int8`) and between signed and unsigned types of the same size should be considered **unsafe**. 
+-   The function supports arbitrary casting between data types. Note, however, that casting from a larger data type to a smaller data type (e.g., `int32` to `int8`) and between signed and unsigned types of the same size should be considered **unsafe**.
 
 </section>
 

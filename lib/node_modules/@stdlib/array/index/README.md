@@ -361,7 +361,7 @@ var o = idx.toJSON();
     }
     ```
 
-    will leak memory as `idx` is only consumed within an `if` block which never evaluates. In such scenarios, one should either refactor to avoid inadvertently holding onto memory or explicitly free the `ArrayIndex`. 
+    will leak memory as `idx` is only consumed within an `if` block which never evaluates. In such scenarios, one should either refactor to avoid inadvertently holding onto memory or explicitly free the `ArrayIndex`.
 
     ```javascript
     var Uint8Array = require( '@stdlib/array/uint8' );
