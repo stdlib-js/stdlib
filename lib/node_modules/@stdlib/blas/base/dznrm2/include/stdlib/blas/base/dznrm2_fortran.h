@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the Fortran interface to the BLAS Level 1 routine `dznrm2`.
 */
-#ifndef DZNRM2_FORTRAN_H
-#define DZNRM2_FORTRAN_H
+#ifndef STDLIB_BLAS_BASE_DZNRM2_FORTRAN_H
+#define STDLIB_BLAS_BASE_DZNRM2_FORTRAN_H
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C/Fortran compiler (a Fortran compiler must be configured to not attach underscores).
@@ -38,4 +38,4 @@ void dznrm2sub( const int *, const void *, const int *, double * );
 }
 #endif
 
-#endif // !DZNRM2_FORTRAN_H
+#endif // !STDLIB_BLAS_BASE_DZNRM2_FORTRAN_H

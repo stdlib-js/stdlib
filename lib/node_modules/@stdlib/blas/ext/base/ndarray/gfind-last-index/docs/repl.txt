@@ -1,0 +1,45 @@
+
+{{alias}}( arrays, clbk[, thisArg] )
+    Returns the index of the last element in a one-dimensional ndarray which
+    passes a test implemented by a predicate function.
+
+    If provided an empty ndarray or no element passes a test implemented by a
+    predicate function, the function returns `-1`.
+
+    The callback function is provided three arguments:
+
+    - value: current array element.
+    - index: current array index.
+    - array: the input ndarray.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: integer
+        Index.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, -2.0, 2.0 ];
+    > var dt = 'generic';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > function f ( v ) { return v % 2.0 === 0.0; };
+    > {{alias}}( [ x ], f )
+    2
+
+    See Also
+    --------

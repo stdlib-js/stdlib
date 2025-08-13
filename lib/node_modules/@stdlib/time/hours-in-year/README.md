@@ -60,7 +60,7 @@ num = hoursInYear( 2017 );
 
 ## Notes
 
--   The function's return value is a generalization and does **not** take into account inaccuracies due to daylight savings conventions, crossing timezones, or other complications with time and dates. 
+-   The function's return value is a generalization and does **not** take into account inaccuracies due to daylight savings conventions, crossing timezones, or other complications with time and dates.
 
 </section>
 

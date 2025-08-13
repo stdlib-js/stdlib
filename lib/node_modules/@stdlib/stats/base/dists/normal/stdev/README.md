@@ -137,7 +137,7 @@ Evaluates the standard deviation for a normal distribution with mean `mu` and st
 
 ```c
 double out = stdlib_base_dists_normal_stdev( 0.0, 1.0 );
-// returns ~1.4189
+// returns 1.0
 ```
 
 The function accepts the following arguments:

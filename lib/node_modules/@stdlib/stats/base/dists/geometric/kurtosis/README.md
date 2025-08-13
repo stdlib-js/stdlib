@@ -154,7 +154,7 @@ Returns the [excess kurtosis][kurtosis] of a [geometric][geometric-distribution]
 
 ```c
 double out = stdlib_base_dists_geometric_kurtosis( 0.5 );
-// returns 6.0
+// returns 6.5
 ```
 
 The function accepts the following arguments:

@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/math/base/special/cabs2f.h"
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
 
 /**
 * Computes the squared absolute value of a single-precision complex floating-point number.
@@ -26,11 +27,16 @@
 * @return        result
 *
 * @example
-* float y = stdlib_base_cabs2f( 5.0+3.0*I );
+* #include "stdlib/complex/float32/ctor.h"
+*
+* stdlib_complex64_t z = stdlib_complex64( 5.0f, 3.0f );
+*
+* float y = stdlib_base_cabs2f( z );
 * // returns 34.0f
 */
-float stdlib_base_cabs2f( const float complex z ) {
-	float re = crealf( z );
-	float im = cimagf( z );
-	return (re*re) + (im*im);
+float stdlib_base_cabs2f( const stdlib_complex64_t z ) {
+	float re;
+	float im;
+	stdlib_complex64_reim( z, &re, &im );
+	return ( re*re ) + ( im*im );
 }

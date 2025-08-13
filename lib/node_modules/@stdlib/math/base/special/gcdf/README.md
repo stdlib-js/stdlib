@@ -96,15 +96,16 @@ v = gcdf( 48, NaN );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var gcdf = require( '@stdlib/math/base/special/gcdf' );
 
-var a = discreteUniform( 100, 0, 50 );
-var b = discreteUniform( a.length, 0, 50 );
+var opts = {
+    'dtype': 'float32'
+};
+var a = discreteUniform( 100, 0, 50, opts );
+var b = discreteUniform( a.length, 0, 50, opts );
 
-var i;
-for ( i = 0; i < a.length; i++ ) {
-    console.log( 'gcdf(%d,%d) = %d', a[ i ], b[ i ], gcdf( a[ i ], b[ i ] ) );
-}
+logEachMap( 'gcdf(%d,%d) = %d', a, b, gcdf );
 ```
 
 </section>
