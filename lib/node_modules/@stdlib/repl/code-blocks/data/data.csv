@@ -230,6 +230,8 @@ base.cceilf,"var v = base.cceilf( new Complex64( -1.5, 2.5 ) )\nvar re = realf( 
 base.cceiln,"var out = base.cceiln( new Complex128( 5.555, -3.333 ), -2 )\nvar re = real( out )\nvar im = imag( out )\n"
 base.ccis,"var y = base.ccis( new Complex128( 0.0, 0.0 ) )\nvar re = real( y )\nvar im = imag( y )\ny = base.ccis( new Complex128( 1.0, 0.0 ) )\nre = real( y )\nim = imag( y )\n"
 base.cdiv,"var z1 = new Complex128( -13.0, -1.0 )\nvar z2 = new Complex128( -2.0, 1.0 )\nvar y = base.cdiv( z1, z2 )\nvar re = real( y )\nvar im = imag( y )\n"
+base.cdiv.assign,"var out = new Float64Array( 2 );\nbase.cdiv.assign( -13.0, -1.0, -2.0, 1.0, out, 1, 0 )\n"
+base.cdiv.strided,"var z1 = new Float64Array( [ -13.0, -1.0 ] );\nvar z2 = new Float64Array( [ -2.0, 1.0 ] );\nvar out = new Float64Array( 2 );\nbase.cdiv.strided( z1, 1, 0, z2, 1, 0, out, 1, 0 )\n"
 base.ceil,"var y = base.ceil( 3.14 )\ny = base.ceil( -4.2 )\ny = base.ceil( -4.6 )\ny = base.ceil( 9.5 )\ny = base.ceil( -0.0 )\n"
 base.ceil2,"var y = base.ceil2( 3.14 )\ny = base.ceil2( -4.2 )\ny = base.ceil2( -4.6 )\ny = base.ceil2( 9.5 )\ny = base.ceil2( 13.0 )\ny = base.ceil2( -13.0 )\ny = base.ceil2( -0.0 )\n"
 base.ceil10,"var y = base.ceil10( 3.14 )\ny = base.ceil10( -4.2 )\ny = base.ceil10( -4.6 )\ny = base.ceil10( 9.5 )\ny = base.ceil10( 13.0 )\ny = base.ceil10( -13.0 )\ny = base.ceil10( -0.0 )\n"

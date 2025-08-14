@@ -230,6 +230,8 @@ base.cceilf,"\nbase.cceilf( z:Complex64 )\n    Rounds each component of a single
 base.cceiln,"\nbase.cceiln( z:Complex128, n:integer )\n    Rounds each component of a double-precision complex number to the nearest\n    multiple of `10^n` toward positive infinity.\n"
 base.ccis,"\nbase.ccis( z:Complex128 )\n    Evaluates the cis function for a double-precision complex floating-point\n    number.\n"
 base.cdiv,"\nbase.cdiv( z1:Complex128, z2:Complex128 )\n    Divides two double-precision complex floating-point numbers.\n"
+base.cdiv.assign,"\nbase.cdiv.assign( re1:number, im1:number, re2:number, im2:number, \n  out:ArrayLikeObject, strideOut:integer, offsetOut:integer )\n    Divides two double-precision complex floating-point numbers and assigns\n    results to a provided output array.\n"
+base.cdiv.strided,"\nbase.cdiv.strided( z1:ArrayLikeObject, sz1:integer, oz1:integer, \n  z2:ArrayLikeObject, sz2:integer, oz2:integer, out:ArrayLikeObject, \n  so:integer, oo:integer )\n    Divides two double-precision complex floating-point numbers stored in real-\n    valued strided array views and assigns results to a provided strided output\n    array.\n"
 base.ceil,"\nbase.ceil( x:number )\n    Rounds a double-precision floating-point number toward positive infinity.\n"
 base.ceil2,"\nbase.ceil2( x:number )\n    Rounds a numeric value to the nearest power of two toward positive infinity.\n"
 base.ceil10,"\nbase.ceil10( x:number )\n    Rounds a numeric value to the nearest power of ten toward positive infinity.\n"
