@@ -18,7 +18,7 @@
 
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
-import httpServer = require( './index' );
+import httpServerFactory = require( './index' );
 
 /**
 * Request callback.
@@ -51,99 +51,99 @@ function done( error: Error | null, server: any ) {
 
 // The function returns a function to create a server...
 {
-	httpServer(); // $ExpectType createServer
-	httpServer( requestListener ); // $ExpectType createServer
-	httpServer( { 'port': 80 }, requestListener ); // $ExpectType createServer
+	httpServerFactory(); // $ExpectType httpServer
+	httpServerFactory( requestListener ); // $ExpectType httpServer
+	httpServerFactory( { 'port': 80 }, requestListener ); // $ExpectType httpServer
 
-	const createServer = httpServer(); // $ExpectType createServer
-	createServer( done ); // $ExpectType void
+	const httpServer = httpServerFactory(); // $ExpectType httpServer
+	httpServer( done ); // $ExpectType void
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an options object or callback function...
 {
-	httpServer( 'abc' ); // $ExpectError
-	httpServer( true ); // $ExpectError
-	httpServer( false ); // $ExpectError
-	httpServer( 5 ); // $ExpectError
-	httpServer( [] ); // $ExpectError
+	httpServerFactory( 'abc' ); // $ExpectError
+	httpServerFactory( true ); // $ExpectError
+	httpServerFactory( false ); // $ExpectError
+	httpServerFactory( 5 ); // $ExpectError
+	httpServerFactory( [] ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a callback function...
 {
-	httpServer( {}, false ); // $ExpectError
-	httpServer( {}, true ); // $ExpectError
-	httpServer( {}, 123 ); // $ExpectError
-	httpServer( {}, null ); // $ExpectError
-	httpServer( {}, 'abc' ); // $ExpectError
-	httpServer( {}, [] ); // $ExpectError
-	httpServer( {}, {} ); // $ExpectError
+	httpServerFactory( {}, false ); // $ExpectError
+	httpServerFactory( {}, true ); // $ExpectError
+	httpServerFactory( {}, 123 ); // $ExpectError
+	httpServerFactory( {}, null ); // $ExpectError
+	httpServerFactory( {}, 'abc' ); // $ExpectError
+	httpServerFactory( {}, [] ); // $ExpectError
+	httpServerFactory( {}, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a `port` option which is not a number...
 {
-	httpServer( { 'port': 'abc' }, requestListener ); // $ExpectError
-	httpServer( { 'port': true }, requestListener ); // $ExpectError
-	httpServer( { 'port': false }, requestListener ); // $ExpectError
-	httpServer( { 'port': null }, requestListener ); // $ExpectError
-	httpServer( { 'port': [] }, requestListener ); // $ExpectError
-	httpServer( { 'port': {} }, requestListener ); // $ExpectError
-	httpServer( { 'port': ( x: number ): number => x }, requestListener ); // $ExpectError
+	httpServerFactory( { 'port': 'abc' }, requestListener ); // $ExpectError
+	httpServerFactory( { 'port': true }, requestListener ); // $ExpectError
+	httpServerFactory( { 'port': false }, requestListener ); // $ExpectError
+	httpServerFactory( { 'port': null }, requestListener ); // $ExpectError
+	httpServerFactory( { 'port': [] }, requestListener ); // $ExpectError
+	httpServerFactory( { 'port': {} }, requestListener ); // $ExpectError
+	httpServerFactory( { 'port': ( x: number ): number => x }, requestListener ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a `maxPort` option which is not a number...
 {
-	httpServer( { 'maxPort': 'abc' }, requestListener ); // $ExpectError
-	httpServer( { 'maxPort': true }, requestListener ); // $ExpectError
-	httpServer( { 'maxPort': false }, requestListener ); // $ExpectError
-	httpServer( { 'maxPort': null }, requestListener ); // $ExpectError
-	httpServer( { 'maxPort': [] }, requestListener ); // $ExpectError
-	httpServer( { 'maxPort': {} }, requestListener ); // $ExpectError
-	httpServer( { 'maxPort': ( x: number ): number => x }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxPort': 'abc' }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxPort': true }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxPort': false }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxPort': null }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxPort': [] }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxPort': {} }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxPort': ( x: number ): number => x }, requestListener ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a `hostname` option which is not a string...
 {
-	httpServer( { 'hostname': 123 }, requestListener ); // $ExpectError
-	httpServer( { 'hostname': true }, requestListener ); // $ExpectError
-	httpServer( { 'hostname': false }, requestListener ); // $ExpectError
-	httpServer( { 'hostname': null }, requestListener ); // $ExpectError
-	httpServer( { 'hostname': [] }, requestListener ); // $ExpectError
-	httpServer( { 'hostname': {} }, requestListener ); // $ExpectError
-	httpServer( { 'hostname': ( x: number ): number => x }, requestListener ); // $ExpectError
+	httpServerFactory( { 'hostname': 123 }, requestListener ); // $ExpectError
+	httpServerFactory( { 'hostname': true }, requestListener ); // $ExpectError
+	httpServerFactory( { 'hostname': false }, requestListener ); // $ExpectError
+	httpServerFactory( { 'hostname': null }, requestListener ); // $ExpectError
+	httpServerFactory( { 'hostname': [] }, requestListener ); // $ExpectError
+	httpServerFactory( { 'hostname': {} }, requestListener ); // $ExpectError
+	httpServerFactory( { 'hostname': ( x: number ): number => x }, requestListener ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an `address` option which is not a string...
 {
-	httpServer( { 'address': 123 }, requestListener ); // $ExpectError
-	httpServer( { 'address': true }, requestListener ); // $ExpectError
-	httpServer( { 'address': false }, requestListener ); // $ExpectError
-	httpServer( { 'address': null }, requestListener ); // $ExpectError
-	httpServer( { 'address': [] }, requestListener ); // $ExpectError
-	httpServer( { 'address': {} }, requestListener ); // $ExpectError
-	httpServer( { 'address': ( x: number ): number => x }, requestListener ); // $ExpectError
+	httpServerFactory( { 'address': 123 }, requestListener ); // $ExpectError
+	httpServerFactory( { 'address': true }, requestListener ); // $ExpectError
+	httpServerFactory( { 'address': false }, requestListener ); // $ExpectError
+	httpServerFactory( { 'address': null }, requestListener ); // $ExpectError
+	httpServerFactory( { 'address': [] }, requestListener ); // $ExpectError
+	httpServerFactory( { 'address': {} }, requestListener ); // $ExpectError
+	httpServerFactory( { 'address': ( x: number ): number => x }, requestListener ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an invalid number of arguments...
 {
-	httpServer( {}, requestListener, {} ); // $ExpectError
+	httpServerFactory( {}, requestListener, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is invoked with an argument that is not a callback function...
 {
-	const createServer = httpServer();
-	createServer( 'abc' ); // $ExpectError
-	createServer( 123 ); // $ExpectError
-	createServer( true ); // $ExpectError
-	createServer( false ); // $ExpectError
-	createServer( null ); // $ExpectError
-	createServer( [] ); // $ExpectError
-	createServer( {} ); // $ExpectError
-	createServer( ( x: number ): number => x ); // $ExpectError
+	const httpServer = httpServerFactory();
+	httpServer( 'abc' ); // $ExpectError
+	httpServer( 123 ); // $ExpectError
+	httpServer( true ); // $ExpectError
+	httpServer( false ); // $ExpectError
+	httpServer( null ); // $ExpectError
+	httpServer( [] ); // $ExpectError
+	httpServer( {} ); // $ExpectError
+	httpServer( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is invoked with an invalid number of arguments...
 {
-	const createServer = httpServer();
-	createServer(); // $ExpectError
-	createServer( done, {} ); // $ExpectError
+	const httpServer = httpServerFactory();
+	httpServer(); // $ExpectError
+	httpServer( done, {} ); // $ExpectError
 }
