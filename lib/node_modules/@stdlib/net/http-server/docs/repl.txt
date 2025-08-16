@@ -37,7 +37,7 @@
     Examples
     --------
     // Basic usage:
-    > var httpServer = {{alias}}()
+    > var boot = {{alias}}()
     <Function>
 
     // Provide a request callback:
@@ -45,16 +45,16 @@
     ...    console.log( request.url );
     ...    response.end( 'OK' );
     ... };
-    > httpServer = {{alias}}( onRequest )
+    > boot = {{alias}}( onRequest )
     <Function>
 
     // Specify a specific port:
     > var opts = { 'port': 7331 };
-    > httpServer = {{alias}}( opts )
+    > boot = {{alias}}( opts )
     <Function>
 
 
-httpServer( done )
+boot( done )
     Creates an HTTP server.
 
     Parameters
@@ -71,8 +71,8 @@ httpServer( done )
     ...    console.log( 'Success!' );
     ...    server.close();
     ... };
-    > var httpServer = {{alias}}();
-    > httpServer( done );
+    > var boot = {{alias}}();
+    > boot( done );
 
     See Also
     --------

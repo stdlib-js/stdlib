@@ -90,15 +90,15 @@ function done( error: Error | null, server: any ) {
 	httpServerFactory( { 'port': ( x: number ): number => x }, requestListener ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a `maxPort` option which is not a number...
+// The compiler throws an error if the function is provided a `maxport` option which is not a number...
 {
-	httpServerFactory( { 'maxPort': 'abc' }, requestListener ); // $ExpectError
-	httpServerFactory( { 'maxPort': true }, requestListener ); // $ExpectError
-	httpServerFactory( { 'maxPort': false }, requestListener ); // $ExpectError
-	httpServerFactory( { 'maxPort': null }, requestListener ); // $ExpectError
-	httpServerFactory( { 'maxPort': [] }, requestListener ); // $ExpectError
-	httpServerFactory( { 'maxPort': {} }, requestListener ); // $ExpectError
-	httpServerFactory( { 'maxPort': ( x: number ): number => x }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxport': 'abc' }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxport': true }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxport': false }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxport': null }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxport': [] }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxport': {} }, requestListener ); // $ExpectError
+	httpServerFactory( { 'maxport': ( x: number ): number => x }, requestListener ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a `hostname` option which is not a string...
