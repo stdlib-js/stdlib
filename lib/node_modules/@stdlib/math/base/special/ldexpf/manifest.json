@@ -36,10 +36,14 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/math/base/napi/binary",
         "@stdlib/number/float32/base/from-word",
         "@stdlib/number/float32/base/to-word",
         "@stdlib/math/base/special/copysignf",
-        "@stdlib/constants/float32/pinf"
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/precision",
+        "@stdlib/constants/float32/abs-mask"
       ]
     },
     {
@@ -58,7 +62,10 @@
         "@stdlib/number/float32/base/from-word",
         "@stdlib/number/float32/base/to-word",
         "@stdlib/math/base/special/copysignf",
-        "@stdlib/constants/float32/pinf"
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/precision",
+        "@stdlib/constants/float32/abs-mask"
       ]
     },
     {
@@ -75,7 +82,10 @@
         "@stdlib/number/float32/base/from-word",
         "@stdlib/number/float32/base/to-word",
         "@stdlib/math/base/special/copysignf",
-        "@stdlib/constants/float32/pinf"
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/precision",
+        "@stdlib/constants/float32/abs-mask"
       ]
     }
   ]

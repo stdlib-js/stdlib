@@ -38,7 +38,7 @@ interface Options {
 *
 * @returns group key
 */
-type Nullary = () => string | symbol;
+type Nullary<K extends string | symbol> = () => K;
 
 /**
 * Specifies which group a property belongs to.
@@ -46,16 +46,7 @@ type Nullary = () => string | symbol;
 * @param value - object value
 * @returns group key
 */
-type Unary = ( value: any ) => string | symbol;
-
-/**
-* Specifies which group a property belongs to.
-*
-* @param value - object value
-* @param key - object key
-* @returns group key
-*/
-type Binary = ( value: any, key: string | symbol ) => string | symbol;
+type Unary<V, K extends string | symbol> = ( value: V ) => K;
 
 /**
 * Specifies which group a property belongs to.
@@ -64,7 +55,16 @@ type Binary = ( value: any, key: string | symbol ) => string | symbol;
 * @param key - object key
 * @returns group key
 */
-type Indicator = Nullary | Unary | Binary;
+type Binary<V, K extends string | symbol> = ( value: V, key: string ) => K;
+
+/**
+* Specifies which group a property belongs to.
+*
+* @param value - object value
+* @param key - object key
+* @returns group key
+*/
+type Indicator<V, K extends string | symbol> = Nullary<K> | Unary<V, K> | Binary<V, K>;
 
 /**
 * Groups an object's own property values according to an indicator function.
@@ -93,15 +93,18 @@ type Indicator = Nullary | Unary | Binary;
 *     return v[ 0 ];
 * }
 * var obj = {
-*     'a': 'beep',
-*     'b': 'boop',
-*     'c': 'foo',
-*     'd': 'bar'
+*     'a': 'apple',
+*     'b': 'banana',
+*     'c': 'cherry',
+*     'd': 'date'
 * };
 * var out = groupOwn( obj, indicator );
-* // e.g., returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
+* // e.g., returns { 'a': [ 'apple' ], 'b': [ 'banana' ], 'c': [ 'cherry' ], 'd': [ 'date' ] }
 */
-declare function groupOwn( obj: any, indicator: Indicator ): any;
+declare function groupOwn<T extends object, K extends string | symbol>(
+	obj: T,
+	indicator: Indicator<T[keyof T], K>
+): { [P in K]: Array<T[keyof T]> };
 
 /**
 * Groups an object's own property values according to an indicator function.
@@ -124,7 +127,7 @@ declare function groupOwn( obj: any, indicator: Indicator ): any;
 * @param obj - input object
 * @param options - function options
 * @param options.thisArg - execution context
-* @param options.returns - if `values`, values are returned; if `keys`, keys are returned; if `*`, both keys and values are returned (default: 'values')
+* @param options.returns - if `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned (default: 'values')
 * @param indicator - indicator function indicating which group an element in the input object belongs to
 * @returns group results
 *
@@ -133,47 +136,116 @@ declare function groupOwn( obj: any, indicator: Indicator ): any;
 *     return v[ 0 ];
 * }
 * var obj = {
-*     'a': 'beep',
-*     'b': 'boop',
-*     'c': 'foo',
-*     'd': 'bar'
-* };
-* var out = groupOwn( obj, indicator );
-* // e.g., returns { 'b': [ 'beep', 'boop', 'bar' ], 'f': [ 'foo' ] }
-*
-* @example
-* function indicator( v ) {
-*     return v[ 0 ];
-* }
-* var obj = {
-*     'a': 'beep',
-*     'b': 'boop',
-*     'c': 'foo',
-*     'd': 'bar'
+*     'a': 'apple',
+*     'b': 'banana',
+*     'c': 'cherry',
+*     'd': 'date'
 * };
 * var opts = {
-*     'returns': 'keys'
+*     'returns': 'indices'
 * };
 * var out = groupOwn( obj, opts, indicator );
-* // e.g., returns { 'b': [ 'a', 'b', 'd' ], 'f': [ 'c' ] }
+* // e.g., returns { 'a': [ 'a' ], 'b': [ 'b' ], 'c': [ 'c' ], 'd': [ 'd' ] }
+*/
+declare function groupOwn<T extends object, K extends string | symbol>(
+	obj: T,
+	options: Options & { returns: 'indices' },
+	indicator: Indicator<T[keyof T], K>
+): { [P in K]: Array<keyof T> };
+
+/**
+* Groups an object's own property values according to an indicator function.
+*
+* ## Notes
+*
+* -   When invoked, the indicator function is provided two arguments:
+*
+*     -   `value`: object value
+*     -   `key`: object key
+*
+* -   The value returned by an indicator function should be a value which can be serialized as an object key.
+*
+* -   If provided an empty object, the function returns an empty object.
+*
+* -   The function iterates over an object's own properties.
+*
+* -   Key iteration order is **not** guaranteed, and, thus, result order is **not** guaranteed.
+*
+* @param obj - input object
+* @param options - function options
+* @param options.thisArg - execution context
+* @param options.returns - if `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned (default: 'values')
+* @param indicator - indicator function indicating which group an element in the input object belongs to
+* @returns group results
 *
 * @example
 * function indicator( v ) {
 *     return v[ 0 ];
 * }
 * var obj = {
-*     'a': 'beep',
-*     'b': 'boop',
-*     'c': 'foo',
-*     'd': 'bar'
+*     'a': 'apple',
+*     'b': 'banana',
+*     'c': 'cherry',
+*     'd': 'date'
 * };
 * var opts = {
 *     'returns': '*'
 * };
 * var out = groupOwn( obj, opts, indicator );
-* // e.g., returns { 'b': [ [ 'a', 'beep' ], [ 'b', 'boop' ], [ 'd', 'bar' ] ], 'f': [ [ 'c', 'foo' ] ] }
+* // e.g., returns { 'a': [ [ 'a', 'apple' ] ], 'b': [ [ 'b', 'banana' ] ], 'c': [ [ 'c', 'cherry' ] ], 'd': [ [ 'd', 'date' ] ] }
 */
-declare function groupOwn( obj: any, options: Options, indicator: Indicator ): any;
+declare function groupOwn<T extends object, K extends string | symbol>(
+	obj: T,
+	options: Options & { returns: '*' },
+	indicator: Indicator<T[keyof T], K>
+): { [P in K]: Array<[keyof T, T[keyof T]]> };
+
+/**
+* Groups an object's own property values according to an indicator function.
+*
+* ## Notes
+*
+* -   When invoked, the indicator function is provided two arguments:
+*
+*     -   `value`: object value
+*     -   `key`: object key
+*
+* -   The value returned by an indicator function should be a value which can be serialized as an object key.
+*
+* -   If provided an empty object, the function returns an empty object.
+*
+* -   The function iterates over an object's own properties.
+*
+* -   Key iteration order is **not** guaranteed, and, thus, result order is **not** guaranteed.
+*
+* @param obj - input object
+* @param options - function options
+* @param options.thisArg - execution context
+* @param options.returns - if `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned (default: 'values')
+* @param indicator - indicator function indicating which group an element in the input object belongs to
+* @returns group results
+*
+* @example
+* function indicator( v ) {
+*     return v[ 0 ];
+* }
+* var obj = {
+*     'a': 'apple',
+*     'b': 'banana',
+*     'c': 'cherry',
+*     'd': 'date'
+* };
+* var opts = {
+*     'returns': 'values'
+* };
+* var out = groupOwn( obj, opts, indicator );
+* // e.g., returns { 'a': [ 'apple' ], 'b': [ 'banana' ], 'c': [ 'cherry' ], 'd': [ 'date' ] }
+*/
+declare function groupOwn<T extends object, K extends string | symbol>(
+	obj: T,
+	options: Options & { returns?: 'values' },
+	indicator: Indicator<T[keyof T], K>
+): { [P in K]: Array<T[keyof T]> };
 
 
 // EXPORTS //

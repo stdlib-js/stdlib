@@ -104,7 +104,7 @@ declare class Degenerate {
 	*/
 	logpdf( x: number ): number;
 
-		/**
+	/**
 	* Evaluates the natural logarithm of the probability mass function (PMF).
 	*
 	* @param x - input value
@@ -120,7 +120,7 @@ declare class Degenerate {
 	 */
 	mgf( t: number ): number;
 
-		/**
+	/**
 	* Evaluates the probability density function (PDF).
 	*
 	* @param x - input value

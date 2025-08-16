@@ -18,11 +18,17 @@
 
 import readJSON = require( './index' );
 
-const onLoad = ( error: Error | null, file: string | Buffer ) => {
-	if ( error || !file ) {
+/**
+* Callback function.
+*
+* @param error - error object
+* @param data - results
+*/
+function onLoad( error: Error | null, data?: Array<string> | Buffer ): void {
+	if ( error || !data ) {
 		throw error;
 	}
-};
+}
 
 
 // TESTS //
@@ -105,9 +111,9 @@ const onLoad = ( error: Error | null, file: string | Buffer ) => {
 	readJSON( 'C:\\foo\\bar\\baz\\package.json' ); // $ExpectError
 }
 
-// Attached to main export is a `sync` method which returns a string or an error...
+// Attached to main export is a `sync` method which returns results or an error...
 {
-	readJSON.sync( 'package.json' ); // $ExpectType string | Error
+	readJSON.sync<Array<string>>( 'package.json' ); // $ExpectType Error | string[]
 }
 
 // The compiler throws an error if the `sync` method is provided a first argument which is not a string, buffer, or file descriptor...

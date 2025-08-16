@@ -24,12 +24,12 @@ import dswap = require( './index' );
 
 // The function returns an ndarray...
 {
-	dswap( zeros( [ 10 ] ), zeros( [ 10 ] ) ); // $ExpectType float64ndarray
+	dswap( zeros( [ 10 ], { 'dtype': 'float64' } ), zeros( [ 10 ], { 'dtype': 'float64' } ) ); // $ExpectType float64ndarray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...
 {
-	const y = zeros( [ 10 ] );
+	const y = zeros( [ 10 ], { 'dtype': 'float64' } );
 
 	dswap( 10, y ); // $ExpectError
 	dswap( '10', y ); // $ExpectError
@@ -54,7 +54,7 @@ import dswap = require( './index' );
 
 // The compiler throws an error if the function is provided a second argument which is not an ndarray...
 {
-	const x = zeros( [ 10 ] );
+	const x = zeros( [ 10 ], { 'dtype': 'float64' } );
 
 	dswap( x, 10 ); // $ExpectError
 	dswap( x, '10' ); // $ExpectError
@@ -79,8 +79,8 @@ import dswap = require( './index' );
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
 {
-	const x = zeros( [ 10 ] );
-	const y = zeros( [ 10 ] );
+	const x = zeros( [ 10 ], { 'dtype': 'float64' } );
+	const y = zeros( [ 10 ], { 'dtype': 'float64' } );
 
 	dswap( x, y, '10' ); // $ExpectError
 	dswap( x, y, true ); // $ExpectError
@@ -93,8 +93,8 @@ import dswap = require( './index' );
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	const x = zeros( [ 10 ] );
-	const y = zeros( [ 10 ] );
+	const x = zeros( [ 10 ], { 'dtype': 'float64' } );
+	const y = zeros( [ 10 ], { 'dtype': 'float64' } );
 
 	dswap(); // $ExpectError
 	dswap( x ); // $ExpectError

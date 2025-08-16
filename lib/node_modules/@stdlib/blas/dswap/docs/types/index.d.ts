@@ -33,7 +33,7 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 *
 * @param x - first input array
 * @param y - second input array
-* @param dim - dimension for which to compute the dot product (default: -1)
+* @param dim - dimension along which to interchange vectors (default: -1)
 * @throws first argument must be a non-zero-dimensional ndarray containing double-precision floating-point numbers
 * @throws second argument must be a non-zero-dimensional ndarray containing double-precision floating-point numbers
 * @throws input arrays must have the same shape

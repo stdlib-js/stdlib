@@ -1,7 +1,7 @@
 
-{{alias}}( x, mask, fcn[, thisArg] )
-    Applies a mask to a provided input array and returns a new array after
-    applying a mapping function.
+{{alias}}( x, mask, clbk[, thisArg] )
+    Returns a new array after applying a mask and a callback function to a
+    provided input array.
 
     If a mask array element is truthy, the corresponding element in `x` is
     included in the output array; otherwise, the corresponding element in `x`
@@ -15,11 +15,11 @@
     mask: ArrayLikeObject
         Mask array.
 
-    fcn: Function
+    clbk: Function
         Function to apply.
 
     thisArg: any (optional)
-        Function execution context.
+        Callback execution context.
 
     Returns
     -------
@@ -33,8 +33,8 @@
     [ 2, 4 ]
 
 
-{{alias}}.assign( x, mask, out, stride, offset, fcn[, thisArg] )
-    Applies a mask and mapping function to a provided input array and assigns
+{{alias}}.assign( x, mask, out, stride, offset, clbk[, thisArg] )
+    Applies a mask and a callback function to a provided input array and assigns
     results to elements in a provided output array.
 
     If a mask array element is truthy, the corresponding element in `x` is
@@ -58,11 +58,11 @@
     offset: integer
         Output array offset.
 
-    fcn: Function
+    clbk: Function
         Function to apply.
 
     thisArg: any (optional)
-        Function execution context.
+        Callback execution context.
 
     Returns
     -------

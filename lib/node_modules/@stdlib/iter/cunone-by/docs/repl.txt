@@ -8,8 +8,8 @@
 
     The predicate function is provided two arguments:
 
-    - value: iterated value
-    - index: iteration index
+    - value: iterated value.
+    - index: iteration index.
 
     A predicate function is invoked for each iterated value until the first
     truthy predicate function return value. Upon encountering the first truthy

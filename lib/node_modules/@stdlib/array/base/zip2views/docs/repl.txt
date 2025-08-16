@@ -1,0 +1,41 @@
+
+{{alias}}( arrays, labels )
+    Zips one or more arrays to an array of composite views.
+
+    The function assumes that the list of arrays to be zipped all have the same
+    length.
+
+    The number of provided array labels should equal the number of arrays to be
+    zipped.
+
+    Each view in the returned array shares the same memory as the corresponding
+    elements in the input arrays. Accordingly, mutation of either an input array
+    or a view will mutate the other.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ArrayLikeObject>
+        List of arrays to zip.
+
+    labels: ArrayLikeObject
+        List of array labels.
+
+    Returns
+    -------
+    out: Array<Object>
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 2 ];
+    > var y = [ 3, 4 ];
+    > var labels = [ 'x', 'y' ];
+    > var out = {{alias}}( [ x, y ], labels );
+    > var v = out[ 0 ].toJSON()
+    { 'x': 1, 'y': 3 }
+    > v = out[ 1 ].toJSON()
+    { 'x': 2, 'y': 4 }
+
+    See Also
+    --------
+

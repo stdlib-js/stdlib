@@ -22,6 +22,6 @@
 /**
 * Macro for the mask for the significand of a single-precision floating-point number.
 */
-#define STDLIB_CONSTANT_FLOAT_SIGNIFICAND_MASK 0x007fffff
+#define STDLIB_CONSTANT_FLOAT32_SIGNIFICAND_MASK 0x007fffff
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_SIGNIFICAND_MASK_H

@@ -17,27 +17,25 @@
 */
 
 #include "stdlib/blas/ext/base/scusumors.h"
-#include <stdint.h>
 #include <stdio.h>
-#include <inttypes.h>
 
 int main( void ) {
 	// Create strided arrays:
-	const float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
-	float y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+	const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
+	float y[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
 
 	// Specify the number of elements:
-	const int64_t N = 4;
+	const int N = 4;
 
 	// Specify stride lengths:
-	const int64_t strideX = 2;
-	const int64_t strideY = -2;
+	const int strideX = 2;
+	const int strideY = -2;
 
 	// Compute the cumulative sum:
 	stdlib_strided_scusumors( N, 0.0f, x, strideX, y, strideY );
 
 	// Print the result:
-	for ( int64_t i = 0; i < 8; i++ ) {
-		printf( "y[ %"PRId64" ] = %f\n", i, y[ i ] );
+	for ( int i = 0; i < 8; i++ ) {
+		printf( "y[ %d ] = %f\n", i, y[ i ] );
 	}
 }

@@ -1,14 +1,27 @@
 
-{{alias}}( x, y )
+{{alias}}( x, y[, dim] )
     Interchanges two single-precision floating-point vectors.
+
+    For multi-dimensional input arrays, the function performs batched
+    computation, such that the function interchanges each pair of vectors in `x`
+    and `y` according to the specified dimension index.
+
+    Both input arrays must have the same shape.
 
     Parameters
     ----------
     x: ndarray
-        First input array whose underlying data type is 'float32'.
+        First input array. Must have a 'float32' data type. Must have at least
+        one dimension and must have the same shape as the second input array.
 
     y: ndarray
-        Second input array whose underlying data type is 'float32'.
+        Second input array. Must have a 'float32' data type. Must have at least
+        one dimension and must have the same shape as the first input array.
+
+    dim: integer (optional)
+        Dimension index along which to interchange vectors. Must be a negative
+        integer. Negative indices are resolved relative to the last array
+        dimension, with the last dimension corresponding to `-1`. Default: -1.
 
     Returns
     -------

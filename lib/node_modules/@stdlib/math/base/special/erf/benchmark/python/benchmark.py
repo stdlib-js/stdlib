@@ -73,7 +73,7 @@ def print_results(elapsed):
 def benchmark():
     """Run the benchmark and print benchmark results."""
     setup = "from math import erf; from random import random;"
-    stmt = "y = erf(1000.0*random() - 500.0)"
+    stmt = "y = erf(2.0*random() - 1.0)"
 
     t = timeit.Timer(stmt, setup=setup)
 

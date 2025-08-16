@@ -21,7 +21,7 @@
 
 {{alias}}.assign( x, y, stride, offset )
     Cumulatively tests whether every element in an array is falsy and assigns
-    results to provided output array.
+    results to a provided output array.
 
     Parameters
     ----------

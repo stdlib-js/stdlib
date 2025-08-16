@@ -43,7 +43,7 @@ var v = bernoulli( 0 );
 // returns 1.0
 
 v = bernoulli( 1 );
-// returns 0.0
+// returns 0.5
 
 v = bernoulli( 2 );
 // returns ~0.167
@@ -158,7 +158,7 @@ double out = stdlib_base_bernoulli( 0 );
 // returns 1.0
 
 out = stdlib_base_bernoulli( 1 );
-// returns 0.0
+// returns 0.5
 ```
 
 The function accepts the following arguments:

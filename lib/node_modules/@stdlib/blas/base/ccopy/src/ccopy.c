@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/base/ccopy.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
@@ -29,37 +30,7 @@
 * @param strideY  Y stride length
 */
 void API_SUFFIX(c_ccopy)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY ) {
-	float *x = (float *)X;
-	float *y = (float *)Y;
-	CBLAS_INT ix;
-	CBLAS_INT iy;
-	CBLAS_INT i;
-
-	if ( N <= 0 ) {
-		return;
-	}
-	if ( strideX == 1 && strideY == 1 ) {
-		for ( i = 0; i < N*2; i += 2 ) {
-			y[ i ] = x[ i ];
-			y[ i+1 ] = x[ i+1 ];
-		}
-		return;
-	}
-	if ( strideX < 0 ) {
-		ix = 2 * (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = 2 * (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
-	for ( i = 0; i < N; i++ ) {
-		y[ iy ] = x[ ix ];
-		y[ iy+1 ] = x[ ix+1 ];
-		ix += strideX * 2;
-		iy += strideY * 2;
-	}
-	return;
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	API_SUFFIX(c_ccopy_ndarray)( N, X, strideX, ox, Y, strideY, oy );
 }

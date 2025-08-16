@@ -29,7 +29,7 @@ extern "C" {
 /**
 * Evaluates the exponential function.
 */
-double stdlib_base_pow( const double base, const double exponent );
+double stdlib_base_pow( const double x, const double y );
 
 #ifdef __cplusplus
 }
