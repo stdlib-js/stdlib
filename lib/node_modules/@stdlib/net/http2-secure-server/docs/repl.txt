@@ -14,7 +14,7 @@
         Options.
 
     options.pfx: string|Buffer|Array<string|Buffer|Object> (optional)
-        PFX or PKCS12 encode private key and certificate chain.
+        PFX or PKCS12 encoded private key and certificate chain.
 
     options.cert: string|Buffer|Array<string|Buffer> (optional)
         Cert chains in PEM format.
