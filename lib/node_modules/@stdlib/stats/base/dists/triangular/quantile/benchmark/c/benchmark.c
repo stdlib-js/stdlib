@@ -102,7 +102,7 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		p[ i ] = random_uniform( 0.0, 1.0);
+		p[ i ] = random_uniform( 0.0, 1.0 );
 		min[ i ] = random_uniform( 0.0, 10.0 );
 		max[ i ] = random_uniform( min[ i ], min[ i ]+10.0 );
 		mode[ i ] = random_uniform( min[ i ], max[ i ] );

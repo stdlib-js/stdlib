@@ -35,7 +35,8 @@
       "wasm": false,
       "src": [
         "./src/dger.f",
-        "./src/dger_f.c"
+        "./src/dger_f.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -50,7 +51,9 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-int32",
         "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/napi/argv-double"
+        "@stdlib/napi/argv-strided-float64array2d",
+        "@stdlib/napi/argv-double",
+        "@stdlib/ndarray/base/assert/is-row-major"
       ]
     },
     {
@@ -59,7 +62,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dger.c"
+        "./src/dger.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -68,7 +72,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/base/xerbla"
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -77,7 +83,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dger.c"
+        "./src/dger.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -86,7 +93,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/base/xerbla"
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -96,7 +105,8 @@
       "blas": "openblas",
       "wasm": false,
       "src": [
-        "./src/dger_cblas.c"
+        "./src/dger_cblas.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -113,7 +123,9 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-int32",
         "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/napi/argv-double"
+        "@stdlib/napi/argv-strided-float64array2d",
+        "@stdlib/napi/argv-double",
+        "@stdlib/ndarray/base/assert/is-row-major"
       ]
     },
     {
@@ -122,7 +134,8 @@
       "blas": "openblas",
       "wasm": false,
       "src": [
-        "./src/dger_cblas.c"
+        "./src/dger_cblas.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -133,7 +146,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/ndarray/base/assert/is-row-major"
       ]
     },
     {
@@ -142,7 +156,8 @@
       "blas": "openblas",
       "wasm": false,
       "src": [
-        "./src/dger_cblas.c"
+        "./src/dger_cblas.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -153,7 +168,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/ndarray/base/assert/is-row-major"
       ]
     },
 
@@ -164,7 +180,8 @@
       "wasm": false,
       "src": [
         "./src/dger.f",
-        "./src/dger_f.c"
+        "./src/dger_f.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -179,7 +196,9 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-int32",
         "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/napi/argv-double"
+        "@stdlib/napi/argv-strided-float64array2d",
+        "@stdlib/napi/argv-double",
+        "@stdlib/ndarray/base/assert/is-row-major"
       ]
     },
     {
@@ -188,7 +207,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dger.c"
+        "./src/dger.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -197,7 +217,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/base/xerbla"
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -206,7 +228,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dger.c"
+        "./src/dger.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -215,7 +238,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/base/xerbla"
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -225,7 +250,8 @@
       "blas": "apple_accelerate_framework",
       "wasm": false,
       "src": [
-        "./src/dger_cblas.c"
+        "./src/dger_cblas.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -241,7 +267,9 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-int32",
         "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/napi/argv-double"
+        "@stdlib/napi/argv-strided-float64array2d",
+        "@stdlib/napi/argv-double",
+        "@stdlib/ndarray/base/assert/is-row-major"
       ]
     },
     {
@@ -250,7 +278,8 @@
       "blas": "apple_accelerate_framework",
       "wasm": false,
       "src": [
-        "./src/dger_cblas.c"
+        "./src/dger_cblas.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -260,7 +289,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/ndarray/base/assert/is-row-major"
       ]
     },
     {
@@ -269,7 +299,8 @@
       "blas": "apple_accelerate_framework",
       "wasm": false,
       "src": [
-        "./src/dger_cblas.c"
+        "./src/dger_cblas.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -279,7 +310,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/ndarray/base/assert/is-row-major"
       ]
     },
 
@@ -289,7 +321,8 @@
       "blas": "openblas",
       "wasm": false,
       "src": [
-        "./src/dger_cblas.c"
+        "./src/dger_cblas.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -306,7 +339,9 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-int32",
         "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/napi/argv-double"
+        "@stdlib/napi/argv-strided-float64array2d",
+        "@stdlib/napi/argv-double",
+        "@stdlib/ndarray/base/assert/is-row-major"
       ]
     },
     {
@@ -315,7 +350,8 @@
       "blas": "openblas",
       "wasm": false,
       "src": [
-        "./src/dger_cblas.c"
+        "./src/dger_cblas.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -326,7 +362,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/ndarray/base/assert/is-row-major"
       ]
     },
     {
@@ -335,7 +372,8 @@
       "blas": "openblas",
       "wasm": false,
       "src": [
-        "./src/dger_cblas.c"
+        "./src/dger_cblas.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -346,7 +384,8 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/ndarray/base/assert/is-row-major"
       ]
     },
 
@@ -356,7 +395,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dger.c"
+        "./src/dger.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -371,7 +411,10 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-int32",
         "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/napi/argv-double"
+        "@stdlib/napi/argv-strided-float64array2d",
+        "@stdlib/napi/argv-double",
+        "@stdlib/ndarray/base/assert/is-row-major",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -380,7 +423,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dger.c"
+        "./src/dger.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -389,7 +433,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/base/xerbla"
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -398,7 +444,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/dger.c"
+        "./src/dger.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -407,7 +454,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/base/xerbla"
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -417,7 +466,8 @@
       "blas": "",
       "wasm": true,
       "src": [
-        "./src/dger.c"
+        "./src/dger.c",
+        "./src/dger_ndarray.c"
       ],
       "include": [
         "./include"
@@ -426,7 +476,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/blas/base/xerbla"
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/ndarray/base/assert/is-row-major",
+        "@stdlib/strided/base/stride2offset"
       ]
     }
   ]

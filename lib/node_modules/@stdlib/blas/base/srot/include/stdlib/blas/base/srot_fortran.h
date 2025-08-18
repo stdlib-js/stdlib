@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the Fortran interface to the BLAS Level 1 routine `srot`.
 */
-#ifndef SROT_FORTRAN_H
-#define SROT_FORTRAN_H
+#ifndef STDLIB_BLAS_BASE_SROT_FORTRAN_H
+#define STDLIB_BLAS_BASE_SROT_FORTRAN_H
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C/Fortran compiler (a Fortran compiler must be configured to not attach underscores).
@@ -38,4 +38,4 @@ void srot( const int *, float *, const int *, float *, const int *, const float 
 }
 #endif
 
-#endif // !SROT_FORTRAN_H
+#endif // !STDLIB_BLAS_BASE_SROT_FORTRAN_H
