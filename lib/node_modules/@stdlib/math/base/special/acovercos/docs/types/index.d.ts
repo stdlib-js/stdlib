@@ -26,15 +26,15 @@
 *
 * @example
 * var v = acovercos( 0.0 );
-* // returns ~1.5708
+* // returns ~-1.5708
 *
 * @example
-* var v = acovercos( -3.141592653589793/2.0 );
-* // returns ~-0.6075
+* var v = acovercos( 3.141592653589793/2.0 );
+* // returns ~0.6075
 *
 * @example
-* var v = acovercos( -3.141592653589793/6.0 );
-* // returns ~0.4966
+* var v = acovercos( 3.141592653589793/6.0 );
+* // returns ~-0.4966
 *
 * @example
 * var v = acovercos( NaN );

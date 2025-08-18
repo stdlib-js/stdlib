@@ -82,18 +82,16 @@ v = add( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var rand = require( '@stdlib/random/base/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var add = require( '@stdlib/number/float64/base/add' );
 
-var x;
-var y;
-var i;
+// Create arrays of random values:
+var x = discreteUniform( 100, -50, 50 );
+var y = discreteUniform( 100, -50, 50 );
 
-for ( i = 0; i < 100; i++ ) {
-    x = rand( -50, 50 );
-    y = rand( -50, 50 );
-    console.log( '%d + %d = %d', x, y, add( x, y ) );
-}
+// Perform element-wise addition:
+logEachMap( '%d + %d = %d', x, y, add );
 ```
 
 </section>

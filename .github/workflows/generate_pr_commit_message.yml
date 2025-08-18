@@ -30,12 +30,6 @@ permissions:
   # Allow read-only access to the repository contents:
   contents: read
 
-  # Allow write access to issues, assignees, labels, and milestones:
-  issues: write
-
-  # Allow write access to pull requests:
-  pull-requests: write
-
 # Workflow jobs:
 jobs:
 
@@ -62,12 +56,16 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          # Fetch all commits to ensure we have the full commit history:
-          fetch-depth: 0
+          # Ensure we have access to the scripts directory and .mailmap file for generating the commit message:
+          sparse-checkout: |
+            .github/workflows/scripts
+            .mailmap
+          sparse-checkout-cone-mode: false
 
       # Generate commit message:
       - name: 'Generate commit message'
         id: commit_message
+        shell: bash {0} # Omit -e to avoid triggering a failure if the script returns a non-zero exit code
         run: |
           COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message $PR_NUMBER)
           EXIT_CODE=$?
@@ -85,13 +83,23 @@ jobs:
           # Ensure the script itself doesn't fail the workflow:
           exit 0
 
+      # Check if the commit message already exists in the PR comments:
+      - name: 'Check if commit message already exists in PR comments'
+        uses: peter-evans/find-comment@3eae4d37986fb5a8592848f6a574fdf654e61f9e # v3.1.0
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body-includes: '<!-- PR_COMMIT_MESSAGE -->'
+
       # Post commit message as PR comment:
       - name: 'Post commit message as PR comment'
         # Pin action to full length commit SHA
         uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # v4.0.0
         with:
           token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
+          edit-mode: replace
           body: |
             ### PR Commit Message
 
@@ -102,3 +110,5 @@ jobs:
             *Please review the above commit message and make any necessary adjustments.*
 
             ${{ steps.commit_message.outputs.has_tracking_issue == 'true' && '⚠️ **Action Required**: This PR references tracking issues. Please update the PR description to replace any "Closes", "Fixes", or "Resolves" keywords with "Ref" when referencing these issues.' || '' }}
+
+            <!-- PR_COMMIT_MESSAGE -->

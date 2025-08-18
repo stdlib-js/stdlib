@@ -89,16 +89,19 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double x[ 100 ];
 	double elapsed;
-	double x;
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 10.0*rand_double() ) - 5.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 10.0 * rand_double() ) - 5.0;
-		y = sinh( x );
+		y = sinh( x[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

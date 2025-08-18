@@ -38,8 +38,8 @@
 */
 static void snansumpw( const int64_t N, double *W, const float *X, const int64_t stride ) {
 	int64_t ix;
-	float *xp1;
-	float *xp2;
+	const float *xp1;
+	const float *xp2;
 	float sum;
 	int64_t M;
 	int64_t n;

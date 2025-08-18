@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_nonnegative_finite.h"
 #include "stdlib/constants/float64/pinf.h"
+#include <stdbool.h>
 
 /**
 * Tests if a numeric value is a nonnegative finite number.

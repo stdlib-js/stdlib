@@ -22,7 +22,7 @@
 * Size (in bytes) of a 16-bit unsigned integer.
 *
 * @example
-* var bytes = UINT16_NUM_BYTES
+* var bytes = UINT16_NUM_BYTES;
 * // returns 2
 */
 declare const UINT16_NUM_BYTES: number;

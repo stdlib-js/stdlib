@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the median of a Kumaraswamy distribution.
+* Returns the median of a Kumaraswamy's double bounded distribution.
 */
 double stdlib_base_dists_kumaraswamy_median( const double a, const double b );
 

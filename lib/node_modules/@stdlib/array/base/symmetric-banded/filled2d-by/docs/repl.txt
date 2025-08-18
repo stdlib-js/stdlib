@@ -1,0 +1,43 @@
+
+{{alias}}( N, k, fill, clbk[, thisArg] )
+    Returns a filled two-dimensional symmetric banded nested array according to
+    a provided callback function.
+
+    The callback function is provided one argument:
+
+    - indices: current array element indices.
+
+    As the output array is banded and symmetric, the provided callback is only
+    invoked for elements within the band in the upper triangle.
+
+    Parameters
+    ----------
+    N: integer
+        Number of rows and columns.
+
+    k: integer
+        Number of super-/sub-diagonals.
+
+    fill: any
+        Fill value for elements outside the band.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > function clbk( idx ) { return idx[ 0 ] + idx[ 1 ]; };
+    > var out = {{alias}}( 3, 1, 0, clbk )
+    [ [ 0, 1, 0 ], [ 1, 2, 3 ], [ 0, 3, 4 ] ]
+
+    See Also
+    --------
+
