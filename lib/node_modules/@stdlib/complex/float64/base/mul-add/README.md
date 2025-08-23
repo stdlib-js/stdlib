@@ -56,7 +56,7 @@ var v = muladd( z1, z2, z3 );
 
 The function supports the following parameters:
 
--   **alpha**: first [complex number][@stdlib/complex/float64/ctor]
+-   **alpha**: first [complex number][@stdlib/complex/float64/ctor].
 -   **x**: second [complex number][@stdlib/complex/float64/ctor].
 -   **y**: third [complex number][@stdlib/complex/float64/ctor].
 
