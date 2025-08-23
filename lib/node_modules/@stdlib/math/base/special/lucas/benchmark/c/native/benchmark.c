@@ -30,7 +30,7 @@
 /**
 * Prints the TAP version.
 */
-void print_version() {
+static void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -91,14 +91,14 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	int32_t x;
+	double x;
 	double t;
 	double y;
 	int i;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = (int32_t)( 76.0*rand_double() );
+		x = ( 76.0*rand_double() );
 		y = stdlib_base_lucas( x );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
