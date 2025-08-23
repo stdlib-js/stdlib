@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_positive_finite.h"
 #include "stdlib/constants/float64/pinf.h"
+#include <stdbool.h>
 
 /**
 * Tests if a double-precision floating-point numeric value is a positive finite number.

@@ -20,6 +20,7 @@
 #include "stdlib/constants/float64/max_safe_integer.h"
 #include "stdlib/constants/float64/min_safe_integer.h"
 #include "stdlib/math/base/assert/is_integer.h"
+#include <stdbool.h>
 
 /**
 * Tests if a finite double-precision floating-point number is a safe integer.

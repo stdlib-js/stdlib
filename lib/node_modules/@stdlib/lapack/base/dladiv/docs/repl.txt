@@ -1,0 +1,91 @@
+
+{{alias}}( a, b, c, d, P, Q )
+    Divides two double-precision complex floating-point numbers in real
+    arithmetic.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    Parameters
+    ----------
+    a: number
+        Real component of numerator.
+
+    b: number
+        Imaginary component of numerator.
+
+    c: number
+        Real component of denominator.
+
+    d: number
+        Imaginary component of denominator.
+
+    P: Float64Array
+        Array containing a single element which is overwritten by the real part
+        of the quotient.
+
+    Q: Float64Array
+        Array containing a single element which is overwritten by the imaginary
+        part of the quotient.
+
+    Examples
+    --------
+    > var {{alias:@stdlib/array/float64}} = require( '@stdlib/array/float64' );
+    > var P = new {{alias:@stdlib/array/float64}}( 1 );
+    > var Q = new {{alias:@stdlib/array/float64}}( 1 );
+    > {{alias}}( -13.0, -1.0, -2.0, 1.0, P, Q );
+    > P
+    <Float64Array>[ 5.0 ]
+    > Q
+    <Float64Array>[ 3.0 ]
+
+
+{{alias}}.ndarray( a, b, c, d, P, offsetP, Q, offsetQ )
+    Divides two double-precision complex floating-point numbers in real
+    arithmetic using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    a: number
+        Real component of numerator.
+
+    b: number
+        Imaginary component of numerator.
+
+    c: number
+        Real component of denominator.
+
+    d: number
+        Imaginary component of denominator.
+
+    P: Float64Array
+        Array containing an element which is overwritten by the real part of the
+        quotient.
+
+    offsetP: integer
+        Index of the element in `P`.
+
+    Q: Float64Array
+        Array containing an element which is overwritten by the imaginary part
+        of the quotient.
+
+    offsetQ: integer
+        Index of the element in `Q`.
+
+    Examples
+    --------
+    > var {{alias:@stdlib/array/float64}} = require( '@stdlib/array/float64' );
+    > var P = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0 ] );
+    > var Q = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( -13.0, -1.0, -2.0, 1.0, P, 1, Q, 2 );
+    > P
+    <Float64Array>[ 0.0, 5.0, 0.0 ]
+    > Q
+    <Float64Array>[ 0.0, 0.0, 3.0 ]
+
+    See Also
+    --------

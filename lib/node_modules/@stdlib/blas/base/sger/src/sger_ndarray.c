@@ -132,11 +132,11 @@ void API_SUFFIX(c_sger_ndarray)( const CBLAS_INT M, const CBLAS_INT N, const flo
 		return;
 	}
 	if ( strideX == 0 ) {
-		c_xerbla( 5, "c_sger_ndarray", "Error: invalid argument. Fifth argument must be a nonzero. Value: `%d`.", strideX );
+		c_xerbla( 5, "c_sger_ndarray", "Error: invalid argument. Fifth argument must be nonzero. Value: `%d`.", strideX );
 		return;
 	}
 	if ( strideY == 0 ) {
-		c_xerbla( 8, "c_sger_ndarray", "Error: invalid argument. Eighth argument must be a nonzero. Value: `%d`.", strideY );
+		c_xerbla( 8, "c_sger_ndarray", "Error: invalid argument. Eighth argument must be nonzero. Value: `%d`.", strideY );
 		return;
 	}
 	// Check whether we can avoid computation altogether...
@@ -162,7 +162,7 @@ void API_SUFFIX(c_sger_ndarray)( const CBLAS_INT M, const CBLAS_INT N, const flo
 
 		ox = offsetY;
 		iy = offsetX;
-	} else { // order === 'column-major'
+	} else { // order == 'column-major'
 		// For column-major matrices, the first dimension has the fastest changing index...
 		S0 = M;
 		S1 = N;
