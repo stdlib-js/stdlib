@@ -78,7 +78,7 @@ jobs:
       - name: 'Leave comment with package make command instructions'
         env:
           PR_NUMBER: ${{ inputs.pull_request_number }}
-          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/package_commands_comment" "$PR_NUMBER"
         timeout-minutes: 30
