@@ -29,6 +29,11 @@ on:
         description: 'Pull request number'
         required: true
         type: number
+      debug:
+        description: 'Enable debug output'
+        required: false
+        default: false
+        type: boolean
 
     # Define the secrets accessible by the workflow:
     secrets:
@@ -43,6 +48,14 @@ on:
         description: 'Pull request number'
         required: true
         type: number
+      debug:
+        description: 'Enable debug output'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
 
 # Global permissions:
 permissions:
@@ -78,7 +91,8 @@ jobs:
       - name: 'Leave comment with package make command instructions'
         env:
           PR_NUMBER: ${{ inputs.pull_request_number }}
-          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN || secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          DEBUG: ${{ inputs.debug || 'false' }}
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/package_commands_comment" "$PR_NUMBER"
         timeout-minutes: 30

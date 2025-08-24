@@ -27,6 +27,7 @@
 # Environment variables:
 #
 #   GITHUB_TOKEN   GitHub token for authentication.
+#   DEBUG          Whether to enable verbose debug output. Default: `false`.
 
 # Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
 set -o pipefail
@@ -44,8 +45,21 @@ github_api_url="https://api.github.com"
 repo_owner="stdlib-js"
 repo_name="stdlib"
 
+# Set debug mode:
+debug="${DEBUG:-false}"
+
 
 # FUNCTIONS #
+
+# Prints debug messages if DEBUG environment variable is set to "true".
+#
+# $1 - debug message
+debug_log() {
+	# Only print debug messages if DEBUG environment variable is set to "true":
+	if [ "$debug" = true ]; then
+		echo "[DEBUG] $1" >&2
+	fi
+}
 
 # Error handler.
 #
@@ -69,6 +83,8 @@ github_api() {
 	local method="$1"
 	local endpoint="$2"
 	local data="$3"
+
+	debug_log "Making API request: ${method} ${endpoint}"
 
 	# Initialize an array to hold curl headers:
 	local headers=()
@@ -117,12 +133,20 @@ main() {
 		on_error 1
 	fi
 
+	debug_log "Processing PR #${pr_number}"
+
 	# Fetch changed files in pull request:
 	response=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/pulls/${pr_number}/files?per_page=100")
 	files=$(echo "${response}" | jq -r '.[] | .filename')
+	debug_log "Found $(echo "${files}" | wc -l) changed files"
 
 	# Extract files associated with native add-ons:
 	c_files=$(echo "${files}" | grep -e '/benchmark/c' -e '/examples/c' -e '/binding.gyp' -e '/include.gypi' -e '/src/')
+	if [[ -z "${c_files}" ]]; then
+		debug_log "No native add-on files found"
+	else
+		debug_log "Found native add-on files: $(echo "${c_files}" | wc -l) files"
+	fi
 
 	# Find unique package directories:
 	directories=$(echo "${files}" | tr ' ' '\n' | \
@@ -133,6 +157,7 @@ main() {
 
 	# Extract package names from changed package directories (e.g., @stdlib/math/base/special/sin) by removing the leading 'lib/node_modules/':
 	packages=$(echo "${directories}" | sed -E 's/^lib\/node_modules\///')
+	debug_log "Found packages: $(echo "${packages}" | tr '\n' ' ')"
 
 	# Documentation links:
 	docs_links="
@@ -148,9 +173,11 @@ main() {
 
 	# Count the number of packages:
 	package_count=$(echo "${packages}" | wc -l)
+	debug_log "Package count: ${package_count}"
 
 	if [[ $package_count -gt 1 ]]; then
 		# Multiple packages case:
+		debug_log "Multiple packages detected, generating multi-package comment"
 		comment="Hello! 👋
 
 Pro-tip: This PR changes multiple packages. You can use various \`make\` rules with \`*_FILTER\` environment variables to run tests, benchmarks, and examples for specific packages.
@@ -174,7 +201,9 @@ ${docs_links}"
 
 	else
 		# Single package case:
-		if [[ "${#c_files[@]}" -eq 0 ]]; then
+		debug_log "Single package detected: ${packages}"
+		if [[ -z "${c_files}" ]]; then
+			debug_log "No C files found, generating JS-only comment"
 			comment="Hello! 👋
 
 Pro-tip: Use the \`make\` commands below during local development to ensure that all tests, examples, and benchmark files in your PR run successfully.
@@ -200,6 +229,7 @@ make examples EXAMPLES_FILTER=\".*/${packages}/.*\"
 \`\`\`
 ${docs_links}"
 		else
+			debug_log "C files found, generating native addon comment"
 			comment="Hello! 👋
 
 Pro-tip: Use the \`make\` below commands during local development to ensure that all tests, examples, and benchmark files in your PR run successfully.
@@ -241,10 +271,12 @@ ${docs_links}"
 		fi
 	fi
 
+	debug_log "Posting comment on PR #${pr_number}"
 	if ! github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/comments" "{\"body\":$(echo "${comment}" | jq -R -s -c .)}"; then
 		echo "Failed to post comment on PR."
 		on_error 1
 	fi
+	debug_log "Successfully posted comment on PR #${pr_number}"
 
 	print_success
 	exit 0
