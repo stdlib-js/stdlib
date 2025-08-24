@@ -141,7 +141,7 @@ main() {
 	debug_log "Found $(echo "${files}" | wc -l) changed files"
 
 	# Extract files associated with native add-ons:
-	c_files=$(echo "${files}" | grep -e '/benchmark/c' -e '/examples/c' -e '/binding.gyp' -e '/include.gypi' -e '/src/')
+	c_files=$(echo "${files}" | grep -e '/benchmark/c' -e '/examples/c' -e '/binding.gyp' -e '/include.gypi' -e '/src/' || true)
 	if [[ -z "${c_files}" ]]; then
 		debug_log "No native add-on files found"
 	else
