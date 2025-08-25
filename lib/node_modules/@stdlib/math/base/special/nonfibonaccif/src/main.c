@@ -17,10 +17,11 @@
 */
 
 #include "stdlib/math/base/special/nonfibonaccif.h"
+#include "stdlib/math/base/assert/is_integerf.h"
 #include "stdlib/constants/float32/nan.h"
+#include "stdlib/constants/float32/pinf.h"
 #include "stdlib/math/base/special/floorf.h"
 #include "stdlib/math/base/special/lnf.h"
-#include <stdint.h>
 
 static const float SQRT5 = 2.23606797749979f;
 static const float LN_PHI = 0.48121182506f;
@@ -32,30 +33,30 @@ static const float LN_PHI = 0.48121182506f;
 * @return     output value
 *
 * @example
-* float y = stdlib_base_nonfibonaccif( 2 );
+* float y = stdlib_base_nonfibonaccif( 2.0f );
 * // returns 6.0f
 *
 * @example
-* float y = stdlib_base_nonfibonaccif( 1 );
+* float y = stdlib_base_nonfibonaccif( 1.0f );
 * // returns 4.0f
 *
 * @example
-* float y = stdlib_base_nonfibonaccif( 3 );
+* float y = stdlib_base_nonfibonaccif( 3.0f );
 * // returns 7.0f
 *
 * @example
-* float y = stdlib_base_nonfibonaccif( -1 );
+* float y = stdlib_base_nonfibonaccif( -1.0f );
 * // returns NaN
 */
-float stdlib_base_nonfibonaccif( const int32_t n ) {
-	int32_t m;
+float stdlib_base_nonfibonaccif( const float n ) {
+	float m;
 	float a;
 	float b;
 
-	if ( n < 1 ) {
+	if ( !stdlib_base_is_integerf( n ) || n == STDLIB_CONSTANT_FLOAT32_PINF || n < 1.0f ) {
 		return STDLIB_CONSTANT_FLOAT32_NAN;
 	}
-	m = n + 1;
+	m = n + 1.0f;
 	a = stdlib_base_lnf( m * SQRT5 ) / LN_PHI;
 	b = stdlib_base_lnf( ( SQRT5 * ( m + a ) ) - 5.0f + ( 3.0f / m ) ) / LN_PHI;
 	return stdlib_base_floorf( m + b - 2.0f );
