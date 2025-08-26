@@ -26,10 +26,10 @@ args <- commandArgs( trailingOnly = TRUE );
 
 # Check that at least one package name has been provided...
 n <- length( args );
-if ( n == 0 ) {
-	stop( "Must provide at least one package to install.", call. = FALSE );
+if ( n == 0L ) {
+	stop( 'Must provide at least one package to install.', call. = FALSE );
 }
 # Install each package...
-for ( i in 1:n ) {
-	install.packages( args[ i ], repos = "http://lib.stat.cmu.edu/R/CRAN/" );
+for ( i in 1L:n ) {
+	install.packages( args[ i ], repos = 'https://archive.linux.duke.edu/cran/' );
 }
