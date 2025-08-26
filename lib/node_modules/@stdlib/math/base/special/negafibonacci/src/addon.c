@@ -20,4 +20,4 @@
 #include "stdlib/math/base/napi/unary.h"
 #include<stdint.h>
 
-STDLIB_MATH_BASE_NAPI_MODULE_I_D( stdlib_base_negafibonacci )
+STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_negafibonacci )
