@@ -27,10 +27,11 @@ limitations under the License.
 -   [How can I set up my development environment to contribute to stdlib?](#setup-dev-environment)
 -   [How can I install cppcheck?](#install-cppcheck)
 -   [I am seeing different return values in the JavaScript and C implementation for the same implementation.](#js-vs-c-return-values)
--   [What should I do if linting on my commits fails because my headings or lines exceed the maximum permissible length?](#markdown-heading-length)
+-   [What should I do if linting on my commits fails because my headings or lines exceed the maximum permissible length?](#max-length)
 -   [What should I do if JavaScript linting on my commits fails because my function exceeds the maximum permissible number of parameters?](#max-params)
 -   [I have opened a pull request, where can I seek feedback?](#pr-feedback)
 -   [I need to generate fixtures for my tests. How can I do that, and what are the best references for inspiration?](#generate-fixtures)
+-   [How can I generate the test coverage report for a specific package locally?](#test-cov)
 -   [I am facing a `Uninitialized variable` linting error in my C files, how can I fix it?](#uninitialized-variable)
 -   [I have the required packages in the expected paths, but I am still encountering an error like this while compiling the native add-on.](#compilation-error)
 -   [When should I use decimals in examples, benchmarks, and documentation, and when should I avoid them?](#decimal-usage)
@@ -98,7 +99,7 @@ If they pass, adjust the tolerance and add a note to the C tests indicating that
 - [Reference Discussion][ref-discussion]
 - [Reference Comment][ref-comment]
 
-<a name="markdown-heading-length"></a>
+<a name="max-length"></a>
 
 ## What should I do if linting on my commits fails because my headings or lines exceed the maximum permissible length?
 
@@ -120,7 +121,7 @@ Consider whether the heading/line can be shortened by renaming variables (e.g., 
 
 [Reference Comment][markdown-len-ref]
 
-<a name="markdown-heading-length"></a>
+<a name="max-params"></a>
 
 ## What should I do if JavaScript linting on my commits fails because my function exceeds the maximum permissible number of parameters?
 
@@ -143,6 +144,19 @@ Consider joining our [Gitter channel][stdlib-gitter]! We are proud to have a ver
 ## I need to generate fixtures for my tests. How can I do that, and what are the best references for inspiration?
 
 Tests are a crucial part of any standard library package. We take our goal of achieving 100% test coverage very seriously and expect your work to be backed by tests. Often, you may need to generate fixtures to validate your implementation against an existing reliable source. You can use Julia, R, Python, or other languages to generate fixtures. To see how we do this, refer to these example scripts: [Python fixture script][python-fixtures], [Julia fixture script][julia-fixtures].
+
+<a name="test-cov"></a>
+
+## How can I generate the test coverage report for a specific package locally?
+
+To generate the test coverage report for a specific package, you can use the following commands:
+
+```bash
+$ make test-cov TESTS_FILTER=".*/math/base/special/floorn/.*"
+$ make view-cov
+```
+
+Modify the `TESTS_FILTER` argument to specify the package you want to test. The `view-cov` command will open the coverage report in your default web browser.
 
 <a name="uninitialized-variable"></a>
 

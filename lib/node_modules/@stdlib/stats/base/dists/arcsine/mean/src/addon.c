@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/napi/binary.h"
 #include "stdlib/stats/base/dists/arcsine/mean.h"
+#include "stdlib/math/base/napi/binary.h"
 
 STDLIB_MATH_BASE_NAPI_MODULE_DD_D( stdlib_base_dists_arcsine_mean )

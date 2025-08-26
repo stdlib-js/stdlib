@@ -25,6 +25,8 @@
 * @returns boolean indicating whether value is a Float32Array
 *
 * @example
+* var Float32Array = require( '@stdlib/array/float32' );
+*
 * var bool = isFloat32Array( new Float32Array( 10 ) );
 * // returns true
 *
