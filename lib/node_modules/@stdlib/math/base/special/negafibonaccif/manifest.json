@@ -38,7 +38,8 @@
       "dependencies": [
         "@stdlib/math/base/napi/unary",
         "@stdlib/constants/float32/max-safe-nth-fibonacci",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/assert/is-integerf"
       ]
     },
     {
@@ -53,7 +54,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/constants/float32/max-safe-nth-fibonacci",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/assert/is-integerf"
       ]
     },
     {
@@ -68,7 +70,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/constants/float32/max-safe-nth-fibonacci",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/assert/is-integerf"
       ]
     }
   ]

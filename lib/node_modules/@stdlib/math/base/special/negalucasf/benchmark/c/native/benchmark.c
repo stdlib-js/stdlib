@@ -30,7 +30,7 @@
 /**
 * Prints the TAP version.
 */
-void print_version() {
+static void print_version( void ) {
 	printf( "TAP version 13\n" );
 }
 
@@ -91,13 +91,13 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	int32_t x[ 100 ];
+	float x[ 100 ];
 	double t;
 	float y;
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		x[ i ] = (int32_t)( 34.0f * rand_float() );
+		x[ i ] = ( 34.0f * rand_float() );
 	}
 
 	t = tic();
