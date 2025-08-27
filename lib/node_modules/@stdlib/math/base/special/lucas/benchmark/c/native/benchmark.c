@@ -98,7 +98,7 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 76.0*rand_double() );
+		x = round( 76.0*rand_double() );
 		y = stdlib_base_lucas( x );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
