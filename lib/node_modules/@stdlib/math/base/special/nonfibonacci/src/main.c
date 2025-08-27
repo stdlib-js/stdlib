@@ -17,10 +17,11 @@
 */
 
 #include "stdlib/math/base/special/nonfibonacci.h"
+#include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/constants/float64/nan.h"
+#include "stdlib/constants/float64/pinf.h"
 #include "stdlib/math/base/special/floor.h"
 #include "stdlib/math/base/special/ln.h"
-#include <stdint.h>
 
 static const double SQRT5 = 2.23606797749979;
 static const double LN_PHI = 0.48121182506;
@@ -32,31 +33,32 @@ static const double LN_PHI = 0.48121182506;
 * @return     output value
 *
 * @example
-* double y = stdlib_base_nonfibonacci( 2 );
+* double y = stdlib_base_nonfibonacci( 2.0 );
 * // returns 6.0
 *
 * @example
-* double y = stdlib_base_nonfibonacci( 1 );
+* double y = stdlib_base_nonfibonacci( 1.0 );
 * // returns 4.0
 *
 * @example
-* double y = stdlib_base_nonfibonacci( 3 );
+* double y = stdlib_base_nonfibonacci( 3.0 );
 * // returns 7.0
 *
 * @example
-* double y = stdlib_base_nonfibonacci( -1 );
+* double y = stdlib_base_nonfibonacci( -1.0 );
 * // returns NaN
 */
-double stdlib_base_nonfibonacci( const int32_t n ) {
+double stdlib_base_nonfibonacci( const double n ) {
+	double mut_n;
 	double a;
 	double b;
-	int32_t mut_n = n;
 
-	if ( n < 1 ) {
+	mut_n = n;
+	if ( !stdlib_base_is_integer( n ) || n == STDLIB_CONSTANT_FLOAT64_PINF || n < 1.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 
-	mut_n += 1;
+	mut_n += 1.0;
 	a = stdlib_base_ln( mut_n * SQRT5 ) / LN_PHI;
 	b = stdlib_base_ln( (SQRT5 * (mut_n + a)) - 5.0 + (3.0 / mut_n) ) / LN_PHI;
 

@@ -18,7 +18,6 @@
 
 #include "stdlib/math/base/special/bernoullif.h"
 #include <stdlib.h>
-#include <stdint.h>
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
@@ -103,7 +102,7 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = stdlib_base_bernoullif( (int32_t)( x[ i%100 ] ) );
+		y = stdlib_base_bernoullif( ( x[ i%100 ] ) );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

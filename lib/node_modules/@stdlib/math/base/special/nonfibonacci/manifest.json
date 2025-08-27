@@ -39,7 +39,9 @@
         "@stdlib/math/base/napi/unary",
         "@stdlib/constants/float64/nan",
         "@stdlib/math/base/special/floor",
-        "@stdlib/math/base/special/ln"
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/constants/float64/pinf"
       ]
     },
     {
@@ -55,7 +57,9 @@
       "dependencies": [
         "@stdlib/constants/float64/nan",
         "@stdlib/math/base/special/floor",
-        "@stdlib/math/base/special/ln"
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/constants/float64/pinf"
       ]
     },
     {
@@ -71,7 +75,9 @@
       "dependencies": [
         "@stdlib/constants/float64/nan",
         "@stdlib/math/base/special/floor",
-        "@stdlib/math/base/special/ln"
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/constants/float64/pinf"
       ]
     }
   ]
