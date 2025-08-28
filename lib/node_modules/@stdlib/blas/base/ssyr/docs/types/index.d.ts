@@ -42,16 +42,16 @@ interface Routine {
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
 	*
-	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0 ], [ 0.0, 0.0, 1.0 ] ]
+	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 2.0, 1.0, 2.0 ], [ 3.0, 2.0, 1.0 ] ]
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* ssyr( 'row-major', 'upper', 3, 1.0, x, 1, A, 3 );
-	* // A => <Float32Array>[ 2.0, 4.0, 6.0, 0.0, 5.0, 8.0, 0.0, 0.0, 10.0 ]
+	* // A => <Float32Array>[ 2.0, 4.0, 6.0, 2.0, 5.0, 8.0, 3.0, 2.0, 10.0 ]
 	*/
 	( order: Layout, uplo: MatrixTriangle, N: number, alpha: number, x: Float32Array, strideX: number, A: Float32Array, LDA: number ): Float32Array;
 
 	/**
-	* Performs the symmetric rank 1 operation `A = α*x*x^T + A`, using alternative indexing semantics and where `α` is a scalar, `x` is an `N` element vector, and `A` is an `N` by `N` symmetric matrix.
+	* Performs the symmetric rank 1 operation `A = α*x*x^T + A` using alternative indexing semantics and where `α` is a scalar, `x` is an `N` element vector, and `A` is an `N` by `N` symmetric matrix.
 	*
 	* @param uplo - specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced
 	* @param N - number of elements along each dimension in the matrix `A`
@@ -68,11 +68,11 @@ interface Routine {
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
 	*
-	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0 ], [ 0.0, 0.0, 1.0 ] ]
+	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 2.0, 1.0, 2.0 ], [ 3.0, 2.0, 1.0 ] ]
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* ssyr.ndarray( 'upper', 3, 1.0, x, 1, 0, A, 3, 1, 0 );
-	* // A => <Float32Array>[ 2.0, 4.0, 6.0, 0.0, 5.0, 8.0, 0.0, 0.0, 10.0 ]
+	* // A => <Float32Array>[ 2.0, 4.0, 6.0, 2.0, 5.0, 8.0, 3.0, 2.0, 10.0 ]
 	*/
 	ndarray( uplo: MatrixTriangle, N: number, alpha: number, x: Float32Array, strideX: number, offsetX: number, A: Float32Array, strideA1: number, strideA2: number, offsetA: number ): Float32Array;
 }
@@ -93,20 +93,20 @@ interface Routine {
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
 *
-* var A = new Float32Array( [ 1.0, 1.0, 1.0, 0.0, 2.0, 2.0, 0.0, 0.0, 3.0 ] );
+* var A = new Float32Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] );
 * var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 *
-* ssyr( 'column-major', 'lower', 3, 2.0, x, 1, A, 3 );
-* // y => <Float32Array>[ 3.0, 5.0, 7.0, 0.0, 10.0, 14.0, 0.0, 0.0, 21.0 ]
+* ssyr( 'row-major', 'upper', 3, 1.0, x, 1, A, 3 );
+* // A => <Float32Array>[ 2.0, 4.0, 6.0, 2.0, 5.0, 8.0, 3.0, 2.0, 10.0 ]
 *
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
 *
-* var A = new Float32Array( [ 1.0, 1.0, 1.0, 0.0, 2.0, 2.0, 0.0, 0.0, 3.0 ] );
+* var A = new Float32Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] );
 * var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 *
-* ssyr.ndarray( 'lower', 3, 2.0, x, 1, 0, A, 3, 1, 0 );
-* // y => <Float32Array>[ 3.0, 5.0, 7.0, 0.0, 10.0, 14.0, 0.0, 0.0, 21.0 ]
+* ssyr.ndarray( 'upper', 3, 1.0, x, 1, 0, A, 3, 1, 0 );
+* // A => <Float32Array>[ 2.0, 4.0, 6.0, 2.0, 5.0, 8.0, 3.0, 2.0, 10.0 ]
 */
 declare var ssyr: Routine;
 

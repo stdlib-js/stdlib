@@ -70,5 +70,92 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "acoth",
+      "alias": "acoth",
+      "pkg_desc": "compute the inverse hyperbolic cotangent of a number",
+      "desc": "computes the inverse hyperbolic cotangent of a number",
+      "short_desc": "inverse hyperbolic cotangent",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": -1
+            },
+            {
+              "min": 1,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              1.1,
+              10
+            ]
+          },
+          "example_values": [
+            64,
+            27,
+            -9,
+            8,
+            -1,
+            125,
+            -10.2,
+            11.3,
+            -12.4,
+            3.5,
+            -1.6,
+            15.7,
+            -16,
+            17.9,
+            -188,
+            19.11,
+            -200,
+            21.15,
+            -1.2,
+            1.7
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "inverse hyperbolic cotangent",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "inverse",
+        "cotangent",
+        "acot",
+        "cot",
+        "coth",
+        "arc",
+        "arccotangent",
+        "trig",
+        "trigonometry",
+        "radians",
+        "angle"
+      ],
+      "extra_keywords": [
+        "math.atanh"
+      ]
+    }
+  }
 }

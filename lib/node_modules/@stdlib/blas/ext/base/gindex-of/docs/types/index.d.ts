@@ -34,6 +34,10 @@ interface Routine {
 	/**
 	* Returns the first index of a specified search element in a strided array.
 	*
+	* ## Notes
+	*
+	* -   If the function is unable to find a search element, the function returns `-1`.
+	*
 	* @param N - number of indexed elements
 	* @param searchElement - search element
 	* @param x - input array
@@ -50,6 +54,10 @@ interface Routine {
 
 	/**
 	* Returns the first index of a specified search element in a strided array using alternative indexing semantics.
+	*
+	* ## Notes
+	*
+	* -   If the function is unable to find a search element, the function returns `-1`.
 	*
 	* @param N - number of indexed elements
 	* @param searchElement - search element
@@ -69,6 +77,10 @@ interface Routine {
 
 /**
 * Returns the first index of a specified search element in a strided array.
+*
+* ## Notes
+*
+* -   If the function is unable to find a search element, the function returns `-1`.
 *
 * @param N - number of indexed elements
 * @param searchElement - search element

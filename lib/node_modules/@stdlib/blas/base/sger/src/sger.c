@@ -83,7 +83,7 @@ void API_SUFFIX(c_sger)( const CBLAS_LAYOUT layout, const CBLAS_INT M, const CBL
 	if ( M == 0 || N == 0 || alpha == 0.0f ) {
 		return;
 	}
-	ox = stdlib_strided_stride2offset( N, strideX );
+	ox = stdlib_strided_stride2offset( M, strideX );
 	oy = stdlib_strided_stride2offset( N, strideY );
 	if ( layout == CblasColMajor ) {
 		sa1 = 1;

@@ -64,7 +64,7 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	if ( layout == CblasColMajor ) {
 		sa1 = 1;
 		sa2 = LDA;
-	} else { // layout === CblasRowMajor
+	} else { // layout == CblasRowMajor
 		sa1 = LDA;
 		sa2 = 1;
 	}

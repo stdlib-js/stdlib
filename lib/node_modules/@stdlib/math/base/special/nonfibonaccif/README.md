@@ -151,19 +151,19 @@ for ( i = 1; i < 100; i++ ) {
 Computes the nth non-Fibonacci single-precision floating-point number.
 
 ```c
-float out = stdlib_base_nonfibonaccif( 1 );
+float out = stdlib_base_nonfibonaccif( 1.0f );
 // returns 4.0f
 
-out = stdlib_base_nonfibonaccif( 2 );
+out = stdlib_base_nonfibonaccif( 2.0f );
 // returns 6.0f
 ```
 
 The function accepts the following arguments:
 
--   **x**: `[in] int32_t` input value.
+-   **x**: `[in] float` input value.
 
 ```c
-float stdlib_base_nonfibonaccif( const int32_t x );
+float stdlib_base_nonfibonaccif( const float x );
 ```
 
 </section>
@@ -189,10 +189,12 @@ float stdlib_base_nonfibonaccif( const int32_t x );
 #include <stdio.h>
 
 int main( void ) {
-    int i;
+    float i;
+    float v;
 
-    for ( i = 1; i < 12; i++ ) {
-        printf( "x: %i => result: %f\n", i, stdlib_base_nonfibonaccif( i ) );
+    for ( i = 1.0f; i < 12.0f; i++ ) {
+        v = stdlib_base_nonfibonaccif( i );
+        printf( "nonfibonaccif(%f) = %f\n", i, v );
     }
 }
 ```

@@ -61,7 +61,7 @@ void API_SUFFIX(c_dger)( const CBLAS_LAYOUT layout, const CBLAS_INT M, const CBL
 		return;
 	}
 	if ( strideY == 0 ) {
-		c_xerbla( 8, "c_dger", "Error: invalid argument. Eighth argument must be nonzero. Value: `%d`.", strideX );
+		c_xerbla( 8, "c_dger", "Error: invalid argument. Eighth argument must be nonzero. Value: `%d`.", strideY );
 		return;
 	}
 	if ( layout == CblasColMajor ) {
@@ -75,15 +75,15 @@ void API_SUFFIX(c_dger)( const CBLAS_LAYOUT layout, const CBLAS_INT M, const CBL
 	} else {
 		vala = v;
 	}
-	if ( LDA < v ) {
-		c_xerbla( 10, "c_dger", "Error: invalid argument. Tenth argument must be greater than or equal to max(1,%d). Value: `%d`.", vala, LDA );
+	if ( LDA < vala ) {
+		c_xerbla( 10, "c_dger", "Error: invalid argument. Tenth argument must be greater than or equal to max(1,%d). Value: `%d`.", v, LDA );
 		return;
 	}
 	// Check whether we can avoid computation altogether...
 	if ( M == 0 || N == 0 || alpha == 0.0 ) {
 		return;
 	}
-	ox = stdlib_strided_stride2offset( N, strideX );
+	ox = stdlib_strided_stride2offset( M, strideX );
 	oy = stdlib_strided_stride2offset( N, strideY );
 	if ( layout == CblasColMajor ) {
 		sa1 = 1;

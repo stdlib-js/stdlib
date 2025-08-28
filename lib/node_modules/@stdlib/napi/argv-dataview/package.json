@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/napi/argv-datavoew",
+  "name": "@stdlib/napi/argv-dataview",
   "version": "0.0.0",
   "description": "Convert a Node-API value corresponding to a DataView to an array of bytes (i.e., an unsigned 8-bit integer array).",
   "license": "Apache-2.0",

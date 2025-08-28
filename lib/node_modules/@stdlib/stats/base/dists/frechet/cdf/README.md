@@ -161,8 +161,6 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
-<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
 <!-- C interface documentation. -->
 
 * * *

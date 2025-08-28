@@ -90,16 +90,16 @@ static float rand_float( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	int32_t n[ 100 ];
-	int32_t k[ 100 ];
+	float n[ 100 ];
+	float k[ 100 ];
 	double elapsed;
 	double t;
 	float y;
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		n[ i ] = (int32_t)round( 100.0 * rand_float() );
-		k[ i ] = (int32_t)round( 100.0 * rand_float() );
+		n[ i ] = roundf( 100.0f * rand_float() );
+		k[ i ] = roundf( 100.0f * rand_float() );
 	}
 
 	t = tic();

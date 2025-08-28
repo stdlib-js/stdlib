@@ -125,12 +125,12 @@ declare class ResultsStruct {
 	/**
 	* Sample mean of `x`.
 	*/
-	xmean?: number;
+	xmean: number;
 
 	/**
 	* Sample mean of `y`.
 	*/
-	ymean?: number;
+	ymean: number;
 
 	/**
 	* Test method.

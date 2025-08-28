@@ -101,7 +101,7 @@ static uint8_t mul( const uint8_t x, const uint8_t y ) {
 static double benchmark( void ) {
 	uint8_t x[ 100 ];
 	double elapsed;
-	double y;
+	uint8_t y;
 	double t;
 	int i;
 

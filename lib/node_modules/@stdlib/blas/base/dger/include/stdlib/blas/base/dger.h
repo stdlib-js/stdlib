@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 2 routine `dger`.
 */
-#ifndef DGER_H
-#define DGER_H
+#ifndef STDLIB_BLAS_BASE_DGER_H
+#define STDLIB_BLAS_BASE_DGER_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_dger_ndarray)( const CBLAS_INT M, const CBLAS_INT N, const dou
 }
 #endif
 
-#endif // !DGER_H
+#endif // !STDLIB_BLAS_BASE_DGER_H
