@@ -65,5 +65,83 @@
     "trig",
     "float",
     "trigonometry"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "cosd",
+      "alias": "cosdf",
+      "pkg_desc": "compute the cosine",
+      "desc": "computes the cosine",
+      "short_desc": "cosine",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in degrees)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -360,
+              360
+            ]
+          },
+          "example_values": [
+            0,
+            30,
+            45,
+            60,
+            90,
+            120,
+            180,
+            -30,
+            -45,
+            -60,
+            -90,
+            -120,
+            -180,
+            270,
+            -270,
+            360,
+            -360,
+            220,
+            -80,
+            -40
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "cosine",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "cos",
+        "cosdf",
+        "cosine",
+        "trig",
+        "trigonometry",
+        "degrees"
+      ],
+      "extra_keywords": [
+        "math.cos"
+      ]
+    }
+  }
 }

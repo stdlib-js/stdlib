@@ -30,6 +30,8 @@
 #include "stdlib/math/base/napi/unary/i_d.h"
 #include "stdlib/math/base/napi/unary/i_f.h"
 #include "stdlib/math/base/napi/unary/i_i.h"
+#include "stdlib/math/base/napi/unary/k_k.h"
+#include "stdlib/math/base/napi/unary/s_s.h"
 #include "stdlib/math/base/napi/unary/t_t.h"
 #include "stdlib/math/base/napi/unary/u_u.h"
 #include "stdlib/math/base/napi/unary/z_d.h"

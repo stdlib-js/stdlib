@@ -736,6 +736,132 @@ The function accepts the following arguments:
 void stdlib_math_base_napi_i_i( napi_env env, napi_callback_info info, int32_t (*fcn)( int32_t ) );
 ```
 
+#### STDLIB_MATH_BASE_NAPI_MODULE_K_K( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a unary function accepting and returning 16-bit signed integers.
+
+```c
+#include <stdint.h>
+
+static int16_t scale( const int16_t x ) {
+    return x * 10;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_K_K( scale );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `int16_t (*fcn)( int16_t )` unary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### stdlib_math_base_napi_k_k( env, info, fcn )
+
+Invokes a unary function accepting and returning signed 16-bit integers.
+
+```c
+#include <node_api.h>
+#include <stdint.h>
+
+// ...
+
+static int16_t identity( const int16_t x ) {
+    return x;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_k_k( env, info, identity );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] int16_t (*fcn)( int16_t )` unary function.
+
+```c
+void stdlib_math_base_napi_k_k( napi_env env, napi_callback_info info, int16_t (*fcn)( int16_t ) );
+```
+
+#### STDLIB_MATH_BASE_NAPI_MODULE_S_S( fcn )
+
+Macro for registering a Node-API module exporting an interface for invoking a unary function accepting and returning 8-bit signed integers.
+
+```c
+#include <stdint.h>
+
+static int8_t scale( const int8_t x ) {
+    return x * 10;
+}
+
+// ...
+
+// Register a Node-API module:
+STDLIB_MATH_BASE_NAPI_MODULE_S_S( scale );
+```
+
+The macro expects the following arguments:
+
+-   **fcn**: `int8_t (*fcn)( int8_t )` unary function.
+
+When used, this macro should be used **instead of** `NAPI_MODULE`. The macro includes `NAPI_MODULE`, thus ensuring Node-API module registration.
+
+#### stdlib_math_base_napi_s_s( env, info, fcn )
+
+Invokes a unary function accepting and returning signed 8-bit integers.
+
+```c
+#include <node_api.h>
+#include <stdint.h>
+
+// ...
+
+static int8_t identity( const int8_t x ) {
+    return x;
+}
+
+// ...
+
+/**
+* Receives JavaScript callback invocation data.
+*
+* @param env    environment under which the function is invoked
+* @param info   callback data
+* @return       Node-API value
+*/
+napi_value addon( napi_env env, napi_callback_info info ) {
+    return stdlib_math_base_napi_s_s( env, info, identity );
+}
+
+// ...
+```
+
+The function accepts the following arguments:
+
+-   **env**: `[in] napi_env` environment under which the function is invoked.
+-   **info**: `[in] napi_callback_info` callback data.
+-   **fcn**: `[in] int8_t (*fcn)( int8_t )` unary function.
+
+```c
+void stdlib_math_base_napi_s_s( napi_env env, napi_callback_info info, int8_t (*fcn)( int8_t ) );
+```
+
 #### STDLIB_MATH_BASE_NAPI_MODULE_T_T( fcn )
 
 Macro for registering a Node-API module exporting an interface for invoking a unary function accepting and returning 16-bit unsigned integers.

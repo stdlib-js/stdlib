@@ -1828,7 +1828,7 @@
 "@stdlib/constants/time/hours-in-week",HOURS_IN_WEEK
 "@stdlib/time/hours-in-month",hoursInMonth
 "@stdlib/time/hours-in-year",hoursInYear
-"@stdlib/net/http-server",httpServer
+"@stdlib/net/http-server",httpServerFactory
 "@stdlib/utils/identity-function",identity
 "@stdlib/utils/if-else",ifelse
 "@stdlib/utils/async/if-else",ifelseAsync
