@@ -154,19 +154,19 @@ for ( i = 1; i < 100; i++ ) {
 Computes the nth non-Fibonacci number.
 
 ```c
-double out = stdlib_base_nonfibonacci( 1 );
-// returns 4
+double out = stdlib_base_nonfibonacci( 1.0 );
+// returns 4.0
 
-out = stdlib_base_nonfibonacci( 2 );
-// returns 6
+out = stdlib_base_nonfibonacci( 2.0 );
+// returns 6.0
 ```
 
 The function accepts the following arguments:
 
--   **x**: `[in] int32_t` input value.
+-   **x**: `[in] double` input value.
 
 ```c
-double stdlib_base_nonfibonacci( const int32_t x );
+double stdlib_base_nonfibonacci( const double x );
 ```
 
 </section>
@@ -190,12 +190,14 @@ double stdlib_base_nonfibonacci( const int32_t x );
 ```c
 #include "stdlib/math/base/special/nonfibonacci.h"
 #include <stdio.h>
-#include <stdlib.h>
+
 int main( void ) {
-    int i;
-    for ( i = 1; i < 12; i++ ) {
-        double result = stdlib_base_nonfibonacci( i );
-        printf( "x: %i => result: %lf", i, result );
+    double i;
+    double v;
+
+    for ( i = 1.0; i < 12.0; i++ ) {
+        v = stdlib_base_nonfibonacci( i );
+        printf( "nonfibonacci(%lf) = %lf\n", i, v );
     }
 }
 ```

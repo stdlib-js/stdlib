@@ -19,8 +19,6 @@
 #ifndef STDLIB_MATH_BASE_SPECIAL_BINOMCOEFLN_H
 #define STDLIB_MATH_BASE_SPECIAL_BINOMCOEFLN_H
 
-#include <stdint.h>
-
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -31,7 +29,7 @@ extern "C" {
 /**
 * Computes the natural logarithm of the binomial coefficient of two integers.
 */
-double stdlib_base_binomcoefln( const int64_t n, const int64_t k );
+double stdlib_base_binomcoefln( const double n, const double k );
 
 #ifdef __cplusplus
 }
