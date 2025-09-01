@@ -25,6 +25,8 @@
 * @returns boolean indicating whether value is a Uint32Array
 *
 * @example
+* var Uint32Array = require( '@stdlib/array/uint32' );
+*
 * var bool = isUint32Array( new Uint32Array( 10 ) );
 * // returns true
 *

@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/special/factorial.h"
 #include <stdlib.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <math.h>
 #include <time.h>

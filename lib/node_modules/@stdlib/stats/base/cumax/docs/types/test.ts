@@ -27,7 +27,7 @@ import cumax = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	cumax( x.length, x, 1, y, 1 ); // $ExpectType NumericArray
+	cumax( x.length, x, 1, y, 1 ); // $ExpectType Float64Array
 	cumax( x.length, new AccessorArray( x ), 1, new AccessorArray( y ), 1 ); // $ExpectType AccessorArray<number>
 }
 
@@ -125,7 +125,7 @@ import cumax = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	cumax.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType NumericArray
+	cumax.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType Float64Array
 	cumax.ndarray( x.length, new AccessorArray( x ), 1, 0, new AccessorArray( y ), 1, 0 ); // $ExpectType AccessorArray<number>
 }
 

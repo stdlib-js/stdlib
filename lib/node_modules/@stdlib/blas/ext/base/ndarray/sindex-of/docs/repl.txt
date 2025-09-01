@@ -1,0 +1,41 @@
+
+{{alias}}( arrays )
+    Returns the first index of a search element in a one-dimensional single-
+    precision floating-point ndarray.
+
+    If a specified starting search index is negative, the function resolves the
+    starting search index by counting backward from the last element (where `-1`
+    refers to the last element).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the search element.
+        - a zero-dimensional ndarray containing the index from which to begin
+        searching.
+
+    Returns
+    -------
+    out: integer
+        Index.
+
+    Examples
+    --------
+    > var xbuf = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0 ] );
+    > var dt = 'float32';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var v = {{alias:@stdlib/ndarray/from-scalar}}( 2.0, { 'dtype': dt } );
+    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, v, i ] )
+    1
+
+    See Also
+    --------
+

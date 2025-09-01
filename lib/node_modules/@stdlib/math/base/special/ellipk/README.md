@@ -154,7 +154,7 @@ out = stdlib_base_ellipk( -1.0 );
 
 The function accepts the following arguments:
 
--   **x**: `[in] double` input value.
+-   **m**: `[in] double` input value.
 
 ```c
 double stdlib_base_ellipk( const double m );

@@ -104,7 +104,7 @@ var out = group( arr, opts, groups );
     // returns { '[object Object]': [ 'beep', 'boop', 'foo', 'bar' ] }
     ```
 
-    while each "group" is unique, all collection elements resolve to the same group because each group identifier serializes to the same `string`. 
+    while each "group" is unique, all collection elements resolve to the same group because each group identifier serializes to the same `string`.
 
 </section>
 

@@ -1,0 +1,69 @@
+
+{{alias}}( arrays )
+    Computes a two-sample Z-test for two one-dimensional single-precision
+    floating-point ndarrays.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays in order:
+
+        - first one-dimensional input ndarray.
+        - second one-dimensional input ndarray.
+        - a zero-dimensional output ndarray containing a results object.
+        - a zero-dimensional ndarray specifying the alternative hypothesis.
+        - a zero-dimensional ndarray specifying the significance level.
+        - a zero-dimensional ndarray specifying the difference in means under
+        the null hypothesis.
+        - a zero-dimensional ndarray specifying the known standard deviation of
+        the first one-dimensional input ndarray.
+        - a zero-dimensional ndarray specifying the known standard deviation of
+        the second one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    // Create input ndarrays:
+    > var xbuf = new {{alias:@stdlib/array/float32}}( [ 4.0, 4.0, 6.0, 6.0, 5.0 ] );
+    > var ybuf = new {{alias:@stdlib/array/float32}}( [ 3.0, 3.0, 5.0, 7.0, 7.0 ] );
+    > var dt = 'float32';
+    > var sh = [ xbuf.length ];
+    > var st = [ 1 ];
+    > var oo = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
+    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, st, oo, ord );
+
+    // Create the output ndarray:
+    > var S = {{alias:@stdlib/stats/base/ztest/two-sample/results/float32}};
+    > var Results = {{alias:@stdlib/array/struct-factory}}( S );
+    > var obuf = new Results( 1 );
+    > var out = new {{alias:@stdlib/ndarray/ctor}}( S, obuf, [], [ 0 ], 0, ord );
+
+    // Specify the alternative hypothesis:
+    > var alt = {{alias:@stdlib/ndarray/from-scalar}}( 'two-sided' );
+
+    // Specify the significance level:
+    > var opts = { 'dtype': dt };
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 0.05, opts );
+
+    // Specify the difference in means under the null hypothesis:
+    > var diff = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, opts );
+
+    // Specify the known standard deviations:
+    > var sigmax = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
+    > var sigmay = {{alias:@stdlib/ndarray/from-scalar}}( 2.0, opts );
+
+    // Perform a Z-test:
+    > {{alias}}( [ x, y, out, alt, alpha, diff, sigmax, sigmay ] );
+
+    // Print the results:
+    > out.get().toString()
+
+    See Also
+    --------
+

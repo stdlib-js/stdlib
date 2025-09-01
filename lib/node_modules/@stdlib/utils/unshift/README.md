@@ -42,7 +42,7 @@ var unshift = require( '@stdlib/utils/unshift' );
 
 #### unshift( collection, ...items )
 
-Adds one or more elements to the beginning of a `collection`. A `collection` may be either an [`Array`][mdn-array], [`Typed Array`][mdn-typed-array], or an array-like [`Object`][mdn-object] (i.e., an [`Object`][mdn-object] having a valid writable `length` property). 
+Adds one or more elements to the beginning of a `collection`. A `collection` may be either an [`Array`][mdn-array], [`Typed Array`][mdn-typed-array], or an array-like [`Object`][mdn-object] (i.e., an [`Object`][mdn-object] having a valid writable `length` property).
 
 ```javascript
 var arr = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];

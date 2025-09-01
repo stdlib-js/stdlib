@@ -146,7 +146,7 @@ mod.initializeSync();
 
 #### zcopy.Module.prototype.main( N, xp, sx, yp, sy )
 
-Copies values from `x` into `y` .
+Copies values from `x` into `y`.
 
 <!-- eslint-disable node/no-sync -->
 

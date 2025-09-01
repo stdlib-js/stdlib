@@ -26,10 +26,10 @@ limitations under the License.
 
 The [inverse coversed cosine][inverse-coversed-cosine] is defined as
 
-<!-- <equation class="equation" label="eq:arccovercosine" align="center" raw="\operatorname{acovercos}(\theta) = \arcsin(1+\theta)" alt="Inverse coversed cosine."> -->
+<!-- <equation class="equation" label="eq:arccovercosine" align="center" raw="\operatorname{acovercos}(\theta) = \arcsin(\theta-1)" alt="Inverse coversed cosine."> -->
 
 ```math
-\mathop{\mathrm{acovercos}}(\theta) = \arcsin(1+\theta)
+\mathop{\mathrm{acovercos}}(\theta) = \arcsin(\theta-1)
 ```
 
 <!-- </equation> -->
@@ -52,22 +52,22 @@ Computes the [inverse coversed cosine][inverse-coversed-cosine] of a single-prec
 
 ```javascript
 var v = acovercosf( 0.0 );
-// returns ~1.5708
+// returns ~-1.5708
 
-v = acovercosf( -3.141592653589793 / 2.0 );
-// returns ~-0.6075
+v = acovercosf( 3.141592653589793 / 2.0 );
+// returns ~0.6075
 
-v = acovercosf( -3.141592653589793 / 6.0 );
-// returns ~0.4966
+v = acovercosf( 3.141592653589793 / 6.0 );
+// returns ~-0.4966
 ```
 
-If `x < -2`, `x > 0`, or `x` is `NaN`, the function returns `NaN`.
+If `x < 0`, `x > 2`, or `x` is `NaN`, the function returns `NaN`.
 
 ```javascript
-var v = acovercosf( 1.0 );
+var v = acovercosf( -1.0 );
 // returns NaN
 
-v = acovercosf( -3.14 );
+v = acovercosf( 3.14 );
 // returns NaN
 
 v = acovercosf( NaN );
@@ -89,7 +89,7 @@ var uniform = require( '@stdlib/random/array/uniform' );
 var logEachMap = require( '@stdlib/console/log-each-map' );
 var acovercosf = require( '@stdlib/math/base/special/acovercosf' );
 
-var x = uniform( 100, -2.0, 0.0, {
+var x = uniform( 100, 0.0, 2.0, {
     'dtype': 'float32'
 });
 
@@ -131,8 +131,8 @@ logEachMap( 'acovercosf(%0.4f) = %0.4f', x, acovercosf );
 Computes the [inverse coversed cosine][inverse-coversed-cosine] of a single-precision floating-point number.
 
 ```c
-float out = stdlib_base_acovercosf( -3.141592653589793f / 2.0f );
-// returns ~-0.6075f
+float out = stdlib_base_acovercosf( 3.141592653589793f / 2.0f );
+// returns ~0.6075f
 ```
 
 The function accepts the following arguments:
@@ -166,7 +166,7 @@ float stdlib_base_acovercosf( const float x );
 #include <stdio.h>
 
 int main( void ) {
-    const float x[] = { -2.0f, -1.80f, -1.78f, -1.67f, -0.56f, -0.27f, -1.67f, -0.78f, -1.89f, 0.0f };
+    const float x[] = { 0.0f, 0.27f, 0.56f, 0.78f, 1.67f, 1.70f, 1.78f, 1.80f, 1.89f, 2.0f };
 
     float v;
     int i;
