@@ -77,7 +77,7 @@
     ... };
 
     // Using minimal ndarray-like objects...
-    > x = {
+    > var x = {
     ...     'dtype': dtype,
     ...     'data': xbuf,
     ...     'shape': shx,
@@ -85,7 +85,7 @@
     ...     'offset': ox,
     ...     'order': order
     ... };
-    > initial = {
+    > var initial = {
     ...     'dtype': dtype,
     ...     'data': new {{alias:@stdlib/array/float64}}( [ 0.0 ] ),
     ...     'shape': [],
@@ -93,7 +93,7 @@
     ...     'offset': 0,
     ...     'order': order
     ... };
-    > y = {
+    > var y = {
     ...     'dtype': dtype,
     ...     'data': ybuf,
     ...     'shape': shy,

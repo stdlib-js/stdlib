@@ -135,7 +135,7 @@ logEachMap( '%d^%d - 1 = %0.4f', b, x, powm1 );
 #include "stdlib/math/base/special/powm1.h"
 ```
 
-#### stdlib_base_powm1( base, exponent )
+#### stdlib_base_powm1( b, x )
 
 Evaluates `bˣ - 1`.
 
@@ -149,11 +149,11 @@ out = stdlib_base_powm1( 4.0, 0.5 );
 
 The function accepts the following arguments:
 
--   **base**: `[in] double` base.
--   **exponent**: `[in] double` exponent.
+-   **b**: `[in] double` base.
+-   **x**: `[in] double` exponent.
 
 ```c
-double stdlib_base_powm1( const double base, const double exponent );
+double stdlib_base_powm1( const double b, const double x );
 ```
 
 </section>

@@ -30,7 +30,7 @@
 # make list-pkgs-unpublished LIST_PKGS_STANDALONES_DIR="$PWD/lib/node_modules/\@stdlib/utils"
 #/
 list-pkgs-unpublished:
-	$(QUIET) pkgs=$$(make --no-print-directory list-pkgs-standalones | tr '\n' ' '); \
+	$(QUIET) pkgs=$$($(MAKE) -f $(this_file) --no-print-directory list-pkgs-standalones | tr '\n' ' '); \
 	unpublished_pkgs=""; \
 	for pkg in $$pkgs; do \
 		if [ "$${pkg#*_tools}" != "$$pkg" ]; then \

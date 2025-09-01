@@ -87,3 +87,9 @@ jobs:
         run: |
           make examples-random-javascript RANDOM_SELECTION_SIZE=50
         timeout-minutes: 60
+
+      # Run C examples:
+      - name: 'Run C examples'
+        run: |
+          make examples-random-c RANDOM_SELECTION_SIZE=10
+        timeout-minutes: 60

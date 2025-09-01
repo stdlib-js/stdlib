@@ -1,0 +1,56 @@
+
+{{alias}}( arrays )
+    Tests whether at least one element in an ndarray is truthy.
+
+    A provided "ndarray" should be an `object` with the following properties:
+
+    - dtype: data type.
+    - data: data buffer.
+    - shape: dimensions.
+    - strides: stride lengths.
+    - offset: index offset.
+    - order: specifies whether an ndarray is row-major (C-style) or column-major
+    (Fortran-style).
+
+    If provided an empty ndarray, the function returns `false`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing an input ndarray.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether at least one element in an ndarray is truthy.
+
+    Examples
+    --------
+    // Define ndarray data and meta data...
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, 0.0, 1.0, 0.0 ] );
+    > var dt = 'float64';
+    > var sh = [ 2, 2 ];
+    > var sx = [ 2, 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+
+    // Using an ndarray...
+    > var x = {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > {{alias}}( [ x ] )
+    true
+
+    // Using a minimal ndarray-like object...
+    > xbuf = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > x = {
+    ...     'dtype': dt,
+    ...     'data': xbuf,
+    ...     'shape': sh,
+    ...     'strides': sx,
+    ...     'offset': ox,
+    ...     'order': ord
+    ... };
+    > {{alias}}( [ x ] )
+    false
+
+    See Also
+    --------
