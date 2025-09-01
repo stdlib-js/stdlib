@@ -66,7 +66,7 @@ endif
 endif
 
 # Append user-supplied command-line options:
-eslint_flags += ESLINT_FLAGS
+eslint_flags += $(ESLINT_FLAGS)
 
 # RULES #
 
@@ -256,6 +256,7 @@ ifeq ($(FAIL_FAST), true)
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file || exit 1; \
+	done
 else
 	$(QUIET) status=0; \
 	for file in $(FILES); do \
