@@ -50,7 +50,7 @@ var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
 var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
 
 var ybuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0 ] );
-var y = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var y = new ndarray( 'float64', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 
 var initial = scalar2ndarray( 0.0, 'float64', 'row-major' );
 

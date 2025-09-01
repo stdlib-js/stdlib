@@ -19,8 +19,6 @@
 #ifndef STDLIB_MATH_BASE_SPECIAL_NONFIBONACCIF_H
 #define STDLIB_MATH_BASE_SPECIAL_NONFIBONACCIF_H
 
-#include <stdint.h>
-
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -32,7 +30,7 @@ extern "C"
 /**
 * Computes the nth non-Fibonacci single-precision floating-point number.
 */
-float stdlib_base_nonfibonaccif( const int32_t n );
+float stdlib_base_nonfibonaccif( const float n );
 
 #ifdef __cplusplus
 }

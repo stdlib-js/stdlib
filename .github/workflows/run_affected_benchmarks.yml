@@ -50,9 +50,11 @@ jobs:
 
   # Define a job for running changed benchmarks...
   process:
-
     # Define a display name:
     name: 'Run affected benchmarks'
+
+    # Only run this job if a pull request does not have a "ci: Skip" label:
+    if: "${{ github.event_name != 'pull_request' || !contains(github.event.pull_request.labels.*.name, 'ci: Skip') }}"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -149,4 +151,4 @@ jobs:
             directories="${{ steps.changed-directories.outputs.directories }}"
           fi
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_benchmarks" "$directories"
-        timeout-minutes: 30
+        timeout-minutes: 60

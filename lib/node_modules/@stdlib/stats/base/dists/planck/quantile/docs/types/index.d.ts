@@ -48,15 +48,15 @@ interface Quantile {
 	*
 	* @example
 	* var y = quantile( 0.8, 0.4 );
-	* // returns 4
+	* // returns 4.0
 	*
 	* @example
 	* var y = quantile( 0.5, 1.4 );
-	* // returns 0
+	* // returns 0.0
 	*
 	* @example
 	* var y = quantile( 0.9, 2.1 );
-	* // returns 1
+	* // returns 1.0
 	*
 	* @example
 	* var y = quantile( 0.2, -0.1 );
@@ -89,10 +89,10 @@ interface Quantile {
 	* @example
 	* var myquantile = quantile.factory( 0.4 );
 	* var y = myquantile( 0.4 );
-	* // returns 1
+	* // returns 1.0
 	*
 	* y = myquantile( 0.8 );
-	* // returns 4
+	* // returns 4.0
 	*
 	* y = myquantile( 1.0 );
 	* // returns Infinity
@@ -109,17 +109,17 @@ interface Quantile {
 *
 * @example
 * var y = quantile( 0.8, 0.4 );
-* // returns 4
+* // returns 4.0
 *
 * y = quantile( 0.5, 1.4 );
-* // returns 0
+* // returns 0.0
 *
 * var myquantile = quantile.factory( 0.4 );
 * y = myquantile( 0.4 );
-* // returns 1
+* // returns 1.0
 *
 * y = myquantile( 0.8 );
-* // returns 4
+* // returns 4.0
 *
 * y = myquantile( 1.0 );
 * // returns Infinity

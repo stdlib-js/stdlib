@@ -240,7 +240,7 @@ Scales values from `X` by `alpha` and adds the result to `Y` using alternative i
 #include "stdlib/complex/float32/ctor.h"
 
 float X[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
-float Y[] = { -1.0f, -2.0f, -3.0f, -4.0f, -5.0f, -6.0f, -7.0f, -8.0f }
+float Y[] = { -1.0f, -2.0f, -3.0f, -4.0f, -5.0f, -6.0f, -7.0f, -8.0f };
 const stdlib_complex64_t alpha = stdlib_complex64( 2.0f, 2.0f );
 
 c_caxpy_ndarray( 4, alpha, (void *)X, 1, 0, (void *)Y, 1, 0 );

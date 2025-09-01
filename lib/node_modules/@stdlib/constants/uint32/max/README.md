@@ -32,7 +32,7 @@ var UINT32_MAX = require( '@stdlib/constants/uint32/max' );
 
 #### UINT32_MAX
 
-Maximum unsigned 32-bit `integer`. 
+Maximum unsigned 32-bit `integer`.
 
 ```javascript
 var bool = ( UINT32_MAX === 4294967295 );
