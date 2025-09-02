@@ -1,0 +1,30 @@
+
+{{alias}}( x, indices, value )
+    Returns a new ndarray with the element at a specified index replaced by a
+    provided value.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    indices: Array<integer>
+        Indices of the value to replace.
+
+    value: any
+        Replaced value.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var out = {{alias}}( x, [ 0, 0 ], 5 );
+    > var v = out.get( 0, 0 )
+    5
+
+    See Also
+    --------
