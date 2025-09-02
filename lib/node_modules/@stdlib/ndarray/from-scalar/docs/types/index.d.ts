@@ -305,8 +305,8 @@ declare function scalar2ndarray( value: number | ComplexLike, options: Complex64
 *
 * @example
 * var x = scalar2ndarray( true, {
-*     'dtype': bool'
-* };
+*     'dtype': 'bool'
+* });
 * // returns <ndarray>
 *
 * var sh = x.shape;
@@ -329,7 +329,7 @@ declare function scalar2ndarray( value: boolean, options: BoolOptions ): boolnda
 *
 * @example
 * var x = scalar2ndarray( 1, {
-*     'dtype': int32'
+*     'dtype': 'int32'
 * };
 * // returns <ndarray>
 *
@@ -377,8 +377,8 @@ declare function scalar2ndarray( value: number, options: Int16Options ): int16nd
 *
 * @example
 * var x = scalar2ndarray( 1, {
-*     'dtype': int8' )
-* }
+*     'dtype': 'int8'
+* });
 * // returns <ndarray>
 *
 * var sh = x.shape;
@@ -401,7 +401,7 @@ declare function scalar2ndarray( value: number, options: Int8Options ): int8ndar
 *
 * @example
 * var x = scalar2ndarray( 1, {
-*     'dtype': uint32'
+*     'dtype': 'uint32'
 * });
 * // returns <ndarray>
 *
@@ -425,7 +425,7 @@ declare function scalar2ndarray( value: number, options: Uint32Options ): uint32
 *
 * @example
 * var x = scalar2ndarray( 1, {
-*     'dtype': uint16'
+*     'dtype': 'uint16'
 * });
 * // returns <ndarray>
 *
@@ -449,7 +449,7 @@ declare function scalar2ndarray( value: number, options: Uint16Options ): uint16
 *
 * @example
 * var x = scalar2ndarray( 1, {
-*     'dtype': uint8'
+*     'dtype': 'uint8'
 * };
 * // returns <ndarray>
 *
@@ -507,7 +507,7 @@ declare function scalar2ndarray( value: number, options: Uint8cOptions ): uint8c
 *
 * @example
 * var x = scalar2ndarray( 1.0, {
-*     'dtype': generic'
+*     'dtype': 'generic'
 * });
 * // returns <ndarray>
 *

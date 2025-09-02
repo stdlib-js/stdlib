@@ -47,6 +47,17 @@ else
 endif
 endif
 
+# Indicate whether to build native add-ons:
+ifndef BUILD_ADDONS
+	BUILD_NATIVE_ADDONS := false
+else
+ifeq ($(BUILD_ADDONS), 1)
+	BUILD_NATIVE_ADDONS := true
+else
+	BUILD_NATIVE_ADDONS := false
+endif
+endif
+
 # Indicate whether to fix linting errors:
 ifndef FIX
 	AUTOFIX := false

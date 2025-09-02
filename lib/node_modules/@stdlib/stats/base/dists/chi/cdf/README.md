@@ -121,6 +121,96 @@ y = mycdf( 1.5 );
 // returns ~0.478
 ```
 
+* * *
+
+### C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+#### Usage
+
+```c
+#include "stdlib/stats/base/dists/chi/cdf.h"
+```
+
+#### stdlib_base_dists_chi_cdf( x, k )
+
+Evaluates the cumulative distribution function (CDF) for a chi distribution with degrees of freedom `k`.
+
+```c
+double out = stdlib_base_dists_chi_cdf( 2.0, 1.0 );
+// returns ~0.954
+
+out = stdlib_base_dists_chi_cdf( 2.0, 3.0 );
+// returns ~0.739
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **k**: `[in] double` degrees of freedom.
+
+```c
+double stdlib_base_dists_chi_cdf( const double x, const double k );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/chi/cdf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( double a, double b ) {
+    double r = ( (double)rand() / ( (double)RAND_MAX + 1.0 ) );
+    return a + ( r * ( b - a ) );
+}
+
+int main( void ) {
+    double x;
+    double k;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        x = random_uniform( 0.0, 2.0 );
+        k = random_uniform( 1.0, 10.0 );
+        y = stdlib_base_dists_chi_cdf( x, k );
+        printf( "x: %lf, k: %lf, F(x;k): %lf\n", x, k, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
 </section>
 
 <!-- /.usage -->

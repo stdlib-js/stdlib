@@ -126,7 +126,7 @@ logEachMap( 'absf(%d) = %d', x, absf );
 
 #### stdlib_base_absf( x )
 
-Computes the squared absolute value of a single-precision floating-point number.
+Computes the absolute value of a single-precision floating-point number.
 
 ```c
 float y = stdlib_base_absf( -5.0f );

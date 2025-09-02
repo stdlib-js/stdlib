@@ -73,7 +73,7 @@ if ( err instanceof Error ) {
 
 ## Notes
 
--   If a provided `path` is a symbolic link, the function removes the symbolic link named by the `path` and does not affect any file or directory named by the contents of the symbolic link. Otherwise, the function removes the link named by the provided `path` and decrements the link count of the file referenced by the link. 
+-   If a provided `path` is a symbolic link, the function removes the symbolic link named by the `path` and does not affect any file or directory named by the contents of the symbolic link. Otherwise, the function removes the link named by the provided `path` and decrements the link count of the file referenced by the link.
 
     When a file's link count becomes `0` and no process has the file open, the space occupied by the file is freed and the file is no longer accessible. If one or more processes have the file open when the last link is removed, the link is removed before the function returns; however, the removal of file contents is postponed until all references to the file are closed.
 

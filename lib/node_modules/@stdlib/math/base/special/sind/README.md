@@ -20,7 +20,7 @@ limitations under the License.
 
 # sind
 
-> Computes the [sine][trigonometric-functions] of an angle measured in degrees.
+> Compute the [sine][trigonometric-functions] of an angle measured in degrees.
 
 <section class="intro">
 

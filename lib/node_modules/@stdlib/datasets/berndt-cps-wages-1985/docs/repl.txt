@@ -12,7 +12,7 @@
     - experience: number of years of work experience.
     - union: indicator variable for union membership (1 if union member; 0 if
     not a union member).
-    - wage: wage (in dollars per hour).
+    - wage: log-transformed wage (in dollars per hour).
     - age: age (in years).
     - race: ethnicity/race (white, hispanic, and other).
     - occupation: occupational category (management, sales, clerical, service,
