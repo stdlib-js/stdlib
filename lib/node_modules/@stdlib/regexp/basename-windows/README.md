@@ -32,7 +32,7 @@ var reBasenameWindows = require( '@stdlib/regexp/basename-windows' );
 
 #### reBasenameWindows()
 
-Returns a [regular expression][regexp] to capture the last part of a Windows path. 
+Returns a [regular expression][regexp] to capture the last part of a Windows path.
 
 ```javascript
 var RE = reBasenameWindows();
@@ -42,7 +42,7 @@ var base = RE.exec( 'foo\\bar\\index.js' )[ 1 ];
 
 #### reBasenameWindows.REGEXP
 
-[Regular expression][regexp] to capture the last part of a Windows path. 
+[Regular expression][regexp] to capture the last part of a Windows path.
 
 ```javascript
 var match = reBasenameWindows.REGEXP.exec( 'foo\\file.pdf' )[ 1 ];

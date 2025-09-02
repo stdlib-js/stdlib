@@ -259,11 +259,11 @@ console.log( x.get( 0 ).toString() );
 
 <!-- /.examples -->
 
-<!-- C interface documentation >
+<!-- C interface documentation. -->
 
 * * *
 
-<section class="C">
+<section class="c">
 
 ## C APIs
 

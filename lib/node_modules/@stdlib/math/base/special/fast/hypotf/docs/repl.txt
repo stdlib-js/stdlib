@@ -1,0 +1,33 @@
+
+{{alias}}( x, y )
+    Computes the hypotenuse of a single-precision floating-point number.
+
+    Parameters
+    ----------
+    x: number
+        First number.
+
+    y: number
+        Second number.
+
+    Returns
+    -------
+    out: number
+        Hypotenuse.
+
+    Examples
+    --------
+    > var h = {{alias}}( -5.0, 12.0 )
+    13.0
+
+    // For a sufficiently large `x` and/or `y`, the function overflows:
+    > h = {{alias}}( 1.0e38, 1.0e38 )
+    Infinity
+
+    // For sufficiently small `x` and/or `y`, the function underflows:
+    > h = {{alias}}( 1.0e-45, 1.0e-45 )
+    0.0
+
+    See Also
+    --------
+

@@ -204,7 +204,6 @@ double stdlib_base_dists_geometric_pmf( const double x, const double p );
 #include "stdlib/math/base/special/round.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
 
 static double random_uniform( const double min, const double max ) {
     double v = (double)rand() / ( (double)RAND_MAX + 1.0 );

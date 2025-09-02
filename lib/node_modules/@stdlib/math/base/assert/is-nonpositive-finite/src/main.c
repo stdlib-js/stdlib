@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_nonpositive_finite.h"
 #include "stdlib/constants/float64/ninf.h"
+#include <stdbool.h>
 
 /**
 * Tests if a numeric value is a nonpositive finite number.

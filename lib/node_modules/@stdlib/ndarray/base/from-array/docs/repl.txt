@@ -1,0 +1,27 @@
+
+{{alias}}( buf, order )
+    Returns a zero-dimensional ndarray containing a provided scalar value.
+
+    Parameters
+    ----------
+    buf: ArrayLikeObject
+        Input array.
+
+    order: string
+        Memory layout (either 'row-major' or 'column-major').
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias}}( [ 1, 2, 3 ], 'row-major' )
+    <ndarray>
+    > {{alias:@stdlib/ndarray/shape}}( x )
+    [ 3 ]
+
+    See Also
+    --------
+

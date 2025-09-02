@@ -1,0 +1,127 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: generate_monthly_changelog
+
+# Workflow triggers:
+on:
+  # Run the workflow at midnight UTC on the first day of each month:
+  schedule:
+    - cron: '0 0 1 * *'
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+  # Generate a monthly changelog:
+  generate-monthly-changelog:
+    # Define a display name:
+    name: 'Generate Monthly Changelog'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Workflow steps:
+    steps:
+      - name: 'Checkout source repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Fetch entire history so that we are guaranteed to have all commit messages for the last month:
+          fetch-depth: 0
+
+          # Token for accessing the repository:
+          token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '20' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      - name: 'Checkout monthly changelog repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          # Monthly changelog repository:
+          repository: 'stdlib-js/www-blog-monthly-changelog'
+
+          # File path to checkout to:
+          path: './www-blog-monthly-changelog'
+
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Token for accessing the repository:
+          token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
+
+      # Generate changelog for last month:
+      - name: 'Generate changelog for last month'
+        run: |
+          UNTIL=$(date +"%Y-%m-01")
+          node lib/node_modules/@stdlib/_tools/scripts/generate_monthly_changelog.js > ./www-blog-monthly-changelog/monthly_changelog_${UNTIL//-/_}.md
+
+      # Import GPG key to sign commits:
+      - name: 'Import GPG key to sign commits'
+        # Pin action to full length commit SHA
+        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
+        with:
+          gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
+      # Commit and push changes:
+      - name: 'Commit and push changes'
+        env:
+          REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          USER_NAME: stdlib-bot
+        run: |
+          cd ./www-blog-monthly-changelog
+          git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
+          git config --local user.name "stdlib-bot"
+          git add .
+          git commit -m "Add monthly changelog" || exit 0
+          git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-blog-monthly-changelog.git" main

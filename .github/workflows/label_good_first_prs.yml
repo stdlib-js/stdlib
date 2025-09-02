@@ -1,0 +1,95 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: label_good_first_prs
+
+# Workflow triggers:
+on:
+  pull_request_target:
+    types:
+      - opened
+      - closed
+      - synchronize
+      - reopened
+      - edited
+
+# Workflow jobs:
+jobs:
+
+  # Define a job which automatically labels pull requests based on whether they reference good first issues
+  labeler:
+
+    # Define job name:
+    name: 'Label PRs for issues with label "Good First Issue" as "Good First PR"s'
+
+    # Only run this job if the pull request did not have label `automated-pr`:
+    if: contains(github.event.pull_request.labels.*.name, 'automated-pr') == false
+
+    # Define job permissions:
+    permissions:
+      # Allow read-only access to the repository contents:
+      contents: read
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          # Ensure we have access to the scripts directory:
+          sparse-checkout: |
+              .github/workflows/scripts
+          sparse-checkout-cone-mode: false
+        timeout-minutes: 10
+
+      # Check whether any of the referenced issues is a "Good First Issue":
+      - name: 'Check whether any of the referenced issues is a "Good First Issue"'
+        id: 'check-pr'
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          bool=$(. "$GITHUB_WORKSPACE/.github/workflows/scripts/references_good_first_issue" $PR_NUMBER)
+          echo "good-first-pr=$bool" >> $GITHUB_OUTPUT
+
+      # Add "Good First PR" label if PR references a "Good First Issue"
+      - name: 'Add "Good First PR" label if PR references a "Good First Issue"'
+        if: ${{ steps.check-pr.outputs.good-first-pr == 'true' }}
+        # Pin action to full-length commit SHA
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          script: |
+            const { data: pr } = await github.rest.pulls.get({
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'pull_number': context.payload.pull_request.number
+            });
+            const labels = context.payload.pull_request.labels.map( label => label.name );
+            if ( !labels.includes( 'Good First PR' ) ) {
+              await github.rest.issues.addLabels({
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'issue_number': context.payload.pull_request.number,
+                'labels': [ 'Good First PR' ]
+              });
+            }
