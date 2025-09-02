@@ -70,3 +70,40 @@ benchmark-javascript-files: $(NODE_MODULES)
 	done
 
 .PHONY: benchmark-javascript-files
+
+#/
+# Runs random JavaScript benchmarks consecutively.
+#
+# @param {string} [PACKAGES_PATTERN='package.json'] - filename pattern for identifying packages
+# @param {string} [PACKAGES_FILTER='.*/.*'] - filepath pattern for finding packages
+# @param {string} [RANDOM_SELECTION_SIZE=100] - number of packages
+# @param {*} [BUILD_ADDONS] - flag indicating whether to build native add-ons
+#
+# @example
+# make benchmark-random-javascript
+#
+# @example
+# make benchmark-random-javascript RANDOM_SELECTION_SIZE=10
+#/
+benchmark-random-javascript: $(NODE_MODULES)
+ifeq ($(BUILD_NATIVE_ADDONS), true)
+	$(QUIET) $(MAKE) -f $(this_file) -s list-random-lib-pkgs | while read -r pkg; do \
+		echo ""; \
+		echo "Running benchmark: $$pkg"; \
+		pattern=$$(echo "$$pkg" | sed -n -e 's/^.*\(@stdlib\)/\1/p') \
+		NODE_ADDONS_PATTERN="$$pattern" $(MAKE) -f $(this_file) install-node-addons; \
+		NODE_ENV="$(NODE_ENV_BENCHMARK)" \
+		NODE_PATH="$(NODE_PATH_BENCHMARK)" \
+		$(MAKE) -f $(this_file) benchmark-javascript BENCHMARKS_FILTER="$$pkg/.*" || exit 1; \
+	done
+else
+	$(QUIET) $(MAKE) -f $(this_file) -s list-random-lib-pkgs | while read -r pkg; do \
+		echo ""; \
+		echo "Running benchmark: $$pkg"; \
+		NODE_ENV="$(NODE_ENV_BENCHMARK)" \
+		NODE_PATH="$(NODE_PATH_BENCHMARK)" \
+		$(MAKE) -f $(this_file) benchmark-javascript BENCHMARKS_FILTER="$$pkg/.*" || exit 1; \
+	done
+endif
+
+.PHONY: benchmark-random-javascript

@@ -764,28 +764,28 @@ int main( void ) {
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
 		printf( "# c::native::%s:mode=normalize,order=row-major\n", NAME );
-		elapsed = benchmark9();
+		elapsed = benchmark13();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
 		printf( "# c::native::%s:mode=normalize,order=column-major\n", NAME );
-		elapsed = benchmark10();
+		elapsed = benchmark14();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
 		printf( "# c::native::%s:mode=normalize,order=row-major,offset=0\n", NAME );
-		elapsed = benchmark11();
+		elapsed = benchmark15();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
 		printf( "# c::native::%s:mode=normalize,order=column-major,offset=0\n", NAME );
-		elapsed = benchmark12();
+		elapsed = benchmark16();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
