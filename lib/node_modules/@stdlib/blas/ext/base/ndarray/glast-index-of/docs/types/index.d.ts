@@ -40,7 +40,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *     'dtype': 'generic'
 * });
 *
-* var fromIndex = scalar2ndarray( 0, {
+* var fromIndex = scalar2ndarray( 3, {
 *     'dtype': 'generic'
 * });
 *
