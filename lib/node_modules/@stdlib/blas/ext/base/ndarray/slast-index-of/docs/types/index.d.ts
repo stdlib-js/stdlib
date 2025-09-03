@@ -34,14 +34,14 @@ import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 * var slastIndexOf = require( '@stdlib/blas/ext/base/ndarray/slast-index-of' );
 *
-* var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
+* var xbuf = new Float32Array( [ 1.0, 2.0, 4.0, 2.0 ] );
 * var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
 *
 * var searchElement = scalar2ndarray( 2.0, {
 *     'dtype': 'float32'
 * });
 *
-* var fromIndex = scalar2ndarray( 0, {
+* var fromIndex = scalar2ndarray( 3, {
 *     'dtype': 'generic'
 * });
 *
