@@ -157,7 +157,7 @@ var o = blas;
 
 ### Utilities
 
-<!-- <toc pattern="+(*assert|*diagonal*|*layout*|*matrix*|*operation*|*transpose*)"> -->
+<!-- <toc pattern="+(*assert|*diagonal*|*layout*|*matrix*|*orientation*|*operation*|*transpose*)"> -->
 
 <div class="namespace-toc">
 

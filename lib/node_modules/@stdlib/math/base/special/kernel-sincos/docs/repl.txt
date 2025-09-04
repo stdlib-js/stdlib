@@ -1,0 +1,39 @@
+
+{{alias}}( x, y, out, stride, offset )
+    Simultaneously computes the sine and cosine of an angle measured in
+    radians within the interval [-π/4, π/4] and stores the results in a
+    provided output array.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    y: number
+        Tail of `x`.
+
+    out: Array<number>
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    y: Array<number>
+        Sine and cosine.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float64}}( 2 );
+    > var v = {{alias}}( 0.0, 0.0, out, 1, 0 )
+    <Float64Array>[ ~0.0, ~1.0 ]
+    > var bool = ( v === out )
+    true
+
+    See Also
+    --------
+

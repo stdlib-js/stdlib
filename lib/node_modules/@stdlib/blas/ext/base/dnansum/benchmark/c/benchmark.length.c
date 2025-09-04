@@ -111,6 +111,7 @@ static double benchmark1( int iterations, int len ) {
 	v = 0.0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
 		v = stdlib_strided_dnansum( len, x, 1 );
 		if ( v != v ) {
 			printf( "should not return NaN\n" );
@@ -148,6 +149,7 @@ static double benchmark2( int iterations, int len ) {
 	v = 0.0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
 		v = stdlib_strided_dnansum_ndarray( len, x, 1, 0 );
 		if ( v != v ) {
 			printf( "should not return NaN\n" );

@@ -53,7 +53,7 @@ The function has the following parameters:
 -   **x**: input [`Float64Array`][mdn-float64array].
 -   **sx**: stride length for `x`.
 -   **A**: input matrix stored in linear memory as a [`Float64Array`][mdn-float64array].
--   **lda**: stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+-   **LDA**: stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
 
 The stride parameters determine how elements in the input arrays are accessed at runtime. For example, to iterate over the elements of `x` in reverse order,
 

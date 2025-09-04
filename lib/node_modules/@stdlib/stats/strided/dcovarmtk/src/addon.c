@@ -41,8 +41,8 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 	STDLIB_NAPI_ARGV_DOUBLE( env, meany, argv, 5 );
 	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 4 );
 	STDLIB_NAPI_ARGV_INT64( env, strideY, argv, 7 );
-	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 3 )
-	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, strideY, argv, 6 )
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 3 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, Y, N, strideY, argv, 6 );
 	STDLIB_NAPI_CREATE_DOUBLE( env, API_SUFFIX(stdlib_strided_dcovarmtk)( N, correction, meanx, X, strideX, meany, Y, strideY ), v );
 	return v;
 }

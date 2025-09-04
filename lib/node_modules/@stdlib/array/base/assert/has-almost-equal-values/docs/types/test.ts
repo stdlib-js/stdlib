@@ -26,7 +26,7 @@ import hasAlmostEqualValues = require( './index' );
 {
 	const x = [ 1, 2, 3 ];
 
-	hasAlmostEqualValues( x, x ); // $ExpectType boolean
+	hasAlmostEqualValues( x, x, 0 ); // $ExpectType boolean
 	hasAlmostEqualValues( new Float64Array( x ), new Float64Array( x ), 0 ); // $ExpectType boolean
 	hasAlmostEqualValues( new Float32Array( x ), new Float32Array( x ), 0 ); // $ExpectType boolean
 	hasAlmostEqualValues( new Int32Array( x ), new Int32Array( x ), 0 ); // $ExpectType boolean
