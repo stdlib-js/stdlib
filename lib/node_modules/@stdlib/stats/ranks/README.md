@@ -132,32 +132,27 @@ var out = ranks( data, {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Int32Array = require( '@stdlib/array/int32' );
-var round = require( '@stdlib/math/base/special/round' );
-var randu = require( '@stdlib/random/base/randu' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var join = require( '@stdlib/array/base/join' );
 var ranks = require( '@stdlib/stats/ranks' );
 
-var data;
-var out;
-var i;
+// Plain array:
+var data = discreteUniform( 0, 10, {
+    'dtype': 'generic'
+});
 
-// Plain arrays...
-data = [];
-for ( i = 0; i < data.length; i++ ) {
-    data.push( round( randu()*10.0 ) );
-}
+var out = ranks( data );
+console.log( 'data: [ %s ]', join( data, ', ' ) );
+console.log( 'ranks: [ %s ]', join( out, ', ' ) );
 
-out = ranks( data );
-// returns <array>
-
-// Typed arrays...
-data = new Int32Array( 10 );
-for ( i = 0; i < data.length; i++ ) {
-    data[ i ] = randu() * 10.0;
-}
+// Typed array:
+data = discreteUniform( 0, 10, {
+    'dtype': 'int32'
+});
 
 out = ranks( data );
-// returns <array>
+console.log( 'data: [ %s ]', join( data, ', ' ) );
+console.log( 'ranks: [ %s ]', join( out, ', ' ) );
 ```
 
 </section>
