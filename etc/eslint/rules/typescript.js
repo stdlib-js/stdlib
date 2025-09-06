@@ -2712,6 +2712,17 @@ rules[ 'yoda' ] = 'error';
 */
 rules[ 'expect-type/expect' ] = 'error';
 
+/**
+* Ensures return annotations in TSDoc examples match the actual output.
+*
+* @name stdlib/tsdoc-doctest
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see {@link module:@stdlib/_tools/eslint/rules/tsdoc-doctest}
+*/
+rules[ 'stdlib/tsdoc-doctest' ] = 'error';
+
 
 // EXPORTS //
 
