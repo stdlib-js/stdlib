@@ -17,42 +17,42 @@
 */
 
 #include "stdlib/math/base/special/factorial2f.h"
-#include "stdlib/math/base/assert/int32_is_even.h"
+#include "stdlib/math/base/assert/is_evenf.h"
 #include "stdlib/constants/float32/pinf.h"
 #include "stdlib/constants/float32/max_nth_double_factorial.h"
-#include <stdint.h>
+#include "stdlib/math/base/assert/is_nonnegative_integerf.h"
 
 /**
 * Evaluates the double factorial of `n` as a single-precision floating-point number.
 *
-* @param x         input value
+* @param n         input value
 * @return          double factorial
 *
 * @example
-* float v = stdlib_base_factorial2f( 3 );
+* float v = stdlib_base_factorial2f( 3.0f );
 * // returns 3.0f
 */
-float stdlib_base_factorial2f( const int32_t n ) {
-	int32_t last;
-	int32_t i;
+float stdlib_base_factorial2f( const float n ) {
+	float last;
 	float out;
+	float i;
 
+	if ( !stdlib_base_is_nonnegative_integerf( n ) ) {
+		return 0.0f / 0.0f; // NaN
+	}
 	if ( n > STDLIB_CONSTANT_FLOAT32_MAX_NTH_DOUBLE_FACTORIAL ) {
 		return STDLIB_CONSTANT_FLOAT32_PINF;
 	}
-	if ( n < 0 ) {
-		return 0.0f / 0.0f; // NaN
-	}
-	if ( n == 0 || n == 1 ) {
+	if ( n == 0.0f || n == 1.0f ) {
 		return 1.0f;
 	}
-	if ( stdlib_base_int32_is_even( n ) ) {
-		last = 2;
+	if ( stdlib_base_is_evenf( n ) ) {
+		last = 2.0f;
 	} else {
-		last = 3;
+		last = 3.0f;
 	}
 	out = 1.0f;
-	for ( i = n; i >= last; i -= 2 ) {
+	for ( i = n; i >= last; i -= 2.0f ) {
 		out *= i;
 	}
 	return out;

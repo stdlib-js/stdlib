@@ -37,9 +37,10 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/assert/int32-is-even",
+        "@stdlib/math/base/assert/is-evenf",
         "@stdlib/constants/float32/pinf",
-        "@stdlib/constants/float32/max-nth-double-factorial"
+        "@stdlib/constants/float32/max-nth-double-factorial",
+        "@stdlib/math/base/assert/is-nonnegative-integerf"
       ]
     },
     {
@@ -53,9 +54,10 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/int32-is-even",
+        "@stdlib/math/base/assert/is-evenf",
         "@stdlib/constants/float32/pinf",
-        "@stdlib/constants/float32/max-nth-double-factorial"
+        "@stdlib/constants/float32/max-nth-double-factorial",
+        "@stdlib/math/base/assert/is-nonnegative-integerf"
       ]
     },
     {
@@ -69,9 +71,10 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/int32-is-even",
+        "@stdlib/math/base/assert/is-evenf",
         "@stdlib/constants/float32/pinf",
-        "@stdlib/constants/float32/max-nth-double-factorial"
+        "@stdlib/constants/float32/max-nth-double-factorial",
+        "@stdlib/math/base/assert/is-nonnegative-integerf"
       ]
     }
   ]
