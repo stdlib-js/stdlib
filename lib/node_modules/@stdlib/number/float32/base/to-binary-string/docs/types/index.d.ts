@@ -35,6 +35,7 @@
 * // returns '01000000010010010000111111011011'
 *
 * @example
+* var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 * var str = toBinaryStringf( toFloat32( -1e38 ) );
 * // returns '11111110100101100111011010011001'
 *
