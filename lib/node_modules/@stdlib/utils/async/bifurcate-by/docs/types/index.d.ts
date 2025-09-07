@@ -285,7 +285,7 @@ interface BifurcateByAsync {
 	* };
 	*
 	* // Create a `bifurcateByAsync` function which invokes the predicate function for each collection element sequentially:
-	* var bifurcateByAsync = factory( opts, predicate );
+	* var bifurcateBy = bifurcateByAsync.factory( opts, predicate );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -302,7 +302,7 @@ interface BifurcateByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* bifurcateByAsync( files, done );
+	* bifurcateBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( options: Options<T, V>, predicate: Predicate<T, V> ): FactoryFunction<T>;
 
@@ -338,7 +338,7 @@ interface BifurcateByAsync {
 	* };
 	*
 	* // Create a `bifurcateByAsync` function which invokes the predicate function for each collection element sequentially:
-	* var bifurcateByAsync = factory( opts, predicate );
+	* var bifurcateBy = bifurcateByAsync.factory( opts, predicate );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -355,7 +355,7 @@ interface BifurcateByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* bifurcateByAsync( files, done );
+	* bifurcateBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>;
 }

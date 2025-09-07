@@ -188,7 +188,8 @@ jsconfig.json
 # Other editor files #
 ######################
 .idea/
-
-# Cursor #
-##########
 .cursorignore
+
+# AI coding agents #
+####################
+claude.md
