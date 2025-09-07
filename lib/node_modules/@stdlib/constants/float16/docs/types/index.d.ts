@@ -51,7 +51,7 @@ interface Namespace {
 	* Difference between one and the smallest value greater than one that can be represented as a half-precision floating-point number.
 	*
 	* @example
-	* var eps = ns.EPSILON;
+	* var eps = ns.EPS;
 	* // returns 0.0009765625
 	*/
 	EPS: typeof EPS;
@@ -97,7 +97,7 @@ interface Namespace {
 	*
 	* @example
 	* var ninf = ns.NINF;
-	* // returns -infinity
+	* // returns -Infinity
 	*/
 	NINF: typeof NINF;
 
@@ -115,7 +115,7 @@ interface Namespace {
 	*
 	* @example
 	* var pinf = ns.PINF;
-	* // returns +infinity
+	* // returns Infinity
 	*/
 	PINF: typeof PINF;
 

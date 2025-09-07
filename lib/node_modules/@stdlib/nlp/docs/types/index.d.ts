@@ -110,7 +110,7 @@ interface Namespace {
 	*
 	* @example
 	* var out = ns.ordinalize( '7', { 'lang': 'es' } );
-	* // returns '7ª'
+	* // returns '7º'
 	*/
 	ordinalize: typeof ordinalize;
 

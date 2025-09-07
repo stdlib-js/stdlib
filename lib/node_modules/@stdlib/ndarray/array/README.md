@@ -54,7 +54,7 @@ var arr = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
 
 To initialize multidimensional array data, provide a `buffer` argument, which may be a [generic array][@stdlib/array/generic], [typed array][@stdlib/array/typed], [Buffer][@stdlib/buffer/ctor], or [ndarray][@stdlib/ndarray/ctor].
 
-<!-- eslint-disable object-curly-spacing, object-curly-newline -->
+<!-- eslint-disable object-curly-spacing, object-curly-newline, stdlib/line-closing-bracket-spacing -->
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -77,54 +77,54 @@ arr = array( array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ) );
 // returns <ndarray>
 ```
 
-The function accepts the following `options`:
+The function accepts the following options:
 
 -   **buffer**: data source. If provided along with a `buffer` argument, the argument takes precedence.
 
--   **dtype**: underlying storage [data type][@stdlib/ndarray/dtypes]. If not specified and a data source is provided, the data type is inferred from the provided data source. If an input data source is not of the same type, this option specifies the data type to which to cast the input data. For non-[`ndarray`][@stdlib/ndarray/ctor] generic array data sources, the function casts generic array data elements to the default data type. In order to prevent this cast, the `dtype` option **must** be explicitly set to `'generic'`. Any time a cast is required, the `copy` option is set to `true`, as memory must be copied from the data source to an output data buffer. Default: `'float64'`.
+-   **dtype**: underlying storage [data type][@stdlib/ndarray/dtypes]. If not specified and a data source is provided, the data type is inferred from the provided data source. If an input data source is not of the same type, this option specifies the data type to which to cast the input data. For non-[ndarray][@stdlib/ndarray/ctor] generic array data sources, the function casts generic array data elements to the default data type. In order to prevent this cast, the `dtype` option **must** be explicitly set to `'generic'`. Any time a cast is required, the `copy` option is set to `true`, as memory must be copied from the data source to an output data buffer. Default: `'float64'`.
 
 -   **order**: specifies the memory layout of the data source as either row-major (C-style) or column-major (Fortran-style). The option may be one of the following values:
 
-    -   `row-major`: the order of the returned array is row-major.
-    -   `column-major`: the order of the returned array is column-major.
-    -   `any`: if a data source is column-major and not row-major, the order of the returned array is column-major; otherwise, the order of the returned array is row-major.
-    -   `same`: the order of the returned array matches the order of an input data source.
+    -   `'row-major'`: the order of the returned array is row-major.
+    -   `'column-major'`: the order of the returned array is column-major.
+    -   `'any'`: if a data source is column-major and not row-major, the order of the returned array is column-major; otherwise, the order of the returned array is row-major.
+    -   `'same'`: the order of the returned array matches the order of an input data source.
 
     Note that specifying an order which differs from the order of a provided data source does **not** entail a conversion from one memory layout to another. In short, this option is descriptive, not prescriptive. Default: `'row-major'`.
 
 -   **shape**: array shape (dimensions). If a shape is not specified, the function attempts to infer a shape based on a provided data source. For example, if provided a nested array, the function resolves nested array dimensions. If provided a multidimensional array data source, the function uses the array's associated shape. For most use cases, such inference suffices. For the remaining use cases, specifying a shape is necessary. For example, provide a shape to create a multidimensional array view over a linear data buffer, ignoring any existing shape meta data associated with a provided data source.
 
--   **flatten**: `boolean` indicating whether to automatically flatten generic array data sources. If an array shape is not specified, the shape is inferred from the dimensions of nested arrays prior to flattening. If a use case requires partial flattening, partially flatten **prior** to invoking this function and set the option value to `false` to prevent further flattening during invocation. Default: `true`.
+-   **flatten**: boolean indicating whether to automatically flatten generic array data sources. If an array shape is not specified, the shape is inferred from the dimensions of nested arrays prior to flattening. If a use case requires partial flattening, partially flatten **prior** to invoking this function and set the option value to `false` to prevent further flattening during invocation. Default: `true`.
 
--   **copy**: `boolean` indicating whether to (shallow) copy source data to a new data buffer. The function does **not** perform a deep copy. To prevent undesired shared changes in state for generic arrays containing objects, perform a deep copy **prior** to invoking this function. Default: `false`.
+-   **copy**: boolean indicating whether to (shallow) copy source data to a new data buffer. The function does **not** perform a deep copy. To prevent undesired shared changes in state for generic arrays containing objects, perform a deep copy **prior** to invoking this function. Default: `false`.
 
 -   **ndmin**: specifies the minimum number of dimensions. If an array shape has fewer dimensions than required by `ndmin`, the function **prepends** singleton dimensions to the array shape in order to satisfy the dimensions requirement. Default: `0`.
 
 -   **casting**: specifies the casting rule used to determine acceptable casts. The option may be one of the following values:
 
-    -   `none`: only allow casting between identical types.
-    -   `equiv`: allow casting between identical and byte swapped types.
-    -   `safe`: only allow "safe" casts.
-    -   `mostly-safe`: allow "safe" casts and, for floating-point data types, downcasts.
-    -   `same-kind`: allow "safe" casts and casts within the same kind (e.g., between signed integers or between floats).
-    -   `unsafe`: allow casting between all types (including between integers and floats).
+    -   `'none'`: only allow casting between identical types.
+    -   `'equiv'`: allow casting between identical and byte swapped types.
+    -   `'safe'`: only allow "safe" casts.
+    -   `'mostly-safe'`: allow "safe" casts and, for floating-point data types, downcasts.
+    -   `'same-kind'`: allow "safe" casts and casts within the same kind (e.g., between signed integers or between floats).
+    -   `'unsafe'`: allow casting between all types (including between integers and floats).
 
     Default: `'safe'`.
 
 -   **mode**: specifies how to handle indices which exceed array dimensions.
 
-    -   `throw`: specifies that an [`ndarray`][@stdlib/ndarray/ctor] instance should throw an error when an index exceeds array dimensions.
-    -   `normalize`: specifies that an [`ndarray`][@stdlib/ndarray/ctor] instance should normalize negative indices and throw an error when an index exceeds array dimensions.
-    -   `wrap`: specifies that an [`ndarray`][@stdlib/ndarray/ctor] instance should wrap around an index exceeding array dimensions using modulo arithmetic.
-    -   `clamp`: specifies that an [`ndarray`][@stdlib/ndarray/ctor] instance should set an index exceeding array dimensions to either `0` (minimum index) or the maximum index.
+    -   `'throw'`: specifies that an [ndarray][@stdlib/ndarray/ctor] instance should throw an error when an index exceeds array dimensions.
+    -   `'normalize'`: specifies that an [ndarray][@stdlib/ndarray/ctor] instance should normalize negative indices and throw an error when an index exceeds array dimensions.
+    -   `'wrap'`: specifies that an [ndarray][@stdlib/ndarray/ctor] instance should wrap around an index exceeding array dimensions using modulo arithmetic.
+    -   `'clamp'`: specifies that an [ndarray][@stdlib/ndarray/ctor] instance should set an index exceeding array dimensions to either `0` (minimum index) or the maximum index.
 
     Default: `'throw'`.
 
 -   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions. If provided fewer modes than dimensions, the function recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
 
--   **readonly**: `boolean` indicating whether an [`ndarray`][@stdlib/ndarray/ctor] instance should be **read-only**. Default: `false`.
+-   **readonly**: boolean indicating whether an [ndarray][@stdlib/ndarray/ctor] instance should be **read-only**. Default: `false`.
 
-By default, an [`ndarray`][@stdlib/ndarray/ctor] instance **throws** when provided an index which exceeds array dimensions. To support alternative indexing behavior, set the `mode` option, which will affect all public methods for getting and setting array elements.
+By default, an [ndarray][@stdlib/ndarray/ctor] instance **throws** when provided an index which exceeds array dimensions. To support alternative indexing behavior, set the `mode` option, which will affect all public methods for getting and setting array elements.
 
 ```javascript
 var opts = {
@@ -189,7 +189,7 @@ var bool = ( v === buf[ 0 ] );
 
 ## Notes
 
--   The number of elements in a data source `buffer` **must** agree with a specified array `shape` (i.e., the function assumes a single-segment contiguous [`ndarray`][@stdlib/ndarray/ctor]). To create arbitrary multidimensional views over linear data buffers, use a [lower-level constructor][@stdlib/ndarray/ctor].
+-   The number of elements in a data source `buffer` **must** agree with a specified array shape (i.e., the function assumes a single-segment contiguous [ndarray][@stdlib/ndarray/ctor]). To create arbitrary multidimensional views over linear data buffers, use a [lower-level constructor][@stdlib/ndarray/ctor].
 -   The function supports arbitrary casting between data types. Note, however, that casting from a larger data type to a smaller data type (e.g., `int32` to `int8`) and between signed and unsigned types of the same size should be considered **unsafe**.
 
 </section>

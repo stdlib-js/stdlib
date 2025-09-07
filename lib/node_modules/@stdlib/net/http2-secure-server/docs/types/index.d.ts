@@ -168,6 +168,8 @@ type http2Server = ( done: Callback ) => void;
 * var http2Server = factory( opts );
 *
 * @example
+* var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+*
 * var opts = {
 *     'port': 7331,
 *     'address': '0.0.0.0',
