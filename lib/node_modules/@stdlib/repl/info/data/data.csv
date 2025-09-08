@@ -221,6 +221,8 @@ base.cadd,"\nbase.cadd( z1:Complex128, z2:Complex128 )\n    Adds two double-prec
 base.cadd.assign,"\nbase.cadd.assign( re1:number, im1:number, re2:number, im2:number, \n  out:ArrayLikeObject, strideOut:integer, offsetOut:integer )\n    Adds two double-precision complex floating-point numbers and assigns results\n    to a provided output array.\n"
 base.cadd.strided,"\nbase.cadd.strided( z1:ArrayLikeObject, sz1:integer, oz1:integer, \n  z2:ArrayLikeObject, sz2:integer, oz2:integer, out:ArrayLikeObject, \n  so:integer, oo:integer )\n    Adds two double-precision complex floating-point numbers stored in real-\n    valued strided array views and assigns results to a provided strided output\n    array.\n"
 base.caddf,"\nbase.caddf( z1:Complex64, z2:Complex64 )\n    Adds two single-precision complex floating-point numbers.\n"
+base.caddf.assign,"\nbase.caddf.assign( re1:number, im1:number, re2:number, im2:number, \n  out:ArrayLikeObject, strideOut:integer, offsetOut:integer )\n    Adds two single-precision complex floating-point numbers and assigns results\n    to a provided output array.\n"
+base.caddf.strided,"\nbase.caddf.strided( z1:ArrayLikeObject, sz1:integer, oz1:integer, \n  z2:ArrayLikeObject, sz2:integer, oz2:integer, out:ArrayLikeObject, \n  so:integer, oo:integer )\n    Adds two single-precision complex floating-point numbers stored in real-\n    valued strided array views and assigns results to a provided strided output\n    array.\n"
 base.camelcase,"\nbase.camelcase( str:string )\n    Converts a string to camel case.\n"
 base.capitalize,"\nbase.capitalize( str:string )\n    Capitalizes the first character in a string.\n"
 base.cbrt,"\nbase.cbrt( x:number )\n    Computes the cube root of a double-precision floating-point number.\n"

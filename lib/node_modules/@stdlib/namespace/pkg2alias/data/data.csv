@@ -1332,7 +1332,7 @@
 "@stdlib/stats/strided/sdsmean",base.strided.sdsmean
 "@stdlib/stats/strided/sdsmeanors",base.strided.sdsmeanors
 "@stdlib/stats/base/sdsnanmean",base.strided.sdsnanmean
-"@stdlib/stats/base/sdsnanmeanors",base.strided.sdsnanmeanors
+"@stdlib/stats/strided/sdsnanmeanors",base.strided.sdsnanmeanors
 "@stdlib/blas/ext/base/sdsnansum",base.strided.sdsnansum
 "@stdlib/blas/ext/base/sdsnansumpw",base.strided.sdsnansumpw
 "@stdlib/blas/ext/base/sdssum",base.strided.sdssum
@@ -1378,7 +1378,7 @@
 "@stdlib/math/strided/special/smsktrunc",base.strided.smsktrunc
 "@stdlib/stats/strided/snanmax",base.strided.snanmax
 "@stdlib/stats/strided/snanmaxabs",base.strided.snanmaxabs
-"@stdlib/stats/base/snanmean",base.strided.snanmean
+"@stdlib/stats/strided/snanmean",base.strided.snanmean
 "@stdlib/stats/strided/snanmeanors",base.strided.snanmeanors
 "@stdlib/stats/strided/snanmeanpn",base.strided.snanmeanpn
 "@stdlib/stats/strided/snanmeanwd",base.strided.snanmeanwd
@@ -1422,7 +1422,7 @@
 "@stdlib/stats/strided/sstdevch",base.strided.sstdevch
 "@stdlib/stats/strided/sstdevpn",base.strided.sstdevpn
 "@stdlib/stats/strided/sstdevtk",base.strided.sstdevtk
-"@stdlib/stats/base/sstdevwd",base.strided.sstdevwd
+"@stdlib/stats/strided/sstdevwd",base.strided.sstdevwd
 "@stdlib/stats/strided/sstdevyc",base.strided.sstdevyc
 "@stdlib/blas/ext/base/ssum",base.strided.ssum
 "@stdlib/blas/ext/base/ssumkbn",base.strided.ssumkbn
