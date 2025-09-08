@@ -29,7 +29,7 @@
 * // returns 5.0f
 */
 float stdlib_base_fast_absf( const float x ) {
-	if ( x < 0.0 ) {
+	if ( x < 0.0f ) {
 		return -x;
 	}
 	return x;

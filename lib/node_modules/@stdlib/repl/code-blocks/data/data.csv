@@ -221,6 +221,8 @@ base.cadd,"var z = new Complex128( 5.0, 3.0 )\nvar out = base.cadd( z, z )\nvar 
 base.cadd.assign,"var out = new Float64Array( 2 );\nbase.cadd.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 )\n"
 base.cadd.strided,"var z1 = new Float64Array( [ 5.0, 3.0 ] );\nvar z2 = new Float64Array( [ -2.0, 1.0 ] );\nvar out = new Float64Array( 2 );\nbase.cadd.strided( z1, 1, 0, z2, 1, 0, out, 1, 0 )\n"
 base.caddf,"var z = new Complex64( 5.0, 3.0 )\nvar out = base.caddf( z, z )\nvar re = realf( out )\nvar im = imagf( out )\n"
+base.caddf.assign,"var out = new Float32Array( 2 );\nbase.caddf.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 )\n"
+base.caddf.strided,"var z1 = new Float32Array( [ 5.0, 3.0 ] );\nvar z2 = new Float32Array( [ -2.0, 1.0 ] );\nvar out = new Float32Array( 2 );\nbase.caddf.strided( z1, 1, 0, z2, 1, 0, out, 1, 0 )\n"
 base.camelcase,"var out = base.camelcase( 'Hello World!' )\nout = base.camelcase( 'beep boop' )\n"
 base.capitalize,"var out = base.capitalize( 'beep' )\nout = base.capitalize( 'Boop' )\n"
 base.cbrt,"var y = base.cbrt( 64.0 )\ny = base.cbrt( 27.0 )\ny = base.cbrt( 0.0 )\ny = base.cbrt( -0.0 )\ny = base.cbrt( -9.0 )\ny = base.cbrt( NaN )\n"

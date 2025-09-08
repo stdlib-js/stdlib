@@ -41,7 +41,7 @@ import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 *     'dtype': 'float64'
 * });
 *
-* var fromIndex = scalar2ndarray( 0, {
+* var fromIndex = scalar2ndarray( 3, {
 *     'dtype': 'generic'
 * });
 *
