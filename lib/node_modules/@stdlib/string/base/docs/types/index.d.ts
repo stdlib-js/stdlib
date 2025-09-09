@@ -474,7 +474,7 @@ interface Namespace {
 	*     console.log( '%d: %s', index, value );
 	* }
 	*
-	* forEach( 'Hello, World!', log );
+	* ns.forEachRight( 'Hello, World!', log );
 	*/
 	forEachRight: typeof forEachRight;
 
@@ -963,11 +963,11 @@ interface Namespace {
 	*
 	* var str = 'Oranges and lemons say the bells of St. Clement\'s';
 	*
-	* function ns.replacer( match, p1 ) {
+	* function replacer( match, p1 ) {
 	*     return capitalize( p1 );
 	* }
 	*
-	* var out = ns.replace( str, /([^\s]*)/gi, ns.replacer );
+	* var out = ns.replace( str, /([^\s]*)/gi, replacer );
 	* // returns 'Oranges And Lemons Say The Bells Of St. Clement\'s'
 	*/
 	replace: typeof replace;
@@ -1004,7 +1004,7 @@ interface Namespace {
 	*
 	* @example
 	* var out = ns.replaceAfter( 'beep boop', ' ', 'foo' , 5 );
-	* // returns 'beep foo'
+	* // returns 'beep boop'
 	*
 	* @example
 	* var out = ns.replaceAfter( 'beep boop beep baz', 'beep', 'foo' , 5 );
@@ -1083,7 +1083,7 @@ interface Namespace {
 	*
 	* @example
 	* var out = ns.replaceBefore( 'Hello World!', '', 'foo', 0 );
-	* // returns 'Hello world!'
+	* // returns 'Hello World!'
 	*
 	* @example
 	* var out = ns.replaceBefore( 'Hello World!', 'xyz', 'foo', 0 );

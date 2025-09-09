@@ -117,9 +117,9 @@ interface LogCDF {
 * y = mylogcdf( 2.0 );
 * // returns -Infinity
 */
-declare var logCDF: LogCDF;
+declare var logcdf: LogCDF;
 
 
 // EXPORTS //
 
-export = logCDF;
+export = logcdf;

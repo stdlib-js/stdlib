@@ -38,7 +38,7 @@ julia> gen( x, y, \"data.json\" );
 ```
 """
 function gen( x, y, name )
-	h = hypot.( x, y );
+	h = hypot.( convert( Array{Float32}, x ), convert( Array{Float32}, y ) );
 
 	# Store data to be written to file as a collection:
 	data = Dict([

@@ -18,7 +18,10 @@
 
 #include "stdlib/math/base/special/tribonaccif.h"
 #include "stdlib/constants/float32/max_safe_nth_tribonacci.h"
+#include "stdlib/math/base/assert/is_nonnegative_integerf.h"
+#include "stdlib/math/base/assert/is_nanf.h"
 #include <stdint.h>
+#include <stdlib.h>
 
 static const int32_t tribonaccif_value[ 31 ] = {
 	0,
@@ -61,12 +64,12 @@ static const int32_t tribonaccif_value[ 31 ] = {
 * @return      output value
 *
 * @example
-* float out = stdlib_base_tribonaccif( 1 );
+* float out = stdlib_base_tribonaccif( 1.0f );
 * // returns 0.0f
 */
-float stdlib_base_tribonaccif( const int32_t n ) {
-	if ( n < 0 || n > STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_TRIBONACCI ) {
+float stdlib_base_tribonaccif( const float n ) {
+	if ( stdlib_base_is_nanf( n ) || !stdlib_base_is_nonnegative_integerf( n ) || n > STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_TRIBONACCI ) {
 		return 0.0f / 0.0f; // NaN
 	}
-	return tribonaccif_value[ n ];
+	return tribonaccif_value[ (size_t)n ];
 }
