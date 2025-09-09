@@ -79,7 +79,7 @@ Thank you for being a part of our community! Your support is invaluable to us!
 
 -   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including [open office hours][stdlib-office-hours].
 -   [**Open Collective**][open-collective-stdlib]: financially support the project.
--   [**Twitter**][stdlib-twitter]: follow us on social media.
+-   [**Bluesky**][stdlib-bluesky]: follow us on social media.
 -   [**Gitter**][stdlib-gitter]: chat with project maintainers and other community members.
 
 ## Features
@@ -600,6 +600,29 @@ Does your organization use stdlib? If so, we'd love to hear from you!
 
 <!-- /.users -->
 
+<!-- Google Summer of Code -->
+
+* * *
+
+<section class="gsoc">
+
+## Google Summer of Code
+
+stdlib is a proud participant in the Google Summer of Code program. If you are new to open source and want to learn more about how to participate, be sure to check out our [Google Summer of Code resources][stdlib-gsoc] and the stdlib [wiki][stdlib-wiki] for details on past projects!
+
+<div class="image" align="center">
+    <br>
+    <a href="https://summerofcode.withgoogle.com">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9eb11556f417ea8706c2f57719bb725f78466680/docs/assets/misc/gsoc_logo.png" alt="Google Summer of Code">
+    </a>
+    <br>
+    <br>
+</div>
+
+</section>
+
+<!-- /.gsoc -->
+
 <!-- Project funding acknowledgments. If acknowledgments are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 * * *
@@ -815,9 +838,15 @@ Test and build infrastructure is generously provided by the following services:
 
 [open-collective-stdlib]: https://opencollective.com/stdlib
 
-[stdlib-twitter]: https://twitter.com/stdlibjs
+<!-- [stdlib-twitter]: https://twitter.com/stdlibjs -->
+
+[stdlib-bluesky]: https://bsky.app/profile/stdlib.io
 
 [stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+
+[stdlib-gsoc]: https://github.com/stdlib-js/google-summer-of-code
+
+[stdlib-wiki]: https://github.com/stdlib-js/stdlib/wiki
 
 [@stdlib/math/base/special]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special
 
