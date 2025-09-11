@@ -48,7 +48,7 @@ bool = isNonPositiveNumberArray( [ -3.0, '-3.0' ] );
 
 #### isNonPositiveNumberArray.primitives( value )
 
-Tests if a `value` is an array-like object `array` containing **only** primitive nonpositive numbers.
+Tests if a `value` is an array-like object containing **only** primitive nonpositive numbers.
 
 <!-- eslint-disable no-new-wrappers -->
 
@@ -64,7 +64,7 @@ bool = isNonPositiveNumberArray.primitives( [ -3.0, new Number(-1.0) ] );
 
 #### isNonPositiveNumberArray.objects( value )
 
-Tests if a `value` is an array-like object `array` containing **only** object nonpositive numbers.
+Tests if a `value` is an array-like object containing **only** object nonpositive numbers.
 
 <!-- eslint-disable no-new-wrappers, max-len -->
 

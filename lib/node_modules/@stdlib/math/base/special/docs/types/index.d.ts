@@ -4268,22 +4268,27 @@ interface Namespace {
 	* @returns function value
 	*
 	* @example
-	* var y = ns.gammainc( 6.0, 2.0 )
+	* var y = ns.gammainc( 6.0, 2.0 );
 	* // returns ~0.9826
+	*
 	* @example
-	* var y = ns.gammainc( 1.0, 2.0, true, true )
+	* var y = ns.gammainc( 1.0, 2.0, true, true );
 	* // returns ~0.7358
+	*
 	* @example
-	* var y = ns.gammainc( 7.0, 5.0 )
+	* var y = ns.gammainc( 7.0, 5.0 );
 	* // returns ~0.8270
+	*
 	* @example
-	* var y = ns.gammainc( 7.0, 5.0, false )
+	* var y = ns.gammainc( 7.0, 5.0, false );
 	* // returns ~19.8482
+	*
 	* @example
-	* var y = ns.gammainc( NaN, 2.0 )
+	* var y = ns.gammainc( NaN, 2.0 );
 	* // returns NaN
+	*
 	* @example
-	* var y = ns.gammainc( 6.0, NaN )
+	* var y = ns.gammainc( 6.0, NaN );
 	* // returns NaN
 	*/
 	gammainc: typeof gammainc;
@@ -4718,16 +4723,19 @@ interface Namespace {
 	* @returns two-element array holding function value `y` and `1-y`
 	*
 	* @example
-	* var y = ns.kernelBetaincinv( 3.0, 3.0, 0.2, 0.8 )
+	* var y = ns.kernelBetaincinv( 3.0, 3.0, 0.2, 0.8 );
 	* // returns[ ~0.327, ~0.673 ]
+	*
 	* @example
-	* y = ns.kernelBetaincinv( 3.0, 3.0, 0.4, 0.6 )
+	* y = ns.kernelBetaincinv( 3.0, 3.0, 0.4, 0.6 );
 	* // returns[ ~0.446, ~0.554 ]
+	*
 	* @example
-	* y = ns.kernelBetaincinv( 1.0, 6.0, 0.4, 0.6 )
+	* y = ns.kernelBetaincinv( 1.0, 6.0, 0.4, 0.6 );
 	* // returns[ ~0.082, ~0.918 ]
+	*
 	* @example
-	* y = ns.kernelBetaincinv( 1.0, 6.0, 0.8, 0.2 )
+	* y = ns.kernelBetaincinv( 1.0, 6.0, 0.8, 0.2 );
 	* // returns[ ~0.235, ~0.765 ]
 	*/
 	kernelBetaincinv: typeof kernelBetaincinv;

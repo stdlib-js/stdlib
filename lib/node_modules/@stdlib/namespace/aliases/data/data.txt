@@ -1828,7 +1828,7 @@ HOURS_IN_DAY
 HOURS_IN_WEEK
 hoursInMonth
 hoursInYear
-httpServer
+httpServerFactory
 identity
 ifelse
 ifelseAsync

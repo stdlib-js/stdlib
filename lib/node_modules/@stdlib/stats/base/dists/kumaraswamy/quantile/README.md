@@ -141,22 +141,14 @@ y = myQuantile( 0.3 );
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
 var EPS = require( '@stdlib/constants/float64/eps' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var quantile = require( '@stdlib/stats/base/dists/kumaraswamy/quantile' );
 
-var a;
-var b;
-var p;
-var y;
-var i;
+var p = uniform( 10, 0.0, 1.0 );
+var a = uniform( 10, EPS, 5.0 );
+var b = uniform( 10, EPS, 5.0 );
 
-p = uniform( 10, 0.0, 1.0 );
-a = uniform( 10, EPS, 5.0 );
-b = uniform( 10, EPS, 5.0 );
-
-for ( i = 0; i < p.length; i++ ) {
-    y = quantile( p[ i ], a[ i ], b[ i ] );
-    console.log( 'p: %d, a: %d, b: %d, Q(p;a,b): %d', p[ i ].toFixed( 4 ), a[ i ].toFixed( 4 ), b[ i ].toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'p: %0.4f, a: %0.4f, b: %0.4f, Q(p;a,b): %0.4f', p, a, b, quantile );
 ```
 
 </section>
@@ -191,7 +183,7 @@ for ( i = 0; i < p.length; i++ ) {
 
 #### stdlib_base_dists_kumaraswamy_quantile( p, a, b )
 
-Evaluates the quantile function of a Kumaraswamy's double bounded distribution.
+Evaluates the quantile function of a [Kumaraswamy's double bounded][kumaraswamy-distribution] distribution with parameters `a` (first shape parameter) and `b` (second shape parameter).
 
 ```c
 double out = stdlib_base_dists_kumaraswamy_quantile( 0.5, 1.0, 1.0 );
@@ -205,8 +197,7 @@ The function accepts the following arguments:
 -   **b**: `[in] double` second shape parameter.
 
 ```c
-double stdlib_base_dists_kumaraswamy_quantile( const double p, const
-double a, const double b );
+double stdlib_base_dists_kumaraswamy_quantile( const double p, const double a, const double b );
 ```
 
 </section>

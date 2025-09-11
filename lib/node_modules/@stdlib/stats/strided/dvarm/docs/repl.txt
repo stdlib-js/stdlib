@@ -1,5 +1,5 @@
 
-{{alias}}( N, mean, correction, x, strideX )
+{{alias}}( N, correction, mean, x, strideX )
     Computes the variance of a double-precision floating-point strided array
     provided a known mean.
 
@@ -16,9 +16,6 @@
     N: integer
         Number of indexed elements.
 
-    mean: number
-        Mean.
-
     correction: number
         Degrees of freedom adjustment. Setting this parameter to a value other
         than `0` has the effect of adjusting the divisor during the calculation
@@ -30,6 +27,9 @@
         `1` is the standard choice (i.e., the provided array contains data
         sampled from a larger population; this is commonly referred to as
         Bessel's correction).
+
+    mean: number
+        Mean.
 
     x: Float64Array
         Input array.
@@ -46,22 +46,22 @@
     --------
     // Standard Usage:
     > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 2.0 ] );
-    > {{alias}}( x.length, 1.0/3.0, 1, x, 1 )
+    > {{alias}}( x.length, 1, 1.0/3.0, x, 1 )
     ~4.3333
 
     // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] );
-    > {{alias}}( 3, 1.0/3.0, 1, x, 2 )
+    > {{alias}}( 3, 1, 1.0/3.0, x, 2 )
     ~4.3333
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, 1.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > {{alias}}( 3, 1.0/3.0, 1, x1, 2 )
+    > {{alias}}( 3, 1, 1.0/3.0, x1, 2 )
     ~4.3333
 
 
-{{alias}}.ndarray( N, mean, correction, x, strideX, offsetX )
+{{alias}}.ndarray( N, correction, mean, x, strideX, offsetX )
     Computes the variance of a double-precision floating-point strided array
     provided a known mean and using alternative indexing semantics.
 
@@ -74,9 +74,6 @@
     N: integer
         Number of indexed elements.
 
-    mean: number
-        Mean.
-
     correction: number
         Degrees of freedom adjustment. Setting this parameter to a value other
         than `0` has the effect of adjusting the divisor during the calculation
@@ -88,6 +85,9 @@
         `1` is the standard choice (i.e., the provided array contains data
         sampled from a larger population; this is commonly referred to as
         Bessel's correction).
+
+    mean: number
+        Mean.
 
     x: Float64Array
         Input array.
@@ -107,12 +107,12 @@
     --------
     // Standard Usage:
     > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 2.0 ] );
-    > {{alias}}.ndarray( x.length, 1.0/3.0, 1, x, 1, 0 )
+    > {{alias}}.ndarray( x.length, 1, 1.0/3.0, x, 1, 0 )
     ~4.3333
 
     // Using offset parameter:
     > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, 1.0 ] );
-    > {{alias}}.ndarray( 3, 1.0/3.0, 1, x, 2, 1 )
+    > {{alias}}.ndarray( 3, 1, 1.0/3.0, x, 2, 1 )
     ~4.3333
 
     See Also

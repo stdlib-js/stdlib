@@ -98,11 +98,11 @@ interface IsOdd {
 * // returns true
 *
 * @example
-* var bool = isOdd( new Number( 6.0 ) );
+* var bool = isOdd( new Number( 5.0 ) );
 * // returns true
 *
 * @example
-* var bool = isOdd( 3.0 );
+* var bool = isOdd( 4.0 );
 * // returns false
 *
 * @example

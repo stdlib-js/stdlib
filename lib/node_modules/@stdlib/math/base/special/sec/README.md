@@ -34,7 +34,7 @@ limitations under the License.
 var sec = require( '@stdlib/math/base/special/sec' );
 ```
 
-## sec( x )
+#### sec( x )
 
 Evaluates the [secant][trigonometric-functions] of `x` (in radians).
 

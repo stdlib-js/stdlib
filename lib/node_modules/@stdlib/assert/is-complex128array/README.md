@@ -101,7 +101,7 @@ bool = isComplex128Array( new Uint32Array( 10 ) );
 bool = isComplex128Array( new Float32Array( 10 ) );
 // returns false
 
-bool = isComplex128Array( new Array( 10 ) );
+bool = isComplex128Array( [] );
 // returns false
 
 bool = isComplex128Array( {} );

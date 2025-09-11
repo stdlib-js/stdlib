@@ -34,7 +34,7 @@ limitations under the License.
 var csc = require( '@stdlib/math/base/special/csc' );
 ```
 
-## csc( x )
+#### csc( x )
 
 Evaluates the [cosecant][trigonometric-functions] of `x` (in radians).
 

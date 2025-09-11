@@ -57,7 +57,7 @@ var abs = require( '@stdlib/math/special/abs' );
 
 #### abs( x\[, options] )
 
-Computes the [absolute value][absolute-value]. 
+Computes the [absolute value][absolute-value].
 
 ```javascript
 var y = abs( -1.0 );

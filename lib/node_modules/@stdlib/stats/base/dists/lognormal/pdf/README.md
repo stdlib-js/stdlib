@@ -167,7 +167,7 @@ for ( i = 0; i < 10; i++ ) {
 
 #### stdlib_base_dists_lognormal_pdf( x, mu, sigma )
 
-Evaluates the [probability density function][pdf] (PDF) of a [lognormal][lognormal-distribution] distribution with parameters input value `x`, location parameter `mu` and scale parameter `sigma`.
+Evaluates the [probability density function][pdf] (PDF) of a [lognormal][lognormal-distribution] distribution with location parameter `mu` and scale parameter `sigma`.
 
 ```c
 double y = stdlib_base_dists_lognormal_pdf( 2.0, 0.0, 1.0 );

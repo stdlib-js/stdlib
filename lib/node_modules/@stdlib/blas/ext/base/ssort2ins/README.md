@@ -187,9 +187,7 @@ console.log( y );
 
 <!-- /.examples -->
 
-<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
-<section class="related">
 
 * * *
 
@@ -323,6 +321,10 @@ int main( void ) {
 </section>
 
 <!-- /.c -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
 
 ## See Also
 

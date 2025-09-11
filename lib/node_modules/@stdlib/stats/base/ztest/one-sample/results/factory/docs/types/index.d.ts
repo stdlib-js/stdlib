@@ -113,7 +113,7 @@ declare class ResultsStruct<T> {
 	ci: T;
 
 	/**
-	* Value of the mean under the null hypothesis
+	* Value of the mean under the null hypothesis.
 	*/
 	nullValue: number;
 

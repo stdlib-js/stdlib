@@ -96,7 +96,7 @@ interface Routine {
 * var x = new Float32Array( [ 1.0, -2.0, NaN, 2.0 ] );
 * var out = new Float64Array( 2 );
 *
-* var v = dsnannsumors( x.length, x, 1, 0, out, 1, 0 );
+* var v = dsnannsumors.ndarray( x.length, x, 1, 0, out, 1, 0 );
 * // returns <Float64Array>[ 1.0, 3 ]
 */
 declare var dsnannsumors: Routine;
