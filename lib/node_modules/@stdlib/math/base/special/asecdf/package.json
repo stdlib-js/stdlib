@@ -56,7 +56,7 @@
     "stdmath",
     "mathematics",
     "math",
-    "math.asec",
+    "math.acos",
     "asec",
     "degree",
     "arcsecant",
@@ -65,5 +65,86 @@
     "trig",
     "trigonometry",
     "radians"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "asecd",
+      "alias": "asecdf",
+      "pkg_desc": "compute the arcsecant (in degrees) of a single-precision floating-point number",
+      "desc": "computes the arcsecant (in degrees) of a single-precision floating-point number",
+      "short_desc": "arcsecant",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": -1
+            },
+            {
+              "min": 1,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              1.1,
+              5.1
+            ]
+          },
+          "example_values": [
+            150.4,
+            -1.12,
+            2.63,
+            -4.05,
+            33.7,
+            -487.2,
+            8.91,
+            -13.45,
+            1.07,
+            -1.37,
+            95.2,
+            -2.18,
+            5.42,
+            -6.71,
+            1200.5,
+            -10.9,
+            17.6,
+            -72.3,
+            241.9,
+            -3.01
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "arcsecant (in degrees)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "asec",
+        "degree",
+        "arcsecant",
+        "secant",
+        "inverse"
+      ],
+      "extra_keywords": [
+        "math.acos"
+      ]
+    }
+  }
 }

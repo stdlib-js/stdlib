@@ -47,7 +47,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var out = gsorthp( [ x, ord ] );
 * // returns <ndarray>
 *
-* var arr = ndarra2array( out );
+* var arr = ndarray2array( out );
 * // returns [ -4.0, -2.0, 1.0, 3.0 ]
 */
 declare function gsorthp<T = unknown>( arrays: [ typedndarray<T>, typedndarray<number> ] ): typedndarray<T>;

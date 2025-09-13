@@ -74,7 +74,7 @@ interface Routine {
 * var x = new Float32Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
 *
 * var z = sasum( x.length, x, 1 );
-* // returns 15.0
+* // returns 21.0
 *
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );

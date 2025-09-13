@@ -26,7 +26,7 @@
 *
 * @example
 * var v = pkg2id( '@stdlib/math/base/special/sin' );
-* // returns '0H5'
+* // returns '0YK'
 */
 declare function pkg2id( pkg: string ): string | null;
 

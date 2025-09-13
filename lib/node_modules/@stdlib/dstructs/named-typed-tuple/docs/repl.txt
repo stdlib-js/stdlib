@@ -1378,10 +1378,11 @@ tuple.toLocaleString( [locales[, options]] )
 
     Examples
     --------
-    > var factory = {{alias}}( [ 'x', 'y', 'z' ] );
+    > var opts = { 'name': 'Point' };
+    > var factory = {{alias}}( [ 'x', 'y', 'z' ], opts );
     > var p = factory( [ 1.0, -1.0, 0.0 ], 'int32' );
     > p.toLocaleString()
-    '1,-1,0'
+    'Point(x=1, y=-1, z=0)'
 
 
 tuple.toString()
@@ -1394,7 +1395,7 @@ tuple.toString()
 
     Examples
     --------
-    > opts = { 'name': 'Point' };
+    > var opts = { 'name': 'Point' };
     > var factory = {{alias}}( [ 'x', 'y', 'z' ], opts );
     > var p = factory( [ 1.0, -1.0, 0.0 ] );
     > p.toString()
