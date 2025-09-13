@@ -19,8 +19,6 @@
 #ifndef STDLIB_MATH_BASE_SPECIAL_BINOMCOEFF_H
 #define STDLIB_MATH_BASE_SPECIAL_BINOMCOEFF_H
 
-#include <stdint.h>
-
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
 */
@@ -31,7 +29,7 @@ extern "C" {
 /**
 * Computes the binomial coefficient of two integers as a single-precision floating-point number.
 */
-float stdlib_base_binomcoeff( const int32_t n, const int32_t k );
+float stdlib_base_binomcoeff( const float n, const float k );
 
 #ifdef __cplusplus
 }

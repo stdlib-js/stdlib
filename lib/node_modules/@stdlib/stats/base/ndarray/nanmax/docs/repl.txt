@@ -1,6 +1,6 @@
 
 {{alias}}( arrays )
-    Computes the maximum value of a one-dimensional ndarray, ignoring NaN
+    Computes the maximum value of a one-dimensional ndarray, ignoring `NaN`
     values.
 
     If provided an empty ndarray, the function returns `NaN`.

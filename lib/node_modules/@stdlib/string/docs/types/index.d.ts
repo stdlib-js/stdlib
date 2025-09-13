@@ -869,11 +869,11 @@ interface Namespace {
 	*
 	* var str = 'Oranges and lemons say the bells of St. Clement\'s';
 	*
-	* function ns.replacer( match, p1 ) {
+	* function replacer( match, p1 ) {
 	*     return capitalize( p1 );
 	* }
 	*
-	* var out = ns.replace( str, /([^\s]*)/gi, ns.replacer);
+	* var out = ns.replace( str, /([^\s]*)/gi, replacer);
 	* // returns 'Oranges And Lemons Say The Bells Of St. Clement\'s'
 	*/
 	replace: typeof replace;
@@ -896,7 +896,7 @@ interface Namespace {
 	*
 	* @example
 	* var out = ns.replaceBefore( 'Hello World!', '', 'foo' );
-	* // returns 'Hello world!'
+	* // returns 'Hello World!'
 	*
 	* @example
 	* var out = ns.replaceBefore( 'Hello World!', 'xyz', 'foo' );
@@ -1259,15 +1259,15 @@ interface Namespace {
 	*
 	* @example
 	* var result = ns.toWellFormed( '\uDBFF' );
-	* // returns �
+	* // returns '�'
 	*
 	* @example
 	* var result = ns.toWellFormed( '\uDBFFFF\uDBFF' );
-	* // returns �FF�
+	* // returns '�FF�'
 	*
 	* @example
 	* var result = ns.toWellFormed( '-5' );
-	* // returns -5
+	* // returns '-5'
 	*/
 	toWellFormed: typeof toWellFormed;
 

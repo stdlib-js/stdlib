@@ -22,6 +22,12 @@ limitations under the License.
 
 > Constructor for applying a strided function to an input ndarray.
 
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage

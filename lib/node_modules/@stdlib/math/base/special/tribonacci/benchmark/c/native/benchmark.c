@@ -90,14 +90,14 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	int32_t x[ 100 ];
+	double x[ 100 ];
 	double elapsed;
 	double t;
 	double y;
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		x[ i ] = (int32_t)floor( 40.0*rand_double() );
+		x[ i ] = floor( 40.0*rand_double() );
 	}
 
 	t = tic();

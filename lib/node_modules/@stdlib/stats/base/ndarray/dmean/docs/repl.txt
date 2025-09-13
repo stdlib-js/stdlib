@@ -1,7 +1,7 @@
 
 {{alias}}( arrays )
-    Computes the arithmetic mean of a one-dimensional double-precision floating
-    -point ndarray.
+    Computes the arithmetic mean of a one-dimensional double-precision floating-
+    point ndarray.
 
     If provided an empty ndarray, the function returns `NaN`.
 

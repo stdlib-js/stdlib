@@ -1,0 +1,62 @@
+
+{{alias}}( arrays, predicate[, thisArg] )
+    Returns the first element in an ndarray which passes a test implemented by a
+    predicate function.
+
+    A provided "ndarray" should be an `object` with the following properties:
+
+    - dtype: data type.
+    - data: data buffer.
+    - shape: dimensions.
+    - strides: stride lengths.
+    - offset: index offset.
+    - order: specifies whether an ndarray is row-major (C-style) or column-major
+    (Fortran-style).
+
+    The predicate function is provided the following arguments:
+
+    - value: current array element.
+    - indices: current array element indices.
+    - arr: the input ndarray.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing an input ndarray and a zero-dimensional
+        ndarray containing a sentinel value. The sentinel value is returned when
+        no element in an input ndarray passes a test implemented by the
+        predicate function.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Predicate function execution context.
+
+    Returns
+    -------
+    out: any
+        Result.
+
+    Examples
+    --------
+    // Define a callback...
+    > function clbk( v ) { return v % 2.0 === 0.0; };
+
+    // Define ndarray data and meta data...
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var dt = 'float64';
+    > var sh = [ 2, 2 ];
+    > var sx = [ 2, 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+
+    // Perform operation...
+    > var x = {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var sv = {{alias:@stdlib/ndarray/from-scalar}}( NaN, { 'dtype': dt } );
+    > {{alias}}( [ x, sv ], clbk )
+    2.0
+
+    See Also
+    --------
+

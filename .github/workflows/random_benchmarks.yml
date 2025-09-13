@@ -1,0 +1,95 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: random_benchmarks
+
+# Workflow triggers:
+on:
+  # Trigger the workflow every 24 hours:
+  schedule:
+    - cron: '0 0 * * *'
+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for running random benchmarks...
+  process:
+
+    # Define a display name:
+    name: 'Run random benchmarks'
+
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the last 1000 commits:
+          fetch-depth: 1000
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '18' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Run JavaScript and native add-on benchmarks:
+      - name: 'Run JavaScript and native add-on benchmarks'
+        run: |
+          make benchmark-random-javascript RANDOM_SELECTION_SIZE=50 BUILD_ADDONS=1
+        timeout-minutes: 60
+
+      # Run C benchmarks:
+      - name: 'Run C benchmarks'
+        run: |
+          make benchmark-random-c RANDOM_SELECTION_SIZE=10
+        timeout-minutes: 60
