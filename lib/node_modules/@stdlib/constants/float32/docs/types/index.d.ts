@@ -258,7 +258,7 @@ interface Namespace {
 	*
 	* @example
 	* var max = ns.MAX_SAFE_NTH_FACTORIAL;
-	* // returns 34
+	* // returns 10
 	*/
 	MAX_SAFE_NTH_FACTORIAL: typeof MAX_SAFE_NTH_FACTORIAL;
 
@@ -339,7 +339,7 @@ interface Namespace {
 	*
 	* @example
 	* var ninf = ns.NINF;
-	* // returns -infinity
+	* // returns -Infinity
 	*/
 	NINF: typeof NINF;
 
@@ -375,7 +375,7 @@ interface Namespace {
 	*
 	* @example
 	* var pinf = ns.PINF;
-	* // returns +infinity
+	* // returns Infinity
 	*/
 	PINF: typeof PINF;
 

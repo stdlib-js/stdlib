@@ -177,7 +177,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_dists_gumbel_quantile( p, mu, beta )
 
-Evaluates the [quantile-function][quantile-function] of a [gumbel-distribution][gumbel-distribution] with parameter probability `p`, location parameter `mu` and scale parameter `beta`.
+Evaluates the [quantile-function][quantile-function] of a [gumbel-distribution][gumbel-distribution] with parameter probability `p`, location parameter `mu`, and scale parameter `beta`.
 
 ```c
 double y = stdlib_base_dists_gumbel_quantile( 0.8, 0.0, 1.0 );
@@ -247,6 +247,14 @@ int main( void ) {
 </section>
 
 <!-- /.c -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
 
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

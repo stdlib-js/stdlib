@@ -1,0 +1,118 @@
+
+{{alias}}( x[, options], clbk[, thisArg] )
+    Returns the index of the first element along an ndarray dimension which
+    passes a test implemented by a predicate function.
+
+    The callback function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array index.
+    - array: the input ndarray.
+
+    The callback function should return a boolean.
+
+    If no element along an ndarray dimension passes a test implemented by the
+    predicate function, the corresponding element in the returned ndarray is
+    `-1`.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must at least have one dimension.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output array data type. Must be an integer index or "generic" data type.
+
+    options.dim: integer (optional)
+        Dimension over which to perform a reduction. If provided a negative
+        integer, the dimension along which to perform the operation is
+        determined by counting backward from the last dimension (where -1 refers
+        to the last dimension). Default: -1.
+
+    options.keepdims: boolean (optional)
+        Boolean indicating whether the reduced dimensions should be included in
+        the returned ndarray as singleton dimensions. Default: false.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
+    > function clbk( v ) { return v % 2.0 === 0.0; };
+    > var y = {{alias}}( x, clbk );
+    > var v = y.get()
+    1
+
+
+{{alias}}.assign( x, out[, options], clbk[, thisArg] )
+    Returns the index of the first element along an ndarray dimension which
+    passes a test implemented by a predicate function and assigns results to a
+    provided output ndarray.
+
+    The callback function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array index.
+    - array: the input ndarray.
+
+    The callback function should return a boolean.
+
+    If no element along an ndarray dimension passes a test implemented by the
+    predicate function, the corresponding element in the returned ndarray is
+    `-1`.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must at least have one dimension.
+
+    out: ndarray
+        Output array.
+
+    options: Object (optional)
+        Function options.
+
+    options.dim: integer (optional)
+        Dimension over which to perform a reduction. If provided a negative
+        integer, the dimension along which to perform the operation is
+        determined by counting backward from the last dimension (where -1 refers
+        to the last dimension). Default: -1.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
+    > var out = {{alias:@stdlib/ndarray/zeros}}( [] );
+    > function clbk( v ) { return v % 2.0 === 0.0; };
+    > var y = {{alias}}.assign( x, out, clbk )
+    <ndarray>
+    > var bool = ( out === y )
+    true
+    > var v = out.get()
+    1
+
+    See Also
+    --------
+

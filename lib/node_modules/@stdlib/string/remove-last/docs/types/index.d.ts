@@ -74,7 +74,7 @@ declare function removeLast( str: string, n: number, options?: Options ): string
 * // returns 'last man standin'
 *
 * @example
-* var out = removeFirst( '🐶🐮🐷🐰🐸', {
+* var out = removeLast( '🐶🐮🐷🐰🐸', {
 *     'mode': 'grapheme'
 * });
 * // returns '🐶🐮🐷🐰'

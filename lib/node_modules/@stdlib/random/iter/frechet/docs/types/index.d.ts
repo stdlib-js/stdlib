@@ -93,6 +93,7 @@ interface Iterator<T> extends TypedIterator<T> {
 *
 * @param alpha - shape parameter
 * @param s - rate parameter
+* @param m - location parameter
 * @param options - function options
 * @throws `alpha` must be a positive number
 * @throws `s` must be a positive number
@@ -101,7 +102,7 @@ interface Iterator<T> extends TypedIterator<T> {
 * @returns iterator
 *
 * @example
-* var iter = iterator( 2.0, 5.0 );
+* var iter = iterator( 2.0, 5.0, 3.0 );
 *
 * var r = iter.next().value;
 * // returns <number>
@@ -114,7 +115,7 @@ interface Iterator<T> extends TypedIterator<T> {
 *
 * // ...
 */
-declare function iterator( alpha: number, s: number, options?: Options ): Iterator<number>;
+declare function iterator( alpha: number, s: number, m: number, options?: Options ): Iterator<number>;
 
 
 // EXPORTS //

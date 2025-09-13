@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_negative_integerf.h"
 #include "stdlib/math/base/special/floorf.h"
+#include <stdbool.h>
 
 /**
 * Tests if a finite single-precision floating-point number is a negative integer.
@@ -32,5 +33,5 @@
 * // returns true
 */
 bool stdlib_base_is_negative_integerf( const float x ) {
-	return ( x == stdlib_base_floorf( x ) && x < 0.0f );
+	return ( stdlib_base_floorf( x ) == x && x < 0.0f );
 }

@@ -68,5 +68,84 @@
     "euler",
     "power",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "exp2",
+      "alias": "exp2",
+      "pkg_desc": "evaluate the base 2 exponential function for a double-precision floating-point number",
+      "desc": "evaluates the base 2 exponential function for a double-precision floating-point number",
+      "short_desc": "base 2 exponential function",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -5,
+              5
+            ]
+          },
+          "example_values": [
+            -4.62,
+            3.17,
+            -2.41,
+            1.28,
+            -0.73,
+            2.56,
+            -3.09,
+            0.41,
+            4.12,
+            -1.85,
+            2.93,
+            -4.37,
+            1.67,
+            -0.28,
+            3.74,
+            -2.96,
+            0.83,
+            -1.12,
+            4.89,
+            -3.51
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "exp",
+        "exp2",
+        "base 2",
+        "natural",
+        "exponential",
+        "euler",
+        "power"
+      ],
+      "extra_keywords": [
+        "math.exp"
+      ]
+    }
+  }
 }

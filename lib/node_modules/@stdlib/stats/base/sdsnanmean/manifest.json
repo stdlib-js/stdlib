@@ -38,7 +38,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/sdsnanmeanors",
+        "@stdlib/stats/strided/sdsnanmeanors",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -59,7 +59,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/sdsnanmeanors"
+        "@stdlib/stats/strided/sdsnanmeanors"
       ]
     },
     {
@@ -75,7 +75,7 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/stats/base/sdsnanmeanors"
+        "@stdlib/stats/strided/sdsnanmeanors"
       ]
     }
   ]

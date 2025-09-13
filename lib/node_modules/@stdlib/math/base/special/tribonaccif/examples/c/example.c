@@ -18,14 +18,13 @@
 
 #include "stdlib/math/base/special/tribonaccif.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-	int32_t i;
+	float i;
 	float v;
 
-	for ( i = 0; i < 31; i++ ) {
+	for ( i = 0.0f; i < 31.0f; i++ ) {
 		v = stdlib_base_tribonaccif( i );
-		printf( "tribonaccif(%d) = %f\n", i, v );
+		printf( "tribonaccif(%f) = %f\n", i, v );
 	}
 }
