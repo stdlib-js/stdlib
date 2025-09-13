@@ -1,5 +1,5 @@
-abs,"\nabs( x:ndarray|ArrayLikeObject|number[, options:Object] )\n    Computes the absolute value.\n"
-abs.assign,"\nabs.assign( x:ndarray|ArrayLikeObject, y:ndarray|ArrayLikeObject )\n    Computes the absolute value and assigns results to a provided output array.\n"
+abs,"\nabs( x:ndarray[, options:Object] )\n    Computes the absolute value for each element in an ndarray.\n"
+abs.assign,"\nabs.assign( x:ndarray, y:ndarray )\n    Computes the absolute value for each element in an ndarray and assigns\n    results to a provided output ndarray.\n"
 acartesianPower,"\nacartesianPower( x:ArrayLikeObject, n:integer )\n    Returns the Cartesian power.\n"
 acartesianProduct,"\nacartesianProduct( x1:ArrayLikeObject, x2:ArrayLikeObject )\n    Returns the Cartesian product.\n"
 acartesianSquare,"\nacartesianSquare( x:ArrayLikeObject )\n    Returns the Cartesian square.\n"
