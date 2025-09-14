@@ -134,23 +134,18 @@ y = mypdf( 4.0 );
 
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var pdf = require( '@stdlib/stats/base/dists/gamma/pdf' );
 
-var alpha;
-var beta;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 10, 0.0, 3.0, opts );
+var alpha = uniform( 10, EPS, 5.0, opts );
+var beta = uniform( 10, EPS, 5.0, opts );
 
-x = uniform( 10, 0.0, 3.0 );
-alpha = uniform( 10, EPS, 5.0 );
-beta = uniform( 10, EPS, 5.0 );
-
-for ( i = 0; i < x.length; i++ ) {
-    y = pdf( x[ i ], alpha[ i ], beta[ i ] );
-    console.log( 'x: %d, α: %d, β: %d, f(x;α,β): %d', x[ i ].toFixed( 4 ), alpha[ i ].toFixed( 4 ), beta[ i ].toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, α: %0.4f, β: %0.4f, f(x;α,β): %0.4f', x, alpha, beta, pdf );
 ```
 
 </section>

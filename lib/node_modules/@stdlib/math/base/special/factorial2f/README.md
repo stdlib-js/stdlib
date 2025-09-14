@@ -136,16 +136,16 @@ logEachMap( 'factorial2f(%d) = %0.1f', x, factorial2f );
 Evaluates the [double factorial][double-factorial] of `n` as a single-precision floating-point number.
 
 ```c
-float out = stdlib_base_factorial2f( 3 );
+float out = stdlib_base_factorial2f( 3.0f );
 // returns 3.0f
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int32_t` input value.
+-   **n**: `[in] float` input value.
 
 ```c
-float stdlib_base_factorial2f( const int32_t n );
+float stdlib_base_factorial2f( const float n );
 ```
 
 </section>
@@ -169,16 +169,15 @@ float stdlib_base_factorial2f( const int32_t n );
 ```c
 #include "stdlib/math/base/special/factorial2f.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-    const int32_t x[] = { 1, 10, 50, 56, 57 };
+    const float x[] = { 1.0f, 10.0f, 50.0f, 56.0f, 57.0f };
 
     float b;
     int i;
     for ( i = 0; i < 5; i++ ) {
         b = stdlib_base_factorial2f( x[ i ] );
-        printf ( "factorial2f(%d) = %f\n", x[ i ], b );
+        printf ( "factorial2f(%f) = %f\n", x[ i ], b );
     }
 }
 ```

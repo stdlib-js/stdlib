@@ -1,0 +1,132 @@
+
+{{alias}}( x, searchElement[, fromIndex][, options] )
+    Returns the last index of a specified search element along an ndarray
+    dimension.
+
+    When searching for a search element, the function checks for equality using
+    the strict equality operator `===`. As a consequence, `NaN` values are
+    considered distinct, and `-0` and `+0` are considered the same.
+
+    If unable to find a search element along an ndarray dimension, the
+    corresponding element in the returned ndarray is `-1`.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have at least one dimension.
+
+    searchElement: ndarray|any
+        Search element. May be either a scalar value or an ndarray. If provided
+        a scalar value, the value is cast to the data type of the input ndarray.
+        If provided an ndarray, the value must have a shape which is broadcast
+        compatible with the non-reduced dimensions of the input ndarray. For
+        example, given the input shape `[2, 3, 4]` and `options.dim=0`, the
+        search element ndarray must have a shape which is broadcast-compatible
+        with the shape `[3, 4]`.
+
+    fromIndex: ndarray|integer (optional)
+        Index from which to begin searching. May be either a scalar value or an
+        ndarray having an integer or "generic" data type. If provided an ndarray
+        the value must have a shape which is broadcast compatible with the non-
+        reduced dimensions of the input ndarray. For example, given the input
+        shape `[2, 3, 4]` and `options.dim=0`, a provided ndarray must have a
+        shape which is broadcast-compatible with the shape `[3, 4]`. If provided
+        a negative integer, the index at which to begin searching along a
+        dimension is determined by counting backward from the last element
+        (where -1 refers to the last element). Default: -1.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output array data type. Must be an integer index or "generic" data type.
+
+    options.dim: integer (optional)
+        Dimension over which to perform a reduction. If provided a negative
+        integer, the dimension along which to perform the operation is
+        determined by counting backward from the last dimension (where -1 refers
+        to the last dimension). Default: -1.
+
+    options.keepdims: boolean (optional)
+        Boolean indicating whether the reduced dimensions should be included in
+        the returned ndarray as singleton dimensions. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, 2.0 ] );
+    > var y = {{alias}}( x, 2.0, 3 );
+    > var v = y.get()
+    3
+
+
+{{alias}}.assign( x, searchElement[, fromIndex], out[, options] )
+    Returns the last index of a specified search element along an ndarray
+    dimension and assigns results to a provided output ndarray.
+
+    When searching for a search element, the function checks for equality using
+    the strict equality operator `===`. As a consequence, `NaN` values are
+    considered distinct, and `-0` and `+0` are considered the same.
+
+    If unable to find a search element along an ndarray dimension, the
+    corresponding element in the returned ndarray is `-1`.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have at least one dimension.
+
+    searchElement: ndarray|any
+        Search element. May be either a scalar value or an ndarray. If provided
+        a scalar value, the value is cast to the data type of the input ndarray.
+        If provided an ndarray, the value must have a shape which is broadcast
+        compatible with the non-reduced dimensions of the input ndarray. For
+        example, given the input shape `[2, 3, 4]` and `options.dim=0`, the
+        search element ndarray must have a shape which is broadcast-compatible
+        with the shape `[3, 4]`.
+
+    fromIndex: ndarray|integer (optional)
+        Index from which to begin searching. May be either a scalar value or an
+        ndarray having an integer or "generic" data type. If provided an ndarray
+        the value must have a shape which is broadcast compatible with the non-
+        reduced dimensions of the input ndarray. For example, given the input
+        shape `[2, 3, 4]` and `options.dim=0`, a provided ndarray must have a
+        shape which is broadcast-compatible with the shape `[3, 4]`. If provided
+        a negative integer, the index at which to begin searching along a
+        dimension is determined by counting backward from the last element
+        (where -1 refers to the last element). Default: -1.
+
+    out: ndarray
+        Output array.
+
+    options: Object (optional)
+        Function options.
+
+    options.dim: integer (optional)
+        Dimension over which to perform a reduction. If provided a negative
+        integer, the dimension along which to perform the operation is
+        determined by counting backward from the last dimension (where -1 refers
+        to the last dimension). Default: -1.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, 2.0 ] );
+    > var out = {{alias:@stdlib/ndarray/zeros}}( [], { 'dtype': 'int32' } );
+    > var y = {{alias}}.assign( x, 2.0, 3, out )
+    <ndarray>
+    > var bool = ( out === y )
+    true
+    > var v = out.get()
+    3
+
+    See Also
+    --------
