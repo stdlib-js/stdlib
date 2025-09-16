@@ -116,8 +116,7 @@ rules[ '@cspell/spellchecker' ] = [ 'warn', {
 			'trigamma',
 			'uncapitalize',
 			'unregularized',
-			'Fréchet',
-			'échet'
+			'Fréchet'
 		]
 	}
 }];
