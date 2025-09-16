@@ -34,7 +34,7 @@ import { ComplexLike } from '@stdlib/types/complex';
 * var str = '4 + 6i';
 *
 * var z = parse( str );
-* returns { re : 4, im : 6 }
+* // returns { re : 4, im : 6 }
 */
 declare function parse( str: string ): ComplexLike | null;
 

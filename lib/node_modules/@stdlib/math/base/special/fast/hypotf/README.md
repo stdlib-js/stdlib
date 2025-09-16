@@ -201,7 +201,6 @@ int main( void ) {
 
 <section class="related">
 
-
 </section>
 
 <!-- /.related -->
@@ -211,7 +210,6 @@ int main( void ) {
 <section class="links">
 
 [hypotenuse]: https://en.wikipedia.org/wiki/Pythagorean_theorem
-
 
 </section>
 
