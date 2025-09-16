@@ -15,6 +15,7 @@
   ],
   "main": "./lib",
   "directories": {
+    "data": "./data",
     "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",

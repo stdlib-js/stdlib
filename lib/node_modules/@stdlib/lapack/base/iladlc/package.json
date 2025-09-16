@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/lapack/base/iladlc",
   "version": "0.0.0",
-  "description": "LAPACK routine to find the index of the last non-zero column in a input matrix.",
+  "description": "LAPACK routine to find the index of the last non-zero column in an input matrix.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
