@@ -128,6 +128,30 @@ import flatten = require( './index' );
 	flatten( zeros( 'generic', [ 2, 2, 2 ], 'row-major' ), { 'order': ( x: number ): number => x } ); // $ExpectError
 }
 
+// The compiler throws an error if the function is provided a second argument with invalid `dtype` option...
+{
+	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'dtype': '5' } ); // $ExpectError
+	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'dtype': true } ); // $ExpectError
+	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'dtype': false } ); // $ExpectError
+	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'dtype': null } ); // $ExpectError
+	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'dtype': [ 1 ] } ); // $ExpectError
+	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'dtype': ( x: number ): number => x } ); // $ExpectError
+
+	flatten( zeros( 'complex128', [ 2, 2, 2 ], 'row-major' ), { 'dtype': '5' } ); // $ExpectError
+	flatten( zeros( 'complex128', [ 2, 2, 2 ], 'row-major' ), { 'dtype': true } ); // $ExpectError
+	flatten( zeros( 'complex128', [ 2, 2, 2 ], 'row-major' ), { 'dtype': false } ); // $ExpectError
+	flatten( zeros( 'complex128', [ 2, 2, 2 ], 'row-major' ), { 'dtype': null } ); // $ExpectError
+	flatten( zeros( 'complex128', [ 2, 2, 2 ], 'row-major' ), { 'dtype': [ 1 ] } ); // $ExpectError
+	flatten( zeros( 'complex128', [ 2, 2, 2 ], 'row-major' ), { 'dtype': ( x: number ): number => x } ); // $ExpectError
+
+	flatten( zeros( 'generic', [ 2, 2, 2 ], 'row-major' ), { 'dtype': '5' } ); // $ExpectError
+	flatten( zeros( 'generic', [ 2, 2, 2 ], 'row-major' ), { 'dtype': true } ); // $ExpectError
+	flatten( zeros( 'generic', [ 2, 2, 2 ], 'row-major' ), { 'dtype': false } ); // $ExpectError
+	flatten( zeros( 'generic', [ 2, 2, 2 ], 'row-major' ), { 'dtype': null } ); // $ExpectError
+	flatten( zeros( 'generic', [ 2, 2, 2 ], 'row-major' ), { 'dtype': [ 1 ] } ); // $ExpectError
+	flatten( zeros( 'generic', [ 2, 2, 2 ], 'row-major' ), { 'dtype': ( x: number ): number => x } ); // $ExpectError
+}
+
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	const x = zeros( 'float64', [ 2, 2, 2 ], 'row-major' );
