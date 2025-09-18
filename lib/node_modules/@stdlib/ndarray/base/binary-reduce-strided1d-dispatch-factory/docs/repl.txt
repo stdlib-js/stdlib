@@ -1,0 +1,168 @@
+
+{{alias}}( table, idtypes, odtypes, policies )
+    Returns function for performing reduction on two input ndarrays.
+
+    Parameters
+    ----------
+    table: Object
+        Dispatch table containing strided reduction functions. The table object
+        must have the following property:
+
+        - default: default strided reduction function to invoke when provided
+        ndarrays have data types which do not have a corresponding specialized
+        implementation.
+
+        The table may having the following additional properties:
+
+        - types: one-dimensional list of ndarray data types describing
+        specialized input ndarray argument signatures.
+        - fcns: list of strided reduction functions which are specific to
+        specialized input ndarray argument signatures.
+
+        A strided reduction function should have the following signature:
+
+            f( arrays )
+
+        where
+
+        - arrays: array containing two input ndarrays, followed by any
+        additional ndarray arguments.
+
+    idtypes: Array<Array<string>>
+        List containing lists of supported input array data types for each input
+        ndarray argument.
+
+    odtypes: Array<string>
+        List of supported output array data types.
+
+    policies: Object
+        Dispatch policies. Must have the following properties:
+
+        - output: output data type policy.
+        - casting: input ndarray casting policy.
+
+    Returns
+    -------
+    fcn: Function
+        Function for performing reduction on ndarrays.
+
+    Examples
+    --------
+    > var dt = [ 'float64', 'float32', 'generic' ];
+    > var p = { 'output': 'promoted', 'casting': 'promoted' };
+    > var t = { 'default': {{alias:@stdlib/blas/base/ndarray/gdot}} };
+    > var f = {{alias}}( t, [ dt, dt ], dt, p );
+
+
+fcn( x, y[, ...args][, options] )
+    Performs a reduction on two input ndarrays.
+
+    Parameters
+    ----------
+    x: ndarray
+        First input array.
+
+    y: ndarray
+        Second input array.
+
+    args: ...ndarray (optional)
+        Additional ndarray arguments.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output array data type. Setting this option overrides the output data
+        type policy.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform a reduction. If not provided,
+        the function performs a reduction over all elements in the input
+        ndarrays.
+
+    options.keepdims: boolean (optional)
+        Boolean indicating whether the reduced dimensions should be included in
+        the returned ndarray as singleton dimensions. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var dts = [ 'float64', 'float32', 'generic' ];
+    > var p = { 'output': 'promoted', 'casting': 'promoted' };
+    > var t = { 'default': {{alias:@stdlib/blas/base/ndarray/gdot}} };
+    > var f = {{alias}}( t, [ dts, dts ], dts, p );
+    > var xbuf = [ -1.0, 2.0, -3.0, -4.0 ];
+    > var ybuf = [ -1.0, 2.0, -3.0, -4.0 ];
+    > var dt = 'generic';
+    > var sh = [ buf.length ];
+    > var sx = [ 1 ];
+    > var oo = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, oo, ord );
+    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, sx, oo, ord );
+    > var z = f( x, y );
+    > var v = z.get()
+    30.0
+
+
+fcn.assign( x, y[, ...args], out[, options] )
+    Performs a reduction on two input ndarrays and assigns results to a provided
+    output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        First input array.
+
+    y: ndarray
+        Second input array.
+
+    args: ...ndarray (optional)
+        Additional ndarray arguments.
+
+    out: ndarray
+        Output array.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform a reduction. If not provided,
+        the function performs a reduction over all elements in the input
+        ndarrays.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var dts = [ 'float64', 'float32', 'generic' ];
+    > var p = { 'output': 'promoted', 'casting': 'promoted' };
+    > var t = { 'default': {{alias:@stdlib/blas/base/ndarray/gdot}} };
+    > var f = {{alias}}( t, [ dts, dts ], dts, p );
+    > var xbuf = [ -1.0, 2.0, -3.0, -4.0 ];
+    > var ybuf = [ -1.0, 2.0, -3.0, -4.0 ];
+    > var dt = 'generic';
+    > var sh = [ buf.length ];
+    > var sx = [ 1 ];
+    > var oo = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, oo, ord );
+    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, sx, oo, ord );
+    > var out = {{alias:@stdlib/ndarray/zeros}}( [], { 'dtype': dt } );
+    > var z = f.assign( x, y, out )
+    <ndarray>
+    > var bool = ( out === z )
+    true
+    > var v = out.get()
+    30.0
+
+    See Also
+    --------
+

@@ -94,7 +94,7 @@ import NullaryStrided1dDispatch = require( './index' );
 	nullary( ( x: number, y: number ): number => x + y, [ dtypes ], dtypes, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument which is not a a list of data type lists...
+// The compiler throws an error if the function is provided a second argument which is not a list of data type lists...
 {
 	const dtypes: Array<DataType> = [ 'float64', 'float32', 'generic' ];
 	const table = {

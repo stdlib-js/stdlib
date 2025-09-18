@@ -4371,7 +4371,7 @@ rules[ 'stdlib/no-nested-require' ] = 'error';
 *     return inner();
 * }
 */
-rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'off'; // FIXME: re-enable once we figured out the bug/patch
+rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'error';
 
 /**
 * Disallow the use of the `new Array()` constructor.

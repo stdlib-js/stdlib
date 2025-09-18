@@ -186,7 +186,7 @@ declare class NullaryStrided1dDispatch<T, U> {
 	*
 	* @param out - output ndarray
 	* @param x - additional ndarray argument
-	* @param args - output ndarray, additional ndarray arguments, and function options
+	* @param args - additional ndarray arguments and function options
 	* @returns output ndarray
 	*
 	* @example

@@ -29,6 +29,10 @@
 
         Default: 'row-major'.
 
+    options.dtype: string (optional)
+        Output ndarray data type. By default, the function returns an ndarray
+        having the same data type as the provided input ndarray.
+
     Returns
     -------
     out: ndarray

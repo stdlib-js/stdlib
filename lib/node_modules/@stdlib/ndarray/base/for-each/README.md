@@ -91,7 +91,7 @@ The callback function is provided the following arguments:
 
 ## Notes
 
--   The provided ndarray should be an `object` with the following properties:
+-   The provided ndarray should be an object with the following properties:
 
     -   **dtype**: data type.
     -   **data**: data buffer.

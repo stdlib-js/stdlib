@@ -1866,6 +1866,8 @@
 "29d",@stdlib/blas-base-wasm-srotm
 "2Em",@stdlib/blas/base/wasm/sswap
 "2En",@stdlib/blas-base-wasm-sswap
+"2VI",@stdlib/blas/base/wasm/zscal
+"2VJ",@stdlib/blas-base-wasm-zscal
 "27A",@stdlib/blas/base/wasm/zswap
 "27B",@stdlib/blas-base-wasm-zswap
 "1ug",@stdlib/blas/base/xerbla
@@ -2214,6 +2216,8 @@
 "2TF",@stdlib/blas-ext-find-last-index
 "2Ro",@stdlib/blas/ext/index-of
 "2Rp",@stdlib/blas-ext-index-of
+"2VK",@stdlib/blas/ext/last-index-of
+"2VL",@stdlib/blas-ext-last-index-of
 "0G2",@stdlib/blas/ext
 "0G3",@stdlib/blas-ext
 "2FU",@stdlib/blas/ext/sum
@@ -2286,6 +2290,8 @@
 "1xv",@stdlib/complex-float32-base-assert
 "29o",@stdlib/complex/float32/base/identity
 "29p",@stdlib/complex-float32-base-identity
+"2VM",@stdlib/complex/float32/base/mul-add
+"2VN",@stdlib/complex-float32-base-mul-add
 "1xw",@stdlib/complex/float32/base/mul
 "1xx",@stdlib/complex-float32-base-mul
 "29q",@stdlib/complex/float32/base/neg
@@ -3571,6 +3577,8 @@
 "0VF",@stdlib/math-base-special-fast-atanh
 "0VG",@stdlib/math/base/special/fast/hypot
 "0VH",@stdlib/math-base-special-fast-hypot
+"2VO",@stdlib/math/base/special/fast/hypotf
+"2VP",@stdlib/math-base-special-fast-hypotf
 "0VI",@stdlib/math/base/special/fast/max
 "0VJ",@stdlib/math-base-special-fast-max
 "0VK",@stdlib/math/base/special/fast/min
@@ -4599,6 +4607,8 @@
 "0hT",@stdlib/ndarray-array
 "1q2",@stdlib/ndarray/at
 "1q3",@stdlib/ndarray-at
+"2VQ",@stdlib/ndarray/base/any-by
+"2VR",@stdlib/ndarray-base-any-by
 "2V4",@stdlib/ndarray/base/any
 "2V5",@stdlib/ndarray-base-any
 "0hU",@stdlib/ndarray/base/assert/is-allowed-data-type-cast
@@ -4677,10 +4687,16 @@
 "0i1",@stdlib/ndarray-base-assert
 "1kG",@stdlib/ndarray/base/assign
 "1kH",@stdlib/ndarray-base-assign
+"2VS",@stdlib/ndarray/base/binary-input-casting-dtype
+"2VT",@stdlib/ndarray-base-binary-input-casting-dtype
 "1cy",@stdlib/ndarray/base/binary-loop-interchange-order
 "1cz",@stdlib/ndarray-base-binary-loop-interchange-order
 "2Gi",@stdlib/ndarray/base/binary-output-dtype
 "2Gj",@stdlib/ndarray-base-binary-output-dtype
+"2VU",@stdlib/ndarray/base/binary-reduce-strided1d-dispatch-factory
+"2VV",@stdlib/ndarray-base-binary-reduce-strided1d-dispatch-factory
+"2VW",@stdlib/ndarray/base/binary-reduce-strided1d-dispatch
+"2VX",@stdlib/ndarray-base-binary-reduce-strided1d-dispatch
 "2Tk",@stdlib/ndarray/base/binary-reduce-strided1d
 "2Tl",@stdlib/ndarray-base-binary-reduce-strided1d
 "1d0",@stdlib/ndarray/base/binary-tiling-block-size
@@ -4689,6 +4705,8 @@
 "2Gl",@stdlib/ndarray-base-binary
 "0i2",@stdlib/ndarray/base/bind2vind
 "0i3",@stdlib/ndarray-base-bind2vind
+"2VY",@stdlib/ndarray/base/broadcast-array-except-dimensions
+"2VZ",@stdlib/ndarray-base-broadcast-array-except-dimensions
 "0i4",@stdlib/ndarray/base/broadcast-array
 "0i5",@stdlib/ndarray-base-broadcast-array
 "1nU",@stdlib/ndarray/base/broadcast-arrays
@@ -4751,10 +4769,14 @@
 "0if",@stdlib/ndarray-base-expand-dimensions
 "2AW",@stdlib/ndarray/base/fill-by
 "2AX",@stdlib/ndarray-base-fill-by
+"2Va",@stdlib/ndarray/base/find
+"2Vb",@stdlib/ndarray-base-find
 "1ns",@stdlib/ndarray/base/flag
 "1nt",@stdlib/ndarray-base-flag
 "1nW",@stdlib/ndarray/base/flags
 "1nX",@stdlib/ndarray-base-flags
+"2Vc",@stdlib/ndarray/base/flatten-shape
+"2Vd",@stdlib/ndarray-base-flatten-shape
 "1l4",@stdlib/ndarray/base/fliplr
 "1l5",@stdlib/ndarray-base-fliplr
 "1l6",@stdlib/ndarray/base/flipud
@@ -4825,6 +4847,8 @@
 "25z",@stdlib/ndarray-base-normalize-indices
 "1d8",@stdlib/ndarray/base/nullary-loop-interchange-order
 "1d9",@stdlib/ndarray-base-nullary-loop-interchange-order
+"2Ve",@stdlib/ndarray/base/nullary-strided1d-dispatch
+"2Vf",@stdlib/ndarray-base-nullary-strided1d-dispatch
 "2V6",@stdlib/ndarray/base/nullary-strided1d
 "2V7",@stdlib/ndarray-base-nullary-strided1d
 "1dA",@stdlib/ndarray/base/nullary-tiling-block-size
@@ -4901,6 +4925,8 @@
 "0jb",@stdlib/ndarray-base-transpose
 "26G",@stdlib/ndarray/base/unary-accumulate
 "26H",@stdlib/ndarray-base-unary-accumulate
+"2Vg",@stdlib/ndarray/base/unary-addon-dispatch
+"2Vh",@stdlib/ndarray-base-unary-addon-dispatch
 "1dM",@stdlib/ndarray/base/unary-by
 "1dN",@stdlib/ndarray-base-unary-by
 "2Fo",@stdlib/ndarray/base/unary-input-casting-dtype
@@ -4983,6 +5009,8 @@
 "1j7",@stdlib/ndarray-fancy
 "2Aa",@stdlib/ndarray/fill-by
 "2Ab",@stdlib/ndarray-fill-by
+"2Vi",@stdlib/ndarray/fill-slice
+"2Vj",@stdlib/ndarray-fill-slice
 "2Ac",@stdlib/ndarray/fill
 "2Ad",@stdlib/ndarray-fill
 "24u",@stdlib/ndarray/filter-map
@@ -4993,6 +5021,8 @@
 "1nx",@stdlib/ndarray-flag
 "1ny",@stdlib/ndarray/flags
 "1nz",@stdlib/ndarray-flags
+"2Vk",@stdlib/ndarray/flatten
+"2Vl",@stdlib/ndarray-flatten
 "24y",@stdlib/ndarray/for-each
 "24z",@stdlib/ndarray-for-each
 "0ju",@stdlib/ndarray/from-scalar
@@ -7121,6 +7151,8 @@
 "2Ez",@stdlib/stats-base-ndarray-dmax
 "2UC",@stdlib/stats/base/ndarray/dmaxabs
 "2UD",@stdlib/stats-base-ndarray-dmaxabs
+"2Vm",@stdlib/stats/base/ndarray/dmaxsorted
+"2Vn",@stdlib/stats-base-ndarray-dmaxsorted
 "2UE",@stdlib/stats/base/ndarray/dmean
 "2UF",@stdlib/stats-base-ndarray-dmean
 "2Pe",@stdlib/stats/base/ndarray/dmin
@@ -7145,6 +7177,8 @@
 "2F1",@stdlib/stats-base-ndarray-max
 "2UM",@stdlib/stats/base/ndarray/maxabs
 "2UN",@stdlib/stats-base-ndarray-maxabs
+"2Vo",@stdlib/stats/base/ndarray/maxsorted
+"2Vp",@stdlib/stats-base-ndarray-maxsorted
 "2UO",@stdlib/stats/base/ndarray/mean
 "2UP",@stdlib/stats-base-ndarray-mean
 "2Pk",@stdlib/stats/base/ndarray/min-by
@@ -7173,6 +7207,8 @@
 "2F5",@stdlib/stats-base-ndarray-smax
 "2UY",@stdlib/stats/base/ndarray/smaxabs
 "2UZ",@stdlib/stats-base-ndarray-smaxabs
+"2Vq",@stdlib/stats/base/ndarray/smaxsorted
+"2Vr",@stdlib/stats-base-ndarray-smaxsorted
 "2Ua",@stdlib/stats/base/ndarray/smean
 "2Ub",@stdlib/stats-base-ndarray-smean
 "2Ps",@stdlib/stats/base/ndarray/smin
@@ -7199,10 +7235,6 @@
 "1EL",@stdlib/stats-base
 "1Ec",@stdlib/stats/base/sdsnanmean
 "1Ed",@stdlib/stats-base-sdsnanmean
-"1Ee",@stdlib/stats/base/sdsnanmeanors
-"1Ef",@stdlib/stats-base-sdsnanmeanors
-"1FQ",@stdlib/stats/base/snanmean
-"1FR",@stdlib/stats-base-snanmean
 "1Fk",@stdlib/stats/base/snanstdev
 "1Fl",@stdlib/stats-base-snanstdev
 "1Fm",@stdlib/stats/base/snanstdevch
@@ -7227,8 +7259,6 @@
 "1G5",@stdlib/stats-base-snanvariancewd
 "1G6",@stdlib/stats/base/snanvarianceyc
 "1G7",@stdlib/stats-base-snanvarianceyc
-"1GI",@stdlib/stats/base/sstdevwd
-"1GJ",@stdlib/stats-base-sstdevwd
 "2Le",@stdlib/stats/base/ztest/alternative-enum2str
 "2Lf",@stdlib/stats-base-ztest-alternative-enum2str
 "2Lg",@stdlib/stats/base/ztest/alternative-resolve-enum
@@ -7892,6 +7922,8 @@
 "2CZ",@stdlib/stats-strided-sdsmean
 "2Ca",@stdlib/stats/strided/sdsmeanors
 "2Cb",@stdlib/stats-strided-sdsmeanors
+"2Vs",@stdlib/stats/strided/sdsnanmeanors
+"2Vt",@stdlib/stats-strided-sdsnanmeanors
 "2Cc",@stdlib/stats/strided/smax
 "2Cd",@stdlib/stats-strided-smax
 "2Ce",@stdlib/stats/strided/smaxabs
@@ -7938,6 +7970,8 @@
 "2D5",@stdlib/stats-strided-snanmax
 "2D6",@stdlib/stats/strided/snanmaxabs
 "2D7",@stdlib/stats-strided-snanmaxabs
+"2Vu",@stdlib/stats/strided/snanmean
+"2Vv",@stdlib/stats-strided-snanmean
 "2D8",@stdlib/stats/strided/snanmeanors
 "2D9",@stdlib/stats-strided-snanmeanors
 "2DA",@stdlib/stats/strided/snanmeanpn
@@ -7966,6 +8000,8 @@
 "2DP",@stdlib/stats-strided-sstdevpn
 "2DQ",@stdlib/stats/strided/sstdevtk
 "2DR",@stdlib/stats-strided-sstdevtk
+"2Vw",@stdlib/stats/strided/sstdevwd
+"2Vx",@stdlib/stats-strided-sstdevwd
 "2EI",@stdlib/stats/strided/sstdevyc
 "2EJ",@stdlib/stats-strided-sstdevyc
 "2RA",@stdlib/stats/strided/stdev

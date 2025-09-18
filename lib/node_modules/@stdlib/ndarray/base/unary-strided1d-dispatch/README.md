@@ -122,7 +122,7 @@ The method has the following parameters:
 The method accepts the following options:
 
 -   **dims**: list of dimensions over which to perform an operation.
--   **dtype**: output ndarray data type. Setting this option, overrides the output data type policy.
+-   **dtype**: output ndarray data type. Setting this option overrides the output data type policy.
 
 By default, the method returns an ndarray having a data type determined by the output data type policy. To override the default behavior, set the `dtype` option.
 

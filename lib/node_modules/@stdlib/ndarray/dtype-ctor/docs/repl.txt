@@ -1,0 +1,198 @@
+
+{{alias}}( value[, options] )
+    Data type constructor.
+
+    Parameters
+    ----------
+    value: any
+        Data type value.
+
+    options: Object (optional)
+        Constructor options.
+
+    options.description: string (optional)
+        Data type description.
+
+    Returns
+    -------
+    out: DataType
+        Data type instance.
+
+    Examples
+    --------
+    > var dt = new {{alias}}( 'float64' );
+    > dt.byteLength
+    8
+
+
+{{alias}}.name
+    Constructor name.
+
+    Returns
+    -------
+    out: string
+        Constructor name.
+
+    Examples
+    --------
+    > {{alias}}.name
+    'DataType'
+
+
+{{alias}}.prototype.alignment
+    Alignment (in bytes) for the data type.
+
+    If a data type does not have a known alignment, the returned value is -1.
+
+    Returns
+    -------
+    out: integer
+        Alignment (in bytes).
+
+    Examples
+    --------
+    > var dt = new {{alias}}( 'float64' );
+    > dt.alignment
+    8
+
+
+{{alias}}.prototype.byteLength
+    Size (in bytes) of the data type.
+
+    If a data type does not have a known size, the returned value is -1.
+
+    Returns
+    -------
+    out: integer
+        Byte length (in bytes).
+
+    Examples
+    --------
+    > var dt = new {{alias}}( 'float64' );
+    > dt.byteLength
+    8
+
+
+{{alias}}.prototype.byteOrder
+    Data type byte order.
+
+    May be one of the following values:
+
+    - host: host platform byte order.
+    - little-endian: little-endian byte order.
+    - big-endian: big-endian byte order.
+
+    Returns
+    -------
+    out: string
+        Byte order.
+
+    Examples
+    --------
+    > var dt = new {{alias}}( 'float64' );
+    > dt.byteOrder
+    'host'
+
+
+{{alias}}.prototype.char
+    Single letter character abbreviation for the data type.
+
+    If a data type does not have a corresponding single letter character
+    abbreviation, the returned value is an empty string.
+
+    Returns
+    -------
+    out: string
+        Single letter character abbreviation.
+
+    Examples
+    --------
+    > var dt = new {{alias}}( 'float64' );
+    > dt.char
+    'd'
+
+
+{{alias}}.prototype.description
+    Data type description.
+
+    If a data type does not have an associated description, the returned value
+    is an empty string.
+
+    Returns
+    -------
+    out: string
+        Description.
+
+    Examples
+    --------
+    > var dt = new {{alias}}( 'float64' );
+    > dt.description
+    '...'
+
+
+{{alias}}.prototype.enum
+    Enumeration constant for the data type.
+
+    If a data type does not have a corresponding known enumeration constant, the
+    returned value is the enumeration constant for a user-defined data type.
+
+    Returns
+    -------
+    out: integer
+        Enumeration constant.
+
+    Examples
+    --------
+    > var dt = new {{alias}}( 'float64' );
+    > dt.enum
+    <number>
+
+
+{{alias}}.prototype.value
+    Raw (original) data type value.
+
+    Returns
+    -------
+    out: any
+        Data type value.
+
+    Examples
+    --------
+    > var dt = new {{alias}}( 'float64' );
+    > dt.value
+    'float64'
+
+
+{{alias}}.prototype.toJSON()
+    Serializes a data type instance as a JSON object.
+
+    Returns
+    -------
+    out: Object
+        JSON object.
+
+    Examples
+    --------
+    > var dt = new {{alias}}( 'float64' );
+    > dt.toJSON()
+    {...}
+
+
+{{alias}}.prototype.toString()
+    Serializes a data type instance to a string.
+
+    Returns
+    -------
+    out: string
+        Serialized string.
+
+    Examples
+    --------
+    > var dt = new {{alias}}( 'float64' );
+    > dt.toString()
+    'float64'
+
+    See Also
+    --------
+
+
