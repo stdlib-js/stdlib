@@ -506,6 +506,8 @@
 "1mp",@stdlib/array-base-index-of
 "25e",@stdlib/array/base/indices-complement
 "25f",@stdlib/array-base-indices-complement
+"2Vy",@stdlib/array/base/insert-at
+"2Vz",@stdlib/array-base-insert-at
 "1t0",@stdlib/array/base/join
 "1t1",@stdlib/array-base-join
 "2Da",@stdlib/array/base/last-index-of-same-value
@@ -670,6 +672,8 @@
 "1Zb",@stdlib/array-base-to-accessor-array
 "1nS",@stdlib/array/base/to-deduped
 "1nT",@stdlib/array-base-to-deduped
+"2W0",@stdlib/array/base/to-inserted-at
+"2W1",@stdlib/array-base-to-inserted-at
 "1p2",@stdlib/array/base/to-reversed
 "1p3",@stdlib/array-base-to-reversed
 "1ig",@stdlib/array/base/unary2d-by
@@ -2020,6 +2024,8 @@
 "2Sz",@stdlib/blas-ext-base-gfind-index
 "2T0",@stdlib/blas/ext/base/gfind-last-index
 "2T1",@stdlib/blas-ext-base-gfind-last-index
+"2W2",@stdlib/blas/ext/base/gindex-of-row
+"2W3",@stdlib/blas-ext-base-gindex-of-row
 "2No",@stdlib/blas/ext/base/gindex-of
 "2Np",@stdlib/blas-ext-base-gindex-of
 "2Nq",@stdlib/blas/ext/base/glast-index-of
@@ -3581,6 +3587,8 @@
 "2VP",@stdlib/math-base-special-fast-hypotf
 "0VI",@stdlib/math/base/special/fast/max
 "0VJ",@stdlib/math-base-special-fast-max
+"2W4",@stdlib/math/base/special/fast/maxf
+"2W5",@stdlib/math-base-special-fast-maxf
 "0VK",@stdlib/math/base/special/fast/min
 "0VL",@stdlib/math-base-special-fast-min
 "0VM",@stdlib/math/base/special/fast
@@ -4633,10 +4641,14 @@
 "1cj",@stdlib/ndarray-base-assert-is-complex-floating-point-data-type
 "0hg",@stdlib/ndarray/base/assert/is-contiguous
 "0hh",@stdlib/ndarray-base-assert-is-contiguous
+"2W6",@stdlib/ndarray/base/assert/is-data-type-object
+"2W7",@stdlib/ndarray-base-assert-is-data-type-object
 "2OQ",@stdlib/ndarray/base/assert/is-data-type-string
 "2OR",@stdlib/ndarray-base-assert-is-data-type-string
 "0hi",@stdlib/ndarray/base/assert/is-data-type
 "0hj",@stdlib/ndarray-base-assert-is-data-type
+"2W8",@stdlib/ndarray/base/assert/is-equal-data-type
+"2W9",@stdlib/ndarray-base-assert-is-equal-data-type
 "1ck",@stdlib/ndarray/base/assert/is-floating-point-data-type
 "1cl",@stdlib/ndarray-base-assert-is-floating-point-data-type
 "2Fg",@stdlib/ndarray/base/assert/is-index-data-type
@@ -4739,6 +4751,8 @@
 "0iN",@stdlib/ndarray-base-ctor
 "1kI",@stdlib/ndarray/base/data-buffer
 "1kJ",@stdlib/ndarray-base-data-buffer
+"2WA",@stdlib/ndarray/base/dtype-alignment
+"2WB",@stdlib/ndarray-base-dtype-alignment
 "0iO",@stdlib/ndarray/base/dtype-char
 "0iP",@stdlib/ndarray-base-dtype-char
 "0iQ",@stdlib/ndarray/base/dtype-desc
@@ -4755,6 +4769,8 @@
 "1kL",@stdlib/ndarray-base-dtype
 "0ia",@stdlib/ndarray/base/dtype2c
 "0ib",@stdlib/ndarray-base-dtype2c
+"2WC",@stdlib/ndarray/base/dtypes2enums
+"2WD",@stdlib/ndarray-base-dtypes2enums
 "0ic",@stdlib/ndarray/base/dtypes2signatures
 "0id",@stdlib/ndarray-base-dtypes2signatures
 "1d4",@stdlib/ndarray/base/empty-like
@@ -4847,6 +4863,8 @@
 "25z",@stdlib/ndarray-base-normalize-indices
 "1d8",@stdlib/ndarray/base/nullary-loop-interchange-order
 "1d9",@stdlib/ndarray-base-nullary-loop-interchange-order
+"2WE",@stdlib/ndarray/base/nullary-strided1d-dispatch-factory
+"2WF",@stdlib/ndarray-base-nullary-strided1d-dispatch-factory
 "2Ve",@stdlib/ndarray/base/nullary-strided1d-dispatch
 "2Vf",@stdlib/ndarray-base-nullary-strided1d-dispatch
 "2V6",@stdlib/ndarray/base/nullary-strided1d
@@ -4995,6 +5013,8 @@
 "1dX",@stdlib/ndarray-dispatch-by
 "0jq",@stdlib/ndarray/dispatch
 "0jr",@stdlib/ndarray-dispatch
+"2WG",@stdlib/ndarray/dtype-ctor
+"2WH",@stdlib/ndarray-dtype-ctor
 "1kU",@stdlib/ndarray/dtype
 "1kV",@stdlib/ndarray-dtype
 "0js",@stdlib/ndarray/dtypes
@@ -5021,6 +5041,8 @@
 "1nx",@stdlib/ndarray-flag
 "1ny",@stdlib/ndarray/flags
 "1nz",@stdlib/ndarray-flags
+"2WI",@stdlib/ndarray/flatten-by
+"2WJ",@stdlib/ndarray-flatten-by
 "2Vk",@stdlib/ndarray/flatten
 "2Vl",@stdlib/ndarray-flatten
 "24y",@stdlib/ndarray/for-each
@@ -8048,6 +8070,8 @@
 "2GZ",@stdlib/stats-strided-wasm-dmeanors
 "2KC",@stdlib/stats/strided/wasm/dmeanwd
 "2KD",@stdlib/stats-strided-wasm-dmeanwd
+"2WK",@stdlib/stats/strided/wasm/dnanvariancewd
+"2WL",@stdlib/stats-strided-wasm-dnanvariancewd
 "2N6",@stdlib/stats/strided/ztest
 "2N7",@stdlib/stats-strided-ztest
 "2Ra",@stdlib/stats/strided/ztest2
