@@ -20,7 +20,7 @@
 #include "stdlib/math/base/special/sqrtf.h"
 
 /**
-* Computes the hypotenuse of a single-precision floating-point number.
+* Computes the hypotenuse of two single-precision floating-point numbers.
 *
 * @param x       number
 * @param y       number
@@ -28,7 +28,7 @@
 *
 * @example
 * float h = stdlib_base_fast_hypotf( 5.0f, 12.0f );
-* // returns 13.0
+* // returns 13.0f
 */
 float stdlib_base_fast_hypotf( const float x, const float y ) {
 	return stdlib_base_sqrtf( ( x * x ) + ( y * y ) );

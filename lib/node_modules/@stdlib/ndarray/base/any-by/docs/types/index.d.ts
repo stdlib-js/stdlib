@@ -77,6 +77,7 @@ type Predicate<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T,
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
+* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
 * function predicate( value ) {
 *    return value > 0.0;

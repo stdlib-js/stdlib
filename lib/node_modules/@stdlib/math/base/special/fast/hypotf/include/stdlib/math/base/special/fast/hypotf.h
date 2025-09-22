@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the hypotenuse of a single-precision floating-point number.
+* Computes the hypotenuse of two single-precision floating-point numbers.
 */
 float stdlib_base_fast_hypotf( const float x, const float y );
 

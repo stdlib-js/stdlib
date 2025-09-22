@@ -1,6 +1,6 @@
 
 {{alias}}( x, y )
-    Computes the hypotenuse of a single-precision floating-point number.
+    Computes the hypotenuse of two single-precision floating-point numbers.
 
     Parameters
     ----------
