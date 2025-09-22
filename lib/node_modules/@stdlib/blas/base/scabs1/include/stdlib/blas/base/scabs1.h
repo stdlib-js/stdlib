@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the  Level 1 routine `scabs1`.
 */
-#ifndef SCABS1_H
-#define SCABS1_H
+#ifndef STDLIB_BLAS_BASE_SCABS1_H
+#define STDLIB_BLAS_BASE_SCABS1_H
 
 #include "stdlib/complex/float32/ctor.h"
 
@@ -40,5 +40,5 @@ float c_scabs1( const stdlib_complex64_t c );
 }
 #endif
 
-#endif // !SCABS1_H
+#endif // !STDLIB_BLAS_BASE_SCABS1_H
 

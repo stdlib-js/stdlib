@@ -61,11 +61,11 @@ interface IsNonNegativeFinite {
 	* @returns {boolean} boolean indicating if a value is a number primitive having a nonnegative finite value
 	*
 	* @example
-	* var bool = isNonNegativeNumber( 3.0 );
+	* var bool = isNonNegativeFinite( 3.0 );
 	* // returns true
 	*
 	* @example
-	* var bool = isNonNegativeNumber( new Number( 3.0 ) );
+	* var bool = isNonNegativeFinite( new Number( 3.0 ) );
 	* // returns false
 	*
 	* @example

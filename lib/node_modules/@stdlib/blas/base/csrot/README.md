@@ -283,7 +283,7 @@ int main( void ) {
     const int strideX = 1;
     const int strideY = -1;
 
-    // Copy elements:
+    // Apply a plane rotation:
     c_csrot( N, (void *)x, strideX, (void *)y, strideY, 0.8f, 0.6f );
 
     // Print the result:

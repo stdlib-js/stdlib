@@ -139,7 +139,7 @@ interface Routine {
 *
 *     -   **value**: array element.
 *     -   **indices**: current array element indices.
-*     --  **array**: input nested array.
+*     -   **array**: input nested array.
 *
 * @param x - input nested array
 * @param shape - array shape

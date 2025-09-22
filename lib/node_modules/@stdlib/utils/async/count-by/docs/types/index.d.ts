@@ -288,7 +288,7 @@ interface CountByAsync {
 	* };
 	*
 	* // Create a `countByAsync` function which invokes the indicator function for each collection element sequentially:
-	* var countByAsync = factory( opts, indicator );
+	* var countBy = countByAsync.factory( opts, indicator );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -305,7 +305,7 @@ interface CountByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* countByAsync( files, done );
+	* countBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( options: Options<T, V>, indicator: Indicator<T, V> ): FactoryFunction<T>;
 
@@ -342,7 +342,7 @@ interface CountByAsync {
 	* }
 	*
 	* // Create a `countByAsync` function which invokes the indicator function for each collection element sequentially:
-	* var countByAsync = factory( indicator );
+	* var countBy = countByAsync.factory( indicator );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -359,7 +359,7 @@ interface CountByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* countByAsync( files, done );
+	* countBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( indicator: Indicator<T, V> ): FactoryFunction<T>;
 }

@@ -20,7 +20,7 @@ limitations under the License.
 
 # tand
 
-> Computes the [tangent][trigonometric-functions] of an angle measured in degrees.
+> Compute the [tangent][trigonometric-functions] of an angle measured in degrees.
 
 <section class="intro">
 

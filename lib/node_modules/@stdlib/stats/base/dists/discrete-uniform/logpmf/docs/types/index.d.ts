@@ -110,9 +110,9 @@ interface LogPMF {
 * y = myLogPMF( 5.0 );
 * // returns -Infinity
 */
-declare var logPMF: LogPMF;
+declare var logpmf: LogPMF;
 
 
 // EXPORTS //
 
-export = logPMF;
+export = logpmf;

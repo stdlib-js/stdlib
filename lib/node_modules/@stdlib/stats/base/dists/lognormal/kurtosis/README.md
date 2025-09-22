@@ -124,7 +124,7 @@ var i;
 
 for ( i = 0; i < 10; i++ ) {
     mu = ( randu()*10.0 ) - 5.0;
-    sigma = randu() * 20.0;
+    sigma = ( randu()*4.9 ) + 0.1;
     y = kurtosis( mu, sigma );
     console.log( 'µ: %d, σ: %d, Kurt(X;µ,σ): %d', mu.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
 }
@@ -213,7 +213,7 @@ int main( void ) {
     int i;
 
     for ( i = 0; i < 25; i++ ) {
-        sigma = random_uniform( -5.0, 5.0 );
+        sigma = random_uniform( 0.1, 5.0 );
         mu = random_uniform( 0.0, 20.0 );
         y = stdlib_base_dists_lognormal_kurtosis( mu, sigma );
         printf( "µ: %lf, σ: %lf, Kurt(X;µ,σ): %lf\n", mu, sigma, y );

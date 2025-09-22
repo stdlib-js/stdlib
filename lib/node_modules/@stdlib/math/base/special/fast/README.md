@@ -32,7 +32,7 @@ var fmath = require( '@stdlib/math/base/special/fast' );
 
 #### fmath
 
-Namespace containing "fast" math special functions. 
+Namespace containing "fast" math special functions.
 
 ```javascript
 var fcns = fmath;
@@ -72,7 +72,7 @@ var fcns = fmath;
 -   Implementations **may** violate strict IEEE semantics.
 -   Implementations **may** assume arguments and results are **not** `NaN`.
 -   Implementations **may** assume arguments are **neither** positive or negative `infinity`.
--   Implementations **may** ignore the sign of zero. 
+-   Implementations **may** ignore the sign of zero.
 
 </section>
 

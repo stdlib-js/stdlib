@@ -81,7 +81,7 @@
     ... };
 
     // Using minimal ndarray-like objects...
-    > x = {
+    > var x = {
     ...     'dtype': dtype,
     ...     'data': xbuf,
     ...     'shape': shx,
@@ -89,7 +89,7 @@
     ...     'offset': ox,
     ...     'order': order
     ... };
-    > y = {
+    > var y = {
     ...     'dtype': dtype,
     ...     'data': ybuf,
     ...     'shape': shy,

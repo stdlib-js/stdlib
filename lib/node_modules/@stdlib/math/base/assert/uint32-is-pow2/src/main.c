@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/assert/uint32_is_pow2.h"
+#include <stdbool.h>
 #include <stdint.h>
 
 /**

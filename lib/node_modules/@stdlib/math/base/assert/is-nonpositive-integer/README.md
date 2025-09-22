@@ -32,7 +32,7 @@ var isNonPositiveInteger = require( '@stdlib/math/base/assert/is-nonpositive-int
 
 #### isNonPositiveInteger( x )
 
-Tests if a finite [double-precision floating-point number][ieee754] is a nonpositive `integer`.
+Tests if a finite [double-precision floating-point number][ieee754] is a nonpositive integer.
 
 ```javascript
 var bool = isNonPositiveInteger( -1.0 );
