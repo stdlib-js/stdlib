@@ -115,6 +115,15 @@ jobs:
 
               # Branch name slug with slashes replaced by dashes:
               branch_name="update-${display_namespace//\//-}-declarations"
+
+              # If an open PR already exists for this branch, skip this namespace entirely:
+              existing_pr=$(gh pr list --head "$branch_name" --state open --json number -q '.[0].number' || true)
+              if [ -n "$existing_pr" ]; then
+                echo "Open PR exists for $branch_name (#$existing_pr). Skipping $namespace."
+                continue
+              fi
+
+              # Switch to the new branch:
               git checkout -b "$branch_name"
 
               # Generate declarations for this namespace:
