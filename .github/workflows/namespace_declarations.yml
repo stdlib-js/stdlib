@@ -65,8 +65,11 @@ jobs:
           # Specify whether to download Git-LFS files:
           lfs: false
 
-          # Avoid storing GitHub token in local Git configuration:
-          persist-credentials: false
+          # Provide a GitHub token for authentication
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+
+          # Store GitHub token in local Git configuration:
+          persist-credentials: true
         timeout-minutes: 10
 
       # Install Node.js:
@@ -107,7 +110,11 @@ jobs:
           # Process each namespace:
           while IFS= read -r namespace; do
             if [ -n "$namespace" ] && [[ $namespace != *"_tools"* ]]; then
-              branch_name="update-$(echo "$namespace" | sed 's/@stdlib\///' | sed 's/\//-/g')-declarations"
+              # Namespace without the '@stdlib/' scope for display in commit messages and PR titles:
+              display_namespace="${namespace#@stdlib/}"
+
+              # Branch name slug with slashes replaced by dashes:
+              branch_name="update-${display_namespace//\//-}-declarations"
               git checkout -b "$branch_name"
 
               # Generate declarations for this namespace:
@@ -119,13 +126,13 @@ jobs:
                 git add lib/node_modules/@stdlib
 
                 # Commit changes:
-                git commit -m "feat: update \`${namespace}\` TypeScript declarations" --signoff
+                git commit -m "feat: update \`${display_namespace}\` TypeScript declarations" --signoff
 
                 # Push branch and create PR:
                 git push origin "$branch_name"
 
                 gh pr create \
-                  --title "feat: update \`${namespace}\` TypeScript declarations" \
+                  --title "feat: update \`${display_namespace}\` TypeScript declarations" \
                   --body "This PR updates TypeScript declarations for the \`${namespace}\` namespace.
 
           ## Reviewer Checklist
@@ -138,7 +145,7 @@ jobs:
           - [ ] Approve the PR once you are confident about the classification and changes made." \
                   --label "Documentation" \
                   --label "automated-pr" \
-                  --reviewer "reviewers" \
+                  --reviewer "@stdlib-js/reviewers" \
                   --base develop \
                   --head "$branch_name"
               fi

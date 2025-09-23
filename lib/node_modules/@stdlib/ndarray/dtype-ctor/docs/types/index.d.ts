@@ -145,7 +145,7 @@ declare class DataType<T = unknown> {
 	*
 	* ## Notes
 	*
-	* -   If a data type does not have a corresponding known enumeration constant, the returned value is the enumeration constant for a user-defined data type.
+	* -   If a data type does not have a corresponding known enumeration constant, the returned value is `-1`.
 	*
 	* @example
 	* var dt = new DataType( 'float64' );

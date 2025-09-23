@@ -84,7 +84,7 @@ The following [casting][@stdlib/ndarray/casting-modes] modes are supported:
 ```javascript
 var nCartesianProduct = require( '@stdlib/array/base/n-cartesian-product' );
 var unzip = require( '@stdlib/utils/unzip' );
-var dtypes = require( '@stdlib/ndarray/dtypes' );
+var dtypes = require( '@stdlib/ndarray/base/dtype-strings' );
 var modes = require( '@stdlib/ndarray/casting-modes' );
 var logEachMap = require( '@stdlib/console/log-each-map' );
 var isAllowedCast = require( '@stdlib/ndarray/base/assert/is-allowed-data-type-cast' );

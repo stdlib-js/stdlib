@@ -148,7 +148,7 @@ var v = dt.enum;
 // returns <number>
 ```
 
-If a data type does not have a corresponding known enumeration constant, the returned value is the enumeration constant for a user-defined data type.
+If a data type does not have a corresponding known enumeration constant, the returned value is `-1`.
 
 **Note**: enumeration constants should be treated as **opaque** values. One should **not** assume that a data type has a specific enumeration constant value.
 

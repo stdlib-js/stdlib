@@ -74,7 +74,7 @@ bool = isSameKindCast( 'uint16', 'int16' );
 
 ```javascript
 var cartesianSquare = require( '@stdlib/array/cartesian-square' );
-var dtypes = require( '@stdlib/ndarray/dtypes' );
+var dtypes = require( '@stdlib/ndarray/base/dtype-strings' );
 var isSameKindCast = require( '@stdlib/ndarray/base/assert/is-same-kind-data-type-cast' );
 
 // Generate a list of dtype pairs:

@@ -134,7 +134,7 @@
     Enumeration constant for the data type.
 
     If a data type does not have a corresponding known enumeration constant, the
-    returned value is the enumeration constant for a user-defined data type.
+    returned value is -1.
 
     Returns
     -------

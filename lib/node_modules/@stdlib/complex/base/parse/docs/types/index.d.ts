@@ -29,8 +29,6 @@ import { ComplexLike } from '@stdlib/types/complex';
 * @returns complex like object
 *
 * @example
-* var parse = require( '@stdlib/complex/base/parse' );
-*
 * var str = '4 + 6i';
 *
 * var z = parse( str );

@@ -58,8 +58,8 @@
     ],
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/absgammalnf",
-      "float64": "@stdlib/math/base/special/absgammaln",
-      "generic": "@stdlib/math/base/special/absgammaln"
+      "float64": "@stdlib/math/base/special/gammaln",
+      "generic": "@stdlib/math/base/special/gammaln"
     },
     "policies": {
       "output": "real_floating_point_and_generic",
