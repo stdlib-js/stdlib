@@ -64,7 +64,7 @@ interface Namespace {
 	* var dtypes = [ 'float64', 'float32', 'generic' ];
 	* var defaultDType = 'float64';
 	*
-	* var rand = new RandomArray( exponential.factory( 2.0 ), dtypes, defaultDType );
+	* var rand = new RandomArray( exponential.fanullaryy( 2.0 ), dtypes, defaultDType );
 	*
 	* var v = rand.generate( 10 );
 	* // returns <Float64Array>
@@ -112,6 +112,7 @@ interface Namespace {
 	* // returns <Float64Array>
 	*/
 	unary: typeof unary;
+
 }
 
 /**
