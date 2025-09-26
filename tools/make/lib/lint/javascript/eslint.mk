@@ -253,18 +253,26 @@ endif
 eslint-files: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		$(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file || exit 1; \
+		if [ -f "$$file" ]; then \
+			echo ''; \
+			echo "Linting file: $$file"; \
+			$(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file || exit 1; \
+		else \
+			echo "Skipping missing file: $$file"; \
+		fi; \
 	done
 else
 	$(QUIET) status=0; \
 	for file in $(FILES); do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		if ! $(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file; then \
-			echo 'Linting failed.'; \
-			status=1; \
+		if [ -f "$$file" ]; then \
+			echo ''; \
+			echo "Linting file: $$file"; \
+			if ! $(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file; then \
+				echo 'Linting failed.'; \
+				status=1; \
+			fi; \
+		else \
+			echo "Skipping missing file: $$file"; \
 		fi; \
 	done; \
 	exit $$status;
