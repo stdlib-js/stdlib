@@ -152,6 +152,100 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/logistic/mgf.h"
+```
+
+#### stdlib_base_dists_logistic_mgf( t, mu, s )
+
+Evaluates the logarithm of the [moment-generating function][mgf] (MGF) for a [logistic][logistic-distribution] distribution with parameters `mu` (location parameter) and `s` (scale parameter).
+
+```c
+double out = stdlib_base_dists_logistic_mgf( 0.9, 0.0, 1.0 );
+// returns ~9.15
+```
+
+The function accepts the following arguments:
+
+-   **t**: `[in] double` input value.
+-   **mu**: `[in] double` location parameter.
+-   **s**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_logistic_mgf( const double t, const double mu, const double s );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/logistic/mgf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v * ( max-min ) );
+}
+
+int main( void ) {
+    double mu;
+    double s;
+    double t;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        mu = random_uniform( -5.0, 5.0 );
+        s = random_uniform( 0.0, 20.0 );
+        t = random_uniform( 0.0, 10.0 );
+        y = stdlib_base_dists_logistic_mgf( t, mu, s );
+        printf( "t: %lf, µ: %lf, s: %lf, M_X(t;µ,s): %lf\n", t, mu, s, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">

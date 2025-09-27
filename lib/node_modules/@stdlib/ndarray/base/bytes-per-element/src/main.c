@@ -21,7 +21,7 @@
 #include <stdint.h>
 
 /**
-* Returns the number of bytes per element for a given data type.
+* Returns the number of bytes per element for a provided data type.
 *
 * ## Notes
 *

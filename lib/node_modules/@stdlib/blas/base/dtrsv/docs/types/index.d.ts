@@ -60,7 +60,7 @@ interface Routine {
 	* @param N - number of elements along each dimension in the matrix `A`
 	* @param A - input matrix
 	* @param strideA1 - stride of the first dimension of `A`
-	* @param strideA2 - stride of the first dimension of `A`
+	* @param strideA2 - stride of the second dimension of `A`
 	* @param offsetA - starting index for `A`
 	* @param x - input vector
 	* @param strideX - `x` stride length

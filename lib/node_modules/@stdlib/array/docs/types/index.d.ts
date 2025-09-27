@@ -690,7 +690,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var x = ns.scalar2array( 1.0, generic' );
+	* var x = ns.scalar2array( 1.0, 'generic' );
 	* // returns [ 1.0 ]
 	*/
 	scalar2array: typeof scalar2array;

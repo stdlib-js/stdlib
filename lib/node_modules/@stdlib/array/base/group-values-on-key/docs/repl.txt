@@ -1,0 +1,30 @@
+
+{{alias}}( x, key )
+    Groups the elements of an array according to a specified property name.
+
+    If provided an empty array, the function returns an empty object.
+
+    Parameters
+    ----------
+    x: ArrayLike
+        Input array.
+
+    key: string|number|symbol
+        Property name whose values are used to determine groups. Each value
+        associated with a specified `key` should resolve to a value which can be
+        serialized as an object key.
+
+    Returns
+    -------
+    out: Object
+        Group results.
+
+    Examples
+    --------
+    > var x = [ { 'x': 1, 'y': 2 }, { 'x': 1, 'y': 3 } ];
+    > var out = {{alias}}( x, 'y' )
+    { '2': [ { 'x': 1, 'y': 2 } ], '3': [ { 'x': 1, 'y': 3 } ] }
+
+    See Also
+    --------
+

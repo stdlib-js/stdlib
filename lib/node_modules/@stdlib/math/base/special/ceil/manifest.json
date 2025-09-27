@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/ceil.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -44,7 +44,7 @@
     {
       "task": "benchmark",
       "src": [
-        "./src/ceil.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -58,7 +58,7 @@
     {
       "task": "examples",
       "src": [
-        "./src/ceil.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"

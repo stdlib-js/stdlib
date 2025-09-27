@@ -109,7 +109,7 @@ This package exposes various C APIs to facilitate the creation of Node-API strid
 -   [`@stdlib/strided/base/smap2`][@stdlib/strided/base/smap2]: single-precision floating-point strided array interface for applying a binary callback to two input strided arrays.
 -   [`@stdlib/strided/base/smskmap`][@stdlib/strided/base/smskmap]: single-precision floating-point strided array interface for applying a unary callback to a single input strided array according to a mask strided array.
 -   [`@stdlib/strided/base/smskmap2`][@stdlib/strided/base/smskmap2]: single-precision floating-point strided array interface for applying a unary callback to two input strided arrays according to a mask strided array.
--   [`@stdlib/strided/base/unary`][@stdlib/strided/base/unary]: strided array loops for operating on a single input strided array and one or more output strided arrays. 
+-   [`@stdlib/strided/base/unary`][@stdlib/strided/base/unary]: strided array loops for operating on a single input strided array and one or more output strided arrays.
 -   [`@stdlib/strided/base/zmap`][@stdlib/strided/base/zmap]: double-precision complex floating-point strided array interface for applying a unary callback to a single input strided array.
 -   [`@stdlib/strided/dtypes`][@stdlib/strided/dtypes]: supported strided array data types.
 -   [`@stdlib/strided/napi/binary`][@stdlib/strided/napi/binary]: Node-API interfaces and macros for registering one or more [`@stdlib/strided/base/binary`][@stdlib/strided/base/binary] interfaces with support for multiple dispatch.

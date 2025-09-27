@@ -59,16 +59,16 @@ v = ceilf( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var ceilf = require( '@stdlib/math/base/special/ceilf' );
 
-var x;
-var i;
+var opts = {
+    'dtype': 'float32'
+};
+var x = uniform( 100, -50.0, 50.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*100.0) - 50.0;
-    console.log( 'ceilf(%d) = %d', x, ceilf( x ) );
-}
+logEachMap( 'ceilf(%0.4f) = %0.4f', x, ceilf );
 ```
 
 </section>

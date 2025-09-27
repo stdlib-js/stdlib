@@ -77,17 +77,12 @@ var ctor = ctors( 'float' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var ctors = require( '@stdlib/ndarray/base/buffer-ctors' );
 
-var DTYPES = dtypes();
-
-var ctor;
-var i;
-for ( i = 0; i < DTYPES.length; i++ ) {
-    ctor = ctors( DTYPES[ i ] );
-    console.log( ctor );
-}
+var dts = dtypes( 'integer_and_generic' );
+logEachMap( '%s => %s', dts, ctors );
 ```
 
 </section>
