@@ -2715,13 +2715,13 @@ rules[ 'expect-type/expect' ] = 'error';
 /**
 * Ensures return annotations in TSDoc examples match the actual output.
 *
-* @name stdlib/tsdoc-doctest
+* @name stdlib/tsdoc-declarations-doctest
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see {@link module:@stdlib/_tools/eslint/rules/tsdoc-doctest}
+* @see {@link module:@stdlib/_tools/eslint/rules/tsdoc-declarations-doctest}
 */
-rules[ 'stdlib/tsdoc-doctest' ] = 'error';
+rules[ 'stdlib/tsdoc-declarations-doctest' ] = 'error';
 
 
 // EXPORTS //
