@@ -63,7 +63,7 @@ enum STDLIB_NDARRAY_BYTES_PER_ELEMENT {
 };
 
 /**
-* Returns the number of bytes per element for a given data type.
+* Returns the number of bytes per element for a provided data type.
 */
 int64_t stdlib_ndarray_bytes_per_element( enum STDLIB_NDARRAY_DTYPE dtype );
 

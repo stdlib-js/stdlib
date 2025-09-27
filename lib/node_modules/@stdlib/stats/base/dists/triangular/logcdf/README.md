@@ -121,7 +121,7 @@ y = mylogcdf( 8.0 );
 
 ## Notes
 
--   In virtually all cases, using the `logcdf` or `logcdf` functions is preferable to manually computing the logarithm of the `pdf` or `cdf`, respectively, since the latter is prone to overflow and underflow.
+-   In virtually all cases, using the `logpdf` or `logcdf` functions is preferable to manually computing the logarithm of the `pdf` or `cdf`, respectively, since the latter is prone to overflow and underflow.
 
 </section>
 
@@ -186,7 +186,7 @@ for ( i = 0; i < 25; i++ ) {
 
 #### stdlib_base_dists_geometric_logcdf( x, a, b, c )
 
-Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit) and `c` (mode).
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit), and `c` (mode).
 
 ```c
 double y = stdlib_base_dists_geometric_logcdf( 0.5, -1.0, 1.0, 0.0 );
@@ -227,7 +227,6 @@ double stdlib_base_dists_geometric_logcdf( const double x, const double a, const
 #include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
 
 static double random_uniform( const double min, const double max ) {
     double v = (double)rand() / ( (double)RAND_MAX + 1.0 );

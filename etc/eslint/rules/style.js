@@ -1405,7 +1405,7 @@ rules[ 'object-curly-spacing' ] = [ 'warn', 'always', {
 * Require newlines between each object property.
 *
 * @name object-property-newline
-* memberof rules
+* @memberof rules
 * @type {Array}
 * @see [object-property-newline]{@link https://eslint.org/docs/rules/object-property-newline}
 *

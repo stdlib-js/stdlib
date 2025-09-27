@@ -64,7 +64,7 @@ jobs:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             const commentBody = context.payload.comment.body.trim();
-            const RE_COMMANDS = /^\/stdlib\s+(help|check-files|update-copyright-years|lint-autofix|merge|rebase)$/i;
+            const RE_COMMANDS = /^\/stdlib\s+(help|check-files|update-copyright-years|lint-autofix|merge|rebase|make-commands)$/i;
             const isRecognizedCommand = RE_COMMANDS.test( commentBody );
 
             if ( isRecognizedCommand ) {
@@ -82,7 +82,7 @@ jobs:
               await github.rest.issues.createComment({
                 'owner': context.repo.owner,
                 'repo': context.repo.repo,
-                'issue_number': github.event.issue.number,
+                'issue_number': context.issue.number,
                 'body': `${quote}\n\n@${context.payload.comment.user.login}, slash command not recognized. Please use \`/stdlib help\` to view available commands.`
               });
             }
@@ -104,6 +104,24 @@ jobs:
     with:
       pull_request_number: ${{ github.event.issue.number }}
       user: ${{ github.event.comment.user.login }}
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+
+  # Define a command for leaving a comment with make command instructions:
+  make-commands:
+    # Define a display name:
+    name: 'Post a comment with make command instructions'
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
+
+    # Define the conditions under which the job should run:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib make-commands')
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/pr_commands_comment.yml
+    with:
+      pull_request_number: ${{ github.event.issue.number }}
     secrets:
       STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
 
@@ -218,6 +236,7 @@ jobs:
             @${{ github.event.comment.user.login }}, available slash commands include:
 
             - `/stdlib check-files` - Check for required files.
+            - `/stdlib make-commands` - Print `make` commands for package changed in PR.
             - `/stdlib update-copyright-years` - Update copyright header years.
             - `/stdlib lint-autofix` - Auto-fix lint errors.
             - `/stdlib merge` - Merge changes from develop branch into this PR.
@@ -236,7 +255,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Ensure all previous jobs have completed before running this job:
-    needs: [ add_initial_reaction, check_files, update_copyright_years, fix_lint_errors, merge_develop, rebase_develop, help ]
+    needs: [ add_initial_reaction, check_files, make-commands, update_copyright_years, fix_lint_errors, merge_develop, rebase_develop, help ]
 
     # Define the conditions under which the job should run:
     if: |
@@ -246,6 +265,25 @@ jobs:
 
     # Define the job's steps:
     steps:
+      # Check if any previous job failed and post a comment:
+      - name: 'Notify of command failure'
+        if: |
+          contains(needs.*.result, 'failure')
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          script: |
+            const commentBody = context.payload.comment.body.trim();
+            const lines = commentBody.split( '\n' );
+            const quote = lines.map( line => `> ${line}` ).join( '\n' );
+
+            await github.rest.issues.createComment({
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'issue_number': context.issue.number,
+              'body': `${quote}\n\n@${context.payload.comment.user.login}, the slash command failed to complete. Please check the workflow logs for details.\n\n[View workflow run](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`
+            });
+
       - name: Remove in-progress label
         # Run the step regardless of the outcome of previous steps:
         if: always()

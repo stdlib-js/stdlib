@@ -90,13 +90,13 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	int x[ 100 ];
+	float x[ 100 ];
 	double t;
 	float y;
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		x[ i ] = (int)floorf( ( 100.0f * rand_float() ) + 1.0f );
+		x[ i ] = floorf( ( 100.0f * rand_float() ) + 1.0f );
 	}
 
 	t = tic();

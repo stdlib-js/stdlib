@@ -65,15 +65,16 @@ v = cscd( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cscd = require( '@stdlib/math/base/special/cscd' );
 
-var x = linspace( 1.1, 5.1, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, 1.1, 5.1, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( cscd( x[ i ] ) );
-}
+logEachMap( 'cscd(%0.4f) = %0.4f', x, cscd );
 ```
 
 </section>

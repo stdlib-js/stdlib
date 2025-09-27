@@ -1,0 +1,98 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: pr_commands_comment
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be triggered by other workflows
+  workflow_call:
+    # Define the input parameters for the workflow:
+    inputs:
+      pull_request_number:
+        description: 'Pull request number'
+        required: true
+        type: number
+      debug:
+        description: 'Enable debug output'
+        required: false
+        default: false
+        type: boolean
+
+    # Define the secrets accessible by the workflow:
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN:
+        description: 'stdlib-bot GitHub token to create pull request comments'
+        required: true
+
+  # Allow the workflow to be manually triggered:
+  workflow_dispatch:
+    inputs:
+      pull_request_number:
+        description: 'Pull request number'
+        required: true
+        type: number
+      debug:
+        description: 'Enable debug output'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for leaving a comment on a PR with package make command instructions:
+  pr_commands_comment:
+
+    # Define a display name:
+    name: 'Leave comment with package make command instructions'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          # Ensure we have access to the scripts directory:
+          sparse-checkout: |
+              .github/workflows/scripts
+          sparse-checkout-cone-mode: false
+        timeout-minutes: 10
+
+      # Leave comment with package make command instructions:
+      - name: 'Leave comment with package make command instructions'
+        env:
+          PR_NUMBER: ${{ inputs.pull_request_number }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN || secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          DEBUG: ${{ inputs.debug || 'false' }}
+        run: |
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/package_commands_comment" "$PR_NUMBER"
+        timeout-minutes: 30

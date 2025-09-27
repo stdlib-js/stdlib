@@ -154,19 +154,19 @@ for ( i = 0; i < 280; i++ ) {
 Computes the nth [Bernoulli number][bernoulli-number].
 
 ```c
-double out = stdlib_base_bernoulli( 0 );
+double out = stdlib_base_bernoulli( 0.0 );
 // returns 1.0
 
-out = stdlib_base_bernoulli( 1 );
+out = stdlib_base_bernoulli( 1.0 );
 // returns 0.5
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int32_t` input value.
+-   **n**: `[in] double` input value.
 
 ```c
-double stdlib_base_bernoulli( const int32_t n );
+double stdlib_base_bernoulli( const double n );
 ```
 
 </section>
@@ -190,15 +190,14 @@ double stdlib_base_bernoulli( const int32_t n );
 ```c
 #include "stdlib/math/base/special/bernoulli.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-    int32_t i;
+    double i;
     double v;
 
-    for ( i = 0; i < 130; i++ ) {
+    for ( i = 0.0; i < 130.0; i++ ) {
         v = stdlib_base_bernoulli( i );
-        printf( "bernoulli(%d) = %lf\n", i, v );
+        printf( "bernoulli(%lf) = %lf\n", i, v );
     }
 }
 ```

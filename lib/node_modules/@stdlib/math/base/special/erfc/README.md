@@ -102,15 +102,16 @@ var y = erfc( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var erfc = require( '@stdlib/math/base/special/erfc' );
 
-var x = linspace( -10.0, 10.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -10.0, 10.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'x: %d, erfc(x): %d', x[ i ], erfc( x[ i ] ) );
-}
+logEachMap( 'x: %0.4f, erfc(x): %0.4f', x, erfc );
 ```
 
 </section>

@@ -261,7 +261,7 @@ double stdlib_strided_dnannsum_ndarray( const CBLAS_INT N, const double *X, cons
 
 ```c
 #include "stdlib/blas/ext/base/dnannsum.h"
-#include "stdlib/blase/base/shared.h"
+#include "stdlib/blas/base/shared.h"
 #include <stdio.h>
 
 int main( void ) {

@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Wraps a value on the half-open interval [min,max).
+* Wraps a value to the half-open interval [min,max).
 */
 double stdlib_base_wrap( const double v, const double min, const double max );
 

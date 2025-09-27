@@ -1,0 +1,46 @@
+
+{{alias}}( shape, ku, kl, fill, clbk[, thisArg] )
+    Returns a filled two-dimensional banded nested array according to a provided
+    callback function.
+
+    The callback function is provided one argument:
+
+    - indices: current array element indices.
+
+    As the output array is banded, the provided callback is only invoked for
+    elements within the band.
+
+    Parameters
+    ----------
+    shape: Array<integer>
+        Array shape.
+
+    ku: integer
+        Number of super-diagonals.
+
+    kl: integer
+        Number of sub-diagonals.
+
+    fill: any
+        Fill value for elements outside the band.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > function clbk( idx ) { return idx[ 0 ] + idx[ 1 ]; };
+    > var out = {{alias}}( [ 3, 3 ], 1, 1, 0, clbk )
+    [ [ 0, 1, 0 ], [ 1, 2, 3 ], [ 0, 3, 4 ] ]
+
+    See Also
+    --------
+

@@ -63,5 +63,82 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "sin",
+      "alias": "sin",
+      "pkg_desc": "compute the sine",
+      "desc": "computes the sine",
+      "short_desc": "sine",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in radians)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            0,
+            0.5236,
+            0.7854,
+            1.5708,
+            1.0472,
+            2.3562,
+            3.1416,
+            4.7124,
+            6.2832,
+            -0.5236,
+            -0.7854,
+            -1.0472,
+            -1.5708,
+            -2.3562,
+            -3.1416,
+            7.854,
+            -7.854,
+            0.1,
+            -0.1,
+            3.5
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "sine",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "sin",
+        "sine",
+        "trig",
+        "trigonometry",
+        "radians"
+      ],
+      "extra_keywords": [
+        "math.sin"
+      ]
+    }
+  }
 }
