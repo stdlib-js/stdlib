@@ -56,19 +56,19 @@ type accumulator = ( x?: number ) => ArrayLike<number> | null;
 * // returns null
 *
 * mm = accumulator( 2.0 );
-* // returns [ 2.0, 2.0 ]
+* // returns Float64Array<[ 2.0, 2.0 ]>
 *
 * mm = accumulator( -5.0 );
-* // returns [ -5.0, 2.0 ]
+* // returns Float64Array<[ -5.0, 2.0 ]>
 *
 * mm = accumulator( 3.0 );
-* // returns [ -5.0, 3.0 ]
+* // returns Float64Array<[ -5.0, 3.0 ]>
 *
 * mm = accumulator( 5.0 );
-* // returns [ -5.0, 5.0 ]
+* // returns Float64Array<[ -5.0, 5.0 ]>
 *
 * mm = accumulator();
-* // returns [ -5.0, 5.0 ]
+* // returns Float64Array<[ -5.0, 5.0 ]>
 */
 declare function incrmminmax( out: ArrayLike<number>, window: number ): accumulator;
 
