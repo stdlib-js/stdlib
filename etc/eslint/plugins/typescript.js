@@ -32,7 +32,7 @@ var plugins = [
 	// Required for TypeScript support:
 	'@typescript-eslint',
 
-	// Stdlib custom rules:
+	// Custom stdlib rules:
 	'stdlib'
 ];
 
