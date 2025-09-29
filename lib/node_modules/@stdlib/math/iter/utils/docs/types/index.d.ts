@@ -39,7 +39,7 @@ interface Namespace {
 	*
 	* @example
 	* // Create an iterator for generating continued fraction terms:
-	* var it = iterContinuedFractionSeq( 3.245 );
+	* var it = ns.iterContinuedFraction( 3.245 );
 	*
 	* // Reconstruct the original value from the terms:
 	* var v = ns.iterContinuedFraction( it );
