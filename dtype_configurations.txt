@@ -1,0 +1,21 @@
+UNIQUE INPUT_DTYPES CONFIGURATIONS:
+=====================================
+
+- numeric_and_generic: realcomplexndarray
+- real_and_generic: realndarray
+
+
+UNIQUE OUTPUT_DTYPES CONFIGURATIONS:
+====================================
+
+- floating_point_and_generic: floatcomplexndarray
+- numeric_and_generic: realcomplexndarray
+- real_and_generic: realndarray
+- real_floating_point_and_generic: floatndarray
+
+
+SUMMARY:
+========
+Total unique input_dtypes configurations: 2
+Total unique output_dtypes configurations: 4
+Total functions analyzed: 132
