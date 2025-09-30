@@ -38,7 +38,7 @@
 * int64_t nbytes = stdlib_ndarray_bytes_per_element( STDLIB_NDARRAY_FLOAT64 );
 * // returns 8
 */
-int64_t stdlib_ndarray_bytes_per_element( enum STDLIB_NDARRAY_DTYPE dtype ) {
+int64_t stdlib_ndarray_bytes_per_element( const enum STDLIB_NDARRAY_DTYPE dtype ) {
 	switch ( dtype ) {
 	case STDLIB_NDARRAY_FLOAT64:
 		return STDLIB_NDARRAY_FLOAT64_BYTES_PER_ELEMENT;

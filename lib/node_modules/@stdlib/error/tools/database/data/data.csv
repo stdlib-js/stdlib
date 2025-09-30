@@ -1208,3 +1208,5 @@
 "JT","invalid argument. Fourth argument must be an ndarray. Value: `%s`.","TypeError"
 "JU","invalid option. `%s` option must be a supported data type. Option: `%s`.","TypeError"
 "JV","invalid argument. First argument must be either a supported data type string, a struct constructor, or another data type instance. Value: `%s`.","TypeError"
+"JW","invalid argument. Second argument must be a valid sort order. Value: `%s`.","TypeError"
+"JX","invalid argument. Second argument must be either an ndarray, a numeric scalar value, or a supported string. Value: `%s`.","TypeError"

@@ -173,7 +173,7 @@ declare function array2ndarray( buf: Int8Array, order: Order ): int8ndarray;
 * @example
 * var Uint32Array = require( '@stdlib/array/uint32' );
 *
-* var arr = new Int32Array( [ 1, 2, 3, 4 ] );
+* var arr = new Uint32Array( [ 1, 2, 3, 4 ] );
 *
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
@@ -193,7 +193,7 @@ declare function array2ndarray( buf: Uint32Array, order: Order ): uint32ndarray;
 * @example
 * var Uint16Array = require( '@stdlib/array/uint16' );
 *
-* var arr = new Int16Array( [ 1, 2, 3, 4 ] );
+* var arr = new Uint16Array( [ 1, 2, 3, 4 ] );
 *
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
@@ -213,7 +213,7 @@ declare function array2ndarray( buf: Uint16Array, order: Order ): uint16ndarray;
 * @example
 * var Uint8Array = require( '@stdlib/array/uint8' );
 *
-* var arr = new Int8Array( [ 1, 2, 3, 4 ] );
+* var arr = new Uint8Array( [ 1, 2, 3, 4 ] );
 *
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
@@ -233,7 +233,7 @@ declare function array2ndarray( buf: Uint8Array, order: Order ): uint8ndarray;
 * @example
 * var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 *
-* var arr = new Int8Array( [ 1, 2, 3, 4 ] );
+* var arr = new Uint8ClampedArray( [ 1, 2, 3, 4 ] );
 *
 * var x = array2ndarray( arr, 'row-major' );
 * // returns <ndarray>
