@@ -255,7 +255,7 @@ jobs:
       - name: 'Post report as comment to PR'
         if: github.event_name == 'pull_request_target' && steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
@@ -286,7 +286,7 @@ jobs:
       - name: 'Post report as comment to commit'
         if: github.event_name == 'push' && steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
