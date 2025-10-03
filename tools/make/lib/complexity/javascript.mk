@@ -129,7 +129,11 @@ complexity-javascript-benchmarks: $(NODE_MODULES)
 # @param {string} FILES - list of JavaScript file paths
 # @param {string} [JAVASCRIPT_COMPLEXITY_OUT] - output directory
 #
-# 
+# @example
+# make complexity-javascript-files FILES='/foo/bar.js /beep/boop.js'
+#
+# @example
+# make complexity-javascript-files FILES='/foo/bar.js /beep/boop.js' JAVASCRIPT_COMPLEXITY_OUT=/foo/bar/beep/boop
 #/
 complexity-javascript-files: $(NODE_MODULES)
 	$(QUIET) $(JAVASCRIPT_COMPLEXITY) $(JAVASCRIPT_COMPLEXITY_FLAGS) $(FILES)
