@@ -753,7 +753,7 @@ rules[ 'stdlib/jsdoc-doctest-marker' ] = 'error';
 * @name jsdoc-emphasis-marker
 * @memberof rules
 * @type {Array}
-* @default [ 'error', '_' ]
+* @default 'error'
 * @see [emphasis-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-emphasis-marker}
 *
 * @example
@@ -887,7 +887,7 @@ rules[ 'stdlib/jsdoc-example-require-spacing' ] = 'error';
 * @name jsdoc-fenced-code-marker
 * @memberof rules
 * @type {Array}
-* @default [ 'error', '`' ]
+* @default [ 'error', '`']
 * @see [fenced-code-marker]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-fenced-code-marker}
 *
 * @example
@@ -4244,7 +4244,7 @@ rules[ 'stdlib/no-multiple-empty-lines' ] = 'error';
 * // => 'bigint'
 *
 * @example
-* // Good...
+* //  Good...
 * var BigInt = require( '@stdlib/bigint/ctor' );
 *
 * var x = BigInt( 123 );

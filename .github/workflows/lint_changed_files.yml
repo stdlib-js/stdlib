@@ -186,8 +186,8 @@ jobs:
             printf "${files}" | "${lint_repl_help}" --split=" "
           fi
 
-      # Lint JavaScript files:
-      - name: 'Lint JavaScript files'
+      
+      - name: 
         if: success() || failure()
         run: |
           # Determine root directory:
