@@ -149,7 +149,7 @@ function identity( x: any ): any {
 	flattenBy( x, [ 1 ], identity, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument with invalid `depth` option...
+// The compiler throws an error if the function is provided a second argument with an invalid `depth` option...
 {
 	const x = zeros( 'generic', [ 2, 2, 2 ], 'row-major' );
 
@@ -166,7 +166,7 @@ function identity( x: any ): any {
 	flattenBy( x, { 'depth': [ 1 ] }, identity, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument with invalid `order` option...
+// The compiler throws an error if the function is provided a second argument with an invalid `order` option...
 {
 	const x = zeros( 'generic', [ 2, 2, 2 ], 'row-major' );
 
@@ -183,7 +183,7 @@ function identity( x: any ): any {
 	flattenBy( x, { 'order': [ 1 ] }, identity, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument with invalid `dtype` option...
+// The compiler throws an error if the function is provided a second argument with an invalid `dtype` option...
 {
 	const x = zeros( 'generic', [ 2, 2, 2 ], 'row-major' );
 
