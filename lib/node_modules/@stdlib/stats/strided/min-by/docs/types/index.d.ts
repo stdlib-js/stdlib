@@ -20,12 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
 * Input array.
 */
-type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
+type InputArray<T> = Collection<T> | AccessorArrayLike<T>;
 
 /**
 * Returns an accessed value.
@@ -118,7 +118,7 @@ interface Routine {
 	* var v = minBy( x.length, x, 1, accessor );
 	* // returns -10.0
 	*/
-	<T = unknown, U = unknown>( N: number, x: InputArray, strideX: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): number;
+	<T = unknown, U = unknown>( N: number, x: InputArray<T>, strideX: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): number;
 
 	/**
 	* Computes the minimum value of a strided array via a callback function and using alternative indexing semantics.
@@ -152,7 +152,7 @@ interface Routine {
 	* var v = minBy.ndarray( x.length, x, 1, 0, accessor );
 	* // returns -10.0
 	*/
-	ndarray<T = unknown, U = unknown>( N: number, x: InputArray, strideX: number, offsetX: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): number;
+	ndarray<T = unknown, U = unknown>( N: number, x: InputArray<T>, strideX: number, offsetX: number, clbk: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): number;
 }
 
 /**

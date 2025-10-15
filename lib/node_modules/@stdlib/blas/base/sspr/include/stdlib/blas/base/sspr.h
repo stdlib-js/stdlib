@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 2 routine `sspr`.
 */
-#ifndef SSPR_H
-#define SSPR_H
+#ifndef STDLIB_BLAS_BASE_SSPR_H
+#define STDLIB_BLAS_BASE_SSPR_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_sspr_ndarray)( const CBLAS_LAYOUT order, const CBLAS_UPLO uplo
 }
 #endif
 
-#endif // !SSPR_H
+#endif // !STDLIB_BLAS_BASE_SSPR_H

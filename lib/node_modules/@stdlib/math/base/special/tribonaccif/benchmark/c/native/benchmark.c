@@ -91,14 +91,14 @@ static float rand_float( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	int32_t x[ 100 ];
+	float x[ 100 ];
 	double elapsed;
 	double t;
 	float y;
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		x[ i ] = (int32_t)floorf( 40.0f*rand_float() );
+		x[ i ] = floorf( 40.0f*rand_float() );
 	}
 
 	t = tic();

@@ -63,5 +63,82 @@
     "nearest",
     "value",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "ceil",
+      "alias": "ceil",
+      "pkg_desc": "round a number toward positive infinity",
+      "desc": "rounds a number toward positive infinity",
+      "short_desc": "ceil",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            64.5,
+            27.6,
+            0.9,
+            0.1,
+            -9.2,
+            8.3,
+            -1.4,
+            125.01,
+            -10.2,
+            11.3,
+            -12.4,
+            3.5,
+            -1.6,
+            15.7,
+            -16,
+            17.9,
+            -188,
+            19.11,
+            -200,
+            21.15
+          ]
+        }
+      ],
+      "output_policy": "real_and_generic",
+      "returns": {
+        "desc": "rounded value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "ceil",
+        "round",
+        "integer",
+        "nearest",
+        "value"
+      ],
+      "extra_keywords": [
+        "math.ceil"
+      ]
+    }
+  }
 }

@@ -129,6 +129,107 @@ logEachMap( 'p: %0.4f, µ: %0.4f, s: %0.4f, Q(p;µ,s): %0.4f', p, mu, s, quantil
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/cosine/quantile.h"
+```
+
+#### stdlib_base_dists_cosine_quantile( p, mu, s )
+
+Evaluates the [quantile function][quantile-function] for a [raised cosine][cosine-distribution] distribution with parameters `mu` (location parameter) and `s` (scale parameter).
+
+```c
+double out = stdlib_base_dists_cosine_quantile( 0.8, 0.0, 1.0 );
+// returns ~0.327
+```
+
+The function accepts the following arguments:
+
+-   **p**: `[in] double` input value.
+-   **mu**: `[in] double` location parameter.
+-   **s**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_cosine_quantile( const double p, const double mu, const double s );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/cosine/quantile.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double mu;
+    double s;
+    double p;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        p = random_uniform( 0.0, 1.0 );
+        mu = random_uniform( -50.0, 50.0 );
+        s = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
+        y = stdlib_base_dists_cosine_quantile( p, mu, s );
+        printf( "p: %.4f, µ: %.4f, s: %.4f, Q(p;µ,s): %.4f\n", p, mu, s, y );
+    }
+
+    return 0;
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

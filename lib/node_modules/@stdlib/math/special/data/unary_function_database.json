@@ -1,0 +1,2572 @@
+{
+  "abs": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "real_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "int64",
+      "uint64",
+      "uint8c",
+      "complex32"
+    ],
+    "scalar_kernels": {
+      "int32": "@stdlib/math/base/special/labs",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float32": "@stdlib/math/base/special/absf",
+      "float64": "@stdlib/math/base/special/abs",
+      "complex64": "@stdlib/math/base/special/cabsf",
+      "complex128": "@stdlib/math/base/special/cabs",
+      "generic": "@stdlib/math/base/special/abs"
+    },
+    "policies": {
+      "output": "real_and_generic",
+      "casting": "none"
+    }
+  },
+  "abs2": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "real_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "int64",
+      "uint64",
+      "uint8c",
+      "complex32"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/abs2f",
+      "float64": "@stdlib/math/base/special/abs2",
+      "complex64": "@stdlib/math/base/special/cabs2f",
+      "complex128": "@stdlib/math/base/special/cabs2",
+      "generic": "@stdlib/math/base/special/abs2"
+    },
+    "policies": {
+      "output": "real_and_generic",
+      "casting": "none"
+    }
+  },
+  "absgammaln": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/absgammalnf",
+      "float64": "@stdlib/math/base/special/gammaln",
+      "generic": "@stdlib/math/base/special/gammaln"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "acos": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/acosf",
+      "float64": "@stdlib/math/base/special/acos",
+      "generic": "@stdlib/math/base/special/acos"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "acosd": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/acosdf",
+      "float64": "@stdlib/math/base/special/acosd",
+      "generic": "@stdlib/math/base/special/acosd"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "acosh": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/acosh",
+      "generic": "@stdlib/math/base/special/acosh"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "acot": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/acotf",
+      "float64": "@stdlib/math/base/special/acot",
+      "generic": "@stdlib/math/base/special/acot"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "acotd": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/acotdf",
+      "float64": "@stdlib/math/base/special/acotd",
+      "generic": "@stdlib/math/base/special/acotd"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "acoth": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/acoth",
+      "generic": "@stdlib/math/base/special/acoth"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "acovercos": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/acovercosf",
+      "float64": "@stdlib/math/base/special/acovercos",
+      "generic": "@stdlib/math/base/special/acovercos"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "acoversin": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/acoversinf",
+      "float64": "@stdlib/math/base/special/acoversin",
+      "generic": "@stdlib/math/base/special/acoversin"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "acsc": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/acscf",
+      "float64": "@stdlib/math/base/special/acsc",
+      "generic": "@stdlib/math/base/special/acsc"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "acscd": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/acscdf",
+      "float64": "@stdlib/math/base/special/acscd",
+      "generic": "@stdlib/math/base/special/acscd"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "acsch": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/acsch",
+      "generic": "@stdlib/math/base/special/acsch"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "ahavercos": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/ahavercosf",
+      "float64": "@stdlib/math/base/special/ahavercos",
+      "generic": "@stdlib/math/base/special/ahavercos"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "ahaversin": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/ahaversinf",
+      "float64": "@stdlib/math/base/special/ahaversin",
+      "generic": "@stdlib/math/base/special/ahaversin"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "asec": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/asecf",
+      "float64": "@stdlib/math/base/special/asec",
+      "generic": "@stdlib/math/base/special/asec"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "asecd": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/asecdf",
+      "float64": "@stdlib/math/base/special/asecd",
+      "generic": "@stdlib/math/base/special/asecd"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "asech": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/asech",
+      "generic": "@stdlib/math/base/special/asech"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "asin": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/asinf",
+      "float64": "@stdlib/math/base/special/asin",
+      "generic": "@stdlib/math/base/special/asin"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "asind": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/asindf",
+      "float64": "@stdlib/math/base/special/asind",
+      "generic": "@stdlib/math/base/special/asind"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "asinh": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/asinh",
+      "generic": "@stdlib/math/base/special/asinh"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "atan": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/atanf",
+      "float64": "@stdlib/math/base/special/atan",
+      "generic": "@stdlib/math/base/special/atan"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "atand": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/atandf",
+      "float64": "@stdlib/math/base/special/atand",
+      "generic": "@stdlib/math/base/special/atand"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "atanh": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/atanh",
+      "generic": "@stdlib/math/base/special/atanh"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "avercos": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/avercosf",
+      "float64": "@stdlib/math/base/special/avercos",
+      "generic": "@stdlib/math/base/special/avercos"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "aversin": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/aversinf",
+      "float64": "@stdlib/math/base/special/aversin",
+      "generic": "@stdlib/math/base/special/aversin"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "bernoulli": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/bernoullif",
+      "float64": "@stdlib/math/base/special/bernoulli",
+      "generic": "@stdlib/math/base/special/bernoulli"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "besselj0": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/besselj0",
+      "generic": "@stdlib/math/base/special/besselj0"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "besselj1": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/besselj1",
+      "generic": "@stdlib/math/base/special/besselj1"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "bessely0": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/bessely0",
+      "generic": "@stdlib/math/base/special/bessely0"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "bessely1": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/bessely1",
+      "generic": "@stdlib/math/base/special/bessely1"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "binet": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/binet",
+      "generic": "@stdlib/math/base/special/binet"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "cbrt": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/cbrtf",
+      "float64": "@stdlib/math/base/special/cbrt",
+      "generic": "@stdlib/math/base/special/cbrt"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "ceil": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float32": "@stdlib/math/base/special/ceilf",
+      "float64": "@stdlib/math/base/special/ceil",
+      "complex64": "@stdlib/math/base/special/cceilf",
+      "complex128": "@stdlib/math/base/special/cceil",
+      "generic": "@stdlib/math/base/special/ceil"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "ceil10": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float64": "@stdlib/math/base/special/ceil10",
+      "generic": "@stdlib/math/base/special/ceil10"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "ceil2": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float64": "@stdlib/math/base/special/ceil2",
+      "generic": "@stdlib/math/base/special/ceil2"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "cos": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/cosf",
+      "float64": "@stdlib/math/base/special/cos",
+      "generic": "@stdlib/math/base/special/cos"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "cosd": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/cosdf",
+      "float64": "@stdlib/math/base/special/cosd",
+      "generic": "@stdlib/math/base/special/cosd"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "cosh": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/cosh",
+      "generic": "@stdlib/math/base/special/cosh"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "cosm1": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/cosm1f",
+      "float64": "@stdlib/math/base/special/cosm1",
+      "generic": "@stdlib/math/base/special/cosm1"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "cospi": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/cospif",
+      "float64": "@stdlib/math/base/special/cospi",
+      "generic": "@stdlib/math/base/special/cospi"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "cot": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/cotf",
+      "float64": "@stdlib/math/base/special/cot",
+      "generic": "@stdlib/math/base/special/cot"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "cotd": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/cotd",
+      "generic": "@stdlib/math/base/special/cotd"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "coth": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/coth",
+      "generic": "@stdlib/math/base/special/coth"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "covercos": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/covercosf",
+      "float64": "@stdlib/math/base/special/covercos",
+      "generic": "@stdlib/math/base/special/covercos"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "coversin": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/coversinf",
+      "float64": "@stdlib/math/base/special/coversin",
+      "generic": "@stdlib/math/base/special/coversin"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "csc": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/cscf",
+      "float64": "@stdlib/math/base/special/csc",
+      "generic": "@stdlib/math/base/special/csc"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "cscd": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/cscd",
+      "generic": "@stdlib/math/base/special/cscd"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "csch": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/csch",
+      "generic": "@stdlib/math/base/special/csch"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "deg2rad": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/deg2radf",
+      "float64": "@stdlib/math/base/special/deg2rad",
+      "generic": "@stdlib/math/base/special/deg2rad"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "digamma": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/digamma",
+      "generic": "@stdlib/math/base/special/digamma"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "dirac-delta": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/dirac-deltaf",
+      "float64": "@stdlib/math/base/special/dirac-delta",
+      "generic": "@stdlib/math/base/special/dirac-delta"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "dirichlet-eta": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/dirichlet-eta",
+      "generic": "@stdlib/math/base/special/dirichlet-eta"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "ellipe": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/ellipe",
+      "generic": "@stdlib/math/base/special/ellipe"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "ellipk": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/ellipk",
+      "generic": "@stdlib/math/base/special/ellipk"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "erf": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/erf",
+      "generic": "@stdlib/math/base/special/erf"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "erfc": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/erfc",
+      "generic": "@stdlib/math/base/special/erfc"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "erfcinv": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/erfcinv",
+      "generic": "@stdlib/math/base/special/erfcinv"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "erfcx": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/erfcx",
+      "generic": "@stdlib/math/base/special/erfcx"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "erfinv": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/erfinv",
+      "generic": "@stdlib/math/base/special/erfinv"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "exp": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64",
+      "complex32"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/exp",
+      "complex128": "@stdlib/math/base/special/cexp",
+      "generic": "@stdlib/math/base/special/exp"
+    },
+    "policies": {
+      "output": "floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "exp10": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/exp10",
+      "generic": "@stdlib/math/base/special/exp10"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "exp2": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/exp2",
+      "generic": "@stdlib/math/base/special/exp2"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "expit": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/expit",
+      "generic": "@stdlib/math/base/special/expit"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "expm1": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/expm1",
+      "generic": "@stdlib/math/base/special/expm1"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "expm1rel": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/expm1rel",
+      "generic": "@stdlib/math/base/special/expm1rel"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "factorial": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/factorial",
+      "generic": "@stdlib/math/base/special/factorial"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "factorial2": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/factorial2f",
+      "float64": "@stdlib/math/base/special/factorial2",
+      "generic": "@stdlib/math/base/special/factorial2"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "factorialln": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/factoriallnf",
+      "float64": "@stdlib/math/base/special/factorialln",
+      "generic": "@stdlib/math/base/special/factorialln"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "fibonacci": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/fibonaccif",
+      "float64": "@stdlib/math/base/special/fibonacci",
+      "generic": "@stdlib/math/base/special/fibonacci"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "fibonacci-index": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/fibonacci-indexf",
+      "float64": "@stdlib/math/base/special/fibonacci-index",
+      "generic": "@stdlib/math/base/special/fibonacci-index"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "floor": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float32": "@stdlib/math/base/special/floorf",
+      "float64": "@stdlib/math/base/special/floor",
+      "complex64": "@stdlib/math/base/special/cfloorf",
+      "complex128": "@stdlib/math/base/special/cfloor",
+      "generic": "@stdlib/math/base/special/floor"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "floor10": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float64": "@stdlib/math/base/special/floor10",
+      "generic": "@stdlib/math/base/special/floor10"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "floor2": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float64": "@stdlib/math/base/special/floor2",
+      "generic": "@stdlib/math/base/special/floor2"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "fresnel": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    },
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/fresnel",
+      "generic": "@stdlib/math/base/special/fresnel"
+    }
+  },
+  "fresnelc": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/fresnelc",
+      "generic": "@stdlib/math/base/special/fresnelc"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "fresnels": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/fresnels",
+      "generic": "@stdlib/math/base/special/fresnels"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "gamma": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/gamma",
+      "generic": "@stdlib/math/base/special/gamma"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "gamma-lanczos-sum": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/gamma-lanczos-sum",
+      "generic": "@stdlib/math/base/special/gamma-lanczos-sum"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "gamma-lanczos-sum-expg-scaled": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/gamma-lanczos-sum-expg-scaledf",
+      "float64": "@stdlib/math/base/special/gamma-lanczos-sum-expg-scaled",
+      "generic": "@stdlib/math/base/special/gamma-lanczos-sum-expg-scaled"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "gamma1pm1": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/gamma1pm1",
+      "generic": "@stdlib/math/base/special/gamma1pm1"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "gammasgn": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/gammasgnf",
+      "float64": "@stdlib/math/base/special/gammasgn",
+      "generic": "@stdlib/math/base/special/gammasgn"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "hacovercos": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/hacovercosf",
+      "float64": "@stdlib/math/base/special/hacovercos",
+      "generic": "@stdlib/math/base/special/hacovercos"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "hacoversin": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/hacoversinf",
+      "float64": "@stdlib/math/base/special/hacoversin",
+      "generic": "@stdlib/math/base/special/hacoversin"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "havercos": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/havercosf",
+      "float64": "@stdlib/math/base/special/havercos",
+      "generic": "@stdlib/math/base/special/havercos"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "haversin": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/haversinf",
+      "float64": "@stdlib/math/base/special/haversin",
+      "generic": "@stdlib/math/base/special/haversin"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "inv": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64",
+      "complex32"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/invf",
+      "float64": "@stdlib/math/base/special/inv",
+      "complex64": "@stdlib/math/base/special/cinvf",
+      "complex128": "@stdlib/math/base/special/cinv",
+      "generic": "@stdlib/math/base/special/inv"
+    },
+    "policies": {
+      "output": "floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "ln": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/lnf",
+      "float64": "@stdlib/math/base/special/ln",
+      "generic": "@stdlib/math/base/special/ln"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "log10": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/log10",
+      "generic": "@stdlib/math/base/special/log10"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "log1mexp": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/log1mexp",
+      "generic": "@stdlib/math/base/special/log1mexp"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "log1p": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/log1p",
+      "generic": "@stdlib/math/base/special/log1p"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "log1pexp": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/log1pexp",
+      "generic": "@stdlib/math/base/special/log1pexp"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "log1pmx": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/log1pmx",
+      "generic": "@stdlib/math/base/special/log1pmx"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "log2": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/log2",
+      "generic": "@stdlib/math/base/special/log2"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "logit": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/logitf",
+      "float64": "@stdlib/math/base/special/logit",
+      "generic": "@stdlib/math/base/special/logit"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "lucas": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/lucasf",
+      "float64": "@stdlib/math/base/special/lucas",
+      "generic": "@stdlib/math/base/special/lucas"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "negafibonacci": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/negafibonaccif",
+      "float64": "@stdlib/math/base/special/negafibonacci",
+      "generic": "@stdlib/math/base/special/negafibonacci"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "negalucas": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/negalucasf",
+      "float64": "@stdlib/math/base/special/negalucas",
+      "generic": "@stdlib/math/base/special/negalucas"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "nonfibonacci": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/nonfibonaccif",
+      "float64": "@stdlib/math/base/special/nonfibonacci",
+      "generic": "@stdlib/math/base/special/nonfibonacci"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "rad2deg": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/rad2degf",
+      "float64": "@stdlib/math/base/special/rad2deg",
+      "generic": "@stdlib/math/base/special/rad2deg"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "ramp": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/rampf",
+      "float64": "@stdlib/math/base/special/ramp",
+      "generic": "@stdlib/math/base/special/ramp"
+    },
+    "policies": {
+      "output": "real_and_generic",
+      "casting": "none"
+    }
+  },
+  "rcbrt": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/rcbrtf",
+      "float64": "@stdlib/math/base/special/rcbrt",
+      "generic": "@stdlib/math/base/special/rcbrt"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "riemann-zeta": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/riemann-zeta",
+      "generic": "@stdlib/math/base/special/riemann-zeta"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "round": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float32": "@stdlib/math/base/special/roundf",
+      "float64": "@stdlib/math/base/special/round",
+      "complex64": "@stdlib/math/base/special/croundf",
+      "complex128": "@stdlib/math/base/special/cround",
+      "generic": "@stdlib/math/base/special/round"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "round-nearest-even": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float64": "@stdlib/math/base/special/round-nearest-even",
+      "generic": "@stdlib/math/base/special/round-nearest-even"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "round10": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float64": "@stdlib/math/base/special/round10",
+      "generic": "@stdlib/math/base/special/round10"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "round2": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float64": "@stdlib/math/base/special/round2",
+      "generic": "@stdlib/math/base/special/round2"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "rsqrt": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/rsqrtf",
+      "float64": "@stdlib/math/base/special/rsqrt",
+      "generic": "@stdlib/math/base/special/rsqrt"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "sec": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/secf",
+      "float64": "@stdlib/math/base/special/sec",
+      "generic": "@stdlib/math/base/special/sec"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "secd": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/secd",
+      "generic": "@stdlib/math/base/special/secd"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "sech": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/sech",
+      "generic": "@stdlib/math/base/special/sech"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "signum": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64",
+      "complex32"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float32": "@stdlib/math/base/special/signumf",
+      "float64": "@stdlib/math/base/special/signum",
+      "complex64": "@stdlib/math/base/special/csignumf",
+      "complex128": "@stdlib/math/base/special/csignum",
+      "generic": "@stdlib/math/base/special/signum"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "sin": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/sinf",
+      "float64": "@stdlib/math/base/special/sin",
+      "generic": "@stdlib/math/base/special/sin"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "sinc": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/sincf",
+      "float64": "@stdlib/math/base/special/sinc",
+      "generic": "@stdlib/math/base/special/sinc"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "sind": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/sindf",
+      "float64": "@stdlib/math/base/special/sind",
+      "generic": "@stdlib/math/base/special/sind"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "sinh": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/sinh",
+      "generic": "@stdlib/math/base/special/sinh"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "sinpi": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/sinpif",
+      "float64": "@stdlib/math/base/special/sinpi",
+      "generic": "@stdlib/math/base/special/sinpi"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "spence": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/spencef",
+      "float64": "@stdlib/math/base/special/spence",
+      "generic": "@stdlib/math/base/special/spence"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "sqrt": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/sqrtf",
+      "float64": "@stdlib/math/base/special/sqrt",
+      "generic": "@stdlib/math/base/special/sqrt"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "sqrt1pm1": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/sqrt1pm1",
+      "generic": "@stdlib/math/base/special/sqrt1pm1"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "sqrtpi": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/sqrtpif",
+      "float64": "@stdlib/math/base/special/sqrtpi",
+      "generic": "@stdlib/math/base/special/sqrtpi"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "tan": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/tanf",
+      "float64": "@stdlib/math/base/special/tan",
+      "generic": "@stdlib/math/base/special/tan"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "tand": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/tandf",
+      "float64": "@stdlib/math/base/special/tand",
+      "generic": "@stdlib/math/base/special/tand"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "tanh": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float64": "@stdlib/math/base/special/tanh",
+      "generic": "@stdlib/math/base/special/tanh"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "tribonacci": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/tribonaccif",
+      "float64": "@stdlib/math/base/special/tribonacci",
+      "generic": "@stdlib/math/base/special/tribonacci"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "trigamma": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/trigammaf",
+      "float64": "@stdlib/math/base/special/trigamma",
+      "generic": "@stdlib/math/base/special/trigamma"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "trunc": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float32": "@stdlib/math/base/special/truncf",
+      "float64": "@stdlib/math/base/special/trunc",
+      "generic": "@stdlib/math/base/special/trunc"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "trunc10": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float64": "@stdlib/math/base/special/trunc10",
+      "generic": "@stdlib/math/base/special/trunc10"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "trunc2": {
+    "input_dtypes": "numeric_and_generic",
+    "output_dtypes": "numeric_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "complex32",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "int8": "@stdlib/number/int8/base/identity",
+      "int16": "@stdlib/number/int16/base/identity",
+      "int32": "@stdlib/number/int32/base/identity",
+      "uint8": "@stdlib/number/uint8/base/identity",
+      "uint16": "@stdlib/number/uint16/base/identity",
+      "uint32": "@stdlib/number/uint32/base/identity",
+      "float64": "@stdlib/math/base/special/trunc2",
+      "generic": "@stdlib/math/base/special/trunc2"
+    },
+    "policies": {
+      "output": "numeric_and_generic",
+      "casting": "none"
+    }
+  },
+  "vercos": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/vercosf",
+      "float64": "@stdlib/math/base/special/vercos",
+      "generic": "@stdlib/math/base/special/vercos"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "versin": {
+    "input_dtypes": "real_and_generic",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64"
+    ],
+    "scalar_kernels": {
+      "float32": "@stdlib/math/base/special/versinf",
+      "float64": "@stdlib/math/base/special/versin",
+      "generic": "@stdlib/math/base/special/versin"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  }
+}

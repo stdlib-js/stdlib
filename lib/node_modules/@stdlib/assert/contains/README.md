@@ -113,7 +113,7 @@ var v = contains( 'hello', 'e', 2.5 );
 ## Notes
 
 -   For strings, the function is modeled after [String.prototype.includes][mdn-includes], part of the ECMAScript 6 specification. This function is different from a call to `String.prototype.includes.call` insofar as type-checking is performed for all arguments.
--   The function **does** distinguish between positive and negative zero (see [`@stdlib/assert/is-same-value`][@stdlib/assert/is-same-value].
+-   The function **does** distinguish between positive and negative zero (see [`@stdlib/assert/is-same-value`][@stdlib/assert/is-same-value]).
 -   If `position < 0`, the search is performed for the entire input array or string.
 
 </section>
