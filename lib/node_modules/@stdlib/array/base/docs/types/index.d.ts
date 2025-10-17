@@ -742,7 +742,7 @@ interface Namespace {
 	* var x = [ 'beep', 'boop', 'foo', 'bar' ];
 	* var filter = [ true, true, false, true ];
 	*
-	* var out = ns.bifurcateEntries( arr, filter );
+	* var out = ns.bifurcateEntries( x, filter );
 	* // returns [ [ [ 0, 'beep' ], [ 1, 'boop' ], [ 3, 'bar' ] ], [ [ 2, 'foo' ] ] ]
 	*/
 	bifurcateEntries: typeof bifurcateEntries;
@@ -822,7 +822,7 @@ interface Namespace {
 	* var x = [ 'beep', 'boop', 'foo', 'bar' ];
 	* var filter = [ true, true, false, true ];
 	*
-	* var out = ns.bifurcateValues( arr, filter );
+	* var out = ns.bifurcateValues( x, filter );
 	* // returns [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
 	*/
 	bifurcateValues: typeof bifurcateValues;
@@ -2138,16 +2138,16 @@ interface Namespace {
 	*
 	* @example
 	* function fcn( v ) {
-	* 	return v > 0;
+	*     return v > 0;
 	* }
 	* var x = [ 1, 1, 0, 0, 0 ];
 	*
-	* var result = cunoneByright( x, fcn );
+	* var result = ns.cunoneByRight( x, fcn );
 	* // returns [ true, true, true, false, false ]
 	*
 	* @example
 	* function fcn( v ) {
-	* 	return v > 0;
+	*     return v > 0;
 	* }
 	* var x = [ 0, 1, 1, 0, 0 ];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
@@ -2734,7 +2734,7 @@ interface Namespace {
 	* @example
 	* var arr = [ 1, 2, 3 ];
 	*
-	* var out = ns.first( x );
+	* var out = ns.first( arr );
 	* // returns 1
 	*/
 	first: typeof first;
@@ -3537,7 +3537,7 @@ interface Namespace {
 	* @example
 	* var arr = [ 1, 2, 3 ];
 	*
-	* var out = ns.last( x );
+	* var out = ns.last( arr );
 	* // returns 3
 	*/
 	last: typeof last;
@@ -4014,7 +4014,7 @@ interface Namespace {
 	*
 	* var mask = [ [ [ [ 0, 1 ], [ 0, 0 ] ] ] ];
 	*
-	* mskbinary2d( [ x, y, mask, z ], shape, add );
+	* ns.mskbinary4d( [ x, y, mask, z ], shape, add );
 	*
 	* console.log( z );
 	* // => [ [ [ [ 2.0, 0.0 ], [ 2.0, 2.0 ] ] ] ]
@@ -4946,6 +4946,8 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
+	* var isPositiveNumber = require( '@stdlib/assert/is-positive-number' ).isPrimitive;
+	*
 	* var x = [ 1, -2, -3, 4 ];
 	*
 	* var out = ns.reject( x, isPositiveNumber );
@@ -5976,7 +5978,7 @@ interface Namespace {
 	* var x = ones5d( shape );
 	* var y = zeros5d( shape );
 	*
-	* unary2dBy( [ x, y ], shape, scale );
+	* ns.unary5dBy( [ x, y ], shape, scale );
 	*
 	* console.log( y );
 	* // => [ [ [ [ [ -10.0, -10.0 ], [ -10.0, -10.0 ] ] ] ] ]
