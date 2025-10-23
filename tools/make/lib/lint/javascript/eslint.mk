@@ -253,7 +253,7 @@ endif
 eslint-files: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
-			echo ''; \
+		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file || exit 1; \
 	done
