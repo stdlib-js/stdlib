@@ -6,7 +6,7 @@
     Parameters
     ----------
     x: ndarray
-        Input ndarray.
+        Input ndarray. Must have one or more dimensions.
 
     dim: integer
         Dimension along which to perform the operation. If provided an integer

@@ -71,7 +71,7 @@ arr = ndarray2array( y[ 1 ] );
 
 The function accepts the following arguments:
 
--   **x**: input ndarray.
+-   **x**: input ndarray. Must have one or more dimensions.
 -   **dim**: dimension along which to perform the operation. If provided an integer less than zero, the dimension index is resolved relative to the last dimension, with the last dimension corresponding to the value `-1`.
 -   **writable**: boolean indicating whether a returned ndarray should be writable.
 

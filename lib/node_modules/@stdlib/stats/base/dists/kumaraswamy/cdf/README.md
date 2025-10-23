@@ -143,22 +143,17 @@ y = mycdf( 0.3 );
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
 var EPS = require( '@stdlib/constants/float64/eps' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cdf = require( '@stdlib/stats/base/dists/kumaraswamy/cdf' );
 
-var a;
-var b;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 10, 0.0, 1.0, opts );
+var a = uniform( 10, EPS, 5.0, opts );
+var b = uniform( 10, EPS, 5.0, opts );
 
-x = uniform( 10, 0.0, 1.0 );
-a = uniform( 10, EPS, 5.0 );
-b = uniform( 10, EPS, 5.0 );
-
-for ( i = 0; i < x.length; i++ ) {
-    y = cdf( x[ i ], a[ i ], b[ i ] );
-    console.log( 'x: %d, a: %d, b: %d, F(x;a,b): %d', x[ i ].toFixed( 4 ), a[ i ].toFixed( 4 ), b[ i ].toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, a: %0.4f, b: %0.4f, F(x;a,b): %0.4f', x, a, b, cdf );
 ```
 
 </section>

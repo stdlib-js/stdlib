@@ -68,7 +68,7 @@ arr = ndarray2array( y[ 1 ] );
 
 The function accepts the following arguments:
 
--   **x**: input ndarray.
+-   **x**: input ndarray. Must have one or more dimensions.
 -   **options**: function options. (_optional_)
 
 The function supports the following `options`:

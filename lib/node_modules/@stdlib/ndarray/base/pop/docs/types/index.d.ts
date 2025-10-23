@@ -25,6 +25,10 @@ import { ndarray } from '@stdlib/types/ndarray';
 /**
 * Returns an array containing a truncated view of an input ndarray and a view of the last element(s) along a specified dimension.
 *
+* ## Notes
+*
+* -   The input array must have one or more dimensions.
+*
 * @param x - input array
 * @param dim - dimension along which to perform the operation
 * @param writable - boolean indicating whether returned arrays should be writable

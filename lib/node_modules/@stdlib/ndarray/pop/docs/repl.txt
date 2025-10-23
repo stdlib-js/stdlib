@@ -6,7 +6,7 @@
     Parameters
     ----------
     x: ndarray
-        Input ndarray.
+        Input ndarray. Must have one or more dimensions.
 
     options: Object (optional)
         Options.

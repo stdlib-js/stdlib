@@ -645,9 +645,9 @@ interface Namespace {
 	*     return v > 2;
 	* }
 	*
-	* function assert( v, i ) {
-	*     if ( i > 1 ) {
-	*         throw new Error( 'unexpected error' );
+	* function assert( v ) {
+	*     if ( v !== v ) {
+	*         throw new Error( 'should not be NaN' );
 	*     }
 	* }
 	*
@@ -693,9 +693,9 @@ interface Namespace {
 	*     return v < 3;
 	* }
 	*
-	* function assert( v, i ) {
-	*     if ( i > 1 ) {
-	*         throw new Error( 'unexpected error' );
+	* function assert( v ) {
+	*     if ( v !== v ) {
+	*         throw new Error( 'should not be NaN' );
 	*     }
 	* }
 	*
@@ -1784,7 +1784,7 @@ interface Namespace {
 	* // returns 1
 	*
 	* r = iter.next().value;
-	* // returns 2
+	* // returns 3
 	*
 	* // ...
 	*/

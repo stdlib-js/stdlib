@@ -39,6 +39,10 @@ interface Options {
 /**
 * Returns an array containing a read-only truncated view of an input ndarray and a read-only view of the last element(s) along a specified dimension.
 *
+* ## Notes
+*
+* -   The input array must have one or more dimensions.
+*
 * @param x - input array
 * @param options - function options
 * @param options.dim - dimension along which to perform the operation
