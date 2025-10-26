@@ -49,14 +49,19 @@ C8_EXCLUDES_FLAGS = \
 	-x "**/$(CONFIG_FOLDER)/**" \
 	-x "**/$(DOCUMENTATION_FOLDER)/**"
 
+# Define user-supplied command-line options:
+C8_FLAGS ?=
+
 # Define command-line options when generating coverage data:
-C8_FLAGS = \
+c8_flags = \
 	$(C8_EXCLUDES_FLAGS) \
 	--clean=false \
 	--temp-directory $(COVERAGE_DIR)/tmp \
 	--report-dir $(COVERAGE_DIR) \
 	--reporter lcov
 
+# Append user-supplied command-line options:
+c8_flags += $(C8_FLAGS)
 
 # RULES #
 
@@ -81,22 +86,21 @@ C8_FLAGS = \
 #/
 test-c8: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)
-	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r test; do \
+	$(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\\]' | while read -r test; do \
 		echo ''; \
 		echo "Running test: $$test"; \
-		NODE_ENV="$(NODE_ENV_TEST)" \
-		NODE_PATH="$(NODE_PATH_TEST)" \
-		TEST_MODE=coverage \
-		$(C8) $(C8_FLAGS) $(NODE) $$test | $(TAP_REPORTER) || exit 1; \
+		# Run each test under bash with pipefail so we capture the c8 exit status when piping to the TAP reporter.
+		bash -lc 'set -o pipefail; NODE_ENV="$(NODE_ENV_TEST)" NODE_PATH="$(NODE_PATH_TEST)" TEST_MODE=coverage $(C8) $(c8_flags) $(NODE) "$$test" 2>&1 | $(TAP_REPORTER)'; \
+		rc=$$?; \
+		if [ $$rc -ne 0 ]; then echo "TEST_FAILED: $$test (exit $$rc)"; exit $$rc; fi; \
 	done
 else
-	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r test; do \
+	$(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\\]' | while read -r test; do \
 		echo ''; \
 		echo "Running test: $$test"; \
-		NODE_ENV="$(NODE_ENV_TEST)" \
-		NODE_PATH="$(NODE_PATH_TEST)" \
-		TEST_MODE=coverage \
-		$(C8) $(C8_FLAGS) $(NODE) $$test | $(TAP_REPORTER) || echo 'Tests failed.'; \
+		bash -lc 'set -o pipefail; NODE_ENV="$(NODE_ENV_TEST)" NODE_PATH="$(NODE_PATH_TEST)" TEST_MODE=coverage $(C8) $(c8_flags) $(NODE) "$$test" 2>&1 | $(TAP_REPORTER)'; \
+		rc=$$?; \
+		if [ $$rc -ne 0 ]; then echo "Tests failed: $$test (exit $$rc)"; fi; \
 	done
 endif
 
