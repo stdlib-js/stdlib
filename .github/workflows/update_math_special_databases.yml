@@ -17,7 +17,7 @@
 #/
 
 # Workflow name:
-name: update_unary_database
+name: update_math_scaffold_databases
 
 # Workflow triggers:
 on:
@@ -44,11 +44,11 @@ permissions:
 # Workflow jobs:
 jobs:
 
-  # Define a job for updating the unary database...
+  # Define a job for updating databases which are used for scaffolding mathematical packages...
   update:
 
     # Define a display name:
-    name: 'Update Unary Database'
+    name: 'Update Scaffold Databases'
 
     # Ensure the job does not run on forks:
     if: github.repository == 'stdlib-js/stdlib'
@@ -126,13 +126,13 @@ jobs:
         # Pin action to full length commit SHA
         uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
         with:
-          title: 'feat: update unary database'
+          title: 'feat: update math scaffold databases'
           body: |
             This PR
 
-            -   updates the unary database based on changes to the unary function database or package.json scaffold fields
+            -   updates the databases for scaffolding mathematical databases
 
-          commit-message: 'feat: update unary database'
+          commit-message: 'feat: update math scaffold databases'
           committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
           signoff: true
           token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -140,7 +140,7 @@ jobs:
             automated-pr
           team-reviewers: |
             reviewers
-          branch: update-unary-database
+          branch: update-math-scaffold-databases
           delete-branch: true
 
       # Create a pull request summary:
