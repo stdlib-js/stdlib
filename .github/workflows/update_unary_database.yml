@@ -26,6 +26,12 @@ on:
       # List paths for which changes should trigger this workflow:
       - 'lib/node_modules/@stdlib/math/special/data/unary_function_database.json'
       - 'lib/node_modules/@stdlib/math/base/special/*/package.json'
+      - 'lib/node_modules/@stdlib/number/float64/base/*/package.json'
+      - 'lib/node_modules/@stdlib/number/float32/base/*/package.json'
+      - 'lib/node_modules/@stdlib/number/float16/base/*/package.json'
+      - 'lib/node_modules/@stdlib/complex/float64/base/*/package.json'
+      - 'lib/node_modules/@stdlib/complex/float32/base/*/package.json'
+      - 'lib/node_modules/@stdlib/complex/float16/base/*/package.json'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
