@@ -32,7 +32,6 @@ The [geometric mean][geometric-mean] is defined as the nth root of a product of 
 \biggl( \prod_{i=0}^{n-1} x_i \biggr)^{\frac{1}{n}} = \sqrt[n]{x_0 x_1 \cdots x_{n-1}}
 ```
 
-
 <!-- </equation> -->
 
 </section>
