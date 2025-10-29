@@ -119,7 +119,7 @@ jobs:
           git_user_signingkey: true
           git_commit_gpgsign: true
 
-      # Create a pull request with the updated unary database:
+      # Create a pull request with the updated databases:
       - name: 'Create pull request'
         if: steps.check_changes.outputs.has_changes == 'true'
         id: cpr
