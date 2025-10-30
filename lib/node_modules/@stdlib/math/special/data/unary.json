@@ -152,7 +152,144 @@
       "math.abs"
     ]
   },
-  "@stdlib/math/base/special/cabsf": {},
+  "@stdlib/math/base/special/cabsf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "abs",
+    "alias": "cabsf",
+    "pkg_desc": "compute the absolute value of a single-precision complex floating-point number",
+    "desc": "computes the absolute value of a single-precision complex floating-point number",
+    "short_desc": "absolute value",
+    "parameters": [
+      {
+        "name": "z",
+        "desc": "input value",
+        "type": {
+          "javascript": "Complex64",
+          "jsdoc": "Complex64",
+          "c": "stdlib_complex64_t",
+          "dtype": "complex64"
+        },
+        "domain": null,
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            [
+              -10,
+              10
+            ],
+            [
+              -10,
+              10
+            ]
+          ]
+        },
+        "example_values": [
+          {
+            "re": -3.14,
+            "im": -1.5
+          },
+          {
+            "re": 0,
+            "im": 0
+          },
+          {
+            "re": -1.5,
+            "im": 2.5
+          },
+          {
+            "re": 2.5,
+            "im": -1.5
+          },
+          {
+            "re": 0,
+            "im": -3.7
+          },
+          {
+            "re": 4.2,
+            "im": 0
+          },
+          {
+            "re": 21.2,
+            "im": 3
+          },
+          {
+            "re": 11,
+            "im": -5
+          },
+          {
+            "re": 33,
+            "im": -14.67
+          },
+          {
+            "re": -42,
+            "im": 9.3
+          },
+          {
+            "re": -3,
+            "im": 3
+          },
+          {
+            "re": 73,
+            "im": 31
+          },
+          {
+            "re": -2.45,
+            "im": 1.23
+          },
+          {
+            "re": 2.45,
+            "im": -1.23
+          },
+          {
+            "re": 1.77,
+            "im": -3.14
+          },
+          {
+            "re": -7.5,
+            "im": 8.2
+          },
+          {
+            "re": 5.5,
+            "im": -12.3
+          },
+          {
+            "re": -15.8,
+            "im": 0.4
+          },
+          {
+            "re": 0.99,
+            "im": -0.99
+          },
+          {
+            "re": 0.43,
+            "im": 0.91
+          }
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "absolute value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "abs",
+      "absolute",
+      "magnitude",
+      "modulus",
+      "distance",
+      "complex",
+      "cmplx"
+    ],
+    "extra_keywords": [
+      "math.abs"
+    ]
+  },
   "@stdlib/math/base/special/cabs": {
     "$schema": "math/base@v1.0",
     "base_alias": "abs",
@@ -444,8 +581,282 @@
       "math.abs"
     ]
   },
-  "@stdlib/math/base/special/cabs2f": {},
-  "@stdlib/math/base/special/cabs2": {},
+  "@stdlib/math/base/special/cabs2f": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "abs2",
+    "alias": "cabs2f",
+    "pkg_desc": "compute the squared absolute value of a single-precision complex floating-point number",
+    "desc": "computes the squared absolute value of a single-precision complex floating-point number",
+    "short_desc": "squared absolute value",
+    "parameters": [
+      {
+        "name": "z",
+        "desc": "input value",
+        "type": {
+          "javascript": "Complex64",
+          "jsdoc": "Complex64",
+          "c": "stdlib_complex64_t",
+          "dtype": "complex64"
+        },
+        "domain": null,
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            [
+              -10,
+              10
+            ],
+            [
+              -10,
+              10
+            ]
+          ]
+        },
+        "example_values": [
+          {
+            "re": -3.14,
+            "im": -1.5
+          },
+          {
+            "re": 0,
+            "im": 0
+          },
+          {
+            "re": -1.5,
+            "im": 2.5
+          },
+          {
+            "re": 2.5,
+            "im": -1.5
+          },
+          {
+            "re": 0,
+            "im": -3.7
+          },
+          {
+            "re": 4.2,
+            "im": 0
+          },
+          {
+            "re": 21.2,
+            "im": 3
+          },
+          {
+            "re": 11,
+            "im": -5
+          },
+          {
+            "re": 33,
+            "im": -14.67
+          },
+          {
+            "re": -42,
+            "im": 9.3
+          },
+          {
+            "re": -3,
+            "im": 3
+          },
+          {
+            "re": 73,
+            "im": 31
+          },
+          {
+            "re": -2.45,
+            "im": 1.23
+          },
+          {
+            "re": 2.45,
+            "im": -1.23
+          },
+          {
+            "re": 1.77,
+            "im": -3.14
+          },
+          {
+            "re": -7.5,
+            "im": 8.2
+          },
+          {
+            "re": 5.5,
+            "im": -12.3
+          },
+          {
+            "re": -15.8,
+            "im": 0.4
+          },
+          {
+            "re": 0.99,
+            "im": -0.99
+          },
+          {
+            "re": 0.43,
+            "im": 0.91
+          }
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "absolute value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "abs2",
+      "squared",
+      "absolute",
+      "magnitude",
+      "distance",
+      "complex",
+      "cmplx"
+    ],
+    "extra_keywords": [
+      "math.abs"
+    ]
+  },
+  "@stdlib/math/base/special/cabs2": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "abs2",
+    "alias": "cabs2",
+    "pkg_desc": "compute the squared absolute value of a complex number",
+    "desc": "computes the squared absolute value of a complex number",
+    "short_desc": "squared absolute value",
+    "parameters": [
+      {
+        "name": "z",
+        "desc": "input value",
+        "type": {
+          "javascript": "Complex128",
+          "jsdoc": "Complex128",
+          "c": "stdlib_complex128_t",
+          "dtype": "complex128"
+        },
+        "domain": null,
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            [
+              -10,
+              10
+            ],
+            [
+              -10,
+              10
+            ]
+          ]
+        },
+        "example_values": [
+          {
+            "re": -3.14,
+            "im": -1.5
+          },
+          {
+            "re": 0,
+            "im": 0
+          },
+          {
+            "re": -1.5,
+            "im": 2.5
+          },
+          {
+            "re": 2.5,
+            "im": -1.5
+          },
+          {
+            "re": 0,
+            "im": -3.7
+          },
+          {
+            "re": 4.2,
+            "im": 0
+          },
+          {
+            "re": 21.2,
+            "im": 3
+          },
+          {
+            "re": 11,
+            "im": -5
+          },
+          {
+            "re": 33,
+            "im": -14.67
+          },
+          {
+            "re": -42,
+            "im": 9.3
+          },
+          {
+            "re": -3,
+            "im": 3
+          },
+          {
+            "re": 73,
+            "im": 31
+          },
+          {
+            "re": -2.45,
+            "im": 1.23
+          },
+          {
+            "re": 2.45,
+            "im": -1.23
+          },
+          {
+            "re": 1.77,
+            "im": -3.14
+          },
+          {
+            "re": -7.5,
+            "im": 8.2
+          },
+          {
+            "re": 5.5,
+            "im": -12.3
+          },
+          {
+            "re": -15.8,
+            "im": 0.4
+          },
+          {
+            "re": 0.99,
+            "im": -0.99
+          },
+          {
+            "re": 0.43,
+            "im": 0.91
+          }
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "absolute value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "abs2",
+      "squared",
+      "absolute",
+      "magnitude",
+      "distance",
+      "complex",
+      "cmplx"
+    ],
+    "extra_keywords": [
+      "math.abs"
+    ]
+  },
   "@stdlib/math/base/special/absgammalnf": {
     "$schema": "math/base@v1.0",
     "base_alias": "absgammaln",
@@ -3905,7 +4316,69 @@
     ]
   },
   "@stdlib/math/base/special/bernoullif": {},
-  "@stdlib/math/base/special/bernoulli": {},
+  "@stdlib/math/base/special/bernoulli": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "bernoulli",
+    "alias": "bernoulli",
+    "pkg_desc": "compute the nth Bernoulli number",
+    "desc": "computes the nth Bernoulli number",
+    "short_desc": "Bernoulli number",
+    "parameters": [
+      {
+        "name": "n",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            0,
+            30
+          ]
+        },
+        "example_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          10,
+          20,
+          15,
+          18,
+          25,
+          21,
+          22
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "bernoulli"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/besselj0": {
     "$schema": "math/base@v1.0",
     "base_alias": "besselj0",
@@ -9154,7 +9627,81 @@
   "@stdlib/math/base/special/sqrt1pm1": {},
   "@stdlib/math/base/special/sqrtpif": {},
   "@stdlib/math/base/special/sqrtpi": {},
-  "@stdlib/math/base/special/tanf": {},
+  "@stdlib/math/base/special/tanf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "tan",
+    "alias": "tanf",
+    "pkg_desc": "compute the tangent of a single-precision floating-point number (in radians).",
+    "desc": "computes the tangent of a single-precision floating-point number",
+    "short_desc": "tangent",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -1.5708,
+            1.5708
+          ]
+        },
+        "example_values": [
+          0,
+          0.1745,
+          0.3491,
+          0.5236,
+          0.6981,
+          0.8727,
+          1.0472,
+          1.2217,
+          1.3963,
+          1.5708,
+          -0.1745,
+          -0.3491,
+          -0.5236,
+          -0.6981,
+          -0.8727,
+          -1.0472,
+          -1.2217,
+          -1.3963,
+          -1.5,
+          -1.5708
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "tangent",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "tan",
+      "tanf",
+      "tangent",
+      "trig",
+      "trigonometry"
+    ],
+    "extra_keywords": [
+      "math.tan"
+    ]
+  },
   "@stdlib/math/base/special/tan": {
     "$schema": "math/base@v1.0",
     "base_alias": "tan",
@@ -9376,11 +9923,372 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/tanh": {},
-  "@stdlib/math/base/special/tribonaccif": {},
-  "@stdlib/math/base/special/tribonacci": {},
-  "@stdlib/math/base/special/trigammaf": {},
-  "@stdlib/math/base/special/trigamma": {},
+  "@stdlib/math/base/special/tanh": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "tanh",
+    "alias": "tanh",
+    "pkg_desc": "compute the hyperbolic tangent of a double-precision floating-point number",
+    "desc": "computes the hyperbolic tangent of a double-precision floating-point number",
+    "short_desc": "hyperbolic tangent",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          0.5236,
+          0.7854,
+          1.0472,
+          1.5708,
+          3.1416,
+          4.7124,
+          6.2832,
+          -0.7854,
+          -1.5708,
+          -3.1416,
+          5,
+          -2,
+          0.1,
+          -0.1,
+          2.3562,
+          -2.3562,
+          7.85398,
+          -7.85398,
+          10
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "hyperbolic tangent",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "tangent",
+      "tan",
+      "tanh",
+      "hyperbolic",
+      "trig",
+      "trigonometry",
+      "radians",
+      "angle"
+    ],
+    "extra_keywords": [
+      "math.tanh"
+    ]
+  },
+  "@stdlib/math/base/special/tribonaccif": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "tribonacci",
+    "alias": "tribonaccif",
+    "pkg_desc": "compute the nth Tribonacci number as a single-precision floating-point number",
+    "desc": "computes the nth Tribonacci number as a single-precision floating-point number",
+    "short_desc": "Tribonacci number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          21,
+          34,
+          41,
+          55
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "tribonacci number",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "tribonacci"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/tribonacci": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "tribonacci",
+    "alias": "tribonacci",
+    "pkg_desc": "compute the nth Tribonacci number",
+    "desc": "computes the nth Tribonacci number",
+    "short_desc": "tribonacci number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          21,
+          34,
+          41,
+          55
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "tribonacci number",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "tribonacci"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/trigammaf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "trigamma",
+    "alias": "trigammaf",
+    "pkg_desc": "evaluate the trigamma function for a single-precision floating-point number",
+    "desc": "evaluates the trigamma function for a single-precision floating-point number",
+    "short_desc": "trigamma",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0.5,
+            20
+          ]
+        },
+        "example_values": [
+          0.51,
+          1.37,
+          2.93,
+          4.18,
+          7.64,
+          -2.47,
+          -1.23,
+          -3.79,
+          -0.61,
+          5.42,
+          9.08,
+          12.57,
+          15.33,
+          -4.62,
+          -6.14,
+          18.91,
+          10.26,
+          -5.37,
+          3.41,
+          0.89
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "derivative",
+      "trigamma",
+      "gamma",
+      "psi"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/trigamma": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "trigamma",
+    "alias": "trigamma",
+    "pkg_desc": "evaluate the trigamma function for a double-precision floating-point number",
+    "desc": "evaluates the trigamma function for a double-precision floating-point number",
+    "short_desc": "trigamma",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0.5,
+            20
+          ]
+        },
+        "example_values": [
+          0.51,
+          1.37,
+          2.93,
+          4.18,
+          7.64,
+          -2.47,
+          -1.23,
+          -3.79,
+          -0.61,
+          5.42,
+          9.08,
+          12.57,
+          15.33,
+          -4.62,
+          -6.14,
+          18.91,
+          10.26,
+          -5.37,
+          3.41,
+          0.89
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "derivative",
+      "gamma",
+      "trigamma",
+      "scalar",
+      "number",
+      "psi"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/truncf": {
     "$schema": "math/base@v1.0",
     "base_alias": "trunc",
@@ -9456,9 +10364,236 @@
       "math.trunc"
     ]
   },
-  "@stdlib/math/base/special/trunc": {},
-  "@stdlib/math/base/special/trunc10": {},
-  "@stdlib/math/base/special/trunc2": {},
+  "@stdlib/math/base/special/trunc": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "trunc",
+    "alias": "trunc",
+    "pkg_desc": "round a double-precision floating-point number toward zero",
+    "desc": "rounds a double-precision floating-point number toward zero",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          64.5,
+          27.6,
+          0.9,
+          0.1,
+          -9.2,
+          8.3,
+          -1.4,
+          125.01,
+          -10.2,
+          11.3,
+          -12.4,
+          3.5,
+          -1.6,
+          15.7,
+          -16,
+          17.9,
+          -188,
+          19.11,
+          -200,
+          21.15
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "rounded value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "trunc",
+      "truncate",
+      "round",
+      "nearest"
+    ],
+    "extra_keywords": [
+      "math.trunc"
+    ]
+  },
+  "@stdlib/math/base/special/trunc10": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "trunc10",
+    "alias": "trunc10",
+    "pkg_desc": "round a numeric value to the nearest power of 10 toward zero",
+    "desc": "rounds a numeric value to the nearest power of 10 toward zero",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -1000,
+            1000
+          ]
+        },
+        "example_values": [
+          5.6,
+          49,
+          0.7,
+          -0.9,
+          -42,
+          88,
+          -3.2,
+          120,
+          -15,
+          230,
+          -375,
+          0,
+          9,
+          -99,
+          100,
+          -1000,
+          1500,
+          -2500,
+          7,
+          -8
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "rounded value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "truncate",
+      "trunc",
+      "trunc10",
+      "round",
+      "floor",
+      "ceil",
+      "nearest"
+    ],
+    "extra_keywords": [
+      "math.trunc"
+    ]
+  },
+  "@stdlib/math/base/special/trunc2": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "trunc2",
+    "alias": "trunc2",
+    "pkg_desc": "round a numeric value to the nearest power of two toward zero",
+    "desc": "rounds a numeric value to the nearest power of two toward zero",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -1000,
+            1000
+          ]
+        },
+        "example_values": [
+          5.6,
+          49,
+          0.7,
+          -0.9,
+          -42,
+          88,
+          -3.2,
+          120,
+          -15,
+          230,
+          -375,
+          0,
+          9,
+          -99,
+          100,
+          -1000,
+          1500,
+          -2500,
+          7,
+          -8
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "rounded value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "truncate",
+      "trunc",
+      "trunc2",
+      "round",
+      "floor",
+      "ceil",
+      "nextpow2",
+      "prevpow2",
+      "nearest"
+    ],
+    "extra_keywords": [
+      "math.trunc"
+    ]
+  },
   "@stdlib/math/base/special/vercosf": {
     "$schema": "math/base@v1.0",
     "base_alias": "vercos",
