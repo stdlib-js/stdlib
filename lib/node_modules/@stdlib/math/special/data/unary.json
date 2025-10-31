@@ -9549,7 +9549,81 @@
   "@stdlib/math/base/special/sinpi": {},
   "@stdlib/math/base/special/spencef": {},
   "@stdlib/math/base/special/spence": {},
-  "@stdlib/math/base/special/sqrtf": {},
+  "@stdlib/math/base/special/sqrtf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sqrt",
+    "alias": "sqrtf",
+    "pkg_desc": "compute the principal square root of a single-precision floating-point number",
+    "desc": "computes the principal square root of a single-precision floating-point number",
+    "short_desc": "principal square root",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          0,
+          0.01,
+          0.25,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          9,
+          16,
+          25,
+          36,
+          49,
+          64,
+          81,
+          100,
+          0.1,
+          10,
+          50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "square root",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "sqrt",
+      "principal",
+      "square",
+      "root",
+      "power"
+    ],
+    "extra_keywords": [
+      "math.sqrt"
+    ]
+  },
   "@stdlib/math/base/special/sqrt": {
     "$schema": "math/base@v1.0",
     "base_alias": "sqrt",
@@ -9624,9 +9698,234 @@
       "math.sqrt"
     ]
   },
-  "@stdlib/math/base/special/sqrt1pm1": {},
-  "@stdlib/math/base/special/sqrtpif": {},
-  "@stdlib/math/base/special/sqrtpi": {},
+  "@stdlib/math/base/special/sqrt1pm1": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sqrt1pm1",
+    "alias": "sqrt1pm1",
+    "pkg_desc": "compute sqrt(1 + x) - 1",
+    "desc": "computes the principal square root of `1+x` minus one",
+    "short_desc": "sqrt(1 + x) - 1",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": -1,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          0,
+          0.01,
+          0.25,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          9,
+          16,
+          25,
+          36,
+          49,
+          64,
+          81,
+          100,
+          0.1,
+          10,
+          50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "square root",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "sqrt",
+      "sqrt1pm1",
+      "principal",
+      "square",
+      "root",
+      "power"
+    ],
+    "extra_keywords": [
+      "math.sqrt"
+    ]
+  },
+  "@stdlib/math/base/special/sqrtpif": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sqrtpi",
+    "alias": "sqrtpif",
+    "pkg_desc": "compute the principal square root of the product of π and a positive single-precision floating-point number",
+    "desc": "computes the principal square root of the product of π and a positive single-precision floating-point number",
+    "short_desc": "principal square root of the product of π and a positive number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          0,
+          0.01,
+          0.25,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          9,
+          16,
+          25,
+          36,
+          49,
+          64,
+          81,
+          100,
+          0.1,
+          10,
+          50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "square root",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "sqrtpi",
+      "principal",
+      "square",
+      "root",
+      "power",
+      "pi"
+    ],
+    "extra_keywords": [
+      "math.sqrt"
+    ]
+  },
+  "@stdlib/math/base/special/sqrtpi": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sqrtpi",
+    "alias": "sqrtpi",
+    "pkg_desc": "compute the principal square root of the product of π and a positive double-precision floating-point number",
+    "desc": "computes the principal square root of the product of π and a positive double-precision floating-point number",
+    "short_desc": "principal square root of the product of π and a positive number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          0,
+          0.01,
+          0.25,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          9,
+          16,
+          25,
+          36,
+          49,
+          64,
+          81,
+          100,
+          0.1,
+          10,
+          50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "square root",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "sqrtpi",
+      "principal",
+      "square",
+      "root",
+      "power",
+      "pi"
+    ],
+    "extra_keywords": [
+      "math.sqrt"
+    ]
+  },
   "@stdlib/math/base/special/tanf": {
     "$schema": "math/base@v1.0",
     "base_alias": "tan",
