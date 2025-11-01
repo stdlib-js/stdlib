@@ -9463,11 +9463,386 @@
       "math.sin"
     ]
   },
-  "@stdlib/math/base/special/sincf": {},
-  "@stdlib/math/base/special/sinc": {},
-  "@stdlib/math/base/special/sindf": {},
-  "@stdlib/math/base/special/sind": {},
-  "@stdlib/math/base/special/sinh": {},
+  "@stdlib/math/base/special/sincf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sinc",
+    "alias": "sincf",
+    "pkg_desc": "compute the normalized cardinal sine of a single-precision floating-point number (in radians)",
+    "desc": "computes the normalized cardinal sine of a single-precision floating-point number (in radians)",
+    "short_desc": "normalized cardinal sine",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          0.5236,
+          0.7854,
+          1.5708,
+          1.0472,
+          2.3562,
+          3.1416,
+          4.7124,
+          6.2832,
+          -0.5236,
+          -0.7854,
+          -1.0472,
+          -1.5708,
+          -2.3562,
+          -3.1416,
+          7.854,
+          -7.854,
+          0.1,
+          -0.1,
+          3.5
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "normalized cardinal sine",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "sin",
+      "sinc",
+      "sine",
+      "cardinal",
+      "trig",
+      "trigonometry",
+      "normalized"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/sinc": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sinc",
+    "alias": "sinc",
+    "pkg_desc": "compute the normalized cardinal sine of a number",
+    "desc": "computes the normalized cardinal sine of a number",
+    "short_desc": "normalized cardinal sine",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          0.5236,
+          0.7854,
+          1.5708,
+          1.0472,
+          2.3562,
+          3.1416,
+          4.7124,
+          6.2832,
+          -0.5236,
+          -0.7854,
+          -1.0472,
+          -1.5708,
+          -2.3562,
+          -3.1416,
+          7.854,
+          -7.854,
+          0.1,
+          -0.1,
+          3.5
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "normalized cardinal sine value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "sin",
+      "sinc",
+      "sine",
+      "cardinal",
+      "trig",
+      "trigonometry",
+      "normalized"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/sindf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sind",
+    "alias": "sindf",
+    "pkg_desc": "compute the sine of a single-precision floating-point number (in degrees)",
+    "desc": "computes the sine of a single-precision floating-point number (in degrees)",
+    "short_desc": "sine",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in degrees)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -360,
+            360
+          ]
+        },
+        "example_values": [
+          0,
+          30,
+          45,
+          60,
+          90,
+          120,
+          150,
+          180,
+          270,
+          360,
+          -30,
+          -45,
+          -60,
+          -90,
+          -180,
+          -270,
+          -360,
+          15,
+          -15,
+          75
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "sine",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "degree",
+      "sin",
+      "sine",
+      "sind",
+      "trig",
+      "trigonometry"
+    ],
+    "extra_keywords": [
+      "math.sin"
+    ]
+  },
+  "@stdlib/math/base/special/sind": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sind",
+    "alias": "sind",
+    "pkg_desc": "compute the sine of an angle measured in degrees",
+    "desc": "computes the sine of an angle measured in degrees",
+    "short_desc": "sine",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in degrees)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -360,
+            360
+          ]
+        },
+        "example_values": [
+          0,
+          30,
+          45,
+          60,
+          90,
+          120,
+          150,
+          180,
+          270,
+          360,
+          -30,
+          -45,
+          -60,
+          -90,
+          -180,
+          -270,
+          -360,
+          15,
+          -15,
+          75
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "sine",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "degree",
+      "sin",
+      "sine",
+      "sind",
+      "cos",
+      "cosine",
+      "trig"
+    ],
+    "extra_keywords": [
+      "math.sin"
+    ]
+  },
+  "@stdlib/math/base/special/sinh": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sinh",
+    "alias": "sinh",
+    "pkg_desc": "compute the hyperbolic sine of a double-precision floating-point number",
+    "desc": "computes the hyperbolic sine of a double-precision floating-point number",
+    "short_desc": "hyperbolic sine",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          0.5236,
+          0.7854,
+          1.5708,
+          1.0472,
+          2.3562,
+          3.1416,
+          4.7124,
+          6.2832,
+          -0.5236,
+          -0.7854,
+          -1.0472,
+          -1.5708,
+          -2.3562,
+          -3.1416,
+          7.854,
+          -7.854,
+          0.1,
+          -0.1,
+          3.5
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "hyperbolic sine",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "sin",
+      "sine",
+      "hyperbolic",
+      "trig",
+      "trigonometry",
+      "radians",
+      "angle"
+    ],
+    "extra_keywords": [
+      "math.sinh"
+    ]
+  },
   "@stdlib/math/base/special/sinpif": {
     "$schema": "math/base@v1.0",
     "base_alias": "sinpi",
@@ -9546,9 +9921,231 @@
       "math.sin"
     ]
   },
-  "@stdlib/math/base/special/sinpi": {},
-  "@stdlib/math/base/special/spencef": {},
-  "@stdlib/math/base/special/spence": {},
+  "@stdlib/math/base/special/sinpi": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sinpi",
+    "alias": "sinpi",
+    "pkg_desc": "compute sin(πx)",
+    "desc": "computes sin(πx)",
+    "short_desc": "sin(πx)",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          64,
+          27,
+          0,
+          0.1,
+          -9,
+          8,
+          -1,
+          125,
+          -10.2,
+          11.3,
+          -12.4,
+          3.5,
+          -1.6,
+          15.7,
+          -16,
+          17.9,
+          -188,
+          19.11,
+          -200,
+          21.15
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "sin",
+      "sine",
+      "pi",
+      "trig",
+      "trigonometry",
+      "radians",
+      "angle"
+    ],
+    "extra_keywords": [
+      "math.sin"
+    ]
+  },
+  "@stdlib/math/base/special/spencef": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "spence",
+    "alias": "spencef",
+    "pkg_desc": "evaluate Spence's function (the dilogarithm) for a single-precision floating-point number",
+    "desc": "evaluates Spence's function (the dilogarithm) for a single-precision floating-point number.",
+    "short_desc": "Spence's function",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          0.5,
+          1,
+          2,
+          3,
+          5,
+          10,
+          25,
+          50,
+          100,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.5,
+          4
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "special",
+      "function",
+      "dilogarithm",
+      "polylogarithm",
+      "integral",
+      "spence"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/spence": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "spence",
+    "alias": "spence",
+    "pkg_desc": "evaluate Spence's function",
+    "desc": "evaluates Spence's function",
+    "short_desc": "Spence's function",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          0.5,
+          1,
+          2,
+          3,
+          5,
+          10,
+          25,
+          50,
+          100,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.5,
+          4
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "special",
+      "function",
+      "dilogarithm",
+      "polylogarithm",
+      "integral",
+      "spence"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/sqrtf": {
     "$schema": "math/base@v1.0",
     "base_alias": "sqrt",
