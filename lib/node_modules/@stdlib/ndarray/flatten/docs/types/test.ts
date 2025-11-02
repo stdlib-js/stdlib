@@ -84,7 +84,7 @@ import flatten = require( './index' );
 	flatten( zeros( 'generic', [ 2, 2, 2 ], 'row-major' ), ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument with invalid `depth` option...
+// The compiler throws an error if the function is provided a second argument with an invalid `depth` option...
 {
 	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'depth': '5' } ); // $ExpectError
 	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'depth': true } ); // $ExpectError
@@ -108,7 +108,7 @@ import flatten = require( './index' );
 	flatten( zeros( 'generic', [ 2, 2, 2 ], 'row-major' ), { 'depth': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument with invalid `order` option...
+// The compiler throws an error if the function is provided a second argument with an invalid `order` option...
 {
 	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'order': '5' } ); // $ExpectError
 	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'order': true } ); // $ExpectError
@@ -132,7 +132,7 @@ import flatten = require( './index' );
 	flatten( zeros( 'generic', [ 2, 2, 2 ], 'row-major' ), { 'order': ( x: number ): number => x } ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a second argument with invalid `dtype` option...
+// The compiler throws an error if the function is provided a second argument with an invalid `dtype` option...
 {
 	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'dtype': '5' } ); // $ExpectError
 	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'dtype': true } ); // $ExpectError

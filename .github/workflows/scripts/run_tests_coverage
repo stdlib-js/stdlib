@@ -26,15 +26,8 @@
 #   file2        File name.
 #   file3        File name.
 #
-#
-# Environment variables:
-#
-#   GITHUB_REPO    GitHub repository.
-#   GITHUB_REF     GitHub branch or tag.
-#   LOG_FILE       Log file.
-#
 
-# shellcheck disable=SC2181,SC2153,SC2129
+# shellcheck disable=SC2181,SC2153,SC2129,SC2207,SC2317
 
 # Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
 set -o pipefail
@@ -47,15 +40,6 @@ coverage_base_url="${COVERAGE_BASE_URL:-https://coverage.stdlib.io}"
 
 # Get the list of changed files:
 changed="$*"
-
-# Get the GitHub repository:
-github_repo="${GITHUB_REPO}"
-
-# Get the GitHub branch or tag:
-github_ref="${GITHUB_REF}"
-
-# Get the path to a log file as the third argument to the build script:
-log_file="${LOG_FILE}"
 
 # Define a heartbeat interval to periodically print messages in order to prevent CI from prematurely ending a build due to long running commands:
 heartbeat_interval='30s'
@@ -125,18 +109,18 @@ compare_cov() {
 
 	if [ "$old_cov_value" == 0 ]; then
 		new_cov_percentage=$(awk "BEGIN {printf \"%.2f\", $new_cov_value*100}")
-		echo "\$\\\\\\\\color{green}+$new_cov_percentage\\\\\\\\\\\\\\\\%\$"
+		printf "\$\\\\\\\\color{green}+%s\\\\\\\\\\\\\\\\%%\$\n" "$new_cov_percentage"
 	else
 		percentage_change=$(awk "BEGIN {printf \"%.2f\", (($new_cov_value - $old_cov_value) / $old_cov_value) * 100}")
 		color="green"
 		sign=""
-		if [ $(awk "BEGIN {if ($percentage_change >= 0) print 1; else print 0}") -eq 1 ]; then
+		if [ "$(awk "BEGIN {if ($percentage_change >= 0) print 1; else print 0}")" -eq 1 ]; then
 			sign="+"
-		elif [ $(awk "BEGIN {if ($percentage_change < 0) print 1; else print 0}") -eq 1 ]; then
+		elif [ "$(awk "BEGIN {if ($percentage_change < 0) print 1; else print 0}")" -eq 1 ]; then
 			sign="-"
 			color="red"
 		fi
-		echo "\$\\\\\\\\color{$color}$sign$percentage_change\\\\\\\\\\\\\\\\%\$"
+		printf "\$\\\\\\\\color{%s}%s%s\\\\\\\\\\\\\\\\%%\$\n" "$color" "$sign" "$percentage_change"
 	fi
 }
 
@@ -163,23 +147,15 @@ main() {
 	coverage=''
 	for package in ${directories}; do
 		# For each package, extract coverage values from the respective coverage report:
-		pkg=`echo $package | sed -E 's/^.*stdlib\///'`
+		pkg=$(echo "$package" | sed -E 's/^.*stdlib\///')
 
 		if [ -f "lib/node_modules/@stdlib/${pkg}/binding.gyp" ]; then
 			NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
 		fi
 
-		make test-javascript-cov TESTS_FILTER=".*/${pkg}/test/.*"
+		make test-javascript-cov TESTS_FILTER=".*/${pkg}/test/.*" C8_FLAGS="-n 'lib/node_modules/@stdlib/${pkg}/**'"
 
-		if [ ! -f reports/coverage/lcov-report/${pkg}/lib/index.html ]; then
-			# Reports for packages with no dependencies are stored in the `lcov-report` directory
-			coverage_path="reports/coverage/lcov-report/index.html"
-			top_level_report=true
-		else
-			# Reports for packages with dependencies are stored in `lcov-report/<pkg>/lib`:
-			coverage_path="reports/coverage/lcov-report/${pkg}/lib/index.html"
-			top_level_report=false
-		fi
+		coverage_path="reports/coverage/lcov-report/index.html"
 		pkg_cov_values=($(cat $coverage_path | grep "fraction" | grep -oP '\d+/\d+' | awk -F'/' '{if ($2 != 0) print $1/$2; else print 1}'))
 		pkg_statements_cov=${pkg_cov_values[0]}
 		pkg_branches_cov=${pkg_cov_values[1]}
@@ -214,26 +190,22 @@ main() {
 		pkg_cov="| $pkg_statements_cov_fraction <br> $cov_change_statements | $pkg_branches_cov_fraction <br> $cov_change_branches | $pkg_functions_cov_fraction <br> $cov_change_functions | $pkg_lines_cov_fraction <br> $cov_change_lines |"
 
 		pkg_url="${coverage_base_url}/${pkg}/index.html"
-		pkg_link="<a href=\"$pkg_url\">$pkg</a>"
+		pkg_link="<a href=\"${pkg_url}\">${pkg}</a>"
 		coverage="$coverage\n| $pkg_link $pkg_cov"
 
 		# Copy coverage report of the package to artifacts directory:
-		if [ "$top_level_report" = true ]; then
-			mkdir -p "artifacts/${pkg}" && cp -r "reports/coverage/lcov-report"/* "artifacts/${pkg}/"
-		else
-			mkdir -p "artifacts/${pkg}/lib/" && cp -r "reports/coverage/lcov-report/${pkg}/lib"/* "artifacts/${pkg}/"
-		fi
+		mkdir -p "artifacts/${pkg}" && cp -r "reports/coverage/lcov-report"/* "artifacts/${pkg}/"
 
 		# Cleanup coverage reports for next package:
 		rm -rf reports/coverage/lcov-report/*
 	done
 
 	# Format coverage as Markdown table row:
-	table_body=`echo $coverage | sed -e 's/,/|/g; s/"/ /g; s/\[/|/g; s/\]/|/g'`
+	table_body=$(echo "$coverage" | sed -e 's/,/|/g; s/"/ /g; s/\[/|/g; s/\]/|/g')
 	table_header="| Package | Statements | Branches | Functions | Lines |\n| --------- | ------------ | ---------- | ----------- | ----- |"
 	table="${table_header}${table_body}"
 
-	echo "table=$table" >> $GITHUB_OUTPUT
+	echo "table=$table" >> "$GITHUB_OUTPUT"
 
 	cleanup
 	print_success
