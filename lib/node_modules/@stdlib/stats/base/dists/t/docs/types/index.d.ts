@@ -169,8 +169,8 @@ interface Namespace {
 	* var y = ns.logpdf( 3.0, 1.0 );
 	* // returns ~-3.442
 	*
-	* var mylogpdf = ns.logpdf.factory( 3.0 );
-	* y = mylogpdf( 1.0 );
+	* var mylogPDF = ns.logpdf.factory( 3.0 );
+	* y = mylogPDF( 1.0 );
 	* // returns ~-1.575
 	*/
 	logpdf: typeof logpdf;

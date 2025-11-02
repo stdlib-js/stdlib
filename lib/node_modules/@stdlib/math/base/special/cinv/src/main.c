@@ -25,15 +25,9 @@
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/reim.h"
 
-
-// VARIABLES //
-
 static const double LARGE_THRESHOLD = STDLIB_CONSTANT_FLOAT64_MAX * 0.5;
 static const double SMALL_THRESHOLD = STDLIB_CONSTANT_FLOAT64_SMALLEST_NORMAL * ( 2.0 / STDLIB_CONSTANT_FLOAT64_EPS );
 static const double RECIP_EPS_SQR = 2.0 / ( STDLIB_CONSTANT_FLOAT64_EPS * STDLIB_CONSTANT_FLOAT64_EPS );
-
-
-// MAIN //
 
 /**
 * Computes the inverse of a double-precision complex floating-point number.

@@ -64,5 +64,122 @@
     "integer",
     "c"
   ],
-  "__stdlib__": {}
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "mul",
+      "alias": "mul",
+      "pkg_desc": "perform multiplication",
+      "desc": "performs multiplication",
+      "short_desc": "multiplication",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "first input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "integer",
+            "c": "uint16_t",
+            "dtype": "uint16"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              0,
+              10
+            ]
+          },
+          "example_values": [
+            1,
+            27,
+            0,
+            10,
+            9,
+            8,
+            1,
+            125,
+            20,
+            11,
+            12,
+            3,
+            2,
+            15,
+            16,
+            17,
+            125,
+            19,
+            101,
+            21
+          ]
+        },
+        {
+          "name": "y",
+          "desc": "second input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "integer",
+            "c": "uint16_t",
+            "dtype": "uint16"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              0,
+              10
+            ]
+          },
+          "example_values": [
+            51,
+            2,
+            10,
+            14,
+            90,
+            88,
+            1,
+            12,
+            120,
+            71,
+            62,
+            31,
+            2,
+            45,
+            26,
+            37,
+            25,
+            59,
+            11,
+            41
+          ]
+        }
+      ],
+      "output_policy": "same",
+      "returns": {
+        "desc": "result",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "integer",
+          "c": "uint16_t",
+          "dtype": "uint16"
+        }
+      },
+      "keywords": [
+        "multiplication",
+        "multiply",
+        "product"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

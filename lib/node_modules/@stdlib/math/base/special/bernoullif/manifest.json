@@ -38,7 +38,9 @@
       "dependencies": [
         "@stdlib/math/base/napi/unary",
         "@stdlib/constants/float32/ninf",
-        "@stdlib/constants/float32/pinf"
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/math/base/assert/is-nonnegative-integerf",
+        "@stdlib/math/base/assert/is-oddf"
       ]
     },
     {
@@ -53,7 +55,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/constants/float32/ninf",
-        "@stdlib/constants/float32/pinf"
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/math/base/assert/is-nonnegative-integerf",
+        "@stdlib/math/base/assert/is-oddf"
       ]
     },
     {
@@ -68,7 +72,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/constants/float32/ninf",
-        "@stdlib/constants/float32/pinf"
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/math/base/assert/is-nonnegative-integerf",
+        "@stdlib/math/base/assert/is-oddf"
       ]
     }
   ]

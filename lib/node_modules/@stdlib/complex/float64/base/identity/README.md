@@ -170,7 +170,7 @@ stdlib_complex128_t stdlib_base_complex128_identity( const stdlib_complex128_t z
 #include "stdlib/complex/float64/reim.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     const stdlib_complex128_t x[] = {
         stdlib_complex128( 3.14, 1.5 ),
         stdlib_complex128( -3.14, -1.5 ),

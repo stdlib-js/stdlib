@@ -139,7 +139,7 @@ The function accepts the following arguments:
 -   **x**: `[in] float` input value.
 
 ```c
-float stdlib_base_inv( const float x );
+float stdlib_base_invf( const float x );
 ```
 
 </section>

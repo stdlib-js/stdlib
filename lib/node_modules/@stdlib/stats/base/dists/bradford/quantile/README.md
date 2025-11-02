@@ -142,6 +142,91 @@ logEachMap( 'p: %0.4f, c: %0.4f, Q(p;c): %0.4f', p, c, quantile );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+<section class="c">
+
+## C APIs
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/bradford/quantile.h"
+```
+
+#### stdlib_base_dists_bradford_quantile( p, c )
+
+Returns the quantile function of a Bradford distribution.
+
+```c
+double out = stdlib_base_dists_bradford_quantile( 0.5, 5.0 );
+// returns ~0.290
+```
+
+The function accepts the following arguments:
+
+-   **p**: `[in] double` input probability.
+-   **c**: `[in] double` shape parameter.
+
+```c
+double stdlib_base_dists_bradford_quantile( const double p, const double c );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/bradford/quantile.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double p;
+    double c;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        p = random_uniform( 0.0, 1.0 );
+        c = random_uniform( 0.01, 10.0 );
+        y = stdlib_base_dists_bradford_quantile( p, c );
+        printf( "p: %lf, c: %lf, Q(p;c): %lf\n", p, c, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

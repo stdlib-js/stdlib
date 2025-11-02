@@ -148,7 +148,7 @@ The function accepts the following arguments:
 -   **cphase**: `[out] double*` destination for the phase value in radians.
 
 ```c
-double stdlib_base_cpolar( const stdlib_complex128_t z, double *cabs, double *cphase );
+void stdlib_base_cpolar( const stdlib_complex128_t z, double *cabs, double *cphase );
 ```
 
 </section>

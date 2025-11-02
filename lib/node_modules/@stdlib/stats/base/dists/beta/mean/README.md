@@ -224,7 +224,7 @@ int main( void ) {
         alpha = random_uniform( 0.0, 10.0 );
         beta = random_uniform( 0.0, 10.0 );
         y = stdlib_base_dists_beta_mean( alpha, beta );
-        printf( "alpha: %lf, beta: %lf, E(X;α,β): %lf\n", alpha, beta, y );
+        printf( "α: %lf, β: %lf, E(X;α,β): %lf\n", alpha, beta, y );
     }
 }
 ```

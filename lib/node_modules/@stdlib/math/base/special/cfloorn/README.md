@@ -120,11 +120,9 @@ im = imag( v );
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var randu = require( '@stdlib/random/base/randu' );
 var uniform = require( '@stdlib/random/base/uniform' );
-var floor = require( '@stdlib/math/base/special/floor' );
-var cfloorn = require( '@stdlib/math/base/special/cfloorn' );
 var randint = require( '@stdlib/random/base/discrete-uniform' );
+var cfloorn = require( '@stdlib/math/base/special/cfloorn' );
 
 var z;
 var w;

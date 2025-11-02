@@ -1,0 +1,31 @@
+
+{{alias}}( [dtype] )
+    Returns the alignment (in bytes) for a specified underlying array data type.
+
+    If not provided a data type value, the function returns an object mapping
+    data type strings to alignments (in bytes).
+
+    If provided an unknown/unsupported data type, the function returns `null`.
+
+    Parameters
+    ----------
+    dtype: any (optional)
+        Data type value.
+
+    Returns
+    -------
+    out: Object|number|null
+        Alignment (in bytes).
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float64' )
+    8
+    > out = {{alias}}( 'foobar' )
+    null
+    > var obj = {{alias}}()
+    {...}
+
+    See Also
+    --------
+
