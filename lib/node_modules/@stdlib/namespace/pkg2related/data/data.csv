@@ -1569,6 +1569,7 @@
 "@stdlib/process/cwd","@stdlib/process/chdir"
 "@stdlib/datasets/dale-chall-new",""
 "@stdlib/datasets",""
+"@stdlib/ndarray/dtype-ctor","@stdlib/ndarray/ctor,@stdlib/ndarray/dtype"
 "@stdlib/array/dataview","@stdlib/array/buffer,@stdlib/array/typed"
 "@stdlib/array/datespace","@stdlib/array/linspace,@stdlib/array/logspace"
 "@stdlib/time/day-of-quarter","@stdlib/time/day-of-year"

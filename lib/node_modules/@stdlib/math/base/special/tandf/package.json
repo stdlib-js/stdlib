@@ -64,5 +64,83 @@
     "tangent",
     "trig",
     "trigonometry"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "tand",
+      "alias": "tandf",
+      "pkg_desc": "compute the tangent of a single-precision floating-point number (in degrees)",
+      "desc": "computes the tangent of a single-precision floating-point number (in degrees)",
+      "short_desc": "tangent",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in degrees)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -180,
+              180
+            ]
+          },
+          "example_values": [
+            0,
+            15,
+            30,
+            45,
+            60,
+            75,
+            90,
+            -15,
+            -30,
+            -45,
+            -60,
+            -75,
+            -90,
+            10,
+            -10,
+            20,
+            -20,
+            35,
+            -35,
+            80
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "tangent",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "tan",
+        "tand",
+        "tangent",
+        "trig",
+        "trigonometry",
+        "degrees"
+      ],
+      "extra_keywords": [
+        "math.tan"
+      ]
+    }
+  }
 }

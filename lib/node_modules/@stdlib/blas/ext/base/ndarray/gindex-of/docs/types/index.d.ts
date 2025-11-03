@@ -31,7 +31,6 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * @example
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-* var gindexOf = require( '@stdlib/blas/ext/base/ndarray/gindex-of' );
 *
 * var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
 * var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
