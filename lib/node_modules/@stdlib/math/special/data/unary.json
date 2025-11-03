@@ -5034,7 +5034,141 @@
       "math.ceil"
     ]
   },
-  "@stdlib/math/base/special/cceilf": {},
+  "@stdlib/math/base/special/cceilf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "ceil",
+    "alias": "cceilf",
+    "pkg_desc": "round each component of a complex number toward positive infinity",
+    "desc": "rounds each component of a complex number toward positive infinity",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "z",
+        "desc": "input value",
+        "type": {
+          "javascript": "Complex64",
+          "jsdoc": "Complex64",
+          "c": "stdlib_complex64_t",
+          "dtype": "complex64"
+        },
+        "domain": null,
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            [
+              -10,
+              10
+            ],
+            [
+              -10,
+              10
+            ]
+          ]
+        },
+        "example_values": [
+          {
+            "re": -3.14,
+            "im": -1.5
+          },
+          {
+            "re": 0,
+            "im": 0
+          },
+          {
+            "re": -1.5,
+            "im": 2.5
+          },
+          {
+            "re": 2.5,
+            "im": -1.5
+          },
+          {
+            "re": 0,
+            "im": -3.7
+          },
+          {
+            "re": 4.2,
+            "im": 0
+          },
+          {
+            "re": 21.2,
+            "im": 3
+          },
+          {
+            "re": 11,
+            "im": -5
+          },
+          {
+            "re": 33,
+            "im": -14.67
+          },
+          {
+            "re": -42,
+            "im": 9.3
+          },
+          {
+            "re": -3,
+            "im": 3
+          },
+          {
+            "re": 73,
+            "im": 31
+          },
+          {
+            "re": -2.45,
+            "im": 1.23
+          },
+          {
+            "re": 2.45,
+            "im": -1.23
+          },
+          {
+            "re": 1.77,
+            "im": -3.14
+          },
+          {
+            "re": -7.5,
+            "im": 8.2
+          },
+          {
+            "re": 5.5,
+            "im": -12.3
+          },
+          {
+            "re": -15.8,
+            "im": 0.4
+          },
+          {
+            "re": 0.99,
+            "im": -0.99
+          }
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "result",
+      "type": {
+        "javascript": "Complex64",
+        "jsdoc": "Complex64",
+        "c": "stdlib_complex64_t",
+        "dtype": "complex64"
+      }
+    },
+    "keywords": [
+      "ceil",
+      "cceil",
+      "round",
+      "integer",
+      "nearest",
+      "value",
+      "complex",
+      "cmplx",
+      "number"
+    ],
+    "extra_keywords": [
+      "math.ceil"
+    ]
+  },
   "@stdlib/math/base/special/cceil": {
     "$schema": "math/base@v1.0",
     "base_alias": "ceil",
@@ -8449,7 +8583,82 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/factoriallnf": {},
+  "@stdlib/math/base/special/factoriallnf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "factorialln",
+    "alias": "factoriallnf",
+    "pkg_desc": "compute the natural logarithm of the factorial function",
+    "desc": "computes the natural logarithm of the factorial function",
+    "short_desc": "natural logarithm of the factorial function",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          93,
+          95,
+          96,
+          97,
+          98,
+          99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "result",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "factorial",
+      "log-scale",
+      "logarithm",
+      "fact",
+      "lfact",
+      "factorialln",
+      "combinatorics",
+      "gamma"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/factorialln": {
     "$schema": "math/base@v1.0",
     "base_alias": "factorialln",
@@ -8599,7 +8808,79 @@
   "@stdlib/math/base/special/fibonacci-indexf": {},
   "@stdlib/math/base/special/fibonacci-index": {},
   "@stdlib/math/base/special/floorf": {},
-  "@stdlib/math/base/special/floor": {},
+  "@stdlib/math/base/special/floor": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "floor",
+    "alias": "floor",
+    "pkg_desc": "round a double-precision floating-point number toward negative infinity",
+    "desc": "rounds a double-precision floating-point number toward negative infinity",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          -3.7,
+          3.5,
+          -1.2,
+          -0.1,
+          0.1,
+          1.1,
+          2.9,
+          5.5,
+          10.2,
+          5.9,
+          2.25,
+          -3.14,
+          5,
+          4.33,
+          10.2,
+          -9.99,
+          9.99,
+          2.12,
+          -0.5,
+          0.5
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "floor",
+      "round",
+      "integer",
+      "nearest"
+    ],
+    "extra_keywords": [
+      "math.floor"
+    ]
+  },
   "@stdlib/math/base/special/cfloorf": {},
   "@stdlib/math/base/special/cfloor": {},
   "@stdlib/math/base/special/floor10": {},
@@ -8789,7 +9070,94 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/hacoversin": {},
+  "@stdlib/math/base/special/hacoversin": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "hacoversin",
+    "alias": "hacoversin",
+    "pkg_desc": "compute the half-value coversed sine",
+    "desc": "computes the half-value coversed sine",
+    "short_desc": "half-value coversed sine",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          64,
+          27,
+          0,
+          0.1,
+          -9,
+          8,
+          -1,
+          125,
+          -10.2,
+          11.3,
+          -12.4,
+          3.5,
+          -1.6,
+          15.7,
+          -16,
+          17.9,
+          -188,
+          19.11,
+          -200,
+          21.15
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "half-value coversed sine",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "hacoversin",
+      "hacoversine",
+      "versed sine",
+      "half-value",
+      "coversed",
+      "sinus versus",
+      "hacoversinus",
+      "hcv",
+      "hacov",
+      "semicoversin",
+      "cohaversine",
+      "versed",
+      "sine",
+      "sin",
+      "trig",
+      "trigonometry",
+      "radians",
+      "angle"
+    ],
+    "extra_keywords": [
+      "math.sin"
+    ]
+  },
   "@stdlib/math/base/special/havercosf": {
     "$schema": "math/base@v1.0",
     "base_alias": "havercos",
@@ -9039,7 +9407,96 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/haversin": {},
+  "@stdlib/math/base/special/haversin": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "haversin",
+    "alias": "haversin",
+    "pkg_desc": "compute the half-value versed sine",
+    "desc": "computes the half-value versed sine",
+    "short_desc": "half-value versed sine",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          64,
+          27,
+          0,
+          0.1,
+          -9,
+          8,
+          -1,
+          125,
+          -10.2,
+          11.3,
+          -12.4,
+          3.5,
+          -1.6,
+          15.7,
+          -16,
+          17.9,
+          -188,
+          19.11,
+          -200,
+          21.15
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "half-value versed sine",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "haversin",
+      "haversine",
+      "versed sine",
+      "haversed sine",
+      "haversed",
+      "hv",
+      "hvs",
+      "sem",
+      "havers",
+      "semiversinus",
+      "semiversin",
+      "semiversus",
+      "cosine",
+      "sine",
+      "cos",
+      "sin",
+      "trig",
+      "trigonometry",
+      "radians",
+      "angle"
+    ],
+    "extra_keywords": [
+      "math.sin"
+    ]
+  },
   "@stdlib/math/base/special/invf": {},
   "@stdlib/math/base/special/inv": {},
   "@stdlib/math/base/special/cinvf": {},
@@ -9144,7 +9601,79 @@
   "@stdlib/math/base/special/rcbrt": {},
   "@stdlib/math/base/special/riemann-zeta": {},
   "@stdlib/math/base/special/roundf": {},
-  "@stdlib/math/base/special/round": {},
+  "@stdlib/math/base/special/round": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "round",
+    "alias": "round",
+    "pkg_desc": "round a numeric value to the nearest integer",
+    "desc": "rounds a numeric value to the nearest integer",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          -10.2,
+          11.3,
+          -12.4,
+          3.5,
+          -1.6,
+          64,
+          27.2,
+          0,
+          0.1,
+          -9,
+          8.1,
+          -1,
+          125,
+          15.7,
+          -16.5,
+          17.9,
+          -188.7,
+          19.11,
+          -200.1,
+          21.15
+        ]
+      }
+    ],
+    "output_policy": "same",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "round",
+      "integer",
+      "nearest"
+    ],
+    "extra_keywords": [
+      "math.round"
+    ]
+  },
   "@stdlib/math/base/special/croundf": {},
   "@stdlib/math/base/special/cround": {},
   "@stdlib/math/base/special/round-nearest-even": {
@@ -9224,10 +9753,162 @@
     ]
   },
   "@stdlib/math/base/special/round10": {},
-  "@stdlib/math/base/special/round2": {},
+  "@stdlib/math/base/special/round2": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "round2",
+    "alias": "round2",
+    "pkg_desc": "round a numeric value to the nearest power of two on a linear scale",
+    "desc": "rounds a numeric value to the nearest power of two on a linear scale",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          64,
+          27,
+          0,
+          0.1,
+          -9,
+          8,
+          -1,
+          125,
+          -10.2,
+          11.3,
+          -12.4,
+          3.5,
+          -1.6,
+          15.7,
+          -16,
+          17.9,
+          -188,
+          19.11,
+          -200,
+          21.15
+        ]
+      }
+    ],
+    "output_policy": "same",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "round",
+      "round2",
+      "nextpow2",
+      "prevpow2",
+      "nearest"
+    ],
+    "extra_keywords": [
+      "math.round"
+    ]
+  },
   "@stdlib/math/base/special/rsqrtf": {},
   "@stdlib/math/base/special/rsqrt": {},
-  "@stdlib/math/base/special/secf": {},
+  "@stdlib/math/base/special/secf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sec",
+    "alias": "secf",
+    "pkg_desc": "compute the secant of a single-precision floating-point number (in radians)",
+    "desc": "computes the secant of a single-precision floating-point number (in radians)",
+    "short_desc": "secant",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          0.5236,
+          0.7854,
+          1.5708,
+          1.0472,
+          2.3562,
+          3.1416,
+          4.7124,
+          6.2832,
+          -0.5236,
+          -0.7854,
+          -1.0472,
+          -1.5708,
+          -2.3562,
+          -3.1416,
+          7.854,
+          -7.854,
+          0.1,
+          -0.1,
+          3.5
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "secant",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "cos",
+      "cosine",
+      "sec",
+      "secant",
+      "trig",
+      "trigonometry",
+      "radians",
+      "angle"
+    ],
+    "extra_keywords": [
+      "math.sec",
+      "math.cos"
+    ]
+  },
   "@stdlib/math/base/special/sec": {
     "$schema": "math/base@v1.0",
     "base_alias": "sec",
@@ -9305,10 +9986,304 @@
       "math.cos"
     ]
   },
-  "@stdlib/math/base/special/secd": {},
-  "@stdlib/math/base/special/sech": {},
-  "@stdlib/math/base/special/signumf": {},
-  "@stdlib/math/base/special/signum": {},
+  "@stdlib/math/base/special/secd": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "secd",
+    "alias": "secd",
+    "pkg_desc": "compute the secant of an angle measured in degrees",
+    "desc": "computes the secant of an angle measured in degrees",
+    "short_desc": "secant",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in degrees)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -180,
+            180
+          ]
+        },
+        "example_values": [
+          0,
+          30,
+          45,
+          60,
+          90,
+          120,
+          135,
+          150,
+          180,
+          -30,
+          -45,
+          -60,
+          -90,
+          -120,
+          -135,
+          -150,
+          -180
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "secant",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "secant",
+      "sine",
+      "inverse",
+      "trig",
+      "trigonometry",
+      "angle",
+      "degree"
+    ],
+    "extra_keywords": [
+      "math.sec"
+    ]
+  },
+  "@stdlib/math/base/special/sech": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "sech",
+    "alias": "sech",
+    "pkg_desc": "compute the hyperbolic secant of a double-precision floating-point number",
+    "desc": "computes the hyperbolic secant of a double-precision floating-point number",
+    "short_desc": "hyperbolic secant",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          0.5236,
+          0.7854,
+          1.5708,
+          1.0472,
+          2.3562,
+          3.1416,
+          4.7124,
+          6.2832,
+          -0.5236,
+          -0.7854,
+          -1.0472,
+          -1.5708,
+          -2.3562,
+          -3.1416,
+          7.854,
+          -7.854,
+          0.1,
+          -0.1,
+          3.5
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "hyperbolic secant",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "sec",
+      "sech",
+      "secant",
+      "cos",
+      "cosine",
+      "hyperbolic",
+      "trig",
+      "trigonometry",
+      "radians",
+      "angle"
+    ],
+    "extra_keywords": [
+      "math.sech"
+    ]
+  },
+  "@stdlib/math/base/special/signumf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "signum",
+    "alias": "signumf",
+    "pkg_desc": "evaluate the signum function for a single-precision floating-point number",
+    "desc": "evaluates the signum function for a single-precision floating-point number",
+    "short_desc": "signum",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -100,
+            100
+          ]
+        },
+        "example_values": [
+          -100,
+          0.1,
+          0.5,
+          1,
+          -50,
+          -10,
+          10,
+          25,
+          -5,
+          -3.5,
+          -1,
+          -0.5,
+          -0.1,
+          0,
+          3.5,
+          5,
+          50,
+          75,
+          100,
+          -75
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "signum",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "signum",
+      "sign"
+    ],
+    "extra_keywords": [
+      "math.sign"
+    ]
+  },
+  "@stdlib/math/base/special/signum": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "signum",
+    "alias": "signum",
+    "pkg_desc": "evaluate the signum function for a double-precision floating-point number",
+    "desc": "evaluates the signum function for a double-precision floating-point number",
+    "short_desc": "signum",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -100,
+            100
+          ]
+        },
+        "example_values": [
+          -100,
+          0.1,
+          0.5,
+          -50,
+          -10,
+          10,
+          25,
+          -5,
+          -3.5,
+          -1,
+          -0.5,
+          -0.1,
+          0,
+          1,
+          3.5,
+          5,
+          50,
+          75,
+          100,
+          -75
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "signum",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "signum",
+      "sign"
+    ],
+    "extra_keywords": [
+      "math.sign"
+    ]
+  },
   "@stdlib/math/base/special/csignumf": {},
   "@stdlib/math/base/special/csignum": {},
   "@stdlib/math/base/special/sinf": {
@@ -11727,5 +12702,83 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/versin": {}
+  "@stdlib/math/base/special/versin": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "versin",
+    "alias": "versin",
+    "pkg_desc": "compute the versed sine",
+    "desc": "computes the versed sine",
+    "short_desc": "versed sine",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          64,
+          27,
+          0,
+          0.1,
+          -9,
+          8,
+          -1,
+          125,
+          -10.2,
+          11.3,
+          -12.4,
+          3.5,
+          -1.6,
+          15.7,
+          -16,
+          17.9,
+          -188,
+          19.11,
+          -200,
+          21.15
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "versed sine",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "versin",
+      "versine",
+      "versed sine",
+      "cosine",
+      "cos",
+      "trig",
+      "trigonometry",
+      "radians",
+      "angle"
+    ],
+    "extra_keywords": [
+      "math.sin"
+    ]
+  }
 }
