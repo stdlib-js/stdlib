@@ -9501,8 +9501,154 @@
   "@stdlib/math/base/special/inv": {},
   "@stdlib/math/base/special/cinvf": {},
   "@stdlib/math/base/special/cinv": {},
-  "@stdlib/math/base/special/lnf": {},
-  "@stdlib/math/base/special/ln": {},
+  "@stdlib/math/base/special/lnf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "ln",
+    "alias": "lnf",
+    "pkg_desc": "evaluate the natural logarithm of a single-precision floating-point number",
+    "desc": "evaluates the natural logarithm of a single-precision floating-point number",
+    "short_desc": "natural logarithm",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          0,
+          0.01,
+          0.25,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          9,
+          16,
+          25,
+          36,
+          49,
+          64,
+          81,
+          100,
+          0.1,
+          10,
+          50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "natural logarithm",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "ln",
+      "natural",
+      "logarithm",
+      "log"
+    ],
+    "extra_keywords": [
+      "math.log"
+    ]
+  },
+  "@stdlib/math/base/special/ln": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "ln",
+    "alias": "ln",
+    "pkg_desc": "evaluate the natural logarithm of a double-precision floating-point number",
+    "desc": "evaluates the natural logarithm of a double-precision floating-point number",
+    "short_desc": "natural logarithm",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          0,
+          0.01,
+          0.25,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          9,
+          16,
+          25,
+          36,
+          49,
+          64,
+          81,
+          100,
+          0.1,
+          10,
+          50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "natural logarithm",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "ln",
+      "natural",
+      "logarithm",
+      "log"
+    ],
+    "extra_keywords": [
+      "math.log"
+    ]
+  },
   "@stdlib/math/base/special/log10": {},
   "@stdlib/math/base/special/log1mexp": {},
   "@stdlib/math/base/special/log1p": {},
@@ -9593,14 +9739,306 @@
   "@stdlib/math/base/special/negalucas": {},
   "@stdlib/math/base/special/nonfibonaccif": {},
   "@stdlib/math/base/special/nonfibonacci": {},
-  "@stdlib/math/base/special/rad2degf": {},
-  "@stdlib/math/base/special/rad2deg": {},
+  "@stdlib/math/base/special/rad2degf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "rad2deg",
+    "alias": "rad2degf",
+    "pkg_desc": "convert an angle from radians to degrees (single-precision)",
+    "desc": "converts an angle from radians to degrees (single-precision)",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          -12.566370614359172,
+          -6.283185307179586,
+          -3.141592653589793,
+          -1.5707963267948966,
+          -0.7853981633974483,
+          -0.5,
+          -0.25,
+          -0.1,
+          0,
+          0.1,
+          0.25,
+          0.5,
+          0.7853981633974483,
+          1,
+          1.5707963267948966,
+          2,
+          3.141592653589793,
+          4,
+          6.283185307179586,
+          12.566370614359172
+        ]
+      }
+    ],
+    "output_policy": "same",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "rad2deg",
+      "radians",
+      "degrees",
+      "angle",
+      "convert",
+      "trigonometry",
+      "geometry"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/rad2deg": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "rad2deg",
+    "alias": "rad2deg",
+    "pkg_desc": "convert an angle from radians to degrees",
+    "desc": "converts an angle from radians to degrees",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          -12.566370614359172,
+          -6.283185307179586,
+          -3.141592653589793,
+          -1.5707963267948966,
+          -0.7853981633974483,
+          -0.5,
+          -0.25,
+          -0.1,
+          0,
+          0.1,
+          0.25,
+          0.5,
+          0.7853981633974483,
+          1,
+          1.5707963267948966,
+          2,
+          3.141592653589793,
+          4,
+          6.283185307179586,
+          12.566370614359172
+        ]
+      }
+    ],
+    "output_policy": "same",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "rad2deg",
+      "radians",
+      "degrees",
+      "angle",
+      "convert",
+      "trigonometry",
+      "geometry"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/rampf": {},
-  "@stdlib/math/base/special/ramp": {},
+  "@stdlib/math/base/special/ramp": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "ramp",
+    "alias": "ramp",
+    "pkg_desc": "evaluate the ramp function",
+    "desc": "evaluates the ramp function",
+    "short_desc": "ramp function",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          64,
+          27,
+          0,
+          0.1,
+          -9,
+          8,
+          -1,
+          125,
+          -10.2,
+          11.3,
+          -12.4,
+          3.5,
+          -1.6,
+          15.7,
+          -16,
+          17.9,
+          -188,
+          19.11,
+          -200,
+          21.15
+        ]
+      }
+    ],
+    "output_policy": "same",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "ramp",
+      "heaviside",
+      "max",
+      "maximum",
+      "nonnegative",
+      "dsp"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/rcbrtf": {},
   "@stdlib/math/base/special/rcbrt": {},
   "@stdlib/math/base/special/riemann-zeta": {},
-  "@stdlib/math/base/special/roundf": {},
+  "@stdlib/math/base/special/roundf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "round",
+    "alias": "roundf",
+    "pkg_desc": "round a single-precision floating-point number to the nearest integer",
+    "desc": "rounds a single-precision floating-point number to the nearest integer",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          -10.2,
+          11.3,
+          -12.4,
+          3.5,
+          -1.6,
+          64,
+          27.2,
+          0,
+          0.1,
+          -9,
+          8.1,
+          -1,
+          125,
+          15.7,
+          -16.5,
+          17.9,
+          -188.7,
+          19.11,
+          -200.1,
+          21.15
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "round",
+      "integer",
+      "nearest"
+    ],
+    "extra_keywords": [
+      "math.round"
+    ]
+  },
   "@stdlib/math/base/special/round": {
     "$schema": "math/base@v1.0",
     "base_alias": "round",
@@ -9752,7 +10190,78 @@
       "math.round"
     ]
   },
-  "@stdlib/math/base/special/round10": {},
+  "@stdlib/math/base/special/round10": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "round10",
+    "alias": "round10",
+    "pkg_desc": "round a numeric value to the nearest power of 10 on a linear scale",
+    "desc": "rounds a numeric value to the nearest power of ten on a linear scale",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          -10.2,
+          11.3,
+          -12.4,
+          3.5,
+          -1.6,
+          64,
+          27.2,
+          0,
+          0.1,
+          -9,
+          8.1,
+          -1,
+          125,
+          15.7,
+          -16.5,
+          17.9,
+          -188.7,
+          19.11,
+          -200.1,
+          21.15
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "round",
+      "round10",
+      "nearest"
+    ],
+    "extra_keywords": [
+      "math.round"
+    ]
+  },
   "@stdlib/math/base/special/round2": {
     "$schema": "math/base@v1.0",
     "base_alias": "round2",
@@ -9828,8 +10337,158 @@
       "math.round"
     ]
   },
-  "@stdlib/math/base/special/rsqrtf": {},
-  "@stdlib/math/base/special/rsqrt": {},
+  "@stdlib/math/base/special/rsqrtf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "rsqrt",
+    "alias": "rsqrtf",
+    "pkg_desc": "compute the reciprocal square root of a single-precision floating-point number",
+    "desc": "computes the reciprocal square root of a single-precision floating-point number",
+    "short_desc": "reciprocal square root",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0.1,
+            100
+          ]
+        },
+        "example_values": [
+          0.251,
+          0.01,
+          0.25,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          9,
+          16,
+          25,
+          36,
+          49,
+          64,
+          81,
+          100,
+          0.1,
+          10,
+          50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "reciprocal square root",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "sqrt",
+      "principal",
+      "square",
+      "root",
+      "reciprocal",
+      "inverse"
+    ],
+    "extra_keywords": [
+      "math.sqrt"
+    ]
+  },
+  "@stdlib/math/base/special/rsqrt": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "rsqrt",
+    "alias": "rsqrt",
+    "pkg_desc": "compute the reciprocal square root of a double-precision floating-point number",
+    "desc": "computes the reciprocal square root of a double-precision floating-point number",
+    "short_desc": "reciprocal square root",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0.1,
+            100
+          ]
+        },
+        "example_values": [
+          0.025,
+          0.01,
+          0.25,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          9,
+          16,
+          25,
+          36,
+          49,
+          64,
+          81,
+          100,
+          0.1,
+          10,
+          50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "reciprocal square root",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "sqrt",
+      "principal",
+      "square",
+      "root",
+      "reciprocal",
+      "inverse"
+    ],
+    "extra_keywords": [
+      "math.sqrt"
+    ]
+  },
   "@stdlib/math/base/special/secf": {
     "$schema": "math/base@v1.0",
     "base_alias": "sec",
