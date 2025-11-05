@@ -1,5 +1,78 @@
 {
-  "@stdlib/math/base/special/labs": {},
+  "@stdlib/math/base/special/labs": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "abs",
+    "alias": "labs",
+    "pkg_desc": "compute an absolute value of a signed 32-bit integer",
+    "desc": "computes an absolute value of a signed 32-bit integer",
+    "short_desc": "absolute value",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "integer",
+          "c": "int32_t",
+          "dtype": "int32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          -5,
+          2,
+          -10,
+          -1,
+          2,
+          3,
+          4,
+          9,
+          -16,
+          25,
+          -36,
+          -49,
+          64,
+          81,
+          100,
+          -99,
+          10,
+          -50,
+          98
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "absolute value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "integer",
+        "c": "int32_t",
+        "dtype": "int32"
+      }
+    },
+    "keywords": [
+      "abs",
+      "labs",
+      "absolute",
+      "magnitude"
+    ],
+    "extra_keywords": [
+      "math.abs"
+    ]
+  },
   "@stdlib/number/uint8/base/identity": {},
   "@stdlib/number/uint16/base/identity": {},
   "@stdlib/number/uint32/base/identity": {},
@@ -9497,8 +9570,154 @@
       "math.sin"
     ]
   },
-  "@stdlib/math/base/special/invf": {},
-  "@stdlib/math/base/special/inv": {},
+  "@stdlib/math/base/special/invf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "inv",
+    "alias": "invf",
+    "pkg_desc": "compute the multiplicative inverse of a number",
+    "desc": "computes the multiplicative inverse of a number",
+    "short_desc": "multiplicative inverse",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          -0.01,
+          0.25,
+          0.5,
+          -1,
+          2,
+          3,
+          4,
+          9,
+          -16,
+          25,
+          -36,
+          -49,
+          64,
+          81,
+          100,
+          0.1,
+          10,
+          -50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "multiplicative inverse",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "inv",
+      "multiplicative",
+      "inverse",
+      "reciprocal"
+    ],
+    "extra_keywords": [
+      "math.pow"
+    ]
+  },
+  "@stdlib/math/base/special/inv": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "inv",
+    "alias": "inv",
+    "pkg_desc": "compute the multiplicative inverse of a number",
+    "desc": "computes the multiplicative inverse of a number",
+    "short_desc": "multiplicative inverse",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          -0.01,
+          0.25,
+          0.5,
+          -1,
+          2,
+          3,
+          4,
+          9,
+          -16,
+          25,
+          -36,
+          -49,
+          64,
+          81,
+          100,
+          0.1,
+          10,
+          -50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "multiplicative inverse",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "inv",
+      "multiplicative",
+      "inverse",
+      "reciprocal"
+    ],
+    "extra_keywords": [
+      "math.pow"
+    ]
+  },
   "@stdlib/math/base/special/cinvf": {},
   "@stdlib/math/base/special/cinv": {},
   "@stdlib/math/base/special/lnf": {
@@ -9649,8 +9868,157 @@
       "math.log"
     ]
   },
-  "@stdlib/math/base/special/log10": {},
-  "@stdlib/math/base/special/log1mexp": {},
+  "@stdlib/math/base/special/log10": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "log10",
+    "alias": "log10",
+    "pkg_desc": "evaluate the common logarithm (base 10)",
+    "desc": "evaluates the common logarithm (base 10)",
+    "short_desc": "common logarithm",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          10,
+          0.01,
+          0.25,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          9,
+          16,
+          25,
+          36,
+          49,
+          64,
+          81,
+          100,
+          0.1,
+          10,
+          50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "common logarithm",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "log10",
+      "common",
+      "base 10",
+      "logarithm",
+      "log"
+    ],
+    "extra_keywords": [
+      "math.log10"
+    ]
+  },
+  "@stdlib/math/base/special/log1mexp": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "log1mexp",
+    "alias": "log1mexp",
+    "pkg_desc": "evaluate the natural logarithm of 1-exp(-|x|)",
+    "desc": "evaluates the natural logarithm of 1-exp(-|x|)",
+    "short_desc": "natural logarithm of  of 1-exp(-|x|)",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -100,
+            100
+          ]
+        },
+        "example_values": [
+          0,
+          -0.01,
+          0.25,
+          -0.5,
+          1,
+          2,
+          3,
+          4,
+          9,
+          16,
+          25,
+          -36,
+          49,
+          -64,
+          81,
+          100,
+          -0.1,
+          10,
+          -50,
+          99.99
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "natural logarithm",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "ln",
+      "log1mexp",
+      "natural",
+      "logarithm",
+      "log"
+    ],
+    "extra_keywords": [
+      "math.log",
+      "math.log1p"
+    ]
+  },
   "@stdlib/math/base/special/log1p": {},
   "@stdlib/math/base/special/log1pexp": {},
   "@stdlib/math/base/special/log1pmx": {},
@@ -9729,10 +10097,228 @@
       "math.log2"
     ]
   },
-  "@stdlib/math/base/special/logitf": {},
-  "@stdlib/math/base/special/logit": {},
+  "@stdlib/math/base/special/logitf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "logit",
+    "alias": "logitf",
+    "pkg_desc": "evaluate the logit function for a single-precision floating-point number",
+    "desc": "evaluates the logit function for a single-precision floating-point number",
+    "short_desc": "logit",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": 1
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            1
+          ]
+        },
+        "example_values": [
+          0.001,
+          0.005,
+          0.01,
+          0.025,
+          0.05,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          0.95,
+          0.975,
+          0.99,
+          0.999
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "logit",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "logit",
+      "proportion",
+      "log-odds",
+      "logistic",
+      "sigmoid"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/logit": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "logit",
+    "alias": "logit",
+    "pkg_desc": "evaluate the logit function",
+    "desc": "evaluates the logit function",
+    "short_desc": "logit",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": 1
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            1
+          ]
+        },
+        "example_values": [
+          0.001,
+          0.005,
+          0.01,
+          0.025,
+          0.05,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          0.95,
+          0.975,
+          0.99,
+          0.999
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "logit",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "logit",
+      "proportion",
+      "log-odds",
+      "logistic",
+      "sigmoid"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/lucasf": {},
-  "@stdlib/math/base/special/lucas": {},
+  "@stdlib/math/base/special/lucas": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "lucas",
+    "alias": "lucas",
+    "pkg_desc": "compute the nth Lucas number",
+    "desc": "computes the nth Lucas number",
+    "short_desc": "Lucas number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "Lucas number",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "lucas",
+      "fib",
+      "number",
+      "integer",
+      "sequences"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/negafibonaccif": {},
   "@stdlib/math/base/special/negafibonacci": {},
   "@stdlib/math/base/special/negalucasf": {},
@@ -9889,7 +10475,79 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/rampf": {},
+  "@stdlib/math/base/special/rampf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "ramp",
+    "alias": "rampf",
+    "pkg_desc": "evaluate the ramp function for a single-precision floating-point number",
+    "desc": "evaluates the ramp function for a single-precision floating-point number",
+    "short_desc": "ramp function",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          64,
+          27,
+          0,
+          0.1,
+          -9,
+          8,
+          -1,
+          125,
+          -10.2,
+          11.3,
+          -12.4,
+          3.5,
+          -1.6,
+          15.7,
+          -16,
+          17.9,
+          -188,
+          19.11,
+          -200,
+          21.15
+        ]
+      }
+    ],
+    "output_policy": "same",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "ramp",
+      "heaviside",
+      "max",
+      "maximum",
+      "dsp"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/ramp": {
     "$schema": "math/base@v1.0",
     "base_alias": "ramp",
