@@ -4388,7 +4388,69 @@
       "math.acos"
     ]
   },
-  "@stdlib/math/base/special/bernoullif": {},
+  "@stdlib/math/base/special/bernoullif": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "bernoulli",
+    "alias": "bernoullif",
+    "pkg_desc": "compute the nth Bernoulli number as a single-precision floating-point number ",
+    "desc": "computes the nth Bernoulli number as a single-precision floating-point number",
+    "short_desc": "Bernoulli number",
+    "parameters": [
+      {
+        "name": "n",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            0,
+            30
+          ]
+        },
+        "example_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          10,
+          20,
+          15,
+          18,
+          25,
+          21,
+          22
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "bernoulli"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/bernoulli": {
     "$schema": "math/base@v1.0",
     "base_alias": "bernoulli",
@@ -8806,7 +8868,77 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/fibonaccif": {},
+  "@stdlib/math/base/special/fibonaccif": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "fibonacci",
+    "alias": "fibonaccif",
+    "pkg_desc": "compute the nth Fibonacci number as a single-precision floating-point number",
+    "desc": "computes the nth Fibonacci number as a single-precision floating-point number",
+    "short_desc": "Fibonacci number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          21,
+          34,
+          41,
+          55
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "fibonacci number",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "fib"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/fibonacci": {
     "$schema": "math/base@v1.0",
     "base_alias": "fibonacci",
@@ -10243,7 +10375,81 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/lucasf": {},
+  "@stdlib/math/base/special/lucasf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "lucas",
+    "alias": "lucasf",
+    "pkg_desc": "compute the nth Lucas number as a single-precision floating-point number",
+    "desc": "computes the nth Lucas number as a single-precision floating-point number",
+    "short_desc": "Lucas number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "Lucas number",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "lucas",
+      "fib",
+      "number",
+      "integer",
+      "sequences"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/lucas": {
     "$schema": "math/base@v1.0",
     "base_alias": "lucas",
@@ -10319,12 +10525,444 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/negafibonaccif": {},
-  "@stdlib/math/base/special/negafibonacci": {},
-  "@stdlib/math/base/special/negalucasf": {},
-  "@stdlib/math/base/special/negalucas": {},
-  "@stdlib/math/base/special/nonfibonaccif": {},
-  "@stdlib/math/base/special/nonfibonacci": {},
+  "@stdlib/math/base/special/negafibonaccif": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "negafibonacci",
+    "alias": "negafibonaccif",
+    "pkg_desc": "compute the nth negaFibonacci number as a single-precision floating-point number",
+    "desc": "computes the nth negaFibonacci number as a single-precision floating-point number",
+    "short_desc": "negaFibonacci number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": 0
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            -100,
+            0
+          ]
+        },
+        "example_values": [
+          0,
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12,
+          -13,
+          -14,
+          -15,
+          -16,
+          -17,
+          -20,
+          -25,
+          -30
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "negaFibonacci number",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "negafibonacci",
+      "fib",
+      "nfib"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/negafibonacci": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "negafibonacci",
+    "alias": "negafibonacci",
+    "pkg_desc": "compute the nth negaFibonacci number",
+    "desc": "computes the nth negaFibonacci number",
+    "short_desc": "negaFibonacci number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": 0
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            -100,
+            0
+          ]
+        },
+        "example_values": [
+          0,
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12,
+          -13,
+          -14,
+          -15,
+          -16,
+          -17,
+          -20,
+          -25,
+          -30
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "negaFibonacci number",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "negafibonacci",
+      "fib",
+      "nfib"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/negalucasf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "negalucas",
+    "alias": "negalucasf",
+    "pkg_desc": "compute the nth negaLucas number in single-precision floating-point format",
+    "desc": "computes the nth negaLucas number in single-precision floating-point format",
+    "short_desc": "negaLucas number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": 0
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            -100,
+            0
+          ]
+        },
+        "example_values": [
+          0,
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -15,
+          -20,
+          -25,
+          -30,
+          -40,
+          -50,
+          -60,
+          -70,
+          -76
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "negaLucas number",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "lucas",
+      "negalucas",
+      "fibonacci",
+      "fib",
+      "fibo",
+      "nlucas"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/negalucas": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "negalucas",
+    "alias": "negalucas",
+    "pkg_desc": "compute the nth negaLucas number",
+    "desc": "computes the nth negaLucas number",
+    "short_desc": "negaLucas number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": 0
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            -100,
+            0
+          ]
+        },
+        "example_values": [
+          0,
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -15,
+          -20,
+          -25,
+          -30,
+          -40,
+          -50,
+          -60,
+          -70,
+          -76
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "negaLucas number",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "lucas",
+      "negalucas",
+      "fibonacci",
+      "fib",
+      "fibo",
+      "nlucas"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/nonfibonaccif": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "nonfibonacci",
+    "alias": "nonfibonaccif",
+    "pkg_desc": "compute the nth non-Fibonacci single-precision floating-point number",
+    "desc": "computes the nth non-Fibonacci single-precision floating-point number",
+    "short_desc": "non-Fibonacci number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "non-Fibonacci number",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "fib",
+      "sequence",
+      "seq"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/nonfibonacci": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "nonfibonacci",
+    "alias": "nonfibonacci",
+    "pkg_desc": "compute the nth non-Fibonacci number",
+    "desc": "computes the nth non-Fibonacci number",
+    "short_desc": "non-Fibonacci number",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            0,
+            100
+          ]
+        },
+        "example_values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "non-Fibonacci number",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "fib",
+      "sequence",
+      "seq"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/rad2degf": {
     "$schema": "math/base@v1.0",
     "base_alias": "rad2deg",
