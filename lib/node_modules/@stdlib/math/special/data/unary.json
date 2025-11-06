@@ -9010,9 +9010,219 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/fibonacci-indexf": {},
-  "@stdlib/math/base/special/fibonacci-index": {},
-  "@stdlib/math/base/special/floorf": {},
+  "@stdlib/math/base/special/fibonacci-indexf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "fibonacciIndex",
+    "alias": "fibonacciIndexf",
+    "pkg_desc": "compute the Fibonacci number index of a single-precision floating-point number",
+    "desc": "computes the Fibonacci number index of a single-precision floating-point number",
+    "short_desc": "Fibonacci number index",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            2,
+            7000
+          ]
+        },
+        "example_values": [
+          10,
+          111,
+          2,
+          3,
+          5,
+          8,
+          13,
+          21,
+          34,
+          55,
+          89,
+          144,
+          233,
+          377,
+          610,
+          987,
+          1597,
+          2584,
+          4181,
+          6765
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "fibonacci number index",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "fib"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/fibonacci-index": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "fibonacciIndex",
+    "alias": "fibonacciIndex",
+    "pkg_desc": "compute the Fibonacci number index",
+    "desc": "computes the Fibonacci number index",
+    "short_desc": "Fibonacci number index",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": 0,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/discrete-uniform",
+          "parameters": [
+            2,
+            7000
+          ]
+        },
+        "example_values": [
+          10,
+          111,
+          2,
+          3,
+          5,
+          8,
+          13,
+          21,
+          34,
+          55,
+          89,
+          144,
+          233,
+          377,
+          610,
+          987,
+          1597,
+          2584,
+          4181,
+          6765
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "fibonacci number index",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "fibonacci",
+      "fib"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/floorf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "floor",
+    "alias": "floorf",
+    "pkg_desc": "round a single-precision floating-point number toward negative infinity",
+    "desc": "rounds a single-precision floating-point number toward negative infinity",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          -3.7,
+          3.5,
+          -1.2,
+          -0.1,
+          0.1,
+          1.1,
+          2.9,
+          5.5,
+          10.2,
+          5.9,
+          2.25,
+          -3.14,
+          5,
+          4.33,
+          10.2,
+          -9.99,
+          9.99,
+          2.12,
+          -0.5,
+          0.5
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "floor",
+      "round",
+      "integer",
+      "nearest"
+    ],
+    "extra_keywords": [
+      "math.floor"
+    ]
+  },
   "@stdlib/math/base/special/floor": {
     "$schema": "math/base@v1.0",
     "base_alias": "floor",
@@ -9088,8 +9298,153 @@
   },
   "@stdlib/math/base/special/cfloorf": {},
   "@stdlib/math/base/special/cfloor": {},
-  "@stdlib/math/base/special/floor10": {},
-  "@stdlib/math/base/special/floor2": {},
+  "@stdlib/math/base/special/floor10": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "floor10",
+    "alias": "floor10",
+    "pkg_desc": "round a numeric value to the nearest power of 10 toward negative infinity",
+    "desc": "rounds a numeric value to the nearest power of 10 toward negative infinity",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          -3.7,
+          3.5,
+          -1.2,
+          -0.1,
+          0.1,
+          1.1,
+          2.9,
+          5.5,
+          10.2,
+          5.9,
+          2.25,
+          -3.14,
+          5,
+          4.33,
+          10.2,
+          -9.99,
+          9.99,
+          2.12,
+          -0.5,
+          0.5
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "floor",
+      "floor10",
+      "round",
+      "nearest"
+    ],
+    "extra_keywords": [
+      "math.floor"
+    ]
+  },
+  "@stdlib/math/base/special/floor2": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "floor2",
+    "alias": "floor2",
+    "pkg_desc": "round a numeric value to the nearest power of two toward negative infinity",
+    "desc": "rounds a numeric value to the nearest power of two toward negative infinity",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          -3.7,
+          3.5,
+          -1.2,
+          -0.1,
+          0.1,
+          1.1,
+          2.9,
+          5.5,
+          10.2,
+          5.9,
+          2.25,
+          -3.14,
+          5,
+          4.33,
+          10.2,
+          -9.99,
+          9.99,
+          2.12,
+          -0.5,
+          0.5
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "floor",
+      "floor2",
+      "round",
+      "nextpow2",
+      "prevpow2"
+    ],
+    "extra_keywords": [
+      "math.floor"
+    ]
+  },
   "@stdlib/math/base/special/fresnel": {},
   "@stdlib/math/base/special/fresnelc": {},
   "@stdlib/math/base/special/fresnels": {},
