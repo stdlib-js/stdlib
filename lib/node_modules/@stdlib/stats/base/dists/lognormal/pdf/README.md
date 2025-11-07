@@ -116,23 +116,19 @@ y = mypdf( 2.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/base/uniform' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var pdf = require( '@stdlib/stats/base/dists/lognormal/pdf' );
 
-var sigma;
-var mu;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 10, 0.1, 10.0, opts );
+var mu = uniform( 10, -5.0, 5.0, opts );
+var sigma = uniform( 10, EPS, 5.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = uniform( 0.1, 10.0 );
-    mu = uniform( -5.0, 5.0 );
-    sigma = uniform( EPS, 5.0 );
-    y = pdf( x, mu, sigma );
-    console.log( 'x: %d, µ: %d, σ: %d, f(x;µ,σ): %d', x.toFixed( 4 ), mu.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, µ: %0.4f, σ: %0.4f, f(x;µ,σ): %0.4f', x, mu, sigma, pdf );
 ```
 
 </section>

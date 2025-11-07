@@ -124,6 +124,8 @@ The namespace contains the following functions:
 
 <!-- TODO: better examples -->
 
+<!-- eslint-disable no-restricted-syntax -->
+
 <!-- eslint no-undef: "error", @cspell/spellchecker: "off" -->
 
 ```javascript
