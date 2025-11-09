@@ -1210,3 +1210,8 @@
 "JV","invalid argument. First argument must be either a supported data type string, a struct constructor, or another data type instance. Value: `%s`.","TypeError"
 "JW","invalid argument. Second argument must be a valid sort order. Value: `%s`.","TypeError"
 "JX","invalid argument. Second argument must be either an ndarray, a numeric scalar value, or a supported string. Value: `%s`.","TypeError"
+"JY","invalid argument. Unable to apply type promotion rules when resolving a data type to which the input ndarrays can be safely cast. Data types: [%s].","Error"
+"JZ","invalid argument. The list of input ndarrays cannot be safely cast to the data of the output ndarray. Input data types: [%s]. Output data type: %s.","Error"
+"Ja","invalid argument. Second argument is not broadcast compatible with the list of input ndarrays. Array shape: (%s). Desired shape: (%s).","TypeError"
+"Jb","invalid argument. Second argument must be a negative integer. Value: `%s`.","TypeError"
+"Jc","invalid argument. First argument cannot be safely cast to the output data type. Data types: [%s, %s].","TypeError"
