@@ -9446,15 +9446,356 @@
     ]
   },
   "@stdlib/math/base/special/fresnel": {},
-  "@stdlib/math/base/special/fresnelc": {},
-  "@stdlib/math/base/special/fresnels": {},
-  "@stdlib/math/base/special/gamma": {},
+  "@stdlib/math/base/special/fresnelc": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "fresnelc",
+    "alias": "fresnelc",
+    "pkg_desc": "compute the Fresnel integral C(x)",
+    "desc": "computes the Fresnel integral C(x)",
+    "short_desc": "Fresnel integral C(x)",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "example_values": [
+          0,
+          1,
+          -1,
+          1.25,
+          2.1,
+          5.06,
+          -10,
+          0.75,
+          -0.66,
+          1.11,
+          2.24,
+          -0.707,
+          18.2,
+          27.9,
+          -0.9,
+          -0.5,
+          0.5,
+          7.72,
+          21,
+          -2
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "fresnel",
+      "integral",
+      "fresnelc"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/fresnels": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "fresnels",
+    "alias": "fresnels",
+    "pkg_desc": "compute the Fresnel integral S(x)",
+    "desc": "computes the Fresnel integral S(x)",
+    "short_desc": "Fresnel integral S(x)",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          0,
+          1,
+          -1,
+          1.25,
+          2.1,
+          5.06,
+          -10,
+          0.75,
+          -0.66,
+          1.11,
+          2.24,
+          -0.707,
+          18.2,
+          27.9,
+          -0.9,
+          -0.5,
+          0.5,
+          7.72,
+          21,
+          -2
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "fresnel",
+      "fresnels",
+      "sine",
+      "integral"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/gamma": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "gamma",
+    "alias": "gamma",
+    "pkg_desc": "evaluate the gamma function",
+    "desc": "evaluates the gamma function",
+    "short_desc": "gamma function",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          1,
+          3.5,
+          4.5,
+          -0.5,
+          2,
+          3,
+          -3.5,
+          0.1,
+          4,
+          1.5,
+          5,
+          0.5,
+          2.5,
+          -1.5,
+          -2.5,
+          50,
+          100,
+          -50.5,
+          -100.5,
+          2.2
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "gamma",
+      "factorial"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/gamma-lanczos-sum": {},
   "@stdlib/math/base/special/gamma-lanczos-sum-expg-scaledf": {},
   "@stdlib/math/base/special/gamma-lanczos-sum-expg-scaled": {},
   "@stdlib/math/base/special/gamma1pm1": {},
-  "@stdlib/math/base/special/gammasgnf": {},
-  "@stdlib/math/base/special/gammasgn": {},
+  "@stdlib/math/base/special/gammasgnf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "gammasgn",
+    "alias": "gammasgnf",
+    "pkg_desc": "compute the sign of the gamma function for a single-precision floating-point number",
+    "desc": "computes the sign of the gamma function for a single-precision floating-point number",
+    "short_desc": "sign of the gamma function",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          1,
+          -0.5,
+          -1.5,
+          1.5,
+          2,
+          -2,
+          3,
+          4,
+          5,
+          0.5,
+          2.5,
+          -2.5,
+          -3.5,
+          0,
+          -1,
+          -3,
+          10,
+          -10.5,
+          0.1,
+          -0.1
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "sign of the gamma function",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "gamma",
+      "sign",
+      "gammasgn"
+    ],
+    "extra_keywords": []
+  },
+  "@stdlib/math/base/special/gammasgn": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "gammasgn",
+    "alias": "gammasgn",
+    "pkg_desc": "compute the sign of the gamma function",
+    "desc": "computes the sign of the gamma function",
+    "short_desc": "sign of the gamma function",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -10,
+            10
+          ]
+        },
+        "example_values": [
+          1,
+          -0.5,
+          -1.5,
+          1.5,
+          2,
+          -2,
+          3,
+          4,
+          5,
+          0.5,
+          2.5,
+          -2.5,
+          -3.5,
+          0,
+          -1,
+          -3,
+          10,
+          -10.5,
+          0.1,
+          -0.1
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "sign of the gamma function",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "gamma",
+      "sign",
+      "gammasgn"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/hacovercosf": {
     "$schema": "math/base@v1.0",
     "base_alias": "hacovercos",
@@ -9542,7 +9883,84 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/hacovercos": {},
+  "@stdlib/math/base/special/hacovercos": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "hacovercos",
+    "alias": "hacovercos",
+    "pkg_desc": "compute the half-value coversed cosine",
+    "desc": "computes the half-value coversed cosine",
+    "short_desc": "half-value coversed cosine",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            0,
+            6.283185307179586
+          ]
+        },
+        "example_values": [
+          0,
+          0.523,
+          0.785,
+          1.047,
+          1.571,
+          2.094,
+          2.618,
+          3.142,
+          3.665,
+          4.189,
+          4.712,
+          5.236,
+          5.759,
+          6.283,
+          -0.523,
+          -1.047,
+          -1.571,
+          0.1,
+          1.5,
+          3
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "half-value coversed cosine",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "hacovercos",
+      "hacovercosin",
+      "hacovercosine",
+      "coversed",
+      "hcc",
+      "versed",
+      "cosine",
+      "sine",
+      "trig",
+      "trigonometry"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/hacoversinf": {
     "$schema": "math/base@v1.0",
     "base_alias": "hacoversin",
@@ -10506,9 +10924,233 @@
       "math.log1p"
     ]
   },
-  "@stdlib/math/base/special/log1p": {},
-  "@stdlib/math/base/special/log1pexp": {},
-  "@stdlib/math/base/special/log1pmx": {},
+  "@stdlib/math/base/special/log1p": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "log1p",
+    "alias": "log1p",
+    "pkg_desc": "evaluate the natural logarithm of 1+x",
+    "desc": "evaluates the natural logarithm of 1+x",
+    "short_desc": "natural logarithm of 1+x",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": -1,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -1,
+            100
+          ]
+        },
+        "example_values": [
+          -0.99,
+          3,
+          0.01,
+          0.25,
+          4,
+          9,
+          -0.9,
+          25,
+          36,
+          -0.5,
+          -0.25,
+          16,
+          49,
+          -0.1,
+          0,
+          0.5,
+          1,
+          2,
+          64,
+          81
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "natural logarithm of 1+x",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "ln",
+      "log1p",
+      "natural",
+      "logarithm",
+      "log"
+    ],
+    "extra_keywords": [
+      "math.log",
+      "math.log1p"
+    ]
+  },
+  "@stdlib/math/base/special/log1pexp": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "log1pexp",
+    "alias": "log1pexp",
+    "pkg_desc": "evaluate the natural logarithm of 1+exp(x)",
+    "desc": "evaluate the natural logarithm of 1+exp(x)",
+    "short_desc": "natural logarithm of 1+exp(x)",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -100,
+            100
+          ]
+        },
+        "example_values": [
+          -100,
+          4,
+          5,
+          10,
+          -10,
+          -5,
+          3,
+          20,
+          50,
+          -2,
+          -1,
+          90,
+          99,
+          -0.5,
+          0,
+          0.5,
+          1,
+          2,
+          -75,
+          100
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "natural logarithm of 1+exp(x)",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "ln",
+      "log1pexp",
+      "natural",
+      "logarithm",
+      "log"
+    ],
+    "extra_keywords": [
+      "math.log",
+      "math.log1p"
+    ]
+  },
+  "@stdlib/math/base/special/log1pmx": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "log1pmx",
+    "alias": "log1pmx",
+    "pkg_desc": "evaluate ln(1+x) - x",
+    "desc": "evaluates ln(1+x) - x",
+    "short_desc": "ln(1+x) - x",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": -1,
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -1,
+            100
+          ]
+        },
+        "example_values": [
+          -0.99,
+          1,
+          2,
+          -0.9,
+          0.25,
+          0.5,
+          -0.5,
+          10,
+          25,
+          50,
+          -0.25,
+          -0.1,
+          0,
+          0.01,
+          3,
+          4,
+          5,
+          75,
+          90,
+          100
+        ]
+      }
+    ],
+    "output_policy": "real_floating_point_and_generic",
+    "returns": {
+      "desc": "function value",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "ln",
+      "natural",
+      "logarithm",
+      "log"
+    ],
+    "extra_keywords": [
+      "math.log",
+      "math.log1p"
+    ]
+  },
   "@stdlib/math/base/special/log2": {
     "$schema": "math/base@v1.0",
     "base_alias": "log2",
@@ -11615,9 +12257,234 @@
     ],
     "extra_keywords": []
   },
-  "@stdlib/math/base/special/rcbrtf": {},
-  "@stdlib/math/base/special/rcbrt": {},
-  "@stdlib/math/base/special/riemann-zeta": {},
+  "@stdlib/math/base/special/rcbrtf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "rcbrt",
+    "alias": "rcbrtf",
+    "pkg_desc": "compute the reciprocal cube root of a single-precision floating-point number",
+    "desc": "computes the reciprocal cube root of a single-precision floating-point number",
+    "short_desc": "reciprocal cube root",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -100,
+            100
+          ]
+        },
+        "example_values": [
+          -100,
+          -64,
+          -27,
+          -8,
+          -1,
+          -0.5,
+          -0.125,
+          -0.01,
+          0.01,
+          0.125,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          8,
+          27,
+          64,
+          81,
+          100
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "reciprocal cube root",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "rcbrt",
+      "principal",
+      "cube",
+      "root",
+      "power",
+      "reciprocal",
+      "inverse"
+    ],
+    "extra_keywords": [
+      "math.cbrt"
+    ]
+  },
+  "@stdlib/math/base/special/rcbrt": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "rcbrt",
+    "alias": "rcbrt",
+    "pkg_desc": "compute the reciprocal cube root of a double-precision floating-point number",
+    "desc": "computes the reciprocal cube root of a double-precision floating-point number",
+    "short_desc": "reciprocal cube root",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -100,
+            100
+          ]
+        },
+        "example_values": [
+          -100,
+          -64,
+          -27,
+          -8,
+          -1,
+          -0.5,
+          -0.125,
+          -0.01,
+          0.01,
+          0.125,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          8,
+          27,
+          64,
+          81,
+          100
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "reciprocal cube root",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "rcbrt",
+      "principal",
+      "cube",
+      "root",
+      "power",
+      "reciprocal",
+      "inverse"
+    ],
+    "extra_keywords": [
+      "math.cbrt"
+    ]
+  },
+  "@stdlib/math/base/special/riemann-zeta": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "zeta",
+    "alias": "zeta",
+    "pkg_desc": "evaluate the Riemann zeta function as a function of a real variable `s`",
+    "desc": "evaluates the Riemann zeta function as a function of a real variable `s`",
+    "short_desc": "Riemann zeta",
+    "parameters": [
+      {
+        "name": "x",
+        "desc": "input value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        },
+        "domain": [
+          {
+            "min": "-infinity",
+            "max": "infinity"
+          }
+        ],
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            -100,
+            100
+          ]
+        },
+        "example_values": [
+          1.1,
+          -4,
+          70,
+          0.5,
+          -10,
+          5.6,
+          -4.29,
+          -3.14,
+          2.75,
+          1.76,
+          -0.5,
+          0,
+          0.15,
+          0.97,
+          -1.1,
+          20.85,
+          3.66,
+          -4.22,
+          5.56,
+          -6,
+          10.21,
+          20.05,
+          -50.25,
+          100.7
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "Riemann zeta",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "double",
+        "dtype": "float64"
+      }
+    },
+    "keywords": [
+      "zeta",
+      "riemann",
+      "euler",
+      "physics",
+      "complex analysis"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/roundf": {
     "$schema": "math/base@v1.0",
     "base_alias": "round",
