@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Concat Spreadable Symbol
+# IsConcatSpreadableSymbol
 
 > Concat spreadable [symbol][mdn-symbol] which specifies whether an array-like object should be flattened to its array elements during concatenation.
 
