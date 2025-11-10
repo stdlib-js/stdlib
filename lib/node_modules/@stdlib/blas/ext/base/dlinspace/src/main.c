@@ -73,7 +73,7 @@ void API_SUFFIX(stdlib_strided_dlinspace_ndarray)( const CBLAS_INT N, const doub
 	// Calculate the increment:
 	if ( endpoint ) {
 		M = N - 1;
-	} else{
+	} else {
 		M = N;
 	}
 	d = ( stop-start ) / M;
