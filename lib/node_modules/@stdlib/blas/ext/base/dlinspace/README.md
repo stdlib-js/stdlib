@@ -48,7 +48,7 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **start**: start of interval.
 -   **stop**: end of interval.
--   **endpoint**: boolean indicating whether to include the `stop` value when writing values to the input array.  If `true`, the input array is filled with evenly spaced values over the closed interval `[start, stop]`. If `false`, the input array is filled with evenly spaced values over the half-open interval `[start, stop)`.
+-   **endpoint**: boolean indicating whether to include the `stop` value when writing values to the input array. If `true`, the input array is filled with evenly spaced values over the closed interval `[start, stop]`. If `false`, the input array is filled with evenly spaced values over the half-open interval `[start, stop)`.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
 -   **strideX**: stride length.
 
@@ -188,7 +188,7 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **start**: `[in] double` start of interval.
 -   **stop**: `[in] double` end of interval.
--   **endpoint**: `[in] bool` boolean indicating whether to include the `stop` value when writing values to the input array.  If `true`, the input array is filled with evenly spaced values over the closed interval `[start, stop]`. If `false`, the input array is filled with evenly spaced values over the half-open interval `[start, stop)`.
+-   **endpoint**: `[in] bool` boolean indicating whether to include the `stop` value when writing values to the input array. If `true`, the input array is filled with evenly spaced values over the closed interval `[start, stop]`. If `false`, the input array is filled with evenly spaced values over the half-open interval `[start, stop)`.
 -   **X**: `[out] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length.
 
@@ -196,7 +196,9 @@ The function accepts the following arguments:
 void stdlib_strided_dlinspace( const CBLAS_INT N, const double start, const double stop, const bool endpoint, double *X, const CBLAS_INT strideX );
 ```
 
-#### stdlib_strided_dlinspace_ndarray( N, start, \*X, strideX, offsetX )
+<!-- lint disable maximum-heading-length -->
+
+#### stdlib_strided_dlinspace_ndarray( N, start, stop, endpoint, \*X, strideX, offsetX )
 
 Fills a double-precision floating-point strided array with linearly spaced values over a specified interval using alternative indexing semantics.
 
@@ -213,7 +215,7 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **start**: `[in] double` start of interval.
 -   **stop**: `[in] double` end of interval.
--   **endpoint**: `[in] bool` boolean indicating whether to include the `stop` value when writing values to the input array.  If `true`, the input array is filled with evenly spaced values over the closed interval `[start, stop]`. If `false`, the input array is filled with evenly spaced values over the half-open interval `[start, stop)`.
+-   **endpoint**: `[in] bool` boolean indicating whether to include the `stop` value when writing values to the input array. If `true`, the input array is filled with evenly spaced values over the closed interval `[start, stop]`. If `false`, the input array is filled with evenly spaced values over the half-open interval `[start, stop)`.
 -   **X**: `[out] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length.
 -   **offsetX**: `[in] CBLAS_INT` starting index.

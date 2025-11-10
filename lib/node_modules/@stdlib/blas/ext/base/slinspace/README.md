@@ -196,7 +196,9 @@ The function accepts the following arguments:
 void stdlib_strided_slinspace( const CBLAS_INT N, const float start, const float stop, const bool endpoint, float *X, const CBLAS_INT strideX );
 ```
 
-#### stdlib_strided_slinspace_ndarray( N, start, \*X, strideX, offsetX )
+<!-- lint disable maximum-heading-length -->
+
+#### stdlib_strided_slinspace_ndarray( N, start, stop, endpoint, \*X, strideX, offsetX )
 
 Fills a single-precision floating-point strided array with linearly spaced values over a specified interval using alternative indexing semantics.
 
