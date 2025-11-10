@@ -120,7 +120,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
-          node-version: 20 # 'lts/*'
+          node-version: 16 # Using Node.js 16 to match project's test matrix
         timeout-minutes: 5
 
       # Cache dependencies:
