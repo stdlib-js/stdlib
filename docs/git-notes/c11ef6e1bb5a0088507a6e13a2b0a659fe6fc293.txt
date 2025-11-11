@@ -1,0 +1,10 @@
+---
+type: amend-message
+---
+feat: add C implementation for `stats/base/dists/frechet/cdf`
+PR-URL: #4736
+Closes: #3604
+
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: Philipp Burckhardt <pburckhardt@outlook.com>
