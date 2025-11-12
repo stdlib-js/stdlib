@@ -45,6 +45,8 @@ var emptyLike = require( '@stdlib/ndarray/empty-like' );
 Creates an uninitialized [ndarray][@stdlib/ndarray/ctor] having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 ```javascript
+var getShape = require( '@stdlib/ndarray/shape' );
+var getDType = require( '@stdlib/ndarray/dtype' );
 var zeros = require( '@stdlib/ndarray/zeros' );
 
 var x = zeros( [ 2, 2 ] );
@@ -53,10 +55,10 @@ var x = zeros( [ 2, 2 ] );
 var y = emptyLike( x );
 // returns <ndarray>
 
-var sh = y.shape;
+var sh = getShape( y );
 // returns [ 2, 2 ]
 
-var dt = y.dtype;
+var dt = String( getDType( y ) );
 // returns 'float64'
 ```
 
@@ -71,12 +73,14 @@ The function supports the following `options`:
 To override either the `dtype`, `shape`, or `order`, specify the corresponding option. For example, to override the inferred [data type][@stdlib/ndarray/dtypes],
 
 ```javascript
+var getShape = require( '@stdlib/ndarray/shape' );
+var getDType = require( '@stdlib/ndarray/dtype' );
 var zeros = require( '@stdlib/ndarray/zeros' );
 
 var x = zeros( [ 2, 2 ] );
 // returns <ndarray>
 
-var dt = x.dtype;
+var dt = String( getDType( x ) );
 // returns 'float64'
 
 var y = emptyLike( x, {
@@ -84,10 +88,10 @@ var y = emptyLike( x, {
 });
 // returns <ndarray>
 
-var sh = y.shape;
+var sh = getShape( y );
 // returns [ 2, 2 ]
 
-dt = y.dtype;
+dt = String( getDType( y ) );
 // returns 'int32'
 ```
 
@@ -117,12 +121,13 @@ dt = y.dtype;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var getData = require( '@stdlib/ndarray/data-buffer' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var empty = require( '@stdlib/ndarray/empty' );
 var emptyLike = require( '@stdlib/ndarray/empty-like' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'integer_and_generic' );
 
 // Generate uninitialized arrays...
 var x;
@@ -133,7 +138,7 @@ for ( i = 0; i < dt.length; i++ ) {
         'dtype': dt[ i ]
     });
     y = emptyLike( x );
-    console.log( y.data );
+    console.log( getData( y ) );
 }
 ```
 
