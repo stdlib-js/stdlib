@@ -60,5 +60,84 @@
     "log",
     "kernel",
     "logarithm"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "kernelLog1p",
+      "alias": "kernelLog1p",
+      "pkg_desc": "evaluate a correction term for double-precision base-2 and base-10 logarithms when 1+f is in [√2/2, √2]",
+      "desc": "evaluates a correction term for double-precision base-2 and base-10 logarithms when 1+f is in [√2/2, √2]",
+      "short_desc": "correction term for base-2 and base-10 logarithms",
+      "parameters": [
+        {
+          "name": "f",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": 0.7071067811865476,
+              "max": 1.4142135623730951
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.7071067811865476,
+              1.4142135623730951
+            ]
+          },
+          "example_values": [
+            0.7071067811865476,
+            0.7856742013183861,
+            0.8642135623730951,
+            0.942752923427804,
+            1.021292284482513,
+            1.099831645537222,
+            1.178371006591931,
+            1.25691036764664,
+            1.335449728701349,
+            1.4142135623730951,
+            0.75,
+            0.85,
+            0.95,
+            1.05,
+            1.15,
+            1.25,
+            1.35,
+            1,
+            0.8,
+            1.2
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "correction term",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "log",
+        "log1p",
+        "kernel",
+        "logarithm",
+        "correction"
+      ],
+      "extra_keywords": [
+        "math.log1p",
+        "math.log2",
+        "math.log10"
+      ]
+    }
+  }
 }

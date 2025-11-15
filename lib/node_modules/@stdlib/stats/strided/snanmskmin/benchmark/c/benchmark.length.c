@@ -113,6 +113,7 @@ static double benchmark( int iterations, int len ) {
 	v = 0.0f;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
 		v = stdlib_strided_snanmskmin( len, x, 1, mask, 1 );
 		if ( v != v ) {
 			printf( "should not return NaN\n" );

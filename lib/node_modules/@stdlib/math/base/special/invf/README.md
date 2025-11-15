@@ -171,7 +171,7 @@ int main( void ) {
     int i;
     for ( i = 0; i < 4; i++ ) {
         y = stdlib_base_invf( x[ i ] );
-        printf( "inv(%f) = %f\n", x[ i ], y );
+        printf( "invf(%f) = %f\n", x[ i ], y );
     }
 }
 ```

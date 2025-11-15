@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Tests for native `Symbol.replace` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has native `Symbol.replace`
+        support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

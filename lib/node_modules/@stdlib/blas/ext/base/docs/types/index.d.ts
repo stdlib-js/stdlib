@@ -784,7 +784,7 @@ interface Namespace {
 	* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 	* var out = new Float64Array( 2 );
 	*
-	* var v = ns.dnannsum( x.length, x, 1, 0, out, 1, 0 );
+	* var v = ns.dnannsum.ndarray( x.length, x, 1, 0, out, 1, 0 );
 	* // returns <Float64Array>[ 1.0, 3 ]
 	*/
 	dnannsum: typeof dnannsum;
@@ -844,7 +844,7 @@ interface Namespace {
 	* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 	* var out = new Float64Array( 2 );
 	*
-	* var v = ns.dnannsumkbn2( x.length, x, 1, 0, out, 1, 0 );
+	* var v = ns.dnannsumkbn2.ndarray( x.length, x, 1, 0, out, 1, 0 );
 	* // returns <Float64Array>[ 1.0, 3 ]
 	*/
 	dnannsumkbn2: typeof dnannsumkbn2;
@@ -874,7 +874,7 @@ interface Namespace {
 	* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 	* var out = new Float64Array( 2 );
 	*
-	* var v = ns.dnannsumors( x.length, x, 1, 0, out, 1, 0 );
+	* var v = ns.dnannsumors.ndarray( x.length, x, 1, 0, out, 1, 0 );
 	* // returns <Float64Array>[ 1.0, 3 ]
 	*/
 	dnannsumors: typeof dnannsumors;
@@ -904,7 +904,7 @@ interface Namespace {
 	* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 	* var out = new Float64Array( 2 );
 	*
-	* var v = ns.dnannsumpw( x.length, x, 1, 0, out, 1, 0 );
+	* var v = ns.dnannsumpw.ndarray( x.length, x, 1, 0, out, 1, 0 );
 	* // returns <Float64Array>[ 1.0, 3 ]
 	*/
 	dnannsumpw: typeof dnannsumpw;
@@ -2083,7 +2083,7 @@ interface Namespace {
 	*
 	* var x = [ 1.0, 3.0, -5.0, 4.0, 3.0, -2.0, -3.0 ];
 	*
-	* var idx = ns.gfindLastIndex( x.length, x, 1, 0, isEven );
+	* var idx = ns.gfindLastIndex.ndarray( x.length, x, 1, 0, isEven );
 	* // returns 5
 	*/
 	gfindLastIndex: typeof gfindLastIndex;
@@ -2195,7 +2195,7 @@ interface Namespace {
 	* var x = [ 1.0, -2.0, NaN, 2.0 ];
 	* var out = [ 0.0, 0 ];
 	*
-	* var v = ns.gnannsumkbn( x.length, x, 1, 0, out, 1, 0 );
+	* var v = ns.gnannsumkbn.ndarray( x.length, x, 1, 0, out, 1, 0 );
 	* // returns [ 1.0, 3 ]
 	*/
 	gnannsumkbn: typeof gnannsumkbn;
@@ -2221,7 +2221,7 @@ interface Namespace {
 	* var x = [ 1.0, -2.0, NaN, 2.0 ];
 	* var out = [ 0.0, 0 ];
 	*
-	* var v = ns.gnannsumpw( x.length, x, 1, 0, out, 1, 0 );
+	* var v = ns.gnannsumpw.ndarray( x.length, x, 1, 0, out, 1, 0 );
 	* // returns [ 1.0, 3 ]
 	*/
 	gnannsumpw: typeof gnannsumpw;

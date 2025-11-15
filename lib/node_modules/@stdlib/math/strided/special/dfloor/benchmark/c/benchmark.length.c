@@ -114,11 +114,13 @@ float rand_uniformf( float a, float b ) {
 */
 static double benchmark( int iterations, int len ) {
 	double elapsed;
-	double x[ len ];
-	double y[ len ];
+	double *x;
+	double *y;
 	double t;
 	int i;
 
+	x = (double *) malloc( len * sizeof( double ) );
+	y = (double *) malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = rand_uniform( -10.0, 10.0 );
 		y[ i ] = 0.0;
@@ -136,6 +138,8 @@ static double benchmark( int iterations, int len ) {
 	if ( y[ 0 ] != y[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( y );
 	return elapsed;
 }
 

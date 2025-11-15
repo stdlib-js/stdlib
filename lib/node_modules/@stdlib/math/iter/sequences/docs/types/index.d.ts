@@ -910,7 +910,7 @@ interface Namespace {
 	* // returns 1
 	*
 	* v = iter.next().value;
-	* // returns 2
+	* // returns 1
 	*
 	* // ...
 	*/
