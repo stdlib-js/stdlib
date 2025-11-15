@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Concat Spreadable Symbol Support
+# hasIsConcatSpreadableSymbolSupport
 
 > Detect native [`Symbol.isConcatSpreadable`][mdn-is-concat-spreadable-symbol] support.
 

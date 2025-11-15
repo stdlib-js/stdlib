@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Has Instance Symbol Support
+# hasHasInstanceSymbolSupport
 
 > Detect native [`Symbol.hasInstance`][mdn-has-instance-symbol] support.
 
