@@ -1215,3 +1215,4 @@
 "Ja","invalid argument. Second argument is not broadcast compatible with the list of input ndarrays. Array shape: (%s). Desired shape: (%s).","TypeError"
 "Jb","invalid argument. Second argument must be a negative integer. Value: `%s`.","TypeError"
 "Jc","invalid argument. First argument cannot be safely cast to the output data type. Data types: [%s, %s].","TypeError"
+"Jd","invalid option. First argument cannot be safely cast to the specified data type. Input data type: %s. Option: `%s`.","TypeError"
