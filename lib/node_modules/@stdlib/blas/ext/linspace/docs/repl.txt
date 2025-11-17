@@ -1,0 +1,229 @@
+
+{{alias}}( shape, start, stop[, endpoint][, options] )
+    Returns a new ndarray filled with linearly spaced values over a specified
+    interval along one or more ndarray dimensions.
+
+    If a specified shape has a single element and the function is supposed to
+    include the end of the interval, the set of values written to an output
+    ndarray only includes the end of the interval, but not the start of the
+    interval.
+
+    Otherwise, when a specified shape has a single element and the function is
+    not supposed to include the end of the interval, the set of values written
+    to an output ndarray only includes the start of the interval, but not the
+    end of the interval.
+
+    For real-valued arrays, if the start of the interval is less than end of the
+    interval, the set of values written to an output ndarray will be written in
+    ascending order, and, if the start of the interval is greater than the end
+    of the interval, the set of written values will be in descending order.
+
+    When a specified shape contains at least two values and the function is
+    supposed to include the end of the interval, the set of values written to an
+    output ndarray is guaranteed to include the start and end interval values.
+    Beware, however, that values between the interval bounds are subject to
+    floating-point rounding errors.
+
+    When writing to a complex floating-point output array, real-valued `start`
+    and `stop` values are treated as complex numbers having a real component
+    equaling the provided value and having an imaginary component equaling zero.
+
+    When generating linearly spaced complex floating-point numbers, the real and
+    imaginary components are generated separately.
+
+    Both `start` and `stop` are cast to the data type of the output array.
+
+    Parameters
+    ----------
+    shape: Array<integer>
+        Array shape.
+
+    start: ndarray|number|Complex
+        Start of interval. May be either a number, a complex number, or an
+        ndarray having a numeric or "generic" data type. If provided an ndarray,
+        the value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a start ndarray must
+        have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a provided
+        input shape, a start ndarray must be a zero-dimensional ndarray.
+
+    stop: ndarray|number|Complex
+        End of interval. May be either a number, a complex number, or an
+        ndarray having a numeric or "generic" data type. If provided an ndarray,
+        the value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a stop ndarray must
+        have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a provided
+        input shape, a stop ndarray must be a zero-dimensional ndarray.
+
+    endpoint: ndarray|boolean (optional)
+        Boolean specifying whether to include the end of the interval when
+        writing values to the output ndarray. May be either a boolean or an
+        ndarray having a boolean or "generic" data type. If provided an ndarray,
+        the value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, an endpoint ndarray
+        must have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a provided
+        input shape, an endpoint ndarray must be a zero-dimensional ndarray.
+        Default: true.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided, the
+        function generates linearly spaced values along the last dimension.
+        Default: [-1].
+
+    options.dtype: string|DataType (optional)
+        Output array data type. If both `start` and `stop` are real-valued, the
+        output array data type may be any floating-point data type or 'generic'.
+        However, if either `start` or `stop` are complex-valued, the output
+        array type must be a complex floating-point data type or 'generic'. If
+        provided, `start` and `stop` are cast to the specified data type. If not
+        provided and both `start` and `stop` are the same type (either
+        'float64', 'complex64', or 'complex128'), the default output array data
+        type is the same type as the input values (either 'float64',
+        'complex64', or 'complex128', respectively). Otherwise, if not provided,
+        the default output array data type is 'complex128'.
+
+    options.order: string (optional)
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style). If `start`, `stop`, and `endpoint` are scalar values,
+        the default order is 'row-major'. If `start`, `stop`, and/or `endpoint`
+        arrays have the same memory layout, the default order is the same
+        layout. Otherwise, the default order is 'row-major'.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed array dimensions. If equal
+        to 'throw', an ndarray instance throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', an ndarray instance
+        normalizes negative indices and throws an error when an index exceeds
+        array dimensions. If equal to 'wrap', an ndarray instance wraps around
+        indices exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', an ndarray instance sets an index exceeding array dimensions
+        to either `0` (minimum index) or the maximum index. Default: 'throw'.
+
+    options.submode: Array<string> (optional)
+        Specifies how to handle subscripts which exceed array dimensions. If a
+        mode for a corresponding dimension is equal to 'throw', an ndarray
+        instance throws an error when a subscript exceeds array dimensions. If
+        equal to 'normalize', an ndarray instance normalizes negative
+        subscripts and throws an error when a subscript exceeds array
+        dimensions. If equal to 'wrap', an ndarray instance wraps around
+        subscripts exceeding array dimensions using modulo arithmetic. If equal
+        to 'clamp', an ndarray instance sets a subscript exceeding array
+        dimensions to either `0` (minimum index) or the maximum index. If the
+        number of modes is fewer than the number of dimensions, the function
+        recycles modes using modulo arithmetic. Default: [ options.mode ].
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 4 ], 1.0, 4.0 );
+    > {{alias:@stdlib/ndarray/to-array}}( out )
+    [ 1.0, 2.0, 3.0, 4.0 ]
+
+
+{{alias}}.assign( out, start, stop[, endpoint][, options] )
+    Fills an ndarray with linearly spaced values over a specified interval along
+    one or more ndarray dimensions.
+
+    If a provided array has a single element and the function is supposed to
+    include the end of the interval, the set of values written to an output
+    ndarray only includes the end of the interval, but not the start of the
+    interval.
+
+    Otherwise, when a provided array has a single element and the function is
+    not supposed to include the end of the interval, the set of values written
+    to an output ndarray only includes the start of the interval, but not the
+    end of the interval.
+
+    For real-valued arrays, if the start of the interval is less than end of the
+    interval, the set of values written to an output ndarray will be written in
+    ascending order, and, if the start of the interval is greater than the end
+    of the interval, the set of written values will be in descending order.
+
+    When a provided array contains at least two values and the function is
+    supposed to include the end of the interval, the set of values written to an
+    output ndarray is guaranteed to include the start and end interval values.
+    Beware, however, that values between the interval bounds are subject to
+    floating-point rounding errors.
+
+    When writing to a complex floating-point output array, real-valued `start`
+    and `stop` values are treated as complex numbers having a real component
+    equaling the provided value and having an imaginary component equaling zero.
+
+    When generating linearly spaced complex floating-point numbers, the real and
+    imaginary components are generated separately.
+
+    Both `start` and `stop` are cast to the data type of the output array.
+
+    Parameters
+    ----------
+    out: ndarray
+        Output array. Must have a numeric or "generic" data type.
+
+    start: ndarray|number|Complex
+        Start of interval. May be either a number, a complex number, or an
+        ndarray having a numeric or "generic" data type. If provided an ndarray,
+        the value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a start ndarray must
+        have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a provided
+        input array, a start ndarray must be a zero-dimensional ndarray.
+
+    stop: ndarray|number|Complex
+        End of interval. May be either a number, a complex number, or an
+        ndarray having a numeric or "generic" data type. If provided an ndarray,
+        the value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, a stop ndarray must
+        have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a provided
+        input array, a stop ndarray must be a zero-dimensional ndarray.
+
+    endpoint: ndarray|boolean (optional)
+        Boolean specifying whether to include the end of the interval when
+        writing values to the output ndarray. May be either a boolean or an
+        ndarray having a boolean or "generic" data type. If provided an ndarray,
+        the value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, an endpoint ndarray
+        must have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a provided
+        input array, an endpoint ndarray must be a zero-dimensional ndarray.
+        Default: true.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided, the
+        function generates linearly spaced values along the last dimension.
+        Default: [-1].
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 4 ] );
+    > var out = {{alias}}.assign( x, 1.0, 4.0 );
+    > {{alias:@stdlib/ndarray/to-array}}( out )
+    [ 1.0, 2.0, 3.0, 4.0 ]
+    > var bool = ( out === x )
+    true
+
+    See Also
+    --------
