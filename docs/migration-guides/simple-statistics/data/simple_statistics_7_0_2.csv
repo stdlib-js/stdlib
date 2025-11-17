@@ -61,7 +61,7 @@ chiSquaredGoodnessOfFit,@stdlib/stats/chi2gof
 epsilon,@stdlib/constants/math/float64-eps
 factorial,@stdlib/math/base/special/factorial
 gamma,@stdlib/math/base/special/gamma
-gammaln,@stdlib/math/base/special/gammaln
+absgammaln,@stdlib/math/base/special/absgammaln
 uniqueCountSorted,N/A
 extent,@stdlib/stats/base/range
 extentSorted,(planned)

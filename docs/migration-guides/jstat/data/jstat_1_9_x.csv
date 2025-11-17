@@ -224,7 +224,7 @@ betacf,(planned)
 ibetainv,@stdlib/math/base/special/betaincinv
 ibeta,@stdlib/math/base/special/betainc
 gammafn,@stdlib/math/base/special/gamma
-gammaln,@stdlib/math/base/special/gammaln
+absgammaln,@stdlib/math/base/special/absgammaln
 gammap,@stdlib/math/base/special/gammainc
 lowRegGamma,@stdlib/math/base/special/gammainc
 gammapinv,@stdlib/math/base/special/gammaincinv
