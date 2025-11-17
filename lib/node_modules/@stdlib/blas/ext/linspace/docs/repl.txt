@@ -87,8 +87,9 @@
         provided and both `start` and `stop` are the same type (either
         'float64', 'complex64', or 'complex128'), the default output array data
         type is the same type as the input values (either 'float64',
-        'complex64', or 'complex128', respectively). Otherwise, if not provided,
-        the default output array data type is 'complex128'.
+        'complex64', or 'complex128', respectively). Otherwise, if a data type
+        is not provided and `start` and `stop` have different types, the default
+        output array data type is determined according to type promotion rules.
 
     options.order: string (optional)
         Specifies whether an array is row-major (C-style) or column-major
