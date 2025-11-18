@@ -59,7 +59,7 @@ The [coefficient of variation][coefficient-of-variation] (also known as **relati
 <!-- <equation class="equation" label="eq:coefficient_of_variation" align="center" raw="c_v = \frac{s}{\bar{x}}" alt="Equation for the coefficient of variation (CV)."> -->
 
 <div class="equation" align="center" data-raw-text="c_v = \frac{s}{\bar{x}}" data-equation="eq:coefficient_of_variation">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@eed6b690d7c37249b04544b3f5fd36ad8eb3187f/lib/node_modules/@stdlib/stats/incr/nanmcv/docs/img/equation_coefficient_of_variation.svg"Equation for the coefficient of variation (CV).">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@eed6b690d7c37249b04544b3f5fd36ad8eb3187f/lib/node_modules/@stdlib/stats/incr/nanmcv/docs/img/equation_coefficient_of_variation.svg" alt="Equation for the coefficient of variation (CV).">
     <br>
 </div>
 
