@@ -5089,6 +5089,141 @@
       "math.cbrt"
     ]
   },
+  "@stdlib/math/base/special/ccis": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "cis",
+    "alias": "ccis",
+    "pkg_desc": "compute the cis function for a double-precision complex floating-point number",
+    "desc": "computes the cis function for a double-precision complex floating-point number",
+    "short_desc": "cis function",
+    "parameters": [
+      {
+        "name": "z",
+        "desc": "input value",
+        "type": {
+          "javascript": "Complex128",
+          "jsdoc": "Complex128",
+          "c": "stdlib_complex128_t",
+          "dtype": "complex128"
+        },
+        "domain": null,
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            [
+              -50,
+              50
+            ],
+            [
+              -50,
+              50
+            ]
+          ]
+        },
+        "example_values": [
+          {
+            "re": 0,
+            "im": 0
+          },
+          {
+            "re": 1,
+            "im": 0
+          },
+          {
+            "re": -3.14,
+            "im": -1.5
+          },
+          {
+            "re": -1.5,
+            "im": 2.5
+          },
+          {
+            "re": 2.5,
+            "im": -1.5
+          },
+          {
+            "re": 0,
+            "im": -3.7
+          },
+          {
+            "re": 4.2,
+            "im": 0
+          },
+          {
+            "re": 21.2,
+            "im": 3
+          },
+          {
+            "re": 11,
+            "im": -5
+          },
+          {
+            "re": 33,
+            "im": -14.67
+          },
+          {
+            "re": -42,
+            "im": 9.3
+          },
+          {
+            "re": -3,
+            "im": 3
+          },
+          {
+            "re": 73,
+            "im": 31
+          },
+          {
+            "re": -2.45,
+            "im": 1.23
+          },
+          {
+            "re": 2.45,
+            "im": -1.23
+          },
+          {
+            "re": 1.77,
+            "im": -3.14
+          },
+          {
+            "re": -7.5,
+            "im": 8.2
+          },
+          {
+            "re": 5.5,
+            "im": -12.3
+          },
+          {
+            "re": -15.8,
+            "im": 0.4
+          },
+          {
+            "re": 0.99,
+            "im": -0.99
+          }
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "result",
+      "type": {
+        "javascript": "Complex128",
+        "jsdoc": "Complex128",
+        "c": "stdlib_complex128_t",
+        "dtype": "complex128"
+      }
+    },
+    "keywords": [
+      "cis",
+      "arithmetic",
+      "complex",
+      "exponential",
+      "euler"
+    ],
+    "extra_keywords": [
+      "exp"
+    ]
+  },
   "@stdlib/number/int8/base/identity": {},
   "@stdlib/number/int16/base/identity": {},
   "@stdlib/number/int32/base/identity": {},
@@ -6998,6 +7133,8 @@
       "math.sin"
     ]
   },
+  "@stdlib/math/base/special/cphasef": {},
+  "@stdlib/math/base/special/cphase": {},
   "@stdlib/math/base/special/cscf": {
     "$schema": "math/base@v1.0",
     "base_alias": "csc",
