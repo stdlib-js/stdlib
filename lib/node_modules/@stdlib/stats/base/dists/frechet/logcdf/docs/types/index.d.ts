@@ -122,7 +122,7 @@ interface LogCDF {
 * // returns ~-0.216
 *
 * y = mylogcdf( 7.0 );
-* // returns ~-3.381
+* // returns ~-3.375
 */
 declare var logcdf: LogCDF;
 
