@@ -42,9 +42,6 @@ import { Collection } from '@stdlib/types/array';
 * sh = complementShape( [ 3, 2 ], [ 0 ] );
 * // returns [ 2 ]
 *
-* sh = complementShape( [ 3 ], [ 0 ] );
-* // returns []
-*
 * sh = complementShape( [], [] );
 * // returns []
 */
