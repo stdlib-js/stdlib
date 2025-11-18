@@ -17,11 +17,12 @@
 */
 
 #include "stdlib/math/base/special/binomcoef.h"
+#include "stdlib/math/base/assert/is_integer.h"
+#include "stdlib/math/base/assert/is_odd.h"
 #include "stdlib/math/base/special/floor.h"
 #include "stdlib/math/base/special/gcd.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/max_safe_integer.h"
-#include <stdint.h>
 
 /**
 * Computes the binomial coefficient of two integers.
@@ -31,19 +32,23 @@
 * @return     function value
 *
 * @example
-* double out = stdlib_base_binomcoef( 8, 2 );
+* double out = stdlib_base_binomcoef( 8.0, 2.0 );
 * // returns 28.0
 */
-double stdlib_base_binomcoef( const int64_t n, const int64_t k ) {
+double stdlib_base_binomcoef( const double n, const double k ) {
 	double res;
 	double sgn;
-	int64_t nc;
-	int64_t kc;
-	int64_t d;
+	double nc;
+	double kc;
+	double d;
 	double b;
 	double c;
 	double g;
 	double s;
+
+	if ( !stdlib_base_is_integer( n ) || !stdlib_base_is_integer( k ) ) {
+		return 0.0 / 0.0; // NaN
+	}
 
 	if ( k < 0 ) {
 		return 0.0;
@@ -52,7 +57,7 @@ double stdlib_base_binomcoef( const int64_t n, const int64_t k ) {
 	nc = n;
 	if ( nc < 0 ) {
 		nc = -nc + k - 1;
-		if ( k & 1 ) {
+		if ( stdlib_base_is_odd( k ) ) {
 			sgn *= -1.0;
 		}
 	}
@@ -63,7 +68,7 @@ double stdlib_base_binomcoef( const int64_t n, const int64_t k ) {
 		return sgn;
 	}
 	if ( k == 1 || k == nc - 1 ) {
-		return sgn * (double)nc;
+		return sgn * nc;
 	}
 
 	// Minimize the number of computed terms by leveraging symmetry:
@@ -71,11 +76,11 @@ double stdlib_base_binomcoef( const int64_t n, const int64_t k ) {
 	if ( nc - kc < kc ) {
 		kc = nc - kc;
 	}
-	s = stdlib_base_floor( (double)STDLIB_CONSTANT_FLOAT64_MAX_SAFE_INTEGER / (double)nc );
+	s = stdlib_base_floor( (double)STDLIB_CONSTANT_FLOAT64_MAX_SAFE_INTEGER / nc );
 
 	// Use a standard algorithm for computing the binomial coefficient
 	res = 1.0;
-	for ( d = 1; d <= kc; d++ ) {
+	for ( d = 1.0; d <= kc; d++ ) {
 		// Check for potential overflow...
 		if ( res > s ) {
 			break;

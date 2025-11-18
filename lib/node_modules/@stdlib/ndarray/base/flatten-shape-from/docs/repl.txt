@@ -1,0 +1,59 @@
+
+{{alias}}( shape, dim )
+    Flattens a shape starting from a specified dimension.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    dim: integer
+        Dimension to start flattening from. If provided an integer less than
+        zero, the dimension index is resolved relative to the last dimension,
+        with the last dimension corresponding to the value `-1`.
+
+    Returns
+    -------
+    out: Array
+        Flattened shape.
+
+    Examples
+    --------
+    > var sh = [ 3, 3, 2 ];
+    > var out = {{alias}}( sh, 1 )
+    [ 3, 6 ]
+
+
+{{alias}}.assign( shape, dim, out )
+    Flattens a shape starting from a specified dimension and assigns results to
+    a provided output array.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    dim: integer
+        Dimension to start flattening from. If provided an integer less than
+        zero, the dimension index is resolved relative to the last dimension,
+        with the last dimension corresponding to the value `-1`.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var sh = [ 2, 1, 10 ];
+    > var out = [ 0 ];
+    > var s = {{alias}}.assign( sh, 0, out )
+    [ 20 ]
+    > var bool = ( s === out )
+    true
+
+    See Also
+    --------

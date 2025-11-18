@@ -28,7 +28,7 @@ static const double CONST_180_DIV_PI = 57.29577951308232;
 * @return     output value (in degrees)
 *
 * @example
-* double x = 3.141592653589793/2.0
+* double x = 3.141592653589793/2.0;
 *
 * double out = stdlib_base_rad2deg( x );
 * // returns 90.0

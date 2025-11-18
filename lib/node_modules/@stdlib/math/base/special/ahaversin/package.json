@@ -80,5 +80,97 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "ahaversin",
+      "alias": "ahaversin",
+      "pkg_desc": "compute the inverse half-value versed sine of a double-precision floating-point number (in radians)",
+      "desc": "computes the inverse half-value versed sine of a double-precision floating-point number (in radians)",
+      "short_desc": "inverse half-value versed sine",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in radians)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": 1
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0,
+              1
+            ]
+          },
+          "example_values": [
+            0,
+            0.05,
+            0.1,
+            0.15,
+            0.2,
+            0.25,
+            0.3,
+            0.35,
+            0.4,
+            0.45,
+            0.5,
+            0.55,
+            0.6,
+            0.65,
+            0.7,
+            0.75,
+            0.8,
+            0.85,
+            0.9,
+            0.95
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "inverse half-value versed sine",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "ahaversin",
+        "ahaversine",
+        "arcversin",
+        "arcversine",
+        "versed sine",
+        "ahaversinus",
+        "haversine",
+        "haversin",
+        "archav",
+        "invhav",
+        "ahav",
+        "ahvs",
+        "ahv",
+        "hav",
+        "arc",
+        "versed",
+        "half-value",
+        "sine",
+        "sin",
+        "asin"
+      ],
+      "extra_keywords": [
+        "math.asin"
+      ]
+    }
+  }
 }

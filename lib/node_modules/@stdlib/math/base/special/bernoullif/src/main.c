@@ -16,10 +16,13 @@
 * limitations under the License.
 */
 
+#include "stdlib/math/base/assert/is_nonnegative_integerf.h"
+#include "stdlib/math/base/assert/is_oddf.h"
 #include "stdlib/math/base/special/bernoullif.h"
 #include "stdlib/constants/float32/ninf.h"
 #include "stdlib/constants/float32/pinf.h"
 #include <stdint.h>
+#include <stdlib.h>
 
 static const float bernoulli_value[ 33 ] = {
 	1.0f,
@@ -66,21 +69,21 @@ static const int32_t MAX_BERNOULLI = 64;
 * @return     output value
 *
 * @example
-* float out = stdlib_base_bernoullif( 0 );
+* float out = stdlib_base_bernoullif( 0.0f );
 * // returns 1.0f
 */
-float stdlib_base_bernoullif( const int32_t n ) {
-	if ( n < 0 ) {
+float stdlib_base_bernoullif( const float n ) {
+	if ( !stdlib_base_is_nonnegative_integerf( n ) ) {
 		return 0.0f / 0.0f; // NaN
 	}
-	if ( n == 1 ) {
+	if ( n == 1.0f ) {
 		return 0.5f;
 	}
-	if ( n & 1 ) {
+	if ( stdlib_base_is_oddf( n ) ) {
 		return 0.0f;
 	}
 	if ( n > MAX_BERNOULLI ) {
-		return ( ( n / 2 ) & 1 ) ? STDLIB_CONSTANT_FLOAT32_PINF : STDLIB_CONSTANT_FLOAT32_NINF;
+		return ( stdlib_base_is_oddf( n/2.0f ) ) ? STDLIB_CONSTANT_FLOAT32_PINF : STDLIB_CONSTANT_FLOAT32_NINF;
 	}
-	return bernoulli_value[ n / 2 ];
+	return bernoulli_value[ (size_t)( n / 2.0f ) ];
 }

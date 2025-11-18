@@ -159,7 +159,7 @@ logEachMap( 'h(%d,%d) = %0.4f', x, y, hypot );
 ### Usage
 
 ```c
-#include "stdlib/math/base/special/hypot.h
+#include "stdlib/math/base/special/hypot.h"
 ```
 
 #### stdlib_base_hypot( x, y )

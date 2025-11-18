@@ -113,7 +113,7 @@ declare class ResultsStruct {
 	ci: Float64Array;
 
 	/**
-	* Value of the mean under the null hypothesis
+	* Value of the mean under the null hypothesis.
 	*/
 	nullValue: number;
 

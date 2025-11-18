@@ -1,0 +1,46 @@
+
+{{alias}}( a, b, maxULP )
+    Tests if two arguments are approximately equal within a specified number of
+    ULPs (units in the last place).
+
+    The function returns `false` if either input value is `NaN` or in the case
+    of complex numbers, if either the real or imaginary component is `NaN`.
+
+    The function does not distinguish between `-0` and `+0`, treating them as
+    equal.
+
+    Parameters
+    ----------
+    a: any
+        First input value.
+
+    b: any
+        Second input value.
+
+    maxULP: integer
+        Maximum allowed ULP difference.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arguments are approximately equal within
+        a specified number of ULPs.
+
+    Examples
+    --------
+    > var bool = {{alias}}( true, true, 0 )
+    true
+    > bool = {{alias}}( 1+{{alias:@stdlib/constants/float64/eps}}, 1, 1 )
+    true
+    > bool = {{alias}}( {}, {}, 1 )
+    false
+    > bool = {{alias}}( 0.0, -0.0, 0 )
+    true
+    > bool = {{alias}}( NaN, 1.0, 1 )
+    false
+    > bool = {{alias}}( NaN, NaN, 0 )
+    false
+
+    See Also
+    --------
+

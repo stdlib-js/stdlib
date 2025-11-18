@@ -25,8 +25,6 @@
 * @returns nearest single-precision floating-point number
 *
 * @example
-* var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
-*
 * var y = float64ToFloat32( 1.337 );
 * // returns 1.3370000123977661
 */
