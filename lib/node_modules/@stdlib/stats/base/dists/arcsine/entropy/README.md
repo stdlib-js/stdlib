@@ -208,7 +208,7 @@ int main( void ) {
 
     for ( i = 0; i < 25; i++ ) {
         a = random_uniform( 0.0, 20.0 );
-        b = random_uniform( 20.0, a );
+        b = random_uniform( a, a+20.0 );
         y = stdlib_base_dists_arcsine_entropy( a, b );
         printf( "x: %lf, a: %lf, b: %lf, h(X;a,b): %lf\n", a, b, y );
     }

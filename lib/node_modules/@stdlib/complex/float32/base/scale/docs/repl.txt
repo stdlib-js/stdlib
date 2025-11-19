@@ -1,0 +1,110 @@
+
+{{alias}}( alpha, c )
+    Scales a single-precision complex floating-point number by a real-valued
+    single-precision floating-point scalar constant.
+
+    Parameters
+    ----------
+    alpha: number
+        Scalar constant.
+
+    c: Complex64
+        Complex number.
+
+    Returns
+    -------
+    out: Complex64
+        Result.
+
+    Examples
+    --------
+    > var c = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, 3.0 )
+    <Complex64>
+    > var out = {{alias}}( 5.0, c )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( out )
+    25.0
+    > var im = {{alias:@stdlib/complex/float32/imag}}( out )
+    15.0
+
+
+{{alias}}.assign( alpha, re, im, out, strideOut, offsetOut )
+    Scales a single-precision complex floating-point number by a real-valued
+    single-precision floating-point scalar constant and assigns results to a
+    provided output array.
+
+    Parameters
+    ----------
+    alpha: number
+        Scalar constant.
+
+    re: number
+        Real component of the complex number.
+
+    im: number
+        Imaginary component of the complex number.
+
+    out: ArrayLikeObject
+        Output array.
+
+    strideOut: integer
+        Stride length.
+
+    offsetOut: integer
+        Starting index.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float32}}( 2 );
+    > {{alias}}.assign( 5.0, 5.0, 3.0, out, 1, 0 )
+    <Float32Array>[ 25.0, 15.0 ]
+
+
+{{alias}}.strided( alpha, c, sc, oc, out, so, oo )
+    Scales a single-precision complex floating-point number stored in a real-
+    valued strided array view by a real-valued single-precision floating-point
+    scalar constant and assigns results to a provided strided output array.
+
+    Parameters
+    ----------
+    alpha: number
+        Scalar constant.
+
+    c: ArrayLikeObject
+        Complex number view.
+
+    sc: integer
+        Stride length for `c`.
+
+    oc: integer
+        Starting index for `c`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Stride length for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var c = new {{alias:@stdlib/array/float32}}( [ 5.0, 3.0 ] );
+    > var out = new {{alias:@stdlib/array/float32}}( 2 );
+    > {{alias}}.strided( 5.0, c, 1, 0, out, 1, 0 )
+    <Float32Array>[ 25.0, 15.0 ]
+
+    See Also
+    --------
+

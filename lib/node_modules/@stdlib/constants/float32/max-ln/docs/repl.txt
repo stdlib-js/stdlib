@@ -1,0 +1,11 @@
+
+{{alias}}
+    Natural logarithm of the maximum single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    88.72283935546875
+
+    See Also
+    --------

@@ -65,7 +65,7 @@ interface EvalRational {
 	* var P = new Float32Array( [ -6.0, -5.0, 4.0, 2.0 ] );
 	*
 	* // 0.5x^1 + 3x^0 => degree 2
-	* var Q = new Float32Array( [ 3.0, 0.5, 0.0, 0.0 ]; // zero-padde )d
+	* var Q = new Float32Array( [ 3.0, 0.5, 0.0, 0.0 ] ); // zero-padded
 	*
 	* var v = evalrationalf( P, Q, 6.0 ); // => ( -6*6^0 - 5*6^1 + 4*6^2 + 2*6^3 ) / ( 3*6^0 + 0.5*6^1 + 0*6^2 + 0*6^3 ) = (-6-30+144+432)/(3+3)
 	* // returns ~90.0

@@ -19,5 +19,4 @@
 #include "stdlib/math/base/special/sinh.h"
 #include "stdlib/math/base/napi/unary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_sinh )

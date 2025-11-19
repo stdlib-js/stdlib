@@ -1,11 +1,11 @@
 
 {{alias}}()
-    Tests for native `toStringTag` support.
+    Tests for native `Symbol.toStringTag` support.
 
     Returns
     -------
     bool: boolean
-        Boolean indicating if an environment has `toStringTag` support.
+        Boolean indicating if an environment has `Symbol.toStringTag` support.
 
     Examples
     --------
