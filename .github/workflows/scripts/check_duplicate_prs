@@ -1,0 +1,353 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to identify potentially duplicate pull requests based on the issues they resolve.
+#
+# Usage: check_duplicate_prs
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+
+# shellcheck disable=SC2317
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# GitHub API base URL:
+github_api_url="https://api.github.com"
+
+# Repository owner and name:
+repo_owner="stdlib-js"
+repo_name="stdlib"
+
+# Label to add/remove for duplicate PRs:
+duplicate_label="Potential Duplicate"
+
+# Debug mode controlled by environment variable (defaults to false if not set):
+debug="${DEBUG:-false}"
+
+# Configure retries for API calls:
+max_retries=3
+retry_delay=2
+
+
+# FUNCTIONS #
+
+# Debug logging function.
+#
+# $1 - debug message
+debug_log() {
+	# Only print debug messages if DEBUG environment variable is set to "true":
+	if [ "$debug" = true ]; then
+		echo "[DEBUG] $1" >&2
+	fi
+}
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit "$1"
+}
+
+# Prints a success message.
+print_success() {
+	echo 'Success!' >&2
+}
+
+# Performs a GitHub API request.
+#
+# $1 - HTTP method (GET, POST, PATCH, etc.)
+# $2 - API endpoint
+# $3 - data for POST/PATCH requests
+github_api() {
+	local method="$1"
+	local endpoint="$2"
+	local data="$3"
+	local retry_count=0
+	local response=""
+	local status_code
+	local success=false
+
+	# Initialize an array to hold curl headers:
+	local headers=()
+
+	# If GITHUB_TOKEN is set, add the Authorization header:
+	if [ -n "${GITHUB_TOKEN}" ]; then
+		headers+=("-H" "Authorization: token ${GITHUB_TOKEN}")
+	fi
+
+	debug_log "Making API request: ${method} ${endpoint}"
+
+	# For POST/PATCH requests, always set the Content-Type header:
+	if [ "$method" != "GET" ]; then
+		headers+=("-H" "Content-Type: application/json")
+	fi
+
+	# Add retry logic...
+	while [ $retry_count -lt $max_retries ] && [ "$success" = false ]; do
+		if [ $retry_count -gt 0 ]; then
+			echo "Retrying request (attempt $((retry_count+1))/${max_retries})..."
+			sleep $retry_delay
+		fi
+
+		# Make the API request:
+		if [ -n "${data}" ]; then
+			response=$(curl -s -w "%{http_code}" -X "${method}" "${headers[@]}" -d "${data}" "${github_api_url}${endpoint}")
+		else
+			response=$(curl -s -w "%{http_code}" -X "${method}" "${headers[@]}" "${github_api_url}${endpoint}")
+		fi
+
+		# Extract status code (last 3 digits) and actual response (everything before):
+		status_code="${response: -3}"
+		response="${response:0:${#response}-3}"
+
+		debug_log "Status code: $status_code"
+
+		# Check if we got a successful response:
+		if [[ $status_code -ge 200 && $status_code -lt 300 ]]; then
+			success=true
+		else
+			echo "API request failed with status $status_code: $response" >&2
+			retry_count=$((retry_count+1))
+		fi
+	done
+
+	if [ "$success" = false ]; then
+		echo "Failed to complete API request after $max_retries attempts" >&2
+		return 1
+	fi
+
+	# Validate that response is valid JSON if expected:
+	if ! echo "$response" | jq -e '.' > /dev/null 2>&1; then
+		echo "Warning: Response is not valid JSON: ${response}" >&2
+		# Return empty JSON object as fallback:
+		echo "{}"
+		return 0
+	fi
+
+	# Return the actual response data (without status code):
+	echo "$response"
+	return 0
+}
+
+# Extracts issue numbers resolved/closed in PRs for stdlib-js/stdlib.
+#
+# $1 - PR body text
+extract_resolved_issues() {
+	local body="$1"
+
+	debug_log "Extracting resolved issues from PR body of length ${#body} chars"
+
+	# Handle empty body case:
+	if [ -z "$body" ]; then
+		debug_log "PR body is empty, no issues to extract"
+		return 0
+	fi
+
+	local issues
+	issues=$(echo "$body" | grep -Eio "(resolves|closes|close|fix|fixes|fixed|resolve)[[:space:]]*(#[0-9]+|https?://github\.com/${repo_owner}/${repo_name}/issues/[0-9]+)" |
+		grep -Eo "([0-9]+)$" | sort -u)
+
+	debug_log "Extracted issues: $issues"
+	echo "$issues"
+}
+
+# Removes a label from a PR.
+#
+# $1 - PR number
+# $2 - label name
+remove_label() {
+	local pr_number="$1"
+	local label="$2"
+
+	# URL encode the label name by replacing spaces with %20:
+	local encoded_label="${label// /%20}"
+
+	debug_log "Removing label '${label}' from PR #${pr_number}"
+	github_api "DELETE" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/labels/${encoded_label}"
+}
+
+# Main execution sequence.
+main() {
+	echo "Fetching open pull requests..."
+
+	# Get all open PRs with pagination...
+	open_prs="[]"
+	page=1
+
+	while true; do
+		# Fetch current page of PRs:
+		debug_log "Fetching page $page of PRs"
+		if ! page_data=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/pulls?state=open&per_page=100&page=${page}"); then
+			echo "Error fetching PRs on page $page, aborting" >&2
+			exit 1
+		fi
+
+		# Check if we got any results:
+		page_count=$(echo "$page_data" | jq length)
+		debug_log "Got $page_count PRs on page $page"
+
+		if [ "$page_count" -eq 0 ]; then
+			# No more results, break the loop:
+			debug_log "No more PRs, breaking pagination loop"
+			break
+		fi
+
+		# Merge results with our accumulated results:
+		open_prs=$(echo "$open_prs" "$page_data" | jq -s '.[0] + .[1]')
+
+		# Move to next page:
+		page=$((page + 1))
+	done
+
+	# Check if we found any PRs:
+	total_prs=$(echo "$open_prs" | jq length)
+	if [ "$total_prs" -eq 0 ]; then
+		echo "No open pull requests found."
+		print_success
+		exit 0
+	fi
+
+	echo "Found ${total_prs} open pull requests."
+
+	# Create arrays to store mappings and track labeled PRs:
+	declare -a issue_prs_keys
+	declare -a issue_prs_values
+	declare -a labeled_prs_list
+
+	# Get all issues with the duplicate label in one API call:
+	echo "Fetching PRs with duplicate label..."
+	encoded_label=${duplicate_label// /%20}
+	labeled_prs_data=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/issues?labels=${encoded_label}&state=open&per_page=100")
+
+	if ! echo "$labeled_prs_data" | jq -e 'if type=="array" then true else false end' > /dev/null 2>&1; then
+		echo "Warning: Invalid response when fetching labeled PRs: ${labeled_prs_data}" >&2
+		debug_log "Full labeled PRs response: $labeled_prs_data"
+	elif [ -n "$labeled_prs_data" ]; then
+		while IFS= read -r labeled_pr; do
+			pr_number=$(echo "$labeled_pr" | jq -r '.number')
+			labeled_prs_list+=("$pr_number")
+			debug_log "Found PR #$pr_number with duplicate label"
+		done < <(echo "$labeled_prs_data" | jq -c '.[]')
+	fi
+	echo "Found ${#labeled_prs_list[@]} PRs with duplicate label"
+
+	# Process each PR to build issue mappings...
+	echo "Processing PRs for issue references..."
+	debug_log "Starting to process $total_prs PRs for issue references"
+
+	# Process PRs one by one...
+	processed_count=0
+
+	for ((i=0; i<total_prs; i++)); do
+		pr=$(echo "$open_prs" | jq -c ".[$i]")
+
+		if [ -z "$pr" ] || [ "$pr" = "null" ]; then
+			debug_log "Warning: Empty PR data at index $i"
+			continue
+		fi
+
+		pr_number=$(echo "$pr" | jq -r '.number')
+		if [ -z "$pr_number" ] || [ "$pr_number" = "null" ]; then
+			debug_log "Warning: Could not extract PR number"
+			continue
+		fi
+
+		debug_log "Processing PR #$pr_number"
+		pr_body=$(echo "$pr" | jq -r '.body // ""')
+		resolved_issues=$(extract_resolved_issues "$pr_body")
+
+		processed_count=$((processed_count + 1))
+		if [ $((processed_count % 50)) -eq 0 ]; then
+			echo "Processed ${processed_count} PRs..."
+		fi
+
+		for issue in $resolved_issues; do
+			debug_log "PR #$pr_number references issue #$issue"
+			# Find existing issue index:
+			index=-1
+			for j in "${!issue_prs_keys[@]}"; do
+				if [ "${issue_prs_keys[$j]}" = "$issue" ]; then
+					index=$j
+					break
+				fi
+			done
+			if [ "$index" -eq -1 ]; then
+				debug_log "Creating new entry for issue #$issue with PR #$pr_number"
+				issue_prs_keys+=("$issue")
+				issue_prs_values+=("$pr_number")
+			else
+				debug_log "Adding PR #$pr_number to existing issue #$issue"
+				issue_prs_values[index]="${issue_prs_values[index]} $pr_number"
+			fi
+		done
+	done
+
+	debug_log "Finished processing all PRs for issue references"
+	debug_log "Found ${#issue_prs_keys[@]} unique issues referenced in PRs"
+
+	# Process the mappings to find duplicates...
+	declare -a should_be_labeled_list
+
+	for i in "${!issue_prs_keys[@]}"; do
+		read -r -a prs <<< "${issue_prs_values[$i]}"
+		if [ ${#prs[@]} -gt 1 ]; then
+			debug_log "Issue #${issue_prs_keys[$i]} has ${#prs[@]} PRs: ${prs[*]}"
+			for pr in "${prs[@]}"; do
+				should_be_labeled_list+=("$pr")
+			done
+		fi
+	done
+
+	debug_log "PRs that should have label: ${should_be_labeled_list[*]:-none}"
+	debug_log "PRs that currently have label: ${labeled_prs_list[*]:-none}"
+
+	for pr in "${labeled_prs_list[@]}"; do
+		echo "Checking if PR #${pr} should still have label..."
+		if ! printf '%s\n' "${should_be_labeled_list[@]}" | grep -q "^${pr}$"; then
+			echo "Removing duplicate label from PR #${pr}..."
+			remove_label "$pr" "$duplicate_label"
+		else
+			debug_log "PR #${pr} should keep its label"
+		fi
+	done
+
+	for pr in "${should_be_labeled_list[@]}"; do
+		echo "Checking if PR #${pr} needs label..."
+		if ! printf '%s\n' "${labeled_prs_list[@]}" | grep -q "^${pr}$"; then
+			echo "Adding duplicate label to PR #${pr}..."
+			github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${pr}/labels" \
+				"{\"labels\":[\"${duplicate_label}\"]}"
+		else
+			debug_log "PR #${pr} already has label, skipping..."
+		fi
+	done
+
+	debug_log "Script completed successfully"
+	print_success
+	exit 0
+}
+
+# Run main:
+main

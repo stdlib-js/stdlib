@@ -19,5 +19,4 @@
 #include "stdlib/math/base/special/roundn.h"
 #include "stdlib/math/base/napi/binary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DI_D( stdlib_base_roundn )

@@ -24,7 +24,7 @@ limitations under the License.
 
 <section class="intro">
 
-The [Jacobi elliptic functions][jacobi-elliptic] may be defined as the inverse of the [incomplete elliptic integral of the first kind][incomplete-elliptic]. Accordingly, they compute the value `φ` which satisfies the equation 
+The [Jacobi elliptic functions][jacobi-elliptic] may be defined as the inverse of the [incomplete elliptic integral of the first kind][incomplete-elliptic]. Accordingly, they compute the value `φ` which satisfies the equation
 
 <!-- <equation class="equation" label="eq:incomplete_elliptic_integral_first_kind" align="center" raw="u=\int_{0}^{\varphi}{\frac {\mathrm{d} \theta }{\sqrt {1-m\sin^{2}\theta }}}" alt="Incomplete elliptic integral of the first kind"> -->
 
@@ -165,6 +165,105 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/ellipj.h"
+```
+
+#### stdlib_base_ellipj( x, m, &sn, &cn, &dn, &am )
+
+Computes the [Jacobi elliptic functions][jacobi-elliptic] functions `sn`, `cn`, and `dn`, and the Jacobi amplitude `am`.
+
+```c
+double sn;
+double cn;
+double dn;
+double am;
+
+stdlib_base_ellipj( 0.3, 0.5, &sn, &cn, &dn, &am );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **m**: `[in] double` modulus `m`, equivalent to `k²`.
+-   **sn**: `[out] double*` destination for the sine amplitude.
+-   **cn**: `[out] double*` destination for the cosine amplitude.
+-   **dn**: `[out] double*` destination for the delta amplitude.
+-   **am**: `[out] double*` destination for the Jacobi amplitude.
+
+```c
+void stdlib_base_ellipj( const double u, const double m, double* sn, double* cn, double* dn, double* am );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/ellipj.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void ) {
+    double sn;
+    double cn;
+    double dn;
+    double am;
+    double x;
+    int i;
+
+    for ( i = 0; i < 100; i++ ) {
+        x = 2.0 * ( (double)rand() / (double)RAND_MAX );
+        stdlib_base_ellipj( x, 0.7, &sn, &cn, &dn, &am );
+        printf( "x: %lf, m: %lf => sn: %lf, cn: %lf, dn: %lf, am: %lf\n", x, 0.7, sn, cn, dn, am );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 * * *
 

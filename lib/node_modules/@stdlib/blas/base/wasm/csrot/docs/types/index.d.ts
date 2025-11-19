@@ -337,32 +337,14 @@ interface Routine extends ModuleWrapper {
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
-	* var cx = new Complex64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0 ] );
-	* var cy = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+	* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* // Perform operation:
 	* csrot.main( cx.length, cx, 1, cy, 1, 0.8, 0.6 );
-	*
-	* var v = cx.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( v );
-	* // returns ~-0.2
-	*
-	* var im = imagf( v );
-	* // returns ~-0.4
-	*
-	* v = cy.get( 0 );
-	* // returns <Complex64>
-	*
-	* re = realf( v );
-	* // returns ~1.4
-	*
-	* im = imagf( v );
-	* // returns ~2.8
+	* // cx => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4 ]
+	* // cy => <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8 ]
 	*/
 	main( N: number, cx: Complex64Array, strideX: number, cy: Complex64Array, strideY: number, c: number, s: number ): Complex64Array;
 
@@ -380,32 +362,14 @@ interface Routine extends ModuleWrapper {
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
-	* var cx = new Complex64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0 ] );
-	* var cy = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+	* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* // Perform operation:
 	* csrot.ndarray( cx.length, cx, 1, 0, cy, 1, 0, 0.8, 0.6 );
-	*
-	* var v = cx.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( v );
-	* // returns ~-0.2
-	*
-	* var im = imagf( v );
-	* // returns ~-0.4
-	*
-	* v = cy.get( 0 );
-	* // returns <Complex64>
-	*
-	* re = realf( v );
-	* // returns ~1.4
-	*
-	* im = imagf( v );
-	* // returns ~2.8
+	* // cx => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4 ]
+	* // cy => <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8 ]
 	*/
 	ndarray( N: number, cx: Complex64Array, strideX: number, offsetX: number, cy: Complex64Array, strideY: number, offsetY: number, c: number, s: number ): Complex64Array;
 
@@ -492,61 +456,25 @@ interface Routine extends ModuleWrapper {
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
-* var cx = new Complex64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0 ] );
-* var cy = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * // Perform operation:
 * csrot.main( cx.length, cx, 1, cy, 1, 0.8, 0.6 );
-*
-* var v = cx.get( 0 );
-* // returns <Complex64>
-*
-* var re = realf( v );
-* // returns ~-0.2
-*
-* var im = imagf( v );
-* // returns ~-0.4
-*
-* v = cy.get( 0 );
-* // returns <Complex64>
-*
-* re = realf( v );
-* // returns ~1.4
-*
-* im = imagf( v );
-* // returns ~2.8
+* // cx => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4 ]
+* // cy => <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8 ]
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
-* var cx = new Complex64Array( [ -1.0, -2.0, -3.0, -4.0, -5.0, -6.0 ] );
-* var cy = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * // Perform operation:
 * csrot.ndarray( cx.length, cx, 1, 0, cy, 1, 0, 0.8, 0.6 );
-*
-* var v = cx.get( 0 );
-* // returns <Complex64>
-*
-* var re = realf( v );
-* // returns ~-0.2
-*
-* var im = imagf( v );
-* // returns ~-0.4
-*
-* v = cy.get( 0 );
-* // returns <Complex64>
-*
-* re = realf( v );
-* // returns ~1.4
-*
-* im = imagf( v );
-* // returns ~2.8
+* // cx => <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4 ]
+* // cy => <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8 ]
 */
 declare var csrot: Routine;
 

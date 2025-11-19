@@ -70,7 +70,7 @@ interface Routine {
 	* @returns `A`
 	*
 	* @example
-	* var Complex128Array = require( '@stdlib/array/float64' );
+	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var A = new Complex128Array( 4 );

@@ -1,0 +1,96 @@
+
+{{alias}}( x[, initial][, options] )
+    Computes the cumulative sum along one or more ndarray dimensions.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a numeric or "generic" data type.
+
+    initial: ndarray|number|ComplexLike (optional)
+        Initial value. May be either a scalar value or an ndarray having a data
+        type which promotes to the data type of the input ndarray. If provided a
+        scalar value, the value is cast to the data type of the input ndarray.
+        If provided an ndarray, the value must have a shape which is broadcast
+        compatible with the complement of the shape defined by `options.dims`.
+        For example, given the input shape [2, 3, 4] and `options.dims=[0]`, an
+        ndarray initial value must have a shape which is broadcast compatible
+        with the shape [3, 4]. Similarly, when performing the operation over all
+        elements in a provided input ndarray, an ndarray initial value must be a
+        zero-dimensional ndarray. Default: `0.0`.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string|DataType (optional)
+        Output array data type. Must be a numeric or "generic" data type.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided, the
+        function performs the operation over all elements in a provided input
+        ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
+    > var y = {{alias}}( x );
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ -1.0, 1.0, -2.0, -6.0 ]
+
+
+{{alias}}.assign( x[, initial], out[, options] )
+    Computes the cumulative sum along one or more ndarray dimensions
+    and assigns results to a provided output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a numeric or generic data type.
+
+    initial: ndarray|number|ComplexLike (optional)
+        Initial value. May be either a scalar value or an ndarray having a data
+        type which promotes to the data type of the input ndarray. If provided a
+        scalar value, the value is cast to the data type of the input ndarray.
+        If provided an ndarray, the value must have a shape which is broadcast
+        compatible with the complement of the shape defined by `options.dims`.
+        For example, given the input shape [2, 3, 4] and `options.dims=[0]`, an
+        ndarray initial value must have a shape which is broadcast compatible
+        with the shape [3, 4]. Similarly, when performing the operation over all
+        elements in a provided input ndarray, an ndarray initial value must be a
+        zero-dimensional ndarray. Default: `0.0`.
+
+    out: ndarray
+        Output array.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided, the
+        function performs the operation over all elements in a provided input
+        ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
+    > var out = {{alias:@stdlib/ndarray/zeros-like}}( x );
+    > var y = {{alias}}.assign( x, out )
+    <ndarray>
+    > var bool = ( out === y )
+    true
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ -1.0, 1.0, -2.0, -6.0 ]
+
+    See Also
+    --------
+

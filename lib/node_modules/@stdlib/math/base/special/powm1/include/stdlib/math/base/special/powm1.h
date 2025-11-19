@@ -29,7 +29,7 @@ extern "C" {
 /**
 * Evaluates `bˣ - 1`.
 */
-double stdlib_base_powm1( const double base, const double exponent );
+double stdlib_base_powm1( const double b, const double x );
 
 #ifdef __cplusplus
 }

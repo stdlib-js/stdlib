@@ -130,6 +130,102 @@ logEachMap( 'x: %d, p: %0.4f, P( X = x; p ): %0.4f', x, p, pmf );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/bernoulli/pmf.h"
+```
+
+#### stdlib_base_dists_bernoulli_pmf( x, p )
+
+Evaluates the [probability mass function][pmf] (PMF) of a [Bernoulli][bernoulli-distribution] distribution with success probability `0 <= p <= 1`.
+
+```c
+double y = stdlib_base_dists_bernoulli_pmf( 1.0, 0.3 );
+// returns 0.3
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **p**: `[in] double` success probability.
+
+```c
+double stdlib_base_dists_bernoulli_pmf( const double x, const double p );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/bernoulli/pmf.h"
+#include "stdlib/math/base/special/round.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double p;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        x = stdlib_base_round( random_uniform( 0.0, 2.0 ) );
+        p = random_uniform( 0.0, 1.0 );
+        y = stdlib_base_dists_bernoulli_pmf( x, p );
+        printf( "x: %lf, p: %lf, P( X = x; p ): %lf\n", x, p, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
