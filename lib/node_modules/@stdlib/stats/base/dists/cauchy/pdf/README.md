@@ -116,23 +116,19 @@ y = mypdf( 5.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var pdf = require( '@stdlib/stats/base/dists/cauchy/pdf' );
 
-var gamma;
-var x0;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var gamma = uniform( 10, EPS, 20.0, opts );
+var x0 = uniform( 10, -5.0, 5.0, opts );
+var x = uniform( 10, 0.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = randu() * 10.0;
-    x0 = ( randu()*10.0 ) - 5.0;
-    gamma = ( randu()*20.0 ) + EPS;
-    y = pdf( x, gamma, x0 );
-    console.log( 'x: %d, x0: %d, γ: %d, f(x;x0,γ): %d', x.toFixed(4), x0.toFixed(4), gamma.toFixed(4), y.toFixed(4) );
-}
+logEachMap( 'x: %0.4f, x0: %0.4f, γ: %0.4f, f(x;x0,γ): %0.4f', x, x0, gamma, pdf );
 ```
 
 </section>

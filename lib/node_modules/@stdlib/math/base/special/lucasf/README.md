@@ -164,19 +164,19 @@ logEachMap( 'lucasf(%d) = %0.1f', x, lucasf );
 Computes the nth [Lucas number][lucas-number] as a single-precision floating-point number.
 
 ```c
-float out = stdlib_base_lucasf( 0 );
+float out = stdlib_base_lucasf( 0.0f );
 // returns 2.0f
 
-out = stdlib_base_lucasf( 1 );
+out = stdlib_base_lucasf( 1.0f );
 // returns 1.0f
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int32_t` input value.
+-   **n**: `[in] float` input value.
 
 ```c
-float stdlib_base_lucasf( const int32_t n );
+float stdlib_base_lucasf( const float n );
 ```
 
 </section>
@@ -200,15 +200,14 @@ float stdlib_base_lucasf( const int32_t n );
 ```c
 #include "stdlib/math/base/special/lucasf.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-    int32_t i;
+    float i;
     float v;
 
-    for ( i = 0; i < 35; i++ ) {
+    for ( i = 0.0f; i < 35.0f; i++ ) {
         v = stdlib_base_lucasf( i );
-        printf( "lucasf(%d) = %f\n", i, v );
+        printf( "lucasf(%f) = %f\n", i, v );
     }
 }
 ```

@@ -148,6 +148,109 @@ logEachMap( 'x: %0.4f, n: %0.4f, p: %0.4f, P(X = x;n,p): %0.4f', x, n, p, pmf );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/binomial/pmf.h"
+```
+
+#### stdlib_base_dists_binomial_pmf( x, n, p )
+
+Evaluates the probability mass function (PMF) for a binomial distribution with number of trials `n` and success probability `p` at a value `x`.
+
+```c
+double out = stdlib_base_dists_binomial_pmf( 3.0, 20, 0.2 );
+// returns ~0.205
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **n**: `[in] int32_t` number of trials.
+-   **p**: `[in] double` success probability.
+
+```c
+double stdlib_base_dists_binomial_pmf( const double x, const int32_t n, const double p );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/binomial/pmf.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdint.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+static int32_t random_int( const int32_t min, const int32_t max ) {
+    return min + (int32_t)( random_uniform( 0.0, 1.0 ) * ( max - min + 1 ) );
+}
+
+int main( void ) {
+    int32_t n;
+    double p;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        n = random_int( 1, 20 );
+        x = random_uniform( 0.0, (double)n );
+        p = random_uniform( 0.0, 1.0 );
+        y = stdlib_base_dists_binomial_pmf( x, n, p );
+        printf( "x: %.4f, n: %d, p: %.4f, P(X = x;n,p): %.4f\n", x, n, p, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

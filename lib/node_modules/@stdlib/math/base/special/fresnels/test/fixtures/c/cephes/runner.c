@@ -117,7 +117,7 @@ void write_data_as_json( FILE *f, const double *x, const double *S, const unsign
 * @param len   number of values in the domain
 * @param name  output filename
 */
-void generate( double *x, const unsigned int len, const char *name ) {
+void generate( const double *x, const unsigned int len, const char *name ) {
 	unsigned int i;
 	double *S;
 	double C;

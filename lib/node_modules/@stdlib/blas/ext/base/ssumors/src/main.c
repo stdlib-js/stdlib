@@ -48,33 +48,37 @@ float API_SUFFIX(stdlib_strided_ssumors_ndarray)( const CBLAS_INT N, const float
 	CBLAS_INT i;
 	float sum;
 
-	sum = 0.0f;
 	if ( N <= 0 ) {
-		return sum;
+		return 0.0f;
 	}
 	ix = offsetX;
 	if ( strideX == 0 ) {
 		return N * X[ ix ];
 	}
+	sum = X[ ix ];
+	ix += strideX;
+
 	// If the stride is equal to `1`, use unrolled loops...
 	if ( strideX == 1 ) {
-		m = N % 6;
+		m = ( N-1 ) % 6;
 
 		// If we have a remainder, run a clean-up loop...
 		if ( m > 0 ) {
 			for ( i = 0; i < m; i++ ) {
-				sum += X[ ix + i ];
+				sum += X[ ix ];
+				ix += strideX;
 			}
 		}
-		if ( N < 6 ) {
+		if ( N-1 < 6 ) {
 			return sum;
 		}
-		for ( i = m; i < N; i += 6 ) {
-			sum += X[ix+i] + X[ix+i+1] + X[ix+i+2] + X[ix+i+3] + X[ix+i+4] + X[ix+i+5];
+		for ( i = m; i < N-1; i += 6 ) {
+			sum += X[ix] + X[ix+1] + X[ix+2] + X[ix+3] + X[ix+4] + X[ix+5];
+			ix += strideX;
 		}
 		return sum;
 	}
-	for ( i = 0; i < N; i++ ) {
+	for ( i = 1; i < N; i++ ) {
 		sum += X[ ix ];
 		ix += strideX;
 	}
