@@ -1,0 +1,56 @@
+
+{{alias}}( shape, depth )
+    Flattens a shape to a specified depth.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    depth: integer
+        Maximum depth to flatten.
+
+    Returns
+    -------
+    out: Array
+        Flattened shape.
+
+    Examples
+    --------
+    > var sh = [ 3, 2 ];
+    > var out = {{alias}}( sh, 1 )
+    [ 6 ]
+
+
+{{alias}}.assign( shape, depth, out )
+    Flattens a shape to a specified depth and assigns results to a provided
+    output array.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    depth: integer
+        Maximum depth to flatten.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var sh = [ 2, 1, 10 ];
+    > var out = [ 0 ];
+    > var s = {{alias}}.assign( sh, 2, out )
+    [ 20 ]
+    > var bool = ( s === out )
+    true
+
+    See Also
+    --------
+

@@ -117,9 +117,9 @@ type Predicate = nullaryPredicate | unaryPredicate | binaryPredicate;
 *     return v < 3;
 * }
 *
-* function assert( v, i ) {
-*     if ( i > 1 ) {
-*         throw new Error( 'unexpected error' );
+* function assert( v ) {
+*     if ( v !== v ) {
+*         throw new Error( 'should not be NaN' );
 *     }
 * }
 *

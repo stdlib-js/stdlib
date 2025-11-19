@@ -90,16 +90,16 @@ v = y0( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var y0 = require( '@stdlib/math/base/special/bessely0' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var bessely0 = require( '@stdlib/math/base/special/bessely0' );
 
-var x;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, 0.0, 100.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = randu() * 10.0;
-    console.log( 'y0(%d) = %d', x, y0( x ) );
-}
+logEachMap( 'bessely0(%0.4f) = %0.4f', x, bessely0 );
 ```
 
 </section>

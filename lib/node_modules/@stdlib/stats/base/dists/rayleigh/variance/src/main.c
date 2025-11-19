@@ -27,7 +27,7 @@
 * @return         variance
 *
 * @example
-* double y = stdlib_base_rayleigh_variance( 9.0 );
+* double y = stdlib_base_dists_rayleigh_variance( 9.0 );
 * // returns ~34.765
 */
 double stdlib_base_dists_rayleigh_variance( const double sigma ) {

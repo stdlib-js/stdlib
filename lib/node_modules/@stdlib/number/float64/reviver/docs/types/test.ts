@@ -23,25 +23,25 @@ import reviveNumber = require( '../../lib/main' );
 
 // The function revives a JSON-serialized number...
 {
-    const o = {
-        'type': 'float64',
-        'value': 'NaN'
-    };
-    reviveNumber( 'key', o ); // $ExpectType any
+	const o = {
+		'type': 'float64',
+		'value': 'NaN'
+	};
+	reviveNumber( 'key', o ); // $ExpectType any
 }
 
 // The compiler throws an error if the function is provided a first argument that is not a string or number...
 {
-    reviveNumber( true, 1 ); // $ExpectError
-    reviveNumber( false, 1 ); // $ExpectError
-    reviveNumber( null, 1 ); // $ExpectError
-    reviveNumber( undefined, 1 ); // $ExpectError
-    reviveNumber( [], 1 ); // $ExpectError
-    reviveNumber( {}, 1 ); // $ExpectError
+	reviveNumber( true, 1 ); // $ExpectError
+	reviveNumber( false, 1 ); // $ExpectError
+	reviveNumber( null, 1 ); // $ExpectError
+	reviveNumber( undefined, 1 ); // $ExpectError
+	reviveNumber( [], 1 ); // $ExpectError
+	reviveNumber( {}, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
-    reviveNumber(); // $ExpectError
-    reviveNumber( 'foo' ); // $ExpectError
+	reviveNumber(); // $ExpectError
+	reviveNumber( 'foo' ); // $ExpectError
 }

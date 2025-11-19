@@ -409,22 +409,22 @@ interface Namespace {
 	*     return v;
 	* }
 	*
-	* var x = [ 0.0, -1.57, -0.5, -1.0, -1.25 ];
+	* var x = [ 0.0, 1.57, 0.5, 1.0, 1.25 ];
 	* var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 	*
 	* ns.acovercosBy( x.length, x, 1, y, 1, accessor );
-	* // y => [ ~1.571, ~-0.607, ~0.524, 0.0, ~-0.253 ]
+	* // y => [ ~-1.571, ~0.607, ~-0.524, 0.0, ~0.253 ]
 	*
 	* @example
 	* function accessor( v ) {
 	*     return v;
 	* }
 	*
-	* var x = [ 0.0, -1.57, -0.5, -1.0, -1.25 ];
+	* var x = [ 0.0, 1.57, 0.5, 1.0, 1.25 ];
 	* var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 	*
 	* ns.acovercosBy.ndarray( x.length, x, 1, 0, y, 1, 0, accessor );
-	* // y => [ ~1.571, ~-0.607, ~0.524, 0.0, ~-0.253 ]
+	* // y => [ ~-1.571, ~0.607, ~-0.524, 0.0, ~0.253 ]
 	*/
 	acovercosBy: typeof acovercosBy;
 
@@ -1183,8 +1183,8 @@ interface Namespace {
 	*     return v;
 	* }
 	*
-	* var x = Float64Array( [ 1.0, 9.0, -27.0, 81.0, -125.0 ] );
-	* var out = Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+	* var x = new Float64Array( [ 1.0, 9.0, -27.0, 81.0, -125.0 ] );
+	* var out = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* ns.dcbrtBy( x.length, x, 1, out, 1, accessor );
 	* // out => <Float64Array>[ 1.0, ~2.08, -3.0, ~4.327, -5.0 ]
@@ -1196,8 +1196,8 @@ interface Namespace {
 	*     return v;
 	* }
 	*
-	* var x = Float64Array( [ 1.0, 9.0, -27.0, 81.0, -125.0 ] );
-	* var out = Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+	* var x = new Float64Array( [ 1.0, 9.0, -27.0, 81.0, -125.0 ] );
+	* var out = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* ns.dcbrtBy.ndarray( x.length, x, 1, 0, out, 1, 0, accessor );
 	* // out => <Float64Array>[ 1.0, ~2.08, -3.0, ~4.327, -5.0 ]

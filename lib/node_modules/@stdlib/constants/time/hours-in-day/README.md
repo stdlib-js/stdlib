@@ -47,7 +47,7 @@ var bool = ( HOURS_IN_DAY === 24 );
 
 ## Notes
 
--   The value is a generalization and does **not** take into account inaccuracies due to daylight savings conventions, crossing timezones, or other complications with time and dates. 
+-   The value is a generalization and does **not** take into account inaccuracies due to daylight savings conventions, crossing timezones, or other complications with time and dates.
 
 </section>
 

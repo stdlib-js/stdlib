@@ -1,0 +1,100 @@
+
+{{alias}}( fcn, arrays, dims[, options], clbk[, thisArg] )
+    Performs a reduction over a list of specified dimensions in an input ndarray
+    according to a callback function and assigns results to a provided output
+    ndarray.
+
+    Each provided "ndarray" should be an object with the following properties:
+
+    - dtype: data type.
+    - data: data buffer.
+    - shape: dimensions.
+    - strides: stride lengths.
+    - offset: index offset.
+    - order: specifies whether an ndarray is row-major (C-style) or column-major
+    (Fortran-style).
+
+    The output ndarray and any additional ndarray arguments are expected to have
+    the same dimensions as the non-reduced dimensions of the input ndarray. When
+    calling the reduction function, any additional ndarray arguments are
+    provided as zero-dimensional ndarray-like objects.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function which will be applied to a subarray and should reduce the
+        subarray to a single scalar value. The function should have the
+        following signature:
+
+            fcn( arrays[, options], wrappedCallback )
+
+        where
+
+        - arrays: array containing a subarray of the input ndarray and any
+        additional ndarray arguments as zero-dimensional ndarrays.
+        - options: function options.
+        - wrappedCallback: callback function. This function is a wrapper around
+        a provided `clbk` argument.
+
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing one input ndarray and one output ndarray,
+        followed by any additional ndarray arguments.
+
+    dims: Array<integer>
+        List of dimensions over which to perform a reduction.
+
+    options: Object (optional)
+        Function options.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Examples
+    --------
+    // Define ndarray data and meta data...
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var ybuf = new {{alias:@stdlib/array/float64}}( [ 0.0 ] );
+    > var dtype = 'float64';
+    > var shx = [ 2, 2 ];
+    > var shy = [];
+    > var sx = [ 2, 1 ];
+    > var sy = [ 0 ];
+    > var ox = 0;
+    > var oy = 0;
+    > var order = 'row-major';
+
+    // Define a callback function:
+    > function clbk( value ) { return value; };
+
+    // Define a trivial reduction function...
+    > function fcn( arrays, clbk, thisArg ) {
+    ...     var v = arrays[0].data[ arrays[0].offset ];
+    ...     return clbk.call( thisArg, v, [ 0 ], arrays[0] );
+    ... };
+
+    // Using minimal ndarray-like objects...
+    > var x = {
+    ...     'dtype': dtype,
+    ...     'data': xbuf,
+    ...     'shape': shx,
+    ...     'strides': sx,
+    ...     'offset': ox,
+    ...     'order': order
+    ... };
+    > var y = {
+    ...     'dtype': dtype,
+    ...     'data': ybuf,
+    ...     'shape': shy,
+    ...     'strides': sy,
+    ...     'offset': oy,
+    ...     'order': order
+    ... };
+    > {{alias}}( fcn, [ x, y ], [ 0, 1 ], clbk );
+    > y.data
+    <Float64Array>[ 1.0 ]
+
+    See Also
+    --------

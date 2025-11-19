@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the skewness of a Bernoulli distribution with success probability 'p'.
+* Returns the skewness of a Bernoulli distribution with success probability `p`.
 */
 double stdlib_base_dists_bernoulli_skewness( const double p );
 

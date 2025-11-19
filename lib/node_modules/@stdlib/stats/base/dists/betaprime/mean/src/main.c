@@ -24,13 +24,13 @@
 * @param x        input value
 * @param alpha    first shape parameter
 * @param beta     second shape parameter
-* @returns        expected value
+* @return         expected value
 *
 * @example
 * double y = stdlib_base_dists_betaprime_mean( 1.0, 2.0 );
-* // returns ~1.0
+* // returns 1.0
 */
-double stdlib_base_dists_betaprime_mean( double alpha, const double beta ) {
+double stdlib_base_dists_betaprime_mean( const double alpha, const double beta ) {
 	if ( alpha <= 0.0 || beta <= 1.0 ) {
 		return 0.0 / 0.0;
 	}

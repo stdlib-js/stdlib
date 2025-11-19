@@ -23,10 +23,10 @@
 #include "stdlib/constants/float64/ninf.h"
 
 /**
-* Returns the skewness of a Bernoulli distribution with success probability 'p'.
+* Returns the skewness of a Bernoulli distribution with success probability `p`.
 *
 * @param p    success probability
-* @returns    skewness
+* @return     skewness
 *
 * @example
 * double y = stdlib_base_dists_bernoulli_skewness( 0.1 );

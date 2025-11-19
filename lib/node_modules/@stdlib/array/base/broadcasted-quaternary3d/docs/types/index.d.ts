@@ -88,7 +88,7 @@ type InOutShapes = [
 * @param fcn - quaternary callback
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add4' );
+* var add = require( '@stdlib/number/float64/base/add4' );
 * var ones3d = require( '@stdlib/array/base/ones3d' );
 * var zeros3d = require( '@stdlib/array/base/zeros3d' );
 *

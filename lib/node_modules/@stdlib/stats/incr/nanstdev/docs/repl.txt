@@ -1,0 +1,36 @@
+
+{{alias}}( [mean] )
+    Returns an accumulator function which incrementally computes a corrected
+    sample standard deviation, ignoring `NaN` values.
+
+    If provided a value, the accumulator function returns an updated corrected
+    sample standard deviation. If not provided a value, the accumulator function
+    returns the current corrected sample standard deviation.
+
+    Parameters
+    ----------
+    mean: number (optional)
+        Known mean.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var s = accumulator()
+    null
+    > s = accumulator( 2.0 )
+    0.0
+    > s = accumulator( -5.0 )
+    ~4.95
+    > s = accumulator( NaN )
+    ~4.95
+    > s = accumulator()
+    ~4.95
+
+    See Also
+    --------
+

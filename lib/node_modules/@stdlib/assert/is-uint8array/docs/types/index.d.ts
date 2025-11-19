@@ -25,6 +25,8 @@
 * @returns boolean indicating whether value is a Uint8Array
 *
 * @example
+* var Uint8Array = require( '@stdlib/array/uint8' );
+*
 * var bool = isUint8Array( new Uint8Array( 10 ) );
 * // returns true
 *

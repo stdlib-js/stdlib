@@ -90,15 +90,18 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double x;
+	double x[ 100 ];
 	double t;
 	int y;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 1.0e7*rand_double() ) - 5.0e6;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 1.0e7*rand_double() ) - 5.0e6;
-		y = isinf( x );
+		y = isinf( x[ i%100 ] );
 		if ( y != 0 && y != 1 ) {
 			printf( "should return 0 or 1\n" );
 			break;
