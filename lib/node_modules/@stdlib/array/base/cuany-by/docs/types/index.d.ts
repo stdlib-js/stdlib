@@ -67,7 +67,7 @@ type Ternary<T, U> = ( this: U, value: T, index: number, arr: Collection<T> | Ac
 type Predicate<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 
 /**
-* Interface describing `cunanyBy`.
+* Interface describing `cuanyBy`.
 */
 interface CuAnyBy {
 	/**
@@ -86,7 +86,7 @@ interface CuAnyBy {
 	* var x = [ 0, 0, 0, 1, 0 ];
 	*
 	* var y = cuanyBy( x, isPositive );
-	*  // returns [ false, false, false, true, true ];
+	* // returns [ false, false, false, true, true ];
 	*/
 	<T = unknown, U = unknown>( x: Collection<T> | AccessorArrayLike<T>, predicate: Predicate<T, U>, thisArg?: ThisParameterType<Predicate<T, U>> ): Array<boolean>;
 

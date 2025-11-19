@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the Fortran interface to the BLAS Level 1 routine `sscal`.
 */
-#ifndef SSCAL_FORTRAN_H
-#define SSCAL_FORTRAN_H
+#ifndef STDLIB_BLAS_BASE_SSCAL_FORTRAN_H
+#define STDLIB_BLAS_BASE_SSCAL_FORTRAN_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -40,4 +40,4 @@ void sscal( const CBLAS_INT *, const float *, float *, const CBLAS_INT * );
 }
 #endif
 
-#endif // !SSCAL_FORTRAN_H
+#endif // !STDLIB_BLAS_BASE_SSCAL_FORTRAN_H

@@ -34,7 +34,7 @@ var reUtf16UnpairedSurrogate = require( '@stdlib/regexp/utf16-unpaired-surrogate
 
 #### reUtf16UnpairedSurrogate()
 
-Returns a [regular expression][mdn-regexp] to match an unpaired [UTF-16][utf-16] surrogate. 
+Returns a [regular expression][mdn-regexp] to match an unpaired [UTF-16][utf-16] surrogate.
 
 <!-- eslint-disable id-length -->
 
@@ -47,7 +47,7 @@ var bool = RE_UTF16_UNPAIRED_SURROGATE.test( 'abc\uD800def' );
 
 #### reUtf16UnpairedSurrogate.REGEXP
 
-[Regular expression][mdn-regexp] to match an unpaired [UTF-16][utf-16] surrogate. 
+[Regular expression][mdn-regexp] to match an unpaired [UTF-16][utf-16] surrogate.
 
 ```javascript
 var bool = reUtf16UnpairedSurrogate.REGEXP.test( 'abc\uD800def' );

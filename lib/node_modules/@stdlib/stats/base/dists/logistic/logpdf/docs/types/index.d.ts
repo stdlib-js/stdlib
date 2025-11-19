@@ -111,9 +111,9 @@ interface LogPDF {
 * y = mylogpdf( 10.0 );
 * // returns -2.079
 */
-declare var logPDF: LogPDF;
+declare var logpdf: LogPDF;
 
 
 // EXPORTS //
 
-export = logPDF;
+export = logpdf;

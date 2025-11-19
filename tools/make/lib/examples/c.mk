@@ -98,3 +98,28 @@ examples-c-files:
 	done
 
 .PHONY: example-c-files
+
+#/
+# Runs random C examples consecutively.
+#
+# @param {string} [PACKAGES_PATTERN='package.json'] - filename pattern for identifying packages
+# @param {string} [PACKAGES_FILTER='.*/.*'] - filepath pattern for finding packages
+# @param {string} [RANDOM_SELECTION_SIZE=100] - number of packages
+#
+# @example
+# make examples-random-c
+#
+# @example
+# make examples-random-c RANDOM_SELECTION_SIZE=10
+#/
+examples-random-c: $(NODE_MODULES)
+	$(QUIET) $(MAKE) -f $(this_file) -s list-random-lib-pkgs PACKAGES_PATTERN='binding.gyp' | while read -r pkg; do \
+		echo ""; \
+		echo "Running example: $$pkg"; \
+		NODE_ENV="$(NODE_ENV_EXAMPLES)" \
+		NODE_PATH="$(NODE_PATH_EXAMPLES)" \
+		$(MAKE) -f $(this_file) examples-c EXAMPLES_FILTER="$$pkg/.*" || exit 1; \
+	done
+
+.PHONY: examples-random-c
+

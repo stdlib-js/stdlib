@@ -37,6 +37,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex128",
+        "@stdlib/napi/argv-float64array",
+        "@stdlib/napi/export",
         "@stdlib/complex/float64/ctor",
         "@stdlib/complex/float64/reim",
         "@stdlib/math/base/special/cphase",

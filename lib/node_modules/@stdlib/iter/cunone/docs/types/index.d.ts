@@ -39,22 +39,22 @@ type Iterator = Iter | IterableIterator;
 * var it = iterCuNone( arr );
 *
 * var v = it.next().value;
-* returns true
+* // returns true
 *
 * v = it.next().value;
-* returns true
+* // returns true
 *
 * v = it.next().value;
-* returns true
+* // returns true
 *
 * v = it.next().value;
-* returns false
+* // returns false
 *
 * v = it.next().value;
-* returns false
+* // returns false
 *
 * var bool = it.next().done;
-* returns true
+* // returns true
 */
 declare function iterCuNone( iterator: Iterator ): Iterator;
 

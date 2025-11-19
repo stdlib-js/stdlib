@@ -147,6 +147,101 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/rayleigh/quantile.h"
+```
+
+#### stdlib_base_dists_rayleigh_quantile( p, sigma )
+
+Evaluates the [quantile function][quantile-function] for a [Rayleigh][rayleigh-distribution] distribution with parameter `sigma` (scale parameter).
+
+```c
+double out = stdlib_base_dists_rayleigh_quantile( 0.8, 1.0 );
+// returns ~1.794
+```
+
+The function accepts the following arguments:
+
+-   **p**: `[in] double` input probability.
+-   **sigma**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_rayleigh_quantile( const double p, const double sigma );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/rayleigh/quantile.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double sigma;
+    double p;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        p = random_uniform( 0.0, 1.0 );
+        sigma = random_uniform( 0.1, 10.0 );
+        y = stdlib_base_dists_rayleigh_quantile( p, sigma );
+        printf( "p: %lf, σ: %lf, Q(p;σ): %lf\n", p, sigma, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

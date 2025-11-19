@@ -36,7 +36,7 @@ extern "C" {
 * @param strides  array containing strides (in bytes) for each strided array
 * @param data     function "data" (e.g., a callback)
 */
-typedef void (*StridedArrayFcn)( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *data );
+typedef void (*StridedArrayFcn)( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *data );
 
 /**
 * Structure for grouping strided array function information.

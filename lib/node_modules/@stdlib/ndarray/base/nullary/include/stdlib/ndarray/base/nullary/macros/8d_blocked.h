@@ -45,7 +45,7 @@
 * STDLIB_NDARRAY_NULLARY_8D_BLOCKED_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_NULLARY_8D_BLOCKED_LOOP_PREAMBLE                        \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
 	int64_t shape[8];                                                          \
 	int64_t sx1[8];                                                            \
 	int64_t idx[8];                                                            \
@@ -225,8 +225,8 @@
 * STDLIB_NDARRAY_NULLARY_8D_BLOCKED_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_NULLARY_8D_BLOCKED_LOOP_TWO_OUT_PREAMBLE                \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
-	struct ndarray *x2 = arrays[ 1 ];                                          \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
+	const struct ndarray *x2 = arrays[ 1 ];                                    \
 	int64_t shape[8];                                                          \
 	int64_t sx1[8];                                                            \
 	int64_t sx2[8];                                                            \

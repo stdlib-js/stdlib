@@ -26,7 +26,7 @@ interface Routine {
 	* Fills a double-precision floating-point strided array with a specified scalar value.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @returns input array
@@ -45,7 +45,7 @@ interface Routine {
 	* Fills a double-precision floating-point strided array with a specified scalar value using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - stride length
 	* @param offsetX - starting index
@@ -66,7 +66,7 @@ interface Routine {
 * Fills a double-precision floating-point strided array with a specified scalar value.
 *
 * @param N - number of indexed elements
-* @param alpha - constant
+* @param alpha - scalar constant
 * @param x - input array
 * @param strideX - stride length
 * @returns input array

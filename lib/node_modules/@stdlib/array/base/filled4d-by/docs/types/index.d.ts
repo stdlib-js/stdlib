@@ -48,7 +48,7 @@ type Callback<T, V> = Nullary<T, V> | Unary<T, V>;
 /**
 * Four-dimensional nested array.
 */
-type Array4D<T> = Array<Array<Array<T>>>;
+type Array4D<T> = Array<Array<Array<Array<T>>>>;
 
 /**
 * Returns a filled four-dimensional nested array according to a provided callback function.
