@@ -171,7 +171,7 @@ static double foo( const napi_env env, const napi_value value ) {
 
     // ...
 
-    return out;
+    return *out;
 }
 ```
 

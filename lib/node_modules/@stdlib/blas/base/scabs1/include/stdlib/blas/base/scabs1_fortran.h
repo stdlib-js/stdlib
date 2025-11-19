@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the Fortran interface to the BLAS Level 1 routine `scabs1`.
 */
-#ifndef SCABS1_FORTRAN_H
-#define SCABS1_FORTRAN_H
+#ifndef STDLIB_BLAS_BASE_SCABS1_FORTRAN_H
+#define STDLIB_BLAS_BASE_SCABS1_FORTRAN_H
 
 #include "stdlib/complex/float32/ctor.h"
 
@@ -40,4 +40,4 @@ void scabs1sub( const stdlib_complex64_t *, float * );
 }
 #endif
 
-#endif // !SCABS1_FORTRAN_H
+#endif // !STDLIB_BLAS_BASE_SCABS1_FORTRAN_H

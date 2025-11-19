@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_sscal`.
 */
-#ifndef SSCAL_CBLAS_H
-#define SSCAL_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_SSCAL_CBLAS_H
+#define STDLIB_BLAS_BASE_SSCAL_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -40,4 +40,4 @@ void API_SUFFIX(cblas_sscal)( const CBLAS_INT N, const float alpha, float *X, co
 }
 #endif
 
-#endif // !SSCAL_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_SSCAL_CBLAS_H

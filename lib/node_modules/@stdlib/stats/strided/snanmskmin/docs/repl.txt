@@ -1,0 +1,118 @@
+
+{{alias}}( N, x, strideX, mask, strideMask )
+    Computes the minimum value of a single-precision floating-point strided
+    array according to a mask, ignoring `NaN` values.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce offsets, use a typed
+    array views.
+
+    If a `mask` array element is `0`, the corresponding element in `x` is
+    considered valid and included in computation.
+
+    If a `mask` array element is `1`, the corresponding element in `x` is
+    considered invalid/missing and excluded from computation.
+
+    If `N <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float32Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    mask: Uint8Array
+        Mask array.
+
+    strideMask: integer
+        Stride length for `mask`.
+
+    Returns
+    -------
+    out: number
+        Minimum value.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, -4.0, 2.0, NaN ] );
+    > var mask = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 1, 0, 0 ] );
+    > {{alias}}( x.length, x, 1, mask, 1 )
+    -2.0
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0, -4.0 ] );
+    > mask = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 0, 0, 0, 0, 1 ] );
+    > {{alias}}( 3, x, 2, mask, 2 )
+    -2.0
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0, -4.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var mask0 = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 0, 0, 0, 0, 1 ] );
+    > var mask1 = new {{alias:@stdlib/array/uint8}}( mask0.buffer, mask0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 3, x1, 2, mask1, 2 )
+    -2.0
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX, mask, strideMask, offsetMask )
+    Computes the minimum value of a single-precision floating-point strided
+    array according to a mask, ignoring `NaN` values and using alternative
+    indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the `offset` parameter supports indexing semantics based on a
+    starting index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float32Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    mask: Uint8Array
+        Mask array.
+
+    strideMask: integer
+        Stride length for `mask`.
+
+    offsetMask: integer
+        Starting index for `mask`.
+
+    Returns
+    -------
+    out: number
+        Minimum value.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 2.0, -4.0, NaN ] );
+    > var mask = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 0, 1, 0 ] );
+    > {{alias}}.ndarray( x.length, x, 1, 0, mask, 1, 0 )
+    -2.0
+
+    // Using offset parameter:
+    > x = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, 2.0, 5.0, -1.0, -4.0 ] );
+    > mask = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 0, 0, 0, 0, 1 ] );
+    > {{alias}}.ndarray( 3, x, 2, 1, mask, 2, 1 )
+    -2.0
+
+    See Also
+    --------
+

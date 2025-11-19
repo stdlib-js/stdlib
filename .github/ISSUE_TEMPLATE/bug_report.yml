@@ -117,5 +117,5 @@ body:
       options:
         - label: Read and understood the [Code of Conduct](https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md).
           required: true
-        - label:  Searched for existing issues and pull requests.
+        - label: Searched for existing issues and pull requests.
           required: true

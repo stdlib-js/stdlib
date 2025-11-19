@@ -270,8 +270,8 @@ int main( void ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/blas/ext/base/gapx`][@stdlib/blas/ext/base/gapx]</span><span class="delimiter">: </span><span class="description">add a constant to each element in a strided array.</span>
--   <span class="package-name">[`@stdlib/blas/ext/base/sapx`][@stdlib/blas/ext/base/sapx]</span><span class="delimiter">: </span><span class="description">add a constant to each element in a single-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/gapx`][@stdlib/blas/ext/base/gapx]</span><span class="delimiter">: </span><span class="description">add a scalar constant to each element in a strided array.</span>
+-   <span class="package-name">[`@stdlib/blas/ext/base/sapx`][@stdlib/blas/ext/base/sapx]</span><span class="delimiter">: </span><span class="description">add a scalar constant to each element in a single-precision floating-point strided array.</span>
 
 </section>
 

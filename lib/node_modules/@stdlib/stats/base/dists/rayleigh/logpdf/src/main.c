@@ -31,7 +31,7 @@
 * @return         evaluated logPDF
 *
 * @example
-* double y = stdlib_base_arcsine_cdf( 0.3, 1.0 );
+* double y = stdlib_base_dists_rayleigh_logpdf( 0.3, 1.0 );
 * // returns ~-1.249
 */
 double stdlib_base_dists_rayleigh_logpdf( const double x, const double sigma ) {

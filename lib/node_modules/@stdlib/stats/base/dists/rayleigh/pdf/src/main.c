@@ -30,7 +30,7 @@
 * @return         evaluated PDF
 *
 * @example
-* double y = stdlib_base_rayleigh_cdf( 3.0, 1.0 );
+* double y = stdlib_base_dists_rayleigh_pdf( 3.0, 1.0 );
 * // returns ~0.287
 */
 double stdlib_base_dists_rayleigh_pdf( const double x, const double sigma ) {

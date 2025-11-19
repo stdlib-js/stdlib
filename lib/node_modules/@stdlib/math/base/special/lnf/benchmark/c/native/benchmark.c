@@ -92,14 +92,17 @@ static float rand_float( void ) {
 static double benchmark( void ) {
 	double elapsed;
 	double t;
-	float x;
+	float x[ 100 ];
 	float y;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 10000.0f * rand_float() ) - 0.0f;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 10000.0f * rand_float() ) - 0.0f;
-		y = stdlib_base_lnf( x );
+		y = stdlib_base_lnf( x[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

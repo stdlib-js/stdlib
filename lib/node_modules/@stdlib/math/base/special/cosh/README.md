@@ -62,15 +62,16 @@ v = cosh( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cosh = require( '@stdlib/math/base/special/cosh' );
 
-var x = linspace( -5.0, 5.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -5.0, 5.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( cosh( x[ i ] ) );
-}
+logEachMap( 'cosh(%0.4f) = %0.4f', x, cosh );
 ```
 
 </section>

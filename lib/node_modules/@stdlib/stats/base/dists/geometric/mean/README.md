@@ -103,19 +103,16 @@ v = mean( -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mean = require( '@stdlib/stats/base/dists/geometric/mean' );
 
-var v;
-var i;
-var p;
+var opts = {
+    'dtype': 'float64'
+};
+var p = uniform( 10, 0.0, 1.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    p = randu();
-    v = mean( p );
-    console.log( 'p: %d, E(X;p): %d', p.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'p: %0.4f, E(X;p): %0.4f', p, mean );
 ```
 
 </section>
