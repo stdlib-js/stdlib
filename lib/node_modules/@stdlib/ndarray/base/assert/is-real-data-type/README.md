@@ -42,7 +42,7 @@ var isRealDataType = require( '@stdlib/ndarray/base/assert/is-real-data-type' );
 
 #### isRealDataType( value )
 
-Tests if an input `value` is a supported ndarray real-valued data type.
+Tests if an input value is a supported ndarray real-valued data type.
 
 ```javascript
 var bool = isRealDataType( 'float32' );

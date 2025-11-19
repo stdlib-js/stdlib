@@ -121,7 +121,7 @@ var mem = new Memory({
     'maximum': 100
 });
 
-// Create a BLAS routine:
+// Create a new routine:
 var mod = new dmeanors.Module( mem );
 // returns <Module>
 
@@ -146,7 +146,7 @@ var mem = new Memory({
     'maximum': 100
 });
 
-// Create a BLAS routine:
+// Create a new routine:
 var mod = new dmeanors.Module( mem );
 // returns <Module>
 
@@ -193,7 +193,7 @@ var mem = new Memory({
     'maximum': 100
 });
 
-// Create a BLAS routine:
+// Create a new routine:
 var mod = new dmeanors.Module( mem );
 // returns <Module>
 

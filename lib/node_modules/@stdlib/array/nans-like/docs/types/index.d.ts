@@ -259,7 +259,7 @@ declare function nansLike( x: Complex64Array, dtype?: DataType ): Complex64Array
 * // returns [ 0, 0 ]
 *
 * var y = nansLike( x );
-* // returns [ 1, 1 ]
+* // returns [ NaN, NaN ]
 */
 declare function nansLike( x: Array<any>, dtype?: DataType ): Array<number>;
 

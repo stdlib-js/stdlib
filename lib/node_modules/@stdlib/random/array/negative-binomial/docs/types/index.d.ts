@@ -189,7 +189,7 @@ interface Random extends PRNG {
 	* var x = zeros( 10, 'float64' );
 	* // returns <Float64Array>
 	*
-	* var out = negativeBinomial( 10, 0.5, out );
+	* var out = negativeBinomial( 10, 0.5, x );
 	* // returns <Float64Array>
 	*
 	* var bool = ( out === x );

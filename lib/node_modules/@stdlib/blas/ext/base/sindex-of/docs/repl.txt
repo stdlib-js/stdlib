@@ -1,0 +1,77 @@
+
+{{alias}}( N, searchElement, x, strideX )
+    Returns the first index of a specified search element in a single-precision
+    floating-point strided array.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    if `N <= 0`, the function returns `-1`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    searchElement: number
+        Search element.
+
+    x: Float32Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    Returns
+    -------
+    idx: integer
+        Index.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ] );
+    > var idx = {{alias}}( x.length, 1.0, x, 1 )
+    1
+
+
+{{alias}}( N, searchElement, x, strideX, offsetX )
+    Returns the first index of a specified search element in a single-precision
+    floating-point strided array using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a
+    starting index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    searchElement: number
+        Search element.
+
+    x: Float32Array
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    Returns
+    -------
+    idx: integer
+        Index.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ] );
+    > var idx = {{alias}}.ndarray( x.length, 1.0, x, 1, 0 )
+    1
+
+    See Also
+    --------

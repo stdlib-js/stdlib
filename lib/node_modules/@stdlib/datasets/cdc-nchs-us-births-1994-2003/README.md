@@ -156,6 +156,10 @@ Options:
 
 -   Data is written to `stdout` as comma-separated values ([CSV][csv]), where the first line is a header line.
 
+</section>
+
+<!-- /.notes -->
+
 <section class="examples">
 
 ### Examples

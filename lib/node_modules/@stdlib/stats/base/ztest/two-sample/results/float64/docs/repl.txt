@@ -1,0 +1,29 @@
+
+{{alias}}( [arg[, byteOffset[, byteLength]]] )
+    Returns a two-sample Z-test double-precision floating-point results object.
+
+    Parameters
+    ----------
+    arg: Object|ArrayBuffer (optional)
+        ArrayBuffer or data object.
+
+    byteOffset: integer (optional)
+        Byte offset.
+
+    byteLength: integer (optional)
+        Maximum byte length.
+
+    Returns
+    -------
+    out: Object
+        Results object.
+
+    Examples
+    --------
+    > var r = new {{alias}}();
+    > r.toString( { 'format': 'linear' } )
+    <string>
+
+    See Also
+    --------
+
