@@ -1,9 +1,9 @@
 
-{{alias}}( N, order, x, stride )
+{{alias}}( N, order, x, strideX )
     Sorts a double-precision floating-point strided array using heapsort.
 
-    The `N` and `stride` parameters determine which elements in `x` are accessed
-    at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
@@ -39,8 +39,8 @@
     x: Float64Array
         Input array.
 
-    stride: integer
-        Index increment for `x`.
+    strideX: integer
+        Stride length.
 
     Returns
     -------
@@ -56,26 +56,25 @@
 
     // Using `N` and `stride` parameters:
     > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}( N, -1, x, 2 )
+    > {{alias}}( 2, -1, x, 2 )
     <Float64Array>[ 3.0, -2.0, 1.0, -4.0 ]
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0 ] );
     > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > {{alias}}( N, 1, x1, 2 )
+    > {{alias}}( 2, 1, x1, 2 )
     <Float64Array>[ -4.0, 3.0, -2.0 ]
     > x0
     <Float64Array>[ 1.0, -4.0, 3.0, -2.0 ]
 
-{{alias}}.ndarray( N, order, x, stride, offset )
+
+{{alias}}.ndarray( N, order, x, strideX, offsetX )
     Sorts a double-precision floating-point strided array using heapsort and
     alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
 
     Parameters
     ----------
@@ -89,11 +88,11 @@
     x: Float64Array
         Input array.
 
-    stride: integer
-        Index increment for `x`.
+    strideX: integer
+        Stride length.
 
-    offset: integer
-        Starting index of `x`.
+    offsetX: integer
+        Starting index.
 
     Returns
     -------
@@ -109,8 +108,7 @@
 
     // Using an index offset:
     > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0 ] );
-    > var N = {{alias:@stdlib/math/base/special/floor}}( x.length / 2 );
-    > {{alias}}.ndarray( N, 1, x, 2, 1 )
+    > {{alias}}.ndarray( 2, 1, x, 2, 1 )
     <Float64Array>[ 1.0, -4.0, 3.0, -2.0 ]
 
     See Also

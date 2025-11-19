@@ -16,7 +16,8 @@
   ],
   "main": "./package.json",
   "directories": {
-    "benchmark": "./benchmark"
+    "benchmark": "./benchmark",
+    "data": "./data"
   },
   "scripts": {
     "bench": "make benchmark"
@@ -29,11 +30,11 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "engines": {},
   "dependencies": {
-    "mathjs": "^13.0.3"
+    "mathjs": "^14.7.0"
   },
   "devDependencies": {},
+  "engines": {},
   "os": [
     "aix",
     "darwin",

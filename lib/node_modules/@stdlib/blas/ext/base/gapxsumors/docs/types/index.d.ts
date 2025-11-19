@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `gapxsumors`.
@@ -41,7 +46,7 @@ interface Routine {
 	* var v = gapxsumors( x.length, 5.0, x, 1 );
 	* // returns 16.0
 	*/
-	( N: number, alpha: number, x: NumericArray, strideX: number ): number;
+	( N: number, alpha: number, x: InputArray, strideX: number ): number;
 
 	/**
 	* Adds a scalar constant to each strided array element and computes the sum using ordinary recursive summation and alternative indexing semantics.
@@ -59,7 +64,7 @@ interface Routine {
 	* var v = gapxsumors.ndarray( x.length, 5.0, x, 1, 0 );
 	* // returns 16.0
 	*/
-	ndarray( N: number, alpha: number, x: NumericArray, strideX: number, offsetX: number ): number;
+	ndarray( N: number, alpha: number, x: InputArray, strideX: number, offsetX: number ): number;
 }
 
 /**

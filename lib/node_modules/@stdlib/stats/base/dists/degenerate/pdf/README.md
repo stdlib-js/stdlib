@@ -106,21 +106,17 @@ y = mypdf( 12.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
 var pdf = require( '@stdlib/stats/base/dists/degenerate/pdf' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 
-var mu;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 100, 0, 5, opts );
+var mu = discreteUniform( 100, 0, 5, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = round( randu()*5.0 );
-    mu = round( randu()*5.0 );
-    y = pdf( x, mu );
-    console.log( 'x: %d, µ: %d, f(x;µ): %d', x, mu, y );
-}
+logEachMap( 'x: %0.4f, µ: %0.4f, f(x;µ): %0.4f', x, mu, pdf );
 ```
 
 </section>

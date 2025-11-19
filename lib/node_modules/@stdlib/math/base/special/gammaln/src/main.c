@@ -396,7 +396,7 @@ static double polyval_w( const double x ) {
 * ```
 *
 * @param x    input value
-* @returns    function value
+* @return     function value
 *
 * @example
 * double out = stdlib_base_gammaln( 1.0 );

@@ -28,7 +28,7 @@
 * @return      variance
 *
 * @example
-* double y = stdlib_base_gumbel_variance( 0.0, 1.0 );
+* double y = stdlib_base_dists_gumbel_variance( 0.0, 1.0 );
 * // returns ~1.645
 */
 double stdlib_base_dists_gumbel_variance( const double mu, const double beta ) {
