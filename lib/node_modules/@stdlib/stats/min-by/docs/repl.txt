@@ -1,0 +1,113 @@
+
+{{alias}}( x[, options], clbk[, thisArg] )
+    Computes the minimum value along one or more ndarray dimensions according to
+    a callback function.
+
+    The callback function is provided three arguments:
+
+    - value: current array element.
+    - index: current array index.
+    - array: the input ndarray.
+
+    The callback function should return a numeric value.
+
+    If the callback function does not return any value (or equivalently,
+    explicitly returns `undefined`), the value is ignored.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output array data type. Must be a real-valued or "generic" data type.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform a reduction. If not provided,
+        the function performs a reduction over all elements in a provided input
+        ndarray.
+
+    options.keepdims: boolean (optional)
+        Boolean indicating whether the reduced dimensions should be included in
+        the returned ndarray as singleton dimensions. Default: false.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback function execution context.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
+    > function clbk( v ) { return v * 2.0; };
+    > var y = {{alias}}( x, clbk );
+    > var v = y.get()
+    -8.0
+
+
+{{alias}}.assign( x, out[, options], clbk[, thisArg] )
+    Computes the minimum value along one or more ndarray dimensions according to
+    a callback function and assigns results to a provided output ndarray.
+
+    The callback function is provided three arguments:
+
+    - value: current array element.
+    - index: current array index.
+    - array: the input ndarray.
+
+    The callback function should return a numeric value.
+
+    If the callback function does not return any value (or equivalently,
+    explicitly returns `undefined`), the value is ignored.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    out: ndarray
+        Output array.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform a reduction. If not provided,
+        the function performs a reduction over all elements in a provided input
+        ndarray.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback function execution context.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
+    > var out = {{alias:@stdlib/ndarray/zeros}}( [] );
+    > function clbk( v ) { return v * 2.0; };
+    > var y = {{alias}}.assign( x, out, clbk )
+    <ndarray>
+    > var bool = ( out === y )
+    true
+    > var v = out.get()
+    -8.0
+
+    See Also
+    --------
+

@@ -40,6 +40,7 @@
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-double",
         "@stdlib/blas/ext/base/sdssumpw",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/base/shared"

@@ -209,7 +209,7 @@ The function accepts the following arguments:
 -   **x**: `[in] double` input value.
 
 ```c
-double stdlib_base_factorialln( const double n );
+double stdlib_base_factorialln( const double x );
 ```
 
 </section>
