@@ -18,6 +18,8 @@ limitations under the License.
 
 -->
 
+<!-- lint disable maximum-heading-length -->
+
 # sspr
 
 > Perform the symmetric rank 1 operation `A = α*x*x^T + A`.
@@ -213,7 +215,7 @@ The function accepts the following arguments:
 void c_sspr( const CBLAS_LAYOUT order, const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, float *AP )
 ```
 
-#### c_sspr_ndarray( order, uplo, N, alpha, \*X, strideX, \*AP, strideAP, offsetAP )
+#### c_sspr_ndarray( order, uplo, N, alpha, \*X, strideX, offsetX, \*AP, strideAP, offsetAP )
 
 Performs the symmetric rank 1 operation `A = α*x*x^T + A` where `α` is a scalar, `x` is an `N` element vector, and `A` is an `N` by `N` symmetric matrix supplied in packed form using alternative indexing semantics.
 
@@ -234,6 +236,7 @@ The function accepts the following arguments:
 -   **alpha**: `[in] float` scalar.
 -   **X**: `[in] float*` input vector.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 -   **AP**: `[inout] float*` packed form of a symmetric matrix `A`.
 -   **strideAP**: `[in] CBLAS_INT` stride length for `AP`.
 -   **offsetAP**: `[in] CBLAS_INT` starting index for `AP`.

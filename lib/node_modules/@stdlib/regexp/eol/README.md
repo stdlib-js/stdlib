@@ -32,7 +32,7 @@ var reEOL = require( '@stdlib/regexp/eol' );
 
 #### reEOL( \[options] )
 
-Returns a [Regular expression][mdn-regexp] to match a [newline][newline] character sequence. 
+Returns a [Regular expression][mdn-regexp] to match a [newline][newline] character sequence.
 
 ```javascript
 var RE_EOL = reEOL();
@@ -80,7 +80,7 @@ var arr = str.split( RE_EOL );
 
 #### reEOL.REGEXP
 
-[Regular expression][mdn-regexp] to match a [newline][newline] character sequence. 
+[Regular expression][mdn-regexp] to match a [newline][newline] character sequence.
 
 ```javascript
 var bool = reEOL.REGEXP.test( 'abc' );
@@ -89,7 +89,7 @@ var bool = reEOL.REGEXP.test( 'abc' );
 
 #### reEOL.REGEXP_CAPTURE
 
-[Regular expression][mdn-regexp] to capture a [newline][newline] character sequence. 
+[Regular expression][mdn-regexp] to capture a [newline][newline] character sequence.
 
 ```javascript
 var parts = reEOL.REGEXP_CAPTURE.exec( '\n' );

@@ -113,22 +113,18 @@ y = mycdf( 4.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cdf = require( '@stdlib/stats/base/dists/laplace/cdf' );
 
-var mu;
-var b;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, 0.0, 10.0, opts );
+var mu = uniform( 100, 0.0, 10.0, opts );
+var b = uniform( 100, 0.0, 10.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = randu() * 10.0;
-    mu = randu() * 10.0;
-    b = randu() * 10.0;
-    y = cdf( x, mu, b );
-    console.log( 'x: %d, µ: %d, b: %d, F(x;µ,b): %d', x.toFixed( 4 ), mu.toFixed( 4 ), b.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %04f, µ: %04f, b: %04f, F(x;µ,b): %04f', x, mu, b, cdf );
 ```
 
 </section>
