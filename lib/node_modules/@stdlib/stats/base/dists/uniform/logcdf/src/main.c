@@ -27,7 +27,7 @@
 * @param x   input value
 * @param a   minimum support
 * @param b   maximum support
-* @returns   evaluated logCDF
+* @return    evaluated logCDF
 *
 * @example
 * double y = stdlib_base_dists_uniform_logcdf( 9.0, 0.0, 10.0 );

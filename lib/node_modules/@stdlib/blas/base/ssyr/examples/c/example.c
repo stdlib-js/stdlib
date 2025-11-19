@@ -21,26 +21,38 @@
 #include <stdio.h>
 
 int main( void ) {
-	// Create strided arrays:
-	float A[] = { 1.0f, 0.0f, 0.0f, 2.0f, 1.0f, 0.0f, 3.0f, 2.0f, 1.0f };
-	const float x[] = { 1.0f, 2.0f, 3.0f };
+	// Define 3x3 symmetric matrices stored in row-major layout:
+	float A1[ 3*3 ] = {
+		1.0f, 2.0f, 3.0f,
+		2.0f, 1.0f, 2.0f,
+		3.0f, 2.0f, 1.0f
+	};
 
-	// Specify the number of elements along each dimension of `A`:
+	float A2[ 3*3 ] = {
+		1.0f, 2.0f, 3.0f,
+		2.0f, 1.0f, 2.0f,
+		3.0f, 2.0f, 1.0f
+	};
+
+	// Define a vector:
+	const float x[ 3 ] = { 1.0f, 2.0f, 3.0f };
+
+	// Specify the number of elements along each dimension of `A1` and `A2`:
 	const int N = 3;
 
 	// Perform the symmetric rank 1 operation `A = α*x*x^T + A`:
-	c_ssyr( CblasColMajor, CblasUpper, N, 1.0f, x, 1, A, N );
+	c_ssyr( CblasColMajor, CblasUpper, N, 1.0f, x, 1, A1, N );
 
 	// Print the result:
 	for ( int i = 0; i < N*N; i++ ) {
-		printf( "A[ %i ] = %f\n", i, A[ i ] );
+		printf( "A1[ %i ] = %f\n", i, A1[ i ] );
 	}
 
-	// Perform the symmetric rank 1 operation `A = α*x*x^T + A`:
-	c_ssyr_ndarray( CblasUpper, N, 1.0f, x, 1, 0, A, N, 1, 0 );
+	// Perform the symmetric rank 1 operation `A = α*x*x^T + A` using alternative indexing semantics:
+	c_ssyr_ndarray( CblasUpper, N, 1.0f, x, 1, 0, A2, N, 1, 0 );
 
 	// Print the result:
 	for ( int i = 0; i < N*N; i++ ) {
-		printf( "A[ %i ] = %f\n", i, A[ i ] );
+		printf( "A2[ %i ] = %f\n", i, A2[ i ] );
 	}
 }

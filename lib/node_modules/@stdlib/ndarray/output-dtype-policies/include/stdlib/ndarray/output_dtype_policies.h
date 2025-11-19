@@ -36,6 +36,9 @@ enum STDLIB_NDARRAY_OUTPUT_DTYPE_POLICY {
 	// Return a promoted data type:
 	STDLIB_NDARRAY_OUTPUT_POLICY_PROMOTED,
 
+	// Return a data type amenable to accumulation:
+	STDLIB_NDARRAY_OUTPUT_POLICY_ACCUMULATION,
+
 	// Return a boolean data type:
 	STDLIB_NDARRAY_OUTPUT_POLICY_BOOLEAN,
 
@@ -90,8 +93,29 @@ enum STDLIB_NDARRAY_OUTPUT_DTYPE_POLICY {
 	// Return a numeric or "generic" (JavaScript object) data type:
 	STDLIB_NDARRAY_OUTPUT_POLICY_NUMERIC_AND_GENERIC,
 
+	// Return an integer index data type:
+	STDLIB_NDARRAY_OUTPUT_POLICY_INTEGER_INDEX,
+
+	// Return an integer index or "generic" (JavaScript object) data type:
+	STDLIB_NDARRAY_OUTPUT_POLICY_INTEGER_INDEX_AND_GENERIC,
+
+	// Return a boolean index data type:
+	STDLIB_NDARRAY_OUTPUT_POLICY_BOOLEAN_INDEX,
+
+	// Return a boolean index or "generic" (JavaScript object) data type:
+	STDLIB_NDARRAY_OUTPUT_POLICY_BOOLEAN_INDEX_AND_GENERIC,
+
+	// Return a mask index data type:
+	STDLIB_NDARRAY_OUTPUT_POLICY_MASK_INDEX,
+
+	// Return a mask index or "generic" (JavaScript object) data type:
+	STDLIB_NDARRAY_OUTPUT_POLICY_MASK_INDEX_AND_GENERIC,
+
 	// Return the default data type:
 	STDLIB_NDARRAY_OUTPUT_POLICY_DEFAULT,
+
+	// Return the default index data type:
+	STDLIB_NDARRAY_OUTPUT_POLICY_DEFAULT_INDEX,
 
 	// "Compute" the number of data type policies (this works because of how `enum` works: the value is automatically set to the last enumerated type plus 1):
 	STDLIB_NDARRAY_NPOLICIES,

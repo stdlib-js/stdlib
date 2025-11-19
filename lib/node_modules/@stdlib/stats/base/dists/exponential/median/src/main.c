@@ -34,5 +34,5 @@ double stdlib_base_dists_exponential_median( const double lambda ) {
 	if ( stdlib_base_is_nan( lambda ) || lambda <= 0.0 ) {
 		return 0.0 / 0.0; // NaN
 	}
-	return STDLIB_CONSTANT_FLOAT64_LN2 / lambda;
+	return ( 1.0 / lambda ) * STDLIB_CONSTANT_FLOAT64_LN2;
 }

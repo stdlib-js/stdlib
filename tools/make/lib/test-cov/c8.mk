@@ -49,14 +49,19 @@ C8_EXCLUDES_FLAGS = \
 	-x "**/$(CONFIG_FOLDER)/**" \
 	-x "**/$(DOCUMENTATION_FOLDER)/**"
 
+# Define user-supplied command-line options:
+C8_FLAGS ?=
+
 # Define command-line options when generating coverage data:
-C8_FLAGS = \
+c8_flags = \
 	$(C8_EXCLUDES_FLAGS) \
 	--clean=false \
 	--temp-directory $(COVERAGE_DIR)/tmp \
 	--report-dir $(COVERAGE_DIR) \
 	--reporter lcov
 
+# Append user-supplied command-line options:
+c8_flags += $(C8_FLAGS)
 
 # RULES #
 
@@ -87,7 +92,7 @@ ifeq ($(FAIL_FAST), true)
 		NODE_ENV="$(NODE_ENV_TEST)" \
 		NODE_PATH="$(NODE_PATH_TEST)" \
 		TEST_MODE=coverage \
-		$(C8) $(C8_FLAGS) $(NODE) $$test | $(TAP_REPORTER) || exit 1; \
+		$(C8) $(c8_flags) $(NODE) $$test | $(TAP_REPORTER) || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_TESTS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r test; do \
@@ -96,7 +101,7 @@ else
 		NODE_ENV="$(NODE_ENV_TEST)" \
 		NODE_PATH="$(NODE_PATH_TEST)" \
 		TEST_MODE=coverage \
-		$(C8) $(C8_FLAGS) $(NODE) $$test | $(TAP_REPORTER) || echo 'Tests failed.'; \
+		$(C8) $(c8_flags) $(NODE) $$test | $(TAP_REPORTER) || echo 'Tests failed.'; \
 	done
 endif
 

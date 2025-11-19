@@ -61,16 +61,17 @@ v = cosm1( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var PI = require( '@stdlib/constants/float64/pi' );
 var cosm1 = require( '@stdlib/math/base/special/cosm1' );
 
-var x = linspace( 0.0, 2.0*PI, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, 0.0, 2.0*PI, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( cosm1( x[ i ] ) );
-}
+logEachMap( 'cos(%0.4f) - 1 = %0.4f', x, cosm1 );
 ```
 
 </section>

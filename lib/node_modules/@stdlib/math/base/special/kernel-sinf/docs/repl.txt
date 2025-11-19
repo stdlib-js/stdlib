@@ -1,0 +1,30 @@
+
+{{alias}}( x )
+    Computes the sine of a number on the interval [-π/4, π/4] in
+    single-precision floating-point format.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    Returns
+    -------
+    out: number
+        Sine.
+
+    Examples
+    --------
+    > var out = {{alias}}( 0.0 )
+    ~0.0
+    > out = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/6.0 )
+    ~0.5
+    > out = {{alias}}( 0.619 )
+    ~0.580
+    > out = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------

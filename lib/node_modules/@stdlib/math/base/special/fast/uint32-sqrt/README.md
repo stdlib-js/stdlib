@@ -129,7 +129,7 @@ uint32_t out = stdlib_base_fast_uint32_sqrt( 2 );
 // returns 1
 
 out = stdlib_base_fast_uint32_sqrt( 8 );
-// returns 3
+// returns 2
 ```
 
 The function accepts the following arguments:

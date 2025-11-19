@@ -45,8 +45,8 @@
 
 
 {{alias}}.factory( c )
-    Returns a function for evaluating the cumulative distribution function
-    (CDF) of a Bradford distribution with shape parameter `c`.
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    of a Bradford distribution with shape parameter `c`.
 
     Parameters
     ----------

@@ -26,34 +26,34 @@
 * Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant.
 *
 * @param N        number of indexed elements
-* @param ca       scalar constant
-* @param CX       input array
-* @param strideX  CX stride length
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  X stride length
 */
-void API_SUFFIX(c_cscal)( const CBLAS_INT N, const stdlib_complex64_t ca, void *CX, const CBLAS_INT strideX ) {
+void API_SUFFIX(c_cscal)( const CBLAS_INT N, const stdlib_complex64_t alpha, void *X, const CBLAS_INT strideX ) {
 	CBLAS_INT sx = strideX;
 	if ( sx < 0 ) {
 		sx = -sx;
 	}
-	cscal( &N, &ca, CX, &sx );
+	cscal( &N, &alpha, X, &sx );
 }
 
 /**
 * Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant using alternative indexing semantics.
 *
 * @param N        number of indexed elements
-* @param ca       scalar constant
-* @param CX       input array
-* @param strideX  CX stride length
-* @param offsetX  starting index for CX
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
 */
-void API_SUFFIX(c_cscal_ndarray)( const CBLAS_INT N, const stdlib_complex64_t ca, void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	stdlib_complex64_t *cx = (stdlib_complex64_t *)CX;
+void API_SUFFIX(c_cscal_ndarray)( const CBLAS_INT N, const stdlib_complex64_t alpha, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	stdlib_complex64_t *x = (stdlib_complex64_t *)X;
 	CBLAS_INT sx = strideX;
 
-	cx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	x += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
 	if ( sx < 0 ) {
 		sx = -sx;
 	}
-	cscal( &N, &ca, (void *)cx, &sx );
+	cscal( &N, &alpha, (void *)x, &sx );
 }
