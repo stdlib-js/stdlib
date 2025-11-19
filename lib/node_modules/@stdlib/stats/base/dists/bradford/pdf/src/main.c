@@ -33,16 +33,10 @@
 */
 double stdlib_base_dists_bradford_pdf( const double x, const double c ) {
 	double k;
-
-	if (
-		stdlib_base_is_nan( x ) ||
-		stdlib_base_is_nan( c ) ||
-		c <= 0.0
-	) {
+	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( c ) || c <= 0.0 ) {
 		return 0.0/0.0; // NaN
 	}
 	if ( x < 0.0 || x > 1.0 ) {
-		// Support of the Bradford distribution: [0,1]
 		return 0.0;
 	}
 	k = stdlib_base_log1p( c );

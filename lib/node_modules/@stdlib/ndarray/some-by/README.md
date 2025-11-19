@@ -67,7 +67,7 @@ The function accepts the following arguments:
 -   **predicate**: predicate function.
 -   **thisArg**: predicate execution context (_optional_).
 
-The function accepts the following `options`:
+The function accepts the following options:
 
 -   **dims**: list of dimensions over which to perform a reduction.
 -   **keepdims**: boolean indicating whether the reduced dimensions should be included in the returned [`ndarray`][@stdlib/ndarray/ctor] as singleton dimensions. Default: `false`.
@@ -146,7 +146,7 @@ var ctx = {
     'count': 0
 };
 
-// Perform operation:
+// Perform reduction:
 var out = someBy( x, 2, predicate, ctx );
 // returns <ndarray>
 

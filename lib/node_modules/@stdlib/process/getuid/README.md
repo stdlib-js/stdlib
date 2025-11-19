@@ -46,7 +46,7 @@ var id = getuid();
 
 ## Notes
 
--   The function **only** returns an `integer` user identity on POSIX platforms. For all other platforms (e.g., Windows, browsers, and Android), the function returns `null`. 
+-   The function **only** returns an `integer` user identity on POSIX platforms. For all other platforms (e.g., Windows, browsers, and Android), the function returns `null`.
 -   See [getuid(2)][getuid].
 
 </section>

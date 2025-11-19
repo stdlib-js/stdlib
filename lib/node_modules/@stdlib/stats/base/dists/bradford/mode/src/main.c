@@ -30,10 +30,7 @@
 * // returns 0.0
 */
 double stdlib_base_dists_bradford_mode( const double c ) {
-	if (
-		stdlib_base_is_nan( c ) ||
-		c <= 0.0
-	) {
+	if ( stdlib_base_is_nan( c ) || c <= 0.0 ) {
 		return 0.0/0.0; // NaN
 	}
 	return 0.0;

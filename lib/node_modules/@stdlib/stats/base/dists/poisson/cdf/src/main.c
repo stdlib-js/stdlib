@@ -40,10 +40,7 @@ double stdlib_base_dists_poisson_cdf( const double x, const double lambda ) {
 	if ( x < 0.0 ) {
 		return 0.0;
 	}
-	if ( lambda == 0.0 ) {
-		return 1.0;
-	}
-	if ( x == STDLIB_CONSTANT_FLOAT64_PINF ) {
+	if ( lambda == 0.0 || x == STDLIB_CONSTANT_FLOAT64_PINF ) {
 		return 1.0;
 	}
 	return stdlib_base_gammainc( lambda, stdlib_base_floor( x ) + 1.0, true, true );

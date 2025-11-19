@@ -33,12 +33,9 @@
 */
 double stdlib_base_dists_bradford_stdev( const double c ) {
 	double k;
-	if (
-		stdlib_base_is_nan( c ) ||
-		c <= 0.0
-	) {
+	if ( stdlib_base_is_nan( c ) || c <= 0.0 ) {
 		return 0.0/0.0; // NaN
 	}
 	k = stdlib_base_ln( 1.0 + c );
-	return stdlib_base_sqrt( ( ( ( 2.0 + c ) * k ) - ( 2.0 * c ) ) / ( 2.0 * c * k * k ) );
+	return stdlib_base_sqrt( ( ( ( 2.0+c ) * k ) - ( 2.0*c ) ) / ( 2.0*c*k*k ) );
 }

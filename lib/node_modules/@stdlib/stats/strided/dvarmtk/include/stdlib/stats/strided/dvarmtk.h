@@ -31,12 +31,12 @@ extern "C" {
 /**
 * Computes the variance of a double-precision floating-point strided array provided a known mean and using a one-pass textbook algorithm.
 */
-double API_SUFFIX(stdlib_strided_dvarmtk)( const CBLAS_INT N, const double mean, const double correction, const double *X, const CBLAS_INT strideX );
+double API_SUFFIX(stdlib_strided_dvarmtk)( const CBLAS_INT N, const double correction, const double mean, const double *X, const CBLAS_INT strideX );
 
 /**
 * Computes the variance of a double-precision floating-point strided array provided a known mean and using a one-pass textbook algorithm and alternative indexing semantics.
 */
-double API_SUFFIX(stdlib_strided_dvarmtk_ndarray)( const CBLAS_INT N, const double mean, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+double API_SUFFIX(stdlib_strided_dvarmtk_ndarray)( const CBLAS_INT N, const double correction, const double mean, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }
