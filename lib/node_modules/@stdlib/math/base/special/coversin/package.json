@@ -72,5 +72,89 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "coversin",
+      "alias": "coversin",
+      "pkg_desc": "compute the coversed sine (in radians) of a double-precision floating-point number",
+      "desc": "computes the coversed sine (in radians) of a double-precision floating-point number",
+      "short_desc": "coversed sine",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in radians)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -50,
+              50
+            ]
+          },
+          "example_values": [
+            -7.3,
+            -5.4,
+            -2.2,
+            -0.9,
+            -0.12,
+            0,
+            0.19,
+            0.68,
+            1.4,
+            2.1,
+            3.2,
+            -1.7,
+            4.9,
+            -3.8,
+            6.1,
+            -4.5,
+            8.7,
+            -9.9,
+            10.8,
+            -11.6
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "coversed sine",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "coversin",
+        "coversine",
+        "versed sine",
+        "coversed",
+        "cosinus versus",
+        "coversinus",
+        "covers",
+        "cosiv",
+        "cvs",
+        "versed",
+        "sine",
+        "sin"
+      ],
+      "extra_keywords": [
+        "math.sin"
+      ]
+    }
+  }
 }

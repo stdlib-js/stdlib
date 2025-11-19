@@ -250,7 +250,7 @@ The function accepts the following arguments:
 -   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
 
 ```c
-double c_ddot_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY. const CBLAS_INT offsetY );
+double c_ddot_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 ```
 
 </section>

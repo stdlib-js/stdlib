@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import gcusumpw = require( './index' );
 
 
@@ -26,7 +27,8 @@ import gcusumpw = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	gcusumpw( x.length, 0.0, x, 1, y, 1 ); // $ExpectType NumericArray
+	gcusumpw( x.length, 0.0, x, 1, y, 1 ); // $ExpectType Float64Array
+	gcusumpw( x.length, 0.0, new AccessorArray( x ), 1, new AccessorArray( y ), 1 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -139,7 +141,8 @@ import gcusumpw = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	gcusumpw.ndarray( x.length, 0.0, x, 1, 0, y, 1, 0 ); // $ExpectType NumericArray
+	gcusumpw.ndarray( x.length, 0.0, x, 1, 0, y, 1, 0 ); // $ExpectType Float64Array
+	gcusumpw.ndarray( x.length, 0.0, new AccessorArray( x ), 1, 0, new AccessorArray( y ), 1, 0 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

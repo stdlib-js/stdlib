@@ -87,17 +87,16 @@ var v = sqrt( -4.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var sqrt = require( '@stdlib/math/base/special/sqrt' );
 
-var x;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 100, 0, 100, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = round( randu() * 100.0 );
-    console.log( 'sqrt(%d) = %d', x, sqrt( x ) );
-}
+logEachMap( 'sqrt(%d) = %0.4f', x, sqrt );
 ```
 
 </section>
