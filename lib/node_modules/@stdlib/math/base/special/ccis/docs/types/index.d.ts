@@ -44,6 +44,7 @@ import { Complex128 } from '@stdlib/types/complex';
 *
 * var im = imag( out );
 * // returns 0.0
+*
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
 * var real = require( '@stdlib/complex/float64/real' );
@@ -61,9 +62,9 @@ import { Complex128 } from '@stdlib/types/complex';
 * var im = imag( out );
 * // returns ~0.841
 */
-declare function cis( z: Complex128 ): Complex128;
+declare function ccis( z: Complex128 ): Complex128;
 
 
 // EXPORTS //
 
-export = cis;
+export = ccis;

@@ -98,6 +98,7 @@ var v = minabsn();
 
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
+var naryFunction = require( '@stdlib/utils/nary-function' );
 var logEachMap = require( '@stdlib/console/log-each-map' );
 var minabsn = require( '@stdlib/math/base/special/minabsn' );
 
@@ -107,11 +108,7 @@ var opts = {
 var x = uniform( 100, -500.0, 500.0, opts );
 var y = uniform( 100, -500.0, 500.0, opts );
 
-function wrapper( a, b ) {
-    return minabsn( a, b );
-}
-
-logEachMap( 'minabsn(%0.4f,%0.4f) = %0.4f', x, y, wrapper );
+logEachMap( 'minabsn(%0.4f,%0.4f) = %0.4f', x, y, naryFunction( minabsn, 2 ) );
 ```
 
 </section>

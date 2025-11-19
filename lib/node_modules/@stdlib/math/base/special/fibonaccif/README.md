@@ -164,19 +164,19 @@ logEachMap( 'fibonaccif(%d) = %0.1f', x, fibonaccif );
 Computes the nth [Fibonacci number][fibonacci-number] as a single-precision floating-point number.
 
 ```c
-float out = stdlib_base_fibonaccif( 0 );
+float out = stdlib_base_fibonaccif( 0.0f );
 // returns 0.0f
 
-out = stdlib_base_fibonaccif( 1 );
+out = stdlib_base_fibonaccif( 1.0f );
 // returns 1.0f
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int32_t` input value.
+-   **n**: `[in] float` input value.
 
 ```c
-float stdlib_base_fibonaccif( const int32_t n );
+float stdlib_base_fibonaccif( const float n );
 ```
 
 </section>
@@ -200,15 +200,14 @@ float stdlib_base_fibonaccif( const int32_t n );
 ```c
 #include "stdlib/math/base/special/fibonaccif.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-    int32_t i;
+    float i;
     float v;
 
-    for ( i = 0; i < 37; i++ ) {
+    for ( i = 0.0f; i < 37.0f; i++ ) {
         v = stdlib_base_fibonaccif( i );
-        printf( "fibonaccif(%d) = %f\n", i, v );
+        printf( "fibonaccif(%f) = %f\n", i, v );
     }
 }
 ```

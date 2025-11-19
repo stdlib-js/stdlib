@@ -42,7 +42,9 @@
         "@stdlib/math/base/special/floorf",
         "@stdlib/math/base/special/gcdf",
         "@stdlib/constants/float32/pinf",
-        "@stdlib/constants/float32/max-safe-integer"
+        "@stdlib/constants/float32/max-safe-integer",
+        "@stdlib/math/base/assert/is-integerf",
+        "@stdlib/math/base/assert/is-oddf"
       ]
     },
     {
@@ -61,7 +63,9 @@
         "@stdlib/math/base/special/floorf",
         "@stdlib/math/base/special/gcdf",
         "@stdlib/constants/float32/pinf",
-        "@stdlib/constants/float32/max-safe-integer"
+        "@stdlib/constants/float32/max-safe-integer",
+        "@stdlib/math/base/assert/is-integerf",
+        "@stdlib/math/base/assert/is-oddf"
       ]
     },
     {
@@ -80,7 +84,9 @@
         "@stdlib/math/base/special/floorf",
         "@stdlib/math/base/special/gcdf",
         "@stdlib/constants/float32/pinf",
-        "@stdlib/constants/float32/max-safe-integer"
+        "@stdlib/constants/float32/max-safe-integer",
+        "@stdlib/math/base/assert/is-integerf",
+        "@stdlib/math/base/assert/is-oddf"
       ]
     }
   ]

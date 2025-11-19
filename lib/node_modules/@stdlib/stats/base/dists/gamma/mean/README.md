@@ -123,21 +123,18 @@ v = mean( 1.0, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var mean = require( '@stdlib/stats/base/dists/gamma/mean' );
 
-var alpha;
-var beta;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var alpha = uniform( 10, EPS, 10.0, opts );
+var beta = uniform( 10, EPS, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    alpha = ( randu()*10.0 ) + EPS;
-    beta = ( randu()*10.0 ) + EPS;
-    v = mean( alpha, beta );
-    console.log( 'α: %d, β: %d, E(X;α,β): %d', alpha.toFixed( 4 ), beta.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'α: %0.4f, β: %0.4f, E(X;α,β): %0.4f', alpha, beta, mean );
 ```
 
 </section>

@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/ndarray/base/unary-accumulate",
   "version": "0.0.0",
-  "description": "Perform a reduction over elements in a input ndarray.",
+  "description": "Perform a reduction over elements in an input ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

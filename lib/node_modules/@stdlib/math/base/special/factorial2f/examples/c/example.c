@@ -18,15 +18,14 @@
 
 #include "stdlib/math/base/special/factorial2f.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-	const int32_t x[] = { 1, 10, 50, 56, 57 };
+	const float x[] = { 1.0f, 10.0f, 50.0f, 56.0f, 57.0f };
 
 	float b;
 	int i;
 	for ( i = 0; i < 5; i++ ) {
 		b = stdlib_base_factorial2f( x[ i ] );
-		printf ( "factorial2f(%d) = %f\n", x[ i ], b );
+		printf ( "factorial2f(%f) = %f\n", x[ i ], b );
 	}
 }
