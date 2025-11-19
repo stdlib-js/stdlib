@@ -35,7 +35,6 @@ float API_SUFFIX(stdlib_strided_sdsapxsum)( const CBLAS_INT N, const float alpha
 	return API_SUFFIX(stdlib_strided_sdsapxsum_ndarray)( N, alpha, X, strideX, ox );
 }
 
-
 /**
 * Adds a constant to each single-precision floating-point strided array element and computes the sum using extended accumulation and alternative indexing semantics.
 *

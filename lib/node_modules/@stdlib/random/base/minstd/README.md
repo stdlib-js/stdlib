@@ -89,23 +89,20 @@ var r = rand();
 To return a generator having a specific initial state, set the generator `state` option.
 
 ```javascript
-var rand;
-var bool;
+// Generate pseudorandom numbers, thus progressing the generator state:
 var r;
 var i;
-
-// Generate pseudorandom numbers, thus progressing the generator state:
 for ( i = 0; i < 1000; i++ ) {
     r = minstd();
 }
 
 // Create a new PRNG initialized to the current state of `minstd`:
-rand = minstd.factory({
+var rand = minstd.factory({
     'state': minstd.state
 });
 
 // Test that the generated pseudorandom numbers are the same:
-bool = ( rand() === minstd() );
+var bool = ( rand() === minstd() );
 // returns true
 ```
 
@@ -141,17 +138,15 @@ var max = minstd.MAX;
 The value used to seed `minstd()`.
 
 ```javascript
-var rand;
+// Generate pseudorandom values...
 var r;
 var i;
-
-// Generate pseudorandom values...
 for ( i = 0; i < 100; i++ ) {
     r = minstd();
 }
 
 // Generate the same pseudorandom values...
-rand = minstd.factory({
+var rand = minstd.factory({
     'seed': minstd.seed
 });
 for ( i = 0; i < 100; i++ ) {
@@ -257,18 +252,15 @@ var o = minstd.toJSON();
 ```javascript
 var minstd = require( '@stdlib/random/base/minstd' );
 
-var seed;
-var rand;
-var i;
-
 // Generate pseudorandom numbers...
+var i;
 for ( i = 0; i < 100; i++ ) {
     console.log( minstd() );
 }
 
 // Create a new pseudorandom number generator...
-seed = 1234;
-rand = minstd.factory({
+var seed = 1234;
+var rand = minstd.factory({
     'seed': seed
 });
 for ( i = 0; i < 100; i++ ) {

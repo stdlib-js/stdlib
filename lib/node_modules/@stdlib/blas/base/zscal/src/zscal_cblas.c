@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -25,10 +25,34 @@
 * Scales a double-precision complex floating-point vector by a double-precision complex floating-point constant.
 *
 * @param N        number of indexed elements
-* @param za       scalar constant
-* @param ZX       input array
-* @param strideX  ZX stride length
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  X stride length
 */
-void API_SUFFIX(c_zscal)( const CBLAS_INT N, const stdlib_complex128_t za, void *ZX, const CBLAS_INT strideX ) {
-	cblas_zscal( N, za, ZX, strideX );
+void API_SUFFIX(c_zscal)( const CBLAS_INT N, const stdlib_complex128_t alpha, void *X, const CBLAS_INT strideX ) {
+	CBLAS_INT sx = strideX;
+	if ( sx < 0 ) {
+		sx = -sx;
+	}
+	API_SUFFIX(cblas_zscal)( N, alpha, X, sx );
+}
+
+/**
+* Scales a double-precision complex floating-point vector by a double-precision complex floating-point constant using alternative indexing semantics.
+*
+* @param N        number of indexed elements
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+*/
+void API_SUFFIX(c_zscal_ndarray)( const CBLAS_INT N, const stdlib_complex128_t alpha, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	stdlib_complex128_t *x = (stdlib_complex128_t *)X;
+	CBLAS_INT sx = strideX;
+
+	x += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	if ( sx < 0 ) {
+		sx = -sx;
+	}
+	API_SUFFIX(cblas_zscal)( N, alpha, (void *)x, sx );
 }

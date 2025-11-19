@@ -45,7 +45,7 @@
 * STDLIB_NDARRAY_NULLARY_5D_BLOCKED_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_NULLARY_5D_BLOCKED_LOOP_PREAMBLE                        \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
 	int64_t shape[5];                                                          \
 	int64_t sx1[5];                                                            \
 	int64_t idx[5];                                                            \
@@ -177,8 +177,8 @@
 * STDLIB_NDARRAY_NULLARY_5D_BLOCKED_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_NULLARY_5D_BLOCKED_LOOP_TWO_OUT_PREAMBLE                \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
-	struct ndarray *x2 = arrays[ 1 ];                                          \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
+	const struct ndarray *x2 = arrays[ 1 ];                                    \
 	int64_t shape[5];                                                          \
 	int64_t sx1[5];                                                            \
 	int64_t sx2[5];                                                            \

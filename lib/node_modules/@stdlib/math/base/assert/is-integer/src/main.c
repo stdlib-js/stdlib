@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/math/base/special/floor.h"
+#include <stdbool.h>
 
 /**
 * Tests if a finite double-precision floating-point number is an integer.
@@ -32,5 +33,5 @@
 * // returns true
 */
 bool stdlib_base_is_integer( const double x ) {
-	return ( x == stdlib_base_floor( x ) );
+	return ( stdlib_base_floor( x ) == x );
 }

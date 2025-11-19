@@ -61,6 +61,8 @@ s = significandf( NaN ); // => 10000000000000000000000
 
 ## Examples
 
+<!-- eslint-disable @cspell/spellchecker -->
+
 <!-- eslint no-undef: "error" -->
 
 ```javascript
@@ -161,7 +163,7 @@ int32_t stdlib_base_float32_significand( const float x );
 #include <inttypes.h>
 
 int main( void ) {
-    float x[] = { 4.0f, 0.0f, -0.0f, 1.0f, -1.0f, 3.14f, -3.14f, 1.0e38f, -1.0e38f, 1.0f/0.0f, -1.0f/0.0f, 0.0f/0.0f };
+    const float x[] = { 4.0f, 0.0f, -0.0f, 1.0f, -1.0f, 3.14f, -3.14f, 1.0e38f, -1.0e38f, 1.0f/0.0f, -1.0f/0.0f, 0.0f/0.0f };
 
     int32_t out;
     int i;

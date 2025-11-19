@@ -71,6 +71,26 @@ interface DataTypes {
 	* Default boolean value data type.
 	*/
 	boolean: 'bool';
+
+	/**
+	* Default index data type.
+	*/
+	index: 'int32';
+
+	/**
+	* Default integer index data type.
+	*/
+	integer_index: 'int32';
+
+	/**
+	* Default boolean index data type.
+	*/
+	boolean_index: 'bool';
+
+	/**
+	* Default mask index data type.
+	*/
+	mask_index: 'uint8';
 }
 
 /**

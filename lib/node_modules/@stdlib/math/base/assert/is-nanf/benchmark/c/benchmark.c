@@ -90,15 +90,18 @@ static float rand_float( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
+	float x[ 100 ];
 	double t;
-	float x;
 	int y;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 100.0f*rand_float() ) - 50.0f;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 100.0f*rand_float() ) - 50.0f;
-		y = isnan( x );
+		y = isnan( x[ i%100 ] );
 		if ( y != 0 && y != 1 ) {
 			printf( "should return 0 or 1\n" );
 			break;

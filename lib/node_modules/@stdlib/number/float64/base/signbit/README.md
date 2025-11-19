@@ -78,7 +78,7 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
-<!-- C interface documentation. -->  
+<!-- C interface documentation. -->
 
 * * *
 
