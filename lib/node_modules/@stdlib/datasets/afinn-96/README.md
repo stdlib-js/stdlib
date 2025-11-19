@@ -68,7 +68,7 @@ var words = afinn96();
 -   All words are lowercase.
 -   Some "words" are phrases; e.g., `cashing in`, `cool stuff`.
 -   Words may contain apostrophes; e.g., `can't stand`.
--   Words may contain dashes; e.g., `cover-up`, `made-up`. 
+-   Words may contain dashes; e.g., `cover-up`, `made-up`.
 
 </section>
 

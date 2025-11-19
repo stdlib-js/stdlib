@@ -187,17 +187,17 @@ logEachMap( 'ln( %d choose %d ) = %0.4f', n, k, binomcoefln );
 Evaluates the natural logarithm of the [binomial coefficient][binomial-coefficient] of two integers `n` and `k`.
 
 ```c
-double v = stdlib_base_binomcoefln( 8, 2 );
+double v = stdlib_base_binomcoefln( 8.0, 2.0 );
 // returns ~3.332
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int64_t` input value.
--   **k**: `[in] int64_t` input value.
+-   **n**: `[in] double` input value.
+-   **k**: `[in] double` input value.
 
 ```c
-double stdlib_base_binomcoefln( const int64_t n, const int64_t k );
+double stdlib_base_binomcoefln( const double n, const double k );
 ```
 
 </section>
@@ -221,18 +221,16 @@ double stdlib_base_binomcoefln( const int64_t n, const int64_t k );
 ```c
 #include "stdlib/math/base/special/binomcoefln.h"
 #include <stdio.h>
-#include <stdint.h>
-#include <inttypes.h>
 
 int main( void ) {
-    const int64_t a[] = { 24, 32, 48, 116, 33 };
-    const int64_t b[] = { 12, 6, 15, 52, 22 };
+    const double a[] = { 24.0, 32.0, 48.0, 116.0, 33.0 };
+    const double b[] = { 12.0, 6.0, 15.0, 52.0, 22.0 };
 
     double out;
     int i;
     for ( i = 0; i < 5; i++ ) {
         out = stdlib_base_binomcoefln( a[ i ], b[ i ] );
-        printf( "binomcoefln(%" PRId64 ", %" PRId64 ") = %lf\n", a[ i ], b[ i ], out );
+        printf( "binomcoefln(%lf, %lf) = %lf\n", a[ i ], b[ i ], out );
     }
 }
 ```

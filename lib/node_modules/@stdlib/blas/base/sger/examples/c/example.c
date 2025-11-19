@@ -49,7 +49,7 @@ int main( void ) {
 		}
 	}
 
-	// Perform operation using alterntive indexing semantics:
+	// Perform operation using alternative indexing semantics:
 	c_sger_ndarray( M, N, 1.0f, x, strideX, 0, y, strideY, 0, A, N, 1, 0 );
 
 	// Print the result:

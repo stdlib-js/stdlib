@@ -44,12 +44,12 @@ interface Routine {
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
 	*
-	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0 ], [ 0.0, 0.0, 1.0 ] ]
+	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 2.0, 1.0, 2.0 ], [ 3.0, 2.0, 1.0 ] ]
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	* var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* ssyr2( 'row-major', 'upper', 3, 1.0, x, 1, y, 1, A, 3 );
-	* // A => <Float32Array>[ 3.0, 6.0, 9.0, 0.0, 9.0, 14.0, 0.0, 0.0, 19.0 ]
+	* // A => <Float32Array>[ 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 3.0, 2.0, 19.0 ]
 	*/
 	( order: Layout, uplo: MatrixTriangle, N: number, alpha: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number, A: Float32Array, LDA: number ): Float32Array;
 
@@ -74,12 +74,12 @@ interface Routine {
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
 	*
-	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0 ], [ 0.0, 0.0, 1.0 ] ]
+	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 2.0, 1.0, 2.0 ], [ 3.0, 2.0, 1.0 ] ]
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	* var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* ssyr2.ndarray( 'upper', 3, 1.0, x, 1, 0, y, 1, 0, A, 3, 1, 0 );
-	* // A => <Float32Array>[ 3.0, 6.0, 9.0, 0.0, 9.0, 14.0, 0.0, 0.0, 19.0 ]
+	* // A => <Float32Array>[ 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 3.0, 2.0, 19.0 ]
 	*/
 	ndarray( uplo: MatrixTriangle, N: number, alpha: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number, A: Float32Array, strideA1: number, strideA2: number, offsetA: number ): Float32Array;
 }
@@ -102,22 +102,22 @@ interface Routine {
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
 *
-* var A = new Float32Array( [ 1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 3.0, 2.0, 1.0 ] );
+* var A = new Float32Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] );
 * var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 * var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 *
 * ssyr2( 'column-major', 'upper', 3, 1.0, x, 1, y, 1, A, 3 );
-* // A => <Float32Array>[ 3.0, 0.0, 0.0, 6.0, 9.0, 0.0, 9.0, 14.0, 19.0 ]
+* // A => <Float32Array>[ 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 3.0, 2.0, 19.0 ]
 *
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
 *
-* var A = new Float32Array( [ 1.0, 1.0, 1.0, 0.0, 2.0, 2.0, 0.0, 0.0, 3.0 ] );
+* var A = new Float32Array( [ 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0 ] );
 * var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 * var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 *
 * ssyr2.ndarray( 'upper', 3, 1.0, x, 1, 0, y, 1, 0, A, 1, 3, 0 );
-* // A => <Float32Array>[ 3.0, 0.0, 0.0, 6.0, 9.0, 0.0, 9.0, 14.0, 19.0 ]
+* // A => <Float32Array>[ 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 3.0, 2.0, 19.0 ]
 */
 declare var ssyr2: Routine;
 

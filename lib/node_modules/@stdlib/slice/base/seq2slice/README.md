@@ -71,7 +71,7 @@ where
 -   If an `increment` is not specified, the default increment is `1`. An increment of zero is **not** allowed.
 -   The `start` index is **inclusive**.
 -   The `stop` index is **exclusive**.
--   Both `start` and `stop` indices are _optional_. If not provided, `start` and `stop` default to index extremes. Which extremes correspond to which index depends on whether the `increment` is positive or negative. 
+-   Both `start` and `stop` indices are _optional_. If not provided, `start` and `stop` default to index extremes. Which extremes correspond to which index depends on whether the `increment` is positive or negative.
 -   Both `start` and `stop` can be negative; in which case, the corresponding index is resolved by subtracting the respective value from the provided length `len`.
 -   Both `start` and `stop` can use the `end` keyword (e.g., `end-2::2`, `end-3:`, etc), which supports basic subtraction and division.
 -   The `end` keyword resolves to the provided length `len`. Thus, `:-1` is equivalent to `:end-1`, `:-2` is equivalent to `:end-2`, and so on and so forth. The exception is when performing a division operation when the `increment` is less than zero; in which case, `end` is equal to `len-1` in order to preserve user expectations when `end/d` equals a whole number and slicing from right-to-left. The result from a division operation is **rounded down** to the nearest integer value.
@@ -148,7 +148,7 @@ A returned error object may have one of the following error codes:
 -   When `strict` is `false`, the resolved slice start is clamped to the slice index bounds (i.e., `[0, len)`).
 -   When `strict` is `false`, the resolved slice end is upper bound clamped to `len` (i.e., one greater than the last possible index).
 -   When the increment is negative, the resolved slice end value may be `null`, thus indicating that a non-empty slice should include the first index.
--   The function ensures that results satisfy the convention that `:n` combined with `n:` is equivalent to `:` (i.e., selecting all elements). This convention matches Python slice semantics, but diverges from the MATLAB convention where `:n` and `n:` overlap by one element. 
+-   The function ensures that results satisfy the convention that `:n` combined with `n:` is equivalent to `:` (i.e., selecting all elements). This convention matches Python slice semantics, but diverges from the MATLAB convention where `:n` and `n:` overlap by one element.
 -   Unlike MATLAB, but like Python, the subsequence string is upper-bound exclusive. For example, in Python, `0:2` corresponds to the sequence `{0,1}`. In MATLAB, `1:3` corresponds to `{1,2,3}`.
 
 </section>

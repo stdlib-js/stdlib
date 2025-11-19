@@ -76,7 +76,7 @@ The function accepts the following arguments:
 
 -   **arrays**: array-like object containing an input ndarray.
 
-The provided ndarray should be an `object` with the following properties:
+The provided ndarray should be an object with the following properties:
 
 -   **dtype**: data type.
 -   **data**: data buffer.
