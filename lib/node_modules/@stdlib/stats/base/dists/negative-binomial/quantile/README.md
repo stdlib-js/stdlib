@@ -39,7 +39,7 @@ F(x-1;r,p) < k \le F(x;r,p)
 
 <!-- </equation> -->
 
-holds, where `F` is the cumulative distribution function (CDF) of a negative binomial distribution with parameters `r` and `p`, where `r` is the number of successes until the experiment is stopped and `p` is the success probability. The random variable `X` denotes the number of failures until the `r` success is reached. 
+holds, where `F` is the cumulative distribution function (CDF) of a negative binomial distribution with parameters `r` and `p`, where `r` is the number of successes until the experiment is stopped and `p` is the success probability. The random variable `X` denotes the number of failures until the `r` success is reached.
 
 </section>
 

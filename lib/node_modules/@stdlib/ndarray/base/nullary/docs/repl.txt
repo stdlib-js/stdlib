@@ -3,7 +3,7 @@
     Applies a nullary callback and assigns results to elements in an output
     ndarray.
 
-    A provided "ndarray" should be an `object` with the following properties:
+    A provided "ndarray" should be an object with the following properties:
 
     - dtype: data type.
     - data: data buffer.

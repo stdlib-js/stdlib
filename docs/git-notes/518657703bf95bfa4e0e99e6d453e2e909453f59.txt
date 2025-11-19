@@ -1,0 +1,8 @@
+---
+type: amend-message
+---
+chore: fix copy & paste error
+PR-URL: #5247
+Ref: #5230
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

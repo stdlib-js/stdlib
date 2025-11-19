@@ -32,7 +32,7 @@ var dfill = require( '@stdlib/blas/ext/base/dfill' );
 
 #### dfill( N, alpha, x, strideX )
 
-Fills a double-precision floating-point strided array `x` with a specified scalar constant `alpha`.
+Fills a double-precision floating-point strided array with a specified scalar constant.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -48,9 +48,9 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **alpha**: scalar constant.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **strideX**: index increment.
+-   **strideX**: stride length.
 
-The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to fill every other element
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to fill every other element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -79,7 +79,7 @@ dfill( 3, 5.0, x1, 2 );
 
 #### dfill.ndarray( N, alpha, x, strideX, offsetX )
 
-Fills a double-precision floating-point strided array `x` with a specified scalar constant `alpha` using alternative indexing semantics.
+Fills a double-precision floating-point strided array with a specified scalar constant using alternative indexing semantics.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -94,7 +94,7 @@ The function has the following additional parameters:
 
 -   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -170,7 +170,7 @@ console.log( x );
 
 #### stdlib_strided_dfill( N, alpha, \*X, strideX )
 
-Fills a double-precision floating-point strided array `X` with a specified scalar constant `alpha`.
+Fills a double-precision floating-point strided array with a specified scalar constant.
 
 ```c
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
@@ -183,7 +183,7 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **alpha**: `[in] double` scalar constant.
 -   **X**: `[out] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length.
 
 ```c
 void stdlib_strided_dfill( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX );
@@ -191,7 +191,7 @@ void stdlib_strided_dfill( const CBLAS_INT N, const double alpha, double *X, con
 
 #### stdlib_strided_dfill_ndarray( N, alpha, \*X, strideX, offsetX )
 
-Fills a double-precision floating-point strided array `X` with a specified scalar constant `alpha` using alternative indexing semantics.
+Fills a double-precision floating-point strided array with a specified scalar constant using alternative indexing semantics.
 
 ```c
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
@@ -204,8 +204,8 @@ The function accepts the following arguments:
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
 -   **alpha**: `[in] double` scalar constant.
 -   **X**: `[out] double*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `X`.
--   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+-   **strideX**: `[in] CBLAS_INT` stride length.
+-   **offsetX**: `[in] CBLAS_INT` starting index.
 
 ```c
 void stdlib_strided_dfill_ndarray( const CBLAS_INT N, const double alpha, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );

@@ -49,7 +49,7 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **x**: input [`Float32Array`][@stdlib/array/float32].
 -   **strideX**: index increment for `x`.
--   **y**: input [`Float32Array`][@stdlib/array/float32].
+-   **y**: output [`Float32Array`][@stdlib/array/float32].
 -   **strideY**: index increment for `y`.
 
 The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to copy every other element from `x` into `y` in reverse order,
