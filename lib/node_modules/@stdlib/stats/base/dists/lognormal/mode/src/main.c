@@ -39,7 +39,5 @@ double stdlib_base_dists_lognormal_mode( const double mu, const double sigma ) {
 	) {
 		return 0.0/0.0; // NaN
 	}
-	double sigma2 = sigma * sigma;
-	double exponent = mu - sigma2;
-	return stdlib_base_exp( exponent );
+	return stdlib_base_exp( mu - ( sigma*sigma ) );
 }

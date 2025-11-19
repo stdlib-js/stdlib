@@ -283,11 +283,11 @@ var dtype = arr.dtype;
 
 #### ndarray.prototype.flags
 
-Meta information, such as information regarding the memory layout of the array. The returned `object` has the following properties:
+Meta information, such as information regarding the memory layout of the array. The returned object has the following properties:
 
--   **ROW_MAJOR_CONTIGUOUS**: `boolean` indicating if an array is row-major contiguous.
--   **COLUMN_MAJOR_CONTIGUOUS**: `boolean` indicating if an array is column-major contiguous.
--   **READONLY**: `boolean` indicating whether an array is **read-only**.
+-   **ROW_MAJOR_CONTIGUOUS**: boolean indicating if an array is row-major contiguous.
+-   **COLUMN_MAJOR_CONTIGUOUS**: boolean indicating if an array is column-major contiguous.
+-   **READONLY**: boolean indicating whether an array is **read-only**.
 
 An array is contiguous if (1) an array is compatible with being stored in a single memory segment and (2) each array element is adjacent to the next array element. Note that an array can be both row-major contiguous and column-major contiguous at the same time (e.g., if an array is a 1-dimensional ndarray with `strides = [1]`).
 

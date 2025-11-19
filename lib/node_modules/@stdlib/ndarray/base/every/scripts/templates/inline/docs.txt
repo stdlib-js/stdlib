@@ -63,7 +63,7 @@ if ( y == NULL ) {
 struct ndarray *arrays[] = { x, y };
 
 // Test elements:
-int8_t status = stdlib_ndarray_{{SIGNATURE}}( arrays, NULL );
+int8_t status = stdlib_ndarray_every_{{SIGNATURE}}( arrays, NULL );
 if ( status != 0 ) {
     fprintf( stderr, "Error during computation.\n" );
     exit( EXIT_FAILURE );

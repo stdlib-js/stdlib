@@ -26,7 +26,7 @@ limitations under the License.
 
 The [L2-norm][l2-norm] is defined as
 
-<!-- <equation class="equation" label="eq:l2_norm" align="center raw="\|\mathbf{x}\|_2 = \sqrt{x_0^2 + x_1^2 + \ldots + x_{N-1}^2}" alt="L2-norm definition."> -->
+<!-- <equation class="equation" label="eq:l2_norm" align="center" raw="\|\mathbf{x}\|_2 = \sqrt{x_0^2 + x_1^2 + \ldots + x_{N-1}^2}" alt="L2-norm definition."> -->
 
 <div class="equation" align="center" data-raw-text="\|\mathbf{x}\|_2 = \sqrt{x_0^2 + x_1^2 + \ldots + x_{N-1}^2}" data-equation="eq:l2_norm">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@247c6b352fc1002f11ba3e7ed389f067380a8a87/lib/node_modules/@stdlib/blas/base/snrm2/docs/img/equation_l2_norm.svg" alt="L2-norm definition.">
@@ -188,7 +188,7 @@ console.log( out );
 
 #### c_snrm2( N, \*X, stride )
 
-Computes the L2-norm of a complex single-precision floating-point vector.
+Computes the L2-norm of a single-precision floating-point vector.
 
 ```c
 const float x[] = { 1.0f, 2.0f, 2.0f, -7.0f, -2.0f, 3.0f, 4.0f, 2.0f };
@@ -209,7 +209,7 @@ float c_snrm2( const CBLAS_INT N, const float *X, const CBLAS_INT stride );
 
 #### c_snrm2_ndarray( N, \*X, stride, offset )
 
-Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
+Computes the L2-norm of a single-precision floating-point vector using alternative indexing semantics.
 
 ```c
 const float x[] = { 1.0f, 2.0f, 2.0f, -7.0f, -2.0f, 3.0f, 4.0f, 2.0f };

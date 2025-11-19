@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the Fortran interface to the BLAS Level 1 routine `cscal`.
 */
-#ifndef CSCAL_FORTRAN_H
-#define CSCAL_FORTRAN_H
+#ifndef STDLIB_BLAS_BASE_CSCAL_FORTRAN_H
+#define STDLIB_BLAS_BASE_CSCAL_FORTRAN_H
 
 #include "stdlib/complex/float32/ctor.h"
 
@@ -40,4 +40,4 @@ void cscal( const int *, const stdlib_complex64_t *, void *, const int * );
 }
 #endif
 
-#endif // !CSCAL_FORTRAN_H
+#endif // !STDLIB_BLAS_BASE_CSCAL_FORTRAN_H

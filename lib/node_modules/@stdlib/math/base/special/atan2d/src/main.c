@@ -19,8 +19,6 @@
 #include "stdlib/math/base/special/rad2deg.h"
 #include "stdlib/math/base/special/atan2.h"
 
-// MAIN //
-
 /**
 * Computes the angle in the plane (in degrees) between the positive x-axis and the ray from `(0,0)` to the point `(x,y)`.
 *
