@@ -8,8 +8,8 @@
     value: any
         Input value.
 
-    dtype: string
-        ndarray data type.
+    dtype: string|DataType
+        Data type.
 
     Returns
     -------

@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Computes the hypotenuse of a single-precision floating-point number.
+* Computes the hypotenuse of two single-precision floating-point numbers.
 *
 * @param x - number
 * @param y - number

@@ -32,7 +32,7 @@ var invertBy = require( '@stdlib/utils/object-inverse-by' );
 
 #### invertBy( obj, \[options,] transform )
 
-Inverts an `object`, such that keys become values and values become keys, according to a `transform` function.
+Inverts an object, such that keys become values and values become keys, according to a transform function.
 
 ```javascript
 function transform( key, value ) {
@@ -46,11 +46,11 @@ var out = invertBy( obj, transform );
 // returns { 'beep': 'a', 'boop': 'b' }
 ```
 
-The function accepts the following `options`:
+The function accepts the following options:
 
--   **duplicates**: `boolean` indicating whether to store keys mapped to duplicate values in `arrays`. Default: `true`.
+-   **duplicates**: boolean indicating whether to store keys mapped to duplicate values in arrays. Default: `true`.
 
-By default, keys mapped to duplicate values are stored in `arrays`.
+By default, keys mapped to duplicate values are stored in arrays.
 
 ```javascript
 function transform( key, value ) {
@@ -64,7 +64,7 @@ var out = invertBy( obj, transform );
 // returns { 'beep': [ 'a', 'b' ] }
 ```
 
-To **not** allow duplicates, set the `duplicates` option to `false`. The output `key-value` pair will be the `key` most recently inserted into the input `object`.
+To **not** allow duplicates, set the `duplicates` option to `false`. The output key-value pair will be the key most recently inserted into the input object.
 
 ```javascript
 function transform( key, value ) {
@@ -82,7 +82,7 @@ var out = invertBy( obj, opts, transform );
 // returns { 'beep': 'c', 'boop': 'b' }
 ```
 
-The `transform` function is provided three arguments:
+The transform function is provided three arguments:
 
 -   **key**: object key.
 -   **value**: object value corresponding to `key`.
@@ -112,7 +112,7 @@ var out = invertBy( obj, transform );
 
 ## Notes
 
--   Beware when providing `objects` having values which are themselves `objects`. This function relies on native `object` serialization (`#toString`) when converting `transform` function return values to keys.
+-   Beware when providing objects having values which are themselves objects. This function relies on native object serialization (`#toString`) when converting transform function return values to keys.
 
     ```javascript
     function transform( key, value ) {
@@ -129,7 +129,7 @@ var out = invertBy( obj, transform );
     // returns { '1,2,3': 'a', '[object Object]': 'b' }
     ```
 
--   Insertion order is not guaranteed, as `object` key enumeration is not specified according to the [ECMAScript specification][ecma-262-for-in]. In practice, however, most engines use insertion order to sort an `object`'s keys, thus allowing for deterministic inversion.
+-   In older JavaScript engines, insertion order is not guaranteed, as object key enumeration was not specified according to the [ECMAScript specification][ecma-262-for-in] in earlier editions. In practice, however, most older engines use insertion order to sort an object's keys, thus allowing for deterministic inversion.
 
 </section>
 
@@ -142,27 +142,24 @@ var out = invertBy( obj, transform );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var objectKeys = require( '@stdlib/utils/keys' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var invertBy = require( '@stdlib/utils/object-inverse-by' );
-
-var keys;
-var arr;
-var out;
-var i;
 
 function transform( key, value ) {
     return value;
 }
 
-// Create an array of random integers...
-arr = new Array( 1000 );
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = round( randu()*100.0 );
-}
+// Create an array of random integers:
+var arr = discreteUniform( 1000, 0, 100, {
+    'dtype': 'generic'
+});
+
 // Invert the array to determine value frequency...
-out = invertBy( arr, transform );
-keys = Object.keys( out );
+var out = invertBy( arr, transform );
+var keys = objectKeys( out );
+
+var i;
 for ( i = 0; i < keys.length; i++ ) {
     if ( out[ i ] ) {
         out[ i ] = out[ i ].length;

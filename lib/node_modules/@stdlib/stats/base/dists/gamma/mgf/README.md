@@ -144,22 +144,18 @@ y = mymgf( 0.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mgf = require( '@stdlib/stats/base/dists/gamma/mgf' );
 
-var a;
-var b;
-var t;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var t = uniform( 10, 0.0, 3.0, opts );
+var alpha = uniform( 10, 0.0, 5.0, opts );
+var beta = uniform( 10, 0.0, 5.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    t = randu();
-    a = randu() * 5.0;
-    b = a + (randu() * 5.0);
-    v = mgf( t, a, b );
-    console.log( 't: %d, a: %d, b: %d, M_X(t;a,b): %d', t.toFixed( 4 ), a.toFixed( 4 ), b.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 't: %0.4f, α: %0.4f, β: %0.4f, M_X(t;α,β): %0.4f', t, alpha, beta, mgf );
 ```
 
 </section>

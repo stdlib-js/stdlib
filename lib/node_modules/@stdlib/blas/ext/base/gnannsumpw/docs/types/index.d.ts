@@ -71,7 +71,7 @@ interface Routine {
 	* var x = [ 1.0, -2.0, NaN, 2.0 ];
 	* var out = [ 0.0, 0 ];
 	*
-	* var v = gnannsumpw( x.length, x, 1, 0, out, 1, 0 );
+	* var v = gnannsumpw.ndarray( x.length, x, 1, 0, out, 1, 0 );
 	* // returns [ 1.0, 3 ]
 	*/
 	ndarray<T extends OutputArray<number> = OutputArray<number>>( N: number, x: InputArray<number>, strideX: number, offsetX: number, out: T, strideOut: number, offsetOut: number ): T;
@@ -98,7 +98,7 @@ interface Routine {
 * var x = [ 1.0, -2.0, NaN, 2.0 ];
 * var out = [ 0.0, 0 ];
 *
-* var v = gnannsumpw( x.length, x, 1, 0, out, 1, 0 );
+* var v = gnannsumpw.ndarray( x.length, x, 1, 0, out, 1, 0 );
 * // returns [ 1.0, 3 ]
 */
 declare var gnannsumpw: Routine;
