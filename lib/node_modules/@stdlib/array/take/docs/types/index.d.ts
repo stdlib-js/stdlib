@@ -51,7 +51,7 @@ interface Options {
 *
 * var x = zeroTo( 4, 'float64' );
 * var y = take( x, [ 1, 3 ] );
-* // returns <Float64Array>[ 2.0, 4.0 ]
+* // returns <Float64Array>[ 1.0, 3.0 ]
 */
 declare function take( x: Float64Array, indices: IndexArray, options?: Options ): Float64Array;
 
@@ -68,7 +68,7 @@ declare function take( x: Float64Array, indices: IndexArray, options?: Options )
 *
 * var x = zeroTo( 4, 'float32' );
 * var y = take( x, [ 1, 3 ] );
-* // returns <Float32Array>[ 2.0, 4.0 ]
+* // returns <Float32Array>[ 1.0, 3.0 ]
 */
 declare function take( x: Float32Array, indices: IndexArray, options?: Options ): Float32Array;
 
@@ -85,7 +85,7 @@ declare function take( x: Float32Array, indices: IndexArray, options?: Options )
 *
 * var x = zeroTo( 4, 'int32' );
 * var y = take( x, [ 1, 3 ] );
-* // returns <Int32Array>[ 2, 4 ]
+* // returns <Int32Array>[ 1, 3 ]
 */
 declare function take( x: Int32Array, indices: IndexArray, options?: Options ): Int32Array;
 
@@ -102,7 +102,7 @@ declare function take( x: Int32Array, indices: IndexArray, options?: Options ): 
 *
 * var x = zeroTo( 4, 'int16' );
 * var y = take( x, [ 1, 3 ] );
-* // returns <Int16Array>[ 2, 4 ]
+* // returns <Int16Array>[ 1, 3 ]
 */
 declare function take( x: Int16Array, indices: IndexArray, options?: Options ): Int16Array;
 
@@ -119,7 +119,7 @@ declare function take( x: Int16Array, indices: IndexArray, options?: Options ): 
 *
 * var x = zeroTo( 4, 'int8' );
 * var y = take( x, [ 1, 3 ] );
-* // returns <Int8Array>[ 2, 4 ]
+* // returns <Int8Array>[ 1, 3 ]
 */
 declare function take( x: Int8Array, indices: IndexArray, options?: Options ): Int8Array;
 
@@ -136,7 +136,7 @@ declare function take( x: Int8Array, indices: IndexArray, options?: Options ): I
 *
 * var x = zeroTo( 4, 'uint32' );
 * var y = take( x, [ 1, 3 ] );
-* // returns <Uint32Array>[ 2, 4 ]
+* // returns <Uint32Array>[ 1, 3 ]
 */
 declare function take( x: Uint32Array, indices: IndexArray, options?: Options ): Uint32Array;
 
@@ -153,7 +153,7 @@ declare function take( x: Uint32Array, indices: IndexArray, options?: Options ):
 *
 * var x = zeroTo( 4, 'uint16' );
 * var y = take( x, [ 1, 3 ] );
-* // returns <Uint16Array>[ 2, 4 ]
+* // returns <Uint16Array>[ 1, 3 ]
 */
 declare function take( x: Uint16Array, indices: IndexArray, options?: Options ): Uint16Array;
 
@@ -170,7 +170,7 @@ declare function take( x: Uint16Array, indices: IndexArray, options?: Options ):
 *
 * var x = zeroTo( 4, 'uint8' );
 * var y = take( x, [ 1, 3 ] );
-* // returns <Uint8Array>[ 2, 4 ]
+* // returns <Uint8Array>[ 1, 3 ]
 */
 declare function take( x: Uint8Array, indices: IndexArray, options?: Options ): Uint8Array;
 
@@ -187,7 +187,7 @@ declare function take( x: Uint8Array, indices: IndexArray, options?: Options ): 
 *
 * var x = zeroTo( 4, 'uint8c' );
 * var y = take( x, [ 1, 3 ] );
-* // returns <Uint8ClampedArray>[ 2, 4 ]
+* // returns <Uint8ClampedArray>[ 1, 3 ]
 */
 declare function take( x: Uint8ClampedArray, indices: IndexArray, options?: Options ): Uint8ClampedArray;
 
@@ -204,7 +204,7 @@ declare function take( x: Uint8ClampedArray, indices: IndexArray, options?: Opti
 *
 * var x = zeroTo( 4, 'complex128' );
 * var y = take( x, [ 1, 3 ] );
-* // returns <Complex128Array>[ 2.0, 0.0, 4.0, 0.0 ]
+* // returns <Complex128Array>[ 1.0, 0.0, 3.0, 0.0 ]
 */
 declare function take( x: Complex128Array, indices: IndexArray, options?: Options ): Complex128Array;
 
@@ -221,7 +221,7 @@ declare function take( x: Complex128Array, indices: IndexArray, options?: Option
 *
 * var x = zeroTo( 4, 'complex64' );
 * var y = take( x, [ 1, 3 ] );
-* // returns <Complex64Array>[ 2.0, 0.0, 4.0, 0.0 ]
+* // returns <Complex64Array>[ 1.0, 0.0, 3.0, 0.0 ]
 */
 declare function take( x: Complex64Array, indices: IndexArray, options?: Options ): Complex64Array;
 

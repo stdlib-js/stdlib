@@ -95,17 +95,20 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double x;
-	double y;
+	double x[ 100 ];
+	double y[ 100 ];
 	double z;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 1000.0*rand_double() ) + 0.1;
+		y[ i ] = ( 0.5*rand_double() );
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 1000.0*rand_double() ) + 0.1;
-		y = ( 0.5*rand_double() );
-		z = igami( x, y );
+		z = igami( x[ i%100 ], y[ i%100 ] );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;

@@ -42,7 +42,7 @@ var dtype = require( '@stdlib/ndarray/base/buffer-dtype' );
 
 #### dtype( buffer )
 
-Returns the [data type][@stdlib/ndarray/dtypes] of an ndarray data [`buffer`][@stdlib/ndarray/base/buffer-ctors].
+Returns the [data type][@stdlib/ndarray/dtypes] of an ndarray data [buffer][@stdlib/ndarray/base/buffer-ctors].
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -52,7 +52,7 @@ var dt = dtype( buf );
 // returns 'float64'
 ```
 
-If provided an ndarray data [`buffer`][@stdlib/ndarray/base/buffer-ctors] having an unknown or unsupported [data type][@stdlib/ndarray/dtypes], the function returns `null`.
+If provided an ndarray data [buffer][@stdlib/ndarray/base/buffer-ctors] having an unknown or unsupported [data type][@stdlib/ndarray/dtypes], the function returns `null`.
 
 ```javascript
 var dt = dtype( 'beep' );
@@ -82,34 +82,27 @@ var dt = dtype( 'beep' );
 ```javascript
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var bufferCtors = require( '@stdlib/ndarray/base/buffer-ctors' );
-var isFunction = require( '@stdlib/assert/is-function' );
 var dtype = require( '@stdlib/ndarray/base/buffer-dtype' );
 
 // Get a list of supported ndarray buffer data types:
-var DTYPES = dtypes();
+var DTYPES = dtypes( 'integer_and_generic' );
 
 // Buffer length:
 var len = 10;
 
 // For each supported data type, create a buffer and confirm its data type...
 var ctor;
-var buf;
 var dt;
 var i;
 for ( i = 0; i < DTYPES.length; i++ ) {
     ctor = bufferCtors( DTYPES[ i ] );
-    if ( DTYPES[ i ] === 'binary' && isFunction( ctor.alloc ) ) {
-        buf = ctor.alloc( len );
-    } else {
-        buf = new ctor( len );
-    }
-    dt = dtype( buf );
+    dt = dtype( new ctor( len ) );
     console.log( '%s == %s => %s', DTYPES[ i ], dt, DTYPES[ i ] === dt );
 }
 
 // Try an array-like object...
-buf = {
-    'length': 10
+var buf = {
+    'length': len
 };
 dt = dtype( buf );
 console.log( '%s == %s => %s', 'generic', dt, dt === 'generic' );

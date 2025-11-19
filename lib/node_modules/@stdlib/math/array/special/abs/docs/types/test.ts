@@ -28,8 +28,8 @@ import abs = require( './index' );
 
 // The function returns an array...
 {
-	abs( [ 1.0, 2.0, 3.0, 4.0 ] ); // $ExpectType OutputArray<number>
-	abs( [ 1.0, 2.0, 3.0, 4.0 ], {} ); // $ExpectType OutputArray<number>
+	abs( [ 1.0, 2.0, 3.0, 4.0 ] ); // $ExpectType number[]
+	abs( [ 1.0, 2.0, 3.0, 4.0 ], {} ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array...

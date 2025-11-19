@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* eslint-disable max-lines */
+/* eslint-disable max-lines, jsdoc/check-param-names */
 
 // TypeScript Version: 4.1
 
