@@ -14,11 +14,14 @@
     }
   ],
   "main": "./lib",
+  "gypfile": true,
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
+    "include": "./include",
     "lib": "./lib",
+    "src": "./src",
     "test": "./test"
   },
   "types": "./docs/types",
@@ -53,14 +56,15 @@
     "stdmath",
     "mathematics",
     "math",
+    "heaviside",
     "heavisidef",
     "discontinuous",
-    "unit step function",
-    "step function",
+    "unit",
+    "step",
+    "function",
     "distribution",
     "dist",
     "ramp",
-    "digital signal processing",
     "dsp"
   ]
 }

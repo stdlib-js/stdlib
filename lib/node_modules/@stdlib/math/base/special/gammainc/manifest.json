@@ -1,0 +1,160 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-bool",
+        "@stdlib/napi/create-double",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/erfc",
+        "@stdlib/math/base/special/log1pmx",
+        "@stdlib/math/base/special/min",
+        "@stdlib/math/base/special/max",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/gamma1pm1",
+        "@stdlib/math/base/special/powm1",
+        "@stdlib/math/base/special/gamma-lanczos-sum-expg-scaled",
+        "@stdlib/constants/float64/sqrt-eps",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/two-pi",
+        "@stdlib/constants/float64/sqrt-two-pi",
+        "@stdlib/constants/float64/max-ln",
+        "@stdlib/constants/float64/min-ln",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/e",
+        "@stdlib/constants/float64/gamma-lanczos-g",
+        "@stdlib/constants/float32/smallest-normal",
+        "@stdlib/constants/float64/max-nth-factorial"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/erfc",
+        "@stdlib/math/base/special/log1pmx",
+        "@stdlib/math/base/special/min",
+        "@stdlib/math/base/special/max",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/gamma1pm1",
+        "@stdlib/math/base/special/powm1",
+        "@stdlib/math/base/special/gamma-lanczos-sum-expg-scaled",
+        "@stdlib/constants/float64/sqrt-eps",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/two-pi",
+        "@stdlib/constants/float64/sqrt-two-pi",
+        "@stdlib/constants/float64/max-ln",
+        "@stdlib/constants/float64/min-ln",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/e",
+        "@stdlib/constants/float64/gamma-lanczos-g",
+        "@stdlib/constants/float32/smallest-normal",
+        "@stdlib/constants/float64/max-nth-factorial"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/math/base/special/erfc",
+        "@stdlib/math/base/special/log1pmx",
+        "@stdlib/math/base/special/min",
+        "@stdlib/math/base/special/max",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/gamma1pm1",
+        "@stdlib/math/base/special/powm1",
+        "@stdlib/math/base/special/gamma-lanczos-sum-expg-scaled",
+        "@stdlib/constants/float64/sqrt-eps",
+        "@stdlib/constants/float64/max",
+        "@stdlib/constants/float64/two-pi",
+        "@stdlib/constants/float64/sqrt-two-pi",
+        "@stdlib/constants/float64/max-ln",
+        "@stdlib/constants/float64/min-ln",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/e",
+        "@stdlib/constants/float64/gamma-lanczos-g",
+        "@stdlib/constants/float32/smallest-normal",
+        "@stdlib/constants/float64/max-nth-factorial"
+      ]
+    }
+  ]
+}

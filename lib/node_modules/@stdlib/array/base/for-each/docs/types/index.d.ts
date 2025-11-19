@@ -72,7 +72,7 @@ type Callback<T, U, V> = Nullary<V> | Unary<T, V> | Binary<T, V> | Ternary<T, U,
 * var toAccessorArray = require( '@stdlib/array/base/to-accessor-array' );
 * var log = require( '@stdlib/console/log' );
 *
-* var x = toAccesorArray( [ 1, 2, 3, 4] );
+* var x = toAccessorArray( [ 1, 2, 3, 4] );
 *
 * // Apply the callback function:
 * forEach( x, naryFunction( log, 1 ) );

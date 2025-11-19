@@ -12,7 +12,7 @@
 
     The returned function returns `false` if provided an empty typed array.
 
-    The returned function returns `false` is not provided a typed array.
+    The returned function returns `false` if not provided a typed array.
 
     Parameters
     ----------

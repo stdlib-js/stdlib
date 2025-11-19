@@ -28,7 +28,7 @@ import Memory = require( './index' );
 	new Memory( { 'initial': 0 } ); // $ExpectType Memory
 }
 
-// The constructor function has to be invoked with `new`...
+// The constructor function has to be invoked with the `new` operator...
 {
 	Memory( { 'initial': 0 } ); // $ExpectError
 }

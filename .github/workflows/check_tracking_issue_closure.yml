@@ -28,6 +28,15 @@ on:
 
   # Allow manual triggering:
   workflow_dispatch:
+    inputs:
+      debug:
+        description: 'Enable debug output'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
 
 # Workflow jobs:
 jobs:
@@ -48,7 +57,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           # Ensure we have access to the scripts directory:
           sparse-checkout: |
@@ -61,3 +70,4 @@ jobs:
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/check_tracking_issue_closure" 1
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          DEBUG: ${{ inputs.debug || 'false' }}

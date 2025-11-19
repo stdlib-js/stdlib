@@ -32,7 +32,7 @@ var reBasenamePosix = require( '@stdlib/regexp/basename-posix' );
 
 #### reBasenamePosix()
 
-Returns a [regular expression][regexp] to capture the last part of a [POSIX][posix] path. 
+Returns a [regular expression][regexp] to capture the last part of a [POSIX][posix] path.
 
 ```javascript
 var RE_BASENAME_POSIX = reBasenamePosix();
@@ -42,7 +42,7 @@ var base = RE_BASENAME_POSIX.exec( 'foo/bar/index.js' )[ 1 ];
 
 #### reBasenamePosix.REGEXP
 
-[Regular expression][regexp] to capture the last part of a [POSIX][posix] path. 
+[Regular expression][regexp] to capture the last part of a [POSIX][posix] path.
 
 ```javascript
 var base = reBasenamePosix.REGEXP.exec( 'foo/bar/index.js' )[ 1 ];

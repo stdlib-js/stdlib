@@ -20,7 +20,11 @@
 name: first_time_greeting
 
 # Workflow triggers:
-on: [pull_request_target, issues]
+on:
+  pull_request_target:
+    types: [opened]
+  issues:
+    types: [opened]
 
 # Global permissions:
 permissions:
@@ -39,13 +43,19 @@ jobs:
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
+    # Only run this job if the pull request did not have label `automated-pr` and is not from bots:
+    if: >
+      contains(github.event.pull_request.labels.*.name, 'automated-pr') == false &&
+      github.event.pull_request.user.login != 'stdlib-bot' &&
+      github.event.pull_request.user.login != 'dependabot[bot]'
+
     # Define the sequence of job steps...
     steps:
 
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           # Ensure we have access to the scripts directory:
           sparse-checkout: |
@@ -56,7 +66,7 @@ jobs:
       # Greet first-time contributors:
       - name: 'Greet first-time contributors'
         env:
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_NUMBER: ${{ github.event.issue.number || github.event.pull_request.number }}
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/first_time_greeting" $ISSUE_NUMBER

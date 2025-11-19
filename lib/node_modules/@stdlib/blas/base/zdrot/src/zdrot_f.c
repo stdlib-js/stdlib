@@ -26,35 +26,35 @@
 * Applies a plane rotation.
 *
 * @param N        number of indexed elements
-* @param ZX       first input array
-* @param strideX  ZX stride length
-* @param ZY       second input array
-* @param strideY  ZY stride length
+* @param X       first input array
+* @param strideX  X stride length
+* @param Y       second input array
+* @param strideY  Y stride length
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
-void API_SUFFIX(c_zdrot)( const CBLAS_INT N, void *ZX, const CBLAS_INT strideX, void *ZY, const CBLAS_INT strideY, const double c, const double s ) {
-	zdrot( &N, ZX, &strideX, ZY, &strideY, &c, &s );
+void API_SUFFIX(c_zdrot)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY, const double c, const double s ) {
+	zdrot( &N, X, &strideX, Y, &strideY, &c, &s );
 }
 
 /**
 * Applies a plane rotation using alternative indexing semantics.
 *
 * @param N        number of indexed elements
-* @param ZX       first input array
-* @param strideX  ZX stride length
-* @param offsetX  starting index for ZX
-* @param ZY       second input array
-* @param strideY  ZY stride length
-* @param offsetY  starting index for ZY
+* @param X       first input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y       second input array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
-void API_SUFFIX(c_zdrot_ndarray)( const CBLAS_INT N, void *ZX, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *ZY, const CBLAS_INT strideY, const CBLAS_INT offsetY, const double c, const double s ) {
-	stdlib_complex128_t *zx = (stdlib_complex128_t *)ZX;
-	stdlib_complex128_t *zy = (stdlib_complex128_t *)ZY;
+void API_SUFFIX(c_zdrot_ndarray)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const double c, const double s ) {
+	stdlib_complex128_t *x = (stdlib_complex128_t *)X;
+	stdlib_complex128_t *y = (stdlib_complex128_t *)Y;
 
-	zx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
-	zy += stdlib_strided_min_view_buffer_index( N, strideY, offsetY );
-	zdrot( &N, (void *)zx, &strideX, (void *)zy, &strideY, &c, &s );
+	x += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY );
+	zdrot( &N, (void *)x, &strideX, (void *)y, &strideY, &c, &s );
 }

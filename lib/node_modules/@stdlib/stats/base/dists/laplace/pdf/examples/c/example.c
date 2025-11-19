@@ -17,7 +17,6 @@
 */
 
 #include "stdlib/stats/base/dists/laplace/pdf.h"
-#include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -38,6 +37,6 @@ int main( void ) {
 		mu = random_uniform( 0.0, 10.0 );
 		b = random_uniform( 0.0, 10.0 );
 		y = stdlib_base_dists_laplace_pdf( x, mu, b );
-		printf("x: %lf, µ: %lf, b: %lf, f(x;µ,b): %lf\n", x, mu, b, y);
+		printf( "x: %lf, µ: %lf, b: %lf, f(x;µ,b): %lf\n", x, mu, b, y );
 	}
 }

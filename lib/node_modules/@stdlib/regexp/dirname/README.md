@@ -62,7 +62,7 @@ var bool = ( reDirname.REGEXP.toString() === reDirname().toString() );
 
 #### reDirname.REGEXP_POSIX
 
-[Regular expression][@stdlib/regexp/dirname-posix] to capture a [POSIX][posix] path dirname. 
+[Regular expression][@stdlib/regexp/dirname-posix] to capture a [POSIX][posix] path dirname.
 
 ```javascript
 var dir = reDirname.REGEXP_POSIX.exec( '/foo/bar/index.js' )[ 1 ];
@@ -71,7 +71,7 @@ var dir = reDirname.REGEXP_POSIX.exec( '/foo/bar/index.js' )[ 1 ];
 
 #### reDirname.REGEXP_WIN32
 
-[Regular expression][@stdlib/regexp/dirname-windows] to capture a Windows path dirname. 
+[Regular expression][@stdlib/regexp/dirname-windows] to capture a Windows path dirname.
 
 ```javascript
 var dir = reDirname.REGEXP_WIN32.exec( 'C:\\foo\\bar\\index.js' )[ 1 ];

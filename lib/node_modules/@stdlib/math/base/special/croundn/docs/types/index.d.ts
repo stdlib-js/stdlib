@@ -38,14 +38,14 @@ import { Complex128 } from '@stdlib/types/complex';
 * var real = require( '@stdlib/complex/float64/real' );
 * var imag = require( '@stdlib/complex/float64/imag' );
 *
-* var v = cceil( new Complex128( 5.555, -3.333 ) );
+* var v = croundn( new Complex128( 5.555, -3.333 ), -2 );
 * // returns <Complex128>
 *
 * var re = real( v );
 * // returns 5.56
 *
 * var im = imag( v );
-* // returns -3.34
+* // returns -3.33
 */
 declare function croundn( z: Complex128, n: number ): Complex128;
 

@@ -54,7 +54,7 @@ float API_SUFFIX(c_sasum_ndarray)( const CBLAS_INT N, const float *X, const CBLA
 				ix += stride;
 			}
 		}
-		if ( N < 6 ) {
+		if ( N < M ) {
 			return sum;
 		}
 		for ( i = m; i < N; i += M ) {
