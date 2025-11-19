@@ -71,7 +71,7 @@ fcn( x, y[, ...args][, options] )
     options: Object (optional)
         Function options.
 
-    options.dtype: string (optional)
+    options.dtype: string|DataType (optional)
         Output array data type. Setting this option overrides the output data
         type policy.
 

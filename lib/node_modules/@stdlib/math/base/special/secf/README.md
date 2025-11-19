@@ -34,7 +34,7 @@ limitations under the License.
 var secf = require( '@stdlib/math/base/special/secf' );
 ```
 
-## secf( x )
+#### secf( x )
 
 Evaluates the [secant][trigonometric-functions] of a single-precision floating-point number (in radians).
 

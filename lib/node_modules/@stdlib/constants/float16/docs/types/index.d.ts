@@ -115,7 +115,7 @@ interface Namespace {
 	*
 	* @example
 	* var pinf = ns.PINF;
-	* // returns Infinity
+	* // returns +infinity
 	*/
 	PINF: typeof PINF;
 

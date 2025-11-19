@@ -33,13 +33,16 @@ import { ndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, in
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var x = broadcastScalar( 1.0, 'float64', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'float64'
 *
 * var v = x.get( 0, 1 );
@@ -57,13 +60,16 @@ declare function broadcastScalar( value: number, dtype: 'float64', shape: Shape,
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var x = broadcastScalar( 1.0, 'float32', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'float32'
 *
 * var v = x.get( 0, 1 );
@@ -85,6 +91,8 @@ declare function broadcastScalar( value: number, dtype: 'float32', shape: Shape,
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
 * var real = require( '@stdlib/complex/float64/real' );
 * var imag = require( '@stdlib/complex/float64/imag' );
@@ -94,10 +102,10 @@ declare function broadcastScalar( value: number, dtype: 'float32', shape: Shape,
 * var x = broadcastScalar( v, 'complex128', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'complex128'
 *
 * var v = x.get( 0, 1 );
@@ -125,6 +133,8 @@ declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex12
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
 * var realf = require( '@stdlib/complex/float32/real' );
 * var imagf = require( '@stdlib/complex/float32/imag' );
@@ -134,10 +144,10 @@ declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex12
 * var x = broadcastScalar( v, 'complex64', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'complex64'
 *
 * var v = x.get( 0, 1 );
@@ -161,13 +171,16 @@ declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex64
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var x = broadcastScalar( 1, 'int32', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'int32'
 *
 * var v = x.get( 0, 1 );
@@ -185,13 +198,16 @@ declare function broadcastScalar( value: number, dtype: 'int32', shape: Shape, o
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var x = broadcastScalar( 1, 'int16', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'int16'
 *
 * var v = x.get( 0, 1 );
@@ -209,13 +225,16 @@ declare function broadcastScalar( value: number, dtype: 'int16', shape: Shape, o
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var x = broadcastScalar( 1, 'int8', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'int8'
 *
 * var v = x.get( 0, 1 );
@@ -233,13 +252,16 @@ declare function broadcastScalar( value: number, dtype: 'int8', shape: Shape, or
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var x = broadcastScalar( 1, 'uint32', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'uint32'
 *
 * var v = x.get( 0, 1 );
@@ -257,13 +279,16 @@ declare function broadcastScalar( value: number, dtype: 'uint32', shape: Shape, 
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var x = broadcastScalar( 1, 'uint16', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'uint16'
 *
 * var v = x.get( 0, 1 );
@@ -281,13 +306,16 @@ declare function broadcastScalar( value: number, dtype: 'uint16', shape: Shape, 
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var x = broadcastScalar( 1, 'uint8', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'uint8'
 *
 * var v = x.get( 0, 1 );
@@ -305,13 +333,16 @@ declare function broadcastScalar( value: number, dtype: 'uint8', shape: Shape, o
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var x = broadcastScalar( 1, 'uint8c', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'uint8c'
 *
 * var v = x.get( 0, 1 );
@@ -329,13 +360,16 @@ declare function broadcastScalar( value: number, dtype: 'uint8c', shape: Shape, 
 * @returns ndarray
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var x = broadcastScalar( 1.0, 'generic', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = getDType( x );
 * // returns 'generic'
 *
 * var v = x.get( 0, 1 );

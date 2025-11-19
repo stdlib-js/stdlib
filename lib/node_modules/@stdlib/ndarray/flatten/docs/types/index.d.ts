@@ -82,7 +82,7 @@ type Options<U> = BaseOptions & {
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x );
 * // returns <ndarray>
@@ -111,7 +111,7 @@ declare function flatten<T extends ndarray>( x: T, options?: BaseOptions ): T;
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x );
 * // returns <ndarray>

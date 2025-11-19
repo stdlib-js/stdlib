@@ -62,6 +62,13 @@ import DataType = require( './index' );
 	x.toJSON(); // $ExpectType Object
 }
 
+// Attached to a data type instance is a `valueOf` method which returns a string...
+{
+	const x = new DataType( 'float64' ); // $ExpectType DataType<string>
+
+	x.valueOf(); // $ExpectType string
+}
+
 // The compiler throws an error if the constructor is provided an unsupported number of arguments...
 {
 	new DataType(); // $ExpectError

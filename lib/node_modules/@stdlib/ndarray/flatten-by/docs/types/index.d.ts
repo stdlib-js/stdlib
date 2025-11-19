@@ -130,7 +130,7 @@ type Options<U> = BaseOptions & {
 * var offset = 0;
 *
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flattenBy( x, scale );
 * // returns <ndarray>
@@ -163,7 +163,7 @@ declare function flattenBy<T extends typedndarray<number> = typedndarray<number>
 * var offset = 0;
 *
 * var x = ndarray( 'complex64', buffer, shape, strides, offset, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flattenBy( x, identity );
 * // returns <ndarray>
@@ -193,7 +193,7 @@ declare function flattenBy<T extends ComplexLike = ComplexLike, U extends typedn
 * var offset = 0;
 *
 * var x = ndarray( 'uint8c', buffer, shape, strides, offset, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flattenBy( x, scale );
 * // returns <ndarray>
@@ -225,7 +225,7 @@ declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolea
 * var offset = 0;
 *
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flattenBy( x, scale );
 * // returns <ndarray>
@@ -262,7 +262,7 @@ declare function flattenBy<T = unknown, U extends genericndarray<T> = genericnda
 * var offset = 0;
 *
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var opts = {
 *      'depth': 2
@@ -303,7 +303,7 @@ declare function flattenBy<T extends typedndarray<number> = typedndarray<number>
 * var offset = 0;
 *
 * var x = ndarray( 'complex64', buffer, shape, strides, offset, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var opts = {
 *      'depth': 1
@@ -341,7 +341,7 @@ declare function flattenBy<T extends ComplexLike = ComplexLike, U extends typedn
 * var offset = 0;
 *
 * var x = ndarray( 'uint8c', buffer, shape, strides, offset, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var opts = {
 *     'depth': 2
@@ -381,7 +381,7 @@ declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolea
 * var offset = 0;
 *
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var opts = {
 *     'depth': 2
@@ -422,7 +422,7 @@ declare function flattenBy<T = unknown, U extends genericndarray<T> = genericnda
 * var offset = 0;
 *
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var opts = {
 *      'depth': 2

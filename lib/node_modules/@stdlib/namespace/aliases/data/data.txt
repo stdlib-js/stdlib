@@ -1569,6 +1569,7 @@ curryRight
 cwd
 DALE_CHALL_NEW
 datasets
+DataType
 DataView
 datespace
 dayOfQuarter
