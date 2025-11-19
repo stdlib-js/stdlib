@@ -225,7 +225,7 @@ declare function fillBy<T = unknown, V = unknown, ThisArg = unknown>( x: Accesso
 *
 * var x = [ 1, 2, 3 ];
 *
-* var out = fillBy( x, 4, 0, 3 );
+* var out = fillBy( x, 0, 3, fcn );
 * // returns [ 4, 4, 4 ]
 *
 * @example
@@ -235,7 +235,7 @@ declare function fillBy<T = unknown, V = unknown, ThisArg = unknown>( x: Accesso
 *
 * var x = [ 1, 2, 3, 4, 5, 6 ];
 *
-* var out = fillBy( x, 8, 0, 3 );
+* var out = fillBy( x, 0, 3, fcn );
 * // returns [ 8, 8, 8, 4, 5, 6 ]
 */
 declare function fillBy<T = unknown, V = unknown, ThisArg = unknown>( x: Collection<T>, start: number, end: number, fcn: Callback<T, Collection<T>, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, Collection<T>, V, ThisArg>> ): Collection<T | V>;

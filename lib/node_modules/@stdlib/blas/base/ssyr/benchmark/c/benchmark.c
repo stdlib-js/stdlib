@@ -83,7 +83,7 @@ static double tic( void ) {
 * Runs a benchmark.
 *
 * @param iterations   number of iterations
-* @param N            number of elements along each dimension
+* @param N            array dimension size
 * @return             elapsed time in seconds
 */
 static double benchmark1( int iterations, int N ) {
@@ -93,18 +93,18 @@ static double benchmark1( int iterations, int N ) {
 	double t;
 	int i;
 
-	stdlib_strided_sfill( N, 0.5f, x, 1 );
+	stdlib_strided_sfill( N, 1.0f, x, 1 );
 	stdlib_strided_sfill( N*N, 1.0f, A, 1 );
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		c_ssyr( CblasRowMajor, CblasUpper, N, 1.0, x, 1, A, N );
-		if ( A[ 0 ] != A[ 0 ] ) {
+		c_ssyr( CblasRowMajor, CblasUpper, N, 1.0f, x, 1, A, N );
+		if ( A[ i%(N*2) ] != A[ i%(N*2) ] ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( A[ 0 ] != A[ 0 ] ) {
+	if ( A[ i%(N*2) ] != A[ i%(N*2) ] ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;
@@ -114,7 +114,7 @@ static double benchmark1( int iterations, int N ) {
 * Runs a benchmark.
 *
 * @param iterations   number of iterations
-* @param N            number of elements along each dimension
+* @param N            array dimension size
 * @return             elapsed time in seconds
 */
 static double benchmark2( int iterations, int N ) {
@@ -124,18 +124,18 @@ static double benchmark2( int iterations, int N ) {
 	double t;
 	int i;
 
-	stdlib_strided_sfill( N, 0.5f, x, 1 );
+	stdlib_strided_sfill( N, 1.0f, x, 1 );
 	stdlib_strided_sfill( N*N, 1.0f, A, 1 );
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		c_ssyr_ndarray( CblasUpper, N, 1.0, x, 1, 0, A, N, 1, 0 );
-		if ( A[ 0 ] != A[ 0 ] ) {
+		c_ssyr_ndarray( CblasUpper, N, 1.0f, x, 1, 0, A, N, 1, 0 );
+		if ( A[ i%(N*2) ] != A[ i%(N*2) ] ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( A[ 0 ] != A[ 0 ] ) {
+	if ( A[ i%(N*2) ] != A[ i%(N*2) ] ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;

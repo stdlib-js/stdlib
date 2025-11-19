@@ -133,9 +133,9 @@ interface LogCDF {
 * y = mylogcdf( 2.5 );
 * // returns ~-0.113
 */
-declare var logCDF: LogCDF;
+declare var logcdf: LogCDF;
 
 
 // EXPORTS //
 
-export = logCDF;
+export = logcdf;

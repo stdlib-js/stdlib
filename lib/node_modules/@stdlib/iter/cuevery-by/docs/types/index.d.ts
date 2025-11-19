@@ -95,4 +95,4 @@ declare function iterCuEveryBy<T, U>( iterator: Iterator<T>, predicate: Predicat
 
 // EXPORTS //
 
-export = iterCuEveryBy ;
+export = iterCuEveryBy;

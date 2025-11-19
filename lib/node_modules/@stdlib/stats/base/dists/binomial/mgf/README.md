@@ -159,6 +159,105 @@ logEachMap( 't: %0.4f, n: %0.4f, p: %0.4f, M_X(t;n,p): %0.4f', t, n, p, mgf );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/binomial/mgf.h"
+```
+
+#### stdlib_base_dists_binomial_mgf( t, n, p )
+
+Evaluates the [moment-generating function][mgf] for a [binomial][binomial-distribution] distribution with number of trials `n` and success probability `p`.
+
+```c
+double out = stdlib_base_dists_binomial_mgf( 0.5, 20, 0.2 );
+// returns ~11.471
+```
+
+The function accepts the following arguments:
+
+-   **t**: `[in] double` input value.
+-   **n**: `[in] int32_t` number of trials.
+-   **p**: `[in] double` success probability.
+
+```c
+double stdlib_base_dists_binomial_mgf( const double t, const int32_t n, const double p );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/binomial/mgf.h"
+#include "stdlib/math/base/special/ceil.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v * (max - min) );
+}
+
+int main( void ) {
+    int32_t n;
+    double p;
+    double t;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        n = (int32_t)stdlib_base_ceil( random_uniform( 0, 100 ) );
+        p = random_uniform( 0, 1 );
+        t = random_uniform( 0, 5 );
+        y = stdlib_base_dists_binomial_mgf( t, n, p );
+        printf( "t: %lf, n: %d, p: %lf, M_X(t;n,p): %lf\n", t, n, p, y );
+    }
+
+    return 0;
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
