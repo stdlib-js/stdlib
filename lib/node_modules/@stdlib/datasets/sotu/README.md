@@ -144,7 +144,7 @@ var speeches = sotu({
 
 ## Notes
 
--   The dataset includes the addresses given by newly inaugurated presidents to a joint session of Congress in Washington during their first year in office, even though these are technically not State of the Union addresses. 
+-   The dataset includes the addresses given by newly inaugurated presidents to a joint session of Congress in Washington during their first year in office, even though these are technically not State of the Union addresses.
 
 </section>
 

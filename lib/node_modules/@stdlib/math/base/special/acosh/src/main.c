@@ -41,7 +41,7 @@
 static const double HUGE = 1 << 28; // 2**28
 
 /**
-*  Computes the hyperbolic arccosine of double-precision floating-point number.
+*  Computes the hyperbolic arccosine of a double-precision floating-point number.
 *
 * ## Method
 *

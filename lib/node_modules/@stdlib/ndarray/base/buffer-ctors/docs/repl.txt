@@ -4,7 +4,7 @@
 
     Parameters
     ----------
-    dtype: string
+    dtype: string|DataType
         Data type.
 
     Returns

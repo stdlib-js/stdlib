@@ -8,7 +8,7 @@
     - shape: array shape.
     - dtype: underlying array data type.
     - order: whether the array order is row-major (C-style) or column-major
-      (Fortran-style).
+    (Fortran-style).
 
     In browser environments, the function always returns zero-filled ndarrays.
 
@@ -67,15 +67,15 @@
     --------
     > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'float64', [ 2, 2 ], 'row-major' )
     <ndarray>
-    > var sh = x.shape
+    > var sh = {{alias:@stdlib/ndarray/shape}}( x )
     [ 2, 2 ]
-    > var dt = x.dtype
+    > var dt = {{alias:@stdlib/ndarray/dtype}}( x ).toString()
     'float64'
     > var y = {{alias}}( x )
     <ndarray>
-    > sh = y.shape
+    > sh = {{alias:@stdlib/ndarray/shape}}( y )
     [ 2, 2 ]
-    > dt = y.dtype
+    > dt = {{alias:@stdlib/ndarray/dtype}}( y ).toString()
     'float64'
 
     See Also

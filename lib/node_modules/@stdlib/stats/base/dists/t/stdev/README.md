@@ -20,7 +20,7 @@ limitations under the License.
 
 # Standard Deviation
 
-> [Student's t][t-distribution] distribution [variance][standard-deviation].
+> [Student's t][t-distribution] distribution [standard deviation][standard-deviation].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 

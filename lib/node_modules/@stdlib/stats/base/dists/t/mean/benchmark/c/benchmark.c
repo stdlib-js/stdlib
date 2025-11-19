@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#include <sys/time.h>
 #include "stdlib/stats/base/dists/t/mean.h"
+#include <sys/time.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -99,7 +99,7 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		v[ i ] = random_uniform( 1.0, 100.0 ); // degrees of freedom > 1
+		v[ i ] = random_uniform( 1.1, 100.0 ); // degrees of freedom > 1
 	}
 
 	t = tic();

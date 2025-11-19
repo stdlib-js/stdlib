@@ -24,13 +24,13 @@
 * @param x        input value
 * @param alpha    first shape parameter
 * @param beta     second shape parameter
-* @returns        mode
+* @return         mode
 *
 * @example
 * double y = stdlib_base_dists_betaprime_mode( 1.0, 2.0 );
-* // returns ~0.0
+* // returns 0.0
 */
-double stdlib_base_dists_betaprime_mode( double alpha, const double beta ) {
+double stdlib_base_dists_betaprime_mode( const double alpha, const double beta ) {
 	if ( alpha <= 0.0 || beta <= 0.0 ) {
 		return 0.0 / 0.0;
 	}

@@ -44,31 +44,13 @@ Interchanges two complex double-precision floating-point vectors.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 zswap( x.length, x, 1, y, 1 );
-
-var z = y.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 1.0
-
-var im = imag( z );
-// returns 2.0
-
-z = x.get( 0 );
-// returns <Complex128>
-
-re = real( z );
-// returns 0.0
-
-im = imag( z );
-// returns 0.0
+// x => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+// y => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 ```
 
 The function has the following parameters:
@@ -83,31 +65,13 @@ The `N` and stride parameters determine how values from `x` are interchanged wit
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 zswap( 2, x, -2, y, 1 );
-
-var z = y.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 5.0
-
-var im = imag( z );
-// returns 6.0
-
-z = x.get( 0 );
-// returns <Complex128>
-
-re = real( z );
-// returns 0.0
-
-im = imag( z );
-// returns 0.0
+// x => <Complex128Array>[ 0.0, 0.0, 3.0, 4.0, 0.0, 0.0, 7.0, 8.0 ]
+// y => <Complex128Array>[ 5.0, 6.0, 1.0, 2.0, 0.0, 0.0, 0.0, 0.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -116,8 +80,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 // Initial arrays...
 var x0 = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -129,24 +91,8 @@ var y1 = new Complex128Array( y0.buffer, y0.BYTES_PER_ELEMENT*2 ); // start at 3
 
 // Interchange in reverse order every other value from `x1` into `y1`...
 zswap( 2, x1, -2, y1, 1 );
-
-var z = y0.get( 2 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 7.0
-
-var im = imag( z );
-// returns 8.0
-
-z = x0.get( 1 );
-// returns <Complex128>
-
-re = real( z );
-// returns 0.0
-
-im = imag( z );
-// returns 0.0
+// x0 => <Complex128Array>[ 1.0, 2.0, 0.0, 0.0, 5.0, 6.0, 0.0, 0.0 ]
+// y0 => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 7.0, 8.0, 3.0, 4.0 ]
 ```
 
 #### zswap.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
@@ -155,31 +101,13 @@ Interchanges two complex double-precision floating-point vectors using alternati
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 zswap.ndarray( x.length, x, 1, 0, y, 1, 0 );
-
-var z = y.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 1.0
-
-var im = imag( z );
-// returns 2.0
-
-z = x.get( 0 );
-// returns <Complex128>
-
-re = real( z );
-// returns 0.0
-
-im = imag( z );
-// returns 0.0
+// x => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+// y => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 ```
 
 The function has the following additional parameters:
@@ -191,31 +119,13 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 var y = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 zswap.ndarray( 2, x, 2, 1, y, -1, y.length-1 );
-
-var z = y.get( y.length-1 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 3.0
-
-var im = imag( z );
-// returns 4.0
-
-z = x.get( x.length-1 );
-// returns <Complex128>
-
-re = real( z );
-// returns 0.0
-
-im = imag( z );
-// returns 0.0
+// x => <Complex128Array>[ 1.0, 2.0, 0.0, 0.0, 5.0, 6.0, 0.0, 0.0 ]
+// y => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 7.0, 8.0, 3.0, 4.0 ]
 ```
 
 </section>

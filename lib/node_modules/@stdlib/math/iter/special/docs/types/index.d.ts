@@ -298,7 +298,7 @@ interface Namespace {
 	*
 	* ## Notes
 	*
-	* -   The domain of inverse coversed cosine is restricted to `[-2,0]`. If an iterated value is outside of the domain, the returned iterator returns `NaN`.
+	* -   The domain of inverse coversed cosine is restricted to `[0,2]`. If an iterated value is outside of the domain, the returned iterator returns `NaN`.
 	* -   If an environment supports `Symbol.iterator` **and** a provided iterator is iterable, the returned iterator is iterable.
 	*
 	* @param iterator - input iterator
@@ -307,7 +307,7 @@ interface Namespace {
 	* @example
 	* var uniform = require( '@stdlib/random/iter/uniform' );
 	*
-	* var iter = ns.iterAcovercos( uniform( -2.0, 0.0 ) );
+	* var iter = ns.iterAcovercos( uniform( 0.0, 2.0 ) );
 	*
 	* var r = iter.next().value;
 	* // returns <number>

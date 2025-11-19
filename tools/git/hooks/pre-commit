@@ -545,8 +545,9 @@ run_lint() {
 	fi
 	# Lint TypeScript declaration files...
 	add_task 'lint_typescript_declarations'
+	declaration_files=$(echo "${changed_files}" | grep '/docs/types/.*\.d\.ts$')
 	if [[ -z "${skip_typescript_declarations}" ]]; then
-		files=$(echo "${changed_files}" | grep '/docs/types/.*\.d.ts$' | tr '\n' ' ')
+		files=$(echo "${declaration_files}" | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" lint-typescript-declarations-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
@@ -565,7 +566,26 @@ run_lint() {
 	# Lint TypeScript declaration test files...
 	add_task 'lint_typescript_tests'
 	if [[ -z "${skip_typescript_tests}" ]]; then
+		# Get directly changed `test.ts` files:
 		files=$(echo "${changed_files}" | grep '/docs/types/test.ts$' | tr '\n' ' ')
+
+		# Also get `test.ts` files corresponding to changed `index.d.ts` files...
+		if [[ -n "${declaration_files}" ]]; then
+			while IFS= read -r decl_file; do
+				# Only process index.d.ts files (skip other .d.ts files)
+				if [[ "${decl_file}" == */index.d.ts ]]; then
+					# Replace `index.d.ts` with `test.ts` to get the test file path:
+					test_file="${decl_file%index.d.ts}test.ts"
+
+					# Check if the test file exists and isn't already in the list:
+					if [[ -f "${test_file}" ]] && [[ ! " ${files} " =~ [[:space:]]${test_file}[[:space:]] ]]; then
+						files="${files} ${test_file}"
+					fi
+				fi
+			done <<< "${declaration_files}"
+		fi
+
+		# Lint all collected test files...
 		if [[ -n "${files}" ]]; then
 			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" ESLINT_TS_CONF="${eslint_typescript_tests_conf}" lint-typescript-declarations-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then

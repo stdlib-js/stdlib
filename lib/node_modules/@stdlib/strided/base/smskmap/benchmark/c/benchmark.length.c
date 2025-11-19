@@ -120,6 +120,7 @@ static double benchmark( int iterations, int len ) {
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
 		stdlib_strided_smskmap( len, x, 1, m, 1, y, 1, identity );
 		if ( y[ i%len ] != y[ i%len ] ) {
 			printf( "should not return NaN\n" );

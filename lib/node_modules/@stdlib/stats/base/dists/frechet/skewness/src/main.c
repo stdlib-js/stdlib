@@ -31,7 +31,7 @@
 * @return         skewness
 *
 * @example
-* double y = stdlib_base_frechet_skewness( 5.0, 2.0, 0.0 );
+* double y = stdlib_base_dists_frechet_skewness( 5.0, 2.0, 0.0 );
 * // returns ~3.535
 */
 double stdlib_base_dists_frechet_skewness( const double alpha, const double s, const double m ) {
