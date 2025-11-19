@@ -1,0 +1,26 @@
+
+{{alias}}( z )
+    Computes the inverse of a single-precision complex floating-point number.
+
+    Parameters
+    ----------
+    z: Complex64
+        Complex number.
+
+    Returns
+    -------
+    out: Complex64
+        Result.
+
+    Examples
+    --------
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 4.0 ) )
+    <Complex64>
+    > var re = {{alias:@stdlib/complex/float32/real}}( v )
+    ~0.1
+    > var im = {{alias:@stdlib/complex/float32/imag}}( v )
+    ~-0.2
+
+    See Also
+    --------
+

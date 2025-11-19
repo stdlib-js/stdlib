@@ -18,18 +18,37 @@
 
 #include "stdlib/math/base/special/cceilf.h"
 #include "stdlib/math/base/special/ceilf.h"
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
 
 /**
-* Rounds a single-precision complex floating-point number toward positive infinity.
+* Rounds each component of a single-precision complex floating-point number toward positive infinity.
 *
 * @param z       input value
 * @return        result
 *
 * @example
-* float complex y = stdlib_base_cceilf( 3.5f-2.5f*I );
-* // returns 4.0f-2.0f*I
+* #include "stdlib/complex/float32/ctor.h"
+* #include "stdlib/complex/float32/real.h"
+* #include "stdlib/complex/float32/imag.h"
+*
+* stdlib_complex64_t z = stdlib_complex64( 3.5f, -2.5f );
+*
+* stdlib_complex64_t out = stdlib_base_cceilf( z );
+*
+* float re = stdlib_complex64_real( out );
+* // returns 4.0f
+*
+* float im = stdlib_complex64_imag( out );
+* // returns -2.0f
 */
-float complex stdlib_base_cceilf( const float complex z ) {
-	return stdlib_base_ceilf( crealf( z ) ) + stdlib_base_ceilf( cimagf( z ) )*I;
+stdlib_complex64_t stdlib_base_cceilf( const stdlib_complex64_t z ) {
+	float re;
+	float im;
+
+	stdlib_complex64_reim( z, &re, &im );
+
+	re = stdlib_base_ceilf( re );
+	im = stdlib_base_ceilf( im );
+	return stdlib_complex64( re, im );
 }

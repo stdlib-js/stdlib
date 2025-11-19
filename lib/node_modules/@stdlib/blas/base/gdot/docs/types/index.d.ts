@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `gdot`.
@@ -43,7 +48,7 @@ interface Routine {
 	* var z = gdot( x.length, x, 1, y, 1 );
 	* // returns -5.0
 	*/
-	( N: number, x: NumericArray, strideX: number, y: NumericArray, strideY: number ): number;
+	( N: number, x: InputArray, strideX: number, y: InputArray, strideY: number ): number;
 
 	/**
 	* Computes the dot product of two vectors using alternative indexing semantics.
@@ -64,7 +69,7 @@ interface Routine {
 	* var z = gdot.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // returns -5.0
 	*/
-	ndarray( N: number, x: NumericArray, strideX: number, offsetX: number, y: NumericArray, strideY: number, offsetY: number ): number;
+	ndarray( N: number, x: InputArray, strideX: number, offsetX: number, y: InputArray, strideY: number, offsetY: number ): number;
 }
 
 /**

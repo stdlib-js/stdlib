@@ -1,7 +1,7 @@
 [
-	"hinge",
-	"log",
-	"modifiedHuber",
-	"perceptron",
-	"squaredHinge"
+  "hinge",
+  "log",
+  "modifiedHuber",
+  "perceptron",
+  "squaredHinge"
 ]

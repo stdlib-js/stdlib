@@ -27,7 +27,7 @@
 * @return     standard deviation
 *
 * @example
-* double y = stdlib_base_bernoulli_stdev( 0.1 );
+* double y = stdlib_base_dists_bernoulli_stdev( 0.1 );
 * // returns ~0.3
 */
 double stdlib_base_dists_bernoulli_stdev( const double p ) {

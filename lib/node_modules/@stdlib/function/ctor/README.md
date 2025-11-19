@@ -191,7 +191,7 @@ var v = add.toString();
 -   In pre-ES2015 environments, only plain identifiers (without defaults) are valid JavaScript parameters.
 -   Creating `Function` objects with the `Function` constructor is less efficient than declaring a function via a function expression or a function statement.
 -   The `Function` constructor can be invoked without the `new` operator (using `new` and not using `new` both return a new `Function` object).
--   The `Function` constructor creates functions which execute in the **global scope**. Hence, created functions **cannot** access variables local to the scope in which functions were created.  
+-   The `Function` constructor creates functions which execute in the **global scope**. Hence, created functions **cannot** access variables local to the scope in which functions were created.
 
 </section>
 

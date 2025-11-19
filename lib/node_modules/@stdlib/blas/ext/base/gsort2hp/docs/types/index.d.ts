@@ -20,7 +20,12 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { NumericArray } from '@stdlib/types/array';
+import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array';
+
+/**
+* Input array.
+*/
+type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
 * Interface describing `gsort2hp`.
@@ -32,9 +37,9 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - first input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - second input array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `x`
 	* @returns `x`
 	*
 	* @example
@@ -49,7 +54,7 @@ interface Routine {
 	* console.log( y );
 	* // => [ 3.0, 1.0, 0.0, 2.0 ]
 	*/
-	( N: number, order: number, x: NumericArray, strideX: number, y: NumericArray, strideY: number ): NumericArray;
+	<T extends InputArray>( N: number, order: number, x: InputArray, strideX: number, y: T, strideY: number ): T;
 
 	/**
 	* Simultaneously sorts two strided arrays based on the sort order of the first array using heapsort and alternative indexing semantics.
@@ -57,11 +62,11 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - first input array
-	* @param strideX - `x` stride length
-	* @param offsetX - `x` starting index
+	* @param strideX - stride length for `x`
+	* @param offsetX - starting index for `x`
 	* @param y - second input array
-	* @param strideY - `y` stride length
-	* @param offsetY - `y` starting index
+	* @param strideY - stride length for `x`
+	* @param offsetY - starting index for `y`
 	* @returns `x`
 	*
 	* @example
@@ -76,7 +81,7 @@ interface Routine {
 	* console.log( y );
 	* // => [ 3.0, 1.0, 0.0, 2.0 ]
 	*/
-	ndarray( N: number, order: number, x: NumericArray, strideX: number, offsetX: number, y: NumericArray, strideY: number, offsetY: number ): NumericArray;
+	ndarray<T extends InputArray>( N: number, order: number, x: InputArray, strideX: number, offsetX: number, y: T, strideY: number, offsetY: number ): T;
 }
 
 /**
@@ -85,9 +90,9 @@ interface Routine {
 * @param N - number of indexed elements
 * @param order - sort order
 * @param x - first input array
-* @param strideX - `x` stride length
+* @param strideX - stride length for `x`
 * @param y - second input array
-* @param strideY - `y` stride length
+* @param strideY - stride length for `x`
 * @returns `x`
 *
 * @example

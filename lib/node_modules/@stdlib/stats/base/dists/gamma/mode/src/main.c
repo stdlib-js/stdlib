@@ -26,7 +26,7 @@
 * @return         mode
 *
 * @example
-* double y = stdlib_base_gamma_mode( 1.0, 1.0 );
+* double y = stdlib_base_dists_gamma_mode( 1.0, 1.0 );
 * // returns 0.0
 */
 double stdlib_base_dists_gamma_mode( const double alpha, const double beta ) {
