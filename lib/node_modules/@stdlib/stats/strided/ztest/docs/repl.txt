@@ -1,0 +1,113 @@
+
+{{alias}}( N, alternative, alpha, mu, sigma, x, strideX, out )
+    Computes a one-sample Z-test for a strided array.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alternative: string
+        Alternative hypothesis. Must be one of the following:
+
+        - two-sided: mean is not equal to null value.
+        - greater: mean is larger than null value.
+        - less: mean is less than null value.
+
+    alpha: number
+        Significance level.
+
+    mu: number
+        Value of the mean under the null hypothesis.
+
+    sigma: number
+        Known standard deviation.
+
+    x: Array|TypedArray|Object
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    out: Object
+        Output results object.
+
+    Returns
+    -------
+    out: Object
+        Results object.
+
+    Examples
+    --------
+    > var x = [ 4.0, 4.0, 6.0, 6.0, 5.0 ];
+    > var N = x.length;
+    > var alt = 'two-sided';
+    > var out = new {{alias:@stdlib/stats/base/ztest/one-sample/results/float64}}();
+    > var res = {{alias}}( N, alt, 0.05, 0.0, 1.0, x, 1, out );
+    > res.toString()
+
+
+{{alias}}.ndarray( N, alternative, alpha, mu, sigma, x, strideX, offsetX, out )
+    Computes a one-sample Z-test for a strided array using alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alternative: string
+        Alternative hypothesis. Must be one of the following:
+
+        - two-sided: mean is not equal to null value.
+        - greater: mean is larger than null value.
+        - less: mean is less than null value.
+
+    alpha: number
+        Significance level.
+
+    mu: number
+        Value of the mean under the null hypothesis.
+
+    sigma: number
+        Known standard deviation.
+
+    x: Array|TypedArray|Object
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    out: Object
+        Output results object.
+
+    Returns
+    -------
+    out: Object
+        Results object.
+
+    Examples
+    --------
+    > var x = [ 4.0, 4.0, 6.0, 6.0, 5.0 ];
+    > var N = x.length;
+    > var alt = 'two-sided';
+    > var out = new {{alias:@stdlib/stats/base/ztest/one-sample/results/float64}}();
+    > var res = {{alias}}.ndarray( N, alt, 0.05, 0.0, 1.0, x, 1, 0, out );
+    > res.toString()
+
+    See Also
+    --------
+

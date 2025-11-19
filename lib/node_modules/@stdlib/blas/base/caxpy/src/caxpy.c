@@ -25,14 +25,14 @@
 * Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant and adds the result to a single-precision complex floating-point vector.
 *
 * @param N        number of indexed elements
-* @param ca       scalar constant
-* @param CX       input array
-* @param strideX  CX stride length
-* @param CY       output array
-* @param strideY  CY stride length
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  X stride length
+* @param Y        output array
+* @param strideY  Y stride length
 */
-void API_SUFFIX(c_caxpy)( const CBLAS_INT N, const stdlib_complex64_t ca, const void *CX, const CBLAS_INT strideX, void *CY, const CBLAS_INT strideY ) {
+void API_SUFFIX(c_caxpy)( const CBLAS_INT N, const stdlib_complex64_t alpha, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
 	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
-	API_SUFFIX(c_caxpy_ndarray)( N, ca, CX, strideX, ox, CY, strideY, oy );
+	API_SUFFIX(c_caxpy_ndarray)( N, alpha, X, strideX, ox, Y, strideY, oy );
 }

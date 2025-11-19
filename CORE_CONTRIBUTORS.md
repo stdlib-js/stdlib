@@ -32,6 +32,7 @@ For information about the governance of the stdlib project, see [GOVERNANCE.md][
 -   [headlessNode][muhammad-haris-github] - **Muhammad Haris** &lt;[harriskhan047@outlook.com][muhammad-haris-email]&gt; (he/him)
 -   [aman-095][aman-bhansali-github] - **Aman Bhansali** &lt;[amanbhansali65@gmail.com][aman-bhansali-email]&gt; (he/him)
 -   [aayush0325][aayush-khanna-github] - **Aayush Khanna** &lt;[aayushiitbhu23@gmail.com][aayush-khanna-email]&gt; (he/him)
+-   [anandkaranubc][karan-anand-github] - **Karan Anand** &lt;[anandkarancompsci@gmail.com][karan-anand-email]&gt; (he/him)
 
 <details>
 <summary>Emeriti</summary>
@@ -71,6 +72,10 @@ For information about the governance of the stdlib project, see [GOVERNANCE.md][
 [aayush-khanna-github]: https://github.com/aayush0325
 
 [aayush-khanna-email]: mailto:aayushiitbhu23@gmail.com
+
+[karan-anand-github]: https://github.com/anandkaranubc
+
+[karan-anand-email]: mailto:anandkarancompsci@gmail.com
 
 </section>
 

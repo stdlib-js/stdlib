@@ -114,7 +114,7 @@ declare class Geometric {
 	*
 	* @param t - input value
 	* @returns evaluated MGF
-	 */
+	*/
 	mgf( t: number ): number;
 
 	/**

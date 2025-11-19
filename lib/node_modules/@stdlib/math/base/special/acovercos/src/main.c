@@ -27,8 +27,8 @@
 *
 * @example
 * double out = stdlib_base_acovercos( 0.0 );
-* // returns ~1.5708
+* // returns ~-1.5708
 */
 double stdlib_base_acovercos( const double x ) {
-	return stdlib_base_asin( 1.0 + x );
+	return stdlib_base_asin( x - 1.0 );
 }

@@ -120,20 +120,17 @@ y = myLogPDF( 1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var logpdf = require( '@stdlib/stats/base/dists/chisquare/logpdf' );
 
-var k;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 20, 0.0, 10.0, opts );
+var k = uniform( 20, 0.0, 10.0, opts );
 
-for ( i = 0; i < 20; i++ ) {
-    x = randu() * 10.0;
-    k = randu() * 10.0;
-    y = logpdf( x, k );
-    console.log( 'x: %d, k: %d, ln(f(x;k)): %d', x.toFixed( 4 ), k.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, k: %0.4f, ln(f(x;k)): %0.4f', x, k, logpdf );
 ```
 
 </section>
