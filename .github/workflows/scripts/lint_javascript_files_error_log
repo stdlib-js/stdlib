@@ -1,0 +1,174 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to lint JavaScript files with extended error handling and reporting.
+#
+# Usage: lint_javascript_files_extended file1 [file2 file3 ...]
+#
+# Arguments:
+#
+#   file1       File path.
+#   file2       File path.
+#   file3       File path.
+#
+# Environment variables:
+#
+#   FIX         0 or 1 indicating whether to automatically fix errors.
+#   QUIET       0 or 1 indicating whether to run in quiet mode (errors only).
+#   ERR_FILE    Path to error output file (optional).
+#
+
+# shellcheck disable=SC2086
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Determine root directory:
+root=$(git rev-parse --show-toplevel)
+
+# Flag indicating whether to automatically fix errors:
+fix="${FIX:-0}"
+
+# Flag indicating whether to run in quiet mode:
+quiet="${QUIET:-0}"
+
+# Error output file:
+err_file="${ERR_FILE:-${TMPDIR:-/tmp}/lint_javascript_errors_$$.txt}"
+
+# Files to lint:
+files_to_lint="$*"
+
+# Define the path to ESLint configuration file for linting examples:
+eslint_examples_conf="${root}/etc/eslint/.eslintrc.examples.js"
+
+# Define the path to ESLint configuration file for linting tests:
+eslint_tests_conf="${root}/etc/eslint/.eslintrc.tests.js"
+
+# Define the path to ESLint configuration file for linting benchmarks:
+eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
+
+# Initialize error flag:
+error_occurred=0
+
+
+# FUNCTIONS #
+
+# Runs make lint command with error handling.
+#
+# $1 - files to lint
+# $2 - additional make arguments
+# $3 - ESLint configuration argument
+run_make_lint() {
+	local files_to_lint="$1"
+	local make_args="$2"
+	local eslint_conf_arg="$3"
+
+	local eslint_flags=""
+	if [ "${quiet}" -eq 1 ]; then
+		eslint_flags="ESLINT_FLAGS='--quiet'"
+	fi
+
+	local make_cmd="make lint-javascript-files FIX=${fix} FAST_FAIL=0 FILES=\"${files_to_lint}\" ${make_args} ${eslint_conf_arg} ${eslint_flags}"
+
+	echo "Running: ${make_cmd}"
+	if ! eval "${make_cmd}"; then
+		if [ "${quiet}" -eq 0 ]; then
+			echo "Initial linting failed. Retrying with --quiet and logging errors..."
+			eval "make lint-javascript-files FIX=${fix} FAST_FAIL=0 FILES=\"${files_to_lint}\" ${make_args} ${eslint_conf_arg} ESLINT_FLAGS='--quiet'" >> "${err_file}" 2>&1
+		else
+			# Already running with --quiet, just log the error
+			echo "Linting failed for files." >> "${err_file}"
+		fi
+		error_occurred=1
+	fi
+}
+
+
+# MAIN #
+
+# Initialize error file:
+: > "${err_file}"
+
+# Build native addons if present:
+packages=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '^lib/node_modules/' | sed 's/^lib\/node_modules\///g' | sed 's/\/lib\/.*//g' | sort | uniq)
+for pkg in ${packages}; do
+	if [ -f "lib/node_modules/${pkg}/binding.gyp" ]; then
+		echo "Building native addon for ${pkg}..."
+		NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
+	fi
+done
+
+# Lint JavaScript source files:
+files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ' | sed 's/ $//')
+if [ -n "${files}" ]; then
+	echo "Linting JavaScript source files..."
+	run_make_lint "${files}" "" ""
+fi
+
+# Lint JavaScript command-line interfaces:
+files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ' | sed 's/ $//')
+if [ -n "${files}" ]; then
+	echo "Linting JavaScript CLI files..."
+	run_make_lint "${files}" "" ""
+fi
+
+# Lint JavaScript example files:
+files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
+if [ -n "${files}" ]; then
+	echo "Linting JavaScript example files..."
+	run_make_lint "${files}" "" "ESLINT_CONF=\"${eslint_examples_conf}\""
+fi
+
+# Lint JavaScript test files:
+files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
+if [ -n "${files}" ]; then
+	echo "Linting JavaScript test files..."
+	run_make_lint "${files}" "" "ESLINT_CONF=\"${eslint_tests_conf}\""
+fi
+
+# Lint JavaScript benchmark files:
+files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
+if [ -n "${files}" ]; then
+	echo "Linting JavaScript benchmark files..."
+	run_make_lint "${files}" "" "ESLINT_CONF=\"${eslint_benchmarks_conf}\""
+fi
+
+# Report results:
+if [ "${error_occurred}" -eq 1 ]; then
+	echo "JavaScript linting errors occurred. See details below:"
+	cat "${err_file}"
+
+	# Clean up temp file ONLY if it was auto-generated (ERR_FILE not provided):
+	if [ -z "${ERR_FILE}" ]; then
+		rm -f "${err_file}"
+	fi
+
+	exit 1
+else
+	echo "JavaScript linting completed successfully."
+
+	# Clean up temp file ONLY if it was auto-generated (ERR_FILE not provided):
+	if [ -z "${ERR_FILE}" ]; then
+		rm -f "${err_file}"
+	fi
+
+	exit 0
+fi

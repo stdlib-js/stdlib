@@ -56,6 +56,21 @@ import isAlmostEqualf = require( './index' );
 	isAlmostEqualf( z1, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
+// The compiler throws an error if the function is provided a third argument that is not a number...
+{
+	const z1 = new Complex64( 5.0, 3.0 );
+	const z2 = new Complex64( 5.0, 3.0 );
+
+	isAlmostEqualf( z1, z2, 'abc' ); // $ExpectError
+	isAlmostEqualf( z1, z2, true ); // $ExpectError
+	isAlmostEqualf( z1, z2, false ); // $ExpectError
+	isAlmostEqualf( z1, z2, null ); // $ExpectError
+	isAlmostEqualf( z1, z2, void 0 ); // $ExpectError
+	isAlmostEqualf( z1, z2, [] ); // $ExpectError
+	isAlmostEqualf( z1, z2, {} ); // $ExpectError
+	isAlmostEqualf( z1, z2, ( x: number ): number => x ); // $ExpectError
+}
+
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	const z1 = new Complex64( 5.0, 3.0 );

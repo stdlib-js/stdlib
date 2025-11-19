@@ -25,7 +25,7 @@
 * @returns HTTP header-cased string
 *
 * @example
-*  var str = headercase( 'Hello World!' );
+* var str = headercase( 'Hello World!' );
 * // returns 'Hello-World'
 *
 * @example

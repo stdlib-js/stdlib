@@ -36,7 +36,6 @@
 * @param beta     scalar constant
 * @param Y        second input vector
 * @param strideY  `Y` stride length
-* @return         output value
 */
 void API_SUFFIX(c_sgemv)( const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE trans, const CBLAS_INT M, const CBLAS_INT N, const float alpha, const float *A, const CBLAS_INT LDA, const float *X, const CBLAS_INT strideX, const float beta, float *Y, const CBLAS_INT strideY ) {
 	CBLAS_INT vala;

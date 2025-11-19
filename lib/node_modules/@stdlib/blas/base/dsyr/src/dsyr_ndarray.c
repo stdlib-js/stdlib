@@ -44,7 +44,7 @@ void API_SUFFIX(c_dsyr_ndarray)( const CBLAS_UPLO uplo, const CBLAS_INT N, const
 	CBLAS_INT sa1;
 	CBLAS_INT i0;
 	CBLAS_INT i1;
-	CBLAS_INT oa;
+	CBLAS_INT ia;
 	CBLAS_INT ox;
 	double tmp;
 
@@ -89,11 +89,12 @@ void API_SUFFIX(c_dsyr_ndarray)( const CBLAS_UPLO uplo, const CBLAS_INT N, const
 		for ( i1 = 0; i1 < N; i1++ ) {
 			if ( X[ ix1 ] != 0.0 ) {
 				tmp = alpha * X[ ix1 ];
-				oa = offsetA + (sa1*i1);
+				ia = offsetA + (sa1*i1);
 				ix0 = ox;
 				for ( i0 = 0; i0 <= i1; i0++ ) {
-					A[ oa+(sa0*i0) ] += X[ ix0 ] * tmp;
+					A[ ia ] += X[ ix0 ] * tmp;
 					ix0 += strideX;
+					ia += sa0;
 				}
 			}
 			ix1 += strideX;
@@ -105,11 +106,12 @@ void API_SUFFIX(c_dsyr_ndarray)( const CBLAS_UPLO uplo, const CBLAS_INT N, const
 	for ( i1 = 0; i1 < N; i1++ ) {
 		if ( X[ ix1 ] != 0.0 ) {
 			tmp = alpha * X[ ix1 ];
-			oa = offsetA + (sa1*i1);
+			ia = offsetA + (sa1*i1) + (sa0*i1);
 			ix0 = ix1;
 			for ( i0 = i1; i0 < N; i0++ ) {
-				A[ oa+(sa0*i0) ] += X[ ix0 ] * tmp;
+				A[ ia ] += X[ ix0 ] * tmp;
 				ix0 += strideX;
+				ia += sa0;
 			}
 		}
 		ix1 += strideX;

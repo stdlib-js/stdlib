@@ -32,16 +32,19 @@
 * @returns two-element array holding function value `y` and `1-y`
 *
 * @example
-* var y = kernelBetaincinv( 3.0, 3.0, 0.2, 0.8 )
+* var y = kernelBetaincinv( 3.0, 3.0, 0.2, 0.8 );
 * // returns [ ~0.327, ~0.673 ]
+*
 * @example
-* y = kernelBetaincinv( 3.0, 3.0, 0.4, 0.6 )
+* var y = kernelBetaincinv( 3.0, 3.0, 0.4, 0.6 );
 * // returns [ ~0.446, ~0.554 ]
+*
 * @example
-* y = kernelBetaincinv( 1.0, 6.0, 0.4, 0.6 )
+* var y = kernelBetaincinv( 1.0, 6.0, 0.4, 0.6 );
 * // returns [ ~0.082, ~0.918 ]
+*
 * @example
-* y = kernelBetaincinv( 1.0, 6.0, 0.8, 0.2 )
+* var y = kernelBetaincinv( 1.0, 6.0, 0.8, 0.2 );
 * // returns [ ~0.235, ~0.765 ]
 */
 declare function kernelBetaincinv( a: number, b: number, p: number, q: number ): Array<number>;

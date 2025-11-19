@@ -162,17 +162,17 @@ logEachMap( 'binomcoeff(%d,%d) = %0.4f', n, k, binomcoeff );
 Evaluates the [binomial coefficient][binomial-coefficient] of two integers `n` and `k` as a single-precision floating-point number.
 
 ```c
-float v = stdlib_base_binomcoeff( 8, 2 );
+float v = stdlib_base_binomcoeff( 8.0f, 2.0f );
 // returns 28.0f
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int32_t` input value.
--   **k**: `[in] int32_t` input value.
+-   **n**: `[in] float` input value.
+-   **k**: `[in] float` input value.
 
 ```c
-float stdlib_base_binomcoeff( const int32_t n, const int32_t k );
+float stdlib_base_binomcoeff( const float n, const float k );
 ```
 
 </section>
@@ -196,17 +196,16 @@ float stdlib_base_binomcoeff( const int32_t n, const int32_t k );
 ```c
 #include "stdlib/math/base/special/binomcoeff.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-    const int32_t a[] = { 24, 32, 48, 116, 33 };
-    const int32_t b[] = { 12, 6, 15, 52, 22 };
+    const float a[] = { 24.0f, 32.0f, 48.0f, 116.0f, 33.0f };
+    const float b[] = { 12.0f, 6.0f, 15.0f, 52.0f, 22.0f };
 
     float out;
     int i;
     for ( i = 0; i < 5; i++ ) {
         out = stdlib_base_binomcoeff( a[ i ], b[ i ] );
-        printf( "binomcoeff(%d, %d) = %f\n", a[ i ], b[ i ], out );
+        printf( "binomcoeff(%f, %f) = %f\n", a[ i ], b[ i ], out );
     }
 }
 ```

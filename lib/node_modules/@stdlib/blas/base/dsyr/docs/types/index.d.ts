@@ -51,7 +51,7 @@ interface Routine {
 	( order: Layout, uplo: MatrixTriangle, N: number, alpha: number, x: Float64Array, strideX: number, A: Float64Array, LDA: number ): Float64Array;
 
 	/**
-	* Performs the matrix-vector operation `y = alpha*A*x + beta*y` using alternative indexing semantics and where `alpha` and `beta` are scalars, `x` and `y` are `N` element vectors, and `A` is an `N` by `N` symmetric matrix.
+	* Performs the symmetric rank 1 operation `A = α*x*x^T + A` using alternative indexing semantics and where `α` is a scalar, `x` is an `N` element vector, and `A` is an `N` by `N` symmetric matrix.
 	*
 	* @param uplo - specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced
 	* @param N - number of elements along each dimension in the matrix `A`

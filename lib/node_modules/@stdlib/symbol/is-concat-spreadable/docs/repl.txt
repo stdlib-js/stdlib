@@ -1,0 +1,18 @@
+
+{{alias}}
+    Concat spreadable symbol.
+
+    This symbol specifies whether an array-like object should be flattened to
+    its elements during concatenation.
+
+    The symbol is only supported in ES6/ES2015+ environments. For non-supporting
+    environments, the value is `null`.
+
+    Examples
+    --------
+    > var s = {{alias}}
+    e.g., <symbol>
+
+    See Also
+    --------
+

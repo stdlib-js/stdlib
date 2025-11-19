@@ -4335,6 +4335,45 @@ rules[ 'stdlib/no-dynamic-exports' ] = 'error';
 rules[ 'stdlib/no-nested-require' ] = 'error';
 
 /**
+* Enforce moving inner function declarations to the highest possible scope.
+*
+* @name no-unnecessary-nested-functions
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* function outer() {
+*     function inner() {
+*         return 42;
+*     }
+*     return inner();
+* }
+*
+* @example
+* // Good...
+* function inner() {
+*     return 42;
+* }
+*
+* function outer() {
+*     return inner();
+* }
+*
+* @example
+* // Good (uses outer scope variable)...
+* function outer( x ) {
+*     var multiplier = 2;
+*     function inner() {
+*         return x * multiplier;
+*     }
+*     return inner();
+* }
+*/
+rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'error';
+
+/**
 * Disallow the use of the `new Array()` constructor.
 *
 * @name no-new-array

@@ -26,7 +26,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * Converts an ndarray-like object to a scalar value.
 *
 * @param x - input ndarray
-* @returns ndarray
+* @returns scalar value
 *
 * @example
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );

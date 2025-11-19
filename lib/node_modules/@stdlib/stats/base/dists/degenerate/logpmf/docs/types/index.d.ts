@@ -89,9 +89,9 @@ interface LogPMF {
 * var y = mylogpmf( 10.0 );
 * // returns 0.0
 */
-declare var logPMF: LogPMF;
+declare var logpmf: LogPMF;
 
 
 // EXPORTS //
 
-export = logPMF;
+export = logpmf;

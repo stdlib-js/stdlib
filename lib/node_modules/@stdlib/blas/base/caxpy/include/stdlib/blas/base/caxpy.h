@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `caxpy`.
 */
-#ifndef CAXPY_H
-#define CAXPY_H
+#ifndef STDLIB_BLAS_BASE_CAXPY_H
+#define STDLIB_BLAS_BASE_CAXPY_H
 
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/complex/float32/ctor.h"
@@ -46,4 +46,4 @@ void API_SUFFIX(c_caxpy_ndarray)( const CBLAS_INT N, const stdlib_complex64_t al
 }
 #endif
 
-#endif // !CAXPY_H
+#endif // !STDLIB_BLAS_BASE_CAXPY_H
