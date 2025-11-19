@@ -119,22 +119,18 @@ y = mypdf( 12.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var pdf = require( '@stdlib/stats/base/dists/laplace/pdf' );
 
-var mu;
-var b;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, 0.0, 10.0, opts );
+var mu = uniform( 100, 0.0, 10.0, opts );
+var b = uniform( 100, 0.0, 10.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = randu() * 10.0;
-    mu = randu() * 10.0;
-    b = randu() * 10.0;
-    y = pdf( x, mu, b );
-    console.log( 'x: %d, µ: %d, b: %d, f(x;µ,b): %d', x.toFixed( 4 ), mu.toFixed( 4 ), b.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, µ: %0.4f, b: %0.4f, f(x;µ,b): %0.4f', x, mu, b, pdf );
 ```
 
 </section>

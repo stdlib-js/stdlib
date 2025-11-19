@@ -24,12 +24,13 @@
 #include "stdlib/constants/float64/exponent_bias.h"
 #include "stdlib/constants/float64/high_word_exponent_mask.h"
 #include "stdlib/constants/float64/high_word_significand_mask.h"
+#include "stdlib/constants/float64/num_high_word_significand_bits.h"
 
 // 4294967295 => 0xffffffff => 11111111111111111111111111111111
 static const uint32_t ALL_ONES = 4294967295;
 
 /**
-* Decomposes a double-precision floating-point number into integral and fractional parts, each having the same type and sign as the input value, and assigns results to a provided output array.
+* Decomposes a double-precision floating-point number into integral and fractional parts, each having the same type and sign as the input value.
 *
 * @param x           input value
 * @param integral    destination pointer for the integral part
@@ -82,11 +83,11 @@ void stdlib_base_modf( const double x, double* integral, double* frac ) {
 	stdlib_base_float64_to_words( x, &high, &low );
 
 	// Extract the unbiased exponent from the high word:
-	exp = ( ( high & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_EXPONENT_MASK ) >> 20 );
+	exp = ( ( high & STDLIB_CONSTANT_FLOAT64_HIGH_WORD_EXPONENT_MASK ) >> STDLIB_CONSTANT_FLOAT64_NUM_HIGH_WORD_SIGNIFICAND_BITS );
 	exp -= ( STDLIB_CONSTANT_FLOAT64_EXPONENT_BIAS );
 
 	// Handle smaller values (x < 2**20 = 1048576)...
-	if( exp < 20 ) {
+	if( exp < STDLIB_CONSTANT_FLOAT64_NUM_HIGH_WORD_SIGNIFICAND_BITS ) {
 		i = ( STDLIB_CONSTANT_FLOAT64_HIGH_WORD_SIGNIFICAND_MASK >> exp );
 
 		// Determine if `x` is integral by checking for significand bits which cannot be exponentiated away...
@@ -111,7 +112,7 @@ void stdlib_base_modf( const double x, double* integral, double* frac ) {
 		*frac = 0.0;
 		return;
 	}
-	i = ALL_ONES >> ( exp - 20 );
+	i = ALL_ONES >> ( exp - STDLIB_CONSTANT_FLOAT64_NUM_HIGH_WORD_SIGNIFICAND_BITS );
 
 	// Determine if `x` is integral by checking for less significant significand bits which cannot be exponentiated away...
 	if ( ( low & i ) == 0 ) {

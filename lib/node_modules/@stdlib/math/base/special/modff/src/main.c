@@ -24,9 +24,10 @@
 #include "stdlib/constants/float32/exponent_bias.h"
 #include "stdlib/constants/float32/exponent_mask.h"
 #include "stdlib/constants/float32/significand_mask.h"
+#include "stdlib/constants/float32/num_significand_bits.h"
 
 /**
-* Decomposes a single-precision floating-point number into integral and fractional parts, each having the same type and sign as the input value, and assigns results to a provided output array.
+* Decomposes a single-precision floating-point number into integral and fractional parts, each having the same type and sign as the input value.
 *
 * @param x           input value
 * @param integral    destination pointer for the integral part
@@ -78,11 +79,11 @@ void stdlib_base_modff( const float x, float* integral, float* frac ) {
 	stdlib_base_float32_to_word( x, &word );
 
 	// Extract the unbiased exponent:
-	exp = ( ( word & STDLIB_CONSTANT_FLOAT32_EXPONENT_MASK ) >> 23 );
+	exp = ( ( word & STDLIB_CONSTANT_FLOAT32_EXPONENT_MASK ) >> STDLIB_CONSTANT_FLOAT32_NUM_SIGNIFICAND_BITS );
 	exp -= ( STDLIB_CONSTANT_FLOAT32_EXPONENT_BIAS );
 
 	// Handle smaller values (x < 2**23 = 8388608)...
-	if( exp < 23 ) {
+	if( exp < STDLIB_CONSTANT_FLOAT32_NUM_SIGNIFICAND_BITS ) {
 		i = ( STDLIB_CONSTANT_FLOAT32_SIGNIFICAND_MASK >> exp );
 
 		// Determine if `x` is integral by checking for significand bits which cannot be exponentiated away...
@@ -100,11 +101,8 @@ void stdlib_base_modff( const float x, float* integral, float* frac ) {
 		*frac = x - j;
 		return;
 	}
-	// Check if `x` can even have a fractional part...
-	else {
-		// `x` is integral:
-		*integral = x;
-		*frac = 0.0f;
-		return;
-	}
+	// `x` is integral:
+	*integral = x;
+	*frac = 0.0f;
+	return;
 }

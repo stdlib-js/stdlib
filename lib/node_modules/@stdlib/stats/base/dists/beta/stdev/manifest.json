@@ -39,8 +39,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/binary",
-        "@stdlib/math/base/special/sqrt",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/math/base/special/sqrt"
       ]
     },
     {

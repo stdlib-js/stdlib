@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `zscal`.
 */
-#ifndef ZSCAL_H
-#define ZSCAL_H
+#ifndef STDLIB_BLAS_BASE_ZSCAL_H
+#define STDLIB_BLAS_BASE_ZSCAL_H
 
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/complex/float64/ctor.h"
@@ -46,4 +46,4 @@ void API_SUFFIX(c_zscal_ndarray)( const CBLAS_INT N, const stdlib_complex128_t a
 }
 #endif
 
-#endif // !ZSCAL_H
+#endif // !STDLIB_BLAS_BASE_ZSCAL_H

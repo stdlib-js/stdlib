@@ -46,7 +46,8 @@
         "@stdlib/constants/float32/pinf",
         "@stdlib/constants/float32/exponent-bias",
         "@stdlib/constants/float32/exponent-mask",
-        "@stdlib/constants/float32/significand-mask"
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits"
       ]
     },
     {
@@ -66,7 +67,8 @@
         "@stdlib/constants/float32/pinf",
         "@stdlib/constants/float32/exponent-bias",
         "@stdlib/constants/float32/exponent-mask",
-        "@stdlib/constants/float32/significand-mask"
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits"
       ]
     },
     {
@@ -86,7 +88,8 @@
         "@stdlib/constants/float32/pinf",
         "@stdlib/constants/float32/exponent-bias",
         "@stdlib/constants/float32/exponent-mask",
-        "@stdlib/constants/float32/significand-mask"
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits"
       ]
     }
   ]
