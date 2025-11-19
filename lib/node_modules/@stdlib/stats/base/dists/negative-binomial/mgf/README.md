@@ -260,7 +260,7 @@ int main( void ) {
         t = random_uniform( -1.0, 1.0 );
         r = random_uniform( 1.0, 10.0 );
         p = random_uniform( 0.0, 1.0 );
-        y = stdlib_base_negative_binomial_mgf( t, r, p );
+        y = stdlib_base_dists_negative_binomial_mgf( t, r, p );
         printf( "t: %lf, r: %lf, p: %lf, M_X(t;r,p): %lf\n", t, r, p, y );
     }
 }

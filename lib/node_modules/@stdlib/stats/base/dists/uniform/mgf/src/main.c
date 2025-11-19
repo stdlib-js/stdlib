@@ -18,7 +18,6 @@
 
 #include "stdlib/stats/base/dists/uniform/mgf.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/constants/float64/ninf.h"
 #include "stdlib/math/base/special/exp.h"
 
 /**

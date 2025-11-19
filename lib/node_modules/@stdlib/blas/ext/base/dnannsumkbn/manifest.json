@@ -1,5 +1,5 @@
 {
- "options": {
+  "options": {
     "task": "build"
   },
   "fields": [
@@ -37,9 +37,9 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
-      	"@stdlib/napi/argv",
-      	"@stdlib/napi/argv-int64",
-      	"@stdlib/napi/argv-strided-float64array",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float64array",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/abs",
         "@stdlib/blas/base/shared",

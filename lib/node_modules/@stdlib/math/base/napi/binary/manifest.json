@@ -25,6 +25,7 @@
   "confs": [
     {
       "src": [
+        "./src/bb_b.c",
         "./src/cc_c.c",
         "./src/cf_c.c",
         "./src/ci_c.c",
@@ -37,7 +38,11 @@
         "./src/id_d.c",
         "./src/ii_d.c",
         "./src/ii_f.c",
+        "./src/kk_k.c",
         "./src/ll_d.c",
+        "./src/ss_s.c",
+        "./src/tt_t.c",
+        "./src/uu_u.c",
         "./src/zd_z.c",
         "./src/zi_z.c",
         "./src/zz_z.c"

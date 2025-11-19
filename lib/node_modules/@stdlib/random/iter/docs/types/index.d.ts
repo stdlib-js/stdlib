@@ -457,6 +457,7 @@ interface Namespace {
 	*
 	* @param alpha - shape parameter
 	* @param s - rate parameter
+	* @param m - location parameter
 	* @param options - function options
 	* @throws `alpha` must be a positive number
 	* @throws `s` must be a positive number
@@ -465,7 +466,7 @@ interface Namespace {
 	* @returns iterator
 	*
 	* @example
-	* var iter = ns.frechet( 2.0, 5.0 );
+	* var iter = ns.frechet( 2.0, 5.0, 3.0 );
 	*
 	* var r = iter.next().value;
 	* // returns <number>

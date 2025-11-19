@@ -275,7 +275,7 @@ int main( void ) {
     const int strideX = 1;
     const int strideY = -1;
 
-    // Copy elements:
+    // Interchange the vectors:
     c_cswap( N, (void *)x, strideX, (void *)y, strideY );
 
     // Print the result:

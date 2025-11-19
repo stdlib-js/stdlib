@@ -39,8 +39,6 @@
 #include "stdlib/constants/float64/pi.h"
 #include <stdint.h>
 
-// MAIN //
-
 /**
 * Computes the angle in the plane (in radians) between the positive x-axis and the ray from `(0,0)` to the point `(x,y)`.
 *

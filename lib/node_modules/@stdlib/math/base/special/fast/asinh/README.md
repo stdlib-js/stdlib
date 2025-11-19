@@ -136,7 +136,7 @@ logEachMap( 'asinh(%0.4f) = %0.4f', x, asinh );
 
 #### stdlib_base_fast_asinh( x )
 
-Computes the [hyperbolic arcsine][inverse-hyperbolic] of double-precision floating-point number.
+Computes the [hyperbolic arcsine][inverse-hyperbolic] of a double-precision floating-point number.
 
 ```c
 double out = stdlib_base_fast_asinh( 0.0 );

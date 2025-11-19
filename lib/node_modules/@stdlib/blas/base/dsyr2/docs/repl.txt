@@ -52,11 +52,28 @@
 
     Examples
     --------
+    // Standard usage:
     > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
     > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
-    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 0.0, 2.0 ] );
+    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 2.0, 1.0 ] );
     > {{alias}}( 'row-major', 'upper', 2, 1.0, x, 1, y, 1, A, 2 )
-    <Float64Array>[ 3.0, 4.0, 0.0, 4.0 ]
+    <Float64Array>[ 3.0, 4.0, 2.0, 3.0 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 2.0, 1.0 ] );
+    > {{alias}}( 'row-major', 'upper', 2, 1.0, x, -1, y, -1, A, 2 )
+    <Float64Array>[ 3.0, 4.0, 2.0, 3.0 ]
+
+    // Using typed array views:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 1.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 1.0 ] );
+    > A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 2.0, 1.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 'row-major', 'upper', 2, 1.0, x, 1, y, 1, A, 2 )
+    <Float64Array>[ 3.0, 4.0, 2.0, 3.0 ]
 
 
 {{alias}}.ndarray( uplo, N, α, x, sx, ox, y, sy, oy, A, sa1, sa2, oa )
@@ -119,9 +136,9 @@
     --------
     > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
     > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
-    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 0.0, 2.0 ] );
+    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 2.0, 1.0 ] );
     > {{alias}}.ndarray( 'upper', 2, 1.0, x, 1, 0, y, 1, 0, A, 2, 1, 0 )
-    <Float64Array>[ 3.0, 4.0, 0.0, 4.0 ]
+    <Float64Array>[ 3.0, 4.0, 2.0, 3.0 ]
 
     See Also
     --------

@@ -179,7 +179,7 @@ out = stdlib_base_fast_pow( 3.14, 0 );
 The function accepts the following arguments:
 
 -   **x**: `[in] double` base.
--   **y**: `[in] double` exponent.
+-   **y**: `[in] int32_t` exponent.
 
 ```c
 double stdlib_base_fast_pow( const double x, const int32_t y );

@@ -49,7 +49,7 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
 -   **strideX**: index increment for `x`.
--   **y**: input [`Float64Array`][@stdlib/array/float64].
+-   **y**: output [`Float64Array`][@stdlib/array/float64].
 -   **strideY**: index increment for `y`.
 
 The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to copy every other element from `x` into `y` in reverse order,

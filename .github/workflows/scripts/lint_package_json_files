@@ -32,6 +32,9 @@ root=$(git rev-parse --show-toplevel)
 # Define the path to a utility for linting package.json files:
 lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
 
+# Define the path to the package name validation tool:
+validate_package_names="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json-names/bin/cli"
+
 # Define paths to utilities for updating package.json metadata fields:
 update_package_json_directories="${root}/lib/node_modules/@stdlib/_tools/package-json/scripts/update_directories"
 update_package_json_gypfile="${root}/lib/node_modules/@stdlib/_tools/package-json/scripts/update_gypfile"
@@ -39,11 +42,20 @@ update_package_json_gypfile="${root}/lib/node_modules/@stdlib/_tools/package-jso
 # Files to process:
 files_to_process="$*"
 
+# Initialize needs_changes flag:
+needs_changes=0
+
 # Lint package.json files:
-files=$(echo "${files_to_process}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ' | sed 's/ $//')
+files=$(echo "${files_to_process}" | tr ' ' '\n' | awk -F/ '$NF=="package.json"' | tr '\n' ' ' | sed 's/ $//')
 if [ -n "${files}" ]; then
 	echo "Linting package.json files..."
 	printf '%s' "${files}" | "${lint_package_json}" --split=" "
+
+	echo "Validating package names..."
+	if ! printf '%s' "${files}" | "${validate_package_names}" --split=" "; then
+		echo "ERROR: Package name validation failed"
+		needs_changes=1
+	fi
 else
 	echo "No package.json files to lint."
 fi
@@ -55,8 +67,6 @@ dirs=$(echo "${files_to_process}" | tr ' ' '\n' | \
 	sort -u)
 
 echo "Checking package.json files in directories: ${dirs}"
-
-needs_changes=0
 for dir in ${dirs}; do
 	echo "Checking package.json in ${dir}..."
 	package_json="${dir}/package.json"

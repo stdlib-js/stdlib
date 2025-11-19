@@ -1,0 +1,66 @@
+
+{{alias}}( arrays )
+    Computes the covariance of two one-dimensional double-precision floating-
+    point ndarrays provided known means and using a one-pass textbook algorithm.
+
+    Both input ndarrays should have the same number of elements.
+
+    If provided empty one-dimensional ndarrays, the function returns `NaN`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays in order:
+
+        -   first one-dimensional input ndarray.
+        -   second one-dimensional input ndarray.
+        -   a zero-dimensional ndarray specifying the degrees of freedom
+        adjustment. Setting this parameter to a value other than `0` has the
+        effect of adjusting the divisor during the calculation of the
+        covariance according to `N-c` where `c` corresponds to the provided
+        degrees of freedom adjustment and `N` corresponds to the number of
+        elements in each input ndarray. When computing the population
+        covariance, setting this parameter to `0` is the standard choice (i.e.,
+        the provided arrays contain data constituting entire populations). When
+        computing the unbiased sample covariance, setting this parameter to `1`
+        is the standard choice (i.e., the provided arrays contain data sampled
+        from larger populations; this is commonly referred to as Bessel's
+        correction).
+        -   a zero-dimensional ndarray specifying the mean of the first one-
+        dimensional ndarray.
+        -   a zero-dimensional ndarray specifying the mean of the second one-
+        dimensional ndarray.
+
+    Returns
+    -------
+    out: number
+        The covariance.
+
+    Examples
+    --------
+    // Create the input ndarrays:
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 2.0 ] );
+    > var ybuf = new {{alias:@stdlib/array/float64}}( [ 2.0, -2.0, 1.0 ] );
+    > var dt = 'float64';
+    > var sh = [ xbuf.length ];
+    > var st = [ 1 ];
+    > var oo = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
+    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, st, oo, ord );
+
+    // Specify the degrees of freedom adjustment:
+    > var opts = { 'dtype': dt };
+    > var correction = new {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
+
+    // Specify the known means:
+    > var meanx = new {{alias:@stdlib/ndarray/from-scalar}}( 1.0/3.0, opts );
+    > var meany = new {{alias:@stdlib/ndarray/from-scalar}}( 1.0/3.0, opts );
+
+    // Calculate the sample covariance:
+    > {{alias}}( [ x, y, correction, meanx, meany ] )
+    ~3.8333
+
+    See Also
+    --------
+

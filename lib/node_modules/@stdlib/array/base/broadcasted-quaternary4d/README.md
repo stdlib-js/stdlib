@@ -64,7 +64,7 @@ bquaternary4d( [ x, y, z, w, out ], shapes, add );
 
 The function accepts the following arguments:
 
--   **arrays**: array-like object containing two input nested arrays and one output nested array.
+-   **arrays**: array-like object containing four input nested arrays and one output nested array.
 -   **shapes**: array shapes.
 -   **fcn**: quaternary function to apply.
 
@@ -116,7 +116,7 @@ var w = filled4dBy( shapes[ 3 ], discreteUniform( -100, 100 ) );
 console.log( w );
 
 var out = zeros4d( shapes[ 4 ] );
-console.log( z );
+console.log( out );
 
 bquaternary4d( [ x, y, z, w, out ], shapes, add );
 console.log( out );

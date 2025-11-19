@@ -64,7 +64,7 @@ interface Options {
 *
 * @example
 * var speeches = sotu({
-*	'name': [ 'Franklin D Roosevelt', 'William J. Clinton' ]
+*	'name': [ 'Franklin D Roosevelt', 'William J Clinton' ]
 * });
 * // returns <ObjectArray>
 */

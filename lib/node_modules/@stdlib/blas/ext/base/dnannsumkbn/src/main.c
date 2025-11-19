@@ -69,22 +69,56 @@ double API_SUFFIX(stdlib_strided_dnannsumkbn_ndarray)( const CBLAS_INT N, const 
 	double v;
 	double t;
 	double c;
+	int flg;
 
-	sum = 0.0;
 	*n = 0;
 	if ( N <= 0 ) {
-		return sum;
+		return 0.0;
 	}
 	ix = offsetX;
 	if ( strideX == 0 ) {
 		if ( stdlib_base_is_nan( X[ ix ] ) ) {
-			return sum;
+			return 0.0;
 		}
 		*n += N;
 		return X[ ix ] * N;
 	}
-	c = 0.0;
+	// Find the first non-NaN element...
 	for ( i = 0; i < N; i++ ) {
+		v = X[ ix ];
+		if ( !stdlib_base_is_nan( v ) ) {
+			break;
+		}
+		ix += strideX;
+	}
+	if ( i == N ) {
+		return 0.0;
+	}
+	*n += 1;
+	sum = v;
+	ix += strideX;
+	i += 1;
+	flg = 0;
+
+	// In order to preserve the sign of zero which can be lost during compensated summation below, find the first non-zero element...
+	if ( sum == 0.0 ) {
+		for ( ; i < N; i++ ) {
+			v = X[ ix ];
+			if ( !stdlib_base_is_nan( v ) ) {
+				if ( v != 0.0 ) {
+					flg = 1;
+					break;
+				}
+				sum += v;
+				*n += 1;
+			}
+			ix += strideX;
+		}
+	} else {
+		flg = 1;
+	}
+	c = 0.0;
+	for ( ; i < N; i++ ) {
 		v = X[ ix ];
 		if ( !stdlib_base_is_nan( v ) ) {
 			t = sum + v;
@@ -98,5 +132,5 @@ double API_SUFFIX(stdlib_strided_dnannsumkbn_ndarray)( const CBLAS_INT N, const 
 		}
 		ix += strideX;
 	}
-	return sum + c;
+	return ( flg == 1 ) ? sum+c : sum;
 }

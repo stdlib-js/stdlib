@@ -17,11 +17,11 @@
 */
 
 #include "stdlib/math/base/special/binomcoefln.h"
+#include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/math/base/special/betaln.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/ninf.h"
-#include <stdint.h>
 
 /**
 * Computes the natural logarithm of the binomial coefficient of two integers.
@@ -31,10 +31,13 @@
 * @return     function value
 *
 * @example
-* double out = stdlib_base_binomcoefln( 8, 2 );
+* double out = stdlib_base_binomcoefln( 8.0, 2.0 );
 * // returns ~3.332
 */
-double stdlib_base_binomcoefln( const int64_t n, const int64_t k ) {
+double stdlib_base_binomcoefln( const double n, const double k ) {
+	if ( !stdlib_base_is_integer( n ) || !stdlib_base_is_integer( k ) ) {
+		return 0.0 / 0.0; // NaN
+	}
 	if ( n < 0 ) {
 		return stdlib_base_binomcoefln( -n + k - 1, k );
 	}
@@ -45,7 +48,7 @@ double stdlib_base_binomcoefln( const int64_t n, const int64_t k ) {
 		return 0.0;
 	}
 	if ( k == 1 ) {
-		return stdlib_base_ln( stdlib_base_abs( (double)n ) );
+		return stdlib_base_ln( stdlib_base_abs( n ) );
 	}
 	if ( n < k ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;
@@ -55,5 +58,5 @@ double stdlib_base_binomcoefln( const int64_t n, const int64_t k ) {
 	}
 
 	// Case: n - k >= 2
-	return -stdlib_base_ln( (double)(n + 1) ) - stdlib_base_betaln( (double)(n - k + 1), (double)(k + 1) );
+	return -stdlib_base_ln( ( n + 1 ) ) - stdlib_base_betaln( ( n - k + 1 ), ( k + 1 ) );
 }

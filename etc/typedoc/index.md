@@ -42,9 +42,21 @@ limitations under the License.
 
 <section class="intro">
 
-stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing applications. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
 
-This is the TypeScript documentation for exported functions, methods, properties, classes, and variables. For help developing stdlib, see the [development guide][stdlib-development].
+
+We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib.
+
+stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
+
+What sets stdlib apart is its fully decomposable architecture, which allows you to swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.
+
+When you use stdlib, you can be confident that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code available.
+
+Want to join us in bringing numerical computing to the web? **Start by starring the project.** :star2:
+
+Explore this GitHub repository for stdlib's source code and documentation. For guidance on developing stdlib, refer to the [development guide][stdlib-development].
+
+Thank you for being a part of our community! Your support is invaluable to us!
 
 ## Resources
 
@@ -57,8 +69,10 @@ This is the TypeScript documentation for exported functions, methods, properties
 
 ### External Resources
 
--   [**Twitter**][stdlib-twitter]
--   [**Gitter**][stdlib-gitter]
+-   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including [open office hours][stdlib-office-hours].
+-   [**Open Collective**][open-collective-stdlib]: financially support the project.
+-   [**Bluesky**][stdlib-bluesky]: follow us on social media.
+-   [**Gitter**][stdlib-gitter]: chat with project maintainers and other community members.
 
 ## Features
 
@@ -128,17 +142,23 @@ This is the TypeScript documentation for exported functions, methods, properties
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e54894a93697653dda22d11cd0aec1ccb292b7b8/docs/assets/readme/bundled.png" alt="Demo showcasing browser support">
     </div>
 
+-   Every function is accompanied by [TypeScript][typescript] declaration files, ensuring type safety and facilitating intelligent code completion in IDEs.
+
+    <div class="image" align="center">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@f5f1f915a7178d9bc76a95d34afd799e6092ec3a/docs/assets/readme/typescript.png" alt="Demo showcasing TypeScript declaration files" >
+    </div>
+
 * * *
 
 ## Installation
 
-To accommodate various use cases, stdlib can be consumed in multiple ways. The preferred means of consumption depends on your individual use case. We've provided some user stories to help you identify the best approach. 😃
+To accommodate various use cases, stdlib can be used in multiple ways. The preferred method of use depends on your individual use case. We've provided some user stories to help you identify the best approach. 😃
 
-While this project's installation instructions defaults to using [npm][npm] for package management, installation via other package managers, such as [yarn][yarn], should be a matter of simply swapping out [npm][npm] commands with those of the relevant package manager.
+While this project's installation instructions default to using [npm][npm] for package management, installation via other package managers, such as [yarn][yarn], should be a matter of simply swapping out [npm][npm] commands with those of the relevant package manager.
 
 ### User Stories
 
--   I want to perform **data analysis** and/or **data science** related tasks in JavaScript and Node.js, similar to how I might use IPython, Julia, R, and/or MATLAB.
+-   I want to perform **data analysis** and **data science** tasks in JavaScript and Node.js, similar to how I might use Python, Julia, R, and MATLAB.
 
     -   Install the entire project as a [command-line utility](#install_command_line_utility).
 
@@ -154,13 +174,19 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
     -   I would like to include stdlib functionality by just using a `script` tag.
 
-        -   Install one of the pre-built UMD [browser bundles](#install_browser_bundles) or consume one of the pre-built bundles via a CDN, such as [unpkg][unpkg].
+        -   I would like to use ES Modules.
+
+            -   Use an individual package's ES Module [build](#install_env_builds_esm).
+
+        -   I would like to use a pre-built bundle (possibly via a CDN, such as [unpkg][unpkg] or [jsDelivr][jsdelivr]).
+
+            -   Install (or consume via a CDN) an individual package's pre-built UMD [browser bundle](#install_env_builds_umd).
 
     -   I am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
 
         -   Install one or more top-level [namespaces](#install_namespaces). Installing the entire project is likely unnecessary and will lead to slower installation times. Installing a top-level namespace is likely to mean installing functionality which will never be used; however, installing a top-level namespace is likely to be easier and less time-consuming than installing many individual packages separately.
 
-            Concerning bundling, installing a top-level namespace should not be a concern, as individual functionality can still be independently required/imported. Project installation times may, however, be somewhat slower.
+            When bundling, installing a top-level namespace should not be a concern, as individual functionality can still be independently required/imported. Project installation times may, however, be somewhat slower.
 
 -   I am building a [Node.js][node-js] **server application**.
 
@@ -168,17 +194,21 @@ While this project's installation instructions defaults to using [npm][npm] for 
 
         -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
 
-    -   I am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages.
+    -   I would like to **vendor** stdlib functionality and avoid dependency trees.
+
+        -   Install individual package UMD [bundles](#install_env_builds_nodejs).
+
+    -   I am interested in using a _substantial_ amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages.
 
         -   Install one or more top-level [namespaces](#install_namespaces). Installing the entire project is likely unnecessary and will lead to slower installation times. Installing a top-level namespace is likely to mean installing functionality which will never be used; however, installing a top-level namespace is likely to be easier and less time-consuming than installing many individual packages separately.
 
 -   I am using **Deno**.
 
-    -   Use [skypack][skypack] to import [individual packages](#install_individual_packages).
+    -   Import [individual packages](#install_env_builds_deno) using pre-built Deno builds.
 
 -   I would like to use stdlib functionality in an [Observable][observable] notebook.
 
-    -   Consume one of the pre-built [browser bundles](#install_browser_bundles) via a CDN, such as [unpkg][unpkg].
+    -   Consume a pre-built [browser bundles](#install_env_builds_umd) via a CDN, such as [unpkg][unpkg] or [jsDelivr][jsdelivr].
 
 -   I want to hack at stdlib, possibly even creating **customized** builds to link to platform-specific native libraries (such as Intel's MKL or some other numerical library).
 
@@ -199,7 +229,7 @@ $ npm install @stdlib/stdlib
 Once installed, stdlib packages can be individually required/imported to minimize load times and decrease bundle sizes. For example, to use `require`
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/ctor' );
+var ndarray = require( '@stdlib/ndarray/array' );
 
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
@@ -210,7 +240,7 @@ and to use `import`
 <!-- run-disable -->
 
 ```javascript
-import ndarray from '@stdlib/ndarray/ctor';
+import ndarray from '@stdlib/ndarray/array';
 
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
@@ -227,13 +257,13 @@ To install individual packages, replace forward slashes `/` after `@stdlib/` wit
 <!-- run-disable -->
 
 ```bash
-$ npm install @stdlib/ndarray-ctor
+$ npm install @stdlib/ndarray-array
 ```
 
 Once installed, individual packages can be required/imported. For example, to use `require`
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray-ctor' );
+var ndarray = require( '@stdlib/ndarray-array' );
 
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
@@ -244,7 +274,7 @@ and to use `import`
 <!-- run-disable -->
 
 ```javascript
-import ndarray from '@stdlib/ndarray-ctor';
+import ndarray from '@stdlib/ndarray-array';
 
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
@@ -312,37 +342,95 @@ and to run the [REPL][@stdlib/repl]
 $ stdlib repl
 ```
 
-<a name="install_browser_bundles"></a>
+<a name="install_env_builds"></a>
 
-### Browser Bundles
+### Environment Builds
 
-For pre-built distributable UMD bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
+<a name="install_env_builds_esm"></a>
 
-As an example, to include a UMD bundle exposing lower-level special [math functions][@stdlib/math/base/special] in a webpage, we can first locally install the UMD bundle package using [npm][npm]
+#### ES Modules
 
-```bash
-$ npm install @stdlib/dist-math-base-special-flat
-```
+To use ES Modules via a `<script>` tag, use **ES Module builds** available in each package's repository via a dedicated `esm` branch (e.g., see the [`esm`][@stdlib/math-base-special-erf-esm] branch for [`@stdlib/math-base-special-erf`][@stdlib/math-base-special-erf-esm]). For example,
 
-and then include the following `<script>` tag in our HTML document
+<!-- run-disable -->
 
 ```html
-<script type="text/javascript" src="/path/to/@stdlib/dist-math-base-special-flat/build/bundle.min.js"></script>
-```
+<script type="module">
+import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
+import erf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erf@esm/index.mjs';
 
-making sure to modify the script path based on the local installation directory.
+const x = linspace( -10.0, 10.0, 100 );
 
-If no recognized module system is present, one can access bundle contents in another `<script>` tag via the global scope.
-
-```html
-<script type="text/javascript">
-    // If no recognized module system present, exposed to global scope:
-    var erf = stdlib_math_base_special_flat.erf;
-    console.log( erf( 0.5 ) );
+for ( let i = 0; i < x.length; i++ ) {
+    console.log( 'x: %d, erf(x): %d', x[ i ], erf( x[ i ] ) );
+}
 </script>
 ```
 
-For more details and available bundles, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles]. The [guide][stdlib-bundles] includes instructions for consuming via CDNs, such as [unpkg][unpkg].
+<a name="install_env_builds_deno"></a>
+
+#### Deno
+
+To use individual packages in Deno, use **Deno builds** available in each package's repository via a dedicated `deno` branch (e.g., see the [`deno`][@stdlib/ndarray-array-deno] branch for [`@stdlib/ndarray-array`][@stdlib/ndarray-array-deno]). For example,
+
+<!-- run-disable -->
+
+```javascript
+import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+
+var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
+// returns <ndarray>
+````
+
+
+<a name="install_env_builds_jquery"></a>
+
+#### jQuery-like Bundle
+
+For those wanting a jQuery-like bundle, one can use pre-built distributable UMD bundles for use in browser environments or as shared ("vendored") libraries in server environments available in each package's repository via a dedicated `umd` branch. See sections [UMD](#install_env_builds_umd) and [Node.js](#install_env_builds_nodejs) for more details.
+
+<a name="install_env_builds_umd"></a>
+
+#### UMD
+
+To use UMD bundles either via a `<script>` tag or in [Observable][observable], use UMD **browser builds** available in each package's repository via a dedicated `umd` branch (e.g., see the [`umd`][@stdlib/math-base-special-erf-umd] branch for [`@stdlib/math-base-special-erf`][@stdlib/math-base-special-erf-umd]). For example,
+
+<!-- run-disable -->
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-erf@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
+
+var x = linspace( -10.0, 10.0, 100 );
+
+for ( var i = 0; i < x.length; i++ ) {
+    console.log( 'x: %d, erf(x): %d', x[ i ], erf( x[ i ] ) );
+}
+
+})();
+</script>
+```
+
+<a name="install_env_builds_nodejs"></a>
+
+#### Node.js
+
+To **vendor** stdlib functionality and avoid installing dependency trees, use UMD **server builds** available in each package's repository via a dedicated `umd` branch (e.g., see the [`umd`][@stdlib/math-base-special-erf-umd] branch for [`@stdlib/math-base-special-erf`][@stdlib/math-base-special-erf-umd]). For example,
+
+<!-- run-disable -->
+
+```javascript
+var linspace = require( '/path/to/vendor/umd/@stdlib/array-base-linspace' );
+var erf = require( '/path/to/vendor/umd/@stdlib/math-base-special-erf' );
+
+var x = linspace( -10.0, 10.0, 100 );
+
+for ( var i = 0; i < x.length; i++ ) {
+    console.log( 'x: %d, erf(x): %d', x[ i ], erf( x[ i ] ) );
+}
+```
 
 <a name="install_custom_bundles"></a>
 
@@ -359,7 +447,7 @@ To create a custom bundle based on project needs,
     <!-- run-disable -->
 
     ```bash
-    $ node ./bin/cli bundle-pkg-list -- -h
+    $ NODE_PATH=./lib/node_modules node ./bin/cli bundle-pkg-list -- -h
     ```
 
 4.  modify and run the above command with the list of packages to bundle
@@ -367,16 +455,21 @@ To create a custom bundle based on project needs,
     <!-- run-disable -->
 
     ```bash
-    $ node ./bin/cli bundle-pkg-list -- <pkg> <pkg> <pkg> ...
+    $ NODE_PATH=./lib/node_modules node ./bin/cli bundle-pkg-list -- <pkg> <pkg> <pkg> ...
     ```
 
+<!-- FIXME: the following is not possible atm as we don't publish `@stdlib/_tools` which is needed in order for the command-line utility to work!
+
 Alternatively, install stdlib as a command-line utility (as described above) and run the following command
+-->
 
 <!-- run-disable -->
 
+<!--
 ```bash
 $ stdlib bundle-pkg-list -- <pkg> <pkg> <pkg> ...
 ```
+-->
 
 Upon generating a bundle, the bundle can be loaded via a `<script>` tag as described above for pre-built distributable UMD bundles.
 
@@ -423,7 +516,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright © 2016-2021. The Stdlib [Authors][stdlib-authors].
+Copyright © 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -469,6 +562,10 @@ Copyright © 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [unpkg]: https://unpkg.com/#/
 
+[jsdelivr]: https://www.jsdelivr.com/
+
+[observable]: https://observablehq.com/
+
 [ipa-english]: https://en.wikipedia.org/wiki/Help:IPA/English
 
 [stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
@@ -491,7 +588,9 @@ Copyright © 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
-[stdlib-twitter]: https://x.com/stdlibjs
+<!-- [stdlib-twitter]: https://x.com/stdlibjs -->
+
+[stdlib-bluesky]: https://bsky.app/profile/stdlib.io
 
 [stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
 
@@ -512,6 +611,12 @@ Copyright © 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@stdlib/bench/harness]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/bench/harness
 
 [@stdlib/repl]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/repl
+
+[@stdlib/ndarray-array-deno]: https://github.com/stdlib-js/ndarray-array/tree/deno
+
+[@stdlib/math-base-special-erf-esm]: https://github.com/stdlib-js/math-base-special-erf/tree/esm
+
+[@stdlib/math-base-special-erf-umd]: https://github.com/stdlib-js/math-base-special-erf/tree/umd
 
 </section>
 
