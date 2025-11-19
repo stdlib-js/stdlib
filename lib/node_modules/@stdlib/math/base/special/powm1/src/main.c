@@ -42,8 +42,8 @@
 /**
 * Evaluates `bˣ - 1`.
 *
-* @param x    base
-* @param y    exponent
+* @param b    base
+* @param x    exponent
 * @return     function value
 *
 * @example

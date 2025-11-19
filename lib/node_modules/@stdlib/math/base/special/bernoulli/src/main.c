@@ -16,10 +16,13 @@
 * limitations under the License.
 */
 
+#include "stdlib/math/base/assert/is_nonnegative_integer.h"
 #include "stdlib/math/base/assert/is_odd.h"
 #include "stdlib/constants/float64/ninf.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/math/base/special/bernoulli.h"
+#include <stdint.h>
+#include <stdlib.h>
 
 static const double bernoulli_value[ 130 ] = {
 	1.00000000000000000000000000000000000000000,
@@ -164,21 +167,21 @@ int32_t MAX_BERNOULLI = 258;
 * @return     output value
 *
 * @example
-* double out = stdlib_base_bernoulli( 0 );
-* // returns 1
+* double out = stdlib_base_bernoulli( 0.0 );
+* // returns 1.0
 */
-double stdlib_base_bernoulli( const int32_t n ) {
-	if ( n < 0 ) {
+double stdlib_base_bernoulli( const double n ) {
+	if ( !stdlib_base_is_nonnegative_integer( n ) ) {
 		return 0.0 / 0.0; // NaN
 	}
-	if ( n == 1 ) {
+	if ( n == 1.0 ) {
 		return 0.5;
 	}
 	if ( stdlib_base_is_odd( n ) ) {
 		return 0.0;
 	}
 	if ( n > MAX_BERNOULLI ) {
-		return ( ( n / 2 ) & 1 ) ? STDLIB_CONSTANT_FLOAT64_PINF : STDLIB_CONSTANT_FLOAT64_NINF;
+		return ( stdlib_base_is_odd( n/2.0 ) ) ? STDLIB_CONSTANT_FLOAT64_PINF : STDLIB_CONSTANT_FLOAT64_NINF;
 	}
-	return bernoulli_value[ n / 2 ];
+	return bernoulli_value[ (size_t)( n / 2.0 ) ];
 }

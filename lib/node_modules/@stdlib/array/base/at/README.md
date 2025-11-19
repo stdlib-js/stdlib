@@ -72,7 +72,7 @@ The function accepts the following arguments:
 
 ## Notes
 
--   If provided an array-like object having an `at` method , the function defers execution to that method and assumes that the method has the following signature:
+-   If provided an array-like object having an `at` method, the function defers execution to that method and assumes that the method has the following signature:
 
     ```text
     x.at( index )

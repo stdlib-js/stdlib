@@ -105,11 +105,11 @@ interface Waterfall {
 	*
 	* var fcns = [ foo, bar ];
 	*
-	* var waterfall = factory( fcns, done );
+	* var wf = waterfall.factory( fcns, done );
 	*
-	* waterfall();
-	* waterfall();
-	* waterfall();
+	* wf();
+	* wf();
+	* wf();
 	*/
 	factory( fcns: Array<Function>, clbk: DoneCallback, thisArg?: any ): WaterfallFunction;
 }

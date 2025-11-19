@@ -32,7 +32,7 @@
 * @return          evaluated logPDF
 *
 * @example
-* double y = stdlib_base_weibull_logpdf( 2.0, 1.0, 0.5 );
+* double y = stdlib_base_dists_weibull_logpdf( 2.0, 1.0, 0.5 );
 * // returns ~-3.307
 */
 double stdlib_base_dists_weibull_logpdf( const double x, const double k, const double lambda ) {

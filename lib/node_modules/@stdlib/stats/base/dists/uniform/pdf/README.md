@@ -216,7 +216,7 @@ int main( void ) {
     double b;
     double y;
     int i;
-    
+
     for ( i = 0; i < 25; i++ ) {
         x = random_uniform( -10.0, 10.0 );
         a = random_uniform( -20.0, 0.0 );
@@ -230,6 +230,10 @@ int main( void ) {
 </section>
 
 <!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

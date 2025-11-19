@@ -123,11 +123,11 @@ interface Routine {
 	*     return v;
 	* }
 	*
-	* var x = [ 0.0, -1.57, -0.5, -1.0, -1.25 ];
+	* var x = [ 0.0, 1.57, 0.5, 1.0, 1.25 ];
 	* var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 	*
 	* acovercosBy( x.length, x, 1, y, 1, accessor );
-	* // y => [ ~1.571, ~-0.607, ~0.524, 0.0, ~-0.253 ]
+	* // y => [ ~-1.571, ~0.607, ~-0.524, 0.0, ~0.253 ]
 	*/
 	<T = unknown, U = unknown, V = unknown>( N: number, x: Collection<T>, strideX: number, y: Collection<U>, strideY: number, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Collection<U | number>;
 
@@ -150,11 +150,11 @@ interface Routine {
 	*     return v;
 	* }
 	*
-	* var x = [ 0.0, -1.57, -0.5, -1.0, -1.25 ];
+	* var x = [ 0.0, 1.57, 0.5, 1.0, 1.25 ];
 	* var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 	*
 	* acovercosBy.ndarray( x.length, x, 1, 0, y, 1, 0, accessor );
-	* // y => [ ~1.571, ~-0.607, ~0.524, 0.0, ~-0.253 ]
+	* // y => [ ~-1.571, ~0.607, ~-0.524, 0.0, ~0.253 ]
 	*/
 	ndarray<T = unknown, U = unknown, V = unknown>( N: number, x: Collection<T>, strideX: number, offsetX: number, y: Collection<U>, strideY: number, offsetY: number, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Collection<U | number>;
 }
@@ -176,22 +176,22 @@ interface Routine {
 *     return v;
 * }
 *
-* var x = [ 0.0, -1.57, -0.5, -1.0, -1.25 ];
+* var x = [ 0.0, 1.57, 0.5, 1.0, 1.25 ];
 * var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 *
 * acovercosBy( x.length, x, 1, y, 1, accessor );
-* // y => [ ~1.571, ~-0.607, ~0.524, 0.0, ~-0.253 ]
+* // y => [ ~-1.571, ~0.607, ~-0.524, 0.0, ~0.253 ]
 *
 * @example
 * function accessor( v ) {
 *     return v;
 * }
 *
-* var x = [ 0.0, -1.57, -0.5, -1.0, -1.25 ];
+* var x = [ 0.0, 1.57, 0.5, 1.0, 1.25 ];
 * var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 *
 * acovercosBy.ndarray( x.length, x, 1, 0, y, 1, 0, accessor );
-* // y => [ ~1.571, ~-0.607, ~0.524, 0.0, ~-0.253 ]
+* // y => [ ~-1.571, ~0.607, ~-0.524, 0.0, ~0.253 ]
 */
 declare var acovercosBy: Routine;
 

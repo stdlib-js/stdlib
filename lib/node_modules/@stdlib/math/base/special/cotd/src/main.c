@@ -17,10 +17,8 @@
 */
 
 #include "stdlib/math/base/special/cotd.h"
-#include "stdlib/math/base/special/cot.h"
-#include "stdlib/math/base/special/deg2rad.h"
-#include "stdlib/math/base/assert/is_integer.h"
-#include "stdlib/math/base/assert/is_infinite.h"
+#include "stdlib/math/base/special/sind.h"
+#include "stdlib/math/base/special/cosd.h"
 
 /**
 * Computes the cotangent of an angle measured in degrees.
@@ -33,13 +31,5 @@
 * // returns Infinity
 */
 double stdlib_base_cotd( const double x ) {
-	double xRad;
-	if ( stdlib_base_is_infinite( x ) ) {
-		return 0.0 / 0.0; // NaN
-	}
-	if ( stdlib_base_is_integer( ( ( x / 90.0 ) - 1.0 ) / 2.0 ) ) {
-		return 0.0;
-	}
-	xRad = stdlib_base_deg2rad( x );
-	return stdlib_base_cot( xRad );
+	return stdlib_base_cosd( x ) / stdlib_base_sind( x );
 }

@@ -26,7 +26,7 @@
 * @return         expected value
 *
 * @example
-* double y = stdlib_base_invgamma_mean( 4.0, 12.0 );
+* double y = stdlib_base_dists_invgamma_mean( 4.0, 12.0 );
 * // returns 4.0
 */
 double stdlib_base_dists_invgamma_mean( const double alpha, const double beta ) {
