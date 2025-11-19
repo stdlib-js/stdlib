@@ -188,7 +188,7 @@ interface CueveryByRight {
 * var x = [ 1, 0, 0, 1, 1 ];
 * var y = [ false, null, false, null, false, null, false, null, false, null ];
 *
-* var arr = cueveryByRight.assign( x, 2, y, 2, 0, isPositive );
+* var arr = cueveryByRight.assign( x, y, 2, 0, isPositive );
 * // returns [ true, null, true, null, false, null, false, null, false, null ]
 */
 declare var cueveryByRight: CueveryByRight;

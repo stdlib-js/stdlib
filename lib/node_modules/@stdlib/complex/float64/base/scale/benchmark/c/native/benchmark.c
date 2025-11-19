@@ -105,7 +105,7 @@ static double benchmark( void ) {
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		re = ( 1000.0*rand_double() ) - 500.0;
 		im = ( 1000.0*rand_double() ) - 500.0;
-		z1 =stdlib_complex128( re, im );
+		z1 = stdlib_complex128( re, im );
 
 		z2 = stdlib_base_complex128_scale( 5.0, z1 );
 		stdlib_complex128_reim( z2, &re, &im );

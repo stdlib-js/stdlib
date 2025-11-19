@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `saxpy`.
 */
-#ifndef SAXPY_H
-#define SAXPY_H
+#ifndef STDLIB_BLAS_BASE_SAXPY_H
+#define STDLIB_BLAS_BASE_SAXPY_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_saxpy_ndarray)( const CBLAS_INT N, const float alpha, const fl
 }
 #endif
 
-#endif // !SAXPY_H
+#endif // !STDLIB_BLAS_BASE_SAXPY_H

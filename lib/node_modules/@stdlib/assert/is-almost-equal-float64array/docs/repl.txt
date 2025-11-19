@@ -1,0 +1,43 @@
+
+{{alias}}( v1, v2, maxULP )
+    Tests if two arguments are both Float64Arrays and contain respective
+    elements which are approximately equal within a specified number of ULPs
+    (units in the last place).
+
+    The function returns `false` if either input value is a `Float64Array`
+    containing `NaN`.
+
+    The function does not distinguish between `-0` and `+0`, treating them as
+    equal.
+
+    Parameters
+    ----------
+    v1: any
+        First input value.
+
+    v2: any
+        Second input value.
+
+    maxULP: integer
+        Maximum allowed ULP difference.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arguments are approximately equal.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0 ] );
+    > var bool = {{alias}}( x, y, 1 )
+    true
+
+    > x = new {{alias:@stdlib/array/float64}}( [ NaN, NaN, NaN ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ NaN, NaN, NaN ] );
+    > bool = {{alias}}( x, y, 1 )
+    false
+
+    See Also
+    --------
+

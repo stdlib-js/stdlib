@@ -111,20 +111,18 @@ y = betaincinv( 0.5, 2.0, 0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var betaincinv = require( '@stdlib/math/base/special/betaincinv' );
 
-var i;
-var p;
-var a;
-var b;
+var opts = {
+    'dtype': 'float64'
+};
+var p = uniform( 100, 0.0, 1.0, opts );
+var a = uniform( 100, 0.0, 10.0, opts );
+var b = uniform( 100, 0.0, 10.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    p = randu();
-    a = randu() * 10.0;
-    b = randu() * 10.0;
-    console.log( 'p: %d, \t a: %d, \t b: %d, \t f(p,a,b): %d', p.toFixed( 4 ), a.toFixed( 4 ), b.toFixed( 4 ), betaincinv( p, a, b ) );
-}
+logEachMap( 'p: %0.4f, \t a: %0.4f, \t b: %0.4f, \t f(p,a,b): %0.4f', p, a, b, betaincinv );
 ```
 
 </section>

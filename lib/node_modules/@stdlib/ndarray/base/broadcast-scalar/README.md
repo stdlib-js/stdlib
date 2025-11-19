@@ -45,13 +45,16 @@ var broadcastScalar = require( '@stdlib/ndarray/base/broadcast-scalar' );
 Broadcasts a scalar value to an [`ndarray`][@stdlib/ndarray/base/ctor] having a specified shape and [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
+var getShape = require( '@stdlib/ndarray/shape' );
+var getDType = require( '@stdlib/ndarray/dtype' );
+
 var x = broadcastScalar( 1.0, 'float64', [ 2, 2 ], 'row-major' );
 // returns <ndarray>
 
-var sh = x.shape;
+var sh = getShape( x );
 // returns [ 2, 2 ]
 
-var dt = x.dtype;
+var dt = getDType( x );
 // returns 'float64'
 
 var v = x.get( 0, 0 );
@@ -89,7 +92,7 @@ var dtypes = require( '@stdlib/ndarray/dtypes' );
 var broadcastScalar = require( '@stdlib/ndarray/base/broadcast-scalar' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'integer_and_generic' );
 
 // Generate two-dimensional arrays...
 var x;

@@ -257,7 +257,7 @@ interface Namespace {
 	* y = ns.mgf( 5.0, 20, 0.2 );
 	* // returns ~4.798e29
 	*
-	* y = ns.mgf( 0.9, 10, 0.4 )
+	* y = ns.mgf( 0.9, 10, 0.4 );
 	* // returns ~99.338
 	*
 	* var mymgf = ns.mgf.factory( 10, 0.5 );

@@ -27,7 +27,7 @@ import cumaxabs = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	cumaxabs( x.length, x, 1, y, 1 ); // $ExpectType NumericArray
+	cumaxabs( x.length, x, 1, y, 1 ); // $ExpectType Float64Array
 	cumaxabs( x.length, new AccessorArray( x ), 1, new AccessorArray( y ), 1 ); // $ExpectType AccessorArray<number>
 }
 
@@ -125,7 +125,7 @@ import cumaxabs = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	cumaxabs.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType NumericArray
+	cumaxabs.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType Float64Array
 	cumaxabs.ndarray( x.length, new AccessorArray( x ), 1, 0, new AccessorArray( y ), 1, 0 ); // $ExpectType AccessorArray<number>
 }
 

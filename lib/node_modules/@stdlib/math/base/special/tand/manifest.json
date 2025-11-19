@@ -37,10 +37,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/special/deg2rad",
-        "@stdlib/math/base/special/tan",
-        "@stdlib/math/base/assert/is-integer",
-        "@stdlib/math/base/assert/is-infinite"
+        "@stdlib/math/base/special/sind",
+        "@stdlib/math/base/special/cosd"
       ]
     },
     {
@@ -54,10 +52,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/deg2rad",
-        "@stdlib/math/base/special/tan",
-        "@stdlib/math/base/assert/is-integer",
-        "@stdlib/math/base/assert/is-infinite"
+        "@stdlib/math/base/special/sind",
+        "@stdlib/math/base/special/cosd"
       ]
     },
     {
@@ -71,10 +67,8 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/deg2rad",
-        "@stdlib/math/base/special/tan",
-        "@stdlib/math/base/assert/is-integer",
-        "@stdlib/math/base/assert/is-infinite"
+        "@stdlib/math/base/special/sind",
+        "@stdlib/math/base/special/cosd"
       ]
     }
   ]
