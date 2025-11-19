@@ -146,9 +146,9 @@ interface LogPMF {
 * y = mylogpmf( 1.0 );
 * // returns ~-3.54
 */
-declare var logPMF: LogPMF;
+declare var logpmf: LogPMF;
 
 
 // EXPORTS //
 
-export = logPMF;
+export = logpmf;

@@ -27,7 +27,7 @@
 * @return         standard deviation
 *
 * @example
-* double y = stdlib_base_invgamma_stdev( 3.0, 5.0 );
+* double y = stdlib_base_dists_invgamma_stdev( 3.0, 5.0 );
 * // returns ~2.5
 */
 double stdlib_base_dists_invgamma_stdev( const double alpha, const double beta ) {

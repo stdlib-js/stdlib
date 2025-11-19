@@ -121,7 +121,7 @@ After each callback invocation, the callback return value is subsequently used a
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var accumulateUnary = require( '@stdlib/ndarray/base/unary-accumulate' );
 
 var N = 10;

@@ -172,11 +172,11 @@ interface Namespace {
 	* var y = ns.logpdf( 3.0, 2.0, 6.0 );
 	* // returns ~-1.386
 	*
-	* var mylogpdf = ns.logpdf.factory( 6.0, 7.0 );
-	* y = mylogpdf( 7.0 );
+	* var mylogPDF = ns.logpdf.factory( 6.0, 7.0 );
+	* y = mylogPDF( 7.0 );
 	* // returns 0.0
 	*
-	* y = mylogpdf( 5.0 );
+	* y = mylogPDF( 5.0 );
 	* // returns -Infinity
 	*/
 	logpdf: typeof logpdf;

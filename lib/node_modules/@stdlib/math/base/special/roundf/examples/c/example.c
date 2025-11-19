@@ -24,7 +24,7 @@ int main( void ) {
 
 	float v;
 	int i;
-	for ( i = 0; i < 1; i++ ) {
+	for ( i = 0; i < 10; i++ ) {
 		v = stdlib_base_roundf( x[ i ] );
 		printf( "roundf(%f) = %f\n", x[ i ], v );
 	}

@@ -79,13 +79,13 @@ type Transform = Nullary | Unary | Binary | Ternary;
 *
 * -   The transform function is provided three arguments:
 *
-*     -   `key`: object key
-*     -   `value`: object value corresponding to `key`
-*     -   `obj`: the input object
+*     -   `key`: object key.
+*     -   `value`: object value corresponding to `key`.
+*     -   `obj`: the input object.
 *
 * -   The value returned by a transform function should be a value which can be serialized as an object key. Hence, beware when providing objects having values which are themselves objects. The function relies on native object serialization (`#toString`) when converting transform function return values to keys.
 *
-* -   Insertion order is not guaranteed, as object key enumeration is not specified according to the ECMAScript specification. In practice, however, most engines use insertion order to sort an object's keys, thus allowing for deterministic inversion.
+* -   In older JavaScript engines, insertion order is not guaranteed, as object key enumeration was not specified according to the ECMAScript specification in earlier editions. In practice, however, most older engines use insertion order to sort an object's keys, thus allowing for deterministic inversion.
 *
 * @param obj - input object
 * @param transform - transform function
@@ -122,13 +122,13 @@ declare function invertBy( obj: any, transform: Transform ): any;
 *
 * -   The transform function is provided three arguments:
 *
-*     -   `key`: object key
-*     -   `value`: object value corresponding to `key`
-*     -   `obj`: the input object
+*     -   `key`: object key.
+*     -   `value`: object value corresponding to `key`.
+*     -   `obj`: the input object.
 *
 * -   The value returned by a transform function should be a value which can be serialized as an object key. Hence, beware when providing objects having values which are themselves objects. The function relies on native object serialization (`#toString`) when converting transform function return values to keys.
 *
-* -   Insertion order is not guaranteed, as object key enumeration is not specified according to the ECMAScript specification. In practice, however, most engines use insertion order to sort an object's keys, thus allowing for deterministic inversion.
+* -   In older JavaScript engines, insertion order is not guaranteed, as object key enumeration was not specified according to the ECMAScript specification in earlier editions. In practice, however, most older engines use insertion order to sort an object's keys, thus allowing for deterministic inversion.
 *
 * @param obj - input object
 * @param opts - function options

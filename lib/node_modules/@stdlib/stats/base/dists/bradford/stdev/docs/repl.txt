@@ -1,0 +1,29 @@
+
+{{alias}}( c )
+    Returns the standard deviation of a Bradford distribution with shape
+    parameter `c`.
+
+    If `c <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    c: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Standard deviation.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    ~0.289
+    > v = {{alias}}( 0.5 )
+    ~0.288
+    > v = {{alias}}( 10.0 )
+    ~0.276
+
+    See Also
+    --------
+
