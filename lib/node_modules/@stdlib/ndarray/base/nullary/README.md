@@ -83,7 +83,7 @@ The function accepts the following arguments:
 -   **arrays**: array-like object containing an output ndarray.
 -   **fcn**: nullary function to apply.
 
-The provided ndarray should be an `object` with the following properties:
+The provided ndarray should be an object with the following properties:
 
 -   **dtype**: data type.
 -   **data**: data buffer.

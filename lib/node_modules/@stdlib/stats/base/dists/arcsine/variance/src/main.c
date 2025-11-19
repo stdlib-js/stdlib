@@ -27,7 +27,7 @@
 * @return     variance
 *
 * @example
-* double y = stdlib_base_arcsine_variance( 0.0, 1.0 );
+* double y = stdlib_base_dists_arcsine_variance( 0.0, 1.0 );
 * // returns ~0.125
 */
 double stdlib_base_dists_arcsine_variance( const double a, const double b ) {

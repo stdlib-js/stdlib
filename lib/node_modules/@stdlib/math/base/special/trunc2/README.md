@@ -83,18 +83,16 @@ v = trunc2( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var trunc2 = require( '@stdlib/math/base/special/trunc2' );
 
-var x;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -50.0, 50.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*100.0) - 50.0;
-    v = trunc2( x );
-    console.log( 'Value: %d. Rounded: %d.', x, v );
-}
+logEachMap( 'x: %0.4f. Rounded: %0.4f.', x, trunc2 );
 ```
 
 </section>

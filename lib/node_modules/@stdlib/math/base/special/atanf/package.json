@@ -66,5 +66,81 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "atan",
+      "alias": "atanf",
+      "pkg_desc": "compute the arctangent (in radians) of a single-precision floating-point number",
+      "desc": "computes the arctangent (in radians) of a single-precision floating-point number",
+      "short_desc": "arctangent",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -50,
+              50
+            ]
+          },
+          "example_values": [
+            -0.91,
+            23.4,
+            -11.7,
+            0.03,
+            77.8,
+            -2.2,
+            5.6,
+            -39.1,
+            1.01,
+            -0.47,
+            14.9,
+            -8.3,
+            0,
+            3.33,
+            -25.6,
+            6.7,
+            -4.2,
+            41.5,
+            -19.9,
+            95.2
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "arctangent (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "atanf",
+        "arctangent",
+        "tangent",
+        "inverse"
+      ],
+      "extra_keywords": [
+        "math.atan"
+      ]
+    }
+  }
 }

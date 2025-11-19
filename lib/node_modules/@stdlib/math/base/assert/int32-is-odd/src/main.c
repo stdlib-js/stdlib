@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/assert/int32_is_odd.h"
+#include <stdbool.h>
 #include <stdint.h>
 
 /**

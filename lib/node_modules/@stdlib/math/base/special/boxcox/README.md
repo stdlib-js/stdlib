@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-The one-parameter [Box-Cox transformation][box-cox-transformation] is defined as 
+The one-parameter [Box-Cox transformation][box-cox-transformation] is defined as
 
 <!-- <equation class="equation" label="eq:boxcox_transformation_one_parameter" align="center" raw="y^{\lambda} = \begin{cases}\frac{y^{\lambda} - 1}{\lambda} & \textrm{if}\ \lambda \neq 0 \\ \ln(y) & \textrm{if}\ \lambda = 0 \end{cases}" alt="One-Parameter Box-Cox Transformation"> -->
 
@@ -186,7 +186,7 @@ int main( void ) {
     int i;
     int j;
     for ( i = 0; i < 3; i++ ) {
-        for ( j = 0; j < 3; j++ ){
+        for ( j = 0; j < 3; j++ ) {
             out = stdlib_base_boxcox( x[ i ], y[ j ] );
             printf ( "x: %lf, y: %lf, out: %lf\n", x[ i ], y[ j ], out );
         }

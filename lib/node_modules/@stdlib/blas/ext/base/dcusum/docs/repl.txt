@@ -3,8 +3,8 @@
     Computes the cumulative sum of double-precision floating-point strided array
     elements.
 
-    The `N` and stride parameters determine which elements in the strided
-    arrays are accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use a typed
     array view.
@@ -23,13 +23,13 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     y: Float64Array
         Output array.
 
     strideY: integer
-        Index increment for `y`.
+        Stride length for `y`.
 
     Returns
     -------
@@ -44,7 +44,7 @@
     > {{alias}}( x.length, 0.0, x, 1, y, 1 )
     <Float64Array>[ 1.0, -1.0, 1.0 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] );
     > y = new {{alias:@stdlib/array/float64}}( x.length );
     > {{alias}}( 3, 0.0, x, 2, y, 2 )
@@ -66,8 +66,8 @@
     elements using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the offset parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
 
     Parameters
     ----------
@@ -81,7 +81,7 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     offsetX: integer
         Starting index for `x`.
@@ -90,7 +90,7 @@
         Output array.
 
     strideY: integer
-        Index increment for `y`.
+        Stride length for `y`.
 
     offsetY: integer
         Starting index for `y`.

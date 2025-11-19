@@ -93,7 +93,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -108,7 +108,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -197,9 +197,54 @@ jobs:
 
       # Lint files against EditorConfig:
       - name: 'Lint against EditorConfig'
+        id: lint-editorconfig
         run: |
+          set -o pipefail
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
-          make lint-editorconfig-files FILES="${files}"
+          make lint-editorconfig-files FILES="${files}" 2>&1 | tee lint_editorconfig_errors.txt
+
+      # Create sub-issue for EditorConfig lint failures:
+      - name: 'Create sub-issue for EditorConfig lint failures'
+        if: failure() && contains(steps.lint-editorconfig.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          strip_ansi() {
+            sed -r 's/\x1B\[[0-9;]*[mK]//g'
+          }
+
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
+          cat << EOF > "$BODY_FILE"
+          ## EditorConfig Linting Failures
+
+          Linting failures were detected in the automated EditorConfig lint workflow run.
+
+          ### Workflow Details
+
+          - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          - Type: EditorConfig Linting
+          - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          ### Error Details
+
+          \`\`\`
+          $(cat lint_editorconfig_errors.txt | strip_ansi)
+          \`\`\`
+
+          ### Pull Request Instructions
+
+          -   Please use the following PR title format:
+          "chore: fix EditorConfig lint errors (issue #<ISSUE_NUMBER>)".
+          -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
+          EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+            'Fix EditorConfig lint errors' \
+            "$BODY_FILE" \
+            "5156" \
+            "Good First Issue"
+
+          rm "$BODY_FILE"
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
@@ -255,65 +300,60 @@ jobs:
 
       # Lint JavaScript files:
       - name: 'Lint JavaScript files'
+        id: lint-javascript
         if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
+        env:
+          FIX: ${{ github.event.inputs.fix == 'true' && '1' || '0' }}
+          QUIET: '0'
+          ERR_FILE: ${{ github.workspace }}/lint_javascript_errors.txt
         run: |
-          # Determine root directory:
-          root=$(git rev-parse --show-toplevel)
+          # Get JavaScript files to lint:
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | tr '\n' ' ')
 
-          # Define the path to ESLint configuration file for linting examples:
-          eslint_examples_conf="${root}/etc/eslint/.eslintrc.examples.js"
-
-          # Define the path to ESLint configuration file for linting tests:
-          eslint_tests_conf="${root}/etc/eslint/.eslintrc.tests.js"
-
-          # Define the path to ESLint configuration file for linting benchmarks:
-          eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
-
-          # Set `FIX` variable to `1` to enable automatic fixing of lint errors, `0` to disable:
-          if [ "${{ github.event.inputs.fix }}" == "true" ]; then
-            FIX=1
+          # Run the lint script:
+          if [ -n "${files}" ]; then
+            "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_javascript_files_error_log" ${files}
           else
-            FIX=0
+            echo "No JavaScript files to lint."
           fi
 
-          # Lint JavaScript source files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ')
+      # Create sub-issue for JavaScript lint failures:
+      - name: 'Create sub-issue for JavaScript lint failures'
+        if: failure() && contains(steps.lint-javascript.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
+          cat << EOF > "$BODY_FILE"
+            ## JavaScript Linting Failures
 
-          # Build native addons if present:
-          packages=$(echo "${files}" | tr ' ' '\n' | sed 's/^lib\/node_modules\///g' | sed 's/\/lib\/.*//g' | sort | uniq)
-          for pkg in ${packages}; do
-              if [ -f "lib/node_modules/${pkg}/binding.gyp" ]; then
-                  NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
-              fi
-          done
+            Linting failures were detected in the automated JavaScript lint workflow run.
 
-          if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}"
-          fi
+            ### Workflow Details
 
-          # Lint JavaScript command-line interfaces...
-          file=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ')
-          if [[ -n "${file}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${file}"
-          fi
+            - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            - Type: JavaScript Linting
+            - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
-          # Lint JavaScript example files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ')
-          if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
-          fi
+            ### Error Details
+            \`\`\`
+            $(cat lint_javascript_errors.txt)
+            \`\`\`
 
-          # Lint JavaScript test files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/test/.*\.js$' | tr '\n' ' ')
-          if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
-          fi
+            ### Pull Request Instructions
 
-          # Lint JavaScript benchmark files:
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ')
-          if [[ -n "${files}" ]]; then
-            make lint-javascript-files FIX="${FIX}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
-          fi
+            -   Please use the following PR title format:
+            "chore: fix JavaScript lint errors (issue #<ISSUE_NUMBER>)".
+            -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
+          EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+            'Fix JavaScript lint errors' \
+            "$BODY_FILE" \
+            "5377" \
+            "Good First Issue"
+
+          rm "$BODY_FILE"
 
       # Lint Python files:
       - name: 'Lint Python files'
@@ -332,7 +372,7 @@ jobs:
       - name: 'Setup R'
         if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@473c68190595b311a74f208fba61a8d8c0d4c247 # v2.11.1
+        uses: r-lib/actions/setup-r@6f6e5bc62fba3a704f74e7ad7ef7676c5c6a2590 # v2.11.4
         with:
           r-version: '4.3.3'
 
@@ -369,28 +409,56 @@ jobs:
           # Define the path to cppcheck configuration file for linting benchmarks:
           cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
-          # Lint C source files...
+          # Define output files for each category:
+          out_source="lint_c_errors_source.txt"
+          out_examples="lint_c_errors_examples.txt"
+          out_tests="lint_c_errors_tests.txt"
+          out_benchmarks="lint_c_errors_benchmarks.txt"
+          combined="lint_c_errors.txt"
+
+          # Initialize output files with empty content:
+          echo "" > "$out_source"
+          echo "" > "$out_examples"
+          echo "" > "$out_tests"
+          echo "" > "$out_benchmarks"
+          echo "" > "$combined"
+
+          # Initialize an error flag:
+          error=0
+
+          # Lint C source files:
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-c-files FILES="${files}"
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_source}" || error=1
           fi
 
           # Lint C example files...
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/examples/.*\.c$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}"
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_examples}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}" || error=1
           fi
 
           # Lint C test fixtures files...
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/test/fixtures/.*\.c$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_tests_fixtures_suppressions_list}"
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_tests}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_tests_fixtures_suppressions_list}" || error=1
           fi
 
           # Lint C benchmark files...
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/benchmark/.*\.c$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}"
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_benchmarks}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}" || error=1
+          fi
+
+          # Combine all outputs into one file:
+          cat "$out_source" "$out_examples" "$out_tests" "$out_benchmarks" > "$combined"
+
+          # Print the combined errors to the log:
+          cat "$combined"
+
+          # If any linting command failed, exit with error:
+          if [[ $error -ne 0 ]]; then
+            exit 1
           fi
 
       # Create sub-issue for C linting failures:
@@ -415,8 +483,14 @@ jobs:
           ### Error Details
 
           \`\`\`
-          $(grep -B 1 -A 2 "style:\|warning:\|error:" <<< "${{ steps.lint-c.outputs.stderr }}")
+          $(grep -B 1 -A 2 "style:\|warning:\|error:" "lint_c_errors.txt")
           \`\`\`
+
+          ### Pull Request Instructions
+
+          -   Please use the following PR title format:
+          "chore: fix C lint errors (issue #<ISSUE_NUMBER>)".
+          -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
@@ -454,7 +528,7 @@ jobs:
       - name: 'Import GPG key to sign commits'
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
+        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
         with:
           gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
@@ -466,7 +540,7 @@ jobs:
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         id: cpr
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f # v7.0.6
+        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
         with:
           title: 'style: fix lint errors'
           add-paths: ${{ steps.random-files.outputs.files }}

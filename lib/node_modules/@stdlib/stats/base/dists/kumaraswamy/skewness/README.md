@@ -138,20 +138,17 @@ y = skewness( 0.5, 0.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var skewness = require( '@stdlib/stats/base/dists/kumaraswamy/skewness' );
 
-var a;
-var b;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var a = uniform( 10, 0.0, 10.0, opts );
+var b = uniform( 10, 0.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    a = randu() * 10.0;
-    b = randu() * 10.0;
-    v = skewness( a, b );
-    console.log( 'a: %d, b: %d, skew(X;a,b): %d', a.toFixed( 4 ), b.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'a: %0.4f, b: %0.4f, skew(X;a,b): %0.4f', a, b, skewness );
 ```
 
 </section>

@@ -45,6 +45,10 @@ def gen(x, name):
     ```
     """
     y = gammasgn(x)
+
+    # Convert all NaN values to 0 according to our convention:
+    y[np.isnan(y)] = 0
+
     data = {
         "x": x.tolist(),
         "expected": y.tolist()
@@ -60,25 +64,8 @@ def gen(x, name):
 
 def main():
     """Generate fixture data."""
-    # Random values across `x`:
-    x = np.random.random(1000)*100.0
-    gen(x, "random.json")
-
-    # Medium negative:
-    x = np.linspace(-709.78, -1.0, 1000)
-    gen(x, "medium_negative.json")
-
-    # Medium positive:
-    x = np.linspace(1.0, 709.78, 1000)
-    gen(x, "medium_positive.json")
-
-    # Small positive:
-    x = np.linspace(2.0**-54, 1.0, 1000)
-    gen(x, "small_positive.json")
-
-    # Small negative:
-    x = np.linspace(-1.0, -2.0**-54, 1000)
-    gen(x, "small_negative.json")
+    x = np.random.uniform(-1000, 1000, 2001)
+    gen(x, "data.json")
 
 
 if __name__ == "__main__":

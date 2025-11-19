@@ -66,7 +66,7 @@ The function accepts the following arguments:
 -   **strideOut**: index increment for `out`.
 -   **littleEndian**: boolean indicating whether to store values in little-endian format.
 
-The `N` and stride parameters determine which elements in `view` and `out` are accessed at runtime. For example, to index the first `N` elements of `view` in reverse order and to index every other value in `out` ,
+The `N` and stride parameters determine which elements in `view` and `out` are accessed at runtime. For example, to index the first `N` elements of `view` in reverse order and to index every other value in `out`,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );

@@ -107,7 +107,7 @@ Our disclosure policy is as follows:
 
 -   Depending on the outcome of validation, the primary handler will communicate to the individual who submitted the potential vulnerability one of the following possible responses:
 
-    -   **Acceptance**: what was reported is a considered a new vulnerability.
+    -   **Acceptance**: what was reported is considered a new vulnerability.
     -   **Rejection**: what was reported is not considered a new vulnerability.
     -   **Needs more information**: we need more information in order to evaluate what was reported.
 
