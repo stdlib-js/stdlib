@@ -20,7 +20,7 @@
 #include "stdlib/math/base/special/asinh.h"
 
 /**
-* Computes the hyperbolic arccosecant of double-precision floating-point number.
+* Computes the hyperbolic arccosecant of a double-precision floating-point number.
 *
 * @param x    input value
 * @return     output value

@@ -35,9 +35,12 @@
 * @return       Node-API value
 */
 static napi_value addon( napi_env env, napi_callback_info info ) {
+	CBLAS_INT sa1;
+	CBLAS_INT sa2;
+
 	STDLIB_NAPI_ARGV( env, info, argv, argc, 8 );
 
-	STDLIB_NAPI_ARGV_INT32( env, order, argv, 0 );
+	STDLIB_NAPI_ARGV_INT32( env, layout, argv, 0 );
 	STDLIB_NAPI_ARGV_INT32( env, uplo, argv, 1 );
 
 	STDLIB_NAPI_ARGV_INT64( env, N, argv, 2 );
@@ -46,10 +49,17 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 
 	STDLIB_NAPI_ARGV_FLOAT( env, alpha, argv, 3 );
 
+	if ( layout == CblasColMajor ) {
+		sa1 = 1;
+		sa2 = LDA;
+	} else { // layout == CblasRowMajor
+		sa1 = LDA;
+		sa2 = 1;
+	}
 	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, X, N, strideX, argv, 4 );
-	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY( env, A, ((N-1)*LDA) + N, 1, argv, 6 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT32ARRAY2D( env, A, N, N, sa1, sa2, argv, 6 );
 
-	API_SUFFIX(c_ssyr)( order, uplo, N, alpha, X, strideX, A, LDA );
+	API_SUFFIX(c_ssyr)( layout, uplo, N, alpha, X, strideX, A, LDA );
 
 	return NULL;
 }

@@ -44,7 +44,7 @@
         "@stdlib/napi/create-double",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/blas/ext/base/ssumkbn2"
       ]
     },
     {
@@ -60,7 +60,7 @@
       "dependencies": [
         "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/blas/ext/base/ssumkbn2"
       ]
     },
     {
@@ -76,7 +76,7 @@
       "dependencies": [
         "@stdlib/strided/base/stride2offset",
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/blas/ext/base/ssumkbn2"
       ]
     }
   ]

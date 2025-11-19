@@ -1,0 +1,10 @@
+[
+  {
+    "name": "beep",
+    "type": "float64"
+  },
+  {
+    "name": "boop",
+    "type": "float64"
+  }
+]

@@ -93,7 +93,7 @@ bool = isUint8Array( new Float32Array( 10 ) );
 bool = isUint8Array( new Float64Array( 10 ) );
 // returns false
 
-bool = isUint8Array( new Array( 10 ) );
+bool = isUint8Array( [] );
 // returns false
 
 bool = isUint8Array( {} );

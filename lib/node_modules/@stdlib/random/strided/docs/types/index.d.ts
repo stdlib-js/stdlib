@@ -776,7 +776,7 @@ interface Namespace {
 	* // Create an array:
 	* var out = new Float64Array( 10 );
 	*
-	* // Fill ns.the array with pseudorandom numbers:
+	* // Fill the array with pseudorandom numbers:
 	* ns.t( out.length, [ 2.0 ], 0, out, 1 );
 	*
 	* @example
@@ -785,7 +785,7 @@ interface Namespace {
 	* // Create an array:
 	* var out = new Float64Array( 10 );
 	*
-	* // Fill ns.the array with pseudorandom numbers:
+	* // Fill the array with pseudorandom numbers:
 	* ns.t.ndarray( out.length, [ 2.0 ], 0, 0, out, 1, 0 );
 	*/
 	t: typeof t;
