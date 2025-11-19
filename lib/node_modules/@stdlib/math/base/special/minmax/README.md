@@ -99,20 +99,17 @@ var bool = ( v === out );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var minstd = require( '@stdlib/random/base/minstd-shuffle' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var minmax = require( '@stdlib/math/base/special/minmax' );
 
-var x;
-var y;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 100, -100, 100, opts );
+var y = discreteUniform( 100, -100, 100, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = minstd();
-    y = minstd();
-    v = minmax( x, y );
-    console.log( 'minmax(%d,%d) = [%d, %d]', x, y, v[0], v[1] );
-}
+logEachMap( 'minmax(%d, %d) = [%s]', x, y, minmax );
 ```
 
 </section>

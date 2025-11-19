@@ -116,6 +116,98 @@ logEachMap( 'c: %0.4f, h(X;c): %0.4f', c, entropy );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/bradford/entropy.h"
+```
+
+#### stdlib_base_dists_bradford_entropy( c )
+
+Returns the differential entropy of a Bradford distribution with shape parameter `c`.
+
+```c
+double y = stdlib_base_dists_bradford_entropy( 0.5 );
+// returns ~-0.007
+```
+
+The function accepts the following arguments:
+
+-   **c**: `[in] double` shape parameter.
+
+```c
+double stdlib_base_dists_bradford_entropy( const double c );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/bradford/entropy.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double c;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        c = random_uniform( 0.01, 10.0 );
+        y = stdlib_base_dists_bradford_entropy( c );
+        printf( "c: %lf, h(X;c): %lf\n", c, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

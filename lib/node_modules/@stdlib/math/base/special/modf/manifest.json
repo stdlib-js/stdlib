@@ -46,7 +46,8 @@
         "@stdlib/constants/float64/pinf",
         "@stdlib/constants/float64/exponent-bias",
         "@stdlib/constants/float64/high-word-exponent-mask",
-        "@stdlib/constants/float64/high-word-significand-mask"
+        "@stdlib/constants/float64/high-word-significand-mask",
+        "@stdlib/constants/float64/num-high-word-significand-bits"
       ]
     },
     {
@@ -66,7 +67,8 @@
         "@stdlib/constants/float64/pinf",
         "@stdlib/constants/float64/exponent-bias",
         "@stdlib/constants/float64/high-word-exponent-mask",
-        "@stdlib/constants/float64/high-word-significand-mask"
+        "@stdlib/constants/float64/high-word-significand-mask",
+        "@stdlib/constants/float64/num-high-word-significand-bits"
       ]
     },
     {
@@ -86,7 +88,8 @@
         "@stdlib/constants/float64/pinf",
         "@stdlib/constants/float64/exponent-bias",
         "@stdlib/constants/float64/high-word-exponent-mask",
-        "@stdlib/constants/float64/high-word-significand-mask"
+        "@stdlib/constants/float64/high-word-significand-mask",
+        "@stdlib/constants/float64/num-high-word-significand-bits"
       ]
     }
   ]

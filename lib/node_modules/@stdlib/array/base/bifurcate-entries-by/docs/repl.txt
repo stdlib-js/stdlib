@@ -11,7 +11,7 @@
     If a predicate function returns a truthy value, an array value is placed in
     the first group; otherwise, an array value is placed in the second group.
 
-    If provided an empty array, the function returns an empty object.
+    If provided an empty array, the function returns an empty array.
 
     Parameters
     ----------
@@ -27,7 +27,7 @@
 
     Returns
     -------
-    out: Object
+    out: Array
         Split results.
 
     Examples

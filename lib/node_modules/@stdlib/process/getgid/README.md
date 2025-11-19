@@ -46,7 +46,7 @@ var id = getgid();
 
 ## Notes
 
--   The function **only** returns an `integer` group identity on POSIX platforms. For all other platforms (e.g., Windows, browsers, and Android), the function returns `null`. 
+-   The function **only** returns an `integer` group identity on POSIX platforms. For all other platforms (e.g., Windows, browsers, and Android), the function returns `null`.
 -   See [getgid(2)][getgid].
 
 </section>

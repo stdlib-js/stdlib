@@ -113,6 +113,94 @@ logEachMap( 'k: %0.4f, skew(X;k): %0.4f', k, skewness );
 
 <!-- /.examples -->
 
+* * *
+
+<section class="c">
+
+## C APIs
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/chi/skewness.h"
+```
+
+#### stdlib_base_dists_chi_skewness( k )
+
+Returns the [skewness][skewness] of a [chi][chi-distribution] distribution with degrees of freedom `k`.
+
+```c
+double out = stdlib_base_dists_chi_skewness( 9.0 );
+// returns ~0.252
+```
+
+The function accepts the following arguments:
+
+-   **k**: `[in] double` degrees of freedom.
+
+```c
+double stdlib_base_dists_chi_skewness( const double k );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/chi/skewness.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v * ( max - min ) );
+}
+
+int main( void ) {
+    double k;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        k = random_uniform( 1.0, 10.0 );
+        y = stdlib_base_dists_chi_skewness( k );
+        printf( "k: %lf, skew(X,k): %lf\n", k, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
