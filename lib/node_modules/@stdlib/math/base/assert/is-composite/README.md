@@ -149,7 +149,7 @@ bool stdlib_base_is_composite( const double x );
 #include <stdbool.h>
 
 int main( void ) {
-    const double x[] = { 0.0, 0.0/0.0, 1.0, -1.0 , 4.0 };
+    const double x[] = { 0.0, 0.0/0.0, 1.0, -1.0, 4.0 };
 
     bool r;
     int i;

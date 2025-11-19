@@ -1,0 +1,77 @@
+
+{{alias}}( x[, options] )
+    Computes the minimum value along one or more ndarray dimensions, ignoring
+    `NaN` values.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a real-valued or "generic" data type.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output array data type. Must be a real-valued or "generic" data type.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform a reduction. If not provided,
+        the function performs a reduction over all elements in a provided input
+        ndarray.
+
+    options.keepdims: boolean (optional)
+        Boolean indicating whether the reduced dimensions should be included in
+        the returned ndarray as singleton dimensions. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, NaN, -4.0 ] );
+    > var y = {{alias}}( x );
+    > var v = y.get()
+    -4.0
+
+
+{{alias}}.assign( x, out[, options] )
+    Computes the minimum value along one or more ndarray dimensions, ignoring
+    `NaN` values, and assigns results to a provided output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a real-valued or generic data type.
+
+    out: ndarray
+        Output array.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform a reduction. If not provided,
+        the function performs a reduction over all elements in a provided input
+        ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, NaN, -4.0 ] );
+    > var out = {{alias:@stdlib/ndarray/zeros}}( [] );
+    > var y = {{alias}}.assign( x, out )
+    <ndarray>
+    > var bool = ( out === y )
+    true
+    > var v = out.get()
+    -4.0
+
+    See Also
+    --------
+

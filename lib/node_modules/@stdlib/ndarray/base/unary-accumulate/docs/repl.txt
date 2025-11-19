@@ -52,7 +52,7 @@
 
     // Using an ndarray...
     > var x = {{alias:@stdlib/ndarray/ctor}}( dtype, xbuf, shape, sx, ox, order );
-    > {{alias}}( [ x ], 0.0, {{alias:@stdlib/math/base/ops/add}} )
+    > {{alias}}( [ x ], 0.0, {{alias:@stdlib/number/float64/base/add}} )
     -10.0
 
     // Using a minimal ndarray-like objects...
@@ -64,7 +64,7 @@
     ...     'offset': ox,
     ...     'order': order
     ... };
-    > {{alias}}( [ x ], 0.0, {{alias:@stdlib/math/base/ops/add}} )
+    > {{alias}}( [ x ], 0.0, {{alias:@stdlib/number/float64/base/add}} )
     -10.0
 
     See Also

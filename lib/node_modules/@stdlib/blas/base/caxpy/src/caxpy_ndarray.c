@@ -28,15 +28,15 @@
 * Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant and adds the result to a single-precision complex floating-point vector using alternative indexing semantics.
 *
 * @param N        number of indexed elements
-* @param ca       scalar constant
-* @param CX       input array
-* @param strideX  CX stride length
-* @param offsetX  starting index for CX
-* @param CY       output array
-* @param strideY  CY stride length
-* @param offsetY  starting index for CY
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y        output array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
 */
-void API_SUFFIX(c_caxpy_ndarray)( const CBLAS_INT N, const stdlib_complex64_t ca, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *CY, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+void API_SUFFIX(c_caxpy_ndarray)( const CBLAS_INT N, const stdlib_complex64_t alpha, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
 	stdlib_complex64_t x;
 	stdlib_complex64_t y;
 	int64_t is1;
@@ -46,11 +46,11 @@ void API_SUFFIX(c_caxpy_ndarray)( const CBLAS_INT N, const stdlib_complex64_t ca
 	if ( N <= 0 ) {
 		return;
 	}
-	if ( c_scabs1( ca ) == 0.0f ) {
+	if ( c_scabs1( alpha ) == 0.0f ) {
 		return;
 	}
-	stdlib_complex64_t *ip1 = (stdlib_complex64_t *)CX;
-	stdlib_complex64_t *ip2 = (stdlib_complex64_t *)CY;
+	stdlib_complex64_t *ip1 = (stdlib_complex64_t *)X;
+	stdlib_complex64_t *ip2 = (stdlib_complex64_t *)Y;
 	is1 = (int64_t)strideX;
 	is2 = (int64_t)strideY;
 	ip1 += offsetX;
@@ -58,7 +58,7 @@ void API_SUFFIX(c_caxpy_ndarray)( const CBLAS_INT N, const stdlib_complex64_t ca
 	for ( i = 0; i < N; i++, ip1 += is1, ip2 += is2 ) {
 		x = *ip1;
 		y = *ip2;
-		*ip2 = stdlib_base_complex64_add( stdlib_base_complex64_mul( ca, x ), y );
+		*ip2 = stdlib_base_complex64_add( stdlib_base_complex64_mul( alpha, x ), y );
 	}
 	return;
 }

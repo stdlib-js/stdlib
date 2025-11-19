@@ -19,7 +19,7 @@
 import JSON
 
 """
-    gen( re, im, name )
+	gen( re, im, name )
 
 Generate fixture data and write to file.
 

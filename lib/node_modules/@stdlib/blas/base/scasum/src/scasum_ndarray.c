@@ -24,12 +24,12 @@
 * Computes the sum of the absolute values of the real and imaginary components of a single-precision complex floating-point vector using alternative indexing semantics.
 *
 * @param N         number of indexed elements
-* @param CX        input array
-* @param strideX   CX stride length
-* @param offsetX   starting index for CX
+* @param X         input array
+* @param strideX   X stride length
+* @param offsetX   starting index for X
 */
-float API_SUFFIX(c_scasum_ndarray)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	float *x = (float *)CX;
+float API_SUFFIX(c_scasum_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	const float *x = (const float *)X;
 	float stemp;
 	CBLAS_INT sx;
 	CBLAS_INT ix;

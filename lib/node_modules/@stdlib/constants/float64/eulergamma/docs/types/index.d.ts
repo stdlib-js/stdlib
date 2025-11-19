@@ -22,12 +22,12 @@
 * The Euler-Mascheroni constant.
 *
 * @example
-* var val = GAMMA;
+* var val = EULERGAMMA;
 * // returns 0.5772156649015329
 */
-declare const GAMMA: number;
+declare const EULERGAMMA: number;
 
 
 // EXPORTS //
 
-export = GAMMA;
+export = EULERGAMMA;

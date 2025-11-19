@@ -27,7 +27,7 @@
 * @return         kurtosis
 *
 * @example
-* double y = stdlib_base_invgamma_kurtosis( 6.0, 1.0 );
+* double y = stdlib_base_dists_invgamma_kurtosis( 6.0, 1.0 );
 * // returns 19.0
 */
 double stdlib_base_dists_invgamma_kurtosis( const double alpha, const double beta ) {

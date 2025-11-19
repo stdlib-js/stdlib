@@ -32,7 +32,7 @@ var reWhitespace = require( '@stdlib/regexp/whitespace' );
 
 #### reWhitespace( \[options] )
 
-Returns a [regular expression][regexp] to match a [white space][whitespace] character. 
+Returns a [regular expression][regexp] to match a [white space][whitespace] character.
 
 ```javascript
 var RE_WHITESPACE = reWhitespace();
@@ -77,7 +77,7 @@ var arr = str.split( RE_WHITESPACE );
 
 #### reWhitespace.REGEXP
 
-[Regular expression][regexp] to match a [white space][whitespace] character. 
+[Regular expression][regexp] to match a [white space][whitespace] character.
 
 ```javascript
 var bool = reWhitespace.REGEXP.test( '\n' );
@@ -89,7 +89,7 @@ bool = reWhitespace.REGEXP.test( '\\n' );
 
 #### reWhitespace.REGEXP_CAPTURE
 
-[Regular expression][regexp] to capture characters matching a [white space][whitespace] character. 
+[Regular expression][regexp] to capture characters matching a [white space][whitespace] character.
 
 ```javascript
 var replace = require( '@stdlib/string/replace' );
@@ -111,13 +111,13 @@ var out = replace( str, reWhitespace.REGEXP_CAPTURE, '$1$1' );
 
 -   Matches one related white space character without the Unicode character property "WSpace=Y" (zero width non-breaking space which was deprecated as of Unicode 3.2).
 
--   The `REGEXP` regular expression is defined as 
+-   The `REGEXP` regular expression is defined as
 
     ```text
     /[\u0009\u000A\u000B\u000C\u000D\u0020\u0085\u00A0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u2028\u2029\u202F\u205F\u3000\uFEFF]/
     ```
 
--   The `REGEXP_CAPTURE` regular expression is defined as 
+-   The `REGEXP_CAPTURE` regular expression is defined as
 
     ```text
     /([\u0009\u000A\u000B\u000C\u000D\u0020\u0085\u00A0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u2028\u2029\u202F\u205F\u3000\uFEFF])/

@@ -42,7 +42,7 @@ Applies a binary callback to elements in two [broadcasted][@stdlib/array/base/br
 
 ```javascript
 var zeros3d = require( '@stdlib/array/base/zeros3d' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 
 var x = [ [ 1.0, 2.0 ] ];
 var y = [ [ 3.0 ], [ 4.0 ] ];
@@ -88,7 +88,7 @@ The function accepts the following arguments:
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filled3dBy = require( '@stdlib/array/base/filled3d-by' );
 var zeros3d = require( '@stdlib/array/base/zeros3d' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var bbinary3d = require( '@stdlib/array/base/broadcasted-binary3d' );
 
 var shapes = [

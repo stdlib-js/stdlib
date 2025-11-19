@@ -1,0 +1,29 @@
+
+{{alias}}( idtype, odtype, policy )
+    Resolves the input ndarray casting data type for a unary function.
+
+    Parameters
+    ----------
+    idtype: string
+        Input ndarray data type.
+
+    odtype: string
+        Output ndarray data type.
+
+    policy: string
+        Input ndarray casting data type policy. If `policy` is a data type, the
+        function returns the `policy` value.
+
+    Returns
+    -------
+    out: string
+        Input ndarray casting data type.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float64', 'float64', 'none' )
+    'float64'
+
+    See Also
+    --------
+

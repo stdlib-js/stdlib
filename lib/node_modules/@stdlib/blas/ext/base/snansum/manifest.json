@@ -28,55 +28,54 @@
     {
       "task": "build",
       "src": [
-        "./src/snansum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/ext/base/snansumkbn",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
-        "@stdlib/napi/argv-double",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
-        "@stdlib/napi/create-double"
+        "@stdlib/napi/create-double",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/snansum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/snansumkbn"
+        "@stdlib/blas/ext/base/snansumkbn",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/snansum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/snansumkbn"
+        "@stdlib/blas/ext/base/snansumkbn",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     }
   ]
