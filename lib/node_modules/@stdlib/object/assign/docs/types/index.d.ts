@@ -25,6 +25,7 @@
 *
 * -   If a property key is present in multiple sources, the property from the last source that defines the key prevails.
 * -   The target object is mutated.
+* -   Both string and symbol properties are copied.
 *
 * @param target - target object
 * @param source - source object
@@ -51,6 +52,7 @@ declare function assign<T extends object, U>( target: T, source: U ): T & U;
 *
 * -   If a property key is present in multiple sources, the property from the last source that defines the key prevails.
 * -   The target object is mutated.
+* -   Both string and symbol properties are copied.
 *
 * @param target - target object
 * @param source1 - first source object
@@ -67,6 +69,7 @@ declare function assign<T extends object, U, V>( target: T, source1: U, source2:
 *
 * -   If a property key is present in multiple sources, the property from the last source that defines the key prevails.
 * -   The target object is mutated.
+* -   Both string and symbol properties are copied.
 *
 * @param target - target object
 * @param source1 - first source object
@@ -84,6 +87,7 @@ declare function assign<T extends object, U, V, W>( target: T, source1: U, sourc
 *
 * -   If a property key is present in multiple sources, the property from the last source that defines the key prevails.
 * -   The target object is mutated.
+* -   Both string and symbol properties are copied.
 *
 * @param target - target object
 * @param source - source object(s)

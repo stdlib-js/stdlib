@@ -32,7 +32,7 @@ var reSemVer = require( '@stdlib/regexp/semver' );
 
 #### reSemVer()
 
-Returns a [regular expression][mdn-regexp] to match a [semantic version][semantic-version] string. 
+Returns a [regular expression][mdn-regexp] to match a [semantic version][semantic-version] string.
 
 ```javascript
 var RE_SEMVER = reSemVer();

@@ -47,10 +47,10 @@ void API_SUFFIX(c_zcopy)( const CBLAS_INT N, const void *X, const CBLAS_INT stri
 * @param offsetY  starting index for Y
 */
 void API_SUFFIX(c_zcopy_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
-	stdlib_complex128_t *zx = (stdlib_complex128_t *)X;
-	stdlib_complex128_t *zy = (stdlib_complex128_t *)Y;
+	stdlib_complex128_t *x = (stdlib_complex128_t *)X;
+	stdlib_complex128_t *y = (stdlib_complex128_t *)Y;
 
-	zx += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
-	zy += stdlib_strided_min_view_buffer_index( N, strideY, offsetY );
-	zcopy( &N, (void *)zx, &strideX, (void *)zy, &strideY );
+	x += stdlib_strided_min_view_buffer_index( N, strideX, offsetX );
+	y += stdlib_strided_min_view_buffer_index( N, strideY, offsetY );
+	zcopy( &N, (void *)x, &strideX, (void *)y, &strideY );
 }

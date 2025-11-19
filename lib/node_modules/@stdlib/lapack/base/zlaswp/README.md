@@ -164,7 +164,7 @@ zlaswp.ndarray( 2, A, 2, 1, 2, 0, 2, 1, IPIV, 1, 2 );
 
 -   Both functions access `k2-k1+1` elements from `IPIV`.
 -   While `zlaswp` conflates the order in which pivots are applied with the order in which elements in `IPIV` are accessed, the `ndarray` method delineates control of those behaviors with separate parameters `inck` and `si`.
--   `zlaswp()` corresponds to the [LAPACK][LAPACK] level 1 function [`zlaswp`][lapack-zlaswp].
+-   `zlaswp()` corresponds to the [LAPACK][LAPACK] function [`zlaswp`][lapack-zlaswp].
 
 </section>
 

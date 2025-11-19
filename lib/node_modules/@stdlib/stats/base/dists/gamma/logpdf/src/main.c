@@ -16,8 +16,6 @@
 * limitations under the License.
 */
 
-// MODULES //
-
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/pinf.h"
@@ -159,8 +157,6 @@ static double gamma_p_derivative( const double a, const double x ) {
 }
 
 // END: gammma_p_derivative
-
-// MAIN //
 
 /**
 * Evaluates the logarithm of the probability density function (PDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta` at a value `x`.

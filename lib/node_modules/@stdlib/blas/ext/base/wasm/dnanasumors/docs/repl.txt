@@ -167,7 +167,7 @@
 
 
 {{alias}}.Module.prototype.view
-    Read-only property which returns a WebAsssembly memory buffer as a DataView.
+    Read-only property which returns a WebAssembly memory buffer as a DataView.
 
     Returns
     -------

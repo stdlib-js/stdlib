@@ -38,7 +38,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/blas/ext/base/dnannsumpw",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -60,7 +60,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/blas/ext/base/dnannsumpw",
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset"
       ]
@@ -77,7 +77,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/blas/ext/base/dnannsumpw",
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset"
       ]
@@ -94,7 +94,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/blas/ext/base/dnannsumpw",
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset"
       ]

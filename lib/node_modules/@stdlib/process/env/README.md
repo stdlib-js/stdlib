@@ -51,7 +51,7 @@ var user = ENV.USER;
 -   Modifications to `ENV` are local to the process in which `ENV` is modified.
 -   On Windows systems, environment variables are case insensitive.
 -   In browser environments, `ENV` is an **empty** object.
--   Be careful when modifying environment variables as the environment variable object represents shared state. Accordingly, modifications affect all environment variable consumers. 
+-   Be careful when modifying environment variables as the environment variable object represents shared state. Accordingly, modifications affect all environment variable consumers.
 
 </section>
 

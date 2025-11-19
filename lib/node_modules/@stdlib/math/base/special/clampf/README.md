@@ -187,7 +187,7 @@ int main( void ) {
     int i;
     for ( i = 0; i < 4; i++ ) {
         y = stdlib_base_clampf( x[ i ], -3.0f, 3.0f );
-        printf( "clamp(%f, %f, %f) = %f\n", x[ i ], -3.0f, 3.0f, y );
+        printf( "clampf(%f, %f, %f) = %f\n", x[ i ], -3.0f, 3.0f, y );
     }
 }
 ```
