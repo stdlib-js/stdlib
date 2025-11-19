@@ -37,7 +37,7 @@ Returns a [regular expression][mdn-regexp] to split a Windows filename.
 <!-- eslint no-trailing-spaces: "off" -->
 
 ```javascript
-var RE_FILENAME_WINDOWS = reFilenameWindows(); 
+var RE_FILENAME_WINDOWS = reFilenameWindows();
 var parts = RE_FILENAME_WINDOWS.exec( 'C:\\foo\\bar\\index.js' ).slice();
 /* returns
     [

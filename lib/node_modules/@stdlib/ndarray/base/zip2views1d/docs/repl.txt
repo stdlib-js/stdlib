@@ -1,0 +1,41 @@
+
+{{alias}}( arrays, labels )
+    Zips one or more one-dimensional ndarrays to an array of composite views.
+
+    The function assumes that the list of ndarrays to be zipped all have the
+    same length.
+
+    The list of provided labels should equal the number of ndarrays to be
+    zipped.
+
+    Each view in the returned array shares the same memory as the corresponding
+    elements in the input ndarrays. Accordingly, mutation of either an input
+    ndarray or a view will mutate the other.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        List of ndarrays to zip.
+
+    labels: ArrayLikeObject
+        List of labels.
+
+    Returns
+    -------
+    out: Array<Object>
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1, 2 ] );
+    > var y = {{alias:@stdlib/ndarray/array}}( [ 3, 4 ] );
+    > var labels = [ 'x', 'y' ];
+    > var out = {{alias}}( [ x, y ], labels );
+    > var v = out[ 0 ].toJSON()
+    { 'x': 1, 'y': 3 }
+    > v = out[ 1 ].toJSON()
+    { 'x': 2, 'y': 4 }
+
+    See Also
+    --------
+

@@ -31,7 +31,7 @@
 * var dt = dtype( 'beep' );
 * // returns null
 */
-declare function dtype( value: any ): string | null;
+declare function dtype( value: any ): string | null; // FIXME: add support for `Struct` constructors
 
 
 // EXPORTS //

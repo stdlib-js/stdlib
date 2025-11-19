@@ -291,7 +291,7 @@ interface MapValuesAsync {
 	* };
 	*
 	* // Create a reusable function:
-	* var mapValuesAsync = factory( opts, getStats );
+	* var mapValues = mapValuesAsync.factory( opts, getStats );
 	*
 	* // Create a dictionary of file names:
 	* var files = {
@@ -308,7 +308,7 @@ interface MapValuesAsync {
 	* }
 	*
 	* // Process each file in `files`:
-	* mapValuesAsync( files, done );
+	* mapValues( files, done );
 	*/
 	factory( options: Options, transform: Transform ): FactoryFunction;
 
@@ -346,7 +346,7 @@ interface MapValuesAsync {
 	* }
 	*
 	* // Create a reusable function:
-	* var mapValuesAsync = factory( getStats );
+	* var mapValues = mapValuesAsync.factory( getStats );
 	*
 	* // Create a dictionary of file names:
 	* var files = {
@@ -363,7 +363,7 @@ interface MapValuesAsync {
 	* }
 	*
 	* // Process each file in `files`:
-	* mapValuesAsync( files, done );
+	* mapValues( files, done );
 	*/
 	factory( transform: Transform ): FactoryFunction;
 }

@@ -130,24 +130,24 @@ interface Namespace {
 	*
 	* @example
 	* var y = ns.logpmf( 3.0, 20, 0.2 );
-	* // returns ~-1.583
+	* // returns ~-25.519
 	*
 	* y = ns.logpmf( 21.0, 20, 0.2 );
-	* // returns -Infinity
+	* // returns ~-11.274
 	*
 	* y = ns.logpmf( 5.0, 10, 0.4 );
-	* // returns ~-1.606
+	* // returns ~-4.115
 	*
 	* y = ns.logpmf( 0.0, 10, 0.4 );
-	* // returns ~-5.108
+	* // returns ~-9.163
 	*
 	* var mylogpmf = ns.logpmf.factory( 10, 0.5 );
 	*
 	* y = mylogpmf( 3.0 );
-	* // returns ~-2.146
+	* // returns ~-3.617
 	*
 	* y = mylogpmf( 5.0 );
-	* // returns ~-1.402
+	* // returns ~-2.795
 	*/
 	logpmf: typeof logpmf;
 

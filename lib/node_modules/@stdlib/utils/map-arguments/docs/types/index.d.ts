@@ -30,7 +30,6 @@
 *
 * @param fcn - input function
 * @param clbk - callback function
-* @param thisArg - input function context
 * @returns function wrapper
 *
 * @example
