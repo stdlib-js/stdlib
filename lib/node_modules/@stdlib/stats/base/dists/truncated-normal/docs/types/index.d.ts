@@ -42,7 +42,7 @@ interface Namespace {
 	*
 	* var mypdf = ns.pdf.factory( -1.0, 1.0, 0.0, 1.0 );
 	* y = mypdf( 0.9 );
-	* // returns ~0.5896
+	* // returns ~0.39
 	*/
 	pdf: typeof pdf;
 }
