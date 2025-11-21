@@ -136,7 +136,7 @@ interface Namespace {
 	* var mylogpdf = ns.logpdf.factory( 6.0 );
 	*
 	* y = mylogpdf( 3.0 );
-	* // returns ~-1.088
+	* // returns ~-1.086
 	*/
 	logpdf: typeof logpdf;
 
@@ -228,7 +228,7 @@ interface Namespace {
 	* var myquantile = ns.quantile.factory( 2.0 );
 	*
 	* var y = myquantile( 0.3 );
-	* // returns ~0.844
+	* // returns ~0.8446
 	*
 	* y = myquantile( 0.7 );
 	* // returns ~1.552
