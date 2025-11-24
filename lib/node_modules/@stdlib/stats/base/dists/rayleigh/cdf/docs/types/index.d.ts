@@ -94,11 +94,11 @@ interface CDF {
 *
 * @example
 * var y = cdf( 2.0, 0.0, 1.0 );
-* // returns ~0.977
+* // returns 1.0
 *
 * var myCDF = cdf.factory( 10.0, 2.0 );
 * y = myCDF( 10.0 );
-* // returns 0.5
+* // returns ~0.393
 */
 declare var cdf: CDF;
 

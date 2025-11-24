@@ -157,7 +157,7 @@ interface Namespace {
 	* var accumulator = ns.incrcount();
 	*
 	* var v = accumulator();
-	* // returns null
+	* // returns 0
 	*
 	* v = accumulator( 2.0 );
 	* // returns 1
@@ -2308,7 +2308,7 @@ interface Namespace {
 	* var accumulator = ns.incrnancount();
 	*
 	* var v = accumulator();
-	* // returns null
+	* // returns 0
 	*
 	* v = accumulator( 2.0 );
 	* // returns 1

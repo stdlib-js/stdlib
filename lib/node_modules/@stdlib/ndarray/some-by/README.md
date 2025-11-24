@@ -55,8 +55,8 @@ var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 0.0, 6.0 ] ] ] );
 var out = someBy( x, 2, predicate );
 // returns <ndarray>
 
-console.log( out.get() );
-// => true
+var v = out.get();
+// returns true
 ```
 
 The function accepts the following arguments:
