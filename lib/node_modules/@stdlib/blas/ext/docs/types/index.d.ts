@@ -193,7 +193,7 @@ interface Namespace {
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
-	* var y = ns.indexOf( x, 2.0 );
+	* var y = ns.indexOf( x, 2.0, 0 );
 	* // returns <ndarray>
 	*
 	* var idx = y.get();
@@ -203,19 +203,19 @@ interface Namespace {
 	* var zeros = require( '@stdlib/ndarray/zeros' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
-	* var x = array( [ -1.0, 2.0, -3.0 ] );
-	* var y = zeros( x, {
+	* var x = array( [ -1.0, 2.0, -3.0, 2.0, -5.0, 6.0 ] );
+	* var y = zeros( [], {
 	*     'dtype': 'int32'
 	* } );
 	*
-	* var out = ns.indexOf.assign( x, 2.0, y );
+	* var out = ns.indexOf.assign( x, 2.0, 2, y );
 	* // returns <ndarray>
 	*
 	* var bool = ( out === y );
 	* // returns true
 	*
 	* var idx = out.get();
-	* // returns 1
+	* // returns 3
 	*/
 	indexOf: typeof indexOf;
 
