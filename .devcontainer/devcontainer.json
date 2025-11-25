@@ -1,10 +1,11 @@
 {
   "name": "stdlib - OSS Development",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
   "features": {
+    "ghcr.io/devcontainers/features/python:1": {},
     "ghcr.io/rocker-org/devcontainer-features/r-apt:0": {},
     "ghcr.io/julialang/devcontainer-features/julia:1": {},
-    "ghcr.io/marcozac/devcontainer-features/shellcheck:1": {},
+    "ghcr.io/devcontainers-extra/features/shellcheck:1": {},
     "ghcr.io/rocker-org/devcontainer-features/pandoc:1": {}
   },
   "postCreateCommand": "./.devcontainer/post-create",
