@@ -1968,6 +1968,8 @@
 "0D7",@stdlib/blas-ext-base-dnansumpw
 "0D8",@stdlib/blas/ext/base/drev
 "0D9",@stdlib/blas-ext-base-drev
+"2YQ",@stdlib/blas/ext/base/drrss
+"2YR",@stdlib/blas-ext-base-drrss
 "0DA",@stdlib/blas/ext/base/dsapxsum
 "0DB",@stdlib/blas-ext-base-dsapxsum
 "0DC",@stdlib/blas/ext/base/dsapxsumpw
@@ -2250,6 +2252,8 @@
 "2Rp",@stdlib/blas-ext-index-of
 "2VK",@stdlib/blas/ext/last-index-of
 "2VL",@stdlib/blas-ext-last-index-of
+"2YS",@stdlib/blas/ext/linspace
+"2YT",@stdlib/blas-ext-linspace
 "0G2",@stdlib/blas/ext
 "0G3",@stdlib/blas-ext
 "2WM",@stdlib/blas/ext/sorthp
@@ -5212,6 +5216,8 @@
 "1jV",@stdlib/ndarray-slice
 "2J0",@stdlib/ndarray/some-by
 "2J1",@stdlib/ndarray-some-by
+"2YU",@stdlib/ndarray/some
+"2YV",@stdlib/ndarray-some
 "1mk",@stdlib/ndarray/stride
 "1ml",@stdlib/ndarray-stride
 "1kC",@stdlib/ndarray/strides
@@ -5368,6 +5374,8 @@
 "28P",@stdlib/number-float64-base-sub
 "0lQ",@stdlib/number/float64/base/to-binary-string
 "0lR",@stdlib/number-float64-base-to-binary-string
+"2YW",@stdlib/number/float64/base/to-float16
+"2YX",@stdlib/number-float64-base-to-float16
 "0lS",@stdlib/number/float64/base/to-float32
 "0lT",@stdlib/number-float64-base-to-float32
 "0lU",@stdlib/number/float64/base/to-int32
@@ -5388,6 +5396,8 @@
 "1dn",@stdlib/number-float64-to-json
 "2Ts",@stdlib/number/int16/base/identity
 "2Tt",@stdlib/number-int16-base-identity
+"2YY",@stdlib/number/int16/base
+"2YZ",@stdlib/number-int16-base
 "2Tu",@stdlib/number/int32/base/identity
 "2Tv",@stdlib/number-int32-base-identity
 "2Ai",@stdlib/number/int32/base/mul
@@ -5402,6 +5412,8 @@
 "0lj",@stdlib/number-int32
 "2Tw",@stdlib/number/int8/base/identity
 "2Tx",@stdlib/number-int8-base-identity
+"2Ya",@stdlib/number/int8/base
+"2Yb",@stdlib/number-int8-base
 "0ll",@stdlib/number
 "2L8",@stdlib/number/uint16/base/add
 "2L9",@stdlib/number-uint16-base-add
@@ -7269,10 +7281,14 @@
 "2Y9",@stdlib/stats-base-ndarray-dminsorted
 "2UI",@stdlib/stats/base/ndarray/dnanmax
 "2UJ",@stdlib/stats-base-ndarray-dnanmax
+"2Yc",@stdlib/stats/base/ndarray/dnanmaxabs
+"2Yd",@stdlib/stats-base-ndarray-dnanmaxabs
 "2VA",@stdlib/stats/base/ndarray/dnanmean
 "2VB",@stdlib/stats-base-ndarray-dnanmean
 "2UK",@stdlib/stats/base/ndarray/dnanmin
 "2UL",@stdlib/stats-base-ndarray-dnanmin
+"2Ye",@stdlib/stats/base/ndarray/dnanminabs
+"2Yf",@stdlib/stats-base-ndarray-dnanminabs
 "2Pg",@stdlib/stats/base/ndarray/drange
 "2Ph",@stdlib/stats-base-ndarray-drange
 "2Pi",@stdlib/stats/base/ndarray/dztest
@@ -7317,10 +7333,14 @@
 "2YB",@stdlib/stats-base-ndarray-mskmin
 "2US",@stdlib/stats/base/ndarray/nanmax
 "2UT",@stdlib/stats-base-ndarray-nanmax
+"2Yg",@stdlib/stats/base/ndarray/nanmaxabs
+"2Yh",@stdlib/stats-base-ndarray-nanmaxabs
 "2VC",@stdlib/stats/base/ndarray/nanmean
 "2VD",@stdlib/stats-base-ndarray-nanmean
 "2UU",@stdlib/stats/base/ndarray/nanmin
 "2UV",@stdlib/stats-base-ndarray-nanmin
+"2Yi",@stdlib/stats/base/ndarray/nanminabs
+"2Yj",@stdlib/stats-base-ndarray-nanminabs
 "2F2",@stdlib/stats/base/ndarray
 "2F3",@stdlib/stats-base-ndarray
 "2YC",@stdlib/stats/base/ndarray/range-by
@@ -7331,8 +7351,12 @@
 "2UX",@stdlib/stats-base-ndarray-scovarmtk
 "2G6",@stdlib/stats/base/ndarray/scumax
 "2G7",@stdlib/stats-base-ndarray-scumax
+"2Yk",@stdlib/stats/base/ndarray/scumaxabs
+"2Yl",@stdlib/stats-base-ndarray-scumaxabs
 "2Pq",@stdlib/stats/base/ndarray/scumin
 "2Pr",@stdlib/stats-base-ndarray-scumin
+"2Ym",@stdlib/stats/base/ndarray/scuminabs
+"2Yn",@stdlib/stats-base-ndarray-scuminabs
 "2F4",@stdlib/stats/base/ndarray/smax
 "2F5",@stdlib/stats-base-ndarray-smax
 "2UY",@stdlib/stats/base/ndarray/smaxabs
@@ -7593,6 +7617,8 @@
 "2Wh",@stdlib/stats-incr-nanhmean
 "2GU",@stdlib/stats/incr/nanmaxabs
 "2GV",@stdlib/stats-incr-nanmaxabs
+"2Yo",@stdlib/stats/incr/nanmcv
+"2Yp",@stdlib/stats-incr-nanmcv
 "2As",@stdlib/stats/incr/nanmean
 "2At",@stdlib/stats-incr-nanmean
 "2Au",@stdlib/stats/incr/nanmeanabs
@@ -8190,6 +8216,8 @@
 "2RZ",@stdlib/stats-strided-varianceyc
 "2GY",@stdlib/stats/strided/wasm/dmeanors
 "2GZ",@stdlib/stats-strided-wasm-dmeanors
+"2Yq",@stdlib/stats/strided/wasm/dmeanpw
+"2Yr",@stdlib/stats-strided-wasm-dmeanpw
 "2KC",@stdlib/stats/strided/wasm/dmeanwd
 "2KD",@stdlib/stats-strided-wasm-dmeanwd
 "2WK",@stdlib/stats/strided/wasm/dnanvariancewd
@@ -8392,6 +8420,8 @@
 "1ff",@stdlib/string-base-capitalize
 "1fg",@stdlib/string/base/code-point-at
 "1fh",@stdlib/string-base-code-point-at
+"2Ys",@stdlib/string/base/concat
+"2Yt",@stdlib/string-base-concat
 "1fi",@stdlib/string/base/constantcase
 "1fj",@stdlib/string-base-constantcase
 "1n0",@stdlib/string/base/distances/hamming
@@ -8630,6 +8660,8 @@
 "1Q2",@stdlib/symbol/iterator
 "1Q3",@stdlib/symbol-iterator
 "1Q5",@stdlib/symbol
+"2Yu",@stdlib/symbol/replace
+"2Yv",@stdlib/symbol-replace
 "2YO",@stdlib/symbol/to-primitive
 "2YP",@stdlib/symbol-to-primitive
 "1h2",@stdlib/time/base

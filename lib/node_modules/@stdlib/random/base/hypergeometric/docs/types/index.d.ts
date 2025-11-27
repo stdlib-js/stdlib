@@ -143,7 +143,7 @@ interface Random extends PRNG {
 	* // returns <number>
 	*
 	* @example
-	* var v = hypergeometric( 5, 3, 2 );
+	* var v = hypergeometric( 5, 3, 6 );
 	* // returns NaN
 	*/
 	( N: number, K: number, n: number ): number;
