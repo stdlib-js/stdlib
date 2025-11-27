@@ -96,7 +96,7 @@ static double benchmark( void ) {
 	double t;
 	int i;
 
-	int64_t shape[] = { 10, 10, 10 };
+	const int64_t shape[] = { 10, 10, 10 };
 	int64_t strides[] = { 100, 10, 1 };
 	int64_t offset = 1000;
 	int64_t ndims = 3;
