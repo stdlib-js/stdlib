@@ -24,135 +24,135 @@ import scasum = require( './index' );
 
 // The function returns a number...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
-	scasum( cx.length, cx, 1 ); // $ExpectType number
+	scasum( x.length, x, 1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
-	scasum( '10', cx, 1 ); // $ExpectError
-	scasum( true, cx, 1 ); // $ExpectError
-	scasum( false, cx, 1 ); // $ExpectError
-	scasum( null, cx, 1 ); // $ExpectError
-	scasum( undefined, cx, 1 ); // $ExpectError
-	scasum( [], cx, 1 ); // $ExpectError
-	scasum( {}, cx, 1 ); // $ExpectError
-	scasum( ( cx: number ): number => cx, cx, 1 ); // $ExpectError
+	scasum( '10', x, 1 ); // $ExpectError
+	scasum( true, x, 1 ); // $ExpectError
+	scasum( false, x, 1 ); // $ExpectError
+	scasum( null, x, 1 ); // $ExpectError
+	scasum( undefined, x, 1 ); // $ExpectError
+	scasum( [], x, 1 ); // $ExpectError
+	scasum( {}, x, 1 ); // $ExpectError
+	scasum( ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a Complex64Array...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
-	scasum( cx.length, 10, 1 ); // $ExpectError
-	scasum( cx.length, '10', 1 ); // $ExpectError
-	scasum( cx.length, true, 1 ); // $ExpectError
-	scasum( cx.length, false, 1 ); // $ExpectError
-	scasum( cx.length, null, 1 ); // $ExpectError
-	scasum( cx.length, undefined, 1 ); // $ExpectError
-	scasum( cx.length, [], 1 ); // $ExpectError
-	scasum( cx.length, {}, 1 ); // $ExpectError
-	scasum( cx.length, ( cx: number ): number => cx, 1 ); // $ExpectError
+	scasum( x.length, 10, 1 ); // $ExpectError
+	scasum( x.length, '10', 1 ); // $ExpectError
+	scasum( x.length, true, 1 ); // $ExpectError
+	scasum( x.length, false, 1 ); // $ExpectError
+	scasum( x.length, null, 1 ); // $ExpectError
+	scasum( x.length, undefined, 1 ); // $ExpectError
+	scasum( x.length, [], 1 ); // $ExpectError
+	scasum( x.length, {}, 1 ); // $ExpectError
+	scasum( x.length, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
-	scasum( cx.length, cx, '10' ); // $ExpectError
-	scasum( cx.length, cx, true ); // $ExpectError
-	scasum( cx.length, cx, false ); // $ExpectError
-	scasum( cx.length, cx, null ); // $ExpectError
-	scasum( cx.length, cx, undefined ); // $ExpectError
-	scasum( cx.length, cx, [] ); // $ExpectError
-	scasum( cx.length, cx, {} ); // $ExpectError
-	scasum( cx.length, cx, ( cx: number ): number => cx ); // $ExpectError
+	scasum( x.length, x, '10' ); // $ExpectError
+	scasum( x.length, x, true ); // $ExpectError
+	scasum( x.length, x, false ); // $ExpectError
+	scasum( x.length, x, null ); // $ExpectError
+	scasum( x.length, x, undefined ); // $ExpectError
+	scasum( x.length, x, [] ); // $ExpectError
+	scasum( x.length, x, {} ); // $ExpectError
+	scasum( x.length, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
 	scasum(); // $ExpectError
-	scasum( cx.length ); // $ExpectError
-	scasum( cx.length, cx ); // $ExpectError
-	scasum( cx.length, cx, 1, 10 ); // $ExpectError
+	scasum( x.length ); // $ExpectError
+	scasum( x.length, x ); // $ExpectError
+	scasum( x.length, x, 1, 10 ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a number...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
-	scasum.ndarray( cx.length, cx, 1, 0 ); // $ExpectType number
+	scasum.ndarray( x.length, x, 1, 0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
-	scasum.ndarray( '10', cx, 1, 0 ); // $ExpectError
-	scasum.ndarray( true, cx, 1, 0 ); // $ExpectError
-	scasum.ndarray( false, cx, 1, 0 ); // $ExpectError
-	scasum.ndarray( null, cx, 1, 0 ); // $ExpectError
-	scasum.ndarray( undefined, cx, 1, 0 ); // $ExpectError
-	scasum.ndarray( [], cx, 1, 0 ); // $ExpectError
-	scasum.ndarray( {}, cx, 1, 0 ); // $ExpectError
-	scasum.ndarray( ( cx: number ): number => cx, cx, 1, 0 ); // $ExpectError
+	scasum.ndarray( '10', x, 1, 0 ); // $ExpectError
+	scasum.ndarray( true, x, 1, 0 ); // $ExpectError
+	scasum.ndarray( false, x, 1, 0 ); // $ExpectError
+	scasum.ndarray( null, x, 1, 0 ); // $ExpectError
+	scasum.ndarray( undefined, x, 1, 0 ); // $ExpectError
+	scasum.ndarray( [], x, 1, 0 ); // $ExpectError
+	scasum.ndarray( {}, x, 1, 0 ); // $ExpectError
+	scasum.ndarray( ( x: number ): number => x, x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a Complex64Array...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
-	scasum.ndarray( cx.length, 10, 1, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, '10', 1, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, true, 1, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, false, 1, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, null, 1, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, undefined, 1, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, [], 1, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, {}, 1, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, ( cx: number ): number => cx, 1, 0 ); // $ExpectError
+	scasum.ndarray( x.length, 10, 1, 0 ); // $ExpectError
+	scasum.ndarray( x.length, '10', 1, 0 ); // $ExpectError
+	scasum.ndarray( x.length, true, 1, 0 ); // $ExpectError
+	scasum.ndarray( x.length, false, 1, 0 ); // $ExpectError
+	scasum.ndarray( x.length, null, 1, 0 ); // $ExpectError
+	scasum.ndarray( x.length, undefined, 1, 0 ); // $ExpectError
+	scasum.ndarray( x.length, [], 1, 0 ); // $ExpectError
+	scasum.ndarray( x.length, {}, 1, 0 ); // $ExpectError
+	scasum.ndarray( x.length, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
-	scasum.ndarray( cx.length, cx, '10', 0 ); // $ExpectError
-	scasum.ndarray( cx.length, cx, true, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, cx, false, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, cx, null, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, cx, undefined, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, cx, [], 0 ); // $ExpectError
-	scasum.ndarray( cx.length, cx, {}, 0 ); // $ExpectError
-	scasum.ndarray( cx.length, cx, ( cx: number ): number => cx, 0 ); // $ExpectError
+	scasum.ndarray( x.length, x, '10', 0 ); // $ExpectError
+	scasum.ndarray( x.length, x, true, 0 ); // $ExpectError
+	scasum.ndarray( x.length, x, false, 0 ); // $ExpectError
+	scasum.ndarray( x.length, x, null, 0 ); // $ExpectError
+	scasum.ndarray( x.length, x, undefined, 0 ); // $ExpectError
+	scasum.ndarray( x.length, x, [], 0 ); // $ExpectError
+	scasum.ndarray( x.length, x, {}, 0 ); // $ExpectError
+	scasum.ndarray( x.length, x, ( x: number ): number => x, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
-	scasum.ndarray( cx.length, cx, 1, '10' ); // $ExpectError
-	scasum.ndarray( cx.length, cx, 1, true ); // $ExpectError
-	scasum.ndarray( cx.length, cx, 1, false ); // $ExpectError
-	scasum.ndarray( cx.length, cx, 1, null ); // $ExpectError
-	scasum.ndarray( cx.length, cx, 1, undefined ); // $ExpectError
-	scasum.ndarray( cx.length, cx, 1, [] ); // $ExpectError
-	scasum.ndarray( cx.length, cx, 1, {} ); // $ExpectError
-	scasum.ndarray( cx.length, cx, 1, ( cx: number ): number => cx ); // $ExpectError
+	scasum.ndarray( x.length, x, 1, '10' ); // $ExpectError
+	scasum.ndarray( x.length, x, 1, true ); // $ExpectError
+	scasum.ndarray( x.length, x, 1, false ); // $ExpectError
+	scasum.ndarray( x.length, x, 1, null ); // $ExpectError
+	scasum.ndarray( x.length, x, 1, undefined ); // $ExpectError
+	scasum.ndarray( x.length, x, 1, [] ); // $ExpectError
+	scasum.ndarray( x.length, x, 1, {} ); // $ExpectError
+	scasum.ndarray( x.length, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
 {
-	const cx = new Complex64Array( 10 );
+	const x = new Complex64Array( 10 );
 
 	scasum.ndarray(); // $ExpectError
-	scasum.ndarray( cx.length ); // $ExpectError
-	scasum.ndarray( cx.length, cx ); // $ExpectError
-	scasum.ndarray( cx.length, cx, 1 ); // $ExpectError
-	scasum.ndarray( cx.length, cx, 1, 0, 10 ); // $ExpectError
+	scasum.ndarray( x.length ); // $ExpectError
+	scasum.ndarray( x.length, x ); // $ExpectError
+	scasum.ndarray( x.length, x, 1 ); // $ExpectError
+	scasum.ndarray( x.length, x, 1, 0, 10 ); // $ExpectError
 }

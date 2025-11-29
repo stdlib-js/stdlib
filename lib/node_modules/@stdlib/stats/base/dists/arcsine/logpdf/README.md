@@ -261,7 +261,7 @@ int main( void ) {
 
 [pdf]: https://en.wikipedia.org/wiki/Probability_density_function
 
-[arcsine-distribution]: https://en.wikipedia.org/wiki/Uniform_distribution
+[arcsine-distribution]: https://en.wikipedia.org/wiki/Arcsine_distribution
 
 </section>
 

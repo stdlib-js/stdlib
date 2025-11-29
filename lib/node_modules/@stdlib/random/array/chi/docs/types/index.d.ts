@@ -185,7 +185,7 @@ interface Random extends PRNG {
 	* var x = zeros( 10, 'float64' );
 	* // returns <Float64Array>
 	*
-	* var out = chi( 2.0, out );
+	* var out = chi( 2.0, x );
 	* // returns <Float64Array>
 	*
 	* var bool = ( out === x );

@@ -167,7 +167,7 @@ We appreciate your contribution!
 ## Documentation Links
 
 -   [Contributing Guidelines][stdlib-contributing]
--   [Developtment Guide][stdlib-development]
+-   [Development Guide][stdlib-development]
 -   [Gitter channel][stdlib-gitter]
 -   [make rules for running examples][make-docs-examples]
 -   [make rules for running unit tests][make-docs-test]

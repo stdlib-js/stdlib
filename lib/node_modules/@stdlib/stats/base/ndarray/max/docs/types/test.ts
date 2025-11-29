@@ -53,5 +53,5 @@ import max = require( './index' );
 	});
 
 	max(); // $ExpectError
-	max( x, {} ); // $ExpectError
+	max( [ x ], {} ); // $ExpectError
 }

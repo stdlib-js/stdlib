@@ -122,7 +122,7 @@ logEachMap( 'kronecker(%0.4f,%0.4f) = %0.4f', x, 0.0, kroneckerDelta );
 ### Usage
 
 ```c
-#include "stdlib/math/base/special/kronecker_delta.h
+#include "stdlib/math/base/special/kronecker_delta.h"
 ```
 
 #### stdlib_base_kronecker_delta( i, j )

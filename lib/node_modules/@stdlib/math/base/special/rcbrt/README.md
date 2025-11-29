@@ -86,15 +86,16 @@ v = rcbrt( Infinity );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var rcbrt = require( '@stdlib/math/base/special/rcbrt' );
 
-var x;
-var i;
-for ( i = 0; i < 100; i++ ) {
-    x = discreteUniform( 0.0, 100.0 );
-    console.log( 'rcbrt(%d) = %d', x, rcbrt( x ) );
-}
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 100, 0, 100, opts );
+
+logEachMap( 'rcbrt(%d) = %0.4f', x, rcbrt );
 ```
 
 </section>

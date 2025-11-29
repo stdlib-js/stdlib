@@ -130,20 +130,17 @@ y = myquantile( 1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var quantile = require( '@stdlib/stats/base/dists/chisquare/quantile' );
 
-var k;
-var p;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var p = uniform( 20, 0.0, 1.0, opts );
+var k = uniform( 20, 0.0, 10.0, opts );
 
-for ( i = 0; i < 20; i++ ) {
-    p = randu();
-    k = randu() * 10.0;
-    y = quantile( p, k );
-    console.log( 'p: %d, k: %d, Q(p;k): %d', p.toFixed( 4 ), k.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'p: %0.4f, k: %0.4f, Q(p;k): %0.4f', p, k, quantile );
 ```
 
 </section>

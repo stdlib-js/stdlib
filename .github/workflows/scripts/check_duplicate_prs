@@ -42,21 +42,21 @@ repo_name="stdlib"
 # Label to add/remove for duplicate PRs:
 duplicate_label="Potential Duplicate"
 
-# Debug mode controlled by environment variable (defaults to false if not set)
+# Debug mode controlled by environment variable (defaults to false if not set):
 debug="${DEBUG:-false}"
 
-# Configure retries for API calls
+# Configure retries for API calls:
 max_retries=3
 retry_delay=2
 
 
 # FUNCTIONS #
 
-# Debug logging function
+# Debug logging function.
 #
 # $1 - debug message
 debug_log() {
-	# Only print debug messages if DEBUG environment variable is set to "true"
+	# Only print debug messages if DEBUG environment variable is set to "true":
 	if [ "$debug" = true ]; then
 		echo "[DEBUG] $1" >&2
 	fi
@@ -104,7 +104,7 @@ github_api() {
 		headers+=("-H" "Content-Type: application/json")
 	fi
 
-	# Add retry logic
+	# Add retry logic...
 	while [ $retry_count -lt $max_retries ] && [ "$success" = false ]; do
 		if [ $retry_count -gt 0 ]; then
 			echo "Retrying request (attempt $((retry_count+1))/${max_retries})..."
@@ -118,13 +118,13 @@ github_api() {
 			response=$(curl -s -w "%{http_code}" -X "${method}" "${headers[@]}" "${github_api_url}${endpoint}")
 		fi
 
-		# Extract status code (last 3 digits) and actual response (everything before)
+		# Extract status code (last 3 digits) and actual response (everything before):
 		status_code="${response: -3}"
 		response="${response:0:${#response}-3}"
 
 		debug_log "Status code: $status_code"
 
-		# Check if we got a successful response
+		# Check if we got a successful response:
 		if [[ $status_code -ge 200 && $status_code -lt 300 ]]; then
 			success=true
 		else
@@ -138,15 +138,15 @@ github_api() {
 		return 1
 	fi
 
-	# Validate that response is valid JSON if expected
+	# Validate that response is valid JSON if expected:
 	if ! echo "$response" | jq -e '.' > /dev/null 2>&1; then
 		echo "Warning: Response is not valid JSON: ${response}" >&2
-		# Return empty JSON object as fallback
+		# Return empty JSON object as fallback:
 		echo "{}"
 		return 0
 	fi
 
-	# Return the actual response data (without status code)
+	# Return the actual response data (without status code):
 	echo "$response"
 	return 0
 }
@@ -159,7 +159,7 @@ extract_resolved_issues() {
 
 	debug_log "Extracting resolved issues from PR body of length ${#body} chars"
 
-	# Handle empty body case
+	# Handle empty body case:
 	if [ -z "$body" ]; then
 		debug_log "PR body is empty, no issues to extract"
 		return 0
@@ -192,7 +192,7 @@ remove_label() {
 main() {
 	echo "Fetching open pull requests..."
 
-	# Get all open PRs with pagination:
+	# Get all open PRs with pagination...
 	open_prs="[]"
 	page=1
 
@@ -209,7 +209,7 @@ main() {
 		debug_log "Got $page_count PRs on page $page"
 
 		if [ "$page_count" -eq 0 ]; then
-			# No more results, break the loop
+			# No more results, break the loop:
 			debug_log "No more PRs, breaking pagination loop"
 			break
 		fi
@@ -236,7 +236,7 @@ main() {
 	declare -a issue_prs_values
 	declare -a labeled_prs_list
 
-	# Get all issues with the duplicate label in one API call
+	# Get all issues with the duplicate label in one API call:
 	echo "Fetching PRs with duplicate label..."
 	encoded_label=${duplicate_label// /%20}
 	labeled_prs_data=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/issues?labels=${encoded_label}&state=open&per_page=100")
@@ -253,7 +253,7 @@ main() {
 	fi
 	echo "Found ${#labeled_prs_list[@]} PRs with duplicate label"
 
-	# Process each PR to build issue mappings:
+	# Process each PR to build issue mappings...
 	echo "Processing PRs for issue references..."
 	debug_log "Starting to process $total_prs PRs for issue references"
 
@@ -285,7 +285,7 @@ main() {
 
 		for issue in $resolved_issues; do
 			debug_log "PR #$pr_number references issue #$issue"
-			# Find existing issue index
+			# Find existing issue index:
 			index=-1
 			for j in "${!issue_prs_keys[@]}"; do
 				if [ "${issue_prs_keys[$j]}" = "$issue" ]; then
@@ -307,7 +307,7 @@ main() {
 	debug_log "Finished processing all PRs for issue references"
 	debug_log "Found ${#issue_prs_keys[@]} unique issues referenced in PRs"
 
-	# Process the mappings to find duplicates:
+	# Process the mappings to find duplicates...
 	declare -a should_be_labeled_list
 
 	for i in "${!issue_prs_keys[@]}"; do

@@ -33,7 +33,7 @@ import { Complex128 } from '@stdlib/types/complex';
 * var real = require( '@stdlib/complex/float64/real' );
 * var imag = require( '@stdlib/complex/float64/imag' );
 *
-* var v = cceil( new Complex128( -4.2, 5.5 ) );
+* var v = cround( new Complex128( -4.2, 5.5 ) );
 * // returns <Complex128>
 *
 * var re = real( v );
