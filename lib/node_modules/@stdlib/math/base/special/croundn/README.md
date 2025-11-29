@@ -175,7 +175,7 @@ Rounds each component of a double-precision complex floating-point number to the
 
 stdlib_complex128_t z = stdlib_complex128( -3.141592653589793, 3.141592653589793 );
 
-stdlib_complex128_t out = stdlib_base_croundn( z );
+stdlib_complex128_t out = stdlib_base_croundn( z, -2 );
 
 double re = stdlib_complex128_real( out );
 // returns -3.14

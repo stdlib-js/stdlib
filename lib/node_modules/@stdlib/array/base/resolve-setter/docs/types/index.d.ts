@@ -201,8 +201,8 @@ declare function resolveSetter( x: Float32Array ): SetFloat32;
 * var resolveGetter = require( '@stdlib/array/base/resolve-getter' );
 * var Complex128Array = require( '@stdlib/array/complex128' );
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/array/real' );
-* var imag = require( '@stdlib/array/imag' );
+* var real = require( '@stdlib/complex/float64/real' );
+* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var arr = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 *
@@ -210,7 +210,7 @@ declare function resolveSetter( x: Float32Array ): SetFloat32;
 * set( arr, 1, new Complex128( 10.0, 11.0 ) );
 *
 * var get = resolveGetter( arr );
-* var v = get( arr, 2 );
+* var v = get( arr, 1 );
 * // returns <Complex128>
 *
 * var re = real( v );
@@ -231,8 +231,8 @@ declare function resolveSetter( x: Complex128Array ): SetComplex128;
 * var resolveGetter = require( '@stdlib/array/base/resolve-getter' );
 * var Complex64Array = require( '@stdlib/array/complex64' );
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/array/realf' );
-* var imagf = require( '@stdlib/array/imagf' );
+* var realf = require( '@stdlib/complex/float32/real' );
+* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var arr = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 *
@@ -240,7 +240,7 @@ declare function resolveSetter( x: Complex128Array ): SetComplex128;
 * set( arr, 1, new Complex64( 10.0, 11.0 ) );
 *
 * var get = resolveGetter( arr );
-* var v = get( arr, 2 );
+* var v = get( arr, 1 );
 * // returns <Complex64>
 *
 * var re = realf( v );

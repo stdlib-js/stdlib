@@ -80,11 +80,11 @@ rules[ 'getter-return' ] = 'error';
 /**
 * Never allow using an async function as a `Promise` executor.
 *
-* @name no-async-promise-executor)
+* @name no-async-promise-executor
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [no-async-promise-executor)]{@link https://eslint.org/docs/rules/no-async-promise-executor}
+* @see [no-async-promise-executor]{@link https://eslint.org/docs/rules/no-async-promise-executor}
 */
 rules[ 'no-async-promise-executor' ] = 'error';
 

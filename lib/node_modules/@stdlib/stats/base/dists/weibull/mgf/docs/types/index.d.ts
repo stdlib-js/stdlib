@@ -120,7 +120,7 @@ interface MGF {
 * // returns ~3150.149
 *
 * y = myMGF( 0.08 );
-* // returns ~2.137s
+* // returns ~2.137
 */
 declare var mgf: MGF;
 
