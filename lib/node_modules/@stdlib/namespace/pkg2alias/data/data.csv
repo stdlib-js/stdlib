@@ -26,7 +26,7 @@
 "@stdlib/utils/async/any-by",anyByAsync
 "@stdlib/utils/any-by-right",anyByRight
 "@stdlib/utils/async/any-by-right",anyByRightAsync
-"@stdlib/utils/any-in-by",anyInBy
+"@stdlib/object/any-in-by",anyInBy
 "@stdlib/utils/any-own-by",anyOwnBy
 "@stdlib/array/ones",aones
 "@stdlib/array/ones-like",aonesLike
