@@ -23,7 +23,7 @@
 import { float64ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Computes the median value of a sorted one-dimensional single-precision floating-point ndarray.
+* Computes the median value of a sorted one-dimensional double-precision floating-point ndarray.
 *
 * @param arrays - array-like object containing a sorted input ndarray
 * @returns median value

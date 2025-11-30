@@ -20,7 +20,7 @@ limitations under the License.
 
 # smeanlipw
 
-> Compute the [arithmetic mean][arithmetic-mean] of a one-dimensional double-precision floating-point ndarray using a one-pass trial mean algorithm with pairwise summation.
+> Compute the [arithmetic mean][arithmetic-mean] of a one-dimensional single-precision floating-point ndarray using a one-pass trial mean algorithm with pairwise summation.
 
 <section class="intro">
 

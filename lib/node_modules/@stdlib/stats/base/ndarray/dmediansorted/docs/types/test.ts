@@ -24,7 +24,7 @@ import dmediansorted = require( './index' );
 
 // TESTS //
 
-// The function returns a ndarray...
+// The function returns a number...
 {
 	const x = zeros( [ 10 ], {
 		'dtype': 'float64'

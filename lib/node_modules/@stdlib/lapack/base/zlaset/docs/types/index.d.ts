@@ -51,7 +51,7 @@ interface Routine {
 	* var beta = new Complex128( 3.0, 4.0 );
 	*
 	* zlaset( 'row-major', 'all', 2, 2, alpha, beta, A, 2 );
-	* // A => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+	* // A => <Complex128Array>[ 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 	*/
 	( order: Layout, uplo: string, M: number, N: number, alpha: Complex128, beta: Complex128, A: Complex128Array, LDA: number ): Complex128Array;
 
@@ -79,7 +79,7 @@ interface Routine {
 	* var beta = new Complex128( 3.0, 4.0 );
 	*
 	* zlaset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 0 );
-	* // A => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+	* // A => <Complex128Array>[ 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 	*/
 	ndarray( uplo: string, M: number, N: number, alpha: Complex128, beta: Complex128, A: Complex128Array, strideA1: number, strideA2: number, offsetA: number ): Complex128Array;
 }
@@ -106,7 +106,7 @@ interface Routine {
 * var beta = new Complex128( 3.0, 4.0 );
 *
 * zlaset( 'row-major', 'all', 2, 2, alpha, beta, A, 2 );
-* // A => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+* // A => <Complex128Array>[ 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
@@ -116,8 +116,8 @@ interface Routine {
 * var alpha = new Complex128( 1.0, 2.0 );
 * var beta = new Complex128( 3.0, 4.0 );
 *
-* zlaset.ndarray( 'all', 2, 2, A, 2, 1, 1 );
-* // A => <Complex128Array>[ 0.0, 0.0, 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+* zlaset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 1 );
+* // A => <Complex128Array>[ 0.0, 0.0, 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 */
 declare var zlaset: Routine;
 

@@ -51,7 +51,7 @@ interface Routine {
 	* var beta = new Complex64( 3.0, 4.0 );
 	*
 	* claset( 'row-major', 'all', 2, 2, alpha, beta, A, 2 );
-	* // A => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+	* // A => <Complex64Array>[ 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 	*/
 	( order: Layout, uplo: string, M: number, N: number, alpha: Complex64, beta: Complex64, A: Complex64Array, LDA: number ): Complex64Array;
 
@@ -79,7 +79,7 @@ interface Routine {
 	* var beta = new Complex64( 3.0, 4.0 );
 	*
 	* claset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 0 );
-	* // A => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+	* // A => <Complex64Array>[ 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 	*/
 	ndarray( uplo: string, M: number, N: number, alpha: Complex64, beta: Complex64, A: Complex64Array, strideA1: number, strideA2: number, offsetA: number ): Complex64Array;
 }
@@ -106,7 +106,7 @@ interface Routine {
 * var beta = new Complex64( 3.0, 4.0 );
 *
 * claset( 'row-major', 'all', 2, 2, alpha, beta, A, 2 );
-* // A => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+* // A => <Complex64Array>[ 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
@@ -116,8 +116,8 @@ interface Routine {
 * var alpha = new Complex64( 1.0, 2.0 );
 * var beta = new Complex64( 3.0, 4.0 );
 *
-* claset.ndarray( 'all', 2, 2, A, 2, 1, 1 );
-* // A => <Complex64Array>[ 0.0, 0.0, 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+* claset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 1 );
+* // A => <Complex64Array>[ 0.0, 0.0, 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 */
 declare var claset: Routine;
 

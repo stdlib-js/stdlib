@@ -20,7 +20,7 @@ limitations under the License.
 
 # meankbn2
 
-> Compute the [arithmetic mean][arithmetic-mean] of a one-dimensional ndarray using a second-order Kahan–Babuška algorithm.
+> Compute the [arithmetic mean][arithmetic-mean] of a one-dimensional ndarray using a second-order iterative Kahan–Babuška algorithm.
 
 <section class="intro">
 
@@ -53,7 +53,7 @@ var meankbn2 = require( '@stdlib/stats/base/ndarray/meankbn2' );
 
 #### meankbn2( arrays )
 
-Computes the [arithmetic mean][arithmetic-mean] of a one-dimensional ndarray using a second-order Kahan–Babuška algorithm.
+Computes the [arithmetic mean][arithmetic-mean] of a one-dimensional ndarray using a second-order iterative Kahan–Babuška algorithm.
 
 ```javascript
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
