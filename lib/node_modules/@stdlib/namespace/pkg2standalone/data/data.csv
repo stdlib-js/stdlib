@@ -2648,7 +2648,7 @@
 "@stdlib/utils/nonenumerable-property-names-in","@stdlib/utils-nonenumerable-property-names-in"
 "@stdlib/utils/nonenumerable-property-symbols","@stdlib/utils-nonenumerable-property-symbols"
 "@stdlib/utils/nonenumerable-property-symbols-in","@stdlib/utils-nonenumerable-property-symbols-in"
-"@stdlib/utils/none-own-by","@stdlib/utils-none-own-by"
+"@stdlib/object/none-own-by","@stdlib/object-none-own-by"
 "@stdlib/utils/nonindex-keys","@stdlib/utils-nonindex-keys"
 "@stdlib/utils/noop","@stdlib/utils-noop"
 "@stdlib/time/now","@stdlib/time-now"
