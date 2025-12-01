@@ -90,4 +90,4 @@ jobs:
       # Setup a terminal session:
       - name: 'Setup tmate session'
         # Pin action to full length commit SHA
-        uses: mxschmitt/action-tmate@7b6a61a73bbb9793cb80ad69b8dd8ac19261834c # v3.2.2
+        uses: mxschmitt/action-tmate@c0afd6f790e3a5564914980036ebf83216678101 # v3.2.2
