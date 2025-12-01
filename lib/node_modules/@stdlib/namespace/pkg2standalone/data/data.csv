@@ -27,7 +27,7 @@
 "@stdlib/utils/any-by-right","@stdlib/utils-any-by-right"
 "@stdlib/utils/async/any-by-right","@stdlib/utils-async-any-by-right"
 "@stdlib/object/any-in-by","@stdlib/object-any-in-by"
-"@stdlib/utils/any-own-by","@stdlib/utils-any-own-by"
+"@stdlib/object/any-own-by","@stdlib/object-any-own-by"
 "@stdlib/array/ones","@stdlib/array-ones"
 "@stdlib/array/ones-like","@stdlib/array-ones-like"
 "@stdlib/array/one-to","@stdlib/array-one-to"

@@ -421,3 +421,5 @@ declare var ctor: BinaryStrided1dDispatchConstructor;
 // EXPORTS //
 
 export = ctor;
+
+// eslint-doctest-alias: BinaryStrided1dDispatch

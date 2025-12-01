@@ -49,7 +49,7 @@
     > var x = {{alias:@stdlib/array/complex64}}( [ 1, 2, 3, 4 ] );
     > f( x, 1, new {{alias:@stdlib/complex/float32/ctor}}( 10.0, 11.0 ) );
     > var v = x.get( 1 )
-    <Complex64>[ 10.0, 11.0]
+    <Complex64>[ 10.0, 11.0 ]
 
     See Also
     --------
