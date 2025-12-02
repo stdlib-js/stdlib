@@ -67,7 +67,7 @@ interface Routine {
 	* var y = new Float32Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 	*
 	* srot.ndarray( 3, x, 2, 1, y, 2, 1, 0.8, 0.6 );
-	* // x => <Float32Array>[ 1.0, 6.4, 3.0, 9.2, 5.0, 12.0 ]
+	* // x => <Float32Array>[ 1.0, ~6.4, 3.0, ~9.2, 5.0, 12.0 ]
 	* // y => <Float32Array>[ 7.0, 5.2, 9.0, 5.6, 11.0, ~6.0 ]
 	*/
 	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number, c: number, s: number ): Float32Array;
@@ -92,7 +92,7 @@ interface Routine {
 * var y = new Float32Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 *
 * srot( 3, x, 2, y, 2, 0.8, 0.6 );
-* // x => <Float32Array>[ 5.0, 2.0, ~7.8, 4.0, ~10.6, 6.0 ]
+* // x => <Float32Array>[ ~5.0, 2.0, ~7.8, 4.0, ~10.6, 6.0 ]
 * // y => <Float32Array>[ 5.0, 8.0, ~5.4, 10.0, ~5.8, 12.0 ]
 *
 * @example

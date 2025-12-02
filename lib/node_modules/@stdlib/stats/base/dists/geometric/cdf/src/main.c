@@ -27,7 +27,7 @@
 *
 * @param x   input value
 * @param p   success probability
-* @return   evaluated CDF
+* @return    evaluated CDF
 *
 * @example
 * double y = stdlib_base_dists_geometric_cdf( 2.0, 0.5 );

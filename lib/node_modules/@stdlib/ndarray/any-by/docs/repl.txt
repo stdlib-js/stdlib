@@ -1,0 +1,94 @@
+
+{{alias}}( x[, options], predicate[, thisArg] )
+    Tests whether at least one element along one or more ndarray dimensions
+    passes a test implemented by a predicate function.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform a reduction. If not provided,
+        the function performs a reduction over all elements in a provided input
+        ndarray.
+
+    options.keepdims: boolean (optional)
+        Boolean indicating whether the reduced dimensions should be included in
+        the returned ndarray as singleton dimensions. Default: false.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Predicate function execution context.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray. When performing a reduction over all elements, the
+        function returns a zero-dimensional ndarray containing the result.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, -2.0 ], [ 3.0, -4.0 ] ] )
+    <ndarray>
+    > function f( v ) { return v > 0.0; };
+    > var out = {{alias}}( x, f )
+    <ndarray>
+    > out.get()
+    true
+
+
+{{alias}}.assign( x, y[, options], predicate[, thisArg] )
+    Tests whether at least one element along one or more ndarray dimensions
+    passes a test implemented by a predicate function and assigns the results to
+    a provided output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    y: ndarray
+        Output ndarray. The output shape must match the shape of the non-reduced
+        dimensions of the input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform a reduction. If not provided,
+        the function performs a reduction over all elements in a provided input
+        ndarray.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Predicate function execution context.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, -2.0 ], [ 3.0, -4.0 ] ] )
+    <ndarray>
+    > var y = {{alias:@stdlib/ndarray/empty}}( [], { 'dtype': 'bool' } )
+    <ndarray>
+    > function f( v ) { return v > 0.0; };
+    > var out = {{alias}}.assign( x, y, f )
+    <ndarray>
+    > var bool = ( y === out )
+    true
+    > out.get()
+    true
+
+    See Also
+    --------

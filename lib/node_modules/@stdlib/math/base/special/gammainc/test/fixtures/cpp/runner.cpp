@@ -341,10 +341,32 @@ int main( void ) {
 		exit( 1 );
 	}
 
-	// Generate fixture data:
+	// Small x and s:
 	rand_array_f64( x, len, 1.0, 40.0 );
 	rand_array_f64( s, len, 1.0, 40.0 );
-	generate( x, s, len, "output.json" );
+	generate( x, s, len, "small.json" );
+
+	// Medium x and s:
+	rand_array_f64( x, len, 40.0, 100.0 );
+	rand_array_f64( s, len, 40.0, 100.0 );
+	generate( x, s, len, "medium.json" );
+
+	// Large x and small s:
+	rand_array_f64( x, len, 100.0, 1000.0 );
+	rand_array_f64( s, len, 1.0, 50.0 );
+	generate( x, s, len, "large_x_small_s.json" );
+
+	// Large x and medium s:
+	rand_array_f64( x, len, 100.0, 1000.0 );
+	rand_array_f64( s, len, 50.0, 100.0 );
+	generate( x, s, len, "large_x_medium_s.json" );
+
+	// Large x and large s:
+
+	// NOTE: The following fixture generation is commented out as its generation was handled manually to avoid the overflowing of the gamma function for large values of `x` and `s`. If you wish to generate this fixture, you can uncomment the following lines and need to ensure proper exception handling in the `generate` function to handle potential overflow errors.
+	// rand_array_f64( x, len, 100.0, 1000.0 );
+	// rand_array_f64( s, len, 100.0, 1000.0 );
+	// generate( x, s, len, "large_x_large_s.json" );
 
 	// Free allocated memory:
 	free( x );

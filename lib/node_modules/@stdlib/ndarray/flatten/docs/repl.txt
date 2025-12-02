@@ -1,0 +1,49 @@
+
+{{alias}}( x[, options] )
+    Returns a flattened copy of an input ndarray.
+
+    The function always returns a copy of input ndarray data, even when an input
+    ndarray already has the desired number of dimensions.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.depth: integer (optional)
+        Maximum number of dimensions to flatten. By default, the function
+        flattens all input ndarray dimensions.
+
+    options.order: string (optional)
+        Order in which input ndarray elements should be flattened. The following
+        orders are supported:
+
+        - row-major: flatten in lexicographic order.
+        - column-major: flatten in colexicographic order.
+        - same: flatten according to the stated order of the input ndarray.
+        - any: flatten according to physical layout of the input ndarray data in
+        memory, regardless of the stated order of the input ndarray.
+
+        Default: 'row-major'.
+
+    options.dtype: string (optional)
+        Output ndarray data type. By default, the function returns an ndarray
+        having the same data type as the provided input ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+    > var y = {{alias}}( x );
+    > var arr = {{alias:@stdlib/ndarray/to-array}}( y )
+    [ 1.0, 2.0, 3.0, 4.0 ]
+
+    See Also
+    --------

@@ -4230,6 +4230,30 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 rules[ 'stdlib/no-multiple-empty-lines' ] = 'error';
 
 /**
+* Disallow usage of the built-in global `BigInt` literal syntax and constructor.
+*
+* @name no-builtin-big-int
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var x = BigInt( 123 );
+* console.log( typeof x );
+* // => 'bigint'
+*
+* @example
+* // Good...
+* var BigInt = require( '@stdlib/bigint/ctor' );
+*
+* var x = BigInt( 123 );
+* console.log( typeof x );
+* // => 'bigint'
+*/
+rules[ 'stdlib/no-builtin-big-int' ] = 'error';
+
+/**
 * Disallow usage of the built-in global `Math` object.
 *
 * @name no-builtin-math
@@ -4309,6 +4333,45 @@ rules[ 'stdlib/no-dynamic-exports' ] = 'error';
 * var special = require( '@stdlib/math/base/special' );
 */
 rules[ 'stdlib/no-nested-require' ] = 'error';
+
+/**
+* Enforce moving inner function declarations to the highest possible scope.
+*
+* @name no-unnecessary-nested-functions
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* function outer() {
+*     function inner() {
+*         return 42;
+*     }
+*     return inner();
+* }
+*
+* @example
+* // Good...
+* function inner() {
+*     return 42;
+* }
+*
+* function outer() {
+*     return inner();
+* }
+*
+* @example
+* // Good (uses outer scope variable)...
+* function outer( x ) {
+*     var multiplier = 2;
+*     function inner() {
+*         return x * multiplier;
+*     }
+*     return inner();
+* }
+*/
+rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'error';
 
 /**
 * Disallow the use of the `new Array()` constructor.
@@ -4583,6 +4646,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'Boolean',
 		'Buffer', // Node.js
 		'DataView',
+		'Float16Array', // ES16/ES2025
 		'Float32Array',
 		'Float64Array',
 		'Function',

@@ -144,10 +144,10 @@ for ( x = 0; x < 10; x++ ) {
 Evaluates the [beta function][beta-function].
 
 ```c
-double out = stdlib_base_beta( 1.0, 1,0 );
+double out = stdlib_base_beta( 1.0, 1.0 );
 // returns 1.0
 
-out = stdlib_base_beta( 5.0, 0.2);
+out = stdlib_base_beta( 5.0, 0.2 );
 // returns ~3.382
 ```
 
@@ -190,7 +190,7 @@ int main( void ) {
     int i;
     int j;
     for ( i = 0; i < 5; i++ ) {
-        for ( j = 0; j < 5; j++ ){
+        for ( j = 0; j < 5; j++ ) {
             out = stdlib_base_beta( x[ i ], y[ j ] );
             printf ( "x: %lf, y: %lf, out: %lf\n", x[ i ], y[ j ], out );
         }

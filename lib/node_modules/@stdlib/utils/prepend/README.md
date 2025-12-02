@@ -42,7 +42,7 @@ var prepend = require( '@stdlib/utils/prepend' );
 
 #### prepend( collection1, collection2 )
 
-Adds elements from one `collection` to the beginning of another `collection`. A `collection` may be either an [`Array`][mdn-array], [`Typed Array`][mdn-typed-array], or an array-like [`Object`][mdn-object] (i.e., an [`Object`][mdn-object] having a valid writable `length` property). 
+Adds elements from one `collection` to the beginning of another `collection`. A `collection` may be either an [`Array`][mdn-array], [`Typed Array`][mdn-typed-array], or an array-like [`Object`][mdn-object] (i.e., an [`Object`][mdn-object] having a valid writable `length` property).
 
 ```javascript
 var arr = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];

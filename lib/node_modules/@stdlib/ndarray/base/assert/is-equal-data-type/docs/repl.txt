@@ -1,0 +1,30 @@
+
+{{alias}}( v1, v2 )
+    Tests whether two values are equal ndarray data types.
+
+    Parameters
+    ----------
+    v1: any
+        First input value.
+
+    v2: any
+        Second input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two values are equal ndarray data types.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'float64', 'float64' )
+    true
+    > var dt = new {{alias:@stdlib/ndarray/dtype-ctor}}( 'float64' );
+    > bool = {{alias}}( 'float64', dt )
+    true
+    > bool = {{alias}}( 'int16', 'int32' )
+    false
+
+    See Also
+    --------
+

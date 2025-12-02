@@ -124,7 +124,7 @@ interface Quantile {
 * // returns ~0.713
 *
 * y = myQuantile( 0.4 );
-* // returns ~0.5
+* // returns ~0.433
 */
 declare var quantile: Quantile;
 
