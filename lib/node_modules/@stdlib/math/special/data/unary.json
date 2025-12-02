@@ -11541,7 +11541,140 @@
     ]
   },
   "@stdlib/math/base/special/cinvf": {},
-  "@stdlib/math/base/special/cinv": {},
+  "@stdlib/math/base/special/cinv": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "cinv",
+    "alias": "cinv",
+    "pkg_desc": "compute the inverse of a double-precision complex floating-point number",
+    "desc": "computes the inverse of a double-precision complex floating-point number",
+    "short_desc": "inverse of a complex number",
+    "parameters": [
+      {
+        "name": "z",
+        "desc": "input value",
+        "type": {
+          "javascript": "Complex128",
+          "jsdoc": "Complex128",
+          "c": "stdlib_complex128_t",
+          "dtype": "complex128"
+        },
+        "domain": null,
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            [
+              -10,
+              10
+            ],
+            [
+              -10,
+              10
+            ]
+          ]
+        },
+        "example_values": [
+          {
+            "re": 2,
+            "im": 4
+          },
+          {
+            "re": 1,
+            "im": 1
+          },
+          {
+            "re": -1,
+            "im": -1
+          },
+          {
+            "re": 3,
+            "im": -2
+          },
+          {
+            "re": -2,
+            "im": 3
+          },
+          {
+            "re": 5,
+            "im": 0
+          },
+          {
+            "re": 0,
+            "im": 5
+          },
+          {
+            "re": -4,
+            "im": 2
+          },
+          {
+            "re": 1.5,
+            "im": -2.5
+          },
+          {
+            "re": -3.5,
+            "im": 1.5
+          },
+          {
+            "re": 2.2,
+            "im": 3.3
+          },
+          {
+            "re": -1.1,
+            "im": -2.2
+          },
+          {
+            "re": 4.5,
+            "im": -1.5
+          },
+          {
+            "re": -2.5,
+            "im": 4.5
+          },
+          {
+            "re": 3.7,
+            "im": 2.1
+          },
+          {
+            "re": -5.2,
+            "im": -3.8
+          },
+          {
+            "re": 1.8,
+            "im": 4.2
+          },
+          {
+            "re": -3.3,
+            "im": 1.9
+          },
+          {
+            "re": 6.1,
+            "im": -2.7
+          },
+          {
+            "re": -4.4,
+            "im": 5.5
+          }
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "result",
+      "type": {
+        "javascript": "Complex128",
+        "jsdoc": "Complex128",
+        "c": "stdlib_complex128_t",
+        "dtype": "complex128"
+      }
+    },
+    "keywords": [
+      "cinv",
+      "inv",
+      "inverse",
+      "reciprocal",
+      "complex",
+      "cmplx"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/lnf": {
     "$schema": "math/base@v1.0",
     "base_alias": "ln",
