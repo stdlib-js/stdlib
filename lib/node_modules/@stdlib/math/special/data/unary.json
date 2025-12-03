@@ -9788,7 +9788,141 @@
       "math.floor"
     ]
   },
-  "@stdlib/math/base/special/cfloorf": {},
+  "@stdlib/math/base/special/cfloorf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "cfloor",
+    "alias": "cfloorf",
+    "pkg_desc": "round each component of a single-precision complex floating-point number toward negative infinity",
+    "desc": "rounds each component a single-precision complex floating-point number toward negative infinity",
+    "short_desc": "",
+    "parameters": [
+      {
+        "name": "z",
+        "desc": "input value",
+        "type": {
+          "javascript": "Complex64",
+          "jsdoc": "Complex64",
+          "c": "stdlib_complex64_t",
+          "dtype": "complex64"
+        },
+        "domain": null,
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            [
+              -10,
+              10
+            ],
+            [
+              -10,
+              10
+            ]
+          ]
+        },
+        "example_values": [
+          {
+            "re": -3.14,
+            "im": -1.5
+          },
+          {
+            "re": 0,
+            "im": 0
+          },
+          {
+            "re": -1.5,
+            "im": 2.5
+          },
+          {
+            "re": 2.5,
+            "im": -1.5
+          },
+          {
+            "re": 0,
+            "im": -3.7
+          },
+          {
+            "re": 4.2,
+            "im": 0
+          },
+          {
+            "re": 21.2,
+            "im": 3
+          },
+          {
+            "re": 11,
+            "im": -5
+          },
+          {
+            "re": 33,
+            "im": -14.67
+          },
+          {
+            "re": -42,
+            "im": 9.3
+          },
+          {
+            "re": -3,
+            "im": 3
+          },
+          {
+            "re": 73,
+            "im": 31
+          },
+          {
+            "re": -2.45,
+            "im": 1.23
+          },
+          {
+            "re": 2.45,
+            "im": -1.23
+          },
+          {
+            "re": 1.77,
+            "im": -3.14
+          },
+          {
+            "re": -7.5,
+            "im": 8.2
+          },
+          {
+            "re": 5.5,
+            "im": -12.3
+          },
+          {
+            "re": -15.8,
+            "im": 0.4
+          },
+          {
+            "re": 0.99,
+            "im": -0.99
+          },
+          {
+            "re": -8.4,
+            "im": 6.6
+          }
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "result",
+      "type": {
+        "javascript": "Complex64",
+        "jsdoc": "Complex64",
+        "c": "stdlib_complex64_t",
+        "dtype": "complex64"
+      }
+    },
+    "keywords": [
+      "floor",
+      "cfloor",
+      "round",
+      "complex",
+      "cmplx"
+    ],
+    "extra_keywords": [
+      "math.floor"
+    ]
+  },
   "@stdlib/math/base/special/cfloor": {
     "$schema": "math/base@v1.0",
     "base_alias": "cfloor",
@@ -11540,7 +11674,140 @@
       "math.pow"
     ]
   },
-  "@stdlib/math/base/special/cinvf": {},
+  "@stdlib/math/base/special/cinvf": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "cinv",
+    "alias": "cinvf",
+    "pkg_desc": "compute the inverse of a single-precision complex floating-point number",
+    "desc": "computes the inverse of a single-precision complex floating-point number",
+    "short_desc": "inverse of a single-precision complex number",
+    "parameters": [
+      {
+        "name": "z",
+        "desc": "input value",
+        "type": {
+          "javascript": "Complex64",
+          "jsdoc": "Complex64",
+          "c": "stdlib_complex64_t",
+          "dtype": "complex64"
+        },
+        "domain": null,
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            [
+              -10,
+              10
+            ],
+            [
+              -10,
+              10
+            ]
+          ]
+        },
+        "example_values": [
+          {
+            "re": 2,
+            "im": 4
+          },
+          {
+            "re": 1,
+            "im": 1
+          },
+          {
+            "re": -1,
+            "im": -1
+          },
+          {
+            "re": 0.5,
+            "im": 0.5
+          },
+          {
+            "re": 3,
+            "im": -4
+          },
+          {
+            "re": -2,
+            "im": 3
+          },
+          {
+            "re": 1,
+            "im": -2
+          },
+          {
+            "re": -3,
+            "im": 2
+          },
+          {
+            "re": 4,
+            "im": 3
+          },
+          {
+            "re": -5,
+            "im": -2
+          },
+          {
+            "re": 2.5,
+            "im": 1.5
+          },
+          {
+            "re": -1.5,
+            "im": 2.5
+          },
+          {
+            "re": 0.25,
+            "im": 0.75
+          },
+          {
+            "re": 1.75,
+            "im": -1.25
+          },
+          {
+            "re": -0.5,
+            "im": 1
+          },
+          {
+            "re": 3.5,
+            "im": 2.5
+          },
+          {
+            "re": -2.5,
+            "im": -3.5
+          },
+          {
+            "re": 1.25,
+            "im": 0.75
+          },
+          {
+            "re": -4,
+            "im": 1
+          },
+          {
+            "re": 0.1,
+            "im": 0.2
+          }
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "result",
+      "type": {
+        "javascript": "Complex64",
+        "jsdoc": "Complex64",
+        "c": "stdlib_complex64_t",
+        "dtype": "complex64"
+      }
+    },
+    "keywords": [
+      "cinv",
+      "inv",
+      "inverse",
+      "reciprocal",
+      "complex",
+      "cmplx"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/cinv": {
     "$schema": "math/base@v1.0",
     "base_alias": "cinv",
