@@ -2984,7 +2984,7 @@
 "@stdlib/utils/some-by-right","@stdlib/utils-some-by-right"
 "@stdlib/utils/async/some-by-right","@stdlib/utils-async-some-by-right"
 "@stdlib/object/some-in-by","@stdlib/object-some-in-by"
-"@stdlib/utils/some-own-by","@stdlib/utils-some-own-by"
+"@stdlib/object/some-own-by","@stdlib/object-some-own-by"
 "@stdlib/datasets/sotu","@stdlib/datasets-sotu"
 "@stdlib/datasets/spache-revised","@stdlib/datasets-spache-revised"
 "@stdlib/datasets/spam-assassin","@stdlib/datasets-spam-assassin"
