@@ -18,7 +18,6 @@ limitations under the License.
 
 -->
 
-
 # JavaScript Style Guide
 
 > _An opinionated style guide for writing JavaScript._
