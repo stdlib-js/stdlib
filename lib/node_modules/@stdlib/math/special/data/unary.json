@@ -7133,7 +7133,141 @@
       "math.sin"
     ]
   },
-  "@stdlib/math/base/special/cphasef": {},
+  "@stdlib/math/base/special/cphasef": {
+    "$schema": "math/base@v1.0",
+    "base_alias": "cphase",
+    "alias": "cphasef",
+    "pkg_desc": "compute the argument of a single-precision complex floating-point number in radians",
+    "desc": "computes the argument of a single-precision complex floating-point number in radians",
+    "short_desc": "argument of a complex number",
+    "parameters": [
+      {
+        "name": "z",
+        "desc": "input value",
+        "type": {
+          "javascript": "Complex64",
+          "jsdoc": "Complex64",
+          "c": "stdlib_complex64_t",
+          "dtype": "complex64"
+        },
+        "domain": null,
+        "rand": {
+          "prng": "random/base/uniform",
+          "parameters": [
+            [
+              -10,
+              10
+            ],
+            [
+              -10,
+              10
+            ]
+          ]
+        },
+        "example_values": [
+          {
+            "re": 5,
+            "im": 3
+          },
+          {
+            "re": -5,
+            "im": 3
+          },
+          {
+            "re": 5,
+            "im": -3
+          },
+          {
+            "re": -5,
+            "im": -3
+          },
+          {
+            "re": 1,
+            "im": 1
+          },
+          {
+            "re": -1,
+            "im": 1
+          },
+          {
+            "re": 1,
+            "im": -1
+          },
+          {
+            "re": -1,
+            "im": -1
+          },
+          {
+            "re": 3,
+            "im": 4
+          },
+          {
+            "re": -3,
+            "im": 4
+          },
+          {
+            "re": 0,
+            "im": 1
+          },
+          {
+            "re": 0,
+            "im": -1
+          },
+          {
+            "re": 1,
+            "im": 0
+          },
+          {
+            "re": -1,
+            "im": 0
+          },
+          {
+            "re": 2,
+            "im": 2
+          },
+          {
+            "re": -2,
+            "im": 2
+          },
+          {
+            "re": 4,
+            "im": 3
+          },
+          {
+            "re": 6,
+            "im": 8
+          },
+          {
+            "re": 7,
+            "im": 24
+          },
+          {
+            "re": 0.5,
+            "im": 0.5
+          }
+        ]
+      }
+    ],
+    "returns": {
+      "desc": "argument in radians",
+      "type": {
+        "javascript": "number",
+        "jsdoc": "number",
+        "c": "float",
+        "dtype": "float32"
+      }
+    },
+    "keywords": [
+      "cphase",
+      "phase",
+      "argument",
+      "arg",
+      "angle",
+      "complex",
+      "cmplx"
+    ],
+    "extra_keywords": []
+  },
   "@stdlib/math/base/special/cphase": {
     "$schema": "math/base@v1.0",
     "base_alias": "cphase",
