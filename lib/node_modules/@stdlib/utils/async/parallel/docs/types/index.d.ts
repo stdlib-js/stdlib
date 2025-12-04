@@ -244,8 +244,6 @@ interface Parallel {
 * @param clbk - callback to invoke upon completion
 *
 * @example
-* var parallel = require( '@stdlib/utils/async/parallel' );
-*
 * function foo( clbk ) {
 *     setTimeout( onTimeout, 300 );
 *     function onTimeout() {

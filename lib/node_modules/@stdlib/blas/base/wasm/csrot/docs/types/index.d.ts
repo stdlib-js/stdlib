@@ -434,10 +434,10 @@ interface Routine extends ModuleWrapper {
 	* mod.read( cyptr, viewY );
 	*
 	* console.log( reinterpretComplex64( viewY, 0 ) );
-	* // => <Float32Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8, ~-5.4, -6 ]
+	* // => <Float32Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4, -3.0, ~-3.6, ~-4.2, ~-4.8, ~-5.4, -6.0 ]
 	*
 	* console.log( reinterpretComplex64( viewX, 0 ) );
-	* // => <Float32Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4, ~7.2, 8 ]
+	* // => <Float32Array>[ ~0.8, ~1.6, ~2.4, ~3.2, 4.0, ~4.8, ~5.6, ~6.4, ~7.2, 8.0 ]
 	*/
 	Module: ModuleConstructor;
 }

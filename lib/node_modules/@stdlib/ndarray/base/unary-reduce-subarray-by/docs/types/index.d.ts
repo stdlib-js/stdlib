@@ -260,7 +260,7 @@ declare function unaryReduceSubarrayBy<T = unknown, U = unknown, V = unknown, W 
 * };
 *
 * // Perform a reduction:
-* unaryReduceSubarrayBy( everyBy, [ x, y ], [ 2, 3 ], {}, clbk );
+* unaryReduceSubarrayBy( everyBy, [ x, y ], [ 2, 3 ], clbk );
 *
 * var arr = ndarray2array( y.data, y.shape, y.strides, y.offset, y.order );
 * // returns [ [ true, false, true ] ]
