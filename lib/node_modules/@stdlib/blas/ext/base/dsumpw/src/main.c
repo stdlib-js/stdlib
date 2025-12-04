@@ -82,8 +82,9 @@ double API_SUFFIX(stdlib_strided_dsumpw_ndarray)( const CBLAS_INT N, const doubl
 	}
 	if ( N < 8 ) {
 		// Use simple summation...
-		sum = 0.0;
-		for ( i = 0; i < N; i++ ) {
+		sum = X[ ix ];
+		ix += strideX;
+		for ( i = 1; i < N; i++ ) {
 			sum += X[ ix ];
 			ix += strideX;
 		}
@@ -118,7 +119,7 @@ double API_SUFFIX(stdlib_strided_dsumpw_ndarray)( const CBLAS_INT N, const doubl
 		sum = ( (s0+s1) + (s2+s3) ) + ( (s4+s5) + (s6+s7) );
 
 		// Clean-up loop...
-		for (; i < N; i++ ) {
+		for ( ; i < N; i++ ) {
 			sum += X[ ix ];
 			ix += strideX;
 		}

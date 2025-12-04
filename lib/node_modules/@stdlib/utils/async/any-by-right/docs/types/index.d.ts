@@ -260,7 +260,7 @@ interface AnyByRightAsync {
 	* };
 	*
 	* // Create a `anyByRightAsync` function which invokes the predicate function for each collection element sequentially:
-	* var anyByRightAsync = factory( opts, predicate );
+	* var anyByRight = anyByRightAsync.factory( opts, predicate );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -281,7 +281,7 @@ interface AnyByRightAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* anyByRightAsync( files, done );
+	* anyByRight( files, done );
 	*/
 	factory<T = unknown, V = unknown>( options: Options<T, V>, predicate: Predicate<T, V> ): FactoryFunction<T>;
 
@@ -313,7 +313,7 @@ interface AnyByRightAsync {
 	*     }
 	* }
 	*
-	* var anyByRightAsync = factory( predicate );
+	* var anyByRight = anyByRightAsync.factory( predicate );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -334,7 +334,7 @@ interface AnyByRightAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* anyByRightAsync( files, done );
+	* anyByRight( files, done );
 	*/
 	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>;
 }

@@ -42,8 +42,6 @@ interface Routine {
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var A = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var B = new Complex64Array( 4 );
@@ -51,13 +49,7 @@ interface Routine {
 	* clacpy( 'row-major', 'all', 2, 2, A, 2, B, 2 );
 	*
 	* var z = B.get( 0 );
-	* // returns <Complex64>
-	*
-	* var v = realf( z );
-	* // returns 1.0
-	*
-	* v = imagf( z );
-	* // returns 2.0
+	* // returns <Complex64>[ 1.0, 2.0 ]
 	*/
 	( order: Layout, uplo: string, M: number, N: number, A: Complex64Array, LDA: number, B: Complex64Array, LDB: number ): Complex64Array;
 
@@ -79,8 +71,6 @@ interface Routine {
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var A = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ] );
 	* var B = new Complex64Array( 12 );
@@ -88,13 +78,7 @@ interface Routine {
 	* clacpy.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
 	*
 	* var z = B.get( 2 );
-	* // returns <Complex64>
-	*
-	* var v = realf( z );
-	* // returns 3.0
-	*
-	* v = imagf( z );
-	* // returns 4.0
+	* // returns <Complex64>[ 3.0, 4.0 ]
 	*/
 	ndarray( uplo: string, M: number, N: number, A: Complex64Array, strideA1: number, strideA2: number, offsetA: number, B: Complex64Array, strideB1: number, strideB2: number, offsetB: number ): Complex64Array;
 }
@@ -114,8 +98,6 @@ interface Routine {
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var A = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 * var B = new Complex64Array( 4 );
@@ -123,18 +105,10 @@ interface Routine {
 * clacpy( 'row-major', 'all', 2, 2, A, 2, B, 2 );
 *
 * var z = B.get( 0 );
-* // returns <Complex64>
-*
-* var v = realf( z );
-* // returns 1.0
-*
-* v = imagf( z );
-* // returns 2.0
+* // returns <Complex64>[ 1.0, 2.0 ]
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var A = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ] );
 * var B = new Complex64Array( 12 );
@@ -142,13 +116,7 @@ interface Routine {
 * clacpy.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
 *
 * var z = B.get( 2 );
-* // returns <Complex64>
-*
-* var v = realf( z );
-* // returns 3.0
-*
-* v = imagf( z );
-* // returns 4.0
+* // returns <Complex64>[ 3.0, 4.0 ]
 */
 declare var clacpy: Routine;
 

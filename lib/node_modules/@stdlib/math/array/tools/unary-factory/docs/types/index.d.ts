@@ -74,7 +74,7 @@ interface UnaryFunction<T, U> {
 	*
 	* var x = [ -1.0, -2.0, -3.0 ];
 	*
-	* var y = abs.apply( x );
+	* var y = abs( x );
 	* // returns [ 1.0, 2.0, 3.0 ]
 	*/
 	( x: InputArray<T>, options?: Options ): OutputArray<U>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output array data type is dependent on how `x` interacts with output data type policy and whether that policy has been overridden by `options.dtype`. In principle, as well, based on the policy, it is possible to know more exactly which `InputArray` types are actually allowed.

@@ -35,7 +35,7 @@ function indicator( v: string ): string {
 {
 	const x = [ 'foo', 'bar' ];
 
-	groupIndicesBy( x, indicator ); // $ExpectType IndicesResults<Key, number>
+	groupIndicesBy( x, indicator ); // $ExpectType IndicesResults<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array...

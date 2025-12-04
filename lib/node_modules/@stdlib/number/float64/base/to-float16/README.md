@@ -1,0 +1,98 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2025 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# toFloat16
+
+> Convert a [double-precision floating-point number][ieee754] to the nearest [half-precision floating-point number][half-precision-floating-point-format].
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var float64ToFloat16 = require( '@stdlib/number/float64/base/to-float16' );
+```
+
+#### float64ToFloat16( x )
+
+Converts a [double-precision floating-point number][ieee754] to the nearest [half-precision floating-point number][ieee754].
+
+```javascript
+var y = float64ToFloat16( 1.337 );
+// returns 1.3369140625
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   This function may be used as a polyfill for the ES2025 built-in [`Math.f16round`][math-f16round].
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var float64ToFloat16 = require( '@stdlib/number/float64/base/to-float16' );
+
+// Generate an array of random numbers:
+var x = uniform( 100, 0.0, 100.0 );
+
+// Convert each double-precision floating-point number to the nearest half-precision floating-point number:
+logEachMap( 'float64: %f => float16: %f', x, float64ToFloat16 );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
+
+[half-precision-floating-point-format]: https://en.wikipedia.org/wiki/Half-precision_floating-point_format
+
+[math-f16round]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/f16round
+
+</section>
+
+<!-- /.links -->

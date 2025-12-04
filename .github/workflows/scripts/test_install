@@ -177,7 +177,7 @@ install_test() {
 		echo '' >> "${log_file}" 2>&1
 		echo 'Successfully ran test script.' >> "${log_file}" 2>&1
 
-		# FIMXE: uncomment once we've figured out our package.json `exports` strategy...
+		# FIXME: uncomment once we've figured out our package.json `exports` strategy...
 		# echo 'Creating test script (import individual package)...' >> "${log_file}" 2>&1
 		# echo 'import sin from "@stdlib/math/base/special/sin"; console.log( sin( 3.14 ) );' > "${install_dir}/script.mjs"
 		# echo 'script:' >> "${log_file}" 2>&1

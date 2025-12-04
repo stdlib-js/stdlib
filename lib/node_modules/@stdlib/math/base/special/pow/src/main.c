@@ -214,7 +214,7 @@ static double y_is_infinite( const double x, const double y ) {
 	if ( x == 1.0 ) {
 		return 1.0;
 	}
-	// (|x| > 1 && y == NINF) || (|x| < 1 && y === PINF)
+	// (|x| > 1 && y == NINF) || (|x| < 1 && y == PINF)
 	if ( ( stdlib_base_abs( x ) < 1.0 ) == ( y == STDLIB_CONSTANT_FLOAT64_PINF ) ) {
 		return 0.0;
 	}

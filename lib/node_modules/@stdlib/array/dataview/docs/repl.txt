@@ -29,7 +29,7 @@
 
 
 {{alias}}.prototype.buffer
-    Read-only property which returns the underyling array buffer.
+    Read-only property which returns the underlying array buffer.
 
     Examples
     --------

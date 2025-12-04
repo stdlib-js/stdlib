@@ -1,0 +1,12 @@
+
+{{alias}}
+    Catalan's constant.
+
+    Examples
+    --------
+    > {{alias}}
+    0.9159656167030334
+
+    See Also
+    --------
+

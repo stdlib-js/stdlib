@@ -54,7 +54,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * // returns [ 3, 2, 2 ]
 *
 * var out = broadcastArrays( [ x1, y1 ] );
-* // returns <ndarray>
+* // returns [ <ndarray>, <ndarray> ]
 *
 * var x2 = out[ 0 ];
 * // returns <ndarray>

@@ -41,15 +41,15 @@ interface Quantile {
 	*
 	* @example
 	* var y = quantile( 0.5, 3.0, 2.0 );
-	* // returns ~0.0644
+	* // returns ~1.908
 	*
 	* @example
 	* var y = quantile( 0.9, 17.0, 2.0 );
-	* // returns ~0.913
+	* // returns ~11.237
 	*
 	* @example
 	* var y = quantile( 0.5, 3.0, 2.0, 2 );
-	* // returns ~0.01
+	* // returns ~2.549
 	*/
 	( p: number, r: number, v: number, nranges?: number ): number;
 
@@ -63,14 +63,14 @@ interface Quantile {
 	* @returns quantile function
 	*
 	* @example
-	* var quantile = factory( 3.0, 3.0 );
-	* var y = quantile( 0.5 );
+	* var myquantile = quantile.factory( 3.0, 3.0 );
+	* var y = myquantile( 0.5 );
 	* // returns ~1.791
 	*
-	* y = quantile( 0.8 );
+	* y = myquantile( 0.8 );
 	* // returns ~3.245
 	*
-	* y = quantile( 1.0 );
+	* y = myquantile( 1.0 );
 	* // returns Infinity
 	*/
 	factory( r: number, v: number, nranges?: number ): Unary;
