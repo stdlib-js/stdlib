@@ -305,7 +305,7 @@ declare function empty( shape: Shape | number, options: Float32Options ): float3
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': complex128'
+*     'dtype': 'complex128'
 * });
 * // returns <ndarray>
 *
@@ -330,7 +330,7 @@ declare function empty( shape: Shape | number, options: Complex128Options ): com
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': complex64'
+*     'dtype': 'complex64'
 * });
 * // returns <ndarray>
 *
@@ -380,7 +380,7 @@ declare function empty( shape: Shape | number, options: Int32Options ): int32nda
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': int16'
+*     'dtype': 'int16'
 * });
 * // returns <ndarray>
 *
@@ -505,7 +505,7 @@ declare function empty( shape: Shape | number, options: Uint8Options ): uint8nda
 *
 * @example
 * var arr = empty( [ 2, 2 ], {
-*     'dtype': uint8c'
+*     'dtype': 'uint8c'
 * });
 * // returns <ndarray>
 *

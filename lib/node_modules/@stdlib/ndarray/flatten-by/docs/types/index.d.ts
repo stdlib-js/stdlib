@@ -195,11 +195,11 @@ declare function flattenBy<T extends ComplexLike = ComplexLike, U extends typedn
 * var x = ndarray( 'uint8c', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var y = flattenBy( x, scale );
+* var y = flattenBy( x, invert );
 * // returns <ndarray>
 *
 * var arr = ndarray2array( y );
-* // returns [ false, true, false, true, false, true ]
+* // returns [ 0, 1, 0, 1, 0, 1 ]
 */
 declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolean>, ThisArg = unknown>( x: T, fcn: Callback<boolean, T, boolean, ThisArg>, thisArg?: ThisParameterType<Callback<boolean, T, boolean, ThisArg>> ): T;
 
@@ -347,11 +347,11 @@ declare function flattenBy<T extends ComplexLike = ComplexLike, U extends typedn
 *     'depth': 2
 * };
 *
-* var y = flattenBy( x, opts, scale );
+* var y = flattenBy( x, opts, invert );
 * // returns <ndarray>
 *
 * var arr = ndarray2array( y );
-* // returns [ false, true, false, true, false, true ]
+* // returns [ 0, 1, 0, 1, 0, 1 ]
 */
 declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolean>, ThisArg = unknown>( x: T, options: BaseOptions, fcn: Callback<boolean, T, boolean, ThisArg>, thisArg?: ThisParameterType<Callback<boolean, T, boolean, ThisArg>> ): T;
 

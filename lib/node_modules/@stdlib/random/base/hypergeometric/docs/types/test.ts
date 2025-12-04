@@ -62,8 +62,8 @@ import hypergeometric = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	hypergeometric.factory( 4, 2, 2 ); // $ExpectType NullaryFunction
-	hypergeometric.factory(); // $ExpectType BinaryFunction
-	hypergeometric.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	hypergeometric.factory(); // $ExpectType TernaryFunction
+	hypergeometric.factory( { 'copy': false } ); // $ExpectType TernaryFunction
 }
 
 // The `factory` method returns a function which returns a number...
@@ -180,14 +180,14 @@ import hypergeometric = require( './index' );
 	hypergeometric.factory( 5, 3, 2, { 'prng': null } ); // $ExpectError
 	hypergeometric.factory( 5, 3, 2, { 'prng': [] } ); // $ExpectError
 	hypergeometric.factory( 5, 3, 2, { 'prng': {} } ); // $ExpectError
-	hypergeometric.factory( 5, 3, 2, { 'prng': true ); // $ExpectError
+	hypergeometric.factory( 5, 3, 2, { 'prng': true } ); // $ExpectError
 
 	hypergeometric.factory( { 'prng': 123 } ); // $ExpectError
 	hypergeometric.factory( { 'prng': 'abc' } ); // $ExpectError
 	hypergeometric.factory( { 'prng': null } ); // $ExpectError
 	hypergeometric.factory( { 'prng': [] } ); // $ExpectError
 	hypergeometric.factory( { 'prng': {} } ); // $ExpectError
-	hypergeometric.factory( { 'prng': true ); // $ExpectError
+	hypergeometric.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -214,7 +214,7 @@ import hypergeometric = require( './index' );
 	hypergeometric.factory( 5, 3, 2, { 'state': null } ); // $ExpectError
 	hypergeometric.factory( 5, 3, 2, { 'state': [] } ); // $ExpectError
 	hypergeometric.factory( 5, 3, 2, { 'state': {} } ); // $ExpectError
-	hypergeometric.factory( 5, 3, 2, { 'state': true ); // $ExpectError
+	hypergeometric.factory( 5, 3, 2, { 'state': true } ); // $ExpectError
 	hypergeometric.factory( 5, 3, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	hypergeometric.factory( { 'state': 123 } ); // $ExpectError
@@ -222,7 +222,7 @@ import hypergeometric = require( './index' );
 	hypergeometric.factory( { 'state': null } ); // $ExpectError
 	hypergeometric.factory( { 'state': [] } ); // $ExpectError
 	hypergeometric.factory( { 'state': {} } ); // $ExpectError
-	hypergeometric.factory( { 'state': true ); // $ExpectError
+	hypergeometric.factory( { 'state': true } ); // $ExpectError
 	hypergeometric.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

@@ -42,8 +42,6 @@ interface Routine {
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -52,22 +50,10 @@ interface Routine {
 	* zrot( zx.length, zx, 1, zy, 1, 0.8, s );
 	*
 	* var z = zy.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns ~-1.1
-	*
-	* var im = imag( z );
-	* // returns ~-0.2
+	* // returns <Complex128>[ ~-1.1, ~-0.2 ]
 	*
 	* z = zx.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns ~0.8
-	*
-	* im = imag( z );
-	* // returns ~1.6
+	* // returns <Complex128>[ ~0.8, ~1.6 ]
 	*/
 	( N: number, zx: Complex128Array, strideX: number, zy: Complex128Array, strideY: number, c: number, s: Complex128 ): Complex128Array;
 
@@ -88,8 +74,6 @@ interface Routine {
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -98,22 +82,10 @@ interface Routine {
 	* zrot.ndarray( zx.length, zx, 1, 0, zy, 1, 0, 0.8, s );
 	*
 	* var z = zy.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns ~-1.1
-	*
-	* var im = imag( z );
-	* // returns ~-0.2
+	* // returns <Complex128>[ ~-1.1, ~-0.2 ]
 	*
 	* z = zx.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns ~0.8
-	*
-	* im = imag( z );
-	* // returns ~1.6
+	* // returns <Complex128>[ ~0.8, ~1.6 ]
 	*/
 	ndarray( N: number, zx: Complex128Array, strideX: number, offsetX: number, zy: Complex128Array, strideY: number, offsetY: number, c: number, s: Complex128 ): Complex128Array;
 }
@@ -133,8 +105,6 @@ interface Routine {
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 * var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -143,28 +113,14 @@ interface Routine {
 * zrot( 2, zx, 2, zy, 1, 0.8, s );
 *
 * var z = zy.get( 0 );
-* // returns <Complex128>
-*
-* var re = real( z );
-* // returns ~-1.1
-*
-* var im = imag( z );
-* // returns ~-0.2
+* // returns <Complex128>[ ~-1.1, ~-0.2 ]
 *
 * z = zx.get( 0 );
-* // returns <Complex128>
-*
-* re = real( z );
-* // returns ~0.8
-*
-* im = imag( z );
-* // returns ~1.6
+* // returns <Complex128>[ ~0.8, ~1.6 ]
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 * var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -173,22 +129,10 @@ interface Routine {
 * zrot.ndarray( 2, zx, 2, 0, zy, 1, 0, 0.8, s );
 *
 * var z = zy.get( 0 );
-* // returns <Complex128>
-*
-* var re = real( z );
-* // returns ~-1.1
-*
-* var im = imag( z );
-* // returns ~-0.2
+* // returns <Complex128>[ ~-1.1, ~-0.2 ]
 *
 * z = zx.get( 0 );
-* // returns <Complex128>
-*
-* re = real( z );
-* // returns ~0.8
-*
-* im = imag( z );
-* // returns ~1.6
+* // returns <Complex128>[ ~0.8, ~1.6 ]
 */
 declare var zrot: Routine;
 

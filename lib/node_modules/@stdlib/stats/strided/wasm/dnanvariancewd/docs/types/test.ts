@@ -125,7 +125,6 @@ import dnanvariancewd = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	dnanvariancewd.ndarray( x.length, 10, x, 1, 0 ); // $ExpectError
 	dnanvariancewd.ndarray( x.length, '10', x, 1, 0 ); // $ExpectError
 	dnanvariancewd.ndarray( x.length, true, x, 1, 0 ); // $ExpectError
 	dnanvariancewd.ndarray( x.length, false, x, 1, 0 ); // $ExpectError

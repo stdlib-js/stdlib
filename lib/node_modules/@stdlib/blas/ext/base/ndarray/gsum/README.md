@@ -63,7 +63,6 @@ The function has the following parameters:
 ## Notes
 
 -   If provided an empty real-valued one-dimensional ndarray, the function returns `0.0`.
--   If provided an empty complex-valued one-dimensional ndarray, the function returns `0+0i`.
 
 </section>
 

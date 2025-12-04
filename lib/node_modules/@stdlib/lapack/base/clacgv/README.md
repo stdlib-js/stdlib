@@ -36,21 +36,13 @@ Conjugates each element in a single-precision complex floating-point vector.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 
 clacgv( 2, cx, 1 );
 
 var z = cx.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 1.0, -2.0 ]
 ```
 
 The function has the following parameters:
@@ -63,21 +55,13 @@ The `N` and stride parameters determine which elements in `cx` are conjugated. F
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 clacgv( 2, cx, 2 );
 
 var z = cx.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 1.0, -2.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -87,8 +71,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 // Initial array:
 var cx0 = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -100,13 +82,7 @@ var cx1 = new Complex64Array( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 ); // start at
 clacgv( 3, cx1, 1 );
 
 var z = cx0.get( 1 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns -4.0
+// returns <Complex64>[ 3.0, -4.0 ]
 ```
 
 #### clacgv.ndarray( N, cx, strideCX, offsetCX )
@@ -115,21 +91,13 @@ Conjugates each element in a single-precision floating-point vector using altern
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 clacgv.ndarray( 3, cx, 1, 0 );
 
 var z = cx.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 1.0, -2.0 ]
 ```
 
 The function has the following additional parameters:
@@ -140,21 +108,13 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 clacgv.ndarray( 2, cx, 2, 1 );
 
 var z = cx.get( 3 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 7.0
-
-var im = imagf( z );
-// returns -8.0
+// returns <Complex64>[ 7.0, -8.0 ]
 ```
 
 </section>

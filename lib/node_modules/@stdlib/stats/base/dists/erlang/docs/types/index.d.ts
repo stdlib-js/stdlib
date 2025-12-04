@@ -173,7 +173,7 @@ interface Namespace {
 	*
 	* var myLogPDF = ns.logpdf.factory( 6, 7.0 );
 	* y = myLogPDF( 7.0 );
-	* // returns ~-32.38
+	* // returns ~-32.382
 	*/
 	logpdf: typeof logpdf;
 
@@ -304,8 +304,8 @@ interface Namespace {
 	* // returns ~0.895
 	*
 	* var myPDF = ns.pdf.factory( 6, 7.0 );
-	* y = myPDF( 2.0 );
-	* // returns ~0.026
+	* y = myPDF( 7.0 );
+	* // returns ~8.639e-15
 	*/
 	pdf: typeof pdf;
 

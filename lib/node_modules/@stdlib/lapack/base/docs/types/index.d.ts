@@ -63,39 +63,23 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* ns.clacgv( 3, cx, 1 );
 	*
 	* var z = cx.get( 1 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 3.0
-	*
-	* var im = imagf( z );
-	* // returns -4.0
+	* // returns <Complex64>[ 3.0, -4.0 ]
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* ns.clacgv.ndarray( 2, cx, 1, 1 );
 	*
 	* var z = cx.get( 1 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 3.0
-	*
-	* var im = imagf( z );
-	* // returns -4.0
+	* // returns <Complex64>[ 3.0, -4.0 ]
 	*/
 	clacgv: typeof clacgv;
 
@@ -114,8 +98,6 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var A = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 	* var B = new Complex64Array( 4 );
@@ -123,18 +105,10 @@ interface Namespace {
 	* ns.clacpy( 'row-major', 'all', 2, 2, A, 2, B, 2 );
 	*
 	* var z = B.get( 0 );
-	* // returns <Complex64>
-	*
-	* var v = realf( z );
-	* // returns 1.0
-	*
-	* v = imagf( z );
-	* // returns 2.0
+	* // returns <Complex64>[ 1.0, 2.0 ]
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var A = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ] );
 	* var B = new Complex64Array( 12 );
@@ -142,13 +116,7 @@ interface Namespace {
 	* ns.clacpy.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
 	*
 	* var z = B.get( 2 );
-	* // returns <Complex64>
-	*
-	* var v = realf( z );
-	* // returns 3.0
-	*
-	* v = imagf( z );
-	* // returns 4.0
+	* // returns <Complex64>[ 3.0, 4.0 ]
 	*/
 	clacpy: typeof clacpy;
 
@@ -167,6 +135,7 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* var A = new Complex64Array( 4 );
 	*
@@ -174,18 +143,19 @@ interface Namespace {
 	* var beta = new Complex64( 3.0, 4.0 );
 	*
 	* ns.claset( 'row-major', 'all', 2, 2, alpha, beta, A, 2 );
-	* // A => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+	* // A => <Complex64Array>[ 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
+	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* var A = new Complex64Array( 5 );
 	*
 	* var alpha = new Complex64( 1.0, 2.0 );
 	* var beta = new Complex64( 3.0, 4.0 );
 	*
-	* ns.claset.ndarray( 'all', 2, 2, A, 2, 1, 1 );
-	* // A => <Complex64Array>[ 0.0, 0.0, 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+	* ns.claset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 1 );
+	* // A => <Complex64Array>[ 0.0, 0.0, 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 	*/
 	claset: typeof claset;
 
@@ -555,7 +525,7 @@ interface Namespace {
 	* var V = new Float64Array( [ 0.5, 0.5, 0.5, 0.5 ] );
 	* var work = new Float64Array( 3 );
 	*
-	* ns.dlarf1f( 'row-major', 'left', 4, 3, V, 1, 1.0, C, 3, work );
+	* var out = ns.dlarf1f( 'row-major', 'left', 4, 3, V, 1, 1.0, C, 3, work );
 	* // returns <Float64Array>[ -4.5, -10.5, -16.5, -0.75, -1.75, -2.75, 0.25, -0.75, -1.75, 1.25,  0.25, -0.75 ]
 	*
 	* @example
@@ -565,7 +535,7 @@ interface Namespace {
 	* var V = new Float64Array( [ 0.5, 0.5, 0.5, 0.5 ] );
 	* var work = new Float64Array( 3 );
 	*
-	* ns.dlarf1f.ndarray( 'left', 4, 3, V, 1, 0, 1.0, C, 3, 1, 0, work, 1, 0 );
+	* var out = ns.dlarf1f.ndarray( 'left', 4, 3, V, 1, 0, 1.0, C, 3, 1, 0, work, 1, 0 );
 	* // returns <Float64Array>[ -4.5, -10.5, -16.5, -0.75, -1.75, -2.75, 0.25, -0.75, -1.75, 1.25,  0.25, -0.75 ]
 	*/
 	dlarf1f: typeof dlarf1f;
@@ -899,39 +869,23 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* ns.zlacgv( 3, zx, 1 );
 	*
 	* var z = zx.get( 1 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 3.0
-	*
-	* var im = imag( z );
-	* // returns -4.0
+	* // returns <Complex128>[ 3.0, -4.0 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* ns.zlacgv.ndarray( 2, zx, 1, 1 );
 	*
 	* var z = zx.get( 1 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 3.0
-	*
-	* var im = imag( z );
-	* // returns -4.0
+	* // returns <Complex128>[ 3.0, -4.0 ]
 	*/
 	zlacgv: typeof zlacgv;
 
@@ -1003,6 +957,7 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var A = new Complex128Array( 4 );
 	*
@@ -1010,18 +965,19 @@ interface Namespace {
 	* var beta = new Complex128( 3.0, 4.0 );
 	*
 	* ns.zlaset( 'row-major', 'all', 2, 2, alpha, beta, A, 2 );
-	* // A => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+	* // A => <Complex128Array>[ 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
+	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var A = new Complex128Array( 5 );
 	*
 	* var alpha = new Complex128( 1.0, 2.0 );
 	* var beta = new Complex128( 3.0, 4.0 );
 	*
-	* ns.zlaset.ndarray( 'all', 2, 2, A, 2, 1, 1 );
-	* // A => <Complex128Array>[ 0.0, 0.0, 1.0, 2.0, 3.0, 4.0, 3.0, 4.0, 1.0, 2.0 ]
+	* ns.zlaset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 1 );
+	* // A => <Complex128Array>[ 0.0, 0.0, 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 	*/
 	zlaset: typeof zlaset;
 
@@ -1075,8 +1031,6 @@ interface Namespace {
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1085,28 +1039,14 @@ interface Namespace {
 	* ns.zrot( 2, zx, 2, zy, 1, 0.8, s );
 	*
 	* var z = zy.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns ~-1.1
-	*
-	* var im = imag( z );
-	* // returns ~-0.2
+	* // returns <Complex128>[ ~-1.1, ~-0.2 ]
 	*
 	* z = zx.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns ~0.8
-	*
-	* im = imag( z );
-	* // returns ~1.6
+	* // returns <Complex128>[ ~0.8, ~1.6 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var zy = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1115,22 +1055,10 @@ interface Namespace {
 	* ns.zrot.ndarray( 2, zx, 2, 0, zy, 1, 0, 0.8, s );
 	*
 	* var z = zy.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns ~-1.1
-	*
-	* var im = imag( z );
-	* // returns ~-0.2
+	* // returns <Complex128>[ ~-1.1, ~-0.2 ]
 	*
 	* z = zx.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns ~0.8
-	*
-	* im = imag( z );
-	* // returns ~1.6
+	* // returns <Complex128>[ ~0.8, ~1.6 ]
 	*/
 	zrot: typeof zrot;
 }

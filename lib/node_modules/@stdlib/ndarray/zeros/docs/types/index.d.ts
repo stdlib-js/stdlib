@@ -313,7 +313,7 @@ declare function zeros( shape: Shape | number, options: Float32Options ): float3
 *
 * @example
 * var arr = zeros( [ 2, 2 ], {
-*     'dtype': complex128'
+*     'dtype': 'complex128'
 * });
 * // returns <ndarray>
 *
@@ -339,7 +339,7 @@ declare function zeros( shape: Shape | number, options: Complex128Options ): com
 *
 * @example
 * var arr = zeros( [ 2, 2 ], {
-*     'dtype': complex64'
+*     'dtype': 'complex64'
 * });
 * // returns <ndarray>
 *
@@ -391,7 +391,7 @@ declare function zeros( shape: Shape | number, options: Int32Options ): int32nda
 *
 * @example
 * var arr = zeros( [ 2, 2 ], {
-*     'dtype': int16'
+*     'dtype': 'int16'
 * });
 * // returns <ndarray>
 *
