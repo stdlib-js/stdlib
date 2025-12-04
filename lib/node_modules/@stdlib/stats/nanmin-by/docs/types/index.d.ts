@@ -34,14 +34,14 @@ type InputArray<T> = typedndarray<T>;
 type OutputArray<U> = typedndarray<U>;
 
 /**
-* Returns the result of callback function.
+* Callback function applied to each element of an ndarray.
 *
 * @returns result
 */
 type NullaryCallback<ThisArg> = ( this: ThisArg ) => number | void;
 
 /**
-* Returns the result of callback function.
+* Callback function applied to each element of an ndarray.
 *
 * @param value - current array element
 * @returns result
@@ -49,7 +49,7 @@ type NullaryCallback<ThisArg> = ( this: ThisArg ) => number | void;
 type UnaryCallback<T, ThisArg> = ( this: ThisArg, value: T ) => number | void;
 
 /**
-* Returns the result of callback function.
+* Callback function applied to each element of an ndarray.
 *
 * @param value - current array element
 * @param index - current array element index
@@ -58,7 +58,7 @@ type UnaryCallback<T, ThisArg> = ( this: ThisArg, value: T ) => number | void;
 type BinaryCallback<T, ThisArg> = ( this: ThisArg, value: T, index: number ) => number | void;
 
 /**
-* Returns the result of callback function.
+* Callback function applied to each element of an ndarray.
 *
 * @param value - current array element
 * @param index - current array element index
@@ -68,7 +68,7 @@ type BinaryCallback<T, ThisArg> = ( this: ThisArg, value: T, index: number ) => 
 type TernaryCallback<T, U, ThisArg> = ( this: ThisArg, value: T, index: number, array: U ) => number | void;
 
 /**
-* Returns the result of callback function.
+* Callback function applied to each element of an ndarray.
 *
 * @param value - current array element
 * @param index - current array element index
