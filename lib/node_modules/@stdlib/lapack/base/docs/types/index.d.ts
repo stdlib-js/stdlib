@@ -904,8 +904,6 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var A = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 	* var B = new Complex128Array( 4 );
@@ -913,18 +911,10 @@ interface Namespace {
 	* ns.zlacpy( 'row-major', 'all', 2, 2, A, 2, B, 2 );
 	*
 	* var z = B.get( 0 );
-	* // returns <Complex128>
-	*
-	* var v = real( z );
-	* // returns 1.0
-	*
-	* v = imag( z );
-	* // returns 2.0
+	* // returns <Complex128>[ 1.0, 2.0 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var A = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ] );
 	* var B = new Complex128Array( 12 );
@@ -932,13 +922,7 @@ interface Namespace {
 	* ns.zlacpy.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
 	*
 	* var z = B.get( 2 );
-	* // returns <Complex128>
-	*
-	* var v = real( z );
-	* // returns 3.0
-	*
-	* v = imag( z );
-	* // returns 4.0
+	* // returns <Complex128>[ 3.0, 4.0 ]
 	*/
 	zlacpy: typeof zlacpy;
 
