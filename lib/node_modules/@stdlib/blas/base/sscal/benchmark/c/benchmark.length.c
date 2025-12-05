@@ -96,10 +96,11 @@ static float rand_float( void ) {
 */
 static double benchmark1( int iterations, int len ) {
 	double elapsed;
-	float x[ len ];
+	float *x;
 	double t;
 	int i;
 
+	x = (float *)malloc( len * sizeof( float ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_float()*200.0f ) - 100.0f;
 	}
@@ -115,15 +116,17 @@ static double benchmark1( int iterations, int len ) {
 	if ( x[ 0 ] != x[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
 	return elapsed;
 }
 
 static double benchmark2( int iterations, int len ) {
 	double elapsed;
-	float x[ len ];
+	float *x;
 	double t;
 	int i;
 
+	x = (float *)malloc( len * sizeof( float ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_float()*200.0f ) - 100.0f;
 	}
@@ -139,6 +142,7 @@ static double benchmark2( int iterations, int len ) {
 	if ( x[ 0 ] != x[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
 	return elapsed;
 }
 
