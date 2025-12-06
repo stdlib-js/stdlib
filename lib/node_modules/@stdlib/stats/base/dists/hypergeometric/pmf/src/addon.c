@@ -19,5 +19,4 @@
 #include "stdlib/stats/base/dists/hypergeometric/pmf.h"
 #include "stdlib/math/base/napi/quaternary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DIII_D( stdlib_base_dists_hypergeometric_pmf )

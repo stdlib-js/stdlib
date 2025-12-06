@@ -32,5 +32,4 @@ static double add( const double x, const double y, const double z, const double 
 	return x + y + z + w + u;
 }
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DDDDD_D( add )

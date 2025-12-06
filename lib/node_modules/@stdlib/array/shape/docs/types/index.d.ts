@@ -31,19 +31,19 @@ import { ArrayLike } from '@stdlib/types/array';
 * @example
 * var arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ];
 *
-* var shape = arrayShape( arr );
+* var sh = arrayShape( arr );
 * // returns [ 3, 3 ]
 *
 * @example
 * var arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8 ] ];
 *
-* var shape = arrayShape( arr );
+* var sh = arrayShape( arr );
 * // returns [ 3 ]
 *
 * @example
 * var arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ], null ];
 *
-* var shape = arrayShape( arr );
+* var sh = arrayShape( arr );
 * // returns [ 3 ]
 */
 declare function arrayShape( arr: ArrayLike<any> ): Array<number>;

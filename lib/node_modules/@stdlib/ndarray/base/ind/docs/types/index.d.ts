@@ -92,51 +92,51 @@ interface Routine {
 	* @returns {Function} function for returning an index
 	*
 	* @example
-	* var ind = ind.factory( 'clamp' );
+	* var fcn = ind.factory( 'clamp' );
 	*
-	* var idx = ind( 2, 9 );
+	* var idx = fcn( 2, 9 );
 	* // returns 2
 	*
-	* idx = ind( 10, 9 );
+	* idx = fcn( 10, 9 );
 	* // returns 9
 	*
-	* idx = ind( -1, 9 );
+	* idx = fcn( -1, 9 );
 	* // returns 0
 	*
 	* @example
-	* var ind = ind.factory( 'wrap' );
+	* var fcn = ind.factory( 'wrap' );
 	*
-	* var idx = ind( 2, 9 );
+	* var idx = fcn( 2, 9 );
 	* // returns 2
 	*
-	* idx = ind( 10, 9 );
+	* idx = fcn( 10, 9 );
 	* // returns 0
 	*
-	* idx = ind( -1, 9 );
+	* idx = fcn( -1, 9 );
 	* // returns 9
 	*
 	* @example
-	* var ind = ind.factory( 'throw' );
+	* var fcn = ind.factory( 'throw' );
 	*
-	* var idx = ind( 2, 9 );
+	* var idx = fcn( 2, 9 );
 	* // returns 2
 	*
-	* idx = ind( 10, 9 );
+	* idx = fcn( 10, 9 );
 	* // throws <RangeError>
 	*
-	* idx = ind( -1, 9 );
+	* idx = fcn( -1, 9 );
 	* // throws <RangeError>
 	*
 	* @example
-	* var ind = ind.factory( 'normalize' );
+	* var fcn = ind.factory( 'normalize' );
 	*
-	* var idx = ind( 1, 10 );
+	* var idx = fcn( 1, 10 );
 	* // returns 1
 	*
-	* idx = ind( -4, 10 );
+	* idx = fcn( -4, 10 );
 	* // returns 7
 	*
-	* idx = ind( -100, 10 );
+	* idx = fcn( -100, 10 );
 	* // throws <RangeError>
 	*/
 	factory( mode: Mode ): IndexFcn;
@@ -181,26 +181,14 @@ interface Routine {
 * // throws <RangeError>
 *
 * @example
-* var idx = ind( 2, 9, 'normalize' );
-* // returns 2
+* var idx = ind( 1, 10, 'normalize' );
+* // returns 1
 *
-* idx = ind( -5, 9, 'normalize' );
-* // returns 5
+* idx = ind( -4, 10, 'normalize' );
+* // returns 7
 *
-* idx = ind( -20, 9, 'normalize' );
+* idx = ind( -100, 10, 'normalize' );
 * // throws <RangeError>
-*
-* @example
-* var fcn = ind.factory( 'clamp' );
-*
-* var idx = fcn( 2, 9 );
-* // returns 2
-*
-* idx = fcn( 10, 9 );
-* // returns 9
-*
-* idx = fcn( -1, 9 );
-* // returns 0
 */
 declare var ind: Routine;
 

@@ -68,5 +68,90 @@
     "angle",
     "math.asinh",
     "asinh"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "acsch",
+      "alias": "acsch",
+      "pkg_desc": "compute the hyperbolic arccosecant of a double-precision floating-point number",
+      "desc": "computes the hyperbolic arccosecant of a double-precision floating-point number",
+      "short_desc": "hyperbolic arccosecant",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": 0
+            },
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.5,
+              5
+            ]
+          },
+          "example_values": [
+            -5,
+            -3.7,
+            -2.9,
+            -2.1,
+            -1.7,
+            -1.3,
+            -1.1,
+            -0.7,
+            -0.51,
+            -0.25,
+            0.25,
+            0.51,
+            0.7,
+            1.1,
+            1.3,
+            1.7,
+            2.1,
+            2.9,
+            3.7,
+            5
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "hyperbolic arccosecant",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "acsch",
+        "hyperbolic",
+        "inverse",
+        "cosecant",
+        "csc",
+        "arc",
+        "arccosecant",
+        "angle",
+        "asinh"
+      ],
+      "extra_keywords": [
+        "math.asinh"
+      ]
+    }
+  }
 }

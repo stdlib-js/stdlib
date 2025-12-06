@@ -48,7 +48,7 @@ New Core Contributors can be nominated by any existing Core Contributors. Once t
 
 The TSC can remove inactive Core Contributors or provide them with _emeritus_ status. Emeriti may request that the TSC restore them to active status.
 
-A Core Contributor is automatically made emeritus (and removed from active Core Contributor status) if more than 18 months has passed since the Core Contributor authored or approved a Pull Request that has landed.
+A Core Contributor is automatically made emeritus (and removed from active Core Contributor status) if more than 18 months have passed since the Core Contributor authored or approved a Pull Request that has landed.
 
 ##### Core Contributor Activities
 
@@ -150,7 +150,7 @@ Substantial portions of this document were adapted from the following governance
 
 -   [NumPy][numpy-governance]
 -   [Node.js][nodejs-governance]
--   [Sckit-learn][scikit-learn-governance]
+-   [Scikit-learn][scikit-learn-governance]
 
 ## License
 

@@ -69,7 +69,7 @@ interface Fresnel {
 	* var out = new Float64Array( 2 );
 	*
 	* var v = fresnel.assign( 0.0, out, 1, 0 );
-	* // return <Float64Array>[ ~0.0, ~0.0 ]
+	* // returns <Float64Array>[ ~0.0, ~0.0 ]
 	*
 	* var bool = ( v === out );
 	* // returns true

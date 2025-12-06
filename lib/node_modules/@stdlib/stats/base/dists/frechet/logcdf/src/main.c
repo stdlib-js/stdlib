@@ -32,7 +32,7 @@
 *
 * @example
 * double y = stdlib_base_dists_frechet_logcdf( 10.0, 2.0, 3.0, 2.0 );
-* // returns ~0.141
+* // returns ~-0.141
 */
 double stdlib_base_dists_frechet_logcdf( const double x, const double alpha, const double s, const double m ) {
 	double z;

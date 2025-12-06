@@ -54,7 +54,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           # Ensure we have access to the scripts directory:
           sparse-checkout: |
@@ -75,7 +75,7 @@ jobs:
       - name: 'Add "Good First PR" label if PR references a "Good First Issue"'
         if: ${{ steps.check-pr.outputs.good-first-pr == 'true' }}
         # Pin action to full-length commit SHA
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |

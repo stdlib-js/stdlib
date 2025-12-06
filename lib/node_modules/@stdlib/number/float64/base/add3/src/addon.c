@@ -19,5 +19,4 @@
 #include "stdlib/number/float64/base/add3.h"
 #include "stdlib/math/base/napi/ternary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DDD_D( stdlib_base_float64_add3 )

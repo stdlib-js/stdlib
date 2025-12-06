@@ -1,0 +1,31 @@
+
+{{alias}}( x )
+    Returns an integer corresponding to the unbiased exponent of a half-
+    precision floating-point number.
+
+    Parameters
+    ----------
+    x: float
+        Half-precision floating-point number.
+
+    Returns
+    -------
+    out: integer
+        Unbiased exponent.
+
+    Examples
+    --------
+    > var exponent = {{alias}}( {{alias:@stdlib/number/float64/base/to-float16}}( 3.14e4 ) )
+    15
+    > exponent = {{alias}}( {{alias:@stdlib/number/float64/base/to-float16}}( 3.14e-4 ) )
+    -12
+    > exponent = {{alias}}( {{alias:@stdlib/number/float64/base/to-float16}}( -3.14 ) )
+    1
+    > exponent = {{alias}}( 0.0 )
+    -15
+    > exponent = {{alias}}( NaN )
+    16
+
+    See Also
+    --------
+
