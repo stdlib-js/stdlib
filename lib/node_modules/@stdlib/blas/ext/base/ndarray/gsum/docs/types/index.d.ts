@@ -21,7 +21,6 @@
 /// <reference types="@stdlib/types"/>
 
 import { typedndarray } from '@stdlib/types/ndarray';
-import { ComplexLike } from '@stdlib/types/complex';
 
 /**
 * Computes the sum of all elements in a one-dimensional ndarray.
@@ -39,32 +38,6 @@ import { ComplexLike } from '@stdlib/types/complex';
 * // returns 10.0
 */
 declare function gsum<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T ] ): number;
-
-/**
-* Computes the sum of all elements in a one-dimensional ndarray.
-*
-* @param arrays - array-like object containing an input ndarray
-* @returns sum
-*
-* @example
-* var Complex128Array = require( '@stdlib/array/complex128' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
-*
-* var xbuf = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
-* var x = new ndarray( 'complex128', xbuf, [ 2 ], [ 1 ], 0, 'row-major' );
-*
-* var v = gsum( [ x ] );
-* // returns <Complex128>
-*
-* var re = real( v );
-* // returns 4.0
-*
-* var im = imag( v );
-* // returns 6.0
-*/
-declare function gsum<T extends ComplexLike = ComplexLike, U extends typedndarray<T> = typedndarray<T>>( arrays: [ U ] ): T;
 
 
 // EXPORTS //

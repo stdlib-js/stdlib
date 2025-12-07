@@ -228,7 +228,7 @@ interface Namespace {
 	* var myquantile = ns.quantile.factory( 2.0 );
 	*
 	* var y = myquantile( 0.3 );
-	* // returns ~0.8446
+	* // returns ~0.845
 	*
 	* y = myquantile( 0.7 );
 	* // returns ~1.552

@@ -173,7 +173,7 @@ var y = nanmean( x, {
 });
 // returns <ndarray>
 
-var dt = getDType( y );
+var dt = String( getDType( y ) );
 // returns 'float64'
 ```
 

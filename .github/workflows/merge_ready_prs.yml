@@ -1,0 +1,102 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: merge_ready_prs
+
+# Workflow triggers:
+on:
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: 'Dry run (only print PRs to be merged)'
+        type: boolean
+        default: false
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for merging PRs with Ready to Merge label:
+  merge:
+
+    # Define a display name:
+    name: 'Merge Ready PRs'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the job's steps:
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+
+      # Merge PRs with Ready to Merge label:
+      - name: 'Merge PRs'
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          # Get all PRs with the "Ready to Merge" label:
+          prs=$(gh pr list --label "Ready to Merge" --json number --jq '.[].number')
+
+          if [ -z "$prs" ]; then
+            echo "No PRs found with 'Ready to Merge' label."
+            exit 0
+          fi
+
+          echo "Found PRs to merge: $prs"
+          echo ""
+
+          # If dry run, just print the PRs and exit:
+          if [ "${{ inputs.dry-run }}" == "true" ]; then
+            echo "Dry run mode. PRs that would be merged:"
+            for pr in $prs; do
+              echo "  - PR #$pr"
+            done
+            exit 0
+          fi
+
+          # Track results:
+          succeeded=""
+          failed=""
+
+          # Merge each PR:
+          for pr in $prs; do
+            echo "Merging PR #$pr..."
+            if ./.github/workflows/scripts/merge_pr "$pr"; then
+              echo "Successfully merged PR #$pr"
+              succeeded="$succeeded $pr"
+            else
+              echo "Failed to merge PR #$pr"
+              failed="$failed $pr"
+            fi
+            echo ""
+          done
+
+          # Print summary:
+          echo "================================"
+          echo "Summary:"
+          if [ -n "$succeeded" ]; then
+            echo "Merged:$succeeded"
+          fi
+          if [ -n "$failed" ]; then
+            echo "Failed:$failed"
+            exit 1
+          fi

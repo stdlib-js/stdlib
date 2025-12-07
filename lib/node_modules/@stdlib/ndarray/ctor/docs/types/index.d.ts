@@ -158,3 +158,5 @@ declare var ctor: Constructor;
 // EXPORTS //
 
 export = ctor;
+
+// eslint-doctest-alias: ndarray

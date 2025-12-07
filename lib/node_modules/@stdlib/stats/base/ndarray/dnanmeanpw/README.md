@@ -79,6 +79,7 @@ The function has the following parameters:
 ## Notes
 
 -   If provided an empty one-dimensional ndarray, the function returns `NaN`.
+-   In general, pairwise summation is more numerically stable than ordinary recursive summation (i.e., "simple" summation), with slightly worse performance. While not the most numerically stable summation technique (e.g., compensated summation techniques such as the Kahan–Babuška-Neumaier algorithm are generally more numerically stable), pairwise summation strikes a reasonable balance between numerical stability and performance. If either numerical stability or performance is more desirable for your use case, consider alternative summation techniques.
 
 </section>
 

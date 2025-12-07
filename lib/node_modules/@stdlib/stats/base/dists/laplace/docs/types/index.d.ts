@@ -152,7 +152,7 @@ interface Namespace {
 	*
 	* var mylogcdf = ns.logcdf.factory( 2.0, 3.0 );
 	* y = mylogcdf( 10.0 );
-	* // returns ~-0.0354
+	* // returns ~-0.035
 	*
 	* y = mylogcdf( 2.0 );
 	* // returns ~-0.693

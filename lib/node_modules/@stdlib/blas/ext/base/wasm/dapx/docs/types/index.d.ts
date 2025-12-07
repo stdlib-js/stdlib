@@ -34,6 +34,7 @@ interface ModuleConstructor {
 	*
 	* @example
 	* var Memory = require( '@stdlib/wasm/memory' );
+	* var zeros = require( '@stdlib/array/zeros' );
 	* var oneTo = require( '@stdlib/array/one-to' );
 	*
 	* // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
@@ -62,8 +63,16 @@ interface ModuleConstructor {
 	* mod.write( xptr, oneTo( N, dtype ) );
 	*
 	* // Perform computation:
-	* mod.main( N, 5.0, xptr, 1 );
-	* // xptr => <Float64Array>[ 6.0, 7.0, 8.0 ]
+	* var ptr = mod.main( N, 5.0, xptr, 1 );
+	* // returns <number>
+	*
+	* var bool = ( ptr === xptr );
+	* // returns true
+	*
+	* // Read out the results:
+	* var view = zeros( N, dtype );
+	* mod.read( xptr, view );
+	* // view => <Float64Array>[ 6.0, 7.0, 8.0 ]
 	*/
 	new( mem: Memory ): Module; // newable
 
@@ -76,6 +85,7 @@ interface ModuleConstructor {
 	* @example
 	* var Memory = require( '@stdlib/wasm/memory' );
 	* var oneTo = require( '@stdlib/array/one-to' );
+	* var zeros = require( '@stdlib/array/zeros' );
 	*
 	* // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 	* var mem = new Memory({
@@ -103,8 +113,16 @@ interface ModuleConstructor {
 	* mod.write( xptr, oneTo( N, dtype ) );
 	*
 	* // Perform computation:
-	* mod.main( N, 5.0, xptr, 1 );
-	* // xptr => <Float64Array>[ 6.0, 7.0, 8.0 ]
+	* var ptr = mod.main( N, 5.0, xptr, 1 );
+	* // returns <number>
+	*
+	* var bool = ( ptr === xptr );
+	* // returns true
+	*
+	* // Read out the results:
+	* var view = zeros( N, dtype );
+	* mod.read( xptr, view );
+	* // view => <Float64Array>[ 6.0, 7.0, 8.0 ]
 	*/
 	( mem: Memory ): Module; // callable
 }
@@ -125,6 +143,7 @@ interface Module extends ModuleWrapper {
 	* @example
 	* var Memory = require( '@stdlib/wasm/memory' );
 	* var oneTo = require( '@stdlib/array/one-to' );
+	* var zeros = require( '@stdlib/array/zeros' );
 	*
 	* // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 	* var mem = new Memory({
@@ -152,8 +171,16 @@ interface Module extends ModuleWrapper {
 	* mod.write( xptr, oneTo( N, dtype ) );
 	*
 	* // Perform computation:
-	* mod.main( N, 5.0, xptr, 1 );
-	* // xptr => <Float64Array>[ 6.0, 7.0, 8.0 ]
+	* var ptr = mod.main( N, 5.0, xptr, 1 );
+	* // returns <number>
+	*
+	* var bool = ( ptr === xptr );
+	* // returns true
+	*
+	* // Read out the results:
+	* var view = zeros( N, dtype );
+	* mod.read( xptr, view );
+	* // view => <Float64Array>[ 6.0, 7.0, 8.0 ]
 	*/
 	main( N: number, alpha: number, xptr: number, strideX: number ): number;
 
@@ -170,6 +197,7 @@ interface Module extends ModuleWrapper {
 	* @example
 	* var Memory = require( '@stdlib/wasm/memory' );
 	* var oneTo = require( '@stdlib/array/one-to' );
+	* var zeros = require( '@stdlib/array/zeros' );
 	*
 	* // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 	* var mem = new Memory({
@@ -197,8 +225,16 @@ interface Module extends ModuleWrapper {
 	* mod.write( xptr, oneTo( N, dtype ) );
 	*
 	* // Perform computation:
-	* mod.ndarray( N, 5.0, xptr, 1, 0 );
-	* // xptr => <Float64Array>[ 6.0, 7.0, 8.0 ]
+	* var ptr = mod.ndarray( N, 5.0, xptr, 1, 0 );
+	* // returns <number>
+	*
+	* var bool = ( ptr === xptr );
+	* // returns true
+	*
+	* // Read out the results:
+	* var view = zeros( N, dtype );
+	* mod.read( xptr, view );
+	* // view => <Float64Array>[ 6.0, 7.0, 8.0 ]
 	*/
 	ndarray( N: number, alpha: number, xptr: number, strideX: number, offsetX: number ): number;
 }
@@ -222,7 +258,7 @@ interface Routine extends ModuleWrapper {
 	* var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 	*
 	* var out = dapx.main( 3, 5.0, x, 1 );
-	* // out => Float64Array[ 6.0, 3.0, 7.0 ]
+	* // out => <Float64Array>[ 6.0, 3.0, 7.0 ]
 	*/
 	main( N: number, alpha: number, x: Float64Array, strideX: number ): number;
 
@@ -242,7 +278,7 @@ interface Routine extends ModuleWrapper {
 	* var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 	*
 	* dapx.ndarray( 4, 5.0, x, 2, 1 );
-	* // x => Float64Array[ 7.0, 6.0, 7.0, 3.0, 3.0, 7.0, 8.0, 9.0 ]
+	* // x => <Float64Array>[ 2.0, 6.0, 2.0, 3.0, -2.0, 7.0, 3.0, 9.0 ]
 	*/
 	ndarray( N: number, alpha: number, x: Float64Array, strideX: number, offsetX: number ): number;
 
@@ -255,6 +291,7 @@ interface Routine extends ModuleWrapper {
 	* @example
 	* var Memory = require( '@stdlib/wasm/memory' );
 	* var oneTo = require( '@stdlib/array/one-to' );
+	* var zeros = require( '@stdlib/array/zeros' );
 	*
 	* // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 	* var mem = new Memory({
@@ -282,8 +319,16 @@ interface Routine extends ModuleWrapper {
 	* mod.write( xptr, oneTo( N, dtype ) );
 	*
 	* // Perform computation:
-	* mod.main( N, 5.0, xptr, 1 );
-	* // xptr => <Float64Array>[ 6.0, 7.0, 8.0 ]
+	* var ptr = mod.main( N, 5.0, xptr, 1 );
+	* // returns <number>
+	*
+	* var bool = ( ptr === xptr );
+	* // returns true
+	*
+	* // Read out the results:
+	* var view = zeros( N, dtype );
+	* mod.read( xptr, view );
+	* // view => <Float64Array>[ 6.0, 7.0, 8.0 ]
 	*/
 	Module: ModuleConstructor;
 }
@@ -303,7 +348,7 @@ interface Routine extends ModuleWrapper {
 * var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 *
 * dapx.main( 3, 5.0, x, 1 );
-* // x => Float64Array[ 6.0, 3.0, 7.0 ]
+* // x => <Float64Array>[ 6.0, 3.0, 7.0 ]
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -311,7 +356,7 @@ interface Routine extends ModuleWrapper {
 * var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 *
 * dapx.ndarray( 4, 5.0, x, 2, 1 );
-* // x => Float64Array[ 7.0, 6.0, 7.0, 3.0, 3.0, 7.0, 8.0, 9.0 ]
+* // x => <Float64Array>[ 2.0, 6.0, 2.0, 3.0, -2.0, 7.0, 3.0, 9.0 ]
 */
 declare var dapx: Routine;
 
