@@ -2565,7 +2565,7 @@
 "@stdlib/datasets/moby-dick","@stdlib/datasets-moby-dick"
 "@stdlib/datasets/month-names-en","@stdlib/datasets-month-names-en"
 "@stdlib/constants/time/months-in-year","@stdlib/constants-time-months-in-year"
-"@stdlib/utils/move-property","@stdlib/utils-move-property"
+"@stdlib/object/move-property","@stdlib/object-move-property"
 "@stdlib/slice/multi","@stdlib/slice-multi"
 "@stdlib/dstructs/named-typed-tuple","@stdlib/dstructs-named-typed-tuple"
 "@stdlib/constants/float64/nan","@stdlib/constants-float64-nan"
