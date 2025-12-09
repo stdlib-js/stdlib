@@ -32,7 +32,7 @@ Please seek support in the following ways:
 
 -   **Bugs**: if you have found a bug or would like to make a specific feature request, please file an issue on the stdlib [issue tracker][stdlib-issues].
 -   **Security vulnerabilities**: if you would like to report a security vulnerability, please consult the stdlib [security policy][stdlib-security] and follow requested steps for responsible [disclosure][stdlib-security].
--   **Questions**: for general questions (i.e., concerns which are **not** bug reports or explicit feature requests), please ask on either [GitHub discussions][stdlib-discussions] or on [Gitter][stdlib-gitter].
+-   **Questions**: for general questions (i.e., concerns which are **not** bug reports or explicit feature requests), please ask on either [GitHub discussions][stdlib-discussions] or on [Zulip][stdlib-zulip].
 
 Please do **not** file issues on the issue tracker seeking help or support debugging your application or open-source project when the encountered issues are specific to your project. You will have better luck in such instances seeking help from other users of stdlib via Stack Overflow or other non-stdlib affiliated public forums.
 
@@ -101,7 +101,7 @@ Copyright © The Stdlib [Authors][stdlib-authors].
 
 [stdlib-discussions]: https://github.com/stdlib-js/stdlib/discussions
 
-[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [stdlib-issues]: https://github.com/stdlib-js/stdlib/issues
 
