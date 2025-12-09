@@ -569,6 +569,15 @@ stdlib development is generously supported by the following sponsors:
     <br>
 </div>
 
+<div class="image" align="center">
+    <br>
+    <a href="https://zulip.com/">
+        <img src="https://raw.githubusercontent.com/stdlib-js/stdlib/refs/heads/develop/docs/assets/sponsors/zulip_logo.png" alt="Zulip">
+    </a>
+    <br>
+    <br>
+</div>
+
 Are you interested in supporting stdlib? If so, join our [Open Collective][open-collective-stdlib]!
 
 </section>
