@@ -9343,7 +9343,7 @@
       "gotoblas2"
     ]
   },
-  "https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im": {
+  "https://stdlib.zulipchat.com": {
     "id": "chat-url",
     "description": "stdlib chat room.",
     "short_url": "",
@@ -9522,13 +9522,13 @@
       "image"
     ]
   },
-  "https://img.shields.io/gitter/room/stdlib-js/stdlib.svg": {
+  "https://img.shields.io/badge/zulip-join_chat-brightgreen.svg": {
     "id": "chat-image",
-    "description": "Image for the Gitter chat room.",
+    "description": "Image for the Zulip chat.",
     "short_url": "",
     "keywords": [
       "chat",
-      "gitter",
+      "zulip",
       "image"
     ]
   },
