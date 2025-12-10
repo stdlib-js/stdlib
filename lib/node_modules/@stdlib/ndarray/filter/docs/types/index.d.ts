@@ -1233,7 +1233,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var buffer = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
 * var strides = [ 3, 1 ];
-* var offset = 1;
+* var offset = 0;
 *
 * var x = ndarray( 'complex128', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
@@ -1269,7 +1269,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var buffer = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
 * var strides = [ 3, 1 ];
-* var offset = 1;
+* var offset = 0;
 *
 * var x = ndarray( 'complex128', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>

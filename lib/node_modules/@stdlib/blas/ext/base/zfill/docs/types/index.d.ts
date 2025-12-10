@@ -40,8 +40,6 @@ interface Routine {
 	* var Float64Array = require( '@stdlib/array/float64' );
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var arr = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var x = new Complex128Array( arr );
@@ -51,13 +49,7 @@ interface Routine {
 	* zfill( x.length, alpha, x, 1 );
 	*
 	* var y = x.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( y );
-	* // returns 10.0
-	*
-	* var im = imag( y );
-	* // returns 10.0
+	* // returns <Complex128>[ 10.0, 10.0 ]
 	*/
 	( N: number, alpha: Complex128, x: Complex128Array, strideX: number ): Complex128Array;
 
@@ -75,8 +67,6 @@ interface Routine {
 	* var Float64Array = require( '@stdlib/array/float64' );
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var arr = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var x = new Complex128Array( arr );
@@ -86,13 +76,7 @@ interface Routine {
 	* zfill( x.length, alpha, x, 1, 0 );
 	*
 	* var y = x.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( y );
-	* // returns 10.0
-	*
-	* var im = imag( y );
-	* // returns 10.0
+	* // returns <Complex128>[ 10.0, 10.0 ]
 	*/
 	ndarray( N: number, alpha: Complex128, x: Complex128Array, strideX: number, offsetX: number ): Complex128Array;
 }
@@ -110,8 +94,6 @@ interface Routine {
 * var Float64Array = require( '@stdlib/array/float64' );
 * var Complex128Array = require( '@stdlib/array/complex128' );
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var arr = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 * var x = new Complex128Array( arr );
@@ -121,13 +103,7 @@ interface Routine {
 * zfill( x.length, alpha, x, 1 );
 *
 * var y = x.get( 0 );
-* // returns <Complex128>
-*
-* var re = real( y );
-* // returns 10.0
-*
-* var im = imag( y );
-* // returns 10.0
+* // returns <Complex128>[ 10.0, 10.0 ]
 */
 declare var zfill: Routine;
 

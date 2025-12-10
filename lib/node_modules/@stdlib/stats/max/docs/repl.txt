@@ -65,11 +65,9 @@
     > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
     > var out = {{alias:@stdlib/ndarray/zeros}}( [] );
     > var y = {{alias}}.assign( x, out )
-    <ndarray>
+    <ndarray>[ 2.0 ]
     > var bool = ( out === y )
     true
-    > var v = out.get()
-    2.0
 
     See Also
     --------

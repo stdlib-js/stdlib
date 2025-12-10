@@ -1,0 +1,41 @@
+
+{{alias}}( x )
+    Returns a string giving the literal bit representation of a half-precision
+    floating-point number.
+
+    Parameters
+    ----------
+    x: float
+        Half-precision floating-point number.
+
+    Returns
+    -------
+    str: string
+        Bit representation.
+
+    Examples
+    --------
+    > var str = {{alias}}( {{alias:@stdlib/number/float64/base/to-float16}}( 4.0 ) )
+    '0100010000000000'
+    > str = {{alias}}( {{alias:@stdlib/number/float64/base/to-float16}}( 3.1415926 ) )
+    '0100001001001000'
+    > str = {{alias}}( {{alias:@stdlib/number/float64/base/to-float16}}( -1.0e3 ) )
+    '1110001111010000'
+    > str = {{alias}}( {{alias:@stdlib/number/float64/base/to-float16}}( -3.14e-6 ) )
+    '1000000000110101'
+    > str = {{alias}}( {{alias:@stdlib/number/float64/base/to-float16}}( 1.4e-7 ) )
+    '0000000000000010'
+    > str = {{alias}}( 0.0 )
+    '0000000000000000'
+    > str = {{alias}}( -0.0 )
+    '1000000000000000'
+    > str = {{alias}}( NaN )
+    '0111111000000000'
+    > str = {{alias}}( {{alias:@stdlib/constants/float16/pinf}} )
+    '0111110000000000'
+    > str = {{alias}}( {{alias:@stdlib/constants/float16/ninf}} )
+    '1111110000000000'
+
+    See Also
+    --------
+

@@ -77,10 +77,10 @@ interface LogPMF {
 	* @example
 	* var mylogpmf = logpmf.factory( 0.5 );
 	* var y = mylogpmf( 3.0 );
-	* // returns ~-2.4327
+	* // returns ~-2.433
 	*
 	* y = mylogpmf( 1.0 );
-	* // returns ~-1.4327
+	* // returns ~-1.433
 	*/
 	factory( lambda: number ): Unary;
 }
@@ -101,10 +101,10 @@ interface LogPMF {
 *
 * var mylogpmf = logpmf.factory( 0.5 );
 * y = mylogpmf( 3.0 );
-* // returns ~-2.4327
+* // returns ~-2.433
 *
 * y = mylogpmf( 1.0 );
-* // returns ~-1.4327
+* // returns ~-1.433
 */
 declare var logpmf: LogPMF;
 

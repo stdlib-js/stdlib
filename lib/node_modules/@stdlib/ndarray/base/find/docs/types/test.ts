@@ -37,7 +37,7 @@ function clbk( v: any ): boolean {
 
 // TESTS //
 
-// The function returns a number...
+// The function returns a value having an expected data type...
 {
 	const x = zeros( [ 2, 2 ], {
 		'dtype': 'float64'

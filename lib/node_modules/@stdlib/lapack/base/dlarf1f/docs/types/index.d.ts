@@ -62,7 +62,7 @@ interface Routine {
 	* var V = new Float64Array( [ 0.5, 0.5, 0.5, 0.5 ] );
 	* var work = new Float64Array( 3 );
 	*
-	* dlarf1f( 'row-major', 'left', 4, 3, V, 1, 1.0, C, 3, work );
+	* var out = dlarf1f( 'row-major', 'left', 4, 3, V, 1, 1.0, C, 3, work );
 	* // returns <Float64Array>[ -4.5, -10.5, -16.5, -0.75, -1.75, -2.75, 0.25, -0.75, -1.75, 1.25,  0.25, -0.75 ]
 	*/
 	( order: Layout, side: OperationSide, M: number, N: number, V: Float64Array, strideV: number, tau: number, C: Float64Array, ldc: number, work: Float64Array ): Float64Array;
@@ -107,7 +107,7 @@ interface Routine {
 	* var V = new Float64Array( [ 0.5, 0.5, 0.5, 0.5 ] );
 	* var work = new Float64Array( 3 );
 	*
-	* dlarf1f.ndarray( 'left', 4, 3, V, 1, 0, 1.0, C, 3, 1, 0, work, 1, 0 );
+	* var out = dlarf1f.ndarray( 'left', 4, 3, V, 1, 0, 1.0, C, 3, 1, 0, work, 1, 0 );
 	* // returns <Float64Array>[ -4.5, -10.5, -16.5, -0.75, -1.75, -2.75, 0.25, -0.75, -1.75, 1.25,  0.25, -0.75 ]
 	*/
 	ndarray( side: OperationSide, M: number, N: number, V: Float64Array, strideV: number, offsetV: number, tau: number, C: Float64Array, strideC1: number, strideC2: number, offsetC: number, work: Float64Array, strideWork: number, offsetWork: number ): Float64Array;
@@ -149,7 +149,7 @@ interface Routine {
 * var V = new Float64Array( [ 0.5, 0.5, 0.5, 0.5 ] );
 * var work = new Float64Array( 3 );
 *
-* dlarf1f( 'row-major', 'left', 4, 3, V, 1, 1.0, C, 3, work );
+* var out = dlarf1f( 'row-major', 'left', 4, 3, V, 1, 1.0, C, 3, work );
 * // returns <Float64Array>[ -4.5, -10.5, -16.5, -0.75, -1.75, -2.75, 0.25, -0.75, -1.75, 1.25,  0.25, -0.75 ]
 *
 * @example
@@ -159,7 +159,7 @@ interface Routine {
 * var V = new Float64Array( [ 0.5, 0.5, 0.5, 0.5 ] );
 * var work = new Float64Array( 3 );
 *
-* dlarf1f.ndarray( 'left', 4, 3, V, 1, 0, 1.0, C, 3, 1, 0, work, 1, 0 );
+* var out = dlarf1f.ndarray( 'left', 4, 3, V, 1, 0, 1.0, C, 3, 1, 0, work, 1, 0 );
 * // returns <Float64Array>[ -4.5, -10.5, -16.5, -0.75, -1.75, -2.75, 0.25, -0.75, -1.75, 1.25,  0.25, -0.75 ]
 */
 declare var dlarf1f: Routine;

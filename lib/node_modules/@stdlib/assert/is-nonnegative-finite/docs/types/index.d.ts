@@ -61,19 +61,19 @@ interface IsNonNegativeFinite {
 	* @returns {boolean} boolean indicating if a value is a number primitive having a nonnegative finite value
 	*
 	* @example
-	* var bool = isNonNegativeFinite( 3.0 );
+	* var bool = isNonNegativeFinite.isPrimitive( 3.0 );
 	* // returns true
 	*
 	* @example
-	* var bool = isNonNegativeFinite( new Number( 3.0 ) );
+	* var bool = isNonNegativeFinite.isPrimitive( new Number( 3.0 ) );
 	* // returns false
 	*
 	* @example
-	* var bool = isNonNegativeFinite( new Number( -5.0 ) );
+	* var bool = isNonNegativeFinite.isPrimitive( new Number( -5.0 ) );
 	* // returns false
 	*
 	* @example
-	* var bool = isNonNegativeFinite( 1.0/0.0 );
+	* var bool = isNonNegativeFinite.isPrimitive( 1.0/0.0 );
 	* // returns false
 	*/
 	isPrimitive( value: any ): boolean;
@@ -85,19 +85,19 @@ interface IsNonNegativeFinite {
 	* @returns {boolean} boolean indicating if a value is a number object having a nonnegative finite number value
 	*
 	* @example
-	* var bool = isNonNegativeFinite( 3.0 );
+	* var bool = isNonNegativeFinite.isObject( 3.0 );
 	* // returns false
 	*
 	* @example
-	* var bool = isNonNegativeFinite( new Number( 3.0 ) );
+	* var bool = isNonNegativeFinite.isObject( new Number( 3.0 ) );
 	* // returns true
 	*
 	* @example
-	* var bool = isNonNegativeFinite( new Number( -5.0 ) );
+	* var bool = isNonNegativeFinite.isObject( new Number( -5.0 ) );
 	* // returns false
 	*
 	* @example
-	* var bool = isNonNegativeFinite( 1.0/0.0 );
+	* var bool = isNonNegativeFinite.isObject( 1.0/0.0 );
 	* // returns false
 	*/
 	isObject( value: any ): boolean;

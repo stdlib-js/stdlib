@@ -94,15 +94,15 @@ interface LogPDF {
 *
 * @example
 * var y = logpdf( 2.0, 4.0 );
-* // returns ~-2.207
+* // returns ~-2.204
 *
 * var mylogpdf = logpdf.factory( 4.0 );
 *
 * y = mylogpdf( 6.0 );
-* // returns ~-2.104
+* // returns ~-2.106
 *
 * y = mylogpdf( 4.0 );
-* // returns ~-1.884
+* // returns ~-1.886
 */
 declare var logpdf: LogPDF;
 

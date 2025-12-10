@@ -1015,7 +1015,7 @@ interface Namespace {
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* ns.dsyr2( 'column-major', 'upper', 3, 1.0, x, 1, y, 1, A, 3 );
-	* // A => <Float64Array>[ 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 3.0, 2.0, 19.0 ]
+	* // A => <Float64Array>[ 3.0, 2.0, 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 19.0 ]
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
@@ -1025,7 +1025,7 @@ interface Namespace {
 	* var y = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* ns.dsyr2.ndarray( 'upper', 3, 1.0, x, 1, 0, y, 1, 0, A, 1, 3, 0 );
-	* // A => <Float64Array>[ 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 3.0, 2.0, 19.0 ]
+	* // A => <Float64Array>[ 3.0, 2.0, 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 19.0 ]
 	*/
 	dsyr2: typeof dsyr2;
 
@@ -1316,7 +1316,7 @@ interface Namespace {
 	* var x = [ 1.0, 1.0 ];
 	* var y = [ 1.0, 1.0, 1.0 ];
 	*
-	* ns.gger( 'row-major', 2, 3, 1.0, x, 1, y, 1, A, 2 );
+	* ns.gger( 'row-major', 2, 3, 1.0, x, 1, y, 1, A, 3 );
 	* // A => [ 2.0, 5.0, 3.0, 6.0, 4.0, 7.0 ]
 	*
 	* @example
@@ -2155,7 +2155,7 @@ interface Namespace {
 	* var y = new Float32Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 	*
 	* ns.srot( 3, x, 2, y, 2, 0.8, 0.6 );
-	* // x => <Float32Array>[ 5.0, 2.0, ~7.8, 4.0, ~10.6, 6.0 ]
+	* // x => <Float32Array>[ ~5.0, 2.0, ~7.8, 4.0, ~10.6, 6.0 ]
 	* // y => <Float32Array>[ 5.0, 8.0, ~5.4, 10.0, ~5.8, 12.0 ]
 	*
 	* @example
@@ -2450,7 +2450,7 @@ interface Namespace {
 	* var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* ns.ssyr2( 'column-major', 'upper', 3, 1.0, x, 1, y, 1, A, 3 );
-	* // A => <Float32Array>[ 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 3.0, 2.0, 19.0 ]
+	* // A => <Float32Array>[ 3.0, 2.0, 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 19.0 ]
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
@@ -2460,7 +2460,7 @@ interface Namespace {
 	* var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* ns.ssyr2.ndarray( 'upper', 3, 1.0, x, 1, 0, y, 1, 0, A, 1, 3, 0 );
-	* // A => <Float32Array>[ 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 3.0, 2.0, 19.0 ]
+	* // A => <Float32Array>[ 3.0, 2.0, 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 19.0 ]
 	*/
 	ssyr2: typeof ssyr2;
 
@@ -2764,7 +2764,7 @@ interface Namespace {
 	* var alpha = new Complex128( 2.0, 2.0 );
 	*
 	* ns.zscal.ndarray( 2, alpha, x, 1, 1 );
-	* // x => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
+	* // x => <Complex128Array>[ 1.0, 2.0, -2.0, 14.0, -2.0, 22.0 ]
 	*/
 	zscal: typeof zscal;
 
