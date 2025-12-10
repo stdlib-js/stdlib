@@ -353,13 +353,10 @@ interface Namespace {
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
 	*
-	* var x = array( [ -1.0, 2.0, -3.0 ] )
+	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = ns.max( x );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 2.0
+	* // returns <ndarray>[ 2.0 ]
 	*
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
@@ -369,10 +366,7 @@ interface Namespace {
 	* var y = zeros( [] );
 	*
 	* var out = ns.max.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 2.0
+	* // returns <ndarray>[ 2.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -391,7 +385,7 @@ interface Namespace {
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
 	*
-	* var x = array( [ -1.0, 2.0, -3.0 ] )
+	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* function clbk( value ) {
 	*     return value * 2.0;
@@ -407,7 +401,7 @@ interface Namespace {
 	* var array = require( '@stdlib/ndarray/array' );
 	* var zeros = require( '@stdlib/ndarray/zeros' );
 	*
-	* var x = array( [ -1.0, 2.0, -3.0 ] )
+	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	* var y = zeros( [] );
 	*
 	* function clbk( value ) {
@@ -545,7 +539,7 @@ interface Namespace {
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
 	*
-	* var x = array( [ -1.0, 2.0, -3.0 ] )
+	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* function clbk( value ) {
 	*     return value * 2.0;
@@ -561,7 +555,7 @@ interface Namespace {
 	* var array = require( '@stdlib/ndarray/array' );
 	* var zeros = require( '@stdlib/ndarray/zeros' );
 	*
-	* var x = array( [ -1.0, 2.0, -3.0 ] )
+	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	* var y = zeros( [] );
 	*
 	* function clbk( value ) {
