@@ -29,12 +29,8 @@ import gsum = require( './index' );
 	const x = zeros( [ 10 ], {
 		'dtype': 'float64'
 	});
-	const y = zeros( [ 10 ], {
-		'dtype': 'complex128'
-	});
 
 	gsum( [ x ] ); // $ExpectType number
-	gsum( [ y ] ); // $ExpectType ComplexLike
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...

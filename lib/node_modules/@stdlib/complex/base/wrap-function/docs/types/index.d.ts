@@ -193,13 +193,7 @@ type Constructor = new( re: number, im: number ) => ComplexLike;
 * // ...
 *
 * var z = f();
-* // returns <Complex64>
-*
-* var re = realf( z );
-* // returns <number>
-*
-* var im = imagf( z );
-* // returns <number>
+* // e.g., returns <Complex64>[ <number>, <number> ]
 */
 declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
 
@@ -220,21 +214,13 @@ declare function wrap( fcn: Nullary, nargs: 0, ctor: Constructor ): Nullary;
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
 * var cidentityf = require( '@stdlib/complex/float32/base/identity' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var f = wrap( cidentityf, 1, Complex64 );
 *
 * // ...
 *
 * var z = f( 3.0 );
-* // returns <Complex64>
-*
-* var re = realf( z );
-* // returns 3.0
-*
-* var im = imagf( z );
-* // returns 0.0
+* // returns <Complex64>[ 3.0, 0.0 ]
 */
 declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 
@@ -255,21 +241,13 @@ declare function wrap( fcn: Unary, nargs: 1, ctor: Constructor ): WrappedUnary;
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
 * var caddf = require( '@stdlib/complex/float32/base/add' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var f = wrap( caddf, 2, Complex64 );
 *
 * // ...
 *
 * var z = f( 3.0, 4.0 );
-* // returns <Complex64>
-*
-* var re = realf( z );
-* // returns 7.0
-*
-* var im = imagf( z );
-* // returns 0.0
+* // returns <Complex64>[ 7.0, 0.0 ]
 */
 declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary;
 

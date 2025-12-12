@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square of the mathematical constant `π`.
+
+    Examples
+    --------
+    > {{alias}}
+    9.8671875
+
+    See Also
+    --------
+

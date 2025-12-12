@@ -87,7 +87,7 @@ var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var mskmax = require( '@stdlib/stats/base/ndarray/mskmax' );
 
 var xbuf = uniform( 10, -50.0, 50.0, {
-    'dtype': 'float64'
+    'dtype': 'generic'
 });
 var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
 console.log( ndarray2array( x ) );
@@ -95,7 +95,7 @@ console.log( ndarray2array( x ) );
 var maskbuf = bernoulli( xbuf.length, 0.2, {
     'dtype': 'uint8'
 });
-var mask = new ndarray( 'generic', maskbuf, [ maskbuf.length ], [ 1 ], 0, 'row-major' );
+var mask = new ndarray( 'uint8', maskbuf, [ maskbuf.length ], [ 1 ], 0, 'row-major' );
 console.log( ndarray2array( mask ) );
 
 var v = mskmax( [ x, mask ] );
