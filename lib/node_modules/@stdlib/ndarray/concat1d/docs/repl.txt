@@ -1,0 +1,66 @@
+
+{{alias}}( ...arrays )
+    Returns a one-dimensional ndarray formed by concatenating provided input
+    arguments.
+
+    The data type of the output ndarray is determined by applying type promotion
+    rules to provided inputs.
+
+    If provided ndarrays having different memory layouts or only scalar inputs,
+    the output ndarray has the default memory layout.
+
+    Parameters
+    ----------
+    arrays: ...any|ArrayLike
+        Inputs to concatenate. May be passed as separate arguments or an array
+        of arguments. Each argument must either be a one-dimensional ndarray,
+        a zero-dimensional ndarray, or a scalar value.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = {{alias:@stdlib/ndarray/array}}( [ 5.0, 6.0, 7.0, 8.0 ] );
+    > var out = {{alias}}( x, y )
+    <ndarray>
+    > var arr = {{alias:@stdlib/ndarray/to-array}}( out )
+    [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
+
+
+{{alias}}.assign( ...arrays, out )
+    Concatenates provided input arguments and assigns results to an output
+    ndarray.
+
+    Parameters
+    ----------
+    arrays: ...any|ArrayLike
+        Inputs to concatenate. May be passed as separate arguments or an array
+        of arguments. Each argument must either be a one-dimensional ndarray,
+        a zero-dimensional ndarray, or a scalar value.
+
+    out: ndarray
+        Output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0 ] );
+    > var y = {{alias:@stdlib/ndarray/array}}( [ 3.0, 4.0 ] );
+    > var z = {{alias:@stdlib/ndarray/array}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var out = {{alias}}.assign( [ x, y ], z )
+    <ndarray>
+    > var bool = ( out === z )
+    true
+    > var arr = {{alias:@stdlib/ndarray/to-array}}( out )
+    [ 1.0, 2.0, 3.0, 4.0 ]
+
+    See Also
+    --------

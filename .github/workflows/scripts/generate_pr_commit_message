@@ -153,6 +153,9 @@ main() {
 	# Resolve the PR author's name and email using .mailmap:
 	pr_author_resolved=$(resolve_user "$pr_author_login")
 
+	# Fetch commits in the PR:
+	pr_commits=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/commits")
+
 	pr_author_id=$(echo "$pr_details" | jq -r '.user.id')
 	pr_author_emails=$(
 	{
@@ -180,9 +183,6 @@ main() {
 	# Extract reviewers:
 	pr_reviews=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/reviews")
 	reviewers=$(echo "$pr_reviews" | jq -r '.[] | select(.state == "APPROVED" ) | .user.login' | sort -u)
-
-	# Fetch commits in the PR:
-	pr_commits=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number/commits")
 
 	# Extract co-authors from commit messages:
 	co_authors=$(echo "$pr_commits" | jq -r '.[].commit.message' | grep -Eio 'Co-authored-by:.*' | sort -u)

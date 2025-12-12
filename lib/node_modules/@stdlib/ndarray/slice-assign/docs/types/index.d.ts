@@ -328,7 +328,6 @@ declare function sliceAssign<T = unknown, U = unknown>( x: typedndarray<T>, y: g
 * var s0 = null;
 * var s1 = new Slice( null, null, -1 );
 * var s2 = new Slice( null, null, -1 );
-* // returns <MultiSlice>
 *
 * // Perform assignment:
 * var out = sliceAssign( x, y, [ s0, s1, s2 ] );
@@ -386,7 +385,6 @@ declare function sliceAssign<T = unknown, U = unknown>( x: typedndarray<T>, y: g
 * var s0 = null;
 * var s1 = new Slice( null, null, -1 );
 * var s2 = new Slice( null, null, -1 );
-* // returns <MultiSlice>
 *
 * // Perform assignment:
 * var out = sliceAssign( x, y, s0, s1, s2 );

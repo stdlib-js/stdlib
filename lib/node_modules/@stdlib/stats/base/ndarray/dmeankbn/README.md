@@ -110,6 +110,18 @@ console.log( v );
 
 <!-- /.examples -->
 
+* * *
+
+<section class="references">
+
+## References
+
+-   Neumaier, Arnold. 1974. "Rounding Error Analysis of Some Methods for Summing Finite Sums." _Zeitschrift Für Angewandte Mathematik Und Mechanik_ 54 (1): 39–51. doi:[10.1002/zamm.19740540106][@neumaier:1974a].
+
+</section>
+
+<!-- /.references -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -123,6 +135,8 @@ console.log( v );
 <section class="links">
 
 [arithmetic-mean]: https://en.wikipedia.org/wiki/Arithmetic_mean
+
+[@neumaier:1974a]: https://doi.org/10.1002/zamm.19740540106
 
 </section>
 

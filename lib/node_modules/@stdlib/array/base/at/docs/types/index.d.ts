@@ -32,25 +32,17 @@ import { Collection, AccessorArrayLike, Complex128Array, Complex64Array } from '
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 *
 * var v = at( x, 0 );
-* // returns <Complex128>
+* // returns <Complex128>[ 1.0, 2.0 ]
 *
 * v = at( x, 1 );
-* // returns <Complex128>
+* // returns <Complex128>[ 3.0, 4.0 ]
 *
 * v = at( x, -2 );
-* // returns <Complex128>
-*
-* var re = real( v );
-* // returns 5.0
-*
-* var im = imag( v );
-* // returns 6.0
+* // returns <Complex128>[ 5.0, 6.0 ]
 */
 declare function at( x: Complex128Array, index: number ): Complex128 | void;
 
@@ -62,26 +54,18 @@ declare function at( x: Complex128Array, index: number ): Complex128 | void;
 * @returns array element
 *
 * @example
-* var Complex128Array = require( '@stdlib/array/complex64' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
+* var Complex64Array = require( '@stdlib/array/complex64' );
 *
 * var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 *
 * var v = at( x, 0 );
-* // returns <Complex64>
+* // returns <Complex64>[ 1.0, 2.0 ]
 *
 * v = at( x, 1 );
-* // returns <Complex64>
+* // returns <Complex64>[ 3.0, 4.0 ]
 *
 * v = at( x, -2 );
-* // returns <Complex64>
-*
-* var re = realf( v );
-* // returns 5.0
-*
-* var im = imagf( v );
-* // returns 6.0
+* // returns <Complex64>[ 5.0, 6.0 ]
 */
 declare function at( x: Complex64Array, index: number ): Complex64 | void;
 

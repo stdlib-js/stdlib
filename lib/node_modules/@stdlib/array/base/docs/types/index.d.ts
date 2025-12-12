@@ -272,7 +272,7 @@ interface Namespace {
 	*
 	* @example
 	* var arr = new ns.AccessorArray( [ 1, 2, 3 ] );
-	* // returns <ns.AccessorArray>
+	* // returns <AccessorArray>
 	*
 	* var v = arr.get( 0 );
 	* // returns 1
@@ -329,7 +329,7 @@ interface Namespace {
 	* set( arr, 2, 10 );
 	*
 	* var v = arr.get( 2 );
-	* // returns 3
+	* // returns 10
 	*/
 	accessorSetter: typeof accessorSetter;
 
@@ -357,7 +357,7 @@ interface Namespace {
 	* var bool = obj.accessorProtocol;
 	* // returns false
 	*
-	* var fcns = obj.ns.accessors;
+	* var fcns = obj.accessors;
 	* // returns [ <Function>, <Function> ]
 	*
 	* var v = fcns[ 0 ]( x, 2 );
@@ -1995,7 +1995,7 @@ interface Namespace {
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
 	*
 	* var arr = ns.cuanyByRight.assign( x, y, 2, 0, isPositive );
-	* // returns [ false, null, false, null, false, null, true, null, true, null ]
+	* // returns [ false, null, ..., true, null ]
 	*/
 	cuanyByRight: typeof cuanyByRight;
 
@@ -2414,7 +2414,7 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Slice = require( '@stdlib/ns.fancySlice/ctor' );
+	* var Slice = require( '@stdlib/slice/ctor' );
 	*
 	* var x = [ 1, 2, 3, 4, 5, 6 ];
 	*
@@ -5910,7 +5910,7 @@ interface Namespace {
 	* var x = ones4d( shape );
 	* var y = zeros4d( shape );
 	*
-	* ns.unary4dBy( [ x, y ], shape, scale );
+	* ns.unary4dBy( [ x, y ], shape, scale, accessor );
 	*
 	* console.log( y );
 	* // => [ [ [ [ -10.0, -10.0 ], [ -10.0, -10.0 ] ] ] ]
