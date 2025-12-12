@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/sapxsumkbn",
   "version": "0.0.0",
-  "description": "Add a constant to each single-precision floating-point strided array element and compute the sum using an improved Kahan–Babuška algorithm.",
+  "description": "Add a scalar constant to each single-precision floating-point strided array element and compute the sum using an improved Kahan–Babuška algorithm.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import gfill = require( './index' );
 
 
@@ -26,6 +27,7 @@ import gfill = require( './index' );
 	const x = new Float64Array( 10 );
 
 	gfill( x.length, 5.0, x, 1 ); // $ExpectType Collection<number>
+	gfill( x.length, 5.0, new AccessorArray( x ), 1 ); // $ExpectType AccessorArrayLike<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -84,6 +86,7 @@ import gfill = require( './index' );
 	const x = new Float64Array( 10 );
 
 	gfill.ndarray( x.length, 5.0, x, 1, 0 ); // $ExpectType Collection<number>
+	gfill.ndarray( x.length, 5.0, new AccessorArray( x ), 1, 0 ); // $ExpectType AccessorArrayLike<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

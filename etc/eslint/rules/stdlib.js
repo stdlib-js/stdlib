@@ -1,3 +1,5 @@
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest, stdlib/jsdoc-example-require-spacing, stdlib/jsdoc-no-tabs */
+
 /**
 * @license Apache-2.0
 *
@@ -15,8 +17,6 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-
-/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest */
 
 'use strict';
 
@@ -69,7 +69,7 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 		'stdlib',
 		'throws'
 	]
-} ];
+}];
 
 /**
 * Enforce that return annotation values match actual output.
@@ -199,6 +199,52 @@ rules[ 'stdlib/doctest-quote-props' ] = 'error';
 * }
 */
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
+
+/**
+* Disallow spaces between an opening parenthesis or bracket and a nested object or array expression at the end of a line.
+*
+* @name eol-open-bracket-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var log = require( '@stdlib/console/log' );
+*
+* log( {
+*   'foo': true
+* });
+*
+* log( [
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log( [ {
+*   'bar': true
+* }]);
+*
+* @example
+* // Good...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* });
+*
+* log([
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log([{
+*   'bar': true
+* }]);
+*/
+rules[ 'stdlib/eol-open-bracket-spacing' ] = 'error';
 
 /**
 * Require blockquotes to have `2` character indentation.
@@ -791,6 +837,49 @@ rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 * var ceil = Math.ceil;
 */
 rules[ 'stdlib/jsdoc-empty-line-before-example' ] = 'error';
+
+/**
+* Enforce empty lines between requires and code in JSDoc examples.
+*
+* @name jsdoc-example-require-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Fréchet distribution constructor.
+* *
+* * @module @stdlib/stats/base/dists/frechet/ctor
+* *
+* * @example
+* * var Frechet = require( '@stdlib/stats/base/dists/frechet/ctor' );
+* * var frechet = new Frechet( 1.0, 1.0, 0.5 );
+* *
+* * var y = frechet.cdf( 0.8 );
+* * // returns ~0.036
+* *\/
+*
+* @example
+* // Good...
+*
+* /**
+* * Fréchet distribution constructor.
+* *
+* * @module @stdlib/stats/base/dists/frechet/ctor
+* *
+* * @example
+* * var Frechet = require( '@stdlib/stats/base/dists/frechet/ctor' );
+* *
+* * var frechet = new Frechet( 1.0, 1.0, 0.5 );
+* *
+* * var y = frechet.cdf( 0.8 );
+* * // returns ~0.036
+* *\/
+*/
+rules[ 'stdlib/jsdoc-example-require-spacing' ] = 'error';
 
 /**
 * Require `\`` be used as the fenced code marker.
@@ -3816,6 +3905,52 @@ rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 rules[ 'stdlib/jsdoc-main-export' ] = 'error';
 
 /**
+* Disallow spaces between a closing parenthesis or bracket and a nested object or array expression at the beginning of a line.
+*
+* @name line-closing-bracket-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* } );
+*
+* log([
+*   1,
+*   2,
+*   3
+* ] );
+*
+* log([{
+*   'bar': true
+* } ] );
+*
+* @example
+* // Good...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* });
+*
+* log([
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log([{
+*   'bar': true
+* }]);
+*/
+rules[ 'stdlib/line-closing-bracket-spacing' ] = 'error';
+
+/**
 * Enforce that export statements are placed at the end of a file.
 *
 * @name module-exports-last
@@ -4095,6 +4230,30 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 rules[ 'stdlib/no-multiple-empty-lines' ] = 'error';
 
 /**
+* Disallow usage of the built-in global `BigInt` literal syntax and constructor.
+*
+* @name no-builtin-big-int
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var x = BigInt( 123 );
+* console.log( typeof x );
+* // => 'bigint'
+*
+* @example
+* // Good...
+* var BigInt = require( '@stdlib/bigint/ctor' );
+*
+* var x = BigInt( 123 );
+* console.log( typeof x );
+* // => 'bigint'
+*/
+rules[ 'stdlib/no-builtin-big-int' ] = 'error';
+
+/**
 * Disallow usage of the built-in global `Math` object.
 *
 * @name no-builtin-math
@@ -4174,6 +4333,77 @@ rules[ 'stdlib/no-dynamic-exports' ] = 'error';
 * var special = require( '@stdlib/math/base/special' );
 */
 rules[ 'stdlib/no-nested-require' ] = 'error';
+
+/**
+* Enforce moving inner function declarations to the highest possible scope.
+*
+* @name no-unnecessary-nested-functions
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* function outer() {
+*     function inner() {
+*         return 42;
+*     }
+*     return inner();
+* }
+*
+* @example
+* // Good...
+* function inner() {
+*     return 42;
+* }
+*
+* function outer() {
+*     return inner();
+* }
+*
+* @example
+* // Good (uses outer scope variable)...
+* function outer( x ) {
+*     var multiplier = 2;
+*     function inner() {
+*         return x * multiplier;
+*     }
+*     return inner();
+* }
+*/
+rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'error';
+
+/**
+* Disallow the use of the `new Array()` constructor.
+*
+* @name no-new-array
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var arr = new Array( 5 );
+* var i;
+* for ( i = 0; i < 5; i++ ) {
+*     arr[ i ] = i;
+* }
+*
+* console.log( arr );
+* // => [ 0, 1, 2, 3, 4 ]
+*
+* @example
+* // Good...
+* var arr = [];
+* var i;
+* for ( i = 0; i < 5; i++ ) {
+*     arr.push( i );
+* }
+*
+* console.log( arr );
+* // => [ 0, 1, 2, 3, 4 ]
+*/
+rules[ 'stdlib/no-new-array' ] = 'error';
 
 /**
 * Never allow a variable to be declared multiple times within the same scope or for built-in globals to be redeclared.
@@ -4416,6 +4646,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'Boolean',
 		'Buffer', // Node.js
 		'DataView',
+		'Float16Array', // ES16/ES2025
 		'Float32Array',
 		'Float64Array',
 		'Function',

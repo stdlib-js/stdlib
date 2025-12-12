@@ -52,7 +52,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -67,13 +67,26 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
+      # Restore cache if up-to-date:
+      - name: 'Restore cache if up-to-date'
+        # Pin action to full length commit SHA
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        id: cache
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Install dependencies'
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
@@ -120,7 +133,15 @@ jobs:
       - name: 'Lint against EditorConfig'
         if: success() || failure()
         run: |
-          make lint-editorconfig-files FILES="${{ steps.changed-files.outputs.files }}"
+          make lint-editorconfig-files EDITORCONFIG_FORMAT=github-actions FILES="${{ steps.changed-files.outputs.files }}"
+
+      # Save cache after editorconfig-checker binary has been downloaded:
+      - name: 'Save cache after editorconfig-checker binary has been downloaded'
+        if: always() && steps.cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        with:
+          path: ${{ github.workspace }}/node_modules
+          key: ${{ steps.cache.outputs.cache-primary-key }}
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
@@ -135,7 +156,7 @@ jobs:
       - name: 'Lint shell script files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             # Install shellcheck:
             make install-deps-shellcheck
@@ -251,7 +272,7 @@ jobs:
       - name: 'Setup R'
         if: ( success() || failure() ) && steps.check-r-files.outputs.files != ''
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@473c68190595b311a74f208fba61a8d8c0d4c247 # v2.11.1
+        uses: r-lib/actions/setup-r@6f6e5bc62fba3a704f74e7ad7ef7676c5c6a2590 # v2.11.4
         with:
           r-version: '3.5.3'
 

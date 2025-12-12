@@ -72,8 +72,8 @@ var bool = iterNoneBy( array2iterator( [] ), predicate );
 
 A `predicate` function is provided two arguments:
 
--   **value**: iterated value
--   **index**: iteration index (zero-based)
+-   **value**: iterated value.
+-   **index**: iteration index (zero-based).
 
 To set the execution context of the `predicate` function, provide a `thisArg`.
 

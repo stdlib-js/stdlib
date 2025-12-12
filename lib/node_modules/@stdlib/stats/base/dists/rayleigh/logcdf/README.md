@@ -144,7 +144,7 @@ for ( i = 0; i < 10; i++ ) {
     x = randu() * 10.0;
     sigma = randu() * 10.0;
     y = logcdf( x, sigma );
-    console.log( 'x: %d, σ: %d, log(F(x;σ)): %d', x.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
+    console.log( 'x: %d, σ: %d, ln(F(x;σ)): %d', x.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
 }
 ```
 
@@ -234,7 +234,7 @@ int main( void ) {
         x = random_uniform( 0.0, 10.0 );
         sigma = random_uniform( 0.0, 10.0 );
         y = stdlib_base_dists_rayleigh_logcdf( x, sigma );
-        printf( "x: %lf, σ: %lf, f(x;σ): %lf\n", x, sigma, y );
+        printf( "x: %lf, σ: %lf, ln(F(x;σ)): %lf\n", x, sigma, y );
     }
 }
 ```

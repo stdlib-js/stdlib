@@ -21,15 +21,15 @@
 #include <stdio.h>
 
 int main( void ) {
-    float x;
-    float y;
-    float v;
-    int i;
+	float x;
+	float y;
+	float v;
+	int i;
 
-    for ( i = 0; i < 100; i++ ) {
-        x = ( ( (float)rand() / (float)RAND_MAX ) * 1000.0f ) - 500.0f;
-        y = ( ( (float)rand() / (float)RAND_MAX ) * 1000.0f ) - 500.0f;
-        v = stdlib_base_minabsf( x, y );
-        printf( "x: %f, y: %f, minabsf(x, y): %f\n", x, y, v );
-    }
+	for ( i = 0; i < 100; i++ ) {
+		x = ( ( (float)rand() / (float)RAND_MAX ) * 1000.0f ) - 500.0f;
+		y = ( ( (float)rand() / (float)RAND_MAX ) * 1000.0f ) - 500.0f;
+		v = stdlib_base_minabsf( x, y );
+		printf( "x: %f, y: %f, minabsf(x, y): %f\n", x, y, v );
+	}
 }

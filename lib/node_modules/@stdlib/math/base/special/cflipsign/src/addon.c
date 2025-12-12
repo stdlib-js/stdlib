@@ -19,5 +19,4 @@
 #include "stdlib/math/base/special/cflipsign.h"
 #include "stdlib/math/base/napi/binary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_ZD_Z( stdlib_base_cflipsign )

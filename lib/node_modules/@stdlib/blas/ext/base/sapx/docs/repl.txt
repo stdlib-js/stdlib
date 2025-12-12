@@ -1,7 +1,7 @@
 
-{{alias}}( N, alpha, x, stride )
-    Adds a constant to each element in a single-precision floating-point strided
-    array.
+{{alias}}( N, alpha, x, strideX )
+    Adds a scalar constant to each element in a single-precision floating-point
+    strided array.
 
     The `N` and stride parameters determine which elements in the strided array
     are accessed at runtime.
@@ -17,13 +17,13 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Float32Array
         Input array.
 
-    stride: integer
-        Index increment.
+    strideX: integer
+        Stride length.
 
     Returns
     -------
@@ -37,7 +37,7 @@
     > {{alias}}( x.length, 5.0, x, 1 )
     <Float32Array>[ 3.0, 6.0, 8.0, 0.0, 9.0, 4.0, 2.0 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ] );
     > {{alias}}( 3, 5.0, x, 2 )
     <Float32Array>[ 3.0, 1.0, 8.0, -5.0, 9.0, -1.0, -3.0 ]
@@ -51,13 +51,13 @@
     <Float32Array>[ 1.0, 3.0, 3.0, 1.0, 5.0, -1.0 ]
 
 
-{{alias}}.ndarray( N, alpha, x, stride, offset )
-    Adds a constant to each element in a single-precision floating-point strided
-    array using alternative indexing semantics.
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX )
+    Adds a scalar constant to each element in a single-precision floating-point
+    strided array using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
 
     Parameters
     ----------
@@ -65,15 +65,15 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Float32Array
         Input array.
 
-    stride: integer
-        Index increment.
+    strideX: integer
+        Stride length.
 
-    offset: integer
+    offsetX: integer
         Starting index.
 
     Returns

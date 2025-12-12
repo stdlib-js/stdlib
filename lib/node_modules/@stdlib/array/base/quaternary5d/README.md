@@ -41,7 +41,7 @@ var quaternary5d = require( '@stdlib/array/base/quaternary5d' );
 Applies a quaternary callback to elements in four five-dimensional nested input arrays and assigns results to elements in a five-dimensional nested output array.
 
 ```javascript
-var add = require( '@stdlib/math/base/ops/add4' );
+var add = require( '@stdlib/number/float64/base/add4' );
 var zeros5d = require( '@stdlib/array/base/zeros5d' );
 
 var x = [ [ [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ] ] ];
@@ -83,7 +83,7 @@ The function accepts the following arguments:
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filled5dBy = require( '@stdlib/array/base/filled5d-by' );
 var zeros5d = require( '@stdlib/array/base/zeros5d' );
-var add = require( '@stdlib/math/base/ops/add4' );
+var add = require( '@stdlib/number/float64/base/add4' );
 var quaternary5d = require( '@stdlib/array/base/quaternary5d' );
 
 var shape = [ 1, 1, 3, 3, 3 ];

@@ -65,5 +65,82 @@
     "alternating",
     "number",
     "number theory"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "eta",
+      "alias": "eta",
+      "pkg_desc": "evaluate the Dirichlet eta function for a double-precision floating-point number",
+      "desc": "evaluates the Dirichlet eta function for a double-precision floating-point number",
+      "short_desc": "Dirichlet eta",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -5,
+              5
+            ]
+          },
+          "example_values": [
+            -4.73,
+            3.91,
+            -2.58,
+            1.67,
+            -0.42,
+            0.35,
+            -1.84,
+            4.26,
+            -3.17,
+            2.09,
+            -0.77,
+            1.23,
+            -4.05,
+            0.68,
+            -2.91,
+            3.44,
+            -1.12,
+            4.88,
+            -0.19,
+            2.71
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "eta",
+        "zeta",
+        "dirichlet",
+        "series",
+        "alternating",
+        "number",
+        "number theory"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

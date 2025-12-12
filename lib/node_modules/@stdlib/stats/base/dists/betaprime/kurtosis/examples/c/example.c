@@ -32,8 +32,8 @@ int main( void ) {
 	int i;
 
 	for ( i = 0; i < 25; i++ ) {
-		alpha = random_uniform( 0, 20 );
-		beta = random_uniform( 0, 20 ) + 4.0;
+		alpha = random_uniform( 0.0, 20.0 );
+		beta = random_uniform( 4.0, 24.0 );
 		y = stdlib_base_dists_betaprime_kurtosis( alpha, beta );
 		printf( "α: %lf, β: %lf, Kurt(X;α,β): %lf\n", alpha, beta, y );
 	}

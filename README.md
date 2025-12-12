@@ -77,9 +77,10 @@ Thank you for being a part of our community! Your support is invaluable to us!
 
 ### External Resources
 
--   [**Open Collective**][open-collective-stdlib]
--   [**Twitter**][stdlib-twitter]
--   [**Gitter**][stdlib-gitter]
+-   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including [open office hours][stdlib-office-hours].
+-   [**Open Collective**][open-collective-stdlib]: financially support the project.
+-   [**Bluesky**][stdlib-bluesky]: follow us on social media.
+-   [**Gitter**][stdlib-gitter]: chat with project maintainers and other community members.
 
 ## Features
 
@@ -161,7 +162,7 @@ Thank you for being a part of our community! Your support is invaluable to us!
 
 To accommodate various use cases, stdlib can be used in multiple ways. The preferred method of use depends on your individual use case. We've provided some user stories to help you identify the best approach. 😃
 
-While this project's installation instructions defaults to using [npm][npm] for package management, installation via other package managers, such as [yarn][yarn], should be a matter of simply swapping out [npm][npm] commands with those of the relevant package manager.
+While this project's installation instructions default to using [npm][npm] for package management, installation via other package managers, such as [yarn][yarn], should be a matter of simply swapping out [npm][npm] commands with those of the relevant package manager.
 
 ### User Stories
 
@@ -182,11 +183,11 @@ While this project's installation instructions defaults to using [npm][npm] for 
     -   I would like to include stdlib functionality by just using a `script` tag.
 
         -   I would like to use ES Modules.
-        
+
             -   Use an individual package's ES Module [build](#install_env_builds_esm).
-            
+
         -   I would like to use a pre-built bundle (possibly via a CDN, such as [unpkg][unpkg] or [jsDelivr][jsdelivr]).
-        
+
             -   Install (or consume via a CDN) an individual package's pre-built UMD [browser bundle](#install_env_builds_umd).
 
     -   I am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
@@ -200,9 +201,9 @@ While this project's installation instructions defaults to using [npm][npm] for 
     -   I am interested in using various functionality found in stdlib.
 
         -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
-    
+
     -   I would like to **vendor** stdlib functionality and avoid dependency trees.
-        
+
         -   Install individual package UMD [bundles](#install_env_builds_nodejs).
 
     -   I am interested in using a _substantial_ amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages.
@@ -562,7 +563,7 @@ stdlib development is generously supported by the following sponsors:
 <div class="image" align="center">
     <br>
     <a href="https://labs.quansight.org/">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2719e1d3ecab2cc29985bca35fd33594e65adb55/docs/assets/sponsors/quansight_labs_logo.png" alt="Quansight Labs">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@a064751967bcc3419f5877716b23cf5e1064ab26/docs/assets/sponsors/quansight_labs_logo.png" alt="Quansight Labs">
     </a>
     <br>
     <br>
@@ -599,6 +600,54 @@ Does your organization use stdlib? If so, we'd love to hear from you!
 
 <!-- /.users -->
 
+<!-- Google Summer of Code -->
+
+* * *
+
+<section class="gsoc">
+
+## Google Summer of Code
+
+stdlib is a proud participant in the Google Summer of Code program. If you are new to open source and want to learn more about how to participate, be sure to check out our [Google Summer of Code resources][stdlib-gsoc] and the stdlib [wiki][stdlib-wiki] for details on past projects!
+
+<div class="image" align="center">
+    <br>
+    <a href="https://summerofcode.withgoogle.com">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9eb11556f417ea8706c2f57719bb725f78466680/docs/assets/misc/gsoc_logo.png" alt="Google Summer of Code">
+    </a>
+    <br>
+    <br>
+</div>
+
+</section>
+
+<!-- /.gsoc -->
+
+<!-- Project funding acknowledgments. If acknowledgments are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+* * *
+
+<section class="funding-acknowledgments">
+
+## Funding Acknowledgments
+
+This work was supported in part by the National Science Foundation under [Award No. 2449410][nsf-award-2449410].
+
+> Disclaimer: Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+
+<div class="image" align="center">
+    <br>
+    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2449410&HistoricalAwards=false">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@886b0c645787542774d5bcefde429f6e3db59b57/docs/assets/sponsors/nsf.png" alt="National Science Foundation" width="200">
+    </a>
+    <br>
+    <br>
+</div>
+
+</section>
+
+<!-- /.funding-acknowledgments -->
+
 * * *
 
 ## Governance
@@ -611,7 +660,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright © 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright © 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -657,6 +706,10 @@ Copyright © 2016-2024. The Stdlib [Authors][stdlib-authors].
 #### Community
 
 [![Chat][chat-image]][chat-url]
+
+Have something you want to discuss? In addition to the community chat, we hold regular [office hours][stdlib-office-hours] over video conferencing, which is a great opportunity to ask questions, share ideas, and engage directly with the stdlib team.
+
+You can also subscribe to our [project calendar][stdlib-public-calendar] to stay informed about the latest public community events.
 
 </section>
 
@@ -761,7 +814,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
 
-[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md
+[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
@@ -779,11 +832,21 @@ Test and build infrastructure is generously provided by the following services:
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
+[stdlib-public-calendar]: https://calendar.google.com/calendar/embed?src=a72677fe2820c833714b8b9a2aa87393f742bcaf0d0f6c9499eee6661795eae0%40group.calendar.google.com
+
+[stdlib-office-hours]: https://github.com/stdlib-js/meetings/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22Office%20Hours%22
+
 [open-collective-stdlib]: https://opencollective.com/stdlib
 
-[stdlib-twitter]: https://twitter.com/stdlibjs
+<!-- [stdlib-twitter]: https://twitter.com/stdlibjs -->
+
+[stdlib-bluesky]: https://bsky.app/profile/stdlib.io
 
 [stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+
+[stdlib-gsoc]: https://github.com/stdlib-js/google-summer-of-code
+
+[stdlib-wiki]: https://github.com/stdlib-js/stdlib/wiki
 
 [@stdlib/math/base/special]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special
 
@@ -808,6 +871,8 @@ Test and build infrastructure is generously provided by the following services:
 [@stdlib/math-base-special-erf-esm]: https://github.com/stdlib-js/math-base-special-erf/tree/esm
 
 [@stdlib/math-base-special-erf-umd]: https://github.com/stdlib-js/math-base-special-erf/tree/umd
+
+[nsf-award-2449410]: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2449410&HistoricalAwards=false
 
 </section>
 

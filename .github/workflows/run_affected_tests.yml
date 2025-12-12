@@ -86,6 +86,9 @@ jobs:
     # Define a display name:
     name: 'Run affected tests'
 
+    # Only run this job if a pull request does not have a "ci: Skip" label:
+    if: "${{ github.event_name != 'pull_request' || !contains(github.event.pull_request.labels.*.name, 'ci: Skip') }}"
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -94,7 +97,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -104,18 +107,34 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
         timeout-minutes: 10
 
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
+      # Cache dependencies:
+      - name: 'Cache dependencies'
+        # Pin action to full length commit SHA
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        id: cache
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Install dependencies'
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15

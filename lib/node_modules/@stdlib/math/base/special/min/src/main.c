@@ -37,20 +37,20 @@
 * // returns -0.0
 */
 double stdlib_base_min( const double x, const double y ) {
-    if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
-        return 0.0 / 0.0; // NaN
-    }
-    if ( x == STDLIB_CONSTANT_FLOAT64_NINF || y == STDLIB_CONSTANT_FLOAT64_NINF ) {
-        return STDLIB_CONSTANT_FLOAT64_NINF;
-    }
-    if( x == y && x == 0.0 ) {
-        if ( stdlib_base_is_negative_zero ( x ) ) {
-            return x;
-        }
-        return y;
-    }
-    if ( x < y ) {
-        return x;
-    }
-    return y;
+	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( x == STDLIB_CONSTANT_FLOAT64_NINF || y == STDLIB_CONSTANT_FLOAT64_NINF ) {
+		return STDLIB_CONSTANT_FLOAT64_NINF;
+	}
+	if( x == y && x == 0.0 ) {
+		if ( stdlib_base_is_negative_zero ( x ) ) {
+			return x;
+		}
+		return y;
+	}
+	if ( x < y ) {
+		return x;
+	}
+	return y;
 }

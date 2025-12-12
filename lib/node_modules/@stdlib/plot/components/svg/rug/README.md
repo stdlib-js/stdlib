@@ -146,8 +146,8 @@ var data = node.data;
 
 **Writable** property whose value is a predicate `function` which indicates whether a datum is defined and thus determines how missing values are encoded. When invoked, the function is provided two arguments:
 
--   **d**: datum
--   **i**: datum index
+-   **d**: datum.
+-   **i**: datum index.
 
 ```javascript
 function isDefined( d ) {
@@ -181,8 +181,8 @@ var label = node.label;
 
 When retrieved, the returned value is always an accessor which accepts two parameters:
 
--   **d**: datum
--   **i**: datum index
+-   **d**: datum.
+-   **i**: datum index.
 
 <a name="property-opacity"></a>
 
@@ -201,8 +201,8 @@ var opacity = node.opacity;
 
 When retrieved, the returned value is always an accessor which accepts two parameters:
 
--   **d**: datum
--   **i**: datum index
+-   **d**: datum.
+-   **i**: datum index.
 
 <a name="property-orientation"></a>
 

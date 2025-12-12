@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import gsorthp = require( './index' );
 
 
@@ -25,7 +26,8 @@ import gsorthp = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	gsorthp( x.length, 1, x, 1 ); // $ExpectType NumericArray
+	gsorthp( x.length, 1, x, 1 ); // $ExpectType Float64Array
+	gsorthp( x.length, 1, new AccessorArray( x ), 1 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -100,7 +102,8 @@ import gsorthp = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	gsorthp.ndarray( x.length, 1, x, 1, 0 ); // $ExpectType NumericArray
+	gsorthp.ndarray( x.length, 1, x, 1, 0 ); // $ExpectType Float64Array
+	gsorthp.ndarray( x.length, 1, new AccessorArray( x ), 1, 0 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

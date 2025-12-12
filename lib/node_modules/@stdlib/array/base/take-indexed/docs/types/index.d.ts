@@ -23,7 +23,7 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
-* Takes element from an indexed array.
+* Takes elements from an indexed array.
 *
 * ## Notes
 *

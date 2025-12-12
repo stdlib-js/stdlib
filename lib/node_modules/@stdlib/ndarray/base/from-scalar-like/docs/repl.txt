@@ -1,0 +1,44 @@
+
+{{alias}}( x, value )
+    Returns a zero-dimensional ndarray containing a provided scalar value and
+    having the same data type as a provided input ndarray.
+
+    Along with data type and order, the function infers the "class" of the
+    returned ndarray from the provided ndarray. For example, if provided a
+    "base" ndarray, the function returns a base ndarray. If provided a non-base
+    ndarray, the function returns a non-base ndarray.
+
+    If `value` is a number and a provided ndarray has a complex number data
+    type, the function returns a zero-dimensional ndarray containing a complex
+    number whose real component equals the provided scalar value and whose
+    imaginary component is zero.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    value: any
+        Scalar value.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'float64', [ 2, 2 ], 'row-major' )
+    <ndarray>
+    > var y = {{alias}}( x, 1.0 )
+    <ndarray>
+    > var sh = y.shape
+    []
+    > var dt = y.dtype
+    'float64'
+    > var v = y.get()
+    1.0
+
+    See Also
+    --------
+

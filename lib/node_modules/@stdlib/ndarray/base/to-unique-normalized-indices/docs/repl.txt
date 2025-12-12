@@ -1,0 +1,29 @@
+
+{{alias}}( indices, max )
+    Returns a list of unique indices after normalizing to the interval [0,max].
+
+    If an index exceeds index bounds, the function returns `null`.
+
+    Parameters
+    ----------
+    indices: Collection<integer>
+        Indices to normalize.
+
+    max: integer
+        Maximum index value.
+
+    Returns
+    -------
+    out: Array<integer>|null
+        Normalized indices.
+
+    Examples
+    --------
+    > var idx = {{alias}}( [ 2, -5 ], 10 )
+    [ 2, 6 ]
+    > idx = {{alias}}( [ 15 ], 10 )
+    null
+
+    See Also
+    --------
+

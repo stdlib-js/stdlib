@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Returns the kurtosis of a binomial distribution.
+* Returns the excess kurtosis of a binomial distribution.
 *
 * ## Notes
 *

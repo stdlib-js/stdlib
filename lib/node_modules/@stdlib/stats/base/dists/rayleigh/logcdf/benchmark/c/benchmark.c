@@ -18,7 +18,6 @@
 
 #include "stdlib/stats/base/dists/rayleigh/logcdf.h"
 #include "stdlib/constants/float64/eps.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -103,7 +102,7 @@ static double benchmark( void ) {
 
 	for ( i = 0; i < 100; i++ ) {
 		x[ i ] = random_uniform( -100.0, 0.0 );
-		sigma[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS , STDLIB_CONSTANT_FLOAT64_EPS + 20.0 );
+		sigma[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, STDLIB_CONSTANT_FLOAT64_EPS + 20.0 );
 	}
 
 	t = tic();

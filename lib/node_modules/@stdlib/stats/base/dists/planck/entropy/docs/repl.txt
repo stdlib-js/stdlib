@@ -1,0 +1,27 @@
+
+{{alias}}( λ )
+    Returns the differential entropy of a Planck distribution with shape
+    parameter `λ` (in nats).
+
+    If `λ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    ~3.3030
+    > v = {{alias}}( 1.5 )
+    ~0.6833
+
+    See Also
+    --------
+

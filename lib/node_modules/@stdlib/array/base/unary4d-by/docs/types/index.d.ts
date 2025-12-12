@@ -104,7 +104,7 @@ type Unary<U, V> = ( value: U ) => V;
 * var x = ones4d( shape );
 * var y = zeros4d( shape );
 *
-* unary4dBy( [ x, y ], shape, scale );
+* unary4dBy( [ x, y ], shape, scale, accessor );
 *
 * console.log( y );
 * // => [ [ [ [ -10.0, -10.0 ], [ -10.0, -10.0 ] ] ] ]

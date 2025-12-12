@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/array/base/mskfilter-map",
   "version": "0.0.0",
-  "description": "Apply a mask to a provided input array.",
+  "description": "Apply a mask and a callback function to a provided input array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

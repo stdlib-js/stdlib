@@ -54,7 +54,7 @@ var s = enum2str( v );
 // returns 'transpose'
 ```
 
-If unable to resolve a operation string, the function returns `null`.
+If unable to resolve an operation string, the function returns `null`.
 
 ```javascript
 var v = enum2str( -999999999 );

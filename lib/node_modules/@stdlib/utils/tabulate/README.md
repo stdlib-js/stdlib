@@ -53,9 +53,9 @@ var out = tabulate( arr );
 
 The returned frequency table is an `array` of `arrays`. Each sub-array corresponds to a unique value in the input `collection` and is structured as follows:
 
--   `0`: unique value
--   `1`: value count
--   `2`: frequency percentage
+-   `0`: unique value.
+-   `1`: value count.
+-   `2`: frequency percentage.
 
 </section>
 

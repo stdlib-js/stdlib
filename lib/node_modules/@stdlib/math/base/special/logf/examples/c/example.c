@@ -21,15 +21,15 @@
 #include <stdio.h>
 
 int main( void ) {
-    float out;
-    float x;
-    float b;
-    int i;
+	float out;
+	float x;
+	float b;
+	int i;
 
-    for ( i = 0; i < 100; i++ ) {
-        x = ( (float)rand() / (float)RAND_MAX ) * 100.0f;
-        b = ( (float)rand() / (float)RAND_MAX ) * 5.0f;
-        out = stdlib_base_logf( x, b );
-        printf( "logf(%f, %f) = %f\n", x, b, out );
-    }
+	for ( i = 0; i < 100; i++ ) {
+		x = ( (float)rand() / (float)RAND_MAX ) * 100.0f;
+		b = ( (float)rand() / (float)RAND_MAX ) * 5.0f;
+		out = stdlib_base_logf( x, b );
+		printf( "logf(%f, %f) = %f\n", x, b, out );
+	}
 }

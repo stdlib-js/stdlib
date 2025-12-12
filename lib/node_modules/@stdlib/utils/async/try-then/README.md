@@ -76,7 +76,7 @@ trythenAsync( x, y, done );
 
 The function `x` is provided a single argument:
 
--   `clbk`: callback to invoke upon function completion
+-   `clbk`: callback to invoke upon function completion.
 
 The callback function accepts any number of arguments, with the first argument reserved for providing an error. If the error argument is falsy, the `done` callback is invoked with its first argument as `null` and all other provided arguments.
 
@@ -109,12 +109,12 @@ trythenAsync( x, y, done );
 
 If the error argument is truthy, the function invokes `y`. The number of arguments provided to `y` depends on the function's `length`. If `y` is a unary function, `y` is provided a single argument:
 
--   `clbk`: callback to invoke upon function completion
+-   `clbk`: callback to invoke upon function completion.
 
 Otherwise, `y` is provided two arguments:
 
--   `error`: the error from `x`
--   `clbk`: callback to invoke upon function completion
+-   `error`: the error from `x`.
+-   `clbk`: callback to invoke upon function completion.
 
 The callback function accepts any number of arguments, with the first argument reserved for providing an error. If the error argument is falsy, the `done` callback is invoked with its first argument equal to `null` and all other provided arguments. If the error argument is truthy, the `done` callback is invoked with only the error argument provided by `y`.
 

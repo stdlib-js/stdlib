@@ -66,7 +66,7 @@ v = iter.next().value;
 
 The function accepts the following `options`:
 
--   **order**: index iteration order. By default, the returned [iterator][mdn-iterator-protocol] returns values according to the layout order of the provided array. Accordingly, for row-major input arrays, the last dimension indices increment fastest. For column-major input arrays, the first dimension indices increment fastest. To override the inferred order and ensure that indices increment in a specific manor, regardless of the input array's layout order, explicitly set the iteration order. Note, however, that iterating according to an order which does not match that of the input array may, in some circumstances, result in performance degradation due to cache misses. Must be either `'row-major'` or `'column-major'`.
+-   **order**: index iteration order. By default, the returned [iterator][mdn-iterator-protocol] returns values according to the layout order of the provided array. Accordingly, for row-major input arrays, the last dimension indices increment fastest. For column-major input arrays, the first dimension indices increment fastest. To override the inferred order and ensure that indices increment in a specific manner, regardless of the input array's layout order, explicitly set the iteration order. Note, however, that iterating according to an order which does not match that of the input array may, in some circumstances, result in performance degradation due to cache misses. Must be either `'row-major'` or `'column-major'`.
 
 By default, the iterator iterates according to the layout order of the input [`ndarray`][@stdlib/ndarray/ctor]. To iterate according to a specified order, set the `order` option.
 

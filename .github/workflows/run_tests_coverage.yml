@@ -86,6 +86,9 @@ jobs:
     # Define a display name:
     name: 'Calculate test coverage for packages'
 
+    # Only run this job if a pull request does not have a "ci: Skip" label:
+    if: "${{ github.event_name != 'pull_request' || !contains(github.event.pull_request.labels.*.name, 'ci: Skip') }}"
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -94,7 +97,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -115,13 +118,26 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
           node-version: 20 # 'lts/*'
         timeout-minutes: 5
 
+      # Cache dependencies:
+      - name: 'Cache dependencies'
+        # Pin action to full length commit SHA
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        id: cache
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Install dependencies'
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
@@ -138,7 +154,7 @@ jobs:
         id: changed-directories
         continue-on-error: true
         env:
-          STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
             # Get the list of changed files in pull request:
@@ -172,9 +188,26 @@ jobs:
           echo "directories=${{ github.event.inputs.directories }}" >> $GITHUB_OUTPUT
         timeout-minutes: 5
 
+      # Exit early if non-package directories are changed:
+      - name: 'Exit early if non-package directories are changed'
+        id: check-changed
+        if: github.event_name != 'workflow_dispatch'
+        run: |
+          directories="${{ steps.changed-directories.outputs.directories }}"
+          skip="false"
+          for directory in $directories; do
+            if [[ "$directory" != "lib/node_modules/@stdlib"* ]]; then
+              echo "Warning: changed directory '$directory' is not in 'lib/node_modules/@stdlib'. Skipping the rest of the workflow."
+              skip="true"
+              break
+            fi
+          done
+          echo "skip=${skip}" >> $GITHUB_OUTPUT
+
       # Run JavaScript tests:
       - name: 'Run JavaScript tests'
         id: extract-coverage
+        if: steps.check-changed.outputs.skip == 'false'
         env:
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_REF: ${{ github.ref }}
@@ -199,6 +232,7 @@ jobs:
       # Create final coverage report:
       - name: 'Create final coverage report'
         id: create-report
+        if: steps.check-changed.outputs.skip == 'false'
         run: |
           table="${{ steps.extract-coverage.outputs.table }}"
           if [ -z "$table" ]; then
@@ -219,11 +253,11 @@ jobs:
 
       # Post report as comment to PR:
       - name: 'Post report as comment to PR'
-        if: github.event_name == 'pull_request_target'
+        if: github.event_name == 'pull_request_target' && steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
-          github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             const { data: comments } = await github.rest.issues.listComments({
               'issue_number': context.issue.number,
@@ -250,11 +284,11 @@ jobs:
 
       # Post report as comment to commit:
       - name: 'Post report as comment to commit'
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' && steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
-          github-token: ${{ secrets.CHATBOT_GITHUB_TOKEN }}
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
             github.rest.repos.createCommitComment({
               'commit_sha': context.sha,
@@ -265,8 +299,9 @@ jobs:
 
       # Checkout coverage repository:
       - name: 'Checkout coverage repository'
+        if: steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           # Code coverage repository:
           repository: 'stdlib-js/www-test-code-coverage'
@@ -281,10 +316,14 @@ jobs:
           fetch-depth: 1
 
           # Token for accessing the repository:
-          token: ${{ secrets.REPO_GITHUB_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
 
       # Checkout coverage repository branch:
       - name: 'Checkout coverage repository branch'
+        if: steps.check-changed.outputs.skip == 'false'
         run: |
           cd ./www-test-code-coverage
 
@@ -293,14 +332,15 @@ jobs:
             git fetch origin $BRANCH_NAME || true
             git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME
 
-            # Remove all files from the branch:
-            git rm -rf .
+            # Remove all directories except .github and .git from branch:
+            find . -mindepth 1 -maxdepth 1 -type d -not -name '.github' -not -name '.git' -exec git rm -rf {} +
           else
             BRANCH_NAME="main"
           fi
 
       # Copy artifacts to the repository:
       - name: 'Copy artifacts to the repository'
+        if: steps.check-changed.outputs.skip == 'false'
         run: |
           if [ -d "./artifacts" ]; then
             cp -R ./artifacts/* ./www-test-code-coverage
@@ -322,8 +362,9 @@ jobs:
 
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
+        if: steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
+        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
         with:
           gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
@@ -332,8 +373,9 @@ jobs:
 
       # Commit and push changes:
       - name: 'Commit and push changes'
+        if: steps.check-changed.outputs.skip == 'false'
         env:
-          REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           USER_NAME: stdlib-bot
         run: |
           cd ./www-test-code-coverage

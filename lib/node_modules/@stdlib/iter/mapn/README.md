@@ -74,8 +74,8 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 The invoked `function` is provided `N+1` arguments, where `N` is the number of provided [iterators][mdn-iterator-protocol] and the last argument is the iteration index:
 
--   `...value`: iterated values
--   `index`: iteration index (zero-based)
+-   `...value`: iterated values.
+-   `index`: iteration index (zero-based).
 
 ```javascript
 var array2iterator = require( '@stdlib/array/to-iterator' );

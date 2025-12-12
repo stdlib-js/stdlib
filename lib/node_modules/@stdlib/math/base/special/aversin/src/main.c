@@ -23,7 +23,7 @@
 * Computes the inverse versed sine of a double-precision floating-point number.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_aversin( 3.141592653589793/6.0 );

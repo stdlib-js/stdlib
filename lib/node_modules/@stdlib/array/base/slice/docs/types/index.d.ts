@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection, TypedArray, ComplexTypedArray } from '@stdlib/types/array';
+import { Collection, TypedArray, ComplexTypedArray, BooleanTypedArray } from '@stdlib/types/array';
 
 /**
 * Returns a shallow copy of a portion of an array.
@@ -46,7 +46,7 @@ import { Collection, TypedArray, ComplexTypedArray } from '@stdlib/types/array';
 * var out = slice( x, 0, 3 );
 * // returns <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 */
-declare function slice<T extends TypedArray | ComplexTypedArray>( x: T, start: number, end: number ): T;
+declare function slice<T extends TypedArray | ComplexTypedArray | BooleanTypedArray>( x: T, start: number, end: number ): T;
 
 /**
 * Returns a shallow copy of a portion of an array.

@@ -1,7 +1,6 @@
 
 {{alias}}( n )
-    Computes the nth negaLucas number in
-    single-precision floating-point format.
+    Computes the nth negaLucas number in single-precision floating-point format.
 
     The negaLucas numbers follow the recurrence relation
 

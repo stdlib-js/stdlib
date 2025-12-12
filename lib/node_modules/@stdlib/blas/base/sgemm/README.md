@@ -58,7 +58,7 @@ The function has the following parameters:
 -   **lda**: stride of the first dimension of `A` (leading dimension of `A`).
 -   **B**: second input matrix stored in linear memory as a [`Float32Array`][mdn-float32array].
 -   **ldb**: stride of the first dimension of `B` (leading dimension of `B`).
--   **β**: scalar constant
+-   **β**: scalar constant.
 -   **C**: third input matrix stored in linear memory as a [`Float32Array`][mdn-float32array].
 -   **ldc**: stride of the first dimension of `C` (leading dimension of `C`).
 

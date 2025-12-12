@@ -19,7 +19,7 @@
 import mskfilterMap = require( './index' );
 
 /**
-* Unary function.
+* Callback function.
 *
 * @param value - input value
 * @returns result
@@ -250,6 +250,7 @@ function clbk( value: number ): number {
 	const mask = [ 0.0, 0.0, 0.0, 0.0 ];
 
 	mskfilterMap.assign(); // $ExpectError
+	mskfilterMap.assign( x ); // $ExpectError
 	mskfilterMap.assign( x, mask ); // $ExpectError
 	mskfilterMap.assign( x, mask, [ 0, 0, 0, 0 ] ); // $ExpectError
 	mskfilterMap.assign( x, mask, [ 0, 0, 0, 0 ], 1 ); // $ExpectError

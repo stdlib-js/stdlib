@@ -26,6 +26,93 @@
     > var im = {{alias:@stdlib/complex/float64/imag}}( out )
     6.0
 
+
+{{alias}}.assign( re1, im1, re2, im2, out, strideOut, offsetOut )
+    Adds two double-precision complex floating-point numbers and assigns results
+    to a provided output array.
+
+    Parameters
+    ----------
+    re1: number
+        Real component of the first complex number.
+
+    im1: number
+        Imaginary component of the first complex number.
+
+    re2: number
+        Real component of the second complex number.
+
+    im2: number
+        Imaginary component of the second complex number.
+
+    out: ArrayLikeObject
+        Output array.
+
+    strideOut: integer
+        Stride length.
+
+    offsetOut: integer
+        Starting index.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float64}}( 2 );
+    > {{alias}}.assign( 5.0, 3.0, -2.0, 1.0, out, 1, 0 )
+    <Float64Array>[ 3.0, 4.0 ]
+
+
+{{alias}}.strided( z1, sz1, oz1, z2, sz2, oz2, out, so, oo )
+    Adds two double-precision complex floating-point numbers stored in real-
+    valued strided array views and assigns results to a provided strided output
+    array.
+
+    Parameters
+    ----------
+    z1: ArrayLikeObject
+        First complex number view.
+
+    sz1: integer
+        Stride length for `z1`.
+
+    oz1: integer
+        Starting index for `z1`.
+
+    z2: ArrayLikeObject
+        Second complex number view.
+
+    sz2: integer
+        Stride length for `z2`.
+
+    oz2: integer
+        Starting index for `z2`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    so: integer
+        Stride length for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var z1 = new {{alias:@stdlib/array/float64}}( [ 5.0, 3.0 ] );
+    > var z2 = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0 ] );
+    > var out = new {{alias:@stdlib/array/float64}}( 2 );
+    > {{alias}}.strided( z1, 1, 0, z2, 1, 0, out, 1, 0 )
+    <Float64Array>[ 3.0, 4.0 ]
+
     See Also
     --------
 

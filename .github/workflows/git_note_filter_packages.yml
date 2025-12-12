@@ -23,7 +23,7 @@ name: git_note_filter_packages
 on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
-    # Define the input parameters for the workflow:a
+    # Define the input parameters for the workflow:
     inputs:
       commit_hash:
         description: 'Commit hash to create note for'
@@ -52,9 +52,6 @@ on:
       STDLIB_BOT_GITHUB_TOKEN:
         description: 'GitHub token for stdlib-bot'
         required: true
-      REPO_GITHUB_TOKEN:
-        description: 'GitHub token for accessing the repository'
-        required: true
       STDLIB_BOT_GPG_PRIVATE_KEY:
         description: 'GPG private key for stdlib-bot'
         required: true
@@ -79,13 +76,16 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           # Fetch all history to allow creating a Git note for any commit:
           fetch-depth: 0
 
           # Token for accessing the repository:
-          token: ${{ secrets.REPO_GITHUB_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
 
       # Verify commit exists:
       - name: 'Verify commit exists'
@@ -129,7 +129,7 @@ jobs:
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-import-gpg@cb9bde2e2525e640591a934b1fd28eef1dcaf5e5 # v6.2.0
+        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
         with:
           gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
@@ -139,7 +139,7 @@ jobs:
       # Commit and push changes:
       - name: 'Commit and push changes'
         env:
-            REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+            REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
             USER_NAME: stdlib-bot
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"

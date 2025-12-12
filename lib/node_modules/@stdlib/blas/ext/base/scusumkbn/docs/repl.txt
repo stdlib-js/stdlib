@@ -23,13 +23,13 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     y: Float32Array
         Output array.
 
     strideY: integer
-        Index increment for `y`.
+        Stride length for `y`.
 
     Returns
     -------
@@ -55,8 +55,7 @@
     > var y0 = new {{alias:@stdlib/array/float32}}( x0.length );
     > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
     > var y1 = new {{alias:@stdlib/array/float32}}( y0.buffer, y0.BYTES_PER_ELEMENT*3 );
-    > N = {{alias:@stdlib/math/base/special/floor}}( x0.length / 2 );
-    > {{alias}}( N, 0.0, x1, 2, y1, 1 )
+    > {{alias}}( 3, 0.0, x1, 2, y1, 1 )
     <Float32Array>[ -2.0, 0.0, -1.0 ]
     > y0
     <Float32Array>[ 0.0, 0.0, 0.0, -2.0, 0.0, -1.0 ]
@@ -68,8 +67,8 @@
     semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the offset parameters support indexing semantics based on
-    starting indices.
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
 
     Parameters
     ----------
@@ -83,7 +82,7 @@
         Input array.
 
     strideX: integer
-        Index increment for `x`.
+        Stride length for `x`.
 
     offsetX: integer
         Starting index for `x`.
@@ -92,7 +91,7 @@
         Output array.
 
     strideY: integer
-        Index increment for `y`.
+        Stride length for `y`.
 
     offsetY: integer
         Starting index for `y`.

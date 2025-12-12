@@ -20,33 +20,33 @@
 #include <stdio.h>
 
 int main( void ) {
-    // Create strided arrays:
-    float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f };
-    float y[] = { 6.0f, 7.0f, 8.0f, 9.0f, 10.0f };
+	// Create strided arrays:
+	float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f };
+	float y[] = { 6.0f, 7.0f, 8.0f, 9.0f, 10.0f };
 
-    // Specify the number of elements:
-    const int N = 5;
+	// Specify the number of elements:
+	const int N = 5;
 
-    // Specify stride lengths:
-    const int strideX = 1;
-    const int strideY = 1;
+	// Specify stride lengths:
+	const int strideX = 1;
+	const int strideY = 1;
 
-    // Specify parameters for the modified Givens transformation:
-    const float param[5] = { 0.0f, 0.0f, 2.0f, -3.0f, 0.0f };
+	// Specify parameters for the modified Givens transformation:
+	const float param[5] = { 0.0f, 0.0f, 2.0f, -3.0f, 0.0f };
 
-    // Apply plane rotation:
-    c_srotm( N, x, strideX, y, strideY, param );
+	// Apply plane rotation:
+	c_srotm( N, x, strideX, y, strideY, param );
 
-    // Print the result:
-    for ( int i = 0; i < 5; i++ ) {
-        printf( "x[ %i ] = %f, y[ %i ] = %f\n", i, x[ i ], i, y[ i ] );
-    }
+	// Print the result:
+	for ( int i = 0; i < 5; i++ ) {
+		printf( "x[ %i ] = %f, y[ %i ] = %f\n", i, x[ i ], i, y[ i ] );
+	}
 
-    // Apply plane rotation:
-    c_srotm_ndarray( N, x, -strideX, N-1, y, -strideY, N-1, param );
+	// Apply plane rotation:
+	c_srotm_ndarray( N, x, -strideX, N-1, y, -strideY, N-1, param );
 
-    // Print the result:
-    for ( int i = 0; i < 5; i++ ) {
-        printf( "x[ %i ] = %f, y[ %i ] = %f\n", i, x[ i ], i, y[ i ] );
-    }
+	// Print the result:
+	for ( int i = 0; i < 5; i++ ) {
+		printf( "x[ %i ] = %f, y[ %i ] = %f\n", i, x[ i ], i, y[ i ] );
+	}
 }

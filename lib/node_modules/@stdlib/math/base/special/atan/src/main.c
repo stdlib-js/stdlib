@@ -106,7 +106,7 @@ static double polyval_q( const double x ) {
 *     | IEEE       | -10, 10 | 10^6     | 1.8e-16 | 5.0e-17 |
 *
 * @param x    input value
-* @return	  arctangent (in radians)
+* @return     arctangent (in radians)
 *
 * @example
 * double out = stdlib_base_atan( 0.0 );

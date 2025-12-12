@@ -30,9 +30,9 @@ limitations under the License.
 var grev = require( '@stdlib/blas/ext/base/grev' );
 ```
 
-#### grev( N, x, stride )
+#### grev( N, x, strideX )
 
-Reverses a strided array `x` in-place.
+Reverses a strided array in-place.
 
 ```javascript
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
@@ -45,17 +45,14 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input array.
--   **stride**: index increment.
+-   **strideX**: stride length.
 
-The `N` and `stride` parameters determine which elements in `x` are accessed at runtime. For example, to reverse every other element
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to reverse every other element:
 
 ```javascript
-var floor = require( '@stdlib/math/base/special/floor' );
-
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
-var N = floor( x.length / 2 );
 
-grev( N, x, 2 );
+grev( 4, x, 2 );
 // x => [ -1.0, 1.0, 4.0, -5.0, 3.0, 0.0, -2.0, -3.0 ]
 ```
 
@@ -63,23 +60,21 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var floor = require( '@stdlib/math/base/special/floor' );
 
 // Initial array...
 var x0 = new Float64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 
 // Create an offset view...
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var N = floor( x0.length/2 );
 
 // Reverse every other element...
-grev( N, x1, 2 );
+grev( 3, x1, 2 );
 // x0 => <Float64Array>[ 1.0, -6.0, 3.0, -4.0, 5.0, -2.0 ]
 ```
 
-#### grev.ndarray( N, x, stride, offset )
+#### grev.ndarray( N, x, strideX, offsetX )
 
-Reverses a strided array `x` in-place using alternative indexing semantics.
+Reverses a strided array in-place using alternative indexing semantics.
 
 ```javascript
 var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
@@ -90,9 +85,9 @@ grev.ndarray( x.length, x, 1, 0 );
 
 The function has the following additional parameters:
 
--   **offset**: starting index.
+-   **offsetX**: starting index.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to access only the last three elements of `x`
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to access only the last three elements:
 
 ```javascript
 var x = [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ];

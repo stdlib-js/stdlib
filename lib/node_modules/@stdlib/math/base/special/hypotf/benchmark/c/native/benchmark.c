@@ -92,16 +92,19 @@ static float rand_float( void ) {
 static double benchmark( void ) {
 	double elapsed;
 	double t;
-	float x;
-	float y;
+	float x[ 100 ];
+	float y[ 100 ];
 	float z;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 100.0f * rand_float() ) - 50.0f;
+		y[ i ] = ( 100.0f * rand_float() ) - 50.0f;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 100.0f*rand_float() ) - 50.0f;
-		y = ( 100.0f*rand_float() ) - 50.0f;
-		z = stdlib_base_hypotf( x, y );
+		z = stdlib_base_hypotf( x[ i % 100 ], y[ i % 100 ] );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;

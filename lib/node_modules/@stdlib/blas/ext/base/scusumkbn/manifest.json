@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/scusumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -41,13 +41,15 @@
         "@stdlib/napi/argv-float",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-float32array",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/scusumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -55,13 +57,15 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/scusumkbn.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -69,7 +73,9 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     }
   ]

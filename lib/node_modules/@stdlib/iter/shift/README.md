@@ -96,7 +96,7 @@ var bool = it.next().done;
 
 The callback function is provided a single argument:
 
--   **v**: the skipped value
+-   **v**: the skipped value.
 
 To set the callback execution context, provide a `thisArg`.
 
