@@ -233,7 +233,7 @@ interface Unary {
 * @example
 * var array = require( '@stdlib/ndarray/array' );
 *
-* var x = array( [ -1.0, 2.0, -3.0 ] )
+* var x = array( [ -1.0, 2.0, -3.0 ] );
 *
 * function clbk( value ) {
 *     return value * 2.0;

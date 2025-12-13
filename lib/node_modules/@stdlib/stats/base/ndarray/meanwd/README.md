@@ -27,7 +27,7 @@ limitations under the License.
 The [arithmetic mean][arithmetic-mean] is defined as
 
 <!-- <equation class="equation" label="eq:arithmetic_mean" align="center" raw="\mu = \frac{1}{n} \sum_{i=0}^{n-1} x_i" alt="Equation for the arithmetic mean."> -->
- 
+
 ```math
 \mu = \frac{1}{n} \sum_{i=0}^{n-1} x_i
 ```
@@ -46,7 +46,7 @@ The [arithmetic mean][arithmetic-mean] is defined as
 <section class="usage">
 
 ## Usage
- 
+
 ```javascript
 var meanwd = require( '@stdlib/stats/base/ndarray/meanwd' );
 ```
@@ -54,7 +54,7 @@ var meanwd = require( '@stdlib/stats/base/ndarray/meanwd' );
 #### meanwd( arrays )
 
 Computes the [arithmetic mean][arithmetic-mean] of a one-dimensional ndarray using Welford's algorithm.
- 
+
 ```javascript
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
