@@ -1,7 +1,7 @@
 
 {{alias}}( x )
     Returns a new ndarray where the order of elements along the last dimension
-    of an input ndarray is reversed along each dimension.
+    of an input ndarray is reversed.
 
     Parameters
     ----------

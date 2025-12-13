@@ -25,7 +25,7 @@ import gjoin = require( './index' );
 
 // TESTS //
 
-// The function returns a number...
+// The function returns a string...
 {
 	const x = zeros( [ 10 ], {
 		'dtype': 'generic'
