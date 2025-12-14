@@ -4158,6 +4158,25 @@ rules[ 'stdlib/no-dynamic-require' ] = 'error';
 rules[ 'stdlib/no-empty-comments' ] = 'error';
 
 /**
+* Disallow string concatenation in error messages.
+*
+* @name no-error-string-concat
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* throw new Error( 'invalid argument. Value: `' + value + '`.' );
+*
+* @example
+* // Good...
+* throw new Error( 'unexpected error.' );
+* throw new Error( format( 'invalid argument. Value: `%s`.', value ) );
+*/
+rules[ 'stdlib/no-error-string-concat' ] = 'error';
+
+/**
 * Enforce that `require()` expressions are not immediately invoked.
 *
 * @name no-immediate-require
