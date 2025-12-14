@@ -30,17 +30,9 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var real = require( '@stdlib/complex/float32/real' );
-* var imag = require( '@stdlib/complex/float32/imag' );
 *
 * var v = csignumf( new Complex64( -4.2, 5.5 ) );
-* // returns <Complex64>
-*
-* var re = real( v );
-* // returns ~-0.607
-*
-* var im = imag( v );
-* // returns ~0.795
+* // returns <Complex64>[ ~-0.607, ~0.795 ]
 */
 declare function csignumf( z: Complex64 ): Complex64;
 
