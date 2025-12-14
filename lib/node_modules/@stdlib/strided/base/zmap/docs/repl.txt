@@ -43,21 +43,13 @@
     > var y = new {{alias:@stdlib/array/complex128}}( x.length );
     > {{alias}}( x.length, x, 1, y, 1, {{alias:@stdlib/complex/float64/base/identity}} );
     > var v = y.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( v )
-    1.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( v )
-    2.0
+    <Complex128>[ 1.0, 2.0 ]
 
     // Using `N` and stride parameters:
     > y = new {{alias:@stdlib/array/complex128}}( x.length );
     > {{alias}}( 2, x, 2, y, -1, {{alias:@stdlib/complex/float64/base/identity}} );
     > v = y.get( 0 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( v )
-    5.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( v )
-    6.0
+    <Complex128>[ 5.0, 6.0 ]
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/complex128}}( xbuf );
@@ -66,11 +58,7 @@
     > var y1 = new {{alias:@stdlib/array/complex128}}( y0.buffer, y0.BYTES_PER_ELEMENT*2 );
     > {{alias}}( 2, x1, -2, y1, 1, {{alias:@stdlib/complex/float64/base/identity}} );
     > v = y1.get( 0 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( v )
-    7.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( v )
-    8.0
+    <Complex128>[ 7.0, 8.0 ]
 
 
 {{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, fcn )
@@ -121,22 +109,14 @@
     > var y = new {{alias:@stdlib/array/complex128}}( x.length );
     > {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0, {{alias:@stdlib/complex/float64/base/identity}} );
     > var v = y.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( v )
-    1.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( v )
-    2.0
+    <Complex128>[ 1.0, 2.0 ]
 
     // Advanced indexing:
     > x = new {{alias:@stdlib/array/complex128}}( xbuf );
     > y = new {{alias:@stdlib/array/complex128}}( x.length );
     > {{alias}}.ndarray( 2, x, 2, 1, y, -1, y.length-1, {{alias:@stdlib/complex/float64/base/identity}} );
     > v = y.get( y.length-1 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( v )
-    3.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( v )
-    4.0
+    <Complex128>[ 3.0, 4.0 ]
 
     See Also
     --------
