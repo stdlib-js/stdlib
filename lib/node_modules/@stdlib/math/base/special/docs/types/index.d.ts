@@ -2964,17 +2964,9 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var v = ns.cinv( new Complex128( 2.0, 4.0 ) );
-	* // returns <Complex128>
-	*
-	* var re = real( v );
-	* // returns 0.1
-	*
-	* var im = imag( v );
-	* // returns -0.2
+	* // returns <Complex128>[ ~0.1, ~-0.2 ]
 	*/
 	cinv: typeof cinv;
 
@@ -2986,17 +2978,9 @@ interface Namespace {
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var v = ns.cinvf( new Complex64( 2.0, 4.0 ) );
-	* // returns <Complex64>
-	*
-	* var re = realf( v );
-	* // returns ~0.1
-	*
-	* var im = imagf( v );
-	* // returns ~-0.2
+	* // returns <Complex64>[ ~0.1, ~-0.2 ]
 	*/
 	cinvf: typeof cinvf;
 
@@ -3648,13 +3632,7 @@ interface Namespace {
 	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var v = ns.cround( new Complex128( -4.2, 5.5 ) );
-	* // returns <Complex128>
-	*
-	* var re = real( v );
-	* // returns -4.0
-	*
-	* var im = imag( v );
-	* // returns 6.0
+	* // returns <Complex128>[ -4.0, 6.0 ]
 	*/
 	cround: typeof cround;
 
