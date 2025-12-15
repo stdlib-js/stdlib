@@ -108,20 +108,17 @@ y = kurtosis( 0.0, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var kurtosis = require( '@stdlib/stats/base/dists/normal/kurtosis' );
 
-var sigma;
-var mu;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var sigma = uniform( 10, 0.0, 20.0, opts );
+var mu = uniform( 10, -5.0, 5.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    mu = ( randu()*10.0 ) - 5.0;
-    sigma = randu() * 20.0;
-    y = kurtosis( mu, sigma );
-    console.log( 'µ: %d, σ: %d, Kurt(X;µ,σ): %d', mu.toFixed( 4 ), sigma.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'µ: %0.4f, σ: %0.4f, Kurt(X;µ,σ): %0.4f', mu, sigma, kurtosis );
 ```
 
 </section>
