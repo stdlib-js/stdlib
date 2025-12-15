@@ -23,6 +23,7 @@
 var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
+var format = require( '@stdlib/string/format' );
 var randu = require( '@stdlib/random/base/randu' );
 var pow = require( '@stdlib/math/base/special/pow' );
 var Float64Array = require( '@stdlib/array/float64' );
@@ -98,7 +99,7 @@ function main() {
 	for ( i = min; i <= max; i++ ) {
 		len = pow( 10, i );
 		f = createBenchmark( len );
-		bench( pkg+'::jstat:max:len='+len, opts, f );
+		bench( format( '%s::jstat:max:len=%d', pkg, len ), opts, f );
 	}
 }
 
