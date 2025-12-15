@@ -124,10 +124,7 @@ interface Unary {
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = rangeBy( x, clbk );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 10.0
+	* // returns <ndarray>[ 10.0 ]
 	*/
 	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, clbk: Callback<T, U, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, ThisArg>> ): OutputArray<number>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output ndarray data type is dependent on how `x` interacts with output data type policy and whether that policy has been overridden by `options.dtype`.
 
@@ -150,10 +147,7 @@ interface Unary {
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = rangeBy( x, {}, clbk );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 10.0
+	* // returns <ndarray>[ 10.0 ]
 	*/
 	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, options: Options, clbk: Callback<T, U, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, ThisArg>> ): OutputArray<number>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output ndarray data type is dependent on how `x` interacts with output data type policy and whether that policy has been overridden by `options.dtype`.
 
@@ -178,10 +172,7 @@ interface Unary {
 	* }
 	*
 	* var out = rangeBy.assign( x, y, clbk );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 10.0
+	* // returns <ndarray>[ 10.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -210,10 +201,7 @@ interface Unary {
 	* }
 	*
 	* var out = rangeBy.assign( x, y, {}, clbk );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 10.0
+	* // returns <ndarray>[ 10.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -240,10 +228,7 @@ interface Unary {
 * }
 *
 * var y = rangeBy( x, clbk );
-* // returns <ndarray>
-*
-* var v = y.get();
-* // returns 10.0
+* // returns <ndarray>[ 10.0 ]
 *
 * @example
 * var array = require( '@stdlib/ndarray/array' );
@@ -257,10 +242,7 @@ interface Unary {
 * }
 *
 * var out = rangeBy.assign( x, y, clbk );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns 10.0
+* // returns <ndarray>[ 10.0 ]
 *
 * var bool = ( out === y );
 * // returns true
