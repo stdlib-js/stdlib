@@ -23,6 +23,7 @@
 var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var format = require( '@stdlib/string/format' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var countBy = require( '@stdlib/utils/count-by' );
 var pkg = require( './../package.json' ).name;
@@ -38,7 +39,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:utils/count-by', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:utils/count-by', pkg ), opts, function benchmark( b ) {
 	var vals;
 	var arr;
 	var o;
@@ -72,7 +73,7 @@ bench( pkg+'::stdlib:utils/count-by', opts, function benchmark( b ) {
 	}
 });
 
-bench( pkg+'::lodash:countBy', opts, function benchmark( b ) {
+bench( format( '%s::lodash:countBy', pkg ), opts, function benchmark( b ) {
 	var vals;
 	var arr;
 	var o;
