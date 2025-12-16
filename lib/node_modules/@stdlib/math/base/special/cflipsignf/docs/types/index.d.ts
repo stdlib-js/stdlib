@@ -31,17 +31,9 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var real = require( '@stdlib/complex/float32/real' );
-* var imag = require( '@stdlib/complex/float32/imag' );
 *
 * var v = cflipsignf( new Complex64( -4.0, 5.0 ), -55.0 );
-* // returns <Complex64>
-*
-* var re = real( v );
-* // returns 4.0
-*
-* var im = imag( v );
-* // returns -5.0
+* // returns <Complex64>[ 4.0, -5.0 ]
 */
 declare function cflipsignf( z: Complex64, y: number ): Complex64;
 

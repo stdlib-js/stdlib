@@ -1511,7 +1511,7 @@
 "@stdlib/os/byte-order","@stdlib/os-byte-order"
 "@stdlib/string/camelcase","@stdlib/string-camelcase"
 "@stdlib/string/capitalize","@stdlib/string-capitalize"
-"@stdlib/utils/capitalize-keys","@stdlib/utils-capitalize-keys"
+"@stdlib/object/capitalize-keys","@stdlib/object-capitalize-keys"
 "@stdlib/constants/float64/catalan","@stdlib/constants-float64-catalan"
 "@stdlib/constants/float64/cbrt-eps","@stdlib/constants-float64-cbrt-eps"
 "@stdlib/datasets/cdc-nchs-us-births-1969-1988","@stdlib/datasets-cdc-nchs-us-births-1969-1988"

@@ -97,10 +97,12 @@ static float rand_float( void ) {
 */
 static double benchmark1( int iterations, int len ) {
 	stdlib_complex64_t alpha;
-	float x[ len*2 ];
 	double elapsed;
 	double t;
+	float *x;
 	int i;
+
+	x = (float *) malloc( len * 2 * sizeof( float ) );
 
 	alpha = stdlib_complex64( 1.0f, 0.0f );
 	for ( i = 0; i < len*2; i += 2 ) {
@@ -120,6 +122,7 @@ static double benchmark1( int iterations, int len ) {
 	if ( x[ 0 ] != x[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
 	return elapsed;
 }
 
@@ -132,10 +135,12 @@ static double benchmark1( int iterations, int len ) {
 */
 static double benchmark2( int iterations, int len ) {
 	stdlib_complex64_t alpha;
-	float x[ len*2 ];
 	double elapsed;
 	double t;
+	float *x;
 	int i;
+
+	x = (float *) malloc( len * 2 * sizeof( float ) );
 
 	alpha = stdlib_complex64( 1.0f, 0.0f );
 	for ( i = 0; i < len*2; i += 2 ) {
@@ -155,6 +160,7 @@ static double benchmark2( int iterations, int len ) {
 	if ( x[ 0 ] != x[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
 	return elapsed;
 }
 
