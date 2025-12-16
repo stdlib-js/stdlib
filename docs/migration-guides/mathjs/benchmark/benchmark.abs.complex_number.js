@@ -24,6 +24,7 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var format = require( '@stdlib/string/format' );
 var base = require( '@stdlib/math/base/special/cabs' );
 var abs = require( '@stdlib/math/special/abs' );
 var tryRequire = require( '@stdlib/utils/try-require' );
@@ -40,7 +41,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/base/special/cabs:value=complex_number', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/base/special/cabs:value=complex_number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -68,7 +69,7 @@ bench( pkg+'::stdlib:math/base/special/cabs:value=complex_number', opts, functio
 	b.end();
 });
 
-bench( pkg+'::stdlib:math/special/abs:value=complex_number', {
+bench( format( '%s::stdlib:math/special/abs:value=complex_number', pkg ), {
 	'skip': true
 }, function benchmark( b ) { // FIXME: update once complex supported in top-level abs
 	var x;
@@ -98,7 +99,7 @@ bench( pkg+'::stdlib:math/special/abs:value=complex_number', {
 	b.end();
 });
 
-bench( pkg+'::mathjs:abs:value=complex_number', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:abs:value=complex_number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
