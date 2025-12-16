@@ -248,7 +248,7 @@ interface Namespace {
 	* var mymgf = ns.mgf.factory( 3.0, 1.5 );
 	*
 	* y = mymgf( 1.0 );
-	* // returns ~26.999
+	* // returns ~27.0
 	*
 	* y = mymgf( 0.5 );
 	* // returns ~3.375

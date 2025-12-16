@@ -131,7 +131,7 @@ interface MGF {
 * var myMGF = mgf.factory( 0.5, 0.5 );
 *
 * y = myMGF( 0.8 );
-* // returns ~1.522
+* // returns ~1.552
 *
 * y = myMGF( 0.3 );
 * // returns ~1.168

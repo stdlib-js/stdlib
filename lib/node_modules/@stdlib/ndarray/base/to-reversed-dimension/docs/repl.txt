@@ -1,0 +1,36 @@
+
+{{alias}}( x, dim )
+    Returns a new ndarray where the order of elements of an input ndarray along
+    a specified dimension is reversed.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    dim: integer
+        Index of dimension to reverse. If less than zero, the index is resolved
+        relative to the last dimension, with the last dimension corresponding to
+        the value `-1`.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > x.shape
+    [ 2, 2 ]
+    > var y = {{alias}}( x, 0 )
+    <ndarray>
+    > y.shape
+    [ 2, 2 ]
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ [ 3, 4 ], [ 1, 2 ] ]
+
+    See Also
+    --------
+

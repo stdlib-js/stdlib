@@ -219,7 +219,7 @@ interface Routine extends ModuleWrapper {
 	* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 	*
 	* var out = dnanasumors.main( 4, x, 1 );
-	* // returns 1.0
+	* // returns 5.0
 	*/
 	main( N: number, x: Float64Array, strideX: number ): number;
 
@@ -238,7 +238,7 @@ interface Routine extends ModuleWrapper {
 	* var x = new Float64Array( [ 2.0, 1.0, NaN, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 	*
 	* var out = dnanasumors.ndarray( 4, x, 2, 1 );
-	* // returns 5.0
+	* // returns 9.0
 	*/
 	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number ): number;
 
@@ -298,7 +298,7 @@ interface Routine extends ModuleWrapper {
 * var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 *
 * var out = dnanasumors.main( 4, x, 1 );
-* // returns 1.0
+* // returns 5.0
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -306,7 +306,7 @@ interface Routine extends ModuleWrapper {
 * var x = new Float64Array( [ 2.0, 1.0, NaN, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 *
 * var out = dnanasumors.ndarray( 4, x, 2, 1 );
-* // returns 5.0
+* // returns 9.0
 */
 declare var dnanasumors: Routine;
 

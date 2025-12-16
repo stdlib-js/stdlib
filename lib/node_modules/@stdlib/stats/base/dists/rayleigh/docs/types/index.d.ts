@@ -49,11 +49,11 @@ interface Namespace {
 	*
 	* @example
 	* var y = ns.cdf( 2.0, 0.0, 1.0 );
-	* // returns ~0.977
+	* // returns 1.0
 	*
 	* var myCDF = ns.cdf.factory( 10.0, 2.0 );
 	* y = myCDF( 10.0 );
-	* // returns 0.5
+	* // returns ~0.393
 	*/
 	cdf: typeof cdf;
 
@@ -131,14 +131,14 @@ interface Namespace {
 	*
 	* @example
 	* var y = ns.logcdf( 2.0, 5.0 );
-	* // returns ~-2.564
+	* // returns ~-2.565
 	*
 	* var mylogcdf = ns.logcdf.factory( 0.5 );
 	* y = mylogcdf( 1.0 );
 	* // returns ~-0.145
 	*
 	* y = mylogcdf( 0.5 );
-	* // returns ~-0.934
+	* // returns ~-0.933
 	*/
 	logcdf: typeof logcdf;
 
@@ -151,15 +151,15 @@ interface Namespace {
 	*
 	* @example
 	* var y = ns.logpdf( 2.0, 4.0 );
-	* // returns ~-2.207
+	* // returns ~-2.204
 	*
 	* var mylogpdf = ns.logpdf.factory( 4.0 );
 	*
 	* y = mylogpdf( 6.0 );
-	* // returns ~-2.104
+	* // returns ~-2.106
 	*
 	* y = mylogpdf( 4.0 );
-	* // returns ~-1.884
+	* // returns ~-1.886
 	*/
 	logpdf: typeof logpdf;
 

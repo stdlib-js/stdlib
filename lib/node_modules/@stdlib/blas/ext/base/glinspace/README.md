@@ -119,7 +119,7 @@ glinspace.ndarray( 3, 1.0, 3.0, true, x, 1, x.length-3 );
     var x = [ 0.0, 0.0, 0.0 ];
 
     glinspace( 3, 0.0, 1.0, true, x, 1 );
-    // x =>[ 0.0, ~0.5, 1.0 ]
+    // x => [ 0.0, ~0.5, 1.0 ]
     ```
 
     where `x[1]` is only guaranteed to be approximately equal to `0.5`.
