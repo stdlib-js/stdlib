@@ -392,10 +392,7 @@ interface Namespace {
 	* }
 	*
 	* var y = ns.maxBy( x, clbk );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 4.0
+	* // returns <ndarray>[ 4.0 ]
 	*
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
@@ -409,10 +406,7 @@ interface Namespace {
 	* }
 	*
 	* var out = ns.maxBy.assign( x, y, clbk );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 4.0
+	* // returns <ndarray>[ 4.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
