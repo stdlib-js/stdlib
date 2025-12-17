@@ -426,10 +426,7 @@ interface Namespace {
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = ns.maxabs( x );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 3.0
+	* // returns <ndarray>[ 3.0 ]
 	*
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
@@ -439,10 +436,7 @@ interface Namespace {
 	* var y = zeros( [] );
 	*
 	* var out = ns.maxabs.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 3.0
+	* // returns <ndarray>[ 3.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
