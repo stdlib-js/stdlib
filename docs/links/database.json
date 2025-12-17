@@ -1266,15 +1266,16 @@
       "education"
     ]
   },
-  "http://www.modulecounts.com/": {
-    "id": "module-counts",
-    "description": "A website that tracks the number of modules in the npm registry and other package managers.",
+  "https://libraries.io/npm": {
+    "id": "libraries-io",
+    "description": "Libraries.io tracks open source packages across multiple package managers, including npm with over 5 million packages.",
     "short_url": "",
     "keywords": [
       "npm",
-      "modules",
-      "package",
-      "managers",
+      "packages",
+      "statistics",
+      "package managers",
+      "open source",
       "registry"
     ]
   },
