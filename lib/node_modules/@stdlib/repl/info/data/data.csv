@@ -2975,7 +2975,7 @@ FLOAT32_SQRT_PHI,"\nFLOAT32_SQRT_PHI\n    Square root of the golden ratio as a s
 FLOAT32_SQRT_PI,"\nFLOAT32_SQRT_PI\n    Square root of the mathematical constant `π` as a single-precision\n    floating-point number.\n"
 FLOAT32_SQRT_THREE,"\nFLOAT32_SQRT_THREE\n    Square root of `3` as a single-precision floating-point number.\n"
 FLOAT32_SQRT_TWO,"\nFLOAT32_SQRT_TWO\n    Square root of `2` as a single-precision floating-point number.\n"
-FLOAT32_SQRT_TWO_PI,"\nFLOAT32_SQRT_TWO_PI\n    Square root of the `π` times `2` as single-precision floating-point number.\n"
+FLOAT32_SQRT_TWO_PI,"\nFLOAT32_SQRT_TWO_PI\n    Square root of the mathematical constant `π` times `2` as a single-precision\n    floating-point number.\n"
 FLOAT32_TWO_PI,"\nFLOAT32_TWO_PI\n    The mathematical constant `π` times `2`.\n"
 Float32Array,"\nFloat32Array()\n    A typed array constructor which returns a typed array representing an array\n    of single-precision floating-point numbers in the platform byte order.\n\nFloat32Array( length:integer )\n    Returns a typed array having a specified length.\n\nFloat32Array( typedarray:TypedArray )\n    Creates a typed array from another typed array.\n\nFloat32Array( obj:Object )\n    Creates a typed array from an array-like object or iterable.\n\nFloat32Array( buffer:ArrayBuffer[, byteOffset:integer[, length:integer]] )\n    Returns a typed array view of an ArrayBuffer.\n"
 Float32Array.from,"\nFloat32Array.from( src:ArrayLike|Iterable[, map:Function[, thisArg:Any]] )\n    Creates a new typed array from an array-like object or an iterable.\n"
