@@ -1,5 +1,6 @@
 {
   "name": "stdlib-mathjs-benchmarks",
+  "private": true,
   "version": "0.0.0",
   "description": "Math.js benchmarks.",
   "license": "Apache-2.0",
