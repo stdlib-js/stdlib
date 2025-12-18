@@ -79,7 +79,7 @@ function createBenchmark1( shape ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			// y = log10( x ); FIXME: support once we have `@stdlib/math/special/log10`
+			y = x.map( base );
 			if ( typeof y !== 'object' ) {
 				b.fail( 'should return an object' );
 			}
