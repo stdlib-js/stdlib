@@ -229,6 +229,9 @@ function main() {
 		N = floor( pow( pow( 10, i ), 1.0/2.0 ) );
 		shape = [ N, N ];
 
+		f = createBenchmark1( shape );
+		bench( format( '%s::stdlib:ndarray/array:dtype=%s,size=%d,shape=(%s)', pkg, OPTS.dtype, numel( shape ), shape.join( ',' ) ), f );
+
 		f = createBenchmark2( shape );
 		bench( format( '%s::stdlib:array/base/unary2d:dtype=%s,size=%d,shape=(%s)', pkg, OPTS.dtype, numel( shape ), shape.join( ',' ) ), f );
 
