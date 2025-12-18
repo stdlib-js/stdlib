@@ -456,10 +456,7 @@ interface Namespace {
 	* var x = array( [ 1.0, 2.0, -2.0, 4.0 ] );
 	*
 	* var y = ns.mean( x );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 1.25
+	* // returns <ndarray>[ 1.25 ]
 	*
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
@@ -469,10 +466,7 @@ interface Namespace {
 	* var y = zeros( [] );
 	*
 	* var out = ns.mean.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 1.25
+	* // returns <ndarray>[ 1.25 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -492,10 +486,7 @@ interface Namespace {
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = ns.min( x );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns -3.0
+	* // returns <ndarray>[ -3.0 ]
 	*
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
@@ -505,10 +496,7 @@ interface Namespace {
 	* var y = zeros( [] );
 	*
 	* var out = ns.min.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns -3.0
+	* // returns <ndarray>[ -3.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -534,10 +522,7 @@ interface Namespace {
 	* }
 	*
 	* var y = ns.minBy( x, clbk );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns -6.0
+	* // returns <ndarray>[ -6.0 ]
 	*
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
@@ -551,10 +536,7 @@ interface Namespace {
 	* }
 	*
 	* var out = ns.minBy.assign( x, y, clbk );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns -6.0
+	* // returns <ndarray>[ -6.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -574,10 +556,7 @@ interface Namespace {
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = ns.minabs( x );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 1.0
+	* // returns <ndarray>[ 1.0 ]
 	*
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
@@ -587,10 +566,7 @@ interface Namespace {
 	* var y = zeros( [] );
 	*
 	* var out = ns.minabs.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 1.0
+	* // returns <ndarray>[ 1.0]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -610,10 +586,7 @@ interface Namespace {
 	* var x = array( [ -1.0, 2.0, NaN ] );
 	*
 	* var y = ns.nanmax( x );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 2.0
+	* // returns <ndarray>[ 2.0 ]
 	*
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
@@ -623,10 +596,7 @@ interface Namespace {
 	* var y = zeros( [] );
 	*
 	* var out = ns.nanmax.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 2.0
+	* // returns <ndarray>[ 2.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
