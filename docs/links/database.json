@@ -2107,7 +2107,7 @@
       "link header"
     ]
   },
-  "https://developer.github.com/guides/traversing-with-pagination/": {
+  "https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api": {
     "id": "github-pagination",
     "description": "GitHub documentation for pagination.",
     "short_url": "",
@@ -8319,8 +8319,8 @@
       "lint"
     ]
   },
-  "https://github.com/kangax/compat-table/issues/392": {
-    "id": "@bug:kangax:compat-table:392",
+  "https://github.com/compat-table/compat-table/issues/392": {
+    "id": "@bug:compat-table:compat-table:392",
     "description": "GitHub issue thread on the accuracy of Math.cbrt, Math.expm1, Math.log1p.",
     "short_url": "",
     "keywords": [
