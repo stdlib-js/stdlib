@@ -334,7 +334,7 @@ int main( void ) {
 
 [blas]: http://www.netlib.org/blas
 
-[blas-ssyr]: https://www.netlib.org/lapack/explore-html-3.6.1/d6/d30/group__single__blas__level2_ga7b8a99048765ed2bf7c1e770bff0b622.html
+[blas-ssyr]: https://netlib.org/lapack//explore-html/dc/d82/group__her_gad7585662770cdd3001ed08c7a864cd21.html
 
 [mdn-float32array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array
 
