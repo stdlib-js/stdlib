@@ -616,10 +616,7 @@ interface Namespace {
 	* var x = array( [ 1.0, NaN, -2.0, 4.0 ] );
 	*
 	* var y = ns.nanmean( x );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 1.0
+	* // returns <ndarray>[ 1.0 ]
 	*
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
@@ -629,10 +626,7 @@ interface Namespace {
 	* var y = zeros( [] );
 	*
 	* var out = ns.nanmean.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 1.0
+	* // returns <ndarray>[ 1.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -652,10 +646,7 @@ interface Namespace {
 	* var x = array( [ -1.0, 2.0, NaN ] );
 	*
 	* var y = ns.nanmin( x );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns -1.0
+	* // returns <ndarray>[ -1.0 ]
 	*
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
@@ -665,10 +656,7 @@ interface Namespace {
 	* var y = zeros( [] );
 	*
 	* var out = ns.nanmin.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns -1.0
+	* // returns <ndarray>[ -1.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
