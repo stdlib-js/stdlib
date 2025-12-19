@@ -146,7 +146,7 @@ var alpha = new Complex128( 10.0, 10.0 );
 zfill.ndarray( 2, alpha, x, 1, x.length-2 );
 
 var y = x.get( 0 );
-// returns <Complex128>[ 1.0, 2.0]
+// returns <Complex128>[ 1.0, 2.0 ]
 
 y = x.get( 1 );
 // returns <Complex128>[ 10.0, 10.0 ]
@@ -251,7 +251,7 @@ Fills a double-precision complex floating-point strided array `X` with a specifi
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
 const stdlib_complex128_t alpha = stdlib_complex128( 2.0, 2.0 );
 
-stdlib_strided_zfill_ndarray( 4, alpha, (stdlib_complex128_t *x), 1, 0 );
+stdlib_strided_zfill_ndarray( 4, alpha, (stdlib_complex128_t *)x, 1, 0 );
 ```
 
 The function accepts the following arguments:

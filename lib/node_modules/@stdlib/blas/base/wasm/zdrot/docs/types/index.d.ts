@@ -436,7 +436,7 @@ interface Routine extends ModuleWrapper {
 	* console.log( reinterpretComplex128( viewY, 0 ) );
 	* // => <Float64Array>[ -0.6, -1.2, ~-1.8, -2.4, -3.0, ~-3.6, -4.2, -4.8, ~-5.4, -6.0 ]
 	* console.log( reinterpretComplex128( viewX, 0 ) );
-	* // => <Float64Array>[ 0.8, 1.6, ~2.4, 3.2, 4.0, ~4.8, ~5.6, 6.4, 7.2, 8 ]
+	* // => <Float64Array>[ 0.8, 1.6, ~2.4, 3.2, 4.0, ~4.8, ~5.6, 6.4, 7.2, 8.0 ]
 	*/
 	Module: ModuleConstructor;
 }
