@@ -253,21 +253,27 @@ endif
 eslint-files: $(NODE_MODULES)
 ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
+	if [ -f "$$file" ]; then \
 		echo ''; \
 		echo "Linting file: $$file"; \
 		$(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file || exit 1; \
-	done
+	fi; \
+done
+
 else
 	$(QUIET) status=0; \
 	for file in $(FILES); do \
-		echo ''; \
-		echo "Linting file: $$file"; \
-		if ! $(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file; then \
-			echo 'Linting failed.'; \
-			status=1; \
+		if [ -f "$$file" ]; then \
+			echo ''; \
+			echo "Linting file: $$file"; \
+			if ! $(ESLINT) $(eslint_flags) --config $(ESLINT_CONF) $$file; then \
+				echo 'Linting failed.'; \
+				status=1; \
+			fi; \
 		fi; \
 	done; \
 	exit $$status;
 endif
+
 
 .PHONY: eslint-files
