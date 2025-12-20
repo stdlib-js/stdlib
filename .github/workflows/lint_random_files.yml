@@ -502,12 +502,57 @@ jobs:
 
       # Lint TypeScript declarations files:
       - name: 'Lint TypeScript declarations files'
+        id: lint-typescript-declarations
         if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
         run: |
+          set -o pipefail
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make TYPESCRIPT_DECLARATIONS_LINTER=eslint lint-typescript-declarations-files FAST_FAIL=0 FILES="${files}"
+            make TYPESCRIPT_DECLARATIONS_LINTER=eslint lint-typescript-declarations-files FAST_FAIL=0 FILES="${files}" 2>&1 | tee lint_typescript_declarations_errors.txt
           fi
+
+      # Create sub-issue for TypeScript declarations lint failures:
+      - name: 'Create sub-issue for TypeScript declarations lint failures'
+        if: failure() && contains(steps.lint-typescript-declarations.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          strip_ansi() {
+            sed -r 's/\x1B\[[0-9;]*[mK]//g'
+          }
+
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
+          cat << EOF > "$BODY_FILE"
+          ## TypeScript Declarations Linting Failures
+
+          Linting failures were detected in the automated TypeScript declarations lint workflow run.
+
+          ### Workflow Details
+
+          - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          - Type: TypeScript Declarations Linting
+          - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          ### Error Details
+
+          \`\`\`
+          $(cat lint_typescript_declarations_errors.txt | strip_ansi)
+          \`\`\`
+
+          ### Pull Request Instructions
+
+          -   Please use the following PR title format:
+          "chore: fix TypeScript declarations lint errors (issue #<ISSUE_NUMBER>)".
+          -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
+          EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+            'Fix TypeScript declarations lint errors' \
+            "$BODY_FILE" \
+            "9110" \
+            "Good First Issue"
+
+          rm "$BODY_FILE"
 
       # Lint license headers:
       - name: 'Lint license headers'

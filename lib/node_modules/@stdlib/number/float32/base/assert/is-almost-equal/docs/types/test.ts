@@ -16,56 +16,56 @@
 * limitations under the License.
 */
 
-import isAlmostEqualf = require( './index' );
+import isAlmostEqual = require( './index' );
 
 
 // TESTS //
 
 // The function returns a boolean...
 {
-	isAlmostEqualf( 3.14, 3.14, 1 ); // $ExpectType boolean
+	isAlmostEqual( 3.14, 3.14, 1 ); // $ExpectType boolean
 }
 
 // The compiler throws an error if the function is not provided a first argument which is a number...
 {
-	isAlmostEqualf( '5', 3.14, 1 ); // $ExpectError
-	isAlmostEqualf( true, 3.14, 1 ); // $ExpectError
-	isAlmostEqualf( false, 3.14, 1 ); // $ExpectError
-	isAlmostEqualf( null, 3.14, 1 ); // $ExpectError
-	isAlmostEqualf( void 0, 3.14, 1 ); // $ExpectError
-	isAlmostEqualf( [], 3.14, 1 ); // $ExpectError
-	isAlmostEqualf( {}, 3.14, 1 ); // $ExpectError
-	isAlmostEqualf( ( x: number ): number => x, 3.14, 1 ); // $ExpectError
+	isAlmostEqual( '5', 3.14, 1 ); // $ExpectError
+	isAlmostEqual( true, 3.14, 1 ); // $ExpectError
+	isAlmostEqual( false, 3.14, 1 ); // $ExpectError
+	isAlmostEqual( null, 3.14, 1 ); // $ExpectError
+	isAlmostEqual( void 0, 3.14, 1 ); // $ExpectError
+	isAlmostEqual( [], 3.14, 1 ); // $ExpectError
+	isAlmostEqual( {}, 3.14, 1 ); // $ExpectError
+	isAlmostEqual( ( x: number ): number => x, 3.14, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is not provided a second argument which is a number...
 {
-	isAlmostEqualf( 3.14, '5', 1 ); // $ExpectError
-	isAlmostEqualf( 3.14, true, 1 ); // $ExpectError
-	isAlmostEqualf( 3.14, false, 1 ); // $ExpectError
-	isAlmostEqualf( 3.14, null, 1 ); // $ExpectError
-	isAlmostEqualf( 3.14, void 0, 1 ); // $ExpectError
-	isAlmostEqualf( 3.14, [], 1 ); // $ExpectError
-	isAlmostEqualf( 3.14, {}, 1 ); // $ExpectError
-	isAlmostEqualf( 3.14, ( x: number ): number => x, 1 ); // $ExpectError
+	isAlmostEqual( 3.14, '5', 1 ); // $ExpectError
+	isAlmostEqual( 3.14, true, 1 ); // $ExpectError
+	isAlmostEqual( 3.14, false, 1 ); // $ExpectError
+	isAlmostEqual( 3.14, null, 1 ); // $ExpectError
+	isAlmostEqual( 3.14, void 0, 1 ); // $ExpectError
+	isAlmostEqual( 3.14, [], 1 ); // $ExpectError
+	isAlmostEqual( 3.14, {}, 1 ); // $ExpectError
+	isAlmostEqual( 3.14, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is not provided a third argument which is a number...
 {
-	isAlmostEqualf( 3.14, 3.14, '5' ); // $ExpectError
-	isAlmostEqualf( 3.14, 3.14, true ); // $ExpectError
-	isAlmostEqualf( 3.14, 3.14, false ); // $ExpectError
-	isAlmostEqualf( 3.14, 3.14, null ); // $ExpectError
-	isAlmostEqualf( 3.14, 3.14, void 0 ); // $ExpectError
-	isAlmostEqualf( 3.14, 3.14, [] ); // $ExpectError
-	isAlmostEqualf( 3.14, 3.14, {} ); // $ExpectError
-	isAlmostEqualf( 3.14, 3.14, ( x: number ): number => x ); // $ExpectError
+	isAlmostEqual( 3.14, 3.14, '5' ); // $ExpectError
+	isAlmostEqual( 3.14, 3.14, true ); // $ExpectError
+	isAlmostEqual( 3.14, 3.14, false ); // $ExpectError
+	isAlmostEqual( 3.14, 3.14, null ); // $ExpectError
+	isAlmostEqual( 3.14, 3.14, void 0 ); // $ExpectError
+	isAlmostEqual( 3.14, 3.14, [] ); // $ExpectError
+	isAlmostEqual( 3.14, 3.14, {} ); // $ExpectError
+	isAlmostEqual( 3.14, 3.14, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	isAlmostEqualf(); // $ExpectError
-	isAlmostEqualf( 3.14 ); // $ExpectError
-	isAlmostEqualf( 3.14, 3.14 ); // $ExpectError
-	isAlmostEqualf( 3.14, 3.14, 1, 2 ); // $ExpectError
+	isAlmostEqual(); // $ExpectError
+	isAlmostEqual( 3.14 ); // $ExpectError
+	isAlmostEqual( 3.14, 3.14 ); // $ExpectError
+	isAlmostEqual( 3.14, 3.14, 1, 2 ); // $ExpectError
 }
