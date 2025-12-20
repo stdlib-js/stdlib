@@ -750,10 +750,7 @@ interface Namespace {
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = ns.range( x );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 5.0
+	* // returns <ndarray>[ 5.0 ]
 	*
 	* @example
 	* var array = require( '@stdlib/ndarray/array' );
@@ -763,10 +760,7 @@ interface Namespace {
 	* var y = zeros( [] );
 	*
 	* var out = ns.range.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 5.0
+	* // returns <ndarray>[ 5.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
