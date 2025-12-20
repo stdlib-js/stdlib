@@ -154,13 +154,9 @@ For ideas for future PRs, feel free to search the codebase for TODOs and FIXMEs 
 			echo "Failed to post comment on PR."
 			on_error 1
 		fi
-
-		exit 1
-	else
-		echo "Number of PRs below threshold."
-		print_success
-		exit 0
 	fi
+	print_success
+	exit 0
 }
 
 main

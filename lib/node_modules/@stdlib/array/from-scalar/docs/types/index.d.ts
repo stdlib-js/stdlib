@@ -191,7 +191,7 @@ declare function scalar2array( value: number, dtype: 'uint8' ): Uint8Array;
 *
 * @example
 * var x = scalar2array( 1, 'uint8c' );
-* // returns <Uint8ClampedArray>[]
+* // returns <Uint8ClampedArray>[ 1 ]
 */
 declare function scalar2array( value: number, dtype: 'uint8c' ): Uint8ClampedArray;
 

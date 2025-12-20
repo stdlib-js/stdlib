@@ -51,10 +51,10 @@ declare class Binomial {
 	* var binomial = new Binomial();
 	*
 	* var y = binomial.cdf( 0.8 );
-	* // returns ~0.9
+	* // returns 0.5
 	*
 	* var v = binomial.mode;
-	* // returns 0.0
+	* // returns 1.0
 	*/
 	constructor();
 

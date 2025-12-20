@@ -116,15 +116,15 @@ interface LogCDF {
 * @returns evaluated logCDF
 *
 * @example
-* var y = logcdf( 5.0, 0.0, 4.0 );
+* var y = logcdf( 5.0, 2.0, 4.0 );
 * // returns 0.0
 *
-* var mylogcdf = logcdf.factory( 0.0, 10.0 );
+* var mylogcdf = logcdf.factory( 5.0, 10.0 );
 * y = mylogcdf( 0.5 );
-* // returns ~-1.938
+* // returns ~-0.094
 *
-* y = mylogcdf( 8.0 );
-* // returns ~-0.35
+* y = mylogcdf( 5.0 );
+* // returns 0.0
 */
 declare var logcdf: LogCDF;
 

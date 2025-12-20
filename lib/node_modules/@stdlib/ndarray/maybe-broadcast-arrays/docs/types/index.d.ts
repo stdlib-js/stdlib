@@ -52,8 +52,8 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var shy = y1.shape;
 * // returns [ 3, 2, 2 ]
 *
-* var out = maybeBroadcastArrays( [ x, y ] );
-* // returns <ndarray>
+* var out = maybeBroadcastArrays( [ x, y1 ] );
+* // returns [ <ndarray>, <ndarray> ]
 *
 * var x2 = out[ 0 ];
 * // returns <ndarray>
@@ -116,8 +116,8 @@ declare function maybeBroadcastArrays<T = unknown>( arrays: ArrayLike<typedndarr
 * var shy = y1.shape;
 * // returns [ 3, 2, 2 ]
 *
-* var out = maybeBroadcastArrays( x, y );
-* // returns <ndarray>
+* var out = maybeBroadcastArrays( x, y1 );
+* // returns [ <ndarray>, <ndarray> ]
 *
 * var x2 = out[ 0 ];
 * // returns <ndarray>

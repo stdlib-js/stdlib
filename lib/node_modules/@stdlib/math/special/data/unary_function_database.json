@@ -9,6 +9,7 @@
       "uint8c",
       "complex32"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int32": "@stdlib/math/base/special/labs",
       "uint8": "@stdlib/number/uint8/base/identity",
@@ -35,6 +36,7 @@
       "uint8c",
       "complex32"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/abs2f",
       "float64": "@stdlib/math/base/special/abs2",
@@ -56,6 +58,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/absgammalnf",
       "float64": "@stdlib/math/base/special/gammaln",
@@ -75,6 +78,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/acosf",
       "float64": "@stdlib/math/base/special/acos",
@@ -94,6 +98,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/acosdf",
       "float64": "@stdlib/math/base/special/acosd",
@@ -113,6 +118,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/acosh",
       "generic": "@stdlib/math/base/special/acosh"
@@ -131,6 +137,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/acotf",
       "float64": "@stdlib/math/base/special/acot",
@@ -150,6 +157,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/acotdf",
       "float64": "@stdlib/math/base/special/acotd",
@@ -169,6 +177,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/acoth",
       "generic": "@stdlib/math/base/special/acoth"
@@ -187,6 +196,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/acovercosf",
       "float64": "@stdlib/math/base/special/acovercos",
@@ -206,6 +216,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/acoversinf",
       "float64": "@stdlib/math/base/special/acoversin",
@@ -225,6 +236,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/acscf",
       "float64": "@stdlib/math/base/special/acsc",
@@ -244,6 +256,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/acscdf",
       "float64": "@stdlib/math/base/special/acscd",
@@ -263,6 +276,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/acsch",
       "generic": "@stdlib/math/base/special/acsch"
@@ -281,6 +295,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/ahavercosf",
       "float64": "@stdlib/math/base/special/ahavercos",
@@ -300,6 +315,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/ahaversinf",
       "float64": "@stdlib/math/base/special/ahaversin",
@@ -319,6 +335,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/asecf",
       "float64": "@stdlib/math/base/special/asec",
@@ -338,6 +355,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/asecdf",
       "float64": "@stdlib/math/base/special/asecd",
@@ -357,6 +375,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/asech",
       "generic": "@stdlib/math/base/special/asech"
@@ -375,6 +394,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/asinf",
       "float64": "@stdlib/math/base/special/asin",
@@ -394,6 +414,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/asindf",
       "float64": "@stdlib/math/base/special/asind",
@@ -413,6 +434,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/asinh",
       "generic": "@stdlib/math/base/special/asinh"
@@ -431,6 +453,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/atanf",
       "float64": "@stdlib/math/base/special/atan",
@@ -450,6 +473,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/atandf",
       "float64": "@stdlib/math/base/special/atand",
@@ -469,6 +493,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/atanh",
       "generic": "@stdlib/math/base/special/atanh"
@@ -487,6 +512,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/avercosf",
       "float64": "@stdlib/math/base/special/avercos",
@@ -506,6 +532,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/aversinf",
       "float64": "@stdlib/math/base/special/aversin",
@@ -525,6 +552,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/bernoullif",
       "float64": "@stdlib/math/base/special/bernoulli",
@@ -544,6 +572,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/besselj0",
       "generic": "@stdlib/math/base/special/besselj0"
@@ -562,6 +591,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/besselj1",
       "generic": "@stdlib/math/base/special/besselj1"
@@ -580,6 +610,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/bessely0",
       "generic": "@stdlib/math/base/special/bessely0"
@@ -598,6 +629,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/bessely1",
       "generic": "@stdlib/math/base/special/bessely1"
@@ -616,6 +648,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/binet",
       "generic": "@stdlib/math/base/special/binet"
@@ -634,6 +667,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/cbrtf",
       "float64": "@stdlib/math/base/special/cbrt",
@@ -641,6 +675,26 @@
     },
     "policies": {
       "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "ccis": {
+    "input_dtypes": "complex_floating_point",
+    "output_dtypes": "complex_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64",
+      "complex32"
+    ],
+    "primary_dtype": "complex128",
+    "scalar_kernels": {
+      "complex128": "@stdlib/math/base/special/ccis",
+      "generic": "@stdlib/math/base/special/ccis"
+    },
+    "policies": {
+      "output": "complex_floating_point_and_generic",
       "casting": "none"
     }
   },
@@ -654,6 +708,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -682,6 +737,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -707,6 +763,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -731,6 +788,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/cosf",
       "float64": "@stdlib/math/base/special/cos",
@@ -750,6 +808,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/cosdf",
       "float64": "@stdlib/math/base/special/cosd",
@@ -769,6 +828,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/cosh",
       "generic": "@stdlib/math/base/special/cosh"
@@ -787,6 +847,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/cosm1f",
       "float64": "@stdlib/math/base/special/cosm1",
@@ -806,6 +867,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/cospif",
       "float64": "@stdlib/math/base/special/cospi",
@@ -825,6 +887,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/cotf",
       "float64": "@stdlib/math/base/special/cot",
@@ -844,6 +907,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/cotd",
       "generic": "@stdlib/math/base/special/cotd"
@@ -862,6 +926,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/coth",
       "generic": "@stdlib/math/base/special/coth"
@@ -880,6 +945,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/covercosf",
       "float64": "@stdlib/math/base/special/covercos",
@@ -899,10 +965,31 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/coversinf",
       "float64": "@stdlib/math/base/special/coversin",
       "generic": "@stdlib/math/base/special/coversin"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
+    }
+  },
+  "cphase": {
+    "input_dtypes": "complex_floating_point",
+    "output_dtypes": "real_floating_point_and_generic",
+    "excluded_dtypes": [
+      "float16",
+      "uint8c",
+      "int64",
+      "uint64",
+      "complex32"
+    ],
+    "primary_dtype": "complex128",
+    "scalar_kernels": {
+      "complex64": "@stdlib/math/base/special/cphasef",
+      "complex128": "@stdlib/math/base/special/cphase"
     },
     "policies": {
       "output": "real_floating_point_and_generic",
@@ -918,6 +1005,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/cscf",
       "float64": "@stdlib/math/base/special/csc",
@@ -937,6 +1025,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/cscd",
       "generic": "@stdlib/math/base/special/cscd"
@@ -955,6 +1044,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/csch",
       "generic": "@stdlib/math/base/special/csch"
@@ -973,6 +1063,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/deg2radf",
       "float64": "@stdlib/math/base/special/deg2rad",
@@ -992,6 +1083,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/digamma",
       "generic": "@stdlib/math/base/special/digamma"
@@ -1010,6 +1102,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/dirac-deltaf",
       "float64": "@stdlib/math/base/special/dirac-delta",
@@ -1029,6 +1122,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/dirichlet-eta",
       "generic": "@stdlib/math/base/special/dirichlet-eta"
@@ -1047,6 +1141,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/ellipe",
       "generic": "@stdlib/math/base/special/ellipe"
@@ -1065,6 +1160,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/ellipk",
       "generic": "@stdlib/math/base/special/ellipk"
@@ -1083,6 +1179,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/erf",
       "generic": "@stdlib/math/base/special/erf"
@@ -1101,6 +1198,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/erfc",
       "generic": "@stdlib/math/base/special/erfc"
@@ -1119,6 +1217,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/erfcinv",
       "generic": "@stdlib/math/base/special/erfcinv"
@@ -1137,6 +1236,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/erfcx",
       "generic": "@stdlib/math/base/special/erfcx"
@@ -1155,6 +1255,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/erfinv",
       "generic": "@stdlib/math/base/special/erfinv"
@@ -1174,6 +1275,7 @@
       "uint64",
       "complex32"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/exp",
       "complex128": "@stdlib/math/base/special/cexp",
@@ -1193,6 +1295,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/exp10",
       "generic": "@stdlib/math/base/special/exp10"
@@ -1211,6 +1314,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/exp2",
       "generic": "@stdlib/math/base/special/exp2"
@@ -1229,6 +1333,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/expit",
       "generic": "@stdlib/math/base/special/expit"
@@ -1247,6 +1352,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/expm1",
       "generic": "@stdlib/math/base/special/expm1"
@@ -1265,6 +1371,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/expm1rel",
       "generic": "@stdlib/math/base/special/expm1rel"
@@ -1283,6 +1390,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/factorial",
       "generic": "@stdlib/math/base/special/factorial"
@@ -1301,6 +1409,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/factorial2f",
       "float64": "@stdlib/math/base/special/factorial2",
@@ -1320,6 +1429,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/factoriallnf",
       "float64": "@stdlib/math/base/special/factorialln",
@@ -1339,6 +1449,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/fibonaccif",
       "float64": "@stdlib/math/base/special/fibonacci",
@@ -1358,6 +1469,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/fibonacci-indexf",
       "float64": "@stdlib/math/base/special/fibonacci-index",
@@ -1378,6 +1490,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -1406,6 +1519,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -1431,6 +1545,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -1449,19 +1564,20 @@
   "fresnel": {
     "input_dtypes": "real_and_generic",
     "output_dtypes": "real_floating_point_and_generic",
-    "policies": {
-      "output": "real_floating_point_and_generic",
-      "casting": "none"
-    },
     "excluded_dtypes": [
       "float16",
       "uint8c",
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/fresnel",
       "generic": "@stdlib/math/base/special/fresnel"
+    },
+    "policies": {
+      "output": "real_floating_point_and_generic",
+      "casting": "none"
     }
   },
   "fresnelc": {
@@ -1473,6 +1589,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/fresnelc",
       "generic": "@stdlib/math/base/special/fresnelc"
@@ -1491,6 +1608,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/fresnels",
       "generic": "@stdlib/math/base/special/fresnels"
@@ -1509,6 +1627,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/gamma",
       "generic": "@stdlib/math/base/special/gamma"
@@ -1527,6 +1646,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/gamma-lanczos-sum",
       "generic": "@stdlib/math/base/special/gamma-lanczos-sum"
@@ -1545,6 +1665,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/gamma-lanczos-sum-expg-scaledf",
       "float64": "@stdlib/math/base/special/gamma-lanczos-sum-expg-scaled",
@@ -1564,6 +1685,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/gamma1pm1",
       "generic": "@stdlib/math/base/special/gamma1pm1"
@@ -1582,6 +1704,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/gammasgnf",
       "float64": "@stdlib/math/base/special/gammasgn",
@@ -1601,6 +1724,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/hacovercosf",
       "float64": "@stdlib/math/base/special/hacovercos",
@@ -1620,6 +1744,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/hacoversinf",
       "float64": "@stdlib/math/base/special/hacoversin",
@@ -1639,6 +1764,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/havercosf",
       "float64": "@stdlib/math/base/special/havercos",
@@ -1658,6 +1784,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/haversinf",
       "float64": "@stdlib/math/base/special/haversin",
@@ -1678,6 +1805,7 @@
       "uint64",
       "complex32"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/invf",
       "float64": "@stdlib/math/base/special/inv",
@@ -1699,6 +1827,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/lnf",
       "float64": "@stdlib/math/base/special/ln",
@@ -1718,6 +1847,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/log10",
       "generic": "@stdlib/math/base/special/log10"
@@ -1736,6 +1866,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/log1mexp",
       "generic": "@stdlib/math/base/special/log1mexp"
@@ -1754,6 +1885,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/log1p",
       "generic": "@stdlib/math/base/special/log1p"
@@ -1772,6 +1904,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/log1pexp",
       "generic": "@stdlib/math/base/special/log1pexp"
@@ -1790,6 +1923,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/log1pmx",
       "generic": "@stdlib/math/base/special/log1pmx"
@@ -1808,6 +1942,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/log2",
       "generic": "@stdlib/math/base/special/log2"
@@ -1826,6 +1961,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/logitf",
       "float64": "@stdlib/math/base/special/logit",
@@ -1845,6 +1981,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/lucasf",
       "float64": "@stdlib/math/base/special/lucas",
@@ -1864,6 +2001,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/negafibonaccif",
       "float64": "@stdlib/math/base/special/negafibonacci",
@@ -1883,6 +2021,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/negalucasf",
       "float64": "@stdlib/math/base/special/negalucas",
@@ -1902,6 +2041,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/nonfibonaccif",
       "float64": "@stdlib/math/base/special/nonfibonacci",
@@ -1921,6 +2061,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/rad2degf",
       "float64": "@stdlib/math/base/special/rad2deg",
@@ -1940,6 +2081,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/rampf",
       "float64": "@stdlib/math/base/special/ramp",
@@ -1959,6 +2101,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/rcbrtf",
       "float64": "@stdlib/math/base/special/rcbrt",
@@ -1978,6 +2121,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/riemann-zeta",
       "generic": "@stdlib/math/base/special/riemann-zeta"
@@ -1997,6 +2141,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -2025,6 +2170,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -2050,6 +2196,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -2075,6 +2222,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -2099,6 +2247,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/rsqrtf",
       "float64": "@stdlib/math/base/special/rsqrt",
@@ -2118,6 +2267,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/secf",
       "float64": "@stdlib/math/base/special/sec",
@@ -2137,6 +2287,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/secd",
       "generic": "@stdlib/math/base/special/secd"
@@ -2155,6 +2306,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/sech",
       "generic": "@stdlib/math/base/special/sech"
@@ -2174,6 +2326,7 @@
       "uint64",
       "complex32"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -2201,6 +2354,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/sinf",
       "float64": "@stdlib/math/base/special/sin",
@@ -2220,6 +2374,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/sincf",
       "float64": "@stdlib/math/base/special/sinc",
@@ -2239,6 +2394,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/sindf",
       "float64": "@stdlib/math/base/special/sind",
@@ -2258,6 +2414,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/sinh",
       "generic": "@stdlib/math/base/special/sinh"
@@ -2276,6 +2433,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/sinpif",
       "float64": "@stdlib/math/base/special/sinpi",
@@ -2295,6 +2453,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/spencef",
       "float64": "@stdlib/math/base/special/spence",
@@ -2314,6 +2473,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/sqrtf",
       "float64": "@stdlib/math/base/special/sqrt",
@@ -2333,6 +2493,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/sqrt1pm1",
       "generic": "@stdlib/math/base/special/sqrt1pm1"
@@ -2351,6 +2512,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/sqrtpif",
       "float64": "@stdlib/math/base/special/sqrtpi",
@@ -2370,6 +2532,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/tanf",
       "float64": "@stdlib/math/base/special/tan",
@@ -2389,6 +2552,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/tandf",
       "float64": "@stdlib/math/base/special/tand",
@@ -2408,6 +2572,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float64": "@stdlib/math/base/special/tanh",
       "generic": "@stdlib/math/base/special/tanh"
@@ -2426,6 +2591,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/tribonaccif",
       "float64": "@stdlib/math/base/special/tribonacci",
@@ -2445,6 +2611,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/trigammaf",
       "float64": "@stdlib/math/base/special/trigamma",
@@ -2465,6 +2632,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -2491,6 +2659,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -2516,6 +2685,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "int8": "@stdlib/number/int8/base/identity",
       "int16": "@stdlib/number/int16/base/identity",
@@ -2540,6 +2710,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/vercosf",
       "float64": "@stdlib/math/base/special/vercos",
@@ -2559,6 +2730,7 @@
       "int64",
       "uint64"
     ],
+    "primary_dtype": "float64",
     "scalar_kernels": {
       "float32": "@stdlib/math/base/special/versinf",
       "float64": "@stdlib/math/base/special/versin",
