@@ -149,7 +149,8 @@ jobs:
 
       # Fail the workflow if the status is not "success":
       - name: 'Check status'
-        if: ${{ steps.results.outputs.status }} != 'success'
+        id: check-status
+        if: ${{ steps.results.outputs.status != 'success' }}
         run: |
           exit 1
 
@@ -160,6 +161,17 @@ jobs:
           echo "Printing the list of failures..."
           cat "${{ env.LOG_FILE_FAILURES }}"
         timeout-minutes: 5
+
+      # Create sub-issues for individual broken links:
+      - name: 'Create sub-issues for broken links'
+        if: failure() && contains(steps.check-status.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          "$GITHUB_WORKSPACE/.github/workflows/scripts/create_broken_link_issues" \
+            '${{ steps.results.outputs.failures }}' \
+            "9112"
+        timeout-minutes: 30
 
       # Upload the log files:
       - name: 'Upload log files'
