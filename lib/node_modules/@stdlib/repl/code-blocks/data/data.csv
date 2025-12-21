@@ -245,7 +245,7 @@ base.cexp,"var y = base.cexp( new Complex128( 0.0, 0.0 ) )\nvar re = real( y )\n
 base.cflipsign,"var v = base.cflipsign( new Complex128( -4.2, 5.5 ), -9.0 )\nvar re = real( v )\nvar im = imag( v )\n"
 base.cflipsignf,"var v = base.cflipsignf( new Complex64( -4.0, 5.0 ), -9.0 )\n"
 base.cfloor,"var v = base.cfloor( new Complex128( 5.5, 3.3 ) )\nvar re = real( v )\nvar im = imag( v )\n"
-base.cfloorn,"var v = base.cfloorn( new Complex128( 5.555, -3.333 ), -2 )\nvar re = real( v )\nvar im = imag( v )\n"
+base.cfloorn,"var v = base.cfloorn( new Complex128( 5.555, -3.333 ), -2 )\n"
 base.cidentity,"var v = base.cidentity( new Complex128( -1.0, 2.0 ) )\nvar re = real( v )\nvar img = imag( v )\n"
 base.cidentityf,"var v = base.cidentityf( new Complex64( -1.0, 2.0 ) )\nvar re = realf( v )\nvar img = imagf( v )\n"
 base.cinv,"var v = base.cinv( new Complex128( 2.0, 4.0 ) )\n"
