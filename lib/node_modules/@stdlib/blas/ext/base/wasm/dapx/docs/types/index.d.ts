@@ -138,7 +138,7 @@ interface Module extends ModuleWrapper {
 	* @param alpha - scalar constant
 	* @param xptr - input array pointer (i.e., byte offset)
 	* @param strideX - stride length
-	* @returns input array
+	* @returns input array pointer
 	*
 	* @example
 	* var Memory = require( '@stdlib/wasm/memory' );
@@ -192,7 +192,7 @@ interface Module extends ModuleWrapper {
 	* @param xptr - input array pointer (i.e., byte offset)
 	* @param strideX - stride length
 	* @param offsetX - starting index
-	* @returns sum
+	* @returns input array pointer
 	*
 	* @example
 	* var Memory = require( '@stdlib/wasm/memory' );
@@ -260,7 +260,7 @@ interface Routine extends ModuleWrapper {
 	* var out = dapx.main( 3, 5.0, x, 1 );
 	* // out => <Float64Array>[ 6.0, 3.0, 7.0 ]
 	*/
-	main( N: number, alpha: number, x: Float64Array, strideX: number ): number;
+	main( N: number, alpha: number, x: Float64Array, strideX: number ): Float64Array;
 
 	/**
 	* Adds a scalar constant to each element in a double-precision floating-point strided array using alternative indexing semantics.
@@ -270,7 +270,7 @@ interface Routine extends ModuleWrapper {
 	* @param x - input array
 	* @param strideX - stride length
 	* @param offsetX - starting index
-	* @returns sum
+	* @returns input array
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
@@ -280,7 +280,7 @@ interface Routine extends ModuleWrapper {
 	* dapx.ndarray( 4, 5.0, x, 2, 1 );
 	* // x => <Float64Array>[ 2.0, 6.0, 2.0, 3.0, -2.0, 7.0, 3.0, 9.0 ]
 	*/
-	ndarray( N: number, alpha: number, x: Float64Array, strideX: number, offsetX: number ): number;
+	ndarray( N: number, alpha: number, x: Float64Array, strideX: number, offsetX: number ): Float64Array;
 
 	/**
 	* Returns a new WebAssembly module wrapper instance which uses the provided WebAssembly memory instance as its underlying memory.

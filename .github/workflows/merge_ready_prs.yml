@@ -47,56 +47,23 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
 
+      # Import GPG key to sign commits:
+      - name: 'Import GPG key to sign commits'
+        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
+        with:
+          gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
       # Merge PRs with Ready to Merge label:
       - name: 'Merge PRs'
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
-          # Get all PRs with the "Ready to Merge" label:
-          prs=$(gh pr list --label "Ready to Merge" --json number --jq '.[].number')
-
-          if [ -z "$prs" ]; then
-            echo "No PRs found with 'Ready to Merge' label."
-            exit 0
-          fi
-
-          echo "Found PRs to merge: $prs"
-          echo ""
-
-          # If dry run, just print the PRs and exit:
           if [ "${{ inputs.dry-run }}" == "true" ]; then
-            echo "Dry run mode. PRs that would be merged:"
-            for pr in $prs; do
-              echo "  - PR #$pr"
-            done
-            exit 0
-          fi
-
-          # Track results:
-          succeeded=""
-          failed=""
-
-          # Merge each PR:
-          for pr in $prs; do
-            echo "Merging PR #$pr..."
-            if ./.github/workflows/scripts/merge_pr "$pr"; then
-              echo "Successfully merged PR #$pr"
-              succeeded="$succeeded $pr"
-            else
-              echo "Failed to merge PR #$pr"
-              failed="$failed $pr"
-            fi
-            echo ""
-          done
-
-          # Print summary:
-          echo "================================"
-          echo "Summary:"
-          if [ -n "$succeeded" ]; then
-            echo "Merged:$succeeded"
-          fi
-          if [ -n "$failed" ]; then
-            echo "Failed:$failed"
-            exit 1
+            . "$GITHUB_WORKSPACE/.github/workflows/scripts/merge_ready_prs" --dry-run
+          else
+            . "$GITHUB_WORKSPACE/.github/workflows/scripts/merge_ready_prs"
           fi

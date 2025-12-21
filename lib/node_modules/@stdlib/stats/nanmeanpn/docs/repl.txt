@@ -32,9 +32,8 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, NaN, -4.0 ] );
-    > var y = {{alias}}( x );
-    > var v = y.get()
-    -1.0
+    > var y = {{alias}}( x )
+    <ndarray>[ -1.0 ]
 
 
 {{alias}}.assign( x, out[, options] )
@@ -68,11 +67,9 @@
     > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, NaN, -4.0 ] );
     > var out = {{alias:@stdlib/ndarray/zeros}}( [] );
     > var y = {{alias}}.assign( x, out )
-    <ndarray>
+    <ndarray>[ -1.0 ]
     > var bool = ( out === y )
     true
-    > var v = out.get()
-    -1.0
 
     See Also
     --------

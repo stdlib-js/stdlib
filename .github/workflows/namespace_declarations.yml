@@ -137,8 +137,8 @@ jobs:
                 # Commit changes:
                 git commit -m "feat: update \`${display_namespace}\` TypeScript declarations" --signoff
 
-                # Push branch and create PR:
-                git push origin "$branch_name"
+                # Push branch and create PR (force push to handle stale remote branches from previously merged/closed PRs):
+                git push --force origin "$branch_name"
 
                 gh pr create \
                   --title "feat: update \`${display_namespace}\` TypeScript declarations" \
