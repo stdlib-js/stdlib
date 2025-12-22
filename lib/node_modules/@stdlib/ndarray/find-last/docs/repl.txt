@@ -20,7 +20,7 @@
         Boolean indicating whether the reduced dimensions should be included in
         the returned ndarray as singleton dimensions. Default: false.
 
-    options.sentinelValue: any|ndarray (optional)
+    options.sentinel: any|ndarray (optional)
         Value to return when no element passes the test. May be either a scalar
         value or a zero-dimensional ndarray.
 
@@ -74,7 +74,7 @@
         the function performs a reduction over all elements in a provided input
         ndarray.
 
-    options.sentinelValue: any|ndarray (optional)
+    options.sentinel: any|ndarray (optional)
         Value to return when no element passes the test. May be either a scalar
         value or a zero-dimensional ndarray.
 
