@@ -93,10 +93,6 @@ typedef union {
 
 #endif
 
-#ifdef __cplusplus
-}
-#endif
-
 /**
 * Converts a half-precision floating-point number to its binary representation.
 */
@@ -106,5 +102,9 @@ uint16_t stdlib_float16_to_bits( stdlib_float16_t x );
 * Converts a 16-bit binary representation to a half-precision floating-point number.
 */
 stdlib_float16_t stdlib_float16_from_bits( uint16_t bits );
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // !STDLIB_NUMBER_FLOAT16_CTOR_H

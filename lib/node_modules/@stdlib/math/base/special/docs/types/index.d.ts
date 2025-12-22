@@ -2942,17 +2942,9 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var v = ns.cfloorn( new Complex128( 5.555, -3.333 ), -2 );
-	* // returns <Complex128>
-	*
-	* var re = real( v );
-	* // returns 5.55
-	*
-	* var im = imag( v );
-	* // returns -3.34
+	* // returns <Complex128>[ 5.55, -3.34 ]
 	*/
 	cfloorn: typeof cfloorn;
 
