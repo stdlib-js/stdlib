@@ -141,7 +141,7 @@ readme_from_desc=${README_FROM_DESC:-'a continuous [uniform][@stdlib/random/base
 readme_heading=${README_HEADING:-'Uniform Random Numbers'}
 
 # Define the data type kind description:
-readme_dtype_kind_desc=${README_DTYPE_KIND_DESC:-'real-valued floating-point'}
+readme_dtype_kind_desc=${README_DTYPE_KIND_DESC:-'a real-valued floating-point'}
 
 # Define the data type kind package:
 readme_dtype_kind_pkg=${README_DTYPE_KIND_PKG:-'stdlib/ndarray/dtypes'}
@@ -215,19 +215,23 @@ repl_text_factory_desc="${repl_text_factory_desc/    /}"
 
 repl_text_param_1_desc=$(echo "    ${repl_text_param_1_desc}" | "${wrap}")
 repl_text_param_1_desc="${repl_text_param_1_desc/        /}"
-repl_text_param_1_desc=$(echo "${repl_text_param_1_desc}" | sed 's/^    /        /')
+repl_text_param_1_desc="${repl_text_param_1_desc//    /        }"
 
 repl_text_param_2_desc=$(echo "    ${repl_text_param_2_desc}" | "${wrap}")
 repl_text_param_2_desc="${repl_text_param_2_desc/        /}"
-repl_text_param_2_desc=$(echo "${repl_text_param_2_desc}" | sed 's/^    /        /')
+repl_text_param_2_desc="${repl_text_param_2_desc//    /        }"
 
 repl_text_assign_param_1_desc=$(echo "    ${repl_text_assign_param_1_desc}" | "${wrap}")
 repl_text_assign_param_1_desc="${repl_text_assign_param_1_desc/        /}"
-repl_text_assign_param_1_desc=$(echo "${repl_text_assign_param_1_desc}" | sed 's/^    /        /')
+repl_text_assign_param_1_desc="${repl_text_assign_param_1_desc//    /        }"
 
 repl_text_assign_param_2_desc=$(echo "    ${repl_text_assign_param_2_desc}" | "${wrap}")
 repl_text_assign_param_2_desc="${repl_text_assign_param_2_desc/        /}"
-repl_text_assign_param_2_desc=$(echo "${repl_text_assign_param_2_desc}" | sed 's/^    /        /')
+repl_text_assign_param_2_desc="${repl_text_assign_param_2_desc//    /        }"
+
+repl_text_dtype_desc=$(echo "    Array data type. Must be ${readme_dtype_kind_desc} or \"generic\" data type." | "${wrap}")
+repl_text_dtype_desc="${repl_text_dtype_desc/        /}"
+repl_text_dtype_desc="${repl_text_dtype_desc//    /        }"
 
 # Define the copyright year:
 year=$(date +'%Y')
@@ -275,12 +279,12 @@ files=(
 )
 
 # Create the destination directories...
-for dir in ${dirs[*]}; do
+for dir in "${dirs[@]}"; do
 	mkdir -p "${dest_dir}/${dir}"
 done
 
 # Copy the scaffold files to the destination directory...
-for file in ${files[*]}; do
+for file in "${files[@]}"; do
 	cp "${this_dir}/data/${file//\./__}.txt" "${dest_dir}/${file}"
 done
 
@@ -419,6 +423,9 @@ regex="s/\\{\\{REPL_TEXT_ASSIGN_PARAM_1_DESC\\}\\}/${repl_text_assign_param_1_de
 find_and_replace "${regex}"
 
 regex="s/\\{\\{REPL_TEXT_ASSIGN_PARAM_2_DESC\\}\\}/${repl_text_assign_param_2_desc}/g;"
+find_and_replace "${regex}"
+
+regex="s/\\{\\{REPL_TEXT_DTYPE_DESC\\}\\}/${repl_text_dtype_desc}/g;"
 find_and_replace "${regex}"
 
 keywords_sep='",\n    "'

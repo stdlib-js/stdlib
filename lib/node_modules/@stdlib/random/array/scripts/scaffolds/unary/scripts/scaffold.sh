@@ -173,8 +173,9 @@ repl_text_assign_desc="${repl_text_assign_desc/    /}"
 repl_text_factory_desc=$(echo "${repl_text_factory_desc}" | "${wrap}")
 repl_text_factory_desc="${repl_text_factory_desc/    /}"
 
-repl_text_param_1_desc=$(echo "${repl_text_param_1_desc}" | "${wrap}")
-repl_text_param_1_desc="${repl_text_param_1_desc/    /}"
+repl_text_param_1_desc=$(echo "    ${repl_text_param_1_desc}" | "${wrap}")
+repl_text_param_1_desc="${repl_text_param_1_desc/        /}"
+repl_text_param_1_desc="${repl_text_param_1_desc//    /        }"
 
 # Define the copyright year:
 year=$(date +'%Y')
@@ -222,12 +223,12 @@ files=(
 )
 
 # Create the destination directories...
-for dir in ${dirs[*]}; do
+for dir in "${dirs[@]}"; do
 	mkdir -p "${dest_dir}/${dir}"
 done
 
 # Copy the scaffold files to the destination directory...
-for file in ${files[*]}; do
+for file in "${files[@]}"; do
 	cp "${this_dir}/data/${file//\./__}.txt" "${dest_dir}/${file}"
 done
 

@@ -20,7 +20,7 @@ limitations under the License.
 
 # push
 
-> Return a one-dimensional [ndarray][@stdlib/ndarray/ctor] formed by appending provided scalar values to an input [ndarray][@stdlib/ndarray/ctor].
+> Return a one-dimensional [ndarray][@stdlib/ndarray/ctor] formed by appending provided scalar values to a one-dimensional input [ndarray][@stdlib/ndarray/ctor].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 

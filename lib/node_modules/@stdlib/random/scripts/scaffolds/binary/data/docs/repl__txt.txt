@@ -17,8 +17,7 @@
         Options.
 
     options.dtype: string (optional)
-        Array data type. Must be a real-valued floating-point or "generic" data
-        type.
+        {{REPL_TEXT_DTYPE_DESC}}
 
     options.order: string (optional)
         Specifies whether an array is row-major (C-style) or column-major
