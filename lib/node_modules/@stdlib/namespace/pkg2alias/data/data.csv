@@ -3108,7 +3108,7 @@
 "@stdlib/array/uint32",Uint32Array
 "@stdlib/process/umask",umask
 "@stdlib/string/uncapitalize",uncapitalize
-"@stdlib/utils/uncapitalize-keys",uncapitalizeKeys
+"@stdlib/object/uncapitalize-keys",uncapitalizeKeys
 "@stdlib/utils/uncurry",uncurry
 "@stdlib/utils/uncurry-right",uncurryRight
 "@stdlib/constants/unicode/max",UNICODE_MAX
