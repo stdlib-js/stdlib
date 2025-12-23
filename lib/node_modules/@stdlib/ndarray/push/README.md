@@ -105,15 +105,14 @@ The function accepts the following arguments:
 ## Examples
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var array = require( '@stdlib/ndarray/array' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var push = require( '@stdlib/ndarray/push' );
 
 var opts = {
     'dtype': 'generic'
 };
-var x = array( discreteUniform( 6, 0, 10, opts ), opts );
+var x = discreteUniform( [ 6 ], 0, 10, opts );
 console.log( ndarray2array( x ) );
 
 var out = push( x, 12, 14 );

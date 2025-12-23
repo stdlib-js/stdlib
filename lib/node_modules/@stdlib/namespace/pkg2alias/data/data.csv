@@ -2521,7 +2521,7 @@
 "@stdlib/constants/float64/log10-e",LOG10E
 "@stdlib/array/logspace",logspace
 "@stdlib/string/lowercase",lowercase
-"@stdlib/utils/lowercase-keys",lowercaseKeys
+"@stdlib/object/lowercase-keys",lowercaseKeys
 "@stdlib/stats/lowess",lowess
 "@stdlib/string/left-pad",lpad
 "@stdlib/string/left-trim",ltrim
