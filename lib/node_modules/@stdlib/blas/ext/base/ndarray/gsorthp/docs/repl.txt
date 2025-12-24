@@ -1,0 +1,39 @@
+
+{{alias}}( arrays )
+    Sorts a one-dimensional ndarray using heapsort.
+
+    When the sort order is less than zero, the input ndarray is sorted in
+    decreasing order. When the sort order is greater than zero, the input
+    ndarray is sorted in increasing order. When the sort order is equal to zero,
+    the input ndarray is left unchanged.
+
+    The input ndarray is sorted in-place (i.e., the input ndarray is mutated).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray and a
+        zero-dimensional ndarray specifying the sort order.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, -2.0, 3.0, -4.0 ];
+    > var dt = 'generic';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var o = {{alias:@stdlib/ndarray/from-scalar}}( 1.0 );
+    > {{alias}}( [ x, o ] )
+    <ndarray>
+    > var data = x.data
+    [ -4.0, -2.0, 1.0, 3.0 ]
+
+    See Also
+    --------

@@ -161,7 +161,7 @@ date,army_size,disease,wounds,other
 
 ## References
 
--   Nightingale, Florence. 1859. [_A contribution to the sanitary history of the British army during the late war with Russia_][@nightingale:1859a]. London, United Kingdom: John W. Parker and Son. 
+-   Nightingale, Florence. 1859. [_A contribution to the sanitary history of the British army during the late war with Russia_][@nightingale:1859a]. London, United Kingdom: John W. Parker and Son.
 
 </section>
 

@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 2 routine `cblas_dger`.
 */
-#ifndef DGER_CBLAS_H
-#define DGER_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_DGER_CBLAS_H
+#define STDLIB_BLAS_BASE_DGER_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -40,4 +40,4 @@ void API_SUFFIX(cblas_dger)( const CBLAS_LAYOUT layout, const CBLAS_INT M, const
 }
 #endif
 
-#endif // !DGER_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_DGER_CBLAS_H

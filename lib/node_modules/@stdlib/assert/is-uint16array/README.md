@@ -93,7 +93,7 @@ bool = isUint16Array( new Float32Array( 10 ) );
 bool = isUint16Array( new Float64Array( 10 ) );
 // returns false
 
-bool = isUint16Array( new Array( 10 ) );
+bool = isUint16Array( [] );
 // returns false
 
 bool = isUint16Array( {} );

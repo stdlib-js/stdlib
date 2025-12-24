@@ -53,11 +53,6 @@ interface DataTypes {
 	complex_floating_point: 'complex128';
 
 	/**
-	* Default boolean data type.
-	*/
-	boolean: 'bool';
-
-	/**
 	* Default integer data type.
 	*/
 	integer: 'int32';
@@ -71,6 +66,31 @@ interface DataTypes {
 	* Default unsigned integer data type.
 	*/
 	unsigned_integer: 'uint32';
+
+	/**
+	* Default boolean data type.
+	*/
+	boolean: 'bool';
+
+	/**
+	* Default index data type.
+	*/
+	index: 'int32';
+
+	/**
+	* Default integer index data type.
+	*/
+	integer_index: 'int32';
+
+	/**
+	* Default boolean index data type.
+	*/
+	boolean_index: 'bool';
+
+	/**
+	* Default mask index data type.
+	*/
+	mask_index: 'uint8';
 }
 
 /**

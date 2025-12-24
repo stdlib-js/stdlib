@@ -43,17 +43,17 @@ declare class NegativeBinomial {
 	constructor( r: number, p: number );
 
 	/**
-	* Binomial distribution constructor.
+	* Negative binomial distribution constructor.
 	*
 	* @returns distribution instance
 	*
 	* @example
-	* var binomial = new Binomial();
+	* var nbinomial = new NegativeBinomial();
 	*
-	* var y = binomial.cdf( 0.8 );
-	* // returns ~0.9
+	* var y = nbinomial.cdf( 0.8 );
+	* // returns 0.5
 	*
-	* var v = binomial.mode;
+	* var v = nbinomial.mode;
 	* // returns 0.0
 	*/
 	constructor();

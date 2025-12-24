@@ -37,20 +37,20 @@
 * // returns 0.0
 */
 double stdlib_base_max( const double x, const double y ) {
-    if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
-        return 0.0 / 0.0; // NaN
-    }
-    if ( x == STDLIB_CONSTANT_FLOAT64_PINF || y == STDLIB_CONSTANT_FLOAT64_PINF ) {
-        return STDLIB_CONSTANT_FLOAT64_PINF;
-    }
-    if ( x == y && x == 0.0 ) {
-        if ( stdlib_base_is_positive_zero( x ) ) {
-            return x;
-        }
-        return y;
-    }
-    if ( x > y ) {
-        return x;
-    }
-    return y;
+	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( x == STDLIB_CONSTANT_FLOAT64_PINF || y == STDLIB_CONSTANT_FLOAT64_PINF ) {
+		return STDLIB_CONSTANT_FLOAT64_PINF;
+	}
+	if ( x == y && x == 0.0 ) {
+		if ( stdlib_base_is_positive_zero( x ) ) {
+			return x;
+		}
+		return y;
+	}
+	if ( x > y ) {
+		return x;
+	}
+	return y;
 }

@@ -30,7 +30,7 @@ import { Complex64, Complex128, ComplexLike } from '@stdlib/types/complex';
 *
 * @returns output value
 */
-type Nullary<U, V> = ( this: V ) => U;
+type Nullary<V, W> = ( this: W ) => V;
 
 /**
 * Callback invoked for each ndarray element.
@@ -38,26 +38,16 @@ type Nullary<U, V> = ( this: V ) => U;
 * @param value - current array element
 * @returns output value
 */
-type Unary<T, U, V> = ( this: V, value: T ) => U;
-
-/**
-* Callback invoked for each ndarray element.
-*
-* @param value - current array element
-* @param indices - current array element indices
-* @returns output value
-*/
-type Binary<T, U, V> = ( this: V, value: T, indices: Array<number> ) => U;
+type Unary<T, V, W> = ( this: W, value: T ) => V;
 
 /**
 * Callback invoked for each ndarray element.
 *
 * @param value - current array element
 * @param indices - current array element indices
-* @param arr - input array
 * @returns output value
 */
-type Ternary<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: typedndarray<T> ) => U;
+type Binary<T, V, W> = ( this: W, value: T, indices: Array<number> ) => V;
 
 /**
 * Callback invoked for each ndarray element.
@@ -67,7 +57,17 @@ type Ternary<T, U, V> = ( this: V, value: T, indices: Array<number>, arr: typedn
 * @param arr - input array
 * @returns output value
 */
-type Callback<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Ternary<T, U, V>;
+type Ternary<T, U, V, W> = ( this: W, value: T, indices: Array<number>, arr: U ) => V;
+
+/**
+* Callback invoked for each ndarray element.
+*
+* @param value - current array element
+* @param indices - current array element indices
+* @param arr - input array
+* @returns output value
+*/
+type Callback<T, U, V, W> = Nullary<V, W> | Unary<T, V, W> | Binary<T,V, W> | Ternary<T, U, V, W>;
 
 /**
 * Interface describing function options.
@@ -296,7 +296,7 @@ interface GenericOptions extends Options {
 * var arr = ndarray2array( y );
 * // returns [ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
-declare function map<V = unknown>( x: float64ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): float64ndarray;
+declare function map<W = unknown>( x: float64ndarray, fcn: Callback<number, float64ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, float64ndarray, number, W>> ): float64ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -329,7 +329,7 @@ declare function map<V = unknown>( x: float64ndarray, fcn: Callback<number, numb
 * var arr = ndarray2array( y );
 * // returns [ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
-declare function map<V = unknown>( x: float32ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): float32ndarray;
+declare function map<W = unknown>( x: float32ndarray, fcn: Callback<number, float32ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, float32ndarray, number, W>> ): float32ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -358,7 +358,7 @@ declare function map<V = unknown>( x: float32ndarray, fcn: Callback<number, numb
 * var y = map( x, identity );
 * // returns <ndarray>
 */
-declare function map<V = unknown>( x: complex64ndarray, fcn: Callback<Complex64, ComplexLike, V>, thisArg?: ThisParameterType<Callback<Complex64, ComplexLike, V>> ): complex64ndarray;
+declare function map<W = unknown>( x: complex64ndarray, fcn: Callback<Complex64, complex64ndarray, ComplexLike, W>, thisArg?: ThisParameterType<Callback<Complex64, complex64ndarray, ComplexLike, W>> ): complex64ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -387,7 +387,7 @@ declare function map<V = unknown>( x: complex64ndarray, fcn: Callback<Complex64,
 * var y = map( x, identity );
 * // returns <ndarray>
 */
-declare function map<V = unknown>( x: complex128ndarray, fcn: Callback<Complex128, ComplexLike, V>, thisArg?: ThisParameterType<Callback<Complex128, ComplexLike, V>> ): complex128ndarray;
+declare function map<W = unknown>( x: complex128ndarray, fcn: Callback<Complex128, complex128ndarray, ComplexLike, W>, thisArg?: ThisParameterType<Callback<Complex128, complex128ndarray, ComplexLike, W>> ): complex128ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -420,7 +420,7 @@ declare function map<V = unknown>( x: complex128ndarray, fcn: Callback<Complex12
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<V = unknown>( x: int32ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): int32ndarray;
+declare function map<W = unknown>( x: int32ndarray, fcn: Callback<number, int32ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, int32ndarray, number, W>> ): int32ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -453,7 +453,7 @@ declare function map<V = unknown>( x: int32ndarray, fcn: Callback<number, number
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<V = unknown>( x: int16ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): int16ndarray;
+declare function map<W = unknown>( x: int16ndarray, fcn: Callback<number, int16ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, int16ndarray, number, W>> ): int16ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -486,7 +486,7 @@ declare function map<V = unknown>( x: int16ndarray, fcn: Callback<number, number
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<V = unknown>( x: int8ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): int8ndarray;
+declare function map<W = unknown>( x: int8ndarray, fcn: Callback<number, int8ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, int8ndarray, number, W>> ): int8ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -519,7 +519,7 @@ declare function map<V = unknown>( x: int8ndarray, fcn: Callback<number, number,
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<V = unknown>( x: uint32ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint32ndarray;
+declare function map<W = unknown>( x: uint32ndarray, fcn: Callback<number, uint32ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, uint32ndarray, number, W>> ): uint32ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -552,7 +552,7 @@ declare function map<V = unknown>( x: uint32ndarray, fcn: Callback<number, numbe
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<V = unknown>( x: uint16ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint16ndarray;
+declare function map<W = unknown>( x: uint16ndarray, fcn: Callback<number, uint16ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, uint16ndarray, number, W>> ): uint16ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -585,7 +585,7 @@ declare function map<V = unknown>( x: uint16ndarray, fcn: Callback<number, numbe
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<V = unknown>( x: uint8ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint8ndarray;
+declare function map<W = unknown>( x: uint8ndarray, fcn: Callback<number, uint8ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, uint8ndarray, number, W>> ): uint8ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -618,7 +618,7 @@ declare function map<V = unknown>( x: uint8ndarray, fcn: Callback<number, number
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<V = unknown>( x: uint8cndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint8cndarray;
+declare function map<W = unknown>( x: uint8cndarray, fcn: Callback<number, uint8cndarray, number, W>, thisArg?: ThisParameterType<Callback<number, uint8cndarray, number, W>> ): uint8cndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -651,7 +651,7 @@ declare function map<V = unknown>( x: uint8cndarray, fcn: Callback<number, numbe
 * var arr = ndarray2array( y );
 * // returns [ [ true, true, true ], [ true, true, true ] ]
 */
-declare function map<V = unknown>( x: boolndarray, fcn: Callback<boolean, boolean, V>, thisArg?: ThisParameterType<Callback<boolean, boolean, V>> ): boolndarray;
+declare function map<W = unknown>( x: boolndarray, fcn: Callback<boolean, boolndarray, boolean, W>, thisArg?: ThisParameterType<Callback<boolean, boolndarray, boolean, W>> ): boolndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -683,7 +683,7 @@ declare function map<V = unknown>( x: boolndarray, fcn: Callback<boolean, boolea
 * var arr = ndarray2array( y );
 * // returns [ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
-declare function map<T = unknown, U = unknown, V = unknown>( x: genericndarray<T>, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): genericndarray<U>;
+declare function map<T = unknown, V = unknown, W = unknown>( x: genericndarray<T>, fcn: Callback<T, genericndarray<T>, V, W>, thisArg?: ThisParameterType<Callback<T, genericndarray<T>, V, W>> ): genericndarray<V>;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -721,7 +721,7 @@ declare function map<T = unknown, U = unknown, V = unknown>( x: genericndarray<T
 * var arr = ndarray2array( y );
 * // returns [ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Float64Options, fcn: Callback<T, number, V>, thisArg?: ThisParameterType<Callback<T, number, V>> ): float64ndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Float64Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): float64ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -759,7 +759,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Flo
 * var arr = ndarray2array( y );
 * // returns [ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Float32Options, fcn: Callback<T, number, V>, thisArg?: ThisParameterType<Callback<T, number, V>> ): float32ndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Float32Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): float32ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -794,7 +794,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Flo
 * var y = map( x, opts, toComplex );
 * // returns <ndarray>
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Complex128Options, fcn: Callback<T, ComplexLike, V>, thisArg?: ThisParameterType<Callback<T, ComplexLike, V>> ): complex128ndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Complex128Options, fcn: Callback<T, typedndarray<T>, ComplexLike, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, ComplexLike, W>> ): complex128ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -829,7 +829,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Com
 * var y = map( x, opts, toComplex );
 * // returns <ndarray>
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Complex64Options, fcn: Callback<T, ComplexLike, V>, thisArg?: ThisParameterType<Callback<T, ComplexLike, V>> ): complex64ndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Complex64Options, fcn: Callback<T, typedndarray<T>, ComplexLike, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, ComplexLike, W>> ): complex64ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -867,7 +867,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Com
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Int32Options, fcn: Callback<T, number, V>, thisArg?: ThisParameterType<Callback<T, number, V>> ): int32ndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int32Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): int32ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -905,7 +905,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Int
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Int16Options, fcn: Callback<T, number, V>, thisArg?: ThisParameterType<Callback<T, number, V>> ): int16ndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int16Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): int16ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -943,7 +943,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Int
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Int8Options, fcn: Callback<T, number, V>, thisArg?: ThisParameterType<Callback<T, number, V>> ): int8ndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int8Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): int8ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -981,7 +981,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Int
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Uint32Options, fcn: Callback<T, number, V>, thisArg?: ThisParameterType<Callback<T, number, V>> ): uint32ndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uint32Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): uint32ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -1019,7 +1019,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Uin
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Uint16Options, fcn: Callback<T, number, V>, thisArg?: ThisParameterType<Callback<T, number, V>> ): uint16ndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uint16Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): uint16ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -1057,7 +1057,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Uin
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Uint8Options, fcn: Callback<T, number, V>, thisArg?: ThisParameterType<Callback<T, number, V>> ): uint8ndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uint8Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): uint8ndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -1095,7 +1095,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Uin
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Uint8COptions, fcn: Callback<T, number, V>, thisArg?: ThisParameterType<Callback<T, number, V>> ): uint8cndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uint8COptions, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): uint8cndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -1134,7 +1134,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Uin
 * var arr = ndarray2array( y );
 * // returns [ [ true, true, true ], [ true, true, true ] ]
 */
-declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: BoolOptions, fcn: Callback<T, boolean, V>, thisArg?: ThisParameterType<Callback<T, boolean, V>> ): boolndarray;
+declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: BoolOptions, fcn: Callback<T, typedndarray<T>, boolean, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, boolean, W>> ): boolndarray;
 
 /**
 * Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
@@ -1172,7 +1172,7 @@ declare function map<T = unknown, V = unknown>( x: typedndarray<T>, options: Boo
 * var arr = ndarray2array( y );
 * // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
-declare function map<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: GenericOptions, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): genericndarray<U>;
+declare function map<T = unknown, V = unknown, W = unknown>( x: typedndarray<T>, options: GenericOptions, fcn: Callback<T, typedndarray<T>, V, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, V, W>> ): genericndarray<V>;
 
 
 // EXPORTS //

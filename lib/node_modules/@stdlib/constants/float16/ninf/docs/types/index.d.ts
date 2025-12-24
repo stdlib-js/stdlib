@@ -23,7 +23,7 @@
 *
 * @example
 * var ninf = FLOAT16_NINF;
-* // returns -infinity
+* // returns -Infinity
 */
 declare const FLOAT16_NINF: number;
 

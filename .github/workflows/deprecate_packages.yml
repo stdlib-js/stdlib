@@ -61,7 +61,7 @@ jobs:
       # Deprecate the specified packages on npm and the respective GitHub repositories:
       - name: 'Deprecate packages'
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           pkgs='${{ github.event.inputs.packages }}'
           npm_names=""

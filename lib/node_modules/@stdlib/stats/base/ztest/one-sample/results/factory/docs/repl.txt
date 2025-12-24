@@ -1,0 +1,24 @@
+
+{{alias}}( dtype )
+    Returns a constructor for creating a one-sample Z-test results object.
+
+    Parameters
+    ----------
+    dtype: string
+        Floating-point data type for storing floating-point results.
+
+    Returns
+    -------
+    fcn: Function
+        Constructor.
+
+    Examples
+    --------
+    > var R = {{alias}}( 'float64' );
+    > var r = new R();
+    > r.toString( { 'format': 'linear' } )
+    <string>
+
+    See Also
+    --------
+

@@ -16,12 +16,12 @@
 * limitations under the License.
 */
 
+#include "stdlib/stats/base/dists/t/logpdf.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/betaln.h"
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/math/base/special/pow.h"
 #include "stdlib/math/base/special/sqrt.h"
-#include "stdlib/stats/base/dists/t/logpdf.h"
 
 /**
 * Evaluates the log probability density function (logPDF) for a Student's t distribution with degrees of freedom `v` at a value `x`.

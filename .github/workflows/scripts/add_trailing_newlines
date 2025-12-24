@@ -33,7 +33,7 @@ set -o pipefail
 # VARIABLES #
 
 # List of file extensions to process:
-extensions=("js" "mjs" "cjs" "json" "ts" "py" "jl" "R" "c" "h" "cpp" "hpp" "f" "sh" "awk" "html" "xml" "css" "md" "yml" "gypi" "bib" "tex")
+extensions=("js" "mjs" "cjs" "json" "ts" "py" "jl" "R" "c" "h" "cpp" "hpp" "f" "sh" "awk" "html" "xml" "css" "md" "yml" "gyp" "gypi" "bib" "tex" "mk")
 
 
 # FUNCTIONS #
@@ -70,13 +70,19 @@ main() {
 		convert_line_endings "$file"
 
 		extension="${file##*.}"
+		filename=$(basename "$file")
+
 		local match_found=false
-		for ext in "${extensions[@]}"; do
-			if [[ "$ext" == "$extension" ]]; then
-				match_found=true
-				break
-			fi
-		done
+		if [[ "$filename" == "Makefile" ]]; then
+			match_found=true
+		elif [[ "$file" == *.* ]]; then
+			for ext in "${extensions[@]}"; do
+				if [[ "$ext" == "$extension" ]]; then
+					match_found=true
+					break
+				fi
+			done
+		fi
 		if [[ "$match_found" == true ]]; then
 			if [[ "$(tail -c1 "$file"; echo x)" != $'\nx' ]]; then
 				echo "Adding newline to: $file"

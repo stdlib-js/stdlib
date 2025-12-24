@@ -28,40 +28,57 @@
     {
       "task": "build",
       "src": [
-        "./src/dsortins.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-strided-float64array",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-negative-zero",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
       ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-negative-zero",
-        "@stdlib/napi/argv",
-        "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-double",
-        "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/napi/export"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dsortins.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-negative-zero",
-        "@stdlib/math/base/assert/is-nan"
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
       ]
     }
   ]

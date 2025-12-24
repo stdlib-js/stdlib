@@ -104,7 +104,7 @@ static float addf( const float x, const float y ) {
 *
 * @param iterations   number of iterations
 * @param len          array length
-* @return elapsed time in seconds
+* @return             elapsed time in seconds
 */
 static double benchmark( int iterations, int len ) {
 	uint8_t m[ len ];

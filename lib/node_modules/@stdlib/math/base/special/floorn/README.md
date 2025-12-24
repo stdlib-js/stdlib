@@ -133,7 +133,7 @@ double y = stdlib_base_floorn( 3.141592653589793, -4 );
 // returns 3.1415
 
 // If n = 0, `floorn` behaves like `floor`:
-double y = stdlib_base_floorn( 3.141592653589793, 0 );
+y = stdlib_base_floorn( 3.141592653589793, 0 );
 // returns 3.0
 ```
 
@@ -168,7 +168,7 @@ double stdlib_base_floorn( const double x, const int32_t n );
 #include "stdlib/math/base/special/floorn.h"
 #include <stdio.h>
 
-int main() {
+int main( void ) {
     const double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
 
     double y;

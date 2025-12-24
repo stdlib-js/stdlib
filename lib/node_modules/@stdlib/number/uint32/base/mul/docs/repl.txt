@@ -1,0 +1,28 @@
+
+{{alias}}( x, y )
+    Multiples two unsigned 32-bit integers.
+
+    The function performs C-like multiplication of two unsigned 32-bit integers,
+    including wraparound semantics.
+
+    Parameters
+    ----------
+    x: integer
+        Unsigned 32-bit integer.
+
+    y: integer
+        Unsigned 32-bit integer.
+
+    Returns
+    -------
+    out: integer
+        Product.
+
+    Examples
+    --------
+    > var v = {{alias}}( 10>>>0, 4>>>0 )
+    40
+
+    See Also
+    --------
+

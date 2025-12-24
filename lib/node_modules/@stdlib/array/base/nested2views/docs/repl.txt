@@ -1,0 +1,39 @@
+
+{{alias}}( arr, fields )
+    Converts each nested array to a composite view.
+
+    The function assumes that all nested arrays have the same length.
+
+    The number of provided array labels should equal the length of each nested
+    array.
+
+    Each view in the returned array shares the same memory as the corresponding
+    elements in the input arrays. Accordingly, mutation of either a nested array
+    or a view will mutate the other.
+
+    Parameters
+    ----------
+    arr: ArrayLikeObject<ArrayLikeObject>
+        Input array containing nested arrays.
+
+    fields: ArrayLikeObject
+        List of field names.
+
+    Returns
+    -------
+    out: Array<Object>
+        Output array.
+
+    Examples
+    --------
+    > var x = [ [ 1, 2 ], [ 3, 4 ] ];
+    > var f = [ 'x', 'y' ];
+    > var out = {{alias}}( x, f );
+    > var v = out[ 0 ].toJSON()
+    { 'x': 1, 'y': 2 }
+    > v = out[ 1 ].toJSON()
+    { 'x': 3, 'y': 4 }
+
+    See Also
+    --------
+

@@ -67,6 +67,7 @@
     "seed",
     "seedable",
     "ndarray",
+    "multidimensional",
     "array"
   ]
 }

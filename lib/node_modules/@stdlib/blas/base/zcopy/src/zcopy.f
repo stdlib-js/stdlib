@@ -48,19 +48,19 @@
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
 ! @param {integer} N - number of indexed elements
-! @param {Array<complex<double>>} zx - input array
-! @param {integer} strideX - `zx` stride length
-! @param {Array<complex<double>>} zy - output array
-! @param {integer} strideY - `zy` stride length
+! @param {Array<complex<double>>} x - input array
+! @param {integer} strideX - `x` stride length
+! @param {Array<complex<double>>} y - output array
+! @param {integer} strideY - `y` stride length
 !<
-subroutine zcopy( N, zx, strideX, zy, strideY )
+subroutine zcopy( N, x, strideX, y, strideY )
   implicit none
   ! ..
   ! Scalar arguments:
   integer :: strideX, strideY, N
   ! ..
   ! Array arguments:
-  complex(kind=kind(0.0d0)) :: zx(*), zy(*)
+  complex(kind=kind(0.0d0)) :: x(*), y(*)
   ! ..
   ! Local scalars:
   integer :: ix, iy, i
@@ -71,7 +71,7 @@ subroutine zcopy( N, zx, strideX, zy, strideY )
   ! ..
   if ( strideX == 1 .AND. strideY == 1 ) then
     do i = 1, N
-      zy( i ) = zx( i )
+      y( i ) = x( i )
     end do
   else
     if ( strideX < 0 ) then
@@ -85,7 +85,7 @@ subroutine zcopy( N, zx, strideX, zy, strideY )
       iy = 1
     end if
     do i = 1, N
-      zy( iy ) = zx( ix )
+      y( iy ) = x( ix )
       ix = ix + strideX
       iy = iy + strideY
     end do

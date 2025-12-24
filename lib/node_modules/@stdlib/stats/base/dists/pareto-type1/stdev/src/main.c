@@ -26,8 +26,8 @@
 * Returns the standard deviation of a Pareto (Type I) distribution.
 *
 * @param alpha    first shape parameter
-* @param beta     second shape paramter
-* @return         stdandard deviation
+* @param beta     second shape parameter
+* @return         standard deviation
 *
 * @example
 * double y = stdlib_base_dists_pareto_type1_stdev( 4.0, 12.0 );

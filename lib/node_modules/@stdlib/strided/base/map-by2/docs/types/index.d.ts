@@ -107,7 +107,7 @@ interface Routine {
 	* @returns `z`
 	*
 	* @example
-	* var add = require( '@stdlib/math/base/ops/add' );
+	* var add = require( '@stdlib/number/float64/base/add' );
 	*
 	* function accessor( values ) {
 	*     values[ 0 ] *= 2.0;
@@ -142,7 +142,7 @@ interface Routine {
 	* @returns `z`
 	*
 	* @example
-	* var add = require( '@stdlib/math/base/ops/add' );
+	* var add = require( '@stdlib/number/float64/base/add' );
 	*
 	* function accessor( values ) {
 	*     values[ 0 ] *= 2.0;
@@ -175,7 +175,7 @@ interface Routine {
 * @returns `z`
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 *
 * function accessor( values ) {
 *     values[ 0 ] *= 2.0;
@@ -190,7 +190,7 @@ interface Routine {
 * // z => [ 4.0, 0.0, 12.0, 0.0, 20.0 ]
 *
 * @example
-* var add = require( '@stdlib/math/base/ops/add' );
+* var add = require( '@stdlib/number/float64/base/add' );
 *
 * function accessor( values ) {
 *     values[ 0 ] *= 2.0;

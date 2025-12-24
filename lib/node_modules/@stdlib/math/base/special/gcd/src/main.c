@@ -21,7 +21,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/constants/float64/pinf.h"
-#include "stdlib//constants/float64/ninf.h"
+#include "stdlib/constants/float64/ninf.h"
 #include <stdint.h>
 
 // 2^63 - 1

@@ -34,11 +34,11 @@
 * @return       Node-API value
 */
 static napi_value addon( napi_env env, napi_callback_info info ) {
-    STDLIB_NAPI_ARGV( env, info, argv, argc, 4 );
-    STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
-    STDLIB_NAPI_ARGV_DOUBLE( env, alpha, argv, 1 );
-    STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
-    STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 4 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_DOUBLE( env, alpha, argv, 1 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 2 );
 	STDLIB_NAPI_CREATE_DOUBLE( env, API_SUFFIX(stdlib_strided_dapxsumkbn2)( N, alpha, X, strideX ), v );
 	return v;
 }
@@ -51,12 +51,12 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 * @return       Node-API value
 */
 static napi_value addon_method( napi_env env, napi_callback_info info ) {
-    STDLIB_NAPI_ARGV( env, info, argv, argc, 5 );
-    STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
-    STDLIB_NAPI_ARGV_DOUBLE( env, alpha, argv, 1 );
-    STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
+	STDLIB_NAPI_ARGV( env, info, argv, argc, 5 );
+	STDLIB_NAPI_ARGV_INT64( env, N, argv, 0 );
+	STDLIB_NAPI_ARGV_DOUBLE( env, alpha, argv, 1 );
+	STDLIB_NAPI_ARGV_INT64( env, strideX, argv, 3 );
 	STDLIB_NAPI_ARGV_INT64( env, offsetX, argv, 4 );
-    STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 2 );
+	STDLIB_NAPI_ARGV_STRIDED_FLOAT64ARRAY( env, X, N, strideX, argv, 2 );
 	STDLIB_NAPI_CREATE_DOUBLE( env, API_SUFFIX(stdlib_strided_dapxsumkbn2_ndarray)( N, alpha, X, strideX, offsetX ), v );
 	return v;
 }

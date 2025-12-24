@@ -32,7 +32,7 @@
         row-major input arrays, the last dimension indices increment fastest.
         For column-major input arrays, the first dimension indices increment
         fastest. To override the inferred order and ensure that indices
-        increment in a specific manor, regardless of the input array's layout
+        increment in a specific manner, regardless of the input array's layout
         order, explicitly set the iteration order. Note, however, that iterating
         according to an order which does not match that of the input array may,
         in some circumstances, result in performance degradation due to cache

@@ -214,6 +214,25 @@ acs-*.bib
 .vscode/
 jsconfig.json
 
+# Sublime Text #
+################
+*.sublime-workspace
+*.sublime-project
+
+# Other editor files #
+######################
+.idea/
+.cursor
+.cursorignore
+.windsurfrules
+.clinerules
+
+# AI coding agents #
+####################
+CLAUDE.md
+GEMINI.md
+AGENTS.md
+
 # Utilities #
 #############
 .jshintrc

@@ -92,6 +92,13 @@ eslint.rules[ 'stdlib/doctest' ] = 'error';
 */
 eslint.rules[ 'stdlib/vars-order' ] = 'off';
 
+/**
+* Enforce that last `require` is a relative path.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/require-last-path-relative' ] = 'error';
+
 
 // EXPORTS //
 

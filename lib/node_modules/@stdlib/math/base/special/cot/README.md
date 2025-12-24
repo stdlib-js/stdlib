@@ -66,16 +66,17 @@ v = cot( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var PI = require( '@stdlib/constants/float64/pi' );
 var cot = require( '@stdlib/math/base/special/cot' );
 
-var x = linspace( -PI/2.0, PI/2.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -PI/2.0, PI/2.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( cot( x[ i ] ) );
-}
+logEachMap( 'cot(%0.4f) = %0.4f', x, cot );
 ```
 
 </section>

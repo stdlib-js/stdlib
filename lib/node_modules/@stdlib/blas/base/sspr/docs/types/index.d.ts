@@ -45,7 +45,7 @@ interface Routine {
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* sspr( 'row-major', 'upper', 3, 1.0, x, 1, AP );
-	* // A => <Float32Array>[ 2.0, 4.0, 6.0, 5.0, 8.0, 10.0 ]
+	* // AP => <Float32Array>[ 2.0, 4.0, 6.0, 5.0, 8.0, 10.0 ]
 	*/
 	( order: Layout, uplo: MatrixTriangle, N: number, alpha: number, x: Float32Array, strideX: number, AP: Float32Array ): Float32Array;
 
@@ -71,7 +71,7 @@ interface Routine {
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* sspr.ndarray( 'row-major', 'upper', 3, 1.0, x, 1, 0, AP, 1, 0 );
-	* // A => <Float32Array>[ 2.0, 4.0, 6.0, 5.0, 8.0, 10.0 ]
+	* // AP => <Float32Array>[ 2.0, 4.0, 6.0, 5.0, 8.0, 10.0 ]
 	*/
 	ndarray( order: Layout, uplo: MatrixTriangle, N: number, alpha: number, x: Float32Array, strideX: number, offsetX: number, AP: Float32Array, strideAP: number, offsetAP: number ): Float32Array;
 }
