@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ArrayLike } from '@stdlib/types/array';
-import { RealAndGenericDataType as DataType, typedndarray } from '@stdlib/types/ndarray';
+import { RealFloatingPointAndGenericDataType as DataType, typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Input array.
