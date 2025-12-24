@@ -33,7 +33,7 @@ static const double TWO_OVER_PI = 2.0 / STDLIB_CONSTANT_FLOAT64_PI;
 * @return     evaluated CDF
 *
 * @example
-* double y = stdlib_base_arcsine_cdf( 9.0, 0.0, 10.0 );
+* double y = stdlib_base_dists_arcsine_cdf( 9.0, 0.0, 10.0 );
 * // returns ~0.795
 */
 double stdlib_base_dists_arcsine_cdf( const double x, const double a, const double b ) {

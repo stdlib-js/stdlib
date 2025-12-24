@@ -93,14 +93,17 @@ static float rand_float( void ) {
 static double benchmark( void ) {
 	double elapsed;
 	double t;
-	float x;
+	float x[ 100 ];
 	bool b;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( rand_float() * 1000.0f ) - 500.0f;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( rand_float() * 1000.0f ) - 500.0f;
-		b = stdlib_base_is_integerf( x );
+		b = stdlib_base_is_integerf( x[ i%100 ] );
 		if ( b != true && b != false ) {
 			printf( "should return either true or false\n" );
 			break;

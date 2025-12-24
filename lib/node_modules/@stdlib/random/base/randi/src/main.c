@@ -16,15 +16,14 @@
 * limitations under the License.
 */
 
-// Note: keep project includes in alphabetical order...
-#include <stdlib.h>
-#include <stdint.h>
-#include <stdarg.h>
-#include "stdlib/random/base.h"
+#include "stdlib/random/base/randi.h"
+#include "stdlib/random/base/shared.h"
 #include "stdlib/random/base/minstd.h"
 #include "stdlib/random/base/minstd_shuffle.h"
 #include "stdlib/random/base/mt19937.h"
-#include "stdlib/random/base/randi.h"
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdarg.h>
 
 // Define the default PRNG:
 static const enum STDLIB_BASE_RANDOM_RANDI_PRNG STDLIB_BASE_RANDOM_RANDI_DEFAULT = STDLIB_BASE_RANDOM_RANDI_MT19937;
@@ -43,11 +42,11 @@ static const enum STDLIB_BASE_RANDOM_RANDI_PRNG STDLIB_BASE_RANDOM_RANDI_DEFAULT
 * @return        pointer to a dynamically allocated PRNG or, if unable to allocate memory, a null pointer
 *
 * @example
+* #include "stdlib/random/base/randi.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/randi.h"
 *
 * // Create a PRNG:
 * struct BasePRNGObject *obj = stdlib_base_random_randi_allocate( 0 );
@@ -73,11 +72,9 @@ static const enum STDLIB_BASE_RANDOM_RANDI_PRNG STDLIB_BASE_RANDOM_RANDI_DEFAULT
 */
 struct BasePRNGObject * stdlib_base_random_randi_allocate( const int nargs, ... ) {
 	enum STDLIB_BASE_RANDOM_RANDI_PRNG prng;
-	struct BasePRNGObject *obj;
-
 	va_list args;
-	va_start( args, nargs );
 
+	va_start( args, nargs );
 	if ( nargs < 1 ) {
 		prng = STDLIB_BASE_RANDOM_RANDI_DEFAULT;
 	} else {
@@ -90,20 +87,25 @@ struct BasePRNGObject * stdlib_base_random_randi_allocate( const int nargs, ... 
 		} else {
 			seed = rand();
 		}
-		obj = stdlib_base_random_minstd_allocate( seed );
-	} else if ( prng == STDLIB_BASE_RANDOM_RANDI_MINSTD_SHUFFLE ) {
+		va_end( args );
+		return stdlib_base_random_minstd_allocate( seed );
+	}
+	if ( prng == STDLIB_BASE_RANDOM_RANDI_MINSTD_SHUFFLE ) {
 		int32_t seed;
 		if ( nargs > 1 ) {
 			seed = va_arg( args, int32_t );
 		} else {
 			seed = rand();
 		}
-		obj = stdlib_base_random_minstd_shuffle_allocate( seed );
-	} else if ( prng == STDLIB_BASE_RANDOM_RANDI_MT19937 ) {
+		va_end( args );
+		return stdlib_base_random_minstd_shuffle_allocate( seed );
+	}
+	if ( prng == STDLIB_BASE_RANDOM_RANDI_MT19937 ) {
+		const uint32_t *seed;
 		int64_t seed_length;
-		uint32_t *seed;
+		uint32_t tseed[ 1 ];
 		if ( nargs < 2 ) {
-			uint32_t tseed[] = { (uint32_t)rand() };
+			tseed[ 0 ] = (uint32_t)rand();
 			seed = tseed;
 			seed_length = 1;
 		} else if ( nargs == 3 ) {
@@ -114,13 +116,12 @@ struct BasePRNGObject * stdlib_base_random_randi_allocate( const int nargs, ... 
 			va_end( args );
 			return NULL;
 		}
-		obj = stdlib_base_random_mt19937_allocate( seed, seed_length );
-	} else {
-		// How did we get here? A non-implemented PRNG?
-		obj = NULL;
+		va_end( args );
+		return stdlib_base_random_mt19937_allocate( seed, seed_length );
 	}
+	// How did we get here? A non-implemented PRNG?
 	va_end( args );
-	return obj;
+	return NULL;
 }
 
 /**
@@ -134,11 +135,11 @@ struct BasePRNGObject * stdlib_base_random_randi_allocate( const int nargs, ... 
 * @return     pseudorandom integer
 *
 * @example
+* #include "stdlib/random/base/randi.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/randi.h"
 *
 * // Create a PRNG:
 * struct BasePRNGObject *obj = stdlib_base_random_randi_allocate( 0 );
@@ -172,11 +173,11 @@ uint64_t stdlib_base_random_randi( struct BasePRNGObject *obj ) {
 * @param obj  PRNG object
 *
 * @example
+* #include "stdlib/random/base/randi.h"
+* #include "stdlib/random/base/shared.h"
 * #include <stdlib.h>
 * #include <stdio.h>
 * #include <stdint.h>
-* #include "stdlib/random/base.h"
-* #include "stdlib/random/base/randi.h"
 *
 * // Create a PRNG:
 * struct BasePRNGObject *obj = stdlib_base_random_randi_allocate( 0 );

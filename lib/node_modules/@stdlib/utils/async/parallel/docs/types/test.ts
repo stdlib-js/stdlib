@@ -21,7 +21,6 @@ import parallel = require( './index' );
 /**
 * Test function.
 *
-* @private
 * @param next - callback
 */
 function foo( next: Function ): void {
@@ -31,7 +30,6 @@ function foo( next: Function ): void {
 /**
 * Test function.
 *
-* @private
 * @param next - callback
 */
 function bar( next: Function ): void {
@@ -41,7 +39,6 @@ function bar( next: Function ): void {
 /**
 * Test function.
 *
-* @private
 * @param error - error argument
 * @param out - output array
 */

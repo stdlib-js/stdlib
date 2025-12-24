@@ -37,7 +37,7 @@ type accumulator = ( x?: number ) => number | null;
 * var accumulator = incrnancount();
 *
 * var v = accumulator();
-* // returns null
+* // returns 0
 *
 * v = accumulator( 2.0 );
 * // returns 1

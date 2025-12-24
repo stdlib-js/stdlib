@@ -1,0 +1,64 @@
+
+{{alias}}( x, λ )
+    Evaluates the logarithm of the probability mass function (PMF) for a Planck
+    distribution with shape parameter `λ` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If `λ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated logPMF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 4.0, 0.3 )
+    ~-2.5502
+    > y = {{alias}}( 2.0, 1.7 )
+    ~-3.6017
+    > y = {{alias}}( -1.0, 2.5 )
+    -Infinity
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+    > y = {{alias}}( NaN, 0.5 )
+    NaN
+    // Invalid shape parameter:
+    > y = {{alias}}( 2.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( λ )
+    Returns a function for evaluating the logarithm of the probability mass
+    function (PMF) of a Planck distribution with shape parameter `λ`.
+
+    Parameters
+    ----------
+    λ: number
+        Shape parameter.
+
+    Returns
+    -------
+    logpmf: Function
+        Logarithm of the probability mass function (PMF).
+
+    Examples
+    --------
+    > var mylogpmf = {{alias}}.factory( 0.5 );
+    > var y = mylogpmf( 3.0 )
+    ~-2.4328
+    > y = mylogpmf( 1.0 )
+    ~-1.4328
+
+    See Also
+    --------
+

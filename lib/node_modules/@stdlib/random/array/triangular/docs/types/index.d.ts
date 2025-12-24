@@ -193,7 +193,7 @@ interface Random extends PRNG {
 	* var x = zeros( 10, 'float64' );
 	* // returns <Float64Array>
 	*
-	* var out = triangular( 2.0, 5.0, 3.0, out );
+	* var out = triangular( 2.0, 5.0, 3.0, x );
 	* // returns <Float64Array>
 	*
 	* var bool = ( out === x );

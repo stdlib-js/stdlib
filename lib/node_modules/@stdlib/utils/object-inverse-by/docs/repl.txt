@@ -15,10 +15,10 @@
     serialization (`#toString`) when converting transform function return values
     to keys.
 
-    Insertion order is not guaranteed, as object key enumeration is not
-    specified according to the ECMAScript specification. In practice, however,
-    most engines use insertion order to sort an object's keys, thus allowing for
-    deterministic inversion.
+    In older JavaScript engines, insertion order is not guaranteed, as object
+    key enumeration was not specified according to the ECMAScript specification
+    in earlier editions. In practice, however, most older engines use insertion
+    order to sort an object's keys, thus allowing for deterministic inversion.
 
     Parameters
     ----------

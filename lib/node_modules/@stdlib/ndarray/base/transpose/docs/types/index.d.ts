@@ -32,7 +32,8 @@ import { ndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, in
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
-*     'dtype': 'float64'
+*     'dtype': 'float64',
+*     'casting': 'unsafe'
 * });
 * // returns <ndarray>
 *
@@ -63,7 +64,8 @@ declare function transpose( x: float64ndarray ): float64ndarray;
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
-*     'dtype': 'float32'
+*     'dtype': 'float32',
+*     'casting': 'unsafe'
 * });
 * // returns <ndarray>
 *
@@ -150,7 +152,8 @@ declare function transpose( x: complex64ndarray ): complex64ndarray;
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
-*     'dtype': 'int32'
+*     'dtype': 'int32',
+*     'casting': 'unsafe'
 * });
 * // returns <ndarray>
 *
@@ -181,8 +184,9 @@ declare function transpose( x: int32ndarray ): int32ndarray;
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
-*     'dtype': 'int16'
-* });
+*     'dtype': 'int16',
+*     'casting': 'unsafe'
+*  });
 * // returns <ndarray>
 *
 * var sh = x.shape;
@@ -212,7 +216,8 @@ declare function transpose( x: int16ndarray ): int16ndarray;
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
-*     'dtype': 'int8'
+*     'dtype': 'int8',
+*     'casting': 'unsafe'
 * });
 * // returns <ndarray>
 *
@@ -243,7 +248,8 @@ declare function transpose( x: int8ndarray ): int8ndarray;
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
-*     'dtype': 'uint32'
+*     'dtype': 'uint32',
+*     'casting': 'unsafe'
 * });
 * // returns <ndarray>
 *
@@ -274,7 +280,8 @@ declare function transpose( x: uint32ndarray ): uint32ndarray;
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
-*     'dtype': 'uint16'
+*     'dtype': 'uint16',
+*     'casting': 'unsafe'
 * });
 * // returns <ndarray>
 *
@@ -305,7 +312,8 @@ declare function transpose( x: uint16ndarray ): uint16ndarray;
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
-*     'dtype': 'uint8'
+*     'dtype': 'uint8',
+*     'casting': 'unsafe'
 * });
 * // returns <ndarray>
 *
@@ -336,7 +344,8 @@ declare function transpose( x: uint8ndarray ): uint8ndarray;
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
-*     'dtype': 'uint8c'
+*     'dtype': 'uint8c',
+*     'casting': 'unsafe'
 * });
 * // returns <ndarray>
 *

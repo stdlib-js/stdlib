@@ -117,7 +117,7 @@ var out = bar( 1, 2 );
 
 ```javascript
 var filledarrayBy = require( '@stdlib/array/filled-by' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var filterArguments = require( '@stdlib/utils/filter-arguments' );
 var mapArguments = require( '@stdlib/utils/map-arguments' );
 

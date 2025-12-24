@@ -66,23 +66,23 @@ fi
 # Lint JavaScript command-line interfaces...
 file=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ' | sed 's/ $//')
 if [[ -n "${file}" ]]; then
-	make lint-javascript-files FIX="${fix}" FILES="${file}"
+	make lint-javascript-files FIX="${fix}" FAST_FAIL=0 FILES="${file}"
 fi
 
 # Lint JavaScript example files:
 files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
 if [[ -n "${files}" ]]; then
-	make lint-javascript-files FIX="${fix}" FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
+	make lint-javascript-files FIX="${fix}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
 fi
 
 # Lint JavaScript test files:
 files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
 if [[ -n "${files}" ]]; then
-	make lint-javascript-files FIX="${fix}" FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
+	make lint-javascript-files FIX="${fix}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
 fi
 
 # Lint JavaScript benchmark files:
 files=$(echo "${files_to_lint}" | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
 if [[ -n "${files}" ]]; then
-	make lint-javascript-files FIX="${fix}" FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
+	make lint-javascript-files FIX="${fix}" FAST_FAIL=0 FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
 fi

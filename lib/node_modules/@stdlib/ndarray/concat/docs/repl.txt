@@ -1,0 +1,75 @@
+
+{{alias}}( arrays[, dim] )
+    Concatenates a list of ndarrays along a specified ndarray dimension.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        List of ndarrays to concatenate. Must be broadcast compatible except for
+        the dimension along which to concatenate. The data type of the output
+        ndarray is determined by applying type promotion rules to the list of
+        input ndarrays. If provided ndarrays having different memory layouts,
+        the output ndarray has the default order.
+
+    dim: integer (optional)
+        Dimension along which to concatenate input ndarrays. Must be a negative
+        integer. The index of the dimension along which to concatenate is
+        resolved relative to the last dimension, with the last dimension
+        corresponding to the value `-1`. Default: -1.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+    > var y = {{alias:@stdlib/ndarray/array}}( [ [ 5.0, 6.0 ], [ 7.0, 8.0 ] ] );
+    > var out = {{alias}}( [ x, y ], -1 )
+    <ndarray>
+    > var arr = {{alias:@stdlib/ndarray/to-array}}( out )
+    [ [ 1.0, 2.0, 5.0, 6.0 ], [ 3.0, 4.0, 7.0, 8.0 ] ]
+
+
+{{alias}}.assign( arrays, out[, dim] )
+    Concatenates a list of ndarrays along a specified ndarray dimension and
+    assigns results to a provided output ndarray.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        List of ndarrays to concatenate. Must be broadcast compatible except for
+        the dimension along which to concatenate. Must promote] to a data type
+        which can be (mostly) safely cast to the data type of the output
+        ndarray.
+
+    out: ndarray
+        Output ndarray.
+
+    dim: integer (optional)
+        Dimension along which to concatenate input ndarrays. Must be a negative
+        integer. The index of the dimension along which to concatenate is
+        resolved relative to the last dimension, with the last dimension
+        corresponding to the value `-1`. Default: -1.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0 ], [ 2.0 ] ] );
+    > var y = {{alias:@stdlib/ndarray/array}}( [ [ 3.0 ], [ 4.0 ] ] );
+    > var z = {{alias:@stdlib/ndarray/array}}( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );
+    > var out = {{alias}}.assign( [ x, y ], z, -1 )
+    <ndarray>
+    > var bool = ( out === z )
+    true
+    > var arr = {{alias:@stdlib/ndarray/to-array}}( out )
+    [ [ 1.0, 3.0 ], [ 2.0, 4.0 ] ]
+
+    See Also
+    --------
+

@@ -40,11 +40,11 @@
 * STDLIB_NDARRAY_UNARY_3D_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_UNARY_3D_LOOP_PREAMBLE                                  \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
-	struct ndarray *x2 = arrays[ 1 ];                                          \
-	int64_t *shape = stdlib_ndarray_shape( x1 );                               \
-	int64_t *sx1 = stdlib_ndarray_strides( x1 );                               \
-	int64_t *sx2 = stdlib_ndarray_strides( x2 );                               \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
+	const struct ndarray *x2 = arrays[ 1 ];                                    \
+	const int64_t *shape = stdlib_ndarray_shape( x1 );                         \
+	const int64_t *sx1 = stdlib_ndarray_strides( x1 );                         \
+	const int64_t *sx2 = stdlib_ndarray_strides( x2 );                         \
 	uint8_t *px1 = stdlib_ndarray_data( x1 );                                  \
 	uint8_t *px2 = stdlib_ndarray_data( x2 );                                  \
 	int64_t d0x1;                                                              \
@@ -108,13 +108,13 @@
 * STDLIB_NDARRAY_UNARY_3D_LOOP_EPILOGUE
 */
 #define STDLIB_NDARRAY_UNARY_3D_LOOP_TWO_OUT_PREAMBLE                          \
-	struct ndarray *x1 = arrays[ 0 ];                                          \
-	struct ndarray *x2 = arrays[ 1 ];                                          \
-	struct ndarray *x3 = arrays[ 2 ];                                          \
-	int64_t *shape = stdlib_ndarray_shape( x1 );                               \
-	int64_t *sx1 = stdlib_ndarray_strides( x1 );                               \
-	int64_t *sx2 = stdlib_ndarray_strides( x2 );                               \
-	int64_t *sx3 = stdlib_ndarray_strides( x3 );                               \
+	const struct ndarray *x1 = arrays[ 0 ];                                    \
+	const struct ndarray *x2 = arrays[ 1 ];                                    \
+	const struct ndarray *x3 = arrays[ 2 ];                                    \
+	const int64_t *shape = stdlib_ndarray_shape( x1 );                         \
+	const int64_t *sx1 = stdlib_ndarray_strides( x1 );                         \
+	const int64_t *sx2 = stdlib_ndarray_strides( x2 );                         \
+	const int64_t *sx3 = stdlib_ndarray_strides( x3 );                         \
 	uint8_t *px1 = stdlib_ndarray_data( x1 );                                  \
 	uint8_t *px2 = stdlib_ndarray_data( x2 );                                  \
 	uint8_t *px3 = stdlib_ndarray_data( x3 );                                  \

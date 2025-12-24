@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the excess kurtosis of an beta prime distribution.
+* Returns the excess kurtosis of a beta prime distribution.
 */
 double stdlib_base_dists_betaprime_kurtosis( const double alpha, const double beta );
 

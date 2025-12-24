@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `zswap`.
 */
-#ifndef ZSWAP_H
-#define ZSWAP_H
+#ifndef STDLIB_BLAS_BASE_ZSWAP_H
+#define STDLIB_BLAS_BASE_ZSWAP_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_zswap_ndarray)( const CBLAS_INT N, void *X, const CBLAS_INT st
 }
 #endif
 
-#endif // !ZSWAP_H
+#endif // !STDLIB_BLAS_BASE_ZSWAP_H

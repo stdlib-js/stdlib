@@ -57,7 +57,7 @@ interface Namespace {
 	* // returns ~0.736
 	*
 	* y = mycdf( 2.0 );
-	* // returns ~0.973
+	* // returns ~0.974
 	*/
 	cdf: typeof cdf;
 

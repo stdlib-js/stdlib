@@ -47,11 +47,11 @@
 * // returns 1.0
 */
 double stdlib_base_sqrt1pm1( const double x ) {
-    if ( stdlib_base_is_nan( x ) ) {
-        return 0.0 / 0.0; // NaN
-    }
-    if ( stdlib_base_abs( x ) > 0.75 ) {
-        return stdlib_base_sqrt( 1.0 + x ) - 1.0;
-    }
-    return stdlib_base_expm1( stdlib_base_log1p( x ) / 2.0 );
+	if ( stdlib_base_is_nan( x ) ) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( stdlib_base_abs( x ) > 0.75 ) {
+		return stdlib_base_sqrt( 1.0 + x ) - 1.0;
+	}
+	return stdlib_base_expm1( stdlib_base_log1p( x ) / 2.0 );
 }

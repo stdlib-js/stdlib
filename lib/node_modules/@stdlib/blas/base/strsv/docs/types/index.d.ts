@@ -73,7 +73,7 @@ interface Routine {
 	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0 ], [ 0.0, 0.0, 1.0 ] ]
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
-	* strsv.ndarray( 'row-major', 'upper', 'no-transpose', 'unit', 3, A, 3, 1, 0, x, 1, 0 );
+	* strsv.ndarray( 'lower', 'no-transpose', 'unit', 3, A, 3, 1, 0, x, 1, 0 );
 	* // x => <Float32Array>[ 0.0, -4.0, 3.0 ]
 	*/
 	ndarray( uplo: MatrixTriangle, trans: TransposeOperation, diag: DiagonalType, N: number, A: Float32Array, strideA1: number, strideA2: number, offsetA: number, x: Float32Array, strideX: number, offsetX: number ): Float32Array;

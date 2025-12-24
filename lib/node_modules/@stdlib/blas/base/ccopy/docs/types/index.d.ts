@@ -38,22 +38,12 @@ interface Routine {
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var y = new Complex64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	* var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* ccopy( x.length, x, 1, y, 1 );
-	*
-	* var z = y.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 1.0
-	*
-	* var im = imagf( z );
-	* // returns 2.0
+	* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 	*/
 	( N: number, x: Complex64Array, strideX: number, y: Complex64Array, strideY: number ): Complex64Array;
 
@@ -71,22 +61,12 @@ interface Routine {
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var y = new Complex64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	* var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* ccopy.ndarray( x.length, x, 1, 0, y, 1, 0 );
-	*
-	* var z = y.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 1.0
-	*
-	* var im = imagf( z );
-	* // returns 2.0
+	* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 	*/
 	ndarray( N: number, x: Complex64Array, strideX: number, offsetX: number, y: Complex64Array, strideY: number, offsetY: number ): Complex64Array;
 }
@@ -103,41 +83,21 @@ interface Routine {
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-* var y = new Complex64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * ccopy( x.length, x, 1, y, 1 );
-*
-* var z = y.get( 0 );
-* // returns <Complex64>
-*
-* var re = realf( z );
-* // returns 1.0
-*
-* var im = imagf( z );
-* // returns 2.0
+* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-* var y = new Complex64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+* var y = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * ccopy.ndarray( x.length, x, 1, 0, y, 1, 0 );
-*
-* var z = y.get( 0 );
-* // returns <Complex64>
-*
-* var re = realf( z );
-* // returns 1.0
-*
-* var im = imagf( z );
-* // returns 2.0
+* // y => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 */
 declare var ccopy: Routine;
 

@@ -87,7 +87,7 @@ static double rand_double( void ) {
 * Computes the squared absolute value of a complex number.
 *
 * @param z  input value
-* @return squared absolute value
+* @return   squared absolute value
 */
 double cabs2( double complex z ) {
 	return ( creal(z)*creal(z) ) + ( cimag(z)*cimag(z) );

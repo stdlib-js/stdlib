@@ -25,23 +25,23 @@
 * @returns secant
 *
 * @example
-* var v = secd( 30 );
+* var v = secd( 30.0 );
 * // returns ~1.15
 *
 * @example
-* var v = secd( 45 );
+* var v = secd( 45.0 );
 * // returns ~1.41
 *
 * @example
-* var v = secd( 60 );
+* var v = secd( 60.0 );
 * // returns ~2.0
 *
 * @example
-* var v = secd( 90 );
-* // returns 16331239353195370.0
+* var v = secd( 90.0 );
+* // returns Infinity
 *
 * @example
-* var v = secd( 0 );
+* var v = secd( 0.0 );
 * // returns 1.0
 *
 * @example

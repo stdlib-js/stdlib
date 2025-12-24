@@ -26,7 +26,7 @@
     > var m = [ [ [ [ 0, 1 ], [ 0, 0 ] ] ] ];
     > var z = [ [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ] ];
     > var shape = [ 1, 1, 2, 2 ];
-    > {{alias}}( [ x, y, m, z ], shape, {{alias:@stdlib/math/base/ops/add}} );
+    > {{alias}}( [ x, y, m, z ], shape, {{alias:@stdlib/number/float64/base/add}} );
     > z
     [ [ [ [ 2.0, 0.0 ], [ 6.0, 8.0 ] ] ] ]
 

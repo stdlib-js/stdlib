@@ -50,7 +50,7 @@
 *
 * @example
 * var out = replaceAfter( 'beep boop', ' ', 'foo' , 5 );
-* // returns 'beep foo'
+* // returns 'beep boop'
 *
 * @example
 * var out = replaceAfter( 'beep boop beep baz', 'beep', 'foo' , 5 );

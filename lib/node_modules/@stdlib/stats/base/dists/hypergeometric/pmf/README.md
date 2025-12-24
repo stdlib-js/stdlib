@@ -157,6 +157,109 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/hypergeometric/pmf.h"
+```
+
+#### stdlib_base_dists_hypergeometric_pmf( x, N, K, n )
+
+Evaluates the [probability mass function][pmf] (PMF) for a [hypergeometric][hypergeometric-distribution] distribution with parameters `N` (population size), `K` (subpopulation size), and `n` (number of draws).
+
+```c
+double out = stdlib_base_dists_hypergeometric_pmf( 1.0, 8, 4, 2 );
+// returns ~0.571
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **N**: `[in] int32_t` population size.
+-   **K**: `[in] int32_t` subpopulation size.
+-   **n**: `[in] int32_t` number of draws.
+
+```c
+double stdlib_base_dists_hypergeometric_pmf( const double x, const int32_t N, const int32_t K, const int32_t n );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/hypergeometric/pmf.h"
+#include "stdlib/math/base/special/round.h"
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v * ( max - min ) );
+}
+
+int main( void ) {
+    int32_t N;
+    int32_t K;
+    int32_t n;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        x = stdlib_base_round( random_uniform( 0.0, 5.0 ) );
+        N = stdlib_base_round( random_uniform( 0.0, 20.0 ) );
+        K = stdlib_base_round( random_uniform( 0.0, N ) );
+        n = stdlib_base_round( random_uniform( 0.0, N ) );
+        y = stdlib_base_dists_hypergeometric_pmf( x, N, K, n );
+        printf( "x: %lf, N: %d, K: %d, n: %d, P(X=x;N,K,n): %lf\n", x, N, K, n, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

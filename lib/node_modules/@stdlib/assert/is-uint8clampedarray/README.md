@@ -93,7 +93,7 @@ bool = isUint8ClampedArray( new Float32Array( 10 ) );
 bool = isUint8ClampedArray( new Float64Array( 10 ) );
 // returns false
 
-bool = isUint8ClampedArray( new Array( 10 ) );
+bool = isUint8ClampedArray( [] );
 // returns false
 
 bool = isUint8ClampedArray( {} );
