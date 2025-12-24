@@ -3127,7 +3127,7 @@
 "@stdlib/utils/until-each-right",untilEachRight
 "@stdlib/utils/unzip",unzip
 "@stdlib/string/uppercase",uppercase
-"@stdlib/utils/uppercase-keys",uppercaseKeys
+"@stdlib/object/uppercase-keys",uppercaseKeys
 "@stdlib/datasets/us-states-abbr",US_STATES_ABBR
 "@stdlib/datasets/us-states-capitals",US_STATES_CAPITALS
 "@stdlib/datasets/us-states-capitals-names",US_STATES_CAPITALS_NAMES
