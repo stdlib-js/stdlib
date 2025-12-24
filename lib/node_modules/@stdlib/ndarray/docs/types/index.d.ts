@@ -606,10 +606,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.countFalsy( x );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 1
+	* // returns <ndarray>[ 1 ]
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
@@ -638,10 +635,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.countFalsy.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 1
+	* // returns <ndarray>[ 1 ]
 	*/
 	countFalsy: typeof countFalsy;
 
@@ -1285,7 +1279,7 @@ interface Namespace {
 	* @param options - function options
 	* @param options.dims - list of dimensions over which to perform a reduction
 	* @param options.keepdims - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions (default: false)
-	* @param options.sentinelValue - sentinel value
+	* @param options.sentinel - sentinel value
 	* @param predicate - predicate function
 	* @param thisArg - predicate execution context
 	* @returns output ndarray
