@@ -1752,7 +1752,7 @@
 "@stdlib/utils/async/for-each-right","@stdlib/utils-async-for-each-right"
 "@stdlib/object/for-in","@stdlib/object-for-in"
 "@stdlib/string/format","@stdlib/string-format"
-"@stdlib/utils/for-own","@stdlib/utils-for-own"
+"@stdlib/object/for-own","@stdlib/object-for-own"
 "@stdlib/constants/float64/fourth-pi","@stdlib/constants-float64-fourth-pi"
 "@stdlib/constants/float64/fourth-root-eps","@stdlib/constants-float64-fourth-root-eps"
 "@stdlib/datasets/frb-sf-wage-rigidity","@stdlib/datasets-frb-sf-wage-rigidity"
