@@ -95,7 +95,7 @@ jobs:
       - name: 'Find changed packages'
         id: 'changed_packages'
         # Pin action to full length commit SHA
-        uses: stdlib-js/changed-packages-action@e489c6b4eff164c5912a0b2d17d7462f38c11712 # v2.0.0
+        uses: stdlib-js/changed-packages-action@c673516d574155c9a85d159429b76530b1d548e3 # v3.0.1
         with:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
 
