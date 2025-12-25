@@ -42,8 +42,8 @@ var arr = weibull( [ 3, 3 ], 2.0, 5.0 );
 The function has the following parameters:
 
 -   **shape**: output shape.
--   **k**: scale parameter. May be either a scalar or an [ndarray][@stdlib/ndarray/ctor]. When providing an [ndarray][@stdlib/ndarray/ctor], the [ndarray][@stdlib/ndarray/ctor] must be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes] with the specified output shape.
--   **lambda**: shape parameter. May be either a scalar or an [ndarray][@stdlib/ndarray/ctor]. When providing an [ndarray][@stdlib/ndarray/ctor], the [ndarray][@stdlib/ndarray/ctor] must be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes] with the specified output shape.
+-   **k**: shape parameter. May be either a scalar or an [ndarray][@stdlib/ndarray/ctor]. When providing an [ndarray][@stdlib/ndarray/ctor], the [ndarray][@stdlib/ndarray/ctor] must be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes] with the specified output shape.
+-   **lambda**: scale parameter. May be either a scalar or an [ndarray][@stdlib/ndarray/ctor]. When providing an [ndarray][@stdlib/ndarray/ctor], the [ndarray][@stdlib/ndarray/ctor] must be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes] with the specified output shape.
 -   **options**: function options.
 
 When provided scalar distribution parameters, every element in the output [ndarray][@stdlib/ndarray/ctor] is drawn from the same distribution. To generate pseudorandom numbers drawn from different distributions, provide distribution parameter arguments as [ndarrays][@stdlib/ndarray/ctor]. The following example demonstrates broadcasting an [ndarray][@stdlib/ndarray/ctor] containing distribution parameters to generate sub-matrices drawn from different distributions.
@@ -123,8 +123,8 @@ var bool = ( v === out );
 
 The method has the following parameters:
 
--   **k**: scale parameter. May be either a scalar or an [ndarray][@stdlib/ndarray/ctor]. When providing an [ndarray][@stdlib/ndarray/ctor], the [ndarray][@stdlib/ndarray/ctor] must be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes] with the output [ndarray][@stdlib/ndarray/ctor].
--   **lambda**: shape parameter. May be either a scalar or an [ndarray][@stdlib/ndarray/ctor]. When providing an [ndarray][@stdlib/ndarray/ctor], the [ndarray][@stdlib/ndarray/ctor] must be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes] with the output [ndarray][@stdlib/ndarray/ctor].
+-   **k**: shape parameter. May be either a scalar or an [ndarray][@stdlib/ndarray/ctor]. When providing an [ndarray][@stdlib/ndarray/ctor], the [ndarray][@stdlib/ndarray/ctor] must be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes] with the output [ndarray][@stdlib/ndarray/ctor].
+-   **lambda**: scale parameter. May be either a scalar or an [ndarray][@stdlib/ndarray/ctor]. When providing an [ndarray][@stdlib/ndarray/ctor], the [ndarray][@stdlib/ndarray/ctor] must be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes] with the output [ndarray][@stdlib/ndarray/ctor].
 -   **out**: output [ndarray][@stdlib/ndarray/ctor].
 
 #### weibull.factory( \[options] )

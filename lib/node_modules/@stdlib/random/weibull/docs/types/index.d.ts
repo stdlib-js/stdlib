@@ -126,8 +126,8 @@ interface RandomFunction extends PRNG {
 	* Returns an ndarray containing pseudorandom numbers drawn from a Weibull distribution.
 	*
 	* @param shape - output shape
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - function options
 	* @throws distribution parameters and the output shape must be broadcast compatible
 	* @returns output ndarray
@@ -137,8 +137,8 @@ interface RandomFunction extends PRNG {
 	/**
 	* Fills an ndarray with pseudorandom numbers drawn from a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param out - output ndarray
 	* @throws distribution parameters and the output ndarray must be broadcast compatible
 	* @returns output ndarray
@@ -154,8 +154,8 @@ interface Random extends PRNG {
 	* Returns an ndarray containing pseudorandom numbers drawn from a Weibull distribution.
 	*
 	* @param shape - output shape
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param options - function options
 	* @throws distribution parameters and the output shape must be broadcast compatible
 	* @returns output ndarray
@@ -169,8 +169,8 @@ interface Random extends PRNG {
 	/**
 	* Fills an ndarray with pseudorandom numbers drawn from a Weibull distribution.
 	*
-	* @param k - scale parameter
-	* @param lambda - shape parameter
+	* @param k - shape parameter
+	* @param lambda - scale parameter
 	* @param out - output ndarray
 	* @throws distribution parameters and the output ndarray must be broadcast compatible
 	* @returns output ndarray
@@ -216,8 +216,8 @@ interface Random extends PRNG {
 * Generates pseudorandom numbers drawn from a Weibull distribution.
 *
 * @param shape - output shape
-* @param k - scale parameter
-* @param lambda - shape parameter
+* @param k - shape parameter
+* @param lambda - scale parameter
 * @param options - function options
 * @throws distribution parameters and the output shape must be broadcast compatible
 * @returns output ndarray

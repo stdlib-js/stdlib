@@ -9,11 +9,11 @@
         Array shape.
 
     k: number|ndarray
-        Scale parameter. If an ndarray, must be broadcast compatible with the
+        Shape parameter. If an ndarray, must be broadcast compatible with the
         specified array shape.
 
     lambda: number|ndarray
-        Shape parameter. If an ndarray, must be broadcast compatible with the
+        Scale parameter. If an ndarray, must be broadcast compatible with the
         specified array shape.
 
     options: Object (optional)
@@ -67,11 +67,11 @@
     Parameters
     ----------
     k: number|ndarray
-        Scale parameter. If an ndarray, must be broadcast compatible with the
+        Shape parameter. If an ndarray, must be broadcast compatible with the
         provided output array.
 
     lambda: number|ndarray
-        Shape parameter. If an ndarray, must be broadcast compatible with the
+        Scale parameter. If an ndarray, must be broadcast compatible with the
         provided output array.
 
     out: ndarray
