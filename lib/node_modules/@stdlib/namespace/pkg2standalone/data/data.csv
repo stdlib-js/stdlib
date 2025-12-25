@@ -1750,7 +1750,7 @@
 "@stdlib/string/for-each","@stdlib/string-for-each"
 "@stdlib/utils/for-each-right","@stdlib/utils-for-each-right"
 "@stdlib/utils/async/for-each-right","@stdlib/utils-async-for-each-right"
-"@stdlib/utils/for-in","@stdlib/utils-for-in"
+"@stdlib/object/for-in","@stdlib/object-for-in"
 "@stdlib/string/format","@stdlib/string-format"
 "@stdlib/utils/for-own","@stdlib/utils-for-own"
 "@stdlib/constants/float64/fourth-pi","@stdlib/constants-float64-fourth-pi"
