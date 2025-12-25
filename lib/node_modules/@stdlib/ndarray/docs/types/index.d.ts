@@ -139,10 +139,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.any( x );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
@@ -171,10 +168,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.any.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	any: typeof any;
 
@@ -675,10 +669,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.countIf( x, predicate );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 5
+	* // returns <ndarray>[ 5 ]
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
@@ -711,10 +702,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.countIf.assign( x, y, predicate );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 5
+	* // returns <ndarray>[ 5 ]
 	*/
 	countIf: typeof countIf;
 
@@ -748,10 +736,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.countTruthy( x );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 5
+	* // returns <ndarray>[ 5 ]
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
@@ -780,10 +765,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.countTruthy.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 5
+	* // returns <ndarray>[ 5 ]
 	*/
 	countTruthy: typeof countTruthy;
 
