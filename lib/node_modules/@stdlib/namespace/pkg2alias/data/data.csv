@@ -1526,7 +1526,7 @@
 "@stdlib/fs/close",close
 "@stdlib/datasets/cmudict",CMUDICT
 "@stdlib/string/code-point-at",codePointAt
-"@stdlib/utils/common-keys",commonKeys
+"@stdlib/object/common-keys",commonKeys
 "@stdlib/utils/common-keys-in",commonKeysIn
 "@stdlib/complex/cmplx",complex
 "@stdlib/complex/float32/ctor",Complex64

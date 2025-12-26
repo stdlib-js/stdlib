@@ -1526,7 +1526,7 @@
 "@stdlib/fs/close","@stdlib/fs-close"
 "@stdlib/datasets/cmudict","@stdlib/datasets-cmudict"
 "@stdlib/string/code-point-at","@stdlib/string-code-point-at"
-"@stdlib/utils/common-keys","@stdlib/utils-common-keys"
+"@stdlib/object/common-keys","@stdlib/object-common-keys"
 "@stdlib/utils/common-keys-in","@stdlib/utils-common-keys-in"
 "@stdlib/complex/cmplx","@stdlib/complex-cmplx"
 "@stdlib/complex/float32/ctor","@stdlib/complex-float32-ctor"
