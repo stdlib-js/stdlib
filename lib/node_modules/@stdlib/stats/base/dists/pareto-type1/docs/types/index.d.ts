@@ -354,7 +354,7 @@ interface Namespace {
 	*
 	* @example
 	* var y = ns.pdf( 4.0, 1.0, 1.0 );
-	* // returns 0.0625
+	* // returns ~0.063
 	*
 	* y = ns.pdf( 20.0, 1.0, 10.0 );
 	* // returns 0.025
