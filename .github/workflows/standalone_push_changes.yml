@@ -45,6 +45,9 @@ jobs:
     # Define a display name:
     name: 'Push changes'
 
+    # Only run this job if the repository is not a fork:
+    if: github.repository == 'stdlib-js/stdlib'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -120,8 +123,8 @@ jobs:
     # Indicate that this job depends on the prior job finishing:
     needs: push
 
-    # Run this job regardless of the outcome of the prior job:
-    if: always()
+    # Run this job regardless of the outcome of the prior job, but only if the repository is not a fork:
+    if: always() && github.repository == 'stdlib-js/stdlib'
 
     # Set defaults:
     defaults:
