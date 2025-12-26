@@ -41,6 +41,9 @@ jobs:
     # Define a display name:
     name: 'Process Metadata'
 
+    # Only run this job if the repository is not a fork:
+    if: github.repository == 'stdlib-js/stdlib'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 

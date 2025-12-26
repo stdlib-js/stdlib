@@ -86,8 +86,10 @@ jobs:
     # Define a display name:
     name: 'Calculate test coverage for packages'
 
-    # Only run this job if a pull request does not have a "ci: Skip" label:
-    if: "${{ github.event_name != 'pull_request' || !contains(github.event.pull_request.labels.*.name, 'ci: Skip') }}"
+    # Only run this job if a pull request does not have a "ci: Skip" label and skip push events on forks:
+    if: |
+      (github.event_name != 'pull_request' || !contains(github.event.pull_request.labels.*.name, 'ci: Skip')) &&
+      (github.event_name != 'push' || github.repository == 'stdlib-js/stdlib')
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
