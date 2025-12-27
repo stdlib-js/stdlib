@@ -194,7 +194,7 @@ interface lastIndexOf {
 	* // returns true
 	*
 	* var idx = out.get();
-	* // returns 3
+	* // returns 0
 	*/
 	assign<T = unknown, U extends OutputArray = OutputArray>( x: InputArray<T>, searchElement: SearchElement<T>, fromIndex: FromIndex, out: U, options?: BaseOptions ): U;
 }
@@ -229,7 +229,7 @@ interface lastIndexOf {
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ -1.0, 2.0, -3.0, 2.0 ] );
-* var y = zeros( x, {
+* var y = zeros( [], {
 *     'dtype': 'int32'
 * } );
 *

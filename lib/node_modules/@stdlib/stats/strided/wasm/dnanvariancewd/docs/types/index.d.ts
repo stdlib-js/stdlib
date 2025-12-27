@@ -242,7 +242,7 @@ interface Routine extends ModuleWrapper {
 	* var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0, NaN, NaN ] );
 	*
 	* var out = dnanvariancewd.ndarray( 5, 1, x, 2, 1 );
-	* // returns ~4.7857
+	* // returns 6.25
 	*/
 	ndarray( N: number, correction: number, x: Float64Array, strideX: number, offsetX: number ): number;
 

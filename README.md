@@ -80,7 +80,7 @@ Thank you for being a part of our community! Your support is invaluable to us!
 -   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including [open office hours][stdlib-office-hours].
 -   [**Open Collective**][open-collective-stdlib]: financially support the project.
 -   [**Bluesky**][stdlib-bluesky]: follow us on social media.
--   [**Gitter**][stdlib-gitter]: chat with project maintainers and other community members.
+-   [**Zulip**][stdlib-zulip]: chat with project maintainers and other community members.
 
 ## Features
 
@@ -569,6 +569,15 @@ stdlib development is generously supported by the following sponsors:
     <br>
 </div>
 
+<div class="image" align="center">
+    <br>
+    <a href="https://zulip.com/">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@a6c5bd56c188c946bade9e5de285a8ada16f34f4/docs/assets/sponsors/zulip_logo.png" alt="Zulip">
+    </a>
+    <br>
+    <br>
+</div>
+
 Are you interested in supporting stdlib? If so, join our [Open Collective][open-collective-stdlib]!
 
 </section>
@@ -764,9 +773,9 @@ Test and build infrastructure is generously provided by the following services:
 
 [dev-dependencies-url]: https://socket.dev/npm/package/@stdlib/stdlib/dependencies -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
 
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-url]: https://stdlib.zulipchat.com
 
 [make]: https://www.gnu.org/software/make/
 
@@ -842,7 +851,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [stdlib-bluesky]: https://bsky.app/profile/stdlib.io
 
-[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [stdlib-gsoc]: https://github.com/stdlib-js/google-summer-of-code
 

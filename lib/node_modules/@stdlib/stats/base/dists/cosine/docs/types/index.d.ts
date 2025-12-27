@@ -111,7 +111,7 @@ interface Namespace {
 	* var mylogcdf = ns.logcdf.factory( 3.0, 1.5 );
 	*
 	* y = mylogcdf( 4.0 );
-	* // returns ~--0.029
+	* // returns ~-0.029
 	*/
 	logcdf: typeof logcdf;
 
@@ -125,7 +125,7 @@ interface Namespace {
 	*
 	* @example
 	* var y = ns.logpdf( 2.0, 0.0, 1.0 );
-	* // returns ~-2.254
+	* // returns -Infinity
 	*
 	* var mylogpdf = ns.logpdf.factory( 10.0, 2.0 );
 	* y = mylogpdf( 10.0 );

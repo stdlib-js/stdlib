@@ -35,7 +35,7 @@ interface Routine {
 	*
 	* @example
 	* var out = srotg( 6.0, -8.0 );
-	* // returns <Float32Array>[ 10.0, ~-1.666, -0.6, 0.8 ]
+	* // returns <Float32Array>[ -10, ~-1.667, ~-0.6, ~0.8 ]
 	*/
 	( a: number, b: number ): Float32Array;
 
