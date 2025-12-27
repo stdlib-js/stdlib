@@ -96,27 +96,27 @@ static double rand_double( void ) {
 * @return             elapsed time in seconds
 */
 static double benchmark1( int iterations, int len ) {
-	stdlib_complex128_t za;
-	double zx[ len*2 ];
+	stdlib_complex128_t alpha;
+	double x[ len*2 ];
 	double elapsed;
 	double t;
 	int i;
 
-	za = stdlib_complex128( 1.0, 0.0 );
+	alpha = stdlib_complex128( 1.0, 0.0 );
 	for ( i = 0; i < len*2; i+=2 ) {
-		zx[ i ] = ( rand_double()*2.0 ) - 1.0;
-		zx[ i+1 ] = ( rand_double()*2.0 ) - 1.0;
+		x[ i ] = ( rand_double()*2.0 ) - 1.0;
+		x[ i+1 ] = ( rand_double()*2.0 ) - 1.0;
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		c_zscal( len, za, (void *)zx, 1 );
-		if ( zx[ 0 ] != zx[ 0 ] ) {
+		c_zscal( len, alpha, (void *)x, 1 );
+		if ( x[ 0 ] != x[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( zx[ 0 ] != zx[ 0 ] ) {
+	if ( x[ 0 ] != x[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;
@@ -130,27 +130,27 @@ static double benchmark1( int iterations, int len ) {
 * @return             elapsed time in seconds
 */
 static double benchmark2( int iterations, int len ) {
-	stdlib_complex128_t za;
-	double zx[ len*2 ];
+	stdlib_complex128_t alpha;
+	double x[ len*2 ];
 	double elapsed;
 	double t;
 	int i;
 
-	za = stdlib_complex128( 1.0, 0.0 );
+	alpha = stdlib_complex128( 1.0, 0.0 );
 	for ( i = 0; i < len*2; i+=2 ) {
-		zx[ i ] = ( rand_double()*2.0 ) - 1.0;
-		zx[ i+1 ] = ( rand_double()*2.0 ) - 1.0;
+		x[ i ] = ( rand_double()*2.0 ) - 1.0;
+		x[ i+1 ] = ( rand_double()*2.0 ) - 1.0;
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		c_zscal_ndarray( len, za, (void *)zx, 1, 0 );
-		if ( zx[ 0 ] != zx[ 0 ] ) {
+		c_zscal_ndarray( len, alpha, (void *)x, 1, 0 );
+		if ( x[ 0 ] != x[ 0 ] ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
 	elapsed = tic() - t;
-	if ( zx[ 0 ] != zx[ 0 ] ) {
+	if ( x[ 0 ] != x[ 0 ] ) {
 		printf( "should not return NaN\n" );
 	}
 	return elapsed;

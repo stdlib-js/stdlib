@@ -127,20 +127,17 @@ var y = mymgf( -0.2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mgf = require( '@stdlib/stats/base/dists/geometric/mgf' );
 
-var p;
-var t;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var t = uniform( 10, 0.0, 1.0, opts );
+var p = uniform( 10, 0.0, 1.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    t = randu();
-    p = randu();
-    y = mgf( t, p );
-    console.log( 't: %d, p: %d, M_X(t;p): %d', t, p.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 't: %0.4f, p: %0.4f, M_X(t;p): %0.4f', t, p, mgf );
 ```
 
 </section>

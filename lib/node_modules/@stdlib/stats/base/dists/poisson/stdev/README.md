@@ -118,11 +118,97 @@ for ( i = 0; i < 10; i++ ) {
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<section class="references">
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
 
 </section>
 
-<!-- /.references -->
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/poisson/stdev.h"
+```
+
+#### stdlib_base_dists_poisson_stdev( lambda )
+
+Returns the [standard deviation][standard-deviation] of a [Poisson][poisson-distribution] distribution with mean parameter `lambda`.
+
+```c
+double out = stdlib_base_dists_poisson_stdev( 9.0 );
+// returns 3.0
+```
+
+The function accepts the following arguments:
+
+-   **lambda**: `[in] double` mean parameter.
+
+```c
+double stdlib_base_dists_poisson_stdev( const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/poisson/stdev.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double lambda;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        lambda = random_uniform( 0.0, 10.0 );
+        y = stdlib_base_dists_poisson_stdev( lambda );
+        printf( "λ: %.4f, SD(X;λ): %.4f\n", lambda, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

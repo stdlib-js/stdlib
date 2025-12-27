@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `drotm`.
 */
-#ifndef DROTM_H
-#define DROTM_H
+#ifndef STDLIB_BLAS_BASE_DROTM_H
+#define STDLIB_BLAS_BASE_DROTM_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_drotm_ndarray)( const CBLAS_INT N, double *X, const CBLAS_INT 
 }
 #endif
 
-#endif // !DROTM_H
+#endif // !STDLIB_BLAS_BASE_DROTM_H

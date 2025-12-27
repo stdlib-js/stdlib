@@ -261,7 +261,7 @@ interface EveryByAsync {
 	* };
 	*
 	* // Create an `everyByAsync` function which invokes the predicate function for each collection element sequentially:
-	* var everyByAsync = factory( opts, predicate );
+	* var everyBy = everyByAsync.factory( opts, predicate );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -282,7 +282,7 @@ interface EveryByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* everyByAsync( files, done );
+	* everyBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( options: Options<T, V>, predicate: Predicate<T, V> ): FactoryFunction<T>;
 
@@ -320,7 +320,7 @@ interface EveryByAsync {
 	* };
 	*
 	* // Create an `everyByAsync` function which invokes the predicate function for each collection element sequentially:
-	* var everyByAsync = factory( opts, predicate );
+	* var everyBy = everyByAsync.factory( opts, predicate );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -341,7 +341,7 @@ interface EveryByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* everyByAsync( files, done );
+	* everyBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>;
 }

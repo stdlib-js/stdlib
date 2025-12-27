@@ -1348,7 +1348,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
 *
-* function fcn( z ) {
+* function fcn( z, idx ) {
 *     if ( idx[ 0 ] > 0 ) {
 *         return new Complex128( z, 0.0 );
 *     }
@@ -1386,7 +1386,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var Complex64 = require( '@stdlib/complex/float64/ctor' );
 *
-* function fcn( z ) {
+* function fcn( z, idx ) {
 *     if ( idx[ 0 ] > 0 ) {
 *         return new Complex64( z, 0.0 );
 *     }

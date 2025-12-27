@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `zcopy`.
 */
-#ifndef ZCOPY_H
-#define ZCOPY_H
+#ifndef STDLIB_BLAS_BASE_ZCOPY_H
+#define STDLIB_BLAS_BASE_ZCOPY_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_zcopy_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_
 }
 #endif
 
-#endif // !ZCOPY_H
+#endif // !STDLIB_BLAS_BASE_ZCOPY_H

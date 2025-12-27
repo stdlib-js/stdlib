@@ -132,6 +132,12 @@ A provided ndarray should be an object with the following properties:
 -   **offset**: index offset.
 -   **order**: specifies whether an ndarray is row-major (C-style) or column major (Fortran-style).
 
+The callback function is provided the following arguments:
+
+-   **value**: current array element.
+-   **indices**: current array element indices.
+-   **arr**: the input ndarray.
+
 </section>
 
 <!-- /.usage -->
@@ -141,6 +147,7 @@ A provided ndarray should be an object with the following properties:
 ## Notes
 
 -   The function **mutates** the input ndarray.
+-   The function assumes that each element in the underlying input ndarray data buffer has one, and only one, corresponding element in input ndarray view (i.e., a provided ndarray is not a broadcasted ndarray view).
 
 </section>
 

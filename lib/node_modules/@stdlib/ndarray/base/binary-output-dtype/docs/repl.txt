@@ -1,0 +1,37 @@
+
+{{alias}}( xdtype, ydtype, policy )
+    Resolves the output ndarray data type for a binary function.
+
+    The function always applies type promotion to the provided data types,
+    except for the following policies:
+
+    - default
+    - default_index
+    - same
+    - <dtype>
+
+    Parameters
+    ----------
+    xdtype: string
+        First input ndarray data type.
+
+    ydtype: string
+        Second input ndarray data type.
+
+    policy: string
+        Output ndarray data type policy. If `policy` is a data type, the
+        function returns the `policy` value.
+
+    Returns
+    -------
+    out: string
+        Output ndarray data type.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float64', 'float32', 'real' )
+    'float64'
+
+    See Also
+    --------
+

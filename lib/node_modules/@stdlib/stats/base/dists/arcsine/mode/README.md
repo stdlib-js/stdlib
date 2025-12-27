@@ -151,7 +151,7 @@ logEachMap( 'a: %0.4f, b: %0.4f, mode(X;a,b): %0.4f', a, b, mode );
 ### Usage
 
 ```c
-#include "stdlib/math/base/dists/arcsine/mode.h"
+#include "stdlib/stats/base/dists/arcsine/mode.h"
 ```
 
 #### stdlib_base_dists_arcsine_mode( a, b )

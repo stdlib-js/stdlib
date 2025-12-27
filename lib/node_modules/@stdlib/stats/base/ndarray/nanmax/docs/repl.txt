@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Computes the maximum value of a one-dimensional ndarray, ignoring `NaN`
+    values.
+
+    If provided an empty ndarray, the function returns `NaN`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: number
+        Maximum value.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, -2.0, 2.0 ];
+    > var dt = 'generic';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > {{alias}}( [ x ] )
+    2.0
+
+    See Also
+    --------
+

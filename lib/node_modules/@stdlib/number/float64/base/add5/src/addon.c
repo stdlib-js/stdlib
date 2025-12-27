@@ -19,5 +19,4 @@
 #include "stdlib/number/float64/base/add5.h"
 #include "stdlib/math/base/napi/quinary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DDDDD_D( stdlib_base_float64_add5 )

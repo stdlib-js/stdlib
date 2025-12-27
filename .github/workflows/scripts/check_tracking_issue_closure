@@ -1,0 +1,467 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to check PRs for auto-closing language referencing tracking issues.
+#
+# Usage: check_tracking_issue_closure <days>
+#
+# Arguments:
+#
+#   days        Number of days to look back for PRs.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+#   DEBUG          Whether to enable verbose debug output. Default: `false`.
+
+# shellcheck disable=SC2153
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one
+# of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Assign command line arguments to variables:
+if [ "$#" -lt 1 ]; then
+	echo "Usage: $0 <days>" >&2
+	exit 1
+fi
+days="$1"
+
+# Get the GitHub authentication token:
+github_token="${GITHUB_TOKEN}"
+if [ -z "$github_token" ]; then
+	echo "Error: GITHUB_TOKEN environment variable not set." >&2
+	exit 1
+fi
+
+# GitHub API base URL:
+github_api_url="https://api.github.com"
+
+# Repository owner and name:
+repo_owner="stdlib-js"
+repo_name="stdlib"
+
+# Regular expressions for auto-closing language:
+closing_keywords="(close|closes|closed|fix|fixes|fixed|resolve|resolves|resolved)"
+
+# Unique identifier for our bot comments:
+comment_identifier="<!-- stdlib-bot-tracking-issue-closure-check -->"
+
+# Configure retries for API calls
+max_retries=3
+retry_delay=2
+
+# Debug mode controlled by environment variable (defaults to false if not set)
+debug="${DEBUG:-false}"
+
+
+# FUNCTIONS #
+
+# Debug logging function
+debug_log() {
+	# Only print debug messages if DEBUG environment variable is set to "true"
+	if [ "$debug" = true ]; then
+		echo "[DEBUG] $1" >&2
+	fi
+}
+
+# Error handler.
+on_error() {
+	echo "Error: An error was encountered during execution." >&2
+	exit 1
+}
+
+# Exit handler.
+on_exit() {
+	echo "Script execution completed."
+	return 0
+}
+
+# Performs a GitHub API request with retry logic.
+#
+# $1 - HTTP method (GET or POST)
+# $2 - API endpoint
+# $3 - data for POST requests
+github_api() {
+	local method="$1"
+	local endpoint="$2"
+	local data="$3"
+	local retry_count=0
+	local response=""
+	local status_code
+	local success=false
+
+	# Initialize an array to hold curl headers:
+	local headers=()
+
+	# If GITHUB_TOKEN is set, add the Authorization header:
+	if [ -n "${github_token}" ]; then
+		headers+=("-H" "Authorization: token ${github_token}")
+	fi
+
+	debug_log "Making API request: ${method} ${endpoint}"
+
+	# Add retry logic
+	while [ $retry_count -lt $max_retries ] && [ "$success" = false ]; do
+		if [ $retry_count -gt 0 ]; then
+			echo "Retrying request (attempt $((retry_count+1))/${max_retries})..."
+			sleep $retry_delay
+		fi
+
+		# Determine the HTTP method and construct the curl command accordingly...
+		case "${method}" in
+			GET)
+				# Use -w to get status code and store response in variable
+				response=$(curl -s -w "%{http_code}" "${headers[@]}" "${github_api_url}${endpoint}")
+				;;
+			POST)
+				# For POST requests, always set the Content-Type header:
+				headers+=("-H" "Content-Type: application/json")
+
+				# If data is provided, include it in the request:
+				if [ -n "${data}" ]; then
+					response=$(curl -s -w "%{http_code}" -X POST "${headers[@]}" -d "${data}" "${github_api_url}${endpoint}")
+				else
+					# Handle cases where POST data is required but not provided:
+					echo "ERROR: POST request requires data." >&2
+					return 1
+				fi
+				;;
+			*)
+				echo "ERROR: Invalid HTTP method: ${method}." >&2
+				return 1
+				;;
+		esac
+
+		# Extract status code (last 3 digits) and actual response (everything before)
+		status_code="${response: -3}"
+		response="${response:0:${#response}-3}"
+
+		debug_log "Status code: $status_code"
+
+		# Check if we got a successful response
+		if [[ $status_code -ge 200 && $status_code -lt 300 ]]; then
+			success=true
+		else
+			echo "API request failed with status $status_code: $response" >&2
+			retry_count=$((retry_count+1))
+		fi
+	done
+
+	if [ "$success" = false ]; then
+		echo "Failed to complete API request after $max_retries attempts" >&2
+		return 1
+	fi
+
+	# Validate that response is valid JSON if expected
+	if ! echo "$response" | jq -e '.' > /dev/null 2>&1; then
+		echo "Warning: Response is not valid JSON: ${response}" >&2
+		# Return empty JSON object as fallback
+		echo "{}"
+		return 0
+	fi
+
+	# Return the actual response data (without status code)
+	echo "$response"
+	return 0
+}
+
+# Get date in ISO 8601 format for N days ago.
+#
+# $1 - Number of days ago
+get_date_n_days_ago() {
+	local days="$1"
+
+	# Check if we're on macOS or Linux:
+	if [[ "$(uname)" == "Darwin" ]]; then
+		# macOS date command:
+		date -u -v-"${days}"d "+%Y-%m-%dT%H:%M:%SZ"
+	else
+		# Linux date command:
+		date -u -d "${days} days ago" "+%Y-%m-%dT%H:%M:%SZ"
+	fi
+}
+
+# Safely extract data from JSON using jq with error handling
+#
+# $1 - JSON data
+# $2 - jq query to extract data
+# $3 - default value if query fails
+safe_jq() {
+	local json="$1"
+	local query="$2"
+	local default="${3:-}"
+
+	if [ -z "$json" ]; then
+		echo "$default"
+		return 1
+	fi
+
+	# Attempt to run jq and capture output
+	local result
+	if ! result=$(echo "$json" | jq -r "$query" 2>/dev/null); then
+		echo "$default"
+		return 1
+	fi
+
+	# Check if output is null or empty
+	if [ "$result" = "null" ] || [ -z "$result" ]; then
+		echo "$default"
+		return 1
+	fi
+
+	echo "$result"
+	return 0
+}
+
+# Check if a PR has already been commented on by the bot regarding tracking issue closure.
+#
+# $1 - PR number
+has_bot_comment() {
+	local pr_number="$1"
+	local response
+
+	debug_log "Checking if PR #${pr_number} has bot comment"
+	# Get all comments on the PR:
+	if ! response=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/comments"); then
+		echo "Warning: Failed to get comments for PR #${pr_number}" >&2
+		return 1
+	fi
+
+	# Check if any comment contains our unique identifier:
+	if echo "$response" | jq -r '.[] | .body' 2>/dev/null | grep -q "${comment_identifier}"; then
+		debug_log "PR #${pr_number} already has bot comment"
+		return 0
+	else
+		debug_log "PR #${pr_number} does not have bot comment"
+		return 1
+	fi
+}
+
+# Check if an issue has the "Tracking Issue" label.
+#
+# $1 - Issue number
+is_tracking_issue() {
+	local issue_number="$1"
+	local response
+
+	debug_log "Checking if issue #${issue_number} is a tracking issue"
+	# Get the issue:
+	if ! response=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/issues/${issue_number}"); then
+		echo "Warning: Failed to fetch issue #${issue_number}" >&2
+		return 1
+	fi
+
+	# Check if the response contains an error or is empty
+	if [ -z "$response" ] || echo "$response" | jq -e 'has("message")' > /dev/null 2>&1; then
+		echo "Warning: Issue #${issue_number} returned an error or empty response" >&2
+		debug_log "Response: $response"
+		return 1
+	fi
+
+	# Check if the issue exists and has labels field
+	if ! echo "$response" | jq -e 'has("labels")' > /dev/null 2>&1; then
+		echo "Warning: Issue #${issue_number} has no labels field" >&2
+		return 1
+	fi
+
+	# Check if labels is empty or null
+	labels_count=$(safe_jq "$response" '.labels | length' "0")
+	if [ "$labels_count" = "0" ]; then
+		debug_log "Issue #${issue_number} has no labels"
+		return 1
+	fi
+
+	# Check if the issue has the "Tracking Issue" label:
+	if echo "$response" | jq -r '.labels[].name' 2>/dev/null | grep -q "Tracking Issue"; then
+		debug_log "Issue #${issue_number} is a tracking issue"
+		return 0
+	else
+		debug_log "Issue #${issue_number} is not a tracking issue"
+		return 1
+	fi
+}
+
+# Post a comment on a PR.
+#
+# $1 - PR number
+post_comment() {
+	local pr_number="$1"
+	local comment_body
+	local json_payload
+	local response
+
+	debug_log "Posting comment on PR #${pr_number}"
+
+	comment_body="${comment_identifier}
+:warning: **Tracking Issue Closure Warning** :warning:
+
+I noticed your PR description contains closing keywords (\"Resolves\", \"Closes\", or \"Fixes\") referencing a \"Tracking Issue\".
+
+**Why this matters:**
+Tracking issues should typically remain open until all related sub-issues are completed. GitHub automatically closes issues with such closing keywords when the PR is merged. For more information, see [GitHub's documentation on using keywords in issues and pull requests][github-keywords].
+
+**Required action:**
+Use \"Progresses\" instead to reference the tracking issue without automatically closing it.
+
+Thank you for your contribution to the project!
+
+[github-keywords]: https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests"
+
+	# Create properly escaped JSON payload using jq
+	json_payload=$(jq -n --arg body "$comment_body" '{"body": $body}')
+
+	# Post the comment:
+	if ! response=$(github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${pr_number}/comments" "$json_payload"); then
+		echo "Failed to post comment on PR #${pr_number}" >&2
+		return 1
+	fi
+
+	debug_log "Successfully posted comment on PR #${pr_number}"
+	return 0
+}
+
+# Process a single PR
+#
+# $1 - PR number
+process_pr() {
+	local pr_number="$1"
+	local pr_response
+	local pr_body
+	local issue_refs
+	local found_tracking_issue=false
+
+	echo "Processing PR #${pr_number}..."
+
+	# Get PR body:
+	if ! pr_response=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/pulls/${pr_number}"); then
+		echo "Warning: Failed to fetch PR #${pr_number}, skipping" >&2
+		return 0
+	fi
+
+	# Extract PR body using safe_jq
+	pr_body=$(safe_jq "$pr_response" '.body' "")
+
+	# If PR body is empty or null, skip:
+	if [ -z "$pr_body" ]; then
+		echo "PR #${pr_number} has no description."
+		return 0
+	fi
+
+	debug_log "Extracted PR body length: ${#pr_body} chars"
+
+	# Extract issue numbers referenced with closing keywords:
+	issue_refs=$(echo "$pr_body" | grep -oiE "${closing_keywords} +#[0-9]+" | grep -oE "#[0-9]+" | sed 's/#//')
+
+	# If no closing references found, continue to next PR:
+	if [ -z "$issue_refs" ]; then
+		echo "No closing references found in PR #${pr_number}."
+		return 0
+	fi
+
+	debug_log "Found closing references to issues: $issue_refs in PR #${pr_number}"
+
+	# Check if the PR has already been commented on:
+	if has_bot_comment "$pr_number"; then
+		echo "PR #${pr_number} already has a bot comment about tracking issues."
+		return 0
+	fi
+
+	# Check each referenced issue:
+	for issue_number in $issue_refs; do
+		debug_log "Checking issue #$issue_number referenced in PR #${pr_number}"
+
+		if is_tracking_issue "$issue_number"; then
+			echo "PR #${pr_number} references tracking issue #${issue_number} with closing language."
+			found_tracking_issue=true
+			break
+		fi
+	done
+
+	# If we found a tracking issue referenced with closing language, post a comment:
+	if [ "$found_tracking_issue" = true ]; then
+		echo "Posting comment on PR #${pr_number}..."
+		if post_comment "$pr_number"; then
+			echo "Successfully posted comment on PR #${pr_number}."
+		else
+			echo "Failed to post comment on PR #${pr_number}."
+		fi
+	fi
+
+	return 0
+}
+
+# Main function to check PRs for tracking issue closure.
+main() {
+	# Set up error handling:
+	trap "on_error" ERR
+	trap "on_exit" EXIT
+
+	echo "Starting check_tracking_issue_closure script..."
+	echo "System: $(uname -a)"
+
+	# Get recent PRs:
+	echo "Fetching PRs from the last ${days} days..."
+	since_date=$(get_date_n_days_ago "$days")
+	echo "Looking for PRs updated since: ${since_date}"
+
+	local response
+	if ! response=$(github_api "GET" "/repos/${repo_owner}/${repo_name}/pulls?state=open&sort=updated&direction=desc&per_page=100&since=${since_date}"); then
+		echo "Failed to fetch PRs, aborting" >&2
+		exit 1
+	fi
+
+	# Check if response is valid JSON
+	if ! echo "$response" | jq -e '.' > /dev/null 2>&1; then
+		echo "Error: Invalid JSON response from GitHub API" >&2
+		echo "Response: $response" >&2
+		exit 1
+	fi
+
+	# Count PRs:
+	pr_count=$(safe_jq "$response" 'length' "0")
+	echo "Found ${pr_count} open PRs updated in the last ${days} days."
+
+	# Debug: show first PR number to verify data structure
+	first_pr=$(safe_jq "$response" '.[0].number' "")
+	if [ -n "$first_pr" ]; then
+		echo "First PR in list is #${first_pr}"
+	else
+		echo "Warning: Could not extract first PR number, response might be empty" >&2
+	fi
+
+	# Loop through each PR:
+	echo "$response" | jq -r '.[] | .number' 2>/dev/null | while read -r pr_number; do
+		if [ -z "$pr_number" ]; then
+			debug_log "Empty PR number encountered, skipping"
+			continue
+		fi
+
+		# Process each PR individually, catching errors
+		process_pr "$pr_number" || echo "Warning: Failed to process PR #${pr_number}" >&2
+	done
+
+	echo "Successfully completed checking PRs for tracking issue closure."
+	return 0
+}
+
+# Call the main function:
+main

@@ -32,7 +32,7 @@ var isRaggedNestedArray = require( '@stdlib/assert/is-ragged-nested-array' );
 
 #### isRaggedNestedArray( value )
 
-Tests if a value is a ragged nested array. 
+Tests if a value is a ragged nested array.
 
 ```javascript
 var bool = isRaggedNestedArray( [ [ 1, 2, 3 ], [ 4, 5 ] ] );

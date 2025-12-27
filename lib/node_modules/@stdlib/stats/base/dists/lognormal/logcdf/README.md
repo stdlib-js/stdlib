@@ -75,10 +75,10 @@ var y = logcdf( 2.0, 8.0, 0.0 );
 // returns -Infinity
 
 y = logcdf( 8.0, 8.0, 0.0 );
-// returns 0.0
+// returns -Infinity
 
 y = logcdf( 10.0, 8.0, 0.0 );
-// returns 0.0
+// returns -Infinity
 ```
 
 #### logcdf.factory( mu, sigma )
@@ -106,22 +106,18 @@ y = mylogcdf( 5.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var logcdf = require( '@stdlib/stats/base/dists/lognormal/logcdf' );
 
-var sigma;
-var mu;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 10, 0.0, 10.0, opts );
+var mu = uniform( 10, -5.0, 5.0, opts );
+var sigma = uniform( 10, 0.0, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = randu() * 10.0;
-    mu = (randu() * 10.0) - 5.0;
-    sigma = randu() * 20.0;
-    y = logcdf( x, mu, sigma );
-    console.log( 'x: %d, µ: %d, σ: %d, ln(F(x;µ,σ)): %d', x, mu, sigma, y );
-}
+logEachMap( 'x: %0.4f, µ: %0.4f, σ: %0.4f, ln(F(x;µ,σ)): %0.4f', x, mu, sigma, logcdf );
 ```
 
 </section>

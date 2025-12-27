@@ -30,33 +30,33 @@ limitations under the License.
 var dznrm2 = require( '@stdlib/blas/base/dznrm2' );
 ```
 
-#### dznrm2( N, zx, strideX )
+#### dznrm2( N, x, strideX )
 
 Computes the L2-norm of a complex double-precision floating-point vector.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 
-var zx = new Complex128Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 ] );
+var x = new Complex128Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 ] );
 
-var norm = dznrm2( 4, zx, 1 );
+var norm = dznrm2( 4, x, 1 );
 // returns ~0.8
 ```
 
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **zx**: input [`Complex128Array`][@stdlib/array/complex128].
--   **strideX**: index increment for `zx`.
+-   **x**: input [`Complex128Array`][@stdlib/array/complex128].
+-   **strideX**: index increment for `x`.
 
 The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to traverse every other value,
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 
-var zx = new Complex128Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
+var x = new Complex128Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 
-var norm = dznrm2( 2, zx, 2 );
+var norm = dznrm2( 2, x, 2 );
 // returns ~4.6
 ```
 
@@ -66,26 +66,26 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 var Complex128Array = require( '@stdlib/array/complex128' );
 
 // Initial array:
-var zx0 = new Complex128Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
+var x0 = new Complex128Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 
 // Create an offset view:
-var zx1 = new Complex128Array( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
+var x1 = new Complex128Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
 // Compute the L2-norm:
-var norm = dznrm2( 2, zx1, 1 );
+var norm = dznrm2( 2, x1, 1 );
 // returns ~9.3
 ```
 
-#### dznrm2.ndarray( N, zx, strideX, offset )
+#### dznrm2.ndarray( N, x, strideX, offset )
 
 Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 
-var zx = new Complex128Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 ] );
+var x = new Complex128Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 ] );
 
-var norm = dznrm2.ndarray( 4, zx, 1, 0 );
+var norm = dznrm2.ndarray( 4, x, 1, 0 );
 // returns ~0.8
 ```
 
@@ -98,9 +98,9 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 
-var zx = new Complex128Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
+var x = new Complex128Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 
-var norm = dznrm2.ndarray( 2, zx, 1, 1 );
+var norm = dznrm2.ndarray( 2, x, 1, 1 );
 // returns ~9.3
 ```
 
@@ -135,11 +135,11 @@ function rand() {
     return new Complex128( discreteUniform( 0, 10 ), discreteUniform( -5, 5 ) );
 }
 
-var zx = filledarrayBy( 10, 'complex128', rand );
-console.log( zx.toString() );
+var x = filledarrayBy( 10, 'complex128', rand );
+console.log( x.toString() );
 
 // Computes the L2-norm:
-var norm = dznrm2( zx.length, zx, 1 );
+var norm = dznrm2( x.length, x, 1 );
 console.log( norm );
 ```
 
@@ -173,47 +173,47 @@ console.log( norm );
 #include "stdlib/blas/base/dznrm2.h"
 ```
 
-#### c_dznrm2( N, \*ZX, strideX )
+#### c_dznrm2( N, \*X, strideX )
 
 Computes the L2-norm of a complex double-precision floating-point vector.
 
 ```c
-const double zx[] = { 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 };
+const double X[] = { 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 };
 
-double norm = c_dznrm2( 4, (void *)zx, 1 );
+double norm = c_dznrm2( 4, (void *)X, 1 );
 // returns 0.8
 ```
 
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **ZX**: `[in] void*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `ZX`.
+-   **X**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
 
 ```c
-double c_dznrm2( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX );
+double c_dznrm2( const CBLAS_INT N, const void *X, const CBLAS_INT strideX );
 ```
 
-#### c_dznrm2_ndarray( N, \*ZX, strideX, offsetX )
+#### c_dznrm2_ndarray( N, \*X, strideX, offsetX )
 
 Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
 
 ```c
-const double zx[] = { 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 };
+const double X[] = { 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2 };
 
-double norm = c_dznrm2_ndarray( 4, (void *)zx, 1, 0 );
+double norm = c_dznrm2_ndarray( 4, (void *)X, 1, 0 );
 // returns 0.8
 ```
 
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **ZX**: `[in] void*` input array.
--   **strideX**: `[in] CBLAS_INT` index increment for `ZX`.
--   **offsetX**: `[in] CBLAS_INT` starting index for `ZX`.
+-   **X**: `[in] void*` input array.
+-   **strideX**: `[in] CBLAS_INT` index increment for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
 ```c
-double c_dznrm2_ndarray( const CBLAS_INT N, const void *ZX, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+double c_dznrm2_ndarray( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>
@@ -240,7 +240,7 @@ double c_dznrm2_ndarray( const CBLAS_INT N, const void *ZX, const CBLAS_INT stri
 
 int main( void ) {
     // Create a strided array of interleaved real and imaginary components:
-    const double zx[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+    const double X[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
 
     // Specify the number of elements:
     const int N = 4;
@@ -249,13 +249,13 @@ int main( void ) {
     const int strideX = 1;
 
     // Compute the L2-norm:
-    double norm = c_dznrm2( N, (void *)zx, strideX );
+    double norm = c_dznrm2( N, (void *)X, strideX );
 
     // Print the result:
     printf( "L2-norm: %lf\n", norm );
 
     // Compute the L2-norm using alternative indexing semantics:
-    norm = c_dznrm2_ndarray( N, (void *)zx, -strideX, N-1 );
+    norm = c_dznrm2_ndarray( N, (void *)X, -strideX, N-1 );
 
     // Print the result:
     printf( "L2-norm: %lf\n", norm );

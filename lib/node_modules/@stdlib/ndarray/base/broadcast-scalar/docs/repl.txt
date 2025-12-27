@@ -23,7 +23,7 @@
     value: any
         Scalar value.
 
-    dtype: string
+    dtype: string|DataType
         Data type.
 
     shape: ArrayLike<number>
@@ -41,9 +41,9 @@
     --------
     > var x = {{alias}}( 1.0, 'float64', [ 2, 2 ], 'row-major' )
     <ndarray>
-    > var sh = x.shape
+    > var sh = {{alias:@stdlib/ndarray/shape}}( x )
     [ 2, 2 ]
-    > var dt = x.dtype
+    > var dt = {{alias:@stdlib/ndarray/dtype}}( x )
     'float64'
     > var v = x.get( 0, 1 )
     1.0

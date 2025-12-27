@@ -39,7 +39,8 @@
         "@stdlib/math/base/napi/unary",
         "@stdlib/math/base/assert/is-odd",
         "@stdlib/constants/float64/ninf",
-        "@stdlib/constants/float64/pinf"
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/assert/is-nonnegative-integer"
       ]
     },
     {
@@ -55,7 +56,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-odd",
         "@stdlib/constants/float64/ninf",
-        "@stdlib/constants/float64/pinf"
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/assert/is-nonnegative-integer"
       ]
     },
     {
@@ -71,7 +73,8 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-odd",
         "@stdlib/constants/float64/ninf",
-        "@stdlib/constants/float64/pinf"
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/assert/is-nonnegative-integer"
       ]
     }
   ]
