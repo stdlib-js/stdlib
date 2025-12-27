@@ -578,7 +578,7 @@ interface Vector {
 	* // returns <ndarray>
 	*
 	* var len = numel( arr );
-	* // returns 2
+	* // returns 1
 	*
 	* var dt = getDType( arr );
 	* // returns 'float64'

@@ -23,7 +23,7 @@ import scalar2ndarray = require( './index' );
 
 // The function returns an ndarray...
 {
-	scalar2ndarray( 1.0 ); // $ExpectType ndarray
+	scalar2ndarray( 1.0 ); // $ExpectType genericndarray<number>
 
 	scalar2ndarray( 1.0, { 'dtype': 'float64' } ); // $ExpectType float64ndarray
 	scalar2ndarray( 1.0, { 'dtype': 'float32' } ); // $ExpectType float32ndarray
@@ -37,7 +37,7 @@ import scalar2ndarray = require( './index' );
 	scalar2ndarray( 1.0, { 'dtype': 'uint16' } ); // $ExpectType uint16ndarray
 	scalar2ndarray( 1.0, { 'dtype': 'uint8' } ); // $ExpectType uint8ndarray
 	scalar2ndarray( 1.0, { 'dtype': 'uint8c' } ); // $ExpectType uint8cndarray
-	scalar2ndarray( 1.0, { 'dtype': 'generic' } ); // $ExpectType ndarray
+	scalar2ndarray( 1.0, { 'dtype': 'generic' } ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a second argument which is not an options object...

@@ -108,19 +108,16 @@ compare_cov() {
 	new_cov_value="$2"
 
 	if [ "$old_cov_value" == 0 ]; then
-		new_cov_percentage=$(awk "BEGIN {printf \"%.2f\", $new_cov_value*100}")
-		printf "\$\\\\\\\\color{green}+%s\\\\\\\\\\\\\\\\%%\$\n" "$new_cov_percentage"
+		awk "BEGIN {printf \"\$\\\\\\\\\\\\\\\\color{green}+%.2f\\\\\\\\\\\\\\\\%%\$\n\", $new_cov_value*100}"
 	else
 		percentage_change=$(awk "BEGIN {printf \"%.2f\", (($new_cov_value - $old_cov_value) / $old_cov_value) * 100}")
 		color="green"
-		sign=""
-		if [ "$(awk "BEGIN {if ($percentage_change >= 0) print 1; else print 0}")" -eq 1 ]; then
-			sign="+"
-		elif [ "$(awk "BEGIN {if ($percentage_change < 0) print 1; else print 0}")" -eq 1 ]; then
-			sign="-"
+		sign="+"
+		if [ "$(awk "BEGIN {if ($percentage_change < 0) print 1; else print 0}")" -eq 1 ]; then
 			color="red"
+			sign=""
 		fi
-		printf "\$\\\\\\\\color{%s}%s%s\\\\\\\\\\\\\\\\%%\$\n" "$color" "$sign" "$percentage_change"
+		awk "BEGIN {print \"\$\\\\\\\\\\\\\\\\color{$color}${sign}${percentage_change}\\\\\\\\\\\\\\\\%\$\"}"
 	fi
 }
 
@@ -168,7 +165,7 @@ main() {
 		pkg_functions_cov_fraction=${pkg_cov_fractions[2]}
 		pkg_lines_cov_fraction=${pkg_cov_fractions[3]}
 
-		old_cov_report=$(curl -s --fail "${coverage_base_url}/${pkg}/lib/index.html" 2>/dev/null || true)
+		old_cov_report=$(curl -s --fail "${coverage_base_url}/${pkg}/index.html" 2>/dev/null || true)
 		if [ -z "$old_cov_report" ]; then
 			old_statements_cov=0
 			old_branches_cov=0
