@@ -2648,7 +2648,7 @@
 "@stdlib/utils/nonenumerable-property-names-in","@stdlib/utils/keys-in,@stdlib/utils/inherited-nonenumerable-property-names,@stdlib/utils/nonenumerable-property-names,@stdlib/utils/property-names-in"
 "@stdlib/utils/nonenumerable-property-symbols","@stdlib/utils/enumerable-property-symbols,@stdlib/utils/inherited-nonenumerable-property-symbols,@stdlib/utils/nonenumerable-property-names,@stdlib/utils/nonenumerable-property-symbols-in,@stdlib/utils/property-symbols"
 "@stdlib/utils/nonenumerable-property-symbols-in","@stdlib/utils/enumerable-property-symbols-in,@stdlib/utils/inherited-nonenumerable-property-symbols,@stdlib/utils/nonenumerable-property-names-in,@stdlib/utils/nonenumerable-property-symbols,@stdlib/utils/property-symbols-in"
-"@stdlib/object/none-own-by","@stdlib/object/any-own-by,@stdlib/object/every-own-by,@stdlib/object/for-own,@stdlib/utils/none-by,@stdlib/object/some-own-by"
+"@stdlib/object/none-own-by","@stdlib/object/any-own-by,@stdlib/object/every-own-by,@stdlib/utils/none-by,@stdlib/object/some-own-by"
 "@stdlib/utils/nonindex-keys","@stdlib/utils/entries,@stdlib/utils/keys,@stdlib/utils/values"
 "@stdlib/utils/noop",""
 "@stdlib/time/now",""
