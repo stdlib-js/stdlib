@@ -3870,6 +3870,7 @@ interface Namespace {
 	* @param ndims - number of dimensions in the output array
 	* @param x - input array
 	* @param dims - dimension indices
+	* @param writable - boolean indicating whether a returned array should be writable
 	* @returns output array
 	*
 	* @example
@@ -3881,7 +3882,7 @@ interface Namespace {
 	* var shx = x.shape;
 	* // returns [ 2, 2 ]
 	*
-	* var y = ns.spreadDimensions( 5, x, [ 1, 3 ] );
+	* var y = ns.spreadDimensions( 5, x, [ 1, 3 ], false );
 	* // returns <ndarray>
 	*
 	* var shy = y.shape;
