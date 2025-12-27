@@ -170,7 +170,7 @@
     Parameters
     ----------
     out: ndarray
-        Output array. Must have a numeric or "generic" data type.
+        Output array. Must have a floating-point or "generic" data type.
 
     start: ndarray|number|Complex
         Start of interval. May be either a number, a complex number, or an

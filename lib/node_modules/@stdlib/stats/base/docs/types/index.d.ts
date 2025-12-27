@@ -75,7 +75,7 @@ interface Namespace {
 	* // y => [ 1.0, 1.0, 2.0 ]
 	*
 	* @example
-	* var x = [ 1.0, -2.0, 2.0 ] );
+	* var x = [ 1.0, -2.0, 2.0 ];
 	* var y = [ 0.0, 0.0, 0.0 ];
 	*
 	* ns.cumax.ndarray( x.length, x, 1, 0, y, 1, 0 );
@@ -101,7 +101,7 @@ interface Namespace {
 	* // y => [ 1.0, 2.0, 2.0 ]
 	*
 	* @example
-	* var x = [ 1.0, -2.0, 2.0 ] );
+	* var x = [ 1.0, -2.0, 2.0 ];
 	* var y = [ 0.0, 0.0, 0.0 ];
 	*
 	* ns.cumaxabs.ndarray( x.length, x, 1, 0, y, 1, 0 );
@@ -124,14 +124,14 @@ interface Namespace {
 	* var y = [ 0.0, 0.0, 0.0 ];
 	*
 	* ns.cumin( x.length, x, 1, y, 1 );
-	* // y => [ 1.0, 1.0, 2.0 ]
+	* // y => [ 1.0, -2.0, -2.0 ]
 	*
 	* @example
-	* var x = [ 1.0, -2.0, 2.0 ] );
+	* var x = [ 1.0, -2.0, 2.0 ];
 	* var y = [ 0.0, 0.0, 0.0 ];
 	*
 	* ns.cumin.ndarray( x.length, x, 1, 0, y, 1, 0 );
-	* // y => [ 1.0, 1.0, 2.0 ]
+	* // y => [ 1.0, -2.0, -2.0 ]
 	*/
 	cumin: typeof cumin;
 
@@ -153,7 +153,7 @@ interface Namespace {
 	* // y => [ 1.0, 1.0, 1.0 ]
 	*
 	* @example
-	* var x = [ 1.0, -2.0, 2.0 ] );
+	* var x = [ 1.0, -2.0, 2.0 ];
 	* var y = [ 0.0, 0.0, 0.0 ];
 	*
 	* ns.cuminabs.ndarray( x.length, x, 1, 0, y, 1, 0 );

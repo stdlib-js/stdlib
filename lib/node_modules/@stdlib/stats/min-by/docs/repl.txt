@@ -49,9 +49,8 @@
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
     > function clbk( v ) { return v * 2.0; };
-    > var y = {{alias}}( x, clbk );
-    > var v = y.get()
-    -8.0
+    > var y = {{alias}}( x, clbk )
+    <ndarray>[ -8.0 ]
 
 
 {{alias}}.assign( x, out[, options], clbk[, thisArg] )
@@ -102,11 +101,9 @@
     > var out = {{alias:@stdlib/ndarray/zeros}}( [] );
     > function clbk( v ) { return v * 2.0; };
     > var y = {{alias}}.assign( x, out, clbk )
-    <ndarray>
+    <ndarray>[ -8.0 ]
     > var bool = ( out === y )
     true
-    > var v = out.get()
-    -8.0
 
     See Also
     --------

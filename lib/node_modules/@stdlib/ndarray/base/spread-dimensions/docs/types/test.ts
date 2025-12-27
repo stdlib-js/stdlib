@@ -27,46 +27,60 @@ import spreadDimensions = require( './index' );
 {
 	const x = zeros( [ 2, 2 ] );
 
-	spreadDimensions( 5, x, [ 1, 3 ] ); // $ExpectType float64ndarray
+	spreadDimensions( 5, x, [ 1, 3 ], false ); // $ExpectType float64ndarray
 }
 
-// The compiler throws an error if the function is not provided a first argument which is a number...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
 	const x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 
-	spreadDimensions( '5', x, [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( true, x, [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( false, x, [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( null, x, [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( {}, x, [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( [ '5' ], x, [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( ( x: number ): number => x, x, [ 1, 3 ] ); // $ExpectError
+	spreadDimensions( '5', x, [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( true, x, [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( false, x, [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( null, x, [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( {}, x, [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( [ '5' ], x, [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( ( x: number ): number => x, x, [ 1, 3 ], false ); // $ExpectError
 }
 
-// The compiler throws an error if the function is not provided a second argument which is an ndarray...
+// The compiler throws an error if the function is provided a second argument which is not an ndarray...
 {
-	spreadDimensions( 5, '5', [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( 5, 5, [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( 5, true, [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( 5, false, [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( 5, null, [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( 5, {}, [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( 5, [ '5' ], [ 1, 3 ] ); // $ExpectError
-	spreadDimensions( 5, ( x: number ): number => x, [ 1, 3 ] ); // $ExpectError
+	spreadDimensions( 5, '5', [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( 5, 5, [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( 5, true, [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( 5, false, [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( 5, null, [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( 5, {}, [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( 5, [ '5' ], [ 1, 3 ], false ); // $ExpectError
+	spreadDimensions( 5, ( x: number ): number => x, [ 1, 3 ], false ); // $ExpectError
 }
 
-// The compiler throws an error if the function is not provided a third argument which is an array of numbers...
+// The compiler throws an error if the function is provided a third argument which is not an array of numbers...
 {
 	const x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 
-	spreadDimensions( 5, x, '5' ); // $ExpectError
-	spreadDimensions( 5, x, true ); // $ExpectError
-	spreadDimensions( 5, x, false ); // $ExpectError
-	spreadDimensions( 5, x, null ); // $ExpectError
-	spreadDimensions( 5, x, {} ); // $ExpectError
-	spreadDimensions( 5, x, [ '5' ] ); // $ExpectError
-	spreadDimensions( 5, x, ( x: number ): number => x ); // $ExpectError
+	spreadDimensions( 5, x, '5', false ); // $ExpectError
+	spreadDimensions( 5, x, true, false ); // $ExpectError
+	spreadDimensions( 5, x, false, false ); // $ExpectError
+	spreadDimensions( 5, x, null, false ); // $ExpectError
+	spreadDimensions( 5, x, {}, false ); // $ExpectError
+	spreadDimensions( 5, x, [ '5' ], false ); // $ExpectError
+	spreadDimensions( 5, x, ( x: number ): number => x, false ); // $ExpectError
 }
+
+// The compiler throws an error if the function is provided a fourth argument which is not a boolean...
+{
+	const x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+
+	spreadDimensions( 5, x, '5', false ); // $ExpectError
+	spreadDimensions( 5, x, true, false ); // $ExpectError
+	spreadDimensions( 5, x, false, false ); // $ExpectError
+	spreadDimensions( 5, x, null, false ); // $ExpectError
+	spreadDimensions( 5, x, {}, false ); // $ExpectError
+	spreadDimensions( 5, x, [ '5' ], false ); // $ExpectError
+	spreadDimensions( 5, x, ( x: number ): number => x, false ); // $ExpectError
+}
+
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
@@ -74,5 +88,6 @@ import spreadDimensions = require( './index' );
 
 	spreadDimensions(); // $ExpectError
 	spreadDimensions( 5, x ); // $ExpectError
-	spreadDimensions( 5, x, [ 1, 3 ], {} ); // $ExpectError
+	spreadDimensions( 5, x, [ 1, 3 ] ); // $ExpectError
+	spreadDimensions( 5, x, [ 1, 3 ], false, {} ); // $ExpectError
 }
