@@ -1527,7 +1527,7 @@
 "@stdlib/datasets/cmudict","@stdlib/datasets-cmudict"
 "@stdlib/string/code-point-at","@stdlib/string-code-point-at"
 "@stdlib/object/common-keys","@stdlib/object-common-keys"
-"@stdlib/utils/common-keys-in","@stdlib/utils-common-keys-in"
+"@stdlib/object/common-keys-in","@stdlib/object-common-keys-in"
 "@stdlib/complex/cmplx","@stdlib/complex-cmplx"
 "@stdlib/complex/float32/ctor","@stdlib/complex-float32-ctor"
 "@stdlib/constants/complex64/nan","@stdlib/constants-complex64-nan"
