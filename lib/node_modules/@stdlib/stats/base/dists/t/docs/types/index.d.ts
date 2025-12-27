@@ -167,11 +167,11 @@ interface Namespace {
 	*
 	* @example
 	* var y = ns.logpdf( 3.0, 1.0 );
-	* // returns ~-3.442
+	* // returns ~-3.447
 	*
 	* var mylogPDF = ns.logpdf.factory( 3.0 );
 	* y = mylogPDF( 1.0 );
-	* // returns ~-1.575
+	* // returns ~-1.576
 	*/
 	logpdf: typeof logpdf;
 

@@ -309,7 +309,7 @@ console.log( z );
 
 [blas]: http://www.netlib.org/blas
 
-[sdsdot]: https://www.netlib.org/lapack/explore-html-3.6.1/df/d28/group__single__blas__level1_gaddc89585ced76065053abffb322c5a22.html
+[sdsdot]: https://www.netlib.org/lapack/explore-html/d1/dcc/group__dot_ga5e09e98ca27006a197d7c5fa49a9da4b.html
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 

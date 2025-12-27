@@ -89,7 +89,7 @@ interface Options<T> extends BaseOptions {
 	/**
 	* Sentinel value.
 	*/
-	sentinelValue?: T | typedndarray<T>;
+	sentinel?: T | typedndarray<T>;
 }
 
 /**
@@ -140,7 +140,7 @@ interface Find {
 	* @param options - function options
 	* @param options.dims - list of dimensions over which to perform a reduction
 	* @param options.keepdims - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions (default: false)
-	* @param options.sentinelValue - sentinel value
+	* @param options.sentinel - sentinel value
 	* @param predicate - predicate function
 	* @param thisArg - predicate execution context
 	* @returns output ndarray
@@ -226,7 +226,7 @@ interface Find {
 	* @param out - output ndarray
 	* @param options - function options
 	* @param options.dims - list of dimensions over which to perform a reduction
-	* @param options.sentinelValue - sentinel value
+	* @param options.sentinel - sentinel value
 	* @param predicate - predicate function
 	* @param thisArg - predicate execution context
 	* @returns output ndarray
@@ -271,7 +271,7 @@ interface Find {
 * @param options - function options
 * @param options.dims - list of dimensions over which to perform a reduction
 * @param options.keepdims - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions (default: false)
-* @param options.sentinelValue - sentinel value
+* @param options.sentinel - sentinel value
 * @param predicate - predicate function
 * @param thisArg - predicate execution context
 * @returns output ndarray

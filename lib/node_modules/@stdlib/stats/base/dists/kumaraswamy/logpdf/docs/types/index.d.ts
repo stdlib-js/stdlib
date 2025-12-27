@@ -128,7 +128,7 @@ interface LogPDF {
 * // returns ~-0.151
 *
 * y = mylogpdf( 0.3 );
-* // returns ~-0.387
+* // returns ~-0.388
 */
 declare var logpdf: LogPDF;
 

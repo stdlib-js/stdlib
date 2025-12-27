@@ -161,10 +161,10 @@ interface Namespace {
 	*
 	* var mylogpmf = ns.logpmf.factory( 0.5 );
 	* y = mylogpmf( 3.0 );
-	* // returns ~-2.4327
+	* // returns ~-2.433
 	*
 	* y = mylogpmf( 1.0 );
-	* // returns ~-1.4327
+	* // returns ~-1.433
 	*/
 	logpmf: typeof logpmf;
 
@@ -188,7 +188,7 @@ interface Namespace {
 	*
 	* @example
 	* var v = ns.mean( 1.1 );
-	* // returns ~0.4989
+	* // returns ~0.49896
 	*
 	* @example
 	* var v = ns.mean( NaN );
@@ -340,7 +340,7 @@ interface Namespace {
 	*
 	* @example
 	* var v = ns.skewness( 0.5 );
-	* // returns ~2.5894
+	* // returns ~2.063
 	*
 	* @example
 	* var v = ns.skewness( -1.1 );

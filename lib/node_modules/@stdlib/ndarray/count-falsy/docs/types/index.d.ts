@@ -77,10 +77,7 @@ interface CountFalsy {
 	*
 	* // Perform reduction:
 	* var out = countFalsy( x );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 1
+	* // returns <ndarray>[ 1 ]
 	*/
 	( x: ndarray, options?: Options ): int32ndarray; // FIXME: update once `int64` dtype support; may require adding support for an output `dtype` option
 
@@ -120,10 +117,7 @@ interface CountFalsy {
 	*
 	* // Perform reduction:
 	* var out = countFalsy.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 1
+	* // returns <ndarray>[ 1 ]
 	*/
 	assign<T extends ndarray>( x: ndarray, y: T, options?: BaseOptions ): T;
 }
@@ -158,10 +152,7 @@ interface CountFalsy {
 *
 * // Perform reduction:
 * var out = countFalsy( x );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns 1
+* // returns <ndarray>[ 1 ]
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -190,10 +181,7 @@ interface CountFalsy {
 *
 * // Perform reduction:
 * var out = countFalsy.assign( x, y );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns 1
+* // returns <ndarray>[ 1 ]
 */
 declare var countFalsy: CountFalsy;
 
