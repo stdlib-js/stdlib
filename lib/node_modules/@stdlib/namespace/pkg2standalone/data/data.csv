@@ -2663,7 +2663,7 @@
 "@stdlib/utils/entries-in","@stdlib/utils-entries-in"
 "@stdlib/utils/from-entries","@stdlib/utils-from-entries"
 "@stdlib/utils/object-inverse","@stdlib/utils-object-inverse"
-"@stdlib/utils/object-inverse-by","@stdlib/utils-object-inverse-by"
+"@stdlib/object/inverse-by","@stdlib/object-inverse-by"
 "@stdlib/utils/keys","@stdlib/utils-keys"
 "@stdlib/utils/values","@stdlib/utils-values"
 "@stdlib/utils/values-in","@stdlib/utils-values-in"
