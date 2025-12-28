@@ -208,10 +208,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.anyBy( x, isPositive );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
@@ -244,10 +241,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.anyBy.assign( x, y, isPositive );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	anyBy: typeof anyBy;
 
