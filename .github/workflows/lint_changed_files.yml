@@ -169,7 +169,7 @@ jobs:
       - name: 'Lint package.json files'
         if: success() || failure()
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_package_json_files" "${{ steps.changed-files.outputs.files }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_package_json_files" "${{ steps.changed-files.outputs.files }}"
 
       # Lint REPL help files...
       - name: 'Lint REPL help files'

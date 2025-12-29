@@ -63,7 +63,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           if [ "${{ inputs.dry-run }}" == "true" ]; then
-            . "$GITHUB_WORKSPACE/.github/workflows/scripts/merge_ready_prs" --dry-run
+            . "$GITHUB_WORKSPACE/.github/workflows/scripts/merge_ready_prs/merge_ready_prs" --dry-run
           else
-            . "$GITHUB_WORKSPACE/.github/workflows/scripts/merge_ready_prs"
+            . "$GITHUB_WORKSPACE/.github/workflows/scripts/merge_ready_prs/merge_ready_prs"
           fi

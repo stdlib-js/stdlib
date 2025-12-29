@@ -168,7 +168,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
-          "$GITHUB_WORKSPACE/.github/workflows/scripts/create_broken_link_issues" \
+          "$GITHUB_WORKSPACE/.github/workflows/scripts/markdown_links/create_broken_link_issues" \
             '${{ steps.results.outputs.failures }}' \
             "9112"
         timeout-minutes: 30
