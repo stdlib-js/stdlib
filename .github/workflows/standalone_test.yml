@@ -133,6 +133,7 @@ jobs:
 
       # Send notification to Slack:
       - name: 'Send notification'
+        continue-on-error: true
         # Pin action to full length commit SHA
         uses: 8398a7/action-slack@77eaa4f1c608a7d68b38af4e3f739dcd8cba273e # v3.19.0
         if: success()
