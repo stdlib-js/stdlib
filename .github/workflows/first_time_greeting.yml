@@ -69,4 +69,4 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number || github.event.pull_request.number }}
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/first_time_greeting" $ISSUE_NUMBER
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/first_time_greeting/run" $ISSUE_NUMBER
