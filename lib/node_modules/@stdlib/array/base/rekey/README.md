@@ -65,6 +65,8 @@ The function has the following parameters:
 
 <section class="notes">
 
+## Notes
+
 -   The function **only** copies and renames those keys which are present in a provided mapping object. Any keys which are **not** present in the provided mapping object, but are present in the original objects, are **omitted** during object creation.
 -   The function assumes that each object has the keys specified in a provided mapping object.
 -   The function performs **shallow** copies of key values.

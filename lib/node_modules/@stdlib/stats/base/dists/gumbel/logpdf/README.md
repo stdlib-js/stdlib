@@ -126,22 +126,18 @@ y = mylogpdf( 12.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var logpdf = require( '@stdlib/stats/base/dists/gumbel/logpdf' );
 
-var beta;
-var mu;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var beta = uniform( 100, 0.0, 10.0, opts );
+var mu = uniform( 100, 0.0, 10.0, opts );
+var x = uniform( 100, 0.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = randu() * 10.0;
-    mu = randu() * 10.0;
-    beta = randu() * 10.0;
-    y = logpdf( x, mu, beta );
-    console.log( 'x: %d, µ: %d, β: %d, ln(f(x;µ,β)): %d', x, mu, beta, y );
-}
+logEachMap( 'x: %0.4f, µ: %0.4f, β: %0.4f, ln(f(x;µ,β)): %0.4f', x, mu, beta, logpdf );
 ```
 
 </section>

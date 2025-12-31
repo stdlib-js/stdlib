@@ -126,7 +126,7 @@ int8_t stdlib_ndarray_b_c_as_c_c_0d( struct ndarray *arrays[], void *fcn ) {
 	}
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	status = stdlib_ndarray_iset_complex64( arrays[ 1 ], 0, stdlib_complex64_from_complex64( f( stdlib_complex64_from_uint8( v ) ) ) );
+	status = stdlib_ndarray_iset_complex64( arrays[ 1 ], 0, f( stdlib_complex64_from_uint8( v ) ) );
 	if ( status != 0 ) {
 		return -1;
 	}

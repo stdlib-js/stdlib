@@ -45,7 +45,7 @@ interface Routine {
 	* @returns index
 	*
 	* @example
-	* var x = new [ 1.0, 2.0, 3.0, 4.0 ];
+	* var x = [ 1.0, 2.0, 3.0, 4.0 ];
 	*
 	* var idx = gindexOf( x.length, 2.0, x, 1 );
 	* // returns 1

@@ -75,7 +75,7 @@ interface ModuleConstructor {
 	*
 	* // Read out the results:
 	* var viewX = zeros( N, dtype );
-	* var viewY = zeros( n, dtype );
+	* var viewY = zeros( N, dtype );
 	* mod.read( xptr, viewX )
 	* mod.read( yptr, viewY );
 	* // viewX => <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
@@ -132,7 +132,7 @@ interface ModuleConstructor {
 	*
 	* // Read out the results:
 	* var viewX = zeros( N, dtype );
-	* var viewY = zeros( n, dtype );
+	* var viewY = zeros( N, dtype );
 	* mod.read( xptr, viewX )
 	* mod.read( yptr, viewY );
 	* // viewX => <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
@@ -198,7 +198,7 @@ interface Module extends ModuleWrapper {
 	*
 	* // Read out the results:
 	* var viewX = zeros( N, dtype );
-	* var viewY = zeros( n, dtype );
+	* var viewY = zeros( N, dtype );
 	* mod.read( xptr, viewX )
 	* mod.read( yptr, viewY );
 	* // viewX => <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
@@ -261,7 +261,7 @@ interface Module extends ModuleWrapper {
 	*
 	* // Read out the results:
 	* var viewX = zeros( N, dtype );
-	* var viewY = zeros( n, dtype );
+	* var viewY = zeros( N, dtype );
 	* mod.read( xptr, viewX )
 	* mod.read( yptr, viewY );
 	* // viewX => <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
@@ -369,7 +369,7 @@ interface Routine extends ModuleWrapper {
 	*
 	* // Read out the results:
 	* var viewX = zeros( N, dtype );
-	* var viewY = zeros( n, dtype );
+	* var viewY = zeros( N, dtype );
 	* mod.read( xptr, viewX )
 	* mod.read( yptr, viewY );
 	* // viewX => <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]

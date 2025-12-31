@@ -38,7 +38,7 @@ import array2ndarray = require( './index' );
 	array2ndarray( zeros( 1, 'generic' ), 'row-major' ); // $ExpectType genericndarray<number>
 }
 
-// The compiler throws an error if the function is provided a third argument which is not a recognized/supported order...
+// The compiler throws an error if the function is provided a second argument which is not a recognized/supported order...
 {
 	array2ndarray( zeros( 1, 'float64' ), '10' ); // $ExpectError
 	array2ndarray( zeros( 1, 'float64' ), 5 ); // $ExpectError
@@ -53,7 +53,6 @@ import array2ndarray = require( './index' );
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	array2ndarray(); // $ExpectError
-	array2ndarray( zeros( 1, 'float64' ) ); // $ExpectError
 	array2ndarray( zeros( 1, 'float64' ) ); // $ExpectError
 	array2ndarray( zeros( 1, 'float64' ), 'row-major', {} ); // $ExpectError
 }

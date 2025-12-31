@@ -31,30 +31,21 @@
     // Standard usage:
     > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > {{alias}}( 2, cx, 1 );
-    > var z = cx.get( 0 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( z )
-    1.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
-    -2.0
+    > var z = cx.get( 0 )
+    <Complex64>[ 1.0, -2.0 ]
 
     // Advanced indexing:
     > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > {{alias}}( 2, cx, 2 );
-    > z = cx.get( 0 );
-    > re = {{alias:@stdlib/complex/float32/real}}( z )
-    1.0
-    > im = {{alias:@stdlib/complex/float32/imag}}( z )
-    -2.0
+    > z = cx.get( 0 )
+    <Complex64>[ 1.0, -2.0 ]
 
     // Using typed array views:
     > var cx0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > var cx1 = new {{alias:@stdlib/array/complex64}}( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 );
     > {{alias}}( 2, cx1, 1 );
-    > z = cx0.get( 1 );
-    > re = {{alias:@stdlib/complex/float32/real}}( z )
-    3.0
-    > im = {{alias:@stdlib/complex/float32/imag}}( z )
-    -4.0
+    > z = cx0.get( 1 )
+    <Complex64>[ 3.0, -4.0 ]
 
 
 {{alias}}.ndarray( N, cx, strideCX, offsetCX )
@@ -89,20 +80,14 @@
     // Standard usage:
     > var cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > {{alias}}.ndarray( 2, cx, 1, 0 );
-    > var z = cx.get( 0 );
-    > var re = {{alias:@stdlib/complex/float32/real}}( z )
-    1.0
-    > var im = {{alias:@stdlib/complex/float32/imag}}( z )
-    -2.0
+    > var z = cx.get( 0 )
+    <Complex64>[ 1.0, -2.0 ]
 
     // Advanced indexing:
     > cx = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
     > {{alias}}.ndarray( 2, cx, 1, 2 );
-    > z = cx.get( 2 );
-    > re = {{alias:@stdlib/complex/float32/real}}( z )
-    5.0
-    > im = {{alias:@stdlib/complex/float32/imag}}( z )
-    -6.0
+    > z = cx.get( 2 )
+    <Complex64>[ 5.0, -6.0 ]
 
     See Also
     --------

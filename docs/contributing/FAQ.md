@@ -137,7 +137,7 @@ Consider whether the number of parameters can be reduced. If reduction is not po
 
 ## I have opened a pull request, where can I seek feedback?
 
-Consider joining our [Gitter channel][stdlib-gitter]! We are proud to have a very active community where members help each other by asking and answering questions. A maintainer will review your pull request soon and provide feedback. You can also discuss it during our [weekly office hours meeting][stdlib-office-hours]!
+Consider joining our [Zulip community][stdlib-zulip]! We are proud to have a very active community where members help each other by asking and answering questions. A maintainer will review your pull request soon and provide feedback. You can also discuss it during our [weekly office hours meeting][stdlib-office-hours]!
 
 <a name="generate-fixtures"></a>
 
@@ -425,7 +425,7 @@ For more `make` commands, refer to the [documentation][benchmark] on running ben
 
 [node-gyp]: https://github.com/nodejs/node-gyp
 
-[stdlib-gitter]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [stdlib-office-hours]: https://github.com/stdlib-js/meetings/issues
 

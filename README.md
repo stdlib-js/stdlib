@@ -79,8 +79,8 @@ Thank you for being a part of our community! Your support is invaluable to us!
 
 -   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including [open office hours][stdlib-office-hours].
 -   [**Open Collective**][open-collective-stdlib]: financially support the project.
--   [**Twitter**][stdlib-twitter]: follow us on social media.
--   [**Gitter**][stdlib-gitter]: chat with project maintainers and other community members.
+-   [**Bluesky**][stdlib-bluesky]: follow us on social media.
+-   [**Zulip**][stdlib-zulip]: chat with project maintainers and other community members.
 
 ## Features
 
@@ -563,7 +563,16 @@ stdlib development is generously supported by the following sponsors:
 <div class="image" align="center">
     <br>
     <a href="https://labs.quansight.org/">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2719e1d3ecab2cc29985bca35fd33594e65adb55/docs/assets/sponsors/quansight_labs_logo.png" alt="Quansight Labs">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@a064751967bcc3419f5877716b23cf5e1064ab26/docs/assets/sponsors/quansight_labs_logo.png" alt="Quansight Labs">
+    </a>
+    <br>
+    <br>
+</div>
+
+<div class="image" align="center">
+    <br>
+    <a href="https://zulip.com/">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@a6c5bd56c188c946bade9e5de285a8ada16f34f4/docs/assets/sponsors/zulip_logo.png" alt="Zulip">
     </a>
     <br>
     <br>
@@ -599,6 +608,54 @@ Does your organization use stdlib? If so, we'd love to hear from you!
 </section>
 
 <!-- /.users -->
+
+<!-- Google Summer of Code -->
+
+* * *
+
+<section class="gsoc">
+
+## Google Summer of Code
+
+stdlib is a proud participant in the Google Summer of Code program. If you are new to open source and want to learn more about how to participate, be sure to check out our [Google Summer of Code resources][stdlib-gsoc] and the stdlib [wiki][stdlib-wiki] for details on past projects!
+
+<div class="image" align="center">
+    <br>
+    <a href="https://summerofcode.withgoogle.com">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9eb11556f417ea8706c2f57719bb725f78466680/docs/assets/misc/gsoc_logo.png" alt="Google Summer of Code">
+    </a>
+    <br>
+    <br>
+</div>
+
+</section>
+
+<!-- /.gsoc -->
+
+<!-- Project funding acknowledgments. If acknowledgments are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+* * *
+
+<section class="funding-acknowledgments">
+
+## Funding Acknowledgments
+
+This work was supported in part by the National Science Foundation under [Award No. 2449410][nsf-award-2449410].
+
+> Disclaimer: Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+
+<div class="image" align="center">
+    <br>
+    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2449410&HistoricalAwards=false">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@886b0c645787542774d5bcefde429f6e3db59b57/docs/assets/sponsors/nsf.png" alt="National Science Foundation" width="200">
+    </a>
+    <br>
+    <br>
+</div>
+
+</section>
+
+<!-- /.funding-acknowledgments -->
 
 * * *
 
@@ -716,9 +773,9 @@ Test and build infrastructure is generously provided by the following services:
 
 [dev-dependencies-url]: https://socket.dev/npm/package/@stdlib/stdlib/dependencies -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
 
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-url]: https://stdlib.zulipchat.com
 
 [make]: https://www.gnu.org/software/make/
 
@@ -790,9 +847,15 @@ Test and build infrastructure is generously provided by the following services:
 
 [open-collective-stdlib]: https://opencollective.com/stdlib
 
-[stdlib-twitter]: https://twitter.com/stdlibjs
+<!-- [stdlib-twitter]: https://twitter.com/stdlibjs -->
 
-[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+[stdlib-bluesky]: https://bsky.app/profile/stdlib.io
+
+[stdlib-zulip]: https://stdlib.zulipchat.com
+
+[stdlib-gsoc]: https://github.com/stdlib-js/google-summer-of-code
+
+[stdlib-wiki]: https://github.com/stdlib-js/stdlib/wiki
 
 [@stdlib/math/base/special]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special
 
@@ -817,6 +880,8 @@ Test and build infrastructure is generously provided by the following services:
 [@stdlib/math-base-special-erf-esm]: https://github.com/stdlib-js/math-base-special-erf/tree/esm
 
 [@stdlib/math-base-special-erf-umd]: https://github.com/stdlib-js/math-base-special-erf/tree/umd
+
+[nsf-award-2449410]: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2449410&HistoricalAwards=false
 
 </section>
 

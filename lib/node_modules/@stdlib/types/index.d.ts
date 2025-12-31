@@ -1445,154 +1445,304 @@ declare module '@stdlib/types/ndarray' {
 	import { Remap } from '@stdlib/types/utilities'; // eslint-disable-line no-duplicate-imports
 
 	/**
+	* Data type string.
+	*/
+	type DataTypeString = NumericDataTypeString | BooleanDataTypeString | 'binary' | 'generic'; // "all"
+
+	/**
+	* Data type string for real-valued ndarrays.
+	*/
+	type RealDataTypeString = RealFloatingPointDataTypeString | IntegerDataTypeString; // "real"
+
+	/**
+	* Data type string for real-valued ndarrays.
+	*/
+	type RealAndGenericDataTypeString = RealDataTypeString | 'generic'; // "real_and_generic"
+
+	/**
+	* Data type string for floating-point ndarrays.
+	*/
+	type RealFloatingPointDataTypeString = 'float64' | 'float32'; // "real_floating_point"
+
+	/**
+	* Data type string for floating-point ndarrays.
+	*/
+	type RealFloatingPointAndGenericDataTypeString = RealFloatingPointDataTypeString | 'generic'; // "real_floating_point_and_generic"
+
+	/**
+	* Data type string for integer ndarrays.
+	*/
+	type IntegerDataTypeString = SignedIntegerDataTypeString | UnsignedIntegerDataTypeString; // "integer"
+
+	/**
+	* Data type string for integer ndarrays.
+	*/
+	type IntegerAndGenericDataTypeString = IntegerDataTypeString | 'generic'; // "integer_and_generic"
+
+	/**
+	* Data type string for signed integer ndarrays.
+	*/
+	type SignedIntegerDataTypeString = 'int32' | 'int16' | 'int8'; // "signed_integer"
+
+	/**
+	* Data type string for signed integer ndarrays.
+	*/
+	type SignedIntegerAndGenericDataTypeString = SignedIntegerDataTypeString | 'generic'; // "signed_integer_and_generic"
+
+	/**
+	* Data type string for unsigned integer ndarrays.
+	*/
+	type UnsignedIntegerDataTypeString = 'uint32' | 'uint16' | 'uint8' | 'uint8c'; // "unsigned_integer"
+
+	/**
+	* Data type string for unsigned integer ndarrays.
+	*/
+	type UnsignedIntegerAndGenericDataTypeString = UnsignedIntegerDataTypeString | 'generic'; // "unsigned_integer_and_generic"
+
+	/**
+	* Data type string for complex number ndarrays.
+	*/
+	type ComplexFloatingPointDataTypeString = 'complex64' | 'complex128'; // "complex_floating_point"
+
+	/**
+	* Data type string for complex number ndarrays.
+	*/
+	type ComplexFloatingPointAndGenericDataTypeString = ComplexFloatingPointDataTypeString | 'generic'; // "complex_floating_point_and_generic"
+
+	/**
+	* Data type string for floating-point real or complex ndarrays.
+	*/
+	type FloatingPointDataTypeString = RealFloatingPointDataTypeString | ComplexFloatingPointDataTypeString; // "floating_point"
+
+	/**
+	* Data type string for floating-point real or complex ndarrays.
+	*/
+	type FloatingPointAndGenericDataTypeString = FloatingPointDataTypeString | 'generic'; // "floating_point_and_generic"
+
+	/**
+	* Data type string for real-valued or complex number ndarrays.
+	*/
+	type NumericDataTypeString = RealDataTypeString | ComplexFloatingPointDataTypeString; // "numeric"
+
+	/**
+	* Data type string for real-valued or complex number ndarrays.
+	*/
+	type NumericAndGenericDataTypeString = NumericDataTypeString | 'generic'; // "numeric_and_generic"
+
+	/**
+	* Data type string for boolean typed arrays.
+	*/
+	type BooleanDataTypeString = 'bool'; // "boolean"
+
+	/**
+	* Data type string for boolean and generic ndarrays.
+	*/
+	type BooleanAndGenericDataTypeString = BooleanDataTypeString | 'generic'; // "boolean_and_generic"
+
+	/**
+	* Data type string for strictly "typed" ndarrays.
+	*/
+	type TypedDataTypeString = NumericDataTypeString | BooleanDataTypeString; // "typed"
+
+	/**
+	* Data type string for strictly typed and generic ndarrays.
+	*/
+	type TypedAndGenericDataTypeString = TypedDataTypeString | 'generic'; // "typed_and_generic"
+
+	/**
+	* Data type string for integer index arrays.
+	*/
+	type IntegerIndexDataTypeString = 'int32'; // "integer_index"
+
+	/**
+	* Data type string for integer index and generic arrays.
+	*/
+	type IntegerIndexAndGenericDataTypeString = IntegerIndexDataTypeString | 'generic'; // "integer_index_and_generic"
+
+	/**
+	* Data type string for boolean index arrays.
+	*/
+	type BooleanIndexDataTypeString = BooleanDataTypeString; // "boolean_index"
+
+	/**
+	* Data type string for boolean index and generic arrays.
+	*/
+	type BooleanIndexAndGenericDataTypeString = BooleanIndexDataTypeString | 'generic'; // "boolean_index_and_generic"
+
+	/**
+	* Data type string for mask index arrays.
+	*/
+	type MaskIndexDataTypeString = 'uint8'; // "mask_index"
+
+	/**
+	* Data type string for mask index and generic arrays.
+	*/
+	type MaskIndexAndGenericDataTypeString = MaskIndexDataTypeString | 'generic'; // "mask_index_and_generic"
+
+	/**
+	* Data type string for typed index arrays.
+	*/
+	type TypedIndexDataTypeString = IntegerIndexDataTypeString | BooleanIndexDataTypeString | MaskIndexDataTypeString; // "typed_index"
+
+	/**
+	* Data type string for typed index and generic arrays.
+	*/
+	type TypedIndexAndGenericDataTypeString = TypedIndexDataTypeString | 'generic'; // "typed_index_and_generic"
+
+	/**
+	* Data type string for index arrays.
+	*/
+	type IndexDataTypeString = TypedIndexAndGenericDataTypeString; // "index"
+
+	/**
 	* Data type.
 	*/
-	type DataType = NumericDataType | BooleanDataType | 'binary' | 'generic'; // "all"
+	type DataType = DataTypeString; // "all"
 
 	/**
 	* Data type for real-valued ndarrays.
 	*/
-	type RealDataType = RealFloatingPointDataType | IntegerDataType; // "real"
+	type RealDataType = RealDataTypeString; // "real"
 
 	/**
 	* Data type for real-valued ndarrays.
 	*/
-	type RealAndGenericDataType = RealDataType | 'generic'; // "real_and_generic"
+	type RealAndGenericDataType = RealAndGenericDataTypeString; // "real_and_generic"
 
 	/**
 	* Data type for floating-point ndarrays.
 	*/
-	type RealFloatingPointDataType = 'float64' | 'float32'; // "real_floating_point"
+	type RealFloatingPointDataType = RealFloatingPointDataTypeString; // "real_floating_point"
 
 	/**
 	* Data type for floating-point ndarrays.
 	*/
-	type RealFloatingPointAndGenericDataType = RealFloatingPointDataType | 'generic'; // "real_floating_point_and_generic"
+	type RealFloatingPointAndGenericDataType = RealFloatingPointAndGenericDataTypeString; // "real_floating_point_and_generic"
 
 	/**
 	* Data type for integer ndarrays.
 	*/
-	type IntegerDataType = SignedIntegerDataType | UnsignedIntegerDataType; // "integer"
+	type IntegerDataType = IntegerDataTypeString; // "integer"
 
 	/**
 	* Data type for integer ndarrays.
 	*/
-	type IntegerAndGenericDataType = IntegerDataType | 'generic'; // "integer_and_generic"
+	type IntegerAndGenericDataType = IntegerAndGenericDataTypeString; // "integer_and_generic"
 
 	/**
 	* Data type for signed integer ndarrays.
 	*/
-	type SignedIntegerDataType = 'int32' | 'int16' | 'int8'; // "signed_integer"
+	type SignedIntegerDataType = SignedIntegerDataTypeString; // "signed_integer"
 
 	/**
 	* Data type for signed integer ndarrays.
 	*/
-	type SignedIntegerAndGenericDataType = SignedIntegerDataType | 'generic'; // "signed_integer_and_generic"
+	type SignedIntegerAndGenericDataType = SignedIntegerAndGenericDataTypeString; // "signed_integer_and_generic"
 
 	/**
 	* Data type for unsigned integer ndarrays.
 	*/
-	type UnsignedIntegerDataType = 'uint32' | 'uint16' | 'uint8' | 'uint8c'; // "unsigned_integer"
+	type UnsignedIntegerDataType = UnsignedIntegerDataTypeString; // "unsigned_integer"
 
 	/**
 	* Data type for unsigned integer ndarrays.
 	*/
-	type UnsignedIntegerAndGenericDataType = UnsignedIntegerDataType | 'generic'; // "unsigned_integer_and_generic"
+	type UnsignedIntegerAndGenericDataType = UnsignedIntegerAndGenericDataTypeString; // "unsigned_integer_and_generic"
 
 	/**
 	* Data type for complex number ndarrays.
 	*/
-	type ComplexFloatingPointDataType = 'complex64' | 'complex128'; // "complex_floating_point"
+	type ComplexFloatingPointDataType = ComplexFloatingPointDataTypeString; // "complex_floating_point"
 
 	/**
 	* Data type for complex number ndarrays.
 	*/
-	type ComplexFloatingPointAndGenericDataType = ComplexFloatingPointDataType | 'generic'; // "complex_floating_point_and_generic"
+	type ComplexFloatingPointAndGenericDataType = ComplexFloatingPointAndGenericDataTypeString; // "complex_floating_point_and_generic"
 
 	/**
 	* Data type for floating-point real or complex ndarrays.
 	*/
-	type FloatingPointDataType = RealFloatingPointDataType | ComplexFloatingPointDataType; // "floating_point"
+	type FloatingPointDataType = FloatingPointDataTypeString; // "floating_point"
 
 	/**
 	* Data type for floating-point real or complex ndarrays.
 	*/
-	type FloatingPointAndGenericDataType = FloatingPointDataType | 'generic'; // "floating_point_and_generic"
+	type FloatingPointAndGenericDataType = FloatingPointAndGenericDataTypeString; // "floating_point_and_generic"
 
 	/**
 	* Data type for real-valued or complex number ndarrays.
 	*/
-	type NumericDataType = RealDataType | ComplexFloatingPointDataType; // "numeric"
+	type NumericDataType = NumericDataTypeString; // "numeric"
 
 	/**
 	* Data type for real-valued or complex number ndarrays.
 	*/
-	type NumericAndGenericDataType = NumericDataType | 'generic'; // "numeric_and_generic"
+	type NumericAndGenericDataType = NumericAndGenericDataTypeString; // "numeric_and_generic"
 
 	/**
 	* Data type for boolean typed arrays.
 	*/
-	type BooleanDataType = 'bool'; // "boolean"
+	type BooleanDataType = BooleanDataTypeString; // "boolean"
 
 	/**
 	* Data type for boolean and generic ndarrays.
 	*/
-	type BooleanAndGenericDataType = BooleanDataType | 'generic'; // "boolean_and_generic"
+	type BooleanAndGenericDataType = BooleanAndGenericDataTypeString; // "boolean_and_generic"
 
 	/**
 	* Data type for strictly "typed" ndarrays.
 	*/
-	type TypedDataType = NumericDataType | BooleanDataType; // "typed"
+	type TypedDataType = TypedDataTypeString; // "typed"
 
 	/**
 	* Data type for strictly typed and generic ndarrays.
 	*/
-	type TypedAndGenericDataType = TypedDataType | 'generic'; // "typed_and_generic"
+	type TypedAndGenericDataType = TypedAndGenericDataTypeString; // "typed_and_generic"
 
 	/**
 	* Data type for integer index arrays.
 	*/
-	type IntegerIndexDataType = 'int32'; // "integer_index"
+	type IntegerIndexDataType = IntegerIndexDataTypeString; // "integer_index"
 
 	/**
 	* Data type for integer index and generic arrays.
 	*/
-	type IntegerIndexAndGenericDataType = IntegerIndexDataType | 'generic'; // "integer_index_and_generic"
+	type IntegerIndexAndGenericDataType = IntegerIndexAndGenericDataTypeString; // "integer_index_and_generic"
 
 	/**
 	* Data type for boolean index arrays.
 	*/
-	type BooleanIndexDataType = BooleanDataType; // "boolean_index"
+	type BooleanIndexDataType = BooleanIndexDataTypeString; // "boolean_index"
 
 	/**
 	* Data type for boolean index and generic arrays.
 	*/
-	type BooleanIndexAndGenericDataType = BooleanIndexDataType | 'generic'; // "boolean_index_and_generic"
+	type BooleanIndexAndGenericDataType = BooleanIndexAndGenericDataTypeString; // "boolean_index_and_generic"
 
 	/**
 	* Data type for mask index arrays.
 	*/
-	type MaskIndexDataType = 'uint8'; // "mask_index"
+	type MaskIndexDataType = MaskIndexDataTypeString; // "mask_index"
 
 	/**
 	* Data type for mask index and generic arrays.
 	*/
-	type MaskIndexAndGenericDataType = MaskIndexDataType | 'generic'; // "mask_index_and_generic"
+	type MaskIndexAndGenericDataType = MaskIndexAndGenericDataTypeString; // "mask_index_and_generic"
 
 	/**
 	* Data type for typed index arrays.
 	*/
-	type TypedIndexDataType = IntegerIndexDataType | BooleanIndexDataType | MaskIndexDataType; // "typed_index"
+	type TypedIndexDataType = TypedIndexDataTypeString; // "typed_index"
 
 	/**
 	* Data type for typed index and generic arrays.
 	*/
-	type TypedIndexAndGenericDataType = TypedIndexDataType | 'generic'; // "typed_index_and_generic"
+	type TypedIndexAndGenericDataType = TypedIndexAndGenericDataTypeString; // "typed_index_and_generic"
 
 	/**
 	* Data type for index arrays.
 	*/
-	type IndexDataType = TypedIndexAndGenericDataType;
+	type IndexDataType = IndexDataTypeString; // "index"
 
 	/**
 	* Strict data type "kinds".

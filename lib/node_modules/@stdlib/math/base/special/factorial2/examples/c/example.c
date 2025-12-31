@@ -18,15 +18,14 @@
 
 #include "stdlib/math/base/special/factorial2.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-	const int32_t x[] = { 1, 10, 100, 301, 302 };
+	const double x[] = { 1.0, 10.0, 100.0, 301.0, 302.0 };
 
 	double b;
 	int i;
 	for ( i = 0; i < 5; i++ ) {
 		b = stdlib_base_factorial2( x[ i ] );
-		printf ( "factorial2(%d) = %lf\n", x[ i ], b );
+		printf ( "factorial2(%lf) = %lf\n", x[ i ], b );
 	}
 }

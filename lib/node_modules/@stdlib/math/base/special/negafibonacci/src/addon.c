@@ -18,6 +18,5 @@
 
 #include "stdlib/math/base/special/negafibonacci.h"
 #include "stdlib/math/base/napi/unary.h"
-#include<stdint.h>
 
 STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_negafibonacci )

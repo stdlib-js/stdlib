@@ -16,7 +16,7 @@
   "bin": {
     "stdlib-namespace": "./bin/cli"
   },
-  "main": "./lib/index.js",
+  "main": "./lib",
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",

@@ -38,7 +38,7 @@
 *
 * @example
 * var out = numCodePoints( 'अनुच्छेद' );
-* // returns 5
+* // returns 8
 */
 declare function numCodePoints( str: string ): number;
 

@@ -145,10 +145,10 @@ Calculates the Lanczos sum for the approximation of the [gamma function][gamma-f
 
 ```c
 float out = stdlib_base_gamma_lanczos_sum_expg_scaledf( 4.0f );
-// returns ~0.018f
+// returns ~0.748f
 
 out = stdlib_base_gamma_lanczos_sum_expg_scaledf( -1.5f );
-// returns ~25.337f
+// returns ~0.193f
 ```
 
 The function accepts the following arguments:

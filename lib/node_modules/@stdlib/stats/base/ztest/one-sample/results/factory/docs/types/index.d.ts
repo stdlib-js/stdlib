@@ -69,6 +69,21 @@ interface Results<T> {
 }
 
 /**
+* Interface describing options when serializing a results object to a string.
+*/
+interface ToStringOptions {
+	/**
+	* Number of digits to display after decimal points. Default: `4`.
+	*/
+	digits?: number;
+
+	/**
+	* Boolean indicating whether to show the test decision. Default: `true`.
+	*/
+	decision?: boolean;
+}
+
+/**
 * Interface describing a results data structure.
 */
 declare class ResultsStruct<T> {
@@ -126,6 +141,28 @@ declare class ResultsStruct<T> {
 	* Test method.
 	*/
 	method: string;
+
+	/**
+	* Serializes a results object as a formatted string.
+	*
+	* @param options - options object
+	* @returns serialized results
+	*/
+	toString( options?: ToStringOptions ): string;
+
+	/**
+	* Serializes a results object as a JSON object.
+	*
+	* @returns serialized object
+	*/
+	toJSON(): object;
+
+	/**
+	* Returns a DataView of a results object.
+	*
+	* @returns DataView
+	*/
+	toDataView(): DataView;
 }
 
 /**

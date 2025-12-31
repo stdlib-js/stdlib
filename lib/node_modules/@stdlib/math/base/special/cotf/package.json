@@ -66,5 +66,89 @@
     "cosine",
     "trig",
     "trigonometry"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "cot",
+      "alias": "cotf",
+      "pkg_desc": "evaluate the cotangent of a single-precision floating-point number (in radians)",
+      "desc": "evaluates the cotangent of a single-precision floating-point number (in radians)",
+      "short_desc": "cotangent",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in radians)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": -1.4e-45
+            },
+            {
+              "min": 1.4e-45,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.5,
+              50
+            ]
+          },
+          "example_values": [
+            4.2,
+            -13.8,
+            0.13,
+            -21.3,
+            14.6,
+            -7.2,
+            29.4,
+            -33.7,
+            2.6,
+            -9.6,
+            0.91,
+            -1.47,
+            -26.5,
+            7.9,
+            -18.7,
+            -11.6,
+            -16.4,
+            -5.3,
+            -12.4,
+            -8.1
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "cotangent",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "cotf",
+        "cotangent",
+        "tan",
+        "tangent",
+        "sin",
+        "sine",
+        "cos",
+        "cosine"
+      ],
+      "extra_keywords": [
+        "math.tan"
+      ]
+    }
+  }
 }
