@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Expands the shape of an array by inserting a new dimension of size one at a specified axis.
@@ -34,33 +34,22 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 *
-* var shx = x.shape;
+* var shx = getShape( x );
 * // returns [ 2, 2 ]
 *
 * var y = expandDimensions( x, 1 );
-* // returns <ndarray>
+* // returns <ndarray>[ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ]
 *
-* var shy = y.shape;
+* var shy = getShape( y );
 * // returns [ 2, 1, 2 ]
-*
-* var v = y.get( 0, 0, 0 );
-* // returns 1
-*
-* v = y.get( 0, 0, 1 );
-* // returns 2
-*
-* v = y.get( 1, 0, 0 );
-* // returns 3
-*
-* v = y.get( 1, 0, 1 );
-* // returns 4
 */
-declare function expandDimensions( x: ndarray, axis: number ): ndarray;
+declare function expandDimensions<T = unknown>( x: typedndarray<T>, axis: number ): typedndarray<T>;
 
 
 // EXPORTS //

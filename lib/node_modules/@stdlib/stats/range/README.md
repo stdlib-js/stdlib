@@ -132,7 +132,7 @@ var x = array( [ -1.0, 2.0, -3.0 ], {
 var y = range( x, {
     'dtype': 'float64'
 });
-// returns <ndarray>
+// returns <ndarray>[ 5.0 ]
 
 var dt = String( getDType( y ) );
 // returns 'float64'

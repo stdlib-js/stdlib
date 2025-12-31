@@ -21,6 +21,7 @@
 import zeros = require( '@stdlib/ndarray/zeros' );
 import snansumors = require( './index' );
 
+
 // TESTS //
 
 // The function returns a number...
