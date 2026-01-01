@@ -1,5 +1,5 @@
 
-{{alias}}( x, axis )
+{{alias}}( x, axis, writable )
     Expands the shape of an array by inserting a new dimension of size one at a
     specified axis.
 
@@ -11,6 +11,9 @@
     the resolved axis position is `N` (i.e., a singleton dimension is appended
     to the input array).
 
+    The `writable` parameter only applies to ndarray constructors supporting
+    read-only instances.
+
     Parameters
     ----------
     x: ndarray
@@ -18,6 +21,9 @@
 
     axis: integer
         Axis at which to insert a singleton dimension.
+
+    writable: boolean
+        Boolean indicating whether the returned ndarray should be writable.
 
     Returns
     -------
@@ -28,12 +34,8 @@
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
     <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
-    > var sh = {{alias:@stdlib/ndarray/shape}}( x )
-    [ 2, 2 ]
-    > var y = {{alias}}( x, 1 )
+    > var y = {{alias}}( x, 1, false )
     <ndarray>[ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ]
-    > sh = {{alias:@stdlib/ndarray/shape}}( y )
-    [ 2, 1, 2 ]
 
     See Also
     --------
