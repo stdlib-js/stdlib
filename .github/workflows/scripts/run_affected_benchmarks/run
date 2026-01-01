@@ -18,8 +18,6 @@
 
 # Script to run affected benchmarks for a given list of changed paths.
 #
-# Usage: run_affected_benchmarks path1 [path2 path3 ...]
-#
 # Arguments:
 #
 #   path1        File name or directory path.

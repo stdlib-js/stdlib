@@ -18,11 +18,9 @@
 
 # Script to check if a pull request contains the checked contributing guidelines acknowledgment checkbox.
 #
-# Usage: check_contributing_guidelines PR_NUMBER
-#
 # Arguments:
 #
-#   PR_NUMBER    Pull request number.
+#   pr_number    Pull request number.
 #
 # Environment variables:
 #

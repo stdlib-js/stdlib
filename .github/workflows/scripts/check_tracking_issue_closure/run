@@ -18,8 +18,6 @@
 
 # Script to check PRs for auto-closing language referencing tracking issues.
 #
-# Usage: check_tracking_issue_closure <days>
-#
 # Arguments:
 #
 #   days        Number of days to look back for PRs.

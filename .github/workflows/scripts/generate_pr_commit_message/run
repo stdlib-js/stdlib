@@ -19,11 +19,9 @@
 
 # Script to generate a commit message for a pull request.
 #
-# Usage: generate_pr_commit_message PR_NUMBER
-#
 # Arguments:
 #
-#   PR_NUMBER    Pull request number.
+#   pr_number    Pull request number.
 #
 # Environment variables:
 #

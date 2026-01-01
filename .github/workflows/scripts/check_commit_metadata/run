@@ -18,8 +18,6 @@
 
 # Script to check commit metadata for missing YAML blocks or dependencies.
 #
-# Usage: check_commit_metadata <pr_number> <commit_metadata> [--dry-run]
-#
 # Arguments:
 #
 #   pr_number        Pull request number.

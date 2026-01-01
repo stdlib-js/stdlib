@@ -18,8 +18,6 @@
 
 # Script to create issues for commit comments tagging @stdlib-bot.
 #
-# Usage: create_issues_address_commit_comments <days>
-#
 # Arguments:
 #
 #   days        Number of days to look back for commits.

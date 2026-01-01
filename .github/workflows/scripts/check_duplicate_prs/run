@@ -18,8 +18,6 @@
 
 # Script to identify potentially duplicate pull requests based on the issues they resolve.
 #
-# Usage: check_duplicate_prs
-#
 # Environment variables:
 #
 #   GITHUB_TOKEN   GitHub token for authentication.

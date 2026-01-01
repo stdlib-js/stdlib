@@ -18,8 +18,6 @@
 
 # Script to run affected tests for a given list of changed files.
 #
-# Usage: run_affected_tests file1 [file2 file3 ...]
-#
 # Arguments:
 #
 #   file1        File name.

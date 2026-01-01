@@ -18,8 +18,6 @@
 
 # Script to deprecate packages on npm and GitHub.
 #
-# Usage: deprecate_packages pkg1 [pkg2 pkg3 ...]
-#
 # Arguments:
 #
 #   pkg1        Package name.

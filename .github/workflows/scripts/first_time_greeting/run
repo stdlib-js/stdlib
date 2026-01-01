@@ -18,8 +18,6 @@
 
 # Script to greet first-time contributors.
 #
-# Usage: first_time_greeting <issue_number>
-#
 # Arguments:
 #
 #   issue_number    Issue or pull request number.

@@ -19,11 +19,11 @@
 
 # Script to merge a pull request.
 #
-# Usage: merge_pr PR_NUMBER
+# Usage: merge_pr pr_number
 #
 # Arguments:
 #
-#   PR_NUMBER    Pull request number.
+#   pr_number    Pull request number.
 #
 # Environment variables:
 #
