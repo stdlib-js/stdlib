@@ -71,7 +71,7 @@ boot( done )
     ...    server.close();
     ... };
     > var opts = { 'cert': '...', 'key': '...' };
-    > var boot = {{alias}}();
+    > var boot = {{alias}}( opts );
     > boot( done );
 
     See Also

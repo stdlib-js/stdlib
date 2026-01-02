@@ -122,7 +122,7 @@ interface LogPDF {
 *
 * var myLogPDF = logpdf.factory( 6, 7.0 );
 * y = myLogPDF( 7.0 );
-* // returns ~-1.864
+* // returns ~-32.382
 */
 declare var logpdf: LogPDF;
 

@@ -93,7 +93,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -108,7 +108,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -372,7 +372,7 @@ jobs:
       - name: 'Setup R'
         if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@bd49c52ffe281809afa6f0fecbf37483c5dd0b93 # v2.11.3
+        uses: r-lib/actions/setup-r@6f6e5bc62fba3a704f74e7ad7ef7676c5c6a2590 # v2.11.4
         with:
           r-version: '4.3.3'
 
@@ -502,12 +502,57 @@ jobs:
 
       # Lint TypeScript declarations files:
       - name: 'Lint TypeScript declarations files'
+        id: lint-typescript-declarations
         if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
         run: |
+          set -o pipefail
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
-            make TYPESCRIPT_DECLARATIONS_LINTER=eslint lint-typescript-declarations-files FAST_FAIL=0 FILES="${files}"
+            make TYPESCRIPT_DECLARATIONS_LINTER=eslint lint-typescript-declarations-files FAST_FAIL=0 FILES="${files}" 2>&1 | tee lint_typescript_declarations_errors.txt
           fi
+
+      # Create sub-issue for TypeScript declarations lint failures:
+      - name: 'Create sub-issue for TypeScript declarations lint failures'
+        if: failure() && contains(steps.lint-typescript-declarations.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          strip_ansi() {
+            sed -r 's/\x1B\[[0-9;]*[mK]//g'
+          }
+
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
+          cat << EOF > "$BODY_FILE"
+          ## TypeScript Declarations Linting Failures
+
+          Linting failures were detected in the automated TypeScript declarations lint workflow run.
+
+          ### Workflow Details
+
+          - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          - Type: TypeScript Declarations Linting
+          - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          ### Error Details
+
+          \`\`\`
+          $(cat lint_typescript_declarations_errors.txt | strip_ansi)
+          \`\`\`
+
+          ### Pull Request Instructions
+
+          -   Please use the following PR title format:
+          "chore: fix TypeScript declarations lint errors (issue #<ISSUE_NUMBER>)".
+          -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
+          EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+            'Fix TypeScript declarations lint errors' \
+            "$BODY_FILE" \
+            "9110" \
+            "Good First Issue"
+
+          rm "$BODY_FILE"
 
       # Lint license headers:
       - name: 'Lint license headers'
@@ -540,7 +585,7 @@ jobs:
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         id: cpr
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
+        uses: peter-evans/create-pull-request@98357b18bf14b5342f975ff684046ec3b2a07725 # v8.0.0
         with:
           title: 'style: fix lint errors'
           add-paths: ${{ steps.random-files.outputs.files }}

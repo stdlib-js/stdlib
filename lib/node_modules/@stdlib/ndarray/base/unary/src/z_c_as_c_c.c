@@ -127,7 +127,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_0d( struct ndarray *arrays[], void *fcn ) {
 	}
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	status = stdlib_ndarray_iset_complex64( arrays[ 1 ], 0, stdlib_complex64_from_complex64( f( stdlib_complex64_from_complex128( v ) ) ) );
+	status = stdlib_ndarray_iset_complex64( arrays[ 1 ], 0, f( stdlib_complex128_to_complex64( v ) ) );
 	if ( status != 0 ) {
 		return -1;
 	}
@@ -226,7 +226,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_0d( struct ndarray *arrays[], void *fcn ) {
 int8_t stdlib_ndarray_z_c_as_c_c_1d( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_1D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_1D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -322,7 +322,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_1d( struct ndarray *arrays[], void *fcn ) {
 int8_t stdlib_ndarray_z_c_as_c_c_2d( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_2D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_2D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -418,7 +418,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_2d( struct ndarray *arrays[], void *fcn ) {
 int8_t stdlib_ndarray_z_c_as_c_c_2d_blocked( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_2D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_2D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -514,7 +514,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_2d_blocked( struct ndarray *arrays[], void *fcn
 int8_t stdlib_ndarray_z_c_as_c_c_3d( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_3D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_3D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -610,7 +610,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_3d( struct ndarray *arrays[], void *fcn ) {
 int8_t stdlib_ndarray_z_c_as_c_c_3d_blocked( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_3D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_3D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -706,7 +706,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_3d_blocked( struct ndarray *arrays[], void *fcn
 int8_t stdlib_ndarray_z_c_as_c_c_4d( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_4D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_4D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -802,7 +802,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_4d( struct ndarray *arrays[], void *fcn ) {
 int8_t stdlib_ndarray_z_c_as_c_c_4d_blocked( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_4D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_4D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -898,7 +898,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_4d_blocked( struct ndarray *arrays[], void *fcn
 int8_t stdlib_ndarray_z_c_as_c_c_5d( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_5D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_5D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -994,7 +994,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_5d( struct ndarray *arrays[], void *fcn ) {
 int8_t stdlib_ndarray_z_c_as_c_c_5d_blocked( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_5D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_5D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -1090,7 +1090,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_5d_blocked( struct ndarray *arrays[], void *fcn
 int8_t stdlib_ndarray_z_c_as_c_c_6d( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_6D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_6D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -1186,7 +1186,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_6d( struct ndarray *arrays[], void *fcn ) {
 int8_t stdlib_ndarray_z_c_as_c_c_6d_blocked( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_6D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_6D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -1282,7 +1282,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_6d_blocked( struct ndarray *arrays[], void *fcn
 int8_t stdlib_ndarray_z_c_as_c_c_7d( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_7D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_7D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -1378,7 +1378,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_7d( struct ndarray *arrays[], void *fcn ) {
 int8_t stdlib_ndarray_z_c_as_c_c_7d_blocked( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_7D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_7D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -1474,7 +1474,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_7d_blocked( struct ndarray *arrays[], void *fcn
 int8_t stdlib_ndarray_z_c_as_c_c_8d( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_8D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_8D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -1570,7 +1570,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_8d( struct ndarray *arrays[], void *fcn ) {
 int8_t stdlib_ndarray_z_c_as_c_c_8d_blocked( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_8D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_8D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -1666,7 +1666,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_8d_blocked( struct ndarray *arrays[], void *fcn
 int8_t stdlib_ndarray_z_c_as_c_c_9d( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_9D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -1762,7 +1762,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_9d( struct ndarray *arrays[], void *fcn ) {
 int8_t stdlib_ndarray_z_c_as_c_c_9d_blocked( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_9D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_9D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -1858,7 +1858,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_9d_blocked( struct ndarray *arrays[], void *fcn
 int8_t stdlib_ndarray_z_c_as_c_c_10d( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_10D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_10D_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -1954,7 +1954,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_10d( struct ndarray *arrays[], void *fcn ) {
 int8_t stdlib_ndarray_z_c_as_c_c_10d_blocked( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_10D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_10D_BLOCKED_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 
@@ -2050,7 +2050,7 @@ int8_t stdlib_ndarray_z_c_as_c_c_10d_blocked( struct ndarray *arrays[], void *fc
 int8_t stdlib_ndarray_z_c_as_c_c_nd( struct ndarray *arrays[], void *fcn ) {
 	typedef stdlib_complex64_t func_type( const stdlib_complex64_t x );
 	func_type *f = (func_type *)fcn;
-	STDLIB_NDARRAY_UNARY_ND_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex64_from_complex128, stdlib_complex64_from_complex64 )
+	STDLIB_NDARRAY_UNARY_ND_LOOP_CLBK_ARG_CAST_FCN( stdlib_complex128_t, stdlib_complex64_t, stdlib_complex128_to_complex64, stdlib_complex64_from_complex64 )
 	return 0;
 }
 

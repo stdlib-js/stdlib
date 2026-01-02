@@ -160,7 +160,7 @@ make benchmark BENCHMARKS_FILTER=\".*/@stdlib/math/base/special/sin/.*\"
 
 If you haven't heard back from us within two weeks, please ping us by tagging the \"reviewers\" team in a comment on this PR.
 
-If you have any further questions while waiting for a response, please join our [Gitter channel][stdlib-gitter] to chat with project maintainers and other community members.
+If you have any further questions while waiting for a response, please join our [Zulip community][stdlib-zulip] to chat with project maintainers and other community members.
 
 We appreciate your contribution!
 
@@ -168,14 +168,14 @@ We appreciate your contribution!
 
 -   [Contributing Guidelines][stdlib-contributing]
 -   [Development Guide][stdlib-development]
--   [Gitter channel][stdlib-gitter]
+-   [Zulip Chat][stdlib-zulip]
 -   [make rules for running examples][make-docs-examples]
 -   [make rules for running unit tests][make-docs-test]
 -   [make rules for running benchmarks][make-docs-benchmark]
 
 [stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
 [stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
-[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [make-docs-examples]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/examples/README.md
 [make-docs-test]: https://github.com/stdlib-js/stdlib/blob/develop/tools/make/lib/test/README.md
@@ -200,9 +200,9 @@ We appreciate your contribution!
 
 And thank you for opening your first issue! We will get back to you shortly. :runner: :dash:
 
-If you have any further questions while waiting for a response, please join our [Gitter channel][stdlib-gitter] to chat with project maintainers and other community members.
+If you have any further questions while waiting for a response, please join our [Zulip community][stdlib-zulip] to chat with project maintainers and other community members.
 
-[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib"
+[stdlib-zulip]: https://stdlib.zulipchat.com"
 			if ! github_api "POST" "/repos/${repo_owner}/${repo_name}/issues/${issue_number}/comments" "{\"body\":$(echo "${comment}" | jq -R -s -c .)}"; then
 				echo "Failed to post comment on issue."
 				on_error 1

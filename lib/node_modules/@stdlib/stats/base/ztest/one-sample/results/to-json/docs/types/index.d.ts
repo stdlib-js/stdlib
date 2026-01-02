@@ -89,7 +89,7 @@ interface Results {
 *     'method': 'One-sample Z-test'
 * };
 *
-* var obj = toJSON( results );
+* var obj = res2json( results );
 * // returns {...}
 */
 declare function res2json( results: Results ): Results;

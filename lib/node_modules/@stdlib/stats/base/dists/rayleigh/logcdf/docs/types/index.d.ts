@@ -94,14 +94,14 @@ interface LogCDF {
 *
 * @example
 * var y = logcdf( 2.0, 5.0 );
-* // returns ~-2.564
+* // returns ~-2.565
 *
 * var mylogcdf = logcdf.factory( 0.5 );
 * y = mylogcdf( 1.0 );
 * // returns ~-0.145
 *
 * y = mylogcdf( 0.5 );
-* // returns ~-0.934
+* // returns ~-0.933
 */
 declare var logcdf: LogCDF;
 

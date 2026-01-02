@@ -27,21 +27,13 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
-    <ndarray>
-    > var sh = x.shape
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+    > var sh = {{alias:@stdlib/ndarray/shape}}( x )
     [ 2, 2 ]
     > var y = {{alias}}( x, 1 )
-    <ndarray>
-    > sh = y.shape
+    <ndarray>[ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ]
+    > sh = {{alias:@stdlib/ndarray/shape}}( y )
     [ 2, 1, 2 ]
-    > var v = y.get( 0, 0, 0 )
-    1
-    > v = y.get( 0, 0, 1 )
-    2
-    > v = y.get( 1, 0, 0 )
-    3
-    > v = y.get( 1, 0, 1 )
-    4
 
     See Also
     --------

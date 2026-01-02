@@ -34,7 +34,7 @@ import { typedndarray, float32ndarray } from '@stdlib/types/ndarray';
 *
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
-* var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
