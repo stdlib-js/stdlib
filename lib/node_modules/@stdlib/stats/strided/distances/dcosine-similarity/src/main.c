@@ -56,7 +56,7 @@ double API_SUFFIX( stdlib_strided_dcosine_similarity_ndarray )( const CBLAS_INT 
 	double dot;
 
 	if ( N <= 0 ) {
-		return 0.0;
+		return 0.0 / 0.0;
 	}
 	dot = c_ddot_ndarray( N, X, strideX, offsetX, Y, strideY, offsetY );
 	xnrm = c_dnrm2_ndarray( N, X, strideX, offsetX );
