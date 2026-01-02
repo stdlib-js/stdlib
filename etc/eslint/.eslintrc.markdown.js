@@ -20,10 +20,8 @@
 
 // MODULES //
 
-// FIXME: remove the next line and uncomment the subsequent line once all remark JSDoc ESLint rules are completed
-var copy = require( './../../lib/node_modules/@stdlib/utils/copy' );
-
-// Var copy = require( './utils/copy.js' );
+// FIXME: update the next line once all remark JSDoc ESLint rules are completed
+var copy = require( './../../lib/node_modules/@stdlib/utils/copy' ); // var copy = require( './utils/copy.js' );
 var defaults = require( './.eslintrc.js' );
 
 
@@ -124,6 +122,11 @@ eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 * @private
 */
 eslint.rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'off'; // FIXME: remove this once we can reliably lint Markdown code blocks
+
+/**
+* Do not enforce disallowing empty lines between module-level require statements.
+*/
+eslint.rules[ 'stdlib/no-empty-lines-between-requires' ] = 'off';
 
 /**
 * Allow use of undeclared variables, as variables may be defined in previous code blocks or be implied.
