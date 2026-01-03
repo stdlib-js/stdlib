@@ -93,7 +93,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -238,7 +238,7 @@ jobs:
           -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
             'Fix EditorConfig lint errors' \
             "$BODY_FILE" \
             "5156" \
@@ -312,7 +312,7 @@ jobs:
 
           # Run the lint script:
           if [ -n "${files}" ]; then
-            "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_javascript_files_error_log" ${files}
+            "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_javascript_files_error_log" ${files}
           else
             echo "No JavaScript files to lint."
           fi
@@ -347,7 +347,7 @@ jobs:
             -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
             'Fix JavaScript lint errors' \
             "$BODY_FILE" \
             "5377" \
@@ -493,7 +493,7 @@ jobs:
           -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
             'Fix C lint errors' \
             "$BODY_FILE" \
             "3235"  # Number of C lint error tracking issue
@@ -546,7 +546,7 @@ jobs:
           -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
             'Fix TypeScript declarations lint errors' \
             "$BODY_FILE" \
             "9110" \
@@ -585,7 +585,7 @@ jobs:
         if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
         id: cpr
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@84ae59a2cdc2258d6fa0732dd66352dddae2a412 # v7.0.9
+        uses: peter-evans/create-pull-request@98357b18bf14b5342f975ff684046ec3b2a07725 # v8.0.0
         with:
           title: 'style: fix lint errors'
           add-paths: ${{ steps.random-files.outputs.files }}

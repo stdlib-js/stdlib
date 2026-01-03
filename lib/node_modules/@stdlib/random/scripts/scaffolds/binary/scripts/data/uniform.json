@@ -31,7 +31,7 @@
   "readme_from_desc": "a [continuous uniform][@stdlib/random/base/uniform] distribution",
 
   "readme_heading": "Uniform Random Numbers",
-  "readme_dtype_kind_desc": "real-valued floating-point",
+  "readme_dtype_kind_desc": "a real-valued floating-point",
   "readme_dtype_kind_pkg": "stdlib/ndarray/dtypes",
 
   "repl_text_main_desc": "Returns an ndarray containing pseudorandom numbers drawn from a continuous uniform distribution.",

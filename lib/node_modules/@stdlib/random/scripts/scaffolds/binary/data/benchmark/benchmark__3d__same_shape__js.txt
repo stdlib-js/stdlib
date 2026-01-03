@@ -124,7 +124,7 @@ function main() {
 	var k;
 
 	min = 1; // 10^min
-	max = 6; // 10^max
+	max = 5; // 10^max
 
 	for ( k = 0; k < ORDERS.length; k++ ) {
 		ord = ORDERS[ k ];
