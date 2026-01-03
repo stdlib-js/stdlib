@@ -2662,7 +2662,7 @@
 "@stdlib/utils/entries",objectEntries
 "@stdlib/utils/entries-in",objectEntriesIn
 "@stdlib/utils/from-entries",objectFromEntries
-"@stdlib/utils/object-inverse",objectInverse
+"@stdlib/object/inverse",objectInverse
 "@stdlib/object/inverse-by",objectInverseBy
 "@stdlib/utils/keys",objectKeys
 "@stdlib/utils/values",objectValues
