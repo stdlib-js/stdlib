@@ -238,7 +238,7 @@ jobs:
           -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
             'Fix EditorConfig lint errors' \
             "$BODY_FILE" \
             "5156" \
@@ -312,7 +312,7 @@ jobs:
 
           # Run the lint script:
           if [ -n "${files}" ]; then
-            "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_javascript_files_error_log" ${files}
+            "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_javascript_files_error_log" ${files}
           else
             echo "No JavaScript files to lint."
           fi
@@ -347,7 +347,7 @@ jobs:
             -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
             'Fix JavaScript lint errors' \
             "$BODY_FILE" \
             "5377" \
@@ -493,7 +493,7 @@ jobs:
           -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
             'Fix C lint errors' \
             "$BODY_FILE" \
             "3235"  # Number of C lint error tracking issue
@@ -546,7 +546,7 @@ jobs:
           -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
           EOF
 
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_sub_issue" \
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
             'Fix TypeScript declarations lint errors' \
             "$BODY_FILE" \
             "9110" \

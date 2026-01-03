@@ -67,7 +67,7 @@ jobs:
       # Run the script to check PRs for tracking issue closure:
       - name: 'Check PRs for tracking issue closure'
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/check_tracking_issue_closure" 1
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/check_tracking_issue_closure/run" 1
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           DEBUG: ${{ inputs.debug || 'false' }}

@@ -94,5 +94,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN || secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           DEBUG: ${{ inputs.debug || 'false' }}
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/package_commands_comment" "$PR_NUMBER"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/pr_commands_comment/package_commands_comment" "$PR_NUMBER"
         timeout-minutes: 30

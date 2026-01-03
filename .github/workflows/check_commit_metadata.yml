@@ -72,4 +72,4 @@ jobs:
           COMMIT_METADATA: ${{ steps.extract-metadata.outputs.metadata }}
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/check_commit_metadata" $PR_NUMBER $COMMIT_METADATA
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/check_commit_metadata/run" $PR_NUMBER $COMMIT_METADATA
