@@ -40,7 +40,7 @@ import { DataType } from '@stdlib/types/ndarray';
 * var out = dtypes2enums( [ 'foo', 'bar' ] );
 * // returns [ null, null ]
 */
-declare function dtypes2enums( dtypes: ArrayLike<DataType> ): Array<number>;
+declare function dtypes2enums( dtypes: ArrayLike<DataType> ): Array<number|null>;
 
 
 // EXPORTS //

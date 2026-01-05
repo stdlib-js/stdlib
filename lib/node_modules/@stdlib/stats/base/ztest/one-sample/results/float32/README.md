@@ -282,9 +282,7 @@ var results = new Results({
     'alternative': 'two-sided'
 });
 
-var str = results.toString({
-    'format': 'linear'
-});
+var str = results.toString();
 console.log( str );
 ```
 
