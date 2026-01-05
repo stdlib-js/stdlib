@@ -106,13 +106,16 @@ static float identity( const float x ) {
 * @return             elapsed time in seconds
 */
 static double benchmark( int iterations, int len ) {
-	uint8_t m[ len ];
 	double elapsed;
-	float x[ len ];
-	float y[ len ];
+	uint8_t *m;
+	float *x;
+	float *y;
 	double t;
 	int i;
 
+	m = (uint8_t *)malloc( len * sizeof( uint8_t ) );
+	x = (float *)malloc( len * sizeof( float ) );
+	y = (float *)malloc( len * sizeof( float ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_float()*200.0f ) - 100.0f;
 		m[ i ] = i % 2;
@@ -131,6 +134,9 @@ static double benchmark( int iterations, int len ) {
 	if ( y[ i%len ] != y[ i%len ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( m );
+	free( x );
+	free( y );
 	return elapsed;
 }
 

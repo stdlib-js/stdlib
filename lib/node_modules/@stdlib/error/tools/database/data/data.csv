@@ -1225,3 +1225,7 @@
 "Jk","invalid argument. First argument must be a nonnegative integer or an array of nonnegative integers. Value: `%s`.","TypeError"
 "Jl","invalid option. `%s` option must be a supported order. Option: `%s`.","TypeError"
 "Jm","invalid argument. Argument %d cannot be safely cast to the desired output data type. Output data type: %s. Argument data type: %s.","TypeError"
+"Jn","invalid invocation. Must provide at least two arguments.","Error"
+"Jo","invalid invocation. Must provide at least one argument.","Error"
+"Jp","invalid argument. Last argument must be a one-dimensional ndarray. Value: `%s`.","TypeError"
+"Jq","invalid argument. Each ndarray argument must have fewer than two dimensions. Argument: %d.","TypeError"
