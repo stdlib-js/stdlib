@@ -36,44 +36,18 @@ Rounds each component of a double-precision complex floating-point number to the
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var v = croundn( new Complex128( -3.141592653589793, 3.141592653589793 ), -2 );
-// returns <Complex128>
-
-var re = real( v );
-// returns -3.14
-
-var im = imag( v );
-// returns 3.14
+// returns <Complex128>[ -3.14, 3.14 ]
 
 v = croundn( new Complex128( -3.141592653589793, 3.141592653589793 ), 0 );
-// returns <Complex128>
-
-re = real( v );
-// returns -3.0
-
-im = imag( v );
-// returns 3.0
+// returns <Complex128>[ -3.0, 3.0 ]
 
 v = croundn( new Complex128( -12368.0, 12368.0 ), 3 );
-// returns <Complex128>
-
-re = real( v );
-// returns -12000.0
-
-im = imag( v );
-// returns 12000.0
+// returns <Complex128>[ -12000.0, 12000.0 ]
 
 v = croundn( new Complex128( NaN, NaN ), 3 );
-// returns <Complex128>
-
-re = real( v );
-// returns NaN
-
-im = imag( v );
-// returns NaN
+// returns <Complex128>[ NaN, NaN ]
 ```
 
 </section>
@@ -88,21 +62,13 @@ im = imag( v );
 
     ```javascript
     var Complex128 = require( '@stdlib/complex/float64/ctor' );
-    var real = require( '@stdlib/complex/float64/real' );
-    var imag = require( '@stdlib/complex/float64/imag' );
 
     var x = 0.2 + 0.1;
     // returns 0.30000000000000004
 
     // Should round components to 0.3:
     var v = croundn( new Complex128( x, x ), -16 );
-    // returns <Complex128>
-
-    var re = real( v );
-    // returns 0.3000000000000001
-
-    var im = imag( v );
-    // returns 0.3000000000000001
+    // returns <Complex128>[ 0.3000000000000001, 0.3000000000000001 ]
     ```
 
 </section>

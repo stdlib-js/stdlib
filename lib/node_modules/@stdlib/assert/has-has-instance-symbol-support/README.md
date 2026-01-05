@@ -122,7 +122,7 @@ $ has-has-instance-symbol-support
 
 <section class="links">
 
-[mdn-has-instance-symbol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol.hasInstance
+[mdn-has-instance-symbol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/hasInstance
 
 </section>
 

@@ -40,7 +40,7 @@ limitations under the License.
 var spreadDimensions = require( '@stdlib/ndarray/base/spread-dimensions' );
 ```
 
-#### spreadDimensions( ndims, x, dims )
+#### spreadDimensions( ndims, x, dims, writable )
 
 Expands the shape of an array to a specified dimensionality by spreading its dimensions to specified dimension indices and inserting dimensions of size one for the remaining dimensions.
 
@@ -53,7 +53,7 @@ var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
 
 // Prepend a singleton dimension:
-var y = spreadDimensions( 3, x, [ 1, 2 ] );
+var y = spreadDimensions( 3, x, [ 1, 2 ], false );
 // returns <ndarray>
 
 var sh = y.shape;
@@ -63,7 +63,7 @@ var a = ndarray2array( y );
 // returns [ [ [ 1, 2 ], [ 3, 4 ] ] ]
 
 // Append a singleton dimension:
-y = spreadDimensions( 3, x, [ 0, 1 ] );
+y = spreadDimensions( 3, x, [ 0, 1 ], false );
 // returns <ndarray>
 
 sh = y.shape;
@@ -73,7 +73,7 @@ a = ndarray2array( y );
 // returns [ [ [ 1 ], [ 2 ] ], [ [ 3 ], [ 4 ] ] ]
 
 // Insert a singleton dimension:
-y = spreadDimensions( 3, x, [ 0, 2 ] );
+y = spreadDimensions( 3, x, [ 0, 2 ], false );
 // returns <ndarray>
 
 sh = y.shape;
@@ -82,6 +82,13 @@ sh = y.shape;
 a = ndarray2array( y );
 // returns [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ]
 ```
+
+The function accepts the following arguments:
+
+-   **ndims**: number of dimensions in the output ndarray. Must be greater than or equal to the number of dimensions in the input ndarray.
+-   **x**: input ndarray.
+-   **dims**: dimension indices specifying where to place the dimensions of the input ndarray. Must resolve to normalized indices arranged in ascending order.
+-   **writable**: boolean indicating whether a returned ndarray should be writable.
 
 </section>
 
@@ -95,6 +102,7 @@ a = ndarray2array( y );
 
 -   Each provided dimension index must reside on the interval `[-ndims, ndims-1]`. If provided a negative dimension index, the position at which to place a respective dimension is computed as `ndims + index`.
 -   Provided dimension indices must resolve to normalized dimension indices arranged in ascending order.
+-   The `writable` parameter **only** applies to ndarray constructors supporting **read-only** instances.
 
 </section>
 
@@ -121,7 +129,7 @@ var x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
 // returns <ndarray>
 
 // Spread dimensions:
-var y = spreadDimensions( 5, x, [ 1, 3 ] );
+var y = spreadDimensions( 5, x, [ 1, 3 ], false );
 // returns <ndarray>
 
 // Retrieve the shape:
