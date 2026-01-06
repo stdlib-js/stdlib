@@ -2564,7 +2564,7 @@ base.wrap,"\nbase.wrap( v:number, min:number, max:number )\n    Wraps a value to
 base.xlog1py,"\nbase.xlog1py( x:number, y:number )\n    Computes `x * ln(y+1)` so that the result is `0` if `x = 0`.\n"
 base.xlogy,"\nbase.xlogy( x:number, y:number )\n    Computes `x * ln(y)` so that the result is `0` if `x = 0`.\n"
 base.zeta,"\nbase.zeta( s:number )\n    Evaluates the Riemann zeta function as a function of a real variable `s`.\n"
-BERNDT_CPS_WAGES_1985,"\nBERNDT_CPS_WAGES_1985()\n    Returns a random sample of 534 workers from the Current Population Survey\n    (CPS) from 1985, including their wages and and other characteristics.\n"
+BERNDT_CPS_WAGES_1985,"\nBERNDT_CPS_WAGES_1985()\n    Returns a random sample of 534 workers from the Current Population Survey\n    (CPS) from 1985, including their wages and other characteristics.\n"
 bifurcate,"\nbifurcate( collection:Array|TypedArray|Object, [options:Object,] \n  filter:Array|TypedArray|Object )\n    Splits values into two groups.\n"
 bifurcateBy,"\nbifurcateBy( collection:Array|TypedArray|Object, [options:Object,] \n  predicate:Function )\n    Splits values into two groups according to a predicate function.\n"
 bifurcateByAsync,"\nbifurcateByAsync( collection:Array|TypedArray|Object, [options:Object,] \n  predicate:Function, done:Function )\n    Splits values into two groups according to a predicate function.\n"

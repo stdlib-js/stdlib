@@ -32,10 +32,10 @@
 * @param strideY  Y stride length
 * @return         cosine similarity
 */
-double API_SUFFIX( stdlib_strided_dcosine_similarity )( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY ) {
+double API_SUFFIX(stdlib_strided_dcosine_similarity)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
 	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
-	return API_SUFFIX( stdlib_strided_dcosine_similarity_ndarray )( N, X, strideX, ox, Y, strideY, oy );
+	return API_SUFFIX(stdlib_strided_dcosine_similarity_ndarray)( N, X, strideX, ox, Y, strideY, oy );
 }
 
 /**
@@ -50,7 +50,7 @@ double API_SUFFIX( stdlib_strided_dcosine_similarity )( const CBLAS_INT N, const
 * @param offsetY  starting index for Y
 * @return         cosine similarity
 */
-double API_SUFFIX( stdlib_strided_dcosine_similarity_ndarray )( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+double API_SUFFIX(stdlib_strided_dcosine_similarity_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
 	double ynrm;
 	double xnrm;
 	double dot;
