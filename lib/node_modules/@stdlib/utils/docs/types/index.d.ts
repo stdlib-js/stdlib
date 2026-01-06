@@ -589,7 +589,7 @@ interface Namespace {
 	*
 	* @example
 	* var p = ns.convertPath( '/c/foo/bar/beep.c', 'win32' );
-	* // returns 'c:\\foo\\bar\\beep.c'
+	* // returns 'c:\foo\bar\beep.c'
 	*
 	* @example
 	* var p = ns.convertPath( '/c/foo/bar/beep.c', 'mixed' );
@@ -1734,7 +1734,7 @@ interface Namespace {
 	*
 	* @example
 	* var str = ns.rescape( '[A-Z]*' );
-	* // returns '\\[A\\-Z\\]\\*'
+	* // returns '\[A\-Z\]\*'
 	*/
 	rescape: typeof rescape;
 
