@@ -1585,7 +1585,7 @@
 "@stdlib/assert/deep-has-own-property","@stdlib/assert-deep-has-own-property"
 "@stdlib/assert/deep-has-property","@stdlib/assert-deep-has-property"
 "@stdlib/utils/deep-pluck","@stdlib/utils-deep-pluck"
-"@stdlib/utils/deep-set","@stdlib/utils-deep-set"
+"@stdlib/object/deep-set","@stdlib/object-deep-set"
 "@stdlib/utils/define-memoized-property","@stdlib/utils-define-memoized-property"
 "@stdlib/utils/define-properties","@stdlib/utils-define-properties"
 "@stdlib/utils/define-property","@stdlib/utils-define-property"
