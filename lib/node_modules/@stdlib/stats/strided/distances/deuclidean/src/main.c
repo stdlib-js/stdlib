@@ -50,7 +50,7 @@ double API_SUFFIX(stdlib_strided_deuclidean)( const CBLAS_INT N, const double *X
 * @return         Euclidean distance
 */
 double API_SUFFIX(stdlib_strided_deuclidean_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
-	if ( N <= 0.0 ) {
+	if ( N <= 0 ) {
 		return 0.0/0.0; // NaN
 	}
 	return stdlib_strided_drrss_ndarray( N, X, strideX, offsetX, Y, strideY, offsetY );

@@ -122,7 +122,7 @@ var opts = {
     'returns': '*'
 };
 var out = bifurcateOwn( obj, opts, predicate );
-// e.g., returns [ [ [ 'a', 'beep' ], [ 'b', 'boop ], [ 'd', 'bar' ] ], [ [ 'c', 'foo' ] ] ]
+// e.g., returns [ [ [ 'a', 'beep' ], [ 'b', 'boop' ], [ 'd', 'bar' ] ], [ [ 'c', 'foo' ] ] ]
 ```
 
 To set the `predicate` execution context, provide a `thisArg`.
