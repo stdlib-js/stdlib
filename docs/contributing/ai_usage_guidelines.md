@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2025 The Stdlib Authors.
+Copyright (c) 2026 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -19,6 +19,20 @@ limitations under the License.
 -->
 
 <!-- lint disable expected-html-sections -->
+
+<!-- FIXME: the following two empty sections are merely to satisfy the linter for `expected-html-sections` which cannot, atm, be turned off -->
+
+<section class="usage">
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
 
 # Guidelines for Using AI in stdlib Contributions
 
