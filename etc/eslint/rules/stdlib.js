@@ -4676,12 +4676,12 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 *
 * @example
 * // Bad...
-* var foo = require( 'foo/bar.js' );
+* var foo = require( '@stdlib/math/base/special/abs' );
 * var baz = require( '../baz.js' );
 *
 * @example
 * // Good...
-* var foo = require( './foo/bar.js' );
+* var foo = require( '@stdlib/math/base/special/abs' );
 * var baz = require( './../baz.js' );
 */
 rules[ 'stdlib/require-leading-slash' ] = 'error';
