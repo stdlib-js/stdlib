@@ -1498,7 +1498,7 @@
 "@stdlib/utils/bifurcate",bifurcate
 "@stdlib/utils/bifurcate-by",bifurcateBy
 "@stdlib/utils/async/bifurcate-by",bifurcateByAsync
-"@stdlib/utils/bifurcate-in",bifurcateIn
+"@stdlib/object/bifurcate-in",bifurcateIn
 "@stdlib/utils/bifurcate-own",bifurcateOwn
 "@stdlib/bigint/ctor",BigInt
 "@stdlib/stats/binomial-test",binomialTest
