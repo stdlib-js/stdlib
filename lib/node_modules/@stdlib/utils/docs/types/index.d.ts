@@ -4073,7 +4073,7 @@ interface Namespace {
 	*
 	* function done( error ) {
 	*     if ( error ) {
-	*         throw error;
+	*         console.log( error.message );
 	*     }
 	* }
 	*
