@@ -129,10 +129,7 @@ interface AnyBy {
 	*
 	* // Perform reduction:
 	* var out = anyBy( x, isPositive );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): boolndarray;
 
@@ -172,10 +169,7 @@ interface AnyBy {
 	*
 	* // Perform reduction:
 	* var out = anyBy( x, {}, isPositive );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, options: Options, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): boolndarray;
 
@@ -219,10 +213,7 @@ interface AnyBy {
 	*
 	* // Perform reduction:
 	* var out = anyBy.assign( x, y, isPositive );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends ndarray = ndarray, ThisArg = unknown>( x: U, y: V, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 
@@ -268,10 +259,7 @@ interface AnyBy {
 	*
 	* // Perform reduction:
 	* var out = anyBy.assign( x, y, {}, isPositive );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends ndarray = ndarray, ThisArg = unknown>( x: U, y: V, options: BaseOptions, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 }
@@ -312,10 +300,7 @@ interface AnyBy {
 *
 * // Perform reduction:
 * var out = anyBy( x, isPositive );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns true
+* // returns <ndarray>[ true ]
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -348,10 +333,7 @@ interface AnyBy {
 *
 * // Perform reduction:
 * var out = anyBy.assign( x, y, isPositive );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns true
+* // returns <ndarray>[ true ]
 */
 declare var anyBy: AnyBy;
 

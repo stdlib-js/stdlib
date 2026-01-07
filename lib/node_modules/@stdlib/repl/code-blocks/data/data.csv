@@ -4322,7 +4322,6 @@ pad,"var out = pad( 'a', 5 )\nout = pad( 'a', 10, { 'lpad': 'b' } )\nout = pad( 
 padjust,"var pvalues = [ 0.008, 0.03, 0.123, 0.6, 0.2 ];\nvar out = padjust( pvalues, 'bh' )\nout = padjust( pvalues, 'bonferroni' )\nout = padjust( pvalues, 'by' )\nout = padjust( pvalues, 'holm' )\nout = padjust( pvalues, 'hommel' )\n"
 papply,"function add( x, y ) { return x + y; };\nvar add2 = papply( add, 2 );\nvar sum = add2( 3 )\n"
 papplyRight,"function say( text, name ) { return text + ', ' + name + '.'; };\nvar toGrace = papplyRight( say, 'Grace Hopper' );\nvar str = toGrace( 'Hello' )\nstr = toGrace( 'Thank you' )\n"
-parallel,"function done( error ) { if ( error ) { throw error; } };\nvar files = [ './a.js', './b.js' ];\nparallel( files, done );\nvar opts = { 'workers': 8 };\nparallel( files, opts, done );\n"
 parseJSON,"var obj = parseJSON( '{\"beep\":\"boop\"}' )\nfunction reviver( key, value ) {\n if ( key === '' ) { return value; }\n if ( key === 'beep' ) { return value; }\n };\nvar str = '{\"beep\":\"boop\",\"a\":\"b\"}';\nvar out = parseJSON( str, reviver )\n"
 pascalcase,"var out = pascalcase( 'Hello World!' )\nout = pascalcase( 'beep boop' )\n"
 PATH_DELIMITER,"PATH_DELIMITER\nvar path = '/usr/bin:/bin:/usr/sbin';\nvar parts = path.split( PATH_DELIMITER )\npath = 'C:\\Windows\\system32;C:\\Windows';\nparts = path.split( PATH_DELIMITER )\n"
