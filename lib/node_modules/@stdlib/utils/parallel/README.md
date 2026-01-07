@@ -222,11 +222,6 @@ var writeFileSync = require( '@stdlib/fs/write-file' ).sync;
 var unlinkSync = require( '@stdlib/fs/unlink' ).sync;
 var parallel = require( '@stdlib/utils/parallel' );
 
-var nFiles = 100;
-var files;
-var opts;
-var dir;
-
 function template( id ) {
     var file = '';
 
@@ -259,16 +254,42 @@ function createScripts( dir, nFiles ) {
     var files;
     var i;
 
-    files = new Array( nFiles );
+    files = [];
     for ( i = 0; i < nFiles; i++ ) {
         content = template( i.toString() );
         fpath = path.join( dir, i+'.js' );
         writeFileSync( fpath, content, {
             'encoding': 'utf8'
         });
-        files[ i ] = fpath;
+        files.push( fpath );
     }
     return files;
+}
+
+var nFiles = 10;
+
+// Make a temporary directory to store files:
+var dir = createDir();
+
+// Create temporary files:
+var files = createScripts( dir, nFiles );
+
+// Set the runner options:
+var opts = {
+    'concurrency': 3,
+    'workers': 3,
+    'ordered': false
+};
+
+// Run all temporary scripts:
+parallel( files, opts, done );
+
+function done( error ) {
+    if ( error ) {
+        console.log( error.message );
+    }
+    cleanup();
+    console.log( 'Done!' );
 }
 
 function cleanup() {
@@ -281,30 +302,6 @@ function cleanup() {
     // Remove temporary directory:
     fs.rmdirSync( dir );
 }
-
-function done( error ) {
-    if ( error ) {
-        throw error;
-    }
-    cleanup();
-    console.log( 'Done!' );
-}
-
-// Make a temporary directory to store files...
-dir = createDir();
-
-// Create temporary files...
-files = createScripts( dir, nFiles );
-
-// Set the runner options:
-opts = {
-    'concurrency': 3,
-    'workers': 3,
-    'ordered': false
-};
-
-// Run all temporary scripts:
-parallel( files, opts, done );
 ```
 
 </section>
