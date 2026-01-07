@@ -44,6 +44,7 @@ Artificial Intelligence (AI) and Large Language Models (LLMs) tools are rapidly 
 -   Asking for suggestions or improvements (always using manual validation).
 -   Setting up test fixtures.
 -   Proofreading documentation or code comments.
+-   Code review _after_ manual implementation.
 
 ## Dos and Don'ts
 
