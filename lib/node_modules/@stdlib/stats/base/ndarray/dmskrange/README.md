@@ -20,7 +20,7 @@ limitations under the License.
 
 # dmskrange
 
-> Calculate the [range][range] of one-dimensional double-precision floating-point ndarray according to a mask.
+> Calculate the [range][range] of a one-dimensional double-precision floating-point ndarray according to a mask.
 
 <section class="intro">
 

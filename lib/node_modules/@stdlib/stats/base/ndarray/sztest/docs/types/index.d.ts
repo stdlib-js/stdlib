@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { float32ndarray, ndarray } from '@stdlib/types/ndarray';
+import { float32ndarray, int8ndarray, ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes a one-sample Z-test for a one-dimensional single-precision floating-point ndarray.
@@ -79,7 +79,7 @@ import { float32ndarray, ndarray } from '@stdlib/types/ndarray';
 *
 * console.log( v.get().toString() );
 */
-declare function sztest<T extends ndarray>( arrays: [ float32ndarray, T, float32ndarray, float32ndarray, float32ndarray, float32ndarray ] ): T;
+declare function sztest<T extends ndarray>( arrays: [ float32ndarray, T, int8ndarray, float32ndarray, float32ndarray, float32ndarray ] ): T;
 
 
 // EXPORTS //

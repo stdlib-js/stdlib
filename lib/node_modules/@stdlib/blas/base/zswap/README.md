@@ -325,7 +325,7 @@ int main( void ) {
 
 [blas]: http://www.netlib.org/blas
 
-[zswap]: https://netlib.org/lapack/explore-html-3.6.1/d2/df9/group__complex16__blas__level1_ga13a187010a0cae1fef2820072404e857.html#ga13a187010a0cae1fef2820072404e857
+[zswap]: https://netlib.org/lapack/explore-html/d7/d51/group__swap_ga8e324819e4cd92b6fde3ae40c83a5cb3.html
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 

@@ -42,7 +42,7 @@ limitations under the License.
 var prependSingletonDimensions = require( '@stdlib/ndarray/base/prepend-singleton-dimensions' );
 ```
 
-#### prependSingletonDimensions( x, n )
+#### prependSingletonDimensions( x, n, writable )
 
 Returns an ndarray with a specified number of prepended singleton dimensions (i.e., dimensions whose size is equal to `1`).
 
@@ -53,15 +53,18 @@ var array = require( '@stdlib/ndarray/array' );
 
 // Create a 2x2 ndarray:
 var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
-// returns <ndarray>
+// returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 
 // Prepend singleton dimensions:
-var y = prependSingletonDimensions( x, 3 );
-// returns <ndarray>
-
-var sh = y.shape;
-// returns [ 1, 1, 1, 2, 2 ]
+var y = prependSingletonDimensions( x, 3, false );
+// returns <ndarray>[ [ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ] ]
 ```
+
+The function accepts the following arguments:
+
+-   **x**: input ndarray.
+-   **n**: number of singleton dimensions to prepend.
+-   **writable**: boolean indicating whether a returned ndarray should be writable.
 
 </section>
 
@@ -86,31 +89,15 @@ var sh = y.shape;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var array = require( '@stdlib/ndarray/array' );
-var numel = require( '@stdlib/ndarray/base/numel' );
-var ind2sub = require( '@stdlib/ndarray/ind2sub' );
+var uniform = require( '@stdlib/random/uniform' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var prependSingletonDimensions = require( '@stdlib/ndarray/base/prepend-singleton-dimensions' );
 
-// Create a 2-dimensional array:
-var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
-// returns <ndarray>
+var x = uniform( [ 3, 3, 3 ], -10.0, 10.0 );
+console.log( ndarray2array( x ) );
 
-// Prepend singleton dimensions:
-var y = prependSingletonDimensions( x, 3 );
-// returns <ndarray>
-
-// Retrieve the shape:
-var sh = y.shape;
-// returns [ 1, 1, 1, 2, 2 ]
-
-// Retrieve the number of elements:
-var N = numel( sh );
-
-// Loop through the array elements...
-var i;
-for ( i = 0; i < N; i++ ) {
-    console.log( 'Y[%s] = %d', ind2sub( sh, i ).join( ', ' ), y.iget( i ) );
-}
+var y = prependSingletonDimensions( x, 3, false );
+console.log( ndarray2array( y ) );
 ```
 
 </section>
