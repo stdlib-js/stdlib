@@ -41,7 +41,7 @@ var opts = {
 
 // MAIN //
 
-bench( format( '%s::stdlib:number/float64/base/sub:value=number' , pkg ), opts, function benchmark( b ) {
+bench( format( '%s::stdlib:number/float64/base/sub:value=number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var z;
@@ -69,7 +69,7 @@ bench( format( '%s::stdlib:number/float64/base/sub:value=number' , pkg ), opts, 
 
 // TODO: add math/ops/sub benchmarks
 
-bench( format( '%s::mathjs:subtract:value=number' , pkg ), opts, function benchmark( b ) {
+bench( format( '%s::mathjs:subtract:value=number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var z;
