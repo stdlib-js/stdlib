@@ -30,6 +30,7 @@ var format = require( '@stdlib/string/format' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
 
+
 // VARIABLES //
 
 var mathjs = tryRequire( resolve( __dirname, '..', 'node_modules', 'mathjs' ) );
