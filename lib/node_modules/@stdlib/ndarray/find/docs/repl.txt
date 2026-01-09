@@ -1,6 +1,6 @@
 
 {{alias}}( x[, options], predicate[, thisArg] )
-    Return a new ndarray containing the first elements which pass a test
+    Returns a new ndarray containing the first elements which pass a test
     implemented by a predicate function along one or more ndarray dimensions.
 
     Parameters
@@ -54,7 +54,7 @@
 
 {{alias}}.assign( x, out[, options], predicate[, thisArg] )
     Finds the first elements which pass a test implemented by a predicate
-    function along one or more ndarray dimensions and assign results to a
+    function along one or more ndarray dimensions and assigns results to a
     provided output ndarray.
 
     Parameters
