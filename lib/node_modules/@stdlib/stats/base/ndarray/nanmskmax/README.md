@@ -20,7 +20,7 @@ limitations under the License.
 
 # nanmskmax
 
-> Calculate the maximum value of a one-dimensional ndarray according to a mask, ignoring NaN values.
+> Calculate the maximum value of a one-dimensional ndarray according to a mask, ignoring `NaN` values.
 
 <section class="intro">
 

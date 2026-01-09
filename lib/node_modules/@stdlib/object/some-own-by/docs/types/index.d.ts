@@ -25,7 +25,7 @@
 *
 * @returns boolean indicating whether an own property in an object passes a test
 */
-type Nullary = () => boolean;
+type Nullary<U> = ( this: U ) => boolean;
 
 /**
 * Checks whether an own property in an object passes a test.
@@ -33,26 +33,16 @@ type Nullary = () => boolean;
 * @param value - object value
 * @returns boolean indicating whether an own property in an object passes a test
 */
-type Unary<T> = ( value: T ) => boolean;
-
-/**
-* Checks whether an own property in an object passes a test.
-*
-* @param value - object value
-* @param key - object key
-* @returns boolean indicating whether an own property in an object passes a test
-*/
-type Binary<T> = ( value: T, key: keyof any ) => boolean;
+type Unary<T, U> = ( this: U, value: T ) => boolean;
 
 /**
 * Checks whether an own property in an object passes a test.
 *
 * @param value - object value
 * @param key - object key
-* @param obj - input object
 * @returns boolean indicating whether an own property in an object passes a test
 */
-type Ternary<T> = ( value: T, key: keyof any, obj: Record<keyof any, any> ) => boolean;
+type Binary<T, U> = ( this: U, value: T, key: keyof any ) => boolean;
 
 /**
 * Checks whether an own property in an object passes a test.
@@ -62,7 +52,17 @@ type Ternary<T> = ( value: T, key: keyof any, obj: Record<keyof any, any> ) => b
 * @param obj - input object
 * @returns boolean indicating whether an own property in an object passes a test
 */
-type Predicate<T> = Nullary | Unary<T> | Binary<T> | Ternary<T>;
+type Ternary<T, U> = ( this: U, value: T, key: keyof any, obj: Record<keyof any, any> ) => boolean;
+
+/**
+* Checks whether an own property in an object passes a test.
+*
+* @param value - object value
+* @param key - object key
+* @param obj - input object
+* @returns boolean indicating whether an own property in an object passes a test
+*/
+type Predicate<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 
 /**
 * Tests whether an object contains at least `n` own properties which pass a test implemented by a predicate function.
@@ -82,6 +82,7 @@ type Predicate<T> = Nullary | Unary<T> | Binary<T> | Ternary<T>;
 * @param obj - input object
 * @param n - number of properties
 * @param predicate - test function
+* @param thisArg - execution context
 * @returns boolean indicating whether an object contains at least `n` own properties which pass a test
 *
 * @example
@@ -94,7 +95,7 @@ type Predicate<T> = Nullary | Unary<T> | Binary<T> | Ternary<T>;
 * var bool = someOwnBy( obj, 2, isNegative );
 * // returns true
 */
-declare function someOwnBy<T = unknown>( obj: Record<keyof any, any>, n: number, predicate: Predicate<T> ): boolean;
+declare function someOwnBy<T = unknown, U = unknown>( obj: Record<keyof any, any>, n: number, predicate: Predicate<T, U>, thisArg?: ThisParameterType<Predicate<T, U>> ): boolean;
 
 
 // EXPORTS //

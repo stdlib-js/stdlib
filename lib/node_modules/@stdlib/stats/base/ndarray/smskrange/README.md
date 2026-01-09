@@ -88,7 +88,7 @@ var uniform = require( '@stdlib/random/array/uniform' );
 var bernoulli = require( '@stdlib/random/array/bernoulli' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
-var mskrange = require( '@stdlib/stats/base/ndarray/mskrange' );
+var smskrange = require( '@stdlib/stats/base/ndarray/smskrange' );
 
 var xbuf = uniform( 10, -50.0, 50.0, {
     'dtype': 'float32'
@@ -102,7 +102,7 @@ var maskbuf = bernoulli( xbuf.length, 0.2, {
 var mask = new ndarray( 'uint8', maskbuf, [ maskbuf.length ], [ 1 ], 0, 'row-major' );
 console.log( ndarray2array( mask ) );
 
-var v = mskrange( [ x, mask ] );
+var v = smskrange( [ x, mask ] );
 console.log( v );
 ```
 
