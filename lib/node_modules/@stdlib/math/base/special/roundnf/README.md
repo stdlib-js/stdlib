@@ -93,7 +93,7 @@ var n = discreteUniform( 100, -5, 0, {
     'dtype': 'int32'
 });
 
-logEachMap( 'x: %0.8f. Number of decimals: %d. Rounded: %0.8f', x, n, roundnf );
+logEachMap( 'x: %0.8f. Number of decimals: %d. Rounded: %0.8f.', x, n, roundnf );
 ```
 
 </section>
