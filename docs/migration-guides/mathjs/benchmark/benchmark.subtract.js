@@ -26,9 +26,9 @@ var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filledBy = require( '@stdlib/array/filled-by' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var base = require( '@stdlib/number/float64/base/sub' );
+var format = require( '@stdlib/string/format' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
-var format = require( '@stdlib/string/format' );
 
 // VARIABLES //
 
