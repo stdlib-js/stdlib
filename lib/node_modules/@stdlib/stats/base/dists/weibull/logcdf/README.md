@@ -139,22 +139,18 @@ y = mylogcdf( 8.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var logcdf = require( '@stdlib/stats/base/dists/weibull/logcdf' );
 
-var lambda;
-var k;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var lambda = uniform( 10, 0.0, 10.0, opts );
+var k = uniform( 10, 0.0, 10.0, opts );
+var x = uniform( 10, 0.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = randu() * 10.0;
-    lambda = randu() * 10.0;
-    k = randu() * 10.0;
-    y = logcdf( x, lambda, k );
-    console.log( 'x: %d, k: %d, λ: %d, ln(F(x;k,λ)): %d', x, k, lambda, y );
-}
+logEachMap( 'x: %0.4f, k: %0.4f, λ: %0.4f, ln(F(x;k,λ)): %0.4f', x, k, lambda, logcdf );
 ```
 
 </section>

@@ -36,44 +36,18 @@ Rounds each component of a double-precision complex floating-point number to the
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var v = cround( new Complex128( -4.2, 5.5 ) );
-// returns <Complex128>
-
-var re = real( v );
-// returns -4.0
-
-var im = imag( v );
-// returns 6.0
+// returns <Complex128>[ -4.0, 6.0 ]
 
 v = cround( new Complex128( 9.99999, 0.1 ) );
-// returns <Complex128>
-
-re = real( v );
-// returns 10.0
-
-im = imag( v );
-// returns 0.0
+// returns <Complex128>[ 10.0, 0.0 ]
 
 v = cround( new Complex128( 0.0, 0.0 ) );
-// returns <Complex128>
-
-re = real( v );
-// returns 0.0
-
-im = imag( v );
-// returns 0.0
+// returns <Complex128>[ 0.0, 0.0 ]
 
 v = cround( new Complex128( NaN, NaN ) );
-// returns <Complex128>
-
-re = real( v );
-// returns NaN
-
-im = imag( v );
-// returns NaN
+// returns <Complex128>[ NaN, NaN ]
 ```
 
 </section>

@@ -26,32 +26,44 @@ import prependSingletonDimensions = require( './index' );
 {
 	const x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 
-	prependSingletonDimensions( x, 3 ); // $ExpectType ndarray
+	prependSingletonDimensions( x, 3, false ); // $ExpectType ndarray
 }
 
 // The compiler throws an error if the function is not provided a first argument which is an ndarray...
 {
-	prependSingletonDimensions( '5', 3 ); // $ExpectError
-	prependSingletonDimensions( 5, 3 ); // $ExpectError
-	prependSingletonDimensions( true, 3 ); // $ExpectError
-	prependSingletonDimensions( false, 3 ); // $ExpectError
-	prependSingletonDimensions( null, 3 ); // $ExpectError
-	prependSingletonDimensions( {}, 3 ); // $ExpectError
-	prependSingletonDimensions( [ '5' ], 3 ); // $ExpectError
-	prependSingletonDimensions( ( x: number ): number => x, 3 ); // $ExpectError
+	prependSingletonDimensions( '5', 3, false ); // $ExpectError
+	prependSingletonDimensions( 5, 3, false ); // $ExpectError
+	prependSingletonDimensions( true, 3, false ); // $ExpectError
+	prependSingletonDimensions( false, 3, false ); // $ExpectError
+	prependSingletonDimensions( null, 3, false ); // $ExpectError
+	prependSingletonDimensions( {}, 3, false ); // $ExpectError
+	prependSingletonDimensions( [ '5' ], 3, false ); // $ExpectError
+	prependSingletonDimensions( ( x: number ): number => x, 3, false ); // $ExpectError
 }
 
 // The compiler throws an error if the function is not provided a second argument which is a number...
 {
 	const x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 
-	prependSingletonDimensions( x, '5' ); // $ExpectError
-	prependSingletonDimensions( x, true ); // $ExpectError
-	prependSingletonDimensions( x, false ); // $ExpectError
-	prependSingletonDimensions( x, null ); // $ExpectError
-	prependSingletonDimensions( x, {} ); // $ExpectError
-	prependSingletonDimensions( x, [ '5' ] ); // $ExpectError
-	prependSingletonDimensions( x, ( x: number ): number => x ); // $ExpectError
+	prependSingletonDimensions( x, '5', false ); // $ExpectError
+	prependSingletonDimensions( x, true, false ); // $ExpectError
+	prependSingletonDimensions( x, false, false ); // $ExpectError
+	prependSingletonDimensions( x, null, false ); // $ExpectError
+	prependSingletonDimensions( x, {}, false ); // $ExpectError
+	prependSingletonDimensions( x, [ '5' ], false ); // $ExpectError
+	prependSingletonDimensions( x, ( x: number ): number => x, false ); // $ExpectError
+}
+
+// The compiler throws an error if the function is not provided a third argument which is a boolean...
+{
+	const x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+
+	prependSingletonDimensions( x, 3, '5' ); // $ExpectError
+	prependSingletonDimensions( x, 3, 5 ); // $ExpectError
+	prependSingletonDimensions( x, 3, null ); // $ExpectError
+	prependSingletonDimensions( x, 3, {} ); // $ExpectError
+	prependSingletonDimensions( x, 3, [ '5' ] ); // $ExpectError
+	prependSingletonDimensions( x, 3, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -60,5 +72,6 @@ import prependSingletonDimensions = require( './index' );
 
 	prependSingletonDimensions(); // $ExpectError
 	prependSingletonDimensions( x ); // $ExpectError
-	prependSingletonDimensions( x, 3, [ 1, 2, 3 ], [ 2, 3 ] ); // $ExpectError
+	prependSingletonDimensions( x, 3 ); // $ExpectError
+	prependSingletonDimensions( x, 3, false, [ 1, 2, 3 ], [ 2, 3 ] ); // $ExpectError
 }

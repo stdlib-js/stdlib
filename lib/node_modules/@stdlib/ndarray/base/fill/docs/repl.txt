@@ -11,7 +11,7 @@
     Parameters
     ----------
     x: ndarrayLike
-        Input ndarray-like object.
+        Input ndarray.
 
     value: any
         Scalar value. Must be able to safely cast to the input ndarray data
@@ -20,15 +20,20 @@
         same kind (e.g., a scalar double-precision floating-point number can be
         used to fill a 'float32' input ndarray).
 
+
+    Returns
+    -------
+    out: ndarrayLike
+        Input ndarray.
+
     Examples
     --------
     > var opts = { 'dtype': 'float64' };
     > var x = {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ], opts );
-    > x.get( 0, 0 )
-    0.0
-    > {{alias}}( x, 10.0 );
-    > x.get( 0, 0 )
-    10.0
+    > var out = {{alias}}( x, 10.0 )
+    <ndarray>[ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
+    > var bool = ( out === x )
+    true
 
     See Also
     --------
