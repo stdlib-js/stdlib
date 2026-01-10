@@ -1581,7 +1581,7 @@
 "@stdlib/streams/node/debug","@stdlib/streams-node-debug"
 "@stdlib/utils/decorate-after","@stdlib/utils-decorate-after"
 "@stdlib/assert/deep-equal","@stdlib/assert-deep-equal"
-"@stdlib/utils/deep-get","@stdlib/utils-deep-get"
+"@stdlib/object/deep-get","@stdlib/object-deep-get"
 "@stdlib/assert/deep-has-own-property","@stdlib/assert-deep-has-own-property"
 "@stdlib/assert/deep-has-property","@stdlib/assert-deep-has-property"
 "@stdlib/utils/deep-pluck","@stdlib/utils-deep-pluck"
