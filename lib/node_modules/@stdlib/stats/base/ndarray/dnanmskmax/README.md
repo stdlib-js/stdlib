@@ -61,7 +61,6 @@ The function has the following parameters:
 
 If a `mask` array element is `0`, the corresponding element in the input ndarray is considered valid and **included** in computation. If a `mask` array element is `1`, the corresponding element in the input ndarray is considered invalid/missing and **excluded** from computation.
 
-
 </section>
 
 <!-- /.usage -->
