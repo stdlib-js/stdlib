@@ -32,6 +32,7 @@ import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndar
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float64' );
@@ -42,7 +43,7 @@ import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndar
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -51,7 +52,7 @@ import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndar
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 *
 * arr = ndarray2array( y );
@@ -69,6 +70,7 @@ declare function fliplr( x: float64ndarray, writable: boolean ): float64ndarray;
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float32' );
@@ -79,7 +81,7 @@ declare function fliplr( x: float64ndarray, writable: boolean ): float64ndarray;
 * var x = ndarray( 'float32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -88,7 +90,7 @@ declare function fliplr( x: float64ndarray, writable: boolean ): float64ndarray;
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 *
 * arr = ndarray2array( y );
@@ -106,6 +108,7 @@ declare function fliplr( x: float32ndarray, writable: boolean ): float32ndarray;
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int32' );
@@ -116,7 +119,7 @@ declare function fliplr( x: float32ndarray, writable: boolean ): float32ndarray;
 * var x = ndarray( 'int32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -125,7 +128,7 @@ declare function fliplr( x: float32ndarray, writable: boolean ): float32ndarray;
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 *
 * arr = ndarray2array( y );
@@ -143,6 +146,7 @@ declare function fliplr( x: int32ndarray, writable: boolean ): int32ndarray;
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int16' );
@@ -153,7 +157,7 @@ declare function fliplr( x: int32ndarray, writable: boolean ): int32ndarray;
 * var x = ndarray( 'int16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -162,7 +166,7 @@ declare function fliplr( x: int32ndarray, writable: boolean ): int32ndarray;
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 *
 * arr = ndarray2array( y );
@@ -180,6 +184,7 @@ declare function fliplr( x: int16ndarray, writable: boolean ): int16ndarray;
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'int8' );
@@ -190,7 +195,7 @@ declare function fliplr( x: int16ndarray, writable: boolean ): int16ndarray;
 * var x = ndarray( 'int8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -199,7 +204,7 @@ declare function fliplr( x: int16ndarray, writable: boolean ): int16ndarray;
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 *
 * arr = ndarray2array( y );
@@ -217,6 +222,7 @@ declare function fliplr( x: int8ndarray, writable: boolean ): int8ndarray;
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint32' );
@@ -227,7 +233,7 @@ declare function fliplr( x: int8ndarray, writable: boolean ): int8ndarray;
 * var x = ndarray( 'uint32', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -236,7 +242,7 @@ declare function fliplr( x: int8ndarray, writable: boolean ): int8ndarray;
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 *
 * arr = ndarray2array( y );
@@ -254,6 +260,7 @@ declare function fliplr( x: uint32ndarray, writable: boolean ): uint32ndarray;
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint16' );
@@ -264,7 +271,7 @@ declare function fliplr( x: uint32ndarray, writable: boolean ): uint32ndarray;
 * var x = ndarray( 'uint16', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -273,7 +280,7 @@ declare function fliplr( x: uint32ndarray, writable: boolean ): uint32ndarray;
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 *
 * arr = ndarray2array( y );
@@ -291,6 +298,7 @@ declare function fliplr( x: uint16ndarray, writable: boolean ): uint16ndarray;
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8' );
@@ -301,7 +309,7 @@ declare function fliplr( x: uint16ndarray, writable: boolean ): uint16ndarray;
 * var x = ndarray( 'uint8', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -310,7 +318,7 @@ declare function fliplr( x: uint16ndarray, writable: boolean ): uint16ndarray;
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 *
 * arr = ndarray2array( y );
@@ -328,6 +336,7 @@ declare function fliplr( x: uint8ndarray, writable: boolean ): uint8ndarray;
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1, 2, 3, 4, 5, 6 ], 'uint8c' );
@@ -338,7 +347,7 @@ declare function fliplr( x: uint8ndarray, writable: boolean ): uint8ndarray;
 * var x = ndarray( 'uint8c', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -347,7 +356,7 @@ declare function fliplr( x: uint8ndarray, writable: boolean ): uint8ndarray;
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 *
 * arr = ndarray2array( y );
@@ -365,6 +374,7 @@ declare function fliplr( x: uint8cndarray, writable: boolean ): uint8cndarray;
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex128' );
@@ -375,13 +385,13 @@ declare function fliplr( x: uint8cndarray, writable: boolean ): uint8cndarray;
 * var x = ndarray( 'complex128', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 */
 declare function fliplr( x: complex128ndarray, writable: boolean ): complex128ndarray;
@@ -396,6 +406,7 @@ declare function fliplr( x: complex128ndarray, writable: boolean ): complex128nd
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ], 'complex64' );
@@ -406,13 +417,13 @@ declare function fliplr( x: complex128ndarray, writable: boolean ): complex128nd
 * var x = ndarray( 'complex64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 */
 declare function fliplr( x: complex64ndarray, writable: boolean ): complex64ndarray;
@@ -427,6 +438,7 @@ declare function fliplr( x: complex64ndarray, writable: boolean ): complex64ndar
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -437,7 +449,7 @@ declare function fliplr( x: complex64ndarray, writable: boolean ): complex64ndar
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -446,7 +458,7 @@ declare function fliplr( x: complex64ndarray, writable: boolean ): complex64ndar
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 *
 * arr = ndarray2array( y );
@@ -464,6 +476,7 @@ declare function fliplr<T = unknown>( x: genericndarray<T>, writable: boolean ):
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -474,7 +487,7 @@ declare function fliplr<T = unknown>( x: genericndarray<T>, writable: boolean ):
 * var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var arr = ndarray2array( x );
@@ -483,7 +496,7 @@ declare function fliplr<T = unknown>( x: genericndarray<T>, writable: boolean ):
 * var y = fliplr( x, false );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 *
 * arr = ndarray2array( y );
