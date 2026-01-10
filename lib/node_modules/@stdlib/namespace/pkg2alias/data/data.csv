@@ -1499,7 +1499,7 @@
 "@stdlib/utils/bifurcate-by",bifurcateBy
 "@stdlib/utils/async/bifurcate-by",bifurcateByAsync
 "@stdlib/object/bifurcate-in",bifurcateIn
-"@stdlib/utils/bifurcate-own",bifurcateOwn
+"@stdlib/object/bifurcate-own",bifurcateOwn
 "@stdlib/bigint/ctor",BigInt
 "@stdlib/stats/binomial-test",binomialTest
 "@stdlib/boolean/ctor",Boolean
