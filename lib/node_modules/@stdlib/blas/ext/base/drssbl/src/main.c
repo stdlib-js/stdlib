@@ -42,10 +42,10 @@ static const double TSML = 1.4916681462400413E-154;
 * @param strideY      stride length of `Y`
 * @return             output value
 */
-double API_SUFFIX( stdlib_strided_drssbl )( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY ) {
+double API_SUFFIX(stdlib_strided_drssbl)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY ) {
 	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
 	const CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
-	return API_SUFFIX( stdlib_strided_drssbl_ndarray )( N, X, strideX, ox, Y, strideY, oy );
+	return API_SUFFIX(stdlib_strided_drssbl_ndarray)( N, X, strideX, ox, Y, strideY, oy );
 }
 
 /**
@@ -60,7 +60,7 @@ double API_SUFFIX( stdlib_strided_drssbl )( const CBLAS_INT N, const double *X, 
 * @param offsetY      starting index for `Y`
 * @return             output value
 */
-double API_SUFFIX( stdlib_strided_drssbl_ndarray )( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
+double API_SUFFIX(stdlib_strided_drssbl_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
 	bool notbig;
 	double sumsq;
 	double scale;

@@ -81,8 +81,8 @@ var Float64Array = require( '@stdlib/array/float64' );
 var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
 var y = new Float64Array( [ 2.0, 1.0, 2.0, 1.0, -2.0, 2.0, 3.0, 4.0 ] );
 
-var z = drssbl( x.length, x, 1, y, 1 );
-// returns 72.0
+var z = drssbl( 4, x, 2, y, 2 );
+// returns 2.0
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -236,7 +236,7 @@ Computes the [residual sum of squares][wikipedia-residual-sum-of-squares] of two
 const double x[] = { 1.0, -2.0, 2.0 };
 const double y[] = { 1.0, 1.0, -4.0 };
 
-double v = stdlib_strided_drssbl_ndarray( 3, x, 1, 0, 1, 0 );
+double v = stdlib_strided_drssbl_ndarray( 3, x, 1, 0, y, 1, 0 );
 // returns 45.0
 ```
 

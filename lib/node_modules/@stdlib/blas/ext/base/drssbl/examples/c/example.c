@@ -31,7 +31,7 @@ int main( void ) {
 	const int strideX = 1;
 	const int strideY = 1;
 
-	// Compute the square root of the residual sum of squares of `x` and `y`:
+	// Compute the residual sum of squares of `x` and `y`:
 	double d = stdlib_strided_drssbl( N, x, strideX, y, strideY );
 
 	// Print the result:
@@ -41,7 +41,7 @@ int main( void ) {
 	const int offsetX = 1;
 	const int offsetY = 1;
 
-	// Compute the square root of the residual sum of squares of `x` and `y` with offsets:
+	// Compute the residual sum of squares of `x` and `y` with offsets:
 	d = stdlib_strided_drssbl_ndarray( N, x, strideX, offsetX, y, strideY, offsetY );
 
 	// Print the result:

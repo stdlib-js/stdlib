@@ -1570,14 +1570,14 @@ interface Namespace {
 	everyBy: typeof everyBy;
 
 	/**
-	* Expands the shape of an array by inserting a new dimension of size one at a specified axis.
+	* Expands the shape of an array by inserting a new dimension of size one at a specified dimension index.
 	*
 	* ## Notes
 	*
-	* -   A provided axis must reside on the interval `[-N-1, N]`, where `N` is the rank (i.e., number of dimensions) of the provided input array. If provided a negative `axis`, the axis position at which to insert a singleton dimension is computed as `N + axis + 1`. Hence, if provided `-1`, the resolved axis position is `N` (i.e., a singleton dimension is appended to the input array).
+	* -   A provided dimension index must reside on the interval `[-N-1, N]`, where `N` is the rank (i.e., number of dimensions) of the provided input array. If provided a negative dimension index, the position at which to insert a singleton dimension is computed as `N + dim + 1`. Hence, if provided `-1`, the resolved position is `N` (i.e., a singleton dimension is appended to the input array).
 	*
 	* @param x - input array
-	* @param axis - axis at which to insert a singleton dimension
+	* @param dim - dimension index at which to insert a singleton dimension
 	* @param writable - boolean indicating whether the returned ndarray should be writable
 	* @returns output array
 	*

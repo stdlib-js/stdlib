@@ -34,14 +34,14 @@ interface Options {
 }
 
 /**
-* Returns a boolean indicating which group an object's own and inherited property values belongs to.
+* Returns a boolean indicating which group an object's own property values belongs to.
 *
 * @returns boolean indicating whether a property value should be placed in the first or second group
 */
 type Nullary = () => boolean;
 
 /**
-* Returns a boolean indicating which group an object's own and inherited property values belongs to.
+* Returns a boolean indicating which group an object's own property values belongs to.
 *
 * @param value - object value
 * @returns boolean indicating whether a property value should be placed in the first or second group
@@ -49,7 +49,7 @@ type Nullary = () => boolean;
 type Unary = ( value: any ) => boolean;
 
 /**
-* Returns a boolean indicating which group an object's own and inherited property values belongs to.
+* Returns a boolean indicating which group an object's own property values belongs to.
 *
 * @param value - object value
 * @param key - object key
@@ -58,7 +58,7 @@ type Unary = ( value: any ) => boolean;
 type Binary = ( value: any, key: string | symbol ) => boolean;
 
 /**
-* Returns a boolean indicating which group an object's own and inherited property values belongs to.
+* Returns a boolean indicating which group an object's own property values belongs to.
 *
 * @param value - object value
 * @param key - object key
