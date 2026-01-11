@@ -54,10 +54,10 @@ double API_SUFFIX(stdlib_strided_drrss)( const CBLAS_INT N, const double *X, con
 * @param N            number of indexed elements
 * @param X            first input array
 * @param strideX      stride length of `X`
-* @param offsetX      starting index for X
+* @param offsetX      starting index for `X`
 * @param Y            second input array
 * @param strideY      stride length of `Y`
-* @param offsetY      starting index for Y
+* @param offsetY      starting index for `Y`
 * @return             output value
 */
 double API_SUFFIX(stdlib_strided_drrss_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {

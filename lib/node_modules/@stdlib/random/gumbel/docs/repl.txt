@@ -19,7 +19,7 @@
     options: Object (optional)
         Options.
 
-    options.dtype: string (optional)
+    options.dtype: string|DataType (optional)
         Array data type. Must be a real-valued floating-point or "generic" data
         type.
 

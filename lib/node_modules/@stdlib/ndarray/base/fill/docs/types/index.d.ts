@@ -24,6 +24,11 @@ import { typedndarray, complexndarray, genericndarray } from '@stdlib/types/ndar
 import { ComplexLike } from '@stdlib/types/complex';
 
 /**
+* Input ndarray.
+*/
+type InputArray<T> = typedndarray<T> | genericndarray<T>;
+
+/**
 * Fills an input ndarray with a specified value.
 *
 * ## Notes
@@ -33,6 +38,7 @@ import { ComplexLike } from '@stdlib/types/complex';
 *
 * @param x - input ndarray
 * @param value - scalar value
+* @returns input ndarray
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
@@ -51,7 +57,7 @@ import { ComplexLike } from '@stdlib/types/complex';
 *
 * // Create the input ndarray-like object:
 * var x = {
-*     'dtype': 'float64',
+*     'dtype': 'complex128',
 *     'data': xbuf,
 *     'shape': shape,
 *     'strides': sx,
@@ -59,12 +65,15 @@ import { ComplexLike } from '@stdlib/types/complex';
 *     'order': 'row-major'
 * };
 *
-* fill( x, 10.0 );
+* var out = fill( x, 10.0 );
 *
 * console.log( x.data );
 * // => <Complex128Array>[ 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0 ]
+*
+* var bool = ( out === x );
+* // returns true
 */
-declare function fill( x: complexndarray, value: number | ComplexLike ): void;
+declare function fill<T extends complexndarray = complexndarray>( x: T, value: number | ComplexLike ): T;
 
 /**
 * Fills an input ndarray with a specified value.
@@ -75,6 +84,7 @@ declare function fill( x: complexndarray, value: number | ComplexLike ): void;
 *
 * @param x - input ndarray
 * @param value - scalar value
+* @returns input ndarray
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -101,12 +111,15 @@ declare function fill( x: complexndarray, value: number | ComplexLike ): void;
 *     'order': 'row-major'
 * };
 *
-* fill( x, 10.0 );
+* var out = fill( x, 10.0 );
 *
 * console.log( x.data );
 * // => <Float64Array>[ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+*
+* var bool = ( out === x );
+* // returns true
 */
-declare function fill<T = unknown>( x: typedndarray<T> | genericndarray<T>, value: T ): void;
+declare function fill<T = unknown, U extends InputArray<T> = InputArray<T>>( x: U, value: T ): U;
 
 
 // EXPORTS //
