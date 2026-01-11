@@ -81,10 +81,7 @@ interface Some {
 	*
 	* // Perform reduction:
 	* var out = some( x, 3 );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	<T = unknown>( x: InputArray<T>, n: integerndarray | number, options?: Options ): boolndarray;
 
@@ -124,10 +121,7 @@ interface Some {
 	*
 	* // Perform reduction:
 	* var out = some.assign( x, 3, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	assign<T extends ndarray>( x: InputArray<unknown>, n: integerndarray | number, y: T, options?: BaseOptions ): T;
 }
@@ -161,10 +155,7 @@ interface Some {
 *
 * // Perform reduction:
 * var out = some( x, 3 );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns true
+* // returns <ndarray>[ true ]
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -193,10 +184,7 @@ interface Some {
 *
 * // Perform reduction:
 * var out = some.assign( x, 3, y );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns true
+* // returns <ndarray>[ true ]
 */
 declare var some: Some;
 
