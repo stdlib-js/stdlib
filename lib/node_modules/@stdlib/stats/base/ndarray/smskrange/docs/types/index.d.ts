@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { float32ndarray, uint8ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Calculates the range of a one-dimensional single-precision floating-point ndarray according to a mask.
@@ -42,7 +42,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var v = smskrange( [ x, mask ] );
 * // returns 4.0
 */
-declare function smskrange<T extends ndarray = ndarray>( arrays: [ T, T ] ): number;
+declare function smskrange( arrays: [ float32ndarray, uint8ndarray ] ): number;
 
 
 // EXPORTS //
