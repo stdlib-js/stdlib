@@ -357,8 +357,8 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 1.0, -1.0 ], 0 );
 	* arr.set( [ 9.0, -9.0 ], 9 );
 	*
-	* z = arr.get( -1 )
-	* // return <Complex64>
+	* z = arr.at( -1 );
+	* // returns <Complex64>
 	*
 	* z = arr.at( 100 );
 	* // returns undefined
@@ -732,9 +732,6 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* arr.forEach( log );
-	* // => 0: 1 + 1i
-	* // => 1: 2 + 2i
-	* // => 2: 3 + 3i
 	*/
 	forEach<U = unknown>( fcn: Callback<U>, thisArg?: ThisParameterType<Callback<U>> ): void;
 
@@ -801,13 +798,13 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 2.0, 2.0 ], 3 );
 	* arr.set( [ 5.0, 5.0 ], 4 );
 	*
-	* var idx = arr.indexOf( new Complex64( [ 2.0, 2.0 ] ) );
+	* var idx = arr.indexOf( new Complex64( 2.0, 2.0 ) );
 	* // returns 1
 	*
-	* idx = arr.indexOf( new Complex64( [ 2.0, 2.0 ] ), 2 );
+	* idx = arr.indexOf( new Complex64( 2.0, 2.0 ), 2 );
 	* // returns 3
 	*
-	* idx = arr.indexOf( new Complex64( [ 2.0, 2.0 ] ), -3 );
+	* idx = arr.indexOf( new Complex64( 2.0, 2.0 ), -3 );
 	* // returns 3
 	*/
 	indexOf( searchElement: ComplexLike, fromIndex?: number ): number;
@@ -1843,3 +1840,5 @@ declare var ctor: Complex64ArrayConstructor;
 // EXPORTS //
 
 export = ctor;
+
+// eslint-doctest-alias: Complex64Array

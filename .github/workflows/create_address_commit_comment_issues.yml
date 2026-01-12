@@ -53,7 +53,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Ensure we have access to the scripts directory:
           sparse-checkout: |
@@ -66,5 +66,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_address_commit_comments_issues" 14
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_address_commit_comments_issues/run" 14
         timeout-minutes: 15

@@ -894,10 +894,9 @@ interface Namespace {
 	* var rnorm = require( '@stdlib/random/base/normal' );
 	*
 	* var accumulator;
-	* var opts;
 	* var i;
 	*
-	* accumulator = ns.incrmgrubbs( 20, opts );
+	* accumulator = ns.incrmgrubbs( 20 );
 	*
 	* for ( i = 0; i < 200; i++ ) {
 	*     res = accumulator( rnorm( 10.0, 5.0 ) );

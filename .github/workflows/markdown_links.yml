@@ -66,7 +66,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -149,7 +149,8 @@ jobs:
 
       # Fail the workflow if the status is not "success":
       - name: 'Check status'
-        if: ${{ steps.results.outputs.status }} != 'success'
+        id: check-status
+        if: ${{ steps.results.outputs.status != 'success' }}
         run: |
           exit 1
 
@@ -160,6 +161,17 @@ jobs:
           echo "Printing the list of failures..."
           cat "${{ env.LOG_FILE_FAILURES }}"
         timeout-minutes: 5
+
+      # Create sub-issues for individual broken links:
+      - name: 'Create sub-issues for broken links'
+        if: failure() && contains(steps.check-status.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          "$GITHUB_WORKSPACE/.github/workflows/scripts/markdown_links/create_broken_link_issues" \
+            '${{ steps.results.outputs.failures }}' \
+            "9112"
+        timeout-minutes: 30
 
       # Upload the log files:
       - name: 'Upload log files'
@@ -179,11 +191,11 @@ jobs:
           retention-days: 10
         timeout-minutes: 10
 
-  # Define a job for sending notifications to Slack...
-  slack:
+  # Define a job for sending notifications to Zulip...
+  zulip:
 
     # Define a display name:
-    name: 'Slack notification'
+    name: 'Zulip notification'
 
     # Define the type of virtual host machine:
     runs-on: 'ubuntu-latest'
@@ -206,31 +218,34 @@ jobs:
       # Resolve notification data:
       - name: 'Resolve notification data'
         run: |
-          echo 'NOTIFICATION_STATUS=${{ needs.markdown_links.result}}' >> $GITHUB_ENV
           if [[ "${{ needs.markdown_links.result }}" = "success" ]]; then
-            echo 'NOTIFICATION_TEXT=**markdown_links** workflow succeeded' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:check:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=succeeded' >> $GITHUB_ENV
           elif [[ "${{ needs.markdown_links.result }}" = "failure" ]]; then
-            echo 'NOTIFICATION_TEXT=**markdown_links** workflow failed' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:cross_mark:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=failed' >> $GITHUB_ENV
           elif [[ "${{ needs.markdown_links.result }}" = "cancelled" ]]; then
-            echo 'NOTIFICATION_TEXT=**markdown_links** workflow was canceled' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:warning:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=was canceled' >> $GITHUB_ENV
           else
             exit 1
           fi
         timeout-minutes: 5
 
-      # Send notification to Slack:
+      # Send notification to Zulip:
       - name: 'Send notification'
         # Pin action to full length commit SHA
-        uses: 8398a7/action-slack@77eaa4f1c608a7d68b38af4e3f739dcd8cba273e # v3.19.0
+        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
         if: success()
         with:
-          status: "${{ env.NOTIFICATION_STATUS }}"
-          fields: repo,commit,message
-          text: "${{ env.NOTIFICATION_TEXT }}"
-          author_name: "${{ env.NOTIFICATION_AUTHOR_NAME }}"
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+          api-key: ${{ secrets.ZULIP_API_KEY }}
+          email: 'github-actions-bot@stdlib.zulipchat.com'
+          organization-url: 'https://stdlib.zulipchat.com'
+          to: 'workflows'
+          type: 'stream'
+          topic: 'markdown-links'
+          content: |
+            ${{ env.NOTIFICATION_ICON }} **markdown_links** workflow ${{ env.NOTIFICATION_STATUS }}
+
+            **Run:** [View workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
         timeout-minutes: 5

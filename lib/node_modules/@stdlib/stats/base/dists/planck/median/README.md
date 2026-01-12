@@ -96,16 +96,15 @@ v = median( -1.5 );
 
 ```javascript
 var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var median = require( '@stdlib/stats/base/dists/planck/median' );
 
-var lambda = uniform( 10, 0.1, 10.0 );
+var opts = {
+    'dtype': 'float64'
+};
+var lambda = uniform( 10, 0.1, 10.0, opts );
 
-var v;
-var i;
-for ( i = 0; i < lambda.length; i++ ) {
-    v = median( lambda[ i ] );
-    console.log( 'λ: %d, Median(X;λ): %d', lambda[ i ].toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'λ: %0.4f, Median(X;λ): %0.4f', lambda, median );
 ```
 
 </section>

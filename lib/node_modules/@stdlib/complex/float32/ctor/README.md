@@ -53,6 +53,15 @@ var z = new Complex64( 5.0, 3.0 );
 
 ## Properties
 
+#### Complex64.name
+
+Static property returning the constructor name.
+
+```javascript
+var str = Complex64.name;
+// returns 'Complex64'
+```
+
 #### Complex64.BYTES_PER_ELEMENT
 
 Size (in bytes) of each component.
