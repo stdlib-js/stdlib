@@ -414,7 +414,7 @@ interface Namespace {
 	*
 	* @example
 	* var dt = ns.binaryOutputDataType( 'float64', 'float32', 'complex_floating_point' );
-	* // returns <string>
+	* // returns <DataType>
 	*/
 	binaryOutputDataType: typeof binaryOutputDataType;
 
@@ -4545,7 +4545,7 @@ interface Namespace {
 	*
 	* @example
 	* var dt = ns.unaryOutputDataType( 'float64', 'complex_floating_point' );
-	* // returns <string>
+	* // returns <DataType>
 	*/
 	unaryOutputDataType: typeof unaryOutputDataType;
 
