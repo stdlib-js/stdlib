@@ -40,7 +40,7 @@ var mskmidrange = require( '@stdlib/stats/strided/mskmidrange' );
 
 #### mskmidrange( N, x, strideX, mask, strideMask )
 
-Computes the [mid-range][mid-range] of a strided array  according to a mask.
+Computes the [mid-range][mid-range] of a strided array according to a mask.
 
 ```javascript
 var x = [ 1.0, -2.0, 4.0, 2.0 ];
