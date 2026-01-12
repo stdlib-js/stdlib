@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -304,7 +304,6 @@ interface GenericOptions extends Options {
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -321,10 +320,7 @@ interface GenericOptions extends Options {
 * // returns <ndarray>
 *
 * var y = filterMap( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80.0, 90.0, 100.0 ]
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<V = unknown>( x: float64ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): float64ndarray;
 
@@ -339,7 +335,6 @@ declare function filterMap<V = unknown>( x: float64ndarray, fcn: Callback<number
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -356,10 +351,7 @@ declare function filterMap<V = unknown>( x: float64ndarray, fcn: Callback<number
 * // returns <ndarray>
 *
 * var y = filterMap( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80.0, 90.0, 100.0 ]
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<V = unknown>( x: float32ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): float32ndarray;
 
@@ -436,7 +428,6 @@ declare function filterMap<V = unknown>( x: complex128ndarray, fcn: Callback<Com
 * @example
 * var Int32Array = require( '@stdlib/array/int32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -453,10 +444,7 @@ declare function filterMap<V = unknown>( x: complex128ndarray, fcn: Callback<Com
 * // returns <ndarray>
 *
 * var y = filterMap( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: int32ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): int32ndarray;
 
@@ -471,7 +459,6 @@ declare function filterMap<V = unknown>( x: int32ndarray, fcn: Callback<number, 
 * @example
 * var Int16Array = require( '@stdlib/array/int16' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -488,10 +475,7 @@ declare function filterMap<V = unknown>( x: int32ndarray, fcn: Callback<number, 
 * // returns <ndarray>
 *
 * var y = filterMap( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: int16ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): int16ndarray;
 
@@ -506,7 +490,6 @@ declare function filterMap<V = unknown>( x: int16ndarray, fcn: Callback<number, 
 * @example
 * var Int8Array = require( '@stdlib/array/int8' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -523,10 +506,7 @@ declare function filterMap<V = unknown>( x: int16ndarray, fcn: Callback<number, 
 * // returns <ndarray>
 *
 * var y = filterMap( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: int8ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): int8ndarray;
 
@@ -541,7 +521,6 @@ declare function filterMap<V = unknown>( x: int8ndarray, fcn: Callback<number, n
 * @example
 * var Uint32Array = require( '@stdlib/array/uint32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -558,10 +537,7 @@ declare function filterMap<V = unknown>( x: int8ndarray, fcn: Callback<number, n
 * // returns <ndarray>
 *
 * var y = filterMap( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: uint32ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint32ndarray;
 
@@ -576,7 +552,6 @@ declare function filterMap<V = unknown>( x: uint32ndarray, fcn: Callback<number,
 * @example
 * var Uint16Array = require( '@stdlib/array/uint16' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -593,10 +568,7 @@ declare function filterMap<V = unknown>( x: uint32ndarray, fcn: Callback<number,
 * // returns <ndarray>
 *
 * var y = filterMap( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: uint16ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint16ndarray;
 
@@ -611,7 +583,6 @@ declare function filterMap<V = unknown>( x: uint16ndarray, fcn: Callback<number,
 * @example
 * var Uint8Array = require( '@stdlib/array/uint8' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -628,10 +599,7 @@ declare function filterMap<V = unknown>( x: uint16ndarray, fcn: Callback<number,
 * // returns <ndarray>
 *
 * var y = filterMap( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: uint8ndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint8ndarray;
 
@@ -646,7 +614,6 @@ declare function filterMap<V = unknown>( x: uint8ndarray, fcn: Callback<number, 
 * @example
 * var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -663,10 +630,7 @@ declare function filterMap<V = unknown>( x: uint8ndarray, fcn: Callback<number, 
 * // returns <ndarray>
 *
 * var y = filterMap( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: uint8cndarray, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint8cndarray;
 
@@ -681,7 +645,6 @@ declare function filterMap<V = unknown>( x: uint8cndarray, fcn: Callback<number,
 * @example
 * var BooleanArray = require( '@stdlib/array/bool' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function invert( v ) {
 *     if ( v ) {
@@ -698,10 +661,7 @@ declare function filterMap<V = unknown>( x: uint8cndarray, fcn: Callback<number,
 * // returns <ndarray>
 *
 * var y = filterMap( x, invert );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ false, false, false ]
+* // returns <ndarray>[ false, false, false ]
 */
 declare function filterMap<V = unknown>( x: boolndarray, fcn: Callback<boolean, boolean, V>, thisArg?: ThisParameterType<Callback<boolean, boolean, V>> ): boolndarray;
 
@@ -715,7 +675,6 @@ declare function filterMap<V = unknown>( x: boolndarray, fcn: Callback<boolean, 
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -732,10 +691,7 @@ declare function filterMap<V = unknown>( x: boolndarray, fcn: Callback<boolean, 
 * // returns <ndarray>
 *
 * var y = filterMap( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80.0, 90.0, 100.0 ]
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: genericndarray<T>, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): genericndarray<U>;
 
@@ -752,7 +708,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: genericnda
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -772,10 +727,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: genericnda
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80.0, 90.0, 100.0 ]
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<V = unknown>( x: float64ndarray, options: OrderOptions, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): float64ndarray;
 
@@ -792,7 +744,6 @@ declare function filterMap<V = unknown>( x: float64ndarray, options: OrderOption
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -812,10 +763,7 @@ declare function filterMap<V = unknown>( x: float64ndarray, options: OrderOption
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80.0, 90.0, 100.0 ]
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<V = unknown>( x: float32ndarray, options: OrderOptions, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): float32ndarray;
 
@@ -904,7 +852,6 @@ declare function filterMap<V = unknown>( x: complex128ndarray, options: OrderOpt
 * @example
 * var Int32Array = require( '@stdlib/array/int32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -924,10 +871,7 @@ declare function filterMap<V = unknown>( x: complex128ndarray, options: OrderOpt
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: int32ndarray, options: OrderOptions, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): int32ndarray;
 
@@ -944,7 +888,6 @@ declare function filterMap<V = unknown>( x: int32ndarray, options: OrderOptions,
 * @example
 * var Int16Array = require( '@stdlib/array/int16' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -964,10 +907,7 @@ declare function filterMap<V = unknown>( x: int32ndarray, options: OrderOptions,
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: int16ndarray, options: OrderOptions, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): int16ndarray;
 
@@ -984,7 +924,6 @@ declare function filterMap<V = unknown>( x: int16ndarray, options: OrderOptions,
 * @example
 * var Int8Array = require( '@stdlib/array/int8' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -1004,10 +943,7 @@ declare function filterMap<V = unknown>( x: int16ndarray, options: OrderOptions,
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: int8ndarray, options: OrderOptions, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): int8ndarray;
 
@@ -1024,7 +960,6 @@ declare function filterMap<V = unknown>( x: int8ndarray, options: OrderOptions, 
 * @example
 * var Uint32Array = require( '@stdlib/array/uint32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -1044,10 +979,7 @@ declare function filterMap<V = unknown>( x: int8ndarray, options: OrderOptions, 
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: uint32ndarray, options: OrderOptions, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint32ndarray;
 
@@ -1064,7 +996,6 @@ declare function filterMap<V = unknown>( x: uint32ndarray, options: OrderOptions
 * @example
 * var Uint16Array = require( '@stdlib/array/uint16' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -1084,10 +1015,7 @@ declare function filterMap<V = unknown>( x: uint32ndarray, options: OrderOptions
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: uint16ndarray, options: OrderOptions, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint16ndarray;
 
@@ -1104,7 +1032,6 @@ declare function filterMap<V = unknown>( x: uint16ndarray, options: OrderOptions
 * @example
 * var Uint8Array = require( '@stdlib/array/uint8' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -1124,10 +1051,7 @@ declare function filterMap<V = unknown>( x: uint16ndarray, options: OrderOptions
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: uint8ndarray, options: OrderOptions, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint8ndarray;
 
@@ -1144,7 +1068,6 @@ declare function filterMap<V = unknown>( x: uint8ndarray, options: OrderOptions,
 * @example
 * var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5 ) {
@@ -1164,10 +1087,7 @@ declare function filterMap<V = unknown>( x: uint8ndarray, options: OrderOptions,
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<V = unknown>( x: uint8cndarray, options: OrderOptions, fcn: Callback<number, number, V>, thisArg?: ThisParameterType<Callback<number, number, V>> ): uint8cndarray;
 
@@ -1184,7 +1104,6 @@ declare function filterMap<V = unknown>( x: uint8cndarray, options: OrderOptions
 * @example
 * var BooleanArray = require( '@stdlib/array/bool' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function invert( v ) {
 *     if ( v ) {
@@ -1204,10 +1123,7 @@ declare function filterMap<V = unknown>( x: uint8cndarray, options: OrderOptions
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, invert );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ false, false, false ]
+* // returns <ndarray>[ false, false, false ]
 */
 declare function filterMap<V = unknown>( x: boolndarray, options: OrderOptions, fcn: Callback<boolean, boolean, V>, thisArg?: ThisParameterType<Callback<boolean, boolean, V>> ): boolndarray;
 
@@ -1223,7 +1139,6 @@ declare function filterMap<V = unknown>( x: boolndarray, options: OrderOptions, 
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -1243,10 +1158,7 @@ declare function filterMap<V = unknown>( x: boolndarray, options: OrderOptions, 
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80.0, 90.0, 100.0 ]
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: genericndarray<T>, options: OrderOptions, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): genericndarray<U>;
 
@@ -1264,7 +1176,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: genericnda
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -1284,10 +1195,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: genericnda
 *     'dtype': 'float64'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80.0, 90.0, 100.0 ]
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Float64Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): float64ndarray;
 
@@ -1305,7 +1213,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -1325,10 +1232,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'float32'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80.0, 90.0, 100.0 ]
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Float32Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): float32ndarray;
 
@@ -1422,7 +1326,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -1442,10 +1345,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'int32'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Int32Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): int32ndarray;
 
@@ -1463,7 +1363,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -1483,10 +1382,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'int16'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Int16Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): int16ndarray;
 
@@ -1504,7 +1400,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -1524,10 +1419,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'int8'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Int8Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): int8ndarray;
 
@@ -1545,7 +1437,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -1565,10 +1456,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'uint32'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Uint32Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): uint32ndarray;
 
@@ -1586,7 +1474,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -1606,10 +1493,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'uint16'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Uint16Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): uint16ndarray;
 
@@ -1627,7 +1511,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -1647,10 +1530,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'uint8'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Uint8Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): uint8ndarray;
 
@@ -1668,7 +1548,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -1688,10 +1567,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'uint8c'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80, 90, 100 ]
+* // returns <ndarray>[ 80, 90, 100 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Uint8COptions, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): uint8cndarray;
 
@@ -1709,7 +1585,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function fcn( z ) {
 *     if ( z > 5.0 ) {
@@ -1729,10 +1604,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'bool'
 * };
 * var y = filterMap( x, opts, fcn );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ true, true, true ]
+* // returns <ndarray>[ true, true, true ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: BoolOptions, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): boolndarray;
 
@@ -1750,7 +1622,6 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     if ( z > 5.0 ) {
@@ -1770,10 +1641,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'generic'
 * };
 * var y = filterMap( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 80.0, 90.0, 100.0 ]
+* // returns <ndarray>[ 80.0, 90.0, 100.0 ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: GenericOptions, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): genericndarray<U>;
 
