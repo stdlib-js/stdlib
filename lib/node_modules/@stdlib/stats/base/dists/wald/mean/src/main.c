@@ -22,13 +22,13 @@
 /**
 * Returns the expected value for a Wald distribution with mean `mu` and shape parameter `lambda`.
 *
-* @param mu    mean
+* @param mu      mean
 * @param lambda  shape parameter
-* @return      expected value
+* @return        expected value
 *
 * @example
-* double y = stdlib_base_dists_wald_mean( 0.0, 1.0 );
-* // returns NaN
+* double y = stdlib_base_dists_wald_mean( 2.0, 1.0 );
+* // returns 2.0
 */
 double stdlib_base_dists_wald_mean( const double mu, const double lambda ) {
 	if (

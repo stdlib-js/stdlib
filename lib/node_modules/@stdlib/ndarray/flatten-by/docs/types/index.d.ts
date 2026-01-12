@@ -118,7 +118,6 @@ type Options<U> = BaseOptions & {
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( value ) {
 *     return value * 2.0;
@@ -133,10 +132,7 @@ type Options<U> = BaseOptions & {
 * // returns <ndarray>
 *
 * var y = flattenBy( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
 */
 declare function flattenBy<T extends typedndarray<number> = typedndarray<number>, ThisArg = unknown>( x: T, fcn: Callback<number, T, number, ThisArg>, thisArg?: ThisParameterType<Callback<number, T, number, ThisArg>> ): T;
 
@@ -151,7 +147,6 @@ declare function flattenBy<T extends typedndarray<number> = typedndarray<number>
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function identity( value ) {
 *     return value;
@@ -181,7 +176,6 @@ declare function flattenBy<T extends ComplexLike = ComplexLike, U extends typedn
 * @example
 * var BooleanArray = require( '@stdlib/array/bool' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function invert( value ) {
 *     return !value;
@@ -196,10 +190,7 @@ declare function flattenBy<T extends ComplexLike = ComplexLike, U extends typedn
 * // returns <ndarray>
 *
 * var y = flattenBy( x, invert );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ false, true, false, true, false, true ]
+* // returns <ndarray>[ false, true, false, true, false, true ]
 */
 declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolean>, ThisArg = unknown>( x: T, fcn: Callback<boolean, T, boolean, ThisArg>, thisArg?: ThisParameterType<Callback<boolean, T, boolean, ThisArg>> ): T;
 
@@ -213,7 +204,6 @@ declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolea
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( value ) {
 *     return value * 2.0;
@@ -228,10 +218,7 @@ declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolea
 * // returns <ndarray>
 *
 * var y = flattenBy( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
 */
 declare function flattenBy<T = unknown, U extends genericndarray<T> = genericndarray<T>, V = unknown, W extends genericndarray<V> = genericndarray<V>, ThisArg = unknown>( x: U, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): W;
 
@@ -250,7 +237,6 @@ declare function flattenBy<T = unknown, U extends genericndarray<T> = genericnda
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( value ) {
 *     return value * 2.0;
@@ -269,10 +255,7 @@ declare function flattenBy<T = unknown, U extends genericndarray<T> = genericnda
 * };
 *
 * var y = flattenBy( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
 */
 declare function flattenBy<T extends typedndarray<number> = typedndarray<number>, ThisArg = unknown>( x: T, options: BaseOptions, fcn: Callback<number, T, number, ThisArg>, thisArg?: ThisParameterType<Callback<number, T, number, ThisArg>> ): T;
 
@@ -291,7 +274,6 @@ declare function flattenBy<T extends typedndarray<number> = typedndarray<number>
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function identity( value ) {
 *     return value;
@@ -329,7 +311,6 @@ declare function flattenBy<T extends ComplexLike = ComplexLike, U extends typedn
 * @example
 * var BooleanArray = require( '@stdlib/array/bool' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function invert( value ) {
 *     return !value;
@@ -348,10 +329,7 @@ declare function flattenBy<T extends ComplexLike = ComplexLike, U extends typedn
 * };
 *
 * var y = flattenBy( x, opts, invert );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ false, true, false, true, false, true ]
+* // returns <ndarray>[ false, true, false, true, false, true ]
 */
 declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolean>, ThisArg = unknown>( x: T, options: BaseOptions, fcn: Callback<boolean, T, boolean, ThisArg>, thisArg?: ThisParameterType<Callback<boolean, T, boolean, ThisArg>> ): T;
 
@@ -369,7 +347,6 @@ declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolea
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( value ) {
 *     return value * 2.0;
@@ -388,10 +365,7 @@ declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolea
 * };
 *
 * var y = flattenBy( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
 */
 declare function flattenBy<T = unknown, U extends genericndarray<T> = genericndarray<T>, V = unknown, W extends genericndarray<V> = genericndarray<V>, ThisArg = unknown>( x: U, options: BaseOptions, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): W;
 
@@ -410,7 +384,6 @@ declare function flattenBy<T = unknown, U extends genericndarray<T> = genericnda
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( value ) {
 *     return value * 2.0;
@@ -429,10 +402,7 @@ declare function flattenBy<T = unknown, U extends genericndarray<T> = genericnda
 * };
 *
 * var y = flattenBy( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
 */
 declare function flattenBy<T = unknown, U extends typedndarray<T> | genericndarray<T> = typedndarray<T>, V = unknown, W extends keyof DataTypeMap<T> = 'generic', ThisArg = unknown>( x: U, options: Options<W>, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): DataTypeMap<V>[W];
 

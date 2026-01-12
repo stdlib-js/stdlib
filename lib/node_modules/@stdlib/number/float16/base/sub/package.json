@@ -67,8 +67,8 @@
       "$schema": "math/base@v1.0",
       "base_alias": "sub",
       "alias": "sub",
-      "pkg_desc": "subtraction of two half-precision floating-point numbers",
-      "desc": "subtraction of two half-precision floating-point numbers",
+      "pkg_desc": "subtract two half-precision floating-point numbers",
+      "desc": "subtracts two half-precision floating-point numbers",
       "short_desc": "",
       "parameters": [
         {
@@ -162,7 +162,6 @@
           ]
         }
       ],
-      "output_policy": "same",
       "returns": {
         "desc": "result",
         "type": {

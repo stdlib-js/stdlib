@@ -5,7 +5,7 @@
 
     If provided `NaN` as any argument, the function returns `NaN`.
 
-    If provided `μ <= 0` or `λ <= 0` the function returns `NaN`.
+    If provided `μ <= 0` or `λ <= 0`, the function returns `NaN`.
 
     Parameters
     ----------
