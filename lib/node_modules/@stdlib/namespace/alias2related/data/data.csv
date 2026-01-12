@@ -2648,7 +2648,7 @@ nonEnumerablePropertyNames,"objectKeys,inheritedNonEnumerablePropertyNames,nonEn
 nonEnumerablePropertyNamesIn,"keysIn,inheritedNonEnumerablePropertyNames,nonEnumerablePropertyNames,propertyNamesIn"
 nonEnumerablePropertySymbols,"enumerablePropertySymbols,inheritedNonEnumerablePropertySymbols,nonEnumerablePropertyNames,nonEnumerablePropertySymbolsIn,propertySymbols"
 nonEnumerablePropertySymbolsIn,"enumerablePropertySymbolsIn,inheritedNonEnumerablePropertySymbols,nonEnumerablePropertyNamesIn,nonEnumerablePropertySymbols,propertySymbolsIn"
-noneOwnBy,"anyOwnBy,everyOwnBy,forOwn,noneBy,someOwnBy"
+noneOwnBy,"anyOwnBy,everyOwnBy,noneBy,someOwnBy"
 nonIndexKeys,"objectEntries,objectKeys,objectValues"
 noop,""
 now,""

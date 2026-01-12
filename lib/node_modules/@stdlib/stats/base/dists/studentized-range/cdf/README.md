@@ -95,22 +95,18 @@ y = mycdf( 1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var cdf = require( '@stdlib/stats/base/dists/studentized-range/cdf' );
 
-var v;
-var q;
-var r;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var q = uniform( 10, 0.0, 12.0, opts );
+var r = uniform( 10, 2.0, 20.0, opts );
+var v = uniform( 10, 2.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    q = randu() * 12.0;
-    r = ( randu() * 20.0 ) + 2.0;
-    v = ( randu() * 10.0 ) + 2.0;
-    y = cdf( q, r, v );
-    console.log( 'q: %d, r: %d, v: %d, F(x;v): %d', q.toFixed( 4 ), r.toFixed( 4 ), v.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'q: %0.4f, r: %0.4f, v: %0.4f, F(x;v): %0.4f', q, r, v, cdf );
 ```
 
 </section>

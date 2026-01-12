@@ -29,9 +29,7 @@
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 1.0 ], [ 0.0, 1.0 ] ] );
     > var y = {{alias}}( x )
-    <ndarray>
-    > y.get()
-    1
+    <ndarray>[ 1 ]
     > y = {{alias}}( x, { 'keepdims': true } )
     <ndarray>[ [ 1 ] ]
 
