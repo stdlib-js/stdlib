@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `dznrm2`.
 */
-#ifndef DZNRM2_H
-#define DZNRM2_H
+#ifndef STDLIB_BLAS_BASE_DZNRM2_H
+#define STDLIB_BLAS_BASE_DZNRM2_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ double API_SUFFIX(c_dznrm2_ndarray)( const CBLAS_INT N, const void *X, const CBL
 }
 #endif
 
-#endif // !DZNRM2_H
+#endif // !STDLIB_BLAS_BASE_DZNRM2_H

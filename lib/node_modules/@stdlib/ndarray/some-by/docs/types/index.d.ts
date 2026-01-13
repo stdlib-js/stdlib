@@ -24,6 +24,11 @@ import { ArrayLike } from '@stdlib/types/array';
 import { ndarray, boolndarray, integerndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
+* Input array.
+*/
+type InputArray<T> = typedndarray<T>;
+
+/**
 * Returns a boolean indicating whether an element passes a test.
 *
 * @returns boolean indicating whether an ndarray element passes a test
@@ -55,7 +60,7 @@ type Binary<T, ThisArg> = ( this: ThisArg, value: T, indices: Array<number> ) =>
 * @param arr - input array
 * @returns boolean indicating whether an ndarray element passes a test
 */
-type Ternary<T, ThisArg> = ( this: ThisArg, value: T, indices: Array<number>, arr: typedndarray<T> ) => boolean;
+type Ternary<T, U, ThisArg> = ( this: ThisArg, value: T, indices: Array<number>, arr: U ) => boolean;
 
 /**
 * Returns a boolean indicating whether an element passes a test.
@@ -65,7 +70,7 @@ type Ternary<T, ThisArg> = ( this: ThisArg, value: T, indices: Array<number>, ar
 * @param arr - input array
 * @returns boolean indicating whether an ndarray element passes a test
 */
-type Predicate<T, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T, ThisArg> | Ternary<T, ThisArg>;
+type Predicate<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T, ThisArg> | Ternary<T, U, ThisArg>;
 
 /**
 * Base options.
@@ -127,7 +132,7 @@ interface SomeBy {
 	* var v = out.get();
 	* // returns true
 	*/
-	<T = unknown, U = unknown>( x: ndarray, n: integerndarray | number, predicate: Predicate<T, U>, thisArg?: ThisParameterType<Predicate<T, U>> ): boolndarray;
+	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, n: integerndarray | number, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): boolndarray;
 
 	/**
 	* Tests whether at least `n` elements along one or more ndarray dimensions pass a test implemented by a predicate function.
@@ -168,7 +173,7 @@ interface SomeBy {
 	* var v = out.get();
 	* // returns true
 	*/
-	<T = unknown, U = unknown>( x: ndarray, n: integerndarray | number, options: Options, predicate: Predicate<T, U>, thisArg?: ThisParameterType<Predicate<T, U>> ): boolndarray;
+	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, n: integerndarray | number, options: Options, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): boolndarray;
 
 	/**
 	* Tests whether at least `n` elements along one or more ndarray dimensions pass a test implemented by a predicate function.
@@ -213,7 +218,7 @@ interface SomeBy {
 	* var v = out.get();
 	* // returns true
 	*/
-	assign<T = unknown, U extends ndarray = ndarray, V = unknown>( x: ndarray, n: integerndarray | number, y: U, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): U;
+	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends ndarray = ndarray, ThisArg = unknown>( x: ndarray, n: integerndarray | number, y: V, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 
 	/**
 	* Tests whether at least `n` elements along one or more ndarray dimensions pass a test implemented by a predicate function.
@@ -260,7 +265,7 @@ interface SomeBy {
 	* var v = out.get();
 	* // returns true
 	*/
-	assign<T = unknown, U extends ndarray = ndarray, V = unknown>( x: ndarray, n: integerndarray | number, y: U, options: BaseOptions, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): U;
+	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends ndarray = ndarray, ThisArg = unknown>( x: ndarray, n: integerndarray | number, y: V, options: BaseOptions, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 }
 
 /**

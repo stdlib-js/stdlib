@@ -98,7 +98,7 @@ The use of the term `n-1` is commonly referred to as Bessel's correction. Note, 
 var dvarmpn = require( '@stdlib/stats/strided/dvarmpn' );
 ```
 
-#### dvarmpn( N, mean, correction, x, strideX )
+#### dvarmpn( N, correction, mean, x, strideX )
 
 Computes the [variance][variance] of a double-precision floating-point strided array provided a known `mean` and using Neely's correction algorithm.
 
@@ -107,15 +107,15 @@ var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 
-var v = dvarmpn( x.length, 1.0/3.0, 1, x, 1 );
+var v = dvarmpn( x.length, 1, 1.0/3.0, x, 1 );
 // returns ~4.3333
 ```
 
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
--   **mean**: mean.
 -   **correction**: degrees of freedom adjustment. Setting this parameter to a value other than `0` has the effect of adjusting the divisor during the calculation of the [variance][variance] according to `N-c` where `c` corresponds to the provided degrees of freedom adjustment. When computing the [variance][variance] of a population, setting this parameter to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the unbiased sample [variance][variance], setting this parameter to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction).
+-   **mean**: mean.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
 -   **strideX**: stride length for `x`.
 
@@ -126,7 +126,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
 
-var v = dvarmpn( 4, 1.25, 1, x, 2 );
+var v = dvarmpn( 4, 1, 1.25, x, 2 );
 // returns 6.25
 ```
 
@@ -140,11 +140,11 @@ var Float64Array = require( '@stdlib/array/float64' );
 var x0 = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-var v = dvarmpn( 4, 1.25, 1, x1, 2 );
+var v = dvarmpn( 4, 1, 1.25, x1, 2 );
 // returns 6.25
 ```
 
-#### dvarmpn.ndarray( N, mean, correction, x, strideX, offsetX )
+#### dvarmpn.ndarray( N, correction, mean, x, strideX, offsetX )
 
 Computes the [variance][variance] of a double-precision floating-point strided array provided a known `mean` and using Neely's correction algorithm and alternative indexing semantics.
 
@@ -153,7 +153,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 
-var v = dvarmpn.ndarray( x.length, 1.0/3.0, 1, x, 1, 0 );
+var v = dvarmpn.ndarray( x.length, 1, 1.0/3.0, x, 1, 0 );
 // returns ~4.33333
 ```
 
@@ -168,7 +168,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 
-var v = dvarmpn.ndarray( 4, 1.25, 1, x, 2, 1 );
+var v = dvarmpn.ndarray( 4, 1, 1.25, x, 2, 1 );
 // returns 6.25
 ```
 
@@ -202,7 +202,7 @@ var x = discreteUniform( 10, -50, 50, {
 });
 console.log( x );
 
-var v = dvarmpn( x.length, 0.0, 1, x, 1 );
+var v = dvarmpn( x.length, 1, 0.0, x, 1 );
 console.log( v );
 ```
 
@@ -236,14 +236,14 @@ console.log( v );
 #include "stdlib/stats/strided/dvarmpn.h"
 ```
 
-#### stdlib_strided_dvarmpn( N, mean, correction, \*X, strideX )
+#### stdlib_strided_dvarmpn( N, correction, mean, \*X, strideX )
 
 Computes the [variance][variance] of a double-precision floating-point strided array provided a known `mean` and using Neely's correction algorithm.
 
 ```c
 const double x[] = { 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 };
 
-double v = stdlib_strided_dvarmpn( 4, 1.25, 1.0, x, 2 );
+double v = stdlib_strided_dvarmpn( 4, 1.0, 1.25, x, 2 );
 // returns 6.25
 ```
 
@@ -256,31 +256,31 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 
 ```c
-double stdlib_strided_dvarmpn( const CBLAS_INT N, const double mean, const double correction, const double *X, const CBLAS_INT strideX );
+double stdlib_strided_dvarmpn( const CBLAS_INT N, const double correction, const double mean, const double *X, const CBLAS_INT strideX );
 ```
 
-#### stdlib_strided_dvarmpn_ndarray( N, mean, correction, \*X, strideX, offsetX )
+#### stdlib_strided_dvarmpn_ndarray( N, correction, mean, \*X, strideX, offsetX )
 
 Computes the [variance][variance] of a double-precision floating-point strided array provided a known `mean` and using Neely's correction algorithm and alternative indexing semantics.
 
 ```c
 const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
 
-double v = stdlib_strided_dvarmpn_ndarray( 4, 1.25, 1.0, x, 2, 0 );
+double v = stdlib_strided_dvarmpn_ndarray( 4, 1.0, 1.25, x, 2, 0 );
 // returns 6.25
 ```
 
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **mean**: `[in] double` mean.
 -   **correction**: `[in] double` degrees of freedom adjustment. Setting this parameter to a value other than `0` has the effect of adjusting the divisor during the calculation of the [variance][variance] according to `N-c` where `c` corresponds to the provided degrees of freedom adjustment. When computing the [variance][variance] of a population, setting this parameter to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the unbiased sample [variance][variance], setting this parameter to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction).
+-   **mean**: `[in] double` mean.
 -   **X**: `[in] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
 ```c
-double stdlib_strided_dvarmpn_ndarray( const CBLAS_INT N, const double mean, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+double stdlib_strided_dvarmpn_ndarray( const CBLAS_INT N, const double correction, const double mean, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>
@@ -316,7 +316,7 @@ int main( void ) {
     const int strideX = 2;
 
     // Compute the variance:
-    double v = stdlib_strided_dvarmpn( N, 4.5, 1, x, strideX );
+    double v = stdlib_strided_dvarmpn( N, 1, 4.5, x, strideX );
 
     // Print the result:
     printf( "sample variance: %lf\n", v );

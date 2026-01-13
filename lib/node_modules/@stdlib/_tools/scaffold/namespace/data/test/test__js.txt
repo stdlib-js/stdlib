@@ -35,6 +35,6 @@ tape( 'main export is an object', function test( t ) {
 
 tape( 'the exported object contains key-value pairs', function test( t ) {
 	var keys = objectKeys( ns );
-	t.equal( keys.length > 0, true, 'returns expected value' );
+	t.strictEqual( keys.length > 0, true, 'returns expected value' );
 	t.end();
 });

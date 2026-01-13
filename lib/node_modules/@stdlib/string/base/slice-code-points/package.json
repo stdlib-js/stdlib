@@ -13,7 +13,7 @@
       "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
     }
   ],
-  "main": "./lib/main.js",
+  "main": "./lib",
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",

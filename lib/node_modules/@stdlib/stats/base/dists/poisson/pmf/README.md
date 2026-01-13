@@ -122,21 +122,18 @@ y = mypmf( 1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var pmf = require( '@stdlib/stats/base/dists/poisson/pmf' );
 
-var lambda;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 10, 0.0, 10.0, opts );
+var lambda = uniform( 10, 0.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = round( randu() * 10.0 );
-    lambda = randu() * 10.0;
-    y = pmf( x, lambda );
-    console.log( 'x: %d, λ: %d, P(X=x;λ): %d', x, lambda.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %d, λ: %0.4f, P(X=x;λ): %0.4f', x, lambda, pmf );
 ```
 
 </section>

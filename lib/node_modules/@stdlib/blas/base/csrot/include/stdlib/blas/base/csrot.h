@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `csrot`.
 */
-#ifndef CSROT_H
-#define CSROT_H
+#ifndef STDLIB_BLAS_BASE_CSROT_H
+#define STDLIB_BLAS_BASE_CSROT_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_csrot_ndarray)( const CBLAS_INT N, void *X, const CBLAS_INT st
 }
 #endif
 
-#endif // !CSROT_H
+#endif // !STDLIB_BLAS_BASE_CSROT_H

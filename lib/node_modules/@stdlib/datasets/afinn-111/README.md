@@ -66,7 +66,7 @@ var words = afinn111();
 -   Some "words" are phrases; e.g., `cool stuff`, `not good`.
 -   Words may contain apostrophes; e.g., `can't stand`.
 -   Words may contain diaeresis; e.g., `naïve`.
--   Words may contain dashes; e.g., `self-deluded`, `self-confident`. 
+-   Words may contain dashes; e.g., `self-deluded`, `self-confident`.
 
 </section>
 

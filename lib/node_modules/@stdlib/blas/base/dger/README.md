@@ -62,7 +62,7 @@ The function has the following parameters:
 -   **y**: an `N` element [`Float64Array`][mdn-float64array].
 -   **sy**: stride length for `y`.
 -   **A**: input matrix stored in linear memory as a [`Float64Array`][mdn-float64array].
--   **lda**: stride of the first dimension of `A` (leading dimension of `A`).
+-   **lda**: stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
 
 The stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to iterate over every other element in `x` and `y`,
 
