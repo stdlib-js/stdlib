@@ -68,7 +68,7 @@ interface Routine {
 }
 
 /**
-* Compute the residual sum of squares of two double-precision floating-point strided arrays using Blue's algorithm.
+* Computes the residual sum of squares of two double-precision floating-point strided arrays using Blue's algorithm.
 *
 * @param N - number of indexed elements
 * @param x - first input array
