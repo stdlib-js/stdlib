@@ -66,4 +66,4 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/rate_limit_contributions" $PR_NUMBER
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/too_many_good_first_prs/rate_limit_contributions" $PR_NUMBER

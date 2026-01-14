@@ -150,5 +150,5 @@ jobs:
           else
             directories="${{ steps.changed-directories.outputs.directories }}"
           fi
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_benchmarks" "$directories"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_benchmarks/run" "$directories"
         timeout-minutes: 60

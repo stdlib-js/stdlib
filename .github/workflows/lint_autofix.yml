@@ -138,20 +138,20 @@ jobs:
         id: fix-lint-errors
         run: |
           files="${{ steps.changed-files.outputs.files }}"
-          FIX=1 . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_javascript_files" "$files" || true
+          FIX=1 . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_javascript_files" "$files" || true
 
       # Add missing trailing newlines:
       - name: 'Add missing trailing newlines'
         id: add-trailing-newlines
         run: |
           files="${{ steps.changed-files.outputs.files }}"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/add_trailing_newlines" "$files"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_autofix/add_trailing_newlines" "$files"
 
       # Remove related packages from README.md files:
       - name: 'Remove related packages from README.md files'
         run: |
           files="${{ steps.changed-files.outputs.files }}"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/remove_related_packages" "$files"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_autofix/remove_related_packages" "$files"
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'

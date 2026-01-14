@@ -151,7 +151,7 @@ jobs:
           COVERAGE_BASE_URL: 'https://coverage.stdlib.io/pr-${{ github.event.pull_request.number }}'
         run: |
           directories="${{ steps.changed-directories.outputs.directories }}"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_tests_coverage" "$directories"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_tests_coverage/run" "$directories"
         timeout-minutes: 30
 
       # Create final coverage report:
