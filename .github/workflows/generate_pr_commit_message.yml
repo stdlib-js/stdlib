@@ -54,7 +54,7 @@ jobs:
       # Checkout repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Ensure we have access to the scripts directory and .mailmap file for generating the commit message:
           sparse-checkout: |
@@ -67,7 +67,7 @@ jobs:
         id: commit_message
         shell: bash {0} # Omit -e to avoid triggering a failure if the script returns a non-zero exit code
         run: |
-          COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message $PR_NUMBER)
+          COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message/run $PR_NUMBER)
           EXIT_CODE=$?
 
           echo "commit_message<<EOF" >> $GITHUB_OUTPUT

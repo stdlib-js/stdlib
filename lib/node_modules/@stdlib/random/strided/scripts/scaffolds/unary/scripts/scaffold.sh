@@ -18,7 +18,7 @@
 
 # Script for scaffolding a package exposing an iterator which applies a unary mathematical function.
 #
-# Usage: scaffold.h
+# Usage: scaffold.sh
 #
 # Environment Variables:
 #
@@ -195,12 +195,12 @@ files=(
 )
 
 # Create the destination directories...
-for dir in ${dirs[*]}; do
+for dir in "${dirs[@]}"; do
 	mkdir -p "${dest_dir}/${dir}"
 done
 
 # Copy the scaffold files to the destination directory...
-for file in ${files[*]}; do
+for file in "${files[@]}"; do
 	cp "${this_dir}/data/${file//\./__}.txt" "${dest_dir}/${file}"
 done
 
