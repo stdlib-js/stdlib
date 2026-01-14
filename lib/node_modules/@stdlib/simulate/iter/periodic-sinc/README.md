@@ -95,7 +95,7 @@ Note that the periodic [sinc][@stdlib/math/base/special/sinc] can be equivalentl
 <!-- <equation class="equation" label="eq:periodic_sinc_in_terms_of_sinc_function" align="center" raw="D_N(\pi x; N, A) = A \cdot \frac{\operatorname{sinc}(Nx/2)} {\operatorname{sinc}(x/2)}" alt="Periodic sinc function in terms of the sinc function."> -->
 
 ```math
-D_N(\pi x; N, A) = A \cdot \frac{\operatorname{sinc}(Nx/2)} {\operatorname{sinc}(x/2)}
+D_N(\pi x; N, A) = A \cdot \frac{\mathop{\mathrm{sinc}}(Nx/2)} {\mathop{\mathrm{sinc}}(x/2)}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="D_N(\pi x; N, A) = A \cdot \frac{\operatorname{sinc}(Nx/2)} {\operatorname{sinc}(x/2)}" data-equation="eq:periodic_sinc_in_terms_of_sinc_function">

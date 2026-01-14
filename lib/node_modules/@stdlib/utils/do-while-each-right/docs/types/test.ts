@@ -18,28 +18,38 @@
 
 import doWhileEachRight = require( './index' );
 
-const log = ( v: any, index: number ): void => {
-	console.log( `${index}: ${v}` );
-};
+/**
+* Dummy function.
+*/
+function fcn( v: any, index: number ): number {
+	if ( v !== v ) {
+		throw new Error( 'beep' );
+	}
+	return index;
+}
 
-const isNotNaN = ( v: number ): boolean => {
+/**
+* Dummy function.
+*/
+function isNotNaN( v: number ): boolean {
 	return ( v === v );
-};
+}
+
 
 // TESTS //
 
 // The function returns the input collection...
 {
-	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], log, isNotNaN ); // $ExpectType Collection
-	doWhileEachRight( [ -1, 1, 2 ], log, isNotNaN, {} ); // $ExpectType Collection
+	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], fcn, isNotNaN ); // $ExpectType Collection<number>
+	doWhileEachRight( [ -1, 1, 2 ], fcn, isNotNaN, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
 {
-	doWhileEachRight( 2, log, isNotNaN ); // $ExpectError
-	doWhileEachRight( false, log, isNotNaN ); // $ExpectError
-	doWhileEachRight( true, log, isNotNaN ); // $ExpectError
-	doWhileEachRight( {}, log, isNotNaN ); // $ExpectError
+	doWhileEachRight( 2, fcn, isNotNaN ); // $ExpectError
+	doWhileEachRight( false, fcn, isNotNaN ); // $ExpectError
+	doWhileEachRight( true, fcn, isNotNaN ); // $ExpectError
+	doWhileEachRight( {}, fcn, isNotNaN ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a function...
@@ -54,18 +64,18 @@ const isNotNaN = ( v: number ): boolean => {
 
 // The compiler throws an error if the function is provided a third argument which is not a function...
 {
-	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], log, 2 ); // $ExpectError
-	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], log, false ); // $ExpectError
-	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], log, true ); // $ExpectError
-	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], log, 'abc' ); // $ExpectError
-	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], log, {} ); // $ExpectError
-	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], log, [] ); // $ExpectError
+	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], fcn, 2 ); // $ExpectError
+	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], fcn, false ); // $ExpectError
+	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], fcn, true ); // $ExpectError
+	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], fcn, 'abc' ); // $ExpectError
+	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], fcn, {} ); // $ExpectError
+	doWhileEachRight( [ 0, 1, 1, NaN, 2 ], fcn, [] ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	doWhileEachRight(); // $ExpectError
 	doWhileEachRight( [ 1, 2, 3 ] ); // $ExpectError
-	doWhileEachRight( [ 1, 2, 3 ], log ); // $ExpectError
-	doWhileEachRight( [ 1, 2, 3 ], log, isNotNaN, {}, 3 ); // $ExpectError
+	doWhileEachRight( [ 1, 2, 3 ], fcn ); // $ExpectError
+	doWhileEachRight( [ 1, 2, 3 ], fcn, isNotNaN, {}, 3 ); // $ExpectError
 }

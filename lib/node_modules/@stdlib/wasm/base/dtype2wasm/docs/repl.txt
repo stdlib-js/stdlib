@@ -1,0 +1,29 @@
+
+{{alias}}( dtype )
+    Returns the WebAssembly data type associated with a provided array data type
+    value.
+
+    If provided a "generic" or unknown/unsupported array data type, the function
+    assumes that the values can be stored as double-precision floating-point
+    numbers.
+
+    Parameters
+    ----------
+    dtype: string
+        Array data type.
+
+    Returns
+    -------
+    out: string
+        WebAssembly data type.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float64' )
+    'float64'
+    > out = {{alias}}( 'generic' )
+    'float64'
+
+    See Also
+    --------
+

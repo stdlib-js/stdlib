@@ -23,6 +23,6 @@ import UINT16_MAX = require( './index' );
 
 // The export is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	UINT16_MAX; // $ExpectType number
 }

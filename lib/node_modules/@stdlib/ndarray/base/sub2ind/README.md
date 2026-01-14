@@ -54,11 +54,12 @@ var idx = sub2ind( shape, strides, offset, 1, 0, mode );
 // returns 2
 ```
 
-The function supports the following `modes`:
+The function supports the following modes:
 
--   `throw`: specifies that the function should throw an error when a subscript exceeds array dimensions.
--   `wrap`: specifies that the function should wrap around subscripts exceeding array dimensions using modulo arithmetic.
--   `clamp`: specifies that the function should set subscripts exceeding array dimensions to either `0` (minimum index) or the maximum index along a particular dimension.
+-   **throw**: specifies that the function should throw an error when a subscript exceeds array dimensions.
+-   **normalize**: specifies that the function should normalize negative subscripts and throw an error when a subscript exceeds array dimensions.
+-   **wrap**: specifies that the function should wrap around subscripts exceeding array dimensions using modulo arithmetic.
+-   **clamp**: specifies that the function should set subscripts exceeding array dimensions to either `0` (minimum index) or the maximum index along a particular dimension.
 
 ```javascript
 var shape = [ 2, 2 ];

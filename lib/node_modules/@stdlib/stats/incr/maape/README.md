@@ -29,7 +29,7 @@ The [mean arctangent absolute percentage error][@kim:2016a] is defined as
 <!-- <equation class="equation" label="eq:mean_arctangent_absolute_percentage_error" align="center" raw="\operatorname{MAAPE}  = \frac{1}{n} \sum_{i=0}^{n-1} \operatorname{arctan}\biggl( \biggl| \frac{a_i - f_i}{a_i} \biggr| \biggr)" alt="Equation for the mean arctangent absolute percentage error."> -->
 
 ```math
-\operatorname{MAAPE}  = \frac{1}{n} \sum_{i=0}^{n-1} \operatorname{arctan}\biggl( \biggl| \frac{a_i - f_i}{a_i} \biggr| \biggr)
+\mathop{\mathrm{MAAPE}}  = \frac{1}{n} \sum_{i=0}^{n-1} \mathop{\mathrm{arctan}}\biggl( \biggl| \frac{a_i - f_i}{a_i} \biggr| \biggr)
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{MAAPE}  = \frac{1}{n} \sum_{i=0}^{n-1} \operatorname{arctan} \biggl( \biggl| \frac{a_i - f_i}{a_i} \biggr| \biggr)" data-equation="eq:mean_arctangent_absolute_percentage_error">

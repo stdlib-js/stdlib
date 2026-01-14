@@ -1,0 +1,285 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: run_tests_coverage
+
+# Workflow triggers:
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      # List paths for which changes should trigger this workflow:
+      - 'lib/**/bin/**'
+      - 'lib/**/data/**'
+      - 'lib/**/etc/**'
+      - 'lib/**/include/**'
+      - 'lib/**/lib/**'
+      - 'lib/**/src/**'
+      - 'lib/**/test/**'
+
+      - 'lib/**/*.gyp'
+      - 'lib/**/*.gypi'
+      - 'lib/**/manifest.json'
+
+      - 'package.json'
+
+      # List paths for which changes should *not* trigger this workflow:
+      - '!lib/**/_tools/**'
+
+  # Note: Pull requests are handled by a separate secure two-workflow setup:
+  # - run_tests_coverage_pr.yml: Runs tests without secrets
+  # - publish_coverage_pr.yml: Publishes results with secrets (triggered by workflow_run)
+
+  workflow_dispatch:
+    inputs:
+      directories:
+        description: 'List of changed directories for which to run tests (space separated):'
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for calculating test coverage for changed files...
+  coverage:
+
+    # Define a display name:
+    name: 'Calculate test coverage for packages'
+
+    # Skip push events on forks:
+    if: github.event_name != 'push' || github.repository == 'stdlib-js/stdlib'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the last 1000 commits:
+          fetch-depth: 1000
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
+        with:
+          node-version: '20' # 'lts/*'
+        timeout-minutes: 5
+
+      # Cache dependencies:
+      - name: 'Cache dependencies'
+        # Pin action to full length commit SHA
+        uses: actions/cache@9255dc7a253b0ccc959486e2bca901246202afeb # v5.0.1
+        id: cache
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Initialize development environment:
+      - name: 'Initialize development environment'
+        run: |
+          make init
+        timeout-minutes: 5
+
+      # Get list of changed directories from push events:
+      - name: 'Get list of changed directories'
+        if: github.event_name == 'push'
+        id: changed-directories
+        continue-on-error: true
+        run: |
+          # Get changed files by comparing the current commit to the commit before the push event or with its parent:
+          if [ "${{ github.event.before }}" == "0000000000000000000000000000000000000000" ]; then
+            files=$(git diff --diff-filter=AM --name-only HEAD~ ${{ github.event.after }})
+          else
+            files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
+          fi
+          directories=$(for file in $files; do dirname $file; done | uniq | tr '\n' ' ' | sed 's/ $//')
+          echo "directories=${directories}" >> $GITHUB_OUTPUT
+
+      # Get list of changed directories from workflow dispatch event:
+      - name: 'Get list of changed directories (from user input)'
+        if: github.event_name == 'workflow_dispatch'
+        id: changed-directories-user-input
+        run: |
+          echo "directories=${{ github.event.inputs.directories }}" >> $GITHUB_OUTPUT
+        timeout-minutes: 5
+
+      # Exit early if non-package directories are changed:
+      - name: 'Exit early if non-package directories are changed'
+        id: check-changed
+        if: github.event_name != 'workflow_dispatch'
+        run: |
+          directories="${{ steps.changed-directories.outputs.directories }}"
+          skip="false"
+          for directory in $directories; do
+            if [[ "$directory" != "lib/node_modules/@stdlib"* ]]; then
+              echo "Warning: changed directory '$directory' is not in 'lib/node_modules/@stdlib'. Skipping the rest of the workflow."
+              skip="true"
+              break
+            fi
+          done
+          echo "skip=${skip}" >> $GITHUB_OUTPUT
+
+      # Run JavaScript tests:
+      - name: 'Run JavaScript tests'
+        id: extract-coverage
+        if: steps.check-changed.outputs.skip == 'false'
+        env:
+          GITHUB_REPO: ${{ github.repository }}
+          GITHUB_REF: ${{ github.ref }}
+          COVERAGE_BASE_URL: 'https://coverage.stdlib.io'
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            directories="${{ steps.changed-directories-user-input.outputs.directories }}"
+          else
+            directories="${{ steps.changed-directories.outputs.directories }}"
+          fi
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_tests_coverage/run" "$directories"
+        timeout-minutes: 30
+
+      # Create final coverage report:
+      - name: 'Create final coverage report'
+        id: create-report
+        if: steps.check-changed.outputs.skip == 'false'
+        run: |
+          table="${{ steps.extract-coverage.outputs.table }}"
+          if [ -z "$table" ]; then
+            report="## Coverage Report\n\nNo coverage information available."
+          else
+            if [ "${{ github.event_name }}" == "push" ]; then
+              compare_url="https://github.com/stdlib-js/stdlib/compare/${{ github.event.before }}...${{ github.event.after }}"
+              compare_txt="The above coverage report was generated for the [changes in this push]($compare_url)."
+            else
+              compare_txt=""
+            fi
+            report="## Coverage Report\n\n${table}\n\n${compare_txt}"
+          fi
+          echo "report=$report" >> $GITHUB_OUTPUT
+
+      # Post report as comment to commit:
+      - name: 'Post report as comment to commit'
+        if: github.event_name == 'push' && steps.check-changed.outputs.skip == 'false'
+        # Pin action to full length commit SHA
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        with:
+          github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          script: |
+            github.rest.repos.createCommitComment({
+              'commit_sha': context.sha,
+              'owner': context.repo.owner,
+              'repo': context.repo.repo,
+              'body': '${{ steps.create-report.outputs.report }}'
+            })
+
+      # Checkout coverage repository:
+      - name: 'Checkout coverage repository'
+        if: steps.check-changed.outputs.skip == 'false'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          # Code coverage repository:
+          repository: 'stdlib-js/www-test-code-coverage'
+
+          # File path to checkout to:
+          path: './www-test-code-coverage'
+
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Token for accessing the repository:
+          token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
+
+      # Copy artifacts to the repository:
+      - name: 'Copy artifacts to the repository'
+        if: steps.check-changed.outputs.skip == 'false'
+        run: |
+          if [ -d "./artifacts" ]; then
+            cp -R ./artifacts/* ./www-test-code-coverage
+
+            # Get commit SHA and timestamp:
+            commit_sha=$(git rev-parse HEAD)
+            commit_timestamp=$(git show -s --format=%ci $commit_sha)
+
+            # Append coverage to ndjson files:
+            files=$(find ./artifacts -name 'index.html')
+            for file in $files; do
+              file=${file//artifacts/www-test-code-coverage}
+              coverage=$(echo -n '['; grep -oP "(?<=class='fraction'>)[0-9]+/[0-9]+" $file | awk -F/ '{ if ($2 != 0) print $1 "," $2 "," ($1/$2)*100; else print $1 "," $2 ",100" }' | tr '\n' ',' | sed 's/,$//'; echo -n ",\"$commit_sha\",\"$commit_timestamp\"]")
+              echo $coverage >> $(dirname $file)/coverage.ndjson
+            done
+          else
+            echo "The artifacts directory does not exist."
+          fi
+
+      # Import GPG key to sign commits:
+      - name: 'Import GPG key to sign commits'
+        if: steps.check-changed.outputs.skip == 'false'
+        # Pin action to full length commit SHA
+        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
+        with:
+          gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
+      # Commit and push changes:
+      - name: 'Commit and push changes'
+        if: steps.check-changed.outputs.skip == 'false'
+        env:
+          REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          USER_NAME: stdlib-bot
+        run: |
+          cd ./www-test-code-coverage
+          git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
+          git config --local user.name "stdlib-bot"
+          git add .
+          git commit -m "Update artifacts" || exit 0
+          git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git" main

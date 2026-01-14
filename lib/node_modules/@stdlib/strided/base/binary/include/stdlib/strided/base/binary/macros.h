@@ -179,8 +179,8 @@
 * @param cout  output casting function
 *
 * @example
-* #include "stdlib/complex/float32.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float32/ctor.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * // e.g., ff_c_as_zz_z
 * STDLIB_STRIDED_BINARY_LOOP_CLBK_ARG_CAST_FCN( float, stdlib_complex64_t, stdlib_complex128_from_float32, stdlib_complex128_to_complex64 )
@@ -206,7 +206,7 @@
 * @param cout  output casting function
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * // e.g., dd_z
 * STDLIB_STRIDED_BINARY_LOOP_CLBK_RET_CAST_FCN( double, stdlib_complex128_t, stdlib_complex128_from_float64 )
@@ -259,7 +259,7 @@
 * @param tout  output type
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 *
 * // e.g., zi_z
@@ -323,8 +323,8 @@
 * @param cout  casting function for the callback return value
 *
 * @example
-* #include "stdlib/complex/float32.h"
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float32/ctor.h"
+* #include "stdlib/complex/float64/ctor.h"
 *
 * // e.g., cf_c_as_zz_z
 * STDLIB_STRIDED_BINARY_LOOP_CLBK_MIXED_ARG_CAST_FCN( stdlib_complex64_t, float, stdlib_complex64_t, stdlib_complex128_from_complex64, stdlib_complex128_from_float32, stdlib_complex128_to_complex64 )
@@ -352,7 +352,7 @@
 * @param cout  output casting function
 *
 * @example
-* #include "stdlib/complex/float64.h"
+* #include "stdlib/complex/float64/ctor.h"
 * #include <stdint.h>
 *
 * // e.g., du_z

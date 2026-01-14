@@ -23,7 +23,7 @@ import cartesianProduct = require( './index' );
 
 // The function returns an array of arrays...
 {
-	cartesianProduct( [ 1, 2, 3, 4 ], [ 1, 3 ] ); // $ExpectType any[][]
+	cartesianProduct( [ 1, 2, 3, 4 ], [ 1, 3 ] ); // $ExpectType [number, number][]
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array-like object...

@@ -1,0 +1,42 @@
+
+{{alias}}( x, y, s, strict )
+    Assigns element values from a broadcasted input array to corresponding
+    elements in an output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array. The input array must be broadcast compatible with the
+        output array and must have a data type which can be safely cast to the
+        output array data type. Floating-point data types (both real and
+        complex) are allowed to downcast to a lower precision data type of the
+        same kind (e.g., element values from a 'float64' input array can be
+        assigned to corresponding elements in a 'float32' output array).
+
+    y: ArrayLikeObject
+        Output array.
+
+    s: Slice
+        Slice object.
+
+    strict: boolean
+        Boolean indicating whether to enforce strict bounds checking.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var y = [ 0, 0, 0, 0, 0, 0, 0, 0 ];
+    > var s = new {{alias:@stdlib/slice/ctor}}( null, null, 2 );
+    > var out = {{alias}}( x, y, s, false )
+    [ 1, 0, 2, 0, 3, 0, 4, 0 ]
+    > var b = ( out === y )
+    true
+
+    See Also
+    --------
+

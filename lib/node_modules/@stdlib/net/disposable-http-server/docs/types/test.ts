@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* tslint:disable:no-unsafe-any */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
 import httpServer = require( './index' );
 

@@ -1,6 +1,7 @@
 {
 	"string": [
-		"split"
+		"split",
+		"mode"
 	],
 	"boolean": [
 		"help",

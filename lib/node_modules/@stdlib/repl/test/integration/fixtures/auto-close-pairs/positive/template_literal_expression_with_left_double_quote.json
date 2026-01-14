@@ -1,0 +1,67 @@
+{
+  "expression": "`${foo(\")}`",
+  "cursor": 7,
+  "ast": {
+    "type": "Program",
+    "start": 0,
+    "end": 11,
+    "body": [
+      {
+        "type": "ExpressionStatement",
+        "start": 0,
+        "end": 11,
+        "expression": {
+          "type": "TemplateLiteral",
+          "start": 0,
+          "end": 11,
+          "expressions": [
+            {
+              "type": "CallExpression",
+              "start": 3,
+              "end": 11,
+              "callee": {
+                "type": "Identifier",
+                "start": 3,
+                "end": 6,
+                "name": "foo"
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "start": 7,
+                  "end": 11,
+                  "value": ")}`",
+                  "raw": "\")}`"
+                }
+              ],
+              "optional": false
+            }
+          ],
+          "quasis": [
+            {
+              "type": "TemplateElement",
+              "start": 1,
+              "end": 1,
+              "value": {
+                "raw": "",
+                "cooked": ""
+              },
+              "tail": false
+            },
+            {
+              "type": "TemplateElement",
+              "start": 11,
+              "end": 11,
+              "value": {
+                "cooked": "",
+                "raw": ""
+              },
+              "tail": true
+            }
+          ]
+        }
+      }
+    ],
+    "sourceType": "script"
+  }
+}

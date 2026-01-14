@@ -108,10 +108,38 @@ var y = dist.cdf( 2.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var objectKeys = require( '@stdlib/utils/keys' );
 var uniform = require( '@stdlib/stats/base/dists/uniform' );
 
-console.log( objectKeys( uniform ) );
+/*
+Let's consider an example where we are modeling the arrival times of guests
+at a reception event that runs from 6:00 PM to 8:00 PM, where each arrival
+within this 2-hour window is equally likely. We can model this scenario using a
+continuous  uniform distribution with a minimum value of 0 (6:00 PM) and
+a maximum value of 120 (8:00 PM).
+*/
+
+var min = 0.0; // 6:00 PM is 0 minutes after 6:00 PM.
+var max = 120.0; // 8:00 PM is 120 minutes after 6:00 PM.
+
+var mean = uniform.mean( min, max );
+// returns 60.0
+
+var variance = uniform.variance( min, max );
+// returns 1200.0
+
+var stdDev = uniform.stdev( min, max );
+// returns ~34.641
+
+var entropy = uniform.entropy( min, max );
+// returns ~4.787
+
+// Probability of arrival within 30 minutes after 6:00 PM:
+var p = uniform.cdf( 30, min, max );
+// returns 0.25
+
+// Evaluate the PDF at 30 minutes after 6:00 PM:
+var pdf = uniform.pdf( 30, min, max );
+// returns ~0.0083
 ```
 
 </section>

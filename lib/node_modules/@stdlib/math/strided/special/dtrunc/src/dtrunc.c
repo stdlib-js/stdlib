@@ -34,17 +34,17 @@
 * #include <stdint.h>
 *
 * // Create an input strided array:
-* double x[] = { 1.1, 2.5, -3.5, 4.0, -5.9, 6.4, -7.0, 8.2 };
+* const double x[] = { 1.1, 2.5, -3.5, 4.0, -5.9, 6.4, -7.0, 8.2 };
 *
 * // Create an output strided array:
 * double y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 *
 * // Specify the number of elements:
-* int64_t N = 4;
+* const int64_t N = 4;
 *
 * // Specify the stride lengths:
-* int64_t strideX = 2;
-* int64_t strideY = 2;
+* const int64_t strideX = 2;
+* const int64_t strideY = 2;
 *
 * // Compute the results:
 * stdlib_strided_dtrunc( N, x, strideX, y, strideY );

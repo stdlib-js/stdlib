@@ -1,5 +1,5 @@
 
-{{alias}}( str[, n] )
+{{alias}}( str[, n][, options] )
     Removes the last character(s) of a `string`.
 
     Parameters
@@ -9,6 +9,25 @@
 
     n: integer (optional)
         Number of characters to remove. Default: 1.
+
+    options: Object (optional)
+        Options.
+
+    options.mode: string (optional)
+        Type of characters to remove. The following modes are supported:
+
+        - grapheme: grapheme clusters. Appropriate for strings containing visual
+          characters which can span multiple Unicode code points (e.g., emoji).
+        - code_point: Unicode code points. Appropriate for strings containing
+          visual characters which are comprised of more than one Unicode code
+          unit (e.g., ideographic symbols and punctuation and mathematical
+          alphanumerics).
+        - code_unit': UTF-16 code units. Appropriate for strings containing
+          visual characters drawn from the basic multilingual plane (BMP) (e.g.,
+          common characters, such as those from the Latin, Greek, and Cyrillic
+          alphabets).
+
+        Default: 'grapheme'.
 
     Returns
     -------

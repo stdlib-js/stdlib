@@ -23,8 +23,8 @@ import omit = require( './index' );
 
 // The function returns an object...
 {
-	omit( { 'a': 1, 'b': 2 }, 'a' ); // $ExpectType Object
-	omit( { 'a': 1, 'b': 2 }, [ 'a', 'b' ] ); // $ExpectType Object
+	omit( { 'a': 1, 'b': 2 }, 'a' ); // $ExpectType Omit<{ a: number; b: number; }, "a">
+	omit( { 'a': 1, 'b': 2 }, [ 'a', 'b' ] ); // $ExpectType Omit<{ a: number; b: number; }, "a" | "b">
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a string or string array...

@@ -112,7 +112,7 @@ $ platform
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/os/arch`][@stdlib/os/arch]</span><span class="delimiter">: </span><span class="description">operating system CPU architecture.</span>
+-   <span class="package-name">[`@stdlib/os/arch`][@stdlib/os/arch]</span><span class="delimiter">: </span><span class="description">operating system CPU architecture for which the JavaScript runtime binary was compiled.</span>
 
 </section>
 

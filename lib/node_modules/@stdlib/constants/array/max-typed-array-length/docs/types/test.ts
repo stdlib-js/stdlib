@@ -23,6 +23,6 @@ import MAX_TYPED_ARRAY_LENGTH = require( './index' );
 
 // The variable is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	MAX_TYPED_ARRAY_LENGTH; // $ExpectType number
 }

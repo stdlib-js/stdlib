@@ -23,6 +23,6 @@ import FLOAT64_GAMMA_LANCZOS_G = require( './index' );
 
 // The export is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	FLOAT64_GAMMA_LANCZOS_G; // $ExpectType number
 }

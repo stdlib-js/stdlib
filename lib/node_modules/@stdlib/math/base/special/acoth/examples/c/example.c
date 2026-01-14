@@ -19,13 +19,13 @@
 #include "stdlib/math/base/special/acoth.h"
 #include <stdio.h>
 
-int main() {
-    double x[] = { 1.0, 1.44, 1.89, 2.33, 2.78, 3.22, 3.67, 4.11, 4.56, 5.0 };
-    double v;
-    int i;
-    
-    for ( i = 0; i < 10; i++ ) {
-        v = stdlib_base_acoth( x[ i ] );
-        printf( "acoth(%lf) = %lf\n", x[ i ], v );
-    }
+int main( void ) {
+	const double x[] = { 1.0, 1.44, 1.89, 2.33, 2.78, 3.22, 3.67, 4.11, 4.56, 5.0 };
+
+	double v;
+	int i;
+	for ( i = 0; i < 10; i++ ) {
+		v = stdlib_base_acoth( x[ i ] );
+		printf( "acoth(%lf) = %lf\n", x[ i ], v );
+	}
 }

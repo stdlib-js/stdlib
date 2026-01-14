@@ -31,4 +31,3 @@ import isDomainName = require( './index' );
 	isDomainName(); // $ExpectError
 	isDomainName( 'beep', 123 ); // $ExpectError
 }
-

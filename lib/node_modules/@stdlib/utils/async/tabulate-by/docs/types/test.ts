@@ -106,8 +106,8 @@ const done = ( error: Error | null, result: Array<Array<any>> ) => {
 
 // Attached to main export is a `factory` method which returns a function...
 {
-	tabulateByAsync.factory( indicator ); // $ExpectType FactoryFunction
-	tabulateByAsync.factory( { 'series': true }, indicator ); // $ExpectType FactoryFunction
+	tabulateByAsync.factory( indicator ); // $ExpectType FactoryFunction<number>
+	tabulateByAsync.factory( { 'series': true }, indicator ); // $ExpectType FactoryFunction<number>
 }
 
 // The compiler throws an error if the `factory` method is provided an options argument which is not an object...

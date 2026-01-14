@@ -5,9 +5,9 @@
 
     When invoked, an input function is provided three arguments:
 
-    - value: iterated value
-    - index: destination index (zero-based)
-    - n: iteration index (zero-based)
+    - value: iterated value.
+    - index: destination index (zero-based).
+    - n: iteration index (zero-based).
 
     Iteration stops when an output array view is full or an iterator finishes;
     whichever comes first.

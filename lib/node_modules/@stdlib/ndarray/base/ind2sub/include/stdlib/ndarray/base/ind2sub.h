@@ -33,7 +33,7 @@ extern "C" {
 /**
 * Converts a linear index to an array of subscripts.
 */
-int8_t stdlib_ndarray_ind2sub( int64_t ndims, int64_t *shape, int64_t *strides, int64_t offset, enum STDLIB_NDARRAY_ORDER order, int64_t idx, enum STDLIB_NDARRAY_INDEX_MODE mode, int64_t *out );
+int8_t stdlib_ndarray_ind2sub( const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset, const enum STDLIB_NDARRAY_ORDER order, const int64_t idx, const enum STDLIB_NDARRAY_INDEX_MODE mode, int64_t *out );
 
 #ifdef __cplusplus
 }

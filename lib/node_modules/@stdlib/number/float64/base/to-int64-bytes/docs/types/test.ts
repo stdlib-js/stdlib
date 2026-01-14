@@ -47,8 +47,8 @@ import float64ToInt64Bytes = require( './index' );
 {
 	const out = new Uint8Array( 8 );
 
-	float64ToInt64Bytes.assign( 3, out, 1, 0 ); // $ExpectType Collection
-	float64ToInt64Bytes.assign( 0, out, 1, 0 ); // $ExpectType Collection
+	float64ToInt64Bytes.assign( 3, out, 1, 0 ); // $ExpectType Collection<number>
+	float64ToInt64Bytes.assign( 0, out, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not a number...

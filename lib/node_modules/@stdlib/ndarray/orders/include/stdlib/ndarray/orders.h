@@ -19,15 +19,17 @@
 #ifndef STDLIB_NDARRAY_ORDERS_H
 #define STDLIB_NDARRAY_ORDERS_H
 
+#include "stdlib/blas/base/layouts.h"
+
 /**
 * Enumeration of ndarray orders (i.e., memory layout/iteration order).
 */
 enum STDLIB_NDARRAY_ORDER {
 	// Row-major (C-style):
-	STDLIB_NDARRAY_ROW_MAJOR = 1,
+	STDLIB_NDARRAY_ROW_MAJOR = STDLIB_BLAS_ROW_MAJOR,
 
 	// Column-major (Fortran-style):
-	STDLIB_NDARRAY_COLUMN_MAJOR = 2
+	STDLIB_NDARRAY_COLUMN_MAJOR = STDLIB_BLAS_COLUMN_MAJOR
 };
 
 #endif // !STDLIB_NDARRAY_ORDERS_H

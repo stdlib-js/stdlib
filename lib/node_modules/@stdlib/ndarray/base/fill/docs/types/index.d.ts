@@ -1,0 +1,127 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2024 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+/// <reference types="@stdlib/types"/>
+
+import { typedndarray, complexndarray, genericndarray } from '@stdlib/types/ndarray';
+import { ComplexLike } from '@stdlib/types/complex';
+
+/**
+* Input ndarray.
+*/
+type InputArray<T> = typedndarray<T> | genericndarray<T>;
+
+/**
+* Fills an input ndarray with a specified value.
+*
+* ## Notes
+*
+* -   If `value` is a number, the function fills an input ndarray with a complex number whose real component equals the provided scalar value and whose imaginary component is zero.
+* -   A `value` must be able to safely cast to the input ndarray data type. Scalar values having floating-point data types (both real and complex) are allowed to downcast to a lower precision data type of the same kind (e.g., a scalar double-precision floating-point number can be used to fill a `'float32'` input ndarray).
+*
+* @param x - input ndarray
+* @param value - scalar value
+* @returns input ndarray
+*
+* @example
+* var Complex128Array = require( '@stdlib/array/complex128' );
+*
+* // Create a data buffer:
+* var xbuf = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+*
+* // Define the shape of the input array:
+* var shape = [ 3, 1, 2 ];
+*
+* // Define the array strides:
+* var sx = [ 2, 2, 1 ];
+*
+* // Define the index offset:
+* var ox = 0;
+*
+* // Create the input ndarray-like object:
+* var x = {
+*     'dtype': 'complex128',
+*     'data': xbuf,
+*     'shape': shape,
+*     'strides': sx,
+*     'offset': ox,
+*     'order': 'row-major'
+* };
+*
+* var out = fill( x, 10.0 );
+*
+* console.log( x.data );
+* // => <Complex128Array>[ 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0 ]
+*
+* var bool = ( out === x );
+* // returns true
+*/
+declare function fill<T extends complexndarray = complexndarray>( x: T, value: number | ComplexLike ): T;
+
+/**
+* Fills an input ndarray with a specified value.
+*
+* ## Notes
+*
+* -   A `value` must be able to safely cast to the input ndarray data type. Scalar values having floating-point data types (both real and complex) are allowed to downcast to a lower precision data type of the same kind (e.g., a scalar double-precision floating-point number can be used to fill a `'float32'` input ndarray).
+*
+* @param x - input ndarray
+* @param value - scalar value
+* @returns input ndarray
+*
+* @example
+* var Float64Array = require( '@stdlib/array/float64' );
+*
+* // Create a data buffer:
+* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+*
+* // Define the shape of the input array:
+* var shape = [ 3, 1, 2 ];
+*
+* // Define the array strides:
+* var sx = [ 2, 2, 1 ];
+*
+* // Define the index offset:
+* var ox = 0;
+*
+* // Create the input ndarray-like object:
+* var x = {
+*     'dtype': 'float64',
+*     'data': xbuf,
+*     'shape': shape,
+*     'strides': sx,
+*     'offset': ox,
+*     'order': 'row-major'
+* };
+*
+* var out = fill( x, 10.0 );
+*
+* console.log( x.data );
+* // => <Float64Array>[ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+*
+* var bool = ( out === x );
+* // returns true
+*/
+declare function fill<T = unknown, U extends InputArray<T> = InputArray<T>>( x: U, value: T ): U;
+
+
+// EXPORTS //
+
+export = fill;

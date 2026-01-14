@@ -26,7 +26,7 @@
 * Returns the integer corresponding to the unbiased exponent of a double-precision floating-point number.
 *
 * @param x       input value
-* @returns       unbiased exponent
+* @return        unbiased exponent
 *
 * @example
 * #include <stdint.h>

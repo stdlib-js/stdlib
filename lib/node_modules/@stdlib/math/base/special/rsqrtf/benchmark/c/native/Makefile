@@ -1,7 +1,7 @@
 #/
 # @license Apache-2.0
 #
-# Copyright (c) 2020 The Stdlib Authors.
+# Copyright (c) 2025 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -88,15 +88,15 @@ c_targets := benchmark.out
 # RULES #
 
 #/
-# Compiles source files.
+# Compiles C source files.
 #
-# @param {string} [C_COMPILER] - C compiler (e.g., `gcc`)
-# @param {string} [CFLAGS] - C compiler options
-# @param {(string|void)} [fPIC] - compiler flag determining whether to generate position independent code (e.g., `-fPIC`)
-# @param {string} [INCLUDE] - list of includes (e.g., `-I /foo/bar -I /beep/boop/include`)
-# @param {string} [SOURCE_FILES] - list of source files
+# @param {string} SOURCE_FILES - list of C source files
+# @param {string} [INCLUDE] - list of includes (e.g., `-I /foo/bar -I /beep/boop`)
+# @param {string} [LIBRARIES] - list of libraries (e.g., `-lpthread -lblas`)
 # @param {string} [LIBPATH] - list of library paths (e.g., `-L /foo/bar -L /beep/boop`)
-# @param {string} [LIBRARIES] - list of libraries (e.g., `-lopenblas -lpthread`)
+# @param {string} [C_COMPILER] - C compiler
+# @param {string} [CFLAGS] - C compiler flags
+# @param {(string|void)} [fPIC] - compiler flag indicating whether to generate position independent code
 #
 # @example
 # make
@@ -112,13 +112,13 @@ all: $(c_targets)
 # Compiles C source files.
 #
 # @private
-# @param {string} CC - C compiler (e.g., `gcc`)
-# @param {string} CFLAGS - C compiler options
-# @param {(string|void)} fPIC - compiler flag determining whether to generate position independent code (e.g., `-fPIC`)
-# @param {string} INCLUDE - list of includes (e.g., `-I /foo/bar`)
-# @param {string} SOURCE_FILES - list of source files
-# @param {string} LIBPATH - list of library paths (e.g., `-L /foo/bar`)
-# @param {string} LIBRARIES - list of libraries (e.g., `-lopenblas`)
+# @param {string} SOURCE_FILES - list of C source files
+# @param {(string|void)} INCLUDE - list of includes (e.g., `-I /foo/bar -I /beep/boop`)
+# @param {(string|void)} LIBRARIES - list of libraries (e.g., `-lpthread -lblas`)
+# @param {(string|void)} LIBPATH - list of library paths (e.g., `-L /foo/bar -L /beep/boop`)
+# @param {string} CC - C compiler
+# @param {string} CFLAGS - C compiler flags
+# @param {(string|void)} fPIC - compiler flag indicating whether to generate position independent code
 #/
 $(c_targets): %.out: %.c
 	$(QUIET) $(CC) $(CFLAGS) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $< $(LIBPATH) -lm $(LIBRARIES)

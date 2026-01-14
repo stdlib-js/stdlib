@@ -88,6 +88,97 @@ for ( i = 1; i < 101; i++ ) {
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/fast/uint32_log2.h"
+```
+
+#### stdlib_base_fast_uint32_log2( x )
+
+Returns an **approximate** [binary logarithm][binary-logarithm] of an unsigned 32-bit integer `x`.
+
+```c
+#include <stdint.h>
+
+uint32_t out = stdlib_base_fast_uint32_log2( 4 );
+// returns 2
+
+out = stdlib_base_fast_uint32_log2( 9 );
+// returns 3
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] uint32_t` input value.
+
+```c
+uint32_t stdlib_base_fast_uint32_log2( const uint32_t x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/fast/uint32_log2.h"
+#include <stdio.h>
+#include <stdint.h>
+
+int main( void ) {
+    const uint32_t x[] = { 5, 7, 10, 22, 98 };
+
+    uint32_t y;
+    int i;
+    for ( i = 0; i < 5; i++ ) {
+        y = stdlib_base_fast_uint32_log2( x[ i ] );
+        printf( "uint32_log2(%u) = %u\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

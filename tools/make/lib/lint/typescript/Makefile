@@ -19,7 +19,7 @@
 # DEPENDENCIES #
 
 # Note: keep in alphabetical order...
-include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/dtslint.mk
+include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/eslint.mk
 
 
 # RULES #
@@ -32,90 +32,19 @@ include $(TOOLS_MAKE_LIB_DIR)/lint/typescript/dtslint.mk
 # -   This rule supports the environment variables supported by each context-specific (`lint-typescript-<context>`) prerequisite.
 # -   This rule is useful when wanting to glob for files, irrespective of context, for a particular package in order to lint all contained TypeScript files.
 #
-# @param {string} [TYPESCRIPT_SOURCES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [TYPESCRIPT_TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {string} [TYPESCRIPT_DECLARATIONS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
-# @param {string} [TYPESCRIPT_EXAMPLES_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
+# @param {string} [TYPESCRIPT_DECLARATIONS_TESTS_FILTER] - file path pattern (e.g., `.*/blas/base/dasum/.*`)
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
 # make lint-typescript
 #
 # @example
-# make lint-typescript TYPESCRIPT_SOURCES_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_TESTS_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_DECLARATIONS_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_EXAMPLES_FILTER=".*/blas/base/dasum/.*"
+# make lint-typescript TYPESCRIPT_DECLARATIONS_FILTER=".*/blas/base/dasum/.*" TYPESCRIPT_DECLARATIONS_TESTS_FILTER=".*/blas/base/dasum/.*"
 #/
-lint-typescript: lint-typescript-src lint-typescript-tests lint-typescript-examples lint-typescript-declarations
+lint-typescript: lint-typescript-declarations lint-typescript-declarations-tests
 
 .PHONY: lint-typescript
-
-#/
-# Lints TypeScript source files.
-#
-# ## Notes
-#
-# -   This rule is useful when wanting to glob for TypeScript source files (e.g., lint all TypeScript source files for a particular package).
-#
-# @param {string} [TYPESCRIPT_SOURCES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
-#
-# @example
-# make lint-typescript-src
-#
-# @example
-# make lint-typescript-src TYPESCRIPT_SOURCES_FILTER=".*/math/base/special/abs/.*"
-#/
-lint-typescript-src:
-ifeq ($(TYPESCRIPT_LINTER), tslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) tslint-src
-endif
-
-.PHONY: lint-typescript-src
-
-#/
-# Lints TypeScript test files.
-#
-# ## Notes
-#
-# -   This rule is useful when wanting to glob for TypeScript test files (e.g., lint all TypeScript test files for a particular package).
-#
-# @param {string} [TYPESCRIPT_TESTS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
-#
-# @example
-# make lint-typescript-tests
-#
-# @example
-# make lint-typescript-tests TYPESCRIPT_TESTS_FILTER=".*/math/base/special/abs/.*"
-#/
-lint-typescript-tests:
-ifeq ($(TYPESCRIPT_LINTER), tslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) tslint-tests
-endif
-
-.PHONY: lint-typescript-tests
-
-#/
-# Lints TypeScript examples files.
-#
-# ## Notes
-#
-# -   This rule is useful when wanting to glob for TypeScript examples files (e.g., lint all TypeScript examples files for a particular package).
-#
-# @param {string} [TYPESCRIPT_EXAMPLES_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
-# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
-#
-# @example
-# make lint-typescript-examples
-#
-# @example
-# make lint-typescript-examples TYPESCRIPT_EXAMPLES_FILTER=".*/math/base/special/abs/.*"
-#/
-lint-typescript-examples:
-ifeq ($(TYPESCRIPT_LINTER), tslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) tslint-examples
-endif
-
-.PHONY: lint-typescript-examples
 
 #/
 # Lints TypeScript declaration files.
@@ -134,11 +63,34 @@ endif
 # make lint-typescript-declarations TYPESCRIPT_DECLARATIONS_FILTER=".*/math/base/special/abs/.*"
 #/
 lint-typescript-declarations:
-ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), dtslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) dtslint-declarations
+ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), eslint)
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-ts-declarations
 endif
 
 .PHONY: lint-typescript-declarations
+
+#/
+# Lints TypeScript declaration test files.
+#
+# ## Notes
+#
+# -   This rule is useful when wanting to glob for TypeScript declaration test files (e.g., lint all TypeScript declaration test files for a particular package).
+#
+# @param {string} [TYPESCRIPT_DECLARATIONS_TESTS_FILTER] - file path pattern (e.g., `.*/math/base/special/abs/.*`)
+# @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
+#
+# @example
+# make lint-typescript-declarations-tests
+#
+# @example
+# make lint-typescript-declarations-tests TYPESCRIPT_DECLARATIONS_TESTS_FILTER=".*/math/base/special/abs/.*"
+#/
+lint-typescript-declarations-tests:
+ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), eslint)
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" $(MAKE) -f $(this_file) eslint-ts-declarations-tests
+endif
+
+.PHONY: lint-typescript-declarations-tests
 
 #/
 # Lints a specified list of TypeScript files.
@@ -151,11 +103,11 @@ endif
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
-# make lint-typescript-files FILES='/foo/index.js /bar/index.js'
+# make lint-typescript-files FILES='/foo/index.ts /bar/index.ts'
 #/
 lint-typescript-files:
-ifeq ($(TYPESCRIPT_LINTER), tslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) tslint-files
+ifeq ($(TYPESCRIPT_LINTER), eslint)
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) eslint-ts-files
 endif
 
 .PHONY: lint-typescript-files
@@ -171,11 +123,11 @@ endif
 # @param {*} [FAST_FAIL] - flag indicating whether to stop linting upon encountering a lint error
 #
 # @example
-# make lint-typescript-declarations-files FILES='/foo/index.js /bar/index.js'
+# make lint-typescript-declarations-files FILES='/foo/index.d.ts /bar/index.d.ts'
 #/
 lint-typescript-declarations-files:
-ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), dtslint)
-	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) dtslint-files
+ifeq ($(TYPESCRIPT_DECLARATIONS_LINTER), eslint)
+	$(QUIET) NODE_ENV="$(NODE_ENV)" NODE_PATH="$(NODE_PATH)" FILES="$(FILES)" $(MAKE) -f $(this_file) eslint-ts-files
 endif
 
 .PHONY: lint-typescript-declarations-files

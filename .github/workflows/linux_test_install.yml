@@ -37,6 +37,11 @@ concurrency:
   # Specify whether to cancel any currently running workflow in the same concurrency group:
   cancel-in-progress: true
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -45,6 +50,9 @@ jobs:
 
     # Define a display name:
     name: "Node.js v${{ matrix.NODE_VERSION }} - ${{ matrix.PACKAGE_MANAGER }}"
+
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
 
     # Define the type of virtual host machine:
     runs-on: ${{ matrix.OS }}
@@ -78,7 +86,7 @@ jobs:
         BUILD_TASK: ['test-install']
 
         # Define the list of Node.js versions on which to run this job:
-        NODE_VERSION: ['16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
+        NODE_VERSION: ['20', '18', '16'] # ['20', '18', '16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
 
         # Define the list of package managers to test:
         PACKAGE_MANAGER: ['npm']
@@ -91,16 +99,24 @@ jobs:
           - OS: 'ubuntu-latest'
             PLATFORM: 'linux'
 
+          - NODE_VERSION: '20'
+            NPM_VERSION: '>10.0.0'
+            PNPM_VERSION: '6'
+
+          - NODE_VERSION: '18'
+            NPM_VERSION: '>10.0.0'
+            PNPM_VERSION: '6'
+
           - NODE_VERSION: '16'
-            NPM_VERSION: '>2.7.0'
+            NPM_VERSION: '>2.7.0 <10.0.0'
             PNPM_VERSION: '6'
 
           - NODE_VERSION: '14'
-            NPM_VERSION: '>2.7.0'
+            NPM_VERSION: '>2.7.0 <10.0.0'
             PNPM_VERSION: '6'
 
           - NODE_VERSION: '12'
-            NPM_VERSION: '>2.7.0'
+            NPM_VERSION: '>2.7.0 <9.0.0'
             PNPM_VERSION: '6'
 
           - NODE_VERSION: '10'
@@ -150,7 +166,8 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -191,7 +208,8 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
           node-version: ${{ matrix.NODE_VERSION }}
         timeout-minutes: 5
@@ -242,7 +260,7 @@ jobs:
       # Run the build task:
       - name: 'Run build task'
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/test_install" "${{ matrix.PACKAGE_MANAGER }}" "${{ env.INSTALL_DIR }}" "${{ env.LOG_FILE_BUILD_TASK }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/test_install" "${{ matrix.PACKAGE_MANAGER }}" "${{ env.INSTALL_DIR }}" "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
@@ -255,7 +273,8 @@ jobs:
 
       # Upload the log file:
       - name: 'Upload log file'
-        uses: actions/upload-artifact@v3
+        # Pin action to full length commit SHA
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         if: always()
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
@@ -268,11 +287,11 @@ jobs:
           retention-days: 5
         timeout-minutes: 10
 
-  # Define a job for sending notifications to Slack...
-  slack:
+  # Define a job for sending notifications to Zulip...
+  zulip:
 
     # Define a display name:
-    name: 'Slack notification'
+    name: 'Zulip notification'
 
     # Define the type of virtual host machine:
     runs-on: 'ubuntu-latest'
@@ -281,7 +300,7 @@ jobs:
     needs: test_install
 
     # Run this job regardless of the outcome of the prior job:
-    if: always()
+    if: success() || failure()
 
     # Set defaults:
     defaults:
@@ -295,30 +314,34 @@ jobs:
       # Resolve notification data:
       - name: 'Resolve notification data'
         run: |
-          echo 'NOTIFICATION_STATUS=${{ needs.test_install.result}}' >> $GITHUB_ENV
           if [[ "${{ needs.test_install.result }}" = "success" ]]; then
-            echo 'NOTIFICATION_TEXT=**test_install** workflow succeeded (linux)' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:check:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=succeeded' >> $GITHUB_ENV
           elif [[ "${{ needs.test_install.result }}" = "failure" ]]; then
-            echo 'NOTIFICATION_TEXT=**test_install** workflow failed (linux)' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:cross_mark:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=failed' >> $GITHUB_ENV
           elif [[ "${{ needs.test_install.result }}" = "cancelled" ]]; then
-            echo 'NOTIFICATION_TEXT=**test_install** workflow was canceled (linux)' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:warning:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=was canceled' >> $GITHUB_ENV
           else
             exit 1
           fi
         timeout-minutes: 5
 
-      # Send notification to Slack:
+      # Send notification to Zulip:
       - name: 'Send notification'
-        uses: 8398a7/action-slack@v3
+        # Pin action to full length commit SHA
+        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
         if: success()
         with:
-          status: "${{ env.NOTIFICATION_STATUS }}"
-          fields: repo,commit,message
-          text: "${{ env.NOTIFICATION_TEXT }}"
-          author_name: "${{ env.NOTIFICATION_AUTHOR_NAME }}"
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+          api-key: ${{ secrets.ZULIP_API_KEY }}
+          email: 'github-actions-bot@stdlib.zulipchat.com'
+          organization-url: 'https://stdlib.zulipchat.com'
+          to: 'workflows'
+          type: 'stream'
+          topic: 'linux-test-install'
+          content: |
+            ${{ env.NOTIFICATION_ICON }} **test_install** workflow ${{ env.NOTIFICATION_STATUS }} (linux)
+
+            **Run:** [View workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
         timeout-minutes: 5

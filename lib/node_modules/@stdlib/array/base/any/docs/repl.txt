@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Tests whether at least one element in an array is truthy.
+
+    The function returns immediately upon encountering a truthy value.
+
+    If provided an empty array, the function returns `false`.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if at least one element is truthy;
+        otherwise, the function returns `false`.
+
+    Examples
+    --------
+    > var x = [ 0, 0, 1, 0 ];
+    > var out = {{alias}}( x )
+    true
+
+    See Also
+    --------
+

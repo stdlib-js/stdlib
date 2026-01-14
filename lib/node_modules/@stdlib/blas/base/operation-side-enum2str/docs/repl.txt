@@ -1,0 +1,23 @@
+
+{{alias}}( operation )
+    Returns the BLAS operation side string associated with a BLAS operation
+    side enumeration constant.
+
+    Parameters
+    ----------
+    operation: integer
+        Operation enumeration constant.
+
+    Returns
+    -------
+    out: string|null
+        Operation string.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/blas/base/operation-side-str2enum}}( 'left' ) )
+    'left'
+
+    See Also
+    --------
+

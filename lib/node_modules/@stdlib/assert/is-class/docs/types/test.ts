@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* tslint:disable:no-empty */
+/* eslint-disable no-empty */
 
 import isClass = require( './index' );
 

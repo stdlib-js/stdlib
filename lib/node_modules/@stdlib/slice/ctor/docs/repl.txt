@@ -1,0 +1,141 @@
+
+{{alias}}( [stop] )
+    Returns a Slice.
+
+    Parameters
+    ----------
+    stop: integer|null|undefined (optional)
+        Ending index (exclusive).
+
+    Returns
+    -------
+    s: Slice
+        Slice instance.
+
+    Examples
+    --------
+    > var s = new {{alias}}();
+    > s = new {{alias}}( 10 );
+
+
+{{alias}}( start, stop[, step] )
+    Returns a Slice.
+
+    Parameters
+    ----------
+    start: integer|null|undefined
+        Starting index (inclusive).
+
+    stop: integer|null|undefined
+        Ending index (exclusive).
+
+    step: integer|null|undefined (optional)
+        Index increment. A numeric index increment argument should be a non-zero
+        integer value. Default: null.
+
+    Returns
+    -------
+    s: Slice
+        Slice instance.
+
+    Examples
+    --------
+    > var s = new {{alias}}( 2, 10 );
+    > s = new {{alias}}( 2, 10, 1 );
+
+
+{{alias}}.prototype.start
+    Read-only property returning the starting slice index.
+
+    Returns
+    -------
+    start: integer|null
+        Starting index.
+
+    Examples
+    --------
+    > var s = new {{alias}}( 10 );
+    > s.start
+    null
+    > s = new {{alias}}( 2, 10 );
+    > s.start
+    2
+
+
+{{alias}}.prototype.stop
+    Read-only property returning the ending slice index.
+
+    Returns
+    -------
+    stop: integer|null
+        Ending index.
+
+    Examples
+    --------
+    > var s = new {{alias}}( 10 );
+    > s.stop
+    10
+    > s = new {{alias}}( 2, 10 );
+    > s.stop
+    10
+
+
+{{alias}}.prototype.step
+    Read-only property returning the index increment.
+
+    Returns
+    -------
+    step: integer|null
+        Index increment.
+
+    Examples
+    --------
+    > var s = new {{alias}}( 10 );
+    > s.step
+    null
+    > s = new {{alias}}( 2, 10 );
+    > s.step
+    null
+    > s = new {{alias}}( 2, 10, 1 );
+    > s.step
+    1
+
+
+{{alias}}.prototype.toString()
+    Serializes a Slice as a string.
+
+    Returns
+    -------
+    str: string
+        Serialized Slice string.
+
+    Examples
+    --------
+    > var s = new {{alias}}( 10 );
+    > s.toString()
+    'Slice(null,10,null)'
+    > s = new {{alias}}( 2, 10, 1 );
+    > s.toString()
+    'Slice(2,10,1)'
+
+
+{{alias}}.prototype.toJSON()
+    Serializes a Slice as a JSON object.
+
+    Returns
+    -------
+    obj: Object
+        JSON object.
+
+    Examples
+    --------
+    > var s = new {{alias}}( 10 );
+    > s.toJSON()
+    { 'type': 'Slice', 'data': [ null, 10, null ] }
+    > s = new {{alias}}( 2, 10, 1 );
+    > s.toJSON()
+    { 'type': 'Slice', 'data': [ 2, 10, 1 ] }
+
+    See Also
+    --------
+

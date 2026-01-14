@@ -1,0 +1,64 @@
+
+{{alias}}( ctx, arrays )
+    Converts a list of arrays to "pointers" (i.e., byte offsets) in WebAssembly
+    module memory.
+
+    Beware that this function may reallocate module memory, resulting in
+    ArrayBuffer detachment and the invalidation of any typed array views which
+    were views of the previously allocated memory.
+
+    Additionally, this function may write to module memory and does so without
+    regard for any existing memory content. Users are thus encouraged to take
+    suitable precautions (e.g., copying results out of module memory prior to
+    subsequent invocation) in order to avoid unexpected results.
+
+    Each element in the list of input arrays should have the following
+    properties:
+
+    - dtype: array data type.
+    - wdtype: WebAssembly array data type.
+    - length: number of indexed elements.
+    - data: original array-like object.
+    - stride: index increment.
+    - offset: index offset.
+
+    In addition to each element's existing properties, each element of the
+    returned array has the following additional properties:
+
+    - BYTES_PER_ELEMENT: number of bytes per element.
+    - ptr: byte offset.
+    - nbytes: number of bytes consumed by indexed array elements as stored in
+      module memory.
+    - copy: boolean indicating whether an array had to be copied to module
+      memory.
+
+    If an array's data is copied to module memory, the data is copied to a
+    contiguous segment of module memory, and the respective array object in the
+    returned array will have unit stride and an offset of zero.
+
+    Parameters
+    ----------
+    ctx: Object
+        Module context.
+
+    ctx.isView: Function
+        Function which returns a boolean indicating if a provided array is a
+        view of module memory.
+
+    ctx.realloc: Function
+        Function which reallocates module memory.
+
+    ctx.view: DataView
+        Accessor property which returns a DataView of the current module memory.
+
+    arrays: Array<Object>
+        List of array objects.
+
+    Returns
+    -------
+    out: Array<Object>
+        Array objects containing pointers to array locations in module memory.
+
+    See Also
+    --------
+

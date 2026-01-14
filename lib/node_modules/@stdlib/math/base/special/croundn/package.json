@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/croundn",
   "version": "0.0.0",
-  "description": "Round a complex number to the nearest multiple of 10^n.",
+  "description": "Round each component of a double-precision complex floating-point number to the nearest multiple of 10^n.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -14,11 +14,14 @@
     }
   ],
   "main": "./lib",
+  "gypfile": true,
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
+    "include": "./include",
     "lib": "./lib",
+    "src": "./src",
     "test": "./test"
   },
   "types": "./docs/types",

@@ -46,22 +46,8 @@ Returns a list of typed array data types.
 
 ```javascript
 var out = dtypes();
-// e.g., returns [ 'float32', 'float64', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c', 'complex128', 'complex64' ]
+// e.g., returns [ 'float32', ... ]
 ```
-
-The output `array` contains the following data types:
-
--   `float32`: single-precision floating-point numbers.
--   `float64`: double-precision floating-point numbers.
--   `complex64`: single-precision complex floating-point numbers.
--   `complex128`: double-precision complex floating-point numbers.
--   `int16`: signed 16-bit integers.
--   `int32`: signed 32-bit integers.
--   `int8`: signed 8-bit integers.
--   `uint16`: unsigned 16-bit integers.
--   `uint32`: unsigned 32-bit integers.
--   `uint8`: unsigned 8-bit integers.
--   `uint8c`: unsigned clamped 8-bit integers.
 
 </section>
 

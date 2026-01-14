@@ -23,12 +23,12 @@ import RandomStream = require( './index' );
 
 // The constructor returns a stream...
 {
-	// tslint:disable: no-unused-expression
+	/* eslint-disable @typescript-eslint/no-unused-expressions */
 	new RandomStream( 2.0, 5.0, 3.0 ); // $ExpectType RandomStream
 	new RandomStream( 2.0, 5.0, 3.0, {} ); // $ExpectType RandomStream
 	new RandomStream( 2.0, 5.0, 3.0, { 'iter': 10 } ); // $ExpectType RandomStream
 
-	// tslint:enable: no-unused-expression
+	/* eslint-enable @typescript-eslint/no-unused-expressions */
 }
 
 // The constructor is callable...

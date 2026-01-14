@@ -90,7 +90,7 @@ var bool = endsWith( str, '' );
 
     -   The function requires string values for the first and second arguments and requires that the `len` argument is an integer value.
     -   The function does **not** clamp positive `len` values to the end of the input string.
-    -   Except when provided an empty `search` string, the function **always** returns `false` is a `len` resolves to a starting search position which exceeds the bounds of the input string.
+    -   Except when provided an empty `search` string, the function **always** returns `false` if `len` resolves to a starting search position which exceeds the bounds of the input string.
 
 </section>
 

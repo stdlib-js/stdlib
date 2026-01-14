@@ -1,0 +1,24 @@
+
+{{alias}}( x )
+    Returns the Cartesian square.
+
+    If provided an empty array, the function returns an empty array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: Array<Array>
+        Cartesian product.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2 ] )
+    [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
+
+    See Also
+    --------
+

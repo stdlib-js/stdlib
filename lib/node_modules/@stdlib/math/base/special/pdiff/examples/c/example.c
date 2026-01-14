@@ -19,8 +19,8 @@
 #include "stdlib/math/base/special/pdiff.h"
 #include <stdio.h>
 
-int main() {
-	double x[] = { 3.0, 4.0, 6.0, 5.0 };
+int main( void ) {
+	const double x[] = { 3.0, 4.0, 6.0, 5.0 };
 
 	double y;
 	int i;

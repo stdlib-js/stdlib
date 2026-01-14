@@ -38,7 +38,7 @@ import zerosLike = require( './index' );
 	zerosLike( zeros( 'uint16', sh, ord ) ); // $ExpectType uint16ndarray
 	zerosLike( zeros( 'uint8', sh, ord ) ); // $ExpectType uint8ndarray
 	zerosLike( zeros( 'uint8c', sh, ord ) ); // $ExpectType uint8cndarray
-	zerosLike( zeros( 'generic', sh, ord ) ); // $ExpectType typedndarray<number>
+	zerosLike( zeros( 'generic', sh, ord ) ); // $ExpectType genericndarray<number>
 
 
 	zerosLike( zeros( 'float64', sh, ord ), {} ); // $ExpectType float64ndarray
@@ -52,7 +52,7 @@ import zerosLike = require( './index' );
 	zerosLike( zeros( 'uint16', sh, ord ), {} ); // $ExpectType uint16ndarray
 	zerosLike( zeros( 'uint8', sh, ord ), {} ); // $ExpectType uint8ndarray
 	zerosLike( zeros( 'uint8c', sh, ord ), {} ); // $ExpectType uint8cndarray
-	zerosLike( zeros( 'generic', sh, ord ), {} ); // $ExpectType typedndarray<number>
+	zerosLike( zeros( 'generic', sh, ord ), {} ); // $ExpectType genericndarray<number>
 
 
 	zerosLike( zeros( 'float64', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType float64ndarray
@@ -66,7 +66,7 @@ import zerosLike = require( './index' );
 	zerosLike( zeros( 'uint16', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType uint16ndarray
 	zerosLike( zeros( 'uint8', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType uint8ndarray
 	zerosLike( zeros( 'uint8c', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType uint8cndarray
-	zerosLike( zeros( 'generic', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType typedndarray<number>
+	zerosLike( zeros( 'generic', sh, ord ), { 'shape': [ 2, 2, 2 ] } ); // $ExpectType genericndarray<number>
 
 
 	zerosLike( zeros( 'float64', sh, ord ), { 'order': 'column-major' } ); // $ExpectType float64ndarray
@@ -80,7 +80,7 @@ import zerosLike = require( './index' );
 	zerosLike( zeros( 'uint16', sh, ord ), { 'order': 'column-major' } ); // $ExpectType uint16ndarray
 	zerosLike( zeros( 'uint8', sh, ord ), { 'order': 'column-major' } ); // $ExpectType uint8ndarray
 	zerosLike( zeros( 'uint8c', sh, ord ), { 'order': 'column-major' } ); // $ExpectType uint8cndarray
-	zerosLike( zeros( 'generic', sh, ord ), { 'order': 'column-major' } ); // $ExpectType typedndarray<number>
+	zerosLike( zeros( 'generic', sh, ord ), { 'order': 'column-major' } ); // $ExpectType genericndarray<number>
 
 
 	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'float64' } ); // $ExpectType float64ndarray
@@ -94,7 +94,7 @@ import zerosLike = require( './index' );
 	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'uint16' } ); // $ExpectType uint16ndarray
 	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'uint8' } ); // $ExpectType uint8ndarray
 	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'uint8c' } ); // $ExpectType uint8cndarray
-	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'generic' } ); // $ExpectType typedndarray<number>
+	zerosLike( zeros( 'generic', sh, ord ), { 'dtype': 'generic' } ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument is not an ndarray which has a recognized/supported data type...

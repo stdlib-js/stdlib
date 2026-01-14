@@ -26,7 +26,7 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-void print_ndarray_contents( const struct ndarray *x ) {
+static void print_ndarray_contents( const struct ndarray *x ) {
 	int64_t i;
 	int8_t s;
 	float v;
@@ -41,11 +41,11 @@ void print_ndarray_contents( const struct ndarray *x ) {
 	}
 }
 
-float scale( const float x ) {
+static float scale( const float x ) {
 	return x + 10.0f;
 }
 
-int main() {
+int main( void ) {
 	// Define the ndarray data type:
 	enum STDLIB_NDARRAY_DTYPE dtype = STDLIB_NDARRAY_FLOAT32;
 

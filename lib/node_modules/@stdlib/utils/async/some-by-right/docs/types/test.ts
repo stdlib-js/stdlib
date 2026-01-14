@@ -91,8 +91,8 @@ const done = ( error: Error | null, bool: boolean ) => {
 
 // Attached to main export is a `factory` method which returns a function...
 {
-	someByRightAsync.factory( isPositive ); // $ExpectType FactoryFunction
-	someByRightAsync.factory( { 'series': true }, isPositive ); // $ExpectType FactoryFunction
+	someByRightAsync.factory( isPositive ); // $ExpectType FactoryFunction<number>
+	someByRightAsync.factory( { 'series': true }, isPositive ); // $ExpectType FactoryFunction<number>
 }
 
 // The compiler throws an error if the `factory` method is provided an options argument which is not an object...

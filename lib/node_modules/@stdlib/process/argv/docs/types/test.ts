@@ -23,6 +23,6 @@ import ARGV = require( './index' );
 
 // The variable is a string array...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	ARGV; // $ExpectType string[]
 }

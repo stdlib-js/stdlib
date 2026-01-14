@@ -178,6 +178,8 @@
 #include "mskunary/u_z_as_u_z.h"
 #include "mskunary/u_z_as_z_z.h"
 
+#include "mskunary/x_x.h"
+
 #include "mskunary/z_d_as_z_d.h"
 #include "mskunary/z_z.h"
 // END LOOPS

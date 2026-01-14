@@ -1,0 +1,71 @@
+
+{{alias}}( x, shape, fcn[, thisArg] )
+    Applies a function to elements in a four-dimensional nested input array and
+    assigns results to elements in a new four-dimensional nested output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input nested array.
+
+    shape: Array<integer>
+        Array shape.
+
+    fcn: Function
+        Function to apply.
+
+    thisArg: any (optional)
+        Function execution context.
+
+    Returns
+    -------
+    out: Array<Array>
+        Output nested array.
+
+    Examples
+    --------
+    > var x = [ [ [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] ] ];
+    > var shape = [ 1, 1, 2, 2 ];
+    > var y = {{alias}}( x, shape, {{alias:@stdlib/math/base/special/abs}} )
+    [ [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ] ]
+
+
+{{alias}}.assign( x, y, shape, fcn[, thisArg] )
+    Applies a function to elements in a four-dimensional nested input array and
+    assigns results to elements in a four-dimensional nested output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input nested array.
+
+    y: ArrayLikeObject
+        Output nested array.
+
+    shape: Array<integer>
+        Array shape.
+
+    fcn: Function
+        Function to apply.
+
+    thisArg: any (optional)
+        Function execution context.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output nested array.
+
+    Examples
+    --------
+    > var x = [ [ [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] ] ];
+    > var y = [ [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ] ];
+    > var shape = [ 1, 1, 2, 2 ];
+    > var out = {{alias}}.assign( x, y, shape, {{alias:@stdlib/math/base/special/abs}} )
+    [ [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ] ]
+    > var b = ( out === y )
+    true
+
+    See Also
+    --------
+

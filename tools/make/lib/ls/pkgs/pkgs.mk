@@ -45,7 +45,7 @@ PACKAGES ?= $(shell $(FIND_PACKAGES_CMD))
 # ## Notes
 #
 # -   This recipe excludes the `node_modules`, `build`, and `reports` directories.
-#/
+#
 # @param {string} [PACKAGES_PATTERN='package.json'] - filename pattern for identifying packages
 # @param {string} [PACKAGES_FILTER='.*/.*'] - filepath pattern for finding packages
 #

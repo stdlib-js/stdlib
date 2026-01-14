@@ -23,10 +23,10 @@ import array = require( './index' );
 
 // The function returns an ndarray...
 {
-	array( [ [ 1, 2 ], [ 3, 4 ] ] ); // $ExpectType ndarray
-	array( new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] ), { 'shape': [ 2, 2 ] } ); // $ExpectType ndarray
-	array( { 'shape': [ 2, 2 ] } ); // $ExpectType ndarray
-	array( { 'buffer': [ [ 1, 2 ], [ 3, 4 ] ] } ); // $ExpectType ndarray
+	array<number>( [ [ 1, 2 ], [ 3, 4 ] ] ); // $ExpectType typedndarray<number>
+	array<number>( new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] ), { 'shape': [ 2, 2 ] } ); // $ExpectType typedndarray<number>
+	array<number>( { 'shape': [ 2, 2 ] } ); // $ExpectType typedndarray<number>
+	array<number>( { 'buffer': [ [ 1, 2 ], [ 3, 4 ] ] } ); // $ExpectType typedndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array, buffer, or options object...
@@ -41,6 +41,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided a second argument which is not an options object...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array( buffer, 'abc' ); // $ExpectError
 	array( buffer, true ); // $ExpectError
 	array( buffer, false ); // $ExpectError
@@ -52,6 +53,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided a `dtype` option which is not a recognized data type...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array( buffer, { 'dtype': 'abc' } ); // $ExpectError
 	array( buffer, { 'dtype': 123 } ); // $ExpectError
 	array( buffer, { 'dtype': true } ); // $ExpectError
@@ -74,6 +76,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided an `order` option which is not a recognized order...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array( buffer, { 'order': 'abc' } ); // $ExpectError
 	array( buffer, { 'order': 123 } ); // $ExpectError
 	array( buffer, { 'order': true } ); // $ExpectError
@@ -96,6 +99,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided a `shape` option which is not an array-like object containing numbers...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array( buffer, { 'shape': 'abc' } ); // $ExpectError
 	array( buffer, { 'shape': 123 } ); // $ExpectError
 	array( buffer, { 'shape': true } ); // $ExpectError
@@ -116,6 +120,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided a `mode` option which is not a recognized mode...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array( buffer, { 'mode': 'abc' } ); // $ExpectError
 	array( buffer, { 'mode': 123 } ); // $ExpectError
 	array( buffer, { 'mode': true } ); // $ExpectError
@@ -138,6 +143,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided an `submode` option which is not an array of strings...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array( buffer, { 'submode': 'abc' } ); // $ExpectError
 	array( buffer, { 'submode': 123 } ); // $ExpectError
 	array( buffer, { 'submode': true } ); // $ExpectError
@@ -158,6 +164,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided a `copy` option which is not a boolean...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array( buffer, { 'copy': 'abc' } ); // $ExpectError
 	array( buffer, { 'copy': 123 } ); // $ExpectError
 	array( buffer, { 'copy': null } ); // $ExpectError
@@ -176,6 +183,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided a `flatten` option which is not a boolean...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array( buffer, { 'flatten': 'abc' } ); // $ExpectError
 	array( buffer, { 'flatten': 123 } ); // $ExpectError
 	array( buffer, { 'flatten': null } ); // $ExpectError
@@ -194,6 +202,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided a `ndmin` option which is not a number...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array( buffer, { 'ndmin': 'abc' } ); // $ExpectError
 	array( buffer, { 'ndmin': false } ); // $ExpectError
 	array( buffer, { 'ndmin': true } ); // $ExpectError
@@ -214,6 +223,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided a `casting` option which is not a string...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array( buffer, { 'casting': 123 } ); // $ExpectError
 	array( buffer, { 'casting': false } ); // $ExpectError
 	array( buffer, { 'casting': true } ); // $ExpectError
@@ -234,6 +244,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided a `readonly` option which is not a boolean...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array( buffer, { 'readonly': 'abc' } ); // $ExpectError
 	array( buffer, { 'readonly': 123 } ); // $ExpectError
 	array( buffer, { 'readonly': null } ); // $ExpectError
@@ -252,6 +263,7 @@ import array = require( './index' );
 // The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+
 	array(); // $ExpectError
 	array( buffer, {}, {} ); // $ExpectError
 }

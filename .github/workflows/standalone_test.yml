@@ -33,6 +33,11 @@ concurrency:
   # Specify whether to cancel any currently running workflow in the same concurrency group:
   cancel-in-progress: true
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -50,7 +55,8 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -64,9 +70,10 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
-          node-version: '16' # 'lts/*'
+          node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
@@ -78,15 +85,15 @@ jobs:
       # Trigger standalone package tests:
       - name: 'Trigger tests'
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           node lib/node_modules/@stdlib/_tools/scripts/trigger_workflow_events.js
 
-  # Define a job for sending notifications to Slack...
-  slack:
+  # Define a job for sending notifications to Zulip...
+  zulip:
 
     # Define a display name:
-    name: 'Slack notification'
+    name: 'Zulip notification'
 
     # Define the type of virtual host machine:
     runs-on: 'ubuntu-latest'
@@ -109,30 +116,34 @@ jobs:
       # Resolve notification data:
       - name: 'Resolve notification data'
         run: |
-          echo 'NOTIFICATION_STATUS=${{ needs.trigger.result}}' >> $GITHUB_ENV
           if [[ "${{ needs.trigger.result }}" = "success" ]]; then
-            echo 'NOTIFICATION_TEXT=**standalone_test** workflow succeeded' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:check:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=succeeded' >> $GITHUB_ENV
           elif [[ "${{ needs.trigger.result }}" = "failure" ]]; then
-            echo 'NOTIFICATION_TEXT=**standalone_test** workflow failed' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:cross_mark:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=failed' >> $GITHUB_ENV
           elif [[ "${{ needs.trigger.result }}" = "cancelled" ]]; then
-            echo 'NOTIFICATION_TEXT=**standalone_test** workflow was canceled' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:warning:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=was canceled' >> $GITHUB_ENV
           else
             exit 1
           fi
         timeout-minutes: 5
 
-      # Send notification to Slack:
+      # Send notification to Zulip:
       - name: 'Send notification'
-        uses: 8398a7/action-slack@v3
+        # Pin action to full length commit SHA
+        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
         if: success()
         with:
-          status: "${{ env.NOTIFICATION_STATUS }}"
-          fields: repo,commit,message
-          text: "${{ env.NOTIFICATION_TEXT }}"
-          author_name: "${{ env.NOTIFICATION_AUTHOR_NAME }}"
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+          api-key: ${{ secrets.ZULIP_API_KEY }}
+          email: 'github-actions-bot@stdlib.zulipchat.com'
+          organization-url: 'https://stdlib.zulipchat.com'
+          to: 'workflows'
+          type: 'stream'
+          topic: 'standalone-test'
+          content: |
+            ${{ env.NOTIFICATION_ICON }} **standalone_test** workflow ${{ env.NOTIFICATION_STATUS }}
+
+            **Run:** [View workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
         timeout-minutes: 5

@@ -1,0 +1,45 @@
+{
+  "alias": "negativeBinomial",
+  "pkg": "stdlib/random/array/negative-binomial",
+  "base_pkg": "stdlib/random/base/negative-binomial",
+
+  "param_1": "r",
+  "param_1_value": "10",
+  "param_1_desc": "number of successes until experiment is stopped",
+  "param_1_dtype": "number",
+  "param_1_jsdoc_dtype": "PositiveNumber",
+  "param_1_throws_desc": "must be a positive number",
+
+  "param_2": "p",
+  "param_2_value": "0.5",
+  "param_2_desc": "success probability",
+  "param_2_dtype": "number",
+  "param_2_jsdoc_dtype": "Probability",
+  "param_2_throws_desc": "must be a probability (i.e., a number on the interval [0,1])",
+
+  "output_ts_dtype": "RealAndGenericDataType",
+  "output_ts_typed_array": "RealTypedArray",
+  "output_dtype_kind": "real_and_generic",
+
+  "default_dtype": "float64",
+  "default_dtype_kind": "real",
+  "default_typed_array": "Float64Array",
+
+  "from_desc": "a negative binomial distribution",
+  "readme_from_desc": "a [negative binomial][@stdlib/random/base/negative-binomial] distribution",
+
+  "readme_heading": "Negative Binomial Random Numbers",
+  "readme_dtype_kind_desc": "real-valued data type",
+  "readme_dtype_kind_pkg": "stdlib/array/typed-real-dtypes",
+
+  "repl_text_main_desc": "Returns an array containing pseudorandom numbers drawn from a negative binomial distribution.",
+  "repl_text_assign_desc": "Fills an array with pseudorandom numbers drawn from a negative binomial distribution.",
+  "repl_text_factory_desc": "Returns a function for creating arrays containing pseudorandom numbers drawn from a negative binomial distribution.",
+
+  "repl_text_param_1_desc": "Number of successes until experiment is stopped.",
+  "repl_text_param_2_desc": "Success probability.",
+
+  "repl_text_output_typed_arrays": "TypedArray",
+
+  "keywords": "negative,binomial,negative-binomial,discrete"
+}

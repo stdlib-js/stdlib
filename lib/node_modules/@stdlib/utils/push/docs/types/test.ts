@@ -23,10 +23,10 @@ import push = require( './index' );
 
 // The function returns the updated input collection ...
 {
-	push( [ 2, 3 ], 4 ); // $ExpectType Collection
-	push( [ 'a', 'b', 'c' ], 'd' ); // $ExpectType Collection
-	push( [ true, false ], true ); // $ExpectType Collection
-	push( [ true, true ], true ); // $ExpectType Collection
+	push( [ 2, 3 ], 4 ); // $ExpectType Collection<number>
+	push( [ 'a', 'b', 'c' ], 'd' ); // $ExpectType Collection<string>
+	push( [ true, false ], true ); // $ExpectType Collection<boolean>
+	push( [ true, true ], true ); // $ExpectType Collection<boolean>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...

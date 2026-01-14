@@ -32,7 +32,7 @@ extern "C" {
 /**
 * Converts subscripts to a linear index.
 */
-int64_t stdlib_ndarray_sub2ind( int64_t ndims, int64_t *shape, int64_t *strides, int64_t offset, int64_t *sub, int64_t nmodes, int8_t *modes );
+int64_t stdlib_ndarray_sub2ind( const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset, const int64_t *sub, const int64_t nmodes, const int8_t *modes );
 
 #ifdef __cplusplus
 }

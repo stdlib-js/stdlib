@@ -1,0 +1,42 @@
+{
+  "expression": "do {} while ( x[ )",
+  "cursor": 15,
+  "ast": {
+    "type": "Program",
+    "start": 0,
+    "end": 18,
+    "body": [
+      {
+        "type": "DoWhileStatement",
+        "start": 0,
+        "end": 18,
+        "body": {
+          "type": "BlockStatement",
+          "start": 3,
+          "end": 5,
+          "body": []
+        },
+        "test": {
+          "type": "MemberExpression",
+          "start": 14,
+          "end": 17,
+          "object": {
+            "type": "Identifier",
+            "start": 14,
+            "end": 15,
+            "name": "x"
+          },
+          "property": {
+            "type": "Identifier",
+            "start": 17,
+            "end": 17,
+            "name": "✖"
+          },
+          "computed": true,
+          "optional": false
+        }
+      }
+    ],
+    "sourceType": "script"
+  }
+}

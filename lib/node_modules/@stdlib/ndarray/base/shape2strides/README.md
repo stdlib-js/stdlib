@@ -188,7 +188,7 @@ int8_t stdlib_ndarray_shape2strides( int64_t ndims, int64_t *shape, enum STDLIB_
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
+int main( void ) {
     int64_t shape[] = { 2, 3, 10 };
     int64_t ndims = 3;
     int64_t out[ 3 ];

@@ -1,0 +1,27 @@
+
+{{alias}}( layout )
+    Returns the enumeration constant associated with a BLAS memory layout
+    string.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `ROW_MAJOR == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    layout: string
+        Memory layout string.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'row-major' )
+    <number>
+
+    See Also
+    --------
+

@@ -23,9 +23,23 @@ import curryRight = require( './index' );
 
 // The function returns a function...
 {
-	curryRight( ( x: number, y: number ): number => x + y ); // $ExpectType Closure
-	curryRight( ( x: number, y: number ): number => x + y, 2 ); // $ExpectType Closure
-	curryRight( ( x: number, y: number ): number => x + y, 2, {} ); // $ExpectType Closure
+	curryRight( ( x: number, y: number ): number => x + y ); // $ExpectType (v: number) => (v: number) => number
+	curryRight( ( x: number, y: number ): number => x + y, 2 ); // $ExpectType (v: number) => (v: number) => number
+	curryRight( ( x: number, y: number ): number => x + y, 2, {} ); // $ExpectType (v: number) => (v: number) => number
+	curryRight( ( x: string, y: string ): string => x + y, {} ); // $ExpectType (v: string) => (v: string) => string
+	curryRight( ( x: string, y: string ): string => x + y, 2, {} ); // $ExpectType (v: string) => (v: string) => string
+	curryRight( ( str: string, n: number ): string => str.substring( n ) ); // $ExpectType (v: number) => (v: string) => string
+
+	const cxt = {
+		'count': 0,
+		'multiply': function multiply( this: { count: number }, x: number, y: number ): number {
+			this.count += 1; // eslint-disable-line no-invalid-this
+			return x * y;
+		}
+	};
+	curryRight( cxt.multiply ); // $ExpectType (v: number) => (v: number) => number
+	curryRight( cxt.multiply, 2 ); // $ExpectType (v: number) => (v: number) => number
+	curryRight( cxt.multiply, 2, { 'count': 2 } ); // $ExpectType (v: number) => (v: number) => number
 }
 
 // The compiler throws an error if the function is provided a first argument other than a function...
@@ -36,6 +50,19 @@ import curryRight = require( './index' );
 	curryRight( [] ); // $ExpectError
 	curryRight( {} ); // $ExpectError
 	curryRight( 'abc' ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a this argument which does not constitute a valid `this` context...
+{
+	const cxt = {
+		'count': 0,
+		'multiply': function multiply( this: { count: number }, x: number, y: number ): number {
+			this.count += 1; // eslint-disable-line no-invalid-this
+			return x * y;
+		}
+	};
+	curryRight( cxt.multiply, { 'COUNT': 2 } ); // $ExpectError
+	curryRight( cxt.multiply, 2, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided more than three arguments...

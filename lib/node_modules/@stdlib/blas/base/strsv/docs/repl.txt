@@ -1,0 +1,118 @@
+
+{{alias}}( ord, uplo, trans, diag, N, A, lda, x, sx )
+    Solves one of the systems of equations `A*x = b` or `A^T*x = b` where `b`
+    and `x` are `N` element vectors and `A` is an `N` by `N` unit, or non-unit,
+    upper or lower triangular matrix.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is equal to `0`, the function returns `x` unchanged.
+
+    Parameters
+    ----------
+    ord: string
+        Row-major (C-style) or column-major (Fortran-style) order. Must be
+        either 'row-major' or 'column-major'.
+
+    uplo: string
+        Specifies whether `A` is an upper or lower triangular matrix.
+
+    trans: string
+        Specifies whether `A` should be transposed, conjugate-transposed, or not
+        transposed.
+
+    diag: string
+        Specifies whether `A` has a unit diagonal.
+
+    N: integer
+        Number of elements along each dimension of `A`.
+
+    A: Float32Array
+        Input matrix.
+
+    lda: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    x: Float32Array
+        Input vector.
+
+    sx: integer
+        Index increment for `x`.
+
+    Returns
+    -------
+    x: Float32Array
+        Input vector.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
+    > var A = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 0.0, 1.0 ] );
+    > {{alias}}( 'row-major', 'upper', 'no-transpose', 'unit', 2, A, 2, x, 1 )
+    <Float32Array>[ -1.0, 1.0 ]
+
+
+{{alias}}.ndarray( uplo, trans, diag, N, A, sa1, sa2, oa, x, sx, ox )
+    Solves one of the systems of equations `A*x = b` or `A^T*x = b`, using
+    alternative indexing semantics and where `b` and `x` are `N` element vectors
+    and `A` is an `N` by `N` unit, or non-unit, upper or lower triangular
+    matrix.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    uplo: string
+        Specifies whether `A` is an upper or lower triangular matrix.
+
+    trans: string
+        Specifies whether `A` should be transposed, conjugate-transposed, or not
+        transposed.
+
+    diag: string
+        Specifies whether `A` has a unit diagonal.
+
+    N: integer
+        Number of elements along each dimension of `A`.
+
+    A: Float32Array
+        Input matrix.
+
+    sa1: integer
+        Stride of the first dimension of `A`.
+
+    sa2: integer
+        Stride of the second dimension of `A`.
+
+    oa: integer
+        Starting index for `A`.
+
+    x: Float32Array
+        Input vector.
+
+    sx: integer
+        Index increment for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    Returns
+    -------
+    x: Float32Array
+        Input vector.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 1.0 ] );
+    > var A = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 0.0, 1.0 ] );
+    > var uplo = 'upper';
+    > var trans = 'no-transpose';
+    > {{alias}}.ndarray( uplo, trans, 'unit', 2, A, 2, 1, 0, x, 1, 0 )
+    <Float32Array>[ -1.0, 1.0 ]
+
+    See Also
+    --------

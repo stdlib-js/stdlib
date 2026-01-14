@@ -1,0 +1,50 @@
+'use strict';
+
+// MODULES //
+
+var float64ToFloat32 = require( '@stdlib/number/float64/base/to-float32' );
+
+
+// MAIN //
+
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @private
+* @param {number} x - value at which to evaluate the rational function
+* @returns {number} evaluated rational function
+*/
+function evalrational( x ) {
+	var ax;
+	var s1;
+	var s2;
+	if ( x === 0.0 ) {
+		return -0.5233333706855774;
+	}
+	if ( x < 0.0 ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0 ) {
+		s1 = float64ToFloat32(-3.140000104904175 + float64ToFloat32(x * 0.0));
+		s2 = float64ToFloat32(6.0 + float64ToFloat32(x * 0.0));
+	} else {
+		x = float64ToFloat32( 1.0 / x );
+		s1 = float64ToFloat32(0.0 + float64ToFloat32(x * -3.140000104904175));
+		s2 = float64ToFloat32(0.0 + float64ToFloat32(x * 6.0));
+	}
+	return float64ToFloat32( s1 / s2 );
+}
+
+
+// EXPORTS //
+
+module.exports = evalrational;

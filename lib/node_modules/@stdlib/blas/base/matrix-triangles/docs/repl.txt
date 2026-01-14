@@ -1,0 +1,22 @@
+
+{{alias}}()
+    Returns a list of matrix triangles.
+
+    The output array contains the following matrix triangles:
+
+    - upper: upper triangular part of a matrix.
+    - lower: lower triangular part of a matrix.
+
+    Returns
+    -------
+    out: Array<string>
+        List of matrix triangles.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [ 'upper', 'lower' ]
+
+    See Also
+    --------
+

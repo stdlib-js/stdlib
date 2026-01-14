@@ -139,7 +139,7 @@ while ( true ) {
 -   <span class="package-name">[`@stdlib/math/base/special/log1pexp`][@stdlib/math/base/special/log1pexp]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of 1+exp(x).</span>
 -   <span class="package-name">[`@stdlib/math/iter/special/log`][@stdlib/math/iter/special/log]</span><span class="delimiter">: </span><span class="description">create an iterator which computes the base `b` logarithm.</span>
 -   <span class="package-name">[`@stdlib/math/iter/special/log1p`][@stdlib/math/iter/special/log1p]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural logarithm of 1+x for each iterated value.</span>
--   <span class="package-name">[`@stdlib/math/iter/special/log1mexp`][@stdlib/math/iter/special/log1mexp]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural logarithm of 1-exp(-|x|) for each iterated value.</span>
+-   <span class="package-name">[`@stdlib/math/iter/special/log1mexp`][@stdlib/math/iter/special/log1mexp]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the natural logarithm of 1-exp(-\|x\|) for each iterated value.</span>
 -   <span class="package-name">[`@stdlib/math/iter/special/pow`][@stdlib/math/iter/special/pow]</span><span class="delimiter">: </span><span class="description">create an iterator which evaluates the exponential function.</span>
 
 </section>

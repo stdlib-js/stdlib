@@ -33,7 +33,7 @@ extern "C" {
 /**
 * Converts a linear index in an array view to a linear index in an underlying data buffer.
 */
-int64_t stdlib_ndarray_vind2bind( int64_t ndims, int64_t *shape, int64_t *strides, int64_t offset, enum STDLIB_NDARRAY_ORDER order, int64_t idx, enum STDLIB_NDARRAY_INDEX_MODE mode );
+int64_t stdlib_ndarray_vind2bind( const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset, const enum STDLIB_NDARRAY_ORDER order, const int64_t idx, const enum STDLIB_NDARRAY_INDEX_MODE mode );
 
 #ifdef __cplusplus
 }

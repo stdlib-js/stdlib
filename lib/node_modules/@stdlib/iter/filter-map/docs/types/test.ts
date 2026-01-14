@@ -48,7 +48,7 @@ function iterator() {
 * @param i - iteration index
 * @returns callback result
 */
-function fcn1( _v: any, i: number ): number { // tslint:disable-line:variable-name
+function fcn1( _v: any, i: number ): number {
 	return i + 1;
 }
 

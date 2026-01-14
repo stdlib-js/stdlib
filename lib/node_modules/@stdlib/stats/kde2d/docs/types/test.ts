@@ -16,8 +16,6 @@
 * limitations under the License.
 */
 
-// tslint:disable:max-line-length
-
 import kde2d = require( './index' );
 
 

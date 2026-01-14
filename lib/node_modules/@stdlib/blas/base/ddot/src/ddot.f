@@ -52,7 +52,7 @@
 ! @param {integer} strideX - `dx` stride length
 ! @param {Array<double>} dy - second array
 ! @param {integer} strideY - `dy` stride length
-! @returns {double} the dot product of `dx` and `dy`
+! @returns {double} the dot product
 !<
 double precision function ddot( N, dx, strideX, dy, strideY )
   implicit none

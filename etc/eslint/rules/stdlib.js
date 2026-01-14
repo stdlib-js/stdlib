@@ -1,3 +1,5 @@
+/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest, stdlib/jsdoc-example-require-spacing, stdlib/jsdoc-no-tabs */
+
 /**
 * @license Apache-2.0
 *
@@ -15,8 +17,6 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-
-/* eslint-disable stdlib/jsdoc-doctest-marker, stdlib/jsdoc-doctest */
 
 'use strict';
 
@@ -69,7 +69,7 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 		'stdlib',
 		'throws'
 	]
-} ];
+}];
 
 /**
 * Enforce that return annotation values match actual output.
@@ -96,6 +96,35 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 * // returns 'Hello World'
 */
 rules[ 'stdlib/doctest' ] = 'off';
+
+/**
+* Enforce spacing in return annotations in single-line comments.
+*
+* @name doctest-annotation-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var v = 3.14;
+* // returns             3.14
+*
+* console.log( 'beep' );
+* //=> 'beep'
+*
+* var x = true;
+* //  returns true
+*
+* @example
+* // Good...
+* var v = 3.14;
+* // returns 3.14
+*
+* console.log( 'beep' );
+* // => 'beep'
+*/
+rules[ 'stdlib/doctest-annotation-spacing' ] = 'error';
 
 /**
 * Enforce marker style conventions for return annotations.
@@ -199,6 +228,52 @@ rules[ 'stdlib/doctest-quote-props' ] = 'error';
 * }
 */
 rules[ 'stdlib/empty-line-before-comment' ] = 'error';
+
+/**
+* Disallow spaces between an opening parenthesis or bracket and a nested object or array expression at the end of a line.
+*
+* @name eol-open-bracket-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var log = require( '@stdlib/console/log' );
+*
+* log( {
+*   'foo': true
+* });
+*
+* log( [
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log( [ {
+*   'bar': true
+* }]);
+*
+* @example
+* // Good...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* });
+*
+* log([
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log([{
+*   'bar': true
+* }]);
+*/
+rules[ 'stdlib/eol-open-bracket-spacing' ] = 'error';
 
 /**
 * Require blockquotes to have `2` character indentation.
@@ -793,6 +868,49 @@ rules[ 'stdlib/jsdoc-emphasis-marker' ] = [ 'error', '_' ];
 rules[ 'stdlib/jsdoc-empty-line-before-example' ] = 'error';
 
 /**
+* Enforce empty lines between requires and code in JSDoc examples.
+*
+* @name jsdoc-example-require-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Fréchet distribution constructor.
+* *
+* * @module @stdlib/stats/base/dists/frechet/ctor
+* *
+* * @example
+* * var Frechet = require( '@stdlib/stats/base/dists/frechet/ctor' );
+* * var frechet = new Frechet( 1.0, 1.0, 0.5 );
+* *
+* * var y = frechet.cdf( 0.8 );
+* * // returns ~0.036
+* *\/
+*
+* @example
+* // Good...
+*
+* /**
+* * Fréchet distribution constructor.
+* *
+* * @module @stdlib/stats/base/dists/frechet/ctor
+* *
+* * @example
+* * var Frechet = require( '@stdlib/stats/base/dists/frechet/ctor' );
+* *
+* * var frechet = new Frechet( 1.0, 1.0, 0.5 );
+* *
+* * var y = frechet.cdf( 0.8 );
+* * // returns ~0.036
+* *\/
+*/
+rules[ 'stdlib/jsdoc-example-require-spacing' ] = 'error';
+
+/**
 * Require `\`` be used as the fenced code marker.
 *
 * @name jsdoc-fenced-code-marker
@@ -1028,7 +1146,6 @@ rules[ 'stdlib/jsdoc-hard-break-spaces' ] = 'error';
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -1203,7 +1320,6 @@ rules[ 'stdlib/jsdoc-linebreak-style' ] = [ 'error', 'unix' ];
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -1249,7 +1365,6 @@ rules[ 'stdlib/jsdoc-maximum-heading-length' ] = [ 'error', 80 ];
 * function beep() {
 *     return 'boop';
 * }
-*
 *
 * @example
 * // Good...
@@ -2007,7 +2122,6 @@ rules[ 'stdlib/jsdoc-no-duplicate-tags' ] = 'error';
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -2054,7 +2168,6 @@ rules[ 'stdlib/jsdoc-no-emphasis-as-heading' ] = 'error';
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -2100,7 +2213,6 @@ rules[ 'stdlib/jsdoc-no-empty-url' ] = 'error';
 * function beep() {
 *     return 'boop';
 * }
-*
 *
 * @example
 * // Good...
@@ -2152,7 +2264,6 @@ rules[ 'stdlib/jsdoc-no-heading-content-indent' ] = 'error';
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -2203,7 +2314,6 @@ rules[ 'stdlib/jsdoc-no-heading-indent' ] = 'error';
 *     return 'boop';
 * }
 *
-*
 * @example
 * // Good...
 *
@@ -2253,7 +2363,6 @@ rules[ 'stdlib/jsdoc-no-heading-like-paragraph' ] = 'error';
 * function beep() {
 *     return 'boop';
 * }
-*
 *
 * @example
 * // Good...
@@ -2346,7 +2455,6 @@ rules[ 'stdlib/jsdoc-no-html' ] = 'error';
 * function beep() {
 *     return 'boop';
 * }
-*
 *
 * @example
 * // Good...
@@ -2483,9 +2591,53 @@ rules[ 'stdlib/jsdoc-no-missing-blank-lines' ] = [ 'error', {
 }];
 
 /**
+* Disallow multiple blank lines in JSDoc comments.
+*
+* @name jsdoc-no-multiple-blank-lines
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+* * Boop beep.
+* *
+* *
+* * @returns {string} a value
+* *
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Boop beep.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-multiple-blank-lines' ] = 'error';
+
+/**
 * Allow multiple top-level headings.
 *
-* @name jsdoc-no-multiple-toplevel-heading
+* @name jsdoc-no-multiple-toplevel-headings
 * @memberof rules
 * @type {string}
 * @default 'off'
@@ -2540,7 +2692,6 @@ rules[ 'stdlib/jsdoc-no-multiple-toplevel-headings' ] = 'off';
 * function beep() {
 *     return 'boop';
 * }
-*
 *
 * @example
 * // Good...
@@ -2751,6 +2902,48 @@ rules[ 'stdlib/jsdoc-no-shortcut-reference-image' ] = 'error';
 * }
 */
 rules[ 'stdlib/jsdoc-no-shortcut-reference-link' ] = 'error';
+
+/**
+* Prevent space-aligned asterisks for JSDoc comments.
+*
+* @name
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* /**
+*  * Beep boop.
+*  *
+*  * @returns {string} a value
+*  *
+*  * @example
+*  * var str = beep();
+*  * // returns 'boop'
+*  *\/
+* function beep() {
+*     return 'boop';
+* }
+*
+* @example
+* // Good...
+*
+* /**
+* * Beep boop.
+* *
+* * @returns {string} a value
+* *
+* * @example
+* * var str = beep();
+* * // returns 'boop'
+* *\/
+* function beep() {
+*     return 'boop';
+* }
+*/
+rules[ 'stdlib/jsdoc-no-space-aligned-asterisks' ] = 'error';
 
 /**
 * Prevent unnecessary indentation before tables.
@@ -3741,6 +3934,52 @@ rules[ 'stdlib/jsdoc-unordered-list-marker-style' ] = [ 'error', '-' ];
 rules[ 'stdlib/jsdoc-main-export' ] = 'error';
 
 /**
+* Disallow spaces between a closing parenthesis or bracket and a nested object or array expression at the beginning of a line.
+*
+* @name line-closing-bracket-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* } );
+*
+* log([
+*   1,
+*   2,
+*   3
+* ] );
+*
+* log([{
+*   'bar': true
+* } ] );
+*
+* @example
+* // Good...
+* var log = require( '@stdlib/console/log' );
+*
+* log({
+*   'foo': true
+* });
+*
+* log([
+*   1,
+*   2,
+*   3
+* ]);
+*
+* log([{
+*   'bar': true
+* }]);
+*/
+rules[ 'stdlib/line-closing-bracket-spacing' ] = 'error';
+
+/**
 * Enforce that export statements are placed at the end of a file.
 *
 * @name module-exports-last
@@ -3796,7 +4035,6 @@ rules[ 'stdlib/namespace-export-all' ] = 'warn';
 *
 * var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 *
-*
 * // MAIN //
 *
 * var ns = {};
@@ -3824,7 +4062,6 @@ rules[ 'stdlib/namespace-export-all' ] = 'warn';
 * // MODULES //
 *
 * var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
-*
 *
 * // MAIN //
 *
@@ -3920,6 +4157,76 @@ rules[ 'stdlib/new-cap-regexp' ] = 'error';
 rules[ 'stdlib/no-dynamic-require' ] = 'error';
 
 /**
+* Disallow empty comments.
+*
+* @name no-empty-comments
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* function square( x ) {
+*     var out;
+*
+*     //
+*     out = x*x;
+*     return out;
+* }
+*
+* @example
+* // Good...
+* function square( x ) {
+*     var out;
+*
+*     // Square the number:
+*     out = x*x;
+*     return out;
+* }
+*/
+rules[ 'stdlib/no-empty-comments' ] = 'error';
+
+/**
+* Enforce no empty lines between module-level require statements.
+*
+* @name no-empty-lines-between-requires
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var foo = require( 'foo' );
+*
+* var bar = require( 'bar' );
+*
+* @example
+* // Good...
+* var foo = require( 'foo' );
+* var bar = require( 'bar' );
+*/
+rules[ 'stdlib/no-empty-lines-between-requires' ] = 'error';
+
+/**
+* Disallow string concatenation in error messages.
+*
+* @name no-error-string-concat
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* throw new Error( 'invalid argument. Value: `' + value + '`.' );
+*
+* @example
+* // Good...
+* throw new Error( 'unexpected error.' );
+* throw new Error( format( 'invalid argument. Value: `%s`.', value ) );
+*/
+rules[ 'stdlib/no-error-string-concat' ] = 'error';
+
+/**
 * Enforce that `require()` expressions are not immediately invoked.
 *
 * @name no-immediate-require
@@ -3969,12 +4276,10 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 *
 * // MAIN //
 *
-*
 * function xlogy( x, y ) {
 *   if ( x === 0.0 && !isnan( y ) ) {
 *     return 0.0;
 *   }
-*
 *
 *   return x * ln( y );
 * }
@@ -3992,6 +4297,30 @@ rules[ 'stdlib/no-internal-require' ] = 'error';
 * }
 */
 rules[ 'stdlib/no-multiple-empty-lines' ] = 'error';
+
+/**
+* Disallow usage of the built-in global `BigInt` literal syntax and constructor.
+*
+* @name no-builtin-big-int
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var x = BigInt( 123 );
+* console.log( typeof x );
+* // => 'bigint'
+*
+* @example
+* // Good...
+* var BigInt = require( '@stdlib/bigint/ctor' );
+*
+* var x = BigInt( 123 );
+* console.log( typeof x );
+* // => 'bigint'
+*/
+rules[ 'stdlib/no-builtin-big-int' ] = 'error';
 
 /**
 * Disallow usage of the built-in global `Math` object.
@@ -4027,7 +4356,6 @@ rules[ 'stdlib/no-builtin-math' ] = 'error';
 * var normal = require( '@stdlib/random/base/normal' );
 * var beta = require( '@stdlib/random/base/beta' );
 *
-*
 * // EXPORTS //
 *
 * module.exports = {
@@ -4040,14 +4368,12 @@ rules[ 'stdlib/no-builtin-math' ] = 'error';
 * var normal = require( '@stdlib/random/base/normal' );
 * var beta = require( '@stdlib/random/base/beta' );
 *
-*
 * // VARIABLES //
 *
 * var ns = {
 *     'normal': normal,
 *     'beta': beta
 * };
-*
 *
 * // EXPORTS //
 *
@@ -4076,6 +4402,77 @@ rules[ 'stdlib/no-dynamic-exports' ] = 'error';
 * var special = require( '@stdlib/math/base/special' );
 */
 rules[ 'stdlib/no-nested-require' ] = 'error';
+
+/**
+* Enforce moving inner function declarations to the highest possible scope.
+*
+* @name no-unnecessary-nested-functions
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* function outer() {
+*     function inner() {
+*         return 42;
+*     }
+*     return inner();
+* }
+*
+* @example
+* // Good...
+* function inner() {
+*     return 42;
+* }
+*
+* function outer() {
+*     return inner();
+* }
+*
+* @example
+* // Good (uses outer scope variable)...
+* function outer( x ) {
+*     var multiplier = 2;
+*     function inner() {
+*         return x * multiplier;
+*     }
+*     return inner();
+* }
+*/
+rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'error';
+
+/**
+* Disallow the use of the `new Array()` constructor.
+*
+* @name no-new-array
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var arr = new Array( 5 );
+* var i;
+* for ( i = 0; i < 5; i++ ) {
+*     arr[ i ] = i;
+* }
+*
+* console.log( arr );
+* // => [ 0, 1, 2, 3, 4 ]
+*
+* @example
+* // Good...
+* var arr = [];
+* var i;
+* for ( i = 0; i < 5; i++ ) {
+*     arr.push( i );
+* }
+*
+* console.log( arr );
+* // => [ 0, 1, 2, 3, 4 ]
+*/
+rules[ 'stdlib/no-new-array' ] = 'error';
 
 /**
 * Never allow a variable to be declared multiple times within the same scope or for built-in globals to be redeclared.
@@ -4133,7 +4530,8 @@ rules[ 'stdlib/no-redeclare' ] = [ 'error', {
 		'Uint8ClampedArray',
 		'Uint16Array',
 		'Uint32Array',
-		'URIError'
+		'URIError',
+		'WebAssembly'
 	]
 }];
 
@@ -4317,6 +4715,7 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 		'Boolean',
 		'Buffer', // Node.js
 		'DataView',
+		'Float16Array', // ES16/ES2025
 		'Float32Array',
 		'Float64Array',
 		'Function',
@@ -4355,6 +4754,23 @@ rules[ 'stdlib/require-globals' ] = [ 'error', {
 * var baz = require( './../baz.js' );
 */
 rules[ 'stdlib/require-leading-slash' ] = 'error';
+
+/**
+* Enforce spaces inside `require()` parentheses.
+*
+* @name require-spaces
+* @memberof rules
+* @type {string}
+*
+* @example
+* // Bad...
+* var foo = require('@stdlib/foo');
+*
+* @example
+* // Good...
+* var foo = require( '@stdlib/foo' );
+*/
+rules[ 'stdlib/require-spaces' ] = 'error';
 
 /**
 * Enforce that `require()` calls follow a specified order.
@@ -4423,6 +4839,39 @@ rules[ 'stdlib/require-order' ] = [ 'error', {
 * module.exports = {};
 */
 rules[ 'stdlib/section-headers' ] = 'error';
+
+/**
+* Ensure that a tape file starts with the expected test.
+*
+* @name first-unit-test
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+*
+* var tape = require( 'tape' );
+* var identity = require( './../lib' );
+*
+* tape( 'the function works correctly', function test( t ) {
+*     t.strictEqual( identity( true ), true, 'returns true' );
+*     t.end();
+* });
+*
+* @example
+* // Good...
+*
+* var tape = require( 'tape' );
+* var identity = require( './../lib' );
+*
+* tape( 'main export is a function', function test( t ) {
+*     t.ok( true, __filename );
+*     t.strictEqual( typeof identity, 'function', 'main export is a function' );
+*     t.end();
+* });
+*/
+rules[ 'stdlib/first-unit-test' ] = 'error';
 
 /**
 * Require parentheses around ternary conditions.

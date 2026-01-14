@@ -23,6 +23,6 @@ import COMPLEX128_NUM_BYTES = require( './index' );
 
 // The variable is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	COMPLEX128_NUM_BYTES; // $ExpectType number
 }

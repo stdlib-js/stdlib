@@ -16,10 +16,9 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
-/* tslint:disable:max-line-length */
-/* tslint:disable:max-file-line-count */
+/* eslint-disable max-lines */
 
 import array = require( '@stdlib/array' );
 import assert = require( '@stdlib/assert' );
@@ -31,6 +30,7 @@ import cli = require( '@stdlib/cli' );
 import complex = require( '@stdlib/complex' );
 import constants = require( '@stdlib/constants' );
 import datasets = require( '@stdlib/datasets' );
+import dstructs = require( '@stdlib/dstructs' );
 import error = require( '@stdlib/error' );
 import fs = require( '@stdlib/fs' );
 import iter = require( '@stdlib/iter' );
@@ -47,6 +47,7 @@ import proxy = require( '@stdlib/proxy' );
 import random = require( '@stdlib/random' );
 import regexp = require( '@stdlib/regexp' );
 import simulate = require( '@stdlib/simulate' );
+import slice = require( '@stdlib/slice' );
 import stats = require( '@stdlib/stats' );
 import streams = require( '@stdlib/streams' );
 import strided = require( '@stdlib/strided' );
@@ -54,6 +55,7 @@ import string = require( '@stdlib/string' );
 import symbol = require( '@stdlib/symbol' );
 import time = require( '@stdlib/time' );
 import utils = require( '@stdlib/utils' );
+import wasm = require( '@stdlib/wasm' );
 
 /**
 * Interface describing the `stdlib` namespace.
@@ -110,6 +112,11 @@ interface Namespace {
 	* @returns dataset
 	*/
 	datasets: typeof datasets;
+
+	/**
+	* Data structures.
+	*/
+	dstructs: typeof dstructs;
 
 	/**
 	* Errors.
@@ -194,6 +201,11 @@ interface Namespace {
 	simulate: typeof simulate;
 
 	/**
+	* Standard library slice utilities.
+	*/
+	slice: typeof slice;
+
+	/**
 	* Standard library statistical functions.
 	*/
 	stats: typeof stats;
@@ -227,6 +239,11 @@ interface Namespace {
 	* Standard utilities.
 	*/
 	utils: typeof utils;
+
+	/**
+	* WebAssembly utilities.
+	*/
+	wasm: typeof wasm;
 }
 
 /**

@@ -1,0 +1,22 @@
+
+{{alias}}( value )
+    Returns the BLAS matrix triangle string associated with a BLAS matrix
+    triangle enumeration constant.
+
+    Parameters
+    ----------
+    value: integer
+        Matrix triangle enumeration constant.
+
+    Returns
+    -------
+    out: string|null
+        Matrix triangle string.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/blas/base/matrix-triangle-str2enum}}( 'upper' ) )
+    'upper'
+
+    See Also
+    --------

@@ -47,18 +47,18 @@ import reColorHexadecimal = require( './index' );
 
 // Attached to main export is a `REGEXP` property that is a regular expression...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	reColorHexadecimal.REGEXP; // $ExpectType RegExp
 }
 
 // Attached to main export is a `REGEXP_SHORTHAND` property that is a regular expression...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	reColorHexadecimal.REGEXP_SHORTHAND; // $ExpectType RegExp
 }
 
 // Attached to main export is a `REGEXP_EITHER` property that is a regular expression...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	reColorHexadecimal.REGEXP_EITHER; // $ExpectType RegExp
 }

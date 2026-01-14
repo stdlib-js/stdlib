@@ -1,0 +1,89 @@
+
+{{alias}}( N, x, strideX )
+    Finds the index of the first element having the maximum absolute value.
+
+    The `N` and `strideX` parameters determine which elements in `x` are
+    accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N < 1`, the function returns `-1`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    Returns
+    -------
+    idx: integer
+        Index value.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0 ] );
+    > var idx = {{alias}}( x.length, x, 1 )
+    3
+
+    // Using `N` and `strideX` parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0 ] );
+    > idx = {{alias}}( 2, x, 2 )
+    1
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > idx = {{alias}}( 3, x1, 1 )
+    2
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX )
+    Finds the index of the first element having the maximum absolute value using
+    alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the `offsetX` parameter supports indexing semantics based on a
+    starting index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    offsetX: integer
+        Starting index of `x`.
+
+    Returns
+    -------
+    idx: integer
+        Index value.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ] );
+    > var idx = {{alias}}.ndarray( x.length, x, 1, 0 )
+    3
+
+    // Using an index offset:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
+    > idx = {{alias}}.ndarray( 3, x, 2, 1 )
+    2
+
+    See Also
+    --------
+

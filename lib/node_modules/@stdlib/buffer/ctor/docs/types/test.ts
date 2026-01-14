@@ -16,9 +16,7 @@
 * limitations under the License.
 */
 
-// tslint:disable:no-construct
-// tslint:disable:no-unused-expression
-// tslint:disable:deprecation
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 
 import Buffer = require( './index' );
 

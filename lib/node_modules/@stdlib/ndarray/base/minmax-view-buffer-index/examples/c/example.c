@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
+int main( void ) {
 	int64_t ndims = 2;
 	int64_t shape[] = { 10, 10 };
 	int64_t strides[] = { 10, 1 };

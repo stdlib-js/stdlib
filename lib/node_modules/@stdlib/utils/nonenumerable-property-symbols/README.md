@@ -36,6 +36,8 @@ var nonEnumerablePropertySymbols = require( '@stdlib/utils/nonenumerable-propert
 
 Returns an `array` of an object's own non-enumerable symbol properties.
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var Symbol = require( '@stdlib/symbol/ctor' );

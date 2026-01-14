@@ -35,7 +35,7 @@ import isString = require( './index' );
 
 // Attached to main export is an `isPrimitive` method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isString.isPrimitive( new String( 'abc' ) ); // $ExpectType boolean
 	isString.isPrimitive( 'abc' ); // $ExpectType boolean
 }
@@ -48,7 +48,7 @@ import isString = require( './index' );
 
 // Attached to main export is an `isObject` method which returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isString.isObject( new String( 'abc' ) ); // $ExpectType boolean
 	isString.isObject( 'abc' ); // $ExpectType boolean
 }

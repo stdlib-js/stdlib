@@ -1,0 +1,26 @@
+
+{{alias}}( operation )
+    Returns the enumeration constant associated with a BLAS operation side.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `LEFT == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    operation: string
+        Operation side.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'left' )
+    <number>
+
+    See Also
+    --------
+

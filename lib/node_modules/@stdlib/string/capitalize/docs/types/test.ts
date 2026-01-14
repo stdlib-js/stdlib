@@ -21,9 +21,13 @@ import capitalize = require( './index' );
 
 // TESTS //
 
-// The function returns a string...
+// The function returns a capitalized string...
 {
-	capitalize( 'abc' ); // $ExpectType string
+	capitalize( 'abc' ); // $ExpectType "Abc"
+	capitalize( 'beep boop' ); // $ExpectType "Beep boop"
+	capitalize( 'a' ); // $ExpectType "A"
+	capitalize( 'A' ); // $ExpectType "A"
+	capitalize( 'abc' as string ); // $ExpectType string
 }
 
 // The compiler throws an error if the function is provided a value other than a string...

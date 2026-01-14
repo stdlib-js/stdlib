@@ -1,0 +1,134 @@
+
+{{alias}}( order, uplo, N, α, A, lda, x, sx, β, y, sy )
+    Performs the matrix-vector operation `y = α*A*x + β*y` where `α` and `β` are
+    scalars, `x` and `y` are `N` element vectors, and `A` is an `N` by `N`
+    symmetric matrix.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is equal to `0`, the function returns `y` unchanged.
+
+    If `α` equals `0` and `β` equals `1`, the function returns `y` unchanged.
+
+    Parameters
+    ----------
+    order: string
+        Row-major (C-style) or column-major (Fortran-style) order. Must be
+        either 'row-major' or 'column-major'.
+
+    uplo: string
+        Specifies whether to reference the upper or lower triangular part of
+        `A`. Must be either 'upper' or 'lower'.
+
+    N: integer
+        Number of elements along each dimension of `A`.
+
+    α: number
+        Scalar constant.
+
+    A: Float64Array
+        Matrix.
+
+    lda: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    x: Float64Array
+        Input vector.
+
+    sx: integer
+        Index increment for `x`.
+
+    β: number
+        Scalar constant.
+
+    y: Float64Array
+        Output vector.
+
+    sy: integer
+        Index increment for `y`.
+
+    Returns
+    -------
+    y: Float64Array
+        Output vector.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 2.0, 1.0 ] );
+    > {{alias}}( 'row-major', 'upper', 2, 1.0, A, 2, x, 1, 1.0, y, 1 )
+    <Float64Array>[ 4.0, 4.0 ]
+
+
+{{alias}}.ndarray( order, uplo, N, α, A, lda, x, sx, ox, β, y, sy, oy )
+    Performs the matrix-vector operation `y = α*A*x + β*y` using alternative
+    indexing semantics and where `α` and `β` are scalars, `x` and `y` are `N`
+    element vectors, and `A` is an `N` by `N` symmetric matrix.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    order: string
+        Row-major (C-style) or column-major (Fortran-style) order. Must be
+        either 'row-major' or 'column-major'.
+
+    uplo: string
+        Specifies whether to reference the upper or lower triangular part of
+        `A`. Must be either 'upper' or 'lower'.
+
+    N: integer
+        Number of elements along each dimension of `A`.
+
+    α: number
+        Scalar constant.
+
+    A: Float64Array
+        Matrix.
+
+    lda: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    x: Float64Array
+        Input vector.
+
+    sx: integer
+        Index increment for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    β: number
+        Scalar constant.
+
+    y: Float64Array
+        Output vector.
+
+    sy: integer
+        Index increment for `y`.
+
+    oy: integer
+        Starting index for `y`.
+
+    Returns
+    -------
+    y: Float64Array
+        Output array.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var A = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 2.0, 1.0 ] );
+    > var ord = 'row-major';
+    > {{alias}}.ndarray( ord, 'upper', 2, 1.0, A, 2, x, 1, 0, 1.0, y, 1, 0 )
+    <Float64Array>[ 4.0, 4.0 ]
+
+    See Also
+    --------

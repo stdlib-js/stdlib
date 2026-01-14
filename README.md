@@ -20,36 +20,44 @@ limitations under the License.
 
 <!-- lint disable first-heading-level -->
 
+<!-- FIXME: the following two empty sections are merely to satisfy the linter for `expected-html-sections` which cannot, atm, be turned off -->
+
+<section class="usage">
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
 <!-- Section to include announcements. If section is included, add a horizontal rule *after* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="announcement">
-
-**📣 Announcement: [Quansight Labs](https://labs.quansight.org) is running another edition of its paid [internship program](https://boards.greenhouse.io/quansight/jobs/4011005005). The program runs for 3 months from mid-June/mid-July through September and entails a 25-40 hrs/wk time commitment.**
-
-**All internship projects will focus on contributing to open source software. stdlib is one of the potential projects! If you are new to open source, interested in kickstarting your software development career, and/or interested in contributing to stdlib, you are encouraged to [apply](https://boards.greenhouse.io/quansight/jobs/4011005005)! 🎉**
-
-**When applying, feel free to mention stdlib in your cover letter. Application deadline: [4 April 2023](https://boards.greenhouse.io/quansight/jobs/4011005005). 😃**
 
 </section>
 
 <!-- /.announcement -->
 
-* * *
-
 <!-- Section to include assets such as the project logo, etc. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="banner">
-    <div class="image" align="center">
-        <br>
-        <br>
-        <a href="https://stdlib.io/" />
-            <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9f7d30f089ecc458a8b836a75afab75caf5c0b36/docs/assets/logo_banner.svg" alt="stdlib logo">
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
+
+<div class="image" align="center">
+    <br>
+    <br>
+    <a href="https://stdlib.io/" />
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9f7d30f089ecc458a8b836a75afab75caf5c0b36/docs/assets/logo_banner.svg" alt="stdlib logo">
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
 </section>
 
 <!-- /.banner -->
@@ -60,9 +68,19 @@ limitations under the License.
 
 <section class="intro">
 
-stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing applications. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
+We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib.
 
-This is the GitHub repository of stdlib source code and documentation. For help developing stdlib, see the [development guide][stdlib-development].
+stdlib ([/ˈstændərd lɪb/][ipa-english] "standard lib") is a standard library with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js. The library provides a collection of robust, high performance libraries for mathematics, statistics, data processing, streams, and more and includes many of the utilities you would expect from a standard library.
+
+What sets stdlib apart is its fully decomposable architecture, which allows you to swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.
+
+When you use stdlib, you can be confident that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code available.
+
+Want to join us in bringing numerical computing to the web? **Start by starring the project.** :star2:
+
+Explore this GitHub repository for stdlib's source code and documentation. For guidance on developing stdlib, refer to the [development guide][stdlib-development].
+
+Thank you for being a part of our community! Your support is invaluable to us!
 
 ## Resources
 
@@ -75,8 +93,10 @@ This is the GitHub repository of stdlib source code and documentation. For help 
 
 ### External Resources
 
--   [**Twitter**][stdlib-twitter]
--   [**Gitter**][stdlib-gitter]
+-   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including [open office hours][stdlib-office-hours].
+-   [**Open Collective**][open-collective-stdlib]: financially support the project.
+-   [**Bluesky**][stdlib-bluesky]: follow us on social media.
+-   [**Zulip**][stdlib-zulip]: chat with project maintainers and other community members.
 
 ## Features
 
@@ -146,17 +166,23 @@ This is the GitHub repository of stdlib source code and documentation. For help 
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e54894a93697653dda22d11cd0aec1ccb292b7b8/docs/assets/readme/bundled.png" alt="Demo showcasing browser support">
     </div>
 
+-   Every function is accompanied by [TypeScript][typescript] declaration files, ensuring type safety and facilitating intelligent code completion in IDEs.
+
+    <div class="image" align="center">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@f5f1f915a7178d9bc76a95d34afd799e6092ec3a/docs/assets/readme/typescript.png" alt="Demo showcasing TypeScript declaration files" >
+    </div>
+
 * * *
 
 ## Installation
 
-To accommodate various use cases, stdlib can be consumed in multiple ways. The preferred means of consumption depends on your individual use case. We've provided some user stories to help you identify the best approach. 😃
+To accommodate various use cases, stdlib can be used in multiple ways. The preferred method of use depends on your individual use case. We've provided some user stories to help you identify the best approach. 😃
 
-While this project's installation instructions defaults to using [npm][npm] for package management, installation via other package managers, such as [yarn][yarn], should be a matter of simply swapping out [npm][npm] commands with those of the relevant package manager.
+While this project's installation instructions default to using [npm][npm] for package management, installation via other package managers, such as [yarn][yarn], should be a matter of simply swapping out [npm][npm] commands with those of the relevant package manager.
 
 ### User Stories
 
--   I want to perform **data analysis** and/or **data science** related tasks in JavaScript and Node.js, similar to how I might use IPython, Julia, R, and/or MATLAB.
+-   I want to perform **data analysis** and **data science** tasks in JavaScript and Node.js, similar to how I might use Python, Julia, R, and MATLAB.
 
     -   Install the entire project as a [command-line utility](#install_command_line_utility).
 
@@ -173,11 +199,11 @@ While this project's installation instructions defaults to using [npm][npm] for 
     -   I would like to include stdlib functionality by just using a `script` tag.
 
         -   I would like to use ES Modules.
-        
+
             -   Use an individual package's ES Module [build](#install_env_builds_esm).
-            
+
         -   I would like to use a pre-built bundle (possibly via a CDN, such as [unpkg][unpkg] or [jsDelivr][jsdelivr]).
-        
+
             -   Install (or consume via a CDN) an individual package's pre-built UMD [browser bundle](#install_env_builds_umd).
 
     -   I am interested in using a substantial amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages (e.g., if building an on-line calculator application and wanting all of stdlib's math functionality).
@@ -191,9 +217,9 @@ While this project's installation instructions defaults to using [npm][npm] for 
     -   I am interested in using various functionality found in stdlib.
 
         -   Install [individual packages](#install_individual_packages). Installing the entire project is likely unnecessary and will lead to slower installation times.
-    
+
     -   I would like to **vendor** stdlib functionality and avoid dependency trees.
-        
+
         -   Install individual package UMD [bundles](#install_env_builds_nodejs).
 
     -   I am interested in using a _substantial_ amount of functionality found in a top-level stdlib namespace and don't want to separately install hundreds of individual packages.
@@ -344,44 +370,6 @@ $ stdlib repl
 
 ### Environment Builds
 
-<a name="install_env_builds_jquery"></a>
-
-#### jQuery-like Bundle
-
-For those wanting a jQuery-like bundle, one can use pre-built distributable UMD bundles for use in browser environments or as shared ("vendored") libraries in server environments, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles].
-
-As an example, to include a UMD bundle exposing lower-level special [math functions][@stdlib/math/base/special] in a webpage, we can first locally install the UMD bundle package using [npm][npm]
-
-<!-- run-disable -->
-
-```bash
-$ npm install @stdlib/dist-math-base-special-flat
-```
-
-and then include the following `<script>` tag in our HTML document
-
-<!-- run-disable -->
-
-```html
-<script type="text/javascript" src="/path/to/@stdlib/dist-math-base-special-flat/build/bundle.min.js"></script>
-```
-
-making sure to modify the script path based on the local installation directory.
-
-If no recognized module system is present, one can access bundle contents in another `<script>` tag via the global scope.
-
-<!-- run-disable -->
-
-```html
-<script type="text/javascript">
-    // If no recognized module system present, exposed to global scope:
-    var erf = stdlib_math_base_special_flat.erf;
-    console.log( erf( 0.5 ) );
-</script>
-```
-
-For more details and available bundles, see the [`dist`][stdlib-bundles] directory and associated [guide][stdlib-bundles]. The [guide][stdlib-bundles] includes instructions for consuming via CDNs, such as [unpkg][unpkg].
-
 <a name="install_env_builds_esm"></a>
 
 #### ES Modules
@@ -417,6 +405,13 @@ import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mo
 var arr = ndarray( [ [ 1, 2 ], [ 3, 4 ] ] );
 // returns <ndarray>
 ````
+
+
+<a name="install_env_builds_jquery"></a>
+
+#### jQuery-like Bundle
+
+For those wanting a jQuery-like bundle, one can use pre-built distributable UMD bundles for use in browser environments or as shared ("vendored") libraries in server environments available in each package's repository via a dedicated `umd` branch. See sections [UMD](#install_env_builds_umd) and [Node.js](#install_env_builds_nodejs) for more details.
 
 <a name="install_env_builds_umd"></a>
 
@@ -579,14 +574,27 @@ Already an expert?
 
 ## Sponsors
 
-stdlib development is generously supported by the following sponsors...
+stdlib development is generously supported by the following sponsors:
 
 <div class="image" align="center">
+    <br>
     <a href="https://labs.quansight.org/">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@2719e1d3ecab2cc29985bca35fd33594e65adb55/docs/assets/sponsors/quansight_labs_logo.png" alt="Quansight Labs">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@a064751967bcc3419f5877716b23cf5e1064ab26/docs/assets/sponsors/quansight_labs_logo.png" alt="Quansight Labs">
     </a>
     <br>
+    <br>
 </div>
+
+<div class="image" align="center">
+    <br>
+    <a href="https://zulip.com/">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@a6c5bd56c188c946bade9e5de285a8ada16f34f4/docs/assets/sponsors/zulip_logo.png" alt="Zulip">
+    </a>
+    <br>
+    <br>
+</div>
+
+Are you interested in supporting stdlib? If so, join our [Open Collective][open-collective-stdlib]!
 
 </section>
 
@@ -600,20 +608,70 @@ stdlib development is generously supported by the following sponsors...
 
 ## Users
 
-The following organizations and key stakeholders trust and depend on stdlib...
+The following organizations and key stakeholders trust and rely on stdlib:
 
 <div class="image" align="center">
+    <br>
     <a href="https://www.cmu.edu/">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@1c8c7dbc9d081eeb13e16c62764f27a65c6553f8/docs/assets/misc/cmu_logo.png" alt="Carnegie Mellon University">
     </a>
     <br>
+    <br>
 </div>
 
-Does your organization or company use stdlib? If so, we'd love to hear from you!
+Does your organization use stdlib? If so, we'd love to hear from you!
 
 </section>
 
 <!-- /.users -->
+
+<!-- Google Summer of Code -->
+
+* * *
+
+<section class="gsoc">
+
+## Google Summer of Code
+
+stdlib is a proud participant in the Google Summer of Code program. If you are new to open source and want to learn more about how to participate, be sure to check out our [Google Summer of Code resources][stdlib-gsoc] and the stdlib [wiki][stdlib-wiki] for details on past projects!
+
+<div class="image" align="center">
+    <br>
+    <a href="https://summerofcode.withgoogle.com">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9eb11556f417ea8706c2f57719bb725f78466680/docs/assets/misc/gsoc_logo.png" alt="Google Summer of Code">
+    </a>
+    <br>
+    <br>
+</div>
+
+</section>
+
+<!-- /.gsoc -->
+
+<!-- Project funding acknowledgments. If acknowledgments are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+* * *
+
+<section class="funding-acknowledgments">
+
+## Funding Acknowledgments
+
+This work was supported in part by the National Science Foundation under [Award No. 2449410][nsf-award-2449410].
+
+> Disclaimer: Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+
+<div class="image" align="center">
+    <br>
+    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2449410&HistoricalAwards=false">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@886b0c645787542774d5bcefde429f6e3db59b57/docs/assets/sponsors/nsf.png" alt="National Science Foundation" width="200">
+    </a>
+    <br>
+    <br>
+</div>
+
+</section>
+
+<!-- /.funding-acknowledgments -->
 
 * * *
 
@@ -627,7 +685,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright © 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright © 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -640,8 +698,6 @@ Copyright © 2016-2023. The Stdlib [Authors][stdlib-authors].
 <section class="badges">
 
 ## Status
-
-[![stability-experimental][stability-image]][stability-url]
 
 #### Version
 
@@ -676,38 +732,25 @@ Copyright © 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [![Chat][chat-image]][chat-url]
 
+Have something you want to discuss? In addition to the community chat, we hold regular [office hours][stdlib-office-hours] over video conferencing, which is a great opportunity to ask questions, share ideas, and engage directly with the stdlib team.
+
+You can also subscribe to our [project calendar][stdlib-public-calendar] to stay informed about the latest public community events.
+
 </section>
 
-<!-- /.badges> -->
+<!-- /.badges -->
 
 <!-- Project acknowledgments. If section is included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<!-- * * *
-
 <section class="acknowledgments">
 
-## Acknowledgments
-
-### Build Infrastructure
-
-Test and build infrastructure is generously provided by the following services:
-
-<div class="image" align="center">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3de52540666d1635df046d7e5dd07a1fc5b87d85/docs/assets/misc/ci_logo_banner.svg" alt="Continuous Integration Service Logos">
-    <br>
-</div>
-
-</section> -->
+</section>
 
 <!-- /.acknowledgments -->
 
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
-
-[stability-image]: https://img.shields.io/badge/stability-experimental-orange.svg
-
-[stability-url]: https://github.com/stdlib-js/stdlib
 
 [npm-image]: https://img.shields.io/npm/v/@stdlib/stdlib.svg
 
@@ -729,17 +772,13 @@ Test and build infrastructure is generously provided by the following services:
 
 [coverage-url-develop]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/stdlib
-
 [dependencies-url]: https://socket.dev/npm/package/@stdlib/stdlib/dependencies
-
-[dev-dependencies-image]: https://img.shields.io/david/dev/stdlib-js/stdlib
 
 [dev-dependencies-url]: https://socket.dev/npm/package/@stdlib/stdlib/dependencies -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
 
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-url]: https://stdlib.zulipchat.com
 
 [make]: https://www.gnu.org/software/make/
 
@@ -775,6 +814,8 @@ Test and build infrastructure is generously provided by the following services:
 
 [webpack]: https://webpack.js.org/
 
+[typescript]: https://www.typescriptlang.org/
+
 [unpkg]: https://unpkg.com/#/
 
 [jsdelivr]: https://www.jsdelivr.com/
@@ -785,7 +826,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [stdlib-contributing]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md
 
-[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md
+[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
@@ -801,13 +842,23 @@ Test and build infrastructure is generously provided by the following services:
 
 [stdlib-source]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib
 
-[stdlib-bundles]: https://github.com/stdlib-js/stdlib/tree/develop/dist
-
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
-[stdlib-twitter]: https://twitter.com/stdlibjs
+[stdlib-public-calendar]: https://calendar.google.com/calendar/embed?src=a72677fe2820c833714b8b9a2aa87393f742bcaf0d0f6c9499eee6661795eae0%40group.calendar.google.com
 
-[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+[stdlib-office-hours]: https://github.com/stdlib-js/meetings/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22Office%20Hours%22
+
+[open-collective-stdlib]: https://opencollective.com/stdlib
+
+<!-- [stdlib-twitter]: https://twitter.com/stdlibjs -->
+
+[stdlib-bluesky]: https://bsky.app/profile/stdlib.io
+
+[stdlib-zulip]: https://stdlib.zulipchat.com
+
+[stdlib-gsoc]: https://github.com/stdlib-js/google-summer-of-code
+
+[stdlib-wiki]: https://github.com/stdlib-js/stdlib/wiki
 
 [@stdlib/math/base/special]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special
 
@@ -832,6 +883,8 @@ Test and build infrastructure is generously provided by the following services:
 [@stdlib/math-base-special-erf-esm]: https://github.com/stdlib-js/math-base-special-erf/tree/esm
 
 [@stdlib/math-base-special-erf-umd]: https://github.com/stdlib-js/math-base-special-erf/tree/umd
+
+[nsf-award-2449410]: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2449410&HistoricalAwards=false
 
 </section>
 

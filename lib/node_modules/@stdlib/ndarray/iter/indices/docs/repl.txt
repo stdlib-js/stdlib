@@ -1,0 +1,47 @@
+
+{{alias}}( shape[, options] )
+    Returns an iterator which returns indices for use indexing into an ndarray
+    having a specified shape.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    Parameters
+    ----------
+    shape: Array<integer>
+        Input shape.
+
+    options: Object (optional)
+        Options.
+
+    options.order: string (optional)
+        Index iteration order. By default, the returned iterator iterates over
+        the last dimensions first, thus corresponding to iteration over
+        contiguous data stored in row-major order. Must be either 'row-major'
+        or 'column-major'.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var it = {{alias}}( x.shape );
+    > var v = it.next().value
+    [ 0, 0 ]
+    > v = it.next().value
+    [ 0, 1 ]
+
+    See Also
+    --------
+

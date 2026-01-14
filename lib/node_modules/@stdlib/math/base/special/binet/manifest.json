@@ -1,0 +1,87 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/cospi",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/constants/float64/phi",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/cospi",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/constants/float64/phi",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/cospi",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/constants/float64/phi",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf"
+      ]
+    }
+  ]
+}

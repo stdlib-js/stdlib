@@ -23,6 +23,6 @@ import FLOAT16_PINF = require( './index' );
 
 // The export is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	FLOAT16_PINF; // $ExpectType number
 }

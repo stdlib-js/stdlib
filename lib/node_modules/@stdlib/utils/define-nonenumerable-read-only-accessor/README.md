@@ -38,8 +38,6 @@ var setNonEnumerableReadOnlyAccessor = require( '@stdlib/utils/define-nonenumera
 
 <!-- eslint-disable id-length -->
 
-<!-- run throws: true -->
-
 ```javascript
 function getter() {
     return 'bar';
@@ -49,8 +47,12 @@ var obj = {};
 
 setNonEnumerableReadOnlyAccessor( obj, 'foo', getter );
 
-obj.foo = 'boop';
-// throws <Error>
+try {
+    obj.foo = 'boop';
+    // throws <Error>
+} catch ( error ) {
+    console.error( error.message );
+}
 ```
 
 </section>

@@ -62,6 +62,7 @@
 *     ```
 *
 */
+
 #include "stdlib/strided/common/quinary.h"
 #include "stdlib/strided/common/quinary_typedefs.h"
 #include "stdlib/strided/common/quinary_macros.h"

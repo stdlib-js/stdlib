@@ -23,10 +23,15 @@ name: track_todos
 on:
   schedule:
     # Run the workflow once a month on the 1st day of every month:
-    - cron:  "0 0 1 * *"
+    - cron: '0 0 1 * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
 
 # Workflow jobs:
 jobs:
@@ -37,6 +42,9 @@ jobs:
     # Define a display name:
     name: 'Track TODO and FIXME comments'
 
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -44,7 +52,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -59,33 +68,37 @@ jobs:
       # Create content of tracking issue for TODO comments:
       - name: 'Create content of tracking issue for TODO comments'
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/track_todos" > tracking_issue_todos.md
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/track_todos/track_todos" > tracking_issue_todos.md
           cat tracking_issue_todos.md >> $GITHUB_STEP_SUMMARY
 
       # Create content of tracking issue for FIXME comments:
       - name: 'Create content of tracking issue for FIXME comments'
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/track_fixmes" > tracking_issue_fixmes.md
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/track_todos/track_fixmes" > tracking_issue_fixmes.md
           cat tracking_issue_fixmes.md >> $GITHUB_STEP_SUMMARY
 
       # Create or update issue for TODO comments:
       - name: 'Create or update issue for TODO comments'
-        uses: peter-evans/create-issue-from-file@v4
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
         with:
           title: 'TODO comments'
           content-filepath: ./tracking_issue_todos.md
           issue-number: 803
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
             todos
             automated-issue
 
       # Create or update issue for FIXME comments:
       - name: 'Create or update issue for FIXME comments'
-        uses: peter-evans/create-issue-from-file@v4
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
         with:
           title: 'FIXME comments'
           content-filepath: ./tracking_issue_fixmes.md
           issue-number: 804
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           labels: |
             fixmes
             automated-issue

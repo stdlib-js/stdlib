@@ -1,0 +1,26 @@
+
+{{alias}}( value )
+    Tests if a value is a ragged nested array. 
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a ragged nested array.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ [ 1, 2, 3 ], [ 4, 5 ] ] )
+    true
+    > bool = {{alias}}( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ] )
+    false
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------
+

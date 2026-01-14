@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/tools/evalrational",
   "version": "0.0.0",
-  "description": "Evaluate a rational function.",
+  "description": "Evaluate a rational function using double-precision floating-point arithmetic.",
   "license": "Apache-2.0 AND BSL-1.0",
   "author": {
     "name": "The Stdlib Authors",

@@ -21,7 +21,7 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-int main() {
+int main( void ) {
 	int64_t shape[] = { 2, 3, 10 };
 	int64_t ndims = 3;
 	int64_t out[ 3 ];

@@ -26,7 +26,7 @@
 *
 * ## Notes
 *
-* -   In "error" mode, the function returns `-1` if an index is out-of-bounds.
+* -   In "error" and "normalize" modes, the function returns `-1` if an index is out-of-bounds.
 *
 * @param ndims    number of dimensions
 * @param shape    array shape (dimensions)
@@ -50,56 +50,63 @@
 * int64_t idx = stdlib_ndarray_vind2bind( ndims, shape, strides, offset, STDLIB_NDARRAY_ROW_MAJOR, 1, STDLIB_NDARRAY_INDEX_ERROR );
 * // returns 7
 */
-int64_t stdlib_ndarray_vind2bind( int64_t ndims, int64_t *shape, int64_t *strides, int64_t offset, enum STDLIB_NDARRAY_ORDER order, int64_t idx, enum STDLIB_NDARRAY_INDEX_MODE mode ) {
+int64_t stdlib_ndarray_vind2bind( const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset, const enum STDLIB_NDARRAY_ORDER order, const int64_t idx, const enum STDLIB_NDARRAY_INDEX_MODE mode ) {
+	int64_t index;
 	int64_t len;
 	int64_t ind;
 	int64_t s;
 	int64_t i;
 
+	index = idx;
 	len = 1;
 	for ( i = 0; i < ndims; i++ ) {
 		len *= shape[ i ];
 	}
 	if ( mode == STDLIB_NDARRAY_INDEX_CLAMP ) {
-		if ( idx < 0 ) {
-			idx = 0;
-		} else if ( idx >= len ) {
-			idx = len - 1;
+		if ( index < 0 ) {
+			index = 0;
+		} else if ( index >= len ) {
+			index = len - 1;
 		}
 	} else if ( mode == STDLIB_NDARRAY_INDEX_WRAP ) {
-		if ( idx < 0 ) {
-			idx += len; // slight optimization to avoid modulo arithmetic when |idx| <= len
-			if ( idx < 0 ) {
-				idx -= len*( (int64_t)( idx/len ) ); // this is equivalent to `idx mod len`, where the result has same sign as dividend (i.e., `idx`); cannot use `%` as the sign of the result is implementation defined in C
-				if ( idx != 0 ) {
-					idx += len;
+		if ( index < 0 ) {
+			index += len; // slight optimization to avoid modulo arithmetic when |index| <= len
+			if ( index < 0 ) {
+				index -= len*( (int64_t)( index/len ) ); // this is equivalent to `index mod len`, where the result has same sign as dividend (i.e., `index`); cannot use `%` as the sign of the result is implementation defined in C
+				if ( index != 0 ) {
+					index += len;
 				}
 			}
-		} else if ( idx >= len ) {
-			idx -= len; // slight optimization to avoid modulo arithmetic when len < idx <= 2*len
-			if ( idx >= len ) {
-				idx %= len;
+		} else if ( index >= len ) {
+			index -= len; // slight optimization to avoid modulo arithmetic when len < index <= 2*len
+			if ( index >= len ) {
+				index %= len;
 			}
 		}
-	} else if ( idx < 0 || idx >= len ) {
-		return -1;
+	} else {
+		if ( mode == STDLIB_NDARRAY_INDEX_NORMALIZE && index < 0 ) {
+			index += len;
+		}
+		if ( index < 0 || index >= len ) {
+			return -1;
+		}
 	}
 	// The approach which follows is to resolve a view index to its subscripts and then plug the subscripts into the standard formula for computing the linear index in the underlying data buffer...
 	ind = offset;
 	if ( order == STDLIB_NDARRAY_COLUMN_MAJOR ) {
 		for ( i = 0; i < ndims; i++ ) {
-			s = idx % shape[ i ]; // assume nonnegative "shape"
-			idx -= s;
-			idx /= shape[ i ];
+			s = index % shape[ i ]; // assume nonnegative "shape"
+			index -= s;
+			index /= shape[ i ];
 			ind += s * strides[ i ];
 		}
 		return ind;
 	}
 	// Case: row-major
 	for ( i = ndims-1; i >= 0; i-- ) {
-		s = idx % shape[ i ]; // assume nonnegative "shape"
-		idx -= s;
-		idx /= shape[ i ];
+		s = index % shape[ i ]; // assume nonnegative "shape"
+		index -= s;
+		index /= shape[ i ];
 		ind += s * strides[ i ];
 	}
 	return ind;

@@ -29,7 +29,7 @@ For a window of size `W`, the [residual sum of squares][residual-sum-of-squares]
 <!-- <equation class="equation" label="eq:residual_sum_of_squares" align="center" raw="\operatorname{RSS} = \sum_{i=0}^{W-1} (y_i - x_i)^2" alt="Equation for the residual sum of squares."> -->
 
 ```math
-\operatorname{RSS} = \sum_{i=0}^{W-1} (y_i - x_i)^2
+\mathop{\mathrm{RSS}} = \sum_{i=0}^{W-1} (y_i - x_i)^2
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{RSS} = \sum_{i=0}^{W-1} (y_i - x_i)^2" data-equation="eq:residual_sum_of_squares">

@@ -1,5 +1,7 @@
 {
-  "options": {},
+  "options": {
+    "task": "build"
+  },
   "fields": [
     {
       "field": "src",
@@ -24,6 +26,25 @@
   ],
   "confs": [
     {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/ternary",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/trunc",
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/math/base/assert/is-negative-zero"
+      ]
+    },
+    {
+      "task": "benchmark",
       "src": [
         "./src/main.c"
       ],
@@ -34,7 +55,26 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/trunc"
+        "@stdlib/math/base/special/trunc",
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/math/base/assert/is-negative-zero"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/trunc",
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/math/base/assert/is-negative-zero"
       ]
     }
   ]

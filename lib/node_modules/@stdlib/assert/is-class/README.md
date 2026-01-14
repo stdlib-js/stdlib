@@ -34,7 +34,7 @@ var isClass = require( '@stdlib/assert/is-class' );
 
 Tests if a value is a [`class`][mdn-class].
 
-<!-- eslint-disable max-classes-per-file, no-restricted-syntax  -->
+<!-- eslint-disable max-classes-per-file, no-restricted-syntax, node/no-unsupported-features/es-syntax  -->
 
 ```javascript
 var bool = isClass( class Animal {
@@ -68,7 +68,7 @@ bool = isClass( null );
 
 <!-- eslint no-undef: "error" -->
 
-<!-- eslint-disable no-restricted-syntax, no-empty-function -->
+<!-- eslint-disable no-restricted-syntax, no-empty-function, node/no-unsupported-features/es-syntax -->
 
 ```javascript
 var isClass = require( '@stdlib/assert/is-class' );

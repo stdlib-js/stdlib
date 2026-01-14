@@ -30,7 +30,7 @@ limitations under the License.
 var chi2gof = require( '@stdlib/stats/chi2gof' );
 ```
 
-#### chi2gof( x, y\[, ...args]\[, opts] )
+#### chi2gof( x, y\[, ...args]\[, options] )
 
 Computes a chi-square goodness-of-fit test for the **null hypothesis** that the values of `x` come from the discrete probability distribution specified by `y`.
 

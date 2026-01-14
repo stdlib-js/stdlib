@@ -36,6 +36,8 @@ var inheritedEnumerablePropertySymbols = require( '@stdlib/utils/inherited-enume
 
 Returns an `array` of an object's inherited enumerable [symbol][@stdlib/symbol/ctor] properties.
 
+<!-- eslint-disable id-length -->
+
 ```javascript
 var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var Symbol = require( '@stdlib/symbol/ctor' );
@@ -60,6 +62,8 @@ symbols = inheritedEnumerablePropertySymbols( f );
 ```
 
 By default, the function walks an object's entire prototype chain. To limit the inheritance level, provide a `level` argument.
+
+<!-- eslint-disable id-length -->
 
 ```javascript
 var symbols = inheritedEnumerablePropertySymbols( [], 1 );

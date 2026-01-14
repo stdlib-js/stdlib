@@ -1,0 +1,106 @@
+
+{{alias}}( x, shape, colex, clbk[, thisArg] )
+    Flattens a five-dimensional nested array according to a callback function.
+
+    The function assumes that all nested arrays have the same length (i.e., the
+    input array is *not* a ragged array).
+
+    The callback function is provided the following arguments:
+
+    - value: nested array element.
+    - indices: element indices (in lexicographic order).
+    - arr: the input array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    shape: Array<integer>
+        Array shape.
+
+    colex: boolean
+        Specifies whether to flatten array values in colexicographic order.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: Array
+        Flattened array.
+
+    Examples
+    --------
+    > function fcn( v ) { return v * 2; };
+    > var x = [ [ [ [ [ 1, 2 ] ] ] ], [ [ [ [ 3, 4 ] ] ] ] ];
+    > var out = {{alias}}( x, [ 2, 1, 1, 1, 2 ], false, fcn )
+    [ 2, 4, 6, 8 ]
+    > out = {{alias}}( x, [ 2, 1, 1, 1, 2 ], true, fcn )
+    [ 2, 6, 4, 8 ]
+
+
+{{alias}}.assign( x, shape, colex, out, stride, offset, clbk[, thisArg] )
+    Flattens a five-dimensional nested array according to a callback function
+    and assigns elements to a provided output array.
+
+    The function assumes that all nested arrays have the same length (i.e., the
+    input array is *not* a ragged array).
+
+    The callback function is provided the following arguments:
+
+    - value: nested array element.
+    - indices: element indices (in lexicographic order).
+    - arr: the input array.
+
+    Parameters
+    ----------
+    x: Array
+        Input array.
+
+    shape: Array<integer>
+        Array shape.
+
+    colex: boolean
+        Specifies whether to flatten array values in colexicographic order.
+
+    out: Collection
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > function fcn( v ) { return v * 2; };
+    > var x = [ [ [ [ [ 1, 2 ] ] ] ], [ [ [ [ 3, 4 ] ] ] ] ];
+    > var out = [ 0, 0, 0, 0 ];
+    > var v = {{alias}}.assign( x, [ 2, 1, 1, 1, 2 ], false, out, 1, 0, fcn )
+    [ 2, 4, 6, 8 ]
+    > var bool = ( v === out )
+    true
+    > out = [ 0, 0, 0, 0 ];
+    > {{alias}}.assign( x, [ 2, 1, 1, 1, 2 ], true, out, 1, 0, fcn );
+    > out
+    [ 2, 6, 4, 8 ]
+
+    See Also
+    --------
+

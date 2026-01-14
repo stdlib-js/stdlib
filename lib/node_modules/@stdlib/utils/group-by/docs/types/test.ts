@@ -18,19 +18,28 @@
 
 import groupBy = require( './index' );
 
-const indicator = ( v: string ): string => v[ 0 ];
+/**
+* Indicator function.
+*
+* @param v - value
+* @returns result
+*/
+function indicator( v: string ): string {
+	return v[ 0 ];
+}
 
 
 // TESTS //
 
 // The function returns an object...
 {
-	groupBy( [ 'beep', 'boop', 'foo', 'bar' ], indicator ); // $ExpectType any
-	groupBy( [], indicator ); // $ExpectType any
+	groupBy( [ 'beep', 'boop', 'foo', 'bar' ], indicator ); // $ExpectType ValuesResults<string>
+	groupBy( [], indicator ); // $ExpectType ValuesResults<string>
+
 	const opts = {
 		'returns': 'indices' as 'indices'
 	};
-	groupBy( [ 'beep', 'boop', 'foo', 'bar' ], opts, indicator ); // $ExpectType any
+	groupBy( [ 'beep', 'boop', 'foo', 'bar' ], opts, indicator ); // $ExpectType IndicesResults
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
@@ -43,6 +52,7 @@ const indicator = ( v: string ): string => v[ 0 ];
 // The compiler throws an error if the function is provided a last argument which is not a function...
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
+
 	groupBy( arr, false ); // $ExpectError
 	groupBy( arr, true ); // $ExpectError
 	groupBy( arr, 32 ); // $ExpectError
@@ -61,12 +71,14 @@ const indicator = ( v: string ): string => v[ 0 ];
 // The compiler throws an error if the function is provided an options argument which is not an object...
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
+
 	groupBy( arr, null, indicator ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a `returns` option which is not one of 'indices', 'values', or '*'...
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
+
 	groupBy( arr, { 'returns': '5' }, indicator ); // $ExpectError
 	groupBy( arr, { 'returns': 123 }, indicator ); // $ExpectError
 	groupBy( arr, { 'returns': [] }, indicator ); // $ExpectError
@@ -77,6 +89,7 @@ const indicator = ( v: string ): string => v[ 0 ];
 // The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	const arr = [ 'beep', 'boop', 'foo', 'bar' ];
+
 	groupBy(); // $ExpectError
 	groupBy( arr ); // $ExpectError
 	groupBy( arr, {}, indicator, 16 ); // $ExpectError

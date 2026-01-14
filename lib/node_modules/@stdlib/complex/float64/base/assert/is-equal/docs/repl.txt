@@ -1,0 +1,27 @@
+
+{{alias}}( z1, z2 )
+    Tests whether two double-precision complex floating-point numbers are equal.
+
+    Parameters
+    ----------
+    z1: Complex128
+        First complex number.
+
+    z2: Complex128
+        Second complex number.
+
+    Returns
+    -------
+    out: boolean
+        Result.
+
+    Examples
+    --------
+    > var z1 = new {{alias:@stdlib/complex/float64/ctor}}( 5.0, 3.0 );
+    > var z2 = new {{alias:@stdlib/complex/float64/ctor}}( 5.0, 3.0 );
+    > var v = {{alias}}( z1, z2 )
+    true
+
+    See Also
+    --------
+

@@ -1,0 +1,69 @@
+
+{{alias}}( ...arrays )
+    Broadcasts ndarrays to a common shape.
+
+    The function supports two (mutually exclusive) means of providing ndarray
+    arguments:
+
+    1. Providing a single array containing ndarray arguments.
+    2. Providing ndarray arguments as separate arguments.
+
+    The returned arrays are read-only views on their respective underlying
+    array data buffers. The views are typically **not** contiguous. As more
+    than one element of a returned view may refer to the same memory location,
+    writing to a view may affect multiple elements. If you need to write to an
+    input array, copy the array before broadcasting.
+
+    The function throws an error if provided broadcast-incompatible ndarrays.
+
+    The function always returns new ndarray instances even if an input ndarray
+    and the broadcasted shape are the same.
+
+    Parameters
+    ----------
+    arrays: ...ndarray|ArrayLikeObject<ndarray>
+        Array arguments.
+
+    Returns
+    -------
+    out: Array<ndarray>
+        Broadcasted arrays.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > var sh = x.shape
+    [ 2, 2 ]
+    > var y = {{alias:@stdlib/ndarray/zeros}}( [ 3, 2, 2 ] )
+    <ndarray>
+    > var out = {{alias}}( [ x, y ] )
+    [ <ndarray>, <ndarray> ]
+
+    // Retrieve the broadcasted "x" array:
+    > var bx = out[ 0 ]
+    <ndarray>
+    > sh = bx.shape
+    [ 3, 2, 2 ]
+
+    // Retrieve broadcasted elements...
+    > var v = bx.get( 0, 0, 0 )
+    1
+    > v = bx.get( 0, 0, 1 )
+    2
+    > v = bx.get( 0, 1, 0 )
+    3
+    > v = bx.get( 0, 1, 1 )
+    4
+    > v = bx.get( 1, 0, 0 )
+    1
+    > v = bx.get( 1, 1, 0 )
+    3
+    > v = bx.get( 2, 0, 0 )
+    1
+    > v = bx.get( 2, 1, 1 )
+    4
+
+    See Also
+    --------
+

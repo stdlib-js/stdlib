@@ -34,7 +34,7 @@ Woot woot! If you are new to stdlib, welcome! And thanks for your interest! Whil
 
 ### Issues
 
-When filing new [issues][stdlib-issues] and commenting on existing [issues][stdlib-issues] on this repository, please ensure that discussions are related to concrete technical issues. For general questions and help, consult the [FAQ][stdlib-faq] and visit the [Gitter][stdlib-gitter] channel.
+When filing new [issues][stdlib-issues] and commenting on existing [issues][stdlib-issues] on this repository, please ensure that discussions are related to concrete technical issues. For general questions and help, consult the [FAQ][stdlib-faq] and visit the [Zulip][stdlib-zulip] chat.
 
 **Before** filing a potential bug report,
 
@@ -61,7 +61,7 @@ When filing an [issue][stdlib-issues], provide the following, where possible:
 -   The expected results.
 -   List of affected environments (e.g., browser, browser version, `npm` version, Node.js version, operating system, and stdlib version).
 
-When pasting code blocks or output, use triple backticks to enable proper formatting. Surround inline code with single backticks. For other Markdown formatting tips and trips, see GitHub's [Markdown guide][github-markdown-guide].
+When pasting code blocks or output, use triple backticks to enable proper formatting. Surround inline code with single backticks. For other Markdown formatting tips and tricks, see GitHub's [Markdown guide][github-markdown-guide].
 
 Be aware that the `@` symbol tags users on GitHub, so **always** surround package names with backticks (e.g., `@stdlib/utils/copy`).
 
@@ -87,7 +87,7 @@ If you have found a bug that you would like to fix,
 
 If you want to contribute a new feature or a breaking change to stdlib, be sure to
 
--   consult the [Gitter][stdlib-gitter] channel to discuss ideas and to gather feedback as to whether a feature would be better developed as an external package. Discussing the design upfront helps ensure that we're ready to accept to your work.
+-   consult the [Zulip][stdlib-zulip] chat to discuss ideas and to gather feedback as to whether a feature would be better developed as an external package. Discussing the design upfront helps ensure that we're ready to accept your work.
 -   write an RFC (request for comments) detailing the proposed change and submit as an issue on the project GitHub issue tracker.
 -   wait for RFC approval.
 -   submit a [pull request][stdlib-pull-requests], making sure to adhere to the guidance set forth in the RFC.
@@ -118,7 +118,17 @@ Create a [GitHub account][github-signup]. The project uses GitHub exclusively fo
 $ git clone https://github.com/<username>/stdlib.git
 ```
 
-where `<username>` is your GitHub username. The repository has a large commit history, leading to slow download times. You can reduce the download time by limiting the clone [depth][git-clone-depth].
+where `<username>` is your GitHub username. When cloning, avoid cloning to a directory having spaces in its path. Because this project relies heavily on `make`, any spaces in the directory path will lead to errors and inevitable frustration.
+
+```text
+// Bad:
+/home/foo/bar/beep boop/stdlib
+
+// Good:
+/home/foo/bar/beep_boop/stdlib
+```
+
+The repository has a large commit history, leading to slow download times. You can reduce the download time by limiting the clone [depth][git-clone-depth].
 
 <!-- run-disable -->
 
@@ -152,7 +162,27 @@ And finally, add an `upstream` [remote][git-remotes] to allow syncing changes be
 $ git remote add upstream git://github.com/stdlib-js/stdlib.git
 ```
 
-#### Step 2: Branch
+#### Step 2: Initial Setup
+
+Install dependencies.
+
+<!-- run-disable -->
+
+```bash
+$ make install
+```
+
+Initialize Git hooks to enable automated development processes to run prior to authoring commits and pushing changes.
+
+<!-- run-disable -->
+
+```bash
+$ make init
+```
+
+Note that `make init` only needs to be run once; however, we repeat it below as **not** running it is a common omission by new contributors.
+
+#### Step 3: Branch
 
 For modifications intended to be included in stdlib, create a new local branch.
 
@@ -164,11 +194,11 @@ $ git checkout -b <branch>
 
 where `<branch>` is the branch name. Both the `master` and `develop` branches for the main stdlib project are protected, and direct modifications to these branches will **not** be accepted. Instead, all contributions should be made on non-master and non-develop local branches, including documentation changes and other non-code modifications. See the project [branching guide][stdlib-branching] for additional guidance.
 
-#### Step 3: Write
+#### Step 4: Write
 
 Start making your changes and/or implementing the new feature. Any text you write should follow the [text style guide][stdlib-style-guides-text], including comments and API documentation.
 
-#### Step 4: Commit
+#### Step 5: Commit
 
 Ensure that you have configured [Git][git] to know your name and email address.
 
@@ -190,7 +220,7 @@ $ git commit
 
 When writing commit messages, follow the Git [style guide][stdlib-style-guides-git]. Adherence to project commit conventions is necessary for project automation which automatically generates release notes and changelogs from commit messages.
 
-#### Step 5: Sync
+#### Step 6: Sync
 
 To incorporate recent changes from the `upstream` repository during development, you should [rebase][git-rebase] your local branch, reapplying your local commits on top of the current upstream `HEAD`. This procedure is in contrast to performing a standard [merge][git-merge], which may interleave development histories. The rationale is twofold:
 
@@ -206,11 +236,13 @@ $ git fetch upstream
 $ git rebase upstream/develop
 ```
 
-#### Step 6: Test
+#### Step 7: Test
 
 Tests should accompany **all** bug fixes and features. For guidance on how to write tests, consult existing tests within the project.
 
-**Before** submitting a [pull request][github-pull-request] to the `upstream` repository, ensure that all tests pass, including linting. If [Git][git] hooks have been enabled,
+**Before** submitting a [pull request][github-pull-request] to the `upstream` repository, ensure that all tests pass, including linting. To run tests locally, consult the guidance [below](#writing-tests).
+
+If [Git][git] hooks have been enabled,
 
 <!-- run-disable -->
 
@@ -222,7 +254,7 @@ linting should be automatically triggered prior to each commit, and test executi
 
 Any [pull requests][github-pull-request] which include failing tests and/or lint errors will **not** be accepted.
 
-#### Step 7: Push
+#### Step 8: Push
 
 Push your changes to your remote GitHub repository.
 
@@ -234,7 +266,7 @@ $ git push origin <branch>
 
 where `<branch>` is the name of your branch.
 
-#### Step 8: Pull Request
+#### Step 9: Pull Request
 
 Once your contribution is ready to be incorporated in the `upstream` repository, open a [pull request][github-pull-request] against the `develop` branch. One or more project contributors will review the contribution, provide feedback, and potentially request changes.
 
@@ -270,7 +302,7 @@ $ git log
 $ git commit --fixup <COMMIT_SHA> ...
 ```
 
-Alternatively, you can also create a new commit with a commit message starting with `fixup! <commit header>` followed the commit header of the commit being fixed up. For example,
+Alternatively, you can also create a new commit with a commit message starting with `fixup! <commit header>` followed by the commit header of the commit being fixed up. For example,
 
 <!-- run-disable -->
 
@@ -280,13 +312,19 @@ $ git commit -m "fixup! feat: add support for computing the absolute value"
 
 If the history needs modification, a contributor will modify the history during the merge process. The rationale for **not** rewriting public history is that doing so invalidates the commit history for anyone else who has pulled your changes, thus imposing additional burdens on collaborators to ensure that their local versions match the modified history.
 
-#### Step 9: Land
+In the event that you need to pull in changes from the `upstream` repository after having pushed changes to your remote repository (e.g., to incorporate fixes unrelated to your work in order to address CI failures, etc), perform a standard [merge][git-merge].
+
+```bash
+$ git pull upstream develop
+```
+
+#### Step 10: Land
 
 After any changes have been resolved and continuous integration tests have passed, a contributor will approve a [pull request][github-pull-request] for inclusion in the project. Once merged, the [pull request][github-pull-request] will be updated with the merge commit, and the [pull request][github-pull-request] will be closed.
 
-Note that, during the merge process, multiple commits will often be [squashed][git-rewriting-history].
+Note that, in most cases during the merge process, multiple commits will be [squashed][git-rewriting-history] into a single commit.
 
-#### Step 10: Celebrate
+#### Step 11: Celebrate
 
 **Congratulations**! You are an official contributor to stdlib! Thank you for your hard work and patience!
 
@@ -295,7 +333,7 @@ Note that, during the merge process, multiple commits will often be [squashed][g
 ### GitHub
 
 -   When linking to specific lines of code in an issue or a pull request, hit the `y` key while viewing a file on GitHub. Doing so reloads the page with a URL that includes the specific version of the file you are viewing. This ensures that, when you refer to specific lines, these same lines can be easily viewed in the future, even if the content of the file changes.
--   GitHub does not send notifications when you push a commit and update a [pull request][github-pull-request], so be sure to comment on the pull request thread to inform reviewers that you have made changes.
+-   GitHub does not send notifications to project maintainers when you push a commit and update a [pull request][github-pull-request], so be sure to comment on the pull request thread to inform reviewers that you have made changes and request another review using the GitHub UI.
 
 ### Writing Tests
 
@@ -316,7 +354,7 @@ The project can **never** have enough tests. To address areas lacking sufficient
     <!-- run-disable -->
 
     ```bash
-    $ make TESTS_FILTER=.*/<pattern>/.* test
+    $ make TESTS_FILTER=".*/<pattern>/.*" test
     ```
 
     where `<pattern>` is a pattern matching a particular path. For example, to test the base math `sin` package
@@ -324,7 +362,7 @@ The project can **never** have enough tests. To address areas lacking sufficient
     <!-- run-disable -->
 
     ```bash
-    $ make TESTS_FILTER=.*/math/base/special/sin/.* test
+    $ make TESTS_FILTER=".*/math/base/special/sin/.*" test
     ```
 
     where the pattern `.*/math/base/special/sin/.*` matches any test file whose absolute path contains `math/base/special/sin`.
@@ -334,13 +372,23 @@ The project can **never** have enough tests. To address areas lacking sufficient
     <!-- run-disable -->
 
     ```bash
-    $ make TESTS_FILTER=.*/<pattern>/.* test-cov
+    $ make TESTS_FILTER=".*/<pattern>/.*" test-cov
     $ make view-cov
     ```
 
     which opens the coverage report in your default web browser.
 
 7.  Submit the test as a [pull request][github-pull-request].
+
+Note that, for contributions targeting C implementations, you'll need to first compile the native add-on which provides the bridge between JavaScript and C (assuming that the package has a native add-on binding).
+
+```bash
+$ make install-node-addons NODE_ADDONS_PATTERN="math/base/special/sin"
+```
+
+where the pattern `math/base/special/sin` (note the differences from the filter pattern above!) matches any add-on whose absolute path contains `math/base/special/sin`.
+
+Once the add-on is compiled, you can follow steps 5-7 above.
 
 ### Writing Documentation
 
@@ -387,21 +435,21 @@ Phew. While the above may be a lot to remember, even for what seem like minor ch
 
 [stdlib-style-guides-git]: https://github.com/stdlib-js/stdlib/blob/develop/docs/style-guides/git
 
-[stdlib-doctest]: https://github.com/stdlib-js/stdlib/blob/develop/docs/doctest.md
+[stdlib-doctest]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/doctest.md
 
-[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/development.md
+[stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
-[stdlib-branching]: https://github.com/stdlib-js/stdlib/blob/develop/docs/branching.md
+[stdlib-branching]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/branching.md
 
-[stdlib-packages]: https://github.com/stdlib-js/stdlib/blob/develop/docs/packages.md
+[stdlib-packages]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/packages.md
 
-[stdlib-repl-text]: https://github.com/stdlib-js/stdlib/blob/develop/docs/repl_text.md
+[stdlib-repl-text]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/repl_text.md
 
 [stdlib-faq]: https://github.com/stdlib-js/stdlib/blob/develop/FAQ.md
 
 [stdlib-code-coverage]: https://codecov.io/github/stdlib-js/stdlib/branch/develop
 
-[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [stdlib-issues]: https://github.com/stdlib-js/stdlib/issues
 

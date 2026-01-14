@@ -1,0 +1,29 @@
+
+{{alias}}( x )
+    Computes the inverse (arc) secant of a single-precision
+    floating-point number.
+
+    If `x > -1` and `x < 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Inverse (arc) secant.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0 )
+    0.0
+    > y = {{alias}}( 2.0 )
+    ~1.0472
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

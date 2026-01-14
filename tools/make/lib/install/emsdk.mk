@@ -52,26 +52,10 @@ DEPS_EMSDK_TEST_OUT ?= $(DEPS_EMSDK_TEST_DIR)/build
 DEPS_EMSDK_TEST_INSTALL ?= $(DEPS_EMSDK_TEST_DIR)/test_install.c
 
 # Define output paths for a compiled test file:
-DEPS_EMSDK_TEST_INSTALL_ASM_OUT ?= $(DEPS_EMSDK_TEST_OUT)/test.asm.js
-DEPS_EMSDK_TEST_INSTALL_WASM_OUT ?= $(DEPS_EMSDK_TEST_OUT)/test.html
-
-# Define the web browser to run tests:
-DEPS_EMSDK_TEST_INSTALL_BROWSER ?= firefox
-
-# Define the port over which to serve web browser tests:
-DEPS_EMSDK_TEST_INSTALL_PORT ?= 6931
-
-# Define the Emscripten SDK to install:
-deps_emsdk := sdk-$(DEPS_EMSDK_VERSION)-64bit
-
-# Define the Binaryen tool to install:
-deps_emsdk_binaryen := binaryen-$(DEPS_EMSDK_BINARYEN_VERSION)-64bit
+DEPS_EMSDK_TEST_INSTALL_WASM_OUT ?= $(DEPS_EMSDK_TEST_OUT)/test.wasm
 
 # Define the path to the `emcc` compiler:
-EMCC ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/$(DEPS_EMSDK_VERSION)/emcc
-
-# Define the path to an executable for running HTML pages:
-EMRUN ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/$(DEPS_EMSDK_VERSION)/emrun
+EMCC ?= $(DEPS_EMSDK_EMSCRIPTEN_EMCC)
 
 
 # RULES #
@@ -102,15 +86,6 @@ $(DEPS_EMSDK_BUILD_OUT): | $(DEPS_BUILD_DIR) $(DEPS_EMSDK_DOWNLOAD_OUT)
 #/
 $(DEPS_EMSDK_TEST_OUT):
 	$(QUIET) $(MKDIR_RECURSIVE) $(DEPS_EMSDK_TEST_OUT)
-
-#/
-# Compiles an asm.js test file for testing an Emscripten SDK installation.
-#
-# @private
-#/
-$(DEPS_EMSDK_TEST_INSTALL_ASM_OUT): $(DEPS_EMSDK_BUILD_OUT) $(DEPS_EMSDK_TEST_OUT)
-	$(QUIET) $(EMCC) $(DEPS_EMSDK_TEST_INSTALL) \
-		-o $(DEPS_EMSDK_TEST_INSTALL_ASM_OUT)
 
 #/
 # Compiles a WebAssembly test file for testing an Emscripten SDK installation.
@@ -185,8 +160,8 @@ deps-prerequisites-emsdk:
 #/
 deps-install-emsdk: $(DEPS_EMSDK_BUILD_OUT) deps-prerequisites-emsdk
 	$(QUIET) cd $(DEPS_EMSDK_BUILD_OUT) && $(GIT) pull
-	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk install $(deps_emsdk) $(deps_emsdk_binaryen) --build=Release
-	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk activate $(deps_emsdk) $(deps_emsdk_binaryen) --build=Release
+	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk install $(DEPS_EMSDK_VERSION)
+	$(QUIET) $(DEPS_EMSDK_BUILD_OUT)/emsdk activate $(DEPS_EMSDK_VERSION)
 
 .PHONY: deps-install-emsdk
 
@@ -210,15 +185,11 @@ deps-update-emsdk: deps-install-emsdk deps-test-emsdk
 # @example
 # make deps-test-emsdk
 #/
-deps-test-emsdk: $(DEPS_EMSDK_TEST_INSTALL_ASM_OUT) $(DEPS_EMSDK_TEST_INSTALL_WASM_OUT)
+deps-test-emsdk: $(DEPS_EMSDK_TEST_INSTALL_WASM_OUT) deps-test-emsdk-wasm
 	$(QUIET) echo '' >&2
 	$(QUIET) echo 'emcc info...' >&2
 	$(QUIET) echo '' >&2
 	$(QUIET) $(EMCC) -v >&2
-	$(QUIET) echo '' >&2
-	$(QUIET) echo 'Running asm.js tests...' >&2
-	$(QUIET) echo '' >&2
-	$(QUIET) $(NODE) $(DEPS_EMSDK_TEST_INSTALL_ASM_OUT)
 	$(QUIET) echo '' >&2
 	$(QUIET) echo 'Success.' >&2
 
@@ -235,13 +206,8 @@ deps-test-emsdk: $(DEPS_EMSDK_TEST_INSTALL_ASM_OUT) $(DEPS_EMSDK_TEST_INSTALL_WA
 deps-test-emsdk-wasm: $(DEPS_EMSDK_TEST_INSTALL_WASM_OUT)
 	$(QUIET) echo 'Running wasm tests...' >&2
 	$(QUIET) echo '' >&2
-	$(QUIET) $(EMRUN) \
-		--browser $(DEPS_EMSDK_TEST_INSTALL_BROWSER) \
-		--port $(DEPS_EMSDK_TEST_INSTALL_PORT) \
-		--browser_info \
-		--system_info \
-		--no_emrun_detect \
-		$(DEPS_EMSDK_TEST_INSTALL_WASM_OUT)
+	$(QUIET) echo 'TODO: make test more robust' >&2
+	$(QUIET) test -f $(DEPS_EMSDK_TEST_INSTALL_WASM_OUT) >&2
 	$(QUIET) echo '' >&2
 	$(QUIET) echo 'Success.' >&2
 

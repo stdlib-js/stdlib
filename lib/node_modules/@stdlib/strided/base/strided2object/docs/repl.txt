@@ -1,0 +1,80 @@
+
+{{alias}}( N, x, stride, offset )
+    Converts a strided array and associated metadata to an object likely to have
+    the same "shape".
+
+    The returned object has the following properties:
+
+    - data: reference to input array.
+    - dtype: input array data type.
+    - length: number of indexed elements.
+    - stride: index increment.
+    - offset: starting index.
+    - accessorProtocol: boolean indicating whether the input array uses
+      accessors for getting and setting elements.
+    - accessors: a two-element array whose first element is an accessor for
+      retrieving an array element and whose second element is an accessor for
+      setting an array element.
+
+    The getter accessor accepts two arguments:
+
+    - data: data buffer.
+    - idx: element index.
+
+    The setter accessor accepts three arguments:
+
+    - data: data buffer.
+    - idx: element index.
+    - value: value to set.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: ArrayLikeObject
+        Input strided array.
+
+    stride: integer
+        Index increment.
+
+    offset: integer
+        Starting index.
+
+    Returns
+    -------
+    out: Object
+        Object containing array data.
+
+    out.data: ArrayLikeObject
+        Reference to input array.
+
+    out.dtype: string|null
+        Input array data type.
+
+    out.length: integer
+        Number of indexed elements.
+
+    out.stride: integer
+        Index increment.
+
+    out.offset: integer
+        Starting index.
+
+    out.accessorProtocol: boolean
+        Boolean indicating whether the input array uses accessors for getting
+        and setting elements.
+
+    out.accessors: Array<Function>
+        A two-element array whose first element is an accessor for retrieving an
+        array element and whose second element is an accessor for setting an
+        array element.
+
+    Examples
+    --------
+    > var out = {{alias}}( 4, [ 1, 2, 3, 4 ], 1, 0 )
+    {...}
+
+    See Also
+    --------
+

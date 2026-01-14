@@ -77,5 +77,8 @@
     "real",
     "float32",
     "float32array"
-  ]
+  ],
+  "__stdlib__": {
+    "wasm": false
+  }
 }

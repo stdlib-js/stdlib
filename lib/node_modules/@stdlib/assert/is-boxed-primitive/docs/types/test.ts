@@ -23,12 +23,12 @@ import isBoxedPrimitive = require( './index' );
 
 // The function returns a boolean...
 {
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isBoxedPrimitive( new String( 'beep' ) ); // $ExpectType boolean
 	isBoxedPrimitive( 'beep' ); // $ExpectType boolean
 	isBoxedPrimitive( [] ); // $ExpectType boolean
 
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isBoxedPrimitive( new Number( 3.21 ) ); // $ExpectType boolean
 }
 
@@ -36,6 +36,6 @@ import isBoxedPrimitive = require( './index' );
 {
 	isBoxedPrimitive(); // $ExpectError
 
-	// tslint:disable-next-line:no-construct
+	// eslint-disable-next-line no-new-wrappers
 	isBoxedPrimitive( new String( 'beep' ), 123 ); // $ExpectError
 }

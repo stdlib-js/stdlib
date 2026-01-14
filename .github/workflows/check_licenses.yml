@@ -20,7 +20,12 @@
 name: check_licenses
 
 # Workflow triggers:
-on: [pull_request]
+on: [ pull_request ]
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
 
 # Workflow jobs:
 jobs:
@@ -53,7 +58,8 @@ jobs:
 
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -74,9 +80,10 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
-          node-version: '16' # 'lts/*'
+          node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
       # Print debug info:
@@ -107,7 +114,7 @@ jobs:
       # Run the build task:
       - name: 'Run build task'
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" "${{ env.BUILD_TASK }}" "${{ env.LOG_FILE_BUILD_TASK }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/task_runner" "${{ env.BUILD_TASK }}" "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
@@ -120,7 +127,8 @@ jobs:
 
       # Upload the log file:
       - name: 'Upload log file'
-        uses: actions/upload-artifact@v3
+        # Pin action to full length commit SHA
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         if: always()
         with:
           # Define a name for the uploaded artifact:

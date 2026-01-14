@@ -1,0 +1,81 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: good_first_issue
+
+# Workflow triggers:
+on:
+  issues:
+    types:
+      - labeled
+
+# Workflow jobs:
+jobs:
+
+  # Define a job which posts a comment to "good first issues":
+  add_comment:
+
+    # Define job name:
+    name: 'Check for Good First Issue label'
+
+    # Only run this job if the pull request has a specific label:
+    if: "${{ github.event.label.name == 'Good First Issue' }}"
+
+    # Define job permissions:
+    permissions:
+      contents: read
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Post a comment:
+      - name: 'Add comment'
+        run: gh issue comment "$NUMBER" --body "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          BODY: |
+            # :wave: Important: PLEASE READ :wave:
+
+            This issue has been labeled as a **good first issue** and is available for anyone to work on.
+
+            If this is your first time contributing to an open source project, some aspects of the development process may seem unusual, arcane, or some combination of both.
+
+            1.  **You cannot "claim" issues.** People new to open source often want to "claim" or be assigned an issue before beginning work. The typical rationale is that people want to avoid wasted work in the event that someone else ends up working the issue. However, this practice is not effective in open source, as it often leads to "issue squatting", in which an individual asks to be assigned, is granted their request, and then never ends up working on the issue. Accordingly, you are encouraged to communicate your intent to address this issue, ideally by providing a rough outline as to how you plan to address the issue or asking clarifying questions, but, at the end of the day, we will take running code and rough consensus in order to move forward quickly.
+            2.  **We have a very high bar for contributions.** We have very high standards for contributions and expect all contributions—whether new features, tests, or documentation—to be rigorous, thorough, and complete. Once a pull request is merged into stdlib, that contribution immediately becomes the collective responsibility of all maintainers of stdlib. When we merge code into stdlib, we are saying that we, the maintainers, commit to reviewing subsequent changes and making bugfixes to the code. Hence, in order to ensure future maintainability, this naturally leads to a higher standard of contribution.
+
+            Before working on this issue and opening a pull request, please read the project's [contributing guidelines](https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md). These guidelines and the associated [development guide](https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md) provide important information, including links to stdlib's [Code of Conduct](https://github.com/stdlib-js/stdlib/blob/develop/CODE_OF_CONDUCT.md), license policy, and steps for setting up your local development environment.
+
+            To reiterate, we **strongly** encourage you to refer to our contributing guides **before** beginning work on this issue. Failure to follow our guidelines significantly decreases the likelihood that you'll successfully contribute to stdlib and may result in automatic closure of a pull request without review.
+
+            Setting up your local development environment is a critical first step, as doing so ensures that automated development processes for linting, license verification, and unit testing can run prior to authoring commits and pushing changes. If you would prefer to avoid manual setup, we provide pre-configured [development containers](https://github.com/stdlib-js/stdlib/tree/develop/.devcontainer) for use locally or in GitHub Codespaces.
+
+            We place a high value on consistency throughout the stdlib codebase. We encourage you to closely examine other packages in stdlib and attempt to emulate the practices and conventions found therein.
+
+            -   If you are attempting to contribute a new package, sometimes the best approach is to simply copy the contents of an existing package and then modify the minimum amount necessary to implement the feature (e.g., changing descriptions, parameter names, and implementation).
+            -   If you are contributing tests, find a package implementing a similar feature and emulate the tests of that package.
+            -   If you are updating documentation, examine several similar packages and emulate the content, style, and prose of those packages.
+
+            In short, the more effort you put in to ensure that your contribution looks and feels like stdlib—including variables names, bracket spacing, line breaks, etc—the more likely that your contribution will be reviewed and ultimately accepted. We encourage you to closely study the codebase **before** beginning work on this issue.
+
+            :sparkles: Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions. :sparkles:

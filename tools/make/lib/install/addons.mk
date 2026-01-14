@@ -55,12 +55,35 @@ install_node_addons_list_addons_flags := "--pattern $(node_addons_pattern)"
 #
 # ## Notes
 #
-# -   If unable to install a native add-on, the target prints an error message and proceeds to try installing the next add-on.
+# -   When `FAST_FAIL` is `0`, if unable to install a native add-on, the recipe prints an error message and proceeds to try installing the next add-on.
+#
+# @param {integer} [FAST_FAIL] - flag indicating whether to immediately exit if unable to install a native add-on (default: 1)
 #
 # @example
 # make install-node-addons
+#
+# @example
+# FAST_FAIL=0 make install-node-addons
+#
+# @example
+# FAST_FAIL=1 make install-node-addons
 #/
 install-node-addons: $(NODE_MODULES) clean-node-addons
+ifeq ($(FAIL_FAST), true)
+	$(QUIET) $(MAKE) LIST_PKGS_ADDONS_FLAGS=$(install_node_addons_list_addons_flags) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
+		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
+			continue; \
+		fi; \
+		echo ''; \
+		echo "Building add-on: $$pkg"; \
+		cd $$pkg && \
+			MAKEFLAGS= \
+			NODE_PATH="$(NODE_PATH)" \
+			GYP_DEFINES="$(NODE_GYP_DEFINES)" \
+			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
+		|| { echo "Error: failed to build add-on: $$pkg"; exit 1; } \
+	done
+else
 	$(QUIET) $(MAKE) LIST_PKGS_ADDONS_FLAGS=$(install_node_addons_list_addons_flags) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
@@ -74,16 +97,41 @@ install-node-addons: $(NODE_MODULES) clean-node-addons
 			$(NODE_GYP) $(NODE_GYP_FLAGS) rebuild \
 		|| { echo "Error: failed to build add-on: $$pkg"; exit 0; } \
 	done
+endif
 
 .PHONY: install-node-addons
 
 #/
 # Removes all compiled and generated files for Node.js native add-ons.
 #
+# ## Notes
+#
+# -   When `FAST_FAIL` is `0`, if unable to clean a native add-on, the recipe prints an error message and proceeds to try cleaning the next add-on.
+#
+# @param {integer} [FAST_FAIL] - flag indicating whether to immediately exit if unable to clean a native add-on (default: 1)
+#
 # @example
 # make clean-node-addons
+#
+# @example
+# FAST_FAIL=0 make clean-node-addons
+#
+# @example
+# FAST_FAIL=1 make clean-node-addons
 #/
-clean-node-addons:
+clean-node-addons: $(NODE_MODULES)
+ifeq ($(FAIL_FAST), true)
+	$(QUIET) $(MAKE) LIST_PKGS_ADDONS_FLAGS=$(install_node_addons_list_addons_flags) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
+		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
+			continue; \
+		fi; \
+		echo ''; \
+		echo "Cleaning add-on: $$pkg"; \
+		cd $$pkg/src && $(MAKE) clean && \
+		cd $$pkg && $(NODE_GYP) clean \
+		|| { echo "Error: failed to clean add-on: $$pkg"; exit 1; } \
+	done
+else
 	$(QUIET) $(MAKE) LIST_PKGS_ADDONS_FLAGS=$(install_node_addons_list_addons_flags) -f $(this_file) list-pkgs-addons | while read -r pkg; do \
 		if echo "$$pkg" | grep -v '^\/.*\|^[a-zA-Z]:.*' >/dev/null; then \
 			continue; \
@@ -94,5 +142,6 @@ clean-node-addons:
 		cd $$pkg && $(NODE_GYP) clean \
 		|| { echo "Error: failed to clean add-on: $$pkg"; exit 0; } \
 	done
+endif
 
 .PHONY: clean-node-addons

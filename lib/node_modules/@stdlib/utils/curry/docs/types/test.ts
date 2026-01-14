@@ -23,10 +23,22 @@ import curry = require( './index' );
 
 // The function returns a function...
 {
-	curry( ( x: number, y: number ): number => x + y ); // $ExpectType Closure
-	curry( ( x: number, y: number ): number => x + y, 2 ); // $ExpectType Closure
-	curry( ( x: number, y: number ): number => x + y, {} ); // $ExpectType Closure
-	curry( ( x: number, y: number ): number => x + y, 2, {} ); // $ExpectType Closure
+	curry( ( x: number, y: number ): number => x + y ); // $ExpectType (v: number) => (v: number) => number
+	curry( ( x: number, y: number ): number => x + y, 2 ); // $ExpectType (v: number) => (v: number) => number
+	curry( ( x: string, y: string ): string => x + y, {} ); // $ExpectType (v: string) => (v: string) => string
+	curry( ( x: string, y: string ): string => x + y, 2, {} ); // $ExpectType (v: string) => (v: string) => string
+	curry( ( str: string, n: number ): string => str.substring( n ) ); // $ExpectType (v: string) => (v: number) => string
+
+	const cxt = {
+		'count': 0,
+		'multiply': function multiply( this: { count: number }, x: number, y: number ): number {
+			this.count += 1; // eslint-disable-line no-invalid-this
+			return x * y;
+		}
+	};
+	curry( cxt.multiply ); // $ExpectType (v: number) => (v: number) => number
+	curry( cxt.multiply, 2 ); // $ExpectType (v: number) => (v: number) => number
+	curry( cxt.multiply, 2, { 'count': 2 } ); // $ExpectType (v: number) => (v: number) => number
 }
 
 // The compiler throws an error if the function is provided a first argument other than a function...
@@ -37,6 +49,19 @@ import curry = require( './index' );
 	curry( [] ); // $ExpectError
 	curry( {} ); // $ExpectError
 	curry( 'abc' ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a third argument which does not constitute a valid `this` context...
+{
+	const cxt = {
+		'count': 0,
+		'multiply': function multiply( this: { count: number }, x: number, y: number ): number {
+			this.count += 1; // eslint-disable-line no-invalid-this
+			return x * y;
+		}
+	};
+	curry( cxt.multiply, { 'COUNT': 2 } ); // $ExpectError
+	curry( cxt.multiply, 2, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided more than three arguments...

@@ -42,7 +42,7 @@ var tabulateByAsync = require( '@stdlib/utils/async/tabulate-by' );
 
 #### tabulateByAsync( collection, \[options,] indicator, done )
 
-Generates a frequency table according to an `indicator` function, i.e., a function which specifies how to categorize an element in the input `collection`.
+Generates a frequency table according to an `indicator` function (i.e., a function which specifies how to categorize an element in the input `collection`).
 
 ```javascript
 function indicator( value, next ) {
@@ -72,7 +72,7 @@ tabulateByAsync( arr, indicator, done );
 */
 ```
 
-The returned frequency table is an `array` of `arrays`. Each sub-array corresponds to a unique value in the input `collection` and is structured as follows:
+The returned frequency table is an array of arrays. Each sub-array corresponds to a unique value in the input `collection` and is structured as follows:
 
 -   `0`: unique value
 -   `1`: value count
@@ -81,7 +81,7 @@ The returned frequency table is an `array` of `arrays`. Each sub-array correspon
 The function accepts the following `options`:
 
 -   `limit`: the maximum number of pending invocations at any one time. Default: `infinity`.
--   `series`: `boolean` indicating whether to sequentially invoke the `indicator` function for each `collection` element. If `true`, the function sets `options.limit=1`. Default: `false`.
+-   `series`: boolean indicating whether to sequentially invoke the `indicator` function for each `collection` element. If `true`, the function sets `options.limit=1`. Default: `false`.
 -   `thisArg`: the execution context for `indicator`.
 
 By default, all elements are processed concurrently, which means that the function does **not** guarantee completion order. To process each `collection` element sequentially, set the `series` option to `true`.
@@ -189,10 +189,10 @@ function done( error, result ) {
 
 When invoked, the `indicator` function is provided a maximum of four arguments:
 
--   `value`: collection value.
--   `index`: collection index.
--   `collection`: the input `collection`.
--   `next`: a callback which should be called once the `indicator` function has finished processing a collection `value`.
+-   **value**: collection value.
+-   **index**: collection index.
+-   **collection**: the input `collection`.
+-   **next**: a callback which should be called once the `indicator` function has finished processing a collection `value`.
 
 The actual number of provided arguments depends on function `length`. If the `indicator` function accepts two arguments, the `indicator` function is provided `value` and `next`. If the `indicator` function accepts three arguments, the `indicator` function is provided `value`, `index`, and `next`. For every other `indicator` function signature, the `indicator` function is provided all four arguments.
 
@@ -231,7 +231,7 @@ tabulateByAsync( arr, indicator, done );
 
 #### tabulateByAsync.factory( \[options,] indicator )
 
-Returns a `function` which invokes an `indicator` function once for each element in a `collection` and generates a frequency table.
+Returns a function which invokes an `indicator` function once for each element in a `collection` and generates a frequency table.
 
 ```javascript
 function indicator( value, next ) {
@@ -289,7 +289,7 @@ The function accepts the same `options` as `tabulateByAsync()`.
 -   If a provided function calls the `next` callback with a truthy `error` argument, the function suspends execution and immediately calls the `done` callback for subsequent `error` handling.
 -   The function does **not** support dynamic `collection` resizing.
 -   The function does **not** skip `undefined` elements.
--   If provided an empty `collection`, the function calls the `done` callback with an empty `array` for the tabulated results.
+-   If provided an empty `collection`, the function calls the `done` callback with an empty array for the tabulated results.
 -   **Neither** `tabulateByAsync` nor the function returned by the `factory` method **guarantee** asynchronous execution. To guarantee asynchrony, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
 
 </section>

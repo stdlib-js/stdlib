@@ -36,21 +36,25 @@
     options.mode: string (optional)
         Specifies how to handle indices which exceed array dimensions. If equal
         to 'throw', an ndarray instance throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', an ndarray instance
+        normalizes negative indices and throws an error when an index exceeds
         array dimensions. If equal to 'wrap', an ndarray instance wraps around
         indices exceeding array dimensions using modulo arithmetic. If equal to
-        'clamp', an ndarray instance sets an index exceeding array dimensions to
-        either `0` (minimum index) or the maximum index. Default: 'throw'.
+        'clamp', an ndarray instance sets an index exceeding array dimensions
+        to either `0` (minimum index) or the maximum index. Default: 'throw'.
 
     options.submode: Array<string> (optional)
         Specifies how to handle subscripts which exceed array dimensions. If a
         mode for a corresponding dimension is equal to 'throw', an ndarray
         instance throws an error when a subscript exceeds array dimensions. If
-        equal to 'wrap', an ndarray instance wraps around subscripts exceeding
-        array dimensions using modulo arithmetic. If equal to 'clamp', an
-        ndarray instance sets a subscript exceeding array dimensions to either
-        `0` (minimum index) or the maximum index. If the number of modes is
-        fewer than the number of dimensions, the function recycles modes using
-        modulo arithmetic. Default: [ options.mode ].
+        equal to 'normalize', an ndarray instance normalizes negative
+        subscripts and throws an error when a subscript exceeds array
+        dimensions. If equal to 'wrap', an ndarray instance wraps around
+        subscripts exceeding array dimensions using modulo arithmetic. If equal
+        to 'clamp', an ndarray instance sets a subscript exceeding array
+        dimensions to either `0` (minimum index) or the maximum index. If the
+        number of modes is fewer than the number of dimensions, the function
+        recycles modes using modulo arithmetic. Default: [ options.mode ].
 
     options.readonly: boolean (optional)
         Boolean indicating whether an array should be read-only. Default: false.

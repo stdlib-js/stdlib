@@ -16,11 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -35,7 +35,7 @@ type NullaryPredicate = () => boolean;
 * @param value - collection value
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type UnaryPredicate = ( value: any ) => boolean;
+type UnaryPredicate<T> = ( value: T ) => boolean;
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -44,17 +44,7 @@ type UnaryPredicate = ( value: any ) => boolean;
 * @param index - collection index
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type BinaryPredicate = ( value: any, index: number ) => boolean;
-
-/**
-* Checks whether an element in a collection passes a test.
-*
-* @param value - collection value
-* @param index - collection index
-* @param collection - input collection
-* @returns boolean indicating whether an element in a collection passes a test
-*/
-type TernaryPredicate = ( value: any, index: number, collection: Collection ) => boolean; // tslint-disable-line max-line-length
+type BinaryPredicate<T> = ( value: T, index: number ) => boolean;
 
 /**
 * Checks whether an element in a collection passes a test.
@@ -64,19 +54,29 @@ type TernaryPredicate = ( value: any, index: number, collection: Collection ) =>
 * @param collection - input collection
 * @returns boolean indicating whether an element in a collection passes a test
 */
-type Predicate = NullaryPredicate | UnaryPredicate | BinaryPredicate | TernaryPredicate; // tslint-disable-line max-line-length
+type TernaryPredicate<T> = ( value: T, index: number, collection: Collection ) => boolean;
+
+/**
+* Checks whether an element in a collection passes a test.
+*
+* @param value - collection value
+* @param index - collection index
+* @param collection - input collection
+* @returns boolean indicating whether an element in a collection passes a test
+*/
+type Predicate<T> = NullaryPredicate | UnaryPredicate<T> | BinaryPredicate<T> | TernaryPredicate<T>;
 
 /**
 * Function invoked for each collection element while a test condition is true.
 */
-type Nullary = () => void;
+type Nullary<U> = ( this: U ) => void;
 
 /**
 * Function invoked for each collection element while a test condition is true.
 *
 * @param value - collection value
 */
-type Unary = ( value: any ) => void;
+type Unary<T, U> = ( this: U, value: T ) => void;
 
 /**
 * Function invoked for each collection element while a test condition is true.
@@ -84,7 +84,7 @@ type Unary = ( value: any ) => void;
 * @param value - collection value
 * @param index - collection index
 */
-type Binary = ( value: any, index: number ) => void;
+type Binary<T, U> = ( this: U, value: T, index: number ) => void;
 
 /**
 * Function invoked for each collection element while a test condition is true.
@@ -93,7 +93,7 @@ type Binary = ( value: any, index: number ) => void;
 * @param index - collection index
 * @param collection - input collection
 */
-type Ternary = ( value: any, index: number, collection: Collection ) => void;
+type Ternary<T, U> = ( this: U, value: T, index: number, collection: Collection<T> ) => void;
 
 /**
 * Function invoked for each collection element while a test condition is true.
@@ -102,7 +102,7 @@ type Ternary = ( value: any, index: number, collection: Collection ) => void;
 * @param index - collection index
 * @param collection - input collection
 */
-type Callback = Nullary | Unary | Binary | Ternary;
+type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 
 /**
 * While a test condition is true, invokes a function once for each element in a collection, iterating from right to left.
@@ -120,7 +120,6 @@ type Callback = Nullary | Unary | Binary | Ternary;
 *     -   `collection`: the input collection
 *
 * -   If provided an empty collection, the function invokes the provided function with the collection index set to `undefined`.
-*
 *
 * @param collection - input collection
 * @param fcn - function to invoke
@@ -141,7 +140,7 @@ type Callback = Nullary | Unary | Binary | Ternary;
 *
 * doWhileEachRight( arr, log, predicate );
 */
-declare function doWhileEachRight( collection: Collection, fcn: Callback, predicate: Predicate, thisArg?: any ): Collection; // tslint-disable-line max-line-length
+declare function doWhileEachRight<T = unknown, U = unknown>( collection: Collection<T>, fcn: Callback<T, U>, predicate: Predicate<T>, thisArg?: ThisParameterType<Callback<T, U>> ): Collection<T>;
 
 
 // EXPORTS //

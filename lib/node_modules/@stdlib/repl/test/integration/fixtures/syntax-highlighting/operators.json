@@ -1,0 +1,7 @@
+{
+  "expression": "var a = 5 + 10 * 2 / (4 - 2) == 15 && 10 > 5 || 5 < 10; var b = 5; b++",
+  "expected": "var a \u001b[31m=\u001b[0m 5 \u001b[31m+\u001b[0m 10 \u001b[31m*\u001b[0m 2 \u001b[31m/\u001b[0m (4 \u001b[31m-\u001b[0m 2) \u001b[31m==\u001b[0m 15 \u001b[31m&&\u001b[0m 10 \u001b[31m>\u001b[0m 5 \u001b[31m||\u001b[0m 5 \u001b[31m<\u001b[0m 10; var b \u001b[31m=\u001b[0m 5; b\u001b[31m++\u001b[0m",
+  "theme": {
+    "operator": "red"
+  }
+}

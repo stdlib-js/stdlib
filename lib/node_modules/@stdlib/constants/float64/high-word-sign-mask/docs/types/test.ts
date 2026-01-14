@@ -23,6 +23,6 @@ import FLOAT64_HIGH_WORD_SIGN_MASK = require( './index' );
 
 // The export is a number...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	FLOAT64_HIGH_WORD_SIGN_MASK; // $ExpectType number
 }

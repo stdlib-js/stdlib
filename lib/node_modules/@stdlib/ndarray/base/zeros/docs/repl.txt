@@ -5,7 +5,7 @@
     Parameters
     ----------
     dtype: string
-        Underlying data type.
+        Underlying data type. Must be a numeric data type or "generic".
 
     shape: ArrayLikeObject<integer>
         Array shape.

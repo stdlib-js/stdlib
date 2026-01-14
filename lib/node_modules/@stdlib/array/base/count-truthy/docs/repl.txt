@@ -1,0 +1,22 @@
+
+{{alias}}( x )
+    Counts the number of truthy values in an array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: integer
+        Number of truthy values.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 0, 1, 1 ] )
+    2
+
+    See Also
+    --------
+

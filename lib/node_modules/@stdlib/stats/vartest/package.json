@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/stats/vartest",
   "version": "0.0.0",
-  "description": "Two-sample F-test for equal variances",
+  "description": "Two-sample F-test for equal variances.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

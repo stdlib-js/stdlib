@@ -37,6 +37,11 @@ on:
       - 'lib/**/examples/**'
       - 'lib/**/README.md'
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
@@ -46,6 +51,9 @@ jobs:
     # Define a display name:
     name: 'Run changed examples'
 
+    # Only run this job if a pull request does not have a "ci: Skip" label:
+    if: "${{ github.event_name != 'pull_request' || !contains(github.event.pull_request.labels.*.name, 'ci: Skip') }}"
+
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
 
@@ -53,7 +61,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -63,17 +72,34 @@ jobs:
 
           # Specify whether to download Git-LFS files:
           lfs: false
+
+          # Avoid storing GitHub token in local Git configuration:
+          persist-credentials: false
         timeout-minutes: 10
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
-          node-version: '16' # 'lts/*'
+          node-version: '20' # 'lts/*'
         timeout-minutes: 5
+
+      # Cache dependencies:
+      - name: 'Cache dependencies'
+        # Pin action to full length commit SHA
+        uses: actions/cache@9255dc7a253b0ccc959486e2bca901246202afeb # v5.0.1
+        id: cache
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Install dependencies'
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
@@ -87,6 +113,7 @@ jobs:
       # Get list of changed files:
       - name: 'Get list of changed files'
         id: changed-files
+        continue-on-error: true
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
             # Get the list of changed files in pull request:
@@ -110,6 +137,15 @@ jobs:
           files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
             make examples-javascript-files FILES="${files}"
+          fi
+        timeout-minutes: 15
+
+      # Run C examples:
+      - name: 'Run C examples'
+        run: |
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | sed "s|^|${GITHUB_WORKSPACE}/|" | tr '\n' ' ' | sed 's/ $//')
+          if [ -n "$files" ]; then
+            make examples-c-files FILES="${files}"
           fi
         timeout-minutes: 15
 

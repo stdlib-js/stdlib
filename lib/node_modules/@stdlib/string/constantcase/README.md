@@ -147,13 +147,6 @@ $ echo -n 'beEp booP' | constantcase
 BEEP_BOOP
 ```
 
-To use as a [standard stream][standard-streams],
-
-```bash
-$ echo -n 'isMobile' | constantcase
-IS_MOBILE
-```
-
 By default, when used as a [standard stream][standard-streams], the implementation assumes newline-delimited data. To specify an alternative delimiter, set the `split` option.
 
 ```bash

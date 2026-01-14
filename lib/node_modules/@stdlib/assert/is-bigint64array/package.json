@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/assert/is-biguint64array",
+  "name": "@stdlib/assert/is-bigint64array",
   "version": "0.0.0",
-  "description": "Test if a value is a BigUint64Array.",
+  "description": "Test if a value is a BigInt64Array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

@@ -1,0 +1,43 @@
+
+{{alias}}( x, predicate[, thisArg] )
+    Tests whether all elements in an array pass a test implemented by a
+    predicate function, iterating right to left.
+
+    The predicate function is provided three arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
+
+    The function performs a linear scan and returns immediately upon
+    encountering a non-truthy return value.
+
+    If provided an empty array, the function returns `true`.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if the predicate function returns a truthy
+        value for all elements; otherwise, the function returns `false`.
+
+    Examples
+    --------
+    > function f( v ) { return ( v > 0 ); };
+    > var x = [ 1, 2, 3, 4 ];
+    > var out = {{alias}}( x, f )
+    true
+
+    See Also
+    --------
+

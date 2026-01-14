@@ -2,7 +2,7 @@
 #
 # @license Apache-2.0
 #
-# Copyright (c) 2022 The Stdlib Authors.
+# Copyright (c) 2025 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -51,6 +51,7 @@ function gen( x, name )
 	# Write the data to the output filepath as JSON:
 	outfile = open( filepath, "w" );
 	write( outfile, JSON.json(data) );
+	write( outfile, "\n" );
 	close( outfile );
 end
 

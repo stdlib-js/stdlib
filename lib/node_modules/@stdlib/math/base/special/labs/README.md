@@ -184,8 +184,8 @@ int32_t stdlib_base_labs( const int32_t x );
 #include <stdint.h>
 #include <stdio.h>
 
-int main() {
-    int32_t x[] = { 3, -3, 0, -10 };
+int main( void ) {
+    const int32_t x[] = { 3, -3, 0, -10 };
 
     int32_t y;
     int i;

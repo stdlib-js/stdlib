@@ -39,8 +39,8 @@ function clbk( acc: number, v: number ): number {
 		[ 4, 5, 6 ]
 	];
 
-	reduce2d( arr, [ 0, 0 ], clbk ); // $ExpectType any[]
-	reduce2d( arr, [ 0, 0 ], clbk, {} ); // $ExpectType any[]
+	reduce2d( arr, [ 0, 0 ], clbk ); // $ExpectType number[]
+	reduce2d( arr, [ 0, 0 ], clbk, {} ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is provided a first argument other than an array of arrays...

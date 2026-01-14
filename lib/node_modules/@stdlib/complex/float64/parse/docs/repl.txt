@@ -1,0 +1,23 @@
+
+{{alias}}( str )
+    Parse a string representation of a 128-bit complex number.
+
+    Parameters
+    ----------
+    str: string
+        String representation of a complex number.
+
+    Returns
+    -------
+    out: Complex128
+        128-bit complex number.
+
+    Examples
+    --------
+    > var str = '5 + 3i';
+    > var z = {{alias}}( str )
+    <Complex128>
+
+
+    See Also
+    --------

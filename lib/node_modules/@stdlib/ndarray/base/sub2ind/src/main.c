@@ -55,7 +55,7 @@
 * int64_t idx = stdlib_ndarray_sub2ind( ndims, shape, strides, offset, sub, nmodes, modes );
 * // returns 17
 */
-int64_t stdlib_ndarray_sub2ind( int64_t ndims, int64_t *shape, int64_t *strides, int64_t offset, int64_t *sub, int64_t nmodes, int8_t *modes ) {
+int64_t stdlib_ndarray_sub2ind( const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset, const int64_t *sub, const int64_t nmodes, const int8_t *modes ) {
 	enum STDLIB_NDARRAY_INDEX_MODE mode;
 	int64_t idx;
 	int64_t s;
@@ -89,8 +89,13 @@ int64_t stdlib_ndarray_sub2ind( int64_t ndims, int64_t *shape, int64_t *strides,
 					j %= m;
 				}
 			}
-		} else if ( j < 0 || j >= m ) { // mode == 'error'
-			return -1;
+		} else {
+			if ( mode == STDLIB_NDARRAY_INDEX_NORMALIZE && j < 0 ) {
+				j += m;
+			}
+			if ( j < 0 || j >= m ) {
+				return -1;
+			}
 		}
 		s = strides[ i ];
 

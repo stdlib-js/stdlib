@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* tslint:disable:no-unused-expression */
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 
 import ns = require( './index' );
 

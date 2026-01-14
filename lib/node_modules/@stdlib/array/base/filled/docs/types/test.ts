@@ -23,7 +23,7 @@ import filled = require( './index' );
 
 // The function returns an array...
 {
-	filled( 0.0, 3 ); // $ExpectType any[]
+	filled( 0.0, 3 ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a number...

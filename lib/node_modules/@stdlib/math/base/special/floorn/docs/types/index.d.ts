@@ -16,10 +16,10 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
-* Rounds a numeric value to the nearest multiple of `10^n` toward negative infinity.
+* Rounds a double-precision floating-point number to the nearest multiple of `10^n` toward negative infinity.
 *
 * ## Notes
 *

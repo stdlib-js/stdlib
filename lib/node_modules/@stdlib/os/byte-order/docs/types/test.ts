@@ -23,6 +23,6 @@ import BYTE_ORDER = require( './index' );
 
 // The variable is a string...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	BYTE_ORDER; // $ExpectType string
 }

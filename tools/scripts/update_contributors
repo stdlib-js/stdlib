@@ -40,7 +40,7 @@ this_script=$(perl -MFile::Spec -e 'print File::Spec->abs2rel(@ARGV)' "$0" "${ro
 # Lists contributors.
 list_contributors() {
 	local contributors
-	contributors="$(git log | git shortlog -sne | cut -f 2 | sort | grep -v '^github-actions' | grep -v '^stdlib-bot')"
+	contributors="$(git log | git shortlog -sne | cut -f 2 | sort | grep -v '^github-actions' | grep -v '^stdlib-bot' | grep -v '^dependabot')"
 	echo "${contributors}"
 }
 

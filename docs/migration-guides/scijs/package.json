@@ -1,0 +1,59 @@
+{
+  "name": "stdlib-scijs-benchmarks",
+  "private": true,
+  "version": "0.0.0",
+  "description": "scijs benchmarks.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./package.json",
+  "directories": {
+    "benchmark": "./benchmark"
+  },
+  "scripts": {
+    "bench": "make benchmark"
+  },
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {
+    "ndarray": "^1.0.19",
+    "ndarray-gemm": "^1.0.0",
+    "ndarray-ops": "^1.2.2",
+    "zeros": "^1.0.0"
+  },
+  "devDependencies": {},
+  "engines": {},
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "benchmarks",
+    "benchmark",
+    "performance",
+    "scijs"
+  ],
+  "__stdlib__": {}
+}

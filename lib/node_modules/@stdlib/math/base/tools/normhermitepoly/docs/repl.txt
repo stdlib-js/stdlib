@@ -1,6 +1,7 @@
 
 {{alias}}( n, x )
-    Evaluates a normalized Hermite polynomial.
+    Evaluates a normalized Hermite polynomial using double-precision floating-
+    point arithmetic.
 
     Parameters
     ----------
@@ -28,7 +29,8 @@
 
 
 {{alias}}.factory( n )
-    Returns a function for evaluating a normalized Hermite polynomial.
+    Returns a function for evaluating a normalized Hermite polynomial using
+    double-precision floating-point arithmetic.
 
     Parameters
     ----------
@@ -42,8 +44,8 @@
 
     Examples
     --------
-    > var polyval = {{alias}}.factory( 2 );
-    > var v = polyval( 0.5 )
+    > var f = {{alias}}.factory( 2 );
+    > var v = f( 0.5 )
     -0.75
 
     See Also

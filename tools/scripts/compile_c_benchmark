@@ -163,7 +163,7 @@ resolve_includes() {
 	if [[ -n "${blas}" ]]; then
 		opts="{'os':'${os}','blas':'${blas}','task':'benchmark'}"
 	else
-		opts="{'task':'benchmark'}"
+		opts="{'os':'${os}','task':'benchmark'}"
 	fi
 	# Generate the script for resolving `include` directories:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).include; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-I '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -194,7 +194,7 @@ resolve_source_files() {
 	if [[ -n "${blas}" ]]; then
 		opts="{'os':'${os}','blas':'${blas}','task':'benchmark'}"
 	else
-		opts="{'task':'benchmark'}"
+		opts="{'os':'${os}','task':'benchmark'}"
 	fi
 	# Generate the script for resolving source files:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).src; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += p+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -217,7 +217,7 @@ resolve_libraries() {
 	if [[ -n "${blas}" ]]; then
 		opts="{'os':'${os}','blas':'${blas}','task':'benchmark'}"
 	else
-		opts="{'task':'benchmark'}"
+		opts="{'os':'${os}','task':'benchmark'}"
 	fi
 	# Generate the script for resolving libraries:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libraries; var str = ''; for (var i = 0; i < arr.length; i++){str += arr[i]+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -240,7 +240,7 @@ resolve_libpaths() {
 	if [[ -n "${blas}" ]]; then
 		opts="{'os':'${os}','blas':'${blas}','task':'benchmark'}"
 	else
-		opts="{'task':'benchmark'}"
+		opts="{'os':'${os}','task':'benchmark'}"
 	fi
 	# Generate the script for resolving library paths:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libpath; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-L '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'

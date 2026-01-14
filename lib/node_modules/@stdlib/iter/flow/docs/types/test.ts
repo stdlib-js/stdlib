@@ -26,14 +26,13 @@ import iterFlow = require( './index' );
 
 // The function returns a fluent iterator...
 {
-	// tslint:disable-next-line variable-name
 	const FluentIterator = iterFlow( {
 		'head': iterHead,
 		'some': iterSome
 	} );
 	const arr = array2iterator( [ 0, 0, 1, 1, 1, 0, 0, 1, 0, 1 ] );
 
-	// tslint:disable-next-line no-unused-expression
+	// eslint-disable @typescript-eslint/no-unused-expressions
 	new FluentIterator( arr ); // $ExpectType FluentIterator
 }
 

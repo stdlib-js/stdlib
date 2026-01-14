@@ -31,15 +31,44 @@
     <Float64Array>
 
 
+{{alias}}.assign( a, b, out )
+    Fills an array with pseudorandom numbers drawn from a discrete uniform
+    distribution.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    out: Array<number>|TypedArray
+        Output array.
+
+    Returns
+    -------
+    out: Array<number>|TypedArray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/array/zeros}}( 3, 'float64' );
+    > var out = {{alias}}.assign( -10, 10, x )
+    <Float64Array>
+    > var bool = ( out === x )
+    true
+
+
 {{alias}}.factory( [a, b, ][options] )
     Returns a function for creating arrays containing pseudorandom numbers drawn
     from a discrete uniform distribution.
 
-    If provided `a` and `b`, the returned function returns random variates drawn
-    from the specified distribution.
+    If provided distribution parameters, the returned function returns random
+    variates drawn from the specified distribution.
 
-    If not provided `a` and `b`, the returned function requires that both `a`
-    and `b` be provided at each invocation.
+    If not provided distribution parameters, the returned function requires that
+    distribution parameters be provided at each invocation.
 
     The returned function accepts the following options:
 
@@ -59,10 +88,12 @@
 
     options.prng: Function (optional)
         Pseudorandom number generator (PRNG) for generating uniformly
-        distributed pseudorandom numbers on the interval `[0,1)`. If provided,
-        the `state` and `seed` options are ignored. In order to seed the
-        returned pseudorandom number generator, one must seed the provided
-        `prng` (assuming the provided `prng` is seedable).
+        distributed pseudorandom integers. If provided, the `state` and `seed`
+        options are ignored. In order to seed the returned pseudorandom number
+        generator, one must seed the provided `prng` (assuming the provided
+        `prng` is seedable). The provided PRNG must have `MIN` and `MAX`
+        properties specifying the minimum and maximum possible pseudorandom
+        integers.
 
     options.seed: integer|ArrayLikeObject<integer> (optional)
         Pseudorandom number generator seed. The seed may be either a positive

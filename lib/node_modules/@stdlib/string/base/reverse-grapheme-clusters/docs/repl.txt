@@ -1,0 +1,27 @@
+
+{{alias}}( str )
+    Reverses the grapheme clusters (i.e., user-perceived characters) of a
+    string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep' )
+    'peeb'
+    > out = {{alias}}( 'Boop' )
+    'pooB'
+    > out = {{alias}}( 'foo bar' )
+    'rab oof'
+
+    See Also
+    --------
+

@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Converts a UTF-16 encoded string to an array of integers using UTF-8 encoding.

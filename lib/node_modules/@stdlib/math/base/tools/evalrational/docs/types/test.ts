@@ -29,6 +29,7 @@ import evalrational = require( './index' );
 // The compiler throws an error if the function is provided a first argument which is not an array of numbers...
 {
 	const Q = [ 3.0, 0.5 ];
+
 	evalrational( true, Q, 6.0 ); // $ExpectError
 	evalrational( false, Q, 6.0 ); // $ExpectError
 	evalrational( 'abc', Q, 6.0 ); // $ExpectError
@@ -40,6 +41,7 @@ import evalrational = require( './index' );
 // The compiler throws an error if the function is provided a second argument which is not an array of numbers...
 {
 	const P = [ -6.0, -5.0 ];
+
 	evalrational( P, true, 6.0 ); // $ExpectError
 	evalrational( P, false, 6.0 ); // $ExpectError
 	evalrational( P, 'abc', 6.0 ); // $ExpectError
@@ -52,6 +54,7 @@ import evalrational = require( './index' );
 {
 	const P = [ -6.0, -5.0 ];
 	const Q = [ 3.0, 0.5 ];
+
 	evalrational( P, Q, true ); // $ExpectError
 	evalrational( P, Q, false ); // $ExpectError
 	evalrational( P, Q, 'abc' ); // $ExpectError
@@ -64,6 +67,7 @@ import evalrational = require( './index' );
 {
 	const P = [ -6.0, -5.0 ];
 	const Q = [ 3.0, 0.5 ];
+
 	evalrational(); // $ExpectError
 	evalrational( P ); // $ExpectError
 	evalrational( P, Q ); // $ExpectError
@@ -73,42 +77,24 @@ import evalrational = require( './index' );
 {
 	const P = [ -6.0, -5.0 ];
 	const Q = [ 3.0, 0.5 ];
-	evalrational.factory( P, Q ); // $ExpectType EvaluationFunction
+
+	evalrational.factory( P, Q ); // $ExpectType PolynomialFunction
 }
 
 // The compiler throws an error if the `factory` method is provided an unsupported number of arguments...
 {
 	const P = [ -6.0, -5.0 ];
 	const Q = [ 3.0, 0.5 ];
+
 	evalrational.factory(); // $ExpectError
 	evalrational.factory( P ); // $ExpectError
 	evalrational.factory( P, Q, 3 ); // $ExpectError
 }
 
-// The `factory` method returns a function which returns a number...
-{
-	const P = [ -6.0, -5.0 ];
-	const Q = [ 3.0, 0.5 ];
-	const polyval = evalrational.factory( P, Q );
-	polyval( 1.0 ); // $ExpectType number
-}
-
-// The `factory` method returns a function which does not compile if provided a first argument which is not a number...
-{
-	const P = [ -6.0, -5.0 ];
-	const Q = [ 3.0, 0.5 ];
-	const polyval = evalrational.factory( P, Q );
-	polyval( true ); // $ExpectError
-	polyval( false ); // $ExpectError
-	polyval( 'abc' ); // $ExpectError
-	polyval( [] ); // $ExpectError
-	polyval( {} ); // $ExpectError
-	polyval( ( x: number ): number => x ); // $ExpectError
-}
-
 // The compiler throws an error if the `factory` method is provided a first argument which is not an array of numbers...
 {
 	const Q = [ 3.0, 0.5 ];
+
 	evalrational.factory( true, Q ); // $ExpectError
 	evalrational.factory( false, Q ); // $ExpectError
 	evalrational.factory( 'abc', Q ); // $ExpectError
@@ -120,10 +106,34 @@ import evalrational = require( './index' );
 // The compiler throws an error if the `factory` method is provided a second argument which is not an array of numbers...
 {
 	const P = [ -6.0, -5.0 ];
+
 	evalrational.factory( P, true ); // $ExpectError
 	evalrational.factory( P, false ); // $ExpectError
 	evalrational.factory( P, 'abc' ); // $ExpectError
 	evalrational.factory( P, 123 ); // $ExpectError
 	evalrational.factory( P, {} ); // $ExpectError
 	evalrational.factory( P, ( x: number ): number => x ); // $ExpectError
+}
+
+// The `factory` method returns a function which returns a number...
+{
+	const P = [ -6.0, -5.0 ];
+	const Q = [ 3.0, 0.5 ];
+
+	const polyval = evalrational.factory( P, Q );
+	polyval( 1.0 ); // $ExpectType number
+}
+
+// The compiler throws an error if the function returned by the `factory` method is provided a first argument which is not a number...
+{
+	const P = [ -6.0, -5.0 ];
+	const Q = [ 3.0, 0.5 ];
+
+	const polyval = evalrational.factory( P, Q );
+	polyval( true ); // $ExpectError
+	polyval( false ); // $ExpectError
+	polyval( 'abc' ); // $ExpectError
+	polyval( [] ); // $ExpectError
+	polyval( {} ); // $ExpectError
+	polyval( ( x: number ): number => x ); // $ExpectError
 }

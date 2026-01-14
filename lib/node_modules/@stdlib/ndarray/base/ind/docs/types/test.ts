@@ -65,9 +65,71 @@ import ind = require( './index' );
 	ind( 2, 9, ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided insufficient arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	ind(); // $ExpectError
 	ind( 2 ); // $ExpectError
 	ind( 2, 9 ); // $ExpectError
+	ind( 2, 9, 'clamp', {} ); // $ExpectError
+}
+
+// Attached to the main export is a `factory` method which returns a function...
+{
+	ind.factory( 'clamp' ); // $ExpectType IndexFcn
+}
+
+// The compiler throws an error if the `factory` method is provided an argument which is not a known index mode...
+{
+	ind.factory( 123 ); // $ExpectError
+	ind.factory( 'abc' ); // $ExpectError
+	ind.factory( true ); // $ExpectError
+	ind.factory( false ); // $ExpectError
+	ind.factory( null ); // $ExpectError
+	ind.factory( undefined ); // $ExpectError
+	ind.factory( [ '1', '2' ] ); // $ExpectError
+	ind.factory( {} ); // $ExpectError
+	ind.factory( ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the `factory` method is provided an unsupported number of arguments...
+{
+	ind.factory(); // $ExpectError
+	ind.factory( 'clamp', {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function returned by the `factory` method is provided a first argument which is not a number...
+{
+	const fcn = ind.factory( 'clamp' );
+
+	fcn( 'abc', 9 ); // $ExpectError
+	fcn( true, 9 ); // $ExpectError
+	fcn( false, 9 ); // $ExpectError
+	fcn( null, 9 ); // $ExpectError
+	fcn( undefined, 9 ); // $ExpectError
+	fcn( [ '1', '2' ], 9 ); // $ExpectError
+	fcn( {}, 9 ); // $ExpectError
+	fcn( ( x: number ): number => x, 9 ); // $ExpectError
+}
+
+// The compiler throws an error if the function returned by the `factory` method is provided a second argument which is not a number...
+{
+	const fcn = ind.factory( 'clamp' );
+
+	fcn( 2, 'abc' ); // $ExpectError
+	fcn( 2, true ); // $ExpectError
+	fcn( 2, false ); // $ExpectError
+	fcn( 2, null ); // $ExpectError
+	fcn( 2, undefined ); // $ExpectError
+	fcn( 2, [ '1', '2' ] ); // $ExpectError
+	fcn( 2, {} ); // $ExpectError
+	fcn( 2, ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the function returned by the `factory` method is provided an unsupported number of arguments...
+{
+	const fcn = ind.factory( 'clamp' );
+
+	fcn(); // $ExpectError
+	fcn( 2 ); // $ExpectError
+	fcn( 2, 9, {} ); // $ExpectError
 }

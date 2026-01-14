@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/strided/base/dmap.h"
+#include "stdlib/strided/base/stride2offset.h"
 #include <stdint.h>
 
 /**
@@ -51,16 +52,8 @@ void stdlib_strided_dmap( const int64_t N, const double *X, const int64_t stride
 	if ( N <= 0 ) {
 		return;
 	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
+	ix = stdlib_strided_stride2offset( N, strideX );
+	iy = stdlib_strided_stride2offset( N, strideY );
 	for ( i = 0; i < N; i++ ) {
 		Y[ iy ] = fcn( X[ ix ] );
 		ix += strideX;

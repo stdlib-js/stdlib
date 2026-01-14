@@ -16,11 +16,49 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
+
+/**
+* Function invoked for each collection element.
+*/
+type Nullary<U> = ( this: U ) => void;
+
+/**
+* Function invoked for each collection element.
+*
+* @param value - collection value
+*/
+type Unary<T, U> = ( this: U, value: T ) => void;
+
+/**
+* Function invoked for each collection element.
+*
+* @param value - collection value
+* @param index - collection index
+*/
+type Binary<T, U> = ( this: U, value: T, index: number ) => void;
+
+/**
+* Function invoked for each collection element.
+*
+* @param value - collection value
+* @param index - collection index
+* @param collection - input collection
+*/
+type Ternary<T, U> = ( this: U, value: T, index: number, collection: Collection<T> ) => void;
+
+/**
+* Function invoked for each collection element.
+*
+* @param value - collection value
+* @param index - collection index
+* @param collection - input collection
+*/
+type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 
 /**
 * Invokes a function once for each element in a collection, iterating from right to left.
@@ -49,7 +87,7 @@ import { Collection } from '@stdlib/types/object';
 *
 * forEachRight( arr, log );
 */
-declare function forEachRight( collection: Collection, fcn: Function, thisArg?: any ): Collection; // tslint-disable-line max-line-length
+declare function forEachRight<T = unknown, U = unknown>( collection: Collection<T>, fcn: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Collection<T>;
 
 
 // EXPORTS //

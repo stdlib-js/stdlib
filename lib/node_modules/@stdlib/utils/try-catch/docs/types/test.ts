@@ -32,7 +32,7 @@ function x(): number {
 
 // The function returns a value...
 {
-	trycatch( x, -1 ); // $ExpectType any
+	trycatch( x, -1 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a first argument other than a function...

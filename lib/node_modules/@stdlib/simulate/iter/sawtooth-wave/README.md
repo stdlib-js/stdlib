@@ -31,7 +31,7 @@ A sawtooth waveform is represented by the following equation
 <!-- <equation class="equation" label="eq:sawtooth_waveform" align="center" raw="f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arctan} \tan \frac{\pi(t-\varphi)}{\tau}" alt="Equation for a sawtooth waveform."> -->
 
 ```math
-f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arctan} \tan \frac{\pi(t-\varphi)}{\tau}
+f(t; \tau, a, \varphi) = \frac{2a}{\pi} \mathop{\mathrm{arctan}} \tan \frac{\pi(t-\varphi)}{\tau}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arctan} \tan \frac{\pi(t-\varphi)}{\tau}" data-equation="eq:sawtooth_waveform">

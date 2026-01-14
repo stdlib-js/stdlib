@@ -1,0 +1,7 @@
+{
+  "expression": "34 + 45.78",
+  "expected": "\u001b[31m34\u001b[0m + \u001b[31m45.78\u001b[0m",
+  "theme": {
+    "number": "red"
+  }
+}

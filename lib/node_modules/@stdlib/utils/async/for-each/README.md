@@ -71,9 +71,9 @@ forEachAsync( arr, onDuration, done );
 
 The function accepts the following `options`:
 
--   `limit`: the maximum number of pending invocations at any one time. Default: `infinity`.
--   `series`: `boolean` indicating whether to sequentially invoke `fcn` for each `collection` element. If `true`, the function sets `options.limit=1`. Default: `false`.
--   `thisArg`: the execution context for `fcn`.
+-   **limit**: the maximum number of pending invocations at any one time. Default: `infinity`.
+-   **series**: boolean indicating whether to sequentially invoke `fcn` for each `collection` element. If `true`, the function sets `options.limit=1`. Default: `false`.
+-   **thisArg**: the execution context for `fcn`.
 
 By default, all elements are processed concurrently, which means that the function does **not** guarantee completion order. To process each `collection` element sequentially, set the `series` option to `true`.
 
@@ -171,10 +171,10 @@ function done( error ) {
 
 When invoked, `fcn` is provided a maximum of four arguments:
 
--   `value`: collection value.
--   `index`: collection index.
--   `collection`: the input `collection`.
--   `next`: a callback which should be called once `fcn` has finished processing a collection `value`.
+-   **value**: collection value.
+-   **index**: collection index.
+-   **collection**: the input `collection`.
+-   **next**: a callback which should be called once `fcn` has finished processing a collection `value`.
 
 The actual number of provided arguments depends on function `length`. If `fcn` accepts two arguments, `fcn` is provided `value` and `next`. If `fcn` accepts three arguments, `fcn` is provided `value`, `index`, and `next`. For every other `fcn` signature, `fcn` is provided all four arguments.
 
@@ -209,7 +209,7 @@ forEachAsync( arr, onDuration, done );
 
 #### forEachAsync.factory( \[options,] fcn )
 
-Returns a `function` which invokes a function once for each element in a `collection`.
+Returns a function which invokes a function once for each element in a `collection`.
 
 ```javascript
 function onDuration( value, next ) {

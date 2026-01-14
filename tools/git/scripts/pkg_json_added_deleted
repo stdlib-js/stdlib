@@ -20,7 +20,9 @@
 #
 # <weekday> <month> <day> <time> <year> <author_first_name> <author_last_name> <action> <filename>
 
-# * `git log --reverse`
+# * `git -c diff.renameLimit=DDDD`
+#   - Set the rename limit to a suitably high limit in order to avoid warnings.
+# * `log --reverse`
 #   - Show commit logs in reverse order.
 # * `--find-renames`
 #   - Find file renames.
@@ -34,7 +36,7 @@
 #   - Format the date.
 # * `awk '{}'
 #   - Process each commit.
-git log \
+git -c diff.renameLimit=2000 log \
 	--reverse \
 	--find-renames \
 	--name-status \

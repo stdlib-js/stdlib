@@ -1,7 +1,7 @@
 
 {{alias}}( x, n )
-    Rounds a numeric value to the nearest multiple of `10^n` toward negative
-    infinity.
+    Rounds a double-precision floating-point number to the nearest multiple of
+    `10^n` toward negative infinity.
 
     When operating on floating-point numbers in bases other than `2`, rounding
     to specified digits can be inexact.

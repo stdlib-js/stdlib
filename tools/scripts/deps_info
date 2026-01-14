@@ -21,15 +21,6 @@
 # Usage: deps_info
 #
 
-# FUNCTIONS #
-
-# Prints usage information.
-usage() {
-	echo '' >&2
-	echo 'Usage: deps_info' >&2
-	echo '' >&2
-}
-
 # MAIN #
 
 CLANG=$(command -v clang 2>/dev/null)
@@ -142,7 +133,7 @@ else
 fi
 echo '' >&2
 
-RSCRIPT=$(command -v rscript 2>/dev/null)
+RSCRIPT=$(command -v Rscript 2>/dev/null)
 echo '-----'
 echo 'lintr:' >&2
 echo '' >&2
@@ -252,7 +243,7 @@ else
 fi
 echo '' >&2
 
-R=$(command -v r 2>/dev/null)
+R=$(command -v R 2>/dev/null)
 echo '-----'
 echo 'R:' >&2
 echo '' >&2
@@ -263,7 +254,7 @@ else
 fi
 echo '' >&2
 
-RSCRIPT=$(command -v rscript 2>/dev/null)
+RSCRIPT=$(command -v Rscript 2>/dev/null)
 echo '-----'
 echo 'Rscript:' >&2
 echo '' >&2

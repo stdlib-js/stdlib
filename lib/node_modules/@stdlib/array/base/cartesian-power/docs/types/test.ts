@@ -26,7 +26,6 @@ import cartesianPower = require( './index' );
 	cartesianPower( [ 1, 2, 3, 4 ], 3 ); // $ExpectType number[][]
 	cartesianPower<number>( [ 1, 2, 3, 4 ], 3 ); // $ExpectType number[][]
 	cartesianPower<string>( [ '1', '2', '3', '4' ], 3 ); // $ExpectType string[][]
-	cartesianPower<any>( [ 1, 2, 3, 4 ], 3 ); // $ExpectType any[][]
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array-like object...

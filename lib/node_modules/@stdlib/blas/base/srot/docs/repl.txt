@@ -1,0 +1,135 @@
+
+{{alias}}( N, x, strideX, y, strideY, c, s )
+    Applies a plane rotation.
+
+    The `N` and stride parameters determine how values in the strided arrays are
+    accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is less than or equal to `0`, the vectors are unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float32Array
+        First input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    y: Float32Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    c: number
+        Cosine of the angle of rotation.
+
+    s: number
+        Sine of the angle of rotation.
+
+    Returns
+    -------
+    y: Float32Array
+        Second input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > var y = new {{alias:@stdlib/array/float32}}( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
+    > {{alias}}( x.length, x, 1, y, 1, 0.8, 0.6 );
+    > x
+    <Float32Array>[ ~4.4, ~5.8, ~7.2, ~8.6, 10.0 ]
+    > y
+    <Float32Array>[ ~4.2, ~4.4, ~4.6, ~4.8, 5.0 ]
+
+    // Advanced Indexing:
+    > x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/float32}}( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+    > {{alias}}( 3, x, 2, y, 2, 0.8, 0.6 );
+    > x
+    <Float32Array>[ 5.0, 2.0, ~7.8, 4.0, ~10.6, 6.0 ]
+    > y
+    <Float32Array>[ 5.0, 8.0, ~5.4, 10.0, ~5.8, 12.0 ]
+
+    // Using typed array views:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*3 );
+    > {{alias}}( 3, x1, 1, y1, 1, 0.8, 0.6 );
+    > x0
+    <Float64Array>[ 1.0, ~7.6, 9.0, ~10.4, 5.0, 6.0 ]
+    > y0
+    <Float64Array>[ 7.0, 8.0, 9.0, ~6.8, 7.0, ~7.2 ]
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, c, s )
+    Applies a plane rotation using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float32Array
+        First input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    y: Float32Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    c: number
+        Cosine of the angle of rotation.
+
+    s: number
+        Sine of the angle of rotation.
+
+    Returns
+    -------
+    y: Float32Array
+        Second input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > var y = new {{alias:@stdlib/array/float32}}( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
+    > {{alias}}.ndarray( 4, x, 1, 1, y, 1, 1, 0.8, 0.6 );
+    > x
+    <Float32Array>[ 1.0, ~5.8, ~7.2, ~8.6, 10.0 ]
+    > y
+    <Float32Array>[ 6.0, ~4.4, ~4.6, ~4.8, 5.0 ]
+
+    // Advanced Indexing:
+    > x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/float32}}( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+    > {{alias}}.ndarray( 2, x, 2, 2, y, 2, 2, 0.8, 0.6 );
+    > x
+    <Float32Array>[ 1.0, 2.0, ~7.8, 4.0, ~10.6, 6.0 ]
+    > y
+    <Float32Array>[ 7.0, 8.0, ~5.4, 10.0, ~5.8, 12.0 ]
+
+    See Also
+    --------

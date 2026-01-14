@@ -109,10 +109,44 @@ var y = dist.pdf( 0.8 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var objectKeys = require( '@stdlib/utils/keys' );
 var rayleigh = require( '@stdlib/stats/base/dists/rayleigh' );
 
-console.log( objectKeys( rayleigh ) );
+/*
+* The Rayleigh distribution can be used to model wind speeds.
+* Let's consider a scenario where we want to estimate various properties related to wind speeds.
+*/
+
+// Set the Rayleigh distribution parameter (scale parameter):
+var s = 10.0;
+
+// Calculate mean, variance, and standard deviation of the Rayleigh distribution:
+console.log( rayleigh.mean( s ) );
+// => ~12.533
+
+console.log( rayleigh.variance( s ) );
+// => ~42.920
+
+console.log( rayleigh.stdev( s ) );
+// => ~6.551
+
+// Evaluate the Probability Density Function (PDF) for a specific wind speed:
+var w = 15.0;
+console.log( rayleigh.pdf( w, s ) );
+// => ~0.049
+
+// Determine Cumulative Distribution Function (CDF) for wind speeds up to a certain value:
+var t = 15.0;
+console.log( rayleigh.cdf( t, s ) );
+// => ~0.675
+
+// Calculate the probability of wind speeds exceeding the threshold:
+var p = 1.0 - rayleigh.cdf( t, s );
+console.log( 'Probability of wind speeds exceeding ' + t + ' m/s:', p );
+
+// Find the wind speed at which there's a 70% chance it won't exceed using the Quantile function:
+var c = 0.7;
+console.log( rayleigh.quantile( c, s ) );
+// => ~15.518
 ```
 
 </section>

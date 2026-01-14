@@ -31,6 +31,8 @@
     mode: string
         Specifies how to handle a linear index which exceeds array dimensions.
         If equal to 'throw', the function throws an error when a linear index
+        exceeds array dimensions. If equal to 'normalize', the function
+        normalizes negative indices and throws an error when a linear index
         exceeds array dimensions. If equal to 'wrap', the function wraps around
         a linear index exceeding array dimensions using modulo arithmetic. If
         equal to 'clamp', the function sets a linear index exceeding array
@@ -83,6 +85,8 @@
     mode: string
         Specifies how to handle a linear index which exceeds array dimensions.
         If equal to 'throw', the function throws an error when a linear index
+        exceeds array dimensions. If equal to 'normalize', the function
+        normalizes negative indices and throws an error when a linear index
         exceeds array dimensions. If equal to 'wrap', the function wraps around
         a linear index exceeding array dimensions using modulo arithmetic. If
         equal to 'clamp', the function sets a linear index exceeding array

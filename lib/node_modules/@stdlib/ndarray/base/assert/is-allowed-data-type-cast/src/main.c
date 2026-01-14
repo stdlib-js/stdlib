@@ -18,6 +18,7 @@
 
 #include "stdlib/ndarray/base/assert/is_allowed_data_type_cast.h"
 #include "stdlib/ndarray/base/assert/is_safe_data_type_cast.h"
+#include "stdlib/ndarray/base/assert/is_mostly_safe_data_type_cast.h"
 #include "stdlib/ndarray/base/assert/is_same_kind_data_type_cast.h"
 #include "stdlib/ndarray/casting_modes.h"
 #include <stdint.h>
@@ -58,6 +59,10 @@ int8_t stdlib_ndarray_is_allowed_data_type_cast( const int8_t from, const int8_t
 	// In "safe" casting mode, only casts which preserve values are allowed...
 	if ( casting == STDLIB_NDARRAY_SAFE_CASTING ) {
 		return stdlib_ndarray_is_safe_data_type_cast( from, to );
+	}
+	// In "mostly-safe" casting mode, in addition to "safe" casts, for floating-point data types, downcasts are allowed...
+	if ( casting == STDLIB_NDARRAY_MOSTLY_SAFE_CASTING ) {
+		return stdlib_ndarray_is_mostly_safe_data_type_cast( from, to );
 	}
 	// In "same-kind" casting mode, in addition to "safe" casts, casts within a "kind" (e.g., between signed integers or between floating-point numbers) are allowed...
 	return stdlib_ndarray_is_same_kind_data_type_cast( from, to );

@@ -23,10 +23,10 @@ import unshift = require( './index' );
 
 // The function returns the updated input collection ...
 {
-	unshift( [ 2, 3 ], 1 ); // $ExpectType Collection
-	unshift( [ 'a', 'b', 'c' ], 'z' ); // $ExpectType Collection
-	unshift( [ true, false ], false ); // $ExpectType Collection
-	unshift( [ true, true ], true ); // $ExpectType Collection
+	unshift( [ 2, 3 ], 1 ); // $ExpectType Collection<number>
+	unshift( [ 'a', 'b', 'c' ], 'z' ); // $ExpectType Collection<string>
+	unshift( [ true, false ], false ); // $ExpectType Collection<boolean>
+	unshift( [ true, true ], true ); // $ExpectType Collection<boolean>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...

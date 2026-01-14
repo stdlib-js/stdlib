@@ -1,0 +1,90 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/log10",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/log10",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/log10",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite"
+      ]
+    }
+  ]
+}

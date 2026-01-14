@@ -1,0 +1,27 @@
+
+{{alias}}( value )
+    Returns the minimum ndarray data type for storing a provided signed integer
+    value.
+
+    Parameters
+    ----------
+    value: number
+        Signed integer value.
+
+    Returns
+    -------
+    dt: string
+        ndarray data type.
+
+    Examples
+    --------
+    > var dt = {{alias}}( 3 )
+    'int8'
+    > dt = {{alias}}( -3 )
+    'int8'
+    > dt = {{alias}}( 1280 )
+    'int16'
+
+    See Also
+    --------
+

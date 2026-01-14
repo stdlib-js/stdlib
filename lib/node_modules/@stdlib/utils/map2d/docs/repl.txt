@@ -6,8 +6,7 @@
     The applied function is provided the following arguments:
 
     - value: array element.
-    - i: index of the first dimension.
-    - j: index of the second dimension.
+    - indices: current array element indices.
     - arr: input array.
 
     Parameters

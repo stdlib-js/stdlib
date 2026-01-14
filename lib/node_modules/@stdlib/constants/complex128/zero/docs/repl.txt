@@ -1,0 +1,12 @@
+
+{{alias}}
+    Double-precision complex floating-point zero.
+
+    Examples
+    --------
+    > {{alias}}
+    <Complex128>
+
+    See Also
+    --------
+

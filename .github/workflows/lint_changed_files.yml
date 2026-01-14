@@ -30,11 +30,16 @@ on:
       - synchronize
       - reopened
 
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
 # Workflow jobs:
 jobs:
 
   # Define a job for linting committed code...
-  process:
+  lint:
 
     # Define a display name:
     name: 'Lint Changed Files'
@@ -46,7 +51,8 @@ jobs:
     steps:
       # Checkout the repository:
       - name: 'Checkout repository'
-        uses: actions/checkout@v3
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -60,13 +66,27 @@ jobs:
 
       # Install Node.js:
       - name: 'Install Node.js'
-        uses: actions/setup-node@v3
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
-          node-version: '16' # 'lts/*'
+          node-version: '20' # 'lts/*'
         timeout-minutes: 5
+
+      # Restore cache if up-to-date:
+      - name: 'Restore cache if up-to-date'
+        # Pin action to full length commit SHA
+        uses: actions/cache/restore@9255dc7a253b0ccc959486e2bca901246202afeb # v5.0.1
+        id: cache
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Install dependencies'
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
@@ -80,6 +100,7 @@ jobs:
       # Get list of changed files:
       - name: 'Get list of changed files'
         id: changed-files
+        continue-on-error: true
         run: |
           if [ -n "${{ github.event.pull_request.number }}" ]; then
             # Get the list of changed files in pull request:
@@ -96,7 +117,7 @@ jobs:
           files=$(echo "$files" | tr '\n' ' ' | sed 's/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
 
-      # Lint file names
+      # Lint file names:
       - name: 'Lint file names'
         run: |
           # Determine root directory:
@@ -107,6 +128,20 @@ jobs:
 
           # Lint filenames:
           echo "${{ steps.changed-files.outputs.files }}" || "${lint_filenames}"
+
+      # Lint files against EditorConfig:
+      - name: 'Lint against EditorConfig'
+        if: success() || failure()
+        run: |
+          make lint-editorconfig-files EDITORCONFIG_FORMAT=github-actions FILES="${{ steps.changed-files.outputs.files }}"
+
+      # Save cache after editorconfig-checker binary has been downloaded:
+      - name: 'Save cache after editorconfig-checker binary has been downloaded'
+        if: always() && steps.cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@9255dc7a253b0ccc959486e2bca901246202afeb # v5.0.1
+        with:
+          path: ${{ github.workspace }}/node_modules
+          key: ${{ steps.cache.outputs.cache-primary-key }}
 
       # Lint Markdown files:
       - name: 'Lint Markdown files'
@@ -121,7 +156,7 @@ jobs:
       - name: 'Lint shell script files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             # Install shellcheck:
             make install-deps-shellcheck
@@ -134,19 +169,7 @@ jobs:
       - name: 'Lint package.json files'
         if: success() || failure()
         run: |
-          # Determine root directory:
-          root=$(git rev-parse --show-toplevel)
-
-          # Define the path to a utility for linting package.json files:
-          lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
-
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ' | sed 's/ $//')
-          if [ -n "${files}" ]; then
-            echo "Linting package.json files that have changed..."
-            printf "${files}" | "${lint_package_json}" --split=" "
-          else
-            echo "No package.json files to lint."
-          fi
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_package_json_files" "${{ steps.changed-files.outputs.files }}"
 
       # Lint REPL help files...
       - name: 'Lint REPL help files'
@@ -181,6 +204,15 @@ jobs:
 
           # Lint JavaScript source files:
           files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ' | sed 's/ $//')
+
+          # Build native addons if present:
+          packages=$(echo "${files}" | tr ' ' '\n' | sed 's/^lib\/node_modules\///g' | sed 's/\/lib\/.*//g' | sort | uniq)
+          for pkg in ${packages}; do
+              if [ -f "lib/node_modules/${pkg}/binding.gyp" ]; then
+                  NODE_ADDONS_PATTERN="${pkg}" make install-node-addons
+              fi
+          done
+
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}"
           fi
@@ -239,7 +271,8 @@ jobs:
       # Setup R:
       - name: 'Setup R'
         if: ( success() || failure() ) && steps.check-r-files.outputs.files != ''
-        uses: r-lib/actions/setup-r@v2
+        # Pin action to full length commit SHA
+        uses: r-lib/actions/setup-r@6f6e5bc62fba3a704f74e7ad7ef7676c5c6a2590 # v2.11.4
         with:
           r-version: '3.5.3'
 

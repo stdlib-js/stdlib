@@ -46,8 +46,8 @@ import poisson = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	poisson.factory( 2.3 ); // $ExpectType NullaryFunction
-	poisson.factory(); // $ExpectType BinaryFunction
-	poisson.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	poisson.factory(); // $ExpectType UnaryFunction
+	poisson.factory( { 'copy': false } ); // $ExpectType UnaryFunction
 }
 
 // The `factory` method returns a function which returns a number...
@@ -115,14 +115,14 @@ import poisson = require( './index' );
 	poisson.factory( 2.3, { 'prng': null } ); // $ExpectError
 	poisson.factory( 2.3, { 'prng': [] } ); // $ExpectError
 	poisson.factory( 2.3, { 'prng': {} } ); // $ExpectError
-	poisson.factory( 2.3, { 'prng': true ); // $ExpectError
+	poisson.factory( 2.3, { 'prng': true } ); // $ExpectError
 
 	poisson.factory( { 'prng': 123 } ); // $ExpectError
 	poisson.factory( { 'prng': 'abc' } ); // $ExpectError
 	poisson.factory( { 'prng': null } ); // $ExpectError
 	poisson.factory( { 'prng': [] } ); // $ExpectError
 	poisson.factory( { 'prng': {} } ); // $ExpectError
-	poisson.factory( { 'prng': true ); // $ExpectError
+	poisson.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -149,7 +149,7 @@ import poisson = require( './index' );
 	poisson.factory( 2.3, { 'state': null } ); // $ExpectError
 	poisson.factory( 2.3, { 'state': [] } ); // $ExpectError
 	poisson.factory( 2.3, { 'state': {} } ); // $ExpectError
-	poisson.factory( 2.3, { 'state': true ); // $ExpectError
+	poisson.factory( 2.3, { 'state': true } ); // $ExpectError
 	poisson.factory( 2.3, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	poisson.factory( { 'state': 123 } ); // $ExpectError
@@ -157,7 +157,7 @@ import poisson = require( './index' );
 	poisson.factory( { 'state': null } ); // $ExpectError
 	poisson.factory( { 'state': [] } ); // $ExpectError
 	poisson.factory( { 'state': {} } ); // $ExpectError
-	poisson.factory( { 'state': true ); // $ExpectError
+	poisson.factory( { 'state': true } ); // $ExpectError
 	poisson.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

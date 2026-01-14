@@ -18,15 +18,27 @@
 
 import inmapAsync = require( './index' );
 
-const fcn = ( value: number, index: number, next: Function ): void => {
+/**
+* Function stub.
+*
+* @param value - value
+* @param index - index
+* @param next - callback
+*/
+function fcn( value: number, index: number, next: Function ): void {
 	next( null, value * index );
-};
+}
 
-const done = ( error: Error | null ) => {
+/**
+* Callback stub.
+*
+* @param error - error
+*/
+function done( error: Error | null ) {
 	if ( error ) {
 		throw error;
 	}
-};
+}
 
 
 // TESTS //
@@ -76,8 +88,8 @@ const done = ( error: Error | null ) => {
 
 // Attached to main export is a `factory` method which returns a function...
 {
-	inmapAsync.factory( fcn ); // $ExpectType FactoryFunction
-	inmapAsync.factory( { 'series': true }, fcn ); // $ExpectType FactoryFunction
+	inmapAsync.factory( fcn ); // $ExpectType FactoryFunction<number, unknown>
+	inmapAsync.factory( { 'series': true }, fcn ); // $ExpectType FactoryFunction<number, unknown>
 }
 
 // The compiler throws an error if the `factory` method is provided an options argument which is not an object...

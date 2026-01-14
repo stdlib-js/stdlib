@@ -6,6 +6,8 @@
 
     - throw: specifies that a function should throw an error when an index is
     outside a restricted interval.
+    - normalize: specifies that a function should normalize negative indices and
+    throw an error when an index is outside a restricted interval.
     - wrap: specifies that a function should wrap around an index using modulo
     arithmetic.
     - clamp: specifies that a function should set an index less than zero to
@@ -20,7 +22,7 @@
     Examples
     --------
     > var out = {{alias}}()
-    [ 'throw', 'clamp', 'wrap' ]
+    [ 'throw', 'normalize', 'clamp', 'wrap' ]
 
     See Also
     --------

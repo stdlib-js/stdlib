@@ -1,0 +1,31 @@
+
+{{alias}}( str[, fromIndex] )
+    Returns the position of the next Unicode code point in a string after a
+    specified position.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    fromIndex: integer (optional)
+        Position. Default: 0.
+
+    Returns
+    -------
+    out: integer
+        Next code point position.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'last man standing', 4 )
+    5
+    > out = {{alias}}( 'presidential election', 8 )
+    9
+    > out = {{alias}}( '𐒻𐓟𐒻𐓟', 0 )
+    2
+    > out = {{alias}}( '🌷' )
+    -1
+
+    See Also
+    --------

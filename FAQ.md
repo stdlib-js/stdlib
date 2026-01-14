@@ -62,17 +62,17 @@ limitations under the License.
 
 This project
 
-1.  provides high-quality, rigorous, and robust implementations having common licensing, documentation, tooling, and style
+1.  provides high-quality, rigorous, and robust implementations with common licensing, documentation, tooling, and style.
 
-2.  provides peer-reviewed portable JavaScript libraries
+2.  provides peer-reviewed, portable JavaScript libraries.
 
-3.  provides modular, well-defined interfaces which may be forked, customized, and combined as needed
+3.  provides modular, well-defined interfaces which may be forked, customized, and combined as needed.
 
-4.  provides implementations which work cross-platform (Windows and POSIX), cross-environment (Node.js and web browsers), and cross-context (command-line, REPL, and JavaScript applications)
+4.  provides implementations which work cross-platform (Windows and POSIX), cross-environment (Node.js and web browsers), and cross-context (command-line, REPL, and JavaScript applications).
 
-5.  provides accurate and performant algorithms and implementations for numerical and scientific computing
+5.  provides accurate and performant algorithms and implementations for numerical and scientific computing.
 
-6.  increases productivity by
+6.  increases productivity by:
 
     -   deterring reinvention
     -   accelerating initial development
@@ -80,9 +80,9 @@ This project
     -   reducing long-term maintenance costs
     -   reducing search, evaluation, and quality-control requirements
 
-7.  provides standard reference implementations
+7.  provides standard reference implementations.
 
-8.  establishes best practice
+8.  establishes best practices.
 
 <!-- </faq-question> -->
 
@@ -114,7 +114,7 @@ This project
 
 1.  **Speed**: JavaScript is fast for a dynamically compiled language. This is largely due to the need for browser vendors to run web applications as fast as possible, thus forcing vendors to make continuous performance improvements and create highly optimized runtime environments.
 2.  **Rendering Engine**: web browsers are performant, highly optimized view engines, supporting a range of rendering modes ([DOM][dom], [canvas][canvas], [WebGL][webgl]). The web browser has become the preferred medium for interactive graphics, with most major numerical computing platforms supporting some form of web browser rendering ([R][shiny], [Python][bokeh], [MATLAB][plotly]). Accordingly, if JavaScript is already being used to render data as a plot, supporting numerical manipulation of that data without requiring language context switching and the additional complexity of establishing bridges between different languages and platforms also makes sense.
-3.  **Community**: JavaScript has one of the [largest][stackoverflow-developer-survey] and most diverse developer [communities][stackoverflow-developer-survey]. Giving that community access to better and more intermediate tools for numerical computing enables more potential creative applications and use cases. And further, numerical computing has traditionally been the purview of companies selling expensive software only accessible to industry and large academic institutions. By creating free and open numerical computing tools in JavaScript, numerical computing is democratized and made accessible to a [community][module-counts] which has typically not had access to such tools.
+3.  **Community**: JavaScript has one of the [largest][stackoverflow-developer-survey] and most diverse developer [communities][stackoverflow-developer-survey]. Giving that community access to better and more intermediate tools for numerical computing enables more potential creative applications and use cases. And further, numerical computing has traditionally been the purview of companies selling expensive software only accessible to industry and large academic institutions. By creating free and open numerical computing tools in JavaScript, numerical computing is democratized and made accessible to a [community][libraries-io] which has typically not had access to such tools.
 4.  **Ubiquity**: JavaScript is [ubiquitous][javascript-ubiquity], being supported on nearly any device with a web browser and, now, being pushed as a preferred scripting language in the Internet of Things (IoT) ([Cylon.js][cylon-js], [iot.js][iot-js], [JerryScript][jerryscript], [Johnny-Five][johnny-five]). Thus, if a numerical compute application can run in JavaScript, the broader the potential reach of that application.
 5.  **Distribution**: distributing a numerical compute application is considerably easier when compared to traditional numerical computation platforms. Because JavaScript is ubiquitous, the need for installing additional languages and tooling is often unnecessary. A web browser is frequently all that is required.
 6.  **Package Management**: Node.js package management is superior to anything available in other numerical computing environments. As developers who must manage Python [virtual environments][virtualenvs] or implement odd workarounds to support multiple versions of the same dependency can attest, the Node.js strategy makes dependency management trivial. And further, tight integration with [npm][npm] makes distribution even more frictionless. Frictionless is not a common adjective used in describing package management in other numerical computing environments.
@@ -731,7 +731,7 @@ You can support the project by
 -   advocating for standards committees to add features at the specification level to better enable numerical computing in JavaScript
 -   helping promote the project on social media, at your company, and within your networks
 -   providing build and infrastructure support
--   providing financial support ([Patreon][patreon-stdlib])
+-   providing financial support ([Open Collective][open-collective-stdlib])
 
 If you have additional ideas, get in touch, and we'll do our best to help!
 
@@ -794,7 +794,7 @@ See the [contributing guide][contributing-guide].
 
 [stackoverflow-developer-survey]: http://stackoverflow.com/research/developer-survey-2016
 
-[module-counts]: http://www.modulecounts.com/
+[libraries-io]: https://libraries.io/npm
 
 [node-fortune-500]: https://nodejs.org/en/blog/announcements/foundation-advances-growth/
 
@@ -926,6 +926,6 @@ See the [contributing guide][contributing-guide].
 [matlab-parfor]: https://www.mathworks.com/help/distcomp/parfor.html
 -->
 
-[patreon-stdlib]: https://www.patreon.com/athan
+[open-collective-stdlib]: https://opencollective.com/stdlib
 
 <!-- </definitions> -->

@@ -34,17 +34,17 @@
 * #include <stdint.h>
 *
 * // Create an input strided array:
-* float x[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
+* const float x[] = { -20.0, -1.0, 2.0, 4.0, 10.0, 100.0, 0.0, -0.0 };
 *
 * // Create an output strided array:
 * float y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 *
 * // Specify the number of elements:
-* int64_t N = 4;
+* const int64_t N = 4;
 *
 * // Specify the stride lengths:
-* int64_t strideX = 2;
-* int64_t strideY = 2;
+* const int64_t strideX = 2;
+* const int64_t strideY = 2;
 *
 * // Compute the results:
 * stdlib_strided_sinv( N, x, strideX, y, strideY );

@@ -16,18 +16,18 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/object';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Returns an updated collection element.
 *
 * @returns updated element
 */
-type Nullary = () => any;
+type Nullary<T, U> = ( this: U ) => T;
 
 /**
 *Returns an updated collection element.
@@ -35,7 +35,7 @@ type Nullary = () => any;
 * @param value - collection value
 * @returns updated element
 */
-type Unary = ( value: any ) => any;
+type Unary<T, U> = ( this: U, value: T ) => T;
 
 /**
 * Returns an updated collection element.
@@ -44,17 +44,7 @@ type Unary = ( value: any ) => any;
 * @param index - collection index
 * @returns updated element
 */
-type Binary = ( value: any, index: number ) => any;
-
-/**
-* Returns an updated collection element.
-*
-* @param value - collection value
-* @param index - collection index
-* @param collection - input collection
-* @returns updated element
-*/
-type Ternary = ( value: any, index: number, collection: Collection ) => any;
+type Binary<T, U> = ( this: U, value: T, index: number ) => T;
 
 /**
 * Returns an updated collection element.
@@ -64,7 +54,17 @@ type Ternary = ( value: any, index: number, collection: Collection ) => any;
 * @param collection - input collection
 * @returns updated element
 */
-type Callback = Nullary | Unary | Binary | Ternary;
+type Ternary<T, U> = ( this: U, value: T, index: number, collection: Collection<T> ) => T;
+
+/**
+* Returns an updated collection element.
+*
+* @param value - collection value
+* @param index - collection index
+* @param collection - input collection
+* @returns updated element
+*/
+type Callback<T, U> = Nullary<T, U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 
 /**
 * Invokes a function once for each element in a collection and updates the collection in-place.
@@ -72,7 +72,6 @@ type Callback = Nullary | Unary | Binary | Ternary;
 * ## Notes
 *
 * -   The invoked function's return value is cached prior to updating a collection. Before updating the collection, a collection must be inspected to ensure that a collection has not been resized during invocation such that an index no longer has a corresponding element in the collection. Were a return value automatically used to update a collection, an input collection could be converted into a sparse data structure. While some might consider this a feature, here, we take stance that a user should be less clever.
-*
 *
 * @param collection - input collection
 * @param fcn - function to invoke
@@ -92,7 +91,7 @@ type Callback = Nullary | Unary | Binary | Ternary;
 * var bool = ( out === arr );
 * // returns true
 */
-declare function inmap( collection: Collection, fcn: Callback, thisArg?: any ): Collection; // tslint-disable-line max-line-length
+declare function inmap<T = unknown, U = unknown>( collection: Collection<T>, fcn: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): Collection<T>;
 
 
 // EXPORTS //

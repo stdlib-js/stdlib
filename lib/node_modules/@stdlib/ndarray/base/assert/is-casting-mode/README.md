@@ -81,6 +81,9 @@ bool = isCastingMode( 'equiv' );
 bool = isCastingMode( 'safe' );
 // returns true
 
+bool = isCastingMode( 'mostly-safe' );
+// returns true
+
 bool = isCastingMode( 'same-kind' );
 // returns true
 

@@ -1,0 +1,23 @@
+
+{{alias}}( x )
+    Returns the data type of a provided ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    dt: string
+        Data type.
+
+    Examples
+    --------
+    > var opts = { 'dtype': 'float64' };
+    > var dt = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ], opts ) )
+    'float64'
+
+    See Also
+    --------
+

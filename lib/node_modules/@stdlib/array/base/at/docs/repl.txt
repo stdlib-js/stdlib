@@ -1,0 +1,42 @@
+
+{{alias}}( x, index )
+    Returns an element from an array.
+
+    Negative indices are resolved relative to the last array element, with the
+    last element corresponding to `-1`.
+
+    If provided an array-like object having an `at` method , the function defers
+    execution to that method and assumes that the method has the following
+    signature:
+
+      x.at( index )
+
+    If provided an array-like object without an `at` method, the function
+    normalizes a provided index and returns a specified element.
+
+    If provided an out-of-bounds index, the function always returns `undefined`.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    index: integer
+        Element index.
+
+    Returns
+    -------
+    out: any
+        Element value.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > {{alias}}( x, 0 )
+    1
+    > {{alias}}( x, -2 )
+    3
+
+    See Also
+    --------
+

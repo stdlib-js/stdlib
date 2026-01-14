@@ -1,0 +1,8 @@
+
+Usage: next-code-point-index [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --from index          Starting search position in string. Default: 0.

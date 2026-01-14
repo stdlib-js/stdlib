@@ -1,0 +1,35 @@
+
+{{alias}}( v1, v2 )
+    Tests if two arguments are both Float64Arrays and have the same values.
+
+    The function differs from the `===` operator in that the function treats
+    `-0` and `+0` as distinct and `NaNs` as the same.
+
+    Parameters
+    ----------
+    v1: any
+        First input value.
+
+    v2: any
+        Second input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arguments are the same.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0 ] );
+    > var bool = {{alias}}( x, y )
+    true
+
+    > x = new {{alias:@stdlib/array/float64}}( [ NaN, NaN, NaN ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ NaN, NaN, NaN ] );
+    > bool = {{alias}}( x, y )
+    true
+
+    See Also
+    --------
+

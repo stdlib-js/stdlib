@@ -31,7 +31,7 @@ A triangle waveform is represented by the following equation
 <!-- <equation class="equation" label="eq:triangle_waveform" align="center" raw="f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arcsin} \sin \frac{2\pi(t-\varphi)}{\tau}" alt="Equation for a triangle waveform."> -->
 
 ```math
-f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arcsin} \sin \frac{2\pi(t-\varphi)}{\tau}
+f(t; \tau, a, \varphi) = \frac{2a}{\pi} \mathop{\mathrm{arcsin}} \sin \frac{2\pi(t-\varphi)}{\tau}
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="f(t; \tau, a, \varphi) = \frac{2a}{\pi} \operatorname{arcsin} \sin \frac{2\pi(t-\varphi)}{\tau}" data-equation="eq:triangle_waveform">

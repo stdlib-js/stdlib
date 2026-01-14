@@ -46,8 +46,8 @@ import bernoulli = require( './index' );
 // Attached to main export is a `factory` method which returns a function...
 {
 	bernoulli.factory( 0.3 ); // $ExpectType NullaryFunction
-	bernoulli.factory(); // $ExpectType BinaryFunction
-	bernoulli.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	bernoulli.factory(); // $ExpectType UnaryFunction
+	bernoulli.factory( { 'copy': false } ); // $ExpectType UnaryFunction
 }
 
 // The `factory` method returns a function which returns a number...
@@ -115,14 +115,14 @@ import bernoulli = require( './index' );
 	bernoulli.factory( 0.3, { 'prng': null } ); // $ExpectError
 	bernoulli.factory( 0.3, { 'prng': [] } ); // $ExpectError
 	bernoulli.factory( 0.3, { 'prng': {} } ); // $ExpectError
-	bernoulli.factory( 0.3, { 'prng': true ); // $ExpectError
+	bernoulli.factory( 0.3, { 'prng': true } ); // $ExpectError
 
 	bernoulli.factory( { 'prng': 123 } ); // $ExpectError
 	bernoulli.factory( { 'prng': 'abc' } ); // $ExpectError
 	bernoulli.factory( { 'prng': null } ); // $ExpectError
 	bernoulli.factory( { 'prng': [] } ); // $ExpectError
 	bernoulli.factory( { 'prng': {} } ); // $ExpectError
-	bernoulli.factory( { 'prng': true ); // $ExpectError
+	bernoulli.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -149,7 +149,7 @@ import bernoulli = require( './index' );
 	bernoulli.factory( 0.3, { 'state': null } ); // $ExpectError
 	bernoulli.factory( 0.3, { 'state': [] } ); // $ExpectError
 	bernoulli.factory( 0.3, { 'state': {} } ); // $ExpectError
-	bernoulli.factory( 0.3, { 'state': true ); // $ExpectError
+	bernoulli.factory( 0.3, { 'state': true } ); // $ExpectError
 	bernoulli.factory( 0.3, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	bernoulli.factory( { 'state': 123 } ); // $ExpectError
@@ -157,7 +157,7 @@ import bernoulli = require( './index' );
 	bernoulli.factory( { 'state': null } ); // $ExpectError
 	bernoulli.factory( { 'state': [] } ); // $ExpectError
 	bernoulli.factory( { 'state': {} } ); // $ExpectError
-	bernoulli.factory( { 'state': true ); // $ExpectError
+	bernoulli.factory( { 'state': true } ); // $ExpectError
 	bernoulli.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

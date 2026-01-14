@@ -17,18 +17,17 @@
 */
 
 #include "stdlib/math/base/special/wrap.h"
-#include <stdlib.h>
 #include <stdio.h>
 
-int main() {
-    double min[] = { 0.0, 0.0, 0.0, 0.0, -3.14 };
-    double max[] = { 5.0, 5.0, 5.0, 5.0, -0.0 };
-    double v[] = { 3.14, -3.14, 10.0, -0.0, 0.0 };
+int main( void ) {
+	const double min[] = { 0.0, 0.0, 0.0, 0.0, -3.14 };
+	const double max[] = { 5.0, 5.0, 5.0, 5.0, -0.0 };
+	const double v[] = { 3.14, -3.14, 10.0, -0.0, 0.0 };
 
-    double out;
-    int i;
-    for ( i = 0; i < 5; i++ ) {
-        out = stdlib_base_wrap( v[i], min[i], max[i] );
-        printf( "wrap(%lf,%lf,%lf) => %lf\n", v[i], min[i], max[i], out );
-    }
+	double out;
+	int i;
+	for ( i = 0; i < 5; i++ ) {
+		out = stdlib_base_wrap( v[i], min[i], max[i] );
+		printf( "wrap(%lf,%lf,%lf) => %lf\n", v[i], min[i], max[i], out );
+	}
 }

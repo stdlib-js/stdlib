@@ -35,6 +35,7 @@ var isBigInt = require( '@stdlib/assert/is-bigint' );
 Tests if a value is a [`BigInt`][mdn-bigint].
 
 ```javascript
+var Object = require( '@stdlib/object/ctor' );
 var BigInt = require( '@stdlib/bigint/ctor' );
 
 var bool = isBigInt( BigInt( '1' ) );
@@ -49,6 +50,7 @@ bool = isBigInt( Object( BigInt( '1' ) ) );
 Tests if a `value` is a primitive [`BigInt`][mdn-bigint].
 
 ```javascript
+var Object = require( '@stdlib/object/ctor' );
 var BigInt = require( '@stdlib/bigint/ctor' );
 
 var bool = isBigInt.isPrimitive( BigInt( '1' ) );
@@ -63,6 +65,7 @@ bool = isBigInt.isPrimitive( Object( BigInt( '1' ) ) );
 Tests if a `value` is a [`BigInt`][mdn-bigint] object.
 
 ```javascript
+var Object = require( '@stdlib/object/ctor' );
 var BigInt = require( '@stdlib/bigint/ctor' );
 
 var bool = isBigInt.isObject( BigInt( '1' ) );

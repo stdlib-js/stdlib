@@ -1,0 +1,25 @@
+
+{{alias}}( x )
+    Returns the layout order of a provided ndarray.
+
+    If unable to resolve a layout order, the function returns `null`.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    out: string|null
+        Layout order.
+
+    Examples
+    --------
+    > var opts = { 'order': 'row-major' };
+    > var dt = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ], opts ) )
+    'row-major'
+
+    See Also
+    --------
+

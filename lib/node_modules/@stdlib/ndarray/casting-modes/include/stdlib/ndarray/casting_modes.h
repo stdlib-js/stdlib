@@ -32,11 +32,14 @@ enum STDLIB_NDARRAY_CASTING_MODE {
 	// Only allow "safe" casts:
 	STDLIB_NDARRAY_SAFE_CASTING = 2,
 
+	// Allow "safe" casts and, for floating-point data types, downcasts:
+	STDLIB_NDARRAY_MOSTLY_SAFE_CASTING = 3,
+
 	// Allow "safe" casts and casts within the same kind (e.g., between signed integers or between floats):
-	STDLIB_NDARRAY_SAME_KIND_CASTING = 3,
+	STDLIB_NDARRAY_SAME_KIND_CASTING = 4,
 
 	// Allow casting between all types (including between integers and floats):
-	STDLIB_NDARRAY_UNSAFE_CASTING = 4
+	STDLIB_NDARRAY_UNSAFE_CASTING = 5
 };
 
 #endif // !STDLIB_NDARRAY_CASTING_MODES_H

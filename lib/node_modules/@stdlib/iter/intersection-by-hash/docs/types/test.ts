@@ -16,8 +16,6 @@
 * limitations under the License.
 */
 
-/* tslint:disable:max-line-length */
-
 import iterIntersectionByHash = require( './index' );
 
 /**

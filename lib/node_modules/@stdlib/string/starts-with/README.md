@@ -86,7 +86,7 @@ var bool = startsWith( str, '' );
 
     -   The function requires string values for the first and second arguments and requires that the `position` argument be an integer value.
     -   The function does **not** clamp negative `position` values. Instead, when provided a negative `position`, the function resolves the starting search position relative to the end of the string.
-    -   Except when provided an empty `search` string, the function **always** returns `false` is a `position` resolves to a starting search position which exceeds the bounds of the input string.
+    -   Except when provided an empty `search` string, the function **always** returns `false` if a `position` resolves to a starting search position which exceeds the bounds of the input string.
 
 </section>
 

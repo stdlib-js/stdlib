@@ -21,7 +21,7 @@
     0.1
     > y = {{alias}}( 0.0 )
     Infinity
-    > y = {{alias}}( Infinity )
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pinf}} )
     0.0
     > y = {{alias}}( -8.0 )
     -0.5

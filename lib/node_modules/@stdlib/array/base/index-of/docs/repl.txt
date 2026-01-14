@@ -1,0 +1,43 @@
+
+{{alias}}( x, searchElement, fromIndex )
+    Returns the index of the first element which equals a provided search
+    element.
+
+    If provided an array-like object having an `indexOf` method, the function
+    defers execution to that method and assumes that the method has the
+    following signature:
+
+        x.indexOf( searchElement, fromIndex )
+
+    If provided an array-like object without an `indexOf` method, the function
+    performs a linear scan and returns immediately upon finding a match.
+
+    If unable to find an element which equals a provided search element, the
+    function returns -1.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    searchElement: any
+        Search element.
+
+    fromIndex: integer
+        Starting index (inclusive). If less than zero, the starting index is
+        resolved relative to the last array element, with the last array element
+        corresponding to `fromIndex = -1`.
+
+    Returns
+    -------
+    out: integer
+        Index or -1.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3, 4 ], 3, 0 )
+    2
+
+    See Also
+    --------
+

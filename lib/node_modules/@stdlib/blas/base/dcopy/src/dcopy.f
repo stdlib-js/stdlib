@@ -50,7 +50,7 @@
 ! @param {integer} N - number of indexed elements
 ! @param {Array<double>} dx - input array
 ! @param {integer} strideX - `dx` stride length
-! @param {Array<double>} dy - destination array
+! @param {Array<double>} dy - output array
 ! @param {integer} strideY - `dy` stride length
 !<
 subroutine dcopy( N, dx, strideX, dy, strideY )

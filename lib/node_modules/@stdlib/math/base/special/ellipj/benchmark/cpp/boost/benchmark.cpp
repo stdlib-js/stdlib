@@ -16,9 +16,6 @@
 * limitations under the License.
 */
 
-/**
-* Benchmark Boost `ellipj`.
-*/
 #include <boost/math/special_functions/jacobi_elliptic.hpp>
 #include <stdlib.h>
 #include <stdio.h>

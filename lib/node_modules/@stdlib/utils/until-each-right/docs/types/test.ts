@@ -18,54 +18,72 @@
 
 import untilEachRight = require( './index' );
 
-const log = ( v: any, index: number ): void => {
-	console.log( `${index}: ${v}` );
-};
+/**
+* Test function.
+*
+* @param v - value
+* @param index - index
+*/
+function fcn( v: number, index: number ): void {
+	if ( v !== v ) {
+		throw new Error( 'beep' );
+	}
+	if ( index !== index ) {
+		throw new Error( 'beep' );
+	}
+}
 
-const isNotNaN = ( v: number ): boolean => {
-	return ( v === v );
-};
+/**
+* Test function.
+*
+* @param v - value
+* @returns result
+*/
+function isnan( v: number ): boolean {
+	return ( v !== v );
+}
+
 
 // TESTS //
 
 // The function returns the input collection...
 {
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], isNotNaN, log ); // $ExpectType Collection
-	untilEachRight( [ -1, 1, 2 ], isNotNaN, log, {} ); // $ExpectType Collection
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], isnan, fcn ); // $ExpectType Collection<number>
+	untilEachRight( [ -1, 1, 2 ], isnan, fcn, {} ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
 {
-	untilEachRight( 2, isNotNaN, log ); // $ExpectError
-	untilEachRight( false, isNotNaN, log ); // $ExpectError
-	untilEachRight( true, isNotNaN, log ); // $ExpectError
-	untilEachRight( {}, isNotNaN, log ); // $ExpectError
+	untilEachRight( 2, isnan, fcn ); // $ExpectError
+	untilEachRight( false, isnan, fcn ); // $ExpectError
+	untilEachRight( true, isnan, fcn ); // $ExpectError
+	untilEachRight( {}, isnan, fcn ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a function...
 {
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], 2, log ); // $ExpectError
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], false, log ); // $ExpectError
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], true, log ); // $ExpectError
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], 'abc', log ); // $ExpectError
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], {}, log ); // $ExpectError
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], [], log ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], 2, fcn ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], false, fcn ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], true, fcn ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], 'abc', fcn ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], {}, fcn ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], [], fcn ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a function...
 {
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], isNotNaN, 2 ); // $ExpectError
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], isNotNaN, false ); // $ExpectError
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], isNotNaN, true ); // $ExpectError
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], isNotNaN, 'abc' ); // $ExpectError
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], isNotNaN, {} ); // $ExpectError
-	untilEachRight( [ 0, 1, 1, NaN, 2 ], isNotNaN, [] ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], isnan, 2 ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], isnan, false ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], isnan, true ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], isnan, 'abc' ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], isnan, {} ); // $ExpectError
+	untilEachRight( [ 0, 1, 1, NaN, 2 ], isnan, [] ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an invalid number of arguments...
 {
 	untilEachRight(); // $ExpectError
 	untilEachRight( [ 1, 2, 3 ] ); // $ExpectError
-	untilEachRight( [ 1, 2, 3 ], isNotNaN ); // $ExpectError
-	untilEachRight( [ 1, 2, 3 ], isNotNaN, log, {}, 3 ); // $ExpectError
+	untilEachRight( [ 1, 2, 3 ], isnan ); // $ExpectError
+	untilEachRight( [ 1, 2, 3 ], isnan, fcn, {}, 3 ); // $ExpectError
 }

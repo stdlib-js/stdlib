@@ -87,13 +87,13 @@ import minmaxabsn = require( './index' );
 {
 	const out = [ 0.0, 0.0 ];
 
-	minmaxabsn.assign( out, 1, 0 ); // $ExpectType Collection
-	minmaxabsn.assign( 3.0, out, 1, 0 ); // $ExpectType Collection
-	minmaxabsn.assign( 3.0, -0.2, out, 1, 0 ); // $ExpectType Collection
-	minmaxabsn.assign( 3.0, -0.2, 1.0, out, 1, 0 ); // $ExpectType Collection
-	minmaxabsn.assign( 3.0, -0.2, -1.2, -4.0, out, 1, 0 ); // $ExpectType Collection
-	minmaxabsn.assign( 3.0, -0.2, -1.2, -4.0, 5.0, out, 1, 0 ); // $ExpectType Collection
-	minmaxabsn.assign( 3.0, -0.2, -1.2, -4.0, 5.0, 6.0, out, 1, 0 ); // $ExpectType Collection
+	minmaxabsn.assign( out, 1, 0 ); // $ExpectType Collection<number>
+	minmaxabsn.assign( 3.0, out, 1, 0 ); // $ExpectType Collection<number>
+	minmaxabsn.assign( 3.0, -0.2, out, 1, 0 ); // $ExpectType Collection<number>
+	minmaxabsn.assign( 3.0, -0.2, 1.0, out, 1, 0 ); // $ExpectType Collection<number>
+	minmaxabsn.assign( 3.0, -0.2, -1.2, -4.0, out, 1, 0 ); // $ExpectType Collection<number>
+	minmaxabsn.assign( 3.0, -0.2, -1.2, -4.0, 5.0, out, 1, 0 ); // $ExpectType Collection<number>
+	minmaxabsn.assign( 3.0, -0.2, -1.2, -4.0, 5.0, 6.0, out, 1, 0 ); // $ExpectType Collection<number>
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not a number...

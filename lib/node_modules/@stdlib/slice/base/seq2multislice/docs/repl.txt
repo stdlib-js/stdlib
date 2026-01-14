@@ -1,0 +1,105 @@
+
+{{alias}}( str, shape, strict )
+    Converts a multidimensional subsequence string to a MultiSlice object.
+
+    A multidimensional subsequence string is a comma-separated list of single-
+    dimension indexing expressions (i.e., integers and/or subsequence strings).
+
+    For example, the following
+
+      2
+      :
+      2:
+      :10
+      2:10
+      ::-1
+      10:2:-1
+      :2:
+      2:10:
+      2::2
+      :10:2
+      :, :, :
+      1, 2, 3
+      0:10, 1:20:2, ::-1
+      ...
+      :, ..., 2
+
+    are all valid multidimensional subsequence strings.
+
+    Providing a single nonnegative integer `i` as a single-dimension index
+    indexes the same elements as the subsequence `i:i+1`.
+
+    Providing a single negative integer `i` as a single-dimension index indexes
+    the same elements as the subsequence `n+i:n+i+i`, where `n` is the dimension
+    size.
+
+    While integers index the same elements as equivalent subsequences, providing
+    an integer as a single-dimension index indicates to reduce the number of
+    dimensions by one (e.g., if the provided shape corresponds to an array
+    having rank 2, then rank(A)-1 == rank(A['0,:'])).
+
+    In contrast, providing a subsequence indicates to retain a respective
+    dimension (e.g., if the provided shape corresponds to an array having rank
+    2, then rank(A) == rank(A[':,:'])).
+
+    A multidimensional subsequence string can only contain **one** ellipsis
+    ('...') operator. An ellipsis indicates to apply ':' to each dimension
+    necessary to index all dimensions (e.g., if A has rank 4, A['1:,...,2:5']
+    equals A['1:,:,:,2:5']).
+
+    Except in the case of providing a single ellipsis, the number of single-
+    dimension indexing expressions must equal the number of dimensions in the
+    input shape.
+
+    The function returns an error object if provided an invalid subsequence
+    string.
+
+    In strict mode, the function returns an error object if a single-dimension
+    index expression which exceeds index bounds.
+
+    A returned error object is a plain object having the following properties:
+
+    - code: error code.
+
+    A returned error object may have one of the following error codes:
+
+    - ERR_SLICE_INVALID_SUBSEQUENCE: a subsequence string is invalid.
+    - ERR_SLICE_INVALID_INCREMENT: a subsequence string must have a non-zero
+      increment.
+    - ERR_SLICE_OUT_OF_BOUNDS: a subsequence string resolves to a slice
+      exceeding index bounds.
+    - ERR_SLICE_TOO_MANY_DIMENSIONS: a subsequence string has more dimensions
+      than the provided shape.
+    - ERR_SLICE_INSUFFICIENT_DIMENSIONS: a subsequence string has too few
+      dimensions.
+    - ERR_SLICE_INVALID_ELLIPSIS: a subsequence string must only contain at most
+      one ellipsis.
+
+    Parameters
+    ----------
+    str: string
+        Subsequence string.
+
+    shape: Array<integer>
+        Maximum allowed slice shape.
+
+    strict: boolean
+        Boolean indicating whether to enforce strict bounds checking.
+
+    Returns
+    -------
+    s: MultiSlice|Object
+        MultiSlice instance or an error object.
+
+    Examples
+    --------
+    > var s = new {{alias}}( '1:10', [ 10 ], false );
+    > s.data
+    [ <Slice> ]
+    > s = new {{alias}}( '4,2:5:2,:', [ 10, 10, 10 ], false );
+    > s.data
+    [ 4, <Slice>, <Slice> ]
+
+    See Also
+    --------
+

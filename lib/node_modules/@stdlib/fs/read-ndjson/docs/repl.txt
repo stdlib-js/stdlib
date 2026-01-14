@@ -1,0 +1,72 @@
+
+{{alias}}( file[, options], clbk )
+    Asynchronously reads a file as newline-delimited JSON.
+
+    Parameters
+    ----------
+    file: string|Buffer|integer
+        Filename or file descriptor.
+
+    options: Object|string (optional)
+        Options. If a string, the value is the encoding.
+
+    options.encoding: string|null (optional)
+        Encoding. If the encoding option is set to `utf8` and the file has a
+        UTF-8 byte order mark (BOM), the byte order mark is *removed* before
+        attempting to parse as newline-delimited JSON. Default: null.
+
+    options.flag: string (optional)
+        Flag. Default: 'r'.
+
+    options.reviver: Function (optional)
+        JSON transformation function.
+
+    clbk: Function
+        Callback to invoke upon reading file contents.
+
+    Examples
+    --------
+    > function onRead( error, data ) {
+    ...     if ( error ) {
+    ...         console.error( error.message );
+    ...     } else {
+    ...         console.log( data );
+    ...     }
+    ... };
+    > {{alias}}( './beep/boop.ndjson', onRead );
+
+
+{{alias}}.sync( file[, options] )
+    Synchronously reads a file as newline-delimited JSON.
+
+    Parameters
+    ----------
+    file: string|Buffer|integer
+        Filename or file descriptor.
+
+    options: Object|string (optional)
+        Options. If a string, the value is the encoding.
+
+    options.encoding: string|null (optional)
+        Encoding. If the encoding option is set to `utf8` and the file has a
+        UTF-8 byte order mark (BOM), the byte order mark is *removed* before
+        attempting to parse as newline-delimited JSON. Default: null.
+
+    options.flag: string (optional)
+        Flag. Default: 'r'.
+
+    options.reviver: Function (optional)
+        JSON transformation function.
+
+    Returns
+    -------
+    out: Error|Array
+        File contents.
+
+    Examples
+    --------
+    > var out = {{alias}}.sync( './beep/boop.ndjson' );
+
+    See Also
+    --------
+

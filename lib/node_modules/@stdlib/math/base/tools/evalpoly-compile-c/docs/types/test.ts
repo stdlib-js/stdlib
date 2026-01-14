@@ -55,7 +55,7 @@ import compile = require( './index' );
 	compile( [ 3.0, 2.0, 1.0 ], ( x: number ): number => x ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a `dtype` option which is not a string...
+// The compiler throws an error if the function is provided an invalid `dtype` option...
 {
 	compile( [ 3.0, 2.0, 1.0 ], { 'dtype': true } ); // $ExpectError
 	compile( [ 3.0, 2.0, 1.0 ], { 'dtype': false } ); // $ExpectError

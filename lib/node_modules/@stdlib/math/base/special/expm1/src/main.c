@@ -224,7 +224,7 @@ static double polyval_q( const double x ) {
 * -   According to an error analysis, the error is always less than \\(1\\) ulp (unit in the last place).
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double v = stdlib_base_expm1( 0.0 );

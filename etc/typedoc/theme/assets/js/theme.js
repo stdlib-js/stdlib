@@ -61,8 +61,11 @@
 		var idx = txt.indexOf( 'stdlib' );
 		if ( idx === -1 || idx === 1 ) { // e.g., '@stdlib/types/iter'
 			txt = 'stdlib | ' + txt;
-		} else if ( txt.indexOf( ' | stdlib' ) === txt.length-9 ) { // e.g., 'foo/bar | stdlib'
-			txt = 'stdlib | ' + txt.slice( 0, -9 );
+		} else {
+			idx = txt.indexOf( ' | stdlib' );
+			if ( idx === txt.length-9 ) { // e.g., 'foo/bar | stdlib'
+				txt = 'stdlib | ' + txt.slice( 0, -9 );
+			}
 		}
 		el.innerHTML = txt;
 	}

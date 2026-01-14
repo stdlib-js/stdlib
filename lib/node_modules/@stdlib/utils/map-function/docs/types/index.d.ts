@@ -16,22 +16,14 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /**
 * Invoked function.
 *
 * @returns result
 */
-type Nullary = () => any;
-
-/**
-* Invoked function.
-*
-* @param i - invocation index
-* @returns result
-*/
-type Unary = ( i: number ) => any;
+type Nullary<T, U> = ( this: U ) => T;
 
 /**
 * Invoked function.
@@ -39,7 +31,15 @@ type Unary = ( i: number ) => any;
 * @param i - invocation index
 * @returns result
 */
-type Fcn = Nullary | Unary;
+type Unary<T, U> = ( this: U, i: number ) => T;
+
+/**
+* Invoked function.
+*
+* @param i - invocation index
+* @returns result
+*/
+type Fcn<T, U> = Nullary<T, U> | Unary<T, U>;
 
 /**
 * Invokes a function `n` times and returns an array of accumulated function return values.
@@ -62,7 +62,7 @@ type Fcn = Nullary | Unary;
 * var arr = mapFun( fcn, 5 );
 * // returns [ 0, 1, 2, 3, 4 ]
 */
-declare function mapFun( fcn: Fcn, n: number, thisArg?: any ): Array<any>;
+declare function mapFun<T = unknown, U = unknown>( fcn: Fcn<T, U>, n: number, thisArg?: ThisParameterType<Fcn<T, U>> ): Array<T>;
 
 
 // EXPORTS //

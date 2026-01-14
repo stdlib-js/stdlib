@@ -1,0 +1,7 @@
+{
+  "expression": "/\\d+/g;",
+  "expected": "\u001b[31m/\\d+/g\u001b[0m;",
+  "theme": {
+    "regexp": "red"
+  }
+}

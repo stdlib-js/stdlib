@@ -1,0 +1,23 @@
+
+{{alias}}( str )
+    Converts a string to alternate case.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        Alternate-cased string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello World!' )
+    'hElLo wOrLd!'
+    > out = {{alias}}( 'I am a tiny little teapot' )
+    'i aM A TiNy lItTlE TeApOt'
+
+    See Also
+    --------

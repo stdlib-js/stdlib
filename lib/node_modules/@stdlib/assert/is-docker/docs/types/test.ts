@@ -23,6 +23,6 @@ import IS_DOCKER = require( './index' );
 
 // The variable is a boolean...
 {
-	// tslint:disable-next-line:no-unused-expression
+	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
 	IS_DOCKER; // $ExpectType boolean
 }
