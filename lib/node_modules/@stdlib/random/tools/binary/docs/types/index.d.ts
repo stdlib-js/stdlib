@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+// eslint-doctest-alias: Random
+
 // TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>

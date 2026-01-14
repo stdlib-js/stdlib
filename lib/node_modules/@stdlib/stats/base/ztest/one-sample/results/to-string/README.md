@@ -105,7 +105,6 @@ The function supports the following options:
 
 ```javascript
 var Float64Results = require( '@stdlib/stats/base/ztest/one-sample/results/float64' );
-var resolveEnum = require( '@stdlib/stats/base/ztest/alternative-resolve-enum' );
 var Float64Array = require( '@stdlib/array/float64' );
 var res2str = require( '@stdlib/stats/base/ztest/one-sample/results/to-string' );
 
@@ -117,7 +116,7 @@ results.statistic = 11.7586;
 results.nullValue = 0.0;
 results.sd = 0.4563;
 results.ci = new Float64Array( [ 9.9983, 11.4123 ] );
-results.alternative = resolveEnum( 'two-sided' );
+results.alternative = 'two-sided';
 
 var s = res2str( results );
 console.log( s );
