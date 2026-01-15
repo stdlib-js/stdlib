@@ -36,44 +36,19 @@ Rounds a double-precision complex floating-point number toward negative infinity
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var v = cfloor( new Complex128( -4.2, 5.5 ) );
-// returns <Complex128>
-
-var re = real( v );
-// returns -5.0
-
-var im = imag( v );
-// returns 5.0
+// returns <Complex128>[ -5.0, 5.0 ]
 
 v = cfloor( new Complex128( 9.99999, 0.1 ) );
-// returns <Complex128>
-
-re = real( v );
-// returns 9.0
-
-im = imag( v );
-// returns 0.0
+// returns <Complex128>[ 9.0, 0.0 ]
 
 v = cfloor( new Complex128( 0.0, 0.0 ) );
-// returns <Complex128>
-
-re = real( v );
-// returns 0.0
-
-im = imag( v );
-// returns 0.0
+// returns <Complex128>[ 0.0, 0.0 ]
 
 v = cfloor( new Complex128( NaN, NaN ) );
-// returns <Complex128>
+// returns <Complex128>[ NaN, NaN ]
 
-re = real( v );
-// returns NaN
-
-im = imag( v );
-// returns NaN
 ```
 
 </section>
