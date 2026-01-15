@@ -86,7 +86,7 @@ The function accepts the following arguments:
 
 ## Notes
 
--   If provided a zero-dimensional ndarray, as the ndarray has no dimensions to reverse, the function simply returns a copy the input ndarray. Similarly, if provided a one-dimensional ndarray, as the ndarray has only one dimension, the function simply returns a copy of the input ndarray.
+-   If provided a zero-dimensional ndarray, as the ndarray has no dimensions to reverse, the function simply returns a copy of the input ndarray. Similarly, if provided a one-dimensional ndarray, as the ndarray has only one dimension, the function simply returns a copy of the input ndarray.
 
 </section>
 
