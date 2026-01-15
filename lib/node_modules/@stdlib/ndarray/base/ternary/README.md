@@ -125,7 +125,6 @@ The function accepts the following arguments:
 
 ## Notes
 
-
 -   Each provided ndarray should be an object with the following properties:
 
     -   **dtype**: data type.
