@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2026 The Stdlib Authors.
+Copyright (c) 2023 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,25 +22,7 @@ limitations under the License.
 
 > Style guide for programming in Julia.
 
-<section class="usage">
+TODO
 
-See the [Julia style guide](https://docs.julialang.org/en/v1/manual/style-guide/) for comprehensive style recommendations.
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-For examples of Julia code following the style guide, see the official Julia documentation at [docs.julialang.org](https://docs.julialang.org/en/v1/manual/style-guide/).
-
-</section>
-
-<!-- /.examples -->
-
-<section class="links">
-
--   Julia [style Guide](https://docs.julialang.org/en/v1/manual/style-guide/)
-</section>
-
-<!-- /.links -->
+-   Julia [style guide](https://docs.julialang.org/en/v1/manual/style-guide/).
+see this is file 
