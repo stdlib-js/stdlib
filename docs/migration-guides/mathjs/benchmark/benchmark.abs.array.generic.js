@@ -25,7 +25,6 @@ var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filledBy = require( '@stdlib/array/filled-by' );
 var zeros = require( '@stdlib/array/zeros' );
-var format = require( '@stdlib/string/format' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var strided = require( '@stdlib/math/strided/special/abs' );
 var abs = require( '@stdlib/math/special/abs' );
