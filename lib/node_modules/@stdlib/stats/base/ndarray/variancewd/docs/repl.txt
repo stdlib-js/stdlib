@@ -1,7 +1,7 @@
 
 {{alias}}( arrays )
-    Computes the variance of a one-dimensional ndarray using
-    Welford's algorithm.
+    Computes the variance of a one-dimensional ndarray using Welford's
+    algorithm.
 
     If provided an empty one-dimensional ndarray, the function returns `NaN`.
 
