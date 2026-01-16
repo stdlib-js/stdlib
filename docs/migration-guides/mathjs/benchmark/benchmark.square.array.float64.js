@@ -95,7 +95,6 @@ bench( format( '%s::stdlib:math/strided/special/dabs2:value=array,dtype=float64,
 opts = {
 	'skip': true
 };
-
 bench( format( '%s::mathjs:square:value=array,dtype=float64,len=100', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
