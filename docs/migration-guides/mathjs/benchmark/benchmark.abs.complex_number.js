@@ -24,7 +24,6 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var format = require( '@stdlib/string/format' );
 var base = require( '@stdlib/math/base/special/cabs' );
 var abs = require( '@stdlib/math/special/abs' );
 var tryRequire = require( '@stdlib/utils/try-require' );
