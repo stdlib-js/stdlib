@@ -30,6 +30,7 @@ var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var strided = require( '@stdlib/math/strided/special/abs' );
 var abs = require( '@stdlib/math/special/abs' );
 var tryRequire = require( '@stdlib/utils/try-require' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 
 

@@ -305,7 +305,6 @@ interface GenericOptions extends Options {
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -316,10 +315,7 @@ interface GenericOptions extends Options {
 * // returns <ndarray>
 *
 * var y = filter( x, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function filter<V = unknown>( x: float64ndarray, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): float64ndarray;
 
@@ -335,7 +331,6 @@ declare function filter<V = unknown>( x: float64ndarray, predicate: Predicate<nu
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float32Array = require( '@stdlib/array/float32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -346,10 +341,7 @@ declare function filter<V = unknown>( x: float64ndarray, predicate: Predicate<nu
 * // returns <ndarray>
 *
 * var y = filter( x, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function filter<V = unknown>( x: float32ndarray, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): float32ndarray;
 
@@ -423,7 +415,6 @@ declare function filter<V = unknown>( x: complex128ndarray, predicate: Predicate
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Int32Array = require( '@stdlib/array/int32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Int32Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -434,10 +425,7 @@ declare function filter<V = unknown>( x: complex128ndarray, predicate: Predicate
 * // returns <ndarray>
 *
 * var y = filter( x, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: int32ndarray, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): int32ndarray;
 
@@ -453,7 +441,6 @@ declare function filter<V = unknown>( x: int32ndarray, predicate: Predicate<numb
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Int16Array = require( '@stdlib/array/int16' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Int16Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -464,10 +451,7 @@ declare function filter<V = unknown>( x: int32ndarray, predicate: Predicate<numb
 * // returns <ndarray>
 *
 * var y = filter( x, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: int16ndarray, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): int16ndarray;
 
@@ -483,7 +467,6 @@ declare function filter<V = unknown>( x: int16ndarray, predicate: Predicate<numb
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Int8Array = require( '@stdlib/array/int8' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Int8Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -494,10 +477,7 @@ declare function filter<V = unknown>( x: int16ndarray, predicate: Predicate<numb
 * // returns <ndarray>
 *
 * var y = filter( x, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: int8ndarray, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): int8ndarray;
 
@@ -513,7 +493,6 @@ declare function filter<V = unknown>( x: int8ndarray, predicate: Predicate<numbe
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Uint32Array = require( '@stdlib/array/uint32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Uint32Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -524,10 +503,7 @@ declare function filter<V = unknown>( x: int8ndarray, predicate: Predicate<numbe
 * // returns <ndarray>
 *
 * var y = filter( x, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: uint32ndarray, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): uint32ndarray;
 
@@ -543,7 +519,6 @@ declare function filter<V = unknown>( x: uint32ndarray, predicate: Predicate<num
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Uint16Array = require( '@stdlib/array/uint16' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Uint16Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -554,10 +529,7 @@ declare function filter<V = unknown>( x: uint32ndarray, predicate: Predicate<num
 * // returns <ndarray>
 *
 * var y = filter( x, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: uint16ndarray, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): uint16ndarray;
 
@@ -573,7 +545,6 @@ declare function filter<V = unknown>( x: uint16ndarray, predicate: Predicate<num
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Uint8Array = require( '@stdlib/array/uint8' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Uint8Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -584,10 +555,7 @@ declare function filter<V = unknown>( x: uint16ndarray, predicate: Predicate<num
 * // returns <ndarray>
 *
 * var y = filter( x, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: uint8ndarray, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): uint8ndarray;
 
@@ -603,7 +571,6 @@ declare function filter<V = unknown>( x: uint8ndarray, predicate: Predicate<numb
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Uint8ClampedArray( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -614,10 +581,7 @@ declare function filter<V = unknown>( x: uint8ndarray, predicate: Predicate<numb
 * // returns <ndarray>
 *
 * var y = filter( x, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: uint8cndarray, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): uint8cndarray;
 
@@ -632,7 +596,6 @@ declare function filter<V = unknown>( x: uint8cndarray, predicate: Predicate<num
 * @example
 * var BooleanArray = require( '@stdlib/array/bool' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function predicate( z ) {
 *     return z;
@@ -647,10 +610,7 @@ declare function filter<V = unknown>( x: uint8cndarray, predicate: Predicate<num
 * // returns <ndarray>
 *
 * var y = filter( x, predicate );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ true, true, true, true ]
+* // returns <ndarray>[ true, true, true, true ]
 */
 declare function filter<V = unknown>( x: boolndarray, predicate: Predicate<boolean, V>, thisArg?: ThisParameterType<Predicate<boolean, V>> ): boolndarray;
 
@@ -665,7 +625,6 @@ declare function filter<V = unknown>( x: boolndarray, predicate: Predicate<boole
 * @example
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ];
 * var shape = [ 2, 3 ];
@@ -676,10 +635,7 @@ declare function filter<V = unknown>( x: boolndarray, predicate: Predicate<boole
 * // returns <ndarray>
 *
 * var y = filter( x, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function filter<T = unknown, V = unknown>( x: genericndarray<T>, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): genericndarray<T>;
 
@@ -697,7 +653,6 @@ declare function filter<T = unknown, V = unknown>( x: genericndarray<T>, predica
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -711,10 +666,7 @@ declare function filter<T = unknown, V = unknown>( x: genericndarray<T>, predica
 *     'order': 'row-major'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function filter<V = unknown>( x: float64ndarray, options: OrderOptions, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): float64ndarray;
 
@@ -732,7 +684,6 @@ declare function filter<V = unknown>( x: float64ndarray, options: OrderOptions, 
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float32Array = require( '@stdlib/array/float32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -746,10 +697,7 @@ declare function filter<V = unknown>( x: float64ndarray, options: OrderOptions, 
 *     'order': 'row-major'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function filter<V = unknown>( x: float32ndarray, options: OrderOptions, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): float32ndarray;
 
@@ -835,7 +783,6 @@ declare function filter<V = unknown>( x: complex128ndarray, options: OrderOption
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Int32Array = require( '@stdlib/array/int32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Int32Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -849,10 +796,7 @@ declare function filter<V = unknown>( x: complex128ndarray, options: OrderOption
 *     'order': 'row-major'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: int32ndarray, options: OrderOptions, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): int32ndarray;
 
@@ -870,7 +814,6 @@ declare function filter<V = unknown>( x: int32ndarray, options: OrderOptions, pr
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Int16Array = require( '@stdlib/array/int16' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Int16Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -884,10 +827,7 @@ declare function filter<V = unknown>( x: int32ndarray, options: OrderOptions, pr
 *     'order': 'row-major'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: int16ndarray, options: OrderOptions, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): int16ndarray;
 
@@ -905,7 +845,6 @@ declare function filter<V = unknown>( x: int16ndarray, options: OrderOptions, pr
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Int8Array = require( '@stdlib/array/int8' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Int8Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -919,10 +858,7 @@ declare function filter<V = unknown>( x: int16ndarray, options: OrderOptions, pr
 *     'order': 'row-major'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: int8ndarray, options: OrderOptions, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): int8ndarray;
 
@@ -940,7 +876,6 @@ declare function filter<V = unknown>( x: int8ndarray, options: OrderOptions, pre
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Uint32Array = require( '@stdlib/array/uint32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Uint32Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -954,10 +889,7 @@ declare function filter<V = unknown>( x: int8ndarray, options: OrderOptions, pre
 *     'order': 'row-major'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: uint32ndarray, options: OrderOptions, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): uint32ndarray;
 
@@ -975,7 +907,6 @@ declare function filter<V = unknown>( x: uint32ndarray, options: OrderOptions, p
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Uint16Array = require( '@stdlib/array/uint16' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Uint16Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -989,10 +920,7 @@ declare function filter<V = unknown>( x: uint32ndarray, options: OrderOptions, p
 *     'order': 'row-major'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: uint16ndarray, options: OrderOptions, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): uint16ndarray;
 
@@ -1010,7 +938,6 @@ declare function filter<V = unknown>( x: uint16ndarray, options: OrderOptions, p
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Uint8Array = require( '@stdlib/array/uint8' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Uint8Array( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -1024,10 +951,7 @@ declare function filter<V = unknown>( x: uint16ndarray, options: OrderOptions, p
 *     'order': 'row-major'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: uint8ndarray, options: OrderOptions, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): uint8ndarray;
 
@@ -1045,7 +969,6 @@ declare function filter<V = unknown>( x: uint8ndarray, options: OrderOptions, pr
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Uint8ClampedArray( [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ] );
 * var shape = [ 2, 3 ];
@@ -1059,10 +982,7 @@ declare function filter<V = unknown>( x: uint8ndarray, options: OrderOptions, pr
 *     'order': 'row-major'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<V = unknown>( x: uint8cndarray, options: OrderOptions, predicate: Predicate<number, V>, thisArg?: ThisParameterType<Predicate<number, V>> ): uint8cndarray;
 
@@ -1079,7 +999,6 @@ declare function filter<V = unknown>( x: uint8cndarray, options: OrderOptions, p
 * @example
 * var BooleanArray = require( '@stdlib/array/bool' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function predicate( z ) {
 *     return z;
@@ -1097,10 +1016,7 @@ declare function filter<V = unknown>( x: uint8cndarray, options: OrderOptions, p
 *     'order': 'row-major'
 * };
 * var y = filter( x, opts, predicate );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ true, true, true, true ]
+* // returns <ndarray>[ true, true, true, true ]
 */
 declare function filter<V = unknown>( x: boolndarray, options: OrderOptions, predicate: Predicate<boolean, V>, thisArg?: ThisParameterType<Predicate<boolean, V>> ): boolndarray;
 
@@ -1117,7 +1033,6 @@ declare function filter<V = unknown>( x: boolndarray, options: OrderOptions, pre
 * @example
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ];
 * var shape = [ 2, 3 ];
@@ -1131,10 +1046,7 @@ declare function filter<V = unknown>( x: boolndarray, options: OrderOptions, pre
 *     'order': 'row-major'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function filter<T = unknown, V = unknown>( x: genericndarray<T>, options: OrderOptions, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): genericndarray<T>;
 
@@ -1153,7 +1065,6 @@ declare function filter<T = unknown, V = unknown>( x: genericndarray<T>, options
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -1167,10 +1078,7 @@ declare function filter<T = unknown, V = unknown>( x: genericndarray<T>, options
 *     'dtype': 'float64'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: Float64Options, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): float64ndarray;
 
@@ -1189,7 +1097,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -1203,10 +1110,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 *     'dtype': 'float32'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: Float32Options, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): float32ndarray;
 
@@ -1224,7 +1128,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function predicate( z, idx ) {
 *     return idx[ 0 ] > 0;
@@ -1260,7 +1163,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function predicate( z, idx ) {
 *     return idx[ 0 ] > 0;
@@ -1297,7 +1199,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -1311,10 +1212,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 *     'dtype': 'int32'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: Int32Options, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): int32ndarray;
 
@@ -1333,7 +1231,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -1347,10 +1244,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 *     'dtype': 'int16'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: Int16Options, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): int16ndarray;
 
@@ -1369,7 +1263,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -1383,10 +1276,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 *     'dtype': 'int8'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: Int8Options, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): int8ndarray;
 
@@ -1405,7 +1295,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -1419,10 +1308,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 *     'dtype': 'uint32'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: Uint32Options, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): uint32ndarray;
 
@@ -1441,7 +1327,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -1455,10 +1340,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 *     'dtype': 'uint16'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: Uint16Options, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): uint16ndarray;
 
@@ -1477,7 +1359,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -1491,10 +1372,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 *     'dtype': 'uint8'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: Uint8Options, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): uint8ndarray;
 
@@ -1513,7 +1391,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -1527,10 +1404,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 *     'dtype': 'uint8c'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2, 4, 8, 10 ]
+* // returns <ndarray>[ 2, 4, 8, 10 ]
 */
 declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: Uint8COptions, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): uint8cndarray;
 
@@ -1549,7 +1423,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -1563,10 +1436,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 *     'dtype': 'bool'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ true, true, true, true ]
+* // returns <ndarray>[ true, true, true, true ]
 */
 declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: BoolOptions, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): boolndarray;
 
@@ -1585,7 +1455,6 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 * var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -1599,10 +1468,7 @@ declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: 
 *     'dtype': 'generic'
 * };
 * var y = filter( x, opts, isEven );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+* // returns <ndarray>[ 2.0, 4.0, 8.0, 10.0 ]
 */
 declare function filter<T = unknown, V = unknown>( x: typedndarray<T>, options: GenericOptions, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): genericndarray<T>;
 

@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-import FLOAT16_EULER_GAMMA = require( './index' );
+import FLOAT16_EULERGAMMA = require( './index' );
 
 
 // TESTS //
@@ -24,5 +24,5 @@ import FLOAT16_EULER_GAMMA = require( './index' );
 // The export is a number...
 {
 	// eslint-disable-next-line @typescript-eslint/no-unused-expressions
-	FLOAT16_EULER_GAMMA; // $ExpectType number
+	FLOAT16_EULERGAMMA; // $ExpectType number
 }

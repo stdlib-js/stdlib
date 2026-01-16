@@ -28,6 +28,7 @@ var format = require( '@stdlib/string/format' );
 var base = require( '@stdlib/math/base/special/cabs' );
 var abs = require( '@stdlib/math/special/abs' );
 var tryRequire = require( '@stdlib/utils/try-require' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 
 

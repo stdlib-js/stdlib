@@ -61,10 +61,6 @@ var bool = ( FLOAT16_PHI === 1.6181640625 );
 
 <section class="notes">
 
-## Notes
-
-The value is approximately `1.6180339887498948482...` in double precision. Due to the limited precision of half-precision floating-point format (float16), the constant is rounded to `1.6181640625`.
-
 </section>
 
 <!-- /.notes -->

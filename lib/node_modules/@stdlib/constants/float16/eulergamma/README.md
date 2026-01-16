@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# FLOAT16_EULER_GAMMA
+# FLOAT16_EULERGAMMA
 
 > The [Euler–Mascheroni constant][eulergamma].
 
@@ -43,15 +43,15 @@ The [Euler–Mascheroni constant][eulergamma] `γ` is defined as the limiting di
 ## Usage
 
 ```javascript
-var FLOAT16_EULER_GAMMA = require( '@stdlib/constants/float16/eulergamma' );
+var FLOAT16_EULERGAMMA = require( '@stdlib/constants/float16/eulergamma' );
 ```
 
-#### FLOAT16_EULER_GAMMA
+#### FLOAT16_EULERGAMMA
 
 The [Euler–Mascheroni constant][eulergamma].
 
 ```javascript
-var bool = ( FLOAT16_EULER_GAMMA === 0.5771484375 );
+var bool = ( FLOAT16_EULERGAMMA === 0.5771484375 );
 // returns true
 ```
 
@@ -60,10 +60,6 @@ var bool = ( FLOAT16_EULER_GAMMA === 0.5771484375 );
 <!-- /.usage -->
 
 <section class="notes">
-
-## Notes
-
-The value is approximately `0.5772156649015328606...` in double precision. Due to the limited precision of half-precision floating-point format (float16), the constant is rounded to `0.5771484375`.
 
 </section>
 
@@ -76,9 +72,9 @@ The value is approximately `0.5772156649015328606...` in double precision. Due t
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var FLOAT16_EULER_GAMMA = require( '@stdlib/constants/float16/eulergamma' );
+var FLOAT16_EULERGAMMA = require( '@stdlib/constants/float16/eulergamma' );
 
-console.log( FLOAT16_EULER_GAMMA );
+console.log( FLOAT16_EULERGAMMA );
 // => 0.5771484375
 ```
 
