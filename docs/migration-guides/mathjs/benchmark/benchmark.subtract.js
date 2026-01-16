@@ -24,7 +24,6 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filledBy = require( '@stdlib/array/filled-by' );
-var format = require( '@stdlib/string/format' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
 var base = require( '@stdlib/number/float64/base/sub' );
 var format = require( '@stdlib/string/format' );
