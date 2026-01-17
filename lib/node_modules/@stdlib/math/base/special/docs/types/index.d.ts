@@ -2831,31 +2831,15 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var v = ns.cexp( new Complex128( 0.0, 0.0 ) );
-	* // returns <Complex128>
-	*
-	* var re = real( v );
-	* // returns 1.0
-	*
-	* var im = imag( v );
-	* // returns 0.0
+	* // returns <Complex128>[ 1.0, 0.0 ]
 	*
 	* @example
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var v = ns.cexp( new Complex128( 1.0, 0.0 ) );
-	* // returns <Complex128>
-	*
-	* var re = real( v );
-	* // returns ~2.718
-	*
-	* var im = imag( v );
-	* // returns 0.0
+	* // returns <Complex128>[ ~2.718, 0.0 ]
 	*/
 	cexp: typeof cexp;
 
@@ -2905,17 +2889,9 @@ interface Namespace {
 	*
 	* @example
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var v = ns.cfloor( new Complex128( 5.5, 3.3 ) );
-	* // returns <Complex128>
-	*
-	* var re = real( v );
-	* // returns 5.0
-	*
-	* var im = imag( v );
-	* // returns 3.0
+	* // returns <Complex128>[ 5.0, 3.0 ]
 	*/
 	cfloor: typeof cfloor;
 
