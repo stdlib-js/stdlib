@@ -122,7 +122,7 @@ The function has the following parameters:
 The function accepts the following options:
 
 -   **dims**: list of dimensions over which to perform operation.
--   **dtype**: output ndarray data type. Setting this option, overrides the output data type policy.
+-   **dtype**: output ndarray data type. Setting this option overrides the output data type policy.
 
 By default, the function returns an ndarray having a data type determined by the output data type policy. To override the default behavior, set the `dtype` option.
 

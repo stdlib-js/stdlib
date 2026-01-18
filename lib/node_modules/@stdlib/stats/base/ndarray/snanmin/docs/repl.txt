@@ -1,7 +1,7 @@
 
 {{alias}}( arrays )
     Computes the minimum value of a one-dimensional single-precision floating-
-    point ndarray, ignoring NaN values.
+    point ndarray, ignoring `NaN` values.
 
     If provided an empty ndarray, the function returns `NaN`.
 

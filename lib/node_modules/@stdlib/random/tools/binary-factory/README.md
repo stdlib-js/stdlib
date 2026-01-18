@@ -181,7 +181,7 @@ var v = random( [ 2, 2 ], 0.0, 1.0, {
 });
 // returns <ndarray>
 
-var dt = getDType( v );
+var dt = String( getDType( v ) );
 // returns 'generic'
 ```
 

@@ -176,11 +176,11 @@ for ( i = 0; i < 79; i++ ) {
 Computes the nth [Fibonacci number][fibonacci-number].
 
 ```c
-double out = stdlib_base_fibonacci( 0 );
-// returns 0
+double out = stdlib_base_fibonacci( 0.0 );
+// returns 0.0
 
-out = stdlib_base_fibonacci( 1 );
-// returns 1
+out = stdlib_base_fibonacci( 1.0 );
+// returns 1.0
 ```
 
 The function accepts the following arguments:

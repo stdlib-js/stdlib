@@ -1,0 +1,124 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2025 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+/// <reference types="@stdlib/types"/>
+
+import { ndarray, typedndarray, Order, DataTypeMap } from '@stdlib/types/ndarray';
+
+/**
+* Interface defining "base" function options.
+*/
+interface BaseOptions {
+	/**
+	* Order in which input ndarray elements should be flattened.
+	*
+	* ## Notes
+	*
+	* -   The following orders are supported:
+	*
+	*     -   **row-major**: flatten in lexicographic order.
+	*     -   **column-major**: flatten in colexicographic order.
+	*     -   **same**: flatten according to the stated order of the input ndarray.
+	*     -   **any**: flatten according to the physical layout of the input ndarray data in memory, regardless of the stated order of the input ndarray.
+	*
+	* -   Default: 'row-major'.
+	*/
+	order?: Order | 'same' | 'any';
+}
+
+/**
+* Function options.
+*/
+type Options<U> = BaseOptions & {
+	/**
+	* Output ndarray data type.
+	*/
+	dtype: U;
+};
+
+/**
+* Returns a copy of an input ndarray where all dimensions of the input ndarray are flattened starting from a specified dimension.
+*
+* ## Notes
+*
+* -   The function **always** returns a copy of input ndarray data, even when an input ndarray already has the desired number of dimensions.
+* -   By default, the function returns an ndarray having the same data type as a provided input ndarray.
+*
+* @param x - input ndarray
+* @param dim - dimension to start flattening from
+* @param options - function options
+* @param options.order - order in which input ndarray elements should be flattened
+* @param options.dtype - output ndarray data type
+* @returns output ndarray
+*
+* @example
+* var array = require( '@stdlib/ndarray/array' );
+* var shape = require( '@stdlib/ndarray/shape' );
+*
+* var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
+* // returns <ndarray>
+*
+* var shx = shape( x );
+* // returns [ 3, 1, 2 ]
+*
+* var y = flattenFrom( x, 1 );
+* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+*
+* var shy = shape( y );
+* // returns [ 3, 2 ]
+*/
+declare function flattenFrom<T extends ndarray>( x: T, dim: number, options?: BaseOptions ): T;
+
+/**
+* Returns a copy of an input ndarray where all dimensions of the input ndarray are flattened starting from a specified dimension.
+*
+* ## Notes
+*
+* -   The function **always** returns a copy of input ndarray data, even when an input ndarray already has the desired number of dimensions.
+*
+* @param x - input ndarray
+* @param dim - dimension to start flattening from
+* @param options - function options
+* @param options.order - order in which input ndarray elements should be flattened
+* @param options.dtype - output ndarray data type
+* @returns output ndarray
+*
+* @example
+* var array = require( '@stdlib/ndarray/array' );
+* var shape = require( '@stdlib/ndarray/shape' );
+*
+* var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
+* // returns <ndarray>
+*
+* var shx = shape( x );
+* // returns [ 3, 1, 2 ]
+*
+* var y = flattenFrom( x, 1 );
+* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+*
+* var shy = shape( y );
+* // returns [ 3, 2 ]
+*/
+declare function flattenFrom<T = unknown, U extends keyof DataTypeMap<T> = 'generic'>( x: typedndarray<T>, dim: number, options: Options<U> ): DataTypeMap<T>[U];
+
+
+// EXPORTS //
+
+export = flattenFrom;

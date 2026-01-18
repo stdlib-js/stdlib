@@ -34,10 +34,10 @@ declare class Gumbel {
 	* var gumbel = new Gumbel( 0.0, 1.0 );
 	*
 	* var y = gumbel.cdf( 0.8 );
-	* // returns ~0.295
+	* // returns ~0.638
 	*
 	* var mu = gumbel.mean;
-	* // returns ~1.577
+	* // returns ~0.577
 	*/
 	constructor( mu: number, beta: number );
 
