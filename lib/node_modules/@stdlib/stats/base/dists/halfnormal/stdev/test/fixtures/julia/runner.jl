@@ -36,17 +36,12 @@ julia> sigma = rand( 1000 );
 julia> gen( sigma, \"data.json\" );
 ```
 """
-# Get the filename:
-file = @__FILE__
-
-# Extract the directory in which this file resides:
-dir = dirname(file)
-
 function gen( sigma, name )
 	z = Array{Float64}( undef, length(sigma) )
 	for i in eachindex(sigma)
 		z[i] = sqrt( var( HalfNormal( sigma[i] ) ) )
 	end
+
 	# Store data to be written to file as a collection:
 	data = Dict([
 		("sigma", sigma),
@@ -54,15 +49,21 @@ function gen( sigma, name )
 	]);
 
 	# Based on the script directory, create an output filepath:
-	filepath = joinpath(dir, name)
+	filepath = joinpath( dir, name )
 
 	# Write the data to the output filepath as JSON:
-	open(filepath, "w") do outfile
-		write(outfile, JSON.json(data))
-		write(outfile, "\n")
-	end
+	outfile = open( filepath, "w" );
+	write( outfile, JSON.json(data) );
+	write( outfile, "\n" );
+	close( outfile );
 end
 
+# Get the filename:
+file = @__FILE__;
+
+# Extract the directory in which this file resides:
+dir = dirname( file );
+
 # Generate fixtures:
-sigma = ( rand(50) .* 20.0 ) .+ 2.0
-gen(sigma, "data.json")
+sigma = ( rand(50) .* 20.0 ) .+ 2.0;
+gen( sigma, "data.json" );
