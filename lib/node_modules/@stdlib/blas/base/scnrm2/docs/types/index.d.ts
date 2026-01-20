@@ -30,62 +30,62 @@ interface Routine {
 	* Computes the L2-norm of a complex single-precision floating-point vector.
 	*
 	* @param N - number of indexed elements
-	* @param cx - input array
-	* @param strideX - stride length for `cx`
+	* @param x - input array
+	* @param strideX - stride length for `x`
 	* @returns L2-norm
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	*
-	* var cx = new Complex64Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
+	* var x = new Complex64Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
 	*
-	* var norm = scnrm2( 4, cx, 1 );
+	* var norm = scnrm2( 4, x, 1 );
 	* // returns ~0.8
 	*/
-	( N: number, cx: Complex64Array, strideX: number ): number;
+	( N: number, x: Complex64Array, strideX: number ): number;
 
 	/**
 	* Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param cx - input array
-	* @param strideX - stride length for `cx`
-	* @param offsetX - starting index for `cx`
+	* @param x - input array
+	* @param strideX - stride length for `x`
+	* @param offsetX - starting index for `x`
 	* @returns L2-norm
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	*
-	* var cx = new Complex64Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
+	* var x = new Complex64Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
 	*
-	* var norm = scnrm2.ndarray( 4, cx, 1, 0 );
+	* var norm = scnrm2.ndarray( 4, x, 1, 0 );
 	* // returns ~0.8
 	*/
-	ndarray( N: number, cx: Complex64Array, strideX: number, offsetX: number ): number;
+	ndarray( N: number, x: Complex64Array, strideX: number, offsetX: number ): number;
 }
 
 /**
 * Computes the L2-norm of a complex single-precision floating-point vector.
 *
 * @param N - number of indexed elements
-* @param cx - input array
-* @param strideX - stride length for `cx`
+* @param x - input array
+* @param strideX - stride length for `x`
 * @returns L2-norm
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 *
-* var cx = new Complex64Array( [ 0.3, 0.1, 5.0, 8.0, 0.5, 0.0, 6.0, 9.0, 0.0, 0.5, 8.0, 3.0, 0.0, 0.2, 9.0, 4.0 ] );
+* var x = new Complex64Array( [ 0.3, 0.1, 5.0, 8.0, 0.5, 0.0, 6.0, 9.0, 0.0, 0.5, 8.0, 3.0, 0.0, 0.2, 9.0, 4.0 ] );
 *
-* var norm = scnrm2( 4, cx, 2 );
+* var norm = scnrm2( 4, x, 2 );
 * // returns ~0.8
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 *
-* var cx = new Complex64Array( [ 0.3, 0.1, 5.0, 8.0, 0.5, 0.0, 6.0, 9.0, 0.0, 0.5, 8.0, 3.0, 0.0, 0.2, 9.0, 4.0 ] );
+* var x = new Complex64Array( [ 0.3, 0.1, 5.0, 8.0, 0.5, 0.0, 6.0, 9.0, 0.0, 0.5, 8.0, 3.0, 0.0, 0.2, 9.0, 4.0 ] );
 *
-* var norm = scnrm2.ndarray( 4, cx, 2, 0 );
+* var norm = scnrm2.ndarray( 4, x, 2, 0 );
 * // returns ~0.8
 */
 declare var scnrm2: Routine;

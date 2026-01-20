@@ -36,7 +36,7 @@ interface Options {
 *
 * @example
 * var obj = { 'a': { 'b': { 'c': 'd' } } };
-* var bool = deepHasProp( obj );
+* var bool = deepHasProp( obj, 'a' );
 */
 type HasFunction = ( value: any ) => boolean;
 
@@ -114,7 +114,7 @@ interface DeepHasProp {
 	* @returns function which tests whether an object has a nested key path
 	*
 	* @example
-	* var has = factory( 'a/b/c', {
+	* var has = deepHasProp.factory( 'a/b/c', {
 	*     'sep': '/'
 	* });
 	*/

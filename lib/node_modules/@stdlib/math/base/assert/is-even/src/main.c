@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_even.h"
 #include "stdlib/math/base/assert/is_integer.h"
+#include <stdbool.h>
 
 /**
 * Tests if a finite numeric value is an even number.

@@ -76,21 +76,17 @@ y = mylogpmf( 12.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var logpmf = require( '@stdlib/stats/base/dists/degenerate/logpmf' );
 
-var mu;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = discreteUniform( 100, 0, 5, opts );
+var mu = discreteUniform( 100, 0, 5, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = round( randu()*5.0 );
-    mu = round( randu()*5.0 );
-    y = logpmf( x, mu );
-    console.log( 'x: %d, µ: %d, ln(P(X=x;µ)): %d', x, mu, y );
-}
+logEachMap( 'x: %d, µ: %d, ln(P(X=x;µ)): %0.4f', x, mu, logpmf );
 ```
 
 </section>

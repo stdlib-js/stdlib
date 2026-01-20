@@ -156,7 +156,7 @@ float stdlib_base_maxf( const float x, const float y );
 
 <!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<section class="notes">    
+<section class="notes">
 
 </section>
 
@@ -164,7 +164,7 @@ float stdlib_base_maxf( const float x, const float y );
 
 <!-- C API usage examples. -->
 
-<section class="examples">   
+<section class="examples">
 
 ### Examples
 

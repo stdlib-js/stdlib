@@ -23,18 +23,18 @@
 * Applies a plane rotation.
 *
 * @param N        number of indexed elements
-* @param CX       first input array
-* @param strideX  CX stride length
-* @param offsetX  starting index for CX
-* @param CY       second input array
-* @param strideY  CY stride length
-* @param offsetY  starting index for CY
+* @param X       first input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y       second input array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
 * @param c        cosine of the angle of rotation
 * @param s        sine of the angle of rotation
 */
-void API_SUFFIX(c_csrot_ndarray)( const CBLAS_INT N, void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *CY, const CBLAS_INT strideY, const CBLAS_INT offsetY, const float c, const float s ) {
-	float *x = (float *)CX;
-	float *y = (float *)CY;
+void API_SUFFIX(c_csrot_ndarray)( const CBLAS_INT N, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, const float c, const float s ) {
+	float *x = (float *)X;
+	float *y = (float *)Y;
 	CBLAS_INT ix;
 	CBLAS_INT iy;
 	CBLAS_INT sx;

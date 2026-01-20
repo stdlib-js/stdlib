@@ -1,0 +1,33 @@
+
+{{alias}}( arrays )
+    Computes the dot product of two one-dimensional ndarrays.
+
+    If provided an empty input ndarray, the function returns `0.0`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing two one-dimensional input ndarrays.
+
+    Returns
+    -------
+    out: number
+        The dot product.
+
+    Examples
+    --------
+    > var xbuf = [ 4.0, 2.0, -3.0, 5.0, -1.0 ];
+    > var ybuf = [ 2.0, 6.0, -1.0, -4.0, 8.0 ];
+    > var dt = 'generic';
+    > var sh = [ xbuf.length ];
+    > var st = [ 1 ];
+    > var oo = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
+    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, st, oo, ord );
+    > {{alias}}( [ x, y ] )
+    -5.0
+
+    See Also
+    --------
+

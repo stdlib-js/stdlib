@@ -64,5 +64,80 @@
     "trig",
     "trigonometry",
     "radians"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "cosm1",
+      "alias": "cosm1",
+      "pkg_desc": "compute `cos(x) - 1` where `cos` is the cosine of a number (in radians)",
+      "desc": "computes `cos(x) - 1` where `cos` is the cosine of a number (in radians)",
+      "short_desc": "cos(x) - 1",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -50,
+              50
+            ]
+          },
+          "example_values": [
+            -2.9,
+            0.41,
+            7.6,
+            -0.37,
+            3.2,
+            -11.8,
+            1.2,
+            -6.4,
+            0,
+            9.7,
+            -4.5,
+            5.3,
+            -0.02,
+            1.9,
+            -2.2,
+            18.1,
+            -13.6,
+            2.8,
+            -7.9,
+            0.77
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "result",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "cos",
+        "cosm1",
+        "cosine"
+      ],
+      "extra_keywords": [
+        "math.cos"
+      ]
+    }
+  }
 }

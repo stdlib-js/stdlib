@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Returns the alternative hypothesis string associated with a supported Z-test
+    alternative hypothesis value.
+
+    Parameters
+    ----------
+    value: any
+        Alternative hypothesis value.
+
+    Returns
+    -------
+    out: string|null
+        Alternative hypothesis string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'greater' )
+    'greater'
+    > out = {{alias}}( {{alias:@stdlib/stats/base/ztest/alternative-str2enum}}( 'greater' ) )
+    'greater'
+
+    See Also
+    --------
+

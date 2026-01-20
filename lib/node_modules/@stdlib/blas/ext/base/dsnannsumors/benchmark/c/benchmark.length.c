@@ -97,7 +97,7 @@ static float rand_float( void ) {
 static double benchmark1( int iterations, int len ) {
 	double elapsed;
 	float x[ len ];
-	int64_t n;
+	CBLAS_INT n;
 	double v;
 	double t;
 	int i;
@@ -113,6 +113,7 @@ static double benchmark1( int iterations, int len ) {
 	n = 0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		/* cppcheck-suppress uninitvar */
 		v = stdlib_strided_dsnannsumors( len, x, 1, &n );
 		if ( v != v || n < 0  ) {
 			printf( "should not return NaN\n" );
@@ -136,7 +137,7 @@ static double benchmark1( int iterations, int len ) {
 static double benchmark2( int iterations, int len ) {
 	double elapsed;
 	float x[ len ];
-	int64_t n;
+	CBLAS_INT n;
 	double v;
 	double t;
 	int i;
@@ -152,6 +153,7 @@ static double benchmark2( int iterations, int len ) {
 	n = 0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
+		/* cppcheck-suppress uninitvar */
 		v = stdlib_strided_dsnannsumors_ndarray( len, x, 1, 0, &n );
 		if ( v != v || n < 0  ) {
 			printf( "should not return NaN\n" );

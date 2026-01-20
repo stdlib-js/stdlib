@@ -24,6 +24,7 @@
 type Policies = [
 	'same',
 	'promoted',
+	'accumulation',
 	'boolean',
 	'boolean_and_generic',
 	'signed_integer',
@@ -42,7 +43,14 @@ type Policies = [
 	'real',
 	'numeric',
 	'numeric_and_generic',
-	'default'
+	'integer_index',
+	'integer_index_and_generic',
+	'boolean_index',
+	'boolean_index_and_generic',
+	'mask_index',
+	'mask_index_and_generic',
+	'default',
+	'default_index'
 ];
 
 /**
@@ -54,6 +62,7 @@ type Policies = [
 *
 *     -   `same`: return the same data type.
 *     -   `promoted`: return a promoted data type.
+*     -   `accumulation`: return a data type amenable to accumulation.
 *     -   `boolean`: return a boolean data type.
 *     -   `boolean_and_generic`: return a boolean or "generic" data type.
 *     -   `signed_integer`: return a signed integer data type.
@@ -72,7 +81,14 @@ type Policies = [
 *     -   `real_and_generic`: return a real-valued or "generic" data type.
 *     -   `numeric`: return a numeric data type.
 *     -   `numeric_and_generic`: return a numeric or "generic" data type.
+*     -   `integer_index`: return an integer index data type.
+*     -   `integer_index_and_generic`: return an integer index or "generic" data type.
+*     -   `boolean_index`: return a boolean index data type.
+*     -   `boolean_index_and_generic`: return a boolean index or "generic" data type.
+*     -   `mask_index`: return a mask index data type.
+*     -   `mask_index_and_generic`: return a mask index or "generic" data type.
 *     -   `default`: return the default data type.
+*     -   `default_index`: return the default index data type.
 *
 * @returns list of data type policies
 *

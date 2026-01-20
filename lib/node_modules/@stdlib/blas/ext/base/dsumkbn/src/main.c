@@ -66,6 +66,7 @@ double API_SUFFIX(stdlib_strided_dsumkbn_ndarray)( const CBLAS_INT N, const doub
 	double v;
 	double t;
 	double c;
+	int flg;
 
 	if ( N <= 0 ) {
 		return 0.0;
@@ -74,9 +75,28 @@ double API_SUFFIX(stdlib_strided_dsumkbn_ndarray)( const CBLAS_INT N, const doub
 	if ( strideX == 0 ) {
 		return N * X[ ix ];
 	}
-	sum = 0.0;
+	v = X[ ix ];
+	ix += strideX;
+	sum = v;
+	flg = 0;
+
+	// In order to preserve the sign of zero which can be lost during compensated summation below, find the first non-zero element...
+	if ( sum == 0.0 ) {
+		for ( i = 1; i < N; i++ ) {
+			v = X[ ix ];
+			if ( v != 0.0 ) {
+				flg = 1;
+				break;
+			}
+			sum += v;
+			ix += strideX;
+		}
+	} else {
+		flg = 1;
+		i = 1;
+	}
 	c = 0.0;
-	for ( i = 0; i < N; i++ ) {
+	for ( ; i < N; i++ ) {
 		v = X[ ix ];
 		t = sum + v;
 		if ( stdlib_base_abs( sum ) >= stdlib_base_abs( v ) ) {
@@ -87,5 +107,5 @@ double API_SUFFIX(stdlib_strided_dsumkbn_ndarray)( const CBLAS_INT N, const doub
 		sum = t;
 		ix += strideX;
 	}
-	return sum + c;
+	return ( flg == 1 ) ? sum + c : sum;
 }

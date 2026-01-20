@@ -1193,7 +1193,7 @@ declare function zerosLike( x: ndarray, options: GenericOptions ): genericndarra
 * // returns [ 2, 2 ]
 *
 * var dt = x.dtype;
-* // returns 'generic'
+* // returns 'float64'
 *
 * var y = zerosLike( x );
 * // returns <ndarray>
@@ -1202,7 +1202,7 @@ declare function zerosLike( x: ndarray, options: GenericOptions ): genericndarra
 * // returns [ 2, 2 ]
 *
 * dt = y.dtype;
-* // returns 'generic'
+* // returns 'float64'
 */
 declare function zerosLike( x: ndarray, options?: Options | OptionsWithDType ): typedndarray<number>;
 

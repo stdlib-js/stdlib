@@ -32,7 +32,7 @@ var reExtendedLengthPath = require( '@stdlib/regexp/extended-length-path' );
 
 #### reExtendedLengthPath()
 
-Returns a [regular expression][regexp] to detect an [extended-length path][extended-length-path] (i.e., a Windows path which begins with the characters `\\?\`). 
+Returns a [regular expression][regexp] to detect an [extended-length path][extended-length-path] (i.e., a Windows path which begins with the characters `\\?\`).
 
 ```javascript
 var RE = reExtendedLengthPath();

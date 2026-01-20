@@ -34,12 +34,12 @@ static const float sbig = 1.32348898E-23f;
 * Computes the L2-norm of a complex single-precision floating-point vector using alternative indexing semantics.
 *
 * @param N         number of indexed elements
-* @param CX        input array
-* @param strideX   CX stride length
-* @param offsetX   starting index for CX
+* @param X         input array
+* @param strideX   X stride length
+* @param offsetX   starting index for X
 */
-float API_SUFFIX(c_scnrm2_ndarray)( const CBLAS_INT N, const void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	const float *x = (float *)CX;
+float API_SUFFIX(c_scnrm2_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	const float *x = (float *)X;
 	CBLAS_INT sx;
 	CBLAS_INT ix;
 	bool notbig;
@@ -58,7 +58,7 @@ float API_SUFFIX(c_scnrm2_ndarray)( const CBLAS_INT N, const void *CX, const CBL
 	}
 	sx = strideX * 2;
 	ix = offsetX * 2;
-	
+
 	// Compute the sum of squares using 3 accumulators--`abig` (sum of squares scaled down to avoid overflow), `asml` (sum of squares scaled up to avoid underflow), `amed` (sum of squares that do not require scaling)--and thresholds and multipliers--`tbig` (values bigger than this are scaled down by `sbig`) and `tsml` (values smaller than this are scaled up by `ssml`)...
 	notbig = true;
 	sumsq = 0.0f;

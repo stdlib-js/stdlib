@@ -49,19 +49,19 @@
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
 ! @param {integer} N - number of indexed elements
-! @param {complex<double>} za - scalar constant
-! @param {Array<complex<double>>} zx - input array
-! @param {integer} strideX - `zx` stride length
+! @param {complex<double>} alpha - scalar constant
+! @param {Array<complex<double>>} x - input array
+! @param {integer} strideX - `x` stride length
 !<
-subroutine zscal( N, za, zx, strideX )
+subroutine zscal( N, alpha, x, strideX )
   implicit none
   ! ..
   ! Scalar arguments:
-  complex(kind=kind(0.0d0)) :: za
+  complex(kind=kind(0.0d0)) :: alpha
   integer :: strideX, N
   ! ..
   ! Array arguments:
-  complex(kind=kind(0.0d0)) :: zx(*)
+  complex(kind=kind(0.0d0)) :: x(*)
   ! ..
   ! Local scalars:
   integer :: ix, i
@@ -72,12 +72,12 @@ subroutine zscal( N, za, zx, strideX )
   ! ..
   if ( strideX == 1 ) then
     do i = 1, N
-      zx(i) = za * zx(i)
+      x(i) = alpha * x(i)
     end do
   else
     ix = 1
     do i = 1, N
-      zx(ix) = za * zx(ix)
+      x(ix) = alpha * x(ix)
       ix = ix + strideX
     end do
   end if

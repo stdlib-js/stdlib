@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Computes the sum of all elements in a one-dimensional ndarray using an
+    improved Kahan–Babuška algorithm.
+
+    If provided an empty ndarray, the function returns `0.0`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: number
+        Sum.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, 2.0, 3.0 ];
+    > var dt = 'generic';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > {{alias}}( [ x ] )
+    6.0
+
+    See Also
+    --------
+

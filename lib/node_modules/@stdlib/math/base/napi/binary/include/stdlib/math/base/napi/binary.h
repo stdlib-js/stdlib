@@ -20,6 +20,7 @@
 #define STDLIB_MATH_BASE_NAPI_BINARY_H
 
 // NOTE: please keep in alphabetical order...
+#include "stdlib/math/base/napi/binary/bb_b.h"
 #include "stdlib/math/base/napi/binary/cc_c.h"
 #include "stdlib/math/base/napi/binary/cf_c.h"
 #include "stdlib/math/base/napi/binary/ci_c.h"
@@ -33,7 +34,11 @@
 #include "stdlib/math/base/napi/binary/ii_d.h"
 #include "stdlib/math/base/napi/binary/ii_f.h"
 #include "stdlib/math/base/napi/binary/ii_i.h"
+#include "stdlib/math/base/napi/binary/kk_k.h"
 #include "stdlib/math/base/napi/binary/ll_d.h"
+#include "stdlib/math/base/napi/binary/ss_s.h"
+#include "stdlib/math/base/napi/binary/tt_t.h"
+#include "stdlib/math/base/napi/binary/uu_u.h"
 #include "stdlib/math/base/napi/binary/zd_z.h"
 #include "stdlib/math/base/napi/binary/zi_z.h"
 #include "stdlib/math/base/napi/binary/zz_z.h"
