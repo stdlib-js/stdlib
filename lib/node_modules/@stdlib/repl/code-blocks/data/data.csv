@@ -242,7 +242,7 @@ base.ceilf,"var y = base.ceilf( 3.14 )\ny = base.ceilf( -4.2 )\ny = base.ceilf( 
 base.ceiln,"var y = base.ceiln( 3.14159, -2 )\ny = base.ceiln( 3.14159, 0 )\ny = base.ceiln( 12368.0, 3 )\n"
 base.ceilsd,"var y = base.ceilsd( 3.14159, 5, 10 )\ny = base.ceilsd( 3.14159, 1, 10 )\ny = base.ceilsd( 12368.0, 2, 10 )\ny = base.ceilsd( 0.0313, 2, 2 )\n"
 base.cexp,"var y = base.cexp( new Complex128( 0.0, 0.0 ) )\ny = base.cexp( new Complex128( 0.0, 1.0 ) )\n"
-base.cflipsign,"var v = base.cflipsign( new Complex128( -4.2, 5.5 ), -9.0 )\nvar re = real( v )\nvar im = imag( v )\n"
+base.cflipsign,"var v = base.cflipsign( new Complex128( -4.2, 5.5 ), -9.0 )\n"
 base.cflipsignf,"var v = base.cflipsignf( new Complex64( -4.0, 5.0 ), -9.0 )\n"
 base.cfloor,"var v = base.cfloor( new Complex128( 5.5, 3.3 ) )\n"
 base.cfloorn,"var v = base.cfloorn( new Complex128( 5.555, -3.333 ), -2 )\n"
