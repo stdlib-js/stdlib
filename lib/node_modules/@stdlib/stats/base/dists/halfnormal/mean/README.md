@@ -70,7 +70,7 @@ y = mean( 0.5 );
 // returns ~0.399
 ```
 
-If provided `NaN` as any argument, the function returns `NaN`.
+If provided `NaN`, the function returns `NaN`.
 
 ```javascript
 var y = mean( NaN );

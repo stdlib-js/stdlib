@@ -39,7 +39,6 @@ import { Complex128 } from '@stdlib/types/complex';
 *
 * var v = cexp( new Complex128( 1.0, 0.0 ) );
 * // returns <Complex128>[ ~2.718, 0.0 ]
-*
 */
 declare function cexp( z: Complex128 ): Complex128;
 

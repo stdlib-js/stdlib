@@ -100,6 +100,7 @@ static double benchmark( int iterations, int len ) {
 	double v;
 	double t;
 	int i;
+
 	x = (double *) malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_double() * 20000.0 ) - 10000.0;

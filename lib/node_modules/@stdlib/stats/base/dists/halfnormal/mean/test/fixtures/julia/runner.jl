@@ -21,13 +21,19 @@ import JSON
 """
 	gen( sigma, name )
 
-Generate fixture data for the mean of a half-normal distribution
-and write to file.
+Generate fixture data and write to file.
 
 # Arguments
 
-* `sigma::AbstractVector{<:Real}`: scale parameter (σ > 0)
+* `sigma`: scale parameter
 * `name::AbstractString`: output filename
+
+# Examples
+
+``` julia
+julia> sigma = rand( 1000 );
+julia> gen( sigma, \"data.json\" );
+```
 """
 function gen( sigma, name )
 	c = sqrt( 2.0 / π )
@@ -41,17 +47,28 @@ function gen( sigma, name )
 		end
 	end
 
-	data = Dict(
-		"sigma" => sigma,
-		"expected" => expected
-	)
+	# Store data to be written to file as a collection:
+	data = Dict([
+		("sigma", sigma),
+		("expected", z)
+	]);
 
-	open( name, "w" ) do io
-		write( io, JSON.json( data ) )
-		write( io, "\n" )
-	end
+	# Based on the script directory, create an output filepath:
+	filepath = joinpath( dir, name )
+
+	# Write the data to the output filepath as JSON:
+	outfile = open( filepath, "w" );
+	write( outfile, JSON.json(data) );
+	write( outfile, "\n" );
+	close( outfile );
 end
 
+# Get the filename:
+file = @__FILE__;
+
+# Extract the directory in which this file resides:
+dir = dirname( file );
+
 # Generate fixtures:
-sigma = rand( 1000 ) .* 5.0
-gen( sigma, "data.json" )
+sigma = rand( 1000 ) .* 5.0;
+gen( sigma, "data.json" );

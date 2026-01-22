@@ -30,11 +30,11 @@
 *
 * @example
 * var y = mean( 1.0 );
-* // returns ~0.7978845608
+* // returns ~0.79788
 *
 * @example
 * var y = mean( 5.0 );
-* // returns ~3.989422804
+* // returns ~3.98942
 *
 * @example
 * var y = mean( NaN );

@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { float64ndarray } from '@stdlib/types/ndarray';
+import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the mean and standard deviation of a one-dimensional double-precision floating-point ndarray.
@@ -32,7 +32,6 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 * var Float64Array = require( '@stdlib/array/float64' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var dmeanstdev = require( '@stdlib/stats/base/ndarray/dmeanstdev' );
 *
 * var opts = {
@@ -41,16 +40,15 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 *
 * var xbuf = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 * var x = new ndarray( opts.dtype, xbuf, [ 4 ], [ 2 ], 1, 'row-major' );
+*
 * var out = new ndarray( opts.dtype, new Float64Array( 2 ), [ 2 ], [ 1 ], 0, 'row-major' );
+*
 * var correction = scalar2ndarray( 1.0, opts );
 *
 * var v = dmeanstdev( [ x, out, correction ] );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( v );
-* // returns <Float64Array>[ ~1.25, ~2.5 ]
+* // returns <ndarray>[ ~1.25, ~2.5 ]
 */
-declare function dmeanstdev( arrays: [ float64ndarray, float64ndarray, float64ndarray ] ): float64ndarray;
+declare function dmeanstdev<T extends typedndarray<number> = typedndarray<number>>( arrays: [ float64ndarray, float64ndarray, T ] ): float64ndarray;
 
 
 // EXPORTS //
