@@ -20,11 +20,11 @@ limitations under the License.
 
 # Kurtosis
 
-> [Half-normal][halfnormal-distribution] distribution [excess kurtosis][kurtosis].
+> [Half-normal][half-normal-distribution] distribution [excess kurtosis][kurtosis].
 
 <section class="intro">
 
-The [excess kurtosis][kurtosis] of a [half-normal][halfnormal-distribution] distribution with scale `sigma > 0` is
+The [excess kurtosis][kurtosis] of a [half-normal][half-normal-distribution] distribution with scale `sigma > 0` is
 
 <!-- <equation class="equation" label="eq:halfnormal_kurtosis" align="center" raw="\gamma_2 = \frac{8(\pi-3)}{(\pi-2)^2}" alt="Excess kurtosis for a half-normal distribution."> -->
 
@@ -53,7 +53,7 @@ var kurtosis = require( '@stdlib/stats/base/dists/halfnormal/kurtosis' );
 
 #### kurtosis( sigma )
 
-Returns the [excess kurtosis][kurtosis] of a [half-normal][halfnormal-distribution] distribution with scale parameter `sigma`.
+Returns the [excess kurtosis][kurtosis] of a [half-normal][half-normal-distribution] distribution with scale parameter `sigma`.
 
 ```javascript
 var x = kurtosis( 1.0 );
@@ -128,7 +128,7 @@ logEachMap( 'σ: %0.4f, Kurt(X;σ): %0.4f', sigma, kurtosis );
 
 #### stdlib_base_dists_halfnormal_kurtosis( sigma )
 
-Returns the [excess kurtosis][kurtosis] of a [half-normal][halfnormal-distribution] distribution with scale parameter `sigma`.
+Returns the [excess kurtosis][kurtosis] of a [half-normal][half-normal-distribution] distribution with scale parameter `sigma`.
 
 ```c
 double out = stdlib_base_dists_halfnormal_kurtosis( 1.0 );
@@ -204,7 +204,7 @@ int main( void ) {
 
 <section class="links">
 
-[halfnormal-distribution]: https://en.wikipedia.org/wiki/Half-normal_distribution
+[half-normal-distribution]: https://en.wikipedia.org/wiki/Half-normal_distribution
 
 [kurtosis]: https://en.wikipedia.org/wiki/Kurtosis
 
