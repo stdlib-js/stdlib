@@ -18,7 +18,8 @@
 
 #include "stdlib/stats/base/dists/halfnormal/kurtosis.h"
 #include "stdlib/math/base/assert/is_nan.h"
-#include "stdlib/constants/float64/pi.h"
+
+static const double KURTOSIS = 0.8691773036059736; // 8*(π-3) / (π-2)²
 
 /**
 * Returns the excess kurtosis of a half-normal distribution with scale parameter `sigma`.
@@ -37,5 +38,5 @@ double stdlib_base_dists_halfnormal_kurtosis( const double sigma ) {
 	) {
 		return 0.0 / 0.0; // NaN
 	}
-	return ( 8.0 * ( STDLIB_CONSTANT_FLOAT64_PI - 3.0 ) ) / ( ( STDLIB_CONSTANT_FLOAT64_PI - 2.0 ) * ( STDLIB_CONSTANT_FLOAT64_PI - 2.0 ) );
+	return KURTOSIS;
 }
