@@ -1,6 +1,5 @@
 {
   "name": "stdlib-tfjs-benchmarks",
-  "private": true,
   "version": "0.0.0",
   "description": "Tensorflow.js benchmarks.",
   "license": "Apache-2.0",
@@ -16,7 +15,8 @@
   ],
   "main": "./package.json",
   "directories": {
-    "benchmark": "./benchmark"
+    "benchmark": "./benchmark",
+    "data": "./data"
   },
   "scripts": {
     "bench": "make benchmark"
@@ -29,11 +29,11 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "devDependencies": {},
   "dependencies": {
     "@tensorflow/tfjs": "^4.20.0",
     "@tensorflow/tfjs-node": "^4.20.0"
   },
+  "devDependencies": {},
   "engines": {},
   "os": [
     "aix",
