@@ -168,6 +168,19 @@ console.log( v );
 
 <!-- /.examples -->
 
+* * *
+
+<section class="references">
+
+## References
+
+-   Welford, B. P. 1962. "Note on a Method for Calculating Corrected Sums of Squares and Products." _Technometrics_ 4 (3). Taylor & Francis: 419–20. doi:[10.1080/00401706.1962.10490022][@welford:1962a].
+-   van Reeken, A. J. 1968. "Letters to the Editor: Dealing with Neely's Algorithms." _Communications of the ACM_ 11 (3): 149–50. doi:[10.1145/362929.362961][@vanreeken:1968a].
+
+</section>
+
+<!-- /.references -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -181,6 +194,10 @@ console.log( v );
 <section class="links">
 
 [standard-deviation]: https://en.wikipedia.org/wiki/Standard_deviation
+
+[@welford:1962a]: https://doi.org/10.1080/00401706.1962.10490022
+
+[@vanreeken:1968a]: https://doi.org/10.1145/362929.362961
 
 </section>
 

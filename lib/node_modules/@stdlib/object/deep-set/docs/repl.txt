@@ -30,20 +30,21 @@
 
     Examples
     --------
-    > var obj = { 'a': { 'b': { 'c': 'd' } } };
-    > var bool = {{alias}}( obj, 'a.b.c', 'beep' )
+    > var obj1 = { 'a': { 'b': { 'c': 'd' } } };
+    > var bool = {{alias}}( obj1, 'a.b.c', 'beep' )
     true
 
     // Specify an alternative separator via the sep option:
-    > obj = { 'a': { 'b': { 'c': 'd' } } };
-    > bool = {{alias}}( obj, 'a/b/c', 'beep', { 'sep': '/' } );
-    > obj
+    > var obj2 = { 'a': { 'b': { 'c': 'd' } } };
+    > bool = {{alias}}( obj2, 'a/b/c', 'beep', { 'sep': '/' } );
+    > obj2
     { 'a': { 'b': { 'c': 'beep' } } }
 
     // To create a key path which does not exist, set the create option to true:
-    > bool = {{alias}}( obj, 'a.e.c', 'boop', { 'create': true } );
-    > obj
-    { 'a': { 'b': { 'c': 'beep' }, 'e': { 'c': 'boop' } } }
+    > var obj3 = { 'a': { 'b': { 'c': 'd' } } };
+    > bool = {{alias}}( obj3, 'a.e.c', 'boop', { 'create': true } );
+    > obj3
+    { 'a': { 'b': { 'c': 'd' }, 'e': { 'c': 'boop' } } }
 
 
 {{alias}}.factory( path[, options] )
@@ -67,7 +68,7 @@
     Returns
     -------
     out: Function
-        Deep get function.
+        Deep set function.
 
     Examples
     --------
