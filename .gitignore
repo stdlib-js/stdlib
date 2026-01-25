@@ -197,6 +197,3 @@ jsconfig.json
 ####################
 CLAUDE.md
 GEMINI.md
-
-# Python virtual environments
-.venv/
