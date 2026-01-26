@@ -1,0 +1,66 @@
+
+{{alias}}( value )
+    16-bit half-precision floating-point number constructor.
+
+    Parameters
+    ----------
+    value: number
+        Numeric value.
+
+    Returns
+    -------
+    v: Float16
+        Half-precision floating-point number.
+
+    v.value: number
+        Read-only property returning the underlying value.
+
+    Examples
+    --------
+    > var x = new {{alias}}( 3.14 )
+    <Float16>
+    > x.value
+    3.140625
+
+
+{{alias}}.name
+    Constructor name.
+
+    Examples
+    --------
+    > var str = {{alias}}.name
+    'Float16'
+
+
+{{alias}}.BYTES_PER_ELEMENT
+    Size (in bytes) of the underlying value.
+
+    Returns
+    -------
+    s: integer
+        Size (in bytes) of the underlying value.
+
+    Examples
+    --------
+    > var s = {{alias}}.BYTES_PER_ELEMENT
+    2
+
+
+{{alias}}.prototype.BYTES_PER_ELEMENT
+    Size (in bytes) of the underlying value.
+
+    Returns
+    -------
+    s: integer
+        Size (in bytes) of the underlying value.
+
+    Examples
+    --------
+    > var x = new {{alias}}( 5.0 )
+    <Float16>
+    > var s = x.BYTES_PER_ELEMENT
+    2
+
+    See Also
+    --------
+

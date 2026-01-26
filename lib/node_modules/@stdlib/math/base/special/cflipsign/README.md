@@ -46,17 +46,10 @@ Returns a double-precision complex floating-point number with the same magnitude
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var v = cflipsign( new Complex128( -4.2, 5.5 ), -1.0 );
-// returns <Complex128>
+// returns <Complex128>[ 4.2, -5.5 ]
 
-var re = real( v );
-// returns 4.2
-
-var im = imag( v );
-// returns -5.5
 ```
 
 </section>

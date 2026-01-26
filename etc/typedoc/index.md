@@ -72,7 +72,7 @@ Thank you for being a part of our community! Your support is invaluable to us!
 -   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including [open office hours][stdlib-office-hours].
 -   [**Open Collective**][open-collective-stdlib]: financially support the project.
 -   [**Bluesky**][stdlib-bluesky]: follow us on social media.
--   [**Gitter**][stdlib-gitter]: chat with project maintainers and other community members.
+-   [**Zulip**][stdlib-zulip]: chat with project maintainers and other community members.
 
 ## Features
 
@@ -592,7 +592,7 @@ Copyright © 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-bluesky]: https://bsky.app/profile/stdlib.io
 
-[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [@stdlib/math/base/special]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/math/base/special
 
