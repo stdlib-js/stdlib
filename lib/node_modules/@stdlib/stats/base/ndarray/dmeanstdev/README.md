@@ -106,7 +106,6 @@ Computes the [arithmetic mean][arithmetic-mean] and [standard deviation][standar
 var Float64Array = require( '@stdlib/array/float64' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 var opts = {
     'dtype': 'float64'
@@ -114,15 +113,13 @@ var opts = {
 
 var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
 var x = new ndarray( opts.dtype, xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+
 var out = new ndarray( opts.dtype, new Float64Array( 2 ), [ 2 ], [ 1 ], 0, 'row-major' );
 
 var correction = scalar2ndarray( 1.0, opts );
 
 var v = dmeanstdev( [ x, out, correction ] );
-// returns <ndarray>
-
-var arr = ndarray2array( v );
-// returns <Float64Array>[ 2.5, ~1.2910 ]
+// returns <ndarray>[ 2.5, ~1.2910 ]
 ```
 
 The function has the following parameters:
@@ -142,7 +139,7 @@ The function has the following parameters:
 ## Notes
 
 -   If provided an empty one-dimensional ndarray, the computed [arithmetic mean][arithmetic-mean] and [standard deviation][standard-deviation] are equal to `NaN`.
--   If `N - c` is less than or equal to `0` (where `c` corresponds to the provided degrees of freedom adjustment), the computed [arithmetic mean][arithmetic-mean] and [standard deviation][standard-deviation] are equal to `NaN`.
+-   If `N - c` is less than or equal to `0` (where `N` corresponds to the number of elements in the input ndarray and `c` corresponds to the provided degrees of freedom adjustment), the computed [arithmetic mean][arithmetic-mean] and [standard deviation][standard-deviation] are equal to `NaN`.
 
 </section>
 
@@ -168,13 +165,14 @@ var opts = {
 
 var xbuf = discreteUniform( 10, -50, 50, opts );
 var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
-var out = new ndarray( opts.dtype, new Float64Array( 2 ), [ 2 ], [ 1 ], 0, 'row-major' );
-var correction = scalar2ndarray( 1.0, opts );
-
 console.log( ndarray2array( x ) );
 
+var out = new ndarray( opts.dtype, new Float64Array( 2 ), [ 2 ], [ 1 ], 0, 'row-major' );
+
+var correction = scalar2ndarray( 1.0, opts );
+
 var v = dmeanstdev( [ x, out, correction ] );
-console.log( v );
+console.log( ndarray2array( v ) );
 ```
 
 </section>

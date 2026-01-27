@@ -292,7 +292,7 @@ int main( void ) {
     double d = stdlib_strided_drss( N, x, strideX, y, strideY );
 
     // Print the result:
-    printf( "drss: %lf\n", d );
+    printf( "rss: %lf\n", d );
 
     // Specify index offsets:
     const int offsetX = 1;
@@ -302,7 +302,7 @@ int main( void ) {
     d = stdlib_strided_drss_ndarray( N, x, strideX, offsetX, y, strideY, offsetY );
 
     // Print the result:
-    printf( "drss: %lf\n", d );
+    printf( "rss: %lf\n", d );
 }
 ```
 
