@@ -109,7 +109,18 @@ jobs:
       # Generate list of changed Markdown files:
       - name: 'Find changed Markdown files'
         run: |
-          echo "files=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }} -G '<equation' | grep .md | tr '\n' ' ')" >> $GITHUB_OUTPUT
+          # Get Markdown files changed in the last 25 hours (to account for cron timing variance)
+          CHANGED_FILES=$(git log --since='25 hours ago' --name-only --diff-filter=AM --pretty=format: -- '*.md' | sort -u)
+
+          # Filter to only files that contain '<equation' tags
+          FILES=""
+          for file in $CHANGED_FILES; do
+            if [ -f "$file" ] && grep -q '<equation' "$file"; then
+              FILES="$FILES $file"
+            fi
+          done
+
+          echo "files=$FILES" >> $GITHUB_OUTPUT
         id: changed
 
       # Generate SVG equations:

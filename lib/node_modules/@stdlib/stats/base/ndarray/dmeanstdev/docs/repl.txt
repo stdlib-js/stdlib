@@ -14,20 +14,22 @@
         - a one-dimensional output ndarray to store the mean and standard
         deviation.
         - a zero-dimensional ndarray specifying the degrees of freedom
-        adjustment. Setting this to a value other than 0 has the effect of
-        adjusting the divisor during the calculation of the standard deviation
-        according to N-c where c corresponds to the provided degrees of freedom
+        adjustment. Providing a non-zero degrees of freedom adjustment has the
+        effect of adjusting the divisor during the calculation of the standard
+        deviation according to `N-c` where `N` is the number of elements in the
+        input ndarray and `c` corresponds to the provided degrees of freedom
         adjustment. When computing the standard deviation of a population,
-        setting this to 0 is the standard choice (i.e., the provided array
-        contains data constituting an entire population). When computing the
-        corrected sample standard deviation, setting this to 1 is the standard
-        choice (i.e., the provided array contains data sampled from a larger
-        population; this is commonly referred to as Bessel's correction).
+        setting this parameter to `0` is the standard choice (i.e., the provided
+        array contains data constituting an entire population). When computing
+        the corrected sample standard deviation, setting this parameter to `1`
+        is the standard choice (i.e., the provided array contains data sampled
+        from a larger population; this is commonly referred to as Bessel's
+        correction).
 
     Returns
     -------
     out: ndarray
-        An ndarray containing the mean and standard deviation.
+        Output ndarray.
 
     Examples
     --------
@@ -38,13 +40,13 @@
     > var ox = 0;
     > var ord = 'row-major';
     > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
-    > var o = new {{alias:@stdlib/array/float64}}( 2 );
-    > var out = new {{alias:@stdlib/ndarray/ctor}}( dt, o, [ 2 ], [ 1 ], ox, ord );
+    > var obuf = new {{alias:@stdlib/array/float64}}( 2 );
+    > var out = new {{alias:@stdlib/ndarray/ctor}}( dt, obuf, [ 2 ], [ 1 ], ox, ord );
     > var opts = { 'dtype': dt };
     > var correction = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
     > {{alias}}( [ x, out, correction ] );
-    > var arr = {{alias:@stdlib/ndarray/to-array}}( out )
-    <Float64Array>[ ~0.75, ~1.8930 ]
+    > out
+    <ndarray>[ ~0.75, ~1.8930 ]
 
     See Also
     --------
