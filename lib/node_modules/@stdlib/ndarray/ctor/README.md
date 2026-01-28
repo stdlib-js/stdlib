@@ -1632,7 +1632,7 @@ int64_t stdlib_ndarray_stride( const struct ndarray *arr, const int64_t i );
 
 Notes:
 
--   The function does perform bounds checking for the dimension index.
+-   The function does **not** perform bounds checking for the dimension index.
 
 #### stdlib_ndarray_stride_elements( \*arr, i )
 
@@ -1675,7 +1675,8 @@ int64_t stdlib_ndarray_stride_elements( const struct ndarray *arr, const int64_t
 
 Notes:
 
--   The function does perform bounds checking for the dimension index.
+-   The function does **not** perform bounds checking for the dimension index.
+-   The function assumes that the ndarray is **aligned** (i.e., the stride in bytes is a multiple of the number of bytes per ndarray element).
 
 #### stdlib_ndarray_strides( \*arr )
 

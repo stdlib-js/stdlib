@@ -433,6 +433,7 @@ int64_t stdlib_ndarray_stride( const struct ndarray *arr, const int64_t i ) {
 * ## Notes
 *
 * -   The function does not perform any sanity checks.
+* -   The function assumes that an ndarray is aligned (i.e., stride is a multiple of the number of bytes per ndarray element).
 *
 * @param arr  input ndarray
 * @param i    dimension index
