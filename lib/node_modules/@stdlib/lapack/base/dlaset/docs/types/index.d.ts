@@ -29,7 +29,7 @@ interface Routine {
 	/**
 	* Sets the off-diagonal elements and the diagonal elements of a double-precision floating-point matrix to specified values.
 	*
-	* @param order - storage layout of `A` and `B`
+	* @param order - storage layout of `A`
 	* @param uplo - specifies whether to set the upper or lower triangular/trapezoidal part of matrix `A`
 	* @param M - number of rows in matrix `A`
 	* @param N - number of columns in matrix `A`
@@ -77,7 +77,7 @@ interface Routine {
 /**
 * Sets the off-diagonal elements and the diagonal elements of a double-precision floating-point matrix to specified values.
 *
-* @param order - storage layout of `A` and `B`
+* @param order - storage layout of `A`
 * @param uplo - specifies whether to set the upper or lower triangular/trapezoidal part of matrix `A`
 * @param M - number of rows in matrix `A`
 * @param N - number of columns in matrix `A`

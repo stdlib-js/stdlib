@@ -100,19 +100,16 @@ y = mean( -0.1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mean = require( '@stdlib/stats/base/dists/rayleigh/mean' );
 
-var sigma;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var sigma = uniform( 10, 0.0, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    sigma = randu() * 20.0;
-    y = mean( sigma );
-    console.log( 'σ: %d, E(X,σ): %d', sigma.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'σ: %0.4f, E(X;σ): %0.4f', sigma, mean );
 ```
 
 </section>

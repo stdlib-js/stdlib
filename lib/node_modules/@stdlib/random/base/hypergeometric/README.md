@@ -39,7 +39,7 @@ var r = hypergeometric( 20, 10, 7 );
 // returns <number>
 ```
 
-`N`, `K`, and `n` must all be nonnegative integers; otherwise, the function returns `NaN`. 
+`N`, `K`, and `n` must all be nonnegative integers; otherwise, the function returns `NaN`.
 
 ```javascript
 var r = hypergeometric( 10.5, 10, 10 );

@@ -33,9 +33,9 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param alpha - scalar constant
 	* @param x - first input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param y - second input array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @returns second input array
 	*
 	* @example
@@ -52,15 +52,15 @@ interface Routine {
 	( N: number, alpha: Complex128, x: Complex128Array, strideX: number, y: Complex128Array, strideY: number ): Complex128Array;
 
 	/**
-	* Scales a double-precision complex floating-point vector by a double-precision complex floating-point constant and adds the result to a double-precision complex floating-point vector.
+	* Scales a double-precision complex floating-point vector by a double-precision complex floating-point constant and adds the result to a double-precision complex floating-point vector using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param alpha - scalar constant
 	* @param x - first input array
-	* @param strideX - `x` stride length
+	* @param strideX - stride length for `x`
 	* @param offsetX - starting index for `x`
 	* @param y - second input array
-	* @param strideY - `y` stride length
+	* @param strideY - stride length for `y`
 	* @param offsetY - starting index for `y`
 	* @returns second input array
 	*
@@ -84,9 +84,9 @@ interface Routine {
 * @param N - number of indexed elements
 * @param alpha - scalar constant
 * @param x - first input array
-* @param strideX - `x` stride length
+* @param strideX - stride length for `x`
 * @param y - second input array
-* @param strideY - `y` stride length
+* @param strideY - stride length for `y`
 * @returns second input array
 *
 * @example

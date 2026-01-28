@@ -82,7 +82,7 @@ var idx = dlastIndexOf( 4, 3.0, x, 2 );
 // returns 2
 ```
 
-Note that indexing is relative to the last index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
+Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -94,7 +94,7 @@ var x0 = new Float64Array( [ -2.0, 3.0, -6.0, -4.0, 5.0, 3.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
 // Find index:
-var idx = dlastIndexOf( 5, 3.0, x1, 2 );
+var idx = dlastIndexOf( 3, 3.0, x1, 2 );
 // returns 2
 ```
 
@@ -212,7 +212,7 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` stride length.
 
 ```c
-CBLAS_INT N stdlib_strided_dlast_index_of( const CBLAS_INT N, const double searchElement, const double *X, const CBLAS_INT strideX );
+CBLAS_INT stdlib_strided_dlast_index_of( const CBLAS_INT N, const double searchElement, const double *X, const CBLAS_INT strideX );
 ```
 
 #### stdlib_strided_dlast_index_of_ndarray( N, searchElement, \*X, strideX, offsetX )
@@ -222,7 +222,7 @@ Returns the last index of a specified search element in a double-precision float
 ```c
 double x[] = { 1.0, 2.0, 3.0, 2.0 };
 
-int idx = stdlib_strided_dlast_index_of( 4, 2.0, x, 1, 0 );
+int idx = stdlib_strided_dlast_index_of_ndarray( 4, 2.0, x, 1, 0 );
 // returns 3
 ```
 

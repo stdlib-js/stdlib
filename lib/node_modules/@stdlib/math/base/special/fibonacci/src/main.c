@@ -18,6 +18,9 @@
 
 #include "stdlib/math/base/special/fibonacci.h"
 #include "stdlib/constants/float64/max_safe_nth_fibonacci.h"
+#include "stdlib/math/base/assert/is_nonnegative_integer.h"
+#include <stdint.h>
+#include <stdlib.h>
 
 static const int64_t fibonacci_value[ 79 ] = {
 	0,
@@ -108,12 +111,12 @@ static const int64_t fibonacci_value[ 79 ] = {
 * @return     output value
 *
 * @example
-* double out = stdlib_base_fibonacci( 1 );
-* // returns 1
+* double out = stdlib_base_fibonacci( 1.0 );
+* // returns 1.0
 */
-double stdlib_base_fibonacci( const int32_t n ) {
-	if ( n < 0 || n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FIBONACCI ) {
+double stdlib_base_fibonacci( const double n ) {
+	if ( !stdlib_base_is_nonnegative_integer( n ) || n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_FIBONACCI ) {
 		return 0.0 / 0.0; // NaN
 	}
-	return fibonacci_value[ n ];
+	return fibonacci_value[ (size_t)n ];
 }

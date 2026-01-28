@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_zdrot`.
 */
-#ifndef ZDROT_CBLAS_H
-#define ZDROT_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_ZDROT_CBLAS_H
+#define STDLIB_BLAS_BASE_ZDROT_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -40,4 +40,4 @@ void API_SUFFIX(cblas_zdrot)( const CBLAS_INT N, void *X, const CBLAS_INT stride
 }
 #endif
 
-#endif // !ZDROT_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_ZDROT_CBLAS_H

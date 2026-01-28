@@ -64,5 +64,85 @@
     "trig",
     "trigonometry",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "cscd",
+      "alias": "cscd",
+      "pkg_desc": "compute the cosecant of a double-precision floating-point number (in degrees)",
+      "desc": "computes the cosecant of a double-precision floating-point number (in degrees)",
+      "short_desc": "cosecant",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in degrees)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": -5e-324
+            },
+            {
+              "min": 5e-324,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.5,
+              180
+            ]
+          },
+          "example_values": [
+            -171.7,
+            13.6,
+            -0.8,
+            0.9,
+            -122.4,
+            7.3,
+            -35.2,
+            146.8,
+            -11.4,
+            22.1,
+            -78.5,
+            96.3,
+            -43.2,
+            68.7,
+            -159.9,
+            51.4,
+            -117.6,
+            33.2,
+            -26.9,
+            173.5
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "cosecant",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "acsc",
+        "cosecant",
+        "degree",
+        "sine"
+      ],
+      "extra_keywords": [
+        "math.sin"
+      ]
+    }
+  }
 }

@@ -49,7 +49,7 @@ var out = formatInterpolate( tokens, 'World', 'Bob' );
 // returns 'Hello, World! My name is Bob.'
 ```
 
-The array of `tokens` should contain string parts and format identifier objects. 
+The array of `tokens` should contain string parts and format identifier objects.
 
 ```javascript
 var tokens = [ 'beep ', { 'specifier': 's' } ];

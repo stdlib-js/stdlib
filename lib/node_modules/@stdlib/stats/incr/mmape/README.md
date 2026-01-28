@@ -102,9 +102,9 @@ m = accumulator();
 
 -   Input values are **not** type checked. If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for **at least** `W-1` future invocations. If non-numeric inputs are possible, you are advised to type check and handle accordingly **before** passing the value to the accumulator function.
 
--   As `W` (f,a) pairs are needed to fill the window buffer, the first `W-1` returned values are calculated from smaller sample sizes. Until the window is full, each returned value is calculated from all provided values.  
+-   As `W` (f,a) pairs are needed to fill the window buffer, the first `W-1` returned values are calculated from smaller sample sizes. Until the window is full, each returned value is calculated from all provided values.
 
--   **Warning**: the [mean absolute percentage error][mean-absolute-percentage-error]  has several shortcomings: 
+-   **Warning**: the [mean absolute percentage error][mean-absolute-percentage-error]  has several shortcomings:
 
     -   The measure is **not** suitable for intermittent demand patterns (i.e., when `a_i` is `0`).
     -   The [mean absolute percentage error][mean-absolute-percentage-error] is not symmetrical, as the measure cannot exceed 100% for forecasts which are too "low" and has no limit for forecasts which are too "high".

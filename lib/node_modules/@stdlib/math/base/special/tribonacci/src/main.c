@@ -18,6 +18,10 @@
 
 #include "stdlib/math/base/special/tribonacci.h"
 #include "stdlib/constants/float64/max_safe_nth_tribonacci.h"
+#include "stdlib/math/base/assert/is_nonnegative_integer.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include <stdlib.h>
+#include <stdint.h>
 
 static const int64_t tribonacci_value[ 64 ] = {
 	0,
@@ -93,12 +97,12 @@ static const int64_t tribonacci_value[ 64 ] = {
 * @return      output value
 *
 * @example
-* double out = stdlib_base_tribonacci( 1 );
-* // returns 0
+* double out = stdlib_base_tribonacci( 1.0 );
+* // returns 0.0
 */
-double stdlib_base_tribonacci( const int32_t n ) {
-	if ( n < 0 || n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_TRIBONACCI ) {
+double stdlib_base_tribonacci( const double n ) {
+	if ( stdlib_base_is_nan( n ) || !stdlib_base_is_nonnegative_integer( n ) || n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_TRIBONACCI ) {
 		return 0.0 / 0.0; // NaN
 	}
-	return tribonacci_value[ n ];
+	return tribonacci_value[ (size_t)n ];
 }

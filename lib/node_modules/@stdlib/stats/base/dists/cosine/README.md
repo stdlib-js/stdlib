@@ -116,36 +116,35 @@ var s = 1.5;
 var dist = new cosine.Cosine( mu, s );
 
 // Calculate various distribution properties:
-console.log( 'Mean: %d', dist.mean );
-// => 'Mean: 2'
+var v = dist.mean;
+// returns 2.0
 
-console.log( 'Median: %d', dist.median );
-// => 'Median: 2'
+v = dist.median;
+// returns 2.0
 
-console.log( 'Mode: %d', dist.mode );
-// => 'Mode: 2'
+v = dist.mode;
+// returns 2.0
 
-console.log( 'Standard Deviation: %d', dist.stdev );
-// => 'Standard Deviation: 0.5422680827869919'
+v = dist.stdev;
+// returns ~0.5423
 
-console.log( 'Variance: %d', dist.variance );
-// => 'Variance: 0.29405467360947996'
+v = dist.variance;
+// returns ~0.2941
 
 // Evaluate the probability density function (PDF):
-var x = 1.5;
-console.log( 'PDF( %d ): %d', x, dist.pdf( x ) );
-// => 'PDF( 1.5 ): 0.5'
+v = dist.pdf( 1.5 );
+// returns 0.5
 
 // Evaluate the cumulative distribution function (CDF):
-console.log( 'CDF( %d ): %d', x, dist.cdf( x ) );
-// => 'CDF( 1.5 ): 0.19550110947788535'
+v = dist.cdf( 1.5 );
+// returns ~0.1955
 
 // Calculate distribution moments:
-console.log( 'Skewness: %d', cosine.skewness( mu, s ) );
-// => 'Skewness: 0'
+v = cosine.skewness( mu, s );
+// returns 0.0
 
-console.log( 'Excess Kurtosis: %d', cosine.kurtosis( mu, s ) );
-// => 'Excess Kurtosis: -0.5937628755982807'
+v = cosine.kurtosis( mu, s );
+// returns ~-0.5938
 ```
 
 </section>

@@ -32,7 +32,7 @@ var acosh = require( '@stdlib/math/base/special/acosh' );
 
 #### acosh( x )
 
-Computes the [hyperbolic arccosine][hyperbolic-arccosine] of double-precision floating-point number.
+Computes the [hyperbolic arccosine][hyperbolic-arccosine] of a double-precision floating-point number.
 
 ```javascript
 var v = acosh( 1.0 );
@@ -106,7 +106,7 @@ logEachMap( 'acosh(%0.4f) = %0.4f', x, acosh );
 
 #### stdlib_base_acosh( x )
 
-Computes the [hyperbolic arccosine][hyperbolic-arccosine] of double-precision floating-point number.
+Computes the [hyperbolic arccosine][hyperbolic-arccosine] of a double-precision floating-point number.
 
 ```c
 double out = stdlib_base_acosh( 1.0 );

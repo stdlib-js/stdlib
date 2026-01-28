@@ -55,7 +55,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           # Ensure we have access to the scripts directory:
           sparse-checkout: |
@@ -69,4 +69,4 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number || github.event.pull_request.number }}
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/first_time_greeting" $ISSUE_NUMBER
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/first_time_greeting/run" $ISSUE_NUMBER

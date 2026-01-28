@@ -66,10 +66,12 @@ type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 *
 * @param arrays - array-like object containing an output ndarray
 * @param fcn - callback function
+* @param thisArg - callback function execution context
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var naryFunction = require( '@stdlib/utils/nary-function' );
+* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 * var log = require( '@stdlib/console/log' );
 *
 * // Create data buffers:
