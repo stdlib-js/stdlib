@@ -40,7 +40,7 @@ var nanmskrange = require( '@stdlib/stats/strided/nanmskrange' );
 
 #### nanmskrange( N, x, strideX, mask, strideMask )
 
-Computes the [range][range] of a strided array `x` according to a `mask`, ignoring `NaN` values.
+Computes the [range][range] of a strided array according to a mask, ignoring `NaN` values.
 
 ```javascript
 var x = [ 1.0, -2.0, 4.0, 2.0, NaN, NaN ];
@@ -88,7 +88,7 @@ var v = nanmskrange( 5, x1, 2, mask1, 2 );
 
 #### nanmskrange.ndarray( N, x, strideX, offsetX, mask, strideMask, offsetMask )
 
-Computes the [range][range] of a strided array according to a `mask`, ignoring `NaN` values and using alternative indexing semantics.
+Computes the [range][range] of a strided array according to a mask, ignoring `NaN` values and using alternative indexing semantics.
 
 ```javascript
 var x = [ 1.0, -2.0, 4.0, 2.0, NaN, NaN ];
