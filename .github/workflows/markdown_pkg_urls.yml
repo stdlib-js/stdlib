@@ -143,7 +143,7 @@ jobs:
         id: cpr
         if: steps.update-markdown-pkg-urls.outputs.changed == 'true'
         # Pin action to full length commit SHA
-        uses: peter-evans/create-pull-request@98357b18bf14b5342f975ff684046ec3b2a07725 # v8.0.0
+        uses: peter-evans/create-pull-request@c0f553fe549906ede9cf27b5156039d195d2ece0 # v8.1.0
         with:
           title: 'docs: update Markdown stdlib package URLs'
           body: |
