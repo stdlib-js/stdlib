@@ -30,7 +30,7 @@ limitations under the License.
 
 <section class="intro">
 
-This folder includes configuration for developing the project in a local container or using [GitHub Codespaces][github-codespaces].
+This folder includes configuration for developing the project in a local container or using [GitHub Codespaces][github-codespaces]. The dev container supports both x86_64 and ARM64 (Apple Silicon) architectures.
 
 </section>
 
@@ -43,6 +43,14 @@ This folder includes configuration for developing the project in a local contain
 </section>
 
 <!-- /.usage -->
+
+<!-- Section to include examples. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
 
 <!-- Section to include usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

@@ -30,6 +30,15 @@ this_dir := $(patsubst %/,%,$(this_dir))
 # Define the root project directory:
 ROOT_DIR ?= $(this_dir)
 
+# Check for spaces in the project path.
+# GNU make and the installation process fail when the path contains spaces.
+# See CONTRIBUTING.md and docs/contributing/development.md for details.
+_empty :=
+_space := $(_empty) $(_empty)
+ifneq ($(findstring $(_space),$(ROOT_DIR)),)
+$(error The project directory path contains spaces. GNU make and the installation process will fail. Please clone the repository to a path without spaces (e.g., use stdlib_gsoc instead of stdlib gsoc). See CONTRIBUTING.md and docs/contributing/development.md for details.)
+endif
+
 # Define the top-level directory containing source files:
 SRC_DIR ?= $(ROOT_DIR)/lib/node_modules
 

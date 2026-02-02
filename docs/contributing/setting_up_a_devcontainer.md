@@ -30,7 +30,7 @@ Dev containers are Docker containers that are specifically configured to provide
 
 The stdlib repository includes a preconfigured dev container, making it the easiest way to set up your development environment. It ensures proper linting, EditorConfig, and tooling are configured right from the start.
 
-**Note:** The dev container does not yet support ARM64 architectures. For more information, or if you're interested in adding ARM64 support, you can visit this [issue][devcontainer-issue].
+**Note:** The dev container supports ARM64/Apple Silicon. The base Node.js development environment works on both x86_64 and ARM64 architectures. Some optional features (e.g., R, Julia) may have architecture-specific limitations. For issues or feedback, see this [issue][devcontainer-issue].
 
 ### Prerequisites
 
@@ -112,6 +112,20 @@ If you see this when you open the terminal, then the dev container installation 
         <img width="480" src="./img/welcome_to_codespaces_terminal.png" alt="Terminal window with a welcome message by GitHub Codespaces after it was successfully installed.">
     <br>
 </div>
+
+<!-- FIXME: the following two empty sections are merely to satisfy the linter for `expected-html-sections` which cannot, atm, be turned off -->
+
+<section class="usage">
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
 
 <section class="links">
 

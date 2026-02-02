@@ -64,7 +64,7 @@ There are primarily two options for setting up your development environment to c
 1. [Manually setting up the development environment][manual-setup]
 2. [Setting up the dev container][devcontainer-setup]
 
-Note: The dev container does not yet support ARM64 architectures. For more information, or if you're interested in adding ARM64 support, you can visit this [issue][devcontainer-issue].
+Note: The dev container supports ARM64/Apple Silicon. The base Node.js development environment works on both x86_64 and ARM64 architectures. Some optional features (e.g., R, Julia) may have architecture-specific limitations. For issues or feedback, see this [issue][devcontainer-issue].
 
 <a name="install-cppcheck"></a>
 
@@ -381,6 +381,20 @@ For more `make` commands, refer to the [documentation][benchmark] on running ben
 - [Git Cheatsheet][git-guide]
 - [Other make commands][make-commands]
 
+<!-- FIXME: the following two empty sections are merely to satisfy the linter for `expected-html-sections` which cannot, atm, be turned off -->
+
+<section class="usage">
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
 <section class="links">
 
 [git]: http://git-scm.com/
@@ -401,7 +415,7 @@ For more `make` commands, refer to the [documentation][benchmark] on running ben
 
 [manual-setup]: https://github.com/stdlib-js/stdlib/blob/develop/CONTRIBUTING.md#step-0-github
 
-[devcontainer-setup]: https://github.com/stdlib-js/stdlib/blob/87cbd67623892f90ddeea94e1d4e01eeada417b5/docs/devcontainer_setup.md
+[devcontainer-setup]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/setting_up_a_devcontainer.md
 
 [devcontainer-issue]: https://github.com/stdlib-js/stdlib/issues/4934
 
