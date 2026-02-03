@@ -1632,7 +1632,7 @@ base.roundsd,"\nbase.roundsd( x:number, n:integer[, b:integer] )\n    Rounds a d
 base.rsqrt,"\nbase.rsqrt( x:number )\n    Computes the reciprocal square root of a double-precision floating-point\n    number.\n"
 base.rsqrtf,"\nbase.rsqrtf( x:number )\n    Computes the reciprocal square root of a single-precision floating-point\n    number.\n"
 base.sargs2multislice,"\nbase.sargs2multislice( str:string )\n    Creates a MultiSlice object from a comma-separated list of string-serialized\n    MultiSlice constructor arguments.\n"
-base.scalar2ndarray,"\nbase.scalar2ndarray( value:any, dtype:string, order:string )\n    Returns a zero-dimensional ndarray containing a provided scalar value.\n"
+base.scalar2ndarray,"\nbase.scalar2ndarray( value:any, dtype:string|DataType, order:string )\n    Returns a zero-dimensional ndarray containing a provided scalar value.\n"
 base.secd,"\nbase.secd( x:number )\n    Computes the secant of an angle measured in degrees.\n"
 base.seq2multislice,"\nbase.seq2multislice( str:string, shape:Array<integer>, strict:boolean )\n    Converts a multidimensional subsequence string to a MultiSlice object.\n"
 base.seq2slice,"\nbase.seq2slice( str:string, len:integer, strict:boolean )\n    Converts a subsequence string to a Slice object.\n"

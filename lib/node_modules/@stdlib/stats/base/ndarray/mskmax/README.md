@@ -55,9 +55,7 @@ var v = mskmax( [ x, mask ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing an input ndarray and a mask ndarray.
-
-If a `mask` array element is `0`, the corresponding element in the input ndarray is considered valid and **included** in computation. If a `mask` array element is `1`, the corresponding element in the input ndarray is considered invalid/missing and **excluded** from computation.
+-   **arrays**: array-like object containing a one-dimensional input ndarray and a one-dimensional mask ndarray.
 
 </section>
 
@@ -67,6 +65,7 @@ If a `mask` array element is `0`, the corresponding element in the input ndarray
 
 ## Notes
 
+-   If a mask array element is `0`, the corresponding element in the input ndarray is considered valid and **included** in computation. If a mask array element is `1`, the corresponding element in the input ndarray is considered invalid/missing and **excluded** from computation.
 -   If provided an empty ndarray or a mask with all elements set to `1`, the function returns `NaN`.
 
 </section>
