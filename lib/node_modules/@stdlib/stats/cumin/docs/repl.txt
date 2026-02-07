@@ -38,7 +38,7 @@
     Parameters
     ----------
     x: ndarray
-        Input array. Must have a real-valued or generic data type.
+        Input array. Must have a real-valued or "generic" data type.
 
     out: ndarray
         Output array.

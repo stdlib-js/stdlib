@@ -1,6 +1,6 @@
 
 {{alias}}( arrays, fcn[, thisArg] )
-    Invokes a provided callback once for each ndarray element.
+    Invokes a provided callback once for each element in an ndarray.
 
     A provided "ndarray" should be an object with the following properties:
 
@@ -21,7 +21,7 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing an output ndarray.
+        Array-like object containing an input ndarray.
 
     fcn: Function
         Callback function.

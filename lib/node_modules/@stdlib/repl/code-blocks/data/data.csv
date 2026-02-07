@@ -1632,7 +1632,7 @@ base.roundsd,"var y = base.roundsd( 3.14159, 3 )\ny = base.roundsd( 3.14159, 1 )
 base.rsqrt,"var y = base.rsqrt( 4.0 )\ny = base.rsqrt( 100.0 )\ny = base.rsqrt( 0.0 )\ny = base.rsqrt( Infinity )\ny = base.rsqrt( -4.0 )\ny = base.rsqrt( NaN )\n"
 base.rsqrtf,"var y = base.rsqrtf( 4.0 )\ny = base.rsqrtf( 0.0 )\ny = base.rsqrtf( Infinity )\ny = base.rsqrtf( -4.0 )\ny = base.rsqrtf( NaN )\n"
 base.sargs2multislice,"var s = new base.sargs2multislice( 'null,null,null' );\ns.data\ns = new base.sargs2multislice( '10,Slice(0,10,1),null' );\ns.data\n"
-base.scalar2ndarray,"var x = base.scalar2ndarray( 1.0, 'float64', 'row-major' )\nvar sh = x.shape\nvar dt = x.dtype\nvar v = x.get()\n"
+base.scalar2ndarray,"var x = base.scalar2ndarray( 1.0, 'float64', 'row-major' )\nvar sh = ndarrayShape( x )\nvar v = x.get()\n"
 base.secd,"var y = base.secd( 1.0 )\ny = base.secd( PI )\ny = base.secd( -PI )\ny = base.secd( NaN )\n"
 base.seq2multislice,"var s = new base.seq2multislice( '1:10', [ 10 ], false );\ns.data\ns = new base.seq2multislice( '4,2:5:2,:', [ 10, 10, 10 ], false );\ns.data\n"
 base.seq2slice,"var s = new base.seq2slice( '1:10', 10, false );\ns.start\ns.stop\ns.step\ns = new base.seq2slice( '2:5:2', 10, false );\ns.start\ns.stop\ns.step\n"

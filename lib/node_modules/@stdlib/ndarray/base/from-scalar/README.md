@@ -42,16 +42,19 @@ var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
 
 #### scalar2ndarray( value, dtype, order )
 
-Returns a zero-dimensional [`ndarray`][@stdlib/ndarray/base/ctor] containing a provided scalar `value` and having a specified [data type][@stdlib/ndarray/dtypes].
+Returns a zero-dimensional [ndarray][@stdlib/ndarray/base/ctor] containing a provided scalar `value` and having a specified [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
+var getShape = require( '@stdlib/ndarray/shape' );
+var getDType = require( '@stdlib/ndarray/dtype' );
+
 var x = scalar2ndarray( 1.0, 'float64', 'row-major' );
 // returns <ndarray>
 
-var sh = x.shape;
+var sh = getShape( x );
 // returns []
 
-var dt = x.dtype;
+var dt = String( getDType( x ) );
 // returns 'float64'
 
 var v = x.get();
@@ -68,7 +71,7 @@ var v = x.get();
 
 ## Notes
 
--   If `value` is a number and [`dtype`][@stdlib/ndarray/dtypes] is a complex [data type][@stdlib/ndarray/dtypes], the function returns a zero-dimensional [`ndarray`][@stdlib/ndarray/base/ctor] containing a complex number whose real component equals the provided scalar `value` and whose imaginary component is zero.
+-   If `value` is a number and [`dtype`][@stdlib/ndarray/dtypes] is a complex [data type][@stdlib/ndarray/dtypes], the function returns a zero-dimensional [ndarray][@stdlib/ndarray/base/ctor] containing a complex number whose real component equals the provided scalar `value` and whose imaginary component is zero.
 
 </section>
 
@@ -87,7 +90,7 @@ var dtypes = require( '@stdlib/ndarray/dtypes' );
 var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'integer_and_generic' );
 
 // Generate zero-dimensional arrays...
 var x;
