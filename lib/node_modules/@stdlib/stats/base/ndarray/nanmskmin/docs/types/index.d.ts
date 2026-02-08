@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the minimum value of a one-dimensional ndarray according to a mask, ignoring `NaN` values.
@@ -40,7 +40,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var v = nanmskmin( [ x, mask ] );
 * // returns -2.0
 */
-declare function nanmskmin<T extends ndarray = ndarray>( arrays: [ T, T ] ): number;
+declare function nanmskmin<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, T ] ): number;
 
 
 // EXPORTS //
