@@ -63,11 +63,11 @@ int main( void ) {
 	// Define a list of ndarrays:
 	const struct ndarray *arrays[] = { x };
 
-	// Compute the minimum value:
+	// Compute the minimum absolute value:
 	double v = stdlib_stats_dminabs( arrays );
 
 	// Print the result:
-	printf( "min: %lf\n", v );
+	printf( "minabs: %lf\n", v );
 
 	// Free allocated memory:
 	stdlib_ndarray_free( x );
