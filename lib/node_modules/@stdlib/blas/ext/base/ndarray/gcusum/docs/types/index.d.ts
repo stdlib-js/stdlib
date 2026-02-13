@@ -29,7 +29,6 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * @returns output ndarray
 *
 * @example
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
@@ -42,13 +41,10 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var initial = scalar2ndarray( 0.0, 'generic', 'row-major' );
 *
 * var v = gcusum( [ x, y, initial ] );
-* // returns <ndarray>
+* // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
 *
 * var bool = ( v === y );
 * // returns true
-*
-* var arr = ndarray2array( v );
-* // returns [ 1.0, 4.0, 8.0, 10.0 ]
 */
 declare function gcusum<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, T, T ] ): T;
 
