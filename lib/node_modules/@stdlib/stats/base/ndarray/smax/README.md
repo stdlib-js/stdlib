@@ -188,49 +188,49 @@ float stdlib_stats_smax( const struct ndarray *arrays[] );
 #include <stdio.h>
 
 int main( void ) {
-   // Create a data buffer:
-   const float data[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
+    // Create a data buffer:
+    const float data[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
 
-   // Specify the number of array dimensions:
-   const int64_t ndims = 1;
+    // Specify the number of array dimensions:
+    const int64_t ndims = 1;
 
-   // Specify the array shape:
-   int64_t shape[] = { 4 };
+    // Specify the array shape:
+    int64_t shape[] = { 4 };
 
-   // Specify the array strides:
-   int64_t strides[] = { 2*STDLIB_NDARRAY_FLOAT32_BYTES_PER_ELEMENT };
+    // Specify the array strides:
+    int64_t strides[] = { 2*STDLIB_NDARRAY_FLOAT32_BYTES_PER_ELEMENT };
 
-   // Specify the byte offset:
-   const int64_t offset = 0;
+    // Specify the byte offset:
+    const int64_t offset = 0;
 
-   // Specify the array order:
-   const enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
+    // Specify the array order:
+    const enum STDLIB_NDARRAY_ORDER order = STDLIB_NDARRAY_ROW_MAJOR;
 
-   // Specify the index mode:
-   const enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
+    // Specify the index mode:
+    const enum STDLIB_NDARRAY_INDEX_MODE imode = STDLIB_NDARRAY_INDEX_ERROR;
 
-   // Specify the subscript index modes:
-   int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
-   const int64_t nsubmodes = 1;
+    // Specify the subscript index modes:
+    int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
+    const int64_t nsubmodes = 1;
 
-   // Create an ndarray:
-   struct ndarray *x = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT32, (uint8_t *)data, ndims, shape, strides, offset, order, imode, nsubmodes, submodes );
-   if ( x == NULL ) {
-      fprintf( stderr, "Error allocating memory.\n" );
-      exit( 1 );
-   }
+    // Create an ndarray:
+    struct ndarray *x = stdlib_ndarray_allocate( STDLIB_NDARRAY_FLOAT32, (uint8_t *)data, ndims, shape, strides, offset, order, imode, nsubmodes, submodes );
+    if ( x == NULL ) {
+        fprintf( stderr, "Error allocating memory.\n" );
+        exit( 1 );
+    }
 
-   // Define a list of ndarrays:
-   const struct ndarray *arrays[] = { x };
+    // Define a list of ndarrays:
+    const struct ndarray *arrays[] = { x };
 
-   // Compute the maximum value:
-   float v = stdlib_stats_smax( arrays );
+    // Compute the maximum value:
+    float v = stdlib_stats_smax( arrays );
 
-   // Print the result:
-   printf( "max: %f\n", v );
+    // Print the result:
+    printf( "max: %f\n", v );
 
-   // Free allocated memory:
-   stdlib_ndarray_free( x );
+    // Free allocated memory:
+    stdlib_ndarray_free( x );
 }
 ```
 
