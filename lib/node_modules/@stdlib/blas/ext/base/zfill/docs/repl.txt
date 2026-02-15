@@ -36,42 +36,27 @@
     > var x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var alpha = new {{alias:@stdlib/complex/float64/ctor}}( 5.0, -5.0 );
     > {{alias}}( x.length, alpha, x, 1 );
-    > var z = x.get( 0 );
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    5.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -5.0
+    > var z = x.get( 0 )
+    <Complex128>[ 5.0, -5.0 ]
 
     // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > alpha = new {{alias:@stdlib/complex/float64/ctor}}( 5.0, -5.0 );
     > {{alias}}( 2, alpha, x, 2 );
-    > z = x.get( 0 );
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    5.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -5.0
-    > z = x.get( 1 );
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    3.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    4.0
+    > z = x.get( 0 )
+    <Complex128>[ 5.0, -5.0 ]
+    > z = x.get( 2 )
+    <Complex128>[ 5.0, -5.0 ]
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
     > var x1 = new {{alias:@stdlib/array/complex128}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
     > alpha = new {{alias:@stdlib/complex/float64/ctor}}( 5.0, -5.0 );
     > {{alias}}( 2, alpha, x1, 1 );
-    > z = x0.get( 0 );
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    2.0
-    > z = x0.get( 1 );
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    5.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -5.0
+    > z = x0.get( 0 )
+    <Complex128>[ 1.0, 2.0 ]
+    > z = x0.get( 1 )
+    <Complex128>[ 5.0, -5.0 ]
 
 
 {{alias}}.ndarray( N, alpha, x, strideX, offsetX )
@@ -110,26 +95,17 @@
     > var x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
     > var alpha = new {{alias:@stdlib/complex/float64/ctor}}( 2.0, 2.0 );
     > {{alias}}.ndarray( x.length, alpha, x, 1, 0 );
-    > var z = x.get( 0 );
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    2.0
+    > var z = x.get( 0 )
+    <Complex128>[ 2.0, 2.0 ]
 
     // Using an index offset:
     > x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
     > alpha = new {{alias:@stdlib/complex/float64/ctor}}( 5.0, -5.0 );
     > {{alias}}.ndarray( 2, alpha, x, 2, 1 );
-    > z = x.get( 0 );
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    2.0
-    > z = x.get( 1 );
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    5.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -5.0
+    > z = x.get( 0 )
+    <Complex128>[ 1.0, 2.0 ]
+    > z = x.get( 1 )
+    <Complex128>[ 5.0, -5.0 ]
 
     See Also
     --------

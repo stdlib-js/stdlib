@@ -64,5 +64,84 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "sec",
+      "alias": "sec",
+      "pkg_desc": "compute the secant",
+      "desc": "computes the secant",
+      "short_desc": "secant",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in radians)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            0,
+            0.5236,
+            0.7854,
+            1.5708,
+            1.0472,
+            2.3562,
+            3.1416,
+            4.7124,
+            6.2832,
+            -0.5236,
+            -0.7854,
+            -1.0472,
+            -1.5708,
+            -2.3562,
+            -3.1416,
+            7.854,
+            -7.854,
+            0.1,
+            -0.1,
+            3.5
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "secant",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "sec",
+        "secant",
+        "trig",
+        "trigonometry",
+        "cos",
+        "cosine"
+      ],
+      "extra_keywords": [
+        "math.sec",
+        "math.cos"
+      ]
+    }
+  }
 }

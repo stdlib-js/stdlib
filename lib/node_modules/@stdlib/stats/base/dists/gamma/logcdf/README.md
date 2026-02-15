@@ -229,22 +229,18 @@ int main( void ) {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var logcdf = require( '@stdlib/stats/base/dists/gamma/logcdf' );
 
-var alpha;
-var beta;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 10, 0.0, 3.0, opts );
+var alpha = uniform( 10, 0.0, 5.0, opts );
+var beta = uniform( 10, 0.0, 5.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = randu() * 3.0;
-    alpha = randu() * 5.0;
-    beta = randu() * 5.0;
-    y = logcdf( x, alpha, beta );
-    console.log( 'x: %d, α: %d, β: %d, ln(F(x;α,β)): %d', x.toFixed( 4 ), alpha.toFixed( 4 ), beta.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, α: %0.4f, β: %0.4f, ln(f(x;α,β)): %0.4f', x, alpha, beta, logcdf );
 ```
 
 </section>

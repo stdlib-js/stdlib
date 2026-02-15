@@ -103,7 +103,7 @@ logEachMap( 'sech(%0.4f) = %0.4f', x, sech );
 
 #### stdlib_base_sech( x )
 
-Computes the [hyperbolic secant][hyperbolic-functions] of double-precision floating-point number.
+Computes the [hyperbolic secant][hyperbolic-functions] of a double-precision floating-point number.
 
 ```c
 double out = stdlib_base_sech( 2.0 );

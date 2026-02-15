@@ -30,7 +30,7 @@ extern "C" {
 #endif
 
 /**
-* Enumeration of the single letter character abbreviation for strided array data types.
+* Enumeration of the single letter character abbreviation for ndarray data types.
 */
 enum STDLIB_NDARRAY_DTYPE_CHAR {
 	STDLIB_NDARRAY_BOOL_CHAR = 'x',

@@ -187,8 +187,6 @@ console.log( y );
 
 <!-- /.examples -->
 
-
-
 * * *
 
 <!-- C interface documentation. -->
@@ -325,6 +323,8 @@ int main( void ) {
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
 
 ## See Also
 

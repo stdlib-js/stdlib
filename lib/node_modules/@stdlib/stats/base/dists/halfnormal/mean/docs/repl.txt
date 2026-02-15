@@ -1,0 +1,32 @@
+
+{{alias}}( σ )
+    Returns the expected value of a half-normal distribution with scale
+    parameter `σ`.
+
+    If provided `σ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Expected value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0 )
+    ~0.79788
+    > y = {{alias}}( 5.0 )
+    ~3.98942
+    > y = {{alias}}( NaN )
+    NaN
+    > y = {{alias}}( 0.0 )
+    NaN
+
+    See Also
+    --------
+
+

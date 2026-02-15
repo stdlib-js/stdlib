@@ -80,7 +80,7 @@ interface CunoneByRight {
 	*
 	* @example
 	* function fcn( v ) {
-	*  return v > 0;
+	*     return v > 0;
 	* }
 	* var x = [ 0, 1, 1, 0, 0 ];
 	*
@@ -102,7 +102,7 @@ interface CunoneByRight {
 	*
 	* @example
 	* function fcn( v ) {
-	* 	return v > 0;
+	*     return v > 0;
 	* }
 	* var x = [ 1, 1, 0, 0, 0 ];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
@@ -158,7 +158,7 @@ interface CunoneByRight {
 	* var x = [ 0, 0, 0, 1, 0 ];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
 	*
-	* var arr = cunoneBy.assign( x, y, 2, 0, isPositive );
+	* var arr = cunoneByRight.assign( x, y, 2, 0, isPositive );
 	* // returns [ true, null, false, null, false, null, false, null, false, null ]
 	*/
 	assign<T = unknown, U = unknown, V = unknown>( x: Collection<T> | AccessorArrayLike<T>, out: Collection<U> | AccessorArrayLike<U>, stride: number, offset: number, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): Collection<U | boolean> | AccessorArrayLike<U | boolean>;
@@ -174,16 +174,16 @@ interface CunoneByRight {
 *
 * @example
 * function fcn( v ) {
-* 	return v > 0;
+*     return v > 0;
 * }
 * var x = [ 1, 1, 0, 0, 0 ];
 *
-* var result = cunoneByright( x, fcn );
+* var result = cunoneByRight( x, fcn );
 * // returns [ true, true, true, false, false ]
 *
 * @example
 * function fcn( v ) {
-* 	return v > 0;
+*     return v > 0;
 * }
 * var x = [ 0, 1, 1, 0, 0 ];
 * var y = [ false, null, false, null, false, null, false, null, false, null ];

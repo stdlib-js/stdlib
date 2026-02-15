@@ -1,0 +1,128 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2026 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# smskmidrange
+
+> Calculate the [mid-range][mid-range] of a one-dimensional single-precision floating-point ndarray according to a mask.
+
+<section class="intro">
+
+The [**mid-range**][mid-range], or **mid-extreme**, is the arithmetic mean of the maximum and minimum values in a data set. The measure is the midpoint of the range and a measure of central tendency.
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var smskmidrange = require( '@stdlib/stats/base/ndarray/smskmidrange' );
+```
+
+#### smskmidrange( arrays )
+
+Computes the [mid-range][mid-range] of a one-dimensional single-precision floating-point ndarray according to a mask.
+
+```javascript
+var Float32Array = require( '@stdlib/array/float32' );
+var Uint8Array = require( '@stdlib/array/uint8' );
+var ndarray = require( '@stdlib/ndarray/base/ctor' );
+
+var xbuf = new Float32Array( [ 1.0, -2.0, 4.0, 2.0 ] );
+var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+
+var maskbuf = new Uint8Array( [ 0, 0, 1, 0 ] );
+var mask = new ndarray( 'uint8', maskbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+
+var v = smskmidrange( [ x, mask ] );
+// returns 0.0
+```
+
+The function has the following parameters:
+
+-   **arrays**: array-like object containing a one-dimensional input ndarray and a one-dimensional mask ndarray.
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   If a mask array element is `0`, the corresponding element in the input ndarray is considered valid and **included** in computation. If a mask array element is `1`, the corresponding element in the input ndarray is considered invalid/missing and **excluded** from computation.
+-   If provided an empty ndarray or a mask with all elements set to `1`, the function returns `NaN`.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var uniform = require( '@stdlib/random/array/uniform' );
+var bernoulli = require( '@stdlib/random/array/bernoulli' );
+var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
+var smskmidrange = require( '@stdlib/stats/base/ndarray/smskmidrange' );
+
+var xbuf = uniform( 10, -50.0, 50.0, {
+    'dtype': 'float32'
+});
+var x = new ndarray( 'float32', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+console.log( ndarray2array( x ) );
+
+var maskbuf = bernoulli( xbuf.length, 0.2, {
+    'dtype': 'uint8'
+});
+var mask = new ndarray( 'uint8', maskbuf, [ maskbuf.length ], [ 1 ], 0, 'row-major' );
+console.log( ndarray2array( mask ) );
+
+var v = smskmidrange( [ x, mask ] );
+console.log( v );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[mid-range]: https://en.wikipedia.org/wiki/Mid-range
+
+</section>
+
+<!-- /.links -->

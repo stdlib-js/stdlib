@@ -1798,6 +1798,19 @@ var y = p2.y;
 // returns 0.0
 ```
 
+If the method is unable to resolve indices to a non-empty tuple subsequence, the method returns an empty tuple.
+
+```javascript
+var factory = namedtypedtuple( [ 'x', 'y', 'z' ] );
+
+var p1 = factory( [ 1.0, 0.0, -1.0 ] );
+
+var p2 = p1.slice( 10, -1 );
+
+var len = p2.length;
+// returns 0
+```
+
 <a name="method-some"></a>
 
 #### tuple.some( predicate\[, thisArg] )
@@ -2074,7 +2087,7 @@ var y = p2.y;
 // returns 0.0
 ```
 
-If the method is unable to resolve indices to a non-empty tuple subsequence, the method returns `null`.
+If the method is unable to resolve indices to a non-empty tuple subsequence, the method returns an empty tuple.
 
 ```javascript
 var factory = namedtypedtuple( [ 'x', 'y', 'z' ] );
@@ -2082,7 +2095,9 @@ var factory = namedtypedtuple( [ 'x', 'y', 'z' ] );
 var p1 = factory( [ 1.0, 0.0, -1.0 ] );
 
 var p2 = p1.subtuple( 10, -1 );
-// returns null
+
+var len = p2.length;
+// returns 0
 ```
 
 <a name="method-to-json"></a>
@@ -2112,7 +2127,7 @@ var factory = namedtypedtuple( [ 'x', 'y', 'z' ] );
 var tuple = factory( [ 1.0, 0.0, -1.0 ], 'int32' );
 
 var str = tuple.toLocaleString();
-// returns '1,0,-1'
+// returns 'tuple(x=1, y=0, z=-1)'
 ```
 
 <a name="method-to-string"></a>

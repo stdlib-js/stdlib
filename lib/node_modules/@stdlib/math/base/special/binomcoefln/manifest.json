@@ -42,7 +42,8 @@
         "@stdlib/math/base/special/betaln",
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/ninf"
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/math/base/assert/is-integer"
       ]
     },
     {
@@ -61,7 +62,8 @@
         "@stdlib/math/base/special/betaln",
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/ninf"
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/math/base/assert/is-integer"
       ]
     },
     {
@@ -80,7 +82,8 @@
         "@stdlib/math/base/special/betaln",
         "@stdlib/math/base/special/abs",
         "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/ninf"
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/math/base/assert/is-integer"
       ]
     }
   ]
