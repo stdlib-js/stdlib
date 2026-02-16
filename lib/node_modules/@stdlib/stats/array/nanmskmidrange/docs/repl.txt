@@ -26,8 +26,8 @@
 
     Examples
     --------
-    > var x = [ 1.0, -2.0, 4.0, 2.0, NaN ];
-    > var mask = [ 0, 0, 1, 0, 0 ];
+    > var x = [ 1.0, -2.0, 4.0, 2.0, NaN, NaN ];
+    > var mask = [ 0, 0, 1, 0, 0, 0 ];
     > {{alias}}( x, mask )
     0.0
 

@@ -10,7 +10,7 @@
     Parameters
     ----------
     μ: number
-        Mean.
+        Mean parameter.
 
     λ: number
         Shape parameter.

@@ -228,7 +228,7 @@ base.capitalize,"var out = base.capitalize( 'beep' )\nout = base.capitalize( 'Bo
 base.cbrt,"var y = base.cbrt( 64.0 )\ny = base.cbrt( 27.0 )\ny = base.cbrt( 0.0 )\ny = base.cbrt( -0.0 )\ny = base.cbrt( -9.0 )\ny = base.cbrt( NaN )\n"
 base.cbrtf,"var y = base.cbrtf( 64.0 )\ny = base.cbrtf( 27.0 )\ny = base.cbrtf( 0.0 )\ny = base.cbrtf( -0.0 )\ny = base.cbrtf( -9.0 )\ny = base.cbrtf( NaN )\n"
 base.cceil,"var v = base.cceil( new Complex128( -1.5, 2.5 ) )\n"
-base.cceilf,"var v = base.cceilf( new Complex64( -1.5, 2.5 ) )\nvar re = realf( v )\nvar im = imagf( v )\n"
+base.cceilf,"var v = base.cceilf( new Complex64( -1.5, 2.5 ) )\n"
 base.cceiln,"var out = base.cceiln( new Complex128( 5.555, -3.333 ), -2 )\nvar re = real( out )\nvar im = imag( out )\n"
 base.ccis,"var y = base.ccis( new Complex128( 0.0, 0.0 ) )\ny = base.ccis( new Complex128( 1.0, 0.0 ) )\n"
 base.cdiv,"var z1 = new Complex128( -13.0, -1.0 )\nvar z2 = new Complex128( -2.0, 1.0 )\nvar y = base.cdiv( z1, z2 )\nvar re = real( y )\nvar im = imag( y )\n"
