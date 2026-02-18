@@ -70,6 +70,11 @@ jobs:
           COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message/run $PR_NUMBER)
           EXIT_CODE=$?
 
+          if [ $EXIT_CODE -eq 1 ]; then
+            echo "::error::Failed to generate commit message for PR #$PR_NUMBER"
+            exit 1
+          fi
+
           echo "commit_message<<EOF" >> $GITHUB_OUTPUT
           echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
@@ -79,9 +84,6 @@ jobs:
           else
             echo "has_tracking_issue=false" >> $GITHUB_OUTPUT
           fi
-
-          # Ensure the script itself doesn't fail the workflow:
-          exit 0
 
       # Check if the commit message already exists in the PR comments:
       - name: 'Check if commit message already exists in PR comments'

@@ -144,10 +144,10 @@ function indicator( value ) {
 vals = [ 'beep', 'boop', 'foo', 'bar', 'woot', 'woot' ];
 
 // Generate a random collection...
-arr = new Array( 100 );
-for ( i = 0; i < arr.length; i++ ) {
+arr = [];
+for ( i = 0; i < 100; i++ ) {
     j = floor( randu()*vals.length );
-    arr[ i ] = vals[ j ];
+    arr.push( vals[ j ] );
 }
 
 // Generate a frequency table:

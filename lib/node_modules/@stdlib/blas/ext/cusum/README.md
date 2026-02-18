@@ -35,16 +35,12 @@ var cusum = require( '@stdlib/blas/ext/cusum' );
 Computes the cumulative sum along one or more [ndarray][@stdlib/ndarray/ctor] dimensions.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0 ] );
 
 var y = cusum( x );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ -1.0, 1.0, -2.0 ]
+// returns <ndarray>[ -1.0, 1.0, -2.0 ]
 ```
 
 The function has the following parameters:
@@ -61,61 +57,44 @@ The function accepts the following options:
 By default, the function uses the additive identity when computing the cumulative sum. To begin summing from a different value, provide an `initial` argument.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0 ] );
 
 var y = cusum( x, 10.0 );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ 9.0, 11.0, 8.0 ]
+// returns <ndarray>[ 9.0, 11.0, 8.0 ]
 ```
 
 By default, the function performs the operation over all elements in a provided input [ndarray][@stdlib/ndarray/ctor]. To perform the operation over specific dimensions, provide a `dims` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0, 4.0 ], {
     'shape': [ 2, 2 ],
     'order': 'row-major'
 });
-
-var v = ndarray2array( x );
-// returns [ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ]
+// returns <ndarray>[ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ]
 
 var y = cusum( x, {
     'dims': [ 0 ]
 });
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ [ -1.0, 2.0 ], [ -4.0, 6.0 ] ]
+// returns <ndarray>[ [ -1.0, 2.0 ], [ -4.0, 6.0 ] ]
 
 y = cusum( x, {
     'dims': [ 1 ]
 });
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ [ -1.0, 1.0 ], [ -3.0, 1.0 ] ]
+// returns <ndarray>[ [ -1.0, 1.0 ], [ -3.0, 1.0 ] ]
 
 y = cusum( x, {
     'dims': [ 0, 1 ]
 });
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ [ -1.0, 1.0 ], [ -2.0, 2.0 ] ]
+// returns <ndarray>[ [ -1.0, 1.0 ], [ -2.0, 2.0 ] ]
 ```
 
 By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [data type][@stdlib/ndarray/dtypes] determined by the function's output data type [policy][@stdlib/ndarray/output-dtype-policies]. To override the default behavior, set the `dtype` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dtype = require( '@stdlib/ndarray/dtype' );
 var array = require( '@stdlib/ndarray/array' );
 
@@ -137,7 +116,6 @@ var dt = dtype( y );
 Computes the cumulative sum along one or more [ndarray][@stdlib/ndarray/ctor] dimensions and assigns results to a provided output [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 var zerosLike = require( '@stdlib/ndarray/zeros-like' );
 
@@ -145,10 +123,7 @@ var x = array( [ -1.0, 2.0, -3.0 ] );
 var y = zerosLike( x );
 
 var out = cusum.assign( x, y );
-// returns <ndarray>
-
-var v = ndarray2array( out );
-// returns [ -1.0, 1.0, -2.0 ]
+// returns <ndarray>[ -1.0, 1.0, -2.0 ]
 
 var bool = ( out === y );
 // returns true
