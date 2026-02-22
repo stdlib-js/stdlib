@@ -40,11 +40,11 @@
 *     return x + y;
 * }
 *
-* float X[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
+* const float X[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
 * float Z[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f };
-* float Y[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
+* const float Y[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
 *
-* int64_t N = 6;
+* const int64_t N = 6;
 *
 * stdlib_strided_smap2( N, X, 1, Y, 1, Z, 1, addf );
 */
