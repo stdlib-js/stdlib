@@ -48,19 +48,14 @@ interface Namespace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = ns.cusum( x );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ -1.0, 1.0, -2.0 ]
+	* // returns <ndarray>[ -1.0, 1.0, -2.0 ]
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var zerosLike = require( '@stdlib/ndarray/zeros-like' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
@@ -68,13 +63,10 @@ interface Namespace {
 	* var y = zerosLike( x );
 	*
 	* var out = ns.cusum.assign( x, y );
-	* // returns <ndarray>
+	* // returns <ndarray>[ -1.0, 1.0, -2.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ -1.0, 1.0, -2.0 ]
 	*/
 	cusum: typeof cusum;
 
