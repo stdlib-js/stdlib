@@ -1,5 +1,5 @@
-abs,"var arr = [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ];\nvar x = array( arr );\nvar y = abs( x );\nndarray2array( y )\n"
-abs.assign,"var arr = [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ];\nvar x = array( arr );\nvar sh = ndarrayShape( x );\nvar y = ndzeros( sh );\nvar out = abs.assign( x, y );\nvar bool = ( out === y )\nndarray2array( y )\n"
+abs,"var arr = [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ];\nvar x = array( arr );\nvar y = abs( x )\n"
+abs.assign,"var arr = [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ];\nvar x = array( arr );\nvar sh = ndarrayShape( x );\nvar y = ndzeros( sh );\nvar out = abs.assign( x, y )\nvar bool = ( out === y )\n"
 acartesianPower,"var x = [ 1, 2 ];\nvar out = acartesianPower( x, 2 )\n"
 acartesianProduct,"var x1 = [ 1, 2 ];\nvar x2 = [ 3, 4 ];\nvar out = acartesianProduct( x1, x2 )\n"
 acartesianSquare,"var out = acartesianSquare( [ 1, 2 ] )\n"
