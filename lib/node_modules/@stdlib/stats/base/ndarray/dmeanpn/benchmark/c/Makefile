@@ -82,7 +82,7 @@ LIBRARIES ?=
 LIBPATH ?=
 
 # List of C targets:
-c_targets := example.out
+c_targets := benchmark.length.out
 
 
 # RULES #
@@ -124,7 +124,7 @@ $(c_targets): %.out: %.c
 	$(QUIET) $(CC) $(CFLAGS) $(fPIC) $(INCLUDE) -o $@ $(SOURCE_FILES) $< $(LIBPATH) -lm $(LIBRARIES)
 
 #/
-# Runs compiled examples.
+# Runs compiled benchmarks.
 #
 # @example
 # make run
