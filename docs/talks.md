@@ -24,6 +24,19 @@ limitations under the License.
 
 > Talks featuring stdlib.
 
+## 2026
+
+### The Compute Revolution You’re Ignoring: JavaScript in Science
+
+> [Gunj Joshi][gunjjoshi], DevConf.IN, February 2026
+
+<div class="image" align="center">
+    <a title="The Compute Revolution You’re Ignoring: JavaScript in Science" href="https://youtu.be/pPjMEzm_R-0">
+        <img width="480" src="" alt="The Compute Revolution You’re Ignoring: JavaScript in Science">
+    </a>
+    <br>
+</div>
+
 ## 2025
 
 ### The Future of Numerical Computing in JavaScript
