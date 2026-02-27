@@ -66,7 +66,7 @@ var bool = isBooleanArray( arr );
 
 ## Examples
 
-<!-- eslint-disable object-curly-newline -->
+<!-- eslint-disable object-curly-newline, stdlib/eol-open-bracket-spacing, stdlib/line-closing-bracket-spacing -->
 
 <!-- eslint no-undef: "error" -->
 
@@ -124,7 +124,7 @@ bool = isBooleanArray( new Uint8Array( 10 ) );
 bool = isBooleanArray( new Uint8ClampedArray( 10 ) );
 // returns false
 
-bool = isBooleanArray({ 'length': 0 });
+bool = isBooleanArray( { 'length': 0 } );
 // returns false
 ```
 

@@ -66,7 +66,7 @@ var bool = isComplexTypedArray( arr );
 
 ## Examples
 
-<!-- eslint-disable object-curly-newline -->
+<!-- eslint-disable object-curly-newline, stdlib/eol-open-bracket-spacing, stdlib/line-closing-bracket-spacing -->
 
 <!-- eslint no-undef: "error" -->
 
@@ -120,7 +120,7 @@ bool = isComplexTypedArray( new Uint8Array( 10 ) );
 bool = isComplexTypedArray( new Uint8ClampedArray( 10 ) );
 // returns false
 
-bool = isComplexTypedArray({ 'length': 0 });
+bool = isComplexTypedArray( { 'length': 0 } );
 // returns false
 ```
 

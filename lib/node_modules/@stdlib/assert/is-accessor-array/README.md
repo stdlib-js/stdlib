@@ -71,7 +71,7 @@ var bool = isAccessorArray( arr );
 
 ## Examples
 
-<!-- eslint-disable object-curly-newline -->
+<!-- eslint-disable object-curly-newline, stdlib/eol-open-bracket-spacing, stdlib/line-closing-bracket-spacing -->
 
 <!-- eslint no-undef: "error" -->
 
@@ -125,10 +125,10 @@ bool = isAccessorArray( new Uint8Array( 10 ) );
 bool = isAccessorArray( new Uint8ClampedArray( 10 ) );
 // returns false
 
-bool = isAccessorArray({ 'length': 0 });
+bool = isAccessorArray( { 'length': 0 } );
 // returns false
 
-bool = isAccessorArray({});
+bool = isAccessorArray( {} );
 // returns false
 
 bool = isAccessorArray( 'beep' );

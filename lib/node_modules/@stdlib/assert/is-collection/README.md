@@ -55,7 +55,7 @@ var bool = isCollection( [] );
 
 ## Examples
 
-<!-- eslint-disable object-curly-newline -->
+<!-- eslint-disable object-curly-newline, stdlib/eol-open-bracket-spacing, stdlib/line-closing-bracket-spacing -->
 
 <!-- eslint no-undef: "error" -->
 
@@ -101,10 +101,10 @@ bool = isCollection( new Uint8Array( 10 ) );
 bool = isCollection( new Uint8ClampedArray( 10 ) );
 // returns true
 
-bool = isCollection({ 'length': 0 });
+bool = isCollection( { 'length': 0 } );
 // returns true
 
-bool = isCollection({});
+bool = isCollection( {} );
 // returns false
 
 bool = isCollection( 'beep' );
