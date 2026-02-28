@@ -469,7 +469,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -482,13 +481,10 @@ interface Namespace {
 	* var initial = scalar2ndarray( 0.0, 'float32', 'row-major' );
 	*
 	* var v = ns.scusum( [ x, y, initial ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 4.0, 8.0, 10.0 ]
 	*/
 	scusum: typeof scusum;
 
