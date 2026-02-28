@@ -27,36 +27,19 @@ import { ndarray } from '@stdlib/types/ndarray';
 *
 * @param x - input array
 * @param n - number of singleton dimensions to prepend
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 *
-* var shx = x.shape;
-* // returns [ 2, 2 ]
-*
-* var y = prependSingletonDimensions( x, 3 );
-* // returns <ndarray>
-*
-* var shy = y.shape;
-* // returns [ 1, 1, 1, 2, 2 ]
-*
-* var v = y.get( 0, 0, 0, 0, 0 );
-* // returns 1
-*
-* v = y.get( 0, 0, 0, 0, 1 );
-* // returns 2
-*
-* v = y.get( 0, 0, 0, 1, 0 );
-* // returns 3
-*
-* v = y.get( 0, 0, 0, 1, 1 );
-* // returns 4
+* var y = prependSingletonDimensions( x, 3, false );
+* // returns <ndarray>[ [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ] ]
 */
-declare function prependSingletonDimensions( x: ndarray, n: number ): ndarray;
+declare function prependSingletonDimensions( x: ndarray, n: number, writable: boolean ): ndarray;
 
 
 // EXPORTS //

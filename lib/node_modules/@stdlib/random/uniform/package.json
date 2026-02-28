@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/random/uniform",
   "version": "0.0.0",
-  "description": "Generate pseudorandom numbers drawn from a uniform distribution.",
+  "description": "Generate pseudorandom numbers drawn from a continuous uniform distribution.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -68,6 +68,8 @@
     "seedable",
     "ndarray",
     "multidimensional",
-    "array"
+    "array",
+    "vector",
+    "matrix"
   ]
 }

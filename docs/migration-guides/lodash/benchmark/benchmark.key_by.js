@@ -23,6 +23,7 @@
 var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var tryRequire = require( '@stdlib/utils/try-require' );
+var format = require( '@stdlib/string/format' );
 var keyBy = require( '@stdlib/utils/key-by' );
 var pkg = require( './../package.json' ).name;
 
@@ -37,7 +38,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:utils/key-by', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:utils/key-by', pkg ), opts, function benchmark( b ) {
 	var arr;
 	var out;
 	var i;
@@ -69,7 +70,7 @@ bench( pkg+'::stdlib:utils/key-by', opts, function benchmark( b ) {
 	}
 });
 
-bench( pkg+'::lodash:keyBy', opts, function benchmark( b ) {
+bench( format( '%s::lodash:keyBy', pkg ), opts, function benchmark( b ) {
 	var arr;
 	var out;
 	var i;

@@ -46,16 +46,12 @@ Returns a one-dimensional [ndarray][@stdlib/ndarray/ctor] formed by concatenatin
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 var x = array( [ -1.0, 2.0, 3.0, 4.0 ] );
 var y = array( [ -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ] );
 
 var out = concat1d( x, y );
-// returns <ndarray>
-
-var arr = ndarray2array( out );
-// returns [ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
+// returns <ndarray>[ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
 ```
 
 The function accepts the following arguments:
@@ -71,20 +67,16 @@ Concatenates provided input arguments and assigns the result to a provided one-d
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
 var zeros = require( '@stdlib/ndarray/zeros' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 var x = array( [ -1.0, 2.0, 3.0, 4.0 ] );
 var y = array( [ -5.0, 6.0, -7.0, -8.0 ] );
 var z = zeros( [ 8 ] );
 
 var out = concat1d.assign( x, y, z );
-// returns <ndarray>
+// returns <ndarray>[ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0 ]
 
 var bool = ( out === z );
 // returns true
-
-var arr = ndarray2array( z );
-// returns [ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0 ]
 ```
 
 The function accepts the following arguments:

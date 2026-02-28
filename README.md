@@ -20,6 +20,20 @@ limitations under the License.
 
 <!-- lint disable first-heading-level -->
 
+<!-- FIXME: the following two empty sections are merely to satisfy the linter for `expected-html-sections` which cannot, atm, be turned off -->
+
+<section class="usage">
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+</section>
+
+<!-- /.examples -->
+
 <!-- Section to include announcements. If section is included, add a horizontal rule *after* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="announcement">
@@ -31,17 +45,19 @@ limitations under the License.
 <!-- Section to include assets such as the project logo, etc. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="banner">
-    <div class="image" align="center">
-        <br>
-        <br>
-        <a href="https://stdlib.io/" />
-            <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9f7d30f089ecc458a8b836a75afab75caf5c0b36/docs/assets/logo_banner.svg" alt="stdlib logo">
-        </a>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
+
+<div class="image" align="center">
+    <br>
+    <br>
+    <a href="https://stdlib.io/" />
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@9f7d30f089ecc458a8b836a75afab75caf5c0b36/docs/assets/logo_banner.svg" alt="stdlib logo">
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
 </section>
 
 <!-- /.banner -->
@@ -80,7 +96,7 @@ Thank you for being a part of our community! Your support is invaluable to us!
 -   [**Google Calendar**][stdlib-public-calendar]: calendar of public events, including [open office hours][stdlib-office-hours].
 -   [**Open Collective**][open-collective-stdlib]: financially support the project.
 -   [**Bluesky**][stdlib-bluesky]: follow us on social media.
--   [**Gitter**][stdlib-gitter]: chat with project maintainers and other community members.
+-   [**Zulip**][stdlib-zulip]: chat with project maintainers and other community members.
 
 ## Features
 
@@ -569,6 +585,15 @@ stdlib development is generously supported by the following sponsors:
     <br>
 </div>
 
+<div class="image" align="center">
+    <br>
+    <a href="https://zulip.com/">
+        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@a6c5bd56c188c946bade9e5de285a8ada16f34f4/docs/assets/sponsors/zulip_logo.png" alt="Zulip">
+    </a>
+    <br>
+    <br>
+</div>
+
 Are you interested in supporting stdlib? If so, join our [Open Collective][open-collective-stdlib]!
 
 </section>
@@ -660,7 +685,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright © 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright © 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -713,26 +738,13 @@ You can also subscribe to our [project calendar][stdlib-public-calendar] to stay
 
 </section>
 
-<!-- /.badges> -->
+<!-- /.badges -->
 
 <!-- Project acknowledgments. If section is included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<!-- * * *
-
 <section class="acknowledgments">
 
-## Acknowledgments
-
-### Build Infrastructure
-
-Test and build infrastructure is generously provided by the following services:
-
-<div class="image" align="center">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3de52540666d1635df046d7e5dd07a1fc5b87d85/docs/assets/misc/ci_logo_banner.svg" alt="Continuous Integration Service Logos">
-    <br>
-</div>
-
-</section> -->
+</section>
 
 <!-- /.acknowledgments -->
 
@@ -764,9 +776,9 @@ Test and build infrastructure is generously provided by the following services:
 
 [dev-dependencies-url]: https://socket.dev/npm/package/@stdlib/stdlib/dependencies -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
 
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-url]: https://stdlib.zulipchat.com
 
 [make]: https://www.gnu.org/software/make/
 
@@ -842,7 +854,7 @@ Test and build infrastructure is generously provided by the following services:
 
 [stdlib-bluesky]: https://bsky.app/profile/stdlib.io
 
-[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [stdlib-gsoc]: https://github.com/stdlib-js/google-summer-of-code
 

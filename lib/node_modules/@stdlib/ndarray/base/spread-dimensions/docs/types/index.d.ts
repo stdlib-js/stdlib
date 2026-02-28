@@ -34,6 +34,7 @@ import { Collection } from '@stdlib/types/array';
 * @param ndims - number of dimensions in the output array
 * @param x - input array
 * @param dims - dimension indices
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
@@ -45,7 +46,7 @@ import { Collection } from '@stdlib/types/array';
 * var shx = x.shape;
 * // returns [ 2, 2 ]
 *
-* var y = spreadDimensions( 5, x, [ 1, 3 ] );
+* var y = spreadDimensions( 5, x, [ 1, 3 ], false );
 * // returns <ndarray>
 *
 * var shy = y.shape;
@@ -63,7 +64,7 @@ import { Collection } from '@stdlib/types/array';
 * v = y.get( 0, 1, 0, 1, 0 );
 * // returns 4
 */
-declare function spreadDimensions<T extends ndarray>( ndims: number, x: T, dims: Collection<number> ): T;
+declare function spreadDimensions<T extends ndarray>( ndims: number, x: T, dims: Collection<number>, writable: boolean ): T;
 
 
 // EXPORTS //
