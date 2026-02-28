@@ -1152,6 +1152,7 @@ base.ndarray.prototype.get,"\nbase.ndarray.prototype.get( ...idx:integer )\n    
 base.ndarray.prototype.iget,"\nbase.ndarray.prototype.iget( idx:integer )\n    Returns an array element located at a specified linear index.\n"
 base.ndarray.prototype.set,"\nbase.ndarray.prototype.set( ...idx:integer, v:any )\n    Sets an array element specified according to provided subscripts.\n"
 base.ndarray.prototype.iset,"\nbase.ndarray.prototype.iset( idx:integer, v:any )\n    Sets an array element located at a specified linear index.\n"
+base.ndarray.prototype.toLocaleString,"\nbase.ndarray.prototype.toLocaleString( [locales:string|Array[, \n  options:Object]] )\n    Serializes an ndarray as a locale-aware string.\n"
 base.ndarray.prototype.toString,"\nbase.ndarray.prototype.toString()\n    Serializes an ndarray as a string.\n"
 base.ndarray.prototype.toJSON,"\nbase.ndarray.prototype.toJSON()\n    Serializes an ndarray as a JSON object.\n"
 base.ndarrayUnary,"\nbase.ndarrayUnary( arrays:ArrayLikeObject<ndarray>, fcn:Function )\n    Applies a unary callback to elements in an input ndarray and assigns results\n    to elements in an output ndarray.\n"
