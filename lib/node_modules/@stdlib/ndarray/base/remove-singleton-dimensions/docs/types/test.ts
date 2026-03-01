@@ -26,19 +26,31 @@ import removeSingletonDimensions = require( './index' );
 {
 	const x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 
-	removeSingletonDimensions( x ); // $ExpectType ndarray
+	removeSingletonDimensions( x, false ); // $ExpectType ndarray
 }
 
 // The compiler throws an error if the function is not provided a first argument which is an ndarray...
 {
-	removeSingletonDimensions( '5' ); // $ExpectError
-	removeSingletonDimensions( 5 ); // $ExpectError
-	removeSingletonDimensions( true ); // $ExpectError
-	removeSingletonDimensions( false ); // $ExpectError
-	removeSingletonDimensions( null ); // $ExpectError
-	removeSingletonDimensions( {} ); // $ExpectError
-	removeSingletonDimensions( [ '5' ] ); // $ExpectError
-	removeSingletonDimensions( ( x: number ): number => x ); // $ExpectError
+	removeSingletonDimensions( '5', false ); // $ExpectError
+	removeSingletonDimensions( 5, false ); // $ExpectError
+	removeSingletonDimensions( true, false ); // $ExpectError
+	removeSingletonDimensions( false, false ); // $ExpectError
+	removeSingletonDimensions( null, false ); // $ExpectError
+	removeSingletonDimensions( {}, false ); // $ExpectError
+	removeSingletonDimensions( [ '5' ], false ); // $ExpectError
+	removeSingletonDimensions( ( x: number ): number => x, false ); // $ExpectError
+}
+
+// The compiler throws an error if the function is not provided a second argument which is a boolean...
+{
+	const x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+
+	removeSingletonDimensions( x, '5' ); // $ExpectError
+	removeSingletonDimensions( x, 5 ); // $ExpectError
+	removeSingletonDimensions( x, null ); // $ExpectError
+	removeSingletonDimensions( x, {} ); // $ExpectError
+	removeSingletonDimensions( x, [ '5' ] ); // $ExpectError
+	removeSingletonDimensions( x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -46,5 +58,6 @@ import removeSingletonDimensions = require( './index' );
 	const x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 
 	removeSingletonDimensions(); // $ExpectError
-	removeSingletonDimensions( x, [ 1, 2, 3 ], [ 2, 3 ] ); // $ExpectError
+	removeSingletonDimensions( x ); // $ExpectError
+	removeSingletonDimensions( x, false, {} ); // $ExpectError
 }
