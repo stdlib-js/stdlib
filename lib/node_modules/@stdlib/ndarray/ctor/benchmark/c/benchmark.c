@@ -158,7 +158,7 @@ static double benchmark2( void ) {
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
 		// NOTE: this is likely to be optimized away by a modern compiler, making this benchmark meaningless.
-		v = stdlib_ndarray_bytelength( arr );
+		v = stdlib_ndarray_byte_length( arr );
 		if ( v != 6 ) {
 			printf( "unexpected result\n" );
 			break;
@@ -180,8 +180,8 @@ static double benchmark2( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark3( void ) {
+	const uint8_t *v;
 	double elapsed;
-	uint8_t *v;
 	double t;
 	int i;
 
@@ -487,8 +487,8 @@ static double benchmark9( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark10( void ) {
+	const int64_t *v;
 	double elapsed;
-	int64_t *v;
 	double t;
 	int i;
 
@@ -531,8 +531,8 @@ static double benchmark10( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark11( void ) {
+	const int64_t *v;
 	double elapsed;
-	int64_t *v;
 	double t;
 	int i;
 
@@ -3091,8 +3091,8 @@ static double benchmark62( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark63( void ) {
+	const int8_t *v;
 	double elapsed;
-	int8_t *v;
 	double t;
 	int i;
 
@@ -3167,6 +3167,138 @@ static double benchmark64( void ) {
 	elapsed = tic() - t;
 
 	if ( v != submodes[ 0 ] ) {
+		printf( "unexpected result\n" );
+	}
+	stdlib_ndarray_free( arr );
+
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @return elapsed time in seconds
+*/
+static double benchmark65( void ) {
+	double elapsed;
+	int64_t v;
+	double t;
+	int i;
+
+	uint8_t buffer[] = { 0, 0, 0, 0, 0, 0 };
+	int64_t ndims = 2;
+	int64_t shape[] = { 3, 2 };
+	int64_t strides[] = { 2, 1 };
+	int64_t offset = 0;
+	int64_t nsubmodes = 1;
+	int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
+
+	struct ndarray *arr = stdlib_ndarray_allocate( STDLIB_NDARRAY_UINT8, buffer, ndims, shape, strides, offset, STDLIB_NDARRAY_ROW_MAJOR, STDLIB_NDARRAY_INDEX_ERROR, nsubmodes, submodes );
+	if ( arr == NULL ) {
+		printf( "unable to allocate memory\n" );
+		exit( 1 );
+	}
+
+	t = tic();
+	for ( i = 0; i < ITERATIONS; i++ ) {
+		// NOTE: this is likely to be optimized away by a modern compiler, making this benchmark meaningless.
+		v = stdlib_ndarray_byte_length_per_element( arr );
+		if ( v != 1 ) {
+			printf( "unexpected result\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+
+	if ( v != 1 ) {
+		printf( "unexpected result\n" );
+	}
+	stdlib_ndarray_free( arr );
+
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @return elapsed time in seconds
+*/
+static double benchmark66( void ) {
+	double elapsed;
+	int64_t v;
+	int64_t j;
+	double t;
+	int i;
+
+	uint8_t buffer[] = { 0, 0, 0, 0, 0, 0 };
+	int64_t ndims = 2;
+	int64_t shape[] = { 3, 2 };
+	int64_t strides[] = { -2, -1 };
+	int64_t offset = 5;
+	int64_t nsubmodes = 1;
+	int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
+
+	struct ndarray *arr = stdlib_ndarray_allocate( STDLIB_NDARRAY_UINT8, buffer, ndims, shape, strides, offset, STDLIB_NDARRAY_ROW_MAJOR, STDLIB_NDARRAY_INDEX_ERROR, nsubmodes, submodes );
+	if ( arr == NULL ) {
+		printf( "unable to allocate memory\n" );
+		exit( 1 );
+	}
+
+	t = tic();
+	for ( i = 0; i < ITERATIONS; i++ ) {
+		j = (int64_t)( rand_double()*ndims );
+		v = stdlib_ndarray_stride_elements( arr, j );
+		if ( v != strides[ j ] ) {
+			printf( "unexpected result\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+
+	if ( v != strides[ j ] ) {
+		printf( "unexpected result\n" );
+	}
+	stdlib_ndarray_free( arr );
+
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @return elapsed time in seconds
+*/
+static double benchmark67( void ) {
+	double elapsed;
+	int64_t v;
+	double t;
+	int i;
+
+	uint8_t buffer[] = { 0, 0, 0, 0, 0, 0 };
+	int64_t ndims = 2;
+	int64_t shape[] = { 3, 2 };
+	int64_t strides[] = { -2, -1 };
+	int64_t offset = 5;
+	int64_t nsubmodes = 1;
+	int8_t submodes[] = { STDLIB_NDARRAY_INDEX_ERROR };
+
+	struct ndarray *arr = stdlib_ndarray_allocate( STDLIB_NDARRAY_UINT8, buffer, ndims, shape, strides, offset, STDLIB_NDARRAY_ROW_MAJOR, STDLIB_NDARRAY_INDEX_ERROR, nsubmodes, submodes );
+	if ( arr == NULL ) {
+		printf( "unable to allocate memory\n" );
+		exit( 1 );
+	}
+
+	t = tic();
+	for ( i = 0; i < ITERATIONS; i++ ) {
+		v = stdlib_ndarray_offset_elements( arr );
+		if ( v != offset ) {
+			printf( "unexpected result\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+
+	if ( v != offset ) {
 		printf( "unexpected result\n" );
 	}
 	stdlib_ndarray_free( arr );
@@ -3633,6 +3765,27 @@ int main( void ) {
 		count += 1;
 		printf( "# c::native::%s::get:submode\n", NAME );
 		elapsed = benchmark64();
+		print_results( elapsed );
+		printf( "ok %d benchmark finished\n", count );
+	}
+	for ( i = 0; i < REPEATS; i++ ) {
+		count += 1;
+		printf( "# c::native::%s::get:byte_length_per_element\n", NAME );
+		elapsed = benchmark65();
+		print_results( elapsed );
+		printf( "ok %d benchmark finished\n", count );
+	}
+	for ( i = 0; i < REPEATS; i++ ) {
+		count += 1;
+		printf( "# c::native::%s::get:stride_elements\n", NAME );
+		elapsed = benchmark66();
+		print_results( elapsed );
+		printf( "ok %d benchmark finished\n", count );
+	}
+	for ( i = 0; i < REPEATS; i++ ) {
+		count += 1;
+		printf( "# c::native::%s::get:offset_elements\n", NAME );
+		elapsed = benchmark67();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}

@@ -35,7 +35,7 @@
 * int64_t n = stdlib_ndarray_numel( ndims, shape );
 * // returns 80
 */
-int64_t stdlib_ndarray_numel( int64_t ndims, int64_t *shape ) {
+int64_t stdlib_ndarray_numel( const int64_t ndims, const int64_t *shape ) {
 	int64_t n;
 	int64_t i;
 

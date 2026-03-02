@@ -52,7 +52,7 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 * var y = array( new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );
 *
 * var z = ddot( x, y );
-* returns <ndarray>
+* // returns <ndarray>
 *
 * var v = z.get();
 * // returns -5.0

@@ -127,6 +127,13 @@ eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 eslint.rules[ 'stdlib/jsdoc-doctest' ] = 'off';
 
 /**
+* Do not enforce nested function elevation.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'off';
+
+/**
 * Allow the use of `undefined`.
 *
 * @private

@@ -79,15 +79,15 @@ napi_value stdlib_math_base_napi_iid_d( napi_env env, napi_callback_info info, d
 	}
 
 	int32_t x;
-	status = napi_get_value_int32( env, argv[ 1 ], &x );
+	status = napi_get_value_int32( env, argv[ 0 ], &x );
 	assert( status == napi_ok );
 
 	int32_t y;
-	status = napi_get_value_int32( env, argv[ 2 ], &y );
+	status = napi_get_value_int32( env, argv[ 1 ], &y );
 	assert( status == napi_ok );
 
 	double z;
-	status = napi_get_value_double( env, argv[ 0 ], &z );
+	status = napi_get_value_double( env, argv[ 2 ], &z );
 	assert( status == napi_ok );
 
 	napi_value v;

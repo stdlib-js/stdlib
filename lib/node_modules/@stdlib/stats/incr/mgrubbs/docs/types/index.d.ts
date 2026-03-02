@@ -123,10 +123,9 @@ type accumulator = ( x?: number ) => Results | null;
 * var rnorm = require( '@stdlib/random/base/normal' );
 *
 * var accumulator;
-* var opts;
 * var i;
 *
-* accumulator = incrmgrubbs( 20, opts );
+* accumulator = incrmgrubbs( 20 );
 *
 * for ( i = 0; i < 200; i++ ) {
 *     res = accumulator( rnorm( 10.0, 5.0 ) );

@@ -29,6 +29,8 @@ import { Complex64Array } from '@stdlib/types/array';
 * @returns boolean indicating whether value is a Complex64Array
 *
 * @example
+* var Complex64Array = require( '@stdlib/array/complex64' );
+*
 * var bool = isComplex64Array( new Complex64Array( 10 ) );
 * // returns true
 *

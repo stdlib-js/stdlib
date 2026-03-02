@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Returns an object mapping supported data type strings to enumeration
+    constants.
+
+    Returns
+    -------
+    out: Object
+        Object mapping supported data type strings to enumeration constants.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    {...}
+
+    See Also
+    --------
+

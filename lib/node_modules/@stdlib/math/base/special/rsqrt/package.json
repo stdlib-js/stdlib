@@ -65,5 +65,83 @@
     "number",
     "reciprocal",
     "inverse"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "rsqrt",
+      "alias": "rsqrt",
+      "pkg_desc": "compute the reciprocal square root of a double-precision floating-point number",
+      "desc": "computes the reciprocal square root of a double-precision floating-point number",
+      "short_desc": "reciprocal square root",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.1,
+              100
+            ]
+          },
+          "example_values": [
+            0.025,
+            0.01,
+            0.25,
+            0.5,
+            1,
+            2,
+            3,
+            4,
+            9,
+            16,
+            25,
+            36,
+            49,
+            64,
+            81,
+            100,
+            0.1,
+            10,
+            50,
+            99.99
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "reciprocal square root",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "sqrt",
+        "principal",
+        "square",
+        "root",
+        "reciprocal",
+        "inverse"
+      ],
+      "extra_keywords": [
+        "math.sqrt"
+      ]
+    }
+  }
 }

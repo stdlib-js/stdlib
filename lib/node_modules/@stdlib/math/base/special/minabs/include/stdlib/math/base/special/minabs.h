@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the absolute minimum value.
+* Returns the minimum absolute value.
 */
 double stdlib_base_minabs( const double x, const double y );
 

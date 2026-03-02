@@ -1,0 +1,25 @@
+
+{{alias}}( x )
+    Returns a read-only view of an input ndarray in which the order of elements
+    along the second-to-last dimension is reversed.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    Returns
+    -------
+    out: ndarray
+        A read-only view of an input ndarray in which the order of elements
+        along the second-to-last dimension is reversed.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+    > var y = {{alias}}( x )
+    <ndarray>[ [ 3, 4 ], [ 1, 2 ] ]
+
+    See Also
+    --------

@@ -52,7 +52,7 @@ var image = require( '@stdlib/datasets/img-locomotion-nude-male' );
 Returns a [buffer][@stdlib/buffer/ctor] containing image data.
 
 ```javascript
-var img = image;
+var img = image();
 // returns <Buffer>
 ```
 

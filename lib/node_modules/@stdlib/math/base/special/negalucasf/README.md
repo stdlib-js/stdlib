@@ -191,19 +191,19 @@ for ( i = 0; i > -35; i-- ) {
 Computes the nth [negaLucas number][lucas-number] in single-precision floating-point format.
 
 ```c
-float out = stdlib_base_negalucasf( 0 );
+float out = stdlib_base_negalucasf( 0.0f );
 // returns 0.0f
 
-out = stdlib_base_negalucasf( -1 );
+out = stdlib_base_negalucasf( -1.0f );
 // returns -1.0f
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int32_t` input value.
+-   **n**: `[in] float` input value.
 
 ```c
-float stdlib_base_negalucasf( const int32_t n );
+float stdlib_base_negalucasf( const float n );
 ```
 
 </section>
@@ -227,15 +227,14 @@ float stdlib_base_negalucasf( const int32_t n );
 ```c
 #include "stdlib/math/base/special/negalucasf.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-    int32_t i;
+    float i;
     float v;
 
-    for ( i = 0; i > -35; i-- ) {
+    for ( i = 0.0f; i > -35.0f; i-- ) {
         v = stdlib_base_negalucasf( i );
-        printf( "negalucasf(%d) = %f\n", i, v );
+        printf( "negalucasf(%f) = %f\n", i, v );
     }
 }
 ```

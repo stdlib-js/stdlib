@@ -1,0 +1,122 @@
+
+{{alias}}( x[, sortOrder][, options] )
+    Returns a new ndarray containing the elements of an input ndarray sorted
+    along one or more ndarray dimensions using heapsort.
+
+    The algorithm distinguishes between `-0` and `+0`. When sorted in increasing
+    order, `-0` is sorted before `+0`. When sorted in decreasing order, `-0` is
+    sorted after `+0`.
+
+    The algorithm sorts `NaN` values to the end. When sorted in increasing
+    order, `NaN` values are sorted last. When sorted in decreasing order, `NaN`
+    values are sorted first.
+
+    The algorithm has space complexity O(1) and time complexity O(N log2 N).
+
+    The algorithm is *unstable*, meaning that the algorithm may change the order
+    of ndarray elements which are equal or equivalent (e.g., `NaN` values).
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a real-valued or "generic" data type.
+
+    sortOrder: ndarray|number|string (optional)
+        Sort order. May be either a scalar value, string, or an ndarray having a
+        real-valued or "generic" data type. If provided an ndarray, the value
+        must have a shape which is broadcast compatible with the complement of
+        the shape defined by `options.dims`. For example, given the input shape
+        `[2, 3, 4]` and `options.dims=[0]`, an ndarray sort order must have a
+        shape which is broadcast compatible with the shape `[3, 4]`. Similarly,
+        when performing the operation over all elements in a provided input
+        ndarray, an ndarray sort order must be a zero-dimensional ndarray.
+
+        If specified as a string, must be one of the following values:
+
+        - ascending: sort in increasing order.
+        - asc: sort in increasing order.
+        - descending: sort in decreasing order.
+        - desc: sort in decreasing order.
+
+        By default, the sort order is `1` (i.e., increasing order).
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided, the
+        function performs the operation over all elements in a provided input
+        ndarray.
+
+    options.dtype: string|DataType (optional)
+        Output array data type.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
+    > var out = {{alias}}( x );
+    > {{alias:@stdlib/ndarray/to-array}}( out )
+    [ -4.0, -3.0, -1.0, 2.0 ]
+
+
+{{alias}}.assign( x, out[, sortOrder][, options] )
+    Sorts elements of an input ndarray along one or more ndarray dimensions
+    using heapsort and assigns the results to an output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a real-valued or "generic" data type.
+
+    out: ndarray
+        Output array. Must have a real-valued or "generic" data type.
+
+    sortOrder: ndarray|number|string (optional)
+        Sort order. May be either a scalar value, string, or an ndarray having a
+        real-valued or "generic" data type. If provided an ndarray, the value
+        must have a shape which is broadcast compatible with the complement of
+        the shape defined by `options.dims`. For example, given the input shape
+        `[2, 3, 4]` and `options.dims=[0]`, an ndarray sort order must have a
+        shape which is broadcast compatible with the shape `[3, 4]`. Similarly,
+        when performing the operation over all elements in a provided input
+        ndarray, an ndarray sort order must be a zero-dimensional ndarray.
+
+        If specified as a string, must be one of the following values:
+
+        - ascending: sort in increasing order.
+        - asc: sort in increasing order.
+        - descending: sort in decreasing order.
+        - desc: sort in decreasing order.
+
+        By default, the sort order is `1` (i.e., increasing order).
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided, the
+        function performs the operation over all elements in a provided input
+        ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ -1.0, 2.0, -3.0, -4.0 ] );
+    > var y = {{alias:@stdlib/ndarray/zeros}}( [ 4 ] );
+    > var out = {{alias}}.assign( x, y );
+    > {{alias:@stdlib/ndarray/to-array}}( out )
+    [ -4.0, -3.0, -1.0, 2.0 ]
+    > var bool = ( out === y )
+    true
+
+    See Also
+    --------

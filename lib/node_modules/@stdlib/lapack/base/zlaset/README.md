@@ -37,8 +37,6 @@ Sets the off-diagonal elements and the diagonal elements of a double-precision c
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var A = new Complex128Array( 4 );
 
@@ -48,22 +46,10 @@ var beta = new Complex128( 3.0, 4.0 );
 zlaset( 'row-major', 'all', 2, 2, alpha, beta, A, 2 );
 
 var z = A.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 3.0
-
-var im = imag( z );
-// returns 4.0
+// returns <Complex128>[ 3.0, 4.0 ]
 
 z = A.get( 1 );
-// returns <Complex128>
-
-re = real( z );
-// returns 1.0
-
-im = imag( z );
-// returns 2.0
+// returns <Complex128>[ 1.0, 2.0 ]
 ```
 
 The function has the following parameters:
@@ -84,8 +70,6 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 // Initial array:
 var A0 = new Complex128Array( 5 );
@@ -99,13 +83,7 @@ var beta = new Complex128( 3.0, 4.0 );
 zlaset( 'row-major', 'all', 2, 2, alpha, beta, A1, 2 );
 
 var z = A0.get( 1 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 3.0
-
-var im = imag( z );
-// returns 4.0
+// returns <Complex128>[ 3.0, 4.0 ]
 ```
 
 #### zlaset.ndarray( uplo, M, N, alpha, beta, A, sa1, sa2, oa )
@@ -115,8 +93,6 @@ Sets the off-diagonal elements and the diagonal elements of a double-precision c
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var A = new Complex128Array( 4 );
 
@@ -126,22 +102,10 @@ var beta = new Complex128( 3.0, 4.0 );
 zlaset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 0 );
 
 var z = A.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 3.0
-
-var im = imag( z );
-// returns 4.0
+// returns <Complex128>[ 3.0, 4.0 ]
 
 z = A.get( 1 );
-// returns <Complex128>
-
-re = real( z );
-// returns 1.0
-
-im = imag( z );
-// returns 2.0
+// returns <Complex128>[ 1.0, 2.0 ]
 ```
 
 The function has the following parameters:
@@ -161,8 +125,6 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var A = new Complex128Array( 5 );
 
@@ -172,22 +134,10 @@ var beta = new Complex128( 3.0, 4.0 );
 zlaset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 1 );
 
 var z = A.get( 0 );
-// returns <Complex128>
-
-var re = real( z );
-// returns 0.0
-
-var im = imag( z );
-// returns 0.0
+// returns <Complex128>[ 0.0, 0.0 ]
 
 z = A.get( 1 );
-// returns <Complex128>
-
-re = real( z );
-// returns 3.0
-
-im = imag( z );
-// returns 4.0
+// returns <Complex128>[ 3.0, 4.0 ]
 ```
 
 </section>
