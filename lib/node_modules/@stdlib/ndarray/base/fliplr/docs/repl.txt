@@ -24,15 +24,14 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
-    <ndarray>
-    > x.shape
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+    > {{alias:@stdlib/ndarray/shape}}( x )
     [ 2, 2 ]
     > var y = {{alias}}( x, false )
-    <ndarray>
-    > y.shape
+    <ndarray>[ [ 2, 1 ], [ 4, 3 ] ]
+    > {{alias:@stdlib/ndarray/shape}}( y )
     [ 2, 2 ]
-    > {{alias:@stdlib/ndarray/to-array}}( y )
-    [ [ 2, 1 ], [ 4, 3 ] ]
+
 
     See Also
     --------

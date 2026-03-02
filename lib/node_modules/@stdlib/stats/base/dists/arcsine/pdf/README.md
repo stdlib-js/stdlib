@@ -131,6 +131,8 @@ logEachMap( 'x: %0.4f, a: %0.4f, b: %0.4f, f(x;a,b): %0.4f', x, a, b, pdf );
 
 </section>
 
+<!-- /.examples -->
+
 <!-- C interface documentation. -->
 
 * * *
