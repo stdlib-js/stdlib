@@ -72,22 +72,22 @@ interface PDF {
 	* @returns PDF
 	*
 	* @example
-	* var myPDF = factory( 0.0, 1.0, 0.0, 1.0 );
+	* var myPDF = pdf.factory( 0.0, 1.0, 0.0, 1.0 );
 	* var y = myPDF( 0.8 );
 	* // returns ~0.849
 	*
 	* @example
-	* var myPDF = factory( 0.0, 1.0, 0.5, 1.0 );
+	* var myPDF = pdf.factory( 0.0, 1.0, 0.5, 1.0 );
 	* var y = myPDF( 0.8 );
 	* // returns ~0.996
 	*
 	* @example
-	* var myPDF = factory( 0.0, 1.0, 0.0, 1.0 );
+	* var myPDF = pdf.factory( 0.0, 1.0, 0.0, 1.0 );
 	* var y = myPDF( 2.0 );
 	* // returns 0.0
 	*
 	* @example
-	* var myPDF = factory( 0.0, 1.0, 0.0, 1.0 );
+	* var myPDF = pdf.factory( 0.0, 1.0, 0.0, 1.0 );
 	* var y = myPDF( -1.0 );
 	* // returns 0.0
 	*/
@@ -110,7 +110,7 @@ interface PDF {
 *
 * var mypdf = pdf.factory( -1.0, 1.0, 0.0, 1.0 );
 * y = mypdf( 0.9 );
-* // returns ~0.5896
+* // returns ~0.3898
 */
 declare var pdf: PDF;
 

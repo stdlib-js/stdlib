@@ -102,21 +102,21 @@ interface MGF {
 *
 * @example
 * var y = mgf( 0.5, 0.5, 1.0 );
-* // returns ~1.414
+* // returns ~2.276
 *
 * y = mgf( 0.1, 1.0, 1.0 );
-* // returns ~1.111
+* // returns ~1.181
 *
 * y = mgf( -1.0, 4.0, 2.0 );
-* // returns ~0.198
+* // returns ~0.037
 *
 * var mymgf = mgf.factory( 3.0, 1.5 );
 *
-* y = mymgf( 1.0 );
-* // returns ~26.999
+* y = mymgf( 0.1 );
+* // returns ~1.502
 *
 * y = mymgf( 0.5 );
-* // returns ~3.375
+* // returns ~16.249
 */
 declare var mgf: MGF;
 

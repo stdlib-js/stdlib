@@ -126,7 +126,7 @@ interface PMF {
 * // returns ~0.201
 *
 * y = pmf( 0.0, 10, 0.4 );
-* // returns ~0.06
+* // returns ~0.006
 *
 * var mypmf = pmf.factory( 10, 0.5 );
 *

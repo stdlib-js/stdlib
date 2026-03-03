@@ -76,7 +76,7 @@ var opts = {
 var x = discreteUniform( 100, 0, 100, opts );
 var b = discreteUniform( 100, 0, 5, opts );
 
-logEachMap( 'logf( %0.4f, %0.4f ) = %0.4f', x, b, logf );
+logEachMap( 'logf( %d, %d ) = %0.4f', x, b, logf );
 ```
 
 </section>

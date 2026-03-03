@@ -1,0 +1,7 @@
+---
+type: amend-message
+---
+test: fix test cases for `stats/base/ndarray/*nanmax`
+
+PR-URL: #7926
+Reviewed-by: Athan Reines <kgryte@gmail.com>

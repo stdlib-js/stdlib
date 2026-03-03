@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Computes the minimum and maximum linear indices (in bytes) in an underlying data buffer accessible to an array view.
 */
-int8_t stdlib_ndarray_minmax_view_buffer_index( int64_t ndims, int64_t *shape, int64_t *strides, int64_t offset, int64_t *out );
+int8_t stdlib_ndarray_minmax_view_buffer_index( const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset, int64_t *out );
 
 #ifdef __cplusplus
 }

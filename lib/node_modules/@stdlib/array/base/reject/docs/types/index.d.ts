@@ -296,6 +296,8 @@ declare function reject<T = unknown, U = unknown>( x: Complex64Array, predicate:
 * @returns output array
 *
 * @example
+* var isPositiveNumber = require( '@stdlib/assert/is-positive-number' ).isPrimitive;
+*
 * var x = [ 1, -2, -3, 4 ];
 *
 * var out = reject( x, isPositiveNumber );
@@ -313,6 +315,7 @@ declare function reject<T = unknown, U = unknown>( x: Array<T>, predicate: Predi
 *
 * @example
 * var toAccessorArray = require( '@stdlib/array/base/to-accessor-array' );
+* var isPositiveNumber = require( '@stdlib/assert/is-positive-number' ).isPrimitive;
 *
 * var x = toAccessorArray( [ 1, -2, -3, 4 ] );
 *
@@ -330,6 +333,8 @@ declare function reject<T = unknown, U = unknown>( x: AccessorArrayLike<T>, pred
 * @returns output array
 *
 * @example
+* var isPositiveNumber = require( '@stdlib/assert/is-positive-number' ).isPrimitive;
+*
 * var x = [ 1, -2, -3, 4 ];
 *
 * var out = reject( x, isPositiveNumber );

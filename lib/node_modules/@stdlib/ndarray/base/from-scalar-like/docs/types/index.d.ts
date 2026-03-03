@@ -424,7 +424,7 @@ declare function scalar2ndarrayLike<T = unknown>( x: genericndarray<T>, value: T
 * // returns []
 *
 * var dt = y.dtype;
-* // returns 'generic'
+* // returns 'float64'
 *
 * var v = y.get();
 * // returns 1.0

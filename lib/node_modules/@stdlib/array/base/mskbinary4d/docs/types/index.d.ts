@@ -57,7 +57,7 @@ type Binary<T, U, V> = ( v1: T, v2: U ) => V;
 *
 * var mask = [ [ [ [ 0, 1 ], [ 0, 0 ] ] ] ];
 *
-* mskbinary2d( [ x, y, mask, z ], shape, add );
+* mskbinary4d( [ x, y, mask, z ], shape, add );
 *
 * console.log( z );
 * // => [ [ [ [ 2.0, 0.0 ], [ 2.0, 2.0 ] ] ] ]

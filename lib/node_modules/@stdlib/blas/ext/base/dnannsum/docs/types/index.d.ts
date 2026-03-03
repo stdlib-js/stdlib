@@ -61,7 +61,7 @@ interface Routine {
 	* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 	* var out = new Float64Array( 2 );
 	*
-	* var v = dnannsum( x.length, x, 1, 0, out, 1, 0 );
+	* var v = dnannsum.ndarray( x.length, x, 1, 0, out, 1, 0 );
 	* // returns <Float64Array>[ 1.0, 3 ]
 	*/
 	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, out: Float64Array, strideOut: number, offsetOut: number ): Float64Array;
@@ -92,7 +92,7 @@ interface Routine {
 * var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 * var out = new Float64Array( 2 );
 *
-* var v = dnannsum( x.length, x, 1, 0, out, 1, 0 );
+* var v = dnannsum.ndarray( x.length, x, 1, 0, out, 1, 0 );
 * // returns <Float64Array>[ 1.0, 3 ]
 */
 declare var dnannsum: Routine;

@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Computes the median value of a sorted one-dimensional double-precision
+    floating-point ndarray.
+
+    If provided an empty ndarray, the function returns `NaN`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a sorted one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: number
+        Median value.
+
+    Examples
+    --------
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0 ] );
+    > var dt = 'float64';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > {{alias}}( [ x ] )
+    2.0
+
+    See Also
+    --------
+

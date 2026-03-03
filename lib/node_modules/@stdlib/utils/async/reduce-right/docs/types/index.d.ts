@@ -271,7 +271,7 @@ interface ReduceRightAsync {
 	* };
 	*
 	* // Create a `reduceRightAsync` function which invokes `read` for each collection element concurrently:
-	* var reduceRightAsync = factory( opts, read );
+	* var reduceRight = reduceRightAsync.factory( opts, read );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -291,7 +291,7 @@ interface ReduceRightAsync {
 	* var acc = {
 	*     'count': 0
 	* };
-	* reduceRightAsync( files, acc, done );
+	* reduceRight( files, acc, done );
 	*/
 	factory<T = unknown, U = unknown, V = unknown>( options: Options<T, U, V>, reducer: Reducer<T, U, V> ): FactoryFunction<T, U>;
 
@@ -325,7 +325,7 @@ interface ReduceRightAsync {
 	* }
 	*
 	* // Create a `reduceRightAsync` function which invokes `read` for each collection element concurrently:
-	* var reduceRightAsync = factory( read );
+	* var reduceRight = reduceRightAsync.factory( read );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -345,7 +345,7 @@ interface ReduceRightAsync {
 	* var acc = {
 	*     'count': 0
 	* };
-	* reduceRightAsync( files, acc, done );
+	* reduceRight( files, acc, done );
 	*/
 	factory<T = unknown, U = unknown, V = unknown>( reducer: Reducer<T, U, V> ): FactoryFunction<T, U>;
 }

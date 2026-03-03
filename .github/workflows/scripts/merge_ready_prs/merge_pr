@@ -1,0 +1,206 @@
+#!/bin/bash
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Script to merge a pull request.
+#
+# Usage: merge_pr pr_number
+#
+# Arguments:
+#
+#   pr_number    Pull request number.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN   GitHub token for authentication.
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Get the pull request number:
+pr_number="${1}"
+
+# GitHub API base URL:
+GITHUB_API_URL="https://api.github.com"
+
+# Repository owner and name:
+REPO_OWNER="stdlib-js"
+REPO_NAME="stdlib"
+
+# Exit codes:
+SUCCESS=0
+ERROR=1
+
+# Identifier for PR commit message comments:
+COMMENT_IDENTIFIER="<!-- PR_COMMIT_MESSAGE -->"
+
+# Configure retries for API calls:
+max_retries=3
+retry_delay=2
+
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error message
+on_error() {
+	echo "ERROR: ${1}" >&2
+	exit ${ERROR}
+}
+
+# Performs a GitHub API request.
+#
+# $1 - HTTP method
+# $2 - API endpoint
+# $3 - request data (optional)
+github_api() {
+	local method="${1}"
+	local endpoint="${2}"
+	local data="${3}"
+	local retry_count=0
+	local response=""
+	local status_code
+	local success=false
+
+	# Initialize an array to hold curl headers:
+	local headers=()
+
+	# If GITHUB_TOKEN is set, add the Authorization header:
+	if [ -n "${GITHUB_TOKEN}" ]; then
+		headers+=("-H" "Authorization: token ${GITHUB_TOKEN}")
+	fi
+
+	# For POST requests, always set the Content-Type header:
+	if [ "${method}" != "GET" ]; then
+		headers+=("-H" "Content-Type: application/json")
+	fi
+
+	# Add retry logic...
+	while [ $retry_count -lt $max_retries ] && [ "$success" = false ]; do
+		if [ $retry_count -gt 0 ]; then
+			echo "Retrying request (attempt $((retry_count+1))/${max_retries})..." >&2
+			sleep $retry_delay
+		fi
+
+		# Make the API request:
+		if [ -n "${data}" ]; then
+			response=$(curl -s -w "%{http_code}" -X "${method}" "${headers[@]}" -d "${data}" "${GITHUB_API_URL}${endpoint}")
+		else
+			response=$(curl -s -w "%{http_code}" -X "${method}" "${headers[@]}" "${GITHUB_API_URL}${endpoint}")
+		fi
+
+		# Extract status code (last 3 digits) and actual response (everything before):
+		status_code="${response: -3}"
+		response="${response:0:${#response}-3}"
+
+		# Check if we got a successful response:
+		if [[ $status_code -ge 200 && $status_code -lt 300 ]]; then
+			success=true
+		else
+			echo "API request failed with status $status_code: $response" >&2
+			retry_count=$((retry_count+1))
+		fi
+	done
+
+	if [ "$success" = false ]; then
+		echo "Failed to complete API request after $max_retries attempts" >&2
+		return 1
+	fi
+
+	# Validate that response is valid JSON if expected:
+	if ! echo "$response" | jq -e '.' > /dev/null 2>&1; then
+		echo "Warning: Response is not valid JSON: ${response}" >&2
+		# Return empty JSON object as fallback:
+		echo "{}"
+		return 0
+	fi
+
+	# Return the actual response data (without status code):
+	echo "$response"
+	return 0
+}
+
+# Main execution sequence.
+main() {
+	local commit_message_comment
+	local commit_message
+	local commit_subject
+	local commit_body
+	local comments
+
+	# Check if PR number is provided:
+	if [ -z "${pr_number}" ]; then
+		on_error "PR number is required"
+	fi
+
+	# Fetch PR comments to look for commit message comment:
+	comments=$(github_api "GET" "/repos/${REPO_OWNER}/${REPO_NAME}/issues/${pr_number}/comments")
+	if [ $? -ne 0 ]; then
+		on_error "Failed to fetch comments for PR #${pr_number}"
+	fi
+
+	# Look for the PR commit message comment with the identifier:
+	commit_message_comment=$(echo "${comments}" | jq -r --arg id "${COMMENT_IDENTIFIER}" '.[] | select(.body | contains($id)) | .body')
+
+	if [ -z "${commit_message_comment}" ]; then
+		on_error "No PR commit message comment found for PR #${pr_number}"
+	fi
+
+	# Extract commit message from the Markdown code block in the comment:
+	commit_message=$(echo "${commit_message_comment}" | awk '/```text/{flag=1;next}/```/{flag=0}flag')
+
+	if [ -z "${commit_message}" ]; then
+		on_error "Couldn't extract commit message from PR comment"
+	fi
+
+	# Extract subject (first line) and body (everything after the first line):
+	commit_subject=$(echo "${commit_message}" | head -n 1)
+	commit_body=$(echo "${commit_message}" | tail -n +2)
+	commit_body=$(echo "${commit_body}" | awk 'NF {p=1} p') # Trim leading empty lines
+
+	if [ -z "${commit_subject}" ]; then
+		on_error "Couldn't extract commit subject from PR commit message"
+	fi
+	if [ -z "${commit_body}" ]; then
+		on_error "Couldn't extract commit body from PR commit message"
+	fi
+
+	# Validate that the commit message does not contain placeholder values
+	# (e.g., from a failed API response during commit message generation):
+	if [ "${commit_subject}" = "null" ]; then
+		on_error "Commit subject is the literal string 'null', indicating a failed commit message generation"
+	fi
+	if echo "${commit_body}" | grep -q "^PR-URL: null$"; then
+		on_error "Commit body contains 'PR-URL: null', indicating a failed commit message generation"
+	fi
+
+	# Squash and merge the PR with the extracted subject and body:
+	if ! gh pr merge "${pr_number}" --admin --squash --subject "${commit_subject}" --body "${commit_body}"; then
+		on_error "Failed to merge PR #${pr_number}"
+	fi
+
+	echo "Successfully merged PR #${pr_number}"
+	exit ${SUCCESS}
+}
+
+# Call main with all command-line arguments:
+main "${@}"

@@ -46,20 +46,12 @@ Returns an accessor function for retrieving an element from an array-like object
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( [ 1, 2, 3, 4 ] );
 
 var get = accessorGetter( 'complex64' );
 var v = get( arr, 1 );
-// returns <Complex64>
-
-var re = realf( v );
-// returns 3.0
-
-var im = imagf( v );
-// returns 4.0
+// returns <Complex64>[ 3.0, 4.0 ]
 ```
 
 The returned accessor function accepts the following arguments:
@@ -104,14 +96,14 @@ var accessorGetter = require( '@stdlib/array/base/accessor-getter' );
 
 var arr = new Complex128Array( zeroTo( 10 ) );
 var v = accessorGetter( dtype( arr ) )( arr, 2 );
-// returns <Complex128>
+// returns <Complex128>[ 4.0, 5.0 ]
 
 console.log( v.toString() );
 // => '4 + 5i'
 
 arr = new Complex64Array( zeroTo( 10 ) );
 v = accessorGetter( dtype( arr ) )( arr, 4 );
-// returns <Complex64>
+// returns <Complex64>[ 8.0, 9.0 ]
 
 console.log( v.toString() );
 // => '8 + 9i'

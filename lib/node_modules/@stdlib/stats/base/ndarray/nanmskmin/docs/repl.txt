@@ -1,0 +1,34 @@
+
+{{alias}}( arrays )
+    Calculates the minimum value of a one-dimensional ndarray according to a
+    mask, ignoring `NaN` values.
+
+    If provided an empty ndarray or a mask with all elements set to `1`, the
+    function returns `NaN`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing an input ndarray and a mask ndarray.
+
+    Returns
+    -------
+    out: number
+        Minimum value.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, -2.0, 4.0, 2.0, NaN ];
+    > var dt = 'generic';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var mbuf = [ 0, 0, 1, 0, 0 ];
+    > var mask = new {{alias:@stdlib/ndarray/ctor}}( dt, mbuf, sh, sx, ox, ord );
+    > {{alias}}( [ x, mask ] )
+    -2.0
+
+    See Also
+    --------

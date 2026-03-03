@@ -47,11 +47,8 @@
     > var A = new {{alias:@stdlib/array/complex64}}( abuf );
     > var B = new {{alias:@stdlib/array/complex64}}( bbuf );
     > {{alias}}( 'row-major', 'all', 2, 2, A, 2, B, 2 );
-    > var z = B.get( 0 );
-    > {{alias:@stdlib/complex/float32/real}}( z )
-    1.0
-    > {{alias:@stdlib/complex/float32/imag}}( z )
-    2.0
+    > var z = B.get( 0 )
+    <Complex64>[ 1.0, 2.0 ]
 
 
 {{alias}}.ndarray( uplo, M, N, A, sa1, sa2, oa, B, sb1, sb2, ob )
@@ -110,11 +107,8 @@
     > var A = new {{alias:@stdlib/array/complex64}}( abuf );
     > var B = new {{alias:@stdlib/array/complex64}}( bbuf );
     > {{alias}}.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
-    > var z = B.get( 2 );
-    > {{alias:@stdlib/complex/float32/real}}( z )
-    3.0
-    > {{alias:@stdlib/complex/float32/imag}}( z )
-    4.0
+    > var z = B.get( 2 )
+    <Complex64>[ 3.0, 4.0 ]
 
     See Also
     --------
