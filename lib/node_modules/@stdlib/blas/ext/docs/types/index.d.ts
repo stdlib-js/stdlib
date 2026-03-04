@@ -90,7 +90,7 @@ interface Namespace {
 	*     return value % 2.0 === 0.0;
 	* }
 	*
-	* var x = array( [ -1.0, 2.0, -3.0 ] )
+	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = ns.findIndex( x, clbk );
 	* // returns <ndarray>
@@ -106,7 +106,7 @@ interface Namespace {
 	*     return value % 2.0 === 0.0;
 	* }
 	*
-	* var x = array( [ -1.0, 2.0, -3.0 ] )
+	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	* var y = zeros( [] );
 	*
 	* var out = ns.findIndex.assign( x, y, clbk );
@@ -140,7 +140,7 @@ interface Namespace {
 	*     return value % 2.0 === 0.0;
 	* }
 	*
-	* var x = array( [ -1.0, 2.0, -3.0 ] )
+	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = ns.findLastIndex( x, clbk );
 	* // returns <ndarray>
@@ -156,7 +156,7 @@ interface Namespace {
 	*     return value % 2.0 === 0.0;
 	* }
 	*
-	* var x = array( [ -1.0, 2.0, -3.0 ] )
+	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	* var y = zeros( [] );
 	*
 	* var out = ns.findLastIndex.assign( x, y, clbk );
