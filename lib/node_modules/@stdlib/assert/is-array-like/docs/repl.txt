@@ -1,0 +1,30 @@
+
+{{alias}}( value )
+    Tests if a value is array-like.
+
+    If provided a string, the function returns `true`.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is array-like.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [] )
+    true
+    > bool = {{alias}}( { 'length': 10 } )
+    true
+    > bool = {{alias}}( 'beep' )
+    true
+    > bool = {{alias}}( null )
+    false
+
+    See Also
+    --------
+

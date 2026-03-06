@@ -1,0 +1,38 @@
+
+{{alias}}( μ, s )
+    Returns the skewness of a logistic distribution with location parameter `μ`
+    and scale parameter `s`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `s <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    s: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Skewness.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0, 1.0 )
+    0.0
+    > y = {{alias}}( 4.0, 2.0 )
+    0.0
+    > y = {{alias}}( NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+    > y = {{alias}}( 0.0, 0.0 )
+    NaN
+
+    See Also
+    --------
+

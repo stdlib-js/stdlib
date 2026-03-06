@@ -1,0 +1,288 @@
+Return-Path: <Online#3.20471.b9-LhVolp59dUxVpsRR.1.b@newsletter.online.com>
+Received: from abv-sfo1-acmta1.CNET.COM (abv-sfo1-acmta1.cnet.com [206.16.1.160])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6IG8IJ10528
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Thu, 18 Jul 2002 17:08:18 +0100
+Received: from abv-sfo1-ac-agent1 (206.16.0.223) by abv-sfo1-acmta1.CNET.COM (PowerMTA(TM) v1.5); Thu, 18 Jul 2002 09:09:03 -0700 (envelope-from <Online#3.20471.b9-LhVolp59dUxVpsRR.1.b@newsletter.online.com>)
+Message-ID: <6821772.1027008491897.JavaMail.root@abv-sfo1-ac-agent1>
+Date: Thu, 18 Jul 2002 09:08:11 -0700 (PDT)
+From: "CNET News.com" <Online#3.20471.b9-LhVolp59dUxVpsRR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: CNET NEWS.CONTEXT: Adios to options excess?
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+<html>
+<head>
+        <title>CNET | News.context</title>
+
+</head>
+<body bgcolor="#e5e5e5">
+<center>
+<a name="top"></a>
+
+
+<!-- Logo and ad banner -->
+<table cellpadding=0 cellspacing=0 border=0 width=612 bgcolor="#ffffff">
+	<tr valign=top>
+    <td width=442 colspan=4 bgcolor="#e5e5e5">
+        <img src="http://home.cnet.com/i/ne/ds/nched.gif" alt="" width="442" height="63" border="0"><br>
+    </td>
+    <td width=160 rowspan=2 align=center>
+
+<!-- Towerboard -->
+	<iframe src="http://www.zdnet.com/include/ads/ifc/RGROUP=2560" scrolling="no" frameborder="0" hspace="0" vspace="0" height="600" width="160" marginheight="0" marginwidth="0">
+<script language="JavaScript" src="http://www.zdnet.com/include/ads/js/RGROUP=2560">
+</script>
+</iframe>
+<!-- /Towerboard -->
+	<p>
+	<!-- search form -->
+	<TABLE border=0 cellPadding=2 cellSpacing=0 width=150>
+	<TR>
+	<TD>
+	<form method="GET" action="http://www.search.com/redirect/">
+	                <img src="/b.gif" width=1 height=4><font face="arial, helvetica" size="-1"><br>&nbsp;<b>Search</b></font><br>
+	                &nbsp;<input type="text" name="q" size="15" value=""><br>
+	                &nbsp;<select name="target">
+	                <option value="http://news.search.com/search?tag=ex.ne.newsletter.srch.ne" selected>News.com
+	                <option value="http://cnet.search.com/search?tag=ex.ne.newsletter.srch.cnet">All CNET&nbsp;&nbsp;&nbsp;&nbsp;
+	                <option value="http://www.search.com/search?tag=ex.ne.newsletter.srch.web">The Web
+                </select>&nbsp;<input type="submit" value="Go!" name="submit"></td></form>
+    </tr></table>
+    <!-- /search form -->
+
+    <p>
+
+<!-- Vertical Brick -->
+<IMG alt="Also from CNET" height=20 src="http://home.cnet.com/Ads/Media/Images/RHC_ALSOfromCNETnet.gif" width=150 NOSEND="1"><BR>
+<TABLE border=0 cellPadding=2 cellSpacing=0 width=150><TBODY><TR vAlign=top>
+<TD><FONT face="arial, helvetica" size=-1><B>
+<a href="http://clickthru.online.com/Click?q=cf-ebM-QLw1uw80dUMJaylIO7r3fxeR" >Live tech help NOW!</a><p>
+<a href="http://clickthru.online.com/Click?q=e4-ABYFQVkP4jKR51bI81u0PT_Qv1yR" >April's tech award</a><p>
+<a href="http://clickthru.online.com/Click?q=f9-mtKTQxOPEQl3HGqSM_svdGheo-lR" >1 million open jobs</a><p>
+<a href="http://clickthru.online.com/Click?q=0e--eOTIiQIux9UGHx4r8dJx98lbK4R" >News.com: Top CIOs</a> <p>
+<a href="http://clickthru.online.com/Click?q=23-sFcGINMjnMu30qQiAv2Y9ZZvQKrR" >ZDNet: PeopleSoft</a>
+</B></FONT></TD>
+</TR></TBODY></TABLE></P>
+<!-- End Vertical Brick-->
+
+
+
+		<p>
+
+
+	</td>
+	<td width=9 rowspan=2>
+		<table width=9 cellpadding=0 cellspacing=0 border=0>
+			<tr><td bgcolor="#e5e5e5"><img src="http://home.cnet.com/b.gif" width="9" height="50" border="0"><br></td></tr>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+			<tr><td bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="9" height="10" border="0"><br></td></tr>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+		</table>
+	</td>
+	<td width=1 bgcolor="#000000" rowspan=2><img src="http://home.cnet.com/i/ne/ds/bkg.gif" width="1" height="50" border="0"></td>
+	</tr>
+
+<!-- Logo and ad banner -->
+
+<!-- In the News / Special Reports -->
+
+<tr valign=top>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"><br></td>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=430 bgcolor="#ffffff">
+
+<!-- START COPY FOR THE GUTS -->
+
+	<table cellpadding=0 cellspacing=0 border=0 width=430 bgcolor="#eeeeee">
+	<tr valign=top>
+	<td width=5><img src="http://home.cnet.com/b.gif" alt="" width="5" height="1" border="0"><br></td>
+	<td>
+	<table cellpadding=0 cellspacing=0 border=0 width=252>
+	<tr>
+	<td><img src="http://home.cnet.com/i/ne/ds/nc.gif" alt="News.context" width="76" height="16" border="0"><br></td>
+<!-- Date -->
+	<td align=right><font face="Arial, Helvetica" size="-2">July 18, 2002</font><br></td>
+	</tr>
+	</table>
+	<font face="Arial, Helvetica" size="-1">
+	<p>
+		<img src="http://news.cnet.com/i/ne/pr/gr/prtease_cooper.gif" width="65" height="82" border="0" align="right"><b>Adios to options excess?</b><p>
+		<b>If the nation's politicians expect Silicon Valley to fall in line on the issue of expensing stock options, they're living in a fantasy world.</b>
+		<p>
+
+		Flipping through my Rolodex this past week, I couldn't find one solitary technology type willing to support even the mildest proposal to change how corporations account for stock options. The more common response was a verbal "middle finger" shouted in the general direction of Washington.
+		<p>
+
+		No surprises, there. The options argument is not just about putting food on the table--make that <i>a lot</i> of food, in some cases--but about the way the computer industry views itself. Tech companies believe they belong in a different category, say, from the likes of Coca Cola, Washington Post Co. and Bank One Corp.--all which recently decided to begin expensing stock options.
+		<p>
+
+		Tech titans also served notice they will remember to support friends--and shun foes--in Washington next November. An empty threat? Perhaps, but consider this: in the last national election, the computer industry contributed more than $40 million (52 percent to Democrats, 46 percent to Republicans.) That was good for a seventh place <a href="http://clickthru.online.com/Click?q=39-7QgMIjIiVpWATh6CGLs-y39w-_lR" >ranking</a>, according to the Center for Responsive Politics.
+
+		<p>
+		<a href="mailto:charles.cooper@cnet.com">Charlie Cooper</a>, Executive Editor/Commentary<br>
+		&nbsp;<br>
+	</font></td>
+   <td width=5><img src="http://home.cnet.com/b.gif" alt="" width="5" height="1" border="0"><br></td>
+                        </td>
+                        </tr>
+                        </table>
+
+        <!-- Thin grey line -->
+        <table cellpadding=0 cellspacing=0 border=0 width=430>
+        <tr valign=top>
+                <td bgcolor="#999999"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+        </tr>
+        </table>
+
+<table cellpadding=10 cellspacing=0 border=0>
+<tr><td><font face="Arial, Helvetica">
+
+<a name="h1"></a>
+<b>Why the options party is over</b><br>
+<font size="-1">
+Transamerica Investment Management portfolio manager <b>Kenneth Broad</b> says
+it's easy to see why the tech industry is fighting so hard to keep options from
+being expensed: no one likes to lose a free lunch.</font><br>
+<font size="-1">
+<a href="http://clickthru.online.com/Click?q=4e-0Y95InZ3aFMx6avIKlsTn8N_Jj9R" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+
+<P>
+
+<a name="h2"><b>We can handle CEO cheats</b></a><br>
+<font size="-1">
+The Bush administration has crafted its own proposals for dealing with excess and dishonesty in corporate life. Commerce Undersecretary <b>Phil Bond</b>, who spoke with CNET News.com, believes the President's plan is just the ticket to get executives to come clean.</font><br>
+<font size="-1">
+<a href="http://clickthru.online.com/Click?q=63-tPKjIHWGwVXQyQag_9-hwkp_WEcR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+
+<p>
+
+<a name="h3"><b>Why free downloads help, not hurt</b></a><br>
+<font size="-1">
+Recording artist <b>Janis Ian</b> throws down the gauntlet to the National Academy of Recording Arts & Sciences (home of the Grammy Awards) and the Recording Industry Association of America. Making the case for the salutary benefits of free digital downloads, she says the music industry is dancing to the wrong beat.</font><br>
+<font size="-1">
+<a href="http://clickthru.online.com/Click?q=77-u6h6IIpw7wgNf7Wx31g9NPmdZPuR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+
+<p>
+
+<br>
+
+<a name="h4"><b>A CTO's worst nightmare</b></a><br>
+<font size="-1">
+After the Sept. 11 terrorist attacks, anxious investors worried when the stock market's largest financial exchange would open again. New York Stock Exchange CTO <b>Roger Burkhardt</b> was on the job faster than a trader can say "buy." </font><br>
+<font size="-1">
+<a href="http://clickthru.online.com/Click?q=8c-Ld7aQ6JpxwU19k5VFm8il40AWNyR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+
+<p>
+
+<a name="h5"><b>Fact and fiction in the Web services debate</b></a><br>
+<font size="-1">
+Sun versus Microsoft, Java versus .Net, McNealy versus Gates. Does it all really matter, Iona Technologies CEO <b>Barry Morris</b> asks, when it comes down to what users want. The future of Web services, Morris says, is being held hostage amid a fruitless debate over industry politics.</font><br>
+<font size="-1">
+<a href="http://clickthru.online.com/Click?q=a1-AfVtQ-ZJdj5MdcnGkeHaXeD3gBlR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+
+<p>
+
+<a name="h6"><b>Rewiring the FBI for the 21st century</b></a><br>
+<font size="-1">
+When it comes to the digital age, the FBI is stuck with tools left over from the old days. That's why the FBI is hoping for big things from its new CIO. <b>Darwin John</b> tells CNET News.com about his plans for revitalizing the Bureau's dated IT infrastructure. But this long-time outsider must first learn to navigate his way through the bureau's treacherous bureaucracy.</font><br>
+<font size="-1">
+<a href="http://clickthru.online.com/Click?q=b6-llkUQCKVBmn18c3T_PUCch20Lg4R" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+
+
+</td></tr></table>
+
+</td></tr></table>
+
+
+
+
+<!-- News by Section -->
+<table cellpadding=0 cellspacing=0 border=0 width=612>
+<tr valign=top>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+        <td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"></td>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+        <td width=587 bgcolor="#ffffff">
+        <font face="Arial, Helvetica" size="-1">&nbsp;<Br>
+
+
+
+<!-- END COPY FOR THE GUTS -->
+
+        &nbsp;<br>
+
+        </td>
+        <td width=12 bgcolor="#ffffff"><img src="http://home.cnet.com/b.gif" width="12" height="1" border="0"><br></td>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+</tr>
+</table>
+
+
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href="http://clickthru.online.com/Click?q=cb-CjRIQJsQXvpFnq2yXYHRf_uaHkrR" >
+<img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-zdnet@spamassassin.taint.org<br>
+<A NOTRACK HREF='http://clickthru.online.com/Click?q=e0-cImRr_DMnm8vSwzxPTqRo-V2vp1gVRRR'>Unsubscribe</A>&nbsp;|&nbsp;<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org&brand=cnet'>Manage My Subscriptions</a>&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=f5-lTbRQgwH2EXwoup6DmLwgkaZmRPR" >FAQ</A>&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=0a-ZnKCIrrwX4rr3lwBwhq6GOxuYznR" >Advertise</A><p>Please send any questions, comments, or concerns to&nbsp;<a href="mailto:dispatchfeedback@news.com">dispatchfeedback@news.com</A>.<br></font>
+<!-- /subscription management-->
+
+</font><img src="http://www.zdnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=20-PoiFIRzIPyi4Yy5tR-pp7us2QfiR" ><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=35-d6JTIbIIbyHo1vSKNXLTSyPWc3PR" ><font color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=4a-HcgUIPpX0UOE-ERsxoLkkTKhn-dR" ><font color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=5f-WK5BIIKc1ZSX76i6fez6pa6cIJuR" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=74-VAV8IZZG-VLiWy_RYG8Y0gSPZxsR" ><font color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=89-h28bQ-J2r6qPDqrkUMBXB6W5WWlR" ><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136482&NL=e432&ISSUE=2002-07-18" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table>
+</td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=9f-o7QM-LJnEHsSQaqj_ZbxyO4ipdRR">
+

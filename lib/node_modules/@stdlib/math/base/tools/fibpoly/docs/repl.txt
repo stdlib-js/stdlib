@@ -1,0 +1,52 @@
+
+{{alias}}( n, x )
+    Evaluates a Fibonacci polynomial.
+
+    Parameters
+    ----------
+    n: integer
+        Fibonacci polynomial to evaluate.
+
+    x: number
+        Value at which to evaluate the Fibonacci polynomial.
+
+    Returns
+    -------
+    out: number
+        Evaluated Fibonacci polynomial.
+
+    Examples
+    --------
+    // 2^4 + 3*2^2 + 1
+    > var v = {{alias}}( 5, 2.0 )
+    29.0
+
+
+{{alias}}.factory( n )
+    Returns a function for evaluating a Fibonacci polynomial.
+
+    Parameters
+    ----------
+    n: integer
+        Fibonacci polynomial to evaluate.
+
+    Returns
+    -------
+    fcn: Function
+        Function for evaluating a Fibonacci polynomial.
+
+    Examples
+    --------
+    > var polyval = {{alias}}.factory( 5 );
+
+    // 1^4 + 3*1^2 + 1
+    > var v = polyval( 1.0 )
+    5.0
+
+    // 2^4 + 3*2^2 + 1
+    > v = polyval( 2.0 )
+    29.0
+
+    See Also
+    --------
+

@@ -1,0 +1,74 @@
+From ilug-admin@linux.ie  Tue Oct  8 12:26:48 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id E41D916F03
+	for <zzzz@localhost>; Tue,  8 Oct 2002 12:26:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 12:26:47 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98APSK11003 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 8 Oct 2002 11:25:28 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id CAF5134206; Tue,  8 Oct 2002 11:26:11 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from dspsrv.com (vir.dspsrv.com [193.120.211.34]) by
+    lugh.tuatha.org (Postfix) with ESMTP id C0B96341E1 for <ilug@linux.ie>;
+    Tue,  8 Oct 2002 11:25:08 +0100 (IST)
+Received: from [195.17.199.3] (helo=waider.ie) by dspsrv.com with asmtp
+    (Exim 3.36 #1) id 17yrY3-0000WN-00; Tue, 08 Oct 2002 11:25:07 +0100
+Message-Id: <3DA2B226.2060209@waider.ie>
+From: Waider <waider@waider.ie>
+MIME-Version: 1.0
+To: brendan@zen.org
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] packaging risks and the reputation of linux distributions
+References: <200210081058.50438.brendan@zen.org>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Tue, 08 Oct 2002 12:23:34 +0200
+Date: Tue, 08 Oct 2002 12:23:34 +0200
+
+Brendan Kehoe wrote:
+> As a workaround, the various distributions could use a GPG singature to verify 
+> correctness of the file.  Since the distributor's secret key is required to 
+> create that signature, it would add a pretty significant step that would have 
+> to be taken to make it possible to replace both a rpm or apt file and its 
+> accompanying signature.
+
+Check your local friendly Red Hat installation:
+
+[root@localhost up2date]# rpm --checksig zsh-4.0.2-2.src.rpm
+zsh-4.0.2-2.src.rpm: md5 gpg ok
+
+Of course, this is only as useful as, say, the gpg keys distributed with 
+the Kernel tarballs, i.e. if you don't actually bother checking the sig 
+then you are open to abuse. It's entirely possible that rpm can be 
+configured to require good signatures, but I've not read that part of 
+the fine manual just yet.
+
+Cheers,
+Waider.
+-- 
+waider@waider.ie / Yes, it /is/ very personal of me
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

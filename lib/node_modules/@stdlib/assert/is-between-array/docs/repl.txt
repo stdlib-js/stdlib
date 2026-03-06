@@ -1,0 +1,47 @@
+
+{{alias}}( value, a, b[, left, right] )
+    Tests if a value is an array-like object where every element is between two
+    values.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    a: any
+        Left comparison value.
+
+    b: any
+        Right comparison value.
+
+    left: string (optional)
+        Indicates whether the left comparison value is inclusive. Must be either
+        'closed' or 'open'. Default: 'closed' (i.e., inclusive).
+
+    right: string (optional)
+        Indicates whether the right comparison value is inclusive. Must be
+        either 'closed' or 'open'. Default: 'closed' (i.e., inclusive).
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an array-like object where every
+        element is between two values.
+
+    Examples
+    --------
+    > var arr = [ 3.0, 3.14, 4.0 ];
+    > var bool = {{alias}}( arr, 3.0, 4.0 )
+    true
+    > bool = {{alias}}( arr, 3.14, 4.0 )
+    false
+    > bool = {{alias}}( arr, 3.0, 3.14 )
+    false
+    > bool = {{alias}}( arr, 3.0, 4.0, 'open', 'closed' )
+    false
+    > bool = {{alias}}( arr, 3.0, 4.0, 'closed', 'open' )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,64 @@
+From quinlan@pathname.com  Wed Oct  2 11:43:09 2002
+Return-Path: <quinlan@pathname.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3D25716F17
+	for <jm@localhost>; Wed,  2 Oct 2002 11:43:09 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:43:09 +0100 (IST)
+Received: from proton.pathname.com
+    (adsl-216-103-211-240.dsl.snfc21.pacbell.net [216.103.211.240]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g922LbK21545 for
+    <jm@jmason.org>; Wed, 2 Oct 2002 03:21:38 +0100
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17wZ9U-0005lL-00; Tue, 01 Oct 2002 19:22:16 -0700
+To: Theo Van Dinter <felicity@kluge.net>
+Cc: Justin Mason <yyyy@spamassassin.taint.org>,
+	Spamassassin Devel List <spamassassin-devel@lists.sourceforge.net>
+Subject: Re: [SAdev] Re: [Razor-users] Mutating spam
+References: <mkettler@evi-inc.com>
+    <5.1.1.6.0.20021001095106.01ac9760@192.168.50.2>
+    <20021001194648.DBAAC16F16@jmason.org> <20021001205821.GN29097@kluge.net>
+From: Daniel Quinlan <quinlan@pathname.com>
+Date: 01 Oct 2002 19:22:16 -0700
+In-Reply-To: Theo Van Dinter's message of "Tue, 1 Oct 2002 16:58:21 -0400"
+Message-Id: <yf2d6qth95z.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+
+Justin Mason wrote:
+
+>> Interestingly, some of these seem (apparently) to be encrypted versions of
+>> the recipient email address.  To see this, ROT13 yr address and grep your
+>> spam archive.  There'll be at least 1 hit.
+
+Theo Van Dinter <felicity@kluge.net> writes:
+
+> Hmmm.  I'm surprised at these results, especially since I should be
+> seeing some false positives...  Not a lot of matches though. :(
+
+Still worthwhile -- 1.257% is not that bad.  :-)
+
+My results:
+
+  OVERALL%   SPAM% NONSPAM%     S/O    RANK   SCORE  NAME
+    11774     4079     7695    0.35    0.00    0.00  (all messages)
+  100.000   34.644   65.356    0.35    0.00    0.00  (all messages as %)
+    0.195    0.564    0.000    1.00    0.75    1.00  T_ROT13_EMAIL_3
+    0.161    0.466    0.000    1.00    0.73    1.00  T_ROT13_EMAIL_2
+    0.161    0.466    0.000    1.00    0.73    1.00  T_ROT13_EMAIL
+
+The interesting thing is that these hits all seem to be rot13 versions
+of the To: address.  If we ever start getting FPs (or if anyone is
+worried), we could make it an eval test for rot13 of the To: address
+(turning non-word characters into "." characters in the regular
+expression).
+
+At the same time, it might be worth testing for username in HTML
+comments.  I found some <!--quinlan--> types in HTML comments, but I
+haven't seen enough hits so far to bother (however, I did add a really
+good test for email addresses in comments).
+
+Dan
+
+

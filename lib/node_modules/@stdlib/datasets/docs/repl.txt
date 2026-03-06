@@ -1,0 +1,31 @@
+
+{{alias}}( name[, options] )
+    Returns a dataset.
+
+    The function forwards provided options to the dataset interface specified
+    by `name`.
+
+    Parameters
+    ----------
+    name: string
+        Dataset name.
+
+    options: Object (optional)
+        Function options.
+
+    Returns
+    -------
+    out: any
+        Dataset.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'MONTH_NAMES_EN' )
+    [ 'January', 'February', ... ]
+    > var opts = { 'data': 'cities' };
+    > out = {{alias}}( 'MINARD_NAPOLEONS_MARCH', opts )
+    [ {...}, {...}, ... ]
+
+    See Also
+    --------
+

@@ -1,0 +1,28 @@
+
+{{alias}}( x, offset )
+    Returns a Uint8Array view of a BooleanArray.
+
+    Parameters
+    ----------
+    x: BooleanArray
+        Input array.
+
+    offset: integer
+        Starting index of the view relative to the BooleanArray.
+
+    Returns
+    -------
+    out: Uint8Array
+        Uint8Array view.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/bool}}( 10 );
+    > var out = {{alias}}( x, 0 )
+    <Uint8Array>
+    > var bool = ( out.buffer === x.buffer )
+    true
+
+    See Also
+    --------
+

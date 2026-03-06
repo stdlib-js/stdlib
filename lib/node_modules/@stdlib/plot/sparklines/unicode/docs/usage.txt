@@ -1,0 +1,12 @@
+
+Usage: sparkline [options] <number> <number> ...
+
+Options:
+
+  -h, --help             Print this message.
+  -V, --version          Print the package version.
+      --split sep        Separator used to split stdin data. Default: /\\r?\\n/.
+      --type type        Chart type. Default: column.
+      --ymin min         Minimum value of y-axis domain.
+      --ymax max         Maximum value of y-axis domain.
+      --infinities       Encode infinite values.

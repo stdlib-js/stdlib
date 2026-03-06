@@ -1,0 +1,79 @@
+From fork-admin@xent.com  Thu Jul 25 11:09:00 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 59D94440DB
+	for <jm@localhost>; Thu, 25 Jul 2002 06:08:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:08:20 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OLCa408080 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 22:12:36 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D30B429415A; Wed, 24 Jul 2002 14:11:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id 7A76A29415B for
+    <FoRK@xent.com>; Wed, 24 Jul 2002 14:10:26 -0700 (PDT)
+Received: (qmail 4035 invoked by uid 501); 24 Jul 2002 21:10:15 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    24 Jul 2002 21:10:15 -0000
+From: CDale <cdale@techmonkeys.net>
+To: Lucas Gonze <lgonze@panix.com>
+Cc: Flatware or Road Kill? <FoRK@xent.com>
+Subject: Re: "Ouch. Ouch. Ouch. Ouch. Ouch...."(was Re: My brain hurts)
+In-Reply-To: <Pine.LNX.4.44.0207241023140.3214-100000@localhost.localdomain>
+Message-Id: <Pine.LNX.4.44.0207241609280.27125-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 16:10:15 -0500 (CDT)
+
+Whatcha call the guy who hangs out with the band?  
+The drummer.
+C
+
+On Wed, 24 Jul 2002, Lucas Gonze wrote:
+
+> 
+> Music school jokes --
+> 
+> American conductor and European conductor are talking.  European conductor 
+> says "what a week, I've had 5 rehearsals and a performance."  "That's 
+> nothing," says the American conductor, "I've had five performances and a 
+> rehearsal."  
+> 
+> What's the difference between a spring in the desert surrounded by palm 
+> trees and a violist that plays in tune?  A violist that plays in tune is a 
+> mirage.
+> 
+> What's the difference between a rat and a guitar player?  The rat's got 
+> something to do tonight.
+> 
+> Good thing it's not comedy school.
+> 
+> 
+> 
+> http://xent.com/mailman/listinfo/fork
+> 
+
+-- 
+"My theology, briefly, is that the universe was dictated but not
+          signed."  (Christopher Morley) 
+
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,133 @@
+From fork-admin@xent.com  Mon Aug 19 14:05:53 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3423943C34
+	for <jm@localhost>; Mon, 19 Aug 2002 09:05:49 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 14:05:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7JD4Y624191 for <jm@jmason.org>;
+    Mon, 19 Aug 2002 14:04:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C9B742940C9; Mon, 19 Aug 2002 06:02:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hall.mail.mindspring.net (hall.mail.mindspring.net
+    [207.69.200.60]) by xent.com (Postfix) with ESMTP id 736E529409D for
+    <fork@xent.com>; Mon, 19 Aug 2002 06:01:53 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    hall.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17gmBi-0006Pw-00;
+    Mon, 19 Aug 2002 09:03:18 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a4eb9869cb2eb2a@[66.149.49.6]>
+To: irregulars@tb.tf, fork@spamassassin.taint.org, nettime-l@bbs.thing.net
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: PGP Corp. Purchases PGP Desktop Encryption and Wireless Product Lines from NET
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 19 Aug 2002 09:02:52 -0400
+
+
+--- begin forwarded text
+
+
+To: rah@ibuc.com
+From: "Network Associates" <nai@nai.rsc01.com>
+Date: Mon, 19 Aug 2002 05:34:11 -0700
+Reply-To: "Network Associates" <corporatemarketing@nai.com>
+Subject: PGP Corp. Purchases PGP Desktop Encryption and Wireless Product
+Lines from NET
+
+August 19, 2002
+
+
+Dear Customer,
+
+Today we are pleased to announce that PGP Corporation, a newly formed,
+venture-funded security company, has acquired the PGP desktop encryption
+and wireless product lines from Network Associates.  As you know, prior to
+placing the products into maintenance mode, we were actively looking for a
+buyer that would continue the development and support of the technology.
+
+Network Associates has retained products developed using PGPsdk including
+McAfee E-Business Server for encrypted server-to-server file transfer,
+McAfee Desktop Firewall and McAfee VPN Client. These products will remain a
+part of Network Associates’ existing product portfolio and we will continue
+to develop them to meet your security needs. PGP Corporation has acquired
+PGPmail, PGPfile, PGPdisk, PGPwireless, PGPadmin and PGPkeyserver
+encryption software products for Win32 and Macintosh, PGPsdk encryption
+software development kit, and PGP Corporate Desktop for Macintosh.
+
+In addition to the technology, PGP Corporation has acquired all worldwide
+customer license agreements and technical support obligations. To ensure a
+seamless transition, Network Associates will work with PGP Corporation to
+support PGP customers through October 26, 2002. PGP Corporation will
+contact you shortly with details on its plans and product direction.
+
+We trust that you will have continued success with the PGP desktop and
+wireless encryption products through PGP Corporation. Network Associates
+appreciates your business and we value our continued relationship across
+our remaining product lines.
+
+
+Best Regards,
+
+Sandra England
+Executive Vice President, Business Development and Strategic Research
+Network Associates
+
+
+
+****************************************************************************************************
+You have received this message because you are a subscriber to the Network
+Associates Web sites. To unsubscribe, please follow the instructions at the
+end of this message.
+
+This information update is available at no charge to all registered users
+of Network Associates Web site.
+
+* To change your email address, send a reply to this email address and to
+subscribe@nai.com with the words, "change-address" in the subject line. In
+the body of the message include your old and new email addresses with the
+original message. Use the following format for email changes:
+OLD: enduser@olddomain.com
+NEW: Joseph_User@newdomain.com
+
+
+______________________________________________________________________
+This message was sent by Network Associates, Inc. using Responsys Interact
+(TM).
+
+If you prefer not to receive future e-mail from Network Associates, Inc.:
+    http://nai.rsc01.net/servlet/optout?gHpgJDWWBEkHoFpINJDJhtE0
+
+To view our permission marketing policy:
+    http://www.rsvp0.net
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+http://xent.com/mailman/listinfo/fork
+

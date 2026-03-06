@@ -1,0 +1,78 @@
+From fork-admin@xent.com  Tue Jul 23 23:00:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E3A90440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 18:00:50 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 23:00:50 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NM1k431107 for <jm@jmason.org>;
+    Tue, 23 Jul 2002 23:01:46 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9F5A72940E2; Tue, 23 Jul 2002 14:51:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm0-3.sba1.netlojix.net
+    [207.71.218.3]) by xent.com (Postfix) with ESMTP id 81B032940AE for
+    <fork@xent.com>; Tue, 23 Jul 2002 14:50:49 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id PAA04796;
+    Tue, 23 Jul 2002 15:05:48 -0700
+Message-Id: <200207232205.PAA04796@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: Re: [Baseline] Raising chickens the high-tech way
+In-Reply-To: Message from fork-request@xent.com of
+    "Tue, 23 Jul 2002 12:09:02 PDT."
+    <20020723190902.17728.83188.Mailman@lair.xent.com>
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 15:05:48 -0700
+
+
+
+> It also strikes me that it will not be very long before livestock is
+> genetically engineered to be dumber and meatier, and better adapted to
+> living in industrial conditions.
+
+If we're willing to count artificial
+selection as genetic engineering, it
+has been happening since pre-literate
+times, and is called "domestication".
+
+-Dave
+
+
+<http://www.baselinemag.com/article2/0,3959,369234,00.asp>
+> "When the truck leaves Arkansas, the invoice leaves via the U.S. mail
+> and they both arrive at about the same time," Collins says. "If our
+> receiving clerks could sign onto the network and do an electronic
+> handshake with the driver-you're over an item on this case, that case
+> was damaged-we're all in agreement, and then Tyson could send a clean
+> invoice about which there is no dispute."
+
+I can see the value to a system which
+guaranteed that the truck would show
+up with all items as ordered -- but if
+there's going to be spoilage anyway, I
+don't see how much value that "clean"
+invoice provides -- just think about
+the costs of reliable networks versus
+reliable protocols on unreliable ones.
+
+If the trucks are unreliable, then the
+sticky pads seem like the clear winner
+for return on IT capital investment.
+http://xent.com/mailman/listinfo/fork
+
+

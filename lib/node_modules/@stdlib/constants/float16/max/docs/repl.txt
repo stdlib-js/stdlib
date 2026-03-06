@@ -1,0 +1,12 @@
+
+{{alias}}
+    Maximum half-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    65504.0
+
+    See Also
+    --------
+

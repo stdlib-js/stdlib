@@ -1,0 +1,606 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: lint_random_files
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+    inputs:
+      num:
+        type: string
+        description: 'Maximum number of files to lint:'
+        default: '100'
+      pattern:
+        description: 'Regular expression for files to include:'
+        default: .*
+      javascript:
+        type: boolean
+        description: 'Lint JavaScript and TypeScript'
+        default: true
+      markdown:
+        type: boolean
+        description: 'Lint Markdown'
+        default: true
+      json:
+        type: boolean
+        description: 'Lint JSON'
+        default: true
+      repl:
+        type: boolean
+        description: 'Lint REPL documentation and shell script files'
+        default: true
+      r:
+        type: boolean
+        description: 'Lint R'
+        default: true
+      c:
+        type: boolean
+        description: 'Lint C'
+        default: true
+      python:
+        type: boolean
+        description: 'Lint Python'
+        default: true
+      fix:
+        type: boolean
+        description: 'Fix lint errors and submit a PR (if possible)'
+        default: false
+
+  # Trigger the workflow every 24 hours:
+  schedule:
+    - cron: '0 0 * * *'
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for linting committed code...
+  lint:
+
+    # Define a display name:
+    name: 'Lint Random Files'
+
+    # Ensure the job does not run on forks:
+    if: github.repository == 'stdlib-js/stdlib'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: true
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
+        with:
+          node-version: '20' # 'lts/*'
+        timeout-minutes: 5
+
+      # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Install dependencies'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 15
+
+      # Initialize development environment:
+      - name: 'Initialize development environment'
+        run: |
+          make init
+        timeout-minutes: 5
+
+      # Pick random files from the `lib/node_modules/@stdlib` directory:
+      - name: 'Pick random files from the `lib/node_modules/@stdlib` directory'
+        id: random-files
+        run: |
+          name=""
+          if [ "${{ github.event.inputs.javascript }}" != "false" ]; then
+            name="${name} -name '*.js'"
+          fi
+          if [ "${{ github.event.inputs.markdown }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
+            name="${name} -name '*.md'"
+          fi
+          if [ "${{ github.event.inputs.json }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
+            name="${name} -name '*.json'"
+          fi
+          if [ "${{ github.event.inputs.repl }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
+            name="${name} -name '*.repl\.txt' -o -name '*.sh'"
+          fi
+          if [ "${{ github.event.inputs.r }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
+            name="${name} -name '*.R'"
+          fi
+          if [ "${{ github.event.inputs.c }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
+            name="${name} -name '*.c'"
+          fi
+          if [ "${{ github.event.inputs.javascript }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
+            name="${name} -name '*.ts'"
+          fi
+          if [ "${{ github.event.inputs.python }}" != "false" ]; then
+            if [ -n "${name}" ]; then
+              name="${name} -o"
+            fi
+            name="${name} -name '*.py'"
+          fi
+          command="find lib/node_modules/@stdlib -type f \( ${name} \) |
+            grep -E '${{ github.event.inputs.pattern }}' |
+            grep -v '/fixtures/bad/' |
+            shuf -n ${{ github.event.inputs.num || 100 }} | tr '\n' ','"
+          files=$(eval ${command})
+
+          echo "files=$files" >> $GITHUB_OUTPUT
+
+      # Lint file names:
+      - name: 'Lint file names'
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to a utility for linting filenames:
+          lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
+
+          # Lint filenames:
+          echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | "${lint_filenames}"
+
+      # Lint files against EditorConfig:
+      - name: 'Lint against EditorConfig'
+        id: lint-editorconfig
+        run: |
+          set -o pipefail
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
+          make lint-editorconfig-files FILES="${files}" 2>&1 | tee lint_editorconfig_errors.txt
+
+      # Create sub-issue for EditorConfig lint failures:
+      - name: 'Create sub-issue for EditorConfig lint failures'
+        if: failure() && contains(steps.lint-editorconfig.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          strip_ansi() {
+            sed -r 's/\x1B\[[0-9;]*[mK]//g'
+          }
+
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
+          cat << EOF > "$BODY_FILE"
+          ## EditorConfig Linting Failures
+
+          Linting failures were detected in the automated EditorConfig lint workflow run.
+
+          ### Workflow Details
+
+          - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          - Type: EditorConfig Linting
+          - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          ### Error Details
+
+          \`\`\`
+          $(cat lint_editorconfig_errors.txt | strip_ansi)
+          \`\`\`
+
+          ### Pull Request Instructions
+
+          -   Please use the following PR title format:
+          "chore: fix EditorConfig lint errors (issue #<ISSUE_NUMBER>)".
+          -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
+          EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
+            'Fix EditorConfig lint errors' \
+            "$BODY_FILE" \
+            "5156" \
+            "Good First Issue"
+
+          rm "$BODY_FILE"
+
+      # Lint Markdown files:
+      - name: 'Lint Markdown files'
+        if: ( github.event.inputs.markdown != 'false' ) && ( success() || failure() )
+        run: |
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.md$' | tr '\n' ' ')
+          if [ -n "${files}" ]; then
+            make lint-markdown-files FAST_FAIL=0 FILES="${files}"
+          fi
+
+      # Lint package.json files:
+      - name: 'Lint package.json files'
+        if: ( github.event.inputs.json != 'false' ) && ( success() || failure() )
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to a utility for linting package.json files:
+          lint_package_json="${root}/lib/node_modules/@stdlib/_tools/lint/pkg-json/bin/cli"
+
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'package\.json$' | grep -v 'datapackage\.json$' | tr '\n' ' ' | sed 's/ $//')
+          if [ -n "${files}" ]; then
+            printf "${files}" | "${lint_package_json}" --split=" "
+          fi
+
+      # Lint REPL help files...
+      - name: 'Lint REPL help files'
+        if: ( github.event.inputs.repl != 'false' ) && ( success() || failure() )
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to a utility for linting REPL help files:
+          lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-txt/bin/cli"
+
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep 'repl\.txt$' | tr '\n' ' ' | sed 's/ $//')
+          if [ -n "${files}" ]; then
+            printf "${files}" | "${lint_repl_help}" --split=" "
+          fi
+
+      # Lint shell script files:
+      - name: 'Lint shell script files'
+        if: ( github.event.inputs.repl != 'false' ) && ( success() || failure() )
+        run: |
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            # Install shellcheck:
+            make install-deps-shellcheck
+
+            # Lint shell scripts:
+            make FILES="${files}" lint-shell-files
+          fi
+
+      # Lint JavaScript files:
+      - name: 'Lint JavaScript files'
+        id: lint-javascript
+        if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
+        env:
+          FIX: ${{ github.event.inputs.fix == 'true' && '1' || '0' }}
+          QUIET: '0'
+          ERR_FILE: ${{ github.workspace }}/lint_javascript_errors.txt
+        run: |
+          # Get JavaScript files to lint:
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.js$' | tr '\n' ' ')
+
+          # Run the lint script:
+          if [ -n "${files}" ]; then
+            "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_javascript_files_error_log" ${files}
+          else
+            echo "No JavaScript files to lint."
+          fi
+
+      # Create sub-issue for JavaScript lint failures:
+      - name: 'Create sub-issue for JavaScript lint failures'
+        if: failure() && contains(steps.lint-javascript.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
+          cat << EOF > "$BODY_FILE"
+            ## JavaScript Linting Failures
+
+            Linting failures were detected in the automated JavaScript lint workflow run.
+
+            ### Workflow Details
+
+            - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            - Type: JavaScript Linting
+            - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+            ### Error Details
+            \`\`\`
+            $(cat lint_javascript_errors.txt)
+            \`\`\`
+
+            ### Pull Request Instructions
+
+            -   Please use the following PR title format:
+            "chore: fix JavaScript lint errors (issue #<ISSUE_NUMBER>)".
+            -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
+          EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
+            'Fix JavaScript lint errors' \
+            "$BODY_FILE" \
+            "5377" \
+            "Good First Issue"
+
+          rm "$BODY_FILE"
+
+      # Lint Python files:
+      - name: 'Lint Python files'
+        if: ( github.event.inputs.python != 'false' ) && ( success() || failure() )
+        run: |
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.py$' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            # Install Python dependencies:
+            make install-deps-python
+
+            # Lint Python files:
+            make lint-python-files FAST_FAIL=0 FILES="${files}"
+          fi
+
+      # Setup R:
+      - name: 'Setup R'
+        if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
+        # Pin action to full length commit SHA
+        uses: r-lib/actions/setup-r@6f6e5bc62fba3a704f74e7ad7ef7676c5c6a2590 # v2.11.4
+        with:
+          r-version: '4.3.3'
+
+      # Lint R files:
+      - name: 'Lint R files'
+        if: ( github.event.inputs.r != 'false' ) && ( success() || failure() )
+        run: |
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.R$' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            # Install R dependencies:
+            make install-deps-r
+
+            # Lint R files:
+            make lint-r-files FAST_FAIL=0 FILES="${files}"
+          fi
+
+      # Lint C files:
+      - name: 'Lint C files'
+        id: lint-c
+        if: ( github.event.inputs.c != 'false' ) && ( success() || failure() )
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Install Cppcheck:
+          make install-deps-cppcheck
+
+          # Define the path to cppcheck configuration file for linting examples:
+          cppcheck_examples_suppressions_list="${root}/etc/cppcheck/suppressions.examples.txt"
+
+          # Define the path to cppcheck configuration file for linting test fixtures:
+          cppcheck_tests_fixtures_suppressions_list="${root}/etc/cppcheck/suppressions.tests_fixtures.txt"
+
+          # Define the path to cppcheck configuration file for linting benchmarks:
+          cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
+
+          # Define output files for each category:
+          out_source="lint_c_errors_source.txt"
+          out_examples="lint_c_errors_examples.txt"
+          out_tests="lint_c_errors_tests.txt"
+          out_benchmarks="lint_c_errors_benchmarks.txt"
+          combined="lint_c_errors.txt"
+
+          # Initialize output files with empty content:
+          echo "" > "$out_source"
+          echo "" > "$out_examples"
+          echo "" > "$out_tests"
+          echo "" > "$out_benchmarks"
+          echo "" > "$combined"
+
+          # Initialize an error flag:
+          error=0
+
+          # Lint C source files:
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_source}" || error=1
+          fi
+
+          # Lint C example files...
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/examples/.*\.c$' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_examples}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}" || error=1
+          fi
+
+          # Lint C test fixtures files...
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/test/fixtures/.*\.c$' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_tests}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_tests_fixtures_suppressions_list}" || error=1
+          fi
+
+          # Lint C benchmark files...
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '/benchmark/.*\.c$' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make lint-c-files FILES="${files}" CPPCHECK_FLAGS="--output-file=${out_benchmarks}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}" || error=1
+          fi
+
+          # Combine all outputs into one file:
+          cat "$out_source" "$out_examples" "$out_tests" "$out_benchmarks" > "$combined"
+
+          # Print the combined errors to the log:
+          cat "$combined"
+
+          # If any linting command failed, exit with error:
+          if [[ $error -ne 0 ]]; then
+            exit 1
+          fi
+
+      # Create sub-issue for C linting failures:
+      - name: 'Create sub-issue for C lint failures'
+        if: ( github.event.inputs.c != 'false' ) && failure() && contains(steps.*.outcome, 'failure') && contains(steps.lint-c.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
+
+          cat << EOF > "$BODY_FILE"
+          ## C Linting Failures
+
+          Linting failures were detected in the automated lint workflow run.
+
+          ### Workflow Details
+
+          -   Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          -   Type: C Linting
+          -   Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          ### Error Details
+
+          \`\`\`
+          $(grep -B 1 -A 2 "style:\|warning:\|error:" "lint_c_errors.txt")
+          \`\`\`
+
+          ### Pull Request Instructions
+
+          -   Please use the following PR title format:
+          "chore: fix C lint errors (issue #<ISSUE_NUMBER>)".
+          -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
+          EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
+            'Fix C lint errors' \
+            "$BODY_FILE" \
+            "3235"  # Number of C lint error tracking issue
+
+          rm "$BODY_FILE"
+
+      # Lint TypeScript declarations files:
+      - name: 'Lint TypeScript declarations files'
+        id: lint-typescript-declarations
+        if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
+        run: |
+          set -o pipefail
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
+          if [[ -n "${files}" ]]; then
+            make TYPESCRIPT_DECLARATIONS_LINTER=eslint lint-typescript-declarations-files FAST_FAIL=0 FILES="${files}" 2>&1 | tee lint_typescript_declarations_errors.txt
+          fi
+
+      # Create sub-issue for TypeScript declarations lint failures:
+      - name: 'Create sub-issue for TypeScript declarations lint failures'
+        if: failure() && contains(steps.lint-typescript-declarations.outcome, 'failure')
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          strip_ansi() {
+            sed -r 's/\x1B\[[0-9;]*[mK]//g'
+          }
+
+          BODY_FILE="$GITHUB_WORKSPACE/lint_issue_body.md"
+          cat << EOF > "$BODY_FILE"
+          ## TypeScript Declarations Linting Failures
+
+          Linting failures were detected in the automated TypeScript declarations lint workflow run.
+
+          ### Workflow Details
+
+          - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          - Type: TypeScript Declarations Linting
+          - Date: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+
+          ### Error Details
+
+          \`\`\`
+          $(cat lint_typescript_declarations_errors.txt | strip_ansi)
+          \`\`\`
+
+          ### Pull Request Instructions
+
+          -   Please use the following PR title format:
+          "chore: fix TypeScript declarations lint errors (issue #<ISSUE_NUMBER>)".
+          -   Reference this issue in the "Related Issues" section of the PR body as "resolves #<ISSUE_NUMBER>".
+          EOF
+
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/create_sub_issue" \
+            'Fix TypeScript declarations lint errors' \
+            "$BODY_FILE" \
+            "9110" \
+            "Good First Issue"
+
+          rm "$BODY_FILE"
+
+      # Lint license headers:
+      - name: 'Lint license headers'
+        if: success() || failure()
+        run: |
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' ' ')
+          if [[ -n "${files}" ]]; then
+            make lint-license-headers-files FILES="${files}"
+          fi
+
+      # Disable Git hooks:
+      - name: 'Disable Git hooks'
+        if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
+        run: |
+          rm -rf .git/hooks
+
+      # Import GPG key to sign commits:
+      - name: 'Import GPG key to sign commits'
+        if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
+        # Pin action to full length commit SHA
+        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
+        with:
+          gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
+      # Create a pull request with the fixes (if applicable):
+      - name: 'Create pull request'
+        if: ${{ github.event.inputs.fix == 'true' }} && ( success() || failure() )
+        id: cpr
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-pull-request@c0f553fe549906ede9cf27b5156039d195d2ece0 # v8.1.0
+        with:
+          title: 'style: fix lint errors'
+          add-paths: ${{ steps.random-files.outputs.files }}
+          body: |
+            This PR
+
+            -   fixes lint errors
+
+          commit-message: 'style: resolve lint errors'
+          committer: 'stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>'
+          signoff: true
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          labels: |
+            automated-pr
+          team-reviewers: |
+            reviewers
+          branch: 'fix-lint-errors'
+          delete-branch: true

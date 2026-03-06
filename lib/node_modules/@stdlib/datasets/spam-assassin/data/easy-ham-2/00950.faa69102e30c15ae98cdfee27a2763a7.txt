@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Thu Aug  1 17:03:50 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B9B64440F0
+	for <jm@localhost>; Thu,  1 Aug 2002 12:03:49 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 17:03:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g71FtO219627 for <jm@jmason.org>;
+    Thu, 1 Aug 2002 16:55:26 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C168029415C; Thu,  1 Aug 2002 08:48:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jidmail.nmcourts.com (jidmail.nmcourts.com
+    [198.59.128.143]) by xent.com (Postfix) with ESMTP id 21FAD294158 for
+    <fork@xent.com>; Thu,  1 Aug 2002 08:47:22 -0700 (PDT)
+Received: from thorson.nmcourts.com ([198.59.128.48]) by
+    jidmail.nmcourts.com (Post.Office MTA v3.5.4 release 224 ID#
+    0-59782U3000L300S0V35) with ESMTP id com for <fork@xent.com>;
+    Thu, 1 Aug 2002 09:47:18 -0600
+Message-Id: <5.1.0.14.0.20020801093741.00addec0@jidmail.nmcourts.com>
+X-Sender: martyh@jidmail.nmcourts.com
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+To: fork@spamassassin.taint.org
+From: martyh@nmcourts.com (Marty Halvorson)
+Subject: Re: What's cool about doing nothing
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 01 Aug 2002 09:47:36 -0600
+
+Elias Sinderson wrote:
+ > Heh. Never mind the perfectly good desert in the southwest, right? Or is
+ > that area too hot for desert warfare training? I'll never understand.
+
+How hot it feels is affected by both temperature and humidity.  In 
+Mississippi they have lots of humidity, in the Southwest, we don't.
+
+As I know from experience, Mississippi feels a lot hotter at 90 degrees F. 
+than home (Santa Fe) does at 90.
+
+Perhaps the military didn't want to train in a real desert because 1) it 
+get's over 100 degrees and any time the air temp is greater than body temp 
+it affects performance, and 2) when those troops go to a real desert 
+they'll think it's so much nicer than Mississippi.
+
+No, I'm not maligning Mississippi.  I had a great time passing through last 
+year on vacation.
+
+Peace,
+
+Marty Halvorson
+marty@halvorson.us
+
+http://xent.com/mailman/listinfo/fork
+
+

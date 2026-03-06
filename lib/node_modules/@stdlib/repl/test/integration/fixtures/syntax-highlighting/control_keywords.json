@@ -1,0 +1,7 @@
+{
+  "expression": "async function foo(a) { if (a) { return a; } else { try { switch(a) { case 0: return await Promise.resolve(a); } } catch (e) { return e; } } }",
+  "expected": "async function foo(a) { \u001b[31mif\u001b[0m (a) { \u001b[31mreturn\u001b[0m a; } \u001b[31melse\u001b[0m { \u001b[31mtry\u001b[0m { \u001b[31mswitch\u001b[0m(a) { \u001b[31mcase\u001b[0m 0: \u001b[31mreturn\u001b[0m \u001b[31mawait\u001b[0m Promise.resolve(a); } } \u001b[31mcatch\u001b[0m (e) { \u001b[31mreturn\u001b[0m e; } } }",
+  "theme": {
+    "control": "red"
+  }
+}

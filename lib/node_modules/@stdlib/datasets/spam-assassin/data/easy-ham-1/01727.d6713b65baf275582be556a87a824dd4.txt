@@ -1,0 +1,53 @@
+Return-Path: nas@python.ca
+Delivery-Date: Mon Sep  9 02:20:51 2002
+From: nas@python.ca (Neil Schemenauer)
+Date: Sun, 8 Sep 2002 18:20:51 -0700
+Subject: [Spambayes] testing results
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCOEPHBCAB.tim.one@comcast.net>
+References: <20020908172113.GA26741@glacier.arctrix.com>
+	<LNBBLJKPBEHFEDALKOLCOEPHBCAB.tim.one@comcast.net>
+Message-ID: <20020909012051.GD27510@glacier.arctrix.com>
+
+Tim Peters wrote:
+> If you've still got the summary files, please cvs up and try running cmp.py
+> again -- in the process of generalizing cmp.py, you managed to make it skip
+> half the lines <wink>.
+
+Woops.  I didn't have the summary files so I regenerated them using a
+slightly different set of data.  Here are the results of enabling the
+"received" header processing:
+
+    false positive percentages
+        0.707  0.530  won    -25.04%
+        0.873  0.524  won    -39.98%
+        0.301  0.301  tied
+        1.047  1.047  tied
+        0.602  0.452  won    -24.92%
+        0.353  0.177  won    -49.86%
+
+    won   4 times
+    tied  2 times
+    lost  0 times
+
+    total unique fp went from 17 to 14 won    -17.65%
+
+    false negative percentages
+        2.167  1.238  won    -42.87%
+        0.969  0.969  tied
+        1.887  1.372  won    -27.29%
+        1.616  1.292  won    -20.05%
+        1.029  0.858  won    -16.62%
+        1.548  1.548  tied
+
+    won   4 times
+    tied  2 times
+    lost  0 times
+
+    total unique fn went from 50 to 38 won    -24.00%
+
+My test set is different than Tim's in that all the email was received
+by the same account.  Also, my set contains email sent to me, not to
+mailing lists (I use a different addresses for mailing lists).  If
+people cook up more ideas I will be happy to test them.
+
+  Neil

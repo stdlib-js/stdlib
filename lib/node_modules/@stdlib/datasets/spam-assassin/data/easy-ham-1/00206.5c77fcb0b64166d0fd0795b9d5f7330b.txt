@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:48:25 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AE3D444155
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:47:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:47:38 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7RLWwZ26701 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 27 Aug 2002 22:32:58 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA17885; Tue, 27 Aug 2002 22:32:04 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from patan.sun.com (patan.Sun.COM [192.18.98.43]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id WAA17844 for <ilug@linux.ie>;
+    Tue, 27 Aug 2002 22:31:52 +0100
+Received: from dub-mail1.Ireland.Sun.COM ([129.156.220.69]) by
+    patan.sun.com (8.9.3+Sun/8.9.3) with ESMTP id PAA07217 for <ilug@linux.ie>;
+    Tue, 27 Aug 2002 15:31:50 -0600 (MDT)
+Received: from Sun.COM (dbl-isdn-107 [129.156.227.107]) by
+    dub-mail1.Ireland.Sun.COM (8.10.2+Sun/8.10.2/ENSMAIL,v2.1p1) with ESMTP id
+    g7RLVmW07771 for <ilug@linux.ie>; Tue, 27 Aug 2002 22:31:48 +0100 (BST)
+Message-Id: <3D6BEFBB.2030103@Sun.COM>
+Date: Tue, 27 Aug 2002 22:31:39 +0100
+From: Darren Kenny <Darren.Kenny@Sun.COM>
+Reply-To: Darren.Kenny@Sun.COM
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1) Gecko/20020826
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] Using Normal IDE Device with a Dell Latitude CPx laptop
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+
+I've got an normal 3.5" CD-RW IDE drive that I'd like to be able to use with a
+Dell Latitude CPx laptop that I've got. Does anyone know any way to enable this,
+for example through the use of a special cable for the Modular Bay (where CD-ROM
+or floppy drive is normally).
+
+There is also the possibility of using a docking station, but Dell's docking
+solution for the Latitude series doesn't seem to allow for the use of an IDE
+drive, only SCSI... Unless someone knows of a "non-Dell" solution that's
+compatible.
+
+Anyone any ideas?
+
+Thanks,
+
+Darren.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

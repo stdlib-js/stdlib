@@ -1,0 +1,145 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Thu Sep 12 01:13:06 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Wed, 11 Sep 2002 20:13:06 -0400
+Subject: [Spambayes] Current histograms
+In-Reply-To: <200209110423.g8B4Ndh07749@localhost.localdomain>
+Message-ID: <LNBBLJKPBEHFEDALKOLCKEJBBDAB.tim.one@comcast.net>
+
+[Anthony Baxter]
+> 5 sets, each of 1800ham/1550spam, just ran the once (it matched all 5 to
+> each other...)
+>
+> rates.py sez:
+>
+> Training on Data/Ham/Set1 & Data/Spam/Set1 ... 1798 hams & 1548 spams
+>       0.445   0.388
+>       0.445   0.323
+>       2.108   4.072
+>       0.556   1.097
+> Training on Data/Ham/Set2 & Data/Spam/Set2 ... 1798 hams & 1546 spams
+>       2.113   0.517
+>       1.335   0.194
+>       3.106   5.365
+>       2.113   2.903
+> Training on Data/Ham/Set3 & Data/Spam/Set3 ... 1798 hams & 1547 spams
+>       2.447   0.646
+>       0.945   0.388
+>       2.884   3.426
+>       2.058   1.097
+> Training on Data/Ham/Set4 & Data/Spam/Set4 ... 1803 hams & 1547 spams
+>       1.057   2.584
+>       0.723   1.682
+>       0.890   1.164
+>       0.445   0.452
+> Training on Data/Ham/Set5 & Data/Spam/Set5 ... 1798 hams & 1550 spams
+>       0.779   4.328
+>       0.501   3.299
+>       0.667   3.361
+>       0.388   4.977
+> total false pos 273 3.03501945525
+> total false neg 367 4.74282760403
+
+How were these msgs broken up into the 5 sets?  Set4 in particular is giving
+the other sets severe problems, and Set5 blows the f-n rate on everything
+it's predicting -- when the rates across runs within a training set vary by
+as much as a factor of 25, it suggests there was systematic bias in the way
+the sets were chosen.  For example, perhaps they were broken into sets by
+arrival time.  If that's what you did, you should go back and break them
+into sets randomly instead.  If you did partition them randomly, the wild
+variance across runs is mondo mysterious.
+
+
+>> I expect hammie will do a much better job on this already than hand
+>> grepping.  Be sure to stare at the false positives and get the
+>> spam out of there.
+
+> Yah, but there's a chicken-and-egg problem there - I want stuff that's
+> _known_ to be right to test this stuff,
+
+Then you have to look at every message by eyeball -- any scheme has non-zero
+error rates of both kinds.
+
+> so using the spambayes code to tell me whether it's spam is not
+> going to help.
+
+Trust me <wink> -- it helps a *lot*.  I expect everyone who has done any
+testing here has discovered spam in their ham, and vice versa.  Results
+improve as you improve the categorization.  Once the gross mistakes are
+straightened out, it's much less tedious to scan the rest by eyeball.
+
+[on skip tokens]
+> Yep, it shows up in a lot of spam, but also in different forms in hams.
+> But the hams each manage to pick a different variant of
+> ~~~~~~~~~~~~~~~~~~~~~~
+> or whatever - so they don't end up counteracting the various bits in the
+> spam.
+>
+> Looking further, a _lot_ of the bad skip rubbish is coming from
+> uuencoded viruses &c in the spam-set.
+
+For whatever reason, there appear to be few of those in BruceG's spam
+collection.  I added code to strip uuencoded sections, and pump out uuencode
+summary tokens instead.  I'll check it in.  It didn't make a significant
+difference on my usual test run (a single spam in my Set4 is now judged as
+ham by the other 4 sets; nothing else changed).  It does shrink the database
+size here by a few percent.  Let us know whether it helps you!
+
+Before and after stripping uuencoded sections:
+
+false positive percentages
+    0.000  0.000  tied
+    0.000  0.000  tied
+    0.050  0.050  tied
+    0.000  0.000  tied
+    0.025  0.025  tied
+    0.000  0.000  tied
+    0.075  0.075  tied
+    0.025  0.025  tied
+    0.025  0.025  tied
+    0.000  0.000  tied
+    0.050  0.050  tied
+    0.000  0.000  tied
+    0.025  0.025  tied
+    0.000  0.000  tied
+    0.000  0.000  tied
+    0.050  0.050  tied
+    0.025  0.025  tied
+    0.000  0.000  tied
+    0.025  0.025  tied
+    0.050  0.050  tied
+
+won   0 times
+tied 20 times
+lost  0 times
+
+total unique fp went from 8 to 8 tied
+
+false negative percentages
+    0.255  0.255  tied
+    0.364  0.364  tied
+    0.254  0.291  lost   +14.57%
+    0.509  0.509  tied
+    0.436  0.436  tied
+    0.218  0.218  tied
+    0.182  0.218  lost   +19.78%
+    0.582  0.582  tied
+    0.327  0.327  tied
+    0.255  0.255  tied
+    0.254  0.291  lost   +14.57%
+    0.582  0.582  tied
+    0.545  0.545  tied
+    0.255  0.255  tied
+    0.291  0.291  tied
+    0.400  0.400  tied
+    0.291  0.291  tied
+    0.218  0.218  tied
+    0.218  0.218  tied
+    0.145  0.182  lost   +25.52%
+
+won   0 times
+tied 16 times
+lost  4 times
+
+total unique fn went from 89 to 90 lost    +1.12%
+

@@ -1,0 +1,14 @@
+
+{{alias}}
+    Minimum signed 32-bit integer.
+
+    The minimum signed 32-bit integer is given by `-(2^31)`.
+
+    Examples
+    --------
+    > {{alias}}
+    -2147483648
+
+    See Also
+    --------
+

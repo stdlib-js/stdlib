@@ -1,0 +1,104 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:35:10 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E4309440E2
+	for <jm@localhost>; Fri,  9 Aug 2002 10:33:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:33:47 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EQmb07036 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:26:48 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id CAA02724 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 02:45:50 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cyl0-0002oY-00; Thu,
+    08 Aug 2002 18:40:02 -0700
+Received: from 70.muca.bstn.bstnmaco.dsl.att.net ([12.98.14.70]
+    helo=pulse.fsckit.net) by usw-sf-list1.sourceforge.net with esmtp (Cipher
+    TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id 17cykD-0007El-00
+    for <razor-users@lists.sourceforge.net>; Thu, 08 Aug 2002 18:39:13 -0700
+Received: from twells by pulse.fsckit.net with local (Exim) id
+    17cyk9-0002fi-00 for razor-users@lists.sourceforge.net; Thu,
+    08 Aug 2002 21:39:09 -0400
+From: "Tabor J. Wells" <razor-users@fsckit.net>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] What's wrong with the Razor servers now?
+Message-Id: <20020809013908.GA10032@fsckit.net>
+Reply-To: razor-users@example.sourceforge.net
+References: <81F8FF20-AB1F-11D6-BCF2-00039396ECF2@deersoft.com>
+    <NDBBJPAGKLCMDEIEKOPBAEFOIHAA.mailinglists@websitemanagers.com.au>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <NDBBJPAGKLCMDEIEKOPBAEFOIHAA.mailinglists@websitemanagers.com.au>
+User-Agent: Mutt/1.4i
+X-Copyright: This email is Copyright (c)2002 by razor-users@fsckit.net.
+    All rights reserved.
+X-Bofh: Do you feel lucky?
+X-Jihad: I will hunt down all who spam my account. Try me.
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 21:39:09 -0400
+Date: Thu, 8 Aug 2002 21:39:09 -0400
+
+On Fri, Aug 09, 2002 at 10:05:29AM +1000,
+Adam Goryachev <mailinglists@websitemanagers.com.au> is thought to have said:
+
+> > Now I get some opt-in mail which looks to me like
+> > spam.  I hit "this is spam".  My trust rating plummets --
+> 
+> Good! Your opinion of what is spam is unreliable, and therefore, I don't
+> *want* to trust you. IMHO, that is exactly the case that the trust system is
+> supposed to sort out. People who incorrectly submit non-spam bulk mail to
+> razor.
+
+Let's take a look at an example here. Someone on this list signed
+razor-users@fsckit.net up to a ZDNet mailing list that doesn't confirm
+subscriptions in a piss-poor attempt to mailbomb me. I report all of these
+mailings to Razor because, guess what, for me this is spam. This and a
+hundred more traditional spam emails to automated spamtrap addresses get 
+reported by me daily. I probably have a decent TES value because of all of
+this.
+
+Now lets say someone else who is also reporting a fair amount of your
+typical proxy/relayed spam has been reporting these and has built up a
+decent TES rating because of it. However they subscribed to that same ZDNet
+list and enjoy getting the mail from it except that they don't like seeing 
+it tagged as spam by Razor. So they razor-revoke it. 
+
+Who loses in this case? Why? Neither party is inaccurate in their actions
+IMO. But someone's standing is going to get hurt because of it.
+
+Tabor
+
+-- 
+--------------------------------------------------------------------
+Tabor J. Wells                                razor-users@fsckit.net
+Fsck It!                 Just another victim of the ambient morality
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

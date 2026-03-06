@@ -1,0 +1,69 @@
+From fork-admin@xent.com  Tue Sep  3 22:20:20 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0A1F716F67
+	for <jm@localhost>; Tue,  3 Sep 2002 22:19:31 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 22:19:31 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g83KO1Z01894 for
+    <jm@jmason.org>; Tue, 3 Sep 2002 21:24:01 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id VAA03489 for <jm@jmason.org>; Tue, 3 Sep 2002 21:24:17 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E84A72940F6; Tue,  3 Sep 2002 13:16:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm7-47.sba1.netlojix.net
+    [207.71.222.143]) by xent.com (Postfix) with ESMTP id 1404F294099 for
+    <fork@xent.com>; Tue,  3 Sep 2002 13:15:06 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id NAA06379;
+    Tue, 3 Sep 2002 13:04:23 -0700
+Message-Id: <200209032004.NAA06379@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: Re: no matter where you go
+In-Reply-To: Message from
+    "James Tauber"
+    <jtauber@jtauber.com> of
+    "Thu, 29 Aug 2002 10:58:35 GMT."
+    <20020829105836.0628D2FD34@server3.fastmail.fm>
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 03 Sep 2002 13:04:22 -0700
+
+
+
+> Another thing to note about Australia is that, while the highest income
+> tax bracket (47%) isn't *that* high, it kicks in at around USD33,000.
+
+and it looks like PPP for USD 33k is only
+about USD 50k*, at least in Big Macs:
+
+<http://www.economist.com/images/20020427/CFN751.gif>
+Australia	 A$3.00 USD 1.62	-35%
+US		  $2.49 USD 2.49
+Switzerland	SFr6.30 USD 3.81	+53%
+
+Interestingly enough, although housing in
+Perth seems cheap, housing in Switzerland
+doesn't seem to be as expensive as the Big
+Macs would imply.
+
+-Dave
+
+* which still doesn't sound bad, if one
+can convert urban CA equity into free and
+clear Oz ownership.
+

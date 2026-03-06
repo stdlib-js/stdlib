@@ -1,0 +1,88 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Tue Aug 20 19:19:07 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0FFBC43C36
+	for <jm@localhost>; Tue, 20 Aug 2002 14:19:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 19:19:00 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7KIHOZ18932 for <jm-sa@jmason.org>; Tue, 20 Aug 2002 19:17:24 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hDXu-0001Ts-00; Tue,
+    20 Aug 2002 11:16:02 -0700
+Received: from mclean.mail.mindspring.net ([207.69.200.57]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hDWv-0003Ar-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Tue, 20 Aug 2002 11:15:01 -0700
+Received: from user-11fad62.dsl.mindspring.com ([66.245.52.194]
+    helo=belphegore.hughes-family.org) by mclean.mail.mindspring.net with
+    esmtp (Exim 3.33 #1) id 17hDWp-00068O-00; Tue, 20 Aug 2002 14:14:55 -0400
+Received: from balam.hughes-family.org
+    (adsl-67-118-234-50.dsl.pltn13.pacbell.net [67.118.234.50]) by
+    belphegore.hughes-family.org (Postfix) with ESMTP id 2CE0496F01;
+    Tue, 20 Aug 2002 11:14:52 -0700 (PDT)
+Subject: Re: [SAtalk] results for giant mass-check (phew)
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: "Malte S. Stretz" <msquadrat.nospamplease@gmx.net>,
+	SpamAssassin Talk ML <spamassassin-talk@lists.sourceforge.net>
+To: yyyy@spamassassin.taint.org (Justin Mason)
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <20020820142327.ECE3143C32@phobos.labs.netnoteinc.com>
+Message-Id: <B7973337-B468-11D6-9F04-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Tue, 20 Aug 2002 11:14:50 -0700
+Date: Tue, 20 Aug 2002 11:14:50 -0700
+
+
+On Tuesday, August 20, 2002, at 07:23  AM, Justin Mason wrote:
+
+>> The compensate rule USER_AGENT should go or at least score 
+>> very low; with
+>> it, a spammer just has to include a header like
+>
+> BTW, the scores are irrelevant right now (unless the test is 
+> going to have
+> a non-GA'd score).  The GA should reduce "easy" ones, and if it 
+> doesn't,
+> after the GA run is the time to comment.  Don't pay any 
+> attention to them!
+> ;)
+
+Remember that the GA is going to be considering combinatorial 
+uses of the rules, so rules which look dodgy on their own might 
+be gems for the GA -- perhaps something with a S/O ratio of .5 
+actually occurs often in combination with some other rule, and 
+in those situations, helps to distinguish spam vs nonspam.
+
+C
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

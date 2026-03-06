@@ -1,0 +1,96 @@
+From ilug-admin@linux.ie  Wed Oct  9 10:53:57 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id E22D316F1F
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:52:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:52:30 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98HVYK26934 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 8 Oct 2002 18:31:34 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 0A57C341F2; Tue,  8 Oct 2002 18:32:19 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from area52.nsa.ie (unknown [193.120.253.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id D8388341E8 for <ilug@linux.ie>; Tue,
+    8 Oct 2002 18:31:56 +0100 (IST)
+Received: from hackwatch.com (void.nsa.ie [193.120.253.3]) by
+    area52.nsa.ie (8.12.4/8.12.4) with ESMTP id g98HmuG6023998; Tue,
+    8 Oct 2002 18:48:56 +0100
+Message-Id: <3DA31781.19CBEEA6@hackwatch.com>
+From: John McCormac <zzzzcc@hackwatch.com>
+Organization: WhoisIreland.com
+X-Mailer: Mozilla 4.78 [en] (Win98; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: Colin Nevin <colin.nevin@meritsolutions.ie>
+Cc: ilug <ilug@linux.ie>
+Subject: Re: [ILUG] connecting at 1200bps in RH7.3 (help!)
+References: <1034098479.1602.13.camel@pluto>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Tue, 08 Oct 2002 18:36:01 +0100
+Date: Tue, 08 Oct 2002 18:36:01 +0100
+
+Colin Nevin wrote:
+> 
+> Hi All,
+> The modem handshake works at slightly higher speeds (4800bps to
+> ~57600bps) but that is no good for tx/rx'ing data to the remote server
+> as it insists at talking at the speed of treacle/1200bps.
+
+It sounds like the flow control is set to Xon/Xoff rather than hardware.
+
+> Baud 1200 7 data bits Even Parity
+
+Unusual -  8 n 1 is more common.
+
+> 
+> I am doing a ATZ3 to reset the modem then I send this init string:
+> 
+> AT&F1E1V1Q0X4Y0S32=232&A1&B0&C1&D2&H0&I0&K1&M4&N0&P0&R1&S0&U0&Y1
+
+I think that the AT command for hardware flow control is &E4 though this
+may vary from modem to modem.
+
+Regards...zzzzcc
+-- 
+********************************************
+John McCormac            * Hack Watch News
+zzzzcc@hackwatch.com       * 22 Viewmount, 
+Voice:   +353-51-873640  * Waterford,
+BBS&Fax: +353-51-850143  * Ireland
+http://www.hackwatch.com/~kooltek
+********************************************
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: 2.6
+
+mQCNAzAYPNsAAAEEAPGTHaNyitUTNAwF8BU6mF5PcbLQXdeuHf3xT6UOL+/Od+z+
+ZOCAx8Ka9LJBjuQYw8hlqvTV5kceLlrP2HPqmk7YPOw1fQWlpTJof+ZMCxEVd1Qz
+TRet2vS/kiRQRYvKOaxoJhqIzUr1g3ovBnIdpKeo4KKULz9XKuxCgZsuLKkVAAUX
+tCJKb2huIE1jQ29ybWFjIDxqbWNjQGhhY2t3YXRjaC5jb20+tBJqbWNjQGhhY2t3
+YXRjaC5jb20=
+=sTfy
+-----END PGP PUBLIC KEY BLOCK-----
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

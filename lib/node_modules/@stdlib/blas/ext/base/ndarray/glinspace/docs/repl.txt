@@ -1,0 +1,68 @@
+
+{{alias}}( arrays )
+    Fills a one-dimensional ndarray with linearly spaced values over a specified
+    interval.
+
+    If an input ndarray has a single element and the function is supposed to
+    include the end of the interval, the set of values written to an input
+    ndarray only includes the end of the interval, but not the start of the
+    interval.
+
+    Otherwise, when an input ndarray has a single element and the function is
+    not supposed to include the end of the interval, the set of values written
+    to an input ndarray only includes the start of the interval, but not the end
+    of the interval.
+
+    If the start of the interval is less than end of the interval, the set of
+    values written to an input ndarray will be written in ascending order, and,
+    if the start of the interval is greater than the end of the interval, the
+    set of written values will be in descending order.
+
+    When an input ndarray contains at least two values and the function is
+    supposed to include the end of the interval, the set of values written to an
+    input ndarray is guaranteed to include the start and end interval values.
+    Beware, however, that values between the interval bounds are subject to
+    floating-point rounding errors.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays in order:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray specifying the start of the interval.
+        - a zero-dimensional ndarray specifying the end of the interval.
+        - a zero-dimensional ndarray specifying whether to include the end of
+        the interval when writing values to the input ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    // Create the input ndarray:
+    > var opts = { 'dtype': 'generic' };
+    > var buf = [ 0.0, 0.0, 0.0, 0.0 ];
+    > var x = {{alias:@stdlib/ndarray/array}}( buf, opts );
+
+    // Specify the start of the interval:
+    > var start = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, opts );
+
+    // Specify the end of the interval:
+    > var stop = {{alias:@stdlib/ndarray/from-scalar}}( 3.0, opts );
+
+    // Specify whether to include the endpoint:
+    > opts = { 'dtype': 'bool' };
+    > var endpoint = {{alias:@stdlib/ndarray/from-scalar}}( true, opts );
+
+    // Fill the input ndarray:
+    > {{alias}}( [ x, start, stop, endpoint ] )
+    <ndarray>
+
+    > {{alias:@stdlib/ndarray/to-array}}( x )
+    [ 0.0, 1.0, 2.0, 3.0 ]
+
+    See Also
+    --------

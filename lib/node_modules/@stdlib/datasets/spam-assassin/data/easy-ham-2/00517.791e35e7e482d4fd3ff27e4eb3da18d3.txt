@@ -1,0 +1,72 @@
+From webdev-admin@linux.ie  Tue Aug 20 11:51:52 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A45CC43C36
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:34 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JHL5Z02133 for
+    <jm-webdev@jmason.org>; Mon, 19 Aug 2002 18:21:05 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA20534; Mon, 19 Aug 2002 18:21:05 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay04.esat.net (relay04.esat.net [193.95.141.42]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA20491 for <webdev@linux.ie>;
+    Mon, 19 Aug 2002 18:21:00 +0100
+Received: from (lee.csn.ul.ie) [193.95.184.122] by relay04.esat.net with
+    esmtp id 17gqD5-0001xz-00; Mon, 19 Aug 2002 18:21:00 +0100
+Message-Id: <5.1.0.14.0.20020819181835.00ac0eb8@holly.csn.ul.ie>
+X-Sender: hostyle@holly.csn.ul.ie
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+Date: Mon, 19 Aug 2002 18:23:01 +0100
+To: webdev@linux.ie
+From: Lee Hosty <hostyle@csn.ul.ie>
+Subject: Re: [Webdev] PHP+Javascript request
+In-Reply-To: <3D612687.9090202@heanet.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+At 06:10 PM 19/08/2002 +0100, Dave Wilson wrote:
+
+>In order for PHP to parse the results of the SELECT MULTIPLE after it's 
+>submitted, the variable name needs to end with []. That's great; PHP will 
+>take each selected element and plant them as consecutive elements in an 
+>array. But that makes for quite messy code when trying to link the regions 
+>SELECT action with the sites SELECT MULTIPLE. Javascript can't refer to 
+>the SELECT MULTIPLE by name because of the brackets, so I have to refer to 
+>it by its location in the form.
+
+er, i understood you until you reached the above. Maybe its my lack of PHP 
+but why would a variable name _need_ to end with [] ?
+
+With most languages you parse the submitted form data and should come out 
+with either variables or an array / hash, which you then work with and name 
+whatever you like.
+
+
+Lee Hosty -x- hostyle AT csn.ul.ie -x- +353 (0)86 8768780
+--
+YONDER BOGINE (n.)
+The kind of restaurant advertised as 'just three minutes from this cinema' 
+which
+clearly nobody ever goes to and, even if they had ever contemplated it, have
+certainly changed their mind since seeing the advert.
+
+
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+

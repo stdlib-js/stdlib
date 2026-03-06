@@ -1,0 +1,104 @@
+From fork-admin@xent.com  Wed Sep 11 13:49:31 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E1CB916F03
+	for <jm@localhost>; Wed, 11 Sep 2002 13:49:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 13:49:31 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8ANxgC22582 for <jm@jmason.org>;
+    Wed, 11 Sep 2002 00:59:46 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 82F272940AA; Tue, 10 Sep 2002 16:56:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from homer.perfectpresence.com (unknown [209.123.207.194]) by
+    xent.com (Postfix) with ESMTP id EDBCF29409A for <fork@xent.com>;
+    Tue, 10 Sep 2002 16:55:35 -0700 (PDT)
+Received: from adsl-157-233-109.jax.bellsouth.net ([66.157.233.109]
+    helo=regina) by homer.perfectpresence.com with smtp (Exim 3.36 #1) id
+    17outV-0000l4-00; Tue, 10 Sep 2002 19:58:09 -0400
+From: "Geege Schuman" <geege@barrera.org>
+To: "Gary Lawrence Murphy" <garym@canada.com>,
+	"Geege Schuman" <geege@barrera.org>
+Cc: <johnhall@evergo.net>, "FoRK" <fork@spamassassin.taint.org>
+Subject: RE: Recommended Viewing
+Message-Id: <ILEHJNJFPDLMDEKNIAKCGEFBCAAA.geege@barrera.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+In-Reply-To: <m2admqkk4h.fsf@maya.dyndns.org>
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Importance: Normal
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - homer.perfectpresence.com
+X-Antiabuse: Original Domain - xent.com
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - barrera.org
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 10 Sep 2002 19:56:56 -0400
+
+dreams-are-like-radio analogy: i program my Jetta Monsoon for Planet 93.3,
+80's 102.9, and NPR 89.9 but when i leave my local broadcast range i have to
+scan for new stations. dreaming is outside my local broadcast range.
+
+-----Original Message-----
+From: garym@maya.dyndns.org [mailto:garym@maya.dyndns.org]On Behalf Of
+Gary Lawrence Murphy
+Sent: Tuesday, September 10, 2002 10:14 AM
+To: Geege Schuman
+Cc: johnhall@evergo.net; FoRK
+Subject: Re: Recommended Viewing
+
+
+>>>>> "G" == Geege Schuman <geege@barrera.org> writes:
+
+    G> you meant "SURPRISINGLY perceptive," didn't you?  :-)
+
+Of course, dear.  Especially without zazen training.  Veritably
+Operational Thetan-like.
+
+    G> recent exceptionally vivid and strange dreams lead me to
+    G> believe i'm sparking synapses that have lain dormant lo these
+    G> many years.  Lots of problem solving going on up there at
+    G> night.
+
+It's a myth that we don't use parts of our brain.  We use it all,
+always.  It's just that our culturally-induced focal-point causes most
+of us to most of the time ignore and waste 99.999% of it.  "Lucid" is
+a measure of notch-filter bandwidth; all stations are broadcasting,
+but we only /choose/ Easy Rock 105.
+
+For example, don't look now but your shoes are full of feet.
+
+The sensation of toes the above statement evokes is not a "turning on"
+of circuits, it is a "tuning in".  The next step, of course, is to
+"drop out" :)
+
+To paraphrase an old saw: Life is wasted on the living.
+
+--
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+
+
+
+

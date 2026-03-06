@@ -1,0 +1,15 @@
+
+{{alias}}
+    Windows path delimiter.
+
+    Examples
+    --------
+    > {{alias}}
+    ';'
+    > var PATH = 'C:\\Windows\\system32;C:\\Windows;C:\\Program Files\\node\\';
+    > var paths = PATH.split( {{alias}} )
+    [ 'C:\\Windows\\system32', 'C:\\Windows', 'C:\\Program Files\\node\\' ]
+
+    See Also
+    --------
+

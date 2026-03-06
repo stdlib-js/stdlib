@@ -1,0 +1,72 @@
+From sitescooper-talk-admin@lists.sourceforge.net  Mon Sep  2 12:22:41 2002
+Return-Path: <sitescooper-talk-admin@example.sourceforge.net>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C5A1343F9B
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:22:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:22:40 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7TLB0Z28997 for <zzzz-scoop@spamassassin.taint.org>; Thu, 29 Aug 2002 22:11:00 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kWZF-0004h8-00; Thu,
+    29 Aug 2002 14:11:05 -0700
+Received: from srv01s4.cas.org ([134.243.50.9] helo=srv01.cas.org) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kWZ5-0004GD-00 for <sitescooper-talk@lists.sourceforge.net>;
+    Thu, 29 Aug 2002 14:10:55 -0700
+Received: from lwv26awu.cas.org (lwv26awu [134.243.40.138]) by
+    srv01.cas.org (8.12.5/m8.12.5/CAS_MAIL_HUB-2.00) with ESMTP id
+    g7TLAlPW014804 for <sitescooper-talk@lists.sourceforge.net>;
+    Thu, 29 Aug 2002 17:10:47 -0400 (EDT)
+Received: (from lwv26@localhost) by lwv26awu.cas.org
+    (8.11.6+Sun/m4_8.11.6/CAS_CLIENT-1.18) id g7TLAlP01838; Thu,
+    29 Aug 2002 17:10:47 -0400 (EDT)
+From: "Larry W. Virden" <lvirden@cas.org>
+Message-Id: <20020829171046.AAB1816@cas.org>
+To: <sitescooper-talk@example.sourceforge.net>
+Subject: [scoop] Scoop MS Word .doc file into something that plucker or other Palm app can display?
+Sender: sitescooper-talk-admin@example.sourceforge.net
+Errors-To: sitescooper-talk-admin@example.sourceforge.net
+X-Beenthere: sitescooper-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:sitescooper-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:sitescooper-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of sitescooper - see http://sitescooper.org/
+    <sitescooper-talk.lists.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=sitescooper-talk>
+X-Original-Date: Thu, 29 Aug 2002 17:10:47 -0400 (EDT)
+Date: Thu, 29 Aug 2002 17:10:47 -0400 (EDT)
+
+I am wondering whether there's a way that I can use sitescooper and/or plucker
+or some other free utility to convert word documents into something a bit
+more palmos friendly?
+
+I don't have a Windows machine, so it becomes problematic to convert them;
+I know that if this were not the case, in Word I could save them as some
+other more friendly format.
+-- 
+Tcl'2002 Sept 16, 2002, Vancouver, BC http://www.tcl.tk/community/tcl2002/
+Larry W. Virden <mailto:lvirden@cas.org> <URL: http://www.purl.org/NET/lvirden/>
+Even if explicitly stated to the contrary, nothing in this posting should 
+be construed as representing my employer's opinions.
+-><-
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Sitescooper-talk mailing list
+Sitescooper-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/sitescooper-talk
+

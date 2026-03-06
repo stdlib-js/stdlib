@@ -1,0 +1,24 @@
+
+{{alias}}( value )
+    Tests if a value is a Date object.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a Date object.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new Date() )
+    true
+    > bool = {{alias}}( '2017-01-01' )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,77 @@
+
+{{alias}}( p, k )
+    Evaluates the quantile function for a chi distribution with degrees of
+    freedom `k` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` for any argument, the function returns `NaN`.
+
+    If provided `k < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    k: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 1.0 )
+    ~1.282
+    > y = {{alias}}( 0.5, 4.0 )
+    ~1.832
+    > y = {{alias}}( 0.8, 0.1 )
+    ~0.116
+    > y = {{alias}}( -0.2, 0.5 )
+    NaN
+    > y = {{alias}}( 1.1, 0.5 )
+    NaN
+    > y = {{alias}}( NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+
+    // Negative degrees of freedom:
+    > y = {{alias}}( 0.5, -1.0 )
+    NaN
+
+    // Degenerate distribution when `k = 0`:
+    > y = {{alias}}( 0.3, 0.0 )
+    0.0
+    > y = {{alias}}( 0.9, 0.0 )
+    0.0
+
+
+{{alias}}.factory( k )
+    Returns a function for evaluating the quantile function of a chi
+    distribution with degrees of freedom `k`.
+
+    Parameters
+    ----------
+    k: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myquantile = {{alias}}.factory( 2.0 );
+    > var y = myquantile( 0.3 )
+    ~0.845
+    > y = myquantile( 0.7 )
+    ~1.552
+
+    See Also
+    --------
+

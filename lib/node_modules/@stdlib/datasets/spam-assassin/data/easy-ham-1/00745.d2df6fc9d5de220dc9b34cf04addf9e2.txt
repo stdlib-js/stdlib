@@ -1,0 +1,169 @@
+From fork-admin@xent.com  Tue Sep 24 10:48:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C982D16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:48:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:48:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NNu4C08643 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 00:56:05 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 594552941FE; Mon, 23 Sep 2002 16:52:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id 82B5529409A for <fork@xent.com>; Mon,
+    23 Sep 2002 16:51:44 -0700 (PDT)
+Received: (qmail 13169 invoked from network); 23 Sep 2002 23:55:23 -0000
+Received: from adsl-66-124-225-82.dsl.snfc21.pacbell.net (HELO golden)
+    (66.124.225.82) by relay1.pair.com with SMTP; 23 Sep 2002 23:55:23 -0000
+X-Pair-Authenticated: 66.124.225.82
+Message-Id: <0b3901c2635c$ab557240$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: <fork@spamassassin.taint.org>
+References: <AAC883CC-CF3D-11D6-817E-000393A46DEA@alumni.caltech.edu>
+Subject: Re: How about subsidizing SSL access to Google?
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 8bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 16:55:17 -0700
+
+Good idea!
+
+This could also be a job for P2P; lots of people would love to
+devote their spare cycles, bandwidth, and unblocked IP addresses
+to giving the Chinese unfettered net access.
+
+In a sense, this is what the "peek-a-booty" project does:
+
+   http://www.peek-a-booty.org
+
+But let's play out the next few moves:
+
+Good Guys: Google enables SSL access
+ Bad Guys: Chinese government again blocks all access to Google domains
+Good Guys: Set up Google proxies on ever-changing set of hosts (peek-a-booty)
+ Bad Guys: Ban SSL (or any unlicensed opaque traffic) at the national firewall
+Good Guys: Hide Google traffic inside other innocuous-looking activity
+ Bad Guys: Require nationwide installation of client-side NetNannyish
+           software
+Good Guys: Offer software which disables/spoofs monitoring software
+ Bad Guys: Imprison and harvest organs from people found using
+           monitoring-disabling-software
+
+...and on and on.
+
+The best we can hope is that technological cleverness, by raising the
+costs of oppression or by provoking intolerable oppression, brings
+social liberalization sooner rather than later.
+
+- Gordon
+
+----- Original Message -----
+From: "Rohit Khare" <khare@alumni.caltech.edu>
+To: <fork@spamassassin.taint.org>
+Sent: Monday, September 23, 2002 2:44 PM
+Subject: How about subsidizing SSL access to Google?
+
+
+[a cheeky letter to the editors of the Economist follows, along with the
+article I was commenting on... Rohit]
+
+In your article about Chinese attempts to censor Google last week ("The
+Search Goes On", Sept. 19th), the followup correctly noted that the most
+subversive aspect of Google's service is not its card catalog, which
+merely points surfers in the right direction, but the entire library. By
+maintaining what amounts to a live backup of the entire World Wide Web,
+if you can get to Google's cache, you can read anything you'd like.
+
+The techniques Chinese Internet Service Providers are using to enforce
+these rules, however, all depend on the fact that traffic to and from
+Google, or indeed almost all public websites, is unencrypted. Almost all
+Web browsers, however, include support for Secure Sockets Layer (SSL)
+encryption for securing credit card numbers and the like. Upgrading to
+SSL makes it effectively impossible for a 'man-in-the-middle' to meddle;
+censorship would have to be imposed on each individual computer in
+China. The only choice left is to either ban the entire site (range of
+IP addresses), but not the kind of selective filtering reported on in
+the article.
+
+Of course, the additional computing power to encrypt all this traffic
+costs real money. If the United States is so concerned about the free
+flow of information, why shouldn't the Broadcasting Board of Governors
+sponsor an encrypted interface to Google, or for that matter, the rest
+of the Web?
+
+To date, public diplomacy efforts have focused on public-sector
+programming for the Voice of America, Radio Sawa, and the like. Just
+imagine if the US government got into the business of subsidizing secure
+access to private-sector media instead. Nothing illustrates the freedom
+of the press as much as the wacky excess of the press itself -- and most
+of it is already salted away at Google and the Internet Archive project.
+
+On second thought, I can hardly imagine this Administration *promoting*
+the use of encryption to uphold privacy rights. Never mind...
+
+Best,
+   Rohit Khare
+
+===========================================================
+
+The search goes on
+China backtracks on banning Google—up to a point
+
+Sep 19th 2002 | BEIJING
+ From The Economist print edition
+
+IN CHINESE, the nickname for Google, an American Internet search engine,
+is gougou, meaning “doggy”. For the country's fast-growing population of
+Internet users (46m, according to an official estimate), it is proving
+an elusive creature. Earlier this month, the Chinese authorities blocked
+access to Google from Internet service providers in China—apparently
+because the search engine helped Chinese users to get access to
+forbidden sites. Now, after an outcry from those users, access has been
+restored.
+
+An unusual climbdown by China's zealous Internet censors? Hardly. More
+sophisticated controls have now been imposed that make it difficult to
+use Google to search for material deemed offensive to the government.
+Access is still blocked to the cached versions of web pages taken by
+Google as it trawls the Internet. These once provided a handy way for
+Chinese users to see material stored on blocked websites.
+
+After the blocking of Google on August 31st, many Chinese Internet users
+posted messages on bulletin boards in China protesting against the move.
+Their anger was again aroused last week when some Chinese Internet
+providers began rerouting users trying to reach the blocked Google site
+to far less powerful search engines in China.
+
+Duncan Clark, the head of a Beijing-based technology consultancy firm,
+BDA (China) Ltd, says China is trying a new tactic in its efforts to
+censor the Internet. Until recently, it had focused on blocking
+individual sites, including all pages stored on them. Now it seems to be
+filtering data transmitted to or from foreign websites to search for key
+words that might indicate undesirable content. For example earlier this
+week when using Eastnet, a Beijing-based Internet provider, a search on
+Google for Falun Gong—a quasi-Buddhist exercise sect outlawed in China—
+usually aborted before all the results had time to appear. Such a search
+also rendered Google impossible to use for several minutes.
+
+
+

@@ -1,0 +1,22 @@
+{
+	"string": [
+		"encoding",
+		"flag",
+		"mode"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"encoding": [
+			"enc"
+		]
+	}
+}

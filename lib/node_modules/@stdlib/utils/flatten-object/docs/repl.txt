@@ -1,0 +1,92 @@
+
+{{alias}}( obj[, options] )
+    Flattens an object.
+
+    Parameters
+    ----------
+    obj: ObjectLike
+        Object to flatten.
+
+    options: Object (optional)
+        Options.
+
+    options.depth: integer (optional)
+        Maximum depth to flatten.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to deep copy. Default: false.
+
+    options.flattenArrays: boolean (optional)
+        Boolean indicating whether to flatten arrays. Default: false.
+
+    options.delimiter: string (optional)
+        Key path delimiter. Default: '.'.
+
+    Returns
+    -------
+    out: ObjectLike
+        Flattened object.
+
+    Examples
+    --------
+    > var obj = { 'a': { 'b': { 'c': 'd' } } };
+    > var out = {{alias}}( obj )
+    { 'a.b.c': 'd' }
+
+    // Set the `depth` option to flatten to a specified depth:
+    > obj = { 'a': { 'b': { 'c': 'd' } } };
+    > out = {{alias}}( obj, { 'depth': 1 } )
+    { 'a.b': { 'c': 'd' } }
+    > var bool = ( obj.a.b === out[ 'a.b' ] )
+    true
+
+    // Set the `delimiter` option:
+    > obj = { 'a': { 'b': { 'c': 'd' } } };
+    > out = {{alias}}( obj, { 'delimiter': '-|-' } )
+    { 'a-|-b-|-c': 'd' }
+
+    // Flatten arrays:
+    > obj = { 'a': { 'b': [ 1, 2, 3 ] } };
+    > out = {{alias}}( obj, { 'flattenArrays': true } )
+    { 'a.b.0': 1, 'a.b.1': 2, 'a.b.2': 3 }
+
+
+{{alias}}.factory( [options] )
+    Returns a function to flatten an object.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.depth: integer (optional)
+        Maximum depth to flatten.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to deep copy. Default: false.
+
+    options.flattenArrays: boolean (optional)
+        Boolean indicating whether to flatten arrays. Default: false.
+
+    options.delimiter: string (optional)
+        Key path delimiter. Default: '.'.
+
+    Returns
+    -------
+    fcn: Function
+        Flatten function.
+
+    Examples
+    --------
+    > var flatten = {{alias}}.factory({
+    ...     'depth': 1,
+    ...     'copy': true,
+    ...     'delimiter': '|'
+    ... });
+    > var obj = { 'a': { 'b': { 'c': 'd' } } };
+    > var out = flatten( obj )
+    { 'a|b': { 'c': 'd' } }
+
+    See Also
+    --------
+

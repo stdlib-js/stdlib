@@ -1,0 +1,152 @@
+
+{{alias}}( fcn, n, [options,] done )
+    Invokes a function `n` times and returns an array of accumulated function
+    return values.
+
+    For each iteration, the provided function is invoked with two arguments:
+
+    - index: invocation index (starting from zero).
+    - next: callback to be invoked upon function completion.
+
+    The `next` callback accepts two arguments:
+
+    - error: error argument.
+    - result: function result.
+
+    If a provided function calls the `next` callback with a truthy `error`
+    argument, the function suspends execution and immediately calls the `done`
+    callback for subsequent `error` handling.
+
+    Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
+    wrap the `done` callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to invoke.
+
+    n: integer
+        Number of times to invoke a function.
+
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.series: boolean (optional)
+        Boolean indicating whether to allow only one pending invocation at a
+        time. Default: false.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    done: Function
+        A callback invoked upon executing a provided function `n` times or upon
+        encountering an error.
+
+    Examples
+    --------
+    // Basic usage:
+    > function fcn( i, next ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         next( null, i );
+    ...     }
+    ... };
+    > function done( error, arr ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( arr );
+    ... };
+    > {{alias}}( fcn, 10, done )
+    [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+
+    // Limit number of concurrent invocations:
+    > function fcn( i, next ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         next( null, i );
+    ...     }
+    ... };
+    > function done( error, arr ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( arr );
+    ... };
+    > var opts = { 'limit': 2 };
+    > {{alias}}( fcn, 10, opts, done )
+    [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+
+    // Sequential invocation:
+    > function fcn( i, next ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         next( null, i );
+    ...     }
+    ... };
+    > function done( error, arr ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( arr );
+    ... };
+    > var opts = { 'series': true };
+    > {{alias}}( fcn, 10, opts, done )
+    [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+
+
+{{alias}}.factory( [options,] fcn )
+    Returns a function which invokes a function `n` times and returns an array
+    of accumulated function return values.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.series: boolean (optional)
+        Boolean indicating whether to allow only one pending invocation at a
+        time. Default: false.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    fcn: Function
+        Function to invoke.
+
+    Returns
+    -------
+    out: Function
+        A function which invokes a function `n` times and returns an array of
+        accumulated function return values.
+
+    Examples
+    --------
+    > function fcn( i, next ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         next( null, i );
+    ...     }
+    ... };
+    > var opts = { 'series': true };
+    > var f = {{alias}}.factory( opts, fcn );
+    > function done( error, arr ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( arr );
+    ... };
+    > f( 10, done )
+    [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+
+    See Also
+    --------
+

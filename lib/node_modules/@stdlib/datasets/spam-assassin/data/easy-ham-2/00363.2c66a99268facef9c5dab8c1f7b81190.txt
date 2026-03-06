@@ -1,0 +1,225 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:01 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8FAE94406D
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:54 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D0sHb11435 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 01:54:17 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA16245; Tue, 13 Aug 2002 01:53:50 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id BAA16217 for <ilug@linux.ie>;
+    Tue, 13 Aug 2002 01:53:42 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17ePwL-0005E3-00 for <ilug@linux.ie>; Mon, 12 Aug 2002 17:53:41 -0700
+Date: Mon, 12 Aug 2002 17:53:41 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020813005340.GO25331@linuxmafia.com>
+References: <20020812204603.GK25331@linuxmafia.com>
+    <20020812234021.17803.qmail@web13901.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020812234021.17803.qmail@web13901.mail.yahoo.com>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Paul, my apologies for being irritable on the subject.  I'll tone down
+the rhetoric.
+
+Quoting Paul Linehan (plinehan@yahoo.com):
+
+> Indeed - that I actually had understood prior to all this - for
+> example commercial entities with trial/limited/crippled editions. 
+> 
+> Which is no problem - I don't see why that should be a problem for
+> SuSE though - surely the more the merrrier as far as they're
+> concerned.
+
+Anything either you or I have to say about their motivation is
+speculation.  Bearing that disclaimer in mind, here's mine:  They make
+money from selling boxed sets.  They're glad to make some versions
+available for almost-unrestricted distribution (not "for value") via CD
+duplication or the Internet that they estimate won't substitute for
+boxed-set sales.
+
+For example, they _could_ have packaged what I call the "FTP edition" 
+in ISO9660 images.  The fact that they didn't suggests to me that they
+see the inconvenience of mirroring FTP Edition i386 files (which, at the
+moment, are v. 8.0) as motivation for all but the really determined to
+buy boxed sets, instead.  
+
+Likewise, they _could_ release a v. 8.0 (current) version of the
+"evaluation" single-disk ISO image.  Instead, they always keep it
+several versions behind.  This again seems like an incentive to buy a
+boxed set, after "evaluating" SuSE via the ISO image.
+
+Again, the above is my speculation (only) about their motivations.  All
+we know of a certainty is what permissions they've granted, which are a
+bit messy and complex, but nonetheless quite clear.
+
+Those permissions, as a reminder, apply to the SuSE-produced components,
+YaST, YaST2, the distribution installer program, and possibly other
+utilities that I don't know of.  _They_ wrote that code, and have every
+right to grant or withhold permissions as suit them best.
+
+> One can suspect what one likes. What I didn't understand was that SuSE
+> had proprietary extensions that it wasn't prepared to allow people to
+> use under the GPL or even under  a FreeBSD style licence.
+
+Hmm, let's slow down, here:  There's a persistent misconception that
+it's possible to place somebody else's work under a new licence without
+his permission.  Not so.  There is nothing in copyright law that would
+make that possible.
+
+The copyright _owner_ has inherent rights in his (e.g., software) work,
+and is entitled to issue as many _instances_ of his code under diverse
+licences as he wishes.  (If he gives you a copy with no licence
+statement, there's effectively a default licence by operation of
+copyright law.  To avoid going into a long digression, let me just say
+that it's a proprietary licence by default.  That's why, in order to
+have open source software at all, there must be an explicit licence
+from the copyright holder.)
+
+No Linux distribution _ever_ entails relicensing people's software
+without their explicit permission -- since no such relicensing can occur
+at all. 
+ 
+You cannot get away with taking SuSE Linux AG's work and redistributing
+it under what you claim to be a BSD licence, or the GPL, or anything at
+all other than what the copyright owner has specified, because you
+simply lack the right to do so.  Claiming to do it would be copyright
+violation.
+
+> I thought that the model for the likes of SuSE was selling support and
+> customisation, rather than what I thought of as the core "product". I
+> thought that the likes of Yast came under core - maybe it worked in
+> the glory days before, say, 2001 - I can understand that they might
+> want to make more money, but the way in which they have done it, seems
+> to me, to be be against the spirit of the GPL.
+
+If Stallman and friends at the GPL (let alone Linus Torvalds and kernel
+contributors) had intended to prohibit putting GPLed works on the same
+CDs as proprietary ones, and selling the result only via retail stores
+(plus mail order, etc.) in shrink-wrapped boxes, I'm 100% certain they
+could and would have done so.
+
+Guess what?  They did not.  They didn't even require that anybody give
+you copies of the GPLed components, ever, at all.  All they did was
+require that _if_ you received GPLed software lawfully, then you had to 
+be able to get matching source code for a limited period, upon request.
+
+Spirit of the GPL, you say?  I'd suggest that Stallman and company knew
+exactly what they were doing, and that the degree of access to GPLed
+software is exactly what they had in mind.
+ 
+> All I want is the OS and GNU apps. I was under the impression that for
+> *_those_* all one needed was to pay for the media and not for the code
+> itself?
+> 
+> Ai-je tort?
+
+Mais si.
+
+You are indeed under a misconception, and may want to read the text of
+the GPL to verify this fact.  The GPL does _not_ entitle you to a copy
+of any binary software.  Section 2 provides for rights to access to
+matching source code _if_ you have lawfully received a copy of a covered
+binary.  That section provides three alternative mechanisms for the
+distributor to provide such access.  And SuSE _do_ actually provide 
+exactly that access.
+
+Or so I think to be the case.  If you believe there's some GPLed
+codebase that you can lawfully receive from SuSE whose matching source
+code they are not making available exactly as required, please tell us
+which codebase that is.  (That would be SuSE Linux AG's headache, not
+any of ours, but it might be interesting to examine.)
+
+> My understanding was that binaries or whatever could be received for
+> the cost of the media plus a token of one's appreciation (the latter
+> being subject to agreement between the parties) - I was offering a
+> bottle of wine plus maybe a pint or two and a chat for a copy - I
+> don't know what the going rate is.
+
+Your understanding is almost correct, but not quite.  (1) The access
+provisions of the GPL concern access to _source code_, not binaries.
+(2) It kicks in _only_ for people who've lawfully received covered
+binaries.  (3) _Covered_ software means instances of codebases actually
+placed under the GNU GPL by their copyright owners.  The mere act of 
+placing a piece of software on a CD-ROM with GPLed software doesn't GPL
+it.
+
+In fact, the assertion to the contrary is a favourite FUD tactic from
+enemies of Linux:  They're forever trying to convince software producers
+that using GPLed software in any way with their proprietary offerings
+will "taint" their copyrights and force them to put their property under
+the GPL.  It's simply not so.
+
+> If I wanted support from SuSE, that would be a different issue, and
+> one for which I would be willing to pay.
+
+That's nice, but they're not _offering_ the exact contents of the boxed
+sets free of charge and lawful to duplicate & redistribute, or "borrow".
+For one thing, as you will have noticed from my earlier listing of
+components, the boxed sets' CD-ROMs include quite a lot of _third-party_
+proprietary software.  SuSE Linux AG _cannot_ allow you (or your friend)
+to hand out copies of that software freely, because it's not theirs in
+the first place.
+ 
+> I have a friend with 7.3 - I think that I'll end up doing that!
+
+If you mean the 3-CD core set of RH 7.3, good.  It's a quite decent
+distribution.  But bear in mind that the RH 7.3 boxed sets include
+some other third-party applications whose owners would be very upset to
+find them being copied or "borrowed". 
+
+> I have now realised this, thanks to your kind explanations. I can
+> borrow them, but not copy them? 
+
+No.
+
+Look, it's a collection of software, many elements of which may not be
+lawfully just given out to multiple people:  Your friend installing it,
+then _not_ erasing it but merely letting you "borrow" the CDs results in
+the product being installed in multiple places.  That's unauthorised
+copying.
+
+> And, as I've tried to explain, is not the licence terms on, say,
+> trials for commercial company x to which I object, it is the way SuSE
+> appears, at least to my I.T. peasant self, to have mixed up
+> proprietary and open stuff.
+
+Well, if you don't like SuSE, then you probably won't like Caldera
+eDesk, Xandros Desktop, Lycoris Deskop LX, Libranet, Lindows, or KRUD,
+either.  Depending on your criteria, you also might not like Red Hat,
+Linux-Mandrake, or Yellow Dog, since all of those have boxed-set retail
+sets that include CD-ROMs that may not be publicly redistributed.
+ 
+(I don't even use SuSE.  I'm just trying to clarify the licensing
+question.)
+
+-- 
+Cheers,                                             Live Faust, die Jung.
+Rick Moen
+rick@linuxmafia.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,65 @@
+From sentto-2242572-55983-1034030545-zzzz=spamassassin.taint.org@returns.groups.yahoo.com  Tue Oct  8 00:10:59 2002
+Return-Path: <sentto-2242572-55983-1034030545-zzzz=spamassassin.taint.org@returns.groups.yahoo.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 7CF2116F17
+	for <zzzz@localhost>; Tue,  8 Oct 2002 00:10:57 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 00:10:57 +0100 (IST)
+Received: from n22.grp.scd.yahoo.com (n22.grp.scd.yahoo.com
+    [66.218.66.78]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g97MgpK19867 for <zzzz@spamassassin.taint.org>; Mon, 7 Oct 2002 23:42:51 +0100
+X-Egroups-Return: sentto-2242572-55983-1034030545-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.196] by n22.grp.scd.yahoo.com with NNFMP;
+    07 Oct 2002 22:42:26 -0000
+X-Sender: timc@2ubh.com
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_2_2_0); 7 Oct 2002 22:42:25 -0000
+Received: (qmail 10847 invoked from network); 7 Oct 2002 22:42:25 -0000
+Received: from unknown (66.218.66.216) by m3.grp.scd.yahoo.com with QMQP;
+    7 Oct 2002 22:42:25 -0000
+Received: from unknown (HELO tungsten.btinternet.com) (194.73.73.81) by
+    mta1.grp.scd.yahoo.com with SMTP; 7 Oct 2002 22:42:25 -0000
+Received: from host217-34-94-1.in-addr.btopenworld.com ([217.34.94.1]) by
+    tungsten.btinternet.com with esmtp (Exim 3.22 #8) id 17yga0-0003VG-00 for
+    forteana@yahoogroups.com; Mon, 07 Oct 2002 23:42:24 +0100
+X-Mailer: Microsoft Outlook Express Macintosh Edition - 4.5 (0410)
+To: zzzzteana@yahoogroups.com
+X-Priority: 3
+Message-Id: <E17yga0-0003VG-00@tungsten.btinternet.com>
+From: "Tim Chapman" <timc@2ubh.com>
+X-Yahoo-Profile: tim2ubh
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Mon, 07 Oct 2002 23:41:30 +0100
+Subject: Re: [zzzzteana] The Cafe Forteana is back online!!!
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+Tom R:
+> http://www.cliktrik.com/people/family/me/0419.jpg
+> 
+Which one's you?
+
+TimC
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+Plan to Sell a Home?
+http://us.click.yahoo.com/J2SnNA/y.lEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

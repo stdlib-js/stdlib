@@ -1,0 +1,49 @@
+From fork-admin@xent.com  Mon Sep 30 13:53:59 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 718B016F6E
+	for <jm@localhost>; Mon, 30 Sep 2002 13:49:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:49:23 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8TIiOg23608 for <jm@jmason.org>;
+    Sun, 29 Sep 2002 19:44:25 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id CD8742940A0; Sun, 29 Sep 2002 11:44:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mlug.missouri.edu (mlug.missouri.edu [128.206.61.230]) by
+    xent.com (Postfix) with ESMTP id BE05C29409E for <Fork@xent.com>;
+    Sun, 29 Sep 2002 11:43:52 -0700 (PDT)
+Received: from mlug.missouri.edu (mogmios@localhost [127.0.0.1]) by
+    mlug.missouri.edu (8.12.3/8.12.3/Debian -4) with ESMTP id g8TIhhKL005444
+    (version=TLSv1/SSLv3 cipher=EDH-RSA-DES-CBC3-SHA bits=168 verify=FAIL);
+    Sun, 29 Sep 2002 13:43:43 -0500
+Received: from localhost (mogmios@localhost) by mlug.missouri.edu
+    (8.12.3/8.12.3/Debian -4) with ESMTP id g8TIhZoc005436; Sun,
+    29 Sep 2002 13:43:35 -0500
+From: Michael <mogmios@mlug.missouri.edu>
+To: discussion@mlug.missouri.edu, <nolug@nolug.org>, <Fork@xent.com>
+Subject: A moment of silence for the First Amendment (fwd)
+Message-Id: <Pine.LNX.4.44.0209291337100.4723-100000@mlug.missouri.edu>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 29 Sep 2002 13:43:35 -0500 (CDT)
+
+http://www.post-gazette.com/columnists/20020905brian5.asp
+
+
+

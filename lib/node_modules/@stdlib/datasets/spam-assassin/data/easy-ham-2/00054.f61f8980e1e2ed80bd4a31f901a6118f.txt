@@ -1,0 +1,91 @@
+From social-admin@linux.ie  Fri Aug  9 15:12:30 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B1DE343FB1
+	for <jm@localhost>; Fri,  9 Aug 2002 10:12:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:12:27 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EC2b05272 for
+    <jm+ilug-social@jmason.org>; Fri, 9 Aug 2002 15:12:02 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id MAA05737 for
+    <jm+ilug-social@jmason.org>; Fri, 9 Aug 2002 12:25:31 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA05140; Fri, 9 Aug 2002 12:24:35 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail05.svc.cra.dublin.eircom.net
+    (mail05.svc.cra.dublin.eircom.net [159.134.118.21]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id MAA05099 for <social@linux.ie>; Fri,
+    9 Aug 2002 12:24:29 +0100
+Received: (qmail 88517 messnum 261620 invoked from
+    network[159.134.211.126/p382.as1.castleblaney1.eircom.net]);
+    9 Aug 2002 11:23:59 -0000
+Received: from p382.as1.castleblaney1.eircom.net (HELO
+    contactjuggling.org) (159.134.211.126) by mail05.svc.cra.dublin.eircom.net
+    (qp 88517) with SMTP; 9 Aug 2002 11:23:59 -0000
+Message-Id: <3D53A646.6020805@contactjuggling.org>
+Date: Fri, 09 Aug 2002 12:23:50 +0100
+From: Kae Verens <kverens@contactjuggling.org>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.1b) Gecko/20020721
+X-Accept-Language: en, fi, fr, ga, ja, nl
+MIME-Version: 1.0
+To: "Ryan, Shane" <Shane_Ryan@education.gov.ie>
+Cc: social@linux.ie
+Subject: Re: [ILUG-Social] Doom for Linux
+References: <9C498074D5419A44B05349F5BF2C26301CFA74@sdubtalex01.education.gov.ie>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+Ryan, Shane wrote:
+> hi all,
+> 
+> I'm looking to get my hands on
+> either Doom I or II for my PC.
+> Unfortunately I cannot access 
+> IDSoftware's site because of
+> the silly web-filtering system
+> in place here.
+> 
+> Does anyone know where I can
+> buy a copy of Doom (which I will
+> be running on Linux...) online?
+> Last time I asked in Game they laughed
+> at me ;]
+> 
+> I would ask to swap for Linux software
+> but that wouldn't be ethical or legal.
+> Hence the purchasing question.
+> 
+> Regards,
+> Shane
+> 
+
+there was a copy of Doom 1 that came free with RedHat 5.2 - 
+unfortunately, it doesn't seem to be on the newer CDs.
+
+get the last laugh by going in, and saying that ID soft actually 
+released a Linux wrapper for the game. you need to buy the CDs, though, 
+then download the free wrapper.
+
+-- 
+Kae Verens
+http://www.contactjuggling.org/users/kverens/
+http://www.contactjuggling.org/ (webmaster)
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

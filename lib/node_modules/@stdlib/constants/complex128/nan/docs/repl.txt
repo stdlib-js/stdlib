@@ -1,0 +1,12 @@
+
+{{alias}}
+    Canonical double-precision complex floating-point NaN.
+
+    Examples
+    --------
+    > {{alias}}
+    <Complex128>
+
+    See Also
+    --------
+

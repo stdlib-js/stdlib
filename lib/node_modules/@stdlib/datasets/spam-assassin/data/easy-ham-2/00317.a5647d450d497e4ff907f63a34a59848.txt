@@ -1,0 +1,71 @@
+From ilug-admin@linux.ie  Fri Aug  9 16:05:25 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 45DAF440E4
+	for <jm@localhost>; Fri,  9 Aug 2002 11:00:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 16:00:10 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EdLb08856 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:39:21 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id TAA32628 for <jm-ilug@jmason.org>;
+    Thu, 8 Aug 2002 19:45:20 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA31741; Thu, 8 Aug 2002 19:44:19 +0100
+Received: from florence.ie.alphyra.com
+    (IDENT:F0sfkTy4yqGVF5iatW0p1W8X357CS3rs@itg-gw.cr008.cwt.esat.net
+    [193.120.242.226]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA31708
+    for <ilug@linux.ie>; Thu, 8 Aug 2002 19:44:13 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host IDENT:F0sfkTy4yqGVF5iatW0p1W8X357CS3rs@itg-gw.cr008.cwt.esat.net
+    [193.120.242.226] claimed to be florence.ie.alphyra.com
+Received: from dunlop.admin.ie.alphyra.com
+    (IDENT:562le9a3CAGEWkXtE4DJZ5xe0dBipglE@dunlop.admin.ie.alphyra.com
+    [192.168.11.193]) by florence.ie.alphyra.com (8.11.6/8.11.6) with ESMTP id
+    g78IiBQ31987; Thu, 8 Aug 2002 19:44:11 +0100
+Date: Thu, 8 Aug 2002 19:44:11 +0100 (IST)
+From: Paul Jakma <paulj@alphyra.ie>
+X-X-Sender: paulj@dunlop.admin.ie.alphyra.com
+To: kevin lyda <kevin+dated+1029247658.5c0939@ie.suberic.net>
+Cc: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] TMDA (WAS --> slashdot EW Dijkstra humor]
+In-Reply-To: <Pine.LNX.4.44.0208081922270.32049-100000@dunlop.admin.ie.alphyra.com>
+Message-Id: <Pine.LNX.4.44.0208081942500.32049-100000@dunlop.admin.ie.alphyra.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Thu, 8 Aug 2002, Paul Jakma wrote:
+
+> unfortunately, often spammers provide real return addresses - just not 
+> their own.
+> 
+> so if everyone used tmda, these poor unfortunates would receive
+> millions of tmda confirm messages, in addition to the hundred thousand
+> 'undeliverable' messages that they already get..
+
+	http://messagewall.org/
+
+same concept as tmda (smtp "proxy") but not as extreme as tmda.net - 
+dnsbl, distributed checksum and various other checks.
+
+regards,
+-- 
+Paul Jakma	Sys Admin	Alphyra
+	paulj@alphyra.ie
+Warning: /never/ send email to spam@dishone.st or trap@dishone.st
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

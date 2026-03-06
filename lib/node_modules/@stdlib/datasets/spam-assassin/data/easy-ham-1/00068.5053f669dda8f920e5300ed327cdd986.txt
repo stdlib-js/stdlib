@@ -1,0 +1,137 @@
+From updates-admin@ximian.com  Mon Sep  2 12:29:39 2002
+Return-Path: <updates-admin@ximian.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5EA4843F99
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:29:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:29:37 +0100 (IST)
+Received: from trna.ximian.com (trna.ximian.com [141.154.95.22]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7UIZpZ04242;
+    Fri, 30 Aug 2002 19:35:51 +0100
+Received: from trna.ximian.com (localhost [127.0.0.1]) by trna.ximian.com
+    (8.11.6/8.11.6) with ESMTP id g7UHqm306561; Fri, 30 Aug 2002 13:52:48
+    -0400
+Received: from peabody.ximian.com (peabody.ximian.com [141.154.95.10]) by
+    trna.ximian.com (8.11.6/8.11.6) with ESMTP id g7UHEO301839 for
+    <updates@ximian.com>; Fri, 30 Aug 2002 13:14:24 -0400
+Date: Fri, 30 Aug 2002 13:14:24 -0400
+Message-Id: <200208301714.g7UHEO301839@trna.ximian.com>
+Received: (qmail 30686 invoked from network); 30 Aug 2002 17:14:34 -0000
+Received: from localhost (127.0.0.1) by localhost with SMTP;
+    30 Aug 2002 17:14:34 -0000
+From: Ximian GNOME Security Team <distribution@ximian.com>
+To: Ximian Desktop Updates List <updates@ximian.com>
+Cc: BugTraq Mailing List <bugtraq@securityfocus.com>
+Subject: [Ximian Updates] Hyperlink handling in Gaim allows arbitrary code to be executed
+Sender: updates-admin@ximian.com
+Errors-To: updates-admin@ximian.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Announcements about updates to the Ximian GNOME distribution.
+    <updates.ximian.com>
+X-Beenthere: updates@ximian.com
+
+Severity: Security
+Product: gaim
+Keywords: gaim hyperlink manual
+References: 
+  CAN-2002-0989 
+    http://cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-2002-0989
+  Gaim Changelog
+    http://gaim.sourceforge.net/ChangeLog
+
+Gaim is an instant messaging client based on the published TOC
+protocol from AOL. The developers of Gaim, an instant messenger client
+that combines several different networks, found a vulnerability in the
+hyperlink handling code. The 'Manual' browser command passes an
+untrusted string to the shell without escaping or reliable quoting,
+permitting an attacker to execute arbitrary commands on the users
+machine. Unfortunately, Gaim doesn't display the hyperlink before the
+user clicks on it. Users who use other inbuilt browser commands aren't
+vulnerable.
+
+The fixed version of Gaim no longer passes the user's manual browser
+command to the shell. Commands which contain the %s in quotes will
+need to be amended, so they don't contain any quotes. The 'Manual'
+browser command can be edited in the 'General' pane of the
+'Preferences' dialog, which can be accessed by clicking 'Options' from
+the login window, or 'Tools' and then 'Preferences' from the menu bar
+in the buddy list window.
+
+Please download Gaim 0.59.1 or later using Red Carpet. You may also
+obtain this update from the Ximian FTP site.
+
+Debian Potato
+ftp://ftp.ximian.com/pub/ximian-gnome/debian-potato-i386/gaim_0.59.1-1.ximian.2_i386.deb
+ftp://ftp.ximian.com/pub/ximian-gnome/debian-potato-i386/gaim-common_0.59.1-1.ximian.2_i386.deb
+ftp://ftp.ximian.com/pub/ximian-gnome/debian-potato-i386/gaim-gnome_0.59.1-1.ximian.2_i386.deb
+
+Mandrake 8.0
+ftp://ftp.ximian.com/pub/ximian-gnome/mandrake-80-i586/gaim-0.59.1-1.ximian.2.i586.rpm
+
+Mandrake 8.1
+ftp://ftp.ximian.com/pub/ximian-gnome/mandrake-81-i586/gaim-0.59.1-1.ximian.2.i586.rpm
+
+Mandrake 8.2
+ftp://ftp.ximian.com/pub/ximian-gnome/mandrake-82-i586/gaim-0.59.1-1.ximian.2.i586.rpm
+
+Redhat 6.2
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-62-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-62-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+Redhat 7.0
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-70-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-70-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+Redhat 7.1
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-71-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-71-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+Redhat 7.2
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-72-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-72-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+Redhat 7.3
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-73-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/redhat-73-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+Solaris 7/8
+ftp://ftp.ximian.com/pub/ximian-gnome/solaris-7-sun4/gaim-0.59.1-2.ximian.1.sparc.rpm
+
+SuSE 7.1
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-71-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-71-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+SuSE 7.2
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-72-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-72-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+SuSE 7.3
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-73-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-73-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+SuSE 8.0
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-80-i386/gaim-0.59.1-1.ximian.2.i386.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/suse-80-i386/gaim-applet-0.59.1-1.ximian.2.i386.rpm
+
+Yellowdog 2.0
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-20-ppc/gaim-0.59.1-1.ximian.2.ppc.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-20-ppc/gaim-applet-0.59.1-1.ximian.2.ppc.rpm
+
+Yellowdog 2.1
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-21-ppc/gaim-0.59.1-1.ximian.2.ppc.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-21-ppc/gaim-applet-0.59.1-1.ximian.2.ppc.rpm
+
+Yellowdog 2.2
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-22-ppc/gaim-0.59.1-1.ximian.2.ppc.rpm
+ftp://ftp.ximian.com/pub/ximian-gnome/yellowdog-22-ppc/gaim-applet-0.59.1-1.ximian.2.ppc.rpm
+
+
+
+_______________________________________________
+updates maillist  -  updates@ximian.com
+To unsubscribe from this list, or to change your subscription options, follow the link below:
+http://lists.ximian.com/mailman/listinfo/updates
+

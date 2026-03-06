@@ -1,0 +1,20 @@
+[
+  "closed",
+  "comment",
+  "escape",
+  "error",
+  "field",
+  "init",
+  "invalid_quote_end",
+  "quote_end",
+  "quoted_escape",
+  "quoted_field",
+  "skip",
+  "skipped_comment",
+  "skipped_escape",
+  "skipped_field",
+  "skipped_invalid_quote_end",
+  "skipped_quote_end",
+  "skipped_quoted_escape",
+  "skipped_quoted_field"
+]

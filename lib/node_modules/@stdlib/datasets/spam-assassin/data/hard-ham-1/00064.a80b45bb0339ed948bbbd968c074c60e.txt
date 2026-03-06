@@ -1,0 +1,210 @@
+Return-Path: <2.20576.84-RV8hl0UTyzYK.1.b@ummail4.unitedmedia.com>
+Received: from ummail1.unitedmedia.com (ummail1.unitedmedia.com [65.114.4.73])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6DBoDJ24340
+	for <qqqqqqqqqq-dilbert@spamassassin.taint.org>; Sat, 13 Jul 2002 12:50:13 +0100
+Received: from umsan1 (10.1.1.75) by ummail1.unitedmedia.com (PowerMTA(TM) v1.5); Sat, 13 Jul 2002 07:42:12 -0400 (envelope-from <2.20576.84-RV8hl0UTyzYK.1.b@ummail4.unitedmedia.com>)
+Message-ID: <4796221.1026560924959.JavaMail.root@umsan1>
+Date: Sat, 13 Jul 2002 07:48:44 -0400 (EDT)
+From: "Comics.com" <2.20576.84-RV8hl0UTyzYK.1@ummail4.unitedmedia.com>
+To: qqqqqqqqqq-dilbert@spamassassin.taint.org
+Subject: Your Daily Jump Start
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=6700390.1026560924954.JavaMail.root.umsan1
+
+--6700390.1026560924954.JavaMail.root.umsan1
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+E-mail error
+
+You're subscribed to the HTML version of the Comics by E-mail,
+which shows the comic strip as a graphic, but your mail system
+either can't support HTML or is set up to remove HTML content. For
+more information, contact your Internet service provider or mail
+system administrator.
+
+To change to a text-only subscription, modify your account
+preferences at 
+http://www.comics.com/dailycomics/modify
+
+
+
+
+
+
+
+
+--6700390.1026560924954.JavaMail.root.umsan1
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+<!--            *********************************************   -->
+<!--            * Designed by UnitedMedia.com               *   -->
+<!--            * 02/18/00                                  *   -->
+<!--            *********************************************   -->
+
+<HTML>
+<HEAD>
+<TITLE>Comics.com - Comics E-mail - Jump Start</TITLE>
+
+<META NAME="description" CONTENT="Get comics by e-mail daily (Monday - Saturday), subscriptions are free, great merchandise with your favorite characters.">
+
+<META NAME="keywords" CONTENT="Subscribe, Comics e-mail, Get Fuzzy, Peanuts, For Better or For Worse, Rose Is Rose, Pearls Before Swine, Herman, Monty, Luann, 9 Chickweed Lane, Frank and Ernest.">
+
+<meta http-equiv="pragma" content="no-cache">
+<META HTTP-EQUIV="expires" CONTENT="0">
+<meta http-equiv="Cache-control" content="no-cache">
+
+<script language="JavaScript">
+<!--
+function rand(n) {
+seed = (0x015a4e35 * seed) % 0xfffffff;
+return (seed >> 16) % n;
+}
+var now = new Date ();
+var seed = now.getTime() % 0xffffffff;
+var same = rand(1000);
+
+function OpenMediaWindow(mURL) {
+			if (parseInt(navigator.appVersion.charAt(0)) >= 3) {
+				window.open(mURL,"NewWindow","width=810,height=450,resizable=yes,toolbar=yes,status=yes,menubar=yes,scrollbars=yes,location=yes,left=20,top=20");
+				}
+		}
+//-->
+</script>
+
+
+</HEAD>
+
+<BODY BGCOLOR="#336699" LINK="#000000" VLINK="#000000" ALINK="#336699" TEXT="#336699" MARGINWIDTH="8" MARGINHEIGHT="15" LEFTMARGIN="8" TOPMARGIN="15">
+<Table width="100%" bgcolor="#336699" border="0">
+	<tr>
+		<td bgcolor="#336699">
+<!-- BEGIN BANNER AD TABLE -->
+<TABLE WIDTH="634" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+	<TR VALIGN="TOP">
+		<TD WIDTH="155"><IMG SRC="http://www.comics.com/images/comicsmail/comics_email_header_logo.gif" WIDTH="155" HEIGHT="73" BORDER="0" ALT="Comics E-mail"></TD><TD WIDTH="11"><IMG SRC="http://www.comics.com/comics/dilbert/images/ad_dil.gif" WIDTH="11" HEIGHT="20" BORDER="0" ALT="Advertisement"></TD><TD WIDTH="468">
+<!-- BEGIN AD TAG 1 -->
+<A HREF="http://www.amazon.com/exec/obidos/redirect-home/unitedemail-20"><IMG SRC="http://www.comics.com/images/ads/home-banner-468x60.gif" BORDER="0" HEIGHT="60" WIDTH="468" alt="In Association with Amazon.com"></A>
+<!-- END AD TAG 1 -->
+		</TD>
+	</TR>
+	<TR VALIGN="TOP">
+		<TD WIDTH="634" COLSPAN="3"><IMG SRC="http://www.comics.com/images/clear_dot.gif" BORDER="0" ALT="" WIDTH="634" HEIGHT="15"></TD>
+	</TR>
+</TABLE>
+<!-- END BANNER AD TABLE -->
+
+<!-- BEGIN HEADER NAV TABLE -->
+<TABLE WIDTH="639" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+	<TR>
+		<TD WIDTH="15" VALIGN="BOTTOM"><A HREF="http://www.comics.com/index.html"><IMG SRC="http://www.comics.com/images/comicsmail/top_left_email_header.gif" ALT="Comics.com" WIDTH="15" HEIGHT="45" BORDER="0"></A></TD>
+		<TD WIDTH="125" VALIGN="BOTTOM"><A HREF="http://ummail4.unitedmedia.com:80/Click?q=47-ADxxIIZm1jKA33IOiYGwl3BfJ9RR"><IMG SRC="http://www.comics.com/images/comicsmail/comics_com_email_header.gif" ALT="Comics.com" WIDTH="125" HEIGHT="45" BORDER="0"></A></TD>
+		<TD WIDTH="138" VALIGN="BOTTOM"><A HREF="http://ummail4.unitedmedia.com:80/Click?q=5c-BnNPIZnUblLbt8C53AlMDVhbMRRR"><IMG SRC="http://www.comics.com/images/comicsmail/dilbert_email_header.gif" ALT="Dilbert.com" WIDTH="138" HEIGHT="45" BORDER="0"></A></TD>
+		<TD WIDTH="146" VALIGN="BOTTOM"><A HREF="http://ummail4.unitedmedia.com:80/Click?q=71-GwnUIEZQfHysdd1qwFBR5r2YBdRR"><IMG SRC="http://www.comics.com/images/comicsmail/snoopy_email_header.gif" ALT="Snoopy.com" WIDTH="146" HEIGHT="45" BORDER="0"></A></TD>
+		<TD WIDTH="200" VALIGN="BOTTOM" BACKGROUND="http://www.comics.com/images/comicsmail/email_header_spacer.gif"><IMG SRC="http://www.comics.com/images/comicsmail/email_header_spacer.gif" ALT="" WIDTH="200" HEIGHT="45" BORDER="0"></TD>
+		<TD WIDTH="15" VALIGN="BOTTOM"><IMG SRC="http://www.comics.com/images/comicsmail/top_right_email_header.gif" ALT="" WIDTH="15" HEIGHT="45" BORDER="0"></TD>
+	</TR>
+</TABLE>
+<!-- END HEADER NAV TABLE -->
+
+<!-- BEGIN MAIN CONTENT TABLE -->
+<TABLE WIDTH="639" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+	<TR>
+		<TD WIDTH="15" VALIGN="TOP" COLSPAN="2"><IMG SRC="http://www.comics.com/images/comicsmail/top_left_email_comic.gif" ALT="" WIDTH="15" HEIGHT="10" BORDER="0"></TD>
+		<TD WIDTH="609" VALIGN="TOP" BGCOLOR="#FFFFFF"><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="609" HEIGHT="10" BORDER="0"></TD>
+		<TD WIDTH="15" VALIGN="TOP" COLSPAN="2"><IMG SRC="http://www.comics.com/images/comicsmail/top_right_email_comic.gif" ALT="" WIDTH="15" HEIGHT="10" BORDER="0"></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="3" VALIGN="TOP" BGCOLOR="#003366" ROWSPAN="3"><IMG SRC="http://www.comics.com/images/003366_dot.gif" ALT="" WIDTH="3" BORDER="0"></TD>
+		<TD WIDTH="12" VALIGN="TOP" BGCOLOR="#FFFFFF" ROWSPAN="3"><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="12" BORDER="0"></TD>
+		<TD WIDTH="609">
+			<TABLE WIDTH="609" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+				<TR VALIGN="TOP">
+					<TD WIDTH="609" BGCOLOR="#FFFFFF" COLSPAN="3"><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="609" HEIGHT="3" BORDER="0"></TD>
+				</TR>
+				<TR VALIGN="TOP">
+					<TD WIDTH="245" BGCOLOR="#FFFFFF"><A HREF="http://ummail4.unitedmedia.com:80/Click?q=86-8fo1QCJxnngkZRvSjVe9_shuZRRR"><IMG SRC="http://www.comics.com/images/comicsmail/logos/email_jumpstart_logo.gif" ALT="Jump Start" WIDTH="245" HEIGHT="65" BORDER="0"></A><BR><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="245" HEIGHT="5" BORDER="0"><BR><FONT FACE="helvetica, arial" SIZE="2" COLOR="#336699"><B>By Robb Armstrong</B></FONT></TD><TD WIDTH="94" BGCOLOR="#FFFFFF"><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="94" HEIGHT="65" BORDER="0"></TD><TD WIDTH="270" BGCOLOR="#FFFFFF"><A HREF='http://ummail4.unitedmedia.com:80/Click?q=9c-xtCpQanwkQly1o-lXRIatIRbBsRR'><IMG SRC="http://www.comics.com/images/comicsmail/store/email_comic_strip_store.gif" ALT="" WIDTH="270" HEIGHT="65" BORDER="0"></A></A></TD>
+				</TR>
+				<TR VALIGN="TOP">
+					<TD WIDTH="609" BGCOLOR="#FFFFFF" COLSPAN="3"><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="609" HEIGHT="6" BORDER="0"></TD>
+				</TR>
+			</TABLE>
+		</TD>
+		<TD WIDTH="12" VALIGN="TOP" BGCOLOR="#FFFFFF" ROWSPAN="3"><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="12" BORDER="0"></TD>
+		<TD WIDTH="3" VALIGN="TOP" BGCOLOR="#003366" ROWSPAN="3"><IMG SRC="http://www.comics.com/images/003366_dot.gif" ALT="" WIDTH="3" BORDER="0"></TD>
+	</TR>
+	
+	<TR VALIGN="TOP" BGCOLOR="#FFFFFF">
+		<TD WIDTH="609">
+			<TABLE WIDTH="609" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+				<TR VALIGN="BOTTOM">
+					<TD WIDTH="301" BGCOLOR="#FFFFFF" ALIGN="LEFT"><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="301" HEIGHT="10" BORDER="0"><BR><FONT FACE="helvetica, arial" SIZE="1" COLOR="#003366"><B>Hi Justin, enjoy your daily comic from <A HREF="http://ummail4.unitedmedia.com:80/Click?q=b1-YzzzJQ-00zAibLYfr9n_ylHMYP9RR"><FONT COLOR="#003366">Comics.com</FONT></A>.</B></FONT></TD>
+					<TD WIDTH="308" BGCOLOR="#FFFFFF" ALIGN="RIGHT">
+						<TABLE WIDTH="308" CELLSPACING="0" CELLPADDING="0" BORDER="0">
+							<TR VALIGN="BOTTOM">
+								<TD WIDTH="152" BGCOLOR="#FFFFFF" ALIGN="LEFT"><A HREF="http://ummail4.unitedmedia.com:80/Click?q=c6-URl9QMLzguRGxzzWdh_IeLuxu9RR"><IMG SRC="http://www.comics.com/images/comicsmail/tellafriend.gif" ALT="Tell a Friend" WIDTH="152" HEIGHT="19" BORDER="0"></A></TD>
+								<TD WIDTH="4" BGCOLOR="#FFFFFF" ALIGN="LEFT"><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="4" HEIGHT="4" BORDER="0"></TD>
+								<TD WIDTH="152" BGCOLOR="#FFFFFF" ALIGN="LEFT"><A HREF="http://ummail4.unitedmedia.com:80/Click?q=db-rm79QJEz6m2ugNJvp1t9spLcVdRR"><IMG SRC="http://www.comics.com/images/comicsmail/choosecomics.gif" ALT="Choose Comics by Topic" WIDTH="152" HEIGHT="19" BORDER="0"></A></TD>
+							</TR>
+							<TR VALIGN="BOTTOM">
+								<TD WIDTH="308" BGCOLOR="#FFFFFF" ALIGN="LEFT" COLSPAN="3"><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="308" HEIGHT="3" BORDER="0"></TD>
+							</TR>
+							<TR VALIGN="BOTTOM">
+								<TD WIDTH="152" BGCOLOR="#FFFFFF" ALIGN="LEFT"><A HREF="http://ummail4.unitedmedia.com:80/Click?q=f0-nvTDQWgtKiILCuR2fIf5OwrimdRR"><IMG SRC="http://www.comics.com/images/comicsmail/30dayarchive.gif" ALT="30 Day Archive" WIDTH="152" HEIGHT="19" BORDER="0"></A></TD>
+								<TD WIDTH="4" BGCOLOR="#FFFFFF" ALIGN="LEFT"><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="4" HEIGHT="4" BORDER="0"></TD>
+								<TD WIDTH="152" BGCOLOR="#FFFFFF" ALIGN="LEFT"><A HREF="http://ummail4.unitedmedia.com:80/Click?q=05-gDWLIG8ZRMfKcBnfn5DFHO-sYsRR"><IMG SRC="http://www.comics.com/images/comicsmail/modify.gif" ALT="Modify/Unsubscribe" WIDTH="152" HEIGHT="19" BORDER="0"></A></TD>
+							</TR>
+						</TABLE>
+					</TD>
+				</TR>
+				
+				<TR VALIGN="TOP">
+					<TD WIDTH="609" VALIGN="TOP" BGCOLOR="#FFFFFF" COLSPAN="2"><IMG SRC="http://www.comics.com/comics/jumpstart/archive/images/jumpstart2002071741413.gif" BORDER="0" ALT="Today's Comic"><BR></TD>
+				</TR>
+				
+				<TR VALIGN="BOTTOM">
+					<TD WIDTH="301" BGCOLOR="#FFFFFF" ALIGN="LEFT"><FONT FACE="helvetica, arial" SIZE="1" COLOR="#000000">07/13/2002</FONT><BR><BR>
+					<A HREF="http://ummail4.unitedmedia.com:80/Click?q=1a-y6PkIlXm6w-46-Kd5I04xuE5R9RR"><IMG SRC="http://www.comics.com/images/comicsmail/findnewfav_pearls.gif" ALT="Find New Favorites" WIDTH="120" HEIGHT="60" BORDER="0"></A>&nbsp;&nbsp;<A HREF="http://ummail4.unitedmedia.com:80/Click?q=2f-hYtFIqnKAaqTrWoP20D4jzt0Q9RR"><IMG SRC="http://www.comics.com/images/comicsmail/ecard_icon.gif" ALT="Free E-cards" WIDTH="120" HEIGHT="60" BORDER="0"></A><BR><BR></TD>
+					<TD WIDTH="308" BGCOLOR="#FFFFFF" ALIGN="RIGHT"><FONT FACE="helvetica, arial" SIZE="1" COLOR="#000000"></FONT><BR><BR><FONT FACE="helvetica, arial" SIZE="1" COLOR="#336699">To report problems, e-mail <A HREF="http://ummail4.unitedmedia.com:80/Click?q=45-fNgJIKBR8VjwpV7-EGvB0UNgJdRR"><FONT COLOR="#336699">comicshelp@unitedmedia.com</FONT></A><BR><BR></FONT></TD>
+				</TR>
+				
+				<TR VALIGN="TOP">
+					<TD WIDTH="609" VALIGN="TOP" BGCOLOR="#FFFFFF" COLSPAN="2"><IMG SRC="http://www.comics.com/images/ffcc00_dot.gif" ALT="" WIDTH="609" HEIGHT="1" BORDER="0"><BR><BR></TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR VALIGN="TOP" BGCOLOR="#FFFFFF" ALIGN="CENTER">
+		<TD><FONT FACE="helvetica, arial" SIZE="1" COLOR="#000000"><A HREF="http://ummail4.unitedmedia.com:80/Click?q=5a-ahO1IP0JMGnYnDX24JOKBJC4zsRR">Comics on Your Site/Intranet</A> | <A HREF="http://ummail4.unitedmedia.com:80/Click?q=6f-3xY9IOL2bBgXWZM3RUvKTN9nPsRR">Comics in Your Publication</A> | <A HREF="http://ummail4.unitedmedia.com:80/Click?q=84-CCDyQ60lygpzAg0ZsnhhpYUoZsRR">Advertising Info</A> | <A HREF="http://ummail4.unitedmedia.com:80/Click?q=99-4mayQAdljO46vHU2HHfS87c8B9RR">Terms of Use</A> | <A HREF="http://ummail4.unitedmedia.com:80/Click?q=ae-jOB6QMB3LJla10j8-1hV197zDRRR">Privacy Policy</A></FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="15" VALIGN="TOP" COLSPAN="2" ROWSPAN="2"><IMG SRC="http://www.comics.com/images/comicsmail/bottom_left_email_comic.gif" ALT="" WIDTH="15" HEIGHT="10" BORDER="0"></TD>
+		<TD WIDTH="609" VALIGN="TOP" BGCOLOR="#FFFFFF"><IMG SRC="http://www.comics.com/images/ffffff_dot.gif" ALT="" WIDTH="609" HEIGHT="7" BORDER="0"></TD>
+		<TD WIDTH="15" VALIGN="TOP" COLSPAN="2" ROWSPAN="2"><IMG SRC="http://www.comics.com/images/comicsmail/bottom_right_email_comic.gif" ALT="" WIDTH="15" HEIGHT="10" BORDER="0"></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="609" VALIGN="TOP" BGCOLOR="#003366"><IMG SRC="http://www.comics.com/images/003366_dot.gif" ALT="" HEIGHT="3" BORDER="0"></TD>
+	</TR>
+</TABLE>
+<!-- END MAIN CONTENT TABLE -->
+
+</td>
+</tr>
+</table>
+
+
+<script language="JavaScript">
+<!--
+document.writeln ('<layer SRC="http://ads.inet1.com/html-bin/adselect-iframe.asp?obnum=700386&var=' + same + '" visibility="hidden" width=468 height=60 onload="moveToAbsolute(ph1.pageX,ph1.pageY);clip.width=468;clip.height=60;visibility=\'show\';"></layer>');
+//-->
+</script>
+
+
+</BODY>
+</HTML>
+<IMG HEIGHT=1 WIDTH=1 SRC="http://ummail4.unitedmedia.com:80/Click?q=c3-x1eC-SLmNf0zEEQIv7RpNFrL">
+--6700390.1026560924954.JavaMail.root.umsan1--
+
+

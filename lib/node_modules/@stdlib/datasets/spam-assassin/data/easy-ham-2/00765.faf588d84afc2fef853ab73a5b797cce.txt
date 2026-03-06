@@ -1,0 +1,65 @@
+From fork-admin@xent.com  Tue Aug  6 12:00:00 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BB1DC441FC
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:18 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g74Ngtv13827 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 00:42:55 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6CD79294134; Sun,  4 Aug 2002 16:40:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from pimout5-int.prodigy.net (pimout5-ext.prodigy.net
+    [207.115.63.98]) by xent.com (Postfix) with ESMTP id 4D996294104 for
+    <fork@xent.com>; Sun,  4 Aug 2002 16:39:04 -0700 (PDT)
+Received: from MAX (adsl-64-171-25-185.dsl.sntc01.pacbell.net
+    [64.171.25.185]) by pimout5-int.prodigy.net (8.11.0/8.11.0) with ESMTP id
+    g74Ndg2361668 for <fork@xent.com>; Sun, 4 Aug 2002 19:39:42 -0400
+From: "Max Dunn" <maxdunn@siliconpublishing.com>
+To: "'FoRK'" <fork@spamassassin.taint.org>
+Subject: RE: Cancelling earthlink
+Message-Id: <000001c23c10$2cfb3880$6f86fea9@MAX>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.3416
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+In-Reply-To: <3D4DAA2B.CA48FDBE@endeavors.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 4 Aug 2002 16:39:22 -0700
+
+
+> I'm sure if you call their customer service 
+> number they can unsubscribe you.   I took me 4 
+> tries, 
+
+took me 5.
+
+> so make sure you get a confirmation number.  
+
+Does that help? I had 5 of those. Lovely company...
+
+Max
+
+
+http://xent.com/mailman/listinfo/fork
+
+

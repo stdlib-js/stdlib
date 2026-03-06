@@ -1,0 +1,34 @@
+{
+	"string": [
+		"border-top",
+		"border-bottom",
+		"border-left",
+		"border-right",
+		"width",
+		"height",
+		"workspace",
+		"counter",
+		"input-prompt",
+		"logfile",
+		"output-prompt",
+		"padding",
+		"save",
+		"timeout"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"quiet",
+		"no-autoclear",
+		"loop",
+		"watch"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

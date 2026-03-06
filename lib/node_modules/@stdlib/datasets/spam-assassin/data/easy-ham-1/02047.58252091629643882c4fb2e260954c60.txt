@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Mon Sep 30 13:37:14 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 47F0416F03
+	for <jm@localhost>; Mon, 30 Sep 2002 13:37:14 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:37:14 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8T81Kg03449 for
+    <jm@jmason.org>; Sun, 29 Sep 2002 09:01:20 +0100
+Message-Id: <200209290801.g8T81Kg03449@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: gamasutra <rssfeeds@spamassassin.taint.org>
+Subject: Kanu at the double
+Date: Sun, 29 Sep 2002 08:01:20 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-0,8357898,215/
+Date: 2002-09-29T00:39:56+01:00
+
+*Football:* Kolo Toure was among the goals as Arsenal gave Leeds a good hiding 
+at Elland Road.
+
+

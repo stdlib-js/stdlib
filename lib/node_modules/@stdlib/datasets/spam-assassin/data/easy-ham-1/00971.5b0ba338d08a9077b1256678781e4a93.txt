@@ -1,0 +1,104 @@
+From exmh-users-admin@redhat.com  Mon Sep  2 13:12:51 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0DABD44166
+	for <jm@localhost>; Mon,  2 Sep 2002 07:38:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:38:15 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g81EH0Z26508 for
+    <jm-exmh@jmason.org>; Sun, 1 Sep 2002 15:17:00 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 369723ED7C; Sun,  1 Sep 2002
+    10:15:01 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 3BD5B3EB68
+    for <exmh-users@listman.redhat.com>; Sun,  1 Sep 2002 10:13:48 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g81EDi615670 for exmh-users@listman.redhat.com; Sun, 1 Sep 2002
+    10:13:44 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g81EDiY15666 for
+    <exmh-users@redhat.com>; Sun, 1 Sep 2002 10:13:44 -0400
+Received: from iris.ping.de (iris.ping.de [62.72.93.101]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g81DwDl14086 for
+    <exmh-users@redhat.com>; Sun, 1 Sep 2002 09:58:13 -0400
+Received: from eva.local (eva.local [192.168.99.2]) by iris.ping.de
+    (8.11.2/8.11.2) with ESMTP id g81EEPH02268 for <exmh-users@redhat.com>;
+    Sun, 1 Sep 2002 16:14:26 +0200
+Received: from eva.local (localhost [127.0.0.1]) by eva.local
+    (8.11.2/8.11.2/SuSE Linux 8.11.1-0.5) with ESMTP id g81EEBP05889 for
+    <exmh-users@redhat.com>; Sun, 1 Sep 2002 16:14:11 +0200
+Message-Id: <200209011414.g81EEBP05889@eva.local>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+Old-X-Loop: ingo@iris.ping.de
+X-Image-Url: http://www.frommholz.org/ingo2small.gif
+X-Url: http://www.frommholz.org/
+From: Ingo Frommholz <ingo@frommholz.org>
+Organization: Home of Tux the penguin :-)
+To: exmh-users@spamassassin.taint.org
+Dcc:
+Subject: Re: ARRRGHHH Had GPG working, now it doesnt.
+In-Reply-To: Your message of
+    "Sun, 01 Sep 2002 00:05:03 MDT."
+    <200209010605.g81653XF010950@orion.dwf.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Sun, 01 Sep 2002 16:14:11 +0200
+
+Hi,
+
+On Sun, 01 Sep 2002 00:05:03 MDT Reg Clemens wrote: 
+  
+[...]
+> in messages with GnuPG signatures.  But punching the line ALWAYS
+> gives
+> 
+>         Signature made Thu Aug 29 00:27:17 2002 MDT using DSA key ID BDDF997A
+>         Can't check signature: public key not found
+> 
+> So, something else is missing.
+
+Yes, the public key of the signature you want to check :-).
+
+Are you really sure that you have the public key of the message's
+signature? If not, try downloading it or try to check a signature from
+which you know you have the public key.
+
+
+
+Regards,
+
+Ingo
+
+-- 
+Ingo Frommholz                             PGP public keys on homepage
+ingo@frommholz.org                           http://www.frommholz.org/
+My childhood inspection is my record collection (Ned's Atomic Dustbin)
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+

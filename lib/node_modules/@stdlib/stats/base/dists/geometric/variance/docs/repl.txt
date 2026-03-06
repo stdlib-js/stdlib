@@ -1,0 +1,27 @@
+
+{{alias}}( p )
+    Returns the variance of a geometric distribution with success probability
+    `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Variance.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    ~90.0
+    > v = {{alias}}( 0.5 )
+    2.0
+
+    See Also
+    --------
+

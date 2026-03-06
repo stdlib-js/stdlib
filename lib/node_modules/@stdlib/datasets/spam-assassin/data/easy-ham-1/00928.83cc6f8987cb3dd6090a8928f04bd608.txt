@@ -1,0 +1,77 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Thu Aug 22 18:41:33 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ABFAA43F99
+	for <jm@localhost>; Thu, 22 Aug 2002 13:41:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 18:41:26 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MHZUZ17861 for <jm@jmason.org>; Thu, 22 Aug 2002 18:35:30 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hvqN-0002iI-00; Thu,
+    22 Aug 2002 10:34:03 -0700
+Received: from p995.as3.adl.dublin.eircom.net ([159.134.231.227]
+    helo=mandark.labs.netnoteinc.com) by usw-sf-list1.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hvpg-0006xf-00 for
+    <SpamAssassin-devel@lists.sourceforge.net>; Thu, 22 Aug 2002 10:33:24
+    -0700
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g7MHWi800961; Thu, 22 Aug 2002 18:32:44 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    D54CB47C67; Thu, 22 Aug 2002 13:30:52 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 62B8B33D8C;
+    Thu, 22 Aug 2002 18:30:52 +0100 (IST)
+To: Theo Van Dinter <felicity@kluge.net>
+Cc: Justin Mason <yyyy@spamassassin.taint.org>,
+	SpamAssassin-devel@lists.sourceforge.net
+Subject: Re: [SAdev] 2.40 RELEASE PROCESS: mass-check status, folks?
+In-Reply-To: Message from Theo Van Dinter <felicity@kluge.net> of
+    "Thu, 22 Aug 2002 13:20:30 EDT."
+    <20020822172030.GC16421@kluge.net>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+Message-Id: <20020822173052.D54CB47C67@phobos.labs.netnoteinc.com>
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Thu, 22 Aug 2002 18:30:45 +0100
+Date: Thu, 22 Aug 2002 18:30:45 +0100
+
+
+Theo Van Dinter said:
+
+> >         nonspam-theo.log
+> 
+> Hmmm.  I did re-run mass-check and resubmit...  I sort the log by score,
+> so the timestamp is at the end:
+
+ah, OK.  didn't see that.
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+

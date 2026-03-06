@@ -1,0 +1,63 @@
+From sahilinux4oems@sixnet-io.com  Thu Jul 25 11:00:19 2002
+Return-Path: <sahilinux4oems@sixnet-io.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E6D83440D3
+	for <jm@localhost>; Thu, 25 Jul 2002 06:00:17 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:00:17 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6OKOs405618 for
+    <jm-fm@jmason.org>; Wed, 24 Jul 2002 21:24:54 +0100
+Received: from 210.143.86.66 ([202.29.80.9]) by webnote.net (8.9.3/8.9.3)
+    with SMTP id VAA07621 for <jm-fm@jmason.org>; Wed, 24 Jul 2002 21:24:06
+    +0100
+Message-Id: <200207242024.VAA07621@webnote.net>
+Received: from 30.215.79.204 ([30.215.79.204]) by m10.grp.snv.yahoo.com
+    with SMTP; Jul, 24 2002 4:33:02 PM -0700
+Received: from [206.22.148.111] by smtp4.cyberec.com with NNFMP;
+    Jul, 24 2002 3:35:09 PM +0600
+Received: from unknown (HELO mail.gmx.net) (78.165.116.169) by
+    smtp4.cyberec.com with smtp; Jul, 24 2002 2:17:10 PM -0300
+From: kypdlinux4oems <sahilinux4oems@sixnet-io.com>
+To: Industrial.Linux.User@webnote.net
+Cc: 
+Subject: ISA Article on Embedded Real-Time Linux Automation Applications . gji
+Sender: kypdlinux4oems <sahilinux4oems@sixnet-io.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Date: Wed, 24 Jul 2002 16:41:16 -0400
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+
+Industrial LINUX News: 
+
+The June issue of the ISA's InTech Magazine has an interesting article on how truly open Linux applications can lower development cost and increase the performance and reliability of industrial automation. 
+
+A copy of the the article can be found at:  http://www.sixnet-io.com/html_files/web_articles/linux_article_info.htm
+
+
+This Linux news update brought to you by:  www.Linux4oems.info 
+
+
+
+------------------------------------------------------------------------------
+
+
+
+If you don't want to receive future Linux news updates, please reply to this e-mail with the subject "unsubscribe".  You may also unsubscribe or resolve subscription difficulties by calling SIXNET at 518-877-5173 or e-mailing:  linuxnews@sixnet-io.com
+
+
+
+
+
+
+
+
+
+
+.
+
+naorwnwbxbsttgvelamusbs
+
+

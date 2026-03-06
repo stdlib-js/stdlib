@@ -1,0 +1,53 @@
+
+{{alias}}( out[, means] )
+    Returns an accumulator function which incrementally computes a sample
+    Pearson product-moment correlation distance matrix.
+
+    If provided a data vector, the accumulator function returns an updated
+    sample correlation distance matrix. If not provided a data vector, the
+    accumulator function returns the current sample correlation distance matrix.
+
+    Due to limitations inherent in representing numeric values using floating-
+    point format (i.e., the inability to represent numeric values with infinite
+    precision), the correlation distance between perfectly correlated random
+    variables may *not* be `0` or `2`. In fact, the correlation distance is
+    *not* guaranteed to be strictly on the interval [0,2]. Any computed distance
+    should, however, be within floating-point roundoff error.
+
+    Parameters
+    ----------
+    out: integer|ndarray
+        Order of the correlation distance matrix or a square 2-dimensional
+        ndarray for storing the correlation distance matrix.
+
+    means: ndarray (optional)
+        Known means.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 2 );
+    > var out = accumulator()
+    <ndarray>
+    > var buf = new {{alias:@stdlib/array/float64}}( 2 );
+    > var shape = [ 2 ];
+    > var strides = [ 1 ];
+    > var v = {{alias:@stdlib/ndarray/ctor}}( 'float64', buf, shape, strides, 0, 'row-major' );
+    > v.set( 0, 2.0 );
+    > v.set( 1, 1.0 );
+    > out = accumulator( v )
+    <ndarray>
+    > v.set( 0, -5.0 );
+    > v.set( 1, 3.14 );
+    > out = accumulator( v )
+    <ndarray>
+    > out = accumulator()
+    <ndarray>
+
+    See Also
+    --------
+

@@ -1,0 +1,33 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a sum of
+    squared absolute values, ignoring NaN values.
+
+    If provided a value, the accumulator function returns an updated sum. If not
+    provided a value, the accumulator function returns the current sum.
+
+    For long running accumulations or accumulations of large numbers, care
+    should be taken to prevent overflow.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var s = accumulator()
+    null
+    > s = accumulator( 2.0 )
+    4.0
+    > s = accumulator( NaN )
+    4.0
+    > s = accumulator( -5.0 )
+    29.0
+    > s = accumulator()
+    29.0
+
+    See Also
+    --------
+

@@ -1,0 +1,24 @@
+Return-Path: guido@python.org
+Delivery-Date: Fri Sep  6 17:27:01 2002
+From: guido@python.org (Guido van Rossum)
+Date: Fri, 06 Sep 2002 12:27:01 -0400
+Subject: [Spambayes] Deployment
+In-Reply-To: Your message of "Fri, 06 Sep 2002 12:25:05 EDT."
+             <20020906162505.GB17800@cthulhu.gerg.ca> 
+References: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+	<20020906162505.GB17800@cthulhu.gerg.ca> 
+Message-ID: <200209061627.g86GR1p15407@pcp02138704pcs.reston01.va.comcast.net>
+
+> I guess MUA-level filtering is just a fallback for people who don't have
+> 1) a burning, all-consuming hatred of junk mail, 2) root access to all
+> mail servers they rely on, and 3) the ability and inclination to install
+> an MTA with every bell and whistle tweaked to keep out junk mail.
+
+Sure.  But for most people, changing their company's or ISP's server
+requires years of lobbying, while they have total and immediate
+control over their own MUA.
+
+That said, I agree that we should offer a good solution to
+postmasters, and I trust that your ideas are right on the mark!
+
+--Guido van Rossum (home page: http://www.python.org/~guido/)

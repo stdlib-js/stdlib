@@ -1,0 +1,86 @@
+{
+  "options": {
+    "task": "build",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/digamma",
+        "@stdlib/math/base/special/ln"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/digamma",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/constants/float64/eps"
+      ]
+    },
+    {
+      "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/digamma",
+        "@stdlib/math/base/special/ln"
+      ]
+    }
+  ]
+}

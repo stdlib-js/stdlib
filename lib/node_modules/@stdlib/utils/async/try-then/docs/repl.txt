@@ -1,0 +1,77 @@
+
+{{alias}}( x, y, done )
+    If a function does not return an error, invokes a callback with the function
+    result; otherwise, invokes a second function `y`.
+
+    A function `x` is provided a single argument:
+
+    - clbk: callback to invoke upon function completion.
+
+    The callback function accepts any number of arguments, with the first
+    argument reserved for providing an error.
+
+    If the error argument is falsy, the function invokes a `done` callback with
+    its first argument as `null` and all other provided arguments.
+
+    If the error argument is truthy, the function invokes a function `y`. The
+    number of arguments provided to `y` depends on the function's length. If `y`
+    is a unary function, `y` is provided a single argument:
+
+    - clbk: callback to invoke upon function completion.
+
+    Otherwise, `y` is provided two arguments:
+
+    - error: the error from `x`.
+    - clbk: callback to invoke upon function completion.
+
+    The callback function accepts any number of arguments, with the first
+    argument reserved for providing an error.
+
+    If the error argument is falsy, the `done` callback is invoked with its
+    first argument equal to `null` and all other arguments provided by `y`.
+
+    If the error argument is truthy, the `done` callback is invoked with only
+    the error argument provided by `y`.
+
+    Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
+    wrap the `done` callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    Parameters
+    ----------
+    x: Function
+        Function to invoke.
+
+    y: Function
+        Function to invoke if `x` returns an error.
+
+    done: Function
+        Callback to invoke upon completion.
+
+    Examples
+    --------
+    > function x( clbk ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         clbk( new Error( 'beep' ) );
+    ...     }
+    ... };
+    > function y( clbk ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         clbk( null, 'boop' );
+    ...     }
+    ... };
+    > function done( error, result ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( result );
+    ... };
+    > {{alias}}( x, y, done )
+    'boop'
+
+    See Also
+    --------
+

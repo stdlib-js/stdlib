@@ -1,0 +1,61 @@
+From fork-admin@xent.com  Mon Jul 22 18:13:42 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0617D440D7
+	for <jm@localhost>; Mon, 22 Jul 2002 13:13:06 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:13:06 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG2VY17133 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 17:02:31 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id WAA25044 for <jm@jmason.org>; Sat, 20 Jul 2002 22:36:42
+    +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DA2D82940A5; Sat, 20 Jul 2002 14:24:56 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.695online.com (unknown [65.112.138.50]) by xent.com
+    (Postfix) with ESMTP id 4C0FB294098 for <fork@xent.com>; Sat,
+    20 Jul 2002 14:24:54 -0700 (PDT)
+Received: from 6xlti (0-1pool28-58.nas12.milwaukee1.wi.us.da.qwest.net
+    [63.156.28.58]) by mail.695online.com (8.11.6/8.11.6) with ESMTP id
+    g6KLXr611173 for <fork@xent.com>; Sat, 20 Jul 2002 17:33:54 -0400
+Message-Id: <4111-220027620234257960@6xlti>
+From: "" <mckitt@yahoo.com>
+To: fork@spamassassin.taint.org
+Subject: Quick Cash!
+Date: Sat, 20 Jul 2002 16:42:58 -0700
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g6MG2VY17133
+Content-Transfer-Encoding: 8bit
+
+Sell your Timeshare!
+
+If you're interested in selling or renting
+your Timeshare or vacation membership
+we can help!
+
+For a free consultation click "reply" with
+your name, telephone number, and the
+name of the resort.  We will contact you
+shortly!
+
+Removal Instructions:
+To be removed from this list, please
+reply with "remove" in the subject line.
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

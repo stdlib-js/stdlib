@@ -1,0 +1,90 @@
+
+{{alias}}( p, N, K, n )
+    Evaluates the quantile function for a hypergeometric distribution with
+    population size `N`, subpopulation size `K`, and number of draws `n` at a
+    probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a population size `N`, subpopulation size `K` or draws `n` which
+    is not a nonnegative integer, the function returns `NaN`.
+
+    If the number of draws `n` or the subpopulation size `K` exceed population
+    size `N`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    N: integer
+        Population size.
+
+    K: integer
+        Subpopulation size.
+
+    n: integer
+        Number of draws.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.4, 40, 20, 10 )
+    5
+    > y = {{alias}}( 0.8, 60, 40, 20 )
+    15
+    > y = {{alias}}( 0.5, 100, 10, 10 )
+    1
+    > y = {{alias}}( 0.0, 100, 40, 20 )
+    0
+    > y = {{alias}}( 1.0, 100, 40, 20 )
+    20
+
+    > y = {{alias}}( NaN, 40, 20, 10 )
+    NaN
+    > y = {{alias}}( 0.2, NaN, 20, 10 )
+    NaN
+    > y = {{alias}}( 0.2, 40, NaN, 10 )
+    NaN
+    > y = {{alias}}( 0.2, 40, 20, NaN )
+    NaN
+
+
+{{alias}}.factory( N, K, n )
+    Returns a function for evaluating the quantile function of a hypergeometric
+    distribution with population size `N`, subpopulation size `K`, and number of
+    draws `n`.
+
+    Parameters
+    ----------
+    N: integer
+        Population size.
+
+    K: integer
+        Subpopulation size.
+
+    n: integer
+        Number of draws.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 100, 20, 10 );
+    > var y = myQuantile( 0.2 )
+    1
+    > y = myQuantile( 0.9 )
+    4
+
+    See Also
+    --------
+

@@ -1,0 +1,59 @@
+From fork-admin@xent.com  Tue Aug  6 11:58:39 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 53557441F5
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:11 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g73MgEv30275 for <jm@jmason.org>;
+    Sat, 3 Aug 2002 23:42:18 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DDFB82940CC; Sat,  3 Aug 2002 15:39:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barrera.org (unknown [63.145.31.2]) by xent.com (Postfix)
+    with ESMTP id BB2292940AB for <fork@xent.com>; Sat,  3 Aug 2002 15:38:27
+    -0700 (PDT)
+Received: from  (127.0.0.1 [127.0.0.1]) by MailEnable Inbound Mail Agent
+    with ESMTP; Sat, 03 Aug 2002 22:38:34 -08:00
+Message-Id: <3D4C5B69.5050604@barrera.org>
+From: "Joseph S. Barrera III" <joe@barrera.org>
+Organization: Rose Garden Funeral of Sores
+User-Agent: Mutt/1.5.0 [-1214711651]
+X-Accept-Language: en-us, en, ja
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Subject: brimful of...
+References: <20020803140456.71BC4C44E@argote.ch>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 03 Aug 2002 15:38:33 -0700
+
+So how did I miss, and how come I can't find, the fork post
+that explains the lyrics to Brimful of Asha?
+
+I first heard of the song while reading
+http://www.ottawa-anime.org/~eyevocal/beingupfront/
+but I had never heard it until I downloaded it among
+a bunch of other Fatboy Slim mixes.
+
+- Joe
+
+
+http://xent.com/mailman/listinfo/fork
+
+

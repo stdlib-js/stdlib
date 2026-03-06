@@ -1,0 +1,37 @@
+{
+  "name": "stdlib-datasets-standard-card-deck",
+  "version": "",
+  "title": "Standard 52-Card Deck",
+  "description": "A list of cards.",
+  "resources": [
+    {
+      "name": "standard-card-deck-json",
+      "title": "Standard 52-Card Deck",
+      "description": "A list of cards.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "standard-card-deck-txt",
+      "title": "Standard 52-Card Deck",
+      "description": "A list of cards.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.txt"
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "list",
+    "cards",
+    "poker",
+    "bridge",
+    "deck"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

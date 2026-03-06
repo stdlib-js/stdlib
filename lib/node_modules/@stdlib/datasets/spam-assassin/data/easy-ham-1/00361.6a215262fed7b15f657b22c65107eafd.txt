@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Thu Aug 29 11:04:02 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A04C543F99
+	for <jm@localhost>; Thu, 29 Aug 2002 06:03:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:03:48 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7SM2mZ11821 for <jm@jmason.org>;
+    Wed, 28 Aug 2002 23:02:48 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 70E2C2940AC; Wed, 28 Aug 2002 15:00:11 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx1.ucsc.edu [128.114.129.36]) by
+    xent.com (Postfix) with ESMTP id BDE2F2940A5 for <fork@xent.com>;
+    Wed, 28 Aug 2002 14:59:09 -0700 (PDT)
+Received: from Tycho (dhcp-63-177.cse.ucsc.edu [128.114.63.177]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g7SLxET06253; Wed,
+    28 Aug 2002 14:59:15 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "Gary Lawrence Murphy" <garym@canada.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: RE: Java is for kiddies
+Message-Id: <AMEPKEBLDJJCCDEJHAMIEEGIFFAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+In-Reply-To: <m2vg5u3irk.fsf@maya.dyndns.org>
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 28 Aug 2002 14:57:00 -0700
+
+> For example, take the recent CBC Olympics site: I needed to roll
+> together a telnet client with a tokenizer, perl-regex preprocessing a
+> stream to produce parseable XML, project that XML into relational
+> databases using only the DTD to generate the rdbms schema, and open an
+> XMLRPC interface to read and post items into the news stream.  Where
+> can I find C libs for those components?
+
+You open sourced the new components you developed for this project, so the
+next person who comes along won't have to reimplement them, right?
+
+- Jim
+
+

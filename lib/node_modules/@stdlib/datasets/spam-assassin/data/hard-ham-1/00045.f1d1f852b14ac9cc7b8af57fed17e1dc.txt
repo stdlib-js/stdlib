@@ -1,0 +1,477 @@
+Return-Path: <Online#3.19822.84-7a8Hl0_lygzZARRR.1.b@newsletter.online.com>
+Received: from acmta3.cnet.com (abv-sfo1-acmta3.cnet.com [206.16.1.162])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6BKuYJ02668
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Thu, 11 Jul 2002 21:56:35 +0100
+Received: from abv-sfo1-ac-agent5 (206.16.0.240) by acmta3.cnet.com (PowerMTA(TM) v1.5); Thu, 11 Jul 2002 13:49:18 -0700 (envelope-from <Online#3.19822.84-7a8Hl0_lygzZARRR.1.b@newsletter.online.com>)
+Message-ID: <7804199.1026420992990.JavaMail.root@abv-sfo1-ac-agent5>
+Date: Thu, 11 Jul 2002 13:56:32 -0700 (PDT)
+From: CNET Message Boards <Online#3.19822.84-7a8Hl0_lygzZARRR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: CNET: Why I don't use firewalls
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+<html>
+<head>
+	<title>Message Boards Dispatch</title>
+</head>
+<body bgcolor="#eeeeee">
+<center>
+
+<a href="top"></a>
+<!-- header -->
+<table cellpadding=0 cellspacing=0 border=0 width=612 bgcolor="#ffffff">
+<tr valign=top>
+	<td width=442 colspan=4>
+		<img src="http://www.cnet.com/i/nl/mb/hd.gif" width="442" height="60" border="0" alt="CNET Message Boards Newsletter"><br>
+			<table width=442 cellpadding=0 cellspacing=0 border=0 bgcolor="#ffcc00">
+				<tr><td bgcolor="#000000" colspan=3><img src="/b.gif" width="1" height="1" border="0"><br></td></tr>
+				<tr>
+					<td bgcolor="#000000" width=1 rowspan=2><img src="/b.gif" width="1" height="10" border="0"><br></td>
+					<td width=10 rowspan=2><img src="/b.gif" width="1" height="10" border="0"><br></td>
+					<td  width=430><img src="/b.gif" width="1" height="10" border="0"><br></td>
+				</tr>
+				<tr><td bgcolor="#000000"><img src="/b.gif" width="1" height="1" border="0"><br></td></tr>
+      		</table>	
+	</td>
+
+<!-- Skyscraper column -->
+	<td width=160 rowspan=2>
+		<img src="http://a.r.tv.com/cnet.1d/i/dp/dd_b.gif" width="160" height="18" border="0"><br>
+		<table cellpadding=0 cellspacing=0 border=0 width=160>
+		</table>
+
+<iframe src="http://www.zdnet.com/include/ads/ifc/RGROUP=2560" scrolling="no" frameborder="0" hspace="0" vspace="0" height="600" width="160" marginheight="0" marginwidth="0">
+<script language="JavaScript" src="http://www.zdnet.com/include/ads/js/RGROUP=2560">
+</script>
+</iframe>
+
+<p>
+<!-- search form -->
+<table cellspacing=0 cellpadding=0 width=150 border=0><form method=get action="http://www.search.com/redirect">
+<tr valign=top><td><font size="-1" face="arial,helvetica,sans-serif">
+<img src="http://a.r.tv.com/cnet.1d/i/se/dispatch_hd.gif" width=150 height=20 alt="CNET Search.com" border=0><br>
+<img src="http://cnet.com/b.gif" width=1 height=1><br><input type=text name=q size=17 value=""><br>
+<select name=target class=frmel>
+ <option value="http://xlink.zdnet.com/cgi-bin/texis/forums/forums/search.html/+/cnet/?Utext=%%q%%&subcat=&cobrand=cnet&template=cnetnt&Usch=5&ROS=1">Messages
+ <option value="http://cnet.search.com/search?tag=ex.messageboards.dispatch.srch.cnet">All CNET
+ <option value="http://www.search.com/search?tag=ex.messageboards.dispatch.srch.web">The Web
+</select>&nbsp;<input type=submit value="Go!"></font></td></tr></form></table><p>
+<!-- /search form -->
+
+                <!-- Top 10 Forums -->
+
+				<img src="http://www.cnet.com/i/nl/mb/rhc_top10.gif" alt="More Forums" width="150" height="20" border="0"><br>
+				<table width="150" border=0 cellpadding=2 cellspacing=0>
+				<tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<font face="arial, helvetica" size="-1">1. <a href="http://clickthru.online.com/Click?q=9a-b6_GQTMBGSCwwapFigi7yr9FKgnR" >Wireless</a></font>
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<font face="arial, helvetica" size="-1">2. <a href="http://clickthru.online.com/Click?q=af--dB8QLpqkpcxumpydDX7NdmUVSeR" >Computer Help</a></font>
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<font face="arial, helvetica" size="-1">3. <a href="http://clickthru.online.com/Click?q=c4-Iy9lQ0Ww9Y9U-2nkHF6q-jPexAyR" >Speakeasy</a></font>
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<font face="arial, helvetica" size="-1">4. <a href="http://clickthru.online.com/Click?q=d9-b7L_QpPwBYBIqVdie23s1N87hJlR" >Windows 98</a></font>
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<font face="arial, helvetica" size="-1">5. <a href="http://clickthru.online.com/Click?q=ee-ZbmWQwDkHn0q89j0QzbMuLbLad4R" >PC Hardware</a></font>
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<font face="arial, helvetica" size="-1">6. <a href="http://clickthru.online.com/Click?q=03-13t3I3rzzAoIotPhKQcaLlAI6OrR" >Windows Me</a></font>
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<font face="arial, helvetica" size="-1">7. <a href="http://clickthru.online.com/Click?q=18-WhdzI98qBTkksDJTiMEyR1N675iR" >Computer Newbies</a></font>
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<font face="arial, helvetica" size="-1">8. <a href="http://clickthru.online.com/Click?q=2d-OxQyIbKH-e5wuFLVdngyV7VDjSPR" >Downloads</a></font>
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<font face="arial, helvetica" size="-1">9. <a href="http://clickthru.online.com/Click?q=43-coL5IBJAEL8g_rm9Z5VKc-3P0BcR" >Windows XP</a></font>
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<td width="100%"><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				<font face="arial, helvetica" size="-1">10.<a href="http://clickthru.online.com/Click?q=58-mr2xIdJHwfiu9CKYjKHbtbXYzHRR" >Virus & Security</a></font>
+				</td></tr><tr valign=top><td><img src="http://www.cnet.com/b.gif" width=1 height=3><br>
+				</td></tr></table>
+
+				<!-- /Top 10 Forums -->
+
+ 				 <br>
+
+				<!-- Hot Products -->
+				<img src="http://www.cnet.com/i/nl/mb/rhc_hot.gif" alt="Hot Products" width="150" height="20" border="0"><br>
+				<table width="100%" border=0 cellpadding=3 cellspacing=0>
+				<tr valign=top><td><font face="arial, helvetica" size="-1">
+				
+				Check out the User Opinions on these Hot Products and then submit one of your own.<br>
+				&nbsp;<br>
+				
+				</font></td></tr><tr valign=top><td><font face="arial, helvetica" size="-1">
+				
+				<font color="#CC000" size="-2">92%&nbsp;</font><img src="http://download.cnet.com/images/tu.gif" width=14 height=17 border=0 alt="User Opinions">&nbsp;<font color="#333333" size="-2">8%</font><img src="http://download.cnet.com/images/td.gif" width=14 height=17>&nbsp;<font size=-2>(3629 votes)</font><br>
+				<a href="http://clickthru.online.com/Click?q=6d-e8plIDEIKM8v1-j7Bc1bJBykEmZR" >RAMBooster</a><br>
+				<font size="-2">In Downloads: Optimizers &amp; Diagnostics</font>
+
+				</font></td></tr><tr valign=top><td><font face="arial, helvetica" size="-1">
+				
+
+				<font color="#CC000" size="-2">85%&nbsp;</font><img src="http://download.cnet.com/images/tu.gif" width=14 height=17 border=0 alt="User Opinions">&nbsp;<font color="#333333" size="-2">15%</font><img src="http://download.cnet.com/images/td.gif" width=14 height=17>&nbsp;<font size=-2>(2878 votes)</font><br>
+				<a href="http://clickthru.online.com/Click?q=82-P0EYQXK1S0PJLXy6gJLkjCXMZHnR" >ZoneAlarm</a><br>
+				<font size="-2">In Downloads: Security &amp; Encryption</font>
+				</font></td></tr><tr valign=top><td><font face="arial, helvetica" size="-1">
+				
+				<font color="#CC000" size="-2">84%&nbsp;</font><img src="http://download.cnet.com/images/tu.gif" width=14 height=17 border=0 alt="User Opinions">&nbsp;<font color="#333333" size="-2">16%</font><img src="http://download.cnet.com/images/td.gif" width=14 height=17>&nbsp;<font size=-2>(50 votes)</font><br>
+				<a href="http://clickthru.online.com/Click?q=97-dlfYQ1M1Un6RJsC3V0z6qjySJGeR" >VirusMD Family Webfilter 1.0</a><br>
+				<font size="-2">In Downloads: Browsing Companions</font>
+				</font></td></tr><tr valign=top><td><font face="arial, helvetica" size="-1">
+				
+				<a href="http://clickthru.online.com/Click?q=ac-RbKtQ0UKmLPDUMPdWfGJ0kSyVjyR" ><b>More User Opinions</b></a><br>
+				
+				</font></td></tr></table><p>
+				<!-- /Hot Products -->
+				
+<!--Tech24 promo-->				
+<TABLE WIDTH="136"  CELLSPACING="0" CELLPADDING="0" BORDER="0">
+<TR><td>
+<div align="center"><font face="Arial, Helvetica" size="-1"><b>Computer Problems?</b> Try our Live Support from a Live technician!</font></div>
+</tR></td>
+</table>
+
+<STYLE>
+	.black {color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-style: normal; font-size: 11px; font-weight: normal;}
+</STYLE>
+
+<SCRIPT LANGUAGE=javascript>
+<!--
+function clearTextarea() {
+	if ((document.QuestionEntry.Question.value == "Type here and click go.")) {
+		document.QuestionEntry.Question.value = "";
+	} else {
+		return;
+	}
+}
+//-->
+</SCRIPT>
+
+<form method="post" action="http://www.tech24.com/process/QuestionRedirect.asp" name="QuestionEntry">
+<input type="hidden" name="Partner" value="Tech24CNet">
+<input type="hidden" name="Portal" value="Tech24CNet">
+<TABLE WIDTH="130" BORDER="0" CELLSPACING="0" CELLPADDING="0" CLASS="black">
+	<TR>
+		<TD WIDTH="220" COLSPAN="3" VALIGN="top"><IMG SRC="http://www.tech24.com/images/cn_01.gif" ALT="" WIDTH="130" HEIGHT="64" BORDER="0"></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="2" VALIGN="top" BGCOLOR="#000000"><IMG SRC="http://www.tech24.com/images/transpar.gif" WIDTH="2" HEIGHT="1" ALT="" BORDER="0"></TD>
+		<TD WIDTH="126" ALIGN="center" VALIGN="top" BGCOLOR="#F0F2E4" CLASS="black">
+		<BR><textarea name="Question" cols="11" rows="3" wrap="virtual" onFocus="clearTextarea()">Type here and click go.</textarea>
+		<BR><BR><input type=image src="http://www.tech24.com/images/go.gif" value=submit name=submit border=0>
+		<BR><IMG SRC="http://www.tech24.com/images/transpar.gif" WIDTH="126" HEIGHT="1" ALT="" BORDER="0"></TD>
+		<TD WIDTH="2" VALIGN="top" BGCOLOR="#000000"><IMG SRC="http://www.tech24.com/images/transpar.gif" WIDTH="2" HEIGHT="1" ALT="" BORDER="0"></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="220" COLSPAN="3" VALIGN="top"><IMG SRC="http://www.tech24.com/images/zc_04.gif" ALT="" WIDTH="130" HEIGHT="9" BORDER="0"></TD>
+	</TR>
+</TABLE>
+<!-- /Tech24 promo-->				
+				
+				
+<!-- promo section -->				
+				
+	</td>
+	<td width=9 rowspan=2>
+		<img src="http://www.cnet.com/i/dp/dd_c.gif" width="9" height="60" border="0"><br>
+		<table width=9 cellpadding=0 cellspacing=0 border=0>
+			<tr><td bgcolor="#000000"><img src="/b.gif" width="9" height="1" border="0"><br></td></tr>
+			<tr><td bgcolor="#ffccoo"><img src="/b.gif" width="9" height="10" border="0"><br></td></tr>
+			<tr><td bgcolor="#000000"><img src="/b.gif" width="9" height="1" border="0"><br></td></tr>
+		</table>		
+	</td>
+	<td width=1 bgcolor="#000000" rowspan=2>
+		<table width=1 cellpadding=0 cellspacing=0 border=0>
+			<tr><td bgcolor="#eeeeee"><img src="/b.gif" width="1" height="60" border="0"><br></td></tr>
+		</table>		
+	</td>
+</tr>
+
+<tr valign=top>
+	<td width=1 bgcolor="#000000"><img src="/b.gif" width="1" height="1" border="0"></td>
+	<td width=10 bgcolor="#ffcc00"><img src="/b.gif" width="10" height="1" border="0"><br></td>
+	<td width=1 bgcolor="#000000"><img src="/b.gif" width="1" height="1" border="0"></td>
+	<td width=430 bgcolor="#ffffff">
+		<table cellpadding=0 cellspacing=0 border=0 width=430 bgcolor="#ffffef">
+			<tr valign=top>
+			<td width=10><img src="/b.gif" alt="" width="10" height="1" border="0"><br></td>
+			<td width=412>
+			<table cellpadding=8 cellspacing=0 border=0>
+				<tr><td><font face="Arial, Helvetica" size="-2">July 11, 2002</font><br></td></tr>
+			</table>
+				<table cellpadding=0 cellspacing=0 border=0 width=412>
+				<tr valign=top>
+					<td width=10> </td>
+
+					<td><font face="Arial, Helvetica">
+						<font color="#333333"><B>Dear Readers,</B></font><br>
+						<font size="-1">With all the corporate scandals--such as WorldCom and Enron--surrounding us, who can you trust nowadays? Well, for starters, you can trust the CNET Message Boards. The <a href="http://clickthru.online.com/Click?q=c2-oXxLQUEk7X_ZoirgVnxXFZcIuInR" >CNET Message Boards</a> are as real as it gets. When it comes down to giving or receiving honest tech advice, there's no better place to be. In the Boards there are no reviews or tests by professionals, just real, true-life experiences and discussions from people like you and me who share one common interest: the love of today's challenging technology. There are no sneaky execs here or scandals to worry about, so if you have a specific problem or question 
+in mind, post it! You won't be disappointed. 
+ </font><br><br>
+						<font face="arial, helvetica" size="-2">
+						<table cellpadding=0 cellspacing=0 border=0 width=55 align=left>
+						<tr><td><img src="http://home.cnet.com/Images/Promos/mb_0503_pushpin_pg.gif" width="50" height="50" border="0"></td></tr>
+						</table>
+						Lee Koo<br>
+						CNET Community<br>
+						Got suggestions? Email me: <a href="mailto:messageboards@cnet.com">messageboards@cnet.com</a></font><br><br>
+					</td>
+				</tr>
+				</table>
+			</td>
+			<td width=8><img src="/b.gif" alt="" width="8" height="1" border="0"><br></td>
+			</tr>
+			</table>
+
+	<!-- bottom rule -->
+
+	<table cellpadding=0 cellspacing=0 border=0 width=430>
+	<tr valign=top>
+		<td bgcolor="#F7D69C"><img src="/b.gif" width="1" height="1" border="0"></td>
+	</tr>
+	</table>
+<table cellpadding=10 cellspacing=0 border=0 width=430>
+<tr><td>
+
+<!-- Leads Module -->
+<img src="http://www.cnet.com/i/gl/new-cc.gif" alt="Crucial Clicks" width="120" height="19" border="0"><br>
+<table width="100%"  cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+<tr bgcolor="#cccccc"><td colspan="7"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td></tr>
+<tr>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td>
+<td rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td bgcolor="#cccccc" rowspan="3"><img src="http://home.cnet.com/b.gif" height=1 width=1></td>
+</tr>
+<tr valign="top">
+<td width="100%">
+		<table width="100%"  cellpadding="0" cellspacing="0" border="0">
+		<tr valign="top">
+		<td width="85"><a href="http://clickthru.online.com/Click?q=d7-wk3ZQLWkVXkIDzcRmBekeVktk2eR" ><img src="http://a.r.tv.com/cnet.1d/i/pg/021502_pointcamera.jpg" width="85" height="110" border="0" alt="" /></a></td>
+	<td width="5"><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+	<td width="100%"><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=ec-MHyXQVy2A7_Surm1kOqFb2GVaGyR" ><b>Digicams for summer shutterbugs</b></a><br />Going on vacation, or just headed to the beach? Indulge your summer snapshot habit with one of our picks.</font></td>
+		</tr>
+		<tr><td colspan="3"><img src="http://home.cnet.com/b.gif" height=3 width=1><br /><font face="arial, helvetica" size="-1">
+	&#149; <a href="http://clickthru.online.com/Click?q=01-9oXDI2jHgI0F8rUvurMPGPxZ6RlR" >5-megapixel shoot-out</a><br />
+	&#149; <a href="http://clickthru.online.com/Click?q=16-T_cjI4cFVq9DiQgDblRuaBDxRU4R" >Leica Digilux 1: street shooter"s digicam.</a><br />
+	</font></td></tr>
+	</table>
+</td>
+<td><img src="http://home.cnet.com/b.gif" height=1 width=5></td>
+<td width="180">
+	<table cellpadding="0" cellspacing="0" width="180" border="0" bgcolor="#ffffef">
+	<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+	<tr>
+	<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+	<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+	<td><font face="ms sans serif, geneva" size="-2"><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+	<font face="arial, helvetica" color="#666666" size="-1"><b>Most popular products</b></font><br /><img src="http://home.cnet.com/b.gif" width="1" height="5" alt="" border="0" /><br />
+	<b>Digital cameras</b><br /><img src="http://home.cnet.com/b.gif" width="1" height="7" alt="" border="0" /><br />
+	1. <a href="http://clickthru.online.com/Click?q=2b-2FVYINzsBDAwzYkwzk0xBfd-8WrR" >Canon PowerShot G2</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	2. <a href="http://clickthru.online.com/Click?q=40-6Pp4Idn8DzgEoVdeVXCHnpqL0wRR" >Canon PowerShot S40</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	3. <a href="http://clickthru.online.com/Click?q=55-TAHaIKJ8XqrcDenqm86ccJ_2d2ZR" >Canon PowerShot S30</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	4. <a href="http://clickthru.online.com/Click?q=6a-z_30IeWiUkiY5uOzceCGFySNP8dR" >Canon PowerShot A40</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="3" alt="" border="0" /><br />
+	5. <a href="http://clickthru.online.com/Click?q=7f-bn6KIIP67D5tHJD9IO3JewkhBpuR" >Nikon Coolpix 995</a><br /><img src="http://home.cnet.com/b.gif" width="1" height="6" alt="" border="0" /><br />
+	<img src="http://a.r.tv.com/cnet.1d/i/fd/yl_arrow.gif" width="13" height="13" border="0" alt="" align="absmiddle" /> <b><a href="http://clickthru.online.com/Click?q=94-rOVNQaI7DcUAYNHJ5elUjfr5JQyR" >See all most popular cameras</a></b><br />
+	<img src="http://home.cnet.com/b.gif" width="1" height="10" alt="" border="0" /><br />
+	</font></td>
+	<td><img src="http://home.cnet.com/b.gif" width="10" height="1" alt="" border="0" /></td>
+	<td bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td>
+	</tr>
+	<tr><td colspan="5" bgcolor="#666666"><img src="http://home.cnet.com/b.gif" width="1" height="1" alt="" border="0" /></td></tr>
+	</table>
+</td>
+</tr>
+<tr valign="top"><td colspan="3"><img src="http://home.cnet.com/b.gif" height=5 width=1></td></tr>
+<tr><td colspan="7" bgcolor="#cccccc"><img src="http://home.cnet.com/b.gif" height=1 width=1></td></tr>
+</table><br />
+<!-- /Leads Module -->
+<a name="ThisweekinCNETMessageBoards"></a>
+
+<table cellpadding=0 cellspacing=0 border=0 width=410>
+	<tr valign=bottom>
+		<td width=75><img src="http://www.cnet.com/i/nl/mb/sub_thiswk.gif" width="290" height="19" border="0" alt="Simple Questions w/Simple Answers"><br></td>
+		<td width=335><font face="arial, helvetica" size="-1" color="#660000"><b> </b></font></td>
+	</tr>
+	<tr><td colspan=2 bgcolor="#cccccc"><img src="/b.gif" width=1 height=1><br></td></tr>
+	<tr><td colspan=2><img src="/b.gif" width=1 height=8><br></td></tr>
+</table>
+			<font face="Arial, Helvetica">
+			
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=aa-gBteQXUr2MhDl8RWLXZBXqONOVnR" >Why I don't use firewalls</a></b><br>
+<font size="-1">Do you need some honest opinions? Despite all the horror stories that you hear of hackers and Trojans intruding on one's personal computer, hear why one of our veteran moderators refuses to use a firewall. This discussion gets a bit heated, but her point was well taken. Take a look and see why she refuses, and if you have a cent or two to throw in, the donation jar is wide open. <a href="http://clickthru.online.com/Click?q=bf-JtRfQ8ZrsdzL4Gl5w8PF_jEuwteR" >More Security and Virus Alerts discussions</a></font><p>
+
+			
+
+<font face="arial, helvetica"><b>The scoop on USB 2.0</b><br>
+<font size="-1">The chances are that the next time you pick up an external computer peripheral, it will be utilizing USB 2.0 to connect to your computer. So what is USB 2.0? Is it that much faster than USB 1.1? Will your current USB port be compatible with peripherals with the new version? Well if you have similar questions, I gathered up some discussion on this topic in hopes that it will bring a better understanding of what's in store for USB 2.0. Take your pick. 
+<ul>
+<li><a href="http://clickthru.online.com/Click?q=d4-E0SqQ0Exfl3rJ00_4Mc3148lk6yR" >USB vs. USB 2.O</a>
+<li><a href="http://clickthru.online.com/Click?q=e9-gdzpQxVzOsqJEmWTRnU3P83P5XlR" >How to upgrade from USB 1.1 to 2.0?</a>
+<li><a href="http://clickthru.online.com/Click?q=fe-xkIgQwgwyCPGpumeE4rbg6amtI4R" >USB 2.0 with reverse compatibility with USB 1.1?</a>
+<li><a href="http://clickthru.online.com/Click?q=13-NxSZI3XWrkFb3uCssDLfzpHOCerR" >More Hardware discussions</a>
+</ul></font><p>
+
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=28-A2wXIRd4OH8PluPEL2t1VlTK8yiR" >Windows XP not any faster than Windows 98SE?!</a></b><br>
+<font size="-1">Many users have jumped ship and moved on to newer and supposedly better things such as Windows XP, but what if it doesn't perform up to par and is actually slower than the previous OS that you had? Check out this discussion; what's newer may not always be faster. <a href="http://clickthru.online.com/Click?q=3d-oi9NIbz4iUT0aSFvwlGWUTnaNtPR" >More Windows XP discussions</a>
+</font><p>
+
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=52-LUXoIrJtzdqPUMRMWz8AtIQwjjnR" >Best type of backup system to use for someone that is indigent?</a></b><br>
+<font size="-1">Backing up your hard-drive system sounds like a task for veteran, but is it? In 
+this discussion, a beginner is asking for sound advice on the best type of backup system to use, and sure enough, he received a bunch of options to choose from. If you're in that same boat and looking for the best ways to back up some of that important data of yours, this discussion is for you. Have a look. <a href="http://clickthru.online.com/Click?q=67-PnDkIOEDCiQkw-RWhKPAKa1CPIuR" >More Computer Newbies discussions</a>
+ 
+</font><p>
+
+<font face="arial, helvetica"><b><a href="http://clickthru.online.com/Click?q=7c-7NCZIZWc-BbxpUzfLHDx1984BOsR" >Warning for kids and teens online</a></b><br>
+<font size="-1">If you're a parent, this may be something that you may want to read about kids online. I found it interesting enough to pass along because I know someday I'll be faced with the same worries when my kids are out surfing the web. So have a look, and if it doesn't interest you, pass it on to someone who may find it informative. 
+
+</font><p>
+
+<!-- Simple Question with Simple Answers-->
+<a name="SimpleQuestionswSimpleAnswers"></a>
+<table cellpadding=0 cellspacing=0 border=0 width=410>
+	<tr valign=bottom>
+		<td width=75><img src="http://www.cnet.com/i/nl/mb/sub_qa.gif" width="290" height="19" border="0" alt="Simple Questions w/Simple Answers"><br></td>
+		<td width=335><font face="arial, helvetica" size="-1" color="#660000"><b> </b></font></td>
+	</tr>
+	<tr><td colspan=2 bgcolor="#cccccc"><img src="/b.gif" width=1 height=1><br></td></tr>
+	<tr><td colspan=2><img src="/b.gif" width=1 height=8><br></td></tr>
+</table>
+
+<table width="100%" cellpadding=4 cellspacing=0 border=0>
+<tr valign=top><td align=right><li></td>
+<td><font face="arial, helvetica" size="-1"><font color="#333333"><a href="http://clickthru.online.com/Click?q=92-ubRVQTzTtqDAHtOzeFOPq1FsnynR" ><b>XP and defragmenting</a></b></font><br>
+</td></tr>
+
+<tr valign=top><td align=right><li></td>
+<td><font face="arial, helvetica" size="-1"><font color="#333333"><a href="http://clickthru.online.com/Click?q=a7-fR_2Q8BwDGf6vxOLF5vLk7KCgFeR" ><b>Can RAM be "worn out"?</a></b></font><br>
+</td></tr>
+
+<tr valign=top><td align=right><li></td>
+<td><font face="arial, helvetica" size="-1"><font color="#333333"><a href="http://clickthru.online.com/Click?q=bc-zkPJQ6BdhiDNyFMmobF8XEDxwcyR" ><b>WinModem vs. "full" modem</a></b></font><br>
+</td></tr>
+</table>
+<p>
+
+<!-- Help your fellow Boarders -->
+<a name="HelpyourfellowBoarders"></a>
+<table cellpadding=0 cellspacing=0 border=0 width=410>
+	<tr valign=bottom>
+		<td width=75><img src="http://www.cnet.com/i/nl/mb/sub_hp.gif" width="290" height="19" border="0" alt="Help your fellow Boarders"><br></td>
+		<td width=335><font face="arial, helvetica" size="-1" color="#660000"><b></b></font></td>
+	</tr>
+	<tr><td colspan=2 bgcolor="#cccccc"><img src="/b.gif" width=1 height=1><br></td></tr>
+	<tr><td colspan=2><img src="/b.gif" width=1 height=8><br></td></tr>
+</table>
+
+<table width="100%" cellpadding=4 cellspacing=0 border=0>
+<tr valign=top><td align=right><li></td>
+<td><font face="arial, helvetica" size="-1"><font color="#333333"><a href="http://clickthru.online.com/Click?q=d1-ulOzQpErnM1e6dv10-kl0aSxkZlR" ><b>My PC won't wake up</a></b></font><br>
+<font size="-2">from Jen Smith</font></td></tr>
+</td></tr>
+
+<tr valign=top><td align=right><font face="arial, helvetica" color="#660000"><b><li></b></font></td>
+<td><font face="arial, helvetica" size="-1"><font color="#333333"><a href="http://clickthru.online.com/Click?q=e7-2y-GQmVXfH8KRKTVqS8CMB0qvseR" ><b>Purchasing a CD-RW--what kind?</a></b></font><br>
+<font size="-2">from Graham Hurst</font></td></tr>
+</td></tr>
+</table>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0101)file://\\Cnet2\marketing\Cartel\Inventory%20Hub\NL%20Bricks--Elsewhere\CNET\NLHorizontal_2.18.02.html -->
+<!--Horizontal Brick-->
+<P><IMG border=0 height=20 src="http://home.cnet.com/Ads/Media/Images/RHC_ALSOfromCNETnet.gif" width=150 
+NOSEND="1"> <IMG border=0 height=8 src="http://home.cnet.com/i/it/newsletter/rule2.gif" width=410 NOSEND="1"> 
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD><FONT face="arial, helvetica" size=-1><B>
+      <UL>
+        <LI><A 
+        href="http://www.tech24.com/cnet.asp?tag=st.nl.horizontal.xpro-txt.ba_th">Live Tech Help. Submit your question now.</A> <LI><A 
+        href="http://news.com.com/1200-1120-933954.html?tag=st.nl.horizontal.xpro-txt.newsvision">CNET News.com: Top CIOs on the future of IT.</A> <LI><A 
+        href="http://www.cnet.com/techjobs/0-7067.html?tag=st.nl.horizontal.xpro-txt.tj">Find a job you love. Over 1 million postings</A> <LI><A 
+        href="http://www.cnet.com/go/to?tag=st.nl.horizontal.xpro-txt&destURL=http://techupdate.zdnet.com/techupdate/stories/main/0,14179,2868051,00.html">ZDNet: This IT director has had enough of Microsoft</A> <LI><A 
+        href="http://electronics.cnet.com/electronics/0-9400734-1304-8810525.html?tag=st.nl.horizontal.xpro-txt.ba_ed">May Editors" Choice Award: Pioneer"s Home Theater System HTS - 910DV</A> 
+</LI></UL></B></FONT></TD></TR></TBODY></TABLE></P>
+  <!-- End Horizontal Brick-->
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org&brand=cnet'>
+<img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-zdnet@spamassassin.taint.org<p>
+
+<A NOTRACK HREF='http://clickthru.online.com/Click?q=fc-Wp5mraw7aZZWGxrl9-Q5A6U55dPBfsRR'>Unsubscribe</A>&nbsp;|
+&nbsp;<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org&brand=cnet'>Manage My Subscriptions</a>
+&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=11-l8riI2-4W8PxBpEX3VynhNBuCqlR" >FAQ</A>&nbsp;|
+&nbsp;<a href="http://clickthru.online.com/Click?q=26-KqPVIiMHfeZpwSuBBBkqU8niQ74R" >Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.cnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=3b-XhxVINdHJgqnEoeFPcZsjpRp-LrR" ><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=50-M_CBIR0XschqArXASOnO8CtmMgRR" ><font color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=65-K82zIDPtMv9rRKXD70VOf0m8P9ZR" ><font color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=7b-prT_IBZIOdgDoTLbDr4q1O7VpJcR" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=90-wHZMQ_IdCTjs6epVb8HYULuonXiR" ><font color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=a5-DyaHQ7ZTGf0xQGxsIC1b2OB8OEPR" ><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136482&NL=e430&ISSUE=2002-07-11" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table></font></td></tr>
+</table>
+<!-- ### /footer ### -->
+</body>
+</html>
+
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=ba-m-95-hpMAfgrcStOu5LdlZB0PRRR">
+

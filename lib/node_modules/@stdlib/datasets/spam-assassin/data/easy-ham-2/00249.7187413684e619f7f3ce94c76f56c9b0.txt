@@ -1,0 +1,79 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:52:47 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 22D8D441E5
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:20 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g73Jm8v25099 for
+    <jm-ilug@jmason.org>; Sat, 3 Aug 2002 20:48:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA12407; Sat, 3 Aug 2002 20:45:52 +0100
+Received: from claymore.diva.ie (diva.ie [195.218.115.17] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA12373 for
+    <ilug@linux.ie>; Sat, 3 Aug 2002 20:45:45 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host diva.ie [195.218.115.17]
+    (may be forged) claimed to be claymore.diva.ie
+Received: from localhost (claymore [195.218.115.17]) by claymore.diva.ie
+    (8.9.3/8.9.3) with ESMTP id UAA31402 for <ilug@linux.ie>; Sat,
+    3 Aug 2002 20:45:44 +0100
+Received: from 194.125.148.160 ( [194.125.148.160]) as user
+    rcunniff@mail.boxhost.net by webmail.gameshrine.com with HTTP;
+    Sat,  3 Aug 2002 20:45:44 +0100
+Message-Id: <1028403944.3d4c32e8a44c7@webmail.gameshrine.com>
+Date: Sat,  3 Aug 2002 20:45:44 +0100
+From: Ronan Cunniffe <ronan@cunniffe.net>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Network problems
+References: <1028383169.2214.20.camel@gamma.eko.ie>
+In-Reply-To: <1028383169.2214.20.camel@gamma.eko.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+User-Agent: Internet Messaging Program (IMP) 3.0
+X-Originating-Ip: 194.125.148.160
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Eamonn Shinners <shinnere@gofree.indigo.ie>:
+
+> Hi guys,
+> 	I'm looking for help on this one. I have a server with SME5.5 installed
+> - used to be e-smith. It's based on RH7.1, has a 3c507 NIC, and is
+> connected to a hub. Also connected to the hub are a laptop and
+> workstation, both with RH7.3 . The server supplies DHCP amongst other
+> things.
+> 	The problem is interruptions in the network. If I ping the laptop from
+> the workstation, or the other way around, there are no problems, i.e.
+> shows up as 0% loss. If however I ping the server from the laptop or
+> workstation, it will do a few packets, anywhere from 3 to 20, and then
+> stop responding, it will start again after a little while.
+
+If this is new behaviour in a previously working network, what did you do to it?
+
+  Test the cables by switching which machine has which.
+  Test the hub ports by switching cables around.
+  Run ifconfig on the server - any errors and what kind they are.
+  Test the network card... by replacing the thing!
+
+Seriously, if the server has a PCI slot free, something like a Realtek 8139
+based card costs less than 20 euro.  The design is a couple of generations later
+- more memory, less cruft, no *FSCKING* dos config utility, no jumpers on the
+card and it's PCI.  
+
+Ronan.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

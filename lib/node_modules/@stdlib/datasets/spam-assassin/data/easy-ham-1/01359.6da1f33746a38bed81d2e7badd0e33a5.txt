@@ -1,0 +1,93 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:06:03 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5804843F99
+	for <jm@localhost>; Thu, 29 Aug 2002 06:04:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:04:53 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SKb5Z09484 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 21:37:06 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k9Wq-0002UP-00; Wed,
+    28 Aug 2002 13:35:04 -0700
+Received: from rwcrmhc51.attbi.com ([204.127.198.38]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17k9WP-0006SE-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 13:34:37 -0700
+Received: from localhost ([12.229.66.144]) by rwcrmhc51.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020828203427.CHGD14185.rwcrmhc51.attbi.com@localhost> for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 20:34:27 +0000
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+From: Brian McNett <bmcnett@radparker.com>
+To: spamassassin-talk@example.sourceforge.net
+Content-Transfer-Encoding: 7bit
+In-Reply-To: <1030560510.17408.TMDA@omega.paradigm-omega.net>
+Message-Id: <829DCAD0-BAC5-11D6-AD60-003065C182B0@radparker.com>
+X-Mailer: Apple Mail (2.482)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 13:34:11 -0700
+Date: Wed, 28 Aug 2002 13:34:11 -0700
+
+
+On Wednesday, August 28, 2002, at 11:48  AM, Robin Lynn Frank wrote:
+
+> If I were a spammer, I'd simply set up a server, send out my 
+> spam with the
+> Habeus headers and continue till I was reasonably certain I'd 
+> been reported.
+> Then I'd simply reconfigure the server and reconnect to a 
+> different IP.  As
+> long as no one can establish my connection to the web sites my spam is
+> directing people to, I'm home free.
+
+Uh... the reason is simple. Habeas runs something called the 
+"Habeas Infringers List", and if you use their trademark without 
+their permission, you'll end up on it.  Then, when you send spam 
+with the misappropriated header, users of SA (2.40 supports 
+this) will tag your mail as spam, rather than let it through. 
+This may be done independantly of your IP address, so be 
+prepared to constantly change domain names, and move your 
+servers as fast as you send spam.
+
+Also, that little haiku is a copyrighted work, so not only CAN 
+Habeas sue, they MUST sue to protect their copyright. And since 
+it's a trademark as well, that's a double-whammy. Habeas has 
+some pretty high-powered legal people, who will gladly go to 
+town on violators.
+
+The whole point here is to give them the legal leverage they 
+need to put spammers out of business, and not only block mail 
+from them, but allow through the things that really AREN'T spam.
+
+--B
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

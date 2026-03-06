@@ -1,0 +1,12 @@
+
+{{alias}}
+    Natural logarithm of `10`.
+
+    Examples
+    --------
+    > {{alias}}
+    2.302585092994046
+
+    See Also
+    --------
+

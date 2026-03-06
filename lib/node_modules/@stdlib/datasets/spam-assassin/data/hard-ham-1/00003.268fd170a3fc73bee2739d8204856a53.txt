@@ -1,0 +1,24 @@
+From nic@starflung.com  Mon Jun 24 17:06:54 2002
+Return-Path: 7910726.0.27May2002215326@mp.opensrs.net
+Delivery-Date: Tue May 28 02:53:28 2002
+Received: from mp.opensrs.net (mp.opensrs.net [216.40.33.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g4S1rSe14718 for
+    <zzz@spamassassin.taint.org>; Tue, 28 May 2002 02:53:28 +0100
+Received: (from popensrs@localhost) by mp.opensrs.net (8.9.3/8.9.3) id
+    VAA04361; Mon, 27 May 2002 21:53:26 -0400
+Message-Id: <7910726.0.27May2002215326@mp.opensrs.net>
+Date: Mon, 27 May 2002 21:53:26 -0500 (EST)
+From: "Starflung NIC" <nic@starflung.com>
+To: <zzz@spamassassin.taint.org>
+Subject: Automated 30 day renewal reminder 2002-05-27
+X-Keywords: 
+
+The following domains that are registered as belonging
+to you are due to expire within the next 60 days. If
+you would like to renew them, please contact
+nic@starflung.com; otherwise they will be deactivated
+and may be registered by another.
+
+
+Domain Name, Expiry Date
+nutmegclothing.com, 2002-06-26

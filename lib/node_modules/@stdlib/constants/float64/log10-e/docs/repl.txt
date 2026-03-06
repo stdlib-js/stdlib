@@ -1,0 +1,12 @@
+
+{{alias}}
+    Base 10 logarithm of Euler's number.
+
+    Examples
+    --------
+    > {{alias}}
+    0.4342944819032518
+
+    See Also
+    --------
+

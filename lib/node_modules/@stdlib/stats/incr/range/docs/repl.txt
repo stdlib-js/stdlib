@@ -1,0 +1,31 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a range.
+
+    If provided a value, the accumulator function returns an updated range. If
+    not provided a value, the accumulator function returns the current range.
+
+    If provided `NaN`, the range is `NaN` for all future invocations.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var v = accumulator()
+    null
+    > v = accumulator( -2.0 )
+    0.0
+    > v = accumulator( 1.0 )
+    3.0
+    > v = accumulator( 3.0 )
+    5.0
+    > v = accumulator()
+    5.0
+
+    See Also
+    --------
+

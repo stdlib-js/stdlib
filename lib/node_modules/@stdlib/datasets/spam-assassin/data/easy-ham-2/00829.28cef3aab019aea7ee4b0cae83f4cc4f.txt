@@ -1,0 +1,68 @@
+From fork-admin@xent.com  Tue Jul 23 19:57:36 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B1FAD440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 14:57:36 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 19:57:36 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NIuj421373 for <jm@jmason.org>;
+    Tue, 23 Jul 2002 19:56:46 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0619B2940F5; Tue, 23 Jul 2002 11:46:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (h0040100cc755.ne.client2.attbi.com
+    [65.96.221.248]) by xent.com (Postfix) with ESMTP id DF81D2940E3 for
+    <fork@xent.com>; Tue, 23 Jul 2002 11:45:07 -0700 (PDT)
+Received: from snoopy (treese@localhost) by localhost.localdomain
+    (8.11.6/8.11.0) with ESMTP id g6NItjV29883 for <fork@xent.com>;
+    Tue, 23 Jul 2002 14:55:46 -0400
+Message-Id: <200207231855.g6NItjV29883@localhost.localdomain>
+To: fork@spamassassin.taint.org
+From: Win Treese <treese@acm.org>
+Subject: Re: NYTimes.com Article: Why We're So Nice: We're Wired to Cooperate
+In-Reply-To: Message from Owen Byrne of 23 Jul 2002 10:02:42 -0300
+X-Mailer: mh-e 6.1; nmh 1.0.4; Emacs 21.1
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 14:55:45 -0400
+
+
+> > Tom said:
+> >
+> > The question then becomes, why is knowledge sharing such a difficult 
+> > thing in organizations?
+
+And Owen replied:
+
+> Well, IMNHO, its because companies do not reward knowledge sharers. When 
+
+I don't work in this area, but I have a suspicion that many people
+suspect projects for "knowledge management" and "knowledge sharing" as
+attempts to eliminate their jobs, or at least their importance. If "the
+organization" knows all the things I know, why does it need me?
+
+This should actually be easy to test experimentally: compare the results
+of having someone call up and say, "Can you show us how to do X for this
+project we're working on?" with those of having someone summoned by a
+knowledge management project to explain how to do X for the knowledge
+archives.
+
+    - Win
+
+
+http://xent.com/mailman/listinfo/fork
+
+

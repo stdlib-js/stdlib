@@ -1,0 +1,89 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:54:53 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DFCB4441F1
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:32 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g768qkk19412 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 09:52:46 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA19567; Tue, 6 Aug 2002 09:50:18 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp013.mail.yahoo.com (smtp013.mail.yahoo.com
+    [216.136.173.57]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id JAA19543
+    for <ilug@linux.ie>; Tue, 6 Aug 2002 09:50:12 +0100
+Received: from unknown (HELO mfrenchw2k) (mfrench42@62.254.163.42 with
+    login) by smtp.mail.vip.sc5.yahoo.com with SMTP; 6 Aug 2002 08:50:10 -0000
+Message-Id: <001501c23d25$c21ba0b0$3864a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: "Declan Houlihan" <deccy@csn.ul.ie>, <ilug@linux.ie>
+References: <653270E74A8DD31197AF009027AA4F8B01845F1B@LIMXMMF303>
+    <20020805224355.GB26632@csn.ul.ie>
+Date: Tue, 6 Aug 2002 09:46:27 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [ILUG] Sparc Solaris (was: Dell GX260 V Redhat 7.3)
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Declan Houlihan mentioned:
+> We're actually investigating switching from Sparc/Solaris to
+> Intel/Linux.
+
+And then:
+> At the moment at work, if we want a new workstation, we just
+> buy whatever Sun's latest system is, we jumpstart it, and
+> that's it, it's up and running.
+
+Well, why not try Linux on Sparc. It works pretty well and I have not had
+major issues with it. There are minor problems: like the serial console
+drivers, but for workstation installs I suspect it will work fine.
+
+And you get a working version of your favourite KDE/Gnome desktop instead of
+DTE, uhm, I mean CDE.
+
+> Basically the whole installation procedure is
+> "boot net - install"
+
+Well, you have to add the workstation to the install server first.
+
+Talking of which, you can install Sparc Linux using this technique as well.
+The image takes a while to load, but once this is done you can install in
+the normal fashion.
+
+SuSe for Sparc works fine. I am using Debian because the Sun boxen I have
+subverted do not have graphics consoles. It also just works.
+
+If you have a spare workstation, I am sure I could burn a couple of CD's for
+you. (If I can find them.)
+
+- Matthew
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Fri Aug 23 11:07:47 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 8F02C4415E
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:06:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:06:32 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MJjjZ22185 for
+    <zzzz-ilug@jmason.org>; Thu, 22 Aug 2002 20:45:45 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA18963; Thu, 22 Aug 2002 20:44:01 +0100
+Received: from email.qves.com (email1.qves.net [209.63.151.251] (may be
+    forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA18925 for
+    <ilug@linux.ie>; Thu, 22 Aug 2002 20:43:42 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host email1.qves.net
+    [209.63.151.251] (may be forged) claimed to be email.qves.com
+Received: from qvp0083 ([169.254.6.14]) by email.qves.com with Microsoft
+    SMTPSVC(5.0.2195.3779); Thu, 22 Aug 2002 13:43:27 -0600
+From: "FreeLegal Advice" <jaen@s3.serveimage.com>
+To: <ilug@linux.ie>
+Date: Thu, 22 Aug 2002 13:43:24 -0600
+Message-Id: <16a78d01c24a14$2d585440$0e06fea9@freeyankeedom.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Mailer: Microsoft CDO for Windows 2000
+Thread-Index: AcJKFC1YlG4+9Dg4QYKgn3ufp2C1BQ==
+Content-Class: urn:content-classes:message
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2462.0000
+X-Originalarrivaltime: 22 Aug 2002 19:43:28.0713 (UTC) FILETIME=[3021FB90:01C24A14]
+Subject: [ILUG] Get the Child Support You Deserve                     10.132
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+1) Fight The Risk of Cancer!
+http://www.adclick.ws/p.cfm?o=315&s=pk007
+
+2) Slim Down - Guaranteed to lose 10-12 lbs in 30 days
+http://www.adclick.ws/p.cfm?o=249&s=pk007
+
+3) Get the Child Support You Deserve - Free Legal Advice
+http://www.adclick.ws/p.cfm?o=245&s=pk002
+
+4) Join the Web's Fastest Growing Singles Community
+http://www.adclick.ws/p.cfm?o=259&s=pk007
+
+5) Start Your Private Photo Album Online!
+http://www.adclick.ws/p.cfm?o=283&s=pk007
+
+Have a Wonderful Day,
+Offer Manager
+PrizeMama
+
+
+
+
+
+
+
+
+
+
+
+
+
+If you wish to leave this list please use the link below.
+http://www.qves.com/trim/?ilug@linux.ie%7C17%7C114258
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

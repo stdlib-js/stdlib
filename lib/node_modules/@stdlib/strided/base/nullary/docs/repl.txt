@@ -1,0 +1,80 @@
+
+{{alias}}( arrays, shape, strides, fcn )
+    Applies a nullary callback and assigns results to elements in a strided
+    output array.
+
+    The `shape` and `strides` parameters determine which elements in the strided
+    output array are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ArrayLikeObject>
+        Array-like object containing one strided output array.
+
+    shape: ArrayLikeObject<integer>
+        Array-like object containing a single element, the number of indexed
+        elements.
+
+    strides: ArrayLikeObject<integer>
+        Array-like object containing the stride length for the strided output
+        array.
+
+    fcn: Function
+        Nullary callback.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0, -3.0, -4.0 ] );
+    > var shape = [ x.length ];
+    > var strides = [ 1, 1 ];
+    > var fcn = {{alias:@stdlib/utils/constant-function}}( 3.0 );
+    > {{alias}}( [ x ], shape, strides, fcn );
+    > x
+    <Float64Array>[ 3.0, 3.0, 3.0, 3.0 ]
+
+
+{{alias}}.ndarray( arrays, shape, strides, offsets, fcn )
+    Applies a nullary callback and assigns results to elements in a strided
+    output array using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the `offsets` parameter supports indexing semantics based on
+    starting indices.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ArrayLikeObject>
+        Array-like object containing one strided output array.
+
+    shape: ArrayLikeObject<integer>
+        Array-like object containing a single element, the number of indexed
+        elements.
+
+    strides: ArrayLikeObject<integer>
+        Array-like object containing the stride length for the strided output
+        array.
+
+    offsets: ArrayLikeObject<integer>
+        Array-like object containing the starting index (i.e., index offset) for
+        the strided output array.
+
+    fcn: Function
+        Nullary callback.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( [ -1.0, -2.0, -3.0, -4.0 ] );
+    > var shape = [ x.length ];
+    > var strides = [ 1 ];
+    > var offsets = [ 0 ];
+    > var fcn = {{alias:@stdlib/utils/constant-function}}( 3.0 );
+    > {{alias}}.ndarray( [ x ], shape, strides, offsets, fcn );
+    > x
+    <Float64Array>[ 3.0, 3.0, 3.0, 3.0 ]
+
+    See Also
+    --------
+

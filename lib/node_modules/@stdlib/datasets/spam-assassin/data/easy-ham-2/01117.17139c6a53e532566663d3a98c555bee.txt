@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Thu Aug 22 10:47:09 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2EBF443C43
+	for <jm@localhost>; Thu, 22 Aug 2002 05:46:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:46:21 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7LIZUZ05268 for <jm@jmason.org>;
+    Wed, 21 Aug 2002 19:35:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D286F294189; Wed, 21 Aug 2002 11:30:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id 22C142940AE for <fork@xent.com>; Wed,
+    21 Aug 2002 11:28:57 -0700 (PDT)
+Received: (qmail 19500 invoked from network); 21 Aug 2002 18:30:27 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 21 Aug 2002 18:30:27 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: <fork@spamassassin.taint.org>
+Subject: RE: The Curse of India's Socialism
+Message-Id: <006b01c24940$d2aa35a0$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+In-Reply-To: <JHEPKCEMGPKFFDHHDDKDCEPCFBAA.bill@wstoddard.com>
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 21 Aug 2002 11:30:27 -0700
+
+I don't know who said the below.
+
+1) Measured in money, you are wrong.  Different ethnic groups achieve at
+widely different rates.  Always have.  A lot of research has been done
+on that topic, Sowell among others.
+
+2) If you exchanged the population of India and America, in a generation
+India would look like America.  In Two, America would look like India.
+
+3) As Bob said: 'valuable resources' has notin' to do with it.  See
+Japan, Hong Kong, Singapore, ...
+
+
+> >
+> > I'm sure that if someone checked the statistics, that the number of
+> > "successful" vs. "unsuccessful" (how to define those?) Indian
+> > immigrants in the US is statistically similar to the number of
+> > successful vs. unsuccessful Scotsmen.  I'm not going to, though.
+> >
+> > India is poor because it always was poor.  Unlike other countries
+> > in the region (including Ghana, Nigeria, et al) that have emerged
+> > from the ashes of Imperialism with strong growth, India is not
+> > blessed with a strong base of valuable resources.
+> 
+
+http://xent.com/mailman/listinfo/fork
+

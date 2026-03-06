@@ -1,0 +1,235 @@
+From aig@insurancemail.net  Wed Aug  7 01:09:48 2002
+Return-Path: <aig@insurancemail.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 24169440A8
+	for <jm@localhost>; Tue,  6 Aug 2002 20:09:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 01:09:47 +0100 (IST)
+Received: from mail1.insuranceiq.com (host66.insuranceiq.com
+    [65.217.159.66] (may be forged)) by dogma.slashnull.org (8.11.6/8.11.6)
+    with ESMTP id g770B2k26467 for <jm@jmason.org>; Wed, 7 Aug 2002 01:11:02
+    +0100
+Received: from mail pickup service by mail1.insuranceiq.com with Microsoft
+    SMTPSVC; Tue, 6 Aug 2002 20:10:14 -0400
+Subject: 9% Commission on MYG Annuities
+To: <yyyy@spamassassin.taint.org>
+Date: Tue, 6 Aug 2002 20:10:14 -0400
+From: "IQ - AIG" <aig@insurancemail.net>
+Message-Id: <3052b801c23da6$cdd159f0$6b01a8c0@insuranceiq.com>
+X-Mailer: Microsoft CDO for Windows 2000
+MIME-Version: 1.0
+Thread-Index: AcI9h0I6awpUZmYJQuKUelTs3PROAw==
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Content-Class: urn:content-classes:message
+X-Originalarrivaltime: 07 Aug 2002 00:10:14.0875 (UTC) FILETIME=[CDF07AB0:01C23DA6]
+Content-Type: multipart/alternative; boundary="----=_NextPart_000_2D6F23_01C23D65.BB2D3AD0"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_2D6F23_01C23D65.BB2D3AD0
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+ 	 When AIG talks annuities...your clients listen!=09
+ 	 Year 1: 8.55% Guaranteed=0A=
+Year 2-6: 4.55% Guaranteed=09
+ =09
+ Commission: 9%=09
+ 	=20
+Call or e-mail <mailto:jerry_livers@aigannuity.com>  us Today!
+ 888-237-4210
+? or ?=20
+Please fill out the form below for more information	=20
+Name:	  =09
+E-mail:	  =09
+Phone:	  =09
+City:	  	State:	  	 =09
+ 	  	 	   =09
+=20
+=20
+ AIG Annuity
+For agent use only.=20
+We don't want anyone to receive our mailings who does not wish to. This
+is professional communication sent to insurance professionals. To be
+removed from this mailing list, DO NOT REPLY to this message. Instead,
+go here: http://www.Insurancemail.net <http://www.Insurancemail.net>=20
+
+Legal Notice <http://www.insuranceiq.com/legal.htm> =20
+
+------=_NextPart_000_2D6F23_01C23D65.BB2D3AD0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<title>9% Commission on MYG Annuities</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Diso-8859-1">
+</head>
+<body bgcolor=3D"#FFFFFF" text=3D"#000000">
+<font face=3D"arial,helvetica,sans-serif">
+<table width=3D"550" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center" bgcolor=3D"#FFFFFF" bordercolor=3D"#000000" =
+border=3D"1">
+  <tr>=20
+    <td>
+      <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+        <tr>=20
+          <td>
+            <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+              <tr>=20
+                <td><img =
+src=3D"http://iiq.us/Images/AIG/talk/20020625-101a.jpg" width=3D"174" =
+height=3D"149"></td>
+                <td><img =
+src=3D"http://iiq.us/Images/AIG/talk/20020625-102a.gif" width=3D"376" =
+height=3D"149" alt=3D'When AIG talks annuities...your clients =
+listen!'></td>
+              </tr>
+              <tr>=20
+                <td rowspan=3D"2"><img =
+src=3D"http://iiq.us/Images/AIG/talk/20020625-103a.gif" width=3D"174" =
+height=3D"124"></td>
+                <td><img =
+src=3D"http://iiq.us/Images/AIG/talk/20020625-104a.gif" width=3D"376" =
+height=3D"92" alt=3D'Year 1: 8.55% Guaranteed&#10;Year 2-6: 4.55% =
+Guaranteed'></td>
+              </tr>
+              <tr>=20
+                <td><img =
+src=3D"http://iiq.us/Images/AIG/talk/20020625-105a.gif" width=3D"376" =
+height=3D"32"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>=20
+          <td align=3D"center"><img =
+src=3D"http://iiq.us/Images/AIG/talk/20020625-2.gif" width=3D"550" =
+height=3D"53" alt=3D'Commission: 9%'></td>
+        </tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+        <tr>=20
+          <td align=3D"center">
+            <font size=3D"2"><b>Call or <a =
+href=3D"mailto:jerry_livers@aigannuity.com">e-mail</a> us Today!<br>
+            <img src=3D"http://iiq.us/images/AIG/talk/20020625-3.gif" =
+width=3D"550" height=3D"89" alt=3D"888-237-4210"><br>
+            &#151; or &#151; </b></font>=20
+            <table width=3D"95%" bgcolor=3D"#000000">
+              <tr>=20
+                <form method=3D"post" =
+action=3D"http://65.217.159.103/response/response.asp">
+                  <td>=20
+                    <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"2" align=3D"center" bgcolor=3D"#ffffff">
+                      <tr>=20
+                        <td colspan=3D"5" align=3D"center" =
+bgcolor=3D"#000066"><font size=3D"2"><b><font color=3D"#FFFFFF">Please =
+fill out the form below for more information</font></b></font></td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"15%" align=3D"right"><font =
+size=3D"2"><b>Name:</b></font></td>
+                        <td colspan=3D"4"> <font size=3D"2"><b>=20
+                          <input type=3D"text" name=3D"contactname" =
+size=3D"50">
+                          </b></font></td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"15%" align=3D"right"><font =
+size=3D"2"><b>E-mail:</b></font></td>
+                        <td colspan=3D"4"> <font size=3D"2"><b>=20
+                          <input type=3D"text" name=3D"email" =
+size=3D"50">
+                          </b></font></td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"15%" align=3D"right"><font =
+size=3D"2"><b>Phone:</b></font></td>
+                        <td colspan=3D"4"> <font size=3D"2"><b>=20
+                          <input type=3D"text" name=3D"phone" =
+size=3D"50">
+                          </b></font></td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"15%" align=3D"right"><font =
+size=3D"2"><b>City:</b></font></td>
+                        <td width=3D"30%"> <font size=3D"2"><b>=20
+                          <input type=3D"text" name=3D"city" =
+size=3D"20">
+                          </b></font></td>
+                        <td width=3D"15%" align=3D"right"><font =
+size=3D"2"><b>State:</b></font></td>
+                        <td width=3D"20%"> <font size=3D"2"><b>=20
+                          <input type=3D"text" name=3D"state" =
+size=3D"2">
+                          </b></font></td>
+                        <td rowspan=3D"2" align=3D"center" =
+valign=3D"middle"><font size=3D"2"><b><img =
+src=3D"http://iiq.us/images/q.gif" width=3D"43" =
+height=3D"50"></b></font></td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"15%" align=3D"right">&nbsp;</td>
+                        <td width=3D"30%"> <font size=3D"2"><b>=20
+                          <input type=3D"submit" name=3D"btnsubmit" =
+value=3D"Submit">
+                          </b></font></td>
+                        <td width=3D"15%" align=3D"right">&nbsp;</td>
+                        <td width=3D"20%"> <font size=3D"2"><b>=20
+                          <input type=3D"hidden" =
+name=3D"hdnRecipientTxt" value=3D"jerry_livers@aigannuity.com">
+                          <input type=3D"hidden" name=3D"hdnSubjectTxt" =
+value=3D"AIG Ad Inquiry">
+                          </b></font>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                <input type=3D'hidden' name=3D'SentTo' value=3D'304704'>
+</form>
+              </tr>
+            </table>
+            &nbsp;<br>
+            <img =
+src=3D"http://iiq.us/images/AIG/ultramyg1/20020516-4.gif" width=3D"535" =
+height=3D"82" alt=3D"AIG Annuity"><br>
+            <font size=3D"1"><b>For agent use only.</b></font>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>=20
+    <td width=3D"100%" bgcolor=3D"#cccccc" align=3D"center">=20
+      <p><font face=3D"Arial, Helvetica, sans-serif" size=3D"1"> We =
+don't want anyone=20
+        to receive our mailings who does not wish to. This is =
+professional communication=20
+        sent to insurance professionals. To be removed from this mailing =
+list,=20
+        <b>DO NOT REPLY</b> to this message. Instead, go here: <a =
+href=3D"http://www.Insurancemail.net">=20
+        http://www.Insurancemail.net</a></font></p>
+    </td>
+  </tr>
+</table>
+<center>
+  <font size=3D"1"><a =
+href=3D"http://www.insuranceiq.com/legal.htm">Legal Notice</a></font>=20
+</center>
+</font>
+</body>
+</html>
+
+------=_NextPart_000_2D6F23_01C23D65.BB2D3AD0--
+
+

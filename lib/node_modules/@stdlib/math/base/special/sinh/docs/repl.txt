@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Computes the hyperbolic sine of a double-precision floating-point number.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Hyperbolic sine.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    0.0
+    > y = {{alias}}( 2.0 )
+    ~3.627
+    > y = {{alias}}( -2.0 )
+    ~-3.627
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

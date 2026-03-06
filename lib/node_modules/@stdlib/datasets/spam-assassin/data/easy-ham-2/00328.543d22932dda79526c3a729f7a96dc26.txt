@@ -1,0 +1,99 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:05:48 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 38E6B44151
+	for <jm@localhost>; Mon, 12 Aug 2002 05:55:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:55:53 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7A12Mb02513 for
+    <jm-ilug@jmason.org>; Sat, 10 Aug 2002 02:02:22 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA05330; Sat, 10 Aug 2002 01:59:24 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail04.svc.cra.dublin.eircom.net
+    (mail04.svc.cra.dublin.eircom.net [159.134.118.20]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id BAA05297 for <ilug@linux.ie>; Sat,
+    10 Aug 2002 01:59:18 +0100
+Received: (qmail 42074 messnum 1241854 invoked from
+    network[159.134.112.115/p112-115.as1.bdt.dublin.eircom.net]);
+    10 Aug 2002 00:58:46 -0000
+Received: from p112-115.as1.bdt.dublin.eircom.net (HELO calm.mc)
+    (159.134.112.115) by mail04.svc.cra.dublin.eircom.net (qp 42074) with SMTP;
+    10 Aug 2002 00:58:46 -0000
+Received: from mconry by calm.mc with local (Exim 3.35 #1 (Debian)) id
+    17dKab-0000l3-00 for <ilug@linux.ie>; Sat, 10 Aug 2002 01:58:45 +0100
+Date: Sat, 10 Aug 2002 01:58:45 +0100
+From: Michael Conry <michael.conry@ucd.ie>
+To: ilug@linux.ie
+Message-Id: <20020810005844.GA652@calm.mc>
+Reply-To: michael.conry@ucd.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.28i
+Subject: [ILUG] cdrecord + 2.4.19 = hard-lock
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi all,
+I've run into a fairly intractable (for me) problem, and was wondering
+if anybody could give me pointers on how to deal with it.
+
+I am running Debian Woody on a Pentium III IDE based system.
+I have a Ricoh 7083a ide cd rewriter, which I use using cdrecord and the
+scsi over ide kernel modules.  I was running kernel 2.4.18 until
+probably last weekend when I noticed 2.4.19 was out.  Downloaded patch
+and installed new kernel with no real problems.  This morning I went to
+burn a CDROM, and the system locked hard.  Rebooting into 2.4.18 allowed
+cdburning to work fine.
+
+This problem is very reproducible (on my system at least).
+the cdrecord command I was using was
+    cdrecord -v speed=4 blank=fast dev=0,1,0 -data bak.iso
+The blanking appears to go ok, but when it tries to write data, it just
+locks up the entire system (can't ping it from outside even).  AFAICS,
+the system just stops.  Hard reset is only way back in, and when it does
+reboot, I cannot see anything useful in any logfiles (/var/log/messages
+/var/log/kern.log /var/log/syslog, at any rate).
+cdrecord -scanbus works fine and reports the two pseudo-scsi devices (my
+cdr drive and my cdrw).
+The same lock occurs even if there is no blanking.
+
+I tried upgrading to 2.4.20-pre1-ac1 (on assumption that if there was a
+kernel issue it might have been fixed in these patches), but it gives
+the same error.  I also downloaded and compiled the source for
+cdrecord 1.1.10, and installed it instead of the debian package (i was
+wondering if maybe there was some compile option the packager had used
+which maybe would cause the problem), and still the problem persisted.
+
+Anyway, I'm completely stumped.  Google searching has not done me much
+good, and I'm a little bit lost.  What I'd like to know is
+a)  How to fix the problem ;-)
+b)  Is this likely to be an application or kernel problem?  The severity
+    of the crash would make me suspect it is a kernel problem, but I'm
+    not very knowledgeable on these things.
+c)  Should I post a description of this to the kernel mailing list? If
+    this is an appropriate course of action, are there any tips (beyond
+    the guidelines on kernel.org)?
+
+Like I said, I'm lost on this one, so any info is very gratefully
+received.
+mick
+-- 
+Michael Conry   Ph.:+353-1-7161987, Web: http://www.acronymchile.com
+Key fingerprint = 5508 B563 6791 5C84 A947  CB01 997B 3598 09DE 502C
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

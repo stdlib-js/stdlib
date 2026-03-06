@@ -1,0 +1,150 @@
+From fork-admin@xent.com  Tue Aug 20 22:15:08 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8087643C34
+	for <jm@localhost>; Tue, 20 Aug 2002 17:15:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 22:15:07 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7KLCrZ24691 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 22:12:54 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id CE08129414E; Tue, 20 Aug 2002 14:07:18 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from pimout3-int.prodigy.net (pimout3-ext.prodigy.net
+    [207.115.63.102]) by xent.com (Postfix) with ESMTP id 47753294098 for
+    <fork@xent.com>; Mon, 15 Jul 2002 12:53:43 -0700 (PDT)
+Received: from localhost (adsl-64-165-226-115.dsl.lsan03.pacbell.net
+    [64.165.226.115]) by pimout3-int.prodigy.net (8.11.0/8.11.0) with ESMTP id
+    g6FK2fP179128; Mon, 15 Jul 2002 16:02:42 -0400
+From: karee <karee@tstonramp.com>
+X-Mailer: The Bat! (v1.53d) Educational
+Reply-To: karee <karee@tstonramp.com>
+Organization: Nonoya Business
+X-Priority: 3 (Normal)
+Message-Id: <664839634.20020715130224@tstonramp.com>
+To: blening@tstonramp.com
+Cc: jstiles@blizzard.com
+Subject: Fwd: FC: Bush administration readies nationwide informant program
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 15 Jul 2002 13:02:24 -0700
+
+
+
+Yea.. this isn't newsworthy...
+
+
+
+This is a forwarded message
+From: Declan McCullagh <declan@well.com>
+To: politech@politechbot.com
+Date: Sunday, July 14, 2002, 8:06:38 PM
+Subject: FC: Bush administration readies nationwide informant program
+
+===8<==============Original message text===============
+The link:
+http://www.citizencorps.gov/tips.html
+
+---
+
+Date: Sun, 14 Jul 2002 20:59:54 +0000
+From: "J.D. Abolins" <jda-ir@njcc.com>
+Subject: Aussie paper: US planning to recruit one in 24 Americans as citizen
+  spies
+
+Anybody ever heard of Pavlik Morozov? (If not see 
+http://www.cyberussr.com/rus/morozov.html for a quick blurb about the 
+fellow.) When I see proposals to mobilize American people into being eyes 
+and ears fo the government, I am reminded of Pavilik and his family.
+
+Now I am not against people reporting certain things to the police. It is 
+the habit of being constantly suspicious of neighbors, co-workers, and 
+otehrs that can become destructive. Down the line it can lead to suspicions 
+based not on significant clues but upon things such as "fails to display 
+sufficient respect for authority", "laughs whenever the phrase 'homeland 
+security' is used", and "hangs out with anti-social misfits." It is an all 
+too easy slide from neighbors watching out for each and helping the 
+community to becoming agents of the state.
+
+J.D. Abolins
+
+PS: Why is it that the most revealing news reports about the USA are coming 
+nowadays form the UK, Aussie, and other non-USA media? <rhetorical>
+--------------
+ From the Sydney Morning Herald Web site 15 July 2002
+http://www.smh.com.au/articles/2002/07/14/1026185141232.html
+
+US planning to recruit one in 24 Americans as citizen spies
+By Ritt Goldstein
+July 15 2002
+
+The Bush Administration aims to recruit millions of United States citizens 
+as domestic informants in a program likely to alarm civil liberties groups.
+
+The Terrorism Information and Prevention System, or TIPS, means the US will 
+have a higher percentage of citizen informants than the former East Germany 
+through the infamous Stasi secret police. The program would use a minimum 
+of 4 per cent of Americans to report "suspicious activity".
+
+Civil liberties groups have already warned that, with the passage earlier 
+this year of the Patriot Act, there is potential for abusive, large-scale 
+investigations of US citizens.
+
+As with the Patriot Act, TIPS is being pursued as part of the so-called war 
+against terrorism. It is a Department of Justice project.
+
+Highlighting the scope of the surveillance network, TIPS volunteers are 
+being recruited primarily from among those whose work provides access to 
+homes, businesses or transport systems. Letter carriers, utility employees, 
+truck drivers and train conductors are among those named as targeted recruits.
+
+A pilot program, described on the government Web site www.citizencorps.gov, 
+is scheduled to start next month in 10 cities, with 1 million informants 
+participating in the first stage. Assuming the program is initiated in the 
+10 largest US cities, that will be 1 million informants for a total 
+population of almost 24 million, or one in 24 people.
+
+[...]
+
+
+
+
+-------------------------------------------------------------------------
+POLITECH -- Declan McCullagh's politics and technology mailing list
+You may redistribute this message freely if you include this notice.
+To subscribe to Politech: http://www.politechbot.com/info/subscribe.html
+This message is archived at http://www.politechbot.com/
+Declan McCullagh's photographs are at http://www.mccullagh.org/
+-------------------------------------------------------------------------
+Like Politech? Make a donation here: http://www.politechbot.com/donate/
+-------------------------------------------------------------------------
+
+===8<===========End of original message text===========
+
+
+
+-- 
+Best regards,
+ karee                            mailto:karee@tstonramp.com
+
+
+
+
+http://xent.com/mailman/listinfo/fork
+

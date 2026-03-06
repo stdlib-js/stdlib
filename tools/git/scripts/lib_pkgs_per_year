@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prints the approximate number of library packages per year.
+#
+# <year> <num_pkgs>
+
+# Determine root directory:
+root="$(git rev-parse --show-toplevel)"
+
+# Define the path to a utility to find when `package.json` files were added and deleted:
+pkg_json="${root}/tools/git/scripts/pkg_json_added_deleted"
+
+# * `pkg_json`
+#   - `package.json` additions and deletions.
+# * `awk '{}'`
+#   - Tabulate the yearly totals.
+# * `sort -k1n`
+#   - Sort the year numerically.
+# * `awk '{}'`
+#   - Format the output.
+"${pkg_json}" | awk '
+{
+	yr = $5
+}
+
+# Skip non-library `package.json`:
+$9 !~ /lib\/node_modules\/\@stdlib\// {
+	next
+}
+
+# Skip "tools" `package.json`:
+$9 ~ /\/_tools\// {
+	next
+}
+
+# Added a `package.json`:
+$8 == "A" {
+	pkgs[yr] += 1
+}
+
+# Deleted a `package.json`:
+$8 == "D" {
+	pkgs[yr] -= 1
+}
+
+END {
+	for (yr in pkgs) {
+		print yr OFS pkgs[yr]
+	}
+}
+' | sort -k1n | awk '{print $1 OFS $2}'

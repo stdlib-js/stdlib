@@ -1,0 +1,86 @@
+
+{{alias}}( [options] )
+    Returns an accumulator function which incrementally performs Grubbs' test
+    for detecting outliers.
+
+    Grubbs' test assumes that data is normally distributed. Accordingly, one
+    should first verify that the data can be reasonably approximated by a normal
+    distribution before applying the Grubbs' test.
+
+    If provided a value, the accumulator function returns updated test results.
+    If not provided a value, the accumulator function returns the current test
+    results.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the test statistic is `NaN` for all future invocations.
+
+    The accumulator must be provided *at least* three data points before
+    performing Grubbs' test. Until at least three data points are provided, the
+    accumulator returns `null`.
+
+    The accumulator function returns an object having the following fields:
+
+    - rejected: boolean indicating whether the null hypothesis should be
+    rejected.
+    - alpha: significance level.
+    - criticalValue: critical value.
+    - statistic: test statistic.
+    - df: degrees of freedom.
+    - mean: sample mean.
+    - sd: corrected sample standard deviation.
+    - min: minimum value.
+    - max: maximum value.
+    - alt: alternative hypothesis.
+    - method: method name.
+    - print: method for pretty-printing test output.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.alpha: number (optional)
+        Significance level. Default: 0.05.
+
+    options.alternative: string (optional)
+        Alternative hypothesis. The option may be one of the following values:
+
+        - 'two-sided': test whether the minimum or maximum value is an outlier.
+        - 'min': test whether the minimum value is an outlier.
+        - 'max': test whether the maximum value is an outlier.
+
+        Default: 'two-sided'.
+
+    options.init: integer (optional)
+        Number of data points the accumulator should use to compute initial
+        statistics *before* testing for an outlier. Until the accumulator is
+        provided the number of data points specified by this option, the
+        accumulator returns `null`. Default: 100.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var acc = {{alias}}();
+    > var res = acc()
+    null
+    > for ( var i = 0; i < 200; i++ ) {
+    ...     res = acc( {{alias:@stdlib/random/base/normal}}( 10.0, 5.0 ) );
+    ... };
+    > res.print()
+
+    References
+    ----------
+    - Grubbs, Frank E. 1950. "Sample Criteria for Testing Outlying
+    Observations." _The Annals of Mathematical Statistics_ 21 (1). The Institute
+    of Mathematical Statistics: 27–58. doi:10.1214/aoms/1177729885.
+    - Grubbs, Frank E. 1969. "Procedures for Detecting Outlying Observations in
+    Samples." _Technometrics_ 11 (1). Taylor & Francis: 1–21. doi:10.1080/
+    00401706.1969.10490657.
+
+    See Also
+    --------
+

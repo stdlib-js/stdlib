@@ -1,0 +1,72 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Tue Aug 27 17:34:50 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2BD7243F99
+	for <jm@localhost>; Tue, 27 Aug 2002 12:34:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 27 Aug 2002 17:34:50 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7RGY2Z16880 for <jm-sa@jmason.org>; Tue, 27 Aug 2002 17:34:02 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17jjHB-0005VG-00; Tue,
+    27 Aug 2002 09:33:09 -0700
+Received: from sccrmhc01.attbi.com ([204.127.202.61]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17jjH1-0003Lw-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Tue, 27 Aug 2002 09:33:00 -0700
+Received: from localhost ([12.229.66.144]) by sccrmhc01.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020827163251.TXZR11061.sccrmhc01.attbi.com@localhost> for
+    <spamassassin-talk@lists.sourceforge.net>; Tue, 27 Aug 2002 16:32:51 +0000
+Subject: Re: [SAtalk] where can I find the Habeas patent (application)?
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+From: Brian McNett <bmcnett@radparker.com>
+To: spamassassin-talk@example.sourceforge.net
+Content-Transfer-Encoding: 7bit
+In-Reply-To: <20020827144927.C4830-100000@moon.campus.luth.se>
+Message-Id: <954123A6-B9DA-11D6-AD60-003065C182B0@radparker.com>
+X-Mailer: Apple Mail (2.482)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Tue, 27 Aug 2002 09:32:31 -0700
+Date: Tue, 27 Aug 2002 09:32:31 -0700
+
+
+On Tuesday, August 27, 2002, at 06:03  AM, Tony L. Svanstrom wrote:
+
+> Where can I find it, I was searching online without any luck... =(
+
+You can't, because there isn't one, yet.  Habeas is using a 
+combination of copyright and trademark law to protect their 
+sender warranties.  They hope to patent the system, but they 
+have not been ISSUED a patent.
+
+--B
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

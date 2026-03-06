@@ -1,0 +1,98 @@
+
+{{alias}}( [N, K, n] )
+    Returns a hypergeometric distribution object.
+
+    Parameters
+    ----------
+    N: integer (optional)
+        Population size. Must be a nonnegative integer larger than or equal to
+        `K` and `n`.
+
+    K: integer (optional)
+        Subpopulation size. Must be a nonnegative integer smaller than or equal
+        to `N`.
+
+    n: integer (optional)
+        Number of draws. Must be a nonnegative integer smaller than or equal to
+        `N`.
+
+    Returns
+    -------
+    hypergeometric: Object
+        Distribution instance.
+
+    hypergeometric.N: number
+        Population size. If set, the value must be a nonnegative integer larger
+        than or equal to `K` and `n`.
+
+    hypergeometric.K: number
+        Subpopulation size. If set, the value must be a nonnegative integer
+        smaller than or equal to `N`.
+
+    hypergeometric.n: number
+        Number of draws. If set, the value must be a nonnegative integer
+        smaller than or equal to `N`.
+
+    hypergeometric.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    hypergeometric.mean: number
+        Read-only property which returns the expected value.
+
+    hypergeometric.mode: number
+        Read-only property which returns the mode.
+
+    hypergeometric.skewness: number
+        Read-only property which returns the skewness.
+
+    hypergeometric.stdev: number
+        Read-only property which returns the standard deviation.
+
+    hypergeometric.variance: number
+        Read-only property which returns the variance.
+
+    hypergeometric.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    hypergeometric.logpmf: Function
+        Evaluates the natural logarithm of the probability mass function (PMF).
+
+    hypergeometric.pmf: Function
+        Evaluates the probability mass function (PMF).
+
+    hypergeometric.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var hypergeometric = {{alias}}( 100, 70, 20 );
+    > hypergeometric.N
+    100.0
+    > hypergeometric.K
+    70.0
+    > hypergeometric.n
+    20.0
+    > hypergeometric.kurtosis
+    ~-0.063
+    > hypergeometric.mean
+    14.0
+    > hypergeometric.mode
+    14.0
+    > hypergeometric.skewness
+    ~-0.133
+    > hypergeometric.stdev
+    ~1.842
+    > hypergeometric.variance
+    ~3.394
+    > hypergeometric.cdf( 2.9 )
+    ~0.0
+    > hypergeometric.logpmf( 10 )
+    ~-3.806
+    > hypergeometric.pmf( 10 )
+    ~0.022
+    > hypergeometric.quantile( 0.8 )
+    16.0
+
+    See Also
+    --------
+

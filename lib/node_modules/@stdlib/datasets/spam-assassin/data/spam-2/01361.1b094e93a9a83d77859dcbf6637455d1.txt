@@ -1,0 +1,52 @@
+From ilug-admin@linux.ie  Thu Aug  8 15:54:40 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7821E44248
+	for <jm@localhost>; Thu,  8 Aug 2002 08:48:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:48:58 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CfP205476 for
+    <jm-ilug@jmason.org>; Thu, 8 Aug 2002 13:41:30 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA15484; Thu, 8 Aug 2002 13:37:08 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from virtual.auracom.net (nobody@virtual.auracom.net
+    [165.154.140.44]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA15458
+    for <ilug@linux.ie>; Thu, 8 Aug 2002 13:37:01 +0100
+Received: by virtual.auracom.net (8.9.0/8.9.0) id IAA08924; Thu,
+    8 Aug 2002 08:36:28 -0400 (EDT)
+Date: Thu, 8 Aug 2002 08:36:28 -0400 (EDT)
+Message-Id: <200208081236.IAA08924@virtual.auracom.net>
+To: dannywalk@ntlworld.com, ross@excentric.com,
+	eglu@student.nuigalway.ie, joe@wombat.ie, ilug@linux.ie,
+	compsoc@skynet.csn.ul.ie, frankie@debian.org,
+	admin-NOSPAM-@basilicata.linux.it, alberto@linuxsicilia.it,
+	madrid@linux.it
+From: reenspring@happyman.com ()
+Subject: [ILUG] FREE FREE FREE!
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Below is the result of your feedback form.  It was submitted by
+ (reenspring@happyman.com) on Thursday, August 8, 2002 at 08:36:27
+---------------------------------------------------------------------------
+
+message: - - - - - FREE FREE FREE! - - - - - Thats right free unlimited web cam feeds! - chat! - pictures! - videos! -   ALL FREE!!! YOU PAY NOTHING!!! NOT ONE CENT! - This is a limited time offer because these gitls can't work for free so hurry up and click this link! http://teensforfree.cjb.net  
+
+---------------------------------------------------------------------------
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

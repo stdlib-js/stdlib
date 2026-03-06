@@ -1,0 +1,15 @@
+
+{{alias}}
+    Maximum safe half-precision floating-point integer.
+
+    The maximum safe half-precision floating-point integer is given by
+    `2^11 - 1`.
+
+    Examples
+    --------
+    > {{alias}}
+    2047
+
+    See Also
+    --------
+

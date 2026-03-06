@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of `1/2`.
+
+    Examples
+    --------
+    > {{alias}}
+    0.7071067811865476
+
+    See Also
+    --------
+

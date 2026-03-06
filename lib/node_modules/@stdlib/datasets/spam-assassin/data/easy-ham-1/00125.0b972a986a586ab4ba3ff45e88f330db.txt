@@ -1,0 +1,86 @@
+From razor-users-admin@lists.sourceforge.net  Tue Oct  8 00:10:07 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 94D4A16F19
+	for <zzzz@localhost>; Tue,  8 Oct 2002 00:10:02 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 00:10:02 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g97MPnK19526 for <zzzz-razor@spamassassin.taint.org>; Mon, 7 Oct 2002 23:25:49 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17ygHN-0005BG-00; Mon,
+    07 Oct 2002 15:23:09 -0700
+Received: from elmo.la.asu.edu ([129.219.48.8]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17ygGz-00065U-00 for <razor-users@lists.sourceforge.net>; Mon,
+    07 Oct 2002 15:22:45 -0700
+Received: (qmail 23780 invoked by uid 5305); 7 Oct 2002 22:31:31 -0000
+Received: from llamatron.la.asu.edu (HELO llamatron.rocinante.com)
+    (129.219.78.39) by elmo.la.asu.edu with SMTP; 7 Oct 2002 22:31:26 -0000
+Message-Id: <5.1.1.6.0.20021007151925.01759548@sancho2.rocinante.com>
+X-Sender: blue@sancho2.rocinante.com
+X-Mailer: QUALCOMM Windows Eudora Version 5.1.1
+To: razor-users@example.sourceforge.net
+From: Chris Kurtz <blue@rocinante.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+X-Virus-Scanned: by AMaViS perl-11
+Subject: [Razor-users] Razor2 error: can't find "new"
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Mon, 07 Oct 2002 15:22:44 -0700
+Date: Mon, 07 Oct 2002 15:22:44 -0700
+
+
+Using Razor2 via SpamAssasin.
+
+System is Solaris 2.7, with qmail. Spamassassin run via user's procmail.
+All users who use SA have run razor-register.
+
+Razor2 is failing, and I can't find anything in the limited docs or on 
+google on it,
+and I'm hoping someone can help.
+
+The error (which doesn't prevent SA from working) is:
+
+Oct  2 06:38:22 sancho2 qmail: 1033565902.186041 delivery 4588: success: 
+razor2_check_skipped:_Bad_file_number_Can't_locate_object_m
+ethod_"new"_via_package_"Razor2::Client::Agent"_(perhaps_you_forgot_to_load_"Razor2::Client::Agent"?)_at_/usr/local/lib/perl5/site_p
+erl/5.6.1/Mail/SpamAssassin/Dns.pm_line_374./did_0+0+1/
+
+Looking at Dns.pm doesn't really help me, and Razor2::Client::Agent appears 
+to be in the right place,
+in /usr/local/lib/perl5/site_perl/5.6.1/Razor2/Client.
+
+Ideas?
+
+...Chris
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

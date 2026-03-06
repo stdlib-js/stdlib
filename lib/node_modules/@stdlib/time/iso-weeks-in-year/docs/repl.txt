@@ -1,0 +1,31 @@
+
+{{alias}}( [year] )
+    Returns the number of ISO weeks in a year according to the Gregorian
+    calendar.
+
+    By default, the function returns the number of ISO weeks in the current year
+    (according to local time). To determine the number of ISO weeks for a
+    particular year, provide either a year or a `Date` object.
+
+    Parameters
+    ----------
+    year: integer (optional)
+        Year.
+
+    Returns
+    -------
+    out: integer
+        Number of ISO weeks in a year.
+
+    Examples
+    --------
+    > var num = {{alias}}()
+    <number>
+    > num = {{alias}}( 2015 )
+    53
+    > num = {{alias}}( 2017 )
+    52
+
+    See Also
+    --------
+

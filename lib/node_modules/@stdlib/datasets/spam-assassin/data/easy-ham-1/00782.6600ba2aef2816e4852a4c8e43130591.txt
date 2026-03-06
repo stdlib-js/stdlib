@@ -1,0 +1,116 @@
+From fork-admin@xent.com  Thu Sep 26 11:04:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6C03016F03
+	for <jm@localhost>; Thu, 26 Sep 2002 11:04:43 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 11:04:43 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8PMZ8C16870 for <jm@jmason.org>;
+    Wed, 25 Sep 2002 23:35:08 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BC05E29410C; Wed, 25 Sep 2002 15:31:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm3-11.sba1.netlojix.net
+    [207.71.218.155]) by xent.com (Postfix) with ESMTP id D9DAC294108 for
+    <fork@xent.com>; Wed, 25 Sep 2002 15:30:20 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id PAA24122;
+    Wed, 25 Sep 2002 15:40:12 -0700
+Message-Id: <200209252240.PAA24122@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: Kissinger
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 25 Sep 2002 15:40:12 -0700
+
+
+[can't think of how I'd be running
+afoul of the spam filters with this
+post, so here's the second try...]
+
+Kissinger's book _Does America Need
+a Foreign Policy?_ provides a few
+handy abstractions:
+
+> The ultimate dilemma of the statesman is to strike a balance between
+> values ["idealism"] and interests ["realism"] and, occasionally,
+> between peace and justice.
+
+Also, he views historical American
+approaches to foreign policy as a
+bundle of three fibers:
+
+Hamiltonian - We should only get
+  involved in foreign adventures
+  to preserve balances of power.
+
+Wilsonian - We should only get
+  involved in foreign adventures
+  to further democracy, etc.
+
+Jacksonian - We should never get
+  involved in foreign adventures.
+  Unless we're attacked.  Then we
+  go Rambo.
+
+He has tactfully left out the hard
+realists*; as for the rest I gather
+wilsonians play the idealists, and
+hamiltonians act where values and
+interests intersect, and jacksonians 
+act only when values and interests
+overlap.
+
+Kissinger himself seems to be a
+Hamiltonian; much of the book is
+about how he thinks we ought to
+be shaping the balance of power
+in various foreign regions.
+
+Maybe I've been too affected by
+Kant, but I can't see that such
+a strategy works unless one can
+count on a Bismarck runnning it:
+how lopsided does the US look if
+everyone tries to run a balance
+of power politics?
+
+- -Dave
+
+*
+> The road to empire leads to domestic decay because, in time, the claims
+> of omnipotence erode domestic restraints.  No empire has avoided the
+> road to Caesarism unless, like the British Empire, it devolved its
+> power before this process could develop.  In long-lasting empires,
+> every problem turns into a domestic issue [which should be handled
+> very differently from international ones] because the outside world
+> no longer provides a counterweight.  And as challenges grow more
+> diffuse and increasingly remote from the historic domestic base,
+> internal struggles become ever more bitter and in time violent.
+> A deliberate quest for hegemony is the surest way to destroy the
+> values that made the United States great.
+
+Kings and tyrants generically have
+followed the same power politics:
+garner popular support by keeping
+potential oligarchs down.  In other
+traditions, a king is a legitimate
+tyrant, and a tyrant an illegitimate
+king.  In the US, I'd hope that we,
+like Samuel, wouldn't naturally make
+such fine distinctions.
+
+

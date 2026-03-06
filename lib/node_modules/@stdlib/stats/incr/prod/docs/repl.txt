@@ -1,0 +1,38 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a product.
+
+    If provided a value, the accumulator function returns an updated product. If
+    not provided a value, the accumulator function returns the current product.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    For long running accumulations or accumulations of large numbers, care
+    should be taken to prevent overflow. Note, however, that overflow/underflow
+    may be transient, as the accumulator does not use a double-precision
+    floating-point number to store an accumulated product. Instead, the
+    accumulator splits an accumulated product into a normalized fraction and
+    exponent and updates each component separately. Doing so guards against a
+    loss in precision.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var v = accumulator()
+    null
+    > v = accumulator( 2.0 )
+    2.0
+    > v = accumulator( -5.0 )
+    -10.0
+    > v = accumulator()
+    -10.0
+
+    See Also
+    --------
+

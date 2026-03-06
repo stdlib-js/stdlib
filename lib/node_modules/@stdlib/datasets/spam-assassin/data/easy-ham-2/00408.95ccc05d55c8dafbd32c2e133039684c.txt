@@ -1,0 +1,50 @@
+From ilug-admin@linux.ie  Wed Aug 14 11:32:20 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 89B5243C34
+	for <jm@localhost>; Wed, 14 Aug 2002 06:32:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 11:32:20 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7EAUa410257 for
+    <jm-ilug@jmason.org>; Wed, 14 Aug 2002 11:30:36 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA00792; Wed, 14 Aug 2002 11:28:55 +0100
+Received: from mail.SiteLite-Dublin.local ([217.114.163.7]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA00762 for <ILUG@linux.ie>;
+    Wed, 14 Aug 2002 11:28:47 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [217.114.163.7] claimed to
+    be mail.SiteLite-Dublin.local
+Received: from ss-linux2 ([192.168.9.89]) by mail.SiteLite-Dublin.local
+    with Microsoft SMTPSVC(5.0.2195.5329); Wed, 14 Aug 2002 11:28:03 +0100
+Date: Wed, 14 Aug 2002 02:26:19 +0100
+From: Sorin Suciu <ssuciu@sitelite.com>
+To: ILUG@linux.ie
+Message-Id: <20020814022619.12ada9a3.ssuciu@sitelite.com>
+Organization: Sitelite Inc.
+X-Mailer: Sylpheed version 0.8.1 (GTK+ 1.2.10; i686-pc-linux-gnu)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Originalarrivaltime: 14 Aug 2002 10:28:03.0561 (UTC) FILETIME=[457D5590:01C2437D]
+Subject: [ILUG] Server Partitioning
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+Does anyone use partitioning on a Linux server? What is the recommended solution? UML? 
+Cheers,
+Sorin
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

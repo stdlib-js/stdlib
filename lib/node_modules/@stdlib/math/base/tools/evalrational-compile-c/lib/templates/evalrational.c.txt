@@ -1,0 +1,36 @@
+/**
+* Evaluates a rational function (i.e., the ratio of two polynomials described by the coefficients stored in \\(P\\) and \\(Q\\)).
+*
+* ## Notes
+*
+* -   Coefficients should be sorted in ascending degree.
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the rational function
+* @return     evaluated rational function
+*/
+static {{dtype}} {{fname}}( const {{dtype}} x ) {
+	{{dtype}} ax;
+	{{dtype}} ix;
+	{{dtype}} s1;
+	{{dtype}} s2;
+	if ( x == 0.0{{dtype_suffix}} ) {
+		return {{ratio}};
+	}
+	if ( x < 0.0{{dtype_suffix}} ) {
+		ax = -x;
+	} else {
+		ax = x;
+	}
+	if ( ax <= 1.0{{dtype_suffix}} ) {
+		s1 = {{P_ASCENDING}};
+		s2 = {{Q_ASCENDING}};
+	} else {
+		ix = 1.0{{dtype_suffix}} / x;
+		s1 = {{P_DESCENDING}};
+		s2 = {{Q_DESCENDING}};
+	}
+	return s1 / s2;
+}

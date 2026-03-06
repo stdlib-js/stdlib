@@ -1,0 +1,57 @@
+From fork-admin@xent.com  Wed Sep 11 19:42:20 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AB50A16F03
+	for <jm@localhost>; Wed, 11 Sep 2002 19:42:20 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 19:42:20 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8BIQeC26236 for <jm@jmason.org>;
+    Wed, 11 Sep 2002 19:26:43 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8A3AF294197; Wed, 11 Sep 2002 11:23:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id D715929409A for
+    <FoRK@xent.com>; Wed, 11 Sep 2002 11:22:08 -0700 (PDT)
+Received: (qmail 32002 invoked by uid 508); 11 Sep 2002 18:24:47 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (62.226.149.78) by
+    venus.phpwebhosting.com with SMTP; 11 Sep 2002 18:24:47 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g8BIOej25918; Wed, 11 Sep 2002 20:24:41
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Gary Lawrence Murphy <garym@canada.com>
+Cc: Udhay Shankar N <udhay@pobox.com>,
+	Adam Rifkin <adam@KnowNow.com>, <FoRK@xent.com>
+Subject: Re: storage bits
+In-Reply-To: <m2k7lsispi.fsf@maya.dyndns.org>
+Message-Id: <Pine.LNX.4.33.0209112020050.24146-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 11 Sep 2002 20:24:40 +0200 (CEST)
+
+On 11 Sep 2002, Gary Lawrence Murphy wrote:
+
+> So then why does my webhost _still_ only give me 200MB?
+
+Because ~10 krpm server SCSII doesn't follow the curve. Most rackspace is
+ridiculously expensive/unit, so people don't use low end EIDE hardware 
+there.
+
+

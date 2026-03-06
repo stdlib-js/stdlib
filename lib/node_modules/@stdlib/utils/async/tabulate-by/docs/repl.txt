@@ -1,0 +1,217 @@
+
+{{alias}}( collection, [options,] indicator, done )
+    Generates a frequency table according to an indicator function.
+
+    The table is an array of arrays where each sub-array corresponds to a unique
+    value in the input collection. Each sub-array is structured as follows:
+
+    - 0: unique value.
+    - 1: value count.
+    - 2: frequency percentage.
+
+    When invoked, the indicator function is provided a maximum of four
+    arguments:
+
+    - value: collection value.
+    - index: collection index.
+    - collection: the input collection.
+    - next: a callback to be invoked after processing a collection `value`.
+
+    The actual number of provided arguments depends on function length. If the
+    indicator function accepts two arguments, the indicator function is
+    provided:
+
+    - value
+    - next
+
+    If the indicator function accepts three arguments, the indicator function is
+    provided:
+
+    - value
+    - index
+    - next
+
+    For every other indicator function signature, the indicator function is
+    provided all four arguments.
+
+    The `next` callback takes two arguments:
+
+    - error: error argument.
+    - group: value group.
+
+    If an indicator function calls the `next` callback with a truthy `error`
+    argument, the function suspends execution and immediately calls the `done`
+    callback for subsequent `error` handling.
+
+    If provided an empty collection, the function calls the `done` callback with
+    an empty array as the second argument.
+
+    Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
+    wrap the `done` callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    The function does not support dynamic collection resizing.
+
+    The function does not skip `undefined` elements.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection over which to iterate. If provided an object, the
+        object must be array-like (excluding strings and functions).
+
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.series: boolean (optional)
+        Boolean indicating whether to process each collection element
+        sequentially. Default: false.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    indicator: Function
+        Indicator function specifying how to categorize a collection element.
+
+    done: Function
+        A callback invoked either upon processing all collection elements or
+        upon encountering an error.
+
+    Examples
+    --------
+    // Basic usage:
+    > function indicator( value, index, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, ( index%2 === 0 ) ? 'even': 'odd' );
+    ...     }
+    ... };
+    > function done( error, result ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( result );
+    ... };
+    > var arr = [ 3000, 2500, 1000, 750 ];
+    > {{alias}}( arr, indicator, done )
+    750
+    1000
+    2500
+    3000
+    [ [ 'odd', 2, 0.5 ], [ 'even', 2, 0.5 ] ]
+
+    // Limit number of concurrent invocations:
+    > function indicator( value, index, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, ( index%2 === 0 ) ? 'even' : 'odd' );
+    ...     }
+    ... };
+    > function done( error, result ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( result );
+    ... };
+    > var opts = { 'limit': 2 };
+    > var arr = [ 3000, 2500, 1000, 750 ];
+    > {{alias}}( arr, opts, indicator, done )
+    2500
+    3000
+    1000
+    750
+    [ [ 'odd', 2, 0.5 ], [ 'even', 2, 0.5 ] ]
+
+    // Process sequentially:
+    > function indicator( value, index, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, ( index%2 === 0 ) ? 'even' : 'odd' );
+    ...     }
+    ... };
+    > function done( error, result ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( result );
+    ... };
+    > var opts = { 'series': true };
+    > var arr = [ 3000, 2500, 1000, 750 ];
+    > {{alias}}( arr, opts, indicator, done )
+    3000
+    2500
+    1000
+    750
+    [ [ 'even', 2, 0.5 ], [ 'odd', 2, 0.5 ] ]
+
+
+{{alias}}.factory( [options,] indicator )
+    Returns a function which generates a frequency table according to an
+    indicator function.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.limit: integer (optional)
+        Maximum number of pending invocations. Default: Infinity.
+
+    options.series: boolean (optional)
+        Boolean indicating whether to process each collection element
+        sequentially. Default: false.
+
+    options.thisArg: any (optional)
+        Execution context.
+
+    indicator: Function
+        Indicator function specifying how to categorize a collection element.
+
+    Returns
+    -------
+    out: Function
+        A function which generates a frequency table according to an indicator
+        function.
+
+    Examples
+    --------
+    > function indicator( value, index, next ) {
+    ...     setTimeout( onTimeout, value );
+    ...     function onTimeout() {
+    ...         console.log( value );
+    ...         next( null, ( index%2 === 0 ) ? 'even' : 'odd' );
+    ...     }
+    ... };
+    > var opts = { 'series': true };
+    > var f = {{alias}}.factory( opts, indicator );
+    > function done( error, result ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( result );
+    ... };
+    > var arr = [ 3000, 2500, 1000, 750 ];
+    > f( arr, done )
+    3000
+    2500
+    1000
+    750
+    [ [ 'even', 2, 0.5 ], [ 'odd', 2, 0.5 ] ]
+    > arr = [ 2000, 1500, 1000, 750 ];
+    > f( arr, done )
+    2000
+    1500
+    1000
+    750
+    [ [ 'even', 2, 0.5 ], [ 'odd', 2, 0.5 ] ]
+
+    See Also
+    --------
+

@@ -1,0 +1,63 @@
+
+{{alias}}( x, λ )
+    Evaluates the natural logarithm of the probability density function (PDF)
+    for an exponential distribution with rate parameter `λ` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a negative value for `λ`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated logPDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.3, 4.0 )
+    ~0.186
+    > y = {{alias}}( 2.0, 0.7 )
+    ~-1.757
+    > y = {{alias}}( -1.0, 0.5 )
+    -Infinity
+    > y = {{alias}}( 0, NaN )
+    NaN
+    > y = {{alias}}( NaN, 2.0 )
+    NaN
+
+    // Negative rate:
+    > y = {{alias}}( 2.0, -1.0 )
+    NaN
+
+{{alias}}.factory( λ )
+    Returns a function for evaluating the natural logarithm of the probability
+    density function (PDF) for an exponential distribution with rate parameter
+    `λ`.
+
+    Parameters
+    ----------
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    logpdf: Function
+        Logarithm of probability density function (PDF).
+
+    Examples
+    --------
+    > var mylogpdf = {{alias}}.factory( 0.5 );
+    > var y = mylogpdf( 3.0 )
+    ~-2.193
+
+    See Also
+    --------
+

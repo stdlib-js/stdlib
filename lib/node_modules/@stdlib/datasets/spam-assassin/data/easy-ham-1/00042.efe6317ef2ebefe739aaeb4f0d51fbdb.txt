@@ -1,0 +1,58 @@
+From fork-admin@xent.com  Fri Aug 23 11:08:55 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D741B47C6F
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:06:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:06:55 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7N1jTZ04367 for <zzzz@spamassassin.taint.org>;
+    Fri, 23 Aug 2002 02:45:29 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6A11E2940F5; Thu, 22 Aug 2002 18:43:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp03.mrf.mail.rcn.net (smtp03.mrf.mail.rcn.net
+    [207.172.4.62]) by xent.com (Postfix) with ESMTP id 2D0CE294099 for
+    <fork@xent.com>; Thu, 22 Aug 2002 18:42:41 -0700 (PDT)
+X-Info: This message was accepted for relay by smtp03.mrf.mail.rcn.net as
+    the sender used SMTP authentication
+X-Trace: UmFuZG9tSVZFFzJmsb6CFx8j2lnFk529F6pHVq8zxRebZ/rkY9nOITB+/+3fN03H5gv+GHxViF4=
+Received: from eb-174121.od.nih.gov ([156.40.174.121]
+    helo=TOSHIBA-L8QYR7M) by smtp03.mrf.mail.rcn.net with asmtp (Exim 3.35 #6)
+    id 17i3Uv-0007Lj-00 for fork@xent.com; Thu, 22 Aug 2002 21:44:25 -0400
+From: "John Evdemon" <jevdemon@acm.org>
+To: fork@spamassassin.taint.org
+MIME-Version: 1.0
+Subject: Re: Entrepreneurs
+Message-Id: <3D655B37.2901.1DB12A@localhost>
+Priority: normal
+In-Reply-To: <20020823005705.D63AEC44E@argote.ch>
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7BIT
+Content-Description: Mail message body
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 22 Aug 2002 21:44:23 -0400
+
+On 23 Aug 2002 at 2:57, Robert Harley wrote:
+
+> It's an amusing anecdote, I don't know if it's true or not,
+> but certainly nothing here supports the authoritative
+> sounding conclusion "Status: False".
+
+I actually thought it was pretty funny and quite accurate.  Who cares if the spinmeisters are denying it?
+http://xent.com/mailman/listinfo/fork
+

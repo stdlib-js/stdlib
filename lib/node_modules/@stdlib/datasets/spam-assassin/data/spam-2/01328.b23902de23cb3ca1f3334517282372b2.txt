@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Thu Aug  8 14:37:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A502F4420F
+	for <jm@localhost>; Thu,  8 Aug 2002 08:40:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:40:47 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CRh203841 for
+    <jm@jmason.org>; Thu, 8 Aug 2002 13:27:43 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id DAA27034 for <jm@jmason.org>; Thu, 8 Aug 2002 03:24:49 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8CEFE2940B8; Wed,  7 Aug 2002 19:22:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from yahoo.com (unknown [202.63.165.35]) by xent.com (Postfix)
+    with SMTP id 261F72940B0 for <fork@xent.com>; Wed,  7 Aug 2002 19:20:59
+    -0700 (PDT)
+Received: from unknown (HELO f64.law4.hottestmale.com) (177.150.82.216) by
+    smtp-server1.cflrr.com with local; Wed, 07 Aug 0102 18:21:34 -1100
+Received: from n7.groups.huyahoo.com ([175.192.70.132]) by
+    anther.webhostingtotalk.com with QMQP; 07 Aug 0102 07:17:57 +1000
+Received: from rly-xw01.otpalo.com ([187.173.171.187]) by
+    anther.webhostingtotalk.com with smtp; 07 Aug 0102 17:14:20 +0600
+Received: from [80.249.131.100] by smtp-server.tampabayr.com with asmtp;
+    07 Aug 0102 23:10:43 +0300
+Reply-To: <ronald0564c62@yahoo.com>
+Message-Id: <016b21e80d5a$4541e5a5$2aa76de7@ccitih>
+From: <ronald0564c62@yahoo.com>
+To: <fork@spamassassin.taint.org>
+Subject: New Internet Service Provider
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2615.200
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 07 Aug 0102 16:11:22 +1000
+Content-Transfer-Encoding: 8bit
+
+Hello:
+
+Are you satisfied with your ISP? Do you have 5 email addresses for you and your family? Do you have 5 MB of personal webspace? How truly unlimited is your access time?
+
+Our internet service provides you with all of that at a low monthly fee of just $14.95. You get 5 email addresses, 5MB of personal webspace and 350 hours of access time per month (virtually unlimited). That is more than most people will use, do the math.
+
+We have local numbers for many areas.
+For further information please email me at codjig@canada.com and place "Request Information in the subject line. 
+If you do not wish any more mailings please send a blank email to codjig@canada.com.
+Regards,
+Steve Murphy
+
+7977JrzS7-887RrsR4903rvQG5-779Sctl3539oIeJ0-966Grtz8l49
+http://xent.com/mailman/listinfo/fork
+
+

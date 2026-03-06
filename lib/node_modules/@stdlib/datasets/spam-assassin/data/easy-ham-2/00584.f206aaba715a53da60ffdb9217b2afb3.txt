@@ -1,0 +1,154 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug  7 14:22:19 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 54E69440CD
+	for <jm@localhost>; Wed,  7 Aug 2002 09:22:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 14:22:12 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g77DLnk31134 for <jm-razor@jmason.org>; Wed, 7 Aug 2002 14:21:50 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cQfT-00018O-00; Wed,
+    07 Aug 2002 06:16:03 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17cQfI-0005zp-00 for <razor-users@lists.sourceforge.net>; Wed,
+    07 Aug 2002 06:15:52 -0700
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Subject: RE: [Razor-users] What's wrong with the Razor servers now?
+Message-Id: <D79A56AD131896448D0860DEE07CBE1FA7E0@med-core07.med.wayne.edu>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [Razor-users] What's wrong with the Razor servers now?
+Thread-Index: AcI95uZYty6JbCTTTZ2zyQUcXNqGpgAK8pNwAABpySA=
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: <mail@vipul.net>
+Cc: "ML-razor-users" <razor-users@example.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 7 Aug 2002 09:15:45 -0400
+Date: Wed, 7 Aug 2002 09:15:45 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g77DLnk31134
+
+The problem is clearly because the info isn't syncing between the
+servers.  If I run the check against honor which is where it was
+reported then the check is positive.  If I run the check against apt or
+fire, it's negative.
+
+-----Original Message-----
+From: Rose, Bobby 
+Sent: Wednesday, August 07, 2002 9:05 AM
+To: mail@vipul.net
+Cc: ML-razor-users
+Subject: RE: [Razor-users] What's wrong with the Razor servers now?
+
+
+It's still doing it.  I reported a message as spam 10 minutes ago and
+the check keeps coming back false.  What's funny is that message that
+I'm testing with it the sample-spam.txt message from SpamAssassin and I
+know it's been reported before.
+
+-----Original Message-----
+From: Vipul Ved Prakash [mailto:mail@vipul.net] 
+Sent: Wednesday, August 07, 2002 3:45 AM
+To: Rose, Bobby
+Cc: ML-razor-users
+Subject: Re: [Razor-users] What's wrong with the Razor servers now?
+
+
+Hi,
+
+We were rolling out changes to TeS and catalogue servers over the last
+two days. Any glitches you might have experienced would have been due to
+the upgrades. The upgrades are now complete, and things are back to
+normal. Several new features in TeS will provide better accuracy,
+specially with regards to false-positives.
+
+cheers,
+vipul.
+
+On Tue, Aug 06, 2002 at 06:54:04PM -0400, Rose, Bobby wrote:
+> I'm still seeing this.  It reports to honor.cloudmark.com but checks
+> against apt.cloudmark.com.  What is the sync delay between these 
+> boxes?
+> 
+> -----Original Message-----
+> From: Rose, Bobby
+> Sent: Monday, August 05, 2002 2:05 PM
+> To: ML-razor-users
+> Subject: [Razor-users] What's wrong with the Razor servers now?
+> 
+> 
+> I noticed a low count of razor'd spam messages. So after digging, if I
+
+> razor-report a message the diags say that it was accepted but if I
+> turn around and run a check on the exact same message that was 
+> reported, then it doesn't find the sig and as such isn't spam.
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net 
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf _______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

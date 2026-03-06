@@ -1,0 +1,53 @@
+From aapaine6088j86@yahoo.com  Mon Sep  2 16:27:41 2002
+Return-Path: <aapaine6088j86@yahoo.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 6E9B343F9B
+	for <zzzz@localhost>; Mon,  2 Sep 2002 11:26:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 16:26:25 +0100 (IST)
+Received: from yahoo.com (3DCE10C0.osaka.meta.ne.jp [61.206.16.192]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7VGB2Z07131 for
+    <webmaster@efi.ie>; Sat, 31 Aug 2002 17:11:05 +0100
+Received: from [77.142.51.6] by rly-yk04.aolmd.com with NNFMP;
+    Sat, 31 Aug 2002 21:12:24 -0000
+Received: from [198.164.159.177] by rly-xw01.otpalo.com with local;
+    Sat, 31 Aug 2002 21:08:12 +1000
+Received: from [16.166.85.186] by rly-yk04.aolmd.com with SMTP;
+    Sun, 01 Sep 2002 07:04:00 -0900
+Received: from [150.212.52.22] by mta21.bigpong.com with esmtp;
+    31 Aug 2002 21:59:48 +1100
+Received: from unknown (100.226.45.87) by web.mail.halfeye.com with SMTP;
+    01 Sep 2002 08:55:36 -0200
+Reply-To: <aapaine6088j86@yahoo.com>
+Message-Id: <015e47e51e6e$3754a4d7$2da85be8@rymusn>
+From: <aapaine6088j86@yahoo.com>
+To: Gat.cash.out.@dogma.slashnull.org
+Subject: ** You're approved. **
+Date: Sun, 01 Sep 2002 08:00:47 -0100
+MIME-Version: 1.0
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: The Bat! (v1.52f) Business
+Importance: Normal
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_00B4_26B74D8A.B2187A61"
+
+------=_NextPart_000_00B4_26B74D8A.B2187A61
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: base64
+
+
+PGh0bWw+DQo8Ym9keT4NCjxmb250IGNvbG9yPSJmZmZmZmYiPnNreTwvZm9u
+dD4NCjxwPllvdXIgaG9tZSByZWZpbmFuY2UgbG9hbiBpcyBhcHByb3ZlZCE8
+YnI+PC9wPjxicj4NCjxwPlRvIGdldCB5b3VyIGFwcHJvdmVkIGFtb3VudCA8
+YSBocmVmPSJodHRwOi8vd3d3Lm1vcnRnYWdlcG93ZXIzLmNvbS9BcHByb3Zl
+ZC5odG0iPmdvDQpoZXJlPC9hPi48L3A+DQo8YnI+PGJyPjxicj48YnI+PGJy
+Pjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+
+PGJyPjxicj48YnI+DQo8cD5UbyBiZSBleGNsdWRlZCBmcm9tIGZ1cnRoZXIg
+bm90aWNlcyA8YSBocmVmPSJodHRwOi8vd3d3Lm1vcnRnYWdlcG93ZXIzLmNv
+bS9yZW1vdmUuaHRtbCI+Z28NCmhlcmU8L2E+LjwvcD4NCjxmb250IGNvbG9y
+PSJmZmZmZmYiPnNreTwvZm9udD4NCjwvYm9keT4NCjxmb250IGNvbG9yPSJm
+ZmZmZmYiPjFnYXRlDQo8L2h0bWw+DQo4ODQ0Z2F2SjMtNDA5cGdkQTg4NjNr
+YkZJMC0wMDRBTkZjMDM2NmwzNg==
+

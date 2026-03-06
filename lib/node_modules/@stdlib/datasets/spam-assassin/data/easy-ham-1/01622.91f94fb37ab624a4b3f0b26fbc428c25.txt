@@ -1,0 +1,73 @@
+From secprog-return-482-jm=jmason.org@securityfocus.com  Fri Sep  6 11:36:07 2002
+Return-Path: <secprog-return-482-yyyy=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2A63416F17
+	for <jm@localhost>; Fri,  6 Sep 2002 11:35:13 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:35:13 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869t8C29585 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:55:14 +0100
+Received: from outgoing.securityfocus.com (outgoing3.securityfocus.com
+    [66.38.151.27]) by webnote.net (8.9.3/8.9.3) with ESMTP id WAA18542 for
+    <jm@jmason.org>; Thu, 5 Sep 2002 22:16:25 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    3CD36A311C; Thu,  5 Sep 2002 10:27:05 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 23638 invoked from network); 4 Sep 2002 21:53:38 -0000
+Date: Wed, 04 Sep 2002 15:10:47 -0700
+From: Jef Feltman <feltman@pacbell.net>
+Subject: RE: Secure Sofware Key
+In-Reply-To: <20020904151603.B1300@sgl.crestech.ca>
+To: secprog@securityfocus.com
+Reply-To: feltman@pacbell.net
+Message-Id: <CBEOLCMMAGMDFDAKHGIBMEOOCLAA.feltman@pacbell.net>
+MIME-Version: 1.0
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Importance: Normal
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+
+the only way to insure a safe key is to use all the storage space in the
+universe. too big to decrypt.
+
+my point is there will never be a "safe" key. what I would consider is how
+long does the data need to be protected. if you need to protect the data for
+longer than 6 months, do not release it to the public. if you are trying to
+stop the general public (your customer) from coping the data then use what
+is available on the market. If you want to stop the bootleggers do not
+release the data to the public.
+
+I have never seen a lock that could not be unlocked. the act of unlocking
+the key gives away it's secret.
+
+the tougher the lock the more pissed-off your customers will be. take MS-XP
+for example. only the home user is forced to register. think of the
+nightmare if business had to register every copy. how many times have we
+needed to reinstall our laptop OS? notice the amount of Mac's sold after the
+XP release. these where mostly home users that converted to Mac OS.
+
+the new Audio CD's that have digital copy protection so not play on my
+computer. does this stop me from copying the CD? no. however it does make me
+return them and get my money back.
+
+the more popular the software the more likely it is to be cracked.
+
+jef
+
+
+

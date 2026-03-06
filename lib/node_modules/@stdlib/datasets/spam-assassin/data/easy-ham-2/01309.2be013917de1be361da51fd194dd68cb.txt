@@ -1,0 +1,98 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Jul 24 02:28:38 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3F5AC440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 21:28:37 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 02:28:37 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6O1Lm409217 for <jm-sa@jmason.org>; Wed, 24 Jul 2002 02:21:48 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XAos-0008Pv-00; Tue,
+    23 Jul 2002 18:20:02 -0700
+Received: from joseki.proulx.com ([216.17.153.58]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17XAoU-0005nA-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Tue, 23 Jul 2002 18:19:38 -0700
+Received: from misery.proulx.com (misery.proulx.com [192.168.1.108]) by
+    joseki.proulx.com (Postfix) with ESMTP id E780814B29 for
+    <spamassassin-talk@lists.sourceforge.net>; Tue, 23 Jul 2002 19:19:27 -0600
+    (MDT)
+Received: by misery.proulx.com (Postfix, from userid 1000) id B1928A8514;
+    Tue, 23 Jul 2002 19:19:27 -0600 (MDT)
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] Microsoft developer newsletter tagged as spam
+Message-Id: <20020724011927.GA5146@misery.proulx.com>
+Mail-Followup-To: spamassassin-talk@example.sourceforge.net
+References: <Pine.LNX.4.44.0207231035460.15938-100000@aztec.zanshin.com>
+    <20020723202227.L92608-100000@moon.campus.luth.se>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="PEIAKu/WMn1b1Hv9"
+Content-Disposition: inline
+In-Reply-To: <20020723202227.L92608-100000@moon.campus.luth.se>
+User-Agent: Mutt/1.4i
+From: bob@proulx.com (Bob Proulx)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Tue, 23 Jul 2002 19:19:27 -0600
+Date: Tue, 23 Jul 2002 19:19:27 -0600
+
+
+--PEIAKu/WMn1b1Hv9
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+> PS I know my English isn't good, but... "negative score added", can
+> you really say that? Adding something negative... hmmm...
+
+Yes, that is perfectly legitimate.  It is a math / accounting thing.
+You get a paycheck for $100.  You get a bill for $20.  You add them
+up.  Some of the additions are negitive debit amounts.  My bank
+statement always has a long list of + items and - items.  If I can
+keep the + items more than the - items I am doing good.
+
+Bob
+
+
+--PEIAKu/WMn1b1Hv9
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9PgCf0pRcO8E2ULYRAtnpAJ4j3rke5AmfV6FuJ0rvPvwwkEPWKwCff1CF
+1VPYcaD2pk78qQXEfPMlRqw=
+=Qa5S
+-----END PGP SIGNATURE-----
+
+--PEIAKu/WMn1b1Hv9--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

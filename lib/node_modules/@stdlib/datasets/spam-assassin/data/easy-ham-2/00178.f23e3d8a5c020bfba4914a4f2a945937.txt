@@ -1,0 +1,90 @@
+From ilug-admin@linux.ie  Wed Jul 31 15:15:10 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7F5AC440C8
+	for <jm@localhost>; Wed, 31 Jul 2002 10:15:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 15:15:09 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VEFx227713 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 15:15:59 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA08305; Wed, 31 Jul 2002 15:13:30 +0100
+Received: from claymore.diva.ie (diva.ie [195.218.115.17] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id PAA08272 for
+    <ilug@linux.ie>; Wed, 31 Jul 2002 15:13:24 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host diva.ie [195.218.115.17]
+    (may be forged) claimed to be claymore.diva.ie
+Received: from localhost (claymore [195.218.115.17]) by claymore.diva.ie
+    (8.9.3/8.9.3) with ESMTP id PAA24416 for <ilug@linux.ie>; Wed,
+    31 Jul 2002 15:13:23 +0100
+Received: from 194.125.174.143 ( [194.125.174.143]) as user
+    rcunniff@mail.boxhost.net by webmail.gameshrine.com with HTTP;
+    Wed, 31 Jul 2002 15:13:23 +0100
+Message-Id: <1028124803.3d47f0834c261@webmail.gameshrine.com>
+Date: Wed, 31 Jul 2002 15:13:23 +0100
+From: Ronan Cunniffe <ronan@cunniffe.net>
+To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] Piping to multiple processes (which might die)?
+References: <200207310157.g6V1vLX04925@linux.local>
+In-Reply-To: <200207310157.g6V1vLX04925@linux.local>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+User-Agent: Internet Messaging Program (IMP) 3.0
+X-Originating-Ip: 194.125.174.143
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Brian Foster <blf@utvinternet.ie>:
+>   | I did the following:
+>   | 
+>  1|   $ mkfifo f1
+>  2|   $ lav2yuv capture.avi | yuvdenoise | tee f1 | mpeg2enc blah blah &
+>  3|   $ cat f1 | mpeg2enc different blah blah
+>   | 
+>   | And hey! It works!  Until somebody dies!  Yippe... oh.  [ ... ]
+> 
+>  ( a winner of the Useless Use of cat(1) Award:  you don't need
+>   the `cat f1 |' in the 3rd line, a simple `<f1' will suffice. )
+Grrr... I've had that bad habit since MS-DOS 3.2
+
+>  upshot is a POSIX.2 `tee' would probably spit out an error
+>  message if one of the `mpeg2enc's dies, but the remaining
+>  one would continue to be fed data and hence run until it
+>  either completes or dies for reasons of its own.  which is
+>  exactly what you want!   so what is happening??
+
+<contrition>
+  Oops.
+</contrition>
+
+Um, my test was to tee to a fifo I didn't read from... resulting in the other
+reader hanging around forever.... not realising that never-opened-for-reading
+and opened-and-later-closed might be different.  Sensible behaviour has now been
+observed.
+ 
+>  incidently, if your shell and system both support process
+>  redirection, you could do the above as a one-liner.  syntax
+>  varies depending on the shell, but in bash(1) and ksh(1):
+> 
+>      lav2yuv capture.avi | yuvdenoise | \
+>          tee >(mpeg2enc different blah blah) | mpeg2enc blah blah
+mpeg2enc generates stats during the run, so I give each one an xterm.
+
+Thanks,
+Ronan
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

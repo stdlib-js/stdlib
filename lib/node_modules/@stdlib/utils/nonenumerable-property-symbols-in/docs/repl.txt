@@ -1,0 +1,37 @@
+
+{{alias}}( value )
+    Returns an array of an object's own and inherited non-enumerable symbol
+    properties.
+
+    Property order is not guaranteed, as object property enumeration is not
+    specified according to the ECMAScript specification. In practice, however,
+    most engines use insertion order to sort an object's properties, thus
+    allowing for deterministic extraction.
+
+    If provided `null` or `undefined`, the function returns an empty array.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    Returns
+    -------
+    symbols: Array
+        List of an object's own and inherited non-enumerable symbol properties.
+
+    Examples
+    --------
+    > var obj = {};
+    > var desc = {};
+    > desc.configurable = false;
+    > desc.enumerable = false;
+    > desc.writable = true;
+    > desc.value = 'boop';
+    > var sym = ( {{alias:@stdlib/symbol/ctor}} ) ? {{alias:@stdlib/symbol/ctor}}( 'beep' ) : 'beep';
+    > {{alias:@stdlib/utils/define-property}}( obj, sym, desc );
+    > var symbols = {{alias}}( obj )
+
+    See Also
+    --------
+

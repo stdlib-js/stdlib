@@ -1,0 +1,30 @@
+
+{{alias}}( x )
+    Computes the hyperbolic tangent of a double-precision floating-point number.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Hyperbolic tangent.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    0.0
+    > var y = {{alias}}( -0.0 )
+    -0.0
+    > y = {{alias}}( 2.0 )
+    ~0.964
+    > y = {{alias}}( -2.0 )
+    ~-0.964
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

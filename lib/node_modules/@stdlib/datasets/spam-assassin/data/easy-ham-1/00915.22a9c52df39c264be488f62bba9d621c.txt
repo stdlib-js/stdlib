@@ -1,0 +1,59 @@
+From fork-admin@xent.com  Fri Aug 23 11:08:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CA27244171
+	for <jm@localhost>; Fri, 23 Aug 2002 06:06:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:06:45 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7MJHVZ21324 for <jm@jmason.org>;
+    Thu, 22 Aug 2002 20:17:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B6BE92940DE; Thu, 22 Aug 2002 12:15:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barrera.org (unknown [207.5.62.130]) by xent.com (Postfix)
+    with ESMTP id 8BCBA294099 for <fork@xent.com>; Thu, 22 Aug 2002 12:14:38
+    -0700 (PDT)
+Received: from  (127.0.0.1 [127.0.0.1]) by MailEnable Inbound Mail Agent
+    with ESMTP; Thu, 22 Aug 2002 19:16:04 -08:00
+Message-Id: <3D653874.8010204@barrera.org>
+From: "Joseph S. Barrera III" <joe@barrera.org>
+Organization: Wings over the World
+User-Agent: Mutt 5.00.2919.6900 DM (Nigerian Scammer Special Edition)
+X-Accept-Language: en-us, en, ja
+MIME-Version: 1.0
+To: Chris Haun <chris@noskillz.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: lifegem
+References: <Pine.LNX.4.44.0208211526350.675-100000@isolnetsux.techmonkeys.net>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 22 Aug 2002 12:16:04 -0700
+
+Chris Haun wrote:
+> A LifeGem is a certified, high quality diamond created from the carbon of 
+> your loved one as a memorial to their unique and wonderful life.
+
+Why wait until you're dead? I'm sure there's enough carbon in
+the fat from your typical liposuction job to make a decent diamond.
+
+- Joe
+
+
+
+http://xent.com/mailman/listinfo/fork
+

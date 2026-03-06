@@ -1,0 +1,299 @@
+From owner-worldwidewords@LISTSERV.LINGUISTLIST.ORG  Mon Jul 22 17:37:14 2002
+Return-Path: <owner-worldwidewords@LISTSERV.LINGUISTLIST.ORG>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 02069440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 12:37:10 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 17:37:10 +0100 (IST)
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6K43mJ07126 for
+    <jm@jmason.org>; Sat, 20 Jul 2002 05:03:48 +0100
+Received: from listserv.linguistlist.org (listserv.linguistlist.org
+    [164.76.102.107]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with SMTP
+    id g6K43jp02682 for <jm@NETNOTEINC.COM>; Sat, 20 Jul 2002 05:03:46 +0100
+Received: (qmail 28081 invoked from network); 20 Jul 2002 04:01:21 -0000
+Received: from listserv.linguistlist.org (HELO listserv) (164.76.102.107)
+    by listserv.linguistlist.org with SMTP; 20 Jul 2002 04:01:21 -0000
+Received: from LISTSERV.LINGUISTLIST.ORG by LISTSERV.LINGUISTLIST.ORG
+    (LISTSERV-TCP/IP release 1.8d) with spool id 432422 for
+    WORLDWIDEWORDS@LISTSERV.LINGUISTLIST.ORG; Sat, 20 Jul 2002 00:00:46 -0400
+Approved-BY: DoNotUse@WORLDWIDEWORDS.ORG
+Delivered-To: worldwidewords@listserv.linguistlist.org
+Received: (qmail 18243 invoked from network); 19 Jul 2002 18:33:02 -0000
+Received: from pc-80-192-8-147-az.blueyonder.co.uk (HELO dhcp-38-22)
+    (80.192.8.147) by listserv.linguistlist.org with SMTP; 19 Jul 2002
+    18:33:02 -0000
+Received: from prospero (prospero.tempest.lan [192.168.14.10]) by
+    dhcp-38-22 (8.11.6/8.11.6) with ESMTP id g6JIX0f01800 for
+    <worldwidewords@listserv.linguistlist.org>; Fri, 19 Jul 2002 19:33:01
+    +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7BIT
+Priority: normal
+X-Mailer: Pegasus Mail for Win32 (v3.12c)
+Message-Id: <3D38696A.4471.323C24@localhost>
+Date: Fri, 19 Jul 2002 19:32:58 +0100
+Reply-To: DoNotUse@WORLDWIDEWORDS.ORG
+Sender: World Wide Words <worldwidewords@LISTSERV.LINGUISTLIST.ORG>
+From: Michael Quinion <DoNotUse@WORLDWIDEWORDS.ORG>
+Organization: World Wide Words
+Subject: World Wide Words -- 20 Jul 02
+To: WORLDWIDEWORDS@LISTSERV.LINGUISTLIST.ORG
+
+WORLD WIDE WORDS           ISSUE 296          Saturday 20 July 2002
+-------------------------------------------------------------------
+Sent each Saturday to 15,000+ subscribers in at least 119 countries
+Editor: Michael Quinion, Thornbury, Bristol, UK      ISSN 1470-1448
+<http://www.worldwidewords.org>      <TheEditor@worldwidewords.org>
+-------------------------------------------------------------------
+ IF YOU RESPOND TO THIS MAILING, REMEMBER TO CHANGE THE OUTGOING
+   ADDRESS TO ONE OF THOSE IN THE 'CONTACT ADDRESSES' SECTION.
+
+
+Contents
+-------------------------------------------------------------------
+1. Turns of Phrase: Beanpole family.
+2. Weird Words: Jobbernowl.
+3. Beyond Words.
+4. Q&A: Chip off the old block; Bells and whistles; Mortarboard.
+5. Endnote.
+6. Subscription commands.
+7. Contact addresses.
+
+
+1. Turns of Phrase: Beanpole family
+-------------------------------------------------------------------
+Historically, families have usually had more children than parents,
+resulting in family trees that looked like pyramids. However, in
+recent years, especially in countries like Britain and the US, the
+number of children per generation has steadily gone down, while
+life span has increased. This has led to a shape of family tree
+that some researchers have likened to a beanpole - tall and thin,
+with few people in each generation. The term "beanpole family" has
+been around in the academic literature at least since 1987, but it
+rarely appears elsewhere. A recent British report has brought it to
+wider public notice, at least in the UK. Some researchers find it
+too slangy and prefer the jargon term "verticalised" to describe
+such families. Whatever term you prefer, specialists are sure that
+the demographic shift is having a big effect on personal
+relationships within the family and (for example) the role of
+grandparents.
+
+The rising divorce rate partly explains the growth of the
+'beanpole' family. With almost one in two marriages ending in
+divorce, many adults have at least two families, each with a single
+child.
+                                             ["Observer", May 2002]
+
+Noting the rising number of so-called 'beanpole' families in
+Britain (families with only one child), the report warns that a
+child without siblings 'is starved of the companionship of family
+members of their own age ... [leading to] greater social isolation,
+with teenagers adopting a more selfish attitude to life'.
+                                            ["Guardian", June 2002]
+
+
+2. Weird Words: Jobbernowl
+-------------------------------------------------------------------
+A stupid person, a blockhead.
+
+Unfortunately, this useful and effective insult has rather dropped
+out of use in these mealy-mouthed times. The last excursion for it
+that I can find is in the classic W C Fields film "The Bank Dick"
+of 1940, in which the word occurs in a variant form in the line:
+"Surely, don't be a luddie-duddie, don't be a moon-calf, don't be a
+jabbernow, you're not those, are you?". Before that, it turns up in
+one of the novels of Hall Caine in 1890, but even by then it seems
+to have been rather rare.
+
+It's from the old French "jobard", from "jobe", silly. That word
+was then added to "noll", the top or crown of the head, the noddle.
+The first sense was of a block-like or stupid-looking head, but was
+soon extended to refer to the quality of the mind within.
+"Jobbernowlism" is the condition or state of being a "jobbernowl",
+or an act or remark that is especially stupid.
+
+Careful how you use it: the recipient might be a subscriber!
+
+
+3. Beyond Words
+-------------------------------------------------------------------
+I've been away at a heritage conference in Colchester these past
+few days. On my way back, my eye was caught by this warning sign
+posted above some steps at the local railway station:
+
+   Caution
+   Do not run on the stairs
+   Use the hand rail
+
+
+4. Q&A
+-------------------------------------------------------------------
+Q. For my job I have to read American magazines concerning consumer
+electronics, home systems, burglar alarms, etc. I very often come
+across the expression "bells and whistles", which seem to relate to
+equipment, accessories or features that are offered to the customer
+as plusses but are not really indispensable for the device to work.
+Is that right? And where does that funny phrase come from? [Herve
+Castelain, France]
+
+Q. You're right about the meaning of this phrase, which refers to
+gimmicks - non-essential but often engaging features added to a
+piece of technical equipment or a computer program to make it seem
+more superficially attractive without enhancing its main function.
+
+The phrase is actually quite modern and may be a product of the
+American military. At least, one of its earliest appearances was in
+an article in "Atlantic" in October 1982, which said it was
+"Pentagon slang for extravagant frills". There's some evidence that
+the term has actually been around since the 1960s, but the early
+evidence is sparse.
+
+Where it comes from is still a matter of learned debate. A literal
+sense of the phrase appeared around the middle of the nineteenth
+century, referring to streetcars, railways and steamships. Before
+modern electronics, there were really only two ways to make a loud
+warning noise - you either rang a bell or tooted a whistle. Steam
+made the latter a real power in the land (anybody who has heard the
+noisy out-of-tune calliope on the steamboat Natchez at New Orleans
+will agree about its power, though less so about its glory). And at
+one time "clang, clang, clang went the trolley" in large numbers of
+American cities.
+
+At least some early US railroad locomotives had both bells and
+whistles, as this extract from an article in "Appleton's Journal"
+of 1876 shows:
+
+  You look up at an angle of sixty degrees and see sweeping
+  along the edge of a precipice, two-thirds up the rocky
+  height, a train of red-and-yellow railway-cars, drawn by
+  two wood-burning engines, the sound of whose bells and
+  whistles seems like the small diversions of very little
+  children, so diminished are they by the distance.
+
+Could it be that to have both bells and whistles was thought
+excessive, a case of belt and braces, an unnecessary feature, a
+frill?
+
+Possibly. But it's more probable the slang sense of the term comes
+from that close musical relative of the calliope, the theatre
+organ. Extraordinary instruments such as the Mighty Wurlitzer
+augmented their basic repertoire by all sorts of sound effects to
+help the organist accompany silent films, among them car horns,
+sirens, and bird whistles. These effects were called toys, and
+organs often had "toy counters" with 20 or more noisemakers on
+them, including various bells and whistles. In the 1950s, decades
+after the talkies came in, but while theatre organs were still
+common in big movie houses, these fun features must have been
+considered no longer essential to the function of the organ but
+mere fripperies, inessential add-ons.
+
+It's possible the slang sense grew out of that. It got taken up
+especially by the computing industry, perhaps because opportunities
+to add them are so great.
+
+                        -----------
+
+Q. The designation of "robes" for academic dress clearly comes from
+its origin with the clergy in the Middle Ages. But what about
+"mortarboards"? The best I could find was its origin in the 12th or
+13th century clergy cap, but that was not square-shaped. Does
+"mortarboard" refer to the guilds or is its origin more ancient?
+
+A. The academic cap often called a "mortarboard" is quite ancient,
+but that word for it only dates from the middle of the nineteenth
+century (a less slangy way to identify it is to call it a
+"square"). The literal mortar board is the wooden plate, usually
+with a handle underneath, on which bricklayers carry small amounts
+of mortar. A similar tool is used by plasterers, but they usually
+call it a hawk.
+
+What seems to have happened is that the similarity in shape between
+the brickie's board and the academic cap led some wag, probably at
+Oxford University, to apply the name of the one to the other. Our
+first recorded use is in a book of 1853-6, "The Adventures of Mr.
+Verdant Green, an Oxford Freshman" by a clergyman named Edward
+Bradley, who wrote under the pen name of Cuthbert Bede (the names
+of the two patron saints of Durham, where he went to school).
+Verdant Green is a sort of undergraduate Pickwick and the book
+recounts his adventures. This magisterial reprimand by a don
+appears after one such escapade: "I will overlook your offence in
+assuming that portion of the academical attire, to which you gave
+the offensive epithet of 'mortar-board'; more especially, as you
+acted at the suggestion and bidding of those who ought to have
+known better".
+
+After a slow start, the book became a huge success, selling more
+than 200,000 copies in the next 20 years. Whether Mr Bradley
+invented the slang term we may never know, but his book certainly
+popularised it.
+
+                        -----------
+
+Q. I got into a discussion about "chip off the old block" with
+friends, and we are wondering if it had to do with sculpting,
+jewelry making, woodworking, or none of the above. What does this
+term mean, and where did it come from? [Vijay Renganathan]
+
+A. The associations are with carpentry, and the block is definitely
+made of wood.
+
+The first form of the expression was "chip of the same block",
+meaning that a person or thing was made of the same stuff as
+somebody or something else, so from the same source or parentage.
+An early example is in a sermon by Dr Robert Sanderson (at one time
+Bishop of Lincoln), dated 1637: "Am not I a child of the same Adam
+... a chip of the same block, with him?".
+
+Later that century, another form is recorded "a chip of the old
+block", which meant that somebody was the spitting image of his
+father, or continued some family characteristic. At some point,
+probably late in the nineteenth century, this was modified to "a
+chip off the old block", which does nothing to change the sense,
+but is the way it's now usually written or said.
+
+
+5. Endnote
+-------------------------------------------------------------------
+"The sum of human wisdom is not contained in any one language, and
+no single language is capable of expressing all forms and degrees
+of human comprehension." [Ezra Pound, quoted by David Crystal in
+the "Guardian", 25 October 1999]
+
+
+6. Subscription commands
+-------------------------------------------------------------------
+To leave the list, change your subscription address, or subscribe,
+please visit <http://www.worldwidewords.org/wordlist.htm>.
+
+Or, you can send a message to <listserv@listserv.linguistlist.org>
+from the address at which you are (or want to be) subscribed:
+
+  To leave, send: SIGNOFF WORLDWIDEWORDS
+  To join, send: SUBSCRIBE WORLDWIDEWORDS First-name Last-name
+
+
+7. Contact addresses
+-------------------------------------------------------------------
+Do not use the address that comes up when you hit 'Reply' on this
+mailing, or your message will be sent to an electronic dead-letter
+office. Either create a new message, or change the outgoing 'To:'
+address to one of these:
+
+  For general comments: <TheEditor@worldwidewords.org>.
+  For Q&A section questions: <QandA@worldwidewords.org>.
+
+-------------------------------------------------------------------
+World Wide Words is copyright (c) Michael Quinion 2002.  All rights
+reserved. The Words Web site is at <http://www.worldwidewords.org>.
+-------------------------------------------------------------------
+You may reproduce this newsletter in whole or in part in other free
+media online provided that you include this note and the copyright
+notice above. Reproduction in print media or on Web pages requires
+prior permission: contact <TheEditor@worldwidewords.org>.
+-------------------------------------------------------------------
+
+

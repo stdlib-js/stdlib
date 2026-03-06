@@ -1,0 +1,49 @@
+
+{{alias}}( obj, prop, descriptor )
+    Defines a memoized object property.
+
+    Parameters
+    ----------
+    obj: Object
+        Object on which to define the property.
+
+    prop: string|symbol
+        Property name.
+
+    descriptor: Object
+        Property descriptor.
+
+    descriptor.configurable: boolean (optional)
+        Boolean indicating if property descriptor can be changed and if the
+        property can be deleted from the provided object. Default: false.
+
+    descriptor.enumerable: boolean (optional)
+        Boolean indicating if the property shows up when enumerating object
+        properties. Default: false.
+
+    descriptor.writable: boolean (optional)
+        Boolean indicating if the value associated with the property can be
+        changed with an assignment operator. Default: false.
+
+    descriptor.value: Function
+        Synchronous function whose return value will be memoized and set as the
+        property value.
+
+    Examples
+    --------
+    > var obj = {};
+    > function foo() {
+    ...     return 'bar';
+    ... };
+    > {{alias}}( obj, 'foo', {
+    ...     'configurable': false,
+    ...     'enumerable': true,
+    ...     'writable': false,
+    ...     'value': foo
+    ... });
+    > obj.foo
+    'bar'
+
+    See Also
+    --------
+

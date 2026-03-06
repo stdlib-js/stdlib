@@ -1,0 +1,81 @@
+From fork-admin@xent.com  Tue Sep 10 18:15:53 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 38ABC16F03
+	for <jm@localhost>; Tue, 10 Sep 2002 18:15:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 18:15:53 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8AEFWC02028 for <jm@jmason.org>;
+    Tue, 10 Sep 2002 15:15:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6650029423B; Tue, 10 Sep 2002 07:12:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id 52760294237 for <fork@xent.com>;
+    Tue, 10 Sep 2002 07:11:07 -0700 (PDT)
+Received: (qmail 25260 invoked from network); 10 Sep 2002 14:13:58 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 10 Sep 2002 14:13:58 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id 9F9EB1CC97;
+    Tue, 10 Sep 2002 10:13:50 -0400 (EDT)
+To: "Geege Schuman" <geege@barrera.org>
+Cc: <johnhall@evergo.net>, "FoRK" <fork@spamassassin.taint.org>
+Subject: Re: Recommended Viewing
+References: <ILEHJNJFPDLMDEKNIAKCEEEOCAAA.geege@barrera.org>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2admqkk4h.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 10 Sep 2002 10:13:50 -0400
+
+>>>>> "G" == Geege Schuman <geege@barrera.org> writes:
+
+    G> you meant "SURPRISINGLY perceptive," didn't you?  :-) 
+
+Of course, dear.  Especially without zazen training.  Veritably
+Operational Thetan-like.
+
+    G> recent exceptionally vivid and strange dreams lead me to
+    G> believe i'm sparking synapses that have lain dormant lo these
+    G> many years.  Lots of problem solving going on up there at
+    G> night.
+
+It's a myth that we don't use parts of our brain.  We use it all,
+always.  It's just that our culturally-induced focal-point causes most
+of us to most of the time ignore and waste 99.999% of it.  "Lucid" is
+a measure of notch-filter bandwidth; all stations are broadcasting,
+but we only /choose/ Easy Rock 105.
+
+For example, don't look now but your shoes are full of feet.
+
+The sensation of toes the above statement evokes is not a "turning on"
+of circuits, it is a "tuning in".  The next step, of course, is to
+"drop out" :)
+
+To paraphrase an old saw: Life is wasted on the living.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

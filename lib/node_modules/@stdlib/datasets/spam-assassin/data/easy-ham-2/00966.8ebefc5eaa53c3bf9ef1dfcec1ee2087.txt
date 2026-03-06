@@ -1,0 +1,606 @@
+From fork-admin@xent.com  Tue Aug  6 12:00:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CFFC0441FF
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:24 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g75Ch8v11341 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 13:43:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DCC772940BD; Mon,  5 Aug 2002 05:40:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from ms4.lga2.nytimes.com (ms4.lga2.nytimes.com [64.15.247.148])
+    by xent.com (Postfix) with ESMTP id 8E2AB2940B4 for <fork@xent.com>;
+    Mon,  5 Aug 2002 05:39:58 -0700 (PDT)
+Received: from email4.lga2.nytimes.com (email4 [10.0.0.169]) by
+    ms4.lga2.nytimes.com (Postfix) with ESMTP id 443215A628 for
+    <fork@xent.com>; Mon,  5 Aug 2002 08:44:41 -0400 (EDT)
+Received: by email4.lga2.nytimes.com (Postfix, from userid 202) id
+    CAF57C431; Mon,  5 Aug 2002 08:34:25 -0400 (EDT)
+Reply-To: luke@applix.com
+From: luke@applix.com
+To: fork@spamassassin.taint.org
+Subject: NYTimes.com Article: After Sept. 11, a Legal Battle Over Limits of Civil Liberty
+Message-Id: <20020805123425.CAF57C431@email4.lga2.nytimes.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon,  5 Aug 2002 08:34:25 -0400 (EDT)
+
+This article from NYTimes.com 
+has been sent to you by luke@applix.com.
+
+
+The mind boggles at the idea that the Bush administration has not bothered to find a serious rationale at all, much less one extraordinary enough to justify these extraordinary measures, much less present it to the public, and that the Bush administration appears to be against American-style justice.
+
+The default explanation for government secrecy is to conceal official wrongdoing.  The administration is here making the case that Americans don't even have a right to question government secrecy.
+
+We may find that the history of this past year has been an epic looting from the public, made possible by the urgency of reacting to 9/11.
+
+
+luke@applix.com
+
+
+After Sept. 11, a Legal Battle Over Limits of Civil Liberty
+
+August 4, 2002
+By THE NEW YORK TIMES 
+
+
+
+
+ 
+
+This article was reported and written by Adam Liptak, Neil
+A. Lewis and Benjamin Weiser. 
+
+In the fearful aftermath of Sept. 11, Attorney General John
+Ashcroft vowed to use the full might of the federal
+government and "every available statute" to hunt down and
+punish "the terrorists among us." 
+
+The roundup that followed the attacks, conducted with
+wartime urgency and uncommon secrecy, led to the detentions
+of more than 1,200 people suspected of violating
+immigration laws, being material witnesses to terrorism or
+fighting for the enemy. 
+
+The government's effort has produced few if any law
+enforcement coups. Most of the detainees have since been
+released or deported, with fewer than 200 still being held.
+
+
+But it has provoked a sprawling legal battle, now being
+waged in federal courthouses around the country, that
+experts say has begun to redefine the delicate balance
+between individual liberties and national security. 
+
+The main combatants are the attorney general and federal
+prosecutors on one side and a network of public defenders,
+immigration and criminal defense lawyers, civil
+libertarians and some constitutional scholars on the other,
+with federal judges in between. 
+
+The government's record has so far been decidedly mixed. As
+it has pushed civil liberties protections to their limits,
+the courts, particularly at the trial level, have pushed
+back, stopping well short of endorsing Mr. Ashcroft's
+tactics or the rationales he has offered to justify them.
+Federal judges have, however, allowed the government to
+hold two American citizens without charges in military
+brigs, indefinitely, incommunicado and without a road map
+for how they might even challenge their detentions. 
+
+In the nation's history, the greatest battles over the
+reach of government power have occurred against the
+backdrop of wartime. Some scholars say the current
+restrictions on civil liberties are relatively minor by
+historical standards and in light of the risks the nation
+faces. 
+
+The current struggle centers on three sets of issues.
+People held simply for immigration violations have objected
+to new rules requiring that their cases be heard in secret,
+and they have leveraged those challenges into an attack on
+what they call unconstitutional preventive detentions. 
+
+People brought in and jailed as material witnesses, those
+thought to have information about terrorist plots, have
+argued that they should not be held to give testimony in
+grand jury investigations. 
+
+Finally, Yasser Esam Hamdi and Jose Padilla, the two
+Americans labeled "enemy combatants" for what the
+government contends is more direct involvement with
+terrorist groups, are seeking rights once thought to be
+fundamental to American citizens, like a lawyer's
+representation and a chance to challenge their detentions
+before a civilian judge. 
+
+So far, federal judges in Newark and Detroit have ordered
+secret deportation proceedings opened to public scrutiny,
+and on Friday a federal district judge in Washington
+ordered that the identities of most of the detainees be
+made public under the Freedom of Information Act. 
+
+"Secret arrests," Judge Gladys Kessler wrote in the
+decision on Friday, "are a concept odious to a democratic
+society." 
+
+A senior Justice Department official said the detentions
+had been lawful and effective. He said it was hard to
+"prove a negative" and cite specific terrorist acts that
+had been disrupted. But he said that department officials
+believed that the detentions had "incapacitated and
+disrupted some ongoing terrorist plans." 
+
+Two federal judges in New York have differed sharply on
+whether the government may jail material witnesses while
+they wait to testify in grand jury investigations. In
+Virginia, a federal judge ordered the government to allow
+Mr. Hamdi to consult a lawyer. 
+
+"I look at the federal district court judges and just cheer
+them on, because they are doing exactly what an independent
+judiciary should be doing," said Jane E. Kirtley, a
+professor at the University of Minnesota and former
+executive director for the Reporters Committee for Freedom
+of the Press. "It's not hostile or adversarial; it's simply
+skeptical." 
+
+These lower-court decisions have for the most part not yet
+been tested on appeal, and there is reason to think that
+appeals courts and the Supreme Court will prove more
+sympathetic to the government's tactics and arguments. 
+
+The federal appeals court in Richmond, Va., for instance,
+reversed the decision to allow Mr. Hamdi to talk to a
+lawyer and ordered the lower court judge to consider
+additional evidence and arguments. 
+
+But even the appeals court seemed torn, and it rejected the
+government's sweeping argument that the courts have no role
+in reviewing the government's designation of an American
+citizen as an enemy combatant. 
+
+The detention issues also carry an emotional punch. Many of
+the Arabs and Muslims caught in the government dragnet were
+cabdrivers, construction workers or other types of
+laborers, and some spent up to seven months in jail before
+being cleared of terrorism ties and deported or released. 
+
+Last month, at a conference held by a federal appeals
+court, Warren Christopher, the secretary of state in the
+Clinton administration, snapped at Viet Dinh, an assistant
+attorney general under President Bush, saying that the
+administration's refusal to identify the people it had
+detained reminded him of the "disappeareds" in Argentina. 
+
+"I'll never forget going to Argentina and seeing the
+mothers marching in the streets asking for the names of
+those being held by the government," Mr. Christopher said.
+"We must be very careful in this country about taking
+people into custody without revealing their names." 
+
+Mr. Dinh, who came to the United States as a refugee from
+Vietnam, recalled his family's anguish when his father was
+taken away in 1975 for "re-education." In contrast, he
+said, those detained by the United States were not being
+secretly held but were allowed to go to the press and seek
+lawyers. 
+
+"These are not incognito detentions," he said. "The only
+thing we will not do is provide a road map for the
+investigations." 
+
+According to the Justice Department, 752 of the more than
+1,200 people detained since Sept. 11 were held on
+immigration charges. Officials said recently that 81
+remained in detention. Court papers indicate there were
+about two dozen material witnesses, while most of the other
+detainees were held on various state and federal criminal
+charges. 
+
+President Bush also has announced plans to try suspected
+foreign terrorists before military tribunals, though no
+such charges have been brought yet. 
+
+Last month, William G. Young, the federal judge presiding
+in Boston over the criminal case against Richard C. Reid, a
+British citizen accused of trying to detonate a bomb in his
+shoe on a trans-Atlantic flight, noted that the very
+establishment of those tribunals "has the effect of
+diminishing the American jury, once the central feature of
+American justice." 
+
+Judge Young, who was appointed by President Ronald Reagan,
+added: "This is the most profound shift in our legal
+institutions in my lifetime and - most remarkable of all -
+it has taken place without engaging any broad public
+interest whatsoever." 
+
+Jack Goldsmith and Cass R. Sunstein, professors at the
+University of Chicago Law School, have written that the
+Bush administration's policies are a minimal challenge to
+civil liberties especially compared with changes during the
+times of Abraham Lincoln and Franklin D. Roosevelt. What
+has changed, they say, is a greater sensitivity to civil
+liberties and a vast increase in mistrust of government. 
+
+The Secrecy 
+
+U.S. Says Hearings 
+Are Not Trials 
+
+Ten days
+after last September's attacks, Michael J. Creppy, the
+nation's chief immigration judge, quietly issued sweeping
+instructions to hundreds of judges for what would turn out
+to be more than 600 "special interest" immigration cases. 
+
+"Each of these cases is to be heard separately from all
+other cases on the docket," Judge Creppy wrote. "The
+courtroom must be closed for these cases - no visitors, no
+family, and no press." 
+
+"This restriction," he continued, "includes confirming or
+denying whether such a case is on the docket." 
+
+The government has never formally explained how it decided
+which visa violators would be singled out for this
+extraordinary process, and it has insisted that the
+designations could not be reviewed by the courts. 
+
+But as it turns out, most of these cases involved Arab and
+Muslim men who were detained in fairly haphazard ways, for
+example at traffic stops or through tips from suspicious
+neighbors. Law enforcement officials have acknowledged that
+only a few of these detainees had any significant
+information about possible terrorists. 
+
+As the ruling on Friday in Washington suggests, a series of
+legal challenges to this secrecy has resulted in striking
+legal setbacks for the administration. Several courts have
+ordered the proceedings opened and have voiced considerable
+skepticism about the government's justifications for its
+detention policies generally. 
+
+Lee Gelernt, a lawyer at the American Civil Liberties
+Union, said the secrecy of the proceedings exacerbated the
+hardships faced by people who disappeared from sight on
+violations that in the past would not have resulted in
+incarceration. 
+
+"Preventive detention," he said, "is such a radical
+departure from constitutional traditions that we certainly
+shouldn't be undertaking it solely on the Justice
+Department's say-so." 
+
+Malek Zeidan's detention would have been unexceptional had
+it not given rise to one of the legal challenges that
+threatens to end the secret proceedings. 
+
+Mr. Zeidan, 42, is a Syrian citizen who overstayed his visa
+14 years ago and has lived in Paterson, N.J., for more than
+a decade. Over the years, he has delivered pizzas, driven
+an ice cream truck and pumped gas. When the Immigration and
+Naturalization Service came around last Jan. 31 to ask him
+about a former roommate suspected of marriage fraud, Mr.
+Zeidan was working at Dunkin' Donuts, and his expired visa
+soon cost him 40 days in custody. 
+
+When a hearing was finally held three weeks after his
+detention, the judge closed the courtroom, excluding Mr.
+Zeidan's cousin and reporters. 
+
+The closing of proceedings prompted lawsuits in federal
+court, from both Mr. Zeidan and two New Jersey newspapers.
+In March, the government dropped the "special interest"
+designation, Mr. Zeiden was released after posting a bond,
+and the case he filed was dismissed. The immigration
+charges against him will be considered in the fall. 
+
+"You're one of the lucky ones," his lawyer, Regis
+Fernandez, recalls telling Mr. Zeidan, given that other
+visa violators were held as long as six or seven months
+before being deported or released. 
+
+Mr. Zeidan's lawyers believe that their legal strategy,
+which focused on openness, forced the government's hand. 
+
+"The government was somehow linking secrecy to guilt," Mr.
+Fernandez said. "We figured if the public had access to
+these hearings they would see that nothing went on except
+multiple adjournments and delay." 
+
+Through a spokeswoman, Judge Creppy declined to comment. An
+I.N.S. official, who spoke on the condition that he not be
+named, said the agency had acted properly in Mr. Zeidan's
+case and in similar cases. 
+
+He said the immigration service had always detained people
+without bond who were linked to criminal investigations. He
+added that the agency had no choice now but to detain a
+visa violator until the Federal Bureau of Investigation was
+sure the person was not involved in terrorism. 
+
+"Consider the flip side - that you held him for two days
+and then deported him, and 30 days later you found out he
+was a terrorist," the official said. 
+
+The newspapers' lawsuit has continued. It has already once
+reached the Supreme Court, and the government's papers
+contain one of the fullest accounts of its position on
+secrecy and executive power. 
+
+Its main argument is that the courts have no role because
+immigration hearings are not really trials, but are merely
+administrative hearings that can be closed at will. 
+
+Bennet Zurofsky, who also represented Mr. Zeidan, said he
+was flabbergasted by this suggestion. 
+
+"A trial is a trial," he said. "A person's liberty is at
+stake. A person is being held in jail. A person is being
+told where to live." 
+
+But in a sworn statement submitted in several court cases,
+Dale L. Watson, the executive assistant director for
+counterterrorism and counterintelligence at the F.B.I.,
+outlined the reasoning behind the government demand for
+total secrecy. 
+
+"Bits and pieces of information that may appear innocuous
+in isolation can be fit into a bigger picture by terrorist
+groups," he said. 
+
+This rationale for withholding information, sometimes
+called the mosaic theory, is controversial. 
+
+"It's impossible to refute," Professor Kirtley said,
+"because who can say with certainty that it's not true?" 
+
+In May, John W. Bissell, the chief judge of the federal
+district court in Newark, appointed by President Reagan,
+ruled for the newspapers and ordered all deportation
+hearings nationwide to be opened, unless the government is
+able to show a need for a closed hearing on a case-by-case
+basis. His ruling followed a similar one in Detroit the
+month before, though that case involved only a single
+detainee. 
+
+The government appealed to the Court of Appeals for the
+Third Circuit, in Philadelphia, and asked it to block Judge
+Bissell's order until the appeal was decided. The court,
+which will hear arguments in September, declined to do
+that. A number of news organizations, including The New
+York Times, filed a brief as a friend of the court in
+support of the newspapers. 
+
+The government then asked the United States Supreme Court
+to stay Judge Bissell's order. The court, in a relatively
+unusual move given that the case was not before it for any
+other purpose, blocked Judge Bissell's order, suggesting
+that it might have more sympathy for the government's
+arguments. 
+
+The Witnesses 
+
+Rights Violated, 
+Lawyers Contend 
+
+Late on Sept. 12, federal agents pulled
+two nervous Indian men, Mohammed Jaweed Azmath and Syed Gul
+Mohammed Shah, off an Amtrak train near Fort Worth. They
+were carrying box cutters, black hair dye and about $5,000
+in cash and had also shaved their body hair. 
+
+The agents' suspicions were obvious. The hijackers had used
+box cutters and knives to take control of the aircraft and
+had received letters instructing them to "shave excess hair
+from the body." An F.B.I. affidavit dated Sept. 15 said
+there was probable cause to believe that both of the Indian
+men were involved in, or "were associated" with, those
+responsible for the Sept. 11 attacks. 
+
+But even though government officials told reporters that
+the men had been detained as material witnesses, their
+lawyers now say that they were held last fall only on
+immigration violations. 
+
+The distinction is important because a material witness
+warrant brings the automatic appointment of a
+government-paid lawyer, while the government does not have
+to supply a visa violator with counsel. 
+
+As a result, the authorities were able to question each of
+the men repeatedly about terrorism without a lawyer
+present, their current lawyers say. 
+
+Like some of the people who were picked up as material
+witnesses, the Indian men were held in isolation in jails
+in New York for extended periods. It was 91 days before Mr.
+Azmath received a lawyer and 57 days before Mr. Shah did,
+their lawyers say. 
+
+"It's wrong to keep a man in jail for 57 days and never
+bring him before a magistrate to advise him of his rights,"
+Mr. Shah's lawyer, Lawrence K. Feitell, said in an
+interview. "It's wrong not to provide him with an attorney
+at the threshold. It's wrong to depict this as an I.N.S.
+investigation, when in truth and in fact, it's the main
+inquiry into the World Trade Center debacle." 
+
+Anthony L. Ricco, the lawyer for Mr. Azmath, said his
+client was interrogated "often times for several hours a
+day, with multiple interviewers, getting rapid-fire
+questions from three or four different people." 
+
+Eventually, the F.B.I. and the prosecutors cleared the men
+of any involvement in terrorism, and both pleaded guilty in
+June in a credit-card fraud scheme and are awaiting
+sentencing. 
+
+Federal prosecutors said in court papers that both men
+consented to questioning. Each "was read and waived his
+Miranda rights before each interview," prosecutors wrote,
+adding that each man confessed to the credit card offenses.
+
+
+The United States attorney in Manhattan, James B. Comey,
+would not comment on the specific cases, but said generally
+of the government's tactics: "I don't see any violation of
+any rule, regulation, or law. 
+
+"I can understand defense lawyers not being happy," he
+said. "But I know our position after 9/11 was to use every
+available tool, to stay within the rules but play the whole
+field and recognize the boundaries, but cover the whole
+field. 
+
+"We need to do whatever we can that's legal to investigate
+and disrupt," he added. 
+
+Today, it is believed that only a handful of the two dozen
+material witnesses, perhaps as few as two, are still being
+detained. 
+
+But the process of detaining the witnesses has stirred
+intense criticism. 
+
+Last April, Judge Shira A. Scheindlin of Federal District
+Court in Manhattan ruled that the use of the law "to detain
+people who are presumed innocent under our Constitution in
+order to prevent potential crimes is an illegitimate use of
+the statute." 
+
+Judge Scheindlin said the material witness law applied when
+witnesses were held to give testimony at trials, not for
+grand jury investigations. "Since 1789," Judge Scheindlin
+said, "no Congress has granted the government the authority
+to imprison an innocent person in order to guarantee that
+he will testify before a grand jury conducting a criminal
+investigation." 
+
+Then last month, Chief Judge Michael B. Mukasey, also of
+Federal District Court in Manhattan, upheld the
+government's use of the material witness statute in grand
+jury investigations, criticizing Judge Scheindlin's
+reasoning. 
+
+Judge Mukasey, citing the assertion in 1807 by Chief
+Justice John Marshall that "the public has a right to every
+man's evidence," held that detentions of material witnesses
+during investigations are proper. 
+
+The War Captives 
+
+No Lawyers Allowed 
+Under U.S. Label 
+
+Yasser Esam Hamdi, a
+Saudi national who was captured in Afghanistan, is probably
+an American citizen by virtue of having been born in
+Louisiana. His case represents the core issue of what kind
+of role the nation's courts should have, if any, in
+reviewing the government's imprisonment of someone charged
+with something akin to a war crime. 
+
+Prosecutors will be back in Federal District Court in
+Norfolk, Va., next Thursday to confront one of the federal
+judges who has shown resistance to the government's
+approach that once someone is declared an "enemy combatant"
+by the president, all judicial review ceases. 
+
+Judge Robert G. Doumar, an appointee of President Reagan,
+has twice ruled that Mr. Hamdi is entitled to a lawyer and
+ordered the government to allow Frank Dunham, the federal
+public defender, to be allowed to visit him without
+government officials or listening devices. Judge Doumar
+said that "fair play and fundamental justice" require it.
+He said the government "could not cite one case where a
+prisoner of any variety within the jurisdiction of a United
+States District Court, who was held incommunicado and
+indefinitely." 
+
+But the three-judge panel of the appeals court stayed Judge
+Doumar's order, saying he had not fully considered the
+government's needs to keep Mr. Hamdi incommunicado and,
+more important, the executive branch's primacy in areas of
+foreign and military affairs. 
+
+"The authority to capture those who take up arms against
+America belongs to the commander in chief," Chief Judge J.
+Harvie Wilkinson 3rd wrote for the appeals panel. 
+
+But even Judge Wilkinson seemed to evince some surprise at
+the breadth of what the government was asserting when he
+asked the Justice Department's lawyer, "You are saying that
+the judiciary has no right to inquire at all into someone's
+stature as an enemy combatant?" 
+
+The government has relented slightly, agreeing to provide
+the court with a sealed declaration of the criteria by
+which they have judged Mr. Hamdi to be an enemy combatant.
+But the government has argued that judges cannot argue with
+the standards. 
+
+Judge Doumar has indicated that he will question the
+government closely on those standards. 
+
+The case of Jose Padilla, which has not progressed as far
+as that of Mr. Hamdi, may present an even greater challenge
+to normal judicial procedures. 
+
+Mr. Padilla, also known as Abdullah al-Muhajir, is, like
+Mr. Hamdi, an American citizen, imprisoned in a naval brig
+after having been declared an enemy combatant. But unlike
+Mr. Hamdi, Mr. Padilla was not arrested on the battlefield
+by the military but on United States soil by civil law
+enforcement authorities, on May 8 in Chicago. 
+
+After his detention as a material witness based on
+suspicions that he was seeking to obtain material and
+information to build a radioactive bomb, he was transferred
+to military custody. 
+
+"This is the model we all fear or should fear," said Mr.
+Dunham, the public defender. "The executive branch can
+arrest an American citizen here and then declare him an
+enemy combatant and put him outside the reach of the
+courts. They can keep him indefinitely without charging him
+or giving him access to a lawyer or presenting any
+evidence."
+
+http://www.nytimes.com/2002/08/04/national/04CIVI.html?ex=1029550865&ei=1&en=c82350bcf915e44e
+
+
+
+HOW TO ADVERTISE
+---------------------------------
+For information on advertising in e-mail newsletters 
+or other creative advertising opportunities with The 
+New York Times on the Web, please contact
+onlinesales@nytimes.com or visit our online media 
+kit at http://www.nytimes.com/adinfo
+
+For general information about NYTimes.com, write to 
+help@nytimes.com.  
+
+Copyright 2002 The New York Times Company
+http://xent.com/mailman/listinfo/fork
+
+

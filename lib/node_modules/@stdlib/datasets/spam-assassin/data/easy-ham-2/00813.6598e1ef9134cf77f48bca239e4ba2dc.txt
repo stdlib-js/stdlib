@@ -1,0 +1,820 @@
+From fork-admin@xent.com  Tue Jul 23 10:38:49 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 235C1440C9
+	for <jm@localhost>; Tue, 23 Jul 2002 05:38:41 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 10:38:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6N9Vw406519 for <jm@jmason.org>;
+    Tue, 23 Jul 2002 10:31:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 51FBC2940A5; Tue, 23 Jul 2002 02:21:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from ms4.lga2.nytimes.com (ms4.lga2.nytimes.com [64.15.247.148])
+    by xent.com (Postfix) with ESMTP id 5F8F029409C for <fork@xent.com>;
+    Tue, 23 Jul 2002 02:20:41 -0700 (PDT)
+Received: from email4.lga2.nytimes.com (email4 [10.0.0.169]) by
+    ms4.lga2.nytimes.com (Postfix) with ESMTP id AC7A05A4E2 for
+    <fork@xent.com>; Tue, 23 Jul 2002 05:33:48 -0400 (EDT)
+Received: by email4.lga2.nytimes.com (Postfix, from userid 202) id
+    59B20C403; Tue, 23 Jul 2002 05:23:43 -0400 (EDT)
+Reply-To: khare@alumni.caltech.edu
+From: khare@alumni.caltech.edu
+To: fork@spamassassin.taint.org
+Subject: NYTimes.com Article: In the Beginning ...
+Message-Id: <20020723092343.59B20C403@email4.lga2.nytimes.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 05:23:43 -0400 (EDT)
+
+This article from NYTimes.com 
+has been sent to you by khare@alumni.caltech.edu.
+
+
+I'm sure that at the end of the universe, they'll still only find Douglas Adams, calmly munching away on his mooburger :-)
+
+The prospect of expansion so rapid that the night sky empties out because other galaxies are simply *outside* our light cone -- ??!? -- is really chilling. 
+
+Puts comm latency in a whole new perspective... what if, in the future, processors go so fast there *is* no network? Or, at least, TCP segments would arrive so rarely they would seem as inscrutable as commandments from the heavens...
+
+Rohit
+
+khare@alumni.caltech.edu
+
+
+In the Beginning ...
+
+July 23, 2002
+By DENNIS OVERBYE 
+
+
+
+
+ 
+
+It has always been easy to make fun of cosmologists,
+confined to a dust mote lost in space, pronouncing judgment
+on the fate of the universe or the behavior of galaxies
+billions of light-years away, with only a few scraps of
+light as evidence. 
+
+"Cosmologists are often wrong," the Russian physicist Lev
+Landau put it, "but never in doubt." 
+
+For most of the 20th century, cosmology seemed less a
+science than a religious war over, say, whether the
+universe had a beginning, in a fiery Big Bang billions of
+years ago, or whether it exists eternally in the so-called
+Steady State. 
+
+
+
+In the last few years, however, a funny thing has happened.
+Cosmologists are beginning to agree with one another.
+Blessed with new instruments like the Hubble Space
+Telescope and other space-based observatories, a new
+generation of their giant cousins on the ground and
+ever-faster computer networks, cosmology is entering "a
+golden age" in which data are finally outrunning
+speculation. 
+
+"The rate at which we are learning and discovering new
+things is just extraordinary," said Dr. Charles Bennett, an
+astronomer at the Goddard Space Flight Center in Greenbelt,
+Md. 
+
+As a result, cosmologists are beginning to converge on what
+they call a "standard model" of the universe that is
+towering in its ambition. It purports to trace, at least in
+broad strokes, cosmic history from the millisecond after
+time began, when the universe was a boiling stew of energy
+and subatomic particles, through the formation of atoms,
+stars, galaxies and planets to the vast, dilute, dark
+future in which all of these will have died. 
+
+The universe, the cosmologists say, was born 14 billion
+years ago in the Big Bang. Most of its material remains
+resides in huge clouds of invisible so-called dark matter,
+perhaps elementary particles left over from the primordial
+explosion and not yet identified. 
+
+Within these invisible clouds, the glittery lights in the
+sky that have defined creation for generations of humans
+are swamped, like flecks of foam on a rolling sea. A good
+case can be made, scientists now agree, that the universe
+will go on expanding forever. 
+
+In fact, recent observations have suggested that the
+expansion of the universe is speeding up over cosmic time,
+under the influence of a "dark energy" even more mysterious
+than dark matter. 
+
+Recently, a group of astronomers led by Dr. William
+Percival at the University of Edinburgh combined data from
+a variety of observations to compile, based on the simplest
+theoretical model, what they say is the most precise
+enumeration yet of the parameters that cosmologists have
+been fighting about for all these decades. 
+
+The universe, they calculated, is 13.89 billion years old,
+plus or minus half a billion years. Only 4.8 percent of it
+is made of ordinary matter. Matter of all types, known and
+unknown, luminous and dark, accounts for just 27.5 percent.
+The rest of creation, 72.5 percent, is the mysterious dark
+energy, they reported in a paper submitted last month to
+The Monthly Notices of the Royal Astronomical Society. 
+
+It is a picture that in some ways is surprisingly simple,
+satisfying long-held theoretical prejudices about how the
+universe should be designed. Continued agreement with
+coming experiments may mean that science is approaching the
+end of a "great program" of cosmological tests that began
+in the 1930's, Dr. P. J. E. Peebles of Princeton and Dr.
+Bharat Ratra of Kansas State University said in the draft
+of a coming article for The Reviews of Modern Physics. 
+
+In other ways this new dark universe is utterly baffling, a
+road map to new mysteries. Dr. Marc Davis, a cosmologist at
+the University of California at Berkeley, called it "a
+universe chock full of exotics that don't make sense to
+anybody." 
+
+Moreover there are some questions that scientists still do
+not know how to ask, let alone answer, scientifically. Was
+there anything before the Big Bang? Is there a role for
+life in the cosmos? Why is there something rather than
+nothing at all? Will we ever know? 
+
+"We know much, but we still understand very little," said
+Dr. Michael Turner, a cosmologist at the University of
+Chicago. 
+
+The Big Question 
+
+Expanding Forever, 
+Or Big Crunch? 
+
+The dim caves of Lascaux, the plains of
+Stonehenge and the dreamtime tales of Australian aborigines
+all testify to the need to explain the world and existence.
+This quest took its present form in 1917. That was when
+Albert Einstein took his new general theory of relativity,
+which explained how matter and energy warp space-time to
+produce gravity, and applied it to the universe. 
+
+Einstein discovered that the cosmos as his theory described
+it would be unstable, prone to collapse under its own
+gravity. Astronomers, however, were sure that the universe
+was stable. So Einstein added a fudge factor that he called
+the cosmological constant to his equations. It acted as a
+long-range repulsive force to counterbalance gravity. 
+
+In 1929, the astronomer Edwin Hubble discovered that the
+universe was expanding. The sky was full of distant
+galaxies all rushing away from us and one another, as if
+propelled by what the British astronomer Dr. Fred Hoyle
+later called derisively a "big bang." The universe was not
+stable and, thus, did not require counterbalancing.
+Einstein abandoned his constant, referring to it as his
+biggest blunder. But it would return to haunt cosmologists,
+and the universe. 
+
+Hoyle's term stuck, and the notion of an explosive genesis
+became orthodoxy in 1965, when Dr. Arno Penzias and Dr.
+Robert Wilson, radio astronomers at Bell Laboratories,
+discovered a faint uniform radio glow that pervaded the
+sky. It was, cosmologists concluded, the fading remnant of
+the primordial fireball itself. 
+
+Relieved of their fudge factor, the equations describing
+Einstein's universe were simple. Dr. Allan Sandage, the
+Carnegie Observatories astronomer, once called cosmology
+"the search for two numbers" - one, the Hubble constant,
+telling how fast the universe is expanding, and the other
+telling how fast the expansion is slowing, and thus whether
+the universe will expand forever or not. 
+
+The second number, known as the deceleration parameter,
+indicated how much the cosmos had been warped by the
+density of its contents. In a high-density universe, space
+would be curved around on itself like a ball. Such a
+universe would eventually stop expanding and fall back
+together in a big crunch that would extinguish space and
+time, as well as the galaxies and stars that inhabit them.
+A low-density universe, on the other hand, would have an
+opposite or "open" curvature like a saddle, harder to
+envision, and would expand forever. 
+
+In between with no overall warpage at all was a
+"Goldilocks" universe with just the right density to expand
+forever but more and more slowly, so that after an infinite
+time it would coast to a stop. This was a "flat" universe
+in the cosmological parlance, and to many theorists the
+simplest and most mathematically beautiful solution of all.
+
+
+But the sky did not yield those cosmic numbers easily, even
+with the help of the 200-inch Hale telescope on Palomar
+Mountain in Southern California, dedicated in 1948, which
+had been built largely for that task. Dr. Hubble wrote of
+measuring shadows and searching "among ghostly errors of
+measurement for landmarks that are scarcely more
+substantial." 
+
+The Dark Side 
+
+Invisible Matter 
+Molds Galaxies 
+
+
+It was not till the mid-70's, a
+quarter-century after the Palomar giant began operating,
+that groups of astronomers reached the tentative conclusion
+that the universe they could see - stars, gas, planets and
+galaxies - did not have nearly enough gravitational oomph
+to stop the cosmic expansion. 
+
+"So the universe will continue to expand forever and
+galaxies will get farther and farther apart, and things
+will just die," Dr. Sandage said at the time. 
+
+But the Great Argument was just beginning. Apparently there
+was a lot of the universe that astronomers could not see.
+The stars and galaxies, were moving as if immersed in the
+gravity of giant invisible clouds of so-called dark matter
+- "missing matter" the Swiss astronomer Dr. Fritz Zwicky
+labeled it in the 1930's. 
+
+Many galaxies, for example, are rotating so fast that they
+would fly apart unless they were being reined in by the
+gravity of halos of dark matter, according to pioneering
+observations by Dr. Vera Rubin of the Carnegie Institution
+of Washington and her colleagues. Her measurements
+indicated that these dark halos outweighed the visible
+galaxies themselves from 5 to 10 times. But there could be
+even more dark matter farther out in space, perhaps enough
+to stop the expansion of the universe, eventually, some
+theorists suggested. Luminous matter, the Darth Vaders of
+the sky said, is like the snow on mountaintops. 
+
+But what is the dark matter? While some of it is gas or
+dark dim objects like stars and planets, cosmologists
+speculate that most of it is subatomic particles left over
+from the Big Bang. 
+
+Many varieties of these particles are predicted by theories
+of high-energy physics. But their existence has not been
+confirmed or detected in particle accelerators. 
+
+"We theorists can invent all sorts of garbage to fill the
+universe," Dr. Sheldon Glashow, a Harvard physicist and
+Nobel laureate, told a gathering on dark matter in 1981. 
+
+Collectively known as WIMP's, for weakly interacting
+massive particles, such particles would not respond to
+electromagnetism, the force responsible for light, and thus
+would be unable to radiate or reflect light. They would
+also be relatively slow-moving, or "cold" in physics
+jargon, and thus also go by the name of cold dark matter. 
+
+As Earth in its travels passed through the dark-matter
+cloud that presumably envelops the Milky Way, the particles
+would shoot through our bodies, rarely leaving a trace,
+like moonlight through a window. 
+
+But the collective gravity of such particles, cosmologists
+say, would shape the cosmos and its contents. 
+
+Gathering along the fault lines laid down by random
+perturbations of density in the early universe, dark matter
+would congeal into clouds with about the mass of 100,000
+Suns. The ordinary matter that was mixed in with it would
+cool and fall to the centers of the clouds and light up as
+stars. 
+
+The clouds would then attract other clouds. Through a
+series of mergers over billions of years, smaller clouds
+would assemble into galaxies, and the galaxies would then
+assemble themselves into clusters of thousands of galaxies,
+and so forth. 
+
+Using the Hubble and other telescopes as time machines -
+light travels at a finite speed, so the farther out
+astronomers look the farther back in time they see -
+cosmologists have begun to confirm that the universe did
+assemble itself from the "bottom up," as the dark matter
+model predicts. 
+
+Last year, two teams of astronomers reported seeing the
+first stars burning their way out of the cloudy aftermath
+of the Big Bang, when the universe was only 900 million
+years old. The bulk of galaxy formation occurred when the
+universe was a half to a quarter its present age,
+cosmologists say. 
+
+"The big news in the last decade is that even half a
+universe ago the universe looked pretty different," said
+Dr. Alan Dressler of the Carnegie Observatories in
+Pasadena. Galaxies before then were small and irregular,
+with no sign of the majestic spiral spider webs that
+decorate the sky today. 
+
+We would barely recognize our own Milky Way galaxy, if we
+could see it five billion years ago when the Sun formed, he
+said. 
+
+"By eight billion years back, it would be unrecognizable,"
+said Dr. Dressler. 
+
+Yet there are still many questions that the cold dark
+matter model does not answer. Astronomers still do not
+know, for example, how the first stars formed or why the
+models of dark matter distribution don't quite fit in the
+cores of some kinds of galaxies. Nor have the dark matter
+particles themselves been unambiguously detected or
+identified, despite continuing experiments. 
+
+Some astronomers suggest that the discrepancies stem from
+the inability of simple mathematical models to deal with
+messy details of the real world. 
+
+"It's a huge mystery exactly how stars form," Dr. Richard
+Bond of the Canadian Institute for Theoretical Astrophysics
+said. "We can't solve it now. So it's even harder to try to
+solve them back then." 
+
+But others, notably Dr. Mordehai Milgrom, a theorist at the
+Weizmann Institute in Israel, have suggested that modifying
+the gravitational laws by which dark matter was deduced in
+the first place would alleviate the need for dark matter
+altogether. 
+
+The Bang's Fuel 
+
+Inflating One Ounce 
+To a Whole Universe 
+
+
+Clues to what had actually exploded
+in the Big Bang emerged as an unexpected gift from another
+great scientific quest: physicists' pursuit for a so-called
+theory of everything that would unite all physical
+phenomena in a single equation. Unable to build machines
+powerful enough to test their most ambitious notions on
+Earth, some theorists turned to the sky. 
+
+"The Big Bang is the poor man's particle accelerator," Dr.
+Jakob Zeldovich, an influential Russian cosmologist, said. 
+
+Physicists recognize four forces at work in the world
+today - gravity, electromagnetism, and the strong and weak
+nuclear forces. But they suspect, based on data from
+particle accelerators and high-powered theory, that those
+are simply different manifestations of a single unified
+force that ruled the universe in its earliest, hottest
+moments. 
+
+As the universe cooled, according to this theory, there was
+a fall from grace, and the laws of physics evolved, with
+one force after another "freezing out," or splitting away. 
+
+In 1979, Dr. Alan Guth, now at the Massachusetts Institute
+of Technology, realized that a hypothesized glitch in this
+process would have had drastic consequences for the
+universe. Under some circumstances, a glass of water can
+stay liquid as the temperature falls below 32 degrees,
+until it is disturbed, at which point it will rapidly
+freeze, releasing latent heat in the process. Similarly,
+the universe could "supercool" and stay in a unified state
+too long. In that case, space itself would become
+temporarily imbued with a mysterious kind of latent heat,
+or energy. 
+
+Inserted into Einstein's equations, the latent energy would
+act as a kind of antigravity, and the universe would blow
+itself apart, Dr. Guth discovered in a calculation in 1979.
+
+
+In far less than the blink of an eye, 10-37 second, a speck
+much smaller than a proton would have swollen to the size
+of a grapefruit and then resumed its more stately
+expansion, with all of normal cosmic history before it,
+resulting in today's observable universe - a patch of sky
+and stars 14 billion light-years across. All, by the
+magical-seeming logic of Einstein's equations, from about
+an ounce of primordial stuff. 
+
+"The universe," Dr. Guth liked to say, "might be the
+ultimate free lunch." 
+
+Dr. Guth called his theory inflation. Inflation, as Dr.
+Guth pointed out, explains why the universe is expanding.
+Dr. Turner of the University of Chicago referred to it as
+"the dynamite behind the Big Bang." 
+
+As modified and improved by Dr. Andrei Linde, now at
+Stanford, and by Dr. Paul Steinhardt, now at Princeton and
+Dr. Andreas Albrecht now at the University of California at
+Davis, inflation has been the workhorse of cosmology ever
+since. One of its great virtues, cosmologists say, is that
+inflation explains the origin of galaxies, the main
+citizens of the cosmos. The answer comes from the
+paradoxical-sounding quantum rules that govern subatomic
+affairs. On the smallest scales, according to quantum
+theory, nature is lumpy, emitting even energy in little
+bits and subject to an irreducible randomness. As a result,
+so-called quantum fluctuations would leave faint lumps in
+the early universe. These would serve as the gravitational
+seeds for future galaxies and other cosmic structures. 
+
+As a result of such successes, cosmologists have stuck with
+the idea of inflation, even though, lacking the ability to
+test their theories at the high energies of the Big Bang,
+they have no precise theory about what might have actually
+caused it. "Inflation is actually a class of theories,"
+said Dr. Guth. 
+
+In the latest version, called "chaotic inflation," Dr.
+Linde has argued that quantum fluctuations in a myriad of
+theorized force fields could have done the trick. 
+
+Indeed, he and others now say they believe that inflation
+can occur over and over, spawning an endless chain of
+universes out of one another, like bubbles within bubbles. 
+
+"The universe inflates on top of itself," Dr. Linde told a
+physics conference this spring in Princeton. "It's
+happening right now." 
+
+The Golden Age 
+
+New Devices Detect 
+Primordial Glow 
+If the inflationary
+theorists are right, the universe we see, the 14 billion
+light-years, is just a tiny piece of a much vaster
+universe, or even a whole ensemble of them, forever out of
+our view. 
+
+According to the theory, therefore, our own little patch of
+the cosmos should appear geometrically "flat," the way a
+section of a balloon looks flat when viewed close up. This
+was the universe long thought to be the most beautiful and
+simple. 
+
+But it required, by the logic of Einstein's general
+relativity, that there be much more dark matter, or
+something, to the universe, enough to "flatten" space-time,
+than astronomers had found. 
+
+In fact, this prescription was so hard to reconcile with
+other observations, of galaxies and their evolutions, that
+by 1991 some astronomers and press reports suggested that
+the entire theoretical edifice of inflation to blow up the
+universe and cold dark matter to fill it, not to say the
+Big Bang itself, might have to be junked. 
+
+So it was with a sigh of relief that cosmologists greeted
+the announcement in April 1992 that NASA's Cosmic
+Background Explorer, or COBE, satellite had succeeded in
+discerning faint blotches in the primordial cosmic radio
+glow. 
+
+These were the seeds from which, inflation predicted, large
+cosmic structures would eventually grow. 
+
+"If you're religious, it's like seeing God," said Dr.
+George Smoot, a physicist from the Lawrence Berkeley
+National Laboratory who led the COBE team. 
+
+Astronomers say COBE signaled a transition in which heroic
+ideas about the universe began to be replaced by heroic
+data, as long-planned new telescopes and other instruments
+went into operation. 
+
+A year later, skywalking astronauts corrected the Hubble
+telescope's myopic vision. The cosmic background radiation
+has come in for particular scrutiny from new radio
+telescopes mounted in balloons and on mountaintops. The
+news has been good, though not decisive, for inflation. 
+
+For three years, a series of increasingly high-resolution
+observations has confirmed that the pattern of blotches
+stippling the remnant of the primordial fireball is
+consistent with the predictions from inflation and cold
+dark matter. The instruments have now mapped details small
+enough to have been the seeds of modern clusters of
+galaxies. 
+
+"I'm completely snowed by the cosmic background radiation,"
+Dr. Guth said. "The signal was so weak it wasn't even
+detected until 1965, and now they're measuring fluctuations
+of one part in 100,000." 
+
+Perhaps most important, the analysis of the fluctuations
+indicates that the universe has a "flat" geometry, as
+predicted by inflation. That was a triumph. Although
+observations could not prove that inflation was right, a
+nonflat universe would have been a blow to the theory, and
+to cosmological orthodoxy. 
+
+"Inflation, our boldest and most promising theory of the
+earliest moments of creation, passed its first very
+important test," Dr. Turner said at the time. 
+
+The most precise measurements of the cosmic background, at
+least in the near future, are generally expected to come
+late this year from NASA's Microwave Anisotropy Project, or
+MAP, satellite, which was launched into space last year on
+June 30. MAP will be followed by the European Space
+Agency's Planck satellite, in 2006. 
+
+It is highly unlikely that MAP or Planck will be able to
+detect what Dr. Turner calls "the smoking gun signature of
+inflation." The violent stretching of the universe should
+roil space-time with so-called gravitational waves that
+would leave a faint imprint on the cosmic fireball. 
+
+Detecting those waves would not only confirm inflation, but
+also might help scientists establish what caused the
+inflation in the first place, giving science its first look
+at the strange physics that prevailed when creation was
+only about a trillionth of a trillionth of a trillionth of
+a second old. 
+
+The Universe's Fate 
+
+Bleak Implications 
+Of `Dark Energy' 
+
+In 1998, two competing teams of
+astronomers startled the scientific world with the news
+that the expansion of the universe seemed to be speeding up
+under the influence of a mysterious antigravity that seems
+embedded in space itself and that is hauntingly reminiscent
+of Einstein's old, presumably discredited, cosmological
+constant. 
+
+"Dark energy," the phenomenon was quickly named. 
+
+If dark
+energy is real and the acceleration continues, the galaxies
+will eventually speed away from one another so quickly that
+they couldn't see one another. The universe would become
+cold and empty as the continued acceleration sucked away
+the energy needed for life and thought. 
+
+It would be "the worst possible universe," for the quality
+and quantity of life, said Dr. Lawrence Krauss, a physicist
+at Case Western Reserve University. 
+
+Dr. Edward Witten of the Institute for Advanced Study in
+Princeton, called the discovery of dark energy "the
+strangest experimental finding since I've been in physics."
+
+
+The discovery was a surprise to the astronomers involved.
+Neither team had expected to find the universe
+accelerating. They had each set out to measure by how much
+the expansion of the universe was slowing because of the
+gravity of its contents and thus settle the question of its
+fate. 
+
+One team was led by Dr. Saul Perlmutter, a physicist at
+Lawrence Berkeley. The other team was a band of astronomers
+led by Dr. Brian Schmidt of Mount Stromlo and the Siding
+Spring Observatory in Australia. 
+
+Each group employed far-flung networks of telescopes,
+including the Hubble, and the Internet to find and monitor
+certain exploding stars, or supernovas, as cosmic beacons.
+Such explosions, the death rattles of massive stars, are
+powerful enough to be seen clear across the universe when
+the universe was younger and, presumably, expanding faster.
+
+
+Leapfrogging each other across the universe, the two teams,
+propitiously for their credibility, arrived at the same
+answer at the same time: the cosmos was not slowing at all;
+it was speeding up. 
+
+Dr. Perlmutter, who had once resented the competition,
+conceded, "With only one group, it would have been a lot
+harder to get the community to buy into such a surprising
+result." 
+
+"This was a very strange result," said Dr. Adam Riess, a
+member of Dr. Schmidt's team. "It was the opposite of what
+we thought we were doing." 
+
+The results have sent Einstein's old cosmological constant
+to the forefront of cosmology. Despite his disavowal, the
+constant had never really gone away and had in fact been
+given new life by quantum physics. Einstein had famously
+rejected quantum's randomness, saying God didn't play dice.
+
+
+But it justified, in retrospect, his fudge factor. 
+
+According to the uncertainty principle, a pillar of quantum
+theory, empty space was not empty, but rather foaming with
+the energy of so-called virtual particles as they flashed
+in and out of existence on borrowed energy. This so-called
+vacuum energy could repel, just like Einstein's old
+cosmological constant, or attract. 
+
+The case for dark energy got even stronger a year later,
+when the cosmic background observations reported evidence
+of a flat universe. Because astronomers had been able to
+find only about a third as much matter, both dark and
+luminous, as was needed by Einstein's laws to create a flat
+geometry, something else had to be adding to it. 
+
+The discovery of dark energy exemplified Dr. Zeldovich's
+view of the universe as the poor man's particle
+accelerator, and it caught the physicists flat-footed,
+somewhat to the pride of the astronomers. 
+
+"A coming of age of astronomy," Dr. Dressler called it.
+
+
+What is dark energy? The question now hangs over the
+universe. 
+
+Is it really Einstein's old fudge factor returned to haunt
+his children? In that case, as the universe expands and the
+volume of space increases, astronomers say, the push
+because of dark energy will also increase, accelerating the
+galaxies away from one another faster and faster, leading
+to a dire dark future. 
+
+Other physicists, however, have pointed out that the
+theories of modern physics are replete with mysterious
+force fields, collectively called "quintessence," that
+might or might not exist, but that could temporarily
+produce negative gravity and mimic the action of a
+cosmological constant. In that case, all bets on the future
+are off. The universe could accelerate and then decelerate,
+or vice versa as the dark energy fields rose or fell. 
+
+A third possibility is that dark energy does not exist at
+all, in which case not just the future, but the whole
+carefully constructed jigsaw puzzle of cosmology, might be
+in doubt. The effects of cosmic acceleration could be
+mimicked, astronomers say, by unusual dust in the far
+universe or by unsuspected changes in the characteristics
+of supernovas over cosmic time. As a result, more groups
+are joining the original two teams in the hunt for new
+supernovas and other ways to measure the effects of dark
+energy on the history of the universe. 
+
+Dr. Perlmutter has proposed building a special satellite
+telescope, the Supernova Astronomy Project, to investigate
+exactly when and how abruptly the cosmic acceleration
+kicked in. 
+
+The Nagging QuestionsA Grand Synthesis, 
+But Hardly Complete 
+For all the new answers being
+harvested, some old questions linger, and they have now
+been joined by new ones. 
+
+A flat universe is the most mathematically appealing
+solution of Einstein's equations, cosmologists agree. But
+they are puzzled by the specific recipe, large helpings of
+dark matter and dark energy, that nature has chosen. Dr.
+Turner called it "a preposterous universe." 
+
+But Dr. Martin Rees, a Cambridge University cosmologist,
+said that the discovery of a deeper principle governing the
+universe and, perhaps, life, may alter our view of what is
+fundamental. Some features of the universe that are now
+considered fundamental - like the exact mixture of dark
+matter, dark energy and regular stuff in the cosmos - may
+turn out to be mere accidents of evolution in one out of
+the many, many universes allowed by eternal inflation. 
+
+"If we had a theory, then we would know whether there were
+many big bangs or one," Dr. Rees said. The answers to these
+and other questions, many scientists suspect, have to await
+the final unification of physics, a theory that reconciles
+Einstein's relativity, which describes the shape of the
+universe, to the quantum chaos that lives inside it. 
+
+Such a theory, quantum gravity, is needed to describe the
+first few moments of the universe, when it was so small
+that even space and time should become fuzzy and
+discontinuous. 
+
+For two decades, many physicists have placed their bets for
+quantum gravity on string theory, which posits that
+elementary particles are tiny strings vibrating in a 10- or
+11-dimensional space. Each kind of particle, in a sense,
+corresponds to a different note on the string. 
+
+In principle, string theory can explain all the forces of
+nature. But even its adherents concede that their equations
+are just approximations to an unknown theory that they call
+M-theory, with "M" standing for matrix, magic, mystery or
+even mother, as in "mother of all theories." Moreover, the
+effects of "stringy physics" are only evident at energies
+forever beyond the limits of particle accelerators. 
+
+Some string theorists have ventured into cosmology, hoping,
+to discover some effect that would show up in the poor
+man's particle accelerator, the sky. 
+
+In addition to strings, the theory also includes membranes,
+or "branes," of various dimensions. Our universe can be
+envisioned as such a brane floating in higher-dimensional
+space like a leaf in a fish tank, perhaps with other brane
+universes nearby. These branes could interact
+gravitationally or even collide, setting off the Big Bang. 
+
+In one version suggested last year by four cosmologists
+led by Dr. Steinhardt of Princeton, another brane would
+repeatedly collide with our own. They pass back and forth
+through each other, causing our universe to undergo an
+eternal chain of big bangs. 
+
+Such notions are probably the future for those who are paid
+to wonder about the universe. 
+
+And the fruits of this work could yet cause cosmologists to
+reconsider their new consensus, warned Dr. Peebles of
+Princeton, who has often acted as the conscience of the
+cosmological community, trying to put the brakes on faddish
+trends. 
+
+He wonders whether the situation today can be compared to
+another historical era, around 1900, when many people
+thought that physics was essentially finished and when the
+English physicist Lord Kelvin said that just a couple of
+"clouds" remained to be dealt with. 
+
+"A few annoying tidbits, which turned out to be relativity
+and quantum theory," the twin revolutions of 20th-century
+science, Dr. Peebles said. 
+
+Likewise, there are a few clouds today like what he called
+"the dark sector," which could have more complicated
+physics than cosmologists think. 
+
+"I'm not convinced these clouds herald revolutions as deep
+as relativity and quantum mechanics," Dr. Peebles said.
+"I'm not arguing that they won't." 
+
+As for the fate of the universe, we will never have a firm
+answer, said Dr. Sandage, who was Hubble's protégé and has
+seen it all. 
+
+"It's like asking, `Does God exist?' " he said.
+
+
+Predicting the future, he pointed out, requires faith that
+simple mathematical models really work to describe the
+universe. 
+
+"I don't think we really know how things work," he said.
+
+
+Although Dr. Sandage does not buy into all aspects of the
+emerging orthodoxy, he said it was a fantastic time to be
+alive. 
+
+"It's all working toward a much grander synthesis than we
+could have imagined 100 years ago," he said. "I think this
+is the most exciting life I could have had."
+
+http://www.nytimes.com/2002/07/23/science/space/23UNIV.html?ex=1028416223&ei=1&en=ff38ea5fac0c9158
+
+
+
+HOW TO ADVERTISE
+---------------------------------
+For information on advertising in e-mail newsletters 
+or other creative advertising opportunities with The 
+New York Times on the Web, please contact
+onlinesales@nytimes.com or visit our online media 
+kit at http://www.nytimes.com/adinfo
+
+For general information about NYTimes.com, write to 
+help@nytimes.com.  
+
+Copyright 2002 The New York Times Company
+http://xent.com/mailman/listinfo/fork
+
+

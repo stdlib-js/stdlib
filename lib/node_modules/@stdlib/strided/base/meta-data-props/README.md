@@ -1,0 +1,188 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2021 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# setProps
+
+> Define non-enumerable read-only properties which expose strided array function meta data.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var setProps = require( '@stdlib/strided/base/meta-data-props' );
+```
+
+#### setProps( meta, dtypes, obj, bool )
+
+Defines non-enumerable read-only properties which expose strided array function meta data.
+
+<!-- eslint-disable array-element-newline -->
+
+```javascript
+// Define strided array function meta data:
+var meta = {
+    'nargs': 7,
+    'nin': 1,
+    'nout': 1
+};
+
+// Define the list of strided array data types:
+var dtypes = [
+    'float64', 'float64'
+];
+
+// Define an object/function on which to set the properties:
+var obj = {};
+
+// Set the properties:
+setProps( meta, dtypes, obj, false );
+```
+
+The `meta` data argument should be an `object` with the following properties:
+
+-   **nargs**: total number of arguments (excluding offsets).
+-   **nin**: number of input strided arrays.
+-   **nout**: number of output strided arrays.
+
+The `bool` argument indicates whether the input object should describe an "ndarray" interface (i.e., an interface supporting `offset` arguments).
+
+<!-- eslint-disable array-element-newline -->
+
+```javascript
+// Define strided array function meta data:
+var meta = {
+    'nargs': 7, // excludes offsets
+    'nin': 1,
+    'nout': 1
+};
+
+// Define the list of strided array data types:
+var dtypes = [
+    'float64', 'float64'
+];
+
+// Define an object/function on which to set the properties:
+var obj = {};
+
+// Set the properties:
+setProps( meta, dtypes, obj, true );
+
+// Retrieve the total number of arguments:
+var nargs = obj.nargs;
+// returns 9
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint-disable array-element-newline -->
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var setProps = require( '@stdlib/strided/base/meta-data-props' );
+
+// Define strided array function meta data:
+var meta = {
+    'nargs': 7,
+    'nin': 1,
+    'nout': 1
+};
+
+// Define the list of strided array data types:
+var types = [
+    'float64', 'float64',
+    'float32', 'float32',
+    'generic', 'generic'
+];
+
+// Define an object/function on which to set the properties:
+var obj = {};
+
+// Set the properties:
+setProps( meta, types, obj, false );
+
+// Retrieve strided array function data...
+var nargs = obj.nargs;
+// returns 7
+
+var nin = obj.nin;
+// returns 1
+
+var nout = obj.nout;
+// returns 1
+
+var sigs = obj.types;
+// returns [...]
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

@@ -1,0 +1,39 @@
+
+{{alias}}( [options] )
+    Returns an iterator which generates a sequence of negative odd integers.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Function options.
+
+    options.iter: integer (optional)
+        Number of iterations. Default: 4503599627370496.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it = {{alias}}();
+    > var v = it.next().value
+    -1
+    > v = it.next().value
+    -3
+
+    See Also
+    --------
+

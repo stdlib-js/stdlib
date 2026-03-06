@@ -1,0 +1,81 @@
+From fork-admin@xent.com  Mon Aug 19 11:03:57 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 54564441A8
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:08 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7H80S623572 for <jm@jmason.org>;
+    Sat, 17 Aug 2002 09:00:30 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 944FB2940D6; Sat, 17 Aug 2002 00:58:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id 5C2C2294098 for <fork@xent.com>; Sat,
+    17 Aug 2002 00:57:53 -0700 (PDT)
+Received: (qmail 39634 invoked from network); 17 Aug 2002 07:59:10 -0000
+Received: from adsl-66-124-225-138.dsl.snfc21.pacbell.net (HELO golden)
+    (66.124.225.138) by relay1.pair.com with SMTP; 17 Aug 2002 07:59:10 -0000
+X-Pair-Authenticated: 66.124.225.138
+Message-Id: <006101c245c3$f2f2c190$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: <fork@spamassassin.taint.org>
+References: <4.3.2.7.2.20020817003903.0215d3e0@mailsj-v1>
+Subject: Re: NASA mindreading
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 17 Aug 2002 00:59:00 -0700
+
+Sounds like the "brain fingerprinting" touted by Steve Kirsch 
+last October...
+
+   http://www.skirsch.com/politics/plane/ultimate.htm
+
+The commercial firm may very well be "Human Brain Research
+Labs, Inc."...
+
+   http://www.brainwavescience.com/
+
+- Gordon
+
+----- Original Message ----- 
+From: "Chris Arkenberg" <carkenbe@adobe.com>
+To: <fork@spamassassin.taint.org>
+Sent: Saturday, August 17, 2002 12:46 AM
+Subject: NASA mindreading
+
+
+> NASA Plans to Read Terrorist's Minds at Airports
+> http://www.washtimes.com/national/20020817-704732.htm
+> 
+> This just strikes me as being so ridiculously bizarre. We are truly 
+> beginning to blur reality with science fiction. Makes me think of  Minority 
+> Report (although PKD realized this future decades ago). Especially 
+> concerning (or intriguing?) is the revelation that "the agency is 
+> developing brain-monitoring devices in cooperation with a commercial firm, 
+> which it did not identify".
+> 
+> http://xent.com/mailman/listinfo/fork
+
+http://xent.com/mailman/listinfo/fork
+

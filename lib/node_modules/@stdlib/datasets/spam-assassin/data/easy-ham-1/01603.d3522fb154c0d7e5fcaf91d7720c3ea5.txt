@@ -1,0 +1,78 @@
+From razor-users-admin@lists.sourceforge.net  Thu Oct  3 12:23:27 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0E79216F18
+	for <jm@localhost>; Thu,  3 Oct 2002 12:23:02 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 12:23:02 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g9340pK13843 for <jm-razor@jmason.org>; Thu, 3 Oct 2002 05:00:57 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17wx9i-0001B6-00; Wed,
+    02 Oct 2002 21:00:06 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17wx8n-00031D-00 for <razor-users@lists.sourceforge.net>; Wed,
+    02 Oct 2002 20:59:09 -0700
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: RE: [Razor-users] Fire.cloudmark.com is having issues
+Message-Id: <D79A56AD131896448D0860DEE07CBE1F3BADEB@med-core07.med.wayne.edu>
+X-MS-Has-Attach:
+X-MS-Tnef-Correlator:
+Thread-Topic: [Razor-users] Fire.cloudmark.com is having issues
+Thread-Index: AcJqYq67m17NyZhYQJ+UtliQ471QSQABBryQAAqB/lA=
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: <razor-users@example.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Wed, 2 Oct 2002 23:59:01 -0400
+Date: Wed, 2 Oct 2002 23:59:01 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g9340pK13843
+
+What does this mean?  I set up procmailrc for a spamtrap but I'm getting
+an error.  I also am reporting to pyzor and dcc and they aren't
+registering an error.  What's weird is that it works sometimes.
+
+.
+Oct 02 23:46:11.470523 report[14051]: [ 4] honor.cloudmark.com >> 20
+Oct 02 23:46:11.470805 report[14051]: [ 6] response to sent.3
+-res=1
+err=230
+.
+Oct 02 23:46:11.471825 report[14051]: [ 5] mail 1, orig_email, special
+case eng 1: Server accept
+ed report.
+Oct 02 23:46:11.472228 report[14051]: [ 8] mail 1.0, eng 4: err 230 -
+server wants mail
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

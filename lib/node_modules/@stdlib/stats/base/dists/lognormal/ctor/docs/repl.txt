@@ -1,0 +1,101 @@
+
+{{alias}}( [μ, σ] )
+    Returns a lognormal distribution object.
+
+    Parameters
+    ----------
+    μ: number (optional)
+        Location parameter. Default: `0.0`.
+
+    σ: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    lognormal: Object
+        Distribution instance.
+
+    lognormal.mu: number
+        Location parameter.
+
+    lognormal.sigma: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    lognormal.entropy: number
+        Read-only property which returns the differential entropy.
+
+    lognormal.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    lognormal.mean: number
+        Read-only property which returns the expected value.
+
+    lognormal.median: number
+        Read-only property which returns the median.
+
+    lognormal.mode: number
+        Read-only property which returns the mode.
+
+    lognormal.skewness: number
+        Read-only property which returns the skewness.
+
+    lognormal.stdev: number
+        Read-only property which returns the standard deviation.
+
+    lognormal.variance: number
+        Read-only property which returns the variance.
+
+    lognormal.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    lognormal.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    lognormal.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    lognormal.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    lognormal.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var lognormal = {{alias}}( -2.0, 3.0 );
+    > lognormal.mu
+    -2.0
+    > lognormal.sigma
+    3.0
+    > lognormal.entropy
+    ~0.518
+    > lognormal.kurtosis
+    4312295840576300
+    > lognormal.mean
+    ~12.182
+    > lognormal.median
+    ~0.135
+    > lognormal.mode
+    ~0.0
+    > lognormal.skewness
+    ~729551.383
+    > lognormal.stdev
+    ~1096.565
+    > lognormal.variance
+    ~1202455.871
+    > lognormal.cdf( 0.8 )
+    ~0.723
+    > lognormal.logcdf( 0.8 )
+    ~-4.334
+    > lognormal.logpdf( 2.0 )
+    ~-3.114
+    > lognormal.pdf( 2.0 )
+    ~0.044
+    > lognormal.quantile( 0.9 )
+    ~6.326
+
+    See Also
+    --------
+

@@ -1,0 +1,61 @@
+From ilug-admin@linux.ie  Mon Aug 19 11:46:33 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 65BC243C4F
+	for <jm@localhost>; Mon, 19 Aug 2002 06:28:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 11:28:51 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JA5O617783 for
+    <jm-ilug@jmason.org>; Mon, 19 Aug 2002 11:05:24 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA31367; Mon, 19 Aug 2002 11:04:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from holly.csn.ul.ie (holly.csn.ul.ie [136.201.105.4]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA31334 for <ilug@linux.ie>;
+    Mon, 19 Aug 2002 11:04:36 +0100
+Received: from skynet.csn.ul.ie (skynet [136.201.105.2]) by
+    holly.csn.ul.ie (Postfix) with ESMTP id EFF862B771 for <ilug@linux.ie>;
+    Mon, 19 Aug 2002 11:04:04 +0100 (IST)
+Received: by skynet.csn.ul.ie (Postfix, from userid 2391) id AAF83E7D4;
+    Mon, 19 Aug 2002 11:04:04 +0100 (IST)
+Received: from localhost (localhost [127.0.0.1]) by skynet.csn.ul.ie
+    (Postfix) with ESMTP id A15AC7243 for <ilug@linux.ie>; Mon, 19 Aug 2002
+    11:04:04 +0100 (IST)
+Date: Mon, 19 Aug 2002 11:04:02 +0100 (IST)
+From: Mel <mel@csn.ul.ie>
+X-X-Sender: mel@skynet
+To: ilug@linux.ie
+Message-Id: <Pine.LNX.4.44.0208191057230.31468-100000@skynet>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [ILUG] Tracking NFS users
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+Lets say we have an nfs server with nfsd running really high load. nfsstat
+will tell you roughly how much traffic is going through with access,
+getattr with either client or server but it won't tell you who is doing
+it. Is there any way on server side to determine what client is causing
+the most usage, and on the client side, is there a way to determine which
+process?
+
+-- 
+Mel Gorman
+MSc Student, University of Limerick
+http://www.csn.ul.ie/~mel
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

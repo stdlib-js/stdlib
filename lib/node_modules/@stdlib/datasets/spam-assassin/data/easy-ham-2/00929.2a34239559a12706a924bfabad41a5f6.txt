@@ -1,0 +1,92 @@
+From fork-admin@xent.com  Tue Jul 30 08:09:43 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2364D440EE
+	for <jm@localhost>; Tue, 30 Jul 2002 03:09:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 08:09:43 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6U78Hq12320 for <jm@jmason.org>;
+    Tue, 30 Jul 2002 08:08:17 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 182622940AF; Tue, 30 Jul 2002 00:06:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from pimout1-ext.prodigy.net (pimout1-ext.prodigy.net
+    [207.115.63.77]) by xent.com (Postfix) with ESMTP id 348BF294098 for
+    <fork@xent.com>; Tue, 30 Jul 2002 00:05:22 -0700 (PDT)
+Received: from localhost
+    (dialup-63.212.132.248.Dial1.LosAngeles1.Level3.net [63.212.132.248]) by
+    pimout1-ext.prodigy.net (8.11.0/8.11.0) with ESMTP id g6U75aQ69342 for
+    <fork@xent.com>; Tue, 30 Jul 2002 03:05:36 -0400
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.53d) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <15922161406.20020730000528@magnesium.net>
+To: fork@spamassassin.taint.org
+Subject: One scam to rule them all..
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 30 Jul 2002 00:05:28 -0700
+
+One scam to rule them all,
+One scam to bind them, 
+One scan to burn them all, 
+And the stupidity bind them. 
+
+(Yes, i'm ripping, and badly from LOTR) 
+
+Alright, so NPR's All Things Considered had a wonderful story on the whole Nigerian 419 scams that seem to be running
+into my inbox constantly (Thanks FoRK!) Turns out, these 419 scams (419 is the statute in Nigeria that this particular form
+of fraud falls under) have actually snared a few people -- NPR reported to the tune of 100 million dollars over a few years, in the US alone.
+
+One website listed the 419 scam as being the 'third to fith largest industry in Nigeria' (1), netting billions of dollars
+from around the world.   Its large enough to warrant a governmental investigation and a special number to call and report
+(to the secret service, no less) scam abuse. (2)   Folks are apparently being held for ransom if they decide to go
+'check out' the scam.  (3).
+
+Listen to the NPR article (4).   What's great about NPR is the commentary at the end. Turns out, this is all unbelievably
+common.   The origination, at least to NPR's knowledge, starts with the scam elements being transposed from Nigeria,
+to London, England.   Instead of the bereved widow of a Nigerian national, the originating con was directed to the 'heirs'
+of Sir Frances Drake's estate.   If you were 'chosen' as an heir, you could contribute a portion of your money so that a
+fellow heir (and scam artist) could reclaim the monetary largess in the Court of England, by proving that Elizabeth I had
+nulled Sir Drake's will and taken his fortune as her own.   Oscar
+Hartzell, the gent who started this scam, way back in the early 1800s,
+managed to gain quite a fortune, all on the backs of idiots.   Sound familiar?
+
+A fool and his money, deserve to be parted. 
+
+(1) http://home.rica.net/alphae/419coal/
+(2) 'If you have received a letter, but have not lost any monies to this scheme, please fax a copy of that letter to
+(202) 406-5031.'  From:  http://www.secretservice.gov/alert419.shtml  --
+They also have a number for those idiots who have lost their money to this.  
+(3) http://www.crimes-of-persuasion.com/Crimes/Business/nigerian.htm
+(4) http://www.npr.org/ramfiles/atc/20020729.atc.12.ram  -- Go down to Nigerian 419 scams
+
+
+So i'm in a wierd mood, go figure.
+
+BB
+-- 
+Best regards,
+ bitbitch                          mailto:bitbitch@magnesium.net
+
+
+http://xent.com/mailman/listinfo/fork
+
+

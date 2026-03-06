@@ -1,0 +1,63 @@
+From social-admin@linux.ie  Mon Jul 22 19:30:27 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 59948440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 14:30:27 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:30:27 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQi403693 for
+    <jm+ilug-social@jmason.org>; Mon, 22 Jul 2002 18:26:45 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id GAA22356 for
+    <jm+ilug-social@jmason.org>; Sat, 20 Jul 2002 06:20:59 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id GAA18522; Sat, 20 Jul 2002 06:20:02 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id GAA18459 for <social@linux.ie>;
+    Sat, 20 Jul 2002 06:19:56 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17Vmen-0005Wx-00 for <social@linux.ie>; Fri, 19 Jul 2002 22:19:53 -0700
+Date: Fri, 19 Jul 2002 22:19:50 -0700
+To: social@linux.ie
+Subject: Re: [ILUG-Social] Completely silent pc
+Message-Id: <20020720051950.GE28205@linuxmafia.com>
+References: <Pine.GSO.4.10.10207192318220.27597-100000@matrix>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <Pine.GSO.4.10.10207192318220.27597-100000@matrix>
+User-Agent: Mutt/1.3.28i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+Quoting Greg Farrel (greg@netsoc.tcd.ie):
+
+> I'm looking to build a completely silent pc. It's gonna be a gateway for
+> a wireless network and will sit in my room (as my room is only
+> spitting distance from the chimney where i'll be mounting the aerial) 
+> It has to be completely silent, or it'll do my nut. What do I need? 
+
+An old laptop would probably be ideal.  That way, it comes with its own 
+UPS (the battery).
+
+Some people strip down old 486 boxes, take out the hard drive, disable
+the fans, and run the thing from just a floppy drive or a CDR you've
+burned for the purpose.  
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

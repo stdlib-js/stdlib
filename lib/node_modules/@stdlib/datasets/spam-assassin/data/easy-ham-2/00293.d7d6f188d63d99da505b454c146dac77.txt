@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Fri Aug  9 14:37:47 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2D33D440CF
+	for <jm@localhost>; Fri,  9 Aug 2002 09:37:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 14:37:45 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79DZJb01804 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 14:35:19 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id OAA06603 for <jm-ilug@jmason.org>;
+    Fri, 9 Aug 2002 14:32:13 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA10280; Fri, 9 Aug 2002 14:30:53 +0100
+Received: from w2k-server.bcs.ie ([195.218.97.197]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA10247 for <ilug@linux.ie>; Fri,
+    9 Aug 2002 14:30:46 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.97.197] claimed
+    to be w2k-server.bcs.ie
+Received: by w2k-server.bcs.ie with Internet Mail Service (5.5.2653.19) id
+    <QMRGFJAA>; Fri, 9 Aug 2002 14:32:57 +0100
+Message-Id: <214A52C16E44D51186FB00508BB83E0F7C0D60@w2k-server.bcs.ie>
+From: "Damian O' Sullivan" <Damian.OSullivan@bcs.ie>
+To: "'Albert White - SUN Ireland'" <albert.white@ireland.sun.com>,
+	ilug@linux.ie
+Subject: RE: [ILUG] Sparc Solaris (was: Dell GX260 V Redhat 7.3)
+Date: Fri, 9 Aug 2002 14:32:50 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I use gnome here on half a dozen sunray 150 boxen. Been trying to get linux
+on them for along time with mixed results.. Has anyone succeeded in this?
+
+> -> It does work on SunRays. Just install it normally on the 
+> server, the sun 
+> install will make the necessary changes to the dtlogin screen 
+> and you can just 
+> select gnome from there. AFAIK you can do this for any window 
+> manager. But I 
+> don't admin sunray servers so I'm not fully aware of the 
+> issues or exact 
+> requirements.
+> 
+> Cheers,
+> ~Al
+> 
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Tests if a double-precision floating-point numeric value is finite.
+
+    Parameters
+    ----------
+    x: number
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the value is finite.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 5.0 )
+    true
+    > bool = {{alias}}( -2.0e64 )
+    true
+    > bool = {{alias}}( {{alias:@stdlib/constants/float64/pinf}} )
+    false
+    > bool = {{alias}}( {{alias:@stdlib/constants/float64/ninf}} )
+    false
+
+    See Also
+    --------
+

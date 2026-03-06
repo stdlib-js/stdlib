@@ -1,0 +1,92 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Aug 28 11:31:04 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8D5F943F99
+	for <jm@localhost>; Wed, 28 Aug 2002 06:31:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 11:31:03 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SASPZ20018 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 11:28:25 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k00W-0004WX-00; Wed,
+    28 Aug 2002 03:25:04 -0700
+Received: from [212.2.188.179] (helo=mandark.labs.netnoteinc.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17k00C-0005AS-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 03:24:46 -0700
+Received: from phobos.labs.netnoteinc.com (phobos.labs.netnoteinc.com
+    [192.168.2.14]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP
+    id g7SAOA501889; Wed, 28 Aug 2002 11:24:10 +0100
+Received: by phobos.labs.netnoteinc.com (Postfix, from userid 500) id
+    A2DAE43F99; Wed, 28 Aug 2002 06:21:52 -0400 (EDT)
+Received: from phobos (localhost [127.0.0.1]) by
+    phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7D7E933D8C;
+    Wed, 28 Aug 2002 11:21:52 +0100 (IST)
+To: "Steve Thomas" <sthomas@apexvoice.com>
+Cc: "Jonathan Nichols" <jnichols@pbp.net>,
+	"Spam Assassin" <spamassassin-talk@lists.sourceforge.net>
+Subject: Re: [SAtalk] Setting up a spam eating address
+In-Reply-To: Message from
+    "Steve Thomas"
+    <sthomas@apexvoice.com> of
+    "Tue, 27 Aug 2002 11:09:34 PDT."
+    <PIEHJPLNKGMNAHJKHLFCOEPHCDAA.sthomas@apexvoice.com>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Message-Id: <20020828102152.A2DAE43F99@phobos.labs.netnoteinc.com>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 11:21:47 +0100
+Date: Wed, 28 Aug 2002 11:21:47 +0100
+
+
+"Steve Thomas" said:
+
+> I created a user (honeypot) and set up an alias to it. Then I added a
+> 'hidden' (font color same as background color) link to that address at the
+> bottom of my html pages. The .procmailrc file for that user is: .....
+> which will submit the msg to razor then save it locally. I set this up about
+> a month ago, and haven't received anything other than some viruses (Sircam)
+> on it yet. The viruses are rejected at the MTA level, so they're not being
+> saved/reported to razor.
+
+FWIW, I would now recommend doing this (using a user with a procmailrc)
+instead of a system alias; more secure, and easier to filter out crud
+like bounces, virii etc. that render a corpus dirty.
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

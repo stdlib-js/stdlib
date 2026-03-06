@@ -1,0 +1,105 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:08:39 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2776747C75
+	for <jm@localhost>; Thu, 29 Aug 2002 06:06:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:06:16 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7T5WqZ32177 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 06:32:52 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kHta-0006lU-00; Wed,
+    28 Aug 2002 22:31:06 -0700
+Received: from adsl-216-103-211-240.dsl.snfc21.pacbell.net
+    ([216.103.211.240] helo=proton.pathname.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kHtS-0005oz-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 22:30:58 -0700
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17kHtK-00013z-00; Wed, 28 Aug 2002 22:30:50 -0700
+To: "Dan Kohn" <dan@dankohn.com>
+Cc: <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+References: <A23DE7A325D23B49A76B54080E0BCB9E2924A9@kabul.ad.skymv.com>
+From: Daniel Quinlan <quinlan@pathname.com>
+In-Reply-To: "Dan Kohn"'s message of "Wed, 28 Aug 2002 20:09:49 -0700"
+Message-Id: <yf2k7majkol.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: 28 Aug 2002 22:30:50 -0700
+Date: 28 Aug 2002 22:30:50 -0700
+
+Dan Kohn <dan@dankohn.com> writes:
+
+> Guys, the Habeas Infringers List (HIL) exists explicitly to deal with
+> spammers while we're getting judgments against them and especially in
+> other countries, where those judgments are harder to get.
+
+My concern doesn't stem from failing to understand how your business is
+intended to work.  My concern is the lack of empirical evidence that it
+will reduce the amount of uncaught spam.
+
+> Please note that nobody has ever had an incentive before to go after
+> regular spammers.  Yes, some attorneys general have prosecuted blatant
+> pyramid schemes, and ISPs have won some theft of service suits, but
+> the vast majority of spammers go forward with out any legal hassles.
+> So, I can't understand how Daniel can assert that you can't track
+> spammers down when it's never really been tried.
+
+Please don't misquote me.  I did not assert that you "can't track
+spammers".  Here is what I said:
+
+| It will be difficult to find, prosecute, and win money from someone in
+| various non-friendly countries where spam originates (China is a good
+| example) even if they do officially "respect" copyright law.
+
+I understand the incentive that you have to pursue spammers, but that
+does not directly translate to less spam being sent to my inbox.  It is
+an indirect effect and the magnitude of the effect may not be sufficient
+to counteract the ease with which a -20 score on the mark allows spam to
+avoid being tagged as spam.
+
+> Daniel, it's easy enough for you to change the Habeas scores yourself
+> on your installation.  If Habeas fails to live up to its promise to
+> only license the warrant mark to non-spammers and to place all
+> violators on the HIL, then I have no doubt that Justin and Craig will
+> quickly remove us from the next release.  But, you're trying to kill
+> Habeas before it has a chance to show any promise.
+
+I think I've worked on SA enough to understand that I can localize a
+score.  I'm just not comfortable with using SpamAssassin as a vehicle
+for drumming up your business at the expense of our user base.
+
+I think it would make more sense to start Habeas with a less aggressive
+score (one which will not give spammers a quick path into everyone's
+inbox) and after we've seen evidence that the system works, then we can
+increase the magnitude of the score.
+
+Dan
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

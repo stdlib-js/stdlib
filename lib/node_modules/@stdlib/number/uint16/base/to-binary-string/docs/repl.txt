@@ -1,0 +1,36 @@
+
+{{alias}}( x )
+    Returns a string giving the literal bit representation of an unsigned 16-bit
+    integer.
+
+    Except for typed arrays, JavaScript does not provide native user support for
+    unsigned 16-bit integers. According to the ECMAScript standard, `number`
+    values correspond to double-precision floating-point numbers. While this
+    function is intended for unsigned 16-bit integers, the function will accept
+    floating-point values and represent the values as if they are unsigned
+    16-bit integers. Accordingly, care should be taken to ensure that only
+    nonnegative integer values less than `65536` (`2^16`) are provided.
+
+    Parameters
+    ----------
+    x: integer
+        Input value.
+
+    Returns
+    -------
+    str: string
+        Bit representation.
+
+    Examples
+    --------
+    > var a = new {{alias:@stdlib/array/uint16}}( [ 1, 4, 9 ] );
+    > var str = {{alias}}( a[ 0 ] )
+    '0000000000000001'
+    > str = {{alias}}( a[ 1 ] )
+    '0000000000000100'
+    > str = {{alias}}( a[ 2 ] )
+    '0000000000001001'
+
+    See Also
+    --------
+

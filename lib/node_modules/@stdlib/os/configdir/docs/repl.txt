@@ -1,0 +1,34 @@
+
+{{alias}}( [p] )
+    Returns a directory for user-specific configuration files.
+
+    On Windows platforms, the function first checks for a `LOCALAPPDATA`
+    environment variable before checking for an `APPDATA` environment variable.
+    This means that machine specific user configuration files have precedence
+    over roaming user configuration files.
+
+    On non-Windows platforms, if the function is unable to locate the current
+    user's `home` directory, the function returns `null`. Similarly, on Windows
+    platforms, if the function is unable to locate an application data
+    directory, the function also returns `null`.
+
+    Parameters
+    ----------
+    p: string (optional)
+        Path to append to a base directory.
+
+    Returns
+    -------
+    out: string|null
+        Directory.
+
+    Examples
+    --------
+    > var dir = {{alias}}()
+    e.g., '/Users/<username>/Library/Preferences'
+    > dir = {{alias}}( 'appname/config' )
+    e.g., '/Users/<username>/Library/Preferences/appname/config'
+
+    See Also
+    --------
+

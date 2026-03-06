@@ -1,0 +1,79 @@
+
+{{alias}}( [options,] [requestListener] )
+    Returns a function to create an HTTP server.
+
+    In addition to options documented below, the function supports any options
+    supported by `http.createServer`. Which server options are supported depends
+    on the Node.js version. Older Node.js versions (e.g., <= v8.12.0) do not
+    support an options object when calling `http.createServer`, and, for those
+    versions, any options supported by `http.createServer` in later Node.js
+    versions are ignored.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.port: integer (optional)
+        Server port. Default: `0` (i.e., randomly assigned).
+
+    options.maxport: integer (optional)
+        Max server port when port hunting. Default: `maxport = port`.
+
+    options.hostname: string (optional)
+        Server hostname.
+
+    options.address: string (optional)
+        Server address. Default: `'127.0.0.1'`.
+
+    requestListener: Function (optional)
+        Request callback.
+
+    Returns
+    -------
+    httpServer: Function
+        Function to create an HTTP server.
+
+    Examples
+    --------
+    // Basic usage:
+    > var boot = {{alias}}()
+    <Function>
+
+    // Provide a request callback:
+    > function onRequest( request, response ) {
+    ...    console.log( request.url );
+    ...    response.end( 'OK' );
+    ... };
+    > boot = {{alias}}( onRequest )
+    <Function>
+
+    // Specify a specific port:
+    > var opts = { 'port': 7331 };
+    > boot = {{alias}}( opts )
+    <Function>
+
+
+boot( done )
+    Creates an HTTP server.
+
+    Parameters
+    ----------
+    done: Function
+        Callback to invoke after creating a server.
+
+    Examples
+    --------
+    > function done( error, server ) {
+    ...    if ( error ) {
+    ...        throw error;
+    ...    }
+    ...    console.log( 'Success!' );
+    ...    server.close();
+    ... };
+    > var boot = {{alias}}();
+    > boot( done );
+
+    See Also
+    --------
+

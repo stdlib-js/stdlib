@@ -1,0 +1,38 @@
+From rssfeeds@jmason.org  Tue Sep 24 10:47:43 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7B71B16F16
+	for <jm@localhost>; Tue, 24 Sep 2002 10:47:43 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:47:43 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8O808C26537 for
+    <jm@jmason.org>; Tue, 24 Sep 2002 09:00:08 +0100
+Message-Id: <200209240800.g8O808C26537@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: scripting <rssfeeds@spamassassin.taint.org>
+Subject: "rssflowersalignright"I've gotten to know Phil Ringalda over the
+    last few w
+Date: Tue, 24 Sep 2002 08:00:08 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://scriptingnews.userland.com/backissues/2002/09/23#When:8:59:58PM
+Date: Tue, 24 Sep 2002 03:59:58 GMT
+
+"rssflowersalignright"I've gotten to know Phil Ringalda over the last few weeks 
+in all the discussions about RSS 2.0, and I like him, and would like to work 
+with him in the future. I don't say that lightly. This evening he posted a note
+[1] on his weblog that he was giving up trying to get RDF to make sense inside 
+RSS. As I read his essay I could feel two-plus years of exhaustion overwhelm 
+me. I found myself writing a comment after his essay saying, among other things 
+"RSS is not a brilliant format. It is a compromise. It is for syndicating news 
+feeds. That's all it is for, for the 18,000th time." It's time for RDF to pack 
+its bags and leave. RSS deserves some dignity, as does RDF. Emphatically, once 
+and for all, they are not the same thing. Peace be with you RDF. Leave RSS 
+alone. Thank you.
+
+[1] http://philringnalda.com/archives/002330.php
+
+

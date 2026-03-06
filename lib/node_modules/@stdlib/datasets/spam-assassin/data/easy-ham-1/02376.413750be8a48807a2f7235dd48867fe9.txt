@@ -1,0 +1,47 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:52:36 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1500D16F56
+	for <jm@localhost>; Wed,  9 Oct 2002 10:51:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:51:35 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9980FK25143 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:00:15 +0100
+Message-Id: <200210090800.g9980FK25143@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Movable Type 2.5 is out
+Date: Wed, 09 Oct 2002 08:00:15 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/10/08.html#movable_type_25_is_out
+Date: 2002-10-08T20:52:08-05:00
+
+Movable Type 2.5 is out. I'm running it and it appears to work. It incorporates 
+many suggestions from Dive Into Accessibility[1], a book which was written in 
+and is still powered by Movable Type. I find this amusing in a self-referential 
+sort of way. 
+
+The other big change is the inclusion of MT-search to allow users to have their 
+own site search. Every web site needs a site search[2]. Existing MT-search 
+users should merge the contents of mt-search.cfg into mt.cfg, change 
+"TemplateDir" to "SearchTemplatePath", and (if you use alternate templates) 
+change "AltTemplate1", "AltTemplate2", "AltTemplate3", etc. to "AltTemplate". 
+They should all just be "AltTemplate". 
+
+- Download MT 2.5[3]. 
+- MT 2.5 changelog[4]. 
+
+
+
+
+
+[1] http://diveintoaccessibility.org/
+[2] http://diveintoaccessibility.org/day_29_making_everything_searchable.html
+[3] http://www.movabletype.org/25/
+[4] http://www.movabletype.org/docs/mtchanges.html#2.5 (2002.10.08)
+
+

@@ -1,0 +1,100 @@
+From fork-admin@xent.com  Tue Oct  8 00:32:02 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 07AF716F03
+	for <jm@localhost>; Tue,  8 Oct 2002 00:32:02 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 08 Oct 2002 00:32:02 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g97NQTK21525 for <jm@jmason.org>;
+    Tue, 8 Oct 2002 00:26:30 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id EF30E2940A1; Mon,  7 Oct 2002 16:26:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id A152A29409A for <fork@xent.com>;
+    Mon,  7 Oct 2002 16:25:44 -0700 (PDT)
+Received: (qmail 59714 invoked by uid 19621); 7 Oct 2002 23:23:42 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 7 Oct 2002 23:23:42 -0000
+Subject: Re: erratum [Re: no matter ...] & errors
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <3DA1E514.9080807@permafrost.net>
+References: <200210071841.LAA25074@maltesecat>
+    <3DA1E514.9080807@permafrost.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1034034330.14068.144.camel@avalon>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 07 Oct 2002 16:45:30 -0700
+
+On Mon, 2002-10-07 at 12:48, Owen Byrne wrote:
+> I suppose Canada, which is supposed to be a "loose confederation" of 2 
+> founding nations (French and English) can be cited as a success. The 
+> jury is still out, but so far only a few brief rebellions and 
+> referendums and such, still together after 130+ years.
+
+
+Alberta, and to a lesser extent some of the other Western provinces, is
+definitely not happy with the current arrangement.  Some of this has to
+do with the strange way the Canadian government is structured.  When I
+was last up in Alberta (a month ago), the newspapers were reporting
+something like 70% of Albertans favor separating from Canada, and over
+several distinct issues.
+
+The problem is basically that while Alberta is an economic powerhouse
+that is propping up the weaker economies of the Eastern provinces, their
+interests are openly and unapologetically ignored by the government in
+Ottawa.  While Alberta sends something like twice the tax dollars to
+Ottawa per capita of the average Canadian, they only have token
+representation in the federal government.  While I'm not clear on
+exactly how the government works up there, representation is not
+entirely based on population, and it works out that some eastern
+provinces with populations smaller than the city of Calgary alone have
+substantially more representatives in the legislature than the entire
+province of Alberta.  
+
+The long and the short of it is that the eastern provinces use Alberta
+as a personal ATM machine for their social programs while not even so
+much as throwing Alberta a bone, and are able to do so because even the
+sparsely populated eastern provinces can out-vote Alberta despite having
+fewer people.  Or something like that.  The Canadian government is less
+restricted than the US government, so they can do strange things, like
+having restrictive regulations that only apply to certain provinces,
+Alberta being on the receiving end of many such obscenities.  It is
+essentially a much worse version of what is happening in the
+inter-mountain West of the US.  Unlike the US case though, the rest of
+Canada would really be hurting if they weren't receiving all those tax
+dollars from Alberta.  OTOH, Alberta would probably thrive.
+
+I have friends in Alberta, and visit occasionally, but I'm not totally
+clear on everything that goes on in that country, due to my partial
+unfamiliarity with how the government works up there, so I'm a little
+fuzzy on some of the details.  What I do know is that on average the
+Albertans are quite unhappy with their current position in Canada and
+the sentiment has been getting worse over the years.
+
+Cheers,
+
+-James Rogers
+ jamesr@best.com
+
+
+

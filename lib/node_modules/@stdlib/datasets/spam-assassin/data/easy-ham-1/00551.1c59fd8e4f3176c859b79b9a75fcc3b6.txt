@@ -1,0 +1,97 @@
+From fork-admin@xent.com  Wed Sep 11 13:49:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 14DE716F03
+	for <jm@localhost>; Wed, 11 Sep 2002 13:49:34 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 13:49:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8B6aQC04905 for <jm@jmason.org>;
+    Wed, 11 Sep 2002 07:36:27 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2B9962940A1; Tue, 10 Sep 2002 23:33:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav60.law15.hotmail.com [64.4.22.195]) by
+    xent.com (Postfix) with ESMTP id 17D4E29409A for <fork@xent.com>;
+    Tue, 10 Sep 2002 23:32:52 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Tue, 10 Sep 2002 23:35:46 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+Subject: Microsoft Buys XDegrees - Secure Access Company
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV60rKqo87oYacsfGv00012b5e@hotmail.com>
+X-Originalarrivaltime: 11 Sep 2002 06:35:46.0333 (UTC) FILETIME=[75D21CD0:01C2595D]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 10 Sep 2002 23:39:58 -0700
+
+
+==
+http://siliconvalley.internet.com/news/article.php/10862_1460701
+
+Microsoft Tuesday said it has purchased a Mountain View, Calif.-based
+security company to better secure its core file services including its
+Windows platform and .NET initiative.
+
+The Redmond, Wash-based software giant has acquired the assets of XDegrees
+for an undisclosed amount of cash and is in the process of relocating the
+team of 12 or 14 engineers to the Microsoft campus.
+
+XDegrees' technology assigns URLs to Word files, video clips, and other
+digital documents for access across a peer-to-peer network
+
+XDegrees founder Michael Tanne was offered a job, but decided instead to
+play his hand in the Silicon Valley.
+==========
+
+"XDegrees' technology assigns URLs to Word files, video clips, and other
+digital documents for access across a peer-to-peer network" - assigns URLs
+to Word files... and somebody /bought/ that?
+
+===
+http://www.xdegrees.com/pr_2001-11-12_1.html
+"The XDegrees System allows users to easily and consistently locate, access
+and manage information by assigning each document a unique link. Providing
+end-to-end security, the XDegrees System unifies authentication of all
+users, provides file-level access control and encrypts all stored and
+transferred files. Seamless integration with existing applications such as
+email clients and Microsoft Office products allows companies to rapidly
+deploy the XDegrees System and users to get up-and-running quickly."
+
+Whoa... high tech...
+
+===
+More bits here...
+http://www.openp2p.com/pub/a/p2p/2001/04/27/xdegrees.html
+
+"The essence of XDegrees consists of a naming system and a distributed
+database that allows peers to resolve resource names. XDegrees manages these
+services for customers on its own hosts, and sells its software to
+enterprises so they can define and run their own namespaces on in-house
+servers. You can search for a particular person (whatever device the person
+is currently using), for a particular device, for a file, or even for a web
+service. The software that resolves resource names is called XRNS (the
+eXtensible Resource Name System)."
+
+
+

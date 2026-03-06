@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Mon Jul 29 20:17:20 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 965DA440EE
+	for <jm@localhost>; Mon, 29 Jul 2002 15:17:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 20:17:20 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6TJAVq14713 for <jm@jmason.org>;
+    Mon, 29 Jul 2002 20:10:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0467E2940DD; Mon, 29 Jul 2002 12:08:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (f9.law15.hotmail.com [64.4.23.9]) by xent.com
+    (Postfix) with ESMTP id 6A2C32940DA for <fork@xent.com>; Mon,
+    29 Jul 2002 12:07:48 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Mon, 29 Jul 2002 12:08:06 -0700
+Received: from 216.30.74.2 by lw15fd.law15.hotmail.msn.com with HTTP;
+    Mon, 29 Jul 2002 19:08:05 GMT
+X-Originating-Ip: [216.30.74.2]
+From: "Russell Turpin" <deafbox@hotmail.com>
+To: fork@spamassassin.taint.org
+Subject: Re: [NYT] A Sudden Rush to Declare Bankruptcy is Expected
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed
+Message-Id: <F9lj99A9tN0DhtK8x9O0000290c@hotmail.com>
+X-Originalarrivaltime: 29 Jul 2002 19:08:06.0058 (UTC) FILETIME=[450488A0:01C23733]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 29 Jul 2002 19:08:05 +0000
+
+Owen Byrne:
+>I think his beef is that the laws for personal bankruptcy are being 
+>rewritten without touching
+>corporate bankruptcy, another example of how the legal construct known as a 
+>"corporation"
+>is treated more favorably than the non-legal construct known as a "human 
+>being."
+
+Yeah, I get that. I just think this is a poor
+example. Corporate bankruptcy is a power fight
+between creditors, management, and shareholders
+over control of assets. Because a corporation is
+incorporeal (hee, hee), it can't be much else.
+
+If you're concerned about the imbalance of power
+related to corporations, I think the more relevant
+areas are tax structures, especially the income
+tax, various forms of externality, law related to
+employment, corporate transparency, and corporate
+governance.
+
+
+
+
+_________________________________________________________________
+Chat with friends online, try MSN Messenger: http://messenger.msn.com
+
+http://xent.com/mailman/listinfo/fork
+
+

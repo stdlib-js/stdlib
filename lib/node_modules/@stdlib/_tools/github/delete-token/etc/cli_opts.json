@@ -1,0 +1,24 @@
+{
+	"string": [
+		"username",
+		"password",
+		"otp",
+		"useragent",
+		"scopes"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"useragent": [
+			"ua"
+		]
+	}
+}

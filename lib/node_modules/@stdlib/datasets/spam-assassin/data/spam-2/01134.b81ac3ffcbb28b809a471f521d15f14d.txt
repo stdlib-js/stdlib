@@ -1,0 +1,79 @@
+From fcallthewayto@msn.com  Mon Jul 29 11:40:29 2002
+Return-Path: <fcallthewayto@msn.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2A5974410F
+	for <jm@localhost>; Mon, 29 Jul 2002 06:35:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:35:30 +0100 (IST)
+Received: from 204.108.85.193 ([66.123.101.87]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g6RM2Li29650 for <webmaster@efi.ie>;
+    Sat, 27 Jul 2002 23:02:23 +0100
+Message-Id: <200207272202.g6RM2Li29650@dogma.slashnull.org>
+From: "vlsdMilan S. Markovich" <fcallthewayto@msn.com>
+To: Nadeem.Pedersev@dogma.slashnull.org
+Cc: 
+Subject: 300 Million Business & Consumer eMaiL AddRESSES on 3 CDs $ 99
+Sender: "vlsdMilan S. Markovich" <fcallthewayto@msn.com>
+MIME-Version: 1.0
+Date: Sat, 27 Jul 2002 18:01:28 -0400
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+Content-Type: text/html; charset="iso-8859-1"
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+</head>
+
+<body>
+
+<table border="0" width="78%">
+  <tr>
+    <td width="14%" bgcolor="#800000">&nbsp;</td>
+    <td width="62%" bgcolor="#C0C0C0">
+      <p align="center">&nbsp;</p>
+      <p align="center"><b><font size="4" color="#0000FF">Sick and tired of
+      email directories that don't deliver what they promise?</font></b></p>
+      <p><font face="Arial">These days it's almost getting to the point were you
+      need to buy every single e-mail directory on the market and weed through
+      them to get some decent e-mail addresses to bulk out to.</font></p>
+      <p><font face="Arial">Well the buck stops here! We've bought almost every
+      good directory on the market, cleaned it up and compiled all 300 Million
+      records on 3 CDs for you!</font></p>
+      <p><font face="Arial">Plenty of targeted lists are also available in areas
+      like:</font></p>
+      <ul>
+        <li><font face="Arial">State and Area Code</font></li>
+        <li><font face="Arial">Gambling</font></li>
+        <li><font face="Arial">Dining</font></li>
+        <li><font face="Arial">Gardening</font></li>
+        <li><font face="Arial">Health</font></li>
+        <li><font face="Arial">Golf</font></li>
+        <li><font face="Arial">Home Business</font></li>
+        <li><font face="Arial">Investment</font></li>
+        <li><font face="Arial">Opt-In</font></li>
+        <li><font face="Arial">Web Design</font></li>
+        <li><font face="Arial">Travel</font></li>
+      </ul>
+      <p><b><font color="#FF0000">...AND MANY MORE!</font></b><br>
+      <br>
+      <font face="Arial">Check out this amazing new collection today! Get our <a href="mailto:cloudhaven@btamail.net.cn">website</a>
+      address now by sending a blank email to <a href="mailto:cloudhaven@btamail.net.cn">cloudhaven@btamail.net.cn</a></font></p>
+      <p><font face="Arial">Once you send an email you will receive our website
+      URL in your inbox within seconds!</font></p>
+      <p>&nbsp;</td>
+    <td width="24%" bgcolor="#800000">&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+
+</html>
+
+

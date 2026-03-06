@@ -1,0 +1,75 @@
+From rpm-list-admin@freshrpms.net  Tue Oct  1 10:33:16 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B781516F16
+	for <jm@localhost>; Tue,  1 Oct 2002 10:33:15 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:33:15 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8ULnGK17319 for
+    <jm-rpm@jmason.org>; Mon, 30 Sep 2002 22:49:16 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8ULk1f28682; Mon, 30 Sep 2002 23:46:01
+    +0200
+Received: from mail.addix.net (kahless.addix.net [195.179.139.19]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g8ULj2f23773 for
+    <rpm-list@freshrpms.net>; Mon, 30 Sep 2002 23:45:02 +0200
+Received: from kushana.camperquake.de (kushana.camperquake.de
+    [194.64.167.57]) by mail.addix.net (8.9.3/8.9.3) with ESMTP id XAA17900
+    for <rpm-list@freshrpms.net>; Mon, 30 Sep 2002 23:44:32 +0200
+Received: from nausicaa.camperquake.de ([194.64.167.58] helo=nausicaa) by
+    kushana.camperquake.de with smtp (Exim 3.36 #1) id 17w8Xs-0005sl-00 for
+    rpm-list@freshrpms.net; Mon, 30 Sep 2002 23:57:40 +0200
+From: Ralf Ertzinger <ralf@camperquake.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: apt 0.5.7 on RH 7.x
+Message-Id: <20020930235323.0e045818.ralf@camperquake.de>
+In-Reply-To: <20020930225946.3f3ae6f3.matthias@egwn.net>
+References: <20020930214204.5d631f5b.ralf@camperquake.de>
+    <20020930220002.15c18770.matthias@egwn.net>
+    <20020930223956.6c06655a.ralf@camperquake.de>
+    <20020930225946.3f3ae6f3.matthias@egwn.net>
+Organization: [NDC] ;)
+X-Mailer: Sylpheed version 0.8.2claws (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 30 Sep 2002 23:53:23 +0200
+Date: Mon, 30 Sep 2002 23:53:23 +0200
+
+Hi.
+
+Matthias Saou <matthias@egwn.net> wrote:
+
+> repository... and there's where the problem will be : It will say that
+> there are two synaptic-0.24-fr1 packages (one installed, the other
+> available) with the same version but different dependencies :-/
+> That's why I always keep package versions lower for older distributions.
+
+Ah, now I see. This is a non-issue here, so I'll rebuild locally :)
+
+-- 
+Dog for sale: eats anything and is fond of children.
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

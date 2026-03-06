@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Fri Aug 23 11:09:00 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6C8BB44161
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:06:57 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:06:57 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7N8CWZ15864 for <zzzz@spamassassin.taint.org>;
+    Fri, 23 Aug 2002 09:12:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2DDA329418E; Fri, 23 Aug 2002 01:10:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hughes-fe01.direcway.com (hughes-fe01.direcway.com
+    [66.82.20.91]) by xent.com (Postfix) with ESMTP id 0EC36294099 for
+    <fork@xent.com>; Fri, 23 Aug 2002 01:09:30 -0700 (PDT)
+Received: from spinnaker ([64.157.38.84]) by hughes-fe01.direcway.com
+    (InterMail vK.4.04.00.00 201-232-137 license
+    dcc4e84cb8fc01ca8f8654c982ec8526) with ESMTP id
+    <20020823081149.JPJZ17240.hughes-fe01@spinnaker> for <fork@xent.com>;
+    Fri, 23 Aug 2002 04:11:49 -0400
+Subject: Re: Entrepreneurs
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+From: Chuck Murcko <chuck@topsail.org>
+To: fork@spamassassin.taint.org
+Content-Transfer-Encoding: 7bit
+In-Reply-To: <20020822205834.D7039C44E@argote.ch>
+Message-Id: <DD4216FF-B66F-11D6-837F-003065F93D3A@topsail.org>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 23 Aug 2002 01:11:02 -0700
+
+According to my son, it was actually Homer Simpson, who claimed the 
+French had no word for victory.
+
+Chuck
+
+On Thursday, August 22, 2002, at 01:58 PM, Robert Harley wrote:
+
+> An apparent quote from Dubya, from the Times (sent to me by my Dad):
+>
+> http://www.timesonline.co.uk/printFriendly/0,,1-43-351083,00.html
+>
+> ------------------------------------------------------------------------------
+> TONY BLAIR's special relationship with George W. Bush is under
+> considerable strain. Not only do the two disagree on Yassir Arafat's
+> tenure as leader of the Palestinian Authority, but Blair has started
+> telling disparaging anecdotes about the President.
+>
+> Baroness Williams of Crosby recalled a story told to her by 'my good
+> friend Tony Blair' recently in Brighton. Blair, Bush and Jacques
+> Chirac were discussing economics and, in particular, the decline of
+> the French economy. 'The problem with the French,' Bush confided in
+> Blair, 'is that they don't have a word for entrepreneur.'
+> ------------------------------------------------------------------------------
+>
+> R
+> http://xent.com/mailman/listinfo/fork
+>
+
+http://xent.com/mailman/listinfo/fork
+

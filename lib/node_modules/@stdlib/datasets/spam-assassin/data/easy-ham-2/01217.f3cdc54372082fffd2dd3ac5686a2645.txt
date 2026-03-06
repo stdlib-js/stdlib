@@ -1,0 +1,148 @@
+From rpm-list-admin@freshrpms.net  Tue Aug 13 12:47:54 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EF64D43C32
+	for <jm@localhost>; Tue, 13 Aug 2002 07:47:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 12:47:54 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DBi7e29823 for
+    <jm-rpm@jmason.org>; Tue, 13 Aug 2002 12:44:07 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7DBf1J09005; Tue, 13 Aug 2002 13:41:01
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7DBeEJ07354 for
+    <rpm-list@freshrpms.net>; Tue, 13 Aug 2002 13:40:15 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: RPM-List <rpm-zzzlist@freshrpms.net>
+Subject: Re: Advise on RPM buidling
+Message-Id: <20020813131054.46559ec4.matthias@rpmforge.net>
+In-Reply-To: <1029203194.15281.17.camel@stimpy>
+References: <1029203194.15281.17.camel@stimpy>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 13 Aug 2002 13:10:54 +0200
+Date: Tue, 13 Aug 2002 13:10:54 +0200
+
+Once upon a time, Mark wrote :
+
+> I'm just playing with gnuboy (game boy emulator) as its fairly simple
+> and small.
+> I'm having a few problems with the %docs macro.
+> After reading thru maximum rpm and the rpm docs, I'm still stuck on one
+> thing, in the source for gnuboy there is a directory called docs, that
+> contains, well the docs.
+> 
+> I'm not sure what to pass to the %docs macro?
+> I originally tried:
+> %doc CHANGES  CONFIG  CREDITS  FAQ  HACKING  LIBERTY  README.old  
+> 
+> and it moans about missing files, would I have to put a few lines in the
+> %build macro, just before configure to move the docs out of that
+> directory and into the build root?
+> 
+> ie: mv docs/* ../
+
+Actually, I've already rebuild gnuboy, I just had forgotten to commit the
+spec file, which is now done :
+
+http://freshrpms.net/builds/gnuboy/gnuboy.spec
+
+Basically, %doc is used to put files in %docdir (default to
+/usr/share/docs/%{name}-%{version}/ and the listed files with relative
+paths (i.e. that don't start with a "/") are relative to the %{builddir}
+(the uncompressed source usually). So either you can choose to have a
+"docs" directory inside %{_docdir} by putting :
+%doc docs
+(or, totally equivalent, the latter just reminding it's a directory)
+%doc docs/
+Or you can put all files that are in docs/ directly in %{_docdir} :
+%doc docs/*
+
+Try both, poke around, and you should catch the difference if it's not
+already clear for you.
+You can also mark any file from the %{buildroot} as documentation (will be
+listed when using "-qd" to query the package's docs) by using %doc with
+absolute filenames, for example :
+%doc %{_datadir}/foo-game/manual
+(this is /usr/share/foo-game/manual, an absolute file)
+Also, for the packager's convenience, all files in /usr/share/man (aka
+%{_mandir}) are automatically tagged as %doc.
+
+> Also one more thing, whats the best way to work out the dependencies?
+> as for example with gnuboy, all hte docs and the website says is it
+> needs SDL.
+> 
+> Do I set a Requires: SDL >= 1.2 (as my system uses SDL-1.2.4-5) or just
+> put Requires: SDL.
+
+Build the package once and see if it checks for a specific version, or read
+the installation notes. Often you'll see "checking for SDL >= 1.2.0" for
+example when running configure, then it's best to also make the package
+depend on that version.
+
+> One more quick question, I'm used to compiling source code no problem
+> (cannot program, but stumble through), whats the best way for finding
+> out what RPMS are needed for the Requires & BuildRequires macros?
+> apart from read all the docs and websites info.
+
+Well, read the docs indeed :-) You can also compile the package once
+without those fields and see what the configure script is checking for
+(basically, the libs and versions you'll need to add to the BuildRequires:)
+then once the package is built, query the automatic dependencies that rpm
+put into it. You'll see for instance if the binaries/libs from the package
+need SDL, gtk+  etc. Then add those "Requires:" and rebuild a final version
+of the package.
+Often you can omit some dependencies, for example if a program is checking
+for glib, gtk+, gdk-pixbuf and gnome libraries when being compiled,
+BuildRequires: gnome-libs-devel
+Requires: gnome-libs
+will be enough since they already depend on the "lower level" libs that are
+glib, gtk+ and gdk-pixbuf.
+
+> Once again sorry to bother you with this, but I figured you were the
+> best one to ask.
+
+Well, this is typically the type of information interesting to share with
+others, so I'll copy this answer to the rpm-list hoping some people will
+appreciate :-)
+
+> p.s freshrpms rocks .. creep..creep!
+
+Thanks ;-)
+
+Matthias
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-5
+Load : 0.29 0.20 0.32, AC on-line, battery charging: 100% (8:29)
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Wed Jul 24 04:47:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7FE1B440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 23:47:41 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 04:47:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O3fk418025 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 04:41:47 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DAF0F29410F; Tue, 23 Jul 2002 20:31:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hall.mail.mindspring.net (hall.mail.mindspring.net
+    [207.69.200.60]) by xent.com (Postfix) with ESMTP id 366B72940F2 for
+    <fork@xent.com>; Tue, 23 Jul 2002 20:30:18 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    hall.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17XCzp-0005ms-00 for
+    fork@xent.com; Tue, 23 Jul 2002 23:39:29 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a3bb963cd44ea49@[66.149.49.6]>
+In-Reply-To: <3D3DF927.4000108@barrera.org>
+References: <3D3DE9EB.70307@permafrost.net> <3D3DF927.4000108@barrera.org>
+To: fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: "Ouch. Ouch. Ouch. Ouch. Ouch...."(was Re: My brain hurts)
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 23:22:04 -0400
+
+At 5:47 PM -0700 on 7/23/02, Joseph S. Barrera III wrote:
+
+
+>     And the pirate says, "Aaar, its driving me nuts!"
+
+I can do better pirate jokes than *that*.
+
+Like, what's the 18th letter of the Pirate alphabet?
+
+No?
+
+Okay, a pirate koan then. What's the sound of a pirate clapping?
+
+
+
+:-).
+
+Cheers,
+RAH
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+http://xent.com/mailman/listinfo/fork
+
+

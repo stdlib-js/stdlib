@@ -1,0 +1,31 @@
+
+{{alias}}( fcn, indices[, thisArg] )
+    Returns a function that invokes a provided function with reordered
+    arguments.
+
+    Parameters
+    ----------
+    fcn: Function
+        Input function.
+
+    indices: Array<integer>
+        Argument indices.
+
+    thisArg: any (optional)
+        Function context.
+
+    Returns
+    -------
+    out: Function
+        Function with reordered arguments.
+
+    Examples
+    --------
+    > function foo( a, b, c ) { return [ a, b, c ]; };
+    > var bar = {{alias}}( foo, [ 2, 0, 1 ] );
+    > var out = bar( 1, 2, 3 )
+    [ 3, 1, 2 ]
+
+    See Also
+    --------
+

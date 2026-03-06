@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of the golden ratio.
+
+    Examples
+    --------
+    > {{alias}}
+    1.272019649514069
+
+    See Also
+    --------
+

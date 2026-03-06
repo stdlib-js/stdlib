@@ -1,0 +1,28 @@
+{
+  "alias": "chi",
+  "pkg": "stdlib/random/strided/chi",
+  "base_pkg": "stdlib/random/base/chi",
+  "uniform_prng_pkg_basename": "uniform",
+
+  "param_1": "k",
+  "param_1_stride": "sk",
+  "param_1_offset": "ok",
+  "param_1_value": "2.0",
+  "param_1_rand_min": "2.0",
+  "param_1_rand_max": "5.0",
+  "param_1_desc": "degrees of freedom",
+  "param_1_dtype": "number",
+
+  "from_desc": "a chi distribution",
+  "readme_from_desc": "a [chi][@stdlib/random/base/chi] distribution",
+
+  "readme_heading": "Chi Random Numbers",
+
+  "repl_text_main_desc": "Fills a strided array with pseudorandom numbers drawn from a chi distribution.",
+  "repl_text_ndarray_desc": "Fills a strided array with pseudorandom numbers drawn from a chi distribution using alternative indexing semantics.",
+  "repl_text_factory_desc": "Returns a function for filling strided arrays with pseudorandom numbers drawn from a chi distribution.",
+
+  "repl_text_param_1_desc": "Degrees of freedom.",
+
+  "keywords": "chi,continuous"
+}

@@ -1,0 +1,111 @@
+From fork-admin@xent.com  Thu Aug 22 10:47:00 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5093543C38
+	for <jm@localhost>; Thu, 22 Aug 2002 05:46:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:46:18 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7LIJbZ04740 for <jm@jmason.org>;
+    Wed, 21 Aug 2002 19:19:40 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1BDA8294164; Wed, 21 Aug 2002 11:17:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id 6E6112940AE for <fork@xent.com>; Wed,
+    21 Aug 2002 11:16:46 -0700 (PDT)
+Received: (qmail 18361 invoked from network); 21 Aug 2002 18:18:18 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 21 Aug 2002 18:18:18 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: <fork@spamassassin.taint.org>
+Subject: Property Rights
+Message-Id: <006801c2493f$1ffb10b0$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+In-Reply-To: <200208202116.OAA07065@maltesecat>
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 21 Aug 2002 11:18:18 -0700
+
+Some of the reasons they don't own it is because it is government land
+that you can't convert without an army of lawyers.
+
+In other cases, you originally had owners who didn't have the 'right' to
+subdivide, but they subdivide anyway.
+
+It is interesting to note that for several centuries in Japan it was a
+death sentence to sell land.  They sold it anyway, and kept records.
+
+In the US, we eventually got quite friendly with squatters and adverse
+possession, and integrated out extra-legal arrangements and 'spontaneous
+social contracts' into the official law.
+
+Mr. Long, I think you'd particularly enjoy the De Soto work.
+
+
+
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+Dave
+> Long
+> Sent: Tuesday, August 20, 2002 2:17 PM
+> To: fork@spamassassin.taint.org
+> Subject: RE: The Curse of India's Socialism
+> 
+> 
+> >                                                                   In
+the
+> > Philippines, getting legal title can take 20 years.  In Egypt, about
+80%
+> > of the population in Cairo lives in places where they are officially
+> > illegal.
+> 
+> If the situation in Egypt is anything
+> like the situation in the Philippines,
+> it's because people (due to a strange
+> desire for jobs) squat on land which
+> they don't own.*
+> 
+> For people to be able to buy their own
+> land, capitalism must be healthy, but
+> not triumphant; there need to be too
+> many capitalists, not too few.
+> 
+> (how well off were the major landowners
+> in india before independence?)
+> 
+> -Dave
+> 
+> * In the US, we are not so friendly to
+> our capitalists: adverse possession is
+> only supposed to take 5 years.
+> 
+> (How much do we owe to our frontiers?
+> Heck, in Egypt didn't they pretty much
+> invent geometry a few millenia ago to
+> keep track of their property lines?)
+> 
+> http://xent.com/mailman/listinfo/fork
+
+http://xent.com/mailman/listinfo/fork
+

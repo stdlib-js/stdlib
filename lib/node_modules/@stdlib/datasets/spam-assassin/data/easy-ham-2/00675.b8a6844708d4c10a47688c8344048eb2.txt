@@ -1,0 +1,38 @@
+From iiu-admin@taint.org  Fri Jul 19 17:53:54 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AA021440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 12:53:54 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 17:53:54 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JGr1J16267 for
+    <jm@jmason.org>; Fri, 19 Jul 2002 17:53:02 +0100
+Date: Fri, 19 Jul 2002 17:53:01 +0100
+Message-Id: <20020719165301.16253.32906.Mailman@dogma.slashnull.org>
+Subject: Irish Internet Users subscription notification
+From: mailman-owner@lists.boxhost.net
+To: yyyy@spamassassin.taint.org, alex@evilal.com, thomas@wibble.to
+X-Ack: no
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users List. See http://iiu.taint.org/
+    <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+
+billy@billyglynn.com has been successfully subscribed to Irish
+Internet Users.
+
+
+

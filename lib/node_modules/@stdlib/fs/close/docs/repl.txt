@@ -1,0 +1,45 @@
+
+{{alias}}( fd, clbk )
+    Asynchronously closes a file descriptor, so that the file descriptor no
+    longer refers to any file and may be reused.
+
+    Parameters
+    ----------
+    fd: integer
+        File descriptor.
+
+    clbk: Function
+        Callback to invoke upon closing a file descriptor.
+
+    Examples
+    --------
+    > function done( error ) {
+    ...     if ( error ) {
+    ...         console.error( error.message );
+    ...     }
+    ... };
+    > var fd = {{alias:@stdlib/fs/open}}.sync( './beep/boop.js', 'r+' );
+    > if ( !{{alias:@stdlib/assert/is-error}}( fd ) ) { {{alias}}( fd, done ); };
+
+
+{{alias}}.sync( fd )
+    Synchronously closes a file descriptor.
+
+    Parameters
+    ----------
+    fd: integer
+        File descriptor.
+
+    Returns
+    -------
+    out: Error|void
+        If an error occurs, an error object; otherwise, undefined.
+
+    Examples
+    --------
+    > var fd = {{alias:@stdlib/fs/open}}.sync( './beep/boop.js', 'r+' );
+    > if ( !{{alias:@stdlib/assert/is-error}}( fd ) ) { {{alias}}.sync( fd ); };
+
+    See Also
+    --------
+

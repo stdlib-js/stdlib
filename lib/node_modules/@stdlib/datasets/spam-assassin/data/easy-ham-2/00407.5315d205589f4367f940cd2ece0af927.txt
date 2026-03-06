@@ -1,0 +1,57 @@
+From ilug-admin@linux.ie  Wed Aug 14 11:01:05 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 843D74414C
+	for <jm@localhost>; Wed, 14 Aug 2002 05:52:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:52:10 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7E99W408032 for
+    <jm-ilug@jmason.org>; Wed, 14 Aug 2002 10:09:32 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA29885; Wed, 14 Aug 2002 10:08:32 +0100
+Received: from milexc01.maxtor.com ([134.6.205.206]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA29852 for <ilug@linux.ie>; Wed,
+    14 Aug 2002 10:08:26 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [134.6.205.206] claimed to
+    be milexc01.maxtor.com
+Received: by milexc01.maxtor.com with Internet Mail Service (5.5.2653.19)
+    id <PC8XWC3D>; Wed, 14 Aug 2002 10:08:26 +0100
+Message-Id: <0D443C91DCE9CD40B1C795BA222A729E018855D0@milexc01.maxtor.com>
+From: "Wynne, Conor" <conor_wynne@maxtor.com>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: RE: [ILUG] mirroring on a running system
+Date: Wed, 14 Aug 2002 10:08:03 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+All right, can't get pissed though as its a week-day. If we were to do it in
+Lucan, that would be another story ;--)
+
+Do we have many takers? 
+
+CW
+
+-------------
+On Wed, Aug 14, 2002 at 09:22:27AM +0100, Wynne, Conor mentioned:
+> When are we going to have a pint? 
+
+ Tuesday next week. Boars Head, Capel st.
+
+Kate
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

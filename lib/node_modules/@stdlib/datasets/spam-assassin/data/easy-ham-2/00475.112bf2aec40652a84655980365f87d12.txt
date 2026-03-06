@@ -1,0 +1,79 @@
+From ilug-admin@linux.ie  Tue Aug 20 15:31:37 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 62A2F43C34
+	for <jm@localhost>; Tue, 20 Aug 2002 10:31:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 15:31:37 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7KEWkZ10154 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 15:32:46 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA07940; Tue, 20 Aug 2002 15:31:36 +0100
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id PAA07904 for <ilug@linux.ie>;
+    Tue, 20 Aug 2002 15:31:27 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.webnote.net
+    [193.120.211.219] claimed to be webnote.net
+Received: (from lbedford@localhost) by webnote.net (8.9.3/8.9.3) id
+    PAA28198; Tue, 20 Aug 2002 15:31:17 +0100
+Date: Tue, 20 Aug 2002 15:31:17 +0100
+From: Liam Bedford <lbedford@lbedford.org>
+To: Anthony <ant@elivefree.net>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] hwclock
+Message-Id: <20020820143117.GA28159@mail.webnote.net>
+References: <TFSABNZO@flogas.ie> <3D624D27.98DB1B4E@elivefree.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <3D624D27.98DB1B4E@elivefree.net>
+User-Agent: Mutt/1.4i
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    PAA07904
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 20, 2002 at 03:07:35PM +0100, Anthony wrote:
+> > > In my experience Windows will change the hardware clock the first time
+> > > you boot into it after the clocks have gone forward/back an hour.  This
+> > > will only happen twice a year. How to stop it, I have not checked (I
+> > > just switch the clock back an hour from within windows after such a
+> > > reboot).  Is there a GMT windows timezone?
+> > 
+> 
+> > Start->Settings->Control Panel->Date/Time->Time Zone tab-> Uncheck
+> > "Automatically adjust clock for daylight saving change".
+> > 
+> 
+> Ah, that's grand. I knew about that aspect and had already unchecked the
+> appropriate box. I was just worried that Windows was engaging in
+> undocumented behaviour that I didn't know about.
+> 
+well, it changes the time then, and then leaves it alone.
+
+However, Windows expects the time in the RTC to be local time. Linux
+can be configured to do either this, or to have the RTC at UTC,
+and then use /etc/localtime to figure out the right timezone.
+
+Depending on how you've set it up, this may be a problem (with one
+or other of the OS's one hour out). OS-X also does this silliness :(
+
+(RTC should always have UTC, that way different people can set their
+own timezone on the machine... though I suppose that only applies
+to multi-user machines).
+
+L.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

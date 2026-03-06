@@ -1,0 +1,362 @@
+From champion@handango.com  Fri Sep 20 17:57:50 2002
+Return-Path: <champion@handango.com>
+Delivered-To: zzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 0CB4916F03
+	for <zzz@localhost>; Fri, 20 Sep 2002 17:57:44 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Fri, 20 Sep 2002 17:57:44 +0100 (IST)
+Received: from nas1 ([66.77.84.134]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8KGubC14217 for <zzz-handango@spamassassin.taint.org>;
+    Fri, 20 Sep 2002 17:56:38 +0100
+Received: from web5 ([10.18.75.10]) by nas1 with Microsoft
+    SMTPSVC(5.0.2195.2966); Fri, 20 Sep 2002 11:56:48 -0500
+Message-Id: <132971.1032541008061.JavaMail.Administrator@web5>
+Date: Fri, 20 Sep 2002 11:56:46 -0500 (CDT)
+From: The Handango Champion <champion@handango.com>
+To: zzz-handango@spamassassin.taint.org
+Subject: Personalize your Palm OS device
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+    boundary=1166300.1032541006905.JavaMail.Administrator.web5
+X-Originalarrivaltime: 20 Sep 2002 16:56:48.0655 (UTC) FILETIME=[B59CF9F0:01C260C6]
+
+--1166300.1032541006905.JavaMail.Administrator.web5
+Content-Type: text/html
+Content-Transfer-Encoding: 7bit
+
+
+<html>If you can't read this email, please go to: <a href="http://www.handango.com/palmnewsletter">http://www.handango.com/palmnewsletter</a> 
+<P>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<table width="640" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="10" bgcolor="#6699CC"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="1"></td>
+    <td width="348"><img src="http://www.handango.com/imgs/TheChampion2002/TitleBar.gif" width="348" height="35"></td>
+    <td align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><font color="#6699CC"><span class="PlatformTitle">Palm 
+      OS&reg; Edition&nbsp;&nbsp;&nbsp;</span></font></b><br>
+      </font><font face="Verdana, Arial, Helvetica, sans-serif" class="Text" size="-2">Issue 
+      #33, September 2002&nbsp;&nbsp;&nbsp;</font></td>
+  </tr>
+</table>
+<table width="640" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="10" bgcolor="#6699CC" height="77">&nbsp;</td>
+    <td height="77"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"></font> 
+      <table width="630" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="129"><img src="http://www.handango.com/imgs/TheChampion2002/GreenShirt.gif" width="121" height="83" hspace="10" vspace="2"></td>
+          <td class="Text" valign="bottom" align="left"> 
+            <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2" color="#000000">Personalize 
+              your Palm OS device! This issue features apps that are as unique 
+              as you are. Customize your launch screen, plan a trip, design a 
+              special menu, protect your extra-special information and choose 
+              your game: puzzles or tennis. It's all here in September's Handango 
+              Champion newsletter!</font></p>
+            <table width="99%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="26%">
+                  <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><span class="ToC"><a href="#1"><font color="#336699" size="-2">Featured 
+                    Software</font></a></span></b><font size="-2"><span class="ToC"></span></font></font></div>
+                </td>
+                <td width="21%"> 
+                  <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><font size="-2"><span class="ToC"><b><a href="#2"><font color="#336699">What's 
+                    New</font></a></b></span></font></font></div>
+                </td>
+                <td width="25%"> 
+                  <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><font size="-2"><span class="ToC"><b><a href="#3"><font color="#336699">Tips 
+                    Of The Trade</font></a></b></span></font></font></div>
+                </td>
+                <td width="28%"> 
+                  <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><font size="-2"><span class="ToC"><b><a href="#4"><font color="#336699">Champion's 
+                    Choice</font></a></b> </span></font></font></div>
+                </td>
+              </tr>
+            </table>
+            
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="640" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+	<td width="10" bgcolor="#6699CC" height="30">&nbsp;</td>
+	<td colspan="3" height="30"><img src="http://www.handango.com/imgs/TheChampion2002/FeaturedSoftwareBar.gif" width="630" height="35"><a name="1"></a></td>
+  </tr>
+  <tr> 
+	<td width="10" bgcolor="#6699CC" height="101">&nbsp;</td>
+	<td width="10"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="8"></td>
+	<td align="right" valign="top" rowspan="7" width="392"> 
+	  <table border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" align="left" width="392">
+		<tr> 
+		  <td class="Text" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=43448&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">InfoSafe Plus</font></a></b>: Carry important personal info with you securely 
+            and always have quick access to it.</font></td>
+		  <td align="right" valign="top" nowrap><font size="-1" face="Verdana, Arial, Helvetica, sans-serif"><b>$16.99<br>
+            <a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=43448&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">Read 
+            More</font></a></b><br>
+            <b><a href="http://www.handango.com/basket.jsp?siteId=159&amp;platformId=1&amp;addItem=43448" class="BuyNow"><font color="#009933">Buy 
+            Now</font></a></b></font></td>
+		</tr>
+		<tr> 
+		  <td align="center" class="Text" valign="top">&nbsp;</td>
+		  <td align="center" valign="top">&nbsp;</td>
+		</tr>
+		<tr> 
+		  <td class="Text" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=15226&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">Pocket 
+            Cook Deluxe</font></a></b>: A full-featured recipe app with a menu 
+            planner, shopping list and 4,000 supplied recipes.</font></td>
+		  <td align="right" valign="top" nowrap><font size="-1" face="Verdana, Arial, Helvetica, sans-serif"><b>$19.95<br>
+            <a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=15226&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">Read 
+            More</font></a></b><br>
+            <b><a href="http://www.handango.com/basket.jsp?siteId=159&amp;platformId=1&amp;addItem=15226" class="BuyNow"><font color="#009933">Buy 
+            Now</font></a></b></font></td>
+		</tr>
+		<tr> 
+		  <td align="center" class="Text" valign="top">&nbsp;</td>
+		  <td align="center" valign="top">&nbsp;</td>
+		</tr>
+		<tr> 
+		  <td class="Text" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=43483&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">Launcher 
+            PLUS!</font></a></b>: Customize your Palm with this cool application 
+            launcher and use fun themes, colors and graphics.</font></td>
+		  <td align="right" valign="top" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>$18.00<br>
+            <a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=43483&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">Read 
+            More</font></a></b><b><a href="http://www.handango.com/basket.jsp?siteId=159&amp;platformId=1&amp;addItem=43483" class="BuyNow"><font color="#009933"><br>
+			Buy Now</font></a></b></font></td>
+		</tr>
+		<tr> 
+		  <td class="Text" valign="top">&nbsp;</td>
+		  <td align="right" valign="top" nowrap>&nbsp;</td>
+		</tr>
+		<tr> 
+		  <td class="Text" valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=40498&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">FlipDis</font></a></b>: 
+            A fruit-flipping festival of fun comes to the screen of your Palm 
+            handheld! <i>Price reduced!</i></font></td>
+		  <td align="right" valign="top" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>$4.99<br>
+            <a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=40498&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">Read 
+            More<br>
+            </font></a></b><b><a href="http://www.handango.com/basket.jsp?siteId=159&amp;platformId=1&amp;addItem=40498" class="BuyNow"><font color="#009933">Buy 
+            Now</font></a></b></font></td>
+		</tr>
+		<tr> 
+		  <td class="Text" valign="top">&nbsp;</td>
+		  <td align="right" valign="top" nowrap>&nbsp;</td>
+		</tr>
+		<tr> 
+		  <td class="Text" valign="top" height="32"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=31433&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">Hexacto's 
+            Tennis Addict</font></a></b>: Inspired by the U.S. Open? Purchase 
+            this game before Sept. 30 and get a special offer!</font></td>
+		  <td align="right" valign="top" nowrap height="32"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>$19.95<br>
+            <a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=31433&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">Read 
+            More<br>
+            </font></a></b><b><a href="http://www.handango.com/basket.jsp?siteId=159&amp;platformId=1&amp;addItem=31433" class="BuyNow"><font color="#009933">Buy 
+            Now</font></a></b></font></td>
+		</tr>
+	  </table>
+	</td>
+	<td align="right" valign="top" rowspan="7">
+	  <table width="220" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+		  <td background="http://www.handango.com/imgs/TheChampion2002/GrayLineVertical.gif" valign="top" height="186"><img src="http://www.handango.com/imgs/TheChampion2002/GrayLineTop.gif" width="220" height="17"> 
+            <table width="209" border="0" cellspacing="3" cellpadding="2" align="center" background="http://www.handango.com/imgs/Blank.gif">
+              <tr align="center"> 
+                <td background="http://www.handango.com/imgs/Blank.gif" class="Text" valign="top" height="133"> 
+                  <p class="TipNewsTitle" align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1" color="#336699"><b><img width="50" height="59" border="0" align="left" hspace="7" src="http://www.handango.com/imgs/TheChampion2002/people.gif" vspace="15"></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><i>Psst...</i> 
+                    <br>
+                    Handango offers all types of PDA users all types of useful 
+                    software... <br>
+                    Pass it on! </font></p>
+                  <p class="TipNewsTitle" align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">Tell 
+                    a friend (or 10) about Handango and earn a discount on your 
+                    next software purchase.</font></p>
+                  <p class="TipNewsTitle" align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><a href="http://www.handango.com/promo.jsp?siteId=1" class="ReadMore"><font color="#336699">Click 
+                    here to find out how!</font></a> </b></font></p>
+                  </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr> 
+		  <td><img src="http://www.handango.com/imgs/TheChampion2002/GrayLineBottom.gif" width="220" height="16"></td>
+		</tr>
+	  </table>
+	</td>
+  </tr>
+  <tr> 
+	<td width="10" bgcolor="#6699CC">&nbsp;</td>
+	<td width="10"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="8"></td>
+  </tr>
+  <tr> 
+	<td width="10" bgcolor="#6699CC">&nbsp;</td>
+	<td width="10"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="8"></td>
+  </tr>
+  <tr> 
+	<td width="10" bgcolor="#6699CC">&nbsp;</td>
+	<td width="10"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="8"></td>
+  </tr>
+  <tr> 
+	<td width="10" bgcolor="#6699CC">&nbsp;</td>
+	<td width="10"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="8"></td>
+  </tr>
+  <tr> 
+	<td width="10" bgcolor="#6699CC">&nbsp;</td>
+	<td width="10"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="8"></td>
+  </tr>
+  <tr> 
+	<td width="10" bgcolor="#6699CC" height="2">&nbsp;</td>
+	<td width="10" height="2"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="8"></td>
+  </tr>
+</table>
+<table width="640" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="10" bgcolor="#6699CC"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="1"></td>
+    <td colspan="2"><img src="http://www.handango.com/imgs/TheChampion2002/WhatsNew.gif" width="410" height="35"><a name="2"></a></td>
+    <td width="220" valign="bottom"><img src="http://www.handango.com/imgs/TheChampion2002/TipsTitle.gif" width="220" height="32"><a name="3"></a></td>
+  </tr>
+  <tr> 
+    <td width="9" bgcolor="#6699CC" height="271"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="1"></td>
+    <td width="10" height="271"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="1"></td>
+    <td class="Text" height="271"> 
+      <table width="160" border="1" cellspacing="5" cellpadding="1" align="right">
+        <tr> 
+          <td bgcolor="#336699"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=43645&amp;catalog=1&amp;siteId=159"><img src="http://www.handango.com/imgs/TheChampion2002/cutepack.gif" width="160" height="160" align="right" border="0" vspace="0" hspace="0"></a></b></font></td>
+        </tr>
+        <tr> 
+          <td class="Text" align="right" height="27"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><i><b>CutePack 
+            </b></i></font></td>
+        </tr>
+      </table>
+
+
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>Travel</b></font></p>
+      <ol>
+        <font face="Verdana, Arial, Helvetica, sans-serif" size="-1">
+		<li><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=41925&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">London 
+          Tube Guide</font></a></font></li>
+		<li><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=43086&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">Conversions Pro</font></a></font></li>
+        <li><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=30226&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">Phrasebooks</font></a></font> 
+          <a href="http://www.handango.com/PlatformSoftwareSection.jsp?siteId=159&amp;platformId=1&amp;special=&amp;bySection=1&amp;sectionId=231&amp;catalog=1&amp;title=Travel" class="ReadMore"><br>          	
+		<b><i><font color="#336699">More in Travel...</font></i></b></a></li>
+		</font>
+      </ol>
+
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>Productivity</b></font></p>
+      <ol>
+        <font face="Verdana, Arial, Helvetica, sans-serif" size="-1"> 
+        <li><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=43645&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">CutePack</font></a></font></li>
+        <li><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=31485&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">1 Button Launcher Pro</font></a></font></li>
+        <li><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=30551&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">QuickWrite 
+          Professional</font></a></font> <a href="http://www.handango.com/PlatformSoftwareSection.jsp?siteId=159&amp;platformId=1&amp;special=&amp;bySection=1&amp;sectionId=1260&amp;catalog=1&amp;title=Personal+Productivity" class="ReadMore"><br>
+          <b><i><font color="#336699">More in Productivity...</font></i></b></a></li>
+        </font> 
+      </ol>
+
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b>Synchronization & Installation</b></font></p>
+      <ol>
+        <font face="Verdana, Arial, Helvetica, sans-serif" size="-1"> 
+        <li><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=43447&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">Installigent</font></a></font></li>
+        <li><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=40495&amp;catalog=1&amp;siteId=159" class="ReadMore"><font color="#336699">OneMail</font></a></font> 
+          <a href="http://www.handango.com/PlatformSoftwareSection.jsp?siteId=159&amp;platformId=1&amp;bySection=1&amp;special=&amp;sectionId=132&amp;catalog=1&amp;title=Synchronization+&amp;+Installation" class="ReadMore"><br>
+          <b><i><font color="#336699">More in Synchronization...</font></i></b></a> 
+        </li>
+        </font>
+      </ol>
+
+      </td>
+    <td valign="top" height="271"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td background="http://www.handango.com/imgs/TheChampion2002/GrayLineVertical.gif" height="284"> 
+            <table width="200" border="0" cellspacing="3" cellpadding="2" align="center" background="http://www.handango.com/imgs/Blank.gif">
+              <tr> 
+                <td background="http://www.handango.com/imgs/Blank.gif" class="Text" height="277"> 
+                  <p class="TipNewsTitle" align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1" color="#336699"><b>&quot;Keep 
+                    Your Taps <br>
+                    on Target" <br>
+                    </b></font></p>
+                  <div align="center"> 
+                    <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">If 
+                      your PDA screen taps sometimes don't seem to register correctly, 
+                      use the built-in digitizer to easily re-adjust the settings.</font></p>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="-1">Go 
+                    to the main Applications screen and tap on Preferences. Choose 
+                    'Digitizer' from the upper-right pull-down menu. Follow the 
+                    simple on-screen instructions to realign your stylus with 
+                    the screen.</font><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"> 
+                    </font><font size="-2" face="Verdana, Arial, Helvetica, sans-serif"> 
+                    </font></div>
+                  </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <td height="2"><img src="http://www.handango.com/imgs/TheChampion2002/GrayLineBottom.gif" width="220" height="16"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="640" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="10" bgcolor="#6699CC" height="9"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="8"></td>
+    <td colspan="2" height="9"><a name="4"></a><img src="http://www.handango.com/imgs/TheChampion2002/ChampionsChoiceTitleBar2.gif" width="630" height="35"></td>
+    <td rowspan="2" width="11" valign="middle">&nbsp; </td>
+  </tr>
+  <tr> 
+    <td width="10" bgcolor="#6699CC" height="251"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="8"></td>
+    <td width="15" height="251"><img src="http://www.handango.com/imgs/Blank.gif" width="10" height="8"></td>
+    <td class="Text" height="251" valign="top" width="604"> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><a href="http://www.chapura.com/handango" class="ReadMoreLarge"><br>
+        </a></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=43612&amp;catalog=1&amp;siteId=159" class="ReadMoreLarge"><img width="163" height="164" border="1" hspace="10" vspace="10" bordercolor="#336699" src="http://www.handango.com/imgs/TheChampion2002/mileage.gif" align="right"></a></b> 
+        <b><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=43612&amp;catalog=1&amp;siteId=159"><font color="#336699">Rand 
+        McNally Mileage Calculator</font></a><br>
+        </b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">Next 
+        time you hit the road, know exactly how far you need to go. Together, 
+        your Palm Powered PDA and the Rand McNally Mileage Calculator can deliver 
+        half a million mileages between cities and attractions. </font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">Select two 
+        points and get mileages with no waiting! Includes more than 800 cities, 
+        including major cities in Mexico and Canada, plus more than 200 cool things 
+        to see. <b>Only $9.99!</b></font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="http://www.handango.com/PlatformProductDetail.jsp?platformId=1&amp;productType=2&amp;sectionId=0&amp;productId=43612&amp;catalog=1&amp;siteId=159"><font color="#CC0000">Click 
+        here to purchase or download a free trial.</font></a></font></p>
+      <hr>
+      <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>Quick 
+        links: &nbsp;&nbsp;&nbsp;</b><a href="http://www.handango.com/PlatformTopSoftware.jsp?siteId=159&amp;navTitle=&amp;topOption=3&amp;productType=2&amp;title=All+Best+Selling+Palm+OS%26reg%3B+Software&amp;platformId=1"><b><font color="#CC0000">Palm 
+        OS Best Sellers</font></b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.handango.com/PlatformTopSoftware.jsp?navTitle=Handango%27s+Picks&amp;platformId=1&amp;siteId=159&amp;title=Handango%27s+Palm+OS+Picks&amp;topOption=2&amp;zsortParams=true&amp;sortBy=name&amp;order=asc"><b><font color="#CC0000">Handango's 
+        Palm OS Picks</font></b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.handango.com/PlatformTopSoftware.jsp?navTitle=Essentials&amp;platformId=1&amp;siteId=159&amp;title=Handango%27s+Palm+OS+Essentials&amp;topOption=1&amp;zsortParams=true&amp;sortBy=name&amp;order=asc"><b><font color="#CC0000">Palm OS Essentials</font></b></a></font></div>
+    </td>
+  </tr>
+</table>
+<table width="640" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="10" bgcolor="#6699CC" height="2">&nbsp;</td>
+    <td height="2"><img src="http://www.handango.com/imgs/TheChampion2002/BlueDividerLine2.gif" width="630" height="5"></td>
+  </tr>
+</table>
+<table width="640" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="10" bgcolor="#6699CC" height="2"><img src="http://www.handango.com/imgs/blank.gif" width="10" height="8"></td>
+    <td width="410" valign="bottom" height="2">&nbsp;</td>
+    <td width="400" valign="bottom" height="2" class="Text"> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="-2">To unsubscribe 
+        or modify your subscription, <a href="http://www.handango.com/edit.jsp?siteId=159">click 
+        here</a>.<br>
+        For advertising opportunities, email <a href="mailto:champion@handango.com?subject=Advertise">champion@handango.com</a>. 
+        </font><font face="Verdana, Arial, Helvetica, sans-serif" size="-1" color="#336699"><b><img width="10" height="8" border="0" src="http://www.handango.com/imgs/TheChampion2002/openrate.gif"></b></font><font face="Verdana, Arial, Helvetica, sans-serif" size="-2"> 
+        <a href="http://www.handango.com/PrivacyPolicy.jsp?siteId=159"><img src="http://www.handango.com/imgs/TheChampion2002/CopyRightAndPrivacyLink.gif" width="399" height="30" usemap="#Map" border="0"></a></font></p>
+    </td>
+    <td width="220" valign="bottom" height="2"><a href="http://www.handango.com/home.jsp?siteId=159"><img src="http://www.handango.com/imgs/TheChampion2002/HandangoLogo.gif" width="220" height="72" border="0"></a></td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+--1166300.1032541006905.JavaMail.Administrator.web5--
+
+

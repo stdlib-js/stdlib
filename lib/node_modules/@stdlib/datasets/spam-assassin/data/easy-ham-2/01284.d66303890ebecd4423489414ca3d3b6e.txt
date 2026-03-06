@@ -1,0 +1,116 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Jul 22 18:22:04 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6096C440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:22:03 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:22:03 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFkII09992 for
+    <jm-sa@jmason.org>; Mon, 22 Jul 2002 16:46:18 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id CAA29605 for
+    <jm-sa@jmason.org>; Mon, 22 Jul 2002 02:15:12 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WRlz-0004Od-00; Sun,
+    21 Jul 2002 18:14:03 -0700
+Received: from triffid.platypus.net.au ([203.109.181.102]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17WRlA-0005hw-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Sun, 21 Jul 2002 18:13:12 -0700
+Received: from amavis by triffid.platypus.net.au with scanned-ok (Exim
+    3.34 #1 (Debian)) id 17WRnK-0005xt-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 22 Jul 2002 11:15:26 +1000
+Received: from christo-sat.platypus.net.au ([203.109.181.150]) by
+    triffid.platypus.net.au with smtp (Exim 3.34 #1 (Debian)) id
+    17WRnH-0005xk-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Mon, 22 Jul 2002 11:15:23 +1000
+Received: by christo-sat.platypus.net.au with Microsoft Mail id
+    <01C23170.BC5A06F0@christo-sat.platypus.net.au>; Mon, 22 Jul 2002 11:12:58
+    +1000
+Message-Id: <01C23170.BC5A06F0@christo-sat.platypus.net.au>
+From: Chris Goh <chris@platypus.net.au>
+To: "spamassassin-talk@example.sourceforge.net" <spamassassin-talk@example.sourceforge.net>
+Subject: RE: [SAtalk] user_perfs
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Virus-Scanned: by AMaViS perl-11
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Mon, 22 Jul 2002 11:12:57 +1000
+Date: Mon, 22 Jul 2002 11:12:57 +1000
+
+Hi....
+
+If you havent already, spamd has to be restarted. 
+
+Cheers
+
+
+-----Original Message-----
+From:	James D. Stallings [SMTP:jdstallings@ureach.com]
+Sent:	Monday, July 22, 2002 10:52 AM
+To:	spamassassin-talk@lists.sourceforge.net
+Subject:	[SAtalk] user_perfs
+
+
+I am having troubles setting up the User_Perfs file and I know it is reading them, 
+cause if I change the score value it works based on the changes.  My questions has 
+to do with allowing certain domains not to be scanned for spam for a certain mbox.  I 
+can not get to the spamassassin.org site to check.
+
+Question:
+
+Is this the correct way to code it?
+
+# Whitelist and blacklist addresses are now file-glob-style patterns, so
+# "friend@somewhere.com", "*@isp.com", or "*.domain.net" will all work.
+whitelist_from  *@freelotto.com
+whitelist_from  *@luckysurf.com
+
+Thanks!!
+Jim 
+
+
+________________________________________________
+Get your own "800" number
+Voicemail, fax, email, and a lot more
+http://www.ureach.com/reg/tag
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

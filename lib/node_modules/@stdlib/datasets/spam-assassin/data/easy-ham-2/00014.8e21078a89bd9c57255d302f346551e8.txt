@@ -1,0 +1,117 @@
+From ilug-admin@linux.ie  Wed Aug 21 13:33:20 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E769543C32
+	for <jm@localhost>; Wed, 21 Aug 2002 08:33:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 13:33:19 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LCYKZ24668 for
+    <jm-ilug@jmason.org>; Wed, 21 Aug 2002 13:34:20 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA29561; Wed, 21 Aug 2002 13:33:37 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay05.indigo.ie (relay05.indigo.ie [194.125.133.229]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id NAA29520 for <ilug@linux.ie>;
+    Wed, 21 Aug 2002 13:33:24 +0100
+Received: (qmail 65437 messnum 1218559 invoked from
+    network[194.125.130.10/unknown]); 21 Aug 2002 12:02:47 -0000
+Received: from unknown (HELO win2000) (194.125.130.10) by
+    relay05.indigo.ie (qp 65437) with SMTP; 21 Aug 2002 12:02:47 -0000
+Reply-To: <macarthy@iol.ie>
+From: "Justin MacCarthy" <macarthy@iol.ie>
+To: "Ilug@Linux.Ie" <ilug@linux.ie>
+Date: Wed, 21 Aug 2002 13:03:30 +0100
+Message-Id: <OFEGLPGPCHPACFLJPAILEEBLEBAA.macarthy@iol.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Importance: Normal
+In-Reply-To: <OFEGLPGPCHPACFLJPAILMENIDPAA.macarthy@iol.ie>
+Subject: [ILUG] Update on  PC Cases
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi all, I posted the below question to this list so I thought I'd update you
+all. Thanks for your suggestions.
+
+Well, I'd decided to bite the bullet and spend big on a new case and CPU
+fan.
+
+I bought a lian-li aluminum case. It was expensive as cases go (stg£133.86)
+but I decided, it's a good basis to build any future PC on.
+It has 4 x 51/4" drive bays and 6 x 3½" drive bays so I should be ok for
+future upgrades etc. I have to say it was worth it. Its a pleasure to work
+on. It has a slide out tray to mount the Mother Board on, both sides come
+off, the drive bays come out...all without using a screwdriver (thumb
+screws). Even the edges inside the case are smooth so no banging your hands
+off shape edges etc. There are 4 fans inside the case, which can be set to 3
+different speeds. There are 4 usb ports on the front of the box too. The box
+is big and has loads of room inside.
+Oh... and it looks very cool :-)
+
+However there are 2 things to look out for. On the Maplins website it says
+
+* Up to three 80mm case fans can be fitted!
+* ATX Power supply sold separately
+
+In fact the case came with 4 fans and a power supply, which is great but I
+ordered 2 fans and a power supply separately.
+Also the case was a slightly different model to one advertised, as I got the
+USB model. It does say (Product may vary in design and specification from
+that show) but I missed that :-)
+
+I also bought a Flower Cooler Kit which is completely silent. Very nice.
+(thanks Mike)
+
+So now I can code-in-peace...
+
+Justin
+
+
+> -----Original Message-----
+> From: ilug-admin@linux.ie [mailto:ilug-admin@linux.ie]On Behalf Of
+> Justin MacCarthy
+> Sent: Monday, August 12, 2002 12:56 PM
+> To: Ilug@Linux.Ie
+> Subject: [ILUG] PC Cases
+>
+>
+> Hi all, I have a Linux box at home that makes a god awful amount of noise.
+> Its a Athlon XP 1900+  with a  CoolerMaster fan.  Are they particularly
+> noisy? I think its  the case/psu fan. It was a pretty cheap case. So what
+> I'm looking for a quieter case/fan/power supply. I know you can get really
+> quiet cases if you want to spend, but I'm looking for something in the
+> middle ground, available in Dublin.
+>
+> Anyone recommend anything ? Thanks
+>
+> Justin
+>
+>
+> --
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+> information.
+> List maintainer: listmaster@linux.ie
+>
+>
+>
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

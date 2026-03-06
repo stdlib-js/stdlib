@@ -1,0 +1,97 @@
+From webmake-talk-admin@lists.sourceforge.net  Thu Nov 28 16:09:44 2002
+Return-Path: <webmake-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id EFC9D16F18
+	for <jm@localhost>; Thu, 28 Nov 2002 16:09:42 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 28 Nov 2002 16:09:43 +0000 (GMT)
+Received: from sc8-sf-list2.sourceforge.net (example.sourceforge.net
+    [66.35.250.206]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    gASEAQW10714 for <jm@jmason.org>; Thu, 28 Nov 2002 14:10:26 GMT
+Received: from sc8-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=sc8-sf-list1.sourceforge.net) by sc8-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 18HPMm-0005E1-00; Thu,
+    28 Nov 2002 06:10:08 -0800
+Received: from panoramix.vasoftware.com ([198.186.202.147] ident=mail) by
+    sc8-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 18HPMM-0004Mo-00; Thu, 28 Nov 2002
+    06:09:42 -0800
+Received: from [217.131.253.208] (port=59371 helo=ommo.com) by
+    panoramix.vasoftware.com with smtp (Exim 4.05-VA-mm1 #1 (Debian)) id
+    18HPMG-0001Rj-00; Thu, 28 Nov 2002 06:09:37 -0800
+From: "Astarte Turizm" <astarte@veezy.com>
+Reply-To: info@astartetravel.com
+Cc: tramp-devel@example.sourceforge.net,
+	tramp-devel-admin@lists.sourceforge.net,
+	twilight-announce@lists.sourceforge.net,
+	twilight-devel@lists.sourceforge.net,
+	unicon-group@lists.sourceforge.net,
+	unicon-group-admin@lists.sourceforge.net,
+	vtcl-user@lists.sourceforge.net, webmake-talk@lists.sourceforge.net,
+	webware-devel@lists.sourceforge.net,
+	webware-discuss@lists.sourceforge.net
+X-Mailer: Microsoft Outlook Express 5.00.2919.7000
+MIME-Version: 1.0
+Message-Id: <E18HPMG-0001Rj-00@panoramix.vasoftware.com>
+Content-Type: text/plain; charset="iso-8859-3"
+Subject: [WM] (no subject)
+Sender: webmake-talk-admin@example.sourceforge.net
+Errors-To: webmake-talk-admin@example.sourceforge.net
+X-Beenthere: webmake-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:webmake-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:webmake-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of WebMake. <webmake-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=webmake-talk>
+X-Original-Date: Thu, 31 Oct 2002 16:01:32 +0200
+Date: Thu, 31 Oct 2002 16:01:32 +0200
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id gASEAQW10714
+
+Dear our Guests,
+
+EXPLORE TURKEY WITH ASTARTETOURS!!
+	
+Hotel Reservations: 
+You will find more than 200 hotels all over Turkey, which have been carefully selected.
+Through our reservation system we are able to book more than 1.000 hotels arround Europe.
+ 
+Tours 
+Hosted Programs, sightseeing tours, escorted tours or cruise programs.
+We have tours on set dates each year or we can organize special itineraries for the independant traveller or small groups!!
+ 
+
+Rent-A-Car:
+Travelling on your own pace in Turkey! We have a range of vehicles on offer to choose from. They may be hired in all major cities. 
+Your car can be made available at the airport or your hotel for collection!!
+
+Visit our web-site!!
+
+www.astartetours.com
+
+Kind Regards
+Astarte Tours
+
+P.S.: If you want to unsubscribe, please sent us an e-mail.
+
+
+
+
+-------------------------------------------------------
+This SF.net email is sponsored by: Get the new Palm Tungsten T 
+handheld. Power & Color in a compact size! 
+http://ads.sourceforge.net/cgi-bin/redirect.pl?palm0002en
+_______________________________________________
+webmake-talk mailing list
+webmake-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/webmake-talk
+
+

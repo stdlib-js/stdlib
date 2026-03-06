@@ -1,0 +1,62 @@
+From ilug-admin@linux.ie  Fri Jul 19 16:19:04 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9C13C440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 11:19:04 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:19:04 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JFGgJ08019 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 16:16:42 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA12249; Fri, 19 Jul 2002 16:16:02 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from holly.csn.ul.ie (holly.csn.ul.ie [136.201.105.4]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id QAA12205 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 16:15:56 +0100
+Received: from skynet.csn.ul.ie (skynet [136.201.105.2]) by
+    holly.csn.ul.ie (Postfix) with ESMTP id BA52C2B338 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 16:15:25 +0100 (IST)
+Received: by skynet.csn.ul.ie (Postfix, from userid 2196) id AB655E95A;
+    Fri, 19 Jul 2002 16:15:25 +0100 (IST)
+Date: Fri, 19 Jul 2002 16:15:25 +0100
+From: Stephen Shirley <diamond@skynet.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] OSI protocol
+Message-Id: <20020719151524.GA4437@skynet.ie>
+Mail-Followup-To: ilug@linux.ie
+References: <9C498074D5419A44B05349F5BF2C26301CFA3C@sdubtalex01.education.gov.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <9C498074D5419A44B05349F5BF2C26301CFA3C@sdubtalex01.education.gov.ie>
+User-Agent: Mutt/1.3.24i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 04:09:50PM +0100, Ryan, Shane wrote:
+> Hi,
+> 
+> I wasn't sure if that ever started up.
+> what irc server is #ilug on?
+> 
+
+#linux on irc.linux.ie
+
+Steve
+-- 
+"Oh look, it's the Pigeon of Love."
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

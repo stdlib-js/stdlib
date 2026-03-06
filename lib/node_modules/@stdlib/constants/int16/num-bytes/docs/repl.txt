@@ -1,0 +1,12 @@
+
+{{alias}}
+    Size (in bytes) of a 16-bit signed integer.
+
+    Examples
+    --------
+    > {{alias}}
+    2
+
+    See Also
+    --------
+

@@ -1,0 +1,96 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-float64array",
+        "@stdlib/napi/export",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/sincos",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/pi"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/sincos",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/pi"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/sincos",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/pi"
+      ]
+    }
+  ]
+}

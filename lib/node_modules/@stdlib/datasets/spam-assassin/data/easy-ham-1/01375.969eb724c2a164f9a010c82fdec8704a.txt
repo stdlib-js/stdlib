@@ -1,0 +1,130 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:08:02 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D21D244160
+	for <jm@localhost>; Thu, 29 Aug 2002 06:06:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:06:02 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7T0n0Z21570 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 01:49:01 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kDSh-0002yw-00; Wed,
+    28 Aug 2002 17:47:03 -0700
+Received: from sccrmhc01.attbi.com ([204.127.202.61]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kDRu-0001sK-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 17:46:14 -0700
+Received: from localhost ([12.229.66.144]) by sccrmhc01.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020829004607.SVKQ11061.sccrmhc01.attbi.com@localhost> for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 29 Aug 2002 00:46:07 +0000
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+From: Brian McNett <bmcnett@radparker.com>
+To: spamassassin-talk@example.sourceforge.net
+Content-Transfer-Encoding: 7bit
+In-Reply-To: <yf2n0r6k104.fsf@proton.pathname.com>
+Message-Id: <A9AEB614-BAE8-11D6-AD60-003065C182B0@radparker.com>
+X-Mailer: Apple Mail (2.482)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 17:45:49 -0700
+Date: Wed, 28 Aug 2002 17:45:49 -0700
+
+
+On Wednesday, August 28, 2002, at 04:38  PM, Daniel Quinlan wrote:
+
+> Just a few notes:
+>
+>  - It will be difficult to find, prosecute, and win money from someone
+>    in various non-friendly countries where spam originates (China is a
+>    good example) even if they do officially "respect" copyright law.
+
+
+A lot of spam which *appears* to originate from China, and even 
+a lot which advertises websites hosted there, is sent by, and is 
+done for the benefit of, companies based in the US.  The spam 
+often appears to originate there because it's coming from open 
+http, or squid proxy servers.  It's hosted there because these 
+spammers are now persona-non-grata on all US ISPs.  One hardly 
+needs to involve the Chinese government in a case where a US 
+citizen is violating US law.
+
+
+>  - Law suits take time. Between now and conclusion of the first court
+>    case, we could have years of spam in our mail boxes!
+
+The first court cases were actually concluded years ago. These 
+include many legal precedents which are used to protect the 
+rights of ISPs to block mail, and to terminate service to 
+spammers.
+
+>  - Contact information can change: phone numbers, PO boxes, stolen
+>    cell phones, temporary email addresses, etc.
+
+Surprising then, how much information you can find on the 
+current whereabouts of long-time spammers like Alan Ralksy of 
+Detroit, Michigan.  Ralsky is a guy who even gives interviews to 
+the news media.  If you can connect a specific corpus of spam to 
+him, his street address is well known. Ralsky is a prime 
+candidate for lawsuits in any state with an anti-spam law. 
+Thomas Cowles is another long-time spammer, but last I heard 
+he'd been jailed for stealing computer equipment from his 
+business partner, Eddy Marin (also a long time spammer (You've 
+heard of PopLaunch, right?)
+
+>  - Spammers do not always remember to include contact information!  I
+>    don't understand it either, but nobody said they were bright.  Also,
+>    some spam is non-commercial or sent by a third-party (for example,
+>    "pump and dump" stock scams), so contact information is not strictly
+>    required for the spammer to get their way.
+
+Back when I was working at MAPS, there was a flap over a 
+pump-and-dump spammer, Rodona Garst.  Seems she had an open 
+file-share on her laptop, and when she forged the wrong domain, 
+the real owner hacked in and posted all her private information 
+on a website. Oh, look, it's still there, including the nude 
+photos:
+
+http://belps.freewebsites.com/
+
+I recall this well, because the SEC was VERY interested in 
+confirming the validity of the information found online.  There 
+were some "interesting" conversations. This summer, the SEC 
+released the following:
+
+http://www.sec.gov/litigation/admin/33-8113.htm
+
+Yes, the investigation took two years, but the financial penalty 
+for operating a pump-and-dump scam isn't small.  The wheels of 
+government grind slow, but the grind very fine indeed.
+
+--B
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

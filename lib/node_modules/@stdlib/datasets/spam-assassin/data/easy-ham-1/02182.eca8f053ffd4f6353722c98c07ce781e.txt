@@ -1,0 +1,31 @@
+From rssfeeds@jmason.org  Wed Oct  2 11:44:01 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6DF0516F03
+	for <jm@localhost>; Wed,  2 Oct 2002 11:44:01 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:44:01 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g92817K31706 for
+    <jm@jmason.org>; Wed, 2 Oct 2002 09:01:07 +0100
+Message-Id: <200210020801.g92817K31706@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: If it's too loud, you're too French
+Date: Wed, 02 Oct 2002 08:01:07 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85513605
+Date: Not supplied
+
+The French and the iPod aren't getting along -- the iPod outputs more decibels 
+through its headphones than are legal in La Belle France. Link[1] Discuss[2] (_
+Thanks, Ernie[3]!_)
+
+[1] http://translate.google.com/translate?u=http%3A%2F%2Fwww.macgeneration.com%2Fmgnews%2Fdepeche.php%3FaIdDepeche%3D93540&langpair=fr%7Cen&hl=en&ie=ISO-8859-1&prev=%2Flanguage_tools
+[2] http://www.quicktopic.com/boing/H/LMHmGmnSwgPG
+[3] http://www.psylux.com
+
+

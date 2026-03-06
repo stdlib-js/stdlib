@@ -1,0 +1,28 @@
+
+{{alias}}( value )
+    Tests if an input value is a BLAS transpose operation.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an input value is a transpose operation.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'transpose' )
+    true
+    > bool = {{alias}}( 'conjugate-transpose' )
+    true
+    > bool = {{alias}}( '' )
+    false
+    > bool = {{alias}}( 'beep' )
+    false
+
+    See Also
+    --------
+

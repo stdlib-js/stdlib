@@ -1,0 +1,51 @@
+{
+  "name": "stdlib-datasets-male-first-names-en",
+  "version": "",
+  "title": "Male First Names (English)",
+  "description": "A list of common male first names in English speaking countries.",
+  "resources": [
+    {
+      "name": "male-first-names-en-json",
+      "title": "Male First Names",
+      "description": "A list of common male first names in English speaking countries.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/names.json"
+    },
+    {
+      "name": "male-first-names-en-txt",
+      "title": "Male First Names",
+      "description": "A list of common male first names in English speaking countries.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/names.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Moby Word II",
+      "web": "http://www.gutenberg.org/files/3201/3201.txt"
+    }
+  ],
+  "keywords": [
+    "list",
+    "common",
+    "first",
+    "names",
+    "male",
+    "human",
+    "people",
+    "person",
+    "given",
+    "personal",
+    "name",
+    "firstname",
+    "english",
+    "en"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

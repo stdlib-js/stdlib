@@ -1,0 +1,479 @@
+From Alex-09242002-HTML@frugaljoe.330w.com  Thu Sep 26 11:29:58 2002
+Return-Path: <Alex-09242002-HTML@frugaljoe.330w.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 1DBF416F03
+	for <zzzz@localhost>; Thu, 26 Sep 2002 11:29:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 26 Sep 2002 11:29:53 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8PMgVC17176 for
+    <zzzz@jmason.org>; Wed, 25 Sep 2002 23:42:31 +0100
+Received: from richard.330w.com (richard.330w.com [216.53.71.115]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id XAA28236 for <zzzz@spamassassin.taint.org>;
+    Wed, 25 Sep 2002 23:43:07 +0100
+Message-Id: <200209252243.XAA28236@webnote.net>
+Received: by richard.330w.com (PowerMTA(TM) v1.5); Wed, 25 Sep 2002
+    17:48:33 -0400 (envelope-from <Alex-09242002-HTML@frugaljoe.330w.com>)
+From: Alex@FrugalJoe.com
+To: zzzz@spamassassin.taint.org
+Subject: Got plans tonight?
+Id-Frugaljoe: zzzz####spamassassin.taint.org
+Date: Wed, 25 Sep 2002 17:48:33 -0400
+Content-Type: text/html
+
+<TABLE id=AutoNumber2 style="BORDER-COLLAPSE: collapse" 
+      borderColor=#111111 cellSpacing=1 cellPadding=0 width=715 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=27><a href="http://www.frugaljoe.com"><IMG  
+            src="http://www.frugaljoe.com/logo.jpg"  border=0></a></TD>
+          <TD width=1 bgColor=#ffcc99><IMG height=1 
+            src="http://www.salealerts.com/dot.gif" width=1 border=0></TD>
+          <TD vAlign=top><I><B><FONT face=Verdana size=2>
+            <CENTER>Never Pay Retail!</FONT><FONT face=Verdana size=0></B><br></CENTER></I><IMG height=20 
+            src="http://www.salealerts.com/dot.gif" width=459 border=0></TD></TR>
+        <TR>
+          <TD width=715 bgColor=#ffcc99 colSpan=3 height=1><IMG height=1 
+            src="http://www.salealerts.com/dot.gif" width=1 
+  border=0></TD></TR></TBODY></TABLE></CENTER></DIV></TD>
+<FONT face=Verdana size=1>
+<body bgcolor="#FFFFF" leftmargin="0" topmargin="0">
+
+<table width="461" cellpadding="0" cellspacing="0" border="0" background="http://e89.friendfinder.com/banners/ff/ad-images/ff-sm-search-bg_002.jpg">
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="326" height="1" border="0"></td>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="347" height="1" border="0"></td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+
+<!-- begin search table -->
+
+
+
+<table border=0 cellpadding=0 cellspacing=0 width="322">
+
+<FORM METHOD=POST ACTION=http://guest.friendfinder.com/cgi-bin/public/memsearch.cgi >
+
+<input type=hidden name=searchtype value="photo_search">
+
+<input type=hidden name=pid value="f36929">
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="87" height="1" border="0"></td>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="40" height="1" border="0"></td>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="20" height="1" border="0"></td>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="175" height="1" border="0"></td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="110" border="0"></td>
+</tr>
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="1" border="0"></td>
+<td colspan="3"><img src="http://e89.friendfinder.com/banners/ff/ad-images/ff-search_001-i-am.gif" alt="" width="41" height="12" border="0"></td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="5" border="0"></td>
+</tr>
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="1" border="0"></td>
+<td colspan="3"><select name=looking_for_person ><option value="1" selected>Man</option><option value="2" >Woman</option></select></td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="10" border="0"></td>
+</tr>
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="1" border="0"></td>
+<td colspan="3"><img src="http://e89.friendfinder.com/banners/ff/ad-images/ff-search_001-looking-for.gif" alt="" width="75" height="14" border="0"></td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="5" border="0"></td>
+</tr>
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="1" border="0"></td>
+<td colspan="3"><select name=find_sex><option value="1" >a Man</option><option value="2" selected>a Woman</option></select></td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="10" border="0"></td>
+</tr>
+
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="1" border="0"></td>
+<td colspan="3"><img src="http://e89.friendfinder.com/banners/ff/ad-images/ff-search_001-between-ages.gif" alt="" width="137" height="14" border="0"></td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="5" border="0"></td>
+</tr>
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="1" border="0"></td>
+<td><input type="text" size="2" name="min_age" value="18" maxlength="2"></td>
+<td align="center" valign="middle"><img src="http://e89.friendfinder.com/banners/ff/ad-images/ff-search_001-and..gif" alt="" width="11" height="12" border="0"></td>
+<td><input type="text" size="2" name="max_age" value="35" maxlength="2">
+</td></td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="10" border="0"></td>
+</tr>
+
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="1" border="0"></td>
+<td colspan="3"><img src="http://e89.friendfinder.com/banners/ff/ad-images/ff-search_001-state.gif" alt="" width="121" height="12" border="0"></td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="5" border="0"></td>
+</tr>
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="1" border="0"></td>
+<td colspan="3"><select name=state >
+<option value='*'>Any
+<option value="Alaska" > Alaska
+<option value="Alabama" > Alabama
+<option value="Arkansas" > Arkansas
+<option value="Arizona" > Arizona
+<option value="California" > California
+<option value="Colorado" > Colorado
+<option value="Connecticut" > Connecticut
+<option value="District of Columbia" > D.C.
+<option value="Delaware" > Delaware
+<option value="Florida" > Florida
+<option value="Georgia" > Georgia
+<option value="Guam" > Guam
+<option value="Hawaii" > Hawaii
+<option value="Iowa" > Iowa
+<option value="Idaho" > Idaho
+<option value="Illinois" > Illinois
+<option value="Indiana" > Indiana
+<option value="Kansas" > Kansas
+<option value="Kentucky" > Kentucky
+<option value="Louisiana" > Louisiana
+<option value="Massachusetts" > Massachusetts
+<option value="Maryland" > Maryland
+<option value="Maine" > Maine
+<option value="Michigan" > Michigan
+<option value="Minnesota" > Minnesota
+<option value="Missouri" > Missouri
+<option value="Mississippi" > Mississippi
+<option value="Montana" > Montana
+<option value="North Carolina" > North Carolina
+<option value="North Dakota" > North Dakota
+<option value="Nebraska" > Nebraska
+<option value="New Hampshire" > New Hampshire
+<option value="New Jersey" > New Jersey
+<option value="New Mexico" > New Mexico
+<option value="Nevada" > Nevada
+<option value="New York" > New York
+<option value="Ohio" > Ohio
+<option value="Oklahoma" > Oklahoma
+<option value="Oregon" > Oregon
+<option value="Pennsylvania" > Pennsylvania
+<option value="Puerto Rico" > Puerto Rico
+<option value="Rhode Island" > Rhode Island
+<option value="South Carolina" > South Carolina
+<option value="South Dakota" > South Dakota
+<option value="Tennessee" > Tennessee
+<option value="Texas" > Texas
+<option value="Utah" > Utah
+<option value="Virginia" > Virginia
+<option value="The Virgin Islands" > The Virgin Islands
+<option value="Vermont" > Vermont
+<option value="Washington" > Washington
+<option value="Wisconsin" > Wisconsin
+<option value="West Virginia" > West Virginia
+<option value="Wyoming" > Wyoming
+<option value='*'> ---------
+<option value="Alberta" > Alberta
+<option value="British Columbia" > British Columbia
+<option value="Manitoba" > Manitoba
+<option value="New Brunswick" > New Brunswick
+<option value="Newfoundland" > Newfoundland
+<option value="Northwest Territories" > Northwest Territories
+<option value="Nova Scotia" > Nova Scotia
+<option value="Ontario" > Ontario
+<option value="Prince Edward Island" > Prince Edward Island
+<option value="Quebec" > Quebec
+<option value="Saskatchewan" > Saskatchewan
+<option value="Yukon Territory" > Yukon Territory
+<option value='*'> ---------
+<option value="New South Wales" > New South Wales
+<option value="Queensland" > Queensland
+<option value="South Australia" > South Australia
+<option value="Tasmania" > Tasmania
+<option value="Victoria" > Victoria
+<option value="Western Australia" > Western Australia
+</select></td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="10" border="0"></td>
+</tr>
+
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="1" border="0"></td>
+<td colspan="3"><img src="http://e89.friendfinder.com/banners/ff/ad-images/ff-search_001-country.gif" alt="" width="53" height="14" border="0"></td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="5" border="0"></td>
+</tr>
+
+<tr>
+<td><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="1" border="0"></td>
+<td colspan="3"><select name=country >
+<option value="United States" >United States
+<option value="Afghanistan" > Afghanistan
+<option value="Albania" > Albania
+<option value="Algeria" > Algeria
+<option value="Andorra" > Andorra
+<option value="Angola" > Angola
+<option value="Antigua" > Antigua
+<option value="Argentina" > Argentina
+<option value="Armenia" > Armenia
+<option value="Aruba" > Aruba
+<option value="Australia" > Australia
+<option value="Austria" > Austria
+<option value="Azerbaidjan" > Azerbaidjan
+<option value="Bahamas" > Bahamas
+<option value="Bahrain" > Bahrain
+<option value="Bangladesh" > Bangladesh
+<option value="Barbados" > Barbados
+<option value="Belgium" > Belgium
+<option value="Belize" > Belize
+<option value="Benin" > Benin
+<option value="Bermuda" > Bermuda
+<option value="Bhutan" > Bhutan
+<option value="Bolivia" > Bolivia
+<option value="Bosnia" > Bosnia
+<option value="Botswana" > Botswana
+<option value="Brazil" > Brazil
+<option value="Brunei" > Brunei
+<option value="Bulgaria" > Bulgaria
+<option value="Burkina Faso" > Burkina Faso
+<option value="Burma" > Burma
+<option value="Burundi" > Burundi
+<option value="Cambodia" > Cambodia
+<option value="Cameroon" > Cameroon
+<option value="Canada" > Canada
+<option value="Cape Verde" > Cape Verde
+<option value="Central African Republic" > Central Afr. Rep.
+<option value="Chad" > Chad
+<option value="Chile" > Chile
+<option value="China" > China
+<option value="Colombia" > Colombia
+<option value="Comoros" > Comoros
+<option value="Congo" > Congo
+<option value="Congo (Zaire)" > Congo (Zaire)
+<option value="Costa Rica" > Costa Rica
+<option value="Croatia" > Croatia
+<option value="Cuba" > Cuba
+<option value="Cyprus" > Cyprus
+<option value="Czech Republic" > Czech Republic
+<option value="Denmark" > Denmark
+<option value="Djibouti" > Djibouti
+<option value="Dominica" > Dominica
+<option value="Dominican Republic" > Dom. Republic
+<option value="Ecuador" > Ecuador
+<option value="Egypt" > Egypt
+<option value="El Salvador" > El Salvador
+<option value="Equatorial Guinea" > Equatorial Guinea
+<option value="Eritrea" > Eritrea
+<option value="Estonia" > Estonia
+<option value="Ethiopia" > Ethiopia
+<option value="Fiji" > Fiji
+<option value="Finland" > Finland
+<option value="France" > France
+<option value="Gabon" > Gabon
+<option value="Gambia" > Gambia
+<option value="Georgia" > Georgia
+<option value="Germany" > Germany
+<option value="Ghana" > Ghana
+<option value="Gibraltar" > Gibraltar
+<option value="Greece" > Greece
+<option value="Guam" > Guam
+<option value="Guatemala" > Guatemala
+<option value="Guinea" > Guinea
+<option value="Guinea-Bissau" > Guinea-Bissau
+<option value="Guyana" > Guyana
+<option value="Haiti" > Haiti
+<option value="Honduras" > Honduras
+<option value="Hong Kong" > Hong Kong
+<option value="Hungary" > Hungary
+<option value="Iceland" > Iceland
+<option value="India" > India
+<option value="Indonesia" > Indonesia
+<option value="Iran" > Iran
+<option value="Iraq" > Iraq
+<option value="Ireland" > Ireland
+<option value="Israel" > Israel
+<option value="Italy" > Italy
+<option value="Ivory Coast" > Ivory Coast
+<option value="Jamaica" > Jamaica
+<option value="Japan" > Japan
+<option value="Jordan" > Jordan
+<option value="Kazakhstan" > Kazakhstan
+<option value="Kenya" > Kenya
+<option value="Kuwait" > Kuwait
+<option value="Laos" > Laos
+<option value="Latvia" > Latvia
+<option value="Lebanon" > Lebanon
+<option value="Liberia" > Liberia
+<option value="Libya" > Libya
+<option value="Liechtenstein" > Liechtenstein
+<option value="Lithuania" > Lithuania
+<option value="Luxembourg" > Luxembourg
+<option value="Macau" > Macau
+<option value="Macedonia" > Macedonia
+<option value="Madagascar" > Madagascar
+<option value="Malawi" > Malawi
+<option value="Malaysia" > Malaysia
+<option value="Maldives" > Maldives
+<option value="Mali" > Mali
+<option value="Malta" > Malta
+<option value="Mauritania" > Mauritania
+<option value="Mauritius" > Mauritius
+<option value="Mexico" > Mexico
+<option value="Moldova" > Moldova
+<option value="Monaco" > Monaco
+<option value="Mongolia" > Mongolia
+<option value="Morocco" > Morocco
+<option value="Mozambique" > Mozambique
+<option value="Namibia" > Namibia
+<option value="Nepal" > Nepal
+<option value="Netherlands" > Netherlands
+<option value="New Zealand" > New Zealand
+<option value="Nicaragua" > Nicaragua
+<option value="Niger" > Niger
+<option value="Nigeria" > Nigeria
+<option value="North Korea" > North Korea
+<option value="Norway" > Norway
+<option value="Oman" > Oman
+<option value="Pakistan" > Pakistan
+<option value="Panama" > Panama
+<option value="Paraguay" > Paraguay
+<option value="Peru" > Peru
+<option value="Philippines" > Philippines
+<option value="Poland" > Poland
+<option value="Portugal" > Portugal
+<option value="Puerto Rico" > Puerto Rico
+<option value="Qatar" > Qatar
+<option value="Romania" > Romania
+<option value="Russia" > Russia
+<option value="Rwanda" > Rwanda
+<option value="San Marino" > San Marino
+<option value="Saudi Arabia" > Saudi Arabia
+<option value="Senegal" > Senegal
+<option value="Sierra Leone" > Sierra Leone
+<option value="Singapore" > Singapore
+<option value="Slovakia" > Slovakia
+<option value="Slovenia" > Slovenia
+<option value="Somalia" > Somalia
+<option value="South Africa" > South Africa
+<option value="South Korea" > South Korea
+<option value="Spain" > Spain
+<option value="Sri Lanka" > Sri Lanka
+<option value="Sudan" > Sudan
+<option value="Sweden" > Sweden
+<option value="Switzerland" > Switzerland
+<option value="Syria" > Syria
+<option value="Taiwan" > Taiwan
+<option value="Tanzania" > Tanzania
+<option value="Thailand" > Thailand
+<option value="Togo" > Togo
+<option value="Trinidad" > Trinidad
+<option value="Tunisia" > Tunisia
+<option value="Turkey" > Turkey
+<option value="Turkmenistan" > Turkmenistan
+<option value="Uganda" > Uganda
+<option value="Ukraine" > Ukraine
+<option value="United Arab Emirates" > U.A.E.
+<option value="United Kingdom" > United Kingdom
+<option value="United States" > United States
+<option value="Uruguay" > Uruguay
+<option value="Venezuela" > Venezuela
+<option value="Vietnam" > Vietnam
+<option value="Yemen" > Yemen
+<option value="Yugoslavia" > Yugoslavia
+<option value="Zambia" > Zambia
+<option value="Zimbabwe" > Zimbabwe
+</select></td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="23" border="0"></td>
+</tr>
+
+<tr>
+<td colspan="2"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="1" border="0"></td>
+<td colspan="2"><input type="Image" name="Submit" src="http://e89.friendfinder.com/banners/ff/ad-images/ff-search_001-search.gif"></td>
+</tr>
+
+</form>
+
+</table>
+
+<!-- end of search table -->
+
+</td>
+<td><a href="http://friendfinder.com/go/f36929"><img src="http://e89.friendfinder.com/banners/ff/ad-images/ff-search_001-join.gif" alt="" width="347" height="421" border="0"></a></td>
+</tr>
+
+<tr>
+<td colspan="2"><img src="http://e89.friendfinder.com/banners/aff/ad-images/_0.gif" alt="" width="1" height="50" border="0"></td>
+</tr>
+</td></tr></table>
+<TABLE id=AutoNumber3 style="BORDER-COLLAPSE: collapse" borderColor=#111111 
+cellSpacing=1 cellPadding=0 width=715 border=0>
+  <TBODY>
+  <TR>
+    <TD width=715 bgColor=#ffcc99 colSpan=3 height=1><IMG height=1 
+      src="dot.gif" width=1 border=0></TD></TR>
+  <TR>
+    <TD vAlign=top width=27><a href="http://www.frugaljoe.com"><IMG  
+            src="http://www.frugaljoe.com/logo.jpg"  border=0></a>
+
+</TD>
+    <TD width=1 bgColor=#ffcc99><IMG height=1 
+      src="http://www.salealerts.com/dot.gif" width=1 border=0>
+
+</TD>
+    <TD vAlign=top><I></I><FONT face=Verdana size=1><BR>
+
+You have received this email because you have subscribed 
+      through one of our marketing partners. If you would like 
+      to learn more about Frugaljoe.com then please visit our website 
+      www.frugaljoe.com If this message was sent to you in error, or
+if you 
+      would like to unsubscribe please click <A 
+ 
+href="http://www.frugaljoe.com/unsubscribe.php?eid=392232\~moc.cnietonten^^mj\~1754388\~12a1">here </a>or
+cut and paste the following link into a web browser:<br>
+ http://www.frugaljoe.com/unsubscribe.php?eid=392232\~moc.cnietonten^^mj\~1754388\~12a1
+<br></A></FONT><BR><IMG height=20
+src="http://www.salealerts.com/dot.gif" 
+      width=459 border=0></TD></TR></TBODY></TABLE></CENTER></DIV></BODY></HTML>
+
+</body>
+</html>
+<img src="http://www.330w.com/open/open.php?eid=zzzz@spamassassin.taint.org&oid=Alex-09242002-HTML&custid=frugaljoe" border=0 height=0 width=0>
+
+

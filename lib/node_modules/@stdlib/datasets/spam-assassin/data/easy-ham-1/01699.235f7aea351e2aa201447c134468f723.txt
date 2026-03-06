@@ -1,0 +1,22 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Sat Sep  7 06:43:31 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Sat, 7 Sep 2002 00:43:31 -0500
+Subject: [Spambayes] Maybe change X-Spam-Disposition to something else...
+In-Reply-To: <w53fzwmbcbq.fsf@woozle.org>
+References: <15737.31513.555967.915801@12-248-11-90.client.attbi.com>
+        <w53fzwmbcbq.fsf@woozle.org>
+Message-ID: <15737.37379.699338.64767@12-248-11-90.client.attbi.com>
+
+
+    >> ... choose something with a different prefix than "X-Spam-" so that
+    >> people don't confuse it with SpamAssassin ...
+
+    Neale> How about X-Spambayes-Disposition (or X-Hammie-Disposition if
+    Neale> there'll be other classifier front-ends)?
+
+I kinda like "hammie".  Your front end was there first, so I suspect it will
+rule the front end roost.
+
+S
+

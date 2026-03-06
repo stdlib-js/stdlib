@@ -1,0 +1,27 @@
+
+{{alias}}( iterator )
+    Computes the mid-range of all iterated values.
+
+    The mid-range is the arithmetic mean of maximum and minimum values.
+    Accordingly, the mid-range is the midpoint of the range and a measure of
+    central tendency.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    Returns
+    -------
+    out: number|null
+        Mid-range.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 1.0, -2.0, 3.0, -4.0 ] );
+    > var v = {{alias}}( arr )
+    -0.5
+
+    See Also
+    --------
+

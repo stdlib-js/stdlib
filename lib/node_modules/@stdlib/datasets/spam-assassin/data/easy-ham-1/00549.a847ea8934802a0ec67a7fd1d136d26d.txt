@@ -1,0 +1,126 @@
+From fork-admin@xent.com  Wed Sep 11 13:49:29 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 82ACC16F03
+	for <jm@localhost>; Wed, 11 Sep 2002 13:49:28 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 13:49:28 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8AKkmC16112 for <jm@jmason.org>;
+    Tue, 10 Sep 2002 21:46:52 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 47F5B2940AC; Tue, 10 Sep 2002 13:43:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id C6FF029409A for <fork@xent.com>; Tue,
+    10 Sep 2002 13:42:34 -0700 (PDT)
+Received: (qmail 34817 invoked from network); 10 Sep 2002 20:45:19 -0000
+Received: from adsl-67-119-24-188.dsl.snfc21.pacbell.net (HELO golden)
+    (67.119.24.188) by relay1.pair.com with SMTP; 10 Sep 2002 20:45:19 -0000
+X-Pair-Authenticated: 67.119.24.188
+Message-Id: <016f01c2590a$f9a6abf0$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: <fork@spamassassin.taint.org>
+References: <20020910132951.04720C44D@argote.ch>
+Subject: More on promiscuity and word choice Re: Selling Wedded Bliss (was
+    Re: Ouch...)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 10 Sep 2002 13:45:17 -0700
+
+Robert Harley writes:
+> >OK, then. Consider a population of 1,000,000. 500,000 men each
+> >pair off with 500,000 women. Then, 1 man, let's call him "Wilt",
+> >also has sex with the other 499,999 women
+> 
+> This has never happened.  Its relevance is nil.
+
+It was a extreme contrived example because you glosded over the 
+point of the earlier 3-person example. 
+
+But OK, Mr Math, let it be N men and women, for any N>2. They 
+all pair off. Then, some number H, N>H>0, of men has sex with 
+all the other N-1 women he hasn't yet had sex with. 
+
+Pick any N and H that might be interesting. Any choice of
+values results in meaningful differences between the sexes' 
+"promiscuity", as commonly understood. It should be more 
+obvious with extreme choices of numbers, but it is also true 
+for any choice of N and H, if unrealistic totals distract you.
+
+Further, and I was hoping this would be clear without saying
+so outright, this model actually approximates the cliche 
+"common wisdom" about per-gender sexual behavior, if you 
+reverse the male and female roles.
+
+Those stereotypes are: that more men than women seek multiple
+partners -- men being "more promiscuous" than women -- and that 
+surplus of male interest is satisfied by a smaller number of 
+hyperpromiscuous women (often derisively labelled "sluts").
+
+> So I chose not to type "on average" explicitly in my post, since this
+> is FoRK and one tends to assume that people have a clue.
+> 
+> There is no disagreement between us, except that I am more interested
+> in typical behaviour and you in extreme. 
+
+Nope, now you've amended the meaning of your initial statement to
+make it more defensible. What I objected to was:
+
+Robert Harley:
+# >The assumption that females of all species tend to be less promiscuous
+# >than males simply does not fit the facts, Hrdy contended.
+# 
+# Well, DUH!!!
+# 
+# It is perfectly obvious that (heterosexual) promiscuity is exactly,
+# precisely identical between males and females.
+# 
+# Of course the shapes of the distributions may differ.
+
+If you assumed people on FoRK had a clue, would you have needed
+to jump in with a patronizing "DUH!!"? 
+
+If you were talking about fuzzy, typical behavior, would you have 
+huffed and puffed with the words "perfectly obvious" and "exactly, 
+precisely identical"? 
+
+If your concern was with the "typical", why didn't you adopt the 
+typical definition of "promiscuous", rather than a straw-man
+definition which allowed you to interject "DUH!!" and mock an
+anthrolopology professor's conclusions? 
+
+> Actually, you probably just
+> had a bad day and felt like jumping down my throat for the hell of it.
+
+You are welcome to that theory!
+
+But here's an alternate theory: when you jump in with a patronizing 
+and overblown pronouncement -- e.g. "DUH!!... perfectly obvious... 
+exactly, precisely identical..." -- and that pronouncement is 
+itself sloppy and erroneous, then others may get a kick out of 
+popping your balloon. 
+
+- Gordon
+
+
+

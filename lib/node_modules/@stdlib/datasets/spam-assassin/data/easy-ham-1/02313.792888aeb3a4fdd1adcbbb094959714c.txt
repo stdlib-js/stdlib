@@ -1,0 +1,47 @@
+From rssfeeds@jmason.org  Mon Oct  7 12:05:05 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B648E16F70
+	for <jm@localhost>; Mon,  7 Oct 2002 12:03:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 12:03:40 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9780NK23227 for
+    <jm@jmason.org>; Mon, 7 Oct 2002 09:00:23 +0100
+Message-Id: <200210070800.g9780NK23227@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: 1Mb/s through mud
+Date: Mon, 07 Oct 2002 08:00:22 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85531633
+Date: Not supplied
+
+The DoE has announced a high-speed data-transfer that runs on drillpipe, 
+through "a 4-inch diameter steel pipe immersed in electrically conductive mud 
+at pressures up to 1000 atmospheres, temperatures up to 150 deg C, and with 
+vibrational accelerations of hundreds of g's:" 
+
+    Now, with a high-speed, bi-directional communications link, a drilling 
+    system's azimuth, inclination, pressure, temperature, loads and vibration, 
+    along with information on rock characteristics near the drill bit, can be 
+    evaluated almost instantly. Also, because of the ability to send high-speed 
+    data through the drill pipe, technologies once thought unobtainable – such 
+    as collecting seismic data at the drill bit – may now be possible. 
+
+    With high-resolution seismic data collected "ahead of the bit," operators 
+    could steer the drill bit more precisely toward oil- and gas-bearing sweet 
+    spots and away from less productive areas. This will enhance the efficiency 
+    of oil and gas wells and reduce the number of wells needed to produce a 
+    reservoir.  
+
+Link[1] Discuss[2] (_via /.[3]_)
+
+[1] http://www.fossil.energy.gov/techline/tl_intellipipe.shtml
+[2] http://www.quicktopic.com/boing/H/VRj5gZXZSGT
+[3] http://slashdot.org
+
+

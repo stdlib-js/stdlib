@@ -1,0 +1,114 @@
+From iiu-admin@taint.org  Tue Aug 20 10:58:40 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C8E4343C40
+	for <jm@localhost>; Tue, 20 Aug 2002 05:58:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 10:58:16 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JLIuZ09698;
+    Mon, 19 Aug 2002 22:18:56 +0100
+Received: from mail1.mail.iol.ie (mail1.mail.iol.ie [194.125.2.192]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JLGrZ09592 for
+    <iiu@taint.org>; Mon, 19 Aug 2002 22:16:53 +0100
+Received: from [213.202.167.110] (helo=hobbes) by mail1.mail.iol.ie with
+    smtp (Exim 3.35 #1) id 17gtkg-00089j-00 for iiu@taint.org; Mon,
+    19 Aug 2002 22:07:54 +0100
+From: "Darragh Rogan" <lists@roganmedia.com>
+To: <iiu@taint.org>
+Subject: RE: [IIU] Recommendations on phone / pda+phone + European GPRS coverage info.
+Message-Id: <NGBBJPODELFJJHEPGPMHOEEACAAA.lists@roganmedia.com>
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2615.200
+In-Reply-To: <000a01c24782$d094d2d0$b400a8c0@aardvark.ie>
+Importance: Normal
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: iiu@taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+Date: Mon, 19 Aug 2002 22:17:06 +0100
+
+o2 xda?
+
+Darragh
+
+-----Original Message-----
+From: iiu-admin@taint.org [mailto:iiu-admin@taint.org]On Behalf Of
+Gearoid Griffin
+Sent: 19 August 2002 14:18
+To: iiu@taint.org
+Subject: Re: [IIU] Recommendations on phone / pda+phone + European GPRS
+coverage info.
+
+
+Bernie, you might try the
+Sony - Ericcison T68m? I use it with my Pocket Pc all the time no problems.
+Gearóid
+----- Original Message -----
+From: "Bernard Michael Tyers" <bernard.tyers@dcu.ie>
+To: <iiu@taint.org>; "Open Tech list" <open@webnet.ie>
+Sent: Monday, August 19, 2002 2:12 PM
+Subject: [IIU] Recommendations on phone / pda+phone + European GPRS coverage
+info.
+
+
+> Hi everyone,
+> (apologies for the cross list posting)
+>
+> My boss has asked me about the whole phone-pda/pda + phone thingy.
+> They're looking for a phone with following outlined specs:
+>
+> 1. gprs
+> 2. tri-band (states useage also)
+> 3. long battery life
+> 4. irda/bluetooth (but bluetooth is only an add-on..I'm ignoring it)
+> 5. easy to use (phb market :)
+>
+> I had suggested him to maybe look at a pda/phone combo.
+>
+> Can anyone suggest :
+>
+> 1. possible phones with the first set of specs
+> 2. a phone/pda combo with the same specs
+> 3. some information sources (maps, rates, percentages, etc) for gprs
+> coverage europe-wide, and fees for roaming.
+>
+> thanks in advance,
+>
+> rgrds,
+> Bernard
+> --
+> Bernard Tyers * National Centre for Sensor Research * P:353-1-700-5273 *
+> E: bernard.tyers@dcu.ie * W: www.physics.dcu.ie/~bty * L:N117
+>
+> _______________________________________________
+> IIU mailing list
+> IIU@iiu.taint.org
+> http://iiu.taint.org/mailman/listinfo/iiu
+>
+
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+
+
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+

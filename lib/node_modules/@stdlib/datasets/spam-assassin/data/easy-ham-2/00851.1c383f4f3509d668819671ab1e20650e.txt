@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Wed Jul 24 14:15:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 09133440CC
+	for <jm@localhost>; Wed, 24 Jul 2002 09:15:33 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 14:15:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6ODB2414451 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 14:11:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1568E294134; Wed, 24 Jul 2002 06:00:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from imo-m09.mx.aol.com (imo-m09.mx.aol.com [64.12.136.164]) by
+    xent.com (Postfix) with ESMTP id 6299D29410C for <fork@xent.com>;
+    Wed, 24 Jul 2002 05:59:13 -0700 (PDT)
+Received: from ThosStew@aol.com by imo-m09.mx.aol.com (mail_out_v32.21.)
+    id k.135.11be3f63 (4419); Wed, 24 Jul 2002 09:08:12 -0400 (EDT)
+From: ThosStew@aol.com
+Message-Id: <135.11be3f63.2a7000bc@aol.com>
+Subject: Re: [Baseline] Raising chickens the high-tech way
+To: dl@silcom.com, fork@spamassassin.taint.org
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Mailer: AOL 5.0 for Mac sub 40
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 09:08:12 EDT
+
+
+In a message dated 7/23/2002 6:02:27 PM, dl@silcom.com writes:
+
+>If we're willing to count artificial
+>selection as genetic engineering, 
+
+Of course was genetic engineering. It used the fundamental mechanism of 
+genetics (inheritance of traits), and not randomly, but 
+intentionally--breeding for long fur, fat hams, whatever. The degree to which 
+the engineers--farmers, breeders--understood exactly how the mehcanism works 
+is only marginally relevant to the question of whether it was engineering. 
+Science progresses. Over the years, centuries, their, our, knowledge 
+increased, and domestication became more effective. Bit by bit the mechanisms 
+became known--Mendel making a major breakthrough. The first hybrid grains 
+(which date from the 1920s) represent another step. Watson and Crick another, 
+etc. But it's engineering--just as Roman architecture was civil engineering, 
+even if they knew less about the mathematics behind it than we do today, just 
+as Galen was a physician, though laughably ignorant by our standards.
+
+T
+
+Tom
+http://xent.com/mailman/listinfo/fork
+
+

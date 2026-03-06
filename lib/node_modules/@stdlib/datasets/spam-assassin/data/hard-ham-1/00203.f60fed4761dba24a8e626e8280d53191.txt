@@ -1,0 +1,171 @@
+Return-Path: ler@lerami.lerctr.org
+Delivery-Date: Tue Sep  3 15:02:41 2002
+Return-Path: <dms-errors@dms.netcenter.com>
+Received: from dms-mail01.netcenter.com (dms-mail01.netcenter.com [207.200.87.31])
+	by lerami.lerctr.org (8.12.2/8.12.2/20020524/$Revision: 1.30 $) with ESMTP id g83K2buK013193
+	for <ler@lerami.lerctr.org>; Tue, 3 Sep 2002 15:02:38 -0500 (CDT)
+Message-Id: <200209032002.g83K2buK013193@lerami.lerctr.org>
+Received: from dms-www1.netscape.com (dms-mailcaster-s06.netcenter.com) by dms-mail01.netcenter.com (LSMTP for Windows NT v1.1b) with SMTP id <22.0003F109@dms-mail01.netcenter.com>; Tue, 3 Sep 2002 12:57:13 -0700
+To: ler@lerami.lerctr.org
+Subject: Announcing the New Netscape 7.0 - The Fastest Netscape Browser Ever
+From: Netscape <Netscape@dms.netscape.com>
+Date: Tue, 03 Sep 2002 13:04:31 -0800
+Reply-To: Netscape Unsubscribe <dms-unsubscribe@dms.netcenter.com>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Content-Type: multipart/alternative; boundary="______BoundaryOfDocument______"
+X-Status: 
+X-Keywords: 
+
+
+This is a multi-part message in MIME format.
+
+--______BoundaryOfDocument______
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+
+Netscape Valued Customer:
+
+Announcing the NEW Netscape 7.0 Browser!
+Download it now for FREE!
+
+For more information and to download now, click here:
+http://dms-www01.netcenter.com/cgi-bin/gx.cgi/mcp?p=041Lnf041LoE51b9er012000W2TBvFJ
+
+Get Netscape 7.0 - the Fastest Netscape Browser Ever!
+
+It's easier than ever to upgrade to Netscape 7.0, and
+keep your bookmarks and browser settings.
+
+Upgrade to the NEW Netscape 7.0, and get the most from
+your time on-line.
+
+And Netscape 7.0 is also available on CD for FREE!
+
+Click here to order the CD and Guidebook:
+http://dms-www01.netcenter.com/cgi-bin/gx.cgi/mcp?p=041Lnh041LoE51b9er012000W2TBvFJ
+
+The Netscape Browser Team
+
+
+----------------------------------------------------------- 
+Netscape respects your online time and Internet privacy. 
+If you would prefer not to receive future email messages 
+from Netscape Netbusiness, please click on the following 
+link or simply reply to this email and type "REMOVE" in the 
+subject line. 
+PLEASE NOTE: DO NOT CLICK ON THE LINK UNLESS YOU 
+WANT TO UNSUBSCRIBE. 
+http://dms-www01.netcenter.com/cgi-bin/gx.cgi/mcp?p=041LoB3SLb41LoE51b9er012000W2TBvFJ 
+
+You are subscribed with:[ler@lerami.lerctr.org]
+(c) 2002 Netscape. All Rights Reserved. Privacy Policy, Terms 
+of Service.
+
+http://channels.netscape.com/ns/browsers/download.jsp
+
+--______BoundaryOfDocument______
+Content-Type: text/html
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Netscape 7.0</title>
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table bgcolor="#99CCCC" width=530 border="0" cellpadding="0" cellspacing="0">
+<!--TOP RULE-->
+	
+
+<!--LOGO ROW-->
+<tr bgcolor="#4A7394">
+	<td rowspan=2 width=182><img src="http://dms-www1.netscape.com/N7/promo/images/logo-netscape.gif?N7F1=26516021" alt="Netscape 7.0" width="182" height="39" border="0"></td>
+	<td colspan="3" width=348><img src="http://dms-www1.netscape.com/N7/promo/images/spacer.gif" width="348" height="1" border="0"></td>
+	
+</tr>
+<tr bgcolor="#003366">
+	<td width=18><img src="http://dms-www1.netscape.com/N7/promo/images/spacer.gif" alt="" width="18" height="1" border="0"></td>
+	<td colspan="2" width=330><FONT FACE="arial,helvetica,sans-serif" COLOR="#FFFFFF" SIZE="-1"><B>Announcing the</B></FONT>
+	<FONT FACE="arial,helvetica,sans-serif" COLOR="#ffff00" SIZE="-1"><B>NEW</B></FONT>
+	<FONT FACE="arial,helvetica,sans-serif" COLOR="#FFFFFF" SIZE="-1"><B>Netscape 7.0 Browser!</B></FONT><br>
+	<FONT FACE="arial,helvetica,sans-serif" COLOR="#FFFFFF" SIZE="-1"><B>Download it now for </B></FONT>
+	<FONT FACE="arial,helvetica,sans-serif" COLOR="#ffff00" SIZE="-1"><B>FREE!</B></FONT>
+	</td>
+</tr>
+
+<!--HEADER SHADOW-->
+<tr bgcolor="#99CCCC">
+	<td width=182><img src="http://dms-www1.netscape.com/N7/promo/images/header-shadow-lt.gif" width="182" height="32" border="0"></td>
+	<td width=348 colspan="3" valign="top"><img src="http://dms-www1.netscape.com/N7/promo/images/header-shadow-rt.gif" alt="" width="338" height="29" border="0"></td>
+</tr>
+
+<tr bgcolor="#99CCCC">
+<!--LEFT COLUMN CONTENT-->
+	<td valign="top">
+	<img src="http://dms-www1.netscape.com/N7/promo/images/spacer.gif" alt="" width="1" height="3" border="0"><br>
+	<img src="http://dms-www1.netscape.com/N7/promo/images/headline-available.gif" alt="Netscape 7.0 also available on CD - FREE!" width="182" height="77" border="0"><br>
+	<img src="http://dms-www1.netscape.com/N7/promo/images/img-cd-book.gif" alt="" width="182" height="153" border="0">
+	</td>
+
+<!--SPACER COLUMN-->
+	<td><img src="http://dms-www1.netscape.com/N7/promo/images/spacer.gif" alt="" width="18" height="1" border="0">
+	</td>
+	
+<!--MIDDLE COLUMN CONTENT-->
+	<td valign="top">
+	<table width=320 border="0" cellpadding="0" cellspacing="0">
+		<tr valign="top">
+		<td width="205">
+		<FONT FACE="arial,helvetica,sans-serif" COLOR="#000000" SIZE="+1"><B>Get Netscape 7.0 -<br>
+		the Fastest Netscape<br>Browser Ever!</B></FONT>
+		</td>
+		<td width="115">
+		<img src="http://dms-www1.netscape.com/N7/promo/images/burst-free.gif" alt="FREE" width="115" height="71" border="0"><br>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="2">
+		<FONT FACE="arial,helvetica,sans-serif" COLOR="#000000" SIZE="-1"><B>It's easier than ever to upgrade to Netscape 7.0,<br>
+		and keep your bookmarks and browser settings.<br><br>
+		Upgrade to the NEW Netscape 7.0, and get the<br>
+		most from your time on-line.</B></FONT><br>
+		<img src="http://dms-www1.netscape.com/N7/promo/images/spacer.gif" alt="" width="1" height="26" border="0"><br>
+		<A HREF=http://dms-www01.netcenter.com/cgi-bin/gx.cgi/mcp?p=041Lnj041LoE51b9er012000W2TBvFJ><img src="http://dms-www1.netscape.com/N7/promo/images/button-free-cd.gif" alt="FREE CD ROM" width="137" height="28" border="0"></a>
+		<img src="http://dms-www1.netscape.com/N7/promo/images/spacer.gif" alt="" width="26" height="1" border="0">
+		<A HREF=http://dms-www01.netcenter.com/cgi-bin/gx.cgi/mcp?p=041Lng041LoE51b9er012000W2TBvFJ><img src="http://dms-www1.netscape.com/N7/promo/images/button-free-dnld.gif" alt="FREE DOWNLOAD" width="137" height="28" border="0"></a>
+		</td></tr>
+	</table>
+	</td>
+	
+<!--SPACER COLUMN-->
+	<td><img src="http://dms-www1.netscape.com/N7/promo/images/spacer.gif" alt="" width="10" height="1" border="0">
+	</td>	
+</tr>
+
+<!--LEGAL SECTION-->
+<tr bgcolor="#99CCCC">
+	<td colspan="4">
+	<FONT FACE="arial,helvetica,sans-serif" COLOR="#000000" SIZE="1">
+	<CENTER><BR>To Unsubscribe, click <A HREF=http://dms-www01.netcenter.com/cgi-bin/gx.cgi/mcp?p=041LoB3SLb41LoE51b9er012000W2TBvFJ>here</a> and follow the instructions on the following page<br>
+	- or simply reply to this e-mail and type "REMOVE" in the subject line.<br>
+	&copy; 2002 Netscape, All Rights Reserved. <A HREF=http://dms-www01.netcenter.com/cgi-bin/gx.cgi/mcp?p=041LoK041LoE51b9er012000W2TBvFJ>Legal &amp; Privacy Notices</a><br><BR>
+	</CENTER></FONT>
+	</td>
+</tr>
+</table>
+
+
+</body>
+</html>
+
+--______BoundaryOfDocument______--
+
+
+:
+annmn:[041LoE041LoE51b9er012000W2TBvFJ]
+
+

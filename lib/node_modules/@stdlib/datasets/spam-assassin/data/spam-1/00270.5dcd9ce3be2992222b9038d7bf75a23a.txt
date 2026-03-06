@@ -1,0 +1,110 @@
+From ilug-admin@linux.ie  Tue Sep 10 18:15:29 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id F2FF016F16
+	for <zzzz@localhost>; Tue, 10 Sep 2002 18:15:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 10 Sep 2002 18:15:28 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8AFHhC04346 for
+    <zzzz-ilug@jmason.org>; Tue, 10 Sep 2002 16:17:43 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA31441; Tue, 10 Sep 2002 16:14:20 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay.dub-t3-1.nwcgroup.com
+    (postfix@relay.dub-t3-1.nwcgroup.com [195.129.80.16]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA31382 for <ilug@linux.ie>; Tue,
+    10 Sep 2002 16:13:55 +0100
+Received: from consultant.com (unknown [208.227.137.80]) by
+    relay.dub-t3-1.nwcgroup.com (Postfix) with SMTP id EA86D7003F for
+    <ilug@linux.ie>; Tue, 10 Sep 2002 16:13:23 +0100 (IST)
+From: "Eseimoku K.Anderson(Chief)" <k_u2_1999@consultant.com>
+To: <ilug@linux.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="ISO-8859-1"
+Date: Tue, 10 Sep 2002 16:17:30 +0200
+Content-Transfer-Encoding: 8bit
+Message-Id: <20020910151323.EA86D7003F@relay.dub-t3-1.nwcgroup.com>
+Subject: [ILUG] Seeking Your Partnership
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Dear Partner to be,
+
+First, I must apologise to you for using this medium to communicate to you
+about this project.
+
+I am a highly placed official of  Government of Nigeria and also a
+founding member of the ruling party in Power now,the Peoples Democratic
+Party(PDP).
+
+My committee - The Niger Delta Development Corporation(NDDC)-which is in
+charge of managing and supervising  the disbursement of oil sales revenues
+for the Nigerian government.The revenues  under our control runs into
+several hundred of millions of dollars monthly.My self and   
+other colleagues in the NDDC are currently in need of a foreign partner
+with whose bank account we shall transfer the sum of Forty Nine Million
+Five Hundred Thosand United States Dollars($49.5m).This fund accrued to us
+as commission for oil sales contracts handled under our supervision.
+
+The fund is presently waiting in the Government Account named CBN/FGN
+INDEPENDENT REVENUE account number 400-939134 with J.P.MORGAN CHASE
+BANK,New York.You can do your independent verification of this. However,
+by virtue of our  position as civil servants and members of the NDDC, we
+cannot acquire this funds in our name. This is because as top civil
+servants, we are not allowed by law of the land to own or operate bank
+accounts outside our country for now.
+
+I have been delegated as a matter of trust by my colleagues,
+to look for an overseas partner in whose account we would
+transfer the fund
+
+Hence the reason for this mail.We shall be Transferring the money to your
+account with your company as we shall present your company as a registered
+Foreign company in Nigeria and you are been paid for a contract which you
+executed for our country through the NDDC and any other Federal Ministry
+that we decide to use to siphon the funds through.
+
+For your support and partnership,please reply me to negotiate your fees or
+the percentage you wish to be paid when the funds arrive your bank account.
+
+You must however note that this transaction, with
+regards to our disposition to continue with you, is subject
+to these terms. Firstly, our conviction of your transparency.
+Secondly, that you treat this transaction with utmost secrecy
+and confidentiality. Finally and above all, that you will provide
+an account that you have absolute control over.
+
+The transaction, although discrete, is legitimate and there
+is no risk or legal disadvantages either to ourselves or yourself now or
+in the future as we have put in place perfect mchineries that will ensure
+a hitch free transfer into your account upon acceptance.
+
+The transfer will be effected to your account within ten-fourteen
+(10-14) working days as soon as we reach an agreement and you furnish
+me with a  suitable bank account and company name and address with all
+your contact numbers including fax number.
+
+I am looking forward to doing business with you and do solicit
+your confidentiality in this transaction,  Please mail your
+response to me.
+
+Yours faithfully,
+Anderson K. Eseimoku
+ 
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

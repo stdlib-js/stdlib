@@ -1,0 +1,879 @@
+Return-Path: ticket_erp.b2oaabm1031163663531@sneakemail.com
+Delivery-Date: Wed Sep  4 17:35:18 2002
+Return-Path: <ticket_erp.b2oaabm1031163663531@sneakemail.com>
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mothlight.dyndns.org (8.11.6/8.11.6) with ESMTP id g84LZHA02008
+	for <nice@localhost>; Wed, 4 Sep 2002 17:35:18 -0400
+Received: from fastmail.fm [209.61.183.86]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for nice@localhost (single-drop); Wed, 04 Sep 2002 17:35:18 -0400 (EDT)
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by server2.fastmail.fm (Cyrus v2.1.5) with LMTP; Wed, 04 Sep 2002 16:16:06 -0500
+X-Sieve: CMU Sieve 2.2
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by www.fastmail.fm (Cyrus v2.1.3) with LMTP; Wed, 04 Sep 2002 16:16:08 -0500
+Received: from www.fastmail.fm (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 963E86DC4D
+	for <mothlight@fastmail.fm>; Wed,  4 Sep 2002 16:12:46 -0500 (CDT)
+X-Attached: TableOfContents></A>
+X-Virus-checked: Yes
+X-Mail-from: ticket_erp.b2oaabm1031163663531@sneakemail.com
+X-Delivered-to: <mothlight@fastmail.fm>
+X-Spam: spam
+  BIG_FONT, CLICK_HERE_LINK
+Received: from mail.sneakemail.com (mail.sneakemail.com [207.106.87.13])
+	by www.fastmail.fm (Postfix) with SMTP id BDB546DC0B
+	for <mothlight@fastmail.fm>; Wed,  4 Sep 2002 16:11:00 -0500 (CDT)
+Received: (qmail 21231 invoked from network); 4 Sep 2002 18:21:04 -0000
+Received: from localhost (HELO monkey) (127.0.0.1)
+  by localhost with SMTP; 4 Sep 2002 18:21:04 -0000
+Received: (qmail 21014 invoked from network); 4 Sep 2002 18:20:33 -0000
+Received: from lb1.theserverside.com (HELO 192.168.1.16) (64.49.216.101)
+  by mail.sneakemail.com with SMTP; 4 Sep 2002 18:20:33 -0000
+Message-ID: <964551971.1031163664828.JavaMail.root@monkey>
+Date: Wed, 04 Sep 2002 13:08:00 -0500
+From: "TheServerSide Connectionnewsletter@theserverside.com [mothlight/serverside.com]" <ticket_jcehaoa1031163663480@sneakemail.com>
+Reply-To: "TheServerSide Connectionnewsletter@theserverside.com [mothlight/serverside.com]" <ticket_a79s39q1031163663497@sneakemail.com>
+To: mothlight@fastmail.fm
+Subject: Struts 1.1 Article, JavaServer Faces Tech Talk, iXML & Widget Pages Patterns, JRun 4.0 Review
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=="
+X-Status: 
+X-Keywords:                  
+
+This is a multi-part message in MIME format.
+
+--==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+=================================
+    TheServerSide Connection
+-Your J2EE Community Newsletter-
+=================================
+September 4, 2002      Circulation: 130 000+           No. 42 
+
+
+
+IN THIS ISSUE 
+--------------------------------------------------------------------------------
+Featured Articles 
+ o Struts 1.1: Should I Upgrade? 
+
+Hard Core Tech Talks
+ o Amy Fowler - Senior Staff Engineer, Java Software, Sun Microsystems 
+
+Upcoming Conferences 
+ o Great Lakes Software Symposium 2002 
+
+Enterprise Java Education Strategies 
+ o Floyd Marinescu to co-teach J2EE Patterns - Sept 16, Dallas 
+
+New Patterns 
+ o iXML Pattern 
+ o Widget Pages 
+
+New App Server Reviews 
+ o JRun 4.0 - Good Stuff 
+
+Key J2EE Industry News Headlines 
+ Some key headlines: 
+ o Java Server Faces Public Draft and Early Access Available 
+ o Apache Cactus 1.4 J2EE Unit Testing Framework Released 
+
+
+This newsletter is available in HTML format at:
+http://www.theserverside.com/resources/newsletters/news42.html?text-click
+
+--==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+<HTML>
+
+
+
+<HEAD>
+
+  <TITLE> TheServerSide.com Newsletter #42</TITLE>
+
+</HEAD>
+
+
+
+
+
+<BODY BGCOLOR=#ffffff><!----------------------- Top ------------------------------------->
+
+<A NAME="news42.htmltop"></A><!----------------------- The Newsletter logo -------------------->
+
+<A HREF="http://lists.theserverside.com/t/12337/850395/201/181/"><IMG 
+
+ SRC="http://www.TheServerSide.com/resources/newsletters/inreview4.gif?news42-view"
+
+ BORDER=0  WIDTH=629 ALT ="[TheServerSide Newsletter #42]"></A>
+<br>
+<small>
+<b><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+September 4, 2002&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Circulation: 130 000+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No. 42
+</font></b>
+</small>
+
+<br><br>
+
+<BR>
+<!-- Newsletter 42 sent on Sept 4, 2002 -->
+
+
+<!----------------------- TOP Position Ad  ------------------------>
+<BLOCKQUOTE>
+<table border="0" width="500" cellspacing="0" cellpadding="2">
+  <tr>
+    <td bgcolor="#808080" ><b><font face="Arial" color="#EEEEEE" size="2">&nbsp;This newsletter sponsored in part by Rational </font></b></td>
+  </tr>
+  <tr >
+    <td bgcolor="#EEEEEE" >
+    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+   <b>Rational&#174; XDE Is Here -- Developing Java&#153; Software Will Never Be The Same.</b>
+<a href="http://lists.theserverside.com/t/12337/850395/202/181/" target="_blank">
+<img src="http://www.theserverside.com/images/Rational38.gif" align="right" valign="top" hspace="1" vspace="6" border="0"></a>
+Rational&#174; XDE&#153; Professional is an eXtended Development Environment for 
+Java developers. Use it with your choice of IDE - as a standalone IDE or install 
+it into IBM&#174; WebSphere&#153; Studio Application Developer. It runs in the IDE. 
+Visualize your code while you develop. Order your FREE Rational Developer 
+Solutions CD and <a href="http://lists.theserverside.com/t/12337/850395/202/181/" target="_blank">try Rational XDE now!</a>
+
+    
+    </font>
+     </td>
+  </tr>
+</table>
+</BLOCKQUOTE>
+
+<br>
+
+<!----------------------- Newsletter Table of Conents ------------->
+
+<P>
+
+  <A NAME=TableOfContents></A>
+
+  <B><FONT COLOR=#929292 SIZE=+1>In This Issue</FONT></B>
+
+  <HR ALIGN=left WIDTH="65%" COLOR=#d4d4d4 NOSHADE SIZE=2><BR>
+
+
+
+
+
+<BLOCKQUOTE>
+
+
+  <!----------- Featured Technical Article ------------>
+
+  <A href="#articles"><B> Featured Articles </B></A><BR>
+  <SMALL>
+
+ &nbsp;o Struts 1.1: Should I Upgrade? <br>
+
+ </SMALL>
+
+
+  <br><!------------- Hard Core Tech Talks	 ----------------->
+
+  <A href="#tech"><b>Hard Core Tech Talks</b></A><BR>
+
+  <SMALL>
+
+  &nbsp;o Amy Fowler - Senior Staff Engineer, Java Software, Sun Microsystems 
+  <br> 
+  </SMALL>
+
+  
+  <BR>
+  <!------------- Upcoming Conferences ----------------->
+  <A HREF="#conferences"><B> Upcoming Conferences </B></A><BR>
+  <SMALL>
+  &nbsp;o  Great Lakes Software Symposium 2002     <BR>	
+  </SMALL>
+
+  
+ 
+  <BR><!------------- Enterprise Java Education Strategies ----------------->
+
+  <A href="#education"><B>Enterprise Java Education Strategies </B></A><BR>
+
+  <SMALL>
+
+  &nbsp;o Floyd Marinescu to co-teach J2EE Patterns - Sept 16, Dallas <br>
+  
+  </SMALL>
+
+
+   <BR><!----------- New Patterns ------------>
+
+  <A href="#patterns"><B> New Patterns </B></A><BR>
+
+  <SMALL>
+
+  &nbsp;o iXML Pattern      <BR>
+  &nbsp;o Widget Pages     <BR>
+
+    
+
+  </SMALL>
+
+  <BR><!----------- New App Server Reviews ------------>
+
+  <A href="#reviews"><B> New App Server Reviews </B></A><BR>
+
+  <SMALL>
+
+  &nbsp;o JRun 4.0 - Good Stuff <BR>
+      
+    
+
+  </SMALL>
+
+  
+  
+  <BR><!-------------- Latest Headlines ------------------------>
+
+  <A href="#news"><B> Key J2EE Industry News Headlines </B></A><BR>
+
+  <small>
+
+  &nbsp;<b>Some key headlines:</b> <br>
+
+  &nbsp;o Java Server Faces Public Draft and Early Access Available  
+     <BR>
+  &nbsp;o Apache Cactus 1.4 J2EE Unit Testing Framework Released      <BR>
+
+ 
+
+ </small>
+
+<P><small>
+
+<B> This newsletter is transmitted twice a month. It is printer-friendly and available
+
+  <A HREF="http://lists.theserverside.com/t/12337/850395/203/181/">online</A>
+
+</B></small>
+
+</P> 
+
+ 
+
+ </BLOCKQUOTE>   
+
+<br><br>
+
+
+<!------------------------- Featured Articles ---------------------------->
+
+
+
+<A NAME=articles></A>
+
+
+<P>
+
+<B><FONT COLOR=#929292 SIZE=+1>Featured Articles</FONT></B><BR>
+
+<HR ALIGN=left WIDTH="65%" COLOR=#d4d4d4 NOSHADE SIZE=2><BR>
+
+
+
+<BLOCKQUOTE>
+
+
+
+<FONT SIZE=+2><B> 
+Struts 1.1: Should I Upgrade? 
+</B></FONT><br>
+
+<b><small>By John Yu</small></b>
+
+<br><br>
+
+<p>
+Built on the success of Struts 1.0, Struts 1.1 beta was released in March this year and showcased at JavaOne 2002. This article describes the new features found in Apache Struts 1.1 beta and the impact of migration from Struts 1.0 to Struts 1.1. It also offers advice on the migration decision and the upgrade process.
+
+</p>
+
+
+
+<A HREF="http://lists.theserverside.com/t/12337/850395/204/181/">Read the article here</A><BR>
+<!------------------------- End of Article ----------------->
+
+<br><br>
+
+
+<SMALL><A href="#news42.htmltop">Back to Top</A></SMALL><BR>
+
+
+</blockquote>
+
+
+<br><br>
+
+
+<A NAME=tech></A>
+<!------------- Upper Middle Position Ad --------------->
+<BLOCKQUOTE>
+<table border="0" width="500" cellspacing="0" cellpadding="2">
+  <tr>
+    <td bgcolor="#808080" ><b><font face="Arial" color="#EEEEEE" size="2">&nbsp;This newsletter is sponsored in part by BEA</font></b></td>
+  </tr>
+  <tr >
+    <td bgcolor="#EEEEEE" >
+    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a href="http://lists.theserverside.com/t/12337/850395/205/181/" target="_blank"> 
+    <img src="http://www.theserverside.com/images/dev_logo.gif" align="left" valign="top" hspace="8" vspace="0" border="0"></a> 
+<b>BEA dev2dev Days - Application Development for the 21st Century.</b>
+Prepare yourself for dev2dev Days, the premier worldwide developer education event from BEA. A full day of serious enterprise development
+instruction, including in-depth code-level demonstrations and J2EE
+training. Get the skills you need to tackle your toughest integration
+and development challenges. <a href="http://lists.theserverside.com/t/12337/850395/205/181/" target="_blank">We're coming to a city near you!</a> 
+	
+    </font>
+     </td>
+  </tr>
+</table>
+</BLOCKQUOTE>
+<br><br>
+
+
+
+<!------------------------- Hard Core Tech Talks ---------------------------->
+<P>
+
+<B><FONT COLOR=#929292 SIZE=+1>New Hard Core Tech Talks</FONT></B><BR>
+
+<HR ALIGN=left WIDTH="65%" COLOR=#d4d4d4 NOSHADE SIZE=2><BR>
+
+
+
+<BLOCKQUOTE>
+
+
+<!--
+<a href="http://lists.theserverside.com/t/12337/850395/29/181/">
+
+<img src="http://www.theserverside.com/events/videos/common/logo.jpg" border="0">
+
+</a>-->
+
+
+ <p>   Get leading
+edge information on J2EE from those who 
+know it best, in Hard Core Tech Talks!  Videos Hosted on<a href="http://lists.theserverside.com/t/12337/850395/30/181/" target="_blank"> HostJ2EE.com</a>.  <i>Featured this week is Amy Fowler, who talks about the JavaServer Faces Specification. </i> 
+
+
+  </p><!------------  Tech Talk 1 ---------------------------------------------->
+
+
+<a href="http://lists.theserverside.com/t/12337/850395/206/181/">
+<img src="http://www.theserverside.com/events/videos/AmyFowler/AmySmall.jpg" align="left" border="0">
+</a>
+
+<br>
+<h2>Senior Staff Engineer, Java Software, Sun Microsystems </h2>
+<br>
+
+<p> 
+In this interview, Amy talks about the problems JavaServer Faces (JSF) solves and how J2EE developers can leverage it in their Web apps. She looks at UI components used in JSF, the implementation of event handling code, and describes a typical use case involving JSF. She also discusses interoperability with JSF using Struts, Webwork, and the Portlet API. 
+</p>
+
+<p>
+
+<a href="http://lists.theserverside.com/t/12337/850395/206/181/">
+
+Click here to watch Amy Fowler's Video Interview
+
+</a>
+
+</p>
+
+
+<br>
+
+
+
+
+   <SMALL><A href="#news42.htmltop">Back to Top</A></SMALL><BR>
+
+
+
+</BLOCKQUOTE>
+
+
+
+<BR><BR>
+
+
+
+
+<!------------------------- Upcoming Conferences ----------------------------------------------------->
+<A NAME=conferences></A>
+<P>
+<B><FONT COLOR=#929292 SIZE=+1>Upcoming Conferences</FONT></B><BR>
+<HR ALIGN=left WIDTH="65%" COLOR=#d4d4d4 NOSHADE SIZE=2><BR>
+ 
+<BLOCKQUOTE>
+  
+
+<font size="+2"><b>Great Lakes Software Symposium 2002 </b></font>
+
+<br>
+
+  <SMALL><B> October 25-27, 2002 - Chicago <br>
+       	    Presented By,  
+ </B></SMALL><BR>
+  <BR>
+
+<img src="http://www.theserverside.com/images/tcpn_logo.gif" border="0">
+
+
+<p>
+A three day J2EE/XML/Web Services conference for Java developers, Java Architects and Technical Project Managers with 48 presentations to select from and features Bruce Tate, author of "Bitter Java", The Middleware Company's own Bruce Martin presenting on XBeans, and many others.  
+<br>
+<br>
+<a href="http://lists.theserverside.com/t/12337/850395/207/181/" target="_blank">Get more conference info here</a><br>
+</p>
+
+<!------------------------- End of Conference#1 ----------------->
+
+<br>
+ <SMALL><A href="#news42.htmltop">Back to Top</A></SMALL><BR></BLOCKQUOTE>
+
+
+</BLOCKQUOTE>
+
+
+
+
+
+<br><br><!------------------------- ENTERPRISE JAVA EDUCATION STRATEGIES ---------------------------->
+
+<A NAME=education></A>
+
+<P>
+
+<B><FONT COLOR=#929292 SIZE=+1>Enterprise Java Education Strategies</FONT></B><BR>
+
+<HR ALIGN=left WIDTH="65%" COLOR=#d4d4d4 NOSHADE SIZE=2><BR>
+
+<BLOCKQUOTE>
+
+<FONT SIZE="+2"><B>Floyd Marinescu to co-teach J2EE Patterns - Sept 16, Dallas </B></FONT><br>
+
+<p>
+Dear TSS Members,
+</p>
+
+<p>
+I thought you'd be interested to know that The Middleware Company has created a J2EE Patterns training course that I will be co-teaching in Dallas during the week of September 16th. The course combines and improves upon the best J2EE design patterns material available in my book EJB Design Patterns, Sun's Core Patterns, TheServerSide's patterns repository and others. 
+</p>
+
+<a href="http://lists.theserverside.com/t/12337/850395/208/181/"><img src="http://www.theserverside.com/images/j2eelogo-blue.gif" align="left" border=0 HSPACE=30></a>
+
+<p>
+I have just reviewed the final material and I am very excited with the end product. This class takes an indepth look at all the most important patterns today, both from a theoretical and a practical perspective. One of the cool things about the course is that it shows you how the patterns were implemented in a variety of popular open source frameworks and production applications, including TheServerSide.com. 
+</p>
+
+<p>
+I highly recommend this course to the seasoned J2EE developer who wants to master the cutting edge in J2EE architecture and design. 
+</p>
+
+<p>
+If you'd like to register for the course, simply click here: <br>
+<a href="http://lists.theserverside.com/t/12337/850395/209/181/">http://www.middleware-company.com/training/j2eepatterns.shtml</a>
+</p>
+
+
+<p>
+Sincerely, 
+<br><br>
+Floyd Marinescu <br>
+Author, EJB Design Patterns <br>
+Director of TheServerSide.com J2EE Community <br>
+</p>
+
+
+
+  <SMALL><A href="#news42.htmltop">Back to Top</A></SMALL><BR></BLOCKQUOTE>
+
+
+</BLOCKQUOTE>
+
+
+
+<BR><BR><!-------------------------New Patterns---------------------------->
+
+
+
+ <A NAME=patterns></A>
+
+<P>
+
+<B><FONT COLOR=#929292 SIZE=+1>New Patterns </FONT></B><BR>
+
+<HR ALIGN=left WIDTH="65%" COLOR=#d4d4d4 NOSHADE SIZE=2><BR>
+
+ 
+
+
+
+<BLOCKQUOTE>
+
+<FONT SIZE=+2><B>  iXML Pattern   </B></FONT><br>
+         
+  <SMALL><B> By Venkatesh Balakumar   
+
+ </B></SMALL><BR>
+
+<BR>
+
+
+<P> 
+In due course, we will be finding ourselves in the middle of Web services, which will granulate into representing all data in XML. For preparing and implementing Web services, it's necessary to express all data in XML. This pattern does the same.
+</P>
+
+
+<A HREF="http://lists.theserverside.com/t/12337/850395/211/181/">Read more on this pattern</A>.<BR> 
+
+<br><br>
+
+
+<FONT SIZE=+2><B> Widget Pages   </B></FONT><br>
+         
+  <SMALL><B> By Guilherme Silva   
+
+ </B></SMALL><BR>
+
+<BR>
+
+
+<P> 
+This pattern allows for using XMLC and Barracuda without exposing their APIs to widget users. In fact it allows for transparently using more than one widget implementation at the same time, which is ideal for migrating or upgrading. 
+</P>
+
+
+<A HREF="http://lists.theserverside.com/t/12337/850395/212/181/">Read more on this pattern</A>.<BR> 
+
+<br><br>
+
+
+
+
+<SMALL><A href="#news42.htmltop">Back to Top</A></SMALL>
+
+ <br>
+ <br><!------------------------- End of Patterns ----------------->
+
+
+
+</BLOCKQUOTE>
+
+
+<BR><BR><!-------------------------New App Server Reviews---------------------------->
+
+
+
+ <A NAME=reviews></A>
+
+<P>
+
+<B><FONT COLOR=#929292 SIZE=+1>New App Server Reviews </FONT></B><BR>
+
+<HR ALIGN=left WIDTH="65%" COLOR=#d4d4d4 NOSHADE SIZE=2><BR>
+
+ 
+
+
+
+<BLOCKQUOTE>
+
+<FONT SIZE=+2><B> JRun 4.0 - Good Stuff    </B></FONT><br>
+         
+  <SMALL><B> By Jason McKerr   
+
+ </B></SMALL><BR>
+
+<BR>
+
+
+<P> 
+Some general impressions I had of JRun: It's very easy to get it up and running.  
+Allaire-now-Macromedia has always had one of my favorite servlet engines. 
+The Java Management Console (web-based admin interface) has gotten a tonne better.  
+It's dead easy to plug into just about any IDE (I've done it with JBuilder Enterprise 6, and the Intellij IDEA EAP (Builds 640 -642). 
+The JSP compiler is smokin! Very, very fast. I think it must come with Jikes or something. 
+
+</P>
+
+
+<A HREF="http://lists.theserverside.com/t/12337/850395/213/181/">Read more on this review</A>.<BR> 
+
+<br><br>
+
+
+
+
+<SMALL><A href="#news42.htmltop">Back to Top</A></SMALL>
+
+ <br>
+ <br><!------------------------- End of New App Server Reviews ----------------->
+
+
+
+
+
+</BLOCKQUOTE>
+
+
+
+
+
+
+
+
+
+<br><br>
+
+<A NAME=news></A>
+<!----------------------- Lower Position Ad  ------------------------>
+<BLOCKQUOTE>
+<table border="0" width="500" cellspacing="0" cellpadding="2">
+  <tr>
+    <td bgcolor="#808080" ><b><font face="Arial" color="#EEEEEE" size="2">&nbsp;This newsletter sponsored in part by Borland </font></b></td>
+  </tr>
+  <tr >
+    <td bgcolor="#EEEEEE" >
+    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<a href="http://lists.theserverside.com/t/12337/850395/214/181/" target="_blank">
+<img src="http://www.theserverside.com/images/Borland.gif" align="left" valign="top" hspace="6" vspace="3" border="0">
+</a>
+<b>Borland(R) - &#35;1 in Java&#153; Development Solutions.</b>
+Discover the key to success with Java technologies from the industry
+leader. Develop to deploy with the award-winning Borland software 
+platform for Java. Get your FREE "Enterprise Guide to Java Development" 
+at <a href="http://lists.theserverside.com/t/12337/850395/214/181/" target="_blank">http://borland.atre.net/sse9_03</a>.
+
+    
+    </font>
+     </td>
+  </tr>
+</table>
+</BLOCKQUOTE>
+<br><br>
+
+
+
+
+<br><!------------------------- News ---------------------------->
+<P><B>
+
+<P><FONT COLOR=#929292 SIZE=+1>Key J2EE Industry Headlines</FONT></b></p> 
+
+<HR ALIGN=left WIDTH="65%" COLOR=#d4d4d4 NOSHADE SIZE=2>
+
+
+
+<BLOCKQUOTE>
+
+
+<P><B>  
+Oracle Releases Preview of New J2EE 1.3 JDeveloper IDE 
+</B></P>
+
+  <P> 
+Oracle has released a preview (v9.0.3) of the JDeveloper IDE. This release introduces full J2EE 1.3 development support starting from UML modeling of EJB's and Web Services, to development, debugging, tuning and deployment, with full integration with Ant, Struts 1.1 and JUnit.  
+</P>
+
+  <A HREF="http://lists.theserverside.com/t/12337/850395/215/181/">Click here to read more.</A>
+
+  <P></P>
+
+  <HR ALIGN=left WIDTH="60%" COLOR=#d4d4d4 SIZE=1>
+
+
+
+
+<P><B>  
+Java Server Faces Public Draft and Early Access Available 
+</B></P>
+
+  <P> 
+The public draft of the JavaServer Faces 1.0 Specification has been published, as well as an early access download of the API's and tag library. JSF is a web application framework that reduces the amount of code needed to write a web front end. Developers need only write JSF components and corresponding event handling code, the framework then simplifies the tasks of validation, request parameter parsing, state management, multipe clients support, etc.  
+</P>
+
+  <A HREF="http://lists.theserverside.com/t/12337/850395/216/181/">Click here to read more.</A>
+
+  <P></P>
+
+  <HR ALIGN=left WIDTH="60%" COLOR=#d4d4d4 SIZE=1>
+
+
+
+
+
+
+<P><B>  
+Meta Group: J2EE Complexity Holding Back Platform Adoption
+</B></P>
+
+  <P> 
+The Meta Group has released a research report saying that the relative complexity of doing server-side development using J2EE is hurting adoption of the platform. Among other predictions are the continuing dominance of BEA and IBM, more consolidation, and increasing vendor competition in tools and frameworks. 
+
+  </P>
+
+  <A HREF="http://lists.theserverside.com/t/12337/850395/217/181/">Click here to read more.</A>
+
+  <P></P>
+
+  <HR ALIGN=left WIDTH="60%" COLOR=#d4d4d4 SIZE=1>
+
+
+
+
+
+<P><B>  
+IBM nudges back release of WebSphere 5.0
+</B></P>
+
+  <P> 
+IBM has rescheduled its release of J2EE 1.3 certified Websphere Application Server 5 from September to late November, saying it "reprioritized" its schedule in order to release Websphere Studio 5 first - a break from the usual order of releases. Analysts said the delay shouldn't be seen as a big setback. 
+  </P>
+
+  <A HREF="http://lists.theserverside.com/t/12337/850395/218/181/">Click here to read more.</A>
+
+  <P></P>
+
+  <HR ALIGN=left WIDTH="60%" COLOR=#d4d4d4 SIZE=1>
+
+
+
+
+
+<P><B>  
+Apache Cactus 1.4 J2EE Unit Testing Framework Released 
+</B></P>
+
+  <P> 
+Cactus 1.4 (part of the Apache Jakarta project) is now available for download. Cactus is a simple test framework for unit testing server-side java code (Servlets, EJBs, Tag Libs, Filters) that uses and extends the jUnit framework. V1.4 includes many new improvements, including the ability to assert for specific HTTP response codes. 
+</P>
+
+  <A HREF="http://lists.theserverside.com/t/12337/850395/219/181/">Click here to read more.</A>
+
+  <P></P>
+
+  <HR ALIGN=left WIDTH="60%" COLOR=#d4d4d4 SIZE=1>
+
+
+
+<P><B>  
+WebWork 1.2 Web Application Framework Released 
+</B></P>
+
+  <P> 
+Version 1.2 of WebWork is now available. The release includes significant improvements and marks the first release since integrating into the OpenSymphony project (home of SiteMesh, OSCache, etc). WebWork is a pull HMVC web application framework in Java, developed as Open Source (Apache license). 
+  
+</P>
+
+  <A HREF="http://lists.theserverside.com/t/12337/850395/220/181/">Click here to read more.</A>
+
+  <P></P>
+
+  <HR ALIGN=left WIDTH="60%" COLOR=#d4d4d4 SIZE=1>
+
+
+
+<P><B>  
+JADE Open Framework 1.1 Released with Eclipse Integration 
+</B></P>
+
+  <P> 
+Salmon LLC is pleased to announce the release of JADE 1.1, the open source rapid application development tool for the J2EE. JADE is a Java framework and JSP tag library that integrates with Dreamweaver, IntelliJ IDEA and now Eclipse. JADE was released as open source only a few months ago, but has been used privately as the foundation for a J2EE consulting practice for several years. 
+
+</P>
+
+  <A HREF="http://lists.theserverside.com/t/12337/850395/221/181/">Click here to read more.</A>
+
+  <P></P>
+
+  <HR ALIGN=left WIDTH="60%" COLOR=#d4d4d4 SIZE=1>
+
+
+
+
+
+<br>
+
+ <BR>
+
+  <SMALL><A href="#news42.htmltop">Back to Top</A></SMALL><BR>
+
+
+
+
+
+ 
+
+<BR><BR></BLOCKQUOTE><!------------------------- END OF SECTION ---------------------------->
+
+<B>
+
+<P><FONT COLOR=#929292 SIZE=+1>UNSUBSCRIBE</FONT> 
+
+<HR ALIGN=left WIDTH="65%" COLOR=#d4d4d4 NOSHADE SIZE=2>
+
+</B>
+
+
+
+
+
+<BLOCKQUOTE>
+
+  <P>If you are receiving this newsletter it is because you signed up as a 
+
+  member of TheServerSide.com and elected to receive our newsletters. <B>To 
+
+  unsubscribe from TheServerSide.com's bi-weekly newsletter, log on to 
+
+  TheServerSide and edit your user profile. Email webmaster@theserverside.com if 
+
+  you are having problems editing your profile.</B> <BR>
+
+  
+
+  <BR>
+
+
+
+
+</BLOCKQUOTE>
+
+
+
+  <BR>
+
+
+
+  <P ALIGN=center><BR>This newsletter and contents are Copyright (c) 2002 The Middleware Company<BR></P>
+
+
+
+<IMG ALT="" SRC="http://lists.theserverside.com/do/12337/850395/1.gif" WIDTH=1 HEIGHT=1></body>
+
+</HTML>
+
+
+
+
+
+--==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==--
+

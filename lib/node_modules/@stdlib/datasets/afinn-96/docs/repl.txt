@@ -1,0 +1,42 @@
+
+{{alias}}()
+    Returns a list of English words rated for valence.
+
+    The returned list contains 1468 English words (and phrases) rated for
+    valence. Negative words have a negative valence [-5,0). Positive words have
+    a positive valence (0,5]. Neutral words have a valence of 0.
+
+    A few notes:
+
+    - The list is an earlier version of AFINN-111.
+    - The list includes misspelled words. Their presence is intentional, as such
+      misspellings frequently occur in social media content.
+    - All words are lowercase.
+    - Some "words" are phrases; e.g., "cashing in", "cool stuff".
+    - Words may contain apostrophes; e.g., "can't stand".
+    - Words may contain dashes; e.g., "cover-up", "made-up".
+
+    Returns
+    -------
+    out: Array<Array>
+        List of English words and their valence.
+
+    Examples
+    --------
+    > var list = {{alias}}()
+    [ [ 'abandon', -2 ], [ 'abandons', -2 ], [ 'abandoned', -2 ], ... ]
+
+    References
+    ----------
+    - Nielsen, Finn Årup. 2011. "A new ANEW: Evaluation of a word list for
+    sentiment analysis in microblogs." In *Proceedings of the ESWC2011 Workshop
+    on 'Making Sense of Microposts': Big Things Come in Small Packages.*,
+    718:93–98. CEUR Workshop Proceedings. <http://ceur-ws.org/Vol-718/paper_16.
+    pdf>.
+
+    * If you use the list for publication or third party consumption, please
+    cite the listed reference.
+
+    See Also
+    --------
+

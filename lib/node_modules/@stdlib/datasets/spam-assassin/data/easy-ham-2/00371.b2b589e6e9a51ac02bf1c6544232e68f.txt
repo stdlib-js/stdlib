@@ -1,0 +1,102 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:44 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B92F744131
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:05 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D8agb23313 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 09:36:42 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA00835; Tue, 13 Aug 2002 09:35:58 +0100
+Received: from smtpout.xelector.com ([62.17.160.131]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA00802 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 09:35:52 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.160.131] claimed to
+    be smtpout.xelector.com
+Received: from [172.18.80.234] (helo=xeljreilly) by smtpout.xelector.com
+    with smtp (Exim 3.34 #2) id 17eWwo-0007CP-00; Tue, 13 Aug 2002 09:22:38
+    +0100
+Message-Id: <001f01c242a3$c8c2d770$ea5012ac@xelector.com>
+From: "John Reilly" <jr@inconspicuous.org>
+To: <macarthy@iol.ie>, "Ilug@Linux.Ie" <ilug@linux.ie>
+References: <OFEGLPGPCHPACFLJPAILMEOIDPAA.macarthy@iol.ie>
+Subject: Re: [ILUG] CVS question
+Date: Tue, 13 Aug 2002 09:31:13 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2919.6600
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2919.6600
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Assuming cvspserver is actually running (try "netstat -na | grep 2401" to
+see if its there), make sure you have firewalling turned off or you have
+added a rule for it.
+
+
+
+
+> Hi, I'm setting up a CVS server on a RedHat 7.* box. First time.
+>
+> When I try to log in via telnet with an account that is in the "cvs" group
+> and run
+>
+> cvs login
+> password: xxxxx
+>
+> I get
+>
+> cvs [login aborted]: connect to localhost:2401 failed: Connection refused
+>
+>
+> > chkconfig --list  returns
+>
+> xinetd based services:
+>         linuxconf-web:  off
+>         swat:   on
+>         telnet: on
+>         cvspserver:     on
+>
+> As a cvs user
+>
+> [cvsdev1@localhost cvsdev1]$ echo $CVSROOT
+> :pserver:cvsdev1@localhost:/home/cvsroot/repository
+>
+> [cvsdev1@localhost cvsdev1]$ ls -la /home/cvsroot/repository/
+> total 12
+> drwxrws---    3 cvs      cvs          4096 Aug 12 11:26 .
+> drwxrwx---    7 cvs      cvs          4096 Aug 12 11:26 ..
+> drwxrwsr-x    3 cvs      cvs          4096 Aug 12 11:26 CVSROOT
+> [cvsdev1@localhost cvsdev1]$
+>
+>
+>
+> Where should I start looking?
+>
+> Thanks Justin
+>
+>
+> --
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+information.
+> List maintainer: listmaster@linux.ie
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

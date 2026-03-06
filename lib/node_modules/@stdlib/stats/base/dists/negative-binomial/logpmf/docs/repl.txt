@@ -1,0 +1,91 @@
+
+{{alias}}( x, r, p )
+    Evaluates the natural logarithm of the probability mass function (PMF) for a
+    negative binomial distribution with number of successes until experiment is
+    stopped `r` and success probability `p` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a `r` which is not a positive number, the function returns
+    `NaN`.
+
+    If provided a success probability `p` outside of `[0,1]`, the function
+    returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    r: number
+        Number of successes until experiment is stopped.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Evaluated logPMF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 5.0, 20.0, 0.8 )
+    ~-1.853
+    > y = {{alias}}( 21.0, 20.0, 0.5 )
+    ~-2.818
+    > y = {{alias}}( 5.0, 10.0, 0.4 )
+    ~-4.115
+    > y = {{alias}}( 0.0, 10.0, 0.9 )
+    ~-1.054
+    > y = {{alias}}( 21.0, 15.5, 0.5 )
+    ~-3.292
+    > y = {{alias}}( 5.0, 7.4, 0.4 )
+    ~-2.976
+
+    > y = {{alias}}( 2.0, 0.0, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, -2.0, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, 20, -1.0 )
+    NaN
+    > y = {{alias}}( 2.0, 20, 1.5 )
+    NaN
+
+    > y = {{alias}}( NaN, 20.0, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, 20.0, NaN )
+    NaN
+
+
+{{alias}}.factory( r, p )
+    Returns a function for evaluating the natural logarithm of the probability
+    mass function (PMF) of a negative binomial distribution with number of
+    successes until experiment is stopped `r` and success probability `p`.
+
+    Parameters
+    ----------
+    r: number
+        Number of successes until experiment is stopped.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    logpmf: Function
+        Logarithm of probability mass function (PMF).
+
+    Examples
+    --------
+    > var mylogPMF = {{alias}}.factory( 10, 0.5 );
+    > var y = mylogPMF( 3.0 )
+    ~-3.617
+    > y = mylogPMF( 5.0 )
+    ~-2.795
+
+    See Also
+    --------
+

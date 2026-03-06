@@ -1,0 +1,123 @@
+From exmh-workers-admin@redhat.com  Wed Oct  2 15:58:53 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 73E1416F17
+	for <jm@localhost>; Wed,  2 Oct 2002 15:58:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 15:58:53 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g92E1BK11576 for
+    <jm-exmh@jmason.org>; Wed, 2 Oct 2002 15:01:16 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id EDB9C40D14; Wed,  2 Oct 2002
+    10:01:47 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 3C5563F137
+    for <exmh-workers@listman.redhat.com>; Wed,  2 Oct 2002 09:58:55 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g92DwtC18034 for exmh-workers@listman.redhat.com; Wed, 2 Oct 2002
+    09:58:55 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g92Dwsf18030 for
+    <exmh-workers@redhat.com>; Wed, 2 Oct 2002 09:58:54 -0400
+Received: from austin-jump.vircio.com (jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g92De4i26211
+    for <exmh-workers@redhat.com>; Wed, 2 Oct 2002 09:40:04 -0400
+Received: (qmail 15481 invoked by uid 104); 2 Oct 2002 13:58:54 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4226. . Clean. Processed in 0.34979
+    secs); 02/10/2002 08:58:53
+Received: from deepeddy.vircio.com ([10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 2 Oct 2002 13:58:53 -0000
+Received: (qmail 917 invoked from network); 2 Oct 2002 13:58:53 -0000
+Received: from localhost (HELO deepeddy.vircio.com) ([127.0.0.1])
+    (envelope-sender <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03)
+    with SMTP for <exmh-workers@redhat.com>; 2 Oct 2002 13:58:53 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Hal DeVore <haldevore@acm.org>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: Unseen window versus Sequences Window
+In-Reply-To: <30937.1033532481@dimebox.bmc.com>
+References: <30937.1033532481@dimebox.bmc.com>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_-2113882517P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1033567132.911.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.62
+Reply-To: Chris Garrigues <cwg-dated-1033999133.c383a1@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 02 Oct 2002 08:58:51 -0500
+
+--==_Exmh_-2113882517P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Hal DeVore <haldevore@acm.org>
+> Date:  Tue, 01 Oct 2002 23:21:21 -0500
+>
+> One possibility that occurs to me would be a button or mouse
+> click that "shrinks" the Sequences window to show only the
+> sequences in the "always show" list.  And of course a way to 
+> expand it back.
+
+That's a pretty good idea.  I'm not sure I'll get to it any time soon.  (I 
+already have a known bug reported on 9/25 that I haven't been able to get to.)
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_-2113882517P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9mvubK9b4h5R0IUIRAs2xAJ9gFx9Fvnld2Kp7JaUZyusroUweFQCfWPnM
+Pp78BfHf//xicipba00ru3o=
+=tDi6
+-----END PGP SIGNATURE-----
+
+--==_Exmh_-2113882517P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

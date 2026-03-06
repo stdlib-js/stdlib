@@ -1,0 +1,12 @@
+
+reset()
+    Resets the REPL.
+
+    Examples
+    --------
+    > reset()
+
+    See Also
+    --------
+    quit, save
+

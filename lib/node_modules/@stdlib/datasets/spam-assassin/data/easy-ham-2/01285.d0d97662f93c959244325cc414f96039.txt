@@ -1,0 +1,98 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Jul 22 18:22:10 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2E595440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:22:09 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:22:09 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFjnI09679 for
+    <jm-sa@jmason.org>; Mon, 22 Jul 2002 16:45:49 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id EAA30067 for
+    <jm-sa@jmason.org>; Mon, 22 Jul 2002 04:32:31 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WTuZ-0005ZE-00; Sun,
+    21 Jul 2002 20:31:03 -0700
+Received: from joseki.proulx.com ([216.17.153.58]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17WTuJ-0007cm-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Sun, 21 Jul 2002 20:30:47 -0700
+Received: from misery.proulx.com (misery.proulx.com [192.168.1.108]) by
+    joseki.proulx.com (Postfix) with ESMTP id 7125D14B12 for
+    <spamassassin-talk@lists.sourceforge.net>; Sun, 21 Jul 2002 21:30:39 -0600
+    (MDT)
+Received: by misery.proulx.com (Postfix, from userid 1000) id 16F08A8335;
+    Sun, 21 Jul 2002 21:30:39 -0600 (MDT)
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] http://www.spamassassin.org
+Message-Id: <20020722033039.GA11690@misery.proulx.com>
+Mail-Followup-To: spamassassin-talk@example.sourceforge.net
+References: <200207220049.UAA11347@www22.ureach.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="4Ckj6UjgE2iN1+kY"
+Content-Disposition: inline
+In-Reply-To: <200207220049.UAA11347@www22.ureach.com>
+User-Agent: Mutt/1.4i
+From: bob@proulx.com (Bob Proulx)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Sun, 21 Jul 2002 21:30:39 -0600
+Date: Sun, 21 Jul 2002 21:30:39 -0600
+
+
+--4Ckj6UjgE2iN1+kY
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+> http://www.spamassassin.org
+> Is anyone besides me having problems getting to the site?
+
+What site is that one?  Isn't this site on sourceforge the official
+home page?
+
+  http://spamassassin.sourceforge.net/
+
+Bob
+
+--4Ckj6UjgE2iN1+kY
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9O3xf0pRcO8E2ULYRAnFFAJ4oIMwUH/vPP4yjvt7z8Gv/7CyFHgCfTmd6
+nFFjYpkscA/GZoaiF8MBKCU=
+=Udmt
+-----END PGP SIGNATURE-----
+
+--4Ckj6UjgE2iN1+kY--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

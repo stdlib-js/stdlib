@@ -1,0 +1,469 @@
+Return-Path: <michaelr@lindows.com>
+Received: from sunu422.rz.ruhr-uni-bochum.de (sunu422.rz.ruhr-uni-bochum.de [134.147.64.14])
+	by yoda.bph.ruhr-uni-bochum.de (8.8.8/8.8.8) with SMTP id CAA21355
+	for <Xxx@bph.ruhr-uni-bochum.de>; Wed, 3 Jul 2002 02:52:47 +0200
+Received: (qmail 14504 invoked by alias); 3 Jul 2002 00:52:42 -0000
+Received: (qmail 14497 invoked by uid 82); 3 Jul 2002 00:52:42 -0000
+Received: from michaelr@lindows.com by mailhost with qmail-scanner-1.00 (uvscan: v4.1.40/v4209. . Clean. Processed in 0.499368 secs); 03 Jul 2002 00:52:42 -0000
+Received: from sunu450.rz.ruhr-uni-bochum.de (134.147.32.69)
+  by mi-1.rz.ruhr-uni-bochum.de with SMTP; 3 Jul 2002 00:52:41 -0000
+Received: (qmail 15089 invoked by alias); 3 Jul 2002 00:52:41 -0000
+Received: (qmail 15080 invoked from network); 3 Jul 2002 00:52:40 -0000
+Received: from mx10.web.de (217.72.192.169)
+  by sunu450.rz.ruhr-uni-bochum.de with SMTP; 3 Jul 2002 00:52:40 -0000
+Received: from [130.94.123.208] (helo=lists.lindows.com)
+	by mx10.web.de with esmtp (WEB.DE(Exim) 4.70 #5)
+	id 17PYNo-0004r2-00
+	for Xxxxxxxxx.Yyyyyyy@web.de; Wed, 03 Jul 2002 02:52:36 +0200
+Received: (qmail 21676 invoked by uid 99); 3 Jul 2002 00:42:28 -0000
+To: Xxxxxxxxx.Yyyyyyy@web.de
+Date: Tue, 2 Jul 2002 16:54:22 -0800
+From: "Michael Robertson" <michaelr@lindows.com>
+Subject: Lindows.com: Michael's Minute: Do the Math...Dispel the Myths
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_LINDOWS_6a72a16a171d3ceefdc7477961871f6d"
+Message-Id: <E17PYNo-0004r2-00@mx10.web.de>
+X-Mozilla-Status2: 00000000
+
+------=_LINDOWS_6a72a16a171d3ceefdc7477961871f6d
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+If this message is not displaying properly, click here
+<http://lindows.com/mm> to launch it in your browser.
+
+<http://lindows.com/> 
+
+Michael's Minute: Do the Math...Dispel the Myths 
+
+A reporter came by the Lindows.com <http://www.lindows.com/>  offices
+last Friday. He told me that he wanted to try and use
+<http://www.lindows.com/lindows_products_lindowsos.php> LindowsOS to
+write a story, but he didn't think it was possible because his office
+used Microsoft Word .doc files. I asked him to have a seat and watch.  
+
+I turned on the Walmart.com <http://www.lindows.com/walmart> computer
+and then clicked on the running man  <http://www.lindows.com/warehouse>
+which took me to the Click-N-Run Warehouse
+<http://www.lindows.com/warehouse>  where I installed OpenOffice
+<http://www.lindows.com/openoffice>  using Click-N-Run. I then clicked
+the "Run It"  button which opened the word processor OpenOffice Writer.
+I then typed "Linux is ready for the desktop and consumers can save
+hundreds using LindowsOS." I selected "Save as Microsoft Word."
+
+The reporter was not only surprised, he was amazed. Like many reporters,
+he was under the impression that Linux was only for servers. The simple
+word processor demonstration went a long way to show him otherwise. For
+Linux to become a driving force in desktop computing it will have to
+overcome a couple of myths. 
+
+The first myth is that Linux is too hard to install and configure. That
+may have been true in the past, but we've annihilated this myth with the
+latest version of LindowsOS --which installs on most machines in under 5
+minutes. It's point- and-shoot easy - easier than any other operating
+system (Microsoft products included). See for yourself at <http://www.tryoutlinux.com/> .  
+
+The other myth is that Linux is just for the server and none of the
+graphical programs --which desktop users have come to rely on-- exist.
+Not only have many of the Linux software programs made quantum leaps
+over the last couple of years, but they've gotten quite good at reading
+and writing Microsoft formats. The easiest way to experience these
+products is via the Click-N-Run  <http://www.lindows.com/warehouse>
+Warehouse.
+
+ Here's a quick list of some of the quality programs available today in
+the Warehouse <http://www.lindows.com/warehouse> all downloaded and
+installed with a single click:
+
+OpenOffice - This one installation will equip a computer with an
+impressive collection of productivity programs each of which will open
+the corresponding Microsoft file format and allow you to edit files and
+swap them with Microsoft counterparts. <www.lindows.com/openoffice>
+Programs included are:
+
+OpenOffice Writer - Word processor (reads Microsoft Word docs) 
+OpenOffice Calc - Spreadsheet (reads Microsoft Excel) 
+OpenOffice Impress- Presentation package (reads Microsoft PowerPoint)
+OpenOffice Draw - A vector based drawing program
+
+Click here <http://www.lindows.com/openofficeflash>  for a great
+tutorial on getting to know OpenOffice.
+
+GIMP <www.lindows.com/gimp> If you are familiar with Adobe's Photoshop,
+you'll want to Click-N-Run GIMP. It's a powerful image editor. 
+ 
+
+Evolution <www.lindows.com/evolution> For those used to Microsoft's
+Outlook email program Evolution will make them feel right at home. Check
+out how easy it is to use <http://www.lindows.com/evolution> .
+
+Flowchart Pro, which is similar to Microsoft's Visio, is a  rich
+charting program that makes it possible to create flow charts and
+organizational charts, plus more. See how easy it for yourself, visit
+Flowchart Pro at <http://www.lindows.com/flowchartpro>
+
+This is just a handful of the quality programs available in the
+Warehouse <www.lindows.com/warehouse> that make Linux a practical choice
+for the desktop today. And if you're still not convinced, then do the
+math.
+
+<http://www.lindows.com/walmart> 
+For  a total cost of $499 <http://www.lindows.com/walmart> , including
+all  software, computer users save  more than $800  for a complete
+system. 
+
+With such major price differentials between the two similarly equipped
+systems, any business, school or home will find their computing dollars
+stretched much further running LindowsOS. 
+
+Michael Robertson
+
+Please visit <http://support.lindows.com/>  to
+answers questions you may have about LindowsOS or Lindows.com.
+
+Bringing Choice to Your Computer! 
+
+LindowsOS is presently available on LindowsOS Certified Computers being
+offered from Lindows.com  <http://www.lindows.com/builder> Builder
+partners.  The General Release of LindowsOS (available now for download
+and preview to Lindows.com  <http://lindows.com/signup> Insider
+partners) will be made available later this year for those wishing to
+install and run LindowsOS on their existing computer hardware.  The
+General Release version will support a wider range of computer hardware
+and includes unique features such as a "Friendly-Install" alongside an
+existing MicrosoftR Windows operating system, a streamlined installation
+process which requires no computer knowledge, and the ability to run a
+select set of "bridge" Windows-compatible programs. For more information
+see  <http://www.lindows.com/products>
+
+LindowsOS and Lindows.com are trademarks of Lindows.com, Inc. LinuxR is
+a registered trademark of Linus Torvalds. MicrosoftR WindowsR operating
+system is a registered trademark or service mark of the Microsoft
+Corporation.
+
+mm19
+
+___________________________________________________________
+To change your mailing list options please go to <www.lindows.com/update>
+
+
+------=_LINDOWS_6a72a16a171d3ceefdc7477961871f6d
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+<TITLE>Message</TITLE>
+
+<META content=3D"MSHTML 6.00.2600.0" name=3DGENERATOR></HEAD>
+<BODY>
+<DIV>
+<DIV align=3Dleft>
+<P class=3DMsoPlainText style=3D"MARGIN: 0in 0in 0pt"><FONT =
+face=3DArial><SPAN=20
+style=3D"mso-spacerun: yes"></SPAN><?xml:namespace prefix =3D o ns =3D=20
+"urn:schemas-microsoft-com:office:office" /><o:p><FONT=20
+face=3D"Times New Roman">&nbsp;</FONT></P>
+<P align=3Dcenter><FONT face=3D"Arial, Helv" size=3D1>If this message is =
+not=20
+displaying properly, <A href=3D"http://lindows.com/mm">click here</A> to =
+launch it=20
+in your browser.</FONT></P>
+<DIV align=3Dcenter>
+<CENTER>
+<TABLE cellSpacing=3D0 borderColorDark=3D#0577ba cellPadding=3D0 =
+width=3D600=20
+bgColor=3D#dfeedc border=3D1>
+  <TBODY>
+  <TR>
+    <TD width=3D"100%">
+      <P align=3Dcenter><A href=3D"http://lindows.com/"><IMG =
+height=3D160=20
+      src=3D"http://net2.com/mailers/header.jpg" width=3D600 =
+border=3D0></A></P>
+      <DIV align=3Dcenter>
+      <TABLE height=3D1403 cellSpacing=3D0 cellPadding=3D0 width=3D557 =
+border=3D0>
+        <TBODY>
+        <TR>
+          <TD width=3D557 height=3D48>
+            <P class=3DMsoNormal align=3Dcenter><B><SPAN=20
+            style=3D"FONT-FAMILY: Arial"><FONT size=3D5>Michael&#8217;s =
+Minute: <BR>Do the=20
+            Math...Dispel the Myths </FONT></SPAN></B></P>
+        <TR>
+          <TD class=3Dtableborders vAlign=3Dtop width=3D557 =
+height=3D1336>
+            <P class=3DMsoNormal>&nbsp;</P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">A =
+reporter came=20
+            by the <A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            href=3D"http://www.lindows.com/">Lindows.com</A> offices =
+last Friday.=20
+            He told me that he wanted to try and use<A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            =
+href=3D"http://www.lindows.com/lindows_products_lindowsos.php">=20
+            LindowsOS</A> to write a story, but he didn't think it was =
+possible=20
+            because his office used Microsoft Word .doc files. I asked =
+him to=20
+            have a seat and watch. &nbsp;</SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">I =
+turned on the=20
+            <A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            href=3D"http://www.lindows.com/walmart">Walmart.com</A> =
+computer and=20
+            then clicked on the running man <A=20
+            href=3D"http://www.lindows.com/warehouse"><IMG height=3D19=20
+            src=3D"http://www.net2.com/mailers/CNR-32.gif" width=3D20 =
+align=3DtextTop=20
+            border=3D0> </A>&nbsp;which took me to the Click-N-Run <A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            href=3D"http://www.lindows.com/warehouse">Warehouse</A> =
+where I=20
+            installed <A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            href=3D"http://www.lindows.com/openoffice">OpenOffice</A> =
+using=20
+            Click-N-Run. I then clicked the "Run It"&nbsp; button which =
+opened=20
+            the word processor OpenOffice Writer. I then typed <I>"Linux =
+is=20
+            ready for the desktop and consumers can save hundreds using=20
+            LindowsOS."</I> I selected "<I>Save as Microsoft=20
+            Word.</I>"</SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">The =
+reporter was=20
+            not only surprised, he was amazed. Like many reporters, he =
+was under=20
+            the impression that Linux was only for servers. The simple =
+word=20
+            processor demonstration went a long way to show him =
+otherwise. For=20
+            Linux to become a driving force in desktop computing it will =
+have to=20
+            overcome a couple of myths.</SPAN><B><SPAN=20
+            style=3D"FONT-FAMILY: Arial">&nbsp;</SPAN></B></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">The =
+first myth=20
+            is that Linux is too hard to install and configure. That may =
+have=20
+            been true in the past, but we&#8217;ve annihilated this myth =
+with the=20
+            latest version of LindowsOS --which installs on most =
+machines in=20
+            under 5 minutes. It's point- and-shoot easy - easier than =
+any other=20
+            operating system (Microsoft products included). See for =
+yourself at=20
+            <A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            =
+href=3D"http://www.tryoutlinux.com/">www.tryoutlinux.com</A>.=20
+            &nbsp;</SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">The =
+other myth=20
+            is that Linux is just for the server and none of the =
+graphical=20
+            programs --which desktop users have come to rely on-- exist. =
+Not=20
+            only have many of the Linux software programs made quantum =
+leaps=20
+            over the last couple of years, but they've gotten quite good =
+at=20
+            reading and writing Microsoft formats. The easiest way to =
+experience=20
+            these products is via the <A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            href=3D"http://www.lindows.com/warehouse">Click-N-Run=20
+            Warehouse</A>.</SPAN></P>
+            <P class=3DMsoNormal align=3Dcenter><SPAN=20
+            style=3D"FONT-FAMILY: Arial">&nbsp;<B>Here's a quick list of =
+some of=20
+            the quality programs available today in the <A=20
+            href=3D"http://www.lindows.com/warehouse">Warehouse</A> all =
+downloaded=20
+            and installed with a single click:</B></SPAN></P>
+            <P class=3DMsoNormal><B><SPAN=20
+            style=3D"FONT-FAMILY: Arial">OpenOffice</SPAN></B><SPAN=20
+            style=3D"FONT-FAMILY: Arial"> - This one installation will =
+equip a=20
+            computer with an impressive collection of productivity =
+programs each=20
+            of which will open the corresponding Microsoft file format =
+and allow=20
+            you to edit files and swap them with Microsoft counterparts. =
+<A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            =
+href=3D"http://www.lindows.com/openoffice">www.lindows.com/openoffice</A>=
+=20
+            &nbsp;Programs included are:</SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: =
+Arial"><B>OpenOffice=20
+            Writer</B> - Word processor (reads Microsoft Word docs)=20
+            <BR><B>OpenOffice Calc</B> - Spreadsheet (reads Microsoft =
+Excel)=20
+            <BR><B>OpenOffice Impress</B>- Presentation package (reads =
+Microsoft=20
+            PowerPoint)<BR><B>OpenOffice Draw</B> - A vector based =
+drawing=20
+            program</SPAN></P>
+            <P class=3DMsoNormal><FONT class=3DBodyText1 =
+face=3DArial>Click <A=20
+            href=3D"http://www.lindows.com/openofficeflash">here</A> for =
+a great=20
+            tutorial on getting to know OpenOffice.</FONT></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: =
+Arial"><B>GIMP</B> (<A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            =
+href=3D"http://www.lindows.com/gimp">www.lindows.com/gimp</A>)=20
+            </SPAN><FONT face=3DArial>If you are familiar with Adobe's =
+Photoshop,=20
+            you'll want to Click-N-Run GIMP. It's a powerful image =
+editor.=20
+            </FONT><BR>&nbsp;</P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: =
+Arial"><B>Evolution=20
+            </B>&nbsp;(<A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            =
+href=3D"http://www.lindows.com/evolution">www.lindows.com/evolution</A>) =
+
+            For those used to Microsoft's Outlook email program =
+Evolution will=20
+            make them feel right at home. Check out how easy it is to <A =
+
+            =
+href=3D"http://www.lindows.com/evolution">use</A>.</SPAN></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: =
+Arial"><B>Flowchart=20
+            Pro</B>, which is similar to Microsoft&#8217;s Visio, is a =
+&nbsp;rich=20
+            charting program that makes it possible to create flow =
+charts and=20
+            organizational charts, plus more. See how easy it for =
+yourself,=20
+            visit Flowchart Pro at <A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            =
+href=3D"http://www.lindows.com/flowchartpro">&nbsp;www.lindows.com/flowch=
+artpro</A></SPAN></P>
+            <P class=3DMsoNormal align=3Dleft><SPAN =
+style=3D"FONT-FAMILY: Arial">This=20
+            is just a handful of the quality programs available in the =
+Warehouse=20
+            (<A=20
+            style=3D"COLOR: blue; TEXT-DECORATION: underline; =
+text-underline: single"=20
+            =
+href=3D"http://www.lindows.com/warehouse">www.lindows.com/warehouse</A>) =
+
+            that make Linux a practical choice for the desktop today. =
+And if=20
+            you're still not convinced, then do the math.</SPAN></P>
+            <P class=3DMsoNormal align=3Dcenter><A=20
+            href=3D"http://www.lindows.com/walmart"><IMG height=3D224=20
+            src=3D"http://www.net2.com/mailers/do-the-math5.jpg" =
+width=3D555=20
+            border=3D0></A><BR><FONT size=3D1><FONT =
+face=3DArial>For&nbsp; a total=20
+            cost of <A href=3D"http://www.lindows.com/walmart">$499</A>, =
+including=20
+            all&nbsp; software, computer users save&nbsp; more than =
+$800&nbsp;=20
+            for a complete system.</FONT> </FONT></P>
+            <P class=3DMsoNormal><SPAN style=3D"FONT-FAMILY: Arial">With =
+such major=20
+            price differentials between the two similarly equipped =
+systems, any=20
+            business, school or home will find their computing dollars =
+stretched=20
+            much further running LindowsOS. </SPAN></P>
+            <P><FONT face=3D"Arial, Helv" size=3D3>Michael =
+Robertson</FONT></P>
+            <P><FONT face=3D"Arial, Helv" size=3D2>Please visit <A=20
+            href=3D"http://support.lindows.com/">support.lindows.com</A> =
+to=20
+            answers questions you may have about LindowsOS or=20
+            Lindows.com.</FONT></P>
+            <P><B><FONT face=3DArial size=3D2>Bringing Choice to Your =
+Computer!=20
+            </FONT></B></P>
+            <DIV><SPAN class=3D154440621-26062002><FONT face=3DArial=20
+            size=3D1>LindowsOS is presently available on LindowsOS =
+Certified=20
+            Computers being offered from Lindows.com </FONT><A=20
+            href=3D"http://www.lindows.com/builder"><FONT face=3DArial=20
+            size=3D1>Builder</FONT></A><FONT face=3DArial size=3D1> =
+partners.&nbsp;=20
+            The General Release of LindowsOS (available now for download =
+and=20
+            preview to Lindows.com </FONT><A=20
+            href=3D"http://lindows.com/signup"><FONT face=3DArial=20
+            size=3D1>Insider</FONT></A><FONT face=3DArial size=3D1> =
+partners) will be=20
+            made available later this year for those wishing to install =
+and run=20
+            LindowsOS on their existing computer hardware.&nbsp; The =
+General=20
+            Release version will support a wider range of computer =
+hardware and=20
+            includes unique features such as a =
+&#8220;Friendly-Install&#8221; alongside an=20
+            existing Microsoft&reg; Windows operating system, a =
+streamlined=20
+            installation process which requires no computer knowledge, =
+and the=20
+            ability to run a select set of "bridge" Windows-compatible =
+programs.=20
+            For more information see </FONT><A=20
+            href=3D"http://www.lindows.com/products"><FONT face=3DArial=20
+            size=3D1>www.lindows.com/products</FONT></A><FONT =
+face=3DArial=20
+            size=3D1>&nbsp;</FONT></SPAN></DIV>
+            <P><FONT face=3DArial size=3D1>LindowsOS and Lindows.com are =
+trademarks=20
+            of Lindows.com, Inc. Linux&reg; is a registered trademark of =
+Linus=20
+            Torvalds. Microsoft&reg; Windows&reg; operating system is a =
+registered=20
+            trademark or service mark of the Microsoft =
+Corporation.</FONT></P>
+            <P><FONT face=3D"Arial, Helv"=20
+      size=3D1>mm19</FONT></P></TD></TR></TBODY></TABLE>
+      <P><BR></P></DIV></TR></TBODY></TABLE></DIV>
+<P=20
+align=3Dcenter>__________________________________________________________=
+_<BR><FONT=20
+face=3D"Arial, Helv" size=3D2>To change your mailing list options please =
+go to <A=20
+href=3D"http://www.lindows.com/update">www.lindows.com/update</A></FONT><=
+/P>
+<P class=3DMsoPlainText=20
+style=3D"MARGIN: 0in 0in =
+0pt"></CENTER></o:p></FONT></P></DIV></DIV></BODY></HTML>
+
+
+------=_LINDOWS_6a72a16a171d3ceefdc7477961871f6d--
+
+

@@ -1,0 +1,88 @@
+From ilug-admin@linux.ie  Fri Aug 16 11:50:44 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9B13A43C37
+	for <jm@localhost>; Fri, 16 Aug 2002 06:49:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:49:26 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GAnda13605 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 11:49:39 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA21843; Fri, 16 Aug 2002 11:48:25 +0100
+Received: from telutil12a.ml.com (telutil12a-v.ml.com [199.43.34.196]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA21808 for <ilug@linux.ie>;
+    Fri, 16 Aug 2002 11:48:18 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host telutil12a-v.ml.com
+    [199.43.34.196] claimed to be telutil12a.ml.com
+Received: from telutil13a.ml.com (telutil13a [146.125.226.11]) by
+    telutil12a.ml.com (8.11.3/8.11.3/telutil12a-1.2) with ESMTP id
+    g7GAmHv15754 for <ilug@linux.ie>; Fri, 16 Aug 2002 06:48:17 -0400 (EDT)
+Received: from ehudwt03.exchange.ml.com (ehudwt03.exchange.ml.com
+    [199.201.37.24]) by telutil13a.ml.com (8.11.3/8.11.3/telutil13a-1.1) with
+    SMTP id g7GAmHf13197 for <ilug@linux.ie>; Fri, 16 Aug 2002 06:48:17 -0400
+    (EDT)
+Received: from 169.243.202.61 by ehudwt03.exchange.ml.com with ESMTP (
+    Tumbleweed MMS SMTP Relay (MMS v4.7);); Fri, 16 Aug 2002 06:48:15 -0400
+X-Server-Uuid: 3789b954-9c4e-11d3-af68-0008c73b0911
+Received: by dubim07742.ie.ml.com with Internet Mail Service (
+    5.5.2654.52) id <3TCXNSD7>; Fri, 16 Aug 2002 11:48:16 +0100
+Message-Id: <A3C83F41488BD61195C3000802252FC135BA52@dubim07742.ie.ml.com>
+From: "Breathnach, Proinnsias (Dublin)" <breatpro@exchange.ie.ml.com>
+To: "'ILUG'" <ilug@linux.ie>
+Date: Fri, 16 Aug 2002 11:48:15 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2654.52)
+X-WSS-Id: 114207E4172553-01-01
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] FW: Mac (clone) for sale...
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I've been asked to forward this on ... 
+
+Anyone interested, give me a shout and I'll put you in touch with Ryan ...
+
+P
+
+> -----Original Message-----
+> Proinnsias, 
+> 
+> I'd be obliged if you could pass this along to all your Linux buddies....
+> 
+> For Sale:
+> 	Power Computing PowerCurve
+> (http://www.powerwatch.com/systems/pcurve.html)
+> 	Original 120Mhz PPC-601 daughter card
+> 	Slim Desktop case
+> 	128MB RAM (new)
+> 	2GB Apple (IBM) SCSI-2 HDD (new)
+> 	Ati Rage Video card (new)
+> 	4 x Speed Toshiba CdRom (used, not apple but driver hacked -
+> available from web)
+> 	keyboard & mouse (new)
+> 
+> 	Currently running MacOS9.1 (small partition) and Debian "Woody".  OK
+> as is (think 
+> 	Pentium 233ish) or ready for upgrade to G3-500 for some real
+> performance!
+> 
+> 	Asking price EUR200, open to negotiation.
+> 
+> Regards, 
+> Ryan
+> 
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

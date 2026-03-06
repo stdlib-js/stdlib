@@ -1,0 +1,712 @@
+Return-Path: <Online#3.20351.c6-p402lCSzguclhRRR.1.b@newsletter.online.com>
+Received: from acmta4.cnet.com (abv-sfo1-acmta4.cnet.com [206.16.1.163])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6I0MvJ05857
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Thu, 18 Jul 2002 01:22:57 +0100
+Received: from abv-sfo1-ac-agent6 (206.16.0.241) by acmta4.cnet.com (PowerMTA(TM) v1.5); Wed, 17 Jul 2002 17:17:27 -0700 (envelope-from <Online#3.20351.c6-p402lCSzguclhRRR.1.b@newsletter.online.com>)
+Message-ID: <1365674.1026951768854.JavaMail.root@abv-sfo1-ac-agent6>
+Date: Wed, 17 Jul 2002 17:22:48 -0700 (PDT)
+From: "CNET: Tools for Software Developers" <Online#3.20351.c6-p402lCSzguclhRRR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: This Week: Chilkat Zip, Anfy Java, VB-PowerWrap
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Download Dispatch: Tools for Software Developers</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 5.50.4616.200" name=GENERATOR></HEAD>
+<BODY bgColor=#eeeeee>
+<CENTER>
+<!-- header -->
+<TABLE cellSpacing=0 cellPadding=0 width=612 bgColor=#ffffff border=0>
+<TBODY>
+<TR vAlign=top>
+<TD width=442 colSpan=4><IMG height=60 alt="Download Dispatch - Tools
+for Software Developers"
+src="http://download.cnet.com/i/dl/scr/442_downldHDR_softwr.gif"
+width=442><BR>
+	<TABLE cellSpacing=0 cellPadding=0 width=442 bgColor=#ffcc00 border=0>
+	<TBODY>
+	<TR><TD bgColor=#000000 colSpan=3><IMG height=1
+src="http://www.cnet.com/b.gif" width=1></TD></TR>
+	<TR><TD width=1 bgColor=#000000 rowSpan=2><IMG height=10
+src="http://www.cnet.com/b.gif" width=1></TD>
+	<TD width=10 rowSpan=2><IMG height=10
+src="http://www.cnet.com/b.gif" width=1></TD>
+	<TD width=430><IMG height=10 src="http://www.cnet.com/b.gif"
+width=1></TD></TR>
+	<TR><TD bgColor=#000000><IMG height=1
+src="http://www.cnet.com/b.gif" width=1></TD></TR>
+	</TBODY>
+	</TABLE>
+</TD>
+<td width=160 rowspan=2><img src="http://www.cnet.com/i/nl/dd_b.gif"
+width=160 height=18><br>
+
+
+<!-- ad -->
+<iframe src="http://www.zdnet.com/include/ads/ifc/RGROUP=2560" scrolling="no" frameborder="0" hspace="0" vspace="0" height="600" width="160" marginheight="0" marginwidth="0">
+<script language="JavaScript" src="http://www.zdnet.com/include/ads/js/RGROUP=2560">
+</script>
+</iframe>
+<!-- ad -->
+</A><BR>&nbsp;<BR>
+<!-- right column content -->
+
+<!-- featured collections -->
+<IMG height=20 src="http://a.r.tv.com/cnet.1d/i/nl/shw/rhc_featcol.gif"
+width=150><BR>
+<FONT face="arial, helvetica" size=-1><B><a href="http://clickthru.online.com/Click?q=dc-40zzQ0Lrt5UaQUvBz6gEwTinhlyR" >Stamp out the bugs
+<BR></A></B></FONT>
+<FONT face="arial, helvetica" size=-1>
+Does your code need a once-over? Debug your software with this collection of tools and utilities designed to locate and correct programming mistakes, track defects, and more.
+<BR></FONT>
+<P></P>
+<!-- end featured collections -->
+
+<!-- <P><a href="http://clickthru.online.com/Click?q=f1-MtTuQpsFWZOIe5QH3XX8owMnerlR" ><IMG height=40
+src="http://catchup.cnet.com/catchup_btn2.gif" width=160 border=0></a>
+<P> -->
+
+	<!-- updates & drivers -->
+	<IMG height=20 alt="Software Updates"
+src="http://www.cnet.com/i/nl/dl/rhc_up.gif" width=150><BR>
+	<TABLE cellSpacing=0 cellPadding=2 width=150 border=0>
+	<TBODY>
+	<TR><TD><FONT face="arial, helvetica" size=-1>
+	<B><a href="http://clickthru.online.com/Click?q=06-fP6uI482xDVaFVomap_vCgSyiL4R" >XML Spy Suite 4.4</A></B><BR>
+Open and edit XML, XSL, 3DML, or DTD documents.<P>
+
+	<B><a href="http://clickthru.online.com/Click?q=1b-wAnhI3N2MVLxtrNQ1U5MauO37xrR" >JadeIDE for Java 3.0
+</A></B><BR>
+Use this GUI to edit your source code more easily.<P>
+
+	<B><a href="http://clickthru.online.com/Click?q=30-u8NEIRrWWMSEzgA8IeOdSKzjX1iR" >UniquE RAR File Library 0.4.0</A></B><BR>
+Enable your applications to create and decompress RAR archives.<P>
+
+	<B><a href="http://clickthru.online.com/Click?q=45-fNkJIKB6raNgZ0x-EDvznhjonlZR" >SkICMP ActiveX Control 2.2</A></B><BR>
+Diagnose, troubleshoot, and monitor your network.<P>
+
+	<!-- end updates & drivers -->
+
+
+<!-- shopper upgrades -->
+
+<IMG height=20 alt="Software
+Upgrades"src="http://a.r.tv.com/cnet.1d/i/nl/cu/rhc_shopper.gif"
+width=150><BR>
+
+<TABLE cellSpacing=0 cellPadding=2 width=150 border=0>
+<TBODY>
+<TR>
+<TD colSpan=2><FONT face="Arial, Helvetica, sans-serif"
+size=2><B>Software Upgrades:</B></FONT><BR></TD></TR>
+
+ 				 <TR vAlign=top>
+				                  <TD><FONT face="arial, helvetica"
+				                    size=-1><B>&nbsp;1.</B></FONT></TD>
+
+				                  <TD><FONT face="arial, helvetica" size=-1>
+				 <a href="http://clickthru.online.com/Click?q=5a-ahD1IP0IIDd6JKw24YOLpk6Td6dR" >
+				 ZoneAlarm Pro 3.0</A></FONT></TD></TR>
+
+				                <TR vAlign=top>
+				                  <TD><FONT face="arial, helvetica"
+				                    size=-1><B>&nbsp;2.</B></FONT></TD>
+
+				                  <TD><FONT face="arial, helvetica" size=-1>
+				 <a href="http://clickthru.online.com/Click?q=70-3vnJIdp6DGnfgjzKns2asfI8UkRR" >
+				 Norton AntiVirus 2002</A></FONT></TD></TR>
+
+				                <TR vAlign=top>
+				                  <TD><FONT face="arial, helvetica"
+				                    size=-1><B>&nbsp;3.</B></FONT></TD>
+
+				                  <TD><FONT face="arial, helvetica" size=-1>
+				 <a href="http://clickthru.online.com/Click?q=85-2G2oQ7KQokH6V4Taf70SVbToBBPR" >
+				 AdSubtract Pro 2.5</A></FONT></TD></TR>
+
+				                <TR vAlign=top>
+				                  <TD><FONT face="arial, helvetica"
+				                    size=-1><B>&nbsp;4.</B></FONT></TD>
+
+				                  <TD><FONT face="arial, helvetica" size=-1>
+				 <a href="http://clickthru.online.com/Click?q=9a-b6_GQTMBaJQDsa7Figi7yr9FKgnR" >
+				 Microsoft Windows XP - Professional</A></FONT></TD></TR>
+
+				               <TR vAlign=top>
+				 		                  <TD><FONT face="arial, helvetica"
+				                    size=-1><B>&nbsp;5.</B></FONT></TD>
+
+				                  <TD><FONT face="arial, helvetica" size=-1>
+				 <a href="http://clickthru.online.com/Click?q=af--dB8QLpqyAiehm7ydDX7NdmUVSeR" >
+				 Nero Burning ROM 5.5</A></FONT></TD></TR>
+
+
+				                <TR vAlign=top>
+				                  <TD><FONT face="arial, helvetica"
+				                    size=-1><B>&nbsp;6.</B></FONT></TD>
+
+				                  <TD><FONT face="arial, helvetica" size=-1>
+				                  <a href="http://clickthru.online.com/Click?q=c4-Iy9lQ0WwvklENj4kHF6q-jPexAyR" >
+				 Reason 2.0</A></FONT></TD></TR>
+
+				                    <TR vAlign=top>
+				                  <TD><FONT face="arial, helvetica"
+				 	                       size=-1><B>&nbsp;7.</B></FONT></TD>
+
+				 	                     <TD><FONT face="arial, helvetica" size=-1>
+				 	                     <a href="http://clickthru.online.com/Click?q=d9-b7L_QpPwUkK0709ie23s1N87hJlR" >
+				 Microsoft Windows XP - Home Edition</A></FONT></TD></TR>
+
+
+				               <TR vAlign=top>
+				 		                  <TD><FONT face="arial, helvetica"
+				 		                    size=-1><B>&nbsp;8.</B></FONT></TD>
+
+				 		                  <TD><FONT face="arial, helvetica" size=-1>
+				 		                  <a href="http://clickthru.online.com/Click?q=ee-ZbmWQwDkh4U6j9b0QzbMuLbLad4R" >
+				 QuickBooks Pro 2002</A> </FONT></TD></TR>
+
+
+				                <TR vAlign=top>
+				                  <TD><FONT face="arial, helvetica"
+				                    size=-1><B>&nbsp;9.</B></FONT></TD>
+
+				                  <TD><FONT face="arial, helvetica" size=-1>
+				 <a href="http://clickthru.online.com/Click?q=03-13t3I3rzdpO0mtnhKQcaLlAI6OrR" >
+				 Adobe Photoshop 7.0</A></FONT></TD></TR>
+
+				                <TR vAlign=top>
+				                  <TD><FONT face="arial, helvetica"
+				 size=-1><B>10.</B></FONT></TD>
+
+				                 <TD><FONT face="arial, helvetica" size=-1>
+				 <a href="http://clickthru.online.com/Click?q=18-WhdzI98qUUxswDmTiMEyR1N675iR" >
+WinZip 8.1</A></FONT></TD></TR>
+
+
+<p>
+<TR>
+<p><TD colSpan=2>
+<P><FONT face="Arial, Helvetica, sans-serif" size=-2>Find a complete
+list of the 50 most popular software products at <a href="http://clickthru.online.com/Click?q=2e-eMTGIiK89w3bPx_ktQ3DlPfP8N4R" ><B>CNET
+Shopper.com</B></A>.</FONT></P></TD></TR></TBODY></TABLE><p>
+
+
+
+<!--  end shopper upgrades -->
+
+	</TR>
+	</TBODY>
+	</TABLE>
+
+
+</P></TD>
+
+
+<TD width=9 rowSpan=2><IMG height=60
+src="http://www.cnet.com/i/nl/dd_c.gif" width=9><BR>
+<TABLE cellSpacing=0 cellPadding=0 width=9 border=0>
+<TBODY>
+<TR>
+<TD bgColor=#000000><IMG height=1
+src="http://www.cnet.com/b.gif" width=9></TD></TR>
+<TR>
+<TD bgColor=#ffcc00><IMG height=10
+src="http://www.cnet.com/b.gif" width=1></TD></TR>
+<TR>
+<TD bgColor=#000000><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD>
+<TD width=1 bgColor=#000000 rowSpan=2>
+<TABLE cellSpacing=0 cellPadding=0 width=1 border=0>
+<TBODY>
+<TR>
+<TD bgColor=#eeeeee><IMG height=60
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+<TR vAlign=top>
+<TD width=1 bgColor=#000000><IMG height=1
+src="http://www.cnet.com/b.gif" width=1></TD>
+<TD width=10 bgColor=#ffcc00><IMG height=1
+src="http://www.cnet.com/b.gif" width=10></TD>
+<TD width=1 bgColor=#000000><IMG height=1
+src="http://www.cnet.com/b.gif" width=1></TD>
+<TD width=430 bgColor=#ffffff>
+<TABLE cellSpacing=0 cellPadding=0 width=430 bgColor=#ffffef border=0>
+<TBODY>
+<TR vAlign=top>
+<TD rowSpan=2 width=10><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=10></TD>
+
+<TD colSpan=3>
+
+<!-- date -->
+<FONT face="arial, helvetica"
+size=-2>July 17, 2002 </FONT>
+<!-- /date -->
+
+<P><FONT face="arial, helvetica"
+size=-1><FONT color=#333333
+size=3><B>Greetings from Download.com!</B></FONT><p>
+No software developer is immune to bugs. Even the cleanest code
+will have to go through a debugging process, but some debuggers
+are more efficient than others. Check out Download.com's
+complete collection of debugging tools <a href="http://clickthru.online.com/Click?q=43-coL5IBJAW17ylrk9Z5VKc-3P0BcR" >here</a>, and put away the
+can of Raid.<p>
+
+Also this week, we've got some very handy utilities. First,
+there's Chilkat, a cool zip/unzip ActiveX control that you can
+add to any language with ActiveX support (which is most major
+ones). But my personal favorite is VB-PowerWrap, a simple tool
+that takes all the far-flung bits and pieces of your Visual Basic
+masterpiece and socks them all away into one executable file
+for ease of distribution.<p>
+
+Becky Waring<br>
+Contributing Editor, CNET Download.com<p>
+
+</FONT></P>
+</TD><TD width=10><IMG height=1 src="http://www.cnet.com/b.gif" width=10></TD>
+
+	<TABLE border=0 cellPadding=0 cellSpacing=0 width=430>
+	<TBODY>
+	<TR><TD bgColor=#ffcc00><IMG height=1
+src="http://www.cnet.com/b.gif" width=1></TD></TR>
+	</TBODY>
+	</TABLE>
+
+
+<!-- Leads Module -->
+
+<!-- /Leads Module -->
+
+
+<!--  reviews and features -->
+<TABLE border="0" cellPadding=10 cellSpacing=0 width=430>
+<TBODY>
+<TR>
+<TD><FONT face="arial, helvetica" size=-1>
+<IMG alt="Reviews &amp; Features"
+src="http://www.cnet.com/i/nl/lx/sub_rev.gif" border=0><BR>
+<IMG height=8 src="http://www.cnet.com/i/nl/rule.gif" width=410 border=0><BR>
+
+<font size=-2>From Builder.com</font><br />
+<FONT face=arial,helvetica size=-1>
+<A name=h1><B><a href="http://clickthru.online.com/Click?q=58-mr2xIdJHOQcmtCEYjKHbtbXYzHRR" >Achieving
+persistence with Entity Beans</A></B></FONT></A><BR>
+Enterprise JavaBeans (EJB) allow for greater code reuse and
+   flexibility. See how Entity Beans enable you to leverage EJB
+   functionality in your apps.
+<br /><br />
+
+<img src="http://home.cnet.com/b.gif" height=5 width=1><br />
+
+<FONT face=arial,helvetica size=-1>
+<B><a href="http://clickthru.online.com/Click?q=6d-e8plIDEI0t742-K7Bc1bJBykEmZR" >Counting
+lines of code can help measure progress</A></B></FONT></A><BR>
+One developer has come around to thinking that counting lines
+   of code can yield useful information. He explains why and
+   shares a sample app that automates the process.
+<p />
+</font>
+
+
+
+<P><FONT face="arial, helvetica" size=-1>
+
+<!-- End reviews and features -->
+
+<!-- picks of the week -->
+
+<IMG alt="Picks of the week"
+src="http://www.cnet.com/i/nl/dl/sub_picks.gif" border=0><BR>
+<IMG height=8 src="http://www.cnet.com/i/nl/rule.gif" width=410><BR>
+
+<FONT size=-2>in ActiveX</FONT><BR>
+
+ <B><a href="http://clickthru.online.com/Click?q=82-P0EYQXK14addEXl6gJLkjCXMZHnR" >Chilkat Zip 6.0.2</A></B><BR>
+Need to add zip capability to your apps? Create and
+   decompress zip archives with the Chilkat Zip ActiveX
+   control. The control provides easy access to individual files
+   stored within a zip archive. You can search for a file within
+   the zip using a wildcard string and then extract individual
+   files or files matching a pattern. Files can be unzipped to
+   any directory, and the control's memory management allows any
+   size file to be compressed or decompressed in a constant
+   memory footprint. The control allows you to compress directly
+   from memory buffers or strings, as well as add multiple files
+   with wildcarding. There's even a real-time progress monitor
+   for zip and unzip operations. Chilkat supports Active Server
+   Pages, Visual Basic, Visual C++, Delphi, C++ Builder, and all
+   languages that use ActiveX controls.
+<P>
+
+<FONT size=-2>in Java</FONT><BR>
+<B><a href="http://clickthru.online.com/Click?q=97-dlfYQ1M1B4XYK9w3V0z6qjySJGeR" >Anfy Java 2.0</A></B><BR>
+Anfy is a collection of 52 applets for Web pages, desktop
+   wallpapers, or screensavers. Within the program's simple
+   interface, you can quickly apply real-time graphic effects to
+   GIF and JPEG images. Effects include 3D texture-mapped cube
+   menus, lake effects, water and fire, deformations, zoom
+   rotators, lens magnification, waving flags, animations,
+   scrolling text, customizable IFS fractals, color changers,
+   light shading, tunnels, and wormholes.
+<P>
+
+<FONT size=-2>in Tools &amp; Editors</FONT><BR>
+
+<B><a href="http://clickthru.online.com/Click?q=ac-RbKtQ0UKe1dwZCldWfGJ0kSyVjyR" >VB-PowerWrap 3.1</A></B><BR>
+Distribute Visual Basic applications the easy way with
+   VB-PowerWrap. VB-PowerWrap embeds all dependent and
+   non-dependent files into the executable of your VB program,
+   including DLLs and OCXs, graphics, databases, and text files,
+   to create a single clickable application. VB-PowerWrap scans
+   a VB project, wraps the appropriate files, and creates a
+   self-contained file for distribution. In addition,
+   VB-PowerWrap compresses all DLLs and OCXs and registers
+   appropriate controls on the user's machine if needed. It
+   works with Visual Basic 4, 5, and 6.
+<P>
+
+
+
+<P>
+
+<!-- top ten -->
+
+<A name=h2><IMG height=19 alt="This Week's Top Ten Downloads"
+src="http://www.cnet.com/i/nl/dl/sub_top10.gif"
+width=250></A><BR><IMG height=8
+src="http://www.cnet.com/i/nl/rule.gif"
+width=410><BR></FONT>
+<TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width="6%" height=36><FONT face="arial, helvetica"
+size=-1>&nbsp;</FONT></TD>
+<TD width="39%"><FONT face="arial, helvetica" size=-1><B>Most
+Popular Titles</B><BR><FONT size=-2>Week ending July 14
+</FONT></FONT></TD>
+<TD width="13%"><FONT face="arial, helvetica"
+size=-1>&nbsp;&nbsp;<B>Last<BR>&nbsp;&nbsp;Week</B>&nbsp;</FONT></TD>
+<TD width="16%"><FONT face="arial, helvetica"
+size=-1>&nbsp;&nbsp;<B>Weeks<BR>&nbsp;&nbsp;on&nbsp;Chart</B>&nbsp;</FONT></TD>
+<TD width="26%"><FONT face="arial, helvetica"
+size=-1>&nbsp;&nbsp;<B>Downloads<BR>&nbsp;&nbsp;This
+Week</B>&nbsp;</FONT></TD></TR>
+
+
+<TR>
+<TD colSpan=5>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+
+
+
+<TR align=middle>
+<TD height=65><FONT face="ms sans serif, geneva"
+size=-2>
+1.</FONT></TD>
+<TD align=left><FONT face="arial, helvetica" size=-1><B>
+
+<a href="http://clickthru.online.com/Click?q=c2-oXxLQUEkRhtLmiigVnxXFZcIuInR" >Microsoft
+Windows Installer (95/98/Me)</A>
+</B></FONT></TD>
+<TD width="13%"><FONT face="ms sans serif, geneva" size=-2>
+2</FONT></TD><TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>
+84</FONT></TD><TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>
+9,082</FONT></TD></TR>
+<TR> <TD colSpan=5><TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY><TR> <TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+
+<TR align=middle>
+<TD height=32><FONT face="ms sans serif, geneva"
+size=-2>
+2.</FONT></TD>
+<TD align=left><FONT face="arial, helvetica" size=-1><B>
+
+<a href="http://clickthru.online.com/Click?q=d7-wk3ZQLWkDhx0kzRRmBekeVktk2eR" >Microsoft
+Data Access Components RTM</A></B></FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+3</FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+84</FONT></TD>
+<TD><FONT face="ms sans serif, geneva"
+size=-2>
+8,901</FONT></TD></TR>
+<TR>
+<TD colSpan=5>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+
+<TR align=middle>
+<TD height=32><FONT face="ms sans serif, geneva"
+size=-2>
+3.</FONT></TD>
+<TD align=left><FONT face="arial, helvetica" size=-1><B>
+
+<a href="http://clickthru.online.com/Click?q=ec-MHyXQVy2Fgt9hrJ1kOqFb2GVaGyR" >Java 2
+Runtime Environment, SE</A>
+</B></FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+4</FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+84</FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+8,197</FONT></TD></TR>
+<TR>
+<TD colSpan=5>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+
+
+<TR align=middle>
+<TD height=32><FONT face="ms sans serif, geneva"
+size=-2>
+4.</FONT></TD>
+<TD align=left><FONT face="arial, helvetica" size=-1><B>
+
+<a href="http://clickthru.online.com/Click?q=01-9oXDI2jHs5U1jrwvurMPGPxZ6RlR" >Visual Basic
+6.0 Runtime Module SP5</A>
+</B></FONT></TD><TD><FONT face="ms sans serif, geneva" size=-2>
+5</FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+73</FONT></TD>
+<TD><FONT face="ms sans serif, geneva"
+size=-2>
+7,960</FONT></TD></TR>
+<TR>
+<TD colSpan=5>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+
+<TR align=middle>
+<TD height=32><FONT face="ms sans serif, geneva"
+size=-2>
+5.</FONT></TD>
+<TD align=left><FONT face="arial, helvetica" size=-1><B>
+
+<a href="http://clickthru.online.com/Click?q=16-T_cjI4cFDOlw6QxDblRuaBDxRU4R" >Mozilla (32-bit)
+</A></B></FONT></TD>
+<TD width="13%"><FONT face="ms sans serif, geneva" size=-2>
+7</FONT></TD><TD width="16%"><FONT face="ms sans serif, geneva"
+size=-2>
+5</FONT></TD><TD width="26%"><FONT face="ms sans serif, geneva"
+size=-2>
+6,683</FONT></TD></TR>
+<TR> <TD colSpan=5><TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY><TR> <TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+
+
+<TR align=middle>
+<TD height=32><FONT face="ms sans serif, geneva"
+size=-2>
+6.</FONT></TD>
+<TD align=left><FONT face="arial, helvetica" size=-1><B>
+
+<a href="http://clickthru.online.com/Click?q=2b-2FVYINzsUbSDIYmwzk0xBfd-8WrR" >ActiveX Control Pad
+</A></B></FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+6</FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+7</FONT></TD>
+<TD><FONT face="ms sans serif, geneva"
+size=-2>
+4,030</FONT></TD></TR>
+<TR>
+<TD colSpan=5>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+
+
+<TR align=middle>
+<TD height=32><FONT face="ms sans serif, geneva"
+size=-2>
+7.</FONT></TD>
+<TD align=left><FONT face="arial, helvetica" size=-1><B>
+
+<a href="http://clickthru.online.com/Click?q=40-6Pp4Idn8VvmUmVceVXCHnpqL0wRR" >UltraEdit-32</A></B></FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+11</FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+84</FONT></TD>
+<TD><FONT face="ms sans serif, geneva"
+size=-2>
+2,995</FONT></TD></TR>
+<TR>
+<TD colSpan=5>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+
+<TR align=middle><TD
+height=32><FONT face="ms sans serif, geneva"
+size=-2>
+8.</FONT></TD>
+<TD align=left><FONT face="arial, helvetica" size=-1><B>
+
+<a href="http://clickthru.online.com/Click?q=55-TAHaIKJ8NOR8kerqm86ccJ_2d2ZR" >Borland C++ Compiler</A></B></FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+9</FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+60</FONT></TD>
+<TD><FONT face="ms sans serif, geneva"
+size=-2>
+2,492</FONT></TD></TR>
+<TR>
+<TD colSpan=5>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+
+<TR align=middle><TD
+height=32><FONT face="ms sans serif, geneva"
+size=-2>
+9.</FONT></TD>
+<TD align=left><FONT face="arial, helvetica" size=-1><B>
+
+<a href="http://clickthru.online.com/Click?q=6a-z_30IeWiBYcRvZqzceCGFySNP8dR" >Java 2 Development Kit</A></B></FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+10</FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+84</FONT></TD>
+<TD><FONT face="ms sans serif, geneva"
+size=-2>
+2,177</FONT></TD></TR>
+<TR>
+<TD colSpan=5>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+
+<TR align=middle>
+<TD width="6%" height=32><FONT face="ms sans serif, geneva"
+size=-2>
+10.</FONT></TD>
+<TD align=left width="39%"><FONT face="arial, helvetica"
+size=-1><B>
+
+<a href="http://clickthru.online.com/Click?q=80-KTKvQQ0KYe-AT63oaDkjVsTLZ8iR" >TextPad (32-bit)</A>
+</B></FONT></TD><TD><FONT face="ms sans serif, geneva" size=-2>
+12</FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+84</FONT></TD>
+<TD><FONT face="ms sans serif, geneva" size=-2>
+2,056</FONT></TD></TR>
+<TR>
+<TD colSpan=5>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD bgColor=#cccccc><IMG height=1
+src="http://www.cnet.com/b.gif"
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+
+</TBODY></TABLE></P></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+
+
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org&brand=cnet'>
+<img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-zdnet@spamassassin.taint.org<p>
+
+<A NOTRACK HREF='http://clickthru.online.com/Click?q=95-XdTrrgdemetv9eIq14RmZWn304D_PRRR'>Unsubscribe</A>&nbsp;|
+&nbsp;<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org&brand=cnet'>Manage My Subscriptions</a>
+&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=aa-gBteQXUr_tVw_8rWLXZBXqONOVnR" >FAQ</A>&nbsp;|
+&nbsp;<a href="http://clickthru.online.com/Click?q=bf-JtRfQ8Zrg9LZaGc5w8PF_jEuwteR" >Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.cnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=d4-E0SqQ0ExoPG-K0h_4Mc3148lk6yR" ><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=e9-gdzpQxVzwRjdLmhTRnU3P83P5XlR" ><font color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=fe-xkIgQwgwkwdtBugeE4rbg6amtI4R" ><font color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=13-NxSZI3XW8Y4CAu0ssDLfzpHOCerR" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=29-Sg_rIjMAh2mMeIeNyGEI9rCM8vlR" ><font color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=3e-F51nIizXmEt5xI2_7DQESNPe-i4R" ><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136482&NL=e416&ISSUE=2002-07-17" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table></font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+
+
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=53-n8CdnHnCBiH0XpcYx-pQ_Iwsz9RR">
+

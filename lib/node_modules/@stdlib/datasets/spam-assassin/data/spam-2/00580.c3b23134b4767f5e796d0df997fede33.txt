@@ -1,0 +1,213 @@
+From targetemailextractor@btamail.net.cn  Mon Jun 24 17:53:11 2002
+Return-Path: targetemailextractor@btamail.net.cn
+Delivery-Date: Mon Jun  3 13:00:57 2002
+Received: from mail.GREENMETRO.COM ([61.129.121.193]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g53C0sO12323 for
+    <jm@jmason.org>; Mon, 3 Jun 2002 13:00:56 +0100
+Received: from html ([61.174.192.114]) by mail.GREENMETRO.COM with
+    Microsoft SMTPSVC(5.0.2195.3779); Mon, 3 Jun 2002 19:52:14 +0800
+From: targetemailextractor@btamail.net.cn
+To: yyyy4lmhobu13.fsf@mail.hssun02b
+Subject: Direct Email Blaster, Email extractor, email downloader, email verify ...........
+Date: Mon, 3 Jun 2002 20:00:35
+MIME-Version: 1.0
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2919.6700
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2919.6700
+Message-Id: <MAILXeo6fQSgeR4UIS400001c9d@mail.GREENMETRO.COM>
+X-Originalarrivaltime: 03 Jun 2002 11:52:16.0328 (UTC) FILETIME=[1B6E6480:01C20AF5]
+X-Keywords: 
+Content-Type: text/html; charset="DEFAULT_CHARSET"
+
+
+<html>
+
+<head>
+</head>
+
+<body>
+<div>
+  <font face="Arial">&nbsp;</font>
+</div>
+<div>
+  ¡¡
+</div>
+<div>
+  <strong><font color="#ff0080" size="4" face="Arial">Direct Email Blaster</font></strong> 
+</div> 
+<font size="2"> 
+<p><font face="Arial"><b><font color="#006600"><i>The program will send mail at the  
+rate of over 1, 000 e-mails per minute.&nbsp;</i></font><br> 
+Legal and Fast sending bulk emails&nbsp;<br> 
+<font color="#006600"><i>Built in SMTP server&nbsp;</i></font><br> 
+Have Return Path&nbsp;<br> 
+Can Check Mail Address&nbsp;<br> 
+<font color="#006600"><i>Make Error Send Address List( Remove or Send Again)&nbsp;</i></font><br> 
+Support multi-threads.&nbsp;<br> 
+Support multi-smtp servers.&nbsp;<br> 
+Manages your opt-in E-Mail Lists&nbsp;<br> 
+Offers an easy-to-use interface!&nbsp;<br> 
+Easy to confige and use&nbsp;</b></font></p> 
+<p><font face="Arial"><a href="http://www.wldinfo.com/bj_download/edeb_set.zip"><strong>Download  
+Now</strong></a></font></p> 
+<p><strong><font color="#ff0080" size="4" face="Arial">Maillist Verify</font></strong></p> 
+<p><font face="Arial">Maillist Verify is intended for e-mail addresses and mail  
+lists verifying. The main task is to determine which of addresses in the mail  
+list are dead. The program is oriented, basically, on programmers which have  
+their own mail lists to inform their users about new versions of their programs.</font></p> 
+<p><font face="Arial">The program works on the same algorithm as ISP mail  
+systems do. Mail servers addresses for specified address are extracted from DNS.  
+The program tries to connect with found SMTP-servers and simulates the sending  
+of message. It does not come to the message <nobr>sending &#8255;/NOBR&gt; EMV  
+disconnect as soon as mail server informs does this address exist or not. EMV  
+can find about 90% of dead addresses &#8255;/NOBR&gt; some mail systems receive  
+all messages and only then see their addresses and if the address is dead send  
+the message back with remark about it.</nobr></font></p> 
+<nobr> 
+<p><a href="http://www.wldinfo.com/bj_download/bemv_set.zip"><strong><font size="3" face="Arial">Download  
+Now</font></strong></a></p> 
+<p><strong><font color="#ff0080" size="4" face="Arial">Express Email Blaster&nbsp;</font></strong></p> 
+<p><font face="Arial">Express Email Blaster&nbsp; is a very fast, powerful yet  
+simple to use email sender. Utilizing multiple threads/connections and multiple  
+SMTP servers your emails will be sent out fast and easily. There are User  
+Information, Attach Files, Address and Mail Logs four tabbed area for the  
+E-mails details for sending. About 25 SMTP servers come with the demo version,  
+and users may Add and Delete SMTP servers. About <font color="#008000"><b>60,000</b></font>  
+E-mails will be sent out per hour.&quot;</font></p> 
+<p><strong><a href="http://www.wldinfo.com/bj_download/beeb_set.zip"><font size="3" face="Arial">Download  
+Now</font></a></strong></p> 
+<p><strong><font color="#ff0080" size="4" face="Arial">Express Email Address  
+Extractor</font></strong></p> 
+<font size="4"> 
+<p><font face="Arial"><strong><font size="3" color="#008000">This program is the  
+most efficient, easy to use email address collector available on the internet! </font><font color="#000000" size="3">Beijing  
+Express Email Address Extractor (ExpressEAE) is designed to extract e-mail  
+addresses from web-pages on the Internet (using HTTP protocols) .ExpressEAE  
+supports operation through many proxy-server and works very fast, as it is able  
+of loading several pages simultaneously, and requires very few resources.</font></strong></font></p> 
+<p><font face="Arial"><strong><font color="#000000" face="Arial"><font size="3">With  
+it, you will be able to</font><font size="2"> </font><font size="3">use targeted  
+searches to crawl the world wide web, extracting thousands of clean, fresh email  
+addresses. Ably Email address Extractor is unlike other address collecting  
+programs, which limit you to one or two search engines and are unable to do auto  
+searches HUGE address. Most of them collect a high percentage of incomplete,  
+unusable addresses which will cause you serious problems when using them in a  
+mailing.&nbsp;</font></font></strong></font> 
+<ul> 
+  <li><font face="Arial"><strong><font color="#008000" size="3" face="Arial">Easier  
+    to learn and use than any other email address collector program available.</font></strong></font> 
+  <li><font face="Arial"><strong><font color="#008000" size="3" face="Arial">Accesses  
+    eight search engines&nbsp;</font></strong></font> 
+  <li><font face="Arial"><strong><font color="#008000" size="3" face="Arial">Add  
+    your own URLs to the list to be searched</font></strong></font> 
+  <li><font face="Arial"><strong><font size="3" face="Arial"><font color="#008000">Supports  
+    operation through </font><font color="#ff00ff">a lot of</font><font color="#008000">  
+    proxy-server and works very fast (HTTP Proxy)</font></font></strong></font> 
+  <li><font face="Arial"><strong><font color="#008000" size="3" face="Arial">Able  
+    of loading several pages simultaneously</font></strong></font> 
+  <li><font face="Arial"><strong><font color="#008000" size="3" face="Arial">Requires  
+    very few resources</font></strong></font> 
+  <li><font face="Arial"><strong><font color="#008000" size="3" face="Arial">Timeout  
+    feature allows user to limit the amount of time crawling in dead sites and  
+    traps.</font></strong></font> 
+  <li><font face="Arial"><strong><font size="3" face="Arial"><font color="#008000">Easy  
+    to make </font><font color="#ff00ff">Huge</font><font color="#008000">  
+    address list</font></font></strong></font> 
+  <li><font face="Arial"><strong><font color="#008000" size="3" face="Arial">Pause/continue  
+    extraction at any time.</font></strong></font> 
+  <li><font face="Arial"><strong><font color="#008000" size="3" face="Arial">Auto  
+    connection to the Internet</font></strong></font></li> 
+</ul> 
+<div> 
+  <strong><a href="http://www.wldinfo.com/bj_download/eeae_set.zip"><font size="3" color="#008000" face="Arial">Download  
+  Now</font></a></strong> 
+</div> 
+<div> 
+  <strong><font color="#ff0080" face="Arial">Express Email Address Downloader</font></strong> 
+</div> 
+<ul> 
+  <li><font face="Arial"><strong><font color="#006600" size="2">ExpressEAD&nbsp;  
+    </font><font color="#000000" size="2">is a 32 bit Windows Program for e-mail  
+    marketing. It is intended for easy and convenient search large e-mail  
+    address lists from mail servers. The program can be operated on Windows  
+    95/98/ME/2000 and NT.</font></strong></font> 
+  <li><font face="Arial"><strong><font color="#006600" size="2">ExpressEAD&nbsp;  
+    </font><font color="#000000" size="2">support multi-threads (up to 1024  
+    connections).</font></strong></font> 
+  <li><font face="Arial"><strong><font color="#006600" size="2">ExpressEAD&nbsp;  
+    </font><font color="#000000" size="2">has the ability&nbsp; to reconnect to  
+    the mail server if the server has disconnected and continue the searching at  
+    the point where it has been interrupted.</font></strong></font> 
+  <li><font face="Arial"><strong><font color="#006600" size="2">ExpressEAD&nbsp;  
+    </font><font color="#000000" size="2">has an ergonomic interface that is  
+    easy to set up and simple to use.</font></strong></font></li> 
+</ul> 
+<div> 
+  <font face="Arial">&nbsp;</font> 
+</div> 
+<p><font face="Arial"><strong><font color="#008000" size="4" face="Arial">Features:</font></strong></font> 
+<ul type="disc"> 
+  <li><font face="Arial"><strong><font size="2" face="Arial">support  
+    multi-threads.</font></strong></font> 
+  <li><font face="Arial"><strong><font size="2" face="Arial">auto get smtp  
+    server address,support multi-smtp servers.</font></strong></font> 
+  <li><font face="Arial"><strong><font size="2" face="Arial">auto save&nbsp;  
+    E-Mail Lists</font></strong></font> 
+  <li><font face="Arial"><strong><font size="2" face="Arial">offers an  
+    easy-to-use interface!</font></strong></font></li> 
+</ul> 
+<div> 
+  <strong><a href="http://www.wldinfo.com/bj_download/eead_set.zip"><font size="3" color="#008000" face="Arial">Download  
+  Now</font></a></strong> 
+</div> 
+<div> 
+  <font face="Arial">&nbsp;</font> 
+</div> 
+<div> 
+  <strong><font color="#ff0080" face="Arial">Express Maillist Manager</font></strong> 
+</div> 
+<div> 
+  <font face="Arial">&nbsp;</font> 
+</div> 
+<div> 
+  <font size="2"> 
+  <p><font face="Arial"><font color="black" size="3">This program was designed  
+  to be a complement to the </font><font color="#800080" size="3">Direct Email  
+  Blaster&nbsp; </font><font color="black" size="3">and </font><font color="#800080" size="3">Email  
+  Blaster </font><font color="black" size="3">suite of bulk email software  
+  programs. Its purpose is to organize your email lists in order to be more  
+  effective with your email marketing campaign. Some of its features include:</font></font></p> 
+  <p><b><font color="#008000" face="Arial"><font size="3">&#8255;Combine several  
+  lists into one file.</font><br> 
+  <font size="3">&#8255;Split up larger lists to make them more manageable.</font><br> 
+  <font size="3">&#8255;Remove addresses from file.</font><br> 
+  <font size="3">&#8255;Manual editing, adding, and deleting of addresses.</font><br> 
+  <font size="3">&#8255;Ability to auto clean lists, that is, remove any  
+  duplicate or unwanted addresses.</font><br> 
+  <font size="3">&#8255;Maintain all your address lists within the program so  
+  you no&nbsp; longer need to keep all your lists saved as separate text files.</font></font></b></p> 
+  <p><strong><a href="http://www.wldinfo.com/bj_download/bemm_set.zip"><font size="3" color="#008000" face="Arial">Download  
+  Now</font></a></strong></p> 
+  <p><font face="Arial">&nbsp;</font></p> 
+  <p>¡¡</p>
+  <div>
+    <font face="Arial">if you want to remove your email, please send email to <a href="mailto:targetemailremoval@btamail.net.cn">targetemailremoval@btamail.net.cn</a></font> 
+  </div> 
+  <div> 
+    <font face="Arial">&nbsp;</font> 
+  </div> 
+  <div> 
+    <font face="Arial">&nbsp;</font> 
+  </div> 
+  <div> 
+    ¡¡
+  </div>
+  </font>
+</div>
+</font></nobr></font>
+
+</body>
+
+</html>
+<html><body><br><br><br>                                          <br><a href=                            >                                                                    </a><br>                                         </body></html>

@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests for native WebAssembly support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has native WebAssembly support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

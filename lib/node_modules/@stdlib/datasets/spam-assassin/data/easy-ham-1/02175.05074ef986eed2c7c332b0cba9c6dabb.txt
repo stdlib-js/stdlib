@@ -1,0 +1,28 @@
+From rssfeeds@jmason.org  Wed Oct  2 11:43:47 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3AB7D16F03
+	for <jm@localhost>; Wed,  2 Oct 2002 11:43:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:43:47 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g92833K31821 for
+    <jm@jmason.org>; Wed, 2 Oct 2002 09:03:03 +0100
+Message-Id: <200210020803.g92833K31821@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: zawodny <rssfeeds@spamassassin.taint.org>
+Subject: RedHat 8.0 ISO Mirror(s)
+Date: Wed, 02 Oct 2002 08:03:03 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://jeremy.zawodny.com/blog/archives/000206.html
+Date: 2002-10-01T06:31:54-08:00
+
+Thanks to an anonymous helper, I've mirrored all 5 ISO images for Red Hat 8.0. 
+Ohio - http://family.zawodny.com/~jzawodn/iso/rh80/ (DS-3 connection via 
+Sprint) California - http://litterbox.zawodny.com/~jzawodn/iso/rh80/ (multiple 
+gigabit connections) Now be nice. :-)...
+
+

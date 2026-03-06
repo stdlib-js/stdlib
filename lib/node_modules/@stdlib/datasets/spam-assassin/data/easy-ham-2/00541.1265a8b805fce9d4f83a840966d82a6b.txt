@@ -1,0 +1,78 @@
+From razor-users-admin@lists.sourceforge.net  Thu Jul 25 10:52:49 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9E9D1440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 05:52:48 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 10:52:48 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6OHC1428584 for <jm-razor@jmason.org>; Wed, 24 Jul 2002 18:12:01 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XPXV-0005nC-00; Wed,
+    24 Jul 2002 10:03:05 -0700
+Received: from h-66-134-120-173.lsanca54.covad.net ([66.134.120.173]
+    helo=stealthgeeks.net) by usw-sf-list1.sourceforge.net with smtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17XPXJ-0004st-00 for
+    <razor-users@lists.sourceforge.net>; Wed, 24 Jul 2002 10:02:53 -0700
+Received: (qmail 3720 invoked by uid 1001); 24 Jul 2002 17:02:51 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    24 Jul 2002 17:02:51 -0000
+From: Patrick <patrick@stealthgeeks.net>
+To: rODbegbie <rOD@arsecandle.org>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Authentication Error
+In-Reply-To: <00f101c23331$1bdda5c0$b554a8c0@RAGING>
+Message-Id: <20020724095903.W3639-100000@rockstar.stealthgeeks.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 24 Jul 2002 10:02:51 -0700 (PDT)
+Date: Wed, 24 Jul 2002 10:02:51 -0700 (PDT)
+
+On Wed, 24 Jul 2002, rODbegbie wrote:
+
+> rODbegbie wrote:
+> > I get the impression that Vipul & co are deliberately trying to
+> > mislead users into downloading the dev code in order to get more
+> > unwitting test sites.
+>
+> Apologies to all.  In re-reading, that sentence sounds a lot harsher than I
+> intended.
+
+The question I have is: what needs to be done/help needs to be provided to
+make the system suck less? It's obviously a great idea, it just needs some
+work...
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+                               Patrick Greenwell
+         Asking the wrong questions is the leading cause of wrong answers
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

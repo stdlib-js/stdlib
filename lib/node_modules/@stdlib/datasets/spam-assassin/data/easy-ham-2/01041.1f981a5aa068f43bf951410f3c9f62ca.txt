@@ -1,0 +1,224 @@
+From fork-admin@xent.com  Fri Aug 16 15:44:01 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EE7A543C34
+	for <jm@localhost>; Fri, 16 Aug 2002 10:43:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 15:44:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7GEhBa22976 for <jm@jmason.org>;
+    Fri, 16 Aug 2002 15:43:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9A71F29409A; Fri, 16 Aug 2002 07:41:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp03.vsnl.net (smtp03.vsnl.net [203.197.12.9]) by
+    xent.com (Postfix) with ESMTP id 6367C294098 for <fork@xent.com>;
+    Fri, 16 Aug 2002 07:40:09 -0700 (PDT)
+Received: from darksun1 ([203.197.12.9]) by smtp03.vsnl.net (Netscape
+    Messaging Server 4.15) with ESMTP id H0XY5402.GNW for <fork@xent.com>;
+    Fri, 16 Aug 2002 20:11:28 +0530
+Received: from ([203.200.112.95]) by smtp03.vsnl.net (InterScan E-Mail
+    VirusWall Unix); Fri, 16 Aug 2002 20:11:28 +0530 (IST)
+Message-Id: <007501c24533$c235ce70$5f70c8cb@darksun1>
+From: "Nalin nal.sav Savara" <nsavara@vsnl.net>
+To: <fork@spamassassin.taint.org>
+Subject: inspiring article by Howard Jonas who founded IDT
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+    boundary="----=_NextPart_000_0072_01C24561.DAA02DB0"
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2919.6700
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2919.6700
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 16 Aug 2002 20:16:50 +0530
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0072_01C24561.DAA02DB0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hi People,
+I'm rejoining Fork after a long hiatus, and inspired by the kinds of =
+stuff Rohit and Adam used to post once upon a time... here's a little =
+something that's damn inspiring...
+
+Nalin
+
+http://www.howardsbook.com/ch01/01.html
+
+Chapter One
+One Finger for Onions=20
+On March 15, 1996, I made over a hundred million dollars. That was the =
+day my company, IDT, one of the world's largest Internet and alternative =
+telecommunications providers, went public. As IDT's founder, president, =
+and majority shareholder, I was instantly rich beyond my wildest dreams. =
+People ask me if this was the greatest moment in my business life. It =
+wasn't.
+
+Four months later, on July 18, 1996, we released a new technology, a =
+breakthrough that would eventually cut the cost of international calls =
+by a remarkable 95 percent. That day Sara Grosvenor, the =
+great-granddaughter of Alexander Graham Bell, joined us in New York to =
+use our new technology in order to place the first phone call ever over =
+the network to Susan Cheever, the great-granddaughter of Thomas Watson, =
+in London.
+
+Within twenty-four hours of Ms. Grosvenor saying "Come here, Ms. Watson, =
+I need to see you" over our system, CNN, CNBC, and newspapers had spread =
+word of the development to investors and potential users and partners =
+around the world. Combined with a more than fivefold increase in our =
+quarterly revenues for the second year in a row, IDT's stock price =
+started to move upward again. Many people who saw me glowing that =
+morning asked if this was the greatest moment of my business life. It =
+wasn't.
+
+The greatest moment actually occurred approximately twenty-seven years =
+earlier on the morning of July 23, 1970. That was the morning I pushed =
+my newly built hot dog stand past Joe and Vinny's butcher shop on =
+Eastchester Road in the Bronx. Only two months before, Joe had driven me =
+from my after-school job in the butcher shop by forcing me to eat five =
+pounds of rice pudding (a task that took me close to two hours) after =
+catching me sampling the pudding while I waited on a customer at the =
+deli counter.
+
+I couldn't resist stopping in front of the butcher shop on my way to the =
+spot I'd picked out three-quarters of a mile away to set up my stand. As =
+Joe, Vinny, and Joe's nephew, Patsy, came out to see the new stand, I =
+was gloating over the fact that I was now just as independent in =
+business as they were. Nobody could make me clean out the rotten chicken =
+tank anymore. Nobody could send me five miles away on the delivery bike =
+in the snow to deliver ribs to a rich finicky lady who would just send =
+them back to be trimmed, and never tipped more than a quarter. Nobody =
+could make me lay in the sawdust and dig ground-up bones, blood, and fat =
+out of the meat band saw. And, most importantly, nobody could do all =
+this while poking fun at what a jerk I was to get all the dirty jobs. I =
+was only fourteen years old, and the wheels would fall off my homemade =
+hot dog stand many times before that summer ended, but that day, in my =
+mind, I was as rich as a Rockefeller.
+
+
+
+------=_NextPart_000_0072_01C24561.DAA02DB0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Diso-8859-1" =
+http-equiv=3DContent-Type>
+<META content=3D"MSHTML 5.00.2920.0" name=3DGENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT face=3DArial size=3D2>Hi People,</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2>I'm rejoining Fork after a long hiatus, =
+and=20
+inspired by the kinds of stuff Rohit and Adam used to post once upon a =
+time...=20
+here's a little something that's damn inspiring...</FONT></DIV>
+<DIV>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>Nalin</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2><A=20
+href=3D"http://www.howardsbook.com/ch01/01.html">http://www.howardsbook.c=
+om/ch01/01.html</A></FONT></DIV>
+<DIV>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2><FONT size=3D4><STRONG>Chapter =
+One<BR>One Finger for=20
+Onions</STRONG></FONT> </DIV>
+<DIV align=3Dleft>
+<P><FONT size=3D2>On March 15, 1996, I made over a hundred million =
+dollars. That=20
+was the day my company, IDT, one of the world&#8217;s largest Internet =
+and alternative=20
+telecommunications providers, went public. As IDT&#8217;s founder, =
+president, and=20
+majority shareholder, I was instantly rich beyond my wildest dreams. =
+People ask=20
+me if this was the greatest moment in my business life. It =
+wasn&#8217;t.</FONT></P>
+<P><FONT size=3D2>Four months later, on July 18, 1996, we released a new =
+
+technology, a breakthrough that would eventually cut the cost of =
+international=20
+calls by a remarkable 95 percent. That day Sara Grosvenor, the=20
+great-granddaughter of Alexander Graham Bell, joined us in New York to =
+use our=20
+new technology in order to place the first phone call ever over the =
+network to=20
+Susan Cheever, the great-granddaughter of Thomas Watson, in =
+London.</FONT></P>
+<P><FONT size=3D2>Within twenty-four hours of Ms. Grosvenor saying =
+&#8220;Come here, Ms.=20
+Watson, I need to see you&#8221; over our system, CNN, CNBC, and =
+newspapers had spread=20
+word of the development to investors and potential users and partners =
+around the=20
+world. Combined with a more than fivefold increase in our quarterly =
+revenues for=20
+the second year in a row, IDT&#8217;s stock price started to move upward =
+again. Many=20
+people who saw me glowing that morning asked if this was the greatest =
+moment of=20
+my business life. It wasn&#8217;t.</FONT></P>
+<P><FONT size=3D2>The greatest moment actually occurred approximately =
+twenty-seven=20
+years earlier on the morning of July 23, 1970. That was the morning I =
+pushed my=20
+newly built hot dog stand past Joe and Vinny&#8217;s butcher shop on =
+Eastchester Road=20
+in the Bronx. Only two months before, Joe had driven me from my =
+after-school job=20
+in the butcher shop by forcing me to eat five pounds of rice pudding (a =
+task=20
+that took me close to two hours) after catching me sampling the pudding =
+while I=20
+waited on a customer at the deli counter.</FONT></P>
+<P><FONT size=3D2>I couldn&#8217;t resist stopping in front of the =
+butcher shop on my=20
+way to the spot I&#8217;d picked out three-quarters of a mile away to =
+set up my stand.=20
+As Joe, Vinny, and Joe&#8217;s nephew, Patsy, came out to see the new =
+stand, I was=20
+gloating over the fact that I was now just as independent in business as =
+they=20
+were. Nobody could make me clean out the rotten chicken tank anymore. =
+Nobody=20
+could send me five miles away on the delivery bike in the snow to =
+deliver ribs=20
+to a rich finicky lady who would just send them back to be trimmed, and =
+never=20
+tipped more than a quarter. Nobody could make me lay in the sawdust and =
+dig=20
+ground-up bones, blood, and fat out of the meat band saw. And, most =
+importantly,=20
+nobody could do all this while poking fun at what a jerk I was to get =
+all the=20
+dirty jobs. I was only fourteen years old, and the wheels would fall off =
+my=20
+homemade hot dog stand many times before that summer ended, but that =
+day, in my=20
+mind, I was as rich as a Rockefeller.</FONT></P>
+<P></P></DIV></FONT></BODY></HTML>
+
+------=_NextPart_000_0072_01C24561.DAA02DB0--
+
+http://xent.com/mailman/listinfo/fork
+

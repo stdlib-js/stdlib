@@ -1,0 +1,73 @@
+
+{{alias}}( ...f )
+    Function composition.
+
+    Returns a composite function. Starting from the right, the composite
+    function evaluates each function and passes the result as the first argument
+    of the next function. The result of the leftmost function is the result
+    of the whole.
+
+    The last argument for each provided function is a `next` callback which
+    should be invoked upon function completion. The callback accepts two
+    arguments:
+
+    - error: error argument.
+    - result: function result.
+
+    If a composed function calls the `next` callback with a truthy `error`
+    argument, the composite function suspends execution and immediately calls
+    the `done` callback for subsequent `error` handling.
+
+    Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
+    wrap the `done` callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    Only the rightmost function is explicitly permitted to accept multiple
+    arguments. All other functions are evaluated as binary functions.
+
+    The function will throw if provided fewer than two input arguments.
+
+    Parameters
+    ----------
+    f: ...Function
+        Functions to compose.
+
+    Returns
+    -------
+    out: Function
+        Composite function.
+
+    Examples
+    --------
+    > function a( x, next ) {
+    ...    setTimeout( onTimeout, 0 );
+    ...    function onTimeout() {
+    ...        next( null, 2*x );
+    ...    }
+    ... };
+    > function b( x, next ) {
+    ...    setTimeout( onTimeout, 0 );
+    ...    function onTimeout() {
+    ...        next( null, x+3 );
+    ...    }
+    ... };
+    > function c( x, next ) {
+    ...    setTimeout( onTimeout, 0 );
+    ...    function onTimeout() {
+    ...        next( null, x/5 );
+    ...    }
+    ... };
+    > var f = {{alias}}( c, b, a );
+    > function done( error, result ) {
+    ...    if ( error ) {
+    ...        throw error;
+    ...    }
+    ...    console.log( result );
+    ... };
+    > f( 6, done )
+    3
+
+    See Also
+    --------
+

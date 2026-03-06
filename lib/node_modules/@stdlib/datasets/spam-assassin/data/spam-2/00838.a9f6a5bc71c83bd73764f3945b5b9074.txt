@@ -1,0 +1,280 @@
+From legaliq@insurancemail.net  Mon Jul 22 17:45:01 2002
+Return-Path: <legaliq@insurancemail.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D03E3440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 12:44:55 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 17:44:55 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFkkI10348 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 16:46:47 +0100
+Received: from mail1.insuranceiq.com (host66.insuranceiq.com
+    [65.217.159.66] (may be forged)) by webnote.net (8.9.3/8.9.3) with ESMTP
+    id WAA29243 for <jm@jmason.org>; Sun, 21 Jul 2002 22:54:50 +0100
+Received: from mail pickup service by mail1.insuranceiq.com with Microsoft
+    SMTPSVC; Sun, 21 Jul 2002 17:43:54 -0400
+Subject: 35% Lifetime Renewals - Unbeatable Product!
+To: <yyyy@spamassassin.taint.org>
+Date: Sun, 21 Jul 2002 17:43:54 -0400
+From: "LegalIQ" <legaliq@insurancemail.net>
+Message-Id: <e8d5801c230ff$b5854900$6b01a8c0@insuranceiq.com>
+MIME-Version: 1.0
+X-Mailer: Microsoft CDO for Windows 2000
+Thread-Index: AcIw56iOcPN58t7tSk+gKvY6ZdHHsw==
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Content-Class: urn:content-classes:message
+X-Originalarrivaltime: 21 Jul 2002 21:43:54.0031 (UTC) FILETIME=[B58A03F0:01C230FF]
+Content-Type: multipart/alternative; boundary="----=_NextPart_000_C9DC9_01C230C6.21818770"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_C9DC9_01C230C6.21818770
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+ Unbeatable Product...Unbeatable Commissions!=09
+ LegalIQ - America's Premier Discount Legal Services Program=09
+ NO License Required=0A=
+There are NO Start-Up Fees=0A=
+This is NOT Multilevel
+Marketing=09
+ First Year Commission: 40%=0A=
+Lifetime Renewal Commissions: Up to 35%=09
+
+
+Don't forget to visit our web site! <http://www.legaliq.info>  =09
+ 	 Please fill out the form below for
+Contracting Information and Marketing Supplies =09
+First Name:	  =09
+Last Name:	  =09
+E-mail:	  =09
+Phone:	  =09
+Address:	  =09
+Address2:	  =09
+City:	 	 State:	 	 Zip:	 	  	=20
+ 	    =09
+=20
+ LegalIQ - Part of the IQ Group of Companies=09
+We don't want anybody to receive our mailing who does not wish to
+receive them. This is professional communication sent to insurance
+professionals. To be removed from this mailing list, DO NOT REPLY to
+this message. Instead, go here: http://www.insurancemail.net
+<http://www.Insurancemail.net>=20
+Legal Notice <http://www.insuranceiq.com/legal.htm>=20
+
+
+------=_NextPart_000_C9DC9_01C230C6.21818770
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<title>35% Lifetime Renewals - Unbeatable Product!</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Diso-8859-1">
+</head>
+
+<body bgcolor=3D"#999999" text=3D"#000000" link=3D"#00CC00" =
+vlink=3D"#FFCC00">
+<p align=3D"center">=20
+  <table width=3D"553" border=3D"3" cellspacing=3D"0" cellpadding=3D"0" =
+bordercolor=3D"#003399">
+    <tr>
+      <td bgcolor=3D"#FFFFFF">
+        <table width=3D"550" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+          <tr>=20
+            <td><img src=3D"http://iiq.us/images/legaliq/top.jpg" =
+width=3D"550" height=3D"268" alt=3D'Unbeatable Product...Unbeatable =
+Commissions!'></td>
+          </tr>
+          <tr>=20
+            <td align=3D"center"><img =
+src=3D"http://iiq.us/images/legaliq/logo.jpg" width=3D"404" =
+height=3D"147" alt=3D"LegalIQ - America's Premier Discount Legal =
+Services Program"></td>
+          </tr>
+          <tr>=20
+            <td align=3D"center"><img =
+src=3D"http://iiq.us/images/legaliq/no2.gif" width=3D"359" =
+height=3D"113" alt=3D'NO License Required&#10;There are NO Start-Up =
+Fees&#10;This is NOT Multilevel Marketing'></td>
+          </tr>
+          <tr>=20
+            <td align=3D"center"><img =
+src=3D"http://iiq.us/images/legaliq/ani2.gif" width=3D"389" =
+height=3D"164" alt=3D'First Year Commission: 40%&#10;Lifetime Renewal =
+Commissions: Up to 35%'></td>
+          </tr>
+          <tr>=20
+            <td bgcolor=3D"#FFFFFF" align=3D"center">
+              <br>
+              <table width=3D"468" border=3D"1" cellspacing=3D"0" =
+cellpadding=3D"7" height=3D"34" bordercolor=3D"#993333">
+                <tr>=20
+                  <td bgcolor=3D"#003399" align=3D"center">
+                    <font face=3D"Verdana, Arial, Helvetica, sans-serif" =
+color=3D"#FFFFFF"><b>
+                    Don't forget to visit our <a =
+href=3D"http://www.legaliq.info"><font color=3D"#66FF00">web=20
+                    site!</font></a></b></font>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>=20
+            <td>=20
+              <table width=3D"100%" bgcolor=3D"#FFFFFF">
+                <tr>=20
+                  <form method=3D"post" =
+action=3D"http://65.217.159.103/response/response.asp">
+                    <td>=20
+                      <table width=3D"100%" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"2" align=3D"center" =
+bgcolor=3D"#ffffff">
+                        <tr>=20
+                          <td width=3D"26%" align=3D"right">&nbsp;</td>
+                          <td colspan=3D"6">
+                            <font face=3D"Verdana, Arial, Helvetica, =
+sans-serif" size=3D"2" color=3D"#003399"><b>
+                            Please fill out the form below for<br>
+                            Contracting Information and Marketing =
+Supplies</b></font>
+                          </td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"26%" align=3D"right"><font =
+face=3D"Verdana, Arial, Helvetica, sans-serif" size=3D"2" =
+color=3D"#003399"><b>First Name:</b></font></td>
+                          <td colspan=3D"6">=20
+                            <input type=3D"text" name=3D"Firstname" =
+size=3D"50">
+                          </td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"26%" align=3D"right"><font =
+face=3D"Verdana, Arial, Helvetica, sans-serif" size=3D"2" =
+color=3D"#003399"><b>Last Name:</b></font></td>
+                          <td colspan=3D"6">=20
+                            <input type=3D"text" name=3D"Lastname" =
+size=3D"50">
+                          </td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"26%" align=3D"right"><font =
+face=3D"Verdana, Arial, Helvetica, sans-serif" size=3D"2" =
+color=3D"#003399"><b>E-mail:</b></font></td>
+                          <td colspan=3D"6">=20
+                            <input type=3D"text" name=3D"email" =
+size=3D"50">
+                          </td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"26%" align=3D"right"><font =
+face=3D"Verdana, Arial, Helvetica, sans-serif" size=3D"2" =
+color=3D"#003399"><b>Phone:</b></font></td>
+                          <td colspan=3D"6">=20
+                            <input type=3D"text" name=3D"phone" =
+size=3D"50">
+                          </td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"26%" align=3D"right"><font =
+face=3D"Verdana, Arial, Helvetica, sans-serif" size=3D"2" =
+color=3D"#003399"><b>Address:</b></font></td>
+                          <td colspan=3D"6">=20
+                            <input type=3D"text" name=3D"address" =
+size=3D"50">
+                          </td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"26%" align=3D"right"><font =
+face=3D"Verdana, Arial, Helvetica, sans-serif" size=3D"2" =
+color=3D"#003399"><b>Address2:</b></font></td>
+                          <td colspan=3D"6">=20
+                            <input type=3D"text" name=3D"address2" =
+size=3D"50">
+                          </td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"26%" align=3D"right"><font =
+face=3D"Verdana, Arial, Helvetica, sans-serif" size=3D"2" =
+color=3D"#003399"><b>City:</b></font></td>
+                          <td width=3D"18%"><input type=3D"text" =
+name=3D"city" size=3D"20"></td>
+                          <td width=3D"7%" align=3D"right"><font =
+face=3D"Verdana, Arial, Helvetica, sans-serif" size=3D"2" =
+color=3D"#003399"><b>State:</b></font></td>
+                          <td width=3D"3%"><input type=3D"text" =
+name=3D"state2" size=3D"2"></td>
+                          <td width=3D"5%" align=3D"right"><font =
+face=3D"Verdana, Arial, Helvetica, sans-serif" size=3D"2" =
+color=3D"#003399"><b>Zip:</b></font></td>
+                          <td width=3D"16%"><input type=3D"text" =
+name=3D"state" size=3D"10"></td>
+                          <td rowspan=3D"2" width=3D"25%">&nbsp;</td>
+                        </tr>
+                        <tr>=20
+                          <td width=3D"26%" align=3D"right">&nbsp;</td>
+                          <td width=3D"18%" colspan=3D'5'>=20
+                            <input type=3D"submit" name=3D"btnsubmit" =
+value=3D"Submit">
+                            <input type=3D"hidden" =
+name=3D"hdnRecipientTxt" value=3D"tom@insuranceiq.com">
+                            <input type=3D"hidden" =
+name=3D"hdnSubjectTxt" value=3D"LegalIQ Agent">
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  <input type=3D'hidden' name=3D'SentTo' =
+value=3D'304704'>
+</form>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table width=3D"550" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+          <tr>=20
+            <td><img =
+src=3D"http://63.211.81.87/images/legaliq/logosm.gif" width=3D"550" =
+height=3D"61" alt=3D'LegalIQ - Part of the IQ Group of Companies'></td>
+          </tr>
+        </table>
+        <table width=3D"550" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"7">
+          <tr>=20
+            <td bgcolor=3D"#003399">=20
+              <p align=3D"center"><font face=3D"Verdana, Arial, =
+Helvetica, sans-serif" size=3D"1" color=3D"#FFFFFF">We=20
+                don't want anybody to receive our mailing who does not =
+wish to=20
+                receive them. This is professional communication sent to =
+insurance=20
+                professionals. To be removed from this mailing list, DO =
+NOT REPLY=20
+                to this message. Instead, go here: <a =
+href=3D"http://www.Insurancemail.net"><font =
+color=3D"#66FF00">http://www.insurancemail.net</font></a><br>
+                <a href=3D"http://www.insuranceiq.com/legal.htm"><font =
+color=3D"#66FF00">Legal Notice</font></a></font></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</p>
+</body>
+</html>
+
+------=_NextPart_000_C9DC9_01C230C6.21818770--
+
+

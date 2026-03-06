@@ -1,0 +1,90 @@
+From ilug-admin@linux.ie  Tue Aug 20 11:52:54 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1149343C51
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:53 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7K9kbZ00671 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 10:46:37 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA26161; Tue, 20 Aug 2002 10:45:41 +0100
+Received: from kbs01.kbs.ie ([213.190.156.48]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA26137 for <ilug@linux.ie>; Tue,
+    20 Aug 2002 10:45:35 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [213.190.156.48] claimed
+    to be kbs01.kbs.ie
+Received: by KBS01 with Internet Mail Service (5.5.2653.19) id <R2N9AKJN>;
+    Tue, 20 Aug 2002 11:02:33 +0100
+Message-Id: <55DA5264CE16D41186F600D0B74D6B09247297@KBS01>
+From: "Brian O'Donoghue" <Brian.ODonoghue@kbs.ie>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: RE: [ILUG] linux pthreads problem
+Date: Tue, 20 Aug 2002 11:02:32 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+
+> -----Original Message-----
+> From: Vincent Cunniffe [mailto:vincent@cunniffe.net]
+> Sent: 20 August 2002 10:43
+> To: ilug
+> Subject: Re: [ILUG] linux pthreads problem
+> 
+> Padraig Brady wrote:
+> > Vincent Cunniffe wrote:
+> >
+> >>
+> >> Possibly. However, the amount of memory in use is stupid :
+> >>
+> >> I start 50 threads, and the memory usage goes up to 411436 VSZ/840 RSS.
+> >>
+> >> Then I stop those threads, and the usage stays there. I start another
+> 50
+> >> threads, and the usage goes up to 821036 VSZ/1040 RSS. So, it's neither
+> >> freeing the resources correctly nor reusing them :-/
+> >>
+> >> I've found several other people seeing the same VSZ issue with
+> pthreads,
+> >> spread over a long time, but no solution as yet.
+> >
+> >
+> > Err, Is your code fixed now?
+> > You need a seperate pthread_t per thread.
+> 
+> I've tested it with and without separate pthread_t's, and the problem is
+> identical, unfortunately.
+> 
+> Regards,
+> 
+> Vin
+> 
+> 
+> --
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+> information.
+> List maintainer: listmaster@linux.ie
+
+Are you using pthread_join(somethread,0);
+When you are closing off your instanciated thread made from
+pthread_t*somethread ?
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

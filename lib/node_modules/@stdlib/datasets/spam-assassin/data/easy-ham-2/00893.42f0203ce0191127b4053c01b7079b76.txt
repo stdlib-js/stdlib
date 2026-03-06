@@ -1,0 +1,99 @@
+From fork-admin@xent.com  Fri Jul 26 00:28:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2B643440E8
+	for <jm@localhost>; Thu, 25 Jul 2002 19:28:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 00:28:32 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6PNSc406440 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 00:28:38 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C01C32940F0; Thu, 25 Jul 2002 16:27:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from agora.microshaft.org (agora.microshaft.org [208.201.249.5])
+    by xent.com (Postfix) with ESMTP id 4375D2940ED for <fork@xent.com>;
+    Thu, 25 Jul 2002 16:26:10 -0700 (PDT)
+Received: (from jono@localhost) by agora.microshaft.org (8.11.6/8.11.6) id
+    g6PMmkd91820; Thu, 25 Jul 2002 15:48:46 -0700 (PDT) (envelope-from jono)
+From: "Jon O." <jono@networkcommand.com>
+To: bitbitch@magnesium.net
+Cc: garym@canada.com, fork@spamassassin.taint.org
+Subject: Re: Asteroids anyone ?
+Message-Id: <20020725154846.M85654@networkcommand.com>
+Reply-To: "jono@networkcommand.com" <jono@networkcommand.com>
+References: <001301c23359$d8208130$0100a8c0@PETER>
+    <m2n0sgojke.fsf@maya.dyndns.org>
+    <2784.192.216.194.113.1027554358.squirrel@webmail.magnesium.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <2784.192.216.194.113.1027554358.squirrel@webmail.magnesium.net>;
+    from bitbitch@magnesium.net on Wed, Jul 24, 2002 at 04:45:58PM -0700
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 15:48:46 -0700
+
+
+
+Has anyone considered the fact that these occurrances appear to
+be increasing. I'm aware that maybe more publicity surrounding
+some and certain agencies have been granted more funding, but 
+I'd like to see some data which shows if these are increasing
+or not. 
+
+Why? Well, it seems to me if we were going to get hit, the one
+that does it may have been part of a larger swarm or cluster
+which has over the years increased the distance between the
+rocks. Like the Schumaker Levy-9, which had multiple rocks
+all impacting at different times, others may have this same
+type of design and could be in different stages of increasing
+distance from one another. Also to consider is if SL-9 was
+on course for earth, would we get hit by all rocks or only
+one because the earth is a much smaller target than Jupiter?
+
+So, my theory is that if these near earth rocks are increasing
+so does our chance of discovering the last three were part of
+a swarm of 15 of which 10, 11 and 12 may hit.
+
+
+
+On 24-Jul-2002, bitbitch@magnesium.net wrote:
+> >
+> > Hit or miss, Groundhog Day 2019 is going to be one heck of a show. Book
+> > early, avoid the rush.
+> 
+> Hey, meybee by then, Bush's grand plan for a missle defense system will
+> actually pan out and -work- ...
+> I'm not holding my breath, but i'm not going to panic for something thats
+> a little under 17 years away, either.
+> -c
+> 
+> >
+> > --
+> > Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications
+> > Inc Business Innovations Through Open Source Systems:
+> > http://www.teledyn.com "Computers are useless.  They can only give you
+> > answers."(Pablo Picasso)
+> >
+> > http://xent.com/mailman/listinfo/fork
+> 
+> 
+> 
+> http://xent.com/mailman/listinfo/fork
+http://xent.com/mailman/listinfo/fork
+
+

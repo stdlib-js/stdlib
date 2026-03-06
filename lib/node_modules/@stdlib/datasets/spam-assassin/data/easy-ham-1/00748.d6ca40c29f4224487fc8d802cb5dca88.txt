@@ -1,0 +1,77 @@
+From fork-admin@xent.com  Tue Sep 24 10:48:52 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AEA8F16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:48:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:48:51 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8O0irC13647 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 01:44:54 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 91FC7294230; Mon, 23 Sep 2002 17:30:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav36.law15.hotmail.com [64.4.22.93]) by
+    xent.com (Postfix) with ESMTP id 2307929422D for <fork@xent.com>;
+    Mon, 23 Sep 2002 17:29:44 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Mon, 23 Sep 2002 17:33:23 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: "FoRK" <fork@spamassassin.taint.org>
+References: <000c01c26347$730dd770$0200a8c0@JMHALL>
+Subject: Re: Goodbye Global Warming
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV36vNoNBpsiLEMv9T00002c07@hotmail.com>
+X-Originalarrivaltime: 24 Sep 2002 00:33:23.0749 (UTC) FILETIME=[FD99D550:01C26361]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 17:38:08 -0700
+
+Of the three lying politicians, which liar would you take?
+
+----- Original Message ----- 
+From: "John Hall" <johnhall@evergo.net>
+To: "FoRK" <fork@spamassassin.taint.org>
+Sent: Monday, September 23, 2002 2:23 PM
+Subject: RE: Goodbye Global Warming
+
+
+> "I did not have sex with that woman."
+> 
+> > -----Original Message-----
+> > From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+> Mr.
+> > FoRK
+> > Sent: Monday, September 23, 2002 2:12 PM
+> > To: FoRK
+> > Subject: Re: Goodbye Global Warming
+> > 
+> > 
+> > ----- Original Message -----
+> > From: "John Hall" <johnhall@evergo.net>
+> > 
+> > > A Green once said that if the Spotted Owl hadn't existed they
+> > > would have had to invent it.
+> > A Republican once said "I am not a crook".
+> 
+
+

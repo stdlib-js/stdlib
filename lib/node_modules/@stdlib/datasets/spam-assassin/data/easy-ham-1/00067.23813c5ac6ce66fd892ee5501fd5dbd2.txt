@@ -1,0 +1,145 @@
+From webster@ryanairmail.com  Mon Sep  2 12:30:45 2002
+Return-Path: <webster@ryanairmail.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1B3B143F9B
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:30:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:30:37 +0100 (IST)
+Received: from mail.ryanair2.ie ([193.120.152.8]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g7ULMQZ08782 for <zzzz-ryanair@spamassassin.taint.org>;
+    Fri, 30 Aug 2002 22:22:36 +0100
+From: webster@ryanairmail.com
+To: "Customers" <customers@mail.ryanairmail.com>
+Subject: Save up to 70% on international calls!
+Date: Fri, 30 Aug 2002 17:42:52 +0100
+X-Assembled-BY: XWall v3.21
+Message-Id: <LISTMANAGER-949326-32914-2002.08.30-17.47.31--zzzz-ryanair#spamassassin.taint.org@mail.ryanairmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+    boundary="_NextPart_1_bvfoDiTVghtoCXFdvJNKcuWblFV"
+List-Unsubscribe: <mailto:leave-customers-949326K@mail.ryanairmail.com>
+Reply-To: webster@ryanairmail.com
+
+This is a multi part message in MIME format.
+
+--_NextPart_1_bvfoDiTVghtoCXFdvJNKcuWblFV
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+........... with our telecoms partner Bumblebee !
+
+Don't get ripped off by expensive hotel, payphone and mobile charges. 
+SAVE, SAVE, SAVE on international calls with Ryanair's phone partner. 
+************************************************************************
+*********
+
+You'll save up to 70% on international phone calls when you use our 
+online phone card.  You can use the card from any phone in any country 
+you visit and you won't have to worry about high phone charges 
+when you call home or the office.
+
+Buying a card couldn't be easier and it's totally secure.  Simply go to
+http://www.bumblebeecommunications.com/lowcostcalls/  
+ to avail of this special offer for Ryanair customers.
+
+It's another great deal from Ryanair and our online phone 
+partner, Bumblebee Communications. 
+
+ 
+
+
+
+
+
+
+
+=====================================================================
+
+E-MAIL DISCLAIMER
+
+This e-mail and any files and attachments transmitted with it 
+are confidential and may be legally privileged. They are intended 
+solely for the use of the intended recipient.  Any views and 
+opinions expressed are those of the individual author/sender 
+and are not necessarily shared or endorsed by Ryanair Holdings plc 
+or any associated or related company. In particular e-mail 
+transmissions are not binding for the purposes of forming 
+a contract to sell airline seats, directly or via promotions, 
+and do not form a contractual obligation of any type.   
+Such contracts can only be formed in writing by post or fax, 
+duly signed by a senior company executive, subject to approval 
+by the Board of Directors.
+
+The content of this e-mail or any file or attachment transmitted 
+with it may have been changed or altered without the consent 
+of the author.  If you are not the intended recipient of this e-mail, 
+you are hereby notified that any review, dissemination, disclosure, 
+alteration, printing, circulation or transmission of, or any 
+action taken or omitted in reliance on this e-mail or any file 
+or attachment transmitted with it is prohibited and may be unlawful.
+
+If you have received this e-mail in error 
+please notify Ryanair Holdings plc by emailing postmaster@ryanair.ie
+or contact Ryanair Holdings plc, Dublin Airport, Co Dublin, Ireland.  
+
+--_NextPart_1_bvfoDiTVghtoCXFdvJNKcuWblFV
+Content-Type: application/ms-tnef
+Content-Transfer-Encoding: base64
+
+eJ8+IjUQAQaQCAAEAAAAAAABAAEAAQeQBgAIAAAA5AQAAAAAAADoAAEIgAcAGAAAAElQTS5NaWNy
+b3NvZnQgTWFpbC5Ob3RlADEIAQ2ABAACAAAAAgACAAEEgAEAJwAAAFNhdmUgdXAgdG8gNzAlIG9u
+IGludGVybmF0aW9uYWwgY2FsbHMhACgNAQWAAwAOAAAA0gcIAB4AEQAqADQABQBzAQEggAMADgAA
+ANIHCAAeABEAKgA0AAUAcwEBCYABACEAAAAxNUNDQzU1M0ZCNjVGOTRCODJBOTE2NjI0QjY5ODI2
+NAAgBwEDkAYAYAgAADEAAAALAAIAAQAAAAMAJgAAAAAAAwA2AAAAAABAADkAOHxzSERQwgEeAD0A
+AQAAAAEAAAAAAAAAAgFHAAEAAAAyAAAAYz11czthPSA7cD1SeWFuYWlyO2w9Q0hPVk1BSUwxLTAy
+MDgzMDE2NDI1MlotNTY1NgAAAB4AcAABAAAAJwAAAFNhdmUgdXAgdG8gNzAlIG9uIGludGVybmF0
+aW9uYWwgY2FsbHMhAAACAXEAAQAAABYAAAABwlBESGNVR3XMDo5JP7LazaO6pGd8AAAeABoMAQAA
+AAwAAABDb3lsZSwgU2VhbgAeAB0OAQAAACcAAABTYXZlIHVwIHRvIDcwJSBvbiBpbnRlcm5hdGlv
+bmFsIGNhbGxzIQAAAgEJEAEAAAC7AgAAtwIAALsEAABMWkZ1TPw4mgMACgByY3BnMTI14jIDQ3Rl
+eAVBAQMB908KgAKkA+MCAGNoCsBz8GV0MCAHEwKAD/MAUH8EVghVB7IRxQ5RAwEQxzL3BgAGwxHF
+MwRGEMkS2xHT2wjvCfc7GL8OMDURwgxgzmMAUAsJAWQzNhFQC6YUIC4dmCAD8HRoINUIYSAOsGwF
+kW0EIAqxZHRuEyFCdQbQHwBiuQngICEKogqECoBEAiBQXCc5MgVAZxEwIB0FEXAJgB6QASAgYnku
+IA7AImAAgXYgcGhvZR7hLB9heXAjsB+wIPcAcCKABGBiAxAgcBDiIfCGcx4wIKRTQVZFJAA/Jlge
+kAOgC4AOsASgYXTeaQIgB0AlUAdAbAQgHlPsUnkAcAtwciGSH1EkY/sfdSXWKitPLF8tby5/L0od
+IKpZCGAhkiiQIHNhCSOBdXAe0G8gNzAuJSdfKeUodWgJ8CB5vwhgMfARIB6TIKQCIGwLgO8qMTPF
+CyAeMCAxEShhA6D3NQIecDaUIANSJKEi8CRU1wuAOLMFoHUCMHIi8CCkvTTCdgQAHmAkozTCdyF2
+7xDwI4EyMTvQcjohAaAIYPk8QWlnHoAztSV0JeU0d/8ociOhB4AekB7BN/EioQ3grGUuIKof8HkL
+gGckoHM4FDnRbGQhhSBQIwBh/wCQEyEksh5gKZQyMAGQKJC7IvARIGMIcEEgNwBTB3BbC1Ai8Gcy
+QDIxaAJAcJA6Ly93R1AuYiAGfR8hbTnwDeAn8yXAHyEvpRhQdwWgc3Qocy83AP8gpDIiMcALcAMg
+IqA30QQA+zGgImBjBzEikhMhAhAFwH8pJSVQNQAyMAeAERBBO0l/RJUAcCPANIAFwAnBJ/Ag/wEA
+KEE4c0zmJLIeojXrIKT/H3UkAB/4CFBISyXlSkUgqgtWX1drfVigAB4ANRABAAAASAAAADxEMTNG
+N0MwNTQ3RDcxRjRDQTQwNzMyN0E4MjUxMzYwMDE5Q0E5Q0BDSE9WTUFJTDEuY2hvLmNvcnAucnlh
+bmFpci5jb20+AAMAgBD/////CwDyEAEAAAAfAPMQAQAAAFoAAABTAGEAdgBlACAAdQBwACAAdABv
+ACAANwAwACUAMgA1ACAAbwBuACAAaQBuAHQAZQByAG4AYQB0AGkAbwBuAGEAbAAgAGMAYQBsAGwA
+cwAhAC4ARQBNAEwAAAAAAAsA9hAAAAAAQAAHMN0ZcUhEUMIBQAAIMJPedUhEUMIBAwDeP59OAAAD
+APE/CQQAAB4A+D8BAAAADAAAAENveWxlLCBTZWFuAAIB+T8BAAAAXQAAAAAAAADcp0DIwEIQGrS5
+CAArL+GCAQAAAAAAAAAvTz1SWUFOQUlSL09VPUZJUlNUIEFETUlOSVNUUkFUSVZFIEdST1VQL0NO
+PVJFQ0lQSUVOVFMvQ049Q09ZTEVTAAAAAB4A+j8BAAAAFQAAAFN5c3RlbSBBZG1pbmlzdHJhdG9y
+AAAAAAIB+z8BAAAAHgAAAAAAAADcp0DIwEIQGrS5CAArL+GCAQAAAAAAAAAuAAAAAwAZQAAAAAAD
+ABpAAAAAAB4AMEABAAAABwAAAENPWUxFUwAAHgAxQAEAAAAHAAAAQ09ZTEVTAAAeADhAAQAAAAcA
+AABDT1lMRVMAAB4AOUABAAAAAgAAAC4AAAADAAlZAQAAAAsAWIEIIAYAAAAAAMAAAAAAAABGAAAA
+AA6FAAAAAAAAAwBwgQggBgAAAAAAwAAAAAAAAEYAAAAAUoUAAFmUAQAeAHGBCCAGAAAAAADAAAAA
+AAAARgAAAABUhQAAAQAAAAUAAAAxMC4wAAAAAAMAuIEIIAYAAAAAAMAAAAAAAABGAAAAAAGFAAAA
+AAAAQAC6gQggBgAAAAAAwAAAAAAAAEYAAAAAYIUAAAAAAAAAAAAACwC9gQggBgAAAAAAwAAAAAAA
+AEYAAAAAA4UAAAAAAAADAMeBCCAGAAAAAADAAAAAAAAARgAAAAAQhQAAAAAAAAMAzoEIIAYAAAAA
+AMAAAAAAAABGAAAAABiFAAAAAAAACwDlgQggBgAAAAAAwAAAAAAAAEYAAAAABoUAAAAAAAALAOmB
+CCAGAAAAAADAAAAAAAAARgAAAACChQAAAAAAAAsAKQAAAAAACwAjAAAAAAADAAYQHr1S2QMABxB/
+AgAAAwAQEAsAAAADABEQAQAAAB4ACBABAAAAZQAAAFdJVEhPVVJURUxFQ09NU1BBUlRORVJCVU1C
+TEVCRUVET05UR0VUUklQUEVET0ZGQllFWFBFTlNJVkVIT1RFTCxQQVlQSE9ORUFORE1PQklMRUNI
+QVJHRVNTQVZFLFNBVkUsU0EAAAAAAgF/AAEAAABIAAAAPEQxM0Y3QzA1NDdENzFGNENBNDA3MzI3
+QTgyNTEzNjAwMTlDQTlDQENIT1ZNQUlMMS5jaG8uY29ycC5yeWFuYWlyLmNvbT4AEOQ=
+
+
+--_NextPart_1_bvfoDiTVghtoCXFdvJNKcuWblFV
+Content-Type: text/plain; charset="us-ascii"
+Content-description: footer
+
+---
+You are currently subscribed to customers as: zzzz-ryanair@spamassassin.taint.org
+To unsubscribe send a blank email to leave-customers-949326K@mail.ryanairmail.com
+
+--_NextPart_1_bvfoDiTVghtoCXFdvJNKcuWblFV--
+
+

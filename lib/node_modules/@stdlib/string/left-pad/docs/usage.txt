@@ -1,0 +1,10 @@
+
+Usage: lpad [options] --len=<length> [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --len length          Minimum string length.
+         --pad str             String used to pad. Default: ' '.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.

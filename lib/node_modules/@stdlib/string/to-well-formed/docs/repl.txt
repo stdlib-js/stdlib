@@ -1,0 +1,31 @@
+
+{{alias}}( str )
+    Returns a well formed string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    result: string
+        Well formed string.
+
+    Examples
+    --------
+    > result = {{alias}}( '\uDBFF' )
+    '�'
+
+    > result = {{alias}}( '\uDBFFFF\uDBFF' )
+    '�FF�'
+
+    > result = {{alias}}( '-5' )
+    '-5'
+
+    > result = {{alias}}( '\uDBFFFF\uDBFF' )
+    '�FF�'
+
+    See Also
+    --------
+

@@ -1,0 +1,118 @@
+From ilug-admin@linux.ie  Mon Aug 19 11:02:35 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6DE2F44193
+	for <jm@localhost>; Mon, 19 Aug 2002 05:54:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:54:19 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GMYd606012 for
+    <jm-ilug@jmason.org>; Fri, 16 Aug 2002 23:34:44 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA24479; Fri, 16 Aug 2002 23:33:40 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA24444 for <ilug@linux.ie>;
+    Fri, 16 Aug 2002 23:33:29 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17fpf2-0004ie-00 for <ilug@linux.ie>; Fri, 16 Aug 2002 15:33:40 -0700
+Date: Fri, 16 Aug 2002 15:33:40 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] Backup solutions
+Message-Id: <20020816223340.GC9654@linuxmafia.com>
+References: <A357A6B62E30D511804500B0D0AA789C0112E4BC@mail.it-tallaght.ie>
+    <51776.194.237.142.30.1029508744.squirrel@mail.nologic.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <51776.194.237.142.30.1029508744.squirrel@mail.nologic.org>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Ciaran Johnston (cj@nologic.org):
+
+> Thanks for all the replies.
+> 
+> I see from
+> http://www.sosonline.co.uk/Shop/Product_Details.asp?DP=1215&RP=0 that
+> I can get a Seagate internal DDS-4 capable drive for Euro1,018.43.
+> This is about the limit of my spending. However, this OnStream IDE
+> tape drive - http://web6.scan.co.uk/Products/Info.asp?WPID=14022
+> (thanks for the link, Martin) - by my calculations provides more
+> storage at only slightly slower speeds at half the price. Is there any
+> overriding reason why I should go with the more expensive and
+> lower-capacity DDS-4 drive other than speed?
+
+The ADR (Advanced Digital Recording) tape format is an interesting
+option, one I hadn't seen much of, before.  Look as if OnStream (spun
+off from Philips Electronics in 1998) invented and rather tightly
+control the format, though other companies such as Verbatim do make
+compatible media under licence.
+
+If you're reasonably serious about backup, you need to plan for a
+rotational backup scheme and retirement of tapes as they become worn
+(and well before they start failing).  That requires at least a couple
+of dozen tapes for the first couple of years.  Therefore, cost and
+availability of media are (or should be) a major factor.  Also, tape
+heads wear out and need to be replaced (more rapidly for helical-scan
+systems -- which ADR turns out _not_ to be), and somehow that always
+ends up being cheaper for tape technologies in which there is heavy
+competition.
+
+The less-tangible consideration that comes most immediately to mind is
+that, if one's OnStream ADR drive fails, the only possible replacement
+that would suffice to restore your accumulated backup sets is another 
+OnStream ADR drive.  In that sense, you're somewhat locked in:  I'm 
+not seeing ADR drives from anyone else (though I might have missed
+them).  
+
+If OnStream are smart, they've priced the drives to attract people into
+the system, and are making up the shortfall on media cost after they 
+get people to buy in.   I see the following prices for mail order 
+(http://www.finnsoft.com/priclist/verbat.htm) of Verbatim-brand tapes:
+
+42 euros for 30 GB ADR tape
+33 euros for 30 GB ADR tape, four-pack.
+66 euros for 50 GB ADR tape.
+44 euros for 50 GB ADR tape, four-pack.
+47 euros for ADR cleaning tape.
+
+(You don't get much lower pricing than Verbatim, without going no-name.)
+
+Capacities are usually quoted on the basis of a nominal 2:1 compression
+ratio.  The PDF datasheet for Onstream's "ADR2" series says this is a
+linear-serpentine recording technology (a good thing) like DLT, SDLT,
+and LTO, rather than a helical-scan method typified by DDS/DAT, AIT, and
+8mm (which puts heavy wear on tapes on heads).
+
+I'm not sure what software other than NovaStor's TapeCopy and Yosemite
+Technology's Tapeware will support OnStream's drives.  My recollection
+is that BRU will do it.
+
+On balance, I'd personally _still_ go with a DDS4 drive using either DDS3
+or DDS4 media, mostly because once you've survived life with one
+oddball, less-standard tape format, you're not in a hurry to repeat the
+experience.  But ADR does seem at a quick glance to be well designed,
+and might be a good bet after all.  As they say in the gaming industry,
+"Ya pays your money, and ya takes your chances."
+
+-- 
+"Is it not the beauty of an asynchronous form of discussion that one can go and 
+make cups of tea, floss the cat, fluff the geraniums, open the kitchen window 
+and scream out it with operatic force, volume, and decorum, and then return to 
+the vexed glowing letters calmer of mind and soul?" -- The Cube, forum3000.org
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

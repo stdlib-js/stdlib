@@ -1,0 +1,82 @@
+From exmh-users-admin@redhat.com  Wed Oct  9 18:31:28 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 94AC616F03
+	for <jm@localhost>; Wed,  9 Oct 2002 18:31:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 18:31:27 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g99HMKK13731 for
+    <jm-exmh@jmason.org>; Wed, 9 Oct 2002 18:22:20 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 1AE364148A; Wed,  9 Oct 2002
+    13:22:14 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 4781E41B30
+    for <exmh-users@listman.redhat.com>; Wed,  9 Oct 2002 12:57:16 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g99GvGJ09059 for exmh-users@listman.redhat.com; Wed, 9 Oct 2002
+    12:57:16 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g99GvFf09055 for
+    <exmh-users@redhat.com>; Wed, 9 Oct 2002 12:57:15 -0400
+Received: from life.ai.mit.edu (life.ai.mit.edu [128.52.32.80]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g99GbTX10490 for
+    <exmh-users@redhat.com>; Wed, 9 Oct 2002 12:37:29 -0400
+Received: from localhost (jrennie@tiikeri [128.52.37.76]) by
+    life.ai.mit.edu (8.12.2/8.12.2/BASENAME(ai.master.life-8.12.2.mc,
+    .mc):RCS_REVISION(evision: 1.23 ) with ESMTP id g99GvDmX025433;
+    Wed, 9 Oct 2002 12:57:14 -0400 (EDT)
+Message-Id: <200210091657.g99GvDmX025433@life.ai.mit.edu>
+X-Mailer: exmh version 2.5 07/13/2001 (debian 2.5-1) with nmh-1.0.2
+To: exmh-users@spamassassin.taint.org
+Cc: jrennie@ai.mit.edu
+Subject: From
+From: Jason Rennie <jrennie@ai.mit.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Wed, 09 Oct 2002 12:57:13 -0400
+
+
+When I receive a message that has a line starting with "From ", it's
+broken into two messages.  I get my mail from /var/spool/mail.  The
+program that incorporates mail thinks that the "From " line starts a new
+message.
+
+My sysadmins have told me that the sending mail client is supposed to 
+escape lines begining with "From ".  EXMH (2.5) doesn't do this.  Should 
+it?  It appears that my MH is MH 6.8.  Does NMH fix this?
+
+Jason D. M. Rennie
+MIT AI Lab
+jrennie@ai.mit.edu
+(617) 253-5339
+http://www.ai.mit.edu/~jrennie/
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

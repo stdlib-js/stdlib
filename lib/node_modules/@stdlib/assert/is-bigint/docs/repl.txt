@@ -1,0 +1,30 @@
+
+{{alias}}( value )
+    Tests if a value is a BigInt.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a BigInt.
+
+    Examples
+    --------
+    > var bool = {{alias}}( {{alias:@stdlib/bigint/ctor}}( '1' ) )
+    true
+    > bool = {{alias}}( Object( {{alias:@stdlib/bigint/ctor}}( '1' ) ) )
+    true
+    > bool = {{alias}}( {} )
+    false
+    > bool = {{alias}}( null )
+    false
+    > bool = {{alias}}( true )
+    false
+
+    See Also
+    --------
+

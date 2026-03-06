@@ -1,0 +1,28 @@
+
+{{alias}}( obj, prop, value )
+    Defines a configurable read-only property.
+
+    Configurable read-only properties are enumerable.
+
+    Parameters
+    ----------
+    obj: Object
+        Object on which to define the property.
+
+    prop: string|symbol
+        Property name.
+
+    value: any
+        Value to set.
+
+    Examples
+    --------
+    > var obj = {};
+    > {{alias}}( obj, 'foo', 'bar' );
+    > obj.foo = 'boop';
+    > obj
+    { 'foo': 'bar' }
+
+    See Also
+    --------
+

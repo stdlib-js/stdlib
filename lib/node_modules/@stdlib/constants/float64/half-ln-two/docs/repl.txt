@@ -1,0 +1,12 @@
+
+{{alias}}
+    One half times the natural logarithm of `2`.
+
+    Examples
+    --------
+    > {{alias}}
+    3.46573590279972654709e-01
+
+    See Also
+    --------
+

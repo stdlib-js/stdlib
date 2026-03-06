@@ -1,0 +1,34 @@
+Return-Path: guido@python.org
+Delivery-Date: Mon Sep  9 15:10:00 2002
+From: guido@python.org (Guido van Rossum)
+Date: Mon, 09 Sep 2002 10:10:00 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: Your message of "Sun, 08 Sep 2002 03:18:49 EDT."
+             <LNBBLJKPBEHFEDALKOLCGEOIBCAB.tim.one@comcast.net> 
+References: <LNBBLJKPBEHFEDALKOLCGEOIBCAB.tim.one@comcast.net> 
+Message-ID: <200209091410.g89EA0428928@pcp02138704pcs.reston01.va.comcast.net>
+
+> I'd prefer to strip HTML tags from everything, but last time I tried
+> that it still had bad effects on the error rates in my corpora
+
+Your corpora are biased in this respect though -- newsgroups have a
+strong social taboo on posting HTML, but in many people's personal
+inboxes it is quite abundant.
+
+Getting a good ham corpus may prove to be a bigger hurdle than I
+though!  My own saved mail doesn't reflect what I receive, since I
+save and throw away selectively (much more so than in the past :-).
+
+> >   multipart/mixed
+> >       text/plain        (brief text plus URL(s))
+> >       text/html         (long HTML copied from website)
+> 
+> Ah!  That explains why the HTML tags didn't get stripped.  I'd again
+> offer to add an optional argument to tokenize() so that they'd get
+> stripped here too, but if it gets glossed over a third time that
+> would feel too much like a loss <wink>.
+
+I'll bite.  Sounds like a good idea to strip the HTML in this case;
+I'd like to see how this improves the f-p rate on this corpus.
+
+--Guido van Rossum (home page: http://www.python.org/~guido/)

@@ -1,0 +1,77 @@
+From ilug-admin@linux.ie  Thu Aug  1 17:41:50 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3CD33440F3
+	for <jm@localhost>; Thu,  1 Aug 2002 12:41:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 17:41:48 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71Gd1222149 for
+    <jm-ilug@jmason.org>; Thu, 1 Aug 2002 17:39:01 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA21005; Thu, 1 Aug 2002 17:36:28 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from nmrc.ucc.ie (nmrc.ucc.ie [143.239.64.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA20980 for <ilug@linux.ie>; Thu,
+    1 Aug 2002 17:36:22 +0100
+Received: from localhost (localhost [127.0.0.1]) by mailhost.nmrc.ucc.ie
+    (Postfix) with ESMTP id 3A5C5EE99 for <ilug@linux.ie>; Thu,  1 Aug 2002
+    17:35:52 +0100 (BST)
+Received: (from lhecking@localhost) by tehran.nmrc.ucc.ie
+    (8.11.6+Sun/8.11.6) id g71GZp108261 for ilug@linux.ie; Thu, 1 Aug 2002
+    17:35:51 +0100 (IST)
+Date: Thu, 1 Aug 2002 17:35:51 +0100
+From: Lars Hecking <lhecking@nmrc.ie>
+To: ilug@linux.ie
+Message-Id: <20020801163551.GB7945@nmrc.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.1i
+Subject: [ILUG] Re: Csh shell scripts
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+> quickie for shell scripters:
+> How do I find out the time a file was created at?
+ 
+ There is no canonical test, and the information is not necessarily
+ available. If you check out how struct stat is defined on your system,
+ you'll find that only
+
+     time_t   st_atime;    /* Time of last access */
+     time_t   st_mtime;    /* Time of last data modification */
+     time_t   st_ctime;    /* Time of last file status change */
+                           /* Times measured in seconds since */
+                           /* 00:00:00 UTC, Jan. 1, 1970 */
+
+ are available. File status change = i-node status change, it includes
+ creation, mode change, ownership change etc., so this is what you want
+ only if the file status wasn't changed since creation.
+
+ This information is also shown by ls -lc, but parsing ls' output requires
+ a bit of effort. I'd rather recommend to write a short C program to access
+ the file status directly, and output the ctime directly (seconds since
+ the epoch, i.e. perfect for numerical comparison).
+
+ (Another way is to use GNU find -printf with a custom format:
+  ...
+            %c   File's last  status  change  time  in  the  format
+               returned by the C `ctime' function.
+ ...)
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

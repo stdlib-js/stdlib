@@ -1,0 +1,72 @@
+From exmh-workers-admin@redhat.com  Tue Aug 20 10:58:20 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 248D343C42
+	for <jm@localhost>; Tue, 20 Aug 2002 05:58:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 10:58:05 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JKBwZ07418 for
+    <jm-exmh@jmason.org>; Mon, 19 Aug 2002 21:12:02 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id D9BE93FF94; Mon, 19 Aug 2002
+    16:08:50 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 93D51400EA
+    for <exmh-workers@listman.redhat.com>; Mon, 19 Aug 2002 15:45:07 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7JJj5S20513 for exmh-workers@listman.redhat.com; Mon, 19 Aug 2002
+    15:45:05 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7JJj4Y20509 for
+    <exmh-workers@redhat.com>; Mon, 19 Aug 2002 15:45:04 -0400
+Received: from milou.dyndns.org (h189n1fls22o974.telia.com
+    [213.64.79.189]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g7JJUrl27028 for <exmh-workers@redhat.com>; Mon, 19 Aug 2002 15:30:53
+    -0400
+Received: by milou.dyndns.org (Postfix, from userid 500) id A8A983F21;
+    Mon, 19 Aug 2002 21:44:53 +0200 (CEST)
+Received: from tippex.localdomain (localhost [127.0.0.1]) by
+    milou.dyndns.org (Postfix) with ESMTP id A06723F20 for
+    <exmh-workers@redhat.com>; Mon, 19 Aug 2002 21:44:53 +0200 (CEST)
+X-Mailer: exmh version 2.5_20020817 01/15/2001 with nmh-1.0.4
+To: exmh-workers@spamassassin.taint.org
+Subject: CVS report
+X-Image-Url: http://free.hostdepartment.com/aer/zorro.gif
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+From: Anders Eriksson <aeriksson@fastmail.fm>
+Message-Id: <20020819194453.A8A983F21@milou.dyndns.org>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Mon, 19 Aug 2002 21:44:48 +0200
+
+
+Just cvs up'ed and nowadays Catch-up Unseen is __extremely__ slow on 
+large (>100 msgs) unseen sequences. Anybody else having this problem?
+
+/A
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

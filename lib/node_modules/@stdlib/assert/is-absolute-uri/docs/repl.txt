@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Tests whether a value is an absolute URI.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether a value is an absolute URI.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'http://example.com/' )
+    true
+    > bool = {{alias}}( 'example.com' )
+    false
+    > bool = {{alias}}( 'foo@bar.com' )
+    false
+
+    See Also
+    --------

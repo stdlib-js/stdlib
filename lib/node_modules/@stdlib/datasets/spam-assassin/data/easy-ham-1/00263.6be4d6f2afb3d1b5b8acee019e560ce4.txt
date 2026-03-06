@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Wed Oct  9 10:55:03 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 60C3E16F16
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:52:50 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:52:50 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g98J0UK29943 for <zzzz@spamassassin.taint.org>;
+    Tue, 8 Oct 2002 20:00:31 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 20B8E2940E2; Tue,  8 Oct 2002 12:00:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta6.snfc21.pbi.net (mta6.snfc21.pbi.net [206.13.28.240])
+    by xent.com (Postfix) with ESMTP id 430572940DE for <fork@xent.com>;
+    Tue,  8 Oct 2002 11:59:40 -0700 (PDT)
+Received: from cse.ucsc.edu ([63.194.88.161]) by mta6.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H3O00A1ZFGAXP@mta6.snfc21.pbi.net> for fork@xent.com; Tue,
+    08 Oct 2002 12:00:11 -0700 (PDT)
+From: Elias <elias@cse.ucsc.edu>
+Subject: Re: The absurdities of life.
+To: fork@spamassassin.taint.org
+Reply-To: fork@spamassassin.taint.org
+Message-Id: <3DA3294A.8000209@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; format=flowed; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en,pdf
+User-Agent: Mozilla/5.0 (Windows; U; WinNT4.0; en-US; rv:0.9.2)
+    Gecko/20010726 Netscape6/6.1
+References: <Pine.LNX.4.44.0210080759560.2906-100000@isolnetsux.techmonkeys.net>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 08 Oct 2002 11:51:54 -0700
+
+So, given the apparent commonality of these occurances, companies appear 
+to be losing a large amount of money by mailing these tiny checks out. 
+Why can't they simply credit the account in question on the next bill? 
+Granted, if an account has been closed there is no such option...
+
+Elias
+
+
+Christopher Haun wrote:
+
+> eheh i'll do yah one better i have a check some place (i just moved or i'd 
+> go scan it in) for $0.01 from Time Warner Cable. 
+
+
+

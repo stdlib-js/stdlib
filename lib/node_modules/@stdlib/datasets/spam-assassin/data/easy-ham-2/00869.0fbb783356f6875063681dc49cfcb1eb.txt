@@ -1,0 +1,542 @@
+From fork-admin@xent.com  Thu Jul 25 11:09:12 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 91EE7440D3
+	for <jm@localhost>; Thu, 25 Jul 2002 06:08:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:08:29 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OLah409343 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 22:36:45 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8D51229415C; Wed, 24 Jul 2002 14:35:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from shockwave.systems.pipex.net (shockwave.systems.pipex.net
+    [62.241.160.9]) by xent.com (Postfix) with ESMTP id 2866C29415A for
+    <fork@xent.com>; Wed, 24 Jul 2002 14:34:25 -0700 (PDT)
+Received: from PETER (81-86-177-135.dsl.pipex.com [81.86.177.135]) by
+    shockwave.systems.pipex.net (Postfix) with SMTP id 8F5BC16000BA4 for
+    <fork@xent.com>; Wed, 24 Jul 2002 22:34:23 +0100 (BST)
+Message-Id: <001301c23359$d8208130$0100a8c0@PETER>
+From: "Peter Kilby" <peterkilby@dsl.pipex.com>
+To: <fork@spamassassin.taint.org>
+Subject: Asteroids anyone ?
+MIME-Version: 1.0
+Content-Type: multipart/related;
+    boundary="----=_NextPart_000_000F_01C23362.3939B510";
+    type="multipart/alternative"
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 22:34:07 +0100
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_000F_01C23362.3939B510
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0010_01C23362.3939B510"
+
+
+------=_NextPart_001_0010_01C23362.3939B510
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Not the computer game but .......
+
+http://news.bbc.co.uk/1/hi/sci/tech/2147879.stm
+
+Wednesday, 24 July, 2002, 02:29 GMT 03:29 UK=20
+Space rock 'on collision course'
+
+=20
+An asteroid could devastate Earth
+
+     =20
+     =20
+      By Dr David Whitehouse=20
+      BBC News Online science editor =20
+    =20
+    =20
+An asteroid discovered just weeks ago has become the most threatening =
+object yet detected in space.=20
+A preliminary orbit suggests that 2002 NT7 is on an impact course with =
+Earth and could strike the planet on 1 February, 2019 - although the =
+uncertainties are large.=20
+
+Astronomers have given the object a rating on the so-called Palermo =
+technical scale of threat of 0.06, making NT7 the first object to be =
+given a positive value.=20
+
+>>From its brightness, astronomers estimate it is about two kilometres =
+wide, large enough to cause continent-wide devastation on Earth.=20
+
+Many observations=20
+
+Although astronomers say the object definitely merits attention, they =
+expect more observations to show it is not on an Earth-intersecting =
+trajectory.=20
+
+
+
+      This asteroid has now become the most threatening object in the =
+short history of asteroid detection=20
+    =20
+      Dr Benny Peiser =20
+It was first seen on the night of 5 July, picked up by the Linear =
+Observatory's automated sky survey programme in New Mexico, US.=20
+
+Since then astronomers worldwide have been paying close attention to it, =
+amassing almost 200 observations in a few weeks.=20
+
+
+Could it be deflected?=20
+Dr Benny Peiser, of Liverpool John Moores University in the UK, told BBC =
+News Online that "this asteroid has now become the most threatening =
+object in the short history of asteroid detection".=20
+
+NT7 circles the Sun every 837 days and travels in a tilted orbit from =
+about the distance of Mars to just within the Earth's orbit.=20
+
+Potential devastation=20
+
+Detailed calculations of NT7's orbit suggest many occasions when its =
+projected path through space intersects the Earth's orbit.=20
+
+Researchers estimate that on 1 February, 2019, its impact velocity on =
+the Earth would be 28 km a second - enough to wipe out a continent and =
+cause global climate changes.=20
+
+However, Dr Peiser was keen to point out that future observations could =
+change the situation.=20
+
+He said: "This unique event should not diminish the fact that additional =
+observations in coming weeks will almost certainly - we hope - eliminate =
+the current threat."=20
+
+Easily observable=20
+
+According to astronomers, NT7 will be easily observable for the next 18 =
+months or so, meaning there is no risk of losing the object.=20
+
+Observations made over that period - and the fact that NT7 is bright =
+enough that it is bound to show up in old photographs - mean that =
+scientists will soon have a very precise orbit for the object.=20
+
+Dr Donald Yeomans, of the US space agency's (Nasa) Jet Propulsion =
+Laboratory in California, told BBC News Online: "The orbit of this =
+object is rather highly inclined to the Earth's orbit so it has been =
+missed because until recently observers were not looking for such =
+objects in that region of space."=20
+
+Regarding the possibility of an impact, Dr Yeomans said the =
+uncertainties were large.=20
+
+"The error in our knowledge of where NT7 will be on 1 February, 2019, is =
+large, several tens of millions of kilometres," he said.=20
+
+Dr Yeomans said the world would have to get used to finding more objects =
+like NT7 that, on discovery, look threatening, but then become harmless. =
+
+
+"This is because the problem of Near-Earth Objects is now being properly =
+addressed," he said.=20
+
+
+
+------=_NextPart_001_0010_01C23362.3939B510
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.2716.2200" name=3DGENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT face=3DArial size=3D2>Not the computer game but =
+.......</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2><A=20
+href=3D"http://news.bbc.co.uk/1/hi/sci/tech/2147879.stm">http://news.bbc.=
+co.uk/1/hi/sci/tech/2147879.stm</A></FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><SPAN class=3Ddate><FONT face=3DArial size=3D1>Wednesday, 24 July, =
+2002, 02:29=20
+GMT 03:29 UK </FONT></SPAN>
+<DIV class=3Dheadlinestory><B>Space rock 'on collision =
+course'</B><BR></DIV>
+<DIV class=3Dinlineimage><IMG height=3D180 alt=3D"Nasa simulation"=20
+src=3D"http://news.bbc.co.uk/olmedia/1640000/images/_1644899_aster300.jpg=
+"=20
+width=3D300 border=3D0>=20
+<DIV class=3Dcaption><FONT size=3D1>An asteroid could devastate=20
+Earth</FONT><BR></DIV></DIV><FONT class=3Dbody face=3Dsans-serif =
+size=3D2>
+<DIV class=3Dbodytext>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D315 border=3D0>
+  <TBODY>
+  <TR>
+    <TD><IMG height=3D2 alt=3D"" =
+src=3D"http://news.bbc.co.uk/furniture/nothing.gif"=20
+      width=3D310 border=3D0></TD>
+    <TD><IMG height=3D2 alt=3D"" =
+src=3D"http://news.bbc.co.uk/furniture/nothing.gif"=20
+      width=3D5 border=3D0></TD></TR>
+  <TR>
+    <TD vAlign=3Dtop></TD>
+    <TD vAlign=3Dbottom rowSpan=3D2></TD></TR>
+  <TR>
+    <TD vAlign=3Dbottom><SPAN class=3DbylineAuthor>By Dr David =
+Whitehouse=20
+      </SPAN><BR><SPAN class=3DbylineDescription>BBC News Online science =
+editor=20
+      </SPAN></TD></TR>
+  <TR>
+    <TD colSpan=3D2><IMG height=3D1 hspace=3D0=20
+      src=3D"http://news.bbc.co.uk/furniture/grey_pixel.gif" width=3D315 =
+
+  border=3D0></TD></TR>
+  <TR>
+    <TD colSpan=3D2><IMG height=3D7 hspace=3D0=20
+      src=3D"http://news.bbc.co.uk/furniture/nothing.gif" width=3D315=20
+  border=3D0></TD></TR></TBODY></TABLE>An asteroid discovered just weeks =
+ago has=20
+become the most threatening object yet detected in space.=20
+<P>A preliminary orbit suggests that 2002 NT7 is on an impact course =
+with Earth=20
+and could strike the planet on 1 February, 2019 - although the =
+uncertainties are=20
+large.=20
+<P>Astronomers have given the object a rating on the so-called Palermo =
+technical=20
+scale of threat of 0.06, making NT7 the first object to be given a =
+positive=20
+value.=20
+<P>From its brightness, astronomers estimate it is about two kilometres =
+wide,=20
+large enough to cause continent-wide devastation on Earth.=20
+<P><B>Many observations</B>=20
+<P>Although astronomers say the object definitely merits attention, they =
+expect=20
+more observations to show it is not on an Earth-intersecting trajectory. =
+
+<P><!-- GENInlineBOX -->
+<TABLE class=3Dboxbody cellSpacing=3D0 cellPadding=3D3 width=3D150 =
+align=3Dright=20
+bgColor=3D#ffffcc border=3D0><!-- GENInlineQUOTE -->
+  <TBODY>
+  <TR>
+    <TD><IMG height=3D18 alt=3D""=20
+      src=3D"http://news.bbc.co.uk/nol/shared/img/startquote.gif" =
+width=3D23=20
+      border=3D0 valign=3D"TOP"><BR>
+      <DIV class=3Dboxbody>This asteroid has now become the most =
+threatening=20
+      object in the short history of asteroid detection </DIV><IMG =
+height=3D18=20
+      alt=3D"" src=3D"http://news.bbc.co.uk/nol/shared/img/endquote.gif" =
+width=3D23=20
+      align=3Dright border=3D0 valign=3D"ABSBOTTOM"><BR =
+clear=3Dall></TD></TR><!-- GENInlineNAME -->
+  <TR>
+    <TD bgColor=3D#cccc99>
+      <DIV class=3Dboxhead>Dr Benny Peiser =
+</DIV></TD></TR></TBODY></TABLE>It was first=20
+seen on the night of 5 July, picked up by the Linear Observatory's =
+automated sky=20
+survey programme in New Mexico, US.=20
+<P>Since then astronomers worldwide have been paying close attention to =
+it,=20
+amassing almost 200 observations in a few weeks.=20
+<P>
+<DIV class=3Dbulletheadline><A=20
+href=3D"http://news.bbc.co.uk/1/hi/sci/tech/2148924.stm">Could it be =
+deflected?=20
+</A></DIV>
+<P>Dr Benny Peiser, of Liverpool John Moores University in the UK, told =
+BBC News=20
+Online that "this asteroid has now become the most threatening object in =
+the=20
+short history of asteroid detection".=20
+<P>NT7 circles the Sun every 837 days and travels in a tilted orbit from =
+about=20
+the distance of Mars to just within the Earth's orbit.=20
+<P><B>Potential devastation</B>=20
+<P>Detailed calculations of NT7's orbit suggest many occasions when its=20
+projected path through space intersects the Earth's orbit.=20
+<P>Researchers estimate that on 1 February, 2019, its impact velocity on =
+the=20
+Earth would be 28 km a second - enough to wipe out a continent and cause =
+global=20
+climate changes.=20
+<P>However, Dr Peiser was keen to point out that future observations =
+could=20
+change the situation.=20
+<P>He said: "This unique event should not diminish the fact that =
+additional=20
+observations in coming weeks will almost certainly - we hope - eliminate =
+the=20
+current threat."=20
+<P><B>Easily observable</B>=20
+<P>According to astronomers, NT7 will be easily observable for the next =
+18=20
+months or so, meaning there is no risk of losing the object.=20
+<P>Observations made over that period - and the fact that NT7 is bright =
+enough=20
+that it is bound to show up in old photographs - mean that scientists =
+will soon=20
+have a very precise orbit for the object.=20
+<P>Dr Donald Yeomans, of the US space agency's (Nasa) Jet Propulsion =
+Laboratory=20
+in California, told BBC News Online: "The orbit of this object is rather =
+highly=20
+inclined to the Earth's orbit so it has been missed because until =
+recently=20
+observers were not looking for such objects in that region of space."=20
+<P>Regarding the possibility of an impact, Dr Yeomans said the =
+uncertainties=20
+were large.=20
+<P>"The error in our knowledge of where NT7 will be on 1 February, 2019, =
+is=20
+large, several tens of millions of kilometres," he said.=20
+<P>Dr Yeomans said the world would have to get used to finding more =
+objects like=20
+NT7 that, on discovery, look threatening, but then become harmless.=20
+<P>"This is because the problem of Near-Earth Objects is now being =
+properly=20
+addressed," he said.=20
+<P></P></DIV></FONT></DIV></BODY></HTML>
+
+------=_NextPart_001_0010_01C23362.3939B510--
+
+------=_NextPart_000_000F_01C23362.3939B510
+Content-Type: image/jpeg;
+	name="_1644899_aster300.jpg"
+Content-Transfer-Encoding: base64
+Content-Location: http://news.bbc.co.uk/olmedia/1640000/images/_1644899_aster300.jpg
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAcFBQYFBAcGBQYIBwcIChELCgkJChUPEAwRGBUaGRgV
+GBcbHichGx0lHRcYIi4iJSgpKywrGiAvMy8qMicqKyr/2wBDAQcICAoJChQLCxQqHBgcKioqKioq
+KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKir/wgARCAC0ASwDASIA
+AhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAAAAECAwQFBgf/xAAYAQEBAQEBAAAAAAAAAAAAAAAA
+AQIDBP/aAAwDAQACEAMQAAAB86UBBSkFQBFAAQQFEBRAUQFEQcNBRAURQAFEBRAUQhVRQa5tOVFh
+BUAEAAEAAKQUgBUQVRqSPWAexAVFAEFQVQEAFAAVFBFaOVFAAEAQAHp1qcmd3Fm8UneTx5+z0KGz
+ie308XUpYr6cRLIiwJcbVUsMIiaMaKgAKAAAK1zRyooACAAigk0SnonS+Ld8z2tvOlxdGKvOuHx3
+omNc+ds7ZkcVL1ci83tanSRx2V6vCvj1P2KrZ5HF6r5tvOSio2AAKA1zRygAoiDrNVF6HrbnzvoP
+Ubq+R7XoSRWoateTk+U9Nwt446zqV1rXqpZqvyGS78vPSG/XpTEGf0N05XL9PtnkeJ71gteOp13O
+xTHNzoa5qyrqdtrPnfQ+oaScX09xkLGrBRrFnWqRaKTC+me5LzKjS4lNLLaZmWdOnGwV3Z55EekQ
++aw2ej0fPojtq3GxV2c3Axx3uPzNvWYqHXY817Hp5ujz6KBYkbmJHFZYjYpoAjhbrM1SzBIyatGu
+lBTlsVGZ+s2KzJ95weY7zMzrjkvT56ZZulmCmxGZSXElpEjcba5FNivQZ0x7vo5t7nt7YRl1e0WU
+544LLTa8BYqSwXNd7oVlghro6OaeyrQ2q+5kkuPqalLAq51vQ4sWd6kNJM2dkRnc8TSHDFlcNBWO
+ae736OnZA2WJlsYmpVqa1DfOAzau8b1Fhz6NpaeNK+nFn1YdnRampFj1sb0KtYzpUQzoRUAUABUF
+BFFEBRGvYe538OxvjpR13VLRc+5fSdj6iOzZ94nny6PHtrMjq9MQZDs3l0WBWZ2qBKIqKAAAgCqA
+AAIqKIoAx7D259aTp556kEm8W6+PDpbbj0umLcmDZzu3DSpeftoZ0EM0+IM6AAAABRFBFAAAAAAA
+AAFjkjOmaHTkyAOmYmBTFBYWhnTYw4baAACgAAAAAAAAAAAAAAAAIB//xAApEAACAgICAQIGAgMA
+AAAAAAABAgADBBEFEhMUIRAVICJAQTE1BjBQ/9oACAEBAAEFAv1Nf8Mz9f8AEM/X/FH8fg9TPDYY
+UK/Aj8nU1Os6zrOs6xKmssxeNqxVvyujNl3N8P0Zr8cHR4+jGzBZx61QYdZg42kr8pqIXhVIPCfb
+jY1WCpyHvvtdjYBNTU8e54zvpqddnpNfiI7VvgcvXkDoilKkMFQgrlw1U/QRF9NGp0fDBV7+CCgq
+mJgeePxHVLeLsVrcG3ZxbJ6dtGl/xOH5MuWq6xch0i8hUZ56rJZUrS7j+8+X2A/L3Bs442ROOKyv
+jpiUeJSgjVexxxPRoTecXGGdmNlW/Wf9GpXj2WFOEvI+R3zj+BarIIjrMmnYsNtL+syAw5bKi8vk
++NObt6/PAR86EHMqIOcGzzw7PzlnY8zlR8nIyT4Gsq+U3x+JvVGrKH6TP18dRceyyU8NmXTF/wAd
+VJTiU0DQmpqFYa49HaZHHmwni203G2CfL3M+XPs4DiejbQw2M9E5gwXgwLGA40k18cFiYirBUBD0
+1lcdj5MyeEuSWY11Z0R9H61EqZjjcJk3zG/x2muU4tNC/Dc7TtO87idhNie06rOizxLPEs8SzwpP
+Em+iifZOyiG1RDkqC2akfkBHztz15WHlNROVpeNj4OZLuEaWY1lRb+cbAvyZi/44BKMHGx/oLana
+ex+GvgZszsZ2M8h35J5IXMa6wR+QZCeTaPyjQ8o8bk2h5Joc9zDlmepMOQYbjPKYXgciV5l9UTl7
+SOQep7+NAHF7nv8AD2ELe5Zd+UCBobAJ7sCuz5UWHJ2ezdFZYywie5J9oLFIJxbZkccxR+6Hc3Nz
+Z+HvPf6qDWRnhRdx39XNQjc6idFE9tn3mzHHYGxVgyVJ7dp3DRkCztYV8I0D0Qgspody2O08FKhi
+FGR98sx+gqpBJpp2canoa/EfEhGjrvqHU18dxzs8d/V+wn67exfUNzTzz+Z3EJnjrlhUgq2wFAYK
+Yb6jLFmrdM5rrZusYuVqNe2yqVG1ZvLRovU09uws+3sddobPbf1GYH9USqzye4sEUbmhCs8bGfcA
+SxYO8tatjqmueaqwufGPUqEry9r5vZrvZ7ATYlUt0seyF4bCZudjN/6jOP8A6vRj+yqg69HncEvc
+1c9W4Y5TWQ3eJPKtiHHO7kfXuhbItMusfqHJFVfZGybFD53u+UzwudE/7zOO/rZ/EawLB47JsVzf
+veU8NxetAzE1b01zWFCCjW+pssJAe60gvpfU2LLL3c7/AAjMHt8q8qAeZJ2YnuzPk2QfZXcim2zy
+5VvpmFjY7A+UCryJZ8La+xcNCxm/xDMT+tNgEHVWNgENrWEVgWNaqNfmAgZlqDzMLGcW3O3aa8Vd
+ttYF9w2bDstv8UzDXfFPVWgSulRXSbbA6wAutdoD20e9uXZ5fVlItwR0by3PeoaxjY53+O384VQP
+GvqlfNZY1tvVHyuqPlWikZbC+3Jexuw211bG2z38ui7bP5DfynPZaY7c3ku3zjJh5O4n19sObYZ6
+uyNmOyedp5mENzGdjO07Tc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc7fD//EACIRAAMAAgICAwADAAAA
+AAAAAAABERASAiEwMSBBUUBQYf/aAAgBAwEBPwH+rXeJ/B9G5ti51IV/Ol/Dsg0ei4pSs7EmdoXJ
+Zv4RkWaUpUVFRsilZ2RmpryXo4t/eezs+iod+F5C5m6N0bmxcTvGx2Voo4xZojQ0NCE+DRMO/ouT
+uExz6FwNRJeF8oy09jago3SXCXk5/wCoqZtjiaiXlZERCSF5/wD/xAAlEQADAAEDAwMFAAAAAAAA
+AAAAARESAhAhIDBRAxMxIkBBUGH/2gAIAQIBAT8B/VvUjJGS+xaTPbMOisyYtV7CRPJUUpbvERER
+wVHDMXvPJUivohNoRmLIRH0lRkZIelfjqj6FCaTDwYM9tntmJNslNocHBOhIW2UH6g9ZkXrU8ERB
+o0/0fqGbHq7KRD4EmzVVwfG2pruIjMGYs1rgo3e7pKVlZqfHf//EAD0QAAEDAgMEBwcCAgsAAAAA
+AAEAAhEhMQMSUSIyQWEEEBNAcYGRICMwQlKhsSRzwdEzQ1BTYnBygpLh8P/aAAgBAQAGPwL/ACEs
+VuO9FX+wgxglxoFnxG9pi2GYU8kXtw6g0cRxRnENeqO9FsZMVbk8wqsoogqACOavEIx5IDDg4zhv
+H+CfhYTt4b2mqOUnKLC/s2VePdw7DcWkcV2fScrcTXg5bQhUjrgXKOKRUtjMsR2ADnDdpzvlH81A
+VjK4IZahTQo5vlothuY8FBaTSpCmPRRlr/6qnLThzW03L3RvROlV+hx/ClpiFtCVUwozCVDXeSoV
+EKcseCiIdqEMwk8YROuqi/sSWwETvFaMFh3HYbKktVk3G6Q6jTIaOJ65st48is2c+K378llJnnoo
+ffVD3VeK3I5q0rclUw6LZwwFZvotvEPknNmpVAicqgiPibDCVTCIHNT0h0nRbDR7NuqysrKyqEZa
+gMpVihskKyspVlMdXBWg8kTgjOOS28Nw8vbpVbuUc1OM7P4LLhYYHc7dV+q6oqFXVQveinMKdxx+
+lE4D2v5cVD2kHqHZ4ZMoHpL/ACC91hNHP4lOuq4qlFSqh1CrreV+oVV1vK/s7JIWziFZcfDbit5p
+pwMPsxlqOa6NFPdN/Hs3XNcRyXAdU2Co5f8AShjfVTn8SryrkLYE/wC5QPs5CL6SjmYaaBbkrtOj
+TH0uUPBB5/FqfJNyWyrov7Lfx7VgqqwVfuquDuTVaPuqD1C3c2oRLW15my2ctfmCq5RlJH+FqPZQ
+zyuiM9OS2HnKNaKRm8QYVXYg0bde9Y0tNnOQdcGxVrrf8gFR8+CHa7TTopbiDw6oIHt9F/Zb+Ovi
+rKkLdWi3vRaLcBVczI0VY8CarbkTwUObHI1K2jOlEHCSNYWznhQcRoJ4RVQcR5k2iyjEflF4cVON
+iOPJyIaD4rZfm47yrfnVRu+AWy4kcCERmIUA0+F0Wf7ln4VVshbysrKgVh6qgZ4LMWmdOC2mlbb/
+AAqjAA5uW9XUKW4QdPF5qiNmNAJzI0ZhAfUsxxM3hQKQfCi2h6hHKGgu43Wy/N4hUV1f43RePuW/
+hWCvHgpj1UvfTQKGuE6KBwvzVYI0CDMNtePFTiiKUrVy2a+IhfLGqMtDqRmVvMhb32WZ/lwVmu/1
+CyJdYcjCy5zl0K2W+aqVr3Hov7Lfx11cichJ5qghvLqdIYDwkIMpH1RUq8NAgALPiPysGv8ABfp5
+y8SbBEhwjXgpz0Fg6i2hCLc7sukqFR5opc6e6dFywPdN/C31vqWANbq65VJyj7prG3cgJldpiGdG
+oljKCiysM+PFTjEZGVcZsv0+VrBxehA7dx5UCdlY1kWLlnONmnVbp7v0aT/VN/CytwwBqVLGZua2
+8SNQo6M2gu4rMavNzoEMzsrRrxR7OJd8x+VNbhuygWACzZzPE3V35P8AkfRZWzF4+pXDZvW6qHOd
+qqtgaKnd+jRAJwm18lL8T0Wfh9Tl2jhsHVZcMGidOy0XMp+K/DlnyNuZXbOaaxILZ9ArgO4wFmwQ
+1sjxTjih2IXD6oXvdOBjKgcOkcXVWpVe8dHzPP8ARN/CB7LwzqobyHAIZnAuOihpLnH0ChrmtaNL
+rtTU6LM5zpNLq0jRAYWHk1V1RU71h4LRhhrGhtlLm4c+B/mqDDHkqhis1WauCDcjBGgXBcFw75//
+xAApEAEAAgICAgEDBAMBAQAAAAABABEhMUFRYXGBEJGhIDCx0UDB8OHx/9oACAEBAAE/IQOEo6lJ
+R1KJR0SjqUdEo6mOpRKJRKJR1KJR1KJRKJRKJiYmJiYmOpRKJRKJRMSiUdSjqbQ0/cuXL/Vcv9B+
+1cubQ/xyV+339Xcpgnz19OP3ahfEA5YhXJrG4ZxV5hqh+ZXco+f33cNfsVDC5fqaXF4rksnDzrzF
+lJplv7l+G0SxK3aW8P8AbBztMgf6R61NjiOc3By4MH2lpX6taf1u4a/QZaIlNP1zFD7mLAM5xKwS
+eOScRrT1NwV/b/yZsBqRBYWr/vcZFOGwwMV17L/gRE+krw4SlalI4EwZml8QtqHJuOEblkaPBiDo
+NxYF8lzLWpUr9h3DX7Go7QrBuFXpULH9TK35bM0lAcQJexAuRhHHqcQT5x0doy75eymXUoVv3RRb
+K55mVrWvJCDLlZ8ePzL60LflqXQpfQvqWWSg9nqaCg6/Kg+Q2yOcPaoNqYjV0P6HG4fR3DX7NfRx
+ssZ3p+I6LHSoJYdqiQAnBmfjZMHKCCrUJrG3zGxnGR5gskoTMLwYfcGQBpwmZbXQGoatyzqKOoCr
+N7legA8ygABmKWsmDNTBuKcrolfSp5frtDX6qhaVJ14JZUWRfUBIOV3A3DrMKsS3F0cSqFHbDdrW
+G4gS23DELRIqkfKXBCNAgB2mfmGcPNFDR8qgkYr44JcWcDMpAjnzG4AfEWxBesJRyp2uo9z5iZbR
+caXhKr9O0NPpUqEFWP4LjAqOcJUeLOIVPaqWkrxGWSXRySYTrqbtWQrjzK21Xc5D4mQGDFQXyqDP
+Nx4hggObjr5XiYRnLxGjRKK/o0SLlFGLxo3IiIH3EpanmXcPq7gYfSCDbolO5/M0SF1pKOP1E+00
+xjyhXbKTsl8tme6mLiL9SjIE7KuN2QZQ6JRoTnhuWFwiPicE7gTPkh3GXUy+RsijSdMcj+UUbPUr
+NLzQ+tZ1rXsgQdO8e/HEFQRW+VYhUSFDzAt+j7inbNhtOIXdMTRZ7iY21NO/mU11E1n+I7JXBzyy
+hePE2yYqzMUXKnKQqTcUu5skp9JYxlFaZ6J5hv8AeclR4kEVz94vmKc4iruJWh2NRKyGqaYTFMYU
+y3rH5z/5K1Fnx6xEIRTcr/6QMGj0Q9VWF+fiS0c+3cb255qbhNJXMGxArLEyWtdxzA4eEEtwHJgP
+USGzjlgc+Ddw8eysWxL7P5IUsWrOGAd9+CXl3VgMsUhACegIZvL/AEM7npH2j5a/QNUpcwQvmOb4
+r7tg/wC3jEXmHZicqJ17hnbZRsXdyi7RAzb5IuiemIoDJo9fmJjR0QZWiuYAm9tUhXzCQKdNQUT2
+GEXxKcgXZd3+Yom4wUV7m0y83+6NR12rnqGq7yPC5XiX2TL2+uJr8wuAjw69VMoGUG6gSxfB0++o
+0n5+CS6vCLPvAGDloPzBm1zg3KbVzKFWvuWPUpxK+hRsihfUeL/msvweZe135lTC0tcPbKGG+5XV
+n0y6WlePMsUo1uApz7Mdhd5DESOQrFLepu6vWg+WJD7AqKlIfDcy0uqUsPgqK5Y5I/mbYfhgh7US
+1h0Jcgfy3GrOJ8+iVRns3DTDxMTKNQ6H7SnGF5OJQvNA+42SGMDMe6YcA4iVz4RTvMRpFsuXLly5
+vK5Vf0YheEW1s9cxG8utHxORU8ygaAeIVOV+0tYE6dp4T6VmWx+7SX7zPOpltjhWBV2CW+5nwvUy
+fRvqp0zU3nlcQlB5Yhwzy1hgp+7fpgjF3C13UljzL10OcH5l7kP+okDU2CXgWmvUU7f2tocm2n4y
+ptse3UJiyfdCDYGCL2zyqqLt3wC8RgopbuYb5ZTq+7F8zu38iYLeIu+JYt+A7H+5oE4XACwQW0eI
+pGh1hQysc9ftDgXoVQ/uKE838GK1dzVj4CUOa4P+qMOhrFefvLouPMcMo4LwS16+j+7vGGfPD6xY
+0rAv1A3Mm6gewtoh/rAjewYTD3MYgdw9S5oRpjOauCs9AQEJ61LtfFtfE2M5LVGy87WDXVzYWpB9
+gbgG325hVBw2hiQDmheCI1N2sW7X5+j/AIG8IsWXr6zDUU27i90CuZQ9F0HARuvlMGXlK67itsJV
+vMRWYf8ArLJ3hxZwxYCqdniG/EQmLrmbVh7Jfu7K/beIIOWrxr9RtcFdR8EDmwnOKiu/8TeMzaF9
+8Yxa/XbFqMXeguMmVspnsTMo+IpapX4IjSVrev8A6lRGKOgdcZlX/Vjnz5hgv7ZJVkVgG/ssTUjb
+I2+VfiOMvJln7a+xLR+PPVxN7ArKWmkTb/F3j0Oa3rLq78orBY4LJgwS7xs/qUlQ0ooliROPJ9eI
+UTRb8Af5lWTJWjHwJLpvKueDq4IVtJjDz7lVFW33QXThVFWuq9ErAVzZ/MrQvD5jCm3+QN+ZgPSM
+YMOS38TdY5P+mPUo1gB6nScuImTZUMiCKNAjOuttToCAG8jPaVDoXl+JZQCcxWpgTPEyGEutYj/k
+AAjFK0Ci8wk1Srgq2nYv7iZtO2m/5j1fw/3Nj9t/uPQfiAMfNLfeY2agQIYE4CFupbxLeJeXl5eX
+l5eXl5eXl5eXl5eXl5eXl5eWi2z/2gAMAwEAAgADAAAAEIsICAPIDDDDMMPDDDggKNAIngMiwxjU
+k7gSAMLPKDDJumn/AFHDjAASgABTyjwyi22SbmUeTrOwxTzzXjDJJKEW0IKSaUjF2wDPNmA4zHKn
+J5xXPhXRko2ybQDvlJlYLJLOv6l/1pJBBOTVWzrtK/z0430X+AAgtVRZrm4RmzzTyg9B7yyhn815
+Tw3wwzzSiO8JX2nVx/2xiTzzxzxwIP50CL+AAAAAAAAAADz/xAAfEQADAAICAwEBAAAAAAAAAAAA
+AREhMRBBMFFhIFD/2gAIAQMBAT8Q/lNwR6EZQxeaGckQtkNYLBIUl2R0xshMc/XY0WyRGKW3wq8N
+4XxOhIv0GMCafD6imyBSwsZSj5q+BfS/Fvs7griD9Igw17DbQ6GU0xNQbGIGraMF4o6FQhsU2Nw+
+Bp80WxxgwUhxsbS4Im6zLQlEiEokIQkOwaWsvrQqptDEN5Hh1mfiMEvYkThfvE6ZG4iFIFApCZwO
+hITxRsGl8JwmKNGx8CEQyLxKsmLR8z0hF5//xAAgEQADAAICAwEBAQAAAAAAAAAAAREQITFBMFFh
+cSBA/9oACAECAQE/EP8AMh4pcXFKXxJUQE/s+omUvluBadGg6OlGhVHuQnka/tj4NRHoadI0IQhM
+1M0xX5DQbwu46SG42SkyQoXuPofsly8OpIfoX5IawsaNEVOxCnaJWRCNyS4GrCrMdGvLG4hOnL8D
+TcECq5Gq6RjGI2NtKIUt4GsbMouUyvhE9m6MOV6NuD6iulFa6IcDGXwXVGl0JJqx5pEHpgkpWMHP
+jvpiSxdBJ0VwE4wd+RhNeT7D9w7t5//EACgQAQACAgEEAgMAAwEBAQAAAAEAESExUUFhcZEQgSCh
+scHR8DDx4f/aAAgBAQABPxCoUeai/R6nIE7SJF0M/wDgTrUn/wACdhK4PU7JOyep2T1BHU6Hyx2C
+YNR0VCjRHgJXElcSVxJXCIDUqHYJ2CdgnYJ2CVwJ2CdlOwgDANT9aLUuXFjqWy/i+0t5lvMtCjPC
+Wy5cti5hSNpfeX3l94sxbhLly5cuXOe08J4T+EeFb4jnrKxfypr5zL+alfFwthaLWpfaPyau5YpR
++Dcslj+d+3y/0ivsLq0X26Sz4OviyWS8MLfi4Z6y6alNQw3B0LJvUcxfSea/WAeTKEpjHijFVgjM
+VuwWQL8yq+KYGfjWYC6Lrfb8bPj+U1/guI6+doqaYYiXaX0NeILAuo6kXeGmX+EXsJHt/wCfTEAa
+aNuI68YZ15fEIAFSgpa9WvBiMUBLZ4h/hFnCouH1DZQVy2RxIIXgijppq4UWEteRI1eJfaWd5Yx4
+greoUvP5E/lNZ8uoEAytEZApGmUk02SnWR4RaLCKXOQ/1GAxhlwEgQgiBF8dXBFpmEX7KlISjqu8
+nr/KLROAavrbxcOLQu3TNumb5lIxSdWS53kLpqsSxHBgdbtmXYKDBURhMtMRAbWXKd61FhD6C6iG
+8gw8VLnEShih4lg0sFqS9aijP7/IzCfymjx8uobu6qOdubu+Y6+C1YahCDL4MBU7H9lgmMOsOMwH
+XbaZSY5gzFzXzCQQNBN5iMA+ipI2u9/Bljp1lxQMPUr8wxUjGVg7HMIvBoRhBOGMI7gtmNMPtCIy
+AMpoPqVO4ApcPeriVG0wy+KeMeoinJwDj0o9ptQP0HEs82qI+O8qQMbeZZ8WcwKrBgTp8fymrx8u
+pniV2ZXMo6SnULtBAKox2TT5j/jXOB0nl0YnV2mxiP7QRsIZOrjzFLjcXdd4A3WUdOZQ1Rpp1j/a
+aZuiWvMQ9Ay6viMUVdRHRFzgDqHZlK2I/wCwysae37SsJhxBy0WTxPJEi/ZOFBTeb3EhOIoRrOem
+IuQ5Q4rnvLahpcp+DrY/P8Jrx8Y+MfCq014j4BB9z4EblnCCXiaDgncaC7OjxHYpktERIIRScu25
+RR2JXXSUzg2/48S2DsXMg7QxLR9rhAfXuM9YRN4DvoYu0dhbYPWbAmE0rvNVbyqgEutuw894/SV1
+K5liAXTnfuFOZDGq786EKAgCkCJMqzGhKyVEC3ErrTMc188Gq+FVwymcW7B+pmfFXBhKpWAh5+yI
+UZCrZwxAUYMSrRPr4dh+AcIZjBLOOFQEm0US5iolQ6QdC3Y1zEKCURVsiDokjrlETgH9hhxv6TSo
+fFxAXbFWtEGcgyd4tA6JCro5aiNDmX5+qgqKO5iHDFADbcD/AM56xtRx6W+0+n4/lL27QtiokdOh
+dx17K3DiBBpuqoF2nfUsZo6PqpeCZZvA/ChtJwpWcRprBqETIJliIuyRRHYjsC7xEx3C4zwBS9oA
+KMykUCUgarEwQ0/RGRQM9soWPSOhEaP7SYtZ7YToWsDVFaSBqPVkgH4mlD4I3KDJBSspS4QAB0qd
+2JGXqP6XpGshyT7Z4YcZUE1CqknTmDo+0sEJ1hsHiS/RDj/AZJ2S3wdytwiJQOqLWyvEYVHfmCVb
+HUQIrIxZi574tfEQ9LvxG7UdFNYlYr5Nw46OVuoPBm+IySoLnaLVyoEVNuusyQj+peXhNl8gCQEr
+r0JmbsIDRMqcGSn1CjbdTKtv7gNFyx2BK4+kFbLiuu2urB/FKRRR/ZAakclLUqCjh0ICokHNUVli
+974RHPbao7ok1E8V1Dt8xIsmANvjtAuN/wC3aM2A31KOZo6IHraAgamZV26y+jAUEmlOuT8+IH3v
+fVPWmB12wzHXbDnZa7XzOxHGxiUtKoLaiwZOx/AlAWIzSwxBooEXYdH21Dvm6IH1K27ZiO9qWojA
+3EsHvMufecF8D0tTwgNksAHpafpMAFqF/lG6hmOR6gFdf8xL+dQu+YApa8CeJEUX+iPMzm6F3fQW
+YMKJVdVLAjgFHnekCIG/UvbtEhgZpOtnTKMYe0D/APY/vgEo6v6S0zgO3LuaiCZCnU6kRBNQ/vQu
+gZorO9s5MDG8PR4i9cxVL3cBl22gDVsU2KwOYJ6lLOYMA+so2v4aMYmTXvHZXVP2wHK54NwEVQod
+oeibevi2INC+XcxzpDomMKBzRR9QSgR6reyFsgZdBLOgdOtDItzovpA1PPZ8U/cYLU4sXd1IUQrT
+Bd635nS1ikeEejEUdkD6Gkwd2x4fd/1BFybf2bYktf6M6i+qNA46BvsWQbHx8EbV9w/UgQnkOowV
+3QqPbmdk9MztrBi/tQLf9QMU2+EB1jtjzAE57RN3UtblYdTv4wfigV1Ws5inWFdMx1PP4U6EdnxK
+7UajrGqIk2S11dKRcliKUWPEWLMzO1wFO+Efkr/mY7RVqH2jWECxd5L6yyhcGLiUFjoACANatLDP
+qaIkVI8PMaZy7oeG4QWC0wo9VOnWNEVa3WZNHSFrASWfAdZgqo6892PXY0CtkBMq9Er9zFzNnsV6
+gQiyrIYtAhssLjStj6hF4KDiZk2aiTdfdquC0jLar46fFt/j/CCU06x0jSudmhQVegZXFwesZtl8
+wLW2BH2sQbyKrRH1WV6cOMEMGOW0dHCdpfSIEerZGVRSzfmrpJRxEwE5MPpv6RDNzF1DNdjw4OX3
+F9f5DXR7xm6G1bi7I/3BRwoi0bFm+7NQxvJWDi1bMCwLrHOS/CA+jnT0gpDvb+ofu5V+ENRLg7ql
+vP4Dfw6lsth+OnxBm2+QpzWeYcA3MddDiy+CYvkviuxAWgWlNj1ETYFGfLmDHCZsOvdKvoaHlgFN
+MWm485ajQvMtwDVduSx9BLGxNMeRf+IkSn+zSjplxgZ2X0YxGdKUjozBhN0V2iDoFbiTmvPXsQiR
+ch8y5VLtVzbctd38sJXaVXzXaV2lEo+KJRNfiNmVq0Rsx144MJoG0UUTfqBKNYChT0PqNsi2vt3B
+Bst3ggyhAzDXV2l021xeFb0GXENGC7wXmYtgggBAoenS5uo7Qzo5rpzATd2EQc10DnrLkeiwI6lz
+K5UhVy9PVj2WliGI0RIQ5tLtvcczWvwZVfBuUSiUSvy1+I1KwCwNNTY1i5ZzRuD1uwg9MCxbIcVl
+ODf6iugB9UxoFka7fxMETjmDVf4S9pgV4Dq9IZJYde7WLX/XMgWB9DV17GCWC0CsTa/347xjRO5o
+aFqA4U5ZdA6DU7R2CnQv3G2I7afXYEU4AMq9+0vStwtwsGY4I/Lv8jcoPw5+aPnX4jWOR0Tb5lJq
+wNFLCXHzUHkGUlIWhFwdIYldMJfLuINYLNOP0QSUHMwwOZq1UQDaqjwB6W1gluRcQ1QUdwlVUC+W
+72o1+tch4o67SyYVhj1H6Oudx2N8DX129zrUpWEmSUaVzELolfglypUSoFypVflX4VNHiBRmPXWo
+IICIWi4LQ1ww5ogS1+ewW6QgDCU9EIHx6Dbtzl5d9rlsgGkarEZ5RSo5QoJbRkC19HpFAWQ3vs48
+w7gy1WRhyyyAvPj6xBRhJQBoggCw9+5Zdtd//FLgV/6E0eIvHBGKRbuOlQYl7B+4G3eLLM8Sq3nV
+19ssVL26keu4dSRF14y/3GENdN5SonLP2f8ActhKNP8AuKZ2dB/3AGzLc7MdiHsep4PU8HqeD1PB
+6ng9Twep4PU8HqeD1PB6ng9Twep4PU8HqeD1PB6ng9Twep4PU8HqeD1OyR7GtT//2Q==
+
+------=_NextPart_000_000F_01C23362.3939B510
+Content-Type: image/gif;
+	name="nothing.gif"
+Content-Transfer-Encoding: base64
+Content-Location: http://news.bbc.co.uk/furniture/nothing.gif
+
+R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------=_NextPart_000_000F_01C23362.3939B510
+Content-Type: image/gif;
+	name="grey_pixel.gif"
+Content-Transfer-Encoding: base64
+Content-Location: http://news.bbc.co.uk/furniture/grey_pixel.gif
+
+R0lGODlhAQABAIAAAJmZmQAAACwAAAAAAQABAAACAkQBADs=
+
+------=_NextPart_000_000F_01C23362.3939B510
+Content-Type: image/gif;
+	name="startquote.gif"
+Content-Transfer-Encoding: base64
+Content-Location: http://news.bbc.co.uk/nol/shared/img/startquote.gif
+
+R0lGODlhFwASAKL/AMvLmNXVouLir/Dwvf//zPn5x///zv//0CwAAAAAFwASAEADg0iqViErrvFM
+ACCMTQxzmLAV0iAEzyA1JyoUniJksNSBUExcWI8NBsPA5wuQbjONbtG4vDw4G2MIAEp4xMCU2BMI
+ubTYjAsphaSsjEpRSNZW0di3uoy4l2PBIWgbD/Y6WD1GHnNEZYI+QIZZbWB0TWBGBGM+ZWyVGEoM
+BAUkdZyeHQoJADs=
+
+------=_NextPart_000_000F_01C23362.3939B510
+Content-Type: image/gif;
+	name="endquote.gif"
+Content-Transfer-Encoding: base64
+Content-Location: http://news.bbc.co.uk/nol/shared/img/endquote.gif
+
+R0lGODlhFwASAKL/AMvLmNXVouLir/DwvcDAwPn5xwAAAAAAACH5BAEAAAQALAAAAAAXABIAQANm
+SLrczgLICcYqgcpARhaPElUNpm3LcEogY7aPSnYZBYsnaK5WtwKchuzWGN0iwcfLIQg4iYpBMyDo
+EUYa2E4z2HKjPw72q6hpkoWBFCVU15IpiZUJLBSBIcISgg95AERNc0wBdg0JADsAW2c9MFMLYpNc
+iieceQFtjSyUKwkAOw==
+
+------=_NextPart_000_000F_01C23362.3939B510--
+
+
+http://xent.com/mailman/listinfo/fork
+
+

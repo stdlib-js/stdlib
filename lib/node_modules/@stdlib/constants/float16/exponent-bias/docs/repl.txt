@@ -1,0 +1,12 @@
+
+{{alias}}
+    The bias of a half-precision floating-point number's exponent.
+
+    Examples
+    --------
+    > {{alias}}
+    15
+
+    See Also
+    --------
+

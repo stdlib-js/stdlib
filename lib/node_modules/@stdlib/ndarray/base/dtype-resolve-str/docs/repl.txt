@@ -1,0 +1,24 @@
+
+{{alias}}( dtype )
+    Returns the data type string associated with a supported data type value.
+
+    Parameters
+    ----------
+    dtype: any
+        Data type value.
+
+    Returns
+    -------
+    out: string|null
+        Data type string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'float64' )
+    'float64'
+    > out = {{alias}}( {{alias:@stdlib/ndarray/base/dtype-str2enum}}( 'float64' ) )
+    'float64'
+
+    See Also
+    --------
+

@@ -1,0 +1,41 @@
+
+{{alias}}( α, s, m )
+    Returns the differential entropy of a Fréchet distribution with shape
+    parameter `α`, scale parameter `s`, and location `m` (in nats).
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `α <= 0` or `s <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        Shape parameter.
+
+    s: number
+        Scale parameter.
+
+    m: number
+        Location parameter.
+
+    Returns
+    -------
+    out: number
+        Entropy.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0, 1.0, 1.0 )
+    ~2.154
+    > y = {{alias}}( 4.0, 2.0, 1.0 )
+    ~1.028
+    > y = {{alias}}( NaN, 1.0, 0.0 )
+    NaN
+    > y = {{alias}}( 1.0, NaN, 0.0 )
+    NaN
+    > y = {{alias}}( 1.0, 1.0, NaN )
+    NaN
+
+    See Also
+    --------
+

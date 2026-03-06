@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Fri Aug  2 12:10:27 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B519D440F8
+	for <jm@localhost>; Fri,  2 Aug 2002 07:10:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 12:10:19 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72B8u219126 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 12:08:56 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA01523; Fri, 2 Aug 2002 12:07:02 +0100
+Received: from claymore.diva.ie (diva.ie [195.218.115.17] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA01489 for
+    <ilug@linux.ie>; Fri, 2 Aug 2002 12:06:54 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host diva.ie [195.218.115.17]
+    (may be forged) claimed to be claymore.diva.ie
+Received: from cunniffe.net (ts01-008.dublin.indigo.ie [194.125.134.8]) by
+    claymore.diva.ie (8.9.3/8.9.3) with ESMTP id MAA25581 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 12:06:36 +0100
+Message-Id: <3D4A6790.3070104@cunniffe.net>
+Date: Fri, 02 Aug 2002 12:05:52 +0100
+From: Vincent Cunniffe <vincent@cunniffe.net>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0.0)
+    Gecko/20020530
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug <ilug@linux.ie>
+Subject: Re: [ILUG] Checking that cronjobs actually ran?
+References: <0D443C91DCE9CD40B1C795BA222A729E0188554A@milexc01.maxtor.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Wynne, Conor wrote:
+> Hi ladies,
+> 
+> I setup a cron job to do a full backup to tape drive there last night, but
+> I'm just wondering how I can verify that it actually ran? 
+> I suppose that a mail will be sent to root as I ran crontab -e as root. Is
+> that correct or should I be looking elsewhere?
+
+/var/log/cron
+
+Logs user, name of job run, and pid it ran as.
+
+Regards,
+
+Vin
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

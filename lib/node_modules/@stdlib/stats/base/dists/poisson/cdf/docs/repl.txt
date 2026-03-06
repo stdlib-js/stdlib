@@ -1,0 +1,73 @@
+
+{{alias}}( x, λ )
+    Evaluates the cumulative distribution function (CDF) for a Poisson
+    distribution with mean parameter `λ` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a negative value for `λ`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    λ: number
+        Mean parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated CDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.5 )
+    ~0.986
+    > y = {{alias}}( 2.0, 10.0 )
+    ~0.003
+    > y = {{alias}}( -1.0, 4.0 )
+    0.0
+    > y = {{alias}}( NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+
+    // Negative mean parameter:
+    > y = {{alias}}( 2.0, -1.0 )
+    NaN
+
+    // Degenerate distribution at `λ = 0`:
+    > y = {{alias}}( -2.0, 0.0 )
+    0.0
+    > y = {{alias}}( 0.0, 0.0 )
+    1.0
+    > y = {{alias}}( 10.0, 0.0 )
+    1.0
+
+
+{{alias}}.factory( λ )
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    of a Poisson distribution with mean parameter `λ`.
+
+    Parameters
+    ----------
+    λ: number
+        Mean parameter.
+
+    Returns
+    -------
+    cdf: Function
+        Cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var mycdf = {{alias}}.factory( 5.0 );
+    > var y = mycdf( 3.0 )
+    ~0.265
+    > y = mycdf( 8.0 )
+    ~0.932
+
+    See Also
+    --------
+

@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Returns a mapping of standard library error codes to their corresponding
+    error messages.
+
+    Returns
+    -------
+    out: Object
+        Mapping of error codes to corresponding error messages.
+
+    Examples
+    --------
+    > var o = {{alias}}()
+    {...}
+
+    See Also
+    --------
+

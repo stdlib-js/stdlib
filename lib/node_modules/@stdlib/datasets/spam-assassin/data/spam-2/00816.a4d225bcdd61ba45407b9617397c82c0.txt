@@ -1,0 +1,68 @@
+From WebOffers@7a6a.net  Mon Jul 22 18:06:18 2002
+Return-Path: <WebOffers@7a6a.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 58971440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:06:16 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:06:16 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG1QY16614 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 17:01:26 +0100
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id JAA26626 for <jm@jmason.org>;
+    Sun, 21 Jul 2002 09:15:26 +0100
+Received: from smtp7a6a.7a6a.net (158.85.217.216.transedge.com
+    [216.217.85.158]) by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with
+    ESMTP id g6L8FOp07163 for <jm@netnoteinc.com>; Sun, 21 Jul 2002 09:15:25
+    +0100
+Received: from Mailer ([216.217.85.158]) by smtp7a6a.7a6a.net with
+    Microsoft SMTPSVC(5.0.2195.2966); Sun, 21 Jul 2002 04:21:08 -0400
+Date: Sun, 21 Jul 2002 04:21:08 Eastern Daylight Time
+From: Web Offers <WebOffers@7a6a.net>
+To: yyyy@netnoteinc.com
+Subject: Save 70% on laser toner and inkjet cartridges!
+X-Mailer: Flicks Softwares OCXMail 2.2f
+X-Messageno: 32000191827
+Message-Id: <SMTP76t9ZpvcLerNWXs000a2847@smtp7a6a.7a6a.net>
+X-Originalarrivaltime: 21 Jul 2002 08:21:08.0937 (UTC) FILETIME=[90E7EB90:01C2308F]
+Content-Type: text/html; charset="iso-8859-1"
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 2</title>
+</head>
+
+<body>
+
+<p align="center">
+
+<font color="#0000FF">Due to heavy demand from our customers we are extending the
+<b> 5% EXTRA Off Coupon</b> on all your purchases with Coupon Code <b><u>RMSCY6P2</u>
+</b>upto July'30 2002
+and the offer is exclusively from us.</font>
+
+<p align="center">
+
+<a href="http://www.qksrv.net/click-1084287-8406081" target="_blank" onmouseover="window.status='http://www.inkjetexperts.com';return true;" onmouseout="window.status=' ';return true;">
+<img src="http://www.qksrv.net/image-1084287-8406081" width="688" height="383" alt="Get Blowout Savings on Inkjet Toner" border="0"></a>
+<div>
+  <p align="center"><font size="2">You received this letter because you signed
+  up to receive offers from one of our affiliate sites.<br>
+  &nbsp; <font color="#000000">To unsubscribe from our mailing list, Online
+  Unsubscribe </font><a href="http://Downloads.7a6a.net/downloads/unsubscribe.asp?id=jm@netnoteinc.com"><font color="#000000">Click
+  Here</font></a><font color="#000080"> </font><font color="#000000">or by&nbsp;
+  email</font><font color="#000080"> </font><a href="mailto:remove@7a6a.net?subject=jm@netnoteinc.com"><font color="#000000">Click
+  Here</font></a></font><br>
+  <span class="477581722-06062002"><font color="#0000ff" face="Arial" size="2">&nbsp;</font></span>
+</div>
+</body>
+
+</html>
+
+

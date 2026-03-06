@@ -1,0 +1,4691 @@
+{
+  "name": "stdlib-datasets-sotu",
+  "version": "",
+  "title": "State of the Union Addresses",
+  "description": "State of the Union addresses by U.S. Presidents.",
+  "resources": [
+    {
+      "name": "1790-george-washington-n-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1790.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1790_george_washington_n.json"
+    },
+    {
+      "name": "1790-george-washington-n-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1790.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1790_george_washington_n.txt"
+    },
+    {
+      "name": "1791-george-washington-n-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1791.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1791_george_washington_n.json"
+    },
+    {
+      "name": "1791-george-washington-n-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1791.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1791_george_washington_n.txt"
+    },
+    {
+      "name": "1792-george-washington-n-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1792.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1792_george_washington_n.json"
+    },
+    {
+      "name": "1792-george-washington-n-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1792.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1792_george_washington_n.txt"
+    },
+    {
+      "name": "1793-george-washington-n-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1793.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1793_george_washington_n.json"
+    },
+    {
+      "name": "1793-george-washington-n-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1793.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1793_george_washington_n.txt"
+    },
+    {
+      "name": "1794-george-washington-n-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1794.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1794_george_washington_n.json"
+    },
+    {
+      "name": "1794-george-washington-n-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1794.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1794_george_washington_n.txt"
+    },
+    {
+      "name": "1795-george-washington-n-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1795.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1795_george_washington_n.json"
+    },
+    {
+      "name": "1795-george-washington-n-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1795.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1795_george_washington_n.txt"
+    },
+    {
+      "name": "1796-george-washington-n-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1796.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1796_george_washington_n.json"
+    },
+    {
+      "name": "1796-george-washington-n-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Washington in 1796.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1796_george_washington_n.txt"
+    },
+    {
+      "name": "1797-john-adams-f-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Adams in 1797.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1797_john_adams_f.json"
+    },
+    {
+      "name": "1797-john-adams-f-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Adams in 1797.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1797_john_adams_f.txt"
+    },
+    {
+      "name": "1798-john-adams-f-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Adams in 1798.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1798_john_adams_f.json"
+    },
+    {
+      "name": "1798-john-adams-f-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Adams in 1798.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1798_john_adams_f.txt"
+    },
+    {
+      "name": "1799-john-adams-f-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Adams in 1799.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1799_john_adams_f.json"
+    },
+    {
+      "name": "1799-john-adams-f-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Adams in 1799.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1799_john_adams_f.txt"
+    },
+    {
+      "name": "1800-john-adams-f-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Adams in 1800.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1800_john_adams_f.json"
+    },
+    {
+      "name": "1800-john-adams-f-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Adams in 1800.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1800_john_adams_f.txt"
+    },
+    {
+      "name": "1801-thomas-jefferson-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1801.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1801_thomas_jefferson_dr.json"
+    },
+    {
+      "name": "1801-thomas-jefferson-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1801.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1801_thomas_jefferson_dr.txt"
+    },
+    {
+      "name": "1802-thomas-jefferson-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1802.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1802_thomas_jefferson_dr.json"
+    },
+    {
+      "name": "1802-thomas-jefferson-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1802.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1802_thomas_jefferson_dr.txt"
+    },
+    {
+      "name": "1803-thomas-jefferson-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1803.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1803_thomas_jefferson_dr.json"
+    },
+    {
+      "name": "1803-thomas-jefferson-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1803.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1803_thomas_jefferson_dr.txt"
+    },
+    {
+      "name": "1804-thomas-jefferson-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1804.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1804_thomas_jefferson_dr.json"
+    },
+    {
+      "name": "1804-thomas-jefferson-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1804.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1804_thomas_jefferson_dr.txt"
+    },
+    {
+      "name": "1805-thomas-jefferson-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1805.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1805_thomas_jefferson_dr.json"
+    },
+    {
+      "name": "1805-thomas-jefferson-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1805.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1805_thomas_jefferson_dr.txt"
+    },
+    {
+      "name": "1806-thomas-jefferson-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1806.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1806_thomas_jefferson_dr.json"
+    },
+    {
+      "name": "1806-thomas-jefferson-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1806.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1806_thomas_jefferson_dr.txt"
+    },
+    {
+      "name": "1807-thomas-jefferson-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1807.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1807_thomas_jefferson_dr.json"
+    },
+    {
+      "name": "1807-thomas-jefferson-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1807.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1807_thomas_jefferson_dr.txt"
+    },
+    {
+      "name": "1808-thomas-jefferson-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1808.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1808_thomas_jefferson_dr.json"
+    },
+    {
+      "name": "1808-thomas-jefferson-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Thomas Jefferson in 1808.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1808_thomas_jefferson_dr.txt"
+    },
+    {
+      "name": "1809-james-madison-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1809.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1809_james_madison_dr.json"
+    },
+    {
+      "name": "1809-james-madison-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1809.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1809_james_madison_dr.txt"
+    },
+    {
+      "name": "1810-james-madison-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1810.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1810_james_madison_dr.json"
+    },
+    {
+      "name": "1810-james-madison-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1810.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1810_james_madison_dr.txt"
+    },
+    {
+      "name": "1811-james-madison-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1811.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1811_james_madison_dr.json"
+    },
+    {
+      "name": "1811-james-madison-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1811.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1811_james_madison_dr.txt"
+    },
+    {
+      "name": "1812-james-madison-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1812.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1812_james_madison_dr.json"
+    },
+    {
+      "name": "1812-james-madison-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1812.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1812_james_madison_dr.txt"
+    },
+    {
+      "name": "1813-james-madison-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1813.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1813_james_madison_dr.json"
+    },
+    {
+      "name": "1813-james-madison-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1813.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1813_james_madison_dr.txt"
+    },
+    {
+      "name": "1814-james-madison-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1814.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1814_james_madison_dr.json"
+    },
+    {
+      "name": "1814-james-madison-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1814.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1814_james_madison_dr.txt"
+    },
+    {
+      "name": "1815-james-madison-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1815.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1815_james_madison_dr.json"
+    },
+    {
+      "name": "1815-james-madison-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1815.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1815_james_madison_dr.txt"
+    },
+    {
+      "name": "1816-james-madison-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1816.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1816_james_madison_dr.json"
+    },
+    {
+      "name": "1816-james-madison-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Madison in 1816.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1816_james_madison_dr.txt"
+    },
+    {
+      "name": "1817-james-monroe-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1817.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1817_james_monroe_dr.json"
+    },
+    {
+      "name": "1817-james-monroe-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1817.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1817_james_monroe_dr.txt"
+    },
+    {
+      "name": "1818-james-monroe-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1818.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1818_james_monroe_dr.json"
+    },
+    {
+      "name": "1818-james-monroe-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1818.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1818_james_monroe_dr.txt"
+    },
+    {
+      "name": "1819-james-monroe-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1819.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1819_james_monroe_dr.json"
+    },
+    {
+      "name": "1819-james-monroe-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1819.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1819_james_monroe_dr.txt"
+    },
+    {
+      "name": "1820-james-monroe-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1820.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1820_james_monroe_dr.json"
+    },
+    {
+      "name": "1820-james-monroe-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1820.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1820_james_monroe_dr.txt"
+    },
+    {
+      "name": "1821-james-monroe-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1821.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1821_james_monroe_dr.json"
+    },
+    {
+      "name": "1821-james-monroe-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1821.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1821_james_monroe_dr.txt"
+    },
+    {
+      "name": "1822-james-monroe-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1822.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1822_james_monroe_dr.json"
+    },
+    {
+      "name": "1822-james-monroe-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1822.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1822_james_monroe_dr.txt"
+    },
+    {
+      "name": "1823-james-monroe-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1823.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1823_james_monroe_dr.json"
+    },
+    {
+      "name": "1823-james-monroe-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1823.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1823_james_monroe_dr.txt"
+    },
+    {
+      "name": "1824-james-monroe-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1824.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1824_james_monroe_dr.json"
+    },
+    {
+      "name": "1824-james-monroe-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Monroe in 1824.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1824_james_monroe_dr.txt"
+    },
+    {
+      "name": "1825-john-quincy-adams-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Quincy Adams in 1825.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1825_john_quincy_adams_dr.json"
+    },
+    {
+      "name": "1825-john-quincy-adams-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Quincy Adams in 1825.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1825_john_quincy_adams_dr.txt"
+    },
+    {
+      "name": "1826-john-quincy-adams-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Quincy Adams in 1826.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1826_john_quincy_adams_dr.json"
+    },
+    {
+      "name": "1826-john-quincy-adams-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Quincy Adams in 1826.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1826_john_quincy_adams_dr.txt"
+    },
+    {
+      "name": "1827-john-quincy-adams-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Quincy Adams in 1827.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1827_john_quincy_adams_dr.json"
+    },
+    {
+      "name": "1827-john-quincy-adams-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Quincy Adams in 1827.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1827_john_quincy_adams_dr.txt"
+    },
+    {
+      "name": "1828-john-quincy-adams-dr-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Quincy Adams in 1828.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1828_john_quincy_adams_dr.json"
+    },
+    {
+      "name": "1828-john-quincy-adams-dr-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Quincy Adams in 1828.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1828_john_quincy_adams_dr.txt"
+    },
+    {
+      "name": "1829-andrew-jackson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1829.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1829_andrew_jackson_d.json"
+    },
+    {
+      "name": "1829-andrew-jackson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1829.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1829_andrew_jackson_d.txt"
+    },
+    {
+      "name": "1830-andrew-jackson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1830.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1830_andrew_jackson_d.json"
+    },
+    {
+      "name": "1830-andrew-jackson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1830.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1830_andrew_jackson_d.txt"
+    },
+    {
+      "name": "1831-andrew-jackson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1831.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1831_andrew_jackson_d.json"
+    },
+    {
+      "name": "1831-andrew-jackson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1831.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1831_andrew_jackson_d.txt"
+    },
+    {
+      "name": "1832-andrew-jackson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1832.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1832_andrew_jackson_d.json"
+    },
+    {
+      "name": "1832-andrew-jackson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1832.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1832_andrew_jackson_d.txt"
+    },
+    {
+      "name": "1833-andrew-jackson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1833.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1833_andrew_jackson_d.json"
+    },
+    {
+      "name": "1833-andrew-jackson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1833.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1833_andrew_jackson_d.txt"
+    },
+    {
+      "name": "1834-andrew-jackson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1834.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1834_andrew_jackson_d.json"
+    },
+    {
+      "name": "1834-andrew-jackson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1834.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1834_andrew_jackson_d.txt"
+    },
+    {
+      "name": "1835-andrew-jackson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1835.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1835_andrew_jackson_d.json"
+    },
+    {
+      "name": "1835-andrew-jackson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1835.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1835_andrew_jackson_d.txt"
+    },
+    {
+      "name": "1836-andrew-jackson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1836.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1836_andrew_jackson_d.json"
+    },
+    {
+      "name": "1836-andrew-jackson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Jackson in 1836.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1836_andrew_jackson_d.txt"
+    },
+    {
+      "name": "1837-martin-van-buren-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Martin Van Buren in 1837.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1837_martin_van_buren_d.json"
+    },
+    {
+      "name": "1837-martin-van-buren-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Martin Van Buren in 1837.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1837_martin_van_buren_d.txt"
+    },
+    {
+      "name": "1838-martin-van-buren-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Martin Van Buren in 1838.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1838_martin_van_buren_d.json"
+    },
+    {
+      "name": "1838-martin-van-buren-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Martin Van Buren in 1838.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1838_martin_van_buren_d.txt"
+    },
+    {
+      "name": "1839-martin-van-buren-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Martin Van Buren in 1839.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1839_martin_van_buren_d.json"
+    },
+    {
+      "name": "1839-martin-van-buren-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Martin Van Buren in 1839.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1839_martin_van_buren_d.txt"
+    },
+    {
+      "name": "1840-martin-van-buren-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Martin Van Buren in 1840.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1840_martin_van_buren_d.json"
+    },
+    {
+      "name": "1840-martin-van-buren-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Martin Van Buren in 1840.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1840_martin_van_buren_d.txt"
+    },
+    {
+      "name": "1841-john-tyler-wd-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Tyler in 1841.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1841_john_tyler_wd.json"
+    },
+    {
+      "name": "1841-john-tyler-wd-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Tyler in 1841.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1841_john_tyler_wd.txt"
+    },
+    {
+      "name": "1842-john-tyler-wd-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Tyler in 1842.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1842_john_tyler_wd.json"
+    },
+    {
+      "name": "1842-john-tyler-wd-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Tyler in 1842.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1842_john_tyler_wd.txt"
+    },
+    {
+      "name": "1843-john-tyler-wd-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Tyler in 1843.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1843_john_tyler_wd.json"
+    },
+    {
+      "name": "1843-john-tyler-wd-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Tyler in 1843.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1843_john_tyler_wd.txt"
+    },
+    {
+      "name": "1844-john-tyler-wd-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Tyler in 1844.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1844_john_tyler_wd.json"
+    },
+    {
+      "name": "1844-john-tyler-wd-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John Tyler in 1844.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1844_john_tyler_wd.txt"
+    },
+    {
+      "name": "1845-james-polk-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Polk in 1845.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1845_james_polk_d.json"
+    },
+    {
+      "name": "1845-james-polk-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Polk in 1845.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1845_james_polk_d.txt"
+    },
+    {
+      "name": "1846-james-polk-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Polk in 1846.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1846_james_polk_d.json"
+    },
+    {
+      "name": "1846-james-polk-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Polk in 1846.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1846_james_polk_d.txt"
+    },
+    {
+      "name": "1847-james-polk-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Polk in 1847.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1847_james_polk_d.json"
+    },
+    {
+      "name": "1847-james-polk-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Polk in 1847.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1847_james_polk_d.txt"
+    },
+    {
+      "name": "1848-james-polk-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Polk in 1848.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1848_james_polk_d.json"
+    },
+    {
+      "name": "1848-james-polk-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Polk in 1848.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1848_james_polk_d.txt"
+    },
+    {
+      "name": "1849-zachary-taylor-w-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Zachary Taylor in 1849.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1849_zachary_taylor_w.json"
+    },
+    {
+      "name": "1849-zachary-taylor-w-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Zachary Taylor in 1849.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1849_zachary_taylor_w.txt"
+    },
+    {
+      "name": "1850-millard-fillmore-w-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Millard Fillmore in 1850.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1850_millard_fillmore_w.json"
+    },
+    {
+      "name": "1850-millard-fillmore-w-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Millard Fillmore in 1850.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1850_millard_fillmore_w.txt"
+    },
+    {
+      "name": "1851-millard-fillmore-w-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Millard Fillmore in 1851.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1851_millard_fillmore_w.json"
+    },
+    {
+      "name": "1851-millard-fillmore-w-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Millard Fillmore in 1851.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1851_millard_fillmore_w.txt"
+    },
+    {
+      "name": "1852-millard-fillmore-w-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Millard Fillmore in 1852.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1852_millard_fillmore_w.json"
+    },
+    {
+      "name": "1852-millard-fillmore-w-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Millard Fillmore in 1852.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1852_millard_fillmore_w.txt"
+    },
+    {
+      "name": "1853-franklin-pierce-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin Pierce in 1853.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1853_franklin_pierce_d.json"
+    },
+    {
+      "name": "1853-franklin-pierce-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin Pierce in 1853.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1853_franklin_pierce_d.txt"
+    },
+    {
+      "name": "1854-franklin-pierce-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin Pierce in 1854.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1854_franklin_pierce_d.json"
+    },
+    {
+      "name": "1854-franklin-pierce-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin Pierce in 1854.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1854_franklin_pierce_d.txt"
+    },
+    {
+      "name": "1855-franklin-pierce-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin Pierce in 1855.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1855_franklin_pierce_d.json"
+    },
+    {
+      "name": "1855-franklin-pierce-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin Pierce in 1855.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1855_franklin_pierce_d.txt"
+    },
+    {
+      "name": "1856-franklin-pierce-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin Pierce in 1856.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1856_franklin_pierce_d.json"
+    },
+    {
+      "name": "1856-franklin-pierce-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin Pierce in 1856.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1856_franklin_pierce_d.txt"
+    },
+    {
+      "name": "1857-james-buchanan-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Buchanan in 1857.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1857_james_buchanan_d.json"
+    },
+    {
+      "name": "1857-james-buchanan-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Buchanan in 1857.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1857_james_buchanan_d.txt"
+    },
+    {
+      "name": "1858-james-buchanan-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Buchanan in 1858.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1858_james_buchanan_d.json"
+    },
+    {
+      "name": "1858-james-buchanan-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Buchanan in 1858.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1858_james_buchanan_d.txt"
+    },
+    {
+      "name": "1859-james-buchanan-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Buchanan in 1859.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1859_james_buchanan_d.json"
+    },
+    {
+      "name": "1859-james-buchanan-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Buchanan in 1859.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1859_james_buchanan_d.txt"
+    },
+    {
+      "name": "1860-james-buchanan-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Buchanan in 1860.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1860_james_buchanan_d.json"
+    },
+    {
+      "name": "1860-james-buchanan-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by James Buchanan in 1860.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1860_james_buchanan_d.txt"
+    },
+    {
+      "name": "1861-abraham-lincoln-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Abraham Lincoln in 1861.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1861_abraham_lincoln_r.json"
+    },
+    {
+      "name": "1861-abraham-lincoln-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Abraham Lincoln in 1861.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1861_abraham_lincoln_r.txt"
+    },
+    {
+      "name": "1862-abraham-lincoln-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Abraham Lincoln in 1862.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1862_abraham_lincoln_r.json"
+    },
+    {
+      "name": "1862-abraham-lincoln-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Abraham Lincoln in 1862.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1862_abraham_lincoln_r.txt"
+    },
+    {
+      "name": "1863-abraham-lincoln-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Abraham Lincoln in 1863.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1863_abraham_lincoln_r.json"
+    },
+    {
+      "name": "1863-abraham-lincoln-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Abraham Lincoln in 1863.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1863_abraham_lincoln_r.txt"
+    },
+    {
+      "name": "1864-abraham-lincoln-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Abraham Lincoln in 1864.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1864_abraham_lincoln_r.json"
+    },
+    {
+      "name": "1864-abraham-lincoln-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Abraham Lincoln in 1864.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1864_abraham_lincoln_r.txt"
+    },
+    {
+      "name": "1865-andrew-johnson-nu-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Johnson in 1865.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1865_andrew_johnson_nu.json"
+    },
+    {
+      "name": "1865-andrew-johnson-nu-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Johnson in 1865.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1865_andrew_johnson_nu.txt"
+    },
+    {
+      "name": "1866-andrew-johnson-nu-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Johnson in 1866.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1866_andrew_johnson_nu.json"
+    },
+    {
+      "name": "1866-andrew-johnson-nu-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Johnson in 1866.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1866_andrew_johnson_nu.txt"
+    },
+    {
+      "name": "1867-andrew-johnson-nu-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Johnson in 1867.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1867_andrew_johnson_nu.json"
+    },
+    {
+      "name": "1867-andrew-johnson-nu-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Johnson in 1867.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1867_andrew_johnson_nu.txt"
+    },
+    {
+      "name": "1868-andrew-johnson-nu-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Johnson in 1868.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1868_andrew_johnson_nu.json"
+    },
+    {
+      "name": "1868-andrew-johnson-nu-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Andrew Johnson in 1868.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1868_andrew_johnson_nu.txt"
+    },
+    {
+      "name": "1869-ulysses-s-grant-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1869.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1869_ulysses_s_grant_r.json"
+    },
+    {
+      "name": "1869-ulysses-s-grant-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1869.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1869_ulysses_s_grant_r.txt"
+    },
+    {
+      "name": "1870-ulysses-s-grant-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1870.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1870_ulysses_s_grant_r.json"
+    },
+    {
+      "name": "1870-ulysses-s-grant-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1870.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1870_ulysses_s_grant_r.txt"
+    },
+    {
+      "name": "1871-ulysses-s-grant-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1871.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1871_ulysses_s_grant_r.json"
+    },
+    {
+      "name": "1871-ulysses-s-grant-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1871.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1871_ulysses_s_grant_r.txt"
+    },
+    {
+      "name": "1872-ulysses-s-grant-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1872.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1872_ulysses_s_grant_r.json"
+    },
+    {
+      "name": "1872-ulysses-s-grant-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1872.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1872_ulysses_s_grant_r.txt"
+    },
+    {
+      "name": "1873-ulysses-s-grant-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1873.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1873_ulysses_s_grant_r.json"
+    },
+    {
+      "name": "1873-ulysses-s-grant-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1873.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1873_ulysses_s_grant_r.txt"
+    },
+    {
+      "name": "1874-ulysses-s-grant-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1874.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1874_ulysses_s_grant_r.json"
+    },
+    {
+      "name": "1874-ulysses-s-grant-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1874.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1874_ulysses_s_grant_r.txt"
+    },
+    {
+      "name": "1875-ulysses-s-grant-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1875.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1875_ulysses_s_grant_r.json"
+    },
+    {
+      "name": "1875-ulysses-s-grant-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1875.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1875_ulysses_s_grant_r.txt"
+    },
+    {
+      "name": "1876-ulysses-s-grant-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1876.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1876_ulysses_s_grant_r.json"
+    },
+    {
+      "name": "1876-ulysses-s-grant-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ulysses S Grant in 1876.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1876_ulysses_s_grant_r.txt"
+    },
+    {
+      "name": "1877-rutherford-b-hayes-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Rutherford B Hayes in 1877.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1877_rutherford_b_hayes_r.json"
+    },
+    {
+      "name": "1877-rutherford-b-hayes-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Rutherford B Hayes in 1877.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1877_rutherford_b_hayes_r.txt"
+    },
+    {
+      "name": "1878-rutherford-b-hayes-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Rutherford B Hayes in 1878.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1878_rutherford_b_hayes_r.json"
+    },
+    {
+      "name": "1878-rutherford-b-hayes-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Rutherford B Hayes in 1878.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1878_rutherford_b_hayes_r.txt"
+    },
+    {
+      "name": "1879-rutherford-b-hayes-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Rutherford B Hayes in 1879.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1879_rutherford_b_hayes_r.json"
+    },
+    {
+      "name": "1879-rutherford-b-hayes-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Rutherford B Hayes in 1879.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1879_rutherford_b_hayes_r.txt"
+    },
+    {
+      "name": "1880-rutherford-b-hayes-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Rutherford B Hayes in 1880.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1880_rutherford_b_hayes_r.json"
+    },
+    {
+      "name": "1880-rutherford-b-hayes-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Rutherford B Hayes in 1880.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1880_rutherford_b_hayes_r.txt"
+    },
+    {
+      "name": "1881-chester-a-arthur-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Chester A Arthur in 1881.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1881_chester_a_arthur_r.json"
+    },
+    {
+      "name": "1881-chester-a-arthur-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Chester A Arthur in 1881.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1881_chester_a_arthur_r.txt"
+    },
+    {
+      "name": "1882-chester-a-arthur-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Chester A Arthur in 1882.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1882_chester_a_arthur_r.json"
+    },
+    {
+      "name": "1882-chester-a-arthur-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Chester A Arthur in 1882.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1882_chester_a_arthur_r.txt"
+    },
+    {
+      "name": "1883-chester-a-arthur-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Chester A Arthur in 1883.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1883_chester_a_arthur_r.json"
+    },
+    {
+      "name": "1883-chester-a-arthur-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Chester A Arthur in 1883.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1883_chester_a_arthur_r.txt"
+    },
+    {
+      "name": "1884-chester-a-arthur-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Chester A Arthur in 1884.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1884_chester_a_arthur_r.json"
+    },
+    {
+      "name": "1884-chester-a-arthur-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Chester A Arthur in 1884.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1884_chester_a_arthur_r.txt"
+    },
+    {
+      "name": "1885-grover-cleveland-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1885.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1885_grover_cleveland_d.json"
+    },
+    {
+      "name": "1885-grover-cleveland-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1885.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1885_grover_cleveland_d.txt"
+    },
+    {
+      "name": "1886-grover-cleveland-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1886.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1886_grover_cleveland_d.json"
+    },
+    {
+      "name": "1886-grover-cleveland-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1886.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1886_grover_cleveland_d.txt"
+    },
+    {
+      "name": "1887-grover-cleveland-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1887.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1887_grover_cleveland_d.json"
+    },
+    {
+      "name": "1887-grover-cleveland-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1887.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1887_grover_cleveland_d.txt"
+    },
+    {
+      "name": "1888-grover-cleveland-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1888.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1888_grover_cleveland_d.json"
+    },
+    {
+      "name": "1888-grover-cleveland-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1888.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1888_grover_cleveland_d.txt"
+    },
+    {
+      "name": "1889-benjamin-harrison-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Benjamin Harrison in 1889.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1889_benjamin_harrison_r.json"
+    },
+    {
+      "name": "1889-benjamin-harrison-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Benjamin Harrison in 1889.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1889_benjamin_harrison_r.txt"
+    },
+    {
+      "name": "1890-benjamin-harrison-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Benjamin Harrison in 1890.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1890_benjamin_harrison_r.json"
+    },
+    {
+      "name": "1890-benjamin-harrison-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Benjamin Harrison in 1890.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1890_benjamin_harrison_r.txt"
+    },
+    {
+      "name": "1891-benjamin-harrison-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Benjamin Harrison in 1891.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1891_benjamin_harrison_r.json"
+    },
+    {
+      "name": "1891-benjamin-harrison-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Benjamin Harrison in 1891.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1891_benjamin_harrison_r.txt"
+    },
+    {
+      "name": "1892-benjamin-harrison-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Benjamin Harrison in 1892.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1892_benjamin_harrison_r.json"
+    },
+    {
+      "name": "1892-benjamin-harrison-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Benjamin Harrison in 1892.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1892_benjamin_harrison_r.txt"
+    },
+    {
+      "name": "1893-grover-cleveland-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1893.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1893_grover_cleveland_d.json"
+    },
+    {
+      "name": "1893-grover-cleveland-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1893.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1893_grover_cleveland_d.txt"
+    },
+    {
+      "name": "1894-grover-cleveland-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1894.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1894_grover_cleveland_d.json"
+    },
+    {
+      "name": "1894-grover-cleveland-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1894.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1894_grover_cleveland_d.txt"
+    },
+    {
+      "name": "1895-grover-cleveland-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1895.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1895_grover_cleveland_d.json"
+    },
+    {
+      "name": "1895-grover-cleveland-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1895.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1895_grover_cleveland_d.txt"
+    },
+    {
+      "name": "1896-grover-cleveland-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1896.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1896_grover_cleveland_d.json"
+    },
+    {
+      "name": "1896-grover-cleveland-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Grover Cleveland in 1896.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1896_grover_cleveland_d.txt"
+    },
+    {
+      "name": "1897-william-mc-kinley-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William Mc Kinley in 1897.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1897_william_mc_kinley_r.json"
+    },
+    {
+      "name": "1897-william-mc-kinley-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William Mc Kinley in 1897.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1897_william_mc_kinley_r.txt"
+    },
+    {
+      "name": "1898-william-mc-kinley-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William Mc Kinley in 1898.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1898_william_mc_kinley_r.json"
+    },
+    {
+      "name": "1898-william-mc-kinley-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William Mc Kinley in 1898.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1898_william_mc_kinley_r.txt"
+    },
+    {
+      "name": "1899-william-mc-kinley-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William Mc Kinley in 1899.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1899_william_mc_kinley_r.json"
+    },
+    {
+      "name": "1899-william-mc-kinley-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William Mc Kinley in 1899.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1899_william_mc_kinley_r.txt"
+    },
+    {
+      "name": "1900-william-mc-kinley-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William Mc Kinley in 1900.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1900_william_mc_kinley_r.json"
+    },
+    {
+      "name": "1900-william-mc-kinley-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William Mc Kinley in 1900.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1900_william_mc_kinley_r.txt"
+    },
+    {
+      "name": "1901-theodore-roosevelt-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1901.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1901_theodore_roosevelt_r.json"
+    },
+    {
+      "name": "1901-theodore-roosevelt-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1901.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1901_theodore_roosevelt_r.txt"
+    },
+    {
+      "name": "1902-theodore-roosevelt-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1902.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1902_theodore_roosevelt_r.json"
+    },
+    {
+      "name": "1902-theodore-roosevelt-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1902.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1902_theodore_roosevelt_r.txt"
+    },
+    {
+      "name": "1903-theodore-roosevelt-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1903.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1903_theodore_roosevelt_r.json"
+    },
+    {
+      "name": "1903-theodore-roosevelt-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1903.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1903_theodore_roosevelt_r.txt"
+    },
+    {
+      "name": "1904-theodore-roosevelt-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1904.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1904_theodore_roosevelt_r.json"
+    },
+    {
+      "name": "1904-theodore-roosevelt-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1904.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1904_theodore_roosevelt_r.txt"
+    },
+    {
+      "name": "1905-theodore-roosevelt-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1905.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1905_theodore_roosevelt_r.json"
+    },
+    {
+      "name": "1905-theodore-roosevelt-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1905.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1905_theodore_roosevelt_r.txt"
+    },
+    {
+      "name": "1906-theodore-roosevelt-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1906.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1906_theodore_roosevelt_r.json"
+    },
+    {
+      "name": "1906-theodore-roosevelt-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1906.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1906_theodore_roosevelt_r.txt"
+    },
+    {
+      "name": "1907-theodore-roosevelt-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1907.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1907_theodore_roosevelt_r.json"
+    },
+    {
+      "name": "1907-theodore-roosevelt-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1907.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1907_theodore_roosevelt_r.txt"
+    },
+    {
+      "name": "1908-theodore-roosevelt-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1908.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1908_theodore_roosevelt_r.json"
+    },
+    {
+      "name": "1908-theodore-roosevelt-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Theodore Roosevelt in 1908.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1908_theodore_roosevelt_r.txt"
+    },
+    {
+      "name": "1909-william-h-taft-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William H Taft in 1909.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1909_william_h_taft_r.json"
+    },
+    {
+      "name": "1909-william-h-taft-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William H Taft in 1909.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1909_william_h_taft_r.txt"
+    },
+    {
+      "name": "1910-william-h-taft-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William H Taft in 1910.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1910_william_h_taft_r.json"
+    },
+    {
+      "name": "1910-william-h-taft-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William H Taft in 1910.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1910_william_h_taft_r.txt"
+    },
+    {
+      "name": "1911-william-h-taft-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William H Taft in 1911.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1911_william_h_taft_r.json"
+    },
+    {
+      "name": "1911-william-h-taft-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William H Taft in 1911.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1911_william_h_taft_r.txt"
+    },
+    {
+      "name": "1912-william-h-taft-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William H Taft in 1912.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1912_william_h_taft_r.json"
+    },
+    {
+      "name": "1912-william-h-taft-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William H Taft in 1912.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1912_william_h_taft_r.txt"
+    },
+    {
+      "name": "1913-woodrow-wilson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1913.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1913_woodrow_wilson_d.json"
+    },
+    {
+      "name": "1913-woodrow-wilson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1913.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1913_woodrow_wilson_d.txt"
+    },
+    {
+      "name": "1914-woodrow-wilson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1914.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1914_woodrow_wilson_d.json"
+    },
+    {
+      "name": "1914-woodrow-wilson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1914.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1914_woodrow_wilson_d.txt"
+    },
+    {
+      "name": "1915-woodrow-wilson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1915.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1915_woodrow_wilson_d.json"
+    },
+    {
+      "name": "1915-woodrow-wilson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1915.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1915_woodrow_wilson_d.txt"
+    },
+    {
+      "name": "1916-woodrow-wilson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1916.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1916_woodrow_wilson_d.json"
+    },
+    {
+      "name": "1916-woodrow-wilson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1916.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1916_woodrow_wilson_d.txt"
+    },
+    {
+      "name": "1917-woodrow-wilson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1917.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1917_woodrow_wilson_d.json"
+    },
+    {
+      "name": "1917-woodrow-wilson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1917.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1917_woodrow_wilson_d.txt"
+    },
+    {
+      "name": "1918-woodrow-wilson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1918.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1918_woodrow_wilson_d.json"
+    },
+    {
+      "name": "1918-woodrow-wilson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1918.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1918_woodrow_wilson_d.txt"
+    },
+    {
+      "name": "1919-woodrow-wilson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1919.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1919_woodrow_wilson_d.json"
+    },
+    {
+      "name": "1919-woodrow-wilson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1919.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1919_woodrow_wilson_d.txt"
+    },
+    {
+      "name": "1920-woodrow-wilson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1920.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1920_woodrow_wilson_d.json"
+    },
+    {
+      "name": "1920-woodrow-wilson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Woodrow Wilson in 1920.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1920_woodrow_wilson_d.txt"
+    },
+    {
+      "name": "1921-warren-g-harding-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Warren G Harding in 1921.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1921_warren_g_harding_r.json"
+    },
+    {
+      "name": "1921-warren-g-harding-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Warren G Harding in 1921.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1921_warren_g_harding_r.txt"
+    },
+    {
+      "name": "1922-warren-g-harding-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Warren G Harding in 1922.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1922_warren_g_harding_r.json"
+    },
+    {
+      "name": "1922-warren-g-harding-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Warren G Harding in 1922.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1922_warren_g_harding_r.txt"
+    },
+    {
+      "name": "1923-calvin-coolidge-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1923.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1923_calvin_coolidge_r.json"
+    },
+    {
+      "name": "1923-calvin-coolidge-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1923.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1923_calvin_coolidge_r.txt"
+    },
+    {
+      "name": "1924-calvin-coolidge-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1924.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1924_calvin_coolidge_r.json"
+    },
+    {
+      "name": "1924-calvin-coolidge-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1924.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1924_calvin_coolidge_r.txt"
+    },
+    {
+      "name": "1925-calvin-coolidge-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1925.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1925_calvin_coolidge_r.json"
+    },
+    {
+      "name": "1925-calvin-coolidge-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1925.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1925_calvin_coolidge_r.txt"
+    },
+    {
+      "name": "1926-calvin-coolidge-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1926.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1926_calvin_coolidge_r.json"
+    },
+    {
+      "name": "1926-calvin-coolidge-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1926.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1926_calvin_coolidge_r.txt"
+    },
+    {
+      "name": "1927-calvin-coolidge-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1927.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1927_calvin_coolidge_r.json"
+    },
+    {
+      "name": "1927-calvin-coolidge-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1927.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1927_calvin_coolidge_r.txt"
+    },
+    {
+      "name": "1928-calvin-coolidge-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1928.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1928_calvin_coolidge_r.json"
+    },
+    {
+      "name": "1928-calvin-coolidge-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Calvin Coolidge in 1928.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1928_calvin_coolidge_r.txt"
+    },
+    {
+      "name": "1929-herbert-hoover-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Herbert Hoover in 1929.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1929_herbert_hoover_r.json"
+    },
+    {
+      "name": "1929-herbert-hoover-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Herbert Hoover in 1929.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1929_herbert_hoover_r.txt"
+    },
+    {
+      "name": "1930-herbert-hoover-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Herbert Hoover in 1930.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1930_herbert_hoover_r.json"
+    },
+    {
+      "name": "1930-herbert-hoover-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Herbert Hoover in 1930.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1930_herbert_hoover_r.txt"
+    },
+    {
+      "name": "1931-herbert-hoover-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Herbert Hoover in 1931.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1931_herbert_hoover_r.json"
+    },
+    {
+      "name": "1931-herbert-hoover-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Herbert Hoover in 1931.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1931_herbert_hoover_r.txt"
+    },
+    {
+      "name": "1932-herbert-hoover-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Herbert Hoover in 1932.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1932_herbert_hoover_r.json"
+    },
+    {
+      "name": "1932-herbert-hoover-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Herbert Hoover in 1932.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1932_herbert_hoover_r.txt"
+    },
+    {
+      "name": "1934-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1934.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1934_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1934-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1934.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1934_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1935-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1935.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1935_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1935-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1935.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1935_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1936-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1936.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1936_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1936-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1936.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1936_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1937-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1937.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1937_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1937-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1937.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1937_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1938-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1938.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1938_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1938-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1938.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1938_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1939-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1939.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1939_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1939-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1939.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1939_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1940-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1940.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1940_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1940-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1940.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1940_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1941-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1941.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1941_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1941-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1941.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1941_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1942-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1942.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1942_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1942-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1942.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1942_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1943-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1943.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1943_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1943-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1943.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1943_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1944-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1944.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1944_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1944-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1944.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1944_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1945-franklin-d-roosevelt-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1945.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1945_franklin_d_roosevelt_d.json"
+    },
+    {
+      "name": "1945-franklin-d-roosevelt-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Franklin D Roosevelt in 1945.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1945_franklin_d_roosevelt_d.txt"
+    },
+    {
+      "name": "1946-harry-s-truman-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1946.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1946_harry_s_truman_d.json"
+    },
+    {
+      "name": "1946-harry-s-truman-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1946.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1946_harry_s_truman_d.txt"
+    },
+    {
+      "name": "1947-harry-s-truman-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1947.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1947_harry_s_truman_d.json"
+    },
+    {
+      "name": "1947-harry-s-truman-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1947.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1947_harry_s_truman_d.txt"
+    },
+    {
+      "name": "1948-harry-s-truman-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1948.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1948_harry_s_truman_d.json"
+    },
+    {
+      "name": "1948-harry-s-truman-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1948.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1948_harry_s_truman_d.txt"
+    },
+    {
+      "name": "1949-harry-s-truman-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1949.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1949_harry_s_truman_d.json"
+    },
+    {
+      "name": "1949-harry-s-truman-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1949.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1949_harry_s_truman_d.txt"
+    },
+    {
+      "name": "1950-harry-s-truman-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1950.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1950_harry_s_truman_d.json"
+    },
+    {
+      "name": "1950-harry-s-truman-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1950.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1950_harry_s_truman_d.txt"
+    },
+    {
+      "name": "1951-harry-s-truman-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1951.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1951_harry_s_truman_d.json"
+    },
+    {
+      "name": "1951-harry-s-truman-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1951.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1951_harry_s_truman_d.txt"
+    },
+    {
+      "name": "1952-harry-s-truman-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1952.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1952_harry_s_truman_d.json"
+    },
+    {
+      "name": "1952-harry-s-truman-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1952.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1952_harry_s_truman_d.txt"
+    },
+    {
+      "name": "1953-dwight-d-eisenhower-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1953.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1953_dwight_d_eisenhower_r.json"
+    },
+    {
+      "name": "1953-dwight-d-eisenhower-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1953.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1953_dwight_d_eisenhower_r.txt"
+    },
+    {
+      "name": "1953-harry-s-truman-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1953.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1953_harry_s_truman_d.json"
+    },
+    {
+      "name": "1953-harry-s-truman-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Harry S Truman in 1953.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1953_harry_s_truman_d.txt"
+    },
+    {
+      "name": "1954-dwight-d-eisenhower-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1954.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1954_dwight_d_eisenhower_r.json"
+    },
+    {
+      "name": "1954-dwight-d-eisenhower-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1954.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1954_dwight_d_eisenhower_r.txt"
+    },
+    {
+      "name": "1955-dwight-d-eisenhower-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1955.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1955_dwight_d_eisenhower_r.json"
+    },
+    {
+      "name": "1955-dwight-d-eisenhower-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1955.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1955_dwight_d_eisenhower_r.txt"
+    },
+    {
+      "name": "1956-dwight-d-eisenhower-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1956.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1956_dwight_d_eisenhower_r.json"
+    },
+    {
+      "name": "1956-dwight-d-eisenhower-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1956.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1956_dwight_d_eisenhower_r.txt"
+    },
+    {
+      "name": "1957-dwight-d-eisenhower-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1957.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1957_dwight_d_eisenhower_r.json"
+    },
+    {
+      "name": "1957-dwight-d-eisenhower-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1957.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1957_dwight_d_eisenhower_r.txt"
+    },
+    {
+      "name": "1958-dwight-d-eisenhower-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1958.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1958_dwight_d_eisenhower_r.json"
+    },
+    {
+      "name": "1958-dwight-d-eisenhower-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1958.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1958_dwight_d_eisenhower_r.txt"
+    },
+    {
+      "name": "1959-dwight-d-eisenhower-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1959.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1959_dwight_d_eisenhower_r.json"
+    },
+    {
+      "name": "1959-dwight-d-eisenhower-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1959.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1959_dwight_d_eisenhower_r.txt"
+    },
+    {
+      "name": "1960-dwight-d-eisenhower-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1960.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1960_dwight_d_eisenhower_r.json"
+    },
+    {
+      "name": "1960-dwight-d-eisenhower-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1960.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1960_dwight_d_eisenhower_r.txt"
+    },
+    {
+      "name": "1961-dwight-d-eisenhower-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1961.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1961_dwight_d_eisenhower_r.json"
+    },
+    {
+      "name": "1961-dwight-d-eisenhower-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Dwight D Eisenhower in 1961.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1961_dwight_d_eisenhower_r.txt"
+    },
+    {
+      "name": "1961-john-f-kennedy-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John F Kennedy in 1961.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1961_john_f_kennedy_d.json"
+    },
+    {
+      "name": "1961-john-f-kennedy-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John F Kennedy in 1961.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1961_john_f_kennedy_d.txt"
+    },
+    {
+      "name": "1962-john-f-kennedy-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John F Kennedy in 1962.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1962_john_f_kennedy_d.json"
+    },
+    {
+      "name": "1962-john-f-kennedy-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John F Kennedy in 1962.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1962_john_f_kennedy_d.txt"
+    },
+    {
+      "name": "1963-john-f-kennedy-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John F Kennedy in 1963.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1963_john_f_kennedy_d.json"
+    },
+    {
+      "name": "1963-john-f-kennedy-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by John F Kennedy in 1963.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1963_john_f_kennedy_d.txt"
+    },
+    {
+      "name": "1964-lyndon-b-johnson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1964.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1964_lyndon_b_johnson_d.json"
+    },
+    {
+      "name": "1964-lyndon-b-johnson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1964.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1964_lyndon_b_johnson_d.txt"
+    },
+    {
+      "name": "1965-lyndon-b-johnson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1965.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1965_lyndon_b_johnson_d.json"
+    },
+    {
+      "name": "1965-lyndon-b-johnson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1965.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1965_lyndon_b_johnson_d.txt"
+    },
+    {
+      "name": "1966-lyndon-b-johnson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1966.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1966_lyndon_b_johnson_d.json"
+    },
+    {
+      "name": "1966-lyndon-b-johnson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1966.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1966_lyndon_b_johnson_d.txt"
+    },
+    {
+      "name": "1967-lyndon-b-johnson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1967.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1967_lyndon_b_johnson_d.json"
+    },
+    {
+      "name": "1967-lyndon-b-johnson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1967.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1967_lyndon_b_johnson_d.txt"
+    },
+    {
+      "name": "1968-lyndon-b-johnson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1968.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1968_lyndon_b_johnson_d.json"
+    },
+    {
+      "name": "1968-lyndon-b-johnson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1968.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1968_lyndon_b_johnson_d.txt"
+    },
+    {
+      "name": "1969-lyndon-b-johnson-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1969.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1969_lyndon_b_johnson_d.json"
+    },
+    {
+      "name": "1969-lyndon-b-johnson-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Lyndon B Johnson in 1969.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1969_lyndon_b_johnson_d.txt"
+    },
+    {
+      "name": "1970-richard-nixon-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Richard Nixon in 1970.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1970_richard_nixon_r.json"
+    },
+    {
+      "name": "1970-richard-nixon-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Richard Nixon in 1970.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1970_richard_nixon_r.txt"
+    },
+    {
+      "name": "1971-richard-nixon-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Richard Nixon in 1971.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1971_richard_nixon_r.json"
+    },
+    {
+      "name": "1971-richard-nixon-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Richard Nixon in 1971.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1971_richard_nixon_r.txt"
+    },
+    {
+      "name": "1972-richard-nixon-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Richard Nixon in 1972.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1972_richard_nixon_r.json"
+    },
+    {
+      "name": "1972-richard-nixon-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Richard Nixon in 1972.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1972_richard_nixon_r.txt"
+    },
+    {
+      "name": "1973-richard-nixon-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Richard Nixon in 1973.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1973_richard_nixon_r.json"
+    },
+    {
+      "name": "1973-richard-nixon-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Richard Nixon in 1973.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1973_richard_nixon_r.txt"
+    },
+    {
+      "name": "1974-richard-nixon-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Richard Nixon in 1974.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1974_richard_nixon_r.json"
+    },
+    {
+      "name": "1974-richard-nixon-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Richard Nixon in 1974.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1974_richard_nixon_r.txt"
+    },
+    {
+      "name": "1975-gerald-r-ford-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Gerald R Ford in 1975.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1975_gerald_r_ford_r.json"
+    },
+    {
+      "name": "1975-gerald-r-ford-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Gerald R Ford in 1975.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1975_gerald_r_ford_r.txt"
+    },
+    {
+      "name": "1976-gerald-r-ford-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Gerald R Ford in 1976.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1976_gerald_r_ford_r.json"
+    },
+    {
+      "name": "1976-gerald-r-ford-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Gerald R Ford in 1976.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1976_gerald_r_ford_r.txt"
+    },
+    {
+      "name": "1977-gerald-r-ford-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Gerald R Ford in 1977.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1977_gerald_r_ford_r.json"
+    },
+    {
+      "name": "1977-gerald-r-ford-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Gerald R Ford in 1977.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1977_gerald_r_ford_r.txt"
+    },
+    {
+      "name": "1978-jimmy-carter-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Jimmy Carter in 1978.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1978_jimmy_carter_d.json"
+    },
+    {
+      "name": "1978-jimmy-carter-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Jimmy Carter in 1978.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1978_jimmy_carter_d.txt"
+    },
+    {
+      "name": "1979-jimmy-carter-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Jimmy Carter in 1979.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1979_jimmy_carter_d.json"
+    },
+    {
+      "name": "1979-jimmy-carter-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Jimmy Carter in 1979.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1979_jimmy_carter_d.txt"
+    },
+    {
+      "name": "1980-jimmy-carter-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Jimmy Carter in 1980.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1980_jimmy_carter_d.json"
+    },
+    {
+      "name": "1980-jimmy-carter-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Jimmy Carter in 1980.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1980_jimmy_carter_d.txt"
+    },
+    {
+      "name": "1981-jimmy-carter-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Jimmy Carter in 1981.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1981_jimmy_carter_d.json"
+    },
+    {
+      "name": "1981-jimmy-carter-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Jimmy Carter in 1981.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1981_jimmy_carter_d.txt"
+    },
+    {
+      "name": "1982-ronald-reagan-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1982.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1982_ronald_reagan_r.json"
+    },
+    {
+      "name": "1982-ronald-reagan-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1982.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1982_ronald_reagan_r.txt"
+    },
+    {
+      "name": "1983-ronald-reagan-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1983.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1983_ronald_reagan_r.json"
+    },
+    {
+      "name": "1983-ronald-reagan-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1983.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1983_ronald_reagan_r.txt"
+    },
+    {
+      "name": "1984-ronald-reagan-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1984.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1984_ronald_reagan_r.json"
+    },
+    {
+      "name": "1984-ronald-reagan-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1984.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1984_ronald_reagan_r.txt"
+    },
+    {
+      "name": "1985-ronald-reagan-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1985.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1985_ronald_reagan_r.json"
+    },
+    {
+      "name": "1985-ronald-reagan-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1985.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1985_ronald_reagan_r.txt"
+    },
+    {
+      "name": "1986-ronald-reagan-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1986.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1986_ronald_reagan_r.json"
+    },
+    {
+      "name": "1986-ronald-reagan-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1986.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1986_ronald_reagan_r.txt"
+    },
+    {
+      "name": "1987-ronald-reagan-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1987.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1987_ronald_reagan_r.json"
+    },
+    {
+      "name": "1987-ronald-reagan-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1987.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1987_ronald_reagan_r.txt"
+    },
+    {
+      "name": "1988-ronald-reagan-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1988.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1988_ronald_reagan_r.json"
+    },
+    {
+      "name": "1988-ronald-reagan-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Ronald Reagan in 1988.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1988_ronald_reagan_r.txt"
+    },
+    {
+      "name": "1989-george-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Bush in 1989.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1989_george_bush_r.json"
+    },
+    {
+      "name": "1989-george-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Bush in 1989.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1989_george_bush_r.txt"
+    },
+    {
+      "name": "1990-george-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Bush in 1990.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1990_george_bush_r.json"
+    },
+    {
+      "name": "1990-george-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Bush in 1990.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1990_george_bush_r.txt"
+    },
+    {
+      "name": "1991-george-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Bush in 1991.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1991_george_bush_r.json"
+    },
+    {
+      "name": "1991-george-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Bush in 1991.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1991_george_bush_r.txt"
+    },
+    {
+      "name": "1992-george-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Bush in 1992.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1992_george_bush_r.json"
+    },
+    {
+      "name": "1992-george-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George Bush in 1992.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1992_george_bush_r.txt"
+    },
+    {
+      "name": "1993-william-j-clinton-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1993.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1993_william_j_clinton_d.json"
+    },
+    {
+      "name": "1993-william-j-clinton-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1993.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1993_william_j_clinton_d.txt"
+    },
+    {
+      "name": "1994-william-j-clinton-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1994.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1994_william_j_clinton_d.json"
+    },
+    {
+      "name": "1994-william-j-clinton-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1994.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1994_william_j_clinton_d.txt"
+    },
+    {
+      "name": "1995-william-j-clinton-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1995.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1995_william_j_clinton_d.json"
+    },
+    {
+      "name": "1995-william-j-clinton-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1995.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1995_william_j_clinton_d.txt"
+    },
+    {
+      "name": "1996-william-j-clinton-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1996.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1996_william_j_clinton_d.json"
+    },
+    {
+      "name": "1996-william-j-clinton-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1996.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1996_william_j_clinton_d.txt"
+    },
+    {
+      "name": "1997-william-j-clinton-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1997.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1997_william_j_clinton_d.json"
+    },
+    {
+      "name": "1997-william-j-clinton-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1997.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1997_william_j_clinton_d.txt"
+    },
+    {
+      "name": "1998-william-j-clinton-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1998.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1998_william_j_clinton_d.json"
+    },
+    {
+      "name": "1998-william-j-clinton-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1998.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1998_william_j_clinton_d.txt"
+    },
+    {
+      "name": "1999-william-j-clinton-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1999.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1999_william_j_clinton_d.json"
+    },
+    {
+      "name": "1999-william-j-clinton-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 1999.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/1999_william_j_clinton_d.txt"
+    },
+    {
+      "name": "2000-william-j-clinton-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 2000.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2000_william_j_clinton_d.json"
+    },
+    {
+      "name": "2000-william-j-clinton-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by William J Clinton in 2000.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2000_william_j_clinton_d.txt"
+    },
+    {
+      "name": "2001-george-w-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2001.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2001_george_w_bush_r.json"
+    },
+    {
+      "name": "2001-george-w-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2001.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2001_george_w_bush_r.txt"
+    },
+    {
+      "name": "2002-george-w-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2002.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2002_george_w_bush_r.json"
+    },
+    {
+      "name": "2002-george-w-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2002.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2002_george_w_bush_r.txt"
+    },
+    {
+      "name": "2003-george-w-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2003.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2003_george_w_bush_r.json"
+    },
+    {
+      "name": "2003-george-w-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2003.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2003_george_w_bush_r.txt"
+    },
+    {
+      "name": "2004-george-w-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2004.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2004_george_w_bush_r.json"
+    },
+    {
+      "name": "2004-george-w-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2004.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2004_george_w_bush_r.txt"
+    },
+    {
+      "name": "2005-george-w-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2005.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2005_george_w_bush_r.json"
+    },
+    {
+      "name": "2005-george-w-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2005.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2005_george_w_bush_r.txt"
+    },
+    {
+      "name": "2006-george-w-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2006.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2006_george_w_bush_r.json"
+    },
+    {
+      "name": "2006-george-w-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2006.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2006_george_w_bush_r.txt"
+    },
+    {
+      "name": "2007-george-w-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2007.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2007_george_w_bush_r.json"
+    },
+    {
+      "name": "2007-george-w-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2007.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2007_george_w_bush_r.txt"
+    },
+    {
+      "name": "2008-george-w-bush-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2008.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2008_george_w_bush_r.json"
+    },
+    {
+      "name": "2008-george-w-bush-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by George W Bush in 2008.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2008_george_w_bush_r.txt"
+    },
+    {
+      "name": "2009-barack-obama-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2009.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2009_barack_obama_d.json"
+    },
+    {
+      "name": "2009-barack-obama-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2009.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2009_barack_obama_d.txt"
+    },
+    {
+      "name": "2010-barack-obama-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2010.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2010_barack_obama_d.json"
+    },
+    {
+      "name": "2010-barack-obama-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2010.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2010_barack_obama_d.txt"
+    },
+    {
+      "name": "2011-barack-obama-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2011.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2011_barack_obama_d.json"
+    },
+    {
+      "name": "2011-barack-obama-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2011.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2011_barack_obama_d.txt"
+    },
+    {
+      "name": "2012-barack-obama-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2012.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2012_barack_obama_d.json"
+    },
+    {
+      "name": "2012-barack-obama-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2012.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2012_barack_obama_d.txt"
+    },
+    {
+      "name": "2013-barack-obama-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2013.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2013_barack_obama_d.json"
+    },
+    {
+      "name": "2013-barack-obama-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2013.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2013_barack_obama_d.txt"
+    },
+    {
+      "name": "2014-barack-obama-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2014.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2014_barack_obama_d.json"
+    },
+    {
+      "name": "2014-barack-obama-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2014.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2014_barack_obama_d.txt"
+    },
+    {
+      "name": "2015-barack-obama-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2015.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2015_barack_obama_d.json"
+    },
+    {
+      "name": "2015-barack-obama-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2015.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2015_barack_obama_d.txt"
+    },
+    {
+      "name": "2016-barack-obama-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2016.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2016_barack_obama_d.json"
+    },
+    {
+      "name": "2016-barack-obama-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Barack Obama in 2016.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2016_barack_obama_d.txt"
+    },
+    {
+      "name": "2017-donald-j-trump-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Donald J Trump in 2017.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2017_donald_j_trump_r.json"
+    },
+    {
+      "name": "2017-donald-j-trump-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Donald J Trump in 2017.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2017_donald_j_trump_r.txt"
+    },
+    {
+      "name": "2018-donald-j-trump-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Donald J Trump in 2018.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2018_donald_j_trump_r.json"
+    },
+    {
+      "name": "2018-donald-j-trump-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Donald J Trump in 2018.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2018_donald_j_trump_r.txt"
+    },
+    {
+      "name": "2019-donald-j-trump-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Donald J Trump in 2019.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2019_donald_j_trump_r.json"
+    },
+    {
+      "name": "2019-donald-j-trump-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Donald J Trump in 2019.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2019_donald_j_trump_r.txt"
+    },
+    {
+      "name": "2020-donald-j-trump-r-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Donald J Trump in 2020.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2020_donald_j_trump_r.json"
+    },
+    {
+      "name": "2020-donald-j-trump-r-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Donald J Trump in 2020.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2020_donald_j_trump_r.txt"
+    },
+    {
+      "name": "2021-joseph-r-biden-d-json",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Joseph R Biden in 2021.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2021_joseph_r_biden_d.json"
+    },
+    {
+      "name": "2021-joseph-r-biden-d-txt",
+      "title": "State of the Union Address",
+      "description": "State of the Union address given by Joseph R Biden in 2021.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/2021_joseph_r_biden_d.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Wikisource",
+      "web": "https://en.wikisource.org/wiki/Portal:State_of_the_Union_Speeches_by_United_States_Presidents"
+    }
+  ],
+  "keywords": [
+    "speeches",
+    "politics",
+    "usa",
+    "us",
+    "president",
+    "sotu",
+    "state of the union",
+    "addresses",
+    "text",
+    "corpus",
+    "nlp",
+    "language",
+    "english",
+    "en"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

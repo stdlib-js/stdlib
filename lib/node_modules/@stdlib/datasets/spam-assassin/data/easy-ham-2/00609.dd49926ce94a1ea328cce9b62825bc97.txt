@@ -1,0 +1,87 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:40:39 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5716244101
+	for <jm@localhost>; Fri,  9 Aug 2002 10:34:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:34:39 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EYVb08127 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:34:31 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id WAA01295 for
+    <jm-razor@jmason.org>; Thu, 8 Aug 2002 22:29:05 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cufU-0004fE-00; Thu,
+    08 Aug 2002 14:18:04 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17cuef-0001ma-00 for <razor-users@lists.sourceforge.net>; Thu,
+    08 Aug 2002 14:17:14 -0700
+Content-Class: urn:content-classes:message
+Subject: RE: [Razor-users] What's wrong with the Razor servers now?
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+Message-Id: <D79A56AD131896448D0860DEE07CBE1FE15A@med-core07.med.wayne.edu>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [Razor-users] What's wrong with the Razor servers now?
+Thread-Index: AcI/Hah4sG2DGoMqRXSnNMBvG50rZAAAEcdg
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: "Jordan Ritter" <jpr5@darkridge.com>,
+	<razor-users@lists.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 17:17:05 -0400
+Date: Thu, 8 Aug 2002 17:17:05 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g79EYVb08127
+
+I'm one of the 30,000 but it's not working very well this week with the
+TES updates and servers not syncing.  
+
+-----Original Message-----
+From: Jordan Ritter [mailto:jpr5@darkridge.com] 
+Sent: Thursday, August 08, 2002 4:45 PM
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] What's wrong with the Razor servers now?
+
+
+On Thu, Aug 08, 2002 at 01:36:15PM -0700, Craig R.Hughes wrote:
+
+# Razor2 seems to have been a long time in coming, [...] and doesn't #
+currently work.
+
+Quite a strong statement, Craig, one which over 30,000 active users a
+day would strongly disagree with.
+
+
+--jordan
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

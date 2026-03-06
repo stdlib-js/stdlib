@@ -1,0 +1,300 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# Moment-Generating Function
+
+> [Negative binomial][negative-binomial-distribution] distribution moment-generating function (MGF).
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+The [moment-generating function][mgf] for a [negative binomial][negative-binomial-distribution] random variable is
+
+<!-- <equation class="equation" label="eq:negative_binomial_mgf_function" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] =  \biggl(\frac{\left( 1- p \right) e^t }{1 - p e^t}\biggr)^{\!r} \text{ for }t<-\log p" alt="Moment-generating function (MGF) for a negative binomial distribution."> -->
+
+```math
+M_X(t) := \mathbb{E}\!\left[e^{tX}\right] =  \biggl(\frac{\left( 1- p \right) e^t }{1 - p e^t}\biggr)^{\!r} \text{ for }t<-\log p
+```
+
+<!-- <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] =  \biggl(\frac{\left( 1- p \right) e^t }{1 - p e^t}\biggr)^{\!r} \text{ for }t&lt;-\log p" data-equation="eq:negative_binomial_mgf_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/stats/base/dists/negative-binomial/mgf/docs/img/equation_negative_binomial_mgf_function.svg" alt="Moment-generating function (MGF) for a negative binomial distribution.">
+    <br>
+</div> -->
+
+<!-- </equation> -->
+
+where `r > 0` is the number of failures until the experiment is stopped and `0 <= p <= 1` is the success probability.
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var mgf = require( '@stdlib/stats/base/dists/negative-binomial/mgf' );
+```
+
+#### mgf( t, r, p )
+
+Evaluates the [moment-generating function][mgf] for a [negative binomial][negative-binomial-distribution] distribution with number of successes until experiment is stopped `r` and success probability `p`.
+
+```javascript
+var y = mgf( 0.05, 20.0, 0.8 );
+// returns ~267.839
+
+y = mgf( 0.1, 20.0, 0.1 );
+// returns ~9.347
+```
+
+While `r` can be interpreted as the number of successes until the experiment is stopped, the [negative binomial][negative-binomial-distribution] distribution is also defined for non-integers `r`. In this case, `r` denotes shape parameter of the [gamma mixing distribution][negative-binomial-mixture-representation].
+
+```javascript
+var y = mgf( 0.1, 15.5, 0.5 );
+// returns ~26.375
+
+y = mgf( 0.5, 7.4, 0.4 );
+// returns ~2675.677
+```
+
+If `t >= -ln( p )`, the function returns `NaN`.
+
+```javascript
+var y = mgf( 0.7, 15.5, 0.5 ); // -ln( p ) = ~0.693
+// returns NaN
+```
+
+If provided a `r` which is not a positive number, the function returns `NaN`.
+
+```javascript
+var y = mgf( 0.2, 0.0, 0.5 );
+// returns NaN
+
+y = mgf( 0.2, -2.0, 0.5 );
+// returns NaN
+```
+
+If provided `NaN` as any argument, the function returns `NaN`.
+
+```javascript
+var y = mgf( NaN, 20.0, 0.5 );
+// returns NaN
+
+y = mgf( 0.0, NaN, 0.5 );
+// returns NaN
+
+y = mgf( 0.0, 20.0, NaN );
+// returns NaN
+```
+
+If provided a success probability `p` outside of `[0,1]`, the function returns `NaN`.
+
+```javascript
+var y = mgf( 0.2, 20, -1.0 );
+// returns NaN
+
+y = mgf( 0.2, 20, 1.5 );
+// returns NaN
+```
+
+#### mgf.factory( r, p )
+
+Returns a function for evaluating the [moment-generating function][mgf] of a [negative binomial][negative-binomial-distribution] distribution with number of successes until experiment is stopped `r` and success probability `p`.
+
+```javascript
+var myMGF = mgf.factory( 4.3, 0.4 );
+var y = myMGF( 0.2 );
+// returns ~4.696
+
+y = myMGF( 0.4 );
+// returns ~30.83
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var mgf = require( '@stdlib/stats/base/dists/negative-binomial/mgf' );
+
+var opts = {
+    'dtype': 'float64'
+};
+var t = uniform( 10, -0.5, 0.5, opts );
+var r = uniform( 10, 0.0, 50.0, opts );
+var p = uniform( 10, 0.0, 1.0, opts );
+
+logEachMap( 't: %0.4f, r: %0.4f, p: %0.4f, M_X(t;r,p): %0.4f', t, r, p, mgf );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/negative-binomial/mgf.h"
+```
+
+#### stdlib_base_dists_negative_binomial_mgf( t, r, p )
+
+Evaluates the [moment-generating function][mgf] for a [negative binomial][negative-binomial-distribution] distribution with number of successes until experiment is stopped `r` and success probability `p`.
+
+```c
+double out = stdlib_base_dists_negative_binomial_mgf( 0.05, 20.0, 0.8 );
+// returns ~267.839
+```
+
+The function accepts the following arguments:
+
+-   **t**: `[in] double` input value.
+-   **r**: `[in] double` number of successes until experiment is stopped.
+-   **p**: `[in] double` success probability.
+
+```c
+double stdlib_base_dists_negative_binomial_mgf( const double t, const double r, const double p );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/negative-binomial/mgf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v * ( max - min ) );
+}
+
+int main( void ) {
+    double t;
+    double r;
+    double p;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        t = random_uniform( -1.0, 1.0 );
+        r = random_uniform( 1.0, 10.0 );
+        p = random_uniform( 0.0, 1.0 );
+        y = stdlib_base_dists_negative_binomial_mgf( t, r, p );
+        printf( "t: %lf, r: %lf, p: %lf, M_X(t;r,p): %lf\n", t, r, p, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[mgf]: https://en.wikipedia.org/wiki/Moment-generating_function
+
+[negative-binomial-mixture-representation]: https://en.wikipedia.org/wiki/Negative_binomial_distribution#Gamma.E2.80.93Poisson_mixture
+
+[negative-binomial-distribution]: https://en.wikipedia.org/wiki/Negative_binomial_distribution
+
+</section>
+
+<!-- /.links -->

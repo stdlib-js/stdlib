@@ -1,0 +1,82 @@
+From secprog-return-489-jm=jmason.org@securityfocus.com  Fri Sep  6 15:25:00 2002
+Return-Path: <secprog-return-489-yyyy=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4CAB616F16
+	for <jm@localhost>; Fri,  6 Sep 2002 15:24:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 15:24:59 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869w7C29931 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:58:07 +0100
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [66.38.151.26]) by webnote.net (8.9.3/8.9.3) with ESMTP id UAA17903 for
+    <jm@jmason.org>; Thu, 5 Sep 2002 20:25:35 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    1FD148F315; Thu,  5 Sep 2002 10:03:49 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 24294 invoked from network); 5 Sep 2002 09:34:03 -0000
+Date: Thu, 5 Sep 2002 13:49:38 +0400 (MSD)
+From: Artem Frolov <frolov@sigma.ispras.ru>
+X-X-Sender: frolov@zambra.ispras.ru
+To: Yannick Gingras <ygingras@ygingras.net>
+Cc: secprog@securityfocus.com
+Subject: Re: Secure Sofware Key
+In-Reply-To: <200209040652.07546.ygingras@ygingras.net>
+Message-Id: <Pine.LNX.4.40.0209051340310.18579-100000@zambra.ispras.ru>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+
+Hi
+
+On Wed, 4 Sep 2002, Yannick Gingras wrote:
+
+> BTW thanks for all of you who provided interestiong insight.  I'm playing with 
+> gdb's dissassembler now but I don't think it's what a typical cracker would 
+> use.  Any hints on UNIX cracking tools ?
+
+There's also an 'objdump' program, and 'biew' hex viewer/disassembler. A good 
+starting point to search is http://www.freshmeat.net/
+
+However, cracking and reverse engineering tools are not so ubiquitous on UNIX as 
+they are on Windows platform for two main reasons:
+
+1. The main customers of commercial Unices (Solaris, HP-UX, Aix, SCO...) are 
+respectable companies. They are ready to pay big bucks for software they need: the reputation matters.
+
+2. Most software for free and open source Unices like Linux and xBSD (this 
+software often may be used on commercial unices as well) is, well, free and 
+open source.
+
+Regards
+/Artem
+
+-- 
+ Artem Frolov <frolov@ispras.ru>
+/------------------------------------------------------------------\
+ Software Engineer, System Administrator                       
+ Institute for System Programming, Russian Academy of Sciences     
+ Tel. +7 095 912-5317 (ext 4406), Cellular: +7 095 768-7067
+ C7 40 CA 41 2A 18 89 D6  29 45 DF 50 75 13 6D 7A  A4 87 2B 76
+\------------------------------------------------------------------/
+
+------------------------------------------------------------------
+Basic Definitions of Science:
+	If it's green or wiggles, it's biology.
+	If it stinks, it's chemistry.
+	If it doesn't work, it's physics.
+------------------------------------------------------------------
+
+
+
+

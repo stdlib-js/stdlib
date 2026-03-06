@@ -1,0 +1,108 @@
+{
+  "options": {
+    "task": "build",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/number/float64/base/set-high-word",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/exponent-bias"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/number/float64/base/set-high-word",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/exponent-bias"
+      ]
+    },
+    {
+      "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/number/float64/base/set-high-word",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/exponent-bias"
+      ]
+    },
+    {
+      "task": "build",
+      "wasm": true,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float64/base/get-high-word",
+        "@stdlib/number/float64/base/set-high-word",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float64/ninf",
+        "@stdlib/constants/float64/exponent-bias"
+      ]
+    }
+  ]
+}
+

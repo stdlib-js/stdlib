@@ -1,0 +1,48 @@
+From fork-admin@xent.com  Fri Jul 19 17:31:49 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 282F8440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 12:31:49 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 17:31:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6JGVpJ14589 for <jm@jmason.org>;
+    Fri, 19 Jul 2002 17:31:52 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3DC2E2940EE; Fri, 19 Jul 2002 09:22:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 2D7A5294098 for <fork@xent.com>; Fri,
+    19 Jul 2002 09:22:06 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id DE0C53ED74;
+    Fri, 19 Jul 2002 12:32:23 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id DC7963ED5E; Fri, 19 Jul 2002 12:32:23 -0400 (EDT)
+Date: Fri, 19 Jul 2002 12:32:23 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: Robert Harley <harley@argote.ch>
+Cc: fork@spamassassin.taint.org
+Subject: Re: JPEGs patented
+In-Reply-To: <20020719161136.4DFA2C44E@argote.ch>
+Message-Id: <Pine.BSO.4.44.0207191232060.2512-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+
+
+So are PNGs still kosh?
+
+
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

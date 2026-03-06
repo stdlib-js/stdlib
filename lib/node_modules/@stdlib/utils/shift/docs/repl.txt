@@ -1,0 +1,44 @@
+
+{{alias}}( collection )
+    Removes and returns the first element of a collection.
+
+    The function returns an array with two elements: the shortened collection
+    and the removed element.
+
+    If the input collection is a typed array whose length is greater than `0`,
+    the first return value does not equal the input reference.
+
+    For purposes of generality, always treat the output collection as distinct
+    from the input collection.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        A collection. If the collection is an `Object`, the value should be
+        array-like.
+
+    Returns
+    -------
+    out: Array
+        Updated collection and the removed item.
+
+    Examples
+    --------
+    // Arrays:
+    > var arr = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
+    > var out = {{alias}}( arr )
+    [ [ 2.0, 3.0, 4.0, 5.0 ], 1.0 ]
+
+    // Typed arrays:
+    > arr = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0 ] );
+    > out = {{alias}}( arr )
+    [ <Float64Array>[ 2.0 ], 1.0 ]
+
+    // Array-like object:
+    > arr = { 'length': 2, '0': 1.0, '1': 2.0 };
+    > out = {{alias}}( arr )
+    [ { 'length': 1, '0': 2.0 }, 1.0 ]
+
+    See Also
+    --------
+

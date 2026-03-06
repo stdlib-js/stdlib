@@ -1,0 +1,54 @@
+From dougy@brizzie.org  Fri Sep 20 11:38:29 2002
+Return-Path: <dougy@brizzie.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0232716F03
+	for <jm@localhost>; Fri, 20 Sep 2002 11:38:29 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 11:38:29 +0100 (IST)
+Received: from brizzie.org (CPE-203-51-206-87.qld.bigpond.net.au
+    [203.51.206.87]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8K3TEC18700 for <jm@jmason.org>; Fri, 20 Sep 2002 04:29:16 +0100
+Received: from oracle (oracle.brizzie.org [192.168.0.3]) by brizzie.org
+    (8.12.3/8.12.3) with SMTP id g8K3Tdx2020418; Fri, 20 Sep 2002 13:29:40
+    +1000 (EST) (envelope-from dougy@brizzie.org)
+Message-Id: <031901c26055$f4aefab0$0300a8c0@oracle>
+From: "Doug Young" <dougy@brizzie.org>
+To: "Justin Mason" <yyyy@spamassassin.taint.org>
+Cc: <spamassassin-talk@example.sourceforge.net>
+References: <20020813124910.563B943C32@phobos.labs.netnoteinc.com>
+Subject: Re: [SAtalk] dependencies / pre-requisites for installation in
+    FreeBSD
+Date: Fri, 20 Sep 2002 13:29:39 +1000
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+
+> > Would someone please enlighten me on dependencies / pre-requisites
+> > for installation in FreeBSD. The 'official' documentation isn't
+particularly
+> > explicit about this stuff .... eg 'procmail' is mentioned but without
+saying
+> > whether or not its essential, & no info provided on whether GNUmake is
+> > required or if standard BSD 'make' is OK.
+>
+> I thought we were quite good about it, in the README file!
+>
+> procmail is essential *if* you're using (a) SpamAssassin for local
+> delivery, (b) not using a milter, and (c) not using a Mail::Audit
+> script instead.  So probably yes.
+>
+> BSD make is OK, if Perl generally uses it to build Perl modules.
+> SpamAssassin is just anotehr Perl module in that respect.
+>
+Back to this stuff again  ..... searched high & low but definitely nothing
+on this system even vaguely resembling a README file for spamassassin.
+I have procmail installed but having major problems comprehending the
+setup .... would appreciate info on any 'simple english' HOWTo
+
+

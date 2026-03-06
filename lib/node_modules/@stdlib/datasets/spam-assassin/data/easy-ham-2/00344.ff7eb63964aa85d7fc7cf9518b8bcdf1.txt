@@ -1,0 +1,106 @@
+From ilug-admin@linux.ie  Mon Aug 12 18:50:43 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ADB524417B
+	for <jm@localhost>; Mon, 12 Aug 2002 13:50:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 18:50:20 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CHoBb27789 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 18:50:11 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA30221; Mon, 12 Aug 2002 18:49:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from web13904.mail.yahoo.com (web13904.mail.yahoo.com
+    [216.136.175.67]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id SAA30195
+    for <ilug@linux.ie>; Mon, 12 Aug 2002 18:49:33 +0100
+Message-Id: <20020812174932.58511.qmail@web13904.mail.yahoo.com>
+Received: from [159.134.179.247] by web13904.mail.yahoo.com via HTTP;
+    Mon, 12 Aug 2002 19:49:32 CEST
+Date: Mon, 12 Aug 2002 19:49:32 +0200 (CEST)
+From: =?iso-8859-1?q?Paul=20Linehan?= <plinehan@yahoo.com>
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+To: ilug@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+ 
+
+wintermute <cout@eircom.net> a écrit:
+
+
+> > I'm confused. I thought it was GPL'ed and
+> > that the money you paid SuSE was for your
+> > 60 day support or whatever? 
+
+ 
+> No, as of oh, about a year to a year and a half ago
+> SuSE revoked it's free offering of it's retail
+> distro.
+
+> Sometime about the start of the great slump, SuSE
+> pulled free release of it's main x86 product.
+
+
+Fine - nobody can oblige SuSE to do anything other
+than put up the ftp version, but surely they
+can't prevent a CD owner from burning a copy and
+giving it to me?
+
+What is the GPL all about then?
+
+> I'm not sure on the details of it, but I think SuSE
+> have probably done an OpenBSD of the cd they sell?
+
+
+But *_surely_* they cannot BSD Linux? It's not
+theirs to BSD!
+
+ 
+> I could be wrong, I don't use SuSE so haven't
+> investigated, but essentially the only 'free'
+> version of SuSE will be it's tp offering.
+
+
+Nobody can oblige them to give away anything
+other than ftp - I'm not asking for that. I'm
+asking for somebody who has Linux (GPL'ed) to
+burn a copy for me and give it to me in exchange
+for a reasonable consideration (say, the price of
+the CDs and a bottle of Frascati or a couple of
+pints?).
+
+
+What does the GPL mean now?
+
+
+I don't want their 60 days of free email support
+or anything similar (if I did, I would pay for
+it).
+
+
+Paul...
+
+
+
+
+___________________________________________________________
+Do You Yahoo!? -- Une adresse @yahoo.fr gratuite et en français !
+Yahoo! Mail : http://fr.mail.yahoo.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

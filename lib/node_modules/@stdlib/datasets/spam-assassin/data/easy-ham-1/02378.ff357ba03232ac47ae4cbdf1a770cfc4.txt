@@ -1,0 +1,145 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:52:39 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3C09716F69
+	for <jm@localhost>; Wed,  9 Oct 2002 10:51:38 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:51:38 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9980GK25148 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:00:17 +0100
+Message-Id: <200210090800.g9980GK25148@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: In praise of evolvable formats
+Date: Wed, 09 Oct 2002 08:00:15 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/10/08.html#in_praise_of_evolvable_formats
+Date: 2002-10-08T12:28:10-05:00
+
+_Clay Shirky_: In Praise of Evolvable Systems[1]. This entire article could be 
+rewritten to explain RSS. In fact, let's do that. 
+
+If it were April Fool's Day, the Net's only official holiday, and you wanted to 
+design a &#8220;novelty format&#8221; to slip by the W3C as a joke, it might 
+look something like RSS 0.9x/2.0: 
+
+- It would specify limits on data values, then remove them, then specify 
+required elements, then make them optional, thus silently breaking an unknown 
+number of parsers around the world. 
+- It would encourage use of entity-encoded HTML in its most important element, 
+thus ensuring both security risks and unpredictable display for the end user. 
+- It would ignore years of standards work in other fields, committing such 
+egregious sins as defining a guid element that wasn't a GUID, and using an 
+obsolete date format that couldn't easily be sorted by date. 
+- Its primary method of extensibility would be to add new elements to the core 
+namespace without telling anyone or documenting them, thus making it wholely 
+resistant to DTD, schema, or validation of any kind. 
+- After years of worldwide deployment, it would completely reverse its 
+add-whatever-you-want extensibility rules in favor of namespaces, which the 
+spec would neither define nor elaborate on. 
+- After adopting namespaces, it would fail to deprecate any existing elements 
+semantically identical to namespace elements already in wide use. It would also 
+fail to provide precedence rules in cases where a document attempted to say the 
+same thing in two different ways, thus ensuring mass confusion among producers 
+and inconsistent behavior across consumers. 
+
+RSS 0.9x and 2.0 are the Whoopee Cushion and Joy Buzzer of syndication formats. 
+For anyone who has tried to accomplish anything serious with metadata, it's 
+pretty obvious that of the various implementations of a worldwide syndication 
+format, we have the worst one possible. 
+
+Except, of course, for all the others. 
+
+The problem with that list of RSS deficiencies is that it is also a list of 
+necessities&#8212;RSS has flourished in a way that no other syndication format 
+has, not despite many of these qualities but because of them. The very 
+weaknesses that make RSS so infuriating to serious practitioners also make it 
+possible in the first place. 
+
+- Removing length limitations on description and making title optional opened 
+up RSS to a whole new category of producer: the weblogger. 
+- Allowing encoded HTML in description let publishers reuse both their existing 
+content and the existing RSS infrastructure, without requiring them to produce 
+valid XHTML (which could be embedded directly into an XML document). Social 
+mores, rather than technical rules, prevent producers from intentionally 
+introducing security risks through malicious script tags or unpredictable 
+display through unclosed HTML elements. 
+- Few publishing tools can produce real conforming GUIDs, and it doesn't 
+matter, because virtually all RSS parsers are written in high level languages 
+where handling strings is more efficient than converting strings to bytecodes 
+and handling bytecodes. As for dates, by convention an RSS document is laid out 
+in reverse chronological order, and no one seems to be clamoring for more 
+flexibility. 
+
+Furthermore, its almost babyish XML syntax, so far from any serious 
+computational framework (Where are the namespaces? Where is the Document Type 
+Description? Why is the aggregators' enforcement of conformity so lax?), made 
+it possible for anyone wanting an RSS feed to write one. The effects of this 
+ease of implementation only become clear when you compare it to the attempts 
+over the years to &#8220;do RSS right&#8221;&#8212;most notably RSS 1.0 in the 
+year 2000. RSS 1.0 had three main benefits: 
+
+- Backward compatible with RSS 0.90, which was never widely deployed, and which 
+fell into obscurity as soon as (the much simpler) RSS 0.91 was introduced. 
+- Based on RDF (specifically a serialization called RDF/XML), a spec which, at 
+the time and to this day, continues to change or threaten to change. Two years 
+later, there are no major languages or development platforms that ship with 
+parsers to consume RDF, although many (Perl, Python, .NET) have third-party RDF 
+parsers in various states of development and conformance. (The release version 
+is generally out of date; CVS access is recommended. You get the idea.) 
+Meanwhile, RDF/XML production tools are so inconsistent that even RDF experts 
+recommend not using RDF tools to produce an RSS 1.0 feed if you want it to 
+actually be read by any major RSS aggregator. Despite the two-year-old promise 
+of better tools[2], it is now the year 2002, and I built my RSS 1.0 
+feed&#8212;in the most sophisticated personal publishing system in the 
+world&#8212;by manually typing a mishmash of template tags and angle brackets 
+into a TEXTAREA of an HTML form. 
+- Extensible through namespaces, which, as mentioned above, have been 
+haphazardly and poorly incorporated into RSS 2.0, where they appear to be 
+flourishing. 
+
+Evolvable formats&#8212;those that proceed by being adapted and extended in a 
+thousand small ways&#8212;have three main characteristics that are germane to 
+their eventual victories over strong, centrally designed formats. 
+
+- Only solutions that produce partial results with imperfect tools can succeed. 
+My RSS feed is an XML document produced by a template that I built in a 
+TEXTAREA, and consumed by hundreds of parsers around the world that know 
+nothing of XML and hack apart my feed with regular expressions. The world is 
+littered with formats that would have worked if only everyone had better tools. 
+If everyone in the world had a perfect RDF parser at their disposal, it would 
+be trivial to produce and consume all the world's metadata in RDF. Without such 
+perfect tools, both production and consumption instantly become nightmares. 
+There is no middle ground. 
+- What is, is wrong. Because evolvable formats have always been adapted to 
+earlier conditions and are always being further adapted to present conditions, 
+they are always behind the times. RSS was being stretched with long 
+descriptions, optional titles, and entity-encoded HTML even before such 
+practices were codified in the spec, and long before all consumers could handle 
+them. No evolving format is ever perfectly in sync with the challenges it 
+faces. 
+- Finally, Orgel's Rule, named for the evolutionary biologist Leslie 
+Orgel&#8212;&#8220;Evolution is cleverer than you are&#8221;. As with the list 
+of RSS's obvious deficiencies above, it is easy to point out what is wrong with 
+any evolvable system at any point in its life. No one seeing RSS 1.0 and RSS 
+0.91 side-by-side could doubt that RSS 1.0 had the superior technology, that it 
+&#8220;did things right&#8221;. However, the ability to understand what is 
+missing at any given moment does not mean that one person or a small central 
+group can design a better system in the long haul. 
+
+Designed formats start out strong and improve logarithmically. Evolvable 
+formats start out weak and improve exponentially. RSS 2.0 is not the perfect 
+syndication format, just the best one that's also currently practical. 
+Infrastructure built on evolvable formats will always be partially incomplete, 
+partially wrong and ultimately better designed than its competition.
+
+
+
+[1] http://www.shirky.com/writings/evolve.html
+[2] http://groups.yahoo.com/group/syndication/message/467
+
+

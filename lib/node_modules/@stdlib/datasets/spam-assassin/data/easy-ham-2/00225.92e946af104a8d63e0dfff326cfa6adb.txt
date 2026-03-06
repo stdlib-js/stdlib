@@ -1,0 +1,111 @@
+From ilug-admin@linux.ie  Fri Aug  2 10:06:32 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E75B6440F3
+	for <jm@localhost>; Fri,  2 Aug 2002 05:06:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 10:06:30 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7298P213911 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 10:08:25 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA28730; Fri, 2 Aug 2002 10:06:57 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay01.esat.net (relay01.esat.net [192.111.39.11]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA28708 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 10:06:51 +0100
+Received: from www.emuse.ie (hassle.emuse.ie) [193.120.145.154] by
+    relay01.esat.net with esmtp id 17aYOZ-0004tY-00; Fri, 02 Aug 2002 10:06:51
+    +0100
+Received: by HASSLE with Internet Mail Service (5.5.2653.19) id <DL00S7BS>;
+    Fri, 2 Aug 2002 10:07:22 +0100
+Message-Id: <5FE418B3F962D411BED40000E818B33C9C8E7F@HASSLE>
+From: "Hunt, Bryan" <B.Hunt@emuse-tech.com>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: RE: [ILUG] Dell GX260 V Redhat 7.3
+Date: Fri, 2 Aug 2002 10:07:17 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+When I get a box I don't want any of that integrated chipset crap 
+whether its for winblows or linux. Its just like IBM (mwave dsp chip ?)
+(shared video/main memory ?)in the old days. I know you can flip a 
+mboard jumper switch to turn crap off and install your own cards 
+but why bother ?
+
+To clarify my point is this ....
+Dell makes excellent machines and I would recomend their machines and 
+their aftersales support over any other manufacturer that I can think of.
+However if you want that box for linux and you have a life and you dont
+want to spend a week of it fucking arround and googling to get that box
+working properly be damned sure you do your research before you buy it.
+And this especially applies to their budget machines.
+
+And this isn't taking a swing at you John but ...
+
+>>Just a bad thing for those that hope a distro will work out of
+>>the box.
+
+A lot of the time the reason that you encounter this is cause someone has 
+such a box and they say to you "hey can you install that linux code that I
+got
+from the guy in the internet cafe" :-) and you say sure and you go to their
+house 
+(without a net connection/56k modem). And the machine has got this crap
+windoze
+only hardware and eventually you shrug in frustration and they say 
+"well I didn't expect much from something thats free anyhow"
+
+When Dell were squabbling with Windows and it looked as though there might
+be 
+a Dell/Redhat alliance my Inspiron 4000 was produced ... it worked a treat,
+now that dell doesn't give a shit about linux all their new cheap boxes are
+linux 
+incompatable in small ways.
+
+--B
+
+-----Original Message-----
+From: John P. Looney [mailto:valen@tuatha.org]
+Sent: 02 August 2002 09:42
+To: ilug@linux.ie
+Subject: Re: [ILUG] Dell GX260 V Redhat 7.3
+
+
+On Fri, Aug 02, 2002 at 09:28:57AM +0100, Hunt, Bryan mentioned:
+> I'm not knocking dell in general, my next machine is going to be a dell.
+> But buying a random dell box is likely to result in much tearing out of
+> hair. 
+
+ Buying any new machine is going to cause problems with a six month old
+set of drivers. Same happens in windows - you have to go get your drivers.
+
+ Yes, dell use the most recent stuff they can, to save money. That's not a
+bad thing. Just a bad thing for those that hope a distro will work out of
+the box.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

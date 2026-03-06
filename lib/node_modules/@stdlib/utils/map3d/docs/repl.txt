@@ -1,0 +1,41 @@
+
+{{alias}}( arr, fcn[, thisArg] )
+    Applies a function to each nested element in a three-dimensional nested
+    array and assigns the result to a nested element in a new three-dimensional
+    nested array.
+
+    The applied function is provided the following arguments:
+
+    - value: array element.
+    - indices: current array element indices.
+    - arr: input array.
+
+    Parameters
+    ----------
+    arr: ArrayLikeObject<ArrayLikeObject<ArrayLikeObject>>
+        Input three-dimensional nested array.
+
+    fcn: Function
+        Function to apply.
+
+    thisArg: any (optional)
+        Input function context.
+
+    Returns
+    -------
+    out: Array<Array<Array>>
+        Three-dimensional nested array.
+
+    Examples
+    --------
+    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/math/base/special/abs}}, 1 );
+    > var arr = [ [ [ -1, -2, -3 ] ], [ [ -4, -5, -6 ] ] ];
+    > var out = {{alias}}( arr, f );
+    > out[ 0 ][ 0 ]
+    [ 1, 2, 3 ]
+    > out[ 1 ][ 0 ]
+    [ 4, 5, 6 ]
+
+    See Also
+    --------
+

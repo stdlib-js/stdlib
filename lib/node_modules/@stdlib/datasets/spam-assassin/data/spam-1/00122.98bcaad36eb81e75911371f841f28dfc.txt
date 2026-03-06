@@ -1,0 +1,33 @@
+From jamie@msn.com  Tue Aug 27 14:27:25 2002
+Return-Path: <jamie@msn.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id C0CC943F9B
+	for <zzzz@localhost>; Tue, 27 Aug 2002 09:27:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 27 Aug 2002 14:27:14 +0100 (IST)
+Received: from ks1.gayacom.net (co-location.ibsoft.iAsiaWorks.ne.kr
+    [211.36.253.28] (may be forged)) by dogma.slashnull.org (8.11.6/8.11.6)
+    with ESMTP id g7RDRwZ09790 for <zzzz@jmason.org>; Tue, 27 Aug 2002 14:27:58
+    +0100
+Received: (from nobody@localhost) by ks1.gayacom.net (8.9.3/8.9.3) id
+    WAA15535; Tue, 27 Aug 2002 22:26:56 +0900
+Date: Tue, 27 Aug 2002 22:26:56 +0900
+Message-Id: <200208271326.WAA15535@ks1.gayacom.net>
+To: zzzz@spamassassin.taint.org, yyyy@johnmccrory.com, yyyy@judimartindale.com,
+	zzzz@mak.com, jm@cpw.math.columbia.edu, jm@maulpoix.net,
+	zzzz@mirolka.com, jm@netconcepts.com, jm@spamassassin.taint.org, jm@online.no,
+	zzzz@parsimail.com
+From: jamie@msn.com ()
+Subject: WWW Form Submission
+
+Below is the result of your feedback form.  It was submitted by
+ (jamie@msn.com) on Tuesday, August 27, 2002 at 22:26:56
+---------------------------------------------------------------------------
+
+:: <A HREF="http://www.pornhere.net">click here</A>Don't want to pay for Porn? Would you like to get it for FREE? The Honest, No Risk 100% Free Way? If you take a couple of minutes and read through our simple guide you will be able to get Free Passes to the top Paysites online!<A HREF="http://www.pornhere.net">click here</A>
+
+---------------------------------------------------------------------------
+
+

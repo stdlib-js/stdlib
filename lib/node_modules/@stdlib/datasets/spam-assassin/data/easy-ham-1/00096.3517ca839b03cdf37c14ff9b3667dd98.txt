@@ -1,0 +1,94 @@
+From ilug-admin@linux.ie  Mon Sep  2 13:13:46 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 68C3E47C83
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:44:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:44:33 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82B6sZ30020 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 12:06:54 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA00495; Mon, 2 Sep 2002 12:05:10 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from saffron.via-net-works.ie (saffron.via-net-works.ie
+    [212.17.32.24]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA00434
+    for <ilug@linux.ie>; Mon, 2 Sep 2002 12:05:00 +0100
+Received: from box.dialups.via-net-works.ie ([212.17.32.233]
+    helo=PELICANCLUB.vianetworks.ie) by saffron.via-net-works.ie with esmtp
+    (Exim 3.20 #1) id 17lp0s-0000gr-00; Mon, 02 Sep 2002 12:04:58 +0100
+X-NCC-Regid: ie.medianet
+Message-Id: <5.1.0.14.0.20020902120100.02a78308@212.17.32.225>
+X-Sender: tbridge@212.17.32.225
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+Date: Mon, 02 Sep 2002 12:04:04 +0100
+To: Ray.Dermody@ITCARLOW.IE, ilug@linux.ie
+From: Thomas Bridge <tbridge@vianetworks.ie>
+Subject: Re: [ILUG] Serial number in hosts file
+In-Reply-To: <3D735065.23921.771154@localhost>
+MIME-Version: 1.0
+Content-Type: text/plain
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Your actual serial number is 1519761310 - from a dig I've just done.
+
+Try resetting the zone number to 2002082901 - some of your secondaries seem 
+to have a serial number below that, so they clearly regard 1519761310 as 
+being less than 2002082601.
+
+That should enable them to pick up the new zonefile.
+
+T.
+
+At 11:49 02/09/2002 +0100, Ray Dermody wrote:
+>Hi All,
+>The serial number in our hosts files on our DNS server has gone
+>corrupt e.g. 2002082999999999901 should be 20002082901.
+>Its okay to set this back to todays date but I understand that our
+>secondary and terninary DNS servers will only update from the master
+>hosts file if the master host serial number is greater than the current
+>serial number in the hosts file.
+>Is there any way I can reset this on the secondary and terninary DNS
+>servers?
+>
+>Ray Dermody
+>Computing Services Technician
+>I.T. Carlow
+>0503 76271
+>
+>
+>--
+>Irish Linux Users' Group: ilug@linux.ie
+>http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+>List maintainer: listmaster@linux.ie
+
+VIA NET.WORKS Ireland is a wholly owned Limited Irish Company.
+Although connected to the VIA Global Network, VIA NET.WORKS Ireland
+is separate from and is not owned by VIA NET.WORKS Inc. or any
+member of the VIA NET.WORKS Inc. Group.
+-----BEGIN PGP SIGNATURE-----
+Version: PGPfreeware 7.0.3 for non-commercial use <http://www.pgp.com>
+
+iQA/AwUBPXNFo76WYZbx1eG3EQLfNwCfakNapOkbg26j1jqQQEHgIWFd4s0AoP4J
+GLBtgr1K8fzYlnnRNcfT3fSt
+=Rurr
+-----END PGP SIGNATURE-----
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,569 @@
+Return-Path: <Online#3.20341.24-QI_LgZARqA78CdRR.1.b@newsletter.online.com>
+Received: from abv-sfo1-acmta1.CNET.COM (abv-sfo1-acmta1.cnet.com [206.16.1.160])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6I4PsJ26465
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Thu, 18 Jul 2002 05:25:54 +0100
+Received: from abv-sfo1-ac-agent7 (206.16.0.244) by abv-sfo1-acmta1.CNET.COM (PowerMTA(TM) v1.5); Wed, 17 Jul 2002 21:26:39 -0700 (envelope-from <Online#3.20341.24-QI_LgZARqA78CdRR.1.b@newsletter.online.com>)
+Message-ID: <7957247.1026966347345.JavaMail.root@abv-sfo1-ac-agent7>
+Date: Wed, 17 Jul 2002 21:25:47 -0700 (PDT)
+From: CNET Delivers <Online#3.20341.24-QI_LgZARqA78CdRR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: Canon USA Reseller News : July
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+<html>
+<head>
+<title>CNET Announcement</title>
+</head>
+<body bgcolor="#eeeeee">
+<center>
+<!-- header -->
+<table width="624" cellpadding="0" cellspacing="0" border="0">
+<tr><td><img src="http://www.cnet.com/i/nl/ann/hd.gif" alt="CNET Announce" width="442" height="60"></td>
+<td><img src="http://www.cnet.com/i/nl/ann/rt.gif" width="184" height="60"></td></tr>
+</table>
+<table width="624" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td colspan="4"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td></tr>
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="10"></td>
+<td width="9" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="9" height="1"></td>
+<td width="624" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td colspan="2"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<!-- /header -->
+
+<!-- content -->
+<table width="624" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="9" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="9" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="624" bgcolor="#ffffff"><img src="/b.gif" width="1" height="8"><br><div align="center"><img src="http://home.cnet.com/Ads/Media/Images/ad10-dk.gif" width="120" height="10"></div></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="624" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="9" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="9" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="624" bgcolor="#ffffff"><font face="verdana, geneva" size="-2" color="#333333">&nbsp;<sup>&nbsp;</sup>
+
+<!-- date -->
+July 18, 2002
+<!-- /date -->
+</font><br>
+
+<!-- ### promo content ### -->
+
+
+<html>
+<head>
+<title>Canon USA Reseller News : July</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#ffffff" text="#000000" topmargin=0 leftmargin=0 marginheight="0" link="#000099" vlink="#000099">
+<table width="598" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td bgcolor="#ffffff"><img src="http://www.captureleads.com/canon/leadblasts/nlimages/monthly_head_598.gif" width="598" height="70" alt="Canon USA Reseller News"></td>
+  </tr>
+<tr bgcolor="#ffffff" align="right"> 
+    <td bgcolor="#ffffff"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><i>July 2002 / Volume 2 No. 5</i></font></td>
+  </tr>
+</table>
+<br>
+<table width="598" border="0" cellspacing="0" cellpadding="0" align="center" >
+  <tr> 
+    <td width="10" valign="top" bgcolor="#d4dfff">&nbsp;</td>
+    <td width="180" valign="top" bgcolor="#d4dfff"><font face="Verdana, Arial, Helvetica, sans-serif" size="3"><br>
+      </font> <font face="Verdana, Arial, Helvetica, sans-serif" size="3"><font color="#ff0000"><b><font size="2"><br>
+      The Canon USA Reseller News&nbsp;</font></b></font><font size="2">provides resellers with monthly announcements&nbsp;on Canon products that are purchased through national distributors.</font></font><font face="Verdana, Arial, Helvetica, sans-serif" size="3"><br>
+      <br>
+      <br>
+      </font> <font face="Verdana, Arial, Helvetica, sans-serif" size="3"> <br>
+      <br>
+      </font></td>
+    <td width="10" bgcolor="#d4dfff" valign="top">&nbsp;</td>
+    <td valign="top" width="10" bgcolor="#e2e2e2">&nbsp;</td>
+    <td valign="top" bgcolor="#e2e2e2"><font face="Verdana, Arial, Helvetica, sans-serif" size="3"><br>
+      <font size="2">Scan the following topics for <b><font color="#ff0000">"News You Can Use."</font></b></font></font><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"> 
+      </font></font> 
+      <ul>
+        <font face="Verdana, Arial, Helvetica, sans-serif" size="3"> 
+        <li type="square"><font size="2"><A href="#here">They're Here!</A><br></font> 
+        <li type="square"><font size="2"><A href="#check">Check Out Our Q3 Promotions</A><br></font>
+		<li type="square"><font size="2"><A href="#guess">Guess What's Coming to Distribution</A><br></font> 
+        <li type="square"><font size="2"><A href="#training">Web-based Training Addition / We Have a Winner</A><br></font>
+        <li type="square"><font size="2"><A href="#reseller">Reseller Account Executive</A><br></font></li></font>
+		</ul>
+    </td>
+    <td width="10" valign="top" bgcolor="#e2e2e2">&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table width="598" border="0" cellspacing="0" cellpadding="5" align="center" bgcolor="#000000">
+  <tr bgcolor="#e2e2e2"> 
+    <td width="10">&nbsp;</td>
+    <td bgcolor="#e2e2e2"><font face="Verdana, Arial, Helvetica, sans-serif" size="3"><b><a name="here">They're Here!</a></b></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10" bgcolor="#ffffff">&nbsp;</td>
+    <td bgcolor="#ffffff"><font face="Verdana, Arial, Helvetica, sans-serif" size="3">Canon's N1000 and N2000 innovative Office Color Printers are here!  Orders are now being taken for these ... Super High Speed ... Super High Quality ... Large Volume printers!  With super low operating costs and excellent durability, these printers provide the solution to your customers' business color needs.<br>
+<br>Providing our resellers with the tools necessary to be successful in the marketplace is important to us.  In an effort to help you jump-start your N1000 printer sales, we are making available, on a first come first served basis, HALF-PRICE N1000 DEMO units.  For your convenience, these units can be purchased at  Ingram Micro, Tech Data or D&H.  There is a limit of one half-price unit per reseller - and supplies are limited - so order today!<br>
+<br>To help you generate interest with your customers for the N1000/N2000, we have created a video banner ad that can be run on your website.  Log on to our  reseller website:  <a href="http://clickthru.online.com/Click?q=39-7QgMIjI6kxw3FhUCGLs-y39w-_lR">http://www.canonresellers.com</a> to view the N1000/N2000 video banner ad.  You'll find the ad running on the Home Page.  To order a CD of this video banner ad for your use, contact your Canon Account Executive.
+</font></td>
+    <td width="10" bgcolor="#ffffff">&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table width="598" border="0" cellspacing="0" cellpadding="5" align="center" bgcolor="#000000">
+  <tr bgcolor="#e2e2e2"> 
+    <td width="10">&nbsp;</td>
+    <td bgcolor="#e2e2e2"><font face="Verdana, Arial, Helvetica, sans-serif" size="3"><b><a name="check">Check Out Our Q3 Promotions</a></b></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table width="598" border="1" cellspacing="0" cellpadding="0" align="center">
+  <tr bgcolor="#d4dfff"> 
+    <td width="150" bgcolor="#d4dfff" align="left">
+      <div align="left"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Product</font></b></div>
+    </td>
+    <td align="middle" width="150"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Instant Rebate*</font></b></td>
+    <td align="middle" width="127"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Timeframe</font></b></td>
+  </tr>
+  <tr> 
+    <td width="150"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">imageCLASS 1100</font></td>
+    <td align="middle" width="150"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">$100</font></td>
+    <td align="middle" width="127"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Through September 30, 2002</font></td>
+  </tr>
+</table>
+<br>
+<table width="598" border="0" cellspacing="0" cellpadding="5" align="center" bgcolor="#000000">
+  <tr> 
+    <td width="10" bgcolor="#ffffff">&nbsp;</td>
+    <td bgcolor="#ffffff"><font face="Verdana, Arial, Helvetica, sans-serif" size="3">*All rebates will be reflected on the distributor invoice price <b><i>at the time of purchase</i></b>.<br>
+      <br><b>Quarterly Performance/Growth Bonus</b><br>
+      <br>It's a new quarter and a fresh opportunity to become a Canon Premier Partner.  Our quarterly growth goals are within reach!  Your purchases of all eligible hardware* between July 1, 2002 and September 30, 2002 work toward your Premier Partner status.  Following are the rebate categories:
+      <br>
+	  <br>
+      $50,000-$99,000 = 4% rebate<br>
+      $100,000+ = 6% rebate<br>
+      <br>
+      Claim forms for submitting your claims are available from your Canon reseller Account Executive and at <a href="http://clickthru.online.com/Click?q=4e-0Y95InZAScfHiaSIKlsTn8N_Jj9R" target="_blank">www.canonresellers.com</a>.<br>
+      <br>
+      <font size="2">*Only hardware is eligible - DR-3060, DR-3080C, DR-5020, DR-5080C, DR-4580U, DR-4080U, N1000/N2000 Office Color Printers, imageCLASS 2200 and imageCLASS 1100.  CarePAKS, consumables, maintenance kits and media are not eligible.</font><br>
+      <br>
+      Click on  <a href="http://clickthru.online.com/Click?q=64-UBOhIuLfNZhIMQRNGWF8w6YrPhsR" target="_blank">www.canonresellers.com</a>, to find your tools for success! 
+      <br>
+      </font></td>
+    <td width="10" bgcolor="#ffffff">&nbsp;</td>
+  </tr>
+</table>
+<br>
+<br>
+<table width="598" border="0" cellspacing="0" cellpadding="5" align="center" bgcolor="#000000">
+  <tr bgcolor="#e2e2e2"> 
+    <td width="10">&nbsp;</td>
+    <td bgcolor="#e2e2e2"><font face="Verdana, Arial, Helvetica, sans-serif" size="3"><b><a name="guess">Guess What's Coming to Distribution</a></b></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10" bgcolor="#ffffff">&nbsp;</td>
+    <td bgcolor="#ffffff"><font face="Verdana, Arial, Helvetica, sans-serif" size="3">
+Here's a clue:  Canon is known 'far and wide' for its products.  Coming soon&#151;at a distributor near you - we'll show you just how 'wide' our products can be.  Watch for another clue in our August newsletter!</font></td>
+    <td width="10" bgcolor="#ffffff">&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table width="598" border="0" cellspacing="0" cellpadding="5" align="center">
+  <tr bgcolor="#e2e2e2"> 
+    <td width="10">&nbsp;</td>
+    <td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="3"><b><a name="training">Web Based Training Addition / We Have a Winner</a></b></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font face="Verdana, Arial, Helvetica, sans-serif" size="3">As promised, we're about to launch another web training course.  Final touches are being made on Canon's <b>N1000/N2000</b> web training course.  This creative and informative course - covering topics that include  Features, Installation, Connectivity and Markets - is not to be missed.  Details to follow.<br>
+      <br>
+      We have a winner!  Congratulations to everyone who completed the imageCLASS 1100 web training before June 30!  The winning name was randomly selected from a 'hat' and we're pleased to announce the winner of the Canon PowerShot A20 digital camera works at one of our valued resellers in North Carolina!</font></td>
+    <td align="right" valign="middle"><a href="http://clickthru.online.com/Click?q=79-rsQHIEBf9Lq-NyhmFz_e0CvgpaFR"><img src="http://www.captureleads.com/canon/leadblasts/nlimages/simon_anim.gif" width="173" height="173" border="0"></a></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top" colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="3">Although the contest is over... the learning should not stop.  If you have not yet completed this informative imageCLASS 1100 training course, log on to <a href="http://clickthru.online.com/Click?q=8e-Ve-cQCn7KTQcIiTPDuYWD0V_Wy4R" target="_blank">http://www.canonresellers.com</a> right click on Simon and go to the training site. <br>
+        <br>
+      </font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+</table>
+<br>
+
+<table width="598" border="0" cellspacing="0" cellpadding="5" align="center">
+  <tr> 
+    <td width="10" bgcolor="#e2e2e2">&nbsp;</td>
+    <td colspan="2" bgcolor="#e2e2e2"><b><font face="Verdana, Arial, Helvetica, sans-serif"><a name="reseller">Reseller Account Executive&#151;Contact Changes</a></font></b></td>
+    <td width="10" bgcolor="#e2e2e2">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif">Canon has a dedicated team of Account Executives whose mission is to work with you to achieve our mutual business goals.<br>
+      <br>
+      Check the list below and note the name and e-mail address of the Account Executive assigned to your state.  Be sure to contact your Account Executive for support with the following:
+</font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"> 
+      <ul>
+        <font face="Verdana, Arial, Helvetica, sans-serif" size="3"> 
+        <li type="square">N1000/N2000 Video Banner Ad<br>
+        <li type="square">Events (Open Houses/Shows)<br>
+		<li type="square">Sales Support Collateral<br>
+		<li type="square">Discounted Demo Units<br>
+</li></font> 
+      </ul>
+    </td>
+    <td valign="top"> 
+      <ul><font face="Verdana, Arial, Helvetica, sans-serif" size="3">
+        <li type="square">End User Sales Calls<br>
+		<li type="square">Demand Generation<br>
+		<li type="square">Product Training<br>
+		<li type="square">Bids<br>
+        </LI></font>
+      </ul>
+    </td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="3">Account 
+		Executives are listed below with the states that they cover.<br>
+      </font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table width="598" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Northeast</font></b></td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">John 
+      Brogan </font></b></td>
+    <td valign="top" colspan="2" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><A href="mailto:jbrogan@cusa.canon.com" >(jbrogan@cusa.canon.com)</A></font></b></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Connecticut</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Maine </font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">New Hampshire</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Rhode Island</font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Massachusetts</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">New York</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">New Jersey</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Vermont</font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Mid Atlantic</font></b></td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Greg Harzenski</font></b></td>
+    <td valign="top" colspan="2" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><A href="mailto:gharzenski@cusa.canon.com" >(gharzenski@cusa.canon.com)</A></font></b></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Delaware</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Maryland</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Washington D.C.</font></td>
+    <td valign="top">&nbsp;</td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Midwest</font></b></td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Jennifer Mickeletto </font></b></td>
+    <td valign="top" colspan="2" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><A href="mailto:zzzickeletto@cusa.canon.com" >(zzzickeletto@cusa.canon.com)</A></font></b></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Indiana</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Kansas</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Missouri</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Ohio</font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Colorado</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Kentucky</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Nebraska</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Tennessee</font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Mid North</font></b></td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Chad Crump</font></b></td>
+    <td valign="top" colspan="2" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><A href="mailto:ccrump@cusa.canon.com" >(ccrump@cusa.canon.com)</A></font></b></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Alaska</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Illinois</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Minnesota</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Washington</font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Idaho</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Montana</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">North Dakota</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Wisconsin</font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Iowa</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Michigan</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">South Dakota</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Wyoming</font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top">&nbsp;</td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">South</font></b></td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Randal Kendrix </font></b></td>
+    <td valign="top" colspan="2" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><A href="mailto:rkendrix@cusa.canon.com" >(rkendrix@cusa.canon.com)</A></font></b></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Arkansas</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Mississippi</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Oklahoma</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Utah</font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Louisiana</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">New Mexico</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Texas</font></td>
+    <td valign="top">&nbsp;</td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Southeast</font></b></td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Carmen DiMartino </font></b></td>
+    <td valign="top" colspan="2" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><A href="mailto:cdimartino@cusa.canon.com" >(cdimartino@cusa.canon.com)</A> 
+      </font></b></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Alabama</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">North Carolina</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Puerto Rico</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">West Virginia</font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Florida</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">South Carolina</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Virginia</font></td>
+    <td valign="top">&nbsp;</td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Georgia</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Pennsylvania</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Virgin Islands</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Southwest</font></b></td>
+    <td valign="top" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Heath Tagtmeyer </font></b></td>
+    <td valign="top" colspan="2" bgcolor="#d4dfff"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><A href="mailto:htagtmeyer@cusa.canon.com" >(htagtmeyer@cusa.canon.com)</A></font></b></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Arizona</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Hawaii</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Oregon</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">California</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Nevada</font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td valign="top"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top" colspan="4"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><i>
+    If you wish to opt out of receiving future e-mail blasts, please <a href="#">click here</a>. If you would like additional recipients to receive our monthly communications, send additional names and e-mail addresses to <A href="mailto:canonresellers@cits.canon.com">canonresellers@cits.canon.com</A>.
+    </i></font>
+    </td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="10">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td width="10">&nbsp;</td>
+  </tr>
+</table>
+<br>
+</body>
+</html>
+
+
+<!-- ### /promo content ### -->
+</td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+
+<!-- ### footer ### -->
+<table width="624" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="624" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org'><img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-zdnet@spamassassin.taint.org<p>
+
+<A NOTRACK HREF="http://clickthru.online.com/Click?q=a5-DyfHrzZqSQXorbLmIMk61qDcw2kfasRR">Unsubscribe</A>&nbsp|&nbsp<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-zdnet@spamassassin.taint.org'>Manage My Subscriptions</a>
+&nbsp;|&nbsp;<a href="http://www.cnet.com/subscription/0-16335-7-6770019.html">FAQ</A>
+&nbsp|&nbsp<a href="http://www.cnet.com/aboutcnet/0-13618.html?tag=ft">Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.zdnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="624" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="624" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://www.cnet.com/frontdoor/0-1.html"><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://shopper.cnet.com/shopping/0-1257.html"><font color="#000000">Price comparisons</font></a> | 
+<a href="http://computers.cnet.com/hardware/0-1016.html"><font color="#000000">Product reviews</font></a> | 
+<a href="http://news.cnet.com/"><font color="#000000">Tech news</font></a> |
+<a href="http://download.cnet.com/downloads/0-10000.html"><font color="#000000">Downloads</font></a> | 
+<a href="http://www.cnet.com/sitemap/0-2253447.html"><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="624" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><tr:ad name="copyright"/>
+</a>.</font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+
+
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=ba-m-95-hpITW8NcktOu5LdlZB0PRRR">
+

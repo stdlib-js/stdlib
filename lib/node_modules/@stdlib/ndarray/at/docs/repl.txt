@@ -1,0 +1,34 @@
+
+{{alias}}( x[, ...indices] )
+    Returns an ndarray element.
+
+    Negative indices are resolved relative to the last element along the
+    respective dimension, with the last element corresponding to `-1`.
+
+    If provided out-of-bounds indices, the function always returns `undefined`.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    indices: ...integer (optional)
+        Index arguments. The number of index arguments must equal the number of
+        dimensions.
+
+    Returns
+    -------
+    out: any
+        Element value.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > {{alias}}( x, 0, 1 )
+    2
+    > {{alias}}( x, 1, 0 )
+    3
+
+    See Also
+    --------
+

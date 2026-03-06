@@ -1,0 +1,135 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:53:05 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id DF30316F79
+	for <jm@localhost>; Wed,  9 Oct 2002 10:52:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:52:05 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9980eK25205 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:00:40 +0100
+Message-Id: <200210090800.g9980eK25205@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: joelonsoftware <rssfeeds@spamassassin.taint.org>
+Subject: Feedback from my posting about FogBUGZ Setup fell into four
+    categories. *
+Date: Wed, 09 Oct 2002 08:00:39 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.joelonsoftware.com/news/20021008.html
+Date: Not supplied
+
+Feedback from my posting[1] about FogBUGZ[2] Setup fell into four categories. 
+
+*"Why make Setup reversable? Instead you should collect all the information 
+from the user and make all the changes in one batch at the end."* There are a 
+couple of things to understand here. First of all, even if you do everything in 
+one batch at the end, there's always a possibility that some step in the middle 
+of the batch will fail, and in that case, a well-behaved setup program will 
+back out the steps that were already done. There are well over 100 error 
+messages in the string table for FogBUGZ Setup so the number of things that can 
+fail is not insignificant. 
+
+Second, it's not nice to tell people about an error in their input three pages 
+after they made the mistake. For example, early in the FogBUGZ setup process we 
+prompt you to create an account for FogBUGZ to use: 
+
+[IMG: http://www.joelonsoftware.com/pictures/setupNewAcct.gif (FogBUGZ Setup 
+Screenshot)] 
+
+The account creation could fail for a myriad of reasons, none of which can be 
+predicted before trying to create the account. For example, the password might 
+not conform to the system password policy. And different national versions of 
+Windows NT have different rules about accented letters in passwords (betcha 
+didn't know that!). It's better to tell the user about this problem right away 
+so they can correct their input rather than having a message come up during the 
+long install process later, forcing the user to back up and fix it. And even if 
+you force the user to back up and fix it, you still have to undo the first part 
+of the work that you did before creating the account, otherwise you've left 
+their system in an indeterminate state. 
+
+In any case I need to write code to create the account and delete the account 
+in case something later fails; I might as well call that code on this page of 
+the wizard where I can display a useful error message. 
+
+And what are the kinds of things that need to be reversable? Well, in order to 
+upgrade FogBUGZ without requiring a reboot (and we _never, ever _require a 
+reboot), we have to shut down a couple of processes that might have been 
+keeping FogBUGZ files pinned down, such as IIS (Microsoft's web server). So 
+part one of the batch is "Stop IIS." Now if part 2 fails for some reason, it 
+would be _extremely_ rude to leave IIS not running. And anyway, it's not like I 
+don't need to write the code for "Start IIS" for the end of the batch. So the 
+code to rollback "Stop IIS" is already written. No big deal, I just need to 
+call it at the right place. 
+
+I think one reason that people think you should "gather all the info and then 
+do all the work" is because with very large installation programs that are very 
+slow, this is a polite way to waste less of the user's time. Indeed even 
+FogBUGZ setup does 95% of its work at the very end. But the "create account" 
+operation is so fast, that principle simply doesn't apply here. Even our 95% of 
+the work phase takes well under a minute, most of which is spent waiting for 
+IIS to stop and start. 
+
+*"Why did you use VC++/MFC? Surely an advanced intelligence such as yourself 
+has admitted by now that Delphi[3] is more productive."* First of all, leave 
+your language religious fanaticism at the Usenet door. Somehow I managed 
+to figure out_ in high school_ that language advocacy and religious 
+arguments are unbelievably boring.  
+
+Secondly, even if Delphi were more productive, the only pertinent question, 
+since I am writing the code, is _what is more productive for Joel Spolsky_. And 
+I don't know Delphi at all, but I know Win32, MFC, and VC++ _really, really 
+well_. So while I might not outcode a good Delphi programmer, I would 
+definitely outcode a completely inexperienced Delphi programmer (which is me), 
+certainly over a short 4 week project. Third, many of the things I needed to do 
+in this setup program are things like "grant the Logon as Service privilege to 
+an account." This is rare enough that the only way to find out how to do this 
+is to search the Microsoft knowlege base and the web in general. When you 
+search the web in general for how to do fancy things with Windows NT, what you 
+find is about 75% C code, maybe 20% VB code, and 5% everything else. Yes, I 
+know, I could translate the C code into Delphi (assuming I was a sophisticated 
+Delphi programmer, not a completely inexperienced Delphi programmer), but that 
+costs as much productivity as I would supposedly gain from your supposedly more 
+productive programming language. And fourth, I already had about 30% of the 
+code I needed for Setup in MFC format: from FogBUGZ 2.0 Setup, and a library 
+I've been using for years to make wizards. 
+
+*"Why make Setup at all? You already have your customers' money. Good Setup 
+programs don't increase sales."* This was actually the smartest question and 
+made me think the hardest. I came up with three reasons: 
+
+- Decreased tech support cost. This setup program will pay for itself over the 
+life of the code. 
+- Delight my customers. When I'm trying to get them to upgrade to 4.0, I want 
+them to remember how painless the 3.0 installation was, so they won't hesitate 
+because they are afraid to upgrade. I'm still using an old version of 
+SpamAssassin that is becoming increasingly ineffective, even though I know the 
+new version is much better, because I just can't bear the thought of another 
+morning wasted. The very memory of the first SpamAssassin installation -- all 
+the little SSH windows, some su'ed, trying to scroll through man pages and 
+Google Groups, accidentally hitting Ctrl+Z in Emacs to undo and having it 
+suspend, trying to guess why we can't get the MTA to run procmail, sorry it's 
+too much. If SpamAssassin was making money off of upgraders they would have 
+lost my business because they don't have a SETUP program. 
+- Win reviews. Software reviewers always cast about for some kind of 
+standardized way to rate software, even when they are comparing apples and 
+oranges and planets and 17th century philosophers. They always have a 
+meaningless list of things to review which can be applied to PC games, 
+mainframe databases, web site auction software, and DNA sequencing 
+software. And Setup is always on their list. A single flaw in setup is 
+guaranteed to be mentioned in every review because every reviewer will see it 
+and say "Aha!"
+
+
+*"How can we make WISE[4] better?" *Kudos to the product manager of WISE 
+Installation System for calling me up and listening to my litany of all the 
+reasons his product wasn't adequate for typical IIS/ASP/SQL applications.
+
+[1] http://www.joelonsoftware.com/news/20021002.html
+[2] http://www.fogcreek.com/FogBUGZ
+[3] http://discuss.fogcreek.com/delphiquestions
+[4] http://www.wise.com
+
+

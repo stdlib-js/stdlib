@@ -1,0 +1,83 @@
+From rpm-list-admin@freshrpms.net  Fri Jul 26 14:22:25 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DA7EA440E7
+	for <jm@localhost>; Fri, 26 Jul 2002 09:22:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 14:22:23 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6QDNs419646 for
+    <jm-rpm@jmason.org>; Fri, 26 Jul 2002 14:23:55 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6QDJ2j25092; Fri, 26 Jul 2002 15:19:02
+    +0200
+Received: from kamakiriad.com (cable-b-36.sigecom.net [63.69.210.36]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6QDI7j15265 for
+    <rpm-list@freshrpms.net>; Fri, 26 Jul 2002 15:18:07 +0200
+Received: from aquila.kamakiriad.local (aquila.kamakiriad.local
+    [192.168.1.3]) by kamakiriad.com (8.11.6/8.11.0) with SMTP id g6QDHqo27147;
+    Fri, 26 Jul 2002 08:17:52 -0500
+From: Brian Fahrlander <kilroy@kamakiriad.com>
+To: rpm-zzzlist@freshrpms.net
+Cc: salimma1@yahoo.co.uk
+Subject: Re: Gstreamer update
+Message-Id: <20020726081751.6e784454.kilroy@kamakiriad.com>
+In-Reply-To: <20020726124057.75407.qmail@web21404.mail.yahoo.com>
+References: <20020726.Cro.90237400@www.dudex.net>
+    <20020726124057.75407.qmail@web21404.mail.yahoo.com>
+X-Mailer: Sylpheed version 0.8.1 (GTK+ 1.2.10; i386-redhat-linux)
+X-Message-Flag: : Shame on you!  You know Outlook is how viruses are spread!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 26 Jul 2002 08:17:51 -0500
+Date: Fri, 26 Jul 2002 08:17:51 -0500
+
+On Fri, 26 Jul 2002 13:40:57 +0100 (BST), Michèl Alexandre Salim <salimma1@yahoo.co.uk> wrote:
+
+>  --- Angles Puglisi <angles@aminvestments.com> wrote:
+> > 
+> > I still think there's got to be a way to get the
+> > packages that make gnomehide
+> > from the Limbo CDs, they would be newer.
+> > 
+> Surely you just need to recompile and install them in
+> order?
+
+    Nope- this one's all about gnome-vfs2 and the developers understand each other's parts- it's a programming issues.  Some versions work together, some don't.  Just like rep-gtk and audiofile was for sawfish, in the previous version of Ximian-gnome.  :(
+.
+> Ximian packages are awful - I had recurring problems
+> with their packaged libxslt a few months back.
+
+    Yeah...That's why I was hoping someone else had a 'more gospel' set of files.  Oh, well.  I've found a URL on my system I can get to'em with Nautilus.
+  
+------------------------------------------------------------------------
+Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+Evansville, IN                    My Voyage: http://www.CounterMoon.com
+ICQ  5119262
+------------------------------------------------------------------------
+I don't want to hear news from Isreal until the news contains the words
+"Bullet", "Brain", and "Arafat".
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

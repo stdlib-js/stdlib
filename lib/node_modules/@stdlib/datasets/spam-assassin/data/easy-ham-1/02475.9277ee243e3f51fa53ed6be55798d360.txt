@@ -1,0 +1,65 @@
+From ilug-admin@linux.ie  Mon Nov 25 21:02:43 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6A7D716F17
+	for <jm@localhost>; Mon, 25 Nov 2002 20:49:42 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 25 Nov 2002 20:49:42 +0000 (GMT)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gAPJM6W20795 for
+    <jm-ilug@jmason.org>; Mon, 25 Nov 2002 19:22:06 GMT
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id D0C1D341DD; Mon, 25 Nov 2002 19:23:31 +0000 (GMT)
+Delivered-To: linux.ie-ilug@localhost
+Received: from mail02.svc.cra.dublin.eircom.net
+    (mail02.svc.cra.dublin.eircom.net [159.134.118.18]) by lugh.tuatha.org
+    (Postfix) with SMTP id 5B918341D0 for <ilug@linux.ie>; Mon, 25 Nov 2002
+    19:22:45 +0000 (GMT)
+Received: (qmail 48877 messnum 34808 invoked from
+    network[159.134.223.66/unknown]); 25 Nov 2002 19:22:45 -0000
+Received: from unknown (HELO eircom.net) (159.134.223.66) by
+    mail02.svc.cra.dublin.eircom.net (qp 48877) with SMTP; 25 Nov 2002
+    19:22:45 -0000
+Message-Id: <3DE277F6.6070707@eircom.net>
+From: Daragh Mc Grath <daragh.ilug@eircom.net>
+User-Agent: Mozilla/5.0 (Windows; U; Win95; en-GB; rv:1.1) Gecko/20020826
+X-Accept-Language: en-ie
+MIME-Version: 1.0
+To: "Smith, Graham - Computing Technician" <Graham.Smith@it-tallaght.ie>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] Time sync on dialup
+References: <A357A6B62E30D511804500B0D0AA789C018F0EEB@mail.it-tallaght.ie>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Mon, 25 Nov 2002 19:20:22 +0000
+Date: Mon, 25 Nov 2002 19:20:22 +0000
+
+Smith, Graham - Computing Technician wrote:
+> 
+> ntp.cs.tcd.ie  (thats a strata 2 isnt it? are there any other publically
+> accessible NTP servers in Ireland?)
+
+tick.indigo.ie
+tock.indigo.ie
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

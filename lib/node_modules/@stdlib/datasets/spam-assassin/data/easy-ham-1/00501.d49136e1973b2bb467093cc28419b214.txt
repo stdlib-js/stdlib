@@ -1,0 +1,98 @@
+From fork-admin@xent.com  Mon Sep  9 10:46:06 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 02BD716F18
+	for <jm@localhost>; Mon,  9 Sep 2002 10:45:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 10:45:48 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g88NtCC17997 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 00:55:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 59E3B2941CD; Sun,  8 Sep 2002 16:52:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta7.pltn13.pbi.net (mta7.pltn13.pbi.net [64.164.98.8]) by
+    xent.com (Postfix) with ESMTP id D90462940C9 for <fork@xent.com>;
+    Sun,  8 Sep 2002 16:51:25 -0700 (PDT)
+Received: from [192.168.123.100] ([64.173.24.253]) by mta7.pltn13.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H250058U92AJ5@mta7.pltn13.pbi.net> for fork@xent.com; Sun,
+    08 Sep 2002 16:54:10 -0700 (PDT)
+From: James Rogers <jamesr@best.com>
+Subject: Re: whoa
+In-Reply-To: <m2y9act9d2.fsf@maya.dyndns.org>
+To: fork@spamassassin.taint.org
+Message-Id: <B9A13131.D7F8%jamesr@best.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+User-Agent: Microsoft-Entourage/9.0.1.3108
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 08 Sep 2002 16:54:09 -0700
+
+On 9/8/02 3:16 PM, "Gary Lawrence Murphy" <garym@canada.com> wrote:
+>>>>>> "J" == James Rogers <jamesr@best.com> writes:
+> 
+>   J> An example: Being able to model RF propagation in three
+>   J> dimensions for a metro area when deploying wireless networks.
+>   J> By having every single tree and building detail and similar,
+>   J> you can "see" even tiny dead spots due to physical blockage and
+>   J> signal attenuation.
+> 
+> Hmmm, just as I thought.  In other words, it has no practical uses
+> whatsoever ;) ... do the biz guys in your office /really/ think WISPs
+> are really going to shell out /their/ money to find a house or two
+> they can't reach?  Experience suggests (a) they won't care and (b)
+> they will even sign up that errant house and then give them a
+> run-around blaming the dead-spot on "unsupported vendor equipment".
+
+
+Errrr....the biz guys in my office don't care what the "WISPs" want to do
+with their little WiFi networks.  And the bandwidth shadows in most cities
+are surprisingly large and common.  They aren't selling the software, which
+is pretty pricy as it happens.  They are using it to optimize next
+generation wireless canopies over metro areas and fiber networks on a large
+scale.  There are an essentially infinite number of metro wireless
+configurations, some of which generate far more dead or marginal spots and
+others which are very expensive to operate (due to backhaul transit
+considerations) or both.  This software can be used as a tool to optimize
+the canopy coverage and minimize the actual transit costs since the wireless
+is tied into fiber at multiple points.
+
+The canopies we are talking about aren't short-range wifi technologies, but
+a mixture of long-range high-performance wireless networking, with bandwidth
+measured in tens to hundreds of mbits and ranges measured in miles (up to
+well over a hundred miles on the extreme end).  At those ranges and
+bandwidth levels, the cost of providing the network can easily vary by an
+order of magnitude or more depending on how you manage RF shadows and
+proximity to fiber access points.  The idea ultimately is to optimize the
+cost and performance such that no existing network infrastructure providers
+can remotely compete and maintain profitability.  This is a surprisingly low
+bar, and it is about time networks were designed with this level of
+large-scale optimization (cost per mbit, maximizing coverage, and effective
+bandwidth available per unit area) in any case.  And for this company's
+long-term plans, this type of capability will be absolutely necessary to
+keep things sane.
+
+Or at least investors find this capability very sexy and compelling,
+especially since we have this lovely visualization engine tied into the
+system (CLI batches never have the same effect, even if it is more
+efficient).
+
+-James Rogers
+ jamesr@best.com
+
+

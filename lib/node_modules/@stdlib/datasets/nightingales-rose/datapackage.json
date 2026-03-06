@@ -1,0 +1,85 @@
+{
+  "name": "stdlib-datasets-nightingales-rose",
+  "version": "",
+  "title": "Nightingale's Rose",
+  "description": "Dataset for Nightingale's famous polar area diagram.",
+  "resources": [
+    {
+      "name": "nightingales-rose-json",
+      "title": "Nightingale's Rose",
+      "description": "Dataset for Nightingale's famous polar area diagram.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "nightingales-rose-csv",
+      "title": "Nightingale's Rose",
+      "description": "Dataset for Nightingale's famous polar area diagram.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "title": "Month",
+            "description": "Month and year in which data was recorded.",
+            "type": "date",
+            "format": "default"
+          },
+          {
+            "name": "army_size",
+            "title": "Size of Army",
+            "description": "Total number of soldiers.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "disease",
+            "title": "Deaths Due to Disease",
+            "description": "Number of soldier deaths attributed to disease.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "wounds",
+            "title": "Deaths Due to Wounds",
+            "description": "Number of soldier deaths attributed to wounds sustained in battle.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "other",
+            "title": "Deaths Due to Other Causes",
+            "description": "Number of soldier deaths attributed to other causes.",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "A contribution to the sanitary history of the British army during the late war with Russia",
+      "web": "https://curiosity.lib.harvard.edu/contagion/catalog/36-990101646750203941"
+    }
+  ],
+  "keywords": [
+    "nightingale",
+    "florence",
+    "polar area",
+    "chart",
+    "rose",
+    "coxcomb",
+    "crimean war",
+    "statistics",
+    "stats"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

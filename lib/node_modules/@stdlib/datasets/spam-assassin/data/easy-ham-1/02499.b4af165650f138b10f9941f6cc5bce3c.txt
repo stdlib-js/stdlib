@@ -1,0 +1,85 @@
+From spambayes-bounces@python.org  Wed Dec  4 11:52:09 2002
+Return-Path: <spambayes-bounces@python.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3914316F1B
+	for <jm@localhost>; Wed,  4 Dec 2002 11:51:07 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Dec 2002 11:51:07 +0000 (GMT)
+Received: from mail.python.org (mail.python.org [12.155.117.29]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB4Blw812983 for
+    <jm@jmason.org>; Wed, 4 Dec 2002 11:47:58 GMT
+Received: from localhost.localdomain ([127.0.0.1] helo=mail.python.org) by
+    mail.python.org with esmtp (Exim 4.05) id 18JY1x-0005GE-02; Wed,
+    04 Dec 2002 06:49:29 -0500
+Received: from main.gmane.org ([80.91.224.249]) by mail.python.org with
+    esmtp (Exim 4.05) id 18JY1r-0005G8-00 for spambayes@python.org;
+    Wed, 04 Dec 2002 06:49:23 -0500
+Received: from list by main.gmane.org with local (Exim 3.35 #1 (Debian))
+    id 18JXzX-0007vb-00 for <spambayes@python.org>; Wed, 04 Dec 2002 12:46:59
+    +0100
+To: spambayes@python.org
+X-Injected-Via-Gmane: http://gmane.org/
+Received: from news by main.gmane.org with local (Exim 3.35 #1 (Debian))
+    id 18JXzW-0007vS-00 for <gmane-mail-spam-spambayes-general@m.gmane.org>;
+    Wed, 04 Dec 2002 12:46:58 +0100
+Path: not-for-mail
+From: Michael Hudson <mwh@python.net>
+Date: 04 Dec 2002 11:49:23 +0000
+Message-Id: <2madyyyyqa0s.fsf@starship.python.net>
+References: <Pine.LNX.4.33L2.0212031339310.13225-100000@dev.itsite.com>
+    <15853.29052.186166.31687@montanaro.dyndns.org>
+    <w53adjmtn9s.fsf@woozle.org>
+NNTP-Posting-Host: starship.python.net
+X-Trace: main.gmane.org 1039002418 29641 12.155.117.32 (4 Dec 2002
+    11:46:58 GMT)
+X-Complaints-To: usenet@main.gmane.org
+NNTP-Posting-Date: Wed, 4 Dec 2002 11:46:58 +0000 (UTC)
+X-Newsreader: Gnus v5.7/Emacs 20.7
+Subject: [Spambayes] Re: New Application of SpamBayesian tech?
+X-Beenthere: spambayes@python.org
+X-Mailman-Version: 2.1b5+
+Precedence: list
+List-Id: Discussion list for Pythonic Bayesian classifier <spambayes.python.org>
+List-Help: <mailto:spambayes-request@python.org?subject=help>
+List-Post: <mailto:spambayes@python.org>
+List-Subscribe: <http://mail.python.org/mailman/listinfo/spambayes>,
+    <mailto:spambayes-request@python.org?subject=subscribe>
+List-Archive: <http://mail.python.org/pipermail/spambayes>
+List-Unsubscribe: <http://mail.python.org/mailman/listinfo/spambayes>,
+    <mailto:spambayes-request@python.org?subject=unsubscribe>
+Sender: spambayes-bounces@python.org
+Errors-To: spambayes-bounces@python.org
+
+Neale Pickett <neale@woozle.org> writes:
+
+> Skip Montanaro <skip@pobox.com> writes:
+> 
+> > Yes.  It also seems to me that web page content filtering proxies (you
+> > know, keeping your kids or employees from visiting XXX websites) would
+> > be another good application of the technology.
+> 
+> Not to mention IDS (Intrusion Detection Systems).
+> 
+> IANAS but I have a friend who is, and he's suggested to me a few times
+> that it would be very interesting and possibly fruitful to apply
+> Bayesian analysis to network security.  But I think I'm going to have to
+> pull out the probab/stats book from college before I embark on such a
+> thing :)
+
+I have half a mind to see how it works as a replacement for gnus'
+adaptive scoring.  A harder problem than spam filtering, I guess, but
+it might be interesting.
+
+Cheers,
+M.
+
+
+
+_______________________________________________
+Spambayes mailing list
+Spambayes@python.org
+http://mail.python.org/mailman/listinfo/spambayes
+
+

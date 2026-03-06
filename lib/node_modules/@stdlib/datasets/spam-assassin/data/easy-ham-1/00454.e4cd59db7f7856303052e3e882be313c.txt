@@ -1,0 +1,69 @@
+From fork-admin@xent.com  Fri Sep  6 11:42:28 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id ABC3916F76
+	for <jm@localhost>; Fri,  6 Sep 2002 11:39:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:39:51 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g869e8C28612 for <jm@jmason.org>;
+    Fri, 6 Sep 2002 10:40:08 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 10D7D294291; Fri,  6 Sep 2002 02:37:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id DDED7294290 for
+    <fork@xent.com>; Fri,  6 Sep 2002 02:36:04 -0700 (PDT)
+Received: (qmail 31903 invoked by uid 508); 6 Sep 2002 09:38:40 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.31) by
+    venus.phpwebhosting.com with SMTP; 6 Sep 2002 09:38:40 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g869caH32655; Fri, 6 Sep 2002 11:38:36 +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: <bitbitch@magnesium.net>
+Cc: "Adam L. Beberg" <beberg@mithral.com>, <fork@spamassassin.taint.org>
+Subject: Re[2]: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <155207191859.20020905234116@magnesium.net>
+Message-Id: <Pine.LNX.4.33.0209061122540.30472-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 6 Sep 2002 11:38:36 +0200 (CEST)
+
+On Thu, 5 Sep 2002 bitbitch@magnesium.net wrote:
+
+> If guys still have silly antequated ideas about 'women's role' then
+> their opportunities for finding women _will_ be scarce.  
+
+What is silly and antiquated depends a lot on which country you live in.
+
+I don't have statistics on the love half life, but it seems long-term 
+relationships use something else for glue.
+
+Clearly our non-silly non-antiquated ideas about relationships have
+resulted in mostly short-duration relationships and single-parented,
+dysfunctional kids (not enough of them too boot, so to keep our
+demographics from completely keeling over we're importing them from places
+with mostly silly and antiquated ideas).
+
+At least from the viewpoint of demographics sustainability and
+counterpressure to gerontocracy and resulting innovatiophobia we're doing
+something wrong.
+
+Maybe we should really go dirty Tleilaxu all the way.
+
+

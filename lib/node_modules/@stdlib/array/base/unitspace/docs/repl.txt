@@ -1,0 +1,28 @@
+
+{{alias}}( start, stop )
+    Generates a linearly spaced numeric array whose elements increment by 1.
+
+    The output array is guaranteed to include the `start` value but does not
+    include the `stop` value.
+
+    Parameters
+    ----------
+    start: number
+        First array value.
+
+    stop: number
+        Array element bound.
+
+    Returns
+    -------
+    out: Array
+        Linearly spaced numeric array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 0, 6 )
+    [ 0, 1, 2, 3, 4, 5 ]
+
+    See Also
+    --------
+

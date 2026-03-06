@@ -1,0 +1,58 @@
+From fork-admin@xent.com  Wed Sep 18 11:52:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2E7BC16F03
+	for <jm@localhost>; Wed, 18 Sep 2002 11:52:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 11:52:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8I4vZC13372 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 05:57:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id F3C7B2940D1; Tue, 17 Sep 2002 21:54:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from c007.snv.cp.net (h008.c007.snv.cp.net [209.228.33.236]) by
+    xent.com (Postfix) with SMTP id 8C0BC29409F for <FoRK@Xent.Com>;
+    Tue, 17 Sep 2002 21:53:30 -0700 (PDT)
+Received: (cpmta 966 invoked from network); 17 Sep 2002 21:56:49 -0700
+Received: from 65.189.7.13 (HELO alumni.rice.edu) by
+    smtp.directvinternet.com (209.228.33.236) with SMTP; 17 Sep 2002 21:56:49
+    -0700
+X-Sent: 18 Sep 2002 04:56:49 GMT
+Message-Id: <3D880744.1050300@alumni.rice.edu>
+From: Wayne E Baisley <baisley@alumni.rice.edu>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.0.1)
+    Gecko/20020823 Netscape/7.0
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Florida Our Recount Kapitol <FoRK@xent.com>
+Subject: Re: FWD: Florida Primary 2002: Back to the Future
+References: <3D8216C8.8F0D61DA@Golux.Com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 17 Sep 2002 23:55:32 -0500
+
+Yes, it's nice to be back in America's flaccid state ...
+
+Seems like only yesterday we were suffering electile dysfunction ...
+
+Maybe if they made the ballot ovals look like little blue pills ...
+
+No, seriously ... I'm here all week ... You were great ...
+'nite everybody
+
+

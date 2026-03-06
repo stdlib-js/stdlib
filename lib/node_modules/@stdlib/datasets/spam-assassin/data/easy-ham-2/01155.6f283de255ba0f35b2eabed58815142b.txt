@@ -1,0 +1,60 @@
+From rpm-list-admin@freshrpms.net  Tue Jul 23 23:27:31 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0AAF1440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 18:27:31 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 23:27:31 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6NMRF432544 for
+    <jm-rpm@jmason.org>; Tue, 23 Jul 2002 23:27:15 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6NMJ2C17082; Wed, 24 Jul 2002 00:19:02
+    +0200
+Received: from gurney.bluecom.no (gurney.bluecom.no [217.118.32.13]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6NMIYC16942 for
+    <rpm-list@freshrpms.net>; Wed, 24 Jul 2002 00:18:34 +0200
+Received: from sunnmore.net (ekorn.sunnmore.net [217.118.32.243]) by
+    gurney.bluecom.no (8.11.6/8.11.6) with ESMTP id g6NMISN09666 for
+    <rpm-list@freshrpms.net>; Wed, 24 Jul 2002 00:18:28 +0200
+Message-Id: <3D3DD633.7010003@sunnmore.net>
+From: Roy-Magne Mo <rmo@sunnmore.net>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1b) Gecko/20020715
+X-Accept-Language: nn, no, en-us
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: apt repository for irssi
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 24 Jul 2002 00:18:27 +0200
+Date: Wed, 24 Jul 2002 00:18:27 +0200
+
+Seems like irssi.org also has an apt-rpm repository for snapshots of irssi:
+
+rpm http://ninja.no/apt 7.3/i386 irssi
+rpm-src http://ninja.no/apt 7.3/i386 irssi
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

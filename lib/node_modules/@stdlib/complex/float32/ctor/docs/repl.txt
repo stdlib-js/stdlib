@@ -1,0 +1,93 @@
+
+{{alias}}( real, imag )
+    64-bit complex number constructor.
+
+    Both the real and imaginary components are stored as single-precision
+    floating-point numbers.
+
+    Parameters
+    ----------
+    real: number
+        Real component.
+
+    imag: number
+        Imaginary component.
+
+    Returns
+    -------
+    z: Complex64
+        64-bit complex number.
+
+    z.re: number
+        Read-only property returning the real component.
+
+    z.im: number
+        Read-only property returning the imaginary component.
+
+    Examples
+    --------
+    > var z = new {{alias}}( 5.0, 3.0 )
+    <Complex64>
+    > z.re
+    5.0
+    > z.im
+    3.0
+
+
+{{alias}}.name
+    Constructor name.
+
+    Examples
+    --------
+    > var str = {{alias}}.name
+    'Complex64'
+
+
+{{alias}}.BYTES_PER_ELEMENT
+    Size (in bytes) of each component.
+
+    Returns
+    -------
+    v: integer
+        Size (in bytes) of each component.
+
+    Examples
+    --------
+    > var s = {{alias}}.BYTES_PER_ELEMENT
+    4
+
+
+{{alias}}.prototype.BYTES_PER_ELEMENT
+    Size (in bytes) of each component.
+
+    Returns
+    -------
+    s: integer
+        Size (in bytes) of each component.
+
+    Examples
+    --------
+    > var z = new {{alias}}( 5.0, 3.0 )
+    <Complex64>
+    > var s = z.BYTES_PER_ELEMENT
+    4
+
+
+{{alias}}.prototype.byteLength
+    Length (in bytes) of a complex number.
+
+    Returns
+    -------
+    len: integer
+        Length (in bytes) of a complex number.
+
+    Examples
+    --------
+    > var z = new {{alias}}( 5.0, 3.0 )
+    <Complex64>
+    > var s = z.byteLength
+    8
+
+    See Also
+    --------
+

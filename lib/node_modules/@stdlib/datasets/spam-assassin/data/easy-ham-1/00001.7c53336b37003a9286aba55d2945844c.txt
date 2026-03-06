@@ -1,0 +1,113 @@
+From exmh-workers-admin@redhat.com  Thu Aug 22 12:36:23 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D03E543C36
+	for <zzzz@localhost>; Thu, 22 Aug 2002 07:36:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 12:36:16 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MBYrZ04811 for
+    <zzzz-exmh@spamassassin.taint.org>; Thu, 22 Aug 2002 12:34:53 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 8386540858; Thu, 22 Aug 2002
+    07:35:02 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 10CF8406D7
+    for <exmh-workers@listman.redhat.com>; Thu, 22 Aug 2002 07:34:10 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7MBY7g11259 for exmh-workers@listman.redhat.com; Thu, 22 Aug 2002
+    07:34:07 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7MBY7Y11255 for
+    <exmh-workers@redhat.com>; Thu, 22 Aug 2002 07:34:07 -0400
+Received: from ratree.psu.ac.th ([202.28.97.6]) by mx1.spamassassin.taint.org
+    (8.11.6/8.11.6) with SMTP id g7MBIhl25223 for <exmh-workers@redhat.com>;
+    Thu, 22 Aug 2002 07:18:55 -0400
+Received: from delta.cs.mu.OZ.AU (delta.coe.psu.ac.th [172.30.0.98]) by
+    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7MBWel29762;
+    Thu, 22 Aug 2002 18:32:40 +0700 (ICT)
+Received: from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU
+    (8.11.6/8.11.6) with ESMTP id g7MBQPW13260; Thu, 22 Aug 2002 18:26:25
+    +0700 (ICT)
+From: Robert Elz <kre@munnari.OZ.AU>
+To: Chris Garrigues <cwg-dated-1030377287.06fa6d@DeepEddy.Com>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: New Sequences Window
+In-Reply-To: <1029945287.4797.TMDA@deepeddy.vircio.com>
+References: <1029945287.4797.TMDA@deepeddy.vircio.com>
+    <1029882468.3116.TMDA@deepeddy.vircio.com> <9627.1029933001@munnari.OZ.AU>
+    <1029943066.26919.TMDA@deepeddy.vircio.com>
+    <1029944441.398.TMDA@deepeddy.vircio.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <13258.1030015585@munnari.OZ.AU>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Thu, 22 Aug 2002 18:26:25 +0700
+
+    Date:        Wed, 21 Aug 2002 10:54:46 -0500
+    From:        Chris Garrigues <cwg-dated-1030377287.06fa6d@DeepEddy.Com>
+    Message-ID:  <1029945287.4797.TMDA@deepeddy.vircio.com>
+
+
+  | I can't reproduce this error.
+
+For me it is very repeatable... (like every time, without fail).
+
+This is the debug log of the pick happening ...
+
+18:19:03 Pick_It {exec pick +inbox -list -lbrace -lbrace -subject ftp -rbrace -rbrace} {4852-4852 -sequence mercury}
+18:19:03 exec pick +inbox -list -lbrace -lbrace -subject ftp -rbrace -rbrace 4852-4852 -sequence mercury
+18:19:04 Ftoc_PickMsgs {{1 hit}}
+18:19:04 Marking 1 hits
+18:19:04 tkerror: syntax error in expression "int ...
+
+Note, if I run the pick command by hand ...
+
+delta$ pick +inbox -list -lbrace -lbrace -subject ftp -rbrace -rbrace  4852-4852 -sequence mercury
+1 hit
+
+That's where the "1 hit" comes from (obviously).  The version of nmh I'm
+using is ...
+
+delta$ pick -version
+pick -- nmh-1.0.4 [compiled on fuchsia.cs.mu.OZ.AU at Sun Mar 17 14:55:56 ICT 2002]
+
+And the relevant part of my .mh_profile ...
+
+delta$ mhparam pick
+-seq sel -list
+
+
+Since the pick command works, the sequence (actually, both of them, the
+one that's explicit on the command line, from the search popup, and the
+one that comes from .mh_profile) do get created.
+
+kre
+
+ps: this is still using the version of the code form a day ago, I haven't
+been able to reach the cvs repository today (local routing issue I think).
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

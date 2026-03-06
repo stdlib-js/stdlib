@@ -1,0 +1,285 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# Moment-Generating Function
+
+> [Laplace][laplace-distribution] distribution moment-generating function (MGF).
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+The [moment-generating function][mgf] for a [Laplace (double exponential)][laplace-distribution] random variable is
+
+<!-- <equation class="equation" label="eq:laplace_mgf_function" align="center" raw="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{\exp(\mu\,t)}{1-b^2\,t^2}\,\!\text{ for }|t|<1/b" alt="Moment-generating function (MGF) for a Laplace (double exponential) distribution."> -->
+
+```math
+M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{\exp(\mu\,t)}{1-b^2\,t^2}\,\!\text{ for }|t|<1/b
+```
+
+<!-- <div class="equation" align="center" data-raw-text="M_X(t) := \mathbb{E}\!\left[e^{tX}\right] = \frac{\exp(\mu\,t)}{1-b^2\,t^2}\,\!\text{ for }|t|&lt;1/b" data-equation="eq:laplace_mgf_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@51534079fef45e990850102147e8945fb023d1d0/lib/node_modules/@stdlib/stats/base/dists/laplace/mgf/docs/img/equation_laplace_mgf_function.svg" alt="Moment-generating function (MGF) for a Laplace (double exponential) distribution.">
+    <br>
+</div> -->
+
+<!-- </equation> -->
+
+where `mu` is the location parameter and `b` is the scale parameter. For `|t| >= 1/b`, the [MGF][mgf] is undefined.
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var mgf = require( '@stdlib/stats/base/dists/laplace/mgf' );
+```
+
+#### mgf( t, mu, b )
+
+Evaluates the [moment-generating function][mgf] (MGF) for a [Laplace][laplace-distribution] (double exponential) distribution with parameters `mu` (location) and `b` (scale).
+
+```javascript
+var y = mgf( 0.5, 0.0, 1.0 );
+// returns ~1.333
+
+y = mgf( 0.0, 0.0, 1.0 );
+// returns 1.0
+
+y = mgf( -1.0, 4.0, 0.2 );
+// returns ~0.019
+```
+
+If provided `NaN` as any argument, the function returns `NaN`.
+
+```javascript
+var y = mgf( NaN, 0.0, 1.0 );
+// returns NaN
+
+y = mgf( 0.0, NaN, 1.0 );
+// returns NaN
+
+y = mgf( 0.0, 0.0, NaN );
+// returns NaN
+```
+
+If `t` is not inside the interval `(-1/b, 1/b)`, the function returns `NaN`.
+
+```javascript
+var y = mgf( 1.0, 0.0, 2.0 );
+// returns NaN
+
+y = mgf( -0.5, 0.0, 4.0 );
+// returns NaN
+```
+
+If provided `b <= 0`, the function returns `NaN`.
+
+```javascript
+var y = mgf( 2.0, 0.0, 0.0 );
+// returns NaN
+
+y = mgf( 2.0, 0.0, -1.0 );
+// returns NaN
+```
+
+#### mgf.factory( mu, b )
+
+Returns a function for evaluating the [moment-generating function][mgf] (MGF) of a [Laplace][laplace-distribution] (double exponential) distribution with parameters `mu` and `b`.
+
+```javascript
+var mymgf = mgf.factory( 4.0, 2.0 );
+
+var y = mymgf( 0.2 );
+// returns ~2.649
+
+y = mymgf( 0.4 );
+// returns ~13.758
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- Package usage examples. -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var mgf = require( '@stdlib/stats/base/dists/laplace/mgf' );
+
+var opts = {
+    'dtype': 'float64'
+};
+var t = uniform( 10, 0.0, 1.0, opts );
+var mu = uniform( 10, -5.0, 5.0, opts );
+var b = uniform( 10, 0.0, 20.0, opts );
+
+logEachMap( 't: %0.4f, µ: %0.4f, b: %0.4f, M_X(t;µ,b): %0.4f', t, mu, b, mgf );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/laplace/mgf.h"
+```
+
+#### stdlib_base_dists_laplace_mgf( t, mu, b )
+
+Evaluates the [moment-generating function][mgf] (MGF) for a [Laplace][laplace-distribution] (double exponential) distribution with parameters `mu` (location) and `b` (scale).
+
+```c
+double out = stdlib_base_dists_laplace_mgf( 0.5, 0.0, 1.0 );
+// returns ~1.333
+```
+
+The function accepts the following arguments:
+
+-   **t**: `[in] double` input value.
+-   **mu**: `[in] double` location parameter.
+-   **b**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_laplace_mgf( const double t, const double mu, const double b );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/laplace/mgf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double mu;
+    double b;
+    double t;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        mu = random_uniform( -5.0, 5.0 );
+        b = random_uniform( 0.1, 20.0 );
+        t = random_uniform( -1.0/b, 1.0/b );
+        y = stdlib_base_dists_laplace_mgf( t, mu, b );
+        printf( "t: %lf, µ: %lf, b: %lf, M_X(t;µ,b): %lf\n", t, mu, b, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[laplace-distribution]: https://en.wikipedia.org/wiki/Laplace_distribution
+
+[mgf]: https://en.wikipedia.org/wiki/Moment-generating_function
+
+</section>
+
+<!-- /.links -->

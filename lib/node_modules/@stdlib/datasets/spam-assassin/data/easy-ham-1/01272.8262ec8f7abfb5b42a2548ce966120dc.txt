@@ -1,0 +1,182 @@
+From rpm-list-admin@freshrpms.net  Mon Oct  7 18:28:37 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0973F16F19
+	for <jm@localhost>; Mon,  7 Oct 2002 18:28:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 18:28:32 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g97GmUK08066 for
+    <jm-rpm@jmason.org>; Mon, 7 Oct 2002 17:48:30 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g97Gb6f26808; Mon, 7 Oct 2002 18:37:06
+    +0200
+Received: from pimout4-ext.prodigy.net (pimout4-ext.prodigy.net
+    [207.115.63.103]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g97GZwf17403 for <rpm-list@freshrpms.net>; Mon, 7 Oct 2002 18:35:58 +0200
+Received: from AMD1800.okie-web.com
+    (dialup-65.57.28.171.Dial1.KansasCity1.Level3.net [65.57.28.171]) by
+    pimout4-ext.prodigy.net (8.12.3 da nor stuldap/8.12.3) with ESMTP id
+    g97GZn1H256218 for <rpm-list@freshrpms.net>; Mon, 7 Oct 2002 12:35:50
+    -0400
+Subject: Re: RH 8 no DMA for DVD drive
+From: Alvie <bishop12@prodigy.net>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20021007155913.3b24ae76.matthias@rpmforge.net>
+References: <1033953429.13890.4.camel@AMD1800>
+    <1033954359.28832.4.camel@athlon.ckloiber.com>
+    <1033964717.1263.8.camel@AMD1800>
+    <20021007085643.5b9bb88c.matthias@rpmforge.net>
+    <1033997998.1665.6.camel@AMD1800>
+    <20021007155913.3b24ae76.matthias@rpmforge.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-10)
+Message-Id: <1034008552.1872.10.camel@AMD1800>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 07 Oct 2002 11:35:47 -0500
+Date: 07 Oct 2002 11:35:47 -0500
+
+On Mon, 2002-10-07 at 08:59, Matthias Saou wrote:
+> Once upon a time, Alvie wrote :
+> 
+> > Thanks, I seem to be having problems with rebuilding transcode from SRC
+> > it gets confused from previous errors and gives up.
+> 
+> Could you give the output of the error?
+>
+
+This is only the last part of it.I used 'rpmbuild --rebuild --without avifile transcode.0.6.1-fr2.src.rpm'.
+af6_decore.cpp:305: 'WAVEFORMATEX' is used as a type, but is not defined
+as a
+   type.
+af6_decore.cpp:306: parse error before `if'
+af6_decore.cpp:308: syntax error before `->' token
+af6_decore.cpp:313: `wvFmt' was not declared in this scope
+af6_decore.cpp:313: `avm_wave_format_name' was not declared in this
+scope
+af6_decore.cpp:314: `wvFmt' was not declared in this scope
+af6_decore.cpp:315: `wvFmt' was not declared in this scope
+af6_decore.cpp:316: `wvFmt' was not declared in this scope
+af6_decore.cpp:316: ISO C++ forbids declaration of `fprintf' with no
+type
+af6_decore.cpp:316: redefinition of `int fprintf'
+af6_decore.cpp:161: `int fprintf' previously defined here
+af6_decore.cpp:316: initializer list being treated as compound
+expression
+af6_decore.cpp:317: 'WAVEFORMATEX' is used as a type, but is not defined
+as a
+   type.
+af6_decore.cpp:318: syntax error before `->' token
+af6_decore.cpp:321: `fmt' was not declared in this scope
+af6_decore.cpp:321: `avm_wave_format_name' was not declared in this
+scope
+af6_decore.cpp:322: `fmt' was not declared in this scope
+af6_decore.cpp:323: `fmt' was not declared in this scope
+af6_decore.cpp:324: `fmt' was not declared in this scope
+af6_decore.cpp:324: ISO C++ forbids declaration of `fprintf' with no
+type
+af6_decore.cpp:324: redefinition of `int fprintf'
+af6_decore.cpp:316: `int fprintf' previously defined here
+af6_decore.cpp:324: initializer list being treated as compound
+expression
+af6_decore.cpp:327: parse error before `if'
+af6_decore.cpp:330: syntax error before `->' token
+af6_decore.cpp:349: ISO C++ forbids declaration of `samples' with no
+type
+af6_decore.cpp:349: conflicting types for `int samples'
+af6_decore.cpp:290: previous declaration as `unsigned int samples'
+af6_decore.cpp:349: `fmt' was not declared in this scope
+af6_decore.cpp:350: ISO C++ forbids declaration of `buffer_size' with no
+type
+af6_decore.cpp:350: conflicting types for `int buffer_size'
+af6_decore.cpp:288: previous declaration as `unsigned int buffer_size'
+af6_decore.cpp:350: `fmt' was not declared in this scope
+af6_decore.cpp:351: ISO C++ forbids declaration of `buffer' with no type
+af6_decore.cpp:351: conflicting types for `int buffer'
+af6_decore.cpp:291: previous declaration as `char*buffer'
+af6_decore.cpp:351: invalid conversion from `char*' to `int'
+af6_decore.cpp:352: parse error before `if'
+af6_decore.cpp:354: syntax error before `->' token
+af6_decore.cpp:359: ISO C++ forbids declaration of `fflush' with no type
+af6_decore.cpp:359: redefinition of `int fflush'
+
+af6_decore.cpp:288: previous declaration as `unsigned int buffer_size'
+af6_decore.cpp:350: `fmt' was not declared in this scope
+af6_decore.cpp:351: ISO C++ forbids declaration of `buffer' with no type
+af6_decore.cpp:351: conflicting types for `int buffer'
+af6_decore.cpp:291: previous declaration as `char*buffer'
+af6_decore.cpp:351: invalid conversion from `char*' to `int'
+af6_decore.cpp:352: parse error before `if'
+af6_decore.cpp:354: syntax error before `->' token
+af6_decore.cpp:359: ISO C++ forbids declaration of `fflush' with no type
+af6_decore.cpp:359: redefinition of `int fflush'
+af6_decore.cpp:208: `int fflush' previously defined here
+af6_decore.cpp:359: invalid conversion from `_IO_FILE*' to `int'
+af6_decore.cpp:360: `ipipe' was not declared in this scope
+af6_decore.cpp:360: `sync_str' was not declared in this scope
+af6_decore.cpp:360: `sync_str' was not declared in this scope
+af6_decore.cpp:360: ISO C++ forbids declaration of `p_write' with no
+type
+af6_decore.cpp:360: redefinition of `int p_write'
+af6_decore.cpp:209: `int p_write' previously defined here
+af6_decore.cpp:360: initializer list being treated as compound
+expression
+af6_decore.cpp:363: parse error before `while'
+af6_decore.cpp:368: syntax error before `->' token
+make[3]: *** [af6_decore.lo] Error 1
+make[3]: Leaving directory
+`/usr/src/redhat/BUILD/transcode-0.6.1/import'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory
+`/usr/src/redhat/BUILD/transcode-0.6.1/import'
+
+
+> > Using trancode rpm I can't get transcode command line args to
+> > work.Although it's been a while since I used it - maybe I forgot how!
+>
+This was a dumb mistake on my part. I did'nt have libdvdcss-devel, the
+transcode command line args work fine now, but not so for DVD::RIP.
+Thanks for help
+Alvie
+ 
+> I'm encoding a DVD to DivX4 right now on my home computer, and it works
+> fine. My current Red Hat 8.0 build of transcode has avifile support
+> disabled, that may be your problem? It's because gcc 3.2 isn't currently
+> able to recompile avifile... :-/
+> 
+> Matthias
+> 
+> -- 
+> Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+> Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10acpi
+> Load : 0.09 0.12 0.21
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

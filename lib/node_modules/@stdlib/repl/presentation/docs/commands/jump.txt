@@ -1,0 +1,21 @@
+
+jump( n )
+    Jumps a specified number of slides.
+
+    Parameters
+    ----------
+    n: integer
+    	Number of slides to jump.
+
+    Examples
+    --------
+    // Jump two slides forward:
+    > jump( 2 );
+
+    // Jump two slides backward:
+    > jump( -2 );
+
+    See Also
+    --------
+    jumpTo, next, prev
+

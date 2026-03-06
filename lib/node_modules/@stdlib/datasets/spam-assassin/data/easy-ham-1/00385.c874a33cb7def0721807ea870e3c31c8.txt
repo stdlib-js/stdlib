@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Tue Sep  3 14:24:09 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A5F7E16F38
+	for <jm@localhost>; Tue,  3 Sep 2002 14:22:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 14:22:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g833dsZ03346 for <jm@jmason.org>;
+    Tue, 3 Sep 2002 04:39:54 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 90DBA2940A9; Mon,  2 Sep 2002 20:37:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mx.spiritone.com (mx.spiritone.com [216.99.221.5]) by
+    xent.com (Postfix) with SMTP id C6C9C294099 for <fork@xent.com>;
+    Mon,  2 Sep 2002 20:36:10 -0700 (PDT)
+Received: (qmail 22313 invoked from network); 3 Sep 2002 03:38:35 -0000
+Received: (ofmipd 216.99.213.165); 3 Sep 2002 03:38:13 -0000
+Message-Id: <9FD20548-BEEE-11D6-88BE-00039344DDD6@ordersomewherechaos.com>
+From: "RossO" <fork@ordersomewherechaos.com>
+To: fork@spamassassin.taint.org
+Subject: Re: Electric car an Edsel...
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Content-Transfer-Encoding: 7bit
+In-Reply-To: <Pine.LNX.4.33.0208310137230.27766-100000@watcher.mithral.com>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 2 Sep 2002 20:38:34 -0700
+
+Sunday I drove from Portland down to the Woodburn Dragstrip to check out 
+the NEDRA Nationals. <http://www.nedra.com/>
+
+The electric cars, motorcycles and dragsters had some great times and I 
+ended up with a few pics and a nice deep burn...
+
+John Waylan (who was interviewed in Wired a few years back) pulled out a 
+14.4 second run in the quarter mile (91mph), on a battery pack that 
+hasn't been broken in yet. He expects to break his record next year 
+topping his 13.1sec/99mph run a couple of years ago. He's shooting for a 
+12 second run.
+
+John also took out a replica 1908 Oldsmobile for a respectable 47mph 
+run. (Remember, we started out with electric cars.)
+
+Near the end of the day, Kilacycle took the track with an amazing 111mph 
+run. Talk about a crotch rocket.
+
+...Ross...
+
+
+On Saturday, August 31, 2002, at 01:45  AM, Adam L. Beberg wrote:
+> Personally I don't think Americans will ever go electric, there is too 
+> much
+> testosterone linked to the auto as the male's primary form of 
+> compesating
+> for other things. See.. now that's a job for you femanists, teach women 
+> not
+> to fall for a fast environmentally destuctive vehicle, you should only 
+> have
+> to rewrite 98% of the genome ;)
+
+

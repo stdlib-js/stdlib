@@ -1,0 +1,61 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6P5VKi5050420
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Thu, 25 Jul 2002 00:31:21 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6P5VKLs050417
+	for cypherpunks-forward@ds.pro-ns.net; Thu, 25 Jul 2002 00:31:20 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6P5VHi5050406
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Thu, 25 Jul 2002 00:31:18 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6P5VGJ67749
+	for <cypherpunks@ds.pro-ns.net>; Thu, 25 Jul 2002 01:31:16 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6P5VBg27177
+	for cypherpunks@ds.pro-ns.net; Thu, 25 Jul 2002 01:31:11 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6P5V8R27164
+	for <cpunks@minder.net>; Thu, 25 Jul 2002 01:31:08 -0400
+Received: from newweb.surfclear.com (newweb.surfclear.com [63.150.182.56])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6P5V8J67735
+	for <cpunks@minder.net>; Thu, 25 Jul 2002 01:31:08 -0400 (EDT)
+	(envelope-from nobody@newweb.surfclear.com)
+Received: (from nobody@localhost)
+	by newweb.surfclear.com (8.9.3/8.9.3) id BAA06990;
+	Thu, 25 Jul 2002 01:23:03 -0400
+Date: Thu, 25 Jul 2002 01:23:03 -0400
+Message-Id: <200207250523.BAA06990@newweb.surfclear.com>
+To: cpuma@earthlink.net, cpumatt@trib.com, cpun@rocketmail.com,
+   cpunides@flash.net, cpunk@hotmail.com, cpunks@minder.net,
+   cpuonline@yahoo.com, cpupro16@hotmail.com, cpupse@yahoo.com,
+   cpurdon@bmts.com
+From: Pamela@Blinkese.com ()
+Subject: Hey wassup, Remember me ;)
+
+Below is the result of your feedback form.  It was submitted by
+ (Pamela@Blinkese.com) on Thursday, July 25, 2002 at 01:23:03
+---------------------------------------------------------------------------
+
+: <font size=5><br><br>
+Hey wassup my names mandy, I got this new webpage, Im trying to see if things look alright before i publish it. Can you come and check it out for me!<br><br>
+<a href="http://www.iteensz.us.tt">Check it out!</a>
+---------------------------------------------------------------------------
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

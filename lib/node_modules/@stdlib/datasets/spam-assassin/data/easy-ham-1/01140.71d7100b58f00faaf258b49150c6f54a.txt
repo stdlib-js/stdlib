@@ -1,0 +1,98 @@
+From exmh-users-admin@redhat.com  Mon Sep 30 10:55:04 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B3D7216F17
+	for <jm@localhost>; Mon, 30 Sep 2002 10:54:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 10:54:58 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8S3Fwg11269 for
+    <jm-exmh@jmason.org>; Sat, 28 Sep 2002 04:15:59 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 621883EF06; Fri, 27 Sep 2002
+    23:15:23 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id DAF6F3EB89
+    for <exmh-users@listman.redhat.com>; Fri, 27 Sep 2002 23:10:07 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8S3A7N13392 for exmh-users@listman.redhat.com; Fri, 27 Sep 2002
+    23:10:07 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8S3A7f13383 for
+    <exmh-users@redhat.com>; Fri, 27 Sep 2002 23:10:07 -0400
+Received: from bucky.sculptors.com (IDENT:root@bucky.sculptors.com
+    [216.240.42.233]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g8S2pni14420 for <exmh-users@redhat.com>; Fri, 27 Sep 2002 22:51:49 -0400
+Received: from bootstrap.sculptors.com
+    (IDENT:q+zuxl3dIEq2kxQ00xeMYNy7bLdLFAtx@bootstrap.sculptors.com
+    [216.240.42.241]) by bucky.sculptors.com (8.11.6/8.11.6) with ESMTP id
+    g8S3A4Y15596 for <exmh-users@redhat.com>; Fri, 27 Sep 2002 20:10:05 -0700
+Received: (from salsbury@localhost) by bootstrap.sculptors.com
+    (8.11.6/8.11.6) id g8S3A2S20585; Fri, 27 Sep 2002 20:10:02 -0700
+From: The Butterfly <salsbury@sculptors.com>
+Message-Id: <200209280310.g8S3A2S20585@bootstrap.sculptors.com>
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Help! I've lost my exmh-unseen window!
+X-Newsgroups: local.lists.exmh-users
+In-Reply-To: <E17tS0T-0001zD-00@rds059>
+References: <200209220410.g8M4AAI14657@bootstrap.sculptors.com>
+Organization: Evolutionary Acceleration, Inc.
+Cc: 
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Fri, 27 Sep 2002 20:10:02 -0700
+
+In article <E17tS0T-0001zD-00@rds059> you write:
+>>>> Patrick Salsbury writes:
+>
+>  Patrick> One of the features I really like about exmh is the
+>  Patrick> ability to see which folders have unseen messages in
+>  Patrick> them, but recently, it seems to have vanished into the
+>  Patrick> bowels of my window manager in a place I can't get
+>  Patrick> to. It claims to be running, but doesn't appear
+>  Patrick> anywhere onscreen. (I'm using Enlightenment with a 2x2
+>  Patrick> virtual desktop. I've tried dropping it to only 1
+>  Patrick> screen. No help.)
+>  Patrick>
+>
+>This may not help/work but I've discovered recently that
+>Alt-middle-mouse pops up a list of all of my windows.  If I leave
+>my mouse on the background, it lists Alt-middle-mouse as "Display
+>Task List Menu".
+>
+>HTH,
+>
+>- Bill
+	When I do that, it just moves my mouse to the very edge of a window
+(probably trying to center it on the off-screen window in question.) 
+
+	I'll have to try it with another window manager and see if I can
+get exmh to put it back inside of sane boundaries. I don't have this
+problem with any other windows, though. Just the exmhunseen window.
+
+Pat
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

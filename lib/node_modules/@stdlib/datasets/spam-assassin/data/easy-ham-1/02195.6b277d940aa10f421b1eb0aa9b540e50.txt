@@ -1,0 +1,32 @@
+From rssfeeds@jmason.org  Wed Oct  2 11:44:50 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6908616F16
+	for <jm@localhost>; Wed,  2 Oct 2002 11:44:50 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:44:50 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9281UK31734 for
+    <jm@jmason.org>; Wed, 2 Oct 2002 09:01:30 +0100
+Message-Id: <200210020801.g9281UK31734@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: TrackBack for OSXCON
+Date: Wed, 02 Oct 2002 08:01:30 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85511996
+Date: Not supplied
+
+Mena sez: "We've set up a TrackBack ping repository for attendees of O'Reilly's 
+Mac OS X Conference. If you're using Movable Type or a TrackBack-enabled tool, 
+you can ping the category relating to your OSXCon-specific weblog post." Link
+[1] Discuss[2] (_Thanks, Mena[3]!_)
+
+[1] http://www.movabletype.org/osxcon/
+[2] http://www.quicktopic.com/boing/H/Eg8fKLFxsFr
+[3] http://www.dollarshort.org/
+
+

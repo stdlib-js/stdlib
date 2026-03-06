@@ -1,0 +1,33 @@
+
+{{alias}}( obj, predicate )
+    Returns a partial object copy excluding properties for which a predicate
+    returns a truthy value.
+
+    The function returns a shallow copy.
+
+    The function only copies own properties. Hence, the function never copies
+    inherited properties.
+
+    Parameters
+    ----------
+    obj: Object
+        Source object.
+
+    predicate: Function
+        Predicate function.
+
+    Returns
+    -------
+    out: Object
+        New object.
+
+    Examples
+    --------
+    > function predicate( key, value ) { return ( value > 1 ); };
+    > var obj1 = { 'a': 1, 'b': 2 };
+    > var obj2 = {{alias}}( obj1, predicate )
+    { 'a': 1 }
+
+    See Also
+    --------
+

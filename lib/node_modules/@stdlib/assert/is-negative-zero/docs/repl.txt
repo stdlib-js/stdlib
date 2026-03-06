@@ -1,0 +1,74 @@
+
+{{alias}}( value )
+    Tests if a value is negative zero.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is negative zero.
+
+    Examples
+    --------
+    > var bool = {{alias}}( -0.0 )
+    true
+    > bool = {{alias}}( new Number( -0.0 ) )
+    true
+    > bool = {{alias}}( -3.14 )
+    false
+    > bool = {{alias}}( 0.0 )
+    false
+    > bool = {{alias}}( null )
+    false
+
+
+{{alias}}.isPrimitive( value )
+    Tests if a value is a number primitive equal to negative zero.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a number primitive equal to
+        negative zero.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isPrimitive( -0.0 )
+    true
+    > bool = {{alias}}.isPrimitive( new Number( -0.0 ) )
+    false
+
+
+{{alias}}.isObject( value )
+    Tests if a value is a number object having a value equal to negative zero.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a number object having a value
+        equal to negative zero.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isObject( -0.0 )
+    false
+    > bool = {{alias}}.isObject( new Number( -0.0 ) )
+    true
+
+    See Also
+    --------
+

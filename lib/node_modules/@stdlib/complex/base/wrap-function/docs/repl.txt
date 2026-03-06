@@ -1,0 +1,43 @@
+
+{{alias}}( fcn, nargs, ctor )
+    Wraps a function accepting complex number arguments to support providing
+    both real and complex numbers.
+
+    The returned function *assumes* that the wrapped function accepts *only*
+    complex number input arguments (i.e., every argument must be a complex
+    number).
+
+    The returned function *assumes* that, if an input argument is non-numeric
+    (i.e., not of type `number`), then the input argument is a complex number.
+
+    The returned function does *not* verify that non-numeric input arguments
+    are, in fact, complex number objects.
+
+    The returned function passes non-numeric input arguments to the wrapped
+    function without modification.
+
+    Parameters
+    ----------
+    fcn: Function
+        Function to wrap.
+
+    nargs: integer
+        Number of arguments.
+
+    ctor: Function
+        Complex number constructor.
+
+    Returns
+    -------
+    f: Function
+        Wrapped function.
+
+    Examples
+    --------
+    > var f = {{alias}}( {{alias:@stdlib/complex/float32/base/add}}, 2, {{alias:@stdlib/complex/float32/ctor}} );
+    > var z = f( 3.0, 4.0 )
+    <Complex64>[ 7.0, 0.0 ]
+
+    See Also
+    --------
+

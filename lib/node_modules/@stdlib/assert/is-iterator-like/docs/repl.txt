@@ -1,0 +1,35 @@
+
+{{alias}}( value )
+    Tests if a value is iterator-like.
+
+    An iterator protocol-compliant object is an object having a `next` method
+    which adheres to the iterator protocol.
+
+    As full iterator compliance is impossible to achieve without evaluating an
+    iterator, this function checks *only* for interface compliance.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is iterator-like.
+
+    Examples
+    --------
+    > var obj = {
+    ...     'next': function noop() {}
+    ... };
+    > var bool = {{alias}}( obj )
+    true
+    > bool = {{alias}}( {} )
+    false
+    > bool = {{alias}}( null )
+    false
+
+    See Also
+    --------
+

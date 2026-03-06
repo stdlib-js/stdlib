@@ -1,0 +1,107 @@
+From exmh-workers-admin@redhat.com  Fri Jul 19 18:26:41 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 80532440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 13:26:41 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 18:26:41 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JHO6J18570 for
+    <jm-exmh@jmason.org>; Fri, 19 Jul 2002 18:24:07 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 471FA3F5DB; Fri, 19 Jul 2002
+    13:24:04 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id D363F3FE05
+    for <exmh-workers@listman.redhat.com>; Fri, 19 Jul 2002 13:20:57 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6JHKwN27757 for exmh-workers@listman.redhat.com; Fri, 19 Jul 2002
+    13:20:58 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6JHKwR27753 for
+    <exmh-workers@redhat.com>; Fri, 19 Jul 2002 13:20:58 -0400
+Received: from blackcomb.panasas.com (gw2.panasas.com [65.194.124.178]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g6JH9es02136 for
+    <exmh-workers@redhat.com>; Fri, 19 Jul 2002 13:09:40 -0400
+Received: from medlicott.panasas.com (IDENT:welch@medlicott.panasas.com
+    [172.17.132.188]) by blackcomb.panasas.com (8.9.3/8.9.3) with ESMTP id
+    NAA17211; Fri, 19 Jul 2002 13:20:47 -0400
+Message-Id: <200207191720.NAA17211@blackcomb.panasas.com>
+To: Valdis.Kletnieks@vt.edu
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: Minor whoops with glimpse support
+In-Reply-To: <200207190410.g6J4AhxR006560@turing-police.cc.vt.edu>
+References: <200207190410.g6J4AhxR006560@turing-police.cc.vt.edu>
+Comments: In-reply-to Valdis.Kletnieks@vt.edu message dated "Fri, 19 Jul
+    2002 00:10:43 -0400."
+From: Brent Welch <welch@panasas.com>
+X-Url: http://www.panasas.com/
+X-Face: "HxE|?EnC9fVMV8f70H83&{fgLE.|FZ^$>@Q(yb#N,Eh~N]e&]=>r5~UnRml1:4EglY{9B+
+    :'wJq$@c_C!l8@<$t,{YUr4K,QJGHSvS~U]H`<+L*x?eGzSk>XH\W:AK\j?@?c1o<k;j'Ei/UL)!*0
+    ILwSR)J\bc)gjz!rrGQ2#i*f:M:ydhK}jp4dWQW?;0{,#iWrCV$4~%e/3)$1/D
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Fri, 19 Jul 2002 10:20:46 -0700
+
+There are some cases like this with "incomplete ftoc".  These are surely old
+bugs that appeared after I added the ability to only scan the tail of the ftoc
+if for some reason the scan module decides it cannot easily merge the newly
+scanned (scan unseen) into the tail of the cached scan listing.  Hmm - I poked
+around a bit. glimpse.tcl uses Msg_Change, which has code in it to try and
+deal with showing a message that isn't in the ftoc:
+        Exmh_Status "Cannot find msg $msgid - Rescan?"
+Is that message hiding in your log?  Perhaps there should be a return from
+Msg_Change that glimpse.tcl can use to decide what to do next.
+
+>>>Valdis.Kletnieks@vt.edu said:
+ > Scenario:
+ > 
+ > Inbox has a "dirty" ftoc, only the last 100 entries (3500-last or so).
+ > 
+ > Go to search... glimpse.   Glimpse finds a hit in inbox/3448 (which
+ > isn't
+ > in the ftoc).  Clicking on that one results in a find tool being
+ > launched
+ > *on the current item* (which of course misses, since the search string
+ > isn't IN that item - I wasn't even in 'inbox' at the time.  We don't
+ > change
+ > folders to inbox or display the message that got hit.
+ > 
+ > Clicking on another 'glimpse' hit that was an item that was in a
+ > non-dirty
+ > ftoc worked as expected - folder changed and that mail displayed, and
+ > the search tool found the hit.
+ > 
+ > /Valdis
+
+--
+Brent Welch
+Software Architect, Panasas Inc
+Pioneering the World's Most Scalable and Agile Storage Network
+www.panasas.com
+welch@panasas.com
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

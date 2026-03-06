@@ -1,0 +1,30 @@
+{
+	"string": [
+		"port",
+		"maxport",
+		"hostname",
+		"address",
+		"html",
+		"javascript",
+		"stdin"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"open"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"port": [
+			"p"
+		],
+		"javascript": [
+			"js"
+		]
+	}
+}

@@ -1,0 +1,148 @@
+{
+  "name": "@stdlib/math/base/special/log1pexp",
+  "version": "0.0.0",
+  "description": "Evaluate the natural logarithm of 1+exp(x).",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "gypfile": true,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "math.log",
+    "math.log1p",
+    "special functions",
+    "special",
+    "ln",
+    "log1pexp",
+    "natural",
+    "logarithm",
+    "log",
+    "function"
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "log1pexp",
+      "alias": "log1pexp",
+      "pkg_desc": "evaluate the natural logarithm of 1+exp(x)",
+      "desc": "evaluate the natural logarithm of 1+exp(x)",
+      "short_desc": "natural logarithm of 1+exp(x)",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -100,
+              100
+            ]
+          },
+          "example_values": [
+            -100,
+            4,
+            5,
+            10,
+            -10,
+            -5,
+            3,
+            20,
+            50,
+            -2,
+            -1,
+            90,
+            99,
+            -0.5,
+            0,
+            0.5,
+            1,
+            2,
+            -75,
+            100
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "natural logarithm of 1+exp(x)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "ln",
+        "log1pexp",
+        "natural",
+        "logarithm",
+        "log"
+      ],
+      "extra_keywords": [
+        "math.log",
+        "math.log1p"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "stdlib-datasets-savoy-stopwords-por",
+  "version": "",
+  "title": "Portuguese Stop Words",
+  "description": "A list of Portuguese stop words.",
+  "resources": [
+    {
+      "name": "savoy-stopwords-por-json",
+      "title": "Portuguese Stop Words",
+      "description": "A list of Portuguese stop words.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.json"
+    },
+    {
+      "name": "savoy-stopwords-por-txt",
+      "title": "Portuguese Stop Words",
+      "description": "A list of Portuguese stop words.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "IR Multilingual Resources at UniNE",
+      "web": "http://members.unine.ch/jacques.savoy/clef/"
+    }
+  ],
+  "keywords": [
+    "list",
+    "stopwords",
+    "words",
+    "redundant",
+    "lexicon",
+    "nlp",
+    "language",
+    "portugal",
+    "portuguese",
+    "por"
+  ],
+  "license": "BSD-2-Clause"
+}

@@ -1,0 +1,42 @@
+
+{{alias}}( x, indicator[, thisArg] )
+    Groups element entries according to an indicator function.
+
+    When invoked, the indicator function is provided the following arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: input array.
+
+    The value returned by an indicator function should be a value which can be
+    serialized as an object key.
+
+    If provided an empty array, the function returns an empty object.
+
+    Parameters
+    ----------
+    x: ArrayLike
+        Input array.
+
+    indicator: Function
+        Indicator function specifying which group an element in the input array
+        belongs to.
+
+    thisArg: any (optional)
+        Indicator function execution context.
+
+    Returns
+    -------
+    out: Object
+        Group results.
+
+    Examples
+    --------
+    > function fcn( v ) { return v[ 0 ]; };
+    > var x = [ 'beep', 'boop', 'foo', 'bar' ];
+    > var out = {{alias}}( x, fcn )
+    { 'b': [ [0,'beep'], [1,'boop'], [3,'bar'] ], 'f': [ [2,'foo'] ] }
+
+    See Also
+    --------
+

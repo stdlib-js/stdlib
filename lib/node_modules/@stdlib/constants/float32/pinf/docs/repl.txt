@@ -1,0 +1,12 @@
+
+{{alias}}
+    Single-precision floating-point positive infinity.
+
+    Examples
+    --------
+    > {{alias}}
+    Infinity
+
+    See Also
+    --------
+

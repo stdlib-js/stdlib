@@ -1,0 +1,84 @@
+
+{{alias}}( x, n, p )
+    Evaluates the cumulative distribution function (CDF) for a binomial
+    distribution with number of trials `n` and success probability `p` at a
+    value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a number of trials `n` which is not a nonnegative integer, the
+    function returns `NaN`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    n: integer
+        Number of trials.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Evaluated CDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.0, 20, 0.2 )
+    ~0.411
+    > y = {{alias}}( 21.0, 20, 0.2 )
+    1.0
+    > y = {{alias}}( 5.0, 10, 0.4 )
+    ~0.834
+    > y = {{alias}}( 0.0, 10, 0.4 )
+    ~0.006
+    > y = {{alias}}( NaN, 20, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, 20, NaN )
+    NaN
+    > y = {{alias}}( 2.0, 1.5, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, -2.0, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, 20, -1.0 )
+    NaN
+    > y = {{alias}}( 2.0, 20, 1.5 )
+    NaN
+
+
+{{alias}}.factory( n, p )
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    of a binomial distribution with number of trials `n` and success probability
+    `p`.
+
+    Parameters
+    ----------
+    n: integer
+        Number of trials.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    cdf: Function
+        Cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var mycdf = {{alias}}.factory( 10, 0.5 );
+    > var y = mycdf( 3.0 )
+    ~0.172
+    > y = mycdf( 1.0 )
+    ~0.011
+
+    See Also
+    --------
+

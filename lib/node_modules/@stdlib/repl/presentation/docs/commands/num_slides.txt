@@ -1,0 +1,17 @@
+
+numSlides
+    Returns the presentation length.
+
+    Returns
+    -------
+    len: integer
+        Number of slides.
+
+    Examples
+    --------
+    > numSlides
+
+    See Also
+    --------
+    currentSlide, jumpTo, next, prev
+

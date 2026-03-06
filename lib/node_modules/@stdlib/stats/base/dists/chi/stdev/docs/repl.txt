@@ -1,0 +1,28 @@
+
+{{alias}}( k )
+    Returns the standard deviation of a chi distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `k < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    k: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    out: number
+        Standard deviation.
+
+    Examples
+    --------
+    > var v = {{alias}}( 11.0 )
+    ~0.699
+    > v = {{alias}}( 1.5 )
+    ~0.637
+
+    See Also
+    --------
+

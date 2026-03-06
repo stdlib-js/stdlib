@@ -1,0 +1,126 @@
+From ilug-admin@linux.ie  Thu Sep 26 11:30:33 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id CDC1F16F16
+	for <zzzz@localhost>; Thu, 26 Sep 2002 11:30:31 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 26 Sep 2002 11:30:31 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8Q9qkg10534 for
+    <zzzz-ilug@jmason.org>; Thu, 26 Sep 2002 10:52:46 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 00CE83422D; Thu, 26 Sep 2002 10:53:20 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from localhst1607.com (66-178-46-141.reverse.newskies.net
+    [66.178.46.141]) by lugh.tuatha.org (Postfix) with SMTP id 365B13422D for
+    <ilug@linux.ie>; Thu, 26 Sep 2002 10:52:50 +0100 (IST)
+From: "VICTOR SANKOH" <victorsankoh@mail.com>
+Reply-To: victorsankoh@mail.com
+To: ilug@linux.ie
+X-Mailer: Microsoft Outlook Express 5.00.2919.6900 DM
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Message-Id: <20020926095250.365B13422D@lugh.tuatha.org>
+Subject: [ILUG] WE NEED YOUR ASSISTANCE TO INVEST IN YOUR COUNTRY
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Fri, 13 Jul 2001 10:53:02 +0200
+Date: Fri, 13 Jul 2001 10:53:02 +0200
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g8Q9qkg10534
+Content-Transfer-Encoding: 8bit
+
+Dear Sir/Madam,
+
+I am well confident of your capability to assist me in
+a transaction for mutual benefit of both parties, ie
+(me and you) I am also believing that you will not
+expose or betray the trust and confidence I am about
+to establish with you. I have decided to contact you
+with greatest delight and personal respect.
+
+Well, I am  VICTOR SANKOH, Son to Mr.FODAY
+SANKOH
+who was arrested by the ECOMOG PEACE KEEPING FORCE
+months ago in my country Sierra Leone.
+Few days before the arrest of my father, he confided
+in me and ordered me to go to his underground safe and
+move out immediately, with a Deposit Agreement and
+Cash Receipt he made with a security Company in
+Abidjan Cote d'Ivoire where he deposited One Iron Box
+containing USD$ 22 million dollars cash (Twenty Two
+Million dollars).
+
+This money was made from the sell of Gold and Diamond
+by my FATHER and he have already
+decided to use this money for future investment of
+the family before his arrest.
+
+Thereafter, I rushed down to Abidjan with these
+documents and confirmed the deposit of the box by my
+father. Also, I have been granted political stay as a
+Refugee by the Government of Côte d'Ivoire.
+
+Meanwhile, my father have instructed me to look for a
+trusted foreigner who can assist me to move out this
+money from Côte d'Ivoire immediately for investment .
+Based on this , I solicit for your assistance to
+transfer this fund into your Account, but I will
+demand for the following requirement:
+
+(1) Could you provide for me a safe Bank Account where
+this fund will be transferred to in your country or
+another neaarby country where taxation will not
+takegreat toll on the money?
+
+(2) Could you be able to assist me to obtain my
+travelling papers after this transfer to enable me
+come over to meet you in your country for
+theinvestment of this money?
+
+(3) Could you be able to introduce me to a profitable
+business venture that would not require much technical
+expertise in your country where part of this fund
+willbe invested?
+
+Please, all these requirements are urgently needed as
+it will enable me to establish a stronger business
+relationship with you hence I will like you to be the
+general overseer of the investment thereafter. I am a
+Christian and I will please, want you to handle this
+transaction based on the trust I have established
+on you.
+
+For your assistance in this transaction, I have
+decided to offer you 12% percent commission of the
+total amount at the end of this business. The security
+of this business is very important to me and as such,
+I would like you to keep this business very
+confidential. I shall be expecting your urgent reply.
+Thank you and God bless you.
+
+VICTOR SANKOH
+
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

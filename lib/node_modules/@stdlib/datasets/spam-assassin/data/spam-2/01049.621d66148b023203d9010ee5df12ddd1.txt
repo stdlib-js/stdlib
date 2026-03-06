@@ -1,0 +1,43 @@
+From ABIGAIL@milepost1.com  Thu Jul 25 11:20:00 2002
+Return-Path: <ABIGAIL@milepost1.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9BE37440D6
+	for <jm@localhost>; Thu, 25 Jul 2002 06:19:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:19:56 +0100 (IST)
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6P6P0401834 for
+    <jm@jmason.org>; Thu, 25 Jul 2002 07:25:00 +0100
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP id g6P6Nvp20986 for
+    <jm@netnoteinc.com>; Thu, 25 Jul 2002 07:24:05 +0100
+Received: from 211.114.196.173 (pa30.sochaczew.sdi.tpnet.pl
+    [213.25.251.30]) by webnote.net (8.9.3/8.9.3) with SMTP id HAA08487 for
+    <jm@netnoteinc.com>; Thu, 25 Jul 2002 07:23:46 +0100
+Message-Id: <200207250623.HAA08487@webnote.net>
+Received: from 105.183.205.243 ([105.183.205.243]) by
+    smtp-server1.cfl.rr.com with QMQP; Jul, 25 2002 1:23:06 AM +0600
+Received: from ssymail.ssy.co.kr ([115.212.44.160]) by hd.regsoft.net with
+    asmtp; Jul, 25 2002 12:09:09 AM +0400
+Received: from 51.110.169.187 ([51.110.169.187]) by rly-xl04.mx.aol.com
+    with SMTP; Jul, 24 2002 11:01:50 PM +1200
+Received: from 11.139.74.233 ([11.139.74.233]) by n7.groups.yahoo.com with
+    NNFMP; Jul, 24 2002 9:55:53 PM -0300
+From: STAR <ABIGAIL@milepost1.com>
+To: #recipient#@webnote.net
+Cc: 
+Subject: . jif
+Sender: STAR <ABIGAIL@milepost1.com>
+MIME-Version: 1.0
+Date: Thu, 25 Jul 2002 01:24:14 -0500
+X-Mailer: Microsoft Outlook Express 5.00.2919.6700
+X-Priority: 1
+Content-Type: text/html; charset="iso-8859-1"
+
+.
+
+ukqdrblkougooeoffnxsmbowei
+
+

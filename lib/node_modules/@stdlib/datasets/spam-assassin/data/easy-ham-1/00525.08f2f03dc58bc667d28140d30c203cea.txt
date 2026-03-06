@@ -1,0 +1,54 @@
+From fork-admin@xent.com  Mon Sep  9 19:27:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8DF2B16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 19:27:44 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 19:27:44 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89EiTC19659 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 15:44:30 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 19E212942E6; Mon,  9 Sep 2002 07:36:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain
+    (pool-162-83-147-92.ny5030.east.verizon.net [162.83.147.92]) by xent.com
+    (Postfix) with ESMTP id 9D32529409A for <fork@xent.com>; Mon,
+    9 Sep 2002 07:35:12 -0700 (PDT)
+Received: from localhost (lgonze@localhost) by localhost.localdomain
+    (8.11.6/8.11.6) with ESMTP id g89EW8J03592 for <fork@xent.com>;
+    Mon, 9 Sep 2002 10:32:08 -0400
+X-Authentication-Warning: localhost.localdomain: lgonze owned process
+    doing -bs
+From: Lucas Gonze <lgonze@panix.com>
+X-X-Sender: lgonze@localhost.localdomain
+Cc: FoRK <fork@spamassassin.taint.org>
+Subject: Re[2]: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <Pine.LNX.4.33.0209091613360.32400-100000@hydrogen.leitl.org>
+Message-Id: <Pine.LNX.4.44.0209091024360.1695-100000@localhost.localdomain>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 10:32:07 -0400 (EDT)
+
+> This is getting better and better. You know 3K is utter shite how? 
+
+I'm not going to be your spokesman, Eugen.  Figure it out yourself.
+
+over and out.
+
+
+

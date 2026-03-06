@@ -1,0 +1,63 @@
+From rssfeeds@jmason.org  Sun Oct  6 22:54:34 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7A57716F74
+	for <jm@localhost>; Sun,  6 Oct 2002 22:52:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 06 Oct 2002 22:52:52 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g96808K15190 for
+    <jm@jmason.org>; Sun, 6 Oct 2002 09:00:08 +0100
+Message-Id: <200210060800.g96808K15190@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: aaronsw <rssfeeds@spamassassin.taint.org>
+Subject: to the courthouse
+Date: Sun, 06 Oct 2002 08:00:08 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.aaronsw.com/weblog/000637
+Date: 2002-10-05T21:15:55-06:00
+
+I guess it's time to reveal the incredibly kind invitation I received[1]. As 
+many of you may have found out or guessed, I will be attending oral argument 
+for the Eldred case[2] before the Supreme Court. 
+
+I'm incredibly excited, as you might imagine. Visiting the Supreme Court would 
+be quite enough, but seeing such an important case...Dayenu! When Lessig asked 
+me if I was free that day to come, I laughed because I couldn't (and still 
+can't) think of anything I'd rather do than attend. I am eternally grateful to 
+Lessig for the chance to attend. On the other hand, I'm sort of embarassed to 
+have the opportunity, when there are surely others who deserve it far more than 
+me. Luckily, it seems that such deserving others will be able to get seats by 
+camping in line with us. 
+
+So, I'll be arriving in D.C. on Tuesday, attending an 
+Eldred/Duke/EPIC/Bookmobile superparty, and then camping in line with Seth 
+Schoen[3], Lisa Rein, Jace Cooke but unfortunately not Cory Doctorow. If you'd 
+like to come with us, let me know. 
+
+I was hoping I'd be able to take notes and post them to my weblog for those who 
+couldn't make it, but as I read in today's Times, only lawyers and those with 
+official press credentials are allowed to take notes![4] I think this is 
+outrageous, but hopefully I will be able to remember enough to provide an 
+interesting account. 
+
+In a related irony, today was "Disney Day" at Borders[5], where they played 
+Disney rock songs with the volume turned up too loud, disturbing my usual habit 
+of reading a book there. However, I did manage to skim through _The Practice of 
+Programming_. 
+
+In an unrelated note, if you haven't been electrocuted by a Model T spark plug, 
+I highly recommend it.
+
+
+
+[1] http://www.aaronsw.com/weblog/000609
+[2] http://eldred.cc/
+[3] http://vitanuova.loyalty.org/2002-10-02.html
+[4] http://www.nytimes.com/2002/10/05/opinion/05AMAR.html
+[5] http://www.bordersstores.com/events/event_detail.jsp?SEID=15127444
+
+

@@ -1,0 +1,56 @@
+From fork-admin@xent.com  Tue Sep  3 22:20:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E36DA16F6B
+	for <jm@localhost>; Tue,  3 Sep 2002 22:20:04 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 22:20:04 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g83KhwZ02538 for <jm@jmason.org>;
+    Tue, 3 Sep 2002 21:43:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9B2CC2940FD; Tue,  3 Sep 2002 13:41:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (gateway.ximian.com [141.154.95.125])
+    by xent.com (Postfix) with ESMTP id 5D715294099 for <fork@xent.com>;
+    Tue,  3 Sep 2002 13:40:44 -0700 (PDT)
+Received: (from louie@localhost) by localhost.localdomain (8.11.6/8.11.6)
+    id g83KgAs02179 for fork@xent.com; Tue, 3 Sep 2002 16:42:10 -0400
+X-Authentication-Warning: localhost.localdomain: louie set sender to
+    louie@ximian.com using -f
+Subject: Re: Signers weren't angry young men  (was: Java is for kiddies)
+From: Luis Villa <louie@ximian.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <Pine.LNX.4.33.0209031321040.11949-100000@watcher.mithral.com>
+References: <Pine.LNX.4.33.0209031321040.11949-100000@watcher.mithral.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+Organization:
+Message-Id: <1031085728.1780.11.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailer: Ximian Evolution 1.1.0.99 (Preview Release)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 03 Sep 2002 16:42:09 -0400
+
+On Tue, 2002-09-03 at 16:31, Adam L. Beberg wrote:
+
+> It was a great many years before their were federal taxes in the US.
+
+And during said period there were more than a few serious depressions.
+Amazing what economies tend to do with or without taxes.
+
+Luis
+

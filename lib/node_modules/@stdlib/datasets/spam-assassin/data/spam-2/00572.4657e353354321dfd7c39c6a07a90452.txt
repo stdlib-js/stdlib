@@ -1,0 +1,153 @@
+From vag7pu@worldnet.att.net  Mon Jun 24 17:53:36 2002
+Return-Path: vag7pu@worldnet.att.net
+Delivery-Date: Mon Jun  3 15:58:21 2002
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g53EwKO17541 for
+    <jm@jmason.org>; Mon, 3 Jun 2002 15:58:20 +0100
+Received: from dataflyer.morenorivera.com
+    (adsl-216-102-106-173.dsl.scrm01.pacbell.net [216.102.106.173]) by
+    mandark.labs.netnoteinc.com (8.11.2/8.11.2) with ESMTP id g53EwH727577 for
+    <jm@netnoteinc.com>; Mon, 3 Jun 2002 15:58:18 +0100
+Received: from ywprf.geocities.com ([206.111.218.58]) by
+    dataflyer.morenorivera.com (8.9.1/8.9.1) with SMTP id IAA10162;
+    Mon, 3 Jun 2002 08:23:42 GMT
+Date: Mon, 3 Jun 2002 08:23:42 GMT
+From: vag7pu@worldnet.att.net
+Message-Id: <200206030823.IAA10162@dataflyer.morenorivera.com>
+To: kaszatom@poczta.onet.pl, yyyy@netnoteinc.com, jimfitz@attmail.com,
+    johnc1@ltinet.com, jvaughnsdeals@excite.com
+Reply-To: margrettportnoy3219@excite.com
+Subject: Got Cash?                                                   [mparu]
+X-Mailer: WEBmail 2.70
+X-Keywords: 
+Content-Type: text/html; charset=ISO-8859-1
+
+<HTML><HEAD><TITLE></TITLE></HEAD><BODY BGCOLOR="WHITE" TEXT="BLACK">
+<TABLE WIDTH=600><TR><TD><FONT SIZE=4 FACE="VERDANA">
+
+There are more financial opportunities out there than ever
+before. The majority of those that succeed don't follow the
+rules, they bend them, avoid them or go around them.<BR><BR>
+
+Freedom 55 is for the suckers. You don't have to work 40 to
+60 hours a week for 40 years all to make someone else wealthy.
+We have a better way!<BR><BR>
+
+<UL>
+<LI>Are You Interested In creating immediate wealth?<BR><BR>
+<LI>Have you considered improving the Quality of your Life?<BR><BR>
+<LI>Do you currently have the home, the car and the life style that you dream of?
+</UL><BR>
+
+Our business develops 6 Figure Income Earners, quickly and
+easily. Let us show you how you can go from just getting by
+to earning over $100,000 in your first year of business.<BR><BR>
+
+For more information about this incredible life changing
+opportunity, please complete the form below. The information
+is FREE, confidential and you are under no risk or obligations.<BR><BR><BR>
+
+
+<FORM Name="pagerform" action="http://wwp.icq.com/whitepages/page_me/1,,,00.html" method="Post">
+<INPUT type="hidden" name="fromemail" value="biz@b.com">
+<INPUT type="hidden" name="from" value="biz@b.com">
+<INPUT type=hidden name="recipient" value="billjennings70@yahoo.co.uk">
+
+<CENTER><TABLE><TR><TD WIDTH=50% VALIGN="TOP">
+
+<TABLE CELLSPACING=2>
+<TR><TD><FONT FACE="ARIAL" SIZE=2><B>Name</B></FONT> &nbsp;&nbsp;</TD><TD><INPUT Type="hidden" Name="body" Value="{{name}}"><INPUT Type="text" Size="21" Name="body" Maxlength="30"></TD></TR>
+<TR><TD><FONT FACE="ARIAL" SIZE=2><B>Address</B></FONT> &nbsp;&nbsp;</TD><TD><INPUT Type="hidden" Name="body" Value="{{address}}"><INPUT Type="text" Size="21" Name="body" Maxlength="35"></TD></TR>
+<TR><TD><FONT FACE="ARIAL" SIZE=2><B>City</B></FONT> &nbsp;&nbsp;</TD><TD><INPUT Type="hidden" Name="body" Value="{{city}}"><INPUT Name="body" Size="21" Maxlength="30"></TD></TR>
+<TR><TD><FONT FACE="ARIAL" SIZE=2><B>State</B></FONT> &nbsp;&nbsp;</TD><TD><INPUT Type="hidden" Name="body" Value="{{state}}">
+<SELECT Name="body">
+<OPTION VALUE=""></OPTION>
+<OPTION VALUE="AL"> Alabama
+<OPTION VALUE="AK"> Alaska
+<OPTION VALUE="AZ"> Arizona
+<OPTION VALUE="AR"> Arkansas
+<OPTION VALUE="CA"> California
+<OPTION VALUE="CO"> Colorado
+<OPTION VALUE="CT"> Connecticut
+<OPTION VALUE="DE"> Delaware
+<OPTION VALUE="DC"> Dist of Columbia
+<OPTION VALUE="FL"> Florida
+<OPTION VALUE="GA"> Georgia
+<OPTION VALUE="HI"> Hawaii
+<OPTION VALUE="ID"> Idaho
+<OPTION VALUE="IL"> Illinois
+<OPTION VALUE="IN"> Indiana
+<OPTION VALUE="IA"> Iowa
+<OPTION VALUE="KS"> Kansas
+<OPTION VALUE="KY"> Kentucky
+<OPTION VALUE="LA"> Louisiana
+<OPTION VALUE="ME"> Maine
+<OPTION VALUE="MD"> Maryland
+<OPTION VALUE="MA"> Massachusetts
+<OPTION VALUE="MI"> Michigan
+<OPTION VALUE="MN"> Minnesota
+<OPTION VALUE="MS"> Mississippi
+<OPTION VALUE="MO"> Missouri
+<OPTION VALUE="MT"> Montana
+<OPTION VALUE="NE"> Nebraska
+<OPTION VALUE="NV"> Nevada
+<OPTION VALUE="NH"> New Hampshire
+<OPTION VALUE="NJ"> New Jersey
+<OPTION VALUE="NM"> New Mexico
+<OPTION VALUE="NY"> New York
+<OPTION VALUE="NC"> North Carolina
+<OPTION VALUE="ND"> North Dakota
+<OPTION VALUE="OH"> Ohio
+<OPTION VALUE="OK"> Oklahoma
+<OPTION VALUE="OR"> Oregon
+<OPTION VALUE="PA"> Pennsylvania
+<OPTION VALUE="RI"> Rhode Island
+<OPTION VALUE="SC"> South Carolina
+<OPTION VALUE="SD"> South Dakota
+<OPTION VALUE="TN"> Tennessee
+<OPTION VALUE="TX"> Texas <OPTION VALUE="UT"> Utah
+<OPTION VALUE="VT"> Vermont
+<OPTION VALUE="VA"> Virginia
+<OPTION VALUE="WA"> Washington
+<OPTION VALUE="WV"> West Virginia
+<OPTION VALUE="WI"> Wisconsin
+<OPTION VALUE="WY"> Wyoming
+</SELECT>
+</TD></TR>
+</TABLE>
+
+</TD><TD WIDTH=50% VALIGN="TOP">
+
+<TABLE CELLSPACING=2>
+<TR><TD><FONT FACE="ARIAL" SIZE=2><B>Zip Code</B></FONT> &nbsp;&nbsp;</TD><TD><INPUT Type="hidden" Name="body" Value="{{zipcode}}"><INPUT Name="body" Size="21" Maxlength="20"></TD></TR>
+<TR><TD><FONT FACE="ARIAL" SIZE=2><B>Home Phone</B></FONT> &nbsp;&nbsp;</TD><TD><INPUT Type="hidden" Name="body" Value="{{phone}}"><INPUT Type="text" Size="21" Name="body" Maxlength="20"></TD></TR>
+<TR><TD><FONT FACE="ARIAL" SIZE=2><B>Time to Contact</B></FONT> &nbsp;&nbsp;</TD><TD><INPUT Type="hidden" Name="body" Value="{{besttime}}"><INPUT Type="text" Size="21" Name="body" Maxlength="30"><INPUT type="hidden" name="to" value="161105430"></TD></TR>
+<TR><TD><FONT FACE="ARIAL" SIZE=2><B>E-Mail</B></FONT> &nbsp;&nbsp;</TD><TD><INPUT Type="hidden" Name="body" Value="{{email}}"><INPUT Type="text" Size="21" Name="body" Maxlength="30"></TD></TR>
+</TABLE>
+
+</TD></TR>
+
+<TR><TD ALIGN="CENTER" COLSPAN=2><FONT FACE="ARIAL" SIZE=2><B>Desired Monthly Income</B></FONT> &nbsp;&nbsp;<INPUT Type="hidden" Name="body" Value="{{desiredincome}}">
+<SELECT Name="body">
+<OPTION VALUE=""></OPTION>
+<OPTION VALUE="$500">$500
+<OPTION VALUE="$1000">$1000
+<OPTION VALUE="$2500">$2500
+<OPTION VALUE="$5000+">$5000+
+</SELECT>
+</TD></TR>
+
+<TR><TD ALIGN="CENTER" COLSPAN=2><BR><INPUT Type="submit" Value="  Submit  "></TD></TR>
+</TABLE></CENTER><BR><BR>
+
+</FORM>
+
+----------<BR>
+To receive no further offers from our company regarding
+this subject or any other, please reply to this
+e-mail with the word 'Remove' in the subject line.<BR><BR>
+
+</FONT></TD></TR></TABLE>
+</BODY></HTML>
+
+vag7pu

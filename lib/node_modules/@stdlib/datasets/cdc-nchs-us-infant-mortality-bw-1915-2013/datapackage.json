@@ -1,0 +1,73 @@
+{
+  "name": "stdlib-datasets-cdc-nchs-us-infant-mortality-bw-1915-2013",
+  "version": "",
+  "title": "US Infant Mortality by Race (1915-2013)",
+  "description": "US infant mortality data, by race, from 1915 to 2013.",
+  "resources": [
+    {
+      "name": "cdc-nchs-us-infant-mortality-bw-1915-2013-json",
+      "title": "US Infant Mortality by Race (1915-2013)",
+      "description": "US infant mortality data, by race, from 1915 to 2013.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "cdc-nchs-us-infant-mortality-bw-1915-2013-csv",
+      "title": "US Infant Mortality By Race (1915-2013)",
+      "description": "US infant mortality data, by race, from 1915 to 2013.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "race",
+            "title": "Race",
+            "description": "Race (either black or white).",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "year",
+            "title": "Year",
+            "description": "Year.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "infant_mortality_rate",
+            "title": "Infant Mortality Rate",
+            "description": "Infant mortality rate.",
+            "type": "number",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "Center for Disease Control and Prevention",
+      "web": "https://data.cdc.gov"
+    }
+  ],
+  "keywords": [
+    "us",
+    "usa",
+    "united states",
+    "cdc",
+    "mortality",
+    "race",
+    "inequality",
+    "infant",
+    "birth",
+    "timeseries",
+    "time-series"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

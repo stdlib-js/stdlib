@@ -1,0 +1,62 @@
+From ilug-admin@linux.ie  Wed Jul 31 18:57:55 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 944E5440A8
+	for <jm@localhost>; Wed, 31 Jul 2002 13:57:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 18:57:53 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VHpr203957 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 18:51:53 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA20540; Wed, 31 Jul 2002 18:48:58 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA20517 for <ilug@linux.ie>;
+    Wed, 31 Jul 2002 18:48:52 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17ZxaX-0001l7-00 for <ilug@linux.ie>; Wed, 31 Jul 2002 10:48:45 -0700
+Date: Wed, 31 Jul 2002 10:48:44 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] removing lilo
+Message-Id: <20020731174844.GR4974@linuxmafia.com>
+References: <3D351C3E@webmail.ucc.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <3D351C3E@webmail.ucc.ie>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting jac1 (jac1@student.cs.ucc.ie):
+
+> i recently had to wipe linux from my pc but forgot to restore the original
+> MBR (NT). Anyone know how i can do this? linux is entirely gone and no boot
+> floppy. formatting the entire disk doesn't do it either.
+
+The easy way is just to install whatever Microsoft or whatever OS you
+have in mind:  It should overwrite the MBR.  Indeed, the problem is
+usually _preventing_ this from happening, as Microsoft Corporation's
+installers seem to forever be overwriting your MBRs when you least wish
+it, without asking your permission.
+
+-- 
+Cheers,               "We're sorry; you have reached an imaginary number.
+Rick Moen             Please rotate your 'phone ninety degrees and try again."
+rick@linuxmafia.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

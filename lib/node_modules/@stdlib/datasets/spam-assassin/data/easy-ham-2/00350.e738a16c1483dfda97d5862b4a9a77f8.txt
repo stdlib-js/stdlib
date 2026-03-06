@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:27:57 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0C8DA43C60
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:29 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CHxub28133 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 18:59:56 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA30914; Mon, 12 Aug 2002 18:59:29 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from web13901.mail.yahoo.com (web13901.mail.yahoo.com
+    [216.136.175.27]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id SAA30881
+    for <ilug@linux.ie>; Mon, 12 Aug 2002 18:59:22 +0100
+Message-Id: <20020812175921.63263.qmail@web13901.mail.yahoo.com>
+Received: from [159.134.179.247] by web13901.mail.yahoo.com via HTTP;
+    Mon, 12 Aug 2002 19:59:21 CEST
+Date: Mon, 12 Aug 2002 19:59:21 +0200 (CEST)
+From: =?iso-8859-1?q?Paul=20Linehan?= <plinehan@yahoo.com>
+To: ilug@linux.ie
+In-Reply-To: <20020812105644.GK1920@jinny.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Subject: [ILUG] To hell with SuSE - is there a distro I can get (Was: SUSE 8 disks? (thread changed slightly))
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+"John P. Looney" <valen@tuatha.org> a écrit:
+
+> > I'm confused. I thought it was GPL'ed and
+> > that the money you paid SuSE was for your
+> > 60 day support or whatever? 
+ 
+>  The RPMS are. The distribution as a whole work is
+> copyright of SuSE.
+
+
+This IMHO, goes against the spirit of GPL. 
+
+
+Thanks for the info.
+
+
+Is there any distro (pref. Mandrake or failing
+that, Red Hat or other) out there for which people 
+have disks, are prepared to burn copies and are 
+allowed give to me for a small fee?
+
+
+TIA.
+
+
+Paul...
+
+ 
+> Kate
+
+
+
+___________________________________________________________
+Do You Yahoo!? -- Une adresse @yahoo.fr gratuite et en français !
+Yahoo! Mail : http://fr.mail.yahoo.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

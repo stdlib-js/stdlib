@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Sat Sep 21 10:43:16 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 034D216F16
+	for <jm@localhost>; Sat, 21 Sep 2002 10:43:16 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 21 Sep 2002 10:43:16 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8L5NmC10269 for <jm@jmason.org>;
+    Sat, 21 Sep 2002 06:23:49 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E73CB294180; Fri, 20 Sep 2002 22:20:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from c007.snv.cp.net (h014.c007.snv.cp.net [209.228.33.242]) by
+    xent.com (Postfix) with SMTP id 0D4C929409C for <fork@xent.com>;
+    Fri, 20 Sep 2002 22:19:06 -0700 (PDT)
+Received: (cpmta 18810 invoked from network); 20 Sep 2002 22:22:35 -0700
+Received: from 65.189.7.13 (HELO alumni.rice.edu) by
+    smtp.directvinternet.com (209.228.33.242) with SMTP; 20 Sep 2002 22:22:35
+    -0700
+X-Sent: 21 Sep 2002 05:22:35 GMT
+Message-Id: <3D8C01C8.6040502@alumni.rice.edu>
+From: Wayne E Baisley <baisley@alumni.rice.edu>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.0.1)
+    Gecko/20020823 Netscape/7.0
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Subject: Re: calling wayne baisley, the 12-Step Calvinist
+References: <Pine.LNX.4.44.0209202353440.4231-100000@isolnetsux.techmonkeys.net>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 21 Sep 2002 00:21:12 -0500
+
+ > help me out here.
+ > You around?
+
+Barely, but don't call me Shirley.  ;-)
+
+I'm sleeping with one eye open.
+
+I wouldn't have married me if I'd known how extremely shallow my 
+politics are.
+
+"The ward lurks in Wisteria's maze."
+
+Cheers,
+Wayne
+
+

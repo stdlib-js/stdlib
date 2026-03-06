@@ -1,0 +1,130 @@
+
+{{alias}}( x, y[, ...params][, options] )
+    Computes a Kolmogorov-Smirnov goodness-of-fit test.
+
+    For a numeric array or typed array `x`, a Kolmogorov-Smirnov goodness-of-fit
+    is computed for the null hypothesis that the values of `x` come from the
+    distribution specified by `y`. `y` can be either a string with the name of
+    the distribution to test against, or a function.
+
+    In the latter case, `y` is expected to be the cumulative distribution
+    function (CDF) of the distribution to test against, with its first parameter
+    being the value at which to evaluate the CDF and the remaining parameters
+    constituting the parameters of the distribution. The parameters of the
+    distribution are passed as additional arguments after `y` from `kstest` to
+    the chosen CDF. The function returns an object holding the calculated test
+    statistic `statistic` and the `pValue` of the test.
+
+    The returned object comes with a `.print()` method which when invoked will
+    print a formatted output of the hypothesis test results.
+
+    Parameters
+    ----------
+    x: Array<number>
+        Input array holding numeric values.
+
+    y: Function|string
+        Either a CDF function or a string denoting the name of a distribution.
+
+    params: ...number (optional)
+        Distribution parameters passed to reference CDF.
+
+    options: Object (optional)
+        Function options.
+
+    options.alpha: number (optional)
+        Number in the interval `[0,1]` giving the significance level of the
+        hypothesis test. Default: `0.05`.
+
+    options.sorted: boolean (optional)
+        Boolean indicating if the input array is already in sorted order.
+        Default: `false`.
+
+    options.alternative: string (optional)
+        Either `two-sided`, `less` or `greater`. Indicates whether the
+        alternative hypothesis is that the true distribution of `x` is not equal
+        to the reference distribution specified by `y` (`two-sided`), whether it
+        is `less` than the reference distribution or `greater` than the
+        reference distribution. Default: `'two-sided'`.
+
+    Returns
+    -------
+    out: Object
+        Test result object.
+
+    out.alpha: number
+        Used significance level.
+
+    out.rejected: boolean
+        Test decision.
+
+    out.pValue: number
+        p-value of the test.
+
+    out.statistic: number
+        Value of test statistic.
+
+    out.alternative: string
+        Used test alternative. Either `two-sided`, `less` or `greater`.
+
+    out.method: string
+        Name of test.
+
+    out.print: Function
+        Function to print formatted output.
+
+    Examples
+    --------
+    // Verify that data is drawn from a normal distribution:
+    > var rnorm = {{alias:@stdlib/random/base/normal}}.factory({ 'seed': 4839 } );
+    > var x = new Array( 100 );
+    > for ( var i = 0; i < 100; i++ ) { x[ i ] = rnorm( 3.0, 1.0 ); }
+
+    // Test against N(0,1)
+    > var out = {{alias}}( x, 'normal', 0.0, 1.0 )
+    { pValue: 0.0, statistic: 0.847, ... }
+
+    // Test against N(3,1)
+    > out = {{alias}}( x, 'normal', 3.0, 1.0 )
+    { pValue: 0.6282, statistic: 0.0733, ... }
+
+    // Verify that data is drawn from a uniform distribution:
+    > runif = {{alias:@stdlib/random/base/uniform}}.factory( 0.0, 1.0, { 'seed': 8798 } )
+    > x = new Array( 100 );
+    > for ( i = 0; i < x.length; i++ ) { x[ i ] = runif(); }
+    > out = {{alias}}( x, 'uniform', 0.0, 1.0 )
+    { pValue: ~0.703, statistic: ~0.069, ... }
+
+    // Print output:
+    > out.print()
+    Kolmogorov-Smirnov goodness-of-fit test.
+
+    Null hypothesis: the CDF of `x` is equal equal to the reference CDF.
+
+        pValue: 0.7039
+        statistic: 0.0689
+
+    Test Decision: Fail to reject null in favor of alternative at 5%
+    significance level
+
+    // Set custom significance level:
+    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'alpha': 0.1 } )
+    { pValue: ~0.7039, statistic: ~0.069, ... }
+
+    // Carry out one-sided hypothesis tests:
+    > runif = {{alias:@stdlib/random/base/uniform}}.factory( 0.0, 1.0, { 'seed': 8798 } );
+    > x = new Array( 100 );
+    > for ( i = 0; i < x.length; i++ ) { x[ i ] = runif(); }
+    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'alternative': 'less' } )
+    { pValue: ~0.358, statistic: ~0.07, ... }
+    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'alternative': 'greater' } )
+    { pValue: ~0.907, statistic: ~0.02, ... }
+
+    // Set `sorted` option to true when data is in increasing order:
+    > x = [ 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ];
+    > out = {{alias}}( x, 'uniform', 0.0, 1.0, { 'sorted': true } )
+    { pValue: ~1, statistic: 0.1, ... }
+
+    See Also
+    --------
+

@@ -1,0 +1,72 @@
+From fork-admin@xent.com  Mon Sep  9 10:46:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5D27316F20
+	for <jm@localhost>; Mon,  9 Sep 2002 10:45:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 10:45:59 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g894fDC32162 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 05:41:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6A6AC2941D3; Sun,  8 Sep 2002 21:38:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id 480DB2941CC for <fork@xent.com>;
+    Sun,  8 Sep 2002 21:37:14 -0700 (PDT)
+Received: (qmail 22976 invoked from network); 9 Sep 2002 04:40:04 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 9 Sep 2002 04:40:04 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id C7A5D1CC98;
+    Mon,  9 Sep 2002 00:39:58 -0400 (EDT)
+To: James Rogers <jamesr@best.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: earthviewer (was Re: whoa}
+References: <B9A164ED.D809%jamesr@best.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2u1kzsrmp.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 09 Sep 2002 00:39:58 -0400
+
+>>>>> "J" == James Rogers <jamesr@best.com> writes:
+
+    J> ...  The part that makes the app killer is that you can map all
+    J> sorts of data layers on top of their core topological data.
+
+    J> Got it?
+
+Ah, ok ... so some sample applications come to mind, although none of
+them require wireless and would do with a DVD, but nonetheless ...
+
+- Forestry: Maps of the terrain are essential in predicting the spread
+of forest fires, esp if this is overlaid with the type of vegetation,
+recent waterfall &c
+
+- farming/conservation can use the high-resolution terrain to overlay
+water tables or watershed info.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

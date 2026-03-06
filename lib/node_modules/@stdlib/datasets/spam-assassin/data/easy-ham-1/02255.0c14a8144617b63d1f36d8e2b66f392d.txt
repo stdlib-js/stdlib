@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Fri Oct  4 11:02:07 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id DAE4116F6C
+	for <jm@localhost>; Fri,  4 Oct 2002 11:01:43 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:01:43 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9480fK08823 for
+    <jm@jmason.org>; Fri, 4 Oct 2002 09:00:41 +0100
+Message-Id: <200210040800.g9480fK08823@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: guardian <rssfeeds@spamassassin.taint.org>
+Subject: 'Flipping' Goldman fingered
+Date: Fri, 04 Oct 2002 08:00:41 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-5,8535465,215/
+Date: 2002-10-04T02:39:00+01:00
+
+*Business:* Congressional report offers damaging summary of bank's dotcom boom 
+years.
+
+

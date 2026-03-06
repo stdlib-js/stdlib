@@ -1,0 +1,134 @@
+From vulnwatch-return-400-jm=jmason.org@vulnwatch.org  Mon Jul 22 19:26:06 2002
+Return-Path: <vulnwatch-return-400-yyyy=spamassassin.taint.org@vulnwatch.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5AEA3440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:26:03 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:26:03 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFHB902006 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 16:17:11 +0100
+Received: from vikki.vulnwatch.org ([199.233.98.101]) by webnote.net
+    (8.9.3/8.9.3) with SMTP id OAA32249 for <jm@jmason.org>; Mon,
+    22 Jul 2002 14:55:11 +0100
+Received: (qmail 16454 invoked by alias); 22 Jul 2002 14:08:03 -0000
+Mailing-List: contact vulnwatch-help@vulnwatch.org; run by ezmlm
+Precedence: bulk
+List-Post: <mailto:vulnwatch@vulnwatch.org>
+List-Help: <mailto:vulnwatch-help@vulnwatch.org>
+List-Unsubscribe: <mailto:vulnwatch-unsubscribe@vulnwatch.org>
+List-Subscribe: <mailto:vulnwatch-subscribe@vulnwatch.org>
+Delivered-To: mailing list vulnwatch@vulnwatch.org
+Delivered-To: moderator for vulnwatch@vulnwatch.org
+Received: (qmail 25523 invoked from network); 22 Jul 2002 12:02:43 -0000
+Date: Mon, 22 Jul 2002 13:21:28 +0200
+From: e-matters Security <security@e-matters.de>
+To: bugtraq@securityfocus.com
+Cc: vulnwatch@vulnwatch.org
+Message-Id: <20020722112128.GB9191@php.net>
+Reply-To: security@e-matters.de
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+Subject: [VulnWatch] Advisory 02/2002: PHP remote vulnerability
+
+                           e-matters GmbH
+                          www.e-matters.de
+
+                      -= Security  Advisory =-
+
+
+
+     Advisory: Remote Compromise/DOS Vulnerability in PHP
+ Release Date: 2002/07/22
+Last Modified: 2002/07/22
+       Author: Stefan Esser [s.esser@e-matters.de]
+
+  Application: PHP 4.2.0, 4.2.1
+     Severity: A vulnerability within the multipart/form-data handler
+               could allow remote compromise of the web server.
+         Risk: Critical
+Vendor Status: Patches Released.
+    Reference: http://security.e-matters.de/advisories/022002.html
+
+
+
+Overview:
+	
+   We have discovered a serious vulnerability within the default version 
+   of PHP. Depending on the processor architecture it may be possible for a 
+   remote attacker to either crash or compromise the web server. 
+ 
+	
+Details:
+
+   PHP 4.2.0 introduced a completely rewritten multipart/form-data POST 
+   handler. While I was working on the code in my role as PHP developer
+   i found a bug within the way the mime headers are processed. 
+   A malformed POST request can trigger an error condition, that is not
+   correctly handled. Due to this bug it could happen that an uninit-
+   ialised struct gets appended to the linked list of mime headers.
+   When the lists gets cleaned or destroyed PHP tries to free the pointers
+   that are expected in the struct. Because of the lack of initialisation
+   those pointers contain stuff that was left on the stack by previous
+   function calls. 
+
+   On the IA32 architecture (aka. x86) it is not possible to control what
+   will end up in the uninitialised struct because of the stack layout. All 
+   possible code paths leave illegal addresses within the struct and PHP
+   will crash when it tries to free them.
+
+   Unfortunately the situation is absolutely different if you look on a
+   solaris sparc installation. Here it is possible for an attacker to free
+   chunks of memory that are full under his control. This is most probably
+   the case for several more non IA32 architectures.
+
+   Please note that exploitability is not only limited to systems that are
+   running malloc()/free() implementations that are known to be vulnerable
+   to control structure overwrites. This is because the internal PHP memory
+   managment implements its own linked list system that can be used to
+   overwrite nearly arbitrary memory addresses.
+   
+
+Proof of Concept:
+
+   e-matters is not going to release the exploit for this vulnerability to
+   the public.
+   
+
+Vendor Response:
+
+   22th July 2002 - An updated version of PHP which fixes this 
+                    vulnerability was released and can be downloaded at:
+
+                       http://www.php.net/downloads.php
+
+                    The vendor announcement is available at:
+
+                       http://www.php.net/release_4_2_2.php
+
+
+Recommendation:
+
+   If you are running PHP 4.2.x you should upgrade as soon as possible,
+   especially if your server runs on a non IA32 CPU. If you cannot upgrade
+   for whatever reason the only way to workaround this, is to disable all
+   kinds of POST requests on your server.  
+   
+   
+GPG-Key:
+
+   http://security.e-matters.de/gpg_key.asc
+    
+   pub  1024D/75E7AAD6 2002-02-26 e-matters GmbH - Securityteam
+   Key fingerprint = 43DD 843C FAB9 832A E5AB  CAEB 81F2 8110 75E7 AAD6
+
+
+Copyright 2002 Stefan Esser. All rights reserved.
+
+
+
+

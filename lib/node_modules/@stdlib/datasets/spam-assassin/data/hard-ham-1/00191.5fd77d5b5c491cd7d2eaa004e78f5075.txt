@@ -1,0 +1,128 @@
+From reminders@lifetimetv.com  Mon Aug 19 15:59:31 2002
+Return-Path: <reminders@lifetimetv.com>
+Delivered-To: zzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 44C4D43C36
+	for <zzz@localhost>; Mon, 19 Aug 2002 10:59:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Mon, 19 Aug 2002 15:59:26 +0100 (IST)
+Received: from email.lifetimetv.com ([209.10.194.5]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JEws628744 for
+    <qqqqqqqqqqs-lifetimetv-com@JMASON.ORG>; Mon, 19 Aug 2002 15:58:54 +0100
+Received: from email (email.internal.lifetimetv.com [10.1.1.104]) by
+    email.lifetimetv.com (Postfix) with ESMTP id 9ED945EEB; Mon,
+    19 Aug 2002 10:54:51 -0400 (EDT)
+Received: from EMAIL.LIFETIMETV.COM by EMAIL.LIFETIMETV.COM
+    (LISTSERV-TCP/IP release 1.8e) with spool id 411077 for
+    MOVIE_REMINDER_HTML@EMAIL.LIFETIMETV.COM; Mon, 19 Aug 2002 10:45:44 -0400
+Approved-BY: remind@LIST.LIFETIMETV.COM
+Delivered-To: movie_reminder_html@email.lifetimetv.com
+Received: from smtp-2.lifetimetv.com (smtp-1.lifetimetv.com
+    [204.151.33.2]) by email.lifetimetv.com (Postfix) with ESMTP id 4AC745D14
+    for <movie_reminder_html@email.lifetimetv.com>; Mon, 19 Aug 2002 10:19:37
+    -0400 (EDT)
+Received: from dev.lifetimetv.com (dev.lifetimetv.com [204.151.33.4]) by
+    smtp-2.lifetimetv.com (Postfix) with ESMTP id 841A9231A3 for
+    <movie_reminder_html@email.lifetimetv.com>; Mon, 19 Aug 2002 10:30:45
+    -0400 (EDT)
+Received: (from nsserver@localhost) by dev.lifetimetv.com (8.11.2/8.11.2)
+    id g7JEInw11299; Mon, 19 Aug 2002 10:18:49 -0400 (EDT)
+Message-Id: <200208191418.g7JEInw11299@dev.lifetimetv.com>
+Date: Mon, 19 Aug 2002 10:18:49 -0400
+Reply-To: reminders@lifetimetv.com
+From: reminders@lifetimetv.com
+Subject: Movies to Watch on Lifetime
+Comments: To: movie_reminder_html@lifetimetv.com
+To: MOVIE_REMINDER_HTML@lifetimetv.com
+Precedence: list
+
+LIFETIME MOVIE NEWSLETTER
+
+This Week's Movies to Watch on Lifetime
+
+[ http://www.lifetimetv.com/movies/index.html ]
+
+August 19, 2002
+
+*************************************************************************
+
+COMING AT YOU THIS WEEK...
+
+1) "THE SECRET LIFE OF ZOEY" PREMIERE!
+2) THE BUZZ ABOUT THE UPCOMING MOVIE
+3) MOVIES AIRING THIS WEEK
+4) BIG EVENT: A MARTINEZ SUNDAY
+5) FUN AND GAMES
+
+*************************************************************************
+
+"THE SECRET LIFE OF ZOEY" PREMIERE!
+
+Take a sneak peek at Lifetime’s next exciting Original Movie, "The Secret Life of Zoey" [ http://www.lifetimetv.com/movies/info/move3195.html ], airing on Monday, August 19 at 9 pm et/pt. Zoey's mom thought she knew everything about her perfect teenage daughter. But when she realizes that her child is addicted to drugs, both of their worlds spin out of control. This dramatic film delves into the topic of teenage drug addiction and features stellar performers Mia Farrow, Andrew McCarthy and Julia Whelan, from TV's "Once and Again." Go behind the scenes with the cast [ http://www.lifetimetv.com/movies/originals/bio1.html ],
+read real-life recovery stories of teen drug addicts [ http://www.lifetimetv.com/reallife/health/features/teen_addiction.html ], and learn how to keep your kids drug-free with 10 expert tips [ http://www.lifetimetv.com/reallife/health/features/drug_free.html ].
+
+*************************************************************************
+
+THE BUZZ ABOUT THE UPCOMING MOVIE
+
+People are already talking about the sensitive subject of kids and drug addiction featured in "The Secret Life of Zoey."
+Lifetimetv.com community member BELFAST BELLE writes:
+"My belief is that I started using drugs to fit in and to cope with things that happened to me. My mom died when I was 10. I had to live away from my dad and brothers. Where I grew up I was sexually abused for years, but I didn't dare tell anyone. When I finally went to live with my dad and brothers, I had no self-esteem left. I experienced so much shame, and in my mind it seemed as if everyone knew what happened. Drugs helped me to feel OK and like I was a part of something. When my dad died, I was devastated. It threw me into a full-blown addiction. My drug use landed me in rehab, in debt and in strained relationships with my brothers. Thanks to the help of Narcotics Anonymous, I have been clean since December 28, 1991. I now have great relationships with my siblings. I love them more than they will ever know. I also have a beautiful seven-year-old daughter who has never seen her mother touch drugs. I don't have any desire to use, either -- just the desire to be the best pe
+ rson I can be."
+
+Express yourself! Tell us your thoughts on "The Secret Life of Zoey" and let us know if addiction has affected your life. Go to our Message Boards at http://boards.lifetimetv.com/WebX?14@@.ee91dd6.
+
+*************************************************************************
+
+MOVIES AIRING THIS WEEK
+
+"The Wrong Woman," premiering August 20 at 9 pm et/pt
+Melanie is flirting with a married man -- her boss. When he turns up dead, she is framed for his murder! Will the victim's wife help save Melanie from jail? Starring "The Division" star Nancy McKeon [ http://www.lifetimetv.com/shows/ip/portraits/0023/0023_index.html ].
+[ http://www.lifetimetv.com/movies/info/move2355.html ]
+
+"Hit and Run," airing August 21 at 9 pm et/pt
+Joanna is the ideal mother, wife and friend. But her "perfect" life is altered forever when she accidentally hits a young girl with her car and leaves the scene. What catches up with her first -- her conscience or the police? Starring "The Division" star Lisa Vidal
+[ http://www.lifetimetv.com/shows/division/bios/cast_lisa.html ].
+[ http://www.lifetimetv.com/movies/info/move2518.html ]
+
+"Get to the Heart: The Barbara Mandrell Story," premiering August 22 at 9 pm et/pt
+Barbara Mandrell plays herself in this inspiring autobiographical movie about the country-western singer's rise to fame and the car crash that nearly killed her. Also starring Dolly Parton and Kenny Rogers. Find out more about this Grammy-winning crooner [ http://www.lifetimetv.com/shows/ip/portraits/9837/9837_index.html ].
+[ http://www.lifetimetv.com/movies/info/move3180.html ]
+
+"Road Rage," airing August 23 at 9 pm et/pt
+It's just another day on the freeway for Ellen Carson, until she innocently cuts off Eddie, a short-tempered delivery driver who is upset over recent deaths in his family. Then Ellen and her loved ones become the stalking targets of Eddie's violent wrath. Starring Yasmine Bleeth.
+[ http://www.lifetimetv.com/movies/info/move3002.html ]
+
+*************************************************************************
+
+BIG EVENT: A MARTINEZ SUNDAY
+Tune in on Sunday, August 25, for a day filled with movies showcasing heartthrob A Martinez, who stars in Lifetime's exciting new legal series, "For the People" [ http://www.lifetimetv.com/shows/ftpeople/index.html ].
+
+"She-Devil," airing August 25 at 12 pm et/pt
+When Ruth's husband, Bob, leaves her for another woman, Ruth devises a devious plot to ruin both their lives piece by piece. It's a face-off between Roseanne Barr and Meryl Streep!
+[ http://www.lifetimetv.com/movies/info/move1455.html ]
+
+"Manhunt: Search for the Night Stalker," airing August 25 at 2 pm et/pt
+This true story recalls how famed serial killer Richard Ramirez terrorized Los Angeles for six months by murdering people in their own homes. See how the cops finally caught this vicious criminal.
+[ http://www.lifetimetv.com/movies/info/move1881.html ]
+
+"Sweet Dreams," airing August 25 at 4 pm et/pt
+She wakes up from a coma and nothing is as it seems. Will she regain her memory and realize that her husband and his mistress are out to get her? Starring Tiffani-Amber Thiessen.
+[ http://www.lifetimetv.com/movies/info/move2676.html ]
+
+"Cruel Justice," airing August 25 at 6 pm et/pt
+After his daughter's rapist is set free by the courts, a father seeks justice on his own terms.
+[ http://www.lifetimetv.com/movies/info/move3023.html ]
+
+***********************************************************************
+
+FUN AND GAMES
+Think you're ultimate film fanatic? Prove it! Play Cinema Sequence and see if you really know all the star facts and flick stats [ http://www.lifetimetv.com/movies/games/cinemaseq/index.html ].
+
+***********************************************************************
+
+SUBSCRIPTION INFORMATION FOR THE LIFETIME MOVIE NEWSLETTER
+
+Please do not reply to this e-mail; it's automatically generated, and this mailbox is not read by anyone. Therefore you will not get a response. If you wish to be removed from the Lifetime Movie Newsletter mailing list, please send an e-mail to unsubscribe-movies@email.lifetimetv.com. If you are a My Lifetime member and wish to add to or modify your current newsletter preferences, please go to http://www.lifetimetv.com/cgi/edit_profile.cgi and change your subscription options. If you need to write to us, please do so at subscriptions@lifetimetv.com. Thank you.
+

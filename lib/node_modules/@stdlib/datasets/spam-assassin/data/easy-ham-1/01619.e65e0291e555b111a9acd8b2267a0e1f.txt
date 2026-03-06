@@ -1,0 +1,75 @@
+From strange@nsk.yi.org  Thu Sep  5 11:26:30 2002
+Return-Path: <strange@nsk.yi.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 569A116F1E
+	for <jm@localhost>; Thu,  5 Sep 2002 11:26:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 11:26:25 +0100 (IST)
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [66.38.151.26]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g84K45Z17149 for <jm@jmason.org>; Wed, 4 Sep 2002 21:04:05 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    06BF48F2F4; Wed,  4 Sep 2002 13:08:52 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 12726 invoked from network); 4 Sep 2002 17:22:30 -0000
+Date: Wed, 4 Sep 2002 18:36:05 +0100
+From: strange@nsk.yi.org
+To: secprog@securityfocus.com
+Subject: Re: Secure Sofware Key
+Message-Id: <20020904183605.A4666@nsk.yi.org>
+Reply-To: strange@nsk.yi.org
+Mail-Followup-To: strange@nsk.yi.org, secprog@securityfocus.com
+References: <20020829204345.91D1833986@LINPDC.eclipsys.qc.ca>
+    <20020903192326.C9DA533986@LINPDC.eclipsys.qc.ca>
+    <15733.15859.462448.155446@cerise.nosuchdomain.co.uk>
+    <200209032103.44905.ygingras@ygingras.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <200209032103.44905.ygingras@ygingras.net>; from
+    ygingras@ygingras.net on Tue, Sep 03, 2002 at 09:03:40PM -0400
+X-Disclaimer: 'Author of this message is not responsible for any harm done
+    to reader's computer.'
+X-Organization: 'NSK'
+X-Section: 'Admin'
+X-Priority: '1 (Highest)'
+
+On Tue, Sep 03, 2002 at 09:03:40PM -0400, Yannick Gingras wrote:
+> This make me wonder about the relative protection of smart cards.  They have 
+> an internal procession unit around 4MHz.  Can we consider them as trusted 
+> hardware ?  The ability to ship smart cards periodicaly uppon cashing of a 
+> monthly subscription fee would not raise too much the cost of "renting" the 
+> system.  Smart card do their own self encryption.  Can they be used to 
+> decrypt data needed by the system ?  The input of the system could me mangled 
+> and the would keep a reference of how long it was in service.
+> 
+> This sounds really feasible but I may be totaly wrong.  I may also be wrong 
+> about the safety of a smart card.  
+> 
+> What do you think ?
+
+That's similar to using hard-locks (either the old parallel, or the new
+usb).
+
+The problem is that that piece of hardware is trustworthy, but the rest of
+the PC isn't, so a cracker just needs to simulate the lock/smart card, or
+peek at the executable after the lock has been deactivated.
+
+Regards,
+Luciano Rocha
+
+-- 
+Consciousness: that annoying time between naps.
+

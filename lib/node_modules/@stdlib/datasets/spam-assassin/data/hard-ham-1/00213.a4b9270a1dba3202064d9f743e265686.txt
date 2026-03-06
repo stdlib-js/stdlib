@@ -1,0 +1,261 @@
+From alerts@action.eff.org  Wed Sep 11 21:29:36 2002
+Return-Path: <alerts@action.eff.org>
+Delivered-To: zzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id BAD3E16F16
+	for <zzz@localhost>; Wed, 11 Sep 2002 21:29:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Wed, 11 Sep 2002 21:29:33 +0100 (IST)
+Received: from eug-app01.ctsg.com (firewall2.ctsg.com [216.210.226.98]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8BKBCC30223 for
+    <qqqqqqqqqqs-eff@spamassassin.taint.org>; Wed, 11 Sep 2002 21:11:13 +0100
+Message-Id: <7681900.1031775114906.JavaMail.IWAM_EUG-APP01@eug-app01>
+Date: Wed, 11 Sep 2002 13:11:54 -0700 (PDT)
+From: Effector List <alerts@action.eff.org>
+To: qqqqqqqqqqs-eff@spamassassin.taint.org
+Subject: EFFector 15.28: Motions Filed in Morpheus Peer-to-Peer Case,
+    EFF's 2nd Annual Share-In This Weekend
+MIME-Version: 1.0
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+
+EFFector Online Newsletter
+
+EFFector      Vol. 15, No. 28      September 11, 2002      ren@eff.org
+
+A Publication of the Electronic Frontier Foundation     ISSN 1062-9424
+In the 227th Issue of EFFector:
+
+    * Motions Filed in Morpheus Peer-to-Peer Case
+    * EFF's Second Annual Share-In This Weekend!
+    * Help With Our Internet Blocking in Schools Project
+    * Deep Links
+    * Administrivia
+
+For more information on EFF activities & alerts: http://www.eff.org/
+
+To join EFF or make an additional donation:
+  http://www.eff.org/support/
+EFF is a member-supported nonprofit. Please sign up as a member today!
+
+
+*Motions Filed in Morpheus Peer-to-Peer Case
+Judge to Consider Legality of Gnutella Software
+
+Los Angeles - Attorneys for StreamCast Networks, developers of the
+popular Morpheus peer-to-peer (P2P) file sharing software, filed
+briefs in federal court on Monday seeking a ruling that distribution
+of the software does not violate copyright law.
+
+Morpheus is a popular file-sharing application based on the
+decentralized Gnutella P2P networking protocol.
+
+In their briefs seeking summary judgment, attorneys from the
+Electronic Frontier Foundation (EFF) and the law firm of Brobeck,
+Phleger and Harrison argued that distribution of the software is legal
+because the product is capable of substantial noninfringing uses and
+because StreamCast cannot control the various uses of the software.
+
+Supporting StreamCast in the motion is nine time Grammy nominee Janis
+Ian, who believes that peer-to-peer software represents important new
+opportunities for artists.
+
+On October 2, 2001, 28 of the world's largest entertainment companies
+sued StreamCast for the allegedly infringing actions of users of its
+product (MGM et al v. Grokster et al, Case No. 01-CV-8541 SVW).
+
+Additional briefs will be filed in the months to come, with oral
+arguments set for December 2, 2002, before U.S. Federal District Court
+Judge Stephen Wilson in Los Angeles.
+Links:
+
+For this release:
+http://www.eff.org/IP/P2P/MGM_v_Grokster/20020909_eff_pr.html
+
+Documents related to Metro-Goldwyn Mayer v. Grokster case:
+http://www.eff.org/IP/P2P/MGM_v_Grokster/
+
+Janis Ian's "Internet Debacle" article:
+http://www.janisian.com/article-internet_debacle.html
+
+- end -
+
+
+*Electronic Frontier Foundation Holds Second Annual Share-In
+John Perry Barlow, Mountain Girl Garcia Host Free Music Fest
+
+San Francisco - Join the Electronic Frontier Foundation and five Bay
+Area bands for an afternoon of live music and outdoor fun at EFF's
+second annual Share-In. The festival will be held in Golden Gate
+Park's Music Concourse Bandshell on Saturday, September 14th from noon
+- 5pm. The celebration of independent music will be hosted by Grateful
+Dead lyricist and EFF co-founder John Perry Barlow and former wife of
+the late great Jerry Garcia, Mountain Girl Garcia.
+
+Artists participating in this event will permit recording of their
+performances by those in attendance in support of EFFs Open Audio
+License (OAL). Musicians performing at the event include: the Box Set
+Duo - clown princes of folk-rock, the classic funk band Funkmonsters,
+celtic world-fusion group Hy Brassyl, harmony based folk-pop band
+Atticus Scout, and Berkeley-based party band Shady Lady.
+
+In addition to music, the Share-In will feature performers including
+Ashley Foster the One Wheeled Wonder, the Existential Circus,
+Frantastic Hands, the Metronome Dancers, and Willy Bologna and his
+Sideshow Circus. Bring your family and friends!
+
+Ben and Jerry's will sell their famous ice cream, and Cartwheel
+Catering will be on site with hot dogs, pretzels, and churros.
+
+Proceeds from the Share-In will go directly to EFF's Campaign for
+Audiovisual Free Expression (CAFE), which oversees projects such as
+the Open Audio License. CAFE empowers the creative community in
+cyberspace by protecting the public's access to and use of audiovisual
+technologies.
+
+The Open Audio License is a tool that EFF has developed in order to
+help artists share music more directly with their fans, without
+sacrificing recognition for their creativity. The OAL encourages
+collaboration, providing artists with an alternative to a business
+model strictly driven by profit. Based on the open source and free
+software initiatives for software development, the OAL encourages
+artists to share with one another and their fans
+
+Adoption of the OAL does not mean that artists go unrewarded for their
+work. On the contrary, the OAL permits artists to share single tracks
+or performances and gain widespread recognition for their work without
+relying on intermediaries. EFF encourages new models of music
+distribution in the digital world that benefit the artists themselves.
+The Internet makes it possible to drastically reduce the overhead for
+packaging and distributing music, which is where record companies
+currently spend most of the money that could be going to artists. EFF
+is committed to developing tools that empower artists to take control
+over their own art and to be compensated appropriately for their works.
+
+When: Saturday, September 14th, Noon-5pm
+
+Where: Music Concourse Bandshell in Golden Gate Park, near the
+Japanese Tea Gardens between MLK Drive and JFK Drive
+
+More Information and Travel Directions:
+http://www.eff.org/events/share-in/
+Links:
+
+EFF's Cafe Project:
+http://www.eff.org/cafe/
+
+The Open Audio License:
+http://www.eff.org/IP/Open_licenses/eff_oal.html
+
+- end -
+
+
+*Help With Our Internet Blocking in Schools Study
+
+If you know of any public school students, teachers, school
+administrators, school board members, parents, or recent public school
+alumni in the United States who are willing to speak about the impact
+of Internet blocking on educational opportunities, the EFF would like
+to make contact with them. We are especially looking for people in or
+near the following areas:
+
+    * Asheville, NC
+    * Boston, MA
+    * Nashville, TN
+    * New York City
+    * San Francisco, CA
+
+Please have them contact:
+Will Doherty
+wild@eff.org
+
+- end -
+
+
+*Deep Links
+Deep Links features noteworthy news items, victories, and threats from
+around the Internet.
+
+Community Wireless Allows People to Break Away from Czech Telekom
+Another wireless community helps bring access to rural areas and those
+who otherwise would not have access. See the story at:
+http://www.pbj.cz/user/article.asp?ArticleID=158576
+
+- end -
+
+Google Blocked in China
+A populat search engine is blocked in China and internet traffic is
+constantly being monitored. Read about it at:
+http://news.bbc.co.uk/2/hi/technology/2231101.stm
+
+- end -
+
+iPod Clone Spoiled by DRM
+Second generation USB speed rendered useless by DRM encryption used in
+Toshiba's Mobilphile:
+http://www.zdnet.com/products/stories/reviews/0,4161,2877898,00.html
+
+- end -
+
+The Netizen in 2002
+What does it mean to be a Netizen today? Contribute to the call for
+submissions found at:
+http://www.well.com/~doctorow/netizen.txt
+
+- end -
+
+
+*Administrivia
+
+EFFector is published by:
+
+The Electronic Frontier Foundation
+454 Shotwell Street
+San Francisco CA 94110-1914 USA
++1 415 436 9333 (voice)
++1 415 436 9993 (fax)
+  http://www.eff.org/
+
+Editor:
+Ren Bucholz, Activist
+  ren@eff.org
+
+To Join EFF online, or make an additional donation, go to:
+  http://www.eff.org/support/
+
+Membership & donation queries: membership@eff.org
+General EFF, legal, policy or online resources queries: ask@eff.org
+
+Reproduction of this publication in electronic media is encouraged.
+Signed articles do not necessarily represent the views of EFF. To
+reproduce signed articles individually, please contact the authors for
+their express permission. Press releases and EFF announcements &
+articles may be reproduced individually at will.
+
+To change your address, please visit http://action.eff.org/subscribe/.
+>>From there, you can update all your information. If you have already
+subscribed to the EFF Action Center, please visit
+http://action.eff.org/action/login.asp.
+
+To unsubscribe from the EFFector mailing list, send an email to
+alerts@action.eff.org with the word "Remove" in the subject.
+
+(Please ask ren@eff.org to manually remove you from the list if this
+does not work for you for some reason.)
+
+Back issues are available at:
+  http://www.eff.org/effector
+
+To get the latest issue, go to:
+  http://www.eff.org/effector/current.html
+
+
+++++++++++++++++++++++++
+You received this message because qqqqqqqqqqs-eff@spamassassin.taint.org is a member of
+the mailing list originating from alerts@action.eff.org. To unsubscribe 
+from all mailing lists originating from alerts@action.eff.org, send an 
+email from qqqqqqqqqqs-eff@spamassassin.taint.org to alerts@action.eff.org with 'Remove' as the
+only text in the subject line.
+
+

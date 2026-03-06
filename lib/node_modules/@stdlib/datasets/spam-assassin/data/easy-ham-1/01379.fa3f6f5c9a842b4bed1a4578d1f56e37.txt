@@ -1,0 +1,77 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:08:19 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 200C043F99
+	for <jm@localhost>; Thu, 29 Aug 2002 06:06:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:06:11 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7T3UJZ27169 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 04:30:19 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kFyY-0002iz-00; Wed,
+    28 Aug 2002 20:28:06 -0700
+Received: from [203.65.246.10] (helo=smtp.unet.net.ph) by
+    usw-sf-list1.sourceforge.net with smtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17kFyO-0006PP-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 20:27:56 -0700
+Received: (qmail 1672 invoked from network); 29 Aug 2002 03:27:47 -0000
+Received: (qfscan 0.5. spam=2/0/0/0 remoteip=172.16.0.211): 29 Aug 2002
+    03:27:47 -0000
+Received: from unknown (HELO gor) (172.16.0.211) by dpe1.unet.net.ph with
+    DES-CBC3-SHA encrypted SMTP; 29 Aug 2002 03:27:47 -0000
+From: Lars Hansson <lars@unet.net.ph>
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] O.T. Habeus -- Why?
+Message-Id: <20020829112725.38902390.lars@unet.net.ph>
+In-Reply-To: <A9AEB614-BAE8-11D6-AD60-003065C182B0@radparker.com>
+References: <yf2n0r6k104.fsf@proton.pathname.com>
+    <A9AEB614-BAE8-11D6-AD60-003065C182B0@radparker.com>
+X-Mailer: Sylpheed version 0.8.1 (GTK+ 1.2.10; i386-unknown-openbsd3.1)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 29 Aug 2002 11:27:25 +0800
+Date: Thu, 29 Aug 2002 11:27:25 +0800
+
+On Wed, 28 Aug 2002 17:45:49 -0700
+Brian McNett <bmcnett@radparker.com> wrote:
+
+> The first court cases were actually concluded years ago. These 
+> include many legal precedents which are used to protect the 
+> rights of ISPs to block mail, and to terminate service to 
+> spammers.
+
+Yeah, but these would be different cases relating to copyright infringements,
+not about ISP's blocking mail or not.
+
+
+---
+Lars Hansson
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

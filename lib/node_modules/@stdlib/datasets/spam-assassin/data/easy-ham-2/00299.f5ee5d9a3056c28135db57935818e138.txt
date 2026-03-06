@@ -1,0 +1,65 @@
+From ilug-admin@linux.ie  Fri Aug  9 15:13:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 198C44406D
+	for <jm@localhost>; Fri,  9 Aug 2002 10:13:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:13:16 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79ECib05460 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:12:44 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id LAA05471 for <jm-ilug@jmason.org>;
+    Fri, 9 Aug 2002 11:49:27 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA03446; Fri, 9 Aug 2002 11:46:01 +0100
+Received: from hotmail.com (oe55.law4.hotmail.com [216.33.148.92]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA03409 for <ilug@linux.ie>;
+    Fri, 9 Aug 2002 11:45:55 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host oe55.law4.hotmail.com
+    [216.33.148.92] claimed to be hotmail.com
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Fri, 9 Aug 2002 03:45:23 -0700
+X-Originating-Ip: [213.121.187.98]
+From: "David Crozier" <davidcrozier@hotmail.com>
+To: <ilug@linux.ie>
+Date: Fri, 9 Aug 2002 11:43:28 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4807.1700
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4807.1700
+Message-Id: <OE55LzhVOJwnzsLqIfQ0000415c@hotmail.com>
+X-Originalarrivaltime: 09 Aug 2002 10:45:23.0880 (UTC) FILETIME=[DD80AA80:01C23F91]
+Subject: [ILUG] Anyone know how I could remove a HDD password from an Acer Travelmate 201T?
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi folks,
+
+I have just taken delivery of three Acer Travelmate laptops from a project
+we funded which has now ended.  Problem is there are HDD passwords on them
+which I don't have.  How could I overwrite these?? Any ideas?  I have
+limited technical and monetry resources here in the new job so can't be
+buying new HDDs for them.
+
+Any Ideas?
+
+Dave
+
+www.davidcrozier.co.uk
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

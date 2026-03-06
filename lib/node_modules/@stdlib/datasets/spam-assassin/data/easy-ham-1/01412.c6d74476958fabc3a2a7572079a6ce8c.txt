@@ -1,0 +1,95 @@
+From glynn.clements@virgin.net  Wed Sep  4 18:58:43 2002
+Return-Path: <glynn.clements@virgin.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 05A9216F1F
+	for <jm@localhost>; Wed,  4 Sep 2002 18:58:42 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 18:58:42 +0100 (IST)
+Received: from outgoing.securityfocus.com (outgoing3.securityfocus.com
+    [66.38.151.27]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g84H7dZ11753 for <jm@jmason.org>; Wed, 4 Sep 2002 18:07:40 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    9FE27A30F4; Wed,  4 Sep 2002 10:40:56 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 21503 invoked from network); 3 Sep 2002 22:43:53 -0000
+From: Glynn Clements <glynn.clements@virgin.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15733.15859.462448.155446@cerise.nosuchdomain.co.uk>
+Date: Tue, 3 Sep 2002 23:55:47 +0100
+To: Yannick Gingras <ygingras@ygingras.net>
+Cc: secprog@securityfocus.com
+Subject: Re: Secure Sofware Key
+In-Reply-To: <20020903192326.C9DA533986@LINPDC.eclipsys.qc.ca>
+References: <20020829204345.91D1833986@LINPDC.eclipsys.qc.ca>
+    <15733.3398.363187.572002@cerise.nosuchdomain.co.uk>
+    <20020903192326.C9DA533986@LINPDC.eclipsys.qc.ca>
+X-Mailer: VM 6.94 under 21.4 (patch 9) "Informed Management (RC2)" XEmacs
+    Lucid
+
+
+Yannick Gingras wrote:
+
+> > What do you mean by "CD-Key or the like" (I presume that "of" was a
+> > typo)? And what do you mean by "unbreakable"?
+> 
+> "of" was a typo
+> 
+> Unbreakable would mean here that no one, even previously authorised entity, 
+> could use the system without paying the periodic subscription fee.
+> 
+> > You need to be far more explicit about the problem which you wish to
+> > solve, and about the constraints involved.
+> 
+> It could be an online system that work 95% offline but poll frequently an 
+> offsite server.  No mass production CDs, maybe mass personalised d/l like Sun 
+> JDK.
+> 
+> Nothing is fixed yet, we are looking at the way a software can be protected 
+> from unauthorized utilisation.  
+> 
+> Is the use of "trusted hardware" really worth it ?
+
+Answering that requires fairly complete knowledge of the business
+model. But, in all probability: no, it isn't usually worth it. So, it
+comes down to how difficult you want to make the cracker's job.
+
+If the product requires occasional authentication, simple copying
+won't work; the product has to be cracked. In which case, the issue is
+whether you're actually going to enter into battle with the crackers,
+or just make sure that it isn't trivial.
+
+A lot of it comes down to your customer base. Teenage kids tend to be
+more concerned about cost and less concerned about viruses/trojans,
+and so more willing to use warez. Fortune-500 corporations are likely
+to view matters differently.
+
+> Does it really make it more secure ?
+
+Yes; software techniques will only get you so far. Actually, the same
+is ultimately true for hardware, but cracking hardware is likely to
+require resources other than just labour.
+
+Almost (?) anything can be reverse engineered. But it may be possible
+to ensure that doing so is uneconomical.
+
+> Look at the DVDs.
+
+IIRC, CSS was cracked by reverse-engineering a software player; and
+one where the developers forgot to encrypt the decryption key at that.
+
+-- 
+Glynn Clements <glynn.clements@virgin.net>
+

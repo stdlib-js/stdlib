@@ -1,0 +1,38 @@
+
+{{alias}}( key, value )
+    Revives a JSON-serialized number.
+
+    The serialization format for a numberis a number itself
+    Or can have a object having the following
+    fields:
+
+    - type: value type (float64).
+    - value: 'NaN' or '+Infinity' or '-Infinity'.
+
+    Parameters
+    ----------
+    key: string
+        Key.
+
+    value: any
+        Value.
+
+    Returns
+    -------
+    out: any
+        Value.
+
+    Examples
+    --------
+    > var str = '{"type":"float64","value":"NaN"}';
+    > var out = {{alias:@stdlib/utils/parse-json}}( str, {{alias}} )
+    NaN
+    > str = '{"type":"float64","value":"+Infinity"}';
+    > out = {{alias:@stdlib/utils/parse-json}}( str, {{alias}} )
+    Infinity
+    > str = '{"type":"float64","value":"-Infinity"}';
+    > out = {{alias:@stdlib/utils/parse-json}}( str, {{alias}} )
+    -Infinity
+
+    See Also
+    --------

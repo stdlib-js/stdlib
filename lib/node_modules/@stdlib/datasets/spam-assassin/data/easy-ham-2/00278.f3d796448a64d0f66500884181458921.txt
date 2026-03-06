@@ -1,0 +1,77 @@
+From ilug-admin@linux.ie  Wed Aug  7 13:07:08 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9F3FB440CD
+	for <jm@localhost>; Wed,  7 Aug 2002 08:07:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 13:07:07 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g77C8Pk27494 for
+    <jm-ilug@jmason.org>; Wed, 7 Aug 2002 13:08:25 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA20908; Wed, 7 Aug 2002 13:05:58 +0100
+Received: from corvil.com. (k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA20871
+    for <ilug@linux.ie>; Wed, 7 Aug 2002 13:05:49 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159] claimed to be corvil.com.
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com. (8.12.5/8.12.5) with ESMTP id g77C5kn4037048; Wed,
+    7 Aug 2002 13:05:47 +0100 (IST) (envelope-from padraig.brady@corvil.com)
+Message-Id: <3D510D12.6020102@corvil.com>
+Date: Wed, 07 Aug 2002 13:05:38 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Vincent Cunniffe <vincent@cunniffe.net>
+Cc: ilug <ilug@linux.ie>
+Subject: Re: [ILUG] socket latency query
+References: <3D510944.8090507@cunniffe.net>
+Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Vincent Cunniffe wrote:
+> Does anyone have any practical experience with high-performance socket 
+> code in C++ under Linux, and is there any speed difference between unix 
+> domain sockets, loopback sockets, and a real ethernet interface if all 
+> of the packets are going from one process on the machine to another 
+> process on the same machine?
+
+In short yes. The more logic involved the longer
+the CPU is executing it. I.E. there is more logic
+executed (including NIC logic) when going down
+to the metal than when using lo. So how much
+logic is involved for each type of IPC (why
+are you limiting yourself to sockets? there are
+mutexes, shared mem, files, messages...). Anyway the
+best IPC method to choose is dictated by the data
+you want to communicate between the processes,
+as the various IPC mechanisms are tuned for
+various data types.
+
+IBM are running a series comparing doze and Linux IPC mechanisms.
+The socket (which references the others at the bottom) is here:
+http://www-106.ibm.com/developerworks/linux/library/l-rt6/?t=gr,Redhat=Sockets
+
+The following in google gave useful info also:
+"linux IPC mechanisms compared"
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

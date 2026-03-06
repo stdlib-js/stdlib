@@ -1,0 +1,9 @@
+
+Usage: is-relative-path [options] [<path>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --platform name       Platform: 'win32' or 'posix'.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.

@@ -1,0 +1,147 @@
+From fork-admin@xent.com  Mon Sep 30 17:56:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 98D9216F20
+	for <jm@localhost>; Mon, 30 Sep 2002 17:54:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 17:54:03 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8UF9NK03893 for <jm@jmason.org>;
+    Mon, 30 Sep 2002 16:09:25 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1E2792940D1; Mon, 30 Sep 2002 08:09:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sccrmhc02.attbi.com (sccrmhc02.attbi.com [204.127.202.62])
+    by xent.com (Postfix) with ESMTP id C5B4429409E for <Fork@xent.com>;
+    Mon, 30 Sep 2002 08:08:21 -0700 (PDT)
+Received: from [24.61.113.164] by sccrmhc02.attbi.com (InterMail
+    vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020930150823.BGMT27763.sccrmhc02.attbi.com@[24.61.113.164]>;
+    Mon, 30 Sep 2002 15:08:23 +0000
+From: bitbitch@magnesium.net
+X-Mailer: The Bat! (v1.61) Educational
+Reply-To: bitbitch@magnesium.net
+X-Priority: 3 (Normal)
+Message-Id: <10654501659.20020930110821@magnesium.net>
+To: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Cc: Fork@xent.com
+Subject: Re[2]: A moment of silence for the First Amendment (fwd)
+In-Reply-To: <3D9859B9.3A7F80C2@endeavors.com>
+References: <Pine.LNX.4.44.0209291337100.4723-100000@mlug.missouri.edu>
+    <3D9859B9.3A7F80C2@endeavors.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 30 Sep 2002 11:08:21 -0400
+
+>>
+>> http://www.post-gazette.com/columnists/20020905brian5.asp
+
+
+GAB> I thought this nekkid URL was going to be about the
+GAB> infringement of 1st amendment rights for broadcasters
+GAB> and proposed campaign finanice restrictions preventing them
+GAB> from making money on advertisements that are deemed
+GAB> thinly veiled campaign contributions by some arbitrary
+GAB> government board.  As it was posted to "discussion" I
+GAB> thought there'd be some.
+
+GAB> Instead it's a Post-Gazette column by Brian O'Neill
+GAB> lamenting the fact that some people know how to
+GAB> fill out a permit so that they can take advantage
+GAB> of their right to peaceable assembly.  Obviously
+GAB> he's poking fun at the idea that specific groups
+GAB> get specific "zones" and that it's not up to the
+GAB> police to decide what messages and signs get put into
+GAB> what zones to most expediently keep order.  
+
+Oh thats right Greg.  Because was explicitly clear that the pro-Bush
+folks went out and did the permit dance.   So where in the article is
+this again?
+
+Lets get something straight here.   This -is- a First Amendment issue.
+Public streets, provided one isn't blocking traffic, generally tend to
+be sorta ok, at least from my last interpretation of Con Law a few
+years ago (I'll feign ignorance wrt the fact that laws may have
+changed, and the specific facts in this case are weak).    IF this guy
+_was_ merely holding a sign (which it seems was the case for all the
+pro-bush folks) he did nothing wrong.  He certainly didn't do enough
+of a wrong to warrant a disorderly conduct charge.
+
+I'll play with your perspective though.   Lets assume a few things.
+If I walk into the city office and tell them I want to peacably
+assemble against Bush, do you think they'll give me a permit?
+Probably not.   So I lie.   Then the cop does what happened in this
+scenario.  HE walks up, checks my permit and finds out that I
+falsified my statement to get this said document.   He arrests me.
+End of story.
+
+GAB> The problem is that politics have gotten so muddied
+GAB> nowadays, that shouting down and unpeaceably disrupting
+GAB> political rallies that you don't agree with has become
+GAB> common practice.  The courts have constantly ruled
+GAB> that there are some restrictions on the first amendment.
+GAB> They teach you that your very first year of law school.
+
+I'll agree with Owen on this one.  Muddied my ass.  How hard is it to
+chose between a Republocrat or a Demipublican?   Not very.  Shouting
+down has grown to become the answer because the government, over a
+span of years, and with the help of the Courts -has- limited the
+rights we have as citizens under the First Amendment.    If you
+question the policy about terrorism, or drugs, or Iraq, or Bush in
+general, you're aiding terrorism.   If you challenge the beliefs of
+the folks attending the various shadowy G8 conferences, you're an
+anarchist, and you're herded off to a 'designated protest spot' miles
+away from anything.   Part of the point of speech is to be -heard-.
+I can scream on my soapbox in the forest somewhere, and while thats
+speech, its not effective speech.  People are screaming and shouting
+over the political figures because they cannot be  heard in any other
+way.
+
+
+
+
+GAB> I think that given the information as laid out by the story,
+GAB> Mr. O'Neill has confused free speech with action.  Free
+GAB> speech or even protected speech as practiced by almost 
+GAB> every American seems to involve the ability to communicate
+GAB> an idea to an unknown audience.  Action involves directing
+GAB> a specific comment to a specific well-defined individual or audience
+GAB> that has immediate, harmful, and sometimes physical 
+GAB> effects that is easily forseeable by any reasonable person. 
+
+Getting back to my original point.  How do you communicate  an idea to
+an unknown audience, if you're miles from where the audience is?   How
+do you bypass the rules for being -miles- away from the audience
+without violating the rules of the regime?  I don't think Mr. Nell was
+throwing pies at Bush.  A sign, the last time I checked, didn't cause
+physical injury, or even emotional harm.  If I remember Cohen v.
+California, 403 U.S. 15 (1971), its not the individual speaking that
+has the requirement to desist, but the individual listening who has
+the option to leave.
+
+
+Just my .02, while its still considered legal.
+
+
+
+
+-- 
+Best regards,
+ bitbitch                            mailto:bitbitch@magnesium.net
+
+

@@ -1,0 +1,130 @@
+From ilug-admin@linux.ie  Mon Jul 22 19:49:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3726B440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:49:21 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:49:21 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG1DY16485 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:01:13 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id LAA27022 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 11:01:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA03542; Sun, 21 Jul 2002 11:00:17 +0100
+Received: from linux.local ([195.218.108.167]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA03495 for <ilug@linux.ie>; Sun,
+    21 Jul 2002 10:59:40 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.167] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6L121X21767 for
+    <ilug@linux.ie>; Sun, 21 Jul 2002 02:02:01 +0100
+Message-Id: <200207210102.g6L121X21767@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] vanquishing the daemons of shell scripting
+In-Reply-To: Message from Stephen Shirley <diamond@skynet.ie> of
+    "Sat, 20 Jul 2002 10:47:36 BST."
+    <20020720094736.GA16224@skynet.ie>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <21764.1027213321.1@linux.local>
+Date: Sun, 21 Jul 2002 02:02:01 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    KAA03495
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Sat, 20 Jul 2002 10:47:36 +0100
+  | From: Stephen Shirley <diamond@skynet.ie>
+  |[ ... ]
+  | It's very easy to get one program to act on the output of a second
+  | program: cmd1 | cmd2. But, what if you want cmd1 to act on the output
+  | of cmd2 as well? Hmm. Eventually, I came up with this solution:
+  | 
+  |    mkfifo io
+  |    cmd1 <io | cmd2 > io
+  | 
+  | and bingo, all was well with the world. Now, I have (and had) a sneaking
+  | suspcion that it might be possible to do this without using a fifo, and
+  | can be done using something like:
+  | 
+ 1|    exec 3>&1
+ 2|    cmd1 <&3 | cmd2 >&3
+ 3|    exec 3>&-
+  | 
+  | but that doesn't work in that form, and i couldn't work out an
+  | incantation that would. Anyone got any suggestions?  [ ... ]
+
+ the above, or something close to it, would work if, when the
+ 1st line is executed, file descriptor (fdesc) 1 is open for both
+ read and write (R/W) to a suitable entity (e.g., a pipe/FIFO; I
+ imagine a socket or something of that ilk could be made to work
+ but have no idea why you'd want to go to the trouble.... ).
+
+ but in any case, all that is unlikely to be the case:
+  · most probably, fdesc 1 is yer tty (e.g. screen + keyboard);
+ and
+  · quite possibly is open only for write (being stdout).
+
+ you need it open for R/W because all dup2(2) --- which is all
+ `n>&m' means -- does is replicate the fdesc handle.  it does not
+ change the access mode; e.g., if the original fdesc (m) was only
+ open for writing (W), that's all the new fdesc (n) is open for.
+ yet in the 2nd line, it's needed for both R (cmd1) and W (cmd2).
+
+ whilst it's impossible to say for certain from this excerpt, it
+ seems a reasonable guess that fdesc 1 when the 1st line executes
+ is the stdout of the script itself, which is most probably yer
+ tty.  that means, if it does happen to be open for R/W (which is
+ the case on some systems), `cmd2' would be writing to the screen
+ whilst `cmd1' is reading from the keyboard --- i.e., the poor
+ confused human luser is "clearly" expected to manually echo back
+ to the computer what it prints.
+
+ good luck!  ;-)
+
+ upshot:  the FIFO is needed.  and this isn't a shell scripting
+          problem per se.
+
+ the FIFO solution is fine.  I've used variations (plural) on
+ this approach to extend the Korn (ksh(1)) shell language, by
+ providing a co-processing interpreter --- `ksh' sends certain
+ predefined commands to the co-process, handling control over
+ to the co-process until it indicates processing is complete
+ and `ksh' can resume normal processing.  with some thought and
+ care to insure signals do something rational, works great for
+ adding a scripting language (which is the purpose) cheaply to
+ script-less programs (useful when you can't modify the, IMHO,
+ buggy program to use, e.g., TCL).
+
+cheers!
+	-blf-
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

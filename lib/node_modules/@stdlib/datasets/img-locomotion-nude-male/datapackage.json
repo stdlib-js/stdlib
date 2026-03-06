@@ -1,0 +1,37 @@
+{
+  "name": "stdlib-datasets-img-locomotion-nude-male",
+  "version": "",
+  "title": "Locomotion Nude Male",
+  "description": "Forty-eight views of a nude male moving in place.",
+  "resources": [
+    {
+      "name": "locomotion-nude-male-jpg",
+      "title": "Locomotion Nude Male",
+      "description": "Forty-eight views of a nude male moving in place.",
+      "format": "jpeg",
+      "mediatype": "image/jpeg",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/image.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Getty's Open Content Program",
+      "web": "http://www.getty.edu/art/collection/objects/40907/eadweard-j-muybridge-animal-locomotion-american-1887/"
+    }
+  ],
+  "keywords": [
+    "image",
+    "img",
+    "male",
+    "man",
+    "human",
+    "person",
+    "locomotion",
+    "moving",
+    "movement",
+    "walking"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

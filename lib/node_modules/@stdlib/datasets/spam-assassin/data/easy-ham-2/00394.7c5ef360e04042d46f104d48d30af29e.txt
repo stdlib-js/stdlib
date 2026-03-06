@@ -1,0 +1,59 @@
+From ilug-admin@linux.ie  Tue Aug 13 12:19:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 64EFA43C34
+	for <jm@localhost>; Tue, 13 Aug 2002 07:19:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 12:19:00 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DBEse29064 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 12:14:55 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA10180; Tue, 13 Aug 2002 12:13:59 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from maho3msx2.isus.emc.com (maho3msx2.isus.emc.com
+    [128.221.11.32]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA10152
+    for <ilug@linux.ie>; Tue, 13 Aug 2002 12:13:52 +0100
+From: Baldwin_James@emc.com
+Received: by maho3msx2.isus.emc.com with Internet Mail Service
+    (5.5.2653.19) id <Q3LKP4P8>; Tue, 13 Aug 2002 07:13:16 -0400
+Message-Id: <8324AAE75AAF234DB122E30557EEC9DC014C0098@corpeumx6.corp.emc.com>
+To: Graham.Smith@it-tallaght.ie, ilug@linux.ie
+Subject: RE: [ILUG] I hate noise!
+Date: Tue, 13 Aug 2002 07:12:22 -0400
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Try that on a Sun :( you have to disect the keyboard 
+
+-----Original Message-----
+From: Smith, Graham - Computing Technician
+[mailto:Graham.Smith@it-tallaght.ie]
+Sent: Tuesday, August 13, 2002 12:07 PM
+To: ilug@linux.ie
+Subject: RE: [ILUG] I hate noise!
+
+
+I ususally disconnect the internal speaker - thats pretty sure to stop any
+beeping!
+
+G.
+___________________________
+ Graham Smith,
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

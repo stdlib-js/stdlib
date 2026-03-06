@@ -1,0 +1,55 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:41:29 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9C20516F16
+	for <jm@localhost>; Thu, 26 Sep 2002 16:40:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:40:48 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFRqg24249 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:27:52 +0100
+Message-Id: <200209261527.g8QFRqg24249@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: "hyatt@mozilla" <rssfeeds@spamassassin.taint.org>
+Subject: More fun with the PTC
+Date: Thu, 26 Sep 2002 15:27:52 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.mozillazine.org/weblogs/hyatt/#85378428
+Date: Not supplied
+
+I received some feedback in email (from several of you actually) regarding my 
+earlier blog about the Parents Television Council[1], which recently published 
+a report in which they labeled Buffy as the worst show on television for 
+children. Let me clarify why this organization bothers me so much.
+
+Buffy as a show is clearly inappropriate for children under 12, and a game like 
+GTA3 is as well. The PTC, however, has a clear agenda that goes beyond simply 
+warning parents about the dangers of television shows or video games. There is 
+a belief on the part of the PTC that the hour from 8-9pm (the first hour of 
+primetime) must be designated a family hour, and that no offensive shows should 
+air during that time. I don't believe that it's the networks' responsibility to 
+restrict the kind of content aired during a particular hour of television. The 
+shows that air during primetime run the gamut; some are family-oriented and 
+some aren't. There is, however, no shortage of suitable content should parents 
+and children wish to watch TV together during this hour.
+
+It should be the parent's responsibility to police a child's television 
+viewing. If you don't want your kids watching _Buffy the Vampire Slayer_, then 
+don't let them, but don't campaign to have the show removed from the air or 
+shoved into a late hour that would only result in its cancellation just because 
+you don't like its content. If you don't think a show is appropriate, don't let 
+your kids watch it.
+
+The PTC also seems to find shows offensive that are family-oriented. An example 
+of one such show is _Malcolm in the Middle_. I would hardly call this show 
+inappropriate for kids. Apparently the only shows that the PTC deems 
+appropriate are those that have been sanitized to match their 
+ultra-conservative agenda. Even then, I wouldn't really mind, but the idea that 
+all other shows must be relegated to some later hour is just ludicrous.
+
+[1] http://www.parentstv.org/
+
+

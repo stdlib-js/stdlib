@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prints the number of merged pull requests per year.
+#
+# <year> <num_merges>
+
+# * `git log --merges`
+#   - Show commit logs.
+# * `grep 'Merge pull request #'`
+#   - Filter for commit messages which explicitly state that a commit merges a pull request.
+# * `awk '{}'`
+#   - From each commit, extract the year (`$1`).
+# * `sort -r`
+#   - Sort in reverse lexicographic order.
+# * `uniq -c`
+#   - Remove repeated lines and count the repeats to compute yearly totals.
+git log --merges --format=format:"%ad %s" --date=format:"%Y" | grep 'Merge pull request #' | awk '{print $1}' | sort -r | uniq -c | awk '{print $2 OFS $1}'

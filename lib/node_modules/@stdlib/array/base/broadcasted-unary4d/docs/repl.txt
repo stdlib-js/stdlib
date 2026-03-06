@@ -1,0 +1,29 @@
+
+{{alias}}( arrays, shapes, fcn )
+    Applies a unary callback to elements in a broadcasted nested input array and
+    assigns results to elements in a four-dimensional nested output array.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject
+        Array-like object containing one input nested array and one output
+        nested array.
+
+    shapes: Array<Array<integer>>
+        Array shapes.
+
+    fcn: Function
+        Unary callback.
+
+    Examples
+    --------
+    > var x = [ -1.0, -2.0 ];
+    > var y = [ [ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ] ];
+    > var shapes = [ [ 2 ], [ 1, 1, 2, 2 ] ];
+    > {{alias}}( [ x, y ], shapes, {{alias:@stdlib/math/base/special/abs}} );
+    > y
+    [ [ [ [ 1.0, 2.0 ], [ 1.0, 2.0 ] ] ] ]
+
+    See Also
+    --------
+

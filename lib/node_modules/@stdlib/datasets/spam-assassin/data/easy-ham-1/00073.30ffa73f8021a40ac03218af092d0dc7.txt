@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Mon Aug 26 15:30:57 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 82A234416A
+	for <jm@localhost>; Mon, 26 Aug 2002 10:25:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:25:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7NKJVZ06924 for <jm@jmason.org>;
+    Fri, 23 Aug 2002 21:19:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C9FFD2940C5; Fri, 23 Aug 2002 13:17:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail1.panix.com (mail1.panix.com [166.84.1.72]) by xent.com
+    (Postfix) with ESMTP id F1972294099 for <fork@xent.com>; Fri,
+    23 Aug 2002 13:16:24 -0700 (PDT)
+Received: from 159-98.nyc.dsl.access.net (159-98.nyc.dsl.access.net
+    [166.84.159.98]) by mail1.panix.com (Postfix) with ESMTP id EF7E948AD7;
+    Fri, 23 Aug 2002 16:18:11 -0400 (EDT)
+From: Lucas Gonze <lgonze@panix.com>
+X-X-Sender: lgonze@localhost.localdomain
+To: Russell Turpin <deafbox@hotmail.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: The case for spam
+In-Reply-To: <F160luCBcKfExvWvqzA00000209@hotmail.com>
+Message-Id: <Pine.LNX.4.44.0208231600070.17440-100000@localhost.localdomain>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 23 Aug 2002 16:10:39 -0400 (EDT)
+
+
+me:
+> >Spam is *the* tool for dissident news, since the fact that it's unsolicited 
+> >means that recipients can't be blamed for being on a mailing list.
+> 
+
+Russell Turpin:
+> That depends on how the list is collected, or
+> even on what the senders say about how the list
+> is collected. Better to just put it on a website,
+> and that way it can be surfed anonymously. AND
+> it doesn't clutter my inbox.
+
+It doesn't work that way.  A website is opt-in, spam is no-opt.  If you
+visit a samizdat site you can get in trouble.  If you get samizdat spam,
+the worst that can be said is that you might have read it.  And as long as
+the mailers send to individuals who clearly didn't opt-in, like party
+officials, then other recipients can't get in trouble for requesting the
+mail.  
+
+Plus, it's much harder to block spam than web sites.
+
+But this shouldn't come as a surprize.  Spam is speech.  It may be sleazy, 
+but so what.
+
+- Lucas
+
+
+http://xent.com/mailman/listinfo/fork
+

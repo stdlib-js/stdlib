@@ -1,0 +1,79 @@
+From webdev-admin@linux.ie  Thu Aug 22 10:46:52 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EBD5F43C42
+	for <jm@localhost>; Thu, 22 Aug 2002 05:46:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:46:13 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7M95hZ32534 for
+    <jm-webdev@jmason.org>; Thu, 22 Aug 2002 10:05:43 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA19953; Thu, 22 Aug 2002 10:05:16 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay01.esat.net (relay01.esat.net [192.111.39.11]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA19915 for <webdev@linux.ie>;
+    Thu, 22 Aug 2002 10:05:11 +0100
+Received: from (lee.csn.ul.ie) [193.95.184.122] by relay01.esat.net with
+    esmtp id 17hntu-0008Ns-00; Thu, 22 Aug 2002 10:05:11 +0100
+Message-Id: <5.1.0.14.0.20020822094822.02756b28@holly.csn.ul.ie>
+X-Sender: hostyle@holly.csn.ul.ie
+X-Mailer: QUALCOMM Windows Eudora Version 5.1
+Date: Thu, 22 Aug 2002 10:01:12 +0100
+To: webdev@linux.ie
+From: Lee Hosty <hostyle@csn.ul.ie>
+Subject: Re: [Webdev] PHP/MySQL Virtual Hosting Recommendations?
+In-Reply-To: <200208211844.TAA16226@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+At 07:44 PM 21/08/2002 +0100, elvin@eircom.net wrote:
+
+>Circa 50MB-100MB web space for now
+>POP email accounts
+>Account Control Panel
+>Perl
+>PHP
+>MySQL
+>FTP and Telnet Access 24/7
+
+You'll be lucky to get telnet anywhere, SSH should do though.
+
+>Own CGI-BIN
+>Webalizer Graphical Stats
+>Server Side Includes
+>Good Reachable Technical Support
+>
+>I have seen a great looking 300MB solution in the region of 600Euro p.a. 
+>which at the moment is a bit over my financial head in one payment - I 
+>haven't completed any sites yet, but have a few potential jobs coming up.
+>
+>Any tips/pointers much appreciated!
+
+Try www.hosting365.ie - they haven't let me down yet.
+
+You could try iewebs.com aswell, though I don't know if they do "just hosting".
+
+
+Lee Hosty -x- hostyle AT csn.ul.ie -x- +353 (0)86 8768780
+--
+PLEELEY (adj.)
+Descriptive of a drunk person's attempt to be endearing.
+
+
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+

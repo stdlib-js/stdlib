@@ -1,0 +1,73 @@
+From fork-admin@xent.com  Sat Sep 21 20:22:02 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B2F5516F03
+	for <jm@localhost>; Sat, 21 Sep 2002 20:22:01 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 21 Sep 2002 20:22:01 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8LEatC24979 for <jm@jmason.org>;
+    Sat, 21 Sep 2002 15:36:55 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DB956294191; Sat, 21 Sep 2002 07:29:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id 5A0AD29418F for <fork@xent.com>;
+    Sat, 21 Sep 2002 07:28:44 -0700 (PDT)
+Received: (qmail 12362 invoked from network); 21 Sep 2002 14:32:21 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 21 Sep 2002 14:32:21 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id 9679B1C2C4;
+    Sat, 21 Sep 2002 10:32:14 -0400 (EDT)
+To: "R. A. Hettinga" <rah@shipwright.com>
+Cc: "Mr. FoRK" <fork_list@hotmail.com>, <fork@spamassassin.taint.org>
+Subject: Re: sed /s/United States/Roman Empire/g
+References: <979BE8FE-CCF6-11D6-817E-000393A46DEA@alumni.caltech.edu>
+    <DAV72xvjPkQTGpaoG1V00000fd0@hotmail.com>
+    <p05111a27b9b1d842c9fe@[66.149.49.6]>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m24rcjl8gh.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 21 Sep 2002 10:32:14 -0400
+
+>>>>> "R" == R A Hettinga <rah@shipwright.com> writes:
+
+    R> At 9:34 PM -0700 on 9/20/02, Mr. FoRK wrote:
+    >> "Free trade and free markets have proven their ability to lift
+    >> whole societies out of poverty" I'm not a
+    >> socio-political/history buff - does anybody have some clear
+    >> examples?
+
+    R> You're probably living in one, or you wouldn't be able to post
+    R> here.
+
+Cool --- I wasn't aware that the US had lifted it's population out of
+poverty!  When did this happen?  I wonder where the media gets the
+idea that the wealth gap is widening and deepening...
+
+
+-- 
+Gary Lawrence Murphy - garym@teledyn.com - TeleDynamics Communications
+ - blog: http://www.auracom.com/~teledyn - biz: http://teledyn.com/ -
+  "Computers are useless. They can only give you answers." (Picasso)
+
+

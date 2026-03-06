@@ -1,0 +1,156 @@
+
+{{alias}}( [buffer,] [options] )
+    Returns a multidimensional array.
+
+    Parameters
+    ----------
+    buffer: Array|TypedArray|Buffer|ndarray (optional)
+        Data source.
+
+    options: Object (optional)
+        Options.
+
+    options.buffer: Array|TypedArray|Buffer|ndarray (optional)
+        Data source. If provided along with a `buffer` argument, the argument
+        takes precedence.
+
+    options.dtype: string (optional)
+        Underlying storage data type. If not specified and a data source is
+        provided, the data type is inferred from the provided data source. If an
+        input data source is not of the same type, this option specifies the
+        data type to which to cast the input data. For non-ndarray generic array
+        data sources, the function casts generic array data elements to the
+        default data type. In order to prevent this cast, the `dtype` option
+        must be explicitly set to `'generic'`. Any time a cast is required, the
+        `copy` option is set to `true`, as memory must be copied from the data
+        source to an output data buffer. Default: 'float64'.
+
+    options.order: string (optional)
+        Specifies the memory layout of the data source as either row-major (C-
+        style) or column-major (Fortran-style). The option may be one of the
+        following values:
+
+        - 'row-major': the order of the returned array is row-major.
+        - 'column-major': the order of the returned array is column-major.
+        - 'any': if a data source is column-major and not row-major, the order
+          of the returned array is column-major; otherwise, the order of the
+          returned array is row-major.
+        - 'same': the order of the returned array matches the order of an input
+          data source.
+
+        Note that specifying an order which differs from the order of a
+        provided data source does *not* entail a conversion from one memory
+        layout to another. In short, this option is descriptive, not
+        prescriptive. Default: 'row-major'.
+
+    options.shape: Array<integer> (optional)
+        Array shape (dimensions). If a shape is not specified, the function
+        attempts to infer a shape based on a provided data source. For example,
+        if provided a nested array, the function resolves nested array
+        dimensions. If provided a multidimensional array data source, the
+        function uses the array's associated shape. For most use cases, such
+        inference suffices. For the remaining use cases, specifying a shape is
+        necessary. For example, provide a shape to create a multidimensional
+        array view over a linear data buffer, ignoring any existing shape meta
+        data associated with a provided data source.
+
+    options.flatten: boolean (optional)
+        Boolean indicating whether to automatically flatten generic array data
+        sources. If an array shape is not specified, the shape is inferred from
+        the dimensions of nested arrays prior to flattening. If a use case
+        requires partial flattening, partially flatten prior to invoking this
+        function and set the option value to `false` to prevent further
+        flattening during invocation. Default: true.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to (shallow) copy source data to a new data
+        buffer. The function does *not* perform a deep copy. To prevent
+        undesired shared changes in state for generic arrays containing objects,
+        perform a deep copy prior to invoking this function. Default: false.
+
+    options.ndmin: integer (optional)
+        Specifies the minimum number of dimensions. If an array shape has fewer
+        dimensions than required by `ndmin`, the function prepends singleton
+        dimensions to the array shape in order to satisfy the dimensions
+        requirement. Default: 0.
+
+    options.casting: string (optional)
+        Specifies the casting rule used to determine acceptable casts. The
+        option may be one of the following values:
+
+        - 'none': only allow casting between identical types.
+        - 'equiv': allow casting between identical and byte swapped types.
+        - 'safe': only allow "safe" casts.
+        - 'same-kind': allow "safe" casts and casts within the same kind (e.g.,
+          between signed integers or between floats).
+        - 'unsafe': allow casting between all types (including between integers
+          and floats).
+
+        Default: 'safe'.
+
+    options.codegen: boolean (optional)
+        Boolean indicating whether to use code generation. Code generation can
+        boost performance, but may be problematic in browser contexts enforcing
+        a strict content security policy (CSP). Default: true.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed array dimensions. The
+        option may be one of the following values:
+
+        - 'throw': an ndarray instance throws an error when an index exceeds
+          array dimensions.
+        - 'wrap': an ndarray instance wraps around indices exceeding array
+          dimensions using modulo arithmetic.
+        - 'clamp', an ndarray instance sets an index exceeding array dimensions
+          to either `0` (minimum index) or the maximum index.
+
+        Default: 'throw'.
+
+    options.submode: Array<string> (optional)
+        Specifies how to handle subscripts which exceed array dimensions. If a
+        mode for a corresponding dimension is equal to
+
+        - 'throw': an ndarray instance throws an error when a subscript exceeds
+          array dimensions.
+        - 'wrap': an ndarray instance wraps around subscripts exceeding array
+          dimensions using modulo arithmetic.
+        - 'clamp': an ndarray instance sets a subscript exceeding array
+          dimensions to either `0` (minimum index) or the maximum index.
+
+        If the number of modes is fewer than the number of dimensions, the
+        function recycles modes using modulo arithmetic.
+
+        Default: [ options.mode ].
+
+    Returns
+    -------
+    out: ndarray
+        Multidimensional array.
+
+    Examples
+    --------
+    // Create a 2x2 matrix:
+    > var arr = {{alias}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] )
+    <ndarray>
+
+    // Get an element using subscripts:
+    > var v = arr.get( 1, 1 )
+    4.0
+
+    // Get an element using a linear index:
+    > v = arr.iget( 3 )
+    4.0
+
+    // Set an element using subscripts:
+    > arr.set( 1, 1, 40.0 );
+    > arr.get( 1, 1 )
+    40.0
+
+    // Set an element using a linear index:
+    > arr.iset( 3, 99.0 );
+    > arr.get( 1, 1 )
+    99.0
+
+    See Also
+    --------
+

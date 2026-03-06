@@ -1,0 +1,64 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:30:32 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5BD8C44139
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:18 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D99Db24675 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 10:09:13 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA03501; Tue, 13 Aug 2002 10:08:10 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA03457 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 10:08:01 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id KAA09757; Tue, 13 Aug 2002 10:07:31 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g7D97iR05003; Tue, 13 Aug 2002 10:07:44 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Tue, 13 Aug 2002 10:07:44 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: Padraig Brady <padraig.brady@corvil.com>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] RH7.3 on Cobalt - the saga continues
+Message-Id: <20020813090744.GE2019@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Padraig Brady <padraig.brady@corvil.com>,
+	ilug@linux.ie
+References: <214A52C16E44D51186FB00508BB83E0F7C0D67@w2k-server.bcs.ie>
+    <20020813085741.GB2019@jinny.ie> <3D58CBB7.4040006@corvil.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <3D58CBB7.4040006@corvil.com>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 10:04:55AM +0100, Padraig Brady mentioned:
+> http://list.cobalt.com/pipermail/cobalt-developers/2001-February/026056.html
+
+ That isn't the problem - I've flashed the raq3 with the 2.3.40 PROM, a
+beta one, required to get the 2.4 kernel's booting.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

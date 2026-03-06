@@ -1,0 +1,563 @@
+Return-Path: <Online#3.19725.55-A8YAgb1NX5rYkdRR.1.b@newsletter.online.com>
+Received: from acmta3.cnet.com (abv-sfo1-acmta3.cnet.com [206.16.1.162])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6B9Q2J19220
+	for <qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org>; Thu, 11 Jul 2002 10:26:02 +0100
+Received: from abv-sfo1-ac-agent3 (206.16.0.225) by acmta3.cnet.com (PowerMTA(TM) v1.5); Thu, 11 Jul 2002 02:18:40 -0700 (envelope-from <Online#3.19725.55-A8YAgb1NX5rYkdRR.1.b@newsletter.online.com>)
+Message-ID: <958481.1026379554452.JavaMail.root@abv-sfo1-ac-agent3>
+Date: Thu, 11 Jul 2002 02:25:54 -0700 (PDT)
+From: CNET Auctions <Online#3.19725.55-A8YAgb1NX5rYkdRR.1@newsletter.online.com>
+To: qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org
+Subject: Intel 900MHz / 256MB PC-133 / 10X DVD / 20GB PC: Starting Bid $229
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+
+<html>
+<head>
+<title>Auctions Weekly Newsletter</title>
+</head>
+
+<body bgcolor="#eeeeee" alink=#0000FF vlink=#0000FF>
+<center>
+<a name="top"></a>
+
+<!-- header -->
+<table cellpadding=0 cellspacing=0 border=0 width=612 bgcolor="#ffffff">
+<tr valign=top><td width=442 colspan=4><a href="http://clickthru.online.com/Click?q=6b-8g5ZIHEcwpuSOqD80ywQ-4d0P6lR" >
+<img src="http://www.cnet.com/i/nl/au/hd.gif" width=442 height=60
+alt="Auctions Weekly Newsletter" border=0></a><br>
+<table width=442 cellpadding=0 cellspacing=0 border=0 bgcolor="#ffcc00">
+<tr><td bgcolor="#000000" colspan=3><img src="http://www.cnet.com/b.gif"
+width=1 height=1></td></tr>
+<tr><td bgcolor="#000000" width=1 rowspan=2><img
+src="http://www.cnet.com/b.gif" width=1 height=10></td>
+<td width=10 rowspan=2><img src="http://www.cnet.com/b.gif" width=1
+height=10></td>
+<td width=430><img src="http://www.cnet.com/b.gif" width=1
+height=10></td></tr>
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width=1
+height=1></td></tr>
+</table></td>
+<td width=160 rowspan=2><img src="http://www.cnet.com/i/nl/dd_b.gif"
+width=160 height=18><br>
+<table cellpadding=0 cellspacing=0 border=0 width=160>
+<tr><td align=center bgcolor="#eeeeee"></td></tr>
+</table>
+
+<iframe src="http://www.zdnet.com/include/ads/ifc/RGROUP=2560" scrolling="no" frameborder="0" hspace="0" vspace="0" height="600" width="160" marginheight="0" marginwidth="0">
+<script language="JavaScript" src="http://www.zdnet.com/include/ads/js/RGROUP=2560">
+</script>
+</iframe>
+	
+<!-- bottom right column -->        
+
+<!-- search form -->
+<table cellspacing=0 cellpadding=0 width=150 border=0><form method=get
+action="http://www.search.com/redirect">
+<tr valign=top><td><font size="-1" face="arial,helvetica,sans-serif">
+<img src="http://a.r.tv.com/cnet.1d/i/se/dispatch_hd.gif" width=150
+height=20 alt="CNET Search.com" border=0><br>
+<img src="http://cnet.com/b.gif" width=1 height=1><br><input type=text
+name=q size=17 value=""><br>
+<select name=target class=frmel>
+ <option
+value="http://auctions.cnet.com/cgi-bin/search/search?ss=%%q%%&loc=auc">
+Auctions
+ <option
+value="http://cnet.search.com/search?tag=ex.auctions.dispatch.srch.cnet"
+>All CNET
+ <option
+value="http://www.search.com/search?tag=ex.auctions.dispatch.srch.web">T
+he Web
+</select>&nbsp;<input type=submit
+value="Go!"></font></td></tr></form></table><p>
+<!-- /search form -->
+
+<table width=160 bgcolor="#ffffef" cellpadding=0 cellspacing=0 border=0>
+<tr><td colspan=5 bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width=1 height=1></td></tr>
+<tr><td width=1 bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width=1 height=1></td>
+<td width=6><img src="http://www.cnet.com/b.gif" width=6 height=1></td>
+<td width=149><font face="arial, helvetica" size="-1"><img
+src="http://www.cnet.com/b.gif" width=1 height=5><br>
+
+
+<b><a href="http://clickthru.online.com/Click?q=80-KTKvQQ0KirSTTVOoaDkjVsTLZ89R" >Site
+Map</a><sup>&nbsp;</sup><br>
+
+
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?117">Desktops</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?118">Notebooks</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?264">Components</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?270">Software</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?316">Input Devices</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?304">Networking</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?251">Handhelds</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?280">Printers</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?252">Memory</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?285">Storage</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?340">Electronics</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?257">Monitors</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?291">Modems</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?300">Scanners</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?331">Services</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?296">Digital Cameras</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?324">Accessories</a><br>
+&#149;<sup>&nbsp;</sup><a
+href="http://auctions.cnet.com/cgi-bin/dp?334">Multimedia</a><br>
+</b></font><img src="http://www.cnet.com/b.gif" width=149
+height=10></td>
+<td width=3><img src="http://www.cnet.com/b.gif" width=3 height=1></td>
+<td width=1 bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width=1 height=1></td></tr>
+<tr><td colspan=5 bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width=1 height=1></td></tr>
+</table>
+
+
+<!-- /bottom right column -->
+<P></P></TD>
+<TD width=9 rowSpan=2><IMG height=60
+src="http://www.cnet.com/i/nl/dd_c.gif" 
+width=9><BR>
+<TABLE cellSpacing=0 cellPadding=0 width=9 border=0>
+<TBODY>
+<TR>
+<TD bgColor=#000000><IMG height=1 src="http://www.cnet.com/b.gif" 
+width=9></TD></TR>
+<TR>
+<TD bgColor=#ffcc00><IMG height=10 src="http://www.cnet.com/b.gif" 
+width=1></TD></TR>
+<TR>
+<TD bgColor=#000000><IMG height=1 src="http://www.cnet.com/b.gif" 
+width=1></TD></TR></TBODY></TABLE></TD>
+<TD width=1 bgColor=#000000 rowSpan=2>
+<TABLE cellSpacing=0 cellPadding=0 width=1 border=0>
+<TBODY>
+<TR>
+<TD bgColor=#eeeeee><IMG height=60 src="http://www.cnet.com/b.gif" 
+width=1></TD></TR></TBODY></TABLE></TD></TR>
+<TR vAlign=top>
+<TD width=1 bgColor=#000000><IMG height=1
+src="http://www.cnet.com/b.gif" 
+width=1></TD>
+<TD width=10 bgColor=#ffcc00><IMG height=1
+src="http://www.cnet.com/b.gif" 
+width=10></TD>
+<TD width=1 bgColor=#000000><IMG height=1
+src="http://www.cnet.com/b.gif" 
+width=1></TD>
+<TD width=430 bgColor=#ffffff>
+<TABLE cellSpacing=0 cellPadding=0 width=430 bgColor=#EEEEEE border=0
+bordercolor="#EEEEEE">
+
+
+<TBODY>
+
+<tr>
+<td width="100%" colspan="3" align=bottom>
+<font face="arial, helvetica" size="-2" color="#000000">
+&nbsp;&nbsp;&nbsp;&nbsp;<b>July 11th, 2002</b></font>
+</td></tr>
+
+<TR vAlign=top>
+<TD width=10><IMG height=1 src="http://www.cnet.com/b.gif"
+width=10></TD>
+<TD><IMG height=8 src="http://www.cnet.com/b.gif" width=1>
+<div align="center">
+<table border="1" cellspacing="1" bordercolor="#FFCC00" width="100%"
+bgcolor="#FFFFFF">
+
+<tr>
+<td>
+<div align="center">
+<table border="0" cellspacing="0" width="100%">
+
+
+
+<tr>
+<td width="100%" colspan="2"><br>
+<p align="center"><b><u><font face="Arial" color="#0000FF" size="3">
+<a href="http://clickthru.online.com/Click?q=95-XdwrQvdJorWvte2r1yZeU_u_KnuR" >
+Intel 900MHz / 256MB PC-133 / 10X DVD / 20GB PC</font></a></u>
+<font face="Arial" size="2" color="#0000FF">&nbsp;</font></b>
+
+</td>
+</tr>
+<tr>
+<td width="65%" valign="top" align="left">
+<br>
+<ul>
+<li><b><font face="Arial" size="2"><font color="#CC0000"><u>Intel</u></font> 900MHz Socket 370 Processor</font></b></li>
+<li><b><font face="Arial" size="2"><font color="#CC0000"><u>Microstar</u></font> PIII ATX Motherboard</font></b></li>
+<li><b><font face="Arial" size="2"><font color="#CC0000"><u>Micron</u></font> 256MB PC-133 SDRAM</font></b></li>
+<li><b><font face="Arial" size="2"><font color="#CC0000"><u>Pioneer</u></font> 10X DVD-ROM</font></b></li>
+<li><b><font face="Arial" size="2">8MB 2X AGP Video</font></b></li>
+<li><b><font face="Arial" size="2">64-Bit PCI Sound Card</font></b></li>
+<li><b><font face="Arial" size="2"><font color="#CC0000"><u>WD/Seagate</u></font> 20GB Ultra-66 HDD</font></b></li>
+</ul>
+
+</td>
+<td width="35%">
+<div align="center">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" valign="center"><center>
+<a href="http://clickthru.online.com/Click?q=ab-ZcQKQYpdYiQ0ewrXydit0M-0OvFR" >
+<img border="0"
+src="http://auctions.cnet.com/images/dispatch/desktop2_dispatch.gif">
+</a>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" colspan="2" align="center">
+<font color="#CC0000" face="Arial"><b>
+Bidding starts at <font size=6> $229&nbsp;</font></b></font></a></td>
+</tr>
+
+<tr><td width="100%" colspan="2"></td></tr>
+<tr>
+<td width="100%" colspan="2" align="center"><b><font face="Arial"
+color="#0000FF">
+<a href="http://clickthru.online.com/Click?q=c0-kfs-QWP2ztd-XSC41H99K8FZuS9R" >
+<u>Don't miss out, place your bid now!</u></font></b></a></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p><IMG height=4 src="http://www.cnet.com/b.gif" width=1><BR>
+<IMG height=1 src="http://www.cnet.com/b.gif" width=8></TD>
+<TD width=8><IMG height=1 src="http://www.cnet.com/b.gif" 
+width=8></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=430 border=0>
+<TBODY>
+<TR>
+<TD bgColor=#ffcc00><IMG height=1 src="http://www.cnet.com/b.gif" 
+width=1></TD></TR></TBODY></TABLE> <BR><FONT face="arial, helvetica"
+size=-1>
+<DIV style="MARGIN-LEFT: 10px; MARGIN-RIGHT: 10px">
+
+
+<!-- main content -->
+
+<a href="http://clickthru.online.com/Click?q=d5-p-viQzL1as2qbobHCu4jNix1DPuR" >
+<img src="http://www.cnet.com/i/nl/au/sub_hot.gif"
+width=310 height=19 border=0></a><br>
+<img src="http://www.cnet.com/i/nl/rule.gif" width=410 height=8><br>
+<font face="arial, helvetica" size="-1">
+
+<table cellpadding=0 cellspacing=0 border=0>
+
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td align="center"><a href="http://clickthru.online.com/Click?q=ea-fjLyQhV4N635Q3AAwQ4lAUw-5WsR" >
+<img src="http://auctions.cnet.com/images/dispatch/cdrw.gif" border="0"></a></td>
+<td>&nbsp;&nbsp;</td>
+<td><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=ff-sVoVQms4eiRV6tlZxrhBm0WHthZR" >
+<b>LG 12x8x32 CD-RW / 8x DVD-ROM Combo Drive</b></a><br></td>
+</tr><tr><td colspan=3><font face="arial, helvetica" size="-1">
+&#149; Starting Bid <b>$79</b>&nbsp;&nbsp;<img src="http://auctions.cnet.com/images/dispatch/pricedrops.gif"></tr>
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td colspan=5><img src="http://auctions.cnet.com/images/gdot.gif" height=1 width=100%></td></tr>
+
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td align="center"><a href="http://clickthru.online.com/Click?q=14-5MRAIF-zaHxXyus8ZvQIzTKtR1dR" >
+<img src="http://auctions.cnet.com/images/dispatch/lexmark82.gif" border="0"></a></td>
+<td>&nbsp;&nbsp;</td>
+<td><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=29-Sg_rIjMAHEzze5sNyGEI9rCM8vcR" >
+<b>Lexmark Z-82 Printer/Copier/Flatbed All-in-One</b></a><br></td>
+</tr><tr><td colspan=3><font face="arial, helvetica" size="-1">
+&#149; Starting Bid <b>$1</b>&nbsp;&nbsp;<img src="http://auctions.cnet.com/images/icon_gold.gif"></tr>
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td colspan=5><img src="http://auctions.cnet.com/images/gdot.gif" height=1 width=100%></td></tr>
+
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td align="center"><a href="http://clickthru.online.com/Click?q=3e-F51nIizXe2Q9x53_7DQESNPe-iRR" >
+<img src="http://auctions.cnet.com/images/dispatch/dispatch_PC.gif" border="0"></a></td>
+<td>&nbsp;&nbsp;</td>
+<td><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=54-l6ovIZKAREXZ4-u0O9U4lR0vdknR" >
+<b>P4 Celeron 1.7GHz/256MB PC-133<br>nVidia 32MB/16x DVD-ROM/20GB PC</b></a><br></td>
+</tr><tr><td colspan=3><font face="arial, helvetica" size="-1">
+&#149; Starting Bid <b>$399</b>&nbsp;&nbsp;</tr>
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td colspan=5><img src="http://auctions.cnet.com/images/gdot.gif" height=1 width=100%></td></tr>
+
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td align="center"><a href="http://clickthru.online.com/Click?q=69-CY-iIoWgGq9O_WFMoAH4OpRzLxrR" >
+<img src="http://auctions.cnet.com/images/dispatch/joystick.gif" border="0"></a></td>
+<td>&nbsp;&nbsp;</td>
+<td><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=7e-XDXeInptAgo7FQwi6pURwMpopriR" >
+<b>Gravis Blackhawk Digital Programmable Joystick</b></a><br></td>
+</tr><tr><td colspan=3><font face="arial, helvetica" size="-1">
+&#149; Starting Bid <b>$6.50</b>&nbsp;&nbsp;</tr>
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td colspan=5><img src="http://auctions.cnet.com/images/gdot.gif" height=1 width=100%></td></tr>
+
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td align="center"><a href="http://clickthru.online.com/Click?q=93-V4PmQSdQT6N90HjcTYjvQ8Rgn5FR" >
+<img src="http://auctions.cnet.com/images/dispatch/flat_panel.jpg" border="0"></a></td>
+<td>&nbsp;&nbsp;</td>
+<td><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=a8-02XZQQZk8csjLBCDtZs6swzdON9R" >
+<b>Gateway 15-inch TFT LCD Flat Panel Color Monitor</b></a><br></td>
+</tr><tr><td colspan=3><font face="arial, helvetica" size="-1">
+&#149; Starting Bid <b>$319</b>&nbsp;&nbsp;<img src="http://auctions.cnet.com/images/dispatch/pricedrops.gif"></tr>
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td colspan=5><img src="http://auctions.cnet.com/images/gdot.gif" height=1 width=100%></td></tr>
+
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td align="center"><a href="http://clickthru.online.com/Click?q=bd-c0nUQ7pyt1NRJwjpAEVgnfqGsJuR" >
+<img src="http://auctions.cnet.com/images/dispatch/dispatch_PC.gif" border="0"></a></td>
+<td>&nbsp;&nbsp;</td>
+<td><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=d2-THo_QULwlGSXArU3Gl22vbAOyesR" >
+<b>PIII 733MHz/256MB PC-133/48X<br>64-Bit Sound/8MB 2X AGP/20GB PC</b></a><br></td>
+</tr><tr><td colspan=3><font face="arial, helvetica" size="-1">
+&#149; Starting Bid <b>$299</b>&nbsp;&nbsp;</tr>
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td colspan=5><img src="http://auctions.cnet.com/images/gdot.gif" height=1 width=100%></td></tr>
+
+</font>
+</table>
+
+<p>
+
+
+<a href="http://clickthru.online.com/Click?q=e7-2y-GQmVXfH1zRGhVqS8CMB0qvsZR" >
+<img src="http://www.cnet.com/i/nl/au/sub_end.gif" width=310 height=19 border=0></a><br>
+<img src="http://www.cnet.com/i/nl/rule.gif" width=410 height=8><br>
+
+<table cellpadding=0 cellspacing=0 border=0>
+
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td align="center"><a href="http://clickthru.online.com/Click?q=fc-WpHmQVwF4F4EaAZa9-0t3VVat9dR" >
+<img src="http://auctions.cnet.com/images/dispatch/monitor.gif" border="0"></a></td>
+<td>&nbsp;&nbsp;</td>
+<td><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=12-jaAKIl-Xienjcbl-pEvKY-qkCKsR" >
+<b>Displaysonic .28mm 17/20/21-inch Multisync Monitors</b></a><br></td>
+</tr><tr><td colspan=3 align=center><font face="arial, helvetica" size="-1">
+&#149; All Starting Bids at <b>$9</b>&nbsp;&nbsp;<img src="http://auctions.cnet.com/images/icon_gold.gif"></tr>
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+
+<tr><td colspan=3>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td><b><font face="arial, helvetica" size="-1">
+Ending Thursday:&nbsp;<br>
+Ending Friday:&nbsp;<br>
+Ending Monday:&nbsp;<br>
+Ending Tuesday:&nbsp;
+</td><td>
+<b><font face="arial, helvetica" size="-1">
+<a href ="http://auctions.cnet.com/cgi-bin/dp?880018">NEC .28mm 21-inch</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href ="http://auctions.cnet.com/cgi-bin/dp?881381">Sony .28mm 20-inch</a>&nbsp;<br>
+<a href ="http://auctions.cnet.com/cgi-bin/dp?879130">Sony/Sun .28mm 17-inch</a>&nbsp;<br>
+<a href ="http://auctions.cnet.com/cgi-bin/dp?880563">Sony/Sun 20-inch Multisync</a>&nbsp;<br>
+<a href ="http://auctions.cnet.com/cgi-bin/dp?881631">Sony/SGI 20-inch Trinitron</a>&nbsp;<br>
+</td></tr></table></td></tr>
+<tr><td colspan=5><img src="http://auctions.cnet.com/images/gdot.gif" height=1 width=100%></td></tr>
+
+
+</font>
+</table>
+<P>
+
+</P>
+
+<a href="http://clickthru.online.com/Click?q=27-z9ZmIqI2adPzMFFSkMRUVolYrBZR" >
+<img src="http://www.cnet.com/i/nl/au/sub_add.gif" width=310 height=19 border=0></a><br>
+<img src="http://www.cnet.com/i/nl/rule.gif" width=410 height=8><br>
+
+<table cellpadding=0 cellspacing=0 border=0>
+
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td align="center"><a href="http://clickthru.online.com/Click?q=3c-tK4RIcIslD0LNj1Y0VXXjhrHNHdR" >
+<img src="http://auctions.cnet.com/images/dispatch/canon656u.jpg" border="0"></a></td>
+<td>&nbsp;&nbsp;</td>
+<td><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=51-QgUWIjJPuvQTHDBJlh9GpMUHM3rR" >
+<b>Canon CanoScan N670U 48-Bit Flatbed Scanner</b></a><br></td>
+</tr><tr><td colspan=3><font face="arial, helvetica" size="-1">
+&#149; Starting Bid <b>$1</b>&nbsp;&nbsp;<img src="http://auctions.cnet.com/images/icon_gold.gif"></tr>
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td colspan=5><img src="http://auctions.cnet.com/images/gdot.gif" height=1 width=100%></td></tr>
+
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td align="center"><a href="http://clickthru.online.com/Click?q=66-kDH_IyWIFdXhGOmsPj9y-DzbW-iR" >
+<img src="http://auctions.cnet.com/images/dispatch/gateway.gif" border="0"></a></td>
+<td>&nbsp;&nbsp;</td>
+<td><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=7b-prT_IBZIOdzgoUxbDr4q1O7VpJlR" >
+<b>Gateway XP P4 1.8GHz/256MB PC-266 DDR<br>
+40GB 7200RPM/24x10x40 CDRW/16X DVD PC</b></a><br></td>
+</tr><tr><td colspan=3><font face="arial, helvetica" size="-1">
+&#149; Starting Bid <b>$629</b>&nbsp;&nbsp;<img src="http://auctions.cnet.com/images/dispatch/pricedrops.gif"></tr>
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td colspan=5><img src="http://auctions.cnet.com/images/gdot.gif" height=1 width=100%></td></tr>
+
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td align="center"><a href="http://clickthru.online.com/Click?q=90-wHZMQ_IdCT2V6rkVb8HYULuonX9R" >
+<img src="http://auctions.cnet.com/images/dispatch/hdd.gif" border="0"></a></td>
+<td>&nbsp;&nbsp;</td>
+<td><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=a5-DyaHQ7ZTGfVoQKLsIC1b2OB8OEuR" >
+<b>Maxtor 80GB ATA/100 5400RPM IDE Hard Drive</b></a><br></td>
+</tr><tr><td colspan=3><font face="arial, helvetica" size="-1">
+&#149; Starting Bid <b>$79</b>&nbsp;&nbsp;</tr>
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td colspan=5><img src="http://auctions.cnet.com/images/gdot.gif" height=1 width=100%></td></tr>
+
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td align="center"><a href="http://clickthru.online.com/Click?q=ba-m-45QXpKFQ7rXYfxhOmI_uIUEksR" >
+<img src="http://auctions.cnet.com/images/dispatch/memory.gif" border="0"></a></td>
+<td>&nbsp;&nbsp;</td>
+<td><font face="arial, helvetica" size="-1"><a href="http://clickthru.online.com/Click?q=cf-ebM-QLw2ht-MMUhJaylIO7r3fxZR" >
+<b>256MB PC-2100 Double Data Rate<br>(DDR) 184-Pin (32x64) RAM</b></a><br></td>
+</tr><tr><td colspan=3><font face="arial, helvetica" size="-1">
+&#149; Starting Bid <b>$60</b>&nbsp;&nbsp;<img src="http://auctions.cnet.com/images/dispatch/pricedrops.gif"></tr>
+<tr><td colspan=3><img src="http://auctions.cnet.com/b.gif" height="3"></td></tr>
+<tr><td colspan=5><img src="http://auctions.cnet.com/images/gdot.gif" height=1 width=100%></td></tr>
+
+</font>
+</table>
+
+<P></P>
+
+<font face="arial, helvetica" size="-1">
+<a name="h5"><img src="http://www.cnet.com/i/nl/au/sub_ques.gif"
+width=310 height=19></a><br>
+<img src="http://www.cnet.com/i/nl/rule.gif" width=410 height=8><br>
+
+Please send all questions, comments, and concerns regarding the CNET
+Auctions Newsletter to <a
+href="mailto:auctions@cnet.com">auctions@cnet.com</a> and include the
+Newsletter title in the subject line.
+<p>
+<b>NOTE:</b> All product information, including prices, features, and
+availability, is subject to change without notice.
+
+<P>
+<a name="h6">
+
+<!-- /main content -->
+
+</font></td></tr>
+
+
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0"
+border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1"
+height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif"
+width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1"
+height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif"
+width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1"
+height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0"
+border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif"
+width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12"
+height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1"
+height="10"><br>
+<a
+href="http://www.cnet.com/subscription/0-16335.html?EmailAddr=#EmailAddr
+#">
+<img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18"
+border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;<p>
+
+<A NOTRACK HREF="http://clickthru.online.com/Click?q=e5-9ZpOrvyBltH3wCoY0KdxohT89DVvh9RR">Unsubscribe</A>&nbsp;|
+&nbsp;<a href='http://nl.com.com/servlet/url_login?email='>Manage My Subscriptions</a>
+&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=fa-FmqNQhO2Y5wLUOytvDA4oSMpoLsR" >FAQ</A>&nbsp;|
+&nbsp;<a href="http://clickthru.online.com/Click?q=0f-RM2lIqjktmuKDz9sUb9HGRJ1bfZR" >Advertise</A><br></font>
+
+<!-- /subscription management-->
+
+</font><img src="http://www.cnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12"
+height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0"
+border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1"
+height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif"
+width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1"
+height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0"
+border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10"
+height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=25-inepIbdXN8k2vpOZTscR7jeQrFuR" ><img
+src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37"
+border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=3a-QAmgIrzD8mqLonx7JR1rqAFZcCsR" ><font
+color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=4f-Iar4IIU8lzXw42v8g-rrsLKFK0PR" ><font
+color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=64-UBOhIuLfXFMJIWsNGWF8w6YrPhnR" ><font color="#000000">Tech
+news</font></a> |
+<a href="http://clickthru.online.com/Click?q=79-rsQHIEBfv13jNywmFz_e0CvgparR" ><font
+color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=8e-Ve-cQCn70UaQIitPDuYWD0V_WyRR" ><font
+color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif"
+width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1"
+height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><tr:ad
+name="copyright"/></font></td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=a3-qXh6-kUFqYomGPmyr_Wcvl39gsRR">
+

@@ -1,0 +1,149 @@
+{
+  "name": "@stdlib/math/base/special/riemann-zeta",
+  "version": "0.0.0",
+  "description": "Riemann Zeta function.",
+  "license": "Apache-2.0 AND BSL-1.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "gypfile": true,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "scripts": "./scripts",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "number",
+    "zeta",
+    "riemann",
+    "euler",
+    "number theory",
+    "physics",
+    "special function",
+    "special",
+    "function",
+    "complex analysis"
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "zeta",
+      "alias": "zeta",
+      "pkg_desc": "evaluate the Riemann zeta function as a function of a real variable `s`",
+      "desc": "evaluates the Riemann zeta function as a function of a real variable `s`",
+      "short_desc": "Riemann zeta",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -100,
+              100
+            ]
+          },
+          "example_values": [
+            1.1,
+            -4,
+            70,
+            0.5,
+            -10,
+            5.6,
+            -4.29,
+            -3.14,
+            2.75,
+            1.76,
+            -0.5,
+            0,
+            0.15,
+            0.97,
+            -1.1,
+            20.85,
+            3.66,
+            -4.22,
+            5.56,
+            -6,
+            10.21,
+            20.05,
+            -50.25,
+            100.7
+          ]
+        }
+      ],
+      "returns": {
+        "desc": "Riemann zeta",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "zeta",
+        "riemann",
+        "euler",
+        "physics",
+        "complex analysis"
+      ],
+      "extra_keywords": []
+    }
+  }
+}

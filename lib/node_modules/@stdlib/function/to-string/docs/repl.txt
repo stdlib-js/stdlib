@@ -1,0 +1,41 @@
+
+{{alias}}( fcn )
+    Returns a string representing the source code of a provided function.
+
+    If called on built-in functions, functions created by `Function#bind()`, or
+    other non-JavaScript functions, the function returns a "native" function
+    string similar to the following:
+
+      "function foo() { [native code] }"
+
+    For intrinsic object methods and functions, `foo` is the initial name of the
+    function.
+
+    If called on a function created by the `Function` constructor, the function
+    returns the source code of a synthesized function declaration having the
+    name "anonymous" and using the provided parameters and function body.
+
+    Starting in ES2018, the ECMAScript specification requires that the returned
+    string contain the exact same source code as it was declared, including any
+    whitespace and/or comments. If the host is unable to access the source code,
+    the specification requires that the returned string be the native function
+    string.
+
+    Parameters
+    ----------
+    fcn: Function
+        Input function.
+
+    Returns
+    -------
+    out: string
+        String representing the function's source code.
+
+    Examples
+    --------
+    > {{alias}}( {{alias:@stdlib/math/base/special/erf}} )
+    <string>
+
+    See Also
+    --------
+

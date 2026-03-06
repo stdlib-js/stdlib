@@ -1,0 +1,40 @@
+
+{{alias}}( strides )
+    Returns the order of a multidimensional array based on a provided stride
+    array.
+
+    The function returns one of the following values:
+
+    - 1: the array is in row-major order.
+    - 2: the array is in column-major order.
+    - 3: the array is in both row-major and column-major order.
+    - 0: the array is in neither row-major nor column-major order.
+
+    Parameters
+    ----------
+    strides: ArrayLike
+        Stride array.
+
+    Returns
+    -------
+    order: integer
+        Order.
+
+    Examples
+    --------
+    > var s = [ 30, -10, 1 ];
+    > var out = {{alias}}( s )
+    1
+    > s = [ 1, -10, 30 ];
+    > out = {{alias}}( s )
+    2
+    > s = [ 10 ];
+    > out = {{alias}}( s )
+    3
+    > s = [];
+    > out = {{alias}}( s )
+    0
+
+    See Also
+    --------
+

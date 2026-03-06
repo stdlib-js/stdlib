@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: stdlib
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+
+type: software
+
+authors:
+  - name: The Stdlib Authors
+    url: https://github.com/stdlib-js/stdlib/graphs/contributors
+
+repository-code: https://github.com/stdlib-js/stdlib
+url: https://stdlib.io
+
+abstract: |
+  Standard library for JavaScript and Node.js.
+
+keywords:
+  - JavaScript
+  - Node.js
+  - TypeScript
+  - standard library
+  - scientific computing
+  - numerical computing
+  - statistical computing
+
+license: Apache-2.0 AND BSL-1.0
+
+date-released: 2016

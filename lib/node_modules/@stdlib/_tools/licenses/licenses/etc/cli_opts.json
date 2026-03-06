@@ -1,0 +1,19 @@
+{
+	"string": [
+		"dir",
+		"depth"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"no-dev"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

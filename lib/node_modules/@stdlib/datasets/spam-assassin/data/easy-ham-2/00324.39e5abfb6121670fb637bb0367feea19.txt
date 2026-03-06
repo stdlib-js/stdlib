@@ -1,0 +1,60 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:05:13 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0E8784414B
+	for <jm@localhost>; Mon, 12 Aug 2002 05:55:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:55:48 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79InAb21157 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 19:49:10 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA24179; Fri, 9 Aug 2002 19:45:49 +0100
+Received: from smtpout.xelector.com ([62.17.160.131]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA24148 for <ilug@linux.ie>; Fri,
+    9 Aug 2002 19:45:43 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.160.131] claimed to
+    be smtpout.xelector.com
+Received: from [172.18.80.234] (helo=xeljreilly) by smtpout.xelector.com
+    with smtp (Exim 3.34 #2) id 17dEYu-0000Wu-00; Fri, 09 Aug 2002 19:32:36
+    +0100
+Message-Id: <001801c23fd4$5dedfe10$ea5012ac@xelector.com>
+From: "John Reilly" <jr@inconspicuous.org>
+To: "Paul Linehan" <plinehan@yahoo.com>
+Cc: "Irish Linux Users' Group" <ilug@linux.ie>
+References: <20020809180733.63093.qmail@web13906.mail.yahoo.com>
+Subject: Re: [ILUG] ILUG newsgroup(s)?
+Date: Fri, 9 Aug 2002 19:41:26 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2919.6600
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2919.6600
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+> Is there any way that the mailing list can be 
+> turned into newsgroup?
+> 
+> Newsgroups are great for threading of discussions,
+> working offline and I feel that they work
+> much better for this sort of technical discussion
+> than a mailing list.
+
+I suppose its all down to personal preference, but I disagree strongly.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,61 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:48:59 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5F6FD44156
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:48:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:48:04 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S8UwZ16376 for
+    <zzzz-ilug@spamassassin.taint.org>; Wed, 28 Aug 2002 09:30:58 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA10572; Wed, 28 Aug 2002 09:30:39 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from escargot.esatclear.ie (escargot.esatclear.ie
+    [194.145.128.30]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id JAA10541
+    for <ilug@linux.ie>; Wed, 28 Aug 2002 09:30:30 +0100
+Received: from esatclear.ie (r-airlock096.esatclear.ie [194.165.171.96])
+    by escargot.esatclear.ie (8.9.3/8.9.3) with ESMTP id JAA11953 for
+    <ilug@linux.ie>; Wed, 28 Aug 2002 09:30:25 +0100
+Message-Id: <3D6C8A7A.6090302@esatclear.ie>
+Date: Wed, 28 Aug 2002 09:31:55 +0100
+From: Paul Kelly <longword@esatclear.ie>
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US; rv:1.1)
+    Gecko/20020824
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] Using Normal IDE Device with a Dell Latitude CPx laptop
+References: <3D6BEFBB.2030103@Sun.COM> <3D6BFF48.8050306@cunniffe.net>
+    <20020828081121.GI1696@jinny.ie>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+John P. Looney wrote:
+>>There is absolutely no way to use a conventional 3.5" drive with a
+>>laptop directly.
+>  Ah, they told me that about my A1200.
+> 
+>  Worked a charm. Until I dropped the disk one day onto concrete.
+
+Go on. Tell them how long the /first/ one lasted.
+
+I vote external firewire if the laptop has the ports for it.
+
+Paul.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

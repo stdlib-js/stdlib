@@ -1,0 +1,90 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug 23 16:55:11 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F2C8744155
+	for <jm@localhost>; Fri, 23 Aug 2002 11:55:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 16:55:05 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7NFu2Z30493 for <jm-razor@jmason.org>; Fri, 23 Aug 2002 16:56:03 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17iGdS-0001nO-00; Fri,
+    23 Aug 2002 08:46:06 -0700
+Received: from 12.ws.pa.net ([206.228.70.126] helo=sparrow.stearns.org) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17iGcr-0000ui-00 for <razor-users@lists.sourceforge.net>; Fri,
+    23 Aug 2002 08:45:29 -0700
+Received: from localhost (localhost [127.0.0.1]) by sparrow.stearns.org
+    (8.11.6/8.11.6) with ESMTP id g7NFiiv20819; Fri, 23 Aug 2002 11:44:50
+    -0400
+From: William Stearns <wstearns@pobox.com>
+X-X-Sender: wstearns@sparrow
+Reply-To: William Stearns <wstearns@pobox.com>
+To: Fox <lds0062@cdc.net>
+Cc: ML-razor-users <razor-users@example.sourceforge.net>,
+	William Stearns <wstearns@pobox.com>
+Subject: Re: [Razor-users] Razor 2.14 - the day after
+In-Reply-To: <0dee01c24aac$4e4fd400$7c640f0a@mfc.corp.mckee.com>
+Message-Id: <Pine.LNX.4.44.0208231140070.5240-100000@sparrow>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 23 Aug 2002 11:44:44 -0400 (EDT)
+Date: Fri, 23 Aug 2002 11:44:44 -0400 (EDT)
+
+Good day, Fox,
+
+On Fri, 23 Aug 2002, Fox wrote:
+
+> I recently installed Razor v2.14 and started using it.  I am finding it
+> necessary to whitelist a _lot_ of mailing lists.  Some, such as yahoogroups,
+> I can't whitelist because the from: address is the person making the post,
+> so I will have to whitelist on another field when I can modify my code to do
+> so.  I wonder if someone is not being careful about their submissions, or if
+> these are bad mailing lists that don't drop bad mail addresses that become
+> trollboxes in time.
+
+	I've found excellent luck with the X-Been____There header (____'s 
+added to to avoid tripping procmail rules):
+
+____X-Been____There: news@jabber.org
+
+	Cheers,
+	- Bill
+
+---------------------------------------------------------------------------
+	"Nynex.  Iroquois for Moron"
+	-- A well-known Linux kernel hacker.
+--------------------------------------------------------------------------
+William Stearns (wstearns@pobox.com).  Mason, Buildkernel, named2hosts, 
+and ipfwadm2ipchains are at:                        http://www.stearns.org
+--------------------------------------------------------------------------
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

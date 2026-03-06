@@ -1,0 +1,43 @@
+
+{{alias}}( iterator[, clbk[, thisArg]] )
+    Returns an iterator which skips the last value of a provided iterator.
+
+    If an environment supports Symbol.iterator and a provided iterator is
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    clbk: Function (optional)
+        Callback to invoke with the skipped value.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it1 = {{alias:@stdlib/array/to-iterator}}( [ 1, 2 ] );
+    > var it2 = {{alias}}( it1 );
+    > var v = it2.next().value
+    1
+    > var bool = it2.next().done
+    true
+
+    See Also
+    --------
+

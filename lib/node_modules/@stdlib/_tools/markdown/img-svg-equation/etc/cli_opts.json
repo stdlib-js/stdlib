@@ -1,0 +1,22 @@
+{
+	"string": [
+		"class",
+		"align",
+		"raw",
+		"label",
+		"src",
+		"alt"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

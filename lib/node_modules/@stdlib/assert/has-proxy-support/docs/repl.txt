@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests whether an environment has native `Proxy` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has native `Proxy` support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

@@ -1,0 +1,111 @@
+From fork-admin@xent.com  Thu Jul 25 11:09:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BCD3E440D9
+	for <jm@localhost>; Thu, 25 Jul 2002 06:09:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:09:13 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6P14Z419511 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 02:04:36 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6219E29415B; Wed, 24 Jul 2002 18:03:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id 68ACE294155 for <fork@xent.com>;
+    Wed, 24 Jul 2002 18:02:44 -0700 (PDT)
+Received: (qmail 48512 invoked by uid 19621); 25 Jul 2002 01:02:38 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 25 Jul 2002 01:02:38 -0000
+Subject: Re: Asteroids anyone ?
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <2785.192.216.194.113.1027554367.squirrel@webmail.magnesium.net>
+References: <001301c23359$d8208130$0100a8c0@PETER>
+    <m2n0sgojke.fsf@maya.dyndns.org>
+    <2785.192.216.194.113.1027554367.squirrel@webmail.magnesium.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1027559672.2056.38.camel@avalon>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 24 Jul 2002 18:14:31 -0700
+
+On Wed, 2002-07-24 at 16:46, bitbitch@magnesium.net wrote:
+> >
+> > Hit or miss, Groundhog Day 2019 is going to be one heck of a show. Book
+> > early, avoid the rush.
+> 
+> Hey, meybee by then, Bush's grand plan for a missle defense system will
+> actually pan out and -work- ...
+> I'm not holding my breath, but i'm not going to panic for something thats
+> a little under 17 years away, either.
+
+
+I don't think a ballistic missile defense system will be much help
+against a rock a couple thousand kilometers in diameter.  That's WAY
+outside the design spec for any such system.  Particularly when
+ballistic intercept designs usually don't have any type of warhead
+associated with them, either being kinetic or directed energy weapons.
+
+Contrary to popular belief, ballistic missile defense isn't a hard
+problem (ignoring whether or not it is useful).  The only real challenge
+is materials science, as it really pushes the envelope of materials
+performance requirements to places they've never been; there has been
+some technology crossover with some of the new materials and processes
+they've had to come up with.  The actual discrimination algorithms,
+while way more advanced than anything you'll see in the private sector
+(and classified, to keep it that way), are usually run on a crusty old
+MIPS R3k embedded processor or similar, with a low-to-mid range DSP to
+help out. It is not computationally intensive by any means.
+
+I used to be tangentially involved in various ballistic missile
+intercept weapon programs many years ago and am pretty familiar with the
+technologies that go into them.  Most of the arguments against it from a
+technological standpoint are ignorant bullshit, and have lead me to
+believe that hardly anyone understands the technical parameters of
+ballistic missile intercept.  And the arguments that are made without
+reference to the capability of the technology are neither particularly
+convincing nor conclusive.
+
+In summary:
+
+1) Ballistic missile intercept technology is useless on a big rock.  You
+are much better off using heavy-lift space technology to deliver a big
+nuke (or small nuke, depending on your plan). 
+
+2) State-of-the-art ballistic missile intercept technology is far more
+competent than most people imagine it is, and has discrimination
+capabilities that exceed most popular belief.  It better be -- they've
+had twenty years to work on it.
+
+3) I've never heard a really convincing argument against deploying
+ballistic missile intercept technology, particularly considering most of
+the R&D investment has already been made. I don't really care about it
+one way or the other, but I also don't see why other people have fits
+over it either.
+
+Cheers,
+
+-James Rogers
+ jamesr@best.com
+
+
+http://xent.com/mailman/listinfo/fork
+
+

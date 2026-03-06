@@ -1,0 +1,121 @@
+From exmh-workers-admin@redhat.com  Wed Sep 11 21:29:14 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 93EE616F03
+	for <jm@localhost>; Wed, 11 Sep 2002 21:29:13 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 21:29:13 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8BJrYC29444 for
+    <jm-exmh@jmason.org>; Wed, 11 Sep 2002 20:53:34 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 99E4C3F8E1; Wed, 11 Sep 2002
+    15:53:46 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id F27CD3F1F9
+    for <exmh-workers@listman.redhat.com>; Wed, 11 Sep 2002 15:49:29 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8BJnOp25735 for exmh-workers@listman.redhat.com; Wed, 11 Sep 2002
+    15:49:24 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8BJnOk25731 for
+    <exmh-workers@redhat.com>; Wed, 11 Sep 2002 15:49:24 -0400
+Received: from mail2.lsil.com (mail2.lsil.com [147.145.40.22]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8BJWsw31928 for
+    <exmh-workers@redhat.com>; Wed, 11 Sep 2002 15:32:54 -0400
+Received: from mhbs.lsil.com (mhbs [147.145.31.100]) by mail2.lsil.com
+    (8.9.3+Sun/8.9.1) with ESMTP id MAA12062 for <exmh-workers@redhat.com>;
+    Wed, 11 Sep 2002 12:49:10 -0700 (PDT)
+From: kchrist@lsil.com
+Received: from inca.co.lsil.com by mhbs.lsil.com with ESMTP;
+    Wed, 11 Sep 2002 12:48:53 -0700
+Received: from flytrap.co.lsil.com (flytrap.co.lsil.com [172.20.3.234]) by
+    inca.co.lsil.com (8.9.3/8.9.3) with ESMTP id NAA16659; Wed, 11 Sep 2002
+    13:48:52 -0600 (MDT)
+Received: from bhuta.co.lsil.com (bhuta [172.20.12.135]) by
+    flytrap.co.lsil.com (8.9.3+Sun/8.9.1) with ESMTP id NAA20468;
+    Wed, 11 Sep 2002 13:48:50 -0600 (MDT)
+Received: from bhuta (localhost [127.0.0.1]) by bhuta.co.lsil.com
+    (8.10.2+Sun/8.9.1) with ESMTP id g8BJmed21224; Wed, 11 Sep 2002 13:48:40
+    -0600 (MDT)
+X-Mailer: exmh version 2.5 07/09/2001 with nmh-1.0.4+dev
+To: Hacksaw <hacksaw@hacksaw.org>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: exmh bug?
+Reply-To: Kevin.Christian@lsil.com
+In-Reply-To: Your message of
+    "Wed, 11 Sep 2002 12:17:33 PDT."
+    <200209111917.PAA02912@blackcomb.panasas.com>
+References: <200209111917.PAA02912@blackcomb.panasas.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <21222.1031773720@bhuta>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 11 Sep 2002 13:48:40 -0600
+
+
+The way to debug something like this is to turn on the log (Preferences 
+-> Hacking Support -> Debug log enabled) and track the gpg commands 
+being issued and the responses.
+
+FWIW, using exmh 2.5 and gpg 1.0.7 I do not have problems sending 
+encrypted messages to myself. When I select the message, an xterm 
+window pops up asking for the passphrase. I don't recall exmh ever 
+asking me for the passphrase from the tty that started exmh nor from a 
+dialog box. (But then again, I'm not a heavy gpg user).
+
+Kevin
+
+In message <200209111917.PAA02912@blackcomb.panasas.com>, Brent Welch writes:
+> Hmm - I'm cc'ing the exmh-workers list, because I really don't know
+> much about the various PGP interfaces.  I think there has been some
+> talk about "issues" with the latest version of gpg.
+> 
+> >>>Hacksaw said:
+>  > version 2.5 08/15/2002
+>  > Linux habitrail.home.fools-errant.com 2.4.7-10smp #1 SMP Thu Sep 6 17:09:31
+>  > EDT 2001 i686 unknown
+>  > Tk 8.3 Tcl 8.3
+>  > 
+>  > It's not clear to me this is a bug with exmh per se, but it's something 
+>  > that manifests through exmh, so I figured asking you might help me track
+>  > it down.
+>  > 
+>  > When I receive a gpg encrypted message, and it asks me for a passphrase, 
+>  > it first tries to ask me via the tty under which exmh is running. It 
+>  > tells me my passphrase is incorrect every time, at which point exmh 
+>  > offers me the line in the message about decrypting. I click the line 
+>  > and it offers me the dialog box, and tells me the passphrase is correct,
+>  > and shows me the decrypted message.
+>  > 
+>  > Any ideas on that?
+
+
+
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

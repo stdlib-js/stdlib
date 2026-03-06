@@ -1,0 +1,106 @@
+
+{{alias}}( [μ, β] )
+    Returns a Gumbel distribution object.
+
+    Parameters
+    ----------
+    μ: number (optional)
+        Location parameter. Default: `0.0`.
+
+    β: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    gumbel: Object
+        Distribution instance.
+
+    gumbel.mu: number
+        Location parameter.
+
+    gumbel.beta: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    gumbel.entropy: number
+        Read-only property which returns the differential entropy.
+
+    gumbel.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    gumbel.mean: number
+        Read-only property which returns the expected value.
+
+    gumbel.median: number
+        Read-only property which returns the median.
+
+    gumbel.mode: number
+        Read-only property which returns the mode.
+
+    gumbel.skewness: number
+        Read-only property which returns the skewness.
+
+    gumbel.stdev: number
+        Read-only property which returns the standard deviation.
+
+    gumbel.variance: number
+        Read-only property which returns the variance.
+
+    gumbel.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    gumbel.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    gumbel.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    gumbel.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    gumbel.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    gumbel.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var gumbel = {{alias}}( -2.0, 3.0 );
+    > gumbel.mu
+    -2.0
+    > gumbel.beta
+    3.0
+    > gumbel.entropy
+    ~2.676
+    > gumbel.kurtosis
+    2.4
+    > gumbel.mean
+    ~-0.268
+    > gumbel.median
+    ~-0.9
+    > gumbel.mode
+    -2.0
+    > gumbel.skewness
+    ~1.14
+    > gumbel.stdev
+    ~3.848
+    > gumbel.variance
+    ~14.804
+    > gumbel.cdf( 0.8 )
+    ~0.675
+    > gumbel.logcdf( 0.8 )
+    ~-0.393
+    > gumbel.logpdf( 1.0 )
+    ~-2.466
+    > gumbel.mgf( 0.2 )
+    ~1.487
+    > gumbel.pdf( 1.0 )
+    ~0.085
+    > gumbel.quantile( 0.8 )
+    ~2.5
+
+    See Also
+    --------
+

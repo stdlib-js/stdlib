@@ -1,0 +1,52 @@
+
+{{alias}}( n, x )
+    Evaluates a Lucas polynomial.
+
+    Parameters
+    ----------
+    n: integer
+        Lucas polynomial to evaluate.
+
+    x: number
+        Value at which to evaluate the Lucas polynomial.
+
+    Returns
+    -------
+    out: number
+        Evaluated Lucas polynomial.
+
+    Examples
+    --------
+    // 2^5 + 5*2^3 + 5*2
+    > var v = {{alias}}( 5, 2.0 )
+    82.0
+
+
+{{alias}}.factory( n )
+    Returns a function for evaluating a Lucas polynomial.
+
+    Parameters
+    ----------
+    n: integer
+        Lucas polynomial to evaluate.
+
+    Returns
+    -------
+    fcn: Function
+        Function for evaluating a Lucas polynomial.
+
+    Examples
+    --------
+    > var polyval = {{alias}}.factory( 5 );
+
+    // 1^5 + 5*1^2 + 5
+    > var v = polyval( 1.0 )
+    11.0
+
+    // 2^5 + 5*2^3 + 5*2
+    > v = polyval( 2.0 )
+    82.0
+
+    See Also
+    --------
+

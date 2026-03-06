@@ -1,0 +1,81 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Fri Sep  6 19:36:57 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6323416F18
+	for <jm@localhost>; Fri,  6 Sep 2002 19:36:50 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 19:36:50 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g86HvfC18459 for <jm@jmason.org>; Fri, 6 Sep 2002 18:57:41 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17nNLs-0000OB-00; Fri,
+    06 Sep 2002 10:57:04 -0700
+Received: from tisch.mail.mindspring.net ([207.69.200.157]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17nNLK-0007W1-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Fri, 06 Sep 2002 10:56:30 -0700
+Received: from user-1120ft5.dsl.mindspring.com ([66.32.63.165]
+    helo=belphegore.hughes-family.org) by tisch.mail.mindspring.net with esmtp
+    (Exim 3.33 #1) id 17nNLI-00029N-00 for
+    spamassassin-devel@lists.sourceforge.net; Fri, 06 Sep 2002 13:56:28 -0400
+Received: by belphegore.hughes-family.org (Postfix, from userid 76) id
+    D985EA4C92; Fri,  6 Sep 2002 10:56:23 -0700 (PDT)
+From: bugzilla-daemon@hughes-family.org
+To: spamassassin-devel@example.sourceforge.net
+X-Bugzilla-Reason: AssignedTo
+Message-Id: <20020906175623.D985EA4C92@belphegore.hughes-family.org>
+Subject: [SAdev] [Bug 840] spam_level_char option change/removal
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Fri,  6 Sep 2002 10:56:23 -0700 (PDT)
+Date: Fri,  6 Sep 2002 10:56:23 -0700 (PDT)
+
+http://www.hughes-family.org/bugzilla/show_bug.cgi?id=840
+
+
+
+
+
+------- Additional Comments From felicity@kluge.net  2002-09-06 10:56 -------
+Subject: Re: [SAdev]  spam_level_char option change/removal
+
+On Fri, Sep 06, 2002 at 10:09:19AM -0700, bugzilla-daemon@hughes-family.org wrote:
+> another (or would look terrible).  Let's just use a letter.  If
+> aesthetics are your concern, I think an "x" will look just fine.
+
+"x" is fine, but let's not take out the config option.  if people really
+want to have it be something else, we shouldn't hinder them.
+
+
+
+
+
+------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

@@ -1,0 +1,70 @@
+From sentto-2242572-56029-1034088748-zzzz=spamassassin.taint.org@returns.groups.yahoo.com  Tue Oct  8 17:02:22 2002
+Return-Path: <sentto-2242572-56029-1034088748-zzzz=spamassassin.taint.org@returns.groups.yahoo.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id BC63716F1A
+	for <zzzz@localhost>; Tue,  8 Oct 2002 17:01:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 17:01:51 +0100 (IST)
+Received: from n19.grp.scd.yahoo.com (n19.grp.scd.yahoo.com
+    [66.218.66.74]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g98ExDK20727 for <zzzz@spamassassin.taint.org>; Tue, 8 Oct 2002 15:59:13 +0100
+X-Egroups-Return: sentto-2242572-56029-1034088748-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.192] by n19.grp.scd.yahoo.com with NNFMP;
+    08 Oct 2002 14:52:30 -0000
+X-Sender: timc@2ubh.com
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_2_2_0); 8 Oct 2002 14:52:28 -0000
+Received: (qmail 8966 invoked from network); 8 Oct 2002 14:52:14 -0000
+Received: from unknown (66.218.66.218) by m10.grp.scd.yahoo.com with QMQP;
+    8 Oct 2002 14:52:14 -0000
+Received: from unknown (HELO tungsten.btinternet.com) (194.73.73.81) by
+    mta3.grp.scd.yahoo.com with SMTP; 8 Oct 2002 14:52:14 -0000
+Received: from host217-35-11-51.in-addr.btopenworld.com ([217.35.11.51])
+    by tungsten.btinternet.com with esmtp (Exim 3.22 #8) id 17yviW-0003Cq-00
+    for forteana@yahoogroups.com; Tue, 08 Oct 2002 15:52:12 +0100
+X-Mailer: Microsoft Outlook Express Macintosh Edition - 4.5 (0410)
+To: zzzzteana <zzzzteana@yahoogroups.com>
+X-Priority: 3
+Message-Id: <E17yviW-0003Cq-00@tungsten.btinternet.com>
+From: "Tim Chapman" <timc@2ubh.com>
+X-Yahoo-Profile: tim2ubh
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Tue, 08 Oct 2002 15:51:16 +0100
+Subject: [zzzzteana] A Billy for the septics
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+http://news.bbc.co.uk/1/hi/uk/2310209.stm
+
+Tuesday, 8 October, 2002, 13:53 GMT 14:53 UK
+Quiz: Know your Cockney Rhyming Slang?
+
+Cockney Rhyming Slang is alive and well with new terms being invented all
+the time, according to the new Oxford Dictionary of Rhyming Slang being
+published this week.
+But do you know a Raquel Welch (belch) from a Billie Piper (windscreen
+wiper)?
+...
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+Plan to Sell a Home?
+http://us.click.yahoo.com/J2SnNA/y.lEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

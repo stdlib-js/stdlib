@@ -1,0 +1,70 @@
+From razor-users-admin@lists.sourceforge.net  Thu Oct  3 12:22:15 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5A22216F18
+	for <jm@localhost>; Thu,  3 Oct 2002 12:22:12 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 12:22:12 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g92N2oK00984 for <jm-razor@jmason.org>; Thu, 3 Oct 2002 00:02:50 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17wsUx-0002Z2-00; Wed,
+    02 Oct 2002 16:01:43 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17wsRZ-000679-00 for <razor-users@lists.sourceforge.net>; Wed,
+    02 Oct 2002 15:58:13 -0700
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Message-Id: <D79A56AD131896448D0860DEE07CBE1F3BADEA@med-core07.med.wayne.edu>
+X-MS-Has-Attach:
+X-MS-Tnef-Correlator:
+Thread-Topic: Fire.cloudmark.com is having issues
+Thread-Index: AcJqYq67m17NyZhYQJ+UtliQ471QSQABBryQ
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: <razor-users@example.sourceforge.net>
+Subject: [Razor-users] Fire.cloudmark.com is having issues
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Wed, 2 Oct 2002 18:58:06 -0400
+Date: Wed, 2 Oct 2002 18:58:06 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g92N2oK00984
+
+I noticed a drop in checks, and did some tests.  If I move truth up in
+my catalog list, a check comes back postive, but if I move fire up in
+the list, then I don't get the positive check back.  It's almost like
+it's not syncing up with Hubris which is the one my reports are getting
+sent to.
+
+-=Bobby
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

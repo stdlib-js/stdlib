@@ -1,0 +1,84 @@
+
+{{alias}}( x, n, p )
+    Evaluates the natural logarithm of the probability mass function (PMF) for a
+    binomial distribution with number of trials `n` and success probability `p`
+    at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a number of trials `n` which is not a nonnegative integer, the
+    function returns `NaN`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    n: integer
+        Number of trials.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Evaluated logPMF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.0, 20, 0.2 )
+    ~-1.583
+    > y = {{alias}}( 21.0, 20, 0.2 )
+    -Infinity
+    > y = {{alias}}( 5.0, 10, 0.4 )
+    ~-1.606
+    > y = {{alias}}( 0.0, 10, 0.4 )
+    ~-5.108
+    > y = {{alias}}( NaN, 20, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, 20, NaN )
+    NaN
+    > y = {{alias}}( 2.0, 1.5, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, -2.0, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, 20, -1.0 )
+    NaN
+    > y = {{alias}}( 2.0, 20, 1.5 )
+    NaN
+
+
+{{alias}}.factory( n, p )
+    Returns a function for evaluating the natural logarithm of the probability
+    mass function (PMF) of a binomial distribution with number of trials `n` and
+    success probability `p`.
+
+    Parameters
+    ----------
+    n: integer
+        Number of trials.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    logpmf: Function
+        Logarithm of probability mass function (PMF).
+
+    Examples
+    --------
+    > var mylogpmf = {{alias}}.factory( 10, 0.5 );
+    > var y = mylogpmf( 3.0 )
+    ~-2.144
+    > y = mylogpmf( 5.0 )
+    ~-1.402
+
+    See Also
+    --------
+

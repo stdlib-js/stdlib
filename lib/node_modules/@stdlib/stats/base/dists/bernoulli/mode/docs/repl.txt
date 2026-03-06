@@ -1,0 +1,29 @@
+
+{{alias}}( p )
+    Returns the mode of a Bernoulli distribution with success probability `p`.
+
+    For `p = 0.5`, the mode is either `0` or `1`. This implementation returns
+    `0` for `p = 0.5`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: integer
+        Mode.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    0
+    > v = {{alias}}( 0.8 )
+    1
+
+    See Also
+    --------
+

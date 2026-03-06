@@ -1,0 +1,72 @@
+From fork-admin@xent.com  Thu Sep  5 11:31:23 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3BC4F16F82
+	for <jm@localhost>; Thu,  5 Sep 2002 11:28:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 11:28:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g854d1Z04493 for <jm@jmason.org>;
+    Thu, 5 Sep 2002 05:39:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1EC3E294241; Wed,  4 Sep 2002 21:36:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 8130C2940AA for <FoRK@xent.com>; Wed,
+    4 Sep 2002 21:35:46 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id A49DC3EDF7;
+    Thu,  5 Sep 2002 00:41:24 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id A33413EDAD; Thu,  5 Sep 2002 00:41:24 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: "Mr. FoRK" <fork_list@hotmail.com>
+Cc: FoRK <FoRK@xent.com>
+Subject: Re: CD player UI for toddlers
+In-Reply-To: <DAV16XoivCNoMKrwDVT0000bc1e@hotmail.com>
+Message-Id: <Pine.BSO.4.44.0209050036160.9755-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 5 Sep 2002 00:41:24 -0400 (EDT)
+
+On Wed, 4 Sep 2002, Mr. FoRK wrote:
+--]It'd be an MP3 player with solid state storage... instant on.
+
+
+Getting new media on is a bit out of the reach of the kindala. With a CD
+solution you hand em a disc and in it goes.
+
+Tradeoffs abound.
+
+Heather got a CD player when she was 5. Even though it was a crappy
+handmedown it worked great other than the batterys poping out..bad bad ui
+there. Her next one was a store bought.  Its an all Audio player, no mp3
+decoders for her yet. I wanted to do the bottom line Volt but momala put
+the kabash on anything costing over 30 bucks. heck I had to scrounge ebay
+to get her a palm m100 for about 25 bucks.
+
+The only hitch is new music. Upshot is we spend time going over usenet
+listing togther:)-
+
+Its a happy family.
+
+Now for Benjamin, yea id love to have something like the amazingly cool
+Fisher Price My First (cd, casset, vasectomy, dirtybomb) products. Perhaps
+the My First Cd might work...time to let ebay do the walking.
+
+
+
+

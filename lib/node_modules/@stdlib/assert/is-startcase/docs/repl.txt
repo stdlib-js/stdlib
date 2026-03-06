@@ -1,0 +1,23 @@
+
+{{alias}}( value )
+    Tests if a value is a startcase string.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if value is a startcase string.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'Beep Boop' )
+    true
+    > bool = {{alias}}( 'Beep and Boop' )
+    false
+
+    See Also
+    --------

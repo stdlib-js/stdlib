@@ -1,0 +1,64 @@
+
+{{alias}}( iterator, predicate[, thisArg] )
+    Returns an iterator which returns unique values according to a predicate
+    function.
+
+    A returned iterator internally buffers unique values and, thus, has O(N)
+    memory requirements.
+
+    A predicate function is invoked for each iterated value against each value
+    in an internal buffer consisting of previously identified unique values.
+    Thus, as the number of unique values grows, so, too, does the number of
+    predicate function invocations per iterated value.
+
+    An iterated value is considered "unique" if the predicate function returns
+    truthy values for all comparisons of the iterated value with each value in
+    the internal buffer.
+
+    If an environment supports Symbol.iterator and a provided iterator is
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    predicate: Function
+        A binary function with parameters `a` and `b` corresponding to iterated
+        values. If the values are the same, the function should return `false`
+        (i.e., non-unique); otherwise, if the values are distinct, the function
+        should return `true` (i.e., unique).
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it1 = {{alias:@stdlib/array/to-iterator}}( [ 1, 2, 1, 2, 4 ] );
+    > function f( a, b ) { return ( a !== b ); };
+    > var it2 = {{alias}}( it1, f );
+    > var v = it2.next().value
+    1
+    > v = it2.next().value
+    2
+    > v = it2.next().value
+    4
+    > var bool = it2.next().done
+    true
+
+    See Also
+    --------
+

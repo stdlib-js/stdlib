@@ -1,0 +1,21 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Fri Sep  6 20:21:22 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 15:21:22 -0400
+Subject: [Spambayes] Deployment
+In-Reply-To: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCGEIPBCAB.tim.one@comcast.net>
+
+[Guido]
+>   ...
+>   I don't know how big that pickle would be, maybe loading it each time
+>   is fine.  Or maybe marshalling.)
+
+My tests train on about 7,000 msgs, and a binary pickle of the database is
+approaching 10 million bytes.  I haven't done anything to try to reduce its
+size, and know of some specific problem areas (for example, doing character
+5-grams of "long words" containing high-bit characters generates a lot of
+database entries, and I suspect they're approximately worthless).  OTOH,
+adding in more headers will increase the size.  So let's call it 10 meg
+<wink>.
+

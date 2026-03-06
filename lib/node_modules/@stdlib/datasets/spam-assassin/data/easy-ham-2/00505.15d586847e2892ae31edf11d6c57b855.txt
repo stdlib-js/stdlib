@@ -1,0 +1,69 @@
+From iiu-admin@taint.org  Wed Aug 21 16:23:54 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6443143C34
+	for <jm@localhost>; Wed, 21 Aug 2002 11:23:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 16:23:54 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LFNJZ31137;
+    Wed, 21 Aug 2002 16:23:19 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LFMrZ31116 for
+    <iiu@taint.org>; Wed, 21 Aug 2002 16:22:53 +0100
+Received: from dcu.ie (136.206.21.115) by hawk.dcu.ie (6.0.040) id
+    3D6203D30000B0E7 for iiu@taint.org; Wed, 21 Aug 2002 16:22:59 +0100
+Message-Id: <3D63B02D.8010205@dcu.ie>
+From: Bernard Michael Tyers <bernard.tyers@dcu.ie>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.0.0)
+    Gecko/20020530
+X-Accept-Language: ga, en-ie, eu, en-us, de-at, as
+MIME-Version: 1.0
+To: iiu@taint.org
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [IIU] IIU: Recommendations on phone / pda+phone + European GPRS coverage
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: iiu@taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+Date: Wed, 21 Aug 2002 16:22:21 +0100
+
+hi all,
+
+thanks for the good information on the choice of phones, pda choices.
+
+as an aside i also saw that 3com have released a usb blootooth dongle. 
+that in a lptp combined with a 6310i with the blootooth (with HSCSD) 
+might be a nice thing to have (if they work!)
+i'm doin up a little doc, so if anyone is interested i'll post my findings.
+
+cheers!
+
+mit bestem,
+
+Bernardino
+-- 
+rgrds,
+Bernard
+-- 
+Bernard Tyers * National Centre for Sensor Research * P:353-1-700-5273 *
+E: bernard.tyers@dcu.ie * W: www.physics.dcu.ie/~bty * L:N117
+
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+

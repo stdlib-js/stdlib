@@ -1,0 +1,71 @@
+From ilug-admin@linux.ie  Mon Jul 22 19:50:13 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 541F2440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:50:12 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:50:12 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQX403500 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 18:26:33 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id LAA23008 for <jm-ilug@jmason.org>;
+    Sat, 20 Jul 2002 11:11:45 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA28988; Sat, 20 Jul 2002 11:11:19 +0100
+Received: from matrix.netsoc.tcd.ie (netsoc.tcd.ie [134.226.83.50]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA28950 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 11:11:12 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host netsoc.tcd.ie
+    [134.226.83.50] claimed to be matrix.netsoc.tcd.ie
+Received: by matrix.netsoc.tcd.ie (Postfix, from userid 1003) id
+    EB5AA3445A; Sat, 20 Jul 2002 11:11:11 +0100 (IST)
+From: Aidan Kehoe <kehoea@parhasard.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15673.14143.879609.371088@gargle.gargle.HOWL>
+Date: Sat, 20 Jul 2002 11:11:11 +0100
+To: ILUG Mailing List <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+In-Reply-To: <1027108120.3d386d180910a@webmail.gameshrine.com>
+References: <1027108120.3d386d180910a@webmail.gameshrine.com>
+Reply-To: Aidan Kehoe <kehoea@parhasard.net>
+X-Echelon-Distraction: no|d Compsec 97 ISG Glock 26 Ronco MF
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+ Quoting Ronan Waide <waider@waider.ie>:
+ 
+ > Sure, but soft links would do the same. To be honest, I'm trying to
+ > think of a useful use of hard links right now, and I'm a little
+ > stumped. There's gotta be some benefit that I'm missing that's
+ > immediately obvious to everyone.
+
+No there doesn't :-) . The Bell labs Unix people implemented hard
+links, whereas Bill Joy and co. at Berkeley implemented soft links,
+five years later, mainly to get around not being able to do
+cross-device hard linking, as I understand it. Soft links are fairly
+classic Berkeley hackery (cf. gethostbyname, h_errno, and the
+resultant problems implementing mt-safe interfaces); they do what they
+were intended for, but break fairly easily, in this case when the
+target file was deleted. For a better design for similar ideas, see
+the MacOS.
+
+-- 
+I'm not a pheasant plucker / I'm a pheasant plucker's son.
+I'm just a'plucking pheasants / 'Til the pheasant plucker comes.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

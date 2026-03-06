@@ -1,0 +1,23 @@
+
+{{alias}}( iterator )
+    Computes the range of all iterated values.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    Returns
+    -------
+    out: number|null
+        Range.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 1.0, -2.0, 3.0, -4.0 ] );
+    > var v = {{alias}}( arr )
+    7.0
+
+    See Also
+    --------
+

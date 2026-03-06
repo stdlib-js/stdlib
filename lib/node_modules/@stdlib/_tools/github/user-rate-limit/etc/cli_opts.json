@@ -1,0 +1,22 @@
+{
+	"string": [
+		"token",
+		"useragent"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"pretty"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"useragent": [
+			"ua"
+		]
+	}
+}

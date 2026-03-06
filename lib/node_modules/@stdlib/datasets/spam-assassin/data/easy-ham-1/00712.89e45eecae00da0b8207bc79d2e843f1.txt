@@ -1,0 +1,172 @@
+From fork-admin@xent.com  Mon Sep 23 12:09:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4250816F03
+	for <jm@localhost>; Mon, 23 Sep 2002 12:09:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 12:09:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8N3ZuC31017 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 04:35:56 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id CD0BE2940BF; Sun, 22 Sep 2002 20:32:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from tisch.mail.mindspring.net (tisch.mail.mindspring.net
+    [207.69.200.157]) by xent.com (Postfix) with ESMTP id AF61829409A for
+    <fork@xent.com>; Sun, 22 Sep 2002 20:31:55 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    tisch.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17tJzZ-0007HQ-00;
+    Sun, 22 Sep 2002 23:34:37 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a15b9b4120d5486@[66.149.49.6]>
+In-Reply-To: <ILEHJNJFPDLMDEKNIAKCOEINCAAA.geege@barrera.org>
+References: <ILEHJNJFPDLMDEKNIAKCOEINCAAA.geege@barrera.org>
+To: "Geege Schuman" <geege@barrera.org>,
+	"Owen Byrne" <owen@permafrost.net>
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Comrade Communism (was Re: Crony Capitalism (was RE: sed
+    /s/United States/Roman Empire/g))
+Cc: "Gary Lawrence Murphy" <garym@canada.com>,
+	"Mr. FoRK" <fork_list@hotmail.com>, <fork@xent.com>,
+	"Digital Bearer Settlement List" <dbs@philodox.com>
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 22 Sep 2002 22:01:22 -0400
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+At 11:15 AM -0400 on 9/22/02, Geege Schuman wrote:
+
+
+> Most of them seem to have Ivy League educations, or are Ivy League
+> dropouts suggesting to me that they weren't exactly poor to start
+> with.
+
+Actually, if I remember correctly from discussion of the list's
+composition in Forbes about five or six years ago, the *best* way to
+get on the Forbes 400 is to have *no* college at all. Can you say
+"Bootstraps", boys and girls? I knew you could...
+
+[Given that an undergraduate liberal arts degree from a state school,
+like, say, mine, :-), is nothing but stuff they should have taught
+you in a government-run "high" school, you'll probably get more of
+*those* on the Forbes 400 as well as time goes on. If we ever get
+around to having a good old fashioned government-collapsing
+transfer-payment depression (an economic version of this summer's
+government-forest conflagration, caused by the same kind of
+innumeracy that not clear-cutting enough forests did out west this
+summer :-)) that should motivate more than a few erst-slackers out
+there, including me, :-), to learn to actually feed themselves.]
+
+
+The *next* category on the Forbes 400 list is someone with a
+"terminal" professional degree, like an MBA, PhD, MD, etc., from the
+best school possible.
+
+Why? Because, as of about 1950, the *best* way to get into Harvard,
+for instance, is to be *smart*, not rich. Don't take my word for it,
+ask their admissions office. Look at the admissions stats over the
+years for proof.
+
+Meritocracy, American Style, was *invented* at the Ivy League after
+World War II. Even Stanford got the hint, :-), and, of course,
+Chicago taught them all how, right? :-). Practically *nobody* who
+goes to a top-20 American institution of higher learning can actually
+afford to go there these days. Unless, of course, their parents, who
+couldn't afford to go there themselves, got terminal degrees in the
+last 40 years or so. And their kids *still* had to get the grades,
+and "biased" (by intelligence :-)), test scores, to get in.
+
+
+The bizarre irony is that almost all of those people with "terminal"
+degrees, until they actually *own* something and *hire* people, or
+learn to *make* something for a living all day on a profit and loss
+basis, persist in the practically insane belief, like life after
+death, that economics is some kind of zero sum game, that dumb people
+who don't work hard for it make all the money, and, if someone *is*
+smart, works hard, and is rich, then they stole their wealth somehow.
+
+BTW, none of you guys out there holding the short end of this
+rhetorical stick can blame *me* for the fact that I'm using it to
+beat you severely all over your collective head and shoulders. You
+were, apparently, too dumb to grab the right end. *I* went to
+Missouri, and *I* don't have a degree in anything actually useful,
+much less a "terminal" one, which means *I*'m broker than anyone on
+this list -- it's just that *you*, of all people, lots with
+educations far surpassing my own, should just plain know better. The
+facts speak for themselves, if you just open your eyes and *look*.
+There are no epicycles, the universe does not orbit the earth, and
+economics is not a zero-sum game. The cost of anything, including
+ignorance and destitution, is the forgone alternative, in this case,
+intelligence and effort.
+
+[I will, however, admit to being educated *waay* past my level of
+competence, and, by the way *you* discuss economics, so have you,
+apparently.]
+
+
+
+BTW, if we ever actually *had* free markets in this country,
+*including* the abolition of redistributive income and death taxes,
+all those smart people in the Forbes 400 would have *more* money, and
+there would be *more* self-made people on that list. In addition,
+most of the people who *inherited* money on the list would have
+*much* less of it, not even relatively speaking. Finally, practically
+all of that "new" money would have come from economic efficiency and
+not "stolen" from someone else, investment bubbles or not.
+
+That efficiency is called "progress", for those of you in The
+People's Republics of Berkeley or Cambridge. It means more and better
+stuff, cheaper, over time -- a terrible, petit-bourgeois concept
+apparently not worthy of teaching by the educational elite, or you'd
+know about it by now. In economic terms, it's also called an increase
+in general welfare, and, no, Virginia, I'm not talking about
+extorting money from someone who works, and giving it to someone who
+doesn't in order to keep them from working and they can think of some
+politician as Santa Claus come election time...
+
+
+In short, then, economics is not a zero sum game, property is not
+theft, the rich don't get rich off the backs of the poor, and
+redistributionist labor "theory" of value happy horseshit is just
+that: horseshit, happy or otherwise.
+
+To believe otherwise, is -- quite literally, given the time Marx
+wrote Capital and the Manifesto -- romantic nonsense.
+
+Cheers,
+RAH
+
+-----BEGIN PGP SIGNATURE-----
+Version: PGP 7.5
+
+iQA/AwUBPY511cPxH8jf3ohaEQLAsgCfZhsQMSvUy6GqJ5wgL52DwZKpIhMAnRuR
+YYboc+IcylP5TlKL58jpwEfu
+=z877
+-----END PGP SIGNATURE-----
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

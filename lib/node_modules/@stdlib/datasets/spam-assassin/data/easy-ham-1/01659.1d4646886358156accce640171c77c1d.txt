@@ -1,0 +1,55 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Fri Sep  6 17:55:07 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 12:55:07 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <200209060811.g868Bo904031@localhost.localdomain>
+Message-ID: <LNBBLJKPBEHFEDALKOLCEEIEBCAB.tim.one@comcast.net>
+
+[Anthony Baxter]
+> The other thing on my todo list (probably tonight's tram ride home) is
+> to add all headers from non-text parts of multipart messages. If nothing
+> else, it'll pick up most virus email real quick.
+
+See the checkin comments for timtest.py last night.  Adding this code gave a
+major reduction in the false negative rate:
+
+def crack_content_xyz(msg):
+    x = msg.get_type()
+    if x is not None:
+        yield 'content-type:' + x.lower()
+
+    x = msg.get_param('type')
+    if x is not None:
+        yield 'content-type/type:' + x.lower()
+
+    for x in msg.get_charsets(None):
+        if x is not None:
+            yield 'charset:' + x.lower()
+
+    x = msg.get('content-disposition')
+    if x is not None:
+        yield 'content-disposition:' + x.lower()
+
+    fname = msg.get_filename()
+    if fname is not None:
+        for x in fname.lower().split('/'):
+            for y in x.split('.'):
+                yield 'filename:' + y
+
+    x = msg.get('content-transfer-encoding:')
+    if x is not None:
+        yield 'content-transfer-encoding:' + x.lower()
+
+
+...
+
+    t = ''
+    for x in msg.walk():
+        for w in crack_content_xyz(x):
+            yield t + w
+        t = '>'
+
+I *suspect* most of that stuff didn't make any difference, but I put it all
+in as one blob so don't know which parts did and didn't help.
+

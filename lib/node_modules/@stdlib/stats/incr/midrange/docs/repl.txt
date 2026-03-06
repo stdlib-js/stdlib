@@ -1,0 +1,36 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a mid-range.
+
+    The mid-range is the arithmetic mean of maximum and minimum values.
+    Accordingly, the mid-range is the midpoint of the range and a measure of
+    central tendency.
+
+    If provided a value, the accumulator function returns an updated mid-range.
+    If not provided a value, the accumulator function returns the current mid-
+    range.
+
+    If provided `NaN`, the mid-range is `NaN` for all future invocations.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var v = accumulator()
+    null
+    > v = accumulator( 3.14 )
+    3.14
+    > v = accumulator( -5.0 )
+    ~-0.93
+    > v = accumulator( 10.1 )
+    2.55
+    > v = accumulator()
+    2.55
+
+    See Also
+    --------
+

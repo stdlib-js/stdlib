@@ -1,0 +1,40 @@
+
+{{alias}}( fcn, predicate[, thisArg] )
+    Returns a function that applies arguments to a provided function according
+    to a predicate function.
+
+    Only those arguments in which the predicate function returns a truthy value
+    are applied to a provided function.
+
+    The predicate function is provided the following arguments:
+
+    - value: argument value.
+    - index: argument index.
+
+    Parameters
+    ----------
+    fcn: Function
+        Input function.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Input function context.
+
+    Returns
+    -------
+    out: Function
+        Function wrapper.
+
+    Examples
+    --------
+    > function foo( a, b ) { return [ a, b ]; };
+    > function predicate( v ) { return ( v !== 2 ); };
+    > var bar = {{alias}}( foo, predicate );
+    > var out = bar( 1, 2, 3 )
+    [ 1, 3 ]
+
+    See Also
+    --------
+

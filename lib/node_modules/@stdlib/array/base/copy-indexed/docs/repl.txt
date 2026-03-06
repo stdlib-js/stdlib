@@ -1,0 +1,23 @@
+
+{{alias}}( x )
+    Copies the elements of an indexed array-like object to a new "generic"
+    array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3 ] )
+    [ 1, 2, 3 ]
+
+    See Also
+    --------
+

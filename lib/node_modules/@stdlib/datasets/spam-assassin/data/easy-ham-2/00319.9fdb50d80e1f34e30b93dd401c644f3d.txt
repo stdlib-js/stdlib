@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Fri Aug  9 16:05:49 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7B27B440F5
+	for <jm@localhost>; Fri,  9 Aug 2002 11:00:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 16:00:14 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EfYb09152 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:41:34 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id SAA32260 for <jm-ilug@jmason.org>;
+    Thu, 8 Aug 2002 18:53:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA29598; Thu, 8 Aug 2002 18:51:30 +0100
+Received: from iulus.wunsch.org (postfix@iulus.ip4.wunsch.org
+    [204.83.206.106]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA29566
+    for <ilug@linux.ie>; Thu, 8 Aug 2002 18:51:21 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host postfix@iulus.ip4.wunsch.org
+    [204.83.206.106] claimed to be iulus.wunsch.org
+Received: by iulus.wunsch.org (Postfix, from userid 500) id B41A8738A;
+    Thu,  8 Aug 2002 11:51:18 -0600 (CST)
+Date: Thu, 8 Aug 2002 11:51:18 -0600
+From: Scott Wunsch <ilug@tracking.wunsch.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Cobalt question
+Message-Id: <20020808175118.GC30251@iulus.wunsch.org>
+References: <20020808103101.GA1853@jinny.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020808103101.GA1853@jinny.ie>
+User-Agent: Mutt/1.4i
+X-PGP-Fingerprint: 57C6 CF0D 302E E52E D231  649A 7B5D 0964 1F94 B9C3
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Thu, 08-Aug-2002 at 11:31:01 +0100, John P. Looney wrote:
+
+>  I've installed Redhat 7.3 on a raq3's disk. But fscked if I can get the
+> kernel in /boot/vmlinuz-2.4.18-3 to boot. It's insisting pulling the
+> kernel from ... somewhere else. The old cobalt kernel.
+
+http://www.gurulabs.com/rgh-cobalt-howto/index.html
+
+The Cobalt systems have some neat firmware boot code that will read the
+ext2 filesystem and find the kernel itself... if you put it exactly where
+they expect it.
+
+-- 
+Take care,
+Scott \\'unsch
+
+... Old musicians never die, they just decompose.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

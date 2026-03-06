@@ -1,0 +1,19 @@
+Return-Path: marklists@mceahern.com
+Delivery-Date: Mon Sep  9 17:26:51 2002
+From: marklists@mceahern.com (Mark McEahern)
+Date: Mon, 9 Sep 2002 11:26:51 -0500
+Subject: [Spambayes] spambayes package?
+In-Reply-To: <15740.44036.651321.285627@12-248-11-90.client.attbi.com>
+Message-ID: <JHEOKEOOLIGLDHCMAHMOGEGJDNAA.marklists@mceahern.com>
+
+[Skip Montanaro]
+> That has the nasty side effect of placing all .py files in the package.
+> What about obvious executable scripts (like timtest or hammie)?  How can I
+> keep them out of the package?
+
+Put them in a scripts folder?
+
+// m
+
+-
+

@@ -1,0 +1,83 @@
+From ilug-admin@linux.ie  Tue Aug 13 13:11:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DE57843C34
+	for <jm@localhost>; Tue, 13 Aug 2002 08:11:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 13:11:15 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DCCGe30842 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 13:12:16 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA12713; Tue, 13 Aug 2002 13:10:56 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA12689 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 13:10:47 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id NAA21163 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 13:10:16 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g7DCAUe19125 for ilug@linux.ie; Tue, 13 Aug 2002 13:10:30 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Tue, 13 Aug 2002 13:10:30 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: Irish LUG list <ilug@linux.ie>
+Subject: Re: [ILUG] gargnome & sawfish..
+Message-Id: <20020813121030.GS2019@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Irish LUG list <ilug@linux.ie>
+References: <20020812082938.GA3027@jinny.ie> <20020813135906.A5619@wanadoo.fr>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020813135906.A5619@wanadoo.fr>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 01:59:06PM +0200, David Neary mentioned:
+> Have you tried gconf-editor? It's a GUI front-end to gconf
+> settings (and metacity has it's settings handled by gconf, like
+> all good gnome2 apps).
+
+ Hmm. It's even worse than using a text editor on a file.
+
+> It's true there's no designated metacity configurator - but the whole
+> point of metacity is to have reasonable defaults, and thus get away from
+> the need for settings altogether, and have the window manager be not in
+> the way (as so many are).
+
+ Don't buy it.
+
+ shift-alt-s should start a shell, alt-d should maximise a window
+vertically, alt-q should close a window, alt-w should shade it. These I've
+used for about eight years, and I'm not about to change them now.
+
+ Stuff like alt-1 to go to workspace-1, I love - it just appeared in
+windowmaker about six years back, and I've also gotten used to it.
+
+> As to the sawfish issue, no idea, sorry - are you sure that
+> gnome2's panel handles 1.4 applets at all?
+
+ Wierdly, I've gone back to sawfish & gnome 1.4 - and the keybindings
+still don't work. It's not fair.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

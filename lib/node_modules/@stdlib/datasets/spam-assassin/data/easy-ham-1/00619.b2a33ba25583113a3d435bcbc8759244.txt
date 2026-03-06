@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Wed Sep 18 14:06:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 54A4716F03
+	for <jm@localhost>; Wed, 18 Sep 2002 14:06:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 18 Sep 2002 14:06:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8ICOeC29554 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 13:24:40 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C502129409F; Wed, 18 Sep 2002 05:21:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id BB5BC29409E for
+    <fork@xent.com>; Wed, 18 Sep 2002 05:20:52 -0700 (PDT)
+Received: (qmail 19572 invoked by uid 501); 18 Sep 2002 12:24:02 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    18 Sep 2002 12:24:02 -0000
+From: CDale <cdale@techmonkeys.net>
+To: Gary Lawrence Murphy <garym@canada.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: boycotting yahoo
+In-Reply-To: <m23cs7u9ew.fsf@maya.dyndns.org>
+Message-Id: <Pine.LNX.4.44.0209180717030.5112-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 18 Sep 2002 07:24:02 -0500 (CDT)
+
+Well I don't think China could force Yahoo! to give up info.  So if they 
+are so willing to give it, why wouldn't they be willing to give info to 
+some silly group who may one day decide to get a hair up their ass about 
+the practice of BDSMers? (not to mention folks who don't even practice, 
+but who are just interested in information) What about folks who are 
+interested in talking about software security issues?  Didja read about 
+the guy in China who got 11 years for downloading and printing out pro-democracy 
+info?
+http://www.democracy.org.hk/EN/2002/aug/news_04.html
+I'm confused about what you're confused about.
+Cindy
+
+On 18 Sep 2002, Gary Lawrence Murphy wrote:
+
+> 
+> I'm a bit confused about this boycott thing.  How is what China is
+> doing any different than having Scientology and who ever else
+> state-side who takes the whim evoking the DMCA to close down foreign
+> sites they deem inappropriate?  At least the Chinese make it voluntary
+> and ask politely, rather than just sending legal musclemen first off.
+> 
+> 
+
+-- 
+"I don't take no stocks in mathematics, anyway" --Huckleberry Finn
+
+

@@ -1,0 +1,65 @@
+From fork-admin@xent.com  Wed Oct  9 10:55:14 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 6CF7116F1B
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:52:57 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:52:57 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g98KvXK01584 for <zzzz@spamassassin.taint.org>;
+    Tue, 8 Oct 2002 21:57:33 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A7D1F2940E7; Tue,  8 Oct 2002 13:57:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx2.ucsc.edu [128.114.129.35]) by
+    xent.com (Postfix) with ESMTP id 281BC2940E4 for <FoRK@xent.com>;
+    Tue,  8 Oct 2002 13:56:43 -0700 (PDT)
+Received: from Tycho (dhcp-55-196.cse.ucsc.edu [128.114.55.196]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g98Kuj520661 for
+    <FoRK@xent.com>; Tue, 8 Oct 2002 13:56:45 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "FoRK" <FoRK@xent.com>
+Subject: Origins of Software Engineering
+Message-Id: <AMEPKEBLDJJCCDEJHAMIIEHCFJAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Importance: Normal
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 8 Oct 2002 13:53:58 -0700
+
+The academic discipline of Software Engineering was launched at a conference
+sponsored by NATO, at Garmisch, Germany, in October, 1968. Intriguingly, the
+term Software Engineering was chosen to be deliberately provocative -- why
+can't software be developed with the same rigor used by other engineering
+disciplines?
+
+The proceedings of this conference are now available online, at:
+http://www.cs.ncl.ac.uk/old/people/brian.randell/home.formal/NATO/index.html
+
+Also, don't miss the pictures of attendees, including many significant
+contributors to the field of Software Engineering:
+http://www.cs.ncl.ac.uk/old/people/brian.randell/home.formal/NATO/N1968/inde
+x.html
+
+- Jim
+
+

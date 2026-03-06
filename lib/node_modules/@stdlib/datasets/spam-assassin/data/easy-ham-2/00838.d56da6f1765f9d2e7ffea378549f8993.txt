@@ -1,0 +1,89 @@
+From fork-admin@xent.com  Wed Jul 24 00:10:47 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 41EE9440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 19:10:47 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 00:10:47 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NNAk402766 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 00:10:47 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D89932940E2; Tue, 23 Jul 2002 16:00:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from axiom.braindust.com (axiom.braindust.com [64.69.71.79]) by
+    xent.com (Postfix) with ESMTP id DCD5A2940DE for <fork@xent.com>;
+    Tue, 23 Jul 2002 15:59:38 -0700 (PDT)
+X-Envelope-To: <fork@spamassassin.taint.org>
+Received: from chimp.vancouver.com (muses.westel.com [204.244.110.7])
+    (authenticated (0 bits)) by axiom.braindust.com (8.12.5/8.11.6) with ESMTP
+    id g6NN9Nds019121 (using TLSv1/SSLv3 with cipher EDH-RSA-DES-CBC3-SHA (168
+    bits) verified NO) for <fork@xent.com>; Tue, 23 Jul 2002 16:09:23 -0700
+MIME-Version: 1.0 (Apple Message framework v482)
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+Subject: Re: My Brain Hurts
+From: Ian Andrew Bell <hello@ianbell.com>
+To: fork@spamassassin.taint.org
+Content-Transfer-Encoding: 7bit
+Message-Id: <28273484-9E91-11D6-8F70-0030657C53EA@ianbell.com>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 16:08:53 -0700
+
+
+
+Begin forwarded message:
+
+> From: Ian Andrew Bell <hello@ianbell.com>
+> Date: Tue Jul 23, 2002  02:02:20 PM US/Pacific
+> To: foib@ianbell.com
+> Subject: @F: [GENERAL] Evil Polling
+>
+> I know you're sitting there asking yourself, "who is the most evil 
+> person on the planet?".  Wonder no more, your local search engine 
+> will tell you.  Just search for the phrase +"<person> is EVIL" and 
+> let the internet tell you the real truth.  I used two engines to 
+> verify accuracy.
+>
+> Phrase: 							Google	Hotbot
+> +"Bert is EVIL"						14700	5100
+> +"Microsoft is EVIL"				1730	1600
+> +"Saddam Hussein is EVIL"			98		100
+> +"Ernie is EVIL"					75		69
+> +"Osama Bin Laden is EVIL"			61		72
+> +"Janet Reno is EVIL"				44		19
+> +"George Bush is EVIL"				39		17
+> +"Canada is EVIL"					19		82
+> +"George W. Bush is EVIL"			22		21
+> +"Tony Blair is EVIL"				11		12
+> +"Adolf Hitler is EVIL"				1		23
+> +"Dick Cheney is EVIL"				4		6
+> +"Pat Buchanan is EVIL"				3		6
+> +"Ghandi is EVIL"					2		5
+> +"Bart Simpson is EVIL"				0		1
+> +"Geoff Gachallan is EVIL"			0		0
+>
+>
+> -Ian.
+>
+>
+> -----------
+> FoIB mailing list -- Bits, Analysis, Digital Group Therapy
+> http://foib.ianbell.com/mailman/listinfo/foib
+
+http://xent.com/mailman/listinfo/fork
+
+

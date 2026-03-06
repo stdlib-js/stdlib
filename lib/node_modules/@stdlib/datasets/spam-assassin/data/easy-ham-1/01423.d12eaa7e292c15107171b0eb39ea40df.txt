@@ -1,0 +1,58 @@
+Return-Path: anthony@interlink.com.au
+Delivery-Date: Fri Sep  6 09:06:57 2002
+From: anthony@interlink.com.au (Anthony Baxter)
+Date: Fri, 06 Sep 2002 18:06:57 +1000
+Subject: [Spambayes] Re: [Python-Dev] Getting started with GBayes testing 
+In-Reply-To: <BIEJKCLHCIOIHAGOKOLHGEEMDKAA.tim.one@comcast.net> 
+Message-ID: <200209060806.g8686ve03964@localhost.localdomain>
+
+
+>>> Tim Peters wrote
+> > I've actually got a bunch of spam like that. The text/plain is something
+> > like
+> >
+> > **This is a HTML message**
+> >
+> > and nothing else.
+> 
+> Are you sure that's in a text/plain MIME section?  I've seen that many times
+> myself, but it's always been in the prologue (*between* MIME sections -- so
+> it's something a non-MIME aware reader will show you).
+
+*nod* I know - on my todo is to feed the prologue into the system as well.
+
+A snippet, hopefully not enough to trigger the spam-filters.
+
+
+To: into89j@gin.elax.ekorp.com
+X-Mailer: Microsoft Outlook Express 4.72.1712.3
+X-MimeOLE: Produced By Microsoft MimeOLE V??D.1712.3
+Mime-Version: 1.0
+Date: Sun, 28 Jan 2001 23:54:39 -0500
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_007F_01BDF6C7.FABAC1
+B0"
+Content-Transfer-Encoding: 7bit
+
+This is a MIME Message
+
+------=_NextPart_000_007F_01BDF6C7.FABAC1B0
+Content-Type: multipart/alternative; boundary="----=_NextPart_001_0080_01BDF6C7.
+FABAC1B0"
+
+------=_NextPart_001_0080_01BDF6C7.FABAC1B0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+***** This is an HTML Message ! *****
+
+
+------=_NextPart_001_0080_01BDF6C7.FABAC1B0
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html public "-//w3c//dtd html 4=2E0
+ transitional//en">
+ <html>
+ <head>
+    
+

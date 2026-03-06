@@ -1,0 +1,185 @@
+From fork-admin@xent.com  Tue Aug  6 12:01:26 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EDCFF44203
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g75Hnvk20639 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 18:49:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 396A42940AD; Mon,  5 Aug 2002 10:47:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp10.atl.mindspring.net (smtp10.atl.mindspring.net
+    [207.69.200.246]) by xent.com (Postfix) with ESMTP id 47ED829409F for
+    <fork@xent.com>; Mon,  5 Aug 2002 10:46:10 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    smtp10.atl.mindspring.net with esmtp (Exim 3.33 #1) id 17blw6-0004wq-00;
+    Mon, 05 Aug 2002 13:46:30 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a00b97462c679de@[66.149.49.6]>
+To: Digital Bearer Settlement List <dbs@philodox.com>,
+	dcsb@ai.mit.edu, e$@vmeng.com, cryptography@wasabisystems.com,
+	fork@xent.com, irregulars@tb.tf
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Internet Defamation Suit Ends With Defense Verdict
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 5 Aug 2002 13:22:55 -0400
+
+
+--- begin forwarded text
+
+
+To: rah@philodox.com
+Subject: Internet Defamation Suit Ends With Defense Verdict
+Date: Mon,  5 Aug 2002 10:08:41 -0400 (EDT)
+From: Somebody
+
+Internet Defamation Suit Ends With Defense Verdict
+
+http://www.law.com/servlet/ContentServer?pagename=OpenMarket/Xcelerate/View&c=LawArticle&cid=1028320303259&t=LawArticleTech
+
+John Council
+Texas Lawyer 08-05-2002
+
+
+
+In one of the first trials in the country to
+address Internet defamation, a Dallas County,
+Texas, jury last week rejected a $700 million
+suit by an Internet company that claimed it
+was harmed by negative electronic messages
+posted by an employee of a competing company.
+
+ZixIt, a Dallas Internet company, filed ZixIt
+Corp. v. Visa International, et al. in 1999,
+alleging it was harmed by Paul Guthrie, then
+a vice president with Visa. ZixIt alleged in
+its suit that Guthrie posted more than 400
+anonymous messages, many of them negative,
+about ZixIt on the Yahoo Finance ZixIt Internet
+message board, causing ZixIt's stock price to
+drop.
+
+The suit also alleged that the postings
+destroyed the company's ability to market
+its ZixCharge Internet transaction
+authorization system, which allows consumers
+to make purchases without revealing their
+credit card numbers to merchants. Visa has
+a similar Internet payment system.
+
+ZixIt alleged that the postings caused its
+stock price to plummet. Had the product
+been successful, the company believed it
+would have been worth more than $1 billion,
+according to lawyers involved in the case.
+
+On July 31, a jury in Judge Merrill Hartman's
+192nd District Court found that ZixIt's
+product was not harmed by the postings.
+
+Neal Manne and Kenneth McNeil, lawyers from
+Houston's Susman Godfrey who represented
+ZixIt at trial, did not return calls for
+comment by press time.
+
+"The company hasn't made any decision about
+an appeal," says Cindy Lawrence, a ZixIt
+spokeswoman. "The outcome of the lawsuit
+doesn't have any effect on our future
+products and services in e-messaging."
+
+GETTING GRADED
+
+Visa's lawyers alleged that Guthrie acted on
+his own and had a right to free speech, and
+that Guthrie's Internet postings had no
+effect on ZixIt's stock. Guthrie has since
+left Visa, lawyers for the company say.
+Guthrie was not a defendant in the case.
+However, his interests in the case were
+represented by Todd Noonan, an attorney in
+Sacramento, Calif.'s Stevens & O'Connell.
+Noonan was recovering from surgery last
+week and was unavailable for comment.
+
+"I think people believe whether you
+succeed or fail [is] because of what you
+do and not what other people do to you.
+Internet companies didn't succeed for all
+sorts of reasons," says Jeff Tillotson, a
+partner in Dallas' Lynn, Tillotson & Pinker,
+who defended Visa at trial.
+
+ZixIt's case was a hard sell to the jury,
+especially with the reality of the economy,
+Tillotson says.
+
+"Everyone knows that the stock market
+has fallen and the trouble with Internet
+companies. I think the jury took that into
+account," Tillotson says.
+
+There were lessons to be learned from the
+Internet defamation trial, says Mike Lynn,
+who also represented Visa at trial. Even
+though message boards are considered a
+protected form of free speech, that freedom
+won't prevent a company from being dragged
+into court if its employee blasts another
+company on the Internet, Lynn says.
+
+"A company can be responsible for what an
+employee posts on a message board," Lynn
+says. "The courts have said you're entitled
+to go to a jury to determine whether there
+are damages as a result of that. The law is
+very odd, not mature, [and] damage theories
+are not mature."
+
+The nature of the case also added an
+interesting twist to the trial, Tillotson
+says. Many of those who posted messages on
+the board attended the trial and posted
+comments about the daily proceedings
+throughout the three-week trial, he says.
+
+"It was apparent to everyone that many of
+the people who posted on these message boards
+were watching the trial," Tillotson says.
+"It really was wild. The lawyers felt like
+they were being graded."
+
+-- 
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+http://xent.com/mailman/listinfo/fork
+
+

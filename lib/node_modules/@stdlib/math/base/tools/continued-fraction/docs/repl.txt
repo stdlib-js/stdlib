@@ -1,0 +1,91 @@
+
+{{alias}}( generator[, options] )
+    Evaluates the continued fraction approximation for the supplied series
+    generator using the modified Lentz algorithm.
+
+    `generator` can be either a function which returns an array with two
+    elements, the `a` and `b` terms of the fraction, or an ES6 Generator object.
+
+    By default, the function computes
+
+             a1
+        ---------------
+        b1 +     a2
+             ----------
+              b2 +   a3
+                  -----
+                  b3 + ...
+
+    To evaluate
+
+        b0 +	 a1
+        ---------------
+        b1 +	 a2
+             ----------
+             b2 +  a3
+                  -----
+                  b3 + ...
+
+    set the `keep` option to `true`.
+
+    Parameters
+    ----------
+    generator: Function
+        Function returning terms of continued fraction expansion.
+
+    options: Object (optional)
+        Options.
+
+    options.maxIter: integer (optional)
+         Maximum number of iterations. Default: `1000000`.
+
+    options.tolerance: number (optional)
+        Further terms are only added as long as the next term is greater than
+        current term times the tolerance. Default: `2.22e-16`.
+
+    options.keep: boolean (optional)
+        Boolean indicating whether to keep the `b0` term in the continued
+        fraction. Default: `false`.
+
+    Returns
+    -------
+    out: number
+       Value of continued fraction.
+
+    Examples
+    --------
+    // Continued fraction for (e-1)^(-1):
+    > function closure() {
+    ...    var i = 0;
+    ...    return function() {
+    ...        i += 1;
+    ...        return [ i, i ];
+    ...    };
+    ... };
+    > var gen = closure();
+    > var out = {{alias}}( gen )
+    ~0.582
+
+    // Using an ES6 generator:
+    > function* generator() {
+    ...     var i = 0;
+    ...     while ( true ) {
+    ...         i += 1;
+    ...         yield [ i, i ];
+    ...     }
+    ... };
+    > gen = generator();
+    > out = {{alias}}( gen )
+    ~0.582
+
+    // Set options:
+    > out = {{alias}}( generator(), { 'keep': true } )
+    ~1.718
+    > out = {{alias}}( generator(), { 'maxIter': 10 } )
+    ~0.582
+    > out = {{alias}}( generator(), { 'tolerance': 1e-1 } )
+    ~0.579
+
+    See Also
+    --------
+

@@ -1,0 +1,114 @@
+From Blair-09252002-HTML@frugaljoe.330w.com  Thu Sep 26 11:30:24 2002
+Return-Path: <Blair-09252002-HTML@frugaljoe.330w.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id E36C516F16
+	for <zzzz@localhost>; Thu, 26 Sep 2002 11:30:22 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 26 Sep 2002 11:30:22 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8Q4GTC32642 for
+    <zzzz@jmason.org>; Thu, 26 Sep 2002 05:16:29 +0100
+Received: from richard.330w.com (richard.330w.com [216.53.71.115]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id FAA28786 for <zzzz@spamassassin.taint.org>;
+    Thu, 26 Sep 2002 05:17:06 +0100
+Message-Id: <200209260417.FAA28786@webnote.net>
+Received: by richard.330w.com (PowerMTA(TM) v1.5); Wed, 25 Sep 2002
+    23:55:18 -0400 (envelope-from <Blair-09252002-HTML@frugaljoe.330w.com>)
+From: Blair@FrugalJoe.com
+To: zzzz@spamassassin.taint.org
+Subject: Free Shipping on all orders at Blair.com
+Id-Frugaljoe: zzzz####spamassassin.taint.org
+Date: Wed, 25 Sep 2002 23:55:18 -0400
+Content-Type: text/html
+
+<html>
+<TABLE id=AutoNumber2 style="BORDER-COLLAPSE: collapse" 
+      borderColor=#111111 cellSpacing=1 cellPadding=0 width=715 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=27><a href="http://www.frugaljoe.com"><IMG  
+            src="http://www.frugaljoe.com/logo.jpg"  border=0></a></TD>
+          <TD width=1 bgColor=#ffcc99><IMG height=1 
+            src="http://www.salealerts.com/dot.gif" width=1 border=0></TD>
+          <TD vAlign=top><I><B><FONT face=Verdana size=2>
+            <CENTER>Never Pay Retail!</FONT><FONT face=Verdana size=0></B><br></CENTER></I><IMG height=20 
+            src="http://www.salealerts.com/dot.gif" width=459 border=0></TD></TR>
+        <TR>
+          <TD width=715 bgColor=#ffcc99 colSpan=3 height=1><IMG height=1 
+            src="http://www.salealerts.com/dot.gif" width=1 
+  border=0></TD></TR></TBODY></TABLE></CENTER></DIV></TD>
+<FONT face=Verdana size=1>
+<head>
+</head>
+<body>
+<table width="465" border=0 cellspacing=0>
+ <tr>
+  <TD>
+  <img src="http://www.blair.com/images/email/FSHprospectHDRblue_4C.jpg" border="0">
+
+<font face="Times New Roman" color="black" size="3">&nbsp;&nbsp;You can count on Blair.com for savings, selection and satisfaction… all day,<br>
+&nbsp;&nbsp;every day. Plus, for a limited time, you'll enjoy <font face="Times New Roman" color="red" size="3"><b>FREE</b> standard shipping<font face="Times New Roman" color="black" size="3"> on<br>
+&nbsp;&nbsp;every order. So shop now!<br>
+<br>
+<ul><ul><ul>
+&nbsp;<b>Women's.</b> Must-have fashions.<br>
+&nbsp;<b>Men's.</b> Dress and casual favorites.<br>
+&nbsp;<b>Home.</b> Values for every room.<br>
+&nbsp;<b>Clearance.</b> Closeouts at 40%-75% off.<br>
+</ul></ul></ul></font>
+<table width="465" border=0 cellspacing=0>
+<tr>
+<TD align=Center valign=Middle>
+<a href="http://clickserve.cc-dt.com/link/click?lid=41000000000452850"><img src="http://www.blair.com/images/email/FSH_fallWinBUTblue.gif" border="0"></a>
+</td></tr>
+</table><br>
+<font face="Times New Roman" color="black" size="3">&nbsp;&nbsp;Just click the button above to go to Blair.com and enjoy FREE shipping <br>
+&nbsp;&nbsp;automatically on your entire order. (You'll see the savings at checkout.)<br>
+&nbsp;&nbsp;Don't wait. <b><i>This offer ends October 15, 2002.</i></b><br>
+</td>
+</tr>
+</table>
+<hr align="left" width="465">
+
+<hr align="left" width="465">
+
+©BLAIR 2000-2002   |   220 Hickory St., Warren, PA 16366
+
+</body>
+<TABLE id=AutoNumber3 style="BORDER-COLLAPSE: collapse" borderColor=#111111 
+cellSpacing=1 cellPadding=0 width=715 border=0>
+  <TBODY>
+  <TR>
+    <TD width=715 bgColor=#ffcc99 colSpan=3 height=1><IMG height=1 
+      src="dot.gif" width=1 border=0></TD></TR>
+  <TR>
+    <TD vAlign=top width=27><a href="http://www.frugaljoe.com"><IMG  
+            src="http://www.frugaljoe.com/logo.jpg"  border=0></a>
+
+</TD>
+    <TD width=1 bgColor=#ffcc99><IMG height=1 
+      src="http://www.salealerts.com/dot.gif" width=1 border=0>
+
+</TD>
+    <TD vAlign=top><I></I><FONT face=Verdana size=1><BR>
+
+You have received this email because you have subscribed 
+      through one of our marketing partners. If you would like 
+      to learn more about Frugaljoe.com then please visit our website 
+      www.frugaljoe.com If this message was sent to you in error, or
+if you 
+      would like to unsubscribe please click <A 
+ 
+href="http://www.frugaljoe.com/unsubscribe.php?eid=384847\~moc.cnietonten^^mj\~1754388\~12a1">here </a>or
+cut and paste the following link into a web browser:<br>
+ http://www.frugaljoe.com/unsubscribe.php?eid=384847\~moc.cnietonten^^mj\~1754388\~12a1
+<br></A></FONT><BR><IMG height=20
+src="http://www.salealerts.com/dot.gif" 
+      width=459 border=0></TD></TR></TBODY></TABLE></CENTER></DIV></BODY></HTML>
+
+</html>
+<img src="http://www.330w.com/open/open.php?eid=zzzz@spamassassin.taint.org&oid=Blair-09252002-HTML&custid=frugaljoe" border=0 height=0 width=0>
+
+

@@ -1,0 +1,82 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MHVlhY023443
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 12:31:47 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6MHVlVw023439
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 12:31:47 -0500 (CDT)
+Received: from slack.lne.com (dns.lne.com [209.157.136.81] (may be forged))
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MHVdhX023379
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 12:31:40 -0500 (CDT)
+	(envelope-from cpunk@lne.com)
+X-Authentication-Warning: hq.pro-ns.net: Host dns.lne.com [209.157.136.81] (may be forged) claimed to be slack.lne.com
+Received: (from cpunk@localhost)
+	by slack.lne.com (8.11.0/8.11.0) id g6MHVb805606
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 10:31:37 -0700
+Received: from delta.poolee.ca ([209.216.140.218])
+	by slack.lne.com (8.11.0/8.11.0) with ESMTP id g6MHVUg05597;
+	Mon, 22 Jul 2002 10:31:33 -0700
+Received: from 24.55.128.155 ([217.59.66.205])
+          by delta.poolee.ca (Lotus Domino Release 5.0.8)
+          with ESMTP id 2002071721591787:4407 ;
+          Wed, 17 Jul 2002 21:59:17 -0400 
+Message-ID: <000016081046$0000613f$000078bf@>
+To: <Parkinson@lne.com>
+From: "Maire Lira" <dingobabes@ananzi.co.za>
+Subject: Your Vehicle Warranty               PFYEXHF
+Date: Mon, 22 Jul 2002 10:43:22 -1900
+MIME-Version: 1.0
+X-Priority: 1 (High)
+X-Mailer: Microsoft Outlook, Build 10.0.3416
+X-Msmail-Priority: High
+X-MIMETrack: Itemize by SMTP Server on delta/PINC(Release 5.0.8 |June 18, 2001) at 07/17/2002
+ 09:59:20 PM,
+	Serialize by Router on delta/PINC(Release 5.0.8 |June 18, 2001) at 07/17/2002
+ 09:59:39 PM,
+	Serialize complete at 07/17/2002 09:59:39 PM
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset="iso-8859-1"
+X-spam: 100 
+
+<HTML><HEAD></HEAD><BODY><center><FONT SIZE=3D4 COLOR=3D#FF3300><B>Protect =
+your financial well-being.<BR>Purchase an Extended Auto Warranty for your =
+Vehicle TODAY.</B></FONT><BR><BR><BR><FONT FACE=3DArial SIZE=3D4 COLOR=3D#=
+CC0000><B><U><A HREF=3Dhttp://www.qz932.com/auto/>Click Here for your free=
+, Fast, no BS Rates NOW!!</A></U></B></FONT><BR><br><FONT><B></center>Car =
+troubles and expensive repair bills always seem to happen at the worst pos=
+sible time Dont they?. Protect yourself and your family with an Extended<b=
+r>Warranty for your car, truck, or SUV, so that a large expense cannot hit=
+ you all at once. We cover most vehicles with less than 150,000 miles.</B>=
+</FONT><br><br><br><FONT SIZE=3D4 COLOR=3D#FF3333><B><I>Our warranties are=
+ the same as the dealer offers but instead<BR>you are purchasing them dire=
+ct!!!</I></B></FONT><BR><BR><BR><FONT SIZE=3D3><B><I>We offer fair prices =
+and prompt, toll-free claims service. Get an Extended Warranty on your veh=
+icle today.</I></B></FONT><br><br><A HREF=3Dhttp://www.qz932.com/auto/>Cli=
+ck here today and we will include at no extra cost:</A><br><Br><UL TYPE=3D=
+CIRCLE><BR><LI>24-Hour Roadside Assistance.<LI>Car Rental Benefits.<LI>Tri=
+p Interruption Benefits.<LI>Extended Towing Benefits.</UL><A HREF=3Dhttp:/=
+/www.qz932.com/auto/>Click Here for your free, Fast, no BS Rates NOW!!</A>=
+<br><br>Save now, don't wait until it is TOO LATE!<br><br><br><br><br><br>=
+<FONT SIZE=3D1 COLOR=3D#FFFF99>We search for the best offering's for<br>yo=
+u; we do the research and you get only The superior results<br>this email =
+is brought to you by; KBR . To abnegate<br>all future notices, <FONT COLOR=
+=3D#FFFF66><A HREF=3Dhttp://www.qz932.com/index2.html>Enter here</A></FONT=
+></FONT></BODY></HTML>
+
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

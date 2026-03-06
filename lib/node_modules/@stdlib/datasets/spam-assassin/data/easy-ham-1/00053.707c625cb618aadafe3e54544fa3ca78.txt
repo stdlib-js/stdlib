@@ -1,0 +1,72 @@
+From ilug-admin@linux.ie  Thu Aug 29 16:52:52 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 97DCD43F9B
+	for <zzzz@localhost>; Thu, 29 Aug 2002 11:52:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 29 Aug 2002 16:52:52 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7TFr2Z18960 for
+    <zzzz-ilug@spamassassin.taint.org>; Thu, 29 Aug 2002 16:53:02 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA31908; Thu, 29 Aug 2002 16:51:27 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA31829 for <ilug@linux.ie>; Thu,
+    29 Aug 2002 16:51:17 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.dcu.ie [136.206.1.5]
+    claimed to be hawk.dcu.ie
+Received: from prodigy.redbrick.dcu.ie (136.206.15.10) by hawk.dcu.ie
+    (6.0.040) id 3D6203D30003D917 for ilug@linux.ie; Thu, 29 Aug 2002 16:51:17
+    +0100
+Received: by prodigy.redbrick.dcu.ie (Postfix, from userid 2027) id
+    32184DA4A; Thu, 29 Aug 2002 16:51:17 +0100 (IST)
+Date: Thu, 29 Aug 2002 16:51:17 +0100
+From: Colin Whittaker <grimnar@redbrick.dcu.ie>
+To: Irish LUG list <ilug@linux.ie>
+Message-Id: <20020829165117.A16258@prodigy.Redbrick.DCU.IE>
+References: <20020829143111.GN1757@jinny.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020829143111.GN1757@jinny.ie>; from valen@tuatha.org on
+    Thu, Aug 29, 2002 at 03:31:11PM +0100
+Organization: North East Technologies Ltd.
+X-Subliminal-Message: Give Colin all your money.
+Subject: [ILUG] Re: serial console...not quite working
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+John P. Looney stated the following on Thu, Aug 29, 2002 at 03:31:11PM +0100 :
+>  I'm not sure what exactly is wrong with this, but I can't get a redhat
+> 7.1 box to use ttyS0 as a console.
+> 
+>  The relevant bits of /boot/grub/grub.conf are:
+> 
+> serial --unit=0 --speed=115200
+> terminal --timeout=2 console serial
+> title=linux
+>    root (hd0,4)
+>    kernel /boot/bzImage ro root=/dev/md0 console=ttyS0,115200n81
+															     ^
+That 1 is unneeded and is probably whats upsetting your kernel
+
+we use "console=ttyS0,9600n8" but the 9600 is mainly cos we are a cisco
+shop and its to keepo everyhting the same.
+
+Colin
+-- 
+"Design" is like a religion - too much of it makes you inflexibly and unpopular.
+		Linus Torvalds
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

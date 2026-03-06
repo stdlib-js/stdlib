@@ -1,0 +1,28 @@
+
+{{alias}}( fcn[, thisArg] )
+    Returns a function that invokes a provided function with arguments in
+    reverse order.
+
+    Parameters
+    ----------
+    fcn: Function
+        Input function.
+
+    thisArg: any (optional)
+        Function context.
+
+    Returns
+    -------
+    out: Function
+        Function with reversed arguments.
+
+    Examples
+    --------
+    > function foo( a, b, c ) { return [ a, b, c ]; };
+    > var bar = {{alias}}( foo );
+    > var out = bar( 1, 2, 3 )
+    [ 3, 2, 1 ]
+
+    See Also
+    --------
+

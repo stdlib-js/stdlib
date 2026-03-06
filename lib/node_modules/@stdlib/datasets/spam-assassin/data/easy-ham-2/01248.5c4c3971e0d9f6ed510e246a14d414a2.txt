@@ -1,0 +1,154 @@
+From rpm-list-admin@freshrpms.net  Fri Aug 16 18:16:39 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4480543C34
+	for <jm@localhost>; Fri, 16 Aug 2002 13:16:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 18:16:39 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7GHGi629268 for
+    <jm-rpm@jmason.org>; Fri, 16 Aug 2002 18:16:44 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7GHE1J08776; Fri, 16 Aug 2002 19:14:02
+    +0200
+Received: from boukha.centre-cired.fr (boukha.centre-cired.fr
+    [193.51.120.234]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7GHD8J08647 for <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 19:13:08 +0200
+Received: from hermes.centre-cired.fr ([193.51.120.92]) by
+    boukha.centre-cired.fr (8.9.3+Sun/jtpda-5.3.3) with ESMTP id TAA26326 for
+    <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 19:10:33 +0100 (WEST)
+From: dumas@centre-cired.fr (Patrice DUMAS - DOCT)
+Received: (from dumas@localhost) by hermes.centre-cired.fr (8.11.6/8.11.6)
+    id g7GGunj30448 for rpm-list@freshrpms.net; Fri, 16 Aug 2002 18:56:49
+    +0200
+To: rpm-zzzlist@freshrpms.net
+Subject: when building a rpm i386-redhat-linux- is appended to man page
+Message-Id: <20020816185647.I1134@hermes.centre-cired.fr>
+Mail-Followup-To: rpm-zzzlist@freshrpms.net
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="Fig2xvG2VGoz8o/s"
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 16 Aug 2002 18:56:47 +0200
+Date: Fri, 16 Aug 2002 18:56:47 +0200
+
+
+--Fig2xvG2VGoz8o/s
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+Hi,
+
+When I do a
+rpm -ta on the package (pam_ssh), in the %makeinstall phase, I get
+/usr/bin/install -c -m 644 ./pam_ssh.8 /var/tmp/pam_ssh-root/usr/share/man/man8/i386-redhat-linux-pam_ssh.8
+instead of what would have been right:
+/usr/bin/install -c -m 644 ./pam_ssh.8 /var/tmp/pam_ssh-root/usr/share/man/man8/pam_ssh.8
+
+With a plain  ./configure; make; make install I get the right
+/usr/bin/install -c -m 644 ./pam_ssh.8 /usr/local/man/man8/pam_ssh.8
+
+Is it something normal ? Could you please help me to get this right ?
+
+I join the Makefile.am and the spec file.
+
+Pat
+
+--Fig2xvG2VGoz8o/s
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: attachment; filename="Makefile.am"
+
+# $Id: Makefile.am,v 1.6 2002/08/09 18:33:24 akorty Exp $
+
+lib_LTLIBRARIES		= libpam_ssh.la
+libpam_ssh_la_LIBADD	= @LTLIBOBJS@
+libpam_ssh_la_SOURCES	= atomicio.c atomicio.h authfd.c authfd.h \
+			  authfile.c authfile.h bufaux.c bufaux.h \
+			  buffer.c buffer.h cipher.c cipher.h getput.h \
+			  kex.h key.c key.h log.c log.h pam_mod_misc.h \
+			  pam_ssh.c pam_ssh.h rijndael.c rijndael.h \
+			  xmalloc.c xmalloc.h openpam_cred.h
+man_MANS		= pam_ssh.8
+securitydir		= @PAMDIR@
+AUTOMAKE_OPTIONS	= dist-bzip2
+EXTRA_DIST		= $(man_MANS) pam_ssh.spec
+
+libtool: $(LIBTOOL_DEPS)
+	$(SHELL) ./config.status --recheck
+
+install-libLTLIBRARIES: $(lib_LTLIBRARIES)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(securitydir)
+	$(INSTALL_DATA) .libs/libpam_ssh.so \
+	    $(DESTDIR)$(securitydir)/pam_ssh.so
+
+
+--Fig2xvG2VGoz8o/s
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: attachment; filename="pam_ssh.spec"
+
+Summary: pam_ssh package
+Name: pam_ssh
+Version: 1.7
+Release: 1
+URL: http://sourceforge.net/projects/pam-ssh/
+Source0: %{name}-%{version}.tar.gz
+License: BSD
+BuildRoot: %{_tmppath}/%{name}-root
+Requires: pam, openssh, openssh-clients
+BuildRequires: pam-devel
+Group: System Environment/Base
+
+%description
+This PAM module provides single sign-on behavior for UNIX using SSH. Users
+are authenticated by decrypting their SSH private keys with the password
+provided (probably to XDM). In the PAM session phase, an ssh-agent process is
+started and keys are added.
+
+%prep
+%setup -q
+
+%build
+%configure
+make clean
+make
+
+%install
+rm -rf $RPM_BUILD_ROOT
+%makeinstall securitydir=$RPM_BUILD_ROOT/lib/security
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(-,root,root)
+/lib/security/pam_ssh.so
+%{_mandir}/*/pam_ssh*
+
+%changelog
+* Fri Aug 16 2002 Dumas Patrice <dumas@centre-cired.fr>
+- Initial build.
+
+--Fig2xvG2VGoz8o/s--
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

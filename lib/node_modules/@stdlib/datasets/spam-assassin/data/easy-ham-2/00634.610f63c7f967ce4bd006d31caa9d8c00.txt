@@ -1,0 +1,80 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug 14 10:45:55 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C8CC543C34
+	for <jm@localhost>; Wed, 14 Aug 2002 05:45:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:45:22 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7DIAA412786 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 19:10:10 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17efyX-0000WX-00; Tue,
+    13 Aug 2002 11:01:01 -0700
+Received: from neo.pittstate.edu ([198.248.208.13]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17efxf-0007WD-00 for <razor-users@lists.sourceforge.net>; Tue,
+    13 Aug 2002 11:00:09 -0700
+Received: from [198.248.208.11] (macdaddy.pittstate.edu [198.248.208.11])
+    by neo.pittstate.edu (8.12.2/8.12.2) with ESMTP id g7DHxjW7005361;
+    Tue, 13 Aug 2002 12:59:46 -0500
+MIME-Version: 1.0
+Message-Id: <p04310115b97ef9811078@[198.248.208.11]>
+In-Reply-To: <20020813101201.O50294-100000@rockstar.stealthgeeks.net>
+References: <20020813101201.O50294-100000@rockstar.stealthgeeks.net>
+To: Patrick <patrick@stealthgeeks.net>
+From: Justin Shore <listuser@neo.pittstate.edu>
+Subject: Re: [Razor-users] Stripping the SpamAssassin report
+Cc: razor-users@example.sourceforge.net
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 13 Aug 2002 13:00:00 -0500
+Date: Tue, 13 Aug 2002 13:00:00 -0500
+
+At 10:12 AM -0700 8/13/02, Patrick wrote:
+>On Tue, 13 Aug 2002, Justin Shore wrote:
+>
+>>  I'm assuming I need to strip the SpamAssassinReport.txt attachments
+>>  from my spam mailbox before I run the mailbox through razor-report,
+>>  correct?  Does anyone know of an easy way to do this?
+>
+>man spamassassin
+
+Whoops.  Sorry 'bout that.  Didn't think to check spamassassin's man page.
+-- 
+
+--
+Justin Shore, ES-SS ES-SSR      Pittsburg State University
+Network & Systems Manager       Kelce 157Q
+Office of Information Systems   Pittsburg, KS 66762
+Voice: (620) 235-4606           Fax: (620) 235-4545
+http://www.pittstate.edu/ois/
+
+Warning:  This message has been quadruple Rot13'ed for your protection.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,8 @@
+
+Usage: day-of-quarter [options] [<month> <day> <year>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+

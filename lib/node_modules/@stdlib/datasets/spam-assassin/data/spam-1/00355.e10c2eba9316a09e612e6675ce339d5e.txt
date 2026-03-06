@@ -1,0 +1,66 @@
+From free_hgh304@eudoramail.com  Wed Sep 18 11:54:20 2002
+Return-Path: <free_hgh304@eudoramail.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id EA78A16F03
+	for <zzzz@localhost>; Wed, 18 Sep 2002 11:54:18 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 18 Sep 2002 11:54:18 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8I7KTC19071 for
+    <zzzz@jmason.org>; Wed, 18 Sep 2002 08:20:30 +0100
+Received: from [63.111.238.7] ([63.111.238.7]) by webnote.net
+    (8.9.3/8.9.3) with SMTP id IAA29748 for <zzzz@spamassassin.taint.org>;
+    Wed, 18 Sep 2002 08:20:59 +0100
+Message-Id: <200209180720.IAA29748@webnote.net>
+Received: from hdc1 by [63.111.238.7] via smtpd (for [193.120.211.219])
+    with SMTP; 18 Sep 2002 07:47:28 UT
+Received: from firewall.singal.net ([192.12.30.2]) by hdc1.singal.net with
+    SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2650.21) id
+    S5T3NNVS; Wed, 18 Sep 2002 02:18:43 -0500
+Received: from cm61-18-209-26.hkcable.com.hk ([61.18.209.26]) by
+    firewall.singal.net via smtpd (for hdc1 [192.12.30.75]) with SMTP;
+    18 Sep 2002 07:46:07 UT
+Date: Wed, 18 Sep 2002 15:18:43 +0800
+From: "Rosario Joshi" <free_hgh304@eudoramail.com>
+X-Priority: 3
+To: zzzz@spamassassin.taint.org
+Subject: Introducing HGH: The Most Powerful Anti-Obesity Drug Ever
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html; charset=us-ascii
+
+<html><body onload="window.open('http://202.101.163.34:81/ultimatehgh_run/')" bgColor="#99ff99" topmargin=1 onMouseOver="window.status=''; return true" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<div align="center"><!--zzzz--><!---->Hello, jm@spamassassin.taint.org<BR><BR></div><div align="center"></div><p align="center"><b><font face="Arial" size="4">Hu<!---->man Growth Horm<!---->one Therapy</font></b></p>
+<p align="center"><b><font face="Arial" size="4">Lose weight while building lean muscle mass<br>and reversing the ravages of aging all at once.</font><font face="Arial" size="3"><br>
+</font></b><font face="Arial" size="3"> <br>
+As seen on NBC, CBS, and CNN, and even Oprah! The health<br>
+discovery that actually reverses aging while burning fat,<br>
+without dieting or exercise! This proven discovery has even<br>
+been reported on by the New England Journal of Medicine.<br>
+Forget aging and dieting forever! And it's Guaranteed!</font></p>
+<center><table width="481"><tr>
+      <td height="96" width="247">
+<p align="left"><b><font face="Arial, Helvetica, sans-serif" size="3">Lose Weight<br>Build Muscle Tone<br>Reverse Aging<br>
+Increased Libido<br>
+          Duration Of Penile Erection</font></b></p>
+      </td>
+      <td height="96" width="222">
+<p align="left"><b><font face="Arial, Helvetica, sans-serif" size="3">Healthier Bones<br>
+Improved Memory<br>Improved skin<br>New Hair Growth<br>Wrinkle Disappearance </font></b></p></td></table></center>
+<p align="center"><a href="http://211.99.37.206:81/ultimatehgh_run/"><font face="Arial" size="4"><b><br>
+  Visit Our Web Site and Learn The Facts : Click Here</b></font></a><br>
+  <br>
+  If the above link is not operational, Please <a href="http://211.98.24.90:81/ultimatehgh_run/"><b>Click 
+  Here</b></a> again.<br>
+  <br>
+  <br>
+  You are receiving this email as a subscr<!--zzzz-->iber<br>
+  to the Opt<!--zzzz-->-In Ameri<!---->ca Mailin<!---->g Lis<!---->t. <br>
+  To remo<!--zzzz-->ve your<!---->self from all related mailli<!--me-->sts,<br>
+  just <a href="http://202.96.124.10:81/ultimatehgh_run/remove.php?userid=zzzz@spamassassin.taint.org">Click 
+  Here</a></p>
+</body></html>
+
+

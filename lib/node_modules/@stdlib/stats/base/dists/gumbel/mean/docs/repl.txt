@@ -1,0 +1,38 @@
+
+{{alias}}( μ, β )
+    Returns the expected value of a Gumbel distribution with location parameter
+    `μ` and scale parameter `β`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `β <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    β: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Expected value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0, 1.0 )
+    ~0.577
+    > y = {{alias}}( 4.0, 2.0 )
+    ~5.154
+    > y = {{alias}}( NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+    > y = {{alias}}( 0.0, 0.0 )
+    NaN
+
+    See Also
+    --------
+

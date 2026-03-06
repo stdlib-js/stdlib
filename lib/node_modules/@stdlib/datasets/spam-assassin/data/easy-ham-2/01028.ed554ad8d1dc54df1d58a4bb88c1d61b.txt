@@ -1,0 +1,143 @@
+From fork-admin@xent.com  Wed Aug 14 11:01:47 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3EE9E44101
+	for <jm@localhost>; Wed, 14 Aug 2002 05:52:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:52:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7E8dD407178 for <jm@jmason.org>;
+    Wed, 14 Aug 2002 09:39:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 917D02940E1; Wed, 14 Aug 2002 01:37:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from pintail.mail.pas.earthlink.net
+    (pintail.mail.pas.earthlink.net [207.217.120.122]) by xent.com (Postfix)
+    with ESMTP id 7E19F2940E0 for <fork@xent.com>; Wed, 14 Aug 2002 01:36:32
+    -0700 (PDT)
+Received: from dialup-209.246.77.48.dial1.newyork1.level3.net
+    ([209.246.77.48] helo=realmeasures.dyndns.org) by
+    pintail.mail.pas.earthlink.net with esmtp (Exim 3.33 #1) id
+    17eteg-0006xb-00 for fork@xent.com; Wed, 14 Aug 2002 01:37:32 -0700
+Received: from RealMeasures.dyndns.org by realmeasures.dyndns.org with
+    SMTP (MDaemon.v2.8.7.5.R) for <fork@xent.com>; Wed, 14 Aug 2002 04:31:23
+    -0400
+Message-Id: <3D5A155A.838D33BF@RealMeasures.dyndns.org>
+From: Seth Johnson <seth.johnson@RealMeasures.dyndns.org>
+Organization: Real Measures
+X-Mailer: Mozilla 4.79 [en] (Win98; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Subject: TCPA and Palladium: Content Control for the Masses
+References: <20020809220920.E39127@networkcommand.com>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Mdaemon-Deliver-To: fork@spamassassin.taint.org
+X-Return-Path: seth.johnson@realmeasures.dyndns.org
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 14 Aug 2002 04:31:22 -0400
+
+
+TCPA and Palladium: Content Control for the Masses
+
+While security experts poke and jab at what bits and pieces
+of the TCPA and Palladium specs they can get ahold of, they
+have tended to focus on how they work and what they imply as
+far as concerns such as privacy and security go, or
+alternatively, in terms of how they would impact the
+functionality of the general purpose logic device.  Analysts
+both favorable and unfavorable have been analyzing them from
+these standpoints, while paying much less attention to what
+the proposals imply from the standpoint of what content
+control itself really means.
+
+The most significant problem with TCPA and Palladium is not
+whether they may interfere with the power of the universal
+logic device, or whether they are effectual from the
+standpoint of privacy and security concerns, though these
+are all very important concerns.  Rather, the fundamental
+problem they present is in the political premises that they
+hope to implement for the sake of the "content industries."
+
+TCPA and Palladium are the technological realization of the
+concepts embodied in the WIPO Performances and Phonograms
+Treaty (WPPT), which only came into effect this past May
+20th (with little public notice or fanfare, of course).  The
+WPPT declares an unprecedented "moral right" of authors to
+control public uses of their works.
+
+*That's* the real game plan.
+
+TCPA and Palladium are simply content control for the
+masses.  They constitute an effort to "democratize" content
+control under the concept of "moral rights," encouraging the
+public to overlook the clear public interest issues raised
+by the specter of content control, and to confuse these
+issues with private interest issues such as privacy and
+security.  They are an effort to get the public to jump on
+the bandwagon without adequate consideration of what's
+really on the line.
+
+In America, we have never supported the concept of "moral
+rights" which the WPPT professes.  The US Constitution
+accords Congress the power to grant (or deny) exclusive
+rights to works and inventions for the purpose of promoting
+the progress of the useful arts and sciences, not for the
+purpose of rewarding the originality of creators -- though
+that result is obviously a consequence of exclusive rights
+statutes such as copyright law.  Our Supreme Court
+explicitly articulates this distinction, and for very good
+reason.  In America, we implicitly understand the
+distinction between expression, the aspect of works to which
+copyright statute applies, and the facts and ideas that make
+up a work, to which it does *not* apply.
+
+The reason for this is essential and unavoidable, and must
+be stated clearly and unequivocally at this juncture:
+information is free.  It's not that it *wants* to be -- it
+*is* and it always has been.  This fact is unassailable,
+however, unless we let come to pass a world that subscribes
+to "universal content control" for the sake of so-called
+"moral rights" implemented at the behest of narrow content
+industry interests.
+
+TCPA and Palladium are initiatives that hope to encourage
+the general public, and more specifically producers of
+information products in general, to identify content control
+with "moral rights," blithely overlooking the real
+implications of information technology in a free society,
+and the long tradition of American jurisprudence upholding
+the freedom intrinsic to information, a freedom on which the
+prospects of information technology crucially depend.
+
+Seth Johnson
+
+-- 
+
+[CC] Counter-copyright:
+http://cyber.law.harvard.edu/cc/cc.html
+
+I reserve no rights restricting copying, modification or
+distribution of this incidentally recorded communication. 
+Original authorship should be attributed reasonably, but
+only so far as such an expectation might hold for usual
+practice in ordinary social discourse to which one holds no
+claim of exclusive rights.
+
+http://xent.com/mailman/listinfo/fork
+
+

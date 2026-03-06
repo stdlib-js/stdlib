@@ -1,0 +1,124 @@
+From exmh-users-admin@redhat.com  Sat Sep 14 16:22:59 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D5BBA16F03
+	for <jm@localhost>; Sat, 14 Sep 2002 16:22:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 14 Sep 2002 16:22:58 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8EDNbC04904 for
+    <jm-exmh@jmason.org>; Sat, 14 Sep 2002 14:23:37 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 605E03FB5A; Sat, 14 Sep 2002
+    09:24:02 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 611563EC22
+    for <exmh-users@listman.redhat.com>; Sat, 14 Sep 2002 09:23:12 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8EDN7j14880 for exmh-users@listman.redhat.com; Sat, 14 Sep 2002
+    09:23:07 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8EDN6k14876 for
+    <exmh-users@redhat.com>; Sat, 14 Sep 2002 09:23:06 -0400
+Received: from dimebox.bmc.com (adsl-66-140-152-233.dsl.hstntx.swbell.net
+    [66.140.152.233]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g8ED6Kw05816 for <exmh-users@redhat.com>; Sat, 14 Sep 2002 09:06:21 -0400
+Received: by dimebox.bmc.com (Postfix, from userid 1205) id 6C21138DAC;
+    Sat, 14 Sep 2002 08:23:04 -0500 (CDT)
+Received: from dimebox (localhost [127.0.0.1]) by dimebox.bmc.com
+    (Postfix) with ESMTP id 2F41638DA7 for <exmh-users@redhat.com>;
+    Sat, 14 Sep 2002 08:23:04 -0500 (CDT)
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+In-Reply-To: <200209132329.g8DNTx409571@head-cfa.harvard.edu>
+References: <200209132329.g8DNTx409571@head-cfa.harvard.edu>
+Comments: In-reply-to "Wendy P. Roberts" <wendy@head-cfa.harvard.edu>
+    message dated "Fri, 13 Sep 2002 19:29:59 -0400."
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Automated forwarding
+MIME-Version: 1.0
+From: Hal DeVore <haldevore@acm.org>
+X-Image-Url: http://www.geocities.com/hal_devore_ii/haleye48.gif
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <29520.1032009778@dimebox>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Sat, 14 Sep 2002 08:22:58 -0500
+
+
+>>>>> On Fri, 13 Sep 2002, "Wendy" == Wendy P. Roberts wrote:
+
+  Wendy> I've been trying to set a button called which
+  Wendy> automatically forwards mail using a '-form mycomps'
+  Wendy> without going through the editor, but so far haven't got
+  Wendy> the right recipe.
+
+I have one that uses dist to send stuff from my work mail to my 
+home mail.  The binding looks like this:
+
+set {bindings(key,HD_Dist_Silently -form distcomps.to-me)} <Meta-dollar>
+
+The "HD_Dist_Silently" is a hacked up version of the proc that 
+does dist in exmh and is pasted in below.  It's getting old and 
+probably should be "resynced" with the current code.  But it 
+still works (on a relatively recent CVS copy of exmh)
+
+It's also possible that there's an easier way but I hacked this 
+together quickly a year or more ago and when it worked I moved 
+on to other tasks.
+
+--Hal
+
+proc HD_Dist_Silently { args } {
+
+    global exmh msg
+    set exmh(ctype) {dist}
+    if {[string length $args] == 0} {
+	set args Mh_DistSetup
+    }
+
+    if [MsgOk $msg(id) m] {
+	if {[string compare [info command $args] $args] == 0} {
+	    # Old interface with hook procedure
+	    if [catch {$args $exmh(folder) $m} err] {   ;# Setup draft msg
+		Exmh_Status "${args}: $err" purple
+		return
+	    }
+	}  else {
+	    if [catch {
+		Exmh_Status "dist +$exmh(folder) $m"
+		eval {MhExec dist +$exmh(folder) $m} -nowhatnowproc $args
+		MhAnnoSetup $exmh(folder) $m dist
+	    } err] {
+		Exmh_Status "dist: $err" purple
+		return
+	    }
+	}
+        Edit_Done send				;# Just send it
+    }
+}
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

@@ -1,0 +1,57 @@
+From fork-admin@xent.com  Tue Aug 20 11:53:37 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CF90D43C61
+	for <jm@localhost>; Tue, 20 Aug 2002 06:52:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:52:10 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7JM6GZ11185 for <jm@jmason.org>;
+    Mon, 19 Aug 2002 23:06:17 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D31CE2940AA; Mon, 19 Aug 2002 15:04:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from alumnus.caltech.edu (alumnus.caltech.edu [131.215.49.51])
+    by xent.com (Postfix) with ESMTP id 8238529409D for <fork@xent.com>;
+    Mon, 19 Aug 2002 15:02:21 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1]) by alumnus.caltech.edu
+    (8.12.3/8.12.3) with ESMTP id g7JM3jSw001568 for <fork@xent.com>;
+    Mon, 19 Aug 2002 15:03:45 -0700 (PDT)
+MIME-Version: 1.0 (Apple Message framework v482)
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+Subject: POLICY CHANGE: subscriber-only posting
+From: Rohit Khare <khare@alumni.caltech.edu>
+To: fork@spamassassin.taint.org
+Content-Transfer-Encoding: 7bit
+Message-Id: <8369845E-B3BF-11D6-A70E-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 19 Aug 2002 15:03:37 -0700
+
+Sorry, gang, but I've flipped the switch. If your posting address 
+doesn't match your subscription address, or if you've instructed a robot 
+to forkpost on your behalf, it'll get held, silently, for me or Kragen 
+to review. Which will be rarely, so be warned.
+
+Let's see how this works out for a week or so...
+
+Rohit
+
+---
+My permanent email address is khare@alumni.caltech.edu
+
+http://xent.com/mailman/listinfo/fork
+

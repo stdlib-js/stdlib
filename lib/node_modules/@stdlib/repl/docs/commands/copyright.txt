@@ -1,0 +1,11 @@
+
+copyright()
+    Prints copyright information.
+
+    Examples
+    --------
+    > copyright()
+
+    See Also
+    --------
+    contributors, help, license

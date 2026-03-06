@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Wed Oct  2 11:47:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1EFBB16F03
+	for <jm@localhost>; Wed,  2 Oct 2002 11:47:29 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:47:29 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g920DFK17990 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 01:13:19 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id ABE142940DF; Tue,  1 Oct 2002 17:13:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barry.mail.mindspring.net (barry.mail.mindspring.net
+    [207.69.200.25]) by xent.com (Postfix) with ESMTP id D85C029409C for
+    <fork@xent.com>; Tue,  1 Oct 2002 17:12:35 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    barry.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17wX80-0005d4-00;
+    Tue, 01 Oct 2002 20:12:36 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a35b9bfe33f9362@[66.149.49.6]>
+In-Reply-To: <DAV40V7xfRyxRl7wJI100007e04@hotmail.com>
+References: <DAV40V7xfRyxRl7wJI100007e04@hotmail.com>
+To: "Mr. FoRK" <fork_list@hotmail.com>, <fork@spamassassin.taint.org>
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: The Wrong Business
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 1 Oct 2002 20:06:38 -0400
+
+At 10:27 PM -0700 on 9/30/02, Mr. FoRK wrote:
+
+
+> I realize now, that after reviewing the past several years of work and
+> career, I have been in the wrong business. The wrong business.
+>
+> This is what I should have been doing.
+>
+> http://www.rathergood.com/vikings/
+
+A New Manual has been published:
+
+<http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?userid=6T1JTEGKQP&isbn=0140447695>
+
+Or, the one I read...
+ <http://http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?userid=6T1JTEGKQP&isbn=0140441034>
+
+And, of course, the open source versions...
+
+http://users.ev1.net/~theweb/njaltoc.htm
+
+http://sunsite.berkeley.edu/OMACL/Njal/
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

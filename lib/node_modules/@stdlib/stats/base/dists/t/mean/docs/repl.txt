@@ -1,0 +1,28 @@
+
+{{alias}}( v )
+    Returns the expected value of a Student's t distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `v <= 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    v: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    out: number
+        Expected value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 11.0 )
+    0.0
+    > v = {{alias}}( 4.5 )
+    0.0
+
+    See Also
+    --------
+

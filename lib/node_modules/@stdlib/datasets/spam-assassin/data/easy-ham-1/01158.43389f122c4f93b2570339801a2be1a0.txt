@@ -1,0 +1,106 @@
+From exmh-users-admin@redhat.com  Thu Aug 22 14:44:07 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 985B247C67
+	for <jm@localhost>; Thu, 22 Aug 2002 09:44:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 14:44:04 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MDgEZ08598 for
+    <jm-exmh@jmason.org>; Thu, 22 Aug 2002 14:42:19 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id F26113EE9A; Thu, 22 Aug 2002
+    09:42:15 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 4ACEF3F4A2
+    for <exmh-users@listman.redhat.com>; Thu, 22 Aug 2002 09:38:03 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7MDc0601591 for exmh-users@listman.redhat.com; Thu, 22 Aug 2002
+    09:38:00 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7MDc0Y01587 for
+    <exmh-users@redhat.com>; Thu, 22 Aug 2002 09:38:00 -0400
+Received: from mta03bw.bigpond.com (mta03bw.bigpond.com [139.134.6.86]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7MDNVl14108 for
+    <exmh-users@redhat.com>; Thu, 22 Aug 2002 09:23:31 -0400
+Received: from hobbit.linuxworks.com.au ([144.135.24.81]) by
+    mta03bw.bigpond.com (Netscape Messaging Server 4.15 mta03bw May 23 2002
+    23:53:28) with SMTP id H18Z7300.F6G for <exmh-users@redhat.com>;
+    Thu, 22 Aug 2002 23:37:51 +1000
+Received: from CPE-203-51-220-31.qld.bigpond.net.au ([203.51.220.31]) by
+    bwmam05.mailsvc.email.bigpond.com(MailRouter V3.0n 44/32989362);
+    22 Aug 2002 23:37:51
+Received: (from tony@localhost) by hobbit.linuxworks.com.au
+    (8.11.6/8.11.6) id g7MDaWX26868; Thu, 22 Aug 2002 23:36:32 +1000
+Message-Id: <200208221336.g7MDaWX26868@hobbit.linuxworks.com.au.nospam>
+To: Exmh Users Mailing List <exmh-users@spamassassin.taint.org>
+From: Tony Nugent <tony@linuxworks.com.au>
+X-Face: ]IrGs{LrofDtGfsrG!As5=G'2HRr2zt:H>djXb5@v|Dr!jOelxzAZ`!}("]}]
+    Q!)1w#X;)nLlb'XhSu,QL>;)L/l06wsI?rv-xy6%Y1e"BUiV%)mU;]f-5<#U6
+    UthZ0QrF7\_p#q}*Cn}jd|XT~7P7ik]Q!2u%aTtvc;)zfH\:3f<[a:)M
+Organization: Linux Works for network
+X-Mailer: nmh-1.0.4 exmh-2.4
+X-Os: Linux-2.4 RedHat 7.2
+In-Reply-To: message-id <200208212046.g7LKkqf15798@mail.banirh.com> of Wed,
+    Aug 21 15:46:52 2002
+Subject: Re: Insert signature
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Thu, 22 Aug 2002 23:36:32 +1000
+
+On Wed Aug 21 2002 at 15:46, Ulises Ponce wrote:
+
+> Hi!
+> 
+> Is there a command to insert the signature using a combination of keys and not
+> to have sent the mail to insert it then?
+
+I simply put it (them) into my (nmh) component files (components,
+replcomps, forwcomps and so on).  That way you get them when you are
+editing your message.  Also, by using comps files for specific
+folders you can alter your .sig per folder (and other tricks).  See
+the docs for (n)mh for all the details.
+
+There might (must?) also be a way to get sedit to do it, but I've
+been using gvim as my exmh message editor for a long time now.  I
+load it with a command that loads some email-specific settings, eg,
+to "syntax" colour-highlight the headers and quoted parts of an
+email)... it would be possible to map some (vim) keys that would add
+a sig (or even give a selection of sigs to choose from).
+
+And there are all sorts of ways to have randomly-chosen sigs...
+somewhere at rtfm.mit.edu... ok, here we go:
+rtfm.mit.edu/pub/usenet-by-group/news.answers/signature_finger_faq.
+(Warning... it's old, May 1995).
+
+> Regards,
+> Ulises
+
+Hope this helps.
+
+Cheers
+Tony
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+

@@ -1,0 +1,27 @@
+
+{{alias}}( value )
+    Returns an object's own and inherited property descriptors.
+
+    If provided `null` or `undefined`, the function returns an empty object.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    Returns
+    -------
+    desc: Object
+        An object's own and inherited property descriptors.
+
+    Examples
+    --------
+    > function Foo() { this.beep = 'boop'; return this; };
+    > Foo.prototype.foo = 'bar';
+    > var obj = new Foo();
+    > var desc = {{alias}}( obj )
+    { 'beep': {...}, 'foo': {...}, ... }
+
+    See Also
+    --------
+

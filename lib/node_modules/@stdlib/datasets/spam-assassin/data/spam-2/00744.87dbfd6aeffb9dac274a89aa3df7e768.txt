@@ -1,0 +1,93 @@
+From fork-admin@xent.com  Thu Jul 18 14:15:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EBF6043F90
+	for <jm@localhost>; Thu, 18 Jul 2002 09:15:50 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 18 Jul 2002 14:15:50 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6IDAZJ28060 for <jm@jmason.org>;
+    Thu, 18 Jul 2002 14:10:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6622D2940AF; Thu, 18 Jul 2002 05:58:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (unknown [200.230.55.6]) by xent.com (Postfix)
+    with SMTP id 601DC294098 for <fork@xent.com>; Thu, 18 Jul 2002 05:58:03
+    -0700 (PDT)
+Content-Type: text/html; charset=ISO-8859-1
+From: megan@mail.com
+To: fork@spamassassin.taint.org
+Subject: Day, when dreams come true!
+Message-Id: <20020718125803.601DC294098@xent.com>
+Date: Thu, 18 Jul 2002 05:58:03 -0700 (PDT)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+
+<style type="text/css">
+<!--
+a {  text-decoration: none }
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFCC" text="#000000">
+<table width="100%" border="0" cellpadding="4">
+  <tr> 
+    <td bgcolor="#996633" align="center"> 
+      <font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF">Hello 
+        <b>valued member</b>! We are happy to present to you our great offer!<br>
+        Brand bew collection of <b>top rated sites</b>!<br>
+        Each include <b>3</b> <b>sites</b> at <b>cost of 1</b>!<br>
+        <b>Exclusive content</b> and <b>regulary updates</b> is garanteed!</font>
+    </td>
+  </tr>
+  <tr> 
+    <td align="center"> 
+      <a href="http://www.zoo-3in1.com/?revshare=017dfc9e"><font color="#33CC00" face="Arial, Helvetica, sans-serif"><b><font size="5">Animals</font></b><br>
+        Sex with dogs, horses, pigs and more other.....</font></a>
+    </td>
+  </tr>
+  <tr> 
+    <td align="center">
+	<a href="http://www.rapemux.com/?revshare=017dfc9e">
+      <font color="#CC3333" face="Arial, Helvetica, sans-serif"><b><font size="5">Brutal 
+        Rape</font></b><br>
+        World of violence and cruelty. Raped schoolgirls, housewifes and other 
+        sweet beaches.</font></a>
+    </td>
+  </tr>
+  <tr> 
+    <td align="center"> 
+	<a href="http://www.incest-3in1.com/?revshare=017dfc9e">
+      <font color="#0066FF" face="Arial, Helvetica, sans-serif"><b><font size="5">Incest</font></b><br>
+        Home of parental sex. No censorship. No limits.</font></a>
+    </td>
+  </tr>
+  <tr> 
+    <td align="center"> 
+	<a href="http://www.anime-3in1.com/?revshare=017dfc9e">
+      <font color="#FF9900" face="Arial, Helvetica, sans-serif"><b><font size="5">Anime</font></b><br>
+        All famous artist is worked for you. Only qualuty comics, pics and full 
+        length movies. </font></a>
+    </td>
+  </tr>
+  <tr> 
+    <td align="center"><br>
+      <b><font size="4" color="#000000" face="Verdana, Arial, Helvetica, sans-serif">Just 
+        CLICK to offer interesting to YOU !</font></b>
+    </td>
+  </tr>
+</table>
+</body>
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,57 @@
+
+{{alias}}( str )
+    Parses a duration string into an object.
+
+    A duration string is a string containing a sequence of time units. A time
+    unit is a nonnegative integer followed by a unit identifier. The following
+    unit identifiers are supported:
+
+    - d: days.
+    - h: hours.
+    - m: minutes.
+    - s: seconds.
+    - ms: milliseconds.
+
+    Duration strings are case insensitive. For example, the string `1M3S10MS` is
+    equivalent to `1m3s10ms`.
+
+    If a duration string does not contain a time unit, the respective property
+    is set to 0.
+
+    An empty string is considered a valid duration string and is parsed as
+    `0d0h0m0s0ms`.
+
+    Parameters
+    ----------
+    str: string
+        Duration string.
+
+    Returns
+    -------
+    out: Object
+        Duration object.
+
+    out.days: integer
+        Number of days.
+
+    out.hours: integer
+        Number of hours.
+
+    out.minutes: integer
+        Number of minutes.
+
+    out.seconds: integer
+        Number of seconds.
+
+    out.milliseconds: integer
+        Number of milliseconds.
+
+    Examples
+    --------
+    > var obj = {{alias}}( '1m3s10ms' )
+    { 'days': 0, 'hours': 0, 'minutes': 1, 'seconds': 3, 'milliseconds': 10 }
+    > obj = {{alias}}( '1m3s' )
+    { 'days': 0, 'hours': 0, 'minutes': 1, 'seconds': 3, 'milliseconds': 0 }
+
+    See Also
+    --------

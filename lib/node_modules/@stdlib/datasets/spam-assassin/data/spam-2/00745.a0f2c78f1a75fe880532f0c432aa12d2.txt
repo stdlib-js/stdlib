@@ -1,0 +1,115 @@
+From fork-admin@xent.com  Thu Jul 18 15:29:15 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8F02543F9E
+	for <jm@localhost>; Thu, 18 Jul 2002 10:29:14 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 18 Jul 2002 15:29:14 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6IETOJ02569 for <jm@jmason.org>;
+    Thu, 18 Jul 2002 15:29:24 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id AD5B12940E0; Thu, 18 Jul 2002 07:19:34 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mailpound.com (unknown [151.204.51.82]) by xent.com
+    (Postfix) with SMTP id 640F7294098 for <fork@xent.com>; Thu,
+    18 Jul 2002 07:19:32 -0700 (PDT)
+From: "NTM - MailPound" <info@mailpound.com>
+To: <fork@spamassassin.taint.org>
+Subject: Earn High Commissions for Booking Online
+MIME-Version: 1.0
+Date: Thu, 18 Jul 2002 10:29:04 -0400
+Message-Id: <20020718141932.640F7294098@xent.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+Content-Type: text/html; charset="ISO-8859-1"
+Content-Transfer-Encoding: 8bit
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Earn High Commissions for Booking Online</title>
+</head>
+
+<body><center>
+
+<table border="0" width="600" height="491">
+  <tr>
+    <td width="34%" height="87"><a target="_blank" href="http://www.ntmllc.com"><img
+src="http://www.mailpound.com/Images/NTM2_Ani.gif" border="0" width="120" height="74"></a></td>
+    <td width="33%" height="87"></td>
+    <td width="33%" height="87"><a target="_blank" href="http://www.mailpound.com"><img
+height="31" hspace="15" src="http://www.mailpound.com/Images/MPArt4_tm.gif" width="190"
+align="right" border="0"></a></td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="3" height="24"><font face="Times New Roman"><i><span style="COLOR:
+black"><font size="2">NORTHSTAR
+      Travel Media, LLC<span style="mso-spacerun: yes">&nbsp; </span>and
+      MailPound.com, a division of SMART Travel Technologies, Inc.</font></span><font
+size="2"><span style="COLOR: black">
+      provide travel professionals with information, services and marketing
+      solutions</span></font></i><font size="2">&nbsp;<O:P>
+      </font></font></O:P>
+      <br>
+      <hr>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="3" height="74"><b><font face="Times New Roman"
+size="4"><i>Attention: </i><br>
+      </font><font face="Times New Roman" size="3" color="#000080">Travel
+      agents, outside agents, independent agents, corporate travel agents:</font></b>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="3" height="224">
+      <p align="center"><a href="http://www.mailpound.com/pssst.htm" target="_blank">
+      <img border="0" src="http://www.mailpound.com/Images/PSSST.gif" width="350" height="200"
+align="center" vspace="9"><br>
+      (Click for more
+      information)</a></td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="3" height="62">&nbsp;
+      <p><font face="Arial" size="2">MailPound is a Trademark of SMART Travel
+      Technologies, Inc.</font></td>
+  </tr>
+</table>
+
+<p><br>
+</p>
+
+<p align="center"><font color="#FFFFFF"><img src="http://209.202.177.149/eimages/paw.gif"
+width="31" height="29">
+<font color="#331172" size="2">If you do not want to receive these messages in
+the future, please<strong> </strong></font><a
+href="http://www.mailpound.com/time/default.asp?cId=&amp;sId=&amp;e=fork@xent.com"
+target="_blank"><font color="#331172" size="2"><strong>click
+here</strong></font></a>.</font></p>
+<p align="center" class="MsoHeader" style="tab-stops:.5in"><font size="2">PLEASE
+DO NOT REPLY to this email.&nbsp;&nbsp;For questions or comments on this offer,
+please contact the supplier.&nbsp;&nbsp;<br>
+ For all other inquiries, please email us at </font><a href="mailto:support@mailpound.com"><font
+color="#000080" size="2">support@mailpound.com</font></a><font color="#000080" size="2">.<br>
+<br>
+</font></p>
+
+</body>
+
+</html>
+
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,478 @@
+{
+  "options": {
+    "task": "build",
+    "os": "linux",
+    "blas": "",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/isamax.f",
+        "./src/isamaxsub.f",
+        "./src/isamax_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/blas/base/scopy",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-int32",
+        "@stdlib/math/base/special/absf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/isamax.c",
+        "./src/isamax_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/absf"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/isamax.c",
+        "./src/isamax_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/absf"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/isamax_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/blas/base/scopy",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-int32"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/isamax_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/blas/base/scopy"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "linux",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/isamax_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/blas/base/scopy"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/isamax.f",
+        "./src/isamaxsub.f",
+        "./src/isamax_f.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/blas/base/scopy",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-int32",
+        "@stdlib/math/base/special/absf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/isamax.c",
+        "./src/isamax_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/absf"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/isamax.c",
+        "./src/isamax_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/absf"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/isamax_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/blas/base/scopy",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-int32"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/isamax_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/blas/base/scopy"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "apple_accelerate_framework",
+      "wasm": false,
+      "src": [
+        "./src/isamax_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lblas"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/blas/base/scopy"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/isamax_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/blas/base/scopy",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-int32"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/isamax_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/blas/base/scopy"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "mac",
+      "blas": "openblas",
+      "wasm": false,
+      "src": [
+        "./src/isamax_cblas.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lopenblas",
+        "-lpthread"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/blas/base/xerbla",
+        "@stdlib/blas/base/scopy"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/isamax.c",
+        "./src/isamax_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-int64",
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/napi/create-int32",
+        "@stdlib/math/base/special/absf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/isamax.c",
+        "./src/isamax_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/absf"
+      ]
+    },
+    {
+      "task": "examples",
+      "os": "win",
+      "blas": "",
+      "wasm": false,
+      "src": [
+        "./src/isamax.c",
+        "./src/isamax_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/absf"
+      ]
+    },
+
+    {
+      "task": "build",
+      "os": "",
+      "blas": "",
+      "wasm": true,
+      "src": [
+        "./src/isamax.c",
+        "./src/isamax_ndarray.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/math/base/special/absf"
+      ]
+    }
+  ]
+}

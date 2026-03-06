@@ -1,0 +1,82 @@
+From rpm-list-admin@freshrpms.net  Mon Sep 30 13:44:27 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id BFAF016F16
+	for <jm@localhost>; Mon, 30 Sep 2002 13:44:26 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:44:26 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8U9Fgg24174 for
+    <jm-rpm@jmason.org>; Mon, 30 Sep 2002 10:15:42 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8U9C1f29896; Mon, 30 Sep 2002 11:12:01
+    +0200
+Received: from mailout11.sul.t-online.com (mailout11.sul.t-online.com
+    [194.25.134.85]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g8U9BZf29771 for <rpm-list@freshrpms.net>; Mon, 30 Sep 2002 11:11:35 +0200
+Received: from fwd03.sul.t-online.de by mailout11.sul.t-online.com with
+    smtp id 17vwaU-0002CP-00; Mon, 30 Sep 2002 11:11:34 +0200
+Received: from puariko.homeip.net (520039812576-0001@[217.231.242.136]) by
+    fmrl03.sul.t-online.com with esmtp id 17vwaK-02QgngC; Mon, 30 Sep 2002
+    11:11:24 +0200
+From: Axel Thimm <Axel.Thimm@physik.fu-berlin.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: All set for Red Hat Linux 8.0
+Message-Id: <20020930111121.B14995@bonzo.nirvana>
+References: <20020930092826.7c8f5791.matthias@rpmforge.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020930092826.7c8f5791.matthias@rpmforge.net>;
+    from matthias@rpmforge.net on Mon, Sep 30, 2002 at 09:28:26AM +0200
+X-Sender: 520039812576-0001@t-dialin.net
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 30 Sep 2002 11:11:21 +0200
+Date: Mon, 30 Sep 2002 11:11:21 +0200
+
+Matthias,
+
+On Mon, Sep 30, 2002 at 09:28:26AM +0200, Matthias Saou wrote:
+> All freshrpms.net is now set for the imminent release of Red Hat Linux 8.0.
+
+thanks a lot for all your effords! It is just great!
+
+> I'll probably post to the list once I open up ftp.freshrpms.net so you can
+> be the first ones to get in and download, although I doubt you'll have
+> trouble finding access to at least one fast mirror using my mirror list.
+
+You mean the mirror list for RH8.0, or do there exist mirrors for your apt
+repo?
+
+On Sat, Sep 28, 2002 at 06:37:54PM +0200, Matthias Saou wrote: 
+> I'll keep you all posted on Monday! They'll even be a big apt-related 
+> surprise! ;-)))) 
+
+Was this the surprise, or will there be even more (where are my heart pills)? ;)
+
+Thanks Matthias!
+-- 
+Axel.Thimm@physik.fu-berlin.de
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

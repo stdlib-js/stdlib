@@ -1,0 +1,30 @@
+
+{{alias}}( x )
+    Converts an angle from radians to degrees.
+
+    Parameters
+    ----------
+    x: number
+        Angle in radians.
+
+    Returns
+    -------
+    d: number
+        Angle in degrees.
+
+    Examples
+    --------
+    > var d = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/2.0 )
+    90.0
+    > d = {{alias}}( -{{alias:@stdlib/constants/float64/pi}}/4.0 )
+    -45.0
+    > d = {{alias}}( NaN )
+    NaN
+
+    // Due to finite precision, canonical values may not be returned:
+    > d = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/6.0 )
+    29.999999999999996
+
+    See Also
+    --------
+

@@ -1,0 +1,84 @@
+
+{{alias}}( p, r, v[, nranges] )
+    Evaluates the quantile function for a studentized range distribution.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `r < 2` or `v < 2`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    r: number
+        Sample size for range (same for each group).
+
+    v: number
+        Degrees of freedom.
+
+    nranges: integer
+        Number of groups whose maximum range is considered. Default: 1.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = quantile( 0.5, 3.0, 2.0 )
+     ~0.0644
+
+    > y = quantile( 0.9, 17.0, 2.0 )
+     ~0.913
+
+    > y = quantile( 0.5, 3.0, 2.0, 2 )
+     ~0.01
+
+    > y = {{alias}}( -0.2, 3.0, 3.0 )
+    NaN
+
+    > y = {{alias}}( NaN, 2.0, 2.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 2.0 )
+    NaN
+
+    > y = {{alias}}( 0.5, -1.0, 2.0 )
+    NaN
+
+
+{{alias}}.factory( r, v[, nranges] )
+    Returns a function for evaluating the quantile function of a studentized
+    range distribution.
+
+    Parameters
+    ----------
+    r: number
+        Sample size for range (same for each group).
+
+    v: number
+        Degrees of freedom.
+
+    nranges: integer
+        Number of groups whose maximum range is considered. Default: 1.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = quantile.factory( 3.0, 3.0 );
+    > var y = myQuantile( 0.5 )
+   ~1.791
+
+    > y = myQuantile( 0.8 )
+   ~3.245
+
+    See Also
+    --------
+

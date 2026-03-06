@@ -1,0 +1,12 @@
+
+{{alias}}
+    Smallest positive denormalized single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    1.401298464324817e-45
+
+    See Also
+    --------
+

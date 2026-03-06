@@ -1,0 +1,63 @@
+
+{{alias}}( obj, path[, options] )
+    Returns a nested property value.
+
+    Parameters
+    ----------
+    obj: ObjectLike
+        Input object.
+
+    path: string|Array
+        Key path.
+
+    options: Object (optional)
+        Options.
+
+    options.sep: string (optional)
+        Key path separator. Default: '.'.
+
+    Returns
+    -------
+    out: any
+        Nested property value.
+
+    Examples
+    --------
+    > var obj = { 'a': { 'b': { 'c': 'd' } } };
+    > var val = {{alias}}( obj, 'a.b.c' )
+    'd'
+
+    // Specify a custom separator via the `sep` option:
+    > var obj = { 'a': { 'b': { 'c': 'd' } } };
+    > var val = {{alias}}( obj, 'a/b/c', { 'sep': '/' } )
+    'd'
+
+{{alias}}.factory( path[, options] )
+    Creates a reusable deep get function.
+
+    Parameters
+    ----------
+    path: string|Array
+        Key path.
+
+    options: Object (optional)
+        Options.
+
+    options.sep: string (optional)
+        Key path separator. Default: '.'.
+
+    Returns
+    -------
+    out: Function
+        Deep get factory.
+
+    Examples
+    --------
+    > var dget = {{alias}}.factory( 'a/b/c', { 'sep': '/' } );
+    > var obj = { 'a': { 'b': { 'c': 'd' } } };
+    > var val = dget( obj )
+    'd'
+
+    See Also
+    --------
+

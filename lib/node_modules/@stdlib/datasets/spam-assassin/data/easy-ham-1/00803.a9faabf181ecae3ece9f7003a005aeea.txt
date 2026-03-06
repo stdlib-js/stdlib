@@ -1,0 +1,68 @@
+From fork-admin@xent.com  Mon Sep 30 13:52:55 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0138E16F82
+	for <jm@localhost>; Mon, 30 Sep 2002 13:49:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:49:00 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8SNcOg14512 for <jm@jmason.org>;
+    Sun, 29 Sep 2002 00:38:24 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2EBD02940C9; Sat, 28 Sep 2002 16:34:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id 4AA672940C1 for <fork@xent.com>;
+    Sat, 28 Sep 2002 16:33:47 -0700 (PDT)
+Received: (qmail 486 invoked from network); 28 Sep 2002 23:37:47 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 28 Sep 2002 23:37:47 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id E8CB21B62C;
+    Sat, 28 Sep 2002 19:37:42 -0400 (EDT)
+To: Bill Humphries <bill@whump.com>
+Cc: gbolcer@endeavors.com, FoRK <fork@spamassassin.taint.org>
+Subject: Re: EBusiness Webforms: cluetrain has left the station
+References: <774F0112-D32A-11D6-8BB1-003065F62CD6@whump.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2smztfzy1.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 28 Sep 2002 19:37:42 -0400
+
+>>>>> "B" == Bill Humphries <bill@whump.com> writes:
+
+    B> Yes, but this is what normally happened:
+
+    B> Engineer: we can put ...
+    B> Designer: there's a ...
+    B> Creative Director: I want it in blue ...
+
+
+Yup, seen it happen oodles of times, only all three of those folks
+are one and the same person.  The fourth is the business manager
+who says "whatever, so long as you do it on your own time"
+
+-- 
+Gary Lawrence Murphy - garym@teledyn.com - TeleDynamics Communications
+ - blog: http://www.auracom.com/~teledyn - biz: http://teledyn.com/ -
+  "Computers are useless. They can only give you answers." (Picasso)
+
+

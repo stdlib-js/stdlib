@@ -1,0 +1,83 @@
+From ilug-admin@linux.ie  Fri Aug  2 16:33:55 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3FA9E44104
+	for <jm@localhost>; Fri,  2 Aug 2002 11:33:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 16:33:11 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72FNYl01279 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 16:23:34 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA15400; Fri, 2 Aug 2002 16:20:12 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from nwkea-mail-2.sun.com (nwkea-mail-2.sun.com [192.18.42.14])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id QAA15366 for
+    <ilug@linux.ie>; Fri, 2 Aug 2002 16:20:06 +0100
+Received: from sunire.Ireland.Sun.COM ([129.156.220.30]) by
+    nwkea-mail-2.sun.com (8.9.3+Sun/8.9.3) with ESMTP id IAA03152 for
+    <ilug@linux.ie>; Fri, 2 Aug 2002 08:19:33 -0700 (PDT)
+Received: from sionnach.ireland.sun.com (sionnach [129.156.220.28]) by
+    sunire.Ireland.Sun.COM (8.11.6+Sun/8.11.6/ENSMAIL,v2.2) with ESMTP id
+    g72FJXl03614 for <ilug@linux.ie>; Fri, 2 Aug 2002 16:19:33 +0100 (BST)
+Received: from sionnach (localhost [127.0.0.1]) by
+    sionnach.ireland.sun.com (8.12.2+Sun/8.12.2) with ESMTP id g72FJWfE001695
+    for <ilug@linux.ie>; Fri, 2 Aug 2002 16:19:32 +0100 (BST)
+Message-Id: <200208021519.g72FJWfE001695@sionnach.ireland.sun.com>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Irish Linux Users Group <ilug@linux.ie>
+From: Albert White - SUN Ireland <albert.white@ireland.sun.com>
+Subject: Re: [ILUG] inputting chinese characters in Redhat 7.3
+In-Reply-To: Message from Kenn Humborg <kenn@linux.ie> of
+    "Thu, 01 Aug 2002 02:41:41 BST."
+    <20020801024141.A1980@excalibur.research.wombat.ie>
+Date: Fri, 02 Aug 2002 16:19:32 +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+
+fergal@esatclear.ie said:
+> 7.3 seems to support Chinese input out of the box, it's got
+> miniChinput and  some other stuff no documentation. I cannot get much
+> sense from the  Chinese-HOWTO (it seems the HOWTOs no longer come with
+> Redhat which sucks  somewhat, are they hidden on 1 of the disks or
+> something?) and google is a  bit of a dead end too.
+
+> Can anyone tell me what I should do? Thanks,
+
+How about xcin?
+http://xcin.linux.org.tw/
+
+This is an example of an XIM approach that Brian mentioned. hint shift-space 
+get you back to typing in english.
+
+The speed you can type at will be very dependent on how well you know the 
+input method and in some cases how well you know how to construct chinese 
+characters.
+
+I have seen people using electronic pen and tablet devices to just write the 
+characters in, though that was windows.
+
+~Al
+-- 
+Expressed in this posting are my opinions.  They are in no way related
+to opinions held by my employer, Sun Microsystems.
+Statements on Sun products included here are not gospel and may
+be fiction rather than truth.
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

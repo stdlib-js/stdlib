@@ -1,0 +1,53 @@
+
+{{alias}}( W )
+    Returns an accumulator function which incrementally computes a moving
+    product.
+
+    The `W` parameter defines the number of values over which to compute the
+    moving product.
+
+    If provided a value, the accumulator function returns an updated moving
+    product. If not provided a value, the accumulator function returns the
+    current moving product.
+
+    As `W` values are needed to fill the window buffer, the first `W-1` returned
+    values are calculated from smaller sample sizes. Until the window is full,
+    each returned value is calculated from all provided values.
+
+    For accumulations over large windows or accumulations of large numbers, care
+    should be taken to prevent overflow. Note, however, that overflow/underflow
+    may be transient, as the accumulator does not use a double-precision
+    floating-point number to store an accumulated product. Instead, the
+    accumulator splits an accumulated product into a normalized fraction and
+    exponent and updates each component separately. Doing so guards against a
+    loss in precision.
+
+    Parameters
+    ----------
+    W: integer
+        Window size.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}( 3 );
+    > var p = accumulator()
+    null
+    > p = accumulator( 2.0 )
+    2.0
+    > p = accumulator( -5.0 )
+    -10.0
+    > p = accumulator( 3.0 )
+    -30.0
+    > p = accumulator( 5.0 )
+    -75.0
+    > p = accumulator()
+    -75.0
+
+    See Also
+    --------
+

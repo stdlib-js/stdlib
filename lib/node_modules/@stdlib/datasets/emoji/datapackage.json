@@ -1,0 +1,28 @@
+{
+  "name": "stdlib-datasets-emoji",
+  "version": "",
+  "title": "Emoji",
+  "description": "An emoji database.",
+  "resources": [
+    {
+      "name": "emoji-json",
+      "title": "Emoji",
+      "description": "An emoji database.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Unicode Technical Standard",
+      "web": "http://www.unicode.org/reports/tr51"
+    }
+  ],
+  "keywords": [
+    "emoji"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

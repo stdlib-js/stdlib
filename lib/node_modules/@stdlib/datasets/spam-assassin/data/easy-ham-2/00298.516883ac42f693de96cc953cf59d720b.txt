@@ -1,0 +1,61 @@
+From ilug-admin@linux.ie  Fri Aug  9 15:05:38 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2397243FB1
+	for <jm@localhost>; Fri,  9 Aug 2002 10:05:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:05:37 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79E37b04371 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:03:07 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA11736; Fri, 9 Aug 2002 15:00:10 +0100
+Received: from odin.isw.intel.com (swfdns01.isw.intel.com [192.55.37.143])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id PAA11707 for
+    <ilug@linux.ie>; Fri, 9 Aug 2002 15:00:04 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host swfdns01.isw.intel.com
+    [192.55.37.143] claimed to be odin.isw.intel.com
+Received: from swsmsxvs01.isw.intel.com (swsmsxvs01.isw.intel.com
+    [172.28.130.22]) by odin.isw.intel.com (8.11.6/8.11.6/d: solo.mc,
+    v 1.42 2002/05/23 22:21:11 root Exp $) with SMTP id g79Dxwq03942 for
+    <ilug@linux.ie>; Fri, 9 Aug 2002 13:59:58 GMT
+Received: from swsmsx17.isw.intel.com ([172.28.130.21]) by
+    swsmsxvs01.isw.intel.com (NAVGW 2.5.2.11) with SMTP id
+    M2002080914584320181 for <ilug@linux.ie>; Fri, 09 Aug 2002 14:58:43 +0100
+Received: by swsmsx17.isw.intel.com with Internet Mail Service
+    (5.5.2653.19) id <L81TGDFL>; Fri, 9 Aug 2002 15:03:57 +0100
+Message-Id: <A92DB5482F76D51193290002A50A5612015632D3@irsmsx103.ir.intel.com>
+From: "Satelle, StevenX" <stevenx.satelle@intel.com>
+To: "Ilug (E-mail)" <ilug@linux.ie>
+Date: Fri, 9 Aug 2002 14:59:52 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: [ILUG] Digital Cameras
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Has anyone had any experience with using a digital camera with Linux, I'm
+thinking of buying one. The camera will definitely be a HP camera (Since I
+work for them and get a company discount) either a photosmart 318 or a
+photosmart 120 and I would prefer to know before I buy if I can get it to
+work or not
+
+Steven Satelle
+TAC
+i606 4372
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

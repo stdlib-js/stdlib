@@ -1,0 +1,78 @@
+
+{{alias}}( arr[, options] )
+    Shuffles elements of an array-like object.
+
+    Parameters
+    ----------
+    arr: ArrayLike
+        Array-like object to shuffle.
+
+    options: Object (optional)
+        Options.
+
+    options.copy: string (optional)
+        String indicating whether to return a copy (`deep`,`shallow` or `none`).
+        Default: `'shallow'`.
+
+    Returns
+    -------
+    out: ArrayLike
+        Shuffled array-like object.
+
+    Examples
+    --------
+    > var data = [ 1, 2, 3 ];
+    > var out = {{alias}}( data )
+    e.g., [ 3, 1, 2 ]
+    > out = {{alias}}( data, { 'copy': 'none' } );
+    > var bool = ( data === out )
+    true
+
+
+{{alias}}.factory( [options] )
+    Returns a function to shuffle elements of array-like objects.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.seed: integer (optional)
+        Integer-valued seed.
+
+    options.copy: string (optional)
+        String indicating whether to return a copy (`deep`,`shallow` or `none`).
+        Default: `'shallow'`.
+
+    Returns
+    -------
+    fcn: Function
+        Shuffle function.
+
+    Examples
+    --------
+    > var myshuffle = {{alias}}.factory();
+
+    // Set a seed:
+    > myshuffle = {{alias}}.factory({ 'seed': 239 });
+    > var arr = [ 0, 1, 2, 3, 4 ];
+    > var out = myshuffle( arr )
+    e.g., [ 3, 4, 1, 0, 2 ]
+
+    // Use a different copy strategy:
+    > myshuffle = {{alias}}.factory({ 'copy': 'none', 'seed': 867 });
+
+    // Created shuffle function mutates input array by default:
+    > arr = [ 1, 2, 3, 4, 5, 6 ];
+    > out = myshuffle( arr );
+    > var bool = ( arr === out )
+    true
+    // Default option can be overridden:
+    > arr = [ 1, 2, 3, 4 ];
+    > out = myshuffle( arr, { 'copy': 'shallow' } );
+    > bool = ( arr === out )
+    false
+
+    See Also
+    --------
+

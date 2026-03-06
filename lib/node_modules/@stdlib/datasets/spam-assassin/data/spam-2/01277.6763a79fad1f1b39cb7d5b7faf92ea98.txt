@@ -1,0 +1,220 @@
+From fork-admin@xent.com  Tue Aug  6 12:53:10 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8C75C44177
+	for <jm@localhost>; Tue,  6 Aug 2002 07:22:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 12:22:30 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g74C4sv27254 for <jm@jmason.org>;
+    Sun, 4 Aug 2002 13:04:55 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3031E2940EB; Sun,  4 Aug 2002 05:02:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from $domain (unknown [217.165.72.151]) by xent.com (Postfix)
+    with SMTP id EDD662940B4 for <fork@xent.com>; Sun,  4 Aug 2002 05:01:24
+    -0700 (PDT)
+X-Encoding: MIME
+X-Priority: 3
+To: fork@spamassassin.taint.org
+Subject: Mortgage Rates Have Never Been Lower
+Message-Id: <19JY5MHBQ04L3A3U9ACM.9EPF8N.fork@spamassassin.taint.org>
+X-Msmail-Priority: Normal
+Received: from xent.com by VGKU0V0.xent.com with SMTP for fork@spamassassin.taint.org;
+    Sun, 04 Aug 2002 08:06:12 -0500
+X-Sender: fork@spamassassin.taint.org
+Reply-To: fork@spamassassin.taint.org
+From: fork@spamassassin.taint.org
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 04 Aug 2002 08:06:12 -0500
+Content-Type: multipart/alternative; boundary="----=_NextPart_1201_65472431353854800184200"
+Content-Transfer-Encoding: quoted-printable
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_1201_65472431353854800184200
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+We will help you get the mortgage loan you want! 
+
+Only takes 2 minutes to fill out our form. 
+http://xnet.123alias.com/index.php
+
+Whether a new home loan is what you seek or to refinance your current home =
+loan
+at a lower interest rate and payment, we can help!
+
+Mortgage rates haven't been this low in the last 12 months, take action now!
+Refinance your home with us and include all of those pesky credit card bills =
+or
+use the extra cash for that pool you've always wanted... 
+
+Where others says NO, we say YES!!!
+Even if you have been turned down elsewhere, we can help! 
+
+Easy terms! Our mortgage referral service combines the
+highest quality loans with most economical rates and the easiest =
+qualification!
+
+Click Here to fill out our form. 
+http://xnet.123alias.com/index.php
+
+ 
+
+
+------=_NextPart_1201_65472431353854800184200
+Content-Type: text/html;
+	charset=iso-8859-1
+Content-Transfer-Encoding: Quoted-Printable
+
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta name=3D"GENERATOR" content=3D"Mozilla/4.77 [en] (Windows NT 5.0; U) =
+[Netscape]">
+   <title>Get the perfect mortgage fast. It's simple.</title>
+</head>
+<body text=3D"#000000" bgcolor=3D"#FFFFFF">
+
+<center><table BORDER=3D0 CELLSPACING=3D0 CELLPADDING=3D0 WIDTH=3D"535">
+<tr>
+<td><img SRC=3D"http://xnet.123alias.com/images/headline.gif" NOSAVE height=3D24 =
+width=3D384>
+<p><font face=3D"Arial, Helvetica, sans-serif"><font size=3D-1>We can help
+find the perfect mortgage for you. Just click on the option below that
+best meets your needs:</font></font>
+<center><table BORDER=3D0 CELLSPACING=3D0 CELLPADDING=3D0 WIDTH=3D"535" >
+<caption>&nbsp;</caption>
+
+<tr>
+<td ALIGN=3DCENTER VALIGN=3DTOP WIDTH=3D"60">
+<center><img SRC=3D"http://xnet.123alias.com/images/button_red.gif" NOSAVE =
+height=3D15 width=3D15></center>
+</td>
+
+<td ALIGN=3DLEFT VALIGN=3DTOP WIDTH=3D"250"><b><font face=3D"Arial, Helvetica, =
+sans-serif"><font size=3D+0><a href=3D"http://xnet.123alias.com/index.=
+php">Refinance
+your existing mortgage</a></font></font></b>
+<br><i><font face=3D"Arial, Helvetica, sans-serif"><font color=3D"#666666"><font =
+size=3D+0>lower
+your payments</font></font></font></i></td>
+
+<td ALIGN=3DLEFT VALIGN=3DCENTER ROWSPAN=3D"4" WIDTH=3D"225"><img SRC=3D"http://xnet.=
+123alias.com/images/mort_house_image2.jpg" NOSAVE height=3D122 width=3D196></td>
+</tr>
+
+<tr>
+<td ALIGN=3DCENTER VALIGN=3DTOP WIDTH=3D"60">
+<center><img SRC=3D"http://xnet.123alias.com/images/button_red.gif" NOSAVE =
+height=3D15 width=3D15></center>
+</td>
+
+<td ALIGN=3DLEFT VALIGN=3DTOP WIDTH=3D"250"><b><font face=3D"Arial, Helvetica, =
+sans-serif"><font size=3D+0><a href=3D"http://xnet.123alias.com/index.=
+php">Consolidate
+your debt</a></font></font></b>
+<br><i><font face=3D"Arial, Helvetica, sans-serif"><font color=3D"#666666"><font =
+size=3D+0>simplify
+your life</font></font></font></i></td>
+</tr>
+
+<tr>
+<td ALIGN=3DCENTER VALIGN=3DTOP WIDTH=3D"60">
+<center><img SRC=3D"http://xnet.123alias.com/images/button_red.gif" NOSAVE =
+height=3D15 width=3D15></center>
+</td>
+
+<td ALIGN=3DLEFT VALIGN=3DTOP WIDTH=3D"250"><b><font face=3D"Arial, Helvetica, =
+sans-serif"><font size=3D+0><a href=3D"http://xnet.123alias.com/index.php">Home
+Equity financing</a></font></font></b>
+<br><i><font face=3D"Arial, Helvetica, sans-serif"><font color=3D"#666666"><font =
+size=3D+0>get
+extra cash</font></font></font></i></td>
+</tr>
+
+<tr>
+<td ALIGN=3DCENTER VALIGN=3DTOP WIDTH=3D"60">
+<center><img SRC=3D"http://xnet.123alias.com/images/button_red.gif" NOSAVE =
+height=3D15 width=3D15></center>
+</td>
+
+<td ALIGN=3DLEFT VALIGN=3DTOP WIDTH=3D"250"><b><font face=3D"Arial, Helvetica, =
+sans-serif"><font size=3D+0><a href=3D"http://xnet.123alias.com/index.=
+php">Purchase
+a home</a></font></font></b>
+<br><i><font face=3D"Arial, Helvetica, sans-serif"><font color=3D"#666666"><font =
+size=3D+0>there's
+never been a better time</font></font></font></i></td>
+</tr>
+
+<tr>
+<td ALIGN=3DCENTER VALIGN=3DTOP WIDTH=3D"60"><img SRC=3D"http://xnet.123alias.=
+com/images/spacer.gif" height=3D10 width=3D60></td>
+
+<td ALIGN=3DLEFT VALIGN=3DTOP WIDTH=3D"250"><img SRC=3D"http://xnet.123alias.=
+com/images/spacer.gif" height=3D10 width=3D250></td>
+
+<td ALIGN=3DLEFT VALIGN=3DCENTER WIDTH=3D"225"><img SRC=3D"http://xnet.123alias.=
+com/images/spacer.gif" height=3D10 width=3D225></td>
+</tr>
+</table></center>
+<font face=3D"Arial, Helvetica, sans-serif"><font size=3D-1><b>Here's how it
+works... </b>After completing a short form, we will automatically sort
+through our database of over 2700 lenders to find the ones most qualified
+to meet your needs. Up to three lenders will then contact you and compete
+for your business. The search is <b>free</b> and <b>there's no obligation
+to continue.</b> It's that easy, so <b><a href=3D"http://xnet.123alias.=
+com/index.php">click
+here</a></b> to get started now!&nbsp;</font></font></td>
+</tr>
+</table></center>
+<BR><BR>
+<center>
+<hr WIDTH=3D"540"></center>
+
+<center><table BORDER=3D0 CELLSPACING=3D0 CELLPADDING=3D0 COLS=3D1 WIDTH=3D"540" >
+<tr>
+<td><center><font face=3D"Arial,Helvetica"><font size=3D-2><font =
+color=3D"#000000">This
+email was sent to you via Saf-E Mail Systems.&nbsp; Your email address
+was automatically inserted into the To and From addresses to eliminate
+undeliverables which waste bandwidth and cause internet congestion. Your
+email or webserver <b>IS NOT </b>being used for the sending of this mail.
+No-one else is receiving emails from your address. You may utilize the
+removal link below if you do not wish to receive this mailing. </font>
+<br><font face=3D"Arial,Helvetica"><font size=3D-2>&nbsp;</font></font>
+<br><b>Please <a href=3D"http://xnet.123alias.com/remove.html">Remove =
+Me</a></b>
+<br><b><font face=3D"Arial,Helvetica"><font size=3D-2>&nbsp;</font></font></b>
+<br><font face=3D"Arial,Helvetica"><font color=3D"#000000"><font size=3D-2>Saf-E =
+Mail Systems, PO Box 116-3015 San Rafael de Heredia, =
+CR</font></font></font></center></td>
+</tr>
+</table></center>
+
+</body>
+</html>
+
+
+------=_NextPart_1201_65472431353854800184200--
+
+http://xent.com/mailman/listinfo/fork
+
+

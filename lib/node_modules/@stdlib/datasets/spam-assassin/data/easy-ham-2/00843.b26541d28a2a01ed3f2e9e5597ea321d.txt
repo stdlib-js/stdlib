@@ -1,0 +1,56 @@
+From fork-admin@xent.com  Wed Jul 24 01:31:14 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DD274440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 20:31:13 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 01:31:13 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O0Sk406594 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 01:28:46 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 84EC52940AC; Tue, 23 Jul 2002 17:18:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id 88A4B2940A3 for
+    <fork@xent.com>; Tue, 23 Jul 2002 17:17:46 -0700 (PDT)
+Received: (qmail 19201 invoked by uid 501); 24 Jul 2002 00:26:48 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    24 Jul 2002 00:26:48 -0000
+From: CDale <cdale@techmonkeys.net>
+To: fork@spamassassin.taint.org
+Subject: moooozilla
+Message-Id: <Pine.LNX.4.44.0207231926230.27125-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 19:26:48 -0500 (CDT)
+
+funny load message:
+moo!moo!moo!moo!moo!moo!moo!moo!moo!moo!moo!moo!Document http://flog.us/ 
+loaded successfully
+
+teehee
+C
+
+-- 
+"My theology, briefly, is that the universe was dictated but not
+          signed."  (Christopher Morley) 
+
+
+http://xent.com/mailman/listinfo/fork
+
+

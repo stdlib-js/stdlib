@@ -1,0 +1,60 @@
+From fork-admin@xent.com  Tue Aug 27 17:34:36 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D392343F99
+	for <jm@localhost>; Tue, 27 Aug 2002 12:34:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 27 Aug 2002 17:34:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7RGUhZ16819 for <jm@jmason.org>;
+    Tue, 27 Aug 2002 17:30:43 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5B27D294204; Tue, 27 Aug 2002 09:28:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from panacea.canonical.org (ns1.canonical.org [209.115.72.29])
+    by xent.com (Postfix) with ESMTP id 625DA2940CE for <fork@xent.com>;
+    Tue, 27 Aug 2002 09:27:33 -0700 (PDT)
+Received: by panacea.canonical.org (Postfix, from userid 1004) id
+    3C5C23F4F3; Tue, 27 Aug 2002 12:27:40 -0400 (EDT)
+From: Kragen Sitaker <kragen@pobox.com>
+To: fork@spamassassin.taint.org
+Subject: Re: The MIME information you requested (last changed 3154 Feb 14)
+Message-Id: <20020827162740.GA24107@canonical.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.28i
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 27 Aug 2002 12:27:40 -0400
+
+Justin Mason writes:
+> Has anyone figured out what's up with this?  Does someone out there
+> think that FoRK needs some MIME tutoring?
+
+I was puzzled at first, but I think I understand what happened.
+
+First, I approved the post because it didn't appear to be spam, even
+though it wasn't from a member.  I thought it was odd that someone
+wanted to send the MIME blurb to the list, but it was not really that
+different from causing the New York Times web site to send a story to
+the list.  (Except that the bits here are antediluvian, but old bits are
+a problem to be solved by social opporobrium, not technical constraints.)
+
+But I think what actually happened is that some idiot got infected by
+Klez and had both FoRK and the pine-robot autoresponder address in their
+mailbox or addressbook, so Klez forged mail from fork@xent.com to the
+autoresponder, which responded.  To FoRK.
+

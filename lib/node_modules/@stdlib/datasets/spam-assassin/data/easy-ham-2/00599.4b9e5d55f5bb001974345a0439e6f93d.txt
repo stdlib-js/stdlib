@@ -1,0 +1,105 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:35:21 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6705B440E4
+	for <jm@localhost>; Fri,  9 Aug 2002 10:33:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:33:50 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79ERFb07087 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:27:15 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id CAA02699 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 02:37:17 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cyTa-000835-00; Thu,
+    08 Aug 2002 18:22:02 -0700
+Received: from kechara-p.flame.org ([204.152.186.129]
+    helo=kechara.flame.org) by usw-sf-list1.sourceforge.net with smtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17cyTN-0003o1-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 08 Aug 2002 18:21:49 -0700
+Received: (qmail 6559 invoked by uid 173); 9 Aug 2002 01:21:43 -0000
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] Re: keep submitting known spam?
+References: <Pine.LNX.4.44.0208082019060.29818-100000@nightwatch.storm>
+    <85A5EBA4-AB0F-11D6-BCF2-00039396ECF2@deersoft.com>
+    <aiv2lr$aib$1@main.gmane.org>
+From: Michael Graff <explorer@flame.org>
+In-Reply-To: <aiv2lr$aib$1@main.gmane.org>
+Message-Id: <v64re4kes8.fsf@kechara.flame.org>
+User-Agent: Gnus/5.0808 (Gnus v5.8.8) Emacs/21.2
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: 08 Aug 2002 18:21:43 -0700
+Date: 08 Aug 2002 18:21:43 -0700
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Ok, time for me to pipe in.  :)
+
+Honestly, I find it odd that the spam fighting groups aren't working
+and playing well, when the common enemy is the spammers, not each
+other.  MAPS and ORBS had a battle for a while, and now DCC seems to
+have issues with Razor.  Honestly, work on your own stuff, and let's
+fix the spam problem, not pull out rulers.
+
+In a spam filter, I'm much, much more concerned about false positives
+than false negatives.  Additionally, since spam types are so varied, I
+use all available and trustworthy (to me) methods to detect it.  I
+tend to want something that has three levels (although nothing like
+this exists, yet):
+
+        red     is most certainly spam, verified by high ratings from
+                several sources, and noone says "I know this is NOT
+                spam."  I'd probably drop this into a bit-bucket, or
+                archive it for humor value.  I expect no
+                false-positives to be here.
+
+        yellow  This may be spam.  A human should decide (and report).
+
+        green   This is probably not spam.
+
+spamassassin does something useful here, but it only has the is/isn't
+switch, not is/maybe/isn't.  That said, razor is but one check in my
+spam fighting arsenal, so if it reports "doesn't match known spam"
+once in a while for well-known spam, something else will probably get
+it.
+
+- --Michael
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (NetBSD)
+Comment: See http://www.flame.org/~explorer/pgp for my keys
+
+iD8DBQE9Uxknl6Nz7kJWYWYRAqZVAKCAD46joOEZbIk+8Hx3ZGkVQ7eGZwCfRB+V
+T67XLOPP4vG99Fg2h72gHek=
+=Evue
+-----END PGP SIGNATURE-----
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

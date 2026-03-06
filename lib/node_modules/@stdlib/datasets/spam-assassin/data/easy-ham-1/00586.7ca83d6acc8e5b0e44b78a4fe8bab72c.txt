@@ -1,0 +1,141 @@
+From fork-admin@xent.com  Tue Sep 17 11:29:48 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 657D616F03
+	for <jm@localhost>; Tue, 17 Sep 2002 11:29:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 11:29:47 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8GJJZC06421 for <jm@jmason.org>;
+    Mon, 16 Sep 2002 20:19:36 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 97E102940CF; Mon, 16 Sep 2002 12:16:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id BEBD02940CD for <fork@xent.com>; Mon,
+    16 Sep 2002 12:15:47 -0700 (PDT)
+Received: (qmail 30648 invoked from network); 16 Sep 2002 19:19:01 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 16 Sep 2002 19:19:01 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: "'Stephen D. Williams'" <sdw@lig.net>
+Cc: <fork@spamassassin.taint.org>, <lea@lig.net>
+Subject: RE: Slaughter in the Name of God
+Message-Id: <003701c25db5$e9d7e860$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+In-Reply-To: <3D8628B3.1020906@hpti.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 16 Sep 2002 12:18:59 -0700
+
+First, it was my understanding that they had the food before they
+refused to pay.  I often have the goods in my possession before I settle
+the paycheck.
+
+Second, 'not being paid for a little food' is an awfully big deal in
+India.  It isn't far from stealing the only food my children have so
+I'll have to watch them starve.  The margin of survival is very, very,
+thin.
+
+So yes.  In my particular reality distortion field 'not paying for a
+little food' in India is akin to a direct act of violence intended to
+cause suffering if not death on the victims family.  That such an act
+triggers a violent response is, IMHO, hardly surprising.
+
+In other words, as far as I could tell the people on the train fired the
+first shot.
+
+With all of that said I still don't know if this happened or not.  Nor
+do I know for sure that the margin of survival for those Muslim vendors
+was that thin.
+
+
+> -----Original Message-----
+> From: Stephen D. Williams [mailto:swilliams@hpti.com]
+> Sent: Monday, September 16, 2002 11:54 AM
+> To: johnhall@evergo.net
+> Cc: fork@spamassassin.taint.org; lea@lig.net
+> Subject: Re: Slaughter in the Name of God
+> 
+> Wow!  It seems you are evaluating this with a large reality distortion
+> field.
+> 
+> If the activists on the train refused to pay for food, then the
+vendors
+> shouldn't give it to them.  And the local police force should be
+> arresting them.  Etc.
+> 
+> You have to be operating from a particularly primitive point of view,
+> which obviously was in operation with the participants here, to think
+> that religious differences or not being paid for a little food (or
+> taunting!) was even a remote justification for burning a train full of
+> people alive.
+> 
+> sdw
+> 
+> John Hall wrote:
+> > What I understood was that the activists on the train refused to pay
+for
+> > the food and other items they acquired from the Muslim vendors --
+then
+> > taunted them.
+> >
+> > That may not be true, but it would put things in a more interesting
+> > light.  Taking food from a small vendor in India and not paying them
+is
+> > trying to starve them.
+> >
+> > It sounded consistent with the ideas and purpose of the train full
+of
+> > activists.
+> >
+> > I'm rarely an apologist for Muslims anywhere.  Yet I find my
+sympathies
+> > with the Muslims in this case, even after they burned the train.
+> >
+> >
+> >
+> >>From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+> >>Stephen D. Williams
+> >
+> >
+> >>The pity of it is that some
+> >>Muslims were ready to give it to them. Their murderous attack on the
+> >>train-load of VHP activists at Godhra (with its awful, atavistic
+> >
+> > echoes
+> >
+> >>of the killings of Hindus and Muslims by the train-load during the
+> >>partition riots of 1947) played right into the Hindu extremists'
+> >
+> > hands.
+> 
+> sdw
+> --
+> swilliams@hpti.com http://www.hpti.com
+> Stephen D. Williams, Senior Technical Director
+> 
+> 
+
+
+

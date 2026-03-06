@@ -1,0 +1,62 @@
+From fork-admin@xent.com  Tue Aug 20 19:34:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5C5FA43C32
+	for <jm@localhost>; Tue, 20 Aug 2002 14:34:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 19:34:32 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7KIWMZ19561 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 19:32:22 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1DABF2940A0; Tue, 20 Aug 2002 11:30:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id 62B4D294099 for <fork@xent.com>; Tue, 20 Aug 2002 11:29:43
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id BBB17C44E;
+    Tue, 20 Aug 2002 20:24:12 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: The Curse of India's Socialism
+Message-Id: <20020820182412.BBB17C44E@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 20:24:12 +0200 (CEST)
+
+RAH quoted:
+>Indians are not poor because there are too many of them; they are poor
+>because there are too many regulations and too much government intervention
+>-- even today, a decade after reforms were begun. India's greatest problems
+>arise from a political culture guided by socialist instincts on the one
+>hand and an imbedded legal obligation on the other hand.
+
+Nice theory and all, but s/India/France/g and the statements hold just
+as true, yet France is #12 in the UN's HDI ranking, not #124.
+
+
+>Since all parties must stand for socialism, no party espouses
+>classical liberalism
+
+I'm not convinced that that classical liberalism is a good solution
+for countries in real difficulty.  See Joseph Stiglitz (Nobel for
+Economics) on the FMI's failed remedies.  Of course googling on
+"Stiglitz FMI" only brings up links in Spanish and French.  I guess
+that variety of spin is non grata in many anglo circles.
+
+
+R
+http://xent.com/mailman/listinfo/fork
+

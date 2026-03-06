@@ -1,0 +1,106 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  9 17:58:05 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 47B6D16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 17:58:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 17:58:05 +0100 (IST)
+Received: from auth02.nl.egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g1196YY14763 for
+    <jm-rpm@jmason.org>; Fri, 1 Feb 2002 09:06:35 GMT
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by
+    auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g11951308525;
+    Fri, 1 Feb 2002 10:05:01 +0100
+Received: from pd4mo1so.prod.shaw.ca (h24-71-223-10.cg.shawcable.net
+    [24.71.223.10]) by auth02.nl.egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g1194X308504 for <rpm-list@freshrpms.net>; Fri, 1 Feb 2002 10:04:33 +0100
+Received: from pd3mr1so.prod.shaw.ca (pd3mr1so-ser.prod.shaw.ca
+    [10.0.141.177]) by l-daemon (iPlanet Messaging Server 5.0 Patch 2 (built
+    Dec 14 2000)) with ESMTP id <0GQU0070ZJVIQ3@l-daemon> for
+    rpm-list@freshrpms.net; Fri, 01 Feb 2002 02:04:30 -0700 (MST)
+Received: from pn2ml6so.prod.shaw.ca (pn2ml6so-qfe0.prod.shaw.ca
+    [10.0.121.150]) by l-daemon (iPlanet Messaging Server 5.0 Patch 2 (built
+    Dec 14 2000)) with ESMTP id <0GQU00C4CJVI6P@l-daemon> for
+    rpm-list@freshrpms.net; Fri, 01 Feb 2002 02:04:30 -0700 (MST)
+Received: from shaw.ca (h24-86-194-126.ed.shawcable.net [24.86.194.126])
+    by l-daemon (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP
+    id <0GQU0007PJV4YB@l-daemon> for rpm-list@freshrpms.net; Fri,
+    01 Feb 2002 02:04:16 -0700 (MST)
+From: rob bains <robinderbains@shaw.ca>
+Subject: Re: Please help a newbie compile mplayer :-)
+To: rpm-zzzlist@freshrpms.net
+Message-Id: <3C5A5978.80500@shaw.ca>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7BIT
+X-Accept-Language: en-us
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.2.1) Gecko/20010901
+References: <3C5A2B2E.9050400@shaw.ca>
+    <1012546426.21971.5.camel@localhost.localdomain>
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 01 Feb 2002 02:01:44 -0700
+Date: Fri, 01 Feb 2002 02:01:44 -0700
+
+Lance wrote:
+
+>Make sure you rebuild as root and you're in the directory that you
+>downloaded the file.  Also it might complain of a few dependencies but
+>you can get these at freshrpms.net, except for gcc3, which you can find
+>on your Red Hat cd, Red Hat ftp, or rpmfind.net.
+>
+>After you rebuild the source rpm it should install a binary rpm in
+>/usr/src/redhat/RPMS/i386.  With all dependencies met, install mplayer
+>with 'rpm -ivh mplayer-20020106-fr1.rpm' and you should be good to go.
+>
+>One last thing, you will need the win32 codecs, I found them on google,
+>create a directory /usr/lib/win32 and place the codecs in there.
+>
+>Good Luck!
+>
+>Lance
+>
+ I dl'd gcc3 and libgcc3, but I still get the same error message when I 
+try rpm --rebuild or recompile. I do this as root, I dl'd as root also.
+
+thanks for the help, any more idea what's going on?
+
+>
+>>
+>>
+>>         I tried to just rpm --rebuild mplayer-20020106-fr1.src.rpm, 
+>>then I get ; mplayer-20020106-fr1.src.rpm: No such file or directory.
+>>
+>>
+>>
+>>
+>
+>
+>
+>
+>_______________________________________________
+>RPM-List mailing list <RPM-List@freshrpms.net>
+>http://lists.freshrpms.net/mailman/listinfo/rpm-list
+>
+
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

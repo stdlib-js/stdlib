@@ -1,0 +1,97 @@
+
+{{alias}}( code, [options,] clbk )
+    Times a snippet.
+
+    If the `asynchronous` option is set to `true`, the implementation assumes
+    that `before`, `after`, and `code` snippets are all asynchronous.
+    Accordingly, these snippets should invoke a `next( [error] )` callback
+    once complete. The implementation wraps the snippet within a function
+    accepting two arguments: `state` and `next`.
+
+    The `state` parameter is simply an empty object which allows the `before`,
+    `after`, and `code` snippets to share state.
+
+    Notes:
+
+    - Snippets always run in strict mode.
+    - Always verify results. Doing so prevents the compiler from performing dead
+      code elimination and other optimization techniques, which would render
+      timing results meaningless.
+    - Executed code is not sandboxed and has access to the global state. You are
+      strongly advised against timing untrusted code. To time untrusted code,
+      do so in an isolated environment (e.g., a separate process with restricted
+      access to both global state and the host environment).
+    - Wrapping asynchronous code does add overhead, but, in most cases, the
+      overhead should be negligible compared to the execution cost of the timed
+      snippet.
+    - When the `asynchronous` option is `true`, ensure that the main `code`
+      snippet is actually asynchronous. If a snippet releases the zalgo, an
+      error complaining about exceeding the maximum call stack size is highly
+      likely.
+    - While many benchmark frameworks calculate various statistics over raw
+      timing results (e.g., mean and standard deviation), do not do this.
+      Instead, consider the fastest time an approximate lower bound for how fast
+      an environment can execute a snippet. Slower times are more likely
+      attributable to other processes interfering with timing accuracy rather
+      than attributable to variability in JavaScript's speed. In which case, the
+      minimum time is most likely the only result of interest. When considering
+      all raw timing results, apply common sense rather than statistics.
+
+    Parameters
+    ----------
+    code: string
+         Snippet to time.
+
+    options: Object (optional)
+        Options.
+
+    options.before: string (optional)
+        Setup code. Default: `''`.
+
+    options.after: string (optional)
+        Cleanup code. Default: `''`.
+
+    options.iterations: integer|null (optional)
+        Number of iterations. If `null`, the number of iterations is determined
+        by trying successive powers of `10` until the total time is at least
+        `0.1` seconds. Default: `1e6`.
+
+    options.repeats: integer (optional)
+        Number of repeats. Default: `3`.
+
+    options.asynchronous: boolean (optional)
+        Boolean indicating whether a snippet is asynchronous. Default: `false`.
+
+    clbk: Function
+        Callback to invoke upon completion.
+
+    Examples
+    --------
+    > var code = 'var x = Math.pow( Math.random(), 3 );';
+    > code += 'if ( x !== x ) {';
+    > code += 'throw new Error( \'Something went wrong.\' );';
+    > code += '}';
+    > function done( error, results ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.dir( results );
+    ... };
+    > {{alias}}( code, done )
+    e.g.,
+    {
+        "iterations": 1000000,
+        "repeats": 3,
+        "min": [ 0, 135734733 ],    // [seconds,nanoseconds]
+        "elapsed": 0.135734733,     // seconds
+        "rate": 7367311.062526641,  // iterations/second
+        "times": [                  // raw timing results
+            [ 0, 145641393 ],
+            [ 0, 135734733 ],
+            [ 0, 140462721 ]
+        ]
+    }
+
+    See Also
+    --------
+

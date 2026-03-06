@@ -1,0 +1,75 @@
+From rpm-list-admin@freshrpms.net  Fri Aug 16 11:05:14 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9337244108
+	for <jm@localhost>; Fri, 16 Aug 2002 05:58:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 10:58:27 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7FLiK719365 for
+    <jm-rpm@jmason.org>; Thu, 15 Aug 2002 22:44:20 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7FLb1J24825; Thu, 15 Aug 2002 23:37:01
+    +0200
+Received: from ex02.idirect.net (ex02.idirect.net [208.226.76.48]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7EMkYJ16974 for
+    <rpm-list@freshrpms.net>; Thu, 15 Aug 2002 00:46:43 +0200
+X-Mimeole: Produced By Microsoft Exchange V6.0.4417.0
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: Documentation about RPM macros?
+Message-Id: <BADF3C947A1BD54FBA75C70C241B0B9E10AA93@ex02.idirect.net>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: Documentation about RPM macros?
+Thread-Index: AcJD5GmIQVEF4DKyQy+RFg1ZDaBggQ==
+From: "Harig, Mark A." <maharig@idirect.net>
+To: <rpm-zzzlist@freshrpms.net>
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g7EMkYJ16974
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 14 Aug 2002 18:46:22 -0400
+Date: Wed, 14 Aug 2002 18:46:22 -0400
+
+Hi,
+
+   Can someone tell me where I can find some
+   documentation about rpm macros?  In
+   particular, I'd like to understand the
+   '%files devel', '%post -p', and '%postun -p'
+   uses described at 
+
+    http://freshrpms.net/docs/fight.html
+
+   and, more generally, I'm looking for a
+   more detailed description of the available
+   macros and the options they accept.  There's
+   no description of the above uses of %file,
+   %post, or %postun in the maximum-rpm book.
+
+   Thanks in advance for any help!
+
+---
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

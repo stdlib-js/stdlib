@@ -1,0 +1,30 @@
+From rssfeeds@jmason.org  Thu Sep 26 11:02:56 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0F37216F03
+	for <jm@localhost>; Thu, 26 Sep 2002 11:02:56 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 11:02:56 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8Q81UC06455 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 09:01:30 +0100
+Message-Id: <200209260801.g8Q81UC06455@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: scripting <rssfeeds@spamassassin.taint.org>
+Subject: Jeremy Bowers: "None of the trackback mechanisms has reached the
+    critical m
+Date: Thu, 26 Sep 2002 08:01:30 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://scriptingnews.userland.com/backissues/2002/09/25#When:5:12:19AM
+Date: Wed, 25 Sep 2002 12:12:19 GMT
+
+Jeremy Bowers[1]: "None of the trackback mechanisms has reached the critical 
+mass necessary to see the negative effects experienced in all other community 
+models."
+
+[1] http://www.jerf.org/irights/2002/09/25.html#a2231
+
+

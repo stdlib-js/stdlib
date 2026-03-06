@@ -1,0 +1,96 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:01 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7B9E143C62
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:53 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D0q6b11398 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 01:52:06 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA15955; Tue, 13 Aug 2002 01:51:19 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail2.mail.iol.ie (mail2.mail.iol.ie [194.125.2.193]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id BAA15927 for <ilug@linux.ie>;
+    Tue, 13 Aug 2002 01:51:12 +0100
+Received: from [213.202.164.73] (helo=excalibur.research.wombat.ie) by
+    mail2.mail.iol.ie with esmtp (Exim 3.35 #1) id 17ePmU-000865-00;
+    Tue, 13 Aug 2002 01:43:31 +0100
+Received: (from kenn@localhost) by excalibur.research.wombat.ie
+    (8.11.6/8.11.6) id g7D0p9R14688; Tue, 13 Aug 2002 01:51:09 +0100
+Date: Tue, 13 Aug 2002 01:51:09 +0100
+From: Kenn Humborg <kenn@linux.ie>
+To: wintermute <cout@eircom.net>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020813015109.C14435@excalibur.research.wombat.ie>
+References: <200208122348.AAA13536@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <200208122348.AAA13536@lugh.tuatha.org>; from cout@eircom.net
+    on Tue, Aug 13, 2002 at 12:48:18AM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 12:48:18AM +0100, wintermute wrote:
+> Rick Moen <rick@linuxmafia.com> wrote:
+> 
+> <snip>
+> > Don't like SuSE's product licensing?  Write your own distribution.  You
+> > can even grab most of what you need _from SuSE_.  All you have to do is 
+> > heed the licensing terms on the individual pieces.
+> <snip>
+> 
+> How unimaginably difficult is this to do?
+
+It shouldn't be too hard.  Red Hat, for example, ships with everything
+you need to build a modified distribution.  And it's all GPL (or free
+enough).
+
+> There are as far as I know, no Linux kernel hackers, 
+
+Ahem.  There are more than one.
+
+> nor distros 
+> that originate from this fair island right?
+> Right.
+> 
+> Yes it might be very,very difficult and subject to abject failure 
+> in sticking together a distro.... call it Dolmen Linux (or other), 
+> no doubt the packaging system would be one of the first places
+>  such a suggestion would stumble.
+> Some (like me) favouring a FreeBSD style ports system others favouring
+>  a Debian style system and others still favouring *rpm style packaging.
+> 
+> That said other *LUG have done interesting things like making blackbox.
+> 
+> Perhaps making a distro would be ..... umm.... fun.
+
+There was talk of this in the past.  Taking a regular distribution like
+Red Hat or Debian and tweaking it for Ireland - things like translations,
+ISP setups, default bookmarks.
+
+Never took off.
+
+Why not try it yourself.
+
+Later,
+Kenn
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

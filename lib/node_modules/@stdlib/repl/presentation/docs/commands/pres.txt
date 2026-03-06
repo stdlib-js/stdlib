@@ -1,0 +1,12 @@
+
+pres()
+    Prints presentation help text and shortcuts.
+
+    Examples
+    --------
+    > pres();
+
+    See Also
+    --------
+    help, info
+

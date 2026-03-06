@@ -1,0 +1,110 @@
+From ilug-admin@linux.ie  Tue Aug  6 14:11:12 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 78674440FB
+	for <jm@localhost>; Tue,  6 Aug 2002 09:10:49 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 14:10:49 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g76DCik30928 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 14:12:44 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA31684; Tue, 6 Aug 2002 14:10:46 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from nwkea-mail-1.sun.com (nwkea-mail-1.sun.com [192.18.42.13])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA31655 for
+    <ilug@linux.ie>; Tue, 6 Aug 2002 14:10:40 +0100
+Received: from sunire.Ireland.Sun.COM ([129.156.220.30]) by
+    nwkea-mail-1.sun.com (8.9.3+Sun/8.9.3) with ESMTP id GAA23883 for
+    <ilug@linux.ie>; Tue, 6 Aug 2002 06:10:04 -0700 (PDT)
+Received: from sionnach.ireland.sun.com (sionnach [129.156.220.28]) by
+    sunire.Ireland.Sun.COM (8.11.6+Sun/8.11.6/ENSMAIL,v2.2) with ESMTP id
+    g76DA3l06802 for <ilug@linux.ie>; Tue, 6 Aug 2002 14:10:03 +0100 (BST)
+Received: from sionnach (localhost [127.0.0.1]) by
+    sionnach.ireland.sun.com (8.12.2+Sun/8.12.2) with ESMTP id g76DA3fE009664
+    for <ilug@linux.ie>; Tue, 6 Aug 2002 14:10:03 +0100 (BST)
+Message-Id: <200208061310.g76DA3fE009664@sionnach.ireland.sun.com>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: ilug@linux.ie
+From: Albert White - SUN Ireland <albert.white@ireland.sun.com>
+Subject: Re: [ILUG] Sparc Solaris (was: Dell GX260 V Redhat 7.3)
+In-Reply-To: Message from
+    "Matthew French"
+    <mfrench42@yahoo.co.uk> of
+    "Tue, 06 Aug 2002 09:46:27 BST."
+    <001501c23d25$c21ba0b0$3864a8c0@sabeo.ie>
+Date: Tue, 06 Aug 2002 14:10:03 +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+
+Matthew French:
+> Declan Houlihan mentioned:
+> > We're actually investigating switching from Sparc/Solaris to
+> > Intel/Linux.
+Boo hisss *duck* :)
+
+> Well, why not try Linux on Sparc. <snip>
+>
+> And you get a working version of your favourite KDE/Gnome desktop instead of
+> DTE, uhm, I mean CDE.
+um.. http://wwws.sun.com/software/star/gnome/ integrated into solaris.
+
+Of course then there's http://wwws.sun.com/software/solaris/freeware/ for 
+solaris 9 which gives you afterstep and windowmaker among other stuff. My 
+personal favourite at the moment is enlightenment which also has Solaris 
+packages available for download.
+
+> > Basically the whole installation procedure is
+> > "boot net - install"
+> Talking of which, you can install Sparc Linux using this technique as well.
+> The image takes a while to load, but once this is done you can install in
+> the normal fashion.
+Out of curiosity, does `normal fashion` mean that you still have to do the 
+interactive customisations or is it like Solaris jumpstart where you can 
+specify everything on the install server, do `boot net - install` go home, and 
+come in to a fully installed and patched desktop the next morning?
+
+> There are minor problems: like the serial console drivers, but for workstation 
+> installs I suspect it will work fine.
+I don't see why this should be a _major problem. The prom (ie the "ok" prompt) 
+is almost at the hardware level and hence dosent depend on the os so you 
+should be able to connect to that easily enough. Once the machine is installed 
+cant you just log in over the network? The network is the computer after all 
+(sorry couldn't resist!)
+
+valen@tuatha.org said:
+> side, Sun's terminal handling leaves a lot to be desired - it won't
+> work properly on a Wyse 120+ for instance, no matter what emulation
+> mode the Wyse is trying to do.
+hmm... I'm not familiar with wyse stuff, but I only need to use the console 
+when something breaks, then anything capable of something basic like vt100 at 
+9600 8n1 seems to work  . Not sure why you'd need to worry about this much 
+really, just set up jumpstart to install automatically then you don't need to 
+look at the console at all.
+
+Cheers,
+~Al
+
+-- 
+Expressed in this posting are my opinions.  They are in no way related
+to opinions held by my employer, Sun Microsystems.
+Statements on Sun products included here are not gospel and may
+be fiction rather than truth.
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

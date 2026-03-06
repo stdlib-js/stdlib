@@ -1,0 +1,289 @@
+From fork-admin@xent.com  Mon Jul 29 11:41:26 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 38B5E44136
+	for <jm@localhost>; Mon, 29 Jul 2002 06:37:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:37:08 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6T8T9i17904 for <jm@jmason.org>;
+    Mon, 29 Jul 2002 09:29:10 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 093032940C8; Mon, 29 Jul 2002 01:27:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from knight.wizardshosting.com (ns.wizardshosting.com
+    [64.46.100.10]) by xent.com (Postfix) with ESMTP id 365D62940C7 for
+    <fork@xent.com>; Mon, 29 Jul 2002 01:26:51 -0700 (PDT)
+Received: from knocks by knight.wizardshosting.com with local (Exim 3.35
+    #1) id 17Z5re-0007PP-00 for fork@xent.com; Mon, 29 Jul 2002 04:26:50 -0400
+From: sales@whenopportunityknocks.com
+To: fork@spamassassin.taint.org
+Subject: Your Genealogy
+Message-Id: <E17Z5re-0007PP-00@knight.wizardshosting.com>
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - knight.wizardshosting.com
+X-Antiabuse: Original Domain - xent.com
+X-Antiabuse: Originator/Caller UID/GID - [32111 724] / [32111 724]
+X-Antiabuse: Sender Address Domain - knight.wizardshosting.com
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 29 Jul 2002 04:26:50 -0400
+Content-Type: text/html
+
+<div align="center"><center>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="34%"><a href="http://www.rootssearch.net">
+    <img
+    src="http://www.rootssearch.net/rssmall.gif" alt="rssmall.gif (5170 bytes)" border="0" width="246" height="60"></a></td>
+    <td width="66%"><p align="right"><script LANGUAGE="javascript"
+    src="http://www.qksz.net/1e-2spy"> </script></td>
+  </tr>
+</table>
+</center></div><div align="center"><center>
+
+<table border="0" width="99%" cellspacing="0" bgcolor="#800000">
+  <tr>
+    <td width="100%"><div align="center"><center><table border="0" width="100%"
+    cellpadding="2" cellspacing="0">
+      <tr>
+        <td width="50%" bgcolor="#F8F8F1"><p align="left"><font face="Arial" color="#800000"><small><a
+        href="http://www.rootssearch.net/index.html">RootsSearch.net</a>: </small></font>
+        <font face="Arial" style="font-size: smaller" color="#800000">Online 
+        Auction</font></td>
+        <td width="50%" bgcolor="#F8F8F1"><small><font face="Arial" color="#800000"><p
+        align="right"></font><font face="Arial"><strong><small><a
+        href="http://www.rootssearch.net">
+        <img src="http://www.rootssearch.net/home.gif"
+        alt="GO TO ROOTSSEARCH.NET'S HOME PAGE" border="0" width="18" height="16"></a> <a
+        href="http://rootssearch.mail.everyone.net">
+        <img
+        src="http://www.rootssearch.net/checkemail.gif"
+        alt="CHECK YOUR MAIL HERE OR SIGN UP IF YOU DON'T HAVE YOUR-FAMILY@ROOTSSEARCH.NET EMAIL"
+        border="0" width="17" height="15"></a> <a href="http://www.rootssearch.net/cgi-bin/dclinks/dclinks.cgi">
+        <img
+        src="http://www.rootssearch.net/downloads.gif"
+        alt="DOWNLOAD FREE OR SHAREWARE GENEALOGY SOFTWARE" border="0" width="18" height="15"></a> </small></strong><small><small><strong>
+        <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl">
+        <img border="0" src="http://www.rootssearch.net/bid.gif" width="16" height="16"></a></strong></small></small></small>
+        <a href="http://www.rootssearch.net/freepages.html">
+        <img
+        src="http://www.rootssearch.net/createapage.gif" alt="createapage.gif (913 bytes)"
+        border="0" width="17" height="16"></a><strong><small><small> <a
+        href="http://www.rootssearch.net/cgi-bin/birdcast/birdcast.cgi">
+        <img
+        src="http://www.rootssearch.net/TellAFriend.gif" alt="TELL A FRIEND ABOUT ROOTSSEARCH.NET"
+        border="0" width="20" height="16"></a></small></small></strong></font></td>
+      </tr>
+    </table>
+    </center></div></td>
+  </tr>
+</table>
+</center></div><div align="center"><center>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="78%" valign="top"><div align="center"><center><table border="0" width="100%"
+    cellspacing="0" bgcolor="#800000">
+      <tr>
+        <td width="100%"><p align="center"><font face="Verdana" color="#FFFFFF"><small><a
+        STYLE="color:#FFFFFF" href="http://rootssearch.mail.everyone.net">Check Mail</a> | <a
+        STYLE="color:#FFFFFF" href="http://www.rootssearch.net/rsearch/">Gen Directory</a> | <a
+        STYLE="color:#FFFFFF" href="http://www.rootssearch.net/services.html">My Services</a> | <a
+        STYLE="color:#FFFFFF" href="http://www.rootssearch.net/cgi-bin/dcforum/dcboard.cgi">Query
+        Forums</a> | <a STYLE="color:#FFFFFF"
+        href="http://www.rootssearch.net/cgi-bin/dclinks/dclinks.cgi">Downloads</a> | <a
+        STYLE="color:#FFFFFF" href="http://rootssearch.vstorelibrary.com">Book Store</a> | <a
+        STYLE="color:#FFFFFF" href="http://www.rootssearch.net/shopping.html">Resources</a> | <a
+        STYLE="color:#FFFFFF" href="http://www.rootssearch.net/articles/">Articles</a></small></font></td>
+      </tr>
+    </table>
+    </center></div></td>
+  </tr>
+</table>
+</center></div><div align="center"><center>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="62%" valign="bottom">
+    <table cellSpacing="5" cellPadding="0" width="100%" border="0">
+      <tr>
+        <td vAlign="top" width="62%"><small><center>
+        <p><font face="Arial">
+        <img src="http://www.rootssearch.net/auction/cats.gif" width="16" height="16">
+        <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl">
+        Categories</a>
+        <img src="http://www.rootssearch.net/auction/all.gif" width="16" height="16">
+        <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=all">
+        All</a>
+        <img src="http://www.rootssearch.net/auction/new.gif" width="16" height="15">
+        <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?category=&listtype=new">
+        New</a>
+        <img src="http://www.rootssearch.net/auction/closing.gif" width="18" height="16">
+        <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?category=&listtype=close">
+        Closing</a>
+        <img src="http://www.rootssearch.net/auction/ending.gif" width="18" height="15">
+        <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?category=&listtype=gone">
+        Going!</a>
+        <img src="http://www.rootssearch.net/auction/allclosed.gif" width="16" height="15">
+        <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=allclosed">
+        All Closed</a>
+        <img src="http://www.rootssearch.net/auction/post.gif" width="15" height="15">
+        <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=new">
+        Post</a>
+        <img src="http://www.rootssearch.net/auction/register.gif" width="17" height="15">
+        <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=reg">
+        Register</a>
+        <img src="http://www.rootssearch.net/auction/myauction.gif" width="15" height="14">
+        <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=closed">
+        My Auction</a></font></p>
+        <p><font face="Arial" size="5">Tired of paying charges to Ebay, Yahoo 
+        etc?<br>
+        Now you don't have to!&nbsp; Post your <b><font color="#B30000">
+        genealogy</font></b> auction<br>
+        <b><font color="#B30000">FREE!&nbsp; </font></b>We're just like the big 
+        boys!</font></p>
+        </small></center>
+        <div align="center">
+          <center>
+          <table borderColor="#111111" cellSpacing="0" width="50%" border="0" collapse>
+            <tr>
+              <td width="100%" bgColor="#800000">
+              <div align="center">
+                <center>
+                <table style="BORDER-COLLAPSE: collapse" borderColor="#111111" cellSpacing="0" cellPadding="2" width="100%" border="0">
+                  <tr>
+                    <td vAlign="top" align="middle" width="100%" colSpan="2">
+                    <font face="Arial" color="#ffffff" size="2"><b>Auction 
+                    Categories</b></font></td>
+                  </tr>
+                  <tr>
+                    <td vAlign="top" width="50%" bgColor="#ffffff">
+                    <p align="left">
+                    <img src="http://www.rootssearch.net/auction/thecats.gif" border="0" width="20" height="15"><font face="Arial" size="2">
+                    <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=access">
+                    Accessories</a>&nbsp; <br>
+                    </font>
+                    <img src="http://www.rootssearch.net/auction/thecats.gif" border="0" width="20" height="15"><font face="Arial" size="2">
+                    <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=books">
+                    Books</a> <br>
+                    </font>
+                    <img src="http://www.rootssearch.net/auction/thecats.gif" border="0" width="20" height="15"><font face="Arial" size="2">
+                    <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=paper">
+                    Paper Items</a> </font></td>
+                    <td vAlign="top" width="50%" bgColor="#ffffff">
+                    <p align="left">
+                    <img src="http://www.rootssearch.net/auction/thecats.gif" border="0" width="20" height="15"><font face="Arial" size="2">
+                    <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=records">
+                    Records</a> <br>
+                    </font>
+                    <img src="http://www.rootssearch.net/auction/thecats.gif" border="0" width="20" height="15"><font face="Arial" size="2">
+                    <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=misc">
+                    Everything Else</a> </font></td>
+                  </tr>
+                </table>
+                </center>
+              </div>
+              </td>
+            </tr>
+          </table>
+          </center>
+        </div>
+        <div align="center">
+          <center>
+          <table style="BORDER-COLLAPSE: collapse" borderColor="#111111" cellSpacing="0" cellPadding="2" width="100%" border="0">
+          </table>
+          <font face="Arial">
+          <p align="center">Sell your item with buy it now, proxy bidding, 
+          reserve and more!</p>
+          <p align="center"><b>
+          <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=reg">
+          <font size="7">Sign Up!</font></a><font size="7"> or
+          <a href="http://www.rootssearch.net">Visit Us!</a></font></b></p>
+          <p align="center"><font face="Arial" size="2">[
+          <a href="javascript:newWin=void(window.open('http://www.rootssearch.net/auction/helppost.html','newWin','scrollbars=1,width=400,height=500'))">
+          FAQ</a> ] [
+          <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=suggest">
+          Suggest A Category</a> ] [
+          <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=creg">
+          Change Registration</a> ] [
+          <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=forgot">
+          Lookup Username/Password</a> ] [
+          <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=searchfeedback">
+          User Feedback</a> ] [
+          <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=referafriend">
+          Tell A Friend</a> ] <br>
+          [ <a href="http://www.rootssearch.net/cgi-bin/auction/wanted.pl">
+          Auction Items Wanted</a> ] [
+          <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=notify">
+          Auction Notification</a> ] [
+          <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=tracking">
+          Item Tracking</a> ] [
+          <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=fraud">
+          Report Auction Fraud</a> ] [
+          <a href="http://www.rootssearch.net/cgi-bin/auction/ezauct.pl?action=banmenu">
+          Ban A Bidder</a> ] [ <a href="http://www.rootssearch.net">Home</a> ]
+          </font></p>
+          </font></center>
+        </div>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="62%" valign="top"></td>
+  </tr>
+</table>
+</center></div><div align="center"><center>
+
+<table border="0" width="99%" cellspacing="0" bgcolor="#800000">
+  <tr>
+    <td width="100%"><div align="center"><center><table border="0" width="100%"
+    cellpadding="2" cellspacing="0">
+      <tr>
+        <td width="100%" bgcolor="#F8F8F1"><p align="center"><small><font face="Arial"><a
+        href="http://www.rootssearch.net/cgi-bin/rsearch/add.cgi">Add a Site</a> 
+        | <a
+        href="http://www.rootssearch.net/about.html">About</a> | <a
+        href="http://www.rootssearch.net/advertise.html">Advertise</a> | <a
+        href="http://www.rootssearch.net/jobs.html">Jobs</a> | <a
+        href="http://www.rootssearch.net/webmasters.html">Webmasters</a> |</font> 
+        <font
+        face="Arial"><a href="http://www.rootssearch.net/contact.html">Contact</a> | <a
+        href="http://www.rootssearch.net/start.html">Make RS Your Start Page</a></font></small><font
+        face="Verdana"><br>
+        </font><font face="Arial"><small><a href="http://www.rootssearch.net">RootsSearch.net</a>
+        is © 2001.&nbsp; All rights reserved.</small></font></td>
+      </tr>
+    </table>
+    </center></div></td>
+  </tr>
+</table>
+</center></div>
+
+
+   <BR><BR>
+<HR><BR>
+<center>You or someone through this email address has requested<BR>
+to receive third party mailings.  To be removed from<BR>
+future mailings click the link below.<BR>
+<A HREF="http://www.whenopportunityknocks.com/cgi-bin/list/mailmachine.cgi?fork@xent.com">http://www.whenopportunityknocks.com/cgi-bin/list/mailmachine.cgi?fork@xent.com</A><BR>
+---------------------------------------------------------------------
+http://xent.com/mailman/listinfo/fork
+
+

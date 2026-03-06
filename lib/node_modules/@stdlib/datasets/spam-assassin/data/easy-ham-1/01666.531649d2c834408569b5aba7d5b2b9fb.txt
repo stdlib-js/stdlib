@@ -1,0 +1,35 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Fri Sep  6 19:48:35 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Fri, 6 Sep 2002 13:48:35 -0500
+Subject: [Spambayes] Deployment
+In-Reply-To: <20020906162505.GB17800@cthulhu.gerg.ca>
+References: <200209061431.g86EVM114413@pcp02138704pcs.reston01.va.comcast.net>
+        <20020906162505.GB17800@cthulhu.gerg.ca>
+Message-ID: <15736.63619.488739.691181@12-248-11-90.client.attbi.com>
+
+
+    Greg> In case it wasn't obvious, I'm a strong proponent of filtering
+    Greg> junk mail as early as possible, ie. right after the SMTP DATA
+    Greg> command has been completed.  Filtering spam at the MUA just seems
+    Greg> stupid to me -- by the time it gets to me MUA, the spammer has
+    Greg> already stolen my bandwidth.  
+
+The two problems I see with filtering that early are:
+
+    1. Everyone receiving email via that server will contribute ham to the
+       stew, making the Bayesian classification less effective.
+
+    2. Given that there will be some false positives, you absolutely have to
+       put the mail somewhere.  You can't simply delete it.  (I also don't
+       like the TMDA-ish business of replying with a msg that says, "here's
+       what you do to really get your message to me."  That puts an extra
+       burden on my correspondents.)  As an individual, I would prefer you
+       put spammish messages somewhere where I can review them, not an
+       anonymous sysadmin who I might not trust with my personal email
+       (nothing against you Greg ;-).
+
+I personally prefer to manage this stuff at the user agent level.  Bandwidth
+is a heck of a lot cheaper than my time.
+
+Skip

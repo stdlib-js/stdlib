@@ -1,0 +1,541 @@
+Return-Path: ilug-admin@linux.ie
+Delivery-Date: Sat Jul 27 18:02:50 2002
+Return-Path: <ilug-admin@linux.ie>
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6RH2oi11099
+	for <jm-ilug@jmason.org>; Sat, 27 Jul 2002 18:02:50 +0100
+Received: from lugh (root@localhost [127.0.0.1])
+	by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA23208;
+	Sat, 27 Jul 2002 18:01:19 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1] claimed to be lugh
+Received: from mail02.svc.cra.dublin.eircom.net (mail02.svc.cra.dublin.eircom.net [159.134.118.18])
+	by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id SAA23172
+	for <ilug@linux.ie>; Sat, 27 Jul 2002 18:01:12 +0100
+Message-Id: <200207271701.SAA23172@lugh.tuatha.org>
+Received: (qmail 6320 messnum 30063 invoked from network[159.134.159.50/p306.as1.drogheda1.eircom.net]); 27 Jul 2002 17:00:40 -0000
+Received: from p306.as1.drogheda1.eircom.net (HELO there) (159.134.159.50)
+  by mail02.svc.cra.dublin.eircom.net (qp 6320) with SMTP; 27 Jul 2002 17:00:40 -0000
+Content-Type: text/plain;
+  charset="iso-8859-1"
+From: John Gay <johngay@eircom.net>
+To: kevin lyda <kevin+dated+1028163438.f677b3@linux.ie>
+Subject: Re: [ILUG] Optimizing for Pentium Pt.2
+Date: Sat, 27 Jul 2002 17:58:12 +0100
+X-Mailer: KMail [version 1.3.2]
+References: <200207262228.XAA19581@lugh.tuatha.org> <20020727015716.A6561@ie.suberic.net>
+In-Reply-To: <20020727015716.A6561@ie.suberic.net>
+Cc: ilug@linux.ie
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-BeenThere: ilug@linux.ie
+
+On Sat 27 Jul 2002 01:57, you wrote:
+> On Fri, Jul 26, 2002 at 11:24:30PM +0100, John Gay wrote:
+> > A while ago I asked what other packages I should optomize for Pentium.
+> > One person answered GlibC. This got me thinking about GCC itself, so I
+> > asked on another list and got a few answers, most were "don't even think
+> > about it" but a few suggested GCC and one pointed me to Linux From
+> > Scratch.
+>
+> why?
+>
+> or more specifically, what do you mean?  on one hand you can optimise
+> how gcc is compiled.  all that will do is make it generate the exact
+> same code just a smidge faster.  and since gcc is such a memory pig,
+> you'd do better to buy more ram to up your fs cache hits and to keep
+> gcc's heap out of swap.
+>
+To explain what I mean:
+According to the PGCC site, GCC by itself is not very good at taking 
+advantage of the pipelining features introduced with the Pentium family. The 
+PGCC patches are supposed to make GCC generate tighter code, but your point 
+about compiler bugs is well taken. This is why I am taking things slow and 
+looking into these things. As Isaid, the PGCC site does not seem to have been 
+updated in at least a year or more?!? I am also looking into GCC itself. Now 
+that the 3.1. series is out, it might be better than when the PGCC patches 
+were written. The bottom line is, Pentiums have better instruction sets than 
+the original 386 instructions that they still support. The Pentium also 
+started introducing pipelining so properly generated code can be upto 30% 
+faster than equivulent code that performs the same function! As for why 
+optimise GCC if it will only produce that same code only slightly faster? The 
+speed is based on a percentage of the total compile time. The first time I 
+compiled the qt libs, with only 16M and a LOT of swap, it took over 48 hours. 
+I've now got 128M in the box but at 200Mhz any increase, distributed over 
+such a long compile is still considerable.
+
+> on the other side you can look into patches to gcc that affect it's
+> code generation.  um, ok, but keep in mind that compiler errors suck.
+> i can't express that enough.  compilers should just work.  perfectly.
+> always.  doing anything that might affect that is, in my opinion, insane.
+> they're hard to trace and you'd better have a deep knowledge of what's
+> going on to either report bugs to the patch developers or to fix it
+> yourself.  plus my understanding is that gcc would need major changes
+> to get large speed boosts on x86 chips.
+>
+My understanding, and I've followed the development of the Intel family since 
+the 8080, each generation since the 386 has introduced better and faster 
+instructions. I.E.:
+The 486 introduced I.E.E.E floating point instructions by incorporating an 
+FPU on board. The first few generations were flaky, so Intel disabled the 
+dodgy ones and sold then as 486SX, I.E. without the FPU. Later generations 
+were better, this is why you only find slow 486SX's ;-) Therefore 486's, with 
+working FPU's can calculate floats faster than 386's, but you must generate 
+the proper codes to take advantage of this.
+
+The Pentium's improved the FPU logic and introduced pipelining. The first 
+generations of Pentiums had faulty FPu logic programmed into them, the 
+Pentium Bug, but subsequent ones were fine. These added instructions are 
+faster again then the 486 equivulents. Also, the pipelining needs careful 
+instruction ordering to take full advantage of it's speed improvements, 
+again, something the compiler must know about to utilise to full effect. 
+According the the PGCC site GCC does this poorly, but that info seems to be 
+dated, GCC3.1.x might be better. This is one of the areas I am researching 
+closely to get an answer.
+
+MMX added the ability to perform matrix calculations on int's with single 
+instructions and using special DMA features within the Pentium to speed this 
+up. Two problems with this:
+1) int's are not very useful for most matrix calculations, floats would be 
+betters.
+2) this is not something that can be optimised well by a compiler. It need to 
+be identified and provided for in the sources.
+I.E. not much use to anyone, but makes great ad copy ;-)
+
+The PentiumPro improved the pipeline enormously. Again, a properly written 
+compiler should be able to optimise for this, once it can organise the code 
+properly.
+
+The PIII added MMX-type instructions for floats! Now this IS useful! 
+Graphic-Intensive programs can take greate advantage of this, but it must be 
+provided for in the source code. Compilers can not, usually optimise for this 
+sort of thing. XFree86 and DRI are two prime examples that do provide for 
+this, so the PIII can run XFree86 and DRI quite a bit faster, IF it's 
+compiled for these SSE instructions!
+
+Not sure what improvements the P4 introduce? I think it's mostly just speed 
+improvements rather than any execution changes.
+
+So, The difference between the 386 and the PentiumMMX 'should' yield a 
+significant speed boost if optimised correctly. There are faster floating 
+point instructions and pipelining that need optimising for. I'm not sure if 
+GCC can optimise properly for the pipelining, at least the PGCC group found 
+significant improvements to add to GCC2.95.3 to gain speed improvements of 
+upto 30%. 30% of 48 hours is 14.4 hours. Of course none of this will have any 
+effect on O/I bound processes but GUI's are mostly CPU bound. I am also 
+finding out about object pre-linking optimisations which should give even 
+better performance for QT and KDE.
+
+Now if I had another PIII for my box, I could take advantage of those SSE 
+instructions to optimise XFree86 as well!
+
+> kevin
+
+An, of course, I've loads of time on my hands now and I need something to 
+keep me busy. At least I can say that I've sucessfully built a full Linux 
+system, including KDE3 from scratch when I'm done ;-)
+Cheers,
+
+	John Gay
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

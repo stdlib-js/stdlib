@@ -1,0 +1,17 @@
+
+{{alias}}
+    Number of minutes in a day.
+
+    The value is a generalization and does **not** take into account
+    inaccuracies due to daylight savings conventions, crossing timezones, or
+    other complications with time and dates.
+
+    Examples
+    --------
+    > var days = 3.14;
+    > var mins = days * {{alias}}
+    4521.6
+
+    See Also
+    --------
+

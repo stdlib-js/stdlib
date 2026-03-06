@@ -1,0 +1,53 @@
+
+{{alias}}( error )
+    Returns a JSON representation of an error object.
+
+    The following built-in error types are supported:
+
+    - Error
+    - URIError
+    - ReferenceError
+    - SyntaxError
+    - RangeError
+    - EvalError
+    - TypeError
+
+    The JSON object is guaranteed to have the following properties:
+
+    - type: error type.
+    - message: error message.
+
+    The only standardized cross-platform property is `message`. Depending on the
+    platform, the following properties *may* be present:
+
+    - name: error name.
+    - stack: stack trace.
+    - code: error code (Node.js system errors).
+    - errno: error code string (Node.js system errors).
+    - syscall: string representing the failed system call (Node.js system
+      errors).
+
+    The function also serializes all enumerable properties.
+
+    The implementation supports custom error types and sets the `type` field to
+    the closest built-in error type.
+
+    Parameters
+    ----------
+    error: Error
+        Error to serialize.
+
+    Returns
+    -------
+    out: Object
+        JSON representation.
+
+    Examples
+    --------
+    > var err = new Error( 'beep' );
+    > var json = {{alias}}( err )
+    <Object>
+
+    See Also
+    --------
+

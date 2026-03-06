@@ -1,0 +1,76 @@
+From ilug-admin@linux.ie  Wed Jul 31 17:37:35 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E3C4B440C8
+	for <jm@localhost>; Wed, 31 Jul 2002 12:37:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 17:37:33 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VGbN201197 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 17:37:23 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA16907; Wed, 31 Jul 2002 17:35:13 +0100
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id RAA16829 for <ilug@linux.ie>;
+    Wed, 31 Jul 2002 17:35:00 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [213.105.180.140] claimed
+    to be mandark.labs.netnoteinc.com
+Received: from triton.labs.netnoteinc.com
+    (lbedford@triton.labs.netnoteinc.com [192.168.2.12]) by
+    mandark.labs.netnoteinc.com (8.11.6/8.11.6) with SMTP id g6VGYFp15606;
+    Wed, 31 Jul 2002 17:34:15 +0100
+Date: Wed, 31 Jul 2002 17:34:14 +0100
+From: Liam Bedford <lbedford@lbedford.org>
+To: deedsmis@aculink.net, ilug@linux.ie
+Subject: Re: [ILUG] Re: removing lilo
+Message-Id: <20020731173414.4123f075.lbedford@lbedford.org>
+In-Reply-To: <3D4814D0.6A61E6E5@cdm01.deedsmiscentral.net>
+References: <5FE418B3F962D411BED40000E818B33C9C8E65@HASSLE>
+    <3D4814D0.6A61E6E5@cdm01.deedsmiscentral.net>
+Organization: Netnote International
+X-Mailer: Sylpheed version 0.8.0claws6 (GTK+ 1.2.10; i386-debian-linux-gnu)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Wed, 31 Jul 2002 10:48:16 -0600
+SoloCDM claiming to think:
+
+> "Hunt, Bryan" stated the following:
+> > 
+> > you need to do a "fdisk /mbr" from a bootable windoze floppy
+> > alternatively boot from linux boot disk and do fdisk, delete all partitions.
+> 
+> I need to ask a question concerning this issue.
+> 
+> What if I don't want to get rid of the MBR -- it will destroy the OS
+> on that drive.  How do I remove lilo without the above fdisk
+> procedure?
+> 
+fdisk /mbr will restore a dos MBR.. it'll leave the partitions alone.
+
+linux fdisk and deleting all partitions will actually leave LILO in the
+MBR though.
+
+L.
+-- 
+     dBP   dBBBBb | If you're looking at me to be an accountant
+              dBP | Then you will look but you will never see
+   dBP    dBBBK'  | If you're looking at me to start having babies
+  dBP    dB' db   | Then you can wish because I'm not here to fool around
+ dBBBBP dBBBBP'   | Belle & Sebastian (Family Tree)
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

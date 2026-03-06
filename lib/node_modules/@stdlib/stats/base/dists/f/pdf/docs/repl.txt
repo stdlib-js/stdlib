@@ -1,0 +1,77 @@
+
+{{alias}}( x, d1, d2 )
+    Evaluates the probability density function (PDF) for an F distribution with
+    numerator degrees of freedom `d1` and denominator degrees of freedom `d2` at
+    a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `d1 <= 0` or `d2 <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    d1: number
+        Numerator degrees of freedom.
+
+    d2: number
+        Denominator degrees of freedom.
+
+    Returns
+    -------
+    out: number
+        Evaluated PDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.5, 1.0 )
+    ~0.057
+    > y = {{alias}}( 0.1, 1.0, 1.0 )
+    ~0.915
+    > y = {{alias}}( -1.0, 4.0, 2.0 )
+    0.0
+
+    > y = {{alias}}( NaN, 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 1.0, NaN )
+    NaN
+
+    > y = {{alias}}( 2.0, 1.0, -1.0 )
+    NaN
+    > y = {{alias}}( 2.0, -1.0, 1.0 )
+    NaN
+
+
+{{alias}}.factory( d1, d2 )
+    Returns a function for evaluating the probability density function (PDF) of
+    an F distribution with numerator degrees of freedom `d1` and denominator
+    degrees of freedom `d2`.
+
+    Parameters
+    ----------
+    d1: number
+        Numerator degrees of freedom.
+
+    d2: number
+        Denominator degrees of freedom.
+
+    Returns
+    -------
+    pdf: Function
+        Probability density function (PDF).
+
+    Examples
+    --------
+    > var myPDF = {{alias}}.factory( 6.0, 7.0 );
+    > var y = myPDF( 7.0 )
+    ~0.004
+    > y = myPDF( 2.0 )
+    ~0.166
+
+    See Also
+    --------
+

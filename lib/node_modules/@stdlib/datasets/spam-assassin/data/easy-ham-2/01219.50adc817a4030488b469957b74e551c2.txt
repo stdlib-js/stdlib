@@ -1,0 +1,96 @@
+From rpm-list-admin@freshrpms.net  Tue Aug 13 14:21:27 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5FE6A43C34
+	for <jm@localhost>; Tue, 13 Aug 2002 09:21:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 14:21:27 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DDLxe00940 for
+    <jm-rpm@jmason.org>; Tue, 13 Aug 2002 14:21:59 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7DDI2J16094; Tue, 13 Aug 2002 15:18:02
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7DDHbJ16047 for
+    <rpm-list@freshrpms.net>; Tue, 13 Aug 2002 15:17:38 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Limbo beta 2 ?
+Message-Id: <20020813144303.7b192f78.matthias@egwn.net>
+In-Reply-To: <1029240957.15919.40.camel@turner.gestalt.entity.net>
+References: <20020812.fZ4.64416600@www.dudex.net>
+    <20020813062553.GA28164@marvin.home.priv>
+    <1029240957.15919.40.camel@turner.gestalt.entity.net>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 13 Aug 2002 14:43:03 +0200
+Date: Tue, 13 Aug 2002 14:43:03 +0200
+
+Once upon a time, Dave wrote :
+
+> Eeeek... I hope they aren't intending to release a new RH with a new gcc
+> which hasn't yet been released (again). Bad enough the first time, and
+> I'm sure it gave RedHat a lot of embarrassment.
+
+Not really, it should have given more embarrassment to sloppy C++
+programmers although they often were the ones bashing on gcc 2.96...
+
+> FWIW, I've yet to compile apt on the gcc 3.2 snapshot in RawHide - apt's
+> C++ makes several rather poor assumptions on what iterators are, and in
+> addition doesn't use namespaces at all.
+> 
+> For non-C++ folk, this basically means it needs porting. I've got a
+> reasonable way along, now, and I'll send a suitable patch to Connectiva
+> or somewhere when I succeed - I can't find anything on Connectiva's site
+> itself for this.
+
+There are already patches for this, look at the Conectiva apt-list
+archives, you should find them there. Also, apt 0.5 is being actively
+developed and already contains enough fixes to be compiled on Limbo with
+gcc 3.2.
+
+> In addition, the rpmlib stuff has changed slightly - I've not really
+> started on this, but it's mainly just arguments added. The rpmlib
+> documentation seems somewhat poor, though, unless I've missed it.
+
+You can still use an apt package compiled on Red Hat Linux 7.3 as long as
+you install the "rpm404" package for compatibility. That's what I'm doing
+currently on my home Rawhide system.
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

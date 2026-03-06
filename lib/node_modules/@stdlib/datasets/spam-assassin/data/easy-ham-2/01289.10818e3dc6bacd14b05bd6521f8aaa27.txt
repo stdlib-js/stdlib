@@ -1,0 +1,104 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Jul 22 18:27:43 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E4244440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:27:41 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:27:41 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG1PY16604 for
+    <jm-sa@jmason.org>; Mon, 22 Jul 2002 17:01:25 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id KAA26773 for
+    <jm-sa@jmason.org>; Sun, 21 Jul 2002 10:01:43 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WCZP-0008CH-00; Sun,
+    21 Jul 2002 02:00:03 -0700
+Received: from basket.ball.reliam.net ([213.91.6.7]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17WCYt-0001un-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Sun, 21 Jul 2002 01:59:31 -0700
+Received: from teich.garten.digitalprojects.com
+    (port-212-202-162-53.reverse.qdsl-home.de [212.202.162.53]) by
+    basket.ball.reliam.net (Postfix) with ESMTP id 0DD9A3DB0 for
+    <spamassassin-talk@lists.sourceforge.net>; Sun, 21 Jul 2002 10:59:22 +0200
+    (CEST)
+Received: by teich.garten.digitalprojects.com (Postfix, from userid 501)
+    id 1E27153C32; Sun, 21 Jul 2002 10:59:21 +0200 (CEST)
+From: Alexander Skwar <lists.ASkwar@email-server.info>
+To: SpamAssassin Talk ML <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] Cannot get spamd to work
+Message-Id: <20020721085920.GH28057@teich.Garten.DigitalProjects.com>
+References: <20020720153536.GD28057@teich.Garten.DigitalProjects.com>
+    <200207201805.06828@malte.stretz.eu.org>
+    <20020720195608.GF28057@teich.Garten.DigitalProjects.com>
+    <200207210156.18898@malte.stretz.eu.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+In-Reply-To: <200207210156.18898@malte.stretz.eu.org>
+User-Agent: Mutt/1.4i
+X-Operating-System: An i686 Linux with Kernel v2.4.18-20mdk
+X-Face: nope
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Sun, 21 Jul 2002 10:59:20 +0200
+Date: Sun, 21 Jul 2002 10:59:20 +0200
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g6MG1PY16604
+
+So sprach Malte S. Stretz am 2002-07-21 um 01:56:18 +0200 :
+> Not really. In most cases it's an install-and-forget. But there're some 
+> special cases like you. Be proud! You're special :o)
+
+Uhm, yes, I'm happy that it doesn't work for me ;))
+
+> I had a look at the spamc source and put a printf everywhere an exit code 74 
+> is used; could you have a try with the attached spamc, please?
+
+read_message->old_serverex 74
+
+host:~/.cpan/build/Mail-SpamAssassin-2.31 # telnet localhost 783
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+df
+SPAMD/1.0 76 Bad header line: df
+Connection closed by foreign host.
+
+Just like John just said - thanks a lot for taking all that time to help
+me get SA to work!  I'm *REALLY* thankful for this!
+
+Alexander Skwar
+-- 
+How to quote:	http://learn.to/quote (german) http://quote.6x.to (english)
+Homepage:	http://www.iso-top.biz     |    Jabber: askwar@a-message.de
+   iso-top.biz - Die günstige Art an Linux Distributionen zu kommen
+                       Uptime: 4 days 14 hours 37 minutes
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

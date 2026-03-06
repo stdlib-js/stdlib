@@ -1,0 +1,101 @@
+
+{{alias}}( x, a, b, regularized, upper )
+    Computes the kernel function for the regularized incomplete beta function.
+
+    The `regularized` and `upper` parameters specify whether to evaluate the
+    non-regularized and/or upper incomplete beta functions, respectively.
+
+    If provided `x < 0` or `x > 1`, the function returns `[ NaN, NaN ]`.
+
+    If provided `a < 0` or `b < 0`, the function returns `[ NaN, NaN ]`.
+
+    If provided `NaN` for `x`, `a`, or `b`, the function returns `[ NaN, NaN ]`.
+
+    Parameters
+    ----------
+    x: number
+        First function parameter.
+
+    a: number
+        Second function parameter.
+
+    b: number
+        Third function parameter.
+
+    regularized: boolean
+        Boolean indicating whether the function should evaluate the regularized
+        or non-regularized incomplete beta function.
+
+    upper: boolean
+        Boolean indicating whether the function should return the upper tail of
+        the incomplete beta function.
+
+    Returns
+    -------
+    y: Array|TypedArray|Object
+        Function value and first derivative.
+
+    Examples
+    --------
+    > var out = {{alias}}( 0.8, 1.0, 0.3, false, false )
+    [ ~1.277, ~0.926 ]
+    > out = {{alias}}( 0.2, 1.0, 2.0, true, false )
+    [ 0.36, 1.6 ]
+
+
+{{alias}}.assign( x, a, b, regularized, upper, out, stride, offset )
+    Computes the kernel function for the regularized incomplete beta function.
+
+    The `regularized` and `upper` parameters specify whether to evaluate the
+    non-regularized and/or upper incomplete beta functions, respectively.
+
+    If provided `x < 0` or `x > 1`, the function returns `[ NaN, NaN ]`.
+
+    If provided `a < 0` or `b < 0`, the function returns `[ NaN, NaN ]`.
+
+    If provided `NaN` for `x`, `a`, or `b`, the function returns `[ NaN, NaN ]`.
+
+    Parameters
+    ----------
+    x: number
+        First function parameter.
+
+    a: number
+        Second function parameter.
+
+    b: number
+        Third function parameter.
+
+    regularized: boolean
+        Boolean indicating whether the function should evaluate the regularized
+        or non-regularized incomplete beta function.
+
+    upper: boolean
+        Boolean indicating whether the function should return the upper tail of
+        the incomplete beta function.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    y: Array|TypedArray|Object
+        Function value and first derivative.
+
+    Examples
+    --------
+    > var out = [ 0.0, 0.0 ];
+    > var v = {{alias}}.assign( 0.2, 1.0, 2.0, true, true, out, 1, 0 )
+    [ 0.64, 1.6 ]
+    > var bool = ( v === out )
+    true
+
+    See Also
+    --------
+

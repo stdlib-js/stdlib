@@ -1,0 +1,60 @@
+From fork-admin@xent.com  Mon Aug 26 15:31:43 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8D4B94415E
+	for <jm@localhost>; Mon, 26 Aug 2002 10:26:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:26:03 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7OEuYZ06483 for <jm@jmason.org>;
+    Sat, 24 Aug 2002 15:56:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 258B52940EF; Sat, 24 Aug 2002 07:54:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 935DE2940BF for <fork@xent.com>; Sat,
+    24 Aug 2002 07:53:16 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id D04403ECF4;
+    Sat, 24 Aug 2002 10:57:13 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id CEC393EC7A; Sat, 24 Aug 2002 10:57:13 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: "Adam L. Beberg" <beberg@mithral.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: The GOv gets tough on Net Users.....er Pirates..
+In-Reply-To: <Pine.LNX.4.33.0208240101180.25180-100000@watcher.mithral.com>
+Message-Id: <Pine.BSO.4.44.0208241054000.16631-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 24 Aug 2002 10:57:13 -0400 (EDT)
+
+On Sat, 24 Aug 2002, Adam L. Beberg wrote:
+
+--]And yet STILL noone is out there creating _public domain_ content. Is there
+--]even one person out there can can even begin to talk without being a
+--]complete hypocrite? And no the "open source" people cant talk either, the
+--]GPL aint even close. I know I cant talk.
+
+
+All my music is in the Public Domain.
+
+
+There are others.
+
+
+http://xent.com/mailman/listinfo/fork
+

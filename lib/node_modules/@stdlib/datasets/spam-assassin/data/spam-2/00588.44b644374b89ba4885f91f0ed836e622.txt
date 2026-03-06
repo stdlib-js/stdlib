@@ -1,0 +1,102 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N8n5hY089726
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 03:49:06 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6N8n5CO089723
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 03:49:05 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6N8mrhX089672
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 03:48:58 -0500 (CDT)
+	(envelope-from cpunks@ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id DAA03958
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 03:57:19 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id DAA03913
+	for cypherpunks-outgoing; Tue, 23 Jul 2002 03:55:54 -0500
+Received: from aol.com (sagacat.or.jp [210.227.186.178])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id DAA03902
+	for <cypherpunks@einstein.ssz.com>; Tue, 23 Jul 2002 03:55:31 -0500
+From: ggkkvvmm0880p25@aol.com
+Received: from mailout2-eri1.midmouth.com ([210.52.165.25])
+	by rly-yk04.aolmd.com with asmtp; 05 Jun 0102 04:48:21 +0300
+Message-ID: <025b61b04c0c$8475a2e5$8ce80da1@sfymcj>
+To: <cypherpunks@einstein.ssz.com>
+Subject: (광---고) 이멜리스트 500만개 추출한 거 구입기회 드립니다                                 1735jSOB8-522qsvT41-18
+Date: Tue, 04 Jun 0102 21:41:59 +1000
+MiME-Version: 1.0
+Content-Type: text/html; charset="euc-kr"
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: AOL 7.0 for Windows US sub 118
+Importance: Normal
+Sender: owner-cypherpunks@ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Content-Transfer-Encoding: base64
+X-MIME-Autoconverted: from 8bit to base64 by hq.pro-ns.net id g6NEaqhX026767
+
+MDIyOVpnenYyLTU2OEhHSlQyNjI2aUtLVDYtOTgxZXVRQzg1NTRsMzYNCjxodG1sPg0KPGhl
+YWQ+DQoJPHRpdGxlPlVudGl0bGVkPC90aXRsZT4NCjwvaGVhZD4NCjxib2R5IGxpbms9Ymx1
+ZSB2bGluaz1ibHVlPg0KPHRhYmxlIHdpZHRoPTU1MD4NCjx0cj48dGQ+DQo8cD48Zm9udCBj
+b2xvcj1yZWQ+PGI+wMy44biuvbrGriA1MDC4uLCzIDS4uL/4v6Egxsu0z7TZLjwvYj48L2Zv
+bnQ+PC9wPg0KPHA+x9G43sDPwLogyK69x8fPsNQgwaawxbXHvu4gwNaxuL+pLiDB37q5wLog
+x8+zqrXOIL74sbi/qS4NCjxicj656bi4sLO+vyC5rb7uvK0gxsTAzyA1sLO3ziCxuLy6tce+
+7sDWvcC0z7TZLiDGxMDPIMfRsLO05yAyMLjesKHBpLW1ILXLtM+02S4NCjxicj6x17evtM+x
+7iDD0SAxMDC43rChwaS1tSC1y7TPtNkuIMDUsd3Hz73DuOkgudm3ziDAzb26x8O3zr7ut84g
+tNm/7rnesNQgx9i15biztM+02S48L3A+DQo8cD6/5MHyIMGmtaW3ziDBpLiutbUgvsi1yCC1
+5bevv+4guK69usausKEguLnAurWlv6kuILHXt7GwxbTCIMDMuOG4rr26xq6woSC/qbevsLMg
+tNm02rTZtNogutm+7sDWsO0gwOK02cfRILO7v+vAzCC4tyC8r7+pwNbBri4gvsa4tiC+xr3D
+tMIgutDAuiC+xr3Hsqi/ob+pLiC537zbseK3ziC4rr26xq64piDA0MC7tvOw7SDH2LW1IMDQ
+x/TB9sH2tbUgvsrBri4gwaayqLTCIMfRwdm/oSDBpMiuyPcgwMy44cfRsLO+vyDA3yDBpLiu
+tce+7sDWvu6/qS4guvPB2cDMs6ogwMy44cHWvNK/t7+hILrzxK21tSC++L7uv6kuIMGmsKEg
+wffBoiDD38Pix9Gwxb+hv6kuIMDMuOG4rr26xq4gvsi/oSC2sLW1tMIgs8rA+rrQx8+w1CC6
+2b7uwNa0wiDA4rTZx9Egs7u/67W1ILTnv6zI9yC++L3AtM+02S4gv+u1tyDBuyC5+rbzsbgg
+xsi287DtIMfPtM+x7r+pILzux8649MfPvcOwxbOqILHXt7G60LXpILi5wMwgv6y29MHWvLy/
+qS4gPC9wPg0KPHA+wda5rrnmuf3AuiC+xrehwda80rfOILmuwMfH2MHWvLy/5Dxicj4NCr+s
+tvTDszogPGEgaHJlZj1tYWlsdG86dGVjaHRveUBuYXZlci5jb20+dGVjaHRveUBuYXZlci5j
+b208L2E+DQo8L2E+PC9wPg0KDQo8L3RkPjwvdHI+PC90YWJsZT4NCjxiciBjbGVhcj1sZWZ0
+Pg0KPHRhYmxlIHdpZHRoPTU1MCBiZ2NvbG9yPSNjY2ZmY2MgY2VsbHBhZGRpbmc9MTA+PHRy
+Pjx0ZD4NCjxwPsL8sO3A+8C4t84sIMDMufi/oSDAzLjhxsS0wiCwxbTCIDHC97G4v6ksIDLC
+9yA1MDC4uLCzILiuvbrGrrW1IMHYuvHB38DMtM+x7r+pLDxicj4NCsDMsM21tSDHyr/kx9Eg
+utDAuiC5zLiuIL+5vuDH2MHWvLy/qS48YnI+wdi68bXHtMIgtaW3ziC52bfOIL+stvS15bix
+srK/qS48YnI+DQoxwve4rr26xq60wiC55rHdIMPfw+KzobOtILv9u/3H0bDMtM+02S48YnI+
+DQo8YnI+wPq0wiDD38PiseK3ziDAzsXNs92787+hvK0gw9/D4sfRILDNuLggxsi+xr+pLiCx
+1yC/3L+hILCzwM7BpLq4tMIgurjAr8fPsO0gwNbB9iC+yr3AtM+02S4gDQq/wMfYvvjAuL3D
+seIgudm2+LTPtNkuIF5ePC9wPjwvdGQ+PC90cj48L3RhYmxlPg0KPGJyIGNsZWFyPWxlZnQ+
+DQo8dGFibGUgd2lkdGg9NTUwPjx0cj48dGQ+PHA+waS6uMXrvcW6ziCxx7DtILvnx9e/oSDA
+x7DFIMGmuPG/oSBbsaSw7V0gtvOw7SDHpbHix9EgsaSw7SC43sDPwNS0z7TZLjxicj4NCiC8
+9r3FwLsgv/jEob7KwLi46SA8YSBocmVmPSJtYWlsdG86cmVtb3ZlMTIzQG9yZ2lvLm5ldD9T
+VUJKRUNUPbz2vcWwxbrOIj689r3FsMW6zjwvYT64piC0rbevIMHWvLy/5C4gPGJyPjxicj48
+Zm9udCBzaXplPTI+PGI+v+y4rsDHILz2vcWwxbrOv+TDuyDDs7iuuea5/TogvPa9xbDFus63
+ziC16b7uv8IgwMy44bXpwLogwda80rz2wf2x4r+hIMDHx9i8rSDA2rW/wLi3ziC6uLO9u+e2
+9yDB1rzSuLjAzCC89sH9tcggyMQgvPa9xbDFus64rr26xq63ziC48L7Gwf20z7TZLiC02cC9
+IMDMuOG537zbvcMgx8rFzbi1wLsgxevHz7+pILz2vcWwxbrOwNq4piC537zbuK69usauv6G8
+rSC76MGmx9EgyMQgud+828fVtM+02S48L2I+PC9mb250PjwvcD4NCjxwPiBUbyByZW1vdmUg
+eW91cnNlbGYgZnJvbSB0aGlzIG1haWxpbmcgbGlzdCwgZW1haWwgdG8gPGEgaHJlZj0ibWFp
+bHRvOnJlbW92ZTEyM0Bvcmdpby5uZXQ/c3ViamVjdD1SRU1PVkUiPnJlbW92ZTEyM0Bvcmdp
+by5uZXQ8L2E+IHdpdGggdGhlIHdvcmQgInJlbW92ZSIgaW4gdGhlIHN1YmplY3QgbGluZS48
+L3A+PC90ZD48L3RyPjwvdGFibGU+PGJyPg0KDQoNCg0KDQo8L2JvZHk+DQo8L2h0bWw+DQoN
+CjI1OTNrYlRFNC03OTRnUmFJNDg4MFNhRkI2LTgzNXBTck4zNzM2TVNocjAtMTMyVnBRcDky
+NDdsSXlvNy05MzJHdXdUMDc3MHN0RWtsNzINCg==
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

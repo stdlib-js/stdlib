@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[@techreport{id,
+	abstract = {},
+	author = {},
+	institution = {},
+	keywords = {},
+	title = {{}},
+	url = {},
+	year = {},
+}
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.techreport</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.bibtex</scope>
+
+    <!-- Description to show in the menu -->
+    <description>BibTeX tech report template</description>
+</snippet>

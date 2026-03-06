@@ -1,0 +1,30 @@
+From rssfeeds@jmason.org  Sat Oct  5 10:37:25 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2461E16F79
+	for <jm@localhost>; Sat,  5 Oct 2002 10:36:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 10:36:40 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9580WK02532 for
+    <jm@jmason.org>; Sat, 5 Oct 2002 09:00:32 +0100
+Message-Id: <200210050800.g9580WK02532@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: For you, and you, and Timmy
+Date: Sat, 05 Oct 2002 08:00:31 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85524618
+Date: Not supplied
+
+[IMG: http://www.craphound.com/images/timmyerrorsmall.jpg] Check out this weird 
+easter-egg I found in MacOS 10.2.1's Sharing control panel! Link[1] Discuss[2]
+
+
+[1] http://www.craphound.com/images/timmyerrorbig.jpg
+[2] http://www.quicktopic.com/boing/H/W4evyQiUY2xsb
+
+

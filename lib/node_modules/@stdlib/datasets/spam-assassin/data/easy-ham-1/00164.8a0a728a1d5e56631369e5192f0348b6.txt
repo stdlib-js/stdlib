@@ -1,0 +1,99 @@
+From fork-admin@xent.com  Tue Oct  8 14:40:22 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id A524E16F16
+	for <zzzz@localhost>; Tue,  8 Oct 2002 14:39:44 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 14:39:44 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g98DIUK16967 for <zzzz@spamassassin.taint.org>;
+    Tue, 8 Oct 2002 14:18:30 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 99D1A2940DA; Tue,  8 Oct 2002 06:18:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta6.snfc21.pbi.net (mta6.snfc21.pbi.net [206.13.28.240])
+    by xent.com (Postfix) with ESMTP id 46C832940D1 for <fork@xent.com>;
+    Tue,  8 Oct 2002 06:17:30 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta6.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H3N006X7ZLZ03@mta6.snfc21.pbi.net> for fork@xent.com; Tue,
+    08 Oct 2002 06:17:59 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: Re: why is decentralization worth worrying about?
+To: Rohit Khare <khare@alumni.caltech.edu>
+Cc: fork@spamassassin.taint.org
+Reply-To: gbolcer@endeavors.com
+Message-Id: <3DA2D8B5.19DD480D@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en, pdf
+References: <2583F1FA-DA52-11D6-B1B1-000393A46DEA@alumni.caltech.edu>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 08 Oct 2002 06:08:05 -0700
+
+Rohit Khare wrote:
+> 
+> Why am I so passionate about decentralization? Because I believe some of
+> today?s most profound problems with networked applications are caused by
+> centralization.
+> 
+> Generically, a centralized political or economic system permits only one
+> answer to a question, while decentralization permits many separate
+> agents to hold different opinions of the same matter. In the specific
+> context of software, centralized variables can only contain one valid
+> value at a time. That limits us to only representing information A)
+> according to the beliefs of a single agency, and B) that changes more
+> slowly than it takes to propagate. Nevertheless, centralization is the
+> basis for today?s most popular architectural style for developing
+> network applications: client-server interaction using request-response
+> communication protocols.
+
+I think the ability to maintain an inconsistent database
+is key to decentralization. 
+
+Databases enforce consistenty with every transaction.
+Bounded transactions, like an ATM, enforce consistency
+  by have some play with time and value
+Most people keep inconsistent data in their heads, it's
+  called congnitive dissonance theory
+Most businesses keep inconsistent data, documents, tationale
+  and ideas to support their work activities, it's called real life.
+
+I don't think it matters so much where it's located, i.e.
+decentralization. I think that decentralization is the workaround
+from technical limitations.  The fallout being that the only way
+inconsistent information spaces can be maintained is by 
+protecting them through a set of trust barriers and boundaries. 
+The local information when combined with the technical
+troubles of providing "just enough" forced synchronization
+to remote information provide workable data consistenty, i.e.
+enforcing local constraints or ignoring global ones when
+concerns are more immedidate.  
+
+Tolerating temporary, irreconcilable deviations is how
+people cope, otherwise you'd be like Nick Gatsby unnecessarily
+pre-occupied with a spot of shaving cream on McKee's neck
+who thinks that if he can just wipe that spot off that the
+whole world would be a little more perfect and everything,
+including his pre-occupation with Daisy, would consistently
+be in its proper place.
+
+Greg
+
+

@@ -1,0 +1,134 @@
+
+{{alias}}( N, x, sx, m, sm, y, sy )
+    Computes the multiplicative inverse for each element in a double-precision
+    floating-point strided array `x` according to a strided mask array and
+    assigns the results to elements in a double-precision floating-point strided
+    array `y`.
+
+    The `N` and stride parameters determine which strided array elements are
+    accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        Input array.
+
+    sx: integer
+        Index increment for `x`.
+
+    m: Uint8Array
+        Mask array.
+
+    sm: integer
+        Index increment for `m`.
+
+    y: Float64Array
+        Destination array.
+
+    sy: integer
+        Index increment for `y`.
+
+    Returns
+    -------
+    y: Float64Array
+        Input array `y`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -20.0, -1.0, 2.0, 4.0 ] );
+    > var m = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 1, 0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}( x.length, x, 1, m, 1, y, 1 )
+    <Float64Array>[ -0.05, -1.0, 0.0, 0.25 ]
+
+    // Using `N` and stride parameters:
+    > y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}( 2, x, 2, m, 2, y, -1 )
+    <Float64Array>[ 0.0, -0.05, 0.0, 0.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ -20.0, -1.0, 2.0, 4.0 ] );
+    > var m0 = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 1, 0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var m1 = new {{alias:@stdlib/array/uint8}}( m0.buffer, m0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*2 );
+    > {{alias}}( 2, x1, -2, m1, -2, y1, 1 )
+    <Float64Array>[ 0.25, -1.0 ]
+    > y0
+    <Float64Array>[ 0.0, 0.0, 0.25, -1.0 ]
+
+
+{{alias}}.ndarray( N, x, sx, ox, m, sm, om, y, sy, oy )
+    Computes the multiplicative inverse for each element in a double-precision
+    floating-point strided array `x` according to a strided mask array and
+    assigns the results to elements in a double-precision floating-point strided
+    array `y` using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        Input array.
+
+    sx: integer
+        Index increment for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    m: Float64Array
+        Mask array.
+
+    sm: integer
+        Index increment for `m`.
+
+    om: integer
+        Starting index for `m`.
+
+    y: Float64Array
+        Destination array.
+
+    sy: integer
+        Index increment for `y`.
+
+    oy: integer
+        Starting index for `y`.
+
+    Returns
+    -------
+    y: Float64Array
+        Input array `y`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -20.0, -1.0, 2.0, 4.0 ] );
+    > var m = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 1, 0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( x.length, x, 1, 0, m, 1, 0, y, 1, 0 )
+    <Float64Array>[ -0.05, -1.0, 0.0, 0.25 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/float64}}( [ -20.0, -1.0, 2.0, 4.0 ] );
+    > m = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 1, 0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( 2, x, 2, 1, m, 2, 1, y, -1, y.length-1 )
+    <Float64Array>[ 0.0, 0.0, 0.25, -1.0 ]
+
+    See Also
+    --------
+

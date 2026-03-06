@@ -1,0 +1,77 @@
+From felicity@kluge.net  Wed Aug 28 10:46:13 2002
+Return-Path: <felicity@kluge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B23AB4415D
+	for <jm@localhost>; Wed, 28 Aug 2002 05:45:41 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:45:41 +0100 (IST)
+Received: from eclectic.kluge.net
+    (IDENT:8D4+93loqH1uP9+nnpXx+6aPzB2y7pYQ@eclectic.kluge.net [66.92.69.221])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7S1aCZ06126 for
+    <jm@jmason.org>; Wed, 28 Aug 2002 02:36:12 +0100
+Received: (from felicity@localhost) by eclectic.kluge.net (8.11.6/8.11.6)
+    id g7S1aMk07018; Tue, 27 Aug 2002 21:36:22 -0400
+Date: Tue, 27 Aug 2002 21:36:22 -0400
+From: Theo Van Dinter <felicity@kluge.net>
+To: Justin Mason <yyyy@spamassassin.taint.org>
+Cc: mark@mlucas.net, spamassassin-talk@example.sourceforge.net
+Subject: Re: FAQ: taint warnings from SA in /etc/procmailrc
+Message-Id: <20020828013622.GD30677@kluge.net>
+References: <20020827224738.GA30677@kluge.net>
+    <33052.194.125.220.138.1030490064.squirrel@jmason.org>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="wLAMOaPNJ0fu1fTG"
+Content-Disposition: inline
+In-Reply-To: <33052.194.125.220.138.1030490064.squirrel@spamassassin.taint.org>
+User-Agent: Mutt/1.4i
+X-GPG-Keyserver: http://wwwkeys.pgp.net
+X-GPG-Keynumber: 0xE580B363
+X-GPG-Fingerprint: 75B1 F6D0 8368 38E7 A4C5  F6C2 02E3 9051 E580 B363
+
+
+--wLAMOaPNJ0fu1fTG
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Wed, Aug 28, 2002 at 12:14:24AM +0100, Justin Mason wrote:
+> actually, I think procmail supports this directly. use DROPPRIVS=3Dyes
+> at the top of the /etc/procmailrc.
+
+Hey, look at that!
+
+       DROPPRIVS   If  set  to	`yes'  procmail  will drop all privileges
+		   it might have had (suid or sgid).  This is only
+		   useful if you want to guarantee that the bottom half
+		   of  the /etc/procmailrc file is executed on behalf
+		   of the recipient.
+
+Of course, removing setuid/gid bits on programs that don't need it is
+always a good idea.  A general rule of system administration: don't give
+out permissions unless you absolutely need to.   ;)
+
+--=20
+Randomly Generated Tagline:
+"The cardinal rule at our school is simple. No shooting at teachers. If
+ you have to shoot a gun, shoot it at a student or an administrator."
+                 - "Word Smart II", from Princeton Review Pub.
+
+--wLAMOaPNJ0fu1fTG
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE9bCkWAuOQUeWAs2MRAr+iAJ9cVLx61vWsC5KFDLYv9/T7FaZmxACgzUpC
+f235rrVr6cI8LvPC+IeIss0=
+=BsCM
+-----END PGP SIGNATURE-----
+
+--wLAMOaPNJ0fu1fTG--
+

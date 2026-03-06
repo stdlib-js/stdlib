@@ -1,0 +1,73 @@
+From fork-admin@xent.com  Tue Aug 20 22:20:24 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E9FD843C34
+	for <jm@localhost>; Tue, 20 Aug 2002 17:20:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 22:20:24 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7KLKYZ24936 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 22:20:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C4326294158; Tue, 20 Aug 2002 14:07:35 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from atlantic.gse.rmit.edu.au (unknown [131.170.243.69]) by
+    xent.com (Postfix) with ESMTP id E12812940BB for <fork@xent.com>;
+    Wed,  7 Aug 2002 22:10:11 -0700 (PDT)
+Received: (from rsedc@localhost) by atlantic.gse.rmit.edu.au (8.8.7/8.8.7)
+    id PAA29062; Thu, 8 Aug 2002 15:12:00 +1000
+From: rsedc@atlantic.gse.rmit.edu.au
+Message-Id: <20020808151200.A28920@atlantic.gse.rmit.edu.au>
+To: "R. A. Hettinga" <rah@shipwright.com>,
+	Digital Bearer Settlement List <dbs@philodox.com>, dcsb@ai.mit.edu,
+	cryptography@wasabisystems.com, e$@vmeng.com, mac-crypto@vmeng.com,
+	net-thinkers@vmeng.com, dave@farber.net, cypherpunks@lne.com,
+	cyberia-l@listserv.aol.com, nettime-l@bbs.thing.net, fork@xent.com
+Subject: Re: Palladiated? (was re: wow - palladiated! (Re: Palladium: technical limits and implications))
+References: <p05111a3ab9774f75f17c@[66.149.49.6]>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Mailer: Mutt 0.91.1
+In-Reply-To: <p05111a3ab9774f75f17c@[66.149.49.6]>; from R. A. Hettinga on
+    Wed, Aug 07, 2002 at 06:37:51PM -0400
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 8 Aug 2002 15:12:00 +1000
+
+> On Wed, Aug 07, 2002 at 03:08:08PM -0400, R. A. Hettinga wrote:
+> > At 6:54 PM +0100 on 8/7/02, Adam Back wrote:
+> > > Palladiumized
+> >
+> > Palladiated?
+> >
+
+And the antonym? Odyssielded. Rhymes with shielded.
+
+http://homepage.mac.com/cparada/GML/Odysseus.html
+
+Odysseus was the first to learned the Palladium Oracles from the Seer Hellenus.
+Odysseus neutralised (neutronised?) Palladium's defence for Troy.
+Odysseus invented the first Trojan Horse.
+
+Incidentally public revelation of the Palladium is supposed to be on
+Seventh Day to the Ides of Jun, i.e. 8th. June. The Newsweek article was
+a bit late.
+
+http://www.clubs.psu.edu/aegsa/rome/jun06.htm
+
+
+David Chia
+http://xent.com/mailman/listinfo/fork
+

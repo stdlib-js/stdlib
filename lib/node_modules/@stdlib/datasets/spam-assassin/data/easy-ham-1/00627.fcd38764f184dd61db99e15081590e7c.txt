@@ -1,0 +1,130 @@
+From fork-admin@xent.com  Thu Sep 19 11:04:56 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 44D5C16F03
+	for <jm@localhost>; Thu, 19 Sep 2002 11:04:55 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 11:04:55 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8IIcfC11476 for <jm@jmason.org>;
+    Wed, 18 Sep 2002 19:38:41 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 76BD12940AC; Wed, 18 Sep 2002 11:35:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hall.mail.mindspring.net (hall.mail.mindspring.net
+    [207.69.200.60]) by xent.com (Postfix) with ESMTP id F364929409E for
+    <fork@xent.com>; Wed, 18 Sep 2002 11:34:49 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    hall.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17rjiB-0006LF-00;
+    Wed, 18 Sep 2002 14:38:07 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a91b9ae65ce6208@[66.149.49.6]>
+In-Reply-To: <m2ptvbl0w7.fsf@maya.dyndns.org>
+References: <20020918104740.5A00BC44D@argote.ch>
+    <200209181145.50631.eh@mad.scientist.com> <m2ptvbl0w7.fsf@maya.dyndns.org>
+To: fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: [VoID] a new low on the personals tip...
+Cc: Digital Bearer Settlement List <dbs@philodox.com>
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 18 Sep 2002 14:13:32 -0400
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+I know it's not the popular choice for a lot of people, but I'd
+suggest, um, church. :-). Like Woody Allen said, 90% of life is
+showing up, right?
+
+
+Almost anyone can find a church where the sermons don't make you bust
+out laughing, and you're set. I, for instance, am a Unitarian, which,
+as someone once observed, is merely a decompression chamber between a
+real church and a golf course. (ObUUJokes: Mid 70's bumper-sticker:
+"Honk if you're not sure"; Lenny Bruce: "Did you hear about how the
+Klan burned a question mark on the Unitarian's lawn?"; "Unitarians
+would rather go to a discussion group about heaven than to heaven
+itself."; "Unitarians pray 'to whom it may concern'"; etc...)
+
+But, seriously, folks, my teenage-adopted denomination (I'm, um,
+lapsed, on several fronts, a Dutch-Reformed-turned-atheist father and
+an agnostic mother who used to be a southern Baptist of some stripe
+or another) and frankly limousine liberal secular-humanist
+congregation is about as orthogonal to my present
+congenital-Republican small-l libertarian turned anarchocapitalist
+politics as it is possible to be (except for the secular-humanist
+bit...), and I still go pretty regularly, though not as much as I
+used to. Heck, the older I get the less of the divine I believe in.
+I'm asymptotically approaching my father's atheism, these days, and I
+show up at least once a month. Nice folks though, when I can keep a
+civil tongue in my head -- smart too, when I can't and end up arguing
+with them. :-).
+
+
+Anyway, if *I* can end up hitched, anyone can. Talk about orthogonal.
+I met my practically-socialist state-education-bureaucrat wife one
+year after I started, moved in with her 6 weeks later :-), married
+her 2 years after that, and I wasn't even trying meet women. I was
+just looking to make friends as I was new in town.
+
+
+The trick to the church thing is, whatever denomination/congregation
+you end up in, expect to end up with a mate, not a date. I mean, some
+guys manage to stay single, but most, like me, don't. You can
+practically see the laser-sights light up when you walk into a
+room...
+
+That's because, of course, most churches are *run* by women. Most
+regular attendants are women. Hell, 65% of all new *ministers*, in
+protestant denominations, at least, are women. No matter your age,
+looks, intelligence, whatever, you'll end up surrounded by women.
+You'll be outnumbered, even several to one -- some of whom are at
+least better looking than you are. :-). The only place where there
+are *more* women running things is in grass-roots Republican politics
+- -- but I won't go there, I promise.
+
+
+If I may make a presumption here, since you brought it up, I figure
+that between the sophistication and diversity of the subcontinent's
+religions, and the ubiquity of Indians in various stages of
+assimilation in So/NoCal, you can find some place to hang out near
+you, Rohit. You probably don't even have to go, um, native, like I
+did -- backsliding on my own ostensibly rational godless upbringing
+and becoming, horrors, a Unitarian...
+
+Cheers,
+RAH
+
+-----BEGIN PGP SIGNATURE-----
+Version: PGP 7.5
+
+iQA/AwUBPYjCBcPxH8jf3ohaEQI2vwCbB2UkMyii/XwKQvvJFSWlMMRheBsAmwUB
+jDmfQrNRQED3LmW6V8YutN54
+=vQ/A
+-----END PGP SIGNATURE-----
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

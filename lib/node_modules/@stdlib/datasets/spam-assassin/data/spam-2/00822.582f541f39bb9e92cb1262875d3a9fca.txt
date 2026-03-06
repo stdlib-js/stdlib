@@ -1,0 +1,93 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:40:24 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 39417440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:40:22 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:40:22 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG1jY16810 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:01:45 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id EAA26071 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 04:22:23 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id EAA16363; Sun, 21 Jul 2002 04:21:49 +0100
+Received: from univie.ac.at ([61.60.96.252]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id EAA16281; Sun, 21 Jul 2002 04:21:27 +0100
+From: asc4023h20@univie.ac.at
+X-Authentication-Warning: lugh.tuatha.org: Host [61.60.96.252] claimed to
+    be univie.ac.at
+Received: from 186.29.51.117 ([186.29.51.117]) by sparc.zubilam.net with
+    NNFMP; Sat, 20 Jul 0102 18:21:09 +0700
+Received: from unknown (27.137.60.220) by q4.quickslow.com with esmtp;
+    Sun, 21 Jul 0102 01:16:05 +0900
+Received: from [41.160.23.155] by mailout2-eri1.midmouth.com with asmtp;
+    Sun, 21 Jul 0102 10:11:01 -0700
+Reply-To: <asc4023h20@univie.ac.at>
+Message-Id: <004b75c13b0a$3271b1e1$4ce30ab3@bminxg>
+To: <owen@linux.ie>, <eceairlied@linux.ie>, <pro@linux.ie>,
+	<listmaster@linux.ie>, <social@linux.ie>, <kevin@linux.ie>,
+	<ilug@linux.ie>, <ie-dist@linux.ie>
+Date: Sun, 21 Jul 0102 08:20:35 -0500
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: eGroups Message Poster
+Importance: Normal
+Subject: [ILUG] What to do when the stock market is down 0179mFrP5-640z-13
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+Content-Transfer-Encoding: 8bit
+
+On January 1st 2002, the European countries began
+using the new Euro.  Never before have so
+many countries with such powerful economies united
+to use a single currency.  Get your piece of history
+now!  We would like to send you a FREE Euro
+and a FREE report on world currency.  Just visit
+our site to request your Euro and Euro report:
+ 
+http://80.71.65.57/
+ 
+In addition to our currency report, you can receive
+our FREE INVESTMENT PACKAGE:
+ 
+*Learn how $10,000 in options will leverage $1,000,000 in
+Euro Currency. This means even a small movement in the market
+has huge profit potential.
+ 
+If you are over age 18 and have some risk capital, it's
+important that you find out how the Euro will
+change the economic world and how you can profit!
+ 
+$10,000 minimum investment
+ 
+Please carefully evaluate your financial position before
+trading.  Only risk capital should be used.
+
+http://80.71.65.57/
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+To "Opt-Out":
+
+http://80.71.65.57/optout.html
+
+9890mZai1-220dXGN8995pTZf7-668SKMW1903wjsu2-604meTh8297QskO2-l57
+ 
+
+
+1733PuSv2-985DSia7345xFCG6-061JUXO3729AvSA0-582gDoL8437inQv9-747IFpX8534GdaJ0-l73
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

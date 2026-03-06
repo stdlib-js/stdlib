@@ -1,0 +1,627 @@
+From OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM  Thu Aug 22 18:28:39 2002
+Return-Path: <OWNER-NOLIST-SGODAILY*JM**NETNOTEINC*-COM@SMTP1.ADMANMAIL.COM>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 71CE443F9B
+	for <zzzz@localhost>; Thu, 22 Aug 2002 13:28:19 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 18:28:19 +0100 (IST)
+Received: from TIPSMTP1.ADMANMAIL.COM (TIPSMTP1.ADMANMAIL.COM [209.216.124.212])
+	by webnote.net (8.9.3/8.9.3) with ESMTP id SAA05985
+	for <JM@NETNOTEINC.COM>; Thu, 22 Aug 2002 18:27:56 +0100
+Message-Id: <200208221727.SAA05985@webnote.net>
+Received: from tiputil1 (10.2.0.30) by TIPSMTP1.ADMANMAIL.COM (LSMTP for Windows NT v1.1b) with SMTP id <123.000035F8@TIPSMTP1.ADMANMAIL.COM>; Thu, 22 Aug 2002 11:11:42 -0500
+Date: Thu, 22 Aug 2002 10:30:04 -0500
+From: Great Offers <greatoffers@sendgreatoffers.com>
+To: JM@NETNOTEINC.COM
+Subject: Is Your Family Protected?
+X-Info: 134085
+X-Info2: SGO
+Mime-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+<head>
+<title>ReliaQuote - Save Up To 70% On Life Insurance</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body leftmargin="0" topmargin="0" link="#FFCC99" vlink="#FFCC99" alink="#FFCC00">
+<table align="center" width="468" border="0" cellspacing="0" cellpadding="0" height="500" bgcolor="993366">
+  <tr>
+    <td align="left" valign="top" height="43" width="56%">
+      <table width="100%" border="0" cellspacing="0" cellpadding="3">
+        <tr>
+          <td><a href="http://theadmanager.com/server/c.asp?ad_key=YUESBHWAKMLK&ext=1" target="_blank"><img src="http://www.reliaquote.com/banner/bannerads/images/logo6.gif" width="120" height="32" border="0"></a></td>
+        </tr>
+      </table>
+    </td>
+    <td align="left" valign="top" height="43" width="44%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" width="56%" height="377">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr align="right" valign="top" bgcolor="#FFCCFF">
+          <td height="2"><img src="http://www.reliaquote.com/banner/bannerads/images/headline6.gif" width="220" height="72"></td>
+        </tr>
+        <tr align="center" valign="top" bgcolor="336699">
+          <td height="2">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr align="center" valign="top">
+                <td height="32">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr align="left" valign="top">
+                      <td height="34">
+                        <table width="100%" border="0" cellspacing="8" cellpadding="0" bgcolor="#993366">
+                          <tr align="center" valign="top">
+                            <td height="45">
+                              <p><font color="#FFCC00" face="Tahoma, Verdana, Arial" size="2"><b>Life
+                                can change in an instant. That's why it is so
+                                important to protect your family's financial future
+                                with sufficient life insurance coverage.</b></font></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr bgcolor="#FFCC00" align="center" valign="middle">
+          <td height="27"><font size="1"><b><img src="http://www.reliaquote.com/banner/bannerads/images/freequotes6.gif" width="177" height="24"></b></font></td>
+        </tr>
+        <tr align="left" valign="top" bgcolor="#3366CC">
+          <td height="294">
+            <form name=FreeQuoteForm ACTION="http://www.reliaquote.com/termlife/cgi-bin/banner_quote_resp.asp" METHOD="get">
+ <input type=hidden value=51100004022000000321 name=sourceid>
+              <table class=hptbcolor cellspacing=0 cellpadding=2 width="100%"
+        border=0>
+                <tbody>
+                <tr>
+                  <td width="100%">
+                    <table cellspacing=4 cellpadding=0 width="100%" border=0>
+                      <tbody>
+                      <tr>
+                        <td class=content width="35%"><font size="1" face="Tahoma, Verdana, Arial" color="#FFFFFF"><strong>State
+                          of Residence:</strong></font></td>
+                        <td class=content width="65%" align="left" valign="middle">
+                          <font face="Tahoma, Verdana, Arial">
+                          <select id=FormsComboBox12
+                  size=1 name=state>
+                            <option value="" selected>Select State</option>
+                            <option value=Alabama>Alabama</option>
+                            <option value=Alaska>Alaska</option>
+                            <option
+                    value=Arizona>Arizona</option>
+                            <option
+                    value=Arkansas>Arkansas</option>
+                            <option
+                    value=California>California</option>
+                            <option
+                    value=Colorado>Colorado</option>
+                            <option
+                    value=Connecticut>Connecticut</option>
+                            <option
+                    value=Delaware>Delaware</option>
+                            <option value=DC>Dist. of Columbia</option>
+                            <option value=Florida>Florida</option>
+                            <option value=Georgia>Georgia</option>
+                            <option
+                    value=Hawaii>Hawaii</option>
+                            <option
+                    value=Idaho>Idaho</option>
+                            <option
+                    value=Illinois>Illinois</option>
+                            <option
+                    value=Indiana>Indiana</option>
+                            <option
+                    value=Iowa>Iowa</option>
+                            <option
+                    value=Kansas>Kansas</option>
+                            <option
+                    value=Kentucky>Kentucky</option>
+                            <option
+                    value=Louisiana>Louisiana</option>
+                            <option
+                    value=Maine>Maine</option>
+                            <option
+                    value=Maryland>Maryland</option>
+                            <option
+                    value=Massachusetts>Massachusetts</option>
+                            <option
+                    value=Michigan>Michigan</option>
+                            <option
+                    value=Minnesota>Minnesota</option>
+                            <option
+                    value=Mississippi>Mississippi</option>
+                            <option
+                    value=Missouri>Missouri</option>
+                            <option
+                    value=Montana>Montana</option>
+                            <option
+                    value=Nebraska>Nebraska</option>
+                            <option
+                    value=Nevada>Nevada</option>
+                            <option
+                    value="New Hampshire">New Hampshire</option>
+                            <option
+                    value="New Jersey">New Jersey</option>
+                            <option
+                    value="New Mexico">New Mexico</option>
+                            <option
+                    value="New York">New York</option>
+                            <option
+                    value="North Carolina">North Carolina</option>
+                            <option
+                    value="North Dakota">North Dakota</option>
+                            <option
+                    value=Ohio>Ohio</option>
+                            <option
+                    value=Oklahoma>Oklahoma</option>
+                            <option
+                    value=Oregon>Oregon</option>
+                            <option
+                    value=Pennsylvania>Pennsylvania</option>
+                            <option
+                    value="Rhode Island">Rhode Island</option>
+                            <option
+                    value="South Carolina">South Carolina</option>
+                            <option
+                    value="South Dakota">South Dakota</option>
+                            <option
+                    value=Tennessee>Tennessee</option>
+                            <option
+                    value=Texas>Texas</option>
+                            <option value=Utah>Utah</option>
+                            <option value=Vermont>Vermont</option>
+                            <option
+                    value=Virginia>Virginia</option>
+                            <option
+                    value=Washington>Washington</option>
+                            <option
+                    value="West Virginia">West Virginia</option>
+                            <option
+                    value=Wisconsin>Wisconsin</option>
+                            <option
+                    value=Wyoming>Wyoming</option>
+                          </select>
+                          </font></td>
+                      </tr>
+                      <tr>
+                        <td class=content width="35%"><font size="1" face="Tahoma, Verdana, Arial" color="#FFFFFF"><strong>Date
+                          of Birth (MM/DD/YY):</strong></font></td>
+                        <td noWrap width="65%" align="left" valign="middle"> <font face="Tahoma, Verdana, Arial">
+                          <select size=1 name=MM>
+                            <option
+                    value="" selected>MM</option>
+                            <option value=01>01</option>
+                            <option value=02>02</option>
+                            <option value=03>03</option>
+                            <option value=04>04</option>
+                            <option value=05>05</option>
+                            <option value=06>06</option>
+                            <option value=07>07</option>
+                            <option value=08>08</option>
+                            <option value=09>09</option>
+                            <option value=10>10</option>
+                            <option value=11>11</option>
+                            <option value=12>12</option>
+                          </select>
+                          /
+                          <select size=1 name=DD>
+                            <option value="" selected>DD</option>
+                            <option
+                    value=01>01</option>
+                            <option value=02>02</option>
+                            <option
+                    value=03>03</option>
+                            <option value=04>04</option>
+                            <option
+                    value=05>05</option>
+                            <option value=06>06</option>
+                            <option
+                    value=07>07</option>
+                            <option value=08>08</option>
+                            <option
+                    value=09>09</option>
+                            <option value=10>10</option>
+                            <option
+                    value=11>11</option>
+                            <option value=12>12</option>
+                            <option
+                    value=13>13</option>
+                            <option value=14>14</option>
+                            <option
+                    value=15>15</option>
+                            <option value=16>16</option>
+                            <option
+                    value=17>17</option>
+                            <option value=18>18</option>
+                            <option
+                    value=19>19</option>
+                            <option value=20>20</option>
+                            <option
+                    value=21>21</option>
+                            <option value=22>22</option>
+                            <option
+                    value=23>23</option>
+                            <option value=24>24</option>
+                            <option
+                    value=25>25</option>
+                            <option value=26>26</option>
+                            <option
+                    value=27>27</option>
+                            <option value=28>28</option>
+                            <option
+                    value=29>29</option>
+                            <option value=30>30</option>
+                            <option
+                    value=31>31</option>
+                          </select>
+                          /
+                          <select size=1 name=YY>
+                            <option value="" selected>YY</option>
+                            <option
+                    value=13>13</option>
+                            <option value=14>14</option>
+                            <option
+                    value=15>15</option>
+                            <option value=16>16</option>
+                            <option
+                    value=17>17</option>
+                            <option value=18>18</option>
+                            <option
+                    value=19>19</option>
+                            <option value=20>20</option>
+                            <option
+                    value=21>21</option>
+                            <option value=22>22</option>
+                            <option
+                    value=23>23</option>
+                            <option value=24>24</option>
+                            <option
+                    value=25>25</option>
+                            <option value=26>26</option>
+                            <option
+                    value=27>27</option>
+                            <option value=28>28</option>
+                            <option
+                    value=29>29</option>
+                            <option value=30>30</option>
+                            <option
+                    value=31>31</option>
+                            <option value=32>32</option>
+                            <option
+                    value=33>33</option>
+                            <option value=34>34</option>
+                            <option
+                    value=35>35</option>
+                            <option value=36>36</option>
+                            <option
+                    value=37>37</option>
+                            <option value=38>38</option>
+                            <option
+                    value=39>39</option>
+                            <option value=40>40</option>
+                            <option
+                    value=41>41</option>
+                            <option value=42>42</option>
+                            <option
+                    value=43>43</option>
+                            <option value=44>44</option>
+                            <option
+                    value=45>45</option>
+                            <option value=46>46</option>
+                            <option
+                    value=47>47</option>
+                            <option value=48>48</option>
+                            <option
+                    value=49>49</option>
+                            <option value=50>50</option>
+                            <option
+                    value=51>51</option>
+                            <option value=52>52</option>
+                            <option
+                    value=53>53</option>
+                            <option value=54>54</option>
+                            <option
+                    value=55>55</option>
+                            <option value=56>56</option>
+                            <option
+                    value=57>57</option>
+                            <option value=58>58</option>
+                            <option
+                    value=59>59</option>
+                            <option value=60>60</option>
+                            <option
+                    value=61>61</option>
+                            <option value=62>62</option>
+                            <option
+                    value=63>63</option>
+                            <option value=64>64</option>
+                            <option
+                    value=65>65</option>
+                            <option value=66>66</option>
+                            <option
+                    value=67>67</option>
+                            <option value=68>68</option>
+                            <option
+                    value=69>69</option>
+                            <option value=70>70</option>
+                            <option
+                    value=71>71</option>
+                            <option value=72>72</option>
+                            <option
+                    value=73>73</option>
+                            <option value=74>74</option>
+                            <option
+                    value=75>75</option>
+                            <option value=76>76</option>
+                            <option
+                    value=77>77</option>
+                            <option value=78>78</option>
+                            <option
+                    value=79>79</option>
+                            <option value=80>80</option>
+                            <option
+                    value=81>81</option>
+                            <option value=82>82</option>
+                            <option
+                    value=83>83</option>
+                                          <option
+                    value=84>84</option>
+                          </select>
+                          </font></td>
+                      </tr>
+                      <tr>
+                        <td class=content width="35%"><font size="1" face="Tahoma, Verdana, Arial" color="#FFFFFF"><strong>Sex:</strong></font></td>
+                        <td noWrap width="65%" align="left" valign="middle">
+                          <table cellspacing=0 width="100%" border=0>
+                            <tbody>
+                            <tr>
+                              <td width="50%"> <font color="#FFFFFF" size="1" face="Tahoma, Verdana, Arial"><b>
+                                <input id=FormsRadioButton1 type=radio
+                        value=M name=Sex>
+                                Male</b></font></td>
+                              <td width="50%"> <font color="#FFFFFF" size="1" face="Tahoma, Verdana, Arial"><b>
+                                <input id=FormsRadioButton2 type=radio
+                        value=F name=Sex>
+                                Female</b></font></td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class=content width="35%"><font size="1" face="Tahoma, Verdana, Arial" color="#FFFFFF"><strong>Have
+                          you used any tobacco products in the last 12 months?</strong></font></td>
+                        <td noWrap width="65%" align="left" valign="middle">
+                          <table cellspacing=0 width="100%" border=0>
+                            <tbody>
+                            <tr>
+                              <td width="50%"> <b><font size="1" face="Tahoma, Verdana, Arial" color="#FFFFFF">
+                                <input id=FormsRadioButton4 type=radio
+                        value=N name=Tobacco>
+                                No</font></b></td>
+                              <td width="50%"> <b><font size="1" face="Tahoma, Verdana, Arial" color="#FFFFFF">
+                                <input id=FormsRadioButton3 type=radio
+                        value=Y name=Tobacco>
+                                Yes</font></b></td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class=content width="35%"><font size="1" face="Tahoma, Verdana, Arial" color="#FFFFFF"><strong>Coverage
+                          Amount:</strong></font></td>
+                        <td class=content width="65%" align="left" valign="middle">
+                          <font face="Tahoma, Verdana, Arial">
+                          <select id=FormsComboBox11
+                  size=1 name=coverage-amount>
+                            <option value=""
+                    selected>Select Amount</option>
+                            <option
+                    value=100000.00>100,000</option>
+                            <option
+                    value=125000.00>125,000</option>
+                            <option
+                    value=150000.00>150,000</option>
+                            <option
+                    value=175000.00>175,000</option>
+                            <option
+                    value=200000.00>200,000</option>
+                            <option
+                    value=225000.00>225,000</option>
+                            <option
+                    value=250000.00>250,000</option>
+                            <option
+                    value=275000.00>275,000</option>
+                            <option
+                    value=300000.00>300,000</option>
+                            <option
+                    value=325000.00>325,000</option>
+                            <option
+                    value=350000.00>350,000</option>
+                            <option
+                    value=375000.00>375,000</option>
+                            <option
+                    value=400000.00>400,000</option>
+                            <option
+                    value=425000.00>425,000</option>
+                            <option
+                    value=450000.00>450,000</option>
+                            <option
+                    value=475000.00>475,000</option>
+                            <option
+                    value=500000.00>500,000</option>
+                            <option
+                    value=550000.00>550,000</option>
+                            <option
+                    value=600000.00>600,000</option>
+                            <option
+                    value=650000.00>650,000</option>
+                            <option
+                    value=700000.00>700,000</option>
+                            <option
+                    value=750000.00>750,000</option>
+                            <option
+                    value=800000.00>800,000</option>
+                            <option
+                    value=850000.00>850,000</option>
+                            <option
+                    value=900000.00>900,000</option>
+                            <option
+                    value=950000.00>950,000</option>
+                            <option
+                    value=1000000.00>1,000,000</option>
+                            <option
+                    value=1250000.00>1,250,000</option>
+                            <option
+                    value=1500000.00>1,500,000</option>
+                            <option
+                    value=1750000.00>1,750,000</option>
+                            <option
+                    value=2000000.00>2,000,000</option>
+                            <option
+                    value=2250000.00>2,250,000</option>
+                            <option
+                    value=2500000.00>2,500,000</option>
+                            <option
+                    value=3000000.00>3,000,000</option>
+                            <option
+                    value=3500000.00>3,500,000</option>
+                            <option
+                    value=4000000.00>4,000,000</option>
+                            <option
+                    value=4500000.00>4,500,000</option>
+                            <option
+                    value=5000000.00>5,000,000</option>
+                            <option
+                    value=6000000.00>6,000,000</option>
+                            <option
+                    value=7000000.00>7,000,000</option>
+                            <option
+                    value=8000000.00>8,000,000</option>
+                            <option
+                    value=9000000.00>9,000,000</option>
+                            <option
+                    value=10000000.00>10,000,000</option>
+                            <option
+                    value=11000000.00>11,000,000</option>
+                            <option
+                    value=12000000.00>12,000,000</option>
+                            <option
+                    value=13000000.00>13,000,000</option>
+                            <option
+                    value=14000000.00>14,000,000</option>
+                            <option
+                    value=15000000.00>15,000,000</option>
+                          </select>
+                          </font></td>
+                      </tr>
+                      <tr>
+                        <td class=content width="35%"><font size="1" face="Tahoma, Verdana, Arial" color="#FFFFFF"><strong>How
+                          long do you need the coverage?</strong></font></td>
+                        <td class=content width="65%" align="left" valign="middle">
+                          <font face="Tahoma, Verdana, Arial">
+                          <select id=FormsComboBox10
+                  size=1 name=plan>
+                            <option value="" selected>Select Year</option>
+                            <option value=5>5 Years</option>
+                            <option
+                    value=10>10 Years</option>
+                            <option value=15>15 Years</option>
+                            <option value=20>20 Years</option>
+                            <option
+                    value=25>25 Years</option>
+                            <option value=30>30 Years</option>
+                          </select>
+                          </font></td>
+                      </tr>
+                      <tr>
+                        <td width="35%" height="2">&nbsp; </td>
+                        <td class=content align=left width="65%" height="2" valign="top">
+                          <font face="Tahoma, Verdana, Arial">
+                          <input id=FormsButton1 type=submit value="Get A Quote" name=SubmitButton>
+                          </font></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </form>
+
+          </td>
+        </tr>
+      </table>
+    <td align="left" valign="top" width="44%" height="377"><a href="http://theadmanager.com/server/c.asp?ad_key=YUESBHWAKMLK&ext=1" target="_blank"><img src="http://www.reliaquote.com/banner/bannerads/images/photo6.jpg" width="210" height="173" border="0"></a><br>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr align="center" valign="top">
+          <td height="217" nowrap>
+            <table width="100%" border="0" cellspacing="0" cellpadding="10">
+              <tr align="left" valign="top">
+                <td height="40">
+                  <div align="center"><font face="Tahoma, Verdana, Arial" size="1" color="#FFFFFF"><b>ReliaQuote
+                    makes it easy and affordable. We can instantly provide you
+                    with free quotes from highly rated insurance companies. </b></font></div>
+                </td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr align="left" valign="top">
+                <td height="106">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr align="center" valign="top">
+                      <td height="2"><font face="Tahoma, Verdana, Arial" size="3" color="#FFFFFF"><b>Save
+                        up to</b></font></td>
+                    </tr>
+                    <tr align="center" valign="top">
+                      <td height="36"><a href="http://theadmanager.com/server/c.asp?ad_key=YUESBHWAKMLK&ext=1" target="_blank"><img src="http://www.reliaquote.com/banner/bannerads/images/70percent6.gif" width="131" height="57" border="0"></a></td>
+                    </tr>
+                    <tr align="center" valign="top">
+                      <td height="8"><font face="Tahoma, Verdana, Arial" size="3" color="#FFFFFF"><b>on
+                        Life Insurance</b></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr align="center" valign="middle">
+                <td height="67"><font color="#FFCC33" size="3" face="Tahoma, Verdana, Arial"><b><font color="#FFCC99" size="2"><a href="http://theadmanager.com/server/c.asp?ad_key=YUESBHWAKMLK&ext=1" target="_blank">
+                  <font color="#FFFFFF">Compare quotes today</font></a><font color="#FFFFFF">.</font></font><font face="Tahoma, Verdana, Arial" size="2" color="#0000FF">
+                  </font><font face="Tahoma, Verdana, Arial" size="2" color="#FFCC00"><br>
+                  There is nothing more <br>
+                  important than protecting <br>
+                  their future.<br>
+                  </font></b></font></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <div align="center"><font color="#FFFFFF" size="1">Copyright 2001 ReliaQuote,
+        Inc.<br>
+        All rights reserved.</font></div>
+    </td>
+  </tr>
+</table>
+<img src="http://admanmail.com/server/t.asp?ad_key=YUESBHWAKMLK" width="1" height="1" hspace="0" vspace="0" border="0" alt="T">
+<hr size="1" noshade>
+<font face="Arial" size="1" color="#000000">
+You are receiving this mailing because you are a
+member of SendGreatOffers.com and subscribed as:JM@NETNOTEINC.COM
+To unsubscribe <a href="http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO">
+<font face="arial" size="1" color="#000000">Click Here</a>
+(http://admanmail.com/subscription.asp?em=JM@NETNOTEINC.COM&l=SGO)
+or reply to this email with REMOVE in the subject line - you must
+also include the body of this message to be unsubscribed. Any correspondence about
+the products/services should be directed to
+the company in the ad.
+%EM%JM@NETNOTEINC.COM%/EM%
+<BR></FONT> </body> </html>
+

@@ -1,0 +1,103 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Aug 26 16:47:12 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3D4894415C
+	for <jm@localhost>; Mon, 26 Aug 2002 11:46:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 16:46:50 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7QFm0Z31475 for <jm-sa@jmason.org>; Mon, 26 Aug 2002 16:48:00 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17jM51-0006HM-00; Mon,
+    26 Aug 2002 08:47:03 -0700
+Received: from mail.mike-leone.com ([216.158.26.254]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17jM3x-000380-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Mon, 26 Aug 2002 08:45:57 -0700
+Received: from localhost (localhost [127.0.0.1]) by mail.mike-leone.com
+    (Postfix) with ESMTP id E8DAB1D83 for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 26 Aug 2002 11:43:33 -0400
+    (EDT)
+Received: from mail.mike-leone.com ([127.0.0.1]) by localhost
+    (mail.mike-leone.com [127.0.0.1]) (amavisd-new) with SMTP id 09089-01 for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 26 Aug 2002 11:43:29 -0000
+    (EDT)
+Received: from mike-leone.com (localhost [127.0.0.1]) by
+    mail.mike-leone.com (Postfix) with ESMTP id AF7D61D4C for
+    <spamassassin-talk@lists.sourceforge.net>; Mon, 26 Aug 2002 11:43:28 -0400
+    (EDT)
+Received: from 208.171.240.67 (SquirrelMail authenticated user turgon) by
+    www.mike-leone.com with HTTP; Mon, 26 Aug 2002 11:43:28 -0400 (EDT)
+Message-Id: <65385.208.171.240.67.1030376608.squirrel@www.mike-leone.com>
+Subject: Re: [SAtalk] Re: Other uses for SA?
+From: "Michael Leone" <turgon@mike-leone.com>
+To: <spamassassin-talk@example.sourceforge.net>
+In-Reply-To: <B98F8D07.1209%brm@ecklesarchitecture.com>
+References: <E17j2lf-0002OV-00@usw-sf-list2.sourceforge.net>
+    <B98F8D07.1209%brm@ecklesarchitecture.com>
+X-Priority: 3
+Importance: Normal
+X-Msmail-Priority: Normal
+X-Mailer: SquirrelMail (version 1.2.7)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-Virus-Scanned: by amavisd-new (amavisd-new-20020630)
+X-Razor-Id: 7c5a099d13e788787898dee16cf30a6843ace4c9
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Mon, 26 Aug 2002 11:43:28 -0400 (EDT)
+Date: Mon, 26 Aug 2002 11:43:28 -0400 (EDT)
+
+
+Brian R. Melcer said:
+>> I've got spamassassin installed and tested on MacOS X 10.1.5,
+>> although there are issues with spamd still.  So in addition to
+>> looking for new and different uses for SA, I'd like to hear
+>> from folks using it under MacOS X.
+>
+> I just recently converted our SA setup to use Amavisd into our Postfix
+
+Amavisd or Amavisd-new? If the latter, you don't need spamd running, since
+amavisd-new calls SA functions directly.
+
+-- 
+PGP Fingerprint: 0AA8 DC47 CB63 AE3F C739 6BF9 9AB4 1EF6 5AA5 BCDF
+Member, LEAF Project <http://leaf.sourceforge.net>    AIM: MikeLeone
+Public Key - <http://www.mike-leone.com/~turgon/turgon-public-key.asc>
+
+Some days you're the pigeon; some days you're the statue.
+
+
+
+
+Random Thought:
+--------------
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

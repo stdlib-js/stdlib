@@ -1,0 +1,49 @@
+From rssfeeds@jmason.org  Wed Sep 25 10:23:53 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 57BAB16F03
+	for <jm@localhost>; Wed, 25 Sep 2002 10:23:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:23:53 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8P83gC18336 for
+    <jm@jmason.org>; Wed, 25 Sep 2002 09:03:42 +0100
+Message-Id: <200209250803.g8P83gC18336@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Laura Bush's 419 letter
+Date: Wed, 25 Sep 2002 08:03:42 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85486499
+Date: Not supplied
+
+A new addition to the parodical genre of 419 ("Nigerian Money Laundry Scam") 
+letters from members of the Shrub establishment, following up on Cheney's 
+letter[1]. 
+
+    I am the widow of the late President George W. Bush of the United States of 
+    America. I am writing you this letter in confidence regarding my current 
+    circumstances. 
+
+    I escaped the United States ahead of death squads with my husband and two 
+    children Jenna and Frank, moving first to England and then, when my 
+    husband's political enemies took power there, to Austria. All of our 
+    wealth, obtained legitimately through baseball, oil drilling and insider 
+    trading, was seized by the new government of the USA under the despotic 
+    regime of (Dr.) Noam Chomsky, except for the contents of a few Swiss bank 
+    accounts. These bank accounts, which contain social security lock-box funds 
+    and the bulk of the 2001 budget surplus, could not be accessed by me or my 
+    children, due to agreements made between the socialist government of the 
+    USA and Swiss bank regulators. They seized our ranch in Crawford, Texas and 
+    now use it to teach homosexualist propaganda to schoolchildren.  
+
+Link[2] Discuss[3] (_Thanks, Stefan!_)
+
+[1] http://atrios.blogspot.com/2002_08_18_atrios_archive.html#80547516
+[2] http://brainslug.org/archives/000224.html#000224
+[3] http://www.quicktopic.com/boing/H/7zkxnLj3i6Da
+
+

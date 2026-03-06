@@ -1,0 +1,84 @@
+From fork-admin@xent.com  Mon Dec  2 11:23:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AC50616F1A
+	for <jm@localhost>; Mon,  2 Dec 2002 11:22:19 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Dec 2002 11:22:19 +0000 (GMT)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id gB23un807867 for <jm@jmason.org>;
+    Mon, 2 Dec 2002 03:56:49 GMT
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 300E52940F6; Sun,  1 Dec 2002 19:56:02 -0800 (PST)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (c-66-176-131-60.se.client2.attbi.com
+    [66.176.131.60]) by xent.com (Postfix) with ESMTP id 73AF82940F1 for
+    <fork@xent.com>; Sun,  1 Dec 2002 19:55:17 -0800 (PST)
+Received: (from louie@localhost) by localhost.localdomain (8.11.6/8.11.6)
+    id gB23rx600364 for fork@xent.com; Sun, 1 Dec 2002 22:53:59 -0500
+X-Authentication-Warning: localhost.localdomain: louie set sender to
+    louie@ximian.com using -f
+Subject: RE: Mercedes-Benz G55
+From: Luis Villa <louie@ximian.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <ILEHJNJFPDLMDEKNIAKCOELACCAA.geege@barrera.org>
+References: <ILEHJNJFPDLMDEKNIAKCOELACCAA.geege@barrera.org>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+Organization: 
+Message-Id: <1038801232.32761.5.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailer: Ximian Evolution 1.2.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 01 Dec 2002 22:53:54 -0500
+
+On Sun, 2002-12-01 at 21:01, Geege Schuman wrote:
+> Best bang for the buck:  390 hp Mustang Cobra @ $35k.
+> 
+> GG, recently emerged from the passenger side of a 2003 with the largest
+> smile.
+
+If only they weren't the ugliest things Ford has ever produced, in a
+long and distinguished history of ugly.
+
+Luis [former owner of a recent-model mustang and hence allowed to talk]
+
+P.S. You can get an RSX Type S with 200hp for $23K. I have not yet
+driven an RSX, but if it's anything like a late model Integra, it will
+kick the ass of the Mustang in anything that requires you to actually
+move the steering wheel from the center position.
+
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com]On Behalf Of
+> Joseph S. Barrera III
+> Sent: Sunday, December 01, 2002 1:40 PM
+> To: fork@spamassassin.taint.org
+> Subject: Re: Mercedes-Benz G55
+> 
+> 
+> On the other end of the spectrum, I just bought a Honda del Sol
+> for my new commute to San Jose (from San Bruno)... I wonder if
+> it would fit in the cargo area of a G55.
+> 
+> - Joe
+> 
+> 
+> 
+> 
+> 
+> 
+
+

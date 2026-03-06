@@ -1,0 +1,119 @@
+From andy@r2-dvd.org  Wed Aug 28 13:55:26 2002
+Return-Path: <andy@r2-dvd.org>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E99ED44155
+	for <zzzz@localhost>; Wed, 28 Aug 2002 08:55:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 13:55:25 +0100 (IST)
+Received: from n16.grp.scd.yahoo.com (n16.grp.scd.yahoo.com
+    [66.218.66.71]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g7SCrUZ24872 for <zzzz@spamassassin.taint.org>; Wed, 28 Aug 2002 13:53:30 +0100
+X-Egroups-Return: sentto-2242572-53156-1030539216-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.66.95] by n16.grp.scd.yahoo.com with NNFMP;
+    28 Aug 2002 12:53:37 -0000
+X-Sender: andy@r2-dvd.org
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_1_0_1); 28 Aug 2002 12:53:36 -0000
+Received: (qmail 94374 invoked from network); 28 Aug 2002 12:53:36 -0000
+Received: from unknown (66.218.66.216) by m7.grp.scd.yahoo.com with QMQP;
+    28 Aug 2002 12:53:36 -0000
+Received: from unknown (HELO dulce.mic.dundee.ac.uk) (134.36.34.9) by
+    mta1.grp.scd.yahoo.com with SMTP; 28 Aug 2002 12:53:36 -0000
+Received: by dulce with Internet Mail Service (5.5.2653.19) id <RV17ZGM4>;
+    Wed, 28 Aug 2002 13:44:11 +0100
+Message-Id: <31C6D68FA597D411B04D00E02965883BD239FB@mailhost>
+To: "'zzzzteana@yahoogroups.com'" <zzzzteana@yahoogroups.com>
+X-Mailer: Internet Mail Service (5.5.2653.19)
+From: Andy <andy@r2-dvd.org>
+X-Yahoo-Profile: acobley
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Wed, 28 Aug 2002 13:50:58 +0100
+Subject: [zzzzteana] US Army tests portable translator
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+http://news.bbc.co.uk/1/hi/technology/2219079.stm
+
+US soldiers on peacekeeping duties in the future could find that a portable
+translation device will be an essential part of their equipment. 
+Scientists at Carnegie Mellon University have developed a prototype of a
+speech translator that was road-tested by US Army chaplains in Croatia. 
+
+"This project shows how a relatively simple speech-to-speech translation
+system can be rapidly and successfully constructed using today's tools,"
+said the team from Carnegie Mellon University in a research paper published
+recently. 
+
+The research was commissioned by the US Army, which is increasingly finding
+itself in peace-keeping roles where communication is key. 
+
+Speaking in tongues 
+
+"In the Balkans, the Army is not just supposed to conquer somebody," Robert
+Frederking of Carnegie Mellon University told the BBC programme Go Digital. 
+
+ 
+Translators could be essential for US soldiers
+ 
+"In a peacekeeping situation, you have two guys trying to beat each other up
+and you are holding them apart. 
+
+"You can't just shot one of them, you have to figure what is going on and
+talk to them," he said. 
+
+The portable translator was developed with a year, using commercially
+available laptops. 
+
+The Army did not want to field-test the device in a battlefield situation.
+So instead the translator was tested by US Army chaplains in Croatia. 
+
+"The chaplains very often end up having to talk to foreign nationals and
+typically don't have any translation support," explained Mr Frederking. 
+
+Slow system 
+
+For the trials, the chaplains used the translator to speak to Croatians who
+knew just a smattering of English. 
+
+The system works by having a speech recogniser that picks up the words in
+Croatian, turns the speech into text. The written words are then translated
+into English and read out by a speech synthesizer. 
+
+"It went reasonably well half the time," said Mr Frederking, though it was
+slow in translating phrases. 
+
+The research team admit that the system is not ready to be deployed in the
+field. 
+
+But they say their trials showed that a portable translator could be made to
+work with further research and development. 
+
+The Audio Voice Translation Guide System project was a joint venture between
+the US Army, the military manufacturer Lockheed Martin and Carnegie Mellon
+University. 
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+Receive Phone Calls and Faxes While You're Online!
+Emerson Switchboard eliminates the need for a second phone line.
+Order the Switchboard today for $39.95 + shipping and handling.
+http://us.click.yahoo.com/P2sPyA/o6kEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

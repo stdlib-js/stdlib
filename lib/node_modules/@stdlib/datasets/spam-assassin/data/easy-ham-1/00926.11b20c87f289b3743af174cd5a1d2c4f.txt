@@ -1,0 +1,114 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 22 17:19:48 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B977147C6C
+	for <jm@localhost>; Thu, 22 Aug 2002 12:19:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 17:19:30 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MGIHZ14209 for <jm-sa@jmason.org>; Thu, 22 Aug 2002 17:18:17 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hudv-00041d-00; Thu,
+    22 Aug 2002 09:17:07 -0700
+Received: from dsl-175-112.web-ster.com ([12.111.175.112]
+    helo=mail.hotp.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17hudn-0004s1-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 22 Aug 2002 09:16:59 -0700
+Received: from gilmanhunt (russ@RussGilmanHunt.hotp.com [10.10.10.220]) by
+    mail.hotp.com (8.12.4/8.12.4) with SMTP id g7MG8hQI004189 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 22 Aug 2002 09:08:43 -0700
+Content-Type: text/plain; charset="iso-8859-1"
+From: Russ Gilman-Hunt <rgilmanhunt@hotp.com>
+To: SpamAssassin List <spamassassin-talk@example.sourceforge.net>
+X-Mailer: KMail [version 1.2]
+MIME-Version: 1.0
+Message-Id: <0208220909120B.13454@gilmanhunt>
+Content-Transfer-Encoding: 8bit
+Subject: [SAtalk] procmail help
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 22 Aug 2002 09:09:12 -0700
+Date: Thu, 22 Aug 2002 09:09:12 -0700
+
+I'm fairly confused here, with Procmail. 
+I know this isn't a procmail list per-se; feel free to answer my questions in 
+private email to r_gilmanhunt@hotp.com.  
+
+I've looked for web-stuff to answer this question but I can't find anything 
+specific on this scenario.
+
+Here's the situation. 
+I have a global /etc/procmailrc file. It works, and when I insert stuff into 
+it for logging (LOGFILE=/root/procmail.log, VERBOSE=yeah. LOGABSTRACT=all) it 
+shows up where I expect it to (the log in /root/procmail.log)  At the end of 
+this file, I use 
+ :0fw
+ | spamc
+to call spamassassin.
+
+Also in it is a carboncopy recipe (yes, I know, it's one of the evils we do 
+for our corporate masters)  (at the top) (to their credit, I am instructed 
+that they are not interested in the actual contents, but are concerned about 
+future lawsuits and their culpability, so they want a record made. Discussion 
+on this point is immaterial)
+:0
+  * ? test -d $ARCHIVEDIR/$DATEDIR || mkdir -p --mode=750 $ARCHIVEDIR/$DATEDIR
+  { }
+:0 c
+ $SAVEAT
+
+I have several users where I forward certain spams to /dev/null  . . .their 
+procmailrc file (/home/$user/.procmailrc) looks like this:
+:0
+  * ^From: .*spermfun.com
+  /dev/null
+
+Now I've got a person who needs a copy of her inbound emails sent to another 
+email address (outside the company), so I've got this recipe in her 
+/home/$user/.procmailrc file:
+:0 c
+  !user@domain.tld
+
+It almost looks like procmail's not running a user's copy recipe after a 
+global copy recipe, except that I can replace that user's one with 
+:0 
+ * ^Subject: .*test
+  procmail.holder
+and get the same result.
+
+The result, to put it succinctly, is "nothing". No forwards go out, no files 
+are made, if I try to log information, no logs are set up. I've modified the 
+user/group and permissions to match known-working recipes (the spermfun 
+example above) and still nothing.  However, I can redirect those other 
+messages.  In other words- just this user's procmailrc file is not working- 
+other users have no problems.
+
+Any suggestions would be helpful :) 
+
+-Russ
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

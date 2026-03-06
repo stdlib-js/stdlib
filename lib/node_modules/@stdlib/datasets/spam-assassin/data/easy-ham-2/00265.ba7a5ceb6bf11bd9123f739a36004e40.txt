@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Tue Aug  6 13:58:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4E84D44143
+	for <jm@localhost>; Tue,  6 Aug 2002 08:48:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 13:48:37 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g76CQbk28239 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 13:26:37 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA28873; Tue, 6 Aug 2002 13:24:38 +0100
+Received: from puma.dub0.ie.cp.net ([62.17.137.250]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA28836 for <ilug@linux.ie>; Tue,
+    6 Aug 2002 13:24:32 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.137.250] claimed to
+    be puma.dub0.ie.cp.net
+Received: from AHOLM.elivefree.net (10.40.2.248) by puma.dub0.ie.cp.net
+    (6.7.009) id 3D4AB188000020E5 for ilug@linux.ie; Tue, 6 Aug 2002 13:23:57
+    +0100
+Message-Id: <5.1.1.6.0.20020806131829.03c2ae30@mail.elivefree.net>
+X-Sender: anders.holm@mail.elivefree.net
+X-Mailer: QUALCOMM Windows Eudora Version 5.1.1
+Date: Tue, 06 Aug 2002 13:22:07 +0100
+To: ilug@linux.ie, ilug@linux.ie
+From: Anders Holm <anders.holm@elivefree.net>
+Subject: Re: [ILUG] Sparc Solaris (was: Dell GX260 V Redhat 7.3)
+In-Reply-To: <20020806120656.GP14040@jinny.ie>
+References: <20020806125617.F17211@ie.suberic.net>
+    <653270E74A8DD31197AF009027AA4F8B01845F1B@LIMXMMF303>
+    <20020805224355.GB26632@csn.ul.ie>
+    <001501c23d25$c21ba0b0$3864a8c0@sabeo.ie>
+    <20020806125617.F17211@ie.suberic.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+At 13:06 06/08/2002, John P. Looney wrote:
+>[snip]
+>  There is a nice need 'add_install_client' script that you feed the
+>archtecture, ethernet address & ip to, and it'll setup everything from
+>RARP to Bootparams for you. Very simple.
+
+Yep, very handy and easy enough.
+
+>  This script takes a -d option, to boot via DHCP also. On the negative
+>side, Sun's terminal handling leaves a lot to be desired - it won't work
+>properly on a Wyse 120+ for instance, no matter what emulation mode the
+>Wyse is trying to do.
+
+True, SUN's terminal handling isn't the best in the world.
+
+>  To do PC netbooting properly, you need an motherbard with a PXE BIOS.
+>Then you are flying.
+
+OR a network card with a BootRom installed, and BIOS support to boot of the 
+network.
+
+>  Heh, how hard would it be to get a PC with an OpenBoot prom ?
+
+You could burn a PROM yourself, if you'd wish. I believe that the netboot 
+project would have a PROM you could download and burn, having the needed 
+h/w of course.. ;)
+
+//Anders//
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

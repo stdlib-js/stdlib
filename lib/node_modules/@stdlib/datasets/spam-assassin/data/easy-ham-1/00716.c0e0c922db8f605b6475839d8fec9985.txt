@@ -1,0 +1,144 @@
+From fork-admin@xent.com  Mon Sep 23 18:32:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4FEC716F03
+	for <jm@localhost>; Mon, 23 Sep 2002 18:32:16 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 18:32:16 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NFpxC24153 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 16:51:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 277B22940D1; Mon, 23 Sep 2002 08:48:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from blount.mail.mindspring.net (blount.mail.mindspring.net
+    [207.69.200.226]) by xent.com (Postfix) with ESMTP id E620C29409A for
+    <fork@xent.com>; Mon, 23 Sep 2002 08:48:00 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    blount.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17tVUk-0001Cs-00;
+    Mon, 23 Sep 2002 11:51:34 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a4ab9b4d6f87b5f@[66.149.49.6]>
+To: Digital Bearer Settlement List <dbs@philodox.com>, fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: High-Altitude Rambos
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 10:36:39 -0400
+
+http://www.nytimes.com/2002/09/23/opinion/23HERB.html?todaysheadlines=&pagewanted=print&position=top
+
+ The New York Times
+September 23, 2002
+High-Altitude Rambos
+By BOB HERBERT
+
+Dr. Bob Rajcoomar, a U.S. citizen and former military physician from Lake
+Worth, Fla., found himself handcuffed and taken into custody last month in
+one of the many episodes of hysteria to erupt on board airliners in the
+U.S. since the Sept. 11 attacks.
+
+Dr. Rajcoomar was seated in first class on a Delta Airlines flight from
+Atlanta to Philadelphia on Aug. 31 when a passenger in the coach section
+began behaving erratically. The passenger, Steven Feuer, had nothing to do
+with Dr. Rajcoomar.
+
+Two U.S. air marshals got up from their seats in first class and moved back
+to coach to confront Mr. Feuer, who was described by witnesses as a slight
+man who seemed disoriented. What ensued was terrifying. When Mr. Feuer
+refused to remain in his seat, the marshals reacted as if they were trying
+out for the lead roles in Hollywood's latest action extravaganza.
+
+They handcuffed Mr. Feuer, hustled him into first class and restrained him
+in a seat next to Dr. Rajcoomar. The 180 or so passengers were now quite
+jittery. Dr. Rajcoomar asked to have his seat changed and a flight
+attendant obliged, finding him another seat in first class. The incident,
+already scary, could - and should - have ended there. But the marshals were
+not ready to let things quiet down.
+
+One of the marshals pulled a gun and brandished it at the passengers. The
+marshals loudly demanded that all passengers remain in their seats, and
+remain still. They barked a series of orders. No one should stand for any
+reason. Arms and legs should not extend into the aisles. No one should try
+to visit the restroom. The message could not have been clearer: anyone who
+disobeyed the marshals was in danger of being shot.
+
+The passengers were petrified, with most believing that there were
+terrorists on the plane.
+
+"I was afraid there was going to be a gun battle in that pressurized
+cabin," said Senior Judge James A. Lineberger of the Philadelphia Court of
+Common Pleas, a veteran of 20 years in the military, who was sitting in an
+aisle seat in coach. "I was afraid that I was going to die from the gunfire
+in a shootout."
+
+Dr. Rajcoomar's wife, Dorothy, who was seated quite a distance from her
+husband, said, "It was really like Rambo in the air." She worried that
+there might be people on the plane who did not speak English, and therefore
+did not understand the marshals' orders. If someone got up to go to the
+bathroom, he or she might be shot.
+
+There were no terrorists on board. There was no threat of any kind. When
+the plane landed about half an hour later, Mr. Feuer was taken into
+custody. And then, shockingly, so was Dr. Rajcoomar. The air marshals
+grabbed the doctor from behind, handcuffed him and, for no good reason that
+anyone has been able to give, hauled him to an airport police station where
+he was thrown into a filthy cell.
+
+This was airline security gone berserk. No one ever suggested that Dr.
+Rajcoomar, a straight-arrow retired Army major, had done anything wrong.
+
+Dr. Rajcoomar, who is of Indian descent, said he believes he was taken into
+custody solely because of his brown skin. He was held for three frightening
+hours and then released without being charged. Mr. Feuer was also released.
+
+Officials tried to conceal the names of the marshals, but they were
+eventually identified by a Philadelphia Inquirer reporter as Shawn B.
+McCullers and Samuel Mumma of the Transportation Security Administration,
+which is part of the U.S. Transportation Department.
+
+The Transportation Security Administration has declined to discuss the
+incident in detail. A spokesman offered the absurd explanation that Dr.
+Rajcoomar was detained because he had watched the unfolding incident "too
+closely."
+
+If that becomes a criterion for arrest in the U.S., a lot of us reporters
+are headed for jail.
+
+Dr. Rajcoomar told me yesterday that he remains shaken by the episode. "I
+had never been treated like that in my life," he said. "I was afraid that I
+was about to be beaten up or killed."
+
+Lawyers for the American Civil Liberties Union have taken up his case and
+he has filed notice that he may sue the federal government for unlawful
+detention.
+
+"We have to take a look at what we're doing in the name of security," said
+Dr. Rajcoomar. "So many men and women have fought and died for freedom in
+this great country, and now we are in danger of ruining that in the name of
+security."
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

@@ -1,0 +1,35 @@
+
+{{alias}}( x, y )
+    Returns the minimum value.
+
+    The function ignores the sign of `0` and does not check for `NaN` arguments.
+
+    Parameters
+    ----------
+    x: number
+        First number.
+
+    y: number
+        Second number.
+
+    Returns
+    -------
+    out: number
+        Minimum value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 3.14, 4.2 )
+    3.14
+    > v = {{alias}}( 3.14, NaN )
+    NaN
+    > v = {{alias}}( NaN, 3.14 )
+    3.14
+    > v = {{alias}}( -0.0, +0.0 )
+    +0.0
+    > v = {{alias}}( +0.0, -0.0 )
+    -0.0
+
+    See Also
+    --------
+

@@ -1,0 +1,77 @@
+From 0xdeadbeef-request@petting-zoo.net  Mon Aug 19 11:00:03 2002
+Return-Path: <0xdeadbeef-request@petting-zoo.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6D1D94414D
+	for <jm@localhost>; Mon, 19 Aug 2002 05:51:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:51:25 +0100 (IST)
+Received: from petting-zoo.net (petting-zoo.net [64.166.12.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7IIRg619202 for
+    <jm-deadbeef@jmason.org>; Sun, 18 Aug 2002 19:27:43 +0100
+Received: by petting-zoo.net (Postfix, from userid 1004) id A21B3EA0A;
+    Sun, 18 Aug 2002 11:26:10 -0700 (PDT)
+Old-Return-Path: <gkm@petting-zoo.net>
+Delivered-To: 0xdeadbeef@petting-zoo.net
+Received: from petting-zoo.net (localhost [127.0.0.1]) by petting-zoo.net
+    (Postfix) with ESMTP id 749DFEA0A; Sun, 18 Aug 2002 11:25:50 -0700 (PDT)
+From: gkm@petting-zoo.net (glen mccready)
+To: 0xdeadbeef@petting-zoo.net
+Cc: bostic@bostic.com
+Subject: A pastor walked into a neighborhood pub...
+Date: Sun, 18 Aug 2002 11:25:31 -0700
+Sender: gkm@petting-zoo.net
+Message-Id: <20020818182550.749DFEA0A@petting-zoo.net>
+Resent-Message-Id: <Rj9w2.A.2mD.9a-X9@petting-zoo.net>
+Resent-From: 0xdeadbeef@petting-zoo.net
+X-Mailing-List: <0xdeadbeef@petting-zoo.net> archive/latest/521
+X-Loop: 0xdeadbeef@petting-zoo.net
+List-Post: <mailto:0xdeadbeef@petting-zoo.net>
+List-Help: <mailto:0xdeadbeef-request@petting-zoo.net?subject=help>
+List-Subscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=subscribe>
+List-Unsubscribe: <mailto:0xdeadbeef-request@petting-zoo.net?subject=unsubscribe>
+Precedence: list
+Resent-Sender: 0xdeadbeef-request@petting-zoo.net
+Resent-Date: Sun, 18 Aug 2002 11:26:10 -0700 (PDT)
+
+
+Forwarded-by: Rob Windsor <windsor@warthog.com>
+Forwarded-by: LZ <zehr@attbi.com>
+
+A pastor walked into a neighborhood pub.  The place was hopping
+with music and dancing but every once in a while the lights would
+turn off.  Each time after the lights would go out the place would
+erupt into cheers.
+
+However, when the revelers saw the town pastor, the room went dead
+silent.  He walked up to the bartender and asked, "May I please
+use the restroom?"
+
+The bartender replied, "I really don't think you should."
+
+"Why not?" the pastor asked.
+
+"Well, there is a statue of a naked woman in there, and her most
+private part is covered only by a fig leaf."
+
+"Nonsense," said the pastor, "I'll just look the other way."
+
+So the bartender showed the clergyman the door at the top of the
+stairs, and he proceeded to the restroom.  After a few minutes, he
+came back out, and the whole place was hopping with music and
+dancing again.  However, they did stop just long enough to give
+the pastor a loud round of applause.  He went to the bartender and
+said, "Sir, I don't understand.  Why did they applaud for me just
+because I went to the restroom?"
+
+"Well, now they know you're one of us," said the bartender.  "Would
+you like a drink?"
+
+"But, I still don't understand," said the puzzled pastor.
+
+"You see," laughed the bartender, "every time the fig leaf is lifted
+on the statue, the lights go out in the whole place.  Now, how
+about that drink?"
+
+

@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:28:22 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 57EA444156
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:19 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6T46ii09906 for
+    <jm-ilug@jmason.org>; Mon, 29 Jul 2002 05:06:44 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id FAA16146; Mon, 29 Jul 2002 05:04:36 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from escargot.esatclear.ie (escargot.esatclear.ie
+    [194.145.128.30]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id FAA16111
+    for <ilug@linux.ie>; Mon, 29 Jul 2002 05:04:26 +0100
+Received: from esatclear.ie (d-airlock032.esatclear.ie [194.145.133.32])
+    by escargot.esatclear.ie (8.9.3/8.9.3) with ESMTP id FAA14188 for
+    <ilug@linux.ie>; Mon, 29 Jul 2002 05:04:25 +0100
+Message-Id: <3D44BE4F.8070603@esatclear.ie>
+Date: Mon, 29 Jul 2002 05:02:23 +0100
+From: Paul Kelly <longword@esatclear.ie>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.1) Gecko/20020725
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] Optimizing for Pentium Pt.2
+References: <200207262228.XAA19581@lugh.tuatha.org>
+    <20020727015716.A6561@ie.suberic.net>
+    <200207271701.SAA23172@lugh.tuatha.org> <3D4359EE.9050405@esatclear.ie>
+    <002a01c23664$b7326d40$f264a8c0@sabeo.ie>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Matthew French wrote:
+>>Happiness was restored to the world with gcc 2.95 and later.
+> I do not have the time to follow the compiler "wars", but I notice that I
+> must use egcs to build 64 bit SPARC code.
+
+2.95 was where the reintegration effort started and work on the other 
+projects fell away. 3.0 was the target for completion of that work.
+
+> GCC 3 should do it, but because it is so "buggy"[1] it is not worth trying
+> to use unless you really want to track down those compiler errors... :(
+
+A lot of those problems seem to have been shaken out by Redhat's ballsy 
+gcc 2.96 stunt. I've been trying out RedHat Limbo for a few weeks now, 
+equipped with gcc 3.1. I haven't fallen foul of compiler issue so far, 
+that I'm aware of anyhow. That said I'm glad I don't do much C++ - seems 
+pretty much every version of gcc (2.95, 2.96, 3.0, 3.1, and the 
+forthcoming 3.2) breaks C++ binary compatibility in some way or other.
+
+Paul.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

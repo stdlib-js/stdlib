@@ -1,0 +1,44 @@
+
+{{alias}}( value, max, strict )
+    Converts an integer to a Slice object.
+
+    In strict mode, the function returns an error object if an input value
+    exceeds index bounds.
+
+    A returned error object is a plain object having the following properties:
+
+    - code: error code.
+
+    A returned error object may have one of the following error codes:
+
+    - ERR_SLICE_OUT_OF_BOUNDS: a slice exceeds index bounds.
+
+    Parameters
+    ----------
+    value: integer
+        Input value.
+
+    max: integer
+        Index upper bound (exclusive).
+
+    strict: boolean
+        Boolean indicating whether to enforce strict bounds checking.
+
+    Returns
+    -------
+    s: Slice|Object
+        Slice instance (or an error object).
+
+    Examples
+    --------
+    > var s = {{alias}}( -1, 5, false );
+    > s.start
+    4
+    > s.stop
+    5
+    > s.step
+    1
+
+    See Also
+    --------
+

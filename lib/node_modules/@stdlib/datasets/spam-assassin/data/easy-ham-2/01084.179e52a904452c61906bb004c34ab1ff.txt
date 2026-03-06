@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Tue Aug 20 11:53:29 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2034243C3A
+	for <jm@localhost>; Tue, 20 Aug 2002 06:52:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:52:08 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7JJFKZ05715 for <jm@jmason.org>;
+    Mon, 19 Aug 2002 20:15:20 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DB96F2940A0; Mon, 19 Aug 2002 12:13:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 501B229409D for <fork@xent.com>; Mon,
+    19 Aug 2002 12:12:21 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 7EF173EDCE;
+    Mon, 19 Aug 2002 15:15:38 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 7D6FF3EDC1 for <fork@xent.com>; Mon,
+    19 Aug 2002 15:15:38 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: fork@spamassassin.taint.org
+Subject: Down the Yahoo river
+Message-Id: <Pine.BSO.4.44.0208191514400.17583-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 19 Aug 2002 15:15:38 -0400 (EDT)
+
+
+fwd-----
+It would appear that Yahoo! has joined the ranks of western companies
+dedicated to helping restrict the freedoms of people in other countries
+for the sake of improving their profit margins. Yahoo! has signed the
+"Public Pledge on Self-discipline for China Internet Industry" (more
+here http://www.dfn.org/voices/china/selfdiscipline.htm ), essentially a
+promise to help police Chinese internet users for the
+State:
+
+>>>From this article in The Nando Times:
+http://www.nandotimes.com/technology/story/494845p-3946998c.html
+
+The Chinese version of the popular Yahoo! Internet portal risks becoming
+an online policeman for China's communist government if it keeps a promise
+to voluntarily investigate potentially subversive content, a human rights
+group has warned.
+
+"If it implements the pledge, Yahoo! will become an agent of Chinese law
+enforcement," Kenneth Roth, Human Rights Watch's executive director, said
+Friday. "It will switch from being an information gateway to an
+information gatekeeper."
+
+More from Human Rights Watch.
+http://hrw.org/press/2002/08/yahoo080902.htm
+
+----------------------------
+
+
+
+http://xent.com/mailman/listinfo/fork
+

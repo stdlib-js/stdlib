@@ -1,0 +1,83 @@
+From fork-admin@xent.com  Wed Aug 28 14:47:26 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1938343F99
+	for <jm@localhost>; Wed, 28 Aug 2002 09:47:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 14:47:19 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7SDekZ26573 for <jm@jmason.org>;
+    Wed, 28 Aug 2002 14:40:47 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 57A2C29418C; Wed, 28 Aug 2002 06:38:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (oe34.law12.hotmail.com [64.4.18.91]) by
+    xent.com (Postfix) with ESMTP id CB26E29409A for <fork@xent.com>;
+    Wed, 28 Aug 2002 06:37:51 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Wed, 28 Aug 2002 06:39:56 -0700
+X-Originating-Ip: [66.92.145.79]
+Reply-To: "Bill Kearney" <wkearney99@hotmail.com>
+From: "Bill Kearney" <wkearney99@hotmail.com>
+To: <fork@spamassassin.taint.org>
+References: <20020828132525.19031.23950.Mailman@lair.xent.com>
+Subject: Re: DataPower announces XML-in-silicon
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4807.1700
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Message-Id: <OE34RTNyI0n0U79bhEG00007e21@hotmail.com>
+X-Originalarrivaltime: 28 Aug 2002 13:39:56.0340 (UTC) FILETIME=[656C7F40:01C24E98]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 28 Aug 2002 09:39:52 -0400
+
+> Now, to do this, we all know they have to be cracking the strong crypto used
+> on all transaction in order to process them... So this has some preaty heavy
+> implications, unless it's just BS.
+
+Anybody buying a box like this is undoubtledly going to integrate it into their
+crypto infrastructure.  What's the point of putting in a box like this if it's
+not an active participant in your security framework?
+
+> Or.... you could just not bloat it 20x to begin with. Nah! (that was the
+> whole point of XML afterall, to sell more CPUs - much like Oracle's use of
+> Java allows them to sell 3x more CPU licenses due to the performance hit)
+
+Blah, blah, blah.  The marketing FUD gets compounded by the Beberg FUD, talk
+about 20x bloat.
+
+> Again, see above... they _are_ claiming to decode the crypto...
+
+What gives you the impression that's what they're doing?  That's not what the
+text says.  It's largely fluff anyway.
+
+> > "Our XG3 execution core converts XML to machine code," said Kelly,
+> Mmmmmmmmmmm, machine code, never a good idea ;)
+
+Uhhh, fundamentally it's all machine code.  Kelly's comment seems more like
+drivel from a clueless marketroid than anything of technical concern.
+
+Having what appears to be a silicon XML router would be a cool thing.  Having
+one integrated with your crypto environment would kick ass.  Let it
+deserialize/decrypt/repackage the XML before handing it off to the app servers.
+The question, of course, is does it work with actual applications in the field
+without tremendously reworking them.  Somehow I doubt it...
+
+-Bill Kearney
+

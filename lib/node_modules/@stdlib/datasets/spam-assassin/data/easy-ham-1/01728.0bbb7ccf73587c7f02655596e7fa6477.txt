@@ -1,0 +1,16 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Mon Sep  9 03:16:18 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sun, 08 Sep 2002 22:16:18 -0400
+Subject: [Spambayes] Ditching WordInfo
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCCEPNBCAB.tim.one@comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCIEAHBDAB.tim.one@comcast.net>
+
+[Tim]
+> ...
+> On my box the current system scores about 50 msgs per second (starting
+> in memory, of course).
+
+That was a guess.  Bothering to get a clock out, it was more like 80 per
+second.  See?  A 60% speedup without changing a thing <wink>.
+

@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Thu Sep 19 16:26:21 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 81D5616F03
+	for <jm@localhost>; Thu, 19 Sep 2002 16:26:20 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 16:26:20 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8JFFhC24825 for <jm@jmason.org>;
+    Thu, 19 Sep 2002 16:15:43 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7F83F29410F; Thu, 19 Sep 2002 08:12:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id B42C529409E for <fork@xent.com>; Thu,
+    19 Sep 2002 08:11:23 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id AB4F13ED70;
+    Thu, 19 Sep 2002 11:19:06 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id A9BD83ED53; Thu, 19 Sep 2002 11:19:06 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: "Mr. FoRK" <fork_list@hotmail.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Oh ma gawd - funny site of the day...
+In-Reply-To: <DAV37u72CQUe91PBX44000116fb@hotmail.com>
+Message-Id: <Pine.BSO.4.44.0209191048220.7567-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 19 Sep 2002 11:19:06 -0400 (EDT)
+
+
+Ahhhh Dave Winer..Seems like only yesterday fork was knee deep in
+winerrants..hes gone away though...so sad (insert real honest to goshness
+tears)
+
+But the past  live on...in the archives...
+
+Remeber when Dave was being betrayed by O'Reilly?
+http://www.xent.com/aug00/0725.html
+
+
+On "closed source" justifications
+http://www.xent.com/FoRK-archive/sept00/0346.html
+
+
+Daves trys to grok fork
+http://www.xent.com/FoRK-archive/sept00/0953.html
+
+
+NT runs just as good as linux...really
+http://www.xent.com/aug00/0069.html
+
+There are a few months of this stuff (just google or forkcrawl the
+archives) then he got truly fedup with all our  not polite unfresh
+thinking and went silent, for the most part.
+
+oh well, back to life.
+
+-tom
+
+
+

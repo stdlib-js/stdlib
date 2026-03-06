@@ -1,0 +1,75 @@
+From rssfeeds@jmason.org  Tue Sep 24 10:48:01 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9B4F116F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:48:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:48:00 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8O803C26523 for
+    <jm@jmason.org>; Tue, 24 Sep 2002 09:00:03 +0100
+Message-Id: <200209240800.g8O803C26523@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Now heavily medicated
+Date: Tue, 24 Sep 2002 08:00:02 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/09/23.html#now_heavily_medicated
+Date: 2002-09-23T16:11:02-05:00
+
+Trust me when I tell you that heavy medication and RDF do not mix. Here is a 
+list of things I intend to re-read once the fog lifts: 
+
+- _Phil Ringnalda_: Using FOAF relationships[1] and Just say no to Trackback in 
+index.html[2]. 
+- _Les Orchard_: Per-post comment RSS feed[3]. 
+- _Phil Wainewright_: The bare necessities of RSS[4] and What to do about RDF
+[5]. The beginning of an RSS 2.0 best practices document. 
+- _Jonathon Delacour_: Trying to score a goal[6]. &#8220;As the best and the 
+brightest focus on the possibilities of FOAF, I turned my attention to 
+yesterday's news: RSS.&#8221; No, RSS will always be today's news. Get it? 
+Today's newzzz... Never mind. 
+- Comments on Ben Hammersley's Friend of a Friend[7]. Various ways to link to a 
+FOAF file from an RSS feed. 
+- _Nicholas Chase_: The Web's future: XHTML 2.0[8]. We're losing backward 
+compatibility, isn't that great? Well, he seems to think so. 
+- mod_cc[9], a module for including copyright information in RDF documents such 
+as RSS 1.0 feeds, and, I hope, FOAF files. 
+- _Shelley Powers_: Who is your audience, and what are you trying to 
+accomplish?[10] Addressing the growing identity crisis on the RSS-DEV mailing 
+list[11]. Also the comments on Shelley's article[12]. 
+- _Ian Hickson_: Pingback 1.0[13]. &#8220;The best thing about this idea is 
+that unlike similar schemes like TrackBack, it is totally transparent to both 
+users.&#8221; 
+- New software helps in building of accessible web sites[14]. A press release 
+for a new edition of LIFT[15], which I have never used. 
+- Forget Mars bars, Twinkies now the deep-fried treat[16]. &#8220;The secret to 
+making a deep-fried Twinkie, he says, is to place it in the fridge first to 
+give it more stability. He then rolls it in flour, covers it with batter ... 
+and plunks it into the oil.&#8221; 
+
+
+
+
+
+[1]  http://philringnalda.com/archives/002324.php
+[2]  http://philringnalda.com/archives/002329.php
+[3]  http://www.decafbad.com/news_archives/000290.phtml
+[4]  http://howto.looselycoupled.com/blog/2002_09_15_dy.htm
+[5]  http://howto.looselycoupled.com/blog/2002_09_22_dy.htm#85480973
+[6]  http://weblog.delacour.net/archives/000707.html
+[7]  http://rss.benhammersley.com/archives/001387.html
+[8]  http://www-106.ibm.com/developerworks/library/wa-xhtml/?n-wa-9192
+[9]  http://web.resource.org/rss/1.0/modules/cc/
+[10] http://weblog.burningbird.net/archives/000541.php
+[11] http://groups.yahoo.com/group/rss-dev/
+[12] http://burningbird.net/cgi-bin/mt-comments.cgi?entry_id=541
+[13] http://ln.hixie.ch/?start=1032794857&count=1
+[14] http://maccentral.macworld.com/news/0209/23.usable.php
+[15] http://www.usablenet.com/
+[16] http://www.globeandmail.com/servlet/ArticleNews/PEstory/TGAM/20020923/UFATTN/Headlines/headdex/headdexInternational_temp/13/13/22/
+
+

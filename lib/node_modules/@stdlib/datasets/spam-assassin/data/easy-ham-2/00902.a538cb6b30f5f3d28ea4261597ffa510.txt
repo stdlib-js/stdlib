@@ -1,0 +1,91 @@
+From fork-admin@xent.com  Fri Jul 26 07:31:07 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DDBAF440E7
+	for <jm@localhost>; Fri, 26 Jul 2002 02:31:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 07:31:06 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6Q6Wd429384 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 07:32:40 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id EAEBA294115; Thu, 25 Jul 2002 23:31:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 190B2294108 for <fork@xent.com>;
+    Thu, 25 Jul 2002 23:30:53 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-043.ptrb.interhop.net
+    [165.154.190.107]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g6Q661E23593; Fri, 26 Jul 2002 02:06:02 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 6EA311C39A;
+    Fri, 26 Jul 2002 01:07:15 -0400 (EDT)
+To: "Gordon Mohr" <gojomo@usa.net>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: Asteroids anyone ?
+References: <001301c23359$d8208130$0100a8c0@PETER>
+    <m2n0sgojke.fsf@maya.dyndns.org>
+    <2784.192.216.194.113.1027554358.squirrel@webmail.magnesium.net>
+    <20020725154846.M85654@networkcommand.com>
+    <m2ofcvkxqu.fsf@maya.dyndns.org> <01fe01c23456$5d862760$640a000a@golden>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2adofkrgc.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 26 Jul 2002 01:07:15 -0400
+
+>>>>> "G" == Gordon Mohr <gojomo@usa.net> writes:
+
+    G> Gary Lawrence Murphy writes:
+    >> 20,000 years ago, one of them the size of Mt Everest just ever
+    >> so slightly grazed us and left a scar 400km long in the side of
+    >> South America
+
+    G> Do you have any further information about this incident that
+    G> would me find more details on the web?
+
+Good question.  This was covered in one of the amateur rags, maybe Sky
+and Telescope or even Scienterrific American, long before there was any
+web to speak of, but you'd think a 400km gash in the Earth would be
+pretty easy to find ;) I remember it from an issue perhaps in the very
+late 80's or early 90's.
+
+It's interesting to note that NT7 and many other NEO bodies are all on
+trajectories that approach the Earth from under the ecliptic, so with
+the Earth tilt, South America becomes a pretty good target.  In trying
+to find you a site through Google, I turned up several different
+impact sites in Venezuela and Brazil, with ages ranging from 251M to
+70 years, but not the 400km gash from the above story.  
+
+The only google refs I found from that period is one in Arizona
+(famous impact crater) and another in NM; do wish I had noted the
+actual South American /country/ that contains the scar; Venezuela
+sticks in my mind but I can't be certain.  
+
+http://neo.jpl.nasa.gov/images/meteorcrater.html
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+
+

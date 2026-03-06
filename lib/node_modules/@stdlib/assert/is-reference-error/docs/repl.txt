@@ -1,0 +1,30 @@
+
+{{alias}}( value )
+    Tests if a value is a ReferenceError object.
+
+    This function should *not* be considered robust. While the function should
+    always return `true` if provided a ReferenceError (or a descendant)
+    object, false positives may occur due to the fact that the ReferenceError
+    constructor inherits from Error and has no internal class of its own.
+    Hence, ReferenceError impersonation is possible.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a ReferenceError object.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new ReferenceError( 'beep' ) )
+    true
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,152 @@
+{
+  "name": "@stdlib/math/base/special/acsc",
+  "version": "0.0.0",
+  "description": "Compute the arccosecant of a number.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "gypfile": true,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "acsc",
+    "arcsine",
+    "arccosecant",
+    "cosecant",
+    "sine",
+    "inverse",
+    "trig",
+    "trigonometry",
+    "angle"
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "acsc",
+      "alias": "acsc",
+      "pkg_desc": "compute the arccosecant",
+      "desc": "computes the arccosecant",
+      "short_desc": "arccosecant",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": -1
+            },
+            {
+              "min": 1,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              1.1,
+              10
+            ]
+          },
+          "example_values": [
+            2,
+            -2,
+            1.5,
+            -3.7,
+            5,
+            -8.2,
+            10,
+            -12.5,
+            3.3,
+            -4.4,
+            7.7,
+            -9.9,
+            15,
+            -20,
+            1.2,
+            -1.3,
+            2.5,
+            -2.6,
+            3.14,
+            -3.14
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "arccosecant",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "inverse",
+        "cosecant",
+        "acsc",
+        "arc",
+        "arccosecant",
+        "angle",
+        "sin"
+      ],
+      "extra_keywords": [
+        "math.asin"
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+From bounce-ora_webprog-1083425@newsletter.oreilly.com  Sat Nov  9 15:23:06 2002
+Return-Path: <bounce-ora_webprog-1083425@newsletter.oreilly.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C220116F17
+	for <jm@localhost>; Sat,  9 Nov 2002 15:22:36 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 09 Nov 2002 15:22:36 +0000 (GMT)
+Received: from newsletter.oreillynet.com (newsletter.oreilly.com
+    [209.204.146.25]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    gA9ErYW14440 for <jm-meerkat@jmason.org>; Sat, 9 Nov 2002 14:53:34 GMT
+From: "O'Reilly & Assoc." <elists-admin@oreillynet.com>
+To: Justin Mason <yyyy-meerkat@spamassassin.taint.org>
+Subject: HTTP: The Definitive Guide
+Date: Fri, 08 Nov 2002 23:59:00 -0800
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+List-Unsubscribe: <mailto:leave-ora_webprog-1083425X@newsletter.oreilly.com>
+Message-Id: <LYRIS-1083425-12995-2002.11.09-00.00.03--yyyy-meerkat#spamassassin.taint.org@newsletter.oreilly.com>
+
+"HTTP: The Definitive Guide" documents everything 
+technical people need for using HTTP efficiently. 
+Written by experts with years of practical and 
+teaching experience, this book is the definitive 
+resource on HTTP and related core web technologies 
+because it clearly explains the "why" as well as 
+the "how." Readers will learn how web applications 
+work, how the core internet protocols and architectural 
+building blocks interact, and how to correctly implement 
+internet clients and servers.
+
+To order your copy or for more information
+(including sample chapter, Table of Contents, 
+index, etc), see:
+http://www.oreilly.com/catalog/httptdg/?CMP=EM8586
+or call 1-800-998-9938
+or email orders@oreilly.com
+
+HTTP: The Definitive Guide 
+By David Gourley, Brian Totty
+With Marjorie Sayer, Sailu Reddy, Anshu Aggarwal
+1-56592-509-2, Order Number: 5092
+656 pages, $44.95 US $69.95 CA 31.95 UK
+http://www.oreilly.com/catalog/httptdg/?CMP=EM8586
+
+-----------------------------------------------------------------
+If you want to cancel your subscription to this 
+newsletter, or add subscriptions to other topics, 
+go to: http://www.oreillynet.com/cs/user/home 
+
+For non-automated human help email 
+help@oreillynet.com
+---------------------------------------------------------
+
+

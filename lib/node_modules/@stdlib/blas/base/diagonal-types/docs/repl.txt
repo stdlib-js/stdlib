@@ -1,0 +1,22 @@
+
+{{alias}}()
+    Returns a list of diagonal element types.
+
+    The output array contains the following types:
+
+    - unit: elements along a diagonal are all equal to one.
+    - non-unit: elements along a diagonal are not all equal to one.
+
+    Returns
+    -------
+    out: Array<string>
+        List of types.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [ 'non-unit', 'unit' ]
+
+    See Also
+    --------
+

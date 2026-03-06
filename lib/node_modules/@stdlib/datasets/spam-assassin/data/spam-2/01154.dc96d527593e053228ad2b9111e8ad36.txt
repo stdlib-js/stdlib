@@ -1,0 +1,29 @@
+From apache@ns3.super-hosts.com  Mon Jul 29 11:26:41 2002
+Return-Path: <apache@ns3.super-hosts.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4FDCD44133
+	for <jm@localhost>; Mon, 29 Jul 2002 06:24:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:24:35 +0100 (IST)
+Received: from ns3.super-hosts.com (super-hosts.com [216.12.213.215] (may
+    be forged)) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6SJpsi21292 for <jm-fm@jmason.org>; Sun, 28 Jul 2002 20:51:54 +0100
+Received: (from apache@localhost) by ns3.super-hosts.com (8.11.6/8.11.6)
+    id g6SJxup26416; Sun, 28 Jul 2002 15:59:56 -0400
+Date: Sun, 28 Jul 2002 15:59:56 -0400
+Message-Id: <200207281959.g6SJxup26416@ns3.super-hosts.com>
+To: remi@a2zis.com, yyyy-fm@spamassassin.taint.org, nick@fargus.net,
+	earlhood@usa.net, mdl@chat.ru
+From: spock@1andonly.com ()
+Subject: Free Cell phone with any Plan!
+
+Below is the result of your feedback form.  It was submitted by  (spock@1andonly.com) on Sunday, July 28, 19102 at 15:59:55
+---------------------------------------------------------------------------
+
+message: Free Cell phone with any Plan! We have all the latest Phones for FREE!!!! Please click the link below to Choose your Free Cellphone! - http://www.reelten.com/redirect/index.html - Deals with Verizon, Pacbell, ATT, and many more! -        If you have received this Email in error please contact: lon_chaney_jr@hotmail.com with subject: remove. 
+
+---------------------------------------------------------------------------
+
+

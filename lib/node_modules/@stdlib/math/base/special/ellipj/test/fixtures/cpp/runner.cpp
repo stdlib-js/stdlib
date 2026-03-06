@@ -1,0 +1,351 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+/**
+* Generate Boost test fixtures.
+*
+* ## Notes
+*
+* -   Run this script from the directory in which fixtures should be written.
+*
+*/
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include <boost/random/mersenne_twister.hpp>
+#include <boost/random/uniform_int_distribution.hpp>
+#include <boost/random/uniform_real_distribution.hpp>
+#include <boost/math/special_functions/jacobi_elliptic.hpp>
+
+using boost::random::uniform_real_distribution;
+using boost::random::uniform_int_distribution;
+using boost::random::mt19937;
+using boost::math::jacobi_sn;
+using boost::math::jacobi_cn;
+using boost::math::jacobi_dn;
+
+// Define a new pseudorandom number generator:
+mt19937 rng;
+
+/**
+* Generates a linearly spaced numeric array of doubles.
+*
+* ## Notes
+*
+* -   Assumes that the output array has at least 2 elements.
+* -   Output array is guaranteed to include both the start and end values.
+*
+*
+* @param out    output array
+* @param len    array length
+* @param start  first value
+* @param end    last value
+*/
+void linspace_f64( double *out, const unsigned int len, const double start, const double end ) {
+	unsigned int i;
+	double incr;
+
+	incr = (end-start) / (len-1);
+	for ( i = 0; i < len-1; i++ ) {
+		out[ i ] = start + (incr*i);
+	}
+	out[ i ] = end;
+}
+
+/**
+* Generates a linearly spaced numeric array of integers.
+*
+* ## Notes
+*
+* -   Assumes that the output array has at least 2 elements.
+* -   Output array is guaranteed to include both the start and end values.
+*
+*
+* @param out    output array
+* @param len    array length
+* @param start  first value
+* @param end    last value
+*/
+void linspace_i32( int *out, const unsigned int len, const int start, const int end ) {
+	unsigned int i;
+	int incr;
+
+	incr = (end-start) / (len-1);
+	for ( i = 0; i < len-1; i++ ) {
+		out[ i ] = start + (incr*i);
+	}
+	out[ i ] = end;
+}
+
+/**
+* Generates an array of pseudorandom doubles drawn from a uniform distribution.
+*
+* @param out  output array
+* @param len  array length
+* @param a    lower bound (inclusive)
+* @param b    upper bound (exclusive)
+*/
+void rand_array_f64( double *out, const unsigned int len, const double a, const double b ) {
+	unsigned int i;
+
+	// Define a uniform distribution for generating pseudorandom numbers:
+	uniform_real_distribution<> randu( a, b );
+
+	for ( i = 0; i < len; i++ ) {
+		out[ i ] = randu( rng );
+	}
+}
+
+/**
+* Generates an array of pseudorandom integers drawn from a uniform distribution.
+*
+* @param out  output array
+* @param len  array length
+* @param a    lower bound (inclusive)
+* @param b    upper bound (exclusive)
+*/
+void rand_array_i32( int *out, const unsigned int len, const int a, const int b ) {
+	unsigned int i;
+
+	// Define a uniform distribution for generating pseudorandom numbers:
+	uniform_int_distribution<> randi( a, b );
+
+	for ( i = 0; i < len; i++ ) {
+		out[ i ] = randi( rng );
+	}
+}
+
+/**
+* Casts an array of integers to an array of doubles.
+*
+* @param out  output array
+* @param x    input array
+* @param len  array length
+*/
+void i32_to_f64( double *out, int *x, unsigned int len ) {
+	unsigned int i;
+
+	for ( i = 0; i < len; i++ ) {
+		out[ i ] = (double) x[ i ];
+	}
+}
+
+/**
+* Casts an array of doubles to an array of integers.
+*
+* @param out  output array
+* @param x    input array
+* @param len  array length
+*/
+void f64_to_i32( int *out, double *x, unsigned int len ) {
+	unsigned int i;
+
+	for ( i = 0; i < len; i++ ) {
+		out[ i ] = (int) x[ i ];
+	}
+}
+
+/**
+* Writes an array of doubles to a file as a series of comma-separated values.
+*
+* @param f    file to write to
+* @param x    array of doubles
+* @param len  array length
+*/
+void write_array_f64( FILE *f, const double *x, const unsigned int len ) {
+	unsigned int i;
+	for ( i = 0; i < len; i++ ) {
+		fprintf( f, "%.17g", x[ i ] );
+		if ( i < len-1 ) {
+			fprintf( f, "," );
+		}
+	}
+}
+
+/**
+* Writes an array of integers to a file as a series of comma-separated values.
+*
+* @param f    file to write to
+* @param x    array of integers
+* @param len  array length
+*/
+void write_array_i32( FILE *f, const int *x, const unsigned int len ) {
+	unsigned int i;
+
+	for ( i = 0; i < len; i++ ) {
+		fprintf( f, "%d", x[ i ] );
+		if ( i < len-1 ) {
+			fprintf( f, "," );
+		}
+	}
+}
+
+/**
+* Writes a named array of doubles to a file as JSON.
+*
+* @param f     file to write to
+* @param name  array name
+* @param x     data
+* @param len   array length
+*/
+void write_named_array_f64( FILE *f, const char *name, const double *x, const unsigned int len ) {
+	fprintf( f, "\"%s\":[", name );
+	write_array_f64( f, x, len );
+	fprintf( f, "]" );
+}
+
+/**
+* Writes a named array of integers to a file as JSON.
+*
+* @param f     file to write to
+* @param name  array name
+* @param x     data
+* @param len   array length
+*/
+void write_named_array_i32( FILE *f, const char *name, const int *x, const unsigned int len ) {
+	fprintf( f, "\"%s\":[", name );
+	write_array_i32( f, x, len );
+	fprintf( f, "]" );
+}
+
+/**
+* Writes data to a file as JSON.
+*
+* ## Notes
+*
+* -   This function SHOULD be tailored to the input data (e.g., input types, output types, number of arguments, etc) and may vary from use case to use case.
+*
+*
+* @param f                    file to write to
+* @param x                    first parameter
+* @param y                    complete elliptic integral of the first kind
+* @param len                  array length
+*/
+void write_data_as_json( FILE *f, const double *u, const double *m, const double *sn, const double *cn, const double *dn, const unsigned int len ) {
+	fprintf( f, "{" );
+	write_named_array_f64( f, "u", u, len );
+	fprintf( f, "," );
+	write_named_array_f64( f, "m", m, len );
+	fprintf( f, "," );
+	write_named_array_f64( f, "sn_expected", sn, len );
+	fprintf( f, "," );
+	write_named_array_f64( f, "cn_expected", cn, len );
+	fprintf( f, "," );
+	write_named_array_f64( f, "dn_expected", dn, len );
+	fprintf( f, "}" );
+}
+
+/**
+* Generates test fixtures.
+*
+* @param u     first parameter
+* @param m     modulus
+* @param len   number of values in the domain
+* @param name  output filename
+*/
+void generate( double *u, double *m, const unsigned int len, const char *name ) {
+	unsigned int i;
+	double *sn;
+	double *cn;
+	double *dn;
+	double k;
+	FILE *f;
+
+	// Allocate an output array:
+	sn = (double*) malloc( len * sizeof(double) );
+	cn = (double*) malloc( len * sizeof(double) );
+	dn = (double*) malloc( len * sizeof(double) );
+	if ( sn == NULL ) {
+		printf( "Error allocating memory.\n" );
+		exit( 1 );
+	}
+
+	// Generate fixture data:
+	for ( i = 0; i < len; i++ ) {
+		// Boost uses a different convention for the argument so that we must use a square root:
+		k = sqrt( m[ i ] );
+		sn[ i ] = jacobi_sn( k, u[ i ] );
+		cn[ i ] = jacobi_cn( k, u[ i ] );
+		dn[ i ] = jacobi_dn( k, u[ i ] );
+	}
+	// Open a new file:
+	f = fopen( name, "w" );
+	if ( f == NULL ) {
+		printf( "Error opening file.\n" );
+		exit( 1 );
+	}
+	// Write data as JSON:
+	write_data_as_json( f, u, m, sn, cn, dn, len );
+
+	// Close the file:
+	fclose( f );
+
+	// Free allocated memory:
+	free( sn );
+}
+
+/**
+* Main execution sequence.
+*/
+int main( void ) {
+	unsigned int len;
+	double *u;
+	double *m;
+
+	// Define the array length:
+	len = 4000;
+
+	// Allocate arrays:
+	u = (double*) malloc( len * sizeof(double) );
+	if ( u == NULL ) {
+		printf( "Error allocating memory.\n" );
+		exit( 1 );
+	}
+
+	m = (double*) malloc( len * sizeof(double) );
+	if ( m == NULL ) {
+		printf( "Error allocating memory.\n" );
+		exit( 1 );
+	}
+
+	rand_array_f64( u, len, -10.0, 10.0);
+	rand_array_f64( m, len, 0.0, 0.99);
+	generate( u, m, len, "medium_positive_modulus.json" );
+
+	rand_array_f64( u, len, 0.0, 2.0);
+	rand_array_f64( m, len, 1.0 - 1e-9, 1.0 - 1e-15);
+	generate( u, m, len, "near_unity_modulus.json" );
+
+	rand_array_f64( u, len, -1.57, 1.57);
+	rand_array_f64( m, len, 1.0e-16, 1.0e-8);
+	generate( u, m, len, "small_positive_modulus.json" );
+
+	rand_array_f64( u, len, -10.0, 10.0);
+	linspace_f64( m, len, 0.0, 0.0);
+	generate( u, m, len, "zero_modulus.json" );
+
+	rand_array_f64( u, len, -10.0, 10.0);
+	linspace_f64( m, len, 1.0, 1.0);
+	generate( u, m, len, "unity_modulus.json" );
+
+	// Free allocated memory:
+	free( u );
+	free( m );
+
+	return 0;
+}

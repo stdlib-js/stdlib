@@ -1,0 +1,95 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6OD6uhY057097
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Wed, 24 Jul 2002 08:06:57 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6OD6ulP057079
+	for cypherpunks-forward@ds.pro-ns.net; Wed, 24 Jul 2002 08:06:56 -0500 (CDT)
+Received: from slack.lne.com (dns.lne.com [209.157.136.81] (may be forged))
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6OD6phX057048
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 08:06:52 -0500 (CDT)
+	(envelope-from cpunk@lne.com)
+X-Authentication-Warning: hq.pro-ns.net: Host dns.lne.com [209.157.136.81] (may be forged) claimed to be slack.lne.com
+Received: (from cpunk@localhost)
+	by slack.lne.com (8.11.0/8.11.0) id g6OD6oA21480
+	for cypherpunks@ds.pro-ns.net; Wed, 24 Jul 2002 06:06:50 -0700
+Received: (from majordom@localhost)
+	by slack.lne.com (8.11.0/8.11.0) id g6OD5SY21471
+	for cypherpunks-goingout345; Wed, 24 Jul 2002 06:05:28 -0700
+X-Authentication-Warning: slack.lne.com: majordom set sender to owner-cypherpunks@lne.com using -f
+Message-ID: <3D3EA613.6030804@tweakt.net>
+Date: Wed, 24 Jul 2002 09:05:23 -0400
+From: Mark Renouf <mark@tweakt.net>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.1a)
+  Gecko/20020611
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Cypherpunks <cypherpunks@lne.com>
+Subject: Defcon key-signing party
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: owner-cypherpunks@lne.com
+Precedence: bulk
+X-Loop: cypherpunks@lne.com
+X-spam: 0 
+
+Anyone interested in a pgp/gpg key-signing get-together @ DC,
+please email me your key info (name, key ID, type, size,
+fingerprint), and I will add you to the list.
+
+If you don't have a PGP key, now is a great time to make one.
+
+Want to find out more about PGP?
+<http://www.uk.pgp.net/pgpnet/pgp-faq/>
+
+You can get the software from:
+
+PGPfreeware <http://www.pgpi.org/products/pgp/versions/freeware/>
+GnuPG (GPG) <http://www.pgpi.org/download/gnupg/>
+
+
+Bring the following:
+
+   *  Photo ID (your name must be in your key identity)
+   *  A printed copy of your key ID, key type, fingerprint, and key size
+
+I will pass out a master list (from what people send me now). Then
+individually we will cross-validate eachothers identities and keys.
+
+It works like this: person A tells B the details of their key (from
+their personal copy of the key info). Person B confirms that the key
+information on the master list matches. Next person A produces photo ID
+for person B. If it proves that person A is the owner of the key, then
+person B can check off that person on their list.
+
+The reverse is then done for person B.
+
+After a while you will end up with a list full of (hopefully) checked
+names. Later on, you can retrieve a copy of the key either from a
+keyserver or directly from the owner, verify it's valid (it matches the
+checked off name on your copy of the master list), and sign it using
+your private key.
+
+Then you can upload your signature of the key to a key server and send a
+copy back to the key's owner to add to thier keyring.
+
+ID:    Mark Renouf <mark@tweakt.net>
+Size:  2048
+Type:  DH/DSS
+KeyID: 0xF888F464
+Fingerprint: 9CE7 98DD E14E 8B9C 7109  2798 C18D 83A9 F888 F464
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

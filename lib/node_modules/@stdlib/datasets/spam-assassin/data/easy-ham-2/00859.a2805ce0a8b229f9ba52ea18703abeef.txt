@@ -1,0 +1,58 @@
+From fork-admin@xent.com  Thu Jul 25 11:08:29 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 49D5E440D7
+	for <jm@localhost>; Thu, 25 Jul 2002 06:07:49 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:07:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OIna401332 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 19:49:36 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D0D45294156; Wed, 24 Jul 2002 11:48:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx2.ucsc.edu [128.114.129.35]) by
+    xent.com (Postfix) with ESMTP id 523D8294152 for <fork@xent.com>;
+    Wed, 24 Jul 2002 11:47:10 -0700 (PDT)
+Received: from Tycho (dhcp-60-118.cse.ucsc.edu [128.114.60.118]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g6OIku026813 for
+    <fork@xent.com>; Wed, 24 Jul 2002 11:46:57 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: <fork@spamassassin.taint.org>
+Subject: RE: USA USA WE ARE NUMBER ....six.
+Message-Id: <AMEPKEBLDJJCCDEJHAMIGEPAFCAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+In-Reply-To: <Pine.BSO.4.44.0207241312010.357-100000@crank.slack.net>
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 11:45:12 -0700
+
+> "Around the world, there is a growing sense that democracy has not
+> delivered development" Sakiko Fukuda-Parr UN report author
+
+As opposed to some other form of government which has?
+
+- Jim
+http://xent.com/mailman/listinfo/fork
+
+

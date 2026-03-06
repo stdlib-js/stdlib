@@ -1,0 +1,106 @@
+From ilug-admin@linux.ie  Sat Sep  7 22:05:55 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 6A10D16F03
+	for <zzzz@localhost>; Sat,  7 Sep 2002 21:57:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Sat, 07 Sep 2002 21:57:49 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g87AnAC15095 for
+    <zzzz-ilug@jmason.org>; Sat, 7 Sep 2002 11:49:10 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA29895; Sat, 7 Sep 2002 11:48:37 +0100
+Received: from [201.187.11.125] (sw59-152-110.adsl.seed.net.tw
+    [61.59.152.110]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id LAA29871
+    for <ilug@linux.ie>; Sat, 7 Sep 2002 11:48:19 +0100
+Date: Sat, 7 Sep 2002 11:48:19 +0100
+From: vcqztr_2gk1525@deutsche-bank.de
+X-Authentication-Warning: lugh.tuatha.org: Host sw59-152-110.adsl.seed.net.tw
+    [61.59.152.110] claimed to be [201.187.11.125]
+Received: from 5cpfcn by [201.187.86.125] with SMTP (MDaemon.v2.7.SP4.R)
+    for <ilug@linux.ie>; Tue, 27 Aug 2002 01:35:53 +0800
+Received: from login_0216.mailservice.net (mx.service.net[206.232.231.77]
+    (may be forged)) by [192.201.131.147] (8.8.5/8.7.3) with SMTP id XAA05533
+    for <ilug@linux.ie>;  星期二, 27 八月 2002 01:50:37 -0700 (EDT)
+To: <ilug@linux.ie>
+Reply-To: receive_adm@topservice.net
+X-Pmflags: 10326341.10
+X-Uidl: 10293217_192832.222
+Comments: Authenticated Sender is <user127@topservice.net>
+Message-Id: <39895881_74317521>
+X-Mdaemon-Deliver-To: ilug@linux.ie
+X-Return-Path: vcqztr_2gk1525@deutsche-bank.de
+Subject: [ILUG] 純商業辦公室出租
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+
+                          **********************
+                              純商業辦公室出租  
+                          **********************
+   
+   專門服務商用辦公室之承租人。
+
+   台北各等級商用辦公室案件，適合各種商業需求！！
+
+   我們擁有暢通的資訊、有很多立即要出租的辦公室，正等待著您的挑選，
+   
+   一定要為您找到一處最適合您實現您雄圖壯志的場所！！！！
+   
+   舉例如下：
+
+   區域：
+
+   大安區： 仁愛路、敦化南、北路
+            50-300坪（租金1200-2500元）、           
+            純辦氣派大樓，現成百萬裝潢（免頂讓金）、
+            馬上可使用 
+        
+   信義區： 信義路一、二、三、四、五段。 
+            30-500坪（1200-2100元）
+            全新氣派大樓、近捷運站口、交通方便
+           （租金合理、可面議價）
+
+   松山區： 南京東路三、四、五、段
+            30-450坪（租金1000-1800元）
+            氣派、景觀絕佳              
+
+   中山區： 松江路、長安東路，中山北路  
+            70─400坪（租金1000-2200元）
+            純辦、現有裝潢
+
+   西  區： 忠孝西路、館前路、承德路、衡陽路
+            50-500坪
+            百萬裝潢、便宜出租（歡迎看屋）
+
+   內湖區： 重劃區
+            80-500坪1300元起。請把握良機
+            全新氣派大樓、現有裝潢、馬上可使用
+  
+
+  服務第一，品質保證。歡迎洽詢.
+ 
+
+  瑞訊不動產 商仲部
+  聯絡人：陶小姐 敬上
+  TeL（代表號）： 02-27492314
+  行動電話：0937063831
+  
+  
+  您的滿意，是我們的成就！！！！  
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Mon Jul 29 11:29:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 62FCE4416B
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:40 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6S4IIi19696 for <jm@jmason.org>;
+    Sun, 28 Jul 2002 05:18:18 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A545B2940B5; Sat, 27 Jul 2002 21:11:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 94D4D2940B4 for <fork@xent.com>; Sat,
+    27 Jul 2002 21:10:43 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 21DA43EDE8;
+    Sun, 28 Jul 2002 00:11:15 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 207A23EDD2; Sun, 28 Jul 2002 00:11:15 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: vox@mindvox.com
+Cc: fork@spamassassin.taint.org
+Subject: Re: [vox] Re: And Away We go
+In-Reply-To: <B96800E2.12379%dparmet@bestweb.net>
+Message-Id: <Pine.BSO.4.44.0207280009350.24840-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 28 Jul 2002 00:11:15 -0400 (EDT)
+
+On Sat, 27 Jul 2002, David Parmet wrote:
+--]
+--]Unless, like mine (who made me email everybody while she was on the phone
+--]with her OB), his wife is a bigger geek than he is.
+--]
+
+She made me do the calls and look for a terminal and she even reminded me
+to update wsmf.org. Its a geekygeek family.
+
+And I had a laptop/firewire/vidcam/modem solution all set up but she nixed
+that very very harshly....
+
+-tom
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

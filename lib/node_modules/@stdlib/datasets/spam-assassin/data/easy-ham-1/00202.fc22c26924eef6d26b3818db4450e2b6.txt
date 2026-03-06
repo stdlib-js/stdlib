@@ -1,0 +1,71 @@
+From ilug-admin@linux.ie  Wed Aug 28 10:47:49 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8E6C243F99
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:47:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:47:23 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7RJaWZ22801 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 27 Aug 2002 20:36:32 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA12883; Tue, 27 Aug 2002 20:36:11 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA12855 for <ilug@linux.ie>; Tue,
+    27 Aug 2002 20:36:03 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.dcu.ie [136.206.1.5]
+    claimed to be hawk.dcu.ie
+Received: from prodigy.redbrick.dcu.ie (136.206.15.10) by hawk.dcu.ie
+    (6.0.040) id 3D6203D30002F387 for ilug@linux.ie; Tue, 27 Aug 2002 20:36:02
+    +0100
+Received: by prodigy.redbrick.dcu.ie (Postfix, from userid 1023) id
+    87B45DA4A; Tue, 27 Aug 2002 20:36:02 +0100 (IST)
+Date: Tue, 27 Aug 2002 20:36:02 +0100
+From: Philip Reynolds <phil@redbrick.dcu.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] find the biggest file
+Message-Id: <20020827203602.G17908@prodigy.Redbrick.DCU.IE>
+References: <20020827193152.56961.qmail@web13705.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020827193152.56961.qmail@web13705.mail.yahoo.com>;
+    from shareinnn@yahoo.com on Tue, Aug 27, 2002 at 12:31:52PM -0700
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Inn Share's [shareinnn@yahoo.com] 22 lines of wisdom included:
+> 
+> Hi,all:
+> 
+> Does anyone know how to list the biggest file in my
+> root directory?or the second biggest ..etc...
+> 
+> Because I want to find out what is the reason cause my
+> root all most full.
+
+$ find /dir -name \*  | xargs du -s | sort -n
+
+Smallest files are listed first with the largest at the end. So if
+you want to get the 5 largest files, pipe through tail.
+
+e.g.
+
+$ find /dir -name \*  | xargs du -s | sort -n | tail -5
+-- 
+  Philip Reynolds        
+   RFC Networks          tel: 01 8832063
+www.rfc-networks.ie      fax: 01 8832041
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,50 @@
+
+{{alias}}( x, s[, regularized[, upper]] )
+    Computes the regularized incomplete gamma function.
+
+    The `regularized` and `upper` parameters specify whether to evaluate the
+    non-regularized and/or upper incomplete gamma functions, respectively.
+
+    If provided `x < 0` or `s <= 0`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        First function parameter.
+
+    s: number
+        Second function parameter.
+
+    regularized: boolean (optional)
+        Boolean indicating whether the function should evaluate the regularized
+        or non-regularized incomplete gamma function. Default: `true`.
+
+    upper: boolean (optional)
+        Boolean indicating whether the function should return the upper tail of
+        the incomplete gamma function. Default: `false`.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 6.0, 2.0 )
+    ~0.9826
+    > y = {{alias}}( 1.0, 2.0, true, true )
+    ~0.7358
+    > y = {{alias}}( 7.0, 5.0 )
+    ~0.8270
+    > y = {{alias}}( 7.0, 5.0, false )
+    ~19.8482
+    > y = {{alias}}( NaN, 2.0 )
+    NaN
+    > y = {{alias}}( 6.0, NaN )
+    NaN
+
+    See Also
+    --------
+

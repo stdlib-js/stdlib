@@ -1,0 +1,99 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Aug 26 16:47:05 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7FFB144159
+	for <jm@localhost>; Mon, 26 Aug 2002 11:46:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 16:46:45 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7QFYmZ29978 for <jm-sa@jmason.org>; Mon, 26 Aug 2002 16:34:49 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17jLsS-00026y-00; Mon,
+    26 Aug 2002 08:34:04 -0700
+Received: from tisch.mail.mindspring.net ([207.69.200.157]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17jLrj-0004FI-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Mon, 26 Aug 2002 08:33:19 -0700
+Received: from user-105nd99.dialup.mindspring.com ([64.91.181.41]
+    helo=belphegore.hughes-family.org) by tisch.mail.mindspring.net with esmtp
+    (Exim 3.33 #1) id 17jLrg-0001cc-00; Mon, 26 Aug 2002 11:33:16 -0400
+Received: from balam.hughes-family.org (balam.hughes-family.org
+    [10.0.240.3]) by belphegore.hughes-family.org (Postfix) with ESMTP id
+    6DD56A4D20; Mon, 26 Aug 2002 08:33:15 -0700 (PDT)
+Subject: Re: Whitelisting (Re: [SAtalk] SA In The News)
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: SpamAssassin Talk ML <spamassassin-talk@example.sourceforge.net>
+To: Bart Schaefer <schaefer@zanshin.com>
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <Pine.LNX.4.44.0208241234470.17127-100000@aztec.zanshin.com>
+Message-Id: <25C208FC-B909-11D6-9F1A-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Mon, 26 Aug 2002 08:33:19 -0700
+Date: Mon, 26 Aug 2002 08:33:19 -0700
+
+There is a whitelist RBL now!  Ironport's Bonded Sender is 
+basically a whitelist RBL where you post a bond to get on the 
+list, and then lose the bond if you end up spamming from that IP 
+address (or something like that).  http://www.bondedsender.org/
+
+C
+
+On Sunday, August 25, 2002, at 07:58  PM, Bart Schaefer wrote:
+
+>> 4. DNSBL: Only certifies an ip address, not who is using it. As it is
+>> currently used, DNSBL allows you to look up if some IP address 
+>> has been
+>> blacklisted by someone. What I haven't seen is a service that 
+>> provides a
+>> DNS based whitelist.
+>
+> There's a practical reason for that:  Any DNS list (white or 
+> black) works
+> only for a limited number of IPs; the set of unlisted IPs is 
+> much larger
+> than the set in the DNS list.  If you have to make a binary decision to
+> accept or reject, you'll be wrong less often if you reject the 
+> blacklist
+> and accept everything else, rather than accept the whitelist and reject
+> everything else.
+>
+> A whitelist is only helpful when (a) you only want mail from a limited
+> number of known sources, or (b) you can use a secondary system 
+> like SA to
+> decide what to do with the vast unlisted masses.  Most MTAs still make
+> only the binary decision, because the secondary computation is 
+> expensive.
+>
+> With SA's cooperation, though, it might be worth a try.  Even better if
+> one could get commercial anti-spam outfits to agree to factor it in.
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

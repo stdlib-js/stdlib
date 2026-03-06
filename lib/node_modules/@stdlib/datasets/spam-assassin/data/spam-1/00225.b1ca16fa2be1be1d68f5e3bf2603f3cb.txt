@@ -1,0 +1,50 @@
+From root@net-temps.com  Thu Sep  5 11:27:57 2002
+Return-Path: <root@net-temps.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 0881F16F6F
+	for <zzzz@localhost>; Thu,  5 Sep 2002 11:27:10 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 05 Sep 2002 11:27:10 +0100 (IST)
+Received: from relay.net-temps.com (deimos.net-temps.com [64.95.77.95]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g856N4Z06978 for
+    <zzzz-cv@jmason.org>; Thu, 5 Sep 2002 07:23:05 +0100
+Received: from mimas.net-temps.com (mail [10.70.40.100]) by
+    relay.net-temps.com (Postfix) with ESMTP id 8976668B0A for
+    <zzzz-cv@jmason.org>; Thu,  5 Sep 2002 02:23:17 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by mimas.net-temps.com
+    (Postfix) with ESMTP id 2E0BC1CB99 for <zzzz-cv@jmason.org>; Thu,
+    5 Sep 2002 02:15:22 -0400 (EDT)
+Received: by mimas.net-temps.com (Postfix, from userid 0) id 874D51CE8C;
+    Thu,  5 Sep 2002 02:12:52 -0400 (EDT)
+From: support@net-temps.com
+To: zzzz-cv@spamassassin.taint.org
+Reply-To: support@net-temps.com
+Subject: Advance Your Career and Find a Great Job!
+Message-Id: <20020905061252.874D51CE8C@mimas.net-temps.com>
+Date: Thu,  5 Sep 2002 02:12:52 -0400 (EDT)
+X-Virus-Scanned: by AMaViS
+Sender: root@net-temps.com
+
+Hi Job Seeker,
+
+When you create a FREE My Net-Temps account, you have access to the tools
+and resources for finding your next job more effectively.  It only takes
+a minute. Plus you get news and tips specific to your profession.
+
+Everything you need is in your My Net-Temps account!
+
+*  Post up to 3 resumes with the Build My Resume and Copy & Paste tools
+*  Setup custom search agents to automatically receive job leads
+*  Resume statistics to track your success
+*  Resume, cover letter and thank you letter writing tips
+*  Salary calculator
+*  Career articles and weekly newsletter
+*  Access to over 7500 recruiters that can help your job search
+
+Setup your account now at http://www.net-temps.com/careerdev/
+
+The Net-Temps Team
+www.net-temps.com
+

@@ -1,0 +1,72 @@
+
+{{alias}}( value )
+    Tests if a value is an integer.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an integer.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 5.0 )
+    true
+    > bool = {{alias}}( new Number( 5.0 ) )
+    true
+    > bool = {{alias}}( -3.14 )
+    false
+    > bool = {{alias}}( null )
+    false
+
+
+{{alias}}.isPrimitive( value )
+    Tests if a value is a number primitive having an integer value.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a number primitive having an integer
+        value.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isPrimitive( -3.0 )
+    true
+    > bool = {{alias}}.isPrimitive( new Number( -3.0 ) )
+    false
+
+
+{{alias}}.isObject( value )
+    Tests if a value is a number object having an integer value.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a number object having an integer
+        value.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isObject( 3.0 )
+    false
+    > bool = {{alias}}.isObject( new Number( 3.0 ) )
+    true
+
+    See Also
+    --------
+

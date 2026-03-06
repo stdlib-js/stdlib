@@ -1,0 +1,116 @@
+From rpm-list-admin@freshrpms.net  Mon Sep 30 21:44:13 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 27BD316F16
+	for <jm@localhost>; Mon, 30 Sep 2002 21:44:09 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 21:44:09 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8UJ42K12271 for
+    <jm-rpm@jmason.org>; Mon, 30 Sep 2002 20:04:03 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8UIv8f11402; Mon, 30 Sep 2002 20:57:08
+    +0200
+Received: from mail.aspect.net
+    (postfix@adsl-65-69-210-161.dsl.hstntx.swbell.net [65.69.210.161]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g8UIuQf10100 for
+    <rpm-list@freshrpms.net>; Mon, 30 Sep 2002 20:56:28 +0200
+Received: from jabber.org (SKADI.WV.CC.cmu.edu [128.2.72.29]) by
+    mail.aspect.net (Postfix) with ESMTP id C76E822B13 for
+    <rpm-list@freshrpms.net>; Mon, 30 Sep 2002 13:48:02 -0500 (CDT)
+Subject: Re: All set for Red Hat Linux 8.0
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v546)
+From: Julian Missig <julian@jabber.org>
+To: rpm-zzzlist@freshrpms.net
+Content-Transfer-Encoding: 7bit
+In-Reply-To: <20020930092826.7c8f5791.matthias@rpmforge.net>
+Message-Id: <377FE45E-D4A6-11D6-A377-000393D60714@jabber.org>
+X-Mailer: Apple Mail (2.546)
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 30 Sep 2002 14:55:41 -0400
+Date: Mon, 30 Sep 2002 14:55:41 -0400
+
+I would appreciate it if you could get Gabber packages for Red Hat 8. I 
+will be making a new release soon, but even in the meantime, 0.8.7 
+packages would be ok.
+
+I know that in the beta, red hat was using a modified version of 
+gnome-libs which is incompatible with the latest gnomemm. If this is 
+still the case in 8, I can send you a patch which makes gnomemm work 
+again...
+
+Julian
+
+On Monday, Sep 30, 2002, at 03:28 US/Eastern, Matthias Saou wrote:
+
+> Hi all,
+>
+> All freshrpms.net is now set for the imminent release of Red Hat Linux 
+> 8.0.
+> The whole release process is a lot less secret as usual since there 
+> have
+> been some leaks, including a mirror purposely wide open :-(
+>
+> See this article about the release and the leaks :
+> http://news.com.com/2100-1001-959434.html?tag=fd_top
+>
+> As it's no secret anymore, the files will be available today (morning 
+> for
+> you Americans, afternoon for us Europeans), and to go with them, there 
+> are
+> already quite a few freshrpms.net packages ready!
+>
+> Mirror list for download (they're not open yet) :
+> http://freshrpms.net/mirrors/psyche.html
+>
+> New freshrpms.net package list :
+> http://psyche.freshrpms.net/
+>
+> Of course, apt is also available (now version 0.5.4!) and fully 
+> tested. If
+> you like apt for your desktop machines, I also recommend checking out 
+> the
+> new "synaptic" package as it has now been ported to gtk+ and blends
+> perfectly into the distribution!
+>
+> I'll probably post to the list once I open up ftp.freshrpms.net so you 
+> can
+> be the first ones to get in and download, although I doubt you'll have
+> trouble finding access to at least one fast mirror using my mirror 
+> list.
+>
+> Have fun with Psyche!
+> Matthias
+>
+> -- 
+> Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+> Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10acpi
+> Load : 0.16 0.18 0.17
+>
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

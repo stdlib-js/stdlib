@@ -1,0 +1,33 @@
+Return-Path: anthony@interlink.com.au
+Delivery-Date: Sat Sep  7 04:50:37 2002
+From: anthony@interlink.com.au (Anthony Baxter)
+Date: Sat, 07 Sep 2002 13:50:37 +1000
+Subject: [Spambayes] understanding high false negative rate 
+In-Reply-To: <15737.16782.542869.368986@slothrop.zope.com> 
+Message-ID: <200209070350.g873obE20720@localhost.localdomain>
+
+
+>>> Jeremy Hylton wrote
+> Then I tried a dirt simple tokenizer for the headers that tokenize the
+> words in the header and emitted like this "%s: %s" % (hdr, word).
+> That worked too well :-).  The received and date headers helped the
+> classifier discover that most of my spam is old and most of my ham is
+> new.
+
+Heh. I hit the same problem, but the other way round, when I first
+started playing with this - I'd collected spam for a week or two, 
+then mixed it up with randomly selected messages from my mail boxes.
+
+course, it instantly picked up on 'received:2001' as a non-ham. 
+
+Curse that too-smart-for-me software. Still, it's probably a good
+thing to note in the documentation about the software - when collecting
+spam/ham, make _sure_ you try and collect from the same source.
+
+
+Anthony
+
+-- 
+Anthony Baxter     <anthony@interlink.com.au>   
+It's never too late to have a happy childhood.
+

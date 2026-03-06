@@ -1,0 +1,23 @@
+
+{{alias}}( x )
+    Returns an unsigned 32-bit integer corresponding to the less significant 32
+    bits of a double-precision floating-point number.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    out: integer
+        Lower order word (unsigned 32-bit integer).
+
+    Examples
+    --------
+    > var w = {{alias}}( 3.14e201 )
+    2479577218
+
+    See Also
+    --------
+

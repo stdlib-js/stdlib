@@ -1,0 +1,12 @@
+
+Usage: insert-link [options] [<uri> --id <id> --desc <description>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --id id               Unique identifier.
+         --desc description    Link description.
+         --keywords w1,w2,...  Comma-separated list of keywords.
+         --database filepath   Database filepath.
+

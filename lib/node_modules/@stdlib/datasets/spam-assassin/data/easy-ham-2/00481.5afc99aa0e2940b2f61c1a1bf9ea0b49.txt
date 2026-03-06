@@ -1,0 +1,56 @@
+From ilug-admin@linux.ie  Wed Aug 21 12:35:56 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 474A643C32
+	for <jm@localhost>; Wed, 21 Aug 2002 07:35:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 12:35:56 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LBZwZ22118 for
+    <jm-ilug@jmason.org>; Wed, 21 Aug 2002 12:35:58 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA26443; Wed, 21 Aug 2002 12:35:19 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from redpie.com (redpie.com [216.122.135.208] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA26401 for
+    <ilug@linux.ie>; Wed, 21 Aug 2002 12:35:10 +0100
+Received: from justin (p353.as2.prp.dublin.eircom.net [159.134.171.97]) by
+    redpie.com (8.8.7/8.8.5) with SMTP id EAA15062 for <ilug@linux.ie>;
+    Wed, 21 Aug 2002 04:35:08 -0700 (PDT)
+From: "Kiall Mac Innes" <kialllists@redpie.com>
+To: <ilug@linux.ie>
+Date: Wed, 21 Aug 2002 12:42:17 +0100
+Message-Id: <BCEFLMCEIJHPCPLGADJICEDPCAAA.kialllists@redpie.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Importance: Normal
+Subject: [ILUG] URGENT: Cant get a skrew out... PLEASE HELP!
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi i have a phillips head skrew thats holding a circut board together i need
+to take it out ASAP and nothing will work, the threads on the skrew are
+almost completly gone, its is a very small skrew that i have to use a
+percision skrewdriver set to remove the skrews any help would be
+appreaciated...
+
+Kiall Mac Innes
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

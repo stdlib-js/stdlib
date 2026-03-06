@@ -1,0 +1,72 @@
+From razor-users-admin@lists.sourceforge.net  Wed Jul 24 00:37:24 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7598C440CD
+	for <jm@localhost>; Tue, 23 Jul 2002 19:37:24 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 00:37:24 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6NNbG403982 for <jm-razor@jmason.org>; Wed, 24 Jul 2002 00:37:16 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17X96R-0008Mo-00; Tue,
+    23 Jul 2002 16:30:03 -0700
+Received: from grex.cyberspace.org ([216.93.104.34]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17X95o-0002EY-00 for <razor-users@lists.sourceforge.net>; Tue,
+    23 Jul 2002 16:29:25 -0700
+Received: from localhost (boyhowdy@localhost) by grex.cyberspace.org
+    (8.6.13/8.6.12) with SMTP id TAA23447; Tue, 23 Jul 2002 19:30:11 -0400
+From: Scott Henderson <boyhowdy@cyberspace.org>
+Reply-To: Scott Henderson <boyhowdy@cyberspace.org>
+To: "Tabor J. Wells" <razor-users@fsckit.net>
+Cc: Razor-Users <razor-users@example.sourceforge.net>
+Subject: Re: [Razor-users] can't find Razor/Client.pm
+In-Reply-To: <20020723221601.GF24778@fsckit.net>
+Message-Id: <Pine.SUN.3.96.1020723192739.29929I-100000@grex.cyberspace.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 23 Jul 2002 19:30:11 -0400 (EDT)
+Date: Tue, 23 Jul 2002 19:30:11 -0400 (EDT)
+
+>> Thanks, Tabor.  How do I install v1 over v2, and where does one
+>> get it?  (I don't see it at razor.sourceforge.net)
+>
+>It's there. Scroll down on the downloads page. However you might
+>consider going the other way and installing SpamAssassin's 2.40
+>bleeding-edge code as Razor v2 has a lot of nice features over v1.
+
+Hmmm... installed SA 2.40, but I get the same error when trying
+to launch amavisd-new (can't find Razor/Client.pm).  Seems like
+the amavis code is calling for this.  I'll hit up the
+amavis-users list.  (Feel free to fire off the answer if you
+have it, though!   :)
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

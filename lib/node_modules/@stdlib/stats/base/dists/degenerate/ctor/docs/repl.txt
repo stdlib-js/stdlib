@@ -1,0 +1,96 @@
+
+{{alias}}( [μ] )
+    Returns a degenerate distribution object.
+
+    Parameters
+    ----------
+    μ: number (optional)
+        Constant value of distribution.
+
+    Returns
+    -------
+    degenerate: Object
+        Distribution instance.
+
+    degenerate.mu: number
+        Constant value of distribution.
+
+    degenerate.entropy: number
+        Read-only property which returns the differential entropy.
+
+    degenerate.mean: number
+        Read-only property which returns the expected value.
+
+    degenerate.median: number
+        Read-only property which returns the median.
+
+    degenerate.stdev: number
+        Read-only property which returns the standard deviation.
+
+    degenerate.variance: number
+        Read-only property which returns the variance.
+
+    degenerate.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    degenerate.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    degenerate.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    degenerate.logpmf: Function
+        Evaluates the natural logarithm of the probability mass function
+        (PMF).
+
+    degenerate.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    degenerate.pmf: Function
+        Evaluates the probability mass function (PMF).
+
+    degenerate.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    degenerate.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var degenerate = {{alias}}( 2.0 );
+    > degenerate.mu
+    2.0
+    > degenerate.entropy
+    0.0
+    > degenerate.mean
+    2.0
+    > degenerate.mode
+    2.0
+    > degenerate.median
+    2.0
+    > degenerate.stdev
+    0.0
+    > degenerate.variance
+    0.0
+    > degenerate.cdf( 0.5 )
+    0.0
+    > degenerate.logcdf( 2.5 )
+    0.0
+    > degenerate.logpdf( 0.5 )
+    -Infinity
+    > degenerate.logpmf( 2.5 )
+    -Infinity
+    > degenerate.mgf( 0.2 )
+    ~1.492
+    > degenerate.pdf( 2.0 )
+    +Infinity
+    > degenerate.pmf( 2.0 )
+    1.0
+    > degenerate.quantile( 0.7 )
+    2.0
+
+    See Also
+    --------
+

@@ -1,0 +1,9 @@
+
+x = randu()*100.0 - 50.0;
+y = randu()*100.0 - 50.0;
+
+h = hypot( x, y );
+
+if ( h !== h || h < 0.0 || h > 100.0 ) {
+	throw new Error( 'Something went wrong!' );
+}

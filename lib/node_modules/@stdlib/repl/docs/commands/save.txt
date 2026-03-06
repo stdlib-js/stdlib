@@ -1,0 +1,17 @@
+
+save( fpath )
+    Saves previous commands to a specified file path.
+
+    Parameters
+    ----------
+    fpath: string
+        File path.
+
+    Examples
+    --------
+    > save( './path/to/file.txt' )
+
+    See Also
+    --------
+    load, saveStart, saveStop
+

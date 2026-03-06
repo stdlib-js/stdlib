@@ -1,0 +1,87 @@
+From ilug-admin@linux.ie  Mon Aug 19 11:03:12 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1C38A4419E
+	for <jm@localhost>; Mon, 19 Aug 2002 05:54:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:54:40 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7J9lU617029 for
+    <jm-ilug@jmason.org>; Mon, 19 Aug 2002 10:47:30 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA30282; Mon, 19 Aug 2002 10:46:24 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA30258 for <ilug@linux.ie>;
+    Mon, 19 Aug 2002 10:46:16 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from germain.ie.suberic.net (germain.g.dev.ie.alphyra.com
+    [192.168.7.200]) by ie.suberic.net (8.11.6/8.11.6) with ESMTP id
+    g7J9kEY13812 for <ilug@linux.ie>; Mon, 19 Aug 2002 10:46:14 +0100
+Received: from germain.ie.suberic.net (germain [127.0.0.1]) by
+    germain.ie.suberic.net (8.11.6/8.11.6) with ESMTP id g7J9kEA09725 for
+    <ilug@linux.ie>; Mon, 19 Aug 2002 10:46:14 +0100
+Date: Mon, 19 Aug 2002 10:46:10 +0100
+To: Padraig Brady <padraig.brady@corvil.com>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] expanding a string multiple times
+Message-Id: <20020819104610.A9650@ie.suberic.net>
+References: <3D5D27B9.9080009@corvil.com>
+    <20020817122603.GA1805@bagend.makalumedia.com>
+    <3D60BA1D.8040504@corvil.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <3D60BA1D.8040504@corvil.com>; from padraig.brady@corvil.com
+    on Mon, Aug 19, 2002 at 10:27:57AM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1030182374.2b7538@ie.suberic.net>
+Mail-Followup-To: kevin+dated+1030182374.2b7538@ie.suberic.net,
+	padraig.brady@corvil.com, ilug@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Mon, Aug 19, 2002 at 10:27:57AM +0100, Padraig Brady wrote:
+> > On Fri, Aug 16, 2002 at 05:26:33PM +0100, Padraig Brady wrote:
+> >>How can I repeat a string an arbitrary number
+> >>of times in bash/sed/...
+> >>
+> >>I.E. I'm missing the repeat in the following:
+> >>
+> >>STRING="> "
+> >>NUMBER=3
+> >>PREFIX=repeat $STRING $NUMBER
+> >>echo $PREFIX
+
+huh?  i missed all this.  do you want the string all on one line?
+
+the string repeated over and over, but with linebreaks in between,
+this works:
+
+    yes "$STRING" | head -"$NUMBER"
+
+use sed to remove the newline i guess if you want.  the utilities yes,
+head and sed are on pretty much every unix.
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

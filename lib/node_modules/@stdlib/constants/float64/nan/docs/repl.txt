@@ -1,0 +1,12 @@
+
+{{alias}}
+    Double-precision floating-point NaN.
+
+    Examples
+    --------
+    > {{alias}}
+    NaN
+
+    See Also
+    --------
+

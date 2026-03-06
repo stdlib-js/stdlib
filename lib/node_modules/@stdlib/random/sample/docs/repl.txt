@@ -1,0 +1,150 @@
+
+{{alias}}( x[, options] )
+    Samples elements from an array-like object.
+
+    Parameters
+    ----------
+    x: ArrayLike
+        Array-like object from which to sample.
+
+    options: Object (optional)
+        Options.
+
+    options.size: integer (optional)
+        Sample size. By default, the function returns an array having the same
+        length as `x`. Specify the `size` option to generate a sample of a
+        different size.
+
+    options.probs: Array<number> (optional)
+        Element probabilities. By default, the probability of sampling an
+        element is the same for all elements. To assign elements different
+        probabilities, set the `probs` option. The `probs` option must be a
+        numeric array consisting of nonnegative values which sum to one. When
+        sampling without replacement, note that the `probs` option denotes the
+        initial element probabilities which are then updated after each draw.
+
+    options.replace: boolean (optional)
+        Boolean indicating whether to sample with replacement. If the `replace`
+        option is set to `false`, the `size` option cannot be an integer larger
+        than the number of elements in `x`. Default: `true`.
+
+    Returns
+    -------
+    out: Array
+        Sample.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'abc' )
+    e.g., [ 'a', 'a', 'b' ]
+    > out = {{alias}}( [ 3, 6, 9 ] )
+    e.g., [ 3, 9, 6 ]
+    > var bool = ( out.length === 3 )
+    true
+
+    > out = {{alias}}( [ 3, null, NaN, 'abc', function(){} ] )
+    e.g., [ 3, 'abc', null, 3, null ]
+
+    // Set sample size:
+    > out = {{alias}}( [ 3, 6, 9 ], { 'size': 10 } )
+    e.g., [ 6, 3, 9, 9, 9, 6, 9, 6, 9, 3 ]
+    > out = {{alias}}( [ 0, 1 ], { 'size': 20 } )
+    e.g., [ 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0 ]
+
+    // Draw without replacement:
+    > out = {{alias}}( [ 1, 2, 3, 4, 5, 6 ], { 'replace': false, 'size': 3 } )
+    e.g., [ 6, 1, 5 ]
+    > out = {{alias}}( [ 0, 1 ], { 'replace': false } )
+    e.g., [ 0, 1 ]
+
+    // Assigning non-uniform element probabilities:
+    > var x = [ 1, 2, 3, 4, 5, 6 ];
+    > var probs = [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.5 ];
+    > out = {{alias}}( x, { 'probs': probs } )
+    e.g., [ 5, 6, 6, 5, 6, 4 ]
+    > out = {{alias}}( x, { 'probs': probs, 'size': 3, 'replace': false } )
+    e.g., [ 6, 4, 1 ]
+
+
+{{alias}}.factory( [pool, ][options] )
+    Returns a function to sample elements from an array-like object.
+
+    If provided an array-like object `pool`, the returned function will always
+    sample from the supplied object.
+
+    Parameters
+    ----------
+    pool: ArrayLike (optional)
+        Array-like object from which to sample.
+
+    options: Object (optional)
+        Options.
+
+    options.seed: integer (optional)
+        Integer-valued seed.
+
+    options.size: integer (optional)
+        Sample size.
+
+    options.replace: boolean (optional)
+        Boolean indicating whether to sample with replacement. Default: `true`.
+
+    options.mutate: boolean (optional)
+        Boolean indicating whether to mutate the `pool` when sampling without
+        replacement. If a population from which to sample is provided, the
+        underlying `pool` remains by default constant for each function
+        invocation. To mutate the `pool` by permanently removing observations
+        when sampling without replacement, set the `mutate` option to `true`.
+        The returned function returns `null` after all population units are
+        exhausted. Default: `false`.
+
+    Returns
+    -------
+    fcn: Function
+        Function to sample elements from an array-like object.
+
+    Examples
+    --------
+    // Set a seed:
+    > var mysample = {{alias}}.factory({ 'seed': 232 } );
+    > var out = mysample( 'abcdefg' )
+    e.g., [ 'g', 'd', 'g', 'f', 'c', 'e', 'f' ]
+
+    // Provide `pool` and set a seed plus a default sample size:
+    > var pool = [ 1, 2, 3, 4, 5, 6 ];
+    > mysample = {{alias}}.factory( pool, { 'seed': 232, 'size': 2 } );
+    > out = mysample()
+    e.g., [ 6, 4 ]
+    > out = mysample()
+    e.g., [ 6, 5 ]
+
+    // Mutate the `pool`:
+    > var opts = { 'seed': 474, 'size': 3, 'mutate': true, 'replace': false };
+    > pool = [ 1, 2, 3, 4, 5, 6 ];
+    > mysample = {{alias}}.factory( pool, opts );
+    > out = mysample()
+    e.g., [ 4, 3, 6 ]
+    > out = mysample()
+    e.g., [ 1, 5, 2 ]
+    > out = mysample()
+    null
+
+    // Override default `size` parameter when invoking created function:
+    > mysample = {{alias}}.factory( [ 0, 1 ], { 'size': 2 } );
+    > out = mysample()
+    e.g., [ 1, 1 ]
+    > out = mysample({ 'size': 10 })
+    e.g, [ 0, 1, 1, 1, 0, 1, 0, 0, 1, 1 ]
+
+    // Sample with and without replacement:
+    > mysample = {{alias}}.factory( [ 0, 1 ], { 'size': 2 } );
+    > out = mysample()
+    e.g., [ 1, 1 ]
+    > out = mysample({ 'replace': false })
+    e.g., [ 0, 1 ] or [ 1, 0 ]
+    > out = mysample()
+    e.g., [ 1, 1 ]
+
+    See Also
+    --------
+

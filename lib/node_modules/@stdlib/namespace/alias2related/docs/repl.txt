@@ -1,0 +1,22 @@
+
+{{alias}}( alias )
+    Returns aliases related to a specified alias.
+
+    Parameters
+    ----------
+    alias: string
+        Alias.
+
+    Returns
+    -------
+    out: Array|null
+        Related aliases.
+
+    Examples
+    --------
+    > var v = {{alias}}( '{{alias:@stdlib/math/base/special/sin}}' )
+    [...]
+
+    See Also
+    --------
+

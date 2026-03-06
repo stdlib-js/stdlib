@@ -1,0 +1,29 @@
+
+{{alias}}( str, value )
+    Tests if a value is an anagram.
+
+    Parameters
+    ----------
+    str: string
+        Comparison string.
+
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an anagram.
+
+    Examples
+    --------
+    > var str1 = 'I am a weakish speller';
+    > var str2 = 'William Shakespeare';
+    > var bool = {{alias}}( str1, str2 )
+    true
+    > bool = {{alias}}( 'bat', 'tabba' )
+    false
+
+    See Also
+    --------
+

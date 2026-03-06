@@ -1,0 +1,79 @@
+From rpm-list-admin@freshrpms.net  Tue Oct  8 10:55:25 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9239D16F19
+	for <jm@localhost>; Tue,  8 Oct 2002 10:55:21 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 08 Oct 2002 10:55:21 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g987lwK05784 for
+    <jm-rpm@jmason.org>; Tue, 8 Oct 2002 08:47:58 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g987i1f05970; Tue, 8 Oct 2002 09:44:01
+    +0200
+Received: from python (80-24-132-206.uc.nombres.ttd.es [80.24.132.206])
+    (authenticated) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g987hhf05624 for <rpm-list@freshrpms.net>; Tue, 8 Oct 2002 09:43:43 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: xmms and .mp3 files.
+Message-Id: <20021008094334.57b0c988.matthias@rpmforge.net>
+In-Reply-To: <3DA288E8.4060006@punkass.com>
+References: <200210071433.g97EXKo02265@astraeus.hpcf.upr.edu>
+    <3DA288E8.4060006@punkass.com>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.3claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 8 Oct 2002 09:43:34 +0200
+Date: Tue, 8 Oct 2002 09:43:34 +0200
+
+Once upon a time, Roi wrote :
+
+> oh xmms didn't work for me also
+> i used mpg123 i tought its something from me
+
+Nope, this is "normal" as Red Hat removed all mp3 support from 8.0 because
+of patent and royalty issues :-(
+On freshrpms.net, you can find the xmms mp3 plugin as I said, but also
+libmad, lame (mp3 encoder), and soon mpg321 as I often used it myself.
+Many other players can also play mp3 files, like alsaplayer, xine, mplayer.
+
+> like mplayer not working also and gives black screen
+
+This is not normal though...
+Try "mplayer -vo help" then try usinf various output methods to see if some
+do work or not.
+
+Matthias
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10acpi
+Load : 0.00 0.05 0.01
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,73 @@
+
+{{alias}}( value )
+    Tests if a value is an absolute path.
+
+    Function behavior is platform-specific. On Windows platforms, the function
+    is equal to `.win32()`. On POSIX platforms, the function is equal to
+    `.posix()`.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a value is an absolute path.
+
+    Examples
+    --------
+    // Windows environment:
+    > var bool = {{alias}}( 'C:\\foo\\bar\\baz' )
+    true
+
+    // POSIX environment:
+    > bool = {{alias}}( '/foo/bar/baz' )
+    true
+
+
+{{alias}}.posix( value )
+    Tests if a value is a POSIX absolute path.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a value is a POSIX absolute path.
+
+    Examples
+    --------
+    > var bool = {{alias}}.posix( '/foo/bar/baz' )
+    true
+    > bool = {{alias}}.posix( 'foo/bar/baz' )
+    false
+
+
+{{alias}}.win32( value )
+    Tests if a value is a Windows absolute path.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a value is a Windows absolute path.
+
+    Examples
+    --------
+    > var bool = {{alias}}.win32( 'C:\\foo\\bar\\baz' )
+    true
+    > bool = {{alias}}.win32( 'foo\\bar\\baz' )
+    false
+
+    See Also
+    --------
+

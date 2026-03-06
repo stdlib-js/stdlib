@@ -1,0 +1,119 @@
+From fork-admin@xent.com  Wed Jul 31 18:34:07 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 072214410F
+	for <jm@localhost>; Wed, 31 Jul 2002 13:33:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 18:33:23 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6VHVw203274 for <jm@jmason.org>;
+    Wed, 31 Jul 2002 18:32:00 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 77F0629414A; Wed, 31 Jul 2002 10:29:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from agora.microshaft.org (agora.microshaft.org [208.201.249.5])
+    by xent.com (Postfix) with ESMTP id EFD7E294149 for <fork@xent.com>;
+    Wed, 31 Jul 2002 10:28:53 -0700 (PDT)
+Received: (from jono@localhost) by agora.microshaft.org (8.11.6/8.11.6) id
+    g6VGoMT82204 for fork@xent.com; Wed, 31 Jul 2002 09:50:22 -0700 (PDT)
+    (envelope-from jono)
+From: "Jon O." <jono@networkcommand.com>
+To: fork@spamassassin.taint.org
+Subject: vkatalov@elcomsoft.com: Security warning draws DMCA threat
+Message-Id: <20020731095020.E81025@networkcommand.com>
+Reply-To: "jono@networkcommand.com" <jono@networkcommand.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 31 Jul 2002 09:50:20 -0700
+
+
+Looks like HP is using the DMCA to prevent full disclosure of
+security vulnerablities. This is not a good precedent...
+
+
+----- Forwarded message from Vladimir Katalov <vkatalov@elcomsoft.com> -----
+
+From: Vladimir Katalov <vkatalov@elcomsoft.com>
+Reply-To: Vladimir Katalov <vkatalov@elcomsoft.com>
+Organization: ElcomSoft Co.Ltd.
+Subject: [DMCA_Discuss] Security warning draws DMCA threat
+Date: Wed, 31 Jul 2002 15:04:26 +0400
+
+
+http://news.com.com/2100-1023-947325.html?tag=fd_top
+
+By Declan McCullagh
+Staff Writer, CNET News.com
+July 30, 2002, 4:48 PM PT
+
+WASHINGTON--Hewlett Packard has found a new club to use to pound
+researchers who unearth flaws in the company's software: the Digital
+Millennium Copyright Act.
+
+Invoking both the controversial 1998 DMCA and computer crime laws, HP
+has threatened to sue a team of researchers who publicized a
+vulnerability in the company's Tru64 Unix operating system.
+
+In a letter sent on Monday, an HP vice president warned SnoSoft, a
+loosely organized research collective, that it "could be fined up to
+$500,000 and imprisoned for up to five years" for its role in
+publishing information on a bug that lets an intruder take over a
+Tru64 Unix system.
+
+HP's dramatic warning appears to be the first time the DMCA has been
+invoked to stifle research related to computer security. Until now,
+it's been used by copyright holders to pursue people who distribute
+computer programs that unlock copyrighted content such as DVDs or
+encrypted e-books.
+
+If HP files suit or persuades the federal government to prosecute, the
+company could set a precedent that stifles research into computer
+security flaws, a practice that frequently involves publishing code
+that demonstrates vulnerabilities. The DMCA restricts code that "is
+primarily designed or produced for the purpose of circumventing
+protection" of copyrighted works.
+
+On July 19, a researcher at SnoSoft posted a note to
+SecurityFocus.com's popular Bugtraq mailing list with a hyperlink to a
+computer program letting a Tru64 user gain full administrator
+privileges. The researcher, who goes by the alias "Phased," said in
+the message: "Here is the warez, nothing special, but it does the
+job."
+
+That public disclosure drew the ire of Kent Ferson, a vice president
+in HP's Unix systems unit, who alleged in his letter on Monday that
+the post violated the DMCA and the Computer Fraud and Abuse Act.
+
+[...]
+
+_______________________________________________
+
+
+------------------------
+http://www.anti-dmca.org
+------------------------
+
+DMCA_Discuss mailing list
+DMCA_Discuss@lists.microshaft.org
+http://lists.microshaft.org/mailman/listinfo/dmca_discuss
+
+----- End forwarded message -----
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,73 @@
+
+{{alias}}( value )
+    Tests if a value is a relative path.
+
+    Function behavior is platform-specific. On Windows platforms, the function
+    is equal to `.win32()`. On POSIX platforms, the function is equal to
+    `.posix()`.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a relative path.
+
+    Examples
+    --------
+    // Windows environments:
+    > var bool = {{alias}}( 'foo\\bar\\baz' )
+    true
+
+    // POSIX environments:
+    > bool = {{alias}}( './foo/bar/baz' )
+    true
+
+
+{{alias}}.posix( value )
+    Tests if a value is a POSIX relative path.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a POSIX relative path.
+
+    Examples
+    --------
+    > var bool = {{alias}}.posix( './foo/bar/baz' )
+    true
+    > bool = {{alias}}.posix( '/foo/../bar/baz' )
+    false
+
+
+{{alias}}.win32( value )
+    Tests if a value is a Windows relative path.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a Windows relative path.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'foo\\bar\\baz' )
+    true
+    > bool = {{alias}}( 'C:\\foo\\..\\bar\\baz' )
+    false
+
+    See Also
+    --------
+

@@ -1,0 +1,39 @@
+Return-Path: barry@python.org
+Delivery-Date: Fri Sep  6 17:23:33 2002
+From: barry@python.org (Barry A. Warsaw)
+Date: Fri, 6 Sep 2002 12:23:33 -0400
+Subject: [Spambayes] Deployment
+References: <3D788653.9143.1D8992DA@localhost>
+	<200209061443.g86Ehie14557@pcp02138704pcs.reston01.va.comcast.net>
+	<20020906155705.GA22115@glacier.arctrix.com>
+Message-ID: <15736.54917.688066.738120@anthem.wooz.org>
+
+
+>>>>> "NS" == Neil Schemenauer <nas@python.ca> writes:
+
+    NS> Writing an IMAP server is a non-trivial task.
+
+That's what I've been told by everyone I've talked to who's actually
+tried to write one.
+    
+    NS> Alternatively, perhaps there could be a separate protocol and
+    NS> client that could be used to review additions to the training
+    NS> set.  Each day a few random spam and ham messages could be
+    NS> grabbed as candidates.  Someone would periodically startup the
+    NS> client, review the candidates, reclassify or remove any
+    NS> messages they don't like and add them to the training set.
+
+I think people will be much more motivated to report spam than ham.  I
+like the general approach that copies of random messages will be
+sequestered for some period of time before they're assumed to be ham.
+Matched with a simple spam reporting scheme, this could keep the
+training up to date with little effort.  I've sketched out an approach
+a listserver like Mailman could do along these lines and if I get some
+free time I'll hack something together.
+
+I like the idea of a POP proxy which is classifying messages as
+they're pulled from the server.  The easiest way for such a beast to
+be notified of spam might be to simply save the spam in a special
+folder or file that the POP proxy would periodically consult.
+
+-Barry

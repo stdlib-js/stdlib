@@ -1,0 +1,68 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  9 10:49:37 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 6614616F49
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:47:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:47:51 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98KFUK32595 for
+    <zzzz-rpm@spamassassin.taint.org>; Tue, 8 Oct 2002 21:15:31 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g98Jx6f06103; Tue, 8 Oct 2002 21:59:06
+    +0200
+Received: from adsl-63-192-217-110.dsl.snfc21.pacbell.net
+    (adsl-63-192-217-110.dsl.snfc21.pacbell.net [63.192.217.110]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g98Jvtf01473 for
+    <rpm-list@freshrpms.net>; Tue, 8 Oct 2002 21:57:56 +0200
+Received: from eecs.berkeley.edu (localhost [127.0.0.1]) by
+    adsl-63-192-217-110.dsl.snfc21.pacbell.net (Postfix) with ESMTP id
+    DE7083BA5D for <rpm-list@freshrpms.net>; Tue,  8 Oct 2002 12:57:53 -0700
+    (PDT)
+Message-Id: <3DA338C1.1072D5E7@eecs.berkeley.edu>
+From: Ben Liblit <liblit@eecs.berkeley.edu>
+X-Mailer: Mozilla 4.79 [en] (X11; U; Linux 2.4.19 i686)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: RedHat 8.0 and his own freetype
+References: <20021004155451.52f9ecd5.matthias_haase@bennewitz.com>
+    <3D9E1F20.3050300@eecs.berkeley.edu>
+    <20021008175554.7d471cf0.matthias_haase@bennewitz.com>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 08 Oct 2002 12:57:53 -0700
+Date: Tue, 08 Oct 2002 12:57:53 -0700
+
+Matthias Haase wrote:
+> The bytecode-interpreter *is* disabled on RH8, defined at line 3 in
+> the Specfile of the SRPM.
+
+Right you are.  The SRPM includes a patch to enable it, but then the
+specfile defaults to not applying that patch.  I saw the former but
+missed the later.  Egad, what a convoluted maze.
+
+Sorry for the misinformation!
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

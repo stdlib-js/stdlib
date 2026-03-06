@@ -1,0 +1,130 @@
+{
+  "name": "@stdlib/math/base/special/fresnelc",
+  "version": "0.0.0",
+  "description": "Compute the Fresnel integral C(x).",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "gypfile": true,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "scripts": "./scripts",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "special",
+    "fresnel",
+    "fresnelc",
+    "integral"
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "fresnelc",
+      "alias": "fresnelc",
+      "pkg_desc": "compute the Fresnel integral C(x)",
+      "desc": "computes the Fresnel integral C(x)",
+      "short_desc": "Fresnel integral C(x)",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "example_values": [
+            0,
+            1,
+            -1,
+            1.25,
+            2.1,
+            5.06,
+            -10,
+            0.75,
+            -0.66,
+            1.11,
+            2.24,
+            -0.707,
+            18.2,
+            27.9,
+            -0.9,
+            -0.5,
+            0.5,
+            7.72,
+            21,
+            -2
+          ]
+        }
+      ],
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "fresnel",
+        "integral",
+        "fresnelc"
+      ],
+      "extra_keywords": []
+    }
+  }
+}

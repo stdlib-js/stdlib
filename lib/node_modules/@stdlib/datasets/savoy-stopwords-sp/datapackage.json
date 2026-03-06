@@ -1,0 +1,47 @@
+{
+  "name": "stdlib-datasets-savoy-stopwords-sp",
+  "version": "",
+  "title": "Spanish Stop Words",
+  "description": "A list of Spanish stop words.",
+  "resources": [
+    {
+      "name": "savoy-stopwords-sp-json",
+      "title": "Spanish Stop Words",
+      "description": "A list of Spanish stop words.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.json"
+    },
+    {
+      "name": "savoy-stopwords-sp-txt",
+      "title": "Spanish Stop Words",
+      "description": "A list of Spanish stop words.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "IR Multilingual Resources at UniNE",
+      "web": "http://members.unine.ch/jacques.savoy/clef/"
+    }
+  ],
+  "keywords": [
+    "list",
+    "stopwords",
+    "words",
+    "redundant",
+    "lexicon",
+    "nlp",
+    "language",
+    "spain",
+    "spanish",
+    "sp"
+  ],
+  "license": "BSD-2-Clause"
+}

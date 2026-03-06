@@ -1,0 +1,62 @@
+
+{{alias}}( [platform] )
+    Returns a regular expression to capture a filename extension.
+
+    The regular expression is platform-dependent. If the current process is
+    running on Windows, the regular expression is `*.REGEXP_WIN32`; otherwise,
+    `*.REGEXP_POSIX`.
+
+    Parameters
+    ----------
+    platform: string (optional)
+        Path platform (either `posix` or `win32`).
+
+    Returns
+    -------
+    re: RegExp
+        Regular expression.
+
+    Examples
+    --------
+    > var RE = {{alias}}()
+    <RegExp>
+    > var RE_POSIX = {{alias}}( 'posix' );
+    > var ext = RE_POSIX.exec( '/foo/bar/index.js' )[ 1 ]
+    '.js'
+    > var RE_WIN32 = {{alias}}( 'win32' );
+    > ext = RE.exec( 'C:\\foo\\bar\\index.js' )[ 1 ]
+    '.js'
+    > var str = RE.toString();
+    > var bool = ( str === RE_POSIX.toString() || str === RE_WIN32.toString() )
+    true
+
+
+{{alias}}.REGEXP
+    Regular expression to capture a filename extension.
+
+    Examples
+    --------
+    > var RE = {{alias}}.REGEXP
+    <RegExp>
+
+
+{{alias}}.REGEXP_POSIX
+    Regular expression to capture a POSIX filename extension.
+
+    Examples
+    --------
+    > var ext = {{alias}}.REGEXP_POSIX.exec( '/foo/bar/index.js' )[ 1 ]
+    '.js'
+
+
+{{alias}}.REGEXP_WIN32
+    Regular expression to capture a Windows filename extension.
+
+    Examples
+    --------
+    > var ext = {{alias}}.REGEXP_WIN32.exec( 'C:\\foo\\bar\\index.js' )[ 1 ]
+    '.js'
+
+    See Also
+    --------
+

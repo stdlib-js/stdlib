@@ -1,0 +1,12 @@
+
+{{alias}}
+    Maximum length for a typed array.
+
+    Examples
+    --------
+    > {{alias}}
+    9007199254740991
+
+    See Also
+    --------
+

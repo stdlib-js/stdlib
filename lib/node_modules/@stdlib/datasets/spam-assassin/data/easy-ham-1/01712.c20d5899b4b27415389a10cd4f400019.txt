@@ -1,0 +1,51 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sun Sep  8 03:55:12 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sat, 07 Sep 2002 22:55:12 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <200209072019.g87KJGe15250@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <LNBBLJKPBEHFEDALKOLCOEOBBCAB.tim.one@comcast.net>
+
+[Guido, on the classifier pickle on SF]
+> I downloaded and played with it a bit, but had no time to do anything
+> systematic.
+
+Cool!
+
+> It correctly recognized a spam that slipped through SA.
+
+Ditto.
+
+> But it also identified as spam everything in my inbox that had any
+> MIME structure or HTML parts, and several messages in my saved 'zope
+> geeks' list that happened to be using MIME and/or HTML.
+
+Do you know why?  The strangest implied claim there is that it hates MIME
+independent of HTML.  For example, the spamprob of 'content-type:text/plain'
+in that pickle is under 0.21.  'content-type:multipart/alternative' gets
+0.93, but that's not a killer clue, and one bit of good content will more
+than cancel it out.
+
+WRT hating HTML, possibilities include:
+
+1. It really had to do with something other than MIME/HTML.
+
+2. These are pure HTML (not multipart/alternative with a text/plain part),
+   so that the tags aren't getting stripped.  The pickled classifier
+   despises all hints of HTML due to its c.l.py heritage.
+
+3. These are multipart/alternative with a text/plain part, but the
+   latter doesn't contain the same text as the text/html part (for
+   example, as Anthony reported, perhaps the text/plain part just
+   says something like "This is an HMTL message.").
+
+If it's #2, it would be easy to add an optional bool argument to tokenize()
+meaning "even if it is pure HTML, strip the tags anyway".  In fact, I'd like
+to do that and default it to True.  The extreme hatred of HTML on tech lists
+strikes me as, umm, extreme <wink>.
+
+> So I guess I'll have to retrain it (yes, you told me so :-).
+
+That would be a different experiment.  I'm certainly curious to see whether
+Jeremy's much-worse-than-mine error rates are typical or aberrant.
+

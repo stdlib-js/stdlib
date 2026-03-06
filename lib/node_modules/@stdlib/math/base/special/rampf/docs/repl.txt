@@ -1,0 +1,26 @@
+
+{{alias}}( x )
+    Evaluates the ramp function (single-precision).
+
+    If `x >= 0`, the function returns `x`; otherwise, the function returns zero.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.14 )
+    3.14
+    > y = {{alias}}( -3.14 )
+    0.0
+
+    See Also
+    --------
+

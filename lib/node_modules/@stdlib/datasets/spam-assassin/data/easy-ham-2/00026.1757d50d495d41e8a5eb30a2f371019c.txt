@@ -1,0 +1,102 @@
+From social-admin@linux.ie  Wed Aug 21 16:23:53 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7690D43C32
+	for <jm@localhost>; Wed, 21 Aug 2002 11:23:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 16:23:53 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LFMpZ31110 for
+    <jm+ilug-social@jmason.org>; Wed, 21 Aug 2002 16:22:51 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA06299; Wed, 21 Aug 2002 16:22:45 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from nwd2mime2.analog.com (nwd2mime2.analog.com [137.71.25.114])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id QAA06261 for
+    <social@linux.ie>; Wed, 21 Aug 2002 16:22:38 +0100
+Received: from nwd2gtw1 (unverified) by nwd2mime2.analog.com (Content
+    Technologies SMTPRS 4.2.5) with SMTP id
+    <T5cd8f570708947197215b@nwd2mime2.analog.com> for <social@linux.ie>;
+    Wed, 21 Aug 2002 11:22:35 -0400
+Received: from nwd2mhb1 ([137.71.5.12]) by nwd2gtw1; Wed, 21 Aug 2002
+    11:22:32 -0400 (EDT)
+Received: from dsun1.adbvdesign.analog.com ([137.71.42.101]) by
+    nwd2mhb1.analog.com with ESMTP (8.9.3 (PHNE_18979)/8.7.1) id LAA14172 for
+    <social@linux.ie>; Wed, 21 Aug 2002 11:22:31 -0400 (EDT)
+Received: from dsun358.adbvdesign.analog.com (dsun358 [137.71.41.58]) by
+    dsun1.adbvdesign.analog.com (8.11.6+Sun/8.11.6) with ESMTP id g7LFMOK02531
+    for <social@linux.ie>; Wed, 21 Aug 2002 16:22:24 +0100 (BST)
+Received: from dsun358 (localhost [127.0.0.1]) by
+    dsun358.adbvdesign.analog.com (8.8.8+Sun/8.8.8) with SMTP id QAA12618 for
+    <social@linux.ie>; Wed, 21 Aug 2002 16:22:34 +0100 (BST)
+Date: Wed, 21 Aug 2002 16:22:33 +0100
+From: Paul Askins <paul.askins@analog.com>
+To: social@linux.ie
+Subject: Re: [ILUG-Social] Re: [ILUG] Formatting a windows partition from Linux
+Message-Id: <20020821162233.70a68a68.paul.askins@adbvdesign.analog.com>
+In-Reply-To: <200208211601.ab21162@salmon.maths.tcd.ie>
+References: <20020821154732.1034974a.paul.askins@adbvdesign.analog.com>
+    <200208211601.ab21162@salmon.maths.tcd.ie>
+Organization: Analog Devices
+X-Mailer: Sylpheed version 0.7.8claws (GTK+ 1.2.7; )
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+Lacking in a  _____
+	     / ___ \
+	    / /   \_\
+	  _| |__
+	 |_   __| 
+	  _| |__
+	 |_   __|
+	   | |     __
+	    \ \___/ /
+	     \_____/  symbol on stupid solaris, I decided to fall back on good
+ole' slang (and being in Limerick, used the local).  Besides, the quid is
+no more :(
+
+But floppy discs are still quite cheep, aren't they?
+
+Paul, way to busy to be doing this.
+
+Sure wasn't it Niall Brady <bradyn@maths.tcd.ie> 
+sometime around Wed, 21 Aug 2002 16:01:39 +0100 said:
+
+> On Wed, 21 Aug 2002 15:47:32 BST, Paul Askins said:
+> >
+> >Option 2, buy a floppy drive, they're only about 15 or 20 yoyos.
+> 							   ^^^^^
+>   ___  _   _ ___ ____  
+>  / _ \| | | |_ _|  _ \ 
+> | | | | | | || || | | |
+> | |_| | |_| || || |_| |
+>  \__\_\\___/|___|____/ 
+> 
+> [or at worst, squid :-)]
+>                        
+> -- 
+> 	Niall
+>
+
+-- 
+Paul Askins <:)
+Email:  Paul Askins <paul.askins@adbvdesign.analog.com>
+
+The truth of a proposition has nothing to do with its credibility.  And
+vice versa.
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

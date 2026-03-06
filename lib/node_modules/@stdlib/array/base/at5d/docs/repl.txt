@@ -1,0 +1,45 @@
+
+{{alias}}( x, i0, i1, i2, i3, i4 )
+    Returns an element from a five-dimensional nested array.
+
+    Negative indices are resolved relative to the last element along the
+    respective dimension, with the last element corresponding to `-1`.
+
+    If provided out-of-bounds indices, the function always returns `undefined`.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input nested array.
+
+    i0: integer
+        First dimension index.
+
+    i1: integer
+        Second dimension index.
+
+    i2: integer
+        Third dimension index.
+
+    i3: integer
+        Fourth dimension index.
+
+    i4: integer
+        Fifth dimension index.
+
+    Returns
+    -------
+    out: any
+        Element value.
+
+    Examples
+    --------
+    > var x = [ [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ] ];
+    > {{alias}}( x, 0, 0, 0, 0, 1 )
+    2
+    > {{alias}}( x, 0, 0, 0, 1, 0 )
+    3
+
+    See Also
+    --------
+

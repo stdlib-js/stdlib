@@ -1,0 +1,78 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:06:49 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 50D4344175
+	for <jm@localhost>; Thu, 29 Aug 2002 06:05:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:05:19 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SMPTZ12720 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 23:25:29 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kBEK-0003ev-00; Wed,
+    28 Aug 2002 15:24:04 -0700
+Received: from adsl-216-103-211-240.dsl.snfc21.pacbell.net
+    ([216.103.211.240] helo=proton.pathname.com) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kBE4-0001J7-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 15:23:48 -0700
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17kBE1-00088a-00; Wed, 28 Aug 2002 15:23:45 -0700
+To: Arnaud Abelard <arnaud.abelard@sciences.univ-nantes.fr>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] custom score for a given domain?
+References: <3D6CE817.20608@sciences.univ-nantes.fr>
+From: Daniel Quinlan <quinlan@pathname.com>
+In-Reply-To: Arnaud Abelard's message of "Wed, 28 Aug 2002 17:11:19 +0200"
+Message-Id: <yf2ptw2k4ge.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: 28 Aug 2002 15:23:45 -0700
+Date: 28 Aug 2002 15:23:45 -0700
+
+> MSG_ID_ADDED_BY_MTA   (4.0 points)
+> INVALID_MSGID         (1.8 points) 
+> MSG_ID_ADDED_BY_MTA_2 (1.6 points)
+
+Here are the new scores in the 2.40 branch (they may change, but they
+are better than before).
+
+score INVALID_MSGID                  1.226
+score MSG_ID_ADDED_BY_MTA            1.696
+score MSG_ID_ADDED_BY_MTA_2          0.532
+
+Total of 3.5 which is better than 7.4, I suppose.
+
+If they fixed their MSGID, it would help.  I suppose we could allow
+comments without hurting spam detection too much, but I'm reluctant
+(it's pretty bizarre to put a comment after the Message-ID header).
+
+Can you open a bugzilla ticket for this one?
+
+Dan
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

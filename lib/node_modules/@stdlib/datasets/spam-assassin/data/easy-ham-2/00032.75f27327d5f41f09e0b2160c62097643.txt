@@ -1,0 +1,95 @@
+From social-admin@linux.ie  Mon Jul 22 17:42:03 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BD3CF440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 12:42:01 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 17:42:01 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFhZI08550 for
+    <jm+ilug-social@jmason.org>; Mon, 22 Jul 2002 16:43:35 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id JAA30902 for
+    <jm+ilug-social@jmason.org>; Mon, 22 Jul 2002 09:15:00 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA15815; Mon, 22 Jul 2002 09:13:41 +0100
+Received: from milexc01.maxtor.com ([134.6.205.206]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA15782; Mon, 22 Jul 2002 09:13:30 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [134.6.205.206] claimed to
+    be milexc01.maxtor.com
+Received: by milexc01.maxtor.com with Internet Mail Service (5.5.2653.19)
+    id <PC8XV21D>; Mon, 22 Jul 2002 09:13:20 +0100
+Message-Id: <0D443C91DCE9CD40B1C795BA222A729E01885475@milexc01.maxtor.com>
+From: "Wynne, Conor" <conor_wynne@maxtor.com>
+To: "'Paul Jakma'" <paulj@alphyra.ie>,
+	kevin lyda <kevin+dated+1027702868.158056@linux.ie>
+Cc: ciaran17@eircom.net, "Wynne, Conor" <conor_wynne@maxtor.com>,
+	"'Colm Buckley'" <colm@tuatha.org>, social@linux.ie
+Subject: RE: [ILUG-Social] Completely OT, Siamese Cats???
+Date: Mon, 22 Jul 2002 09:13:19 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+I reckon that the Cat[s] will be more interested in the fish in the gaf.
+I've got these huge fish [12inchers currently but still growing].
+
+I know someone else with them too alonmg with a couple of cats, anyway one
+day the cats sat on top of the tank waiting for the fish to do a swim-by and
+they readied their paws for the kill. Trouble is the fish were also
+interested in a feed and they were significantly faster than the cats. [They
+could'nt actually hurt them as they only eat fish/very small rodents] in the
+wild. But the cats got the fright of their lives and now they just sit
+across the room from the fish warey of approaching the glass ;-)
+
+Personally I've been bitten many times, but only drew blood once so far.
+
+I wan't to thank all that replied to my totally OT mail, I never knew that
+so many people were into our wee friends. 
+
+CW
+
+-----------------
+On Sat, 20 Jul 2002, kevin lyda wrote:
+
+> what is this obsession of yours with cats that hunt? 
+
+not my obsession - evolutions.
+
+anyway.. i dont like mice and rats, esp. not in the house. and we've
+not had one in the house since we got our present cat.
+
+> you realise that while cats will sometimes bring birds to your bed,
+> it's the wrong kind of bird...  :)
+
+:)
+
+its mostly mice though. and they will eventually (after a few summers)
+stop bringing their kills back to the house, once they realise that
+you're not interested and are never going to learn to hunt.
+
+(they're trying to teach you hunting basically. they do the same with
+kittens - first bring back kills, and then later they bring back live
+but injured prey for the kittens to practice on).
+
+although they'll still bring back stuff on occassion.
+
+> kevin
+
+--paulj
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

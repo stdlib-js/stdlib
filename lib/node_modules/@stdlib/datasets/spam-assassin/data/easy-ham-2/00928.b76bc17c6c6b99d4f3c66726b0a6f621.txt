@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Mon Jul 29 21:49:03 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1911F440F2
+	for <jm@localhost>; Mon, 29 Jul 2002 16:48:57 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 21:48:57 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6TKoAq18979 for <jm@jmason.org>;
+    Mon, 29 Jul 2002 21:50:10 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 184CB2940E3; Mon, 29 Jul 2002 13:48:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id 18A512940E2 for <fork@xent.com>;
+    Mon, 29 Jul 2002 13:47:43 -0700 (PDT)
+Received: (qmail 25551 invoked by uid 1111); 29 Jul 2002 20:47:52 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: James Rogers <jrogers@neopolitannetworks.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: [NYT] A Sudden Rush to Declare Bankruptcy is Expected
+In-Reply-To: <1027966004.19964.73.camel@avalon>
+Message-Id: <Pine.LNX.4.33.0207291338560.25279-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 29 Jul 2002 13:47:52 -0700 (PDT)
+
+On 29 Jul 2002, James Rogers wrote:
+
+> On Mon, 2002-07-29 at 06:36, Russell Turpin wrote:
+> >
+> > Now yeah, creditors are left holding the bag when a
+> > company goes bankrupt.
+>
+>
+> In my experience, it is the shareholders who are left holding the bag.
+
+Yes, the current ones, but rarely if ever the original ones. Mom and pop
+investor get screwed, while the originals have inside info and have cashed
+it all or enough out to not care anymore.
+
+As for the rules for a corp being different then for people, why do you
+think we HAVE corporations? Tax benefits, liability benefits, and the ever
+popular <bart>i didn't do it</bart>. If everything can be blamed on a
+virtual "thing" then noone has to worry about having their $100M home in
+florida taken away :)
+
+Of course if you read the story on VCs posted earlier, you dont have to
+worry about corporations happening so much anymore. The old boys network saw
+they let things get a bit out of control, all those geeks having money, and
+are definately making sure the money all stays in the family from now on.
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+
+http://xent.com/mailman/listinfo/fork
+
+

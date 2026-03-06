@@ -1,0 +1,183 @@
+From fork-admin@xent.com  Thu Jul 25 11:10:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 43232440DC
+	for <jm@localhost>; Thu, 25 Jul 2002 06:09:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:09:59 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6P7Ta404111 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 08:29:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8288A29416D; Thu, 25 Jul 2002 00:28:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hall.mail.mindspring.net (hall.mail.mindspring.net
+    [207.69.200.60]) by xent.com (Postfix) with ESMTP id AF7F129416B for
+    <fork@xent.com>; Thu, 25 Jul 2002 00:27:53 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    hall.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17Xd2D-0001yt-00;
+    Thu, 25 Jul 2002 03:27:42 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a31b9653f99ce1f@[66.149.49.6]>
+To: Digital Bearer Settlement List <dbs@philodox.com>,
+	dcsb@ai.mit.edu, fork@xent.com
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Buy? (was Re: It's back? Triple-digit Dow gains at 2PM...)
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 02:45:45 -0400
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+A bull market climbs a wall of worry -- on record volume.
+
+Yeah, I know, it's different this time. Pay no attention to the bear
+behind the curtain, and all that.
+
+However, at the end of the *last* bear market, in 1983 -- yup, that
+long ago -- Granville sell-orders caused bloodbaths with boring
+regularity, a stockholm-syndrome economy had recently been delivered
+of Keynesian monetary apparatchiks at the Fed and elsewhere, and
+Henry "Dr. Doom" Kauffman opined offhand that interest rates *might*
+come down finally... and pop! went the market, sending the NYSE
+volume through the roof. (Record volume then was around a hundred
+mill. Yesterday, ladies and germs, it was upward of 2 point something
+*billion* shares).. Back then, I was a mail-cart-pushing,
+key-punching "administration" clerk at Morgan Stanley in Chicago,
+chief scrounge for a bunch of Masters of the Universe, and everybody
+at Morgan thought the resulting price-pop was just a technical rally
+and wouldn't last either. :-). Six months later, people *still* said
+it wouldn't last, and a girlfriend's uncle was saying that it was too
+late, he'd missed the train, so he was going to stay out 'till the
+market came back down a bit. By that time, the Dow was at, what,
+1600? I wonder if he's still out, waiting...
+
+
+A 40% decline is a big chunk of change, boys and girls, even if it's
+40% of a bubble. Actually, by my count, it's 100% of the bubble, but
+that's just me. After all, Amazon and EBay's P/Es still need a
+pressurized cabin to breathe in.
+
+So, yes, the market may go lower, but not much more, relatively
+speaking. At some point, and fairly soon, I bet, someone's going to
+realize that, even though you wouldn't want to actually trade one for
+a house, tulips are still nice things to have around.
+
+Hint: Interest rates are rediculuously low, they aren't going up any
+time soon, and, if we can survive the election, the recently-started
+CEO witch-hunt won't be too much more than Street theater, probably
+not resulting in much in the way of regulation or legislation. The
+threat of which, frankly, probably caused this recent explosive
+decompression in the first place. Your tax dollars at work, if you
+will.
+
+So, in light of the erstwhile bloodbath on Capital Hill, and the real
+one we just saw a few days ago in the market, it may be time for
+people to remember what Mr. Rothschild said, and buy now while
+there's blood in the streets.
+
+As to whether the accounting is "rigged", remember what Robert
+Heinlein said: "Who cares if the game is rigged? You can't win if you
+don't play."
+
+
+
+Cheers,
+RAH
+The aforementioned girlfriend, by the way, traded *me* in for an
+actual Rothschild in 1984, after I insisted on going back to school
+and talking my way into the back door at the University of Chicago to
+boot. The cost of anything being the foregone alternative, it
+sometimes seems to me I'm *still* paying for that detour, but that's
+a bear of a different color, and it's okay as long as I don't look
+behind the curtain, right? :-).
+
+- --- begin forwarded text
+
+
+From: Somebody Else
+To: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: It's back? Triple-digit Dow gains at 2PM...
+Date: Wed, 24 Jul 2002 21:44:19 -0600
+
+Bob,
+
+So.  Let's see.  The market's all the way back up to... what? Last
+Friday's
+close?
+
+Iiiiirrraaational iinnndeed.
+
+
+<Somebody's .sig>
+
+- ----- Original Message -----
+From: "R. A. Hettinga" <rah@shipwright.com>
+To: "Digital Bearer Settlement List" <dbs@philodox.com>
+Sent: Wednesday, July 24, 2002 2:02 PM
+Subject: RE: It's back? Triple-digit Dow gains at 2PM...
+
+
+> At 2:55 PM -0400 on 7/24/02, Somebody wrote:
+>
+>
+> > The market doesn't close for two hours.
+>
+> The market just closed. Up 496.63, 6.45%, at 8198.9697.
+>
+> :-).
+>
+> You never catch the upticks if you don't stay in the market...
+>
+> Cheers,
+> RAH
+>
+> --
+> -----------------
+> R. A. Hettinga <mailto: rah@ibuc.com>
+> The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+> 44 Farquhar Street, Boston, MA 02131 USA
+> "... however it may deserve respect for its usefulness and
+> antiquity, [predicting the end of the world] has not been found
+> agreeable to
+> experience." -- Edward Gibbon, 'Decline and Fall of the Roman
+> Empire'
+>
+
+- --- end forwarded text
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: PGP 7.5
+
+iQA/AwUBPT+eg8PxH8jf3ohaEQJaJACferw1H2dZWXUEkFKdJ3bVpSJ5QnQAoPoD
++oIb0wFbSjKC4hdc/DSjPkvj
+=pRCH
+-----END PGP SIGNATURE-----
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+http://xent.com/mailman/listinfo/fork
+
+

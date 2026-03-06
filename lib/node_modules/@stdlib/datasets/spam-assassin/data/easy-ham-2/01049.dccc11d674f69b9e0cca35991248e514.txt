@@ -1,0 +1,82 @@
+From fork-admin@xent.com  Mon Aug 19 11:03:51 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4EAC1441A6
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:05 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7H76d622502 for <jm@jmason.org>;
+    Sat, 17 Aug 2002 08:06:41 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DACA82940D2; Sat, 17 Aug 2002 00:02:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from qu.to (njl.ne.client2.attbi.com [24.218.112.39]) by
+    xent.com (Postfix) with SMTP id 3C2A52940CF for <fork@xent.com>;
+    Sat, 17 Aug 2002 00:01:23 -0700 (PDT)
+Received: (qmail 29465 invoked by uid 500); 17 Aug 2002 07:06:01 -0000
+From: Ned Jackson Lovely <fork@qu.to>
+To: fork@spamassassin.taint.org
+Subject: Re: Re[2]: Al'Qaeda's fantasy ideology:  Policy Review no. 114
+Message-Id: <20020817070601.GG9238@ibu.internal.qu.to>
+References: <58113821767.20020816230818@magnesium.net>
+    <m21y8ydr6q.fsf@maya.dyndns.org>
+    <32120604960.20020817010121@magnesium.net>
+    <m2ofc2c9sy.fsf@maya.dyndns.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <m2ofc2c9sy.fsf@maya.dyndns.org>
+User-Agent: Mutt/1.3.25i
+X-Cell: +1.617.877.3444
+X-Web: http://www.njl.us/
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 17 Aug 2002 03:06:01 -0400
+
+On Sat, Aug 17, 2002 at 01:51:25AM -0400, Gary Lawrence Murphy wrote:
+> Hate-lit
+
+By choosing that term you are certainly attempting to frame the debate by
+choosing a fear-charged word.
+
+> What if they operate by the same neural-annealing Maxima-Minima
+> gratification mechanisms as you or I and every other creature on this
+> planet?  
+
+If somebody maximizes their gratification by slaughtering people, we
+shouldn't just try to understand them. We should try to stop them. You
+seem to have forgotten this in your moral relativism. Everybody is
+justified in their own head. This doesn't mean we forgive mass murders,
+or ignore their acts. They are still guilty and abhorrent. We do
+understand them better when we see them as a flawed human being, like
+any one of us.
+
+> When both sides can call the other "evil" to the cheers of their local
+> public and media, you can bet something's rotten in the state of Denmark.
+
+Calling "the other side" evil is a time-honored tradition. It is less 
+of a stepping point for an analysis of the situation than it is for an
+analysis of human nature in general.
+
+> I guess that's why I live in the woods.  Bears and racoons I
+> understand, but I really just don't 'get' people.
+
+People require a touch more effort.
+
+-- 
+njl
+http://xent.com/mailman/listinfo/fork
+

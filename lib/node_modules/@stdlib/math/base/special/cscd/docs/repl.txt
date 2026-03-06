@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Computes the cosecant of a degree.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in degrees).
+
+    Returns
+    -------
+    y: number
+        Cosecant.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0 )
+    ~57.30
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}} )
+    ~18.25
+    > y = {{alias}}( -{{alias:@stdlib/constants/float64/pi}} )
+    ~-18.25
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

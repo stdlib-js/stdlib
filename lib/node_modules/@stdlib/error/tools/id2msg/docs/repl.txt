@@ -1,0 +1,22 @@
+
+{{alias}}( id )
+    Returns an error message corresponding to a provided two-character error
+    identifier.
+
+    Parameters
+    ----------
+    id: string
+        Error identifier.
+
+    Returns
+    -------
+    out: string|null
+        Error message.
+
+    Examples
+    --------
+    > var v = {{alias}}( '8t' )
+    <string>
+
+    See Also
+    --------

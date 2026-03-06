@@ -1,0 +1,27 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object containing only truthy values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an array-like object containing
+        only truthy values.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ {}, [] ] )
+    true
+    > bool = {{alias}}( [ null, '' ] )
+    false
+    > bool = {{alias}}( [] )
+    false
+
+    See Also
+    --------
+

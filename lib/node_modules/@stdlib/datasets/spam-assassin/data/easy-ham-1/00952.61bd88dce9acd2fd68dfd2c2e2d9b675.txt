@@ -1,0 +1,132 @@
+From exmh-workers-admin@redhat.com  Tue Aug 27 00:00:58 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2F5D043F9B
+	for <jm@localhost>; Mon, 26 Aug 2002 19:00:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 27 Aug 2002 00:00:58 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7QMsVZ13137 for
+    <jm-exmh@jmason.org>; Mon, 26 Aug 2002 23:54:32 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 596833F0F3; Mon, 26 Aug 2002
+    18:54:37 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 1AA623F9F3
+    for <exmh-workers@listman.redhat.com>; Mon, 26 Aug 2002 18:45:13 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7QMj9S03166 for exmh-workers@listman.redhat.com; Mon, 26 Aug 2002
+    18:45:09 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7QMj9Y03162 for
+    <exmh-workers@redhat.com>; Mon, 26 Aug 2002 18:45:09 -0400
+Received: from austin-jump.vircio.com (jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g7QMUFl20693
+    for <exmh-workers@redhat.com>; Mon, 26 Aug 2002 18:30:15 -0400
+Received: (qmail 5815 invoked by uid 104); 26 Aug 2002 22:45:09 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4219. . Clean. Processed in 0.363928
+    secs); 26/08/2002 17:45:08
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 26 Aug 2002 22:45:08 -0000
+Received: (qmail 6638 invoked from network); 26 Aug 2002 22:45:05 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?mUS5Vc4pF2qLz/mLmfOBxJqd0SxJJKFu?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-workers@redhat.com>; 26 Aug 2002 22:45:05 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Anders Eriksson <aeriksson@fastmail.fm>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: Exmh && speed
+In-Reply-To: <20020826223448.0009A3F21@milou.dyndns.org>
+References: <20020826223448.0009A3F21@milou.dyndns.org>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_-1977488590P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1030401904.6628.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1030833905.819ead@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Mon, 26 Aug 2002 17:45:03 -0500
+
+--==_Exmh_-1977488590P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Anders Eriksson <aeriksson@fastmail.fm>
+> Date:  Tue, 27 Aug 2002 00:34:43 +0200
+>
+> Just one more info. I measured the time spent wrapping the stuff in 
+> Ftoc_Next with time {} so the data is for real. One difference 
+> between mine and Valdis' setup (judging from his trace) is that I use 
+> the address book. I've been doing that for ages so that can't be the 
+> problem.
+
+Assuming it's my fault (which it probably is since nobody else has really been 
+in there), it's most likely related to the number of sequences in a folder.  
+I'd guess that something is either being called that shouldn't be or is being 
+called more times than it should be.
+
+> Is there a way to get the log to print time with higher granularity?
+
+Not that I'm aware of.  If you look in the code, there are various places 
+where the time function is called in order to see how long it took to do 
+things.  You'll probably want to borrow that technique.
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_-1977488590P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9aq9vK9b4h5R0IUIRAkZrAJ4uCzn3j+5JlaqhDeEOVBMZlSATqwCdGO8z
+gy5px3yMpRraa8JkwHRwmM0=
+=fGBe
+-----END PGP SIGNATURE-----
+
+--==_Exmh_-1977488590P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

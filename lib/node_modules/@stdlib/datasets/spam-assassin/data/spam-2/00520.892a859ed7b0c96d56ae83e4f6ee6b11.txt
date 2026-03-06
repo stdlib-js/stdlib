@@ -1,0 +1,260 @@
+From tesco.ie@emv2.com  Mon Jun 24 17:08:39 2002
+Return-Path: tesco.ie@emv2.com
+Delivery-Date: Thu May 30 19:21:32 2002
+Received: from smtp4.emv2.com (smtp4.emv2.com [195.200.172.44]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g4UILVO17638 for
+    <jm@jmason.org>; Thu, 30 May 2002 19:21:31 +0100
+Received: from smtp4 (unknown [195.200.172.44]) by smtp4.emv2.com
+    (Postfix) with ESMTP id BE83E33E01 for <jm@jmason.org>; Thu,
+    30 May 2002 20:21:25 +0200 (CEST)
+Message-Id: <66315282.63609.1022782885779@smtp4>
+Date: Thu, 30 May 2002 20:21:25 +0200 (CEST)
+From: "Tesco.ie " <tesco.ie@emv2.com>
+Reply-To: online@tesco.ie
+To: "yyyy@spamassassin.taint.org" <yyyy@spamassassin.taint.org>
+Subject: Ireland's first great World Cup result
+MIME-Version: 1.0
+X-Emv-Campagneid: 63609$
+X-Emv-Memberid: 66315282$
+X-Keywords: 
+Content-Type: multipart/alternative; boundary=1715101671.1022782885778.JavaMail.root.smtp4
+
+--1715101671.1022782885778.JavaMail.root.smtp4
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 7bit
+
+O'Connor quickly moved his cursor down the left side of the web
+page. Then, showing a flash of his silky skills, he cut across to
+the right hand side and clicked on Top Ten Special Offers. He zipped
+past the Irish Chicken Breast Fillets at 25% off, nipped round the
+HB Selections ice cream also at 25% off and went on with the goal
+firmly in sight:
+
+  - Budweiser '24 pack 500ml cans'. Was E49.20. Now E42.15. SAVE E7.05*
+
+  - Guinness '24 pack 500ml cans'. Was E50.16. Now E42.33. SAVE E7.83*
+
+
+With one of his trademark clicks of the mouse he sent his cost-price
+cases of beer straight into the back of his online basket.  1 - 0 to
+Ireland. From there O'Connor was unstoppable and went on to make it
+an unforgettable afternoon as he tucked away another four goals:
+
+  - Pringles Large Tubes 200g. Was E2.05 each. Now buy 2 for E3.00*
+
+  - Hula Hoops Minis Tub 140g. Was E2.42. Now buy one get 2nd half price*
+
+  - Club Twin Packs 2x2 litre. Was E3.10 each.
+    Now buy 1 get 2nd half price*
+
+  - Twix 9 pack. Was E1.99. Now buy 1 get 2nd half price*
+
+
+To take advantage of these fantastic World Cup offers, click here:
+http://195.200.172.1/I?X=79c1a930104dde9497d901fd0a935ada 
+
+
+* Offer ends June 9th. You can't miss it.
+
+Why not get everyone behind our boys and send this email on to a
+friend so they can enjoy these great offers too?
+Because we're selling cases at cost-price we can only offer a
+maximum of 6 cases of Guinness and 6 cases of Budweiser per household.
+
+
+--------------------------------------------------------------------
+All products are subject to availability while stocks last.
+
+Online prices may vary from those charged in-store.
+
+Prices in this email are correct at the time of production and are
+subject to change. Please see website for latest prices.
+
+If you would prefer not to receive emails with news and special
+offers from Tesco.ie, please click here:
+http://www.tesco.ie/register/unsubscribe.asp?from=jm@jmason.org
+
+This may take up to five working days to unsubscribe.
+
+
+
+--1715101671.1022782885778.JavaMail.root.smtp4
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: 7bit
+
+
+
+
+
+
+<html>
+<head>
+<title>Ireland's first great World Cup result</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#ffffff" text="#000000" link="#CC0033" vlink="#CC0033" alink="#0000FF">
+<div align="center"> 
+  <table width="500" border="1" cellspacing="0" cellpadding="6" bordercolor="#000033" align="center">
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="http://195.200.172.1/I?X=79c1a930104dde948bc6257285b8b6e8" ><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/top.gif" width="490" height="30" border="0"></a></td>
+          </tr>
+        </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td bgcolor="#00CC00"><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/title_1.gif" width="265" height="92" alt="Cost-price Cases of beer NOW at Tesco.ie"><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/result.gif" width="118" height="92"><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/football_frames.gif" width="107" height="92"></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="10" height="10"></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td rowspan="2"><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="10" height="10"></td>
+            <td rowspan="2" valign="top"> 
+              <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">O&#146;Connor 
+                quickly moved his cursor down the left side of the web page. Then, 
+                showing a flash of his silky skills, he cut across to the right 
+                hand side and clicked on Top Ten Special Offers.</font></p>
+              <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+                He zipped past the Irish Chicken Breast Fillets at 25% off, nipped 
+                round the HB Selections ice cream also at 25% off and went on 
+                with the goal firmly in sight.</font></p>
+              <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">With 
+                one of his trademark clicks of the mouse he sent his cost-price 
+                cases of beer straight into the back of his online basket. 1 &#150; 
+                0 to Ireland. From there O&#146;Connor was unstoppable and went 
+                on to make it an unforgettable afternoon as he tucked away another 
+                four goals.</font></p>
+            </td>
+            <td rowspan="2"><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="10" height="10"></td>
+            <td valign="top"> 
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td> <b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Budweiser 
+                    24pack 500ml<br>
+                    <font color="CC0033">Save &euro;7.05<font size="1">*</font></font><font color="#FF3300"><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="10" height="10"><font color="#000000">Was 
+                    &euro;49.20</font><br>
+                    <a href="http://195.200.172.1/I?X=79c1a930104dde94cfa6f32fe052da0e" >Buy Now</a> <font color="CC0033">&euro;42.15</font></font></font></b></td>
+                </tr>
+                <tr>
+                  <td valign="top"><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="207" height="6"><br>
+                    <img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/bud_case.gif" width="207" height="97" alt="Budweiser 24pack"><br>
+                    <img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="207" height="4"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td> <b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Guinness 
+                    24pack 500ml<br>
+                    <font color="CC0033">Save &euro;7.83<font size="1">*</font></font><font color="#FF3300"><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="10" height="10"><font color="#000000">Was 
+                    &euro;50.16</font><br>
+                    <a href="http://195.200.172.1/I?X=79c1a930104dde94e7fa9bbe243d14e6" >Buy Now</a> <font color="CC0033">&euro;42.33</font></font></font></b></td>
+                </tr>
+                <tr> 
+                  <td valign="top"><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="207" height="4"><br>
+                    <img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/guinness_case.gif" width="207" height="103" alt="Guinness 24pack"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+              <div align="center"><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/4_products.jpg" width="484" height="191" alt="Pringles, Twix, Hula Hoops and Club Orange"></div>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="1" cellpadding="0">
+          <tr> 
+            <td width="98%"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Pringles 
+              Large Tubes 200g. Was &euro;2.05 each. <font color="#CC0033"><a href="http://195.200.172.1/I?X=79c1a930104dde94cd97caf48e70510e" >Now 
+              buy 2 for &euro;3.00</a><font size="1">*</font></font></font></b></td>
+          </tr>
+          <tr> 
+            <td width="98%"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Twix 
+              9 pack. Was &euro;1.99. <a href="http://195.200.172.1/I?X=79c1a930104dde944fd6d1bdd02f2791" >Now 
+              buy 1 get 2nd half price</a><font color="#CC0033" size="1">*</font></font></b></td>
+          </tr>
+          <tr> 
+            <td width="98%"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Hula 
+              Hoops Minis Tub140g. Was &euro;2.42. <a href="http://195.200.172.1/I?X=79c1a930104dde94fca3a8633aee73e1" >Now 
+              buy one get 2nd half price</a><font color="#CC0033" size="1">*</font></font></b></td>
+          </tr>
+          <tr> 
+            <td width="98%"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Club 
+              Twin Packs 2x2 litre. Was &euro;3.10 each. <a href="http://195.200.172.1/I?X=79c1a930104dde94903b5fd0c2eff6a6" >Now 
+              buy 1 get 2nd half price</a><font color="#CC0033" size="1">*</font></font></b></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="490" height="10"><br>
+              <font size="2" face="Verdana, Arial, Helvetica, sans-serif">To take 
+              advantage of these fantastic World Cup offers click here<br>
+              <a href="http://195.200.172.1/I?X=79c1a930104dde94b6b7d2d3511a8b34" >http://www.tesco.ie/superstore 
+              </a></font></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td> 
+              <p><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="490" height="10"><br>
+                <img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/offer_band.gif" width="490" height="29" alt="*Offer ends June 9th. You can't miss it."><br>
+                <img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="490" height="10"><br>
+                <font size="2" face="Verdana, Arial, Helvetica, sans-serif">Why 
+                not get everyone behind our boys and send this email on to a friend 
+                so they can enjoy these great offers too?</font></p>
+              <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Because 
+                we&#146;re selling cases at cost-price we can only offer a maximum 
+                of 6 cases of Guinness and 6 cases of Budweiser per household.<br>
+                <img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/spacer.gif" width="490" height="10"></font></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <table width="500" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td valign="middle" width="121"><img src="http://tesco-mail.realtime.co.uk/ireland/Y00616/clubcard.gif" width="120" height="57" alt="Tesco Ireland Clubcard"></td>
+      <td valign="middle" width="395"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Remember 
+        you earn Clubcard points on every purchase</font></td>
+    </tr>
+  </table>
+  <table width="500" border="0" cellspacing="0" cellpadding="6">
+    <tr>
+      <td>
+        <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif">All products 
+          are subject to availability while stocks last.</font></p>
+        <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Online 
+          prices may vary from those charged in-store.</font></p>
+        <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Prices 
+          in this email are correct at the time of production and are subject 
+          to change. Please see website for latest prices.<br>
+          </font></p>
+        <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif">If you 
+          would prefer not to receive emails with news and special offers from 
+          Tesco.ie, please click here: <br><a href="http://www.tesco.ie/register/unsubscribe.asp?from=yyyy@spamassassin.taint.org" >http://www.tesco.ie/register/unsubscribe.asp?from=yyyy@spamassassin.taint.org</a><br>
+          </font></p>
+        <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif">This may 
+          take up to five working days to unsubscribe.</font></p>
+      </td>
+    </tr>
+  </table>
+</div>
+<IMG SRC="http://195.200.172.1/S?e35064f2c92adaa2-A-63609-65024" BORDER="0" ALT=""></body>
+</html>
+
+--1715101671.1022782885778.JavaMail.root.smtp4--
+

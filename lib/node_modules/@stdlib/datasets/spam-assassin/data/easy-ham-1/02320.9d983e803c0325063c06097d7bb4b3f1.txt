@@ -1,0 +1,32 @@
+From rssfeeds@jmason.org  Mon Oct  7 12:05:12 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F352416F75
+	for <jm@localhost>; Mon,  7 Oct 2002 12:03:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 12:03:50 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9780hK23278 for
+    <jm@jmason.org>; Mon, 7 Oct 2002 09:00:47 +0100
+Message-Id: <200210070800.g9780hK23278@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: gamasutra <rssfeeds@spamassassin.taint.org>
+Subject: Cyberspace in the 21st Century: Part Seven, Security is Relative
+Date: Mon, 07 Oct 2002 08:00:43 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-0,8613673,159/
+Date: 2002-10-06T18:12:47+01:00
+
+Security in cyberspace is a different kettle of fish compared to many computer 
+systems. Cyberspace entertainment only has to be useful to the majority of its 
+users --entertaining. That means it can tolerate a small amount of vandalism 
+still remain useful. This is quite unlike a system required for commerce. We 
+still have a headache of course, but at least we only need to keep the system 
+around 90 percent clean, rather than 99.99 percent. Of course we’ll still 
+strive to stamp out corruption, but our system failure threshold is more 
+achievable than one might at first assume.
+
+

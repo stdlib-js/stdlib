@@ -1,0 +1,48 @@
+From fork-admin@xent.com  Fri Aug 23 11:09:07 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0D1FA47C71
+	for <jm@localhost>; Fri, 23 Aug 2002 06:06:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:06:59 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7N9vXZ19107 for <jm@jmason.org>;
+    Fri, 23 Aug 2002 10:57:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1993F294197; Fri, 23 Aug 2002 02:55:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from argote.ch (argote.ch [80.65.224.17]) by xent.com (Postfix)
+    with ESMTP id D28BB294099 for <fork@xent.com>; Fri, 23 Aug 2002 02:54:38
+    -0700 (PDT)
+Received: by argote.ch (Postfix, from userid 500) id ABDF4C44E;
+    Fri, 23 Aug 2002 11:48:33 +0200 (CEST)
+To: fork@spamassassin.taint.org
+Subject: Re: Entrepreneurs
+Message-Id: <20020823094833.ABDF4C44E@argote.ch>
+From: harley@argote.ch (Robert Harley)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 23 Aug 2002 11:48:33 +0200 (CEST)
+
+I wrote:
+>I personally doubt it simply because I never heard of Bush and Chirac
+>going to Brighton.
+
+Actually it doesn't say that they did, just that Blair spoke to
+Williams there.
+
+R
+http://xent.com/mailman/listinfo/fork
+

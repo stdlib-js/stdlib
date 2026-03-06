@@ -1,0 +1,97 @@
+From razor-users-admin@lists.sourceforge.net  Mon Sep  2 12:20:32 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D8F2643F9B
+	for <jm@localhost>; Mon,  2 Sep 2002 07:20:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:20:30 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7TJQgZ25729 for <jm-razor@jmason.org>; Thu, 29 Aug 2002 20:26:42 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kUmz-0004JX-00; Thu,
+    29 Aug 2002 12:17:09 -0700
+Received: from mailgate.sri.com ([128.18.243.11]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kUmC-0008At-00 for <razor-users@lists.sourceforge.net>; Thu,
+    29 Aug 2002 12:16:20 -0700
+Received: (qmail 23083 invoked from network); 29 Aug 2002 19:15:48 -0000
+Received: from localhost (HELO mailgate.SRI.COM) (127.0.0.1) by
+    mailgate.sri.com with SMTP; 29 Aug 2002 19:15:48 -0000
+Received: from newmail.sri.com ([128.18.30.43]) by mailgate.SRI.COM (NAVGW
+    2.5.1.18) with SMTP id M2002082912154827439 for
+    <razor-users@lists.sourceforge.net>; Thu, 29 Aug 2002 12:15:48 -0700
+Received: from sri.com ([128.18.28.107]) by newmail.sri.com (Netscape
+    Messaging Server 4.15) with ESMTP id H1MDJE00.QC6 for
+    <razor-users@lists.sourceforge.net>; Thu, 29 Aug 2002 12:16:26 -0700
+Message-Id: <3D6E7347.9090304@sri.com>
+From: "Michael Duff" <michael.duff@sri.com>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1)
+    Gecko/20020826
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: razor-users@example.sourceforge.net
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [Razor-users] Re: Can't call method "log" with SA/Razor2
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 29 Aug 2002 12:17:27 -0700
+Date: Thu, 29 Aug 2002 12:17:27 -0700
+
+This is happening due to insufficient write access to the
+"razor-agent.log" file. I was getting the same error, but
+only as a non-root user.  As a quick workaround, you can do
+"chmod go+w razor-agent.log".
+
+In Agent.pm, when then the Logger object is created, it
+doesn't check whether the logfile is writable by the current
+user. Then, when a write attempt is made, it bails out with
+the "unblessed reference" error.
+
+Hope that helps,
+Michael
+
+> I just noticed the following log entries in my syslog with the latest
+> Spamassassin CVS (set up using spamc/spamd) and razor-agents 2.14:
+>
+> Jul 26 17:30:09 timmy spamd[54928]: razor2 check skipped: No such file or
+> directory Can't call method "log" on unblessed reference at
+> /usr/local/lib/perl5/site_perl/5.6.1/Razor2/Client/Agent.pm line 211,
+> <STDIN> line 25.
+>
+> I saw this after checking if my upgrade from razor-agents 2.12 to 2.14 went
+> okay, but the problem is still there after downgrading back to 2.12.  I
+> don't really know when this started happening, :-/
+>
+> Any ideas on the problem?
+>
+> - Robert
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

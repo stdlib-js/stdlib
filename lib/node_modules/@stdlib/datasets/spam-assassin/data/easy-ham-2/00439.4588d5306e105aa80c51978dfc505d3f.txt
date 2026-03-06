@@ -1,0 +1,73 @@
+From ilug-admin@linux.ie  Mon Aug 19 11:02:35 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DA4C644194
+	for <jm@localhost>; Mon, 19 Aug 2002 05:54:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:54:20 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7HA7S626805 for
+    <jm-ilug@jmason.org>; Sat, 17 Aug 2002 11:07:28 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA17376; Sat, 17 Aug 2002 11:06:52 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from chewie.compsoc.com (chewie.compsoc.com [193.120.201.13]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA17343 for <ilug@linux.ie>;
+    Sat, 17 Aug 2002 11:06:45 +0100
+Received: (from kor@localhost) by chewie.compsoc.com (8.11.6/8.11.6) id
+    g7HA6iu29380; Sat, 17 Aug 2002 11:06:44 +0100
+Date: Sat, 17 Aug 2002 11:06:44 +0100
+From: "Kevin O' Riordan" <kor@compsoc.com>
+To: Padraig Brady <padraig.brady@corvil.com>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] expanding a string multiple times
+Message-Id: <20020817100644.GA29167@chewie.compsoc.com>
+Mail-Followup-To: Padraig Brady <padraig.brady@corvil.com>,
+	ilug@linux.ie
+References: <3D5D27B9.9080009@corvil.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <3D5D27B9.9080009@corvil.com>
+User-Agent: Mutt/1.4i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+On Pungenday, the 9th day of Bureaucracy, Padraig Brady confessed:
+> How can I repeat a string an arbitrary number
+> of times in bash/sed/...
+>
+> I.E. I'm missing the repeat in the following:
+>
+> STRING="> "
+> NUMBER=3
+> PREFIX=repeat $STRING $NUMBER
+> echo $PREFIX
+> > > >
+
+
+perl ?
+
+  STRING="> "
+  NUMBER=3
+  PREFIX=`perl -e "print '$STRING' x $NUMBER;"`
+  echo $PREFIX
+
+I'm pretty sure the bsd 'jot' utility can do this too, but I don't
+have it to hand.
+
+-kev
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

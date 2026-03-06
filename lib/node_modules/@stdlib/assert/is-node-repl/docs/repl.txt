@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns a boolean indicating if running in a Node.js REPL environment.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if running in a Node.js REPL environment.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

@@ -1,0 +1,30 @@
+
+{{alias}}( x, n, writable )
+    Returns an array with a specified number of prepended singleton dimensions.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    n: integer
+        Number of singleton dimensions to prepend.
+
+    writable: boolean
+        Boolean indicating whether a returned array should be writable.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+    > var y = {{alias}}( x, 3, false )
+    <ndarray>[ [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ] ]
+
+    See Also
+    --------
+

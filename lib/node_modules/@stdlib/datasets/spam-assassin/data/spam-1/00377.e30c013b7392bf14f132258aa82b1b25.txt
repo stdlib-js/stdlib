@@ -1,0 +1,124 @@
+From ilug-admin@linux.ie  Thu Sep 19 17:52:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 962DC16F03
+	for <zzzz@localhost>; Thu, 19 Sep 2002 17:51:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 19 Sep 2002 17:51:58 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8JGTGC27825 for
+    <zzzz-ilug@jmason.org>; Thu, 19 Sep 2002 17:29:16 +0100
+Received: from lugh.tuatha.org (list@localhost [127.0.0.1]) by
+    lugh.tuatha.org (8.12.3/8.9.3) with ESMTP id g8JGTEFt008077;
+    Thu, 19 Sep 2002 17:29:14 +0100
+Received: from exchange2000.dsl.gtei.net (exchange.balokannw.com
+    [66.12.180.211] (may be forged)) by lugh.tuatha.org (8.12.3/8.9.3) with
+    ESMTP id g8JGS8Ft008051 for <ilug@linux.ie>; Thu, 19 Sep 2002 17:28:09
+    +0100
+Received: from ciln.sg (w066.z064221110.nyc-ny.dsl.cnc.net
+    [64.221.110.66]) by exchange2000.dsl.gtei.net with SMTP (Microsoft
+    Exchange Internet Mail Service Version 5.5.2653.13) id TGJAMRMF;
+    Thu, 19 Sep 2002 07:45:43 -0700
+Message-Id: <0000414141bc$0000145a$00000b41@ark-la-tex.net>
+To: <humoka@msn.com>, <humbert@greenwood.net>, <ilug@linux.ie>,
+	<groening@swbell.net>, <goofpire@aol.com>
+Cc: <jerocom@yahoo.it>, <jdallas@ddsi-logistics.com>,
+	<grock43@usa.net>, <gzita@hotmail.com>, <hugohk@my.netvigator.com>
+From: carol_dip@hotmail.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+Reply-To: carol_dip@hotmail.com
+Subject: [ILUG] Re: This is NO JOKE! Speed up your CPU for under $30!
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Thu, 19 Sep 2002 10:38:16 -1600
+Date: Thu, 19 Sep 2002 10:38:16 -1600
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  Take Control of Your Computer With This Top-of-the-Line Software! 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+               
+                 Symantec SystemWorks 2002
+            
+              -=Professional Software Suite=-
+
+
+This Special Package Includes Six - Yes 6! - Feature-Packed Utilities
+
+ALL for 1 Special LOW Price of Only $29.99!
+
+This Software Will:
+
+ - Protect your computer from unwanted and hazardous viruses
+ - Help secure your private & valuable information
+ - Allow you to transfer files and send e-mails safely
+ - Backup your ALL your data quick and easily
+ - Improve your PC's performance w/superior integral diagnostics!
+ - ***** You'll NEVER have to take your PC to the repair shop AGAIN! *****
+
+        That's SIX, yes, -6- Feature-Packed Utilities @ 1 Great Price!!!
+
+    A $300+ Combined Retail Value YOURS Only $29.99! (Limited Time Offer)
+                      < Price Includes FREE Shipping! >
+
+         Why SO Cheap you ask? You are buying ONLINE WHOLESALE,
+                  Direct from the Warehouse TO YOU!
+           
+                              ~~~ AND ~~~
+
+         FOR A LIMITED TIME BUY 2 OF ANY SOFTWARE & GET 1 FREE!!!!
+                    
+
+            Don't fall prey to destructive viruses or programs!
+          Protect your computer and your valuable information and...
+
+
+          ...CLICK HERE TO ORDER NOW! -> http://61.151.247.39/erik/
+
+             OR cut & paste the above link  ^^^^^^^^^^^^^^^^  in your browser's URL bar.
+
+
+          FOR MORE QUESTIONS, OR TO ORDER CALL US TOLL-FREE ANYTIME!
+                        
+                         1 - 8 0 0 - 8 6 1 - 1 4 8 1
+
+
+
+
+We are strongly against sending unsolicited emails to those who do not wish to receive
+our special mailings. You have opted-in to one or more of our affiliate sites requesting
+to be notified of any special offers we may run from time to time. We also have attained
+the services of an independent 3rd party to overlook list management and removal
+services. The list CODE in which you are registered is marked at the bottom of this email.
+If you do not wish to receive further mailings, 
+
+Please click here -> http://61.151.247.39/erik/remove.asp to be removed from the list.
+ 
+Please accept our apologies if you have been sent this email in error. We honor all removal requests. 
+
+
+IAES (International Association of Email Security) Approved List. Serial # 9e45tYu2-ssI3USA
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,30 @@
+
+{{alias}}( obj, predicate )
+    Returns a partial object copy containing properties for which a predicate
+    returns a truthy value.
+
+    Parameters
+    ----------
+    obj: Object
+        Source object.
+
+    predicate: Function
+        Predicate function.
+
+    Returns
+    -------
+    out: Object
+        New object.
+
+    Examples
+    --------
+    > function predicate( key, value ) {
+    ...     return ( value > 1 );
+    ... };
+    > var obj1 = { 'a': 1, 'b': 2 };
+    > var obj2 = {{alias}}( obj1, predicate )
+    { 'b': 2 }
+
+    See Also
+    --------
+

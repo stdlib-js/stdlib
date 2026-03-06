@@ -1,0 +1,60 @@
+From fork-admin@xent.com  Wed Aug 28 10:50:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ED32243F9B
+	for <jm@localhost>; Wed, 28 Aug 2002 05:50:41 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:50:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7RMUiZ28625 for <jm@jmason.org>;
+    Tue, 27 Aug 2002 23:30:44 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D88112940B5; Tue, 27 Aug 2002 15:28:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp03.mrf.mail.rcn.net (smtp03.mrf.mail.rcn.net
+    [207.172.4.62]) by xent.com (Postfix) with ESMTP id 4CE5B29409A for
+    <fork@xent.com>; Tue, 27 Aug 2002 15:27:59 -0700 (PDT)
+X-Info: This message was accepted for relay by smtp03.mrf.mail.rcn.net as
+    the sender used SMTP authentication
+X-Trace: UmFuZG9tSVZS1MQn43DX+mF8g/trLv8mynH5s/LrEHehkhaZqH3TtcK5PDdI09YGwM0XUAYWOKM=
+Received: from eb-174121.od.nih.gov ([156.40.174.121]
+    helo=TOSHIBA-L8QYR7M) by smtp03.mrf.mail.rcn.net with asmtp (Exim 3.35 #6)
+    id 17joqW-0005wP-00 for fork@xent.com; Tue, 27 Aug 2002 18:30:00 -0400
+From: "John Evdemon" <jevdemon@acm.org>
+To: fork@spamassassin.taint.org
+MIME-Version: 1.0
+Subject: Re: DataPower announces XML-in-silicon
+Message-Id: <3D6BC527.28671.1437E0A@localhost>
+Priority: normal
+In-Reply-To: <5D5CC294-BA08-11D6-837F-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7BIT
+Content-Description: Mail message body
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 27 Aug 2002 18:29:59 -0400
+
+On 27 Aug 2002 at 15:00, Rohit Khare wrote:
+> 
+> DATAPOWER TECHNOLOGY ON Monday unveiled its network device
+> designed specifically to process XML data. Unlike competing
+> solutions that process XML data in software, DataPower's
+> device processes the data in hardware -- a technology
+> achievement that provides greater performance, according to
+> company officials.
+>
+Sarvega seems to have a similar product.  http://www.sarvega.com.
+

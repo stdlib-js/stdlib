@@ -1,0 +1,78 @@
+From rpm-list-admin@freshrpms.net  Tue Jul 30 22:25:47 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 491F24406D
+	for <jm@localhost>; Tue, 30 Jul 2002 17:25:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 22:25:47 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6ULHp218974 for
+    <jm-rpm@jmason.org>; Tue, 30 Jul 2002 22:17:52 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6UKs2808498; Tue, 30 Jul 2002 22:54:06
+    +0200
+Received: from kamakiriad.com (cable-b-36.sigecom.net [63.69.210.36]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6UKrY807458 for
+    <rpm-list@freshrpms.net>; Tue, 30 Jul 2002 22:53:34 +0200
+Received: from aquila.kamakiriad.local ([192.168.1.3]) by kamakiriad.com
+    (8.11.6/8.11.0) with SMTP id g6UKrCM03944; Tue, 30 Jul 2002 15:53:16 -0500
+From: Brian Fahrlander <kilroy@kamakiriad.com>
+To: rpm-zzzlist@freshrpms.net
+Cc: mangro@home.se
+Subject: Re: Installing RPM
+Message-Id: <20020730155311.183eb204.kilroy@kamakiriad.com>
+In-Reply-To: <FEEMLEDEFAFMCIAIMGPJGENPCCAA.mangro@home.se>
+References: <FEEMLEDEFAFMCIAIMGPJGENPCCAA.mangro@home.se>
+X-Mailer: Sylpheed version 0.8.1 (GTK+ 1.2.10; i386-redhat-linux)
+X-Message-Flag: : Shame on you!  You know Outlook is how viruses are spread!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 30 Jul 2002 15:53:11 -0500
+Date: Tue, 30 Jul 2002 15:53:11 -0500
+
+On Tue, 30 Jul 2002 22:22:24 +0200, "Manfred Grobosch" <mangro@home.se> wrote:
+
+> I would like to install RPM itself. I have tried to get the information by
+> visiting www.rpm.org <http://www.rpm.org>  and the related links they give
+> but they all seems to assume that RPM already is installed.
+> I have a firewall based on linux-2.2.20 (Smoothwall) for private use.
+> I would like to install the RPM package/program but there is no information
+> how to do this from scratch.
+> Found this site and hopefully some have the knowledge.
+
+    Well, if you have a Windows, SCO, or AIX box, (generally anything BUT Redhat Linux) that'd be the site I'd send you to, to get it installed.  I've been there for the same reason, under SCO.  Maybe you missed something?
+
+    What OS are you running, anyway?
+
+  
+------------------------------------------------------------------------
+Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+Evansville, IN                    My Voyage: http://www.CounterMoon.com
+ICQ  5119262
+------------------------------------------------------------------------
+I don't want to hear news from Isreal until the news contains the words
+"Bullet", "Brain", and "Arafat".
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

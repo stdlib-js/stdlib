@@ -1,0 +1,77 @@
+From ilug-admin@linux.ie  Thu Aug  1 17:52:19 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DB72E440F1
+	for <jm@localhost>; Thu,  1 Aug 2002 12:52:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 17:52:18 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71Gk3222538 for
+    <jm-ilug@jmason.org>; Thu, 1 Aug 2002 17:46:03 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA22153; Thu, 1 Aug 2002 17:44:12 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA22120 for <ilug@linux.ie>; Thu,
+    1 Aug 2002 17:44:07 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id RAA28091 for <ilug@linux.ie>; Thu,
+    1 Aug 2002 17:43:36 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g71GiKk19984 for ilug@linux.ie; Thu, 1 Aug 2002 17:44:20 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Thu, 1 Aug 2002 17:44:20 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Re: serial console question
+Message-Id: <20020801164420.GL5178@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ilug@linux.ie
+References: <17595.1028220063@iris.ie.baltimore.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+In-Reply-To: <17595.1028220063@iris.ie.baltimore.com>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Thu, Aug 01, 2002 at 05:41:03PM +0100, Paul Mc Auley mentioned:
+> On Thu, 1 Aug 2002 17:15:27 +0100 
+> | S+#_+Å± INET __+_: 
+> | S+#_+Å± Å°_°_ MÄ+Å+Å± _+Ä+ °+_<_++_.
+> | S+#_+Å± #+__+ S+#_+Å± #+Å + __+_: 
+> | IÅ+#+ _+°#+_ °Ä_ +#Å _+ -- NÄ+ _+#_+Å± SSL
+> 
+> |  So it looks like some sort of setting mismatch. Various places on the web
+> | say that cobalts are setup with 115200 8n1 serial ports, but someone could
+> | have changed it on this particular box.
+> 
+> |  Anyone care to guess what's up ?
+> 
+> One possible is that it's toggling the VTx00 alt character set. If 
+> that's the case, feeding ^O to the tty somehow (i.e. cat to the device) 
+> should flip it back.
+
+ Ah right. Seems OK now. I assume that could have happened if the terminal
+was in 9600 mode at first, getting wierd characters ?
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

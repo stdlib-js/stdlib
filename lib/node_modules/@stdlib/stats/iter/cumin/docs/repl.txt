@@ -1,0 +1,41 @@
+
+{{alias}}( iterator )
+    Returns an iterator which iteratively computes a cumulative minimum value.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 2.0, -5.0, 3.0, 5.0 ] );
+    > var it = {{alias}}( arr );
+    > var m = it.next().value
+    2.0
+    > m = it.next().value
+    -5.0
+    > m = it.next().value
+    -5.0
+    > m = it.next().value
+    -5.0
+
+    See Also
+    --------
+

@@ -1,0 +1,105 @@
+
+{{alias}}( N, alpha, x, strideX )
+    Scales a single-precision complex floating-point vector by a single-
+    precision complex floating-point constant.
+
+    The `N` and stride parameters determine how values from `x` are scaled by
+    `alpha`.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is less than or equal to `0`, the function returns `x` unchanged.
+
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: Complex64
+        Complex constant.
+
+    x: Complex64Array
+        Input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    Returns
+    -------
+    x: Complex64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 2.0 );
+    > {{alias}}( 2, alpha, x, 1 )
+    <Complex64Array>[ -3.0, 4.0, -5.0, 10.0 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > alpha = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 1.0 );
+    > {{alias}}( 2, alpha, x, 2 )
+    <Complex64Array>[ -1.0, 3.0, 3.0, 4.0, -1.0, 11.0 ]
+
+    // Using typed array views:
+    > var x0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var x1 = new {{alias:@stdlib/array/complex64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
+    > {{alias}}( 2, alpha, x1, 1 )
+    <Complex64Array>[ -2.0, 14.0, -2.0, 22.0 ]
+    > x0
+    <Complex64Array>[ 1.0, 2.0, -2.0, 14.0, -2.0, 22.0 ]
+
+
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX )
+    Scales a single-precision complex floating-point vector by a single-
+    precision complex floating-point constant using alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: Complex64
+        Complex constant.
+
+    x: Complex64Array
+        Input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    Returns
+    -------
+    x: Complex64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 2.0 );
+    > {{alias}}.ndarray( 2, alpha, x, 1, 0 )
+    <Complex64Array>[ -2.0, 6.0, -2.0, 14.0 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+    > alpha = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 2.0 );
+    > {{alias}}.ndarray( 2, alpha, x, 1, 2 )
+    <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, -7.0, 16.0, -9.0, 22.0 ]
+
+    See Also
+    --------
+

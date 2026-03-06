@@ -1,0 +1,61 @@
+
+{{alias}}( value[, level] )
+    Copy or deep clone a value to an arbitrary depth.
+
+    The implementation can handle circular references.
+
+    If a `Number`, `String`, or `Boolean` object is encountered, the value is
+    cloned as a primitive. This behavior is intentional.
+
+    For objects, the implementation only copies enumerable keys and their
+    associated property descriptors.
+
+    The implementation only checks whether basic `Objects`, `Arrays`, and class
+    instances are extensible, sealed, and/or frozen.
+
+    Functions are not cloned; their reference is copied.
+
+    The implementation supports custom error types which are `Error` instances
+    (e.g., ES2015 subclasses).
+
+    Support for copying class instances is inherently fragile. Any instances
+    with privileged access to variables (e.g., within closures) cannot be
+    cloned. This stated, basic copying of class instances is supported. Provided
+    an environment which supports ES5, the implementation is greedy and performs
+    a deep clone of any arbitrary class instance and its properties. The
+    implementation assumes that the concept of `level` applies only to the class
+    instance reference, but not to its internal state.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    level: integer (optional)
+         Copy depth. Default: Infinity.
+
+    Returns
+    -------
+    out: any
+        Value copy.
+
+    Examples
+    --------
+    > var value = [ { 'a': 1, 'b': true, 'c': [ 1, 2, 3 ] } ];
+    > var out = {{alias}}( value )
+    [ { 'a': 1, 'b': true, 'c': [ 1, 2, 3 ] } ]
+    > var bool = ( value[ 0 ].c === out[ 0 ].c )
+    false
+
+    // Set the `level` option to limit the copy depth:
+    > value = [ { 'a': 1, 'b': true, 'c': [ 1, 2, 3 ] } ];
+    > out = {{alias}}( value, 1 );
+    > bool = ( value[ 0 ] === out[ 0 ] )
+    true
+    > bool = ( value[ 0 ].c === out[ 0 ].c )
+    true
+
+
+    See Also
+    --------
+

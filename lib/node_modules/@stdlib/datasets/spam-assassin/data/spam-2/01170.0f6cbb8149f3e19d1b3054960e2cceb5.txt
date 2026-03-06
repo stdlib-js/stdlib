@@ -1,0 +1,79 @@
+From fork-admin@xent.com  Mon Jul 29 20:27:37 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DB6D4440F2
+	for <jm@localhost>; Mon, 29 Jul 2002 15:27:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 20:27:31 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6TJOGq15204 for <jm@jmason.org>;
+    Mon, 29 Jul 2002 20:24:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1B0892940D8; Mon, 29 Jul 2002 12:22:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from 210.99.184.3 (unknown [210.100.202.125]) by xent.com
+    (Postfix) with SMTP id 625112940D7 for <fork@xent.com>; Mon,
+    29 Jul 2002 12:21:36 -0700 (PDT)
+Received: from 82.60.152.190 ([82.60.152.190]) by smtp4.cyberec.com with
+    QMQP; Jul, 29 2002 11:53:58 AM +0700
+Received: from ssymail.ssy.co.kr ([115.212.44.160]) by hd.regsoft.net with
+    asmtp; Jul, 29 2002 11:21:11 AM -0100
+Received: from 184.244.108.80 ([184.244.108.80]) by rly-xr02.mx.aol.com
+    with SMTP; Jul, 29 2002 9:53:09 AM -0300
+Received: from [14.42.188.81] by sydint1.microthin.com.au with asmtp;
+    Jul, 29 2002 8:56:46 AM -0100
+From: Paul Starsky <tfumlmprospect_111815@hotpop.com>
+To: fork@spamassassin.taint.org
+Cc: 
+Subject: Weekly Stock Report vjf
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+X-Mailer: AOL 7.0 for Windows US sub 118
+Message-Id: <20020729192136.625112940D7@xent.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 29 Jul 2002 12:21:13 -0700
+
+GAMING ADVISOR  
+
+NEWS July 16, 2002   i2corp Enters into Research and Development Agreement with Nevada Gaming Equipment Supplier For Live Remote Bingo.      
+ 
+The general feeling of the Top Internet Lawyers and Analysts is that "online gambling and sports betting is here to stay.” Attempts at trying to stop it would be largely ineffective! Banning Internet gambling and sports betting presents technical and legal problems that Governments are ill equipped to enforce. 
+
+What’s more, there are NO competitors for the Company’s method or technology for remote wagering. i2corp is the Only Company in the World that can legally license its method and technology for remote wagering. i2corp is currently negotiating with
+Major Casinos Globally.    
+ 
+Michael Pollock of the Pollock Gaming Resource Group (PRRG) has issued a report studying the effects of live wagering from remote locations. “ The study concludes that live wagering from remote locations does more than create a new source of revenue for sponsoring casinos. Additionally, it creates a marketing opportunity, a means to find and cultivate thousands of new customers who can be encouraged to become on-site patrons.” A copy of the full report in pdf format can be downloaded at http://www.gamingobserver.com/.
+ 
+i2corp is the holding company for Home Gambling Network, Inc. HGN holds U.S. Patent 5,800,268, which covers remote wagering on live games and events with electronic financial transactions. The Patent is comprised of three primary actions: the gambling is live; the player is remote and physically away from the actual game or event; and the winnings and losses are transacted electronically in real time. They include, but are not limited to, horse racing, soccer, bingo, poker, roulette and many other Las Vegas Casino Games. 
+
+FACT: Currently there is an overwhelming opinion that remote wagering in real-time will become one of the most profitable/prolific industries worldwide. i2corp recently won judgment against giant UUNET a subsidiary of MCI/WorldCom in a U.S. Federal Court for Patent infringement. Just another compelling reason why i2corp has orphaned their competition! Therefore we conclude i2corp’s common stock to be overlooked and undervalued! 
+
+RECOMMENDATION: STRONG BUY
+
+     i2corp   
+OTCBB Symbol                  (ITOO)
+Recent Price     	          .05 - .08
+52-Week Hi-Lo 	          .05 - .48
+Short Term Target Price:     .60
+
+This news release contains forward-looking statements as defined by the Private Securities Litigation Reform Act of 1995. Forward-looking statements include statements concerning plans, objectives, goals, strategies, future events or performance and underlying assumptions, and all statements that are other than statements of historical facts. These statements are subject to uncertainties and risks including, but not limited to, product and service demand and acceptance, changes in technology, economic conditions, the impact of competition and pricing, government regulation, and other risks defined in this document. These cautionary statements expressly qualify all such forward-looking statements made by or on behalf of Gaming Advisor. In addition, Gaming Advisor disclaims any obligation to update any forward-looking statements to reflect events or circumstances after the date hereof. The information herein has been obtained from reputable sources and therefore we assume its v
+ alidity. Gaming Advisor has been c
+ompensated $5,000 for the dissemination of this information and may at anytime buy or sell the securities of i2corp’s common stock.
+
+nywguempturgwthionjpsqdw
+http://xent.com/mailman/listinfo/fork
+
+

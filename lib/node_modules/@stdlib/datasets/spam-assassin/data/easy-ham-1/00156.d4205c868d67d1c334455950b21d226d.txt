@@ -1,0 +1,130 @@
+From sentto-2242572-56011-1034075737-zzzz=spamassassin.taint.org@returns.groups.yahoo.com  Tue Oct  8 12:27:25 2002
+Return-Path: <sentto-2242572-56011-1034075737-zzzz=spamassassin.taint.org@returns.groups.yahoo.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 3DBE916F17
+	for <zzzz@localhost>; Tue,  8 Oct 2002 12:27:20 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 12:27:20 +0100 (IST)
+Received: from n18.grp.scd.yahoo.com (n18.grp.scd.yahoo.com
+    [66.218.66.73]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g98BEuK12758 for <zzzz@spamassassin.taint.org>; Tue, 8 Oct 2002 12:14:56 +0100
+X-Egroups-Return: sentto-2242572-56011-1034075737-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.200] by n18.grp.scd.yahoo.com with NNFMP;
+    08 Oct 2002 11:15:37 -0000
+X-Sender: timc@2ubh.com
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_2_2_0); 8 Oct 2002 11:15:37 -0000
+Received: (qmail 58250 invoked from network); 8 Oct 2002 11:15:36 -0000
+Received: from unknown (66.218.66.217) by m8.grp.scd.yahoo.com with QMQP;
+    8 Oct 2002 11:15:36 -0000
+Received: from unknown (HELO rhenium.btinternet.com) (194.73.73.93) by
+    mta2.grp.scd.yahoo.com with SMTP; 8 Oct 2002 11:15:36 -0000
+Received: from host217-35-11-51.in-addr.btopenworld.com ([217.35.11.51])
+    by rhenium.btinternet.com with esmtp (Exim 3.22 #8) id 17ysKt-00048e-00
+    for forteana@yahoogroups.com; Tue, 08 Oct 2002 12:15:35 +0100
+X-Mailer: Microsoft Outlook Express Macintosh Edition - 4.5 (0410)
+To: zzzzteana <zzzzteana@yahoogroups.com>
+X-Priority: 3
+Message-Id: <E17ysKt-00048e-00@rhenium.btinternet.com>
+From: "Tim Chapman" <timc@2ubh.com>
+X-Yahoo-Profile: tim2ubh
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Tue, 08 Oct 2002 12:14:41 +0100
+Subject: [zzzzteana] Bashing the bishop
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+http://www.guardian.co.uk/religion/Story/0,2763,806744,00.html
+
+Evangelicals' threat to new archbishop
+
+Direct action threat over liberal views on sexuality
+
+Stephen Bates, religious affairs correspondent
+Tuesday October 8, 2002
+The Guardian
+
+Evangelical fundamentalists last night stepped up their campaign to oust
+Rowan Williams, the incoming Archbishop of Canterbury, before he even takes
+up his post, by threatening to take "direct action" against him.
+The council of the Church Society, the Church of England's oldest
+evangelical body, joined a younger evangelical pressure group called Reform,
+which is also opposed to Dr Williams, in calling on him to recant his
+supposedly liberal views on sexuality or stand down.
+Following an emergency meeting, the 167-year-old society, whose leaders met
+the archbishop last week, proclaimed their continued opposition to his
+appointment and called on all Anglicans to spurn him.
+The move is the latest stage of an increasingly aggressive attempt to
+destabilise the new archbishop, whose leftwing political views are regarded
+with deep suspicion by the conservative fringes of the evangelical movement.
+Some evangelicals object to Dr Williams's acknowledgement that he has
+ordained a gay priest, something many bishops have done, and that those who
+have sex outside marriage need not necessarily be spurned. The new
+archbishop has repeatedly assured them that he respects the canons of the
+church.
+Nevertheless, the society said: "It is clear that he prefers his private
+judgment to the voice of scripture, to the voice of tradition and to the
+common mind of the church. As such he can only be a focus of disunity.
+"The council... called upon loyal Anglicans to pray specifically that Rowan
+Williams would see the error in his teaching, change his views or stand
+down," it said.
+The society claimed to have drawn up an "action plan," including calling on
+bishops and primates of the 70 million worldwide Anglican communion, of
+which archbishops of Canterbury are the leaders, to distance themselves from
+Dr Williams's doctrinal and ethical position. It promised it would be
+"taking steps towards appropriate direct action".
+It added that Dr Williams remained on the editorial board of a journal
+called Theology and Sexuality which, six months ago, published articles
+allegedly commending homosexual behaviour.
+Despite its claim, the society does not represent the common mind of the
+church. Dr Williams, currently Archbishop of Wales, was chosen by the crown
+appointments commission of church members, including evangelicals, and his
+appointment was endorsed by the prime minister and the Queen.
+He is due to succeed George Carey, who retires this month, and will be
+formally enthroned at Canterbury cathedral in February.
+Asked what form direct action might take, the Rev George Curry, the
+society's chairman, said: "Watch this space." Presumably it could involve a
+small minority of parishes repudiating the new archbishop and seeking
+alternative oversight or even demonstrations at services where Dr Williams
+is present.
+Church of England bishops, who have hitherto largely kept their heads down
+during the row, are meeting next week to discuss their response to the
+evangelical extremists' challenge, which appears to have grown in the
+absence of a robust rebuttal.
+A letter by senior theologians in today's Guardian, however, repudiates the
+evangelicals' tactics, calling them unseemly and contrary to biblical
+teaching.
+On the BBC's Thought for the Day yesterday, Angela Tilby, vice-principal of
+Westcott House, Cambridge, accused Dr Williams's opponents of presumption
+and blackmail. "It is in fact a thoroughly aggressive way to behave. It is
+attempting to force an issue by emotional violence... manipulating to get
+your way is often preferable to painstaking negotiation," she said.
+Last week, Dr Williams said he was deeply saddened. "Matters of sexuality
+should not have the priority or centrality that Reform and the Church
+Society have tried to give them. The archbishop cannot withdraw his
+appointment since so many, including evangelicals, have urged him to take
+the post... the archbishop believes it to be his duty under God."
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+Sell a Home with Ease!
+http://us.click.yahoo.com/SrPZMC/kTmEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

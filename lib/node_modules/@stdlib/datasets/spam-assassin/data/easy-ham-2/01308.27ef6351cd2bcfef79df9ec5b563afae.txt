@@ -1,0 +1,92 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Jul 24 02:03:22 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 64164440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 21:03:22 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 02:03:22 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6O14Z408346 for <jm-sa@jmason.org>; Wed, 24 Jul 2002 02:04:35 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XAWU-000512-00; Tue,
+    23 Jul 2002 18:01:02 -0700
+Received: from willow.seitz.com ([146.145.147.140]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17XAVl-0002yc-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Tue, 23 Jul 2002 18:00:17 -0700
+Received: from willow.seitz.com (ross@localhost [127.0.0.1]) by
+    willow.seitz.com (8.12.3/8.12.3/Debian -4) with ESMTP id g6O108q0024176
+    (version=TLSv1/SSLv3 cipher=EDH-RSA-DES-CBC3-SHA bits=168 verify=FAIL);
+    Tue, 23 Jul 2002 21:00:09 -0400
+Received: (from ross@localhost) by willow.seitz.com (8.12.3/8.12.3/Debian
+    -4) id g6O108Mu024174; Tue, 23 Jul 2002 21:00:08 -0400
+From: Ross Vandegrift <ross@willow.seitz.com>
+To: rODbegbie <rOD@arsecandle.org>
+Cc: Matt Kettler <mkettler@evi-inc.com>,
+	spamassassin-talk@lists.sourceforge.net
+Subject: Re: [SAtalk] Re: [SAdev] Scoring Yahoo Ads
+Message-Id: <20020724010008.GA24106@willow.seitz.com>
+References: <20020723101858.406DD440CC@phobos.labs.netnoteinc.com>
+    <3D3D820A.5020407@perkel.com>
+    <5.1.0.14.0.20020723143834.02564840@192.168.50.2>
+    <026401c23281$359c4940$b554a8c0@RAGING>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <026401c23281$359c4940$b554a8c0@RAGING>
+User-Agent: Mutt/1.3.28i
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Tue, 23 Jul 2002 21:00:08 -0400
+Date: Tue, 23 Jul 2002 21:00:08 -0400
+
+On Tue, Jul 23, 2002 at 03:43:24PM -0400, rODbegbie wrote:
+> > It's quite clear that most of this list does not consider
+> > all advertisement to be spam, particularly when attached to a valid
+> > personal email by a third-party service.
+> 
+> Cool.  So we're all in agreement then.  Except for Marc.
+
+So what brilliant metric do you have in mind to measure unsolicited vs.
+solicited commercial email?
+
+I know I've registered for many commercial lists that send material that
+really reads like spam.  Moreover, spammers will be able to circumvent
+SA if they make spam look like this SCE.  This kind of convergence of the
+two.... well, it stinks.  We can kill SCE, or we can cripple
+identification of UCE.
+
+Obviously an interim solution is to whitelist, but long term is probably
+harder.  What kind of SCE, like MSDN newsletters, product updates, etc
+is in the corpus for the GA?  Maybe seeding the corpus with a bigger set
+of these type of mails will have some interesting/useful results.
+
+Ross Vandegrift
+ross@willow.seitz.com
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

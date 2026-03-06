@@ -1,0 +1,90 @@
+From rpm-list-admin@freshrpms.net  Thu Jul 25 14:37:11 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0FEF7440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 09:37:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 14:37:11 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6PDdA404314 for
+    <jm-rpm@jmason.org>; Thu, 25 Jul 2002 14:39:11 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6PDX2j31415; Thu, 25 Jul 2002 15:33:06
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6PDWDj31314 for
+    <rpm-list@freshrpms.net>; Thu, 25 Jul 2002 15:32:13 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Gstreamer update
+Message-Id: <20020725152505.75bc249e.matthias@egwn.net>
+In-Reply-To: <20020725065233.6ec791a8.kilroy@kamakiriad.com>
+References: <20020725065233.6ec791a8.kilroy@kamakiriad.com>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.0claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 25 Jul 2002 15:25:05 +0200
+Date: Thu, 25 Jul 2002 15:25:05 +0200
+
+Once upon a time, Brian wrote :
+
+> 
+>     More information on that slick "gstreamer-universe" thing.
+> 
+>     Go to this page: http://gstreamer.net/releases/redhat
+> 
+>     They seem to have declared a a package called "gstreamer-universe" as
+>     a collection of files.  This is brilliant; what we need to do is get
+>     someone with a Gnome2-universe and we'll be set, aye?  :)
+> 
+>     Isn't that a cool idea?
+
+This is called "pseudo-packages" or "meta-packages" and Debian has been
+using them for ages. I think Mandrake also makes these kind of empty
+packages.
+
+Anyway, their use has been discussed here a while back, and personally
+although I do agree that they can be useful at times, I don't really like
+them. For me it's more of an ugly "hack" than anything else, and I'd
+approve completely a system that would enable to install/remove entire
+categories of software... but not if achieved by building empty packages.
+
+Also, you can trivially do "apt-get install <metapackage>", but removing
+all that it installed is a bit less trivial, and could be implemented in a
+trivial and clean fashion if using some functionality meant to do this.
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

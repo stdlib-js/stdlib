@@ -1,0 +1,156 @@
+From exmh-workers-admin@redhat.com  Mon Aug 26 19:24:06 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8FC6844155
+	for <jm@localhost>; Mon, 26 Aug 2002 14:24:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 19:24:03 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7QIPeZ04341 for
+    <jm-exmh@jmason.org>; Mon, 26 Aug 2002 19:25:40 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 421593FA4E; Mon, 26 Aug 2002
+    14:25:52 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 202603EA03
+    for <exmh-workers@listman.redhat.com>; Mon, 26 Aug 2002 14:23:02 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7QIMwx05888 for exmh-workers@listman.redhat.com; Mon, 26 Aug 2002
+    14:22:58 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7QIMwY05884 for
+    <exmh-workers@redhat.com>; Mon, 26 Aug 2002 14:22:58 -0400
+Received: from turing-police.cc.vt.edu (turing-police.cc.vt.edu
+    [198.82.160.121]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g7QI85l24455 for <exmh-workers@redhat.com>; Mon, 26 Aug 2002 14:08:05
+    -0400
+Received: from turing-police.cc.vt.edu (localhost [127.0.0.1]) by
+    turing-police.cc.vt.edu (8.12.5/8.12.5) with ESMTP id g7QIMk7P005756;
+    Mon, 26 Aug 2002 14:22:46 -0400
+Message-Id: <200208261822.g7QIMk7P005756@turing-police.cc.vt.edu>
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4+dev
+To: Anders Eriksson <aeriksson@fastmail.fm>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: Exmh && speed
+In-Reply-To: Your message of
+    "Mon, 26 Aug 2002 20:00:36 +0200."
+    <20020826180041.913C73F05@milou.dyndns.org>
+From: Valdis.Kletnieks@vt.edu
+X-Url: http://black-ice.cc.vt.edu/~valdis/
+X-Face-Viewer: See ftp://cs.indiana.edu/pub/faces/index.html to decode picture
+X-Face: 34C9$Ewd2zeX+\!i1BA\j{ex+$/V'JBG#;3_noWWYPa"|,I#`R"{n@w>#:{)FXyiAS7(8t(
+    ^*w5O*!8O9YTe[r{e%7(yVRb|qxsRYw`7J!`AM}m_SHaj}f8eb@d^L>BrX7iO[<!v4-0bVIpaxF#-)
+    %9#a9h6JXI|T|8o6t\V?kGl]Q!1V]GtNliUtz:3},0"hkPeBuu%E,j(:\iOX-P,t7lRR#
+References: <20020826180041.913C73F05@milou.dyndns.org>
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_-1913987426P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Mon, 26 Aug 2002 14:22:46 -0400
+
+--==_Exmh_-1913987426P
+Content-Type: text/plain; charset=us-ascii
+
+On Mon, 26 Aug 2002 20:00:36 +0200, Anders Eriksson <aeriksson@fastmail.fm>  said:
+
+> I checked on a number of small messages in a big folder (~10000 
+> msgs). The delay of the Next button has increased considerably:
+> 
+> 2.5-release: 350-450 msec
+> latest cvs: 1000-12000 msec
+
+I'm not seeing a hit on 'next'. A quick "just pound on 'next' and watch the
+wall clock" test shows me able to go through 20 messages in under 5 seconds,
+so it's well under 250ms per switch, but I'm seeing a really piggy CPU spike
+(100% for a few seconds) in the 'flist' code.  Of course, it seems to be
+related to number-of-folders:
+
+[~] wc Mail/.folders
+    131     131    1122 Mail/.folders
+
+It's particularly annoying because things just hose-and-hang for 10 seconds, so
+when it hits, you have a long latency before what you're doing actually
+happens...
+
+14:08:54 Background_DoPeriodic flist
+14:08:54 Flist_FindSeqs reset=0
+14:08:54 FlistFindStart reset=0 active=0
+14:08:56 Reading /home/valdis/Mail/exmh/.mh_sequences
+14:08:56 exmh has 1 msgs in unseen
+14:08:56 1 unseen message in 1 folder
+14:08:56 {In FlagInner up iconup labelup}
+14:08:56 {Setting flag glyph to iconup}
+14:08:56 {Set flag state to up}
+14:08:58 Reading /home/valdis/Mail/list-spams/.mh_sequences
+14:08:58 list-spams has 1 msgs in unseen
+14:08:58 2 unseen messages in 2 folders
+14:08:58 {In FlagInner up iconup labelup}
+14:09:02 Reading /home/valdis/Mail/trash/.mh_sequences
+14:09:02 trash has 2 msgs in pseq
+14:09:03 /home/valdis/Mail/xemacs/7508 not found
+14:09:03 /home/valdis/Mail/xemacs/7507 not found
+14:09:03 /home/valdis/Mail/xemacs/7508 not found
+14:09:03 /home/valdis/Mail/xemacs/7507 not found
+14:09:03 {pseq: 7506-7508 => 7506}
+14:09:03 Writing /home/valdis/Mail/xemacs/.mh_sequences
+14:09:03 xemacs has 1 msgs in pseq
+14:09:03 Flist_Done
+
+And it takes a hit even if there's no new mail:
+
+14:11:03 Background_DoPeriodic flist
+14:11:03 Flist_FindSeqs reset=0
+14:11:03 FlistFindStart reset=0 active=0
+14:11:12 Flist_Done
+14:11:12 Flist_FindSeqs end {9018315 microseconds per iteration}
+
+I'm perfectly willing to can-opener that code and see where the CPU is
+going, but only if nobody is slapping their forehead and mumbling about
+a brown-paper-bag bug... ;)
+-- 
+				Valdis Kletnieks
+				Computer Systems Senior Engineer
+				Virginia Tech
+
+
+--==_Exmh_-1913987426P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+Comment: Exmh version 2.5 07/13/2001
+
+iD8DBQE9anH1cC3lWbTT17ARAvzuAKDShPISux8PrLitv4WIzUiCxfj60gCgvEPy
+QnWKrjGimFVroJcIHICt2e4=
+=T3wR
+-----END PGP SIGNATURE-----
+
+--==_Exmh_-1913987426P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

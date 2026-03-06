@@ -1,0 +1,79 @@
+From fork-admin@xent.com  Thu Jul 25 11:08:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A0BB0440D8
+	for <jm@localhost>; Thu, 25 Jul 2002 06:07:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:07:55 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OIsc401600 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 19:54:38 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id F404C29414A; Wed, 24 Jul 2002 11:53:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from dream.darwin.nasa.gov (betlik.darwin.nasa.gov
+    [198.123.160.11]) by xent.com (Postfix) with ESMTP id 12A6C29414A for
+    <fork@xent.com>; Wed, 24 Jul 2002 11:52:23 -0700 (PDT)
+Received: from cse.ucsc.edu (paperweight.darwin.nasa.gov [198.123.160.27])
+    by dream.darwin.nasa.gov ( -- Info omitted by ASANI Solutions,
+    LLC.) with ESMTP id g6OIqMg06645 for <fork@xent.com>; Wed, 24 Jul 2002
+    11:52:22 -0700 (PDT)
+Message-Id: <3D3EF738.3050704@cse.ucsc.edu>
+From: Elias Sinderson <elias@cse.ucsc.edu>
+Reply-To: fork@spamassassin.taint.org
+User-Agent: Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:1.0.0) Gecko/20020611
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Subject: Re: [Baseline] Raising chickens the high-tech way
+References: <135.11be3f63.2a7000bc@aol.com>
+    <m3fzy9yn5n.fsf@localhost.localdomain>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 11:51:36 -0700
+
+Sorry, Karl, your confusing things. Thos is saying that selective 
+breeding should be counted as genetic engineering, whereas you are 
+extending his definition to include the attration that your parents felt...
+
+Unless your parents were selectively bred like livestock to produce you, 
+I don't think you can make that case...  :-)
+
+Elias
+
+
+Karl Anderson wrote:
+
+>ThosStew@aol.com writes:
+>
+>>Of course was genetic engineering. It used the fundamental mechanism of 
+>>genetics (inheritance of traits), and not randomly, but 
+>>intentionally--breeding for long fur, fat hams, whatever. The degree to which 
+>>the engineers--farmers, breeders--understood exactly how the mehcanism works 
+>>is only marginally relevant to the question of whether it was engineering. 
+>>    
+>>
+>
+>Naw, I still disagree, again because if I'm going to be so loose
+>with the definitions, then I'd have to say that I myself am a
+>genetically engineered organism.
+>
+
+
+http://xent.com/mailman/listinfo/fork
+
+

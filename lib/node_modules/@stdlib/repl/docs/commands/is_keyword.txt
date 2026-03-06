@@ -1,0 +1,26 @@
+
+isKeyword( keyword )
+    Returns a boolean indicating whether a string is a reserved keyword in the
+    REPL environment.
+
+    Parameters
+    ----------
+    keyword: string
+        Keyword to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a string is a reserved keyword.
+
+    Examples
+    --------
+    > isKeyword( 'Float64Array' )
+    true
+    > isKeyword( 'beep_boop_bop_bip_foo_bar' )
+    false
+
+    See Also
+    --------
+    help, info
+

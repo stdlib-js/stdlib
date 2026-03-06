@@ -1,0 +1,78 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 29 11:24:20 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B0F1D4411C
+	for <jm@localhost>; Mon, 29 Jul 2002 06:22:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:22:36 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6RAEQi18903 for
+    <jm-rpm@JMASON.ORG>; Sat, 27 Jul 2002 11:14:26 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id DAA15108 for <jm-rpm@jmason.org>;
+    Sat, 27 Jul 2002 03:32:03 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6R2U2j12771; Sat, 27 Jul 2002 04:30:03
+    +0200
+Received: from bob.dudex.net (dsl092-157-004.wdc1.dsl.speakeasy.net
+    [66.92.157.4]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6R2Sjj09313
+    for <rpm-list@freshrpms.net>; Sat, 27 Jul 2002 04:28:46 +0200
+Received: from [66.92.157.3] (helo=www.dudex.net) by bob.dudex.net with
+    esmtp (Exim 3.35 #1) id 17YHLZ-0003f6-00 for rpm-list@freshrpms.net;
+    Fri, 26 Jul 2002 22:30:21 -0400
+X-Originating-Ip: [4.64.220.2]
+From: "" Angles " Puglisi" <angles@aminvestments.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Gstreamer update
+Message-Id: <20020726.tRx.98989200@www.dudex.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+X-Mailer: AngleMail for phpGroupWare (http://www.phpgroupware.org) v
+    0.9.14.000
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sat, 27 Jul 2002 02:32:27 +0000
+Date: Sat, 27 Jul 2002 02:32:27 +0000
+
+Lance (lance_tt@bellsouth.net) wrote*:
+>
+>I really liked Ximian (back then, Helix ?) at first but, to me, Red
+>Hat's GNOME, released with 7.3 seems much more pretty and up-to-date.
+>Could this be because of inclusion of gtk2 in RH 7.3?
+
+Not many apps actually use gtk2 yet. If they do, it's obvious because it is a
+different tool kit. With gnomehide, I ported a lot of gtk1.2 themes to gtk2,
+because they are rarely compatible. Those themes are on dudex.net/rpms/ but it
+does not matter unless you have gnome2.
+
+In gnomehide, the apps that actually use gtk2 are Nautilus, gedit, some of the
+"utility" apps, like dictionary, calcultor, the settings applets, and of
+course the gnome panels and menus.
+
+--
+That's "angle" as in geometry.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

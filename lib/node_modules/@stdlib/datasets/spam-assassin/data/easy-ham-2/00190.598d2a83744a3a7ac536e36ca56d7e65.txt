@@ -1,0 +1,88 @@
+From ilug-admin@linux.ie  Wed Jul 31 17:37:40 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1E2CE440A8
+	for <jm@localhost>; Wed, 31 Jul 2002 12:37:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 17:37:39 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VGcF201249 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 17:38:15 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA17034; Wed, 31 Jul 2002 17:36:00 +0100
+Received: from linux.local ([195.218.108.65]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA16990 for <ilug@linux.ie>; Wed,
+    31 Jul 2002 17:35:39 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.65] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6VFxhX09665 for
+    <ilug@linux.ie>; Wed, 31 Jul 2002 16:59:43 +0100
+Message-Id: <200207311559.g6VFxhX09665@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] Piping to multiple processes (which might die)?
+In-Reply-To: Message from Ronan Cunniffe <ronan@cunniffe.net> of
+    "Wed, 31 Jul 2002 15:13:23 BST."
+    <1028124803.3d47f0834c261@webmail.gameshrine.com>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <9662.1028131183.1@linux.local>
+Date: Wed, 31 Jul 2002 16:59:43 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    RAA16990
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Wed, 31 Jul 2002 15:13:23 +0100
+  | From: Ronan Cunniffe <ronan@cunniffe.net>
+  | 
+  | Um, my test was to tee to a fifo I didn't read from... resulting
+  | in the other reader hanging around forever.... not realising that
+  | never-opened-for-reading and opened-and-later-closed might be
+  | different.
+
+ ah!  yes!  this is one of those gotchas everyone stumbles
+ over.  the writer of a never-opened-for-reading pipe will
+ quickly block (as soon as the pipe's limited buffer fills
+ up).  but the writer of opened-and-later-closed pipe gets
+ an EPIPE error (and the usually-terminal SIGPIPE signal).
+
+ the typical stumble is someone creates an anonymous pipe
+ with pipe(2), but forgets to close(2) the reader's fd in
+ the writer-process (or visa-versa) .... and then wonders
+ why the real reader never sees an EOF and/or the writer
+ is never gets an EPIPE/SIGPIPE.  various FAQs and many
+ books probably discuss this topic in depth to the death.
+
+  |             Sensible behaviour has now been observed.
+
+ good!  and good luck.
+cheers,
+	-blf-
+--
+«How many surrealists does it take to    |  Brian Foster    Dublin, Ireland
+ change a lightbulb?  Three.  One calms  |  e-mail: blf@utvinternet.ie
+ the warthog, and two fill the bathtub   |  mobile: (+353 or 0)86 854 9268
+ with brightly-coloured machine tools.»  |  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

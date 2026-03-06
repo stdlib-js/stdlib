@@ -1,0 +1,54 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:28:06 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 11E0144150
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:13 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6RJ2Ki22537 for
+    <jm-ilug@jmason.org>; Sat, 27 Jul 2002 20:02:20 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA27813; Sat, 27 Jul 2002 19:58:19 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from odin.he.net (odin.he.net [216.218.181.2]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA27789 for <ilug@linux.ie>;
+    Sat, 27 Jul 2002 19:58:12 +0100
+Received: from renegade (c-24-127-153-207.we.client2.attbi.com
+    [24.127.153.207]) by odin.he.net (8.8.6/8.8.2) with SMTP id LAA32572 for
+    <ilug@linux.ie>; Sat, 27 Jul 2002 11:58:09 -0700
+From: "Paul O'Neil" <poneil@dbiassociates.net>
+To: "irish linux users group" <ilug@linux.ie>
+Date: Sat, 27 Jul 2002 11:58:10 -0700
+Message-Id: <NIEFJJMMNPJNOPIDJBFBEEONCDAA.poneil@dbiassociates.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Importance: Normal
+In-Reply-To: <20020727191542.A19057@ie.suberic.net>
+Subject: [ILUG] tcpd
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+If I want to use tcpd for ftp and only one user will ever ftp but I dont
+know what IP that user is because its dialup DHCP how do I setup tcpd for
+that user?
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

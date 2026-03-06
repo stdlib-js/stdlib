@@ -1,0 +1,384 @@
+From rym@insiq.us  Mon Sep  2 16:27:20 2002
+Return-Path: <rym@insiq.us>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id BF3AC44164
+	for <zzzz@localhost>; Mon,  2 Sep 2002 11:26:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 16:26:10 +0100 (IST)
+Received: from mail1.insuranceiq.com (host66.insuranceiq.com
+    [65.217.159.66] (may be forged)) by dogma.slashnull.org (8.11.6/8.11.6)
+    with ESMTP id g7UIEZZ03611 for <zzzz@jmason.org>; Fri, 30 Aug 2002 19:14:36
+    +0100
+Received: from mail pickup service by mail1.insuranceiq.com with Microsoft
+    SMTPSVC; Fri, 30 Aug 2002 14:15:32 -0400
+Subject: New Insurance Product - No Competition
+To: <zzzz@spamassassin.taint.org>
+Date: Fri, 30 Aug 2002 14:15:32 -0400
+From: "IQ - Reduce Your Mortgage" <rym@insiq.us>
+Message-Id: <1277d801c25051$3a882850$6b01a8c0@insuranceiq.com>
+X-Mailer: Microsoft CDO for Windows 2000
+MIME-Version: 1.0
+Thread-Index: AcJQPJm18kzG6uFfThquWge9vhxnnA==
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Content-Class: urn:content-classes:message
+X-Originalarrivaltime: 30 Aug 2002 18:15:32.0640 (UTC) FILETIME=[3AA72200:01C25051]
+Content-Type: multipart/alternative; boundary="----=_NextPart_000_109047_01C2501B.12AB23E0"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_109047_01C2501B.12AB23E0
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+
+ 300,000 homeowners can't be wrong!	
+ 	 
+ Agent opportunities now available
+ 	
+ 	
+ The Mortgage Savings Program(tm) -- Great New Product For Your Clients!
+
+  
+22 Year Old Company - Leader in Industry!	 
+? No Refinancing Fees	 ? No Payroll Deductions	 
+? No Credit Report	 ? No Paperwork To Do	 
+? No Group Requirements	 ? Generate Free Leads	 
+? Perpetual Commissions	 ? No Competition	 
+  
+Your Current Mortgage 	
+Dollar amount of your mortgage:	 $200,000	 
+Percentage rate of your mortgage:	 8.50%	 
+Your current monthly payment:	 $1,537.83	 
+Total Interest paid:	 $353,614	 
+Paid off in:	 30.0 Years	 
+With the Reduce-My-Mortgage plan 	
+Your bi-weekly payment:	 $768.92	 
+Total Interest paid:	 $250,142	 
+Total Interest savings:	 $103,471	 
+Paid off in:	 22.6 Years	 
+Number of payments saved:	 89	 
+Equivalent interest rate:	 6.40%	 
+ 	 
+Call today for more information!
+ 800-550-2666 ext. 122
+? or ?
+
+Please fill out the form below for more information	 
+Name:	  	 	
+E-mail:	  	
+Phone:	  	
+City:	  	State:	  	
+Timezone:	  Eastern     Central     Mountain     Pacific 	
+ 	  	 	   	
+ 
+ 
+ 
+We don't want anyone to receive our mailings who does not wish to. This
+is professional communication sent to insurance professionals. To be
+removed from this mailing list, DO NOT REPLY to this message. Instead,
+go here: http://www.Insurancemail.net <http://www.Insurancemail.net> 
+
+Legal Notice <http://www.insuranceiq.com/legal.htm>  
+
+------=_NextPart_000_109047_01C2501B.12AB23E0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<title>New Insurance Product - No Competition</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Diso-8859-1">
+</head>
+<body bgcolor=3D"#666666" text=3D"#000000">
+<font face=3D"Arial, Helvetica, sans-serif">=20
+<table width=3D"550" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center" bgcolor=3D"#FFFFFF" bordercolor=3D"#000000" =
+border=3D"1">
+  <tr>=20
+    <td>=20
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" bgcolor=3D"#ffffff">
+        <tr>=20
+          <td colspan=3D"2"><img =
+src=3D"http://iiq.us/images/rym/20020709-102a.gif" width=3D"550" =
+height=3D"45" alt=3D"300,000 homeowners can't be wrong!"></td>
+        </tr>
+        <tr>=20
+          <td><img src=3D"http://iiq.us/images/rym/20020709-103a.jpg" =
+width=3D"415" height=3D"247"></td>
+          <td>
+            <img src=3D"http://iiq.us/images/rym/20020709-104.jpg" =
+width=3D"135" height=3D"77"><br>
+            <img src=3D"http://iiq.us/images/rym/20020709-105.gif" =
+width=3D"135" height=3D"89" alt=3D"Agent opportunities now =
+available"><br>
+            <img src=3D"http://iiq.us/images/rym/20020709-106.jpg" =
+width=3D"135" height=3D"81">
+          </td>
+        </tr>
+        <tr>=20
+          <td colspan=3D"2"><img =
+src=3D"http://iiq.us/images/rym/20020709-107.gif" width=3D"550" =
+height=3D"7"></td>
+        </tr>
+        <tr>=20
+          <td colspan=3D"2"><img =
+src=3D"http://iiq.us/images/rym/20020709-2a.gif" width=3D"550" =
+height=3D"64" alt=3D"The Mortgage Savings Program(tm) -- Great New =
+Product For Your Clients!"></td>
+        </tr>
+        <tr align=3D"center">=20
+          <td colspan=3D"2">&nbsp;=20
+            <table width=3D"90%" border=3D"0" cellspacing=3D"2" =
+cellpadding=3D"2">
+              <tr align=3D"center">=20
+                <td colspan=3D"2"><b><font size=3D"4">22 Year Old =
+Company - Leader in Industry!</font></b></td>
+              </tr>
+							<tr>=20
+                <td width=3D"57%"><font size=3D"3">&#149;&nbsp;<b>No =
+Refinancing Fees</b></font></td>
+                <td width=3D"43%"><font size=3D"3">&#149;&nbsp;<b>No =
+Payroll Deductions</b></font></td>
+              </tr>
+              <tr>=20
+                <td width=3D"57%"><font size=3D"3">&#149;&nbsp;<b>No =
+Credit Report</b></font></td>
+                <td width=3D"43%"><font size=3D"3">&#149;&nbsp;<b>No =
+Paperwork To Do</b></font></td>
+              </tr>
+              <tr>=20
+                <td width=3D"57%"><font size=3D"3">&#149;&nbsp;<b>No =
+Group Requirements</b></font></td>
+                <td width=3D"43%"><font =
+size=3D"3">&#149;&nbsp;<b>Generate Free Leads</b></font></td>
+              </tr>
+              <tr>=20
+                <td width=3D"57%"><b>&#149;&nbsp;Perpetual =
+Commissions</b></td>
+                <td width=3D"43%"><b>&#149;&nbsp;No Competition</b></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr align=3D"center">=20
+          <td colspan=3D"2"> &nbsp;=20
+            <table border=3D"1" cellpadding=3D"5" width=3D"90%" =
+cellspacing=3D"0" bordercolor=3D"#000000" bgcolor=3D"333366">
+              <tr>=20
+                <td width=3D"100%" align=3D"center" colspan=3D"2" =
+bgcolor=3D"FFFF00">
+                  <b><font size=3D"3" color=3D"#000000">Your <font =
+color=3D"#FF0000">Current Mortgage</font></font></b>
+                </td>
+              </tr>
+              <tr>=20
+                <td width=3D"60%" align=3D"right"><font =
+color=3D"#ffffff" size=3D"2">Dollar amount of your mortgage:</font></td>
+                <td width=3D"40%"><b><font color=3D"#ffffff" =
+size=3D"2">$200,000</font></b></td>
+              </tr>
+              <tr>=20
+                <td width=3D"60%" align=3D"right"><font =
+color=3D"#ffffff" size=3D"2">Percentage rate of your =
+mortgage:</font></td>
+                <td width=3D"40%"><b><font color=3D"#ffffff" =
+size=3D"2">8.50%</font></b></td>
+              </tr>
+              <tr>=20
+                <td width=3D"60%" align=3D"right"><font =
+color=3D"#ffffff" size=3D"2">Your current monthly payment:</font></td>
+                <td width=3D"40%"><b><font color=3D"#ffffff" =
+size=3D"2">$1,537.83</font></b></td>
+              </tr>
+              <tr>=20
+                <td width=3D"60%" align=3D"right"><font =
+color=3D"#ffffff" size=3D"2">Total Interest paid:</font></td>
+                <td width=3D"40%"><b><font color=3D"#ffffff" =
+size=3D"2">$353,614</font></b></td>
+              </tr>
+              <tr>=20
+                <td width=3D"60%" align=3D"right"><font =
+color=3D"#ffffff" size=3D"2">Paid off in:</font></td>
+                <td width=3D"40%"><b><font color=3D"#ffffff" =
+size=3D"2">30.0 Years</font></b></td>
+              </tr>
+              <tr>=20
+                <td width=3D"100%" align=3D"center" colspan=3D"2" =
+bgcolor=3D"FFFF00">
+                  <font size=3D"3" color=3D"#000000"><b>With the <font =
+color=3D"#FF0000">Reduce-My-Mortgage</font> plan</b></font>
+                </td>
+              </tr>
+              <tr>=20
+                <td width=3D"60%" align=3D"right"><font =
+color=3D"#ffffff" size=3D"2">Your bi-weekly payment:</font></td>
+                <td width=3D"40%"><b><font color=3D"#ffffff" =
+size=3D"2">$768.92</font></b></td>
+              </tr>
+              <tr>=20
+                <td width=3D"60%" align=3D"right"><font =
+color=3D"#ffffff" size=3D"2">Total Interest paid:</font></td>
+                <td width=3D"40%"><b><font color=3D"#ffffff" =
+size=3D"2">$250,142</font></b></td>
+              </tr>
+              <tr>=20
+                <td width=3D"60%" align=3D"right"><font =
+color=3D"#80ff80" size=3D"2">Total Interest savings:</font></td>
+                <td width=3D"40%"><b><font color=3D"#80ff80" =
+size=3D"2">$103,471</font></b></td>
+              </tr>
+              <tr>=20
+                <td width=3D"60%" align=3D"right"><font =
+color=3D"#ffffff" size=3D"2">Paid off in:</font></td>
+                <td width=3D"40%"><b><font color=3D"#ffffff" =
+size=3D"2">22.6 Years</font></b></td>
+              </tr>
+              <tr>=20
+                <td width=3D"60%" align=3D"right"><font =
+color=3D"#ffffff" size=3D"2">Number of payments saved:</font></td>
+                <td width=3D"40%"><b><font color=3D"#ffffff" =
+size=3D"2">89</font></b></td>
+              </tr>
+              <tr>=20
+                <td width=3D"60%" align=3D"right"><font =
+color=3D"#ffffff" size=3D"2">Equivalent interest rate:</font></td>
+                <td width=3D"40%"><b><font color=3D"#ffffff" =
+size=3D"2">6.40%</font></b></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>=20
+          <td colspan=3D"2">&nbsp;</td>
+        </tr>
+        <tr align=3D"center">=20
+          <td colspan=3D"2"><font size=3D"2"><b>Call today for more =
+information!<br>
+            <img src=3D"http://iiq.us/images/rym/20020709-4a.gif" =
+width=3D"529" height=3D"87" alt=3D"800-550-2666 ext. 122">=20
+            <br>
+            &#151; or &#151;</b></font><br>
+            <table width=3D"95%" bgcolor=3D"#000000">
+              <tr>=20
+                <form method=3D"post" =
+action=3D"http://65.217.159.103/response/response.asp">
+                  <td>=20
+                    <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"2" align=3D"center" bgcolor=3D"#cccccc">
+                      <tr>=20
+                        <td colspan=3D"5" align=3D"center" =
+bgcolor=3D"#000066"><b><font size=3D"2" color=3D"#FFFFFF">Please fill =
+out the form below for more information</font></b></td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"17%" align=3D"right"><b><font =
+size=3D"2">Name:</font></b></td>
+                        <td colspan=3D"3">=20
+                          <input type=3D"text" name=3D"contactname" =
+size=3D"50">
+                        </td>
+                        <td rowspan=3D"6" valign=3D"middle" =
+align=3D"center" width=3D"12%"><img src=3D"http://iiq.us/images/q.gif" =
+width=3D"43" height=3D"50"></td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"17%" align=3D"right"><b><font =
+size=3D"2">E-mail:</font></b></td>
+                        <td colspan=3D"3">=20
+                          <input type=3D"text" name=3D"email" =
+size=3D"50">
+                        </td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"17%" align=3D"right"><b><font =
+size=3D"2">Phone:</font></b></td>
+                        <td colspan=3D"3">=20
+                          <input type=3D"text" name=3D"phone" =
+size=3D"50">
+                        </td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"17%" align=3D"right"><b><font =
+size=3D"2">City:</font></b></td>
+                        <td width=3D"28%">=20
+                          <input type=3D"text" name=3D"city" =
+size=3D"20">
+                        </td>
+                        <td width=3D"15%" align=3D"right"><b><font =
+size=3D"2">State:</font></b></td>
+                        <td width=3D"28%">=20
+                          <input type=3D"text" name=3D"state" =
+size=3D"2">
+                        </td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"17%" align=3D"right"><b><font =
+size=3D"2">Timezone:</font></b></td>
+                        <td colspan=3D"3"> <b><font size=3D"2">=20
+                          <input type=3D"checkbox" name=3D"checkbox" =
+value=3D"Eastern"> Eastern&nbsp;&nbsp;&nbsp;=20
+                          <input type=3D"checkbox" name=3D"checkbox" =
+value=3D"Central"> Central&nbsp;&nbsp;&nbsp;=20
+                          <input type=3D"checkbox" name=3D"checkbox" =
+value=3D"Mountain"> Mountain&nbsp;&nbsp;&nbsp;=20
+                          <input type=3D"checkbox" name=3D"checkbox" =
+value=3D"Pacific"> Pacific </font></b>
+                        </td>
+                      </tr>
+                      <tr>=20
+                        <td width=3D"17%" align=3D"right">&nbsp;</td>
+                        <td width=3D"28%">=20
+                          <input type=3D"submit" name=3D"btnsubmit" =
+value=3D"Submit">
+                        </td>
+                        <td width=3D"15%" align=3D"right">&nbsp;</td>
+                        <td width=3D"28%">=20
+                          <input type=3D"hidden" =
+name=3D"hdnRecipientTxt" value=3D"marketing@reduce-your-mortgage.com">
+                          <input type=3D"hidden" name=3D"hdnSubjectTxt" =
+value=3D"rym Ad Inquiry">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                <input type=3D'hidden' name=3D'SentTo' value=3D'304704'>
+</form>
+              </tr>
+            </table>
+            &nbsp;<br>
+            <img src=3D"http://iiq.us/images/rym/20020709-3a.gif" =
+width=3D"475" height=3D"93">=20
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>=20
+    <td width=3D"100%" bgcolor=3D"#cccccc" align=3D"center">=20
+      <p><font face=3D"Arial, Helvetica, sans-serif" size=3D"1"> We =
+don't want anyone=20
+        to receive our mailings who does not wish to. This is =
+professional communication=20
+        sent to insurance professionals. To be removed from this mailing =
+list,=20
+        <b>DO NOT REPLY</b> to this message. Instead, go here: <a =
+href=3D"http://www.Insurancemail.net">=20
+        http://www.Insurancemail.net</a></font></p>
+    </td>
+  </tr>
+</table>
+<center>
+  <font face=3D"Arial, Helvetica, sans-serif" size=3D"1"><a =
+href=3D"http://www.insuranceiq.com/legal.htm">Legal Notice</a></font>=20
+</center>
+</font>=20
+</body>
+</html>
+
+------=_NextPart_000_109047_01C2501B.12AB23E0--
+

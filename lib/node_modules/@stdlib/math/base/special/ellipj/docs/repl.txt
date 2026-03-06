@@ -1,0 +1,156 @@
+
+{{alias}}( u, m )
+    Computes the Jacobi elliptic functions sn, cn, and dn and Jacobi
+    amplitude am.
+
+    Parameters
+    ----------
+    u: number
+        Input value.
+
+    m: number
+        Modulus m, equivalent to k².
+
+    Returns
+    -------
+    out: Array
+        Jacobi elliptic functions and Jacobi amplitude.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.3, 0.5 )
+    [ ~0.293, ~0.956, ~0.978, ~0.298 ]
+    > v = {{alias}}( 0.0, 0.0 )
+    [ ~0.0, ~1.0, ~1.0, ~0.0 ]
+    > v = {{alias}}( Infinity, 1.0 )
+    [ ~1.0, ~0.0, ~0.0, ~1.571 ]
+    > v = {{alias}}( 0.0, -2.0)
+    [ ~0.0, ~1.0, ~1.0, NaN ]
+    > v = {{alias}}( NaN, NaN )
+    [ NaN, NaN, NaN, NaN ]
+
+
+{{alias}}.assign( u, m, out, stride, offset )
+    Computes the Jacobi elliptic functions sn, cn, and dn and Jacobi
+    amplitude am and assigns results to a provided output array.
+
+    Parameters
+    ----------
+    u: number
+        Input value.
+
+    m: number
+        Modulus m, equivalent to k².
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Jacobi elliptic functions and Jacobi amplitude.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float64}}( 4 );
+    > var v = {{alias}}.assign( 0.3, 0.5, out, 1, 0 )
+    <Float64Array>[ ~0.293, ~0.956, ~0.978, ~0.298 ]
+    > var bool = ( v === out )
+    true
+
+
+{{alias}}.sn( u, m )
+    Computes the Jacobi elliptic function sn.
+
+    Parameters
+    ----------
+    u: number
+        Input value.
+
+    m: number
+        Modulus m, equivalent to k².
+
+    Returns
+    -------
+    out: number
+        Jacobi elliptic function sn.
+
+    Examples
+    --------
+    > var v = {{alias}}.sn( 0.3, 0.5 )
+    ~0.293
+
+
+{{alias}}.cn( u, m )
+    Computes the Jacobi elliptic functions cn.
+
+    Parameters
+    ----------
+    u: number
+        Input value.
+
+    m: number
+        Modulus m, equivalent to k².
+
+    Returns
+    -------
+    out: number
+        Jacobi elliptic function cn.
+
+    Examples
+    --------
+    > var v = {{alias}}.cn( 0.3, 0.5 )
+    ~0.956
+
+
+{{alias}}.dn( u, m )
+    Computes the Jacobi elliptic function dn.
+
+    Parameters
+    ----------
+    u: number
+        Input value.
+
+    m: number
+        Modulus m, equivalent to k².
+
+    Returns
+    -------
+    out: number
+        Jacobi elliptic function dn.
+
+    Examples
+    --------
+    > var v = {{alias}}.dn( 0.3, 0.5 )
+    ~0.978
+
+
+{{alias}}.am( u, m )
+    Computes the Jacobi amplitude am.
+
+    Parameters
+    ----------
+    u: number
+        Input value.
+
+    m: number
+        Modulus m, equivalent to k².
+
+    Returns
+    -------
+    out: number
+        Jacobi elliptic function am.
+
+    Examples
+    --------
+    > var v = {{alias}}.am( 0.3, 0.5 )
+    ~0.298
+
+    See Also
+    --------

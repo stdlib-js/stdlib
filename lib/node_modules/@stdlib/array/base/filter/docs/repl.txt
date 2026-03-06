@@ -1,0 +1,46 @@
+
+{{alias}}( x, predicate[, thisArg] )
+    Returns a shallow copy of an array containing only those elements which pass
+    a test implemented by a predicate function.
+
+    The predicate function is provided three arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
+
+    If provided an array-like object having a `filter` method , the function
+    defers execution to that method and assumes that the method has the
+    following signature:
+
+      x.filter( predicate, thisArg )
+
+    If provided an array-like object without a `filter` method, the function
+    performs a linear scan and always returns a generic array.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > function f( v ) { return ( v > 0 ); };
+    > var x = [ 1, -2, -3, 4 ];
+    > var out = {{alias}}( x, f )
+    [ 1, 4 ]
+
+    See Also
+    --------
+

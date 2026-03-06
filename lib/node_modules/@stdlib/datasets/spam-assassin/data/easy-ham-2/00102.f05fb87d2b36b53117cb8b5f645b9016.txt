@@ -1,0 +1,120 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:13:09 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DA49F440CD
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:29 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:29 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG2WY17154 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:02:32 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id WAA25029 for <jm-ilug@jmason.org>;
+    Sat, 20 Jul 2002 22:26:28 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA03059; Sat, 20 Jul 2002 22:23:00 +0100
+Received: from matrix.netsoc.tcd.ie (netsoc.tcd.ie [134.226.83.50]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id WAA03026; Sat, 20 Jul 2002
+    22:22:51 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host netsoc.tcd.ie
+    [134.226.83.50] claimed to be matrix.netsoc.tcd.ie
+Received: by matrix.netsoc.tcd.ie (Postfix, from userid 1003) id
+    5F4D034448; Sat, 20 Jul 2002 22:22:50 +0100 (IST)
+From: Aidan Kehoe <kehoea@parhasard.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+Content-Transfer-Encoding: 8bit
+Message-Id: <15673.54442.292749.439246@gargle.gargle.HOWL>
+Date: Sat, 20 Jul 2002 22:22:50 +0100
+To: kevin lyda <kevin+dated+1027629217.152a82@linux.ie>
+Cc: Aidan Kehoe <kehoea@parhasard.net>,
+	ILUG Mailing List <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+In-Reply-To: <20020720213335.A27034@ie.suberic.net>
+References: <1027108120.3d386d180910a@webmail.gameshrine.com>
+    <15673.14143.879609.371088@gargle.gargle.HOWL>
+    <20020720184341.E23917@ie.suberic.net>
+    <15673.47359.781493.358686@gargle.gargle.HOWL>
+    <20020720213335.A27034@ie.suberic.net>
+Reply-To: Aidan Kehoe <kehoea@parhasard.net>
+X-Echelon-Distraction: eternity server SACLANTCEN MP5K-SD Chan M-14 Honduras
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+ Ar an 20ú lá de mí 7, scríobh kevin lyda :
+
+ > On Sat, Jul 20, 2002 at 08:24:47PM +0100, Aidan Kehoe wrote:
+ > >  Ar an 20ú lá de mí 7, scríobh kevin lyda :
+ > >  > actaully i think soft links were invented because you can't hard link
+ > >  > directories. 
+ > > But you could hard link directories, back when soft links were
+ > > being invented, AFAIK. 
+ > 
+ > that was before my time.  all unix systems i've used didn't allow hard
+ > links to directories, or if they did they were restricted to root.
+ > the reason why is because you could cause infinite loops in the kernel -
+ > usually a bad place for infinite loops.
+
+Yeah, thanks. I have been subscribed for more than a week, despite any
+naïveté I may be showing to you :-) . 
+
+ > >  > apparently some systems limited soft links to the same device but
+ > >  > gave up after a while.  
+ > > Why?
+ > 
+ > to make them consistent with hard links.
+
+So, they're the same as hard links, with the disadvantage that they
+break on deletion or moving, and they may take up slightly more disk
+space. Hmm.
+
+ > > A better way of doing it would be a) have global unique filesystem
+ > > identifiers for every FS created (such that the chance of two of them
+ > > clashing is miniscule; 64 bits creatively used would do it, I'd say),
+ > > and b) implement the target info for the soft link as a {FSID, inode}
+ > > pair; the OS can work out if the thing linked to is now on a different
+ > > mount point, or has been moved. (HFS fans, is that what's done? Or are
+ > > aliases implemented differently?)
+ > 
+ > let's call these super-soft-links.  ln -ss
+ > 
+ >     % ln -ss foo bar
+ >     % ls -i foo
+ >     111 foo
+ >     % mv floyd foo
+ >     % ls -i foo
+ >     222 foo
+ > 
+ > and now bar no longer points to foo.
+
+True. But "cat floyd > foo; rm floyd" preserves it. Much of a muchness
+...
+
+ > the fs would need to maintain a table of links going the other direction.
+ > so when the move command unlinks foo in the first example, it could
+ > check the table and mark that bar is now disconnected.  the same would
+ > be true for the second example - and even more important since bar points
+ > to floyd if no table is consulted.
+ > 
+ > and this all fails to handle nfs mounted file systems or filesystems
+ > that have dynamic inodes (the fat fs's and reiser lacks inodes i think).
+
+Hokay. 
+
+-- 
+I'm not a pheasant plucker / I'm a pheasant plucker's son.
+I'm just a'plucking pheasants / 'Til the pheasant plucker comes.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

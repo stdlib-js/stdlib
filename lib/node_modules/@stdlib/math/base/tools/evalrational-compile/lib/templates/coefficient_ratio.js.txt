@@ -1,0 +1,19 @@
+'use strict';
+
+// MAIN //
+
+/**
+* Evaluates a rational function.
+*
+* @private
+* @param {number} x - value at which to evaluate the rational function
+* @returns {number} evaluated rational function
+*/
+function evalrational() {
+	return {{ratio}};
+}
+
+
+// EXPORTS //
+
+module.exports = evalrational;

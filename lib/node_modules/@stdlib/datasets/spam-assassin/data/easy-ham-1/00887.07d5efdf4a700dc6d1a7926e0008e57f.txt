@@ -1,0 +1,69 @@
+From irregulars-admin@tb.tf  Sat Oct  5 12:38:48 2002
+Return-Path: <irregulars-admin@tb.tf>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 102BF16F16
+	for <jm@localhost>; Sat,  5 Oct 2002 12:38:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 12:38:48 +0100 (IST)
+Received: from web.tb.tf (route-64-131-126-36.telocity.com
+    [64.131.126.36]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g94JcjK05789 for <jm-irr@jmason.org>; Fri, 4 Oct 2002 20:38:46 +0100
+Received: from web.tb.tf (localhost.localdomain [127.0.0.1]) by web.tb.tf
+    (8.11.6/8.11.6) with ESMTP id g94Jm2I26430; Fri, 4 Oct 2002 15:48:03 -0400
+Received: from red.harvee.home (red [192.168.25.1] (may be forged)) by
+    web.tb.tf (8.11.6/8.11.6) with ESMTP id g94JlKI26420 for
+    <irregulars@tb.tf>; Fri, 4 Oct 2002 15:47:21 -0400
+Received: from texas.pobox.com (texas.pobox.com [64.49.223.111]) by
+    red.harvee.home (8.11.6/8.11.6) with ESMTP id g94JcLD11866 for
+    <irregulars@tb.tf>; Fri, 4 Oct 2002 15:38:22 -0400
+Received: from [192.168.0.4] (pc2-woki1-4-cust149.gfd.cable.ntl.com
+    [62.254.239.149]) by texas.pobox.com (Postfix) with ESMTP id 860AE4535A;
+    Fri,  4 Oct 2002 15:38:18 -0400 (EDT)
+User-Agent: Microsoft-Entourage/10.1.0.2006
+From: "David G.W. Birch" <dgw-lists@birches.org>
+To: <e$@vmeng.com>, <dcsb@ai.mit.edu>,
+	<cryptography@wasabisystems.com>, <mac_crypto@vmeng.com>,
+	<fork@xent.com>, <irregulars@tb.tf>
+Message-Id: <B9C3A923.4976%dgw-lists@birches.org>
+In-Reply-To: <p05111a5ab9c2875b09bf@[66.149.49.6]>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+Subject: [IRR] Re: The 3rd Annual Consult Hyperion Digital Identity Forum
+Sender: irregulars-admin@tb.tf
+Errors-To: irregulars-admin@tb.tf
+X-Beenthere: irregulars@tb.tf
+X-Mailman-Version: 2.0.6
+Precedence: bulk
+List-Help: <mailto:irregulars-request@tb.tf?subject=help>
+List-Post: <mailto:irregulars@tb.tf>
+List-Subscribe: <http://tb.tf/mailman/listinfo/irregulars>,
+    <mailto:irregulars-request@tb.tf?subject=subscribe>
+List-Id: New home of the TBTF Irregulars mailing list <irregulars.tb.tf>
+List-Unsubscribe: <http://tb.tf/mailman/listinfo/irregulars>,
+    <mailto:irregulars-request@tb.tf?subject=unsubscribe>
+List-Archive: <http://tb.tf/mailman/private/irregulars/>
+Date: Fri, 04 Oct 2002 20:22:59 +0100
+
+On 4/10/02 1:13 am, someone e-said:
+
+> The guy messed up his own URL. It should be
+> http://www.digitalidforum.com which redirects to
+> http://www.consult.hyperion.co.uk/digid3.html
+
+I didn't mess it up: I f*cked it up by not paying attention to a
+copy-and-paste from something else.
+
+Next time, I really will leave it to the PR guys.
+
+Best regards,
+Dave Birch.
+
+_______________________________________________
+Irregulars mailing list
+Irregulars@tb.tf
+http://tb.tf/mailman/listinfo/irregulars
+
+

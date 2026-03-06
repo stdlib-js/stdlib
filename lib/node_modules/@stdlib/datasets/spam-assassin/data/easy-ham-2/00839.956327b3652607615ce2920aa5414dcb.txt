@@ -1,0 +1,82 @@
+From fork-admin@xent.com  Wed Jul 24 00:16:08 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C9196440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 19:16:07 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 00:16:07 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NNGD402935 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 00:16:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4CC292940F6; Tue, 23 Jul 2002 16:02:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail-out2.apple.com (mail-out2.apple.com [17.254.0.51]) by
+    xent.com (Postfix) with ESMTP id 4D4492940F5 for <fork@xent.com>;
+    Tue, 23 Jul 2002 16:01:13 -0700 (PDT)
+Received: from mailgate1.apple.com (A17-128-100-225.apple.com
+    [17.128.100.225]) by mail-out2.apple.com (8.11.3/8.11.3) with ESMTP id
+    g6NNAKA20249 for <fork@xent.com>; Tue, 23 Jul 2002 16:10:20 -0700 (PDT)
+Received: from scv3.apple.com (scv3.apple.com) by mailgate1.apple.com
+    (Content Technologies SMTPRS 4.2.1) with ESMTP id
+    <T5c44a3d181118064e1438@mailgate1.apple.com>; Tue, 23 Jul 2002 16:09:37
+    -0700
+Received: from to0202a-dhcp108.apple.com (to0202a-dhcp108.apple.com
+    [17.212.22.236]) by scv3.apple.com (8.11.3/8.11.3) with ESMTP id
+    g6NNAGT01103; Tue, 23 Jul 2002 16:10:16 -0700 (PDT)
+Subject: Re: [Baseline] Raising chickens the high-tech way
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: fork@spamassassin.taint.org
+To: Luis Villa <louie@ximian.com>
+From: Bill Humphries <bill@whump.com>
+In-Reply-To: <1027464575.14880.191.camel@10-0-0-223.boston.ximian.com>
+Message-Id: <597AE620-9E91-11D6-93F3-003065F62CD6@whump.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 16:10:16 -0700
+
+On Tuesday, July 23, 2002, at 03:49 PM, Luis Villa wrote:
+
+> It's quite a bit more than natural selection; the times had a
+> fascinating article a few months back (possibly posted as bits here)
+> that note that one Holstein bull who died in the 70s is paternally
+> related to something like 40% of the world's cattle. That's way, way
+> more than natural selection, and (given the difficulty and expense of
+> isolating specific genes for size, industrial-living-ness, etc.) more
+> expansive than raw gene manipulation will be for some time.
+
+http://www.absglobal.com/
+
+They know bull semen, and the burger you ate at lunch may have had its 
+sire's contribution to its genetics purchased through them.
+
+My ex-wife worked in their lab for a year while I was in gradual school. 
+We had boxes of masking tape from ABS pre-printed with the names and 
+serial numbers of 'decomissioned' bulls.
+
+They are also known for the hideous puns on their sign just outside of 
+Madison on I90/94. But the puns haven't been any good since the secretary 
+who first wrote them retired.
+
+----
+Bill Humphries <bill@whump.com>
+http://www.whump.com/moreLikeThis/
+
+http://xent.com/mailman/listinfo/fork
+
+

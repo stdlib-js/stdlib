@@ -1,0 +1,27 @@
+
+{{alias}}( str )
+    Expands all contractions to their formal equivalents.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    Returns
+    -------
+    out: string
+        String with expanded contractions.
+
+    Examples
+    --------
+    > var str = 'I won\'t be able to get y\'all out of this one.';
+    > var out = {{alias}}( str )
+    'I will not be able to get you all out of this one.'
+
+    > str = 'It oughtn\'t to be my fault, because, you know, I didn\'t know';
+    > out = {{alias}}( str )
+    'It ought not to be my fault, because, you know, I did not know'
+
+    See Also
+    --------
+

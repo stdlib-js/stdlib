@@ -1,0 +1,37 @@
+From rssfeeds@jmason.org  Wed Oct  2 11:44:06 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8377216F03
+	for <jm@localhost>; Wed,  2 Oct 2002 11:44:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:44:06 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9280wK31693 for
+    <jm@jmason.org>; Wed, 2 Oct 2002 09:00:58 +0100
+Message-Id: <200210020800.g9280wK31693@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: International agreements
+Date: Wed, 02 Oct 2002 08:00:57 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85513638
+Date: Not supplied
+
+Eli the Bearded sez: 
+
+    Ever wanted to see an international agreement? There are an awful lot of 
+    them here, and the ones I looked at were surprizingly readable. I was 
+    looking for the Balfour Declaration, the thing I saw cited as the start of 
+    Israel recently. Suprizingly this document is only four paragraphs. The 
+    Oslo Accords (Israel/PLO agreement of 1993) is another thing much shorter 
+    than I had imagined.  
+
+Link[1] Discuss[2] (_Thanks, Eli!_)
+
+[1] http://www.yale.edu/lawweb/avalon/avalon.htm
+[2] http://www.quicktopic.com/boing/H/bYTBfpCnesw
+
+

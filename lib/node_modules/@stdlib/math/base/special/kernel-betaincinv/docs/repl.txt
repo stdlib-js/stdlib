@@ -1,0 +1,39 @@
+
+{{alias}}( a, b, p, q )
+    Computes the inverse of the lower incomplete beta function.
+
+    Probabilities `p` and `q` must satisfy `p = 1 - q`.
+
+    Parameters
+    ----------
+    a: number
+        First function parameter (a positive number).
+
+    b: number
+        Second function parameter (a positive number).
+
+    p: number
+        Probability.
+
+    q: number
+        Probability equal to `1-p`.
+
+    Returns
+    -------
+    out: Array
+        Two-element array holding function value `y` and `1-y`.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.0, 3.0, 0.2, 0.8 )
+    [ ~0.327, ~0.673 ]
+    > y = {{alias}}( 3.0, 3.0, 0.4, 0.6 )
+    [ ~0.446, ~0.554 ]
+    > y = {{alias}}( 1.0, 6.0, 0.4, 0.6 )
+    [ ~0.082, ~0.918 ]
+    > y = {{alias}}( 1.0, 6.0, 0.8, 0.2 )
+    [ ~0.235, ~0.765 ]
+
+    See Also
+    --------
+

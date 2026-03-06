@@ -1,0 +1,31 @@
+
+{{alias}}( value )
+    Tests if a value is generator object-like.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is generator object-like.
+
+    Examples
+    --------
+    > var obj = {
+    ...     'next': function noop() {},
+    ...     'return': function noop() {},
+    ...     'throw': function noop() {}
+    ... };
+    > var bool = {{alias}}( obj )
+    true
+    > bool = {{alias}}( {} )
+    false
+    > bool = {{alias}}( null )
+    false
+
+    See Also
+    --------
+

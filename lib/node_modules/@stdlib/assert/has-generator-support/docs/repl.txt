@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests whether an environment supports native generator functions.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment support generator functions.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

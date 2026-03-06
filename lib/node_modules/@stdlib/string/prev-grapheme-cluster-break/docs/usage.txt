@@ -1,0 +1,8 @@
+
+Usage: prev-grapheme-cluster-break [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --from index          Starting search position. Default: str.length-1.

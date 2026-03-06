@@ -1,0 +1,52 @@
+From fivestarpicks@netzero.com  Sun Sep 22 14:13:11 2002
+Return-Path: <fivestarpicks@netzero.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id D0B7A16F03
+	for <zzzz@localhost>; Sun, 22 Sep 2002 14:13:10 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Sun, 22 Sep 2002 14:13:10 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8M2uMC17924 for
+    <zzzz@jmason.org>; Sun, 22 Sep 2002 03:56:22 +0100
+Received: from 210.126.63.68 ([217.167.180.65]) by webnote.net
+    (8.9.3/8.9.3) with SMTP id DAA10727 for <zzzz@spamassassin.taint.org>;
+    Sun, 22 Sep 2002 03:56:47 +0100
+Message-Id: <200209220256.DAA10727@webnote.net>
+Received: from 34.57.158.148 ([34.57.158.148]) by rly-xr02.mx.aol.com with
+    local; Sep, 21 2002 9:36:31 PM +0400
+Received: from unknown (HELO rly-xw01.mx.aol.com) (96.213.243.25) by
+    n9.groups.yahoo.com with asmtp; Sep, 21 2002 8:46:25 PM +1200
+Received: from mx.rootsystems.net ([60.127.54.24]) by
+    smtp-server6.tampabay.rr.com with SMTP; Sep, 21 2002 7:31:16 PM -0200
+From: Sportspicks <fivestarpicks@netzero.com>
+To: ACCOUNT.HOLDER@webnote.net
+Cc: 
+Subject: YOUR ACCOUNT HAS BEEN CLOSED!
+Sender: Sportspicks <fivestarpicks@netzero.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Date: Sat, 21 Sep 2002 21:57:46 -0700
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Priority: 1
+
+You have been removed from our list.
+You will NOT be able to recieve todays picks in the email
+You will NOT be notified of any new sports pick websites.
+
+IF YOU HAVE QUESTIONS ABOUT WHY YOUR ACCOUNT IS EXPIRED,
+YOUR ACCOUNT WAS CLOSED FOR ONE OF THE FOLLOWING REASONS. 
+
+1. YOU FAILED TO LOG INTO YOUR ACCCOUNT FOR OVER A MONTH. 
+2. YOUR ACCOUNT WAS FOUND ON A SPAM LIST AND REJECTED. 
+3. THE GIFT ACCOUNT SOMEONE SIGNED YOU UP FOR EXPIRED.
+
+If you wish to rejoin please go to the following url:
+http://www.freewebs.com/registar/
+
+YOU DO NOT NEED TO DO ANYTHING TO BE REMOVED FROM THIS eMAIL LIST.
+THIS IS A ONE TIME MAILING TO NOTIFY YOU THAT, YOU ARE REMOVED.
+However, you may reply with the word "remove" in the subject line
+
+

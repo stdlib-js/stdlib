@@ -1,0 +1,33 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:52:48 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 40F1616F1B
+	for <jm@localhost>; Wed,  9 Oct 2002 10:51:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:51:51 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9980aK25198 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:00:36 +0100
+Message-Id: <200210090800.g9980aK25198@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: MC Escher in Lego
+Date: Wed, 09 Oct 2002 08:00:36 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85538591
+Date: Not supplied
+
+[IMG: http://www.craphound.com/images/escherlego.jpg] Lego enthusiasts have 
+implemented three of Escher's optical illusion paintings (including "Ascending 
+and Descending," pictured here), using Lego! Link[1] Discuss[2] (_via MeFi[3]_) 
+
+
+
+[1] http://www.lipsons.pwp.blueyonder.co.uk/escher/ascending.html
+[2] http://www.quicktopic.com/boing/H/gHYxJ6d46EVY
+[3] http://www.metafilter.com/
+
+

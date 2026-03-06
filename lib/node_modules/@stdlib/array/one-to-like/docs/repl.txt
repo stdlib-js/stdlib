@@ -1,0 +1,45 @@
+
+{{alias}}( x[, dtype] )
+    Generates a linearly spaced numeric array whose elements increment by 1
+    starting from one and having the same length and data type as a provided
+    input array.
+
+    The function supports the following data types:
+
+    - float64: double-precision floating-point numbers (IEEE 754).
+    - float32: single-precision floating-point numbers (IEEE 754).
+    - complex128: double-precision complex floating-point numbers.
+    - complex64: single-precision complex floating-point numbers.
+    - int32: 32-bit two's complement signed integers.
+    - uint32: 32-bit unsigned integers.
+    - int16: 16-bit two's complement signed integers.
+    - uint16: 16-bit unsigned integers.
+    - int8: 8-bit two's complement signed integers.
+    - uint8: 8-bit unsigned integers.
+    - uint8c: 8-bit unsigned integers clamped to 0-255.
+    - generic: generic JavaScript values.
+
+    Parameters
+    ----------
+    x: TypedArray|Array
+        Input array.
+
+    dtype: string (optional)
+        Data type. If not provided, the output array data type is inferred from
+        the input array.
+
+    Returns
+    -------
+    out: TypedArray|Array
+        Output array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( [ 0, 0 ] )
+    [ 1, 2 ]
+    > arr = {{alias}}( [ 0, 0 ], 'float32' )
+    <Float32Array>[ 1.0, 2.0 ]
+
+    See Also
+    --------
+

@@ -1,0 +1,84 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:33:54 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D434716F17
+	for <jm@localhost>; Thu, 26 Sep 2002 16:33:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:33:51 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFRhg24232 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:27:43 +0100
+Message-Id: <200209261527.g8QFRhg24232@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: "hyatt@mozilla" <rssfeeds@spamassassin.taint.org>
+Subject: Usability Problems with Mozilla
+Date: Thu, 26 Sep 2002 15:27:42 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.mozillazine.org/weblogs/hyatt/#85409355
+Date: Not supplied
+
+Blake blogs[1] about how mpt[2] wants Mozilla to look just like MSIE. I have to 
+admit, the evidence is pretty compelling. I recall someone asking me, "Do you 
+really agree with mpt's Top 10 list? He's quoted you at the top of the list!"
+
+Do I agree that those ten items mpt mentions are the top ten problems? Of 
+course not. No two people will have the same top ten problems. Also keep in 
+mind that mpt and I can agree that something is a problem without necessarily 
+agreeing on the solution to the problem. Maybe we have different ideas 
+regarding how to solve a particular issue, but we at least both believe it is 
+an issue that needs to be addressed. That's something.
+
+To cover the list specifically:
+
+
+- Navigator chrome structure - While I don't necessarily agree with mpt's 
+proposed default configuration, I do agree that the chrome structure is 
+painfully restrictive, and that customizable toolbars need to be implemented in 
+order for us to acquire the flexibility to deal with this problem.
+
+- Speed - can't argue with this, except to say that cutting out a lot of the 
+useless UI and features from the chrome helps substantially. Reduce bloat, gain 
+speed.
+
+- Text editing - if you use Chimera on the Mac, you'll see that the textfield 
+widget is easily the most painful part of the entire application. It's buggy, 
+slow, misbehaves, and doesn't edit the way you'd expect. This is IMO Chimera's 
+top usability problem.
+
+- Message display - Yes. No argument here.
+
+- Search - Yeah, it's a mess. Don't know if it would be in my top ten, but it's 
+a mess.
+
+- Menu structure - This gets back to my blog about how the apps should be 
+separated. The menu structure has been complicated in order to deal with 
+multiple applications. A clean separation naturally simplifies the menus (e.g., 
+you can eliminate the New submenu easily).
+
+- Migration - A problem, but IMO not one of the top ten facing Mozilla.
+
+- Context menus - mpt complains about two-click context menus, and yet, the OS 
+default on Win32 (overwhelmingly) is to bring up a context menu on a mouse up. 
+If you don't like it, complain about Win32, but don't cite this as a Mozilla 
+usability problem when we're following the conventions of the operating system. 
+(We simply listen for the WM_CONTEXTMENU message. That message fires when Win32 
+wants to fire it.)
+
+- Validation - Err, no. Not a usability problem. To the average bear, this is 
+completely irrelevant.
+
+- Preferences - IMO this should be much higher on the list. Preferences are a 
+tangled pathetic mess. Again, separating prefs for individual apps into unique 
+dialogs would simplify things a great deal, but we should also remove nearly 
+half the preferences that exist from the GUI. Mozilla is ridiculously 
+overconfigurable.
+
+
+
+[1] http://www.blakeross.com/archives/2002_08_18_index.html#80418641
+[2] http://mpt.phrasewise.com
+
+

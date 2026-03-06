@@ -1,0 +1,20 @@
+{
+	"string": [
+		"width",
+		"ex"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"inline",
+		"no-linebreaks"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

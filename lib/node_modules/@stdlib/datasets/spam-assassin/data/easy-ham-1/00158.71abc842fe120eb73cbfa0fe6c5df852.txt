@@ -1,0 +1,124 @@
+From sentto-2242572-56013-1034075904-zzzz=spamassassin.taint.org@returns.groups.yahoo.com  Tue Oct  8 12:27:27 2002
+Return-Path: <sentto-2242572-56013-1034075904-zzzz=spamassassin.taint.org@returns.groups.yahoo.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 44A7E16F18
+	for <zzzz@localhost>; Tue,  8 Oct 2002 12:27:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 12:27:23 +0100 (IST)
+Received: from n23.grp.scd.yahoo.com (n23.grp.scd.yahoo.com
+    [66.218.66.79]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g98BHgK12940 for <zzzz@spamassassin.taint.org>; Tue, 8 Oct 2002 12:17:42 +0100
+X-Egroups-Return: sentto-2242572-56013-1034075904-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.200] by n23.grp.scd.yahoo.com with NNFMP;
+    08 Oct 2002 11:18:24 -0000
+X-Sender: timc@2ubh.com
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_2_2_0); 8 Oct 2002 11:18:23 -0000
+Received: (qmail 62648 invoked from network); 8 Oct 2002 11:18:23 -0000
+Received: from unknown (66.218.66.218) by m8.grp.scd.yahoo.com with QMQP;
+    8 Oct 2002 11:18:23 -0000
+Received: from unknown (HELO rhenium.btinternet.com) (194.73.73.93) by
+    mta3.grp.scd.yahoo.com with SMTP; 8 Oct 2002 11:18:23 -0000
+Received: from host217-35-11-51.in-addr.btopenworld.com ([217.35.11.51])
+    by rhenium.btinternet.com with esmtp (Exim 3.22 #8) id 17ysNa-00048e-00
+    for forteana@yahoogroups.com; Tue, 08 Oct 2002 12:18:22 +0100
+X-Mailer: Microsoft Outlook Express Macintosh Edition - 4.5 (0410)
+To: zzzzteana <zzzzteana@yahoogroups.com>
+X-Priority: 3
+Message-Id: <E17ysNa-00048e-00@rhenium.btinternet.com>
+From: "Tim Chapman" <timc@2ubh.com>
+X-Yahoo-Profile: tim2ubh
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Tue, 08 Oct 2002 12:17:28 +0100
+Subject: [zzzzteana] Nobel astrophysicists
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+Nobel Honors 3 for Astrophysics Work 
+
+Tuesday October 8, 2002 12:00 PM
+STOCKHOLM, Sweden (AP) - Two Americans and a Japanese won the Nobel Prize in
+physics Tuesday for using some of the most obscure particles and waves in
+nature to understand the workings of astronomy's grandest wonders.
+Riccardo Giacconi, 71, of the Associated Universities Inc. in Washington,
+D.C., will get half of the $1 million prize for his role in ``pioneering
+contributions to astrophysics, which have led to the discovery of cosmic
+X-ray sources.''
+Raymond Davis, Jr., 87, of the University of Pennsylvania shares the other
+half of the prize with Japanese scientist Masatoshi Koshiba, 76, of the
+University of Tokyo. The two men pioneered the construction of giant
+underground chambers to detect neutrinos, elusive particles that stream from
+the sun by the billion.
+Neutrinos offer an unparalleled view of the sun's inner workings because
+they are produced in its heart by the same process that causes it to shine.
+In fact, Davis' early experiments, performed during the 1960s in a South
+Dakota gold mine, confirmed that the sun is powered by nuclear fusion.
+Koshiba won his share of the prize for his work at the Kamiokande neutrino
+detector in Japan. That experiment confirmed and extended Davis' work, and
+also discovered neutrinos coming from distant supernova explosions, some of
+the brightest objects in the universe.
+The Italian-born Giacconi, a U.S. citizen, was awarded half of the prize for
+building the first X-ray telescopes that provided ``completely new - and
+sharp - images of the universe,'' the academy said.
+His research laid the foundation for X-ray astronomy, which has led to the
+discovery of black holes and allowed researchers to peer deep into the
+hearts of the dusty young galaxies where stars are born.
+When academy officials reached Giacconi by phone at his home outside
+Washington, he said he was ``dumbstruck'' to learn of the prize. Koshiba
+also was phoned at home in Tokyo, but the academy was still trying to reach
+Davis, spokesman Erling Norrby said.
+This year's Nobel awards started Monday with the naming of Britons Sydney
+Brenner, 75, and Sir John E. Sulston, 60, and American H. Robert Horvitz,
+55, as winners of the medicine prize, selected by a committee at the
+Karolinska Institute.
+The researchers shared it for discoveries about how genes regulate organ
+growth and a process of programmed cell deaths that shed light on how
+viruses and bacteria invade human cells, including in conditions such as
+AIDS, strokes, cancer and heart attacks.
+The winner of the Nobel Prize in chemistry will be named on Wednesday
+morning and the Bank of Sweden Prize in Economic Sciences in Memory of
+Alfred Nobel later the same day.
+The literature prize winner will be announced on Thursday, the Swedish
+Academy said on Tuesday.
+The winner of the coveted peace prize - the only one not awarded in Sweden -
+will be announced Friday in Oslo, Norway.
+The award committees make their decisions in deep secrecy and candidates are
+not publicly revealed for 50 years.
+Alfred Nobel, the wealthy Swedish industrialist and inventor of dynamite who
+endowed the prizes left only vague guidelines for the selection committees.
+In his will he said the prize being revealed on Tuesday should be given to
+those who ``shall have conferred the greatest benefit on mankind'' and
+``shall have made the most important discovery or invention within the field
+of physics.''
+The Royal Swedish Academy of Sciences, which also chooses the chemistry and
+economics winners, invited nominations from previous recipients and experts
+in the fields before cutting down its choices. Deliberations are conducted
+in strict secrecy.
+The prizes are presented on Dec. 10, the anniversary of Nobel's death in
+1896, in Stockholm and in Oslo.
+---
+On the Net:
+Nobel site, http://www.nobel.se 
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+Plan to Sell a Home?
+http://us.click.yahoo.com/J2SnNA/y.lEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

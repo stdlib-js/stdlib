@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Tests if a value is a string having an uppercase first character.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a string with an uppercase first
+        character.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'Hello' )
+    true
+    > bool = {{alias}}( 'world' )
+    false
+
+    See Also
+    --------
+

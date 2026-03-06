@@ -1,0 +1,57 @@
+From fork-admin@xent.com  Mon Jul 22 22:29:49 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 20AA0440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 17:29:49 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 22:29:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6MLTV400335 for <jm@jmason.org>;
+    Mon, 22 Jul 2002 22:29:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DD6EA2940E9; Mon, 22 Jul 2002 14:11:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm4-26.sba1.netlojix.net
+    [207.71.218.218]) by xent.com (Postfix) with ESMTP id 378692940E2 for
+    <fork@xent.com>; Mon, 22 Jul 2002 14:10:27 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id OAA04178;
+    Mon, 22 Jul 2002 14:26:32 -0700
+Message-Id: <200207222126.OAA04178@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: deja vu?
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 22 Jul 2002 14:26:31 -0700
+
+
+Hmmm.  Rumsfeld and Cheney are in
+the white house, the president says
+he's not a crook (and no, you can't
+have those tapes), and the market is
+melting down.
+
+Anyone want to go to Andy Capps for
+a beer?  I hear they have this new
+game called "Pong"...
+
+Have a nice day,
+-Dave
+
+Anyone seen Elvis lately?
+
+http://xent.com/mailman/listinfo/fork
+
+

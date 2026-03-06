@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Tue Jul 23 17:39:36 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 834E9440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 12:39:34 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 17:39:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NGX8410974 for <jm@jmason.org>;
+    Tue, 23 Jul 2002 17:33:08 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9BF7C294102; Tue, 23 Jul 2002 09:17:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 37BDD294100 for <fork@xent.com>;
+    Tue, 23 Jul 2002 09:16:35 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-046.ptrb.interhop.net
+    [165.154.190.110]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g6NG10R03517 for <fork@xent.com>; Tue, 23 Jul 2002 12:01:00 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 2BBDD1C39A;
+    Tue, 23 Jul 2002 12:25:33 -0400 (EDT)
+To: fork@spamassassin.taint.org
+Subject: Re: NYTimes.com Article: Why We're So Nice: We're Wired to Cooperate
+References: <3D3D53F2.4090606@permafrost.net>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2wurmtnr6.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 23 Jul 2002 12:25:33 -0400
+
+>>>>> "O" == Owen Byrne <owen@permafrost.net> writes:
+
+    O> Well, IMNHO, its because companies do not reward knowledge
+    O> sharers. When time comes for evaluation, there isn't a line on
+    O> the page saying "Helped others to succeed with their projects."
+
+And yet, in my experience, it still happens, but always "unofficially"
+and "off the record".  It's as if we believe that "the gods" will
+punish us if we are seen to have behaved in a human fashion while on
+company time, either by being caught red-handed, or having the
+paper-trail finger us later.  Yet even CEOs will "pull strings" to
+make things happen, and, also in my experience, those are the moments
+when things actually do happen.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,146 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+var resolveSync = require( 'resolve' ).sync;
+var glob = require( 'glob' );
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/cli/ctor' );
+var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
+var cwd = require( '@stdlib/process/cwd' );
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var filelist;
+	var ropts;
+	var flags;
+	var gopts;
+	var args;
+	var cli;
+	var idx;
+	var dir;
+	var r;
+	var i;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
+
+	// Get any provided command-line arguments:
+	args = cli.args();
+
+	dir = cwd();
+	if ( flags.require ) {
+		if ( isString( flags.require ) ) {
+			flags.require = [ flags.require ];
+		}
+		ropts = {
+			'basedir': dir
+		};
+		for ( i = 0; i < flags.require.length; i++ ) {
+			r = flags.require[ i ];
+
+			// Ignore a trailing `-r` or when a user may inadvertently provide an empty string `-r ""`:
+			if ( r ) {
+				require( resolveSync( r, ropts ) ); // eslint-disable-line stdlib/no-unassigned-require, stdlib/no-dynamic-require
+			}
+		}
+	}
+	filelist = [];
+	idx = -1;
+
+	// Resolve each glob...
+	gopts = {
+		'cwd': dir
+	};
+	return next();
+
+	/**
+	* Resolves the next glob.
+	*
+	* @private
+	* @returns {void}
+	*/
+	function next() {
+		var g;
+
+		idx += 1;
+		if ( idx < args.length ) {
+			g = args[ idx ];
+			return glob( g, gopts, onGlob );
+		}
+		run();
+	}
+
+	/**
+	* Callback invoked upon resolving a glob.
+	*
+	* @private
+	* @param {(Error|null)} error - error object
+	* @param {(Array|StringArray)} files - file list
+	*/
+	function onGlob( error, files ) {
+		var i;
+		if ( error ) {
+			throw error;
+		}
+		for ( i = 0; i < files.length; i++ ) {
+			filelist.push( resolve( dir, files[ i ] ) );
+		}
+		next();
+	}
+
+	/**
+	* Runs benchmarks.
+	*
+	* @private
+	*/
+	function run() {
+		var i;
+		for ( i = 0; i < filelist.length; i++ ) {
+			require( filelist[ i ] ); // eslint-disable-line stdlib/no-unassigned-require, stdlib/no-dynamic-require
+		}
+	}
+}
+
+main();

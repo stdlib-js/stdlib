@@ -1,0 +1,51 @@
+From rssfeeds@jmason.org  Fri Sep 27 10:40:51 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 4BB7D16F16
+	for <jm@localhost>; Fri, 27 Sep 2002 10:40:51 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 27 Sep 2002 10:40:51 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8R80Wg00553 for
+    <jm@jmason.org>; Fri, 27 Sep 2002 09:00:32 +0100
+Message-Id: <200209270800.g8R80Wg00553@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: Haunted Mansion movie inches forward
+Date: Fri, 27 Sep 2002 08:00:32 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85497407
+Date: Not supplied
+
+Disney's put up a little brochureware site about its forthcoming (and very 
+exciting!) film based on the Haunted Mansion ride, a followup to the Country 
+Bears movie (I may be the only adult in the world who enjoyed that one). All 
+that's there now is a downlaodable poster, which is pretty keen, except for 
+this supercillious bit of legal crapola you have to click through to get at it. 
+
+
+    [IMG: http://www.craphound.com/images/hmsign.jpg] Disney Pictures hereby 
+    grants you a limited, nonexclusive, nontransferable, one-year royalty free 
+    license to use and display the Images on your site in accordance with the 
+    terms below. Nothing herein by implication or otherwise, shall grant you 
+    any rights other than as explicitly set forth below. 
+
+    You shall receive HTML code and GIF file (the "Files") from Disney Pictures 
+    to incorporate the Images into your site. You agree not to modify the Files 
+    in any way. Acceptance and use of the Files indicates acceptance of these 
+    terms of use. If you do not accept these terms of use, you must not use or 
+    display the Files. This license will commence when you receive the Files 
+    and will terminate automatically, one year later, or immediately upon any 
+    violation of these terms of use. Also, we reserve the right to terminate 
+    this license at any time, in our sole discretion, upon notice to you.  
+
+Link[1] Discuss[2] (_Thanks, Amanda[3]!_)
+
+[1] http://disney.go.com/disneypictures/hauntedmansion/index.html
+[2] http://www.quicktopic.com/boing/H/rbEFbqvNpUSV
+[3] http://monkeygirl.blogspot.com/
+
+

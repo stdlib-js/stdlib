@@ -1,0 +1,97 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Sep  4 16:53:10 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id F011016F20
+	for <jm@localhost>; Wed,  4 Sep 2002 16:52:13 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 16:52:13 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g84FLxZ07451 for <jm-sa@jmason.org>; Wed, 4 Sep 2002 16:21:59 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17mbxo-00019X-00; Wed,
+    04 Sep 2002 08:21:04 -0700
+Received: from main.gmane.org ([80.91.224.249]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17mbxL-0002od-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 04 Sep 2002 08:20:35 -0700
+Received: from list by main.gmane.org with local (Exim 3.35 #1 (Debian))
+    id 17mbvd-00087j-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 04 Sep 2002 17:18:49 +0200
+To: spamassassin-talk@example.sourceforge.net
+X-Injected-Via-Gmane: http://gmane.org/
+Received: from news by main.gmane.org with local (Exim 3.35 #1 (Debian))
+    id 17mbvb-00087W-00 for <gmane-mail-spam-spamassassin-general@m.gmane.org>;
+    Wed, 04 Sep 2002 17:18:47 +0200
+Path: not-for-mail
+From: "Adrian Hill" <zendog_moo@hotmail.com>
+Message-Id: <al588m$ufg$1@main.gmane.org>
+References: <al4kv3$4ol$1@main.gmane.org>
+    <20020904185631.55728f6b.lars@unet.net.ph>
+NNTP-Posting-Host: 212.50.185.99
+X-Trace: main.gmane.org 1031152726 31216 212.50.185.99 (4 Sep 2002
+    15:18:46 GMT)
+X-Complaints-To: usenet@main.gmane.org
+NNTP-Posting-Date: Wed, 4 Sep 2002 15:18:46 +0000 (UTC)
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Newsreader: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [SAtalk] Re: Custom actions for high scoring spam
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 4 Sep 2002 16:20:25 +0100
+Date: Wed, 4 Sep 2002 16:20:25 +0100
+
+Thank you Lars for your reply to my query.
+
+> SA doesnt do any of these. It is probably a function of whatever scanning
+system/MDA
+> you're using (amavis, procmail, whatever). What exactly are you using?
+
+I am using SpamAssassin as part of the MailScanner package (using sendmail
+as the MTA). It integrates nicely in there, and shares a configuration file
+with SA. All very neat.
+
+> SA in itself does nothing really. You need a frontend (procmail, amavis,
+etc)
+> at some point in the  mail delivery chain that can hand over the message
+> to SA and do whatever other processing you want.
+
+I thought that SA rated a message with a certain score, then did a certain
+action (such as store | deliver | delete) based on the configuration given.
+I was hoping there were some other actions that I could custom-program in.
+
+Again, many thanks,
+
+
+Adrian
+
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

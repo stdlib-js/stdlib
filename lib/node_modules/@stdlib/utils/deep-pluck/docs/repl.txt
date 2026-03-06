@@ -1,0 +1,50 @@
+
+{{alias}}( arr, path[, options] )
+    Extracts a nested property value from each element of an object array.
+
+    If a key path does not exist, the function sets the plucked value as
+    `undefined`.
+
+    Extracted values are not cloned.
+
+    Parameters
+    ----------
+    arr: Array
+        Source array.
+
+    path: string|Array
+        Key path.
+
+    options: Object (optional)
+        Options.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to return a new data structure. Default:
+        true.
+
+    options.sep: string (optional)
+        Key path separator. Default: '.'.
+
+    Returns
+    -------
+    out: Array
+        Destination array.
+
+    Examples
+    --------
+    > var arr = [
+    ...     { 'a': { 'b': { 'c': 1 } } },
+    ...     { 'a': { 'b': { 'c': 2 } } }
+    ... ];
+    > var out = {{alias}}( arr, 'a.b.c' )
+    [ 1, 2 ]
+    > arr = [
+    ...     { 'a': [ 0, 1, 2 ] },
+    ...     { 'a': [ 3, 4, 5 ] }
+    ... ];
+    > out = {{alias}}( arr, [ 'a', 1 ] )
+    [ 1, 4 ]
+
+    See Also
+    --------
+

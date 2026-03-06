@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Mon Sep  9 14:34:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0BCAB16EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 14:34:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 14:34:32 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89BAFC11147 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 12:10:15 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 470D52942CA; Mon,  9 Sep 2002 04:07:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 514C52942C9 for
+    <fork@xent.com>; Mon,  9 Sep 2002 04:06:10 -0700 (PDT)
+Received: (qmail 3525 invoked by uid 508); 9 Sep 2002 11:08:55 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.112) by
+    venus.phpwebhosting.com with SMTP; 9 Sep 2002 11:08:55 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g89B8p201980; Mon, 9 Sep 2002 13:08:51 +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: CDale <cdale@techmonkeys.net>
+Cc: Tom <tomwhore@slack.net>, Gordon Mohr <gojomo@usa.net>,
+	<fork@xent.com>
+Subject: Re: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <Pine.LNX.4.44.0209082255100.8855-100000@isolnetsux.techmonkeys.net>
+Message-Id: <Pine.LNX.4.33.0209091305070.32400-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 13:08:51 +0200 (CEST)
+
+On Sun, 8 Sep 2002, CDale wrote:
+
+> I agree w/ ya Tom.  That kind of thinking is SO idiotic.  Sure, gays
+
+So how many of your hetero friends had >3 k lovers?
+
+> are promiscuous, and so are hets, but I betcha gays are more
+> AIDSphobic than hets, generally speaking....
+
+The virus load issue is orthogonal to the fact. Bzzt. Switch on your
+brain, you both. I was mentioning that a subpopulation outside of the sex
+industry is/used to be extremely promiscuous, about two orders of
+magnitude higher than average.
+
+
+
+

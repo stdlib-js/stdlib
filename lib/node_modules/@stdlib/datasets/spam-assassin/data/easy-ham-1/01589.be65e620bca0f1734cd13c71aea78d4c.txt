@@ -1,0 +1,101 @@
+From razor-users-admin@lists.sourceforge.net  Tue Sep 17 11:26:28 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5ED2216F03
+	for <jm@localhost>; Tue, 17 Sep 2002 11:26:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 11:26:27 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8GIrhC05769 for <jm-razor@jmason.org>; Mon, 16 Sep 2002 19:53:43 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17r0ui-0004wE-00; Mon,
+    16 Sep 2002 11:48:04 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17r0tl-0001Dr-00 for
+    <razor-users@lists.sourceforge.net>; Mon, 16 Sep 2002 11:47:05 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g8GIkfF12252; Mon, 16 Sep 2002 11:46:41 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: Raido Kurel <raido@elve.elin.ttu.ee>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] empty mail is spamm?
+Message-Id: <20020916114641.B12169@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: Raido Kurel <raido@elve.elin.ttu.ee>,
+	razor-users@lists.sourceforge.net
+References: <1032182191.9209.15.camel@pikk-koon-teravoga.mbp.ee>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <1032182191.9209.15.camel@pikk-koon-teravoga.mbp.ee>;
+    from raido@elve.elin.ttu.ee on Mon, Sep 16, 2002 at 04:16:31PM +0300
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Mon, 16 Sep 2002 11:46:41 -0700
+Date: Mon, 16 Sep 2002 11:46:41 -0700
+
+Razor won't filter empty emails. What version of the agents are you using?
+
+cheers,
+vipul.
+
+On Mon, Sep 16, 2002 at 04:16:31PM +0300, Raido Kurel wrote:
+> Hi,
+> 
+> Is it possible to use razor without filtering empty mails as spamm?
+> An mail with an attachment is considered spamm. Is this normal?
+> Or I mysqlf like to send emails to myself where all important is said in
+> subject and body is empty (for remaining smth).
+> 
+> Thanks,
+> Raido Kurel
+> 
+> 
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

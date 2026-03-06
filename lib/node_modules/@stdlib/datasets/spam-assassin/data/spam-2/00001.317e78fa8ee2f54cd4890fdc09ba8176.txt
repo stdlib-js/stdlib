@@ -1,0 +1,108 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:51:02 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9E1F5441DD
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:09 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72LqWv13294 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 22:52:32 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA31224; Fri, 2 Aug 2002 22:50:17 +0100
+Received: from bettyjagessar.com (w142.z064000057.nyc-ny.dsl.cnc.net
+    [64.0.57.142]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id WAA31201 for
+    <ilug@linux.ie>; Fri, 2 Aug 2002 22:50:11 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host w142.z064000057.nyc-ny.dsl.cnc.net
+    [64.0.57.142] claimed to be bettyjagessar.com
+Received: from 64.0.57.142 [202.63.165.34] by bettyjagessar.com
+    (SMTPD32-7.06 EVAL) id A42A7FC01F2; Fri, 02 Aug 2002 02:18:18 -0400
+Message-Id: <1028311679.886@0.57.142>
+Date: Fri, 02 Aug 2002 23:37:59 0530
+To: ilug@linux.ie
+From: "Start Now" <startnow2002@hotmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"; format=flowed
+Subject: [ILUG] STOP THE MLM INSANITY
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Greetings!
+
+You are receiving this letter because you have expressed an interest in 
+receiving information about online business opportunities. If this is 
+erroneous then please accept my most sincere apology. This is a one-time 
+mailing, so no removal is necessary.
+
+If you've been burned, betrayed, and back-stabbed by multi-level marketing, 
+MLM, then please read this letter. It could be the most important one that 
+has ever landed in your Inbox.
+
+MULTI-LEVEL MARKETING IS A HUGE MISTAKE FOR MOST PEOPLE
+
+MLM has failed to deliver on its promises for the past 50 years. The pursuit 
+of the "MLM Dream" has cost hundreds of thousands of people their friends, 
+their fortunes and their sacred honor. The fact is that MLM is fatally 
+flawed, meaning that it CANNOT work for most people.
+
+The companies and the few who earn the big money in MLM are NOT going to 
+tell you the real story. FINALLY, there is someone who has the courage to 
+cut through the hype and lies and tell the TRUTH about MLM.
+
+HERE'S GOOD NEWS
+
+There IS an alternative to MLM that WORKS, and works BIG! If you haven't yet 
+abandoned your dreams, then you need to see this. Earning the kind of income 
+you've dreamed about is easier than you think!
+
+With your permission, I'd like to send you a brief letter that will tell you 
+WHY MLM doesn't work for most people and will then introduce you to 
+something so new and refreshing that you'll wonder why you haven't heard of 
+this before.
+
+I promise that there will be NO unwanted follow up, NO sales pitch, no one 
+will call you, and your email address will only be used to send you the 
+information. Period.
+
+To receive this free, life-changing information, simply click Reply, type 
+"Send Info" in the Subject box and hit Send. I'll get the information to you 
+within 24 hours. Just look for the words MLM WALL OF SHAME in your Inbox.
+
+Cordially,
+
+Siddhi
+
+P.S. Someone recently sent the letter to me and it has been the most 
+eye-opening, financially beneficial information I have ever received. I 
+honestly believe that you will feel the same way once you've read it. And 
+it's FREE!
+
+
+------------------------------------------------------------
+This email is NEVER sent unsolicited.  THIS IS NOT "SPAM". You are receiving 
+this email because you EXPLICITLY signed yourself up to our list with our 
+online signup form or through use of our FFA Links Page and E-MailDOM 
+systems, which have EXPLICIT terms of use which state that through its use 
+you agree to receive our emailings.  You may also be a member of a Altra 
+Computer Systems list or one of many numerous FREE Marketing Services and as 
+such you agreed when you signed up for such list that you would also be 
+receiving this emailing.
+Due to the above, this email message cannot be considered unsolicitated, or 
+spam.
+-----------------------------------------------------------
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

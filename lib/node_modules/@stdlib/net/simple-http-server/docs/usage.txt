@@ -1,0 +1,13 @@
+
+Usage: simple-http-server [options] [dirpath]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+  -p,    --port port           Server port. Default: 0.
+         --maxport maxport     Max server port. Default: `port`.
+         --hostname hostname   Server hostname.
+         --address address     Server address. Default: 0.0.0.0.
+         --open                Launch a browser once server is ready.
+

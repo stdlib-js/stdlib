@@ -1,0 +1,40 @@
+
+{{alias}}( [mx, my] )
+    Returns an accumulator function which incrementally computes the absolute
+    value of the sample Pearson product-moment correlation coefficient.
+
+    If provided values, the accumulator function returns an updated accumulated
+    value. If not provided values, the accumulator function returns the current
+    accumulated value.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    Parameters
+    ----------
+    mx: number (optional)
+        Known mean.
+
+    my: number (optional)
+        Known mean.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var ar = accumulator()
+    null
+    > ar = accumulator( 2.0, 1.0 )
+    0.0
+    > ar = accumulator( -5.0, 3.14 )
+    ~1.0
+    > ar = accumulator()
+    ~1.0
+
+    See Also
+    --------
+

@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Tue Aug  6 14:04:06 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E15A544162
+	for <jm@localhost>; Tue,  6 Aug 2002 08:58:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 13:58:09 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g76Cstk29751 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 13:54:55 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA30728; Tue, 6 Aug 2002 13:52:58 +0100
+Received: from corvil.com (k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA30693
+    for <ilug@linux.ie>; Tue, 6 Aug 2002 13:52:51 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host k100-159.bas1.dbn.dublin.eircom.net
+    [159.134.100.159] claimed to be corvil.com
+Received: from corvil.com (pixelbeat.local.corvil.com [172.18.1.170]) by
+    corvil.com (8.12.5/8.12.5) with ESMTP id g76CqlRx035405; Tue,
+    6 Aug 2002 13:52:48 +0100 (IST) (envelope-from padraig.brady@corvil.com)
+Message-Id: <3D4FC697.4010600@corvil.com>
+Date: Tue, 06 Aug 2002 13:52:39 +0100
+From: Padraig Brady <padraig.brady@corvil.com>
+Organization: Corvil Networks
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.9) Gecko/20020408
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Albert White - SUN Ireland <albert.white@ireland.sun.com>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] 3c509 & 2.4.19 problems - SUMMARY
+References: <200208061225.g76CPhfE009471@sionnach.ireland.sun.com>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Albert White - SUN Ireland wrote:
+> Hi,
+> 
+> Thanks for the replies. It turns out that it was an IRQ conflict with an old 
+> sound card.
+> 
+> Despite checking the BIOS and running the 3c509 setup utility on 
+> http://www.scyld.com/diag, the 2.4 kernel still picked a card on IRQ 5 and 10.
+> 
+> It works fine now that the sound card is removed, but I'm still confused as to 
+> why this worked in 2.2.18 but not 2.4.19, seems like a regression to me...
+
+I'm jumping in here since I'm just back on
+ILUG after quite a long break, anyway...
+
+Alan Cox was mentioning that he might have borked
+some PNP stuff lately. You could try 2.4.19-ac4
+to see if it helps.
+
+Pádraig.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

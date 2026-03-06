@@ -1,0 +1,32 @@
+
+{{alias}}( m )
+    Computes the complete elliptic integral of the second kind.
+
+    Parameters
+    ----------
+    m: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5 )
+    ~1.351
+    > y = {{alias}}( -1.0 )
+    ~1.910
+    > y = {{alias}}( 2.0 )
+    NaN
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pinf}} )
+    NaN
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/ninf}} )
+    NaN
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

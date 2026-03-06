@@ -1,0 +1,74 @@
+
+{{alias}}( x, a, b )
+    Evaluates the cumulative distribution function (CDF) for an arcsine
+    distribution with minimum support `a` and maximum support `b` at a value
+    `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `a >= b`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    Returns
+    -------
+    out: number
+        Evaluated CDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 9.0, 0.0, 10.0 )
+    ~0.795
+    > y = {{alias}}( 0.5, 0.0, 2.0 )
+    ~0.333
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pinf}}, 2.0, 4.0 )
+    1.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/ninf}}, 2.0, 4.0 )
+    0.0
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+    > y = {{alias}}( 2.0, 1.0, 0.0 )
+    NaN
+
+
+{{alias}}.factory( a, b )
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    of an arcsine distribution with minimum support `a` and maximum support `b`.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    Returns
+    -------
+    cdf: Function
+        Cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var mycdf = {{alias}}.factory( 0.0, 10.0 );
+    > var y = mycdf( 0.5 )
+    ~0.144
+    > y = mycdf( 8.0 )
+    ~0.705
+
+    See Also
+    --------
+

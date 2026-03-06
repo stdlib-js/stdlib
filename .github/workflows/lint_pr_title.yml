@@ -1,0 +1,96 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: lint_pr_title
+
+# Workflow triggers:
+on:
+  pull_request:
+    types:
+      - synchronize
+      - opened
+      - reopened
+      - edited
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for linting PR titles...
+  lint_pr_title:
+
+    # Define a display name:
+    name: 'Lint PR title'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Set defaults:
+    defaults:
+      run:
+        # Set the default shell to `bash`:
+        shell: bash --noprofile --norc -eo pipefail {0}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # Specify whether to remove untracked files before checking out the repository:
+          clean: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Specify whether to download Git-LFS files:
+          lfs: false
+        timeout-minutes: 10
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
+        with:
+          node-version: '20' # 'lts/*'
+        timeout-minutes: 5
+
+      # Perform install sequence (accounting for possible network failures, etc, when installing node module dependencies):
+      - name: 'Perform install sequence'
+        run: |
+          make install-node-modules || make install-node-modules || make install-node-modules
+        timeout-minutes: 30
+
+      # Perform linting:
+      - name: 'Perform linting'
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          echo "Pull request titles should follow stdlib's Git commit message conventions."
+          echo "Linting pull request title..."
+          PR_TITLE_FILE="${GITHUB_WORKSPACE}/pr_title.txt"
+          printf '%s\n' "$PR_TITLE" > "$PR_TITLE_FILE"
+          make lint-commit-files FILES="$PR_TITLE_FILE"
+        timeout-minutes: 5

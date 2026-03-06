@@ -1,0 +1,132 @@
+From robin.hill@baesystems.com  Wed Aug 28 10:53:58 2002
+Return-Path: <robin.hill@baesystems.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6D00A44155
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:53:49 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:53:49 +0100 (IST)
+Received: from n19.grp.scd.yahoo.com (n19.grp.scd.yahoo.com
+    [66.218.66.74]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g7S8G4Z16036 for <zzzz@spamassassin.taint.org>; Wed, 28 Aug 2002 09:16:04 +0100
+X-Egroups-Return: sentto-2242572-53128-1030522570-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.66.98] by n19.grp.scd.yahoo.com with NNFMP;
+    28 Aug 2002 08:16:10 -0000
+X-Sender: robin.hill@baesystems.com
+X-Apparently-To: zzzzteana@egroups.com
+Received: (EGP: mail-8_1_0_1); 28 Aug 2002 08:16:09 -0000
+Received: (qmail 70924 invoked from network); 28 Aug 2002 08:16:09 -0000
+Received: from unknown (66.218.66.217) by m15.grp.scd.yahoo.com with QMQP;
+    28 Aug 2002 08:16:09 -0000
+Received: from unknown (HELO smtp1.bae.co.uk) (20.138.254.61) by
+    mta2.grp.scd.yahoo.com with SMTP; 28 Aug 2002 08:16:09 -0000
+Received: from ngbaux (ngbaux.msd.bae.co.uk [141.245.68.234]) by
+    smtp1.bae.co.uk (Switch-2.2.2/Switch-2.2.0) with ESMTP id g7S8G5t17586 for
+    <forteana@egroups.com>; Wed, 28 Aug 2002 09:16:05 +0100 (BST)
+Received: from ngban12.ng.bae.co.uk ([141.245.68.238]) by
+    ngbaux.net.bae.co.uk (PMDF V5.2-33 #44998) with ESMTP id
+    <0H1J00AK7O7RP2@ngbaux.net.bae.co.uk> for forteana@egroups.com;
+    Wed, 28 Aug 2002 09:14:15 +0100 (BST)
+Received: from ngbauh.ng.bae.co.uk (unverified) by ngban12.ng.bae.co.uk
+    (Content Technologies SMTPRS 2.0.15) with ESMTP id
+    <B0008901307@ngban12.ng.bae.co.uk> for <forteana@egroups.com>;
+    Wed, 28 Aug 2002 09:14:25 +0100
+Received: (from x400@localhost) by ngbauh.ng.bae.co.uk (8.9.3
+    (PHNE_18546)/8.8.6) id JAA24596	for forteana@egroups.com; Wed,
+    28 Aug 2002 09:18:26 +0100 (BST)
+Received: by GOLD 400; Wed, 28 Aug 2002 09:17:20 +0000
+To: zzzzteana@yahoogroups.com
+Message-Id: <"020828081752Z.WT24519.  6*/PN=Robin.Hill/OU=Technical/OU=NOTES/O=BAe MAA/PRMD=BAE/ADMD=GOLD 400/C=GB/"@MHS>
+X-Mailer: NetJunction (NetJunction 5.1.1-p2)/MIME
+From: Robin Hill <robin.hill@baesystems.com>
+X-Yahoo-Profile: sfgameruk
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Wed, 28 Aug 2002 09:17:20 +0000
+Subject: [zzzzteana] re: Steam
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+On Tue, 27 Aug 2002 10:15:36 -0500 (EST)
+Jay Lake <jlake@jlake.com> wrote:
+
+
+<snip>
+
+>Second, one could make the assumption that ancient or future civilizations
+>would not be hydrocarbon based. There are alternative fuel sources,
+>including seabed methane, biomass and all the usual suspects -- solar,
+>hydro etc. Some of these could be exploited on a decidedly low-tech (ie,
+>emergent civilization) basis. However, it is difficult to conceive of an
+>industrial civilization that doesn't employ wheels, axles and bearings,
+>all of which require lubrication. I'm not an engineer (Robin, anyone?) but
+>it's my understanding that vegetable lubrication breaks down under stress,
+>and that oil or graphite lubricants are the only reasonable choices for
+>high temperature/high rotation applications, at least prior to extremely
+>advanced modes of chemical synthesis.
+
+This is a good point. There are a lot of alternatives to hydrocarbon
+products derived from petroleum, but these have often been developed as
+a replacement for petroleum after the technology has been established -
+there is a growing industry in plant-derived plastics and lubricants,
+but this is to replicate materials that have been previously created 
+much more easily within the petrochemical industry.
+
+Vegetable-derived lubricants have been used. The Russians used sunflower
+oil in the lubrication systems of tanks and trucks during the second world 
+war, and work is being done in the UK to produce diesel fuel derived from
+waste cooking oil from fast-food restaurants. 
+
+Jay's correct in his opinion that vegetable oil is not as durable as 
+petroleum oil, but this is only because of the lack of sophistication 
+of the chemistry involved. Synthetic fuels and lubricants are continuously
+being developed, and I don't see any problems with synthetics ultimately 
+matching the performance of the more conventional products. As the rock
+oil runs out, plant oil derivatives *will* be developed to fill the
+gap. In parallel, changes will occur in the designs of the machines to 
+cope with any changes in performance of the lubricants.
+
+My big concern is if the technology were ever to be lost for some reason.
+Re-creating a petrochemical industry from scratch without petrochemicals
+(that is, going immediately to plant-based synthetics) would be extremely 
+difficult, especially if it were necessary to recreate *all* of the
+petrochemical-derived products (not just lubricants and fuels). I suspect
+that, bearing in mind the ingenuity of the human race, it would happen,
+just at a different pace. Imagine an industrial revollution based on,
+for example, methane from pig manure, or diesel oil from sunflowers.
+
+All we would then have to do is get used to all the machines smelling
+like pig farms and fish and chip shops...
+
+Robin Hill, STEAMY BESS, Brough, East Yorkshire
+
+
+
+********************************************************************
+This email and any attachments are confidential to the intended
+recipient and may also be privileged. If you are not the intended
+recipient please delete it from your system and notify the sender.
+You should not copy it or use it for any purpose nor disclose or
+distribute its contents to any other person.
+********************************************************************
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+4 DVDs Free +s&p Join Now
+http://us.click.yahoo.com/pt6YBB/NXiEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

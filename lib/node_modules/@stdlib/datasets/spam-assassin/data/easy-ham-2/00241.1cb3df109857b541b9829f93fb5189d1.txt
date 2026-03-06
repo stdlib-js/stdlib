@@ -1,0 +1,68 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:50:35 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BA2E5441D4
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:06 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72JLmv09400 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 20:21:48 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA24948; Fri, 2 Aug 2002 20:19:09 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA24913 for <ilug@linux.ie>;
+    Fri, 2 Aug 2002 20:19:01 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17ahww-0006CV-00 for <ilug@linux.ie>; Fri, 02 Aug 2002 12:18:58 -0700
+Date: Fri, 2 Aug 2002 12:18:58 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] Dell GX260 V Redhat 7.3
+Message-Id: <20020802191858.GJ13849@linuxmafia.com>
+References: <653270E74A8DD31197AF009027AA4F8B01845F1C@LIMXMMF303>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <653270E74A8DD31197AF009027AA4F8B01845F1C@LIMXMMF303>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Stephen_Reilly@dell.com (Stephen_Reilly@dell.com):
+
+> You make it sound that incompatibility has been deliberately built
+> into the new systems. The products that any company sell with linux
+> installed will be easily reinstalled with linux. The products sold
+> with Windows only may not be. Having said that I've never found a Dell
+> system it was impossible to put RH on. I have had one or two headaches
+> in the past doing it, though.
+
+I just wanted to second what Stephen says, from an independent
+perspective:  The few times I've encountered an obstacle installing
+current Linux distributions on Dell boxes, it's been because Dell were
+an early adopter of (e.g.) a new Adaptec SCSI chipset, which hadn't 
+been included in all installation kernels.  And that is the risk you
+_always_ take when you blindly buy hardware systems for Linux without
+verifying chipset support, first.  If anything, Dell have over the years
+occasioned less such trouble than have many competitors, in this area.
+
+-- 
+Cheers,   If C gives you enough rope to hang yourself, then C++ give you enough
+Rick Moen    to bind and gag your neighbourhood, rig the sails on a small ship,
+rick@linuxmafia.com    and still have enough to hang yourself from the yardarm.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

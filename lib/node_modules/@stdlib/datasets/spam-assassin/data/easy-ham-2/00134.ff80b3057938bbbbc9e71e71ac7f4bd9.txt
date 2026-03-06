@@ -1,0 +1,77 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:28:14 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9D7DE44153
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:16 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6SIYvi18724 for
+    <jm-ilug@jmason.org>; Sun, 28 Jul 2002 19:34:57 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA19871; Sun, 28 Jul 2002 19:33:29 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp016.mail.yahoo.com (smtp016.mail.yahoo.com
+    [216.136.174.113]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id TAA19837
+    for <ilug@linux.ie>; Sun, 28 Jul 2002 19:33:21 +0100
+Received: from p237.as1.cra.dublin.eircom.net (HELO mfrenchw2k)
+    (mfrench42@159.134.176.237 with login) by smtp.mail.vip.sc5.yahoo.com with
+    SMTP; 28 Jul 2002 18:33:18 -0000
+Message-Id: <002a01c23664$b7326d40$f264a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: <ilug@linux.ie>
+References: <200207262228.XAA19581@lugh.tuatha.org>
+    <20020727015716.A6561@ie.suberic.net>
+    <200207271701.SAA23172@lugh.tuatha.org> <3D4359EE.9050405@esatclear.ie>
+Subject: Re: [ILUG] Optimizing for Pentium Pt.2
+Date: Sun, 28 Jul 2002 19:29:29 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Paul Kelly mentioned:
+> gcc has been as good as or better than pgcc for quite a while. pgcc was
+> was written back in the days when gcc splintered due to a perception of
+> slow progress on the main branch. A number of Linux distributions wound
+> up using egcs, partly derived from the pgcc work as I recall. Happiness
+> was restored to the world with gcc 2.95 and later.
+
+I do not have the time to follow the compiler "wars", but I notice that I
+must use egcs to build 64 bit SPARC code.
+
+GCC 3 should do it, but because it is so "buggy"[1] it is not worth trying
+to use unless you really want to track down those compiler errors... :(
+
+- Matthew
+
+[1] "buggy" in the sense that its a feature. Many of the problems with GCC 3
+seem to be related to stricter syntax checking. More accurate information
+will be appreciated.
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

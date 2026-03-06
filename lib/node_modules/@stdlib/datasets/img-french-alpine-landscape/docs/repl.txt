@@ -1,0 +1,35 @@
+
+{{alias}}()
+    Returns a `Buffer` containing image data of Adolphe Braun's carbon print of
+    a French alpine landscape.
+
+    Returns
+    -------
+    out: Buffer
+        Image data.
+
+    Examples
+    --------
+    > var img = {{alias}}()
+    <Buffer>
+
+    References
+    ----------
+    - Braun, Adolphe. 1870. (no title). <http://www.getty.edu/art/collection/
+    objects/54324/adolphe-braun-alpine-landscape-french-1865-1870/>.
+
+    * Digital image courtesy of the Getty's Open Content Program. While there
+    are no restrictions or conditions on the use of open content images, the
+    Getty would appreciate a gratis copy of any scholarly publications in which
+    the images are reproduced in order to maintain the collection bibliography.
+    Copies may be sent to the attention of:
+
+      Open Content Program
+      Registrar's Office
+      The J. Paul Getty Museum
+      1200 Getty Center Drive, Suite 1000
+      Los Angeles, CA 90049
+
+    See Also
+    --------
+

@@ -1,0 +1,602 @@
+Return-Path: <bounce-lglinux-2534371@sprocket.lockergnome.com>
+Received: from lockergnome.com (sprocket.lockergnome.com [130.94.96.247])
+	by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6IMnaJ23671
+	for <qqqqqqqqqq-lg@spamassassin.taint.org>; Thu, 18 Jul 2002 23:49:36 +0100
+X-Mailer: ListManager Web Interface
+Date: Thu, 18 Jul 2002 13:44:55 -0500
+Subject: [Lockergnome Penguin Shell]  Retail Ready
+To: qqqqqqqqqq-lg@spamassassin.taint.org
+From: Lockergnome Penguin Shell<subscriptions@lockergnome.com>
+List-Unsubscribe: <mailto:leave-lglinux-2534371U@sprocket.lockergnome.com>
+List-Subscribe: <mailto:subscribe-lglinux@sprocket.lockergnome.com>
+List-Owner: <mailto:owner-lglinux@sprocket.lockergnome.com>
+X-URL: <http://www.lockergnome.com/>
+X-List-Host: Lockergnome <http://www.lockergnome.com/>
+Reply-To: leave-lglinux-2534371U@sprocket.lockergnome.com
+Sender: bounce-lglinux-2534371@sprocket.lockergnome.com
+Message-Id: <LISTMANAGERSQL-2534371-1682976-2002.07.18-13.46.02--qqqqqqqqqq-lg#spamassassin.taint.org@sprocket.lockergnome.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+
+<html><head><!--
+
+      CLICK HERE to read this newsletter on the Web for FREE:
+
+      <a href="http://www.lockergnome.com/issues/penguinshell/20020717.html">
+      http://www.lockergnome.com/issues/penguinshell/20020717.html
+      </a>
+
+      Don't worry about anything else below this paragraph.
+      It's for those with HTML e-mail clients. Just go to
+      the above listed web address to view this issue
+      perfectly in your web browser. Thanks again! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+ body      { BACKGROUND-IMAGE: 
+url(http://www.lockergnome.com/images/issue/top-right.gif); 
+scrollbar-3dlight-color: #DADADA; scrollbar-arrow-color: #17514B; 
+scrollbar-base-color: #007C7A; scrollbar-darkshadow-color: #808080; 
+scrollbar-face-color: #C0C0C0; scrollbar-highlight-color: #DADADA; 
+scrollbar-shadow-color: #808080 }
+ a:link    { COLOR: RED; TEXT-DECORATION: underline }
+ a:visited { COLOR: #FF8080; TEXT-DECORATION: underline }
+ a:active  { color: #000000; TEXT-DECORATION: none }
+ a:hover   { color: #820000; TEXT-DECORATION: none }
+ p.title   { BACKGROUND: #C0C0C0; BORDER-BOTTOM: #808080 4px solid; BORDER-LEFT: 
+
+#DADADA 4px solid; BORDER-RIGHT: #808080 4px solid; BORDER-TOP: #DADADA 4px 
+solid; COLOR: #000000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, 
+Arial; FONT-SIZE: 14pt; FONT-WEIGHT: normal }
+ p.news    { BACKGROUND: #C0C0C0; BORDER-BOTTOM: #808080 4px solid; BORDER-LEFT: 
+
+#DADADA 4px solid; BORDER-RIGHT: #808080 4px solid; BORDER-TOP: #DADADA 4px 
+solid; COLOR: #000000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, 
+Arial; FONT-SIZE: 18pt; FONT-WEIGHT: normal }
+ p.sidebar { BACKGROUND: #DADADA; BORDER-BOTTOM: #C0C0C0 3px solid; BORDER-LEFT: 
+
+#FFFFFF 3px solid; BORDER-RIGHT: #C0C0C0 3px solid; BORDER-TOP: #FFFFFF 3px 
+solid; COLOR: #000000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, 
+Arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-ALIGN: center }
+ .link     { BACKGROUND: #DADADA; BORDER-BOTTOM: #C0C0C0 3px solid; BORDER-LEFT: 
+
+#FFFFFF 3px solid; BORDER-RIGHT: #C0C0C0 3px solid; BORDER-TOP: #FFFFFF 3px 
+solid; COLOR: #808080; font-size: 9pt; font-family: Verdana; font-weight: bold; 
+padding: 3px; width: 100% }
+ .url      { font-size: 8pt; font-family: Verdana, Tahoma, Arial }
+ .fixed    { font-family: courier, courier new; font-size: 10px }
+-->
+</style><title>20020717 Lockergnome Penguin Shell</title></head>
+
+<body   MARGINHEIGHT="0" TOPMARGIN="0" BOTTOMMARGIN="0" bgcolor="#FFFFFF"   
+style="BACKGROUND-POSITION: right top; 
+BACKGROUND-REPEAT: no-repeat" MARGINWIDTH="0" LEFTMARGIN="0" rightmargin="0" 
+text="#000000" alink="#008080" link="RED" 
+vlink="RED">
+
+<!-- background="http://images.lockergnome.com/images/bg.head.gray.gif" 
+bgcolor="#C0C0C0" left width="610" 
+background="http://images.lockergnome.com/images/sp.back.top-r1.gif" -->
+
+ <table width="100%" border="0" cellspacing="0" cellpadding="7" align="CENTER" 
+valign="MIDDLE">
+  <tr><td background="http://www.lockergnome.com/images/issue/top-left.gif" 
+nowrap valign="middle" align="center" 
+colspan="2">
+
+ <!-- TOP BANNER AD -->
+ <center>
+ <a href="http://www.lockergnome.com/"><img 
+src="http://images.lockergnome.com/images/gnomedaily.gif" width="50" height="60" 
+
+hspace="5" alt="Lockergnome" border="0"></a>
+
+<a href="http://www.qksrv.net/click-471546-487847">
+<img src="http://www.qksrv.net/image-471546-487847" width="468" height="60" 
+alt="Linux Central" border="0"></a>
+<br>
+</center>
+ 
+ <!-- TOP BANNER AD -->
+
+ <!--#include virtual="/include/banner.txt" -->
+
+ </td></tr>
+
+  <tr><td valign="top" bgcolor="#FFFFFF"><font style="font-size: 10pt" 
+face="Verdana, Tahoma, Arial" size="2">
+
+<!-- NEWS -->
+
+<table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p class="news">
+&nbsp; 07.17.2002 PenguinREPORT</p></td></tr></table><p>
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>CAREER SERVICES FROM LOCKERGNOME AND DICE.COM:</b> We've teamed up with
+Dice.com to bring you a full service I.T. career enhancement solution.
+Whether you are looking for your
+<a href="http://seeker.dice.com/jobsearch/jobsearch.epl?rel_code=14">dream 
+job</a>
+or trying to
+<a href="http://seeker.dice.com/jobsearch/jobsearch.epl?rel_code=14">hire 
+talented people</a>,
+the full-featured career resource center is the place to start. Find your
+<a href="http://seeker.dice.com/jobsearch/jobsearch.epl?rel_code=14">IT talent 
+solution</a>
+today!
+</font></td></tr></table></p>
+I've very excited about the in-planning Penguin Shell volunteer project. 
+Apparently, you are too. I've received more than 100 emails from readers <a 
+href="mailto:tony@lockergnome.com?subject=Penguin Shell Volunteer 
+Skills">volunteering</a> a wide range of IT skills for charitable organizations. 
+
+
+
+
+Linux users, Windows users, even a few Mac users are ready, willing and able to 
+spend their own precious off time providing qualified technical skills for a 
+good cause. I've also gotten more than two dozen suggestions for <a 
+href="mailto:tony@lockergnome.com?subject=Penguin Shell Organization 
+Suggestion">organizations</a> that might be in need of such skills. And, I've 
+seen some very interesting suggestions for <a 
+href="mailto:tony@Lockergnome.com?subject=Penguin Shell Volunteer name 
+suggestion">names</a> for our project. Feel free to click through on any of the 
+above links to join the ever-growing bandwagon. Do me a favor, though. keep the 
+subject lines intact. It's the only way your messages will filter and sort 
+through my email system.<p>
+
+It looks like Apple may have crossed a line of irritation with its users. 
+According to <a href="http://theregister.co.uk/content/4/26269.html" 
+target="_blank">this</a> article on <a href="http://theregister.co.uk/" 
+target="_blank">The Register</a>, Apple has tacked a $100 annual fee on its
+previously free mac.com email service. It's also set the price for an OS 10.2
+upgrade at $129.<p>
+
+I won't question Apple's decision too much. Instead, it really proves how 
+difficult things have become in the tech world in the past few years. Revenues, 
+by and large, are still decreasing from the pie-in-the-sky late 90s and early 
+2000. That's left companies to scramble for new sources of income, some of which 
+
+
+
+
+were previously free. Even we at Lockergnome have felt the pinch in the past few 
+
+
+
+
+years. Never fear, though. Chris has assured us that the newsletters will remain 
+
+
+
+
+free. We have, however, begun to explore alternative income <a 
+href="http://www.gnometomes.com/" target="_blank">sources</a>.<p>
+
+On a brighter note, it looks like <a href="http://www.mandrake.com/" 
+target="_blank">Mandrake</a> has found a sweet spot. According to their most 
+recent shareholder's report, the third quarter was the strongest in the 
+company's
+history, with 1.6 million Euro (1.61 million US) in revenue. That doesn't put
+them in the black, though. According to MandrakeSoft, the strong quarter will
+only decrease operating losses. I have to wonder how much of this revenue was
+the result of the <a
+href="http://mandrakelinux.com/en/club/"target="_blank">Mandrake Linux User's
+Club</a>.<p>
+
+The news also makes me want to pay a bit more attention to Mandrake's newest
+partnership venture, an agreement with <a href="http://www.microtel.com/"
+target="_blank">Microtel</a> to provide Mandrake-loaded computers for sale on <a
+href="http://www.walmart.com/catalog/product_listing.gsp?cat=102252&dept=3944&path=0%3A3944%3A3951%3A41937%3A86796%3A102252" target="_blank">WalMart.com</a>.
+I would never have guessed that WalMart would lead the consumer Linux machine
+charge. They've had Mandrake boxes available for several months. Now, with the 
+addition of both <a href="http://www/lindows.com/" target="_blank">Lindows</a> 
+and Mandrake-equipped computers, they seem surprisingly ahead of the retail 
+computer pack. Let's hope for the best for all involved.<p>
+
+Have a great Wednesday.<p><p>
+
+<p align="right"><font style="font-size: 23pt" face="Tony Steidler-Dennison" 
+size="5">Tony
+Steidler-Dennison&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></P>
+
+<!-- TWEAK -->
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeTWEAK</p></td></tr></table><p>
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>Lockergnome readers, SAVE 50% on the Computing Encyclopedia!</b>
+Are you looking for the ultimate computing resource? Discover the
+<i>Computing Encyclopedia</i> from Smart Computing.  Regular price $59,
+SPECIAL OFFER for Lockergnome readers,
+<a 
+href="http://www.smartcomputing.com/offer/encyclopediaset.asp?source=2000">get 
+your set TODAY</a>, ONLY $29.95!
+</font></td></tr></table></p>
+<b>Checking Mail With KMail</b><p>
+
+I've recently become a KDE convert - impressed enough with KDE-3 to move me from 
+
+my longtime desktop friend Gnome. While I use a combination of fetchmail, 
+procmail and pine for reading and filtering my email, KMail is a strong 
+contender in the email race. As you'd guess, it's fully integrated into the KDE 
+desktop, ready for a quick setup and easy use.<p>
+
+There's one drawback to KMail, though, in my opionion. That's that it doesn't 
+automatically check your email by default when the program is opened. As much 
+time as I spend talking about saving key and mouse strokes, you knew the 
+additional step to check your email after opening the program would be an 
+irritation to this Penguin. However, changing the problem is a quick and simple 
+configuration issue.<p>
+
+To force KMail to check your email when opened, right-click on the KMail icon in 
+
+your KDE panel. Select "Preferences" and the "Execute" tab. In the Execute 
+window, change the command line to read:<p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;kmail --check -caption "%c" %i %m<p>
+
+The addition of the --check option will force KMail to bring you your mail when 
+you open the program.<p>
+
+Fewer keystrokes make a happy geek, right?<p> <p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeCORE">Send us a 
+GnomeTWEAK</a></span>
+
+<!-- CORE -->
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeCORE</p></td></tr></table><p>
+
+<b>Kernel Configuration - Part XIII</b><p>
+
+As you well know, Linux is simply the most robust operating system for 
+networking around. With its roots squarely in the network, Linux has managed to 
+stay ahead of the pack in virtually every respect related to networks. It should 
+
+come as little suprise, then, that the network section of your Linux kernel 
+configuration is dense with details and options.<p>
+
+I will say that I warned you on Monday - there are going to be some sections of 
+the kernel configuration series where I just can't give you a stock 
+configuration that will work in every case. Networking is one of those areas. 
+You're going to have to give some thought as to how your network is or will be 
+used and the level of security you want to provide (both internal and external). 
+
+Then, it's a matter of finding the solutions to those options.<p>
+
+For security issues, I can recommend several good articles and HowTos:<p>
+
+<a class="url" 
+href="http://www.linux.org/docs/ldp/howto/Security-Quickstart-HOWTO/index.html">The Linux Security Quickstart HowTo</a><br>
+&nbsp;&nbsp;covers security on a high level, with a good discussion of kernel 
+configuration issues<p>
+
+<a class="url" href="http://www.linuxplanet.com/linuxplanet/tutorials/211/1/" 
+target="_blank">Linux Network Security from Linux Planet</a><br>
+&nbsp;&nbsp;a nice tutorial on network security<p>
+<a class="url" href="http://www.linuxgazette.com/issue77/lechnyr.html" 
+target="_blank">Network Security with /proc/sys/net/ipv4</a><br>
+&nbsp;&nbsp;other approaches to network security<p>
+
+
+These should get you started. Tomorrow, we'll cover telephony support in your 
+Linux kernel.<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeCORE">Send us a GnomeCORE 
+tip</a></span>
+
+<!-- FILE -->
+
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeFILE</p></td></tr></table><p>
+
+<b>PyMP3Cut</b><p>
+
+<a class="url" href=""></a><br>
+<a class="url" 
+href="http://www.librelogiciel.com/software/PyMP3Cut/">http://www.librelogiciel.com/software/PyMP3Cut/</a><p>
+
+"PyMP3Cut is a Python commandline tool designed to cut huge (> 100MB) MP3 files 
+at high speed without requiring the extra disk space and processing time usually 
+
+needed by visual audio editing tools, which convert the MP3 format to more 
+easily manageable formats like WAV before doing anything. It reads and cuts 
+simultaneously according to the autodetected MP3 frame rate and a timeline 
+passed as a commandline argument."<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeFILE">Send us a GnomeFILE 
+suggestion</a></span>
+
+<!-- VOICE -->
+
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeVOICE</p></td></tr></table><p>
+
+<b>More Windows for Linux</b><br>
+<span class="url">Scribbled by Ken Knull</span><p>
+
+"I'm reading your Codeweavers/CrossOver project stuff, and have comments
+on another option I use.<p>
+
+"I have been using Win4Lin ( <a href="http://www.netraverse.com/" 
+target="_blank">http://www.netraverse.com/</a> ) for several
+months now, on an i686 boxen which runs RH 7.2, and now also
+most windoze (nonXP / NTFS apps).<p>
+
+"I love it, and highly recommend it, and if you'd like more details /
+data let me know."<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeVOICE">Speak your 
+GnomeVOICE</a></span>
+
+<!-- CLICK -->
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeCLICK</p></td></tr></table><p>
+
+<b>Linux PR</b><p>
+
+<a class="url" href="http://linuxpr.com/">http://linuxpr.com/</a><p>
+
+If the daily Linux news sites are starting to get you down, maybe it's time for 
+a change. Linux PR is an up-to-the-minute listing of events and developments in 
+the Linux world. The layout is attractive, with all the most recent articles in 
+descending order on the front page. It makes quick scans easy. The only real 
+downside to the news on the site is that some of it is very, very 
+company-oriented - clearly the work of PR firms cranking out press releases. 
+Other than that, Linux PR is a useful site for checking in and keeping up on 
+your favorite OS.<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeCLICK">Suggest a 
+GnomeCLICK</a></span>
+
+<!-- ADMINISTRIVIA -->
+<p><br><table cellpadding="0" cellspacing="0" border="0"><tr><td><p 
+class="sidebar">
+<table cellpadding="7" cellspacing="0" border="0"><tr><td><font 
+style="font-size: 8pt" face="Verdana, Tahoma, Arial" 
+size="1">
+<a 
+href="http://www.lockergnome.com/issues/penguinshell/20020717.html">http://www.lockergnome.com/issues/penguinshell/20020717.html</a>
+<p>Your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - To unsubscribe or 
+change your delivery address, please 
+visit the <A HREF="http://www.lockergnome.com/changesub.html">subscription 
+management</A>
+page. Use of the Gnome moniker by Penguin Shell does not imply endorsement of 
+the Gnome Desktop Environment. Penguin 
+Shell is an equal-opportunity desktop employer. For further information, please 
+refer to the GnomeCREDITS in the 
+sidebar.</font></td></tr></table></p></td></tr></table>
+
+
+<!--#include virtual="/include/subscription2.txt" -->
+
+</font></td>
+<td background="http://images.lockergnome.com/images/issue/sidebar.gif" 
+VALIGN="top" align="left" width="145"><font style="font-size: 8pt" 
+color="#990000" face="Verdana, Tahoma, Arial" size="1">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p 
+class="sidebar">LOOK OVER HERE</p></td></tr></table><br>
+
+&nbsp;<a href="http://www.gnometomes.com/">Download Tip eBooks</a><br>
+<p>
+&nbsp;<a href="http://windowsdaily.lockergnome.com/">Latest Windows 
+Daily</a><br>
+&nbsp;<a href="http://digitalmedia.lockergnome.com/">Latest Digital
+Media</a><br>
+&nbsp;<a href="http://techspecialist.lockergnome.com/">Latest Tech 
+Specialist</a><br>
+&nbsp;<a href="http://penguinshell.lockergnome.com/">Latest Penguin 
+Shell</a><br>
+&nbsp;<a href="http://applecore.lockergnome.com/">Latest Apple Core</a><br>
+&nbsp;<a href="http://webmasterweekly.lockergnome.com/">Latest Web 
+Weekly</a><br>
+&nbsp;<a href="http://updates.lockergnome.com/">Latest Bits &amp; Bytes</a><br>
+&nbsp;<A HREF="http://www.gnomeradio.com/">Latest Audio Show</A><BR>
+<p>
+&nbsp;<A HREF="http://lockergnome.pricegrabber.com/">Low Price Search</A><br>
+&nbsp;<A HREF="http://www.gnomedex.com/">Our Tech Conference</A><br>
+<p>
+&nbsp;<a target="_blank" 
+href="http://www.gnometomes.com/tome/000628.html">Microsoft Office Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000627.html">PC 
+Productivity Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000626.html">Cool 
+Internet Tips</a><br>
+&nbsp;<a target="_blank" 
+href="http://www.gnometomes.com/tome/000625.html">Windows 2000 Tips</a><br>
+&nbsp;<a target="_blank" 
+href="http://www.gnometomes.com/tome/000623.html">Windows XP Tips</a><br>
+<p>
+
+<center>
+<a href="http://www.gnomedex.com/" target="_blank"><img alt="See You in August!" 
+
+
+
+src="http://chris.pirillo.com/archives/Gnomedex_Banner_going.gif" width="120" 
+height="60" border="0"></a>
+</center>
+
+<p>
+&nbsp;<a href="http://www.lockergnome.com/recommend.html">Tell a Friend About 
+Us!</a><br>
+&nbsp;<a href="http://www.lockergnome.com/advertise.html">Advertise With 
+Us</a><br>
+&nbsp;<A HREF="http://www.lockergnome.com/jobs.html">High-Tech Job 
+Search</A><br>
+&nbsp;<a href="http://www.lockergnome.com/chat.html">Chat With Gnomies</a><br>
+&nbsp;<a href="http://www.lockergnome.com/webcam.html">Watch The Webcams</a><br>
+&nbsp;<a
+href="https://www.sandhills.com/secure/smartcomputing/cpufreetrial3.asp?source=cp491bonus">Computer Power User</a><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/issues/">Read Past Issues</a><br>
+&nbsp;<a href="http://www.xteq.com/">Download X-Setup</a><br>
+&nbsp;<a href="http://www.lockergnome.com/about.html">About Lockergnome</a><br>
+&nbsp;<a href="http://www.lockergnome.com/privacy.html">Our Privacy 
+Policy</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html">View More 
+Options</a><br>
+&nbsp;<a href="http://www.lockergnome.com/lockergnome.xml">Our XML / RSS 
+Feed</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html#syndicate">Syndicate Our 
+Tips</a><br>
+&nbsp;<a href="http://www.lockergnome.com/images/lockerlink.gif">Link To 
+Lockergnome</a><br>
+&nbsp;<A 
+HREF="http://lockergnome.pricegrabber.com/search_getprod.php/isbn=0966103254/">Get Chris's Book</A><br>
+&nbsp;<A HREF="http://www.tvcd.biz/lockergnome">Win a Digital Camera</A><br>
+<p>
+
+&nbsp;<a 
+href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#101;&#100;&#98;&#97;&#99;&#107;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Site Feedback">General Feedback</a><br>
+&nbsp;<A HREF="http://chris.pirillo.com/">Chris's Blog</A><BR>
+&nbsp;<a href="mailto:tony@lockergnome.com?subject=Lockergnome Penguin Shell 
+Comment">E-mail the Editor</a><br>
+
+<!-- GNOME CERTIFICATION -->
+<!-- END GNOME CERTIFICATION -->
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%" 
+bgcolor="#FFEEDD"><tr><td><p 
+class="sidebar">GNOMESPECIALS</p></td></tr></table><br>
+&nbsp;<a target="_blank" title="Share your team/project contacts, calendars, 
+tasks, etc. in MS Oulook 2002, without a server!" 
+href="http://outlook.4team.biz/?fr=gnome">Manage Your Workgroup</a><br>
+&nbsp;<a target="_blank" title="Software for filling in paper forms on your 
+computer instead of a typewriter" 
+href="http://www.colorpilot.com/typewriter.html">Form Pilot</a><br>
+&nbsp;<a target="_blank" title="It's both fun and functional! Hear the time, set 
+
+alarms, style your taskbar clock, sync your PC time, and more. Try Say the Time 
+free for
+30 days." href="http://www.provenio.ws/saythetime/">Say the Time 5.0</a><br>
+&nbsp;<a target="_blank" title="Convert MP3, WAV, AVI, JPG, GIF, and PNG to the 
+SWF format for no buffer streaming" 
+href="http://www.gfx2swf.com/gnome-special/">Boomer - Stream Now</a><br>
+&nbsp;<a target="_blank" title="Creating Web/CD catalogs with HyperPublish is 
+really a snap! Not just an editor but a quick, powerful all-in-one environment 
+for creating stunning catalogs, CDs and Web sites!" 
+href="http://www.hyperpublish.com/create_a_catalog_000018.htm">Create Web/CD 
+catalog</a><br>
+&nbsp;<a target="_blank" title="Create your Web site in minutes with this 
+easy-to-use visual tool!" 
+href="http://www.easywebeditor.com/create_web_page_000004.htm">Easy Web 
+Editor</a><br>
+&nbsp;<a target="_blank" title="Capture TEXT seen in folder trees, file lists, 
+database reports, dialog boxes, menus, status lines, including areas that you 
+could not highlight with your mouse. (Chris cannot live without it!;)" 
+href="http://www.structurise.com/kleptomania">Kleptomania</a><br>
+&nbsp;<a target="_blank" title="Organize all your mp3 collection in seconds! You 
+
+can rename mp3s quickly and easily, write tag information in batch, from file 
+names or import it from cddb. Get your free trial now!" 
+href="http://www.softpointer.com/tr_2.htm">Tag&amp;Rename</a><br>
+&nbsp;<a target="_blank" title="You will enjoy countless hours of fun with 
+Pretty Good Solitaire!  Play 500 solitaire card games, from classic games like 
+Klondike, FreeCell, and Spider, to original games found nowhere else.  Enjoy 
+lush graphics, large easy-to-read cards, statistics, and quests, a unique new 
+way to play for points." href="http://www.goodsol.com/lockergnome.html">Pretty 
+Good Solitaire</a><br>
+&nbsp;<a target="_blank" title="Choosing color combinations for the web is a 
+careful balance between a scheme designed to draw attention; while being 
+respectful of established color-harmony principles.  ColorCombo's four panels 
+scroll, allowing side-by-side color comparisons.  Also text on background 
+checker, 4096 color array, + more. FREE." 
+href="http://www.colorcombo.com">Visualize Color Combos</a><br>
+&nbsp;<a target="_blank" title="FirstStop WebSearch(TM) Deluxe Edition, a FREE 
+&nbsp;<a target="_blank" title="Ecobuilder is the ultimate web application that allows you to get your portal, online community, intranet, extranet or any web site project online by saving time, money and manpower. Gnomies receive $400 off the cost of the software." href="http://www.ecobuilder.com/lockergnome.cfm">Ecobuilder</a><br>
+&nbsp;<a target="_blank" title="Software for organizing your personal book collection. Add books quickly - no typing required! Group, filter, sort and print your database. Click for free trial version." href="http://www.collectorz.com/book?from=lockergnome">Book Collector</a><br>
+<p align="center"><a href="http://www.lockergnome.com/special.html"><B>Get Listed Here</B></a></p>
+Question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother? 
+
+<p>
+
+<!--#include virtual="/include/subscribeside.txt" -->
+
+<p>
+<a href="http://images.lockergnome.com/images/video/.WMV"></a>
+
+<p>&nbsp;<p><font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<table align="center" border="0"><tr><td><a href="http://www.lockergnome.com/webcam.html">
+<img width="125" height="94" alt="Lockergnome Webcam Image" src="http://www.lockergnome.com/images/webcam/steidler.jpg"></a></td></tr>
+<tr><td align="center"><font style="font-size: 7pt" size="1" face="Verdana, Tahoma, Arial">CLICK HERE TO ZOOM</font></td></tr></table>
+</font>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">LOOK IT UP</p></td></tr></table><br>
+<form method="post" action="http://www.lockergnome.com/cgi-bin/htsearch"><input type="hidden" name="method" value="and"><input type="hidden" name="format" value="long"><input type="hidden" name="sort" value="score"><input type="hidden" name="config" value="htdig"><input type="hidden" name="restrict" value=""><input type="hidden" name="exclude" value=""><input type="text" size="14" value=" Lockergnome" name="words"><input type="submit" class="Press" value="go"></form>
+<FORM method="get" action="http://www.amazon.com/exec/obidos/external-search"><INPUT type="text" name="keyword" size="14" value=" Amazon"><INPUT type="hidden" name="mode" value="blended"><INPUT type="hidden" name="tag" value="lockergnomedigit"><INPUT TYPE="submit" VALUE="go" class="Press" NAME="Go"></form>
+<form action="http://www.gnomejob.com/" method="POST"><input type="hidden" name="num_per_page" value="20"><input type="hidden" name="num_to_retrieve" value="500"><input type="hidden" name="iquery" value=""><input type="hidden" name="vlink_color" value="008080"><input type="hidden" name="link_color" value="990000"><input type="hidden" name="background_color" value="FFFFFF"><input type="hidden" name="text_color" value="000000"><input type="hidden" name="title_image" value="http://www.lockergnome.com/images/lgtopper.gif"><input type="hidden" name="site_url" value="http://www.lockergnome.com/"><input type="hidden" name="site_title" value="Lockergnome"><input type="hidden" name="title_text" value="Lockergnome"><input type="hidden" name="custom" value="1"><input value=" Jobs" type="TEXT" name="query" size="14"><input class="Press" type="SUBMIT" value="go"></form>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Hardware" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Software" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">BYTE ME NOW</p></td></tr></table><br>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+&copy;2002, Lockergnome LLC. ISSN: 1095-3965. All Rights Reserved. Please read our <a href="http://www.lockergnome.com/terms.html">Terms of Service</a>. Our Web site is hosted by <a href="http://www.digitaldaze.com/?lg">DigitalDaze</a>. Domain registered at <a href="http://www.dnscentral.com/?lg">DNS Central</a>.
+
+</table>
+</body>
+</html>
+
+

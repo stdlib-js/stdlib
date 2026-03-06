@@ -1,0 +1,12 @@
+
+reloadPresentation( file )
+    Reloads a presentation.
+
+    Examples
+    --------
+    > reloadPresentation();
+
+    See Also
+    --------
+    loadPresentation, redraw
+

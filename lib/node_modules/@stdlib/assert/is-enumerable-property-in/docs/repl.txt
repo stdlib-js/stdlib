@@ -1,0 +1,35 @@
+
+{{alias}}( value, property )
+    Tests if an object's own or inherited property is enumerable.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    property: any
+        Property to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an object's own or inherited property is
+        enumerable.
+
+    Examples
+    --------
+    > var obj = { 'boop': true };
+    > var desc = {};
+    > desc.configurable = true;
+    > desc.enumerable = false;
+    > desc.writable = true;
+    > desc.value = true;
+    > {{alias:@stdlib/utils/define-property}}( obj, 'beep', desc );
+    > var bool = {{alias}}( obj, 'boop' )
+    true
+    > bool = {{alias}}( obj, 'beep' )
+    false
+
+    See Also
+    --------
+

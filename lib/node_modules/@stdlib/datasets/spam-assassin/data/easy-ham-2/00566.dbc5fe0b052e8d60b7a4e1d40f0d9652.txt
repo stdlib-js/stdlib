@@ -1,0 +1,86 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug  6 11:12:51 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C722844126
+	for <jm@localhost>; Tue,  6 Aug 2002 06:08:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:08:40 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g73GNPv19494 for <jm-razor@jmason.org>; Sat, 3 Aug 2002 17:23:25 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17b1WY-0005lJ-00; Sat,
+    03 Aug 2002 09:13:02 -0700
+Received: from adsl-209-204-188-196.sonic.net ([209.204.188.196]
+    helo=sidebone.sidney.com) by usw-sf-list1.sourceforge.net with esmtp
+    (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17b1Vx-0006Uz-00 for <razor-users@lists.sourceforge.net>; Sat,
+    03 Aug 2002 09:12:25 -0700
+Received: from siddhi (siddhi.sidney.com [192.168.93.20]) by
+    sidebone.sidney.com (8.12.5/8.12.5) with SMTP id g73GCIvJ020067 for
+    <razor-users@lists.sourceforge.net>; Sat, 3 Aug 2002 09:12:18 -0700
+Message-Id: <01c301c23b08$8a3cc210$145da8c0@sidney.com>
+From: "Sidney Markowitz" <sidney@sidney.com>
+To: <razor-users@example.sourceforge.net>
+References: <3D4B0146.20604@perkel.com> <02080219195506.20486@neofelis>
+    <20020803045955.GA21527@misery.proulx.com>
+Subject: Re: [Razor-users] False Positives on EFF Messages
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+X-Scanned-BY: MIMEDefang 2.16 (www . roaringpenguin . com / mimedefang)
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Sat, 3 Aug 2002 09:12:18 -0700
+Date: Sat, 3 Aug 2002 09:12:18 -0700
+
+Bob Proulx <bob@proulx.com> wrote:
+To: <razor-users@example.sourceforge.net>
+Sent: Friday, August 02, 2002 9:59 PM
+Subject: Re: [Razor-users] False Positives on EFF Messages
+
+
+> If spammers spoof a From: Bugtraq address then their
+> spam is automatically revoked by you.
+
+Good point, but notice that cmeclax said in his example procmail recipe:
+
+   :0
+   * !^(some Bugtraq-specific header)
+
+It should be possible to pick a header that a spammer is not likely forge. He was
+even careful not to reveal in public just what header(s) he is checking.
+
+ -- sidney
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

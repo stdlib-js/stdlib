@@ -1,0 +1,95 @@
+
+{{alias}}( [k, λ] )
+    Returns an Erlang distribution object.
+
+    Parameters
+    ----------
+    k: number (optional)
+        Shape parameter. Must be a positive integer. Default: `1.0`.
+
+    λ: number (optional)
+        Rate parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    erlang: Object
+        Distribution instance.
+
+    erlang.k: number
+        Shape parameter. If set, the value must be a positive integer.
+
+    erlang.lambda: number
+        Rate parameter. If set, the value must be greater than `0`.
+
+    erlang.entropy: number
+        Read-only property which returns the differential entropy.
+
+    erlang.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    erlang.mean: number
+        Read-only property which returns the expected value.
+
+    erlang.mode: number
+        Read-only property which returns the mode.
+
+    erlang.skewness: number
+        Read-only property which returns the skewness.
+
+    erlang.stdev: number
+        Read-only property which returns the standard deviation.
+
+    erlang.variance: number
+        Read-only property which returns the variance.
+
+    erlang.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    erlang.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    erlang.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    erlang.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    erlang.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var erlang = {{alias}}( 6, 5.0 );
+    > erlang.k
+    6
+    > erlang.lambda
+    5.0
+    > erlang.entropy
+    ~0.647
+    > erlang.kurtosis
+    1.0
+    > erlang.mean
+    1.2
+    > erlang.mode
+    1.0
+    > erlang.skewness
+    ~0.816
+    > erlang.stdev
+    ~0.49
+    > erlang.variance
+    0.24
+    > erlang.cdf( 3.0 )
+    ~0.997
+    > erlang.logpdf( 3.0 )
+    ~-4.638
+    > erlang.mgf( -0.5 )
+    ~0.564
+    > erlang.pdf( 3.0 )
+    ~0.01
+    > erlang.quantile( 0.8 )
+    ~1.581
+
+    See Also
+    --------
+

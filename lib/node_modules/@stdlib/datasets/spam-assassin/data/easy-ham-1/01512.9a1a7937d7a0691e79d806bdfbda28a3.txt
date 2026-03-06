@@ -1,0 +1,105 @@
+From spamassassin-commits-admin@lists.sourceforge.net  Wed Oct  2 16:02:39 2002
+Return-Path: <spamassassin-commits-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C4BD016F21
+	for <jm@localhost>; Wed,  2 Oct 2002 16:01:02 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 16:01:02 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g92DM0K10237 for <jm@jmason.org>; Wed, 2 Oct 2002 14:22:07 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17wjSV-00083D-00; Wed,
+    02 Oct 2002 06:22:35 -0700
+Received: from usw-sf-sshgate.sourceforge.net ([216.136.171.253]
+    helo=usw-sf-netmisc.sourceforge.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17wjPX-0005v9-00 for <spamassassin-commits@lists.sourceforge.net>;
+    Wed, 02 Oct 2002 06:19:31 -0700
+Received: from usw-pr-cvs1-b.sourceforge.net ([10.5.1.7]
+    helo=usw-pr-cvs1.sourceforge.net) by usw-sf-netmisc.sourceforge.net with
+    esmtp (Exim 3.22 #1 (Debian)) id 17wjPX-00056m-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 02 Oct 2002 06:19:31
+    -0700
+Received: from yyyyason by usw-pr-cvs1.sourceforge.net with local (Exim 3.22
+    #1 (Debian)) id 17wjPW-00014B-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Wed, 02 Oct 2002 06:19:30
+    -0700
+To: spamassassin-commits@example.sourceforge.net
+Message-Id: <E17wjPW-00014B-00@usw-pr-cvs1.sourceforge.net>
+From: Justin Mason <yyyyason@users.sourceforge.net>
+Subject: [SACVS] CVS: spamassassin/lib/Mail SpamAssassin.pm,1.115.2.11,1.115.2.12
+Sender: spamassassin-commits-admin@example.sourceforge.net
+Errors-To: spamassassin-commits-admin@example.sourceforge.net
+X-Beenthere: spamassassin-commits@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-commits-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-commits@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-commits.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-commits>
+X-Original-Date: Wed, 02 Oct 2002 06:19:30 -0700
+Date: Wed, 02 Oct 2002 06:19:30 -0700
+
+Update of /cvsroot/spamassassin/spamassassin/lib/Mail
+In directory usw-pr-cvs1:/tmp/cvs-serv4019/lib/Mail
+
+Modified Files:
+      Tag: b2_4_0
+	SpamAssassin.pm 
+Log Message:
+fixed bug 1033: -R and -W were not respecting auto_whitelist_path
+
+Index: SpamAssassin.pm
+===================================================================
+RCS file: /cvsroot/spamassassin/spamassassin/lib/Mail/SpamAssassin.pm,v
+retrieving revision 1.115.2.11
+retrieving revision 1.115.2.12
+diff -b -w -u -d -r1.115.2.11 -r1.115.2.12
+--- SpamAssassin.pm	24 Sep 2002 18:51:37 -0000	1.115.2.11
++++ SpamAssassin.pm	2 Oct 2002 13:19:28 -0000	1.115.2.12
+@@ -696,7 +696,13 @@
+ }
+ 
+ ###########################################################################
+-# non-public methods.
++
++=item $f->init ($use_user_prefs)
++
++Read and parse the current configuration. C<$use_user_prefs> can
++be C<0> (do not read user preferences) or C<1> (do).
++
++=cut
+ 
+ sub init {
+   my ($self, $use_user_pref) = @_;
+@@ -767,6 +773,9 @@
+ 
+   # TODO -- open DNS cache etc. if necessary
+ }
++
++###########################################################################
++# non-public methods.
+ 
+ sub read_cf {
+   my ($self, $path, $desc) = @_;
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-commits mailing list
+Spamassassin-commits@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-commits
+
+

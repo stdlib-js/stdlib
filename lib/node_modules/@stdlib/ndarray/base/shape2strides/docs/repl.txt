@@ -1,0 +1,61 @@
+
+{{alias}}( shape, order )
+    Generates a stride array from an array shape.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    order: string
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style).
+
+    Returns
+    -------
+    out: Array
+        Stride array.
+
+    Examples
+    --------
+    > var d = [ 3, 2 ];
+    > var s = {{alias}}( d, 'row-major' )
+    [ 2, 1 ]
+    > d = [ 2, 1, 10 ];
+    > s = {{alias}}( d, 'column-major' )
+    [ 1, 2, 2 ]
+
+
+{{alias}}.assign( shape, order, out )
+    Generates a stride array from an array shape and assigns results to a
+    provided output array.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    order: string
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style).
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Stride array.
+
+    Examples
+    --------
+    > var d = [ 2, 1, 10 ];
+    > var out = [ 0, 0, 0 ];
+    > var s = {{alias}}.assign( d, 'row-major', out )
+    [ 10, 10, 1 ]
+    > var bool = ( s === out )
+    true
+
+    See Also
+    --------
+

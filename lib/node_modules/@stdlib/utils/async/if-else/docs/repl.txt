@@ -1,0 +1,59 @@
+
+{{alias}}( predicate, x, y, done )
+    If a predicate function returns a truthy value, returns `x`; otherwise,
+    returns `y`.
+
+    A predicate function is provided a single argument:
+
+    - clbk: callback to invoke upon predicate completion.
+
+    The callback function accepts two arguments:
+
+    - error: error object.
+    - bool: condition used to determine whether to invoke `x` or `y`.
+
+    The `done` callback is invoked upon function completion and is provided at
+    most two arguments:
+
+    - error: error object.
+    - result: either `x` or `y`.
+
+    Execution is *not* guaranteed to be asynchronous. To guarantee asynchrony,
+    wrap the `done` callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    Parameters
+    ----------
+    predicate: Function
+        Predicate function.
+
+    x: any
+        Value to return if a condition is truthy.
+
+    y: any
+        Value to return if a condition is falsy.
+
+    done: Function
+        Callback to invoke upon completion.
+
+    Examples
+    --------
+    > function predicate( clbk ) {
+    ...     setTimeout( onTimeout, 0 );
+    ...     function onTimeout() {
+    ...         clbk( null, true );
+    ...     }
+    ... };
+    > function done( error, result ) {
+    ...     if ( error ) {
+    ...         throw error;
+    ...     }
+    ...     console.log( result );
+    ... };
+    > {{alias}}( predicate, 'beep', 'boop', done )
+    'beep'
+
+    See Also
+    --------
+

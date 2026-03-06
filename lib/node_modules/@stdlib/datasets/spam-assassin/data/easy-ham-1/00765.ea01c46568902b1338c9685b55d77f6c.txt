@@ -1,0 +1,601 @@
+From fork-admin@xent.com  Tue Sep 24 15:52:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B212716F03
+	for <jm@localhost>; Tue, 24 Sep 2002 15:52:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 15:52:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8OEMYC07324 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 15:22:38 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C5FBB294103; Tue, 24 Sep 2002 07:18:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hall.mail.mindspring.net (hall.mail.mindspring.net
+    [207.69.200.60]) by xent.com (Postfix) with ESMTP id EF6CD29409A for
+    <fork@xent.com>; Tue, 24 Sep 2002 07:17:45 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    hall.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17tqYy-0005TE-00;
+    Tue, 24 Sep 2002 10:21:20 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net (Unverified)
+Message-Id: <p05111a02b9b61e7e3e3f@[66.149.49.6]>
+To: Digital Bearer Settlement List <dbs@philodox.com>, fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: The Next World Order
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 24 Sep 2002 09:52:15 -0400
+
+http://newyorker.com/fact/content/?020401fa_FACT1
+
+The New Yorker
+
+THE NEXT WORLD ORDER
+by NICHOLAS LEMANN
+The Bush Administration may have a brand-new doctrine of power.
+Issue of 2002-04-01
+Posted 2002-03-25
+
+When there is a change of command-and not just in government-the new people
+often persuade themselves that the old people were much worse than anyone
+suspected. This feeling seems especially intense in the Bush
+Administration, perhaps because Bill Clinton has been bracketed by a
+father-son team. It's easy for people in the Administration to believe
+that, after an unfortunate eight-year interlude, the Bush family has
+resumed its governance-and about time, too.
+
+The Bush Administration's sense that the Clinton years were a waste, or
+worse, is strongest in the realms of foreign policy and military affairs.
+Republicans tend to regard Democrats as untrustworthy in defense and
+foreign policy, anyway, in ways that coincide with what people think of as
+Clinton's weak points: an eagerness to please, a lack of discipline.
+Condoleezza Rice, Bush's national-security adviser, wrote an article in
+Foreign Affairs two years ago in which she contemptuously accused Clinton
+of "an extraordinary neglect of the fiduciary responsibilities of the
+commander in chief." Most of the top figures in foreign affairs in this
+Administration also served under the President's father. They took office
+last year, after what they regard as eight years of small-time flyswatting
+by Clinton, thinking that they were picking up where they'd left off.
+
+Not long ago, I had lunch with-sorry!-a senior Administration
+foreign-policy official, at a restaurant in Washington called the Oval
+Room. Early in the lunch, he handed me a twenty-seven- page report, whose
+cover bore the seal of the Department of Defense, an outline map of the
+world, and these words:
+
+Defense Strategy for the 1990s:
+The Regional Defense Strategy
+Secretary of Defense
+Dick Cheney
+January 1993
+
+One of the difficulties of working at the highest level of government is
+communicating its drama. Actors, professional athletes, and even elected
+politicians train for years, go through a great winnowing, and then perform
+publicly. People who have titles like Deputy Assistant Secretary of Defense
+are just as ambitious and competitive, have worked just as long and hard,
+and are often playing for even higher stakes-but what they do all day is go
+to meetings and write memos and prepare briefings. How, possibly, to
+explain that some of the documents, including the report that the senior
+official handed me, which was physically indistinguishable from a
+high-school term paper, represent the government version of playing
+Carnegie Hall?
+
+After the fall of the Berlin Wall, Dick Cheney, then the Secretary of
+Defense, set up a "shop," as they say, to think about American foreign
+policy after the Cold War, at the grand strategic level. The project, whose
+existence was kept quiet, included people who are now back in the game, at
+a higher level: among them, Paul Wolfowitz, the Deputy Secretary of
+Defense; Lewis Libby, Cheney's chief of staff; and Eric Edelman, a senior
+foreign-policy adviser to Cheney-generally speaking, a cohesive group of
+conservatives who regard themselves as bigger-thinking, tougher-minded, and
+intellectually bolder than most other people in Washington. (Donald
+Rumsfeld, the Secretary of Defense, shares these characteristics, and has
+been closely associated with Cheney for more than thirty years.) Colin
+Powell, then the chairman of the Joint Chiefs of Staff, mounted a
+competing, and presumably more ideologically moderate, effort to reimagine
+American foreign policy and defense. A date was set-May 21, 1990-on which
+each team would brief Cheney for an hour; Cheney would then brief President
+Bush, after which Bush would make a foreign-policy address unveiling the
+new grand strategy.
+
+Everybody worked for months on the "five-twenty-one brief," with a sense
+that the shape of the post-Cold War world was at stake. When Wolfowitz and
+Powell arrived at Cheney's office on May 21st, Wolfowitz went first, but
+his briefing lasted far beyond the allotted hour, and Cheney (a hawk who,
+perhaps, liked what he was hearing) did not call time on him. Powell didn't
+get to present his alternate version of the future of the United States in
+the world until a couple of weeks later. Cheney briefed President Bush,
+using material mostly from Wolfowitz, and Bush prepared his major
+foreign-policy address. But he delivered it on August 2, 1990, the day that
+Iraq invaded Kuwait, so nobody noticed.
+
+The team kept working. In 1992, the Times got its hands on a version of the
+material, and published a front-page story saying that the Pentagon
+envisioned a future in which the United States could, and should, prevent
+any other nation or alliance from becoming a great power. A few weeks of
+controversy ensued about the Bush Administration's hawks being
+"unilateral"-controversy that Cheney's people put an end to with denials
+and the counter-leak of an edited, softer version of the same material.
+
+As it became apparent that Bush was going to lose to Clinton, the Cheney
+team's efforts took on the quality of a parting shot. The report that the
+senior official handed me at lunch had been issued only a few days before
+Clinton took office. It is a somewhat bland, opaque document-a "scrubbed,"
+meaning unclassified, version of something more candid-but it contained the
+essential ideas of "shaping," rather than reacting to, the rest of the
+world, and of preventing the rise of other superpowers. Its tone is one of
+skepticism about diplomatic partnerships. A more forthright version of the
+same ideas can be found in a short book titled "From Containment to Global
+Leadership?," which Zalmay Khalilzad, who joined Cheney's team in 1991 and
+is now special envoy to Afghanistan, published a couple of years into the
+Clinton Administration, when he was out of government. It recommends that
+the United States "preclude the rise of another global rival for the
+indefinite future." Khalilzad writes, "It is a vital U.S. interest to
+preclude such a development-i.e., to be willing to use force if necessary
+for the purpose."
+
+When George W. Bush was campaigning for President, he and the people around
+him didn't seem to be proposing a great doctrinal shift, along the lines of
+the policy of containment of the Soviet Union's sphere of influence which
+the United States maintained during the Cold War. In his first major
+foreign-policy speech, delivered in November of 1999, Bush declared that "a
+President must be a clear-eyed realist," a formulation that seems to
+connote an absence of world-remaking ambition. "Realism" is exactly the
+foreign-policy doctrine that Cheney's Pentagon team rejected, partly
+because it posits the impossibility of any one country's ever dominating
+world affairs for any length of time.
+
+One gets many reminders in Washington these days of how much the terrorist
+attacks of September 11th have changed official foreign-policy thinking.
+Any chief executive, of either party, would probably have done what Bush
+has done so far-made war on the Taliban and Al Qaeda and enhanced domestic
+security. It is only now, six months after the attacks, that we are truly
+entering the realm of Presidential choice, and all indications are that
+Bush is going to use September 11th as the occasion to launch a new,
+aggressive American foreign policy that would represent a broad change in
+direction rather than a specific war on terrorism. All his rhetoric,
+especially in the two addresses he has given to joint sessions of Congress
+since September 11th, and all the information about his state of mind which
+his aides have leaked, indicate that he sees this as the nation's moment of
+destiny-a perception that the people around him seem to be encouraging,
+because it enhances Bush's stature and opens the way to more assertive
+policymaking.
+
+Inside government, the reason September 11th appears to have been "a
+transformative moment," as the senior official I had lunch with put it, is
+not so much that it revealed the existence of a threat of which officials
+had previously been unaware as that it drastically reduced the American
+public's usual resistance to American military involvement overseas, at
+least for a while. The Clinton Administration, beginning with the "Black
+Hawk Down" operation in Mogadishu, during its first year, operated on the
+conviction that Americans were highly averse to casualties; the all-bombing
+Kosovo operation, in Clinton's next-to-last year, was the ideal foreign
+military adventure. Now that the United States has been attacked, the
+options are much broader. The senior official approvingly mentioned a 1999
+study of casualty aversion by the Triangle Institute for Security Studies,
+which argued that the "mass public" is much less casualty-averse than the
+military or the civilian élite believes; for example, the study showed that
+the public would tolerate thirty thousand deaths in a military operation to
+prevent Iraq from acquiring weapons of mass destruction. (The American
+death total in the Vietnam War was about fifty-eight thousand.) September
+11th presumably reduced casualty aversion even further.
+
+Recently, I went to the White House to interview Condoleezza Rice. Rice's
+Foreign Affairs article from 2000 begins with this declaration: "The United
+States has found it exceedingly difficult to define its 'national interest'
+in the absence of Soviet power." I asked her whether that is still the
+case. "I think the difficulty has passed in defining a role," she said
+immediately. "I think September 11th was one of those great earthquakes
+that clarify and sharpen. Events are in much sharper relief." Like Bush,
+she said that opposing terrorism and preventing the accumulation of weapons
+of mass destruction "in the hands of irresponsible states" now define the
+national interest. (The latter goal, by the way, is new-in Bush's speech to
+Congress on September 20th, America's sole grand purpose was ending
+terrorism.) We talked in her West Wing office; its tall windows face the
+part of the White House grounds where television reporters do their
+standups. In her bearing, Rice seemed less crisply military than she does
+in public. She looked a little tired, but she was projecting a kind of
+missionary calm, rather than belligerence.
+
+In the Foreign Affairs article, Rice came across as a classic realist,
+putting forth "the notions of power politics, great powers, and power
+balances" as the proper central concerns of the United States. Now she
+sounded as if she had moved closer to the one-power idea that Cheney's
+Pentagon team proposed ten years ago-or, at least, to the idea that the
+other great powers are now in harmony with the United States, because of
+the terrorist attacks, and can be induced to remain so. "Theoretically, the
+realists would predict that when you have a great power like the United
+States it would not be long before you had other great powers rising to
+challenge it or trying to balance against it," Rice said. "And I think what
+you're seeing is that there's at least a predilection this time to move to
+productive and coöperative relations with the United States, rather than to
+try to balance the United States. I actually think that statecraft matters
+in how it all comes out. It's not all foreordained."
+
+Rice said that she had called together the senior staff people of the
+National Security Council and asked them to think seriously about "how do
+you capitalize on these opportunities" to fundamentally change American
+doctrine, and the shape of the world, in the wake of September 11th. "I
+really think this period is analogous to 1945 to 1947," she said-that is,
+the period when the containment doctrine took shape-"in that the events so
+clearly demonstrated that there is a big global threat, and that it's a big
+global threat to a lot of countries that you would not have normally
+thought of as being in the coalition. That has started shifting the
+tectonic plates in international politics. And it's important to try to
+seize on that and position American interests and institutions and all of
+that before they harden again."
+
+The National Security Council is legally required to produce an annual
+document called the National Security Strategy, stating the over-all goals
+of American policy-another government report whose importance is great but
+not obvious. The Bush Administration did not produce one last year, as the
+Clinton Administration did not in its first year. Rice said that she is
+working on the report now.
+
+"There are two ways to handle this document," she told me. "One is to do it
+in a kind of minimalist way and just get it out. But it's our view that,
+since this is going to be the first one for the Bush Administration, it's
+important. An awful lot has happened since we started this process, prior
+to 9/11. I can't give you a certain date when it's going to be out, but I
+would think sometime this spring. And it's important that it be a real
+statement of what the Bush Administration sees as the strategic direction
+that it's going."
+
+It seems clear already that Rice will set forth the hope of a more dominant
+American role in the world than she might have a couple of years ago. Some
+questions that don't appear to be settled yet, but are obviously being
+asked, are how much the United States is willing to operate alone in
+foreign affairs, and how much change it is willing to try to engender
+inside other countries-and to what end, and with what means. The leak a
+couple of weeks ago of a new American nuclear posture, adding offensive
+capability against "rogue states," departed from decades of official
+adherence to a purely defensive position, and was just one indication of
+the scope of the reconsideration that is going on. Is the United States now
+in a position to be redrawing regional maps, especially in the Middle East,
+and replacing governments by force? Nobody thought that the Bush
+Administration would be thinking in such ambitious terms, but plainly it
+is, and with the internal debate to the right of where it was only a few
+months ago.
+
+Just before the 2000 election, a Republican foreign-policy figure suggested
+to me that a good indication of a Bush Administration's direction in
+foreign affairs would be who got a higher-ranking job, Paul Wolfowitz or
+Richard Haass. Haass is another veteran of the first Bush Administration,
+and an intellectual like Wolfowitz, but much more moderate. In 1997, he
+published a book titled "The Reluctant Sheriff," in which he poked a little
+fun at Wolfowitz's famous strategy briefing of the early nineties (he
+called it the "Pentagon Paper") and disagreed with its idea that the United
+States should try to be the world's only great power over the long term.
+"For better or worse, such a goal is beyond our reach," Haass wrote. "It
+simply is not doable." Elsewhere in the book, he disagreed with another of
+the Wolfowitz team's main ideas, that of the United States expanding the
+"democratic zone of peace": "Primacy is not to be confused with hegemony.
+The United States cannot compel others to become more democratic." Haass
+argued that the United States is becoming less dominant in the world, not
+more, and suggested "a revival of what might be called traditional
+great-power politics."
+
+Wolfowitz got a higher-ranking job than Haass: he is Deputy Secretary of
+Defense, and Haass is Director of Policy Planning for the State Department-
+in effect, Colin Powell's big-think guy. Recently, I went to see him in his
+office at the State Department. On the wall of his waiting room was an
+array of photographs of every past director of the policy-planning staff,
+beginning with George Kennan, the father of the containment doctrine and
+the first holder of the office that Haass now occupies.
+
+It's another indication of the way things are moving in Washington that
+Haass seems to have become more hawkish. I mentioned the title of his book.
+"Using the word 'reluctant' was itself reflective of a period when foreign
+policy seemed secondary, and sacrificing for foreign policy was a hard case
+to make," he said. "It was written when Bill Clinton was saying, 'It's the
+economy, stupid'-not 'It's the world, stupid.' Two things are very
+different now. One, the President has a much easier time making the case
+that foreign policy matters. Second, at the top of the national-security
+charts is this notion of weapons of mass destruction and terrorism."
+
+I asked Haass whether there is a doctrine emerging that is as broad as
+Kennan's containment. "I think there is," he said. "What you're seeing from
+this Administration is the emergence of a new principle or body of
+ideas-I'm not sure it constitutes a doctrine-about what you might call the
+limits of sovereignty. Sovereignty entails obligations. One is not to
+massacre your own people. Another is not to support terrorism in any way.
+If a government fails to meet these obligations, then it forfeits some of
+the normal advantages of sovereignty, including the right to be left alone
+inside your own territory. Other governments, including the United States,
+gain the right to intervene. In the case of terrorism, this can even lead
+to a right of preventive, or peremptory, self-defense. You essentially can
+act in anticipation if you have grounds to think it's a question of when,
+and not if, you're going to be attacked."
+
+Clearly, Haass was thinking of Iraq. "I don't think the American public
+needs a lot of persuading about the evil that is Saddam Hussein," he said.
+"Also, I'd fully expect the President and his chief lieutenants to make the
+case. Public opinion can be changed. We'd be able to make the case that
+this isn't a discretionary action but one done in self-defense."
+
+On the larger issue of the American role in the world, Haass was still
+maintaining some distance from the hawks. He had made a speech not long
+before called "Imperial America," but he told me that there is a big
+difference between imperial and imperialist. "I just think that we have to
+be a little bit careful," he said. "Great as our advantages are, there are
+still limits. We have to have allies. We can't impose our ideas on
+everyone. We don't want to be fighting wars alone, so we need others to
+join us. American leadership, yes; but not American unilateralism. It has
+to be multilateral. We can't win the war against terror alone. We can't
+send forces everywhere. It really does have to be a collaborative endeavor."
+
+He stopped for a moment. "Is there a successor idea to containment? I think
+there is," he said. "It is the idea of integration. The goal of U.S.
+foreign policy should be to persuade the other major powers to sign on to
+certain key ideas as to how the world should operate: opposition to
+terrorism and weapons of mass destruction, support for free trade,
+democracy, markets. Integration is about locking them into these policies
+and then building institutions that lock them in even more."
+
+The first, but by no means the last, obvious manifestation of a new
+American foreign policy will be the effort to remove Saddam Hussein. What
+the United States does in an Iraq operation will very likely dwarf what's
+been done so far in Afghanistan, both in terms of the scale of the
+operation itself and in terms of its aftermath.
+
+Several weeks ago, Ahmad Chalabi, the head of the Iraqi National Congress,
+the Iraqi opposition party, came through Washington with an entourage of
+his aides. Chalabi went to the State Department and the White House to ask,
+evidently successfully, for more American funding. His main public event
+was a panel discussion at the American Enterprise Institute. Chalabi's
+leading supporter in town, Richard Perle, the prominent hawk and former
+Defense Department official, acted as moderator. Smiling and supremely
+confident, Perle opened the discussion by saying, "Evidence is mounting
+that the Administration is looking very carefully at strategies for dealing
+with Saddam Hussein." The war on terrorism, he said, will not be complete
+"until Saddam is successfully dealt with. And that means replacing his
+regime. . . . That action will be taken, I have no doubt."
+
+Chalabi, who lives in London, is a charming, suave middle-aged man with a
+twinkle in his eye. He was dressed in a double-breasted pin-striped suit
+and a striped shirt with a white spread collar. Although he and his
+supporters argue that the Iraqi National Congress, with sufficient American
+support, can defeat Saddam just as the Northern Alliance defeated the
+Taliban in Afghanistan, this view hasn't won over most people in
+Washington. It isn't just that Chalabi doesn't look the part of a rebel
+military leader ("He could fight you for the last petit four on the tray
+over tea at the Savoy, but that's about it," one skeptical former Pentagon
+official told me), or that he isn't in Iraq. It's also that Saddam's
+military is perhaps ten times the size that the Taliban's was, and has been
+quite successful at putting down revolts over the last decade. The United
+States left Iraq in 1991 believing that Saddam might soon fall to an
+internal rebellion; Chalabi's supporters believe that Saddam is much weaker
+now, and that even signs that a serious operation was in the offing could
+finish him off. But non-true believers seem to be coming around to the idea
+that a military operation against Saddam would mean the deployment of
+anywhere from a hundred thousand to three hundred thousand American ground
+troops.
+
+Kenneth Pollack, a former C.I.A. analyst who was the National Security
+Council's staff expert on Iraq during the last years of the Clinton
+Administration, recently caused a stir in the foreign-policy world by
+publishing an article in Foreign Affairs calling for war against Saddam.
+This was noteworthy because three years ago Pollack and two co-authors
+published an article, also in Foreign Affairs, arguing that the Iraqi
+National Congress was incapable of defeating Saddam. Pollack still doesn't
+think Chalabi can do the job. He believes that it would require a
+substantial American ground, air, and sea force, closer in size to the one
+we used in Kuwait in 1990-91 than to the one we are using now in
+Afghanistan.
+
+Pollack, who is trim, quick, and crisp, is obviously a man who has given a
+briefing or two in his day. When I went to see him at his office in
+Washington, with a little encouragement he got out from behind his desk and
+walked over to his office wall, where three maps of the Middle East were
+hanging. "The only way to do it is a full-scale invasion," he said, using a
+pen as a pointer. "We're talking about two grand corps, two to three
+hundred thousand people altogether. The population is here, in the
+Tigris-Euphrates valley." He pointed to the area between Baghdad and Basra.
+"Ideally, you'd have the Saudis on board." He pointed to the Prince Sultan
+airbase, near Riyadh. "You could make Kuwait the base, but it's much easier
+in Saudi. You need to take western Iraq and southern Iraq"-pointing
+again-"because otherwise they'll fire Scuds at Israel and at the Saudi oil
+fields. You probably want to prevent Iraq from blowing up its own oil
+fields, so troops have to occupy them. And you need troops to defend the
+Kurds in northern Iraq." Point, point. "You go in as hard as you can, as
+fast as you can." He slapped his hand on the top of his desk. "You get the
+enemy to divide his forces, by threatening him in two places at once." His
+hand hit the desk again, hard. "Then you crush him." Smack.
+
+That would be a reverberating blow. The United States has already removed
+the government of one country, Afghanistan, the new government is obviously
+shaky, and American military operations there are not completed. Pakistan,
+which before September 11th clearly met the new test of national
+unacceptability (it both harbors terrorists and has weapons of mass
+destruction), will also require long-term attention, since the country is
+not wholly under the control of the government, as the murder of Daniel
+Pearl demonstrated, and even parts of the government, like the intelligence
+service, may not be entirely under the control of the President. In Iraq,
+if America invades and brings down Saddam, a new government must be
+established-an enormous long-term task in a country where there is no
+obvious, plausible new leader. The prospective Iraq operation has drawn
+strong objections from the neighboring nations, one of which, Russia, is a
+nuclear superpower. An invasion would have a huge effect on the internal
+affairs of all the biggest Middle Eastern nations: Iran, Turkey, Saudi
+Arabia, and even Egypt. Events have forced the Administration to become
+directly involved in the Israeli-Palestinian conflict, as it hadn't wanted
+to do. So it's really the entire region that is in play, in much the way
+that Europe was immediately after the Second World War.
+
+In September, Bush rejected Paul Wolfowitz's recommendation of immediate
+moves against Iraq. That the President seems to have changed his mind is an
+indication, in part, of the bureaucratic skill of the Administration's
+conservatives. "These guys are relentless," one former official, who is
+close to the high command at the State Department, told me. "Resistance is
+futile." The conservatives' other weapon, besides relentlessness, is
+intellectualism. Colin Powell tends to think case by case, and since
+September 11th the conservatives have outflanked him by producing at least
+the beginning of a coherent, hawkish world view whose acceptance
+practically requires invading Iraq. If the United States applies the
+doctrines of Cheney's old Pentagon team, "shaping" and expanding "the zone
+of democracy," the implications would extend far beyond that one operation.
+
+The outside experts on the Middle East who have the most credibility with
+the Administration seem to be Bernard Lewis, of Princeton, and Fouad Ajami,
+of the Johns Hopkins School of Advanced International Studies, both of whom
+see the Arab Middle East as a region in need of radical remediation. Lewis
+was invited to the White House in December to brief the senior
+foreign-policy staff. "One point he made is, Look, in that part of the
+world, nothing matters more than resolute will and force," the senior
+official I had lunch with told me-in other words, the United States needn't
+proceed gingerly for fear of inflaming the "Arab street," as long as it is
+prepared to be strong. The senior official also recommended as interesting
+thinkers on the Middle East Charles Hill, of Yale, who in a recent essay
+declared, "Every regime of the Arab-Islamic world has proved a failure,"
+and Reuel Marc Gerecht, of the American Enterprise Institute, who published
+an article in The Weekly Standard about the need for a change of regime in
+Iran and Syria. (Those goals, Gerecht told me when we spoke, could be
+accomplished through pressure short of an invasion.)
+
+Several people I spoke with predicted that most, or even all, of the
+nations that loudly oppose an invasion of Iraq would privately cheer it on,
+if they felt certain that this time the Americans were really going to
+finish the job. One purpose of Vice-President Cheney's recent diplomatic
+tour of the region was to offer assurances on that matter, while gamely
+absorbing all the public criticism of an Iraq operation. In any event, the
+Administration appears to be committed to acting forcefully in advance of
+the world's approval. When I spoke to Condoleezza Rice, she said that the
+United States should assemble "coalitions of the willing" to support its
+actions, rather than feel it has to work within the existing infrastructure
+of international treaties and organizations. An invasion of Iraq would test
+that policy in more ways than one: the Administration would be betting that
+it can continue to eliminate Al Qaeda cells in countries that publicly
+opposed the Iraq operation.
+
+When the Administration submitted its budget earlier this year, it asked
+for a forty-eight-billion-dollar increase in defense spending for fiscal
+2003, which begins in October, 2002. Much of that sum would go to improve
+military pay and benefits, but ten billion dollars of it is designated as
+an unspecified contingency fund for further operations in the war on
+terrorism. That's probably at least the initial funding for an invasion of
+Iraq.
+
+This spring, the Administration will be talking to other countries about
+the invasion, trying to secure basing and overflight privileges, while Bush
+builds up a rhetorical case for it by giving speeches about the
+unacceptability of developing weapons of mass destruction. A drama
+involving weapons inspections in Iraq will play itself out over the spring
+and summer, and will end with the United States declaring that the terms
+that Saddam offers for the inspections, involving delays and restrictions,
+are unacceptable. Then, probably in the late summer or early fall, the
+enormous troop positioning, which will take months, will begin. The
+Administration obviously feels confident that the United States can
+effectively parry whatever aggressive actions Saddam takes during the troop
+buildup, and hopes that its moves will destabilize Iraq enough to cause the
+Republican Guard, the military key to the country, to turn against Saddam
+and topple him on its own. But the chain of events leading inexorably to a
+full-scale American invasion, if it hasn't already begun, evidently will
+begin soon.
+
+Lewis (Scooter) Libby, who was the principal drafter of Cheney's
+future-of-the-world documents during the first Bush Administration, now
+works in an office in the Old Executive Office Building, overlooking the
+West Wing, where he has a second, smaller office. A packet of
+public-relations material prompted by the recent paperback publication of
+his 1996 novel, "The Apprentice," quotes the Times' calling him "Dick
+Cheney's Dick Cheney," which seems like an apt description: he appears
+absolutely sure of himself, and, whether by coincidence or as a result of
+the influence of his boss, speaks in a tough, confidential, gravelly
+rumble. Like Condoleezza Rice and Bush himself, he gives the impression of
+having calmly accepted the idea that the project of war and reconstruction
+which the Administration has now taken on may be a little exhausting for
+those charged with carrying it out but is unquestionably right, the only
+truly prudent course.
+
+When I went to see Libby, not long ago, I asked him whether, before
+September 11th, American policy toward terrorism should have been
+different. He went to his desk and got out a large black loose-leaf binder,
+filled with typewritten sheets interspersed with foldout maps of the Middle
+East. He looked through it for a long minute, formulating his answer.
+
+"Let us stack it up," he said at last. "Somalia, 1993; 1994, the discovery
+of the Al Qaeda-related plot in the Philippines; 1993, the World Trade
+Center, first bombing; 1993, the attempt to assassinate President Bush,
+former President Bush, and the lack of response to that, the lack of a
+serious response to that; 1995, the Riyadh bombing; 1996, the Khobar
+bombing; 1998, the Kenyan embassy bombing and the Tanzanian embassy
+bombing; 1999, the plot to launch millennium attacks; 2000, the bombing of
+the Cole. Throughout this period, infractions on inspections by the Iraqis,
+and eventually the withdrawal of the entire inspection regime; and the
+failure to respond significantly to Iraqi incursions in the Kurdish areas.
+No one would say these challenges posed easy problems, but if you take that
+long list and you ask, 'Did we respond in a way which discouraged people
+from supporting terrorist activities, or activities clearly against our
+interests? Did we help to shape the environment in a way which discouraged
+further aggressions against U.S. interests?,' many observers conclude no,
+and ask whether it was then easier for someone like Osama bin Laden to rise
+up and say credibly, 'The Americans don't have the stomach to defend
+themselves. They won't take casualties to defend their interests. They are
+morally weak.' "
+
+Libby insisted that the American response to September 11th has not been
+standard or foreordained. "Look at what the President has done in
+Afghanistan," he said, "and look at his speech to the joint session of
+Congress"-meaning the State of the Union Message, in January. "He made it
+clear that it's an important area. He made it clear that we believe in
+expanding the zone of democracy even in this difficult part of the world.
+He made it clear that we stand by our friends and defend our interests. And
+he had the courage to identify those states which present a problem, and to
+begin to build consensus for action that would need to be taken if there is
+not a change of behavior on their part. Take the Afghan case, for example.
+There are many other courses that the President could have taken. He could
+have waited for juridical proof before we responded. He could have engaged
+in long negotiations with the Taliban. He could have failed to seek a new
+relationship with Pakistan, based on its past nuclear tests, or been so
+afraid of weakening Pakistan that we didn't seek its help. This list could
+go on to twice or three times the length I've mentioned so far. But,
+instead, the President saw an opportunity to refashion relations while
+standing up for our interests. The problem is complex, and we don't know
+yet how it will end, but we have opened new prospects for relations not
+only with Afghanistan, as important as it was as a threat, but with the
+states of Central Asia, Pakistan, Russia, and, as it may develop, with the
+states of Southwest Asia more generally."
+
+We moved on to Iraq, and the question of what makes Saddam Hussein
+unacceptable, in the Administration's eyes. "The issue is not inspections,"
+Libby said. "The issue is the Iraqis' promise not to have weapons of mass
+destruction, their promise to recognize the boundaries of Kuwait, their
+promise not to threaten other countries, and other promises that they made
+in '91, and a number of U.N. resolutions, including all the other problems
+I listed. Whether it was wise or not-and that is the subject of debate-Iraq
+was given a second chance to abide by international norms. It failed to
+take that chance then, and annually for the next ten years."
+
+"What's your level of confidence," I asked him, "that the current regime
+will, in fact, change its behavior in a way that you will be satisfied by?"
+
+He ran his hand over his face and then gave me a direct gaze and spoke
+slowly and deliberately. "There is no basis in Iraq's past behavior to have
+confidence in good-faith efforts on their part to change their behavior."
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

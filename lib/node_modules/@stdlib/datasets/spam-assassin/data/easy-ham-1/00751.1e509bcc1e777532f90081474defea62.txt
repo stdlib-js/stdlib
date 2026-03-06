@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Tue Sep 24 10:49:26 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E4AB216F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:49:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:49:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8O1mWC15770 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 02:48:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D8D6F29421F; Mon, 23 Sep 2002 18:43:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 4F33C29409A for <fork@xent.com>; Mon,
+    23 Sep 2002 18:42:42 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id C459C3ECBD;
+    Mon, 23 Sep 2002 21:51:03 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id BE1A53EC9F; Mon, 23 Sep 2002 21:51:03 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: Gordon Mohr <gojomo@usa.net>
+Cc: fork@spamassassin.taint.org
+Subject: Re: How about subsidizing SSL access to Google?
+In-Reply-To: <0b3901c2635c$ab557240$640a000a@golden>
+Message-Id: <Pine.BSO.4.44.0209232145280.22910-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 21:51:03 -0400 (EDT)
+
+On Mon, 23 Sep 2002, Gordon Mohr wrote:
+--]
+--]The best we can hope is that technological cleverness, by raising the
+--]costs of oppression or by provoking intolerable oppression, brings
+--]social liberalization sooner rather than later.
+
+In a very real sense we are still playing the "stone hurst man, man wears
+hide, stone dont hurt no more so now we use arrows, arrows go thru hide
+dang lets try this chain mail stuff, arrows dont go thru chain mail so now
+we try crafting long spears with chain ripping heads, hey there buddy try
+that against my plate mail, well F you and the horse you plated try doging
+a bullets, holy shit where is my kevlar, does you kevlar stop nukes..."
+game.
+
+In this mad mad mad mad james burkian cum chucky darwin world there is no
+rest for either the wicked or the nonwicked, there is just the ramp up to
+the Brand New Jimmiez.
+
+the trick I think should all be learning is not so much looking for the
+THE KILLER APP but instead to look for the "really cool app that mutates
+to meet changes"
+
+Bascialy give china no choise but to shoot its own head off to stop the
+music.
+
+bang bang ... have a nice day.
+
+-tom
+
+
+

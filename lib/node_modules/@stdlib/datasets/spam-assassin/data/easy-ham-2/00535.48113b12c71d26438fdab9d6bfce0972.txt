@@ -1,0 +1,76 @@
+From razor-users-admin@lists.sourceforge.net  Wed Jul 24 05:34:04 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7E5AC440CD
+	for <jm@localhost>; Wed, 24 Jul 2002 00:34:02 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 05:34:02 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6O4Yt420289 for <jm-razor@jmason.org>; Wed, 24 Jul 2002 05:34:55 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XDfz-0007hz-00; Tue,
+    23 Jul 2002 21:23:03 -0700
+Received: from h-66-134-120-173.lsanca54.covad.net ([66.134.120.173]
+    helo=stealthgeeks.net) by usw-sf-list1.sourceforge.net with smtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17XDf4-0002en-00 for
+    <razor-users@lists.sourceforge.net>; Tue, 23 Jul 2002 21:22:06 -0700
+Received: (qmail 98578 invoked by uid 1001); 24 Jul 2002 04:21:58 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    24 Jul 2002 04:21:58 -0000
+From: Patrick <patrick@stealthgeeks.net>
+To: razor-users@example.sourceforge.net
+In-Reply-To: <20020711084825.W60740-100000@rockstar.stealthgeeks.net>
+Message-Id: <20020723211828.Y98572-100000@rockstar.stealthgeeks.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [Razor-users] Authentication Error
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 23 Jul 2002 21:21:58 -0700 (PDT)
+Date: Tue, 23 Jul 2002 21:21:58 -0700 (PDT)
+
+
+Today's error(received multiple times) was:
+
+Jul 23 21:16:39.288680 report[98557]: [ 2]  Razor-Agents v2.12 starting
+razor-report ./jobspam
+Jul 23 21:16:46.597147 report[98558]: [ 1] razor-report error: reportit:
+Error 213 while authenticating, aborting.
+
+I really like the concept of Razor but I find myself wondering if it's
+really a good idea for the developers to be passing off what appears
+to be alpha-quality software as production-ready....
+
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+                               Patrick Greenwell
+         Asking the wrong questions is the leading cause of wrong answers
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

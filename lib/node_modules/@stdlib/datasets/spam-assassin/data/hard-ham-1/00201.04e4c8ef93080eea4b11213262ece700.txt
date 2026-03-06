@@ -1,0 +1,90 @@
+Return-Path: superkeen@keenspot.com
+Delivery-Date: Sun Sep  1 07:19:21 2002
+Return-Path: <superkeen@keenspot.com>
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mothlight.dyndns.org (8.11.6/8.11.6) with ESMTP id g81BJKs00466
+	for <nice@localhost>; Sun, 1 Sep 2002 07:19:20 -0400
+Received: from fastmail.fm [209.61.183.86]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for nice@localhost (single-drop); Sun, 01 Sep 2002 07:19:20 -0400 (EDT)
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by server2.fastmail.fm (Cyrus v2.1.5) with LMTP; Sun, 01 Sep 2002 05:41:33 -0500
+X-Sieve: CMU Sieve 2.2
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by www.fastmail.fm (Cyrus v2.1.3) with LMTP; Sun, 01 Sep 2002 05:41:34 -0500
+Received: from www.fastmail.fm (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 3D3666DBC8
+	for <mothlight@fastmail.fm>; Sun,  1 Sep 2002 05:41:33 -0500 (CDT)
+X-Mail-from: superkeen@keenspot.com
+X-Delivered-to: <mothlight@fastmail.fm>
+X-Spam: spam
+  MAILTO_LINK, FREQ_SPAM_PHRASE, CTYPE_JUST_HTML, RCVD_IN_OSIRUSOFT_COM
+Received: from keenspot.com (ns1.keenspace.com [64.71.165.130])
+	by www.fastmail.fm (Postfix) with ESMTP id 321AD6DBAA
+	for <mothlight@fastmail.fm>; Sun,  1 Sep 2002 05:41:31 -0500 (CDT)
+Received: (from superkeen@localhost)
+	by keenspot.com (8.11.2/8.11.2) id g81AfVg18761;
+	Sun, 1 Sep 2002 03:41:31 -0700
+Date: Sun, 1 Sep 2002 03:41:31 -0700
+Message-Id: <200209011041.g81AfVg18761@keenspot.com>
+From: superkeen@keenspot.com
+To: mothlight@fastmail.fm
+Subject: Ashfield Online 9/1/2002 by Aric McKeown
+X-Keenlist-Info: ashfield-daily, mothlight@fastmail.fm
+MIME-Version: 1.0
+Content-Type: text/html;
+X-Status: 
+X-Keywords:                  
+
+<html><head><title>Ashfield Online email subscription (Sunday, September 1, 2002)</title></head>
+<body>
+<center>
+<b>Ashfield Online &copy; 2002 Aric McKeown</b> Comic for Sunday, September 1, 2002<br>
+<br>
+
+<object id="20020901"
+name="20020901"
+classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=3,0,0,0"
+align="top" border="0" width="350" height="414"><param
+name="movie" value="http://www.AshfieldOnline.com/comics/ash20020901.swf"><param name="quality"
+value="autohigh"><param name="salign" value="T"><param
+name="bgcolor" value="#FFFFFF"><embed src="http://www.AshfieldOnline.com/comics/ash20020901.swf" align="top" border="0" width="350" height="414" swliveconnect="FALSE" quality="autohigh" salign="T" bgcolor="#FFFFFF" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></object><br>
+<font size="2">Powered by </font><a href="http://www.shockwave.com"><font
+size="2">FLASH</font></a>
+    
+<br><br>
+(A <a href="http://www.keenspot.com/">Keenspot</a> Comic)<br>
+<br>Visit the Ashfield Online website at <a href="http://www.AshfieldOnline.com/">www.AshfieldOnline.com</a>.
+<hr><br>
+
+<a href="http://www.burstnet.com/ads/ad8223a-map.cgi/ns" target="_top"><img src="http://www.burstnet.com/cgi-bin/ads/ad8223a.cgi/ns" width="468" height="60" border="0" alt="Click Here"></a>
+    <br>
+<hr><br>
+</center>
+<br>
+
+<b>Note:</b> If you do not see a comic in this email and you read your email
+offline, you may need to connect online to load the images.  You must also
+be able to read HTML-encoded email.
+<br><br>
+If mail sent to your account is returned as undeliverable two or more times,
+your email address may be removed from this list.  This may occur if you go
+over your mail provider's quota or for various other reasons.
+<br><br>
+Do not reply to this email.  This is an automated mailing list and replies
+are not read.  Direct comments and inquiries to the author of this comic
+or to <a href="mailto:help@keenspot.com">help@keenspot.com</a>.
+Please be sure to indicate the comic to which you are referring.
+<br><br>
+To unsubscribe from this list, go to <a href="http://www.keenspot.com/unsubscribe.html">http://www.keenspot.com/unsubscribe.html</a><br>
+<br>
+To subscribe to a new list or to resubscribe to this list if you are unsubscribed, go to <a href="http://www.keenspot.com/subscribe.html">http://www.keenspot.com/subscribe.html</a><br>
+
+<!--
+X-Keenlist-Info: ashfield-daily, 
+//-->
+
+    
+<br>
+</body></html>

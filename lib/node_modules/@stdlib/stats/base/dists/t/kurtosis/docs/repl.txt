@@ -1,0 +1,30 @@
+
+{{alias}}( v )
+    Returns the excess kurtosis of a Student's t distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `v <= 2`, the function returns `NaN`.
+
+    If provided `2 < v <= 4`, the function returns positive infinity.
+
+    Parameters
+    ----------
+    v: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    out: number
+        Excess kurtosis.
+
+    Examples
+    --------
+    > var v = {{alias}}( 11.0 )
+    ~0.857
+    > v = {{alias}}( 4.5 )
+    12.0
+
+    See Also
+    --------
+

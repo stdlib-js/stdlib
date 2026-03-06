@@ -1,0 +1,60 @@
+Return-Path: anthony@interlink.com.au
+Delivery-Date: Thu Sep 12 05:26:41 2002
+From: anthony@interlink.com.au (Anthony Baxter)
+Date: Thu, 12 Sep 2002 14:26:41 +1000
+Subject: [Spambayes] Current histograms 
+Message-ID: <200209120426.g8C4QfI23085@localhost.localdomain>
+
+
+> They weren't partitioned in any particular scheme - I think I'll write a
+> reshuffler and move them all around, just in case (fwiw, I'm using MH 
+> style folders with numbered files - means you can just use MH tools to 
+> manipulate the sets.)
+
+Freak show. Obviously there _was_ some sort of patterns to the data:
+
+Training on Data/Ham/Set1 & Data/Spam/Set1 ... 1798 hams & 1546 spams
+      0.779   0.582
+      0.834   0.840
+      0.945   0.452
+      0.667   1.164
+Training on Data/Ham/Set2 & Data/Spam/Set2 ... 1798 hams & 1547 spams
+      1.112   0.776
+      0.834   0.969
+      0.779   0.646
+      0.667   1.100
+Training on Data/Ham/Set3 & Data/Spam/Set3 ... 1798 hams & 1548 spams
+      1.168   0.582
+      1.001   0.646
+      0.834   0.582
+      0.667   0.453
+Training on Data/Ham/Set4 & Data/Spam/Set4 ... 1798 hams & 1547 spams
+      0.779   0.712
+      0.779   0.582
+      0.556   0.840
+      0.779   0.970
+Training on Data/Ham/Set5 & Data/Spam/Set5 ... 1798 hams & 1546 spams
+      0.612   0.517
+      0.779   0.517
+      0.723   0.711
+      0.667   0.582
+total false pos 144 1.60177975528
+total false neg 101 1.30592190328
+
+(before the shuffle, I was seeing:
+total false pos 273 3.03501945525
+total false neg 367 4.74282760403
+)
+
+For sake of comparision, here's what I see for partitioned into 2 sets:
+
+Training on Data/Ham/Set1 & Data/Spam/Set1 ... 4492 hams & 3872 spams
+      0.490   0.776
+Training on Data/Ham/Set2 & Data/Spam/Set2 ... 4493 hams & 3868 spams
+      0.401   0.491
+total false pos 40 0.445186421814
+total false neg 49 0.633074935401
+
+more later...
+
+Anthony

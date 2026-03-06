@@ -1,0 +1,87 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Sep 11 21:52:21 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5787F16F03
+	for <jm@localhost>; Wed, 11 Sep 2002 21:52:21 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 21:52:21 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8BKfNC31298 for <jm-sa@jmason.org>; Wed, 11 Sep 2002 21:41:23 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pEGQ-0003qY-00; Wed,
+    11 Sep 2002 13:39:06 -0700
+Received: from relay07.indigo.ie ([194.125.133.231]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17pEGA-0006VF-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 11 Sep 2002 13:38:50 -0700
+Received: (qmail 12218 messnum 1023198 invoked from
+    network[194.125.172.225/ts12-225.dublin.indigo.ie]); 11 Sep 2002 20:38:46
+    -0000
+Received: from ts12-225.dublin.indigo.ie (HELO spamassassin.taint.org)
+    (194.125.172.225) by relay07.indigo.ie (qp 12218) with SMTP;
+    11 Sep 2002 20:38:46 -0000
+Received: by spamassassin.taint.org (Postfix, from userid 500) id 662ED16F03;
+    Wed, 11 Sep 2002 21:38:45 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1]) by spamassassin.taint.org (Postfix)
+    with ESMTP id 63077F7B1; Wed, 11 Sep 2002 21:38:45 +0100 (IST)
+To: Robert Strickler <Robert.Strickler@us.net56.net>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] Yeah right... If spamassassin was looking through th
+    is mail, it would have marked it as spam.
+In-Reply-To: Message from Robert Strickler <Robert.Strickler@us.net56.net>
+    of
+    "Wed, 11 Sep 2002 15:10:49 CDT."
+    <0FCA00EE04CDD3119C910050041FBA703A67F3@ilpostoffice.main.net56.net>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Message-Id: <20020911203845.662ED16F03@spamassassin.taint.org>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 11 Sep 2002 21:38:40 +0100
+Date: Wed, 11 Sep 2002 21:38:40 +0100
+
+
+Robert Strickler said:
+
+> Looks like we need an identity stamp in the X-Spam headers so that SA only
+> accepts headers from authorized sources.
+
+Well, SpamAssassin will just ignore any old X-Spam-whatever headers
+it finds, so that cannot be used to get around the filter.
+
+--j.
+
+
+-------------------------------------------------------
+In remembrance
+www.osdn.com/911/
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

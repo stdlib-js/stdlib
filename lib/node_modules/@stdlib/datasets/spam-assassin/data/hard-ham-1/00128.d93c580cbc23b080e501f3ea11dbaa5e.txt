@@ -1,0 +1,698 @@
+Return-Path: <Online#3.20566.1b-g8TkgHOAIazg9sRR.1.b@newsletter.online.com>
+Received: from abv-sfo1-acmta1.CNET.COM (abv-sfo1-acmta1.cnet.com [206.16.1.160])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JA3QJ16226
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Fri, 19 Jul 2002 11:03:27 +0100
+Received: from abv-sfo1-ac-agent2 (206.16.0.224) by abv-sfo1-acmta1.CNET.COM (PowerMTA(TM) v1.5); Fri, 19 Jul 2002 03:04:12 -0700 (envelope-from <Online#3.20566.1b-g8TkgHOAIazg9sRR.1.b@newsletter.online.com>)
+Message-ID: <541907.1027073000497.JavaMail.root@abv-sfo1-ac-agent2>
+Date: Fri, 19 Jul 2002 03:03:20 -0700 (PDT)
+From: AnchorDesk <Online#3.20566.1b-g8TkgHOAIazg9sRR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: MS/Apple: Can this marriage be saved? (I doubt it) [ANCHORDESK]
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+
+
+ <html>
+
+<head>
+<title>ZDNet AnchorDesk Daily Newsletter</title>
+</head>
+
+<body style=3D"margin:8px 9px 9px 12px" bgcolor=3D"#ffffff" background=3D"h=
+ttp://techupdate.zdnet.com/techupdate/i/bg_232850.gif" link=3D"#003399" ali=
+nk=3D"#cc0000" vlink=3D"#666699">
+<div align=3D"center">
+<a name=3D"top"></a>
+
+
+<!-- Logo and ad banner -->
+<table width=3D612 bgcolor=3D"#232850" cellpadding=3D0 cellspacing=3D0 bord=
+er=3D0>
+<tr valign=3Dbottom>
+<td width=3D440 colspan=3D4><a href=3D"http://clickthru.online.com/Click?q=
+=3D30-u8NEIRrPLwvPIzv8IeOdSKzjX1iR" ><img src=3D"http://www.zdnet.com/graph=
+ics/newsletters/hd_anchor.gif" width=3D"440" height=3D"60" border=3D"0"  al=
+t=3D"AnchorDesk Daily"></a></td>
+<td width=3D160 align=3Dcenter valign=3Dtop rowspan=3D2 bgcolor=3D"#ffffff"=
+>
+        <br>
+        <!--tower -->
+      <div align=3D"center"><img src=3D"http://i.i.com.com/cnwk.1d/Ads/comm=
+on/advertisement.gif" width=3D"120" height=3D"10" border=3D"0"></br>
+
+<a href=3D"http://clickthru.online.com/Click?q=3D45-fNkJIKBij6jwUVz-EDvznhj=
+onlZR" target=3D"new">  =20
+
+<img src=3D"http://www.techrepublic.com/images/ads/ban_160x600_domainsgirl3=
+.gif" width=3D"160" height=3D"600" border=3D"0">
+
+</a></div>
+        <!-- tower -->
+                <br>   =20
+ <table cellpadding=3D1 cellspacing=3D0 border=3D0 width=3D"156" bgcolor=3D=
+"#cccccc"><tr><td>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D"=
+154" bgcolor=3D"#ffffff">
+                <tr>
+                        <td width=3D6><img src=3D"http://www.zdnet.com/grap=
+hics/anchordesk/frontpage/b.gif" width=3D"6" height=3D"1" border=3D"0"><br>=
+</td>
+                        <td width=3D145>
+                        <font face=3D"Arial, Helvetica" size=3D"-1">
+                        <img src=3D"http://www.zdnet.com/graphics/anchordes=
+k/frontpage/b.gif" width=3D"1" height=3D"4" border=3D"0"><br>
+                       =20
+  <img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/header2_sh=
+ameless2.gif" width=3D"145" height=3D"20" vspace=3D6><br>
+       =20
+               =20
+                <a href=3D"http://clickthru.online.com/Click?q=3D5b-5LOwIBK=
+kZhFFYL3xCjjvDSwizzcR" ><FONT FACE=3D"Arial, Geneva, Lucida" SIZE=3D"2"><b>=
+Need a memory upgrade? Find out with CNET's Memory Configurator.</b></font>=
+</a><br> <img src=3D"http://www.zdnet.com/graphics/clear.gif" width=3D"1" h=
+eight=3D"6"><br>
+       =20
+               =20
+                <a href=3D"http://clickthru.online.com/Click?q=3D70-3vnJIdp=
+iybdmO2pKns2asfI8UkRR" ><FONT FACE=3D"Arial, Geneva, Lucida" SIZE=3D"2"><b>=
+Clearance Center: Get discounts on PCs, PDAs, MP3 players and more!</b></fo=
+nt></a><br> <img src=3D"http://www.zdnet.com/graphics/clear.gif" width=3D"1=
+" height=3D"6"><br>
+       =20
+               =20
+                <a href=3D"http://clickthru.online.com/Click?q=3D85-2G2oQ7K=
+reJoYyitaf70SVbToBBPR" ><FONT FACE=3D"Arial, Geneva, Lucida" SIZE=3D"2"><b>=
+Find out the top 10 Web services security requirements at Tech Update.</b><=
+/font></a><br> <img src=3D"http://www.zdnet.com/graphics/clear.gif" width=
+=3D"1" height=3D"6"><br>
+       =20
+               =20
+                <a href=3D"http://clickthru.online.com/Click?q=3D9a-b6_GQTM=
+pSkXyw6pFigi7yr9FKgnR" ><FONT FACE=3D"Arial, Geneva, Lucida" SIZE=3D"2"><b>=
+Builder.com shows you how to bring Java to the masses with Cold Fusion MX.<=
+/b></font></a><br> <img src=3D"http://www.zdnet.com/graphics/clear.gif" wid=
+th=3D"1" height=3D"6"><br>
+       =20
+               =20
+                <a href=3D"http://clickthru.online.com/Click?q=3Daf--dB8QLp=
+7D-RouLpydDX7NdmUVSeR" ><FONT FACE=3D"Arial, Geneva, Lucida" SIZE=3D"2"><b>=
+Check out thousands of IT job listings in ZDNet's Career Center.</b></font>=
+</a><br> <img src=3D"http://www.zdnet.com/graphics/clear.gif" width=3D"1" h=
+eight=3D"6"><br>
+         <br>
+                        </td>
+                        <td width=3D3><img src=3D"http://www.zdnet.com/grap=
+hics/anchordesk/frontpage/b.gif" width=3D"3" height=3D"1" border=3D"0"><br>=
+</td>
+                </tr>
+                </table>
+                </td></tr></table>
+
+       =20
+</td>
+<td width=3D12 colspan=3D3 valign=3Dbottom><img src=3D"http://www.zdnet.com=
+/techupdate/i/gl_corner2.gif" width=3D"12" height=3D"6" border=3D"0" alt=3D=
+""></td>
+</tr>
+<tr valign=3Dtop>
+
+
+<td width=3D1 bgcolor=3D"#83A3CB"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+<td width=3D10 bgcolor=3D"#1E5C99"><img src=3D"http://www.zdnet.com/b.gif" =
+width=3D10 height=3D1></td>
+<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+<td width=3D428 bgcolor=3D"#ffffff">
+
+
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D4=
+28 bgcolor=3D"#ffffef">
+                        <tr valign=3Dtop>
+                        <td width=3D10><img src=3D"http://www.zdnet.com/gra=
+phics/anchordesk/frontpage/b.gif" alt=3D"" width=3D"10" height=3D"1" border=
+=3D"0"><br></td>
+                        <td valign=3D"top" width=3D252>
+                       =20
+                        <img src=3D"http://www.zdnet.com/graphics/anchordes=
+k/frontpage/b.gif" width=3D"1" height=3D"8"><br>
+                                <font face=3D"Arial, Helvetica" size=3D"-2"=
+>FRI JUL 19, 2002</font><br>                                               =
+     =20
+                        <img src=3D"http://www.zdnet.com/graphics/anchordes=
+k/frontpage/b.gif" width=3D"1" height=3D"4"><br>
+                       =20
+                        <font face=3D"Arial, Helvetica" size=3D"-1">
+
+
+       =20
+
+               =20
+                           <table cellpadding=3D0 cellspacing=3D0 border=3D=
+0 width=3D83 align=3Dleft>
+                <tr valign=3Dtop>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/authors/144.gif" alt=3D"David Coursey" width=3D"75" height=3D"105" =
+border=3D"0"></td>
+                </tr>
+                </table>                                      =20
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0>
+                <tr>
+                <td bgcolor=3D"#fff49f"><font face=3D"Arial, Helvetica" siz=
+e=3D"-1"><b>&nbsp;David Coursey</b></font></td>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/trim_yellow.gif" width=3D"23" height=3D"15" border=3D"0"></td>
+                </tr>
+                </table>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D1=
+60>
+                <tr><td bgcolor=3D"#fff49f"><img src=3D"http://www.zdnet.co=
+m/graphics/anchordesk/frontpage/b.gif" height=3D1 width=3D1></td></tr>
+                <tr><td><img src=3D"http://www.zdnet.com/graphics/anchordes=
+k/frontpage/b.gif" height=3D5 width=3D1></td></tr>
+                </table>
+                <font size=3D"3"><a href=3D"http://clickthru.online.com/Cli=
+ck?q=3Dc4-Iy9lQ0WstJFP-onkHF6q-jPexAyR" ><b>MS/Apple: Can this marriage be =
+saved? (I doubt it)</A></B></font><br><img src=3D"http://www.zdnet.com/grap=
+hics/clear.gif" width=3D"1" height=3D"4"><br>
+                Apple is cutting hardware prices, raising software prices, =
+building features into OS X that compete with MS Office, and placing ads ur=
+ging Windows users to switch. Are these the first signs of an Apple/MS divo=
+rce? Here's what I think.<p>
+        =20
+       =20
+                <a href=3D"http://clickthru.online.com/Click?q=3Dda-dT8jQUP=
+7l4HS9R3bjsMVKpv3DxnR" ><b>NOTE: Why we're changing our publishing schedule=
+</b> </a><br><img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage=
+/b.gif" width=3D"1" height=3D"8"><br>
+       =20
+                <a href=3D"http://clickthru.online.com/Click?q=3Def-04uYQmk=
+x5ZwF13HqBxDVAmoBameR" ><b>PLUS: AnchorDesk Radio: The latest chips from Nv=
+idia and ATI</b> </a><br><img src=3D"http://www.zdnet.com/graphics/anchorde=
+sk/frontpage/b.gif" width=3D"1" height=3D"8"><br>
+         </td>
+                        <td width=3D8><img src=3D"http://www.zdnet.com/grap=
+hics/anchordesk/frontpage/b.gif" alt=3D"" width=3D"8" height=3D"1" border=
+=3D"0"><br></td>
+                        <td width=3D1 bgcolor=3D"#FFF7AD"><img src=3D"http:=
+//www.zdnet.com/graphics/anchordesk/frontpage/b.gif" alt=3D"" width=3D"1" h=
+eight=3D"1" border=3D"0"><br></td>
+                        <td width=3D8 bgcolor=3D"#FFFFFF"><img src=3D"http:=
+//www.zdnet.com/graphics/anchordesk/frontpage/b.gif" alt=3D"" width=3D"8" h=
+eight=3D"1" border=3D"0"><br></td>
+                        <td width=3D143 bgcolor=3D"#FFFFFF">
+
+                                <img src=3D"http://www.zdnet.com/graphics/a=
+nchordesk/frontpage/b.gif" alt=3D"" width=3D"1" height=3D"10" border=3D"0">=
+<br>
+  <img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/header2_mo=
+reon.gif" width=3D"150" height=3D"20" border=3D"0" vspace=3D5 alt=3D"More o=
+n AnchorDesk"><br><font face=3D"arial, helvetica" size=3D"-1">
+       =20
+        <a href=3D"http://clickthru.online.com/Click?q=3D04-k9W0IFQcTfUWU98=
+98BbBL7kOi_yR" >Tighter PC security... Encrypt your laptop... Pittman leavi=
+ng AOL </a><p>
+        =20
+       =20
+        <a href=3D"http://clickthru.online.com/Click?q=3D19-BLe0I2rcgevnM89=
+KMZ2Fz8IR7XlR" >Your top tips for shaping up flabby hard drives </a><p>
+        =20
+       =20
+               =20
+        <a href=3D"http://clickthru.online.com/Click?q=3D2e-eMTGIiKj5M2iWA6=
+ktQ3DlPfP8N4R" >Here's what I think of Jobs's Macworld keynote</a><p>
+               =20
+               =20
+        <a href=3D"http://clickthru.online.com/Click?q=3D43-coL5IBJ3L8YD_Pm=
+9Z5VKc-3P0BcR" >TiVo: Why it gets no gold stars for mandatory ads</a><p>
+               =20
+                 <img src=3D"http://www.zdnet.com/graphics/anchordesk/front=
+page/b.gif" height=3D4 width=3D1><br>
+                        </td>
+                        <td width=3D8 bgcolor=3D"#FFFFFF"><img src=3D"http:=
+//www.zdnet.com/graphics/anchordesk/frontpage/b.gif" alt=3D"" width=3D"8" h=
+eight=3D"1" border=3D"0"><br></td>
+                        </tr>
+                        </table><br>
+=20
+       =20
+        <!-- ### -->    <table width=3D"100%"  cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" bgcolor=3D"#ffffff">    <tr bgcolor=3D"#999999"><td co=
+lspan=3D"7" height=3D"15"><font face=3D"ms sans serif, geneva" color=3D"#ff=
+ffff" size=3D"-2"><img src=3D"http://www.zdnet.com/graphics/anchordesk/fron=
+tpage/b.gif" height=3D1 width=3D3><b>Crucial Clicks: More from ZDNet</b></f=
+ont></td></tr>    <tr>    <td bgcolor=3D"#999999" rowspan=3D"3"><img src=3D=
+"http://www.zdnet.com/graphics/anchordesk/frontpage/b.gif" height=3D1 width=
+=3D1></td>    <td rowspan=3D"3"><img src=3D"http://www.zdnet.com/graphics/a=
+nchordesk/frontpage/b.gif" height=3D1 width=3D5></td>    <td colspan=3D"3">=
+<img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/b.gif" heigh=
+t=3D5 width=3D1></td>    <td rowspan=3D"3"><img src=3D"http://www.zdnet.com=
+/graphics/anchordesk/frontpage/b.gif" height=3D1 width=3D5></td>    <td bgc=
+olor=3D"#999999" rowspan=3D"3"><img src=3D"http://www.zdnet.com/graphics/an=
+chordesk/frontpage/b.gif" height=3D1 width=3D1></td>    </tr>    <tr valign=
+=3D"top">    <td width=3D"100%">          <table width=3D"100%"  cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0">        <tr><td colspan=3D"3"><font =
+face=3D"verdana, geneva" color=3D"#333333" size=3D"-2"><b>MONITORS</b></fon=
+t><br /><img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/b.gi=
+f" height=3D3 width=3D1><br /></td></tr>            <tr valign=3D"top">    =
+   <td width=3D"85"><a href=3D"http://clickthru.online.com/Click?q=3D59-y53=
+oIEn9utdDwHAlpW-B_KMqztFR" ><img src=3D"http://www.zdnet.com/products/graph=
+ics/040802_monitors.jpg" width=3D"85" height=3D"110" border=3D"0" alt=3D"" =
+/></a></td>           <td width=3D"5"><img src=3D"http://www.zdnet.com/grap=
+hics/anchordesk/frontpage/b.gif" height=3D1 width=3D5></td>        <td widt=
+h=3D"100%"><font face=3D"arial, helvetica" size=3D"-1"><a href=3D"http://cl=
+ickthru.online.com/Click?q=3D6e-2aYjIyEG1DPJfKnQA5K-fxuEL59R" style=3D"text=
+-decoration:none"><b>A Porsche you can afford</b></a><br />    Brought to y=
+ou by Samsung and F.A. Porsche, the SyncMaster 171P is a sleek, 17-inch LCD=
+ with sharp image quality and snazzy design. But ZDNet reviewers say it's a=
+ bit pricey.        </font></td>       </tr>           <tr><td colspan=3D"3=
+"><img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/b.gif" hei=
+ght=3D3 width=3D1><br /><img src=3D"http://techupdate.zdnet.com/techupdate/=
+i/arrow_blue.gif" width=3D"8" height=3D"10" border=3D"0" alt=3D"" /><font f=
+ace=3D"arial, helvetica" size=3D"-1"><a href=3D"http://clickthru.online.com=
+/Click?q=3D83-U-BXQYJq_ZAY8v6tuoAABMMPZ9rR" style=3D"text-decoration:none">=
+Read review</a></font></td></tr>           </table>    </td>    <td><img sr=
+c=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/b.gif" height=3D1 w=
+idth=3D5></td>    <td width=3D"180">         <table cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"180" border=3D"0" bgcolor=3D"#eeeeee">        <tr bgc=
+olor=3D"#999999"><td colspan=3D"3" height=3D"15"><font face=3D"ms sans seri=
+f, geneva" color=3D"#ffffff" size=3D"-2"><img src=3D"http://www.zdnet.com/g=
+raphics/anchordesk/frontpage/b.gif" height=3D1 width=3D3>Most Popular Produ=
+cts</font></td></tr>      <tr>            <td><img src=3D"http://www.zdnet.=
+com/graphics/anchordesk/frontpage/b.gif" width=3D"10" height=3D"1" alt=3D""=
+ border=3D"0" /></td>         <td><font face=3D"ms sans serif, geneva" size=
+=3D"-2"><img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/b.gi=
+f" width=3D"1" height=3D"5" alt=3D"" border=3D"0" /><br />            <b>Mo=
+nitors</b><br /><img src=3D"http://www.zdnet.com/graphics/anchordesk/frontp=
+age/b.gif" width=3D"1" height=3D"7" alt=3D"" border=3D"0" /><br />        <=
+b>1</b>. <a href=3D"http://clickthru.online.com/Click?q=3D98-FTaOQ_z4Y8wzqR=
+4CW5CH7esbKRiR" style=3D"text-decoration:none">Samsung SyncMaster 151S</a><=
+br /><img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/b.gif" =
+width=3D"1" height=3D"3" alt=3D"" border=3D"0" /><br />     <b>2</b>. <a hr=
+ef=3D"http://clickthru.online.com/Click?q=3Dad-_4IAQzEpaIFnNBlQhaIHsSzky0PR=
+" style=3D"text-decoration:none">NEC MultiSync 1550V</a><br /><img src=3D"h=
+ttp://www.zdnet.com/graphics/anchordesk/frontpage/b.gif" width=3D"1" height=
+=3D"3" alt=3D"" border=3D"0" /><br />          <b>3</b>. <a href=3D"http://=
+clickthru.online.com/Click?q=3Dc2-oXxLQUEDqUaWo4rgVnxXFZcIuInR" style=3D"te=
+xt-decoration:none">Envision EN-5100e</a><br /><img src=3D"http://www.zdnet=
+.com/graphics/anchordesk/frontpage/b.gif" width=3D"1" height=3D"3" alt=3D""=
+ border=3D"0" /><br />            <b>4</b>. <a href=3D"http://clickthru.onl=
+ine.com/Click?q=3Dd7-wk3ZQLWDyUmJDgcRmBekeVktk2eR" style=3D"text-decoration=
+:none">Samsung SyncMaster 570 V</a><br /><img src=3D"http://www.zdnet.com/g=
+raphics/anchordesk/frontpage/b.gif" width=3D"1" height=3D"3" alt=3D"" borde=
+r=3D"0" /><br />          <b>5</b>. <a href=3D"http://clickthru.online.com/=
+Click?q=3Ded-jLlvQgV7qkUkUVcxv3orMjEsaQPR" style=3D"text-decoration:none">S=
+amsung SyncMaster 955 DF</a><br /><img src=3D"http://www.zdnet.com/graphics=
+/anchordesk/frontpage/b.gif" width=3D"1" height=3D"6" alt=3D"" border=3D"0"=
+ /><br />            <img src=3D"http://techupdate.zdnet.com/techupdate/i/a=
+rrow_blue.gif" width=3D"8" height=3D"10" border=3D"0" alt=3D"" /><b><a href=
+=3D"http://clickthru.online.com/Click?q=3D02-qia9IljjNkKO_m7_XGuwrfzJ6nnR" =
+style=3D"text-decoration:none">More popular monitors</a></b><br />         =
+<img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/b.gif" width=
+=3D"1" height=3D"10" alt=3D"" border=3D"0" /><br />            </font></td>=
+            <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/frontp=
+age/b.gif" width=3D"10" height=3D"1" alt=3D"" border=3D"0" /></td>         =
+</tr>           </table>    </td>    </tr>    <tr valign=3D"top"><td colspa=
+n=3D"3"><img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/b.gi=
+f" height=3D5 width=3D1></td></tr>    <tr><td colspan=3D"7" bgcolor=3D"#999=
+999"><img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/b.gif" =
+height=3D1 width=3D1></td></tr>    </table>    <!-- /### --> <table cellpad=
+ding=3D10 border=3D0 cellspacing=3D0>
+<tr><td>=20
+
+
+       =20
+                =20
+               =20
+                       =20
+                                    <a href=3D"http://clickthru.online.com/=
+Click?q=3D17-agitI5XQeDrnaDrIz4s1RhjGRseR" ><img src=3D"http://www.zdnet.co=
+m/graphics/anchordesk/frontpage/header2_news.gif" width=3D"150" height=3D"2=
+0" border=3D"0" vspace=3D10 alt=3D"News Analysis"></a><br> <table cellpaddi=
+ng=3D0 cellspacing=3D0 border=3D0>
+                <tr>
+                <td bgcolor=3D"#E4F2FF"><font face=3D"Arial, Helvetica" siz=
+e=3D"-1"><b>&nbsp;SYLVIA CARR</b></font></td>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/trim_blue.gif" width=3D"23" height=3D"15" border=3D"0"></td>
+                </tr>
+                </table>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D4=
+08>
+                <tr><td bgcolor=3D"#E4F2FF"><img src=3D"http://www.zdnet.co=
+m/graphics/anchordesk/frontpage/b.gif" height=3D1 width=3D1></td></tr>
+                </table>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D4=
+08>
+                <tr valign=3Dtop>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/authors/442.gif" alt=3D"SYLVIA CARR" border=3D"0"><br></td>
+                <td width=3D8>&nbsp;</td>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/b.gif" width=3D"1" height=3D"5"><br>
+                <font face=3D"Arial, Helvetica" size=3D"-1"><a href=3D"http=
+://clickthru.online.com/Click?q=3D2c-DatOIc0kqhK51D5c-r7MBvWpjuyR" ><b>Tigh=
+ter PC security... Encrypt your laptop... Pittman leaving AOL</b></a><br>Th=
+e government supports a benchmark that protects computers from hack attacks=
+ and   viruses. Plus: A start-up unveils software that lets you easily encr=
+ypt data. And AOL   Time Warner COO Bob Pittman is leaving the company. </f=
+ont></td>
+                </tr></table>
+         <!--------AD----------------------------------->
+       =20
+
+
+
+
+<!--------/AD----------------------------------->
+<br>
+
+
+       =20
+                =20
+               =20
+                       =20
+                                    <a href=3D"http://clickthru.online.com/=
+Click?q=3D42-rF7cIPKGJAvfr3ppz3F7_4EMIrdR" ><img src=3D"http://www.zdnet.co=
+m/graphics/anchordesk/frontpage/header2_your.gif" width=3D"150" height=3D"2=
+0" border=3D"0" vspace=3D10 alt=3D"News Analysis"></a><br> <table cellpaddi=
+ng=3D0 cellspacing=3D0 border=3D0>
+                <tr>
+                <td bgcolor=3D"#E4F2FF"><font face=3D"Arial, Helvetica" siz=
+e=3D"-1"><b>&nbsp;DAVID MORGENSTERN</b></font></td>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/trim_blue.gif" width=3D"23" height=3D"15" border=3D"0"></td>
+                </tr>
+                </table>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D4=
+08>
+                <tr><td bgcolor=3D"#E4F2FF"><img src=3D"http://www.zdnet.co=
+m/graphics/anchordesk/frontpage/b.gif" height=3D1 width=3D1></td></tr>
+                </table>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D4=
+08>
+                <tr valign=3Dtop>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/authors/445.gif" alt=3D"DAVID MORGENSTERN" border=3D"0"><br></td>
+                <td width=3D8>&nbsp;</td>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/b.gif" width=3D"1" height=3D"5"><br>
+                <font face=3D"Arial, Helvetica" size=3D"-1"><a href=3D"http=
+://clickthru.online.com/Click?q=3D57-YJIXII0aTAfkitLF0F_wt9Q9dZuR" ><b>Your=
+ top tips for shaping up flabby hard drives</b></a><br>AnchorDesk readers k=
+now that using defrag software on a regular basis makes their hard drives r=
+un smoothly and efficiently. David shares a list of readers' favorite apps,=
+ plus advice on preparing drives for the process. </font></td>
+                </tr></table><p>
+        =20
+       =20
+                <font face=3D"Arial, Helvetica" size=3D"-1"><a href=3D"http=
+://clickthru.online.com/Click?q=3D6c-SUL3IuP88_S_8w5KQCL5-NPyEdsR" ><b>Quic=
+kPoll results: Would you pay $5 to speed up Web surfing?</b> </a></font><p>
+       =20
+        <img src=3D"http://www.zdnet.com/graphics/anchordesk/frontpage/head=
+er2_expert.gif" width=3D"150" height=3D"20" border=3D"0" vspace=3D10 alt=3D=
+"Expert Advice"><br>
+       =20
+                =20
+               =20
+                       =20
+                                    <table cellpadding=3D0 cellspacing=3D0 =
+border=3D0>
+                <tr>
+                <td bgcolor=3D"#E4F2FF"><font face=3D"Arial, Helvetica" siz=
+e=3D"-1"><b>&nbsp;STEPHAN SOMOGYI</b></font></td>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/trim_blue.gif" width=3D"23" height=3D"15" border=3D"0"></td>
+                </tr>
+                </table>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D4=
+08>
+                <tr><td bgcolor=3D"#E4F2FF"><img src=3D"http://www.zdnet.co=
+m/graphics/anchordesk/frontpage/b.gif" height=3D1 width=3D1></td></tr>
+                </table>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D4=
+08>
+                <tr valign=3Dtop>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/authors/166.gif" alt=3D"STEPHAN SOMOGYI" border=3D"0"><br></td>
+                <td width=3D8>&nbsp;</td>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/b.gif" width=3D"1" height=3D"8"><br>
+                <font face=3D"Arial, Helvetica" size=3D"-1">
+                <a href=3D"http://clickthru.online.com/Click?q=3D81-z1IaQ-K=
+pQsz5u21pqfRO9R6BpKlR" ><b>Here's what I think of Jobs's Macworld keynote</=
+b></a><br clear=3D"all"><img src=3D"http://www.zdnet.com/graphics/clear.gif=
+" width=3D"1" height=3D"4"><br clear=3D"all">
+                Never one to shy away from Friday-morning quarterbacking, S=
+tephan deconstructs both the good and bad in Steve Jobs's Macworld Expo key=
+note. Read on for his take on everything from .Mac to the new iMac.</font><=
+/td>
+                </tr>
+                </table><p>
+       =20
+                =20
+               =20
+                       =20
+                                    <table cellpadding=3D0 cellspacing=3D0 =
+border=3D0>
+                <tr>
+                <td bgcolor=3D"#E4F2FF"><font face=3D"Arial, Helvetica" siz=
+e=3D"-1"><b>&nbsp;STEVE KOVSKY</b></font></td>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/trim_blue.gif" width=3D"23" height=3D"15" border=3D"0"></td>
+                </tr>
+                </table>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D4=
+08>
+                <tr><td bgcolor=3D"#E4F2FF"><img src=3D"http://www.zdnet.co=
+m/graphics/anchordesk/frontpage/b.gif" height=3D1 width=3D1></td></tr>
+                </table>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D4=
+08>
+                <tr valign=3Dtop>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/authors/473.gif" alt=3D"STEVE KOVSKY" border=3D"0"><br></td>
+                <td width=3D8>&nbsp;</td>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/b.gif" width=3D"1" height=3D"8"><br>
+                <font face=3D"Arial, Helvetica" size=3D"-1">
+                <a href=3D"http://clickthru.online.com/Click?q=3D96-pjdWQtd=
+hd93zk1ejZWSoS2P4Jm4R" ><b>TiVo: Why it gets no gold stars for mandatory ad=
+s</b></a><br clear=3D"all"><img src=3D"http://www.zdnet.com/graphics/clear.=
+gif" width=3D"1" height=3D"4"><br clear=3D"all">
+                First TiVo forced subscribers' machines to record sitcoms t=
+hey didn't want. Now the company is planting ads on their lists of favorite=
+ programs. No wonder TiVo owners have become such a bunch of whiners, says =
+Steve.</font></td>
+                </tr>
+                </table><p>
+       =20
+                =20
+               =20
+                       =20
+                                    <table cellpadding=3D0 cellspacing=3D0 =
+border=3D0>
+                <tr>
+                <td bgcolor=3D"#E4F2FF"><font face=3D"Arial, Helvetica" siz=
+e=3D"-1"><b>&nbsp;PRESTON GRALLA</b></font></td>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/trim_blue.gif" width=3D"23" height=3D"15" border=3D"0"></td>
+                </tr>
+                </table>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D4=
+08>
+                <tr><td bgcolor=3D"#E4F2FF"><img src=3D"http://www.zdnet.co=
+m/graphics/anchordesk/frontpage/b.gif" height=3D1 width=3D1></td></tr>
+                </table>
+                <table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D4=
+08>
+                <tr valign=3Dtop>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/authors/116.gif" alt=3D"PRESTON GRALLA" border=3D"0"><br></td>
+                <td width=3D8>&nbsp;</td>
+                <td><img src=3D"http://www.zdnet.com/graphics/anchordesk/fr=
+ontpage/b.gif" width=3D"1" height=3D"8"><br>
+                <font face=3D"Arial, Helvetica" size=3D"-1">
+                <a href=3D"http://clickthru.online.com/Click?q=3Dab-ZcQKQYp=
+Mbna0ewyXydit0M-0OvrR" ><b>Want to become a PC know-it-all? Here's how</b><=
+/a><br clear=3D"all"><img src=3D"http://www.zdnet.com/graphics/clear.gif" w=
+idth=3D"1" height=3D"4"><br clear=3D"all">
+                Want to be a power user? Wish you could master the inner wo=
+rkings of your PC and create Web pages? Preston has three downloadable guid=
+es for tweaking Windows XP, understanding the Registry, and writing HTML.</=
+font></td>
+                </tr>
+                </table><p>
+        <P>
+</td>
+</tr>
+</table>  =20
+<p>
+
+<hr size=3D1 width=3D"80% noshade align=3D"left">
+
+<font face=3D"Arial, Helvetica" size=3D"-1">
+
+<div align=3Dcenter>
+<a href=3D"http://clickthru.online.com/Click?q=3Dc0-kfs-QWP1Iwu-XYt41H99K8F=
+ZuSiR" ><b>AnchorDesk Home</b></a> | <a href=3D"http://clickthru.online.com=
+/Click?q=3Dd6-yw2KQMPMW6pO4HPnOIRzw0LGkk4R" ><b>Previous Issue</b></a>
+</div>
+
+<p>
+
+<img src=3D"http://www.zdnet.com/b.gif" width=3D1 height=3D10><br>
+</td>
+<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+<td width=3D10 bgcolor=3D"#1E5C99"><img src=3D"http://www.zdnet.com/b.gif" =
+width=3D10 height=3D1><br></td>
+<td width=3D1 bgcolor=3D"#83A3CB"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+</tr>
+</table>
+<!-- /main -->
+
+<!-- ### footer ### -->
+<table cellpadding=3D0 cellspacing=3D0 border=3D0 width=3D612>
+<tr valign=3Dtop>
+<td width=3D1 bgcolor=3D"#83A3CB"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+<td width=3D10 bgcolor=3D"#1E5C99"><img src=3D"http://www.zdnet.com/b.gif" =
+width=3D10 height=3D1><br></td>
+<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+<td width=3D588 bgcolor=3D"#cccccc"><img src=3D"http://www.zdnet.com/b.gif"=
+ width=3D1 height=3D1></td>
+<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+<td width=3D10 bgcolor=3D"#1E5C99"><img src=3D"http://www.zdnet.com/b.gif" =
+width=3D10 height=3D1><br></td>
+<td width=3D1 bgcolor=3D"#83A3CB"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+</tr>
+</table>
+
+<!-- ### subscription management ### -->
+<table width=3D"612" bgcolor=3D"#ffffef" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+<tr><td width=3D"1" bgcolor=3D"#83A3CB"><img src=3D"http://www.zdnet.com/b.=
+gif" width=3D"1" height=3D"1"></td>
+<td width=3D"10" bgcolor=3D"#1E5C99"><img src=3D"http://www.zdnet.com/b.gif=
+" width=3D"10" height=3D"1"></td>
+
+<td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.zdnet.com/b.gif"=
+ width=3D"1" height=3D"1"></td>
+<td width=3D"12"><img src=3D"http://www.zdnet.com/b.gif" width=3D"12" heigh=
+t=3D"1"></td>
+<td width=3D"564"><font face=3D"arial, helvetica" size=3D"-1"><img src=3D"h=
+ttp://www.zdnet.com/b.gif" width=3D"1" height=3D"5"><br>
+<font size=3D"3"><b>Sign up for more <a href=3D'http://nl.com.com/servlet/u=
+rl_login?email=3Dqqqqqqqqqq-zdnet@spamassassin.taint.org&brand=3Dzdnet'>free newsletter=
+s</a> from ZDNet</b></font><br>
+<img src=3D"http://www.zdnet.com/b.gif" width=3D"1" height=3D"5"><br>
+<!-- subscription management -->
+
+<font face=3D"ms sans serif, geneva" size=3D"-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-zdnet@zzzason.or=
+g</font></font>
+      <p><font face=3D"arial, helvetica" size=3D"-1"><font face=3D"ms sans =
+serif, geneva" size=3D"-2">=20
+        <a NOTRACK href=3D'http://clickthru.online.com/Click?q=3Deb-Hl7orSD=
+7zUbklPZWm6XdYcGMt-Ssi9RR'>Unsubscribe</a>&nbsp;|=20
+        &nbsp;<a href=3D'http://nl.com.com/servlet/url_login?email=3Dlegit-=
+list-zdnet@spamassassin.taint.org&brand=3Dzdnet'>Manage=20
+        My Subscriptions</a>&nbsp;|&nbsp;<a href=3D"http://clickthru.online=
+.com/Click?q=3D00-4FQlI9QDB2XcLB4bgi4cHr7W6TiR" >FAQ</a>&nbsp;|=20
+        &nbsp;<a href=3D"http://clickthru.online.com/Click?q=3D15-mYP_IGcDl=
+2k7JwtAV-hDEc2lRbPR" >Advertise</a><br>
+
+        </font>
+
+
+<!-- /subscription management-->
+</font><img src=3D"http://www.zdnet.com/b.gif" width=3D"1" height=3D"8"></t=
+d>
+<td width=3D"12"><img src=3D"http://www.zdnet.com/b.gif" width=3D"12" heigh=
+t=3D"1"></td>
+<td width=3D"1" bgcolor=3D"#000000"><img src=3D"http://www.zdnet.com/b.gif"=
+ width=3D"1" height=3D"1"></td>
+<td width=3D"10" bgcolor=3D"#1E5C99"><img src=3D"http://www.zdnet.com/b.gif=
+" width=3D"10" height=3D"1"></td>
+<td width=3D"1" bgcolor=3D"#83A3CB"><img src=3D"http://www.zdnet.com/b.gif"=
+ width=3D"1" height=3D"1"></td></tr>
+</table>
+<!-- /### subscription management ### -->
+
+<table width=3D612 cellpadding=3D0 cellspacing=3D0 border=3D0><tr>
+<td width=3D1 bgcolor=3D"#83A3CB"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+<td width=3D10 bgcolor=3D"#1E5C99"><img src=3D"http://www.zdnet.com/b.gif" =
+width=3D10 height=3D1></td>
+<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+
+<td width=3D588 bgcolor=3D"#000000"><img src=3D"http://www.zdnet.com/b.gif"=
+ width=3D1 height=3D1></td>
+<td width=3D1 bgcolor=3D"#000000"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+<td width=3D10 bgcolor=3D"#1E5C99"><img src=3D"http://www.zdnet.com/b.gif" =
+width=3D10 height=3D1></td>
+<td width=3D1 bgcolor=3D"#83A3CB"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+</tr></table>
+<table width=3D612 cellpadding=3D0 cellspacing=3D0 border=3D0><tr bgcolor=
+=3D"#1E5C99">
+<td width=3D1 bgcolor=3D"#83A3CB"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+<td width=3D10><img src=3D"http://www.zdnet.com/b.gif" width=3D10 height=3D=
+1></td>
+<td width=3D75><a href=3D"http://clickthru.online.com/Click?q=3D2b-2FVYINzw=
+pGvyIkAwzk0xBfd-8WrR" ><img src=3D"http://www.zdnet.com/graphics/newsletter=
+s/gl_ft.gif" width=3D75 height=3D43 border=3D0 alt=3D"ZDNet"></a></td>
+<td width=3D525><font face=3D"arial, helvetica" size=3D"-2" color=3D"#fffff=
+f"><a href=3D"http://clickthru.online.com/Click?q=3D41-qqJ1IEKzoK2rLLXU5CfC=
+kxHB0FFR" style=3D"color: #fff">Home</a> |<a href=3D"http://clickthru.onlin=
+e.com/Click?q=3D56-NwKYInnwtkU5BuBrctPQDwwaMC9R" style=3D"color: #fff">eBus=
+iness</a> | <a href=3D"http://clickthru.online.com/Click?q=3D6b-8g5ZIHEXs-d=
+SO5B80ywQ-4d0P6cR" style=3D"color: #fff">Security</a> | <a href=3D"http://c=
+lickthru.online.com/Click?q=3D80-KTKvQQ0J6P8TT0KoaDkjVsTLZ8iR" style=3D"col=
+or: #fff">Networking</a> | <a href=3D"http://clickthru.online.com/Click?q=
+=3D95-XdwrQvdKmPVvtPIr1yZeU_u_KnPR" style=3D"color: #fff">Applications</a> =
+| <a href=3D"http://clickthru.online.com/Click?q=3Daa-gBteQXUQ1Cwg_mlWLXZBX=
+qONOVnR" style=3D"color: #fff">Platforms</a> | <a href=3D"http://clickthru.=
+online.com/Click?q=3Dc0-kfs-QWP1Iwu-XSa41H99K8FZuSiR" style=3D"color: #fff"=
+>Hardware</a> | <a href=3D"http://clickthru.online.com/Click?q=3Dd5-p-viQzL=
+249bqbo3HCu4jNix1DPPR" style=3D"color: #fff">Careers</a></font></td>
+
+<td width=3D1 bgcolor=3D"#83A3CB"><img src=3D"http://www.zdnet.com/b.gif" w=
+idth=3D1 height=3D1></td>
+</tr></table>
+<table width=3D612 cellpadding=3D0 cellspacing=3D0 border=3D0>
+<tr><td bgcolor=3D"#83A3CB"><img src=3D"http://www.zdnet.com/b.gif" width=
+=3D1 height=3D1></td></tr>
+<tr><td><font face=3D"arial, helvetica" size=3D"-2" color=3D"#ffffff"><tabl=
+e width=3D100% border=3D0 cellspacing=3D2 cellpadding=3D1> <tr valign=3Dbot=
+tom> <td width=3D75% height=3D31> <p></font> <br><b><font face=3DArial, Hel=
+vetica, sans-serif size=3D2>    Copyright 2002 CNET Networks, Inc. All righ=
+ts reserved. ZDNet is a registered service mark of CNET Networks, Inc.    <=
+/font></b> </p></td><td height=3D31 valign=3Dtop> <div align=3Dright> <img =
+src=3D"http://gserv.zdnet.com/clear/outbound.gif?APPID=3D2&EMID=3D25136482&=
+NL=3De501-01&ISSUE=3D2002-07-19" height=3D1 width=3D1>    </div></td></tr><=
+tr>  <td colspan=3D2><font face=3DArial, Helvetica, sans-serif size=3D2>   =
+ </font></td></tr></table></font></td></tr>
+</table>
+<!-- /footer -->
+
+
+</body>
+</html>=20
+
+<IMG HEIGHT=3D1 WIDTH=3D1 SRC=3D"http://clickthru.online.com/Click?q=3Dea-f=
+jpy-XV9-0jGQHL5sWi23hhY99RR">
+

@@ -1,0 +1,27 @@
+From rssfeeds@jmason.org  Tue Sep 24 10:47:29 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0FE3D16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:47:29 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:47:29 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8O80AC26557 for
+    <jm@jmason.org>; Tue, 24 Sep 2002 09:00:10 +0100
+Message-Id: <200209240800.g8O80AC26557@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: scripting <rssfeeds@spamassassin.taint.org>
+Subject: NY Times piece on reporters with weblogs.
+Date: Tue, 24 Sep 2002 08:00:10 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://scriptingnews.userland.com/backissues/2002/09/23#When:8:24:12AM
+Date: Mon, 23 Sep 2002 15:24:12 GMT
+
+NY Times piece[1] on reporters with weblogs.
+
+[1] http://www.nytimes.com/2002/09/23/technology/23BLOG.html?ex=1033358400&en=a34d8a401c775a55&ei=5007&partner=USERLAND
+
+

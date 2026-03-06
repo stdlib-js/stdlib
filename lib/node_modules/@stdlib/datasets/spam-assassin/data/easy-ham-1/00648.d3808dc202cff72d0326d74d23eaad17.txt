@@ -1,0 +1,176 @@
+From fork-admin@xent.com  Thu Sep 19 16:26:10 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6208D16F03
+	for <jm@localhost>; Thu, 19 Sep 2002 16:26:06 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 16:26:06 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8JDncC22056 for <jm@jmason.org>;
+    Thu, 19 Sep 2002 14:49:38 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 77C9D294103; Thu, 19 Sep 2002 06:42:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta6.snfc21.pbi.net (mta6.snfc21.pbi.net [206.13.28.240])
+    by xent.com (Postfix) with ESMTP id D878829409E for <fork@xent.com>;
+    Thu, 19 Sep 2002 06:41:09 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta6.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H2O004E9U695B@mta6.snfc21.pbi.net> for fork@xent.com; Thu,
+    19 Sep 2002 06:44:33 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: Webex Endeavors
+To: FoRK <fork@spamassassin.taint.org>
+Message-Id: <3D89D273.EE040F95@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en, pdf
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 19 Sep 2002 06:34:43 -0700
+
+We have a partnership with Webex.  We use their serivce
+for cross-firewall app sharing--something that Netmeeting/Messenger
+and Sametime require a lot of configuration of firewalls,
+authentications, access controls and user training for.  
+
+Now Webex has invites, instant meeting launch without any 
+configuration. Users like it as now they have something to do 
+in between Web conferences and places to store and author 
+documents, reschedule meetings, relaunch meetings.  Webex likes 
+it as people are signed on all the time.  
+
+Greg
+
+
+
+September 19, 2002
+
+  Tadpole's Secure Web Software Subsidiary Endeavors Technology Teams With Web
+  Meetings Leader WebEx Communications
+  To Provide Best-of-Breed Solution For Extended Group Collaboration During
+  and Between Online Meetings
+
+  Web meetings raise the quality of team interaction and communications for
+  users of the Web's secure, P2P collaboration network
+
+  ###
+
+  Tadpole Technology plc, the mobile computing and network infrastructure
+  group, today announces that its web collaboration subsidiary, Endeavors
+  Technology, Inc., has teamed with Web meetings leader, WebEx
+  Communications,Inc. to help professionals make better use of corporate time
+  and resources, and gain competitive advantage. By integrating the advanced
+  communications capabilities of the WebEx platform with Endeavors' secure P2P
+  collaboration network, Endeavors has created a new method of world-class
+  teamwork and interaction without the hassle of travel.
+
+  With the rapid growth in popularity of Web meetings, the rationale for this
+  world-class relationship stems from the growing need for workgroups around
+  the world to maintain the quality of the team collaboration experience
+  between online meetings. The issue by those preferring not to travel is how
+  to continue to collaborate and share information with team members between
+  meetings rather than depending on intermittent, insecure email and multiple
+  copies of constantly changing documents.
+
+  Inter-meeting collaboration needs an asynchronous medium, independent of
+  time. In asynchronous mode, a team member can access, read and edit
+  information relevant to the meeting group at his/her convenience rather than
+  having to fit into the schedules and timeframes of others. A secured
+  environment available only to members of a meeting or project is also
+  essential.
+
+  Endeavors' Magi technology converts the Web into a secure platform for
+  sharing information directly from people's desktops. WebEx meetings can be
+  recorded and reviewed at any time, documents shared in the meeting can be
+  actioned in real-time or at a later date, calendars and project schedules
+  can be updated at any time, and new individuals added to the workgroup at
+  will . all in a secure environment with people working across the globe,
+  inside or outside company firewalls.
+
+  Magi peer collaboration securely delivers significant benefits to Web
+  meeting participants. Not only can they share and access information at
+  will, but they can also know which other participants are online or
+  "present." This enables them to chat and message each other, search across
+  other people's Magi environment, and work jointly on relevant documents
+  highly productively. With Magi collaboration, in tandem with WebEx
+  conferencing, the savings can be huge in terms of travel costs, phone bills,
+  and, most importantly, timely completion of projects and tasks.
+
+  "In order to realise the full potential of Web meetings, best-of-breed
+  services are needed to eliminate time and geographical boundaries," says
+  Bernard Hulme, Tadpole's group chief executive. "The powerful combination
+  of Endeavors' Magi and WebEx's communications technologies will assist
+  global work teams to better meet critical business goals and deadlines by
+  maintaining teamwork momentum within and between Web meetings."
+
+  "WebEx is transforming the way businesses use the Web for sales, marketing,
+  training, support and product design," says David Farrington, vice president
+  of corporate development at WebEx Communications. "By integrating the
+  communications capabilities of the WebEx platform with Endeavors' secure
+  collaboration network, Endeavors has created an offering that provides the
+  best in synchronous and asynchronous communications."
+
+  About Magi
+  Magi Enterprise 3.0, an award-winning web collaboration system, transforms
+  today's Web into a highly secure inter- and intra-enterprise collaboration
+  network of files and web resources. For the first time, enterprises can
+  implement ad-hoc Virtual Private Networks for collaboration very rapidly and
+  affordably without disrupting existing applications, networks or work
+  practices. Magi Enterprise 3.0 does this by effectively transforming
+  unsecured, "read-only" Web networks into two-way trusted and transparent
+  collaboration environments, through the use of such features as
+  cross-firewall connections, advanced data extraction, an intuitive graphical
+  interface, and universal name spaces generating "follow me URLs" for mobile
+  professionals.
+
+  About Endeavors Technology, Inc.
+  Endeavors Technology, Inc. is a wholly-owned subsidiary of mobile computing
+  and network infrastructure vendor Tadpole Technology plc (LSE-TAD,
+  www.tadpole.com), which has plants and offices in Irvine and Carlsbad
+  (California), and Cambridge, Edinburgh, and Bristol (UK). For further
+  information on Endeavors' P2P solutions, call 949-833-2800, email to
+  p2p@endeavors.com, or visit the company's website http://www.endeavors.com.
+
+  ends
+
+  For further information, please contact:
+
+  Bernard Hulme, Tadpole Technology - via Patcom Media
+  Hugh Paterson, Patcom Media - Tel 0207 987 4888, Email
+  hughp@patcom-media.com
+
+  Bullets for Editors
+
+  WebEx
+  Web communications services (synchronous): network-based platform for
+  delivering highly interactive, visually dynamic Web communications. The
+  WebEx platform supports real-time data, voice and video communications.
+  WebEx is the only company to design, develop and deploy a global network for
+  real-time Web communications.
+
+  Magi
+  On and off-line (asynchronous) communication and collaboration: cross
+  enterprise search and discovery, transparent security and trust (SSL & PKI),
+  2-way web access to files and applications, permanent cross firewall access,
+  ad hoc and permanent secure groups, centralized or decentralized control of
+  access lists and security privileges, centralized caching of information
+  (never lose anything critical), multi-device access to information (desktop,
+  laptop, PDA).
+
+

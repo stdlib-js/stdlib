@@ -1,0 +1,59 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:44 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0296E43C46
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:07 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D8mOb23643 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 09:48:24 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA01403; Tue, 13 Aug 2002 09:46:28 +0100
+Received: from w2k-server.bcs.ie ([195.218.97.197]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA01365 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 09:46:22 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.97.197] claimed
+    to be w2k-server.bcs.ie
+Received: by w2k-server.bcs.ie with Internet Mail Service (5.5.2653.19) id
+    <QMRGFKJ6>; Tue, 13 Aug 2002 09:48:54 +0100
+Message-Id: <214A52C16E44D51186FB00508BB83E0F7C0D66@w2k-server.bcs.ie>
+From: "Damian O' Sullivan" <Damian.OSullivan@bcs.ie>
+To: "'Anders Holm'" <anders.holm@elivefree.net>,
+	"Damian O' Sullivan" <Damian.OSullivan@bcs.ie>,
+	"'Albert White - SUN Ireland'" <albert.white@ireland.sun.com>,
+	ilug@linux.ie
+Subject: RE: [ILUG] Sparc Solaris (was: Dell GX260 V Redhat 7.3)
+Date: Tue, 13 Aug 2002 09:48:48 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Was the Ultra 5 the sunray server? What images did you serve to the sunrays
+to boot them over tftp/dhcp? 
+
+
+> 
+> Hi Damian.
+> 
+> SuSe has a Sparc version I previously been running on a Sun 
+> Ultra 5 at 
+> least. Worked fine, albeit a bit slow... ;)
+> 
+> //Anders
+> 
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

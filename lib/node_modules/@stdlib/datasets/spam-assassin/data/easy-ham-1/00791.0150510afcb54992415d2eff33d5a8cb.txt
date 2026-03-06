@@ -1,0 +1,71 @@
+From fork-admin@xent.com  Thu Sep 26 16:35:29 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id BD5A516F20
+	for <jm@localhost>; Thu, 26 Sep 2002 16:34:42 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:34:42 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8QCWCg18115 for <jm@jmason.org>;
+    Thu, 26 Sep 2002 13:32:13 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9B6E82940AA; Thu, 26 Sep 2002 05:28:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp001.nwlink.com (smtp001.nwlink.com [209.20.130.75]) by
+    xent.com (Postfix) with ESMTP id 5166E29409A for <fork@xent.com>;
+    Thu, 26 Sep 2002 05:28:00 -0700 (PDT)
+Received: from monster (kola.vertexdev.com [209.20.218.149] (may be
+    forged)) by smtp001.nwlink.com (8.12.2/8.12.2) with SMTP id g8QCVn22018247
+    for <fork@xent.com>; Thu, 26 Sep 2002 05:31:49 -0700
+Message-Id: <04da01c26558$d9bf8550$070d0dc0@monster>
+From: "Jeff Barr" <jeff@vertexdev.com>
+To: <fork@spamassassin.taint.org>
+References: <20020925215801.23505.49195.Mailman@lair.xent.com>
+Subject: Re: Digital radio playlists are prohibited?!
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4807.1700
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4807.1700
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 26 Sep 2002 05:32:01 -0700
+
+> Subject: Re: Digital radio playlists are prohibited?!
+> From: James Rogers <jamesr@best.com>
+> To: fork@spamassassin.taint.org
+> Date: 25 Sep 2002 12:52:15 -0700
+> 
+> On Wed, 2002-09-25 at 01:19, Rohit Khare wrote:
+> > Anyone heard of this law before?
+> 
+> 
+> Absolutely.  More accurately, it is part of the RIAAs "regulation" for
+> broadcasting music under their auspices.  This is actually part of the
+> default statutory license the RIAA is compelled to issue.  You can try
+> and establish your own contract with each of the individual publishers
+> in addition to the writers, but that is a Herculean undertaking in its
+> own right.  The details are really gross and complicated.
+
+Perhaps the stations cannot publish digital playlists, but you can get
+them from www.starcd.com anyway. They use some sort of
+listening and recognition technology to identify the music played
+on over 1000 US radio stations.
+
+Jeff;
+
+

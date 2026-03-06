@@ -1,0 +1,97 @@
+
+{{alias}}( x, N, K, n )
+    Evaluates the cumulative distribution function (CDF) for a hypergeometric
+    distribution with population size `N`, subpopulation size `K`, and number of
+    draws `n` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a population size `N`, subpopulation size `K` or draws `n` which
+    is not a nonnegative integer, the function returns `NaN`.
+
+    If the number of draws `n` or subpopulation size `K` exceeds population size
+     `N`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    N: integer
+        Population size.
+
+    K: integer
+        Subpopulation size.
+
+    n: integer
+        Number of draws.
+
+    Returns
+    -------
+    out: number
+        Evaluated CDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0, 8, 4, 2 )
+    ~0.786
+    > y = {{alias}}( 1.5, 8, 4, 2 )
+    ~0.786
+    > y = {{alias}}( 2.0, 8, 4, 2 )
+    1.0
+    > y = {{alias}}( 0, 8, 4, 2)
+    ~0.214
+
+    > y = {{alias}}( NaN, 10, 5, 2 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 5, 2 )
+    NaN
+    > y = {{alias}}( 0.0, 10, NaN, 2 )
+    NaN
+    > y = {{alias}}( 0.0, 10, 5, NaN )
+    NaN
+
+    > y = {{alias}}( 2.0, 10.5, 5, 2 )
+    NaN
+    > y = {{alias}}( 2.0, 10, 1.5, 2 )
+    NaN
+    > y = {{alias}}( 2.0, 10, 5, -2.0 )
+    NaN
+    > y = {{alias}}( 2.0, 10, 5, 12 )
+    NaN
+    > y = {{alias}}( 2.0, 8, 3, 9 )
+    NaN
+
+
+{{alias}}.factory( N, K, n )
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    of a hypergeometric distribution with population size `N`, subpopulation
+    size `K`, and number of draws `n`.
+
+    Parameters
+    ----------
+    N: integer
+        Population size.
+
+    K: integer
+        Subpopulation size.
+
+    n: integer
+        Number of draws.
+
+    Returns
+    -------
+    cdf: Function
+        Cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var myCDF = {{alias}}.factory( 30, 20, 5 );
+    > var y = myCDF( 4.0 )
+    ~0.891
+    > y = myCDF( 1.0 )
+    ~0.031
+
+    See Also
+    --------
+

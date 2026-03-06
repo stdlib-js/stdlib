@@ -1,0 +1,81 @@
+From rpm-list-admin@freshrpms.net  Thu Aug  1 11:28:00 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 61BA8440E6
+	for <jm@localhost>; Thu,  1 Aug 2002 06:27:50 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 11:27:50 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71AAj206814 for
+    <jm-rpm@jmason.org>; Thu, 1 Aug 2002 11:10:45 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g71A52J06179; Thu, 1 Aug 2002 12:05:02
+    +0200
+Received: from demuslinux.araneum.dk (nat2.araneum.dk [195.54.85.250]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g71A4WJ06101 for
+    <rpm-list@freshrpms.net>; Thu, 1 Aug 2002 12:04:32 +0200
+Received: from localhost.localdomain (localhost.localdomain [127.0.0.1])
+    by demuslinux.araneum.dk (8.11.6/8.11.6) with ESMTP id g71A9ar05200 for
+    <rpm-list@freshrpms.net>; Thu, 1 Aug 2002 12:09:36 +0200
+Subject: Re: Quick php advice needed :-)
+From: Daniel Demus <daniel@demus.dk>
+To: RPM-List <rpm-zzzlist@freshrpms.net>
+In-Reply-To: <20020801105156.73fb7f9f.matthias@egwn.net>
+References: <20020801105156.73fb7f9f.matthias@egwn.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Message-Id: <1028196576.2434.5.camel@demuslinux>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 01 Aug 2002 12:09:34 +0200
+Date: 01 Aug 2002 12:09:34 +0200
+
+On Thu, 2002-08-01 at 10:51, Matthias Saou wrote:
+> Sorry, this hasn't got much to do with rpm packages directly ;-)
+> 
+> My "builds" page is getting bigger and bigger, and quite messy as
+> directories are listed in no particular order :
+> http://freshrpms.net/builds/
+> 
+> What I'd need is to have last modification date of the directory displayed
+> next to the directory name (sort of like "mplayer - Thu Aug 1 2002"), and
+> the list ordered to have the most recent entries at the top.
+> 
+> Now, if there are php programmers on this list, I'd love to have their help
+> on how to do this ;-) It must be quite simple to get the system mtime for
+> the directory, it's the ordering that scares me a bit more.
+> 
+> Attached is the current code (please keep in mind that I'm not a
+> programmer, it usually explains a lot ;-)).
+> 
+
+You could try opening the directory with $filelist = popen("ls -t
+<path/to/dir>", "r"). This should give you the filenames in the
+directory sorted by mod.time. You can then open each filename, and read
+filemtime() to get the mod.time.
+
+Daniel
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

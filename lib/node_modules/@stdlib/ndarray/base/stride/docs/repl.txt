@@ -1,0 +1,30 @@
+
+{{alias}}( x, dim )
+    Returns the stride along a specified dimension for a provided ndarray.
+
+    A "stride" is the linear distance (i.e., number of elements) between
+    adjacent elements along a specified dimension.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    dim: integer
+        Dimension index. If less than zero, the index is resolved relative to
+        the last dimension, with the last dimension corresponding to the value
+        `-1`.
+
+    Returns
+    -------
+    out: integer
+        Stride.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ] ), 0 )
+    9
+
+    See Also
+    --------
+

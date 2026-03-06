@@ -1,0 +1,22 @@
+
+{{alias}}( x )
+    Returns the number of ndarray dimensions.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    n: integer
+        Number of dimensions.
+
+    Examples
+    --------
+    > var n = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 3, 3, 3 ] ) )
+    3
+
+    See Also
+    --------
+

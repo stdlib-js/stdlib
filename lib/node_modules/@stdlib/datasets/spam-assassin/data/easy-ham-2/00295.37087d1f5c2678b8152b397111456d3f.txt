@@ -1,0 +1,76 @@
+From ilug-admin@linux.ie  Fri Aug  9 14:54:34 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5E44543FB1
+	for <jm@localhost>; Fri,  9 Aug 2002 09:54:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 14:54:34 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79DsYb03395 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 14:54:34 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id OAA06691 for <jm-ilug@jmason.org>;
+    Fri, 9 Aug 2002 14:51:28 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA11276; Fri, 9 Aug 2002 14:50:36 +0100
+Received: from hawk.dcu.ie (mail.dcu.ie [136.206.1.5]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA11243 for <ilug@linux.ie>; Fri,
+    9 Aug 2002 14:50:29 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host mail.dcu.ie [136.206.1.5]
+    claimed to be hawk.dcu.ie
+Received: from prodigy.redbrick.dcu.ie (136.206.15.10) by hawk.dcu.ie
+    (6.0.040) id 3D36BB4A00080847 for ilug@linux.ie; Fri, 9 Aug 2002 14:50:29
+    +0100
+Received: by prodigy.redbrick.dcu.ie (Postfix, from userid 1023) id
+    F0207DA4A; Fri,  9 Aug 2002 14:50:28 +0100 (IST)
+Date: Fri, 9 Aug 2002 14:50:28 +0100
+From: Philip Reynolds <phil@redbrick.dcu.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] slashdot EW Dijkstra humor
+Message-Id: <20020809145028.A6699@prodigy.Redbrick.DCU.IE>
+References: <55DA5264CE16D41186F600D0B74D6B0924724A@KBS01>
+    <009601c23f87$fdcf47b0$3864a8c0@sabeo.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <009601c23f87$fdcf47b0$3864a8c0@sabeo.ie>; from
+    mfrench42@yahoo.co.uk on Fri, Aug 09, 2002 at 10:34:41AM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Matthew French's [mfrench42@yahoo.co.uk] 65 lines of wisdom included:
+> Brian O'Donoghue wrote a code fragment:
+> > For(a=0;a<strlen(somestring);a++)
+> > {
+> >  some_thing_goes_here();
+> >
+> >  if(b=strlen(somestring)-4)
+> > do_something;
+> >
+> > };
+> 
+> Unfortunately strlen is a relatively expensive operation. If you are using
+> C++ this is not such a big issue as string.length() can be declared const.
+> So long as you do not modify the string object, the compiler can do the
+> caching for you.
+
+There's a more simple reason as to why strlen shouldn't be used on
+the string here, and that's because in future you could actually
+change the contents of ``somestring'' within the for loop, and be
+left wondering why the number of iterations are not as you expect.
+
+Phil.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,33 @@
+{
+  "name": "stdlib-datasets-img-black-canyon",
+  "version": "",
+  "title": "Black Cañon",
+  "description": "Image of Black Canyon.",
+  "resources": [
+    {
+      "name": "black-canyon-jpg",
+      "title": "Black Cañon",
+      "description": "Image of Black Canyon.",
+      "format": "jpeg",
+      "mediatype": "image/jpeg",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/image.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Getty's Open Content Program",
+      "web": "http://www.getty.edu/art/collection/objects/40209/timothy-h-o'sullivan-black-canon-colorado-river-from-camp-8-looking-above-american-1871/"
+    }
+  ],
+  "keywords": [
+    "image",
+    "img",
+    "river",
+    "canyon",
+    "colorado",
+    "boat"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

@@ -1,0 +1,98 @@
+From social-admin@linux.ie  Wed Jul 31 12:41:16 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9F5EC440A8
+	for <jm@localhost>; Wed, 31 Jul 2002 07:41:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 12:41:13 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VBeI220008 for
+    <jm+ilug-social@jmason.org>; Wed, 31 Jul 2002 12:40:18 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA01460; Wed, 31 Jul 2002 12:38:32 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA01427 for <social@linux.ie>;
+    Wed, 31 Jul 2002 12:38:25 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6VBcOY14594 for <social@linux.ie>;
+    Wed, 31 Jul 2002 12:38:24 +0100
+Date: Wed, 31 Jul 2002 12:38:22 +0100
+To: ilug social <social@linux.ie>
+Subject: Re: [ILUG-Social] Re: [ILUG] Fwd: Linux Beer Hike
+Message-Id: <20020731123822.A14110@ie.suberic.net>
+References: <20020731114006.B11938@ie.suberic.net>
+    <Pine.LNX.4.40.0207311157360.16670-100000@turing.maths.tcd.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <Pine.LNX.4.40.0207311157360.16670-100000@turing.maths.tcd.ie>;
+    from horkana@tcd.ie on Wed, Jul 31, 2002 at 12:04:44PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1028547504.d51096@linux.ie>
+Mail-Followup-To: kevin+dated+1028547504.d51096@linux.ie,
+	social@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+On Wed, Jul 31, 2002 at 12:04:44PM +0100, Alan Horkan wrote:
+> does Spanish still count as a foreign language in America?
+> :)
+
+yep, that's what i learned as it seemed more useful then the other
+choice: french.  and that's what seems to count as "internationalisation":
+support of spanish.
+
+> Watch out for the political indoctrination at these irish language
+> schools, when i was teenager they had use marching saluting the flag
+> singing the national anthem and the college anthem.  Presumably they treat
+> adult learners with a little more dignity and dont send them home for a
+> minor outburst of English in emotional circustances despite having better
+> Irish than half of the other people there.
+
+if i go to a class, i'm there to learn.  if they throw in anthems or
+politics, i'll take what i can learn from that and i'll take in a new
+perspective, but i'll only do that with my critical thinking cap on.
+just like i do when i watch mass media.  and yes, from the one irish
+course i took in dublin, they do the national anthem.  which is fine
+really - i started off each day in school in america with the pledge of
+allegience (with the under god bit in it which annoyed my dad to no end).
+if that sort of thing didn't stick at the age of five, i severely doubt
+it will stick now.
+
+> Just to mention open source software agus gaeilge, OpenOffice could do
+> with having an Irish ispell dictionary converted to work with it.
+> Abiword already has irish spell checking and a few of the interface
+> strings translated (was about 85% about 18 months ago but it has drifted
+> to some horribly small percentage).
+
+and see, that would be my retort to any overly zealous irish speaker.
+there's a huge opportunity for a fully irish computing environment in
+free software.  and yet i don't see much action from official irish
+organisations.  the reason mandrake and some others have the irish
+support they have is because of individuals like donnacha.
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

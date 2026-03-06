@@ -1,0 +1,61 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 12 11:32:29 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 06CEE43FB1
+	for <jm@localhost>; Mon, 12 Aug 2002 06:32:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 11:32:29 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CAR4b07683 for
+    <jm-rpm@jmason.org>; Mon, 12 Aug 2002 11:27:04 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7CAO2J00821; Mon, 12 Aug 2002 12:24:02
+    +0200
+Received: from hq.traderman.co.uk (demon-gw.traderman.co.uk
+    [212.240.172.105]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id
+    g7CAN1J25809 for <rpm-list@freshrpms.net>; Mon, 12 Aug 2002 12:23:01 +0200
+Received: (qmail+freegate 13621 invoked by alias); 12 Aug 2002 10:20:32 -0000
+Received: from unknown (HELO traderman.co.uk) (193.38.48.94) by
+    hq.traderman.co.uk with SMTP; 12 Aug 2002 10:20:32 -0000
+Message-Id: <3D578B98.79F80294@traderman.co.uk>
+From: Yen Ho <yenh@traderman.co.uk>
+X-Mailer: Mozilla 4.78 [en] (Win98; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: "rpm-zzzlist@freshrpms.net" <rpm-zzzlist@freshrpms.net>
+Subject: How to add service port ?
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 12 Aug 2002 11:19:05 +0100
+Date: Mon, 12 Aug 2002 11:19:05 +0100
+
+How do I install / add an additional service port to the system which
+can be access via Microsoft ODBC driver?
+
+Regards,
+    Yen Ho
+(Technical Support)
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

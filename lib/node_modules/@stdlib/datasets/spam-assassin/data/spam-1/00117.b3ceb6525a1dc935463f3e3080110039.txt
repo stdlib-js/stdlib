@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Mon Aug 26 19:24:08 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id E4D0744156
+	for <zzzz@localhost>; Mon, 26 Aug 2002 14:24:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 26 Aug 2002 19:24:05 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7QIJgZ04280 for
+    <zzzz-ilug@jmason.org>; Mon, 26 Aug 2002 19:19:42 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA12356; Mon, 26 Aug 2002 19:17:57 +0100
+Received: from server759.instantinternetempires.net ([216.10.23.30]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA12319 for <ilug@linux.ie>;
+    Mon, 26 Aug 2002 19:17:47 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [216.10.23.30] claimed to
+    be server759.instantinternetempires.net
+Received: from nobody by server759.instantinternetempires.net with local
+    (Exim 3.35 #1) id 17jOQT-00034Z-00 for ilug@linux.ie; Mon, 26 Aug 2002
+    14:17:21 -0400
+To: ilug@linux.ie
+From: rowespirit@yahoo.com
+Content-Type: text/plain; charset=us-ascii
+X-Header: Reply-To: rowespirit@yahoo.com
+X-Loop-Prevention: 1
+Message-Id: <E17jOQT-00034Z-00@server759.instantinternetempires.net>
+Date: Mon, 26 Aug 2002 14:17:21 -0400
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - server759.instantinternetempires.net
+X-Antiabuse: Original Domain - linux.ie
+X-Antiabuse: Originator/Caller UID/GID - [99 99] / [99 99]
+X-Antiabuse: Sender Address Domain - server759.instantinternetempires.net
+Subject: [ILUG] BANK ERROR IN YOUR FAVOR
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+SUBSTANTIAL MONTHLY INCOME MAKERS VOUCHER
+Income Transfer Systems/Distribution Center
+************************************************************
+Pending Income Amount:  up to $21,000.00
+
+Action:http://www.hotresponders.com/cgi-bin/varpro/vartrack.cgi?t=wendy7172:1
+************************************************************
+Good News!  You have made the Substancial Income Makers list.  This means you get the entire system and get the opportunity to make up to $21,000.00 a month.
+
+To receive this system, follow this link!  
+       http://www.hotresponders.com/cgi-bin/varpro/vartrack.cgi?t=wendy7172:1
+
+Get ready, you will immediately receive all the information needed to make a substantial monthly income.
+What are you waiting for!!  http://www.hotresponders.com/cgi-bin/varpro/vartrack.cgi?t=wendy7172:1
+
+You are receiving this email due to having requested info on internet businesses.  If you are not longer looking for one, please click the remove link below. 
+Click on the link below to remove yourself
+http://www.hotresponders.com/cgi-bin/varpro/r.cgi?id=wendy7172&a=ilug@linux.ie
+
+AOL Users
+<a href="http://www.hotresponders.com/cgi-bin/varpro/r.cgi?id=wendy7172&a=ilug@linux.ie"> Remove Me</a>
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

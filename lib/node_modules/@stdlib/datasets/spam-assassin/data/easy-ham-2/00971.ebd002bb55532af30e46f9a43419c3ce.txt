@@ -1,0 +1,78 @@
+From fork-admin@xent.com  Thu Aug  8 14:12:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9EE9244139
+	for <jm@localhost>; Thu,  8 Aug 2002 08:32:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:32:51 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g77IWGk15162 for <jm@jmason.org>;
+    Wed, 7 Aug 2002 19:32:19 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6D0932940A9; Wed,  7 Aug 2002 11:29:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from fluff.x42.com (fluff.x42.com [213.187.218.11]) by xent.com
+    (Postfix) with SMTP id AC30E2940A8 for <fork@xent.com>; Wed,
+    7 Aug 2002 11:28:38 -0700 (PDT)
+Received: (qmail 26602 invoked by uid 569); 7 Aug 2002 18:28:42 -0000
+From: Magnus Bodin <magnus@bodin.org>
+To: fork@spamassassin.taint.org
+Subject: the end of an era (fwd)
+Message-Id: <20020807182842.GB27309@bodin.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.28i
+Reply-BY: Sat Aug 10 20:26:04 2002
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 7 Aug 2002 20:28:42 +0200
+
+
+Seems like Edsger W. Dijkstra has passed away.
+
+------- Forwarded Message
+
+From: "Edsger W. Dijkstra" <ewdkstra@xs4all.nl>
+Subject: from the family
+Cc: faculty@cs.utexas.edu
+version=2.20
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+
+
+Grateful for most that has befallen him, has peacefully passed away,
+   Edsger Wybe Dijkstra,
+our husband and father.
+
+We hold him very dear.
+
+The cremation will take place on
+
+Saterday, August 10th, 12:30 PM at
+Somerenseweg 120
+Heeze
+the Netherlands
+
+Maria C. Dijkstra Debets
+Marcus J. Dijkstra
+Femke E. Dijkstra
+Rutger M. Dijktra
+
+Please forward this message to whomever you feel missing in the recipient list.
+
+------- End of Forwarded Message
+http://xent.com/mailman/listinfo/fork
+
+

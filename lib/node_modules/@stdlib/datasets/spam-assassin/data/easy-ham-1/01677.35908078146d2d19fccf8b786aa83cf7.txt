@@ -1,0 +1,30 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sat Sep  7 00:03:58 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 19:03:58 -0400
+Subject: [Spambayes] understanding high false negative rate
+In-Reply-To: <15737.11956.18745.619040@12-248-11-90.client.attbi.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCGEKGBCAB.tim.one@comcast.net>
+
+>     >> > ##Remove: jeremy@alum.mit.edu##
+>
+>     Tim> Yuck: it got two 0.01's from embedding your email address at the
+>     Tim> bottom here.
+>
+> Which suggests that tagging email addresses in To/CC headers should be
+> handled differently than in message bodies?
+
+I don't know whether it suggests that, but they would be tagged differently
+in to/cc if I were tagging them at all right now.  If I were tagging To:
+addresses, for example, the tokens would look like
+
+    'to:email addr:mit'
+
+instead of
+
+    'email addr:mit'
+
+as they appear when an email-like thingie is found in the body.  Whether
+email addresses should be stuck in as one blob or split up as they are now
+is something I haven't tested.
+

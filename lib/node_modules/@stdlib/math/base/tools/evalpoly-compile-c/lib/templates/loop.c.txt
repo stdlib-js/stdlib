@@ -1,0 +1,32 @@
+static const {{dtype}} {{FNAME}}_COEFFICIENTS = {
+{{coefficients}}
+};
+
+/**
+* Evaluates a polynomial.
+*
+* ## Notes
+*
+* -   The implementation uses [Horner's rule][horners-method] for efficient computation.
+*
+* [horners-method]: https://en.wikipedia.org/wiki/Horner%27s_method
+*
+* @param x    value at which to evaluate the polynomial
+* @return     evaluated polynomial
+*/
+static {{dtype}} {{fname}}( const {{dtype}} x ) {
+	{{dtype}} p;
+	int i;
+
+	if ( x == 0.0{{dtype_suffix}} ) {
+		return {{FNAME}}_COEFFICIENTS[ 0 ];
+	}
+	i = {{num_coefficients}};
+	p = ( {{FNAME}}_COEFFICIENTS[ i ] * x ) + {{FNAME}}_COEFFICIENTS[ i-1 ];
+	i -= 2;
+	while ( i >= 0 ) {
+		p = ( p * x ) + {{FNAME}}_COEFFICIENTS[ i ];
+		i -= 1;
+	}
+	return p;
+}

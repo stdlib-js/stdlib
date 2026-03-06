@@ -1,0 +1,92 @@
+From iiu-admin@taint.org  Fri Aug 23 11:06:32 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AC1494416F
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:04:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:04:29 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MNM9Z29719;
+    Fri, 23 Aug 2002 00:22:09 +0100
+Received: from mail00.svc.cra.dublin.eircom.net
+    (mail00.svc.cra.dublin.eircom.net [159.134.118.16]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g7MNJfZ29657 for <iiu@taint.org>;
+    Fri, 23 Aug 2002 00:19:41 +0100
+Received: (qmail 44295 messnum 519748 invoked from
+    network[159.134.100.45/k100-45.bas1.dbn.dublin.eircom.net]);
+    22 Aug 2002 23:19:43 -0000
+Received: from k100-45.bas1.dbn.dublin.eircom.net (HELO ted.nua.ie)
+    (159.134.100.45) by mail00.svc.cra.dublin.eircom.net (qp 44295) with SMTP;
+    22 Aug 2002 23:19:43 -0000
+Message-Id: <5.1.1.6.0.20020823001344.0302c548@dogma.slashnull.org>
+X-Sender: antoinmail@dogma.slashnull.org
+X-Mailer: QUALCOMM Windows Eudora Version 5.1.1
+To: iiu@taint.org, iiu@taint.org
+From: Antoin O Lachtnain <antoin@eire.com>
+Subject: Re: [IIU] Eircom aDSL Nat'ing
+In-Reply-To: <1030032645.73395.1.camel@flapjack.netability.ie>
+References: <3D650A2D.1000301@dcu.ie> <3D650A2D.1000301@dcu.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: iiu-admin@taint.org
+Errors-To: iiu-admin@taint.org
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Reply-To: iiu@taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+Date: Fri, 23 Aug 2002 00:17:46 +0100
+
+At 17:10 22/08/2002 +0100, Nick Hilliard wrote:
+> > apologies for the possible silly question (i don't think it is, but),
+> > but is Eircom's aDSL service NAT'ed?
+>
+>No - you get unfiltered access with a real (but dynamic) IP address.
+>
+> > and what implications would that have for VoIP? I know there are
+> > difficulties with VoIP or connecting to clients connected to a NAT'ed
+> > network from the internet wild (i.e. machines with static, real IPs)
+>
+>You will probably suffer from the high latency of DLS lines.  Typically,
+>you're talking about 50ms RTT to the local bas, which is pretty high.
+>If your voip application can handle this, then you're ok.
+>
+>Nick
+
+what's the deal with all this latency? it's not like that in other places 
+where I've used dsl. i read some story about it being done that way to 
+allow greater distances to be covered or something like that. however, my 
+knowledge of physics is really only newtonian, and I don't understand how 
+worsening latency could possibly improve the reliability of a 2000 foot 
+long piece of copper. Perhaps it has something to do with stretching the 
+time-space continuum? can someone explain this in words of five syllables 
+or less?
+
+a.
+
+
+
+>_______________________________________________
+>IIU mailing list
+>IIU@iiu.taint.org
+>http://iiu.taint.org/mailman/listinfo/iiu
+
+--
+
+Antoin O Lachtnain
+**  antoin@eire.com ** http://www.eire.com ** +353-87-240-6691
+
+_______________________________________________
+IIU mailing list
+IIU@iiu.taint.org
+http://iiu.taint.org/mailman/listinfo/iiu
+

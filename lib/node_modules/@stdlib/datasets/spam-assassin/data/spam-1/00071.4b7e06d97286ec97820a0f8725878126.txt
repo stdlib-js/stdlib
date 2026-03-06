@@ -1,0 +1,46 @@
+From WebDesignHQ.com@carrey.adgrafix.com  Mon Aug 26 15:17:33 2002
+Return-Path: <WebDesignHQ.com@carrey.adgrafix.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 98D0944157
+	for <zzzz@localhost>; Mon, 26 Aug 2002 10:15:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 26 Aug 2002 15:15:31 +0100 (IST)
+Received: from carrey.adgrafix.com (carrey.adgrafix.com [208.230.129.2])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7O1OWZ18858 for
+    <Users@taint.org>; Sat, 24 Aug 2002 02:24:32 +0100
+Received: (from come@localhost) by carrey.adgrafix.com (8.9.3/8.9.3) id
+    VAA15757; Fri, 23 Aug 2002 21:24:39 -0400 (EDT)
+Date: Fri, 23 Aug 2002 21:24:39 -0400 (EDT)
+Message-Id: <200208240124.VAA15757@carrey.adgrafix.com>
+To: Users@taint.org
+Subject: WebDesignHQ Newsletter
+From: WebDesignHQ.com@carrey.adgrafix.com
+
+We thought you may be interested in our new software release: 
+
+WebDesignHQ Newsletter 
+23rd of August 2002 07:10:09 PM 
+
+The SiteBuilder v2.0 Final-Release is now available and it has many enhanced features as well as more licensing options compared to the Pre-Release. 
+
+The SiteBuilder is the ultimate 'nuke module' for making money with your portal system! 
+
+Check out the demo online and to learn how to purchase the Full Version visit: http://www.WebDesignHQ.com 
+
+The WebDesignHQ Flash-SiteBuilder Software is a userfriendly community based Multimedia Flash Web Site creation tool (similar to geocities/angelfire style engine... but with Flash!). It features an automatic publishing system that enables anyone to easily build their own web site online with nothing but their web browser. 
+
+This software can be installed on your own web site and will provide your web site visitors or registered members the ability to create their own Multimedia Web Site which they can edit anytime using only a web browser right at your own Web Site! 
+
+No FTP, HTML, or Flash knowledge is required to build and customize a Web Site. 
+
+An excellent solution for web designers and web hosting companies who have many clients that need constant updates. 
+
+You can learn more about how to get this software for your own site at : http://www.webdesignhq.com
+ ------------------------------------------------- 
+ If you would like to unsubscribe from this 
+ newsletter, just click the hyperlink below:
+
+http://www.webdesignhq.com/omnivore/vlist/vlist.php?action=out&address=Users@iiu.taint.org
+

@@ -1,0 +1,77 @@
+From razor-users-admin@lists.sourceforge.net  Wed Jul 24 13:17:54 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2399A440CD
+	for <jm@localhost>; Wed, 24 Jul 2002 08:17:53 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 13:17:53 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6OCEW411629 for <jm-razor@jmason.org>; Wed, 24 Jul 2002 13:14:32 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XKsD-0002Vr-00; Wed,
+    24 Jul 2002 05:04:09 -0700
+Received: from dsl-65-187-98-81.telocity.com ([65.187.98.81]
+    helo=home.topshot.com) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17XKrC-0002Pq-00 for
+    <razor-users@lists.sourceforge.net>; Wed, 24 Jul 2002 05:03:06 -0700
+Received: from jberry12375l1 (berry12375l.topshot.com [10.0.0.50]) by
+    home.topshot.com (8.12.4/8.12.4) with ESMTP id g6OC2cnv054563 for
+    <razor-users@lists.sourceforge.net>; Wed, 24 Jul 2002 08:02:44 -0400 (EDT)
+From: Joe Berry <joe@topshot.com>
+X-Mailer: The Bat! (v1.61) Personal
+Reply-To: Joe Berry <joe@topshot.com>
+X-Priority: 3 (Normal)
+Message-Id: <120130251381.20020724080232@topshot.com>
+To: razor-users@example.sourceforge.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Subject: [Razor-users] Something wrong with Database?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 24 Jul 2002 08:02:32 -0400
+Date: Wed, 24 Jul 2002 08:02:32 -0400
+
+Until a few days ago, razor (sdk 2.03, client 2.12) was catching a
+decent set of spams.  It seems now, however, that it isn't catching
+anything.  I got one email this morning with "ADV:" in the subject
+another two or three about how many inches longer I can be.  Did I
+miss something recently perhaps regarding configuration changes, etc?
+
+Thanks in advance,
+
+Joe
+---
+Joe Berry
+joe@topshot.com
+AIM "joe topshot"
+Yahoo Msgr "joetopshot"
+Baltimore, MD
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Fri Jul 19 22:13:22 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 48FE3440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 17:13:22 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 22:13:22 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6JL8VJ03956 for <jm@jmason.org>;
+    Fri, 19 Jul 2002 22:08:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 843152940E4; Fri, 19 Jul 2002 13:56:49 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain
+    (dsl-208-151-246-47.dsl.easystreet.com [208.151.246.47]) by xent.com
+    (Postfix) with ESMTP id 89EEF294098 for <FoRK@xent.com>; Fri,
+    19 Jul 2002 13:56:45 -0700 (PDT)
+Received: (from karl@localhost) by localhost.localdomain (8.11.6/8.11.6)
+    id g6JLPbY10174; Fri, 19 Jul 2002 14:25:37 -0700
+X-Authentication-Warning: localhost.localdomain: karl set sender to
+    kra@monkey.org using -f
+To: FoRK@xent.com
+Subject: Re: An Engineer's View of Venture Capitalists
+References: <Pine.LNX.4.33.0207182215180.6085-100000@watcher.mithral.com>
+From: Karl Anderson <kra@monkey.org>
+Organization: Ape Mgt.
+Date: 19 Jul 2002 14:25:37 -0700
+In-Reply-To: "Adam L. Beberg"'s
+    message of
+    "Thu, 18 Jul 2002 22:28:54 -0700 (PDT)"
+Message-Id: <m3d6tjwgtq.fsf@localhost.localdomain>
+User-Agent: Gnus/5.0802 (Gnus v5.8.2) Emacs/20.7
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+
+"Adam L. Beberg" <beberg@mithral.com> writes:
+
+> > VCs don't care about the success of the venture or the jobs of those
+> > involved in it, they aren't "funding innovation" or stimulating growth
+> > or fueling the economy.
+> 
+> Possibly replace "own" with "take from you ASAP with dilution". Their goal
+> is to take what you have by any means nessecary and sell it to someone else
+> for more then they paid within 7 years or less. That's what they do, nice
+> and simple. Your based-on-GPL-thing gives them no way to do that, so you are
+> irrelivant to the VC/investment world.
+
+Interestingly, it was the VC that convinced Zope Corp. to go opensource.
+
+-- 
+Karl Anderson      kra@monkey.org           http://www.monkey.org/~kra/
+
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,58 @@
+From fork-admin@xent.com  Wed Jul 24 13:20:12 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 65298440CC
+	for <jm@localhost>; Wed, 24 Jul 2002 08:20:10 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 13:20:10 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OCKn411875 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 13:20:50 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 41933294140; Wed, 24 Jul 2002 05:10:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 0D80529413E for
+    <fork@xent.com>; Wed, 24 Jul 2002 05:09:44 -0700 (PDT)
+Received: (qmail 1860 invoked by uid 508); 24 Jul 2002 12:18:55 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.47) by
+    venus.phpwebhosting.com with SMTP; 24 Jul 2002 12:18:55 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g6OCIpm24482; Wed, 24 Jul 2002 14:18:52
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Jim Whitehead <ejw@cse.ucsc.edu>
+Cc: forkit! <fork@spamassassin.taint.org>
+Subject: Re: SimPastry
+In-Reply-To: <AMEPKEBLDJJCCDEJHAMIOENGFCAA.ejw@cse.ucsc.edu>
+Message-Id: <Pine.LNX.4.33.0207241417120.18093-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 14:18:51 +0200 (CEST)
+
+On Tue, 23 Jul 2002, Jim Whitehead wrote:
+
+> You can download a Pastry simulator off of this web site.
+
+Why should I download anything from Microsoft? My firstborn is my and my 
+alone. No technology is worth that price. (And since when is Redmond into 
+technology? Weather reports from Dis are so far unchanging).
+
+http://xent.com/mailman/listinfo/fork
+
+

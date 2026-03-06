@@ -1,0 +1,186 @@
+
+{{alias}}( len, {{PARAM_1}}[, options] )
+    {{REPL_TEXT_MAIN_DESC}}
+
+    Parameters
+    ----------
+    len: integer
+        Output array length.
+
+    {{PARAM_1}}: {{PARAM_1_DTYPE}}
+        {{REPL_TEXT_PARAM_1_DESC}}
+
+    options: Object (optional)
+        Options.
+
+    options.dtype: string (optional)
+        Output array data type. Default: '{{DEFAULT_DTYPE}}'.
+
+    Returns
+    -------
+    out: Array<number>|{{REPL_TEXT_OUTPUT_TYPED_ARRAYS}}
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias}}( 3, {{PARAM_1_VALUE}} )
+    <{{DEFAULT_TYPED_ARRAY}}>
+
+
+{{alias}}.assign( {{PARAM_1}}, out )
+    {{REPL_TEXT_ASSIGN_DESC}}
+
+    Parameters
+    ----------
+    {{PARAM_1}}: {{PARAM_1_DTYPE}}
+        {{REPL_TEXT_PARAM_1_DESC}}
+
+    out: Array<number>|{{REPL_TEXT_OUTPUT_TYPED_ARRAYS}}
+        Output array.
+
+    Returns
+    -------
+    out: Array<number>|{{REPL_TEXT_OUTPUT_TYPED_ARRAYS}}
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/array/zeros}}( 3, '{{DEFAULT_DTYPE}}' );
+    > var out = {{alias}}.assign( {{PARAM_1_VALUE}}, x )
+    <{{DEFAULT_TYPED_ARRAY}}>
+    > var bool = ( out === x )
+    true
+
+
+{{alias}}.factory( [{{PARAM_1}}, ][options] )
+    {{REPL_TEXT_FACTORY_DESC}}
+
+    If provided a distribution parameter, the returned function returns random
+    variates drawn from the specified distribution.
+
+    If not provided a distribution parameter, the returned function requires
+    that distribution parameters be provided at each invocation.
+
+    The returned function accepts the following options:
+
+    - dtype: output array data type. This overrides the default output array
+    data type.
+
+    Parameters
+    ----------
+    {{PARAM_1}}: {{PARAM_1_DTYPE}} (optional)
+        {{REPL_TEXT_PARAM_1_DESC}}
+
+    options: Object (optional)
+        Options.
+
+    options.prng: Function (optional)
+        Pseudorandom number generator (PRNG) for generating uniformly
+        distributed pseudorandom numbers on the interval `[0,1)`. If provided,
+        the `state` and `seed` options are ignored. In order to seed the
+        returned pseudorandom number generator, one must seed the provided
+        `prng` (assuming the provided `prng` is seedable).
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        unsigned 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing unsigned 32-bit integers.
+
+    options.state: Uint32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned generator has exclusive control over
+        its internal state. Default: true.
+
+    options.dtype: string (optional)
+        Default output array data type. Default: '{{DEFAULT_DTYPE}}'.
+
+    Returns
+    -------
+    fcn: Function
+        Function for creating arrays.
+
+    Examples
+    --------
+    > var fcn = {{alias}}.factory();
+    > var out = fcn( 3, {{PARAM_1_VALUE}} )
+    <{{DEFAULT_TYPED_ARRAY}}>
+
+    // Provide distribution parameters:
+    > fcn = {{alias}}.factory( {{PARAM_1_VALUE}} );
+    > out = fcn( 3 )
+    <{{DEFAULT_TYPED_ARRAY}}>
+
+
+{{alias}}.PRNG
+    Underlying pseudorandom number generator.
+
+    Examples
+    --------
+    > var prng = {{alias}}.PRNG;
+
+
+{{alias}}.seed
+    Pseudorandom number generator seed.
+
+    Examples
+    --------
+    > var seed = {{alias}}.seed;
+
+
+{{alias}}.seedLength
+    Length of generator seed.
+
+    Examples
+    --------
+    > var len = {{alias}}.seedLength;
+
+
+{{alias}}.state
+    Generator state.
+
+    Examples
+    --------
+    > var out = {{alias}}( 3, {{PARAM_1_VALUE}} )
+    <{{DEFAULT_TYPED_ARRAY}}>
+
+    // Get a copy of the current state:
+    > var state = {{alias}}.state
+    <Uint32Array>
+
+    > out = {{alias}}( 3, {{PARAM_1_VALUE}} )
+    <{{DEFAULT_TYPED_ARRAY}}>
+    > out = {{alias}}( 3, {{PARAM_1_VALUE}} )
+    <{{DEFAULT_TYPED_ARRAY}}>
+
+    // Set the state:
+    > {{alias}}.state = state;
+
+    // Regenerate a previous array:
+    > out = {{alias}}( 3, {{PARAM_1_VALUE}} )
+    <{{DEFAULT_TYPED_ARRAY}}>
+
+
+{{alias}}.stateLength
+    Length of generator state.
+
+    Examples
+    --------
+    > var len = {{alias}}.stateLength;
+
+
+{{alias}}.byteLength
+    Size (in bytes) of generator state.
+
+    Examples
+    --------
+    > var sz = {{alias}}.byteLength;
+
+    See Also
+    --------
+

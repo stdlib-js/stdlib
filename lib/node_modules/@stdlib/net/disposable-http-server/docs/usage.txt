@@ -1,0 +1,16 @@
+
+Usage: temp-http-server [options] (--html path | --js path | --stdin type)
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --html path           Serve HTML.
+  --js,  --javascript path     Serve JavaScript.
+         --stdin type          Type of content. Either: html or javascript.
+  -p,    --port port           Server port. Default: 0.
+         --maxport maxport     Max server port. Default: `port`.
+         --hostname hostname   Server hostname.
+         --address address     Server address. Default: 0.0.0.0.
+         --open                Launch a browser once server is ready.
+

@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Fri Sep 13 13:37:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C2C2316F16
+	for <jm@localhost>; Fri, 13 Sep 2002 13:37:26 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 13:37:26 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8CNsQC20509 for <jm@jmason.org>;
+    Fri, 13 Sep 2002 00:54:27 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A31B02940D3; Thu, 12 Sep 2002 16:51:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from web13003.mail.yahoo.com (web13003.mail.yahoo.com
+    [216.136.174.13]) by xent.com (Postfix) with SMTP id 5696629409A for
+    <fork@xent.com>; Thu, 12 Sep 2002 16:50:13 -0700 (PDT)
+Message-Id: <20020912235313.4003.qmail@web13003.mail.yahoo.com>
+Received: from [67.114.193.54] by web13003.mail.yahoo.com via HTTP;
+    Thu, 12 Sep 2002 16:53:13 PDT
+From: Michael Watson <scruz_mike@yahoo.com>
+Subject: Re: From salon.com - Forbidden thoughts about 9/11
+To: Chris Haun <chris@noskillz.com>
+Cc: fork@spamassassin.taint.org
+In-Reply-To: <Pine.LNX.4.44.0209111507050.31122-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="0-1051763016-1031874793=:3397"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 12 Sep 2002 16:53:13 -0700 (PDT)
+
+--0-1051763016-1031874793=:3397
+Content-Type: text/plain; charset=us-ascii
+
+
+I am delurking to comment on the Salon article. I just wanted to say that I am grateful they choose not to publish my forbidden thought. I sent it in a couple of days before the 9/11 commeration. If I had just watched the sentimental network and cable shows on 9/11 my cynical thoughts would have remain unchanged. However, I watch the Frontline show "Faith and Doubt at Ground Zero" on PBS. That show tackled head on, with much more courage than I have seen elsewhere, the larger questions about good and evil, about art as an alternate religion (Karlheinz Stockhausen -- 9/11 was a great work of art), and especially the question about how religion has a darker side which when carried to fanatic extremes tends to negate the humanity of the non-believers.
+I am not a religious person but I stunned at the scope of this program. It talked about the Lutheran minister who spoke at Yankees Stadium on a podium with other religious leaders present who was charged with heresy by his own church for promoting the idea that all religions are equal (presumably the Lutherans have the one true path?).
+Thanks for listening, I just felt like I needed to put the word out about this program. My shallow comment on Salon and others like it (my boyfriend and I had sex while the towers collapsed) gives me pause about how some of us tend to harden ourselves to the suffering of others.
+Mike
+ Chris Haun wrote:i though this was all rather interesting, first bit of 9/11 coverage that 
+i've liked.
+
+http://www.salon.com/mwt/feature/2002/09/11/forbidden_letters/index.html
+
+Chris
+
+
+
+---------------------------------
+Do you Yahoo!?
+Yahoo! News - Today's headlines
+--0-1051763016-1031874793=:3397
+Content-Type: text/html; charset=us-ascii
+
+<P>I am delurking to comment on the Salon article. I just wanted to say that I am grateful they choose not to publish my forbidden thought. I sent it in a couple of days before the 9/11 commeration. If I had just watched the sentimental network and cable shows on 9/11 my cynical thoughts would have remain unchanged. However, I watch the Frontline show "Faith and Doubt at Ground Zero" on PBS. That show tackled head on, with much more courage than I have seen elsewhere, the larger questions about good and evil, about art as an alternate religion (Karlheinz Stockhausen -- 9/11 was a great work of art), and especially the question about how religion has a darker side which when carried to fanatic extremes tends to negate the humanity of the non-believers.
+<P>I am not a religious person but I stunned at the scope of this program. It talked about the Lutheran minister who spoke at Yankees Stadium on a podium with other religious leaders present who was charged with heresy by his own church for promoting the idea that all religions are equal (presumably the Lutherans have the one true path?).
+<P>Thanks for listening, I just felt like I needed to put the word out about this program. My shallow comment on Salon and others like it (my boyfriend and I had sex while the towers collapsed) gives me pause about how&nbsp;some&nbsp;of us&nbsp;tend to harden ourselves to the suffering of others.
+<P>Mike
+<P>&nbsp;<B><I>Chris Haun <CHRIS@NOSKILLZ.COM></I></B>wrote:
+<BLOCKQUOTE style="PADDING-LEFT: 5px; MARGIN-LEFT: 5px; BORDER-LEFT: #1010ff 2px solid">i though this was all rather interesting, first bit of 9/11 coverage that <BR>i've liked.<BR><BR>http://www.salon.com/mwt/feature/2002/09/11/forbidden_letters/index.html<BR><BR>Chris<BR></BLOCKQUOTE><p><br><hr size=1>Do you Yahoo!?<br>
+<b><a href="http://news.yahoo.com/">Yahoo! News</a></b> - Today's headlines
+--0-1051763016-1031874793=:3397--
+
+

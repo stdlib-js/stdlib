@@ -1,0 +1,72 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:59 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E9C1544133
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:12 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D8xBb24219 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 09:59:11 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA02296; Tue, 13 Aug 2002 09:58:05 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA02260 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 09:57:58 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id JAA09073; Tue, 13 Aug 2002 09:57:27 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g7D8vf104212; Tue, 13 Aug 2002 09:57:41 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Tue, 13 Aug 2002 09:57:41 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: "Damian O' Sullivan" <Damian.OSullivan@bcs.ie>
+Cc: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: Re: [ILUG] RH7.3 on Cobalt - the saga continues
+Message-Id: <20020813085741.GB2019@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Damian O' Sullivan <Damian.OSullivan@bcs.ie>,
+	"'ilug@linux.ie'" <ilug@linux.ie>
+References: <214A52C16E44D51186FB00508BB83E0F7C0D67@w2k-server.bcs.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <214A52C16E44D51186FB00508BB83E0F7C0D67@w2k-server.bcs.ie>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 09:53:55AM +0100, Damian O' Sullivan mentioned:
+> >  Curiously, when I go into the boot prom, an use
+> >  "set_params" I can tell it to mount /dev/hda2 as root. But 
+> > then it uses the PROM copy of the kernel (dodgy 2.2.16 
+> > kernel), which doesn't know ext3, so wants to fsck up my disk.
+> Boot prom on a cobalt? Is this an old mips based one? How did you get to it?
+
+ This is actually a raq3. Though, I do have an old raq2 that Liam was
+helping me get netbsd on (about all you'll get on a 16MB machine these
+days).
+
+ Anyway, I wussed out, and copied hda1:/ to hda2:/boot and set the bootfs
+to be hda2. It worked, though it's mounting an ext3fs as ext2. But I'm
+getting there.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

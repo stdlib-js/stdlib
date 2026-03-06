@@ -1,0 +1,87 @@
+Return-Path: neale@woozle.org
+Delivery-Date: Wed Sep 11 06:14:36 2002
+From: neale@woozle.org (Neale Pickett)
+Date: 10 Sep 2002 22:14:36 -0700
+Subject: [Spambayes] stack.pop() ate my multipart message
+Message-ID: <w53lm6985vn.fsf@woozle.org>
+
+I've been running hammie on all my incoming messages, and I noticed that
+multipart/alternative messages are totally hosed: they have no content,
+just the MIME boundaries.  For instance, the following message:
+
+------------------------------8<------------------------------
+From: somebody <someone@somewhere.org>
+To: neale@woozle.org
+Subject: Booga
+Content-type: multipart/alternative; boundary="snot"
+
+This is a multi-part message in MIME format.
+
+--snot
+Content-type: text/plain; charset=iso-8859-1
+Content-transfer-encoding: 7BIT
+
+Hi there.
+--snot
+Content-type: text/html; charset=iso-8859-1
+Content-transfer-encoding: 7BIT
+
+<pre>Hi there.</pre>
+--snot--
+------------------------------8<------------------------------
+
+Comes out like this:
+
+------------------------------8<------------------------------
+From: somebody <someone@somewhere.org>
+To: neale@woozle.org
+Subject: Booga
+Content-type: multipart/alternative; boundary="snot"
+X-Hammie-Disposition: No; 0.74; [unrelated gar removed]
+
+This is a multi-part message in MIME format.
+
+--snot
+
+--snot--
+------------------------------8<------------------------------
+
+I'm using "Python 2.3a0 (#1, Sep  9 2002, 22:56:24)".
+
+I've fixed it with the following patch to Tim's tokenizer, but I have to
+admit that I'm baffled as to why it works.  Maybe there's some subtle
+interaction between generators and lists that I can't understand.  Or
+something.  Being as I'm baffled, I don't imagine any theory I come up
+with will be anywhere close to reality.
+
+In any case, be advised that (at least for me) hammie will eat
+multipart/alternative messages until this patch is applied.  The patch
+seems rather bogus though, so I'm not checking it in, in the hope that
+there's a better fix I just wasn't capable of discovering :)
+
+------------------------------8<------------------------------
+Index: tokenizer.py
+===================================================================
+RCS file: /cvsroot/spambayes/spambayes/tokenizer.py,v
+retrieving revision 1.15
+diff -u -r1.15 tokenizer.py
+--- tokenizer.py	10 Sep 2002 18:15:49 -0000	1.15
++++ tokenizer.py	11 Sep 2002 05:01:16 -0000
+@@ -1,3 +1,4 @@
++#! /usr/bin/env python
+ """Module to tokenize email messages for spam filtering."""
+ 
+ import email
+@@ -507,7 +508,8 @@
+             htmlpart = textpart = None
+             stack = part.get_payload()
+             while stack:
+-                subpart = stack.pop()
++                subpart = stack[0]
++                stack = stack[1:]
+                 ctype = subpart.get_content_type()
+                 if ctype == 'text/plain':
+                     textpart = subpart
+------------------------------8<------------------------------
+
+

@@ -1,0 +1,60 @@
+
+{{alias}}( a, b )
+    Constructs a Givens plane rotation from two double-precision floating-point
+    numbers.
+
+    Parameters
+    ----------
+    a: float
+        Rotational elimination parameter.
+    
+    b: float
+        Rotational elimination parameter.
+
+    Returns
+    -------
+    out: Float64Array
+        Computed values.
+
+    Examples
+    --------
+    > var out = {{alias}}( 0.0, 2.0 )
+    <Float64Array>[ 2.0, 1.0, 0.0, 1.0 ]
+
+
+{{alias}}.assign( a, b, out, stride, offset )
+    Constructs a Givens plane rotation from two double-precision floating-point
+    numbers and assigns the results to an output array.
+
+    Parameters
+    ----------
+    a: float
+        Rotational elimination parameter.
+
+    b: float
+        Rotational elimination parameter.
+    
+    out: Float64Array
+        Output array.
+    
+    stride: integer
+        Output array stride.
+    
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Float64Array
+        Output array.
+    
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float64}}( 4 );
+    > var y = {{alias}}.assign( 0.0, 2.0, out, 1, 0 )
+    <Float64Array>[ 2.0, 1.0, 0.0, 1.0 ]
+    > var bool = ( y === out )
+    true
+    
+    See Also
+    --------

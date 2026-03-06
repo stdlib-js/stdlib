@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Mon Sep  2 16:22:19 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6B7D844156
+	for <jm@localhost>; Mon,  2 Sep 2002 11:21:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 16:21:58 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g823QqZ17868 for <jm@jmason.org>;
+    Mon, 2 Sep 2002 04:26:53 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1B43229410A; Sun,  1 Sep 2002 20:24:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barrera.org (cpe-65-172-233-109.sanbrunocable.com
+    [65.172.233.109]) by xent.com (Postfix) with ESMTP id DEF12294099 for
+    <fork@xent.com>; Sun,  1 Sep 2002 20:23:55 -0700 (PDT)
+Received: from  (127.0.0.1 [127.0.0.1]) by MailEnable Inbound Mail Agent
+    with ESMTP; Mon, 02 Sep 2002 01:10:39 -08:00
+Message-Id: <3D72BA8F.30303@barrera.org>
+From: "Joseph S. Barrera III" <joe@barrera.org>
+Organization: Wings over the World
+User-Agent: Mutt 5.00.2919.6900 DM (Nigerian Scammer Special Edition)
+X-Accept-Language: en-us, en, ja
+MIME-Version: 1.0
+To: FoRK <fork@spamassassin.taint.org>
+Subject: Re: Java is for kiddies
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 01 Sep 2002 18:10:39 -0700
+
+Reza B'Far (eBuilt) wrote:
+ > problems.... Why do most computer scientists insist on solving the
+ > same problems over and over again when there are some many more
+ > important and interesting problems (high level) to be solved ?????
+
+Amen!
+
+Doing it in an (unecessarily) harder way does NOT make you more of a man
+(or less of a kiddie).
+
+- Joe
+
+-- 
+The Combatant State is your father and your mother, your only
+protector, the totality of your interests. No discipline can
+be stern enough for the man who denies that by word or deed.
+
+
+

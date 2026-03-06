@@ -1,0 +1,119 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6OCv8hY053287
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Wed, 24 Jul 2002 07:57:09 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6OCv8cP053273
+	for cypherpunks-forward@ds.pro-ns.net; Wed, 24 Jul 2002 07:57:08 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6OCv0hY053227
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 07:57:01 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6OCuxJ86557
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 08:56:59 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6OCuwr12406
+	for cypherpunks@ds.pro-ns.net; Wed, 24 Jul 2002 08:56:58 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6OCuvR12384
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 08:56:57 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6OCuuJ86545
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 08:56:57 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id IAA27809
+	for cpunks@minder.net; Wed, 24 Jul 2002 08:05:47 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id IAA27799
+	for cypherpunks-outgoing; Wed, 24 Jul 2002 08:05:40 -0500
+Received: from 198.64.154.99-generic (mail70.mm53.com [198.64.154.99])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id IAA27782
+	for <cypherpunks@einstein.ssz.com>; Wed, 24 Jul 2002 08:04:12 -0500
+Message-Id: <200207241304.IAA27782@einstein.ssz.com>
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html
+MIME-Version: 1.0
+Date: Wed, 24 Jul 2002 12:55:18 UT
+X-X: H4F%N9&]M25;KNYT>YG)T*GJ9W7C-=65F3U>02T@K2W1$/L\D#-R<8P``
+Old-Subject: CDR: Friend, Companies are giving away FREE CARS!
+X-List-Unsubscribe: <unsub-7552100-342@mm53.com>
+From: "Only the Best" <OnlyTheBest_______r-7552100-342@mm53.com>
+X-Stormpost-To: cypherpunks@einstein.ssz.com 7552100 342
+To: "Friend" <cypherpunks@einstein.ssz.com>
+X-Mailer: StormPost 1.0
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Friend, Companies are giving away FREE CARS!
+
+<BODY BGCOLOR="#FFFFFF">
+
+<DIV ALIGN="center">
+
+<A <a href="http://click.mm53.com/sp/t.pl?id=3424:7552100" target= "_blank"><IMG SRC="http://www.partner2profit.com/creatives/paidtodrive/top.gif" WIDTH="410" HEIGHT="75" BORDER="0"></a></a><BR>
+<TABLE CELLPADDING="5" CELLSPACING="0" BORDER="0">
+<TR>
+<TD><A <a href="http://click.mm53.com/sp/t.pl?id=3425:7552100" target= "_blank"><IMG SRC="http://www.partner2profit.com/creatives/paidtodrive/1.gif" WIDTH="200" HEIGHT="140" BORDER="0"></a></a></td>
+<TD><A <a href="http://click.mm53.com/sp/t.pl?id=3426:7552100" target= "_blank"><IMG SRC="http://www.partner2profit.com/creatives/paidtodrive/2.jpg" WIDTH="200" HEIGHT="140" BORDER="0"></a></a></td>
+</tr>
+<TR>
+<TD><A <a href="http://click.mm53.com/sp/t.pl?id=3427:7552100" target= "_blank"><IMG SRC="http://www.partner2profit.com/creatives/paidtodrive/3.jpg" WIDTH="200" HEIGHT="140" BORDER="0"></a></a></td>
+<TD><A <a href="http://click.mm53.com/sp/t.pl?id=3428:7552100" target= "_blank"><IMG SRC="http://www.partner2profit.com/creatives/paidtodrive/4.gif" WIDTH="200" HEIGHT="140" BORDER="0"></a></a></td>
+</tr>
+<TR>
+<TD><A <a href="http://click.mm53.com/sp/t.pl?id=3429:7552100" target= "_blank"><IMG SRC="http://www.partner2profit.com/creatives/paidtodrive/5.gif" WIDTH="200" HEIGHT="140" BORDER="0"></a></a></td>
+<TD><A <a href="http://click.mm53.com/sp/t.pl?id=3430:7552100" target= "_blank"><IMG SRC="http://www.partner2profit.com/creatives/paidtodrive/6.jpg" WIDTH="200" HEIGHT="140" BORDER="0"></a></a></td>
+</tr>
+<TR>
+<TD><A <a href="http://click.mm53.com/sp/t.pl?id=3431:7552100" target= "_blank"><IMG SRC="http://www.partner2profit.com/creatives/paidtodrive/7.jpg" WIDTH="200" HEIGHT="140" BORDER="0"></a></a></td>
+<TD><A <a href="http://click.mm53.com/sp/t.pl?id=3432:7552100" target= "_blank"><IMG SRC="http://www.partner2profit.com/creatives/paidtodrive/8.gif" WIDTH="200" HEIGHT="140" BORDER="0"></a></a></td>
+</tr>
+</table>
+<A <a href="http://click.mm53.com/sp/t.pl?id=3433:7552100" target= "_blank"><IMG SRC="http://www.partner2profit.com/creatives/paidtodrive/bottom.gif" WIDTH="410" HEIGHT="85" BORDER="0"></a></a><BR>
+
+</div>
+
+<IMG SRC="http://click.mm53.com/sp/t.pl?id=3434:7552100&o=1" BORDER=0 WIDTH=0 HEIGHT=0> <BR><P><BR><!-- 
+SKY-Email-Address: cypherpunks@einstein.ssz.com 
+SKY-Database: OnlyTheBest
+-->
+<A NAME='unsub'>
+<TABLE align=center border=1 cellpadding=5 cellspacing=0 bordercolor=gray>
+<TD><TABLE width="600" align=center cellpadding="0" cellspacing="0" border="0" ><TR>
+<TD height=25><FONT size="2" face="arial,sans-serif" color=gray>Remove yourself from this recurring list by:</FONT></TD>
+</TR><TR>
+<TD><FONT color="gray" size="2" face="arial,sans-serif"><A href="mailto:unsub-7552100-342@mm53.com">Clicking here</A> to send a blank email to unsub-7552100-342@mm53.com</FONT></TD>
+</TR><TR>
+<TD align="center"><FONT size="2" face="arial,sans-serif"><I>OR</I></FONT></TD>
+</TR><TR>
+<TD><FONT face="arial,sans-serif" color="gray" size="2">Sending a postal mail to CustomerService, 427-3 Amherst Street, Suite 319, Nashua, NH 03063</FONT></TD>
+</TR><TR>
+<TD align="CENTER"><br><FONT face="arial,sans-serif" size="2" color="black"><I>This message was sent to address cypherpunks@einstein.ssz.com</I></FONT></TD>
+</TR></TABLE></TD></TABLE>
+ </body>
+</html>
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

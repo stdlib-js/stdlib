@@ -1,0 +1,79 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Aug 21 16:40:14 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B68B243C32
+	for <jm@localhost>; Wed, 21 Aug 2002 11:40:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 16:40:12 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LFahZ31574 for <jm-sa@jmason.org>; Wed, 21 Aug 2002 16:36:43 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hXVj-0003XF-00; Wed,
+    21 Aug 2002 08:35:07 -0700
+Received: from eclectic.kluge.net ([66.92.69.221]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17hXVG-0004V1-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Wed, 21 Aug 2002 08:34:39 -0700
+Received: (from felicity@localhost) by eclectic.kluge.net (8.11.6/8.11.6)
+    id g7LFYSf01788; Wed, 21 Aug 2002 11:34:28 -0400
+From: Theo Van Dinter <felicity@kluge.net>
+To: Frank Pineau <frank@pineaus.com>
+Cc: SpamAssassin List <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] Highest-scoring false positive
+Message-Id: <20020821153428.GI28416@kluge.net>
+References: <1029568528.15032.111.camel@obi-wan.kenlabs.com>
+    <Pine.BSF.4.21.0208210744440.47117-100000@wow.atlasta.net>
+    <20020821150422.GG28416@kluge.net>
+    <nib7mu8ghb59aqi7ipqlp3ajopdbosg8av@localhost>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <nib7mu8ghb59aqi7ipqlp3ajopdbosg8av@localhost>
+User-Agent: Mutt/1.4i
+X-GPG-Keyserver: http://wwwkeys.pgp.net
+X-GPG-Keynumber: 0xE580B363
+X-GPG-Fingerprint: 75B1 F6D0 8368 38E7 A4C5  F6C2 02E3 9051 E580 B363
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 21 Aug 2002 11:34:28 -0400
+Date: Wed, 21 Aug 2002 11:34:28 -0400
+
+On Wed, Aug 21, 2002 at 10:16:33AM -0500, Frank Pineau wrote:
+> Omaha Steaks *is* spam.  I bought something from them once.  *Great* steaks, but
+> then they started calling me, emailing me, snail-mailing, constantly.  I once
+
+If you sign up for something, it's not spam by definition, aggressive as
+they may be.  (I told them to stop calling me, and they stopped, so ...)
+
+-- 
+Randomly Generated Tagline:
+We didn't put in ^^ because then we'd have to keep telling people what
+ it means, and then we'd have to keep telling them why it doesn't short
+ circuit.  :-/
+              -- Larry Wall in <199707300650.XAA05515@wall.org>
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

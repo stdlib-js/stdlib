@@ -1,0 +1,78 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:28:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 222DF44154
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:17 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:17 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6SJT9i20561 for
+    <jm-ilug@jmason.org>; Sun, 28 Jul 2002 20:29:09 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA22917; Sun, 28 Jul 2002 20:27:00 +0100
+Received: from hibernia.jakma.org (hibernia.clubi.ie [212.17.32.129]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA22878 for <ilug@linux.ie>;
+    Sun, 28 Jul 2002 20:26:52 +0100
+Received: from fogarty.jakma.org (fogarty.jakma.org [192.168.0.4]) by
+    hibernia.jakma.org (8.11.6/8.11.6) with ESMTP id g6SJXSw18572;
+    Sun, 28 Jul 2002 20:33:28 +0100
+Received: from localhost (paul@localhost) by fogarty.jakma.org
+    (8.11.6/8.11.6) with ESMTP id g6SJXQa16574; Sun, 28 Jul 2002 20:33:26
+    +0100
+X-Authentication-Warning: fogarty.jakma.org: paul owned process doing -bs
+Date: Sun, 28 Jul 2002 20:33:24 +0100 (IST)
+From: Paul Jakma <paul@clubi.ie>
+X-X-Sender: paul@fogarty.jakma.org
+To: kevin lyda <kevin@doolin.com>
+Cc: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] weekend projects...
+In-Reply-To: <20020728190929.B2315@ie.suberic.net>
+Message-Id: <Pine.LNX.4.44.0207282031090.14923-100000@fogarty.jakma.org>
+X-Nsa: iraq saddam hammas hisballah rabin ayatollah korea vietnam revolt
+    mustard gas
+X-Dumb-Filters: aryan marijuiana cocaine heroin hardcore cum pussy porn
+    teen tit sex lesbian group
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sun, 28 Jul 2002, kevin lyda wrote:
+
+> 	    mod_gzip_item_include               file    \.htm$
+> 	    mod_gzip_item_include               file    \.html$
+> 	    mod_gzip_item_include               file    \.txt$
+> 	    mod_gzip_item_include               file    \.php$
+> 	    mod_gzip_item_include               file    \.php3$
+> 	    mod_gzip_item_include               file    \.php4$
+> 	    mod_gzip_item_include               file    \.pl$
+> 	    mod_gzip_item_include               mime    text/.*
+> 	    mod_gzip_item_include               mime    httpd/unix-directory
+> 	    mod_gzip_item_include               handler ^perl-script$
+> 	    mod_gzip_item_include               handler ^server-status$
+> 	    mod_gzip_item_include               handler ^server-info$
+
+hmm.. add \.swf and \.class to list of files above that can do with
+compressing.
+
+regards,
+-- 
+Paul Jakma	paul@clubi.ie	paul@jakma.org	Key ID: 64A2FF6A
+Fortune:
+No matter whether th' constitution follows th' flag or not, th' supreme
+court follows th' iliction returns.
+		-- Mr. Dooley
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,94 @@
+From fork-admin@xent.com  Mon Aug 26 20:25:36 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BD71C43F9B
+	for <jm@localhost>; Mon, 26 Aug 2002 15:25:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 20:25:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QJPhZ06227 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 20:25:44 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B6855294162; Mon, 26 Aug 2002 12:23:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id 245A8294139 for <fork@xent.com>;
+    Mon, 26 Aug 2002 12:22:56 -0700 (PDT)
+Received: (qmail 11661 invoked by uid 19621); 26 Aug 2002 19:24:22 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 26 Aug 2002 19:24:22 -0000
+Subject: Re: The GOv gets tough on Net Users.....er Pirates..
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <5.1.1.6.0.20020826113243.034de5d0@techdirt.com>
+References: <Pine.BSO.4.44.0208231900430.16631-100000@crank.slack.net>
+    <5.1.1.6.0.20020826113243.034de5d0@techdirt.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1030390769.2768.141.camel@avalon>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 26 Aug 2002 12:39:29 -0700
+
+On Mon, 2002-08-26 at 11:41, Mike Masnick wrote:
+> 
+> In which world are we talking about?  That may be true for the first sale, 
+> but once something is out in the world, the "creator" loses control... If I 
+> buy a chair you built, and then decide to give it away to my neighbor, by 
+> you're definition, he just stole from you.
+
+
+There are specific statutory exemptions to the "first sale" principle of
+fair use in the US.  For example, audio recordings have such an
+exemption (dating from the early '80s IIRC), which is why you can't
+(legally) be in the business of renting audio CDs; the creators can
+control what you do with it after they've sold it to you.  Certain
+industries would like to extend similar exemptions to other products --
+there is no theoretical limit to what Congress could revoke such
+privileges on.
+
+ 
+> Access to free stuff often helps to sell other stuff.  Just because you 
+> (and the entertainment industry, it seems) can't be creative enough to come 
+> up with a business model to leverage free stuff into paid stuff... don't 
+> take it out on the rest of us.
+
+
+The problem with the entertainment industry is that they engage in
+business and pricing tactics that make anything Microsoft was ever
+accused of pale in comparison.  If they can't figure out how to make
+money doing something, they'll actually burn money to make sure no
+"industry outsider" can either for all intents and purposes; control is
+more important than maximizing profit as long as they can make a
+profit.  They don't need your carrot, so they only engage in reasonable
+business behavior when you are carrying a very large stick, and few
+people swing a stick large enough.  They are being chronically
+"investigated" by the DoJ for anti-trust, collusion, and similar
+activities, but that is mostly just for show.
+
+Which isn't to say that the entertainment industry won't fall victim to
+its own stupidity, but their ability to do arbitrary and capricious
+price manipulation with impunity is going to make it a slow decline.
+
+-James Rogers
+ jamesr@best.com
+
+
+
+http://xent.com/mailman/listinfo/fork
+

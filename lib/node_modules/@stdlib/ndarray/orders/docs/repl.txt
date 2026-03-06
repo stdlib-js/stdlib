@@ -1,0 +1,22 @@
+
+{{alias}}()
+    Returns a list of ndarray orders.
+
+    The output array contains the following orders:
+
+    - row-major: row-major (C-style) order.
+    - column-major: column-major (Fortran-style) order.
+
+    Returns
+    -------
+    out: Array<string>
+        List of ndarray orders.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [ 'row-major', 'column-major' ]
+
+    See Also
+    --------
+

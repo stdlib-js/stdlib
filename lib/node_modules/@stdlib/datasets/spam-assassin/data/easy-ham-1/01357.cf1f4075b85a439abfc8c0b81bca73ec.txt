@@ -1,0 +1,73 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 11:05:54 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2F96B44160
+	for <jm@localhost>; Thu, 29 Aug 2002 06:04:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:04:46 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SKSEZ09225 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 21:28:14 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k9P7-0000PI-00; Wed,
+    28 Aug 2002 13:27:05 -0700
+Received: from lerlaptop.iadfw.net ([206.66.13.21]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17k9Od-0001xH-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 13:26:35 -0700
+Received: from localhost (localhost [127.0.0.1]) by lerlaptop.iadfw.net
+    (8.12.5/8.12.5) with ESMTP id g7SKQINK036905; Wed, 28 Aug 2002 15:26:19
+    -0500 (CDT) (envelope-from ler@lerctr.org)
+Subject: Re: [SAtalk] updating SA
+From: Larry Rosenman <ler@lerctr.org>
+To: Michael Clark <mclark@cdtmail.org>
+Cc: spamassassin-talk@example.sourceforge.net
+In-Reply-To: <a05111b05b992ca179346@[10.0.1.100]>
+References: <a05111b05b992ca179346@[10.0.1.100]>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Message-Id: <1030566379.469.47.camel@lerlaptop.iadfw.net>
+MIME-Version: 1.0
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: 28 Aug 2002 15:26:18 -0500
+Date: 28 Aug 2002 15:26:18 -0500
+
+On Wed, 2002-08-28 at 13:57, Michael Clark wrote:
+> To update spamassasin, all I need to do is install the new tar.gz 
+> file as if it were a new installation? I don't need to stop incoming 
+> mail or anything like that? Thanks, Mike
+If you are using spamd, you will have to stop/restart it. 
+
+-- 
+Larry Rosenman                     http://www.lerctr.org/~ler
+Phone: +1 972-414-9812                 E-Mail: ler@lerctr.org
+US Mail: 1905 Steamboat Springs Drive, Garland, TX 75044-6749
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

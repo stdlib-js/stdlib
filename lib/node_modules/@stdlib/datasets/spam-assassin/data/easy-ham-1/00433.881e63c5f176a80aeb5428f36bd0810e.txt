@@ -1,0 +1,108 @@
+From fork-admin@xent.com  Thu Sep  5 11:31:06 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 346B616F7C
+	for <jm@localhost>; Thu,  5 Sep 2002 11:28:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 11:28:30 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g852Y1Z01236 for <jm@jmason.org>;
+    Thu, 5 Sep 2002 03:34:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 806EB294200; Wed,  4 Sep 2002 19:31:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.datastore.ca (unknown [207.61.5.2]) by xent.com
+    (Postfix) with ESMTP id C5C9E2940AA for <FoRK@xent.com>; Wed,
+    4 Sep 2002 19:30:05 -0700 (PDT)
+Received: from maya.dyndns.org [207.61.5.143] by mail.datastore.ca
+    (SMTPD32-7.00) id A28361A001C; Wed, 04 Sep 2002 22:33:39 -0400
+Received: by maya.dyndns.org (Postfix, from userid 501) id 959DC1C336;
+    Wed,  4 Sep 2002 22:32:07 -0400 (EDT)
+To: Elias Sinderson <elias@cse.ucsc.edu>
+Cc: Jim Whitehead <ejw@soe.ucsc.edu>, FoRK <FoRK@xent.com>
+Subject: Re: Gecko adhesion finally sussed.
+References: <AMEPKEBLDJJCCDEJHAMICEFKFFAA.ejw@cse.ucsc.edu>
+    <3D768684.30702@cse.ucsc.edu>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2bs7dp3o8.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 04 Sep 2002 22:32:07 -0400
+
+>>>>> "E" == Elias Sinderson <elias@cse.ucsc.edu> writes:
+
+    E> ... The strength to weight ratio of a spider is so high
+    E> that Spiderman is able to throw a bus several city blocks with
+    E> little effort. His endurance is similarly enhanced as well.
+
+Could this be as simple as a modified molecular structure where the
+humanoid cells are in fact exo-skeletally structured with more atoms
+per cubic angstrom to achieve the distance-squared tensile strength
+enhancements we find when we introduce smaller metal atoms between the
+lattice packed grid of iron atoms to create steel?  
+
+This 'steel-effect' might give bone structure and tendons dramatically
+(several orders of magnitude) more tensile strength without the need
+to significantly increase the weight (like magnesium-alloy or
+carbon-fiber weight compared to iron, Spidey could even be way under
+weight).  Only increasing tensile strength could accommodate the
+mobility and leverage feats since bones are actually formed from
+bubbles of organic material hydrolically assisted, tensile strength
+cross-sectionally would give his frame the strength to withstand the
+muscular enhancement.
+
+    E> As for the spidey senses, well they're really great, but AFAIK
+    E> not really well explained in the comic series. 
+
+If the same close-packing gap-filling arachne-molecular structure
+modification occurs in neural tissues, and there'd be no reason to
+think that these would grow differently from bones and tendons, then
+what we are seeing in spidey sense is no more than the heightened
+cerebral functions due to shorter/faster/stronger synapses throughout
+the entire nervous system.  
+
+Since we know dogs and cats measure human emotions by smell, clearly
+hearing the heartbeats, and other subtle clues within their normal
+sensory ranges (but seem mystical to us) ...  for Peter Parker,
+everything from air currents on his facial-hairs to extremely subtle
+hormone smells might coallesce into a general gestalt of Spidey-Sense;
+don't forget that he'd acquired this ability in adolescence and thus
+would lack any cultural or even pathological basis to explain the
+heightened awareness to himself in anything but mystical terms. We
+know from issue #1 that his collision-avoidance reflex response time
+was far swifter than his cognitive awareness since he 'found' himself
+already stuck to the tree when the bicycle was already past and hence
+his disorientation ("You ok, Mister?") as if it was a hallucination.
+
+Hmmm ... it may even be physio-psychologically interesting to examine
+if Peter Parker's personal quandries arose _because_ his physiological
+'Spidey' infrastructure had been advanced whereas his psychological
+perception of his self had not, ie, "Peter" was not "Spiderman" but
+just the "driver of the bus".  Only, unlike ourselves, he found his
+self driving a body-vehicle not evolutionarily matched to his
+cognitive time-scales.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

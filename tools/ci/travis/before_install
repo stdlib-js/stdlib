@@ -1,0 +1,71 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Build script to run before performing install steps during Travis CI build [lifecycle][1].
+#
+# [1]: https://docs.travis-ci.com/user/customizing-the-build#The-Build-Lifecycle
+
+
+# VARIABLES #
+
+# Define the command for `node`:
+if [[ -z "${NODE}" ]]; then
+	cmd=node
+else
+	cmd="${NODE}"
+fi
+
+# Determine the script directory:
+dir=$(dirname "$0")
+
+# Define the path to an executable for determining npm version compatibility:
+node_npm_version="${dir}/node_npm_compatibility"
+
+# Determine a compatible npm version range:
+version=$("${cmd}" "${node_npm_version}")
+
+
+# FUNCTIONS #
+
+# Defines an error handler.
+on_error() {
+	echo 'ERROR: An error was encountered during execution.' >&2
+	exit 1
+}
+
+# Updates the npm client.
+#
+# $1 - acceptable version range
+update_npm() {
+   echo "Updating npm: ${version}." >&2
+
+   # Must wrap the version range in quotes to ensure range treated as a single string:
+   npm install -g npm@"$1"
+}
+
+# Main execution sequence.
+main() {
+	# Update npm. Older clients cannot, e.g., handle scoped modules.
+	update_npm "${version}"
+}
+
+# Set an error handler:
+trap 'on_error' ERR
+
+# Run main:
+main

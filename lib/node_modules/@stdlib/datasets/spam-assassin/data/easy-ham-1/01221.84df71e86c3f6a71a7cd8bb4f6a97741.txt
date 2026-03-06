@@ -1,0 +1,80 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  2 11:45:15 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AB06A16F17
+	for <jm@localhost>; Wed,  2 Oct 2002 11:45:14 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:45:14 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g929gaK02863 for
+    <jm-rpm@jmason.org>; Wed, 2 Oct 2002 10:42:36 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g929e2f01180; Wed, 2 Oct 2002 11:40:02
+    +0200
+Received: from chip.ath.cx (cs144080.pp.htv.fi [213.243.144.80]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g929duf01097 for
+    <rpm-list@freshrpms.net>; Wed, 2 Oct 2002 11:39:56 +0200
+Received: from chip.ath.cx (localhost [127.0.0.1]) by chip.ath.cx
+    (8.12.5/8.12.2) with ESMTP id g929dbSA006880; Wed, 2 Oct 2002 12:39:38
+    +0300
+Received: from localhost (pmatilai@localhost) by chip.ath.cx
+    (8.12.5/8.12.5/Submit) with ESMTP id g929datv006876; Wed, 2 Oct 2002
+    12:39:37 +0300
+X-Authentication-Warning: chip.ath.cx: pmatilai owned process doing -bs
+From: Panu Matilainen <pmatilai@welho.com>
+X-X-Sender: pmatilai@chip.ath.cx
+To: apt-rpm@distro.conectiva.com.br, <rpm-zzzlist@freshrpms.net>
+Subject: Debian-style task-packages for RH8.0 available
+Message-Id: <Pine.LNX.4.44.0210021220140.6561-100000@chip.ath.cx>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 2 Oct 2002 12:39:34 +0300 (EEST)
+Date: Wed, 2 Oct 2002 12:39:34 +0300 (EEST)
+
+Hi,
+
+This has been hashed over a few times on various lists, now I finally got 
+around to doing something about it... You can now add
+"rpm http://koti.welho.com/pmatilai/ redhat/8.0 task" to your sources.list 
+and after apt-get update you can find out what's available with 
+'apt-cache search ^task-'
+
+These are generated directly from comps.xml of RH8.0 so they contain 
+exactly the same packages as you'll get by choosing the various categories 
+at install time. I didn't bother including SRPMS for these as they are 
+rather uninteresting, if you want you can re-generate the .specs by 
+running http://koti.welho.com/pmatilai/comps2task/comps2task.py.
+
+BTW the repository only contains the task-packages, you'll need an 
+apt-enabled mirror of RH8.0 in your sources.list to actually do anything 
+with it.
+
+-- 
+	- Panu -
+
+
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

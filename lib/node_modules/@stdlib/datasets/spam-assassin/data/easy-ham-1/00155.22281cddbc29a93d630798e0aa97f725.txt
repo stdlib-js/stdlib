@@ -1,0 +1,71 @@
+From ilug-admin@linux.ie  Tue Oct  8 12:27:06 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id B489C16F03
+	for <zzzz@localhost>; Tue,  8 Oct 2002 12:27:05 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 12:27:05 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98BDQK12743 for
+    <zzzz-ilug@spamassassin.taint.org>; Tue, 8 Oct 2002 12:13:27 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 8EC2E340D5; Tue,  8 Oct 2002 12:14:11 +0100 (IST)
+Delivered-To: linux.ie-ilug@localhost
+Received: from mail05.svc.cra.dublin.eircom.net
+    (mail05.svc.cra.dublin.eircom.net [159.134.118.21]) by lugh.tuatha.org
+    (Postfix) with SMTP id 2D2C0340A2 for <ilug@linux.ie>; Tue,  8 Oct 2002
+    12:13:01 +0100 (IST)
+Received: (qmail 90525 messnum 458261 invoked from
+    network[159.134.229.14/p270.as3.adl.dublin.eircom.net]); 8 Oct 2002
+    11:13:01 -0000
+Received: from p270.as3.adl.dublin.eircom.net (HELO ?192.168.2.138?)
+    (159.134.229.14) by mail05.svc.cra.dublin.eircom.net (qp 90525) with SMTP;
+    8 Oct 2002 11:13:01 -0000
+MIME-Version: 1.0
+X-Sender: lbedford_mail@lon2.siliq.net
+Message-Id: <a05111b01b9c86e0595a6@[192.168.2.138]>
+In-Reply-To: <20021008111138.GF18266@fiachra.ucd.ie>
+References: <20021008111138.GF18266@fiachra.ucd.ie>
+To: Irish Linux Users Group <ilug@linux.ie>
+From: Liam Bedford <lbedford@lbedford.org>
+Subject: Re: [ILUG] cheap linux PCs
+Content-Type: text/plain; charset="iso-8859-1" ; format="flowed"
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Tue, 8 Oct 2002 12:12:59 +0100
+Date: Tue, 8 Oct 2002 12:12:59 +0100
+
+>I'd normally never buy this but the Xbox is Eur300 on IOL's shop, a very
+>large company are making a loss on it and:
+>
+>http://xbox-linux.sourceforge.net/articles.php?aid=1&sub=Press%20Release%3A%20Xbox%20Linux%20Mandrake%209%20Released
+>
+>Mandrake has been released for it.
+
+isn't it ¤250 in Smyths?
+
+don't forget to add to that the modchip, and the time to put it on.
+
+(/me thinks unless you want 3d graphics, www.mini-itx.com is the way to go :))
+
+L.
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

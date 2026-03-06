@@ -1,0 +1,127 @@
+From razor-users-admin@lists.sourceforge.net  Thu Aug 15 10:51:03 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7D20843C45
+	for <jm@localhost>; Thu, 15 Aug 2002 05:49:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 15 Aug 2002 10:49:34 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7ENDV408251 for <jm-razor@jmason.org>; Thu, 15 Aug 2002 00:13:31 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17f7DG-0003gU-00; Wed,
+    14 Aug 2002 16:06:02 -0700
+Received: from main.gmane.org ([80.91.224.249]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17f7Ca-0000G1-00 for <razor-users@lists.sourceforge.net>; Wed,
+    14 Aug 2002 16:05:20 -0700
+Received: from list by main.gmane.org with local (Exim 3.35 #1 (Debian))
+    id 17f7BX-0008Uv-00 for <razor-users@lists.sourceforge.net>;
+    Thu, 15 Aug 2002 01:04:15 +0200
+To: razor-users@example.sourceforge.net
+X-Injected-Via-Gmane: http://gmane.org/
+Received: from news by main.gmane.org with local (Exim 3.35 #1 (Debian))
+    id 17f7BW-0008Ud-00 for <gmane-mail-spam-razor-user@m.gmane.org>;
+    Thu, 15 Aug 2002 01:04:14 +0200
+Path: not-for-mail
+From: Jehan <nahor@bravobrava.com>
+Newsgroups: gmane.mail.spam.razor.user
+Message-Id: <ajenld$vsa$1@main.gmane.org>
+References: <1C63DA9F9722C2499FA0475B8B8625E32151EE@ex-mail-04.ant.amazon.com>
+NNTP-Posting-Host: adsl-64-168-83-170.dsl.snfc21.pacbell.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Trace: main.gmane.org 1029366254 32650 64.168.83.170 (14 Aug 2002
+    23:04:14 GMT)
+X-Complaints-To: usenet@main.gmane.org
+NNTP-Posting-Date: Wed, 14 Aug 2002 23:04:14 +0000 (UTC)
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.1b)
+    Gecko/20020813
+X-Accept-Language: en-us, en
+Subject: [Razor-users] Re: many vs one
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 14 Aug 2002 16:05:13 -0700
+Date: Wed, 14 Aug 2002 16:05:13 -0700
+
+Oates, Isaac wrote:
+ > First, 1,000 people will have seen the piece of spam that could've
+ > been avoided.  But the other 99,000 will never see that spam.  Evenly
+ > distributed, it means that an average user will only see 1% of spam.
+ > That's not realistic, because not everyone will get the same spam,
+ > but the basic threshold can be adjusted.  At the very least, 30
+ > people need to "vote" on a given piece of mail to make a realistic
+ > decision.  Since there's no "no" vote mechanism (except
+ > revocation--and that's after the fact), only a "yes" vote mechanism
+ > exists and so if you received 30 "yes" votes then you could safely
+ > say that you got a reasonable sample.
+
+I'm not sure that I follow your reasoning here. Razor isn't your mail 
+server. It doesn't keep in your mail. You don't request your mail there. 
+Nor do most people check for spam only when they are going to read their 
+mail. My setup check a mail against Razor when my server receives it, 
+not when I'm going to read it. If you wait to get 1000 reply for a mail, 
+it means you have to wait for 1000 people to read it (at least, some 
+people may not vote because they don't want to vote that day or because 
+they don't think it's spam). Knowing that about half the planet would be 
+sleeping (night time) and thus not reading their mail, it would mean 
+that at least 2000 people already received the mail in their inbox. 
+Knowing that, among the people who are not sleeping, not all of them are 
+constantly reading their mail. I would say that less than 1 people over 
+10 read their mail as soon as it arrives. That means that 20,000 people 
+already recieved the mail and checked it against the Razor database 
+before you would get your 1000 votes.
+
+Also, with your system, 99% is the best you could get. If you wait for 
+only one vote, maybe only 20 guy would read the mail (1 to vote, 10 
+sleeping, and 9 not reading their mail soon enough). Wich gives a value 
+99.98%. That's far better than your 99% don't you think.
+In RealLife(tm), most likely one guy voting won't be enough but the 
+thing is that it will stop the spam as early as possible.
+
+Also, if for some reason, this mail is one of those people don't agree 
+on whether it is spam or not, it would take a while to revoke those 1000 
+reports, which means that some people may lose this legitimate (to them) 
+mail.
+
+You mentioned that with this system, people will re-report less often. 
+First, I don't see how waiting *longer* before making a decision on the 
+legitimacy of a mail will reduce re-reporting. The more you wait, the 
+more people will get the mail in their inbox, the more people will see 
+the mail (again, not everybody check their mail against Razor at read 
+time, most do it a reception time using procmail/spamassassin). Second, 
+re-reporting has its use, it increase the confidence that a mail is spam.
+
+So I don't see what you gain with your 1000 people.
+
+	Jehan
+
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,51 @@
+
+{{alias}}( x, y, k )
+    Computes the tangent of a double-precision floating-point number on the
+    interval [-π/4, π/4].
+
+    For increased accuracy, the number for which the tangent should be evaluated
+    can be supplied as a double-double number (i.e., a non-evaluated sum of two
+    double-precision floating-point numbers `x` and `y`).
+
+    The numbers `x` and `y` must satisfy `|y| < 0.5 * ulp( x )`.
+
+    If either `x` or `y` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in radians).
+
+    y: number
+        Tail of `x`.
+
+    k: integer
+        If `k=1`, the function returns `tan(x+y)`. If `k=-1`, the function
+        returns the negative inverse `-1/tan(x+y)`.
+
+    Returns
+    -------
+    out: number
+        Tangent.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/4.0, 0.0, 1 )
+    ~1.0
+    > out = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/4.0, 0.0, -1 )
+    ~-1.0
+    > out = {{alias}}( {{alias:@stdlib/constants/float64/pi}}/6.0, 0.0, 1 )
+    ~0.577
+    > out = {{alias}}( 0.664, 5.288e-17, 1 )
+    ~0.783
+
+    > out = {{alias}}( NaN, 0.0, 1 )
+    NaN
+    > out = {{alias}}( 3.0, NaN, 1 )
+    NaN
+    > out = {{alias}}( 3.0, 0.0, NaN )
+    NaN
+
+    See Also
+    --------
+

@@ -1,0 +1,95 @@
+From exmh-workers-admin@redhat.com  Wed Oct  2 11:43:17 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 11B4A16F03
+	for <jm@localhost>; Wed,  2 Oct 2002 11:43:17 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:43:17 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g924NTK25461 for
+    <jm-exmh@jmason.org>; Wed, 2 Oct 2002 05:23:30 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 82B7F3EA36; Wed,  2 Oct 2002
+    00:24:04 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 0BC7440AD2
+    for <exmh-workers@listman.redhat.com>; Wed,  2 Oct 2002 00:21:29 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g924LSG11235 for exmh-workers@listman.redhat.com; Wed, 2 Oct 2002
+    00:21:28 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g924LSf11231 for
+    <exmh-workers@redhat.com>; Wed, 2 Oct 2002 00:21:28 -0400
+Received: from dimebox.bmc.com (adsl-66-140-152-233.dsl.hstntx.swbell.net
+    [66.140.152.233]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g9242fi19217 for <exmh-workers@redhat.com>; Wed, 2 Oct 2002 00:02:41 -0400
+Received: by dimebox.bmc.com (Postfix, from userid 1205) id 3F74337EA9;
+    Tue,  1 Oct 2002 23:21:27 -0500 (CDT)
+Received: from dimebox.bmc.com (localhost [127.0.0.1]) by dimebox.bmc.com
+    (Postfix) with ESMTP id 0A11D37EA6 for <exmh-workers@redhat.com>;
+    Tue,  1 Oct 2002 23:21:27 -0500 (CDT)
+X-Mailer: exmh version 2.5 07/13/2001 cvs 10/01/2002 with nmh-1.0.4
+To: exmh-workers@spamassassin.taint.org
+Subject: Unseen window versus Sequences Window
+MIME-Version: 1.0
+From: Hal DeVore <haldevore@acm.org>
+X-Image-Url: http://www.geocities.com/hal_devore_ii/haleye48.gif
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <30937.1033532481@dimebox.bmc.com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Tue, 01 Oct 2002 23:21:21 -0500
+
+
+I apologize for not catching up to the current code in so long.
+
+Now that I have I'm trying to resolve "breakage" and differences.
+
+The unseen window seems to have been replaced with the sequences 
+window.  While I appreciate the flexibility of the sequences 
+window, the unseen window filled an important-to-me need:  It 
+was tiny and could be set to show on all desktops of a virtual 
+window manager without taking a lot of space.  Since my normal 
+mode of operation involves two copies of exmh displaying on a 
+1024x768 vnc session, screen space is at a premium.
+
+As things stand now, I have a sequences window that shows a lot
+more information than I need to have handy and takes up a lot 
+more room than I can "spare".
+
+I can see that I could like the new sequences window a lot for 
+certain operations.  But I'd like a nice uncluttered, tiny 
+window that _only_ shows me info on my unread mail.
+
+One possibility that occurs to me would be a button or mouse
+click that "shrinks" the Sequences window to show only the
+sequences in the "always show" list.  And of course a way to 
+expand it back.
+
+--Hal
+
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

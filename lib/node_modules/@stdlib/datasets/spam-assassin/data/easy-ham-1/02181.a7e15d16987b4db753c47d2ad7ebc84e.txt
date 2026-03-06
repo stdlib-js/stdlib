@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Wed Oct  2 11:44:00 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id ECDC816F03
+	for <jm@localhost>; Wed,  2 Oct 2002 11:43:59 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:43:59 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g92836K31829 for
+    <jm@jmason.org>; Wed, 2 Oct 2002 09:03:06 +0100
+Message-Id: <200210020803.g92836K31829@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: newscientist <rssfeeds@spamassassin.taint.org>
+Subject: Viruses that also hack computers on the rise
+Date: Wed, 02 Oct 2002 08:03:06 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-2,8443955,1440/
+Date: Not supplied
+
+A new internet worm marks a worrying crossover between virus writing and 
+hacking, say experts
+
+

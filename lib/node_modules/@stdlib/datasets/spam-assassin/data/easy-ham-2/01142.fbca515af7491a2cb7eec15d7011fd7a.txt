@@ -1,0 +1,95 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 19:24:14 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 81C5B440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:24:12 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:24:12 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFIT903049 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 16:18:29 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id KAA31220 for <jm-rpm@jmason.org>;
+    Mon, 22 Jul 2002 10:53:18 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6M9h2C14681; Mon, 22 Jul 2002 11:43:02
+    +0200
+Received: from porsta.cs.Helsinki.FI (root@porsta.cs.Helsinki.FI
+    [128.214.48.124]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g6M9g1C02012 for <rpm-list@freshrpms.net>; Mon, 22 Jul 2002 11:42:01 +0200
+Received: from melkki.cs.Helsinki.FI (sslwrap@localhost [127.0.0.1]) by
+    porsta.cs.Helsinki.FI (8.11.6/8.11.6) with ESMTP id g6M9fxk19085 for
+    <rpm-list@freshrpms.net>; Mon, 22 Jul 2002 12:42:00 +0300
+Received: (from hhaataja@localhost) by melkki.cs.Helsinki.FI
+    (8.11.6/8.11.2) id g6M9fuG20532 for rpm-list@freshrpms.net; Mon,
+    22 Jul 2002 12:41:56 +0300
+From: Harri Haataja <harri.haataja@cs.helsinki.fi>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Ximian apt repos?
+Message-Id: <20020722124156.A19942@cs.helsinki.fi>
+References: <1027203479.5354.14.camel@athena>
+    <20020720211551.6fb70f27.kilroy@kamakiriad.com>
+    <1027218043.3516.5.camel@localhost.localdomain>
+    <20020721051108.0fd207d5.che666@uni.de>
+    <20020721142007.03c02bc4.che666@uni.de>
+    <1027252799.12983.0.camel@localhost.localdomain>
+    <20020721145013.4dc253d6.che666@uni.de>
+    <20020721151211.7140ecdb.che666@uni.de>
+    <1027286117.14701.2.camel@localhost.localdomain>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <1027286117.14701.2.camel@localhost.localdomain>;
+    from lance_tt@bellsouth.net on Sun, Jul 21, 2002 at 04:15:16PM -0500
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 22 Jul 2002 12:41:56 +0300
+Date: Mon, 22 Jul 2002 12:41:56 +0300
+
+On Sun, Jul 21, 2002 at 04:15:16PM -0500, Lance wrote:
+> So to update from GNOME 1.4 to 2.0, after modifying
+> /etc/apt/sources.list, I just issue 'apt-update' then 'apt-install
+> gnome-session' ?
+
+Apparently, yes. Though for me it did suggest all sorts of creepy stuff.
+After installing packages one by one and removing some old stuff and
+whatnot, the original gnome-session from there suddenly no longer
+wanted parted and all that. Go figure.
+
+> Also Gaim doesn't work with GNOME 2.0 just yet?
+
+If you strip out the gnome stuff, it still runs as a Gtk app without the
+applet. Maybe you can even leave in the old panel and all that but I
+think some files will conflict and have to be overridden with
+--replace-files (dangerous). I just rebuilt gaim and made a few changes
+to the .spec adding --without-gnome to %configure or such. It might be
+nice to separate the panel version from the actual program like debian
+does.
+
+Also, bubblemon no longer compiled for me and Yelp had some broken
+dependency there.
+
+-- 
+If you only want to go 500 miles, can you begin with a halfstep?
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

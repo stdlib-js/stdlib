@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns a list of typed array integer data types.
+
+    Returns
+    -------
+    out: Array<string>
+        List of typed array integer data types.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    <Array>
+
+    See Also
+    --------
+

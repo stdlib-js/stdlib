@@ -1,0 +1,14 @@
+
+{{alias}}
+    Maximum signed 32-bit integer.
+
+    The maximum signed 32-bit integer is given by `2^31 - 1`.
+
+    Examples
+    --------
+    > {{alias}}
+    2147483647
+
+    See Also
+    --------
+

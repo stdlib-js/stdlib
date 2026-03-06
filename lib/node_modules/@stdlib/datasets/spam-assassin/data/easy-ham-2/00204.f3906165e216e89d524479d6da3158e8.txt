@@ -1,0 +1,65 @@
+From ilug-admin@linux.ie  Thu Aug  1 17:41:51 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0EFEF440F0
+	for <jm@localhost>; Thu,  1 Aug 2002 12:41:51 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 17:41:51 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g71GdK222155 for
+    <jm-ilug@jmason.org>; Thu, 1 Aug 2002 17:39:20 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA21124; Thu, 1 Aug 2002 17:37:07 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from celtic.wizardr.ie (root@celtic.wizardr.ie [194.125.15.2])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id RAA21072 for
+    <ilug@linux.ie>; Thu, 1 Aug 2002 17:36:54 +0100
+Received: from celtic.wizardr.ie (yyyycc@celtic.wizardr.ie [194.125.15.2])
+    by celtic.wizardr.ie (8.11.0/8.11.0) with ESMTP id g71GamQ29787 for
+    <ilug@linux.ie>; Thu, 1 Aug 2002 17:36:48 +0100
+Date: Thu, 1 Aug 2002 17:36:48 +0100 (IST)
+From: yyyycc <yyyycc@hackwatch.com>
+X-Sender: yyyycc@celtic.wizardr.ie
+To: Irish LUG list <ilug@linux.ie>
+Subject: Re: [ILUG] serial console question
+In-Reply-To: <20020801161527.GE5178@jinny.ie>
+Message-Id: <Pine.LNX.4.20.0208011733230.29186-100000@celtic.wizardr.ie>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+
+On Thu, 1 Aug 2002, John P. Looney wrote:
+
+>  I've found a decrepit raq3 that I'm going to resurrect, as soon as I work
+> out what's up with the console.
+> 
+>  I'm using 115200 8n1 with minicom, and I'm getting wierd stuff like:
+
+Should it be 38K4 - a fairly common baudrate for serial port
+connections? Though if you are getting this much, the baudrate
+may be right. It looks like high ASCII so it may also be worth
+playing with the tty type (ANSI/VT etc).
+
+>  So it looks like some sort of setting mismatch. Various places on the web
+> say that cobalts are setup with 115200 8n1 serial ports, but someone could
+> have changed it on this particular box.
+
+Regards...jmcc
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,76 @@
+From fork-admin@xent.com  Sun Sep 22 14:11:54 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 1E83716F03
+	for <jm@localhost>; Sun, 22 Sep 2002 14:11:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 22 Sep 2002 14:11:54 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8M83qC27815 for <jm@jmason.org>;
+    Sun, 22 Sep 2002 09:03:53 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 22B462941C1; Sun, 22 Sep 2002 01:00:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id 7A0872941BD for
+    <fork@xent.com>; Sun, 22 Sep 2002 00:57:24 -0700 (PDT)
+Received: (qmail 6808 invoked by uid 501); 22 Sep 2002 08:00:48 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    22 Sep 2002 08:00:48 -0000
+From: CDale <cdale@techmonkeys.net>
+To: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Cc: bitbitch@magnesium.net, <fork@spamassassin.taint.org>
+Subject: Re: Oh my...
+In-Reply-To: <3D8CFD5E.10406@endeavors.com>
+Message-Id: <Pine.LNX.4.44.0209220300400.4231-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 22 Sep 2002 03:00:48 -0500 (CDT)
+
+LOL you rool  (:
+
+On Sat, 21 Sep 2002, Gregory Alan Bolcer wrote:
+
+> I went out and drew some chalk circles on my
+> sidewalk just so I wouldn't miss out on the experience.
+> I've collected half a dozen passwords &
+> access to email accounts so far.
+> 
+> Greg
+> 
+> bitbitch@magnesium.net wrote:
+> > Hello fork,
+> > 
+> >   So they have Aaron Schwartz on NPR's Weekend Edition talking
+> >   about Warchalking.   I'll agree, its funny, his voice is squeaky and
+> >   I'm jealous that he got on radio and I didn't...
+> > 
+> >   But really, WTF is the big deal about warchalking?  I have yet to
+> >   see any of it, anywhere.
+> > 
+> >   LInk will probably pop up on www.npr.org later today.
+> > 
+> >   
+> > 
+> 
+> 
+> 
+
+-- 
+"I don't take no stocks in mathematics, anyway" --Huckleberry Finn
+
+

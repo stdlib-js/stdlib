@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Mon Sep  2 13:12:57 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0CE9D47C88
+	for <jm@localhost>; Mon,  2 Sep 2002 07:47:08 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:47:08 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g820ExZ12578 for <jm@jmason.org>;
+    Mon, 2 Sep 2002 01:15:00 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9F3192940C3; Sun,  1 Sep 2002 17:12:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id E4F93294099 for <fork@xent.com>;
+    Sun,  1 Sep 2002 17:11:08 -0700 (PDT)
+Received: (qmail 2889 invoked by uid 1111); 2 Sep 2002 00:13:25 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: <bitbitch@magnesium.net>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: revocation of grlygrl201@
+In-Reply-To: <6464589899.20020901193917@magnesium.net>
+Message-Id: <Pine.LNX.4.33.0209011659570.2749-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 1 Sep 2002 17:13:25 -0700 (PDT)
+
+On Sun, 1 Sep 2002 bitbitch@magnesium.net wrote:
+
+> Well Beberg, unless you're really into Anime and actually hold true
+> that dead people can send email, I think Geege's subject is just dandy.
+> Especially since she removed herself from the hive that is aol (and
+> placed herself unto another, but hey :-))
+
+Bandwidth is bandwidth. AOL is still the only mom-friendly place to get it.
+
+> *ducks and runs*
+
+What, like i'm not skilled with a bow? You better run really fast :-P
+
+> (bonus FoRK points if Adam knows what anime i'm refering to)
+
+Well lets see, about 99% of all anime? In anime dead people can talk, email,
+hang out, and generally lead normal lives. Come to think of it they tend to
+be the primary characters ;)
+
+But I suspect you mean Serial Experiments Lain, in which the initial "i'm
+not dead yet" is via email.
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+
+
+

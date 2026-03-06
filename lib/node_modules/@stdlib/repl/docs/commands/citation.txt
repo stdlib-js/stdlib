@@ -1,0 +1,11 @@
+
+citation()
+    Prints how to cite stdlib in publications.
+
+    Examples
+    --------
+    > citation()
+
+    See Also
+    --------
+    contributors, copyright, credits, donate, help, license

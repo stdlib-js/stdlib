@@ -1,0 +1,126 @@
+From fork-admin@xent.com  Mon Aug 19 11:05:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D9D6C440FF
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:42 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7IHwW618179 for <jm@jmason.org>;
+    Sun, 18 Aug 2002 18:58:35 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7D1B529409B; Sun, 18 Aug 2002 10:56:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta6.snfc21.pbi.net (mta6.snfc21.pbi.net [206.13.28.240])
+    by xent.com (Postfix) with ESMTP id 105C6294098 for <fork@xent.com>;
+    Sun, 18 Aug 2002 10:55:25 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta6.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H11001BUWIO5T@mta6.snfc21.pbi.net> for fork@xent.com; Sun,
+    18 Aug 2002 10:56:49 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: warchalking
+To: FoRK <fork@spamassassin.taint.org>
+Reply-To: gbolcer@endeavors.com
+Message-Id: <3D5FDDA4.75EA7EC@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en, pdf
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 18 Aug 2002 10:47:16 -0700
+
+Hobos in the depression used to use this technique to
+know if they could find a meal or a bed and how
+friendly the residents were to begging.  This showed
+up on sladhdot in June.  It'll be interesting to see
+what the parallel sign is for the Hobo sign
+that representing a meal or bed if threatened. Can
+you imagine threatening someone to get your wireless? 
+
+Another phenomenon is Internet connection sharing which is
+freely available on most modern OSs.  It's a very easy way to
+share a $6/24hour period wireless conneciton in the San Jose
+airport among dozens of your favorite friends.  
+
+http://news.bbc.co.uk/1/hi/technology/2197252.stm
+http://www.blackbeltjones.com/warchalking/warchalking0_9.pdf
+
+
+  Friday, 16 August, 2002, 11:42 GMT 12:42 UK 
+  FBI warns about wireless craze
+
+
+  Some FBI agents are worried about warchalking
+
+  Well-meaning wireless activists have caught the attention of the US Federal Bureau
+  of Investigation. 
+  One of its agents has issued a warning about the popular practice of using chalk marks
+  to show the location of wireless networks. 
+
+  The marks, or "warchalks", are cropping up in cities and suburbs across the world. 
+
+  The FBI is now telling companies that, if they see the chalk marks outside their
+  offices, they should check the security of wireless networks and ensure they remain
+  closed to outsiders. 
+
+  Top marks 
+
+  The warchalking phenomena is only a couple of months old but it has generated a huge
+  amount of interest. 
+
+  The idea behind warchalking is to use a standardised set of symbols to mark the
+  existence of wireless networks that anyone can use to go online. 
+
+  Many community groups and local governments, and even some public-spirited
+  companies, are setting up wireless nodes that give people fast net access. 
+
+
+  This symbol denotes a closed wireless node 
+
+  The wireless networks replace computer cables with radio and are usually very easy to
+  set up and connect to. 
+
+  Before now many curious hackers have gone on "wardriving" expeditions which
+  involve them driving around an area logging the location of the wireless networks. 
+
+  Many companies using wireless do not do enough to make them secure and stop people
+  outside the organisation using them. 
+
+  So the FBI is issuing advice to companies to be on the lookout for warchalk marks as a
+  pointer to the security of their wireless network. 
+
+  "If you notice these symbols at your place of business, it is likely your network has
+  been identified publicly," warns the guidance from the FBI. 
+
+  Scare stories? 
+
+  The agent who circulated the warning in Pittsburgh said it was not an official FBI
+  advisory or policy but was information worth passing on. 
+
+  He urged anyone using a wireless network to ensure that it was secure and used only by
+  those a company wants to access it. 
+
+  Warchalkers have questioned the scare stories surrounding the phenomena, saying that
+  anyone with malicious intent is unlikely to publicly mark their target. 
+
+  The phrases "wardriving" and "warchalking" derive from the early days of computer
+  hacking when curious users programmed their computers to search for all phone lines
+  that returned data tones. The exhaustive searching was known as "wardialling".
+http://xent.com/mailman/listinfo/fork
+

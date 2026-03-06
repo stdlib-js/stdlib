@@ -1,0 +1,88 @@
+From msquadrat.nospamplease@gmx.net  Mon Jul 22 18:22:15 2002
+Return-Path: <msquadrat.nospamplease@gmx.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2E843440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:22:14 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:22:14 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFhbI08581 for
+    <jm@jmason.org>; Mon, 22 Jul 2002 16:43:37 +0100
+Received: from mailc0911.dte2k.de (mail.t-intra.de [62.156.147.75]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id IAA30702 for <jm@jmason.org>;
+    Mon, 22 Jul 2002 08:28:49 +0100
+Received: from mailc0909.dte2k.de ([10.50.185.9]) by mailc0911.dte2k.de
+    with Microsoft SMTPSVC(5.0.2195.4453); Mon, 22 Jul 2002 09:27:21 +0200
+Received: from nebukadnezar.msquadrat.de ([62.226.214.7]) by
+    mailc0909.dte2k.de with Microsoft SMTPSVC(5.0.2195.4453); Mon,
+    22 Jul 2002 09:27:21 +0200
+Received: from otherland (otherland.msquadrat.de [10.10.10.10]) by
+    nebukadnezar.msquadrat.de (Postfix on SuSE Linux 7.3 (i386)) with ESMTP id
+    E8034413E; Mon, 22 Jul 2002 09:28:07 +0200 (CEST)
+Content-Type: text/plain; charset="iso-8859-1"
+From: "Malte S. Stretz" <msquadrat.nospamplease@gmx.net>
+To: SpamAssassin Talk ML <spamassassin-talk@example.sourceforge.net>
+Subject: Re: [SAtalk] http://www.spamassassin.org
+Date: Mon, 22 Jul 2002 09:30:41 +0200
+User-Agent: KMail/1.4.1
+References: <F4240617-9D2F-11D6-91F4-003065F939FE@cats.ucsc.edu>
+In-Reply-To: <F4240617-9D2F-11D6-91F4-003065F939FE@cats.ucsc.edu>
+Cc: Justin Mason <yyyy@spamassassin.taint.org>
+X-Accept-Language: de, en
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200207220930.41698@malte.stretz.eu.org>
+X-Originalarrivaltime: 22 Jul 2002 07:27:21.0390 (UTC) FILETIME=[378D14E0:01C23151]
+
+On Monday 22 July 2002 07:00 CET John Rudd wrote:
+> On Sunday, July 21, 2002, at 08:30 , Bob Proulx wrote:
+> > > http://www.spamassassin.org
+> > > Is anyone besides me having problems getting to the site?
+
+Jepp. The same is true for Justin's private page jmason.org. traceroutes to 
+both these servers die at the same point:
+| mss@otherland:~> /usr/sbin/traceroute spamassassin.org
+| traceroute to spamassassin.org (212.17.35.15), 30 hops max, 40 byte
+|  packets
+|  1  nebukadnezar.msquadrat.de (10.10.1.111)  9 ms  1 ms  1 ms
+|  2  212.185.255.161 (212.185.255.161)  54 ms  54 ms  55 ms
+|  3  212.185.255.162 (212.185.255.162)  55 ms  54 ms  55 ms
+|  4  F-gw13.F.NET.DTAG.DE (62.154.18.46)  63 ms  62 ms  62 ms
+|  5  rt007ffm.de.vianw.net (194.231.40.201)  63 ms  62 ms  61 ms
+|  6  r1ffm.vianw.net (213.2.254.45)  62 ms  63 ms  62 ms
+|  7  r2ffm.vianw.net (213.2.254.42)  63 ms  63 ms  63 ms
+|  8
+There're probably some problems with Justin's webserver; I'm shure he's 
+already looking into this as it affects his own website, too :o)
+
+> > What site is that one?  Isn't this site on sourceforge the official
+> > home page?
+> >
+> >   http://spamassassin.sourceforge.net/
+
+spamassassin.sf.net is the US mirror, also accessible through 
+us.spamassassin.org.
+
+> They appear to be the same page, but until recently I could get to the
+> www. spamassassin.org one, but it hasn't been responsive the last couple
+> days.
+
+For me it worked until yesterday or the day before.
+
+> But then, I also haven't been able to get anyone to answer my questions
+> about user_prefs files (not the one from earlier today, but from a couple
+> days ago).
+
+About this question: No, that's currently not possible. But I was thinking 
+about implementing a feature like this; it might be in the next release.
+
+Malte
+
+-- 
+-- Coding is art.
+-- 
+
+
+

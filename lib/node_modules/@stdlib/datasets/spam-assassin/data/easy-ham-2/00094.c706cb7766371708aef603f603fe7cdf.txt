@@ -1,0 +1,82 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:41 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F29B2440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:23 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:24 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFIS903037 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:18:28 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id KAA31189 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 10:44:53 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA19571; Mon, 22 Jul 2002 10:44:21 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail1.mail.iol.ie (mail1.mail.iol.ie [194.125.2.192]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA19546 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 10:44:14 +0100
+Received: from dialup152-a.ts551.cwt.esat.net ([193.203.140.152]
+    helo=Hobbiton.cod.ie) by mail1.mail.iol.ie with esmtp (Exim 3.35 #1) id
+    17WZce-0002cR-00 for ilug@linux.ie; Mon, 22 Jul 2002 10:36:56 +0100
+Received: (from cdaly@localhost) by Hobbiton.cod.ie (8.11.6/8.9.3) id
+    g6LMJuB26227 for ilug@linux.ie; Sun, 21 Jul 2002 23:19:56 +0100
+Date: Sun, 21 Jul 2002 23:19:53 +0100
+From: Conor Daly <conor.daly@oceanfree.net>
+To: ilug@linux.ie
+Subject: Re: [ILUG] When is a wav not a wav?
+Message-Id: <20020721231953.D22357@Hobbiton.cod.ie>
+Mail-Followup-To: ilug@linux.ie
+References: <200207202147.WAA03958@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <200207202147.WAA03958@lugh.tuatha.org>; from
+    johngay@eircom.net on Sat, Jul 20, 2002 at 08:48:30PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sat, Jul 20, 2002 at 08:48:30PM +0100 or so it is rumoured hereabouts, 
+John Gay thought:
+> 
+> xanim can, and does play them correctly though. Unfortunately xanim does not 
+> have any position control so you just have to listen to the album from start 
+> to finish.
+> 
+> What I would like to do is split up the tracks and convert them the mp3 for 
+> xmms. I'm jsut not sure what tools would be able to handle these strange 
+> compressed wav's that only xanim seems to recognise? I like the albums, but 
+
+No idea if it can do these ones but mxv (or MixViews) has lots of
+configurables and it's whole purpose is to edit wavs.  I've used it to
+split up tapes into individual songs.  Not sure of a URL but the author is
+at
+
+MixViews@create.ucsb.edu
+
+Conor
+-- 
+Conor Daly <conor.daly@oceanfree.net>
+
+Domestic Sysadmin :-)
+---------------------
+Faenor.cod.ie
+ 11:29pm  up 59 days,  8:46,  0 users,  load average: 0.05, 0.05, 0.01
+Hobbiton.cod.ie
+ 11:17pm  up 2 days,  5:54,  2 users,  load average: 0.00, 0.03, 0.00
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

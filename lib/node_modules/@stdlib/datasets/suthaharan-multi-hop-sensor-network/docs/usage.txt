@@ -1,0 +1,9 @@
+
+Usage: suthaharan-multi-hop-sensor-network [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --format fmt          Output format: 'csv' or 'ndjson'.
+

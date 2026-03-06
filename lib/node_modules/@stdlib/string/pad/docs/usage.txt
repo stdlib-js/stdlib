@@ -1,0 +1,12 @@
+
+Usage: padstr [options] [<string>] --len <length>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --len length          String length.
+         --lpad str            String used to left pad. Default: ''.
+         --rpad str            String used to right pad. Default: ' '.
+         --cright              Center right in the event of a tie.
+         --split sep           Delimiter for stdin data. Default: '/\\r?\\n/'.

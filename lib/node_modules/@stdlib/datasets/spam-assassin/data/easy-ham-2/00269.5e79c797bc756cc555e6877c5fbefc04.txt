@@ -1,0 +1,88 @@
+From ilug-admin@linux.ie  Tue Aug  6 13:58:22 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AFAA1441C4
+	for <jm@localhost>; Tue,  6 Aug 2002 08:48:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 13:48:39 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g76Cfrk28984 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 13:41:53 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA29893; Tue, 6 Aug 2002 13:39:13 +0100
+Received: from puma.dub0.ie.cp.net ([62.17.137.250]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA29864 for <ilug@linux.ie>; Tue,
+    6 Aug 2002 13:39:05 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.137.250] claimed to
+    be puma.dub0.ie.cp.net
+Received: from AHOLM.elivefree.net (10.40.2.248) by puma.dub0.ie.cp.net
+    (6.7.009) id 3D4AB18800002158 for ilug@linux.ie; Tue, 6 Aug 2002 13:38:35
+    +0100
+Message-Id: <5.1.1.6.0.20020806133046.026b8b88@mail.elivefree.net>
+X-Sender: anders.holm@mail.elivefree.net
+X-Mailer: QUALCOMM Windows Eudora Version 5.1.1
+Date: Tue, 06 Aug 2002 13:36:44 +0100
+To: ilug@linux.ie, ilug@linux.ie
+From: Anders Holm <anders.holm@elivefree.net>
+Subject: Re: [ILUG] Sparc Solaris (was: Dell GX260 V Redhat 7.3)
+In-Reply-To: <20020806123023.GQ14040@jinny.ie>
+References: <5.1.1.6.0.20020806131829.03c2ae30@mail.elivefree.net>
+    <20020806125617.F17211@ie.suberic.net>
+    <653270E74A8DD31197AF009027AA4F8B01845F1B@LIMXMMF303>
+    <20020805224355.GB26632@csn.ul.ie>
+    <001501c23d25$c21ba0b0$3864a8c0@sabeo.ie>
+    <20020806125617.F17211@ie.suberic.net>
+    <5.1.1.6.0.20020806131829.03c2ae30@mail.elivefree.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+At 13:30 06/08/2002, John P. Looney wrote:
+>On Tue, Aug 06, 2002 at 01:22:07PM +0100, Anders Holm mentioned:
+> > > Heh, how hard would it be to get a PC with an OpenBoot prom ?
+> >
+> > You could burn a PROM yourself, if you'd wish. I believe that the netboot
+> > project would have a PROM you could download and burn, having the needed
+> > h/w of course.. ;)
+>
+>  But the PROMs are for specific network cards, and all their are really is
+>a bootp/tftp client. Not the whole set of nice bits & pieces you get with
+>an OpenBoot PROM.
+
+True, but would still enable you to do a network install without using boot 
+floppies. Then again, boot floppies are cheaper, and easier to recreate 
+when you'd like to do some changes to it. Gets messier when you'd have a 
+boot image on a server, and the only way you can test it is to boot it over 
+the network. In any case, it's just one option available.
+
+>  AMD were talking of supporting it ages back, when the Athlon was looking
+>like it would just be on workstations from day one. They seemed to drop
+>it, and go for the crappy MSDOS compatible BIOS though.
+
+Too bad they didn't go with that then. Would have been so much nicer than 
+the old MSDOS crap. I do like the OpenBoot idea actually. Especially being 
+able to set the PROM to boot from whatever disk slice you'd want. No need 
+to set that in lilo/grub any more in that case, since the OpenBoot rom 
+takes care of that part for you. Then again, you wouldn't get a menu that 
+allows you to choose what you want to boot. There's good and bad, all 
+depending on what you want to do, I suppose. Sitting here and typing I'm 
+realising that it is both a nice thing, and a nasty thing..
+
+Ah well, life sucks as well, some say.. ;)
+
+//Anders//
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

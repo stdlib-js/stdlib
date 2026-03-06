@@ -1,0 +1,99 @@
+From rpm-list-admin@freshrpms.net  Thu Oct  3 16:02:55 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id BA94516F17
+	for <jm@localhost>; Thu,  3 Oct 2002 16:02:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 16:02:53 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g93DOZK30584 for
+    <jm-rpm@jmason.org>; Thu, 3 Oct 2002 14:24:40 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g93DM6f02996; Thu, 3 Oct 2002 15:22:06
+    +0200
+Received: from mail.phy.duke.edu (mail.phy.duke.edu [152.3.182.2]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g93DKbf24978 for
+    <rpm-list@freshrpms.net>; Thu, 3 Oct 2002 15:20:37 +0200
+Received: from opus.phy.duke.edu (opus.phy.duke.edu [152.3.182.42]) by
+    mail.phy.duke.edu (Postfix) with ESMTP id D477030199 for
+    <rpm-list@freshrpms.net>; Thu,  3 Oct 2002 09:20:35 -0400 (EDT)
+Subject: Re: Python 2.2 site libs?
+From: seth vidal <skvidal@phy.duke.edu>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <1810000.1033647373@spawn.se7en.org>
+References: <1810000.1033647373@spawn.se7en.org>
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="=-ITC4wxYrfSWQCmQFalKh"
+X-Mailer: Ximian Evolution 1.0.3 (1.0.3-6)
+Message-Id: <1033651236.19916.1.camel@opus>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 03 Oct 2002 09:20:33 -0400
+Date: 03 Oct 2002 09:20:33 -0400
+
+
+--=-ITC4wxYrfSWQCmQFalKh
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Thu, 2002-10-03 at 08:16, Mark Derricutt wrote:
+> Anyone know where one could get rpms for alot of the python libraries for=
+=20
+> 2.2?
+>=20
+> Its darn annoying the way RH ship python 1.5.2 and python 2.2 (as python2=
+)=20
+> and libs that only work with one or the other :(
+>=20
+> esp. the pgdb and xml modules.
+>=20
+> Anyone know why Red Hat insist on sticking with python 1.5.2?
+>
+
+they are on python 2.2 for 8.0 - but they don't like to break
+compatibility during major releases.
+
+therefore: 6.X was 1.5.2 b/c that was current
+7.x was 1.5.2 b/c that was current when 7.0 was released.
+
+-sv
+
+
+--=-ITC4wxYrfSWQCmQFalKh
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQA9nEQh1Aj3x2mIbMcRAg/FAJ9MNwAv4hzpR4gjkMGGtGUjFKidQQCgk0ZE
+DlQVAibjHkM4H9ZBYzs0xb4=
+=8gIA
+-----END PGP SIGNATURE-----
+
+--=-ITC4wxYrfSWQCmQFalKh--
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

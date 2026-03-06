@@ -1,0 +1,12 @@
+
+{{alias}}
+    Smallest positive normalized half-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    6.103515625e-5
+
+    See Also
+    --------
+

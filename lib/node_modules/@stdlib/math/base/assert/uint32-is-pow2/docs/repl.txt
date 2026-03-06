@@ -1,0 +1,24 @@
+
+{{alias}}( x )
+    Tests whether an unsigned integer is a power of 2.
+
+    Parameters
+    ----------
+    x: integer
+        Unsigned integer.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a value is a power of 2.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 2 )
+    true
+    > bool = {{alias}}( 5 )
+    false
+
+    See Also
+    --------
+

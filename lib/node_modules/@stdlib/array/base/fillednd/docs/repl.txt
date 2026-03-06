@@ -1,0 +1,25 @@
+
+{{alias}}( value, shape )
+    Returns a filled n-dimensional nested array.
+
+    Parameters
+    ----------
+    value: any
+        Fill value.
+
+    shape: Array<integer>
+        Array shape.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias}}( 0.0, [ 1, 3 ] )
+    [ [ 0.0, 0.0, 0.0 ] ]
+
+    See Also
+    --------
+

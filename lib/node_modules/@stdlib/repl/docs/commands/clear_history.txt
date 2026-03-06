@@ -1,0 +1,12 @@
+
+clearHistory()
+    Clears the REPL history.
+
+    Examples
+    --------
+    > clearHistory()
+
+    See Also
+    --------
+    history, reset, save
+

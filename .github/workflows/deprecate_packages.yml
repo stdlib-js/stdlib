@@ -1,0 +1,125 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2022 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: deprecate_packages
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+    inputs:
+      packages:
+        description: 'List of packages (space separated):'
+        required: true
+      message:
+        description: 'Custom deprecation message:'
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow concurrency group:
+concurrency:
+
+  # Specify a group name:
+  group: ${{ github.workflow }}
+
+  # Specify whether to cancel any currently running workflow in the same concurrency group:
+  cancel-in-progress: false
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for deprecating packages...
+  deprecate:
+
+    # Define a display name:
+    name: 'Deprecate packages'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps...
+    steps:
+      # Deprecate the specified packages on npm and the respective GitHub repositories:
+      - name: 'Deprecate packages'
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          pkgs='${{ github.event.inputs.packages }}'
+          npm_names=""
+          github_repos=""
+          for pkg in $pkgs; do
+            # Remove leading `@stdlib/` from package name:
+            pkg=$(echo $pkg | sed 's/^@stdlib\///')
+
+            # Replace `/` with `-`:
+            pkg=$(echo $pkg | sed -e 's/\//-/g')
+
+            npm_names+="@stdlib/$pkg "
+            github_repos+="$pkg "
+          done
+
+          # Setup configuration for authenticating with npm:
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+
+          # Define a deprecation message:
+          msg='${{ github.event.inputs.message || 'Package no longer supported.' }}'
+
+          # Deprecate the packages on npm:
+          for pkg in $npm_names; do
+            echo "Deprecating $pkg..."
+            npm deprecate $pkg "$msg"
+          done
+
+          # Deprecate the packages on GitHub by adding a section to the README:
+          for repo in $github_repos; do
+            echo "Deprecating $repo..."
+
+            # Clone the repository:
+            git clone https://github.com/stdlib-js/$repo
+
+            # Move to the repository root:
+            cd $repo
+
+            # Configure Git:
+            git config --local user.email "noreply@stdlib.io"
+            git config --local user.name "stdlib-bot"
+
+            # Turn `@stdlib` package names in deprecation messages into hyperlinks:
+            readme_msg=$(echo $msg | sed -e 's/`\?@stdlib\/\([^ `]*\)`\?/[@stdlib\/\1](https:\/\/github.com\/stdlib-js\/\1)/g')
+
+            # Add deprecation notice to the beginning of the `README.md` file:
+            sed -i "1 i\## Attention\n\n:warning: **$readme_msg** :warning:\n\n<br>\n\n* * *\n" README.md
+
+            # Commit the changes:
+            git add README.md
+            git commit -m "deprecate: add notification that the package repository is no longer supported"
+
+            # Push the changes:
+            git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/stdlib-js/$repo.git" main
+
+            # Archive the repository on GitHub:
+            curl -u $GITHUB_ACTOR:$GITHUB_TOKEN -X PATCH -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/stdlib-js/$repo -d '{"archived":"true"}'
+
+            # Clean up:
+            cd ..
+
+          done

@@ -1,0 +1,94 @@
+From ilug-admin@linux.ie  Fri Aug  2 12:31:55 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E6CEC440F8
+	for <jm@localhost>; Fri,  2 Aug 2002 07:31:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 02 Aug 2002 12:31:54 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72BOs219796 for
+    <jm-ilug@jmason.org>; Fri, 2 Aug 2002 12:24:54 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA04589; Fri, 2 Aug 2002 12:23:24 +0100
+Received: from mail.aculink.net (65-173-158-7.aculink.net [65.173.158.7])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA04473 for
+    <ilug@linux.ie>; Fri, 2 Aug 2002 12:23:06 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host 65-173-158-7.aculink.net
+    [65.173.158.7] claimed to be mail.aculink.net
+Received: from cdm01.deedsmiscentral.net ([204.118.157.66]) by
+    mail.aculink.net (Merak 4.4.2) with ESMTP id EDA37003; Fri, 02 Aug 2002
+    05:30:15 -0600
+Received: from cdm01.deedsmiscentral.net
+    (IDENT:redneck@cdm01.deedsmiscentral.net [192.168.20.1]) by
+    cdm01.deedsmiscentral.net (8.11.6/8.11.6/ver) with ESMTP id g729X8T30429;
+    Fri, 2 Aug 2002 03:34:23 -0600
+Message-Id: <3D4A51D1.B738C475@cdm01.deedsmiscentral.net>
+Date: Fri, 02 Aug 2002 03:33:05 -0600
+From: SoloCDM <deedsmis@aculink.net>
+Reply-To: deedsmis@aculink.net, ilug@linux.ie
+X-Mailer: Mozilla 4.78 [en] (X11; U; Linux 2.2.20-9.2mdk i586)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: "Hunt, Bryan" <B.Hunt@emuse-tech.com>
+Cc: "ILUG (Request)" <ilug@linux.ie>
+References: <5FE418B3F962D411BED40000E818B33C9C8E6C@HASSLE>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] Re: removing lilo
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+"Hunt, Bryan" stated the following:
+> 
+> choose the repair option when installing windows nt/2000/whatever
+
+What is the "repair option"?
+
+> -----Original Message----- From: SoloCDM [mailto:deedsmis@aculink.net]
+> Sent: 31 July 2002 17:48 To: Hunt, Bryan Cc: ILUG (Request)
+> Subject: Re: removing lilo
+> 
+> "Hunt, Bryan" stated the following:
+> 
+> > you need to do a "fdisk /mbr" from a bootable windoze floppy
+> > alternatively boot from linux boot disk and do fdisk, delete all
+> 
+> partitions.
+> 
+> I need to ask a question concerning this issue.
+> 
+> What if I don't want to get rid of the MBR -- it will destroy the
+> OS on that drive.  How do I remove lilo without the above fdisk
+> procedure?
+> 
+> > -----Original Message----- From: jac1
+> > [mailto:jac1@student.cs.ucc.ie]
+> 
+> > i recently had to wipe linux from my pc but forgot to restore the
+> > original MBR (NT). Anyone know how i can do this? linux is entirely
+> > gone and no
+> 
+> boot
+> 
+> > floppy. formatting the entire disk doesn't do it either.
+
+-- 
+Note: When you reply to this message, please include the mailing
+      list and/or newsgroup address and my email address in To:
+
+*********************************************************************
+Signed,
+SoloCDM
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

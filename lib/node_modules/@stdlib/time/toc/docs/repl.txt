@@ -1,0 +1,26 @@
+
+{{alias}}( time )
+    Returns a high-resolution time difference, where `time` is a two-element
+    array with format `[seconds, nanoseconds]`.
+
+    Similar to `time`, the returned array has format `[seconds, nanoseconds]`.
+
+    Parameters
+    ----------
+    time: Array<integer>
+        High-resolution time.
+
+    Returns
+    -------
+    out: Array<integer>
+        High resolution time difference.
+
+    Examples
+    --------
+    > var start = {{alias:@stdlib/time/tic}}();
+    > var delta = {{alias}}( start )
+    [ <number>, <number> ]
+
+    See Also
+    --------
+

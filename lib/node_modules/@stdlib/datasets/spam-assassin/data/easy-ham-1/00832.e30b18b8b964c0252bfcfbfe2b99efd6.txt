@@ -1,0 +1,72 @@
+From fork-admin@xent.com  Tue Oct  1 10:41:58 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9F04F16F16
+	for <jm@localhost>; Tue,  1 Oct 2002 10:39:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:39:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g915J2K11691 for <jm@jmason.org>;
+    Tue, 1 Oct 2002 06:19:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 80E21294103; Mon, 30 Sep 2002 22:15:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav48.law15.hotmail.com [64.4.22.20]) by
+    xent.com (Postfix) with ESMTP id 2BAA82940F6 for <fork@xent.com>;
+    Mon, 30 Sep 2002 22:14:18 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Mon, 30 Sep 2002 22:14:21 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+Subject: Am I This Or Not?
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV48S97K5Nvz3bGlab00007ca3@hotmail.com>
+X-Originalarrivaltime: 01 Oct 2002 05:14:21.0746 (UTC) FILETIME=[66A44920:01C26909]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 30 Sep 2002 22:19:29 -0700
+
+Wow, talk about a pheenomeenon
+
+==
+http://www.iamcal.com/software/ami/
+
+AmIThisOrNot Dynamic Peer Rating System
+
+What is It?
+It's a tool to help you build your own "Am I X Or Not" sites.
+
+Where Can I Get It?
+Basic Version $20
+The basic version lets you build a specific "Am I X" site (example). The
+license covers a single installation on a single site.
+
+Advanced Version $40
+The advanced version lets your users create their own "Am I X" sites
+(example). The license covers a single installation on a single site.
+
+Installation $20
+Either version of the system can be installed on your web server, given FTP
+access and MySQL login details.
+
+
+

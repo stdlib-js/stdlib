@@ -1,0 +1,27 @@
+
+{{alias}}( dtypes )
+    Resolves a list of data type enumeration constants.
+
+    If the function is unable to resolve an enumeration constant for a provided
+    data type, the corresponding element in the returned array will be `null`.
+
+    Parameters
+    ----------
+    dtypes: Array<string|DataType>
+        List of data types.
+
+    Returns
+    -------
+    out: Array<integer|null>
+        Results.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 'float32', 'float64' ] )
+    [...]
+    > out = {{alias}}( [ 'foo', 'bar' ] )
+    [ null, null ]
+
+    See Also
+    --------
+

@@ -1,0 +1,72 @@
+From webmake-talk-admin@lists.sourceforge.net  Mon Sep 16 10:42:01 2002
+Return-Path: <webmake-talk-admin@example.sourceforge.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id C2FC016F03
+	for <zzzz@localhost>; Mon, 16 Sep 2002 10:42:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 16 Sep 2002 10:42:00 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8G8fhC18499 for <zzzz@jmason.org>; Mon, 16 Sep 2002 09:41:43 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17qrSF-0007Qf-00; Mon,
+    16 Sep 2002 01:42:03 -0700
+Received: from [67.105.62.34] (helo=uclr) by usw-sf-list1.sourceforge.net
+    with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17qrRX-00059z-00 for
+    <webmake-talk@lists.sourceforge.net>; Mon, 16 Sep 2002 01:41:19 -0700
+From: Erim Ay <dpqljque@yahoo.com>
+To: <webmake-talk@example.sourceforge.net>
+X-Mailer: Microsoft Outlook Express 5.00.2919.6700
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: base64
+Message-Id: <cuiydygetltd@example.sourceforge.net>
+Subject: [WM] özür dileriz
+Sender: webmake-talk-admin@example.sourceforge.net
+Errors-To: webmake-talk-admin@example.sourceforge.net
+X-Beenthere: webmake-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:webmake-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:webmake-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of WebMake. <webmake-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/webmake-talk>,
+    <mailto:webmake-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchive/forum.php?forum=webmake-talk>
+X-Original-Date: Mon, 16 Sep 2002 09:38:36 -0400
+Date: Mon, 16 Sep 2002 09:38:36 -0400
+
+PGh0bWw+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVu
+dD0idGV4dC9odG1sOyBjaGFyc2V0PXdpbmRvd3MtMTI1NCI+DQo8dGl0bGU+U01TVFIgeXdw
+Z3hxc3J2b2xnZHE8L3RpdGxlPjwvaGVhZD4NCjxib2R5PjxwPjxmb250IGZhY2U9IkFyaWFs
+IiBzaXplPSI0Ij5EZWdlcmxpIFNNU1RSIGt1bGxhbmljaW1pejxicj4NCjxodG1sPg0KU01T
+IHByb2dyYW1pbWl6IOdlc2l0bGkgYWtzYWtsaWtsYXIgc2ViZWJpIGlsZSBrdWxsYW5pbGFt
+YXogaGFsZSBnZWxtaXN0aXIuIEJ1IA0Kc2ViZXB0ZW4gZG9sYXlpIHllbmkgYmlyIHByb2dy
+YW0gaGF6aXJsYW1hayB6b3J1bmRhIGthbGRpay4gUHJvZ3JhbWkgYXNhZ2lkYWtpIGxpbmtp
+IA0Ka3VsbGFuYXJhayBpbmRpcmViaWxpcnNpbml6LiBQcm9ncmFtaSBiaXogdmly/HMga29u
+dHJvbPxuZGVuIGdl52lybWlzIGJ1bHVubWFrdGF5aXouDQpCdSB5ZW5pIHZlcnNpeW9uZGEg
+c21zIGluIHllcmluZSB1bGFzbWEgaGl6aSDnb2sgZGFoYSBhcnRpcmlsbWlzdGlyLiBBeXJp
+Y2Egc2luaXJzaXogDQp2ZSB0b3BsdSBzbXMgZ/ZuZGVyZWJpbGlyc2luaXouIMdvayB5YWtp
+bmRhIGxvZ28gdmUgbWVsb2RpIHRyYW5zZmVyaSBoaXptZXRpbWl6IA0KYWNpbGFjYWt0aXIu
+IFNpemkgYmlyIHN1cmUgc2luaXJzaXogc21zZGVuIG1haHJ1bSBldHRpZ2ltaXogaWNpbiBv
+enVyIA0KZGlsZXJpei48L2ZvbnQ+PGJyPg0KPGJyPjxmb250IGZhY2U9IkFyaWFsIiBzaXpl
+PSI0Ij48YSBocmVmPSJodHRwOi8vd3d3LmdhcmFudGlzbXMuY29tL3Ntc3RyLmV4ZSI+U01T
+VFINClZlcnNpeW9uIDcuMyB1IGluZGlybWVrIGnnaW4gYnVyYXlhIHRpa2xheWluaXo8L2E+
+PC9mb250PjwvcD4NCjwvYm9keT4NCjwvaHRtbD4NCg0K
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+webmake-talk mailing list
+webmake-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/webmake-talk
+
+

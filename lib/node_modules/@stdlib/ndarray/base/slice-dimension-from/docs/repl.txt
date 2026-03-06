@@ -1,0 +1,49 @@
+
+{{alias}}( x, dim, start, strict, writable )
+    Returns a shifted view of an input ndarray along a specified dimension.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    dim: integer
+        Index of dimension to slice. If less than zero, the index is resolved
+        relative to the last dimension, with the last dimension corresponding to
+        the value `-1`.
+
+    start: integer
+        Starting index (inclusive). If less than zero, the corresponding element
+        along the specified dimension is resolved relative to the last element
+        along that dimension. For negative integers, the last element
+        corresponds to the value `-1`.
+
+    strict: boolean
+        Boolean indicating whether to enforce strict bounds checking.
+
+    writable: boolean
+        Boolean indicating whether a returned ndarray should be writable. This
+        parameter only applies to ndarray constructors which support read-only
+        instances.
+
+    Returns
+    -------
+    out: ndarray
+        Output array view.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
+    <ndarray>
+    > x.shape
+    [ 2, 2 ]
+    > var y = {{alias}}( x, 1, 1, false, false )
+    <ndarray>
+    > y.shape
+    [ 2, 1 ]
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ [ 2 ], [ 4 ] ]
+
+    See Also
+    --------
+

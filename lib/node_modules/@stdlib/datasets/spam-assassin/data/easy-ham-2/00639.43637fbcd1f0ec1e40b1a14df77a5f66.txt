@@ -1,0 +1,116 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug 14 10:48:22 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 689AD43C51
+	for <jm@localhost>; Wed, 14 Aug 2002 05:45:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:45:59 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7DJC2414861 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 20:12:02 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17eguq-0004NC-00; Tue,
+    13 Aug 2002 12:01:16 -0700
+Received: from neo.pittstate.edu ([198.248.208.13]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17egu3-0007Rh-00 for <razor-users@lists.sourceforge.net>; Tue,
+    13 Aug 2002 12:00:27 -0700
+Received: from [198.248.208.11] (macdaddy.pittstate.edu [198.248.208.11])
+    by neo.pittstate.edu (8.12.2/8.12.2) with ESMTP id g7DJ06W7008195;
+    Tue, 13 Aug 2002 14:00:06 -0500
+MIME-Version: 1.0
+Message-Id: <p0431011bb97f060d0334@[198.248.208.11]>
+In-Reply-To: <20020813184621.GH31657@kluge.net>
+References: <p04310114b97eea718672@[198.248.208.11]>
+    <20020813175229.GF31657@kluge.net>
+    <p04310116b97ef9ba1dd6@[198.248.208.11]>
+    <20020813184621.GH31657@kluge.net>
+To: Theo Van Dinter <felicity@kluge.net>
+From: Justin Shore <listuser@neo.pittstate.edu>
+Subject: Re: [Razor-users] Stripping the SpamAssassin report
+Cc: razor-users@example.sourceforge.net
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 13 Aug 2002 14:00:21 -0500
+Date: Tue, 13 Aug 2002 14:00:21 -0500
+
+At 2:46 PM -0400 8/13/02, Theo Van Dinter wrote:
+>On Tue, Aug 13, 2002 at 01:01:42PM -0500, Justin Shore wrote:
+>>  Ah...  You learn something new every day!  This would make things
+>>  quite a bit easier.  I assume it can handle a mailbox full of mail to
+>>  report rather than a single piece of spam from STDIN.  I'll check the
+>>  docs on that though.
+>
+>Unfortunately not, it's a one at a time thing.  If it would help
+>you, I have a script that I use which handles a mbox file at a time,
+>strips the SA stuff, reports to razor, and can then do things like
+>open relay checks, reports to spamcop, etc.  It's available via:
+>http://www.kluge.net/~felicity/random/handlespam.txt
+
+I'll give that a looksie.  I've been running a week's worth of 
+maillog relay= IPs through rbcheck every Sunday.  Found quite a few. 
+I should break up the list and run multiple rbcheck instances.  Just 
+haven't gotten there yet though.  I think I'll have either MIMEDefang 
+or Procmail keep a copy of messages over a certain score for daily 
+razor-reporting.  I could just let SA do it too I suppose.
+
+Say, maybe you can tell me what I'm doing wrong in SA.  I added 
+report_header 1 to my 
+/etc/mail/mimedefang/spamassassin/sa-mimedefang.cf but it didn't 
+appear to change anything.  I bounced over another copy of spam to my 
+spamtrap and it still created the SPAM: attachment.  sa-mimedefang.cf 
+has this in it now:
+
+required_hits           1
+auto_report_threshold   100
+ok_locales              en
+rewrite_subject 0
+report_header 1
+use_terse_report 1
+defang_mime 0
+skip_rbl_checks 1
+
+I can't figure out if that was the write cf to modify or not.  I also 
+have a /etc/mail/spamassassin/local.cf but it's empty.  I think I 
+might be taking too many bites out of too many pies at once. :-)  The 
+required_hits changes I made to sa-mimedefang.cf seem to have worked. 
+I don't know why the report_header change didn't though.  Any ideas?
+
+Justin
+-- 
+
+--
+Justin Shore, ES-SS ES-SSR      Pittsburg State University
+Network & Systems Manager       Kelce 157Q
+Office of Information Systems   Pittsburg, KS 66762
+Voice: (620) 235-4606           Fax: (620) 235-4545
+http://www.pittstate.edu/ois/
+
+Warning:  This message has been quadruple Rot13'ed for your protection.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

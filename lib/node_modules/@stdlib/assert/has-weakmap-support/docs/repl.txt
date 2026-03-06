@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Tests for native `WeakMap` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has `WeakMap` support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

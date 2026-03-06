@@ -1,0 +1,83 @@
+{
+  "name": "stdlib-datasets-cdc-nchs-us-births-1994-2003",
+  "version": "",
+  "title": "US Births (1994-2003)",
+  "description": "US birth data from 1994 to 2003.",
+  "resources": [
+    {
+      "name": "cdc-nchs-us-births-1994-2003-json",
+      "title": "US Births (1994-2003)",
+      "description": "US birth data from 1994 to 2003.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "cdc-nchs-us-births-1994-2003-csv",
+      "title": "US Births (1994-2003)",
+      "description": "US birth data from 1994 to 2003.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "year",
+            "title": "Year",
+            "description": "Year.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "month",
+            "title": "Month",
+            "description": "Month number, where January is denoted by `1`.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "date_of_month",
+            "title": "Date of Month",
+            "description": "Day number of the month.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "day_of_week",
+            "title": "Day of Week",
+            "description": "Day of week, where Monday is `1` and Sunday is `7`.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "births",
+            "title": "Births",
+            "description": "Number of births.",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "Center for Disease Control and Prevention",
+      "web": "https://data.cdc.gov"
+    }
+  ],
+  "keywords": [
+    "us",
+    "usa",
+    "united states",
+    "cdc",
+    "births",
+    "timeseries",
+    "time-series"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

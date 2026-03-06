@@ -1,0 +1,9 @@
+
+Usage: bench [options] <glob> ...
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+  -r,    --require module      Load module before running benchmarks.
+

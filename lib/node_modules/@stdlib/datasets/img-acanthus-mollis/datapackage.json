@@ -1,0 +1,32 @@
+{
+  "name": "stdlib-datasets-img-acanthus-mollis",
+  "version": "",
+  "title": "Acanthus mollis",
+  "description": "Acanthus mollis.",
+  "resources": [
+    {
+      "name": "acanthus-mollis-jpg",
+      "title": "Acanthus mollis",
+      "description": "Acanthus mollis.",
+      "format": "jpeg",
+      "mediatype": "image/jpeg",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/image.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Getty's Open Content Program",
+      "web": "http://www.getty.edu/art/collection/objects/35443/karl-blossfeldt-acanthus-mollis-german-1928/"
+    }
+  ],
+  "keywords": [
+    "image",
+    "img",
+    "acanthus",
+    "mollis",
+    "plant"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

@@ -1,0 +1,30 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:43:26 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E534F16F03
+	for <jm@localhost>; Thu, 26 Sep 2002 16:42:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:42:33 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFTVg24692 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:29:31 +0100
+Message-Id: <200209261529.g8QFTVg24692@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: guardian <rssfeeds@spamassassin.taint.org>
+Subject: Play by Play: Effective Memory Management
+Date: Thu, 26 Sep 2002 15:29:31 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-6,6503039,159/
+Date: 2002-08-03T08:11:17+01:00
+
+Back when 64KB was more memory than any computer would ever need, there was a 
+time when memory managers didn’t exist. But gradually, new computer systems 
+came out with larger amounts of memory and designers discovered ways to eat up 
+RAM faster than any system could dish it out. This discussion is based on 
+Tiburon's experiences in writing and rewriting the memory manager for Madden 
+NFL 97 to Madden NFL 2002.
+
+

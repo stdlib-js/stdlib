@@ -1,0 +1,103 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6PDY5i5039282
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Thu, 25 Jul 2002 08:34:06 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6PDY5QX039271
+	for cypherpunks-forward@ds.pro-ns.net; Thu, 25 Jul 2002 08:34:05 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6PDXvi5039161
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Thu, 25 Jul 2002 08:33:57 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6PDXtJ83267
+	for <cypherpunks@ds.pro-ns.net>; Thu, 25 Jul 2002 09:33:56 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6PDXtU25382
+	for cypherpunks@ds.pro-ns.net; Thu, 25 Jul 2002 09:33:55 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6PDXsR25367
+	for <cpunks@minder.net>; Thu, 25 Jul 2002 09:33:54 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6PDXrJ83257
+	for <cpunks@minder.net>; Thu, 25 Jul 2002 09:33:53 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id IAA20374
+	for cpunks@minder.net; Thu, 25 Jul 2002 08:42:51 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id IAA20364
+	for cypherpunks-outgoing; Thu, 25 Jul 2002 08:42:32 -0500
+Received: from lt12.yourip21.com ([4.43.82.154])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id IAA20352
+	for <cypherpunks@einstein.ssz.com>; Thu, 25 Jul 2002 08:42:20 -0500
+From: alancrooks@lt08.yourip21.com
+Date: Thu, 25 Jul 2002 10:51:57 -0500
+Message-Id: <200207251551.g6PFpuh23826@lt12.yourip21.com>
+X-Mailer: Becky! ver. 2.00.03
+To: <cyphipps@hotmail.com>
+Old-Subject: CDR: Lowest Rates Available.                    gjannsxrwg
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Lowest Rates Available.                    gjannsxrwg
+
+When America's top companies compete for your business, you win.
+
+http://four87.six86.com/sure_quote/sure_quote.htm
+
+Take a moment to let us show you that we are here to save you money and address your concerns
+with absolutely no hassle, no obligation, no cost quotes, on all your needs, from America's
+top companies.
+
+-Life Insurance 70% off.
+-Medical Insurance 60% off.
+-Mortgage rates that save you thousands.
+-New home loans.
+-Refinance or consolidate high interest credit card debt into a low interest mortgage.
+-Get the best prices from the nation's leading health insurance companies.
+_Dental Insurance at the lowest rate available.
+
+
+We will soon be offering  Auto Insurance quotes as well.
+
+
+
+http://four87.six86.com/sure_quote/sure_quote.htm
+
+
+
+"...was able to get 3 great offers in
+less than 24 hours." -Jennifer C
+
+"Met all my needs... being able to search
+for loans in a way that puts me in control." -Robert T.
+
+"..it was easy, effortless...!"-Susan A.
+
+ 
+
+Click here to delete your address from future updates.
+http://four87.six86.com/sure_quote/sure_quote/rm/
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

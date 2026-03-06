@@ -1,0 +1,87 @@
+From ilug-admin@linux.ie  Thu Aug 15 10:51:34 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7DB2B43C4B
+	for <jm@localhost>; Thu, 15 Aug 2002 05:49:47 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 15 Aug 2002 10:49:47 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7EJvO401232 for
+    <jm-ilug@jmason.org>; Wed, 14 Aug 2002 20:57:24 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA27741; Wed, 14 Aug 2002 20:56:40 +0100
+Received: from odin.he.net (odin.he.net [216.218.181.2]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA27704 for <ilug@linux.ie>;
+    Wed, 14 Aug 2002 20:56:30 +0100
+Received: (from dbiassoc@localhost) by odin.he.net (8.8.6/8.8.2) id
+    MAA31265; Wed, 14 Aug 2002 12:56:09 -0700
+Date: Wed, 14 Aug 2002 12:56:09 -0700
+Message-Id: <200208141956.MAA31265@odin.he.net>
+X-Authentication-Warning: odin.he.net: dbiassoc set sender to
+    poneil@dbiassociates.net using -f
+From: "Paul O Neil" <poneil@dbiassociates.net>
+To: Ronan Cunniffe <ronan@cunniffe.net>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] DHCP
+X-Mailer: WebMail 1.25
+X-Ipaddress: 207.213.78.2
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+
+> Quoting Paul O'Neil <poneil@dbiassociates.net>:
+> 
+> > Excuse me for asking an old question here but Ive been running SuSE 
+with a
+> > cable modem for a couple months. About 5-6 weeks ago the internet 
+access
+> > was
+> > not working and I rebooted noticing I came up with a new IP 
+address, and it
+> > worked fine. How does it work exactly when the cable company 
+releases and
+> > renews an ip address. Do they merely setup their system to issue 
+new ip
+> > addresses when cusomters reboot their computer or does it take 
+affect
+> > immediately and it caused the internet disruption that required a 
+reboot or
+> > at least a network reload? If so, can this be detected 
+automatically and
+> > taken care of or is that just how it works?
+> 
+> A DHCP client daemon (dhcpcd, pump) can do this automatically.  Some 
+cable
+> companies apparently reassign the same address over and over when the 
+leases run
+> out, so you get away without a daemon for long enough to make you 
+think you
+> don't need one. :-)
+> 
+> Ronan
+> 
+> 
+
+Is what your talking about, this process is running all the time. 
+
+root       422  0.0  0.4  1332  500 ?        S    03:18   
+0:00 /sbin/dhcpcd -D -N -Y -t 999999 -h cable-modem-1 eth0
+
+If alright then maybe coincidence, I'll wait and see when I get another 
+address.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

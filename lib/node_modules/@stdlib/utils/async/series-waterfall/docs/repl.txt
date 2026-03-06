@@ -1,0 +1,73 @@
+
+{{alias}}( fcns, clbk[, thisArg] )
+    Executes functions in series, passing the results of one function as
+    arguments to the next function.
+
+    The last argument applied to each waterfall function is a callback. The
+    callback should be invoked upon a series function completion. The first
+    argument is reserved as an error argument (which can be `null`). Any results
+    which should be passed to the next function in the series should be provided
+    beginning with the second argument.
+
+    If any function calls the provided callback with a truthy `error` argument,
+    the waterfall suspends execution and immediately calls the completion
+    callback for subsequent error handling.
+
+    Execution is *not* guaranteed to be asynchronous. To ensure asynchrony, wrap
+    the completion callback in a function which either executes at the end of
+    the current stack (e.g., `nextTick`) or during a subsequent turn of the
+    event loop (e.g., `setImmediate`, `setTimeout`).
+
+    Parameters
+    ----------
+    fcns: Array<Function>
+        Array of functions.
+
+    clbk: Function
+        Callback to invoke upon completion.
+
+    thisArg: any (optional)
+        Function context.
+
+    Examples
+    --------
+    > function foo( next ) { next( null, 'beep' ); };
+    > function bar( str, next ) { console.log( str ); next(); };
+    > function done( error ) { if ( error ) { throw error; } };
+    > var fcns = [ foo, bar ];
+    > {{alias}}( fcns, done );
+
+
+{{alias}}.factory( fcns, clbk[, thisArg] )
+    Returns a reusable waterfall function.
+
+    Parameters
+    ----------
+    fcns: Array<Function>
+        Array of functions.
+
+    clbk: Function
+        Callback to invoke upon completion.
+
+    thisArg: any (optional)
+        Function context.
+
+    Returns
+    -------
+    fcn: Function
+        Waterfall function.
+
+    Examples
+    --------
+    > function foo( next ) { next( null, 'beep' ); };
+    > function bar( str, next ) { console.log( str ); next(); };
+    > function done( error ) { if ( error ) { throw error; } };
+    > var fcns = [ foo, bar ];
+    > var waterfall = {{alias}}.factory( fcns, done );
+    > waterfall();
+    > waterfall();
+    > waterfall();
+
+    See Also
+    --------
+

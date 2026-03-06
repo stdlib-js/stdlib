@@ -1,0 +1,26 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:43:13 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C5A3016F6C
+	for <jm@localhost>; Thu, 26 Sep 2002 16:42:04 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:42:04 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFWBg25116 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:32:11 +0100
+Message-Id: <200209261532.g8QFWBg25116@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: newscientist <rssfeeds@spamassassin.taint.org>
+Subject: Balloon flight challenges deflate
+Date: Thu, 26 Sep 2002 15:32:11 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-3,8251868,1440/
+Date: Not supplied
+
+Technical problems beat a transatlantic record attempt, as the weather beats an 
+altitude record attempt - for now
+
+

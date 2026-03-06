@@ -1,0 +1,23 @@
+
+{{alias}}( operation )
+    Returns the BLAS transpose operation string associated with a BLAS transpose
+    operation enumeration constant.
+
+    Parameters
+    ----------
+    operation: integer
+        Operation enumeration constant.
+
+    Returns
+    -------
+    out: string|null
+        Operation string.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/blas/base/transpose-operation-str2enum}}( 'transpose' ) )
+    'transpose'
+
+    See Also
+    --------
+

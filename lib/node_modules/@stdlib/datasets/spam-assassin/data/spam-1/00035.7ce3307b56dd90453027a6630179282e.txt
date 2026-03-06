@@ -1,0 +1,183 @@
+Received: from qrq.cc.ntu.edu.tw (giga.tw.freebsd.org [203.133.92.249])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6J7RhJ02577
+	for <postmaster_neto.net@spamtraps.taint.org>; Fri, 19 Jul 2002 08:27:45 +0100
+Received: from ccsun37.cc.ntu.edu.tw (ccsun37.cc.ntu.edu.tw [140.112.8.37])
+	by qrq.cc.ntu.edu.tw (8.12.5/8.12.5) with ESMTP id g6J7Renr016990
+	for <meilan@neto.net>; Fri, 19 Jul 2002 15:27:40 +0800 (CST)
+	(envelope-from master@ibd.pe.kr)
+Received: from localhost (localhost [127.0.0.1])
+	by ccsun37.cc.ntu.edu.tw (Postfix) with ESMTP id 199BDDE082
+	for <meilan@neto.net>; Fri, 19 Jul 2002 15:23:07 +0800 (CST)
+Received: from bigfoot.com (unknown [64.15.239.140])
+	by ccsun37.cc.ntu.edu.tw (Postfix) with SMTP id 7A551DE087
+	for <meilan@neto.net>; Fri, 19 Jul 2002 15:23:00 +0800 (CST)
+Received: from localhost ([61.104.101.163])
+	by BFLITEMAIL4A.bigfoot.com (LiteMail v3.02(BFLITEMAIL4A)) with SMTP id 18Jul2002_BFLITEMAIL4A_36057_169370901;
+	Thu, 18 Jul 2002 14:46:11 -0400 EST
+Reply-To: master@ibd.pe.kr
+From: 교육팀 <master@ibd.pe.kr>
+To: andyliao@bigfoot.com
+Subject: [광고] 요즘 뜨는 직종 Best 5 & 자격증 따기 열풍
+Mime-Version: 1.0
+Content-Type: text/html; charset="ks_c_5601-1987"
+Date: Fri, 19 Jul 2002 03:46:15 +0900
+Message-Id: <20020719072300.7A551DE087@ccsun37.cc.ntu.edu.tw>
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<title>요즘 뜨는 직종 Best 5 : 금융 / IT / 방송 / 뷰티 / 인테리어</title>
+<meta name="generator" content="Namo WebEditor v5.0">
+</head>
+<BODY text=black vLink=purple aLink=red link=blue bgColor=white>
+<TABLE cellSpacing=0 cellPadding=0 width=672 border=0>
+<TBODY>
+<TR>
+<TD width=7 bgColor=#ffffff><IMG height=1
+src="http://image.hanmail.net/hanmail/general/trans.gif" width=7><BR></TD>
+<TD vAlign=top width="99%" bgColor=#ffffff><IMG height=105
+src="http://image.hanmail.net/hanmail/s_img/recruit/sp_top01.gif"
+width=221><IMG height=105
+src="http://image.hanmail.net/hanmail/s_img/recruit/sp_top02.gif"
+width=442>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD width=5><IMG height=8
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_raound01.gif"
+width=5><BR></TD>
+<TD width="97%" bgColor=#cbd940></TD>
+<TD width=13><IMG height=8
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_raound02.gif"
+width=5><BR></TD></TR>
+<TR>
+<TD
+style="BORDER-RIGHT: #abc25c 1px solid; BORDER-TOP: #abc25c 1px solid; BORDER-LEFT: #abc25c 1px solid; BORDER-BOTTOM: #abc25c 1px solid"
+width=681 colSpan=3>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD
+style="PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px"><IMG
+height=6
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow01.gif"
+width=4 align=absMiddle> <B><FONT color=#518900>요즘 뜨는 직종 Best
+5 : 금융 / IT / 방송 / 뷰티 / 인테리어</FONT></B> </TD></TR>
+<TR>
+<TD
+background=http://image.hanmail.net/hanmail/s_img/recruit/g_jeum.gif></TD></TR>
+<TR>
+<TD
+style="PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; LINE-HEIGHT: 135%; PADDING-TOP: 8px"><FONT
+face=굴림><SPAN style="FONT-SIZE: 10pt">20대 젊은이들이 뽑은 '일하고 싶은
+분야'로 금융, IT, 방송, 뷰티/패션, 인테리어/건축분야가 선정되었다.</SPAN></FONT>
+<P><FONT face=굴림><SPAN style="FONT-SIZE: 10pt">이들 중에서도 금융분야는
+급여가 상대적으로 높고 주5일제 근무에 앞서있는 '외국계 은행'이, IT분야는 '게임'분야가, 방송분야는 요즘
+신세대 대학생들이 가장 선호하는 직업인 홈쇼핑의 '쇼핑호스트'와 케이블방송의 'VJ'를, 뷰티/패션분야는 美에
+대한 관심고조로 인해 '피부관리사' 또는 '스타일리스트', 인테리어/건축분야에서는 리모델링 붐에 힘입어
+'인테리어'쪽이 높은 순위로 꼽혔다.</SPAN></FONT>
+<P><B><FONT face=굴림><SPAN style="FONT-SIZE: 10pt">그럼, 이처럼 높은
+주가를 구가하고 있는 직종에 근무하기 위해서는 어떤 자격요소를 갖추는 것이 좋을까?<BR>본격적인 여름이
+시작되는 이때, 뜨는 직종으로의 확실한 준비를 해보자.</SPAN></FONT></B>
+<P><FONT face=굴림><SPAN style="FONT-SIZE: 10pt"><IMG height=9
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow02.gif"
+width=9 align=absMiddle> </SPAN></FONT><B><FONT face=굴림><SPAN
+style="FONT-SIZE: 10pt">금융</SPAN></FONT></B><FONT
+face=굴림><SPAN style="FONT-SIZE: 10pt"> : 98년 말 IMF가 시작될 무렵만 해도
+은행/보험/증권계의 한파는 그 어느분야보다도 치열했고 무차별적인 구조조정으로 인해 많은 직장인들이 거리로
+내몰리다시피 되었었다. 하지만 2002년 현재, 카드사의 호황을 시작으로 은행권, 증권, 보험분야의 경력직
+수요가 많아지고 있으며, 신입직의 채용 또한 많아지고 있다. 올 하반기까지 인력시장은 맑음
+상태.</SPAN></FONT>
+<P><FONT face=굴림><SPAN style="FONT-SIZE: 10pt">금융분야는 자격증이 있으면
+있을수록 좋다. 금융권에서 유용하게 쓰이는 자격증으로는 투자상담사, 금융자산관리사(FP),
+재무위험관리사(FRM) 등. 특히 증권사에 근무할 이들이라면 투자상담사나 금융자산관리사의 자격증은 기본이 되고
+있으니 반드시 취득해두도록 하자. <IMG height=10
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow04.gif"
+width=10 align=absMiddle> </SPAN></FONT><A
+href="http://job.daum.net/info/lacademy/lice_list.asp?officekind=2"
+target=new><FONT face=굴림><SPAN style="FONT-SIZE: 10pt">시험일정
+보기</SPAN></FONT></A>
+<P><FONT face=굴림><SPAN style="FONT-SIZE: 10pt"><IMG height=9
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow02.gif"
+width=9 align=absMiddle> </SPAN></FONT><B><FONT face=굴림><SPAN
+style="FONT-SIZE: 10pt">IT</SPAN></FONT></B><FONT
+face=굴림><SPAN style="FONT-SIZE: 10pt"> : 올해들면서 IT/인터넷 업계의
+수익구조가 좋아지고 있으며, 인터넷 분야는 토종인터넷 기업의 수익성이 외국계보다 훨씬 앞서가고 있는 상황이다.
+몇 년전부터 게임으로의 관심이 높아지면서 투자 또한 많아지고 있는 상태. 하반기 인력시장
+맑음.</SPAN></FONT>
+<P><FONT face=굴림><SPAN style="FONT-SIZE: 10pt">IT분야에서는 인력수급을 할
+때 사실 자격증 유무보다는 실무경험과 적극성을 더 선호하는 경향이 있다. 하지만 직종을 바꾸어보려 한다거나 보다
+높은 실무지식을 원한다면 이번 여름에 학원에서의 실무지식 습득은 어떨까? <IMG height=10
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow04.gif"
+width=10 align=absMiddle> </SPAN></FONT><A
+href="http://www.ibd.pe.kr" target=new><FONT face=굴림><SPAN
+style="FONT-SIZE: 10pt">추천IT학원 보기</SPAN></FONT></A>
+<P><FONT face=굴림><SPAN style="FONT-SIZE: 10pt"><IMG height=9
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow02.gif"
+width=9 align=absMiddle> </SPAN></FONT><B><FONT face=굴림><SPAN
+style="FONT-SIZE: 10pt">방송</SPAN></FONT></B><FONT
+face=굴림><SPAN style="FONT-SIZE: 10pt"> : 방송분야 중에서도 아나운서, 성우,
+작가, PD 등은 예전부터 꾸준한 인기몰이를 하고 있는 직업이다. 하지만 요즘 새롭게 각광받고 있는 직업이 바로
+'쇼핑호스트'. 쇼핑호스트에 관해서는 서점에서도 관련서적이 많이 나올정도로 여대생들 사이에선 인기가 높은
+직업이다. 순간 재치력과 표현력이 있다면 이쪽으로의 도전은 한번쯤 생각해봐도 좋을법. <IMG height=10
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow04.gif"
+width=10 align=absMiddle> </SPAN></FONT><A
+href="http://job1.daum.net/info/news/newsview.asp?id=7731"
+target=new><FONT face=굴림><SPAN
+style="FONT-SIZE: 10pt">쇼핑호스트란?</SPAN></FONT></A>
+<P><FONT face=굴림><SPAN style="FONT-SIZE: 10pt">쇼핑호스트와 함께 '유통
+분야에서의 꽃'이라 불리우는 MD(Merchandiser). <IMG height=10
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow04.gif"
+width=10 align=absMiddle> </SPAN></FONT><A
+href="http://job1.daum.net/info/news/newsview.asp?id=8457"
+target=new><FONT face=굴림><SPAN style="FONT-SIZE: 10pt">유통의 꽃
+MD의 전문성</SPAN></FONT></A>
+<P><FONT face=굴림><SPAN style="FONT-SIZE: 10pt"><IMG height=9
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow02.gif"
+width=9 align=absMiddle> </SPAN></FONT><B><FONT face=굴림><SPAN
+style="FONT-SIZE: 10pt">뷰티</SPAN></FONT></B><FONT
+face=굴림><SPAN style="FONT-SIZE: 10pt"> : 美 또는 건강에 대한 관심이 높아지면서
+뷰티 관련 산업이 활황을 맞고 있다. 이에 피부관리사, 발관리사, 스포츠마사지를 비롯하여 네일아티스트,
+메이크업아티스트, 헤어디자이너, 컬러디렉터를 양성하는 학원들도 많이 생겨나고 있는 추세. 美에 대한 관심은
+여성뿐만 아니라 남성에게도 중요시 되고 있는 분야이며, 요즈음은 '꽃미남'이라 불리우는 피부가 곱고 예쁘장한
+남자들이 인기가 높다. 따라서 피부관리사 자격증을 소지하고 있으면 피부과, 전문피부마사지센터 등 인력수급이 좋은
+상태. <IMG height=10
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow04.gif"
+width=10 align=absMiddle> </SPAN></FONT><A
+href="http://job.daum.net/edu/index.html" target=new><FONT
+face=굴림><SPAN style="FONT-SIZE: 10pt">추천뷰티학원
+보기</SPAN></FONT></A>
+<P><FONT face=굴림><SPAN style="FONT-SIZE: 10pt"><IMG height=9
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow02.gif"
+width=9 align=absMiddle> </SPAN></FONT><B><FONT face=굴림><SPAN
+style="FONT-SIZE: 10pt">인테리어</SPAN></FONT></B><FONT
+face=굴림><SPAN style="FONT-SIZE: 10pt"> : 작년부터 건축리뉴얼 및 재건축 바람이
+불면서 인테리어 산업이 각광받고 있다. 또한 MBC에서 인기리에 방영되고 있는 '러브하우스'를 통해서도 이미
+건축리뉴얼이나 인테리어가 주목받고 있는 상태. 인테리어 등의 분야에서 일 하려면 반드시 관련 자격증이 필요하다.
+<IMG height=10
+src="http://image.hanmail.net/hanmail/s_img/recruit/g_arrow04.gif"
+width=10 align=absMiddle> </SPAN></FONT><A
+href="http://job.daum.net/info/lacademy/view_liceoff.asp?kind=12"
+target=new><FONT face=굴림><SPAN style="FONT-SIZE: 10pt">건축관련
+자격증보기</SPAN></FONT></A> </P></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD width=5 height=7></TD>
+<TD width=665>
+<DIV align=center><FONT size=2><FONT face=굴림><FONT size=2><SPAN
+style="FONT-SIZE: 9pt">0 본메일은 정보통신망 이용촉진 및 정보보호 등에 관한 법률 제 50조에 의거한
+[광고]메일 입니다.<BR>0. </SPAN><SPAN style="FONT-SIZE: 9pt">귀하의 메일주소는
+웹서핑중,@memo@ 에서 알게 된것이며, E-Mail 주소 외에, 다른 정보는 갖고 있지 않습니다</SPAN><SPAN
+style="FONT-SIZE: 9pt">. </SPAN></FONT></FONT><SPAN
+style="FONT-SIZE: 9pt"><FONT face=굴림 size=2>먼저 허락없이 메일을 발송해서 대단히
+죄송합니다&nbsp;<BR></FONT></SPAN><FONT face=굴림 size=2><SPAN
+style="FONT-SIZE: 9pt"><FONT face="Times New Roman" size=2>
+</FONT><A href="mailto:master@ibd.pe.kr?subject=andyliao@bigfoot.com 의 사용자로써 #수신을거부합니다#&amp;body=andyliao@bigfoot.com 을 귀하의 리스트에서 삭제요망!"><FONT
+color=#000000><FONT size=2><FONT face="Times New Roman">[<FONT
+color=#0000ff>수신 거부]</FONT></FONT></FONT></FONT></A>&nbsp;클릭하시어 메일을
+보내주시면 다시는 메일을 보내지 않도록 노력하겠습니다. &nbsp;감사합니다</SPAN></FONT></FONT><FONT
+size=2>.</FONT></DIV></TD>
+<TD width=13></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+</BODY>
+</html>
+
+

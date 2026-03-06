@@ -1,0 +1,63 @@
+From ilug-admin@linux.ie  Mon Sep  2 16:22:06 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0CE2E4415F
+	for <zzzz@localhost>; Mon,  2 Sep 2002 11:21:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 16:21:42 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82ExkZ05649 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 15:59:46 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA11015; Mon, 2 Sep 2002 15:59:18 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id PAA10975 for <ilug@linux.ie>;
+    Mon, 2 Sep 2002 15:58:55 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g82EwrY22553 for <ilug@linux.ie>;
+    Mon, 2 Sep 2002 15:58:53 +0100
+Date: Mon, 2 Sep 2002 15:58:51 +0100
+To: irish linux users group <ilug@linux.ie>
+Message-Id: <20020902155851.A22343@ie.suberic.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1031410733.71e31f@ie.suberic.net>
+Mail-Followup-To: kevin+dated+1031410733.71e31f@ie.suberic.net,
+	ilug@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Subject: [ILUG] freeserve in the uk?
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+ok, so if i was in the uk for a wekk, how might i configure my laptop to
+dial in to a freebie isp?  redhat's internet connection wizard actually
+has settings for uk isp's, but freeserve is the only one i recognize
+and it doen't seem to work.
+
+has anyone here done this?
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

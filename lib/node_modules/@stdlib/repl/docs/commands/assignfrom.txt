@@ -1,0 +1,24 @@
+
+assignfrom( workspace, variable )
+    Reads a value from a specified workspace.
+
+    Parameters
+    ----------
+    workspace: string
+        Workspace name.
+
+    variable: string|symbol
+        Variable name.
+
+    Examples
+    --------
+    > workspace( 'foobar' );
+    > var x = 3.14;
+    > workspace( 'barfoo' );
+    > var y = assignfrom( 'foobar', 'x' );
+    > y
+
+    See Also
+    --------
+    assignin, varsWorkspace, workspace, workspaces
+

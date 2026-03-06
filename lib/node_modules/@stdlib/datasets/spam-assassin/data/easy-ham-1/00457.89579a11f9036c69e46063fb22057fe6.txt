@@ -1,0 +1,73 @@
+From fork-admin@xent.com  Fri Sep  6 11:42:37 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9946E16F78
+	for <jm@localhost>; Fri,  6 Sep 2002 11:39:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:39:58 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869r6C29218 for
+    <jm@jmason.org>; Fri, 6 Sep 2002 10:53:06 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id XAA19142 for <jm@jmason.org>; Thu, 5 Sep 2002 23:58:05 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 515A5294174; Thu,  5 Sep 2002 11:31:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from rwcrmhc51.attbi.com (rwcrmhc51.attbi.com [204.127.198.38])
+    by xent.com (Postfix) with ESMTP id AABDC2940AA for <FoRK@xent.com>;
+    Thu,  5 Sep 2002 11:30:34 -0700 (PDT)
+Received: from Intellistation ([66.31.2.27]) by rwcrmhc51.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020905183308.ZUIL1399.rwcrmhc51.attbi.com@Intellistation> for
+    <FoRK@xent.com>; Thu, 5 Sep 2002 18:33:08 +0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Eirikur Hallgrimsson <eh@mad.scientist.com>
+Organization: Electric Brain
+To: FoRK <FoRK@xent.com>
+Subject: Re: Ouch...
+User-Agent: KMail/1.4.1
+References: <Pine.LNX.4.44.0209042158330.26056-100000@isolnetsux.techmonkeys.net>
+In-Reply-To: <Pine.LNX.4.44.0209042158330.26056-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200209051432.42151.eh@mad.scientist.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 5 Sep 2002 14:32:42 -0400
+
+On Wednesday 04 September 2002 10:59 pm, CDale wrote:
+> Someone needs to tell the mayor about this:
+> http://www.cb-2000.com/
+
+"Chastity" technologies were doomed from the start, and I'll add chemical 
+ones to the trash heap.  (Yeah, Cindy, these are decorative toys for the 
+subculture, but....)  
+
+Generally,someone is attempting to preserve a relationship with this 
+nonsense, when quite plainly the the relationship is in a state where 
+preserving it is of little value.  Hardware is of no real use save for 
+playing the power-struggle game.   I don't want to see the future of this.
+"Invisible Fence" for your mate.   "Must wear" location transponders and 
+endocrine monitors.   More movies like "Minority Report."
+
+It seems so automatic for people to reach for coercive solutions.   So 
+surprizing given the low absolute effectiveness of coercion in the absense 
+of overwhelming force advantage.
+
+Eirikur
+
+
+
+

@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Tests whether a value is a localhost hostname.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a localhost hostname.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'localhost' )
+    true
+    > bool = {{alias}}( '127.0.0.1' )
+    true
+    > bool = {{alias}}( 'stdlib.io' )
+    false
+
+    See Also
+    --------

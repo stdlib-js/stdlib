@@ -1,0 +1,30 @@
+From rssfeeds@jmason.org  Tue Sep 24 10:47:58 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 82AC016F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:47:58 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:47:58 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8O80BC26572 for
+    <jm@jmason.org>; Tue, 24 Sep 2002 09:00:11 +0100
+Message-Id: <200209240800.g8O80BC26572@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: scripting <rssfeeds@spamassassin.taint.org>
+Subject: I've been hearing a lot about FOAF, which is an acronym for
+    Friend Of A Fri
+Date: Tue, 24 Sep 2002 08:00:11 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://scriptingnews.userland.com/backissues/2002/09/23#When:10:34:18AM
+Date: Mon, 23 Sep 2002 17:34:18 GMT
+
+I've been hearing a lot about FOAF, which is an acronym for Friend Of A Friend. 
+It's an RDF-based file format that lets you walk a network of people who are 
+friends. It's a lot like a network of blogrolls[1]. 
+
+[1] http://radio.outliners.com/stories/storyReader$85
+
+

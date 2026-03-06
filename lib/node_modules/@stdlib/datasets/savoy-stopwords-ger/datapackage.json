@@ -1,0 +1,47 @@
+{
+  "name": "stdlib-datasets-savoy-stopwords-ger",
+  "version": "",
+  "title": "German Stop Words",
+  "description": "A list of German stop words.",
+  "resources": [
+    {
+      "name": "savoy-stopwords-ger-json",
+      "title": "German Stop Words",
+      "description": "A list of German stop words.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.json"
+    },
+    {
+      "name": "savoy-stopwords-ger-txt",
+      "title": "German Stop Words",
+      "description": "A list of German stop words.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "IR Multilingual Resources at UniNE",
+      "web": "http://members.unine.ch/jacques.savoy/clef/"
+    }
+  ],
+  "keywords": [
+    "list",
+    "stopwords",
+    "words",
+    "redundant",
+    "lexicon",
+    "nlp",
+    "language",
+    "germany",
+    "german",
+    "ger"
+  ],
+  "license": "BSD-2-Clause"
+}

@@ -1,0 +1,74 @@
+From webdev-admin@linux.ie  Tue Oct  8 12:26:53 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 82C0016F03
+	for <zzzz@localhost>; Tue,  8 Oct 2002 12:26:53 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 12:26:53 +0100 (IST)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g98AjNK11667 for
+    <zzzz-webdev@spamassassin.taint.org>; Tue, 8 Oct 2002 11:45:23 +0100
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 89BAA340A2; Tue,  8 Oct 2002 11:46:04 +0100 (IST)
+Delivered-To: linux.ie-webdev@localhost
+Received: from mail.tradesignals.com (unknown [217.75.2.27]) by
+    lugh.tuatha.org (Postfix) with ESMTP id 42BEA340A2 for <webdev@linux.ie>;
+    Tue,  8 Oct 2002 11:45:21 +0100 (IST)
+Received: from docaoimh.tradesignals.com (docaoimh.tradesignals.com
+    [192.168.1.26]) by mail.tradesignals.com (8.11.6/8.11.6) with ESMTP id
+    g98AjGe06455; Tue, 8 Oct 2002 11:45:16 +0100
+Received: from docaoimh.tradesignals.com (localhost.localdomain
+    [127.0.0.1]) by docaoimh.tradesignals.com (8.12.5/8.12.5) with ESMTP id
+    g98AgeiK002392; Tue, 8 Oct 2002 11:42:40 +0100
+Received: from localhost (localhost [[UNIX: localhost]]) by
+    docaoimh.tradesignals.com (8.12.5/8.12.5/Submit) id g98AgdeN002390;
+    Tue, 8 Oct 2002 11:42:39 +0100
+Content-Type: text/plain; charset="iso-8859-1"
+From: Donncha O Caoimh <donncha.ocaoimh@tradesignals.com>
+To: <aj.mckee@nmtbmedia.com>, <webdev@linux.ie>
+Subject: Re: [Webdev] mod_usertrack
+User-Agent: KMail/1.4.3
+References: <LAEAIGLCKFNPNHBDGGEGEEFACIAA.aj.mckee@nmtbmedia.com>
+In-Reply-To: <LAEAIGLCKFNPNHBDGGEGEEFACIAA.aj.mckee@nmtbmedia.com>
+MIME-Version: 1.0
+Message-Id: <200210081142.39259.donncha.ocaoimh@tradesignals.com>
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Beenthere: webdev@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:webdev-request@linux.ie?subject=help>
+List-Post: <mailto:webdev@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/webdev>,
+    <mailto:webdev-request@linux.ie?subject=subscribe>
+List-Id: <webdev.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/webdev>,
+    <mailto:webdev-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/webdev/>
+Date: Tue, 8 Oct 2002 11:42:39 +0100
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g98AjNK11667
+
+Thanks for the info AJ, I found "weblog" at 
+http://awsd.com/scripts/weblog/index.shtml which has some click-path 
+reporting. It's simple, but works. Report generation takes a bit though, even 
+with dns resolution turned off..
+
+Donncha.
+
+
+On Monday 07 October 2002 23:35, AJ McKee wrote:
+> Donncha,
+>
+> I've been using mod_usertrack for a good while now. I use in by default in
+> every vhost that I set up. I assign a cookie name and set the expiry for
+> about a year. I have to say it looks ok. A few things to note though. If a
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+
+

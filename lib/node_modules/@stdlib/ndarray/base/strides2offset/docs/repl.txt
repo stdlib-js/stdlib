@@ -1,0 +1,28 @@
+
+{{alias}}( shape, strides )
+    Returns the index offset which specifies the location of the first indexed
+    value in a multidimensional array based on a stride array.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    strides: ArrayLike
+        Stride array.
+
+    Returns
+    -------
+    offset: integer
+        Index offset.
+
+    Examples
+    --------
+    > var d = [ 2, 3, 10 ];
+    > var s = [ 30, -10, 1 ];
+    > var out = {{alias}}( d, s )
+    20
+
+    See Also
+    --------
+

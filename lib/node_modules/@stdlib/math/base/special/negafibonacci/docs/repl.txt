@@ -1,0 +1,50 @@
+
+{{alias}}( n )
+    Computes the nth negaFibonacci number.
+
+    The negaFibonacci numbers follow the recurrence relation
+
+      F_{n-2} = F_{n} - F_{n-1}
+
+    with seed values F_0 = 0 and F_{-1} = 1.
+
+    If `|n|` is greater than `78`, the function returns `NaN` as larger
+    negaFibonacci numbers cannot be accurately represented due to limitations of
+    double-precision floating-point format.
+
+    If not provided a non-positive integer value, the function returns `NaN`.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    n: integer
+        Input value.
+
+    Returns
+    -------
+    y: integer
+        NegaFibonacci number.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0 )
+    0
+    > y = {{alias}}( -1 )
+    1
+    > y = {{alias}}( -2 )
+    -1
+    > y = {{alias}}( -3 )
+    2
+    > y = {{alias}}( -4 )
+    -3
+    > y = {{alias}}( -79 )
+    NaN
+    > y = {{alias}}( -80 )
+    NaN
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

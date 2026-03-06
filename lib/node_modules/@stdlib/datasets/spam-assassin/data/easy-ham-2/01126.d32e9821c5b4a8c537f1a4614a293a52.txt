@@ -1,0 +1,73 @@
+From rpm-list-admin@freshrpms.net  Sat Jul 20 00:00:19 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BAFF8440C9
+	for <jm@localhost>; Fri, 19 Jul 2002 19:00:19 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 20 Jul 2002 00:00:19 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JN0ZJ12295 for
+    <jm-rpm@jmason.org>; Sat, 20 Jul 2002 00:00:35 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6JMs1C01370; Sat, 20 Jul 2002 00:54:01
+    +0200
+Received: from drone4.qsi.net.nz (drone4-svc-skyt.qsi.net.nz
+    [202.89.128.4]) by egwn.net (8.11.6/8.11.6/EGWN) with SMTP id g6JMrRC01146
+    for <rpm-list@freshrpms.net>; Sat, 20 Jul 2002 00:53:27 +0200
+Received: (qmail 16062 invoked by uid 0); 19 Jul 2002 22:53:13 -0000
+Received: from unknown (HELO se7en.org) ([202.89.145.8]) (envelope-sender
+    <mark@talios.com>) by 0 (qmail-ldap-1.03) with SMTP for
+    <rpm-list@freshrpms.net>; 19 Jul 2002 22:53:13 -0000
+Received: from stumpy.se7en.org ([10.0.0.5]) by se7en.org with esmtp (Exim
+    3.35 #1 (Debian)) id 17Vujt-0000uO-00 for <rpm-list@freshrpms.net>;
+    Sun, 21 Jul 2002 01:57:41 +1200
+Subject: Re: Gnome 2
+From: Mark Derricutt <mark@talios.com>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020718140933.5085e03d.hosting@j2solutions.net>
+References: <1024649109.4020.0.camel@localhost.localdomain>
+    <20020718134637.246b4cc0.hosting@j2solutions.net>
+    <1024650397.3546.3.camel@localhost.localdomain>
+    <20020718140933.5085e03d.hosting@j2solutions.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.3 (1.0.3-6)
+Message-Id: <1027119059.10143.3.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 20 Jul 2002 10:50:58 +1200
+Date: 20 Jul 2002 10:50:58 +1200
+
+On Fri, 2002-07-19 at 09:09, Jesse Keating wrote:
+
+> And you think a batch of gnome2 rpms is going to solve that?
+> (no offense)
+
+Not quite, but if I got gnome2 installed, then my guess is that gtk2
+would also be fully installed, which would let me use the new pan.
+
+That and I'd like to try gnome2 anyway.
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

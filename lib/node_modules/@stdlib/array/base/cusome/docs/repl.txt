@@ -1,0 +1,61 @@
+
+{{alias}}( x, n )
+    Cumulatively tests whether at least `n` array elements in a provided array
+    are truthy.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+       Input array.
+
+    n: integer
+       Number of elements.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var x = [ false, false, false, true, true ];
+    > var y = {{alias}}( x, 2 )
+    [ false, false, false, false, true ];
+
+
+{{alias}}.assign( x, n, y, stride, offset )
+    Cumulatively tests whether at least `n` array elements in a provided array
+    are truthy and assigns results to a provided output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    n: integer
+        Number of elements.
+
+    y: ArrayLikeObject
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array offset.
+
+    Returns
+    -------
+    y: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    > var x = [ false, false, false, true, true ];
+    > var y = [ false, null, false, null, false, null, true, null, false ];
+    > var result = {{alias}}.assign( x, 2, y, 2, 0 )
+    [ false, null, false, null, false, null, false, null, true ];
+
+    See Also
+    --------
+

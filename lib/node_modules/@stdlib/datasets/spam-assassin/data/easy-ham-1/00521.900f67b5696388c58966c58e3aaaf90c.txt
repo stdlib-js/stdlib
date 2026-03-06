@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Mon Sep  9 19:27:37 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0FC3616EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 19:27:37 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 19:27:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89EPOC18907 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 15:25:26 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0C4B72942DF; Mon,  9 Sep 2002 07:22:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 7C2012940EC for
+    <fork@xent.com>; Mon,  9 Sep 2002 07:21:16 -0700 (PDT)
+Received: (qmail 23212 invoked by uid 508); 9 Sep 2002 14:24:01 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.112) by
+    venus.phpwebhosting.com with SMTP; 9 Sep 2002 14:24:01 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g89ENvB07381; Mon, 9 Sep 2002 16:23:58 +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Lucas Gonze <lgonze@panix.com>
+Cc: <bitbitch@magnesium.net>, FoRK <fork@spamassassin.taint.org>
+Subject: Re[2]: Selling Wedded Bliss (was Re: Ouch...)
+In-Reply-To: <Pine.LNX.4.44.0209090940550.1695-100000@localhost.localdomain>
+Message-Id: <Pine.LNX.4.33.0209091613360.32400-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 16:23:57 +0200 (CEST)
+
+On Mon, 9 Sep 2002, Lucas Gonze wrote:
+
+> a linearly greater number of sexual partners on the order of 1.5-2X.  But
+> then again, it not a monolithic or homogeneous community.  Who knows?
+
+Did I claim "all gay people are hyperpromiscuous"? For what this is worth,
+I would claim they're considerably more promiscuous on the average than
+your average het. My utterly unscientific, unsubstatiated claim is that
+the typical male would *like* to be considerably more promiscous than your
+average female (ay, and here's the rub. pray don't forget the kleenex).  
+Look up different reproduction strategies, due to basic hardware
+difference (sexual dimorphism). You'd do that too if it happened to you.
+
+Once you go past the first three of four pages of hysterical propaganda on
+Google you might actually run into real studies. Anyone game? I have to 
+work (well, pretend to).
+ 
+> 3K is utter shite.
+
+This is getting better and better. You know 3K is utter shite how? You
+just feel the number can't be right, yes? Deep inside? I'm way overposting
+today, but I find this entire exchange hee-lay-rious. 
+
+

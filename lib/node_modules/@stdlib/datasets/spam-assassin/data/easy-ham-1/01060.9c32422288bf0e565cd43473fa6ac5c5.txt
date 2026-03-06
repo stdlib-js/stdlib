@@ -1,0 +1,71 @@
+From rpm-list-admin@freshrpms.net  Fri Sep  6 11:37:45 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B0AD616F16
+	for <jm@localhost>; Fri,  6 Sep 2002 11:36:24 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 06 Sep 2002 11:36:24 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g869qFC29126 for
+    <jm-rpm@jmason.org>; Fri, 6 Sep 2002 10:52:15 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id AAA19189 for <jm-rpm@jmason.org>;
+    Fri, 6 Sep 2002 00:10:06 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g85N63J14153; Fri, 6 Sep 2002 01:06:03
+    +0200
+Received: from mel-rto4.wanadoo.fr (smtp-out-4.wanadoo.fr [193.252.19.23])
+    by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g85N4hJ13842 for
+    <rpm-list@freshrpms.net>; Fri, 6 Sep 2002 01:04:43 +0200
+Received: from mel-rta9.wanadoo.fr (193.252.19.69) by mel-rto4.wanadoo.fr
+    (6.5.007) id 3D760D0800115165 for rpm-list@freshrpms.net; Fri,
+    6 Sep 2002 01:04:37 +0200
+Received: from kalis.tuxfan.net (80.15.107.216) by mel-rta9.wanadoo.fr
+    (6.5.007) id 3D775B8400054AD0 for rpm-list@freshrpms.net; Fri,
+    6 Sep 2002 01:04:37 +0200
+From: Laurent Papier <papier@tuxfan.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Pb with mplayer-0.90pre7
+Message-Id: <20020906010437.67707f3f.papier@tuxfan.net>
+X-Mailer: Sylpheed version 0.8.2 (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 6 Sep 2002 01:04:37 +0200
+Date: Fri, 6 Sep 2002 01:04:37 +0200
+
+Hi,
+this is my first problem with one of the freshrpms rpms ...
+I just upgrade mplayer and now I get
+
+$ mplayer 
+mplayer: error while loading shared libraries: libdvdnav.so.1: cannot open shared object file: No such file or directory
+
+I guess Matthias has forgotten libdvdnav dependency.
+
+-- 
+They told me I needed WIN95 or better
+So I chose Linux!
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

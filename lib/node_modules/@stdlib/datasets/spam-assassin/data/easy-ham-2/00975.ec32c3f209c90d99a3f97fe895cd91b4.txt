@@ -1,0 +1,69 @@
+From fork-admin@xent.com  Thu Aug  8 14:13:08 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 95C874413D
+	for <jm@localhost>; Thu,  8 Aug 2002 08:32:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:32:55 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CEN201609 for
+    <jm@jmason.org>; Thu, 8 Aug 2002 13:14:23 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id MAA29994 for <jm@jmason.org>; Thu, 8 Aug 2002 12:52:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1199B2940C1; Thu,  8 Aug 2002 04:37:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from imo-m03.mx.aol.com (imo-m03.mx.aol.com [64.12.136.6]) by
+    xent.com (Postfix) with ESMTP id 44AC82940C1 for <fork@xent.com>;
+    Thu,  8 Aug 2002 04:36:21 -0700 (PDT)
+Received: from Grlygrl201@aol.com by imo-m03.mx.aol.com (mail_out_v33.5.)
+    id k.28.2ac3d4c0 (15900); Thu, 8 Aug 2002 07:36:13 -0400 (EDT)
+Received: from  aol.com (mow-m19.webmail.aol.com [64.12.180.135]) by
+    air-id09.mx.aol.com (v86_r1.16) with ESMTP id MAILINID93-0808073613;
+    Thu, 08 Aug 2002 07:36:13 2000
+From: grlygrl201@aol.com
+To: beberg@mithral.com, harley@argote.ch
+Cc: fork@spamassassin.taint.org
+Subject: Re: Hurtage etc.
+Message-Id: <30694522.4584D89B.0F48F476@aol.com>
+X-Mailer: Atlas Mailer 2.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 08 Aug 2002 07:35:09 -0400
+
+In a message dated Wed, 7 Aug 2002 5:17:55 PM Eastern Standard Time, beberg@mithral.com writes:
+
+> 
+> 
+> On Wed, 7 Aug 2002, Robert Harley wrote:
+> 
+> > Hmm... now I have an asymptotically faster precomputation algorithm
+> 
+> Woo, faster is better... But what have you done about all those patents that
+> prevent anyone from going near ECC in the first place, 
+> hmmmmmm?
+> 
+> - Adam L. "Duncan" Beberg
+
+Something tells me Adam's security blanket was very wet and that Adam had a propensity for throwing it on his stuffed animals.
+
+Geege
+
+
+http://xent.com/mailman/listinfo/fork
+
+

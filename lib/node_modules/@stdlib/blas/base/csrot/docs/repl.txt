@@ -1,0 +1,136 @@
+
+{{alias}}( N, x, strideX, y, strideY, c, s )
+    Applies a plane rotation.
+
+    The `N` and stride parameters determine how values in the strided arrays are
+    accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N` is less than or equal to `0`, the vectors are unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Complex64Array
+        First input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    y: Complex64Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    c: number
+        Cosine of the angle of rotation.
+
+    s: number
+        Sine of the angle of rotation.
+
+    Returns
+    -------
+    y: Complex64Array
+        Input array `y`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}( x.length, x, 1, y, 1, 0.8, 0.6 );
+    > x
+    <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2 ]
+    > y
+    <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+    > y = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}( 2, x, -2, y, 1, 0.8, 0.6 );
+    > x
+    <Complex64Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
+    > y
+    <Complex64Array>[ -3.0, ~-3.6, ~-0.6, ~-1.2, 0.0, 0.0, 0.0, 0.0 ]
+
+    // Using typed array views:
+    > var x0 = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var y0 = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > var x1 = new {{alias:@stdlib/array/complex64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/complex64}}( y0.buffer, y0.BYTES_PER_ELEMENT*2 );
+    > {{alias}}( 1, x1, 1, y1, 1, 0.8, 0.6 );
+    > x0
+    <Complex64Array>[ 1.0, 2.0, ~2.4, ~3.2, 5.0, 6.0 ]
+    > y0
+    <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, ~-1.8, ~-2.4 ]
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, c, s )
+    Applies a plane rotation using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Complex64Array
+        First input array.
+
+    strideX: integer
+        Index increment for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    y: Complex64Array
+        Second input array.
+
+    strideY: integer
+        Index increment for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    c: number
+        Cosine of the angle of rotation.
+
+    s: number
+        Sine of the angle of rotation.
+
+    Returns
+    -------
+    y: Complex64Array
+        Input array `y`.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0, 0.8, 0.6 );
+    > x
+    <Complex64Array>[ ~0.8, ~1.6, ~2.4, ~3.2 ]
+    > y
+    <Complex64Array>[ ~-0.6, ~-1.2, ~-1.8, ~-2.4 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/complex64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/complex64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( 1, x, 2, 1, y, 2, 1, 0.8, 0.6 );
+    > x
+    <Complex64Array>[ 1.0, 2.0, ~2.4, ~3.2, 5.0, 6.0 ]
+    > y
+    <Complex64Array>[ 0.0, 0.0, ~-1.8, ~-2.4, 0.0, 0.0 ]
+
+    See Also
+    --------
+

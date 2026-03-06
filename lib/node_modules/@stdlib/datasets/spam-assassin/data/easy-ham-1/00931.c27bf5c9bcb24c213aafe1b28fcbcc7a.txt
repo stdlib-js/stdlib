@@ -1,0 +1,418 @@
+From fork-admin@xent.com  Wed Aug 28 10:50:30 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B246644158
+	for <jm@localhost>; Wed, 28 Aug 2002 05:50:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:50:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7RM2tZ27575 for <jm@jmason.org>;
+    Tue, 27 Aug 2002 23:02:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6595D2940EA; Tue, 27 Aug 2002 15:00:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from alumnus.caltech.edu (alumnus.caltech.edu [131.215.49.51])
+    by xent.com (Postfix) with ESMTP id CB93729409A; Tue, 27 Aug 2002 14:59:09
+    -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1]) by alumnus.caltech.edu
+    (8.12.3/8.12.3) with ESMTP id g7RM0Gfw020877; Tue, 27 Aug 2002 15:00:17
+    -0700 (PDT)
+Subject: DataPower announces XML-in-silicon
+Content-Type: text/plain; charset=WINDOWS-1252; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+From: Rohit Khare <khare@alumni.caltech.edu>
+To: fork@spamassassin.taint.org
+Message-Id: <5D5CC294-BA08-11D6-837F-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 27 Aug 2002 15:00:13 -0700
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g7RM2tZ27575
+
+No analysis yet... don't know what to make of it yet. But here's the raw 
+bits for all to peruse and check out what's really going on... Best, 
+Rohit
+
+===========================================================
+
+DataPower delivers XML acceleration device
+By Scott Tyler Shafer
+August 27, 2002 5:46 am PT
+
+DATAPOWER TECHNOLOGY ON Monday unveiled its network device designed 
+specifically to process XML data. Unlike competing solutions that 
+process XML data in software, DataPower's device processes the data in 
+hardware -- a technology achievement that provides greater performance, 
+according to company officials.
+
+The new device, dubbed DataPower XA35 XML Accelerator, is the first in a 
+family of products expected from the Cambridge, Mass.-based startup. The 
+DataPower family is based on a proprietary processing core technology 
+called XG3 that does the analysis, parsing, and processing of the XML 
+data.
+
+According to Steve Kelly, CEO of DataPower, the XA35 Accelerator was 
+conceived to meet the steady adoption of XML, the anticipated future 
+proliferation of Web services, and as a means to share data between two 
+businesses.
+
+"Our vision is to build out an XML-aware infrastructure," Kelly said. 
+"The XA35 is the first of a family."
+
+Kelly explained that converting data into XML increases the file size up 
+to 20 times. This, he said, makes processing the data very taxing on 
+application servers; DataPower believes an inline device is the best 
+alternative.
+
+In addition to the large file sizes, security is also of paramount 
+importance in the world of XML.
+
+"Today's firewalls are designed to inspect HTTP traffic only," Kelly 
+said. "A SOAP packet with XML will go straight through a firewall. 
+Firewalls are blind to XML today."
+
+Future products in DataPowers family will focus more specifically on 
+security, especially as Web services proliferate, Kelly said.
+
+According to DataPower, most existing solutions to offload XML 
+processing are homegrown and done in software -- an approach the company 
+itself tried initially and found to be inadequate with regards to speed 
+and security. After trying the software path, the company turned to 
+creating a solution that would process XML in hardware.
+
+"Our XG3 execution core converts XML to machine code," said Kelly, 
+adding that to his knowledge no other company's solution does. Kelly 
+said in the next few months he expects the market to be flooded with 
+technologies that claim to do XML processing -- claims that he believes 
+will be mostly false.
+Other content-aware switches, such as SSL (secure socket layer) 
+accelerators and load balancers, look at the first 64 bytes of a packet, 
+while the XA35 provides deeper packet inspection, looking at 1,400 bytes 
+and thus enabling greater processing of XML data, Kelly explained.
+
+The 1U-high network device has been tested against a large collection of 
+XML and XSL data types and can learn new flavors of the markup language 
+as they pass through the device.
+
+The XA35 can be deployed in proxy mode behind a firewall and a load 
+balancer, and it will inspect all traffic that passes and will identify 
+and process those packets that are XML, Kelly said.
+
+In addition to proxy mode, the device can also be used as an application 
+co-processor. This deployment method gives administrators more granular 
+control over what data is inspected and the application server itself 
+controls the device.
+
+DataPower is not the only company chasing this emerging market. Startup 
+Sarvega, based in Burr Ridge, Ill., introduced the Sarvega XPE switch in 
+May, and earlier this month Tarari, an Intel spin-off, launched with a 
+focus on content processing and acceleration.
+The DataPower device is now available, priced starting at $54,995. The 
+company has announced one customer to date and says the product is in 
+field trails at a number of other enterprises.
+
+=========================================================================
+
+DataPower has been addressing enterprise networking needs since it was 
+founded in early 1999 by Eugene Kuznetsov, a technology visionary who 
+foresaw the adverse effects XML and other next generation protocols 
+would have on enterprise networks. Long before industry interest in XML 
+grew, Kuznetsov assembled a team of world-class M.I.T. engineers and 
+designed the industry's first solutions to address the unique 
+requirements for processing XML. The first such solution was a software 
+interpreter called DGXT. This software-based approach to XML processing 
+is still licensed by many companies for use in their own products today.
+
+Leveraging the detailed knowledge and customer experience gained from 
+developing software-based accelerators, Kuznetsov's team raised the bar 
+and designed a system for processing XML in purpose-built hardware. In 
+2001, DataPower's effort produced XML Generation Three (XG3™), the 
+industry's fastest technology for XML processing, bar none.
+
+Today, XG3™ technology powers the industry's first wire-speed XML 
+network devices, enabling secure, high-speed applications and XML Web 
+Services. While other companies are just now marketing first versions of 
+products, DataPower is delivering its third generation of technology, 
+providing an immediate return on technology investments to 
+industry-leading customers and partners.
+
+DataPower's M.I.T. heritage is complemented by a management team that 
+brings decades of experience in the networking and computing industries, 
+drawing veteran leaders from several successful companies including 
+Akamai, Argon, Cascade, Castle Networks, Sycamore and Wellfleet.
+
+=========================================================================
+
+DataPower Technology Secures $9.5 Million in Funding
+
+Venrock Associates, Mobius Venture Capital and Seed Capital Back Pioneer 
+in XML-Aware Networking for Web Services
+
+CAMBRIDGE, Mass. - July 8, 2002 - DataPower Technology, Inc., the 
+leading provider of XML-Aware network infrastructure, today announced 
+that it has secured $9.5 million in series B financing. Investors for 
+this round include Venrock Associates, Mobius Venture Capital and Seed 
+Capital Partners. Michael Tyrrell, of Venrock, Bill Burnham, of Mobius, 
+and Jeff Fagnan, of Seed Capital, have joined DataPower’s Board of 
+Directors.
+
+DataPower will use this funding to accelerate development, marketing and 
+sales of the company’s breakthrough technology for XML-Aware networking. 
+Founded in 1999, DataPower invented the world’s first intelligent XML 
+networking devices, capable of transforming XML traffic and transactions 
+at the wire-speed enterprises need to effectively embrace Web services 
+and other XML-centric initiatives. DataPower’s solutions are based on 
+its patent-pending XML Generation Three (XG3™) technology.
+
+"Enterprises are adopting XML at rapid rate to facilitate inter-and 
+intra-company communications but their network infrastructure is ill 
+prepared to support the requirements of this new traffic type. 
+DataPower’s XML-acceleration devices enable the wirespeed processing of 
+XML that is required to support next generation enterprise 
+applications," said Eugene Kuznetsov, CTO and founder of DataPower 
+Technology.
+
+"DataPower gives companies the ability to use XML that’s critical to Web 
+services projects without sacrificing an ounce of performance." A single 
+DataPower acceleration engine delivers the processing power of 10 
+servers—breaking the performance bottleneck associated with XML 
+processing and delivering an extraordinary return on investment. In 
+addition, the DataPower platform provides enhanced XML security, 
+protection against XML-based denial-of-service attacks, connection of 
+e-business protocols for incompatible XML data streams, load balancing 
+between back-end servers and real-time statistics reports.
+
+"In the post-bubble economy, technology investment decisions require 
+laser-focused scrutiny. DataPower’s patent-pending technology addresses 
+a very real and growing pain point for enterprises," said Michael 
+Tyrrell of Venrock Associates. "By turbo-charging their networks with 
+DataPower’s unique XML-Aware networking technology, companies will be 
+free to adopt next generation Web services without encountering 
+performance and security pitfalls."
+
+"We looked long and hard for a company capable of addressing the rapidly 
+growing problems surrounding XML message processing performance and 
+security," said Bill Burnham of Mobius Venture Capital. "DataPower is on 
+their third generation of technology. Their patent pending XML 
+Generation Three (XG3) technology was quite simply the single most 
+compelling technology solution we have seen to date."
+
+"XML is not a nice-to-have, it is a must have for enterprises serious 
+about optimizing application efficiency. Since 1999, DataPower has been 
+developing solutions to facilitate enterprise use of XML and Web 
+services," said Jeff Fagnan of Seed Capital Partners. "DataPower’s 
+XML-acceleration devices are a key requirement for enterprises that rely 
+on XML for mission critical applications."
+
+About Venrock Associates
+Venrock Associates was founded as the venture capital arm of the 
+Rockefeller Family and continues a tradition of funding entrepreneurs 
+that now spans over seven decades. Laurance S. Rockefeller pioneered 
+early stage venture financing in the 1930s. With over 300 investments 
+over a span of more than 70 years, the firm has an established a track 
+record of identifying and supporting promising early stage, technology- 
+based enterprises. As one of most experienced venture firms in the 
+United States, Venrock maintains a tradition of collaboration with 
+talented entrepreneurs to establish successful, enduring companies. 
+Venrock's continuing goal is to create long-term value by assisting 
+entrepreneurs in building companies from the formative stages. Their 
+consistent focus on Information Technology and Life Sciences-related 
+opportunities provides a reservoir of knowledge and a network of 
+contacts that have proven to be a catalyst for the growth of developing 
+organizations. Venrock's investments have included CheckPoint Software, 
+USinternetworking, Caliper Technologies, Illumina, Niku, DoubleClick, 
+Media Metrix, 3COM, Intel, and Apple Computer. With offices in New York 
+City, Cambridge, MA, and Menlo Park, CA, Venrock is well positioned to 
+respond to opportunities in any locale. For more information on Venrock 
+Associates, please visit www.venrock.com
+
+About Mobius Venture Capital
+Mobius Venture Capital, formerly SOFTBANK Venture Capital, is a $2.5 
+billion U.S.-based private equity venture capital firm managed by an 
+unparalleled team of former CEOs and entrepreneurs, technology pioneers, 
+senior executives from major technology corporations, and leaders from 
+the investment banking community. Mobius Venture Capital specializes 
+primarily in early-stage investments in the areas of: communications 
+systems software and services; infrastructure software and services; 
+professional services; enterprise applications; healthcare informatics; 
+consumer and small business applications; components; and emerging 
+technologies. Mobius Venture Capital combines its technology expertise 
+and broad financial assets with the industry's best entrepreneurs to 
+create a powerhouse portfolio of over 100 of the world's leading high 
+technology companies. Mobius Venture Capital can be contacted by 
+visiting their web site www.mobiusvc.com.
+
+About Seed Capital Partners
+Seed Capital Partners is an early-stage venture fund affiliated with 
+SoftBank Corporation, one of the world's leading Internet market forces. 
+Seed Capital manages funds focused primarily on companies addressing 
+Internet-enabled business-to-business digital information technology 
+opportunities, which are located in the Northeastern U.S., the 
+southeastern region of the Province of Ontario, Canada, and Israel. Seed 
+Capital’s portfolio includes Spearhead Technologies, Concentric Visions 
+and CompanyDNA. For more information on Seed Capital Partners, please 
+visit www.seedcp.com.
+
+About DataPower Technology
+DataPower Technology provides enterprises with intelligent XML-Aware 
+network infrastructure to ensure unparalleled performance, security and 
+manageability of next-generation protocols. DataPower’s patent-pending 
+XML Generation Three (XG3™) technology powers the industry’s first 
+wirespeed XML network devices, enabling secure, high-speed applications 
+and XML Web Services. Founded in 1999, DataPower is now delivering its 
+third generation of technology, providing immediate return on technology 
+investments to industry-leading customers and partners. DataPower is 
+privately held and based in Cambridge, MA. Investors include Mobius 
+Venture Capital, Seed Capital Partners, and Venrock Associates.
+
+CONTACT:
+
+DataPower Technology, Inc.
+Kieran Taylor
+617-864-0455
+kieran@datapower.com
+
+Schwartz Communications
+John Moran/Heather Chichakly
+781-684-0770
+datapower@schwartz-pr.com
+
+========================================================================
+
+Steve Kelly, chairman and CEO
+
+During over twenty years in the technology industry, Steve Kelly has 
+built and managed global enterprise networks, provided consulting 
+services to Fortune 50 businesses, and been involved in the launch of 
+several start-ups. Prior to DataPower, Kelly was an 
+entrepreneur-in-residence at Venrock Associates, and was co-founder of 
+Castle Networks, where he led the company's sales, service and marketing 
+functions. Castle was acquired by Siemens AG in 1999 to create Unisphere 
+Networks, which was subsequently purchased by Juniper Networks. Kelly 
+was an early contributor at Cascade Communications, where he built and 
+managed the company's core switching business; Cascade's annual revenues 
+grew from $2 million to $300 million annually during Kelly's tenure. 
+Kelly also worked at Digital Equipment Corporation where he managed and 
+grew their corporate network to 50,000+ nodes in 28 countries, the 
+largest in the world at the time. Kelly has a B.S. in Information 
+Systems from Bentley College.
+
+Eugene Kuznetsov, founder, president and CTO
+
+Eugene Kuznetsov is a technology visionary that has been working to 
+address enterprise XML issues since the late 90s. Kuznetsov founded 
+DataPower Technology, Inc. in 1999 to provide enterprises with an 
+intelligent, XML-aware network infrastructure to support next-generation 
+applications. Prior to starting DataPower, Kuznetsov led the Java JIT 
+Compiler effort for Microsoft Internet Explorer for Macintosh 4.0. He 
+was also part of the team which developed one of the first clean room 
+Java VM's. This high-speed runtime technology was licensed by some of 
+the industry's largest technology companies, including Apple Computer. 
+He has consulted to numerous companies and worked on a variety of 
+hardware and software engineering problems in the areas of memory 
+management, power electronics, optimized execution engines and 
+application integration. Kuznetsov holds a B.S. in electrical 
+engineering from MIT.
+
+Steve Willis, vice president of advanced technology
+
+Steve Willis is an accomplished entrepreneur and a pioneer in protocol 
+optimization. Prior to joining DataPower, Willis was co-founder and CTO 
+of Argon Networks, a provider of high-performance switching routers that 
+was acquired by Siemens AG in 1999 to create Unisphere Networks; 
+Unisphere was subsequently purchased by Juniper Networks. Before Argon, 
+Steve was vice president of advanced technology at Bay Networks (now 
+Nortel Networks) where he led both IP and ATM-related technology 
+development and managed a group that generated 24 patent applications, 
+developed a 1 Mbps forwarding engine and led the specification of the 
+ATM Forum's PNNI routing protocol. Most notably, Steve was co-founder, 
+original software director and architect for Wellfleet Communications, a 
+leading pioneer of multi-protocol routers. Wellfleet was rated as the 
+fastest growing company in the U.S. for two consecutive years by Fortune 
+magazine. Willis is currently a member of the Institute of Electrical 
+and Electronics Engineers (IEEE) and the Internet Research Task Force 
+(IRTF) Routing Research Group. Willis has a B.D.I.C. in Computer Science 
+from the University of Massachusetts.
+
+Bill Tao, vice president of engineering
+
+With a vast understanding of network optimization technologies and 
+extensive experience in LAN and WAN networking, Bill Tao brings over 25 
+years of critical knowledge to lead DataPower's engineering efforts. 
+Prior to DataPower, Tao was the vice president of engineering for 
+Sycamore Networks, developing a family of metro/regional optical network 
+switches. He is also well acquainted with network optimization 
+techniques as he was previously vice president of engineering at 
+InfoLibria, where he led development and software quality assurance 
+engineering for a family of network caching products. Tao has held 
+senior engineering positions at NetEdge, Proteon, Codex and Wang. Tao 
+received a B.S. in Electrical Engineering from the University of 
+Connecticut and an M.S. in Computer Science from the University of 
+Illinois.
+
+Kieran Taylor, director of product marketing
+
+Kieran Taylor has an accomplished record as a marketing professional, 
+industry analyst and journalist. Prior to joining DataPower, Taylor was 
+the director of product management and marketing for Akamai Technologies 
+(NASDAQ: AKAM). As an early contributor at Akamai, he helped develop the 
+company's initial positioning and led the technical development and 
+go-to-market activities for Akamai's flagship EdgeSuite service. 
+Taylor's early contribution helped position the service provider to 
+secure a $12.6 billion IPO. He has also held senior marketing management 
+positions at Nortel Networks, Inc. and Bay Networks. Taylor was 
+previously an analyst at TeleChoice, Inc. and the Wide Area Networks 
+editor for Data Communications, a McGraw Hill publication. Taylor holds 
+a B.A. in Print Journalism from the Pennsylvania State University School 
+of Communications.
+
+=================================================================
+Board of Advisors
+
+Mark Hoover
+Mark Hoover is President and co-founder of Acuitive, Inc., a start-up 
+accelerator. With over 20 years experience in the networking industry, 
+Hoover's expertise spans product development, marketing, and business 
+development. Before launching Acuitive, Hoover worked at AT&T Bell 
+Laboratories, AT&T Computer Systems, SynOptics, and Bay Networks, where 
+he played a role in the development of key technologies, such as 
+10-BASET, routing, FDDI, ATM, Ethernet switching, firewall, Internet 
+traffic management, and edge WAN switch industries.
+
+George Kassabgi
+Currently Vice President of Engineering at BEA Systems, Mr. Kassabgi has 
+held executive-level positions in engineering, sales and marketing, and 
+has spearheaded leading-edge developments in the application server 
+marketplace since 1996. He is widely known for his regular speaking 
+engagements at JavaOne, as well as columns and contributions in JavaPro, 
+Java Developer's Journal and other publications. In addition to being a 
+venerated Java expert, George Kassabgi holds a patent on SmartObject 
+Technology, and authored the technical book Progress V8.
+
+Marshall T. Rose
+Marshall T. Rose runs his own firm, Dover Beach Consulting, Inc. He 
+formerly held the position of the Internet Engineering Task Force (IETF) 
+Area Director for Network Management, one of a dozen individuals who 
+oversaw the Internet's standardization process. Rose is the author of 
+several professional texts on subjects such as Internet Management, 
+Electronic Mail, and Directory Services, which have been published in 
+four languages. He is well known for his implementations of core 
+Internet technologies (such as POP, SMTP, and SNMP) and OSI technologies 
+(such as X.500 and FTAM). Rose received a PhD in Information and 
+Computer Science from the University of California, Irvine, in 1984.
+
+

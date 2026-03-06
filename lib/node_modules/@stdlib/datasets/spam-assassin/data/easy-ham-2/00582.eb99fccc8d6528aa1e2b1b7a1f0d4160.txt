@@ -1,0 +1,103 @@
+From razor-users-admin@lists.sourceforge.net  Wed Aug  7 09:09:59 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D7FE9440C8
+	for <jm@localhost>; Wed,  7 Aug 2002 04:09:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 09:09:58 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7786ek16649 for <jm-razor@jmason.org>; Wed, 7 Aug 2002 09:06:40 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cLjg-00077d-00; Wed,
+    07 Aug 2002 01:00:04 -0700
+Received: from adsl-64-171-13-166.dsl.sntc01.pacbell.net ([64.171.13.166]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17cLjZ-0001cL-00 for
+    <razor-users@lists.sourceforge.net>; Wed, 07 Aug 2002 00:59:57 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g777xro01575; Wed, 7 Aug 2002 00:59:53 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: Marc Perkel <marc@perkel.com>
+Cc: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] False Positives on EFF Messages
+Message-Id: <20020807005953.B1213@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: Marc Perkel <marc@perkel.com>,
+	razor-users@lists.sf.net
+References: <3D4B0146.20604@perkel.com>
+    <20020802151150.A23016@rover.vipul.net> <3D4B0615.1010500@perkel.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <3D4B0615.1010500@perkel.com>; from marc@perkel.com on Fri,
+    Aug 02, 2002 at 03:22:13PM -0700
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Wed, 7 Aug 2002 00:59:53 -0700
+Date: Wed, 7 Aug 2002 00:59:53 -0700
+
+Marc,
+
+The likelyhood of EFF or other mailing lists getting filtered will
+decrease over time as these mails are revoked whenever they get filtered
+out. Revocations help the system to punish reporters who report legit bulk
+mail such that their future reports are automatically considered suspect.
+As such, with all the new changes to TeS, the likelyhood of filtering
+mailing list posts has decreased dramatically. Please keep me posted if
+you see false positives on the EFF newsletter again.
+
+cheers,
+vipul.
+
+On Fri, Aug 02, 2002 at 03:22:13PM -0700, Marc Perkel wrote:
+> Thanks - but it almost looks like someone is deliberately trying to
+> poison EFF messages. If this is so I want to look into it. It's odd that
+> most all the razor errors were people talking about free speech issies
+> and intellectual property. It make me wonder if someone is doing
+> something on purpose.
+>
+> I am also active in the development of Spam Assassin rules. Spam
+> filtering has been a hot topic at EFF for quite some time and is even
+> hotter now that I'm actually using it. For what it's worth - your system
+> is considered to be the cleanest method - but with any system, people at
+> EFF are concerned about free speech issues and that spam filtering can
+> become a censorship issue. One of our newsletters got flagged as spam
+> because it had list removal instructions at the bottom.
+
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

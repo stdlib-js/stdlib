@@ -1,0 +1,45 @@
+From jm@jmason.org  Wed Aug 28 10:45:59 2002
+Return-Path: <yyyy@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BA90F44156
+	for <jm@localhost>; Wed, 28 Aug 2002 05:45:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:45:28 +0100 (IST)
+Received: (from apache@localhost) by dogma.slashnull.org (8.11.6/8.11.6)
+    id g7RNBat30404; Wed, 28 Aug 2002 00:11:36 +0100
+X-Authentication-Warning: dogma.slashnull.org: apache set sender to
+    jmmail@jmason.org using -f
+Received: from 194.125.220.138 (SquirrelMail authenticated user yyyymail) by
+    jmason.org with HTTP; Wed, 28 Aug 2002 00:11:36 +0100 (IST)
+Message-Id: <33038.194.125.220.138.1030489896.squirrel@spamassassin.taint.org>
+Date: Wed, 28 Aug 2002 00:11:36 +0100 (IST)
+Subject: Re: [SAdev] SpamAssassin POP3 proxy
+From: "Justin Mason" <yyyy@spamassassin.taint.org>
+To: quinlan@pathname.com
+In-Reply-To: <yf24rdgkmbk.fsf@proton.pathname.com>
+References: <yf24rdgkmbk.fsf@proton.pathname.com>
+Cc: yyyy@spamassassin.taint.org, msergeant@startechgroup.co.uk,
+	spamassassin-devel@lists.sourceforge.net
+X-Mailer: SquirrelMail (version 1.0.6)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+
+
+> I would be in favor of creating new SpamAssassin CVS modules and
+> Bugzilla categories for other clients (provided there is sufficient
+> interest and a maintainer).
+
+yeah, I'd be with that -- as long as they have a maintainer ;)
+
+however regarding CVS, I'd say many projects might find it easier
+to just sign up as a new proj with sf.net -- it might save them having
+to go through us (not sure, depends on what sf.net's procedures
+are like).
+
+--j.
+
+
+

@@ -1,0 +1,56 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Fri Sep  6 18:35:55 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 13:35:55 -0400
+Subject: [Spambayes] Deployment
+In-Reply-To: <15736.55193.38098.486459@slothrop.zope.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCKEIHBCAB.tim.one@comcast.net>
+
+[Jeremy Hylton]
+> I think one step towards deployment is creating a re-usable tokenizer
+> for mail messages.  The current codebase doesn't expose an easy-to-use
+> or easy-to-customize tokenizer.
+
+tokenize() couldn't be easier to use:  it takes a string argument, and
+produces a stream of tokens (whether via explicit list, or generator, or
+tuple, or ... doesn't matter).  All the tokenize() functions in GBayes.py
+and timtest.py are freely interchangeable this way.
+
+Note that we have no evidence to support that a customizable tokenizer would
+do any good, or, if it would, in which ways customization could be helpful.
+That's a research issue on which no work has been done.
+
+> The timtest module seems to contain an enormous body of practical
+> knowledge about how to parse mail messages, but the module wasn't
+> designed for re-use.
+
+That's partly a failure of imagination <wink>.  Splitting out all knowledge
+of tokenization is just a large block cut-and-paste ... there, it's done.
+Change the
+
+    from timtoken import tokenize
+
+at the top to use any other tokenizer now.  If you want to make it easier
+still, feel free to check in something better.
+
+> I'd like to see a module that can take a single message or a collection of
+> messages and tokenize each one.
+
+The Msg and MsgStream classes in timtest.py are a start at that, but it's
+hard to do anything truly *useful* here when people use all sorts of
+different physical representations for email msgs (mboxes in various
+formats, one file per "folder", one file per msg, Skip's gzipped gimmick,
+...).  If you're a Python coder <wink>, you *should* find it very easy to
+change the guts of Msg and MsgStream to handle your peculiar scheme.
+Defining interfaces for these guys should be done.
+
+> I'd like to see the tokenize by customizable, too.  Tim had to exclude
+> some headers from his test data, because there were particular biases
+> in the test data.  If other people have test data without those
+> biases, they ought to be able to customize the tokenizer to include
+> them or exclude others.
+
+This sounds like a bottomless pit to me, and there's no easier way to
+customize than to edit the code.  As README.txt still says, though, massive
+refactoring would help.  Hop to it!
+

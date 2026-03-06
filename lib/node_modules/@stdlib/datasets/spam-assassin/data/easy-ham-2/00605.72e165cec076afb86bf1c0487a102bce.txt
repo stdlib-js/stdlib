@@ -1,0 +1,125 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:38:28 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5D0C8440F6
+	for <jm@localhost>; Fri,  9 Aug 2002 10:34:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:34:19 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EVSb07597 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:31:28 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id AAA01952 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 00:02:55 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cwDI-0007uf-00; Thu,
+    08 Aug 2002 15:57:04 -0700
+Received: from h-66-166-21-186.snvacaid.covad.net ([66.166.21.186]
+    helo=rover.vipul.net) by usw-sf-list1.sourceforge.net with esmtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17cwDC-0005yM-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 08 Aug 2002 15:56:58 -0700
+Received: (from vipul@localhost) by rover.vipul.net (8.11.6/8.11.6) id
+    g78MuvG06077 for razor-users@lists.sourceforge.net; Thu, 8 Aug 2002
+    15:56:57 -0700
+From: Vipul Ved Prakash <mail@vipul.net>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] What's wrong with the Razor servers now?
+Message-Id: <20020808155657.A6008@rover.vipul.net>
+Reply-To: mail@vipul.net
+Mail-Followup-To: razor-users@example.sourceforge.net
+References: <20020808204451.GC1767@darkridge.com>
+    <AE80AB20-AB1C-11D6-BCF2-00039396ECF2@deersoft.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <AE80AB20-AB1C-11D6-BCF2-00039396ECF2@deersoft.com>;
+    from craig@deersoft.com on Thu, Aug 08, 2002 at 03:17:52PM -0700
+X-Operating-System: Linux rover.vipul.net 2.4.18
+X-Privacy: If possible, encrypt your reply.  Key at http://vipul.net/
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 15:56:57 -0700
+Date: Thu, 8 Aug 2002 15:56:57 -0700
+
+Craig, 
+
+The problems with missing hashes are being addressed I write this. It
+should be fixed soon and it has nothing to do with TeS algorithms.
+
+cheers,
+vipul.
+
+On Thu, Aug 08, 2002 at 03:17:52PM -0700, Craig R . Hughes wrote:
+> I'm talking specifically about the last ~24 hours where it seems 
+> like things have not been working.  People who've been using the 
+> Outlook plugin have been telling me they've been seeing really 
+> bad performance, which I've been attributing to the problems 
+> which have been discussed here and on sa-talk.  I'm not saying 
+> it's completely not working, or that it has no chance of being 
+> fixed 15 minutes from now, just that it's not currently working, 
+> and there have been a number of "hiccup" periods in the last 
+> couple months.  Plus, it's hard to deny that we don't know yet 
+> if the trust network is going to work or not -- it only just got 
+> switched on, and that changeover seems to have corresponded with 
+> people noticing things have stopped working right.
+> 
+> C
+> 
+> On Thursday, August 8, 2002, at 01:44  PM, Jordan Ritter wrote:
+> 
+> > On Thu, Aug 08, 2002 at 01:36:15PM -0700, Craig R.Hughes wrote:
+> >
+> > # Razor2 seems to have been a long time in coming, [...] and doesn't
+> > # currently work.
+> >
+> > Quite a strong statement, Craig, one which over 30,000 active users a
+> > day would strongly disagree with.
+> >
+> >
+> > --jordan
+> >
+> 
+> 
+> 
+> -------------------------------------------------------
+> This sf.net email is sponsored by:ThinkGeek
+> Welcome to geek heaven.
+> http://thinkgeek.com/sf
+> _______________________________________________
+> Razor-users mailing list
+> Razor-users@lists.sourceforge.net
+> https://lists.sourceforge.net/lists/listinfo/razor-users
+
+-- 
+
+Vipul Ved Prakash          |   "The future is here, it's just not 
+Software Design Artist     |    widely distributed."
+http://vipul.net/          |              -- William Gibson
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

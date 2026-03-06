@@ -1,0 +1,84 @@
+
+{{alias}}( x, a, b, c )
+    Evaluates the cumulative distribution function (CDF) for a triangular
+    distribution with minimum support `a`, maximum support `b`, and mode `c` at
+    a value `x`.
+
+    If the condition `a <= c <= b` is not satisfied, the function returns `NaN`.
+
+    If either `a`, `b`, or `c` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    c: number
+        Mode.
+
+    Returns
+    -------
+    out: number
+        Evaluated CDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, -1.0, 1.0, 0.0 )
+    0.875
+    > y = {{alias}}( 0.5, -1.0, 1.0, 0.5 )
+    0.75
+    > y = {{alias}}( -10.0, -20.0, 0.0, -2.0 )
+    ~0.278
+    > y = {{alias}}( -2.0, -1.0, 1.0, 0.0 )
+    0.0
+    > y = {{alias}}( NaN, 0.0, 1.0, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0, 0.5 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, 1.0, 0.0, NaN )
+    NaN
+    > y = {{alias}}( 2.0, 1.0, 0.0, 1.5 )
+    NaN
+
+
+{{alias}}.factory( a, b, c )
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    of a triangular distribution with minimum support `a`, maximum support `b`,
+    and mode `c`.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    c: number
+        Mode.
+
+    Returns
+    -------
+    cdf: Function
+        Cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var mycdf = {{alias}}.factory( 0.0, 10.0, 2.0 );
+    > var y = mycdf( 0.5 )
+    0.0125
+    > y = mycdf( 8.0 )
+    0.95
+
+    See Also
+    --------
+
+

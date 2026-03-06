@@ -1,0 +1,58 @@
+
+{{alias}}( file[, options], clbk )
+    Asynchronously reads a file as WebAssembly.
+
+    The function returns file contents as a Uint8Array.
+
+    Parameters
+    ----------
+    file: string|Buffer|integer
+        Filename or file descriptor.
+
+    options: Object (optional)
+        Options.
+
+    options.flag: string (optional)
+        Flag. Default: 'r'.
+
+    clbk: Function
+        Callback to invoke upon reading file contents.
+
+    Examples
+    --------
+    > function onRead( error, data ) {
+    ...     if ( error ) {
+    ...         console.error( error.message );
+    ...     } else {
+    ...         console.log( data );
+    ...     }
+    ... };
+    > {{alias}}( './beep/boop.wasm', onRead );
+
+
+{{alias}}.sync( file[, options] )
+    Synchronously reads a file as WebAssembly.
+
+    Parameters
+    ----------
+    file: string|Buffer|integer
+        Filename or file descriptor.
+
+    options: Object (optional)
+        Options.
+
+    options.flag: string (optional)
+        Flag. Default: 'r'.
+
+    Returns
+    -------
+    out: Error|Uint8Array
+        File contents.
+
+    Examples
+    --------
+    > var out = {{alias}}.sync( './beep/boop.wasm' );
+
+    See Also
+    --------
+

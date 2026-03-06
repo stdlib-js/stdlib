@@ -1,0 +1,33 @@
+
+{{alias}}( a, b )
+    Returns the variance of a uniform distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `a >= b`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    Returns
+    -------
+    out: number
+        Variance.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.0, 1.0 )
+    ~0.083
+    > v = {{alias}}( 4.0, 12.0 )
+    ~5.333
+    > v = {{alias}}( 2.0, 8.0 )
+    3.0
+
+    See Also
+    --------
+

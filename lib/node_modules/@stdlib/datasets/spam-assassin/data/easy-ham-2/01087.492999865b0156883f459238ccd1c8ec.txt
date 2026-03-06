@@ -1,0 +1,123 @@
+From fork-admin@xent.com  Tue Aug 20 11:53:39 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BC86243C43
+	for <jm@localhost>; Tue, 20 Aug 2002 06:52:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:52:11 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7K0iGZ18333 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 01:44:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 9E96B294136; Mon, 19 Aug 2002 17:42:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from axiom.braindust.com (axiom.braindust.com [64.69.71.79]) by
+    xent.com (Postfix) with ESMTP id 2D41B29409D for <fork@xent.com>;
+    Mon, 19 Aug 2002 17:41:30 -0700 (PDT)
+X-Envelope-To: fork@spamassassin.taint.org
+Received: from localhost (194125.aebc.com [209.53.194.125]) (authenticated
+    (0 bits)) by axiom.braindust.com (8.12.5/8.11.6) with ESMTP id
+    g7K0fpeH004384 (using TLSv1/SSLv3 with cipher EDH-RSA-DES-CBC3-SHA (168
+    bits) verified NO); Mon, 19 Aug 2002 17:41:59 -0700
+Subject: Re: sprint delivers the next big thing??
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: Rob Shavell <rob@mobiusvc.com>, fork@spamassassin.taint.org
+To: "Joseph S. Barrera III" <joe@barrera.org>
+From: Ian Andrew Bell <fork@ianbell.com>
+In-Reply-To: <3D60DEC6.6020306@barrera.org>
+Message-Id: <220DE45B-B3D5-11D6-8BCA-0030657C53EA@ianbell.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 19 Aug 2002 17:38:23 -0700
+
+I can't see it either.
+
+I do however disagree with Joe in that it needs to be 2+MPixels to 
+be useful.  Value is not always necessarily defined by quality 
+(just look at 802.11).
+
+If I had a self-contained communications unit that let me share 
+things: documents, the weather, my new hairdo, by newborn baby, 
+etc. and it fit in my pocket then it might encourage me to share 
+those things more often.  If we're talking on the phone and you ask 
+me what the weather is like and I say "hang on", outstretch the 
+device with my arm extended, press a button, and instantly send you 
+a picture on me with blue sky in the background, that has value.
+
+But if I say "hang on", fumble around in my briefcase for a digital 
+camera, and  after 5 minutes of plugging and praying with USB 
+finally am able to take a photo of me, bound by several feet of 
+cable and multiple devices, well, that doesn't really have value.
+
+If I'm a Paparazzi I'd love to be able to send high-res photos 
+using my mobile phone because that has real economic impact, and I 
+could put up with the hassle for the amount of time it saves me.  
+However, I don't think that is the market that Sprint PCS is 
+contemplating.
+
+The fact that Sprint has not made the assumption that both the 
+sender and recipient of the picture are using their mobile phones 
+will help this survive. Gets around the whole "fax" problem (where 
+both sender and receiver have to have faxes in order for that 
+technology to be useful).
+
+On the whole, not very useful for regular Joes (pun intended).  Put 
+the camera in the phone (even a low-res one) and then it'd at least 
+be cool.
+
+-Ian.
+
+On Monday, August 19, 2002, at 05:04 AM, Joseph S. Barrera III wrote:
+
+> Rob Shavell wrote:
+>> sprint, if you haven't seen the marketing yet, is 1st to US 
+>> market w/postwap
+>> mobile data svc.  to me, there is nada more interesting and 
+>> impactful going
+>> down in the tech world than mobile visual communications.. and 
+>> yet no one
+>> seems to give much of a damn that right now that 2 persons can 
+>> take photos
+>> and share them instantly across space.
+>
+> You're right. Or at least, I don't. I saw an advert for it on TV 
+> last night (can't miss Futurama :-) and I thought, "boy, that's 
+> dumb."
+> If I wanted to share pictures with someone, I'd email them to them,
+> where they could see them on a 1024x or 1600x display, instead of
+> looking at a postage stamp on their cell phone. Or, I'd bring a 
+> printout
+> if they needed to see it. Etc. We all have 2+Mpixel cameras now 
+> anyways,
+> right? (This is one reason why I never bought the camera attachment
+> for my handspring visor -- resolution was too poor.)
+>
+> In fact, with a 1GB microdrive in my camera, I often just keep
+> old pictures around, and I can show people pictures using the
+> camera's display. Which is bound to be better than the cell phone's.
+>
+> - Joe
+> -- The Combatant State is your father and your mother, your only
+> protector, the totality of your interests. No discipline can
+> be stern enough for the man who denies that by word or deed.
+>
+>
+> http://xent.com/mailman/listinfo/fork
+
+http://xent.com/mailman/listinfo/fork
+

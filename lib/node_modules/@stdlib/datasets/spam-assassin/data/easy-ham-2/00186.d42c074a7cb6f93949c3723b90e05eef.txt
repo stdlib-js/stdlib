@@ -1,0 +1,83 @@
+From ilug-admin@linux.ie  Wed Jul 31 17:37:18 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BB946440A8
+	for <jm@localhost>; Wed, 31 Jul 2002 12:37:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 17:37:16 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VGT4200918 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 17:29:04 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA16255; Wed, 31 Jul 2002 17:27:10 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from fiachra.ucd.ie (fiachra.ucd.ie [137.43.12.82]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id RAA16220 for <ilug@linux.ie>;
+    Wed, 31 Jul 2002 17:27:04 +0100
+Received: from gavin by fiachra.ucd.ie with local (Exim 3.12 #1 (Debian))
+    id 17ZwId-0008N7-00 for <ilug@linux.ie>; Wed, 31 Jul 2002 17:26:11 +0100
+Date: Wed, 31 Jul 2002 17:26:11 +0100
+From: Gavin McCullagh <ilug_gmc@fiachra.ucd.ie>
+To: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] Re: Mutt + Outbox
+Message-Id: <20020731172611.C32039@fiachra.ucd.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Mail-Followup-To: irish linux users group <ilug@linux.ie>
+References: <20020726182224.GA6308@dangerousideas.com>
+    <20020727165855.GG12078@vipersoft.co.uk>
+    <mutt-users-3d42d3a9-19504@klaus.daprodeges.dyndns.org>
+    <"from s1118644"@mail.inf.tu-dresden.de>
+    <20020727191542.A19057@ie.suberic.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020727191542.A19057@ie.suberic.net>; from
+    kevin+dated+1028225744.d700ac@ie.suberic.net on Sat, Jul 27,
+    2002 at 19:15:43 +0100
+X-Gnupg-Publickey: http://fiachra.ucd.ie/~gavin/public.gpg
+X-Operating-System: Linux 2.4.18 i686
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sat, 27 Jul 2002, kevin lyda wrote:
+
+> saw this on mutt users.  might be a handy trick for those of with
+> hyperactive archiving genes...  :)
+> 
+> this might work better in this long run though:
+> 
+>    set record='~/Mail/outbox-`date "+%Y-%m"`'
+
+A nice followon of this for the obsessive archiver is:
+
+Procmail:
+.procmail/rc.mail
+	<snip>
+	:0:
+	* ^Subject.*\[ILUG\]
+	:ilug-`date "+%m-%Y"`
+	<snip>
+
+and Mutt:
+.muttrc:
+	mailboxes =ilug-`date "+%m-%Y"` 
+
+does mean threads get broken at the start of the month though :(
+
+Gavin
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

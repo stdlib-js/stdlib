@@ -1,0 +1,163 @@
+
+{{alias}}( N, x, sx, y, sy, z, sz, clbk[, thisArg] )
+    Performs element-wise subtraction of two strided arrays via a callback
+    function and assigns each result to an element in an output strided array.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    The callback function is provided four arguments:
+
+    - values: input array elements.
+    - idx: iteration index.
+    - indices: strided array indices (offset + idx*stride).
+    - arrays: input and output arrays.
+
+    If the callback function does not return any value (or equivalently,
+    explicitly returns `undefined`), the value is ignored.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Array|TypedArray|Object
+        Input array/collection. If provided an object, the object must be array-
+        like (excluding strings and functions).
+
+    sx: integer
+        Index increment for `x`.
+
+    y: Array|TypedArray|Object
+        Input array/collection. If provided an object, the object must be array-
+        like (excluding strings and functions).
+
+    sy: integer
+        Index increment for `y`.
+
+    z: Array|TypedArray|Object
+        Destination array/collection. If provided an object, the object must be
+        array-like (excluding strings and functions).
+
+    sz: integer
+        Index increment for `z`.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    z: Array|TypedArray|Object
+        Destination array/collection.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = [ 11.0, 12.0, 13.0, 14.0 ];
+    > var y = [ 8.0, 7.0, 6.0, 5.0 ];
+    > var z = [ 0.0, 0.0, 0.0, 0.0 ];
+    > function clbk( values ) { return values; };
+    > {{alias}}( x.length, x, 1, y, 1, z, 1, clbk )
+    [ 3.0, 5.0, 7.0, 9.0 ]
+
+    // Using `N` and stride parameters:
+    > z = [ 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( 2, x, 2, y, -1, z, 1, clbk )
+    [ 4.0, 5.0, 0.0, 0.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 11.0, 12.0, 13.0, 14.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 8.0, 7.0, 6.0, 5.0 ] );
+    > var z0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*2 );
+    > var z1 = new {{alias:@stdlib/array/float64}}( z0.buffer, z0.BYTES_PER_ELEMENT*2 );
+    > {{alias}}( 2, x1, -2, y1, 1, z1, 1, clbk )
+    <Float64Array>[ 8.0, 7.0 ]
+    > z0
+    <Float64Array>[ 0.0, 0.0, 8.0, 7.0 ]
+
+
+{{alias}}.ndarray( N, x, sx, ox, y, sy, oy, z, sz, oz, clbk[, thisArg] )
+    Performs element-wise subtraction of two strided arrays via a callback
+    function and assigns each result to an element in an output strided array
+    using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Array|TypedArray|Object
+        Input array/collection. If provided an object, the object must be array-
+        like (excluding strings and functions).
+
+    sx: integer
+        Index increment for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    y: Array|TypedArray|Object
+        Input array/collection. If provided an object, the object must be array-
+        like (excluding strings and functions).
+
+    sy: integer
+        Index increment for `y`.
+
+    oy: integer
+        Starting index for `y`.
+
+    z: Array|TypedArray|Object
+        Destination array/collection. If provided an object, the object must be
+        array-like (excluding strings and functions).
+
+    sz: integer
+        Index increment for `z`.
+
+    oz: integer
+        Starting index for `z`.
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback execution context.
+
+    Returns
+    -------
+    z: Array|TypedArray|Object
+        Destination array/collection.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = [ 11.0, 12.0, 13.0, 14.0 ];
+    > var y = [ 8.0, 7.0, 6.0, 5.0 ];
+    > var z = [ 0.0, 0.0, 0.0, 0.0 ];
+    > function clbk( values ) { return values; };
+    > {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0, z, 1, 0, clbk )
+    [ 3.0, 5.0, 7.0, 9.0 ]
+
+    // Advanced indexing:
+    > x = [ 11.0, 12.0, 13.0, 14.0 ];
+    > y = [ 8.0, 7.0, 6.0, 5.0 ];
+    > z = [ 0.0, 0.0, 0.0, 0.0 ];
+    > var oy = y.length - 1;
+    > var oz = z.length - 1;
+    > {{alias}}.ndarray( 2, x, 2, 1, y, -1, oy, z, -1, oz, clbk )
+    [ 0.0, 0.0, 8.0, 7.0 ]
+
+    See Also
+    --------
+

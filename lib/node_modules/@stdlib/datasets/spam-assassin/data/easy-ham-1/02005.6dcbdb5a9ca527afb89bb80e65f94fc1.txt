@@ -1,0 +1,30 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:43:27 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2E0D516F6E
+	for <jm@localhost>; Thu, 26 Sep 2002 16:42:35 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:42:35 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFTTg24676 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:29:29 +0100
+Message-Id: <200209261529.g8QFTTg24676@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: guardian <rssfeeds@spamassassin.taint.org>
+Subject: GDC 2002: Game Scripting in Python
+Date: Thu, 26 Sep 2002 15:29:29 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-4,7132396,159/
+Date: 2002-08-22T03:21:04+01:00
+
+Scripting languages allow rapid development of game behavior without the 
+pitfalls that await the unwary C++ programmer. Using an existing scripting 
+language saves the time and cost of developing a custom language, and typically 
+gives you a far more powerful language than you could create on your own. 
+Python is an excellent choice for a game scripting language because it is 
+powerful, easily embedded, can seamlessly be extended with C/C++ code
+
+

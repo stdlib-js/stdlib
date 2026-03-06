@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Fri Jul 19 23:06:51 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BEF3D440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 18:06:51 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 23:06:51 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JM3FJ07895 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 23:03:15 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA02765; Fri, 19 Jul 2002 22:57:34 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id WAA02652
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 22:57:11 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts10-040.dublin.indigo.ie
+    [194.125.174.167]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    9B09BF8FD for <ilug@linux.ie>; Fri, 19 Jul 2002 22:42:04 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    DE8C53C167; Fri, 19 Jul 2002 19:42:19 +0100 (IST)
+Date: Fri, 19 Jul 2002 19:42:19 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] CVS question?
+Message-Id: <20020719184219.GA3854@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+References: <200207172008.VAA08579@lugh.tuatha.org>
+    <15669.54302.782580.434395@klortho.waider.ie>
+    <200207191730.SAA23654@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <200207191730.SAA23654@lugh.tuatha.org>
+User-Agent: Mutt/1.3.27i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Thu, Jul 18, 2002 at 11:13:24PM +0100, John Gay wrote:
+
+> kdebase took just under 46 hours. I've got lots of grief from the wife for 
+> the computer running 'round the clock this week. The rest of KDE should build 
+
+Tell her that the computer is less likely to fail if it's never turned off
+so you won't need to be spending money on repairs, and that this offsets the
+electricity costs.
+
+This has the advantage of actually being true (well, up to the , anyway) :-)
+
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

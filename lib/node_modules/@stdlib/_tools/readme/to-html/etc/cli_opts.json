@@ -1,0 +1,24 @@
+{
+	"string": [
+		"tests",
+		"benchmarks",
+		"source",
+		"title",
+		"head",
+		"prepend",
+		"append"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"fragment"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

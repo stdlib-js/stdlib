@@ -1,0 +1,21 @@
+'use strict';
+
+var beep = require( 'beep' );
+var boop = require( './boop.js' );
+var bop = require( './../b'+'op.js' );
+
+// var bip = require( 'bip' );
+/* var bap = require( 'bap' ); */
+
+function foo() {
+	var a = require( 'b' );
+}
+
+var b;
+if ( bop ) {
+	b = require( 'bar' );
+} else {
+	b = require( 'foobar' );
+}
+
+module.exports = beep( boop( bop ) );

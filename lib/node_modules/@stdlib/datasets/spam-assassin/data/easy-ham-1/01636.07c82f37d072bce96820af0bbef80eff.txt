@@ -1,0 +1,21 @@
+Return-Path: guido@python.org
+Delivery-Date: Fri Sep  6 14:54:14 2002
+From: guido@python.org (Guido van Rossum)
+Date: Fri, 06 Sep 2002 09:54:14 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: Your message of "Fri, 06 Sep 2002 09:44:17 EDT."
+             <20020906134417.GA16820@cthulhu.gerg.ca> 
+References: <15735.50243.135743.32180@12-248-11-90.client.attbi.com>
+	<LNBBLJKPBEHFEDALKOLCIEFEBCAB.tim.one@comcast.net>  
+	<20020906134417.GA16820@cthulhu.gerg.ca> 
+Message-ID: <200209061354.g86DsEE14105@pcp02138704pcs.reston01.va.comcast.net>
+
+> I believe the SpamAssassin maintainers have a scheme whereby the corpus
+> of non-spam is distributed, ie. several people have bodies of non-spam
+> that they use for collectively evolving the SA score set.  If that
+> sounds vague, it matches my level of understanding.
+
+See if you can get a hold of that so we can do a level-playing-field
+competition. :-)
+
+--Guido van Rossum (home page: http://www.python.org/~guido/)

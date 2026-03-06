@@ -1,0 +1,86 @@
+From ilug-admin@linux.ie  Sat Sep 14 20:16:53 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id E80A816F03
+	for <zzzz@localhost>; Sat, 14 Sep 2002 20:16:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Sat, 14 Sep 2002 20:16:52 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8EJ4lC13620 for
+    <zzzz-ilug@jmason.org>; Sat, 14 Sep 2002 20:04:47 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA01519; Sat, 14 Sep 2002 20:04:09 +0100
+Received: from 61.132.12.51 ([61.132.12.51]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id UAA01426 for <ilug@linux.ie>; Sat,
+    14 Sep 2002 20:03:39 +0100
+Message-Id: <200209141903.UAA01426@lugh.tuatha.org>
+X-Authentication-Warning: lugh.tuatha.org: Host [61.132.12.51] claimed to
+    be 61.132.12.51
+Received: from 36.185.61.158 ([36.185.61.158]) by f64.law4.hotmail.com
+    with QMQP; Sep, 14 2002 20:10:05 +0300
+Received: from anther.webhostingtalk.com ([88.58.121.118]) by
+    da001d2020.lax-ca.osd.concentric.net with QMQP; Sep, 14 2002 18:47:53
+    -0700
+Received: from unknown (156.54.224.23) by a231242.upc-a.chello.nl with
+    local; Sep, 14 2002 18:03:45 -0300
+From: iqk Designer Replicas <bksales@sunglasses.com>
+To: ilug@linux.ie
+Cc: 
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Date: Sat, 14 Sep 2002 20:13:12 +0100
+X-Mailer: Microsoft Outlook Build 10.0.2627
+Subject: [ILUG] Best Replica Goods - Best Prices
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+*** FREE BONUS OFFER - SEE BELOW ***
+
+We can supply TOP QUALITY, VIRTUALLY IDENTICAL REPLICAS of just about anything - from watches to wallets, from lighters to lingerie, clothing, accessories, even electrical goods. All your favorite designer labels reproduced at a fraction of the price.
+
+All major Credit Cards accepted. Worldwide certified shipping. Quality guaranteed.
+
+We are currently building our catalog so let us know that you want to receive notification when our on-line catalog is published later this month to qualify for a GREAT FREE BONUS OFFER.
+
+*** FREE BONUS: Register NOW for our catalog and receive one pair of designer REPLICA sunglasses (our regular price $15) & check out the quality of our goods FREE OF CHARGE ***
+
+For more information email: replicas@fastnetspain.net
+
+Register NOW to be sure you don't miss out !!!
+
+
+
+
+
+
+
+
+To remove from future mailings email: noreplicas@fastnetspain.net
+
+Register NOW to be sure you don't miss out !!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

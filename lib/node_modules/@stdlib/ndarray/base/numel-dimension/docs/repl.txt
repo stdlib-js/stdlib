@@ -1,0 +1,28 @@
+
+{{alias}}( x, dim )
+    Returns the size (i.e., number of elements) of a specified dimension for a
+    provided ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    dim: integer
+        Dimension index. If less than zero, the index is resolved relative to
+        the last dimension, with the last dimension corresponding to the value
+        `-1`.
+
+    Returns
+    -------
+    out: integer
+        Dimension size.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/ndarray/zeros}}( [ 4, 2, 3 ] ), 0 )
+    4
+
+    See Also
+    --------
+

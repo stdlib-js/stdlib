@@ -1,0 +1,96 @@
+From bmord@icon-nicholson.com  Wed Sep  4 19:11:17 2002
+Return-Path: <bmord@icon-nicholson.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 01DEB16F1E
+	for <jm@localhost>; Wed,  4 Sep 2002 19:11:16 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 19:11:16 +0100 (IST)
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [66.38.151.26]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g84HwJZ13376 for <jm@jmason.org>; Wed, 4 Sep 2002 18:58:20 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    D587D8F324; Wed,  4 Sep 2002 10:58:23 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 11689 invoked from network); 3 Sep 2002 18:49:02 -0000
+From: bmord@icon-nicholson.com (Ben Mord)
+To: "Webappsec Securityfocus.Com" <webappsec@securityfocus.com>,
+	"SECPROG Securityfocus" <SECPROG@securityfocus.com>
+Subject: use of base image / delta image for automated recovery from attacks
+Date: Tue, 3 Sep 2002 15:04:27 -0400
+Message-Id: <NAEOJLMPJMJDFPLHIOJOAEFJDBAA.bmord@icon-nicholson.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Importance: Normal
+
+Hi,
+
+I was inspired by a mode of operation supported by VMWare. You can have a
+base disk image shared by multiple virtual machine (vm) instances. That base
+image is never altered by a vm instance. Instead, each vm instance writes
+changes to its own "redo" log. Future hard disk reads from that vm instance
+incorporate both the base image and the appropriate redo log to present the
+current disk image for that specific virtual machine.
+
+This is described here (thanks to Duane for providing this link on the
+honeypots mailing list)
+http://www.vmware.com/support/reference/common/disk_sharing.html
+
+Could this basic concept be used to easily make self-fixing client/server
+applications that efficiently and automatically recover from most attacks,
+even before those attacks have been discovered? Here is what I imagine.
+
+The physical architectures of most production client/server systems are
+layered. For example, your basic web application might have a web server
+running Apache, connected to an application server running some J2EE or .Net
+business logic, connected to a database server for persistence. The only one
+of these whose disk image really should evolve over time is the database
+server, and even here you often put the static RDBMS software on one
+partition and the changeable datafiles on another partition. It is only the
+partition with the volatile datafiles that must be allowed to change from
+one boot to the next. Other paritions may need to be writable for, say, swap
+space, but these changes could be eliminated on each reboot.
+
+When someone cracks this system, they will probably change an image that
+shouldn't be changed. E.g., they might leverage a buffer overflow in IIS or
+Apache to install a trojan or a backdoor on the more exposed web server. But
+what if the web server ran off a base image, writing changes to a "delta" or
+"redo" partition? And then what if every night it automatically erased the
+redo partition and rebooted? The downtime involved for each machine would be
+minimal, because it is only deleting data - rather than restoring from
+backup. In a system with redundant web servers for load balancing or high
+availability, this could be scheduled in a way such that the system is
+always accessible. This base/redo partition concept could be implemented at
+the same level as a feature of hardware RAID, allowing for greater
+performance, reliability, and hack resistance. This concept could also be
+applied to the application servers, and even the database server partitions
+(except for those partitions which contain the table data files, of course.)
+
+Does anyone do this already? Or is this a new concept? Or has this concept
+been discussed before and abandoned for some reasons that I don't yet know?
+I use the physical architecture of a basic web application as an example in
+this post, but this concept could of course be applied to most server
+systems. It would allow for the hardware-separation of volatile and
+non-volatile disk images. It would be analogous to performing nightly
+ghosting operations, only it would be more efficient and involve less (or
+no) downtime.
+
+Thanks for any opinions,
+Ben
+
+

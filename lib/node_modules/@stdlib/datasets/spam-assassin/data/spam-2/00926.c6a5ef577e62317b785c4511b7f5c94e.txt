@@ -1,0 +1,95 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NEOkhY021592
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Tue, 23 Jul 2002 09:24:46 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6NEOjTa021587
+	for cypherpunks-forward@ds.pro-ns.net; Tue, 23 Jul 2002 09:24:45 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6NEOhhY021557
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 09:24:44 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6NEOgJ21455
+	for <cypherpunks@ds.pro-ns.net>; Tue, 23 Jul 2002 10:24:42 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6NEOfm07291
+	for cypherpunks@ds.pro-ns.net; Tue, 23 Jul 2002 10:24:41 -0400
+Received: (from majordom@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6NEOZ207271
+	for cypherpunks-outgoing; Tue, 23 Jul 2002 10:24:35 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6NEONR07257;
+	Tue, 23 Jul 2002 10:24:23 -0400
+Received: from yahoo.com ([211.192.139.69])
+	by locust.minder.net (8.11.6/8.11.6) with SMTP id g6NEOJJ21431;
+	Tue, 23 Jul 2002 10:24:20 -0400 (EDT)
+	(envelope-from latest7805q42@yahoo.com)
+Reply-To: <latest7805q42@yahoo.com>
+Message-ID: <000d33d23b2e$3544a6a5$6bd52ad7@jhbwdi>
+From: <latest7805q42@yahoo.com>
+To: AOL.Users@locust.minder.net
+Subject: State of the art long distance                                                    7325ZMhY2-201HEQY5778-20
+Date: Tue, 23 Jul 2002 12:07:33 +0200
+MiME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+Importance: Normal
+Sender: owner-cypherpunks@minder.net
+Precedence: bulk
+
+
+<body bgcolor="#FFFFFF" text="#CC3333">
+<p><font face="Arial, Helvetica, sans-serif"><b><font size="3">Hi: <br>
+  </font></b></font></p>
+<p><b><font face="Arial, Helvetica, sans-serif" size="3" color="#000000">Have 
+  you been paying too much for your home or<br>
+  business long distance?</font></b></p>
+<p><font face="Arial, Helvetica, sans-serif" color="#000000"><b><font size="3">Have 
+  you been looking for an affordable but honest<br>
+  long distance alternative?</font></b></font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b><font size="3">We are offering 
+  Fiber optic Long distance for<br>
+  as low as $9.95 per month!</font></b></font></p>
+<p><font face="Arial, Helvetica, sans-serif"><b><font size="3"><a href="mailto:phoneoffer001@netscape.com?subject=Phoneoffer">Email</a> 
+  us with your phone number and we'll call you<br>
+  back so you can hear how great the connection is.<br>
+  <br>
+  Six plans to choose from including a travel plan. <br>
+  <br>
+  <font color="#000000">There are no credit checks and because you don't <br>
+  need to change your long distance carrier, your <br>
+  service can be turned on in just a few hours. <br>
+  </font><br>
+  Distributors needed! <br>
+  <br>
+  <font color="#000000">We have distributors now making a few hundred to <br>
+  many thousands of dollars per month from the comfort <br>
+  of their homes. </font><br>
+  <br>
+  Obtain <a href="mailto:phoneoffer001@netscape.net?subject=Phoneoffer">complete 
+  details</a> Include your phone number- we'll<br>
+  call you back to confirm our crisp clear connection.<br>
+  <br>
+  To be removed: <a href="mailto:nottoday@netscape.net">click here</a></font></b></font></p>
+
+2032UFYD2-959lOlR2290WEYy6-444nUHE5892loyf3-037iQUI9771WgxC8-113WmiB1248QRl70
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

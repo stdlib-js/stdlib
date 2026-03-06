@@ -1,0 +1,41 @@
+
+{{alias}}( shape, strides, offset )
+    Computes the maximum linear index in an underlying data buffer accessible to
+    an array view.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    strides: ArrayLike
+        Stride array.
+
+    offset: integer
+        Location of the first indexed value based on the stride array.
+
+    Returns
+    -------
+    out: integer
+        Maximum linear index in an underlying data buffer accessible to an array
+        view.
+
+    Examples
+    --------
+    > var d = [ 2, 3, 10 ];
+    > var s = [ 30, -10, 1 ];
+    > var o = 20;
+    > var out = {{alias}}( d, s, o )
+    59
+    > s = [ 30, 10, 1 ];
+    > o = 0;
+    > out = {{alias}}( d, s, o )
+    59
+    > s = [ -30, -10, -1 ];
+    > o = 59;
+    > out = {{alias}}( d, s, o )
+    59
+
+    See Also
+    --------
+

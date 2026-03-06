@@ -1,0 +1,29 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object containing only Date objects.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if value is an array-like object containing only Date
+        objects.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ new Date(), new Date() ] )
+    true
+    > bool = {{alias}}( [ {}, {} ] )
+    false
+    > bool = {{alias}}( [ new Date(), '2011-01-01' ] )
+    false
+    > bool = {{alias}}( [] )
+    false
+
+    See Also
+    --------
+

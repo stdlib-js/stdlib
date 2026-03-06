@@ -1,0 +1,179 @@
+
+{{alias}}( addon, fallback )
+    Returns a function which dispatches to a native add-on applying binary
+    function to two input strided arrays.
+
+    The returned function has the following signature:
+
+      f( N, dtypeX, x, strideX, dtypeY, y, strideY, dtypeZ, z, strideZ )
+
+    where
+
+    - N: number of indexed elements.
+    - dtypeX: `x` data type.
+    - x: input array.
+    - strideX: `x` stride length.
+    - dtypeY: `y` data type.
+    - y: input array.
+    - strideY: `y` stride length.
+    - dtypeZ: `z` data type.
+    - z: output array.
+    - strideZ: `z` stride length.
+
+    To determine whether to dispatch to the `addon` function, the returned
+    dispatch function checks whether the provided arrays are typed arrays.
+
+    If the provided arrays are typed arrays, the dispatch function invokes the
+    `addon` function; otherwise, the dispatch function invokes the `fallback`
+    function.
+
+    Parameters
+    ----------
+    addon: Function
+        Add-on interface. The function should have the following signature:
+
+          f( N, dtypeX, x, strideX, dtypeY, y, strideY, dtypeZ, z, strideZ )
+
+        where
+
+        - N: number of indexed elements.
+        - dtypeX: `x` data type (enumeration constant).
+        - x: input array.
+        - strideX: `x` stride length.
+        - dtypeY: `y` data type (enumeration constant).
+        - y: input array.
+        - strideY: `y` stride length.
+        - dtypeZ: `z` data type.
+        - z: output array.
+        - strideZ: `z` stride length.
+
+    fallback: Function
+        Fallback function. The function should have the following signature:
+
+          f( N, dtypeX, x, strideX, dtypeY, y, strideY, dtypeZ, z, strideZ )
+
+        where
+
+        - N: number of indexed elements.
+        - dtypeX: `x` data type.
+        - x: input array.
+        - strideX: `x` stride length.
+        - dtypeY: `y` data type.
+        - y: input array.
+        - strideY: `y` stride length.
+        - dtypeZ: `z` data type.
+        - z: output array.
+        - strideZ: `z` stride length.
+
+    Returns
+    -------
+    fcn: Function
+        Dispatch function.
+
+    Examples
+    --------
+    > function addon( N, dx, x, sx, dy, y, sy, dz, z, sz ) {
+    ...     // Call into native add-on...
+    ... };
+    > function fallback( N, dx, x, sx, dy, y, sy, dz, z, sz ) {
+    ...     // Fallback JavaScript implementation...
+    ... };
+    > var f = {{alias}}( addon, fallback );
+    > var dt = 'generic';
+    > f( 2, dt, [ 1, 2 ], 1, dt, [ 3, 4 ], 1, dt, [ 0, 0 ], 1 );
+
+
+{{alias}}.ndarray( addon, fallback )
+    Returns a function which dispatches to a native add-on applying a binary
+    function to two input strided arrays using alternative indexing semantics.
+
+    The returned function has the following signature:
+
+      f( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY, dtypeZ, z,
+         strideZ, offsetZ )
+
+    where
+
+    - N: number of indexed elements.
+    - dtypeX: `x` data type.
+    - x: input array.
+    - strideX: `x` stride length.
+    - offsetX: starting `x` index.
+    - dtypeY: `y` data type.
+    - y: input array.
+    - strideY: `y` stride length.
+    - offsetY: starting `y` index.
+    - dtypeZ: `z` data type.
+    - z: output array.
+    - strideZ: `z` stride length.
+    - offsetZ: starting `z` index.
+
+    To determine whether to dispatch to the `addon` function, the returned
+    dispatch function checks whether the provided arrays are typed arrays.
+
+    If the provided arrays are typed arrays, the dispatch function invokes the
+    `addon` function; otherwise, the dispatch function invokes the `fallback`
+    function.
+
+    Parameters
+    ----------
+    addon: Function
+        Add-on interface. The function should have the following signature:
+
+          f( N, dtypeX, x, strideX, dtypeY, y, strideY, dtypeZ, z, strideZ )
+
+        where
+
+        - N: number of indexed elements.
+        - dtypeX: `x` data type (enumeration constant).
+        - x: input array.
+        - strideX: `x` stride length.
+        - dtypeY: `y` data type (enumeration constant).
+        - y: input array.
+        - strideY: `y` stride length.
+        - dtypeZ: `z` data type (enumeration constant).
+        - z: output array.
+        - strideZ: `z` stride length.
+
+    fallback: Function
+        Fallback function. The function should have the following signature:
+
+          f( N, dtypeX, x, strideX, offsetX, dtypeY, y, strideY, offsetY,
+             dtypeZ, z, strideZ, offsetZ )
+
+        where
+
+        - N: number of indexed elements.
+        - dtypeX: `x` data type.
+        - x: input array.
+        - strideX: `x` stride length.
+        - offsetX: starting `x` index.
+        - dtypeY: `y` data type.
+        - y: input array.
+        - strideY: `y` stride length.
+        - offsetY: starting `y` index.
+        - dtypeZ: `z` data type.
+        - z: output array.
+        - strideZ: `z` stride length.
+        - offsetZ: starting `z` index.
+
+    Returns
+    -------
+    fcn: Function
+        Dispatch function.
+
+    Examples
+    --------
+    > function addon( N, dx, x, sx, dy, y, sy, dz, z, sz ) {
+    ...     // Call into native add-on...
+    ... };
+    > function fallback( N, dx, x, sx, ox, dy, y, sy, dz, z, sz, oz ) {
+    ...     // Fallback JavaScript implementation...
+    ... };
+    > var f = {{alias}}.ndarray( addon, fallback );
+    > var dt = 'generic';
+    > f( 2, dt, [ 1, 2 ], 1, 0, dt, [ 3, 4 ], 1, 0, dt, [ 0, 0 ], 1, 0 );
+
+    See Also
+    --------
+

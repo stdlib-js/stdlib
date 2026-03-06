@@ -1,0 +1,120 @@
+Return-Path: ler@lerami.lerctr.org
+Delivery-Date: Fri Sep  6 11:29:06 2002
+Return-Path: <foxsportsflash-return@mailings.foxsports.com>
+Received: from pebble.foxsports.com (pebble.foxsports.com [206.15.104.27])
+	by lerami.lerctr.org (8.12.2/8.12.2/20020902/$Revision: 1.30 $) with SMTP id g86GT2X2013854
+	for <ler+foxsports@lerctr.org>; Fri, 6 Sep 2002 11:29:04 -0500 (CDT)
+Message-Id: <200209061629.g86GT2X2013854@lerami.lerctr.org>
+Date: Fri,  6 Sep 2002 16:00:15 +0000
+Precedence: bulk
+X-No-Archive: yes
+X-Priority: 3 (Normal)
+Importance: Normal
+X-MSMail-Priority: Normal
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: "FOXSports FLASH" <FOXSportsFLASH@mailings.foxsports.com>
+To: ler+foxsports@lerctr.org
+Subject: BIG 12 OR BUST
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Content-Type: text/html; charset="us-ascii"
+X-Status: 
+X-Keywords: 
+
+<html>
+<!-- originally sent to ler+foxsports@lerctr.org -->
+<head>
+<title>BIG 12 OR BUST</title>
+<base href="http://foxsports.lycos.com/?CMP=NL6964">
+</head>
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="757" border="0" cellspacing="0" cellpadding="0">
+<tr align="left" valign="top">
+<td colspan="2"><img src="/blobs/active/640176_36_1.jpg" width="757" height="90"></td>
+</tr>
+<tr>
+<td bgcolor="DAA32F" width="143" align="left" valign="top">
+<p><img src="/blobs/active/640178_36_1.jpg" width="145" height="501" usemap="#Map2" border="0"></p>
+<p>&nbsp;</p>
+</td>
+<td bgcolor="DAA32F" width="614" align="left" valign="top">
+<table width="499" border="0" cellspacing="0" cellpadding="0" bgcolor="EEEEEE">
+<tr align="left" valign="top">
+<td><a href="http://switchboard.real.com/partners/?src=R1R.fox.0.general.link.0.foxsports.BigXIIEmail&CMP=NL6964"><img src="/blobs/active/640180_36_1.jpg" width="499" height="110" border="0"></a></td>
+</tr>
+<tr>
+<td align="left" valign="top" bgcolor="EEEEEE">
+<table width="499" border="0" cellspacing="0" cellpadding="8">
+<tr>
+<td align="left"><font face="Arial, Helvetica, sans-serif" size="2"><b><font face="Arial, Helvetica, sans-serif" size="3">This
+weekend you can see the Nebraska Cornhuskers, Utah State, Kansas
+State and the University of Louisiana/Monroe - LIVE AND EXCLUSIVELY
+ON THE INTERNET! </font></b><br>
+<br>
+<b><font face="Arial, Helvetica, sans-serif" size="2">FOXSports.com
+presents BIG 12 football!</font></b> Now you can see your favorite
+teams play, even if you can't get to a live game or it's not
+on TV.<br>
+<br>
+FOXSports.com has partnered with RealOne to bring Big 12 football
+fans LIVE webcasts that put you in the stands - even from home.<br>
+<br>
+The best part... you can get ALL of the webcasts and exclusive
+Big 12 news, highlights and coverage by becoming a member of
+RealOne SuperPass. With SuperPass you get:<br>
+<br>
+</font>
+<li><font face="Arial, Helvetica, sans-serif" size="2">All
+Big 12 webcasts, highlights and exclusive coverage</font></li>
+<li><font face="Arial, Helvetica, sans-serif" size="2">Unaired
+video footage from FOX Sports and FOX Sports Net</font></li>
+<li><font face="Arial, Helvetica, sans-serif" size="2">Exclusive
+video from channels like NASCAR.com and MLB.com</font></li>
+<li><font face="Arial, Helvetica, sans-serif" size="2">Plus,
+top news content from ABCNews.com and CNN.com</font></li>
+<font size="2" face="Arial, Helvetica, sans-serif">
+<br><br>
+True to your school? Only want certain games? You can get them individually too!</font><br>
+<br>
+<center>
+<b><font face="Arial, Helvetica, sans-serif" size="4">Sign up
+now! <a href="http://switchboard.real.com/partners/?src=R1R.fox.0.general.link.0.foxsports.BigXIIEmail&CMP=NL6964">Click
+here.</a></font></b><p>
+<b><font face="Arial, Helvetica, sans-serif" size="4">Want more
+details? <a href="http://foxsports.lycos.com/named/Features/bigXII?CMP=NL6964">Click
+here.</a></font></b><br>
+</font></center><br>
+</a><br>
+<br>
+</b></font>
+<br><br>
+<p><center>
+<a href="mailto:remove@foxsports.com?subject=REMOVE%202157%20ler+foxsports@lerctr.org" ><font size="-2" face=
+"Arial, Helvetica, sans-serif" color="#99349C">To unsubscribe from future FOXSports.com emails, click
+here.</font></a>
+</center></p>
+</td>
+</tr>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<map name="Map">
+<area shape="circle" coords="72,188,66" href="http://foxsports.lycos.com/section/section_front.adp?categoryId=21&CMP=NL6964">
+</map><map name="Map2">
+<area shape="circle" coords="75,202,49" href="http://foxsports.lycos.com/?CMP=NL6964">
+</map>
+
+<img src="http://ai.hitbox.com/ai?hb=DM520329A1SZ95EN3&ai=NL6964" width="1" height="1" border="0">
+</body>
+</html>

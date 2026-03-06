@@ -1,0 +1,96 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Wed Jul 24 06:00:37 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1E931440CC
+	for <jm@localhost>; Wed, 24 Jul 2002 01:00:37 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 06:00:37 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6O4wo421169 for <jm@jmason.org>; Wed, 24 Jul 2002 05:58:50 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XE90-0004Df-00; Tue,
+    23 Jul 2002 21:53:02 -0700
+Received: from moutng.kundenserver.de ([212.227.126.177]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17XE8X-00082C-00 for <spamassassin-devel@lists.sourceforge.net>;
+    Tue, 23 Jul 2002 21:52:33 -0700
+Received: from [212.227.126.155] (helo=mrelayng1.kundenserver.de) by
+    moutng3.kundenserver.de with esmtp (Exim 3.35 #2) id 17XE8U-0005Yq-00 for
+    spamassassin-devel@lists.sourceforge.net; Wed, 24 Jul 2002 06:52:30 +0200
+Received: from [80.129.5.195] (helo=silence.homedns.org) by
+    mrelayng1.kundenserver.de with asmtp (Exim 3.35 #2) id 17XE8U-0001E5-00
+    for spamassassin-devel@lists.sourceforge.net; Wed, 24 Jul 2002 06:52:30
+    +0200
+Received: (qmail 5726 invoked by uid 1000); 24 Jul 2002 04:52:19 -0000
+From: Klaus Heinz <k.heinz.jul.zwei@onlinehome.de>
+To: spamassassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] Scoring Yahoo Ads
+Message-Id: <20020724065219.A5267@silence.homedns.org>
+Mail-Followup-To: spamassassin-devel@example.sourceforge.net
+References: <E17X5EC-00072z-00@usw-sf-list2.sourceforge.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <E17X5EC-00072z-00@usw-sf-list2.sourceforge.net>;
+    from spamassassin-devel-request@lists.sourceforge.net on Tue,
+    Jul 23, 2002 at 12:20:47PM -0700
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Wed, 24 Jul 2002 06:52:19 +0200
+Date: Wed, 24 Jul 2002 06:52:19 +0200
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g6O4wo421169
+
+From: Matt Kettler <mkettler@evi-inc.com>
+
+> Hmm, I think that Marc, being one of the most active and prolific posters 
+> to this list, certainly understands SA much better than most. Certainly 
+
+Frequency of messages does _not_ let you draw valid conclusions about the
+understanding of the issues at hand of the sender.
+IMHO it's sometimes even inversely proportional.
+
+> Marc is an active and prolific contributor to SA (gee, look, his name's 
+> even in the credit's page on the website!).
+
+This should not impress you so much. At one time I even detected my name
+on that page and I contributed less than a handful of rather simple rules.
+
+That's not to say I don't appreciate Marc's contributions to the effort.
+But in his place I would have (hopefully :) reevaluated my arguments in the
+face of, as I saw it, massive rejection of his idea what constitutes spam.
+
+Maybe this list can return to discussing technical topics. Politics should
+go to spamassassin-talk.
+
+ciao
+     Klaus
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
+

@@ -1,0 +1,84 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 26 20:15:19 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A7E4643F99
+	for <jm@localhost>; Mon, 26 Aug 2002 15:15:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 20:15:18 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7QJ8VZ05732 for
+    <jm-rpm@jmason.org>; Mon, 26 Aug 2002 20:08:31 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7QJ52J30477; Mon, 26 Aug 2002 21:05:02
+    +0200
+Received: from kamakiriad.com
+    (IDENT:nZbdv/p4nmL0skumLgaQPfpaAEkGbyHy@cable-b-36.sigecom.net
+    [63.69.210.36]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7QJ4uJ30412 for <rpm-list@freshrpms.net>; Mon, 26 Aug 2002 21:04:56 +0200
+Received: from aquila.kamakiriad.local (aquila.kamakiriad.local
+    [192.168.1.3]) by kamakiriad.com (8.11.6/8.11.0) with SMTP id g7QJ4me30195
+    for <rpm-list@freshrpms.net>; Mon, 26 Aug 2002 14:04:49 -0500
+From: Brian Fahrlander <kilroy@kamakiriad.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: New gkrellm 2.0.0, gtk2 version
+Message-Id: <20020826140448.208e3da8.kilroy@kamakiriad.com>
+In-Reply-To: <20020826191454.43e6c15f.matthias@egwn.net>
+References: <20020826191454.43e6c15f.matthias@egwn.net>
+X-Mailer: Sylpheed version 0.8.1 (GTK+ 1.2.10; i386-redhat-linux)
+X-Message-Flag: : Shame on you!  You know Outlook is how viruses are spread!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 26 Aug 2002 14:04:48 -0500
+Date: Mon, 26 Aug 2002 14:04:48 -0500
+
+On Mon, 26 Aug 2002 19:14:54 +0200, Matthias Saou <matthias@egwn.net> wrote:
+
+> Hi all,
+> 
+> I've repackaged the new gkrellm 2.0.0 which is now ported to gtk2
+> (woohoo!). Unfortunately, the plugins are incompatible with the previous
+> 1.2.x ones, and since not many/all have been ported yet, I prefer not to
+> release the package on the main freshrpms.net site for now.
+> 
+> For those of you who'd like to try it out, you can grab it here :
+> http://ftp.freshrpms.net/pub/freshrpms/testing/gkrellm/
+> 
+> I think the themes are still compatible, but haven't tried to install some
+> with 2.0.0 yet.
+> Last note, the above packages are for Valhalla. And yes, although GNOME 2
+> is not in Valhalla, gtk2 and glib2 have been from the very beginning! ;-)
+
+    Sweet, dude- I was really hoping it'd be out sooner or later; thanks a bunch!
+
+------------------------------------------------------------------------
+Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+Evansville, IN                    My Voyage: http://www.CounterMoon.com
+ICQ  5119262
+------------------------------------------------------------------------
+I've been complaining for years, and almost no one listened. "Windows is
+just easier" you said. "I don't want to learn anything new", you said.
+Tell me how easy THIS is:
+http://www.guardian.co.uk/Archive/Article/0,4273,4477138,00.html
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

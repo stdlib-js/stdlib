@@ -1,0 +1,167 @@
+From fork-admin@xent.com  Wed Aug 28 12:02:22 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 46BFF43F99
+	for <jm@localhost>; Wed, 28 Aug 2002 07:02:20 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 12:02:20 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7SAwqZ20999 for <jm@jmason.org>;
+    Wed, 28 Aug 2002 11:58:52 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 382622940F5; Wed, 28 Aug 2002 03:56:10 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sunserver.permafrost.net (u172n16.hfx.eastlink.ca
+    [24.222.172.16]) by xent.com (Postfix) with ESMTP id 3C43329409A for
+    <fork@xent.com>; Wed, 28 Aug 2002 03:55:46 -0700 (PDT)
+Received: from [192.168.123.179] (helo=permafrost.net) by
+    sunserver.permafrost.net with esmtp (Exim 3.35 #1 (Debian)) id
+    17k0TQ-0006Up-00 for <fork@xent.com>; Wed, 28 Aug 2002 07:54:56 -0300
+Message-Id: <3D6CAD7B.6010800@permafrost.net>
+From: Owen Byrne <owen@permafrost.net>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.0.0) Gecko/20020530
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Subject: Canadians again - something a little more substantive
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 28 Aug 2002 08:01:15 -0300
+
+Politicians worldwide are discovering the internet - what a great tool 
+for fascism, once you got the laws in place to solve that whole 
+'anonymity' thing. Also I notice this story shows the truth - the 
+Canadian government is really located in Washington, DC, Ottawa is just 
+a branch office. Come to think of it, the last story I posted about 
+Canada featured the head of its military, 'speaking to us from military 
+HQ  in Palm Beach, Florida.'
+Owen
+----------------------------------------------------------------------------------------------------------------------------
+.
+*Will Canada's ISPs become spies?*
+By Declan McCullagh <mailto:declan.mccullagh@cnet.com>
+Staff Writer, CNET News.com
+August 27, 2002, 12:56 PM PT
+http://news.com.com/2100-1023-955595.html 
+<http://news.com.com/2100-1023-955595.html?tag=prntfr>
+
+*WASHINGTON--The Canadian government is considering a proposal that 
+would force Internet providers to rewire their networks for easy 
+surveillance by police and spy agencies.*
+
+A discussion draft <http://www.canada.justice.gc.ca/en/cons/la_al/> 
+released Sunday also contemplates creating a national database of every 
+Canadian with an Internet account, a plan that could sharply curtail the 
+right to be anonymous online.
+
+The Canadian government, including the Department of Justice 
+<http://canada.justice.gc.ca/> and Industry Canada 
+<http://www.ic.gc.ca/>, wrote the 21-page blueprint as a near-final step 
+in a process that seeks to give law enforcement agents more authority to 
+conduct electronic surveillance. A proposed law based on the discussion 
+draft is expected to be introduced in Parliament late this year or in 
+early 2003.
+
+Arguing that more and more communications take place in electronic form, 
+Canadian officials say such laws are necessary to fight terrorism and 
+combat even run-of-the-mill crimes. They also claim that by enacting 
+these proposals, Canada will be following its obligations under the 
+Council of Europe's cybercrime treaty 
+<http://news.com.com/2100-1001-268894.html>, which the country is in the 
+process of considering.
+
+If the discussion draft were to become law, it would outlaw the 
+possession of computer viruses, authorize police to order Internet 
+providers to retain logs of all Web browsing for up to six months, and 
+permit police to obtain a search warrant allowing them to find "hidden 
+electronic and digital devices" that a suspect might be concealing. In 
+most circumstances, a court order would be required for government 
+agents to conduct Internet monitoring.
+
+Canada and the United States are nonvoting members of the Council of 
+Europe, and representatives from both countries' police agencies have 
+endorsed the controversial cybercrime treaty 
+<http://conventions.coe.int/Treaty/EN/CadreListeTraites.htm>, which has 
+drawn protests from human rights activists and civil liberties groups. 
+Of nearly 50 participating nations, only Albania has formally adopted 
+<http://conventions.coe.int/Treaty/EN/searchsig.asp?NT=185&CM=8&DF=27/08/02>, 
+or ratified, the treaty.
+
+Michael Geist <http://aix1.uottawa.ca/%7Egeist/>, a professor at the 
+University of Ottawa who specializes in e-commerce law, says that the 
+justification for adopting such sweeping changes to Canadian law seems 
+weak.
+
+"It seems to me that the main justification they've given for all the 
+changes is that we want to ratify the cybercrime treaty and we need to 
+make changes," Geist said. "To me that's not a particularly convincing 
+argument. If there are new powers needed for law enforcement authority, 
+make that case."
+
+Geist added that "there's nothing in the document that indicates (new 
+powers) are needed. I don't know that there have been a significant 
+number of cases where police have run into problems."
+
+Probably the most sweeping change the legal blueprint contemplates is 
+compelling Internet providers and telephone companies to reconfigure 
+their networks to facilitate government eavesdropping and data-retention 
+orders. The United States has a similar requirement, called the 
+Communications Assistance for Law Enforcement Act 
+<http://www.epic.org/privacy/wiretap/calea/calea_law.html>, but it 
+applies only to pre-Internet telecommunications companies.
+
+"It is proposed that all service providers (wireless, wireline and 
+Internet) be required to ensure that their systems have the technical 
+capability to provide lawful access to law enforcement and national 
+security agencies," according to the proposal. Companies would be 
+responsible for paying the costs of buying new equipment.
+
+Sarah Andrews, an analyst at the Electronic Privacy Information Center 
+<http://www.epic.org/> (EPIC) who specializes in international law, says 
+the proposal goes beyond what the cybercrime treaty specifies. "Their 
+proposal for intercept capability talks about all service providers, not 
+just Internet providers," Andrews said. "The cybercrime treaty deals 
+only with computer data." EPIC opposes 
+<http://www.privacyinternational.org/issues/cybercrime/coe/ngo_letter_601.htm> 
+the cybercrime treaty, saying it grants too much power to police and 
+does not adequately respect privacy rights.
+
+Another section of the proposal says the Canadian Association of Chiefs 
+of Police recommends "the establishment of a national database" with 
+personal information about all Canadian Internet users. "The 
+implementation of such a database would presuppose that service 
+providers are compelled to provide accurate and current information," 
+the draft says.
+
+Gus Hosein, a visiting fellow at the London School of Economics and an 
+activist with Privacy International, calls the database "a dumb idea."
+
+"Immediately you have to wonder if you're allowed to use anonymous 
+mobile phones or whether you're allowed to connect to the Internet 
+anonymously," Hosein said.
+
+A representative for George Radwanski 
+<http://www.privcom.gc.ca/au_e.asp>, Canada's privacy commissioner, said 
+the office is reviewing the blueprint and does not "have any comments on 
+the paper as it stands."
+
+Comments on the proposal can be sent to la-al@justice.gc.ca 
+<mailto:la-al@justice.gc.ca> no later than Nov. 15.
+
+
+
+

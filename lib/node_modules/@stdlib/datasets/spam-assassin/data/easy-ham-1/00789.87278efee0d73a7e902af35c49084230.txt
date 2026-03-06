@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Thu Sep 26 11:04:55 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6E82016F03
+	for <jm@localhost>; Thu, 26 Sep 2002 11:04:55 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 11:04:55 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8Q0A9C22567 for <jm@jmason.org>;
+    Thu, 26 Sep 2002 01:10:10 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id DDB752940AD; Wed, 25 Sep 2002 17:06:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain
+    (dsl-208-151-246-47.dsl.easystreet.com [208.151.246.47]) by xent.com
+    (Postfix) with ESMTP id 9272029409A for <fork@xent.com>; Wed,
+    25 Sep 2002 17:05:15 -0700 (PDT)
+Received: (from karl@localhost) by localhost.localdomain (8.11.6/8.11.6)
+    id g8Q0HKL03367; Wed, 25 Sep 2002 17:17:20 -0700
+X-Authentication-Warning: localhost.localdomain: karl set sender to
+    kra@monkey.org using -f
+To: "Joseph S. Barrera III" <joe@barrera.org>
+Cc: FoRK <fork@spamassassin.taint.org>
+Subject: Re: dumb question: X client behind a firewall?
+References: <3D924040.1080303@barrera.org>
+From: Karl Anderson <kra@monkey.org>
+Organization: Ape Mgt.
+In-Reply-To: "Joseph S. Barrera III"'s
+    message of
+    "Wed, 25 Sep 2002 16:01:20 -0700"
+Message-Id: <m3fzvx61v4.fsf@localhost.localdomain>
+User-Agent: Gnus/5.0802 (Gnus v5.8.2) Emacs/20.7
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 25 Sep 2002 17:17:19 -0700
+
+"Joseph S. Barrera III" <joe@barrera.org> writes:
+
+> Let's say you're behind a firewall and have a NAT address.
+> Is there any way to telnet to a linux box out there in the world
+> and set your DISPLAY in some way that you can create
+> xterms on your own screen?
+
+Assuming your local display is X, SSH.
+
+-- 
+Karl Anderson      kra@monkey.org           http://www.monkey.org/~kra/
+
+

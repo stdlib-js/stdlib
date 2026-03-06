@@ -1,0 +1,43 @@
+
+{{alias}}( [x[, y[, ...args]]] )
+    Returns the minimum value.
+
+    If any argument is `NaN`, the function returns `NaN`.
+
+    When an empty set is considered a subset of the extended reals (all real
+    numbers, including positive and negative infinity), positive infinity is the
+    greatest lower bound. Similar to zero being the identity element for the sum
+    of an empty set and to one being the identity element for the product of an
+    empty set, positive infinity is the identity element for the minimum, and
+    thus, if not provided any arguments, the function returns positive infinity.
+
+    Parameters
+    ----------
+    x: number (optional)
+        First number.
+
+    y: number (optional)
+        Second number.
+
+    args: ...number (optional)
+        Numbers.
+
+    Returns
+    -------
+    out: number
+        Minimum value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 3.14, 4.2 )
+    3.14
+    > v = {{alias}}( 5.9, 3.14, 4.2 )
+    3.14
+    > v = {{alias}}( 3.14, NaN )
+    NaN
+    > v = {{alias}}( +0.0, -0.0 )
+    -0.0
+
+    See Also
+    --------
+

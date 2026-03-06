@@ -1,0 +1,139 @@
+From fork-admin@xent.com  Thu Aug 22 10:47:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6A87D43C56
+	for <jm@localhost>; Thu, 22 Aug 2002 05:46:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 22 Aug 2002 10:46:24 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7LLhPZ10876 for <jm@jmason.org>;
+    Wed, 21 Aug 2002 22:43:25 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 37F522940CA; Wed, 21 Aug 2002 14:41:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp2.nwfusion.com (smtp2.nwfusion.com [65.214.57.185]) by
+    xent.com (Postfix) with ESMTP id 21FF62940AC for <fork@xent.com>;
+    Wed, 21 Aug 2002 14:40:09 -0700 (PDT)
+Received: from sandy (sandy [65.214.57.186]) by smtp2.nwfusion.com
+    (8.10.2+Sun/8.10.2) with ESMTP id g7LLfBS20204 for <fork@xent.com>;
+    Wed, 21 Aug 2002 17:41:11 -0400 (EDT)
+Message-Id: <3155439.1029965634785.JavaMail.weblogic@sandy>
+From: grlygrl201@aol.com
+To: fork@spamassassin.taint.org
+Subject: Article to check on Network World Fusion
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 21 Aug 2002 17:41:11 -0400 (EDT)
+
+Dear C. Greg Curry, 
+
+This Network World Fusion <http://www.nwfusion.com> article was sent to you by Geege
+Guten tag, y'all.
+ 
+---------------------------------------------------------------- 
+Have you visited Network World Fusion yet? On www.nwfusion.com  you will find additional informative articles, primers and research on specific network technologies and products. Visit us today at www.nwfusion.com 
+---------------------------------------------------------------- 
+/news/2002/0819specialfocus.html:
+
+---------------------------------------------------------------- 
+				
+ 
+				
+				P2P getting down to some serious work
+      	
+ 
+    
+	 By John Fontana
+    Network World, 08/19/02
+	
+ 
+
+
+
+Just a few years removed from the mayhem of music swapping that clogged corporate networks, peer-to-peer technology is growing up and rediscovering its roots as a legitimate concept for distributed computing in corporate environments and the Internet.
+
+The turnaround is distinct since P2P has distanced itself from the darling days of Napster and has been transplanted onto the architectural drawing boards of Internet and corporate network gurus.
+
+For network executives, the about-face is showing up in such discrete places as wireless routing, identity management, Web services and grid computing. P2P has proved its worth - albeit with a few warts - in enterprise collaboration and content management applications, but its brightest future may be in the plumbing of corporate distributed computing.
+ 
+
+But even as P2P fades into the background, questions around security, standards and quality of service still have to be answered before P2P can flourish, experts say.
+The P2P evolution
+
+Regardless, P2P's evolution has hit its next stage. 
+
+"Peer-to-peer is an architecture and one that will play a substantial role in distributed computing as endpoints in the network gain more power," says Jamie Lewis, CEO and research chair of Burton Group. He says that will be particularly important for Web services as peers share processes and data. "P2P will become a fundamental part of how distributed computing evolves across the Internet and how enterprises build distributed systems internally." 
+
+Lewis says the Internet today is very rudimentary with its basic protocols for basic operations. "Now we're seriously talking about the network becoming the computer, incorporating some P2P connections and being able to share processes and power, which is what grid computing provides."
+
+Observers say it's a renaissance.
+
+"P2P's reverting to an architecture that can be applied to solve problems that by their very nature are distributed," says Neil Macehiter, senior consultant for Ovum, a research and consulting firm. "But the question is can this model provide benefits for business use."
+
+Macehiter says it can, but he cautions that security, such as removing blocks to P2P traffic on corporate firewalls, is still a major inhibitor to acceptance. 
+
+"But you can imagine something like grid extending to share application logic instead of just being a data grid or a storage grid. When you look at Web services sharing business logic in the enterprise, you see the intersection with grid and P2P," he says.
+Working together
+
+To underscore P2P's evolution, the Global Grid Forum (GGF), a 2-year-old group founded by academics and researches, merged in April with the P2P Working Group, originally founded by Intel. The groups are attempting to marry the GGF's work on harnessing servers on a grid with P2P's ability to connect desktops.
+
+"We're now trying to figure out how grid and P2P play nice together, and capture that power for use in enterprise computing," says Andrew Chien, co-director of the GGF's peer-to-peer area and CTO of Entropia, a provider of desktop grid applications.
+
+Late last month, the merged group began evaluating how P2P relates to the Open Grid Services Architecture, an effort to standardize grid computing. Chien says his group is exploring how P2P protocols for such things as registration, resource discovery and coordination of data transfer support a common grid infrastructure.
+
+And P2P's roots are reaching into other areas. It is an integral part of mobile wireless technology set for release this fall by MeshNetworks. The company's MeshLAN software extends the range of 802.11 wireless networks by making every wireless peer an endpoint in an ad-hoc P2P network and also a router/repeater to channel traffic to other peers.
+
+Using a patented multihopping technology, peers that are out of range of wireless access points or peers they wish to communicate with can hop through other peers to reach their destination, including corporate LANs. It not only increases the wireless range, it preserves throughput, which is up to 6 megabits. The technology also is mobile, letting hopping take place from nodes traveling in vehicles up to 250 mph.
+
+"P2P allows us to do the hopping, and our algorithms allow the traffic to pick the most efficient path to travel," says Rick Rotondo, vice president of disruptive technologies for MeshNetworks. "The beauty of a P2P network is that it is self-forming and self-healing."
+
+And the technology is mature.  The Defense Advanced Research Projects Agency (DARPA), which created the Internet, spent $150 million developing the peer technology for use in forming instant networks among soldiers on a battlefield. MeshNetworks licensed it from DARPA has spent an additional $27 million to create a commercial product.
+
+P2P also is key to the PingID Project to create an identity management system similar to work under way by Microsoft and the Liberty Alliance Project, which are not using P2P. 
+
+"Ideally, you need a way to create, manage and exchange digital identity information with no one in the middle of the transaction," says Andre Duran, founder of the project. He says that's P2P, but it's just one part of the equation. 
+
+"Your ID is a virtual private vault with different drawers," Duran says. "One drawer may be on your PC, one may be with a service provider, and you need a client to manage all that. We are building the infrastructure to support that."
+
+Ping ID is working on server and client software that acts like a mini-Web server and maintains a repository of user's identity information. Users have the option of exchanging IDs directly through P2P or using client/server technology to authorize a third party to dispense their identity data. 
+
+"P2P provides a level of control that other architectures don't," Duran says. "It comes down to the fact that some applications are more efficient with P2P."
+
+That is the concept that is driving P2P into so many different areas of computing.
+
+"P2P has evolved from something highly disruptive to something complementary to intranets, extranets, mobile users and all the Web integration," says Greg Bolcer, CTO of Endeavors Technology, which develops a P2P collaboration software called Magi.
+
+And although P2P is still settling into this new role, it's obvious that its reputation as a music-swapping corporate scourge are now well behind it.
+
+
+					  
+
+Copyright 2001 Network World, Inc. All rights reserved 
+---------------------------------------------------------------- 
+
+Sent by: Geege  mailto:grlygrl201@aol.com 
+
+................................................................ 
+This message was sent from 
+/news/2002/0819specialfocus.html on 
+Network World Fusion
+http://www.nwfusion.com/ 
+................................................................ 
+
+http://xent.com/mailman/listinfo/fork
+

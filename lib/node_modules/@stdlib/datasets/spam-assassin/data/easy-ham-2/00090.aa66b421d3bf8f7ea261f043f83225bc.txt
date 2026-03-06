@@ -1,0 +1,57 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:29 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C969E440D1
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:20 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:20 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFHV902187 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:17:31 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id NAA31913 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 13:54:35 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA26577; Mon, 22 Jul 2002 13:50:50 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from odin.he.net (odin.he.net [216.218.181.2]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA26538 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 13:50:39 +0100
+Received: from renegade (c-24-127-153-207.we.client2.attbi.com
+    [24.127.153.207]) by odin.he.net (8.8.6/8.8.2) with SMTP id FAA27471 for
+    <ilug@linux.ie>; Mon, 22 Jul 2002 05:50:36 -0700
+From: "Paul O'Neil" <poneil@dbiassociates.net>
+To: <ilug@linux.ie>
+Date: Mon, 22 Jul 2002 05:50:37 -0700
+Message-Id: <NIEFJJMMNPJNOPIDJBFBOEEECDAA.poneil@dbiassociates.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Importance: Normal
+Subject: [ILUG] nmap results
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I had posted previously about the 2.4 kernel using iptables I ran nmap
+against. The IPID sequence generation was all zeros. Someone said this was
+indicative of earlier kernels but was fixed about 2.4.5 version. Since I'm
+running the latest what is causing this? I ran nmap against a 2.2 kernel
+using chains and it had better results than the stock 2.4 kernel.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

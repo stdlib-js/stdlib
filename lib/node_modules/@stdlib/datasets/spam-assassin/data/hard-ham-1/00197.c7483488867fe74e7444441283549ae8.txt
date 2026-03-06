@@ -1,0 +1,153 @@
+From delias_b@email.iturf.com Fri Aug 23 07:44:19 2002
+Return-Path: <delias_b@email.iturf.com>
+Delivered-To: carrie@axess.com
+Return-Path: <delias_b@email.iturf.com>
+Delivered-To: newmail.axess.com-carrie@newmail.axess.com
+Received: (qmail 13653 invoked by uid 0); 23 Aug 2002 07:44:19 -0000
+Received: from delias_b@email.iturf.com by newmail
+	 by uid 1005 with qmail-scanner-1.10 (avp. Clear:0. Processed in 0.070776 secs); 23 Aug 2002 07:44:19 -0000
+Received: from mail.axess.com (216.162.64.150)
+  by newmail.axess.com with SMTP; 23 Aug 2002 07:44:19 -0000
+Received: from newmail.axess.com (qmailr@newmail.axess.com [216.162.64.120])
+	by mail.axess.com (8.12.0/8.12.0) with SMTP id g7N7bggm003986
+	for <CARRIE@AXESS.COM>; Fri, 23 Aug 2002 03:37:42 -0400
+Received: (qmail 13634 invoked by uid 0); 23 Aug 2002 07:44:18 -0000
+Received: from delias_b@email.iturf.com by newmail
+	 by uid 1005 with qmail-scanner-1.10 (avp. Clear:0. Processed in 0.07035 secs); 23 Aug 2002 07:44:18 -0000
+Received: from web3.iturf.com (216.33.51.131)
+  by newmail.axess.com with SMTP; 23 Aug 2002 07:44:18 -0000
+Received: from web6.iturf.com (web6 [216.33.51.134])
+	by web3.iturf.com (Postfix) with ESMTP id 1B36939D7B
+	for <CARRIE@AXESS.COM>; Fri, 23 Aug 2002 03:44:18 -0400 (EDT)
+Received: by web6.iturf.com (Postfix, from userid 0)
+	id 3875C198BD; Fri, 23 Aug 2002 03:43:58 -0400 (EDT)
+MIME-Version: 1.0
+X-Mailer: MIME::Lite 2.106  (A1.16; B2.11; Q2.03)
+To: CARRIE@AXESS.COM
+From: dELiA*s <delias_b@email.iturf.com>
+Subject: Outer Where? Right here, at dELiAs*cOm!
+Date: Thu, 22 Aug 2002 21:23:14 GMT
+Message-Id: <20020823074358.3875C198BD@web6.iturf.com>
+Content-Type: multipart/alternative; boundary="_----------=_103005139443991"
+Content-Transfer-Encoding: binary
+
+This is a multi-part message in MIME format.
+
+--_----------=_103005139443991
+Content-Disposition: inline
+Content-Transfer-Encoding: binary
+Content-Type: text/plain
+
+Dear dELiA*s Contests member,
+
+If you can see this, you have been subscribed to the
+mailing list as an HTML email user.  To switch to
+plain text mail, go to:
+
+http://lists.iturf.com/bcast/totext.epl?lid=127&em=CARRIE@AXESS.COM
+
+You are subscribed as: CARRIE@AXESS.COM
+
+You signed up to receive updates on exclusive specials and happenings at dELiAs.cOm. We'd love to continue to bring you this news, however, if you wish to remove yourself from this mailing list, go to:
+http://www.delias.com/unsubscribe.epl?lid=127&em=CARRIE@AXESS.COM&jid=1251&rid=4448995 
+
+
+--_----------=_103005139443991
+Content-Disposition: inline
+Content-Transfer-Encoding: binary
+Content-Type: text/html
+
+<img width='1' height='1' src="http://lists.iturf.com/bcast/open.gif?mid=1251&rid=4448995" alt=" ">
+<HTML>
+<HEAD>
+<TITLE>dELiAs.cOm</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" MARGINBORDER="0" WIDTH=0 MARGINHEIGHT=0 TOPMARGIN=0 LEFTMARGIN=0>
+
+<TABLE BORDER=0 CELLPADDING=10 CELLSPACING=0 ALIGN="CENTER">
+<TR>
+	<TD>
+<TABLE BORDER="0" WIDTH=704 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD>
+			<TABLE BORDER="0" WIDTH=704 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD ROWSPAN=2>
+			<A HREF="http://www.delias.com/index.html?_QQ=100-21394"><IMG SRC="http://lists.iturf.com/emails/images/06_28_02/header.gif" BORDER="0" WIDTH=217 HEIGHT=44></A></TD>
+		<TD COLSPAN=7>
+			<IMG SRC="http://lists.iturf.com/emails/images/08_22_02/forward.gif" BORDER="0" WIDTH=487 HEIGHT=26></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="http://lists.iturf.com/emails/images/06_28_02/goto.gif" BORDER="0" WIDTH=44 HEIGHT=18></TD>
+		<TD>
+			<A HREF="http://www.delias.com/cat.epl?g=category.denim&_QQ=100-21395"><IMG SRC="http://lists.iturf.com/emails/images/06_28_02/denim.gif" BORDER="0" WIDTH=57 HEIGHT=18></A></TD>
+		<TD>
+			<A HREF="http://www.delias.com/cat.epl?g=category.pants&_QQ=100-21396"><IMG SRC="http://lists.iturf.com/emails/images/06_28_02/pants.gif" BORDER="0" WIDTH=62 HEIGHT=18></A></TD>
+		<TD>
+			<A HREF="http://www.delias.com/cat.epl?g=category.shoes&_QQ=100-21397"><IMG SRC="http://lists.iturf.com/emails/images/06_28_02/shoes.gif" BORDER="0" WIDTH=56 HEIGHT=18></A></TD>
+		<TD>
+			<A HREF="http://www.delias.com/cat.epl?g=category.tops&_QQ=100-21398"><IMG SRC="http://lists.iturf.com/emails/images/06_28_02/tops.gif" BORDER="0" WIDTH=53 HEIGHT=18></A></TD>
+		<TD>
+			<A HREF="http://www.delias.com/cat.epl?g=category.roomwares&_QQ=100-21399"><IMG SRC="http://lists.iturf.com/emails/images/07_05_02/roomwares.gif" BORDER="0" WIDTH=81 HEIGHT=18></A></TD>
+		<TD>
+			<A HREF="http://www.delias.com/closeouts/index.epl?_QQ=100-21400"><IMG SRC="http://lists.iturf.com/emails/images/06_28_02/discount.gif" BORDER="0" WIDTH=134 HEIGHT=18></A></TD>
+	</TR>
+			</TABLE>
+		</TD>	
+	</TR>
+	
+	<TR>
+		<TD ALIGN="CENTER">
+			<TABLE BORDER="0" WIDTH=700 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="http://lists.iturf.com/emails/images/08_22_02/coats.gif" BORDER="0" WIDTH=392 HEIGHT=106 BORDER=0 USEMAP="#coats_Map"></TD>
+		<TD>
+			<IMG SRC="http://lists.iturf.com/emails/images/08_22_02/model.jpg" BORDER="0" WIDTH=308 HEIGHT=106></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="http://www.delias.com/item.epl?i=10081&_QQ=100-21401"><IMG SRC="http://lists.iturf.com/emails/images/08_22_02/peacoat.gif" BORDER="0" WIDTH=129 HEIGHT=160></A></TD>
+		<TD>
+			<A HREF="http://www.delias.com/item.epl?i=10082&_QQ=100-21402"><IMG SRC="http://lists.iturf.com/emails/images/08_22_02/madison.gif" BORDER="0" WIDTH=135 HEIGHT=160></A></TD>
+		<TD>
+			<A HREF="http://www.delias.com/item.epl?i=10080&_QQ=100-21403"><IMG SRC="http://lists.iturf.com/emails/images/08_22_02/caravan.gif" BORDER="0" WIDTH=128 HEIGHT=160></A></TD>
+		<TD>
+			<A HREF="http://www.delias.com/item.epl?i=10081&_QQ=100-21404"><IMG SRC="http://lists.iturf.com/emails/images/08_22_02/peacoat1.jpg" BORDER="0" WIDTH=308 HEIGHT=160></A></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="http://lists.iturf.com/emails/images/08_22_02/daisy.gif" BORDER="0" WIDTH=392 HEIGHT=112 BORDER=0 USEMAP="#daisy_Map"></TD>
+		<TD>
+			<A HREF="http://www.delias.com/item.epl?i=10081&_QQ=100-21405"><IMG SRC="http://lists.iturf.com/emails/images/08_22_02/peacoat2.jpg" BORDER="0" WIDTH=308 HEIGHT=112></A></TD>
+	</TR>
+	
+
+</TABLE>
+	</TD>
+</TR>
+	<TR>
+		<TD COLSPAN=11><BR><FONT SIZE="1" COLOR="#999999" FACE="ARIAL, HELVETICA, SANS-SERIF">You are subscribed as: CARRIE@AXESS.COM<BR><BR>You signed up to receive updates on exclusive specials and happenings at dELiAs*cOm. We'd love to continue to bring you this news, however, if you wish to remove yourself from this mailing list, <A HREF="http://www.delias.com/unsubscribe.epl?lid=127&em=CARRIE@AXESS.COM&jid=1251&rid=4448995"><FONT SIZE="1" COLOR="#999999">Click here</FONT></A>. Please do not reply to this message.  If you have any questions, comments, or would like to send feedback to dELiA*s, please send an e-mail to: <A HREF="mailto:help@delias.com"><FONT SIZE="1" COLOR="#999999" FACE="ARIAL, HELVETICA, VERDANA">help@delias.com</FONT></A>.</FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="CENTER" COLSPAN=11><BR><FONT SIZE="1" COLOR="#999999" FACE="ARIAL, HELVETICA, VERDANA">&#153; and &#169; 2002 dELiA*s Corp.  All rights reserved.</FONT></TD>
+    </TR>
+</TABLE>
+</TD>
+    </TR>
+</TABLE>
+<MAP NAME="coats_Map">
+<AREA SHAPE="rect" ALT="Shop Now" COORDS="0,88,92,106" HREF="http://www.delias.com/shop.html?_QQ=100-21406">
+</MAP>
+<MAP NAME="daisy_Map">
+<AREA SHAPE="rect" ALT="Daisy Dollars" COORDS="208,67,335,92" HREF="http://www.delias.com/daisy.html?_QQ=100-21407">
+</MAP>
+
+</BODY>
+</HTML>
+<!--L127:J1251:R4448995-->
+
+--_----------=_103005139443991--
+

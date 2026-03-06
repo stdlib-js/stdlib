@@ -1,0 +1,88 @@
+From fork-admin@xent.com  Mon Aug 19 11:04:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 884BA440FD
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7I10b619646 for <jm@jmason.org>;
+    Sun, 18 Aug 2002 02:00:41 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4E2CD2940F4; Sat, 17 Aug 2002 17:58:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id 37A75294098 for <fork@xent.com>; Sat,
+    17 Aug 2002 17:57:45 -0700 (PDT)
+Received: (qmail 19363 invoked from network); 18 Aug 2002 00:59:02 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 18 Aug 2002 00:59:02 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: "'Gary Lawrence Murphy'" <garym@canada.com>,
+	<bitbitch@magnesium.net>
+Cc: <fork@spamassassin.taint.org>
+Subject: RE: Al'Qaeda's fantasy ideology:  Policy Review no. 114
+Message-Id: <002401c24652$725b64d0$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+In-Reply-To: <m24rdudrwr.fsf@maya.dyndns.org>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 17 Aug 2002 17:59:03 -0700
+
+My understanding was 'not really'.  They suffered while Cortez was
+there, but they were hardy and exceptionally numerous when he landed.
+
+That is from C&C and also another book that I admit I only got half way
+through (but long enough for Cortez to get kicked out of the city).
+
+John Hall
+13464 95th Ave NE
+Kirkland WA 98034
+
+
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+Gary
+> Lawrence Murphy
+> Sent: Friday, August 16, 2002 9:35 PM
+> To: bitbitch@magnesium.net
+> Cc: fork@spamassassin.taint.org
+> Subject: Re: Al'Qaeda's fantasy ideology: Policy Review no. 114
+> 
+> 
+> Wasn't the Aztec population that greeted Cortez already largely
+> decimated by the microbiology brought over by DeSoto nearly a hundred
+> years before?
+> 
+> --
+> Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications
+Inc
+>  Business Advantage through Community Software :
+http://www.teledyn.com
+> "Computers are useless.  They can only give you answers."(Pablo
+Picasso)
+> 
+> http://xent.com/mailman/listinfo/fork
+
+http://xent.com/mailman/listinfo/fork
+

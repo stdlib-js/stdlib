@@ -1,0 +1,57 @@
+From fork-admin@xent.com  Wed Oct  9 10:55:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 8F18616F1E
+	for <zzzz@localhost>; Wed,  9 Oct 2002 10:53:01 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 09 Oct 2002 10:53:01 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g98NCcK06266 for <zzzz@spamassassin.taint.org>;
+    Wed, 9 Oct 2002 00:12:39 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C4A622940EA; Tue,  8 Oct 2002 16:12:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id DD7442940E9 for <fork@xent.com>; Tue,
+    8 Oct 2002 16:11:36 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id D10A43ED70;
+    Tue,  8 Oct 2002 19:17:04 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id CF81B3ED4D; Tue,  8 Oct 2002 19:17:04 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: "R. A. Hettinga" <rah@shipwright.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: The Disappearing Alliance
+In-Reply-To: <p05111a20b9c9098b7f7c@[66.149.49.6]>
+Message-Id: <Pine.BSO.4.44.0210081911530.15081-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 8 Oct 2002 19:17:04 -0400 (EDT)
+
+
+
+OK, lets break this down into the Kevin Smith worldview taht equate
+everything with Star Wars...
+
+EU is the Republic/empire and we  are..what,..the Trade  Federation?
+Stretch this out and it could be seen that the UN is the Jedi,  complete
+with faling powers.
+
+Work with me folks...
+
+
+

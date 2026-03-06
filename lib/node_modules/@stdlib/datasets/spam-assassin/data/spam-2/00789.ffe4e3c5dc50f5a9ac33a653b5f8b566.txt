@@ -1,0 +1,60 @@
+From ilug-admin@linux.ie  Tue Jul 30 10:52:20 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 74E88440EF
+	for <jm@localhost>; Tue, 30 Jul 2002 05:52:19 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 10:52:19 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6U9mLq18864 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 10:48:21 +0100
+Received: from lugh (www-data@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA29302; Tue, 30 Jul 2002 10:46:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host www-data@localhost
+    [127.0.0.1] claimed to be lugh
+Received: from urda.heanet.ie (urda.heanet.ie [193.1.219.124]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id DAA13052 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 03:25:06 +0100
+Received: from HELLO ([203.199.64.132]) by urda.heanet.ie (8.9.3/8.9.3)
+    with SMTP id DAA19639 for <ilug@linux.ie>; Sat, 20 Jul 2002 03:25:00 +0100
+Message-Id: <200207200225.DAA19639@urda.heanet.ie>
+From: Admin@urda.heanet.ie
+To: ilug@linux.ie
+Reply-To: biz@yandex.ru
+Date: 20 Jul 2002 07:09:58 +0400
+Expiry-Date: 11 Dec 2001 09:56:30 +0400
+X-Priority: 2 (High)
+MIME-Version: 1.0
+Subject: [ILUG] BNIMANIE !!!
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+Content-Type: text/html
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=koi8-r">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=koi8-r" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2919.6307" name=GENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=#ffffff>
+<DIV><FONT color=#ff0000 face=Arial size=2>תהוףר עובלרמשו הומרחי!!!</FONT></DIV>
+<DIV><FONT color=#ff0000 face=Arial size=2><A 
+href="http://dengi.150m.com/Golden%20Stream.htm">http://dengi.150m.com/Golden%20Stream.htm</A><BR><A 
+href="http://dengi.150m.com/NEW.htm">http://dengi.150m.com/NEW.htm</A></FONT></DIV></BODY></HTML>
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

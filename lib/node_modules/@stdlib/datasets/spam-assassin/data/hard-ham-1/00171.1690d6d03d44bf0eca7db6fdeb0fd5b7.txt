@@ -1,0 +1,586 @@
+From alerts@action.eff.org  Mon Aug 12 10:54:52 2002
+Return-Path: <alerts@action.eff.org>
+Delivered-To: zzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 265A944100
+	for <zzz@localhost>; Mon, 12 Aug 2002 05:52:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Mon, 12 Aug 2002 10:52:11 +0100 (IST)
+Received: from eug-app01.ctsg.com (firewall2.ctsg.com [216.210.226.98]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7A6FDb11520 for
+    <qqqqqqqqqqs-eff@spamassassin.taint.org>; Sat, 10 Aug 2002 07:15:13 +0100
+Message-Id: <1418893.1028960179734.JavaMail.IWAM_EUG-APP01@eug-app01>
+Date: Fri, 9 Aug 2002 23:16:19 -0700 (PDT)
+From: Effector List <alerts@action.eff.org>
+To: qqqqqqqqqqs-eff@spamassassin.taint.org
+Subject: EFFector 15.24: EFF Submits Comments to FCC, Johansen Trial
+    Schedule Update
+MIME-Version: 1.0
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+
+EFFector       Vol. 15, No. 24       August 9, 2002      ren@eff.org
+
+A Publication of the Electronic Frontier Foundation	  ISSN 1062-9424
+
+
+In the 224th Issue of EFFector:
+
+* EFF Submits Letter to FCC Chairman Regarding BPDG Proposal
+* Update on Intel Corp. v. Hamidi
+* DeCSS Author Johansen's Trial Rescheduled
+* Bunnie Presents Paper on XBox Reverse Engineering
+* Thanks to DefCon!
+* EFF Booth at LinuxWorld
+* Deep Links: Baen Books' Releases Reader-Friendly E-Books
+* Deep Links: Janis Ian on P2P
+* Deep Links: Hometown Paper Discusses Rep. Coble's Support of 
+	Berman P2P Hacking Bill
+* Administrivia
+
+
+For more information on EFF activities & alerts: http://www.eff.org/
+
+To join EFF or make an additional donation:
+http://www.eff.org/support/ 
+
+EFF is a member-supported nonprofit.
+Please sign up as a member today!
+--------------------------------------------------------------------
+
+* EFF Submits Letter to FCC Chairman Regarding BPDG Proposal
+
+The Honorable Michael K. Powell Chairman Federal Communications
+Commission 445 12th Street, S.W. Suite 8C453 Washington, DC 20554
+
+
+BY FACSIMILE, ELECTRONIC MAIL, AND POSTAL MAIL
+
+Dear Chairman Powell:
+
+I am writing to you today in regards to the digital television
+Broadcast Flag; specifically, I write in response to Sen. Hollings'
+and Representatives Dingell and Tauzin's letters of July 19, which
+urged you to mandate the Broadcast Flag proposal outlined in the
+final report of the Broadcast Protection Discussion Group.
+
+The Electronic Frontier Foundation (EFF) is a donor-supported
+non-profit organization that works to uphold civil liberties
+interests in technology policy and law. EFF has played a critical
+role in safeguarding crucial freedoms related to computers, the
+Internet and consumer electronics devices, defeating the restriction
+on strong cryptography exports; securing the legal principle that
+Internet wiretaps must only proceed in conjunction with a warrant;
+and defending academics, researchers and commercial interests
+against DMCA-related prosecution.
+
+EFF was an active participant in the Broadcast Protection Discussion
+Group. We attended the group's meetings and conference calls and
+participated in the group's policy and technical mailing-lists. EFF
+also maintains a web-site that was and is the only public source of
+information on the Broadcast Flag negotiations and proposal. The
+site can be found at http://bpdg.blogs.eff.org. EFF devoted
+thousands of staff-hours to publicizing the existence and nature of
+the BPDG to the public, to civil liberties and consumer-advocacy
+groups, and to entrepreneurial companies and software authors whose
+products were threatened by the proceedings.
+
+When you and I met at Esther Dyson's PC Forum last March, we spoke
+briefly about the civil liberties interests that would be undermined
+by the Broadcast Protection Discussion Group's mandate. The BPDG
+proposal will have grave consequences for innovation, free
+expression, competition and consumer interests. Worst of all, it
+will add unnecessary complexity and expense to the DTV transition,
+compromising DTV adoption itself.
+
+As you are aware, technologists have traditionally manufactured
+those devices they believed would be successful in the market, often
+in spite of the misgivings of rights-holders. From the piano roll to
+the PVR, technologists have enjoyed the freedom to ship whatever
+products they believe the public will pay for; what's more,
+innovation has always thrived best where there were the fewest
+regulatory hurdles. NTSC tuners and devices are governed by precious
+few regulations, and consequently we see a rich field of products
+that interact with them, from the VCR Plus to tuner-cards for PCs to
+the PVR. The Broadcast Flag proposal would limit technologists to
+shipping those products that met with the approval of MPAA member
+companies. No entrepreneur or software author will know, a priori,
+whether his innovative DTV product will be legal in the market until
+he has gone to the expense of building it and taking it around to
+the Hollywood studios for review.
+
+Consumers and industry alike have benefitted greatly from the "Open
+Source" or "Free Software" movement, in which technologies are
+distributed in a form that encourages end-user modification. From
+server-software like the web-wide success-story apache, to operating
+systems like GNU/Linux, to consumer applications like the Mozilla
+browser, Free Software is a powerful force for innovation, consumer
+benefit and commercial activity. The BPDG proposal implicitly bans
+Free Software DTV applications -- such as the DScaler de-interlacer
+and the GNU Radio software-defined radio program -- as these
+applications are built to be modified by end-users, something that
+is banned under the BPDG proposal. The tamper-resistance component
+of the BPDG's "Robustness Requirements" will create and entire class
+of illegal software applications, abridging the traditional First
+Amendment freedom enjoyed by software authors who create expressive
+speech in code form under one of several Free Software/Open Source
+licenses.
+
+The BPDG nominally set out to create an objective standard, a bright
+line that technologists could hew to in order to avoid liability
+when deploying their products. However, the end product of the BPDG
+was a "standard" that contained no objective criteria for legal
+technology; rather, the standard required that new technologies be
+approved by MPAA member companies. Not uncoincidentally, the only
+technologies that were approved by the MPAA -- and hence the only
+legal technologies -- were those produced by the 4C and 5C
+consortia, a group of technology companies that acted as the MPAA's
+allies throughout the BPDG process. This is an harbinger of the sort
+of regime that the BPDG standard will usher in: technology companies
+will be able to shut their competitors out of the marketplace by
+allying themselves with Hollywood, brokering deals to allow certain
+technologies and outlaw others.
+
+The marketplace is a proven mechanism for rapidly and efficiently
+producing products that increase the value and desirability of new
+technologies, such as DTV. A BPDG mandate would subvert the market
+for DTV innovation. Competing companies with lower-cost DTV
+technology alternatives would be restrained from bringing these to
+market if they failed to assuage the MPAA's concerns about
+unauthorized redistribution. Furthermore, the universe of
+unauthorized-but-lawful uses for DTV programming will be shrunk down
+to the much smaller space of explicitly authorized uses. The ability
+of the public to make unauthorized-but-lawful uses of television
+programming has been an historical force for increasing the value of
+broadcast programming, from the VCR to the PVR.
+
+Ironically, the inevitable damage that a Broadcast Flag mandate
+would do to innovation, competition and consumer interests can only
+slow down DTV adoption, by driving up the cost of DTV devices while
+reducing the number of desirable features that an open market would
+create. If the public is offered less functionality for more money,
+they will not flock to DTV.
+
+The most disheartening thing about the Broadcast Flag is that there
+is neither a strong case that the Broadcast Flag is a necessary tool
+for protecting copyright, nor that the Broadcast Flag would be
+effective in that role. The existing practice of Internet
+infringement of broadcast programming -- analog captures from
+devices that satisfy the requirements of the BPDG proposal -- would
+not be stopped by the presence of a Broadcast Flag.
+Higher-resolution DTV signals will likewise present no challenge to
+determined infringers, who can capture full-quality analog signal
+from DTV devices and then re-digitize them, suffering only a single
+generation's worth of loss-of-quality before the programming enters
+the Internet.
+
+Meanwhile, the underlying rubric for a Broadcast Flag -- that
+infringement will undermine Hollywood's business to the point that
+movies will no longer be available to the public, reducing the value
+of DTV -- is no more than superstition. No credible study or
+analysis, undertaken by a neutral party, has ever been presented to
+Congress, the FCC, the CPTWG or the BPDG supporting this notion. The
+public is being asked to sacrifice its rights in copyright; industry
+is being asked to place its right to innovation in the hands of
+entertainers; the US government is being asked to mandate
+extraordinary, unprecedented regulation of the $600 billion
+technology sector -- all on the uncorroborated opinions of a few
+studio executives.
+
+EFF welcomes the FCC's oversight of the Broadcast Flag issue. The
+BPDG proceedings took place behind a shroud of secrecy, in a
+looking-glass "public process" where only those participants the
+organizers wanted to hear from were made privy to its existence,
+where the co-chairs invented rules and processes on the fly to suit
+the needs of the entertainment interests and the technology
+companies that had privately secured a promise of a legal monopoly
+for their products, where the press was banned.
+
+The FCC has an admirable tradition of seeking and weighing public
+opinion in its proceedings. As the FCC considers the Broadcast Flag,
+EFF hopes that it will start anew, setting aside the findings of the
+BPDG in light of the concerns raised by Microsoft, Philips, Sharp,
+Thomson, and Zenith, as well as non-profit organizations including
+EFF, Consumers Union, Consumer Federation of America, the Free
+Software Foundation, Public Knowledge, digitalconsumer.org, the
+Center for Democracy in Technology, and the Computer and
+Communications Industry Association.
+
+Thank you for attention in this matter. Please let me know if we can
+be of any further assistance to you.
+
+Sincerely yours,
+
+Cory Doctorow for the Electronic Frontier Foundation
+
+
+
+Links: 
+
+EFF's BPDG Blog: 
+http://bpdg.blogs.eff.org 
+
+An overview of our concerns with the broadcast flag:
+http://bpdg.blogs.eff.org/archives/one-page.pdf 
+
+Letter from Sen. Hollings: 
+http://bpdg.blogs.eff.org/archives/000155.html 
+
+Letter from Rep. Tauzin: 
+http://bpdg.blogs.eff.org/archives/000156.html
+
+
+--------------------------------------------------------------------
+
+* Update on Intel Corp. v. Hamidi
+
+Intel Corp. v. Hamidi is now on appeal to the California Supreme
+Court. EFF filed an amicus brief in support of Ken Hamidi on Aug. 6,
+2002. The facts are simple: Over about two years, Hamidi on six
+occasions sent e-mail critical of Intel's employment practices to
+between 8,000 and 35,000 Intel employees. Intel demanded that Hamidi
+stop, but he refused. Intel obtained an injunction barring Hamidi
+from e-mailing Intel employees at their Intel e-mail addresses,
+based on the common-law tort of "trespass to chattels." ("Chattel"
+is a legal term that refers to personal property, as opposed to
+property in land.)
+
+EFF's amicus brief argues three main points.
+
+(1) Intel did not qualify for relief under "trespass to chattels"
+because Intel's e-mail servers were not themselves harmed by
+Hamidi's e-mails. If Intel was harmed, it was because the content of
+Hamidi's e-mails affected Intel employees, not because sending the
+e-mails affected the functioning of Intel's servers.
+
+(2) By focusing on unwanted "contact" with the chattel and ignoring
+the harm requirement, the court of appeal turned "trespass to
+chattels" into a doctrine that threatens common Internet activity
+like search engines and linking. For example, if a website posted a
+"no trespassing" sign, any "contact" by a search engine could be
+considered a trespass even if it caused no harm.
+
+(3) The court of appeal wrongly held that the injunction did not
+infringe Hamidi's freedom of speech. The First Amendment limits
+private parties' legal remedies in many areas of law, such as libel,
+out of concern that private parties will use the law to suppress
+criticism. The same principle should apply here, where Intel's
+claims of harm stem from the meaning of Hamidi's speech.
+
+
+Links: 
+
+The Intel v. Hamidi Archive:
+
+http://www.eff.org/Cases/Intel_v_Hamidi/
+
+- end -
+
+--------------------------------------------------------------------
+
+* DeCSS Author Johansen's Trial Rescheduled
+
+The trial of Norwegian teen Jon Johansen, who created the
+controversial DeCSS software, has been pushed back again. It is now
+scheduled to be heard on December 9, 2002, in Oslo, Norway. In the
+fall of 1999, Johansen and his team reverse-engineered the content
+scrambling system (CSS) software used to encrypt DVDs in an effort
+to build a DVD player for the Linux operating system. In January of
+2002, the Norwegian Economic Crime Unit (OKOKRIM) charged Johansen
+with a violation of Norwegian Criminal Code Section 145.2, which
+outlaws breaking into a third-party's property in order to steal
+data that one is not entitled to. This prosecution marks the first
+time the law will be used to prosecute a person for accessing his
+own property (his own DVD). Johansen faces two years in prison if
+convicted. The prosecution is based on a formal complaint filed by
+the Motion Picture Association.
+
+The trial had originally been scheduled to take place in June of 
+2002 but was rescheduled when the court could not find any qualified 
+judges to hear Johansen's case.  Now the case is scheduled to be 
+heard by a three-judge panel. Help Jon in his battle against 
+Hollywood movie studios, donate to his legal defense fund at: 
+
+http://www.eff.org/support/jonfund.html
+
+Links: 
+
+The DeCSS/Johansen Archive:
+http://www.eff.org/IP/Video/DeCSS_prosecutions/Johansen_DeCSS_case/
+
+Digital Rights Management Archive: 
+http://www.eff.org/IP/DRM/
+
+- end -
+
+--------------------------------------------------------------------
+
+* Bunnie Presents Paper on XBox Reverse Engineering
+
+Paper Explains Flaw in Videogame Security System
+
+Researcher Escapes Chilling Effect of Digital Copyright Law
+
+Electronic Frontier Foundation Media Advisory
+
+For Immediate Release: Thursday, August 9, 2002
+
+San Francisco - The Electronic Frontier Foundation (EFF) is pleased
+to announce that former MIT doctoral student Andrew "Bunnie" Huang
+will present a paper explaining a security flaw in the Microsoft
+Xbox (TM) videogame system.
+
+Huang will present his paper, "Keeping Secrets in Hardware: the
+Microsoft X-BOX Case Study," at 5:25 p.m. PDT on August 13, 2002, at
+the 2002 Workshop on Cryptographic Hardware and Embedded Systems
+(CHES 2002) in Redwood City, California (Aug. 13-15, 2002).
+
+The Xbox security system is intended to allow people to play only
+videogames authorized by Microsoft. Huang's paper "shows how a
+person could defeat that system with a small hardware investment,"
+said MIT Professor Hal Abelson, one of Huang's advisors. "More
+importantly, the paper relates the security vulnerability to a
+general design flaw shared by other high-profile security systems
+such as the government's Clipper Chip and the movie industry's
+Contents Scrambling System (CSS) for DVD players."
+
+Huang contacted EFF in March after his advisors told him that his
+preliminary findings raised potentially significant legal questions.
+With the help of Boston College law professor Joe Liu, EFF worked
+with Huang, Abelson, and MIT administrators to analyze the legal
+issues and draft letters notifying Microsoft of Huang's research
+findings and intended publication, one of the steps encouraged by
+Digital Millennium Copyright Act (DMCA).
+
+Microsoft told Huang and Abelson that while it might prefer that the
+paper not be published, it would be inappropriate to ask MIT to
+withhold the paper.
+
+"Microsoft deserves praise for making no attempt to control
+publication," said Abelson. "Their response shows that they value
+academic freedom, and that they appreciate the critical role of
+unfettered research and publication in advancing technology."
+
+Other companies have reacted otherwise, using the DMCA to threaten
+researchers. The Recording Industry Association of America last year
+warned Princeton Professor Edward Felten after his research team
+exposed weaknesses in digital music security technologies. Last
+month, Hewlett Packard (HP) threatened research collective SnoSoft
+over exposing a security vulnerability in HP's Tru64 Unix operating
+system. Soon after, HP clarified that it would not use the DMCA to
+stifle research or impede the flow of information that would improve
+computer security.
+
+Huang said that while he is glad he can openly present his paper,
+"The DMCA clearly had a chilling effect on my work. I was afraid to
+submit my research for peer review until after the EFF's efforts to
+clear potential legal restraints."
+
+"Researchers should be analyzing security, not worrying about
+getting sued," said EFF Senior Staff Attorney Lee Tien.
+
+Links:
+
+For this release:
+http://www.eff.org/IP/DMCA/20020808_eff_bunnie_pr.html
+
+For Huang's paper:
+ftp://publications.ai.mit.edu/ai-publications/2002/AIM-2002-008.pdf
+
+For the CHES program: http://islab.oregonstate.edu/ches/program.html
+
+EFF "Unintended Consequences: Three Years Under the DMCA" report:
+http://www.eff.org/IP/DMCA/20020503_dmca_consequences.pdf
+
+RIAA sues Professor Edward Felten over SDMI:
+http://www.eff.org/Legal/Cases/Felten_v_RIAA/
+
+An article about Hewlett-Packard's threatening SnoSoft:
+http://www.wired.com/news/technology/0,1282,54297,00.html
+
+- end -
+
+--------------------------------------------------------------------
+
+* EFF Thanks Defcon
+
+EFF thanks The Dark Tangent and other organizers of the DEF CON X
+convention for their generous donation of exhibition space at DEF
+CON (http://www.defcon.org/). DEF CON is an "underground" computer
+security conference held each summer in Las Vegas.
+
+Links: 
+
+Defcon Website: 
+http://www.defcon.com/
+
+- end -
+
+--------------------------------------------------------------------
+
+* EFF Booth at LinuxWorld
+
+Come visit EFF at booth #488 at Linuxworld next week. We'll be
+passing out information, good cheer, and a slew of new stickers.
+
+When: August 13 - 15
+	10a - 5p
+
+Where: Booth #5
+	Moscone Center 
+	747 Howard Street
+	San Francisco, CA 94103
+
+Links: 
+
+LinuxWorld Conference Website: 
+http://www.linuxworldexpo.com/
+
+Floor Map and EFF Booth:
+http://www.linuxworldexpo.com/linuxworldexpo/v31/floorplan/floorplan
+.cvn?b=97& exbID=50
+
+- end -
+
+--------------------------------------------------------------------
+
+Deep Links 
+
+Deep Links is a new department in the EFFector featuring noteworthy 
+news-items, victories and threats from around the Internet.
+
+
+* Baen Books expands fair-use-friendly e-book program
+
+Baen Books will bind a CD-ROM into the October 2002 hardcover
+edition of *War of Honor,* the latest volume in David Weber's epic
+Honor Harrington space-opera. The CD will contain at least 22
+complete novels, all in open formats like html and RTF, with the
+fair-use-friendly admonishment "This disk and its contents may be
+copied and shared but NOT sold." Included on the disk are the entire
+Honor Harrington series to date, as well as other titles from the
+Baen line, including Keith Laumer's *Retief!* and Larry Niven and
+Jerry Pournelle's *Fallen Angels*.
+
+Baen has been a banner-carrier for fair-use in electronic
+publishing, shipping text and html files that can be played on a
+multitude of devices. Other publishers have chosen to publish their
+material in copy-controlled formats that make it impossible to
+legally loan or resell the titles you purchase, are locked to a
+specific device, can't play on every operating system, and
+occasionally lock out assistive technology like the screen-readers
+employed by the blind.
+
+Dmitry Skylarov, a Russian scientist, was arrested in July 2001, for
+demonstrating how end-users could defeat the copy-prevention
+employed by Adobe's e-book technology. Adobe asked the FBI to arrest
+Skylarov for violating the Digital Millennium Copyright Act (DMCA),
+which makes it a crime to describe techniques for circumventing
+copy-prevention technology. Though Skylarov was later released, his
+employer, ElcomSoft, is still facing charges in the USA, and the
+Russian government has issued an advisory warning Russian scientists
+to steer clear of American technical conferences until the DMCA is
+repealed.
+
+Here is Baen's statement on the CD release:
+
+You are about to start playing with a CD-ROM that has fairly
+extraordinary content. As of this writing it includes twenty-two
+UNENCRYPTED novels in several formats, the ten Honor Harrington
+Novels, 3 Honor Harrington Anthologies and 9 novels by friends of
+Honor, and by the time of distribution it may well contain more.
+(More than twenty novels for free, and with no stupid codes to work
+around. Think of that.) The reason for the plethora of formats is to
+try to please the people who want to read the novels on their Palm
+Pilots or other text-specialized palm-sized devices.
+
+Links:
+
+Baen Books's page for *War of Honor*:
+http://www.baen.com/orientation.htm
+
+Slashdot discussion of *War of Honor* release:
+http://slashdot.org/article.pl?sid=02/08/03/2314232&mode=flat&tid=
+149
+
+EFF documents on Dmitry Skylarov and ElcomSoft:
+http://www.eff.org/IP/DMCA/US_v_Elcomsoft/
+
+EFF documents on the Digital Millennium Copyright Act (DMCA):
+http://www.eff.org/IP/DMCA/
+
+- end -
+
+* Singer/Songwriter Janis Ian on P2P Lucid article on the benefits of
+peer-to-peer networks form an artists' perspective.
+http://www.janisian.com/article-internet_debacle.html
+
+- end -
+
+* Hometown Paper Discusses Rep. Coble's Support of Berman P2P Hacking
+Bill Column on how a good Representative can make a bad call.
+http://www.news-record.com/news/columnists/staff/cone04.htm
+
+- end -
+
+
+--------------------------------------------------------------------
+
+Administrivia
+
+EFFector is published by:
+
+The Electronic Frontier Foundation 
+454 Shotwell Street 
+San Francisco
+CA 94110-1914 USA 
++1 415 436 9333 (voice) 
++1 415 436 9993 (fax) 
+http://www.eff.org/
+
+Editor: Ren Bucholz, 
+	Activist 
+	ren@eff.org
+
+To Join EFF online, or make an additional donation, go to: 
+http://www.eff.org/support/
+
+Membership & donation queries: 
+membership@eff.org 
+
+General EFF, legal, policy or online resources queries: 
+ask@eff.org
+
+Reproduction of this publication in electronic media is encouraged.
+Signed articles do not necessarily represent the views of EFF. To
+reproduce signed articles individually, please contact the authors
+for their express permission. Press releases and EFF announcements &
+articles may be reproduced individually at will.
+
+To change your address, plese visit:
+http://action.eff.org/subscribe/. 
+
+>>From there, you can update all your information. If you have already 
+subscribed to the EFF Action Center, please visit:
+http://action.eff.org/action/login.asp.
+
+(Please ask ren@eff.org to manually remove you from the list if this
+does not work for you for some reason.)
+
+Back issues are available at: 
+http://www.eff.org/effector
+
+To get the latest issue, send any message to
+effector-reflector@eff.org (or er@eff.org), and it will be mailed to
+you automatically. You can also get it via the Web at:
+http://www.eff.org/pub/EFF/Newsletters/EFFector/current. html
+
+
+++++++++++++++++++++++++
+You received this message because qqqqqqqqqqs-eff@spamassassin.taint.org is a member of 
+the mailing list originating from alerts@action.eff.org. To unsubscribe from 
+all mailing lists originating from alerts@action.eff.org, send an email to 
+alerts@action.eff.org with "Remove" as the only text in the subject line.
+
+

@@ -1,0 +1,34 @@
+
+{{alias}}( F )
+    Computes the Fibonacci number index.
+
+    If not provided a nonnegative integer value, the function returns `NaN`.
+
+    If provided `F <= 1` or `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    F: integer
+        Fibonacci number.
+
+    Returns
+    -------
+    n: number
+        Fibonacci number index.
+
+    Examples
+    --------
+    > var n = {{alias}}( 2 )
+    3
+    > n = {{alias}}( 3 )
+    4
+    > n = {{alias}}( 5 )
+    5
+    > n = {{alias}}( NaN )
+    NaN
+    > n = {{alias}}( 1 )
+    NaN
+
+    See Also
+    --------
+

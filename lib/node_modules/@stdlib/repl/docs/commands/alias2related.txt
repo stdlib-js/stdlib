@@ -1,0 +1,44 @@
+
+alias2related( alias )
+    Returns aliases related to a specified alias.
+
+    Parameters
+    ----------
+    alias: any
+        Alias (an object path string or reference).
+
+    Returns
+    -------
+    out: Array|undefined
+        Related aliases.
+
+    Examples
+    --------
+    > var v = alias2related( 'base.sin' )
+    [...]
+
+
+alias2related( instance )
+    Returns aliases associated with a provided class instance.
+
+    Only direct instances of documented built-in constructors are supported.
+
+    Parameters
+    ----------
+    instance: any
+        Class instance.
+
+    Returns
+    -------
+    out: Array|undefined
+        Related aliases.
+
+    Examples
+    --------
+    > var v = alias2related( new Float64Array( 10 ) )
+    [...]
+
+    See Also
+    --------
+    alias2pkg, aliases, pkg2related
+

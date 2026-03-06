@@ -1,0 +1,57 @@
+From fork-admin@xent.com  Mon Oct  7 21:56:36 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5A4B316F19
+	for <jm@localhost>; Mon,  7 Oct 2002 21:56:15 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 21:56:15 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g97KeUK16207 for <jm@jmason.org>;
+    Mon, 7 Oct 2002 21:40:31 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 97CB52940D7; Mon,  7 Oct 2002 13:40:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id E93522940D3 for <fork@xent.com>; Mon,
+    7 Oct 2002 13:39:44 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 1A2773ED52;
+    Mon,  7 Oct 2002 16:45:03 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 18AC83EBCC for <fork@xent.com>; Mon,
+    7 Oct 2002 16:45:03 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: fork@spamassassin.taint.org
+Subject: Quick, Outlaw Touching
+Message-Id: <Pine.BSO.4.44.0210071640450.18452-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 7 Oct 2002 16:45:02 -0400 (EDT)
+
+
+I know I heard of this a few years back but Wired and Slashyrot are both
+running stories on 10mbs data transfer via human touch.
+
+Oh I can see it now, The first bicostal file exchange system that will see
+the newsest Offspring tunes distribute by handshake, copulation and
+moshpiting.
+
+http://www.newscientist.com/news/news.jsp?id=ns99992891
+http://www.news.com.au/common/story_page/0,4057,5239758%255E13762,00.html
+http://slashdot.org/articles/02/10/07/0238234.shtml?tid=100
+
+
+

@@ -1,0 +1,67 @@
+
+{{alias}}( p, n )
+    Evaluates the quantile function for the Wilcoxon signed rank test statistic
+    with `n` observations at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If not provided a positive integer for `n`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    n: integer
+        Number of observations.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 5 )
+    11
+    > y = {{alias}}( 0.5, 4 )
+    5
+
+    > y = {{alias}}( 1.1, 5 )
+    NaN
+    > y = {{alias}}( -0.2, 5 )
+    NaN
+
+    > y = {{alias}}( NaN, 5 )
+    NaN
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+
+
+{{alias}}.factory( n )
+    Returns a function for evaluating the quantile function of the Wilcoxon
+    signed rank test statistic with `n` observations.
+
+    Parameters
+    ----------
+    n: integer
+        Number of observations.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 8 );
+    > var y = myQuantile( 0.4 )
+    16
+    > y = myQuantile( 1.0 )
+    36
+
+    See Also
+    --------
+

@@ -1,0 +1,57 @@
+From fork-admin@xent.com  Tue Sep 24 15:52:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0261F16F03
+	for <jm@localhost>; Tue, 24 Sep 2002 15:52:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 15:52:32 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8OE5AC06660 for <jm@jmason.org>;
+    Tue, 24 Sep 2002 15:05:10 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B537029410A; Tue, 24 Sep 2002 06:59:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from Boron.MeepZor.Com (i.meepzor.com [204.146.167.214]) by
+    xent.com (Postfix) with ESMTP id 46615294108 for <FoRK@Xent.Com>;
+    Tue, 24 Sep 2002 06:58:40 -0700 (PDT)
+Received: from Golux.Com (dmz-firewall [206.199.198.4]) by
+    Boron.MeepZor.Com (8.11.6/8.11.6) with ESMTP id g8OE2NB28712;
+    Tue, 24 Sep 2002 10:02:23 -0400
+Message-Id: <3D907351.2B191F58@Golux.Com>
+From: Rodent of Unusual Size <Ken.Coar@Golux.Com>
+Organization: The Apache Software Foundation
+X-Mailer: Mozilla 4.79 [en] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: Flatware or Road Kill? <FoRK@xent.com>
+Subject: A different sort of Fox News
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 24 Sep 2002 10:14:41 -0400
+
+This was just *too* funny.. rotflma.
+
+http://www.ozyandmillie.org/comics/om20020924.gif
+-- 
+#ken	P-)}
+
+Ken Coar, Sanagendamgagwedweinini  http://Golux.Com/coar/
+Author, developer, opinionist      http://Apache-Server.Com/
+
+"Millennium hand and shrimp!"
+
+

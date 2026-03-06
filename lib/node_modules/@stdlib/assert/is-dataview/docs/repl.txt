@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Tests if a value is a DataView.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a DataView.
+
+    Examples
+    --------
+    > var buf = new {{alias:@stdlib/array/buffer}}( 10 );
+    > var bool = {{alias}}( new {{alias:@stdlib/array/dataview}}( buf ) )
+    true
+    > bool = {{alias}}( [] )
+    false
+
+    See Also
+    --------
+

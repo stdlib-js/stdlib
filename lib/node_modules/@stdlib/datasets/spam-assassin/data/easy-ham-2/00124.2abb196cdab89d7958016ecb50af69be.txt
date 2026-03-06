@@ -1,0 +1,58 @@
+From ilug-admin@linux.ie  Mon Jul 29 11:27:58 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4DD754414E
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:10 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6RGg8i08778 for
+    <jm-ilug@jmason.org>; Sat, 27 Jul 2002 17:42:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA22311; Sat, 27 Jul 2002 17:40:36 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail02.svc.cra.dublin.eircom.net
+    (mail02.svc.cra.dublin.eircom.net [159.134.118.18]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id RAA22272 for <ilug@linux.ie>; Sat,
+    27 Jul 2002 17:40:28 +0100
+Received: (qmail 60447 messnum 226823 invoked from
+    network[194.125.186.186/ts01-058.kilkenny.indigo.ie]); 27 Jul 2002
+    16:39:58 -0000
+Received: from ts01-058.kilkenny.indigo.ie (HELO eircom.net)
+    (194.125.186.186) by mail02.svc.cra.dublin.eircom.net (qp 60447) with SMTP;
+    27 Jul 2002 16:39:58 -0000
+Message-Id: <3D42254B.9090609@eircom.net>
+Date: Sat, 27 Jul 2002 05:44:59 +0100
+From: nils Olofsson <nils@eircom.net>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.0) Gecko/20020605
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] gnome2
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+hi all,
+I installed gentoo 1.2 with gnome2 but when right click on the desktop 
+and  under disks i get not options, What file(s) do i have to edit to 
+get this option enabled.
+Any ideas ?.
+regards,
+Nils
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

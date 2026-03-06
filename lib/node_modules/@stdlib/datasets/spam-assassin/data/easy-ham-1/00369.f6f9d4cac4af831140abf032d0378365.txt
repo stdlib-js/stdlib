@@ -1,0 +1,82 @@
+From fork-admin@xent.com  Mon Sep  2 13:13:38 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8512B47C86
+	for <jm@localhost>; Mon,  2 Sep 2002 07:46:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:46:29 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8200sZ09145 for <jm@jmason.org>;
+    Mon, 2 Sep 2002 01:00:54 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7A51A2940BB; Sun,  1 Sep 2002 16:58:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id BF835294099 for <fork@xent.com>;
+    Sun,  1 Sep 2002 16:57:08 -0700 (PDT)
+Received: (qmail 2826 invoked by uid 1111); 1 Sep 2002 23:59:24 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: Bill Stoddard <bill@wstoddard.com>
+Cc: "Fork@Xent.Com" <fork@spamassassin.taint.org>
+Subject: RE: Gasp!
+In-Reply-To: <JHEPKCEMGPKFFDHHDDKDIEKAFDAA.bill@wstoddard.com>
+Message-Id: <Pine.LNX.4.33.0209011641450.2749-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 1 Sep 2002 16:59:24 -0700 (PDT)
+
+On Sun, 1 Sep 2002, Bill Stoddard wrote:
+
+> >
+> > "Red Hat Linux Advanced Server provides many high end features such as:
+> > Support for Asynchronous I/O. Now read I/O no longer needs to stall your
+> > application while waiting for completion."
+>
+> Can you provide a reference?  I could find it myself but I'm too lazy.
+
+Well, i saw it on the Compaq Testdrive site, then had to seriously dig on
+the redhat site... It's in one of their whitepapers...
+http://www.redhat.com/pdf/as/as_rasm.pdf
+
+
+> > Could it be? After 20 years without this feature UNIX finally
+> > catches up to
+> > Windows and has I/O that doesnt totally suck for nontrivial apps? No way!
+>
+> Do /dev/poll and FreeBSD's KQ event driven APIs count? IMHO, true async
+> io as implemented by Windows 4.0 and beyond is pretty slick, but the
+> programming model is substantially more complex than programming to an
+> event API like /dev/poll. And true async does not buy much if the
+> system call overhead is low (as it is with Linux).
+
+I havent used the FBSD poll, as it's not portable, select and poll(still not
+100%) are all that exist in the UNIX world. Redhat of course doesnt count as
+portable either, but it's nice they are trying. The Windows I/O model does
+definately blow the doors off the UNIX one, but then they had select to
+point at in it's suckiness and anything would have been an improvement. UNIX
+is just now looking at it's I/O model and adapting to a multiprocess
+multithreaded world so it's gonna be years yet before a posix API comes out
+of it. Bottom line is the "do stuff when something happens" model turned out
+to be right, and the UNIX "look for something to do and keep looking till
+you find it no matter how many times you have to look" is not really working
+so great anymore.
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+

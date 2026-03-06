@@ -1,0 +1,83 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Fri Aug  9 15:23:23 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 304A6440E0
+	for <jm@localhost>; Fri,  9 Aug 2002 10:22:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:22:10 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EG2b05696 for
+    <jm-sa@jmason.org>; Fri, 9 Aug 2002 15:16:02 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id KAA05011 for
+    <jm-sa@jmason.org>; Fri, 9 Aug 2002 10:43:33 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17d6FZ-0004I2-00; Fri,
+    09 Aug 2002 02:40:05 -0700
+Received: from hippo.star.co.uk ([195.216.14.9]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17d6FN-0003Vv-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Fri, 09 Aug 2002 02:39:53 -0700
+Received: from MATT_LINUX by hippo.star.co.uk via smtpd (for
+    usw-sf-lists.sourceforge.net [216.136.171.198]) with SMTP; 9 Aug 2002
+    09:30:59 UT
+Received: (qmail 2371 invoked from network); 7 Aug 2002 09:34:27 -0000
+Received: from unknown (HELO startechgroup.co.uk) (10.2.100.178) by
+    matt?dev.int.star.co.uk with SMTP; 7 Aug 2002 09:34:27 -0000
+Message-Id: <3D538D80.4000602@startechgroup.co.uk>
+From: Matt Sergeant <msergeant@startechgroup.co.uk>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0rc1) Gecko/20020426
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: "Rose, Bobby" <brose@med.wayne.edu>
+Cc: Mike Kercher <mike@CamaroSS.net>,
+	spamassassin-talk@lists.sourceforge.net
+Subject: Re: [SAtalk] How'd this one slip through?
+References: <D79A56AD131896448D0860DEE07CBE1FE155@med-core07.med.wayne.edu>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Fri, 09 Aug 2002 10:38:08 +0100
+Date: Fri, 09 Aug 2002 10:38:08 +0100
+
+Rose, Bobby wrote:
+> Ouch ;-)  Although I'm not ready to give up razor just yet, I'd like to
+> see a pyzor check in SA.  I don't think it even needs to be written in
+> perl.  SA is actually calling razor-check and razor-report as well as
+> dccproc for those checks so it should be nothing more than duplication
+> of coding to add pyzor. 
+
+The problem is that Python has a much longer startup time than Perl 
+(though this may have changed recently, I don't know). This is partly 
+why Python was never very popular for CGIs.
+
+Matt.
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

@@ -1,0 +1,104 @@
+From fork-admin@xent.com  Mon Aug 19 11:04:09 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 782E4440F9
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:15 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7HFhc602968 for <jm@jmason.org>;
+    Sat, 17 Aug 2002 16:43:41 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A93542940E8; Sat, 17 Aug 2002 08:36:12 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id D14C42940E3 for <fork@xent.com>;
+    Sat, 17 Aug 2002 08:35:20 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-043.ptrb.interhop.net
+    [165.154.190.107]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g7HFAh107766 for <fork@xent.com>; Sat, 17 Aug 2002 11:10:43 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id A34D61C336;
+    Sat, 17 Aug 2002 11:15:36 -0400 (EDT)
+To: fork@spamassassin.taint.org
+Subject: Re: Re[2]: Al'Qaeda's fantasy ideology:  Policy Review no. 114
+References: <58113821767.20020816230818@magnesium.net>
+    <m21y8ydr6q.fsf@maya.dyndns.org>
+    <32120604960.20020817010121@magnesium.net>
+    <m2ofc2c9sy.fsf@maya.dyndns.org>
+    <20020817070601.GG9238@ibu.internal.qu.to>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2k7mpcy93.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 17 Aug 2002 11:15:36 -0400
+
+>>>>> "N" == Ned Jackson Lovely <fork@qu.to> writes:
+
+    N> On Sat, Aug 17, 2002 at 01:51:25AM -0400, Gary Lawrence Murphy
+    N> wrote:
+
+    N> By choosing that term you are certainly attempting to frame the
+    N> debate by choosing a fear-charged word.
+
+And "moral relativism" is not?
+
+    N> If somebody maximizes their gratification by slaughtering
+    N> people, we shouldn't just try to understand them. We should try
+    N> to stop them. 
+
+The history of crime and punishment illustrates the need for /both/,
+and while there are slaughter-maxima people living in Queens (or
+Montreal or Milan or ...), I would not condone blanket justifications
+to "cure" everyone who looks like them with suspended rights and
+violence.  Do we suspect every tall black man because of OJ Simpson?
+
+By the logic of that article, which is apparently endorsed by at least
+a few FoRKers, should I keep all Americans at an arms distance for
+fear I'll be infected with the same paranoiac blood-lust meme-virus?
+After-all, it's a disease, just like a plague, right?  
+
+Ok, ok, so maybe I /do/ keep a few Yanks in quarantine, fenced off
+with chickenwire out in the back 40, but that's besides the point. At
+least I feed them.
+
+Wait, wait ... enough tit-for-tat, how about a technical question: How
+would _you_ /know/ if you _were_ infected?  Wouldn't the schizophrenia
+of the diseased meme be transparent to you, perfectly bonded into your
+reality?
+
+    N> People require a touch more effort.
+
+Spoken exactly like those people I do not understand, because the
+specist statement is patently false by /all/ measures known to
+science, yet they so adamantly believe the farce is truth.  Would you
+also believe the Earth is at the center of the Universe, put here for
+our exclusive enjoyment because God loves us best?
+
+"To the enlightened mind, there is no difference between a Brahmin
+and a dog" --- guess which moral relativist said it and where.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+

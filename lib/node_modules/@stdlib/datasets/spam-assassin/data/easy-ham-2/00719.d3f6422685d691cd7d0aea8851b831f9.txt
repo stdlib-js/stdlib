@@ -1,0 +1,193 @@
+From exmh-workers-admin@redhat.com  Thu Jul 25 11:00:18 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B793B440D2
+	for <jm@localhost>; Thu, 25 Jul 2002 06:00:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:00:15 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6OKLL405385 for
+    <jm-exmh@jmason.org>; Wed, 24 Jul 2002 21:21:21 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id A45A14042A; Wed, 24 Jul 2002
+    16:19:20 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id A38A4403F4
+    for <exmh-workers@listman.redhat.com>; Wed, 24 Jul 2002 15:47:31 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6OJlVj27508 for exmh-workers@listman.redhat.com; Wed, 24 Jul 2002
+    15:47:31 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6OJlVR27494 for
+    <exmh-workers@redhat.com>; Wed, 24 Jul 2002 15:47:31 -0400
+Received: from austin-jump.vircio.com
+    (IDENT:O9BPBeRL9cAGzLOKni0n+PKGsSoLdOxb@jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g6OGMbs10277
+    for <exmh-workers@redhat.com>; Wed, 24 Jul 2002 12:22:37 -0400
+Received: (qmail 11455 invoked by uid 104); 24 Jul 2002 16:34:18 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4213. . Clean. Processed in 0.31822
+    secs); 24/07/2002 11:34:18
+Received: from deepeddy.vircio.com ([10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 24 Jul 2002 16:34:18 -0000
+Received: (qmail 31038 invoked from network); 24 Jul 2002 16:34:17 -0000
+Received: from localhost (HELO deepeddy.vircio.com) ([127.0.0.1])
+    (envelope-sender <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03)
+    with SMTP for <exmh-workers@redhat.com>; 24 Jul 2002 16:34:17 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Anders Eriksson <aeriksson@fastmail.fm>, exmh-workers@spamassassin.taint.org
+Subject: Re: PATCH (was: Re: Another bug)
+In-Reply-To: <1027524228.24686.TMDA@deepeddy.vircio.com>
+References: <20020724093457.D1035470D@tippex.localdomain>
+    <1027524228.24686.TMDA@deepeddy.vircio.com>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_1737280444P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1027528456.30806.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1027960457.4e28b7@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Wed, 24 Jul 2002 11:34:14 -0500
+
+--==_Exmh_1737280444P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Chris Garrigues <cwg-exmh@DeepEddy.Com>
+> Date:  Wed, 24 Jul 2002 10:23:47 -0500
+>
+> Okay, I've just patched and sourced it into my running exmh, so I'll let you 
+> know if anything breaks.
+
+I have a folder that contains one unseen message and nothing else.  I select 
+the folder from flist:
+
+11:17:40 ****************
+11:17:40 Changing to Housekeeping/Monitor ...
+11:17:40 Scan_CacheUpdate error {bad text index ".0"}
+11:17:40 Scan_CacheUpdate {952 microseconds per iteration}
+11:17:40 Exmh_CheckPoint {1409 microseconds per iteration}
+11:17:40 {loading .xmhcache}
+11:17:40 Ftoc_Reset Housekeeping/Monitor has 0 msgs
+11:17:40 scan +Housekeeping/Monitor last:1000
+11:17:40 Ftoc_Reset Housekeeping/Monitor has 1 msgs
+11:17:40 Ftoc_ShowSequences Housekeeping/Monitor
+11:17:40 unseen: 1
+11:17:40 Scan_Folder {76527 microseconds per iteration}
+11:17:40 Flist_Done
+11:17:40 4 unread msgs in 3 folders
+11:17:40 Scan_CacheUpdate error {bad text index ".0"}
+11:17:40 Housekeeping/Monitor
+11:17:40 Mh_SequenceUpdate Housekeeping/Monitor clear cur {} public
+11:17:40 Folder_Change Housekeeping/Monitor {162590 microseconds per iteration}
+11:17:42 BackgroundCheckup
+
+I select the message.
+
+11:17:54 Msg_Pick line=1
+11:17:54 Msg_Change id=1
+11:17:54 Mh_SetCur +Housekeeping/Monitor cur 1
+11:17:54 Mh_SequenceUpdate Housekeeping/Monitor replace cur 1 public
+11:17:54 Ftoc_ShowSequences Housekeeping/Monitor
+11:17:54 cur: 1
+11:17:54 unseen: 1
+11:17:54 Ftoc_RescanLines {16313 microseconds per iteration}
+11:17:54 FastPath part=0=1
+11:17:54 Msg_TextHighlight 7.0 9.0
+11:17:54 Widget_TextPad h=64 last=65.0 top=3.0
+11:17:54 
+11:17:54 FlistUnseenFolder Housekeeping/Monitor
+11:17:54 {In FlagInner spool iconspool labelup}
+11:17:54 {Setting flag bitmap to iconspool}
+11:17:54 {Set flag state to spool}
+11:17:55 Mh_SequenceUpdate Housekeeping/Monitor del unseen 1 public
+11:17:55 {}
+11:17:55 
+11:17:55 Msg_Change {248654 microseconds per iteration}
+
+I delete the message.
+
+11:18:27 Msg_Remove Ftoc_RemoveMark
+11:18:27 Msg_Remove l=1 m=1
+11:18:27 Ftoc_RescanLines {15914 microseconds per iteration}
+11:18:27 Mh_SequenceUpdate Housekeeping/Monitor clear cur {} public
+11:18:27 Ftoc_RescanLines {15278 microseconds per iteration}
+11:18:27 
+11:18:27 Changes pending; End of folder
+
+I click on commit and the message remains in my ftoc even though it's deleted.
+
+11:18:43 Mh_SequenceUpdate Housekeeping/Monitor del unseen 1 public
+11:18:43 {}
+11:18:43 Committing 1 changes...
+11:18:43 Ftoc_RescanLines {14595 microseconds per iteration}
+11:18:43 Mh_SequenceUpdate Housekeeping/Monitor clear cur {} public
+11:18:43 Mh_Rmm 1
+11:18:43 BgAction {Rmm Housekeeping/Monitor} {Mh_Rmm Housekeeping/Monitor 1}
+11:18:43 BackgroundPending {Rmm Housekeeping/Monitor}
+11:18:43 ok
+11:18:43 Scan_CacheUpdate error {bad text index ".0"}
+11:18:43 Scan_CacheUpdate {1071 microseconds per iteration}
+11:18:43 BackgroundComplete {Rmm Housekeeping/Monitor}
+11:18:43 background actions complete
+
+I also noticed a few  references to ftoc(curline) instead of ftoc(curLine).
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_1737280444P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9PtcGK9b4h5R0IUIRAtPnAJ9GGJF16cJnH+bsHRKi+FwcxHtJogCdHk8F
+2JygBKhDfRFXvfn6l6hhxN0=
+=Ek5X
+-----END PGP SIGNATURE-----
+
+--==_Exmh_1737280444P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

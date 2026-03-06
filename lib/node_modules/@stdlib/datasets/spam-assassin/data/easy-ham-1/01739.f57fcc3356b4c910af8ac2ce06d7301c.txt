@@ -1,0 +1,21 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Mon Sep  9 19:15:37 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Mon, 9 Sep 2002 13:15:37 -0500
+Subject: [Spambayes] spambayes package?
+In-Reply-To: <200209091522.g89FMqL29316@pcp02138704pcs.reston01.va.comcast.net>
+References: <15738.34711.467756.145336@12-248-11-90.client.attbi.com>
+        <200209080247.g882lNt17033@pcp02138704pcs.reston01.va.comcast.net>
+        <20020909131606.GA1136@cthulhu.gerg.ca>
+        <15740.44036.651321.285627@12-248-11-90.client.attbi.com>
+        <200209091522.g89FMqL29316@pcp02138704pcs.reston01.va.comcast.net>
+Message-ID: <15740.58697.697962.77038@12-248-11-90.client.attbi.com>
+
+
+    Guido> Why would we care about installing a few extra files, as long as
+    Guido> they're inside a package?
+
+I guess you needn't worry about that.  It just doesn't seem "clean" to me.
+
+S
+

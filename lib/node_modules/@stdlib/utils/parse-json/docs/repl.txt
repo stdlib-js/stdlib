@@ -1,0 +1,42 @@
+
+{{alias}}( str[, reviver] )
+    Attempts to parse a string as JSON.
+
+    Function behavior differs from `JSON.parse()` as follows:
+
+    - throws a `TypeError` if provided any value which is not a string.
+    - throws a `TypeError` if provided a `reviver` argument which is not a
+      function.
+    - returns, rather than throws, a `SyntaxError` if unable to parse a string
+      as JSON.
+
+    Parameters
+    ----------
+    str: string
+        String to parse.
+
+    reviver: Function (optional)
+        Transformation function.
+
+    Returns
+    -------
+    out: any|Error
+        Parsed value or an error.
+
+    Examples
+    --------
+    > var obj = {{alias}}( '{"beep":"boop"}' )
+    { 'beep': 'boop' }
+
+    // Provide a reviver:
+    > function reviver( key, value ) {
+    ...     if ( key === '' ) { return value; }
+    ...     if ( key === 'beep' ) { return value; }
+    ... };
+    > var str = '{"beep":"boop","a":"b"}';
+    > var out = {{alias}}( str, reviver )
+    { 'beep': 'boop' }
+
+    See Also
+    --------
+

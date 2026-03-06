@@ -1,0 +1,49 @@
+From rssfeeds@jmason.org  Tue Sep 24 10:47:28 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B86D716F03
+	for <jm@localhost>; Tue, 24 Sep 2002 10:47:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:47:27 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8O806C26532 for
+    <jm@jmason.org>; Tue, 24 Sep 2002 09:00:06 +0100
+Message-Id: <200209240800.g8O806C26532@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: aaronsw <rssfeeds@spamassassin.taint.org>
+Subject: Feeling Lucky
+Date: Tue, 24 Sep 2002 08:00:06 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.aaronsw.com/weblog/000609
+Date: 2002-09-23T00:51:21-06:00
+
+I've received an _incredibly kind invitation_; I sure hope I can take it! I 
+feel sort of bad though, because I think other people deserve it more than I 
+do. 
+
+Hm, the next few weeks are pretty crazy: 
+
+*Thu 26:* Edward Tufte Course[1] and MSI[2] member's night, Chicago.
+*Fri 27:* OSCOM[3], Berkeley. Bookmobile launch[4], SF. _(Unlikely to attend.)_
+*SatSun:* Hoshana Rabba, Shemini Atzeret, Simchat Torah. _(Jewish Holidays)_
+*30-Oct3:* OSXCON[5], Santa Clara. _(Need someplace to stay. Anyone?)_
+*Mon 7:* Bernstein's oral argument in crypto export case[6], San Francisco. _
+(Ditto.)_
+*Tues 8:* Bookmobile[7] arrives in D.C.
+*Wed 9:* Lessig's oral argument in Eldred case[8], D.C.
+
+
+
+[1] http://www.edwardtufte.com/tufte/courses
+[2] http://msichicago.org/
+[3] http://www.oscom.org/conferences/berkeley2002/
+[4] http://webdev.archive.org/texts/bookmobile-open_house.php
+[5] http://conferences.oreillynet.com/macosx2002/
+[6] http://export.cr.yp.to
+[7] http://webdev.archive.org/texts/bookmobile.php
+[8] http://eldred.cc/
+
+

@@ -1,0 +1,36 @@
+
+{{alias}}()
+    Returns a `Buffer` containing image data of Fédèle Azari's gelatin silver
+    print of an airplane, viewed from above looking down.
+
+    Returns
+    -------
+    out: Buffer
+        Image data.
+
+    Examples
+    --------
+    > var img = {{alias}}()
+    <Buffer>
+
+    References
+    ----------
+    - Azari, Fédèle. 1929. (no title). <http://www.getty.edu/art/collection/
+    objects/134512/fedele-azari-airplane-viewed-from-above-looking-down-italian-
+    1914-1929/>.
+
+    * Digital image courtesy of the Getty's Open Content Program. While there
+    are no restrictions or conditions on the use of open content images, the
+    Getty would appreciate a gratis copy of any scholarly publications in which
+    the images are reproduced in order to maintain the collection bibliography.
+    Copies may be sent to the attention of:
+
+      Open Content Program
+      Registrar's Office
+      The J. Paul Getty Museum
+      1200 Getty Center Drive, Suite 1000
+      Los Angeles, CA 90049
+
+    See Also
+    --------
+

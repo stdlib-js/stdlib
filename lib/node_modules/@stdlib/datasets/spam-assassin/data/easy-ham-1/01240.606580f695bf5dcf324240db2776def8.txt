@@ -1,0 +1,78 @@
+From rpm-list-admin@freshrpms.net  Fri Oct  4 10:59:55 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 3E9E616F03
+	for <jm@localhost>; Fri,  4 Oct 2002 10:59:54 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 10:59:54 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g93Nb5K20773 for
+    <jm-rpm@jmason.org>; Fri, 4 Oct 2002 00:37:06 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g93NY1f11198; Fri, 4 Oct 2002 01:34:01
+    +0200
+Received: from mail.j2solutions.net (seattle.connectednw.com
+    [216.163.77.13]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g93NXjf10844 for <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 01:33:46 +0200
+Received: from labmail.redmond.corp.microsoft.com (seattle.connectednw.com
+    [::ffff:216.163.77.13]) (AUTH: CRAM-MD5 hosting@j2solutions.net) by
+    mail.j2solutions.net with esmtp; Thu, 03 Oct 2002 16:33:43 -0700
+From: Jesse Keating <hosting@j2solutions.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: K3B
+Message-Id: <20021003163343.606db2bf.hosting@j2solutions.net>
+In-Reply-To: <3D9CEE0A.9030400@free.fr>
+References: <3D9CCF54.5070909@free.fr>
+    <20021003142457.77f1d07b.hosting@j2solutions.net>
+    <3D9CEE0A.9030400@free.fr>
+Organization: j2Solutions
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; )
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 3 Oct 2002 16:33:43 -0700
+Date: Thu, 3 Oct 2002 16:33:43 -0700
+
+On Fri, 04 Oct 2002 03:25:30 +0200
+Vincent <cult@free.fr> wrote:
+
+# If I get troubles with the .tar.gz source file compilation, will it
+# work with the .src.rpm source file compilation ?
+# If it will, how do I manage with a .src.rpm file, sorry, I don't
+# remeber :(
+
+The .src.rpm will prompt you for what packages you need to complete
+the compile.
+
+rpmbuild --rebuild --target=$arch file.src.rpm
+
+-- 
+Jesse Keating
+j2Solutions.net
+Mondo DevTeam (www.mondorescue.org)
+
+Was I helpful?  Let others know:
+ http://svcs.affero.net/rm.php?r=jkeating
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Fri Jul 19 20:58:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7EED2440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 15:58:00 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 20:58:00 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JJvSJ30546 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 20:57:28 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA28485; Fri, 19 Jul 2002 20:48:47 +0100
+Received: from claymore.diva.ie (diva.ie [195.218.115.17] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA28456 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 20:48:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host diva.ie [195.218.115.17]
+    (may be forged) claimed to be claymore.diva.ie
+Received: from localhost (claymore [195.218.115.17]) by claymore.diva.ie
+    (8.9.3/8.9.3) with ESMTP id UAA24846 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 20:48:40 +0100
+Received: from 194.125.134.71 ( [194.125.134.71]) as user
+    rcunniff@mail.boxhost.net by webmail.gameshrine.com with HTTP;
+    Fri, 19 Jul 2002 20:48:40 +0100
+Message-Id: <1027108120.3d386d180910a@webmail.gameshrine.com>
+Date: Fri, 19 Jul 2002 20:48:40 +0100
+From: Ronan Cunniffe <ronan@cunniffe.net>
+To: ilug@linux.ie
+Subject: Re: [ILUG] How to copy some files
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-15
+Content-Transfer-Encoding: 8bit
+User-Agent: Internet Messaging Program (IMP) 3.0
+X-Originating-Ip: 194.125.134.71
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Ronan Waide <waider@waider.ie>:
+
+> Sure, but soft links would do the same. To be honest, I'm trying to
+> think of a useful use of hard links right now, and I'm a little
+> stumped. There's gotta be some benefit that I'm missing that's
+> immediately obvious to everyone.
+
+Using Niall's example - single set of files but >1 namespace, and suppose that
+you want to delete some items from the set according to rules applied to the
+namespaces.  With soft links you need an *extra* namespace the others refer to,
+and after filtering the namespaces, you have to do a manual reference count to
+decide what goes and what stays.  With hard links, you just unlink and deletion
+is automatic.
+
+Ronan.
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

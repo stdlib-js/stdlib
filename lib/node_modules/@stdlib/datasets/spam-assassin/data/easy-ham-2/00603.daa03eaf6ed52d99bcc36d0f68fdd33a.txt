@@ -1,0 +1,87 @@
+From razor-users-admin@lists.sourceforge.net  Fri Aug  9 15:37:13 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 13FC5440F1
+	for <jm@localhost>; Fri,  9 Aug 2002 10:34:10 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:34:10 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EUdb07497 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 15:30:39 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id AAA02088 for
+    <jm-razor@jmason.org>; Fri, 9 Aug 2002 00:30:33 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cweM-0000iR-00; Thu,
+    08 Aug 2002 16:25:02 -0700
+Received: from adsl-67-118-106-171.dsl.snfc21.pacbell.net
+    ([67.118.106.171] helo=frontier.limbo.net) by usw-sf-list1.sourceforge.net
+    with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17cwdU-00016H-00 for
+    <razor-users@lists.sourceforge.net>; Thu, 08 Aug 2002 16:24:08 -0700
+Received: by frontier.limbo.net (Postfix, from userid 500) id C46C530E945;
+    Thu,  8 Aug 2002 16:27:11 -0700 (PDT)
+From: Chip Paswater <turk182@chipware.net>
+To: razor-users@example.sourceforge.net
+Message-Id: <20020808162711.A370@frontier.limbo.net>
+References: <20020808111842.J1593@rover.vipul.net>
+    <FB680A85-AB10-11D6-BCF2-00039396ECF2@deersoft.com>
+    <20020808152638.A32536@frontier.limbo.net>
+    <20020808154303.A5236@rover.vipul.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020808154303.A5236@rover.vipul.net>; from mail@vipul.net
+    on Thu, Aug 08, 2002 at 03:43:03PM -0700
+X-MY-PGP-Fingerprint: 4D42 5220 2EB4 21F4 39C4 BDDA C948 F15C DE2E F798
+Subject: [Razor-users] SpamNet question
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Thu, 8 Aug 2002 16:27:11 -0700
+Date: Thu, 8 Aug 2002 16:27:11 -0700
+
+Vipul, can I ask questions about SpamNet here?
+
+I hope so, here goes.. simple question.  How do you define
+username/passwords in spamnet?  I don't see any fields for this option, so
+I'm assuming when someone connects with SpamNet for the first time, they're
+given a unique ID that they keep until they change to a new Outlook client?
+
+It would be nice if you could specify which username/password to use.  I'd
+like to share my trust account between my work(outlook) and my personal(mutt)
+email accounts.
+
+> > Perhaps a feature can be added to razor-report, so that it checks whether a
+> > message is spam before it submits it.  If it is spam, then don't send the
+> > body, 4 signatures, etc, just up the "rating" for that individual spam.
+> 
+> Yep, that how razor-agents currently work.
+> 
+> cheers,
+> vipul.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

@@ -1,0 +1,127 @@
+From fork-admin@xent.com  Wed Sep  4 11:41:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6A10416F7B
+	for <jm@localhost>; Wed,  4 Sep 2002 11:40:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 11:40:03 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g83MKvZ05458 for <jm@jmason.org>;
+    Tue, 3 Sep 2002 23:20:57 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6F2942940C9; Tue,  3 Sep 2002 15:18:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from panacea.canonical.org (ns1.canonical.org [209.115.72.29])
+    by xent.com (Postfix) with ESMTP id 6B789294099 for <fork@xent.com>;
+    Tue,  3 Sep 2002 15:17:08 -0700 (PDT)
+Received: by panacea.canonical.org (Postfix, from userid 1004) id
+    D93F83F4EB; Tue,  3 Sep 2002 18:17:30 -0400 (EDT)
+From: kragen@pobox.com (Kragen Sitaker)
+To: fork@spamassassin.taint.org
+Subject: asynchronous I/O (was Re: Gasp!)
+Message-Id: <20020903221730.D93F83F4EB@panacea.canonical.org>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue,  3 Sep 2002 18:17:30 -0400 (EDT)
+
+Of course we've had select() since BSD 4.2 and poll() since System V
+or so, and they work reasonably well for asynchronous I/O up to a
+hundred or so channels, but suck after that; /dev/poll (available in
+Solaris and Linux) is one approach to solving this; Linux has a way to
+do essentially the same thing with real-time signals, and has for
+years; and FreeBSD has kqueue.
+
+More details about these are at
+http://www.citi.umich.edu/projects/linux-scalability/
+
+None of this helps with disk I/O; most programs that need to overlap
+disk I/O with computation, on either proprietary Unixes or Linux, just
+use multiple threads or processes to handle the disk I/O.
+
+POSIX specifies a mechanism for nonblocking disk I/O that most
+proprietary Unixes implement.  The Linux kernel hackers are currently
+rewriting Linux's entire I/O subsystem essentially from scratch to
+work asynchronously, because they can easily build efficient
+synchronous I/O primitives from asynchronous ones, but not the other
+way around. So now Linux will support this mechanism too.
+
+It probably doesn't need saying for anyone who's read Beberg saying
+things like "Memory management is a non-issue for anyone that has any
+idea at all how the hardware functions," but he's totally off-base.
+People should know by now not to take anything he says seriously, but
+apparently some don't, so I'll rebut.
+
+Not surprisingly, the rebuttal requires many more words than the
+original stupid errors.
+
+In detail, he wrote:
+> Could it be? After 20 years without this feature UNIX finally
+> catches up to Windows and has I/O that doesnt [sic] totally suck for
+> nontrivial apps? No way!
+
+Unix acquired nonblocking I/O in the form of select() about 23 years
+ago, and Solaris has had the particular aio_* calls we are discussing
+for many years.  Very few applications need the aio_* calls ---
+essentially only high-performance RDBMS servers even benefit from them
+at all, and most of those have been faking it fine for a while with
+multiple threads or processes.  This just provides a modicum of extra
+performance.
+
+> OK, so they do it with signals or a flag, which is completely
+> ghetto, but at least they are trying. Keep trying guys, you got the
+> idea, but not the clue.
+
+Readers can judge who lacks the clue here.
+
+> The Windows I/O model does definately [sic] blow the doors off the
+> UNIX one, but then they had select to point at in it's [sic]
+> suckiness and anything would have been an improvement. UNIX is just
+> now looking at it's [sic] I/O model and adapting to a multiprocess
+> multithreaded world so it's gonna be years yet before a posix API
+> comes out of it.
+
+Although I don't have a copy of the spec handy, I think the aio_* APIs
+come from the POSIX spec IEEE Std 1003.1-1990, section 6.7.9, which is
+13 years old, and which I think documented then-current practice.
+They might be even older than that.
+
+Unix has been multiprocess since 1969, and most Unix implementations
+have supported multithreading for a decade or more.
+
+> Bottom line is the "do stuff when something happens" model turned
+> out to be right, and the UNIX "look for something to do and keep
+> looking till you find it no matter how many times you have to look"
+> is not really working so great anymore.
+
+Linux's aio_* routines can notify the process of their completion with
+a "signal", a feature missing in Microsoft Windows; a "signal" causes
+the immediate execution of a "signal handler" in a process.  By
+contrast, the Microsoft Windows mechanisms to do similar things (such
+as completion ports) do not deliver a notification until the process
+polls them.
+
+I don't think signals are a better way to do things in this case
+(although I haven't written any RDBMSes myself), but you got the
+technical descriptions of the two operating systems exactly backwards.
+Most programs that use Linux real-time signals for asynchronous
+network I/O, in fact, block the signal in question and poll the signal
+queue in a very Windowsish way, using sigtimedwait() or sigwaitinfo().
+
+-- 
+<kragen@pobox.com>       Kragen Sitaker     <http://www.pobox.com/~kragen/>
+Edsger Wybe Dijkstra died in August of 2002.  This is a terrible loss after 
+which the world will never be the same.
+http://www.xent.com/pipermail/fork/2002-August/013974.html
+

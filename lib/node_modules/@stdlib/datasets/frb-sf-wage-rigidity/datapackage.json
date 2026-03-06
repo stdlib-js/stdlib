@@ -1,0 +1,133 @@
+{
+  "name": "stdlib-datasets-frb-sf-wage-rigidity",
+  "version": "",
+  "title": "Wage Rigidity",
+  "description": "Wage rates for U.S. workers that have not changed jobs within the year.",
+  "resources": [
+    {
+      "name": "wage-rates-json",
+      "title": "Wage Rates",
+      "description": "Wage rates for U.S. workers that have not changed jobs within the year.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "wage-rates-csv",
+      "title": "Wage Rates",
+      "description": "Wage rates for U.S. workers that have not changed jobs within the year.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "title": "Date",
+            "description": "Collection date.",
+            "type": "date",
+            "format": "default"
+          },
+          {
+            "name": "all_workers",
+            "title": "All Workers (Hourly and Non-Hourly)",
+            "description": "Wage rates for all workers, both hourly and non-hourly.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "hourly_workers",
+            "title": "Hourly Workers",
+            "description": "Wage rates for hourly workers.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "non_hourly_workers",
+            "title": "Non-Hourly Workers",
+            "description": "Wage rates for non-hourly workers.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "less_than_high_school",
+            "title": "Less Than High School",
+            "description": "Wage rates for workers with less than a high school education.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "high_school",
+            "title": "High School",
+            "description": "Wage rates for workers with a high school education.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "some_college",
+            "title": "Some College",
+            "description": "Wage rates for workers with some college education.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "college",
+            "title": "College",
+            "description": "Wage rates for workers with a college education.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "construction",
+            "title": "Construction",
+            "description": "Wage rates for workers in the construction industry.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "finance",
+            "title": "Finance",
+            "description": "Wage rates for workers in the finance industry.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "manufacturing",
+            "title": "Manufacturing",
+            "description": "Wage rates for workers in the manufacturing industry.",
+            "type": "number",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "Federal Reserve Bank of San Francisco",
+      "web": "http://www.frbsf.org/economic-research/indicators-data/nominal-wage-rigidity/"
+    }
+  ],
+  "keywords": [
+    "wages",
+    "workers",
+    "pay",
+    "industry",
+    "work",
+    "salary",
+    "us",
+    "united",
+    "states",
+    "economics",
+    "growth",
+    "employment",
+    "labor",
+    "statistics",
+    "stats"
+  ],
+  "license": "ODC-BY-1.0 AND CC-BY-4.0"
+}

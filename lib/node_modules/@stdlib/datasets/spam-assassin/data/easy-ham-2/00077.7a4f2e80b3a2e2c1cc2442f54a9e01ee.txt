@@ -1,0 +1,86 @@
+From ilug-admin@linux.ie  Fri Jul 19 23:39:02 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A5D36440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 18:39:02 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 23:39:02 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JMbEJ10513 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 23:37:14 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA04163; Fri, 19 Jul 2002 23:30:46 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA04129 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 23:30:40 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6JMUc913377 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 23:30:38 +0100
+Date: Fri, 19 Jul 2002 23:30:36 +0100
+To: Matthew French <mfrench42@yahoo.co.uk>
+Cc: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] hard- vs. soft-links [was: How to copy some files ]
+Message-Id: <20020719233036.B12390@ie.suberic.net>
+References: <200207191959.g6JJxHX04486@linux.local>
+    <002c01c22f67$4216c280$f264a8c0@sabeo.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <002c01c22f67$4216c280$f264a8c0@sabeo.ie>; from
+    mfrench42@yahoo.co.uk on Fri, Jul 19, 2002 at 10:00:02PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027549838.74d3af@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 10:00:02PM +0100, Matthew French wrote:
+> Now here is a thought: a Unix version of the "Deleted Items" folder.
+
+am i the only one who thinks this is like "friday night 80's" for ilug?
+and here's an answer from 1989.  for those perceptive folks in the
+audience you'll note that it makes no reference to a windows icons.
+
+http://groups.google.com/groups?q=unix+undelete&hl=en&lr=&ie=UTF-8&as_drrb=b&as_mind=12&as_minm=5&as_miny=1981&as_maxd=19&as_maxm=7&as_maxy=1989&selm=10113%40bloom-beacon.MIT.EDU&rnum=10
+
+and here's one from 1984:
+
+http://groups.google.com/groups?q=unix+undelete&start=10&hl=en&lr=&ie=UTF-8&as_drrb=b&as_mind=12&as_minm=5&as_miny=1981&as_maxd=19&as_maxm=7&as_maxy=1989&selm=736%40sri-arpa.UUCP&rnum=14
+
+on a more serious note....  would unrm be nice?  yeah.  but people have
+talked about unrm for nearly ***20*** years - and that's just what i
+bothered to look up.  think about it.  in that time bsd has been freed
+from at&t and then forked in four different directions, gcc, linux,
+mozilla, gnome and kde have been written.  as has almost every bit
+of the gnu project - including (sh|file)-utils.  and think about it,
+have the gnu (sh|file)-utils developers ever met an option they didn't
+implement if they could?  even /bin/true and /bin/false take arguments.
+
+so yeah, unrm would be nice, but obviously it's not a simple problem.
+millions of lines of code, hundreds of projects, no unrm.  heck, the
+hurd will probably release 1.0 before unrm shows up.
+
+kevin, spinning the oldies all night long...
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

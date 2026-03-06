@@ -1,0 +1,162 @@
+Return-Path: <update@list.theregister.co.uk>
+Received: from list.theregister.co.uk (theregister-sql2.hosted.netline.net.uk [213.40.196.63])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6B2tfJ31932
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Thu, 11 Jul 2002 03:55:41 +0100
+Received: from localhost ([127.0.0.1] helo=list.theregister.co.uk)
+	by list.theregister.co.uk with smtp (Exim 3.31 #1)
+	id 17STJj-0005Rm-0N
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Thu, 11 Jul 2002 03:04:27 +0100
+Date: Thu, 11 Jul 2002 03:00:02 +0100
+From: update@list.theregister.co.uk
+Subject: Reg Headlines Thursday July 11
+To: Reg Subscribers <update@list.theregister.co.uk>
+Precedence: list
+X-Bulkmail: 2.05
+Message-Id: <E17STJj-0005Rm-0N@list.theregister.co.uk>
+
+Today's Headlines from The Register
+-----------------------------------
+
+    To unsubscribe from this daily news update, see the instructions at
+    the end of this message.
+
+
+  --------ADVERTISEMENT------------------------------------------------
+
+  WIN tickets to a FORMULA ONE EUROPEAN GRAND PRIX!
+
+  Neverfail Group plc, business continuity software expert, sponsors Rubens
+  Barrichello driver of the Ferrari F1 team. Click here to find out more and
+  win tickets: www.neverfailgroup.com/f1theregister.html.
+
+  For every new customer that buys Neverfail(tm) products between the
+  July-September 2002 Grand Prix season, Neverfail Group plc will grant 2
+  tickets to a Grand Prix hospitality event with us next 2003 season.
+
+  ---------------------------------------------------------------------
+Software
+
+    Nokia claims Matsushita scalp for Series 60
+    We don't know the Finnish for Bill, but it's probably got more vowels than are useful in it...
+        http://www.theregister.co.uk/content/4/26126.html
+
+    Microsoft stakes IP claims on OpenGL
+    From the We Told You So dept.
+        http://www.theregister.co.uk/content/4/26125.html
+
+    Microsoft 'hoovers millions' from UK schools - MP 
+    Blizzard descends on per seat licensing
+        http://www.theregister.co.uk/content/4/26124.html
+
+    Last minute glitch knocks Win2k SP3 back to summer
+    Which in WA can mean many things...
+        http://www.theregister.co.uk/content/4/26118.html
+
+    MS to ship 64-bit .NET preview this month
+    Here's one we'll prepare later...
+        http://www.theregister.co.uk/content/4/26117.html
+
+    Congressman vows Pigopolist legislation
+    Cleanup starts here
+        http://www.theregister.co.uk/content/4/26112.html
+
+Personal Hardware
+
+    Dan Technology -  two concerned customers!
+    Bulging postbag. Kinda
+        http://www.theregister.co.uk/content/54/26130.html
+
+Internet
+
+    al-Qaeda poised to strike hard via the Internet
+    Red Alert Finger on the button
+
+        http://www.theregister.co.uk/content/6/26134.html
+
+    Dutch ban virtual kinderporno
+    Fake images, real depravity
+        http://www.theregister.co.uk/content/6/26132.html
+
+    Tiscali to shut second UK office. Or not
+    Shurely shome mishtake?
+        http://www.theregister.co.uk/content/6/26131.html
+
+    Liverpool Council bans email on Wednesdays
+    But only internal, and no sanctions
+        http://www.theregister.co.uk/content/6/26128.html
+
+    IC24 launches daytime Net service
+    Remember them?
+        http://www.theregister.co.uk/content/6/26127.html
+
+    Future for online content is bright 
+    Screen Digest's screen dump
+        http://www.theregister.co.uk/content/6/26122.html
+
+Net Security
+
+    al-Qaeda poised to strike hard via the Internet
+    Red Alert Finger on the button
+
+        http://www.theregister.co.uk/content/55/26134.html
+
+    Internet attacks on the rise
+    Surprise, surprise
+        http://www.theregister.co.uk/content/55/26119.html
+
+Business
+
+    Dell rules out Lexmark purchase
+    Interested in ink, not inking
+        http://www.theregister.co.uk/content/7/26115.html
+
+Networks
+
+    Networking vendors eat their babies
+    Hey, it's a tough world out there
+        http://www.theregister.co.uk/content/5/26133.html
+
+    Cisco to roll out airport WLAN hotspots in Europe
+    Claims 19 signed so far
+        http://www.theregister.co.uk/content/5/26114.html
+
+Broadband
+
+    Blueyonder and One.Tel in broadband promos
+    But not together
+        http://www.theregister.co.uk/content/22/26120.html
+
+About The Register
+
+    Hacker t-shirt launched in medium
+    Good news for any reader under 16 stone
+        http://www.theregister.co.uk/content/31/26123.html
+
+
+  --------ADVERTISEMENT------------------------------------------------
+
+  WIN tickets to a FORMULA ONE EUROPEAN GRAND PRIX!
+
+  Neverfail Group plc, business continuity software expert, sponsors Rubens
+  Barrichello driver of the Ferrari F1 team. Click here to find out more and
+  win tickets: www.neverfailgroup.com/f1theregister.html.
+
+  For every new customer that buys Neverfail(tm) products between the
+  July-September 2002 Grand Prix season, Neverfail Group plc will grant 2
+  tickets to a Grand Prix hospitality event with us next 2003 season.
+
+  ---------------------------------------------------------------------
+The Register and its contents are copyright 2002 Situation Publishing.
+All rights reserved.
+
+    Tel:     +44 (0)20 7499 2264.
+    Fax:     +44 (0)20 7493 5922.
+    E-Mail:  press.releases@theregister.co.uk
+
+To unsubscribe from these daily updates, visit the following URL.  Make
+sure that you enter exactly the same e-mail address as you used to join
+this service.
+
+    http://list.theregister.co.uk/cgi-bin/unsub.cgi
+
+

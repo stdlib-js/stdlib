@@ -1,0 +1,81 @@
+
+{{alias}}( x, α, β )
+    Evaluates the natural logarithm of the probability density function (PDF)
+    for a beta prime distribution with first shape parameter `α` and second
+    shape parameter `β` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If `α <= 0` or `β <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    α: number
+        First shape parameter.
+
+    β: number
+        Second shape parameter.
+
+    Returns
+    -------
+    out: number
+        Natural logarithm of the PDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, 1.0, 1.0 )
+    ~-0.811
+    > y = {{alias}}( 0.5, 2.0, 4.0 )
+    ~-0.13
+    > y = {{alias}}( 0.2, 2.0, 2.0 )
+    ~-0.547
+    > y = {{alias}}( 0.8, 4.0, 4.0 )
+    ~-0.43
+    > y = {{alias}}( -0.5, 4.0, 2.0 )
+    -Infinity
+
+    > y = {{alias}}( 0.5, -1.0, 0.5 )
+    NaN
+    > y = {{alias}}( 0.5, 0.5, -1.0 )
+    NaN
+
+    > y = {{alias}}( NaN, 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.5, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.5, 1.0, NaN )
+    NaN
+
+
+{{alias}}.factory( α, β )
+    Returns a function for evaluating the natural logarithm of the probability
+    density function (PDF) of a beta prime distribution with first shape
+    parameter `α` and second shape parameter `β`.
+
+    Parameters
+    ----------
+    α: number
+        First shape parameter.
+
+    β: number
+        Second shape parameter.
+
+    Returns
+    -------
+    fcn: Function
+        Function to evaluate the natural logarithm of the PDF.
+
+    Examples
+    --------
+    > var mylogpdf = {{alias}}.factory( 0.5, 0.5 );
+    > var y = mylogpdf( 0.8 )
+    ~-1.62
+    > y = mylogpdf( 0.3 )
+    ~-0.805
+
+    See Also
+    --------
+

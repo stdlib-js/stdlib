@@ -1,0 +1,72 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep  5 12:39:38 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C009C16F1E
+	for <jm@localhost>; Thu,  5 Sep 2002 12:39:23 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 05 Sep 2002 12:39:23 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g85Ba9Z16982 for <jm-sa@jmason.org>; Thu, 5 Sep 2002 12:36:09 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17muuh-0002Nz-00; Thu,
+    05 Sep 2002 04:35:07 -0700
+Received: from lerlaptop.lerctr.org ([207.158.72.14]) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17muuZ-0007mO-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 05 Sep 2002 04:34:59 -0700
+Received: from localhost (localhost [127.0.0.1]) by lerlaptop.lerctr.org
+    (8.12.5/8.12.5) with ESMTP id g85BYtaY083601 for
+    <spamassassin-talk@lists.sourceforge.net>; Thu, 5 Sep 2002 06:34:55 -0500
+    (CDT) (envelope-from ler@lerctr.org)
+From: Larry Rosenman <ler@lerctr.org>
+To: spamassassin-talk@example.sourceforge.net
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Message-Id: <1031225695.83349.5.camel@lerlaptop.lerctr.org>
+MIME-Version: 1.0
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Subject: [SAtalk] www.spamassassin.org: giving a HTTP/1.1 error from
+    sourceforge?
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: 05 Sep 2002 06:34:55 -0500
+Date: 05 Sep 2002 06:34:55 -0500
+
+I'm getting an error page from sourceforge.net when I try to go to
+www.spamassassin.org. 
+
+Just FYI. 
+
+
+-- 
+Larry Rosenman                     http://www.lerctr.org/~ler
+Phone: +1 972-414-9812                 E-Mail: ler@lerctr.org
+US Mail: 1905 Steamboat Springs Drive, Garland, TX 75044-6749
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

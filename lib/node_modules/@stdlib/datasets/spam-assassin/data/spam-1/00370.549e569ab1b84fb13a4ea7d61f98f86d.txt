@@ -1,0 +1,67 @@
+From greatdaneman34@angelfire.com  Thu Sep 19 11:15:12 2002
+Return-Path: <greatdaneman34@angelfire.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id D2D3516F03
+	for <zzzz@localhost>; Thu, 19 Sep 2002 11:15:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 19 Sep 2002 11:15:11 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8J4sGC05810 for
+    <zzzz@jmason.org>; Thu, 19 Sep 2002 05:54:16 +0100
+Received: from rack3.easydns.com (rack3.easydns.com [205.210.42.50]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id FAA00673 for <zzzz@spamassassin.taint.org>;
+    Thu, 19 Sep 2002 05:54:46 +0100
+From: greatdaneman34@angelfire.com
+Received: from angelfire.com (unknown [210.90.110.70]) by
+    rack3.easydns.com (Postfix) with SMTP id AE6A64AA2E for
+    <zzzz@spamassassin.taint.org>; Thu, 19 Sep 2002 00:54:38 -0400 (EDT)
+Received: from 109.63.165.212 ([109.63.165.212]) by sparc.zubilam.net with
+    esmtp; Thu, 19 Sep 0102 00:54:28 -0400
+Received: from 177.189.232.218 ([177.189.232.218]) by
+    mailout2-eri1.midmouth.com with NNFMP; 18 Sep 0102 20:51:26 +0800
+Reply-To: <greatdaneman34@angelfire.com>
+Message-Id: <012d52d76a7a$4353b0d7$4ac14aa5@ldgndy>
+To: <zzzz@spamassassin.taint.org>
+Subject: Expand Your business with our Money!
+Date: Wed, 18 Sep 0102 23:32:17 +0500
+MIME-Version: 1.0
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Internet Mail Service (5.5.2650.21)
+Importance: Normal
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_00C6_24D75C3A.C0588C07"
+
+------=_NextPart_000_00C6_24D75C3A.C0588C07
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: base64
+
+
+bG92ZQ0KV29ybGQgQ2FwaXRhbCBHcm91cCBpcyBhIGdyb3VwIG9mIEZ1bmRp
+bmcgU291cmNlcyB0aGF0IGhlbHAgYnVzaW5lc3NlcyANCndpdGggdGhlaXIg
+ZmluYW5jaWFsIG5lZWRzLiAgV2UgY2FuIHByb3ZpZGUgV29ya2luZyBDYXBp
+dGFsIHRvICQxNTAsMDAwIA0Kb24gYW4gdW5zZWN1cmVkIGJhc2lzOyB3aGlj
+aCBjYW4gYmUgdXNlZCB0byB0YWtlIGNhcmUgb2YgY2FzaCBmbG93IA0KbmVl
+ZHMsIHByb3ZpZGUgZnVuZHMgZm9yIGV4cGFuc2lvbiBhbmQgb3RoZXIgbmVl
+ZHMgeW91ciBidXNpbmVzcyBoYXMgKFVTIA0KYnVzaW5lc3NlcyBvbmx5KS4g
+IFdlIGFsc28gcHVyY2hhc2UgSW52b2ljZXMsIEFjY291bnRzIFJlY2VpdmFi
+bGVzLCANCkxlYXNlcywgQXV0byBQb3J0Zm9saW9zLCBCdXNpbmVzcyBhbmQg
+UmVhbCBFc3RhdGUgTm90ZXMsIGFuZCBvdGhlciBDYXNoIA0KRmxvd3MuICBJ
+ZiB5b3Ugd291bGQgbGlrZSB0byBpbnF1aXJlIGFib3V0IHVzIGhlbHBpbmcg
+eW91IHRvZGF5IHdpdGggeW91ciANCmNhcGl0YWwgbmVlZHMsIHBsZWFzZSBj
+bGljayBvbiB0aGUgbGluayBiZWxvdyBmb3IgZGV0YWlscyBhbmQgc3VibWlz
+c2lvbiANCmZvcm0uICBUaHggZm9yIHlvdXIgdGltZS4gIFdvcmxkIENhcGl0
+YWwgR3JvdXANCg0KaHR0cDovL3d3dy5tYWlscGFpbC5jb20NCg0KaHR0cDov
+L3d3dy5tYWlscGFpbC5jb20NCg0KDQoNCg0KDQoNCg0KDQoNCmxvdmUNCg0K
+DQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoN
+Cg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0K
+DQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KbG92ZQ0KDQpZb3UgYXJlIHJlY2ll
+dmluZyB0aGlzIGVtYWlsIGFzIGEgc3Vic2NyaWJlciBvciBhZmZpbGlhdGUg
+c3VjYnNjcmliZXIgDQp0byBvcHRpbiBuZXR3b3JrLiAgSWYgeW91IGhhdmUg
+cmVjZWl2ZWQgdGhpcyBhcyBhbiBlcnJvciBvciB3b3VsZCBsaWtlIA0KdG8g
+YmUgdGFrZW4gb2ZmIG91ciBsaXN0IHBsZWFzZSBzZW5kIGFuIGVtYWlsIHRv
+IG5vcm1vcmVAZXlvdS5jb20uICBUaGFuayANCnlvdSBhbmQgaGF2ZSBhIGdy
+ZWF0IGRheS5sb3ZlDQowOTgxWFZLVjktMTE1eWFMbDkzMDlRUGFsMjM=
+
+

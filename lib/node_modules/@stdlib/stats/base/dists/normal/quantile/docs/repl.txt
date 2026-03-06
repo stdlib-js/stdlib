@@ -1,0 +1,83 @@
+
+{{alias}}( p, μ, σ )
+    Evaluates the quantile function for a normal distribution with mean `μ` and
+    standard deviation `σ` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `σ < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    μ: number
+        Location parameter.
+
+    σ: number
+        Standard deviation.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 0.0, 1.0 )
+    ~0.842
+    > y = {{alias}}( 0.5, 4.0, 2.0 )
+    4
+
+    > y = {{alias}}( 1.1, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( -0.2, 0.0, 1.0 )
+    NaN
+
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+
+    // Negative standard deviation:
+    > y = {{alias}}( 0.5, 0.0, -1.0 )
+    NaN
+
+    // Degenerate distribution centered at `μ` when `σ = 0.0`:
+    > y = {{alias}}( 0.3, 8.0, 0.0 )
+    8.0
+    > y = {{alias}}( 0.9, 8.0, 0.0 )
+    8.0
+
+
+{{alias}}.factory( μ, σ )
+    Returns a function for evaluating the quantile function
+    of a normal distribution with mean `μ` and standard deviation `σ`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    σ: number
+        Standard deviation.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 10.0, 2.0 );
+    > var y = myQuantile( 0.5 )
+    10.0
+
+    See Also
+    --------
+

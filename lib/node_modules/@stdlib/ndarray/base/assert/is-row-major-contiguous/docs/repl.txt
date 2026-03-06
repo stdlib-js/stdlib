@@ -1,0 +1,39 @@
+
+{{alias}}( shape, strides, offset )
+    Returns a boolean indicating if an array is row-major contiguous.
+
+    An array is considered contiguous if the memory address of each array
+    element is adjacent to the memory address of the next array element.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    strides: ArrayLike
+        Stride array.
+
+    offset: integer
+        Location of the first indexed value based on the stride array.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an array is row-major contiguous.
+
+    Examples
+    --------
+    > var d = [ 2, 3, 10 ];
+    > var s = [ 30, 10, 1 ];
+    > var o = 0;
+    > var bool = {{alias}}( d, s, o )
+    true
+    > d = [ 10 ];
+    > s = [ 3 ];
+    > o = 0;
+    > bool = {{alias}}( d, s, o )
+    false
+
+    See Also
+    --------
+

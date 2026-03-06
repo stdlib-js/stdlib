@@ -1,0 +1,80 @@
+From fork-admin@xent.com  Wed Aug 14 11:01:48 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7B91643C38
+	for <jm@localhost>; Wed, 14 Aug 2002 05:52:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:52:36 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7E9F2408258 for <jm@jmason.org>;
+    Wed, 14 Aug 2002 10:15:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id CE5992940E8; Wed, 14 Aug 2002 02:13:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta5.rcsntx.swbell.net (mta5.rcsntx.swbell.net
+    [151.164.30.29]) by xent.com (Postfix) with ESMTP id AD9FC2940CC for
+    <fork@xent.com>; Wed, 14 Aug 2002 02:12:33 -0700 (PDT)
+Received: from faisal-com.local. ([66.127.53.6]) by mta5.rcsntx.swbell.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H0T00JWNTMYWE@mta5.rcsntx.swbell.net> for fork@xent.com; Wed,
+    14 Aug 2002 04:13:47 -0500 (CDT)
+From: "Faisal N. Jawdat" <faisal@faisal.com>
+Subject: Re: TCPA and Palladium: Content Control for the Masses
+In-Reply-To: <3D5A155A.838D33BF@RealMeasures.dyndns.org>
+To: fork@spamassassin.taint.org
+Message-Id: <2771346E-AF66-11D6-A005-003065F685A6@faisal.com>
+MIME-Version: 1.0 (Apple Message framework v543)
+X-Mailer: Apple Mail (2.543)
+Content-Type: text/plain; format=flowed; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 14 Aug 2002 02:13:53 -0700
+
+> The most significant problem with TCPA and Palladium is not
+> whether they may interfere with the power of the universal
+> logic device, or whether they are effectual from the
+> standpoint of privacy and security concerns, though these
+> are all very important concerns.  Rather, the fundamental
+> problem they present is in the political premises that they
+> hope to implement for the sake of the "content industries."
+
+	I've been thinking about this sort of thing
+	lately, and how the technological realization
+	of these issues is one that enforces *absolute*
+	control of content, where the original legal
+	strictures (copyright) only enforced a limited
+	time limited right to content.
+
+	What I'm wondering is this:  if you give
+	people absolute control of copyright, whose
+	works will be around in 100 years?  Because
+	I'm starting to think that the content
+	creator who wants to produce for posterity
+	had better do it in such a way that the
+	content is *not* "protected", or the content
+	will be inaccessible to people in 15 years,
+	much less 100.
+
+	This of course assumes that the content
+	control mechanisms aren't so pervasive that
+	one *cannot* create content without going
+	through controlled channels.
+
+	-faisal
+
+http://xent.com/mailman/listinfo/fork
+
+

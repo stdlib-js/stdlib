@@ -1,0 +1,84 @@
+Received: from smtp2av.call.oleane.net (smtp2av.call.oleane.net [194.2.20.19])
+	by linux.midrange.com (8.11.6/8.11.6) with ESMTP id g6NICHe15190
+	for <lynn.dietz@midrange.com>; Tue, 23 Jul 2002 13:12:17 -0500
+Received: from VirusWall by smtp2av.call.oleane.net with ESMTP id g6NHkna09106;
+	Tue, 23 Jul 2002 19:46:49 +0200 (MEST)
+Received: from srv4-exchange.panier-tanguy.com ([62.161.134.10])
+	by smtp2av.call.oleane.net  with ESMTP id g6NHk3B09085;
+	Tue, 23 Jul 2002 19:46:03 +0200 (MEST)
+Received: from smtp-gw-4.msn.com (nsx.aeratest.com [216.207.154.1]) by srv4-exchange.panier-tanguy.com with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2650.21)
+	id PPFHMMXF; Tue, 23 Jul 2002 19:58:26 +0200
+Message-ID: <000026fe3068$00000ed8$000065bc@smtp-gw-4.msn.com>
+To: <Valued.Clients@smtp2av.call.oleane.net>
+From: "Pedrosa Malringa" <dsjfoudihury9we8f@msn.com>
+Subject: Fw: Keep it under wraps, but this one works a treat!                   7595
+Date: Tue, 23 Jul 2002 12:44:16 -1700
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Status: 
+X-Keywords: 
+
+<!-- saved from url=3D(0022)http://internet.e-mail -->
+<html>
+<HEAD> 
+<TITLE>creditfix</TITLE> 
+</HEAD> 
+<BODY BGCOLOR=3D#FFFFFF TEXT=3D#000000 LINK=3D#000000 VLINK=3D#000000 ALIN=
+K=3D#000000> 
+<BR> 
+<CENTER> 
+<TABLE WIDTH=3D400 BORDER=3D0 CELLPADDING=3D0 CELLSPACING=3D1 BGCOLOR=3D99=
+9999> 
+<TR> 
+<TD> 
+<TABLE BORDER=3D0 CELLPADDING=3D4 CELLSPACING=3D0 BGCOLOR=3D#FFFFFF BACKGR=
+OUND=3Dhttp://365.sunshinehui.com/creditfix/email/background_arrow.gif WID=
+TH=3D400> 
+<TR> 
+<TD><A HREF=3Dhttp://365.sunshinehui.com/creditfix/?cid=3D1580&mid=3D17600=
+><IMG SRC=3Dhttp://365.sunshinehui.com/creditfix/email/banner_email.gif BO=
+RDER=3D0></A><BR> 
+<IMG SRC=3Dhttp://365.sunshinehui.com/creditfix/email/line.gif><BR><BR> 
+<A HREF=3Dhttp://365.sunshinehui.com/creditfix/?cid=3D1580&mid=3D17600><im=
+g src=3Dhttp://365.sunshinehui.com/creditfix/email/body_email.gif alt=3D""=
+ border=3D"0"></A> 
+<BR> 
+<FONT FACE=3DVerdana SIZE=3D2>Thank You,</FONT><BR> 
+<IMG SRC=3Dhttp://365.sunshinehui.com/creditfix/email/thankyou.gif> 
+<BR> 
+</TD> 
+</TR> 
+<TR> 
+<TD> 
+<IMG SRC=3Dhttp://365.sunshinehui.com/creditfix/email/line.gif><BR><br> 
+<FONT FACE=3DVerdana SIZE=3D1>Your email address was obtained from a purch=
+ased 
+list, Reference # 1580-17600.&nbsp;&nbsp;If you wish to unsubscribe from t=
+his list, please 
+<a href=3D"http://61.172.250.143/remove/remove1.html">Click here</a> and e=
+nter your 
+name into the remove box. If you have previously 
+unsubscribed and are still receiving this message, you may email our 
+<a href=3D"mailto:nospamws@yahoo.com?Subject=3DAbuse Report">Abuse Control=
+ Center</a>, 
+or call 1-888-763-2497, or write us at: NoSpam, 6484 Coral Way, 
+Miami, FL, 33155".</FONT><br> 
+<BR> 
+<IMG SRC=3Dhttp://365.sunshinehui.com/creditfix/email/line.gif><BR> 
+<FONT FACE=3DVerdana SIZE=3D1>&copy; 2002 Web Credit Inc. All Rights Reser=
+ved</FONT><FONT FACE=3D"Verdana" SIZE=3D"1">.</FONT></TD> 
+</TR> 
+</TABLE> 
+</TD> 
+</TR> 
+</TABLE> 
+</CENTER> 
+<BR> 
+</BODY> 
+
+</BODY>
+</HTML>
+
+

@@ -1,0 +1,19 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Sat Sep  7 06:45:23 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Sat, 7 Sep 2002 00:45:23 -0500
+Subject: [Spambayes] can't write to CVS...
+In-Reply-To: <15737.37186.513740.936811@12-248-11-90.client.attbi.com>
+References: <15737.35722.956784.600958@12-248-11-90.client.attbi.com>
+        <LNBBLJKPBEHFEDALKOLCCELKBCAB.tim.one@comcast.net>
+        <15737.37186.513740.936811@12-248-11-90.client.attbi.com>
+Message-ID: <15737.37491.890945.752437@12-248-11-90.client.attbi.com>
+
+
+    Skip> I'll try a checkout into a new directory...
+
+Which didn't help.  At the very least I think that means it's time for
+bed...
+
+Skip
+

@@ -1,0 +1,13 @@
+
+{{alias}}
+    Maximum safe Fibonacci number when stored in single-precision floating-point
+    format.
+
+    Examples
+    --------
+    > {{alias}}
+    14930352
+
+    See Also
+    --------
+

@@ -1,0 +1,64 @@
+
+{{alias}}( x, p )
+    Evaluates the probability mass function (PMF) for a Bernoulli distribution
+    with success probability `p` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    out: number
+        Evaluated PMF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0, 0.3 )
+    0.3
+    > y = {{alias}}( 0.0, 0.7 )
+    0.3
+    > y = {{alias}}( -1.0, 0.5 )
+    0.0
+    > y = {{alias}}( 0.0, NaN )
+    NaN
+    > y = {{alias}}( NaN, 0.5 )
+    NaN
+    // Invalid success probability:
+    > y = {{alias}}( 0.0, 1.5 )
+    NaN
+
+
+{{alias}}.factory( p )
+    Returns a function for evaluating the probability mass function (PMF) of a
+    Bernoulli distribution with success probability `p`.
+
+    Parameters
+    ----------
+    p: number
+        Success probability.
+
+    Returns
+    -------
+    pmf: Function
+        Probability mass function (PMF).
+
+    Examples
+    --------
+    > var mypmf = {{alias}}.factory( 0.5 );
+    > var y = mypmf( 1.0 )
+    0.5
+    > y = mypmf( 0.0 )
+    0.5
+
+    See Also
+    --------
+

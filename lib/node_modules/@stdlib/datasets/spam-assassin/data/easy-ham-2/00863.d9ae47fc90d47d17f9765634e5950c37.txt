@@ -1,0 +1,78 @@
+From fork-admin@xent.com  Thu Jul 25 11:08:43 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id ABBEC440D2
+	for <jm@localhost>; Thu, 25 Jul 2002 06:08:15 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:08:15 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OJvY404375 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 20:57:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1D98229414F; Wed, 24 Jul 2002 12:56:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain
+    (dsl-208-151-246-47.dsl.easystreet.com [208.151.246.47]) by xent.com
+    (Postfix) with ESMTP id 3712E294144 for <fork@xent.com>; Wed,
+    24 Jul 2002 12:55:45 -0700 (PDT)
+Received: (from karl@localhost) by localhost.localdomain (8.11.6/8.11.6)
+    id g6OKEp510483; Wed, 24 Jul 2002 13:14:51 -0700
+X-Authentication-Warning: localhost.localdomain: karl set sender to
+    kra@monkey.org using -f
+To: fork@spamassassin.taint.org
+Subject: Re: [Baseline] Raising chickens the high-tech way
+References: <135.11be3f63.2a7000bc@aol.com>
+    <m3fzy9yn5n.fsf@localhost.localdomain> <3D3EF738.3050704@cse.ucsc.edu>
+From: Karl Anderson <kra@monkey.org>
+Organization: Ape Mgt.
+In-Reply-To: Elias Sinderson's message of "Wed, 24 Jul 2002 11:51:36 -0700"
+Message-Id: <m37kjkzxvo.fsf@localhost.localdomain>
+User-Agent: Gnus/5.0802 (Gnus v5.8.2) Emacs/20.7
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 24 Jul 2002 13:14:51 -0700
+
+Elias Sinderson <elias@cse.ucsc.edu> writes:
+
+> Sorry, Karl, your confusing things.
+
+No, it's just a silly discussion, but that's what picky semantic
+discussions turn into :)
+
+> Thos is saying that selective 
+> breeding should be counted as genetic engineering, whereas you are 
+> extending his definition to include the attration that your parents felt...
+
+Yes, I'm saying that if he extends "genetic engineering" to include
+selecting animals to breed, he must extend it to include selecting
+people to breed with.
+
+> Unless your parents were selectively bred like livestock to produce you, 
+> I don't think you can make that case...  :-)
+
+I'm saying that my parents selected each other, and that they did so
+because (among other reasons) each wanted the other's genes to be
+mixed with their own in the offspring that they were planning.
+
+What does it matter that they were selecting to produce their own
+offspring, rather than the offspring of two unrelated animals?
+
+-- 
+Karl Anderson      kra@monkey.org           http://www.monkey.org/~kra/
+http://xent.com/mailman/listinfo/fork
+
+

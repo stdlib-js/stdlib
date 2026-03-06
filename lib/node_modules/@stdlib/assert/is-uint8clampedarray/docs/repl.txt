@@ -1,0 +1,24 @@
+
+{{alias}}( value )
+    Tests if a value is a Uint8ClampedArray.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a Uint8ClampedArray.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new {{alias:@stdlib/array/uint8c}}( 10 ) )
+    true
+    > bool = {{alias}}( [] )
+    false
+
+    See Also
+    --------
+

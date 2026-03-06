@@ -1,0 +1,43 @@
+Return-Path: guido@python.org
+Delivery-Date: Fri Sep  6 16:05:22 2002
+From: guido@python.org (Guido van Rossum)
+Date: Fri, 06 Sep 2002 11:05:22 -0400
+Subject: [Spambayes] Deployment
+In-Reply-To: Your message of "Fri, 06 Sep 2002 11:02:11 EDT."
+             <3D788B92.22739.1D9E0FD1@localhost> 
+References: "Your message of Fri, 06 Sep 2002 10:39:48 EDT."
+	<3D788653.9143.1D8992DA@localhost>  
+	<3D788B92.22739.1D9E0FD1@localhost> 
+Message-ID: <200209061505.g86F5MM14762@pcp02138704pcs.reston01.va.comcast.net>
+
+> > What's an auto-ham?
+> 
+> Automatically marking something as ham after a given
+> timeout.. regardless of how long that timeout is, someone is going
+> to forget to submit the message back as spam.
+
+OK, here's a refinement.  Assuming very little spam comes through, we
+only need to pick a small percentage of ham received as new training
+ham to match the new training spam.  The program could randomly select
+a sufficient number of saved non-spam msgs and ask the user to
+validate this selection.  You could do this once a day or week (config
+parameter).
+
+> How many spams-as-hams can be accepted before the f-n rate gets
+> unacceptable?
+
+Config parameter.
+
+> I view IMAP as a stop-gap measure until tighter integration with
+> various email clients can be achieved.
+> 
+> I still feel it's better to require classification feedback from the
+> recipient, rather than make any assumptions after some period of
+> time passes. But this is an end-user issue and we're still at the
+> algorithm stage.. ;-)
+
+I'm trying to think about the end-user issues because I have nothing
+to contribute to the algorithm at this point.  For deployment we need
+both!
+
+--Guido van Rossum (home page: http://www.python.org/~guido/)

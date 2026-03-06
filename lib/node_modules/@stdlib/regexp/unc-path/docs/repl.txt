@@ -1,0 +1,101 @@
+
+{{alias}}()
+    Return a regular expression to parse a UNC path.
+
+    Returns
+    -------
+    re: RegExp
+        Regular expression.
+
+    Examples
+    --------
+    > var RE = {{alias}}();
+    > var path = '\\\\server\\share\\foo\\bar\\baz:a:b';
+    > var bool = RE.test( path )
+    true
+    > path = '\\\\server\\share\\foo\\bar\\baz::b';
+    > bool = RE.test( path )
+    true
+    > path = '\\\\server\\share\\foo\\bar\\baz:a';
+    > bool = RE.test( path )
+    true
+    > path = '\\\\server\\share\\foo\\bar\\baz';
+    > bool = RE.test( path )
+    true
+    > path = '\\\\server\\share\\foo\\bar';
+    > bool = RE.test( path )
+    true
+    > path = '\\\\server\\share\\foo';
+    > bool = RE.test( path )
+    true
+    > path = '\\\\server\\share';
+    > bool = RE.test( path )
+    true
+    > path = '\\\\server\\\\share';
+    > bool = RE.test( path )
+    false
+    > path = '\\\\\\\\server\\share';
+    > bool = RE.test( path )
+    false
+    > path = 'beep boop \\\\server\\share';
+    > bool = RE.test( path )
+    false
+    > path = '\\\\server';
+    > bool = RE.test( path )
+    false
+    > path = '\\';
+    > bool = RE.test( path )
+    false
+    > path = '';
+    > bool = RE.test( path )
+    false
+    > path = '\\\\server\\share\\';
+    > bool = RE.test( path )
+    false
+    > path = '\\\\server\\share\\foo\\bar\\baz:';
+    > bool = RE.test( path )
+    false
+    > path = '\\\\server\\share\\foo\\bar\\baz:a:';
+    > bool = RE.test( path )
+    false
+    > path = '\\\\server\\share\\foo\\bar\\baz::';
+    > bool = RE.test( path )
+    false
+    > path = '\\\\server\\share\\foo\\bar\\baz:a:b:c';
+    > bool = RE.test( path )
+    false
+    > path = '\\\\server\\share\\foo\\bar\\';
+    > bool = RE.test( path )
+    false
+    > path = '//server/share';
+    > bool = RE.test( path )
+    false
+    > path = '/foo/bar';
+    > bool = RE.test( path )
+    false
+    > path = 'foo/bar';
+    > bool = RE.test( path )
+    false
+    > path = './foo/bar';
+    > bool = RE.test( path )
+    false
+    > path = '/foo/../bar';
+    > bool = RE.test( path )
+    false
+
+
+{{alias}}.REGEXP
+    Regular expression to parse a UNC path.
+
+    Examples
+    --------
+    > var path = '\\\\server\\share\\foo\\bar\\baz:a:b';
+    > var bool = {{alias}}.REGEXP.test( path )
+    true
+    > path = '\\\\server\\share\\foo\\bar\\baz::b';
+    > bool = {{alias}}.REGEXP.test( path )
+    true
+
+    See Also
+    --------
+

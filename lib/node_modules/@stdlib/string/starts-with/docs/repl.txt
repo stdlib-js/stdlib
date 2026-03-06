@@ -1,0 +1,41 @@
+
+{{alias}}( str, search[, position] )
+    Tests if a string starts with the characters of another string.
+
+    If provided an empty search string, the function always returns `true`.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    search: string
+        Search string.
+
+    position: integer (optional)
+        Position at which to start searching for `search`. If less than `0`, the
+        start position is determined relative to the end of the input string.
+        Default: 0.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a string starts with the characters of
+        another string.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 'Beep', 'Be' )
+    true
+    > bool = {{alias}}( 'Beep', 'ep' )
+    false
+    > bool = {{alias}}( 'Beep', 'ee', 1 )
+    true
+    > bool = {{alias}}( 'Beep', 'ee', -3 )
+    true
+    > bool = {{alias}}( 'Beep', '' )
+    true
+
+    See Also
+    --------
+

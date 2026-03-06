@@ -1,0 +1,18 @@
+
+{{alias}}
+    Number of CPUs.
+
+    In browser environments, the number of CPUs is determined by querying the
+    hardware concurrency API.
+
+    In Node.js environments, the number of CPUs is determined via the `os`
+    module.
+
+    Examples
+    --------
+    > {{alias}}
+    <number>
+
+    See Also
+    --------
+

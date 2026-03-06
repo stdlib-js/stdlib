@@ -1,0 +1,26 @@
+
+{{alias}}( z, y )
+    Returns a double-precision complex floating-point number with the same
+    magnitude as `z` and the sign of `y*z`.
+
+    Parameters
+    ----------
+    z: Complex128
+        Complex number.
+
+    y: number
+        Number from which to derive the sign.
+
+    Returns
+    -------
+    out: Complex128
+        Result.
+
+    Examples
+    --------
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( -4.2, 5.5 ), -9.0 )
+    <Complex128>[ 4.2, -5.5 ]
+
+    See Also
+    --------
+

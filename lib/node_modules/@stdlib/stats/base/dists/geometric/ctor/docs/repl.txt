@@ -1,0 +1,97 @@
+
+{{alias}}( [p] )
+    Returns a geometric distribution object.
+
+    Parameters
+    ----------
+    p: number (optional)
+        Success probability. Must be between `0` and `1`. Default: `0.5`.
+
+    Returns
+    -------
+    geometric: Object
+        Distribution instance.
+
+    geometric.p: number
+        Success probability. If set, the value must be between `0` and `1`.
+
+    geometric.entropy: number
+        Read-only property which returns the differential entropy.
+
+    geometric.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    geometric.mean: number
+        Read-only property which returns the expected value.
+
+    geometric.median: number
+        Read-only property which returns the median.
+
+    geometric.mode: number
+        Read-only property which returns the mode.
+
+    geometric.skewness: number
+        Read-only property which returns the skewness.
+
+    geometric.stdev: number
+        Read-only property which returns the standard deviation.
+
+    geometric.variance: number
+        Read-only property which returns the variance.
+
+    geometric.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    geometric.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    geometric.logpmf: Function
+        Evaluates the natural logarithm of the probability mass function (PMF).
+
+    geometric.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    geometric.pmf: Function
+        Evaluates the probability mass function (PMF).
+
+    geometric.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var geometric = {{alias}}( 0.6 );
+    > geometric.p
+    0.6
+    > geometric.entropy
+    ~1.122
+    > geometric.kurtosis
+    ~6.9
+    > geometric.mean
+    ~0.667
+    > geometric.median
+    0.0
+    > geometric.mode
+    0.0
+    > geometric.skewness
+    ~2.214
+    > geometric.stdev
+    ~1.054
+    > geometric.variance
+    ~1.111
+    > geometric.cdf( 3.0 )
+    ~0.974
+    > geometric.logcdf( 3.0 )
+    ~-0.026
+    > geometric.logpmf( 4.0 )
+    ~-4.176
+    > geometric.mgf( 0.5 )
+    ~2.905
+    > geometric.pmf( 2.0 )
+    ~0.096
+    > geometric.quantile( 0.7 )
+    1.0
+
+    See Also
+    --------
+

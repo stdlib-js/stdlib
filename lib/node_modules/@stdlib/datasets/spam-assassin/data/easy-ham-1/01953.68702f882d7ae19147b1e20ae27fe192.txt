@@ -1,0 +1,38 @@
+From rssfeeds@jmason.org  Thu Sep 26 16:42:00 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 15DA916F6B
+	for <jm@localhost>; Thu, 26 Sep 2002 16:41:10 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 16:41:10 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8QFUOg24827 for
+    <jm@jmason.org>; Thu, 26 Sep 2002 16:30:24 +0100
+Message-Id: <200209261530.g8QFUOg24827@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: morbus <rssfeeds@spamassassin.taint.org>
+Subject: <strong>More AmphetaDesk Reviews</strong>
+Date: Thu, 26 Sep 2002 15:30:23 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: e59c6ca5938fc27a6995e30fc10b6482
+Date: Not supplied
+
+It came out a while ago, but Ben Hammersley reviewed AmphetaDesk and a few 
+other free aggregators in his Guardian article, Working the web: Newsreaders[1]
+. In more timely news, OSDir[2], a repository of "stable, open source apps", 
+has reviewed AmphetaDesk[3] and labels it an 'OSDir.com preferred' app. They 
+also give you the ability to rate AmphetaDesk[4] on a scale of 1-10. You can 
+see the current rating here[5].
+
+[1] http://www.guardian.co.uk/online/story/0,3605,781838,00.html
+[2] http://www.osdir.com/
+[3] http://osdir.com/modules.php?op=modload&name=News&file=article&sid=34&mode=thread&order=0&thold=0
+[4] http://osdir.com/modules.php?op=modload&name=Downloads&file=index&req=ratedownload&lid=28&ttitle=%3Ch3%3EShow%20Your%20Support%20for%20Amphetadesk%3C/h3%3E
+    %3Ch3%3EShow%20Your%20Support%20for%20Amphetadesk%3C/h3%3E"
+[5] http://osdir.com/modules.php?op=modload&name=Downloads&file=index&req=viewdownloaddetails&lid=28&ttitle=AmphetaDesk
+    AmphetaDesk"
+
+

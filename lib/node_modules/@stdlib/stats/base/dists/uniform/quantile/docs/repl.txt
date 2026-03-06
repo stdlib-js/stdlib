@@ -1,0 +1,76 @@
+
+{{alias}}( p, a, b )
+    Evaluates the quantile function for a uniform distribution with minimum
+    support `a` and maximum support `b` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `a >= b`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 0.0, 1.0 )
+    0.8
+    > y = {{alias}}( 0.5, 0.0, 10.0 )
+    5.0
+
+    > y = {{alias}}( 1.1, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( -0.2, 0.0, 1.0 )
+    NaN
+
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+
+    > y = {{alias}}( 0.5, 2.0, 1.0 )
+    NaN
+
+
+{{alias}}.factory( a, b )
+    Returns a function for evaluating the quantile function of a uniform
+    distribution with minimum support `a` and maximum support `b`.
+
+    Parameters
+    ----------
+    a: number
+        Minimum support.
+
+    b: number
+        Maximum support.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 0.0, 4.0 );
+    > var y = myQuantile( 0.8 )
+    3.2
+
+    See Also
+    --------
+

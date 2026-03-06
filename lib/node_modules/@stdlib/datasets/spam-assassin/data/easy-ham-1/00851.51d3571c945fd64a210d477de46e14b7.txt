@@ -1,0 +1,99 @@
+From fork-admin@xent.com  Wed Oct  2 17:51:37 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id DE47216F17
+	for <jm@localhost>; Wed,  2 Oct 2002 17:51:14 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 17:51:14 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g92GQDK16972 for <jm@jmason.org>;
+    Wed, 2 Oct 2002 17:26:15 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8F55C2940B7; Wed,  2 Oct 2002 09:26:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id 0300129409C for <fork@xent.com>;
+    Wed,  2 Oct 2002 09:25:52 -0700 (PDT)
+Received: (qmail 19429 invoked from network); 2 Oct 2002 16:25:59 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 2 Oct 2002 16:25:59 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id 907FB1B62C;
+    Wed,  2 Oct 2002 12:25:52 -0400 (EDT)
+To: "Mr. FoRK" <fork_list@hotmail.com>
+Cc: <fork@spamassassin.taint.org>, "Rohit Khare" <Rohit@KnowNow.com>
+Subject: Re: ActiveBuddy
+References: <DAV68j2OW7MgETDx4e700008892@hotmail.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m28z1grenj.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 02 Oct 2002 12:25:52 -0400
+
+
+How is this any different from attaching an Infobot or A.L.I.C.E
+through licq's console-hook?  People have been doing that for years,
+and for over a decade in IRC and the MUDs.
+
+... and the one thing I think we've learned in all that time is that,
+as a help-desk, it doesn't work.  People just don't like talking to
+robots, especially when the robots, once confused, become imbeciles.
+I think the humans may feel cheated, deceived and tricked when they
+discover, as with the Seattle answer, that they are talking to a
+machine; there's no real intelligence behind that simulated-friendly
+and therefore empty 'thx'.
+
+AIML is clever and cute, but for /practical/ applications as a first
+line of technical support?  It's been tried over and over, and while I
+/also/ think that it /should/ work, for the most part, people won't
+use it.  What's worse, as we make the NL processing more and more
+clever, it only means it fails more dramatically; ALICE doesn't just
+stumble a bit, it starts to drool.  And ALICE is the best we have.
+
+Like a Dalek: All very impressive when things are going well, but all
+it takes to betray the chicken-brain inside is a towel over it's
+ill-placed eye, or a spin off the metal surface ;)
+
+In all the prolog-based NL database query systems of the 1980's and
+other later chatterbot helpdesk projects like Shallow Red, even
+simpler tries like Ask Jeeves, people very quickly know they're
+talking to a robot, and the queries anneal to short, truncated and
+terse database-like verb-noun or just noun-keyword requests.  
+
+People are just too quick to adapt, and too impatient to forgive a
+clunky interface, and for now, especially when the /average/ computer
+user still can't type more than maybe 5-10wpm, NL is a painfully slow
+clunky interface.
+
+Put it this way: Would you login, wake the bot and ask for the Seattle
+weather, or would you do as we /all/ do and just click the weather
+icon sitting there on your desktop?
+
+Just for fun, here's an interesting conversation between Shallow Red,
+ALICE and Eliza as they decide to play the Turing Game:
+
+http://www.botspot.com/best/12-09-97.htm
+
+-- 
+Gary Lawrence Murphy - garym@teledyn.com - TeleDynamics Communications
+ - blog: http://www.auracom.com/~teledyn - biz: http://teledyn.com/ -
+  "Computers are useless. They can only give you answers." (Picasso)
+
+

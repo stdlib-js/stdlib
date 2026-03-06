@@ -1,0 +1,74 @@
+From ilug-admin@linux.ie  Tue Aug 20 11:52:43 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7448743C4C
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:49 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:49 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7K9XRZ32672 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 10:33:27 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA25208; Tue, 20 Aug 2002 10:32:04 +0100
+Received: from milexc01.maxtor.com ([134.6.205.206]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA25177 for <ilug@linux.ie>; Tue,
+    20 Aug 2002 10:31:56 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [134.6.205.206] claimed to
+    be milexc01.maxtor.com
+Received: by milexc01.maxtor.com with Internet Mail Service (5.5.2653.19)
+    id <RHPLX0HV>; Tue, 20 Aug 2002 10:31:54 +0100
+Message-Id: <0D443C91DCE9CD40B1C795BA222A729E01885603@milexc01.maxtor.com>
+From: "Wynne, Conor" <conor_wynne@maxtor.com>
+To: "'Colin Nevin'" <colin_nevin@yahoo.com>, ilug@linux.ie
+Subject: RE: [ILUG] staroffice 6.0 installation freezes under RH7.3
+Date: Tue, 20 Aug 2002 10:31:53 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+No problems installing OpenOffice 653??? and 1.0. Had some issues with bz2's
+being corrupted but fixed when downloaded again. 
+
+I am downloading the src of 1.01 at the mo to se if it will work any faster
+compiled for my architecture. 
+
+Regards,
+CW
+
+------------
+Hi All,
+
+Just wondering if anyone has ever installed StarOffice
+6.0 (or Open Office), and if any have experienced any
+problems with the install freezing ?
+
+I'm using RedHat 7.3 kernel 2.4.18-3, and glibc 2.2.5
+?
+
+I might try downloading OpenOffice instead if it is
+unresolved!!!!
+
+Cheers all,
+
+Colin
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,49 @@
+From Subscriber_Services78056@att.net  Tue Sep 17 23:31:04 2002
+Return-Path: <Subscriber_Services78056@att.net>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id DAA8916F03
+	for <zzzz@localhost>; Tue, 17 Sep 2002 23:31:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 17 Sep 2002 23:31:03 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8HHlOC20988 for
+    <zzzz@jmason.org>; Tue, 17 Sep 2002 18:47:24 +0100
+Received: from 211.248.147.90 ([211.252.253.189]) by webnote.net
+    (8.9.3/8.9.3) with SMTP id SAA27815 for <zzzz@spamassassin.taint.org>;
+    Tue, 17 Sep 2002 18:47:47 +0100
+Message-Id: <200209171747.SAA27815@webnote.net>
+Received: from rly-yk04.mx.aol.com ([99.100.131.137]) by
+    rly-xw01.mx.aol.com with NNFMP; Sep, 17 2002 12:32:25 PM -0100
+Received: from unknown (74.38.244.167) by asy100.as122.sol.superonline.com
+    with NNFMP; Sep, 17 2002 11:39:32 AM +1200
+Received: from 34.57.158.148 ([34.57.158.148]) by rly-xr02.mx.aol.com with
+    local; Sep, 17 2002 10:46:38 AM -0000
+From: "WALL STREET BULLETIN..47331" <Subscriber_Services78056@att.net>
+To: zzzz@spamassassin.taint.org
+Cc: 
+Subject: New Stock Pick: BBAN - Last Pick UP 309%.......................................... gsg
+Sender: "WALL STREET BULLETIN..47331" <Subscriber_Services78056@att.net>
+MIME-Version: 1.0
+Date: Tue, 17 Sep 2002 12:47:46 -0500
+X-Mailer: Internet Mail Service (5.5.2650.21)
+X-Priority: 1
+Content-Type: text/html; charset="iso-8859-1"
+
+<html>
+<head>
+</head>
+<body>
+<p align="center"><font style="font-size: 11pt" face="Courier">Volume 8, Issue 35 - Sept. 2002</font></p>
+<p align="center"><b><a href="http://www.globalcybercollective.com/BBAN_9_2002.htm">CLICK HERE</a></b></p>
+<p align="center"><img border="0" src="http://www.globalcybercollective.com/WSBulletinEmail5.bmp"></p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;</p>
+<p align="center"><font size="2">I no longer wish to receive your newsletter <a href="mailto:WSB20000@444.net?subject=takeoff"><b>click here</b></a></font></p>
+</body>
+</html>
+
+urfrdemubblkunmdbyh
+
+

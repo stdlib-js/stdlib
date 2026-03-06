@@ -1,0 +1,72 @@
+From social-admin@linux.ie  Tue Aug  6 11:08:50 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2D47E44112
+	for <jm@localhost>; Tue,  6 Aug 2002 06:04:01 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:04:01 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g72NQbv15735 for
+    <jm+ilug-social@jmason.org>; Sat, 3 Aug 2002 00:26:37 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA02250; Sat, 3 Aug 2002 00:24:55 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id AAA02218 for <social@linux.ie>;
+    Sat, 3 Aug 2002 00:24:48 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g72NOlY29422 for <social@linux.ie>;
+    Sat, 3 Aug 2002 00:24:47 +0100
+Date: Sat, 3 Aug 2002 00:24:45 +0100
+To: Paul Jakma <paul@clubi.ie>
+Cc: ilug social <social@linux.ie>
+Subject: Re: [ILUG-Social] Re: [ILUG] Dermot Beirne/Dublin/IE/Exel is out of the office.
+Message-Id: <20020803002445.B28892@ie.suberic.net>
+References: <20020802220213.B25994@ie.suberic.net>
+    <Pine.LNX.4.44.0208022302570.8981-100000@fogarty.jakma.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <Pine.LNX.4.44.0208022302570.8981-100000@fogarty.jakma.org>;
+    from paul@clubi.ie on Sat, Aug 03, 2002 at 12:00:34AM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1028849087.84db23@ie.suberic.net>
+Mail-Followup-To: kevin+dated+1028849087.84db23@ie.suberic.net,
+	paul@clubi.ie, social@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+On Sat, Aug 03, 2002 at 12:00:34AM +0100, Paul Jakma wrote:
+> finally, the email-disclaimers advocacy site 
+> 
+> 	http://www.emaildisclaimers.com/
+
+sites like this make me question my opposition to capital punishment.
+"This month's Q&A: Is it better to prepend or append disclaimer
+statements?"  augh!  and they admit they're pointless - in reality they're
+just the legal world's version of mandatory email fashion accessories.
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

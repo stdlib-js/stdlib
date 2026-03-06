@@ -1,0 +1,75 @@
+
+{{alias}}( value )
+    Tests if a value is an array-like object of integer values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an array-like object of integer
+        values.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ -3.0, new Number(0.0), 2.0 ] )
+    true
+    > bool = {{alias}}( [ -3.0, '3.0' ] )
+    false
+
+
+{{alias}}.primitives( value )
+    Tests if a value is an array-like object containing only primitive integer
+    values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an array-like object containing
+        only primitive integer values.
+
+    Examples
+    --------
+    > var bool = {{alias}}.primitives( [ -1.0, 10.0 ] )
+    true
+    > bool = {{alias}}.primitives( [ -1.0, 0.0, 5.0 ] )
+    true
+    > bool = {{alias}}.primitives( [ -3.0, new Number(-1.0) ] )
+    false
+
+
+{{alias}}.objects( value )
+    Tests if a value is an array-like object containing only number objects
+    having integer values.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is an array-like object containing
+        only number objects having integer values.
+
+    Examples
+    --------
+    > var bool = {{alias}}.objects( [ new Number(1.0), new Number(3.0) ] )
+    true
+    > bool = {{alias}}.objects( [ -1.0, 0.0, 3.0 ] )
+    false
+    > bool = {{alias}}.objects( [ 3.0, new Number(-1.0) ] )
+    false
+
+    See Also
+    --------
+

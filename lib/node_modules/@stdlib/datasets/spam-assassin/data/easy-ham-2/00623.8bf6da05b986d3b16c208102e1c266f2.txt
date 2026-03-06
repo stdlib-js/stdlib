@@ -1,0 +1,146 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug 13 10:23:20 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9376543C51
+	for <jm@localhost>; Tue, 13 Aug 2002 05:19:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:19:37 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7D1Dib12022 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 02:13:44 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17eQ9H-0004rK-00; Mon,
+    12 Aug 2002 18:07:03 -0700
+Received: from dhcp024-208-195-177.indy.rr.com ([24.208.195.177]
+    helo=burgers.bubbanfriends.org) by usw-sf-list1.sourceforge.net with esmtp
+    (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17eQ96-0005MQ-00 for <razor-users@lists.sourceforge.net>; Mon,
+    12 Aug 2002 18:06:53 -0700
+Received: from localhost (localhost.localdomain [127.0.0.1]) by
+    burgers.bubbanfriends.org (Postfix) with ESMTP id 670FD400088;
+    Mon, 12 Aug 2002 20:06:55 -0500 (EST)
+Received: by burgers.bubbanfriends.org (Postfix, from userid 500) id
+    4883C401A40; Mon, 12 Aug 2002 20:06:54 -0500 (EST)
+Received: from localhost (localhost [127.0.0.1]) by
+    burgers.bubbanfriends.org (Postfix) with ESMTP id 466B7C00CE0;
+    Mon, 12 Aug 2002 20:06:54 -0500 (EST)
+From: Mike Burger <mburger@bubbanfriends.org>
+To: Chad Norwood <chad@cloudmark.com>
+Cc: razor-users@example.sourceforge.net
+In-Reply-To: <20020813010234.GE11270@nexus.cloudmark.com>
+Message-Id: <Pine.LNX.4.44.0208122006220.21012-100000@burgers.bubbanfriends.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Virus-Scanned: by AMaViS new-20020517
+Subject: [Razor-users] Re: No results from razor-check on known spam?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 12 Aug 2002 20:06:54 -0500 (EST)
+Date: Mon, 12 Aug 2002 20:06:54 -0500 (EST)
+
+I seem to be getting the known spam message numbers, now, using 
+2.14...now, I'm just wondering about the error at the end of the 
+check/report procedure.
+
+On Mon, 12 Aug 2002, Chad Norwood wrote:
+
+> 
+>   This is bizarre. The numbers should not just disappear.  Try 
+>   with the '-n' switch which prints out a '-' before legit mails.
+> 
+>   razor-check -n mail/caughtspam
+>   
+>   If that still appears broken, can you do the following statement and
+>   send me 'spam_fileno' and 'razor.log' 
+> 
+>   razor-check -n -logfile=razor.log -dl=13 mail/caughtspam >spam_fileno
+>   
+>   -chad
+>   
+> On 11/08/02 07:39 -0500, Mike Burger wrote:
+> ) Since last night, I've been getting odd results...or, rather, a lack of
+> ) results from razor-check.
+> ) 
+> ) I am using SpamAssassin, and have my .procmailrc set up to dump any tagged
+> ) spam into its own folder under my ~/mail directory.
+> ) 
+> ) When I get any new messages in that folder, I run razor-check against 
+> ) them, like so:
+> ) 
+> ) razor-check < mail/caughtspam
+> ) 
+> ) Previously, if I just ran razor-check against such a batch of spam, it 
+> ) would report the message numbers, in the batch, that were known spam.  I 
+> ) would then delete the known spam from the batch, and then run:
+> ) 
+> ) razor-report < mail/caughtspam 
+> ) 
+> ) to submit the rest, after confirming that 
+> ) it was, indeed, spam. (I should tell you that since using SA 2.31, I've 
+> ) had less than 1% of the messages it's tagged wind up as false positives, 
+> ) but I've taken the advice of many here, and am not just automatically 
+> ) reporting).
+> ) 
+> ) As I said, previously, razor-check would tell me which messages were known 
+> ) spam.  For example, if I ran razor-check against a batch of 5 messages, 
+> ) and message #2 and #4 were known spam, the end result would look like 
+> ) this:
+> ) 
+> ) 2
+> ) 4
+> ) 
+> ) But, starting yesterday, it stopped doing this.  Now, I've got to call 
+> ) 
+> ) razor-check -d < mail/caughtspam
+> ) 
+> ) And look for the "mail id # is known spam" before I can eliminate it.
+> ) 
+> ) The last 4 messages I checked, I had to do the same thing.
+> ) 
+> ) I've changed nothing in my razor installation or configuration.
+> ) 
+> ) Any ideas what might have changed, here? I'm running razor-agents-2.12, 
+> ) and razor-agents-sdk-2.0.3.
+> ) 
+> ) Thanks.
+> ) 
+> ) --Mike
+> ) 
+> ) 
+> ) 
+> ) -------------------------------------------------------
+> ) This sf.net email is sponsored by:ThinkGeek
+> ) Welcome to geek heaven.
+> ) http://thinkgeek.com/sf
+> ) _______________________________________________
+> ) Razor-users mailing list
+> ) Razor-users@lists.sourceforge.net
+> ) https://lists.sourceforge.net/lists/listinfo/razor-users
+> 
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

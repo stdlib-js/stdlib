@@ -1,0 +1,34 @@
+
+{{alias}}( x )
+    Computes the principal square root of `1+x` minus one.
+
+    This function is more accurate than the obvious approach for small `x`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Square root of `1+x` minus one.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.0 )
+    1.0
+    > y = {{alias}}( 0.5 )
+    ~0.225
+    > y = {{alias}}( 0.02 )
+    ~0.01
+    > y = {{alias}}( -0.5 )
+    ~-0.293
+    > y = {{alias}}( -1.1 )
+    NaN
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

@@ -1,0 +1,23 @@
+
+{{alias}}( z )
+    Evaluates the signum function of a double-precision complex floating-point
+    number.
+
+    Parameters
+    ----------
+    z: Complex128
+        Complex number.
+
+    Returns
+    -------
+    out: Complex128
+        Result.
+
+    Examples
+    --------
+    > var v = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( -4.2, 5.5 ) )
+    <Complex128>[ -0.6069136033622302, 0.79476781392673 ]
+
+    See Also
+    --------
+

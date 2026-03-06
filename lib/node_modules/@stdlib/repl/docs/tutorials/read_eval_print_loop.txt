@@ -1,0 +1,752 @@
+---
+name: repl
+description: Learn how to use the REPL environment.
+---
+
+| \*Tutorial: REPL\s
+
+
+How to use this tutorial...
+
+• Enter
+
+  ```javascript
+  next();
+  ```
+
+  followed by \*RETURN\s to advance the tutorial.
+
+---
+
+• At the command prompt, enter
+
+  ```javascript
+  pres();
+  ```
+
+  followed by \*RETURN\s to see the list of available tutorial commands.
+
+---
+
+• As documented when running \*pres()\s, you can use command shortcuts.
+  For example, enter
+
+  ```javascript
+  n();
+  ```
+
+  followed by \*RETURN\s to advance the tutorial.
+
+---
+
+• Use the up/down arrow keys to cycle through previously run commands.
+  Feel free to try using the arrow keys below...
+
+---
+
+• When entering and running commands, the tutorial presentation slide is
+  likely to scroll out of view.
+
+  To return to the slide, simply scroll up. :grinning:
+
+---
+
+• As this tutorial is a REPL presentation, enter
+
+  ```javascript
+  presentationStop();
+  ```
+
+  followed by \*RETURN\s to end this tutorial at any time.
+
+• Enter
+
+  ```javascript
+  quit();
+  ```
+
+  to exit the REPL altogether.
+
+---
+
+| Enough preliminaries, let's start the tutorial!
+
+---
+
+| This tutorial introduces you to the REPL environment.
+
+---
+
+| REPL stands for \*r\sead-\*e\sval-\*p\srint \*l\soop\s.
+
+---
+
+| A REPL...
+
+\s
+
+--
+
+• ...is an interactive programming environment
+
+--
+
+• ...which receives individual user inputs (e.g., single expressions)
+
+--
+
+• ...evaluates those inputs
+
+--
+
+• ...and returns the result.
+
+---
+
+
+| Accordingly, an entered program is executed piecewise and sequentially.
+
+---
+
+In this tutorial, you've already been using the REPL when you've advanced
+the tutorial and printed the list of available commands.
+
+As another simple example, evaluate the following input
+
+```javascript
+1+1
+```
+
+--
+
+\s
+In this case, we entered `1+1` (user inputs) and instructed the REPL to evaluate
+those inputs (\*RETURN\s), and the REPL returned (and printed) the result.
+
+--
+
+\s
+After returning the result, the REPL provides another prompt, thus completing
+the \*r\sead-\*e\sval-\*p\srint \*l\soop.
+
+---
+
+| REPLs are useful for...
+\s
+
+--
+
+• learning programming languages (such as JavaScript)
+
+--
+
+• debugging (including when embedded in running applications)
+
+--
+
+• demos (including live coding)
+
+--
+
+• interactivity (such as during iterative development)
+
+---
+
+To get started using this REPL, a few commands will prove immensely useful.
+
+---
+
+The first command is
+
+```javascript
+help()
+```
+
+Run the above command to see a list of REPL commands.
+
+---
+
+To see the documentation for a specific REPL alias, provide the alias to the
+\*help()\s command.
+
+For example, run
+
+```javascript
+help( '{{alias:@stdlib/math/base/special/sin}}' )
+```
+
+to see the documentation for the \*{{alias:@stdlib/math/base/special/sin}}\s function.
+
+---
+
+On the previous slide, you specified the alias via a string representing the
+alias name.
+
+You can also provide a reference pointing to the aliased value.
+
+For example, run
+
+```javascript
+help( {{alias:@stdlib/math/base/special/sin}} )
+```
+
+to see the same documentation as before.
+
+---
+
+Additionally, for objects having known methods, you can print method
+documentation.
+
+For example, run
+
+```javascript
+help( {{alias:@stdlib/random/base/randu}}.factory )
+```
+
+to see the \*factory()\s method documentation.
+
+---
+
+Lastly, for select objects having a known constructor, you can provide
+instances.
+
+For example, create a \*Float64Array\s
+
+```javascript
+var x = new {{alias:@stdlib/array/float64}}( 10 );
+```
+
+and then run
+
+```javascript
+help( x )
+```
+
+which will print the documentation for \*Float64Array\s.
+
+---
+
+The \*help()\s command provides detailed API documentation.
+
+Sometimes, you just want to know the function signature and a brief
+description.
+
+For this use case, you can use another command: \*info()\s.
+
+For example, run
+
+```javascript
+info( '{{alias:@stdlib/math/base/special/sin}}' )
+```
+
+to see abbreviated API documentation for \*{{alias:@stdlib/math/base/special/sin}}\s.
+
+---
+
+Similar to \*help()\s, you can provide a variable reference.
+
+For example, run
+
+```javascript
+info( {{alias:@stdlib/math/base/special/sin}} )
+```
+
+to see the same abbreviated API documentation.
+
+---
+
+Another useful command is \*example()\s, which runs the example code found in
+the documentation printed by \*help()\s.
+
+For example, run
+
+```javascript
+example( '{{alias:@stdlib/math/base/special/sin}}' )
+```
+
+to run the example code found in the documentation for \*{{alias:@stdlib/math/base/special/sin}}\s.
+
+---
+
+Similarly to \*help()\s and \*info()\s, you can provide a variable reference.
+
+For example, run
+
+```javascript
+example( {{alias:@stdlib/math/base/special/sin}} )
+```
+
+to again run the example code for \*{{alias:@stdlib/math/base/special/sin}}\s.
+
+---
+
+Finally, two other commands are useful when wanting to resolve aliases and
+package implementations.
+
+---
+
+To determine which package corresponds to a specified alias, use
+\*alias2pkg()\s.
+
+For example, run
+
+```javascript
+alias2pkg( '{{alias:@stdlib/math/base/special/sin}}' )
+```
+
+or
+
+```javascript
+alias2pkg( {{alias:@stdlib/math/base/special/sin}} )
+```
+
+to resolve the package for \*{{alias:@stdlib/math/base/special/sin}}\s.
+
+---
+
+To determine which alias corresponds to a specified package, use
+\*pkg2alias()\s.
+
+For example, run
+
+```javascript
+pkg2alias( '@stdlib/math/base/special/sin' )
+```
+
+to resolve the alias for \*@stdlib/math/base/special/sin\s.
+
+---
+
+When you're working in a REPL, you're often interested in viewing the
+results of the previously invoked command.
+
+Accordingly, when you run
+
+```javascript
+1+1
+```
+
+you should see the result \*2\s.
+
+---
+
+However, at other times you'll want to silence printed output.
+
+To do so, add a \*semicolon\s to any statement.
+
+For example, when you add a semicolon to the previous statement
+
+```javascript
+1+1;
+```
+
+no result is printed.
+
+---
+
+During iterative development, you'll occasionally forget to assign the
+results of the last expression or statement.
+
+Fortunately, the REPL has a special variable which stores the last result:
+\*ans\s.
+
+For example, run the previous statement
+
+```javascript
+1+1;
+```
+
+followed by
+
+```javascript
+ans
+```
+
+to see that \*ans\s is assigned the value \*2\s.
+
+---
+
+While not encouraged for general use, \*ans\s can be used just like any
+other variable within the top-level scope.
+
+---
+
+Another common occurrence during iterative development within a REPL
+environment is forgetting variable names or failing to remember what
+variables have already been declared.
+
+Thankfully, you can run
+
+```javascript
+vars()
+```
+
+to return a list of user-defined variable names. For additional variable
+details, run
+
+```javascript
+help( vars )
+```
+
+to see function options.
+
+---
+
+To facilitate working with long variable names and nested property access,
+the REPL supports \*TAB\s completion.
+
+For example, enter
+
+```javascript
+base.r
+```
+
+followed by \*TAB\s to generate a list of auto-completions which begin
+with the letter \*r\s.
+
+---
+
+Similarly, if you create a nested object
+
+```javascript
+var obj = { 'beep': { 'boop': { 'foo': 'bar' } } };
+```
+
+and then enter
+
+```javascript
+obj.beep.b
+```
+
+followed by \*TAB\s, the nested property \*boop\s should auto-complete.
+
+---
+
+\*TAB\s completion also works with computed properties. For example, enter
+
+```javascript
+obj[ 'beep' ][ 'b
+```
+
+followed by \*TAB\s to auto-complete the nested property \*boop\s as done
+in the previous slide.
+
+---
+
+For select APIs interacting with the filesystem, \*TAB\s completion is
+supported for file paths.
+
+For example, enter
+
+```javascript
+{{alias:@stdlib/fs/read-file}}.sync( './
+```
+
+followed by \*TAB\s to generate a list of applicable file paths.
+
+---
+
+Additionally, \*TAB\s completion is supported for variables defined in a
+nested scope.
+
+For example, enter
+
+```javascript
+function foo() { var beep = 5; be
+```
+
+followed by \*TAB\s to auto-complete the variable \*beep\s.
+
+Similarly, entering
+
+```javascript
+function foo( beep ) { console.log( be
+```
+
+followed by \*TAB\s auto-completes the parameter \*beep\s.
+
+---
+
+When working in a REPL, you'll often times want to explore and test
+functions and workflows using different parameterizations and variable
+values.
+
+Managing the various variables can be messy and difficult.
+
+To this end, this REPL introduces the concept of workspaces.
+
+---
+
+A \*workspace\s is simply a named collection of user-defined variables.
+
+---
+
+To print the name of the current workspace, run
+
+```javascript
+currentWorkspace
+```
+
+Take note of this workspace name.
+
+---
+
+To retrieve a list of all workspaces, run
+
+```javascript
+workspaces()
+```
+
+---
+
+To either switch to or create a workspace, you can use the \*workspace()\s
+command. For example, enter
+
+```javascript
+workspace( '
+```
+
+followed by \*TAB\s to see a list of existing workspaces to which you can
+switch.
+
+---
+
+To switch to the "base" workspace, run
+
+```javascript
+workspace( 'base' )
+```
+
+If you now run
+
+```javascript
+vars()
+```
+
+notice that the variables defined in the previous workspace are no longer
+present.
+
+Return back to the tutorial workspace.
+
+---
+
+Run the \*help()\s command to see additional workspace-related commands.
+
+---
+
+JavaScript is single-threaded and asynchronous.
+
+To support asynchronous APIs, the REPL supports top-level \*async\s/\*await\s.
+
+---
+
+In Node.js environments supporting \*async\s/\*await\s, run
+
+```javascript
+await new Promise((resolve) => setTimeout(() => resolve( 'beep' ), 2000))
+```
+
+which will return the resolved value.
+
+---
+
+In older Node.js environments and when using non-promise APIs, you can
+invoke a \*__done__\s callback.
+
+For example, define the following function
+
+```javascript
+function foo() {setTimeout(() => __done__(null, 'beep'), 2000)};
+```
+
+To asynchronously resolve the value, run
+
+```javascript
+"async"; foo()
+```
+
+where the special directive \*"async";\s indicates that a command is
+asynchronous.
+
+---
+
+During iterative development, you'll frequently want to rerun one or more
+commands.
+
+For example, let's say you want to simulate the rolling of two fair dice
+
+```javascript
+var dice = {{alias:@stdlib/random/base/discrete-uniform}}.factory( 1, 6, {'seed': 1234} );
+function roll() { return [ dice(), dice() ]; };
+```
+
+To roll the dice, enter the following command one or more times
+
+```javascript
+roll()
+```
+
+---
+
+To regenerate the same dice roll sequence, run
+
+```javascript
+rerun( [ X, Y ] )
+```
+
+where \*X\s is the line number where you declared \*dice\s and \*Y\s is
+a line number where you invoked \*roll()\s.
+
+\*rerun\s is especially useful for saving keystrokes when rerunning
+arbitrary sequences of commands.
+
+---
+
+When working in a REPL, you'll have use cases where you'll want to
+encapsulate extended logic in external files.
+
+These files will typically export functionality and/or data which you
+can then import into the REPL environment.
+
+For example, open up your favorite editor, create a new file, and paste
+the following code
+
+```javascript
+function beep() {
+    return 'boop';
+}
+
+module.exports = beep;
+```
+
+---
+
+To load your newly created file, enter
+
+```javascript
+var beep = require( './
+```
+
+followed by \*TAB\s to use \*TAB\s completion to locate your file.
+
+Once you've resolved the file's path and executed the command, run
+
+```javascript
+beep()
+```
+
+which should return the value \*'boop'\s.
+
+---
+
+Now modify your file to match the following contents
+
+```javascript
+function beep() {
+    return 'beepboop';
+}
+
+module.exports = beep;
+```
+
+Rerun the \*require()\s statement you entered above and run
+
+```javascript
+beep()
+```
+
+Did the command return \*'beepboop'\s?
+
+---
+
+\*require()\s works by caching the exports of previously required modules.
+
+To explicitly reload your modified file, enter
+
+```javascript
+beep = rerequire( './
+```
+
+followed by \*TAB\s to use \*TAB\s completion to once again locate your file.
+
+Once you've resolved the file's path and executed the command, run
+
+```javascript
+beep()
+```
+
+which should return the expected value.
+
+---
+
+For those use cases where you need to reload a module and all of its module
+dependencies, use \*deeprerequire()\s.
+
+---
+
+Working in a REPL frequently involves working with data.
+
+To facilitate exploring that data, the REPL provides a plot API.
+
+---
+
+As a simple example, define two 1-dimensional data arrays corresponding
+to the x- and y-axis plot data, respectively.
+
+```javascript
+var x = {{alias:@stdlib/utils/inmap}}( new {{alias:@stdlib/array/int32}}(100), (v,i) => i );
+var y = [ ...{{alias:@stdlib/random/iter/randu}}({'iter':x.length}) ];
+```
+
+---
+
+Next, define a new \*Plot\s instance by running
+
+```javascript
+var plt = new {{alias:@stdlib/plot/ctor}}( [x], [y] );
+```
+
+To view the plot in a separate window, run
+
+```javascript
+plt.view( 'window' )
+```
+
+---
+
+To further explore the \*Plot\s API, run
+
+```javascript
+help( {{alias:@stdlib/plot/ctor}} )
+```
+
+---
+
+| \*Congratulations!\s
+
+You've now reached the end of this tutorial.
+
+Hopefully, by now, you've realized how powerful (and fun!) programming in
+a REPL can be! :grinning:
+
+---
+
+| Happy REPLing!
+
+---
+
+| The End
+
+---
+
+• To exit this tutorial and return to the "base" workspace, run
+
+  ```javascript
+  presentationStop();
+  ```
+
+• To exit the REPL altogether, run
+
+  ```javascript
+  quit();
+  ```

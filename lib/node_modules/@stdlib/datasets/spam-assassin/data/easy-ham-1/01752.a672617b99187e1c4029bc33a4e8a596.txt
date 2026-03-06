@@ -1,0 +1,22 @@
+Return-Path: neale@woozle.org
+Delivery-Date: Wed Sep 11 08:10:29 2002
+From: neale@woozle.org (Neale Pickett)
+Date: 11 Sep 2002 00:10:29 -0700
+Subject: [Spambayes] stack.pop() ate my multipart message
+In-Reply-To: <w53lm6985vn.fsf@woozle.org>
+References: <w53lm6985vn.fsf@woozle.org>
+Message-ID: <w53znup6ly2.fsf@woozle.org>
+
+So then, Neale Pickett <neale@woozle.org> is all like:
+
+> Maybe there's some subtle interaction between generators and lists
+> that I can't understand.  Or something.  Being as I'm baffled, I don't
+> imagine any theory I come up with will be anywhere close to reality.
+
+And then, just as I was about to fall asleep, I figured it out.  The
+tokenizer now has an extra [:], and all is well.  I feel like a real
+chawbacon for not realizing this earlier.  :*)
+
+Blaming it on staying up past bedtime,
+
+Neale

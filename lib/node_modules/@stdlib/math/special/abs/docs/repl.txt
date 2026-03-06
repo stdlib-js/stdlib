@@ -1,0 +1,66 @@
+
+{{alias}}( x[, options] )
+    Computes the absolute value for each element in an ndarray.
+
+    The function returns an ndarray having the same shape as the input ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a numeric or "generic" data type.
+
+    options: Object (optional)
+        Options.
+
+    options.dtype: string|DataType (optional)
+        Output array data type. Must be a real-valued or "generic" data type.
+
+    options.order: string (optional)
+        Output array order. Must be either row-major (C-style) or column-major
+        (Fortran-style). By default, the order of the output array is the same
+        as the input array.
+
+    Returns
+    -------
+    y: ndarray
+        Output array containing element-wise results.
+
+    Examples
+    --------
+    > var arr = [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ];
+    > var x = {{alias:@stdlib/ndarray/array}}( arr );
+    > var y = {{alias}}( x )
+    <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+
+
+{{alias}}.assign( x, y )
+    Computes the absolute value for each element in an ndarray and assigns
+    results to a provided output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array. Must have a numeric or "generic" data type.
+
+    y: ndarray
+        Output array.
+
+    Returns
+    -------
+    y: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var arr = [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ];
+    > var x = {{alias:@stdlib/ndarray/array}}( arr );
+    > var sh = {{alias:@stdlib/ndarray/shape}}( x );
+    > var y = {{alias:@stdlib/ndarray/zeros}}( sh );
+    > var out = {{alias}}.assign( x, y )
+    <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+    > var bool = ( out === y )
+    true
+
+    See Also
+    --------
+

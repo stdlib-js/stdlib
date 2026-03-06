@@ -1,0 +1,7 @@
+{
+  "expression": "let obj = {a: 1, b: 2}; let func = (x) => x * 2; let ternary = [1, 2] ? true : false",
+  "expected": "let obj = \u001b[31m{\u001b[0ma\u001b[31m:\u001b[0m 1\u001b[31m,\u001b[0m b\u001b[31m:\u001b[0m 2\u001b[31m}\u001b[0m\u001b[31m;\u001b[0m let func = \u001b[31m(\u001b[0mx\u001b[31m)\u001b[0m \u001b[31m=>\u001b[0m x * 2\u001b[31m;\u001b[0m let ternary = \u001b[31m[\u001b[0m1\u001b[31m,\u001b[0m 2\u001b[31m]\u001b[0m \u001b[31m?\u001b[0m true \u001b[31m:\u001b[0m false",
+  "theme": {
+    "punctuation": "red"
+  }
+}

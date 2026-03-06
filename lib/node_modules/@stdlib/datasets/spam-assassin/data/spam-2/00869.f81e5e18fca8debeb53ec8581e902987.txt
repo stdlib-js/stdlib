@@ -1,0 +1,214 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MCknhY009175
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 07:46:50 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6MCknhk009172
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 07:46:49 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MCkfhY009115
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 07:46:42 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MCkeJ33575
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 08:46:40 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6MCke623297
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 08:46:40 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6MCkcR23273
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 08:46:38 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MCkbJ33560
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 08:46:37 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id HAA06560
+	for cpunks@minder.net; Mon, 22 Jul 2002 07:54:40 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id HAA06505
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 07:53:02 -0500
+Received: from s1082.mb00.net (s1082.mb00.net [207.33.16.82])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id HAA06498
+	for <cypherpunks@einstein.ssz.com>; Mon, 22 Jul 2002 07:52:56 -0500
+Received: (from pmguser@localhost)
+	by s1082.mb00.net (8.8.8pmg/8.8.5) id EAA83411
+	for :include:/usr/home/pmguser/pmgs/users/ebargains/delivery/1024851440.18684/rblk.9619; Mon, 22 Jul 2002 04:59:44 -0700 (PDT)
+Message-Id: <200207221159.EAA83411@s1082.mb00.net>
+From: Ebargains <ebargains@reply.mb00.net>
+To: cypherpunks@einstein.ssz.com
+X-Info: Message sent by MindShare Design customer with ID "ebargains"
+X-Info: Report abuse to list owner at ebargains@complaints.mb00.net
+X-PMG-Userid: ebargains
+X-PMG-Msgid: 1024851440.18684
+X-PMG-Recipient: cypherpunks@einstein.ssz.com
+Old-Subject: CDR: Get McAfee VirusScan for just $19.95! 60% Off!
+Date: Mon, 22 Jul 2002 07:46:01 EDT
+MIME-Version: 1.0
+Content-Type: text/html; charset="iso-8859-1"
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Get McAfee VirusScan for just $19.95! 60% Off!
+
+<body bgcolor="#ffffff">
+<table border="0" cellpadding="0" cellspacing="0" width="747">
+<!-- fwtable fwsrc="Untitled" fwbase="viruslandingpagedoneemail_19.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="1" -->
+  <tr>
+   <td><table border="0" cellpadding="0" cellspacing="0" width="747">
+	  <tr>
+	   <td><a href="http://r.mb00.net/s/c?1dx.2k50.1.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r1_c1" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r1_c1.gif" width="306" height="73" border="0"></a></td>
+	   <td><a href="http://r.mb00.net/s/c?1dx.2k50.2.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r1_c3" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r1_c3.gif" width="441" height="73" border="0"></a></td>
+	  </tr>
+	</table></td>
+  </tr>
+  <tr>
+   <td><table border="0" cellpadding="0" cellspacing="0" width="747">
+	  <tr>
+	   <td><a href="http://r.mb00.net/s/c?1dx.2k50.3.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r2_c1" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r2_c1.jpg" width="6" height="398" border="0"></a></td>
+	   <td><table border="0" cellpadding="0" cellspacing="0" width="741">
+		  <tr>
+		   <td><table border="0" cellpadding="0" cellspacing="0" width="741">
+			  <tr>
+			   <td><a href="http://r.mb00.net/s/c?1dx.2k50.4.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r2_c2" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r2_c2.gif" width="538" height="104" border="0"></a></td>
+			   <td><table border="0" cellpadding="0" cellspacing="0" width="203">
+				  <tr>
+				   <td><a href="http://r.mb00.net/s/c?1dx.2k50.5.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r2_c6" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r2_c6.gif" width="203" height="68" border="0"></a></td>
+				  </tr>
+				  <tr>
+				   <td><a href="http://r.mb00.net/s/c?1dx.2k50.6.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r3_c6" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r3_c6.jpg" width="203" height="36" border="0"></a></td>
+				  </tr>
+				</table></td>
+			  </tr>
+			</table></td>
+		  </tr>
+		  <tr>
+		   <td><table border="0" cellpadding="0" cellspacing="0" width="741">
+			  <tr>
+			   <td><table border="0" cellpadding="0" cellspacing="0" width="501">
+				  <tr>
+				   <td><table border="0" cellpadding="0" cellspacing="0" width="501">
+					  <tr>
+					   <td><a href="http://r.mb00.net/s/c?1dx.2k50.7.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r4_c2" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r4_c2.gif" width="420" height="258" border="0"></a></td>
+					   <td><a href="http://r.mb00.net/s/c?1dx.2k50.8.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r4_c4" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r4_c4.gif" width="81" height="258" border="0"></a></td>
+					  </tr>
+					</table></td>
+				  </tr>
+				  <tr>
+				   <td><a href="http://r.mb00.net/s/c?1dx.2k50.9.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r7_c2" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r7_c2.gif" width="501" height="36" border="0"></a></td>
+				  </tr>
+				</table></td>
+			   <td><table border="0" cellpadding="0" cellspacing="0" width="240">
+				  <tr>
+				   <td><table border="0" cellpadding="0" cellspacing="0" width="240">
+					  <tr>
+					   <td><a href="http://r.mb00.net/s/c?1dx.2k50.10.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r4_c5" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r4_c5.jpg" width="37" height="146" border="0"></a></td>
+					   <td><a href="http://r.mb00.net/s/c?1dx.2k50.11.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r4_c6" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r4_c6.jpg" width="203" height="146" border="0"></a></td>
+					  </tr>
+					</table></td>
+				  </tr>
+				  <tr>
+				   <td><a href="http://r.mb00.net/s/c?1dx.2k50.12.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r5_c5" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r5_c5.gif" width="240" height="65" border="0"></a></td>
+				  </tr>
+				  <tr>
+				   <td><a href="http://r.mb00.net/s/c?1dx.2k50.13.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r6_c5" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r6_c5.jpg" width="240" height="83" border="0"></a></td>
+				  </tr>
+				</table></td>
+			  </tr>
+			</table></td>
+		  </tr>
+		</table></td>
+	  </tr>
+	</table></td>
+  </tr>
+  <tr>
+   <td><a href="http://r.mb00.net/s/c?1dx.2k50.14.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r8_c1" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r8_c1.jpg" width="747" height="89" border="0"></a></td>
+  </tr>
+  <tr>
+   <td><a href="http://r.mb00.net/s/c?1dx.2k50.15.gda.fsi52" target= "_blank"><img name="viruslandingpagedoneemail_19_r9_c1" src="http://www.partner2profit.com/creatives/mcaffee/viruslandingpagedoneemail_19_r9_c1.jpg" width="747" height="2" border="0"></a></td>
+  </tr>
+</table>
+</body>
+<HTML>
+<BR><BR>
+<CENTER>
+<TABLE WIDTH="540" CELLSPACING=2 CELLPADDING=3 BORDER=0>
+<FORM METHOD=GET ACTION="http://i.mb00.net/cgi-bin/pmg_subscribe.pl">
+<TR>
+  <TD BGCOLOR="#DDDDDD">
+  <FONT FACE="helvetica,arial" SIZE="-1" COLOR="#000000">
+    <I>Remove yourself from this list by either:</I>
+  </FONT>
+  </TD>
+</TR>
+<TR>
+  <TD BGCOLOR="#EEEEEE">
+  <FONT FACE="helvetica,arial" SIZE="-1" COLOR="#000000">
+  Entering your email address below and clicking REMOVE:<BR>
+    <CENTER>
+    <INPUT TYPE="hidden" NAME="list" VALUE="ebargains:*">
+    <INPUT TYPE="hidden" NAME="server_action" VALUE="Unsubscribe">
+    <INPUT TYPE="text" NAME="email_address" VALUE="cypherpunks@einstein.ssz.com" SIZE=25></FONT>
+    <INPUT TYPE="submit" VALUE="REMOVE">
+    </CENTER>
+  </FONT>
+  </TD>
+</TR>
+<TR ALIGN="CENTER">
+  <TD>
+  <FONT FACE="helvetica,arial" SIZE="-1" COLOR="#000000">
+    <B><I>OR</I></B>
+  </FONT>
+  </TD>
+</TR>
+<TR>
+  <TD BGCOLOR="#EEEEEE">
+  <FONT FACE="helvetica,arial" SIZE="-1" COLOR="#000000">
+  Reply to this message with the word &quot;remove&quot; in the subject line.
+  </FONT>
+  </TD>
+</TR>
+</FORM>
+<TR ALIGN="CENTER">
+  <TD BGCOLOR="#FFFFFF" ALIGN="CENTER">
+  <FONT FACE="helvetica,arial" SIZE="1" COLOR="#000000">
+  This message was sent to address cypherpunks@einstein.ssz.com
+  </FONT>
+  
+<!--
+X-PMG-Recipient: cypherpunks@einstein.ssz.com
+X-PMG-Msgid: 1024851440.18684
+X-PMG-Userid: ebargains:*
+-->
+
+<DIV ALIGN="CENTER">
+<FONT FACE="helvetica,arial" SIZE="1" COLOR="#AAAAAA">pmguid:1dx.2k50.fsi52</FONT></DIV><BR CLEAR="ALL">
+<IMG SRC="http://r.mb00.net/s/o?1dx.2k50.0.fsi52" WIDTH=33 HEIGHT=12 BORDER=0 ALIGN="RIGHT" ALT="pmg">
+
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</HTML>
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

@@ -1,0 +1,26 @@
+
+{{alias}}( x )
+    Computes the arcsine of a single-precision floating-point number.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Arcsine (in radians).
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    0.0
+    > y = {{alias}}( -3.14/6.0 )
+    ~-0.551
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

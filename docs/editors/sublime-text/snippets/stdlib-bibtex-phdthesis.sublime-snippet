@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[@phdthesis{id,
+	abstract = {},
+	author = {},
+	keywords = {},
+	school = {},
+	title = {{}},
+	url = {},
+	year = {}
+}
+]]></content>
+
+    <!-- Tab trigger to activate the snippet -->
+    <tabTrigger>stdlib.phdthesis</tabTrigger>
+
+    <!-- Scope the tab trigger will be active in -->
+    <scope>text.bibtex</scope>
+
+    <!-- Description to show in the menu -->
+    <description>BibTeX PhD thesis template</description>
+</snippet>

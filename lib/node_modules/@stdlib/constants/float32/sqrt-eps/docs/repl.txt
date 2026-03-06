@@ -1,0 +1,12 @@
+
+{{alias}}
+    Square root of single-precision floating-point epsilon.
+
+    Examples
+    --------
+    > {{alias}}
+    0.0003452669770922512
+
+    See Also
+    --------
+

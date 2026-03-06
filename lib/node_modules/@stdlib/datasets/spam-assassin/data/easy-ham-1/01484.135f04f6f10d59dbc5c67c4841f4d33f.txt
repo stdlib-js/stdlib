@@ -1,0 +1,81 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Tue Sep 17 17:35:04 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2F1F016F03
+	for <jm@localhost>; Tue, 17 Sep 2002 17:35:04 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 17 Sep 2002 17:35:04 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8HGPSC17512 for <jm-sa@jmason.org>; Tue, 17 Sep 2002 17:25:28 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17rL8u-0007Rp-00; Tue,
+    17 Sep 2002 09:24:04 -0700
+Received: from defout.telus.net ([199.185.220.240]
+    helo=priv-edtnes28.telusplanet.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17rL8N-0000Pl-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Tue, 17 Sep 2002 09:23:31 -0700
+Received: from monsta ([66.183.218.18]) by priv-edtnes28.telusplanet.net
+    (InterMail vM.5.01.04.05 201-253-122-122-105-20011231) with SMTP id
+    <20020917162324.GOG25741.priv-edtnes28.telusplanet.net@monsta> for
+    <spamassassin-talk@lists.sourceforge.net>; Tue, 17 Sep 2002 10:23:24 -0600
+Message-Id: <3.0.5.32.20020917092014.01035940@pop3.norton.antivirus>
+X-Sender: a8a04969/pop.telus.net@pop3.norton.antivirus
+X-Mailer: QUALCOMM Windows Eudora Light Version 3.0.5 (32)
+To: spamassassin-talk@example.sourceforge.net
+From: Chris <cfortune@telus.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: [SAtalk] Running SA as a user app?
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-talk>
+X-Original-Date: Tue, 17 Sep 2002 09:20:14 -0700
+Date: Tue, 17 Sep 2002 09:20:14 -0700
+
+Can anybody point me to a project/FAQ similar to this:?
+
+1. Perl script fetches POP mail from a distant server
+2. mail is fed to SA, running as a standalone module in my user account
+3. SA spits out results back to perl script.
+4. Script deletes offending mail.
+
+I don't have root access.  I don't need a MTA.
+
+=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0
+Chris Fortune
+Fortune's Web Computer Services
+Nelson, BC, Canada
+V1L 2W3
+
+ph#: 250 505-5012
+email: cfortune@telus.net
+website: http://cfortune.kics.bc.ca/
+
+=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0
+
+
+
+-------------------------------------------------------
+Sponsored by: AMD - Your access to the experts on Hammer Technology! 
+Open Source & Linux Developers, register now for the AMD Developer 
+Symposium. Code: EX8664 http://www.developwithamd.com/developerlab
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

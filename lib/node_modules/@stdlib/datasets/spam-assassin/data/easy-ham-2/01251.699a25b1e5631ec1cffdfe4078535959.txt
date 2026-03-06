@@ -1,0 +1,71 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 19 10:57:20 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8685843C3D
+	for <jm@localhost>; Mon, 19 Aug 2002 05:49:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:49:07 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7H9Zw625654 for
+    <jm-rpm@jmason.org>; Sat, 17 Aug 2002 10:35:58 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7H9X2J04082; Sat, 17 Aug 2002 11:33:02
+    +0200
+Received: from r220-1.rz.RWTH-Aachen.DE (r220-1.rz.RWTH-Aachen.DE
+    [134.130.3.31]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7GHw2J09941 for <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 19:58:03 +0200
+Received: from r220-1.rz.RWTH-Aachen.DE (relay2.RWTH-Aachen.DE
+    [134.130.3.1]) by r220-1.rz.RWTH-Aachen.DE (8.12.1/8.11.3-2) with ESMTP id
+    g7GHw37S015170 for <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 19:58:03
+    +0200 (MEST)
+Received: from wilson (wilson.weh.RWTH-Aachen.DE [137.226.141.141]) by
+    r220-1.rz.RWTH-Aachen.DE (8.12.1/8.11.3/24) with SMTP id g7GHw39i015167
+    for <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 19:58:03 +0200 (MEST)
+Content-Type: text/plain; charset="iso-8859-15"
+From: Torsten Bronger <bronger@physik.rwth-aachen.de>
+Organization: RWTH Aachen
+To: "RPM Mailing List" <rpm-zzzlist@freshrpms.net>
+Subject: Portable RPMs
+X-Mailer: KMail [version 1.2]
+MIME-Version: 1.0
+Message-Id: <02081619580702.01597@wilson>
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g7GHw2J09941
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 16 Aug 2002 19:58:07 +0200
+Date: Fri, 16 Aug 2002 19:58:07 +0200
+
+Halloechen!
+
+If I create an RPM according to one of the how-to's with having
+Red Hat in mind, how big are my chances that it will also work
+for the SuSE distribution, or others?  (I don't know how many
+base on the RPM system.)
+
+Or what must I pay attention to when creating an RPM that should
+work with the big distributions?
+
+Tschoe,
+Torsten.
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

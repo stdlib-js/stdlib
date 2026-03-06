@@ -1,0 +1,92 @@
+From fork-admin@xent.com  Tue Aug  6 11:58:54 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E6F5B441F7
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g744Oqv15866 for <jm@jmason.org>;
+    Sun, 4 Aug 2002 05:24:52 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6B2A22940E2; Sat,  3 Aug 2002 21:22:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav31.law15.hotmail.com [64.4.22.88]) by
+    xent.com (Postfix) with ESMTP id 34A762940DF for <fork@xent.com>;
+    Sat,  3 Aug 2002 21:21:38 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Sat, 3 Aug 2002 21:22:14 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+Subject: Using hosts file to rid yourself of popup ads
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV31pQq5pneeFUtLch00019e7b@hotmail.com>
+X-Originalarrivaltime: 04 Aug 2002 04:22:14.0979 (UTC) FILETIME=[82FC0130:01C23B6E]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 3 Aug 2002 21:24:49 -0700
+
+Don't know if everybody knows this trick...
+
+Puts 127.0.0.1 as the IP for adservers. Elegant.
+
+==
+
+http://technoerotica.net/mylog/hostfile.html
+
+As mentioned throughout this site, there is more than one way to skin a cat
+when it comes to pop-ups. The hosts file is one of the most effective
+methods there is. In brief, a hosts file is a text file used by Windows to
+resolve domain names and IP addresses. If you're running windows, you
+already have a hosts file but it most likely isn't being used.
+
+What a hosts file does is simple, it lists domains and IP numbers. To get
+rid of ads, the hosts file lists the domain names of adservers along with
+the IP number 127.0.0.1. This tells windows to grab any content from the
+listed domain from the specified IP number. The specified IP number in this
+case is your own computer. What happens is that it won't display the ad. If
+you choose this method of ad removal there is no need to use our opt out
+links. The hosts file is a very effective mechanism.
+
+You can download this hosts file, unzip it and place it in your Windows
+directory. YOU SHOULD MAKE A BACK UP of your existing hosts file before you
+do. The hosts file is called "hosts" there is no extension. You may have a
+file named Hosts.sam this is merely a sample hosts file.
+
+Once you download the file and put it in the windows folder, reboot your
+computer and it's a done deal. Pretty simple huh? You might want to look at
+the contents of this file as it contains additional information as well as
+an address for getting updated versions. <http://www.accs-net.com/hosts/>
+
+Because we're inherently lazy, this works for windows only, don't use it on
+a mac! Follow the address in the hosts file for alternative system
+instructions.
+download now <http://technoerotica.net/mylog/hosts.zip>
+
+
+We didn't write this file and do not provide support for it's use. Follow
+the address in the hosts file for questions. It's not that we don't want to
+hear from you but the folks at this address have the answers you need.
+
+http://xent.com/mailman/listinfo/fork
+
+

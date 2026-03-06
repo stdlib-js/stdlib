@@ -1,0 +1,10 @@
+
+Usage: constant-stream [options] <value>
+
+Options:
+
+  -h,  --help               Print this message.
+  -V,  --version            Print the package version.
+       --sep sep            Separator used to join streamed data. Default: '\n'.
+  -n,  --iter iterations    Number of iterations.
+

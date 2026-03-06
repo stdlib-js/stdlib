@@ -1,0 +1,35 @@
+From zzzz-latestdodgydotcomstock@jmason.org  Mon Sep  2 16:27:31 2002
+Return-Path: <zzzz-latestdodgydotcomstock@spamassassin.taint.org>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id 75B1143F99
+	for <zzzz@localhost>; Mon,  2 Sep 2002 11:26:17 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 16:26:19 +0100 (IST)
+Received: from c448022-c (12-243-62-67.client.attbi.com [12.243.62.67]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7V2kdZ20239 for
+    <zzzz-latestdodgydotcomstock@jmason.org>; Sat, 31 Aug 2002 03:46:40 +0100
+Message-Id: <200208310246.g7V2kdZ20239@dogma.slashnull.org>
+From: "zzzz-latestdodgydotcomstock" <yyyy-latestdodgydotcomstock@spamassassin.taint.org>
+To: "zzzz-latestdodgydotcomstock" <yyyy-latestdodgydotcomstock@spamassassin.taint.org>
+Subject: Testing a system, please delete
+Date: Fri, 30 Aug 02 21:48:08 Eastern Daylight Time
+MIME-Version: 1.0
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2462.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2462.0000
+Content-Type: multipart/mixed;boundary= "----=_NextPart_000_006C_6B8D6A65.3C3C56F"
+
+------=_NextPart_000_006C_6B8D6A65.3C3C56F
+Content-Type: text/plain
+Content-Transfer-Encoding: base64
+
+UGxlYXNlIGZvcmdpdmUgdGhlIGludHJ1c2lvbiwgdGhpcyBpcyBhIG9uZSB0aW1lIG9ubHkg
+dGVzdCwgcGxlYXNlIGRlbGV0ZS4gDQpZb3Ugc2hvdWxkIG5vdCByZWNlaXZlIGFueSBhZGRp
+dGlvbmFsIGVtYWlscyBmcm9tIHRoaXMgYWRkcmVzcywgaWYgeW91IGRvIHBsZWFzZSBzZW5k
+IGFuIGVtYWlsIA0Kd2l0aCByZW1vdmUgYXMgc3ViamVjdCB0bzoNCg0KdGVzdDc5OTFAeWFo
+b28uY29tDQoNClRoYW5rIHlvdSBmb3IgeW91ciB1bmRlcnN0YW5kaW5nLg0KDQogICAg
+------=_NextPart_000_006C_6B8D6A65.3C3C56F--
+

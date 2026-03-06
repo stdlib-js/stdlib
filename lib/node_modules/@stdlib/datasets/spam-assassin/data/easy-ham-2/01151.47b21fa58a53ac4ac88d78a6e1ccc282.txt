@@ -1,0 +1,65 @@
+From rpm-list-admin@freshrpms.net  Mon Jul 22 23:07:52 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1BAD3440CC
+	for <jm@localhost>; Mon, 22 Jul 2002 18:07:49 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 23:07:49 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MM8w402660 for
+    <jm-rpm@jmason.org>; Mon, 22 Jul 2002 23:08:59 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6MLx5C21414; Mon, 22 Jul 2002 23:59:05
+    +0200
+Received: from basket.ball.reliam.net (basket.ball.reliam.net
+    [213.91.6.7]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6MLwAC20507
+    for <rpm-list@freshrpms.net>; Mon, 22 Jul 2002 23:58:10 +0200
+Received: from localhost.localdomain (pD9E5AD4A.dip.t-dialin.net
+    [217.229.173.74]) by basket.ball.reliam.net (Postfix) with SMTP id
+    B4F713E07 for <rpm-list@freshrpms.net>; Mon, 22 Jul 2002 23:58:03 +0200
+    (CEST)
+From: che <che666@uni.de>
+To: rpm-zzzlist@freshrpms.net
+Subject: gaim official rpm repository
+Message-Id: <20020722235222.196748ca.che666@uni.de>
+Organization: che
+X-Mailer: Sylpheed version 0.8.0 (GTK+ 1.2.10; i386-redhat-linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Mon, 22 Jul 2002 23:52:22 -0400
+Date: Mon, 22 Jul 2002 23:52:22 -0400
+
+gaim official apt-rpm repositorys :)
+
+#gaim
+rpm http://gaim.sourceforge.net/apt redhat/7.3/en/i386 release
+rpm-src http://gaim.sourceforge.net/apt redhat/7.3/en/i386 release
+
+thought i should post that one too just fell over it :)
+
+bye,
+che
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

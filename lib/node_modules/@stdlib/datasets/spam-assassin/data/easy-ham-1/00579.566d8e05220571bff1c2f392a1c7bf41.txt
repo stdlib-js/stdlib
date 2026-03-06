@@ -1,0 +1,94 @@
+From fork-admin@xent.com  Fri Sep 13 20:45:04 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 76A6B16F03
+	for <jm@localhost>; Fri, 13 Sep 2002 20:45:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 13 Sep 2002 20:45:03 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8DIVRC30305 for <jm@jmason.org>;
+    Fri, 13 Sep 2002 19:31:28 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4ECE72940AC; Fri, 13 Sep 2002 11:28:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm7-33.sba1.netlojix.net
+    [207.71.222.129]) by xent.com (Postfix) with ESMTP id BEF5429409A for
+    <fork@xent.com>; Fri, 13 Sep 2002 11:27:37 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id LAA15344;
+    Fri, 13 Sep 2002 11:38:22 -0700
+Message-Id: <200209131838.LAA15344@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: plate tectonics update
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 13 Sep 2002 11:38:21 -0700
+
+
+
+When we were discussing Kuhn, I wrote:
+
+<http://www.xent.com/pipermail/fork/2001-July/001854.html>
+> My understanding of the history of
+> plate tectonics is that the magnetic
+> reversal patterns encoded in seafloor
+> basalts were crucial supporting data
+> which suddenly became available only
+> after Navy declassification, so the
+> adoption curve may be skewed.
+
+Many of the essays in Oreskes' _Plate
+Tectonics_ seem to support this idea:
+
+Sandwell, "Plate Tectonics: A Martian View"
+> In this essay, I'll describe a few of the important confirmations of
+> plate tectonic theory provided by satellites and ships.  These tools
+> were largely developed to support the Cold War effort, and many are
+> labeled geodetic since they are used to make precise measurements
+> of the size and shape of the earth and the spatial variations in the
+> pull of gravity.  The tools of satellite geodesy are needed for all
+> aspects of global warfare; precise satellite tracking and gravity
+> field development are needed for precision satellite surveillance
+> as well as for targeting ballistic missiles; the global positioning
+> system is used in all aspects of modern warfare; radar altimetery is
+> used or aiming submarine-launched ballistic missiles as well as for
+> inertial navigation when submerged.
+> 
+> The global seismic networks were developed, primarily, to monitor
+> underground nuclear tests.  Marine magnetometers were developed,
+> primarily, for detection of submarines.  Multibeam sea floor mapping
+> systems were developed, primarily, for surveying critical and
+> operational areas of the northern oceans.
+
+... and the Navy was in no hurry
+to declassify any of these data,
+as any uneven coverage could have
+revealed the parts of the oceans
+they found most interesting.
+
+-Dave
+
+(What do our seismic networks say
+about the middle east?  I hazily
+recall a story about LA reporters
+asking their local geophysicists
+about an early morning quake, to
+be told that, as far as could be
+figured, the "epicenter" was at a
+negative depth, travelling near
+mach speed, and presumably headed
+towards Edwards)
+
+

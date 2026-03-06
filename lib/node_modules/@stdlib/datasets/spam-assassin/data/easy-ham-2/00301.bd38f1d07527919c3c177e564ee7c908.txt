@@ -1,0 +1,92 @@
+From ilug-admin@linux.ie  Fri Aug  9 15:13:20 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CAFE5440CF
+	for <jm@localhost>; Fri,  9 Aug 2002 10:13:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:13:16 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79ECib05465 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:12:44 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id LAA05494 for <jm-ilug@jmason.org>;
+    Fri, 9 Aug 2002 11:52:32 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA03793; Fri, 9 Aug 2002 11:51:21 +0100
+Received: from dspsrv.com (vir.dspsrv.com [193.120.211.34]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA03768 for <ilug@linux.ie>;
+    Fri, 9 Aug 2002 11:51:16 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host vir.dspsrv.com
+    [193.120.211.34] claimed to be dspsrv.com
+Received: from itg-gw.cr008.cwt.esat.net ([193.120.242.226]
+    helo=waider.ie) by dspsrv.com with asmtp (Exim 3.35 #1) id
+    17d7MP-0002iE-00; Fri, 09 Aug 2002 11:51:13 +0100
+Message-Id: <3D539DDA.8060506@waider.ie>
+Date: Fri, 09 Aug 2002 11:47:54 +0100
+From: Waider <waider@waider.ie>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.0) Gecko/20020607
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: David Crozier <davidcrozier@hotmail.com>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] Anyone know how I could remove a HDD password from an Acer Travelmate 201T?
+References: <OE55LzhVOJwnzsLqIfQ0000415c@hotmail.com>
+X-Enigmail-Version: 0.63.3.0
+X-Enigmail-Supports: pgp-inline, pgp-mime
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+David Crozier wrote:
+| Hi folks,
+|
+| I have just taken delivery of three Acer Travelmate laptops from a project
+| we funded which has now ended.  Problem is there are HDD passwords on them
+| which I don't have.  How could I overwrite these?? Any ideas?  I have
+| limited technical and monetry resources here in the new job so can't be
+| buying new HDDs for them.
+|
+| Any Ideas?
+|
+| Dave
+|
+| www.davidcrozier.co.uk
+|
+
+Google returns about 1500 hits for the search
+"remove acer hard drive password"
+
+Perhaps one of those might help.
+
+Here, I'll even quote the search URL:
+http://www.google.com/search?q=remove%20acer%20hard%20drive%20password&sourceid=mozilla-xul
+
+Waider.
+- --
+waider@waider.ie / Yes, it /is/ very personal of me
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQE9U53aUXuYo0fJk9MRAhhuAKD9o7vvkLNDcxK4cgMzXLC5HWgc1QCg8afN
+UBbeKiDH1hBgCxY5+y1Wmes=
+=ZdI+
+-----END PGP SIGNATURE-----
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

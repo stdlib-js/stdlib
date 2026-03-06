@@ -1,0 +1,82 @@
+From crackmice-admin@crackmice.com  Wed Jul  3 12:06:43 2002
+Return-Path: <crackmice-admin@crackmice.com>
+Delivered-To: yyyy@localhost.labs.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix on SuSE Linux 8.0 (i386)) with ESMTP id 57CFC14F8BF
+	for <jm@localhost>; Wed,  3 Jul 2002 12:04:08 +0100 (IST)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 03 Jul 2002 12:04:08 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g45BmLu04249;
+    Sun, 5 May 2002 12:48:21 +0100
+Received: from suren.com ([210.242.180.171]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id g449ubu09966 for <crackmice@crackmice.com>;
+    Sat, 4 May 2002 10:56:38 +0100
+Received: from ibm by tpts6.seed.net.tw with SMTP id
+    Coqi8JzGgIbveZ0yUtpPXbiodmwyD; Sat, 04 May 2002 17:59:23 +0800
+Message-Id: <AZ@tcts.seed.net.tw>
+From: suyy@nicee.com
+To: 8qwy701@dogma.slashnull.org
+Subject: good mtv wmE239PgyETfr9P4nvyEWKJCEkWH
+MIME-Version: 1.0
+X-Mailer: 7g1RCrzGVCNshRdGTaczsc1
+X-Priority: 3
+X-Msmail-Priority: Normal
+Sender: crackmice-admin@crackmice.com
+Errors-To: crackmice-admin@crackmice.com
+X-Beenthere: crackmice@crackmice.com
+X-Mailman-Version: 2.0.7
+Precedence: bulk
+Reply-To: crackmice@crackmice.com
+List-Unsubscribe: <http://crackmice.com/mailman/listinfo/crackmice>,
+    <mailto:crackmice-request@crackmice.com?subject=unsubscribe>
+List-Id: http://crackmice.com/ <crackmice.crackmice.com>
+List-Post: <mailto:crackmice@crackmice.com>
+List-Help: <mailto:crackmice-request@crackmice.com?subject=help>
+List-Subscribe: <http://crackmice.com/mailman/listinfo/crackmice>,
+    <mailto:crackmice-request@crackmice.com?subject=subscribe>
+List-Archive: <http://crackmice.com/pipermail/crackmice/>
+X-Original-Date: Sat, 4 May 2002 10:56:38 +0100
+Date: Sat, 4 May 2002 10:56:38 +0100
+Content-Type: multipart/related; type="multipart/alternative"; boundary="----=_NextPart_HpdzYzPLaja9wyog5zqAedGH8s"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_HpdzYzPLaja9wyog5zqAedGH8s
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_HpdzYzPLaja9wyog5zqAedGH8sAA"
+
+
+------=_NextPart_HpdzYzPLaja9wyog5zqAedGH8sAA
+Content-Type: text/html;
+	charset="big5"
+Content-Transfer-Encoding: base64
+
+PGEgaHJlZj1odHRwOi8vaGxjLm5vLWlwLm9yZz4NCjxpbWcgc3JjPWh0dHA6Ly9obGMubm8taXAu
+b3JnL2NuZ2lmL3lpZGlhbjIuZ2lmIGFsdD1odHRwOi8vaGxjLm5vLWlwLm9yZy9jbmdpZi95aWRp
+YW4yLmdpZj4NCjwvYT4NCg0KPGEgaHJlZj1odHRwczovL2JuYm4yMDAwLmRuczJnby5jb20+DQo8
+aW1nIHNyYz1odHRwOi8vd3d3MzAuYnJpbmtzdGVyLmNvbS9jbnNwcmluZy9saWtlL2JpZy5naWYg
+YWx0PWh0dHA6Ly93d3czMC5icmlua3N0ZXIuY29tL2Nuc3ByaW5nL2JpZy5naWY+DQo8L2E+DQoN
+CjxhIGhyZWY9aHR0cDovL2ZvcmV2ZXJzcC5ob3B0by5vcmcvemlyZWFsPg0KPGltZyBzcmM9aHR0
+cDovL3d3dzI2LmJyaW5rc3Rlci5jb20vc3ByaW5nY24vbGlrZS90aWFuYW5tZW4uanBnIGFsdD1o
+dHRwOi8vd3d3MjYuYnJpbmtzdGVyLmNvbS9zcHJpbmdjbi9saWtlL3RpYW5hbm1lbi5qcGc+DQo8
+L2E+DQoNCjxhIGhyZWY9aHR0cDovL2V4YW0uaG9wdG8ub3JnL3ppcmVhbD4NCjxpbWcgc3JjPWh0
+dHA6Ly9wdWR1amlzaS50cmlwb2QuY29tL2xpa2UveHVlYW4uZ2lmIGFsdD1odHRwOi8vcHVkdWpp
+c2kudHJpcG9kLmNvbS9saWtlL3h1ZWFuLmdpZj4NCjwvYT4NCg0KPGEgaHJlZj1odHRwOi8vcm9j
+aW82My5ob3B0by5vcmcvZmxhc2g+DQo8aW1nIHNyYz1odHRwOi8vaGxjLm5vLWlwLm9yZy9jbmdp
+Zi9hbGxhY2NlcHQuanBnIGFsdD1odHRwOi8vaGxjLm5vLWlwLm9yZy9jbmdpZi9hbGxhY2NlcHQu
+anBnPg0KPC9hPg0KDQo8YSBocmVmPWh0dHA6Ly9leGFtLmhvcHRvLm9yZy9zZWU+DQo8aW1nIHNy
+Yz1odHRwOi8vaGxjLm5vLWlwLm9yZy9jbmdpZi9zaG91amllLmpwZyBhbHQ9aHR0cDovL2hsYy5u
+by1pcC5vcmcvY25naWYvc2hvdWppZS5qcGc+DQo8L2E+DQoNCjxhIGhyZWY9aHR0cHM6Ly90a3Rr
+LnN5dGVzLm5ldD4NCjxpbWcgc3JjPWh0dHA6Ly9mbGRmaXNnb29kLnRyaXBvZC5jb20vbGlrZS90
+YWl3YW4uZ2lmIGFsdD1odHRwOi8vZmxkZmlzZ29vZC50cmlwb2QuY29tL2xpa2UvdGFpd2FuLmdp
+Zj4NCjwvYT4=
+
+
+------=_NextPart_HpdzYzPLaja9wyog5zqAedGH8sAA--
+------=_NextPart_HpdzYzPLaja9wyog5zqAedGH8s--
+
+
+
+

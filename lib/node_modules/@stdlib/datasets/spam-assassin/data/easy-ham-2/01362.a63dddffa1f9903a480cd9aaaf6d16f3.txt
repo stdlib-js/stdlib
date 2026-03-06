@@ -1,0 +1,101 @@
+From pudge@perl.org  Fri Aug  9 15:34:57 2002
+Return-Path: <pudge@perl.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 39F08440E0
+	for <jm@localhost>; Fri,  9 Aug 2002 10:33:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:33:42 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EPxb06947 for
+    <jm-use-perl@jmason.org>; Fri, 9 Aug 2002 15:25:59 +0100
+Received: from cpu59.osdn.com (slashdot.org [64.28.67.73] (may be forged))
+    by webnote.net (8.9.3/8.9.3) with ESMTP id DAA02784 for
+    <jm-use-perl@jmason.org>; Fri, 9 Aug 2002 03:01:25 +0100
+From: pudge@perl.org
+Received: from [10.2.181.14] (helo=perl.org) by cpu59.osdn.com with smtp
+    (Exim 3.35 #1 (Debian)) id 17cz4L-0008EV-01 for <jm-use-perl@jmason.org>;
+    Thu, 08 Aug 2002 22:00:01 -0400
+Date: Fri, 09 Aug 2002 02:00:28 +0000
+Subject: [use Perl] Stories for 2002-08-09
+To: yyyy-use-perl@spamassassin.taint.org
+Precedence: list
+X-Bulkmail: 2.051
+Message-Id: <E17cz4L-0008EV-01@cpu59.osdn.com>
+
+use Perl Daily Newsletter
+
+In this issue:
+    * Damian Conway to speak in London
+    * Meeting in Budapest
+
++--------------------------------------------------------------------+
+| Damian Conway to speak in London                                   |
+|   posted by ziggy on Thursday August 08, @15:21 (damian)           |
+|   http://use.perl.org/article.pl?sid=02/08/08/1923211              |
++--------------------------------------------------------------------+
+
+[0]blech writes "Damian Conway will be coming to London in August, and
+he'll be speaking at a couple of special [1]London.pm meetings, at the
+approprately named [2]Conway Hall in [3]Central London.
+
+The first is [4]Life, the Universe and Everything on Tuesday 27th August,
+and the second is [5]Perl 6 Prospective on Thursday 29th August. Both
+start at 6.30 pm sharp, so we can fit in the maximum possible
+Damian-ness.
+
+We hope to see you there!"
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/08/08/1923211
+
+Links:
+    0. http://london.pm.org/
+    1. http://london.pm.org/meetings/
+    2. http://www.conwayhall.org.uk/
+    3. http://www.streetmap.co.uk/streetmap.dll?G2M?X=530661&Y=181764&A=Y&Z=1
+    4. http://www.yetanother.org/damian/seminars/Life.html
+    5. http://www.yetanother.org/damian/seminars/Perl6.html
+
+
++--------------------------------------------------------------------+
+| Meeting in Budapest                                                |
+|   posted by ziggy on Thursday August 08, @17:24 (groups)           |
+|   http://use.perl.org/article.pl?sid=02/08/08/1927253              |
++--------------------------------------------------------------------+
+
+[0]Gabor Szabo writes "We are organizing a meeting for Perl users in
+Budapest. We'll meet on 26th August at 17:00 at a location we'll announce
+within a few days on [1]our mailing list. Planned agenda: How to raise
+camels on the Hungarian Puszta.
+
+You can read more details (in Hungarian) [2]here. Non Hungarians who
+happen to be in the area are also welcome, though the presentation(s)
+will be given in Hungarian."
+
+Discuss this story at:
+    http://use.perl.org/comments.pl?sid=02/08/08/1927253
+
+Links:
+    0. mailto:gabor@tracert.com
+    1. http://www.atom.hu/mailman/listinfo/perl
+    2. http://www.atom.hu/pipermail/perl/2002-August/001150.html
+
+
+
+Copyright 1997-2002 pudge.  All rights reserved.
+
+
+======================================================================
+
+You have received this message because you subscribed to it
+on use Perl.  To stop receiving this and other
+messages from use Perl, or to add more messages
+or change your preferences, please go to your user page.
+
+	http://use.perl.org/my/messages/
+
+You can log in and change your preferences from there.
+
+

@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Wed Aug 28 18:07:15 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AE58744156
+	for <jm@localhost>; Wed, 28 Aug 2002 13:07:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 18:07:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7SH4cZ01940 for <jm@jmason.org>;
+    Wed, 28 Aug 2002 18:04:38 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 53FDD29421E; Wed, 28 Aug 2002 09:59:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 5ACFA29421D for <fork@xent.com>;
+    Wed, 28 Aug 2002 09:58:23 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-044.ptrb.interhop.net
+    [165.154.190.108]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g7SGY4V29693; Wed, 28 Aug 2002 12:34:04 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 3A3B21C38C;
+    Wed, 28 Aug 2002 12:58:27 -0400 (EDT)
+To: harley@argote.ch (Robert Harley)
+Cc: fork@spamassassin.taint.org
+Subject: Re: Java is for kiddies
+References: <20020828164409.8826AC44D@argote.ch>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m23csy539p.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 28 Aug 2002 12:58:26 -0400
+
+>>>>> "R" == Robert Harley <harley@argote.ch> writes:
+
+    R> Depends who writes it.  One guy will write a bug every 5 lines,
+    R> another every 5000 lines.  Put them both on a project and that
+    R> will average out to a bug every 4.995 lines.  
+
+And a Java program, due to the extensive class libraries, will weigh
+in at 10% the number of lines of the equivalent C program.  QED.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+

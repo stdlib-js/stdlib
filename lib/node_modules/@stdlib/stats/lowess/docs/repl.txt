@@ -1,0 +1,57 @@
+
+{{alias}}( x, y[, options] )
+    Locally-weighted polynomial regression via the LOWESS algorithm.
+
+    Parameters
+    ----------
+    x: Array<number>
+        x-axis values (abscissa values).
+
+    y: Array<number>
+        Corresponding y-axis values (ordinate values).
+
+    options: Object (optional)
+        Function options.
+
+    options.f: number (optional)
+        Positive number specifying the smoothing span, i.e., the proportion of
+        points which influence smoothing at each value. Larger values
+        correspond to more smoothing. Default: `2/3`.
+
+    options.nsteps: number (optional)
+        Number of iterations in the robust fit (fewer iterations translates to
+        faster function execution). If set to zero, the nonrobust fit is
+        returned. Default: `3`.
+
+    options.delta: number (optional)
+        Nonnegative number which may be used to reduce the number of
+        computations. Default: 1/100th of the range of `x`.
+
+    options.sorted: boolean (optional)
+        Boolean indicating if the input array `x` is sorted. Default: `false`.
+
+    Returns
+    -------
+    out: Object
+        Object with ordered x-values and fitted values.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( 100 );
+    > var y = new {{alias:@stdlib/array/float64}}( x.length );
+    > for ( var i = 0; i < x.length; i++ ) {
+    ...     x[ i ] = i;
+    ...     y[ i ] = ( 0.5*i ) + ( 10.0*{{alias:@stdlib/random/base/randn}}() );
+    ... }
+    > var out = {{alias}}( x, y );
+    > var yhat = out.y;
+
+    > var h = {{alias:@stdlib/plot/ctor}}( [ x, x ], [ y, yhat ] );
+    > h.lineStyle = [ 'none', '-' ];
+    > h.symbols = [ 'closed-circle', 'none' ];
+
+    > h.view( 'window' );
+
+    See Also
+    --------
+

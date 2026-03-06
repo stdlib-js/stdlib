@@ -1,0 +1,42 @@
+From quinlan@pathname.com  Wed Aug 28 10:45:34 2002
+Return-Path: <quinlan@pathname.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 00F6F4415B
+	for <jm@localhost>; Wed, 28 Aug 2002 05:44:48 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:44:48 +0100 (IST)
+Received: from proton.pathname.com
+    (adsl-216-103-211-240.dsl.snfc21.pacbell.net [216.103.211.240]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7RLjPZ27063 for
+    <jm@jmason.org>; Tue, 27 Aug 2002 22:45:25 +0100
+Received: from quinlan by proton.pathname.com with local (Exim 3.35 #1
+    (Debian)) id 17jo9X-00072t-00; Tue, 27 Aug 2002 14:45:35 -0700
+To: yyyy@spamassassin.taint.org (Justin Mason)
+Cc: Matt Sergeant <msergeant@startechgroup.co.uk>,
+	spamassassin-devel@lists.sourceforge.net
+Subject: Re: [SAdev] SpamAssassin POP3 proxy
+References: <20020827121720.1A37C43F99@phobos.labs.netnoteinc.com>
+From: Daniel Quinlan <quinlan@pathname.com>
+Date: 27 Aug 2002 14:45:35 -0700
+In-Reply-To: yyyy@spamassassin.taint.org's message of "Tue, 27 Aug 2002 13:17:15 +0100"
+Message-Id: <yf24rdgkmbk.fsf@proton.pathname.com>
+X-Mailer: Gnus v5.7/Emacs 20.7
+
+jm@jmason.org (Justin Mason) writes:
+
+> Actually, I want to avoid that -- I've already removed spamproxyd
+> from the distro for 2.40. Here's why:
+> 
+> When they're in the distro, *we* have to support them -- which is
+> not necessarily a good thing when we didn't write them in the first
+> place, or when the coder in question may not *want* us to maintain
+> them. :(
+
+I would be in favor of creating new SpamAssassin CVS modules and
+Bugzilla categories for other clients (provided there is sufficient
+interest and a maintainer).
+
+Dan
+

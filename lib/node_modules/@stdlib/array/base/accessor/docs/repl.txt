@@ -1,0 +1,86 @@
+
+{{alias}}( arr )
+    Creates a minimal array-like object supporting the accessor protocol from
+    another array-like object.
+
+    Parameters
+    ----------
+    arr: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: Object
+        Accessor array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var out = {{alias}}( x );
+    > var v = out.get( 1 )
+    2
+    > var len = out.length
+    4
+    > out.set( 5, 0 );
+    > v = out.get( 0 )
+    5
+
+
+{{alias}}.prototype.length
+    Read/write accessor for getting and setting the number of elements.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var out = {{alias}}( x );
+    > var len = out.length
+    4
+
+
+{{alias}}.prototype.get( i )
+    Returns an array element.
+
+    Parameters
+    ----------
+    i: integer
+        Element index.
+
+    Returns
+    -------
+    v: any
+        Array element.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var out = {{alias}}( x );
+    > var v = out.get( 1 )
+    2
+
+
+{{alias}}.prototype.set( v[, i] )
+    Sets an array element.
+
+    Parameters
+    ----------
+    v: any
+        Value to set.
+
+    i: integer (optional)
+        Element index. Default: 0.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var out = {{alias}}( x );
+    > var v = out.get( 1 )
+    2
+    > var len = out.length
+    4
+    > out.set( 5, 0 );
+    > v = out.get( 0 )
+    5
+
+    See Also
+    --------
+

@@ -1,0 +1,96 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Mon Oct  7 20:37:15 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id C8A0116F16
+	for <jm@localhost>; Mon,  7 Oct 2002 20:37:14 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 07 Oct 2002 20:37:14 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g97JJVK13715 for <jm-sa@jmason.org>; Mon, 7 Oct 2002 20:19:32 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17ydPJ-0000uV-00; Mon,
+    07 Oct 2002 12:19:09 -0700
+Received: from relay05.indigo.ie ([194.125.133.229]) by
+    usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17ydOd-0007iV-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Mon, 07 Oct 2002 12:18:27 -0700
+Received: (qmail 79119 messnum 1202246 invoked from
+    network[194.125.172.237/ts12-237.dublin.indigo.ie]); 7 Oct 2002 19:18:21
+    -0000
+Received: from ts12-237.dublin.indigo.ie (HELO spamassassin.taint.org)
+    (194.125.172.237) by relay05.indigo.ie (qp 79119) with SMTP;
+    7 Oct 2002 19:18:21 -0000
+Received: by spamassassin.taint.org (Postfix, from userid 500) id 18C6916F03;
+    Mon,  7 Oct 2002 20:18:20 +0100 (IST)
+Received: from spamassassin.taint.org (localhost [127.0.0.1]) by spamassassin.taint.org (Postfix)
+    with ESMTP id 152DCF7B1; Mon,  7 Oct 2002 20:18:20 +0100 (IST)
+To: "Kenneth Nerhood" <knerhood@wrallp.com>
+Cc: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] Re: AWL bug in 2.42?
+In-Reply-To: Message from
+    "Kenneth Nerhood"
+    <knerhood@wrallp.com> of
+    "Mon, 07 Oct 2002 14:54:11 EDT."
+    <sda1a029.029@mail.wrallp.com>
+From: yyyy@spamassassin.taint.org (Justin Mason)
+X-GPG-Key-Fingerprint: 0A48 2D8B 0B52 A87D 0E8A  6ADD 4137 1B50 6E58 EF0A
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam.  Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+Message-Id: <20021007191820.18C6916F03@spamassassin.taint.org>
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=spamassassin-talk>
+X-Original-Date: Mon, 07 Oct 2002 20:18:15 +0100
+Date: Mon, 07 Oct 2002 20:18:15 +0100
+
+
+Kenneth Nerhood said:
+
+> I too am seeing very weird things with 2.42 and AWL.  I  installed a
+> fresh system, and then ran a bunch of test spam through it (all from the
+> same user).  All messages should have scored over 15.  The AWL kept
+> adjusting them down so that after about 10 message I had a negative
+> score.  I'm using spamc/d.
+
+That's exactly what is intended; the idea is that legit senders who
+habitually score just > 5, will eventually get out of "AWL hell" after
+6-10 messages.
+
+Note that running a single spam through "spamassassin -a -t" *will*
+eventually whitelist the spammer.  but that's why the man page tells you
+not to do it ;)
+
+--j.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

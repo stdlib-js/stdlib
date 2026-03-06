@@ -1,0 +1,32 @@
+
+{{alias}}( bstr )
+    Creates an unsigned 16-bit integer from a literal bit representation.
+
+    Parameters
+    ----------
+    bstr: string
+        Literal bit representation.
+
+    Returns
+    -------
+    out: integer
+        Unsigned 16-bit integer.
+
+    Examples
+    --------
+    > var bstr = '0101010101010101';
+    > var val = {{alias}}( bstr )
+    21845
+    > bstr = '0000000000000000';
+    > val = {{alias}}( bstr )
+    0
+    > bstr = '0000000000000010';
+    > val = {{alias}}( bstr )
+    2
+    > bstr = '1111111111111111';
+    > val = {{alias}}( bstr )
+    65535
+
+    See Also
+    --------
+

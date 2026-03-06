@@ -1,0 +1,66 @@
+From fork-admin@xent.com  Thu Aug  8 14:13:23 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 75CC04413F
+	for <jm@localhost>; Thu,  8 Aug 2002 08:33:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:33:09 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CK9202584 for
+    <jm@jmason.org>; Thu, 8 Aug 2002 13:20:09 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id IAA28532 for <jm@jmason.org>; Thu, 8 Aug 2002 08:55:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A540229409E; Thu,  8 Aug 2002 00:40:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from alumnus.caltech.edu (alumnus.caltech.edu [131.215.49.51])
+    by xent.com (Postfix) with ESMTP id 7C320294098 for <fork@xent.com>;
+    Thu,  8 Aug 2002 00:39:09 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1]) by alumnus.caltech.edu
+    (8.12.3/8.12.3) with ESMTP id g787doei008359; Thu, 8 Aug 2002 00:39:50
+    -0700 (PDT)
+Subject: Perhaps Apple isn't as user-friendly as we thought...
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: "Dr. Prabhakar" <ernest@drernie.com>
+To: fork@spamassassin.taint.org
+From: Rohit Khare <khare@alumni.caltech.edu>
+Content-Transfer-Encoding: 7bit
+Message-Id: <B52C2242-AA94-11D6-8E39-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 7 Aug 2002 23:04:32 -0700
+
+Sounds like the land of UNIX for the PC (Politically Correct) still has 
+some ways to go in becoming UNIX for the Rest of Us...
+
+Quoted from Mac OS X man page for sudoers(5):
+>
+>        insults     If set, sudo will insult users when they enter
+>                    an incorrect password.  This flag is off by
+>                    default.
+>
+
+Hey, at least Apple set the default to no-insults! :-)
+
+Rohit
+
+---
+My permanent email address is khare@alumni.caltech.edu
+
+http://xent.com/mailman/listinfo/fork
+
+

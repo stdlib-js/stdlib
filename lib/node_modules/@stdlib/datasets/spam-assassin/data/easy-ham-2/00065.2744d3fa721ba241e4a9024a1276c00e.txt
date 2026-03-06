@@ -1,0 +1,108 @@
+From ilug-admin@linux.ie  Fri Jul 19 16:19:05 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0E270440C9
+	for <jm@localhost>; Fri, 19 Jul 2002 11:19:05 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:19:05 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JFIMJ08096 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 16:18:22 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA12323; Fri, 19 Jul 2002 16:16:35 +0100
+Received: from linux.local ([195.218.108.192]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA12284 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 16:16:25 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.192] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6JFFnX02981 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 16:15:49 +0100
+Message-Id: <200207191515.g6JFFnX02981@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+In-Reply-To: Message from
+    "Matthew French"
+    <mfrench42@yahoo.co.uk> of
+    "Fri, 19 Jul 2002 15:22:26 BST."
+    <003301c22f2f$b722ba30$3864a8c0@sabeo.ie>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <2978.1027091749.1@linux.local>
+Date: Fri, 19 Jul 2002 16:15:49 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    QAA12284
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Fri, 19 Jul 2002 15:22:26 +0100
+  | From: "Matthew French" <mfrench42@yahoo.co.uk>
+  | 
+  | Niall asked:
+  |  > I have about 60G of data which I need to copy from one disk to
+  |  > another.  [ ... ] The problem is the bulk of the data [ ... ]
+  |  > have two directory entries i.e. there is a hard link [ ... ]
+  | 
+  | How about something like:
+  | 
+  |    cd {dest.dir}
+  |    tar -C {source.dir} cf - | tar xf -
+  | 
+  | tar cf - will pipe the tar file to stdout and tar xf - will untar it. This
+  | should keep permissions and links, and if you do it as root you will keep
+  | the owners too... :)
+  | 
+  | Not tested, though. You may need other flags as well.
+
+ the above (or something close to it) will work.
+
+ however, the data will be read and written twice by the
+ 1st (source) `tar', and read twice by the 2nd (sink) `tar',
+ albeit only written once as the sink realizes the second
+ copy is a hard link to the first.  with c.60Gb of data,
+ that will make a difference, at least in time and CPU
+ resource consumed (albeit, in this case, not storage).
+
+ the issue here is tar(1) (and cpio(1)) archives always
+ contain the data for each name of a hard link.  this is
+ (probably) for several reasons, and is not necessarily a
+ bad thing.   e.g., it provides a degree of redundancy to
+ help cope with bad media.
+
+ the source `tar' is creating an archive, which is being
+ written down the pipe (to be consumed by the sink `tar').
+ that is why storage is not an issue per se here, as the
+ full archive is not "saved" --- if it were, you'd need
+ at least 2x60Gb, or over 120Gb!   (the extra is `tar's
+ overhead, which is minimal but does add up, esp. when
+ a "large" blocking factor is used.)
+
+cheers!
+	-blf-
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

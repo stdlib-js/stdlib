@@ -1,0 +1,24 @@
+
+{{alias}}( x )
+    Tests if a number is composite.
+
+    Parameters
+    ----------
+    x: number
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the value is a composite number.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 10.0 )
+    true
+    > bool = {{alias}}( 11.0 )
+    false
+
+    See Also
+    --------
+

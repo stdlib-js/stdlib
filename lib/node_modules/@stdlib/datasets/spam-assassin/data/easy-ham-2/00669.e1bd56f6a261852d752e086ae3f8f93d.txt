@@ -1,0 +1,116 @@
+From vulnwatch-return-399-jm=jmason.org@vulnwatch.org  Fri Jul 19 16:07:33 2002
+Return-Path: <vulnwatch-return-399-yyyy=spamassassin.taint.org@vulnwatch.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 39F87440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 11:07:33 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:07:33 +0100 (IST)
+Received: from vikki.vulnwatch.org (IDENT:qmailr@[199.233.98.101]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6JF0wJ06633 for
+    <jm@jmason.org>; Fri, 19 Jul 2002 16:00:58 +0100
+Received: (qmail 20041 invoked by alias); 19 Jul 2002 15:14:22 -0000
+Mailing-List: contact vulnwatch-help@vulnwatch.org; run by ezmlm
+Precedence: bulk
+List-Post: <mailto:vulnwatch@vulnwatch.org>
+List-Help: <mailto:vulnwatch-help@vulnwatch.org>
+List-Unsubscribe: <mailto:vulnwatch-unsubscribe@vulnwatch.org>
+List-Subscribe: <mailto:vulnwatch-subscribe@vulnwatch.org>
+Delivered-To: mailing list vulnwatch@vulnwatch.org
+Delivered-To: moderator for vulnwatch@vulnwatch.org
+Received: (qmail 26938 invoked from network); 19 Jul 2002 01:06:49 -0000
+X-Authentication-Warning: Tempo.Update.UU.SE: ulfh owned process doing -bs
+Date: Fri, 19 Jul 2002 02:23:52 +0200 (CEST)
+From: Ulf Harnhammar <ulfh@update.uu.se>
+To: bugtraq@securityfocus.com
+Cc: vulnwatch@vulnwatch.org, full-disclosure@lists.netsys.com
+Message-Id: <Pine.LNX.4.21.0207190219070.13803-100000@Tempo.Update.UU.SE>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=iso-8859-1
+Subject: [VulnWatch] Geeklog XSS and CRLF Injection
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from QUOTED-PRINTABLE to 8bit by dogma.slashnull.org
+    id g6JF0wJ06633
+
+Geeklog XSS and CRLF Injection
+
+
+PROGRAM: Geeklog
+VENDOR: Tony Bibbs et al. <geeklog-devel@example.sourceforge.net>
+HOMEPAGE: http://geeklog.sourceforge.net/
+VULNERABLE VERSIONS: 1.3.5sr1, possibly earlier versions as well
+NOT VULNERABLE VERSIONS: 1.3.5sr2
+LOGIN REQUIRED: no
+SEVERITY: high
+
+
+DESCRIPTION:
+
+"Geeklog is a 'blog', otherwise known as a Weblog. It allows
+you to create your own virtual community area, complete with user
+administration, story posting, messaging, comments, polls, calendar,
+weblinks, and more! It can run on many different operating systems,
+and uses PHP4 and MySQL."
+
+(direct quote from the program's homepage)
+
+Geeklog is published under the terms of the GNU General Public
+License.
+
+
+SECURITY HOLES:
+
+1) Geeklog has got an XSS hole that affects both the stories and
+the comments. The program removes the HTML elements that are used
+for scripting, but it fails to remove the HTML attributes that are
+used for the same purpose, which leads to this hole.
+
+One example of an XSS attack would be:
+
+<b onMouseOver="self.location.href='http://localhost/geeklog/'">life
+has made her that much bolder now</b>
+
+When a victim moves the mouse pointer over the quote from "Lady
+Godiva's Operation", an intrinsic event occurs and the JavaScript
+code is executed.
+
+(There is also an XSS issue in the search engine. It was reported
+by §ome1, and not by me.)
+
+2) Geeklog has got a CRLF Injection hole in User Profile: Send
+Email. The users' mail addresses are meant to be secret, but by
+using this hole, you can get someone's mail address anyway.
+
+The problem is that you can add extra mail headers, by using a
+CRLF combination followed by an extra mail header in the Subject
+field. One way to add them is saving the HTML document with the
+form, and changing the <input type=text name=subject> tag to a
+textarea. After opening the edited document in a web browser, you
+enter a Subject line in the textarea, press Enter, and then you
+enter your extra mail header. When the mail is sent, that header
+will be included. If the header in question is "Bcc: <your own
+mail address>", the message will silently be copied to you, thus
+revealing the recipient's mail address without them knowing.
+
+I have described this type of problem in further detail
+in my "CRLF Injection" paper, which is available at
+http://cert.uni-stuttgart.de/archive/bugtraq/2002/05/msg00079.html
+
+
+COMMUNICATION WITH VENDOR:
+
+The vendor was contacted on the 1st of July. Version 1.3.5sr2,
+which does not have any of these security holes (neither mine nor
+§ome1's), was released on the 9th of July.
+
+
+RECOMMENDATION:
+
+I recommend that all administrators upgrade to version 1.3.5sr2.
+
+
+// Ulf Harnhammar
+ulfh@update.uu.se
+
+

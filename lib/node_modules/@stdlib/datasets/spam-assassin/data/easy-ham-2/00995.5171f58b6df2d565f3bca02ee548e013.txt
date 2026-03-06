@@ -1,0 +1,68 @@
+From fork-admin@xent.com  Mon Aug 12 11:09:17 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BD33F44169
+	for <jm@localhost>; Mon, 12 Aug 2002 05:56:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:56:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7A2jvb05152 for <jm@jmason.org>;
+    Sat, 10 Aug 2002 03:46:00 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 07AA329413E; Fri,  9 Aug 2002 19:42:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 0DBCA2940D1 for <fork@xent.com>;
+    Fri,  9 Aug 2002 19:41:47 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-008.ptrb.interhop.net
+    [165.154.190.72]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g7A2H6218198 for <fork@xent.com>; Fri, 9 Aug 2002 22:17:07 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 166181C3B8;
+    Fri,  9 Aug 2002 21:06:06 -0400 (EDT)
+To: fork@spamassassin.taint.org
+Subject: Re: David Friedman: Mail Me the Money!
+References: <F165H6t92wSdCSyHYM700005dae@hotmail.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2fzxnsetd.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 09 Aug 2002 21:06:06 -0400
+
+>>>>> "R" == Russell Turpin <deafbox@hotmail.com> writes:
+
+    R> Hmm. I've lived most of my life in houses that did not have
+    R> central heating, including my current abode.  As to the
+    R> crapper, it did not do nearly as much to improve waste
+    R> management in cities as did the public sewers which it feeds,
+    R> and the water lines that supply it. Without these, you would
+    R> find that a chamber pot works just as well.
+
+The particulars may be negotiable, but even in your list there is not
+one _political_ solution, only technical ones. QED.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+
+

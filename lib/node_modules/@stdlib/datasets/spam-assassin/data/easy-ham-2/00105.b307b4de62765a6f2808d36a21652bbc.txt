@@ -1,0 +1,117 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:13:18 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D2BF4440DE
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:32 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:32 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFHU902180 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:17:30 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id OAA31984 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 14:11:42 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA27431; Mon, 22 Jul 2002 14:11:00 +0100
+Received: from linux.local ([195.218.108.52]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA27396 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 14:10:52 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.52] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6MBW9X31245 for
+    <ilug@linux.ie>; Mon, 22 Jul 2002 12:32:09 +0100
+Message-Id: <200207221132.g6MBW9X31245@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+In-Reply-To: Message from
+    "John P. Looney"
+    <valen@tuatha.org> of
+    "Mon, 22 Jul 2002 09:09:41 BST."
+    <20020722080941.GI3234@jinny.ie>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <31241.1027337528.1@linux.local>
+Date: Mon, 22 Jul 2002 12:32:08 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    OAA27396
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Mon, 22 Jul 2002 09:09:41 +0100
+  | From: "John P. Looney" <valen@tuatha.org>
+  |[ ... ]
+  | That's something that POSIX would do - make every platform as
+  | equally broken, rather than standing up and saying "how about
+  | we try & make everyone better".
+
+ eh?  POSIX doesn't "do" anything.  POSIX is a de jour
+ specification for a voluntary minimal implementation to
+ encourage software transportability.  no-one, absolutely
+ no-one, has or ever had to implement POSIX or be restricted
+ to POSIX.  commercial considerations et.al. may encourage
+ some "POSIX-compatibility", but that's a freely-made choice.
+
+ IMHO, the process's weakness is a general rule --- which
+ has been ignored on occasion --- to only consider "formal"
+ submissions of "proven" technologies.  that translates into
+ specifying more-or-less common parts of the existing *ix
+ implementations which actively contribute to the process.
+ most of the committees are loath to blue-sky, solicit
+ proposals/research, or pick an uncommon or unsponsored
+ implementation, even when manifestly superior.  (IMHO,
+ this is why POSIX is *ix and not, e.g., Plan9 or Inferno.)
+
+ OTOH, considering the motivating force behind the process,
+ it can be argued the above "weakness" is a strength ....
+
+  | (why? Because in the real world, you can't. Somethings just suck)
+
+ yep.  which is not to say POSIX "sucks" per se.  but the old
+ pre-POSIX *ix world arguably did, at least in terms of ease
+ of software porting.  one of *ix's claims to fame is it is
+ perhaps the first system where one could seriously consider
+ porting, more or less intact and with relative ease, software
+ from one architecture+platform+vendor to a radically utterly
+ different triple.
+
+ however, as people discovered, there's a lot of difference
+ between "consider porting" and "actually porting" --- and
+ some problems were silly.  some were self-inflicted (e.g.,
+ assuming byte-orientation or a particular endianness); but
+ others were Frustrating "system" incompatibilities --- the
+ motivating force that lead to /usr/group, XPG (X/Open), POSIX,
+ Spec1170, Unix98, Common Unix, &tc.
+
+     «The nice thing about standards is there's so many to
+      choose from.»   -- commonly attributed to bwk.
+
+cheers!
+	-blf-
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

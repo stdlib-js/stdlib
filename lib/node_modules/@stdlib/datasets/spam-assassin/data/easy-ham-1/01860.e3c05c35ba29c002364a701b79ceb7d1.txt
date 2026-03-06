@@ -1,0 +1,27 @@
+From rssfeeds@jmason.org  Tue Sep 24 10:48:08 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 825F416F16
+	for <jm@localhost>; Tue, 24 Sep 2002 10:48:08 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 24 Sep 2002 10:48:08 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8O80CC26578 for
+    <jm@jmason.org>; Tue, 24 Sep 2002 09:00:12 +0100
+Message-Id: <200209240800.g8O80CC26578@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: scripting <rssfeeds@spamassassin.taint.org>
+Subject: News.Com: Google search gets newsier.
+Date: Tue, 24 Sep 2002 08:00:12 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://scriptingnews.userland.com/backissues/2002/09/23#When:8:47:06AM
+Date: Mon, 23 Sep 2002 15:47:06 GMT
+
+News.Com: Google search gets newsier[1].
+
+[1] http://rss.com.com/2100-1023-958927.html?type=pt&part=rss&tag=feed&subj=news
+
+

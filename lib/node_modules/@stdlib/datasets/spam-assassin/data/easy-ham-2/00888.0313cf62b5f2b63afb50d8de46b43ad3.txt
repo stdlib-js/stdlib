@@ -1,0 +1,69 @@
+From fork-admin@xent.com  Thu Jul 25 20:56:35 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CB835440E7
+	for <jm@localhost>; Thu, 25 Jul 2002 15:56:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 20:56:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6PJrb427400 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 20:53:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6EC122940DE; Thu, 25 Jul 2002 12:52:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm3-36.sba1.netlojix.net
+    [207.71.218.180]) by xent.com (Postfix) with ESMTP id B8C702940AB for
+    <fork@xent.com>; Thu, 25 Jul 2002 12:51:42 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id MAA06571;
+    Thu, 25 Jul 2002 12:47:54 -0700
+Message-Id: <200207251947.MAA06571@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: (correction) Re: [Baseline] Raising chickens the high-tech way
+In-Reply-To: Message from Dave Long <dave> of "Wed, 24 Jul 2002 17:06:49 PDT."
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 25 Jul 2002 12:47:53 -0700
+
+
+
+> (or who are offspring of Wilt)
+
+My bad.  Wilt, even if he had media
+exposure that major studs only dream
+about, was just another example of
+natural selection, and doesn't even
+come close to livestock potency.
+
+1) I rather doubt that most of his
+20,000 women bothered to check the
+rebounding records of his cousins
+and uncles and whatnot (how old is
+basketball, in generations?) and
+compared them with their own kin's.
+
+2) Let's give Mr. Chamberlain the
+benefit of the doubt and suppose he
+sired twins with each mate.  40,000
+lifetime production compares poorly
+with a holstein bull.
+
+-Dave
+
+> Teat size and placement are always ideal which suggests that INCOME
+> daughters are the perfect kind for robot milkers.
+http://xent.com/mailman/listinfo/fork
+
+

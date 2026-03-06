@@ -1,0 +1,33 @@
+From rssfeeds@jmason.org  Wed Oct  2 11:43:39 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 88D4E16F03
+	for <jm@localhost>; Wed,  2 Oct 2002 11:43:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 02 Oct 2002 11:43:39 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9280SK31676 for
+    <jm@jmason.org>; Wed, 2 Oct 2002 09:00:28 +0100
+Message-Id: <200210020800.g9280SK31676@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: aaronsw <rssfeeds@spamassassin.taint.org>
+Subject: quick hack
+Date: Wed, 02 Oct 2002 08:00:28 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.aaronsw.com/weblog/000624
+Date: 2002-10-01T22:36:19-06:00
+
+New York Times as a Weblog[1] (source code[2]) Comments appreciated. Yes, I 
+know UserLand had something like this[3] but as you can see it doesn't seem to 
+be working anymore. 
+
+
+
+[1] http://nytimes.blogspace.com/
+[2] http://nytimes.blogspace.com/source.py
+[3] http://radio.weblogs.com/0102250/
+
+

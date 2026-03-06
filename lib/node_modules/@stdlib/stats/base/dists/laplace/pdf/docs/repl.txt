@@ -1,0 +1,72 @@
+
+{{alias}}( x, μ, b )
+    Evaluates the probability density function (PDF) for a Laplace
+    distribution with scale parameter `b` and location parameter `μ` at a
+    value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `b <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    μ: number
+        Location parameter.
+
+    b: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated PDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.0, 1.0 )
+    ~0.068
+    > y = {{alias}}( -1.0, 2.0, 3.0 )
+    ~0.061
+    > y = {{alias}}( 2.5, 2.0, 3.0 )
+    ~0.141
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+    // Negative scale parameter:
+    > y = {{alias}}( 2.0, 0.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( μ, b )
+    Returns a function for evaluating the probability density function (PDF)
+    of a Laplace distribution with scale parameter `b` and location parameter
+    `μ`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    b: number
+        Scale parameter.
+
+    Returns
+    -------
+    pdf: Function
+        Probability density function (PDF).
+
+    Examples
+    --------
+    > var myPDF = {{alias}}.factory( 10.0, 2.0 );
+    > var y = myPDF( 10.0 )
+    0.25
+
+    See Also
+    --------
+

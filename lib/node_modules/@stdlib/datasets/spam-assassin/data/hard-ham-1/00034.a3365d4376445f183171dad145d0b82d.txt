@@ -1,0 +1,267 @@
+Return-Path: <Online#3.19785.b8-Opw9lWtyc6p9xsRR.1.b@newsletter.online.com>
+Received: from ABV-SFO1-ACMTA6.CNET.COM (abv-sfo1-acmta6.cnet.com [206.16.1.169])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6B9MqJ19006
+	for <qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org>; Thu, 11 Jul 2002 10:22:52 +0100
+Received: from abv-sfo1-ac-agent6 (206.16.0.241) by ABV-SFO1-ACMTA6.CNET.COM (PowerMTA(TM) v1.5); Thu, 11 Jul 2002 02:25:08 -0700 (envelope-from <Online#3.19785.b8-Opw9lWtyc6p9xsRR.1.b@newsletter.online.com>)
+Message-ID: <6400488.1026379365207.JavaMail.root@abv-sfo1-ac-agent6>
+Date: Thu, 11 Jul 2002 02:22:45 -0700 (PDT)
+From: "CNET News.com" <Online#3.19785.b8-Opw9lWtyc6p9xsRR.1@newsletter.online.com>
+To: qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org
+Subject: CNET NEWS.CONTEXT: Hollywood & Silicon Valley: A way out?
+Mime-Version: 1.0
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+<html>
+<head>
+        <title>CNET | News.context</title>
+
+</head>
+<body bgcolor="#e5e5e5">
+<center>
+<a name="top"></a>
+
+
+<!-- Logo and ad banner -->
+<table cellpadding=0 cellspacing=0 border=0 width=612 bgcolor="#ffffff">
+	<tr valign=top>
+    <td width=442 colspan=4 bgcolor="#e5e5e5">
+        <img src="http://home.cnet.com/i/ne/ds/nched.gif" alt="" width="442" height="63" border="0"><br>
+    </td>
+    <td width=160 rowspan=2 align=center>
+
+<!-- Towerboard -->
+	<iframe src="http://www.zdnet.com/include/ads/ifc/RGROUP=2560" scrolling="no" frameborder="0" hspace="0" vspace="0" height="600" width="160" marginheight="0" marginwidth="0">
+<script language="JavaScript" src="http://www.zdnet.com/include/ads/js/RGROUP=2560">
+</script>
+</iframe>
+<!-- /Towerboard -->
+	<p>
+	<!-- search form -->
+	<TABLE border=0 cellPadding=2 cellSpacing=0 width=150>
+	<TR>
+	<TD>
+	<form method="GET" action="http://www.search.com/redirect/">
+	                <img src="/b.gif" width=1 height=4><font face="arial, helvetica" size="-1"><br>&nbsp;<b>Search</b></font><br>
+	                &nbsp;<input type="text" name="q" size="15" value=""><br>
+	                &nbsp;<select name="target">
+	                <option value="http://news.search.com/search?tag=ex.ne.newsletter.srch.ne" selected>News.com
+	                <option value="http://cnet.search.com/search?tag=ex.ne.newsletter.srch.cnet">All CNET&nbsp;&nbsp;&nbsp;&nbsp;
+	                <option value="http://www.search.com/search?tag=ex.ne.newsletter.srch.web">The Web
+                </select>&nbsp;<input type="submit" value="Go!" name="submit"></td></form>
+    </tr></table>
+    <!-- /search form -->
+
+    <p>
+
+<!-- Vertical Brick -->
+<IMG alt="Also from CNET" height=20 src="http://home.cnet.com/Ads/Media/Images/RHC_ALSOfromCNETnet.gif" width=150 NOSEND="1"><BR>
+<TABLE border=0 cellPadding=2 cellSpacing=0 width=150><TBODY><TR vAlign=top>
+<TD><FONT face="arial, helvetica" size=-1><B>
+<a href="http://clickthru.online.com/Click?q=cd-VHhSQzsKThB3tiBFjAi_TOlRfXuR" >Live tech help NOW!</a><p>
+<a href="http://clickthru.online.com/Click?q=e2-J1OpQhyzisJCKDOENBEZdihv9KsR" >April's tech award</a><p>
+<a href="http://clickthru.online.com/Click?q=f7-N0QnQLgzoJf3jfOlrZIGiR6ImOZR" >1 million open jobs</a><p>
+<a href="http://clickthru.online.com/Click?q=0d-3aGuIbr2CKATRE6Nv0T0QkY6b7uR" >News.com: Top CIOs</a> <p>
+<a href="http://clickthru.online.com/Click?q=22-xNrrIrdArW4RVhVuo4I9yc99NcsR" >ZDNet: PeopleSoft</a>
+</B></FONT></TD>
+</TR></TBODY></TABLE></P>
+<!-- End Vertical Brick-->
+
+
+
+		<p>
+
+
+	</td>
+	<td width=9 rowspan=2>
+		<table width=9 cellpadding=0 cellspacing=0 border=0>
+			<tr><td bgcolor="#e5e5e5"><img src="http://home.cnet.com/b.gif" width="9" height="50" border="0"><br></td></tr>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+			<tr><td bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="9" height="10" border="0"><br></td></tr>
+			<tr><td bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="9" height="1" border="0"><br></td></tr>
+		</table>
+	</td>
+	<td width=1 bgcolor="#000000" rowspan=2><img src="http://home.cnet.com/i/ne/ds/bkg.gif" width="1" height="50" border="0"></td>
+	</tr>
+
+<!-- Logo and ad banner -->
+
+<!-- In the News / Special Reports -->
+
+<tr valign=top>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"><br></td>
+	<td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+	<td width=430 bgcolor="#ffffff">
+
+<!-- START COPY FOR THE GUTS -->
+
+	<table cellpadding=0 cellspacing=0 border=0 width=430 bgcolor="#eeeeee">
+	<tr valign=top>
+	<td width=5><img src="http://home.cnet.com/b.gif" alt="" width="5" height="1" border="0"><br></td>
+	<td>
+	<table cellpadding=0 cellspacing=0 border=0 width=252>
+	<tr>
+	<td><img src="http://home.cnet.com/i/ne/ds/nc.gif" alt="News.context" width="76" height="16" border="0"><br></td>
+<!-- Date -->
+	<td align=right><font face="Arial, Helvetica" size="-2">July 11, 2002</font><br></td>
+	</tr>
+	</table>
+	<font face="Arial, Helvetica" size="-1">
+	<p>
+		<img src="http://news.cnet.com/i/ne/pr/gr/prtease_cooper.gif" width="65" height="82" border="0" align="right"><b>Hollywood & Silicon Valley: A way out?</b><p>
+		The controversy over digital file swapping is no closer to an amicable resolution than it was when peer-to-peer technology first came into vogue.
+		<p>
+		<a href="mailto:charles.cooper@cnet.com">Charlie Cooper</a>, Executive Editor/Commentary<br>
+		&nbsp;<br>
+	</font></td>
+   <td width=5><img src="http://home.cnet.com/b.gif" alt="" width="5" height="1" border="0"><br></td>
+                        </td>
+                        </tr>
+                        </table>
+
+        <!-- Thin grey line -->
+        <table cellpadding=0 cellspacing=0 border=0 width=430>
+        <tr valign=top>
+                <td bgcolor="#999999"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+        </tr>
+        </table>
+
+<table cellpadding=10 cellspacing=0 border=0>
+<tr><td><font face="Arial, Helvetica">
+
+<a name="h1"></a>
+<b>Just desserts for scofflaws</b><br>
+<font size="-1">
+U.S. Rep. <b>Howard L. Berman</b> weighed in this week, arguing that piracy over P2P networks robs songwriters on a massive scale. The congressman from Hollywood has authored a bill to stop illegal digital downloads by giving copyright owners the ability to technologically impair the distribution of copyrighted works.
+</font><br>
+<font size="-1">
+<a href="http://clickthru.online.com/Click?q=37-EMLQIqzFSrjTP9wQ93KjZ6eJcnZR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+
+<P>
+
+<a name="h2"><b>Spotting a scam in sheep's clothing</b></a><br>
+<font size="-1">
+Berman's proposal received a cool reception in Silicon Valley, where rules are frowned upon and unfettered innovation reigns supreme. So it was that StreamCast CEO <b>Steve Griffin</b> spoke for many in the community when he wrote that Berman's proposal won't work. What's more, he wondered, was Berman really concerned about controlling piracy, or could the congressman from Hollywood be influenced by certain constituents? Conspiracy buffs this week had a field day.</font><br>
+<font size="-1">
+<a href="http://clickthru.online.com/Click?q=4c-jxi2IZpI6YaLksnAu7hgvo2AKenR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+
+<p>
+
+<a name="h3"><b>How to curb digital piracy</b></a><br>
+<font size="-1">
+The odds that either side will raise the white flag are slim. But must this debate necessarily turn into an endless donnybrook? Former White House staffer <b>Jonathan Greenblatt</b> doesn't buy into historical determinism, and believes Hollywood can respond to the challenge of new media. First, it must shy away from any legislation that aims to control technology or enforces any "draconian" digital rights management rules. What other suggestions does he offer? Read on.</font><br>
+<font size="-1">
+<a href="http://clickthru.online.com/Click?q=61-x9oAIoLj9WWtbcj4JYndFK-AWlrR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+
+<p>
+
+<br>
+
+<a name="h4"><b>Writing file sharing's final chapter</b></a><br>
+<font size="-1">
+All this occurs as the P2P community lost one of its brighter lights. Computer scientist and entrepreneur <b>Gene Kan</b> died June 29. Kan, who helped to develop an early open-source version of Gnutella software, wrote a column for CNET News.com on June 21, drawing on the lessons learned from the history of peer-to-peer technology. In this highly nuanced piece, Kan offers a timely warning about what can happen when people get overly excited about new technologies.</font><br>
+<font size="-1">
+<a href="http://clickthru.online.com/Click?q=76-vJf7InBP3QFd7XP1okYP2r70U6iR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+
+<p>
+
+<a name="h5"><b>CEOs: Are you too focused?</b></a><br>
+<font size="-1">
+Conventional wisdom has it that "focus" is de rigueur for any corporation hoping to achieve superior performance. The flip side of this argument is that markets are quick to discount the valuations of diversified companies because of perceived shortcomings. But researchers at McKinsey offer an alternative idea, suggesting that there's a particularly fertile middle ground between focus and diversification.</font><br>
+<font size="-1">
+<a href="http://clickthru.online.com/Click?q=8c-Ld7aQ6JBHt02tYEVFm8il40AWNdR" >
+<b>Read Full Story</b></a></font> <img src="http://home.cnet.com/i/ne/ds/right_arrow.gif" alt="" width="9" height="9" border="0">
+
+</td></tr></table>
+
+</td></tr></table>
+
+
+
+
+<!-- News by Section -->
+<table cellpadding=0 cellspacing=0 border=0 width=612>
+<tr valign=top>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+        <td width=10 bgcolor="#ffcc00"><img src="http://home.cnet.com/b.gif" width="10" height="1" border="0"></td>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+        <td width=587 bgcolor="#ffffff">
+        <font face="Arial, Helvetica" size="-1">&nbsp;<Br>
+
+
+
+<!-- END COPY FOR THE GUTS -->
+
+        &nbsp;<br>
+
+        </td>
+        <td width=12 bgcolor="#ffffff"><img src="http://home.cnet.com/b.gif" width="12" height="1" border="0"><br></td>
+        <td width=1 bgcolor="#000000"><img src="http://home.cnet.com/b.gif" width="1" height="1" border="0"></td>
+</tr>
+</table>
+
+
+<!-- ### footer ### -->
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="599" bgcolor="#cccccc"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="575"><img src="http://www.cnet.com/b.gif" width="1" height="10"><br>
+<a href="http://clickthru.online.com/Click?q=a1-AfVtQ-ZKME2dMZZGkeHaXeD3gBcR" >
+<img src="http://a.r.tv.com/cnet.1d/i/nl/ft.gif" width="375" height="18" border="0" alt="Sign up for more free newsletters from CNET!"></a><br>
+
+<!-- subscription management -->
+
+<font face="ms sans serif, geneva" size="-2">
+The e-mail address for your subscription is&nbsp;qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org<br>
+<A NOTRACK HREF='http://clickthru.online.com/Click?q=b6-ll1UrMKLBLlFrFG3lrCqXXqIP7Q05RRR'>Unsubscribe</A>&nbsp;|&nbsp;<a href='http://nl.com.com/servlet/url_login?email=qqqqqqqqqq-cnet-newsletters@spamassassin.taint.org&brand=cnet'>Manage My Subscriptions</a>&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=cb-CjRIQJsrcgJT0IjyXYHRf_uaHkFR" >FAQ</A>&nbsp;|&nbsp;<a href="http://clickthru.online.com/Click?q=e0-cISRQfDH08xGStxkPhB7mxUT9A9R" >Advertise</A><p>Please send any questions, comments, or concerns to&nbsp;<a href="mailto:dispatchfeedback@news.com">dispatchfeedback@news.com</A>.<br></font>
+<!-- /subscription management-->
+
+</font><img src="http://www.zdnet.com/b.gif" width="1" height="8"></td>
+<td width="12"><img src="http://www.cnet.com/b.gif" width="12" height="1"></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#000000" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10" bgcolor="#ffcc00"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="601"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" bgcolor="#ffcc00" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td>
+<td width="10"><img src="http://www.cnet.com/b.gif" width="10" height="1"></td>
+<td width="37"><a href="http://clickthru.online.com/Click?q=f5-lTbRQgwx1j6smFm6DmLwgkaZmRuR" ><img src="http://www.cnet.com/i/dp/smrb.gif" width="37" height="37" border="0"></a></td>
+<td width="563" nowrap><font face="arial, helvetica" size="-1">
+<a href="http://clickthru.online.com/Click?q=0a-ZnKCIrrscyRQAefBwhq6GOxuYzsR" ><font color="#000000">Price comparisons</font></a> |
+<a href="http://clickthru.online.com/Click?q=1f-rvwqI58w5nBYvph1xmYgHobjqmZR" ><font color="#000000">Product reviews</font></a> |
+<a href="http://clickthru.online.com/Click?q=35-d6JTIbIzY4Dm2gxKNXLTSyPWc3uR" ><font color="#000000">Tech news</font></a> |
+<a href="http://clickthru.online.com/Click?q=4a-HcgUIPpcnXoLN2lsxoLkkTKhn-yR" ><font color="#000000">Downloads</font></a> |
+<a href="http://clickthru.online.com/Click?q=5f-WK5BIIKX2cAcqVs6fez6pa6cIJPR" ><font color="#000000">All CNET services</font></a>
+</font></td>
+<td width="1" bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+</table>
+<table width="612" cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#000000"><img src="http://www.cnet.com/b.gif" width="1" height="1"></td></tr>
+<tr><td height="25"><font face="ms sans serif, geneva" size="-2"><table width=100% border=0 cellspacing=2 cellpadding=1> <tr valign=bottom> <td width=75% height=31> <p></font> <br><b><font face=Arial, Helvetica, sans-serif size=2>    Copyright 2002 CNET Networks, Inc. All rights reserved.    </font></b> </p></td><td height=31 valign=top> <div align=right> <img src="http://gserv-cnet.zdnet.com/clear/outbound.gif?APPID=2&EMID=25136487&NL=e432&ISSUE=2002-07-11" height=1 width=1>    </div></td></tr><tr>  <td colspan=2><font face=Arial, Helvetica, sans-serif size=2>    </font></td></tr></table>
+</td></tr>
+</table>
+<!-- ### /footer ### -->
+
+</body>
+</html>
+<IMG HEIGHT=1 WIDTH=1 SRC="http://clickthru.online.com/Click?q=74-VAw8nFZ9X0kNWyUXbD16nz1dp9RR">
+

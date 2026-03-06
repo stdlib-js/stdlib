@@ -1,0 +1,84 @@
+
+{{alias}}( x, k, λ )
+    Evaluates the natural logarithm of the probability density function (PDF)
+    for an Erlang distribution with shape parameter `k` and rate parameter `λ`
+    at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If not provided a nonnegative integer for `k`, the function returns `NaN`.
+
+    If provided a non-positive value for `λ`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    k: number
+        Shape parameter.
+
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated logPDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.1, 1, 1.0 )
+    ~-0.1
+    > y = {{alias}}( 0.5, 2, 2.5 )
+    ~-0.111
+    > y = {{alias}}( -1.0, 4, 2.0 )
+    -Infinity
+    > y = {{alias}}( NaN, 1, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 1, NaN )
+    NaN
+    > y = {{alias}}( 2.0, -2, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, 0.5, 0.5 )
+    NaN
+    > y = {{alias}}( 2.0, 0.0, 2.0 )
+    -Infinity
+    > y = {{alias}}( 0.0, 0.0, 2.0 )
+    Infinity
+    > y = {{alias}}( 2.0, 1, 0.0 )
+    NaN
+    > y = {{alias}}( 2.0, 1, -1.0 )
+    NaN
+
+
+{{alias}}.factory( k, λ )
+    Returns a function for evaluating the natural logarithm of the probability
+    density function (PDF) of an Erlang distribution with shape parameter `k`
+    and rate parameter `λ`.
+
+    Parameters
+    ----------
+    k: number
+        Shape parameter.
+
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    logpdf: Function
+        Logarithm of probability density function (PDF).
+
+    Examples
+    --------
+    > var myLogPDF = {{alias}}.factory( 6.0, 7.0 );
+    > y = myLogPDF( 7.0 )
+    ~-32.382
+
+
+    See Also
+    --------
+

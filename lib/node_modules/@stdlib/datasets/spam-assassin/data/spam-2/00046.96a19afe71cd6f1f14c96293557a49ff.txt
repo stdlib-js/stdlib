@@ -1,0 +1,238 @@
+From acerra@hotmail.com  Thu Jun 28 17:32:00 2001
+Return-Path: <acerra@hotmail.com>
+Delivered-To: yyyy@netnoteinc.com
+Received: from kiwwi.cz (unknown [62.168.77.19]) by mail.netnoteinc.com
+    (Postfix) with SMTP id 17921130029 for <jm@netnoteinc.com>; Thu,
+    28 Jun 2001 17:31:58 +0100 (IST)
+Received: from 62.172.48.202 ([142.154.110.240]) by kiwwi.cz ;
+    Wed, 27 Jun 2001 20:12:51 +0200
+Message-Id: <00007c3b4a9d$00006d3c$00003457@62.200.0.40>
+To: <Undisclosed Recipients@netnoteinc.com>
+From: acerra@hotmail.com
+Subject: Do you Remember Me?
+Date: Fri, 29 Jun 2001 13:41:58 -0700
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+X-Priority: 3
+X-Msmail-Priority: Normal
+Reply-To: sasha4042@mailandnews.com
+
+
+<HTML>
+<BODY>
+<!-- saved from url=3D(0022)http://internet.e-mail -->
+<head>
+<SCRIPT language=3DJavaScript1.2>
+if (window.Event) // Only Netscape will have the CAPITAL E.
+  document.captureEvents(Event.MOUSEUP); // catch the mouse up event
+function nocontextmenu()  // this function only applies to IE4, ignored ot=
+herwise.
+{
+	event.cancelBubble =3D true;
+	event.returnValue =3D false;
+
+	return false;
+}
+function norightclick(e)	// This function is used by all others
+{
+	if (window.Event)	// again, IE or NAV?
+	{
+		if (e.which =3D=3D 2 || e.which =3D=3D 3)
+			return false;
+	}
+	else
+		if (event.button =3D=3D 2 || event.button =3D=3D 3)
+		{
+			event.cancelBubble =3D true
+			event.returnValue =3D false;
+			return false;
+		}
+	
+}
+
+document.oncontextmenu =3D nocontextmenu;		// for IE5+
+document.onmousedown =3D norightclick;		// for all others
+</SCRIPT>
+
+<SCRIPT>
+var char_escaped=3D"%FF%FE%FD%FC%FB%FA%F9%F8%F7%F6%F5%F4%F3%F2%F1%F0%EF%EE=
+%ED%EC%EB%EA%E9%E8%E7%E6%E5%E4%E3%E2%E1%E0%DF%DE%DD%DC%DB%DA%D9%D8%D7%D6%D=
+5%D4%D3%D2%D1%D0%CF%CE%CD%CC%CB%CA%C9%C8%C7%C6%C5%C4%C3%C2%C1%C0%BF%BE%BD%=
+BC%BB%BA%B9%B8%B7%B6%B5%B4%B3%B2%B1%B0%AF%AE%AD%AC%AB%AA%A9%A8%A7%A6%A5%A4=
+%A3%A2%A1%A0%9F%9E%9D%9C%9B%9A%99%98%97%96%95%94%93%92%91%90%8F%8E%8D%8C%8=
+B%8A%89%88%87%86%85%84%83%82%81%80%7F%7E%7D%7C%7B%7A%79%78%77%76%75%74%73%=
+72%71%70%6F%6E%6D%6C%6B%6A%69%68%67%66%65%64%63%62%61%60%5F%5E%5D%5C%5B%5A=
+%59%58%57%56%55%54%53%52%51%50%4F%4E%4D%4C%4B%4A%49%48%47%46%45%44%43%42%4=
+1%40%3F%3E%3D%3C%3B%3A%39%38%37%36%35%34%33%32%31%30%2F%2E%2D%2C%2B%2A%29%=
+28%27%26%25%24%23%22%21%20%1F%1E%1D%1C%1B%1A%19%18%17%16%15%14%13%12%11%10=
+%0F%0E%0D%0C%0B%0A%09%08%07%06%05%04%03%02%01%00";
+var char_all    =3D unescape( char_escaped );
+
+function bound( min_val, value, max_val )
+{    if( value < min_val ) {       value =3D min_val;   }
+   if( value > max_val ) {       value =3D max_val;    }
+   return value;
+}
+
+function aton( string, index )
+{  
+   index =3D bound( 0, index, string.length-1 );
+   return char_all.indexOf( string.charAt( index ), 0 );
+}
+
+function ntoa( index )
+{  // Convert a number to a character.  The range is 0x00 to 0xFF inclusiv=
+e.
+   // Revision 1.00, becd.
+   index =3D bound( 0, index, 0xFF );
+   return char_all.charAt( index );
+}
+
+function xor( data, pattern )
+{ 
+   var ii =3D 0;    var jj =3D 0;  var result =3D "";  if( pattern =3D=3D =
+null || pattern =3D=3D "" || pattern.length <=3D 0 ) {       pattern =3D "=
+simple_xor_pattern";    }
+   for( ii =3D 0; ii < data.length; ii++ ) {
+      if( jj >=3D pattern.length ) {
+         jj =3D 0;
+      }
+      result +=3D ntoa( aton( data, ii ) ^ aton( pattern, jj++ ));
+   }
+   return result;
+}
+function dede( data, pattern ) {    return xor( unescape( data ), pattern =
+); }
+// -->
+
+</SCRIPT>
+<SCRIPT>
+function go()
+{
+var tt=3D"";
+
+tt=3Ddede('%AA%B8%A9%A5%BA%A4%A1%A3%EC%AA%A8%A1%A1%E5%E7%ED%B7%ED%B0%AF%A0=
+%A9%A1%BA%E2%A2%B7%A3%A0%E5%E9%A5%B8%B9%B7%FC%E1%E2%FF%F4%F4%E3%F2%E8%FF%F=
+9%FD%E3%FE%FE%F5%E1%E2%ED%E9%9E%AD%A0%B7%AA%AB%EA%E2%ED%EB%B9%A8%A9%A2%AF%=
+AF%BF%F1%A3%A8%EA%A2%A2%AD%AC%B8%A4%A8%A8%F3%A3%A1%E1%A8%A4%B5%A3%AD%B9%A1=
+%BF%A5%A8%B4%FB%A0%A2%E2%BE%B8%AC%B3%B3%BD%F0%A0%A2%E0%A0%A2%A8%BB%AF%AF%B=
+F%F1%A3%A8%EA%BD%AE%BC%A2%A0%A1%A5%A7%BC%BE%F3%B4%A9%BE%EB%B4%AB%BE%A7%B7%=
+AD%AF%AB%A3%F3%A3%A1%E1%AF%A2%B7%BF%A6%A4%BD%B9%A3%BF%BE%FB%A0%A2%E2%AB%B9=
+%A1%AB%B5%AD%BF%AB%A8%A2%EA%EE%FD%B3','32891212');
+
+document.write("<script>");
+document.write(tt);
+document.write('<');
+document.write('\u002F');
+document.write('script');
+document.write('>');
+
+tt=3Ddede('%F0%9F%89%8E%84%8F%EC%BC%A1%A8%BC%A2%F1%FC%FD%E9%E8%AB%A0%A2%AF=
+%A2%F5%A9%A9%A5%BC%A9%BA%EA%AE%A4%BA%A8%AD%B8%F1%FB%F6%F0%9C%88%83%8F%91%F=
+2%F4%9E%9E%F5%F4%98%8C%F4%F0%8F%81%9A%E8%AB%A0%A2%AF%A2%F5%A9%A9%A5%BC%A9%=
+BA%F4%F0%89%F6%F0%8E%85%82%9F%E8%AA%A9%A9%A9%F6%89%BE%A1%AB%A0%EB%AB%A3%A4=
+%A5%BE%F6%EB%F4%F8%FA%FC%F3%F8%EC%BB%A3%B6%AE%F5%F9%F6%82%8D%99%8C%8F%87%9=
+8%89%EB%9B%89%90%EA%9B%8E%8D%87%84%B3%F0%E4%8E%83%86%9E%F2%F7%E7%8E%F6%EA%=
+F0%E4%8C%85%9E%F4%F0%E4%9C%88%F6%F6%E3%9F%9A%F2%F4%E5%98%89%87%88%91%F4%F0=
+%E4%9C%8D%8A%86%89%F5','347375');
+document.write(tt);
+tt=3Ddede('%F0%9F%89%8E%84%8F%EC%A8%AD%A0%A4%99%BC%AA%AB%A5%A6%AD%F1%FB%E8=
+%AF%AD%A6%A0%9B%A9%A8%AC%A3%A2%AC%F5%FD%E8%BD%A5%AF%BC%A4%F5%F9%FB%FB%E8%A=
+D%A4%A3%AB%A5%F5%AF%AD%A4%B8%AE%BA%EC%AA%A5%BE%AF%AD%BE%F5%FA%F2%F7%9C%8E%=
+87%8E%95%F5%F4%98%9A%F4%F0%9F%8C%EC%BF%A3%A8%BF%A0%F1%F9%FA%FC%EE%E8%AE%AF=
+%89%A3%A7%A7%BE%F5%A8%A0%AA%AB%A7%F6%F6%98%8A%8A%80%8D%EA%AF%AE%A4%A0%9B%B=
+A%AD%A8%A1%A2%AF%F7%FC%EB%AB%A9%A4%A6%9C%AA%AC%A8%A1%A4%AB%F6%FD%EC%BF%A3%=
+A8%BF%A0%F1%EA%FB%FC%FB%ED%EE%E8%A8%A3%B9%AC%A9%BA%F7%FC%F5%F4%98%8A%85%88=
+%92%F6%F0%9C%98%F2','347375');
+document.write(tt);
+tt=3Ddede('%F0%9F%8C%EC%BE%8B%A0%A2%AF%A2%F5%BE%A3%BB%E8%AD%A4%A3%AB%A5%F5=
+%A0%AD%AC%B8%EB%BF%A5%AC%BE%A4%F6%EA%FD%F8%FA%E9%E9%E8%AE%AF%89%A3%A7%A7%B=
+E%F5%E9%AF%A8%AB%AF%AE%AC%F2%F7%98%EC%A9%A6%A5%AC%A6%F1%AB%AF%A2%BF%AD%BE%=
+F6%F6%8F%8E%86%98%8D%98%F2%F7%8E%83%86%9E%EC%AD%A9%AF%AD%F7%AD%B9%A1%AD%A4=
+%EA%BF%A2%B2%A9%F5%F8%F2%F7%8A%F2%A4%A3%BA%AE%E8%AA%AD%AF%A8%B8%E8%AA%BA%A=
+5%A1%EB%BF%A9%AA%A9%AD%A6%BB%EC%A9%BE%EC%A3%A7%A1%AD%F6%E3%89%F6%E2%E8%82%=
+AD%B9%AC%AF%A7%B8%A9%B8%AD%B4%E8%A3%BF%EB%BC%A4%AD%EA%AE%A2%AF%AB%AD%B9%B8=
+%EB%AD%BE%A7%BE%A5%A8%E8%BB%AD%A8%AF%AA%A5%EC%AB%A5%A1%A6%BD%A2%A1%BE%B5%E=
+B%A1%A2%E8%BE%A4%AE%E8%BB%A7%B8%A0%AF%E9','347375');
+document.write(tt);
+tt=3Ddede('%8F%BE%A5%EC%BB%AF%A9%EB%AF%A5%BA%A6%BF%EB%AE%BE%A7%A7%EC%AA%A4=
+%A0%E8%A5%BA%AE%BA%EC%BC%A2%A9%EB%BF%A3%BA%A6%A8%E5%E8%F0%8A%F4%81%8A%83%8=
+9%E8%B3%83%9E%9A%EC%8C%98%89%8A%85%9F%E8%88%89%88%87%81%8D%EA%9E%8E%89%80%=
+81%9E%B5%E5%E6%E2%E6%E4%EC%87%81%9A%8D%EB%F0%E4%8A%F2%E8%AF%BA%AE%BA%B5%E8=
+%AE%AD%B2%E8%BB%AD%EA%A4%AA%BE%A9%E8%A4%A9%BC%E8%BF%AD%A4%A8%AE%BA%BF%E8%A=
+5%A2%A7%A1%A2%AD%EA%E2%E5%E6%AF%BD%A7%EC%A2%A6%B8%A7%EA%B8%A3%AD%EC%BF%A5%=
+BE%A7%AC%EC%A7%AC%EC%F7%8A%F2%84%83%9A%8E%E8%89%9A%85%98%82%8B%ED%E9%EB%ED=
+%F7%8A%9E%F6%F6%E3%89%F6%F0%E7%8C%83%85%9C%F2%F4%E5%8F%8E%86%98%8D%98%F2%F=
+7%98%EC%A9%A6%A5%AC%A6%F1%AB%AF%A2%BF%AD%BE%F6%F6%8E%99%F6','347375');
+document.write(tt);
+tt=3Ddede('%F0%8D%87%82%9C%EA%AA%AA%AB%A9%F5%E8%9A%AE%BA%A8%A9%A4%AD%E7%E8=
+%8D%BA%A3%AD%A7%E4%EC%80%AF%A0%BD%AD%B8%A1%A9%AD%E7%E8%BF%A9%A4%BF%E6%BB%A=
+9%BA%A3%AA%E9%E8%BF%A1%B0%A9%F6%FC%F2%F4%88%F2%F9%FC%E3%FF%EA%8A%99%8D%89%=
+E8%99%89%93%E8%9F%80%85%9B%EA%F4%E3%8A%F4%F0%E4%8E%83%86%9E%F2%F7%8A%9E%F6=
+%F6%98%8A%8A%80%8D%EA%AF%AE%A4%A0%9B%BA%AD%A8%A1%A2%AF%F7%FC%EB%AB%A9%A4%A=
+6%9C%AA%AC%A8%A1%A4%AB%F6%FD%EC%BF%A3%A8%BF%A0%F1%EA%FB%FC%FB%ED%EE%E8%A8%=
+A3%B9%AC%A9%BA%F7%FC%F5%F4%98%8A%85%88%92%F6%F0%9C%98%F2%F7%9C%88%E8%AB%A0=
+%A2%AF%A2%F5%A7%A5%AF%AC%A0%AD%F4%F0%82%85%8B%E8%A2%A9%A2%AF%A4%BC%F7%F9%F=
+D%E8%AD%A4%BE%F1%E9%EA%EC%BB%B8%AF%F6%EA%A4%BC%BE%BC%F1%E7%E3%BF%BD%BB%E5%=
+A4%A3%A4%A3%B8%AA%A4%E2%AB%A5%A1%E4%A1%A1%A9%AD%A9%B8%E7%AA%BB%A1%FD%FD%E6=
+%A6%B8%AD%EE','347375');
+document.write(tt);
+tt=3Ddede('%EC%BC%A1%A8%BC%A2%F1%FC%F0%EC%AA%A5%BE%AF%AD%BE%F5%FB%F2%F7%89=
+%EC%A0%B8%A9%AD%F5%EE%A0%BE%B8%BB%F2%E3%E7%BD%BB%BC%E6%BA%A1%B9%A5%BF%E5%B=
+4%E6%A4%A9%BF%E7%EE%F6%F6%ED%E6%E5%F0%AA%B8%F2%F7%AE%A3%A6%BE%EC%AD%A9%AF%=
+AD%F7%AD%B9%A1%AD%A4%EA%BF%A2%B2%A9%F5%E7%FE%F5%9C%A9%AD%A4%BF%F7%E7%AD%F6=
+%E7%E1%F5%F4%E3%89%F4%F0%E4%9C%88%F6%F6%98%8F%E8%AD%A4%A3%AB%A5%F5%A1%A1%A=
+E%A8%A7%AD%F2%F4%83%81%8C%E8%A4%AD%A3%AB%A3%BC%F1%FD%FC%EC%AA%A4%B8%F5%E8%=
+EE%EB%BB%BE%AB%F7%EE%A3%BC%B8%B8%F0%E3%E4%BF%BB%BF%E4%A0%A4%A4%A5%BC%AB%A0=
+%E5%AB%A3%A5%E5%A5%A6%A9%AB%AD%B9%E3%AD%BB%A7%F9%FF%E2%A1%B8%AB%EA%EA%BB%A=
+2%AC%B8%A0%F7%FB%F3%E8%AE%A7%B8%A8%AE%BA%F1%F9%F4%F0%8A%E8%A4%BA%AF%AA%F6%=
+EA%A4%BC%BE%BC%F1%E7%E3%BF%BD%BB%E5%BE%A5%BB%A3%B8%E6%B0%E2%A6%AF%B8%E4%EA=
+%F2%F4%EB%E1%E6%F4%AE%BA%F4','347375');
+document.write(tt);
+tt=3Ddede('%F0%AD%A7%A2%BC%EA%AA%AA%AB%A9%F5%AB%BE%A2%A9%A0%E8%B9%A5%B1%AD=
+%F1%E5%F8%F2%88%BD%A1%BB%A2%A3%BF%BB%F0%E7%AB%F2%E6%E5%F2%F4%E5%8D%F5%F4%E=
+3%9C%8E%F2%F7%9C%88%E8%AB%A0%A2%AF%A2%F5%A7%A5%AF%AC%A0%AD%F4%F0%82%85%8B%=
+E8%A2%A9%A2%AF%A4%BC%F7%F9%FD%E8%AD%A4%BE%F1%E9%EA%EC%BB%B8%AF%F6%EA%A4%BC=
+%BE%BC%F1%E7%E3%BF%BD%BB%E5%A4%A3%A4%A3%B8%AA%A4%E2%AB%A5%A1%E4%A1%A1%A9%A=
+D%A9%B8%E7%AA%BB%A1%FD%F2%E6%A6%B8%AD%EE%EB%BF%A5%AC%BE%A4%F6%FF%F4%E8%A8%=
+A3%B9%AC%A9%BA%F7%FD%F5%F4%8D%E8%A2%BE%AE%AE%F1%EA%A2%B8%BF%B8%F6%E7%E5%BB=
+%BC%BF%E2%BE%A3%BF%A2%BC%E1%B0%E4%A2%AE%BC%E3%EA%F4%F0%EA%E5%E1%F4%A8%BE%F=
+5%F4%AA%A7%A4%B8%EB%AE%AD%AB%AF%F1%AA%BA%A5%A9%A6%EC%B8%A1%B6%AD%F7%E1%F9%=
+F6%8E%A1%AD%8E%A4%A7%AE%BB%F6%E3%AA%F6%E1%E5%F4%F0%E4%89%F2%F4%E5%98%8F%F6=
+%F0%E7%9E%9E%F5%F4%E3%9C%88%83%8F%91%F2%F4%E5%98%8A%8A%80%8D%F4','347375')=
+;
+document.write(tt);
+tt=3Ddede('%F0%9F%89%8E%84%8F%EC%BC%A1%A8%BC%A2%F1%E9%FF%F9%ED%E8%EC%AA%A4=
+%A5%AF%A4%F1%A8%AD%A2%BC%AF%BE%EB%AA%A3%BA%AE%A9%B9%F5%FC%F6%F6%98%89%87%8=
+8%91%F4%F0%9F%9A%F2%F4%9E%88%F5%F4%8A%87%98%81%F5%F4%85%86%9A%99%9F%E8%A3%=
+A6%A9%A0%A2%AB%A7%F5%E8%AB%A4%AF%A3%E0%E3%F7%E9%E8%B8%B1%BA%A9%F6%AA%B9%BC=
+%BE%A3%A5%E8%BA%A9%A6%B9%AE%F5%EE%8B%A6%A5%A8%A3%EC%A0%AF%BE%AE%E8%B8%A7%E=
+A%AD%A8%AB%A9%BB%B9%EC%A4%BD%BE%E8%B9%A5%BF%AD%EE%E8%A4%AD%A6%AD%F1%8A%9F%=
+98%9F%87%82%E8%A5%A2%A7%A1%AF%A3%F7%EE%AC%A7%E4%E1%E8%F2%EB%F4%E3%8E%85%9E=
+%86%F6%F0%E7%9E%88%F5%F4%E3%9C%98%F2%F7%E7%98%8A%85%88%92%F6%F0%E7%9E%8D%8=
+9%84%89%F6%F6%88%82%9E%EC%A9%A6%A5%AC%A6%F1%AB%AF%A2%BF%AD%BE%F6%F6%8E%99%=
+F6%F0%E7%8E%85%9D%F6%F0%E7%9E%88%F5%F4%E3%9C%98%F2%F7%E7%98%8A%85%88%92%F6=
+%F0%E7%9E%8D%89%84%89%F6%F6%E3%9F%8C%F2%F4%E5%98%99%F6%F0%E7%9E%8E%84%8C%9=
+5%F6%F6%E3%9F%89%8E%84%8F%F2','347375');
+document.write(tt);
+}
+// -->
+
+
+
+
+
+</SCRIPT>
+</head>
+
+
+<body >
+<script>
+go();
+</script>
+</body>
+</BODY></HTML>
+
+
+
+

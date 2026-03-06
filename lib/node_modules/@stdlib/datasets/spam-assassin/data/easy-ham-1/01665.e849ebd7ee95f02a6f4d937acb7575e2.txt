@@ -1,0 +1,28 @@
+Return-Path: gward@python.net
+Delivery-Date: Fri Sep  6 19:02:23 2002
+From: gward@python.net (Greg Ward)
+Date: Fri, 6 Sep 2002 14:02:23 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCKEICBCAB.tim.one@comcast.net>
+References: <15736.54481.733005.644033@anthem.wooz.org>
+	<LNBBLJKPBEHFEDALKOLCKEICBCAB.tim.one@comcast.net>
+Message-ID: <20020906180223.GA18250@cthulhu.gerg.ca>
+
+On 06 September 2002, Tim Peters said:
+> > Note that header names are case insensitive, so this one's no
+> > different than "MIME-Version:".  Similarly other headers in your list.
+> 
+> Ignoring case here may or may not help; that's for experiment to decide.
+> It's plausible that case is significant, if, e.g., a particular spam mailing
+> package generates unusual case, or a particular clueless spammer
+> misconfigures his package.
+
+Case of headers is definitely helpful.  SpamAssassin has a rule for it
+-- if you have headers like "DATE" or "SUBJECT", you get a few more
+points.
+
+        Greg
+-- 
+Greg Ward <gward@python.net>                         http://www.gerg.ca/
+God is omnipotent, omniscient, and omnibenevolent
+---it says so right here on the label.

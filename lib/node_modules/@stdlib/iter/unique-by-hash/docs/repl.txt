@@ -1,0 +1,59 @@
+
+{{alias}}( iterator, hashFcn[, thisArg] )
+    Returns an iterator which returns unique values according to a hash
+    function.
+
+    A returned iterator internally buffers unique hashes and, thus, has O(N)
+    memory requirements.
+
+    An iterated value is considered "unique" if the hash function returns a
+    unique hash value for that iterated value. Beware that this *may* result in
+    unexpected behavior. Namely, only the first iterated value mapping to a
+    particular hash function result is returned, even if subsequent values,
+    while mapping to the same hash, are different. Accordingly, iteration order
+    *does* matter.
+
+    If an environment supports Symbol.iterator and a provided iterator is
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    hashFcn: Function
+        Hash function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it1 = {{alias:@stdlib/array/to-iterator}}( [ 1, 2, 1, 2, 4 ] );
+    > function f( v ) { return v.toString(); };
+    > var it2 = {{alias}}( it1, f );
+    > var v = it2.next().value
+    1
+    > v = it2.next().value
+    2
+    > v = it2.next().value
+    4
+    > var bool = it2.next().done
+    true
+
+    See Also
+    --------
+

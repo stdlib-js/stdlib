@@ -1,0 +1,33 @@
+
+{{alias}}( start, stop[, increment] )
+    Generates a linearly spaced numeric array using a provided increment.
+
+    If an `increment` is not provided, the default `increment` is `1`.
+
+    The output array is guaranteed to include the `start` value but does not
+    include the `stop` value.
+
+    Parameters
+    ----------
+    start: number
+        First array value.
+
+    stop: number
+        Array element bound.
+
+    increment: number (optional)
+        Increment. Default: `1`.
+
+    Returns
+    -------
+    arr: Array
+        Linearly spaced numeric array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 0, 11, 2 )
+    [ 0, 2, 4, 6, 8, 10 ]
+
+    See Also
+    --------
+

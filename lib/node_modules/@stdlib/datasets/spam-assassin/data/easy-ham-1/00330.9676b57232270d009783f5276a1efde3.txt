@@ -1,0 +1,90 @@
+From fork-admin@xent.com  Mon Aug 26 22:38:56 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CC9D144155
+	for <jm@localhost>; Mon, 26 Aug 2002 17:38:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 22:38:52 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7QLd3Z10719 for <jm@jmason.org>;
+    Mon, 26 Aug 2002 22:39:03 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 039252941EE; Mon, 26 Aug 2002 13:39:53 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mta7.pltn13.pbi.net (mta7.pltn13.pbi.net [64.164.98.8]) by
+    xent.com (Postfix) with ESMTP id A082F29416D for <fork@xent.com>;
+    Mon, 26 Aug 2002 07:50:40 -0700 (PDT)
+Received: from endeavors.com ([66.126.120.174]) by mta7.pltn13.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H1G00CNMHBPZO@mta7.pltn13.pbi.net> for fork@xent.com; Mon,
+    26 Aug 2002 07:52:38 -0700 (PDT)
+From: Gregory Alan Bolcer <gbolcer@endeavors.com>
+Subject: UCI Creative Writing
+To: FoRK <fork@spamassassin.taint.org>
+Reply-To: gbolcer@endeavors.com
+Message-Id: <3D6A3E77.E1DE2E71@endeavors.com>
+Organization: Endeavors Technology, Inc.
+MIME-Version: 1.0
+X-Mailer: Mozilla 4.79 [en] (X11; U; IRIX 6.5 IP32)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Accept-Language: en, pdf
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 26 Aug 2002 07:43:03 -0700
+
+More articles that support my fantasy that Irvine is the
+center of the universe.  We've got the corner on electric
+cars, fuel cells, two types of Nobel winning physics,
+outside the box computer science, and lot of creative writers.
+
+UCI's creative writing department has been in the 
+news a lot over the course of the last decade.  Some
+quotes from the article[1]:
+
+   "In 1992, Newsweek called UCI's fiction writing workshop
+    'the hottest writing program in the country.' Now it's
+    exponentially hotter, thanks only in part to Sebold's daring
+    and uncannily timely novel. 
+
+The novel they are talking about is Alice Sebold's "The
+Lovely Bones" which is on the way to the top of the 
+NY Times best-sellers list.  My uncle used to tease me
+about UCI (being a USC graduate from '54) that nobody
+knew who UC Irvine was just two states over.  In fact,
+I used to refer to UCI as one of the lesser known UC
+schools, and when I went off to college in 1985, my
+relatives told everyone I was off to Cal State Irvine. 
+I took a class as an undergrad by one of the department's 
+faculty called "the art of writing fiction".   If there
+was ever any two classes that helped contributed to writing
+my dissertation, it was that one which taught me how to
+get the writing flowing and my high school typing class
+which taught me how to type really fast.  
+
+One of the advantages they cite in the article is that they
+seem to take a chance on the "not-so-sure" bet, but according
+to the article, the number of UCI graduates that have gone on
+to write best sellers and the handful that feed the film industry
+is creating a viscious cycle that lures more talent which
+creates the right writing ecosystem, which churns out more
+success stories which lures more talent.  
+
+Greg
+
+
+[1] http://www.ocregister.com/sitearchives/2002/8/25/news/uci00825cci1.shtml
+http://xent.com/mailman/listinfo/fork
+

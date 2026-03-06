@@ -1,0 +1,123 @@
+From ilug-admin@linux.ie  Fri Aug  9 16:04:42 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 891CF440E2
+	for <jm@localhost>; Fri,  9 Aug 2002 10:59:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:59:45 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EZZb08384 for
+    <jm-ilug@jmason.org>; Fri, 9 Aug 2002 15:35:35 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id VAA01041 for <jm-ilug@jmason.org>;
+    Thu, 8 Aug 2002 21:56:14 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA04656; Thu, 8 Aug 2002 21:48:31 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail03.svc.cra.dublin.eircom.net
+    (mail03.svc.cra.dublin.eircom.net [159.134.118.19]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id VAA04625 for <ilug@linux.ie>; Thu,
+    8 Aug 2002 21:48:25 +0100
+Message-Id: <200208082048.VAA04625@lugh.tuatha.org>
+Received: (qmail 93744 messnum 529542 invoked from
+    network[159.134.237.90/chester.eircom.net]); 8 Aug 2002 20:47:54 -0000
+Received: from chester.eircom.net (HELO webmail.eircom.net)
+    (159.134.237.90) by mail03.svc.cra.dublin.eircom.net (qp 93744) with SMTP;
+    8 Aug 2002 20:47:54 -0000
+From: "wintermute" <cout@eircom.net>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Gentoo Linux
+Date: Thu, 8 Aug 2002 22:24:32 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 8bit
+X-Originating-Ip: 159.134.176.67
+X-Mailer: Eircom Net CRC Webmail (http://www.eircom.net/)
+Organization: Eircom Net (http://www.eircom.net/)
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Mark Page <mpage@esatclear.ie> printfd
+
+APOLOGIES IN ADVANCE FOR 80 CHAR LINES IN WEB MAIL (will get a mail client for this soon, honest)
+
+> Has anybody on the list installed/used this distro? If so wouldn't mind a bit 
+> of help.
+> 
+>  Burnt the ISO's from the latest Linux Format magazine. Took a couple of 
+> attempts to install but got there. My problem - I have a standard dial-up 
+> modem and the installation gives you the network card setup so internet 
+> download is out of the question, but, I installed the Stage3 tarball which 
+> puts the .tgz files on your harddrive. 
+> 
+>  So methinks, I have the software there and all I need to do is install so as 
+> 1) get the necessary programmes to connect to the net and 2) install any 
+> other programmes I might need.
+> 
+>  What actually happens is that if, for example, I attempt to install the KDE 
+> package, the system goes looking for any dependencies on the net despite the 
+> fact that the dependencies reside on my hard drive. Obviously I can't install 
+> anything.
+> 
+>  Have checked all docs on the web page and nothing deals with a standard 
+> dial-up modem or how to tell the package manager to look for the dependencies 
+> on the hard drive.
+> 
+>  Anybody able to help me here?
+> 
+>  Thanks in anticipation.
+
+
+Yup I'm running it on my k6 233 laptop. It's tres sweet.
+
+I would recommend getting wvdial, opening a virtual terminal dialing the internet and then emerging the packages you need.
+
+I did my install over my home lan and the lan in work (which has DSL - running Linux as firewall/router/mailserver of course).
+
+But yes you will need at least wvdial to make this puppy happen me thinks.
+
+In fact it looks as if the base install comes with wvdial for just this kind of instal.
+
+But I just found this on the Gentoo site for you.
+http://forums.gentoo.org/viewtopic.php?t=4691&highlight=modem
+
+Specifically
+
+quote:
+If it is not too obvious, these are the steps I took.
+
+
+    * Boot off the install CD
+    * modprobe serial
+    * setserial (if needed)
+    * create mount point for other distribution
+    * mount other distribution
+    * chroot'd to other distribution
+    * su - to regular user
+    * ran wvdial
+    * switch consoles and install as normal
+
+
+And yes I do give better technical support to people who use
+distros I like.
+
+I'm only laughing on the outside 
+My smile is just skin deep 
+If you could see inside I'm really crying 
+You might join me for a weep.
+<<At your service Madame>>
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

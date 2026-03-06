@@ -1,0 +1,57 @@
+
+{{alias}}()
+    Returns a regular expression to match a duration string.
+
+    A duration string is a string containing a sequence of time units. A time
+    unit is a nonnegative integer followed by a unit identifier. The following
+    unit identifiers are supported:
+
+    - d: days.
+    - h: hours.
+    - m: minutes.
+    - s: seconds.
+    - ms: milliseconds.
+
+    For example, the string `1m3s10ms` is a duration string containing three
+    time units: `1m` (1 minute), `3s` (3 seconds), and `10ms` (10 milliseconds).
+    The string `60m` is a duration string containing a single time unit: `60m`
+    (60 minutes). Time units must be supplied in descending order of magnitude
+    (i.e., days, hours, minutes, seconds, milliseconds).
+
+    Duration strings are case insensitive. For example, the string `1M3S10MS` is
+    equivalent to `1m3s10ms`.
+
+    The regular expression captures the following groups:
+
+    1. The days component.
+    2. The hours component.
+    3. The minutes component.
+    4. The seconds component.
+    5. The milliseconds component.
+
+    Returns
+    -------
+    re: RegExp: Regular expression
+        Regular expression to match a duration string.
+
+    Examples
+    --------
+    > var RE = {{alias}}();
+    > var parts = RE.exec( '3d2ms' )
+    [...]
+    > parts = RE.exec( '4h3m20s' )
+    [...]
+
+
+{{alias}}.REGEXP
+    Regular expression to match a duration string.
+
+    Examples
+    --------
+    > var bool = {{alias}}.REGEXP.test( '3d2ms' )
+    true
+    > bool = {{alias}}.REGEXP.test( 'foo' )
+    false
+
+    See Also
+    --------

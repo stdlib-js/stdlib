@@ -1,0 +1,24 @@
+Return-Path: jeremy@alum.mit.edu
+Delivery-Date: Mon Sep  9 17:37:05 2002
+From: jeremy@alum.mit.edu (Jeremy Hylton)
+Date: Mon, 9 Sep 2002 12:37:05 -0400
+Subject: [Spambayes] understanding high false negative rate
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCCENKBCAB.tim.one@comcast.net>
+References: <15738.24135.294137.640570@slothrop.zope.com>
+	<LNBBLJKPBEHFEDALKOLCCENKBCAB.tim.one@comcast.net>
+Message-ID: <15740.52785.769385.831666@slothrop.zope.com>
+
+>>>>> "TP" == Tim Peters <tim.one@comcast.net> writes:
+
+  >> First test results using tokenizer.Tokenizer.tokenize_headers()
+  >> unmodified.  ...  Second test results using
+  >> mboxtest.MyTokenizer.tokenize_headers().  This uses all headers
+  >> except Received, Data, and X-From_.  ...
+
+  TP> Try the latter again, but call the base tokenize_headers() too.
+
+Sorry.  I haven't found the time to try any more test runs.  Perhaps
+later today.
+
+Jeremy
+

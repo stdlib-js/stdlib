@@ -1,0 +1,39 @@
+
+{{alias}}( b, x )
+    Evaluates the exponential function `bˣ`.
+
+    Parameters
+    ----------
+    b: number
+        Base.
+
+    x: number
+        Exponent.
+
+    Returns
+    -------
+    y: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 3.0 )
+    8.0
+    > y = {{alias}}( 4.0, 0.5 )
+    2.0
+    > y = {{alias}}( 100.0, 0.0 )
+    1.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}}, 5.0 )
+    ~306.0197
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pi}}, -0.2 )
+    ~0.7954
+    > y = {{alias}}( NaN, 3.0 )
+    NaN
+    > y = {{alias}}( 5.0, NaN )
+    NaN
+    > y = {{alias}}( NaN, NaN )
+    NaN
+
+    See Also
+    --------
+

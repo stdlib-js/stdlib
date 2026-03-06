@@ -1,0 +1,12 @@
+
+{{alias}}
+    Cube root of single-precision floating-point epsilon.
+
+    Examples
+    --------
+    > {{alias}}
+    0.004921566694974899
+
+    See Also
+    --------
+

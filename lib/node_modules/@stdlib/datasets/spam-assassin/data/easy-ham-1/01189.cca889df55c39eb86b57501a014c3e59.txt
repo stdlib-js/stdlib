@@ -1,0 +1,79 @@
+From rpm-list-admin@freshrpms.net  Mon Sep 30 11:12:47 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B4E9016F17
+	for <jm@localhost>; Mon, 30 Sep 2002 11:12:32 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 11:12:32 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8SFlsg32445 for
+    <jm-rpm@jmason.org>; Sat, 28 Sep 2002 16:47:54 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8SFj4f15417; Sat, 28 Sep 2002 17:45:04
+    +0200
+Received: from urgent.rug.ac.be (urgent.rug.ac.be [157.193.88.1]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with SMTP id g8SFhwf15033 for
+    <RPM-List@freshrpms.net>; Sat, 28 Sep 2002 17:43:58 +0200
+Received: (qmail 3757 invoked by uid 505); 28 Sep 2002 15:44:03 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    28 Sep 2002 15:44:03 -0000
+From: Thomas Vander Stichele <thomas@urgent.rug.ac.be>
+To: RPM-List@freshrpms.net
+Subject: hi
+Message-Id: <Pine.LNX.4.44.0209281740430.9924-100000@urgent.rug.ac.be>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sat, 28 Sep 2002 17:44:03 +0200 (CEST)
+Date: Sat, 28 Sep 2002 17:44:03 +0200 (CEST)
+
+Hello,
+
+I'm new to the list.
+I wanted to find out who tried recompiling a working apt rpm for (null) or 
+psyche.  I would like to get good GStreamer packages done by monday when 
+it's released.
+
+BTW, in the archive I saw some posts regarding the GStreamer repository.  
+I'm not sure why they were posted on this list ;) In any case, I'm the rpm 
+maintainer, so if you have any questions, feel free to ask.
+
+I was trying to get an updated apt rpm from http://dave.cridland.net/, but 
+the http port is closed.  Dave, if you're reading this, please let me know 
+where I can get the updated rpm.
+
+Thanks,
+Thomas
+
+-- 
+
+The Dave/Dina Project : future TV today ! - http://davedina.apestaart.org/
+<-*-                      -*->
+Just like you said
+you leave my life
+I'm better off dead
+<-*- thomas@apestaart.org -*->
+URGent, the best radio on the Internet - 24/7 ! - http://urgent.rug.ac.be/
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

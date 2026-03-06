@@ -1,0 +1,56 @@
+From iiu-admin@taint.org  Tue Aug 13 17:00:54 2002
+Return-Path: <iiu-admin@taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9B09843C37
+	for <jm@localhost>; Tue, 13 Aug 2002 12:00:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 17:00:45 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DG19407830 for
+    <jm-list-admin-iiu@jmason.org>; Tue, 13 Aug 2002 17:01:09 +0100
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DG03407770 for
+    <iiu-admin@iiu.taint.org>; Tue, 13 Aug 2002 17:00:03 +0100
+Date: Tue, 13 Aug 2002 17:00:03 +0100
+Message-Id: <20020813160003.7764.35807.Mailman@dogma.slashnull.org>
+Subject: 3 IIU admin request(s) waiting
+From: iiu-admin@taint.org
+To: iiu-admin@taint.org
+X-Ack: no
+X-Beenthere: iiu@iiu.taint.org
+X-Mailman-Version: 2.0.10
+Precedence: bulk
+Sender: iiu-owner@taint.org
+Errors-To: iiu-owner@taint.org
+X-Beenthere: iiu@iiu.taint.org
+List-Unsubscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=unsubscribe>
+List-Id: Irish Internet Users <iiu.iiu.taint.org>
+List-Post: <mailto:iiu@iiu.taint.org>
+List-Help: <mailto:iiu-request@iiu.taint.org?subject=help>
+List-Subscribe: <http://iiu.taint.org/mailman/listinfo/iiu>,
+    <mailto:iiu-request@iiu.taint.org?subject=subscribe>
+List-Archive: <http://iiu.taint.org/pipermail/iiu/>
+
+The IIU@iiu.taint.org mailing list has 3 request(s) waiting for your
+consideration at:
+
+	http://iiu.taint.org/mailman/admindb/iiu
+	
+Please attend to this at your earliest convenience.  This notice of
+pending requests, if any, will be sent out daily.
+
+
+Pending posts:
+     From: emailharvest@email.com on Wed Jul 31 17:08:17 2002
+    Cause: Post by non-member to a members-only list
+
+     From: abcqojps9@usa.net on Sat Aug  3 21:29:41 2002
+    Cause: Post by non-member to a members-only list
+
+     From: zigzags@oceanfree.net on Fri Aug  9 16:09:55 2002
+    Cause: Post by non-member to a members-only list
+
+

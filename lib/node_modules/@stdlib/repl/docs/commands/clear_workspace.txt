@@ -1,0 +1,45 @@
+
+clearWorkspace( [name, ][options] )
+    Deletes user-defined variables in a specified workspace.
+
+    Parameters
+    ----------
+    name: string (optional)
+        Workspace name. Default: the current workspace.
+
+    options: Object (optional)
+    	Options.
+
+    options.include: RegExp|ArrayLikeObject (optional)
+    	Variable name inclusion filter.
+
+    options.exclude: RegExp|ArrayLikeObject (optional)
+    	Variable name exclusion filter.
+
+    Examples
+    --------
+    // Create a new workspace:
+    > workspace( 'foobar' );
+    > var x = 3.14;
+
+    // Switch to another workspace:
+    > workspace( 'barfoo' );
+    > typeof x
+
+    // List the variables in the previous workspace:
+    > varsWorkspace( 'foobar' )
+
+    // Delete the variables in the previous workspace:
+    > clearWorkspace( 'foobar' );
+    > varsWorkspace( 'foobar' )
+
+    // Navigate to the previous workspace:
+    > workspace( 'foobar' );
+
+    // Confirm that the variables were deleted:
+    > x
+
+    See Also
+    --------
+    assignin, clearVars, loadWorkspace, vars, varsWorkspaces, workspaces
+

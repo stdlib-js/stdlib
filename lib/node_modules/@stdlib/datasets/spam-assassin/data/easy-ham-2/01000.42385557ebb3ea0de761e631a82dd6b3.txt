@@ -1,0 +1,73 @@
+From fork-admin@xent.com  Mon Aug 12 11:09:53 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BCD4244108
+	for <jm@localhost>; Mon, 12 Aug 2002 05:57:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:57:02 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7BAVlb30446 for <jm@jmason.org>;
+    Sun, 11 Aug 2002 11:31:47 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 94EC929415D; Sun, 11 Aug 2002 03:28:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id D7CD0294159 for
+    <fork@xent.com>; Sun, 11 Aug 2002 03:27:25 -0700 (PDT)
+Received: (qmail 22327 invoked by uid 508); 11 Aug 2002 10:28:24 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (62.155.144.56) by
+    venus.phpwebhosting.com with SMTP; 11 Aug 2002 10:28:24 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g7BAS2U26714; Sun, 11 Aug 2002 12:28:06
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Gary Lawrence Murphy <garym@canada.com>
+Cc: fork <fork@spamassassin.taint.org>
+Subject: Re: Forged whitelist spam
+In-Reply-To: <m2r8h6qumb.fsf@maya.dyndns.org>
+Message-Id: <Pine.LNX.4.33.0208111214300.3981-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 11 Aug 2002 12:28:02 +0200 (CEST)
+
+On 10 Aug 2002, Gary Lawrence Murphy wrote:
+
+> My uneducated guess is that all they need to jump expensive whitelist
+> walls would be buckshot a spam-laden Klez with a 5-million-addresses
+> mailer; if it finds just one vulnerable host on an Exchange server,
+> through hopping addressbooks across a few degrees of freedom, a world
+> of whitelists are instantly breechable.
+
+You seem to be saying that whitelists are useless, because there are worms
+which can compromise your system, read your address book/whitelist, and
+sent themselves on, compromising a nonnegligible fraction of systems as
+they go along. 
+
+While mailing lists can be spam/worm amplifiers, I don't think this is
+true for individual users even today. Moreover, worms which use email as
+vector exist *only* because a single vendor ships mailers with broken
+default settings, and insists to make documents executables. This makes
+for very bad press, and eventually that vendor is going to wise up, and 
+stop shipping as many broken wares (or people will switch to more secure 
+alternatives, whatever comes first).
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

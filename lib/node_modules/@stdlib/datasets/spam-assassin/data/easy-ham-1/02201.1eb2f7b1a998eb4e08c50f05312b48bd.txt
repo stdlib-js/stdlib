@@ -1,0 +1,32 @@
+From rssfeeds@jmason.org  Thu Oct  3 12:24:10 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id AAC2316F20
+	for <jm@localhost>; Thu,  3 Oct 2002 12:23:19 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 03 Oct 2002 12:23:19 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9381uK20003 for
+    <jm@jmason.org>; Thu, 3 Oct 2002 09:01:56 +0100
+Message-Id: <200210030801.g9381uK20003@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: gamasutra <rssfeeds@spamassassin.taint.org>
+Subject: Shader Integration: Merging Shading Technologies on the Nintendo
+    Gamecube
+Date: Thu, 03 Oct 2002 08:01:56 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.newsisfree.com/click/-4,8494551,159/
+Date: 2002-10-03T05:50:07+01:00
+
+Rendering polygons is not as easy as it used to be, the reason being the vast 
+amount of different rendering techniques, methods and algorithms available. Not 
+only is choosing the right ones a problem, even worse, all that are selected 
+need to work together. There are some algorithms which simply do not work 
+together, and in that case, only one may be used whilt the other one needs to 
+be replaced witha more compatible method. This feature explores how Factor 5 
+approached the problem when developing Rogue Leader for Gamecube.
+
+

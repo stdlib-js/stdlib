@@ -1,0 +1,76 @@
+From ilug-admin@linux.ie  Thu Aug 22 16:27:21 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7A28A43F99
+	for <zzzz@localhost>; Thu, 22 Aug 2002 11:27:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 16:27:21 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MFQmZ12280 for
+    <zzzz-ilug@spamassassin.taint.org>; Thu, 22 Aug 2002 16:26:48 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA07188; Thu, 22 Aug 2002 16:25:32 +0100
+Received: from moe.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA07145 for <ilug@linux.ie>; Thu,
+    22 Aug 2002 16:25:24 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [193.120.171.3] claimed to
+    be moe.jinny.ie
+Received: from jlooney.jinny.ie (unknown [193.120.171.2]) by moe.jinny.ie
+    (Postfix) with ESMTP id 938BD7FC46; Thu, 22 Aug 2002 16:25:23 +0100 (IST)
+Received: by jlooney.jinny.ie (Postfix, from userid 500) id 4F57189D;
+    Thu, 22 Aug 2002 16:25:45 +0100 (IST)
+Date: Thu, 22 Aug 2002 16:25:45 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: linux-raid@vger.kernel.org
+Cc: ilug@linux.ie
+Message-Id: <20020822152545.GJ3670@jinny.ie>
+Reply-To: valen@tuatha.org
+Mail-Followup-To: linux-raid@vger.kernel.org, ilug@linux.ie
+References: <200208172056.g7HKuHm05754@raq.iceblink.org>
+    <1029624922.14769.119.camel@atherton> <20020819140815.GY26818@jinny.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020819140815.GY26818@jinny.ie>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Subject: [ILUG] Re: Problems with RAID1 on cobalt raq3
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Mon, Aug 19, 2002 at 03:08:16PM +0100, John P. Looney mentioned:
+>  This is likely because to get it to boot, like the cobalt, I'm actually
+> passing root=/dev/hda5 to the kernel, not /dev/md0. 
+
+ Just to solve this...the reason I was booting the box with
+root=/dev/hda5, not /dev/md0 was because /dev/md0 wasn't booting - it
+would barf with 'can't find init'.
+
+ It turns out that this is because I was populating md0 with tar. Which
+seems to have 'issues' with crosslinked files - for instance, it was
+trying to make a hard link of glibc.so to hda - and failing. It was only
+as I did it again with a friend present, that he spotted the errors, and
+queried them. We noticed that the hard linked files just didn't exist on
+the new rootfs.
+
+ When we duplicated the filesystems with dump instead of tar, it worked
+fine, I was able to tell lilo to use root=/dev/md0 and everything worked.
+
+ Woohoo.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

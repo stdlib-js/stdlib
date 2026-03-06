@@ -1,0 +1,32 @@
+
+{{alias}}( val )
+    Creates a function which always returns the same value.
+
+    Notes:
+
+    - When provided an object reference, the returned `function` always returns
+      the same reference.
+
+    Parameters
+    ----------
+    val: any
+        Value to always return.
+
+    Returns
+    -------
+    out: Function
+        Constant function.
+
+    Examples
+    --------
+    > var fcn = {{alias}}( 3.14 );
+    > var v = fcn()
+    3.14
+    > v = fcn()
+    3.14
+    > v = fcn()
+    3.14
+
+    See Also
+    --------
+

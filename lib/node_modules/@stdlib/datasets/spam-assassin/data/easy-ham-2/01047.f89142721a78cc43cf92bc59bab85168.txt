@@ -1,0 +1,106 @@
+From fork-admin@xent.com  Mon Aug 19 11:03:44 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DDBE8441A4
+	for <jm@localhost>; Mon, 19 Aug 2002 05:55:02 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:55:02 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7H5vE620593 for <jm@jmason.org>;
+    Sat, 17 Aug 2002 06:57:14 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 913D429409A; Fri, 16 Aug 2002 22:55:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id F23D2294098 for <fork@xent.com>;
+    Fri, 16 Aug 2002 22:54:40 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-034.ptrb.interhop.net
+    [165.154.190.98]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g7H5UHn24292 for <fork@xent.com>; Sat, 17 Aug 2002 01:30:17 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 69E031C336;
+    Sat, 17 Aug 2002 01:51:25 -0400 (EDT)
+To: fork@spamassassin.taint.org
+Subject: Re: Re[2]: Al'Qaeda's fantasy ideology:  Policy Review no. 114
+References: <58113821767.20020816230818@magnesium.net>
+    <m21y8ydr6q.fsf@maya.dyndns.org>
+    <32120604960.20020817010121@magnesium.net>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2ofc2c9sy.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 17 Aug 2002 01:51:25 -0400
+
+>>>>> "b" == bitbitch  <bitbitch@magnesium.net> writes:
+
+    b> .. I wouldn't necessary say hate lit.
+
+Hate-lit rests on a premise that "them" are fundamentally different
+critters from "us" and thus, by being "them-like" they, as a
+classification, "bring it on themselves" for us to "correct" them by
+any means gruesome we might choose, after all, it's not /us/ pulling
+the trigger, it's "them", right?  I've heard Bush say this (verbatim)
+more than once, and with a straight face.
+
+Call it gay-bashing or whatever, it's convenient tunnel-vision and
+lies to justify violence against a creature genetically, morally and
+intellectually indistinguishable from your sister.  Go ahead, peel the
+skin off a random daughter of each of them and lay them side by side
+on the pavement, and you tell me which one was racially guilty, which
+one carried the "infection" the "plague" (note, not the "antigen" or
+the "hormone", which have similar metaphoric effects to philosophy,
+but they chose the fear-charged words)
+
+"Make no mistake about it" it oozes rhetorical vehicles to obfuscate
+it's lack of bits paragraph after paragraph in pushing an agenda to
+/excuse/ "our" violence and suspension of human rights to 'clense'
+ourselves of "them", the 'non-human' (or lesser-human) objects of its
+hate.
+
+What else shall we call it?  Just anti-liberal?  
+
+Better question: What if, as in physics, the laws of human behaviour
+are the same everywhere in the Universe?  What if Al Queda is in fact
+more like our mafia or biker gangs or school board trustees? 
+
+What if they operate by the same neural-annealing Maxima-Minima
+gratification mechanisms as you or I and every other creature on this
+planet?  
+
+What if, instead of magically and uniquely alien, they are, just like
+our own captains and leaders, really only in it for the money, for
+trade rights-of-way and for power over minions who will foolishly make
+it all happen, minions whom they can once again dup with /virtually/
+/identical/ rhetoric ... except we call theirs "fundamentalist islam",
+and they call ours "imperialist satanism"?
+
+When both sides can call the other "evil" to the cheers of their local
+public and media, you can bet something's rotten in the state of Denmark.
+
+I guess that's why I live in the woods.  Bears and racoons I
+understand, but I really just don't 'get' people.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+ Business Advantage through Community Software : http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+

@@ -1,0 +1,85 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:53:51 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 818F9441EB
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:25 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g74Hx9v03954 for
+    <jm-ilug@jmason.org>; Sun, 4 Aug 2002 18:59:09 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA31096; Sun, 4 Aug 2002 18:56:25 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail04.svc.cra.dublin.eircom.net
+    (mail04.svc.cra.dublin.eircom.net [159.134.118.20]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id SAA31063 for <ilug@linux.ie>; Sun,
+    4 Aug 2002 18:56:20 +0100
+From: cout@eircom.net
+Message-Id: <200208041756.SAA31063@lugh.tuatha.org>
+Received: (qmail 78155 messnum 1117230 invoked from
+    network[159.134.237.75/jimbo.eircom.net]); 4 Aug 2002 17:55:49 -0000
+Received: from jimbo.eircom.net (HELO webmail.eircom.net) (159.134.237.75)
+    by mail04.svc.cra.dublin.eircom.net (qp 78155) with SMTP; 4 Aug 2002
+    17:55:49 -0000
+To: ilug@linux.ie
+Subject: Re: [ILUG] 3c509 & 2.4.19 problems
+Date: Sun, 4 Aug 2002 18:55:49 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 8bit
+X-Originating-Ip: 213.190.156.48
+X-Mailer: Eircom Net CRC Webmail (http://www.eircom.net/)
+Organization: Eircom Net (http://www.eircom.net/)
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+You need to run the dos setup program for the 3c509 and turn off plug 'n' play in the card's firmware I think you will find.
+
+Bod
+
+> 
+> Hi folks,
+> 
+> I decided to upgrade the kernel on a machine at home from 2.2.18pre21 to the latest from kernel.org which is 2.4.19.
+> 
+> However I have encountered one problem, my network card now dosent work, well kind of dosent work...
+> 
+> Instead of one eth0 on IRQ 10 I now get:
+> Aug  4 11:31:51 mira kernel: eth0: 3c5x9 at 0x220, 10baseT port, address  00 10 5a 3e 0e 48, IRQ 5.
+> Aug  4 11:31:51 mira kernel: 3c509.c:1.18 12Mar2001 becker@scyld.com
+> Aug  4 11:31:51 mira kernel: http://www.scyld.com/network/3c509.html
+> Aug  4 11:31:51 mira kernel: eth1: 3c5x9 at 0x300, 10baseT port, address  00 10 5a be 0e 48, IRQ 10.
+> Aug  4 11:31:51 mira kernel: 3c509.c:1.18 12Mar2001 becker@scyld.com
+> Aug  4 11:31:51 mira kernel: http://www.scyld.com/network/3c509.html
+> 
+> This results in the interface(s) coming up but while packets can go out they can not come in.
+> 
+> I've tried not loading the 3c509 mdule on bootup and then `modload 3c509 IRQ=10` bit it still gets loaded as above, on IRQ 5 and 10. On 2.2 it loads to IRQ 10.
+> 
+> Anyone got any suggestions on what to do here? Its a debian 3.0 distro. This works fine when booted to 2.2 so the hardware/BIOS etc seem ok, so it seems to be 2.4 spacific. Have I missed some kernel setting?
+> 
+> Cheers,
+> ~Al
+> 
+> -- 
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+> List maintainer: listmaster@linux.ie
+> 
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

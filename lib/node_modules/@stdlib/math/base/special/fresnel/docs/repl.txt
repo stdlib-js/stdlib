@@ -1,0 +1,61 @@
+
+{{alias}}( x )
+    Computes the Fresnel integrals S(x) and C(x).
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: Array<number>
+        S(x) and C(x).
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    [ ~0.0, ~0.0 ]
+    > y = {{alias}}( 1.0 )
+    [ ~0.438, ~0.780 ]
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pinf}} )
+    [ ~0.5, ~0.5 ]
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/ninf}} )
+    [ ~-0.5, ~-0.5 ]
+    > y = {{alias}}( NaN )
+    [ NaN, NaN ]
+
+
+{{alias}}.assign( x, out, stride, offset )
+    Computes the Fresnel integrals S(x) and C(x) and assigns results to a
+    provided output array.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    out: Array<number>
+        Destination array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array<number>
+        S(x) and C(x).
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float64}}( 2 );
+    > var v = {{alias}}.assign( 0.0, out, 1, 0 )
+    <Float64Array>[ ~0.0, ~0.0 ]
+    > var bool = ( v === out )
+    true
+
+    See Also
+    --------

@@ -1,0 +1,90 @@
+From ilug-admin@linux.ie  Tue Jul 30 10:11:31 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 25154440F0
+	for <jm@localhost>; Tue, 30 Jul 2002 05:11:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 10:11:31 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6U98qq16848 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 10:08:52 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA26149; Tue, 30 Jul 2002 10:06:48 +0100
+Received: from mail.tradesignals.com ([217.75.2.27]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA26119 for <ilug@linux.ie>; Tue,
+    30 Jul 2002 10:06:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [217.75.2.27] claimed to
+    be mail.tradesignals.com
+Received: from docaoimh.tradesignals.com (docaoimh.tradesignals.com
+    [192.168.1.26]) by mail.tradesignals.com (8.11.6/8.11.6) with ESMTP id
+    g6U96b104027 for <ilug@linux.ie>; Tue, 30 Jul 2002 10:06:37 +0100
+Received: from localhost (localhost [[UNIX: localhost]]) by
+    docaoimh.tradesignals.com (8.11.6/8.11.6) id g6U96aV00443 for
+    ilug@linux.ie; Tue, 30 Jul 2002 10:06:36 +0100
+Content-Type: text/plain; charset="iso-8859-1"
+From: Donncha O Caoimh <donncha.ocaoimh@tradesignals.com>
+Date: Tue, 30 Jul 2002 10:06:36 +0100
+X-Mailer: KMail [version 1.4]
+To: ilug@linux.ie
+MIME-Version: 1.0
+Message-Id: <200207301006.36137.donncha.ocaoimh@tradesignals.com>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    KAA26119
+Subject: [ILUG] Fwd: Linux Beer Hike
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Ar mhaith le einne anseo caint le TG4 faoin LBW?
+
+Donncha.
+
+
+----------  Forwarded Message  ----------
+
+Subject: Linux Beer Hike
+Date: Tue, 30 Jul 2002 10:00:56 +0100
+From: Diarmaid Mac Mathuna <diarmaid.mac@agtel.ie>
+To: donncha.ocaoimh@tradesignals.com
+
+A Dhonncha, a chara,
+
+Tá mé ag déanamh taighde don clár teilifíse An Tuath Nua (a bhíonn á
+chraoladh ar TG4) faoi láthair, agus chonaic mé go mbedih an Linux Beer
+Hike ar siúl i Doolin i mbliana. Bheadh spéis againn mír a dhéanamh mar
+gheall ar an Hike ar an gclár - an mbeidh tú féin nó aon duine eile le
+Gaeilge ar an Hike go bhfios duit?
+
+Go raibh maith agat as do chabhair,
+
+Slán,
+
+Diarmaid
+
+_________________________
+Diarmaid Mac Mathúna
+
+Agtel
+37-39 Fitzwilliam Square, Dublin 2
+37-39 Plás Mhic Liam, Baile Átha Cliath 2
+
+Phone / Fón: (01) 605 3737 / (086) 880 4187
+Fax / Facs:  (01) 676 6137
+
+e-mail / r-phost: diarmaid.mac@agtel.ie
+web / idirlíon:   www.agtel.ie
+
+-------------------------------------------------------
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

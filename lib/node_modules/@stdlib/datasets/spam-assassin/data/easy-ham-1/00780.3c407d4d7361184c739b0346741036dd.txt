@@ -1,0 +1,176 @@
+From fork-admin@xent.com  Thu Sep 26 11:04:29 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id DB70116F03
+	for <jm@localhost>; Thu, 26 Sep 2002 11:04:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 11:04:27 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8PL1BC13774 for <jm@jmason.org>;
+    Wed, 25 Sep 2002 22:01:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id CD62F2940A5; Wed, 25 Sep 2002 13:57:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from barry.mail.mindspring.net (barry.mail.mindspring.net
+    [207.69.200.25]) by xent.com (Postfix) with ESMTP id 8C11429409A for
+    <fork@xent.com>; Wed, 25 Sep 2002 13:54:33 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    barry.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17uI1g-00011d-00
+    for fork@xent.com; Wed, 25 Sep 2002 15:40:48 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a0ab9b7c13e629a@[66.149.49.6]>
+To: fork@spamassassin.taint.org
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: California needs intelligent energy deregulation
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 25 Sep 2002 15:39:40 -0400
+
+
+--- begin forwarded text
+
+
+Date: Wed, 25 Sep 2002 13:57:15 -0400
+To: Digital Bearer Settlement List <dbs@philodox.com>
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: California needs intelligent energy deregulation
+Sender: <dbs@philodox.com>
+
+http://www.siliconvalley.com/mld/siliconvalley/4144696.htm?template=contentModules/printstory.jsp
+
+Posted on Tue, Sep. 24, 2002
+
+
+Dan Gillmor: State needs intelligent energy deregulation
+
+By Dan Gillmor
+Mercury News Technology Columnist
+
+The facts were trade and government secrets at the time. But the energy
+industry failed the smell test in 2000 and 2001 as it tried to justify
+soaring wholesale electricity and natural-gas prices in California.
+
+Now, as investigators and regulators unravel the reasons for a financial
+and fiscal mess we'll be cleaning up for decades, we're learning what
+everyone suspected. Market games helped engineer the price spikes.
+
+The latest manipulation was highlighted in Monday's finding by a federal
+administrative law judge, who said a dominant natural-gas company squeezed
+supplies in order to squeeze customers. His ruling came a few days after
+California's Public Utilities Commission reported that electricity
+generators mysteriously failed to use available capacity during the crunch,
+also driving up prices.
+
+And don't forget the sleazy games by energy traders who gleefully worked
+the system, in schemes best summed up by an Enron insider's boast in a
+memorandum made public in May, that ``Enron gets paid for moving energy to
+relieve congestion without actually moving any energy or relieving any
+congestion.''
+
+How much of this was illegal, as opposed to simply amoral, remains to be
+seen. Unfortunately, California's response -- confusion, lawsuits and
+policy tweaks -- hasn't been sufficient.
+
+More unfortunately, even if the state suddenly did all the right things --
+including a hard-nosed program designed to free ourselves from the gougers'
+grips -- we would need a willing federal partner. But it's foolish to think
+that the Bush administration would do much to help one of its least
+favorite states, or do anything that conflicts with its love of
+traditional, non-renewable energy sources.
+
+If the lawsuits against various energy companies and traders bear any
+fruit, the best we can expect is to pay off some of the massive debts the
+state amassed to prevent a total collapse in early 2001. That's a
+reasonable approach, but don't expect miracles.
+
+State policies are moving the wrong way on utility regulation, meanwhile.
+Instead of relentlessly pursuing smart deregulation -- still a good idea if
+it gives customers genuine choices -- state laws and regulations ``put the
+utilities back in the business of buying energy for captive customers,''
+notes V. John White, executive director of the Sacramento-based Center for
+Energy Efficiency and Renewable Technologies (www.ceert.org).
+
+It's tempting to call for an outright state takeover of the utilities --
+tempting but a bad idea. When there's genuine competition, as we could
+achieve in electricity generation, the private sector tends to do a better
+job. Instead of abandoning deregulation, California should find a way to
+inject real competition into the market.
+
+We do need to recognize that the current system of delivering electricity
+defies privatization, at least under current conditions. Smart regulation
+is essential.
+
+But the best response to gouging is to use less of what the gougers
+control. There are two ways: conservation and replacement. We need more of
+both.
+
+The best recent step is a new state law that slowly but surely ratchets up
+the use of electricity from renewables. By 2017, California's utilities
+will have to get 20 percent of their power from solar and other renewable
+sources. Several power companies are expected to do this even sooner.
+
+But this law has an element of old-line thinking, the captive-customer
+model we need to be getting away from, not sustaining. Lip service to newer
+ideas isn't enough.
+
+The state should be removing barriers to micro-generation systems, small
+generators that can run on a variety of fuels and provide decentralized,
+harder-to-disrupt electricity to homes and businesses. This technology is
+coming along fast. State policies are not keeping pace.
+
+Investing to save energy is increasingly the smartest move of all.
+California should be doing more to encourage this, whether through tax
+incentives or outright grants in low-income households. California hasn't
+done badly on conservation in a general sense, and energy customers did
+react to last year's soaring rates and blackouts by cutting back, but it's
+lunacy to wait for the next crisis when we can do something to avoid it
+altogether.
+
+Maybe this is all pointless. The Bush administration's energy policies, so
+grossly tilted toward the unholy trinity of oil, coal and nuclear, are
+making us all more vulnerable. Never mind what might happen if the coming
+war in Iraq goes badly.
+
+It's pointless to hope for a sane federal policy -- a crash program to
+drastically speed the inevitable transition to a hydrogen-based energy
+system. But the largest state, one of the world's major economies in its
+own right, does have some clout. We can hit the rip-off artists where it
+hurts, and protect ourselves from even more serious disruptions. Maybe next
+year.
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+--- end forwarded text
+
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

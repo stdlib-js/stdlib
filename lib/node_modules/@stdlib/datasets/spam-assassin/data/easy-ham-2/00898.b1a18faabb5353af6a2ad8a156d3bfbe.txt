@@ -1,0 +1,158 @@
+From fork-admin@xent.com  Fri Jul 26 04:14:06 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F1018440E7
+	for <jm@localhost>; Thu, 25 Jul 2002 23:14:04 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 26 Jul 2002 04:14:05 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6Q3EH420499 for <jm@jmason.org>;
+    Fri, 26 Jul 2002 04:14:18 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E3761294107; Thu, 25 Jul 2002 20:09:11 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id 7DEAF2940E2 for <fork@xent.com>;
+    Thu, 25 Jul 2002 20:08:24 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-013.ptrb.interhop.net
+    [165.154.190.77]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g6Q2hSE04548 for <fork@xent.com>; Thu, 25 Jul 2002 22:43:28 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id EDD261C39A;
+    Thu, 25 Jul 2002 22:51:21 -0400 (EDT)
+To: fork@spamassassin.taint.org
+Subject: Re: Asteroids anyone ?
+References: <001301c23359$d8208130$0100a8c0@PETER>
+    <m2n0sgojke.fsf@maya.dyndns.org>
+    <2784.192.216.194.113.1027554358.squirrel@webmail.magnesium.net>
+    <20020725154846.M85654@networkcommand.com>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2ofcvkxqu.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 25 Jul 2002 22:51:21 -0400
+
+>>>>> "J" == Jon O <jono@networkcommand.com> writes:
+
+    J> Has anyone considered the fact that these occurrances appear to
+    J> be increasing. I'm aware that maybe more publicity surrounding
+    J> some and certain agencies have been granted more funding, but
+    J> I'd like to see some data which shows if these are increasing
+    J> or not.
+
+I've seen data that shows 1200 rocks (TV-set sized and smaller)
+crashing into the Ottawa skies /every/ /single/ /night/, and that's
+just the background noise.  Plots of that data show us passing through
+hundreds of 'tubes' of debris, each indicative of some other larger
+something out there, only a small handful of which have been
+discovered.  This is without even considering the one's headed this
+way out of the Oort for their First Big Trip.
+
+One thing you will just have to get used to is hearing news of a
+possible collision; we have only started funding the projects to look
+for these things since Hollywood took an interest with Armageddon, and
+we have only just recently turned on a bunch of new toys to do
+automated sky surveys.  There are also some new (and very clever)
+amateur projects co-ordinating multiple telescopes to detect these
+criters, one of which plans to network dozens of ground based machines
+around the world.  You may remember a few years back the 2028 doomsday
+story -- consider them good ghost stories, then go back to work.
+
+20,000 years ago, one of them the size of Mt Everest just ever so
+slightly grazed us and left a scar 400km long in the side of South
+America before it scooted out into space.  First nations people would
+have been there then, and it would have seriously ruined their day.
+Orbital elements tell us that our modern technology would have perhaps
+given us 90-min advance warning.   
+
+The near-miss earlier this month wasn't seen until it was already past
+us; we can't detect rocks on their trip behind the Sun, and when they
+come out slingshot to relativistic speeds, well, it's just too darn
+late to do much of anything about it.  On the inbound trip, even at
+their max full-moon angle, these things are most often magnitude 16 or
+way worse, which is many magnitudes fainter than what you see in the
+deepest dark-skies; no one thought to paint them shiny and white.
+They day before it "hits" my software says NT7 will be magnitude 14 --
+it's easier to see the space station.
+
+What's worse, the Sun is not a smooth hard spheric marble, it's a
+twisted gelatinous hunk o' hunk o' burnin' love, so the precise warp
+curve of space right near it's backside is (ahem) somewhat problematic
+to compute precisely.  It's also spewing considerable plasma flux in
+all directions, and then there's all these other big gelatinous roaming
+globs (Saturn, Jupiter, Uranus, Neptune) and some significant roaming
+rubble (us), and damn it, they are all spinning too, and most of them
+have a magnetosphere!
+
+Shit. Forget it.
+
+Learn to play the banjo. Take peppermint Rye-Kee Shee-At-Zoo relaxation
+therapy and oodles of Ag-nasial I&I-drop suppliments, eat no kind of
+frozen portion, and floss.  Good planets are real hard to find, so
+enjoy the one you got while it's here.  Call your ma. Do an anonymous
+kindness for your better half, another for a total stranger. Having
+all the best toys is useless when they all spontaneously combust from
+a global Wormwood shockwave. You should be diggin' it while it's
+happenin'
+
+Like, just live your life like there's no tomorrow, ok?  Don't bank on
+being able to redeem yourself later. Yeah, sure, Osama could whack you
+with some nail-coated fuel-air bombs, heck a mis-informed TopGun could
+do it too, but the Good Lord could do it too, with pure, clean and
+galactically EnviroFriendly kinetic energy, and He don't stand in line
+for no Airport Security Check. Hell, fire and brimstone are
+classically given in the reverse order; best to be on the impact side
+of the planet.
+
+Learn to stop worrying and love the Rock.  Besides, the rats and
+cockroaches will survive, and they already know how to kickstart
+evolution right back into Enrons, WorldComs and Calcuttas.  They even
+have all our wiring and plumbing diagrams and half of our socks.
+
+Are we going to get hit?  Yup.  
+
+When?  Every 65 million years and, oh my lord, will you /look/ at the time!
+
+Where/what/when? Space is pretty big.  Take the largest thing you can
+imagine, double it, and add 10%: That is just the local pancake region
+between us and the Sun. There's the whole rest of the disk of the
+ecliptic and, which is where the NT7 observation came from, it has
+only recently occurred to the meteor hunters to "look up" (or down);
+almost the first shot looking /out/ of the ecliptic disk, and hoo-whee
+there's this big sucker on an "11 tries for a dollar" close encounter
+of the smack-em-good kind.
+
+This is what I love about astrophysics: we have theories as good as
+anyone else (way better than psychology), and we debate and argue and
+expound and conference and bellow and blurt about them, but every time
+we turn on some new kind of robot sensor device to actually /look/ at
+Reality, well she slaps us right in the face and says in her best Mae
+West "Guess again, boys" -- no other science gets that chance (ok,
+maybe some do) and there is nothing, _nothing_ more worthless than last
+semester's astronomy text.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+
+

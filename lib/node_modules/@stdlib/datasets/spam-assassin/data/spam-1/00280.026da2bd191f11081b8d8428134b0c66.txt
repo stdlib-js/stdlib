@@ -1,0 +1,95 @@
+From ilug-admin@linux.ie  Wed Sep 11 13:57:53 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id 47C2B16F03
+	for <zzzz@localhost>; Wed, 11 Sep 2002 13:57:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 11 Sep 2002 13:57:52 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8BB65C12091 for
+    <zzzz-ilug@jmason.org>; Wed, 11 Sep 2002 12:06:05 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA02228; Wed, 11 Sep 2002 12:05:15 +0100
+Received: from lycos.com (host90-107.pool10716.interbusiness.it
+    [80.16.107.90] (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP
+    id MAA02193 for <ilug@linux.ie>; Wed, 11 Sep 2002 12:05:03 +0100
+From: susan_kamachi@lycos.com
+X-Authentication-Warning: lugh.tuatha.org: Host host90-107.pool10716.interbusiness.it
+    [80.16.107.90] (may be forged) claimed to be lycos.com
+Received: from unknown (HELO mx.rootsystems.net) (161.139.194.114) by
+    mta6.snfc21.pbi.net with smtp; 11 Sep 2002 20:04:55 -0900
+Reply-To: <susan_kamachi@lycos.com>
+Message-Id: <001a66d63c1d$6633b3d4$8da33da6@dqxlfe>
+To: <ilug@linux.ie>
+Date: Wed, 11 Sep 2002 05:41:45 +0500
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2462.0000
+Importance: Normal
+Subject: [ILUG] Want to play poker with other people online.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+Content-Transfer-Encoding: 8bit
+
+Get your favorite Poker action at http://www.multiplayerpoker.net
+
+Play against real people from around the world for real money or just
+for fun.  Access one of the busiest poker rooms online.  We've dealt
+over 8 million hands!  Experience the best poker software available
+today featuring world class graphics, true random shuffling algorithms,
+and 24x7 customer service.  We've got a great selection of poker games
+for you to play such as:
+
+Hold'em, Omaha
+Omaha Hi/Lo
+7 Card Stud
+7 Card Stud Hi/Lo
+5 Card Stud
+Poker tournaments
+
+Sign up today and start playing with new & old friends...download our free
+software now at http://www.MultiPlayerPoker.net
+
+Current Promotion:
+  · $50 Deposit Bonus! - 100% bonus!
+  · Daily High Hand - $250 Daily.
+  · Progressive Bad Beat Jackpot - $2,000.00 minimum with $100.00 added
+daily.
+  · Tournaments - Multiplayer shootouts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wish not to received any further e-mail from us please click
+http://www.centralremovalservice.com/cgi-bin/poker-remove.cgi
+(C2-ss2)8654wjxY6-658XcLk9936BmrC8-408IWAe1238EocG7-405CvgV8282pIEa7-369wxhf6085uYwv5-l73
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

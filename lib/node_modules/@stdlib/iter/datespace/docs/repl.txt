@@ -1,0 +1,53 @@
+
+{{alias}}( start, stop[, N][, options] )
+    Returns an iterator which returns evenly spaced dates over a specified
+    interval.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    Parameters
+    ----------
+    start: integer|string|Date
+        Starting date either as a `Date` object, JavaScript timestamp, or a date
+        string (inclusive).
+
+    stop: integer|string|Date
+        Stopping value either as a `Date` object, JavaScript timestamp, or a
+        date string (inclusive).
+
+    N: integer (optional)
+        Number of values. Default: 100.
+
+    options: Object (optional)
+        Function options.
+
+    options.round: string (optional)
+        Specifies how sub-millisecond times should be rounded. Must be one of
+        the following: 'floor', 'ceil', or 'round'. Default: 'floor'.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var t1 = new Date();
+    > var it = {{alias}}( t1, new Date( t1.getTime()+86400000 ) );
+    > var v = it.next().value
+    <Date>
+    > v = it.next().value
+    <Date>
+
+    See Also
+    --------
+

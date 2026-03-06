@@ -1,0 +1,28 @@
+
+{{alias}}( σ )
+    Returns the excess kurtosis of a Rayleigh distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `σ < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Excess kurtosis.
+
+    Examples
+    --------
+    > var v = {{alias}}( 11.0 )
+    ~0.245
+    > v = {{alias}}( 4.5 )
+    ~0.245
+
+    See Also
+    --------
+

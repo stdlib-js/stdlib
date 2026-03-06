@@ -1,0 +1,27 @@
+From rssfeeds@jmason.org  Tue Oct  1 10:37:16 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 904AC16F03
+	for <jm@localhost>; Tue,  1 Oct 2002 10:37:15 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 01 Oct 2002 10:37:15 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9181uK15731 for
+    <jm@jmason.org>; Tue, 1 Oct 2002 09:01:56 +0100
+Message-Id: <200210010801.g9181uK15731@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: zawodny <rssfeeds@spamassassin.taint.org>
+Subject: FreeBSD or Linux for your MySQL Server?
+Date: Tue, 01 Oct 2002 08:01:56 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://jeremy.zawodny.com/blog/archives/000203.html
+Date: 2002-09-30T17:22:34-08:00
+
+This is an issue that comes up all the time at work. It is an issue for roughly 
+four reasons: Yahoo is a FreeBSD shop Someone has heard that MySQL runs better 
+on Linux Someone knows that we run some...
+
+

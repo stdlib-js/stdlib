@@ -1,0 +1,26 @@
+
+{{alias}}( x )
+    Tests if a 32-bit integer is even.
+
+    Parameters
+    ----------
+    x: integer
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the value is an even number.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 5 )
+    false
+    > bool = {{alias}}( -2 )
+    true
+    > bool = {{alias}}( 0 )
+    true
+
+    See Also
+    --------
+

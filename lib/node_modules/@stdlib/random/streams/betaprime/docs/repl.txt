@@ -1,0 +1,262 @@
+
+{{alias}}( α, β[, options] )
+    Returns a readable stream for generating pseudorandom numbers drawn from a
+    beta prime distribution.
+
+    In addition to standard readable stream events, the returned stream emits a
+    'state' event after internally generating `siter` pseudorandom numbers,
+    which is useful when wanting to deterministically capture a stream's
+    underlying PRNG state.
+
+    Parameters
+    ----------
+    α: number
+        First shape parameter.
+
+    β: number
+        Second shape parameter.
+
+    options: Object (optional)
+        Options.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before ceasing to generate additional pseudorandom numbers.
+
+    options.sep: string (optional)
+        Separator used to join streamed data. This option is only applicable
+        when a stream is not in "objectMode". Default: '\n'.
+
+    options.iter: integer (optional)
+        Number of iterations.
+
+    options.prng: Function (optional)
+        Pseudorandom number generator (PRNG) for generating uniformly
+        distributed pseudorandom numbers on the interval `[0,1)`. If provided,
+        the `state` and `seed` options are ignored. In order to seed the
+        returned iterator, one must seed the provided `prng` (assuming the
+        provided `prng` is seedable).
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        unsigned 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing unsigned 32-bit integers.
+
+    options.state: Uint32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned iterator has exclusive control over
+        its internal state. Default: true.
+
+    options.siter: integer (optional)
+        Number of iterations after which to emit the PRNG state. Default: 1e308.
+
+    Returns
+    -------
+    stream: ReadableStream
+        Readable stream.
+
+    stream.PRNG: Function
+        Underlying pseudorandom number generator.
+
+    stream.seed: Uint32Array|null
+        Pseudorandom number generator seed.
+
+    stream.seedLength: integer|null
+        Length of generator seed.
+
+    stream.state: Uint32Array|null
+        Generator state.
+
+    stream.stateLength: integer|null
+        Length of generator state.
+
+    stream.byteLength: integer|null
+        Size (in bytes) of generator state.
+
+    Examples
+    --------
+    > function fcn( chunk ) { console.log( chunk.toString() ); };
+    > var opts = { 'iter': 10 };
+    > var s = {{alias}}( 2.0, 5.0, opts );
+    > var o = {{alias:@stdlib/streams/node/inspect-sink}}( fcn );
+    > s.pipe( o );
+
+
+{{alias}}.factory( [α, β, ][options] )
+    Returns a function for creating readable streams which generate pseudorandom
+    numbers drawn from a beta prime distribution.
+
+    If provided distribution parameters, the returned function returns readable
+    streams which generate pseudorandom numbers drawn from the specified
+    distribution.
+
+    If not provided distribution parameters, the returned function requires that
+    distribution parameters be provided at each invocation.
+
+    Parameters
+    ----------
+    α: number (optional)
+        First shape parameter.
+
+    β: number (optional)
+        Second shape parameter.
+
+    options: Object (optional)
+        Options.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of bytes to store in an internal buffer
+        before ceasing to generate additional pseudorandom numbers.
+
+    options.sep: string (optional)
+        Separator used to join streamed data. This option is only applicable
+        when a stream is not in "objectMode". Default: '\n'.
+
+    options.iter: integer (optional)
+        Number of iterations.
+
+    options.prng: Function (optional)
+        Pseudorandom number generator (PRNG) for generating uniformly
+        distributed pseudorandom numbers on the interval `[0,1)`. If provided,
+        the `state` and `seed` options are ignored. In order to seed the
+        returned iterator, one must seed the provided `prng` (assuming the
+        provided `prng` is seedable).
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        unsigned 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing unsigned 32-bit integers.
+
+    options.state: Uint32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned iterator has exclusive control over
+        its internal state. Default: true.
+
+    options.siter: integer (optional)
+        Number of iterations after which to emit the PRNG state. Default: 1e308.
+
+    Returns
+    -------
+    fcn: Function
+        Function for creating readable streams.
+
+    Examples
+    --------
+    > var opts = { 'objectMode': true, 'highWaterMark': 64 };
+    > var createStream = {{alias}}.factory( opts );
+
+
+{{alias}}.objectMode( α, β[, options] )
+    Returns an "objectMode" readable stream for generating pseudorandom numbers
+    drawn from a beta prime distribution.
+
+    Parameters
+    ----------
+    α: number
+        First shape parameter.
+
+    β: number
+        Second shape parameter.
+
+    options: Object (optional)
+        Options.
+
+    options.encoding: string|null (optional)
+        Specifies how Buffer objects should be decoded to strings. Default:
+        null.
+
+    options.highWaterMark: integer (optional)
+        Specifies the maximum number of objects to store in an internal buffer
+        before ceasing to generate additional pseudorandom numbers.
+
+    options.iter: integer (optional)
+        Number of iterations.
+
+    options.prng: Function (optional)
+        Pseudorandom number generator (PRNG) for generating uniformly
+        distributed pseudorandom numbers on the interval `[0,1)`. If provided,
+        the `state` and `seed` options are ignored. In order to seed the
+        returned iterator, one must seed the provided `prng` (assuming the
+        provided `prng` is seedable).
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        unsigned 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing unsigned 32-bit integers.
+
+    options.state: Uint32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned iterator has exclusive control over
+        its internal state. Default: true.
+
+    options.siter: integer (optional)
+        Number of iterations after which to emit the PRNG state. Default: 1e308.
+
+    Returns
+    -------
+    stream: ReadableStream
+        Readable stream operating in "objectMode".
+
+    stream.PRNG: Function
+        Underlying pseudorandom number generator.
+
+    stream.seed: Uint32Array|null
+        Pseudorandom number generator seed.
+
+    stream.seedLength: integer|null
+        Length of generator seed.
+
+    stream.state: Uint32Array|null
+        Generator state.
+
+    stream.stateLength: integer|null
+        Length of generator state.
+
+    stream.byteLength: integer|null
+        Size (in bytes) of generator state.
+
+    Examples
+    --------
+    > function fcn( v ) { console.log( v ); };
+    > var opts = { 'iter': 10 };
+    > var s = {{alias}}.objectMode( 2.0, 5.0, opts );
+    > var o = {{alias:@stdlib/streams/node/inspect-sink}}.objectMode( fcn );
+    > s.pipe( o );
+
+    See Also
+    --------
+

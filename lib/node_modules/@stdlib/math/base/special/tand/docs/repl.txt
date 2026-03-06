@@ -1,0 +1,28 @@
+
+{{alias}}( x )
+    Computes the tangent of an angle measured in degrees.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in degrees).
+
+    Returns
+    -------
+    y: number
+        Tangent.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    0.0
+    > y = {{alias}}( 90.0 )
+    Infinity
+    > y = {{alias}}( 60.0 )
+    ~1.73
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

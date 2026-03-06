@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Fri Oct  4 11:03:56 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A06BE16F1E
+	for <jm@localhost>; Fri,  4 Oct 2002 11:02:33 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:02:33 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g941xIK30251 for <jm@jmason.org>;
+    Fri, 4 Oct 2002 02:59:18 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id AB1352940C9; Thu,  3 Oct 2002 18:59:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.superb.net (smtp1.superb.net [207.228.225.14]) by
+    xent.com (Postfix) with SMTP id 24D1A29409C for <fork@xent.com>;
+    Thu,  3 Oct 2002 18:58:44 -0700 (PDT)
+Received: (qmail 31048 invoked from network); 4 Oct 2002 01:58:59 -0000
+Received: from unknown (HELO maya.dyndns.org) (207.61.5.143) by
+    smtp1.superb.net with SMTP; 4 Oct 2002 01:58:59 -0000
+Received: by maya.dyndns.org (Postfix, from userid 501) id DD64C1B62C;
+    Thu,  3 Oct 2002 21:58:55 -0400 (EDT)
+To: "Stephen D. Williams" <sdw@lig.net>
+Cc: fork@spamassassin.taint.org
+Subject: Re: Living Love - Another legacy of the 60's
+References: <3D9CB788.6050602@lig.net>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2vg4jge1s.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 03 Oct 2002 21:58:55 -0400
+
+>>>>> "S" == Stephen D Williams <sdw@lig.net> writes:
+
+    S> The purpose of our lives is to be free of all addictive traps,
+    S> and thus become one with the ocean of Living Love.
+
+"One choice is a psychosis.  Two, a neurosis" -- Ven Joan Shikai
+Woodward, Northern Mountain Order of the White Wind Zen Community
+
+just a thought.
+
+(oh, yes, the bits: Women in Zen - http://lhamo.tripod.com/2zen.htm)
+
+-- 
+Gary Lawrence Murphy - garym@teledyn.com - TeleDynamics Communications
+ - blog: http://www.auracom.com/~teledyn - biz: http://teledyn.com/ -
+  "Computers are useless. They can only give you answers." (Picasso)
+
+

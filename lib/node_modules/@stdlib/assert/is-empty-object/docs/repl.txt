@@ -1,0 +1,26 @@
+
+{{alias}}( value )
+    Tests if a value is an empty object.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if a value is an empty object.
+
+    Examples
+    --------
+    > var bool = {{alias}}( {} )
+    true
+    > bool = {{alias}}( { 'beep': 'boop' } )
+    false
+    > bool = {{alias}}( [] )
+    false
+
+    See Also
+    --------
+

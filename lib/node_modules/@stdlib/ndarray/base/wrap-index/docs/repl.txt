@@ -1,0 +1,29 @@
+
+{{alias}}( idx, max )
+    Wraps an index on the interval `[0,max]`.
+
+    Parameters
+    ----------
+    idx: integer
+        Index to wrap.
+
+    max: integer
+        Maximum index value.
+
+    Returns
+    -------
+    out: integer
+        Wrapped index.
+
+    Examples
+    --------
+    > var idx = {{alias}}( 2, 10 )
+    2
+    > idx = {{alias}}( -4, 10 )
+    7
+    > idx = {{alias}}( 13, 10 )
+    2
+
+    See Also
+    --------
+

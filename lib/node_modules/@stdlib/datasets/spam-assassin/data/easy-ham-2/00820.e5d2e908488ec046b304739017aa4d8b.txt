@@ -1,0 +1,137 @@
+From fork-admin@xent.com  Wed Jul 24 04:32:24 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 65EC7440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 23:32:24 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 04:32:24 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O3Wk417614 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 04:32:47 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 4DA7E2940F2; Tue, 23 Jul 2002 20:22:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id A22B82940ED for <fork@xent.com>; Tue,
+    23 Jul 2002 20:21:44 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id E8F843ED5C;
+    Tue, 23 Jul 2002 23:30:55 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id E0F613ED46; Tue, 23 Jul 2002 23:30:55 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: Robert Harley <harley@argote.ch>
+Cc: fork@spamassassin.taint.org
+Subject: Re: My brain hurts
+In-Reply-To: <20020723224802.E54D3C44E@argote.ch>
+Message-Id: <Pine.BSO.4.44.0207232306340.22846-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 23:30:55 -0400 (EDT)
+
+On Wed, 24 Jul 2002, Robert Harley wrote:
+
+--]Working too hard...
+--]
+--]Someone tell me a joke, or email me a beer or something...
+
+You asked for it....
+
+Ladies and Gentlebeans....its time now for Shlepy Shlepman and Frenchy
+along with there  all groan reviews.....
+
+Shlepy> Heya heya heya ..I just flew in from defcon and boy are my ports
+tierd.....waka waka
+
+Frenchie>Des Amricains, je vous dteste et tous que vous reprsentez. Vous
+tes des porcs.
+
+Shlepy>Say Frenchie, how do you castrate a frenchmen???
+
+Frenchie>Est-elle cette une autre mauvaise plaisanterie? Je ne sais pas,
+satisfaire vous rends ce drole singe global d'ane.
+
+Shlepy>You kick his sister in the jaw.
+
+Frenchie>Je suis dans l'enfer.
+
+Shelpy>Dont he speak funny folks? yep them French are mighty bizzare.
+They do things very differently over there. For instace you know why
+they dont have fireworks at Euro Disney?
+
+Frenchie> Puisque nous soufflerions plutt nos ttes outre de qu'observe un
+infrieur brut classer la clbration amricaine?
+
+Shlepy>What ever ya said, nope..Because every time they shoot
+them off, the French try to surrender.
+
+Frenchie>Etant donn le choix entre les Allemands et vous que je
+nettoierais heureusement versez les stalles dans les camps alors doivent
+aller  vos parcs d'amusement.
+
+Shlepy> Aint he the continental one....Speaking of global
+politics....Three guys, an Englishman, a Frenchman and an American are out
+walking along the beach together one day. They come across a lantern and a
+genie pops out of it.  "I will give you each one wish, " says the genie.
+The American says, "I am a farmer, my dad was a farmer, and my son will
+also farm. I want the land to be forever fertile in America." With a blink
+of the genie's eye, 'FOOM'  -  the land in America was forever made
+fertile for farming.  The Frenchman was amazed, so he said, "I want a wall
+around France, so that no one can come into our precious country."  Again,
+with a blink of the Genie's eye, 'POOF'  -  there was a huge wall around
+France.  The Englishman asks, "I'm very curious. Please tell me more about
+this wall.  The Genie explains, "Well, it's about 150 feet high, 50 feet
+thick and nothing can get in or out."  The Englishman says, "Fill it up
+with water."
+
+Fenchie>Plutt nous devrions nous noyer que mangent la cuisine anglaise.
+
+Shlpey> Them French, you dont know what they are on about but damn it sure
+sounds romantic. And you knwo they are great lovers those french are. A
+psychology professor decided to study the way in which different people
+from different parts of Europe have sex with sheep. He traveled first to
+Wales, where he asks a farmer to explain his method: "Well, boyo, I put
+her back legs down my nice green wellies, grab her with me velcro gloves,
+and we're well away. Tidy!"  The professor tries Scotland next "Hoots an'
+toots man, I put her back legs down my nice green wellies, grab her with
+me velcro gloves, and we're  well away. Och aye tha noo!"  The professor
+moves on to Germany: "Well, I find the most efficient way is to grab her
+with my velcro gloves, and we're well away. The professor is noticing a
+pattern developing, so he decides to try France, and then end his
+investigation.  He stops a bloke by the Eiffel tower named Pierre, and
+asks him to explain the French method: "Well monsieur, I put her back legs
+down my nice green wellies, sling her front legs over me shoulders, and
+that's all there is to it!" The professor is excited to have found some
+national variation and tells Pierre that this is different to the methods
+of the Scots, Welsh and Germans. "How do they do it then?" asks Pierre,
+and the professor explains. Pierre on hearing the explanation walks of
+disgusted. "What! No kissing?"
+
+Frenchie>Voil. J'ai stopp.
+
+Shlepy> Hey, where you going with the sheep, we need them for the next
+act....
+
+A little traveling music maestro.
+
+
+
+-tomwsmf
+
+
+http://xent.com/mailman/listinfo/fork
+
+

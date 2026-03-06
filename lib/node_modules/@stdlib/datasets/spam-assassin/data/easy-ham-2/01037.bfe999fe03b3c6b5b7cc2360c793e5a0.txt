@@ -1,0 +1,74 @@
+From fork-admin@xent.com  Fri Aug 16 11:27:54 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A4C0D441AA
+	for <jm@localhost>; Fri, 16 Aug 2002 06:03:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:03:30 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7FM48719960 for <jm@jmason.org>;
+    Thu, 15 Aug 2002 23:04:08 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0091B29409A; Thu, 15 Aug 2002 15:02:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (h00045acfa2be.ne.client2.attbi.com
+    [65.96.178.138]) by xent.com (Postfix) with ESMTP id 97B07294098 for
+    <fork@xent.com>; Thu, 15 Aug 2002 15:01:34 -0700 (PDT)
+Received: (from louie@localhost) by localhost.localdomain (8.11.6/8.11.6)
+    id g7FM16W05669; Thu, 15 Aug 2002 18:01:06 -0400
+X-Authentication-Warning: localhost.localdomain: louie set sender to
+    louie@ximian.com using -f
+Subject: Re: It's a small world
+From: Luis Villa <louie@ximian.com>
+To: Jesse <jesse@fsck.com>
+Cc: fork@spamassassin.taint.org
+In-Reply-To: <20020815215308.GP2724@pallas.fsck.com>
+References: <20020815203806.GM2724@pallas.fsck.com>
+    <1029444667.5235.1.camel@localhost.localdomain>
+    <20020815213504.GO2724@pallas.fsck.com>
+    <1029448015.5235.50.camel@localhost.localdomain>
+    <20020815215308.GP2724@pallas.fsck.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Message-Id: <1029448866.5235.59.camel@localhost.localdomain>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 15 Aug 2002 18:01:06 -0400
+
+On Thu, 2002-08-15 at 17:53, Jesse wrote:
+> 
+> On Thu, Aug 15, 2002 at 05:46:55PM -0400, Luis Villa wrote:
+> > FWIW, slummerville actually has the internet- not just broadband, but
+> > actual broadband competition, which I gather is rare. I had ADSL and two
+> > cable options when I moved in.
+> 
+> 
+> Did you actually attempt to order the DSL? Large chunks of somerville have
+> advertised DSL service that can't actually be obtained. Excuses vary, from
+> "no available copper" to "full DSLAM", but the folks I know who've wanted
+> DSL around here have all failed, ending up either with ATTBB, RCN or an
+> honest-to-god T1.
+
+No. My past experiences with DSL have generally been miserable so I went
+with at&t digital cable[1] + cable modem. Still, even the hypothetical
+option was a lot better than what I had in the theoretically
+tech-friendly Triangle in NC.
+Luis
+
+[1]sports junkie
+http://xent.com/mailman/listinfo/fork
+

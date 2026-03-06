@@ -1,0 +1,114 @@
+From ilug-admin@linux.ie  Wed Aug 21 16:24:08 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4BC3E43C37
+	for <jm@localhost>; Wed, 21 Aug 2002 11:23:57 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 16:23:57 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LFLOZ31083 for
+    <jm-ilug@jmason.org>; Wed, 21 Aug 2002 16:21:24 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA05969; Wed, 21 Aug 2002 16:20:05 +0100
+Received: from nologic.org ([217.114.163.124]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id QAA05917 for <ilug@linux.ie>; Wed,
+    21 Aug 2002 16:19:58 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [217.114.163.124] claimed
+    to be nologic.org
+Received: (qmail 3622 invoked from network); 21 Aug 2002 15:21:41 -0000
+Received: from localhost (HELO nologic.org) (127.0.0.1) by 0 with SMTP;
+    21 Aug 2002 15:21:41 -0000
+Received: from cacher3-ext.wise.edt.ericsson.se ([194.237.142.30])
+    (proxying for 159.107.166.60) (SquirrelMail authenticated user
+    cj@nologic.org) by mail.nologic.org with HTTP; Wed, 21 Aug 2002 16:21:41
+    +0100 (BST)
+Message-Id: <26030.194.237.142.30.1029943301.squirrel@mail.nologic.org>
+Date: Wed, 21 Aug 2002 16:21:41 +0100 (BST)
+Subject: Re: [ILUG] Formatting a windows partition from Linux
+From: "Ciaran Johnston" <cj@nologic.org>
+To: <ilug@linux.ie>
+In-Reply-To: <1029944325.29456.28.camel@dubrhlnx1>
+References: <1029944325.29456.28.camel@dubrhlnx1>
+X-Priority: 3
+Importance: Normal
+X-Msmail-Priority: Normal
+X-Mailer: SquirrelMail (version 1.2.5)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Dublin said:
+> If you copy the files from your disk to the c: partition and mark it as
+> active it should work ...
+
+Yeah, I figured that, but it doesn't seem to ... well, if that's the case
+I'll give it another go tonight, maybe come back with some error messages.
+
+Just to clarify for those who didn't understand me initially - I have a
+floppy drive installed, but it doesn't physically work. There's nowhere
+handy to pick one up where I am, and I don't fancy waiting a few days for
+one to arrive from Peats.
+
+Thanks for the answers,
+Ciaran.
+
+
+>
+> You especially need io.sys, command.com and msdos.sys
+>
+> your cd driver .sys and read the autoexec.bat and config.sys files for
+> hints on what you did with your boot floppy <g>
+>
+> P
+>
+> On Wed, 2002-08-21 at 14:07, Ciaran Johnston wrote:
+>> Hi folks,
+>> The situation is this: at home, I have a PC with 2 10Gig HDDs, and no
+>> (working) floppy drive. I have been running Linux solely for the last
+>> year, but recently got the urge to, among other things, play some of
+>> my Windoze games. I normally install the windows partition using a
+>> boot floppy which I have conveniently zipped up, but I haven't any way
+>> of writing or reading a floppy.
+>> So, how do I go about:
+>> 1. formatting a C: drive with system files (normally I would use
+>> format /s c: from the floppy).
+>> 2. Installing the CDROM drivers (my bootdisk (I wrote it many years
+>> ago) does this normally).
+>> 3. Booting from the partition?
+>>
+>> I wiped all my linux partitions from the first drive and created
+>> partitions for Windows (HDA1) Slackware and RedHat. I used cfdisk for
+>> this. I made the first drive (hda) bootable. I then installed the
+>> windows partition in LILO and reran lilo (installed in MBR). I copied
+>> the contents of boot.zip to my new windows partition and tried to boot
+>> it - all I get is a garbled line of squiggles.
+>>
+>> Anyone any ideas? I can't think of anywhere in Athlone to get a new
+>> floppy drive this evening...
+>>
+>> Thanks,
+>> Ciaran.
+>>
+>>
+>>
+>> --
+>> Irish Linux Users' Group: ilug@linux.ie
+>> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+>> information. List maintainer: listmaster@linux.ie
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,65 @@
+From fork-admin@xent.com  Mon Sep 23 22:47:45 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6B4D216F03
+	for <jm@localhost>; Mon, 23 Sep 2002 22:47:45 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 22:47:45 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NL61C02599 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 22:06:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 8320A2941C0; Mon, 23 Sep 2002 14:02:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav26.law15.hotmail.com [64.4.22.83]) by
+    xent.com (Postfix) with ESMTP id 828C829409A for <fork@xent.com>;
+    Mon, 23 Sep 2002 14:01:49 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Mon, 23 Sep 2002 14:05:29 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: <fork@spamassassin.taint.org>
+References: <AMEPKEBLDJJCCDEJHAMIKEAFFIAA.ejw@cse.ucsc.edu>
+    <1032813374.21921.43.camel@avalon>
+Subject: Re: Goodbye Global Warming
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV266HHGNZ4mF1IT1800002aed@hotmail.com>
+X-Originalarrivaltime: 23 Sep 2002 21:05:29.0490 (UTC) FILETIME=[F25CF720:01C26344]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 14:10:17 -0700
+
+
+----- Original Message ----- 
+From: "James Rogers" <jamesr@best.com>
+
+> 
+> It is worth noting that underneath the receding glaciers deposited
+> during the last major ice age, they are finding substantial evidence of
+> humans living in what was a nice temperate climate before the glaciers
+> paved over their civilization.  The receding glaciers have turned into a
+> bit of an archaeological treasure chest, as they expose artifacts buried
+> in and underneath them as they shrink that have been preserved by the
+> ice for thousands of years.
+
+Got bits?
+
+

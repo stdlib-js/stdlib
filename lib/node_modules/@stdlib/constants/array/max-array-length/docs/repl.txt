@@ -1,0 +1,12 @@
+
+{{alias}}
+    Maximum length for a generic array.
+
+    Examples
+    --------
+    > {{alias}}
+    4294967295
+
+    See Also
+    --------
+

@@ -1,0 +1,95 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Aug 21 13:02:24 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2078B43C32
+	for <jm@localhost>; Wed, 21 Aug 2002 08:02:24 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 13:02:24 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LC02Z22978 for <jm-sa@jmason.org>; Wed, 21 Aug 2002 13:00:02 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hU7f-00050W-00; Wed,
+    21 Aug 2002 04:58:03 -0700
+Received: from cs.rice.edu ([128.42.1.30]) by usw-sf-list1.sourceforge.net
+    with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hU7H-0001Ok-00 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 21 Aug 2002 04:57:39 -0700
+Received: from localhost (localhost [127.0.0.1]) by cs.rice.edu (Postfix)
+    with ESMTP id 801104AA47; Wed, 21 Aug 2002 06:57:38 -0500 (CDT)
+Received: from bert.cs.rice.edu (bert.cs.rice.edu [128.42.3.146]) by
+    cs.rice.edu (Postfix) with ESMTP id 90CFD4AA43; Wed, 21 Aug 2002 06:57:37
+    -0500 (CDT)
+Received: by bert.cs.rice.edu (Postfix, from userid 14314) id 7A930374003;
+    Wed, 21 Aug 2002 06:57:36 -0500 (CDT)
+To: "Craig R.Hughes" <craig@deersoft.com>
+Cc: yyyy@spamassassin.taint.org (Justin Mason),
+	"Malte S. Stretz" <msquadrat.nospamplease@gmx.net>,
+	SpamAssassin Talk ML <spamassassin-talk@lists.sourceforge.net>
+References: <B7973337-B468-11D6-9F04-00039396ECF2@deersoft.com>
+From: Scott A Crosby <scrosby@cs.rice.edu>
+Organization: Rice University
+In-Reply-To: <B7973337-B468-11D6-9F04-00039396ECF2@deersoft.com>
+Message-Id: <oydelcsv2z4.fsf@bert.cs.rice.edu>
+User-Agent: Gnus/5.0808 (Gnus v5.8.8) XEmacs/21.4 (Common Lisp)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Virus-Scanned: by AMaViS snapshot-20020300
+Subject: [SAtalk] Re: results for giant mass-check (phew)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: 21 Aug 2002 06:57:35 -0500
+Date: 21 Aug 2002 06:57:35 -0500
+
+On Tue, 20 Aug 2002 11:14:50 -0700, Craig R.Hughes <craig@deersoft.com> writes:
+
+> On Tuesday, August 20, 2002, at 07:23  AM, Justin Mason wrote:
+> 
+`> Remember that the GA is going to be considering combinatorial uses of
+> the rules, so rules which look dodgy on their own might be gems for
+> the GA -- perhaps something with a S/O ratio of .5 actually occurs
+> often in combination with some other rule, and in those situations,
+> helps to distinguish spam vs nonspam.
+> 
+
+We're currently using a perceptron classifier. It *can't* learn
+combinations of rules.[1]
+
+I gave an example, assume 4 rules:
+   SPAM = (A or B) and (C or D)
+
+It cannot learn that function.
+
+A decision tree classifier *can* learn that example, and the function
+above, where a .5 S/O rule is only important in certain
+circumstances. (Then again, it may be smartest to hardcode a meta-rule
+for that case, rather than trust to a naive DT learner.)
+
+Scott
+
+
+[1] To be fair, nor can a Bayes classifier.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

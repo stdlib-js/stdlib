@@ -1,0 +1,98 @@
+Return-Path: ler@lerami.lerctr.org
+Delivery-Date: Thu Sep 12 21:25:00 2002
+Return-Path: <notify@geocaching.com>
+Received: from signal.groundspeak.com (signal.groundspeak.com [63.251.163.165])
+	by lerami.lerctr.org (8.12.2/8.12.2/20020902/$Revision: 1.30 $) with ESMTP id g8D2OuE9018131
+	for <ler+geocache@lerctr.org>; Thu, 12 Sep 2002 21:24:57 -0500 (CDT)
+Received: from eliasbone (eliasbone.groundspeak.biz [66.150.167.137])
+	by signal.groundspeak.com (Postfix) with SMTP id 17D9168B51
+	for <ler+geocache@lerctr.org>; Thu, 12 Sep 2002 19:23:59 -0700 (PDT)
+thread-index: AcJazKWlmGoMiQpjSRqXH6YvjqIfBg==
+Thread-Topic: Geocaching.com Weekly Cache Notification
+From: "Geocaching Notify Bot" <notify@geocaching.com>
+To: <ler+geocache@lerctr.org>
+Subject: Geocaching.com Weekly Cache Notification
+Date: Thu, 12 Sep 2002 19:24:11 -0700
+Message-ID: <2cef01c25acc$a5a5f420$89a79642@groundspeak.biz>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Mailer: Microsoft CDO for Exchange 2000
+Content-Class: urn:content-classes:message
+Importance: normal
+Priority: normal
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+X-Status: 
+X-Keywords: 
+
+Greetings from Geocaching.com -
+
+
+Recent caches in your area...
+
+9/10/2002 (Texas)
+Horsin' Around by Shellyfish & Jerry227
+(Traditional Cache) (GC8CA0) (19.44 miles SW)
+http://www.geocaching.com/seek/cache_details.asp?ID=36000
+
+10/27/2002 (Texas)
+NTGA Org. Meeting/Class by Wolf Song
+(Event Cache) (GC81C2) (25.8 miles SW)
+http://www.geocaching.com/seek/cache_details.asp?ID=33218
+
+9/22/2002 (Texas)
+NTGA Organizational Meeting/Class by Wolf Song
+(Event Cache) (GC81C1) (25.8 miles SW)
+http://www.geocaching.com/seek/cache_details.asp?ID=33217
+
+9/8/2002 (Texas)
+The Nostaglia Zone by VeggieDog
+(Traditional Cache) (GC8C58) (26.83 miles W)
+http://www.geocaching.com/seek/cache_details.asp?ID=35928
+
+9/7/2002 (Texas)
+Rainy Day Cache by Ma Bell  (named by geovamp and msdark)
+(Traditional Cache) (GC8B06) (28.92 miles SW)
+http://www.geocaching.com/seek/cache_details.asp?ID=35590
+
+9/11/2002 (Texas)
+Fire Station #7:  In Honor of 9-11-2001 by Arcane Cacher (adopted by Web-ling 8/30/02)
+(Traditional Cache) (GC26F) (33.46 miles SW)
+http://www.geocaching.com/seek/cache_details.asp?ID=623
+
+9/9/2002 (Texas)
+Tired of Bronze by GeoGoddess and Waterlily
+(Virtual Cache) (GC8D03) (41.65 miles W)
+http://www.geocaching.com/seek/cache_details.asp?ID=36099
+
+9/10/2002 (Texas)
+The Island by tomboy
+(Virtual Cache) (GC8CAC) (42.87 miles S)
+http://www.geocaching.com/seek/cache_details.asp?ID=36012
+
+9/28/2002 (Texas)
+DFW Field Day #1 by loubob57
+(Event Cache) (GC8644) (47.92 miles W)
+http://www.geocaching.com/seek/cache_details.asp?ID=34372
+
+9/5/2002 (Texas)
+Pirates Booty by Nitehawker
+(Traditional Cache) (GC8A34) (50.51 miles SW)
+http://www.geocaching.com/seek/cache_details.asp?ID=35380
+
+9/7/2002 (Texas)
+Sunshine at Weatherford by sportrak ,Black_ronin
+(Traditional Cache) (GC8ADB) (69.18 miles W)
+http://www.geocaching.com/seek/cache_details.asp?ID=35547
+
+9/9/2002 (Texas)
+Leave It to Beaver by Tweedler
+(Traditional Cache) (GC8C6F) (84.14 miles SE)
+http://www.geocaching.com/seek/cache_details.asp?ID=35951
+
+
+Your account name is 'lrosenman'.  If you would like to be removed from this
+list, please log into the web site and uncheck cache notifications through
+the "modify your account" link on your "my cache page".

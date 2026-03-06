@@ -1,0 +1,24 @@
+
+{{alias}}( value )
+    Tests if a value is null.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is null.
+
+    Examples
+    --------
+    > var bool = {{alias}}( null )
+    true
+    > bool = {{alias}}( true )
+    false
+
+    See Also
+    --------
+

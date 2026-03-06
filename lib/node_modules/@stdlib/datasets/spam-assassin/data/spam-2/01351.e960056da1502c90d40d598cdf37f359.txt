@@ -1,0 +1,46 @@
+From yoshioha5857x55@lycos.com  Thu Aug  8 11:15:38 2002
+Return-Path: <yoshioha5857x55@lycos.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4997F440A8
+	for <jm@localhost>; Thu,  8 Aug 2002 06:14:34 -0400 (EDT)
+Received: from mail.webnote.net [193.120.211.219]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 11:14:34 +0100 (IST)
+Received: from lycos.com (3DCE10C0.osaka.meta.ne.jp [61.206.16.192])
+	by webnote.net (8.9.3/8.9.3) with SMTP id EAA27352
+	for <jm@netnoteinc.com>; Thu, 8 Aug 2002 04:17:22 +0100
+From: yoshioha5857x55@lycos.com
+Received: from [149.9.224.206] by mx.loxsystems.net with smtp; Fri, 09 Aug 2002 13:16:59 -0600
+Received: from 34.210.19.45 ([34.210.19.45]) by pet.vosni.net with smtp; Fri, 09 Aug 2002 07:14:51 -1000
+Received: from rly-yk04.aolmd.com ([97.1.28.112])
+	by mta21.bigpong.com with asmtp; Thu, 08 Aug 2002 21:12:43 -0300
+Reply-To: <yoshioha5857x55@lycos.com>
+Message-ID: <036c87d83c4d$5363c3a3$3bc28aa3@evoiqj>
+To: <yyyy@netnoteinc.com>
+Subject: ** You're -Approved-! **
+Date: Thu, 08 Aug 2002 11:12:12 +0700
+MiME-Version: 1.0
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+Importance: Normal
+Content-Type: multipart/mixed; boundary="----=_NextPart_000_00B0_35C58D0E.D7267B06"
+
+------=_NextPart_000_00B0_35C58D0E.D7267B06
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: base64
+
+
+PGh0bWw+DQo8Ym9keT4NCjxmb250IGNvbG9yPSJmZmZmZmYiPm1hcnRpbmV6
+PC9mb250Pg0KPHA+WW91ciBob21lIHJlZmluYW5jZSBsb2FuIGlzIGFwcHJv
+dmVkITxicj48L3A+PGJyPg0KPHA+VG8gZ2V0IHlvdXIgYXBwcm92ZWQgYW1v
+dW50IDxhIGhyZWY9Imh0dHA6Ly8yMDAuMzIuMy4xMjEvaW5kZXguaHRtIj5n
+bw0KaGVyZTwvYT4uPC9wPg0KPGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJy
+Pjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+
+PGJyPg0KPHA+VG8gYmUgZXhjbHVkZWQgZnJvbSBmdXJ0aGVyIG5vdGljZXMg
+PGEgaHJlZj0iaHR0cDovLzIwMC4zMi4zLjEyMS9yZW1vdmUuaHRtbCI+Z28N
+CmhlcmU8L2E+LjwvcD4NCjxmb250IGNvbG9yPSJmZmZmZmYiPm1hcnRpbmV6
+PC9mb250Pg0KPC9ib2R5Pg0KPGZvbnQgY29sb3I9ImZmZmZmZiI+MWdhdGUN
+CjwvaHRtbD4NCjA0NTRZdlFEOC00NjdCWllDMjYyMHhIemc2LTk2bDI3
+

@@ -1,0 +1,96 @@
+From ilug-admin@linux.ie  Tue Jul 30 11:12:47 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0D97C440F0
+	for <jm@localhost>; Tue, 30 Jul 2002 06:12:45 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 11:12:45 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UAC0q20282 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 11:12:00 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA31610; Tue, 30 Jul 2002 11:09:40 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA31573 for <ilug@linux.ie>;
+    Tue, 30 Jul 2002 11:09:26 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6UA9PY29756 for <ilug@linux.ie>;
+    Tue, 30 Jul 2002 11:09:25 +0100
+Date: Tue, 30 Jul 2002 11:09:23 +0100
+To: David Neary <dneary@wanadoo.fr>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] Mutt reply hooks
+Message-Id: <20020730110923.A29287@ie.suberic.net>
+References: <20020730112811.A32231@wanadoo.fr>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020730112811.A32231@wanadoo.fr>; from dneary@wanadoo.fr on
+    Tue, Jul 30, 2002 at 11:28:11AM +0200
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1028542165.571dd7@linux.ie>
+Mail-Followup-To: kevin+dated+1028542165.571dd7@linux.ie,
+	dneary@wanadoo.fr, ilug@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Jul 30, 2002 at 11:28:11AM +0200, David Neary wrote:
+> For example, say I have a company, and sales@company.com,
+> info@company.com and tech@company.com arrive in the same mailbox.
+> I don't want to reply to sales@company.com mails with the From:
+> set to dave@company.com, I would like the mail to come from
+> sales@company.com.
+> 
+> Is there any way to do this? Bearing in mind that mail can arrive
+> with my email in the To or Cc fields (and Bcc?), and it might be
+> buried in a couple of dozen other recipients...
+
+i sort my mail into folders using procmail.  so typically i'm in the
+ilug folder for ilug mail, the doolin folder for doolin mail, etc.
+so i use folder-hooks to accomplish that.  as an example (i do line
+wrapping to keep it less then 80 chars long - spacing is important):
+
+folder-hook . "my_hdr From: kevin lyda <kevin@ie.suberic.net>;"\
+"my_hdr X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646;"\
+"set pgp_sign_as=0x89D07646;set signature=~/.signature;"\
+"set folder=~/Mail;set record=~/Mail/outbox;set postponed=~/Mail/postponed"
+folder-hook /(alphyra|Alphyra/[^.].*) \
+"my_hdr From: kevin lyda <kevin@alphyra.com>;my_hdr X-GPG-Fingerprint: "\
+"088E 2BC4 381E 990A 1E0E  1DA0 4D44 99EF 20E6 38A0;"\
+"set pgp_sign_as=0x20E638A0;set signature=~/.signature.d/itg.sig;"\
+"set folder=~/Mail/Alphyra;set record=~/Mail/Alphyra/outbox;"\
+"set postponed=~/Mail/Alphyra/postponed"
+
+you could also do this with send hooks.  i use them to tweak gpg settings:
+
+send-hook .			"unset pgp_autoencrypt;set pgp_autosign"
+send-hook (ilug|webdev|social)@linux.ie	\
+				"unset pgp_autosign;unset pgp_autoencrypt"
+
+and then i have an include file with all people who have keys.
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

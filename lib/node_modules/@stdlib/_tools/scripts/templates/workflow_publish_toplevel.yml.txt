@@ -1,0 +1,219 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2023 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: publish
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
+    # Workflow inputs:
+    inputs:
+      version:
+        description: 'Version Increment'
+        type: choice
+        default: 'none'
+        options:
+          - 'none'
+          - 'major'
+          - 'minor'
+          - 'patch'
+          - 'premajor'
+          - 'preminor'
+          - 'prepatch'
+          - 'prerelease'
+
+# Workflow jobs:
+jobs:
+
+  # Define job to publish package to npm:
+  publish:
+
+    # Define display name:
+    name: 'Publish top-level package to npm'
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Define environment variables:
+    env:
+      ZULIP_API_KEY: ${{ secrets.ZULIP_API_KEY }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
+
+      # Install Node.js:
+      - name: 'Install Node.js'
+        # Pin action to full length commit SHA
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
+        with:
+          node-version: 20
+        timeout-minutes: 5
+
+      # Configure Git:
+      - name: 'Configure Git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+
+      # Increment package version (if requested):
+      - name: 'Increment package version (if requested)'
+        if: ${{ github.event.inputs.version != 'none' }}
+        run: |
+          # Save NPM_TOKEN to user's .npmrc:
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+
+          # Increment package version:
+          npm version ${{ github.event.inputs.version }} --no-git-tag-version
+
+          # Define variable for new version:
+          NEW_VERSION=$(node -p "require('./package.json').version")
+
+          # Replace branch in README.md link definitions for badges with the new version:
+          find . -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/branch([=:])[^ ]+/branch\1v${NEW_VERSION}/g"
+
+          # Replace `Unreleased` in the CHANGELOG.md file with the new version:
+          sed -Ei "s/Unreleased/${NEW_VERSION}/g" CHANGELOG.md
+          sed -Ei "s/unreleased/v${NEW_VERSION}/g" CHANGELOG.md
+
+          # Create a new commit and tag:
+          git add package.json README.md
+          git commit -m "Release v${NEW_VERSION}"
+          git tag -a "v${NEW_VERSION}" -m "Release v${NEW_VERSION}"
+
+          # Push changes to GitHub:
+          SLUG=${{ github.repository }}
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" --follow-tags
+
+      # Replace GitHub MathJax equations with SVGs:
+      - name: 'Replace GitHub MathJax equations with SVGs'
+        run: |
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe 's/```math\n([\s\S]+?)\n```\n\n//g'
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe 's/<!-- <div class="equation"(.*)(<\/div>\s*-->)/<div class="equation"$1<\/div>/sg'
+
+      # Replace GitHub links to individual packages with npm links:
+      - name: 'Replace all GitHub links to individual packages with npm links'
+        run: |
+          find . -type f -name '*.md' -print0 | xargs -0 sed -Ei '/tree\/main/b; s/@stdlib\/([^:]*)\]: https:\/\/github.com\/stdlib-js/@stdlib\/\1\]: https:\/\/www.npmjs.com\/package\/@stdlib/g'
+
+      # Replace list with links to other branches from installation section:
+      - name: 'Replace list with links to other branches from installation section'
+        run: |
+          find . -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/\`\`\`\n\nAlternatively,[^<]+<\/section>/\`\`\`\n\n<\/section>/"
+
+      # Remove unnecessary files:
+      - name: 'Remove unnecessary files'
+        run: |
+          rm -f docs/repl.txt
+          rm -f docs/types/test.ts
+
+      # Replace all stdlib GitHub dependencies with the respective npm packages:
+      - name: 'Replace all stdlib GitHub dependencies with the respective npm packages'
+        run: |
+          for dep in $(jq -r '.dependencies | keys | .[]' package.json); do
+            if [[ "$dep" != "@stdlib"* ]]; then
+              continue
+            fi
+            # Trim leading and trailing whitespace:
+            dep=$(echo "$dep" | xargs)
+            version="$(npm view $dep version)"
+            if [[ -z "$version" ]]; then
+              continue
+            fi
+            version="^$version"
+            jq -r --arg dep "$dep" --arg version "$version" '.dependencies[$dep] = $version' package.json > package.json.tmp
+            mv package.json.tmp package.json
+          done
+          for dep in $(jq -r '.devDependencies | keys | .[]' package.json); do
+            if [[ "$dep" != "@stdlib"* ]]; then
+              continue
+            fi
+            # Trim leading and trailing whitespace:
+            dep=$(echo "$dep" | xargs)
+            version="$(npm view $dep version)"
+            if [[ -z "$version" ]]; then
+              continue
+            fi
+            version="^$version"
+            jq -r --arg dep "$dep" --arg version "$version" '.devDependencies[$dep] = $version' package.json > package.json.tmp
+            mv package.json.tmp package.json
+          done
+
+      # Publish package to npm:
+      - name: 'Publish package to npm'
+        # Pin action to full length commit SHA
+        uses: JS-DevTools/npm-publish@19c28f1ef146469e409470805ea4279d47c3d35c # v3.1.1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          access: public
+
+      # Discard any uncommitted changes:
+      - name: 'Discard any uncommitted changes'
+        run: |
+          git reset --hard
+
+      # Send notification to Zulip if job fails:
+      - name: 'Send notification to Zulip in case of failure'
+        # Pin action to full length commit SHA
+        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
+        if: failure()
+        with:
+          api-key: ${{ secrets.ZULIP_API_KEY }}
+          email: 'github-actions-bot@stdlib.zulipchat.com'
+          organization-url: 'https://stdlib.zulipchat.com'
+          to: 'workflows-standalone'
+          type: 'stream'
+          topic: ${{ github.event.repository.name }}
+          content: |
+            :cross_mark: **${{ github.workflow }}** workflow failed
+
+            **Repository:** [${{ github.repository }}](${{ github.server_url }}/${{ github.repository }})
+            **Run:** [View workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+
+  # Define job to cancel any running or queued workflow runs...
+  cancel:
+
+    # Define the type of virtual host machine on which to run the job:
+    runs-on: ubuntu-latest
+
+    # Time out the job after 3 minutes:
+    timeout-minutes: 3
+
+    # Define the sequence of job steps...
+    steps:
+
+      # Cancel any running or queued workflow runs:
+      - name: 'Cancel running or queued workflow runs'
+        # Pin action to full length commit SHA
+        uses: styfle/cancel-workflow-action@85880fa0301c86cca9da44039ee3bb12d3bedbfa # v0.12.1
+        with:
+          workflow_id: >-
+            benchmark.yml,
+            examples.yml,
+            test.yml,
+            test_coverage.yml,
+            test_install.yml,
+            publish.yml
+          access_token: ${{ github.token }}

@@ -1,0 +1,110 @@
+From razor-users-admin@lists.sourceforge.net  Mon Aug 26 15:16:22 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7D46444163
+	for <jm@localhost>; Mon, 26 Aug 2002 10:14:52 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:14:52 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7NJYMZ05425 for <jm-razor@jmason.org>; Fri, 23 Aug 2002 20:34:22 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17iJpv-0007x8-00; Fri,
+    23 Aug 2002 12:11:11 -0700
+Received: from eclectic.kluge.net ([66.92.69.221]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17iJox-0007Os-00 for <razor-users@lists.sourceforge.net>; Fri,
+    23 Aug 2002 12:10:11 -0700
+Received: (from felicity@localhost) by eclectic.kluge.net (8.11.6/8.11.6)
+    id g7NJA2g29392; Fri, 23 Aug 2002 15:10:02 -0400
+From: Theo Van Dinter <felicity@kluge.net>
+To: "Rose, Bobby" <brose@med.wayne.edu>
+Cc: Julian Bond <julian_bond@voidstar.com>,
+	razor-users@lists.sourceforge.net
+Subject: Re: [Razor-users] Razor with sendmail
+Message-Id: <20020823191002.GK12303@kluge.net>
+References: <D79A56AD131896448D0860DEE07CBE1F3BABEC@med-core07.med.wayne.edu>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="hdW7zL/qDS6RXdAL"
+Content-Disposition: inline
+In-Reply-To: <D79A56AD131896448D0860DEE07CBE1F3BABEC@med-core07.med.wayne.edu>
+User-Agent: Mutt/1.4i
+X-GPG-Keyserver: http://wwwkeys.pgp.net
+X-GPG-Keynumber: 0xE580B363
+X-GPG-Fingerprint: 75B1 F6D0 8368 38E7 A4C5  F6C2 02E3 9051 E580 B363
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Fri, 23 Aug 2002 15:10:02 -0400
+Date: Fri, 23 Aug 2002 15:10:02 -0400
+
+
+--hdW7zL/qDS6RXdAL
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Fri, Aug 23, 2002 at 03:03:05PM -0400, Rose, Bobby wrote:
+> If you didn't add it when compile would be one way.  Another would be to
+> grep your sendmail.cf for the word Milter.
+
+I don't know if there's a sendmail-ish way (it's not in the -d0.1 output),
+but this should work:
+
+$ strings `which sendmail` | grep -i milter
+
+If you get a long list of function/message looking phrases, milter
+is built-in.  If you get something like:
+
+Warning: Filter usage ('X') requires Milter support (-DMILTER)
+Milter Warning: Option: %s requires Milter support (-DMILTER)
+@(#)$Id: milter.c,v 1.1.1.2 2002/03/12 18:00:36 zarzycki Exp $
+
+then it's not built-in. :)
+
+--=20
+Randomly Generated Tagline:
+"M: Can anyone tell us the lesson that has been learned here?
+  S: Yes Master, not a single one of us could defeat you.
+  M: You gain wisdom child ... "            - The Frantics
+
+--hdW7zL/qDS6RXdAL
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE9ZoiKAuOQUeWAs2MRAnJ0AJ9ruH+VXGGz/0mrSNVPQljjksTKEQCfSN2h
+eED/03ARYS9odlD3qfuuFbA=
+=nBsE
+-----END PGP SIGNATURE-----
+
+--hdW7zL/qDS6RXdAL--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

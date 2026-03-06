@@ -1,0 +1,125 @@
+From ilug-admin@linux.ie  Wed Jul 31 20:45:46 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 10F05440C8
+	for <jm@localhost>; Wed, 31 Jul 2002 15:45:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 20:45:46 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VJcH206749 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 20:38:17 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA24482; Wed, 31 Jul 2002 20:34:57 +0100
+Received: from linux.local ([195.218.108.229]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA24452 for <ilug@linux.ie>; Wed,
+    31 Jul 2002 20:34:49 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.229] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6VHvoX11572 for
+    <ilug@linux.ie>; Wed, 31 Jul 2002 18:57:50 +0100
+Message-Id: <200207311757.g6VHvoX11572@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] inputting chinese characters in Redhat 7.3
+In-Reply-To: Message from Fergal Daly <fergal@esatclear.ie> of
+    "Wed, 31 Jul 2002 23:11:49 +0800."
+    <200207312311.49122.fergal@esatclear.ie>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <11569.1028138270.1@linux.local>
+Date: Wed, 31 Jul 2002 18:57:50 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    UAA24452
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Wed, 31 Jul 2002 23:11:49 +0800
+  | From: Fergal Daly <fergal@esatclear.ie>
+  | 
+  | 7.3 seems to support Chinese input out of the box, it's got
+  | miniChinput and some other stuff no documentation.  [ ... ]
+  | google is a bit of a dead too.
+  | 
+  | Can anyone tell me what I should do?
+
+ I've no idea, but a relevant/useful source of info could
+ be the «linux-utf8» e-list:
+
+     http://www.cl.cam.ac.uk/~mgk25/unicode.html
+     http://mail.nl.linux.org/linux-utf8/
+
+ whilst the list is nominally about UTF-8/Unicode and Linux,
+ it often delves into related areas (such as input methods).
+
+ my (vague!) understanding of the state-of-play is there are
+ multiple ways of keyboarding scripts such as "Chinese", and
+ the choice of method is a mixture of personal preference,
+ equipment (e.g. your keyboard), and the tool/application
+ in question.
+
+ w.r.t. X11 applications, it seems to boil down to two
+ approaches:   one unique to the tool itself (apparently
+ `yudit' is famous for this);  or  else using what's called
+ an XIM (X Input Method).
+
+  WARNING: I am now guessing quite a bit here, based mostly on
+           my interpretation of what I've read whilst lurking,
+           and watching a few people keyboarding a Japanese
+           script years ago!   *** your mileage will vary! ***
+
+ XIMs generally work as a complex compose frontend.  i.e., you
+ build up your character as a series of composes of the root or
+ fundamental strokes ("radicals", I think they are called), and
+ then "commit" the composite character to the application.
+ ( yes, keyboarding these scripts _is_ quite slow, I believe
+  a good typist can only do a few characters a minute!
+  and I assume using a qwerty keyboard is very painful. )
+
+ some XIMs compose "in place", others do it on a special line,
+ and some seem to do it in a special window (or the root?).
+ also, some(/most?) XIMs apparently support a US-ASCII input
+ mode as well --- _not_ a general Latin-alphabet input mode,
+ which seems to require another TLA, called KBD, and which
+ apparently doesn't work when an XIM is also being used? ---
+ implying you have to switch back and forth between US-ASCII
+ input mode (what us English-speakers would call "normal"
+ keyboarding/typing), and the other input (e.g., Chinese).
+ I'm not sure, but I have the impression the switch is often
+ a toggle, and something like <Control><CapsLock>.
+
+ many apologies if this is completely wrong or too misleading.
+
+cheers!
+	-blf-
+
+p.s.  b.t.w., you almost certainly want to be using a UTF-8
+      locale.  if RH 7.3 is the so-called "limbo" release,
+      then you may quite possibility be using one by default.
+
+--
+«How many surrealists does it take to    |  Brian Foster    Dublin, Ireland
+ change a lightbulb?  Three.  One calms  |  e-mail: blf@utvinternet.ie
+ the warthog, and two fill the bathtub   |  mobile: (+353 or 0)86 854 9268
+ with brightly-coloured machine tools.»  |  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

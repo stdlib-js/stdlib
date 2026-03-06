@@ -1,0 +1,34 @@
+
+{{alias}}( value )
+    Tests whether a value corresponds to a leap year in the Gregorian calendar.
+
+    A leap year is defined as any year which is exactly divisible by 4, except
+    for years which are exactly divisible by 100 and not by 400. In this
+    definition, 100 corresponds to years marking a new century, and 400
+    corresponds to the length of the *leap cycle*.
+
+    If not provided any arguments, the function returns a boolean indicating
+    if the current year (according to local time) is a leap year.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value corresponds to a leap year.
+
+    Examples
+    --------
+    > var bool = {{alias}}( new Date() )
+    <boolean>
+    > bool = {{alias}}( 1996 )
+    true
+    > bool = {{alias}}( 2001 )
+    false
+
+    See Also
+    --------
+

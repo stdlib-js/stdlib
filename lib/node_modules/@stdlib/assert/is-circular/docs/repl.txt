@@ -1,0 +1,29 @@
+
+{{alias}}( value )
+    Tests if an object-like value contains a circular reference.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether an object-like value contains a circular
+        reference.
+
+    Examples
+    --------
+    > var obj = { 'beep': 'boop' };
+    > obj.self = obj;
+    > var bool = {{alias}}( obj )
+    true
+    > bool = {{alias}}( {} )
+    false
+    > bool = {{alias}}( null )
+    false
+
+    See Also
+    --------
+

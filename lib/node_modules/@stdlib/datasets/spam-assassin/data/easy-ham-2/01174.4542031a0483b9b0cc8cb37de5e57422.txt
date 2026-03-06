@@ -1,0 +1,80 @@
+From rpm-list-admin@freshrpms.net  Tue Jul 30 18:00:20 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B2326440CD
+	for <jm@localhost>; Tue, 30 Jul 2002 13:00:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 18:00:14 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UGxM206494 for
+    <jm-rpm@jmason.org>; Tue, 30 Jul 2002 17:59:22 +0100
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id RAA23969 for <jm-rpm@jmason.org>;
+    Tue, 30 Jul 2002 17:02:17 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6UFp2830489; Tue, 30 Jul 2002 17:51:02
+    +0200
+Received: from mta1-3.us4.outblaze.com (205-158-62-44.outblaze.com
+    [205.158.62.44]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g6UFoO828340 for <rpm-list@freshrpms.net>; Tue, 30 Jul 2002 17:50:25 +0200
+Received: from ws4-4.us4.outblaze.com (205-158-62-105.outblaze.com
+    [205.158.62.105]) by mta1-3.us4.outblaze.com (8.12.3/8.12.3/us4-srs) with
+    SMTP id g6UFoH3G010571 for <rpm-list@freshrpms.net>; Tue, 30 Jul 2002
+    15:50:18 GMT
+Received: (qmail 27544 invoked by uid 1001); 30 Jul 2002 15:50:17 -0000
+Message-Id: <20020730155017.27541.qmail@linuxmail.org>
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.41 (Entity 5.404)
+Received: from [127.0.0.1] by ws4-4.us4.outblaze.com with http for
+    kworthington@linuxmail.org; Tue, 30 Jul 2002 10:50:17 -0500
+From: "Kevin Worthington" <kworthington@linuxmail.org>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: building as non-root / newbie question
+X-Originating-Ip: 127.0.0.1
+X-Originating-Server: ws4-4.us4.outblaze.com
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 30 Jul 2002 10:50:17 -0500
+Date: Tue, 30 Jul 2002 10:50:17 -0500
+
+> Hehe :-) So your usual *n?x login is "dude" too? ;-)))))))
+> 
+> Matthias
+
+Hey Matthias,
+Actually it isn't, I used yours (I remembered from the RPM builder's guide "The fight" that your wrote). Mine is boring, I use kworthington, since my boxes are on a corporate LAN.
+Sorry to get your hopes up! You can think of it as a tribute to you if it makes you feel any better :-)
+
+------------------------------------------------
+Kevin Worthington - <kworthington (at) linuxmail {dot} org>
+Faithful Red Hat Linux user since April 1998
+Registered Linux User #218689 - http://counter.li.org
+-- 
+Get your free email from www.linuxmail.org 
+
+
+Powered by Outblaze
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

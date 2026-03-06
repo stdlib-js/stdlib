@@ -1,0 +1,99 @@
+From ilug-admin@linux.ie  Mon Sep  2 13:13:50 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6A0CD47C7C
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:43:01 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:43:01 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82Am8Z29220 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 11:48:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA31421; Mon, 2 Sep 2002 11:47:10 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay05.indigo.ie (relay05.indigo.ie [194.125.133.229]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id LAA31379 for <ilug@linux.ie>;
+    Mon, 2 Sep 2002 11:46:27 +0100
+Received: (qmail 97613 messnum 1200606 invoked from
+    network[194.125.130.10/unknown]); 2 Sep 2002 10:46:25 -0000
+Received: from unknown (HELO win2000) (194.125.130.10) by
+    relay05.indigo.ie (qp 97613) with SMTP; 2 Sep 2002 10:46:25 -0000
+Reply-To: <macarthy@iol.ie>
+From: "Justin MacCarthy" <macarthy@iol.ie>
+To: "Dermot Daly" <dermot.daly@itsmobile.com>
+Cc: "Ilug@Linux.Ie" <ilug@linux.ie>
+Subject: RE: [ILUG] What HOWTOs for SOHO system
+Date: Mon, 2 Sep 2002 11:46:57 +0100
+Message-Id: <OFEGLPGPCHPACFLJPAILKEICECAA.macarthy@iol.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+In-Reply-To: <CD1F3D770345B24D8ACC7824F0B2D815059594@athens.itsmobile.com>
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4910.0300
+Importance: Normal
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi Dermot, if have a look at one of the dists. like www.smoothwall.org, it
+will save you lots of time and effort, and should do eveything you want.
+
+Justin
+
+> -----Original Message-----
+> From: ilug-admin@linux.ie [mailto:ilug-admin@linux.ie]On Behalf Of
+> Dermot Daly
+> Sent: Monday, September 02, 2002 11:46 AM
+> To: ilug@linux.ie
+> Subject: [ILUG] What HOWTOs for SOHO system
+>
+>
+> Hi All,
+> I'm trying to set up the following:
+>
+> 1. A Linux server running with a modem for internet connectivity and an
+> ethernet card for LAN connectivity
+> 2. Other LAN pcs with ethernet cards, using the Linux server for
+> DNS/DHCP etc.
+>
+> Basically, I want to route any non LAN traffic through the ppp0.
+>
+> I've got some of the way, but like a similar post earlier about modem
+> problems, when I am connected to the internet with eht0 up, the routing
+> is all incorrect and noting goes out through ppp0 (eh0 must be the
+> default route or something).
+>
+> Is there standard "out of the box" Linux tools that will carry out
+> portmapping on behalf of the LAN PCs ?  (I'm planning on non routable
+> addresses 192.168.x.x for the LAN, routed outwards via the ppp0
+> interface).
+>
+> Can someone point me at the right HOWTOs or routing documentation I need
+> to follow ?
+> Thanks,
+> Dermot.
+>
+> --
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+> information.
+> List maintainer: listmaster@linux.ie
+>
+>
+>
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

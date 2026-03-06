@@ -1,0 +1,22 @@
+
+{{alias}}( path )
+    Returns a directory name.
+
+    Parameters
+    ----------
+    path: string
+        Path.
+
+    Returns
+    -------
+    out: string
+        Directory name.
+
+    Examples
+    --------
+    > var dir = {{alias}}( './foo/bar/index.js' )
+    './foo/bar'
+
+    See Also
+    --------
+

@@ -1,0 +1,50 @@
+{
+  "name": "stdlib-datasets-dale-chall-new",
+  "version": "",
+  "title": "Familiar American-English Words",
+  "description": "A list of familiar American-English words.",
+  "resources": [
+    {
+      "name": "dale-chall-new-json",
+      "title": "Familiar American-English Words",
+      "description": "A list of familiar American-English words.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.json"
+    },
+    {
+      "name": "dale-chall-new-txt",
+      "title": "Familiar American-English Words",
+      "description": "A list of familiar American-English words.",
+      "format": "text",
+      "mediatype": "plain/text",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/words.txt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Readability Revisited",
+      "web": "https://books.google.com/books?id=2nbuAAAAMAAJ"
+    }
+  ],
+  "keywords": [
+    "list",
+    "words",
+    "familiar",
+    "familiarity",
+    "readability",
+    "readable",
+    "comprehension",
+    "reading",
+    "american",
+    "dale",
+    "chall",
+    "english",
+    "en"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

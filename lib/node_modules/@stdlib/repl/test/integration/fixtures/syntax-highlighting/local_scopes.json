@@ -1,0 +1,7 @@
+{
+  "expression": "let a = 4; a",
+  "expected": "let a = 4; \u001b[31ma\u001b[0m",
+  "theme": {
+    "variable": "red"
+  }
+}

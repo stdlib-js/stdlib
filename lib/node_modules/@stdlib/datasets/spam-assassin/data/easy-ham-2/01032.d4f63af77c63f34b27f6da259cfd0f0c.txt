@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Fri Aug 16 11:27:17 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9CA8A43C4A
+	for <jm@localhost>; Fri, 16 Aug 2002 06:03:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:03:25 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7FL29717941 for <jm@jmason.org>;
+    Thu, 15 Aug 2002 22:02:09 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id F19012940AF; Thu, 15 Aug 2002 14:00:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from dream.darwin.nasa.gov (betlik.darwin.nasa.gov
+    [198.123.160.11]) by xent.com (Postfix) with ESMTP id A5AA5294098 for
+    <fork@xent.com>; Thu, 15 Aug 2002 13:59:37 -0700 (PDT)
+Received: from cse.ucsc.edu (paperweight.darwin.nasa.gov [198.123.160.27])
+    by dream.darwin.nasa.gov ( -- Info omitted by ASANI Solutions,
+    LLC.) with ESMTP id g7FL0ph22890 for <fork@xent.com>; Thu, 15 Aug 2002
+    14:00:51 -0700 (PDT)
+Message-Id: <3D5C1683.7060007@cse.ucsc.edu>
+From: Elias Sinderson <elias@cse.ucsc.edu>
+Reply-To: fork@spamassassin.taint.org
+User-Agent: Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:0.9.4.1)
+    Gecko/20020518 Netscape6/6.2.3
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Subject: Re: It's a small world
+References: <20020815203806.GM2724@pallas.fsck.com>
+    <1029444667.5235.1.camel@localhost.localdomain>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 15 Aug 2002 14:00:51 -0700
+
+Or even "When did Somerville get the internet?"  ;-)
+
+E
+
+Luis Villa wrote:
+
+>On Thu, 2002-08-15 at 16:38, Jesse wrote:
+>
+>>Strata just walked up to me in a cafe in Somerville, MA and
+>>asked me how I was getting net here. And _then_ we figured out 
+>>that we have shared context.
+>>
+>
+>The obvious followup is 'there's a cafe in somerville with net access?'
+>Luis [19 Pitman St.]
+>http://xent.com/mailman/listinfo/fork
+>
+
+
+http://xent.com/mailman/listinfo/fork
+

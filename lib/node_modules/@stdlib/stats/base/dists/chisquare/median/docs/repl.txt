@@ -1,0 +1,28 @@
+
+{{alias}}( k )
+    Returns the median of a chi-squared distribution.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `k < 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    k: number
+        Degrees of freedom.
+
+    Returns
+    -------
+    out: number
+        Median.
+
+    Examples
+    --------
+    > var k = {{alias}}( 9.0 )
+    ~8.343
+    > k = {{alias}}( 2.0 )
+    ~1.386
+
+    See Also
+    --------
+

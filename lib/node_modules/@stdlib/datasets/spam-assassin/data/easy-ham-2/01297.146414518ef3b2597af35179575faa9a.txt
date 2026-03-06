@@ -1,0 +1,138 @@
+From spamassassin-commits-admin@lists.sourceforge.net  Tue Jul 23 16:38:46 2002
+Return-Path: <spamassassin-commits-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 66AF6440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 11:38:45 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 16:38:45 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6NFZn406432 for <jm@jmason.org>; Tue, 23 Jul 2002 16:35:49 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17X1gj-0006Aj-00; Tue,
+    23 Jul 2002 08:35:01 -0700
+Received: from usw-sf-sshgate.sourceforge.net ([216.136.171.253]
+    helo=usw-sf-netmisc.sourceforge.net) by usw-sf-list1.sourceforge.net with
+    esmtp (Cipher TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17X1fn-0006zL-00 for <spamassassin-commits@lists.sourceforge.net>;
+    Tue, 23 Jul 2002 08:34:03 -0700
+Received: from usw-pr-cvs1-b.sourceforge.net ([10.5.1.7]
+    helo=usw-pr-cvs1.sourceforge.net) by usw-sf-netmisc.sourceforge.net with
+    esmtp (Exim 3.22 #1 (Debian)) id 17X1fm-0007q6-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Tue, 23 Jul 2002 08:34:02
+    -0700
+Received: from yyyyason by usw-pr-cvs1.sourceforge.net with local (Exim 3.22
+    #1 (Debian)) id 17X1fm-0005VO-00 for
+    <spamassassin-commits@lists.sourceforge.net>; Tue, 23 Jul 2002 08:34:02
+    -0700
+To: spamassassin-commits@example.sourceforge.net
+Message-Id: <E17X1fm-0005VO-00@usw-pr-cvs1.sourceforge.net>
+From: Justin Mason <yyyyason@users.sourceforge.net>
+Subject: [SACVS] CVS: spamassassin/spamd pld-rc-script.sh,NONE,1.1
+Sender: spamassassin-commits-admin@example.sourceforge.net
+Errors-To: spamassassin-commits-admin@example.sourceforge.net
+X-Beenthere: spamassassin-commits@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-commits-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-commits@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <spamassassin-commits.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-commits>,
+    <mailto:spamassassin-commits-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-commits>
+X-Original-Date: Tue, 23 Jul 2002 08:34:02 -0700
+Date: Tue, 23 Jul 2002 08:34:02 -0700
+
+Update of /cvsroot/spamassassin/spamassassin/spamd
+In directory usw-pr-cvs1:/tmp/cvs-serv21113/spamd
+
+Added Files:
+	pld-rc-script.sh 
+Log Message:
+patch from Radoslaw Zielinski <radek@karnet.pl>: rpm support for PLD Linux Distribution.  Makefile.PL created Makefile, which caused problems with DESTDIR; fixed. also rc-script for PLD
+
+--- NEW FILE: pld-rc-script.sh ---
+#!/bin/sh
+#
+# spamassassin This script starts and stops the spamd daemon
+#
+# chkconfig: 2345 80 30
+#
+# description: spamd is a daemon process which uses SpamAssassin to check
+#              email messages for SPAM.  It is normally called by spamc
+#	           from a MDA.
+# processname:	spamassassin
+# pidfile:	/var/run/spamassassin.pid
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+# Source networking configuration.
+. /etc/sysconfig/network
+
+# Source configureation.
+if [ -f /etc/sysconfig/spamassassin ] ; then
+	. /etc/sysconfig/spamassassin
+fi
+
+# Check that networking is up.
+if is_no "${NETWORKING}"; then
+	msg_Network_Down SpamAssassin
+	exit 1
+fi
+
+# See how we were called.
+case "$1" in
+  start)
+	# Start daemon.
+	if [ ! -f /var/lock/subsys/spamd ]; then
+		msg_starting SpamAssassin
+		daemon spamd -d -c -a
+		RETVAL=$?
+		[ $RETVAL -eq 0 ] && touch /var/lock/subsys/spamd
+	else
+		msg_Not_Running SpamAssassin
+	fi
+	;;
+  stop)
+	# Stop daemons.
+	if [ -f /var/lock/subsys/spamd ]; then
+		echo -n "Shutting down spamd: "
+		killproc spamd
+		RETVAL=$?
+		rm -f /var/lock/subsys/spamd
+	else
+		msg_Already_Running SpamAssassin
+	fi
+	;;
+  restart)
+	$0 stop
+	$0 start
+	;;
+  status)
+	status spamd
+	;;
+  *)
+	msg_Usage "$0 {start|stop|restart|status}"
+	exit 1
+esac
+
+exit $RETVAL
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-commits mailing list
+Spamassassin-commits@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-commits
+
+

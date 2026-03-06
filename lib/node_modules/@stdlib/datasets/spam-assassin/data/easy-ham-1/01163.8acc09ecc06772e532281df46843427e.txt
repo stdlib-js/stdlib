@@ -1,0 +1,113 @@
+From exmh-workers-admin@redhat.com  Fri Aug 23 11:04:05 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7F45444159
+	for <jm@localhost>; Fri, 23 Aug 2002 06:03:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:03:34 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MIZPZ19882 for
+    <jm-exmh@jmason.org>; Thu, 22 Aug 2002 19:35:25 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 571363F43A; Thu, 22 Aug 2002
+    14:35:10 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id A6F683FD36
+    for <exmh-workers@listman.redhat.com>; Thu, 22 Aug 2002 14:23:32 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g7MINTq05527 for exmh-workers@listman.redhat.com; Thu, 22 Aug 2002
+    14:23:29 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7MINTY05519 for
+    <exmh-workers@redhat.com>; Thu, 22 Aug 2002 14:23:29 -0400
+Received: from milou.dyndns.org (h189n1fls22o974.telia.com
+    [213.64.79.189]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g7MI8xl17687 for <exmh-workers@redhat.com>; Thu, 22 Aug 2002 14:08:59
+    -0400
+Received: by milou.dyndns.org (Postfix, from userid 500) id 64D053F25;
+    Thu, 22 Aug 2002 20:23:22 +0200 (CEST)
+Received: from tippex.localdomain (localhost [127.0.0.1]) by
+    milou.dyndns.org (Postfix) with ESMTP id 634573F23; Thu, 22 Aug 2002
+    20:23:22 +0200 (CEST)
+To: Chris Garrigues <cwg-dated-1030470582.50ccab@DeepEddy.Com>,
+	exmh-workers@redhat.com
+Subject: Re: CVS report
+From: Anders Eriksson <aeriksson@fastmail.fm>
+In-Reply-To: Your message of
+    "Thu, 22 Aug 2002 12:49:41 CDT."
+    <1030038582.14329.TMDA@deepeddy.vircio.com>
+Message-Id: <20020822182322.64D053F25@milou.dyndns.org>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Thu, 22 Aug 2002 20:23:17 +0200
+
+
+Oooops!
+
+Doesn't work at all. Got this on startup and on any attempt to change folder (which fail)
+
+/Anders
+
+can't read "flist(seqcount,lists/exmh,unseen)": no such element in array
+    (reading value of variable to increment)
+    invoked from within
+"incr flist(seqcount,$folder,$seq) $delta"
+    (procedure "Seq_Del" line 16)
+    invoked from within
+"Seq_Del $exmh(folder) $mhProfile(unseen-sequence) $msgid"
+    (procedure "MsgSeen" line 7)
+    invoked from within
+"MsgSeen $msgid"
+    (procedure "MsgShow" line 12)
+    invoked from within
+"MsgShow $msgid"
+    (procedure "MsgChange" line 17)
+    invoked from within
+"MsgChange 73 show"
+    invoked from within
+"time [list MsgChange $msgid $show"
+    (procedure "Msg_Change" line 3)
+    invoked from within
+"Msg_Change $msg(id) $show"
+    (procedure "Msg_Show" line 7)
+    invoked from within
+"Msg_Show cur"
+    ("eval" body line 1)
+    invoked from within
+"eval $msgShowProc"
+    (procedure "FolderChange" line 55)
+    invoked from within
+"FolderChange lists/exmh {Msg_Show cur}"
+    invoked from within
+"time [list  FolderChange $folder $msgShowProc"
+    (procedure "Folder_Change" line 3)
+    invoked from within
+"Folder_Change $exmh(folder)"
+    (procedure "Exmh" line 101)
+    invoked from within
+"Exmh"
+    ("after" script)
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+

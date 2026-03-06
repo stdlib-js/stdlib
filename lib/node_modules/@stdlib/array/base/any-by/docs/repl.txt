@@ -1,0 +1,50 @@
+
+{{alias}}( x, predicate[, thisArg] )
+    Tests whether at least one element in an array passes a test implemented by
+    a predicate function.
+
+    The predicate function is provided three arguments:
+
+    - value: current array element.
+    - index: current array element index.
+    - arr: the input array.
+
+    If provided an array-like object having a `some` method , the function
+    defers execution to that method and assumes that the method has the
+    following signature:
+
+      x.some( predicate, thisArg )
+
+    If provided an array-like object without a `some` method, the function
+    performs a linear scan and returns immediately upon encountering a
+    truthy return value.
+
+    If provided an empty array, the function returns `false`.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        Input array.
+
+    predicate: Function
+        Predicate function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if the predicate function returns a truthy
+        value for at least one element; otherwise, the function returns `false`.
+
+    Examples
+    --------
+    > function f( v ) { return ( v > 0 ); };
+    > var x = [ 0, 0, 1, 0 ];
+    > var out = {{alias}}( x, f )
+    true
+
+    See Also
+    --------
+

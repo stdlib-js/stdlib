@@ -1,0 +1,81 @@
+From ilug-admin@linux.ie  Thu Aug 22 13:27:39 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.spamassassin.taint.org (Postfix) with ESMTP id A7FD7454F6
+	for <zzzz@localhost>; Thu, 22 Aug 2002 08:27:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 13:27:38 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MCJiZ06043 for
+    <zzzz-ilug@jmason.org>; Thu, 22 Aug 2002 13:19:44 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA29323; Thu, 22 Aug 2002 13:18:52 +0100
+Received: from email.qves.com ([67.104.83.251]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA29282 for <ilug@linux.ie>; Thu,
+    22 Aug 2002 13:18:37 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [67.104.83.251] claimed to
+    be email.qves.com
+Received: from qvp0091 ([169.254.6.22]) by email.qves.com with Microsoft
+    SMTPSVC(5.0.2195.2966); Thu, 22 Aug 2002 06:18:18 -0600
+From: "Slim Down" <taylor@s3.serveimage.com>
+To: <ilug@linux.ie>
+Date: Thu, 22 Aug 2002 06:18:18 -0600
+Message-Id: <59e6301c249d5$ffb7ea20$1606fea9@freeyankeedom.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Mailer: Microsoft CDO for Windows 2000
+Thread-Index: AcJJ1f+3FWdz11AmR6uWbmQN5gGxxw==
+Content-Class: urn:content-classes:message
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2462.0000
+X-Originalarrivaltime: 22 Aug 2002 12:18:18.0699 (UTC) FILETIME=[FFB949B0:01C249D5]
+Subject: [ILUG] Guaranteed to lose 10-12 lbs in 30 days 10.206
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+1) Fight The Risk of Cancer!
+http://www.adclick.ws/p.cfm?o=315&s=pk007
+
+2) Slim Down - Guaranteed to lose 10-12 lbs in 30 days
+http://www.adclick.ws/p.cfm?o=249&s=pk007
+
+3) Get the Child Support You Deserve - Free Legal Advice
+http://www.adclick.ws/p.cfm?o=245&s=pk002
+
+4) Join the Web's Fastest Growing Singles Community
+http://www.adclick.ws/p.cfm?o=259&s=pk007
+
+5) Start Your Private Photo Album Online!
+http://www.adclick.ws/p.cfm?o=283&s=pk007
+
+Have a Wonderful Day,
+Offer Manager
+PrizeMama
+
+
+
+
+
+
+
+
+
+
+
+
+
+If you wish to leave this list please use the link below.
+http://www.qves.com/trim/?ilug@linux.ie%7C17%7C114258
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,56 @@
+
+{{alias}}( x )
+    Returns element accessors for a provided array-like object.
+
+    The returned object has the following properties:
+
+    - accessorProtocol: indicating whether the provided array-like object
+    supports the get/set protocol (i.e., uses accessors for getting and setting
+    elements).
+    - accessors: a two-element array whose first element is an accessor for
+    retrieving an array element and whose second element is an accessor for
+    setting an array element.
+
+    The getter accessor accepts two arguments:
+
+    - data: data buffer.
+    - idx: element index.
+
+    The setter accessor accepts three arguments:
+
+    - data: data buffer.
+    - idx: element index.
+    - value: value to set.
+
+    The intent of this function is to provide a minimal abstraction over how
+    elements are accessed when operating on indexed (i.e., array-like objects
+    supporting element access via integer indices using bracket `[]` syntax)
+    and accessor (i.e., array-like objects supporting the get/set protocol in
+    which explicit `get` and `set` methods are used for element access) array-
+    like objects.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: Object
+        Object containing accessor data.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var out = {{alias}}( x )
+    {...}
+    > var bool = out.accessorProtocol
+    false
+    > var fcns = out.accessors
+    [ <Function>, <Function> ]
+    > fcns[ 0 ]( x, 1 )
+    2
+
+    See Also
+    --------
+

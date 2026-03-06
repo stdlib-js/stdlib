@@ -1,0 +1,10 @@
+
+Usage: datasets [options] [--name=<name>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --name name           Dataset name.
+         --ls                  List datasets.
+

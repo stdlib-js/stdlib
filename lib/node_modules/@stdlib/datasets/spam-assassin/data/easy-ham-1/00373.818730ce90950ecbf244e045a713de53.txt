@@ -1,0 +1,180 @@
+From fork-admin@xent.com  Mon Sep  2 16:22:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2955A44155
+	for <jm@localhost>; Mon,  2 Sep 2002 11:21:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 16:21:56 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g822fqZ16863 for <jm@jmason.org>;
+    Mon, 2 Sep 2002 03:41:52 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 448352940EE; Sun,  1 Sep 2002 19:39:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id 9A697294099 for <fork@xent.com>;
+    Sun,  1 Sep 2002 19:38:10 -0700 (PDT)
+Received: (qmail 3351 invoked by uid 1111); 2 Sep 2002 02:40:27 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: <fork@spamassassin.taint.org>
+Subject: Tech's Major Decline
+Message-Id: <Pine.LNX.4.33.0209011921330.3235-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 1 Sep 2002 19:40:27 -0700 (PDT)
+
+"Once we thought of the Internet as this thing with infinite capabilities.
+It was basically just a fad that came along."
+
+Missing from the article is the percentage of foreign enrolement, I would
+bet the numbers of students from Asia (China specificly) has gone up quite a
+bit, and is the only thing keeping the overall numbers from plummiting.
+
+"you can't get the chicks with that anymore."
+
+About time us geeks were outcasts again. I was getting sick of hearing about
+geeks breeding and ending up with autistic children - proving that
+intelligence is a genetic defect and a "do not breed" flag.)
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+-----------------
+
+Tech's Major Decline
+College Students Turning Away From Bits and Bytes
+
+By Ellen McCarthy
+Washington Post Staff Writer
+Tuesday, August 27, 2002; Page E01
+
+If John Yandziak had been entering college a few years ago, he might have
+sought a stake in the "new" economy. He might have dreamed of becoming an
+ace code-cracker for the CIA or the National Security Agency, or imagined
+toppling an empire with revolutionary software. Maybe he would have tried to
+use the Internet to end world hunger.
+
+But as Yandziak attends his first college classes this week, he's harboring
+different academic ambitions. The Ashburn native says he wants to do
+something more social and more interesting than working with computers.
+
+Besides, he said while packing for a Charlottesville dormitory room, "you
+can't get the chicks with that anymore."
+
+The tech industry's financial problems are enough to bankrupt the dreams of
+some fair-weather students. But now there's another consequence of the tech
+bust: Enrollment growth in undergraduate computer science departments has
+come to a halt.
+
+The number of undergraduates majoring in computer science fell 1 percent in
+2001, according to a report by the Computing Research Association. And
+educators in the field say the trend seems to be accelerating, with some
+colleges seeing much greater drops as the new academic year begins.
+
+The word is out among department deans that the bust's fallout has trickled
+into the classroom, said Maria Clavez, president of the Association of
+Computing Machinery.
+
+"I've heard everything from no change to modest decline to more dramatic
+declines," said Clavez, who will become the dean of science and engineering
+at Princeton University in January. "It can be hard to see this, because at
+some colleges the number of people who want to study computer science so far
+exceeds the available space. [But] it is going to have an effect."
+
+At Virginia Tech, enrollment of undergraduates in the computer science
+department will drop 25 percent this year, to 300. At George Washington
+University, the number of incoming freshmen who plan to study computer
+science fell by more than half this year.
+
+Interest in undergraduate computer science programs had grown rapidly in the
+past decade. In 1997, schools with PhD programs in computer science and
+computer engineering granted 8,063 degrees, according to the Computing
+Research Association. The numbers rose through 2001, when 17,048 degrees
+were awarded.
+
+The Labor Department projects that software engineering will be the
+fastest-growing occupation between 2000 and 2010, with other
+computer-related industries trailing close behind.
+
+But in the short term that growth may slow, based on the changes among
+college students. For example, 900 of the 2,000-plus undergraduates studying
+information technology and engineering at George Mason University were
+computer science majors last year. This year the enrollment in that major is
+down to 800, although a newly created and more general information
+technology major has attracted 200 students.
+
+"Having it ease off for a while is a bit of a relief," said Lloyd Griffith,
+dean of George Mason's information technology and engineering school.
+"Particularly with the field as it has been, they don't want to spend four
+years on something and then not get a job."
+
+Freshman enrollment for the University of Maryland's computer science major
+is expected to be about 167 this fall, down from 329 last year. Maryland
+decreased its total freshman enrollment by 11 percent, but that alone does
+not account for the drop, said Steve Halperin, dean of Maryland's College of
+Computer, Mathematical and Physical Sciences.
+
+"We are seeing a decrease in the number of freshmen who are declaring their
+interest in pursuing computer science as a major," Halperin said. "That's a
+factual statement. But I would say that at this point . . . we don't expect
+to see a decrease in the number of graduates. Many of the kids who are no
+longer expressing an interest in majoring in CS would have fallen off."
+
+Yandziak, who began at the University of Virginia on Saturday, is not
+convinced that's the case. He graduated in the top 5 percent of his class,
+with a 3.9 grade-point average, and nailed the highest possible score on his
+advanced-placement exam in computer science.
+
+"All of my classes have been easy for me. Math and sciences were always fun,
+so I looked for professions in which I could use those things," Yandziak
+said. "I'm just not sure I want my life to be immersed in [technology]. I
+want to do something that will contribute to the practical world."
+
+Harris N. Miller, president of the Information Technology Association of
+America, said the last time there was a dearth of computing professionals,
+salaries skyrocketed and workers benefited from the labor shortage.
+
+"There was a tremendous imbalance in the late '90s; potentially you have the
+same sort of thing going on right now. People are saying, 'I don't need this
+kind of IT training right now,' " Miller said. "Our concern as an industry
+is that if they begin to again see major declines in enrollment, down the
+road four years, as the economy picks up, once again companies are going to
+find themselves in a shortage situation."
+
+Economic potential weighs heavily in many student career choices, but other
+factors, including program difficulty, personal interests and social
+influences, also come into play, said Judy Hingle, director of professional
+development at the American College Counseling Association. The perception
+of computer science as an isolating, "nerdy" profession is one that many in
+the industry have tried to squelch. That stereotype went underground during
+the tech bubble but reemerged during the bust.
+
+"All the hipness is gone," Yandziak said. "Once we thought of the Internet
+as this thing with infinite capabilities. It was basically just a fad that
+came along."
+
+Lamont Thompson, a recent graduate of Calvin Coolidge Senior High School in
+the District, is headed to Morehouse College in Atlanta to study business
+marketing, with the intention of going into real estate development.
+
+"Technology comes natural to people my age; it's not fascinating anymore,"
+Thompson said. "To be honest with you, when I think computer science, I
+think of some guy sitting behind a computer all day in a dark room. It's a
+necessity, but I wouldn't take it any further."
+
+

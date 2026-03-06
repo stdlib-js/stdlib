@@ -1,0 +1,53 @@
+From ilug-admin@linux.ie  Wed Dec  4 11:53:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0D21916F17
+	for <jm@localhost>; Wed,  4 Dec 2002 11:53:00 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Dec 2002 11:53:00 +0000 (GMT)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB4Bda812712 for
+    <jm-ilug@jmason.org>; Wed, 4 Dec 2002 11:39:36 GMT
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 039263423A; Wed,  4 Dec 2002 11:41:10 +0000 (GMT)
+Delivered-To: linux.ie-ilug@localhost
+Received: from kbs01.kbs.ie (unknown [213.190.156.48]) by lugh.tuatha.org
+    (Postfix) with ESMTP id DC9A334234 for <ilug@linux.ie>; Wed,
+    4 Dec 2002 11:40:05 +0000 (GMT)
+Received: by KBS01 with Internet Mail Service (5.5.2653.19) id <XSWWZCBL>;
+    Wed, 4 Dec 2002 11:40:19 -0000
+Message-Id: <55DA5264CE16D41186F600D0B74D6B0924745C@KBS01>
+From: "Brian O'Donoghue" <Brian.ODonoghue@kbs.ie>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: RE: [ILUG] Linux Install
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Wed, 4 Dec 2002 11:40:18 -0000
+Date: Wed, 4 Dec 2002 11:40:18 -0000
+
+> I had the same problem when installing Win on it and eventually sorted it
+> out by disabling the infrared port. 
+
+Enter your bios and try disabling your infrared port in the bios.
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

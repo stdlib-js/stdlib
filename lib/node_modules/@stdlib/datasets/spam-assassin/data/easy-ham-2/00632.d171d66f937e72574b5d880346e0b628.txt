@@ -1,0 +1,86 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug 13 16:43:23 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4B53A43C32
+	for <jm@localhost>; Tue, 13 Aug 2002 11:43:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 16:43:23 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7DFeZm06728 for <jm-razor@jmason.org>; Tue, 13 Aug 2002 16:40:35 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17edhG-0005Mv-00; Tue,
+    13 Aug 2002 08:35:02 -0700
+Received: from cm22.omega47.scvmaxonline.com.sg ([218.186.47.22]
+    helo=svr1.03s.net) by usw-sf-list1.sourceforge.net with smtp (Exim
+    3.31-VA-mm2 #1 (Debian)) id 17edgI-0007cr-00 for
+    <razor-users@lists.sourceforge.net>; Tue, 13 Aug 2002 08:34:02 -0700
+Received: (qmail 30015 invoked by uid 501); 13 Aug 2002 15:33:32 -0000
+From: Adrian Ho <aho-sw-razor@03s.net>
+To: razor-users@example.sourceforge.net
+Subject: Re: [Razor-users] FW: intigration with qmail
+Message-Id: <20020813233332.A30847@svr1.03s.net>
+Mail-Followup-To: razor-users@example.sourceforge.net
+References: <00aa01c242d7$fc9b1920$1c01a8c0@UPTEL.LOCAL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.15i
+In-Reply-To: <00aa01c242d7$fc9b1920$1c01a8c0@UPTEL.LOCAL>; from
+    adminmjh@alphacomm.net on Tue, Aug 13, 2002 at 09:44:33AM -0500
+Mail-Followup-To: <razor-users@example.sourceforge.net>
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Tue, 13 Aug 2002 23:33:32 +0800
+Date: Tue, 13 Aug 2002 23:33:32 +0800
+
+On Tue, Aug 13, 2002 at 09:44:33AM -0500, Michael J Humphries wrote:
+> I sent this message already and I am sorry if I am asking the wrong
+> question or if I have been asking stupid questions but I am in an urgent
+> time when people are using my service to spam others and I NEED to stop
+> them quickly.
+
+Sounds like you're solving the wrong problem.  If untrusted strangers
+are relaying spam through your qmail server, it's a fair bet that
+you've seriously botched your qmail config (like forgetting to create
+an rcpthosts file or something).
+
+Anyway, if you insist on using razor to resolve this problem, I
+would suggest tossing qmail-scanner <http://qmail-scanner.sf.net/>
+and SpamAssassin <http://www.spamassassin.org/> into the mix as well.
+The former provides the qmail-integration framework on which the latter
+does its work (including razor-check invocations).
+
+Fair warning: It'll be far more resource-intensive than simply denying
+relaying privileges to everyone except the folks you trust.  To find
+out how to do that, go to <http://www.qmail.org/> (which, incidentally,
+should be your first stop for all things qmail) and search for "qmail
+newbie's guide to relaying".
+
+- Adrian
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Dice - The leading online job board
+for high-tech professionals. Search and apply for tech jobs today!
+http://seeker.dice.com/seeker.epl?rel_code=31
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

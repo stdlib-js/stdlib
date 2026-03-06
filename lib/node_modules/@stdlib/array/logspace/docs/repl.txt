@@ -1,0 +1,32 @@
+
+{{alias}}( a, b[, length] )
+    Generates a logarithmically spaced numeric array between `10^a` and `10^b`.
+
+    If a `length` is not provided, the default output array length is `10`.
+
+    The output array includes the values `10^a` and `10^b`.
+
+    Parameters
+    ----------
+    a: number
+        Exponent of start value.
+
+    b: number
+        Exponent of end value.
+
+    length: integer (optional)
+        Length of output array. Default: `10`.
+
+    Returns
+    -------
+    arr: Array
+        Logarithmically spaced numeric array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 0, 2, 6 )
+    [ 1, ~2.5, ~6.31, ~15.85, ~39.81, 100 ]
+
+    See Also
+    --------
+

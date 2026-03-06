@@ -1,0 +1,32 @@
+
+{{alias}}( x )
+    Converts a double-precision floating-point number to a signed 32-bit
+    integer.
+
+    Parameters
+    ----------
+    x: number
+        Double-precision floating-point number.
+
+    Returns
+    -------
+    out: integer
+        Signed 32-bit integer.
+
+    Examples
+    --------
+    > var y = {{alias}}( 4294967295.0 )
+    -1
+    > y = {{alias}}( 3.14 )
+    3
+    > y = {{alias}}( -3.14 )
+    -3
+    > y = {{alias}}( NaN )
+    0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pinf}} )
+    0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/ninf}} )
+    0
+
+    See Also
+    --------

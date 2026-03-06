@@ -1,0 +1,64 @@
+From fork-admin@xent.com  Tue Sep 10 11:07:32 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6EB6816F03
+	for <jm@localhost>; Tue, 10 Sep 2002 11:07:29 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 10 Sep 2002 11:07:29 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8A28CC12363 for <jm@jmason.org>;
+    Tue, 10 Sep 2002 03:08:12 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E2A982942F0; Mon,  9 Sep 2002 19:05:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sccrmhc01.attbi.com (sccrmhc01.attbi.com [204.127.202.61])
+    by xent.com (Postfix) with ESMTP id 7198F29409A for <fork@xent.com>;
+    Mon,  9 Sep 2002 19:04:41 -0700 (PDT)
+Received: from Intellistation ([66.31.2.27]) by sccrmhc01.attbi.com
+    (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP id
+    <20020910020728.OFEI9751.sccrmhc01.attbi.com@Intellistation> for
+    <fork@xent.com>; Tue, 10 Sep 2002 02:07:28 +0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Eirikur Hallgrimsson <eh@mad.scientist.com>
+Organization: Electric Brain
+To: "FoRK" <fork@spamassassin.taint.org>
+Subject: Re: Recommended Viewing
+User-Agent: KMail/1.4.1
+References: <ILEHJNJFPDLMDEKNIAKCIEEICAAA.geege@barrera.org>
+In-Reply-To: <ILEHJNJFPDLMDEKNIAKCIEEICAAA.geege@barrera.org>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200209092206.33219.eh@mad.scientist.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 22:06:33 -0400
+
+On Monday 09 September 2002 09:51 pm, Geege Schuman wrote
+> ever notice how the feelings evoked in some dreams stick with you all
+> day?i'm sure it's some neurochemical process initiated during the dream
+> that is still cycling thru - like a deja vu, triggered by memory
+> processes, where > you don't actually remember but you feel like you're
+> remembering.
+
+Absolutely, and I've wanted to recapture it.  I've done some writing based 
+on dreams, and there is a mysterious "mood" to that feeling that drives 
+some creative stuff for me.  I've never tried to write music in that 
+state, but I will next time.
+
+Eirikur
+
+
+
+

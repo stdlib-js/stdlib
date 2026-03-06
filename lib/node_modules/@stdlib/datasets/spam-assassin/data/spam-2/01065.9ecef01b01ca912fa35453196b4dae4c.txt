@@ -1,0 +1,56 @@
+From sitescooper-talk-admin@lists.sourceforge.net  Thu Jul 25 13:07:23 2002
+Return-Path: <sitescooper-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7E939440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 08:07:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 13:07:21 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6PC3J428785 for <jm-scoop@jmason.org>; Thu, 25 Jul 2002 13:03:19 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17XhJl-0002DW-00; Thu,
+    25 Jul 2002 05:02:05 -0700
+Received: from 200-207-44-182.dsl.telesp.net.br ([200.207.44.182]
+    helo=itxabdm) by usw-sf-list1.sourceforge.net with smtp (Exim 3.31-VA-mm2
+    #1 (Debian)) id 17XhJO-0004kn-00 for
+    <sitescooper-talk@lists.sourceforge.net>; Thu, 25 Jul 2002 05:01:43 -0700
+From: Alper NURdogan <bfebyivif@kolaymail.com>
+To: <sitescooper-talk@example.sourceforge.net>
+X-Mailer: Internet Mail Service (5.5.2650.21)
+Content-Type: text/plain
+Message-Id: hayjjrvykgrb@example.sourceforge.net
+Subject: [scoop] Muzik iste
+Sender: sitescooper-talk-admin@example.sourceforge.net
+Errors-To: sitescooper-talk-admin@example.sourceforge.net
+X-Beenthere: sitescooper-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:sitescooper-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:sitescooper-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Discussion of sitescooper - see http://sitescooper.org/
+    <sitescooper-talk.lists.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/sitescooper-talk>,
+    <mailto:sitescooper-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=sitescooper-talk>
+X-Original-Date: Thu, 25 Jul 2002 12:58:17 -0400
+Date: Thu, 25 Jul 2002 12:58:17 -0400
+X-MIME-Autoconverted: from base64 to 8bit by dogma.slashnull.org id
+    g6PC3J428785
+Content-Transfer-Encoding: 8bit
+
+JetMp3 Türkiye'de ilk kez uygulanan bir sistemi hayata geçirdi.
+http://www.jetmp3.com
+Bu sistemle artık İstediğiniz MP3 leri ister tek tek isterseniz albümler halinde ve birkaç dakika içinde sanki disketten bilgisayarınıza yükler gibi süratle indirebilirsiniz. Turk ve Yabancı albümler, klipler ve daha fazlası...
+11gb lik arşivimize göz atmak için tıklayın: http://www.jetmp3.com
+
+
+
+ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÓ†+,ùŞµéšŠX¬²š'²ŠŞu¼ÿ%¦Ûz¿Ó…ì(®Wÿ±ö¬µë-‚º0Šx+y©ÿ¶)r‰¦ºxœjØ¨Êej×è®oÃ¢íë- ÏÁº)]ŠØ§şm§ÿÿÃÿ¦Ûz¿Ü¢oè±ÙÿÆ)ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿô¢µë¢Š^¯ûZ–IšŠX§‚X¬µ(­zÇ(¢—«şÖ¥“ùb²Ûÿ²‹«qçè®ÿëa¶ÚlÿÿåŠËlşÊ.­ÇŸ¢¸şw­şX¬¶ÏåŠËbú?²+^±Ê(¥êÿµ©d
+
+

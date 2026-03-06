@@ -1,0 +1,61 @@
+From rssfeeds@jmason.org  Thu Oct 10 12:32:02 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A161416F17
+	for <jm@localhost>; Thu, 10 Oct 2002 12:32:01 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 10 Oct 2002 12:32:01 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9A804K13846 for
+    <jm@jmason.org>; Thu, 10 Oct 2002 09:00:04 +0100
+Message-Id: <200210100800.g9A804K13846@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: Six
+Date: Thu, 10 Oct 2002 08:00:03 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/10/09.html#six
+Date: 2002-10-09T19:54:41-05:00
+
+Actually, 5.6. I clocked my &#8220;long loop&#8221; today and discovered that 
+the run I thought was 6 miles is actually only 5.6. And the &#8220;short 
+loop&#8221; I thought was 5 miles is actually only 4.6. I have an off-by-0.4 
+bug. This is very upsetting. I've lost 0.4 miles somewhere. If anyone finds 
+them, can you please let me know? Thank you. 
+
+I ran 9 miles last week, and 10 so far this week, even taking into account my 
+off-by-0.4 bug. I fear I am turning into a runner. My father and I made fun of 
+runners when I was growing up. He used to say that you never saw a runner 
+smiling. We'd drive by runners, point at them, and say, &#8220;Look, another 
+runner... not smiling!&#8221; This weighed heavily on my psyche in my formative 
+years. So it is with some measure of shame that I admit that I am becoming a 
+runner. 
+
+Becoming a runner is actually not that difficult. Not surprisingly, it involves 
+running. There's other stuff, too, eventually, but running is the important 
+part. If you can run a mile, run a mile. If you can only run around the block, 
+run around the block. Tomorrow you'll run around the block, and the next day 
+you'll find you can run around two blocks. And next week you'll find you can 
+run a mile. Then one day you'll run a mile, then stop to catch your breath, 
+then get invigorated and run another mile. 
+
+And then you're a runner. That's it, really. It's not complicated. You run, and 
+you run, and you run. And one day, you discover that shoes are important, and 
+that the old sneakers you threw on the first time you tried out this running 
+thing out aren't actually very good for running. So you go buy new shoes, and 
+you run, and you run, and you run. And later, you discover that stretching is 
+important too, so you stretch and run, and stretch and run, and stretch and 
+run. 
+
+There's other stuff too, but it doesn't really matter until you're already a 
+runner. You learn about differences in running surfaces. And how many miles you 
+should really put on one pair of shoes. And when in the day you should run to 
+maximize calorie burning. And how to train for a marathon, and so forth. Don't 
+worry about any of that now. Just run. Running is key. Otherwise you're just 
+another fat schmuck lying on the couch reading _Runner's World_.
+
+
+

@@ -1,0 +1,21 @@
+{
+	"string": [
+		"pos"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"backward"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"backward": [
+			"b"
+		]
+	}
+}

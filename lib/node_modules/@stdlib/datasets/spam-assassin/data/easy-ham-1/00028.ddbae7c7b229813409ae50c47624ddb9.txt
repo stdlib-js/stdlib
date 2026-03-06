@@ -1,0 +1,55 @@
+From fork-admin@xent.com  Fri Aug 23 11:08:26 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BA70647C68
+	for <zzzz@localhost>; Fri, 23 Aug 2002 06:06:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 23 Aug 2002 11:06:46 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7MJOSZ21435 for <zzzz@spamassassin.taint.org>;
+    Thu, 22 Aug 2002 20:24:28 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 532572940E5; Thu, 22 Aug 2002 12:22:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 19BE0294099 for <fork@xent.com>; Thu,
+    22 Aug 2002 12:21:43 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id D1DEE3EC9E;
+    Thu, 22 Aug 2002 15:25:24 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id D04DE3EC10; Thu, 22 Aug 2002 15:25:24 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: "Joseph S. Barrera III" <joe@barrera.org>
+Cc: Chris Haun <chris@noskillz.com>, <fork@spamassassin.taint.org>
+Subject: Re: lifegem
+In-Reply-To: <3D653874.8010204@barrera.org>
+Message-Id: <Pine.BSO.4.44.0208221524380.28231-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 22 Aug 2002 15:25:24 -0400 (EDT)
+
+On Thu, 22 Aug 2002, Joseph S. Barrera III wrote:
+--]Why wait until you're dead? I'm sure there's enough carbon in
+--]the fat from your typical liposuction job to make a decent diamond.
+
+So thats why I keep seeing DeBeers agents hovering around me.
+
+-tom(diamonds in the folds of my flesh)wsmf
+
+
+http://xent.com/mailman/listinfo/fork
+

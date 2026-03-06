@@ -1,0 +1,87 @@
+
+{{alias}}( x, α, β )
+    Evaluates the cumulative distribution function (CDF) for a gamma
+    distribution with shape parameter `α` and rate parameter `β` at a value `x`.
+
+    If `α < 0` or `β <= 0`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    α: number
+        Shape parameter.
+
+    β: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated CDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 1.0, 1.0 )
+    ~0.865
+    > y = {{alias}}( 2.0, 3.0, 1.0 )
+    ~0.323
+    > y = {{alias}}( -1.0, 2.0, 2.0 )
+    0.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/pinf}}, 4.0, 2.0 )
+    1.0
+    > y = {{alias}}( {{alias:@stdlib/constants/float64/ninf}}, 4.0, 2.0 )
+    0.0
+
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+
+    > y = {{alias}}( 2.0, -1.0, 1.0 )
+    NaN
+    > y = {{alias}}( 2.0, 1.0, -1.0 )
+    NaN
+
+    // Degenerate distribution centered at `0` when `α = 0.0`:
+    > y = {{alias}}( 2.0, 0.0, 2.0 )
+    1.0
+    > y = {{alias}}( -2.0, 0.0, 2.0 )
+    0.0
+    > y = {{alias}}( 0.0, 0.0, 2.0 )
+    0.0
+
+
+{{alias}}.factory( α, β )
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    of a gamma distribution with shape parameter `α` and rate parameter `β`.
+
+    Parameters
+    ----------
+    α: number
+        Shape parameter.
+
+    β: number
+        Rate parameter.
+
+    Returns
+    -------
+    cdf: Function
+        Cumulative distribution function (CDF).
+
+    Examples
+    --------
+    > var myCDF = {{alias}}.factory( 2.0, 0.5 );
+    > var y = myCDF( 6.0 )
+    ~0.801
+    > y = myCDF( 2.0 )
+    ~0.264
+
+    See Also
+    --------
+

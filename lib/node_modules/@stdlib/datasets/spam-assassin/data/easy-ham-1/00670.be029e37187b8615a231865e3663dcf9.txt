@@ -1,0 +1,1728 @@
+From fork-admin@xent.com  Sat Sep 21 10:42:45 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B584816F03
+	for <jm@localhost>; Sat, 21 Sep 2002 10:42:27 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 21 Sep 2002 10:42:27 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8L0CPC32195 for <jm@jmason.org>;
+    Sat, 21 Sep 2002 01:13:14 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 14FEC294179; Fri, 20 Sep 2002 17:08:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from gremlin.ics.uci.edu (gremlin.ics.uci.edu [128.195.1.70]) by
+    xent.com (Postfix) with ESMTP id DF76529409C for <fork@xent.com>;
+    Fri, 20 Sep 2002 17:07:52 -0700 (PDT)
+Received: from localhost (godzilla.ics.uci.edu [128.195.1.58]) by
+    gremlin.ics.uci.edu (8.12.5/8.12.5) with ESMTP id g8L0AoBO028706 for
+    <fork@xent.com>; Fri, 20 Sep 2002 17:10:51 -0700 (PDT)
+MIME-Version: 1.0 (Apple Message framework v482)
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+Subject: sed /s/United States/Roman Empire/g
+From: Rohit Khare <khare@alumni.caltech.edu>
+To: fork@spamassassin.taint.org
+Content-Transfer-Encoding: 7bit
+Message-Id: <979BE8FE-CCF6-11D6-817E-000393A46DEA@alumni.caltech.edu>
+X-Mailer: Apple Mail (2.482)
+X-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 20 Sep 2002 17:10:48 -0700
+
+> A world where some live in comfort and plenty, while half of the human 
+> race lives on less than $2 a day, is neither just nor stable.
+
+Absolutely correct. Perhaps the most fundamental thing to realize about 
+life on Earth today.
+
+The following is a fascinating document of official Government policy 
+that bears close reading. It is the aspirations of a wonderful nation in 
+an imperfect world.
+
+>  The war on terrorism is not a clash of civilizations. It does, 
+> however, reveal the clash inside a civilization, a battle for the 
+> future of the Muslim world. This is a struggle of ideas and this is an 
+> area where America must excel.
+
+I was recently at a lecture about the surprising success of Radio Sawa, 
+our new music-and-news channel for 15-30 year old Arabs. It's #1 in 
+practically every market it's entered, nearing 90% listenership in 
+Amman. And it's even beginning to be trusted for news, well past BBC and 
+taking share from every other government broadcaster.
+
+It is as hard to imagine America losing a war of ideas in the long-term 
+as it is to imagine America making any headway at all in the short term.
+
+Many of you may disagree, but I found the document below surprisingly 
+centrist. If you know the code, you can hear clearly partisan tones, re: 
+ICC, Taiwan Relations Act, etc. But, still, this is as much a Democratic 
+platform as not. Africa and AIDS take up more mindshare than I feared 
+they might.
+
+As you read, replace "United States" with "Roman Empire" and it may make 
+as much sense, in the long view of history. I don't know how proud to be 
+about that, but it is telling. Sometime I daydream that the President 
+might sit down with the nation with Perotista flip charts and explain to 
+our citizens the sheer vastness of our 700+ military installations 
+overseas and what they do for us. It would be a powerful education on 
+how engaged we are in the world around us.
+
+Heck, I'd love to see a real-time map of Federal expenditures around the 
+globe, a softly glowing necklace of embassies, carriers, arctic research 
+stations, hotels, golf courses, warehouses, libraries, clinics and all 
+the rest of the influence a trillion dollars here or there can buy.
+
+Of course, this still doesn't leave me any more comfortable with the 
+real news in this document: the Bush Doctrine for pre-emptive strikes. 
+I'd sooner repeal the Church amendments on covert action than permit 
+such a principle to be loosed upon the world.
+
+Rohit
+
+-----------------------------------------------------
+September 20, 2002
+
+Full Text: Bush's National Security Strategy
+
+Following is the full text of President Bush's new national security 
+strategy. The document, entitled "The National Security Strategy of the 
+United States," will soon be transmitted to Congress as a declaration of 
+the Administration's policy.
+
+INTRODUCTION
+
+THE great struggles of the twentieth century between liberty and 
+totalitarianism ended with a decisive victory for the forces of 
+freedom -- and a single sustainable model for national success: freedom, 
+democracy, and free enterprise. In the twenty-first century, only 
+nations that share a commitment to protecting basic human rights and 
+guaranteeing political and economic freedom will be able to unleash the 
+potential of their people and assure their future prosperity. People 
+everywhere want to say what they think; choose who will govern them; 
+worship as they please; educate their children -- male and female; own 
+property; and enjoy the benefits of their labor. These values of freedom 
+are right and true for every person, in every society -- and the duty of 
+protecting these values against their enemies is the common calling of 
+freedom-loving people across the globe and across the ages.
+
+Today, the United States enjoys a position of unparalleled military 
+strength and great economic and political influence. In keeping with our 
+heritage and principles, we do not use our strength to press for 
+unilateral advantage. We seek instead to create a balance of power that 
+favors human freedom: conditions in which all nations and all societies 
+can choose for themselves the rewards and challenges of political and 
+economic liberty. By making the world safer, we allow the people of the 
+world to make their own lives better. We will defend this just peace 
+against threats from terrorists and tyrants. We will preserve the peace 
+by building good relations among the great powers. We will extend the 
+peace by encouraging free and open societies on every continent.
+
+Defending our Nation against its enemies is the first and fundamental 
+commitment of the Federal Government. Today, that task has changed 
+dramatically. Enemies in the past needed great armies and great 
+industrial capabilities to endanger America. Now, shadowy networks of 
+individuals can bring great chaos and suffering to our shores for less 
+than it costs to purchase a single tank. Terrorists are organized to 
+penetrate open societies and to turn the power of modern technologies 
+against us.
+
+To defeat this threat we must make use of every tool in our arsenal -- 
+from better homeland defenses and law enforcement to intelligence and 
+cutting off terrorist financing. The war against terrorists of global 
+reach is a global enterprise of uncertain duration. America will help 
+nations that need our assistance in combating terror. And America will 
+hold to account nations that are compromised by terror -- because the 
+allies of terror are the enemies of civilization. The United States and 
+countries cooperating with us must not allow the terrorists to develop 
+new home bases. Together, we will seek to deny them sanctuary at every 
+turn.
+
+The gravest danger our Nation faces lies at the crossroads of radicalism 
+and technology. Our enemies have openly declared that they are seeking 
+weapons of mass destruction, and evidence indicates that they are doing 
+so with determination. The United States will not allow these efforts to 
+succeed. We will build defenses against ballistic missiles and other 
+means of delivery. We will cooperate with other nations to deny, 
+contain, and curtail our enemies' efforts to acquire dangerous 
+technologies. And, as a matter of common sense and self-defense, America 
+will act against such emerging threats before they are fully formed. We 
+cannot defend America and our friends by hoping for the best. So we must 
+be prepared to defeat our enemies' plans, using the best intelligence 
+and proceeding with deliberation. History will judge harshly those who 
+saw this coming danger but failed to act. In the new world we have 
+entered, the only path to safety is the path of action.
+
+As we defend the peace, we will also take advantage of an historic 
+opportunity to preserve the peace. Today, the international community 
+has the best chance since the rise of the nation-state in the 
+seventeenth century to build a world where great powers compete in peace 
+instead of continually prepare for war. Today, the world's great powers 
+find ourselves on the same side -- united by common dangers of terrorist 
+violence and chaos. The United States will build on these common 
+interests to promote global security. We are also increasingly united by 
+common values. Russia is in the midst of a hopeful transition, reaching 
+for its democratic future and a partner in the war on terror. Chinese 
+leaders are discovering that economic freedom is the only source of 
+national wealth. In time, they will find that social and political 
+freedom is the only source of national greatness. America will encourage 
+the advancement of democracy and economic openness in both nations, 
+because these are the best foundations for domestic stability and 
+international order. We will strongly resist aggression from other great 
+powers -- even as we welcome their peaceful pursuit of prosperity, 
+trade, and cultural advancement.
+
+Finally, the United States will use this moment of opportunity to extend 
+the benefits of freedom across the globe. We will actively work to bring 
+the hope of democracy, development, free markets, and free trade to 
+every corner of the world. The events of September 11, 2001, taught us 
+that weak states, like Afghanistan, can pose as great a danger to our 
+national interests as strong states. Poverty does not make poor people 
+into terrorists and murderers. Yet poverty, weak institutions, and 
+corruption can make weak states vulnerable to terrorist networks and 
+drug cartels within their borders.
+
+The United States will stand beside any nation determined to build a 
+better future by seeking the rewards of liberty for its people. Free 
+trade and free markets have proven their ability to lift whole societies 
+out of poverty -- so the United States will work with individual 
+nations, entire regions, and the entire global trading community to 
+build a world that trades in freedom and therefore grows in prosperity. 
+The United States will deliver greater development assistance through 
+the New Millennium Challenge Account to nations that govern justly, 
+invest in their people, and encourage economic freedom. We will also 
+continue to lead the world in efforts to reduce the terrible toll of 
+AIDS and other infectious diseases.
+
+In building a balance of power that favors freedom, the United States is 
+guided by the conviction that all nations have important 
+responsibilities. Nations that enjoy freedom must actively fight terror. 
+Nations that depend on international stability must help prevent the 
+spread of weapons of mass destruction. Nations that seek international 
+aid must govern themselves wisely, so that aid is well spent. For 
+freedom to thrive, accountability must be expected and required.
+
+We are also guided by the conviction that no nation can build a safer, 
+better world alone. Alliances and multilateral institutions can multiply 
+the strength of freedom-loving nations. The United States is committed 
+to lasting institutions like the United Nations, the World Trade 
+Organization, the Organization of American States, and NATO as well as 
+other long-standing alliances. Coalitions of the willing can augment 
+these permanent institutions. In all cases, international obligations 
+are to be taken seriously. They are not to be undertaken symbolically to 
+rally support for an ideal without furthering its attainment.
+
+Freedom is the non-negotiable demand of human dignity; the birthright of 
+every person -- in every civilization. Throughout history, freedom has 
+been threatened by war and terror; it has been challenged by the 
+clashing wills of powerful states and the evil designs of tyrants; and 
+it has been tested by widespread poverty and disease. Today, humanity 
+holds in its hands the opportunity to further freedom's triumph over all 
+these foes. The United States welcomes our responsibility to lead in 
+this great mission.
+
+I. Overview of America's International Strategy
+
+
+"Our Nation's cause has always been larger than our Nation's defense. We 
+fight, as we always fight, for a just peace -- a peace that favors 
+liberty. We will defend the peace against the threats from terrorists 
+and tyrants. We will preserve the peace by building good relations among 
+the great powers. And we will extend the peace by encouraging free and 
+open societies on every continent."
+
+
+
+
+
+
+President Bush
+West Point, New York
+June 1, 2002
+
+
+
+The United States possesses unprecedented -- and unequaled -- strength 
+and influence in the world. Sustained by faith in the principles of 
+liberty, and the value of a free society, this position comes with 
+unparalleled responsibilities, obligations, and opportunity. The great 
+strength of this nation must be used to promote a balance of power that 
+favors freedom.
+
+For most of the twentieth century, the world was divided by a great 
+struggle over ideas: destructive totalitarian visions versus freedom and 
+equality.
+
+That great struggle is over. The militant visions of class, nation, and 
+race which promised utopia and delivered misery have been defeated and 
+discredited. America is now threatened less by conquering states than we 
+are by failing ones. We are menaced less by fleets and armies than by 
+catastrophic technologies in the hands of the embittered few. We must 
+defeat these threats to our Nation, allies, and friends.
+
+This is also a time of opportunity for America. We will work to 
+translate this moment of influence into decades of peace, prosperity, 
+and liberty. The U.S. national security strategy will be based on a 
+distinctly American internationalism that reflects the union of our 
+values and our national interests. The aim of this strategy is to help 
+make the world not just safer but better. Our goals on the path to 
+progress are clear: political and economic freedom, peaceful relations 
+with other states, and respect for human dignity.
+
+And this path is not America's alone. It is open to all.
+
+To achieve these goals, the United States will:
+
+*	champion aspirations for human dignity;
+
+*	strengthen alliances to defeat global terrorism and work to prevent 
+attacks against us and our friends;
+
+*	work with others to defuse regional conflicts;
+
+*	prevent our enemies from threatening us, our allies, and our 
+friends, with weapons of mass destruction;
+
+*	ignite a new era of global economic growth through free markets and 
+free trade;
+
+*	expand the circle of development by opening societies and building 
+the infrastructure of democracy;
+
+*	develop agendas for cooperative action with other main centers of 
+global power; and
+
+*	transform America's national security institutions to meet the 
+challenges and opportunities of the twenty-first century.
+
+
+II. Champion Aspirations for Human Dignity
+
+
+"Some worry that it is somehow undiplomatic or impolite to speak the 
+language of right and wrong. I disagree. Different circumstances require 
+different methods, but not different moralities."
+
+
+
+
+
+President Bush
+West Point, New York
+June 1, 2002
+
+
+
+In pursuit of our goals, our first imperative is to clarify what we 
+stand for: the United States must defend liberty and justice because 
+these principles are right and true for all people everywhere. No nation 
+owns these aspirations, and no nation is exempt from them. Fathers and 
+mothers in all societies want their children to be educated and to live 
+free from poverty and violence. No people on earth yearn to be 
+oppressed, aspire to servitude, or eagerly await the midnight knock of 
+the secret police.
+
+America must stand firmly for the nonnegotiable demands of human 
+dignity: the rule of law; limits on the absolute power of the state; 
+free speech; freedom of worship; equal justice; respect for women; 
+religious and ethnic tolerance; and respect for private property.
+
+These demands can be met in many ways. America's constitution has served 
+us well. Many other nations, with different histories and cultures, 
+facing different circumstances, have successfully incorporated these 
+core principles into their own systems of governance. History has not 
+been kind to those nations which ignored or flouted the rights and 
+aspirations of their people.
+
+Our own history is a long struggle to live up to our ideals. But even in 
+our worst moments, the principles enshrined in the Declaration of 
+Independence were there to guide us. As a result, America is not just a 
+stronger, but is a freer and more just society.
+
+Today, these ideals are a lifeline to lonely defenders of liberty. And 
+when openings arrive, we can encourage change -- as we did in central 
+and eastern Europe between 1989 and 1991, or in Belgrade in 2000. When 
+we see democratic processes take hold among our friends in Taiwan or in 
+the Republic of Korea, and see elected leaders replace generals in Latin 
+America and Africa, we see examples of how authoritarian systems can 
+evolve, marrying local history and traditions with the principles we all 
+cherish.
+
+Embodying lessons from our past and using the opportunity we have today, 
+the national security strategy of the United States must start from 
+these core beliefs and look outward for possibilities to expand liberty.
+
+Our principles will guide our government's decisions about international 
+cooperation, the character of our foreign assistance, and the allocation 
+of resources. They will guide our actions and our words in international 
+bodies.
+
+We will:
+
+*	speak out honestly about violations of the nonnegotiable demands of 
+human dignity using our voice and vote in international institutions to 
+advance freedom;
+
+*	use our foreign aid to promote freedom and support those who 
+struggle non-violently for it, ensuring that nations moving toward 
+democracy are rewarded for the steps they take;
+
+*	make freedom and the development of democratic institutions key 
+themes in our bilateral relations, seeking solidarity and cooperation 
+from other democracies while we press governments that deny human rights 
+to move toward a better future; and
+
+*	take special efforts to promote freedom of religion and conscience 
+and defend it from encroachment by repressive governments.
+
+
+We will champion the cause of human dignity and oppose those who resist 
+it.
+
+III. Strengthen Alliances to Defeat Global Terrorism and Work to Prevent 
+Attacks Against Us and Our Friends
+
+
+"Just three days removed from these events, Americans do not yet have 
+the distance of history. But our responsibility to history is already 
+clear: to answer these attacks and rid the world of evil. War has been 
+waged against us by stealth and deceit and murder. This nation is 
+peaceful, but fierce when stirred to anger. The conflict was begun on 
+the timing and terms of others. It will end in a way, and at an hour, of 
+our choosing."
+
+
+
+
+
+President Bush
+Washington, D.C. (The National Cathedral)
+September 14, 2001
+
+
+
+The United States of America is fighting a war against terrorists of 
+global reach. The enemy is not a single political regime or person or 
+religion or ideology. The enemy is terrorism -- premeditated, 
+politically motivated violence perpetrated against innocents.
+
+In many regions, legitimate grievances prevent the emergence of a 
+lasting peace. Such grievances deserve to be, and must be, addressed 
+within a political process. But no cause justifies terror. The United 
+States will make no concessions to terrorist demands and strike no deals 
+with them. We make no distinction between terrorists and those who 
+knowingly harbor or provide aid to them.
+
+The struggle against global terrorism is different from any other war in 
+our history. It will be fought on many fronts against a particularly 
+elusive enemy over an extended period of time. Progress will come 
+through the persistent accumulation of successes -- some seen, some 
+unseen.
+
+Today our enemies have seen the results of what civilized nations can, 
+and will, do against regimes that harbor, support, and use terrorism to 
+achieve their political goals. Afghanistan has been liberated; coalition 
+forces continue to hunt down the Taliban and al-Qaida. But it is not 
+only this battlefield on which we will engage terrorists. Thousands of 
+trained terrorists remain at large with cells in North America, South 
+America, Europe, Africa, the Middle East, and across Asia.
+
+Our priority will be first to disrupt and destroy terrorist 
+organizations of global reach and attack their leadership; command, 
+control, and communications; material support; and finances. This will 
+have a disabling effect upon the terrorists' ability to plan and operate.
+
+We will continue to encourage our regional partners to take up a 
+coordinated effort that isolates the terrorists. Once the regional 
+campaign localizes the threat to a particular state, we will help ensure 
+the state has the military, law enforcement, political, and financial 
+tools necessary to finish the task.
+
+The United States will continue to work with our allies to disrupt the 
+financing of terrorism. We will identify and block the sources of 
+funding for terrorism, freeze the assets of terrorists and those who 
+support them, deny terrorists access to the international financial 
+system, protect legitimate charities from being abused by terrorists, 
+and prevent the movement of terrorists' assets through alternative 
+financial networks.
+
+However, this campaign need not be sequential to be effective, the 
+cumulative effect across all regions will help achieve the results we 
+seek.
+
+We will disrupt and destroy terrorist organizations by:
+
+*	direct and continuous action using all the elements of national and 
+international power. Our immediate focus will be those terrorist 
+organizations of global reach and any terrorist or state sponsor of 
+terrorism which attempts to gain or use weapons of mass destruction 
+(WMD) or their precursors;
+
+*	defending the United States, the American people, and our interests 
+at home and abroad by identifying and destroying the threat before it 
+reaches our borders. While the United States will constantly strive to 
+enlist the support of the international community, we will not hesitate 
+to act alone, if necessary, to exercise our right of self-defense by 
+acting preemptively against such terrorists, to prevent them from doing 
+harm against our people and our country; and
+
+*	denying further sponsorship, support, and sanctuary to terrorists 
+by convincing or compelling states to accept their sovereign 
+responsibilities.
+
+
+We will also wage a war of ideas to win the battle against international 
+terrorism. This includes:
+
+*	using the full influence of the United States, and working closely 
+with allies and friends, to make clear that all acts of terrorism are 
+illegitimate so that terrorism will be viewed in the same light as 
+slavery, piracy, or genocide: behavior that no respectable government 
+can condone or support and all must oppose;
+
+*	supporting moderate and modern government, especially in the Muslim 
+world, to ensure that the conditions and ideologies that promote 
+terrorism do not find fertile ground in any nation;
+
+*	diminishing the underlying conditions that spawn terrorism by 
+enlisting the international community to focus its efforts and resources 
+on areas most at risk; and
+
+*	using effective public diplomacy to promote the free flow of 
+information and ideas to kindle the hopes and aspirations of freedom of 
+those in societies ruled by the sponsors of global terrorism.
+
+
+While we recognize that our best defense is a good offense we are also 
+strengthening America's homeland security to protect against and deter 
+attack.
+
+This Administration has proposed the largest government reorganization 
+since the Truman Administration created the National Security Council 
+and the Department of Defense. Centered on a new Department of Homeland 
+Security and including a new unified military command and a fundamental 
+reordering of the FBI, our comprehensive plan to secure the homeland 
+encompasses every level of government and the cooperation of the public 
+and the private sector.
+
+This strategy will turn adversity into opportunity. For example, 
+emergency management systems will be better able to cope not just with 
+terrorism but with all hazards. Our medical system will be strengthened 
+to manage not just bioterror, but all infectious diseases and 
+mass-casualty dangers. Our border controls will not just stop 
+terrorists, but improve the efficient movement of legitimate traffic.
+
+While our focus is protecting America, we know that to defeat terrorism 
+in today's globalized world we need support from our allies and friends. 
+Wherever possible, the United States will rely on regional organizations 
+and state powers to meet their obligations to fight terrorism. Where 
+governments find the fight against terrorism beyond their capacities, we 
+will match their willpower and their resources with whatever help we and 
+our allies can provide.
+
+As we pursue the terrorists in Afghanistan, we will continue to work 
+with international organizations such as the United Nations, as well as 
+non-governmental organizations, and other countries to provide the 
+humanitarian, political, economic, and security assistance necessary to 
+rebuild Afghanistan so that it will never again abuse its people, 
+threaten its neighbors, and provide a haven for terrorists
+
+In the war against global terrorism, we will never forget that we are 
+ultimately fighting for our democratic values and way of life. Freedom 
+and fear are at war, and there will be no quick or easy end to this 
+conflict. In leading the campaign against terrorism, we are forging new, 
+productive international relationships and redefining existing ones in 
+ways that meet the challenges of the twenty-first century.
+
+IV. Work with Others To Defuse Regional Conflicts
+
+
+"We build a world of justice, or we will live in a world of coercion. 
+The magnitude of our shared responsibilities makes our disagreements 
+look so small."
+
+
+
+
+
+President Bush
+Berlin, Germany
+May 23, 2002
+
+
+
+Concerned nations must remain actively engaged in critical regional 
+disputes to avoid explosive escalation and minimize human suffering. In 
+an increasingly interconnected world, regional crisis can strain our 
+alliances, rekindle rivalries among the major powers, and create 
+horrifying affronts to human dignity. When violence erupts and states 
+falter, the United States will work with friends and partners to 
+alleviate suffering and restore stability.
+
+No doctrine can anticipate every circumstance in which U.S. action -- 
+direct or indirect -- is warranted. We have finite political, economic, 
+and military resources to meet our global priorities. The United States 
+will approach each case with these strategic principles in mind:
+
+*	The United States should invest time and resources into building 
+international relationships and institutions that can help manage local 
+crises when they emerge.
+
+*	The United States should be realistic about its ability to help 
+those who are unwilling or unready to help themselves. Where and when 
+people are ready to do their part, we will be willing to move decisively.
+
+
+Policies in several key regions offer some illustrations of how we will 
+apply these principles:
+
+The Israeli-Palestinian conflict is critical because of the toll of 
+human suffering, because of America's close relationship with the state 
+of Israel and key Arab states, and because of that region's importance 
+to other global priorities of the United States. There can be no peace 
+for either side without freedom for both sides. America stands committed 
+to an independent and democratic Palestine, living beside Israel in 
+peace and security. Like all other people, Palestinians deserve a 
+government that serves their interests, and listens to their voices, and 
+counts their votes. The United States will continue to encourage all 
+parties to step up to their responsibilities as we seek a just and 
+comprehensive settlement to the conflict.
+
+The United States, the international donor community, and the World Bank 
+stand ready to work with a reformed Palestinian government on economic 
+development, increased humanitarian assistance and a program to 
+establish, finance, and monitor a truly independent judiciary. If 
+Palestinians embrace democracy, and the rule of law, confront 
+corruption, and firmly reject terror, they can count on American support 
+for the creation of a Palestinian state.
+
+Israel also has a large stake in the success of a democratic Palestine. 
+Permanent occupation threatens Israel's identity and democracy. So the 
+United States continues to challenge Israeli leaders to take concrete 
+steps to support the emergence of a viable, credible Palestinian state. 
+As there is progress towards security, Israel forces need to withdraw 
+fully to positions they held prior to September 28, 2000. And consistent 
+with the recommendations of the Mitchell Committee, Israeli settlement 
+activity in the occupied territories must stop. As violence subsides, 
+freedom of movement should be restored, permitting innocent Palestinians 
+to resume work and normal life. The United States can play a crucial 
+role but, ultimately, lasting peace can only come when Israelis and 
+Palestinians resolve the issues and end the conflict between them.
+
+In South Asia, the United States has also emphasized the need for India 
+and Pakistan to resolve their disputes. This administration invested 
+time and resources building strong bilateral relations with India and 
+Pakistan. These strong relations then gave us leverage to play a 
+constructive role when tensions in the region became acute. With 
+Pakistan, our bilateral relations have been bolstered by Pakistan's 
+choice to join the war against terror and move toward building a more 
+open and tolerant society. The Administration sees India's potential to 
+become one of the great democratic powers of the twenty-first century 
+and has worked hard to transform our relationship accordingly. Our 
+involvement in this regional dispute, building on earlier investments in 
+bilateral relations, looks first to concrete steps by India and Pakistan 
+that can help defuse military confrontation.
+
+Indonesia took courageous steps to create a working democracy and 
+respect for the rule of law. By tolerating ethnic minorities, respecting 
+the rule of law, and accepting open markets, Indonesia may be able to 
+employ the engine of opportunity that has helped lift some of its 
+neighbors out of poverty and desperation. It is the initiative by 
+Indonesia that allows U.S. assistance to make a difference.
+
+In the Western Hemisphere we have formed flexible coalitions with 
+countries that share our priorities, particularly Mexico, Brazil, 
+Canada, Chile, and Colombia. Together we will promote a truly democratic 
+hemisphere where our integration advances security, prosperity, 
+opportunity, and hope. We will work with regional institutions, such as 
+the Summit of the Americas process, the Organization of American States 
+(OAS), and the Defense Ministerial of the Americas for the benefit of 
+the entire hemisphere.
+
+Parts of Latin America confront regional conflict, especially arising 
+from the violence of drug cartels and their accomplices. This conflict 
+and unrestrained narcotics trafficking could imperil the health and 
+security of the United States. Therefore we have developed an active 
+strategy to help the Andean nations adjust their economies, enforce 
+their laws, defeat terrorist organizations, and cut off the supply of 
+drugs, while -- as important -- we work to reduce the demand for drugs 
+in our own country.
+
+In Colombia, we recognize the link between terrorist and extremist 
+groups that challenge the security of the state and drug trafficking 
+activities that help finance the operations of such groups. We are 
+working to help Colombia defend its democratic institutions and defeat 
+illegal armed groups of both the left and right by extending effective 
+sovereignty over the entire national territory and provide basic 
+security to the Colombian people.
+
+In Africa, promise and opportunity sit side by side with disease, war, 
+and desperate poverty. This threatens both a core value of the United 
+States -- preserving human dignity -- and our strategic priority -- 
+combating global terror. American interests and American principles, 
+therefore, lead in the same direction: we will work with others for an 
+African continent that lives in liberty, peace, and growing prosperity. 
+Together with our European allies, we must help strengthen Africa's 
+fragile states, help build indigenous capability to secure porous 
+borders, and help build up the law enforcement and intelligence 
+infrastructure to deny havens for terrorists.
+
+An ever more lethal environment exists in Africa as local civil wars 
+spread beyond borders to create regional war zones. Forming coalitions 
+of the willing and cooperative security arrangements are key to 
+confronting these emerging transnational threats.
+
+Africa's great size and diversity requires a security strategy that 
+focuses bilateral engagement, and builds coalitions of the willing. This 
+administration will focus on three interlocking strategies for the 
+region:
+
+*	countries with major impact on their neighborhood such as South 
+Africa, Nigeria, Kenya, and Ethiopia are anchors for regional engagement 
+and require focused attention;
+
+*	coordination with European allies and international institutions is 
+essential for constructive conflict mediation and successful peace 
+operations; and
+
+*	Africa's capable reforming states and sub-regional organizations 
+must be strengthened as the primary means to address transnational 
+threats on a sustained basis.
+
+
+Ultimately the path of political and economic freedom presents the 
+surest route to progress in sub-Saharan Africa, where most wars are 
+conflicts over material resources and political access often tragically 
+waged on the basis of ethnic and religious difference. The transition to 
+the African Union with its stated commitment to good governance and a 
+common responsibility for democratic political systems offers 
+opportunities to strengthen democracy on the continent.
+
+V. Prevent Our Enemies from Threatening Us, Our Allies, and Our Friends 
+with Weapons of Mass Destruction
+
+
+"The gravest danger to freedom lies at the crossroads of radicalism and 
+technology. When the spread of chemical and biological and nuclear 
+weapons, along with ballistic missile technology -- when that occurs, 
+even weak states and small groups could attain a catastrophic power to 
+strike great nations. Our enemies have declared this very intention, and 
+have been caught seeking these terrible weapons. They want the 
+capability to blackmail us, or to harm us, or to harm our friends -- and 
+we will oppose them with all our power."
+
+
+
+
+
+President Bush
+West Point, New York
+June 1, 2002
+
+
+
+The nature of the Cold War threat required the United States -- with our 
+allies and friends -- to emphasize deterrence of the enemy's use of 
+force, producing a grim strategy of mutual assured destruction. With the 
+collapse of the Soviet Union and the end of the Cold War, our security 
+environment has undergone profound transformation.
+
+Having moved from confrontation to cooperation as the hallmark of our 
+relationship with Russia, the dividends are evident: an end to the 
+balance of terror that divided us; an historic reduction in the nuclear 
+arsenals on both sides; and cooperation in areas such as 
+counterterrorism and missile defense that until recently were 
+inconceivable.
+
+But new deadly challenges have emerged from rogue states and terrorists. 
+None of these contemporary threats rival the sheer destructive power 
+that was arrayed against us by the Soviet Union. However, the nature and 
+motivations of these new adversaries, their determination to obtain 
+destructive powers hitherto available only to the world's strongest 
+states, and the greater likelihood that they will use weapons of mass 
+destruction against us, make today's security environment more complex 
+and dangerous.
+
+In the 1990s we witnessed the emergence of a small number of rogue 
+states that, while different in important ways, share a number of 
+attributes. These states:
+
+*	brutalize their own people and squander their national resources 
+for the personal gain of the rulers;
+
+*	display no regard for international law, threaten their neighbors, 
+and callously violate international treaties to which they are party;
+
+*	are determined to acquire weapons of mass destruction, along with 
+other advanced military technology, to be used as threats or offensively 
+to achieve the aggressive designs of these regimes;
+
+*	sponsor terrorism around the globe; and
+
+*	reject basic human values and hate the United States and everything 
+for which it stands.
+
+
+At the time of the Gulf War, we acquired irrefutable proof that Iraq's 
+designs were not limited to the chemical weapons it had used against 
+Iran and its own people, but also extended to the acquisition of nuclear 
+weapons and biological agents. In the past decade North Korea has become 
+the world's principal purveyor of ballistic missiles, and has tested 
+increasingly capable missiles while developing its own WMD arsenal. 
+Other rogue regimes seek nuclear, biological, and chemical weapons as 
+well. These states' pursuit of, and global trade in, such weapons has 
+become a looming threat to all nations.
+
+We must be prepared to stop rogue states and their terrorist clients 
+before they are able to threaten or use weapons of mass destruction 
+against the United States and our allies and friends. Our response must 
+take full advantage of strengthened alliances, the establishment of new 
+partnerships with former adversaries, innovation in the use of military 
+forces, modern technologies, including the development of an effective 
+missile defense system, and increased emphasis on intelligence 
+collection and analysis.
+
+Our comprehensive strategy to combat WMD includes:
+
+*	Proactive counterproliferation efforts. We must deter and defend 
+against the threat before it is unleashed. We must ensure that key 
+capabilities -- detection, active and passive defenses, and counterforce 
+capabilities -- are integrated into our defense transformation and our 
+homeland security systems. Counterproliferation must also be integrated 
+into the doctrine, training, and equipping of our forces and those of 
+our allies to ensure that we can prevail in any conflict with WMD-armed 
+adversaries.
+
+*	Strengthened nonproliferation efforts to prevent rogue states and 
+terrorists from acquiring the materials, technologies and expertise 
+necessary for weapons of mass destruction. We will enhance diplomacy, 
+arms control, multilateral export controls, and threat reduction 
+assistance that impede states and terrorists seeking WMD, and when 
+necessary, interdict enabling technologies and materials. We will 
+continue to build coalitions to support these efforts, encouraging their 
+increased political and financial support for nonproliferation and 
+threat reduction programs. The recent G-8 agreement to commit up to $20 
+billion to a global partnership against proliferation marks a major step 
+forward.
+
+*	Effective consequence management to respond to the effects of WMD 
+use, whether by terrorists or hostile states. Minimizing the effects of 
+WMD use against our people will help deter those who possess such 
+weapons and dissuade those who seek to acquire them by persuading 
+enemies that they cannot attain their desired ends. The United States 
+must also be prepared to respond to the effects of WMD use against our 
+forces abroad, and to help friends and allies if they are attacked.
+
+
+It has taken almost a decade for us to comprehend the true nature of 
+this new threat. Given the goals of rogue states and terrorists, the 
+United States can no longer solely rely on a reactive posture as we have 
+in the past. The inability to deter a potential attacker, the immediacy 
+of today's threats, and the magnitude of potential harm that could be 
+caused by our adversaries' choice of weapons, do not permit that option. 
+We cannot let our enemies strike first.
+
+*	In the Cold War, especially following the Cuban missile crisis, we 
+faced a generally status quo, risk-averse adversary. Deterrence was an 
+effective defense. But deterrence based only upon the threat of 
+retaliation is far less likely to work against leaders of rogue states 
+more willing to take risks, gambling with the lives of their people, and 
+the wealth of their nations.
+
+*	In the Cold War, weapons of mass destruction were considered 
+weapons of last resort whose use risked the destruction of those who 
+used them. Today, our enemies see weapons of mass destruction as weapons 
+of choice. For rogue states these weapons are tools of intimidation and 
+military aggression against their neighbors. These weapons may also 
+allow these states to attempt to blackmail the United States and our 
+allies to prevent us from deterring or repelling the aggressive behavior 
+of rogue states. Such states also see these weapons as their best means 
+of overcoming the conventional superiority of the United States.
+
+*	Traditional concepts of deterrence will not work against a 
+terrorist enemy whose avowed tactics are wanton destruction and the 
+targeting of innocents; whose so-called soldiers seek martyrdom in death 
+and whose most potent protection is statelessness. The overlap between 
+states that sponsor terror and those that pursue WMD compels us to 
+action.
+
+
+For centuries, international law recognized that nations need not suffer 
+an attack before they can lawfully take action to defend themselves 
+against forces that present an imminent danger of attack. Legal scholars 
+and international jurists often conditioned the legitimacy of preemption 
+on the existence of an imminent threat -- most often a visible 
+mobilization of armies, navies, and air forces preparing to attack.
+
+We must adapt the concept of imminent threat to the capabilities and 
+objectives of today's adversaries. Rogue states and terrorists do not 
+seek to attack us using conventional means. They know such attacks would 
+fail. Instead, they rely on acts of terrorism and, potentially, the use 
+of weapons of mass destruction -- weapons that can be easily concealed 
+and delivered covertly and without warning.
+
+The targets of these attacks are our military forces and our civilian 
+population, in direct violation of one of the principal norms of the law 
+of warfare. As was demonstrated by the losses on September 11, 2001, 
+mass civilian casualties is the specific objective of terrorists and 
+these losses would be exponentially more severe if terrorists acquired 
+and used weapons of mass destruction.
+
+The United States has long maintained the option of preemptive actions 
+to counter a sufficient threat to our national security. The greater the 
+threat, the greater is the risk of inaction -- and the more compelling 
+the case for taking anticipatory action to defend ourselves, even if 
+uncertainty remains as to the time and place of the enemy's attack. To 
+forestall or prevent such hostile acts by our adversaries, the United 
+States will, if necessary, act preemptively.
+
+The United States will not use force in all cases to preempt emerging 
+threats, nor should nations use preemption as a pretext for aggression. 
+Yet in an age where the enemies of civilization openly and actively seek 
+the world's most destructive technologies, the United States cannot 
+remain idle while dangers gather.
+
+We will always proceed deliberately, weighing the consequences of our 
+actions. To support preemptive options, we will:
+
+*	build better, more integrated intelligence capabilities to provide 
+timely, accurate information on threats, wherever they may emerge;
+
+*	coordinate closely with allies to form a common assessment of the 
+most dangerous threats; and
+
+*	continue to transform our military forces to ensure our ability to 
+conduct rapid and precise operations to achieve decisive results.
+
+
+The purpose of our actions will always be to eliminate a specific threat 
+to the United States or our allies and friends. The reasons for our 
+actions will be clear, the force measured, and the cause just.
+
+VI. Ignite a New Era of Global Economic Growth through Free Markets and 
+Free Trade.
+
+
+"When nations close their markets and opportunity is hoarded by a 
+privileged few, no amount -- no amount -- of development aid is ever 
+enough. When nations respect their people, open markets, invest in 
+better health and education, every dollar of aid, every dollar of trade 
+revenue and domestic capital is used more effectively."
+
+
+
+
+
+President Bush
+Monterrey, Mexico
+March 22, 2002
+
+
+
+A strong world economy enhances our national security by advancing 
+prosperity and freedom in the rest of the world. Economic growth 
+supported by free trade and free markets creates new jobs and higher 
+incomes. It allows people to lift their lives out of poverty, spurs 
+economic and legal reform, and the fight against corruption, and it 
+reinforces the habits of liberty.
+
+We will promote economic growth and economic freedom beyond America's 
+shores. All governments are responsible for creating their own economic 
+policies and responding to their own economic challenge. We will use our 
+economic engagement with other countries to underscore the benefits of 
+policies that generate higher productivity and sustained economic 
+growth, including:
+
+*	pro-growth legal and regulatory policies to encourage business 
+investment, innovation, and entrepreneurial activity;
+
+*	tax policies -- particularly lower marginal tax rates -- that 
+improve incentives for work and investment;
+
+*	rule of law and intolerance of corruption so that people are 
+confident that they will be able to enjoy the fruits of their economic 
+endeavors;
+
+*	strong financial systems that allow capital to be put to its most 
+efficient use;
+
+*	sound fiscal policies to support business activity;
+
+*	investments in health and education that improve the well-being and 
+skills of the labor force and population as a whole; and
+
+*	free trade that provides new avenues for growth and fosters the 
+diffusion of technologies and ideas that increase productivity and 
+opportunity.
+
+
+The lessons of history are clear: market economies, not 
+command-and-control economies with the heavy hand of government, are the 
+best way to promote prosperity and reduce poverty. Policies that further 
+strengthen market incentives and market institutions are relevant for 
+all economies -- industrialized countries, emerging markets, and the 
+developing world.
+
+A return to strong economic growth in Europe and Japan is vital to U.S. 
+national security interests. We want our allies to have strong economies 
+for their own sake, for the sake of the global economy, and for the sake 
+of global security. European efforts to remove structural barriers in 
+their economies are particularly important in this regard, as are 
+Japan's efforts to end deflation and address the problems of 
+non-performing loans in the Japanese banking system. We will continue to 
+use our regular consultations with Japan and our European partners -- 
+including through the Group of Seven (G-7) -- to discuss policies they 
+are adopting to promote growth in their economies and support higher 
+global economic growth.
+
+Improving stability in emerging markets is also key to global economic 
+growth. International flows of investment capital are needed to expand 
+the productive potential of these economies. These flows allow emerging 
+markets and developing countries to make the investments that raise 
+living standards and reduce poverty. Our long-term objective should be a 
+world in which all countries have investment-grade credit ratings that 
+allow them access to international capital markets and to invest in 
+their future.
+
+We are committed to policies that will help emerging markets achieve 
+access to larger capital flows at lower cost. To this end, we will 
+continue to pursue reforms aimed at reducing uncertainty in financial 
+markets. We will work actively with other countries, the International 
+Monetary Fund (IMF), and the private sector to implement the G-7 Action 
+Plan negotiated earlier this year for preventing financial crises and 
+more effectively resolving them when they occur.
+
+The best way to deal with financial crises is to prevent them from 
+occurring, and we have encouraged the IMF to improve its efforts doing 
+so. We will continue to work with the IMF to streamline the policy 
+conditions for its lending and to focus its lending strategy on 
+achieving economic growth through sound fiscal and monetary policy, 
+exchange rate policy, and financial sector policy.
+
+The concept of "free trade" arose as a moral principle even before it 
+became a pillar of economics. If you can make something that others 
+value, you should be able to sell it to them. If others make something 
+that you value, you should be able to buy it. This is real freedom, the 
+freedom for a person -- or a nation -- to make a living. To promote free 
+trade, the Unites States has developed a comprehensive strategy:
+
+*	Seize the global initiative. The new global trade negotiations we 
+helped launch at Doha in November 2001 will have an ambitious agenda, 
+especially in agriculture, manufacturing, and services, targeted for 
+completion in 2005. The United States has led the way in completing the 
+accession of China and a democratic Taiwan to the World Trade 
+Organization. We will assist Russia's preparations to join the WTO.
+
+*	Press regional initiatives. The United States and other democracies 
+in the Western Hemisphere have agreed to create the Free Trade Area of 
+the Americas, targeted for completion in 2005. This year the United 
+States will advocate market-access negotiations with its partners, 
+targeted on agriculture, industrial goods, services, investment, and 
+government procurement. We will also offer more opportunity to the 
+poorest continent, Africa, starting with full use of the preferences 
+allowed in the African Growth and Opportunity Act, and leading to free 
+trade.
+
+*	Move ahead with bilateral free trade agreements. Building on the 
+free trade agreement with Jordan enacted in 2001, the Administration 
+will work this year to complete free trade agreements with Chile and 
+Singapore. Our aim is to achieve free trade agreements with a mix of 
+developed and developing countries in all regions of the world. 
+Initially, Central America, Southern Africa, Morocco, and Australia will 
+be our principal focal points.
+
+*	Renew the executive-congressional partnership. Every 
+administration's trade strategy depends on a productive partnership with 
+Congress. After a gap of 8 years, the Administration reestablished 
+majority support in the Congress for trade liberalization by passing 
+Trade Promotion Authority and the other market opening measures for 
+developing countries in the Trade Act of 2002. This Administration will 
+work with Congress to enact new bilateral, regional, and global trade 
+agreements that will be concluded under the recently passed Trade 
+Promotion Authority.
+
+*	Promote the connection between trade and development. Trade 
+policies can help developing countries strengthen property rights, 
+competition, the rule of law, investment, the spread of knowledge, open 
+societies, the efficient allocation of resources, and regional 
+integration -- all leading to growth, opportunity, and confidence in 
+developing countries. The United States is implementing The Africa 
+Growth and Opportunity Act to provide market-access for nearly all goods 
+produced in the 35 countries of sub-Saharan Africa. We will make more 
+use of this act and its equivalent for the Caribbean Basin and continue 
+to work with multilateral and regional institutions to help poorer 
+countries take advantage of these opportunities. Beyond market access, 
+the most important area where trade intersects with poverty is in public 
+health. We will ensure that the WTO intellectual property rules are 
+flexible enough to allow developing nations to gain access to critical 
+medicines for extraordinary dangers like HIV/AIDS, tuberculosis, and 
+malaria.
+
+*	Enforce trade agreements and laws against unfair practices. 
+Commerce depends on the rule of law; international trade depends on 
+enforceable agreements. Our top priorities are to resolve ongoing 
+disputes with the European Union, Canada, and Mexico and to make a 
+global effort to address new technology, science, and health regulations 
+that needlessly impede farm exports and improved agriculture. Laws 
+against unfair trade practices are often abused, but the international 
+community must be able to address genuine concerns about government 
+subsidies and dumping. International industrial espionage which 
+undermines fair competition must be detected and deterred.
+
+*	Help domestic industries and workers adjust. There is a sound 
+statutory framework for these transitional safeguards which we have used 
+in the agricultural sector and which we are using this year to help the 
+American steel industry. The benefits of free trade depend upon the 
+enforcement of fair trading practices. These safeguards help ensure that 
+the benefits of free trade do not come at the expense of American 
+workers. Trade adjustment assistance will help workers adapt to the 
+change and dynamism of open markets.
+
+*	Protect the environment and workers. The United States must foster 
+economic growth in ways that will provide a better life along with 
+widening prosperity. We will incorporate labor and environmental 
+concerns into U.S. trade negotiations, creating a healthy "network" 
+between multilateral environmental agreements with the WTO, and use the 
+International Labor Organization, trade preference programs, and trade 
+talks to improve working conditions in conjunction with freer trade.
+
+*	Enhance energy security. We will strengthen our own energy security 
+and the shared prosperity of the global economy by working with our 
+allies, trading partners, and energy producers to expand the sources and 
+types of global energy supplied, especially in the Western Hemisphere, 
+Africa, Central Asia, and the Caspian region. We will also continue to 
+work with our partners to develop cleaner and more energy efficient 
+technologies.
+
+
+Economic growth should be accompanied by global efforts to stabilize 
+greenhouse gas concentrations associated with this growth, containing 
+them at a level that prevents dangerous human interference with the 
+global climate. Our overall objective is to reduce America's greenhouse 
+gas emissions relative to the size of our economy, cutting such 
+emissions per unit of economic activity by 18 percent over the next 10 
+years, by the year 2012. Our strategies for attaining this goal will be 
+to:
+
+*	remain committed to the basic U.N. Framework Convention for 
+international cooperation;
+
+*	obtain agreements with key industries to cut emissions of some of 
+the most potent greenhouse gases and give transferable credits to 
+companies that can show real cuts;
+
+*	develop improved standards for measuring and registering emission 
+reductions;
+
+*	promote renewable energy production and clean coal technology, as 
+well as nuclear power -- which produces no greenhouse gas emissions, 
+while also improving fuel economy for U.S. cars and trucks;
+
+*	increase spending on research and new conservation technologies, to 
+a total of $4.5 billion -- the largest sum being spent on climate change 
+by any country in the world and a $700 million increase over last year's 
+budget; and
+
+*	assist developing countries, especially the major greenhouse gas 
+emitters such as China and India, so that they will have the tools and 
+resources to join this effort and be able to grow along a cleaner and 
+better path.
+
+
+VII. Expand the Circle of Development by Opening Societies and Building 
+the Infrastructure of Democracy
+
+
+"In World War II we fought to make the world safer, then worked to 
+rebuild it. As we wage war today to keep the world safe from terror, we 
+must also work to make the world a better place for all its citizens."
+
+
+
+
+
+President Bush
+Washington, D.C. (Inter-American
+Development Bank)
+March 14, 2002
+
+
+
+A world where some live in comfort and plenty, while half of the human 
+race lives on less than $2 a day, is neither just nor stable. Including 
+all of the world's poor in an expanding circle of development -- and 
+opportunity -- is a moral imperative and one of the top priorities of 
+U.S. international policy.
+
+Decades of massive development assistance have failed to spur economic 
+growth in the poorest countries. Worse, development aid has often served 
+to prop up failed policies, relieving the pressure for reform and 
+perpetuating misery. Results of aid are typically measured in dollars 
+spent by donors, not in the rates of growth and poverty reduction 
+achieved by recipients. These are the indicators of a failed strategy.
+
+Working with other nations, the United States is confronting this 
+failure. We forged a new consensus at the U.N. Conference on Financing 
+for Development in Monterrey that the objectives of assistance -- and 
+the strategies to achieve those objectives -- must change.
+
+This Administration's goal is to help unleash the productive potential 
+of individuals in all nations. Sustained growth and poverty reduction is 
+impossible without the right national policies. Where governments have 
+implemented real policy changes we will provide significant new levels 
+of assistance. The United States and other developed countries should 
+set an ambitious and specific target: to double the size of the world's 
+poorest economies within a decade.
+
+The United States Government will pursue these major strategies to 
+achieve this goal:
+
+*	Provide resources to aid countries that have met the challenge of 
+national reform. We propose a 50 percent increase in the core 
+development assistance given by the United States. While continuing our 
+present programs, including humanitarian assistance based on need alone, 
+these billions of new dollars will form a new Millennium Challenge 
+Account for projects in countries whose governments rule justly, invest 
+in their people, and encourage economic freedom. Governments must fight 
+corruption, respect basic human rights, embrace the rule of law, invest 
+in health care and education, follow responsible economic policies, and 
+enable entrepreneurship. The Millennium Challenge Account will reward 
+countries that have demonstrated real policy change and challenge those 
+that have not to implement reforms.
+
+*	Improve the effectiveness of the World Bank and other development 
+banks in raising living standards. The United States is committed to a 
+comprehensive reform agenda for making the World Bank and the other 
+multilateral development banks more effective in improving the lives of 
+the world's poor. We have reversed the downward trend in U.S. 
+contributions and proposed an 18 percent increase in the U.S. 
+contributions to the International Development Association (IDA) -- the 
+World Bank's fund for the poorest countries -- and the African 
+Development Fund. The key to raising living standards and reducing 
+poverty around the world is increasing productivity growth, especially 
+in the poorest countries. We will continue to press the multilateral 
+development banks to focus on activities that increase economic 
+productivity, such as improvements in education, health, rule of law, 
+and private sector development. Every project, every loan, every grant 
+must be judged by how much it will increase productivity growth in 
+developing countries.
+
+*	Insist upon measurable results to ensure that development 
+assistance is actually making a difference in the lives of the world's 
+poor. When it comes to economic development, what really matters is that 
+more children are getting a better education, more people have access to 
+health care and clean water, or more workers can find jobs to make a 
+better future for their families. We have a moral obligation to measure 
+the success of our development assistance by whether it is delivering 
+results. For this reason, we will continue to demand that our own 
+development assistance as well as assistance from the multilateral 
+development banks has measurable goals and concrete benchmarks for 
+achieving those goals. Thanks to U.S. leadership, the recent IDA 
+replenishment agreement will establish a monitoring and evaluation 
+system that measures recipient countries' progress. For the first time, 
+donors can link a portion of their contributions to IDA to the 
+achievement of actual development results, and part of the U.S. 
+contribution is linked in this way. We will strive to make sure that the 
+World Bank and other multilateral development banks build on this 
+progress so that a focus on results is an integral part of everything 
+that these institutions do.
+
+*	Increase the amount of development assistance that is provided in 
+the form of grants instead of loans. Greater use of results-based grants 
+is the best way to help poor countries make productive investments, 
+particularly in the social sectors, without saddling them with 
+ever-larger debt burdens. As a result of U.S. leadership, the recent IDA 
+agreement provided for significant increases in grant funding for the 
+poorest countries for education, HIV/AIDS, health, nutrition, water, 
+sanitation, and other human needs. Our goal is to build on that progress 
+by increasing the use of grants at the other multilateral development 
+banks. We will also challenge universities, nonprofits, and the private 
+sector to match government efforts by using grants to support 
+development projects that show results.
+
+*	Open societies to commerce and investment. Trade and investment are 
+the real engines of economic growth. Even if government aid increases, 
+most money for development must come from trade, domestic capital, and 
+foreign investment. An effective strategy must try to expand these flows 
+as well. Free markets and free trade are key priorities of our national 
+security strategy.
+
+*	Secure public health. The scale of the public health crisis in poor 
+countries is enormous. In countries afflicted by epidemics and pandemics 
+like HIV/AIDS, malaria, and tuberculosis, growth and development will be 
+threatened until these scourges can be contained. Resources from the 
+developed world are necessary but will be effective only with honest 
+governance, which supports prevention programs and provides effective 
+local infrastructure. The United States has strongly backed the new 
+global fund for HIV/AIDS organized by U.N. Secretary General Kofi Annan 
+and its focus on combining prevention with a broad strategy for 
+treatment and care. The United States already contributes more than 
+twice as much money to such efforts as the next largest donor. If the 
+global fund demonstrates its promise, we will be ready to give even more.
+
+*	Emphasize education. Literacy and learning are the foundation of 
+democracy and development. Only about 7 percent of World Bank resources 
+are devoted to education. This proportion should grow. The United States 
+will increase its own funding for education assistance by at least 20 
+percent with an emphasis on improving basic education and teacher 
+training in Africa. The United States can also bring information 
+technology to these societies, many of whose education systems have been 
+devastated by AIDS.
+
+*	Continue to aid agricultural development. New technologies, 
+including biotechnology, have enormous potential to improve crop yields 
+in developing countries while using fewer pesticides and less water. 
+Using sound science, the United States should help bring these benefits 
+to the 800 million people, including 300 million children, who still 
+suffer from hunger and malnutrition.
+
+
+VIII. Develop Agendas for Cooperative Action with the Other Main Centers 
+of Global Power
+
+
+"We have our best chance since the rise of the nation-state in the 17th 
+century to build a world where the great powers compete in peace instead 
+of prepare for war."
+
+
+
+
+
+President Bush
+West Point, New York
+June 1, 2002
+
+
+
+America will implement its strategies by organizing coalitions -- as 
+broad as practicable -- of states able and willing to promote a balance 
+of power that favors freedom. Effective coalition leadership requires 
+clear priorities, an appreciation of others' interests, and consistent 
+consultations among partners with a spirit of humility.
+
+There is little of lasting consequence that the United States can 
+accomplish in the world without the sustained cooperation of its allies 
+and friends in Canada and Europe. Europe is also the seat of two of the 
+strongest and most able international institutions in the world: the 
+North Atlantic Treaty Organization (NATO), which has, since its 
+inception, been the fulcrum of transatlantic and inter-European 
+security, and the European Union (EU), our partner in opening world 
+trade.
+
+The attacks of September 11 were also an attack on NATO, as NATO itself 
+recognized when it invoked its Article V self-defense clause for the 
+first time. NATO's core mission -- collective defense of the 
+transatlantic alliance of democracies -- remains, but NATO must develop 
+new structures and capabilities to carry out that mission under new 
+circumstances. NATO must build a capability to field, at short notice, 
+highly mobile, specially trained forces whenever they are needed to 
+respond to a threat against any member of the alliance.
+
+The alliance must be able to act wherever our interests are threatened, 
+creating coalitions under NATO's own mandate, as well as contributing to 
+mission-based coalitions. To achieve this, we must:
+
+*	expand NATO's membership to those democratic nations willing and 
+able to share the burden of defending and advancing our common interests;
+
+*	ensure that the military forces of NATO nations have appropriate 
+combat contributions to make in coalition warfare;
+
+*	develop planning processes to enable those contributions to become 
+effective multinational fighting forces;
+
+*	take advantage of the technological opportunities and economies of 
+scale in our defense spending to transform NATO military forces so that 
+they dominate potential aggressors and diminish our vulnerabilities;
+
+*	streamline and increase the flexibility of command structures to 
+meet new operational demands and the associated requirements of 
+training, integrating, and experimenting with new force configurations; 
+and
+
+*	maintain the ability to work and fight together as allies even as 
+we take the necessary steps to transform and modernize our forces.
+
+
+If NATO succeeds in enacting these changes, the rewards will be a 
+partnership as central to the security and interests of its member 
+states as was the case during the Cold War. We will sustain a common 
+perspective on the threats to our societies and improve our ability to 
+take common action in defense of our nations and their interests. At the 
+same time, we welcome our European allies' efforts to forge a greater 
+foreign policy and defense identity with the EU, and commit ourselves to 
+close consultations to ensure that these developments work with NATO. We 
+cannot afford to lose this opportunity to better prepare the family of 
+transatlantic democracies for the challenges to come.
+
+The attacks of September 11 energized America's Asian alliances. 
+Australia invoked the ANZUS Treaty to declare the September 11 was an 
+attack on Australia itself, following that historic decision with the 
+dispatch of some of the world's finest combat forces for Operation 
+Enduring Freedom. Japan and the Republic of Korea provided unprecedented 
+levels of military logistical support within weeks of the terrorist 
+attack. We have deepened cooperation on counter-terrorism with our 
+alliance partners in Thailand and the Philippines and received 
+invaluable assistance from close friends like Singapore and New Zealand.
+
+The war against terrorism has proven that America's alliances in Asia 
+not only underpin regional peace and stability, but are flexible and 
+ready to deal with new challenges. To enhance our Asian alliances and 
+friendships, we will:
+
+
+*	look to Japan to continue forging a leading role in regional and 
+global affairs based on our common interests, our common values, and our 
+close defense and diplomatic cooperation;
+
+*	work with South Korea to maintain vigilance towards the North while 
+preparing our alliance to make contributions to the broader stability of 
+the region over the longer-term;
+
+*	build on 50 years of U.S.-Australian alliance cooperation as we 
+continue working together to resolve regional and global problems -- as 
+we have so many times from the Battle of Leyte Gulf to Tora Bora;
+
+*	maintain forces in the region that reflect our commitments to our 
+allies, our requirements, our technological advances, and the strategic 
+environment; and
+
+*	build on stability provided by these alliances, as well as with 
+institutions such as ASEAN and the Asia-Pacific Economic Cooperation 
+forum, to develop a mix of regional and bilateral strategies to manage 
+change in this dynamic region.
+
+
+We are attentive to the possible renewal of old patterns of great power 
+competition. Several potential great powers are now in the midst of 
+internal transition -- most importantly Russia, India, and China. In all 
+three cases, recent developments have encouraged our hope that a truly 
+global consensus about basic principles is slowly taking shape.
+
+With Russia, we are already building a new strategic relationship based 
+on a central reality of the twenty-first century: the United States and 
+Russia are no longer strategic adversaries. The Moscow Treaty on 
+Strategic Reductions is emblematic of this new reality and reflects a 
+critical change in Russian thinking that promises to lead to productive, 
+long-term relations with the Euro-Atlantic community and the United 
+States. Russia's top leaders have a realistic assessment of their 
+country's current weakness and the policies -- internal and external -- 
+needed to reverse those weaknesses. They understand, increasingly, that 
+Cold War approaches do not serve their national interests and that 
+Russian and American strategic interests overlap in many areas.
+
+United States policy seeks to use this turn in Russian thinking to 
+refocus our relationship on emerging and potential common interests and 
+challenges. We are broadening our already extensive cooperation in the 
+global war on terrorism. We are facilitating Russia's entry into the 
+World Trade Organization, without lowering standards for accession, to 
+promote beneficial bilateral trade and investment relations. We have 
+created the NATO-Russia Council with the goal of deepening security 
+cooperation among Russia, our European allies, and ourselves. We will 
+continue to bolster the independence and stability of the states of the 
+former Soviet Union in the belief that a prosperous and stable 
+neighborhood will reinforce Russia's growing commitment to integration 
+into the Euro-Atlantic community.
+
+At the same time, we are realistic about the differences that still 
+divide us from Russia and about the time and effort it will take to 
+build an enduring strategic partnership. Lingering distrust of our 
+motives and policies by key Russian elites slows improvement in our 
+relations. Russia's uneven commitment to the basic values of free-market 
+democracy and dubious record in combating the proliferation of weapons 
+of mass destruction remain matters of great concern. Russia's very 
+weakness limits the opportunities for cooperation. Nevertheless, those 
+opportunities are vastly greater now than in recent years -- or even 
+decades.
+
+The United States has undertaken a transformation in its bilateral 
+relationship with India based on a conviction that U.S. interests 
+require a strong relationship with India. We are the two largest 
+democracies, committed to political freedom protected by representative 
+government. India is moving toward greater economic freedom as well. We 
+have a common interest in the free flow of commerce, including through 
+the vital sea lanes of the Indian Ocean. Finally, we share an interest 
+in fighting terrorism and in creating a strategically stable Asia.
+
+Differences remain, including over the development of India's nuclear 
+and missile programs, and the pace of India's economic reforms. But 
+while in the past these concerns may have dominated our thinking about 
+India, today we start with a view of India as a growing world power with 
+which we have common strategic interests. Through a strong partnership 
+with India, we can best address any differences and shape a dynamic 
+future.
+
+The United States relationship with China is an important part of our 
+strategy to promote a stable, peaceful, and prosperous Asia-Pacific 
+region. We welcome the emergence of a strong, peaceful, and prosperous 
+China. The democratic development of China is crucial to that future. 
+Yet, a quarter century after beginning the process of shedding the worst 
+features of the Communist legacy, China's leaders have not yet made the 
+next series of fundamental choices about the character of their state. 
+In pursuing advanced military capabilities that can threaten its 
+neighbors in the Asia-Pacific region, China is following an outdated 
+path that, in the end, will hamper its own pursuit of national 
+greatness. In time, China will find that social and political freedom is 
+the only source of that greatness.
+
+The United States seeks a constructive relationship with a changing 
+China. We already cooperate well where our interests overlap, including 
+the current war on terrorism and in promoting stability on the Korean 
+peninsula. Likewise, we have coordinated on the future of Afghanistan 
+and have initiated a comprehensive dialogue on counter-terrorism and 
+similar transitional concerns. Shared health and environmental threats, 
+such as the spread of HIV/AIDS, challenge us to promote jointly the 
+welfare of our citizens.
+
+Addressing these transnational threats will challenge China to become 
+more open with information, promote the development of civil society, 
+and enhance individual human rights. China has begun to take the road to 
+political openness, permitting many personal freedoms and conducting 
+village-level elections, yet remains strongly committed to national 
+one-party rule by the Communist Party. To make that nation truly 
+accountable to its citizen's needs and aspirations, however, much work 
+remains to be done. Only by allowing the Chinese people to think, 
+assemble, and worship freely can China reach its full potential.
+
+Our important trade relationship will benefit from China's entry into 
+the World Trade Organization, which will create more export 
+opportunities and ultimately more jobs for American farmers, workers, 
+and companies. China is our fourth largest trading partner, with over 
+$100 billion in annual two-way trade. The power of market principles and 
+the WTO's requirements for transparency and accountability will advance 
+openness and the rule of law in China to help establish basic 
+protections for commerce and for citizens. There are, however, other 
+areas in which we have profound disagreements. Our commitment to the 
+self-defense of Taiwan under the Taiwan Relations Act is one. Human 
+rights is another. We expect China to adhere to its nonproliferation 
+commitments. We will work to narrow differences where they exist, but 
+not allow them to preclude cooperation where we agree.
+
+The events of September 11, 2001, fundamentally changed the context for 
+relations between the United States and other main centers of global 
+power, and opened vast, new opportunities. With our long-standing allies 
+in Europe and Asia, and with leaders in Russia, India, and China, we 
+must develop active agendas of cooperation lest these relationships 
+become routine and unproductive.
+
+Every agency of the United States Government shares the challenge. We 
+can build fruitful habits of consultation, quiet argument, sober 
+analysis, and common action. In the long-term, these are the practices 
+that will sustain the supremacy of our common principles and keep open 
+the path of progress.
+
+IX. Transform America's National Security Institutions to Meet the 
+Challenges and Opportunities of the Twenty-First Century
+
+
+"Terrorists attacked a symbol of American prosperity. They did not touch 
+its source. America is successful because of the hard work, creativity, 
+and enterprise of our people."
+
+
+
+
+
+President Bush
+Washington, D.C. (Joint Session of Congress)
+September 20, 2001
+
+
+
+The major institutions of American national security were designed in a 
+different era to meet different requirements. All of them must be 
+transformed.
+
+It is time to reaffirm the essential role of American military strength. 
+We must build and maintain our defenses beyond challenge. Our military's 
+highest priority is to defend the United States. To do so effectively, 
+our military must:
+
+*	assure our allies and friends;
+
+*	dissuade future military competition;
+
+*	deter threats against U.S. interests, allies, and friends; and
+
+*	decisively defeat any adversary if deterrence fails.
+
+
+The unparalleled strength of the United States armed forces, and their 
+forward presence, have maintained the peace in some of the world's most 
+strategically vital regions. However, the threats and enemies we must 
+confront have changed, and so must our forces. A military structured to 
+deter massive Cold War-era armies must be transformed to focus more on 
+how an adversary might fight rather than where and when a war might 
+occur. We will channel our energies to overcome a host of operational 
+challenges.
+
+The presence of American forces overseas is one of the most profound 
+symbols of the U.S. commitments to allies and friends. Through our 
+willingness to use force in our own defense and in defense of others, 
+the United States demonstrates its resolve to maintain a balance of 
+power that favors freedom. To contend with uncertainty and to meet the 
+many security challenges we face, the United States will require bases 
+and stations within and beyond Western Europe and Northeast Asia, as 
+well as temporary access arrangements for the long-distance deployment 
+of U.S. forces.
+
+Before the war in Afghanistan, that area was low on the list of major 
+planning contingencies. Yet, in a very short time, we had to operate 
+across the length and breadth of that remote nation, using every branch 
+of the armed forces. We must prepare for more such deployments by 
+developing assets such as advanced remote sensing, long-range precision 
+strike capabilities, and transformed maneuver and expeditionary forces. 
+This broad portfolio of military capabilities must also include the 
+ability to defend the homeland, conduct information operations, ensure 
+U.S. access to distant theaters, and protect critical U.S. 
+infrastructure and assets in outer space.
+
+Innovation within the armed forces will rest on experimentation with new 
+approaches to warfare, strengthening joint operations, exploiting U.S. 
+intelligence advantages, and taking full advantage of science and 
+technology. We must also transform the way the Department of Defense is 
+run, especially in financial management and recruitment and retention. 
+Finally, while maintaining near-term readiness and the ability to fight 
+the war on terrorism, the goal must be to provide the President with a 
+wider range of military options to discourage aggression or any form of 
+coercion against the United States, our allies, and our friends.
+
+We know from history that deterrence can fail; and we know from 
+experience that some enemies cannot be deterred. The United States must 
+and will maintain the capability to defeat any attempt by an enemy -- 
+whether a state or non-state actor -- to impose its will on the United 
+States, our allies, or our friends. We will maintain the forces 
+sufficient to support our obligations, and to defend freedom. Our forces 
+will be strong enough to dissuade potential adversaries from pursuing a 
+military build-up in hopes of surpassing, or equaling, the power of the 
+United States.
+
+Intelligence -- and how we use it -- is our first line of defense 
+against terrorists and the threat posed by hostile states. Designed 
+around the priority of gathering enormous information about a massive, 
+fixed object -- the Soviet bloc -- the intelligence community is coping 
+with the challenge of following a far more complex and elusive set of 
+targets.
+
+We must transform our intelligence capabilities and build new ones to 
+keep pace with the nature of these threats. Intelligence must be 
+appropriately integrated with our defense and law enforcement systems 
+and coordinated with our allies and friends. We need to protect the 
+capabilities we have so that we do not arm our enemies with the 
+knowledge of how best to surprise us. Those who would harm us also seek 
+the benefit of surprise to limit our prevention and response options and 
+to maximize injury.
+
+We must strengthen intelligence warning and analysis to provide 
+integrated threat assessments for national and homeland security. Since 
+the threats inspired by foreign governments and groups may be conducted 
+inside the United States, we must also ensure the proper fusion of 
+information between intelligence and law enforcement.
+
+Initiatives in this area will include:
+
+*	strengthening the authority of the Director of Central Intelligence 
+to lead the development and actions of the Nation's foreign intelligence 
+capabilities;
+
+*	establishing a new framework for intelligence warning that provides 
+seamless and integrated warning across the spectrum of threats facing 
+the nation and our allies;
+
+*	continuing to develop new methods of collecting information to 
+sustain our intelligence advantage;
+
+*	investing in future capabilities while working to protect them 
+through a more vigorous effort to prevent the compromise of intelligence 
+capabilities; and
+
+*	collecting intelligence against the terrorist danger across the 
+government with all-source analysis.
+
+
+As the United States Government relies on the armed forces to defend 
+America's interests, it must rely on diplomacy to interact with other 
+nations. We will ensure that the Department of State receives funding 
+sufficient to ensure the success of American diplomacy. The State 
+Department takes the lead in managing our bilateral relationships with 
+other governments. And in this new era, its people and institutions must 
+be able to interact equally adroitly with non-governmental organizations 
+and international institutions. Officials trained mainly in 
+international politics must also extend their reach to understand 
+complex issues of domestic governance around the world, including public 
+health, education, law enforcement, the judiciary, and public diplomacy.
+
+Our diplomats serve at the front line of complex negotiations, civil 
+wars, and other humanitarian catastrophes. As humanitarian relief 
+requirements are better understood, we must also be able to help build 
+police forces, court systems, and legal codes, local and provincial 
+government institutions, and electoral systems. Effective international 
+cooperation is needed to accomplish these goals, backed by American 
+readiness to play our part.
+
+Just as our diplomatic institutions must adapt so that we can reach out 
+to others, we also need a different and more comprehensive approach to 
+public information efforts that can help people around the world learn 
+about and understand America. The war on terrorism is not a clash of 
+civilizations. It does, however, reveal the clash inside a civilization, 
+a battle for the future of the Muslim world. This is a struggle of ideas 
+and this is an area where America must excel.
+
+We will take the actions necessary to ensure that our efforts to meet 
+our global security commitments and protect Americans are not impaired 
+by the potential for investigations, inquiry, or prosecution by the 
+International Criminal Court (ICC), whose jurisdiction does not extend 
+to Americans and which we do not accept. We will work together with 
+other nations to avoid complications in our military operations and 
+cooperation, through such mechanisms as multilateral and bilateral 
+agreements that will protect U.S. nationals from the ICC. We will 
+implement fully the American Servicemembers Protection Act, whose 
+provisions are intended to ensure and enhance the protection of U.S. 
+personnel and officials.
+
+We will make hard choices in the coming year and beyond to ensure the 
+right level and allocation of government spending on national security. 
+The United States Government must strengthen its defenses to win this 
+war. At home, our most important priority is to protect the homeland for 
+the American people.
+
+Today, the distinction between domestic and foreign affairs is 
+diminishing. In a globalized world, events beyond America's borders have 
+a greater impact inside them. Our society must be open to people, ideas, 
+and goods from across the globe. The characteristics we most cherish -- 
+our freedom, our cities, our systems of movement, and modern life -- are 
+vulnerable to terrorism. This vulnerability will persist long after we 
+bring to justice those responsible for the September eleventh attacks. 
+As time passes, individuals may gain access to means of destruction that 
+until now could be wielded only by armies, fleets, and squadrons. This 
+is a new condition of life. We will adjust to it and thrive -- in spite 
+of it.
+
+In exercising our leadership, we will respect the values, judgment, and 
+interests of our friends and partners. Still, we will be prepared to act 
+apart when our interests and unique responsibilities require. When we 
+disagree on particulars, we will explain forthrightly the grounds for 
+our concerns and strive to forge viable alternatives. We will not allow 
+such disagreements to obscure our determination to secure together, with 
+our allies and our friends, our shared fundamental interests and values.
+
+Ultimately, the foundation of American strength is at home. It is in the 
+skills of our people, the dynamism of our economy, and the resilience of 
+our institutions. A diverse, modern society has inherent, ambitious, 
+entrepreneurial energy. Our strength comes from what we do with that 
+energy. That is where our national security begins.
+
+

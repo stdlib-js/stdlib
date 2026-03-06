@@ -1,0 +1,82 @@
+
+{{alias}}( str )
+    Tests if a string is well-formed.
+
+    Parameters
+    ----------
+    str: any
+        String to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether str is well-formed.
+
+    Examples
+    --------
+    > var bool = {{alias}}( '' )
+    true
+
+    > bool = {{alias}}( new String( '' ) )
+    true
+
+    > bool = {{alias}}( '\uDBFF' )
+    false
+
+    > bool = {{alias}}( '\uDBFFFF\uDBFF' )
+    false
+
+    > bool = {{alias}}( [] )
+    false
+
+    > bool = {{alias}}( '-5' )
+    true
+
+    > bool = {{alias}}( null )
+    false
+
+
+{{alias}}.isPrimitive( str )
+    Tests if a string is a well-formed string primitive.
+
+    Parameters
+    ----------
+    str: any
+        String to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether str is a well-formed string primitive.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isPrimitive( '' )
+    true
+    > bool = {{alias}}.isPrimitive( new String( '' ) )
+    false
+
+
+{{alias}}.isObject( str )
+    Tests if a string is a well-formed string object.
+
+    Parameters
+    ----------
+    str: any
+        String to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether str is a well-formed string object.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isObject( '' )
+    false
+    > bool = {{alias}}.isObject( new String( '' ) )
+    true
+
+    See Also
+    --------
+

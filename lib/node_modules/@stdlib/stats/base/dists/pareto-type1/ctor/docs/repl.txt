@@ -1,0 +1,96 @@
+
+{{alias}}( [α, β] )
+    Returns a Pareto (Type I) distribution object.
+
+    Parameters
+    ----------
+    α: number (optional)
+        Shape parameter. Must be greater than `0`. Default: `1.0`.
+
+    β: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    pareto1: Object
+        Distribution instance.
+
+    pareto1.alpha: number
+        Shape parameter. If set, the value must be greater than `0`.
+
+    pareto1.beta: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    pareto1.entropy: number
+        Read-only property which returns the differential entropy.
+
+    pareto1.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    pareto1.mean: number
+        Read-only property which returns the expected value.
+
+    pareto1.median: number
+        Read-only property which returns the median.
+
+    pareto1.mode: number
+        Read-only property which returns the mode.
+
+    pareto1.skewness: number
+        Read-only property which returns the skewness.
+
+    pareto1.variance: number
+        Read-only property which returns the variance.
+
+    pareto1.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    pareto1.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (logCDF).
+
+    pareto1.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (logPDF).
+
+    pareto1.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    pareto1.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var pareto1 = {{alias}}( 6.0, 5.0 );
+    > pareto1.alpha
+    6.0
+    > pareto1.beta
+    5.0
+    > pareto1.entropy
+    ~0.984
+    > pareto1.kurtosis
+    ~35.667
+    > pareto1.mean
+    6.0
+    > pareto1.median
+    ~5.612
+    > pareto1.mode
+    5.0
+    > pareto1.skewness
+    ~3.81
+    > pareto1.variance
+    1.5
+    > pareto1.cdf( 7.0 )
+    ~0.867
+    > pareto1.logcdf( 7.0 )
+    ~-0.142
+    > pareto1.logpdf( 5.0 )
+    ~0.182
+    > pareto1.pdf( 5.0 )
+    1.2
+    > pareto1.quantile( 0.8 )
+    ~6.538
+
+    See Also
+    --------
+

@@ -1,0 +1,9 @@
+
+Usage: num-grapheme-clusters [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+  -l,    --lines               Analyze individual lines.
+

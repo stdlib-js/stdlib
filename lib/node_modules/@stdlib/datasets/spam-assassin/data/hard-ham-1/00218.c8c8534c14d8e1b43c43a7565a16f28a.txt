@@ -1,0 +1,113 @@
+Return-Path: classicn@web12.hostcloud.com
+Delivery-Date: Sun Sep 15 00:29:24 2002
+Return-Path: <classicn@web12.hostcloud.com>
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mothlight.dyndns.org (8.11.6/8.11.6) with ESMTP id g8F4TNh04045
+	for <nice@localhost>; Sun, 15 Sep 2002 00:29:23 -0400
+Received: from fastmail.fm [209.61.183.86]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for nice@localhost (single-drop); Sun, 15 Sep 2002 00:29:23 -0400 (EDT)
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by server2.fastmail.fm (Cyrus v2.1.5) with LMTP; Fri, 13 Sep 2002 13:01:17 -0500
+X-Sieve: CMU Sieve 2.2
+Received: from www.fastmail.fm (server1.internal [10.202.2.132])
+	by www.fastmail.fm (Cyrus v2.1.3) with LMTP; Fri, 13 Sep 2002 13:01:17 -0500
+Received: from www.fastmail.fm (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id C89596DAC1
+	for <mothlight@fastmail.fm>; Fri, 13 Sep 2002 13:01:16 -0500 (CDT)
+X-Mail-from: classicn@web12.hostcloud.com
+X-Delivered-to: <mothlight@fastmail.fm>
+X-Spam: spam
+  DATE_IN_FUTURE_06_12
+Received: from web12.hostcloud.com (web12.hostcloud.com [64.239.141.2])
+	by www.fastmail.fm (Postfix) with ESMTP id 98B966DAFD
+	for <mothlight@fastmail.fm>; Fri, 13 Sep 2002 13:01:16 -0500 (CDT)
+Received: from classicn by web12.hostcloud.com with local (Exim 3.36 #1)
+	id 17q5z6-0007ml-00
+	for mothlight@fastmail.fm; Fri, 13 Sep 2002 23:00:48 -0700
+Content-Disposition: inline
+Content-Transfer-Encoding: binary
+Content-Type: text/plain
+MIME-Version: 1.0
+X-Mailer: MIME::Lite 2.117  (F2.6; T1.001; A; B2.12; Q2.03)
+Date: Sat, 14 Sep 2002 06:00:48 UT
+From: "Classic Novels" <webmaster@classic-novels.com>
+To: mothlight@fastmail.fm
+Subject: Classic Novels, Aesop's Fables, Issue 49
+X-Loop: AutoresponsePlus
+X-Arpidentifier: 109548_640445_850621_346822
+Message-Id: <E17q5z6-0007ml-00@web12.hostcloud.com>
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - web12.hostcloud.com
+X-AntiAbuse: Original Domain - fastmail.fm
+X-AntiAbuse: Originator/Caller UID/GID - [32063 32063] / [32063 32063]
+X-AntiAbuse: Sender Address Domain - web12.hostcloud.com
+X-Status: 
+X-Keywords:                  
+
+---------------------------------------------------------------------------
+Norton SystemWorks Pro 2002 $29.95, 90% Off Retail!!
+http://www.adreporting.com/dir.php?a=167673&p=134&w=text
+---------------------------------------------------------------------------
+
+
+
+Friday, September 13 2002
+
+==================================================================
+
+               Classic Novels - In 5 Minutes A Day!
+                        -Novels on Demand-
+
+                          Fables - Aesop
+
+==================================================================
+                         Announcements
+
+Sorry!  We are having difficulties with our database again.  Due to a corruption caused by our new host, we have lost a great deal of subscribers.  We are working on restoring from a backup.  If you are receiving some, but not all of your novels, we apologize.  We'll try to get back to full swing as soon as possible.
+
+**August Appreciation Sale Extended**
+To show our appreciation to our readers we're offering our 5400+ MS-Reader CD set on Ebay for only $6.95! Visit our website at http://www.classic-novels.com and click on the 'Visit Ebay' link. This is the same set of 5400+ books normally priced at $12.00!  Check out our other educational CDs, America At War:The Civil War, Mars Pathfinder 3D Gallery, Early American Animation and Air Power:US Air Force Aircraft.
+
+Want a list of the newest titles?  Send an email to:
+mailto:whatsnew@classic-novels.com
+
+==================================================================
+
+
+The Wolf in Sheep's Clothing 
+
+ONCE UPON A TIME a Wolf resolved to disguise his 
+appearance in order to secure food 
+more easily. Encased in the skin of a sheep, he 
+pastured with the flock deceiving the shepherd 
+by his costume. In the evening he was shut up by 
+the shepherd in the fold; the gate was closed, 
+and the entrance made thoroughly secure. But the 
+shepherd, returning to the fold during the night 
+to obtain meat for the next day, mistakenly 
+caught up the Wolf instead of a sheep, and 
+killed him instantly. 
+Harm seek. harm find. 
+
+
+==================================================================
+You are subscribed to Aesop's Fables as:
+mothlight@fastmail.fm
+
+If you would like to unsubscribe, click on the link below.
+
+http://www.classic-novels.com/cgi-bin/arp3/arp3-un.pl?c=8530&p=5514
+==================================================================
+Classic Novels - In 5 Minutes A Day!
+Copyright 2002 Kevin S Peterson
+Visit us online at http://www.classic-novels.com
+or contact us at mailto:comments@classic-novels.com
+
+---------------------------------------------------------------------------
+Fun & Functional! Say the Time
+It's the newest evolution of the cuckoo clock. Try it FREE!
+http://www.adreporting.com/dir.php?a=167673&p=138&w=text
+---------------------------------------------------------------------------
+
+

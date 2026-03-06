@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Tue Aug  6 12:00:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 323BA441CB
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:34 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g75DRwk12689 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 14:27:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 0D18F29409F; Mon,  5 Aug 2002 06:25:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from tisch.mail.mindspring.net (tisch.mail.mindspring.net
+    [207.69.200.157]) by xent.com (Postfix) with ESMTP id 954EF294099 for
+    <fork@xent.com>; Mon,  5 Aug 2002 06:24:49 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    tisch.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17bhr4-0008S9-00;
+    Mon, 05 Aug 2002 09:25:02 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a45b9742cb8ce81@[66.149.49.6]>
+To: fork@spamassassin.taint.org, irregulars@tb.tf
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Jury rules for Paul Guthrie's Defense in ZixIt's $700mm suit (was Re: GigaLaw.com Daily News, August 5, 2002)
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 5 Aug 2002 09:23:54 -0400
+
+If anyone can get past the "No Cookie" monster to the actual text of this
+link, let me know. :-).
+
+Cheers,
+RAH
+
+
+At 5:36 AM -0600 on 8/5/02, GigaLaw.com wrote:
+
+
+> Jury Rules for Defense in $700 Million Net Defamation Case
+>      In one of the first trials in the nation to address Internet
+> defamation, a Dallas County, Texas, jury rejected a $700 million suit by
+> an Internet company that claimed it was harmed by negative electronic
+> messages. Dallas' ZixIt alleged that Paul Guthrie, formerly a vice
+> president with Visa, posted more than 400 anonymous messages, many
+> negative, about ZixIt on a Yahoo Internet message board, causing ZixIt's
+> stock price to drop.
+>      Read the article: law.com @
+>
+>http://www.law.com/servlet/ContentServer?pagename=OpenMarket/Xcelerate/View&c=LawArticle&cid=1028320303259&t=LawArticleTech
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+http://xent.com/mailman/listinfo/fork
+
+

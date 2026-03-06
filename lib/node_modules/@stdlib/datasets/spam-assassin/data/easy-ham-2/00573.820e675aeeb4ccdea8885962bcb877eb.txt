@@ -1,0 +1,67 @@
+From razor-users-admin@lists.sourceforge.net  Tue Aug  6 12:37:58 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C5BB8441B2
+	for <jm@localhost>; Tue,  6 Aug 2002 06:36:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:36:38 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g75IDJk21323 for <jm-razor@jmason.org>; Mon, 5 Aug 2002 19:13:20 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17bmF4-0000Rs-00; Mon,
+    05 Aug 2002 11:06:06 -0700
+Received: from med-core07.med.wayne.edu ([146.9.19.23]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17bmEI-0005RX-00 for <razor-users@lists.sourceforge.net>; Mon,
+    05 Aug 2002 11:05:18 -0700
+X-Mimeole: Produced By Microsoft Exchange V6.0.6249.0
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Message-Id: <D79A56AD131896448D0860DEE07CBE1FA7C0@med-core07.med.wayne.edu>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: What's wrong with the Razor servers now?
+Thread-Index: AcI6NTHhdNlotwjiQEiUizLDYaWgngCdP1sA
+From: "Rose, Bobby" <brose@med.wayne.edu>
+To: "ML-razor-users" <razor-users@example.sourceforge.net>
+Subject: [Razor-users] What's wrong with the Razor servers now?
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 5 Aug 2002 14:05:09 -0400
+Date: Mon, 5 Aug 2002 14:05:09 -0400
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g75IDJk21323
+
+I noticed a low count of razor'd spam messages. So after digging, if I
+razor-report a message the diags say that it was accepted but if I turn
+around and run a check on the exact same message that was reported, then
+it doesn't find the sig and as such isn't spam.
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

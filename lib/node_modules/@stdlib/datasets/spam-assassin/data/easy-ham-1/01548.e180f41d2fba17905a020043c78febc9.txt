@@ -1,0 +1,76 @@
+From razor-users-admin@lists.sourceforge.net  Mon Aug 26 15:18:35 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 017124416E
+	for <jm@localhost>; Mon, 26 Aug 2002 10:15:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:15:59 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7O8pcZ29845 for <jm-razor@jmason.org>; Sat, 24 Aug 2002 09:51:38 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17iWOq-00066d-00; Sat,
+    24 Aug 2002 01:36:04 -0700
+Received: from nick.dcs.qmul.ac.uk ([138.37.88.61] helo=nick) by
+    usw-sf-list1.sourceforge.net with esmtp (Cipher TLSv1:DES-CBC3-SHA:168)
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17iWOm-0000vq-00 for
+    <razor-users@lists.sourceforge.net>; Sat, 24 Aug 2002 01:36:01 -0700
+Received: from 81-86-135-90.dsl.pipex.com ([81.86.135.90]
+    helo=guest1.mews) by nick with asmtp (TLSv1:EDH-RSA-DES-CBC3-SHA:168)
+    (Exim 4.10) id 17iWOb-0004VE-00; Sat, 24 Aug 2002 09:35:49 +0100
+From: mb/vipul@dcs.qmul.ac.uk
+X-X-Sender: mb@guest1.mews
+To: "Bort, Paul" <pbort@tmwsystems.com>
+Cc: razor-users@example.sourceforge.net
+Subject: RE: [Razor-users] Razor with sendmail
+In-Reply-To: <C106BE84A6B5D411883300508B55B83A01558FD2@tmwsystems.com>
+Message-Id: <Pine.LNX.4.44.0208240925210.15109-100000@guest1.mews>
+X-Url: http://www.theBachChoir.org.uk/
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Auth-User: mb
+X-Uvscan-Result: clean (17iWOb-0004VE-00)
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Sat, 24 Aug 2002 09:48:57 +0100 (BST)
+Date: Sat, 24 Aug 2002 09:48:57 +0100 (BST)
+
+On Aug 23 Bort, Paul wrote:
+
+>If your sendmail has been compiled with Milter support, you can add SMRazor
+>easily. We've been using it for a while without problems. Others on the list
+>have mentioned it as well. 
+>
+>http://www.sapros.com/smrazor/
+
+Does this fork+exec a perl interpreter for every incoming mail? If so, I 
+reckon your mailer is vulerable to a DoS attack without too much effort...
+The real question is: is there a way to run razor without this overhead?  
+Even some sort of razord you could talk to over a unix socket would do.
+Until I can find one, I cannot spare the resources to run razor at all :(
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+

@@ -1,0 +1,90 @@
+From rpm-list-admin@freshrpms.net  Mon Sep 30 13:40:38 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 89F5D16F17
+	for <jm@localhost>; Mon, 30 Sep 2002 13:40:14 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 13:40:14 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8TJgPg25539 for
+    <jm-rpm@jmason.org>; Sun, 29 Sep 2002 20:42:25 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g8TJd1f10034; Sun, 29 Sep 2002 21:39:01
+    +0200
+Received: from urgent.rug.ac.be (urgent.rug.ac.be [157.193.88.1]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with SMTP id g8TJcef09964 for
+    <rpm-list@freshrpms.net>; Sun, 29 Sep 2002 21:38:40 +0200
+Received: (qmail 26731 invoked by uid 505); 29 Sep 2002 19:38:46 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    29 Sep 2002 19:38:46 -0000
+From: Thomas Vander Stichele <thomas@urgent.rug.ac.be>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: [gst-devel] Red Hat 8.0
+In-Reply-To: <20020929211630.28e45f73.matthias@egwn.net>
+Message-Id: <Pine.LNX.4.44.0209292136580.11482-100000@urgent.rug.ac.be>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sun, 29 Sep 2002 21:38:46 +0200 (CEST)
+Date: Sun, 29 Sep 2002 21:38:46 +0200 (CEST)
+
+> > > > INFO (15299: 0)gst_xml_registry_rebuild:1555: Plugin 
+> > > > /usr/lib/gst/libgstwincodec.so failed to load: Error loading plugin 
+> > > > /usr/lib/gst/libgstwincodec.so, reason: /usr/lib/libaviplay-0.7.so.0:
+> > > > 
+> > > > undefined symbol: _ZTVN10__cxxabiv120__si_class_type_infoE
+> > 
+> > > Are you using the same version of GCC to compile the plugin as its C++
+> > > dependencies?
+> > 
+> > Yes, I am.  Everything is built inside a chroot.  I think it isn't
+> > linking to a lib somewhere, I'm just not sure what lib it should
+> > preloading here.  Anyway to find out which one it is ?
+> 
+> Looks like a problem with the avifile you've rebuilt... I've been unable to
+> recompile successfully the latest version on 8.0 :-/
+
+Hm, it is built inside the same chroot.  aviplay works (well it would if I 
+had XV, I get X errors ;)).  But it doesn't complain about linker 
+problems.  So I suppose my avifile library on itself is compiled ok.
+
+Sigh, avifile is one of the worst packages out there, in all aspects - 
+naming of tarballs, not ever releasing an actual package, versioning of 
+libraries, API stability, ...
+
+Thomas
+
+ -- 
+
+The Dave/Dina Project : future TV today ! - http://davedina.apestaart.org/
+<-*-                      -*->
+cos when i needed someone
+you left me floored
+the feeling is gone
+i can't let go
+you know that i'd change if i had the love it takes
+<-*- thomas@apestaart.org -*->
+URGent, the best radio on the Internet - 24/7 ! - http://urgent.rug.ac.be/
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

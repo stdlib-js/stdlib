@@ -1,0 +1,205 @@
+
+{{alias}}( buffer )
+    Circular buffer constructor.
+
+    Parameters
+    ----------
+    buffer: integer|ArrayLike
+        Buffer size or an array-like object to use as the underlying buffer.
+
+    Returns
+    -------
+    buf: Object
+        Circular buffer data structure.
+
+    Examples
+    --------
+    > var b = {{alias}}( 3 );
+    > b.push( 'foo' );
+    > b.push( 'bar' );
+    > b.push( 'beep' );
+    > b.length
+    3
+    > b.count
+    3
+    > b.push( 'boop' )
+    'foo'
+
+
+{{alias}}.prototype.clear()
+    Clears a buffer.
+
+    Returns
+    -------
+    out: Object
+        Circular buffer instance.
+
+    Examples
+    --------
+    > var b = {{alias}}( 3 );
+    > b.push( 'foo' );
+    > b.push( 'bar' );
+    > b.push( 'beep' );
+    > b.count
+    3
+    > b.clear();
+    > b.count
+    0
+
+
+{{alias}}.prototype.count
+    Read-only property returning the number of elements currently in the buffer.
+
+    Returns
+    -------
+    out: integer
+        Number of elements currently in the buffer.
+
+    Examples
+    --------
+    > var b = {{alias}}( 3 );
+    > b.count
+    0
+    > b.push( 'foo' );
+    > b.count
+    1
+    > b.push( 'bar' );
+    > b.count
+    2
+
+
+{{alias}}.prototype.full
+    Read-only property returning a boolean indicating whether a circular buffer
+    is full.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether a circular buffer is full.
+
+    Examples
+    --------
+    > var b = {{alias}}( 3 );
+    > b.full
+    false
+    > b.push( 'foo' );
+    > b.push( 'bar' );
+    > b.push( 'beep' );
+    > b.full
+    true
+
+
+{{alias}}.prototype.iterator( [niters] )
+    Returns an iterator for iterating over a circular buffer.
+
+    A returned iterator does not iterate over partially full buffers.
+
+    Parameters
+    ----------
+    niters: integer (optional)
+        Number of iterations. Default: infinity.
+
+    Returns
+    -------
+    out: Iterator
+        Iterator.
+
+    Examples
+    --------
+    > var b = {{alias}}( 3 );
+    > b.push( 'foo' );
+    > b.push( 'bar' );
+    > b.push( 'beep' );
+    > b.push( 'boop' );
+    > var it = b.iterator( b.length );
+    > var v = it.next().value
+    'bar'
+    > v = it.next().value
+    'beep'
+    > v = it.next().value
+    'boop'
+    > var bool = it.next().done
+    true
+
+
+{{alias}}.prototype.length
+    Read-only property returning the buffer length (i.e., capacity).
+
+    Returns
+    -------
+    out: integer
+        Buffer length.
+
+    Examples
+    --------
+    > var b = {{alias}}( [ 0, 0, 0 ] );
+    > var len = b.length
+    3
+
+
+{{alias}}.prototype.push( value )
+    Adds a value to a circular buffer.
+
+    Parameters
+    ----------
+    value: any
+        Value to add.
+
+    Returns
+    -------
+    out: any
+        Removed element (or undefined).
+
+    Examples
+    --------
+    > var b = {{alias}}( 3 );
+    > b.push( 'foo' )
+    undefined
+    > b.push( 'bar' )
+    undefined
+    > b.push( 'beep' )
+    undefined
+    > b.push( 'boop' )
+    'foo'
+
+
+{{alias}}.prototype.toArray()
+    Returns an array of circular buffer values.
+
+    Returns
+    -------
+    out: Array
+        Circular buffer values.
+
+    Examples
+    --------
+    > var b = {{alias}}( 3 );
+    > b.push( 'foo' );
+    > b.push( 'bar' );
+    > b.push( 'beep' );
+    > b.push( 'boop' );
+    > var vals = b.toArray()
+    [ 'bar', 'beep', 'boop' ]
+
+
+{{alias}}.prototype.toJSON()
+    Serializes a circular buffer as JSON.
+
+    Returns
+    -------
+    out: Object
+        Serialized circular buffer.
+
+    Examples
+    --------
+    > var b = {{alias}}( 3 );
+    > b.push( 'foo' );
+    > b.push( 'bar' );
+    > b.push( 'beep' );
+    > b.push( 'boop' );
+    > var o = b.toJSON()
+    {'type':'circular-buffer','length':3,'data':['bar','beep','boop']}
+
+    See Also
+    --------
+

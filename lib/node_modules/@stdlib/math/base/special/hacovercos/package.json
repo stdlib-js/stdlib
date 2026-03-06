@@ -1,0 +1,158 @@
+{
+  "name": "@stdlib/math/base/special/hacovercos",
+  "version": "0.0.0",
+  "description": "Compute the half-value coversed cosine.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "gypfile": true,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "hacovercos",
+    "hacovercosin",
+    "hacovercosine",
+    "versed cosine",
+    "half-value",
+    "coversed",
+    "cosinus versus",
+    "hacovercosinus",
+    "hcc",
+    "versed",
+    "cosine",
+    "cos",
+    "sine",
+    "sin",
+    "trig",
+    "trigonometry",
+    "radians",
+    "angle"
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "hacovercos",
+      "alias": "hacovercos",
+      "pkg_desc": "compute the half-value coversed cosine",
+      "desc": "computes the half-value coversed cosine",
+      "short_desc": "half-value coversed cosine",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in radians)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0,
+              6.283185307179586
+            ]
+          },
+          "example_values": [
+            0,
+            0.523,
+            0.785,
+            1.047,
+            1.571,
+            2.094,
+            2.618,
+            3.142,
+            3.665,
+            4.189,
+            4.712,
+            5.236,
+            5.759,
+            6.283,
+            -0.523,
+            -1.047,
+            -1.571,
+            0.1,
+            1.5,
+            3
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "half-value coversed cosine",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "hacovercos",
+        "hacovercosin",
+        "hacovercosine",
+        "coversed",
+        "hcc",
+        "versed",
+        "cosine",
+        "sine",
+        "trig",
+        "trigonometry"
+      ],
+      "extra_keywords": []
+    }
+  }
+}

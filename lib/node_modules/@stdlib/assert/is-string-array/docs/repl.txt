@@ -1,0 +1,72 @@
+
+{{alias}}( value )
+    Tests if a value is an array of strings.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array of strings.
+
+    Examples
+    --------
+    > var bool = {{alias}}( [ 'abc', 'def' ] )
+    true
+    > bool = {{alias}}( [ 'abc', 123 ] )
+    false
+
+
+{{alias}}.primitives( value )
+    Tests if a value is an array containing only string primitives.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array containing only string
+        primitives.
+
+    Examples
+    --------
+    > var arr = [ 'abc', 'def' ];
+    > var bool = {{alias}}.primitives( arr )
+    true
+    > arr = [ 'abc', new String( 'def' ) ];
+    > bool = {{alias}}.primitives( arr )
+    false
+
+
+{{alias}}.objects( value )
+    Tests if a value is an array containing only `String` objects.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is an array containing only `String`
+        objects.
+
+    Examples
+    --------
+    > var arr = [ new String( 'ab' ), new String( 'cd' ) ];
+    > var bool = {{alias}}.objects( arr )
+    true
+    > arr = [ new String( 'abc' ), 'def' ];
+    > bool = {{alias}}.objects( arr )
+    false
+
+    See Also
+    --------
+

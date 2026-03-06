@@ -1,0 +1,103 @@
+From ilug-admin@linux.ie  Mon Jul 22 19:49:49 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D9983440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:49:47 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:49:47 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQg403662 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 18:26:42 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id HAA22510 for <jm-ilug@jmason.org>;
+    Sat, 20 Jul 2002 07:15:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id HAA20661; Sat, 20 Jul 2002 07:11:25 +0100
+Received: from linux.local ([195.218.108.118]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id HAA20630 for <ilug@linux.ie>; Sat,
+    20 Jul 2002 07:11:02 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.118] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6JMc9X05992 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 23:38:09 +0100
+Message-Id: <200207192238.g6JMc9X05992@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] hard- vs. soft-links [was: How to copy some files ]
+In-Reply-To: Message from
+    "Matthew French"
+    <mfrench42@yahoo.co.uk> of
+    "Fri, 19 Jul 2002 22:00:02 BST."
+    <002c01c22f67$4216c280$f264a8c0@sabeo.ie>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <5989.1027118289.1@linux.local>
+Date: Fri, 19 Jul 2002 23:38:09 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    HAA20630
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Fri, 19 Jul 2002 22:00:02 +0100
+  | From: "Matthew French" <mfrench42@yahoo.co.uk>
+  |[ ... ]
+  | Now here is a thought: a Unix version of the "Deleted Items" folder.
+  | 
+  | In the root of a hard drive, create a directory ".unwanted".
+  | Then periodically create hard links to every file on the hard
+  | drive that does not have hard links.
+  | 
+  | That way, when someone accidentally does "rm *" or whatever,
+  | you still have a link under ".unwanted"  [ ... ]
+
+ hum.  interesting variation on the classic technique of
+ redefining `rm' to `mv' the files into `./.trash/' (or
+ with a prefix of `#' or a suffix of `~'; the variations
+ are endless).  these classic techniques only provide a
+ means to roll back accidental `rm's, so there is still
+ considerable scope for data lost as there are other ways
+ of deleting files --- which is not a problem for this
+ hard link idea.
+
+ but, like the classic techniques, there is no rolling
+ back of accidental overwrites.
+
+ ( rolling back overwrites reminds me of the "snapshot"
+  facility on NetWork Appliance fileservers.  and of the
+  various "versioning" filesystems which appeared --- and
+  then vanished? --- over the years.... )
+
+ one severe(?) gotcha is some files shouldn't have any
+ hard links.  both RCS *,v (and hence CVS) and SCCS s.*
+ files are like this --- the RCS(/CVS?)/SCCS toolsets
+ complain if there are hard links.
+
+cheers,
+	-blf-
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

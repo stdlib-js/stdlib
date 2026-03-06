@@ -1,0 +1,192 @@
+From fork-admin@xent.com  Tue Jul 23 17:31:16 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2AB70440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 12:31:13 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 17:31:13 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6NGWF410667 for
+    <jm@jmason.org>; Tue, 23 Jul 2002 17:32:15 +0100
+Received: from xent.com ([64.161.22.236]) by webnote.net (8.9.3/8.9.3)
+    with ESMTP id RAA04000 for <jm@jmason.org>; Tue, 23 Jul 2002 17:31:19
+    +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 43C472940F6; Tue, 23 Jul 2002 09:16:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from Mail2L.com (unknown [213.132.0.33]) by xent.com (Postfix)
+    with ESMTP id 428A42940EE for <fork@xent.com>; Tue, 23 Jul 2002 09:15:27
+    -0700 (PDT)
+From: news@bluecom.com
+To: fork@spamassassin.taint.org
+Message-Id: <Mail2L:2122738:fork@spamassassin.taint.org>
+Subject: We are on the look-out for new partners such as you and your company
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 09:15:27 -0700 (PDT)
+Content-Type: multipart/alternative; boundary="---=b1z9tz8hennlu9udi_dkzpz49njtph"
+
+
+-----=b1z9tz8hennlu9udi_dkzpz49njtph
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+
+We are on the look-out for new partners such as you and your company
+
+Whether you want to buy or sell, BlueCom Danmark A/S is worth closer acquaintance
+
+BlueCom Danmark A/S is a worldwide IT-distributor of PC-systems and add-ons. Since it’s foundation in 1992 the company has enjoyed constant growth, and is always on the look out for new partners to cooperate with. 
+
+We have found you and your company through our Internet research, and hope to establish a fruitful cooperation with you in the future. However, we apologies if you are not the correct person to contact within your company, and kindly request that you forward this message to that person. Further, if this letter is of no interest to you and your company, please press the “unsubscribe” button in this mail.
+
+The easiest way to start cooperating with BlueCom Danmark A/S is through our user-friendly website. 
+If any of the features detailed below are of interest to your company, please click on the link and our cooperation has already begun. 
+
+
+CUSTOMER:
+Would you like the best prices on the market, plus 24-hour delivery and an incredible 30 days credit?
+Then maybe you would like to become our partner or customer. 
+We are able to offer the absolute best prices on the market because of our large-scale procurement of a small number of specific products. Our range includes products from IBM, Compaq and HP Options such as Notebooks, PCs and Monitors. We also offer PC parts such as RAM, CPUs, VGA cards, Motherboards, Wireless products, original Mobile Phones and accessories, Hard disks, DVD, CD-RW, TFT screens, from the following top companies: ASUS, ECS, ABIT, CREATIVE, INTEL, AMD, U.S. ROBOTICS, LG, PLEXTOR, BELKIN, BENQ, SAMSUNG, IBM SOFTWARE and many more. 
+
+Besides delivering at the very best prices, we offer Real-Time updated prices through our Customer Lounge, 24-hour delivery all over Europe and 30 days credit.
+Please click here: http://ocms.ocms.dk/engine/redirectord.cfm?ID=1214
+
+SUPPLIER:
+Are you a future supplier to BlueCom Danmark A/S?
+BlueCom Danmark A/S keeps it suppliers updated on products in demand, the specific volumes on request, and of course the target prices. If you would like to see which products and target prices we are interested in right now, please click here: http://ocms.ocms.dk/engine/redirectord.cfm?ID=1213
+ 
+EVERYBODY:
+Would you like to receive IT News?
+BlueCom Danmark A/S offers IT News for free.  We produce a newsletter with articles covering the changes in our industry, new products, tariff rates and general trends in the IT-market. The newsletter also contains information about BlueCom Danmark A/S and the development of its business partners. 
+Please click here: http://ocms.ocms.dk/engine/redirectord.cfm?ID=1212
+
+
+Would you like more information about BlueCom Danmark A/S? 
+For further information please do not hesitate to contact BlueCom Danmark A/S. You can also visit our homepage at: http://ocms.ocms.dk/engine/redirectord.cfm?ID=1211
+
+
+Thanks for your time. We look forward to hearing from you.
+
+
+Best regards
+
+Jens Fournais,
+Managing Director
+
+BlueCom Danmark A/S
+
+To unsubscribe from this mailing list, please click here: http://ocms.ocms.dk/engine/redirect.cfm?ID=1210
+
+
+
+
+-----=b1z9tz8hennlu9udi_dkzpz49njtph
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<title>Partner Mail</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-1">
+</head>
+
+<body bgcolor=3D"#FFFFFF">
+<p><b><font face=3D"Arial, Helvetica, sans-serif" size=3D"+2">We are on the look-out 
+  for new partners such as you and your company</font></b><font face=3D"Arial, Helvetica, sans-serif"><br>
+  <i><br>
+  Whether you want to buy or sell, BlueCom Danmark A/S is worth closer acquaintance</i><br>
+  <br>
+  BlueCom Danmark A/S is a worldwide IT-distributor of PC-systems and add-ons. 
+  Since it's foundation in 1992 the company has enjoyed constant growth, and is 
+  always on the look out for new partners to cooperate with. <br>
+  <br>
+  We have found you and your company through our Internet research, and hope to 
+  establish a fruitful cooperation with you in the future. However, we apologies 
+  if you are not the correct person to contact within your company, and kindly 
+  request that you forward this message to that person. Further, if this letter 
+  is of no interest to you and your company, please press the "unsubscribe" button 
+  in this mail. <br>
+  <br>
+  The easiest way to start cooperating with BlueCom Danmark A/S is through our 
+  user-friendly website. If any of the features detailed below are of interest 
+  to your company, please click on the link and our cooperation has already begun.<br>
+  <br>
+  <b>CUSTOMER: </b><br>
+  <b>Would you like the best prices on the market, plus 24-hour delivery and an 
+  incredible 30 days credit? </b><br>
+  Then maybe you would like to become our partner or customer.<br>
+  We are able to offer the absolute best prices on the market because of our large-scale 
+  procurement of a small number of specific products. Our range includes products 
+  from IBM, Compaq and HP Options such as Notebooks, PCs and Monitors. We also 
+  offer PC parts such as RAM, CPUs, VGA cards, Motherboards, Wireless products, 
+  original Mobile Phones and accessories, Hard disks, DVD, CD-RW, TFT screens, 
+  from the following top companies: ASUS, ECS, ABIT, CREATIVE, INTEL, AMD, U.S. 
+  ROBOTICS, LG, PLEXTOR, BELKIN, BENQ, SAMSUNG, IBM SOFTWARE and many more. <br>
+  <br>
+  Besides delivering at the very best prices, we offer Real-Time updated prices 
+  through our Customer Lounge, 24-hour delivery all over Europe and 30 days credit. 
+  <br>
+  Please click here: <a href=3D"http://ocms.ocms.dk/engine/redirect.cfm?ID=3D1214">Customers 
+  Lounge</a> <br>
+  <br>
+  <b>SUPPLIER: </b><br>
+  <b>Are you a future supplier to BlueCom Danmark A/S? </b><br>
+  BlueCom Danmark A/S keeps it suppliers updated on products in demand, the specific 
+  volumes on request, and of course the target prices. If you would like to see 
+  which products and target prices we are interested in right now, <br>
+  please click here: <a href=3D"http://ocms.ocms.dk/engine/redirect.cfm?ID=3D1213">Suppliers 
+  Lounge</a> <br>
+  <b> </b><br>
+  <b>EVERYBODY:</b> <br>
+  <b>Would you like to receive IT News?<br>
+  </b> BlueCom Danmark A/S offers IT News for free. We produce a newsletter with 
+  articles covering the changes in our industry, new products, tariff rates and 
+  general trends in the IT-market. The newsletter also contains information about 
+  BlueCom Danmark A/S and the development of its business partners. <br>
+  Please click here: <a href=3D"http://ocms.ocms.dk/engine/redirect.cfm?ID=3D1212">IT-News</a> 
+  <br>
+  <br>
+  <b>Would you like more information about BlueCom Danmark A/S? </b><br>
+  For further information please do not hesitate to contact BlueCom Danmark A/S. 
+  <br>
+  You can also visit our homepage at: <a href=3D"http://ocms.ocms.dk/engine/redirect.cfm?ID=3D1211">www.bluecom.com</a> 
+  <br>
+  <br>
+  <br>
+  Thanks for your time. We look forward to hearing from you. <br>
+  <br>
+  Best regards <br>
+  <br>
+  Jens Fournais<br>
+  Managing Director <br>
+  <br>
+  BlueCom Danmark A/S </font></p>
+<p> </p>
+<p><font face=3D"Arial, Helvetica, sans-serif">To unsubscribe from this mailing 
+  list, please click here: <a href=3D"http://ocms.ocms.dk/engine/redirect.cfm?ID=3D1210">UNSUBSCRIBE</a><br>
+  (You are subscribed with this e-mail address: fork@spamassassin.taint.org )<br>
+  <br>
+  </font></p>
+<img src=3D"http://bluecom.mail2l.com/postingread/postingread.cfm?C=3D7B0F29BE-8C5C-4843-9C6F21B476889157&P=3D2437&E=3Dfork%40xent%2Ecom&EID=3D1280992&EXT=3D0&KEY=3DF486EB96B87DECC97BF80D15E2CFB8E3" width=3D"1" height=3D"1" border=3D"0"></body>
+</html>
+
+
+-----=b1z9tz8hennlu9udi_dkzpz49njtph--
+
+
+http://xent.com/mailman/listinfo/fork
+
+

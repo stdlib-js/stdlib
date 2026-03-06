@@ -1,0 +1,28 @@
+
+{{alias}}( size )
+    Allocates a buffer having a specified number of bytes.
+
+    The underlying memory of returned buffers is not initialized. Memory
+    contents are unknown and may contain sensitive data.
+
+    When the size is less than half a buffer pool size, memory is allocated from
+    the buffer pool for faster allocation of Buffer instances.
+
+    Parameters
+    ----------
+    size: integer
+        Number of bytes to allocate.
+
+    Returns
+    -------
+    out: Buffer
+        Buffer instance.
+
+    Examples
+    --------
+    > var buf = {{alias}}( 100 )
+    <Buffer>
+
+    See Also
+    --------
+

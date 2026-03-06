@@ -1,0 +1,85 @@
+
+{{alias}}( p, k, λ )
+    Evaluates the quantile function for an Erlang distribution with shape
+    parameter `k` and rate parameter `λ` at a probability `p`.
+
+    If `p < 0` or `p > 1`, the function returns `NaN`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If not provided a nonnegative integer for `k`, the function returns `NaN`.
+
+    If provided a non-positive number for `λ`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    p: number
+        Input probability.
+
+    k: number
+        Shape parameter.
+
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated quantile function.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.8, 2, 1.0 )
+    ~2.994
+    > y = {{alias}}( 0.5, 4, 2.0 )
+    ~1.836
+
+    > y = {{alias}}( 1.1, 1, 1.0 )
+    NaN
+    > y = {{alias}}( -0.2, 1, 1.0 )
+    NaN
+
+    > y = {{alias}}( NaN, 1, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 1, NaN )
+    NaN
+
+    // Non-integer shape parameter:
+    > y = {{alias}}( 0.5, 0.5, 1.0 )
+    NaN
+    // Non-positive shape parameter:
+    > y = {{alias}}( 0.5, -1, 1.0 )
+    NaN
+    // Non-positive rate parameter:
+    > y = {{alias}}( 0.5, 1, -1.0 )
+    NaN
+
+
+{{alias}}.factory( k, λ )
+    Returns a function for evaluating the quantile function of an Erlang
+    distribution with shape parameter `k` and rate parameter `λ`.
+
+    Parameters
+    ----------
+    k: number
+        Shape parameter.
+
+    λ: number
+        Rate parameter.
+
+    Returns
+    -------
+    quantile: Function
+        Quantile function.
+
+    Examples
+    --------
+    > var myQuantile = {{alias}}.factory( 10, 2.0 );
+    > var y = myQuantile( 0.4 )
+    ~4.452
+
+    See Also
+    --------
+

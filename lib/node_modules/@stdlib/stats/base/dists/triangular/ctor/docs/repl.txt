@@ -1,0 +1,117 @@
+
+{{alias}}( [a, b, c] )
+    Returns a triangular distribution object.
+
+    Parameters
+    ----------
+    a: number (optional)
+        Minimum support. Must be smaller than `b` and `c`. Default: `0.0`.
+
+    b: number (optional)
+        Maximum support. Must be greater than `a` and `c`. Default: `1.0`.
+
+    c: number (optional)
+        Mode. Must be greater than `a` and smaller than `b`. Default: `0.5`.
+
+    Returns
+    -------
+    triangular: Object
+        Distribution instance.
+
+    triangular.a: number
+        Minimum support. If set, the value must be smaller or equal to `b` and
+        `c`.
+
+    triangular.b: number
+        Maximum support. If set, the value must be greater than or equal to `a`
+        and `c`.
+
+    triangular.c: number
+        Mode. If set, the value must be greater than or equal to `a` and smaller
+        than or equal to `b`.
+
+    triangular.entropy: number
+        Read-only property which returns the differential entropy.
+
+    triangular.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    triangular.mean: number
+        Read-only property which returns the expected value.
+
+    triangular.median: number
+        Read-only property which returns the median.
+
+    triangular.mode: number
+        Read-only property which returns the mode.
+
+    triangular.skewness: number
+        Read-only property which returns the skewness.
+
+    triangular.stdev: number
+        Read-only property which returns the standard deviation.
+
+    triangular.variance: number
+        Read-only property which returns the variance.
+
+    triangular.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    triangular.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    triangular.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    triangular.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    triangular.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    triangular.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var triangular = {{alias}}( 0.0, 1.0, 0.5 );
+    > triangular.a
+    0.0
+    > triangular.b
+    1.0
+    > triangular.c
+    0.5
+    > triangular.entropy
+    ~-0.193
+    > triangular.kurtosis
+    -0.6
+    > triangular.mean
+    0.5
+    > triangular.median
+    0.5
+    > triangular.mode
+    0.5
+    > triangular.skewness
+    0.0
+    > triangular.stdev
+    ~0.204
+    > triangular.variance
+    ~0.042
+    > triangular.cdf( 0.8 )
+    0.92
+    > triangular.logcdf( 0.8 )
+    ~-0.083
+    > triangular.logpdf( 0.8 )
+    ~-0.223
+    > triangular.mgf( 0.8 )
+    ~1.512
+    > triangular.pdf( 0.8 )
+    ~0.8
+    > triangular.quantile( 0.8 )
+    ~0.684
+
+    See Also
+    --------
+

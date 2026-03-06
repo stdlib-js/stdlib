@@ -1,0 +1,32 @@
+
+{{alias}}( iterator[, n] )
+    Advances an entire iterator.
+
+    The function *eagerly* advances an input iterator `n` iterations or until
+    the input iterator finishes, whichever comes first.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator to advance.
+
+    n: integer (optional)
+        Number of iterations. Default: 1e308.
+
+    Returns
+    -------
+    iterator: Object
+        Input iterator.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/array/to-iterator}}( [ 0, 0, 0, 0, 1 ] );
+    > var it = {{alias}}( arr, 4 );
+    > var v = it.next().value
+    1
+    > var bool = it.next().done
+    true
+
+    See Also
+    --------
+

@@ -1,0 +1,98 @@
+From fork-admin@xent.com  Wed Sep 25 10:24:49 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id B222216F03
+	for <jm@localhost>; Wed, 25 Sep 2002 10:24:48 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 25 Sep 2002 10:24:48 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8P1d1C03520 for <jm@jmason.org>;
+    Wed, 25 Sep 2002 02:39:02 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 102A32940C8; Tue, 24 Sep 2002 18:35:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from homer.perfectpresence.com (unknown [209.123.207.194]) by
+    xent.com (Postfix) with ESMTP id 3DEC729409A for <fork@xent.com>;
+    Tue, 24 Sep 2002 18:34:07 -0700 (PDT)
+Received: from adsl-17-246-231.jax.bellsouth.net ([68.17.246.231]
+    helo=regina) by homer.perfectpresence.com with smtp (Exim 3.36 #1) id
+    17u19W-0007AG-00 for fork@xent.com; Tue, 24 Sep 2002 21:39:46 -0400
+From: "Geege Schuman" <geege@barrera.org>
+To: <fork@spamassassin.taint.org>
+Subject: Liberalism in America
+Message-Id: <ILEHJNJFPDLMDEKNIAKCOEKDCAAA.geege@barrera.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+    boundary="----=_NextPart_000_0005_01C26412.7545C1D0"
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2800.1106
+X-Antiabuse: This header was added to track abuse, please include it with
+    any abuse report
+X-Antiabuse: Primary Hostname - homer.perfectpresence.com
+X-Antiabuse: Original Domain - xent.com
+X-Antiabuse: Originator/Caller UID/GID - [0 0] / [0 0]
+X-Antiabuse: Sender Address Domain - barrera.org
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 24 Sep 2002 21:36:35 -0400
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0005_01C26412.7545C1D0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+liberalism
+propagandized as meddling
+in truth, the middle
+
+"American liberalism believes that in this respect it has made a major
+contribution to the grand strategy of freedom. Where both capitalists and
+socialists in the 1930's were trying to narrow the choice to either/or --
+either laissez-faire capitalism or bureaucratic socialism -- the New Deal
+persisted in its vigorous faith that human intelligence and social
+experiment could work out a stable foundation for freedom in a context of
+security and for security in a context of freedom. That faith remains the
+best hope of free society today."
+
+fluid yet crunchy,
+gg
+
+
+
+
+ http://www.english.upenn.edu/~afilreis/50s/schleslib.html
+
+------=_NextPart_000_0005_01C26412.7545C1D0
+Content-Type: application/octet-stream;
+	name="Liberalism in America.url"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment;
+	filename="Liberalism in America.url"
+
+[DEFAULT]
+BASEURL=http://www.english.upenn.edu/~afilreis/50s/schleslib.html
+[InternetShortcut]
+URL=http://www.english.upenn.edu/~afilreis/50s/schleslib.html
+Modified=E0824ED43364C201DE
+
+------=_NextPart_000_0005_01C26412.7545C1D0--
+
+
+

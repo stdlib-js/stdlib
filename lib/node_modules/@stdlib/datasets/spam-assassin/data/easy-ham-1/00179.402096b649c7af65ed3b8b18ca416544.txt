@@ -1,0 +1,113 @@
+From timc@2ubh.com  Wed Aug 28 10:54:30 2002
+Return-Path: <timc@2ubh.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 55B9743F99
+	for <zzzz@localhost>; Wed, 28 Aug 2002 05:54:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 10:54:28 +0100 (IST)
+Received: from n24.grp.scd.yahoo.com (n24.grp.scd.yahoo.com
+    [66.218.66.80]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g7S8TKZ16323 for <zzzz@spamassassin.taint.org>; Wed, 28 Aug 2002 09:29:20 +0100
+X-Egroups-Return: sentto-2242572-53131-1030523366-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.199] by n24.grp.scd.yahoo.com with NNFMP;
+    28 Aug 2002 08:29:26 -0000
+X-Sender: timc@2ubh.com
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_1_0_1); 28 Aug 2002 08:29:26 -0000
+Received: (qmail 381 invoked from network); 28 Aug 2002 08:29:26 -0000
+Received: from unknown (66.218.66.216) by m6.grp.scd.yahoo.com with QMQP;
+    28 Aug 2002 08:29:26 -0000
+Received: from unknown (HELO carbon) (194.73.73.92) by
+    mta1.grp.scd.yahoo.com with SMTP; 28 Aug 2002 08:29:26 -0000
+Received: from host217-36-22-4.in-addr.btopenworld.com ([217.36.22.4]) by
+    carbon with esmtp (Exim 3.22 #8) id 17jyCb-0002sj-00 for
+    forteana@yahoogroups.com; Wed, 28 Aug 2002 09:29:25 +0100
+X-Mailer: Microsoft Outlook Express Macintosh Edition - 4.5 (0410)
+To: zzzzteana <zzzzteana@yahoogroups.com>
+X-Priority: 3
+Message-Id: <E17jyCb-0002sj-00@carbon>
+From: "Tim Chapman" <timc@2ubh.com>
+X-Yahoo-Profile: tim2ubh
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Wed, 28 Aug 2002 09:28:35 +0100
+Subject: [zzzzteana] Height, weight, girth, etc
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+http://www.guardian.co.uk/uk_news/story/0,3604,781616,00.html
+
+Britons stand tall, if slightly heavy, in Europe
+
+John Carvel, social affairs editor
+Wednesday August 28, 2002
+The Guardian
+
+Not every European dimension has been harmonised in Brussels yet. According
+to the Department for Trade and Industry, the average Briton stands head,
+shoulders, girth and bottoms above their continental partners.
+The figures come in a new edition of the department's handbook of
+anthropometric and strength measurements, compiled by ergonomists at the
+University of Nottingham to help manufacturers design products to fit
+people's shape.
+The volume provides 294 measurements ranging from the distance between the
+inner corners of the eyes to the length of the leg between the crease below
+the buttock to the crease at the back of the knee.
+It has discovered that the average British man is 36 millimetres (1 inches)
+taller than his French counterpart.
+The mean height of UK citizens is 1,755.1mm (5ft 9in). Among European men
+only the Dutch are taller, averaging 1,795mm and with a clear height
+advantage over the US men's average of 1,760.4.
+The average British woman is 1,620mm tall (just under 5ft 4in), compared
+with 1,604mm for her French counterpart, 1,610mm for the Italians and
+1,619mm for the Germans. Swedish women average 1,640mm, Dutch 1,650mm and
+Americans 1,626.7mm
+More disturbingly, British men and women are heavier than all the other
+nationalities except the Americans, averaging 79.75 kilos for British men
+and 66.7 for women.
+The average British woman has a chest measurement of 1,007.8mm (39.7
+inches), compared with 965mm for the Italians, 912.6mm for the Japanese and
+806mm for Sri Lankans. American women also top this scale with an average of
+1,047.2mm.
+The average British woman's waist is 840.6mm (33 inches) - also second
+largest behind the Americans. But her bottom at 873.7mm is considerably
+smaller than the Italians at 916mm who beat the Americans into second place.
+The average British male foot is 266.8mm long (10.5 inches), 6mm longer than
+the French and Germans, 3mm more than the Italians and 1mm more than the
+Swedes. But they are just beaten by the Americans at 267.8mm and massively
+outstripped by the Dutch at 275mm.
+However Dutch women have daintier feet than the British, averaging 240mm
+compared with 241.1mm in the UK (9.5 inches). German women average 242mm,
+compared with 245mm for the Swedes and 242.1mm for the Americans.
+The DTI has a less than exhaustive record of ring finger lengths, but on the
+available evidence the British man's finger at 78.7mm (3.1 inches) is 1.7mm
+longer than his German counterpart, but 0.2mm shorter than the American
+average.
+The British woman's ring finger at 72.6mm is 0.4mm smaller than her German
+counterpart and 0.3mm smaller than the American.
+Beverley Norris, research fellow at Nottingham university's institute for
+occupational ergonomics, said the figures were useful for product designers.
+The department has recently completed a study of the pulling force needed to
+open ring pull cans.
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+4 DVDs Free +s&p Join Now
+http://us.click.yahoo.com/pt6YBB/NXiEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

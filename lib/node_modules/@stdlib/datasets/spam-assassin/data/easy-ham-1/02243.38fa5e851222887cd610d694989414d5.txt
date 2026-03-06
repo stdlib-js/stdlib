@@ -1,0 +1,145 @@
+From rssfeeds@jmason.org  Fri Oct  4 11:01:50 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id BD6A016F18
+	for <jm@localhost>; Fri,  4 Oct 2002 11:01:20 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:01:20 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g94804K08764 for
+    <jm@jmason.org>; Fri, 4 Oct 2002 09:00:04 +0100
+Message-Id: <200210040800.g94804K08764@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: diveintomark <rssfeeds@spamassassin.taint.org>
+Subject: History of the tilde
+Date: Fri, 04 Oct 2002 08:00:03 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://diveintomark.org/archives/2002/10/04.html#history_of_the_tilde
+Date: 2002-10-04T00:27:41-05:00
+
+So I was researching the history of the tilde, because D told me that her 
+company just installed a new web proxy that denies access to any URL with a 
+tilde in it. Presumably because the presence of a tilde indicates with 
+remarkable accuracy a personal site, and apparently her employer believes that 
+reading personal sites is not an appropriate use of company time. Which, to be 
+honest, is probably accurate, given the nature of her work. But never mind 
+that. I don't want to talk about corporate politics. I want to talk about the 
+tilde. 
+
+Every command-line-loving geek will tell you that ~ stands for &#8220;home 
+directory&#8221;, and cd ~ will take you to your home directory. (cd ~username 
+will take you to someone else's, except on Mac OS X, where it will take you to 
+their Public file sharing directory.) It is from this heritage that we can 
+trace the present-day practice of using tildes in URLs to denote personal 
+pages, since one single system-wide configuration allowed individual users to 
+have their own web sites by storing files in their own home directory. Or, more 
+commonly now that Apache has taken over the world, in their public_html 
+subdirectory, except on Mac OS X, where if you turn on web sharing and point 
+your browser to http://localhost/~username/, you're actually being served files 
+from that user's Sites directory within their home directory. 
+
+But I don't want to talk about Mac OS X. I want to talk about the tilde. 
+
+As with so many other things, I find that Jukka Korpela[1] is the expert in 
+this field. Jukka is no doubt a member of my karass[2], a word which Google (
+old habits die hard[3]) feels is best explained by the personal site of Eugene 
+Wallingford, which, like Jukka's home page, can not be referenced without a 
+tilde. 
+
+In fact, Jukka has written a lengthy treatise on why the tilde should not be 
+used in URLs[4], a treatise which, I feel obliged to point out, contains a 
+tilde in its URL. 
+
+Clearly, the tilde is underappreciated. 
+
+Digging further, we find this post of Jukka's from 1998[5], in which we learn 
+that the tilde was not meant to be the tilde at all, but rather an odd 
+character called the overline. Presumably to balance out the underline, if 
+indeed those sorts of things require balance. There is balance in the universe, 
+to be sure, but I am less sure that it eminates from my keyboard. No matter. 
+The tilde was the tilde so that Spanish-typing types could type the &ntilde; 
+(now referenced in HTML as the named entity &ntilde;), but somewhere along 
+the line, it morphed into a general-purpose character with all sorts of geeky 
+uses. 
+
+Digging even further, it appears that the tilde was originally an alternate for 
+#[6], then an alternate for ^, and its life as an overline replacement came 
+even later. Jukka confirms this[7] and adds a timeline: 1963 for #, 1964 for ^, 
+1966 for overline. Then June 30, 1966, the watershed moment in an X3 committee 
+meeting, when it was proposed &#8220;as exclusively a tilde in USA to appease 
+SHARE&#8221;. I can find no further reference as to what this acronym means, or 
+what this committee meeting was about. The next reference isn't until 1991, 
+when the tilde was officially added to ISO-646[8]. 
+
+And now, down the rabbit hole we go. Scouring Usenet (which the kids of 
+yesterday called &#8220;Deja News&#8221;, and kids today call &#8220;Google 
+Groups&#8221;), we find a reprint of a 1991 William Safire (yes, _that_ William 
+Safire) article On Language[9], in which we learn that ~ is officially 
+pronounced &#8220;squiggle&#8221;. This is confirmed by the Jargon Dictionary
+[10] to this very day. I'm not sure this is useful, but I just thought it was 
+cool to see William Safire writing about the proper pronunciation of various 
+ASCII characters. 
+
+As early as August 1990, tilde was included in the waka waka bang splat poem
+[11]. 
+
+In July 1989, Kermit gained support for filenames containing a tilde[12]. 
+
+In February 1988, an editor's note to an otherwise unrelated article notes that 
+Fidonet supported ASCII characters space through tilde[13]. 
+
+As early as January 1987, less used the tilde to denote lines past EOF[14]. 
+
+As early as July 1986, troff supported the tilde[15]. 
+
+In November 1985, a mod.sources post refers to Bourne shell enhancements 
+(history,tilde,job control)[16]. 
+
+As early as January 1984, tilde was included on the DEC keyboard[17] and listed 
+in the APL-11 character set[18]. 
+
+In April 1983, tilde was causing bugs in vi[19] (actually due to underlying 
+bugs in csh). 
+
+In December 1982, ~ is officially pronounced &#8220;tilde&#8221;[20], prompting 
+this typographical pun[21]. 
+
+And that's the earliest reference I can find. 
+
+So where does that leave us? Unsatisfied, no doubt. There is history here, but 
+there are gaps. What happened at that watershed meeting in 1966? How did the 
+tilde rise to prominence in the 1980s? When did it become a synonym for 
+&#8220;home directory&#8221;? When did it migrate into the world of web servers 
+to provide a cheap and simple way of giving individual users their own web 
+sites? I don't know, and the lateness of the hour prevents me from continuing 
+my research, a failing for which I apologize profusely. Goodnight, goodnight. 
+May you dream of tildes, stars, and whorls.
+
+
+
+[1]  http://www.cs.tut.fi/~jkorpela/
+[2]  http://www.cs.uni.edu/~wallingf/personal/bokonon.html#words
+[3]  http://diveintomark.org/archives/2002/10/03.html#when_an_engineer_flaps_his_wings
+[4]  http://www.cs.tut.fi/~jkorpela/tilde.html
+[5]  http://groups.google.com/groups?selm=3627ac95.66099519%40news.cs.hut.fi
+[6]  http://groups.google.com/groups?selm=an_600051281
+[7]  http://www.cs.tut.fi/~jkorpela/latin1/ascii-hist.html#7E
+[8]  http://czyborra.com/charsets/iso646.html
+[9]  http://groups.google.com/groups?selm=735627391.AA02027%40Clone.his.com
+[10] http://info.astrian.net/jargon/terms/a/ASCII.html
+[11] http://groups.google.com/groups?selm=14595%40shlump.nac.dec.com
+[12] http://groups.google.com/groups?selm=CMM.0.88.616446576.cmg%40watsun.cc.columbia.edu
+[13] http://groups.google.com/groups?selm=4036%40hoptoad.uucp
+[14] http://groups.google.com/groups?selm=669%40kodak.UUCP
+[15] http://groups.google.com/groups?selm=3197%40jhunix.UUCP
+[16] http://groups.google.com/groups?selm=2428%40cal-asd.fluke.UUCP
+[17] http://groups.google.com/groups?selm=778%40brl-bmd.UUCP
+[18] http://groups.google.com/groups?selm=2405%40decwrl.UUCP
+[19] http://groups.google.com/groups?selm=bnews.ucf-cs.904
+[20] http://groups.google.com/groups?selm=bnews.ucbcad.162
+[21] http://groups.google.com/groups?selm=bnews.hp-pcd.546
+
+

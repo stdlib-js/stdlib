@@ -1,0 +1,127 @@
+From sentto-2242572-53809-1031308404-zzzz=spamassassin.taint.org@returns.groups.yahoo.com  Fri Sep  6 11:49:03 2002
+Return-Path: <sentto-2242572-53809-1031308404-zzzz=spamassassin.taint.org@returns.groups.yahoo.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id B586716F97
+	for <zzzz@localhost>; Fri,  6 Sep 2002 11:42:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Fri, 06 Sep 2002 11:42:00 +0100 (IST)
+Received: from n30.grp.scd.yahoo.com (n30.grp.scd.yahoo.com
+    [66.218.66.87]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g86AXBC32639 for <zzzz@spamassassin.taint.org>; Fri, 6 Sep 2002 11:33:11 +0100
+X-Egroups-Return: sentto-2242572-53809-1031308404-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.192] by n30.grp.scd.yahoo.com with NNFMP;
+    06 Sep 2002 10:33:25 -0000
+X-Sender: martin@srv0.ems.ed.ac.uk
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_1_0_1); 6 Sep 2002 10:33:24 -0000
+Received: (qmail 28742 invoked from network); 6 Sep 2002 10:33:24 -0000
+Received: from unknown (66.218.66.217) by m10.grp.scd.yahoo.com with QMQP;
+    6 Sep 2002 10:33:24 -0000
+Received: from unknown (HELO haymarket.ed.ac.uk) (129.215.128.53) by
+    mta2.grp.scd.yahoo.com with SMTP; 6 Sep 2002 10:33:24 -0000
+Received: from srv0.ems.ed.ac.uk (srv0.ems.ed.ac.uk [129.215.117.0]) by
+    haymarket.ed.ac.uk (8.11.6/8.11.6) with ESMTP id g86AXM310892 for
+    <forteana@yahoogroups.com>; Fri, 6 Sep 2002 11:33:22 +0100 (BST)
+Received: from EMS-SRV0/SpoolDir by srv0.ems.ed.ac.uk (Mercury 1.44);
+    6 Sep 02 11:33:22 +0000
+Received: from SpoolDir by EMS-SRV0 (Mercury 1.44); 6 Sep 02 11:33:01 +0000
+Organization: Management School
+To: zzzzteana@yahoogroups.com
+Message-Id: <3D789278.23084.52C5EEE3@localhost>
+Priority: normal
+X-Mailer: Pegasus Mail for Windows (v4.01)
+Content-Description: Mail message body
+From: "Martin Adamson" <martin@srv0.ems.ed.ac.uk>
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Fri, 6 Sep 2002 11:32:57 +0100
+Subject: [zzzzteana] Hitler-style applicant welcomed by parties
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by dogma.slashnull.org
+    id g86AXBC32639
+
+The Times
+ 
+ 
+ September 06, 2002
+ 
+ Hitler-style applicant welcomed by parties
+ By Roger Boyes
+ 
+ 
+ 
+ MANAGERS of Germany’s political parties are having difficulty explaining their
+ enthusiastic reaction to a man who applied for membership with letters cribbed
+ largely from Mein Kampf, Hitler’s personal manifesto. The incident illustrates
+ how indiscriminate parties have become in taking on new members during an
+ election campaign, even when their sentiments bear a suspicious resemblance to
+ those of the Führer. 
+ 
+ “Edmund Stoiber is a thousand times more suited to leading Germany than the
+ present Chancellor,” said one letter sent to the Christian Social Union
+ headquarters in Ingolstadt. “Chancellor Schröder is doing nothing to stop the
+ flood of foreigners who are spreading around our Fatherland,” said the letter,
+ signed by a certain Rudolph Lewald. 
+ 
+ The CSU immediately spotted a potential member. “Many thanks for your nice
+ thoughts,” replied the local party manager, who enclosed an application for
+ membership. 
+ 
+ The letter used chunks of Hitler’s book, which is still banned in Germany.
+ History students have to apply for access to the book in university libraries.
+ 
+ 
+ “The strongest, the brave and the hardworking will receive the birthright of
+ existence, only those who are born weaklings could regard this as offensive,”
+ the letter-writer said. “So-called humanity is melting like snow in the March
+ sun.” Such phrases were lifted from Mein Kampf, which was written while Hitler
+ was in jail after the failed Munich putsch of 1923. 
+ 
+ Similar letters, also using the Nazi leader’s words, were sent to the other
+ political parties and drew sympathetic responses. “I read your letter with
+ great interest and pleasure,” the manager of the Christian Democratic Union in
+ Cologne, said. 
+ 
+ “Great that you want to join us!” enthused the Green Party headquarters. The
+ Free Democrats invited the aspiring party member to a fundraising charity ball
+ at which Hans- Dietrich Genscher, the former Foreign Minister, would be the
+ star guest. The Social Democrats sent a list of rallies to be attended by
+ Gerhard Schröder, the Chancellor. 
+ 
+ “I wanted to test how serious parties are about combating right-wing
+ extremism,” said the letter-writer, who was in fact the Cologne novelist
+ Rainer Popp. “I had no idea that they would be so enthusiastic. 
+ 
+ “For the first few days I expected two men in leather coats from the Special
+ Branch to knock on my door. Instead only the postman called — with packets of
+ election material from zealous political headquarters,” Herr Popp said. 
+ 
+ “I was stunned that political parties could react in this way — I reckon I
+ would have had the same response if I had signed the letter ‘Adolf Hitler’.”
+ 
+ 
+ 
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+4 DVDs Free +s&p Join Now
+http://us.click.yahoo.com/pt6YBB/NXiEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

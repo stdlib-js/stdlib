@@ -1,0 +1,77 @@
+From ilug-admin@linux.ie  Mon Sep  2 16:22:04 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 169CD4415E
+	for <zzzz@localhost>; Mon,  2 Sep 2002 11:21:41 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 16:21:41 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82ElmZ05358 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 15:47:48 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA10436; Mon, 2 Sep 2002 15:47:13 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from bramg1.net.external.hp.com (bramg1.net.external.hp.com
+    [192.6.126.73]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id PAA10395
+    for <ilug@linux.ie>; Mon, 2 Sep 2002 15:47:01 +0100
+Received: from fowey.BR.ITC.HP.COM (fowey.br.itc.hp.com [15.145.8.186]) by
+    bramg1.net.external.hp.com (Postfix) with SMTP id 12CC9216 for
+    <ilug@linux.ie>; Mon,  2 Sep 2002 16:47:01 +0200 (METDST)
+Received: from 15.145.8.186 by fowey.BR.ITC.HP.COM (InterScan E-Mail
+    VirusWall NT); Mon, 02 Sep 2002 15:47:00 +0100
+Received: by fowey.br.itc.hp.com with Internet Mail Service (5.5.2655.55)
+    id <R88J6DYT>; Mon, 2 Sep 2002 15:47:00 +0100
+Message-Id: <253B1BDA4E68D411AC3700D0B77FC5F807C0F446@patsydan.dublin.hp.com>
+From: "HAMILTON,DAVID (HP-Ireland,ex2)" <david_hamilton3@hp.com>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Subject: RE: [ILUG] Redhat 8.0
+Date: Mon, 2 Sep 2002 15:46:58 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2655.55)
+Content-Type: text/plain
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I just saw the ISOs on an internal server here and was tempted....
+
+	D.
+
+-----Original Message-----
+From: John P. Looney [mailto:valen@tuatha.org] 
+Sent: Monday, September 02, 2002 3:45 PM
+To: HAMILTON,DAVID (HP-Ireland,ex2)
+Cc: 'ilug@linux.ie'
+Subject: Re: [ILUG] Redhat 8.0
+
+
+On Mon, Sep 02, 2002 at 03:22:54PM +0100, HAMILTON,DAVID (HP-Ireland,ex2)
+mentioned:
+> Does anyone know when Redhat 8.0 is going to be released?
+> I have seen some ISO images of it around and I am trying to work out 
+> if it's near release.
+
+ Null, the third beta was out last week.
+
+ It'll be an interesting release. Gnome 2.0, and GCC 3.2 - both very new,
+large projects.
+
+ I'd not be putting it on any production machines for a while...
+
+ Though many say "RedHat X.0 releases are rubbish" - it's worth baring in
+mind that they jump a release when the underlying archtechture changes, not
+just the installer, so they are .0 for a reason.
+
+Kate
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

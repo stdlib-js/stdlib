@@ -1,0 +1,105 @@
+From exmh-workers-admin@redhat.com  Mon Sep 23 12:06:12 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CB0FE16F03
+	for <jm@localhost>; Mon, 23 Sep 2002 12:06:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 12:06:11 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8N2wYC29572 for
+    <jm-exmh@jmason.org>; Mon, 23 Sep 2002 03:58:38 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 537483EA72; Sun, 22 Sep 2002
+    22:59:01 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 0244C3EE13
+    for <exmh-workers@listman.redhat.com>; Sun, 22 Sep 2002 22:58:18 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8N2wHD02305 for exmh-workers@listman.redhat.com; Sun, 22 Sep 2002
+    22:58:17 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8N2wHh02301 for
+    <exmh-workers@redhat.com>; Sun, 22 Sep 2002 22:58:17 -0400
+Received: from mercea.net (dsl092-151-122.wdc1.dsl.speakeasy.net
+    [66.92.151.122]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id
+    g8N2eci08189 for <exmh-workers@redhat.com>; Sun, 22 Sep 2002 22:40:39
+    -0400
+Received: from mercea.mercea.net (localhost.mercea.net [127.0.0.1]) by
+    mercea.net (Postfix) with ESMTP id 8E7A34A8 for <exmh-workers@redhat.com>;
+    Sun, 22 Sep 2002 22:58:16 -0400 (EDT)
+X-Mailer: exmh version 2.5_20020922 (09/22/02) with nmh-1.0.4
+From: Scott Lipcon <slipcon@mercea.net>
+To: exmh-workers@spamassassin.taint.org
+Subject: traceback in new exmh
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Message-Id: <20020923025816.8E7A34A8@mercea.net>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Sun, 22 Sep 2002 22:58:16 -0400
+
+I just updated to the latest CVS - I had been running a build from June.  
+Hitting the Flist button gives the following traceback:
+
+syntax error in expression "int(17+1+(222-)*(19-17-2)/(224-))"
+    while executing
+"expr int($minLine+1+($msgid-$minMsg)*($maxLine-$minLine-2)/($maxMsg-$minMsg))"
+    (procedure "Ftoc_FindMsg" line 57)
+    invoked from within
+"Ftoc_FindMsg $i"
+    (procedure "Ftoc_ShowSequences" line 16)
+    invoked from within
+"Ftoc_ShowSequences $F"
+    (procedure "ScanFolder" line 81)
+    invoked from within
+"ScanFolder inbox 0"
+    invoked from within
+"time [list ScanFolder $F $adjustDisplay"
+    (procedure "Scan_Folder" line 2)
+    invoked from within
+"Scan_Folder $exmh(folder) $ftoc(showNew)"
+    (procedure "Inc_PresortFinish" line 7)
+    invoked from within
+"Inc_PresortFinish"
+    invoked from within
+".fops.flist invoke"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke]"
+    (procedure "tkButtonUp" line 7)
+    invoked from within
+"tkButtonUp .fops.flist
+"
+    (command bound to event)
+
+
+It seems to only happen in a folder with no unseen messages.
+
+Chris, is this related to your recent changes?
+
+Scott
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

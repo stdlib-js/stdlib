@@ -1,0 +1,93 @@
+From rpm-list-admin@freshrpms.net  Sat Oct  5 12:38:12 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6068F16F17
+	for <jm@localhost>; Sat,  5 Oct 2002 12:38:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 05 Oct 2002 12:38:11 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g95ASmK06400 for
+    <jm-rpm@jmason.org>; Sat, 5 Oct 2002 11:28:48 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g95AN2f11627; Sat, 5 Oct 2002 12:23:02
+    +0200
+Received: from marvin.home.priv (adsl-66-124-59-34.dsl.anhm01.pacbell.net
+    [66.124.59.34]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g95ALjf32662 for <rpm-list@freshrpms.net>; Sat, 5 Oct 2002 12:21:45 +0200
+Received: by marvin.home.priv (Postfix, from userid 500) id CC895203D4;
+    Sat,  5 Oct 2002 03:21:43 -0700 (PDT)
+From: Gary Peck <gbpeck@sbcglobal.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: alsa-driver.spec tweak for homemade kernels
+Message-Id: <20021005102143.GA6915@marvin.home.priv>
+Mail-Followup-To: Gary Peck <gbpeck@sbcglobal.net>,
+	rpm-list@freshrpms.net
+References: <3D9AA650.2000909@eecs.berkeley.edu>
+    <20021002100919.2e3168a8.matthias@rpmforge.net>
+    <20021002193602.GC6266@taz.home.priv>
+    <20021002224504.13c35679.matthias@rpmforge.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20021002224504.13c35679.matthias@rpmforge.net>
+User-Agent: Mutt/1.4i
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Sat, 5 Oct 2002 03:21:43 -0700
+Date: Sat, 5 Oct 2002 03:21:43 -0700
+
+On Wed, Oct 02, 2002 at 10:45:04PM +0200, Matthias Saou wrote:
+> > So I've attached a patch to specify an alternate kernel by setting the
+> > "TARGET_KERNEL" environment variable before running rpmbuild. You
+> > still need to have the rpm for the specified kernel installed, but at
+> > least it doesn't have to be currently running. It's kinda hackish, so
+> > if someone has a better way to do this, let me know.
+> 
+> That idea looks good although it maybe needs to be tweaked a bit more (what
+> you sent doesn't support packages named "kernel-smp"). I'd also prefer a
+> cleaner way than the env variable, and preferrably not editing the spec...
+> probably "--define 'target 2.4.xx-xx' --with smp". Sound good enough?
+> The BuildRequires on "kernel-source" will also need to be removed because
+> it won't necessarily need to be true, and that does bug me a bit :-/
+
+The "--define" is exactly what I was looking for! I was trying to
+figure out a way to do it within the mechanism of rpm (like the
+"--with" switches), but for some reason didn't think of using
+"--define". My computer is currently gone for repairs, but once it's
+back, I'll rewrite the specfile, add support for kernel-smp, and email
+it to the list for further criticism :)
+
+As far as requiring kernel-source, I don't feel it's a big problem. If
+you're gonna go to the trouble of packaging custom kernels into rpms,
+it's not a far stretch to package the source tree too (as I currently
+do).
+
+Also, I've found that the alsa-driver source needs a usb-related patch 
+to compile under the latest test kernels (2.4.20-preX). Are other 
+people seeing the same thing, or is this just a problem with my setup?
+
+gary
+
+P.S. If I didn't mention it before, thanks for the alsa packages! They 
+greatly simplified what used to take way too long before.
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

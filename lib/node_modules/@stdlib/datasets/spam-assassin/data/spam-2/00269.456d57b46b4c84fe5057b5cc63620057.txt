@@ -1,0 +1,49 @@
+From MedicalCenter@mail24.inb-mail.com  Mon Jun 24 17:03:02 2002
+Return-Path: root@mail24.inb-mail.com
+Delivery-Date: Sat May 11 12:36:08 2002
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g4BBa7e20611 for
+    <jm@jmason.org>; Sat, 11 May 2002 12:36:07 +0100
+Received: from mail24.inb-mail.com (IDENT:root@mail24.inb-mail.com
+    [65.170.29.48]) by mandark.labs.netnoteinc.com (8.11.2/8.11.2) with ESMTP
+    id g4BBa0D02912 for <jm@netnoteinc.com>; Sat, 11 May 2002 12:36:01 +0100
+Received: (from root@localhost) by mail24.inb-mail.com (8.11.6/8.11.6) id
+    g4BFaUW29562; Sat, 11 May 2002 07:36:30 -0800
+Date: Sat, 11 May 2002 07:36:30 -0800
+Message-Id: <200205111536.g4BFaUW29562@mail24.inb-mail.com>
+To: yyyy@netnoteinc.com
+From: Medical Center<MedicalCenter@mail24.inb-mail.com>
+Reply-To: service@inb-mail.com
+Subject: Family health care - $49/month - Everyone qualifies
+X-Keywords: 
+Content-Type: text/html
+
+
+<HTML>
+<HEAD>
+<TITLE>Full Access Medical</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<div align="center"><a href="http://65.162.84.5/perl/050902_02.pl"><img src="http://65.162.84.5/images/fam_email19.jpg" width="380" height="380" border="0"></a></div>
+<TABLE WIDTH=380 BORDER=0 CELLPADDING=0 CELLSPACING=0 align="center">
+  <tr> 
+      <TD COLSPAN=3> 
+        <hr>
+        <font face="Verdana, Arial, Helvetica, sans-serif" size=1><br>
+          To sign up for the Full Access Medical, LLC Plan the applicant must 
+          be at least 18 and pay a one-time enrollment fee of  regardless of 
+          the number of dependents enrolled. This non-insurance healthcare plan 
+          is not available in Washington.</font>
+    </td>
+  </tr>
+</TABLE>
+
+<p><font size=-1 color=black>This email is not sent unsolicited. You are receiving it because you requested receive this email by opting-in with our marketing partner. You will receive notices of exciting offers, products, and other options! However, we are committed to only sending to those people that desire these offers. If you do not wish to receive such offers 
+<a href="http://65.162.84.5/perl/unsubscribe.pl?s=20020510190852000001230835"><b><font size="-1" color = blue>Click Here.</font></b></a> or paste the following into any browser:</p> http://65.162.84.5/perl/unsubscribe.pl?s=20020510190852000001230835 <br><br><p> to remove your email name from our list. You may contact our company by mail at 1323 S.E. 17th Street, Suite Number 345, Ft. Lauderdale, Fl 33316</p> 
+<img src="http://65.162.84.5/perl/r_open1.pl?serialno=20020510190852000001230835">
+
+</body>
+</html>
+
+

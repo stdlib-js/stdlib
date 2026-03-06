@@ -1,0 +1,17 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Sat Sep  7 06:40:45 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Sat, 07 Sep 2002 01:40:45 -0400
+Subject: [Spambayes] Maybe change X-Spam-Disposition to something else...
+In-Reply-To: <15737.33815.719456.367026@12-248-11-90.client.attbi.com>
+Message-ID: <LNBBLJKPBEHFEDALKOLCAELLBCAB.tim.one@comcast.net>
+
+[Skip Montanaro, to Anthony Baxter]
+> ...
+> Accordingly, I wrote unheader.py, which is mostly a ripoff of something
+> someone else posted to python-dev or c.l.py within the last week or so to
+> strip out SA-generated headers.
+
+Unless I've grown senile tonight, you got it from Anthony to begin with.
+Please check it in to project, and add a short blurb to README.txt!
+

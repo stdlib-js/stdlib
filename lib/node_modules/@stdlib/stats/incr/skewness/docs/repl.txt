@@ -1,0 +1,32 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes a corrected
+    sample skewness.
+
+    If provided a value, the accumulator function returns an updated corrected
+    sample skewness. If not provided a value, the accumulator function returns
+    the current corrected sample skewness.
+
+    If provided `NaN` or a value which, when used in computations, results in
+    `NaN`, the accumulated value is `NaN` for all future invocations.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var v = accumulator( 2.0 )
+    null
+    > v = accumulator( -5.0 )
+    null
+    > v = accumulator( -10.0 )
+    ~0.492
+    > v = accumulator()
+    ~0.492
+
+    See Also
+    --------
+

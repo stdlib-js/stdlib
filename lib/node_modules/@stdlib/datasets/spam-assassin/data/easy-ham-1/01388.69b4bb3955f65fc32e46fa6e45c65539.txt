@@ -1,0 +1,102 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Aug 29 16:01:58 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B71CF44155
+	for <jm@localhost>; Thu, 29 Aug 2002 11:01:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 16:01:54 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7TF0NZ17271 for <jm-sa@jmason.org>; Thu, 29 Aug 2002 16:00:23 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17kQlJ-0003kU-00; Thu,
+    29 Aug 2002 07:59:09 -0700
+Received: from mailout07.sul.t-online.com ([194.25.134.83]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17kQkz-00016c-00 for <spamassassin-talk@lists.sourceforge.net>;
+    Thu, 29 Aug 2002 07:58:49 -0700
+Received: from fwd10.sul.t-online.de by mailout07.sul.t-online.com with
+    smtp id 17kQkw-00088j-00; Thu, 29 Aug 2002 16:58:46 +0200
+Received: from nebukadnezar.msquadrat.de
+    (520061089980-0001@[217.80.6.131]) by fmrl10.sul.t-online.com with esmtp
+    id 17kQkr-1PM3HMC; Thu, 29 Aug 2002 16:58:41 +0200
+Received: from otherland (otherland.msquadrat.de [10.10.10.10]) by
+    nebukadnezar.msquadrat.de (Postfix on SuSE Linux 7.3 (i386)) with ESMTP id
+    CD1664C86 for <spamassassin-talk@lists.sf.net>; Thu, 29 Aug 2002 16:58:44
+    +0200 (CEST)
+Content-Type: text/plain; charset="iso-8859-1"
+From: "Malte S. Stretz" <msquadrat.nospamplease@gmx.net>
+To: spamassassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] SA very slow (hangs?) on this message, or is it just me?
+User-Agent: KMail/1.4.3
+References: <Pine.LNX.4.44.0208290936190.9284-100000@burgers.bubbanfriends.org>
+In-Reply-To: <Pine.LNX.4.44.0208290936190.9284-100000@burgers.bubbanfriends.org>
+X-Accept-Language: de, en
+X-Habeas-Swe-1: winter into spring
+X-Habeas-Swe-2: brightly anticipated
+X-Habeas-Swe-3: like Habeas SWE (tm)
+X-Habeas-Swe-4: Copyright 2002 Habeas (tm)
+X-Habeas-Swe-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-Swe-6: email in exchange for a license for this Habeas
+X-Habeas-Swe-7: Warrant Mark warrants that this is a Habeas Compliant
+X-Habeas-Swe-8: Message (HCM) and not spam. Please report use of this
+X-Habeas-Swe-9: mark in spam to <http://www.habeas.com/report/>.
+X-Foo: Bar
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200208291701.27688@malte.stretz.eu.org>
+X-Sender: 520061089980-0001@t-dialin.net
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Thu, 29 Aug 2002 17:01:27 +0200
+Date: Thu, 29 Aug 2002 17:01:27 +0200
+
+On Thursday 29 August 2002 16:39 CET Mike Burger wrote:
+> >[...]
+> > re-check I find it immediately:
+> > :0fw
+> > * < 250000
+> > | spamassassin -P
+> >
+> > Works perfectly now. Sorry for being such a pest! ;-)
+> >[...]
+>
+> I'm using SA via spamc/spamd, and a global /etc/procmail file.  I'm
+> wondering if this would also work in that fashion.
+
+spamc will skip every file bigger than 250k on it's own. It's got the 
+command line switch -s to change this value. But it doesn't hurt of course 
+to use the procmail limit.
+
+Malte
+
+-- 
+-- Coding is art.
+-- 
+
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

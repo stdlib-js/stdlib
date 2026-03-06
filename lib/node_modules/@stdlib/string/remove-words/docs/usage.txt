@@ -1,0 +1,9 @@
+
+Usage: remove-words [options] [<string>] --words=<string>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --words w1,w2,..      Comma-separated list of words.
+         --ignore-case         Perform case-insensitive replace operation.

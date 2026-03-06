@@ -1,0 +1,83 @@
+From ilug-admin@linux.ie  Tue Jul 30 13:28:13 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C9F5B440EE
+	for <jm@localhost>; Tue, 30 Jul 2002 08:28:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 13:28:12 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UCKUq26042 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 13:20:30 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA04541; Tue, 30 Jul 2002 13:18:37 +0100
+Received: from mis.nwifhe.net ([212.219.92.232]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA04516 for <ilug@linux.ie>; Tue,
+    30 Jul 2002 13:18:32 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [212.219.92.232] claimed
+    to be mis.nwifhe.net
+Received: from soft-dev-lin.nwifhe.net (unknown [172.200.20.5]) by
+    mis.nwifhe.net (Postfix) with ESMTP id 326CCCB5F for <ilug@linux.ie>;
+    Tue, 30 Jul 2002 13:18:02 +0100 (BST)
+Subject: Re: [ILUG] Fwd: Linux Beer Hike
+From: "Patton, Tony" <tony.patton@nwifhe.ac.uk>
+To: Irish LUG <ilug@linux.ie>
+In-Reply-To: <200207301006.36137.donncha.ocaoimh@tradesignals.com>
+References: <200207301006.36137.donncha.ocaoimh@tradesignals.com>
+Content-Type: text/plain; charset=ISO-8859-1
+X-Mailer: Ximian Evolution 1.0.5
+Date: 30 Jul 2002 13:17:25 +0100
+Message-Id: <1028031445.3321.2.camel@soft-dev-lin.nwifhe.net>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    NAA04516
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, 2002-07-30 at 10:06, Donncha O Caoimh wrote:
+> Ar mhaith le einne anseo caint le TG4 faoin LBW?
+> 
+> Donncha.
+> 
+
+----8<
+
+> Tá mé ag déanamh taighde don clár teilifíse An Tuath Nua (a bhíonn á
+> chraoladh ar TG4) faoi láthair, agus chonaic mé go mbedih an Linux Beer
+> Hike ar siúl i Doolin i mbliana. Bheadh spéis againn mír a dhéanamh mar
+> gheall ar an Hike ar an gclár - an mbeidh tú féin nó aon duine eile le
+> Gaeilge ar an Hike go bhfios duit?
+> 
+> Go raibh maith agat as do chabhair,
+> 
+
+---->8
+
+Can someone translate this for me? Lost all sense of Irish when moved
+over the border about 10 years ago. Not by choice mind you :-(
+
+Thanks
+-- 
++------------------------------------+---------------------------------+
+| Tony Patton                        |                                 |
+| MIS Software Developer/*nix        | Tel  : +44 28 7127 6443         |
+|   Systems Administrator            | Fax  : +44 28 7126 0520         |
+| North West Institute of F & H.E.   | Mob  : +44 7764 905 955         |
+| Strand Road                        |                                 |
+| Derry                              | ICQ# : 113 069 081              |
+| BT48 7BY                           |                                 |
++------------------------------------+---------------------------------+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

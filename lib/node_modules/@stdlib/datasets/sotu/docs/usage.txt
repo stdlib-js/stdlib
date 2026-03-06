@@ -1,0 +1,12 @@
+
+Usage: sotu [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+         --name n1,n2,...      President names.
+         --party p1,p2,...     Political parties.
+         --year y1,y2,...      Years.
+         --range r1,r2         Year range.
+

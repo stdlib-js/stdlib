@@ -1,0 +1,81 @@
+From fork-admin@xent.com  Thu Jul 25 11:08:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B4225440D6
+	for <jm@localhost>; Thu, 25 Jul 2002 06:07:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:07:42 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OIYc400733 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 19:34:38 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 43217294154; Wed, 24 Jul 2002 11:33:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain
+    (dsl-208-151-246-47.dsl.easystreet.com [208.151.246.47]) by xent.com
+    (Postfix) with ESMTP id 9346F294153 for <fork@xent.com>; Wed,
+    24 Jul 2002 11:32:43 -0700 (PDT)
+Received: (from karl@localhost) by localhost.localdomain (8.11.6/8.11.6)
+    id g6OIpnE10297; Wed, 24 Jul 2002 11:51:49 -0700
+X-Authentication-Warning: localhost.localdomain: karl set sender to
+    kra@monkey.org using -f
+To: ThosStew@aol.com
+Cc: fork@spamassassin.taint.org
+Subject: Re: [Baseline] Raising chickens the high-tech way
+References: <135.11be3f63.2a7000bc@aol.com>
+From: Karl Anderson <kra@monkey.org>
+Organization: Ape Mgt.
+In-Reply-To: ThosStew@aol.com's message of "Wed, 24 Jul 2002 09:08:12 EDT"
+Message-Id: <m3fzy9yn5n.fsf@localhost.localdomain>
+User-Agent: Gnus/5.0802 (Gnus v5.8.2) Emacs/20.7
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 24 Jul 2002 11:51:48 -0700
+
+ThosStew@aol.com writes:
+
+> In a message dated 7/23/2002 6:02:27 PM, dl@silcom.com writes:
+> 
+> >If we're willing to count artificial
+> >selection as genetic engineering, 
+> 
+> Of course was genetic engineering. It used the fundamental mechanism of 
+> genetics (inheritance of traits), and not randomly, but 
+> intentionally--breeding for long fur, fat hams, whatever. The degree to which 
+> the engineers--farmers, breeders--understood exactly how the mehcanism works 
+> is only marginally relevant to the question of whether it was engineering. 
+
+Naw, I still disagree, again because if I'm going to be so loose
+with the definitions, then I'd have to say that I myself am a
+genetically engineered organism.  But I'm natural, baby.  My parents
+were attracted to each other's phenotypes, mixed some genes in the
+hopes that those genotypes would get in there, and grew me around
+them.  Sure, they engineered the process when they selected each
+other.  But they didn't engineer the genetics.  If genetic enginering
+wasn't such an important topic today, it wouldn't be such an important
+distinction.
+
+I guess that the reason that I disagree is that some groups arguing
+against any checks on genetic engineering use that same argument -
+"we've been doing it since prehistory, so we don't need to apply any
+caution today".
+
+-- 
+Karl Anderson      kra@monkey.org           http://www.monkey.org/~kra/
+http://xent.com/mailman/listinfo/fork
+
+

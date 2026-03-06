@@ -1,0 +1,81 @@
+From ilug-admin@linux.ie  Wed Jul 31 12:31:04 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1BC07440C8
+	for <jm@localhost>; Wed, 31 Jul 2002 07:31:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 12:31:03 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VBP8219157 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 12:25:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA32701; Wed, 31 Jul 2002 12:22:40 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from holly.csn.ul.ie (holly.csn.ul.ie [136.201.105.4]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA32670 for <ilug@linux.ie>;
+    Wed, 31 Jul 2002 12:22:34 +0100
+Received: from skynet.csn.ul.ie (skynet [136.201.105.2]) by
+    holly.csn.ul.ie (Postfix) with ESMTP id 082582B31D for <ilug@linux.ie>;
+    Wed, 31 Jul 2002 12:22:04 +0100 (IST)
+Received: by skynet.csn.ul.ie (Postfix, from userid 2009) id CE01DE95E;
+    Wed, 31 Jul 2002 12:22:03 +0100 (IST)
+Date: Wed, 31 Jul 2002 12:22:03 +0100
+To: ILUG <ilug@linux.ie>
+Subject: Re: [ILUG] C++ and C Mailing Lists for Beginners and Advanced
+Message-Id: <20020731112202.GA30189@skynet.ie>
+Mail-Followup-To: ILUG <ilug@linux.ie>
+References: <200207311043.g6VAhuq10699@cdm01.deedsmiscentral.net>
+    <20020731125129.B11532@wanadoo.fr>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020731125129.B11532@wanadoo.fr>
+User-Agent: Mutt/1.3.24i
+From: caolan@csn.ul.ie (Caolan McNamara)
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Wed, Jul 31, 2002 at 12:51:29 +0200, David Neary wrote:
+> SoloCDM wrote:
+> > Are there any mailing lists (non-newsgroups) for C++ and C Beginners
+> > and Advanced programmers?
+> 
+> For C++, I would guess that the comp.lang.c++ FAQ is a good place
+> to start - they're likely to have links to suggested reading
+> material.
+> 
+> If you're going to do any amount of C programming, you should
+> think about getting K&R2 (The C programming language, 2nd
+> edition, by Kernighan and Ritchie), for C++ the equivalent book
+> is Stroustrup. Although the C++ book is a lot bigger :)
+
+For C++, guru of the week at 
+http://www.gotw.ca/gotw/index.htm (can get them in book form and
+with extra material as Herb Sutters Essential C++ and More Essential C++)
+is a good resource. 
+
+Scott Meyers Effective C++, More Effective C++ and Effective STL
+are truly handy books.
+
+I always felt that The C++ faq wasn't as good as the C faq, but
+it lives at http://www.parashift.com/c++-faq-lite/
+
+C.
+-- 
+Caolan McNamara               |  caolan@skynet.ie  
+http://www.skynet.ie/~caolan  |  +353 86 8161184
+Verbing weirds language
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

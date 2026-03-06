@@ -1,0 +1,32 @@
+From httpd@sr-0.esswebservices.com  Wed Jul 31 12:30:59 2002
+Return-Path: <httpd@sr-0.esswebservices.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5070E4406D
+	for <jm@localhost>; Wed, 31 Jul 2002 07:30:59 -0400 (EDT)
+Received: from mandark.labs.netnoteinc.com [213.105.180.140]
+	by localhost with POP3 (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 12:30:59 +0100 (IST)
+Received: from mail.planetess.com (mail.esswebservices.com [64.56.239.40])
+	by mandark.labs.netnoteinc.com (8.11.6/8.11.6) with ESMTP id g6VBUop14589
+	for <jm@netnoteinc.com>; Wed, 31 Jul 2002 12:30:51 +0100
+Received: from sr-0.esswebservices.com (sr-0.esswebservices.com [64.56.239.34])
+	by mail.planetess.com (Postfix) with ESMTP id 95F7F153069
+	for <jm@netnoteinc.com>; Wed, 31 Jul 2002 07:27:00 -0400 (EDT)
+Received: by sr-0.esswebservices.com (Postfix, from userid 300)
+	id A9EF571; Wed, 31 Jul 2002 07:06:01 -0400 (EDT)
+To: yyyy@netnoteinc.com
+From: balletscho@netcity.ru ()
+Subject: Copy DVD's to regular CD-R discs and watch on your DVD Player.x1m5l2i4
+Message-Id: <20020731110601.A9EF571@sr-0.esswebservices.com>
+Date: Wed, 31 Jul 2002 07:06:01 -0400 (EDT)
+
+Below is the result of your feedback form.  It was submitted by
+ (balletscho@netcity.ru) on Wednesday, July 31, 2002 at 07:06:01
+---------------------------------------------------------------------------
+
+: Why Spend upwards of $4000 on a DVD Burner when we will show you an alternative that will do the exact same thing for just a fraction of the cost? Copy your DVD's NOW. Best Price on the net. Click here: http://006@www.dvdcopyxp.com/cgi-bin/enter.cgi?marketing_id=dcx002 Click to remove http://007@www.spambites.com/cgi-bin/enter.cgi?spambytes_id=100115 
+
+---------------------------------------------------------------------------
+
+

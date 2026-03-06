@@ -1,0 +1,5 @@
+duplicateExpression
+invalidPointerCast
+missingIncludeSystem
+unmatchedSuppression
+variableScope

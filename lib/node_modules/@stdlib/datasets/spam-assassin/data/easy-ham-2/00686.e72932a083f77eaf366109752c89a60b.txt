@@ -1,0 +1,156 @@
+From exmh-workers-admin@redhat.com  Mon Jul 22 19:32:28 2002
+Return-Path: <exmh-workers-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A94AF440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 14:32:26 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:32:26 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHgh406129 for
+    <jm-exmh@jmason.org>; Mon, 22 Jul 2002 18:42:43 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id AF8EC3F994; Mon, 22 Jul 2002
+    13:41:50 -0400 (EDT)
+Delivered-To: exmh-workers@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id E4C633F974
+    for <exmh-workers@listman.redhat.com>; Mon, 22 Jul 2002 13:38:39 -0400
+    (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6MHce529636 for exmh-workers@listman.redhat.com; Mon, 22 Jul 2002
+    13:38:40 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6MHceR29632 for
+    <exmh-workers@redhat.com>; Mon, 22 Jul 2002 13:38:40 -0400
+Received: from austin-jump.vircio.com
+    (IDENT:1ioV+YTYp67mN2ypVR3Jslfy2DeYWI/0@jump-austin.vircio.com
+    [192.12.3.99]) by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g6MHR9s31590
+    for <exmh-workers@redhat.com>; Mon, 22 Jul 2002 13:27:10 -0400
+Received: (qmail 10014 invoked by uid 104); 22 Jul 2002 17:38:39 -0000
+Received: from cwg-exmh@DeepEddy.Com by localhost.localdomain with
+    qmail-scanner-0.90 (uvscan: v4.1.60/v4213. . Clean. Processed in 0.932843
+    secs); 22/07/2002 12:38:38
+Received: from deepeddy.vircio.com (@[10.1.2.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by austin-jump.vircio.com (qmail-ldap-1.03) with
+    SMTP for <exmh-workers@redhat.com>; 22 Jul 2002 17:38:38 -0000
+Received: (qmail 3428 invoked from network); 22 Jul 2002 17:38:34 -0000
+Received: from localhost (HELO deepeddy.vircio.com)
+    (?9ea/NpU8P1xSGq6W/ah5iLUzGXs75ZPw?@[127.0.0.1]) (envelope-sender
+    <cwg-exmh@DeepEddy.Com>) by localhost (qmail-ldap-1.03) with SMTP for
+    <exmh-workers@redhat.com>; 22 Jul 2002 17:38:34 -0000
+X-Mailer: exmh version 2.5 07/13/2001 with nmh-1.0.4
+To: Anders Eriksson <aeriksson@fastmail.fm>
+Cc: exmh-workers@spamassassin.taint.org
+Subject: Re: Another bug
+In-Reply-To: <20020718202952.E11A5470D@tippex.localdomain>
+References: <20020718202952.E11A5470D@tippex.localdomain>
+X-Url: http://www.DeepEddy.Com/~cwg
+X-Image-Url: http://www.DeepEddy.Com/~cwg/chris.gif
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+    boundary="==_Exmh_556486408P";
+    micalg=pgp-sha1;
+    protocol="application/pgp-signature"
+Content-Transfer-Encoding: 7bit
+Message-Id: <1027359513.3184.TMDA@deepeddy.vircio.com>
+From: Chris Garrigues <cwg-exmh@DeepEddy.Com>
+X-Delivery-Agent: TMDA/0.57
+Reply-To: Chris Garrigues <cwg-dated-1027791514.720912@DeepEddy.Com>
+X-Loop: exmh-workers@spamassassin.taint.org
+Sender: exmh-workers-admin@spamassassin.taint.org
+Errors-To: exmh-workers-admin@spamassassin.taint.org
+X-Beenthere: exmh-workers@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+List-Help: <mailto:exmh-workers-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-workers@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH developers <exmh-workers.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-workers>,
+    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-workers/>
+Date: Mon, 22 Jul 2002 12:38:32 -0500
+
+--==_Exmh_556486408P
+Content-Type: text/plain; charset=us-ascii
+
+> From:  Anders Eriksson <aeriksson@fastmail.fm>
+> Date:  Thu, 18 Jul 2002 22:29:47 +0200
+>
+> 
+> next report:
+> 
+> Every once in a while (seems to be when i have left exmh for a while 
+> and new messages has arrived to the folder, but who can tell?), it 
+> picks a message and simply wont display it. The message window goes 
+> blank and I have to click ('n' doesn't work) on another message to 
+> get around it. The log shows:
+> 
+> 22:20:48 {5395 5398-5399 5401-5435}
+> 22:20:48 Updating address "szaka@sienet.hu".
+> 22:20:48 Msg_Change {723890 microseconds per iteration}
+> 22:20:59 Msg_Pick line=5388
+> 22:20:59 Mh_SequenceUpdate lists/l-k clear cur {} public
+> 22:21:10 ****************
+> 22:21:10 Mh_SequenceUpdate lists/l-k del unseen 5400 public
+> 22:21:10 {5395 5398-5399 5401-5436}
+> 22:21:10 Changing to lists/exmh ...
+> 22:21:10 Scan_CacheUpdate {194812 microseconds per iteration}
+> 22:21:10 Exmh_CheckPoint {197763 microseconds per iteration}
+> 
+> 
+> 
+> and as far as i can tell there is a correlation between the 'clear' 
+> vs. 'del' argument to Mh_SequenceUpdate and the hangs. I have no clue 
+> what these arguments are but maybe someone has.
+
+I can tell you what the 'clear' and 'del' arguments mean:
+
+Mh_SequenceUpdate lists/l-k clear cur {} public
+	This means to clear the 'cur' sequence for lists/l-k
+
+Mh_SequenceUpdate lists/l-k del unseen 5400 public
+	This means to delete message 5400 from the 'unseen' sequence for lists/l-k
+
+Can you explain more what you were actually doing as this occurred?  This 
+doesn't appear to be background processing.  Is there significance to message 
+5400?  Is it the one that isn't displaying?
+
+Chris
+
+-- 
+Chris Garrigues                 http://www.DeepEddy.Com/~cwg/
+virCIO                          http://www.virCIO.Com
+716 Congress, Suite 200
+Austin, TX  78701		+1 512 374 0500
+
+  World War III:  The Wrong-Doers Vs. the Evil-Doers.
+
+
+
+
+--==_Exmh_556486408P
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: Exmh version 2.2_20000822 06/23/2000
+
+iD8DBQE9PEMYK9b4h5R0IUIRAkgqAKCG/juGj81E+/jMVknXO5QjeevG3QCeIJ4H
+kLuM98RHJCApLxh29vpP+lc=
+=q1XW
+-----END PGP SIGNATURE-----
+
+--==_Exmh_556486408P--
+
+
+
+_______________________________________________
+Exmh-workers mailing list
+Exmh-workers@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-workers
+
+

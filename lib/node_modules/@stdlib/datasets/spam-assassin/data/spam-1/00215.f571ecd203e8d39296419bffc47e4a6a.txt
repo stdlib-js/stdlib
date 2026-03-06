@@ -1,0 +1,237 @@
+From ihehmq1s@hotmail.com  Wed Sep  4 11:54:52 2002
+Return-Path: <ihehmq1s@hotmail.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by zzzzason.org (Postfix) with ESMTP id B34A916FBE
+	for <zzzz@localhost>; Wed,  4 Sep 2002 11:45:18 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 04 Sep 2002 11:45:18 +0100 (IST)
+Received: from dsl-65-185-76-173.telocity.com
+    (dsl-65-185-76-173.telocity.com [65.185.76.173]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8416VZ13642 for <webmaster@efi.ie>;
+    Wed, 4 Sep 2002 02:06:32 +0100
+Received: from mx09.hotmail.com ([61.241.154.250]) by
+    dsl-65-185-76-173.telocity.com with Microsoft SMTPSVC(5.0.2195.2966);
+    Tue, 3 Sep 2002 17:26:22 -0400
+Message-Id: <00007beb400d$00006e2a$000068b9@mx09.hotmail.com>
+To: <Client.List.#1@dogma.slashnull.org>
+From: "Benjamin Boyce" <ihehmq1s@hotmail.com>
+Subject: Interest Rates at Forty Yr. Lows
+Date: Wed, 04 Sep 2002 01:35:46 -0800
+MIME-Version: 1.0
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2616
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+X-Originalarrivaltime: 03 Sep 2002 21:26:24.0312 (UTC) FILETIME=[8E089B80:01C25390]
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+<head>
+<title>www.low-interest-rates.net</title>
+<style>
+<!--
+td {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 12px;
+	color: black;
+}
+
+text {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 11px;
+	color: black;
+}
+
+text2 {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 12px;
+	color: black;
+}
+
+header {
+	font-family: Trebuchet MS, Verdana, Tahoma, sans-serif;
+	font-size: 17px;
+	color: white;
+}
+
+title {
+	font-family: Trebuchet MS, Verdana, Tahoma, sans-serif;
+	font-size: 20px;
+	color: #D6CFAB;
+	font-weight: bold;
+}
+
+h4 {
+	color: #B5C943;
+	font-family: Tahoma, sans-serif;
+}
+
+footer {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 10px;
+	color: white;
+	font-weight: bold;
+}
+
+a.footer {color: white; text-decoration: none;}
+a.footer:visited {color: white; text-decoration: none;}
+a.footer:hover {color: white; text-decoration: underline;}
+
+button {
+	font-size: 11px;
+	border-width: 0;
+	background-color: #476f8f;
+	color: white;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-weight: bold;
+}
+
+
+#selected {
+	color: #F5989D;
+	text-decoration: none;
+}
+
+clicker {cursor: hand}
+
+
+a {color: white; text-decoration: none;}
+//-->
+</style>
+
+
+</head>
+
+<body leftmargin=3D10 topmargin=3D15 marginwidth=3D10 marginheight=3D15>
+<FORM action=3D method=3Dpost>
+
+
+
+<div>
+
+
+
+
+<table width=3D"100%" cellspacing=3D0 cellpadding=3D0 border=3D0><tr><td b=
+gcolor=3D#D6CFAB>
+
+
+
+<center>
+<br>
+<table width=3D540 cellspacing=3D0 cellpadding=3D0 border=3D0>
+
+<tr>
+<td bgcolor=3D#F5989D height=3D50 class=3Dheader align=3Dleft>&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;<b>quotepool</b>mortgage&#153;</td>
+</tr>
+
+
+
+<tr><td bgcolor=3Dwhite align=3Dcenter>
+
+<table width=3D490 cellspacing=3D0 cellpadding=3D0 border=3D0>
+<tr>
+<td align=3Dleft class=3Dtext>
+<br>
+We're different and it's a difference that can save you time and money.<br=
+>
+We <b id=3Dselected>can</b> help you:<br><br>
+
+	<table width=3D490 cellspacing=3D0 cellpadding=3D0 border=3D0>
+	<tr><td width=3D25 align=3Dcenter class=3Dtitle>&#149;</td><td class=3Dte=
+xt2><b>Refinance</b> to get a lower rate</td></tr>
+	<tr><td align=3Dcenter class=3Dtitle>&#149;</td><td class=3Dtext2><b>Cons=
+olidate</b> your high-interest debt</td></tr>
+	<tr><td align=3Dcenter class=3Dtitle>&#149;</td><td class=3Dtext2><b>Lowe=
+r</b> your monthly payments</td></tr>
+	<tr><td align=3Dcenter class=3Dtitle>&#149;</td><td class=3Dtext2>Get <b>=
+extra cash</b> for a vacation</td></tr>
+	<tr><td align=3Dcenter class=3Dtitle>&#149;</td><td class=3Dtext2>Pay for=
+ <b>tuition</b></td></tr>
+	<tr><td align=3Dcenter class=3Dtitle>&#149;</td><td class=3Dtext2>Start h=
+ome <b>improvements</b></td></tr>
+	<tr><td align=3Dcenter class=3Dtitle>&#149;</td><td class=3Dtext2><b>Purc=
+hase</b> a New Home</td></tr>
+	</table>
+	
+<br>
+<p class=3Dtext>We understand that there are a lot of decisions to make wh=
+en securing a mortgage loan or refinancing your current loan.  That's why =
+we have mortgage EXPERTS with years of EXPERIENCE to help you make the rig=
+ht decisions.  
+
+<p class=3Dtext>Credit doesn't have to be an issue either.  Whether your c=
+redit's perfect or less than perfect, we can help you find the best deal o=
+n your home loan. Our quick, FREE, easy form will put you in contact with =
+the top brokers in the business!<br>
+<b>DON'T Miss The Opportunity to SAVE!</b>
+
+<p class=3Dtext>Now is the perfect time to secure your mortgage loan.  Wit=
+h our country in a recession, the federal government keeps LOWERING INTERE=
+ST RATES to help stimulate the economy.  It is a win-win situation and it =
+benefits mostly YOU, the homeowner! <b>Try it now!</b>
+				
+<p class=3Dtext><b>There are NO excuses. There are great rates available, =
+it's a simple form, and it costs you NOTHING to fill out for a FREE quote.=
+</b>
+
+
+</td>
+</tr>
+</table>
+
+
+<br><br>
+
+
+<table cellspacing=3D1 cellpadding=3D0 border=3D0 align=3Dright>
+<tr>
+<td bgcolor=3D#F5989D width=3D150 height=3D25 align=3Dcenter><a href=3D"ht=
+tp://www.low-interest-rates.net/"><b>PROCEED HERE</b></a></td>
+<td width=3D100>&nbsp;</td>
+</tr>
+</table>
+
+
+</td>
+</tr>
+</table>
+
+
+
+
+<table width=3D540 cellspacing=3D0 cellpadding=3D0 border=3D0>
+<tr>
+<td width=3D484 height=3D30 align=3Dleft bgcolor=3D#F5989D class=3Dfooter>=
+&nbsp;&nbsp;&nbsp;&nbsp; <a href=3D"http://www.low-interest-rates.net/etc/=
+privacy.htm" class=3Dfooter>Privacy</a> | <a href=3D"http://www.low-intere=
+st-rates.net/etc/unsubscribe.htm" class=3Dfooter>Unsubscribe</a></td>
+</tr>
+</table>
+
+
+</center>
+<br><br>
+
+
+</td></tr></table>
+
+
+</div>
+
+
+</FORM>
+</body>
+</html>
+
+
+
+

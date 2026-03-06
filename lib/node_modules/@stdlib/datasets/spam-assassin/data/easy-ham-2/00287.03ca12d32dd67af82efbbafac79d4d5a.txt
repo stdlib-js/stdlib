@@ -1,0 +1,83 @@
+From ilug-admin@linux.ie  Thu Aug  8 14:11:51 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0617A44135
+	for <jm@localhost>; Thu,  8 Aug 2002 08:32:33 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 08 Aug 2002 13:32:33 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g78CGD201928 for
+    <jm-ilug@JMASON.ORG>; Thu, 8 Aug 2002 13:16:13 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id LAA29489 for <jm-ilug@jmason.org>;
+    Thu, 8 Aug 2002 11:32:38 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA09223; Thu, 8 Aug 2002 11:31:21 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA09179 for <ilug@linux.ie>; Thu,
+    8 Aug 2002 11:31:07 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id LAA19989 for <ilug@linux.ie>; Thu,
+    8 Aug 2002 11:30:36 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g78AV2K02355 for ilug@linux.ie; Thu, 8 Aug 2002 11:31:02 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Thu, 8 Aug 2002 11:31:01 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Message-Id: <20020808103101.GA1853@jinny.ie>
+Reply-To: valen@tuatha.org
+Mail-Followup-To: ilug@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Subject: [ILUG] Cobalt question
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+ Try this little problem on for size:
+
+ I've installed Redhat 7.3 on a raq3's disk. But fscked if I can get the
+kernel in /boot/vmlinuz-2.4.18-3 to boot. It's insisting pulling the
+kernel from ... somewhere else. The old cobalt kernel.
+
+ I've booted the disk with a redhat rescue CD, and installed grub on the
+MBR and hda1 & hda2 (just in case). No luck. The cobalt BIOS says "Booting
+default method - From disk".
+
+ Any ideas how I can get this thing to boot *my* kernel ? Anyone care to
+guess how the cobalt boot process ? Google seems very quiet on the
+subject of the cobalt boot process, and what is there doesn't seem to
+work. Simple stuff like:
+
+ (how to boot a different kernel)
+ http://list.cobalt.com/pipermail/cobalt-developers/1999-December/022014.html
+
+ And, on boot:
+
+Cobalt:Main Menu> bfd /boot/vmlinuz-2.4.18-3
+First stage kernel: Decompressing - done
+Second stage kernel: Decompressing - done
+Linux version 2.2.16C28 (konkers@unicron.cobalt.com)
+
+ Note the descrepancy between what I want to boot, and actually booted.
+
+Kate
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

@@ -1,0 +1,57 @@
+From fork-admin@xent.com  Sun Oct  6 22:57:04 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A8CDB16F70
+	for <jm@localhost>; Sun,  6 Oct 2002 22:54:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sun, 06 Oct 2002 22:54:47 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g96GvOK28498 for <jm@jmason.org>;
+    Sun, 6 Oct 2002 17:57:24 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 294642940AC; Sun,  6 Oct 2002 09:57:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from hotmail.com (dav55.law15.hotmail.com [64.4.22.63]) by
+    xent.com (Postfix) with ESMTP id B76A529409A for <fork@xent.com>;
+    Sun,  6 Oct 2002 09:56:29 -0700 (PDT)
+Received: from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+    Sun, 6 Oct 2002 09:56:52 -0700
+X-Originating-Ip: [207.202.171.254]
+From: "Mr. FoRK" <fork_list@hotmail.com>
+To: "'FoRK'" <fork@spamassassin.taint.org>
+References: <003c01c26cfd$ce23e5e0$0200a8c0@JMHALL>
+Subject: Re: Our friends the Palestinians, Our servants in government.
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.50.4133.2400
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Message-Id: <DAV55B93pygyY4uLj9r0000b898@hotmail.com>
+X-Originalarrivaltime: 06 Oct 2002 16:56:52.0759 (UTC) FILETIME=[5EAB3270:01C26D59]
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 6 Oct 2002 10:02:04 -0700
+
+
+----- Original Message ----- 
+From: "John Hall" <johnhall@evergo.net>
+> 
+> I'm not against American taxpayers remodeling a school honoring a killer
+> if we do it with a daisy cutter.
+With or without occupants?
+
+

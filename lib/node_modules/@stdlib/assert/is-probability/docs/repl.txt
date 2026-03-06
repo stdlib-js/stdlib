@@ -1,0 +1,77 @@
+
+{{alias}}( value )
+    Tests if a value is a probability.
+
+    A probability is defined as a numeric value on the interval [0,1].
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a probability.
+
+    Examples
+    --------
+    > var bool = {{alias}}( 0.5 )
+    true
+    > bool = {{alias}}( new Number( 0.5 ) )
+    true
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( -5.0 )
+    false
+    > bool = {{alias}}( null )
+    false
+
+
+{{alias}}.isPrimitive( value )
+    Tests if a value is a number primitive which is a probability.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a number primitive which is a
+        probability.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isPrimitive( 0.3 )
+    true
+    > bool = {{alias}}.isPrimitive( new Number( 0.3 ) )
+    false
+
+
+{{alias}}.isObject( value )
+    Tests if a value is a number object having a value which is a probability.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether value is a number object having a value which
+        is a probability.
+
+    Examples
+    --------
+    > var bool = {{alias}}.isObject( 0.77 )
+    false
+    > bool = {{alias}}.isObject( new Number( 0.77 ) )
+    true
+
+
+    See Also
+    --------
+

@@ -1,0 +1,29 @@
+
+{{alias}}( collection )
+    Tests whether at least one element in a collection is truthy.
+
+    The function immediately returns upon encountering a truthy value.
+
+    If provided an empty collection, the function returns `false`.
+
+    Parameters
+    ----------
+    collection: Array|TypedArray|Object
+        Input collection over which to iterate. If provided an object, the
+        object must be array-like (excluding strings and functions).
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if an element is truthy; otherwise, the
+        function returns `false`.
+
+    Examples
+    --------
+    > var arr = [ 0, 0, 0, 0, 1 ];
+    > var bool = {{alias}}( arr )
+    true
+
+    See Also
+    --------
+

@@ -1,0 +1,474 @@
+
+{{alias}}( dtype, buffer, shape, strides, offset, order[, options] )
+    Returns an ndarray.
+
+    Parameters
+    ----------
+    dtype: string
+        Underlying data type.
+
+    buffer: ArrayLikeObject|TypedArray|Buffer
+        Data buffer. A data buffer must be an array-like object (i.e., have a
+        `length` property). For data buffers which are not indexed collections
+        (i.e., collections which cannot support direct index access, such as
+        `buffer[ index ]`; e.g., Complex64Array, Complex128Array, etc), a data
+        buffer should provide `#.get( idx )` and `#.set( v[, idx] )` methods.
+        Note that, for `set` methods, the value to set should be the first
+        argument, followed by the linear index, similar to the native typed
+        array `set` method.
+
+    shape: ArrayLikeObject<integer>
+        Array shape.
+
+    strides: ArrayLikeObject<integer>
+        Array strides.
+
+    offset: integer
+        Index offset.
+
+    order: string
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style).
+
+    options: Object (optional)
+        Options.
+
+    options.mode: string (optional)
+        Specifies how to handle indices which exceed array dimensions. If equal
+        to 'throw', an ndarray instance throws an error when an index exceeds
+        array dimensions. If equal to 'normalize', an ndarray instance
+        normalizes negative indices and throws an error when an index exceeds
+        array dimensions. If equal to 'wrap', an ndarray instance wraps around
+        indices exceeding array dimensions using modulo arithmetic. If equal to
+        'clamp', an ndarray instance sets an index exceeding array dimensions
+        to either `0` (minimum index) or the maximum index. Default: 'throw'.
+
+    options.submode: Array<string> (optional)
+        Specifies how to handle subscripts which exceed array dimensions. If a
+        mode for a corresponding dimension is equal to 'throw', an ndarray
+        instance throws an error when a subscript exceeds array dimensions. If
+        equal to 'normalize', an ndarray instance normalizes negative
+        subscripts and throws an error when a subscript exceeds array
+        dimensions. If equal to 'wrap', an ndarray instance wraps around
+        subscripts exceeding array dimensions using modulo arithmetic. If equal
+        to 'clamp', an ndarray instance sets a subscript exceeding array
+        dimensions to either `0` (minimum index) or the maximum index. If the
+        number of modes is fewer than the number of dimensions, the function
+        recycles modes using modulo arithmetic. Default: [ options.mode ].
+
+    options.readonly: boolean (optional)
+        Boolean indicating whether an array should be read-only. Default: false.
+
+    Returns
+    -------
+    ndarray: ndarray
+        ndarray instance.
+
+    Examples
+    --------
+    // Create a new instance...
+    > var b = [ 1.0, 2.0, 3.0, 4.0 ]; // underlying data buffer
+    > var d = [ 2, 2 ]; // shape
+    > var s = [ 2, 1 ]; // strides
+    > var o = 0; // index offset
+    > var arr = {{alias}}( 'generic', b, d, s, o, 'row-major' )
+    <ndarray>
+
+    // Get an element using subscripts:
+    > var v = arr.get( 1, 1 )
+    4.0
+
+    // Get an element using a linear index:
+    > v = arr.iget( 3 )
+    4.0
+
+    // Set an element using subscripts:
+    > arr.set( 1, 1, 40.0 );
+    > arr.get( 1, 1 )
+    40.0
+
+    // Set an element using a linear index:
+    > arr.iset( 3, 99.0 );
+    > arr.get( 1, 1 )
+    99.0
+
+
+{{alias}}.prototype.byteLength
+    Size (in bytes) of the array (if known).
+
+    Returns
+    -------
+    size: integer|null
+        Size (in bytes) of the array.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var sz = arr.byteLength
+    32
+
+
+{{alias}}.prototype.BYTES_PER_ELEMENT
+    Size (in bytes) of each array element (if known).
+
+    Returns
+    -------
+    size: integer|null
+        Size (in bytes) of each array element.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var sz = arr.BYTES_PER_ELEMENT
+    8
+
+
+{{alias}}.prototype.data
+    Pointer to the underlying data buffer.
+
+    Returns
+    -------
+    buf: ArrayLikeObject|TypedArray|Buffer
+        Underlying data buffer.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var buf = arr.data
+    <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
+
+
+{{alias}}.prototype.dtype
+    Underlying data type.
+
+    Returns
+    -------
+    dtype: string
+        Underlying data type.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var dt = arr.dtype
+    'float64'
+
+
+{{alias}}.prototype.flags
+    Meta information, such as information concerning the memory layout of the
+    array.
+
+    Returns
+    -------
+    flags: Object
+        Info object.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var fl = arr.flags
+    {...}
+
+
+{{alias}}.prototype.length
+    Length of the array (i.e., number of elements).
+
+    Returns
+    -------
+    len: integer
+        Array length.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var len = arr.length
+    4
+
+
+{{alias}}.prototype.ndims
+    Number of dimensions.
+
+    Returns
+    -------
+    ndims: integer
+        Number of dimensions.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var n = arr.ndims
+    2
+
+
+{{alias}}.prototype.offset
+    Index offset which specifies the buffer index at which to start iterating
+    over array elements.
+
+    Returns
+    -------
+    offset: integer
+        Index offset.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var v = arr.offset
+    0
+
+
+{{alias}}.prototype.order
+    Array order.
+
+    The array order is either row-major (C-style) or column-major (Fortran-
+    style).
+
+    Returns
+    -------
+    order: string
+        Array order.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var ord = arr.order
+    'row-major'
+
+
+{{alias}}.prototype.shape
+    Array shape.
+
+    Returns
+    -------
+    shape: Array
+        Array shape.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var sh = arr.shape
+    [ 2, 2 ]
+
+
+{{alias}}.prototype.strides
+    Index strides which specify how to access data along corresponding array
+    dimensions.
+
+    Returns
+    -------
+    strides: Array
+        Index strides.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var st = arr.strides
+    [ 2, 1 ]
+
+
+{{alias}}.prototype.get( ...idx )
+    Returns an array element specified according to provided subscripts.
+
+    The number of provided subscripts should equal the number of dimensions.
+
+    For zero-dimensional arrays, no indices should be provided.
+
+    Parameters
+    ----------
+    idx: ...integer
+        Subscripts.
+
+    Returns
+    -------
+    out: any
+        Array element.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var v = arr.get( 1, 1 )
+    4.0
+
+
+{{alias}}.prototype.iget( idx )
+    Returns an array element located at a specified linear index.
+
+    For zero-dimensional arrays, the input argument is ignored and, for clarity,
+    should not be provided.
+
+    Parameters
+    ----------
+    idx: integer
+        Linear index.
+
+    Returns
+    -------
+    out: any
+        Array element.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > var v = arr.iget( 3 )
+    4.0
+
+
+{{alias}}.prototype.set( ...idx, v )
+    Sets an array element specified according to provided subscripts.
+
+    The number of provided subscripts should equal the number of dimensions.
+
+    For zero-dimensional arrays, no indices should be provided.
+
+    Parameters
+    ----------
+    idx: ...integer
+        Subscripts.
+
+    v: any
+        Value to set.
+
+    Returns
+    -------
+    out: ndarray
+        ndarray instance.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > arr.set( 1, 1, -4.0 );
+    > arr.get( 1, 1 )
+    -4.0
+
+
+{{alias}}.prototype.iset( idx, v )
+    Sets an array element located at a specified linear index.
+
+    For zero-dimensional arrays, the first, and only, argument should be the
+    value to set.
+
+    Parameters
+    ----------
+    idx: integer
+        Linear index.
+
+    v: any
+        Value to set.
+
+    Returns
+    -------
+    out: ndarray
+        ndarray instance.
+
+    Examples
+    --------
+    > var b = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'float64', b, d, s, o, 'row-major' );
+    > arr.iset( 3, -4.0 );
+    > arr.iget( 3 )
+    -4.0
+
+
+{{alias}}.prototype.toString()
+    Serializes an ndarray as a string.
+
+    This method does **not** serialize data outside of the buffer region defined
+    by the array configuration.
+
+    Returns
+    -------
+    str: string
+        Serialized ndarray string.
+
+    Examples
+    --------
+    > var b = [ 1, 2, 3, 4 ];
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'generic', b, d, s, o, 'row-major' );
+    > arr.toString()
+    '...'
+
+
+{{alias}}.prototype.toJSON()
+    Serializes an ndarray as a JSON object.
+
+    This method does **not** serialize data outside of the buffer region defined
+    by the array configuration.
+
+    Returns
+    -------
+    obj: Object
+        JSON object.
+
+    Examples
+    --------
+    > var b = [ 1, 2, 3, 4 ];
+    > var d = [ 2, 2 ];
+    > var s = [ 2, 1 ];
+    > var o = 0;
+    > var arr = {{alias}}( 'generic', b, d, s, o, 'row-major' );
+    > arr.toJSON()
+    {...}
+
+    See Also
+    --------
+

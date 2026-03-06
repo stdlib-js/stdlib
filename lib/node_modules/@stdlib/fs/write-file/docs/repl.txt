@@ -1,0 +1,74 @@
+
+{{alias}}( file, data[, options], clbk )
+    Asynchronously writes data to a file.
+
+    Parameters
+    ----------
+    file: string|Buffer|integer
+        Filename or file descriptor.
+
+    data: string|Buffer
+        Data to write.
+
+    options: Object|string (optional)
+        Options. If a string, the value is the encoding.
+
+    options.encoding: string|null (optional)
+        Encoding. The encoding option is ignored if the data argument is a
+        buffer. Default: 'utf8'.
+
+    options.flag: string (optional)
+        Flag. Default: 'w'.
+
+    options.mode: integer (optional)
+        Mode. Default: 0o666.
+
+    clbk: Function
+        Callback to invoke upon writing data to a file.
+
+    Examples
+    --------
+    > function onWrite( error ) {
+    ...     if ( error ) {
+    ...         console.error( error.message );
+    ...     }
+    ... };
+    > {{alias}}( './beep/boop.txt', 'beep boop', onWrite );
+
+
+{{alias}}.sync( file, data[, options] )
+    Synchronously writes data to a file.
+
+    Parameters
+    ----------
+    file: string|Buffer|integer
+        Filename or file descriptor.
+
+    data: string|Buffer
+        Data to write.
+
+    options: Object|string (optional)
+        Options. If a string, the value is the encoding.
+
+    options.encoding: string|null (optional)
+        Encoding. The encoding option is ignored if the data argument is a
+        buffer. Default: 'utf8'.
+
+    options.flag: string (optional)
+        Flag. Default: 'w'.
+
+    options.mode: integer (optional)
+        Mode. Default: 0o666.
+
+    Returns
+    -------
+    err: Error|null
+        Error object or null.
+
+    Examples
+    --------
+    > var err = {{alias}}.sync( './beep/boop.txt', 'beep boop' );
+
+    See Also
+    --------
+

@@ -1,0 +1,32 @@
+
+{{alias}}( value )
+    Returns an array of an object's own enumerable property names.
+
+    Name order is not guaranteed, as object key enumeration is not specified
+    according to the ECMAScript specification. In practice, however, most
+    engines use insertion order to sort an object's keys, thus allowing for
+    deterministic extraction.
+
+    If provided `null` or `undefined`, the function returns an empty array.
+
+    Parameters
+    ----------
+    value: any
+        Input value.
+
+    Returns
+    -------
+    keys: Array
+        List of an object's own enumerable property names.
+
+    Examples
+    --------
+    > function Foo() { this.beep = 'boop'; return this; };
+    > Foo.prototype.foo = 'bar';
+    > var obj = new Foo();
+    > var keys = {{alias}}( obj )
+    [ 'beep' ]
+
+    See Also
+    --------
+

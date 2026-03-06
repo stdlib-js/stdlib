@@ -1,0 +1,64 @@
+From tony@svanstrom.com  Wed Aug 28 10:56:41 2002
+Return-Path: <tony@svanstrom.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5927743F9B
+	for <jm@localhost>; Wed, 28 Aug 2002 05:56:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 10:56:37 +0100 (IST)
+Received: from moon.campus.luth.se (root@moon.campus.luth.se
+    [130.240.202.158]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7RJIqZ22179 for <jm@jmason.org>; Tue, 27 Aug 2002 20:18:52 +0100
+Received: from moon.campus.luth.se (tony@moon.campus.luth.se
+    [130.240.202.158]) by moon.campus.luth.se (8.12.3/8.12.3) with ESMTP id
+    g7RJJ2Mg007856; Tue, 27 Aug 2002 21:19:02 +0200 (CEST) (envelope-from
+    tony@svanstrom.com)
+Date: Tue, 27 Aug 2002 21:19:02 +0200 (CEST)
+From: "Tony L. Svanstrom" <tony@svanstrom.com>
+X-X-Sender: tony@moon.campus.luth.se
+To: "Jason R. Mastaler" <jason-exp-1031164464.7f11b3@mastaler.com>
+Cc: Justin Mason <yyyy@spamassassin.taint.org>,
+	<spamassassin-talk@lists.sourceforge.net>, <tmda-users@tmda.net>
+Subject: Re: [SAtalk] Re: patent on TMDA-like system
+In-Reply-To: <hhvg5wkv68.fsf@hrothgar.la.mastaler.com>
+Message-Id: <20020827211008.Y6871-100000@moon.campus.luth.se>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+
+On Tue, 27 Aug 2002 the voices made Jason R. Mastaler write:
+
+> jm@jmason.org (Justin Mason) writes:
+>
+> > Sounds a lot like TMDA to me. :( Filing date is July 26, 2001,
+> > granted May 16, 2002.
+> >
+> > TMDAers, have you seen this before?
+>
+> No, but thanks for pointing it out.
+>
+> > I'd presume TMDA is prior art, but still, it could be troublesome...
+>
+> Yup.  TMDA's core functionality was fully established before even the
+> filing date.
+>
+> Anyone with experience in this area have a recommendation on whether
+> this should be pursued or not?
+
+ If you think you can survive it, please fight... When I found that patent I
+found others that were just common sense, things that any geek could implement
+with his script/shell-language of choice; and it's time for someone to get the
+medias attention on what's going on.
+ Basically this is the new wave of "namenappers"; it used to be domainnames,
+not it's all the basic general ideas they can think off/find on the web that
+they're patenting.
+
+
+	/Tony
+-- 
+# Per scientiam ad libertatem! // Through knowledge towards freedom! #
+# Genom kunskap mot frihet! =*= (c) 1999-2002 tony@svanstrom.com =*= #
+
+     perl -e'print$_{$_} for sort%_=`lynx -dump svanstrom.com/t`'
+
+

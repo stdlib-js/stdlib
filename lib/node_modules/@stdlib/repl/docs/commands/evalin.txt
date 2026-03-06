@@ -1,0 +1,36 @@
+
+evalin( workspace, expression )
+    Evaluates an expression in a specified workspace.
+
+    Parameters
+    ----------
+    workspace: string
+        Workspace name.
+
+    expression: string
+        Expression to evaluate.
+
+    Examples
+    --------
+    // Create a workspace:
+    > workspace( 'foobar' );
+
+    // Create and switch to another workspace:
+    > workspace( 'barfoo' );
+
+    // Attempt to evaluate an expression in the first workspace:
+    > evalin( 'foobar', 'var x = 3.14;' );
+
+    // Check that nothing has changed in the current workspace:
+    > x
+
+    // Switch to the first workspace:
+    > workspace( 'foobar' );
+
+    // Check that the expression was successfully evaluated:
+    > x
+
+    See Also
+    --------
+    assignfrom, assignin, loadWorkspace, varsWorkspace, workspace, workspaces
+

@@ -1,0 +1,65 @@
+From fork-admin@xent.com  Mon Sep 23 22:47:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 21FAA16F03
+	for <jm@localhost>; Mon, 23 Sep 2002 22:47:34 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 22:47:34 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NJQvC31734 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 20:26:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id CF9EB2940A9; Mon, 23 Sep 2002 12:23:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx2.ucsc.edu [128.114.129.35]) by
+    xent.com (Postfix) with ESMTP id BC8F129409A for <fork@xent.com>;
+    Mon, 23 Sep 2002 12:22:15 -0700 (PDT)
+Received: from Tycho (dhcp-55-196.cse.ucsc.edu [128.114.55.196]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g8NJPgT24139; Mon,
+    23 Sep 2002 12:25:43 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "Robert Harley" <harley@argote.ch>, <fork@spamassassin.taint.org>
+Subject: RE: Goodbye Global Warming
+Message-Id: <AMEPKEBLDJJCCDEJHAMIKEAFFIAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+In-Reply-To: <20020923090605.0A6ABC44D@argote.ch>
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 12:23:08 -0700
+
+> Gary Lawrence Murphy wrote:
+> >and say hello to the cool:  Oooo ... /this/ is going to cause
+> some stir ...
+>
+> Of course not.  Some people just don't want to be confused by the facts.
+
+For anyone to fully bury global warming, they would need to explain why the
+dramatic increase in CO2 concentrations are not increasing the global
+temperature. They would also need to explain why, worldwide, glaciers are
+melting faster than they have previously in the historical record. That is,
+people need more than refutations, they need a compelling alternate
+explanation (hint: climate variability doesn't cover all the bases).
+
+- Jim
+
+

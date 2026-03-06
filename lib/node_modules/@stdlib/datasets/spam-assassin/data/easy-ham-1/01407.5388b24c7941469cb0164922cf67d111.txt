@@ -1,0 +1,95 @@
+From dwheeler@ida.org  Tue Sep  3 17:20:20 2002
+Return-Path: <dwheeler@ida.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 7C6BB16F69
+	for <jm@localhost>; Tue,  3 Sep 2002 17:20:19 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 17:20:19 +0100 (IST)
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [66.38.151.26]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g83G4ZZ26141 for <jm@jmason.org>; Tue, 3 Sep 2002 17:04:36 +0100
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [66.38.151.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    326048F2CD; Tue,  3 Sep 2002 09:00:08 -0600 (MDT)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 21914 invoked from network); 30 Aug 2002 14:21:06 -0000
+Message-Id: <3D6F8139.8040106@ida.org>
+Date: Fri, 30 Aug 2002 10:29:13 -0400
+From: David Wheeler <dwheeler@ida.org>
+User-Agent: Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:0.9.4.1)
+    Gecko/20020518 Netscape6/6.2.3
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: Giorgio Zoppi <deneb@penguin.it>, secprog@securityfocus.com
+Subject: Re: Storing passwords
+References: <3D66376D.4000809@ida.org> <20020827122630.D7017@cli.di.unipi.it>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+
+If you need to store a database password, then
+clearly the first step is to store the text outside the
+web tree.  You can encrypt it and store the encryption key elsewhere,
+so that at least an attacker has to get two different things.
+Also, don't get full privileges - create a user account that
+is GRANTed very limited access.
+
+However, you can often do better than this if security
+is critical.  Create a separate program which has these
+database keys (as noted above), and make the web program
+contact IT.  Create a very limited protocol that ONLY
+lets you do the operations you need (you can add specific
+operations later).  There's a performance hit, which you're
+trading for improved data isolation.
+
+
+
+Giorgio Zoppi wrote:
+
+> On Fri, Aug 23, 2002, David Wheeler wrote:
+> 
+> 
+>>The standard way to store passwords is... not to
+>>store passwords.  Instead, store a salted hash of
+>>the password in a database.  When you get a purported
+>>password, you re-salt it, compute the hash, and
+>>determine if they are the same.  This is how
+>>Unix has done it for years.  You want bigger hashes
+>>and salts than the old Unix systems, and you still want
+>>to prevent reading from those files (to foil password crackers).
+>>More info is in my book at:
+>>   http://www.dwheeler.com/secure-programs
+>>
+> 
+> Well...but this cannot be applied to database password, which most
+> web apps use. The only solution I figure is store in clear outside web
+> tree, any other ideas feasible?
+> 
+> Ciao,
+> Giorgio.
+> 
+> --
+> Never is Forever - deneb@penguin.it
+> Homepage: http://www.cli.di.unipi.it/~zoppi/index.html
+> --
+> 
+> 
+> 
+
+
+-- 
+
+--- David A. Wheeler
+     dwheeler@ida.org
+
+
+

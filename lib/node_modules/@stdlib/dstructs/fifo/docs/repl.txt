@@ -1,0 +1,62 @@
+
+{{alias}}()
+    First-in-first-out (FIFO) queue constructor.
+
+    Returns
+    -------
+    queue: Object
+        First-in-first-out queue.
+
+    queue.clear: Function
+        Clears the queue.
+
+    queue.first: Function
+        Returns the "oldest" queue value (i.e., the value which is "first-out").
+        If the queue is empty, the returned value is `undefined`.
+
+    queue.iterator: Function
+        Returns an iterator for iterating over a queue. If an environment
+        supports Symbol.iterator, the returned iterator is iterable. Note that,
+        in order to prevent confusion arising from queue mutation during
+        iteration, a returned iterator **always** iterates over a queue
+        "snapshot", which is defined as the list of queue elements at the time
+        of the method's invocation.
+
+    queue.last: Function
+        Returns the "newest" queue value (i.e., the value which is "last-out").
+        If the queue is empty, the returned value is `undefined`.
+
+    queue.length: integer
+        Queue length.
+
+    queue.pop: Function
+        Removes and returns the current "first-out" value from the queue. If the
+        queue is empty, the returned value is `undefined`.
+
+    queue.push: Function
+        Adds a value to the queue.
+
+    queue.toArray: Function
+        Returns an array of queue values.
+
+    queue.toJSON: Function
+        Serializes a queue as JSON.
+
+    Examples
+    --------
+    > var q = {{alias}}();
+    > q.push( 'foo' ).push( 'bar' );
+    > q.length
+    2
+    > q.pop()
+    'foo'
+    > q.length
+    1
+    > q.pop()
+    'bar'
+    > q.length
+    0
+
+    See Also
+    --------
+

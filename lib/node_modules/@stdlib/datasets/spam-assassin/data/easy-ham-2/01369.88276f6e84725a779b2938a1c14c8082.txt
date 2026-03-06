@@ -1,0 +1,64 @@
+From vulnwatch-return-433-jm=jmason.org@vulnwatch.org  Mon Aug 12 10:52:14 2002
+Return-Path: <vulnwatch-return-433-yyyy=spamassassin.taint.org@vulnwatch.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5AA66440EA
+	for <jm@localhost>; Mon, 12 Aug 2002 05:50:58 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:50:58 +0100 (IST)
+Received: from vikki.vulnwatch.org ([199.233.98.101]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7A01rb30740 for
+    <jm@jmason.org>; Sat, 10 Aug 2002 01:01:53 +0100
+Received: (qmail 14097 invoked by alias); 10 Aug 2002 00:21:14 -0000
+Mailing-List: contact vulnwatch-help@vulnwatch.org; run by ezmlm
+Precedence: bulk
+List-Post: <mailto:vulnwatch@vulnwatch.org>
+List-Help: <mailto:vulnwatch-help@vulnwatch.org>
+List-Unsubscribe: <mailto:vulnwatch-unsubscribe@vulnwatch.org>
+List-Subscribe: <mailto:vulnwatch-subscribe@vulnwatch.org>
+Delivered-To: mailing list vulnwatch@vulnwatch.org
+Delivered-To: moderator for vulnwatch@vulnwatch.org
+Received: (qmail 20157 invoked from network); 9 Aug 2002 22:48:11 -0000
+Date: Fri, 9 Aug 2002 15:03:33 -0700
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: <da@securityfocus.com>, <vulnwatch@vulnwatch.org>
+To: "Foundstone Labs" <labs@foundstone.com>
+From: Rob Flickenger <rob@oreillynet.com>
+In-Reply-To: <9DC8A3D37E31E043BD516142594BDDFAC476B0@MISSION.foundstone.com>
+Message-Id: <D8F6A4EC-ABE3-11D6-AF54-0003936D6AE0@oreillynet.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Subject: Re: [VulnWatch] Foundstone Labs Advisory - Information Leakage in Orinoco and Compaq Access Points
+
+On Friday, August 9, 2002, at 11:12 AM, Foundstone Labs wrote:
+
+> An information leakage vulnerability exists in Orinoco and Compaq OEM
+> access points, disclosing the unique SNMP community string. As a result,
+> an attacker can query the community string and gain the ability to
+> change system configuration including Wired Equivalent Privacy (WEP)
+> keys and Domain Name Service (DNS) information.
+
+I think this is missing the point a bit...  Yes, you can query the SNMP 
+community string...  And yes, it's the default PW (not to mention the 
+ESSID and last 5 characters of the default WEP key...)  But they're all 
+easily changed, and indeed, it is highly recommended to do so in the 
+manual.
+
+Anyone who changes the default settings would not be vulnerable to this 
+particular SNMP probe.  Of course, you can't account for end user 
+stupidity, but that's beyond the scope of this advisory.  ;)
+
+> Vendor Response:
+>
+> Both vendors were notified of this issue on July 8th, 2002. According
+> to Orinoco, "The Residential Gateway line has been discontinued."
+
+I've also heard (second hand, but on good authority) that the RG line is 
+alive and well (hence the recent RG-1100, and the upcoming 802.11a 
+version...)
+
+--Rob
+
+

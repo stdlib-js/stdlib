@@ -1,0 +1,23 @@
+Return-Path: guido@python.org
+Delivery-Date: Sat Sep  7 04:51:12 2002
+From: guido@python.org (Guido van Rossum)
+Date: Fri, 06 Sep 2002 23:51:12 -0400
+Subject: [Spambayes] hammie.py vs. GBayes.py
+Message-ID: <200209070351.g873pC613144@pcp02138704pcs.reston01.va.comcast.net>
+
+There seem to be two "drivers" for the classifier now: Neale Pickett's
+hammie.py, and the original GBayes.py.  According to the README.txt,
+GBayes.py hasn't been kept up to date.  Is there anything in there
+that isn't covered by hammie.py?  About the only useful feature of
+GBayes.py that hammie.py doesn't (yet) copy is -u, which calculates
+spamness for an entire mailbox.  This feature can easily be copied
+into hammie.py.  (GBayes.py also has a large collection of tokenizers;
+but timtoken.py rules, so I'm not sure how interesting that is now.)
+
+Therefore I propose to nuke GBayes.py, after adding a -u feature.
+
+Anyone against?  (I imagine that Skip or Barry might have a stake in
+GBayes.py; Tim seems to have moved all code he's working to other
+modules.)
+
+--Guido van Rossum (home page: http://www.python.org/~guido/)

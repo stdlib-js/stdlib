@@ -1,0 +1,31 @@
+From apache@ns3.super-hosts.com  Tue Jul 30 08:50:18 2002
+Return-Path: <apache@ns3.super-hosts.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 45660440EE
+	for <jm@localhost>; Tue, 30 Jul 2002 03:50:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 08:50:18 +0100 (IST)
+Received: from ns3.super-hosts.com (super-hosts.com [216.12.213.215] (may
+    be forged)) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g6U7g3q13343 for <jm-fm@jmason.org>; Tue, 30 Jul 2002 08:42:03 +0100
+Received: (from apache@localhost) by ns3.super-hosts.com (8.11.6/8.11.6)
+    id g6U7mNi14551; Tue, 30 Jul 2002 03:48:23 -0400
+Date: Tue, 30 Jul 2002 03:48:23 -0400
+Message-Id: <200207300748.g6U7mNi14551@ns3.super-hosts.com>
+To: remi@a2zis.com, yyyy-fm@spamassassin.taint.org, nick@fargus.net,
+	earlhood@usa.net, mdl@chat.ru, jwiencko@vt.edu,
+	buytenh@opensource.captech.com, poettering@gmx.net, ico@edd.dhs.org,
+	rammer@cs.tut.fi
+From: mike@winners.com ()
+Subject: GET OVER $500 CASH in 2 minutes!!!
+
+Below is the result of your feedback form.  It was submitted by  (mike@winners.com) on Tuesday, July 30, 19102 at 03:48:23
+---------------------------------------------------------------------------
+
+message: GET OVER $500 DOLLARS CASH!!! Just Click Here!!!! - http://www.reelten.com/redirect/500/index.htm -     If you have received this Email in error please contact: lon_chaney_jr@hotmail.com with subject: remove. 
+
+---------------------------------------------------------------------------
+
+

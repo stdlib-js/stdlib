@@ -1,0 +1,140 @@
+
+{{alias}}( methods )
+    Returns a fluent interface iterator constructor with a customized prototype
+    based on provided methods.
+
+    The methods argument should be an object which maps constructor method names
+    to iterator functions.
+
+    Each iterator function should have the following function signature:
+
+      iterFcn( iterator, ...args )
+
+    When a fluent interface iterator method is invoked, the method invokes the
+    corresponding iterator function with an iterator and provided method
+    arguments.
+
+    If an iterator function returns an iterator, the corresponding fluent
+    interface method returns a new fluent interface instance; otherwise, the
+    corresponding fluent interface method returns the iterator function result.
+
+    The iterator function evaluation context is always `null`.
+
+    Iterator functions which return iterators are expected to return iterator
+    protocol-compliant objects (i.e., an object having a `next` method which
+    returns the next iterated value (if one exists) assigned to a `value`
+    property and a `done` property having a boolean value indicating whether the
+    iterator is finished).
+
+    If an environment supports `Symbol.iterator`, the returned constructor
+    returns iterators which are iterable.
+
+    Parameters
+    ----------
+    methods: Object
+        An object mapping method names to iterator functions.
+
+    Returns
+    -------
+    FluentIterator: Function
+        Fluent interface iterator constructor.
+
+    Examples
+    --------
+    > var o = {};
+    > o.head = {{alias:@stdlib/iter/head}};
+    > o.some = {{alias:@stdlib/iter/some}};
+    > var fiter = {{alias}}( o )
+
+
+FluentIterator( iterator )
+    Returns a new fluent interface iterator from a source iterator.
+
+    Parameters
+    ----------
+    iterator: Object
+        Source iterator.
+
+    Returns
+    -------
+    iterator: Object
+        Fluent interface iterator.
+
+    Examples
+    --------
+    > var o = {};
+    > o.head = {{alias:@stdlib/iter/head}};
+    > o.some = {{alias:@stdlib/iter/some}};
+    > var fiter = {{alias}}( o );
+    > var it = fiter( {{alias:@stdlib/array/to-iterator}}( [ 0, 0, 1, 1, 1 ] ) );
+    > var bool = it.head( 3 ).some( 2 )
+    false
+
+
+FluentIterator.prototype.next()
+    Returns the next iterated value.
+
+    Returns
+    -------
+    out: Object
+        Iterator protocol-compliant object.
+
+    out.value: any (optional)
+        Next iterated value (if one exists).
+
+    out.done: boolean
+        Boolean flag indicating whether the iterator is finished.
+
+    Examples
+    --------
+    > var o = {};
+    > o.head = {{alias:@stdlib/iter/head}};
+    > o.some = {{alias:@stdlib/iter/some}};
+    > var fiter = {{alias}}( o );
+    > var it1 = fiter( {{alias:@stdlib/array/to-iterator}}( [ 0, 0, 1, 1, 1 ] ) );
+    > var it2 = it1.head( 3 );
+    > var v = it2.next().value
+    0
+    > v = it2.next().value
+    0
+    > v = it2.next().value
+    1
+
+
+FluentIterator.prototype.return( [value] )
+    Finishes an iterator and returns a provided value.
+
+    Parameters
+    ----------
+    value: any (optional)
+        Value to return.
+
+    Returns
+    -------
+    out: Object
+        Iterator protocol-compliant object.
+
+    out.value: any (optional)
+        Next iterated value (if one exists).
+
+    out.done: boolean
+        Boolean flag indicating whether the iterator is finished.
+
+    Examples
+    --------
+    > var o = {};
+    > o.head = {{alias:@stdlib/iter/head}};
+    > o.some = {{alias:@stdlib/iter/some}};
+    > var fiter = {{alias}}( o );
+    > var it1 = fiter( {{alias:@stdlib/array/to-iterator}}( [ 0, 0, 1, 1, 1 ] ) );
+    > var it2 = it1.head( 3 );
+    > var v = it2.next().value
+    0
+    > var bool = it2.return().done
+    true
+    > v = it2.next().value
+    undefined
+
+    See Also
+    --------
+

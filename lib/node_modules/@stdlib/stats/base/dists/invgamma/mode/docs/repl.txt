@@ -1,0 +1,33 @@
+
+{{alias}}( α, β )
+    Returns the mode of an inverse gamma distribution.
+
+    If `α <= 0` or `β <= 0`, the function returns `NaN`.
+
+    If `α` or `β` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        Shape parameter.
+
+    β: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Mode.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1.0, 1.0 )
+    0.5
+    > v = {{alias}}( 4.0, 12.0 )
+    2.4
+    > v = {{alias}}( 8.0, 2.0 )
+    ~0.222
+
+    See Also
+    --------
+

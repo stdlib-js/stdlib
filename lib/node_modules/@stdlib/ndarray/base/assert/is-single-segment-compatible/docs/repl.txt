@@ -1,0 +1,38 @@
+
+{{alias}}( shape, strides, offset )
+    Returns a boolean indicating if an array is compatible with a single memory
+    segment.
+
+    Parameters
+    ----------
+    shape: ArrayLike
+        Array shape.
+
+    strides: ArrayLike
+        Stride array.
+
+    offset: integer
+        Location of the first indexed value based on the stride array.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an array is compatible with a single memory
+        segment.
+
+    Examples
+    --------
+    > var d = [ 2, 3, 10 ];
+    > var s = [ 30, -10, 1 ];
+    > var o = 20;
+    > var bool = {{alias}}( d, s, o )
+    true
+    > d = [ 10 ];
+    > s = [ 3 ];
+    > o = 0;
+    > bool = {{alias}}( d, s, o )
+    false
+
+    See Also
+    --------
+

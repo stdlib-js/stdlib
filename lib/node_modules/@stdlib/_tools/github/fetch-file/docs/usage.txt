@@ -1,0 +1,9 @@
+
+Usage: ghfetchfile [options] file --repo slug1 --repo slug2 ...
+
+Options:
+
+  -h,  --help               Print this message.
+  -V,  --version            Print the package version.
+       --repo slug          Repository slug; e.g., kgryte/github-fetch-file.
+

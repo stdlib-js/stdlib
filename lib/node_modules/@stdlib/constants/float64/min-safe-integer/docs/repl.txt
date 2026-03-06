@@ -1,0 +1,15 @@
+
+{{alias}}
+    Minimum safe double-precision floating-point integer.
+
+    The minimum safe double-precision floating-point integer is given by
+    `-(2^53 - 1)`.
+
+    Examples
+    --------
+    > {{alias}}
+    -9007199254740991
+
+    See Also
+    --------
+

@@ -1,0 +1,106 @@
+
+{{alias}}( [μ, σ] )
+    Returns a normal distribution object.
+
+    Parameters
+    ----------
+    μ: number (optional)
+        Mean parameter. Default: `0.0`.
+
+    σ: number (optional)
+        Standard deviation. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    normal: Object
+        Distribution instance.
+
+    normal.mu: number
+        Mean parameter.
+
+    normal.sigma: number
+        Standard deviation. If set, the value must be greater than `0`.
+
+    normal.entropy: number
+        Read-only property which returns the differential entropy.
+
+    normal.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    normal.mean: number
+        Read-only property which returns the expected value.
+
+    normal.median: number
+        Read-only property which returns the median.
+
+    normal.mode: number
+        Read-only property which returns the mode.
+
+    normal.skewness: number
+        Read-only property which returns the skewness.
+
+    normal.stdev: number
+        Read-only property which returns the standard deviation.
+
+    normal.variance: number
+        Read-only property which returns the variance.
+
+    normal.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    normal.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    normal.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    normal.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    normal.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    normal.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var normal = {{alias}}( -2.0, 3.0 );
+    > normal.mu
+    -2.0
+    > normal.sigma
+    3.0
+    > normal.entropy
+    ~2.518
+    > normal.kurtosis
+    0.0
+    > normal.mean
+    -2.0
+    > normal.median
+    -2.0
+    > normal.mode
+    -2.0
+    > normal.skewness
+    0.0
+    > normal.stdev
+    3.0
+    > normal.variance
+    9.0
+    > normal.cdf( 0.8 )
+    ~0.825
+    > normal.logcdf( 0.8 )
+    ~-0.193
+    > normal.logpdf( 2.0 )
+    ~-2.9
+    > normal.mgf( 0.2 )
+    ~0.803
+    > normal.pdf( 2.0 )
+    ~0.055
+    > normal.quantile( 0.9 )
+    ~1.845
+
+    See Also
+    --------
+

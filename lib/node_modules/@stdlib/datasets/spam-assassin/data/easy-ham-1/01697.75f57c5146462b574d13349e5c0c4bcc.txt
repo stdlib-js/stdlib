@@ -1,0 +1,26 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Sat Sep  7 06:40:18 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Sat, 7 Sep 2002 00:40:18 -0500
+Subject: [Spambayes] can't write to CVS...
+In-Reply-To: <LNBBLJKPBEHFEDALKOLCCELKBCAB.tim.one@comcast.net>
+References: <15737.35722.956784.600958@12-248-11-90.client.attbi.com>
+        <LNBBLJKPBEHFEDALKOLCCELKBCAB.tim.one@comcast.net>
+Message-ID: <15737.37186.513740.936811@12-248-11-90.client.attbi.com>
+
+
+    Tim> About half the developers on the spambayes project were missing
+    Tim> some permission or other, so I ran thru all of them and checked
+    Tim> every damned box and clicked on every damn dropdown list I could
+    Tim> find.  As far as SF is concerned, you're all sitting on God's Right
+    Tim> Hand now, so if it still doesn't work I suggest you upgrade to
+    Tim> Win98 <wink>.
+
+Time to upgrade I guess. :-(
+
+    % cvs add unheader.py 
+    cvs [server aborted]: "add" requires write access to the repository
+
+I'll try a checkout into a new directory...
+
+S

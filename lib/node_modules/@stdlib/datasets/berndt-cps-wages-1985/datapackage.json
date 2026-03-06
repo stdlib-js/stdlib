@@ -1,0 +1,135 @@
+{
+  "name": "stdlib-datasets-berndt-cps-wages-1985",
+  "version": "",
+  "title": "CPS Wages Data",
+  "description": "A random sample of 534 workers from the Current Population Survey (CPS) from 1985.",
+  "resources": [
+    {
+      "name": "berndt-cps-1985-json",
+      "title": "CPS Wages Data",
+      "description": "A random sample of 534 workers from the Current Population Survey (CPS) from 1985.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.json"
+    },
+    {
+      "name": "berndt-cps-1985-csv",
+      "title": "CPS Wages Data",
+      "description": "A random sample of 534 workers from the Current Population Survey (CPS) from 1985.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/data.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "education",
+            "title": "Education",
+            "description": "Number of years of education.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "south",
+            "title": "South",
+            "description": "Indicator variable for southern region",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "gender",
+            "title": "Gender",
+            "description": "Gender of the person.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "experience",
+            "title": "Experience",
+            "description": "Number of years of work experience.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "union",
+            "title": "Union",
+            "description": "Indicator variable for union membership.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "wage",
+            "title": "Wage",
+            "description": "Log-transformed wage (in dollars per hour)",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "age",
+            "title": "Age",
+            "description": "Age (in years).",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "race",
+            "title": "Race",
+            "description": "Ethnicity/Race.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "occupation",
+            "title": "Occupation",
+            "description": "Occupational category.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "sector",
+            "title": "Sector",
+            "description": "Sector.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "married",
+            "title": "Married",
+            "description": "Marital status.",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [],
+  "keywords": [
+    "cps",
+    "census",
+    "survey",
+    "population",
+    "wages",
+    "workers",
+    "determinants",
+    "pay",
+    "industry",
+    "work",
+    "salary",
+    "us",
+    "united",
+    "states",
+    "economics",
+    "econometrics",
+    "statistics",
+    "stats",
+    "pay gap",
+    "multiple regression",
+    "confounding",
+    "multicollinearity"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

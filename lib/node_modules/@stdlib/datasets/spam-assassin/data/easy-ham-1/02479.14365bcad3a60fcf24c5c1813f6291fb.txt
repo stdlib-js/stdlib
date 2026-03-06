@@ -1,0 +1,84 @@
+From secprog-return-625-jm=jmason.org@securityfocus.com  Tue Nov 26 11:27:38 2002
+Return-Path: <secprog-return-625-yyyy=spamassassin.taint.org@securityfocus.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 914B516F1A
+	for <jm@localhost>; Tue, 26 Nov 2002 11:27:31 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 26 Nov 2002 11:27:31 +0000 (GMT)
+Received: from outgoing.securityfocus.com (outgoing2.securityfocus.com
+    [205.206.231.26]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    gAQ4ZYW13887 for <jm@jmason.org>; Tue, 26 Nov 2002 04:35:35 GMT
+Received: from lists.securityfocus.com (lists.securityfocus.com
+    [205.206.231.19]) by outgoing.securityfocus.com (Postfix) with QMQP id
+    302578F2F5; Mon, 25 Nov 2002 12:32:48 -0700 (MST)
+Mailing-List: contact secprog-help@securityfocus.com; run by ezmlm
+Precedence: bulk
+List-Id: <secprog.list-id.securityfocus.com>
+List-Post: <mailto:secprog@securityfocus.com>
+List-Help: <mailto:secprog-help@securityfocus.com>
+List-Unsubscribe: <mailto:secprog-unsubscribe@securityfocus.com>
+List-Subscribe: <mailto:secprog-subscribe@securityfocus.com>
+Delivered-To: mailing list secprog@securityfocus.com
+Delivered-To: moderator for secprog@securityfocus.com
+Received: (qmail 2319 invoked from network); 25 Nov 2002 20:11:46 -0000
+Date: Mon, 25 Nov 2002 20:25:26 +0000
+From: Luciano Miguel Ferreira Rocha <strange@nsk.no-ip.org>
+To: Ali Saifullah Khan <whipaz@gem.net.pk>
+Cc: cdavison@nucleus.com, secprog@securityfocus.com
+Subject: Re: Are bad developer libraries the problem with M$ software?
+Message-Id: <20021125202526.GA9488@nsk.no-ip.org>
+Reply-To: strange@nsk.no-ip.org
+Mail-Followup-To: Luciano Miguel Ferreira Rocha <strange@nsk.no-ip.org>,
+	Ali Saifullah Khan <whipaz@gem.net.pk>, cdavison@nucleus.com,
+	secprog@securityfocus.com
+References: <0765fe847442469cb74c250e51a8d37e.cdavison@nucleus.com>
+    <000801c2924c$7e1e9b20$ab8405ca@opendev>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <000801c2924c$7e1e9b20$ab8405ca@opendev>
+User-Agent: Mutt/1.4i
+X-Disclaimer: 'Author of this message is not responsible for any harm done
+    to reader's computer.'
+X-Organization: 'NSK'
+X-Section: 'Admin'
+X-Priority: '1 (Highest)'
+
+
+I don't know how one can expect better and more secure code from the
+community when this being a security list some post like this shows
+clearly no knowledge of C.
+
+On Fri, Nov 22, 2002 at 10:27:53PM +0500, Ali Saifullah Khan wrote:
+> Here is a test done on the return of sizes by sizeof() using pointers.
+> 
+> #include <iostream.h>
+> 
+> int main(void) {
+>  char *testbuff[1024];
+   ^^^^^^^^^^^^^^^^^^^^
+
+Read it like this: new array with 1024 elements of type pointer to char.
+As a pointer occupies the natural word size (32 bits or 64bits), no wonder
+you get 4*1024 (sizeof(char *) * numer_of_elements).
+
+>  int len = sizeof(testbuff);
+>  cout << len << "\n";
+>  return 0;
+> }
+
+> using " int len = sizeof((char*)testbuff); "
+sizeof returns the size of types. You can use it with vars (and then the
+normal form is sizeof var, not sizeof(var)), but if you're changing the
+type with the var with a cast, of course you'll get the size of that new
+type.
+
+Regards,
+Luciano Rocha
+
+-- 
+Consciousness: that annoying time between naps.
+
+

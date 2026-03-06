@@ -1,0 +1,70 @@
+Return-Path: ler@lerami.lerctr.org
+Delivery-Date: Sat Sep 14 13:26:41 2002
+Received: via dmail-2002(12) for +lists/freebsd/ports; Sat, 14 Sep 2002 13:26:41 -0500 (CDT)
+Return-Path: <owner-freebsd-ports@FreeBSD.ORG>
+Received: from mx2.freebsd.org (mx2.FreeBSD.org [216.136.204.119])
+	by lerami.lerctr.org (8.12.2/8.12.2/20020902/$Revision: 1.30 $) with ESMTP id g8EIQYE9016187
+	for <ler@lerctr.org>; Sat, 14 Sep 2002 13:26:35 -0500 (CDT)
+Received: from hub.freebsd.org (hub.FreeBSD.org [216.136.204.18])
+	by mx2.freebsd.org (Postfix) with ESMTP
+	id A61FE55746; Sat, 14 Sep 2002 11:26:27 -0700 (PDT)
+	(envelope-from owner-freebsd-ports@FreeBSD.ORG)
+Received: by hub.freebsd.org (Postfix, from userid 538)
+	id 0C79337B401; Sat, 14 Sep 2002 11:26:27 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1])
+	by hub.freebsd.org (Postfix) with SMTP
+	id 005112E800A; Sat, 14 Sep 2002 11:26:26 -0700 (PDT)
+Received: by hub.freebsd.org (bulk_mailer v1.12); Sat, 14 Sep 2002 11:26:26 -0700
+Delivered-To: freebsd-ports@freebsd.org
+Received: from mx1.FreeBSD.org (mx1.FreeBSD.org [216.136.204.125])
+	by hub.freebsd.org (Postfix) with ESMTP id 27A0637B400
+	for <ports@freebsd.org>; Sat, 14 Sep 2002 11:26:26 -0700 (PDT)
+Received: from mail.cyberworldservers.net (mail.cyberworldservers.net [66.206.11.2])
+	by mx1.FreeBSD.org (Postfix) with ESMTP id CA9EA43E75
+	for <ports@freebsd.org>; Sat, 14 Sep 2002 11:26:25 -0700 (PDT)
+	(envelope-from Jeremy@synteligent.com)
+Received: from mail.cnint.com (unverified [67.104.247.119]) by mail.cyberworldservers.net
+ (Vircom SMTPRS 5.3.232) with ESMTP id <B0036248326@mail.cyberworldservers.net> for <ports@freebsd.org>;
+ Sat, 14 Sep 2002 11:33:57 -0700
+Message-ID: <B0036248326@mail.cyberworldservers.net>
+From: "Synteligent Properties" <Jeremy@synteligent.com>
+Date: Sat, 14 Sep 2002 13:36:40
+To: ports@FreeBSD.ORG
+Subject: Still looking for a house?
+MIME-Version: 1.0
+Content-Type: text/plain;charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+Sender: owner-freebsd-ports@FreeBSD.ORG
+List-ID: <freebsd-ports.FreeBSD.ORG>
+List-Archive: <http://docs.freebsd.org/mail/> (Web Archive)
+List-Help: <mailto:majordomo@FreeBSD.ORG?subject=help> (List Instructions)
+List-Subscribe: <mailto:majordomo@FreeBSD.ORG?subject=subscribe%20freebsd-ports>
+List-Unsubscribe: <mailto:majordomo@FreeBSD.ORG?subject=unsubscribe%20freebsd-ports>
+X-Loop: FreeBSD.org
+Precedence: bulk
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+X-Status: 
+X-Keywords: 
+
+My name is Jeremy Lessaris. I'm looking for investment properties in the Midwest. The issue I've been having is that not every everyone deals with the properties I'm looking for. You know the houses that you are almost sure will not sell; maybe they're really ugly or need a lot of work or are in a bad neighborhood. But for what ever reason, the houses just don't sell.
+
+I need those houses...
+
+Most of the agents I've dealt with were hesitant because there isn't much of a return for what time and effort you invest. However, the private investors I work with use "unconventional" private funding so we both can avoid long drawn out loan approvals. In fact most cases we just pay cash and close in a week. I am pre-qualified with Greentree Funding for up to $900,000 for a purchase money mortgage based on a non-owner occupied loan at 90% LTV.  (And of course you get your full commission.) 
+
+I'm not a licensed real estate agent nor am I affiliated with any real estate firm, which means I can work with you just about any way you want. Please don't be under the impression that we have to pay under market value to be interested. Sometimes I can even pay retail price. The only guarantee I'll make is that I will not waste your time, and in most cases I can tell you over the phone whether I'm interested or not. 
+
+If you are looking to purchace a project home from our inventory or would like information on forming an alliance with  Synteligent Properties, please contact me @ 847.366.4300 or email me @ jeremy@synteligent.com 
+
+Best Wishes, 
+Jeremy Lessaris
+
+
+847.366.4300
+www.synteligent.com
+jeremy@synteligent.com
+
+
+To Unsubscribe: send mail to majordomo@FreeBSD.org
+with "unsubscribe freebsd-ports" in the body of the message
+

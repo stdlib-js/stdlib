@@ -1,0 +1,93 @@
+From webdev-admin@linux.ie  Mon Aug 19 12:10:36 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 599DB43C34
+	for <jm@localhost>; Mon, 19 Aug 2002 07:10:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 12:10:35 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JBBu620154 for
+    <jm-webdev@jmason.org>; Mon, 19 Aug 2002 12:11:56 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA02295; Mon, 19 Aug 2002 12:11:52 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail.online.ie (mail.online.ie [213.159.130.68]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA02257 for <webdev@linux.ie>;
+    Mon, 19 Aug 2002 12:11:46 +0100
+Received: from ade (unknown [217.67.143.26]); by mail.online.ie with SMTP
+    id 835DA701D; for <webdev@linux.ie>; Mon, 19 Aug 2002 12:11:45 +0100 (IST)
+Message-Id: <003501c2476f$b5955580$1a8f43d9@ade2>
+From: "Adrian Murphy" <adrian.murphy@2020tourism.com>
+To: <webdev@linux.ie>
+Date: Mon, 19 Aug 2002 12:01:02 +0100
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+    boundary="----=_NextPart_000_0032_01C24778.16FE3000"
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Subject: [Webdev] site monitroring service?
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0032_01C24778.16FE3000
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+I wonder could anyone reccommend a good
+website monitoring service-with sms alerts.
+thx and sorry to be OT.
+
+Adrian Murphy
+2020 Strategies
+Beechlawn
+Cloncrane
+Clonbullogue
+Co Offaly
+Ireland
+
+------=_NextPart_000_0032_01C24778.16FE3000
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1">
+<META content=3D"MSHTML 6.00.2716.2200" name=3DGENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV><FONT face=3DArial size=3D2>
+<DIV><FONT face=3DArial size=3D2>Hi,</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2>I wonder could anyone reccommend a=20
+good</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2>website monitoring service-with sms=20
+alerts.</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2>thx and sorry to be OT.</FONT></DIV>
+<DIV><FONT face=3DArial size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT face=3DArial size=3D2>Adrian Murphy<BR>2020=20
+Strategies<BR>Beechlawn<BR>Cloncrane<BR>Clonbullogue<BR>Co=20
+Offaly<BR>Ireland</FONT></DIV></FONT></DIV></BODY></HTML>
+
+------=_NextPart_000_0032_01C24778.16FE3000--
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+

@@ -1,0 +1,85 @@
+From razor-users-admin@lists.sourceforge.net  Mon Jul 22 17:39:27 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E3D39440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 12:39:25 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 17:39:25 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFhFI08237 for
+    <jm-razor@jmason.org>; Mon, 22 Jul 2002 16:43:15 +0100
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by webnote.net (8.9.3/8.9.3) with ESMTP id QAA32707 for
+    <jm-razor@jmason.org>; Mon, 22 Jul 2002 16:23:15 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17WekC-0005gE-00; Mon,
+    22 Jul 2002 08:05:04 -0700
+Received: from uu-t1-6.visgen.com ([216.94.71.6]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17WejP-0007Kn-00 for <razor-users@lists.sourceforge.net>; Mon,
+    22 Jul 2002 08:04:15 -0700
+Received: from 216.94.71.6 ( [216.94.71.6]) as user scott@localhost by
+    webmail.visgen.com with HTTP; Mon, 22 Jul 2002 10:39:11 -0400
+Message-Id: <1027348751.3d3c190f9c408@webmail.visgen.com>
+From: Scott Augustus <scott@visgen.com>
+To: razor-users@example.sourceforge.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+User-Agent: Internet Messaging Program (IMP) 3.0
+X-Originating-Ip: 216.94.71.6
+X-Virus-Scanned: by VGI Postfix Mcafee VirusScan 4.x
+Subject: [Razor-users] Razor Server Error
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=razor-users>
+X-Original-Date: Mon, 22 Jul 2002 10:39:11 -0400
+Date: Mon, 22 Jul 2002 10:39:11 -0400
+
+Can anyone offer some insight into the following error?  I am able to pipe mail 
+through razor-check as root and it works fine but when it goes through the user 
+filter via postfix I get the errors below.  What's strange is that this just 
+started, I've made no changes, and it was running beautifully for days.
+
+The goods:
+
+Jul 22 10:59:39.878996 check[29891]: [ 1] [bootup] Logging initiated 
+LogDebugLevel=3 to file:razor-agent.log
+Jul 22 10:59:39.880196 check[29891]: [ 2]  Razor-Agents v2.12 starting razor-
+check
+Jul 22 10:59:41.929484 check[29891]: [ 3] Unable to connect to ARRAY
+(0x80ff3c8):2703; Reason: Invalid argument.
+Jul 22 10:59:41.934032 check[29891]: [ 1] vr4_signature: Bad ep4:
+Jul 22 10:59:41.935634 check[29891]: [ 3] Unable to connect to ARRAY
+(0x80ff3c8):2703; Reason: Invalid argument.
+Jul 22 10:59:41.936022 check[29891]: [ 1] razor-check error: checkit: connect1: 
+nextserver: No Razor servers available at this time
+
+TIA!
+
+~S~
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

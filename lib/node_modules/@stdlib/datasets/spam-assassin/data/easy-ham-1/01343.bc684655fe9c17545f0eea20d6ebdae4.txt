@@ -1,0 +1,85 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Aug 28 16:11:56 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8117143F99
+	for <jm@localhost>; Wed, 28 Aug 2002 11:11:56 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 28 Aug 2002 16:11:56 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SFACZ30072 for <jm-sa@jmason.org>; Wed, 28 Aug 2002 16:10:13 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k4PQ-0004c3-00; Wed,
+    28 Aug 2002 08:07:04 -0700
+Received: from sense-sea-megasub-1-583.oz.net ([216.39.146.75]
+    helo=mail.sial.org) by usw-sf-list1.sourceforge.net with esmtp (Cipher
+    TLSv1:DES-CBC3-SHA:168) (Exim 3.31-VA-mm2 #1 (Debian)) id 17k4Oe-0001G5-00
+    for <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 08:06:16
+    -0700
+Received: from darkness.sial.org (localhost. [IPv6:::1]) by mail.sial.org
+    (8.12.5/8.12.5) with ESMTP id g7SF6EQK002946 for
+    <spamassassin-talk@lists.sourceforge.net>; Wed, 28 Aug 2002 08:06:14 -0700
+    (PDT)
+Received: (from yyyyates@localhost) by darkness.sial.org
+    (8.12.5/8.12.2/Submit) id g7SF6EcW002945 for
+    spamassassin-talk@lists.sourceforge.net; Wed, 28 Aug 2002 08:06:14 -0700
+    (PDT)
+From: Jeremy Mates <yyyyates@sial.org>
+To: spamassassin-talk@example.sourceforge.net
+Message-Id: <20020828150614.GB98808@darkness.sial.org>
+Mail-Followup-To: Jeremy Mates <yyyyates@darkness.sial.org>,
+	spamassassin-talk@lists.sourceforge.net
+References: <20020828143332.GE9486@kluge.net>
+    <000801c24ea1$8a8023f0$af672e04@winxp>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+In-Reply-To: <000801c24ea1$8a8023f0$af672e04@winxp>
+User-Agent: Mutt/1.4i
+Subject: [SAtalk] Re: Too funny
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 28 Aug 2002 08:06:14 -0700
+Date: Wed, 28 Aug 2002 08:06:14 -0700
+
+* Steve Thomas <sthomas@apexvoice.com> [2002-08-28T07:52-0700]:
+> I also get a lot of them. I think they're using the domain registry
+> database to pull their victims' addresses. 
+
+Along with the usual webmaster@* and probably a dash of web harvesting
+on the side from the ones I have seen.
+
+A recent conversation in two lines:
+
+Me:  Okay, trafficmagnet is being access mapped off now.
+Junior admin [catching up on email after conference]: Thank God!
+
+-- 
+Jeremy Mates                                        http://www.sial.org/
+
+OpenPGP: 0x11C3D628  (4357 1D47 FF78 24BB 0FBF 7AA8 A846 9F86 11C3 D628)
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

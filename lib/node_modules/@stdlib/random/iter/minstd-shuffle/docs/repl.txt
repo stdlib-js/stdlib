@@ -1,0 +1,88 @@
+
+{{alias}}( [options] )
+    Returns an iterator for generating pseudorandom integers on the interval
+    `[1, 2147483646]`.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    This pseudorandom number generator (PRNG) is a linear congruential
+    pseudorandom number generator (LCG) whose output is shuffled using the Bays-
+    Durham algorithm. The shuffle step considerably strengthens the "randomness
+    quality" of a simple LCG's output.
+
+    The generator has a period of approximately `2.1e9`.
+
+    An LCG is fast and uses little memory. On the other hand, because the
+    generator is a simple LCG, the generator has recognized shortcomings. By
+    today's PRNG standards, the generator's period is relatively short. In
+    general, this generator is unsuitable for Monte Carlo simulations and
+    cryptographic applications.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.normalized: boolean (optional)
+        Boolean indicating whether to return pseudorandom numbers on the
+        interval `[0,1)`.
+
+    options.seed: integer|ArrayLikeObject<integer> (optional)
+        Pseudorandom number generator seed. The seed may be either a positive
+        signed 32-bit integer or, for arbitrary length seeds, an array-like
+        object containing positive signed 32-bit integers.
+
+    options.state: Int32Array (optional)
+        Pseudorandom number generator state. If provided, the `seed` option is
+        ignored.
+
+    options.copy: boolean (optional)
+        Boolean indicating whether to copy a provided pseudorandom number
+        generator state. Setting this option to `false` allows sharing state
+        between two or more pseudorandom number generators. Setting this option
+        to `true` ensures that a returned iterator has exclusive control over
+        its internal state. Default: true.
+
+    options.iter: integer (optional)
+        Number of iterations.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    iterator.seed: Int32Array
+        Pseudorandom number generator seed.
+
+    iterator.seedLength: integer
+        Length of generator seed.
+
+    iterator.state: Int32Array
+        Generator state.
+
+    iterator.stateLength: integer
+        Length of generator state.
+
+    iterator.byteLength: integer
+        Size (in bytes) of generator state.
+
+    Examples
+    --------
+    > var it = {{alias}}();
+    > var r = it.next().value
+    <number>
+    > r = it.next().value
+    <number>
+
+    See Also
+    --------
+

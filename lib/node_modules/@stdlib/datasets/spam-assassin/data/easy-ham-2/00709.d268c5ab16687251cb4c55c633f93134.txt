@@ -1,0 +1,194 @@
+From fork-admin@xent.com  Tue Jul 23 21:29:07 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5C90A440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 16:29:06 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 23 Jul 2002 21:29:06 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6NKUk426659 for <jm@jmason.org>;
+    Tue, 23 Jul 2002 21:30:47 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 32CA72940AB; Tue, 23 Jul 2002 13:20:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx2.ucsc.edu [128.114.129.35]) by
+    xent.com (Postfix) with ESMTP id 66E8B2940AA for <FoRK@xent.com>;
+    Tue, 23 Jul 2002 13:19:57 -0700 (PDT)
+Received: from Tycho (dhcp-63-177.cse.ucsc.edu [128.114.63.177]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g6NKSl015727 for
+    <FoRK@xent.com>; Tue, 23 Jul 2002 13:28:47 -0700 (PDT)
+From: "Jim Whitehead" <ejw@cse.ucsc.edu>
+To: "FoRK" <FoRK@xent.com>
+Subject: AOL scaling back IM interoperability
+Message-Id: <AMEPKEBLDJJCCDEJHAMIIEMGFCAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+X-Ucsc-Cats-Mailscanner: Found to be clean
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 13:27:06 -0700
+
+I suppose the main surprise here is that AOL is coming clean at all. After
+all, its long-running game of talking interop, and doing everything possible
+to prevent open standards in this arena, seemed to have been working fine,
+with most end users completely oblivious to AOL's actions.
+
+http://www.quicken.com/investments/news/story/djbn/?story=/news/stories/dj/2
+0020723/ON20020723000833.htm
+
+America Online Scales Back Instant-Messaging Compatibility Efforts
+Updated: Tuesday, July 23, 2002 01:23 PM ET
+
+Dow Jones Newswires
+
+NEW YORK -- America Online appears to be scaling back efforts to make its
+instant-messaging service compatible with rival services.
+
+The unit of AOL Time Warner Inc. (AOL, news, msgs) said in a regulatory
+filing it is now focusing on messaging interoperability methods that are
+more limited in scope than the kind envisioned by the Federal Communications
+Commission when it approved the AOL-Time Warner merger in January 2001.
+
+America Online isn't required to make its messaging system interoperable
+with others, but the FCC's merger approval included what it considered to be
+incentives for the company to do so. It also required AOL to file progress
+reports on its interoperability efforts every six months. The most recent
+report, filed last week, disclosed the company's new direction.
+
+The upshot of the strategy shift is that the instant-messaging market isn't
+much closer to broad-based interoperability than it was 18 months ago,
+according to industry analysts. Unlike e-mail, users of most competing
+instant-messaging services still can't directly trade messages. So an
+America Online instant- messaging user can't communicate with a user of
+Microsoft Corp.'s (MSFT, news, msgs) MSN Messenger, except by using
+third-party software such as Trillian.
+
+America Online, the biggest instant-messaging provider, has been criticized
+for blocking users of rival services from gaining access to its users. The
+company also has been accused of dragging its feet amid industry attempts at
+interoperability.
+
+For its part, America Online has said it wants to protect the security of
+its users and the reliability of its system. And it points out that other
+companies have so far failed to agree on interoperability standards.
+
+When the FCC approved the AOL-Time Warner merger, it said that if America
+Online wanted to offer video-conferencing and other advanced
+instant-messaging features over Time Warner's cable lines, it first had to
+enable its instant- messaging users to communicate with users of rival
+services. The intent of the condition was to prevent America Online from
+widening its dominance of the instant-messaging market by exploiting its
+access to Time Warner cable systems.
+
+AOL hasn't yet introduced video features, even though rivals Microsoft and
+Yahoo Inc. (YHOO, news, msgs) did so last year.
+
+Specifically, the FCC said America Online would have to implement a
+technology known as "server-to-server interoperability" before it could
+offer video. The technology would allow users of non-America Online services
+to detect when AOL users are online, and to trade messages. It would do so
+via communications between the computer servers operated by each messaging
+provider, using a common language.
+
+But in the progress report filed with the FCC last week, America Online said
+it will "focus its efforts" on alternatives to server-to-server
+interoperability. They are more limited in scope than server-to-sever.
+
+As an example of an alternative, America Online cited a recent agreement to
+make its instant-messaging service compatible with a new messaging service
+from Apple Computer Corp. (AAPL, news, msgs). The Apple service, IChat, will
+be included in Mac OS X 10.2, the new Apple operating system set for release
+in August.
+
+IChat users will be able to talk to America Online users, but it won't
+involve server-to-server interoperability. Instead, the actual exchange of
+messages will occur only on America Online's servers, even as IChat
+customers use Apple software.
+
+"We believe this kind of hosted IM solution provides, at least in the short
+term, a secure, reliable and cost-effective means to provide
+interoperability between AOL, IM and unaffiliated IM communities," Steven
+Teplitz, AOL's associate general counsel, wrote in the progress report to
+the FCC.
+
+As to the apparent change in strategy, company spokeswoman Kathy McKiernan
+said Tuesday: "It's a recognition that server-to-server has proven a hard
+nut to crack for the entire industry." Indeed, users of America Online's
+rival services can't directly communicate with each other, either.
+
+The alternative solution "was something that we could implement now to
+provide for IM communities to communicate," said Ms. McKiernan, adding
+America Online would explore partnerships with other messaging providers,
+similar to the Apple deal. None has been announced so far.
+
+FCC officials couldn't be reached Tuesday.
+
+America Online hasn't ruled out the possibility that it would someday
+implement server-to-server interoperability. The company has explored the
+technology in the past, including a server-to-server last year with Lotus
+Development, a unit of International Business Machines Corp. (IBM, news,
+msgs).
+
+But America Online's interoperability test with Lotus was "limited in scope
+and functionality." True server-to-server technology "would require further
+significant expenditures of time and resources to develop," wrote Mr.
+Teplitz.
+
+The Internet Engineering Task Force, a group devoted to developing Internet
+standards, has been working on a server-to-server messaging technology but
+hasn't yet developed a final version, according to America Online. Task
+force representatives couldn't be reached.
+
+The company's strategy shift means that true interoperability in instant
+messaging is still a couple of years away, according to Michael Gartenberg,
+analyst with Jupiter Research.
+
+"It's still something the market wants," he said. "At some point, it'll
+happen, but maybe a couple of years down the road."
+
+Mr. Gartenberg and other analysts believe America Online hasn't actively
+pursued true interoperability because it wants to protect its large user
+base. If messaging systems were compatible, the company could lose ground
+because prospective customers might see no difference in choosing another
+provider, as long as they can reach America Online users.
+
+But partly because of its lack of compatibility and the FCC conditions,
+America Online hasn't kept up with rivals in offering new services. MSN and
+Yahoo have had video-conferencing via instant-messaging since last year. AOL
+has denied that it has held back on video messaging to avoid making its
+system interoperable, arguing there is little consumer demand for it.
+
+But the new features have paid off for the company's rivals, and they are
+catching up. Between last October and April, Microsoft's Messenger user base
+rose 32% to 29.1 million, according to ComScore Media Metrix, while Yahoo's
+base jumped 19% to 19.2 million users. In the same period, the number of
+users of AOL-branded messaging services increased 7% to 54.9 million.
+
+
+-Peter Loftus; Dow Jones Newswires; 201-938-5267; peter.loftus@dowjones.com
+
+Copyright 2002 Dow Jones & Company, Inc.
+All Rights Reserved
+
+
+http://xent.com/mailman/listinfo/fork
+
+

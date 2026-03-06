@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Tue Sep  3 14:24:46 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id E969316F3E
+	for <jm@localhost>; Tue,  3 Sep 2002 14:23:04 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 14:23:05 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g836KxZ07386 for <jm@jmason.org>;
+    Tue, 3 Sep 2002 07:20:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7A8812941C2; Mon,  2 Sep 2002 23:18:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 0AECF294199 for
+    <fork@xent.com>; Mon,  2 Sep 2002 23:17:40 -0700 (PDT)
+Received: (qmail 5529 invoked by uid 508); 3 Sep 2002 06:20:00 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (217.80.40.48) by
+    venus.phpwebhosting.com with SMTP; 3 Sep 2002 06:20:00 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g836JvX03835; Tue, 3 Sep 2002 08:19:57 +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: "Adam L. Beberg" <beberg@mithral.com>
+Cc: RossO <fork@ordersomewherechaos.com>, <fork@spamassassin.taint.org>
+Subject: Re: Electric car an Edsel...
+In-Reply-To: <Pine.LNX.4.33.0209022109001.8806-100000@watcher.mithral.com>
+Message-Id: <Pine.LNX.4.33.0209030813420.3124-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 3 Sep 2002 08:19:57 +0200 (CEST)
+
+On Mon, 2 Sep 2002, Adam L. Beberg wrote:
+
+> Battery pack, huh what???
+> 
+> You dont use batteries for a 1/4 mile run, you use capacitors. MANY times
+
+Actually, you use both.
+
+> the energy density, and you can get the energy out fast enough. Note that
+
+No, even best supercapacitors are a long way to go from reasonably good 
+electrochemical energy sources. But you can recharge and discharge them 
+very quickly, and they take lots more of cycles than the best battery. 
+Ideal for absorbing the braking energy and turn them into smoking tires 
+few moments or minutes afterwards.
+
+> the battery packs are fully swapped out for recharging after each run
+> anyway, just like a gas dragster is refueled, so this wouldnt be cheating.
+> 200 MPH should be no problem.
+
+I don't see any reason why EVs shouldn't dominate dragster runs. The
+traction is the limiting factor, not motor power. You can basically put
+the motors into wheelhubs mounted on a composite frame, and dump juice
+into them until they melt, which will be some 100 sec downstream. Plenty
+of time to smoke anything.
+
+Of course, it doesn't roar, and spew smokage, so it won't happen.
+
+

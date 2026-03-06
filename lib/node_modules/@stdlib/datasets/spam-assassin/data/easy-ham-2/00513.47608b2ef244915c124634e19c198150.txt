@@ -1,0 +1,93 @@
+From webdev-admin@linux.ie  Mon Aug 19 11:03:03 2002
+Return-Path: <webdev-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3EC7D4419B
+	for <jm@localhost>; Mon, 19 Aug 2002 05:54:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:54:37 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7J8vg615336 for
+    <jm-webdev@jmason.org>; Mon, 19 Aug 2002 09:57:43 +0100
+Received: from lugh (www-data@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA28019; Mon, 19 Aug 2002 09:57:23 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA11469 for <webdev@linux.ie>; Thu,
+    15 Aug 2002 17:16:13 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id RAA19401 for <webdev@linux.ie>;
+    Thu, 15 Aug 2002 17:29:01 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g7FGFrR23502 for webdev@linux.ie; Thu, 15 Aug 2002 17:15:53 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Thu, 15 Aug 2002 17:15:53 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: webdev@linux.ie
+Message-Id: <20020815161553.GU26818@jinny.ie>
+Mail-Followup-To: webdev@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Subject: [Webdev] mod_rewrite question
+Sender: webdev-admin@linux.ie
+Errors-To: webdev-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: <webdev.linux.ie>
+X-Beenthere: webdev@linux.ie
+
+ I'm trying to wrap Zope up behind apache, so I can do VirtualHosts for
+Zope.
+
+ I've a site on http://ip:8080/mysite.
+
+ I want that to appear as http://mysite.com/ - so:
+
+<VirtualHost 192.168.2.11>
+        ServerName mysite.com
+        DocumentRoot /var/www/mysite
+        RewriteEngine                   on
+        RewriteRule     ^/(.*)    http://localhost:8080/mysite/$1 [P]
+</VirtualHost>
+
+ Now, what happens is that apache grabs http://localhost:8080/mysite/ and spits
+it out to the browser. Lovely. all works.
+
+ Except for framed pages (like Zope's management interface). It ends up
+looking like:
+
+    <frameset rows="34, *">
+    <frame src="http://localhost:8080/reenactors/manage_top_frame"
+name="manage_top_frame"
+   marginheight="0" scrolling="no"/>
+
+  <frameset cols="175,*">
+    <frame src="http://localhost:8080/reenactors/manage_menu"
+name="manage_menu"
+     marginwidth="2" marginheight="2" scrolling="auto"/>
+
+    <frame src="http://localhost:8080/reenactors/manage_workspace"
+name="manage_main"
+     marginwidth="2" marginheight="2" scrolling="auto"/>
+  </frameset>
+
+  </frameset>
+
+ and of course, that's not what my client should go to. Any ideas what I'm
+doing wrong ?
+
+Kate
+
+
+
+_______________________________________________
+Webdev mailing list
+Webdev@linux.ie
+http://www.linux.ie/mailman/listinfo/webdev
+

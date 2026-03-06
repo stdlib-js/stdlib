@@ -1,0 +1,105 @@
+From fork-admin@xent.com  Wed Sep  4 19:01:04 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 483C116F49
+	for <jm@localhost>; Wed,  4 Sep 2002 18:59:47 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Sep 2002 18:59:47 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g84GkFZ10966 for <jm@jmason.org>;
+    Wed, 4 Sep 2002 17:46:17 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2B544294271; Wed,  4 Sep 2002 09:43:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id C3A082941DD for <fork@xent.com>; Wed,
+    4 Sep 2002 09:42:48 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id EC5183EE16;
+    Wed,  4 Sep 2002 12:48:04 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id EAB013ED4C for <fork@xent.com>; Wed,
+    4 Sep 2002 12:48:04 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: fork@spamassassin.taint.org
+Subject: Kill Your Gods
+Message-Id: <Pine.BSO.4.44.0209041247400.20366-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 4 Sep 2002 12:48:04 -0400 (EDT)
+
+Hindus mourn 'monkey god'
+
+
+By Omer Farooq
+BBC reporter in Hyderabad
+
+Hundreds of people have attended the funeral of a monkey which became
+revered as a divine incarnation of a Hindu god in the southern Indian
+state of Andhra Pradesh.
+
+
+The monkey was quite old and both its hind legs were paralysed
+
+Animal rights campaigners say the monkey died of starvation and exhaustion
+after being trapped in a temple for a month by over-zealous worshippers.
+
+The animal was cremated in Anantapur district, 400 kilometres (250 miles)
+south of the state capital, Hyderabad, on Sunday.
+
+It had not eaten for three weeks.
+
+Last rites were performed by priests in the village of Timmiganipally in
+the presence of hundreds of devotees who had come to believe that the
+monkey was a reincarnation of the Hindu monkey god, Hanuman.
+
+Garlanded
+
+One animal rights activist said his group's efforts to save the monkey had
+failed because of the blind faith of the people.
+
+
+The monkey's death came a day after he and others tried to move the animal
+out of the temple, but were prevented by villagers.
+
+The monkey, which was found perched on top of an idol of Hanuman a month
+ago, attracted hundreds of devotees every day from surrounding villages,
+as well as from the neighbouring state of Karnataka.
+
+Devotees showered the monkey with fruit and flowers and worshipped it
+around the clock.
+
+'Exploited'
+
+Locals said they believed that Lord Hanuman was visiting the village, as
+the temple had stopped daily rituals after a dispute between two groups of
+residents.
+
+But animal rights campaigners complained that the animal was being
+mistreated.
+
+They filed a petition in the state's High Court saying the monkey had been
+forcibly confined in the temple.
+
+The group also alleged that people's religious feelings were being
+exploited to make money.
+
+The court then ordered the local administration to rescue the monkey - but
+villagers prevented officials from taking him for treatment in time.
+
+
+
+

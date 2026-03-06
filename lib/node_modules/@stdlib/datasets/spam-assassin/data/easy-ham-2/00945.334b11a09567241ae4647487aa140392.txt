@@ -1,0 +1,61 @@
+From fork-admin@xent.com  Thu Aug  1 11:28:19 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 487F6440E5
+	for <jm@localhost>; Thu,  1 Aug 2002 06:28:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 01 Aug 2002 11:28:09 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g719bU205542 for <jm@jmason.org>;
+    Thu, 1 Aug 2002 10:37:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C7AA8294151; Thu,  1 Aug 2002 02:35:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id 423C02940AA for
+    <fork@xent.com>; Thu,  1 Aug 2002 02:34:06 -0700 (PDT)
+Received: (qmail 10216 invoked by uid 500); 1 Aug 2002 09:34:15 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    1 Aug 2002 09:34:15 -0000
+From: Chris Haun <chris@noskillz.com>
+X-X-Sender: chris@isolnetsux.techmonkeys.net
+To: James Rogers <jamesr@best.com>
+Cc: fork@spamassassin.taint.org
+Subject: Re: What's cool about doing nothing
+In-Reply-To: <1028156521.6887.25.camel@avalon>
+Message-Id: <Pine.LNX.4.44.0208010532470.28192-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 1 Aug 2002 05:34:15 -0400 (EDT)
+
+if it were me, i think i'd have a spare set of tanks in ft. irwin, and 
+just move the soldiers.  
+
+
+On 31 Jul 2002, James Rogers wrote:
+
+> The first is logistical: Virtually all the mechanized infantry units are
+> located east of the Rockies, and it must be very expensive to move
+> entire heavy combat divisions a couple thousand miles every time they
+> want to run training exercises.  This is particularly true since so much
+> of our military is made up of reserve components these days, meaning
+> that you can't move the soldiers to where the training facilities are.
+> 
+
+http://xent.com/mailman/listinfo/fork
+
+

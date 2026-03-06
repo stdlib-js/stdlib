@@ -1,0 +1,52 @@
+
+{{alias}}( iterator, value[, begin[, end]] )
+    Returns an iterator which replaces all values from a provided iterator from
+    a start index to an end index with a static value.
+
+    If `end` exceeds the length of the provided iterator, the returned iterator
+    replaces the subsequence of iterated values starting from `begin` until the
+    last iterated value of the provided iterator.
+
+    If an environment supports Symbol.iterator, the returned iterator is
+    iterable.
+
+    Parameters
+    ----------
+    iterator: Object
+        Input iterator.
+
+    value: any
+        Static value.
+
+    begin: integer (optional)
+        Start iteration index (zero-based and inclusive). Default: 0.
+
+    end: integer (optional)
+        End iteration index (zero-based and non-inclusive).
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var it = {{alias}}( {{alias:@stdlib/random/iter/randu}}(), 3.14, 0, 2 );
+    > var r = it.next().value
+    3.14
+    > r = it.next().value
+    3.14
+    > r = it.next().value
+    <number>
+
+    See Also
+    --------
+

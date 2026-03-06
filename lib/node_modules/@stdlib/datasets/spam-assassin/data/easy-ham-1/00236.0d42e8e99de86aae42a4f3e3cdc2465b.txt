@@ -1,0 +1,60 @@
+From ilug-admin@linux.ie  Wed Aug 28 13:55:22 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EE8BC43F9B
+	for <zzzz@localhost>; Wed, 28 Aug 2002 08:55:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Wed, 28 Aug 2002 13:55:22 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7SCrbZ24883 for
+    <zzzz-ilug@spamassassin.taint.org>; Wed, 28 Aug 2002 13:53:37 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA26270; Wed, 28 Aug 2002 13:52:45 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from bramg1.net.external.hp.com (bramg1.net.external.hp.com
+    [192.6.126.73]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA26233
+    for <ilug@linux.ie>; Wed, 28 Aug 2002 13:52:36 +0100
+Received: from fowey.BR.ITC.HP.COM (fowey.br.itc.hp.com [15.145.8.186]) by
+    bramg1.net.external.hp.com (Postfix) with SMTP id 04D30200 for
+    <ilug@linux.ie>; Wed, 28 Aug 2002 14:52:35 +0200 (METDST)
+Received: from 15.145.8.186 by fowey.BR.ITC.HP.COM (InterScan E-Mail
+    VirusWall NT); Wed, 28 Aug 2002 13:52:35 +0100
+Received: by fowey.br.itc.hp.com with Internet Mail Service (5.5.2655.55)
+    id <RV1HA6Q5>; Wed, 28 Aug 2002 13:52:35 +0100
+Message-Id: <253B1BDA4E68D411AC3700D0B77FC5F807C0F1CE@patsydan.dublin.hp.com>
+From: "HAMILTON,DAVID (HP-Ireland,ex2)" <david_hamilton3@hp.com>
+To: "'ilug@linux.ie'" <ilug@linux.ie>
+Date: Wed, 28 Aug 2002 13:52:32 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2655.55)
+Content-Type: text/plain; charset="windows-1251"
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    NAA26233
+Subject: [ILUG] Hayes Accura ISDN PCI
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Does anyone know if this is supported under 2.4.18 kernels or higher?
+
+I need to buy an ISDN TA quick, and PC World have these in stock for ˆ65.
+
+Thanks,
+	David.
+
+David Hamilton
+Senior Technical Consultant
+HP Ireland 
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

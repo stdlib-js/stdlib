@@ -1,0 +1,102 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Aug 21 17:39:26 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9611043C34
+	for <jm@localhost>; Wed, 21 Aug 2002 12:39:25 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 17:39:25 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LGdFZ01759 for <jm-sa@jmason.org>; Wed, 21 Aug 2002 17:39:15 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hYUf-0000ob-00; Wed,
+    21 Aug 2002 09:38:05 -0700
+Received: from www.ingersoll.com ([198.183.157.2]
+    helo=pxysrv01.ingersoll.com) by usw-sf-list1.sourceforge.net with smtp
+    (Exim 3.31-VA-mm2 #1 (Debian)) id 17hYUC-00075u-00 for
+    <SpamAssassin-talk@lists.sourceforge.net>; Wed, 21 Aug 2002 09:37:36 -0700
+Received: FROM excsrv02.ingersoll.com BY pxysrv01.ingersoll.com ;
+    Wed Aug 21 11:37:32 2002 -0500
+Received: by rockford with Internet Mail Service (5.5.2653.19) id
+    <RGB7FM36>; Wed, 21 Aug 2002 11:37:31 -0500
+Message-Id: <752D46E7E674D311842600A0C9EC627A03EAABA8@rockford>
+From: "Hess, Mtodd, /mth" <mth@Ingersoll.com>
+To: SpamAssassin-talk@example.sourceforge.net
+Subject: RE: [SAtalk] paulgraham.com article
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 21 Aug 2002 11:37:23 -0500
+Date: Wed, 21 Aug 2002 11:37:23 -0500
+
+Yes, it is very impressive.  However, all of the most advanced content
+filtering known to man is easily defeated by simply presenting the content
+in the form of a graphic image (GIF, JPG, etc.).  I'm surprised that more
+spammers don't already do this.  I know we have discussed this before, and
+maybe we can detect this type of spam via the headers and with Razor/DCC (if
+you're using them).  But that sure narrows down the ruleset (maybe that's
+good).
+
+MTodd
+
+
+
+
+-----Original Message-----
+From: yyyy@spamassassin.taint.org [mailto:yyyy@spamassassin.taint.org]
+Sent: Friday, August 16, 2002 12:52 PM
+To: SpamAssassin-talk@example.sourceforge.net
+Subject: [SAtalk] paulgraham.com article
+
+
+Quite interesting -- it's pretty similar to the spam phrases stuff.  As
+Scott pointed out, this would work quite well as a naive Bayesian system.
+(in fact, I think it may be quite close to being one already...)
+
+I like the way "FL" -- ie. Florida -- is one of the top scoring terms. ;)
+
+Also, when I was doing the spam-phrases stuff, I discounted the ff0000
+thing, as HTML garbage! never realised it corresponded to "bright red" :(
+Have we got a test for that?
+
+--j.
+
+-- 
+'Justin Mason' => { url => http://jmason.org/ , blog => http://taint.org/ }
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

@@ -1,0 +1,66 @@
+From ilug-admin@linux.ie  Wed Aug 21 13:33:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E0EBC43C34
+	for <jm@localhost>; Wed, 21 Aug 2002 08:33:21 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 13:33:21 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7LCYUZ24675 for
+    <jm-ilug@jmason.org>; Wed, 21 Aug 2002 13:34:30 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA29496; Wed, 21 Aug 2002 13:33:16 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from salmon.maths.tcd.ie (mmdf@salmon.maths.tcd.ie
+    [134.226.81.11]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id NAA29463
+    for <ilug@linux.ie>; Wed, 21 Aug 2002 13:33:07 +0100
+Received: from walton.maths.tcd.ie by salmon.maths.tcd.ie with SMTP id
+    <aa96976@salmon>; 21 Aug 2002 13:33:06 +0100 (BST)
+To: ilug@linux.ie
+Subject: Re: [ILUG] URGENT: Cant get a skrew out... PLEASE HELP!
+X-It'S: all good
+X-Wigglefluff: fuddtastic
+X-Zippy: When this load is DONE I think I'll wash it AGAIN..
+In-Reply-To: Your message of
+    "Wed, 21 Aug 2002 12:42:17 BST."
+    <BCEFLMCEIJHPCPLGADJICEDPCAAA.kialllists@redpie.com>
+Date: Wed, 21 Aug 2002 13:33:06 +0100
+From: Niall Brady <bradyn@maths.tcd.ie>
+Message-Id: <200208211333.aa96976@salmon.maths.tcd.ie>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Wed, 21 Aug 2002 12:42:17 BST, Kiall Mac Innes said:
+>Hi i have a phillips head skrew thats holding a circut board together i need
+>to take it out ASAP and nothing will work, the threads on the skrew are
+>almost completly gone, its is a very small skrew that i have to use a
+>percision skrewdriver set to remove the skrews any help would be
+>appreaciated...
+
+Get a very, *very* small set of drill bits.  Start drilling right
+through the center of the head, at a slow speed so you don't pop
+off and through the board!  Once you have a bit of an indent in,
+increase the speed a little bit.
+
+If you've made a deepish indent, and the head doesn't pop off, use
+the next largest drill bit you have.  Repeat until happy.
+
+Eventually the head should just pop off, allowing you to lift the
+board off over the shaft of the screw... then ye can take out the
+rest fairly easily with a pliers or whatnot.
+
+-- 
+	Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

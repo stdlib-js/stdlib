@@ -1,0 +1,26 @@
+
+{{alias}}( key, value )
+    Revives a JSON-serialized 128-bit complex number.
+
+    Parameters
+    ----------
+    key: string
+        Key.
+
+    value: any
+        Value.
+
+    Returns
+    -------
+    out: any
+        Value or complex number.
+
+    Examples
+    --------
+    > var str = '{"type":"Complex128","re":5,"im":3}';
+    > var z = {{alias:@stdlib/utils/parse-json}}( str, {{alias}} )
+    <Complex128>
+
+    See Also
+    --------
+

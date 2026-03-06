@@ -1,0 +1,70 @@
+From ilug-admin@linux.ie  Wed Jul 31 12:00:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BB9794406D
+	for <jm@localhost>; Wed, 31 Jul 2002 07:00:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 31 Jul 2002 12:00:27 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6VAs6217529 for
+    <jm-ilug@jmason.org>; Wed, 31 Jul 2002 11:54:06 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA30911; Wed, 31 Jul 2002 11:52:27 +0100
+Received: from mail.tcd.ie (geminia.tcd.ie [134.226.16.161]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA30876 for <ilug@linux.ie>;
+    Wed, 31 Jul 2002 11:52:19 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host geminia.tcd.ie
+    [134.226.16.161] claimed to be mail.tcd.ie
+Received: from barge.dsg.cs.tcd.ie (barge.dsg.cs.tcd.ie [134.226.36.68])
+    by mail.tcd.ie (Postfix) with ESMTP id D73C6DE1 for <ilug@linux.ie>;
+    Wed, 31 Jul 2002 11:52:18 +0100 (IST)
+Received: (from david@localhost) by barge.dsg.cs.tcd.ie (8.11.2/8.11.2) id
+    g6VAsUq00918 for ilug@linux.ie; Wed, 31 Jul 2002 11:54:30 +0100
+Date: Wed, 31 Jul 2002 11:54:30 +0100
+From: "David O'Callaghan" <ocalladw@tcd.ie>
+To: Irish LUG <ilug@linux.ie>
+Subject: Re: [ILUG] Fwd: Linux Beer Hike
+Message-Id: <20020731115430.A555@barge.tcd.ie>
+Mail-Followup-To: Irish LUG <ilug@linux.ie>
+References: <A92DB5482F76D51193290002A50A5612015632A9@irsmsx103.ir.intel.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.12i
+In-Reply-To: <A92DB5482F76D51193290002A50A5612015632A9@irsmsx103.ir.intel.com>;
+    from stevenx.satelle@intel.com on Wed, Jul 31, 2002 at 11:28:05AM +0100
+X-Operating-System: Linux barge 2.4.18
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Wed, Jul 31, 2002 at 11:28:05AM +0100, Satelle, StevenX wrote:
+> When I was in school they pushed Irish down my throat. I developed a hatred
+> for Irish. I did French for 3 years and German for 6 months, I could
+> (almost) hold a basic conversation. I am proud of the fact that I don't know
+> one word of Irish. 
+
+Going rapidly OT here, but I find it shocking that anybody could be
+proud of not knowing something. It's like the tourist on holidays using
+that speak-loudly-enough-and-they-will-understand technique or (slightly
+less off-topic) the friend or relative who says "I know nothing
+about computers!" and clearly doesn't intend to learn, and is happy
+to let you clean up after them.
+
+I certainly agree that Irish is not taught all that well (or wasn't
+when I was in school) but I'd like to be able to relearn it and to
+count it as one of my skills.
+
+David
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

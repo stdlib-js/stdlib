@@ -1,0 +1,88 @@
+From fork-admin@xent.com  Fri Sep 20 11:32:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A3CF716F03
+	for <jm@localhost>; Fri, 20 Sep 2002 11:32:39 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 20 Sep 2002 11:32:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8JJhrC01513 for <jm@jmason.org>;
+    Thu, 19 Sep 2002 20:43:56 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C089629416F; Thu, 19 Sep 2002 12:40:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm0-17.sba1.netlojix.net
+    [207.71.218.17]) by xent.com (Postfix) with ESMTP id 21AD529416D for
+    <fork@xent.com>; Thu, 19 Sep 2002 12:39:47 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id MAA18640;
+    Thu, 19 Sep 2002 12:51:00 -0700
+Message-Id: <200209191951.MAA18640@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: Re: [meta-forkage]
+In-Reply-To: Message from fork-request@xent.com of
+    "Thu, 19 Sep 2002 09:45:02 PDT."
+    <20020919164502.31514.11488.Mailman@lair.xent.com>
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 19 Sep 2002 12:50:46 -0700
+
+
+
+> For my part, I'd rather people didn't use FoRK as a place in which to dump an 
+> expression of their political beliefs.
+
+I'll second that, although with emphasis
+upon /dump/, rather than on /political/.
+
+I don't mind if people advocate nuking
+gay baby whales for jesus, if they can
+make a good, original, argument for it.
+
+I do mind if someone should attempt to
+further the notion that 1+1=2, merely
+by cut-and-pasting a few pages of W&R.
+
+"New bits" are not a temporal property;
+we create them when we add context or
+clarification to the old bits of others'
+thoughts.
+
+-Dave
+
+::::::::::::
+
+>     ... being rude and disrespectful is not the way to influence 
+> politicians, but the standard way of using lobbyists and
+> writing checks is beyond many of us.
+
+The standard way has some extreme precedents:
+
+> Q: When was the Roman empire sold, and who bought it?
+>
+> A: On March 28th, 193 AD, the Roman empire was auctioned off by the
+> Praetorian guards to the wealthy senator Didius Julianus for the price
+> of 6250 drachms per soldier.
+(as found in <http://math.ucr.edu/home/baez/puzzles/5.html>,
+quoting Gibbon)
+
+Now, an economist might argue that selling
+offices is the most efficient way to fill
+them (what would Coase say?), but wouldn't
+that convince everyone (but the supporters
+of plutocracy) that efficiency is not the
+primary virtue of politics?
+
+

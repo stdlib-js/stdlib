@@ -1,0 +1,39 @@
+
+{{alias}}( x )
+    Evaluates the natural logarithm of the factorial of `x`.
+
+    For input values other than negative integers, the function returns
+
+      ln( x! ) = ln( Γ(x+1) )
+
+    where `Γ` is the Gamma function. For negative integers, the function returns
+    `NaN`.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    Returns
+    -------
+    y: number
+        Natural logarithm of the factorial of `x`.
+
+    Examples
+    --------
+    > var y = {{alias}}( 3.0 )
+    ~1.792
+    > y = {{alias}}( 2.4 )
+    ~1.092
+    > y = {{alias}}( -1.0 )
+    NaN
+    > y = {{alias}}( -1.5 )
+    ~1.266
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

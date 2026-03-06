@@ -1,0 +1,106 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6O9KDhY068565
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Wed, 24 Jul 2002 04:20:14 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6O9KCoW068551
+	for cypherpunks-forward@ds.pro-ns.net; Wed, 24 Jul 2002 04:20:12 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6O9K8hY068536
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 04:20:09 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6O9K6J79885
+	for <cypherpunks@ds.pro-ns.net>; Wed, 24 Jul 2002 05:20:06 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6O9K5d31339
+	for cypherpunks@ds.pro-ns.net; Wed, 24 Jul 2002 05:20:05 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6O9K4R31318
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 05:20:04 -0400
+Received: from hotmail.com (224128.bsb.virtua.com.br [200.167.224.128])
+	by locust.minder.net (8.11.6/8.11.6) with SMTP id g6O9JxJ79868
+	for <cpunks@minder.net>; Wed, 24 Jul 2002 05:20:00 -0400 (EDT)
+	(envelope-from health1061820o45@hotmail.com)
+Received: from [26.97.223.27] by sparc.zubilam.net with esmtp; 24 Jul 0102 09:20:00 -0000
+Reply-To: <health1061820o45@hotmail.com>
+Message-ID: <027e82b18e0c$3676e7e8$0dc03eb8@fufrrb>
+From: <health1061820o45@hotmail.com>
+To: <cpunks@minder.net>
+Subject: Penile enlarging without surgery !!
+Date: Wed, 24 Jul 0102 00:13:34 +0900
+MiME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_00C5_80C76A1D.C6068D13"
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+Importance: Normal
+
+------=_NextPart_000_00C5_80C76A1D.C6068D13
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: base64
+
+
+PGh0bWw+PGJvZHk+PGRpdiBpZD0ibWVzc2FnZUJvZHkiPjxkaXY+PGZvbnQg
+ZmFjZT0iQXJpYWwiIHNpemU9IjIiPlRoaXMgbWVzc2FnZSBpcyBzZW50IHRv
+IG91ciBzdWJzY3JpYmVycyBvbmx5LiBGdXJ0aGVyIHRyYW5zbWlzc2lvbnMg
+dG8geW91IGJ5IHRoZSBzZW5kZXIgb2YgdGhpcyBlbWFpbCB3aWxsIGJlIHN0
+b3BwZWQgYXQgbm8gY29zdCB0byB5b3UuIFNjcmVlbmluZyBvZiBhZGRyZXNz
+ZXMgaGFzIGJlZW4gZG9uZSB0byB0aGUgYmVzdCBvZiBvdXIgYWJpbGl0eSwg
+dW5mb3J0dW5hdGVseSBpdCBpcyBpbXBvc3NpYmxlIHRvIGJlIDEwMCUgYWNj
+dXJhdGUsIHNvIGlmIHlvdSBkaWQgbm90IG9wdC1pbiwgb3Igd2lzaCB0byBi
+ZSByZW1vdmVkLCBwbGVhc2UgY2xpY2sgPGEgaHJlZj0ibWFpbHRvOmhlYWx0
+aDEwNUBtYWlsLnJ1P3N1YmplY3Q9cmVtb3ZlIiB0YXJnZXQ9Im5ld193aW4i
+PmhlcmU8L2E+PC9mb250PjwvZGl2PiAgPHA+PGI+PGZvbnQgZmFjZT0iQXJp
+YWwiPjxmb250IGNvbG9yPSIjZmYwMDAwIj5USElTIElTIEZPUiBBRFVMVCBN
+RU4gT05MWSAhIElGIFlPVSBBUkUgTk9UIEFOIEFEVUxULCBERUxFVEUgTk9X
+ICENCjxwPg0KPHAgYWxpZ249ImNlbnRlciI+PGltZyBzcmM9Imh0dHA6Ly9w
+ZW5pc2VuaGFuY2UuaHlwZXJtYXJ0Lm5ldC9waG90by5qcGciIHdpZHRoPSIz
+NTEiIGhlaWdodD0iMTc5Ij48L3A+DQo8L2ZvbnQ+PC9wPjxkaXY+V2UgYXJl
+IGEgc2VyaW91cyBjb21wYW55LCBvZmZlcmluZyBhIHByb2dyYW0gdGhhdCB3
+aWxsIGVuaGFuY2UgeW91ciBzZXggbGlmZSwgYW5kIGVubGFyZ2UgeW91ciBw
+ZW5pcyBpbiBhIHRvdGFsbHkgbmF0dXJhbCB3YXkuIDxwPldlIHJlYWxpemUg
+bWFueSBtZW4gLWFuZCB0aGVpciBwYXJ0bmVycy0gYXJlIHVuaGFwcHkgd2l0
+aCB0aGVpciBwZW5pcyBzaXplLiBUaGUgdHJ1dGggaXMgdGhhdCBzaXplIG1h
+dHRlcnM7IG5vdCBvbmx5IGl0IGFmZmVjdHMgbWFueSBtZW4ncyBwZXJmb3Jt
+YW5jZSwgYnV0IHRoZWlyIHNlbGYtZXN0ZWVtIGFzIHdlbGwuPC9wPjxwPiZu
+YnNwOzwvZGl2PjxkaXY+UGVuaXMgZW5sYXJnZW1lbnQgSVMgUE9TU0lCTEU7
+IGp1c3QgYXMgeW91IGNhbiBleGVyY2lzZSBhbG1vc3QgYW55IHBhcnQgb2Yg
+DQp5b3VyIGJvZHksIHlvdSBDQU4gZXhlcmNpc2UgeW91ciBwZW5pcy48L3A+
+DQo8L2ZvbnQ+PC9kaXY+PGZvbnQgY29sb3I9IiNmZjAwMDAiPjxkaXY+PGZv
+bnQgZmFjZT0iQXJpYWwiIGNvbG9yPSIjZmYwMDAwIiBzaXplPSIzIj5PdXIg
+cHJvZ3JhbSBpcyB0b3RhbGx5IFBST1ZFTiBhbmQgMTAwJSBHVUFSQU5URUVE
+ICE8L3A+DQo8L2Rpdj48ZGl2Pk91ciBjb21wYW55IGhhcyB0aGUgdGVjaG5p
+cXVlcyEgVG90YWxseSBOQVRVUkFMIHRlY2huaXF1ZXM7IG5vIGdhZGdldHMs
+IG5vIHB1bXBzLCBubyBzdXJnZXJ5ICE8L2Rpdj48cD5JZiB5b3Ugd2FudCBt
+b3JlIGluZm9ybWF0aW9uLCBwbGVhc2UgY2xpY2sgPGEgaHJlZj0iaHR0cDov
+L2xhcmdlMi50cmlwb2QuY29tLmFyIj5oZXJlPC9hPiwgb3Igc2VuZCB1cyBh
+biBlbWFpbCA8YSBocmVmPSJtYWlsdG86aW5mbzMwMTJAZXhjaXRlLmNvbSAg
+P3N1YmplY3Q9bW9yZWluZm8iPmhlcmU8L2E+PC9wPg0KPC9kaXY+PGRpdj5U
+aGlzIElTIE5PVCBVTlNPTElDSVRFRDsgeW91IGFwcGVhciBpbiBhbiBzdWJz
+Y3JpcHRpb24gbGlzdCwgaWYgaW4gZXJyb3IsIHBsZWFzZSBsZXQgdXMga25v
+dy4gUGxlYXNlIGxldCB0aG9zZSB3aG8gc3VmZmVyIGZyb20gZXJlY3RpbGUg
+ZHlzZnVuY3Rpb24sIHNtYWxsIHBlbmlzIHNpemUsIGFuZCBvdGhlciBtYWxl
+IGFpbG1lbnRzIHJlYWQgdGhpcyBtZXNzYWdlITwvZGl2PjxwPkRJU1BPTklC
+TEUgVEFNQklFTiBFTiBFU1BBTk9MPGZvbnQgY29sb3I9IiNmZmZmZmYiPjUz
+MjJWeVZDMC05MzJLQUZ1NTk3NEVuenAwLTI5MW9pUXI4NzI4QmNZcDQtNTI3
+aU5aTTkyMzh0Qk5QMi05NzNlbGZDODk5M1lpUWQ3LTMxbDc1
+------=_NextPart_000_00C5_80C76A1D.C6068D13--
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

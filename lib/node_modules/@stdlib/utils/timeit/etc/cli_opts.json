@@ -1,0 +1,22 @@
+{
+	"string": [
+		"iterations",
+		"repeats",
+		"before",
+		"after",
+		"format"
+	],
+	"boolean": [
+		"help",
+		"version",
+		"async"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

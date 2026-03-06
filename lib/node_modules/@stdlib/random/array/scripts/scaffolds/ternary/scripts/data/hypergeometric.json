@@ -1,0 +1,53 @@
+{
+  "alias": "hypergeometric",
+  "pkg": "stdlib/random/array/hypergeometric",
+  "base_pkg": "stdlib/random/base/hypergeometric",
+
+  "param_1": "N",
+  "param_1_value": "20",
+  "param_1_desc": "population size",
+  "param_1_dtype": "number",
+  "param_1_jsdoc_dtype": "NonNegativeInteger",
+  "param_1_throws_desc": "must be a nonnegative integer",
+
+  "param_2": "K",
+  "param_2_value": "10",
+  "param_2_desc": "subpopulation size",
+  "param_2_dtype": "number",
+  "param_2_jsdoc_dtype": "NonNegativeInteger",
+  "param_2_throws_desc": "must be a nonnegative integer",
+
+  "param_3": "n",
+  "param_3_value": "7",
+  "param_3_desc": "number of draws",
+  "param_3_dtype": "number",
+  "param_3_jsdoc_dtype": "NonNegativeInteger",
+  "param_3_throws_desc": "must be a nonnegative integer",
+
+  "output_ts_dtype": "RealAndGenericDataType",
+  "output_ts_typed_array": "RealTypedArray",
+  "output_dtype_kind": "real_and_generic",
+
+  "default_dtype": "float64",
+  "default_dtype_kind": "real",
+  "default_typed_array": "Float64Array",
+
+  "from_desc": "a hypergeometric distribution",
+  "readme_from_desc": "a [hypergeometric][@stdlib/random/base/hypergeometric] distribution",
+
+  "readme_heading": "Hypergeometric Random Numbers",
+  "readme_dtype_kind_desc": "real-valued data type",
+  "readme_dtype_kind_pkg": "stdlib/array/typed-real-dtypes",
+
+  "repl_text_main_desc": "Returns an array containing pseudorandom numbers drawn from a hypergeometric distribution.",
+  "repl_text_assign_desc": "Fills an array with pseudorandom numbers drawn from a hypergeometric distribution.",
+  "repl_text_factory_desc": "Returns a function for creating arrays containing pseudorandom numbers drawn from a hypergeometric distribution.",
+
+  "repl_text_param_1_desc": "Population size.",
+  "repl_text_param_2_desc": "Subpopulation size.",
+  "repl_text_param_3_desc": "Number of draws.",
+
+  "repl_text_output_typed_arrays": "TypedArray",
+
+  "keywords": "hypergeometric,discrete"
+}

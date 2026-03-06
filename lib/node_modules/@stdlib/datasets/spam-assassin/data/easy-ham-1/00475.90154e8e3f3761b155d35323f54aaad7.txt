@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Sat Sep  7 21:52:37 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 086B516F17
+	for <jm@localhost>; Sat,  7 Sep 2002 21:52:18 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 07 Sep 2002 21:52:18 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g86KG4C22437 for <jm@jmason.org>;
+    Fri, 6 Sep 2002 21:16:08 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id BA2A92940AE; Fri,  6 Sep 2002 13:13:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from cats.ucsc.edu (cats-mx1.ucsc.edu [128.114.129.36]) by
+    xent.com (Postfix) with ESMTP id 15ADE29409E for <FoRK@xent.com>;
+    Fri,  6 Sep 2002 13:12:53 -0700 (PDT)
+Received: from Tycho (dhcp-63-177.cse.ucsc.edu [128.114.63.177]) by
+    cats.ucsc.edu (8.10.1/8.10.1) with SMTP id g86K17q07388 for
+    <FoRK@xent.com>; Fri, 6 Sep 2002 13:01:08 -0700 (PDT)
+From: "Jim Whitehead" <ejw@CSE.UCSC.EDU>
+To: "FoRK" <FoRK@xent.com>
+Subject: Google? Not in China
+Message-Id: <AMEPKEBLDJJCCDEJHAMIIEHJFGAA.ejw@cse.ucsc.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4133.2400
+Importance: Normal
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 6 Sep 2002 12:58:46 -0700
+
+In a slightly old news story, it turns out the Chinese government has banned
+all access to the Google and AltaVista search engines.
+
+http://www.nytimes.com/2002/09/04/international/asia/04BEIJ.html
+http://www.bayarea.com/mld/bayarea/business/3996218.htm
+http://news.bbc.co.uk/1/hi/technology/2233229.stm
+http://news.bbc.co.uk/1/hi/technology/2238236.stm
+
+The reason appears to be the Google cache feature. I can only imagine the
+Internet Archive will soon follow, if it isn't already blocked.
+
+Seems that governments do have some power over the Web, after all.
+
+- Jim
+
+

@@ -1,0 +1,63 @@
+From fork-admin@xent.com  Mon Aug 19 11:06:20 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 935E144105
+	for <jm@localhost>; Mon, 19 Aug 2002 05:56:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 10:56:03 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7J8aV614632 for <jm@jmason.org>;
+    Mon, 19 Aug 2002 09:36:34 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 530902940A0; Mon, 19 Aug 2002 01:34:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 3072B29409D for
+    <fork@xent.com>; Mon, 19 Aug 2002 01:33:04 -0700 (PDT)
+Received: (qmail 20426 invoked by uid 508); 19 Aug 2002 08:34:25 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (62.155.144.61) by
+    venus.phpwebhosting.com with SMTP; 19 Aug 2002 08:34:25 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g7J8YMf16772; Mon, 19 Aug 2002 10:34:22
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Rob Shavell <rob@mobiusvc.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: sprint delivers the next big thing??
+In-Reply-To: <00ce01c2474b$b1daeff0$6765010a@einstein>
+Message-Id: <Pine.LNX.4.33.0208191032320.16603-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 19 Aug 2002 10:34:21 +0200 (CEST)
+
+On Sun, 18 Aug 2002, Rob Shavell wrote:
+
+> down in the tech world than mobile visual communications.. and yet no one
+> seems to give much of a damn that right now that 2 persons can take photos
+> and share them instantly across space.  this is one of the biggest - and
+
+The word "trivial" comes to mind.
+
+> last - fundamental changes in human communications.  will be as big as the
+> browser.
+
+Remote realtime streaming video is neat, but sharing pictures? You invoke 
+big words rather readily.
+
+http://xent.com/mailman/listinfo/fork
+

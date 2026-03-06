@@ -1,0 +1,67 @@
+From craig@deersoft.com  Fri Aug 23 11:03:54 2002
+Return-Path: <craig@deersoft.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D5BBB44156
+	for <jm@localhost>; Fri, 23 Aug 2002 06:03:29 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:03:29 +0100 (IST)
+Received: from hall.mail.mindspring.net (hall.mail.mindspring.net
+    [207.69.200.60]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7MISAZ19627 for <jm@jmason.org>; Thu, 22 Aug 2002 19:28:10 +0100
+Received: from user-105nd99.dialup.mindspring.com ([64.91.181.41]
+    helo=belphegore.hughes-family.org) by hall.mail.mindspring.net with esmtp
+    (Exim 3.33 #1) id 17hwgo-00049c-00; Thu, 22 Aug 2002 14:28:14 -0400
+Received: from balam.hughes-family.org
+    (adsl-67-118-234-50.dsl.pltn13.pacbell.net [67.118.234.50]) by
+    belphegore.hughes-family.org (Postfix) with ESMTP id 05665A3FD9;
+    Thu, 22 Aug 2002 11:28:12 -0700 (PDT)
+Date: Thu, 22 Aug 2002 11:28:13 -0700
+Subject: Re: [SAdev] 2.40 RELEASE PROCESS: mass-check status, folks?
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: "Malte S. Stretz" <msquadrat.nospamplease@gmx.net>,
+	SpamAssassin-devel@lists.sourceforge.net,
+	SpamAssassin-talk@lists.sourceforge.net
+To: yyyy@spamassassin.taint.org (Justin Mason)
+From: "Craig R.Hughes" <craig@deersoft.com>
+In-Reply-To: <20020822172428.4FCCD43F99@phobos.labs.netnoteinc.com>
+Message-Id: <EB0AF9F0-B5FC-11D6-A91E-00039396ECF2@deersoft.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+
+
+On Thursday, August 22, 2002, at 10:24  AM, Justin Mason wrote:
+
+> I plan to
+>
+> 1. figure out the freqs tonight, suggest what tests to drop
+> 2. wait for comments
+> 3. drop tests that nobody cares about tomorrow
+> 4. sed out the dropped tests from the mass-check logs
+
+This step is unneccesary -- unless you've changed the scripts 
+much, any test in the logs which aren't in the rules files will 
+just be ignored I think.  You do seem to have changed the 
+logs-to-c script and removed the bit where you could specify 
+immutable tests at the top -- I took a brief glance through the 
+code and couldn't fully make out how it had changed.  I think we 
+want to be able to specify immutable test scores though in there 
+somewhere -- or is that now handled by the tflags stuff?  For 
+the last couple releases, any test which occurred infrequently 
+(by thumb-in-the-wind subjective criteria) I set to have 
+immutable scores, as well as a handful of other rules.
+
+> 5. kick off the GA
+>
+> BTW I'll be away this weekend at Linuxbierwanderung, so Craig, 
+> you might
+> have to run the GA. ;)
+
+Shouldn't be a problem.  Assuming I can get the darned thing to 
+compile :)
+
+C
+
+

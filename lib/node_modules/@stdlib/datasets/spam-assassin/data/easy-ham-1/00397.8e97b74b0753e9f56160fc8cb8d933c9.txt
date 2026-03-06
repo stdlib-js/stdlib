@@ -1,0 +1,75 @@
+From rpm-list-admin@freshrpms.net  Fri Aug 23 11:07:21 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 04CCB4415A
+	for <jm@localhost>; Fri, 23 Aug 2002 06:06:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 23 Aug 2002 11:06:06 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7N82sZ15461 for
+    <jm-rpm@jmason.org>; Fri, 23 Aug 2002 09:02:54 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7N7p3J32524; Fri, 23 Aug 2002 09:51:03
+    +0200
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [66.187.233.31]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7N7oBJ30858 for
+    <rpm-list@freshrpms.net>; Fri, 23 Aug 2002 09:50:11 +0200
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by mx1.redhat.com (8.11.6/8.11.6) with ESMTP id
+    g7N7Zal24437 for <rpm-list@freshrpms.net>; Fri, 23 Aug 2002 03:35:36 -0400
+Received: from pobox.corp.spamassassin.taint.org (pobox.corp.spamassassin.taint.org
+    [172.16.52.156]) by int-mx1.corp.redhat.com (8.11.6/8.11.6) with ESMTP id
+    g7N7oAY14355 for <rpm-list@freshrpms.net>; Fri, 23 Aug 2002 03:50:10 -0400
+Received: from ckk.rdu.spamassassin.taint.org (ckk.rdu.spamassassin.taint.org [172.16.57.72]) by
+    pobox.corp.redhat.com (8.11.6/8.11.6) with ESMTP id g7N7o9J22551 for
+    <rpm-list@freshrpms.net>; Fri, 23 Aug 2002 03:50:10 -0400
+Subject: Re: latest php upgrade in 7.3
+From: Chris Kloiber <ckloiber@ckloiber.com>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <3D656F6E.3050504@fluid.com>
+References: <3D656F6E.3050504@fluid.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-7)
+Message-Id: <1030089010.2661.11.camel@ckk.rdu.spamassassin.taint.org>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 23 Aug 2002 03:50:09 -0400
+Date: 23 Aug 2002 03:50:09 -0400
+
+On Thu, 2002-08-22 at 19:10, Troy Engel wrote:
+
+> Anyone have an idea what the heck RedHat did here, and why we're now 
+> trying to install a ton of crap I don't want?  (I'm hoping someone else 
+> has chased this down and could save me time... ;) )
+
+I'm told that even our best people occasionally screw up. And QA had
+tested the rpm on an "Everything" install. Expect a fixed version soon,
+and QA procedures have been adjusted to catch this kind of braindamage
+in the future. There is nothing really wrong with the binary inside the
+rpm, so if you want to --nodeps for now it's ok.
+
+-- 
+Chris Kloiber
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

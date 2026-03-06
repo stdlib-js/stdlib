@@ -1,0 +1,92 @@
+From fork-admin@xent.com  Mon Sep 30 21:38:13 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 427BF16F03
+	for <jm@localhost>; Mon, 30 Sep 2002 21:38:11 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 30 Sep 2002 21:38:11 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8UJTFK13077 for <jm@jmason.org>;
+    Mon, 30 Sep 2002 20:29:16 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B856029409F; Mon, 30 Sep 2002 12:29:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm2-5.sba1.netlojix.net
+    [207.71.218.101]) by xent.com (Postfix) with ESMTP id 44A5929409E for
+    <fork@xent.com>; Mon, 30 Sep 2002 12:27:59 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id MAA06188;
+    Mon, 30 Sep 2002 12:34:12 -0700
+Message-Id: <200209301934.MAA06188@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: Re: EBusiness Webforms: cluetrain has left the station
+In-Reply-To: Message from fork-request@xent.com of
+    "Mon, 30 Sep 2002 05:29:02 PDT."
+    <20020930122902.4016.16668.Mailman@lair.xent.com>
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 30 Sep 2002 12:34:12 -0700
+
+
+
+> >                                                ... webforms /can/
+> > accept "U.S. of A" as a country.  Incredible, but true.  Web forms can
+> > also accept /multiple/ or even /free-form/ telephone numbers ...
+
+Are the people who use procrustean web
+forms practices the same ones who don't
+accept faxes?
+
+When I *really* need to get something
+done, instead of just idle surfing, I
+call or fax.  Faxing, like a web form,
+can be done 24x7; it allows me to give
+all the (and only the) pertinent info
+in a single place; it also provides a
+self-journalled correspondence, which
+means rollback is easy and replay is
+even easier.
+
+-Dave
+
+>           Sure, tiled windows were the best we had for
+> a brief period of time, but they are completely useless
+> except for some terminal based replacement applications. 
+
+I've been running a tiled (but somewhat
+overlapped, yielding a horizontal stack)
+window manager lately.  Like filling in
+a web form, finding edges and shuffling
+windows may seem productive, but I find
+that having a window manager manage the
+windows means I can concentrate on what
+I want to do with their contents.
+
+:::::::::
+
+"dumb question: X client behind a firewall?"
+> Back in my day, they didn't have ssh. Then again, back in my day,
+> they didn't have firewalls.
+
+Back in my day, when one changed computer
+installations, email would be forwarded
+as a courtesy.
+
+Now, we seem to have swung so far in the
+opposite direction that it makes sense to
+ditch addresses every couple of years to
+shed spam.
+
+

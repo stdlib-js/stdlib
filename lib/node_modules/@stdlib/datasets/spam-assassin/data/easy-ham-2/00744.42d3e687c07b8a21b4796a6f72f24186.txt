@@ -1,0 +1,195 @@
+From fork-admin@xent.com  Mon Jul 29 11:29:37 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1B6B944106
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:43 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6T594i11706 for <jm@jmason.org>;
+    Mon, 29 Jul 2002 06:09:06 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id A763C2940C2; Sun, 28 Jul 2002 22:07:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: by xent.com (Postfix, from userid 1002) id 3025C2940BF;
+    Sun, 28 Jul 2002 22:06:11 -0700 (PDT)
+To: FoRK@xent.com
+Subject: [NYT] A Sudden Rush to Declare Bankruptcy is Expected
+Message-Id: <20020729050611.3025C2940BF@xent.com>
+From: adam@xent.com (Adam Rifkin)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 28 Jul 2002 22:06:11 -0700 (PDT)
+
+Welcome to 2002.  Companies that have taken on way too much debt can
+screw their shareholders and even some of their debt-holders by
+declaring bankruptcy, as Enron and Worldcom have done; meanwhile,
+it becomes more difficult for individuals who have similarly taken on
+too much debt, to dig their way out of their own holes...
+
+In my next life, I'm coming back as a corporation.  They get all the
+perks. :)
+
+
+http://www.nytimes.com/2002/07/27/business/27BANK.html
+
+A Sudden Rush to Declare Bankruptcy Is Expected
+By PHILIP SHENON
+
+WASHINGTON, July 26 The compromise bill, which was approved on Thursday
+by Congressional negotiators and is expected to be adopted in both the
+House and Senate by the end of next week, will make it much harder for
+Americans to wipe out their debts when they declare bankruptcy.
+
+After the agreement, lawyers around the country said that they had begun
+to receive calls and visits from debtors worried that they needed to
+file bankruptcy before the old rules lapse next year.
+
+"I've had plenty of calls this morning," said Gary F. Weltmann, a
+consumer bankruptcy lawyer in Washington. "And I'm telling people that
+they need to take action now."
+
+Marty K. Courson, a bankruptcy lawyer in San Francisco, said he was
+"getting ready for the onslaught."
+
+"I do think there will be a lot of people trying to use the old rules,"
+he said.
+
+The White House announced today that President Bush would sign the bill,
+which was scheduled for a final vote in the House late tonight and in
+the Senate next week. 
+
+"The president looks forward to signing that," said Ari Fleischer, the
+White House spokesman. "That bill enjoys widespread bipartisan support
+for good reasons." 
+
+The bill, which had been stalled until this week in a House-Senate
+conference committee, passed both chambers by overwhelming margins more
+than a year ago. The conference committee approved the bill Thursday
+after agreeing on an abortion-rights provision that had been the final
+obstacle to passage; the provision will bar anti-abortion protesters
+from using the bankruptcy laws to avoid paying court judgments as a
+result of clinic protests.
+
+The bill has long been the top legislative priority of the credit card
+and banking industries, which say that many people now abuse the
+bankruptcy system by writing off debts that they should be able to
+pay. There were 1.45 million bankruptcy filings last year, a record, up
+19 percent from 2000.
+
+"This legislation restores integrity and accountability to our
+bankruptcy system by offering a fresh start to those who deserve one
+while cracking down on those who don't," said Representative F. James
+Sensenbrenner Jr., the Wisconsin Republican who is chairman of the House
+Judiciary Committee.
+
+Critics, including top consumer-rights groups, described the bill as a
+gift to lenders in exchange for a recent, drastic increase in campaign
+contributions to members of Congress. They also said that it would do
+harm to millions of Americans in financial distress as a result of lost
+jobs, poor health or divorce.
+
+The bill's opponents have also questioned the timing of its passage,
+which comes in the midst of a Congressional crackdown on abusive
+accounting practices by many of the largest companies, including some of
+the same financial services companies that have lobbied strenuously for
+the bankruptcy bill.
+
+"The timing couldn't be worse," said Travis B. Plunkett, the legislative
+director of the Consumer Federation of America. "It takes a lot of gall
+for Congress to make a move like this when so many Americans are
+concerned about corporate abuses, and when the economy is so shaky." 
+
+Senator Paul Wellstone, a Minnesota Democrat who is a leading critic of
+the bill, said today that "it boggles the mind that at a time when
+Americans are more economically vulnerable, when they are most in need
+of protection from financial disaster, we would eviscerate the major
+financial safety net in our society for the middle class."
+
+Bankruptcy lawyers said that the bill would do harm to low- and
+middle-income clients who would be saddled with debts that would take
+them years to pay back. The new law will end the debt-free "fresh start"
+that many of those debtors had been permitted under the current law.
+
+Recent studies have shown that the average American filing for
+bankruptcy has a median household income well below the national average
+of about $42,000 in 2000. A study cited in Congressional testimony last
+year showed that the average person filing for bankruptcy had a car that
+was six to nine years old, and that a quarter of those people had
+medical debts exceeding $1,000.
+
+"I won't deny that there are people who abuse the bankruptcy system,"
+said Mr. Weltmann, the Washington lawyer whose firm calls itself the
+Bankruptcy Center. "But there are honest, hard-working folks who are
+really going to be affected by these changes."
+
+The bill would impose a means test on debtors, based on median incomes
+in their home states, for bankruptcy filings under Charter 7 of the
+federal bankruptcy law, which permits debtors to erase most of their
+unsecured debts, like credit card bills.
+
+Debtors with an income above the state median would be barred from
+filing under Chapter 7 and would instead be required to file instead
+under Chapter 13, which requires that a portion of the unsecured debt be
+repaid over time under the court-administered plan.
+
+Mr. Courson, the San Francisco lawyer, said that the changes would "hurt
+a lot of consumer debtors who really, rightfully belong in Chapter 7."
+
+"My clients, for the most part, are honest and unfortunate people, and
+they've just got heavy debt," he said. "You can always find some
+circumstance where a person really went to town with a credit card and
+got themselves in trouble. But I have people who are just plain old
+poor. My experience is something wildly different than the story that
+the credit card companies make to Congress."
+
+
+----
+aDaM@XeNT.CoM -- .sig double play!
+
+
+At its peak, there were more than 100 peer-to-peer start-ups. There now
+remain, at most, a couple of dozen companies concentrated in a few
+niches. The main activity of companies venturing into peer to peer is
+file sharing. But the dozens of overoptimistic forays into alternative
+economic systems, hyper-sophisticated technologies, and recording
+industry collaboration turned out to be dead ends.  Peer-to-peer
+auctions, peer-to-peer supply chain management, and peer-to-peer e-mail
+may have failed because they were ahead of their time. It's more likely
+they failed because they were just ahead of themselves.  Clearly, the
+public's appetite for file sharing has increased, and the state of the
+art has improved dramatically. But companies have still not yet found
+satisfactory business models, thus leaving file sharing's last chapter
+unwritten.
+  -- Gene Kan, http://story.news.yahoo.com/news?tmpl=story&u=/zd/20020710/tc_zd/942734
+
+
+XML proxies are add-ons to firewall and network environments that have
+the ability to monitor XML traffic and apply business rules and IT
+policies such as security, routing, performance, management,
+transformation, and connection provisioning.  Current firewalls aren't
+able to peek in the envelope and decipher XML traffic, said report
+author Ronald Schmelzer, ZapThink senior analyst.  XML proxies are not
+only able to understand network protocols, but also the XML-based
+content traveling on top of those protocols, Schmelzer said.  ZapThink
+identifies a slew of new vendors with XML-ready security solutions,
+including Flamenco Networks, Forum Systems, Reactivity, Vordel, and
+Westbridge Technology, among others... ZapThink estimates that XML
+represents just 2 percent of network traffic today, but that will
+increase to almost 25 percent by 2006.
+  -- http://www.internetwk.com/story/INW20020726S0004
+http://xent.com/mailman/listinfo/fork
+
+

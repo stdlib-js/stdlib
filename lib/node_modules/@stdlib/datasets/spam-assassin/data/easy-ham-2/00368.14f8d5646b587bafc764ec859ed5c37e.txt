@@ -1,0 +1,76 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:29:32 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C81874412E
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:00 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D7eFb21770 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 08:40:15 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA30692; Tue, 13 Aug 2002 08:39:09 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA30656 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 08:39:03 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id IAA04143 for <ilug@linux.ie>; Tue,
+    13 Aug 2002 08:38:33 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g7D7cl204288 for ilug@linux.ie; Tue, 13 Aug 2002 08:38:47 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Tue, 13 Aug 2002 08:38:47 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020813073847.GD1858@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ilug@linux.ie
+References: <20020812204603.GK25331@linuxmafia.com>
+    <20020812234021.17803.qmail@web13901.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020812234021.17803.qmail@web13901.mail.yahoo.com>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Tue, Aug 13, 2002 at 01:40:21AM +0200, Paul Linehan mentioned:
+> And, as I've tried to explain, is not the licence
+> terms on, say, trials for commercial company x
+> to which I object, it is the way SuSE appears, 
+> at least to my I.T. peasant self, to have
+> mixed up proprietary and open stuff.
+
+ Indeed. Personally, I think it's the sort of reprehensible behavior that
+split Unix way-back-when into the mess it was in a few years back, before
+Linux...got rid of most of them.
+
+ Vendors wrote their own wierd-ass installers & config tools to lock
+people to their OS, they added all sorts of functionality that was not
+availible to other OSes to make themselves different from the competition
+(Motif on non-free OSes, incompatible filesystems etc).
+
+ While a good idea when you share code & standards, in an environment
+where you do neither, the user suffers.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

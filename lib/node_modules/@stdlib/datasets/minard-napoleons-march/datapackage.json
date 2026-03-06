@@ -1,0 +1,249 @@
+{
+  "name": "stdlib-datasets-minard-napoleons-march",
+  "version": "",
+  "title": "Napoleons March",
+  "description": "Data for Charles Joseph Minard's cartographic depiction of Napoleon's Russian campaign of 1812.",
+  "resources": [
+    {
+      "name": "army-json",
+      "title": "Army Size",
+      "description": "Army size.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/army.json"
+    },
+    {
+      "name": "army-csv",
+      "title": "Army Size",
+      "description": "Army size.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/army.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lon",
+            "title": "Longitude",
+            "description": "Longitude.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "lat",
+            "title": "Latitude",
+            "description": "Latitude.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "size",
+            "title": "Army Size",
+            "description": "Army size.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "direction",
+            "title": "Direction",
+            "description": "Movement direction.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "division",
+            "title": "Division",
+            "description": "Army division.",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cities-json",
+      "title": "Cities",
+      "description": "City locations.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/cities.json"
+    },
+    {
+      "name": "cities-csv",
+      "title": "Cities",
+      "description": "City locations.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/cities.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lon",
+            "title": "Longitude",
+            "description": "Longitude.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "lat",
+            "title": "Latitude",
+            "description": "Latitude.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "city",
+            "title": "City",
+            "description": "City name.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "labels-json",
+      "title": "Army Size Labels",
+      "description": "Army size labels.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/labels.json"
+    },
+    {
+      "name": "labels-csv",
+      "title": "Army Size Labels",
+      "description": "Army size labels.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/labels.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lon",
+            "title": "Longitude",
+            "description": "Longitude.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "lat",
+            "title": "Latitude",
+            "description": "Latitude.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "size",
+            "title": "Army Size",
+            "description": "Army size.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "division",
+            "title": "Division",
+            "description": "Army division.",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "temperature-json",
+      "title": "Temperature",
+      "description": "Temperature during the army's retreat.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/temperature.json"
+    },
+    {
+      "name": "temperature-csv",
+      "title": "Temperature",
+      "description": "Temperature during the army's retreat.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/temperature.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lon",
+            "title": "Longitude",
+            "description": "Longitude.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "lat",
+            "title": "Latitude",
+            "description": "Latitude.",
+            "type": "number",
+            "format": "default"
+          },
+          {
+            "name": "date",
+            "title": "Date",
+            "description": "Date on which the temperature was recorded.",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rivers-json",
+      "title": "Rivers",
+      "description": "GeoJSON of rivers.",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "UTF-8",
+      "hash": "",
+      "path": "./data/rivers.json"
+    }
+  ],
+  "sources": [
+    {
+      "name": "The Grammar of Graphics",
+      "web": "http://www.cs.uic.edu/~wilkinson/TheGrammarOfGraphics/minard.txt"
+    },
+    {
+      "name": "Natural Earth",
+      "web": "https://github.com/nvkelso/natural-earth-vector"
+    }
+  ],
+  "keywords": [
+    "minard",
+    "napeleon",
+    "history",
+    "1812",
+    "war",
+    "france",
+    "french",
+    "russia",
+    "russian",
+    "march",
+    "cartography",
+    "cartographic",
+    "map",
+    "maps",
+    "dataviz",
+    "visualization",
+    "graphic"
+  ],
+  "license": "PDDL-1.0 AND CC0-1.0"
+}

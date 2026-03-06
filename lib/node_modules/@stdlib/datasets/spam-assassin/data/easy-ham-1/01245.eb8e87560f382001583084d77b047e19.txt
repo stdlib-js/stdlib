@@ -1,0 +1,80 @@
+From rpm-list-admin@freshrpms.net  Fri Oct  4 11:02:23 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 8CE5816F1E
+	for <jm@localhost>; Fri,  4 Oct 2002 11:02:02 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 04 Oct 2002 11:02:02 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g948wPK10662 for
+    <jm-rpm@jmason.org>; Fri, 4 Oct 2002 09:58:30 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g948t2f06646; Fri, 4 Oct 2002 10:55:02
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g948sLf03042 for
+    <rpm-list@freshrpms.net>; Fri, 4 Oct 2002 10:54:21 +0200
+From: Matthias Saou <matthias@rpmforge.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: Mplayer
+Message-Id: <20021004105413.5264a403.matthias@rpmforge.net>
+In-Reply-To: <3D9D3D32.5080404@punkass.com>
+References: <20021002.siy.77121800@www.dudex.net>
+    <3D9BEC4A.2050900@punkass.com>
+    <20021003110510.1c619b15.matthias@rpmforge.net>
+    <3D9D3D32.5080404@punkass.com>
+Organization: freshrpms.net / rpmforge.net
+X-Mailer: Sylpheed version 0.8.3claws (GTK+ 1.2.10; i386-redhat-linux)
+X-Operating-System: Red Hat GNU/Linux forever!
+X-Subliminal-Message: Use Linux... use Linux... use Linux...
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 4 Oct 2002 10:54:13 +0200
+Date: Fri, 4 Oct 2002 10:54:13 +0200
+
+Once upon a time, Roi wrote :
+
+> The new spec didn't even want to build the package
+> something with config.mak
+
+Now that is weird! :-/
+
+> Also this new spec looks like the old one, it got libdv and libdv-devel
+> in the BuildRequires so I just used the normal spec and removed it
+> manully.
+
+Indeed, my boo-boo :-( Fixed now.
+
+BTW, about the "mplayer -vo sdl" black screen problem you reported, I was
+unable to reproduce it on my hom 8.0 computer, it worked as expected.
+
+Matthias
+
+-- 
+Clean custom Red Hat Linux rpm packages : http://freshrpms.net/
+Red Hat Linux release 7.3 (Valhalla) running Linux kernel 2.4.18-10
+Load : 0.10 0.15 0.16, AC on-line, battery charging: 100% (1:47)
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

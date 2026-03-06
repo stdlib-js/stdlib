@@ -1,0 +1,77 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Wed Aug 21 18:16:30 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DC38243C38
+	for <jm@localhost>; Wed, 21 Aug 2002 13:16:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 21 Aug 2002 18:16:16 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7LHH2Z02984 for <jm-sa@jmason.org>; Wed, 21 Aug 2002 18:17:02 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hZ5V-0000Qp-00; Wed,
+    21 Aug 2002 10:16:09 -0700
+Received: from alpha.exit0.org.1-254.250.190.207.in-addr.arpa
+    ([207.190.250.99] helo=alpha.exit0.org) by usw-sf-list1.sourceforge.net
+    with smtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17hZ55-0007tT-00 for
+    <Spamassassin-talk@lists.sourceforge.net>; Wed, 21 Aug 2002 10:15:43 -0700
+Received: (qmail 16304 invoked by uid 7794); 21 Aug 2002 17:17:38 -0000
+Received: from andrew@exit0.us by alpha by uid 7791 with
+    qmail-scanner-1.13 (spamassassin: 2.31.  Clear:. Processed in 0.018966
+    secs); 21 Aug 2002 17:17:38 -0000
+Received: from outbound.infosysinc.com (HELO shiva.infosysinc.com)
+    (207.190.250.6) by 0 with SMTP; 21 Aug 2002 17:17:38 -0000
+Subject: Re: [SAtalk] CONFIDENTIAL
+From: "f. Andrew Lawton" <andrew@exit0.us>
+To: Spamassassin-talk@example.sourceforge.net
+In-Reply-To: <18C15F6E-B4D1-11D6-BDA3-00039396ECF2@deersoft.com>
+References: <18C15F6E-B4D1-11D6-BDA3-00039396ECF2@deersoft.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.3 (1.0.3-6)
+Message-Id: <1029935708.2998.1.camel@shiva>
+MIME-Version: 1.0
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: 21 Aug 2002 13:15:07 +0000
+Date: 21 Aug 2002 13:15:07 +0000
+
+On Wed, 2002-08-21 at 06:42, Craig R.Hughes wrote:
+> On Tuesday, August 20, 2002, at 09:38  PM, Mike Burger wrote:
+> 
+> > Of course, since I have this list before my SA filter, it got through.
+> 
+> That's exactly what they're counting on!  Actually, I think it's 
+> more likely spammer humor, and sa-talk is on a list somewhere.
+> 
+
+Oh, I dunno. Humor or not it, lets some of us with new installs test out
+SA with "real" email.
+
+:)
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: OSDN - Tired of that same old
+cell phone?  Get a new here for FREE!
+https://www.inphonic.com/r.asp?r=sourceforge1&refcode1=vs3390
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+

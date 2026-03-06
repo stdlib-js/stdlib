@@ -1,0 +1,51 @@
+From fork-admin@xent.com  Tue Aug  6 12:01:27 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 388A24412F
+	for <jm@localhost>; Tue,  6 Aug 2002 06:49:39 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:49:39 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g75Ifvk22113 for <jm@jmason.org>;
+    Mon, 5 Aug 2002 19:41:58 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E8E412940D3; Mon,  5 Aug 2002 11:39:03 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from localhost.localdomain (pm3-8.sba1.netlojix.net
+    [207.71.218.152]) by xent.com (Postfix) with ESMTP id BDCB72940CB for
+    <fork@xent.com>; Mon,  5 Aug 2002 11:38:51 -0700 (PDT)
+Received: (from dave@localhost) by maltesecat (8.8.7/8.8.7a) id LAA15896;
+    Mon, 5 Aug 2002 11:46:47 -0700
+Message-Id: <200208051846.LAA15896@maltesecat>
+To: fork@spamassassin.taint.org
+Subject: too much news
+From: Dave Long <dl@silcom.com>
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 05 Aug 2002 11:46:46 -0700
+
+
+So I see a headline which reads:
+"Microsoft Outlining Settlement Plans"
+and my initial reaction is to wonder
+if West Jerusalem should worry that
+Redmond will beat them to embracing
+the West Bank.
+
+-Dave
+
+http://xent.com/mailman/listinfo/fork
+
+

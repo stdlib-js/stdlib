@@ -1,0 +1,63 @@
+
+{{alias}}( x, mask, values, mode )
+    Replaces elements of an array with provided values according to a provided
+    mask array.
+
+    In broadcasting modes, the function supports broadcasting a values array
+    containing a single element against the number of truthy values in the mask
+    array.
+
+    In repeat mode, the function supports recycling elements in a values array
+    to satisfy the number of truthy values in the mask array.
+
+    The function mutates the input array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    mask: ArrayLikeObject
+        Mask array. If a mask array element is truthy, the corresponding element
+        in `x` is *replaced*; otherwise, the corresponding element in `x` is
+        "masked" and thus left unchanged.
+
+    values: ArrayLikeObject
+        Values to set.
+
+    mode: string
+        String specifying behavior when the number of values to set does not
+        equal the number of truthy mask values. The function supports the
+        following modes:
+
+        - 'strict': specifies that the function must raise an exception when the
+        number of values does not *exactly* equal the number of truthy mask
+        values.
+        - 'non_strict': specifies that the function must raise an exception when
+        the function is provided insufficient values to satisfy the mask array.
+        - 'strict_broadcast': specifies that the function must broadcast a
+        single-element values array and otherwise raise an exception when the
+        number of values does not **exactly** equal the number of truthy mask
+        values.
+        - 'broadcast': specifies that the function must broadcast a single-
+        element values array and otherwise raise an exception when the function
+        is provided insufficient values to satisfy the mask array.
+        - 'repeat': specifies that the function must reuse provided values when
+        replacing elements in `x` in order to satisfy the mask array.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Input array.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var out = {{alias}}( x, [ 0, 1, 0, 1 ], [ 20, 40 ], 'strict' )
+    [ 1, 20, 3, 40 ]
+    > var bool = ( out === x )
+    true
+
+    See Also
+    --------
+

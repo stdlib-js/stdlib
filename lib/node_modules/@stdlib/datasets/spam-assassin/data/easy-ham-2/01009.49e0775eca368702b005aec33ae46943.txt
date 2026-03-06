@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Mon Aug 12 11:10:34 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D27B044177
+	for <jm@localhost>; Mon, 12 Aug 2002 05:57:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:57:12 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7BIUhb10146 for <jm@jmason.org>;
+    Sun, 11 Aug 2002 19:30:44 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5C0C6294183; Sun, 11 Aug 2002 11:27:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from venus.phpwebhosting.com (venus.phpwebhosting.com
+    [64.29.16.27]) by xent.com (Postfix) with SMTP id 3AD9729417B for
+    <fork@xent.com>; Sun, 11 Aug 2002 11:26:26 -0700 (PDT)
+Received: (qmail 18805 invoked by uid 508); 11 Aug 2002 18:27:29 -0000
+Received: from unknown (HELO hydrogen.leitl.org) (62.155.144.56) by
+    venus.phpwebhosting.com with SMTP; 11 Aug 2002 18:27:29 -0000
+Received: from localhost (eugen@localhost) by hydrogen.leitl.org
+    (8.11.6/8.11.6) with ESMTP id g7BIRJ702286; Sun, 11 Aug 2002 20:27:24
+    +0200
+X-Authentication-Warning: hydrogen.leitl.org: eugen owned process doing -bs
+From: Eugen Leitl <eugen@leitl.org>
+To: Russell Turpin <deafbox@hotmail.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: Re: Forged whitelist spam
+In-Reply-To: <F199z1InqBHxQUnsq7Z00022236@hotmail.com>
+Message-Id: <Pine.LNX.4.33.0208112015090.3981-100000@hydrogen.leitl.org>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sun, 11 Aug 2002 20:27:18 +0200 (CEST)
+
+On Sun, 11 Aug 2002, Russell Turpin wrote:
+
+> If you have a rogue app on your machine, what keeps it from sniffing
+> your passphrase? This is one of the reasons I keep harping on the need
+
+As long as the OS doesn't give you a convenient GetPassPhrase() method 
+that threat model is theoretical. Worms are autonomous, and autonomous 
+worms are not that smart.
+
+However, that's the reason I mentioned crypto hardware (USB fobs, smart 
+cards, etc).
+
+> for thin, secure clients.
+
+While this is a good idea, the concept of security is holistic. It 
+involves a secure OS, secure apps, and crypto hardware. 
+ 
+> When I read email, I want to respond to email, which means, were I
+> using a digital signature, that it needs to be at the ready.
+
+I believe I mentioned users can't be bothered to enter passphrases. That's
+what tokens are there for. At some point we can expect a convenient USB
+port on the keyboard, or the video device front. Meanwhile, my Net PC 
+server sitting by the CRT with front USB ports will do.
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,160 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2022 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# isAccessorArray
+
+> Test if an array-like object supports the accessor (get/set) protocol.
+
+<section class="intro">
+
+An accessor array is defined as either an [`Array`][mdn-array], [`Typed Array`][mdn-typed-array], or an array-like [`Object`][mdn-object] (excluding `strings` and `functions`) having `get` and `set` methods for accessing array elements.
+
+</section>
+
+<!-- ./intro -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var isAccessorArray = require( '@stdlib/array/base/assert/is-accessor-array' );
+```
+
+#### isAccessorArray( value )
+
+Tests if an array-like object supports the accessor (get/set) protocol.
+
+```javascript
+var Complex128Array = require( '@stdlib/array/complex128' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
+
+// Create a new complex number array:
+var arr = new Complex128Array( 10 );
+
+// Retrieve a complex number element:
+var z = arr.get( 0 );
+// returns <Complex128>
+
+// Set a complex number element:
+arr.set( new Complex128( 1.0, 1.0 ), 0 );
+
+// ...
+
+// Check whether an array is an accessor array:
+var bool = isAccessorArray( arr );
+// returns true
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint-disable object-curly-newline -->
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var Int8Array = require( '@stdlib/array/int8' );
+var Uint8Array = require( '@stdlib/array/uint8' );
+var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
+var Int16Array = require( '@stdlib/array/int16' );
+var Uint16Array = require( '@stdlib/array/uint16' );
+var Int32Array = require( '@stdlib/array/int32' );
+var Uint32Array = require( '@stdlib/array/uint32' );
+var Float32Array = require( '@stdlib/array/float32' );
+var Float64Array = require( '@stdlib/array/float64' );
+var Complex128Array = require( '@stdlib/array/complex128' );
+var Complex64Array = require( '@stdlib/array/complex64' );
+var isAccessorArray = require( '@stdlib/array/base/assert/is-accessor-array' );
+
+var bool = isAccessorArray( new Complex128Array( 10 ) );
+// returns true
+
+bool = isAccessorArray( new Complex64Array( 10 ) );
+// returns true
+
+bool = isAccessorArray( [] );
+// returns false
+
+bool = isAccessorArray( new Float64Array( 10 ) );
+// returns false
+
+bool = isAccessorArray( new Float32Array( 10 ) );
+// returns false
+
+bool = isAccessorArray( new Int32Array( 10 ) );
+// returns false
+
+bool = isAccessorArray( new Uint32Array( 10 ) );
+// returns false
+
+bool = isAccessorArray( new Int16Array( 10 ) );
+// returns false
+
+bool = isAccessorArray( new Uint16Array( 10 ) );
+// returns false
+
+bool = isAccessorArray( new Int8Array( 10 ) );
+// returns false
+
+bool = isAccessorArray( new Uint8Array( 10 ) );
+// returns false
+
+bool = isAccessorArray( new Uint8ClampedArray( 10 ) );
+// returns false
+
+bool = isAccessorArray( { 'length': 0 } );
+// returns false
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[mdn-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
+
+[mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+<!-- </related-links> -->
+
+</section>
+
+<!-- /.links -->

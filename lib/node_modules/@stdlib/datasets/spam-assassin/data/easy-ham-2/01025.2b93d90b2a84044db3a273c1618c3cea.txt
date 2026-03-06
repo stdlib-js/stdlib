@@ -1,0 +1,81 @@
+From fork-admin@xent.com  Tue Aug 13 10:31:13 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 14FD443C47
+	for <jm@localhost>; Tue, 13 Aug 2002 05:22:35 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:22:35 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7D6Nwb19825 for <jm@jmason.org>;
+    Tue, 13 Aug 2002 07:23:59 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 1E2F02940AC; Mon, 12 Aug 2002 23:22:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from alumnus.caltech.edu (alumnus.caltech.edu [131.215.49.51])
+    by xent.com (Postfix) with ESMTP id D15B92940A8 for <fork@xent.com>;
+    Mon, 12 Aug 2002 23:21:18 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1]) by alumnus.caltech.edu
+    (8.12.3/8.12.3) with ESMTP id g7D6MKDI024833; Mon, 12 Aug 2002 23:22:21
+    -0700 (PDT)
+Subject: Re: NYTimes.com Article: Bigger Bar Code Inches Up on Retailers
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: gojomo@usa.net, fork@spamassassin.taint.org
+To: Damien Morton <damien.morton@acm.org>
+From: Rohit Khare <Rohit@KnowNow.com>
+In-Reply-To: <000101c24285$d1c8da40$6a906c42@damien>
+Message-Id: <08B81723-AE85-11D6-A682-000393A46DEA@KnowNow.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 12 Aug 2002 23:22:25 -0700
+
+Sure, the *object* of a particular head of lettuce may be unique, but 
+we're not tracking lettuce heads -- we're tracking the *idea* of a 
+lettuce head in a capitalist system, an ownership relation.
+
+Besides, in the worst case, these damn object ID's aren't very 
+compressible. Best representation of a unique head of lettuce I can 
+think of is... that very head of lettuce.
+
+Of course, an accumulator is much easier to write, since the Pauli 
+Exclusion Principle guarantees that adding a head of lettuce to a bin is 
+an _atomic operation_
+
+:-)
+
+Rohit
+
+
+
+On Monday, August 12, 2002, at 09:56  PM, Damien Morton wrote:
+
+>
+> How about a highly error corrected atomic level 3D encoding scheme that
+> relies on shape, colour and chemical make up to uniquely identify every
+> object in the universe.
+>
+> Objects uniquely identify themselves - theres no need for barcodes.
+>
+>
+> http://xent.com/mailman/listinfo/fork
+>
+---
+My permanent email address is khare@alumni.caltech.edu
+
+http://xent.com/mailman/listinfo/fork
+
+

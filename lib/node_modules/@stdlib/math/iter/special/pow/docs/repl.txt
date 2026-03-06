@@ -1,0 +1,48 @@
+
+{{alias}}( base, exponent )
+    Returns an iterator which iteratively evaluates the exponential function.
+
+    The length of the returned iterator is equal to the length of the shortest
+    provided iterator. In other words, the returned iterator ends once *one* of
+    the provided iterators ends.
+
+    If provided a numeric value as an iterator argument, the value is broadcast
+    as an infinite iterator which always returns the provided value.
+
+    If an environment supports Symbol.iterator and provided iterators are
+    iterable, the returned iterator is iterable.
+
+    Parameters
+    ----------
+    base: Object|number
+        Input iterator.
+
+    exponent: Object|number
+        Input iterator.
+
+    Returns
+    -------
+    iterator: Object
+        Iterator.
+
+    iterator.next(): Function
+        Returns an iterator protocol-compliant object containing the next
+        iterated value (if one exists) and a boolean flag indicating whether the
+        iterator is finished.
+
+    iterator.return( [value] ): Function
+        Finishes an iterator and returns a provided value.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/random/iter/uniform}}( 0.0, 2.0 );
+    > var y = {{alias:@stdlib/random/iter/uniform}}( -2.0, 2.0 );
+    > var it = {{alias}}( x, y );
+    > var r = it.next().value
+    <number>
+    > r = it.next().value
+    <number>
+
+    See Also
+    --------
+

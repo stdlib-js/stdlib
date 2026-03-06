@@ -1,0 +1,29 @@
+
+{{alias}}( ms )
+    Converts a number of milliseconds to a string duration.
+
+    Parameters
+    ----------
+    ms: integer
+        Number of milliseconds to convert.
+
+    Returns
+    -------
+    out: string
+        Duration string.
+
+    Examples
+    --------
+    > var d = {{alias}}( 1030 )
+    '1s30ms'
+    > d = {{alias}}( 3600000 )
+    '1h'
+    > d = {{alias}}( 0 )
+    '0ms'
+    > d = {{alias}}( 86400000 )
+    '1d'
+    > d = {{alias}}( 86400000 + 3600000 + 60000 + 1000 + 100 )
+    '1d1h1m1s100ms'
+
+    See Also
+    --------

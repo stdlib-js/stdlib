@@ -1,0 +1,520 @@
+Return-Path: <bounce-lgmedia-2534370@sprocket.lockergnome.com>
+Received: from lockergnome.com (sprocket.lockergnome.com [130.94.96.247])
+	by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6I7VIJ05043
+	for <qqqqqqqqqq-lg@spamassassin.taint.org>; Thu, 18 Jul 2002 08:31:19 +0100
+X-Mailer: ListManager Web Interface
+Date: Wed, 17 Jul 2002 23:39:29 -0500
+Subject: [Lockergnome Digital Media]  Endorsed Compatibility
+To: qqqqqqqqqq-lg@spamassassin.taint.org
+From: Lockergnome Digital Media <subscriptions@lockergnome.com>
+List-Unsubscribe: <mailto:leave-lgmedia-2534370N@sprocket.lockergnome.com>
+List-Subscribe: <mailto:subscribe-lgmedia@sprocket.lockergnome.com>
+List-Owner: <mailto:owner-lgmedia@sprocket.lockergnome.com>
+X-URL: <http://www.lockergnome.com/>
+X-List-Host: Lockergnome <http://www.lockergnome.com/>
+Reply-To: leave-lgmedia-2534370N@sprocket.lockergnome.com
+Sender: bounce-lgmedia-2534370@sprocket.lockergnome.com
+Message-Id: <LISTMANAGERSQL-2534370-1682279-2002.07.17-23.44.41--qqqqqqqqqq-lg#spamassassin.taint.org@sprocket.lockergnome.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+Precedence: bulk
+
+<html><head><!--
+
+
+      CLICK HERE to read this newsletter on the Web for FREE:
+
+      <a href="http://www.lockergnome.com/issues/digitalmedia/20020717.html">
+      http://www.lockergnome.com/issues/digitalmedia/20020717.html
+      </a>
+
+      To unsubscribe, please e-mail the following address:
+      leave-lgmedia-2534370N@sprocket.lockergnome.com
+
+      To resubscribe, visit our site: http://www.lockergnome.com
+
+      Don't worry about anything else below this paragraph.
+      It's for those with HTML e-mail clients. Just go to
+      the above listed web address to view this issue
+      perfectly in your web browser. Thanks again! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+ body      { BACKGROUND-IMAGE: url(http://images.lockergnome.com/images/issue/top-right.gif); scrollbar-3dlight-color: #DEE8EC; scrollbar-arrow-color: #000000; scrollbar-base-color: #007C7A; scrollbar-darkshadow-color: #507686; scrollbar-face-color: #A9C4CF; scrollbar-highlight-color: #DEE8EC; scrollbar-shadow-color: #507686 }
+ a:link    { COLOR: #0000FF; TEXT-DECORATION: underline; font-weight: normal }
+ a:visited { COLOR: #000000; TEXT-DECORATION: underline; font-weight: normal }
+ a:active  { color: #000000; TEXT-DECORATION: none }
+ a:hover   { color: #26343A; TEXT-DECORATION: none }
+ p.title   { BACKGROUND: #A9C4CF; BORDER-BOTTOM: #507686 4px solid; BORDER-LEFT: #DEE8EC 4px solid; BORDER-RIGHT: #507686 4px solid; BORDER-TOP: #DEE8EC 4px solid; COLOR: #26343A; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, Arial; FONT-SIZE: 14pt; FONT-WEIGHT: normal }
+ p.news    { BACKGROUND: #A9C4CF; BORDER-BOTTOM: #507686 4px solid; BORDER-LEFT: #DEE8EC 4px solid; BORDER-RIGHT: #507686 4px solid; BORDER-TOP: #DEE8EC 4px solid; COLOR: #26343A; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, Arial; FONT-SIZE: 18pt; FONT-WEIGHT: normal }
+ p.sidebar { BACKGROUND: #A9C4CF; BORDER-BOTTOM: #507686 3px solid; BORDER-LEFT: #DEE8EC 3px solid; BORDER-RIGHT: #507686 3px solid; BORDER-TOP: #DEE8EC 3px solid; COLOR: #26343A; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, Arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-ALIGN: center }
+ .url      { font-size: 8pt; font-family: Verdana, Tahoma, Arial }
+-->
+</style><title>20020717 Lockergnome Digital Media</title></head>
+
+<body     MARGINHEIGHT="0" TOPMARGIN="0" BOTTOMMARGIN="0" bgcolor="#FFFFFF"     style="BACKGROUND-POSITION: right top; BACKGROUND-REPEAT: no-repeat" MARGINWIDTH="0" LEFTMARGIN="0" rightmargin="0" text="#26343A" alink="#008080" link="#0000FF" vlink="#26343A">
+
+<!-- background="http://images.lockergnome.com/images/bg.head.gray.gif" bgcolor="#C0C0C0" left width="610" background="http://images.lockergnome.com/images/dn.back.top-r1.gif" -->
+
+ <table width="100%" border="0" cellspacing="0" cellpadding="7" align="CENTER" valign="MIDDLE">
+  <tr><td background="http://images.lockergnome.com/images/issue/top-left.gif" nowrap valign="middle" align="center" colspan="2">
+
+ <!-- TOP BANNER AD -->
+ <!--#include virtual="/include/banner.txt" -->
+ <center>
+ <a href="http://www.lockergnome.com/"><img src="http://images.lockergnome.com/images/gnomedaily.gif" width="50" height="60" hspace="5" alt="Lockergnome" border="0"></a>
+<a target="_blank" href="http://www.gnomedex.com/"><img src="http://www.lockergnome.com/images/ads/gnomedex2002banner.gif" width="468" height="60" alt="See You at Gnomedex 2002!" border="0"></a>
+ <br>
+ </center>
+ <!-- TOP BANNER AD -->
+
+ </td></tr>
+
+  <tr><td valign="top" bgcolor="#FFFFFF"><font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+
+<!-- NEWS -->
+<table bgcolor="#A9C4CF" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="news">
+&nbsp;07.17.2002 MediaREPORT</p></td></tr></table><p>
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>GET WINDOWS XP TIPS:</b> Months after the release of Windows XP Professional and Home editions, people are still learning the nuances of Microsoft's newest operating system. Whether you've been using it for a while or are planning to upgrade to the new OS soon, this ebook is right up your alley. 
+<a href="   http://store.eSellerate.net/s.asp?s=STR550611850&Cmd=BUY&SKURefnum=SKU3000768669&AFFIDC=AFF669529939">GET YOUR COPY</a> 
+of Lockergnome's Top 50 Windows XP tips now!    
+</font></td></tr></table></p>
+This is of course belated, as I'm sending it on the 18th, but Happy Birthday to Lori!
+<p>
+One thing about MacWorld should excite mp3 junkies -- the iPod just got 
+even bigger, with a 20GB version and Apple officially endorses Windows 
+compatibility. Actually, the good news is, the 5GB and 10GB versions 
+came down in price. Hearing that the only "officially" functional 
+Windows player is MusicMatch Jukebox Plus is a serious downer, in my 
+opinion. Sure, MusicMatch is a decent player, but with plenty of great 
+free players on the market, why do we want to purchase a software 
+player in addition to the $299+ hardware unit?
+<p>
+At first glance, it looks like Apple is only paying lipservice to true 
+Windows compatibility. I've seen no mention of any additional 
+functionality, besides song management via one media playing utility. Mediafour's 
+<a href="http://www.mediafour.com/products/xplay/">XPlay</a> remains a 
+better option, in my opinion. In addition to allowing you to use an 
+iPod with almost any media player made for Windows, it assists with 
+contact management, via Outlook vCards, in addition to making the 
+iPod an additional drive on your PC. At a mere $10 more than MusicMatch 
+Jukebox Plus, XPlay blows the doors off Apple's officially endorsed player.
+<p>
+Lori and I made the five and a half hour drive to St. Louis for this year's 
+<a href="http://www.sic.org">SIC</a> without a hitch. I just missed a 
+face-to-face introduction to John Lal, of 
+<a href="http://www.winferno.com">winferno.com</a>, although I'm sure 
+we'll meet tomorrow. John's the guy behind the 
+<a href="http://www.winferno.com/p/lg4/">free copy of Research-Desk</a> 
+for all Gnomedex attendees. Shortly after arrival, I enjoyed dinner with 
+the <a href="http://www.esellerate.net">eSellerate</a> gang, with a 
+discussion about <a href="http://www.gnometomes.com">GnomeTomes</a> and 
+what the future holds.
+<p>
+Every time I travel, I'm reminded just how slow dialup really is. Fortunately, my 
+<a href="http://www.crosspaths.net">Crosspaths.net</a> connection allows me 
+to send mail via my Lockergnome account, unlike most of the national dialup 
+services. Crosspaths is technically an Iowa ISP, although the have points of 
+presence in almost every major city in the country. If you're a dialup user, 
+you may want to take a look at their offerings, regardless of where you live. Lori 
+has used their DSL service for two years now, and they've been nothing short of 
+outstanding in dealing with customer service queries. 
+
+
+
+
+<p align="right"><font style="font-size: 22pt" face="Jake Ludington, Chris Pirillo, Comic Sans MS" size="5">Jake Ludington&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+
+
+<!-- PRODUCER -->
+<p><br><table bgcolor="#A9C4CF" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomePRODUCER</p></td></tr></table><p>
+<b>PNG Files Do Not Show Transparency in Internet Explorer (Q294714)</b><p>
+
+<a class="url" href="http://support.microsoft.com/default.aspx?scid=kb;en-us;Q294714">http://support.microsoft.com/default.aspx?scid=kb;en-us;Q294714</a><p>
+
+This originally appeared in last weeks Webmaster Weekly, but due to its graphical nature, its worth inclusion here as well:
+<p>
+"If you browse to a Web page that contains an image that has a transparent 
+background in Portable Network Graphics (PNG) format, the image background 
+may appear to be gray rather than transparent."
+
+Fortunately, Microsoft explains a solution for this problem. Personally, I 
+haven't encountered this PNG display error, but for those of you 
+simplementing PNGs on your sites, you'll want to review the solution.
+
+
+
+
+
+
+
+<!-- FEATURE -->
+<p><br><table bgcolor="#A9C4CF" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeFEATURE</p></td></tr></table><p>
+<b>Glitschka.com</b><p>
+
+<a class="url" href="http://www.glitschka.com">http://www.glitschka.com</a><p>
+
+Flash animations,  downloadable icons, artistic doodles, and details about 
+the artist himself are available from this site. You're guaranteed to find 
+something entertaining here, and if you need a logo designed, Von Robert 
+Glitschka might even take you on as a client. The portfolio is extensive, 
+including stock images and even some icons by the artist's seven year old 
+daughter. A must read is the anatomy of an illustration section, which lays 
+down artistic opinion, straight from Glitschka's mouth on how to make a 
+funny creation. The entertainment is accessible accross both Windows and Mac 
+platforms, with icons available in both Mac and PC versions.
+ 
+
+ 
+
+
+
+
+
+
+<!-- SKIN -->
+<p><br><table bgcolor="#A9C4CF" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeSKIN</p></td></tr></table><p>
+
+<!-- http://www.deskmod.com/backend/deskmod/ln.php -->
+
+<!-- Begin Featured Skin -->
+<span class="author"><b>Skin 2 for <a title="Winamp 3.x  Website" target=_blank HREF="http://www.deskmod.com/?show=showcat&cat_name=winamp3" >Winamp 3.x</a></b> by nnic</span><br>
+<img height=6 src="images/blank.gif" width=1>
+<font size="1">Posted on  7/17/02 10:43PM  -- &nbsp;&nbsp; </font>
+<p align="center">
+<center><img BORDER=0 SRC="http://www.deskmod.com/backend/deskmod/lncache/12808.gif" ALT="Winamp 3.x by nnic"></center>
+<p></p><p align="center">
+<font size="2">
+[<a title="Download Skin 2" HREF="http://www.deskmod.com/?download=12808" >Download</a>]
+
+&nbsp;--&nbsp;[<a title="View Large Image"  target=_blank HREF="http://www.deskmod.com/?state=view&skin_id=12808" >Zoom</a>]
+&nbsp;--&nbsp;[<a title="Visit DeskMod" target=_blank HREF="http://www.deskmod.com" >Visit DeskMod</a>]
+</font></p><br>
+<!-- End Featured Skin -->
+
+
+
+<p class="url" align="right">Get your copy of <a href=" https://store.stardock.com/AddProduct.asp?PRODUCT_ID=ESD-SDS-W051&REFERER=lockergnome">SkinStudio XP</a>
+
+<!-- AUDIO -->
+<p><br><table bgcolor="#A9C4CF" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeAUDIO</p></td></tr></table><p>
+<b>Fight Cloud</b><p>
+
+<a class="url" href="http://www.fightcloud.com">http://www.fightcloud.com</a><p>
+  
+Unknown artists across a variety of genres offer free mp3 downloads of 
+selected tracks, with an option to purchase songs on CD for the price 
+of shipping and handling. All CDs are professionally mastered works, 
+so you're getting label quality releases, without the jacked-up retail 
+price tag. The mp3s let you decide if the album is worth you $4.95. 
+The only thing I find odd about this site is their proclamation of 
+paying artists 50% of distribution profits, which I have to assume is 
+50% of zero, since the CDs are free. The artist selection contains 
+some solid releases by talented artists, regardless. 
+ 
+
+
+
+
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td><font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<A HREF="http://www.lockergnome.com/lgstore/sunshop/index.php?action=item&id=68"><img src="http://www.lockergnome.com/lgstore/sunshop/images/productpics/computerbasics.jpg" alt="TechTV's Computer Basics" height="109" width="63" border="2" hspace="10" align="left"></a>
+<b>CHRIS TEACHES THE BASICS:</b> If you've got friends or family who want to learn more about their PC, from a guy who makes things nice and easy, check out the VHS release of <a href="http://www.lockergnome.com/lgstore/sunshop/index.php?action=item&id=68">Computer Basics</a> in the GnomeStore. Chris teams with TechTV cohort, Kate Botello, to lead novices on a journey through their computer. From basic interactions, to installing apps, to using the Internet and e-mail, Chris and Kate have all the basics covered. Help out a friend and  <a href="http://www.lockergnome.com/lgstore/sunshop/index.php?action=item&id=68">get them a copy</a> today.    
+</font></td></tr></table></p>
+
+<!-- PLUGIN -->
+<p><br><table bgcolor="#A9C4CF" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomePLUGIN</p></td></tr></table><p>
+<b>BBE Sonic Maximizer [3.22MB] W9X/W2K/XP $129</b><p>
+
+<a class="url" href="http://www.bbesound.com/products/maxim/directxplugin.asp">http://www.bbesound.com/products/maxim/directxplugin.asp</a><p>
+
+From home recordings to downloaded mp3s, this DirectX plug-in brings back 
+the clarity to your audio files. Bring back the live feel that gets lost 
+in the recording process, add depth to bass lines, and bring vocals to 
+the front of your audio mix where they belong. Compensate for frequency 
+phase shifting, giving your audio a kick in the pants. This is one post 
+production tool you need in your digital arsenal. Also available as a VST 
+for Mac OS.
+
+
+
+<!-- DVD -->
+<p><br><table bgcolor="#A9C4CF" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeDVD</p></td></tr></table><p>
+
+<table align="left" cellpadding="0" cellspacing="8" border="0" valign="top"><tr><td align="center">
+<a href="http://lockergnome.pricegrabber.com/search_getprod.php/masterid=102360706"><img alt="DVD" border="0" width="94" height="140" src="http://images.lockergnome.com/images/dvd/whosafraidofvirginiawoolf.jpg"></a><br>
+<font style="font-size: 7pt" size="1" color="red" face="Verdana, Tahoma, Arial">Click for Details</font>
+</td></tr></table>
+<b>Who's Afraid of Virginia Woolf?</b> (NR) 1966<br>
+Adapted Play - 131min<br>
+Reviewer's Tilt (10)<p>
+
+<img border="0" src="http://images.lockergnome.com/images/dvdgnomefull.gif"><img border="0" src="http://images.lockergnome.com/images/dvdgnomefull.gif"><img border="0" src="http://images.lockergnome.com/images/dvdgnomefull.gif"><img border="0" src="http://images.lockergnome.com/images/dvdgnomefull.gif"><img border="0" src="http://images.lockergnome.com/images/dvdgnomefull.gif">
+<p>
+ 
+
+
+
+Before directing Catch-22 and The Graduate, Mike Nichols made his big screen debut directing this adroit adaptation of Edward Albee's play "Who's afraid of Virginia Woolf?"  Nominated for thirteen, and winner of five, Academy Awards, this dark tale centers on history professor George (Richard Burton), and his wife Martha (Elizabeth Taylor), daughter of the college president.  At first George and Martha appear to be the average Ozzie and Harriet, an aging, well-adjusted, educated couple, comfortable with their lives and their love.  George and Martha quickly shatter this illusion, as they return from a faculty cocktail party, to exchange a caustic barrage of verbal barbs.  Just as quickly, however, the couple turns witty and civil when the young new biology professor Nick (George Segal) and his shy, but pretty wife Honey (Sandy Dennis) stop by for a nightcap. Unfortunately for Nick and Honey, the sardonic exchange does not disappear, it merely changed guise.  Soon Nick and Honey find themselves helpless pawns in the elder couple's sick-witted exchange.  Throughout the remainder of the movie, George and Martha dance their finely choreographed, oft-rehearsed dance of despise. The two alternate the lead, alternately dishing out and enabling the abuse, but they never miss a step.  Thankfully, writer Albee's sublime play translates to the big screen almost unadulterated. Taylor and Burton deliver his lines with great force and impeccable timing.  At one point George proposes "Now that we're through with Humiliate the Host...and we don't want to play Hump the Hostess yet...how about a little round of Get the Guests?"  This provides some idea of the precarious twist of uncomfortable wit that drives the action from start to finish. Albee's stellar writing notwithstanding, the real star of this film is Taylor and Burton's alchemy, converting Albee's words into cinematic gold.  Ok, I will grant you that playing a pair of aging, drunk, selfish lovers may not have been much of a stretch.  Both actors, however, deliver their lines with the chilling reality of a serial killer describing his most gratifying slaying.  Often unpleasant and disturbing, this film never allows you to relax or look away.   Simultaneously seamlessly smooth, and ingeniously rocky this is not a "feel good" movie. "Who's Afraid of Virginia Woolf?" is, however, a memorable film that will stick with you for years to come.
+
+
+
+ 
+
+<ul>
+<li>Region 1 Encoding (US and Canada only)
+<li>Format: Black and White, Widescreen Anamorphic, Closed Captioned
+<li>Sound: (Dolby Digital 5.1)
+<li>Production Notes
+</ul>
+
+
+<p class="url" align="right">Review by <a href="mailto:brett@lockergnome.com?subject=DVD Review Feedback">Brett Trout</a>
+
+
+
+
+<!-- WALLPAPER -->
+<p><br><table bgcolor="#A9C4CF" border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td><p class="title">&nbsp;GnomeWALLPAPER</p></td></tr></table><p>
+
+<!-- http://www.deviantart.com/output/lockergnome_newsletter-skin.html -->
+
+<!-- Begin Featured Skin -->
+<span class="author"><b>purple flower for <a title="WallPapers Website" target=_blank HREF="http://www.wincustomize.com" >WallPapers</a></b> by tatosh</span><br>
+<img height=6 src="/images/blank.gif" width=1>
+<font size="1">Posted on 7/17/2002 12:35:01 AM  -- &nbsp;&nbsp; </font>
+<p align="center"><center>
+<img BORDER=0 SRC="http://www.wincustomize.com/library/accounts/tatosh/wallpapers/tpurpleflower.jpg" ALT="purple flower by tatosh" HEIGHT=240 WIDTH=320></center>
+<p></p><p align="center">
+<font size="2">
+
+[<a title="Download purple flower" HREF="http://www.wincustomize.com/skins.asp?flags=skinid=3984|library=8|file=purpleflower.zip" >Download</a>]
+&nbsp;--&nbsp;[<a title="View Large Image"  target=_blank HREF="http://www.wincustomize.com/library/accounts/tatosh/wallpapers/purpleflower.jpg" >Zoom</a>]
+&nbsp;--&nbsp;[<a title="Visit WinCustomize" target=_blank HREF="http://www.wincustomize.com/skins.asp?library=8&SkinID=3984" >Visit WinCustomize</a>]
+</font></p><br>
+<!-- End Featured Skin -->
+
+
+<!-- ADMINISTRIVIA -->
+<p><br><table cellpadding="0" cellspacing="0" border="0"><tr><td><p class="sidebar">
+<table bgcolor="#A9C4CF" cellpadding="7" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Helvetica, Arial" size="1">
+<a href="http://www.lockergnome.com/issues/digitalmedia/20020717.html">http://www.lockergnome.com/issues/digitalmedia/20020717.html</a><br>
+<p>Your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - To unsubscribe or change your delivery address, please visit the <A HREF="http://www.lockergnome.com/changesub.html">subscription management</A> page. For further information, please refer to the GnomeCREDITS in the sidebar.
+</font></td></tr></table>
+</p></td></tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--#include virtual="/include/subscription2.txt" -->
+
+</font>
+</td>
+
+<td background="http://images.lockergnome.com/images/issue/sidebar.gif" VALIGN="top" align="left" width="145"><font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#B6EB8F"><tr><td><p class="sidebar">LOCKERGNOME</p></td></tr></table><br>
+&nbsp;<A HREF="http://www.gnomedex.com/">Geekathon 2002</A>
+<p>
+&nbsp;<a href="http://windowsdaily.lockergnome.com/">Latest Windows Daily</a><br>
+&nbsp;<a href="http://digitalmedia.lockergnome.com/">Latest Digital Media</a><br>
+&nbsp;<a href="http://techspecialist.lockergnome.com/">Latest Tech Specialist</a><br>
+&nbsp;<a href="http://penguinshell.lockergnome.com/">Latest Penguin Shell</a><br>
+&nbsp;<a href="http://applecore.lockergnome.com/">Latest Apple Core</a><br>
+&nbsp;<a href="http://webmasterweekly.lockergnome.com/">Latest Web Weekly</a><br>
+&nbsp;<a href="http://updates.lockergnome.com/">Latest Bits &amp; Bytes</a><br>
+&nbsp;<A HREF="http://www.gnomeradio.com/">Latest Audio Show</A><BR>
+<p>
+&nbsp;<A HREF="http://lockergnome.pricegrabber.com/">The GnomeSHOPPER</A>
+<p>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000628.html">Microsoft Office Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000627.html">PC Productivity Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000626.html">Cool Internet Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000625.html">Windows 2000 Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000623.html">Windows XP Tips</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001106.html">Top 50 Fun Sites</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001104.html">Must-Know Tech Terms</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001105.html">Top 50 Useful Sites</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001099.html">Top 75 Tech Sites</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001629.html">Top 50 PenguinCORE</a><br>
+&nbsp;<a target="_blank" HREF="http://www.gnometomes.com/tome/001630.html">Top 50 PenguinTWEAKS</a><br>
+<p>
+
+&nbsp;<a href="http://www.lockergnome.com/recommend.html">Recommend Us!</a><br>
+&nbsp;<a href="http://www.lockergnome.com/advertise.html">Advertise With Us</a><br>
+&nbsp;<A HREF="http://www.lockergnome.com/jobs.html">High-Tech Job Search</A><br>
+&nbsp;<a href="http://www.lockergnome.com/chat.html">Chat With Gnomies</a><br>
+&nbsp;<a href="http://www.lockergnome.com/webcam.html">Watch The Webcams</a><br>
+&nbsp;<a href="https://www.sandhills.com/secure/smartcomputing/cpufreetrial3.asp?source=cpu491bonus">Computer Power User</a><br>
+<p>
+&nbsp;<A href="http://www.lockergnome.com/submit.html">Submit Your Opinion</a><br>
+&nbsp;<a href="http://www.lockergnome.com/issues/">Read Past Issues</a><br>
+&nbsp;<a href="http://www.xteq.com/">Download X-Setup</a><br>
+&nbsp;<a href="http://www.lockergnome.com/about.html">About Lockergnome</a><br>
+&nbsp;<a href="http://www.lockergnome.com/privacy.html">Our Privacy Policy</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html">View More Options</a><br>
+&nbsp;<A HREF="http://www.amazon.com/exec/obidos/ASIN/0966103254/ref=ase_lockergnome/">Get Chris's Book</A><br>
+<p>
+&nbsp;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#101;&#100;&#98;&#97;&#99;&#107;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Site Feedback">General Feedback</a><br>
+&nbsp;<a href="mailto:jake@lockergnome.com?subject=Lockergnome Digital Media Comment">E-mail the Editor</a><br>
+&nbsp;<A HREF="http://jake.iowageek.com/">Jake's Blog</A><BR>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/windowsdaily.xml">Our XML / RSS Feed</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html#syndicate">Syndicate Our Tips</a><br>
+&nbsp;<a href="http://www.lockergnome.com/images/lockerlink.gif">Link To Lockergnome</a><br>
+<p align="center"><a href="http://www.lockergnome.com/windowsdaily.xml"><img src="http://www.lockergnome.com/images/xml.gif" alt="Syndicate Today's Content" height="14" width="36" border="0"></a>
+
+
+<p><br>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<table border="0"><tr><td><a href="http://www.lockergnome.com/webcam.html">
+<img width="125" height="94" alt="Lockergnome Webcam Image" src="http://www.lockergnome.com/images/webcam/jakecam.jpg"></a></td></tr>
+<tr><td align="center"><font size="1" face="Tahoma,Arial">CLICK HERE TO ZOOM</font></td></tr></table>
+</font>
+
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%" 
+bgcolor="#FFEEDD"><tr><td><p class="sidebar">GNOMESPECIALS</p></td></tr></table><br>
+&nbsp;<a target="_blank" title="Share your team/project contacts, calendars, tasks, etc. in MS Oulook 2002, without a server!" href="http://outlook.4team.biz/?fr=gnome">Manage Your Workgroup</a><br>
+&nbsp;<a target="_blank" title="Software for filling in paper forms on your computer instead of a typewriter" href="http://www.colorpilot.com/typewriter.html">Form Pilot</a><br>
+&nbsp;<a target="_blank" title="It's both fun and functional! Hear the time, set alarms, style your taskbar clock, sync your PC time, and more. Try Say the Time free for
+30 days." href="http://www.provenio.ws/saythetime/">Say the Time 5.0</a><br>
+&nbsp;<a target="_blank" title="Convert MP3, WAV, AVI, JPG, GIF, and PNG to the SWF format for no buffer streaming" href="http://www.gfx2swf.com/gnome-special/">Boomer - Stream Now</a><br>
+&nbsp;<a target="_blank" title="Creating Web/CD catalogs with HyperPublish is really a snap! Not just an editor but a quick, powerful all-in-one environment for creating stunning catalogs, CDs and Web sites!" href="http://www.hyperpublish.com/create_a_catalog_000018.htm">Create Web/CD catalog</a><br>
+&nbsp;<a target="_blank" title="Create your Web site in minutes with this easy-to-use visual tool!" href="http://www.easywebeditor.com/create_web_page_000004.htm">Easy Web Editor</a><br>
+&nbsp;<a target="_blank" title="Capture TEXT seen in folder trees, file lists, database reports, dialog boxes, menus, status lines, including areas that you could not highlight with your mouse. (Chris cannot live without it!;)" href="http://www.structurise.com/kleptomania">Kleptomania</a><br>
+&nbsp;<a target="_blank" title="Organize all your mp3 collection in seconds! You can rename mp3s quickly and easily, write tag information in batch, from file names or import it from cddb. Get your free trial now!" href="http://www.softpointer.com/tr_2.htm">Tag&amp;Rename</a><br>
+&nbsp;<a target="_blank" title="You will enjoy countless hours of fun with Pretty Good Solitaire!  Play 500 solitaire card games, from classic games like Klondike, FreeCell, and Spider, to original games found nowhere else.  Enjoy lush graphics, large easy-to-read cards, statistics, and quests, a unique new way to play for points." href="http://www.goodsol.com/lockergnome.html">Pretty Good Solitaire</a><br>
+&nbsp;<a target="_blank" title="Choosing color combinations for the web is a careful balance between a scheme designed to draw attention; while being respectful of established color-harmony principles.  ColorCombo's four panels scroll, allowing side-by-side color comparisons.  Also text on background checker, 4096 color array, + more. FREE." href="http://www.colorcombo.com">Visualize Color Combos</a><br>
+&nbsp;<a target="_blank" title="FirstStop WebSearch(TM) Deluxe Edition, a FREE trial version of this incredibly fast, award winning, customizable multi-search engine that has been described as the FASTEST no-nonsense meta search for the net. Now, Gnomies can save 50% when they register a copy of FirstStop WebSearch!" href="http://www.Firststopwebsearch.com/lockergnomeoffer.html">FirstStop WebSearch</a><br>
+&nbsp;<a target="_blank" title="Ecobuilder is the ultimate web application that allows you to get your portal, online community, intranet, extranet or any web site project online by saving time, money and manpower. Gnomies receive $400 off the cost of the software." href="http://www.ecobuilder.com/lockergnome.cfm">Ecobuilder</a><br>
+&nbsp;<a target="_blank" title="Software for organizing your personal book collection. Add books quickly - no typing required! Group, filter, sort and print your database. Click for free trial version." href="http://www.collectorz.com/book?from=lockergnome">Book Collector</a><br>
+<p align="center"><a href="http://www.lockergnome.com/special.html"><B>Get Listed Here</B></a></p>
+Question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother?  
+
+
+<!--#include virtual="/include/subscribeside.txt" -->
+
+
+
+
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">GNOMEMUSIC</p></td></tr></table><br>
+<table border="0"><tr><td><a href="http://www.netmusiccountdown.com">
+<img border="0" alt="Net Music Countdown" src="http://images.lockergnome.com/images/nmclogo.gif"></a></td></tr>
+</table><p><br>
+<a href="http://netmusiccountdown.com/news/article.php?id=1y22co"
+target=_blank><b>Coldplay Takes a Bigger Bite</b></a>
+<br>
+If you miss Coldplay's quick little club tour this August, don't worry, you’ll get a second chance to see them in...
+<br>
+<br>
+<a href="http://netmusiccountdown.com/news/article.php?id=1d42da"
+target=_blank><b>Dave Matthews Gives Us 'Busted Stuff'</b></a>
+<br>
+The Dave Matthews Band is breaking things up with their new album Busted Stuff; it hit stores shelves yesterday. The...
+<br>
+<br>
+<a href="http://netmusiccountdown.com/news/article.php?id=1r28we"
+target=_blank><b>Strokes Leave Weezer Hanging</b></a>
+<br>
+Strokes fans who are heading to the Weezer tour to catch the Strokes opening will be disappointed. The Strokes were...
+<br>
+<br>
+<a href="http://netmusiccountdown.com/news/article.php?id=1z23ja"
+target=_blank><b>Jaz-O Sez Jay-Z is a Fraud</b></a>
+<br>
+The rap between rappers Jaz-O and Jay-Z is nothin but diss...otherwise known as a falling out. Jaz-O was Jay-Z's...
+<br>
+<br>
+<a href="http://netmusiccountdown.com/news/article.php?id=1h24aa"
+target=_blank><b>Booze, Drugs in Aaliyah's Pilot</b></a>
+<br>
+The pilot who was at the controls of a small plane that crashed and killed singer and actress Aaliyah had cocaine...
+<br>
+<br>
+<a href="http://netmusiccountdown.com/news/article.php?id=1w27ti"
+target=_blank><b>McGraw's Uncle Charged With Murder</b></a>
+<br>
+Country singer Tim McGraw's uncle has been charged with shooting and killing a neighbor in Vallejo, California. One... 
+
+
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFEEDD"><tr><td><p class="sidebar">GNOMECREDITS</p></td></tr></table><br>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+&copy;2002, Lockergnome LLC. ISSN: 1095-3965. All Rights Reserved. Please read our <a href="http://www.lockergnome.com/terms.html">Terms of Service</a>. Our Web site is hosted by <a href="http://www.digitaldaze.com/?lg">DigitalDaze</a>. Domain registered at <a href="http://www.dnscentral.com/?lg">DNS Central</a>.
+
+
+<!-- FUNNY COMMENT    -->
+
+
+
+</font>
+
+<p>&nbsp;<p>&nbsp;Search Past Issues:<br>
+<img src="http://images.lockergnome.com/images/blank.gif" width="135" height="3"><table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+ <tr><td align="left" valign="middle"><p class="sidebar">
+ <table border="0" cellspacing="5" cellpadding="0"><tr>
+ <form method="post" action="http://www.lockergnome.com/cgi-bin/htsearch">
+ <input type="hidden" name="method" value="and">
+ <input type="hidden" name="format" value="long">
+ <input type="hidden" name="sort" value="score">
+ <input type="hidden" name="config" value="htdig">
+ <input type="hidden" name="restrict" value="">
+ <input type="hidden" name="exclude" value="">
+ <td><input type="text" size="9" name="words" value="">
+ <input type="submit" value="Go"><BR>
+  </td></form></tr></table>
+ </td></tr>
+</table>
+</p>
+
+<p>&nbsp;<p>
+<center><a href="http://www.gnomedex.com/"><img src="http://www.lockergnome.com/images/ads/gnomedex_vert.gif" width="125" height="400" border="0"></a></center>
+
+</font></td></tr></table>
+</body></html>
+
+

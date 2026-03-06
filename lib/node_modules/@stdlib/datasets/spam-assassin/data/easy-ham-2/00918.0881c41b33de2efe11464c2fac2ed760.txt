@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Mon Jul 29 11:29:14 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2645E44166
+	for <jm@localhost>; Mon, 29 Jul 2002 06:25:37 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 29 Jul 2002 11:25:37 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6RLb3i28651 for <jm@jmason.org>;
+    Sat, 27 Jul 2002 22:37:03 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 5FFE92940A7; Sat, 27 Jul 2002 14:35:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from usilms55.ca.com (mail3.cai.com [141.202.248.42]) by
+    xent.com (Postfix) with ESMTP id 4252D29409E for <fork@xent.com>;
+    Sat, 27 Jul 2002 14:34:35 -0700 (PDT)
+Received: by usilms55.ca.com with Internet Mail Service (5.5.2655.55) id
+    <PQ1JGDZY>; Sat, 27 Jul 2002 17:15:30 -0400
+Message-Id: <88FC3D8B38457B44AFCCC959C84C108C0675F38A@USILMS07.ca.com>
+From: "Meltsner, Kenneth" <MELKE01@ca.com>
+To: CDale <cdale@techmonkeys.net>, Tom <tomwhore@slack.net>
+Cc: fork@spamassassin.taint.org, vox@mindvox.com
+Subject: RE: And Away We go
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2655.55)
+Content-Type: text/plain; charset="iso-8859-1"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 27 Jul 2002 17:15:30 -0400
+
+Nope, a true geek would have a Blackberry so he could give us updates *from* the hospital.
+
+Ken
+
+> -----Original Message-----
+> From: CDale [mailto:cdale@techmonkeys.net]
+> Sent: Saturday, July 27, 2002 6:22 AM
+> 
+> A true geek.  Runs to the puter to post before taking a 
+> laboring wife to 
+> the hospital.  I'd kill you.  LOL
+> Grats, Daddy-o!
+> C
+> 
+> On Sat, 27 Jul 2002, Tom wrote:
+> 
+> > 
+> > Off we go to the hospital
+> > 
+> > Benjamin Wallace Higgins is on his way.
+> > 
+> > -tom
+http://xent.com/mailman/listinfo/fork
+
+

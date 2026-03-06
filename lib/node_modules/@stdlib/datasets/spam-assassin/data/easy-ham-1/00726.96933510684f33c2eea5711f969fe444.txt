@@ -1,0 +1,117 @@
+From fork-admin@xent.com  Mon Sep 23 22:47:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2E4A016F03
+	for <jm@localhost>; Mon, 23 Sep 2002 22:47:40 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 23 Sep 2002 22:47:40 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8NKivC01922 for <jm@jmason.org>;
+    Mon, 23 Sep 2002 21:44:57 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id E027B29418F; Mon, 23 Sep 2002 13:41:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mail.evergo.net (unknown [206.191.151.2]) by xent.com
+    (Postfix) with SMTP id 798BE29409A for <fork@xent.com>; Mon,
+    23 Sep 2002 13:40:16 -0700 (PDT)
+Received: (qmail 7877 invoked from network); 23 Sep 2002 20:43:55 -0000
+Received: from dsl.206.191.151.102.evergo.net (HELO JMHALL)
+    (206.191.151.102) by mail.evergo.net with SMTP; 23 Sep 2002 20:43:55 -0000
+Reply-To: <johnhall@evergo.net>
+From: "John Hall" <johnhall@evergo.net>
+To: "FoRK" <fork@spamassassin.taint.org>
+Subject: RE: Goodbye Global Warming
+Message-Id: <000201c26341$ef5f75f0$0200a8c0@JMHALL>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+In-Reply-To: <AMEPKEBLDJJCCDEJHAMIKEAFFIAA.ejw@cse.ucsc.edu>
+Importance: Normal
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 23 Sep 2002 13:43:55 -0700
+
+
+For anyone to fully bury global warming, they would have to bury the
+Greens.  A Green once said that if the Spotted Owl hadn't existed they
+would have had to invent it.  So it is with global warming.  Their
+fundamental opposition isn't to a warmer earth, it is to industrial
+civilization.
+
+The fact that the sattelites didn't match what the global warming
+theorists said should be there is old news.  The news here is that the
+temperature measures via sattelite have gotten even better and they have
+been validated with a different means of measurement.
+
+Rather than have to defend CO2 concentrations as not causing global
+warming, people who believe in CO2 need a good explanation of the
+"Medieval Warm Period".  Said period was warmer than what we have now,
+and it obvioiusly wasn't caused by CO2.
+
+In point of fact the predicted global warming due to CO2 is not caused
+DIRECTLY by CO2.  CO2 doesn't trap that much heat.  Water vapor does,
+and if you can get more water vapor in the air due to CO2 then you have
+your warming theory.
+
+Yet it would seem that the very stability of the earth's climate over
+long periods argues not for an unstable system with positive feedback
+loops but one where negative feedback loops predominate.
+
+More water vapor can increase temperatuers, but that also leads to more
+clouds.  Clouds both trap heat and reflect it, so it depends a great
+deal on how the cloud formation shakes out.  Most climate models admit
+they do clouds very poorly.
+
+A good link is:
+http://www.techcentralstation.be/2051/wrapper.jsp?PID=2051-100&CID=2051-
+060302A
+
+
+> -----Original Message-----
+> From: fork-admin@xent.com [mailto:fork-admin@xent.com] On Behalf Of
+Jim
+> Whitehead
+> Sent: Monday, September 23, 2002 12:23 PM
+> To: Robert Harley; fork@spamassassin.taint.org
+> Subject: RE: Goodbye Global Warming
+> 
+> > Gary Lawrence Murphy wrote:
+> > >and say hello to the cool:  Oooo ... /this/ is going to cause
+> > some stir ...
+> >
+> > Of course not.  Some people just don't want to be confused by the
+facts.
+> 
+> For anyone to fully bury global warming, they would need to explain
+why
+> the
+> dramatic increase in CO2 concentrations are not increasing the global
+> temperature. They would also need to explain why, worldwide, glaciers
+are
+> melting faster than they have previously in the historical record.
+That
+> is,
+> people need more than refutations, they need a compelling alternate
+> explanation (hint: climate variability doesn't cover all the bases).
+> 
+> - Jim
+> 
+
+
+

@@ -1,0 +1,425 @@
+From carment3y@verizonmail.com  Sun Aug  5 22:22:13 2001
+Return-Path: <carment3y@verizonmail.com>
+Delivered-To: yyyy@mail.netnoteinc.com
+Received: from lnx1.binotto.com.br (unknown [200.193.54.44]) by
+    mail.netnoteinc.com (Postfix) with ESMTP id E77FF11410E for
+    <jm@mail.netnoteinc.com>; Sun,  5 Aug 2001 21:22:10 +0000 (Eire)
+Received: from 01-023.044.popsite.net ([64.24.247.23] helo=host) by
+    lnx1.binotto.com.br with esmtp (Exim 3.12 #1 (Debian)) id 15TVLd-0002dt-00;
+    Sun, 05 Aug 2001 18:22:10 -0300
+From: "Brad Shelton" <carment3y@verizonmail.com>
+Subject: All Your Life #4C55
+To: achieve@netnoteinc.com
+X-Mailer: Microsoft Outlook Express 4.72.1712.3
+X-Mimeole: Produced By Microsoft MimeOLE VÐßD.1712.3
+MIME-Version: 1.0
+Date: Sun, 05 Aug 2001 17:17:24 -0500
+Content-Transfer-Encoding: 7bit
+Message-Id: <E15TVLd-0002dt-00@lnx1.binotto.com.br>
+
+
+This is a MIME Message
+
+------=_NextPart_000_007F_01BDF6C7.FABAC1B0
+Content-Type: multipart/alternative; boundary="----=_NextPart_001_0080_01BDF6C7.FABAC1B0"
+
+------=_NextPart_001_0080_01BDF6C7.FABAC1B0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+***** This is an HTML Message ! *****
+
+
+------=_NextPart_001_0080_01BDF6C7.FABAC1B0
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html public "-//w3c//dtd html 4=2E0
+ transitional//en">
+ <html>
+ <head>
+    
+    <title>Executive Guild Membership
+ ApplicationResponse-O-Matic Form</title>
+ </head>
+ <body text=3D"#808080" bgcolor=3D"#FFFF99"
+ link=3D"#800040" vlink=3D"#FF0000" alink=3D"#8080C0">
+ <p>
+ <font color=3D"#000000">Dear Candidate,=A0<br>
+ <br>
+ You have been selected as a potential candidate for a free listing in=A0<=
+br>
+ the  2001 Edition of the International Executive Guild Registry=2E=A0<br>=
+
+ <br>
+ Please accept our congratulations for this coveted honor=2E=A0<br>
+ <br>
+ As this edition is so important in view of the new millennium, the=A0<br>=
+
+ International Executive Guild Registry will be published in two different=
+=A0<br>
+ formats; the searchable CD-ROM and the Online Registry=2E=A0<br>
+ <br>
+ Since inclusion can be considered recognition of your career position=A0<=
+br>
+ and professionalism, each candidate is evaluated in keeping with high=A0<=
+br>
+ standards of individual achievement=2E In light of this, the Internationa=
+l Executive<br>
+ Guild thinks that you may make an interesting biographical subject=2E=A0<=
+br>
+ <br>
+ We look forward to your inclusion and appearance in the International=A0<=
+br>
+ Executive Guild's Registry=2E Best wishes for your continued success=2E=A0=
+<br>
+ <br>
+ International Executive Guild=A0<br>
+ Listing Dept=2E=A0</font>
+ <hr WIDTH=3D"100%">
+ <p align=3D"center"><b><i><font color=3D"#000000">If you
+ wish to be removed from our list, please submit
+ your request</font></i></b>
+ <br><b><i><font face=3D"Times New
+ Roman,Times"><font color=3D"#000000">at the
+ bottom of this email=2E</font></font></i></b>
+ </p>
+ <hr WIDTH=3D"100%">
+ <table WIDTH=3D"695" >
+ <caption><script language=3D"JavaScript">
+ 
+ <!--
+ function validate_form() {
+   validity =3D true; // assume valid
+   if (!check_empty(document=2Eform=2Ebusphone=2Evalue))
+         { validity =3D false; alert('Day Time
+ Phone field is empty!'); }
+     if (validity)
+         alert ("Thank you for your registration!
+ "
+                 + "Your form is now being passed
+ to your browser's "
+                 + "Mail Delivery Sub-System for
+ NORMAL"
+                 + " NON-ENCRYPTED email
+ delivery=2E"
+                 + "  All email addresses are
+ removed from our system"
+                 + " upon registration=2E  Please
+ click OK to proceed");
+   return validity;
+ }
+
+ function check_empty(text) {
+   return (text=2Elength > 0); // returns false if
+ empty
+ }
+ 
+ // -->
+ 
+ </script>
+ 
+ 
+ <!-- CHANGE EMAIL ADDRESS IN ACTION OF FORM -->
+ 
+ <form name=3D"form"
+  method=3D"post"
+  action=3D"mailto:carment5y@mail=2Ecom?SUBJECT=3DIEG Registration"
+  enctype=3D"text/plain"
+  
+ <tr>
+  </caption>
+ <td></td>
+ </tr>
+ 
+ <tr>
+ <td VALIGN=3DTOP COLSPAN=3D"2">
+ <center><b><i><font color=3D"#000000"><font
+ size=3D+3>International Executive Guild</font></font></i></b>
+ <br><b><font color=3D"#000000"><font
+ size=3D+2>Registration Form</font></font></b>
+ <br><b><font color=3D"#000000">(US and Canada
+ Only)</font></b>
+ <br>
+ <hr WIDTH=3D"100%"></center>
+ </td>
+ </tr>
+ 
+ <tr>
+ <td VALIGN=3DTOP COLSPAN=3D"2"><i><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D+0>Please
+ fill out this form if you would like to be
+ included on The International
+ Executive Guild, For accuracy and
+ publication purposes, please
+ complete and send this form at the earliest
+ opportunity=2E There is </font>no
+ charge or obligation<font size=3D+0> to be listed
+ on The International Executive Guild=2E</font></font></font></i>
+ <br>
+ <hr WIDTH=3D"100%"></td>
+ </tr>
+ 
+ <tr>
+ <td VALIGN=3DTOP></td>
+ </tr>
+ 
+ <tr>
+ <td ALIGN=3DRIGHT WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-1>Your
+ Name</font></font></font></b></td>
+ 
+ <td ALIGN=3DLEFT WIDTH=3D"300"><input type=3D"text"
+ value size=3D"50" maxlength=3D"250" name=3D"Name"></td>
+ </tr>
+ 
+ <tr>
+ <td ALIGN=3DRIGHT WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-1>Your
+ Company</font></font></font></b></td>
+ 
+ <td ALIGN=3DLEFT WIDTH=3D"300"><input type=3D"text"
+ value size=3D"50" maxlength=3D"250"
+ name=3D"Company"></td>
+ </tr>
+ 
+ <tr>
+ <td ALIGN=3DRIGHT WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-
+ 1>Title</font></font></font></b></td>
+ 
+ <td ALIGN=3DLEFT WIDTH=3D"300"><input type=3D"text"
+ value size=3D"50" maxlength=3D"250"
+ name=3D"Title"></td>
+ </tr>
+ 
+ <tr>
+ <td ALIGN=3DRIGHT WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-
+ 1>Address</font></font></font></b></td>
+ 
+ <td ALIGN=3DLEFT WIDTH=3D"300"><input type=3D"text"
+ value size=3D"50" maxlength=3D"250"
+ name=3D"Address"></td>
+ </tr>
+ 
+ <tr>
+ <td ALIGN=3DRIGHT WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-
+ 1>City</font></font></font></b></td>
+ 
+ <td ALIGN=3DLEFT WIDTH=3D"300"><input type=3D"text"
+ value size=3D"50" maxlength=3D"250" name=3D"City"></td>
+ </tr>
+ 
+ <tr>
+ <td ALIGN=3DRIGHT WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-1>State
+ or Province</font></font></font></b></td>
+ 
+ <td ALIGN=3DLEFT WIDTH=3D"300"><input type=3D"text"
+ value size=3D"12" maxlength=3D"50" name=3D"State"></td>
+ </tr>
+ 
+ <tr>
+ <td ALIGN=3DRIGHT WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-
+ 1>Country</font></font></font></b></td>
+ 
+ <td ALIGN=3DLEFT WIDTH=3D"300"><select
+ NAME=3D"Country" Size=3D"1"><option SELECTED><font
+ color=3D"#000000">USA<option
+ SELECTED>Canada</font></select></td>
+ </tr>
+ 
+ <tr>
+ <td ALIGN=3DRIGHT WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-1>ZIP/Postal
+ Code</font></font></font></b></td>
+ 
+ <td ALIGN=3DLEFT VALIGN=3DCENTER WIDTH=3D"300"><input
+ type=3D"text" value size=3D"12" maxlength=3D"50"
+ name=3D"Zip"></td>
+ </tr>
+ 
+ <tr>
+ <td ALIGN=3DRIGHT WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-1>Day
+ Time Telephone</font></font></font></b></td>
+ 
+ <td ALIGN=3DLEFT WIDTH=3D"300"><input type=3D"text"
+ value size=3D"22" maxlength=3D"50"
+ name=3D"busphone"></td>
+ </tr>
+ 
+ <tr>
+ <td>
+ <div align=3Dright><b><font
+ face=3D"Arial,Helvetica"><font
+ color=3D"#000000"><font size=3D-1>Home
+ Phone</font></font></font></b></div>
+ </td>
+ 
+ <td><input type=3D"text" value size=3D"22"
+ maxlength=3D"50" name=3D"homephone"><b><font
+ color=3D"#000000"><font size=3D-2>(Not
+ To Be Published)</font></font></b></td>
+ </tr>
+ 
+ <tr>
+ <td>
+ <div align=3Dright><b><font
+ face=3D"Arial,Helvetica"><font
+ color=3D"#000000"><font size=3D-
+ 1>Email</font></font></font></b></div>
+ </td>
+ 
+ <td><input type=3D"text" value size=3D"50"
+ maxlength=3D"100" name=3D"Email"></td>
+ </tr>
+ 
+ <tr>
+ <td></td>
+ 
+ <td></td>
+ </tr>
+ </table>
+ 
+ <center>
+ <p>
+ <hr WIDTH=3D"100%"><b><font
+ face=3D"ARIAL,HELVETICA"><font
+ color=3D"#000000"><font size=3D-1>TO
+ HELP US IN CONSIDERING YOUR APPLICATION, PLEASE
+ TELL US A LITTLE ABOUT
+ YOURSELF=2E=2E=2E</font></font></font></b>
+ <br>
+ <hr WIDTH=3D"100%"></center>
+ 
+ <center><table WIDTH=3D"81%" >
+ <tr>
+ <td ALIGN=3DRIGHT VALIGN=3DTOP WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-1>Your
+ Business</font></font></font></b></td>
+ 
+ <td>
+ <div align=3Dright><input type=3D"text" value
+ size=3D"50" maxlength=3D"200"
+ name=3D"business"></div>
+ <font face=3D"arial,helvetica"><font color=3D"#000000"><font
+ size=3D-1>(Financial
+ Svcs, Banking, Computer Hardware, Software, Professional Svcs,
+ Chemicals,
+ Apparel, Aerospace, Food, Government, Utility,
+ etc=2E)</font></font></font></td>
+ </tr>
+ 
+ <tr>
+ <td ALIGN=3DRIGHT VALIGN=3DTOP WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-1>Type
+ of Organization</font></font></font></b></td>
+ 
+ <td>
+ <div align=3Dright><input type=3D"text" value size=3D"50" maxlength=3D"25=
+0"
+ name=3D"Orgtype"></div>
+ <font face=3D"arial,helvetica"><font color=3D"#000000"><font size=3D-1>(M=
+fg,
+ Dist/Wholesaler, Retailer, Law Firm,</font></font></font>
+ <br><font face=3D"arial,helvetica"><font color=3D"#000000"><font
+ size=3D-1>Investment
+ Bank, Commercial Bank, University,</font></font></font>
+ <br><font face=3D"arial,helvetica"><font color=3D"#000000"><font
+ size=3D-1>Financial
+ Consultants, Ad Agency, Contractor, Broker,
+ etc=2E)</font></font></font></td>
+ </tr>
+ 
+ <tr>
+ <td VALIGN=3DTOP WIDTH=3D"300">
+ <div align=3Dright><b><font face=3D"arial,helvetica"><font
+ color=3D"#000000"><font
+ size=3D-1>Your
+ Business Expertise</font></font></font></b></div>
+ </td>
+ 
+ <td>
+ <div align=3Dright><input type=3D"text" value size=3D"50" maxlength=3D"25=
+0"
+ name=3D"expertise"></div>
+ <font face=3D"arial,helvetica"><font color=3D"#000000"><font
+ size=3D-1>(Corp=2EMgmt,
+ Marketing, Civil Engineering,</font></font></font>
+ <br><font face=3D"arial,helvetica"><font color=3D"#000000"><font size=3D-=
+1>Tax
+ 
+ Law, Nuclear Physics, Database Development, Operations, Pathologist,
+ Mortgage
+ Banking, etc=2E)</font></font></font></td>
+ </tr>
+ 
+ <tr>
+ <td ALIGN=3DRIGHT VALIGN=3DTOP WIDTH=3D"300"><b><font
+ face=3D"arial,helvetica"><font
+ color=3D"#000000"><font size=3D-1>Major
+ Product Line</font></font></font></b></td>
+
+ <td>
+ <div align=3Dright><input type=3D"text" value size=3D"50" maxlength=3D"25=
+0"
+ name=3D"product"></div>
+ <font face=3D"arial,helvetica"><font color=3D"#000000"><font
+ size=3D-1>(Integrated
+ Circuits, Commercial Aircraft, Adhesives, Cosmetics, Plastic Components,
+ 
+ Snack Foods, etc=2E)</font></font></font></td>
+ </tr>
+ </table></center>
+ 
+ <center>
+ <p><input NAME=3D"submit" TYPE=3D"submit" VALUE=3D" Submit By E-Mail "><i=
+nput
+ NAME=3D"reset" TYPE=3D"reset" VALUE=3D" Clear Form "></form>
+ <br><b><font color=3D"#000000"><font size=3D-1>Note: Submitting this form=
+
+ will
+ be made by email, not by use of&nbsp; www=2E&nbsp; Confirmation of its de=
+livery
+ is made by browsing your outgoing mail=2E</font></font></b>
+ <br>
+ <hr WIDTH=3D"100%"><b><i><font face=3D"arial,helvetica"><font
+ color=3D"#000000"><font
+ size=3D-1>Thank
+ you for filling in this form, we will contact you with more
+ information=2E</font></font></font></i></b>
+ <br>
+ <hr WIDTH=3D"100%">
+ <br><b><font size=3D+1>List
+ Removal</font></b>
+ <br><b><font color=3D"#000000"><font size=3D-1><a
+ href=3D"mailto:carment5y@usa=2Ecom?subject=3Dremove">Click
+ Here</a></font></font></b></center>
+ 
+ </body>
+ </html>
+
+------=_NextPart_001_0080_01BDF6C7.FABAC1B0--
+
+------=_NextPart_000_007F_01BDF6C7.FABAC1B0--
+
+
+
+
+

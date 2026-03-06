@@ -1,0 +1,61 @@
+From fork-admin@xent.com  Tue Aug 20 11:53:56 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5316543C45
+	for <jm@localhost>; Tue, 20 Aug 2002 06:52:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:52:30 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7K93LZ31584 for <jm@jmason.org>;
+    Tue, 20 Aug 2002 10:03:22 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 23B5129409E; Tue, 20 Aug 2002 02:01:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from isolnetsux.techmonkeys.net (isolnetsux.techmonkeys.net
+    [64.243.46.20]) by xent.com (Postfix) with SMTP id 00C1029409D for
+    <fork@xent.com>; Tue, 20 Aug 2002 02:00:38 -0700 (PDT)
+Received: (qmail 17987 invoked by uid 501); 20 Aug 2002 09:02:03 -0000
+Received: from localhost (sendmail-bs@127.0.0.1) by localhost with SMTP;
+    20 Aug 2002 09:02:03 -0000
+From: CDale <cdale@techmonkeys.net>
+To: fork@spamassassin.taint.org
+Subject: Snag Ware
+In-Reply-To: <DAV51uno2J1Y4VkHC8D00001535@hotmail.com>
+Message-Id: <Pine.LNX.4.44.0208200335130.32191-100000@isolnetsux.techmonkeys.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 20 Aug 2002 04:02:03 -0500 (CDT)
+
+We were sitting here talking about Opera, and the fact that it's not free 
+anymore (unless you want the scrollypollies),  and how that sucked and 
+stuff, and someone said something about  nagware, and I misinterpretted it 
+as snag ware, which mainly means, oh  yeh, right, I'm gonna buy this 
+-eyeroll- where's someone with a key?  LOL  So who is it again who's on 
+this list who's associated with Opera?  Why's the free one using the same 
+LAME idea netzero, etc useD?   I know what kind of  costs are involved in 
+creating software like this, and I understand everyone needs to eat, but 
+if someone can get netscape for free, and opera isn't free, then, hmmm...  
+I imagine this email is going to bring some bricks down on my head, but 
+well, go for it, I gots my helmet.  (:
+Cindy
+P.S. GregB, you there?  (:
+
+-- 
+"I don't take no stocks in mathematics, anyway" --Huckleberry Finn
+
+http://xent.com/mailman/listinfo/fork
+

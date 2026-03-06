@@ -1,0 +1,42 @@
+From rssfeeds@jmason.org  Tue Oct  8 10:55:35 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id CA3E116F16
+	for <jm@localhost>; Tue,  8 Oct 2002 10:55:30 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 08 Oct 2002 10:55:30 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9880XK06083 for
+    <jm@jmason.org>; Tue, 8 Oct 2002 09:00:33 +0100
+Message-Id: <200210080800.g9880XK06083@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: boingboing <rssfeeds@spamassassin.taint.org>
+Subject: 10Mb/s through skin
+Date: Tue, 08 Oct 2002 08:00:32 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://boingboing.net/#85534163
+Date: Not supplied
+
+NTT DoCoMo have released a paper on the use of human flesh as a networking 
+medium: 
+
+    A device attached to a PDA can send and receive weak electrical signals 
+    through people, with human bodies as communications circuits, the paper 
+    said, citing sources close to the companies. 
+
+    Apparel and handbags have their own conductivity, allowing an electrical 
+    connection to a PDA that can remain in one's pocket, the paper said. 
+
+    In this way, people can exchange e-mail addresses, names and phone numbers 
+    while shaking hands, with the data automatically written into both their 
+    PDAs, the paper said.  
+
+Link[1] Discuss[2] (_Thanks, Alan!_)
+
+[1] http://www.news.com.au/common/story_page/0,4057,5239758%255E13762,00.html
+[2] http://www.quicktopic.com/boing/H/tFBrRGn3CvLk9
+
+

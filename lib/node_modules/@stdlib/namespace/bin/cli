@@ -1,0 +1,134 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2018 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var indexOf = require( '@stdlib/utils/index-of' );
+var CLI = require( '@stdlib/cli/ctor' );
+var namespace = require( './../lib' );
+
+
+// VARIABLES //
+
+var FIELDS = [ 'alias', 'path', 'type', 'related' ];
+
+
+// FUNCTIONS //
+
+/**
+* Prints data as newline-delimited JSON (ndjson).
+*
+* @private
+* @param {ObjectArray} data - data to print
+*/
+function ndjson( data ) {
+	var i;
+
+	for ( i = 0; i < data.length; i++ ) {
+		console.log( JSON.stringify( data[i] ) );
+	}
+}
+
+/**
+* Prints data as lines of comma-separated values (CSV).
+*
+* @private
+* @param {ObjectArray} data - data to print
+* @param {StringArray} fields - output fields
+*/
+function csv( data, fields ) {
+	var line;
+	var f;
+	var i;
+	var j;
+	var n;
+	var m;
+
+	n = fields.length;
+	m = n - 1;
+	line = '';
+	for ( j = 0; j < n; j++ ) {
+		line += '"' + fields[ j ] + '"';
+		if ( j < m ) {
+			line += ',';
+		}
+	}
+	console.log( line );
+	for ( i = 0; i < data.length; i++ ) {
+		line = '';
+		for ( j = 0; j < n; j++ ) {
+			f = fields[ j ];
+			line += '"' + data[ i ][ f ] + '"';
+			if ( j < m ) {
+				line += ',';
+			}
+		}
+		console.log( line );
+	}
+}
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+* @returns {void}
+*/
+function main() {
+	var fields;
+	var flags;
+	var cli;
+	var err;
+	var i;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
+	if ( flags.fields ) {
+		fields = flags.fields.split( ',' );
+		for ( i = 0; i < fields.length; i++ ) {
+			if ( indexOf( FIELDS, fields[ i ] ) === -1 ) {
+				err = new Error( 'invalid option. Unrecognized/unsupported field. Option: `' + fields[ i ] + '`.' );
+				return cli.error( err );
+			}
+		}
+		return csv( namespace(), fields );
+	}
+	ndjson( namespace() );
+}
+
+main();

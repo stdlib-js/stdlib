@@ -1,0 +1,80 @@
+From fork-admin@xent.com  Thu Sep 26 11:04:50 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 9A72816F03
+	for <jm@localhost>; Thu, 26 Sep 2002 11:04:49 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 26 Sep 2002 11:04:49 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8PMxPC17679 for <jm@jmason.org>;
+    Wed, 25 Sep 2002 23:59:26 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 7AB48294164; Wed, 25 Sep 2002 15:55:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jamesr.best.vwh.net (jamesr.best.vwh.net [192.220.76.165])
+    by xent.com (Postfix) with SMTP id AB87D29409A for <fork@xent.com>;
+    Wed, 25 Sep 2002 15:54:07 -0700 (PDT)
+Received: (qmail 7297 invoked by uid 19621); 25 Sep 2002 22:55:59 -0000
+Received: from unknown (HELO avalon) ([64.125.200.18]) (envelope-sender
+    <jamesr@best.com>) by 192.220.76.165 (qmail-ldap-1.03) with SMTP for
+    <fork@xent.com>; 25 Sep 2002 22:55:59 -0000
+Subject: Re: Digital radio playlists are prohibited?!
+From: James Rogers <jamesr@best.com>
+To: fork@spamassassin.taint.org
+In-Reply-To: <132203498905.20020925163453@magnesium.net>
+References: <95745878-D05F-11D6-8F1E-000393A46DEA@alumni.caltech.edu>
+    <132203498905.20020925163453@magnesium.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Evolution/1.0.2-5mdk
+Message-Id: <1032995753.27386.88.camel@avalon>
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 25 Sep 2002 16:15:52 -0700
+
+On Wed, 2002-09-25 at 13:34, bitbitch@magnesium.net wrote:
+> 
+> This, kiddies was apparently the legislative beginnings of the whole
+> streaming audio-gets-spanked-by-fees ruling that came down in the
+> earlier parts of this year.  This first act applied to non-exempt,
+> non-subscription transmission services.  When Congress got around in
+> 1998 and realized that webcasting services -might- be different
+> (though I honestly can't see how) they wrote in the provision through
+> the DMCA to include such transmissions.
+
+
+The restrictive law regarding audio is actually the accumulated cruft of
+30 years of various legislative acts. The totality of what we have now
+come from various parts of all the following re: sound recordings:
+
+1998 - DMCA
+1995 - Digital Performance Right in Sound Recordings Act
+1992 - Audio Home Recording Act
+1976 - Copyright Act amendment
+1972 - Copyright Act amendment
+
+It is worth noting that many people have forgotten about the 1976
+Copyright Act Amendment which created the foundational law stating that
+the copyright owners have the right to limit personal use of audio
+recordings after First Sale even if you are not "making copies" in any
+commercial sense.  Sound recordings, for many intents and purposes, are
+explicitly excluded from Fair Use by the 1976 amendment.
+
+-James Rogers
+ jamesr@best.com
+
+
+

@@ -1,0 +1,108 @@
+From exmh-users-admin@redhat.com  Thu Jul 25 15:30:59 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 741E7440D1
+	for <jm@localhost>; Thu, 25 Jul 2002 10:30:55 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 15:30:55 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6PEVb408124 for
+    <jm-exmh@jmason.org>; Thu, 25 Jul 2002 15:31:37 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 981AF40939; Thu, 25 Jul 2002
+    10:29:46 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id B6651408BA
+    for <exmh-users@listman.redhat.com>; Thu, 25 Jul 2002 10:27:17 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g6PERIv14634 for exmh-users@listman.redhat.com; Thu, 25 Jul 2002
+    10:27:18 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g6PERHR14629 for
+    <exmh-users@redhat.com>; Thu, 25 Jul 2002 10:27:17 -0400
+Received: from tater ([128.221.30.171]) by mx1.spamassassin.taint.org (8.11.6/8.11.6)
+    with SMTP id g6PEFTs02936 for <exmh-users@redhat.com>; Thu, 25 Jul 2002
+    10:15:29 -0400
+Received: from tater.emc.com (tater [127.0.0.1]) by tater (Postfix) with
+    ESMTP id 539EEF6EB for <exmh-users@redhat.com>; Thu, 25 Jul 2002 10:27:11
+    -0400 (EDT)
+X-Mailer: exmh version 2.5 07/13/2001 (debian 2.5-1) with nmh-1.0.4+dev
+X-Face: -3FL)\a9]p1*{&TA|(w!&ebZH+5D7{<f+~z$th*i^x%?KKsF.j&hKORdD'I8wakze#|UPcU#sV4LvQ]EY5KLZhT1S{Tj1HIUt$G!tVX?\R{Fc`Fw'[c>fH!_Hj`9^PVlbxHH%~+On#w\+}e={Y$(+8Z.n*_mov6R[#QIyt%Fh
+To: exmh-users@spamassassin.taint.org
+X-Seen-This: pll
+From: pll@lanminds.com
+Subject: Re: Imap servers that support the MH folder/file standards
+References: <200207251406.g6PE6gV24296@houston.rr.com>
+In-Reply-To: Your message of
+    "Thu, 25 Jul 2002 09:06:42 CDT."
+    <200207251406.g6PE6gV24296@houston.rr.com>
+Message-Id: <20020725142712.539EEF6EB@tater>
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+X-Reply-To: pll@lanminds.com
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Thu, 25 Jul 2002 10:27:11 -0400
+
+
+>>>>> On Thu, 25 Jul 2002, "Stephen" == Stephen Hocking wrote:
+
+  Stephen> What I'd like to do is use an imap capable mailer to
+  Stephen> communicate with an imap server that is serving up my MH
+  Stephen> folders. Does anyone know of any Imap servers that can do
+  Stephen> this?
+
+This topic comes up every so often on this list.  The short answer is 
+no, there really isn't an IMAP server which knows how to do this.
+
+The longer answer is, UW-IMAP claims it does, but doesn't do a good 
+job, and doesn't update scan caches, unseen, etc.
+
+You may have better luck while on the road using raw mh commands to 
+read you e-mail if you have ssh access to your internal environment.
+I've been doing this for quite a long time, and, after the learning 
+curve of the mh command set (which I still don't know completely),
+I'm quite able to access my e-mail and respond to those e-mails which 
+require a response.
+
+Another option is using mutt as your mail client when you're remotely 
+accessing e-mail.  Mutt does a decent job of dealing with mh folders, 
+though it doesn't update scan caches or unseen files either.  But it 
+is a decent interface alternative to raw mh, and it's quite 
+customizable.
+
+The real answer to your question is that we need not an IMAP server 
+that understands mh folders, but an mh server to which a local client 
+could connect to.  In theory, it shouldn't be too hard (technically) 
+to cobble this together with ssh.  Replace all of exmh's calls to mh 
+commands with a wrapper which uses ssh to lob these commands over to 
+a remote system, and dump the output back into the local exmh client.
+
+-- 
+
+Seeya,
+Paul
+
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

@@ -1,0 +1,31 @@
+
+{{alias}}( f )
+    Evaluates a correction term for double-precision base-2 and base-10
+    logarithms when `1+f` is in `[√2/2, √2]`.
+
+    This function provides a common means for computing logarithms in base e.
+    Argument reduction and adding the final term of the polynomial must be done
+    by the caller for increased accuracy when different bases are used.
+
+    Parameters
+    ----------
+    f: number
+        Input value.
+
+    Returns
+    -------
+    out: number
+        Function value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0 )
+    ~0.1931
+    > y = {{alias}}( 1.4142135623730951 )
+    ~0.4672
+    > y = {{alias}}( NaN )
+    NaN
+
+    See Also
+    --------
+

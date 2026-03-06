@@ -1,0 +1,75 @@
+From fork-admin@xent.com  Mon Sep  9 19:28:05 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id D274616EFC
+	for <jm@localhost>; Mon,  9 Sep 2002 19:28:04 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 09 Sep 2002 19:28:04 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g89HfEC25594 for <jm@jmason.org>;
+    Mon, 9 Sep 2002 18:41:15 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 2D9942941DF; Mon,  9 Sep 2002 10:38:04 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from maynard.mail.mindspring.net (maynard.mail.mindspring.net
+    [207.69.200.243]) by xent.com (Postfix) with ESMTP id 808CB29409A for
+    <fork@xent.com>; Mon,  9 Sep 2002 10:37:48 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    maynard.mail.mindspring.net with esmtp (Exim 3.33 #1) id 17oSWL-0007E3-00;
+    Mon, 09 Sep 2002 13:40:22 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a3fb9a287d61dd7@[66.149.49.6]>
+In-Reply-To: <00e701c25813$eec5ab70$640a000a@golden>
+References: <Pine.LNX.4.33.0209091553450.32400-100000@hydrogen.leitl.org>
+    <15773384464.20020909103246@magnesium.net>
+    <00e701c25813$eec5ab70$640a000a@golden>
+To: "Gordon Mohr" <gojomo@usa.net>, <fork@spamassassin.taint.org>
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: Re[3]: Selling Wedded Bliss (was Re: Ouch...)
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 9 Sep 2002 13:18:54 -0400
+
+At 8:16 AM -0700 on 9/9/02, Gordon Mohr wrote:
+
+<Calculations elided...>
+
+> Of course this says very little, almost nothing, about the overall
+> population behavior, gay or straight, and the relative prevalence
+> of 3K+ individuals in either group. But it does strongly suggest
+> that gay males with 3K+ partners exist in measurable numbers, so
+> people should stop treating Eugen's anecdotal estimation as if it
+> were sheer fantasy. BitBitch's own citation suggests otherwise.
+
+That math stuff's, a, um, bitch, i'nit?
+
+;-)
+
+Cheers,
+RAH
+[Who could care less who boinks whom, or for how much, though watching the
+Righteous Anger(tm) around here this morning *has* been amusing...]
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

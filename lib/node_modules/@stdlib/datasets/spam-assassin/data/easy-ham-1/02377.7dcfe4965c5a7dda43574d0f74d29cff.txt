@@ -1,0 +1,103 @@
+From rssfeeds@jmason.org  Wed Oct  9 10:52:38 2002
+Return-Path: <rssfeeds@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 6A6F516F67
+	for <jm@localhost>; Wed,  9 Oct 2002 10:51:36 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 09 Oct 2002 10:51:36 +0100 (IST)
+Received: from dogma.slashnull.org (localhost [127.0.0.1]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g9980JK25152 for
+    <jm@jmason.org>; Wed, 9 Oct 2002 09:00:19 +0100
+Message-Id: <200210090800.g9980JK25152@dogma.slashnull.org>
+To: yyyy@spamassassin.taint.org
+From: aaronsw <rssfeeds@spamassassin.taint.org>
+Subject: Trip Notes
+Date: Wed, 09 Oct 2002 08:00:18 -0000
+Content-Type: text/plain; encoding=utf-8
+
+URL: http://www.aaronsw.com/weblog/000647
+Date: 2002-10-08T16:39:48-06:00
+
+=== Scissors === 
+
+I, like most other people here, went through the security checkpoint. Unlike 
+everyone else, they decided to search my suitcase. The security lady asked for 
+permission and then took everything out: clothing, umbrellas, a jacket, and a 
+box of crackers. She searched all the pockets: nothing. Apparently the jacket 
+was suspicious; She sent it through again. Nothing. 
+
+    The lady in the next lane waved a 10-inch knife and asked the lady in my 
+    lane if it could go on. I can only assume she answered yes. 
+
+She put everything back in and sent it through again. Still suspicious. They 
+took everything out. It looked like this was going to take a while, so I used 
+the opportunity to put the tickets I was holding back in my bag. When I looked 
+back up, the security woman was brandishing a scissors and saying "This can't 
+go on board." "I don't remember packing that," I said. I let her confiscate it. 
+
+I called my Mom. She doesn't remember packing it either. Is there some sort of 
+terrorist plot to plant scissors in innocent-looking people's suitcases? I 
+can't see why this would be useful. How would they know what plane I'm on? Once 
+I'm on the plane how would they get the scissors? They could threaten me, but 
+if they have a threatening implement already, then why do they need the 
+scissors? Perhaps it's some sort of Matroishca-doll system. They use their 
+fists to get the infant to give them the squeaky mouse, they use the squeaky 
+mouse to scare the toddler into giving them a copy of _A New Kind of Science_, 
+they use ANKS to bludgeon a 5th Grader into giving them a wedge block, and they 
+use the wedge to get me to give them the scissors. Those are some pretty clever 
+terrorists. 
+
+*Update:* False alarm. My Mom called. Apparently it was the scissors she was 
+using to cut loose threads from my tie last night. It must have fallen in. The 
+nation can go back to Yellow Level Terrorist Alert.  
+
+=== Waiting for Wireless === 
+
+Now I am at O'Hare Airport, sitting outside the Admiral's Club while 
+businessmen walk in and out. I am looking for a wireless signal, the signal I 
+used last time I was here, but not finding it. Of course, last time I was here, 
+I had an Admiral's Club card. This time I have a Mileage Plus Card, but despite 
+the airline ologopoly--or perhaps because of it (have to keep up appearances, 
+you know)--I doubt they will accept it. 
+
+=== Irony === 
+
+According to the announcement I just heard, Mr. Valenti is going to miss his 
+flight. 
+
+I think of what I'd say if I ran into him. "Jack!" I'd exclaim, as if we were 
+old pals. "Going to the Eldred case?" Of course he was. "Going to be a good 
+one." "Hey, remember when you had that debate with Lessig?" I'd ask. "You said 
+you were starting a new task force to make movies legitimately available on the 
+Internet. What ever happened to that?" I imagine him mumbling and looking down 
+at his watch. His plane is going to leave soon; he has to run. 
+
+Another announcement: Mr. Michael McKenna needs to call his office. Good thing 
+these airline announcements keep me up to date. 
+
+=== Automatic Flush Toilets === 
+
+Now I am short and the sensing system was mounted up tall in both instances. In 
+the first, at my old high school (where you think some people might be a little 
+short...), the flush went off once accidentally. OK, I thought, I can handle 
+one mistake. Then it went off again. Here at the airport, it misfired three 
+times. 
+
+This is annoying and inexcusable. Have they not heard of user testing? Do they 
+expect only tall people to use these bathrooms? This problem must be remedied 
+immediately. I recommend releasing a Service Pack on the manufacturer's web 
+site. 
+
+=== Arrival === 
+
+I've arrived in D.C.--once again, I'm sitting a block away from my hotel on the 
+sidewalk borrowing someone's connection. Trip was very smooth, had lunch with 
+Lisa and went to the Spy Museum (pretty cool, but could have been better). Now 
+for the meetings and parties. 
+
+Sorry for not responding to your email. I'm rather busy. ;-)
+
+
+

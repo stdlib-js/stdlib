@@ -1,0 +1,103 @@
+From ilug-admin@linux.ie  Tue Aug 20 11:51:58 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C1A7F43C38
+	for <jm@localhost>; Tue, 20 Aug 2002 06:51:36 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 11:51:36 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JLPZZ09998 for
+    <jm-ilug@jmason.org>; Mon, 19 Aug 2002 22:25:35 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA29957; Mon, 19 Aug 2002 22:24:29 +0100
+Received: from hibernia.jakma.org (hibernia.clubi.ie [212.17.32.129]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id WAA29921 for <ilug@linux.ie>;
+    Mon, 19 Aug 2002 22:24:15 +0100
+Received: from fogarty.jakma.org (fogarty.jakma.org [192.168.0.4]) by
+    hibernia.jakma.org (8.11.6/8.11.6) with ESMTP id g7JLWCD01993;
+    Mon, 19 Aug 2002 22:32:12 +0100
+Received: from localhost (paul@localhost) by fogarty.jakma.org
+    (8.11.6/8.11.6) with ESMTP id g7JLWAX14622; Mon, 19 Aug 2002 22:32:10
+    +0100
+X-Authentication-Warning: fogarty.jakma.org: paul owned process doing -bs
+Date: Mon, 19 Aug 2002 22:32:09 +0100 (IST)
+From: Paul Jakma <paul@clubi.ie>
+X-X-Sender: paul@fogarty.jakma.org
+To: Vincent Cunniffe <vincent@cunniffe.net>
+Cc: ilug <ilug@linux.ie>
+Subject: Re: [ILUG] linux pthreads problem
+In-Reply-To: <3D611AF5.7080703@cunniffe.net>
+Message-Id: <Pine.LNX.4.44.0208192219450.14173-100000@fogarty.jakma.org>
+X-Nsa: iraq saddam hammas hisballah rabin ayatollah korea vietnam revolt
+    mustard gas
+X-Dumb-Filters: aryan marijuiana cocaine heroin hardcore cum pussy porn
+    teen tit sex lesbian group
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Mon, 19 Aug 2002, Vincent Cunniffe wrote:
+
+> The process list initially shows a single main process :
+> 
+>    16877  1.0  0.2  1824  540 pts/1    S    17:14   0:00 ./heartbeat2
+> 
+> When the client runs, connects, and sleeps for 5 seconds :
+> 
+>    16877  0.0  0.2 10024  604 pts/1    S    17:14   0:00 ./heartbeat2
+>    16887  0.5  0.2  1796  720 pts/1    S    17:15   0:00 ./client
+>    16888  0.0  0.2 10024  604 pts/1    S    17:15   0:00 ./heartbeat2
+>    16889  0.0  0.0     0    0 pts/1    Z    17:15   0:00 [heartbeat2 
+> <defunct>]
+> 
+> When the client exits, and the thread should finish, it doesn't :
+> 
+>    16877  0.0  0.2 10024  604 pts/1    S    17:14   0:00 ./heartbeat2
+>    16888  0.0  0.2 10024  604 pts/1    S    17:15   0:00 ./heartbeat2
+> 
+> This second thread never goes away, but no more threads accumulate,
+> and the total memory consumption rises by about 8-9MB every single
+> time a client connects.
+> 
+> C++ bug, linux bug, pthreads bug, coding error?
+
+hmm... with pthreads there is always one thread which acts as a 
+'thread manager'. do the number of processes accumulate? or is it 
+just that the # of threads is == # of threads you're expecting + 1? 
+if the latter, ttbomk that is normal.
+
+ie, you dont create the thread until the accept() returns. so up 
+until then its a normal programme (ie no thread manager). after that 
+you will always have +1 processes (for the thread manager).
+
+also, the stack for further threads is allocated from the heap. (see
+sigaltstack() ) possibly glibc does not brk() back the space, just
+like malloc()/free() does not always release the space to the heap
+again (as most programmes will allocate memory / threads again
+soonish anyway).
+
+> Regards,
+> 
+> Vin
+
+regards,
+-- 
+Paul Jakma	paul@clubi.ie	paul@jakma.org	Key ID: 64A2FF6A
+	warning: do not ever send email to spam@dishone.st
+Fortune:
+The Official Colorado State Vegetable is now the "state legislator".
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

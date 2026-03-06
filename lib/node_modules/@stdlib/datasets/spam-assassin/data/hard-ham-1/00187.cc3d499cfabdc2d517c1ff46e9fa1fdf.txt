@@ -1,0 +1,308 @@
+From danny@spesh.com  Fri Aug 16 17:53:24 2002
+Return-Path: <danny@spesh.com>
+Delivered-To: zzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 303BC43C32
+	for <zzz@localhost>; Fri, 16 Aug 2002 12:53:22 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Fri, 16 Aug 2002 17:53:22 +0100 (IST)
+Received: from prune.flirble.org (prune.flirble.org [195.40.6.30]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g7GGo3628372 for
+    <zzz-ntk@spamassassin.taint.org>; Fri, 16 Aug 2002 17:50:03 +0100
+Received: (qmail 20738 invoked by uid 7789); 16 Aug 2002 16:26:20 -0000
+Mailing-List: contact ntknow-help@lists.ntk.net; run by ezmlm
+Precedence: bulk
+X-No-Archive: yes
+Delivered-To: mailing list ntknow@lists.ntk.net
+Delivered-To: moderator for ntknow@lists.ntk.net
+Received: (qmail 20676 invoked from network); 16 Aug 2002 16:24:36 -0000
+Date: Fri, 16 Aug 2002 09:24:14 -0700
+From: "Danny O'Brien" <danny@spesh.com>
+To: NTK now <ntknow@lists.ntk.net>
+Subject: MiniNTK 2002-08-16
+Message-Id: <20020816092414.A22711@spesh.com>
+Reply-To: tips@spesh.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: mutt-nntp/1.3.22.1ix
+X-Excuse: filing taxes and playing with Squeak don't mix, kids
+
+ __  __ _2002-08-16   _ _____ _  __
+|  \/  (_)_ __ (_) \ | |_   _| |/ /    o Join! mail an empty message to
+| |\/| | | '_ \| |  \| | | | | ' /     o ntknow-subscribe@lists.ntk.net
+| |  | | | | | | | |\  | | | | . \     o Website (+ archive) lives at:
+|_|  |_|_|_| |_|_|_| \_| |_| |_|\_\    o      http://www.ntk.net/
+
+
+                                >> MINI NEWS <<
+                               time for a snooze
+
+         There comes a time in every August when news services should
+         just shut the hell up, because the weather's too hot or too
+         underwater, and the world grows so dull and hazy that even
+         the overexcitable hardcore at LinuxWorld wander around like
+         it's Undead Expo 2002, and the Weiss-baked Macintoxins can
+         barely lift their wallets for MacOS X.2, and Sun can't be
+         bothered to do anything but run s/RedHat/Sun Linux/g on a
+         free distribution disk, and everyone else is on holiday, or
+         getting ready to be on holiday, or being told that perhaps
+         they should take a holiday RIGHT NOW, and all we can do is
+         look at this awful, awful EUCD legislation and stare out the
+         window until dawn.
+
+         Yeah, it's our annual no news edition. We moved to a faster
+         server. Do take the rest of the weekend off in celebration.
+
+         Or, alternatively, build up a head of overexcitement for
+         the public appearance of THOMAS DOLBY - the "Hyperactive"
+         chart artist and Beatnik audio plug-in advocate who, even as
+         you read this, appears to be hosting a 350 Euro-per-head
+         seminar on COMPOSING POLYPHONIC RING TONES at Helsinki's
+         Radisson Royal Hotel in Finland. Lucky delegates will learn
+         about "using real-time MIDI controllers for tweaked
+         effects", "techniques for making little speakers sound huge"
+         and - perhaps most distressingly - "picking the right
+         instrument and register for best audibility". The
+         cacophonous cavalcade comes to London's Soho House on Tue
+         and Wed next week if you'd like to check it out for
+         yourself - or perhaps hold a street protest on behalf of
+         music lovers worldwide.
+         http://www.headspace.com/seminar2002.htm
+           - So they're better than monophonic ringtones. What isn't?
+
+
+                                >> ANTI-NEWS <<
+                             berating the obvious
+
+         because there are still a few PUERILE GOOGLE MISSPELLINGS
+         that NTK doesn't come top of the search results for - yet:
+         http://www.google.com/search?q=partnershit&start=10 , "anals
+         of history", "blackpoo", "farternity", "proffesional" - the
+         latter particularly in conjunction with "proofreading":
+         http://www.google.com/search?q=proffesional+proofreading ...
+         "Subie" called "ya ,jhg hjg yjg" by unashamedly Glaswegian
+         DAILY RECORD: http://www.ntk.net/2002/08/16/dohsub.gif ...
+         looks like his official title now becomes "President Buh":
+         http://www.ntk.net/2002/08/16/dohbuh.gif ... frickin' MAC
+         users buy anything: http://www.ntk.net/2002/08/09/dohsx.gif
+         ... maybe not the best month for this branch of the W3C:
+         http://lists.w3.org/Archives/Public/www-forms-editor/2002Mar/ ...
+
+
+                               >> EVENT QUEUE <<
+                         goto's considered non-harmful
+
+         Boasting technical seminars, interplay of technological ideas
+         and, of course, beer, this year's LINUXBIERWANDERUNG (from Sat
+         2002-08-24, Doolin, Co. Clare, Ireland, for a "small voluntary
+         donation" per hiker) might just be the only walking holiday
+         you ever persuade your company to pay for. Continuing the
+         outdoor theme, somewhat shorter notice for this Sunday's
+         GREATER LONDON LINUX USER GROUP BLETCHLEY PARK PICNIC (around
+         12noon, Sun 2002-08-18, Bletchley, near Milton Keynes, UKP6
+         admission fee). And for anyone who can't make the whole week
+         in Ireland, there's some consolation in the form of LONDON
+         PERLMONGERS PRESENT: DAMIEN CONWAY AT THE CONWAY HALL (6pm,
+         Tue 2002-08-27 and Thu 2002-08-29, Conway Hall, London WC1R,
+         free) - hopefully just the start of a similarly-named speaker/
+         venue trend which will also see Larry Wall performing at the
+         Great Wall Of China, and Eric Raymond at London's Raymond
+         Revue Bar.
+         http://www.lbw2002.draiocht.net/
+         - sadly, less excuse for "pingtime for Hitler" gag this year
+         http://list.ftech.net/pipermail/gllug/2002-August/025308.html
+           - bring your "Cryptonomicon", please don't deface his Wiki
+         http://london.pm.org/meetings/
+              - last time: http://www.bluedust.com/projects/info7.asp
+         http://www.gabba.net/pnp/lofi.asp
+         - Plug'n'Play this Sun, feat. Casiotone & Thorsten Sideboard
+         http://www.ica.org.uk/index.cfm?articleid=7641
+           - and Hacking @ ICA tonight, assuming you get this in time
+
+
+                                >> TRACKING <<
+               sufficiently advanced technology : the gathering
+
+         Dijkstra finally gone? Great. Now we can hang out with those
+         sloppy little unrigorous languages he never let into the
+         house. Right on cue: the latest dev version of GNU
+         SMALLTALK, that dirty treat-me-like-an-object ducky. Version
+         2.0b sprouts HTML-embedding and experimental MySQL support -
+         implying you might actually be able to do something useful
+         with it. Admittedly, "useful" has not been a word  much used
+         in the Smalltalk community recently. Many of the current
+         addicts seem to live entirely in the pleasuredomes of that
+         Land of Infinite Fun, Alan Kay's Smalltalk sequel SQUEAK,
+         the cross-platform UI-kablooie playground which, over time,
+         been overloaded with more ill-fitting metaphors than this
+         sentence. But even Squeak is showing signs of returning to
+         planet Earth. Talk of cleaning up the object tree are rife;
+         coders are working on XP-alike skins (instead of Squeak's
+         peculiarly homely interface right now). There's even word of
+         a SmallTalkish scripting language in the offing. And all
+         those new MacOS X Objective C hackers are following the
+         trail back to the NeXT's great ancestor, giving a timely
+         boost to the tribe. Xerox Parc *will* return!
+         http://freshmeat.net/releases/93723/
+                                              - the smaller Smalltalk
+         http://www.squeak.org/download/
+                                                  - pretty colours
+         http://lists.squeakfoundation.org/pipermail/squeak-dev/
+                                           - where they're all hiding
+         http://www.iam.unibe.ch/~ducasse/WebPages/FreeBooks.html
+                                               - look! free ST books!
+         http://www.pocketsmalltalk.com/
+                                               - look! free Palm IDE!
+
+                                >> MEMEPOOL <<
+                  ceci n'est pas une http://www.gagpipe.com/
+
+         where's Wendy?: http://3gamerchicks.com/features/bobsex/ ...
+         http://news.bbc.co.uk/1/hi/2188214.stm got a bargain from:
+     http://www.salon.com/tech/feature/2002/08/03/deleteddomains/print.html
+         - still, makes a change from press releases from BT OPENWORLD:
+         http://news.bbc.co.uk/1/hi/technology/2181078.stm ... life
+         imitates http://www.thebrainstrust.co.uk/article.15.1961.html
+         (from last summer); in the meantime, we can look forward to:
+         http://www.martian.fm/countdown_it.htm ... at last - Java
+         PARADROID: http://www.javaonthebrain.com/java/noids/ ... so
+         has "10,000 Statistically Grammar-Average Fake Band Names"
+         been taken?: http://web.media.mit.edu/~bwhitman/10000.html ...
+         UNWITTING DOUBLE-ENTENDRE CORNER - "Genetic Distribution of
+         the Labial Flap": http://www.sil.org/silewp/2001/002/ vs a
+         trained eye on "The lines, crevices, and folds of your fanny":
+         http://www.jacquelinestallone.com/reportsDocs/rumpology.html ...
+
+
+                                >> GEEK MEDIA <<
+                                  get out less
+
+         TV>> the objection that "Elvis - was a hero to most, but he
+         never meant shit to me" is addressed in ENTERTAINING ELVIS
+         (1.35am, Fri, ITV), in which "The King" offers his views on
+         our modern-day pop acts... the horror continues in the form of
+         CANDYMAN II (1.10am, Fri, C4) and William Peter "The Exorcist"
+         Blatty's psycho-nonsense THE NINTH CONFIGURATION (2.45am, Fri,
+         C4)... and Jason "Seinfeld" Alexander plays one of a bunch of
+         gay friends - not that there's anything wrong with that - in
+         LOVE! VALOUR! COMPASSION! (12.40am, Fri, C5)... Jarvis Cocker
+         *is* Rolf Harris, while "Allstars" impersonate the recently
+         deceased "Steps" in CELEBRITY STARS IN THEIR EYES (8.30pm,
+         Sat, ITV)... Sarah Michelle Gellar and Selma "Legally Blonde"
+         Blair put the "les" back into "Les Liaisons Dangereuses" in
+         their noted http://www.girlskissing.co.uk/video.htm classic
+         CRUEL INTENTIONS (9.30pm, Sat, C4)... leading into a late-
+         night character actor fest featuring Paul "Boogie Nights"
+         Anderson's feature debut HARD EIGHT (12.35am, Sat, BBC2),
+         David Mamet's Steve Martin con-game THE SPANISH PRISONER
+         (1.20am, Sat, C4), and Oirish juvenile delinquent coming-of-
+         ager THE BUTCHER BOY (12.55am, Sat, C5)... things get back to
+         normal on Sunday with the incomprehensible remake of MISSION:
+         IMPOSSIBLE (8.15pm, Sun, BBC1) - not to be confused with the
+         simultaneously fruitless THE HUNT FOR THE ANTHRAX KILLER (9pm,
+         Sun, BBC2)... Christina Ricci, Lisa Kudrow comedy THE OPPOSITE
+         OF SEX (10pm, Sum, C4) has snappy script, no plot... and it's
+         the final episode of the seemingly interminable 24 (10pm, Sun,
+         BBC2): http://www.doyourecall.co.uk/ ... the - presumably
+         rhetorically titled - DID BARRY GEORGE KILL JILL DANDO? (9pm,
+         Mon, C4) and WHO KILLED SIMONE VALENTINE? (11.05pm, Mon, C4)
+         are helpfully scheduled either either side of SIX FEET UNDER
+         (10pm, Mon, C4)... Michael "David St Hubbins" McKean moves
+         into management in sub-"Spinal Tap" hostage romp AIRHEADS
+         (10.55pm, Mon, C5)... the consistently worrying TEENAGE KICKS
+         (10pm, Tue, C4) looks at "Teenage Dwarfs" - next week:
+         "Teenage Dirtbags"?... and http://www.diffusiononline.net/
+         inspiration BARGAIN HUNT (8pm, Thu, BBC1) arrives on prime-
+         time - frankly we still prefer his mix of "147 Lockdown"...
+
+         FILM>> if they'd used the proper mathematical sigma symbol in
+         the title, then the sequel could have been called "The
+         Derivative Of Distress - With Respect To Terror" for largely
+         humourless feelgood nuclear thriller THE SUM OF ALL FEARS
+       ( http://www.screenit.com/movies/2002/the_sum_of_all_fears.html :
+         We see [Bridget "Coyote Ugly" Moynahan] in bed, showing some
+         cleavage; the camera briefly focuses on some cheerleaders'
+         clothed butts during the Super Bowl)... oh and it's the full
+         release this week for SPY KIDS 2: THE ISLAND OF LOST DREAMS
+         ( http://www.capalert.com/capreports/spykids2.htm : telepathy;
+         pelvic thrusts by a child; drinking with multiple drugging;
+         "Let's kick their [posteriors]" - which is not included in the
+         list of three/four letter word vocabulary but is impudent;
+         toilet humor - smothering in a pile of dung with fecal matter
+         in mouth)...
+
+         CONFECTIONERY THEORY>> "Are you tracking breakfast cereal?"
+         inquired a concerned LLOYD WOOD, after recently wandering into
+         the "kiddy end" of the cereal aisle. "They've all gone CD-ROM
+         on the front", he observed - causing him, for a moment to
+         think he was looking at "some really bloated computer
+         magazines". Of course we are, Lloyd, though we're not as
+         easily swayed by gimmicks as you are, and thus can impartially
+         report that NESTLE's Maryland-style COOKIE CRISP are the most
+         biscuit-like breakfast ever, easily triumphing over KELLOGG's
+         FROSTIES CHOCOLATE (too much chocolate, not enough "frosty"),
+         COCO POPS CRUNCHERS (clump together in this humid weather) and
+         even the Winnie The Pooh-themed DISNEY HUNNY B's - and if you
+         mix them all together, the milk goes so chocolatey it'll turn
+         your Pooh brown... elsewhere in dairy, MCDONALD'S continue a
+         disappointing run of toppings for the MCFLURRY (99p) -
+         Cadbury's Caramel is rubbish, and Jammie Dodgers not a patch
+         on our second-favourite McFlurry of all time, the Strawberry
+         Crunch: http://www.ntk.net/index.cgi?b=02001-08-10&l=286#l .
+         Reader ED AVIS complains that KFC don't tell you that their
+         "M&M" AVALANCHE (also 99p) does not feature real M&Ms but
+         "special miniaturised ones", which he describes as "frozen
+         solid" and "might as well be small bits of gravel for all the
+         chocolate flavour they impart". While, following last week's
+         announcement of Ice T's Posse Pops, CRAIG LEFF thought we'd be
+         reassured by the news that NBC are launching their own range
+         of TV-themed Baskin-Robbins ice-creams, including a "Fear
+         Factor" flavour designed to recreate the experience of eating
+         "dirt and spiders": http://www.adage.com/news.cms?newsId=35520
+         ... back with confectionery, LEON VERRALL remained unimpressed
+         with STARBURST FRUITINESSE (from 49p, "tasted of plastic...
+         [resembled] those 'food pills' they thought we'd all be eating
+         by now"), DAVID BLANE grudgingly approved of the TWIX TRIPLE
+         CHOC LIMITED EDITION ("Not bad, faintly evoking Penguins,
+         which I never liked because of the thick chocolate"), and the
+         whole point of that controversial "It's not for girls"
+         campaign was revealed: to position NESTLE DOUBLE CREAM (40p)
+         as a more female-friendly version of the YORKIE BAR. Other
+         treats to look forward to in coming weeks: Cola-flavoured
+         CADBURY-TREBOR REFRESHERS, chicken-wings-flavoured HULA HOOPS,
+         bacon QUAVERS, the (presumably) non-crisp-like GOLDEN WONDER
+         FRUIT WONDERS - or, indeed, any of this weird new American
+         stuff: http://www.candyusa.org/Press/New/ace2002.shtml ,
+         ranging from SCORNED WOMAN CHOCOLATE JALAPENO FUDGE to SOFT
+         AND CHEWY STINKY FEET ("Mmm, these feet are *so* stinky")...
+
+
+                               >> SMALL PRINT <<
+
+       Need to Know is a useful and interesting UK digest of things that
+         happened last week or might happen next week. You can read it
+       on Friday afternoon or print it out then take it home if you have
+     nothing better to do. It is compiled by NTK from stuff they get sent.
+                       Registered at the Post Office as
+         "yeah, thanks Edge, knew you had a worse picture somewhere"
+                         (p014, Edge, September 2002)
+
+
+                                 NEED TO KNOW
+            THEY STOLE OUR REVOLUTION. NOW WE'RE STEALING IT BACK.
+                         Archive - http://www.ntk.net/
+              Unsubscribe? Mail ntknow-unsubscribe@lists.ntk.net
+                Subscribe? Mail ntknow-subscribe@lists.ntk.net
+   NTK is supported by UNFORTU.NET, and by you: http://www.geekstyle.co.uk/
+                          (K) 2001 Special Projects.
+             Copying is fine, but include URL: http://www.ntk.net/
+
+                    Tips, news and gossip to tips@spesh.com
+             All communication is for publication, unless you beg.
+              Press releases from naive PR people to pr@spesh.com
+     Remember: Your work email may be monitored if sending sensitive material.
+       Sending >500KB attachments is forbidden by the Geneva Convention.
+              Your country may be at risk if you fail to comply.
+

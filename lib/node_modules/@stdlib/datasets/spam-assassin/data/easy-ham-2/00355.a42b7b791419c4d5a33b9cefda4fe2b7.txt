@@ -1,0 +1,66 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:28:37 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5190A43FB1
+	for <jm@localhost>; Tue, 13 Aug 2002 05:21:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:21:42 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7CKUOb00568 for
+    <jm-ilug@jmason.org>; Mon, 12 Aug 2002 21:30:24 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA05579; Mon, 12 Aug 2002 21:29:29 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id VAA05556 for <ilug@linux.ie>;
+    Mon, 12 Aug 2002 21:29:18 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17eLoR-0006s2-00 for <ilug@linux.ie>; Mon, 12 Aug 2002 13:29:15 -0700
+Date: Mon, 12 Aug 2002 13:29:15 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020812202915.GJ25331@linuxmafia.com>
+References: <20020811182012.GD25331@linuxmafia.com>
+    <20020812094352.97487.qmail@web13906.mail.yahoo.com>
+    <20020812105644.GK1920@jinny.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020812105644.GK1920@jinny.ie>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting John P. Looney (valen@tuatha.org):
+
+>  The RPMS are. The distribution as a whole work is copyright of SuSE.
+
+I've not seen any claim from SuSE of copyright over the distribution 
+as a whole.  (That would be a "compilation copyright", to use the legal
+term.)  But they definitely assert (and in fact own) copyright over
+YaST, YaST2, and the associated installer program.
+
+So, if one wanted to distribute a version of SuSE free of encumbrances
+from SuSE Linux AG, one would merely have to write a replacement
+installer and do without YaST/YaST2 (and probably a few other things
+they wrote).  A Simple Matter of Programming.
+
+-- 
+Cheers,               "That article and its poster have been cancelled." 
+Rick Moen                   -- David B. O'Donnel, sysadmin for America Online
+rick@linuxmafia.com
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

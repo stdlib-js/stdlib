@@ -1,0 +1,98 @@
+From spamassassin-talk-admin@lists.sourceforge.net  Thu Sep 12 00:05:00 2002
+Return-Path: <spamassassin-talk-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 05E5D16F03
+	for <jm@localhost>; Thu, 12 Sep 2002 00:05:00 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 12 Sep 2002 00:05:00 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8BLt5C01213 for <jm-sa@jmason.org>; Wed, 11 Sep 2002 22:55:05 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17pFR8-0007Vm-00; Wed,
+    11 Sep 2002 14:54:14 -0700
+Received: from ceg-na5.alcatel.fr ([213.223.66.5] helo=smail2.alcatel.fr)
+    by usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian))
+    id 17pFQr-0001jT-00 for <SpamAssassin-talk@lists.sourceforge.net>;
+    Wed, 11 Sep 2002 14:53:57 -0700
+Received: from iww.netfr.alcatel.fr (iww.netfr.alcatel.fr
+    [155.132.180.114]) by smail2.alcatel.fr (ALCANET/NETFR) with ESMTP id
+    g8BLqdCv027561; Wed, 11 Sep 2002 23:52:39 +0200
+Received: by iww.netfr.alcatel.fr
+    ("Mikrosoft Xchange",
+    from userid 513) id CBB7C1D1B; Wed, 11 Sep 2002 23:53:41 +0200 (CEST)
+From: Stephane Lentz <Stephane.Lentz@ansf.alcatel.fr>
+To: David Raistrick <drais@wow.atlasta.net>
+Cc: SpamAssassin-talk@example.sourceforge.net
+Subject: Re: [SAtalk] Re: [SAdev] File::Spec and v2.41
+Message-Id: <20020911215341.GA26384@iww.netfr.alcatel.fr>
+Mail-Followup-To: Stephane Lentz <Stephane.Lentz@ansf.alcatel.fr>,
+	David Raistrick <drais@wow.atlasta.net>,
+	SpamAssassin-talk@lists.sourceforge.net
+References: <20020911201747.GA25880@iww.netfr.alcatel.fr>
+    <Pine.BSF.4.21.0209111343220.53629-100000@wow.atlasta.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <Pine.BSF.4.21.0209111343220.53629-100000@wow.atlasta.net>
+X-Mailer: Bogus Notes 5.10.666 (Corporate Release)
+X-Virus-Scanned: by amavisd-milter (http://amavis.org/)
+Sender: spamassassin-talk-admin@example.sourceforge.net
+Errors-To: spamassassin-talk-admin@example.sourceforge.net
+X-Beenthere: spamassassin-talk@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-talk-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-talk@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=subscribe>
+List-Id: Talk about SpamAssassin <spamassassin-talk.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-talk>,
+    <mailto:spamassassin-talk-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-talk>
+X-Original-Date: Wed, 11 Sep 2002 23:53:41 +0200
+Date: Wed, 11 Sep 2002 23:53:41 +0200
+
+On Wed, Sep 11, 2002 at 01:46:19PM -0700, David Raistrick wrote:
+> On Wed, 11 Sep 2002, Stephane Lentz wrote:
+> 
+> > => I faced a similar problem with the FreeBSD when trying to 
+> > install SpamAssassin through the ports on my fresh FreeBSD 4.6.2. 
+> > I had to define PERL5LIB with some given order of directories
+> > so that the latest File::Spec module get used. 
+> 
+> Good to hear it's not just me.  Mind telling me how you set PERL5LIB
+> specificly? I've tried a few things (setenv in the shell, as well as
+> $PERL5LIB == ...inside the Makefile.PL, even on the perl command
+> line..) with no success.
+> 
+- Presuming your run Bash  :
+Note the directory lists 
+#  perl -e 'map { print "$_\n" } @INC'
+Then set up the Shell variable PERL5LIB variable (and put it in some .bashrc 
+for future use)
+# export PERL5LIB="directory1:directory2:directory3:directory4"
+Then try to install the software
+
+PERL5LIB is explained perlrun(1) : do 
+# man perlrun for more information
+
+Regards, 
+
+SL/
+---
+Stephane Lentz / Alcanet International - Internet Services
+
+
+-------------------------------------------------------
+In remembrance
+www.osdn.com/911/
+_______________________________________________
+Spamassassin-talk mailing list
+Spamassassin-talk@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-talk
+
+

@@ -1,0 +1,107 @@
+From exmh-users-admin@redhat.com  Wed Sep 11 13:43:47 2002
+Return-Path: <exmh-users-admin@spamassassin.taint.org>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id BFA5B16F03
+	for <jm@localhost>; Wed, 11 Sep 2002 13:43:46 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 11 Sep 2002 13:43:46 +0100 (IST)
+Received: from listman.spamassassin.taint.org (listman.spamassassin.taint.org [66.187.233.211]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g8B82rC06745 for
+    <jm-exmh@jmason.org>; Wed, 11 Sep 2002 09:02:54 +0100
+Received: from listman.spamassassin.taint.org (localhost.localdomain [127.0.0.1]) by
+    listman.redhat.com (Postfix) with ESMTP id 531063ED40; Wed, 11 Sep 2002
+    03:56:03 -0400 (EDT)
+Delivered-To: exmh-users@listman.spamassassin.taint.org
+Received: from int-mx1.corp.spamassassin.taint.org (int-mx1.corp.spamassassin.taint.org
+    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 98B603ED40
+    for <exmh-users@listman.redhat.com>; Wed, 11 Sep 2002 03:55:30 -0400 (EDT)
+Received: (from mail@localhost) by int-mx1.corp.spamassassin.taint.org (8.11.6/8.11.6)
+    id g8B7tPk11473 for exmh-users@listman.redhat.com; Wed, 11 Sep 2002
+    03:55:25 -0400
+Received: from mx1.spamassassin.taint.org (mx1.spamassassin.taint.org [172.16.48.31]) by
+    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g8B7tPk11468 for
+    <exmh-users@redhat.com>; Wed, 11 Sep 2002 03:55:25 -0400
+Received: from dingo.home.kanga.nu (ocker.kanga.nu [198.144.204.213]) by
+    mx1.redhat.com (8.11.6/8.11.6) with SMTP id g8B7cuw23656 for
+    <exmh-users@redhat.com>; Wed, 11 Sep 2002 03:38:57 -0400
+Received: from localhost ([127.0.0.1] helo=dingo.home.kanga.nu) by
+    dingo.home.kanga.nu with esmtp (Exim 3.35 #1 (Debian)) id 17p2L6-0002bM-00
+    for <exmh-users@redhat.com>; Wed, 11 Sep 2002 00:55:08 -0700
+Received: from localhost ([127.0.0.1] helo=kanga.nu) by
+    dingo.home.kanga.nu with esmtp (Exim 3.35 #1 (Debian)) id 17p2L6-0002bF-00
+    for <exmh-users@redhat.com>; Wed, 11 Sep 2002 00:55:08 -0700
+To: exmh-users@spamassassin.taint.org
+Subject: Re: Sorting
+In-Reply-To: Message from Robert Waldner <waldner@waldner.priv.at> of
+    "Wed, 11 Sep 2002 01:24:46 +0200."
+    <200209102325.g8ANP2KX022602@fsck.intern.waldner.priv.at>
+References: <200209102325.g8ANP2KX022602@fsck.intern.waldner.priv.at>
+X-Face: ?<YUs-cNP1\Oc-H>^_yw@fA`CEX&}--=*&XqXbF-oePvxaT4(kyt\nwM9]{]N!>b^K}-Mb9
+    YH%saz^>nq5usBlD"s{(.h'_w|U^3ldUq7wVZz$`u>MB(-4$f\a6Eu8.e=Pf\
+X-Image-Url: http://www.kanga.nu/~claw/kanga.face.tiff
+X-Url: http://www.kanga.nu/~claw/
+Message-Id: <9996.1031730908@kanga.nu>
+X-Envelope-To: exmh-users@spamassassin.taint.org
+From: J C Lawrence <claw@kanga.nu>
+X-Delivery-Agent: TMDA/0.58
+X-Tmda-Fingerprint: HP7OLOKowRnJvfkYd/QjGfm15K4
+X-Loop: exmh-users@spamassassin.taint.org
+Sender: exmh-users-admin@spamassassin.taint.org
+Errors-To: exmh-users-admin@spamassassin.taint.org
+X-Beenthere: exmh-users@spamassassin.taint.org
+X-Mailman-Version: 2.0.1
+Precedence: bulk
+Reply-To: exmh-users@spamassassin.taint.org
+List-Help: <mailto:exmh-users-request@spamassassin.taint.org?subject=help>
+List-Post: <mailto:exmh-users@spamassassin.taint.org>
+List-Subscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=subscribe>
+List-Id: Discussion list for EXMH users <exmh-users.spamassassin.taint.org>
+List-Unsubscribe: <https://listman.spamassassin.taint.org/mailman/listinfo/exmh-users>,
+    <mailto:exmh-users-request@redhat.com?subject=unsubscribe>
+List-Archive: <https://listman.spamassassin.taint.org/mailman/private/exmh-users/>
+Date: Wed, 11 Sep 2002 00:55:08 -0700
+
+On Wed, 11 Sep 2002 01:24:46 +0200 
+Robert Waldner <waldner@waldner.priv.at> wrote:
+> On Tue, 10 Sep 2002 09:27:12 PDT, J C Lawrence writes:
+
+>> I run exmh on my desktops at home and at work with the resulting exmh
+>> windows being displayed on both my work and home desktops (gratis SSH
+>> X11 forwarding).  In fact, your message was read and replied to (this
+>> message) while at work, using an exmh instance running on my home
+>> machine.
+
+> So you have 4 copies (1+1 per desktop) of exmh running?
+
+Yes.
+
+One of the nicer aspects of exmh's colour handling is that while I have
+the default background for the message pane set to black, the second
+insance of exmh displaying to a given $DISPLAY will set the background
+of the message pane to darkslategray.  Very nice as it provides an
+instant visual cue as to which is which.  (No: I've not checked where it
+gets that colour selection from).
+
+> That's what I usually do, but what I'd really like would be some
+> automagism to tell them "Flist", "Rescan Folder", which I now do
+> manually whenever I'm going to work at the "other" machine.
+
+<nod>
+
+-- 
+J C Lawrence                
+---------(*)                Satan, oscillate my metallic sonatas. 
+claw@kanga.nu               He lived as a devil, eh?		  
+http://www.kanga.nu/~claw/  Evil is a name of a foeman, as I live.
+
+
+
+_______________________________________________
+Exmh-users mailing list
+Exmh-users@redhat.com
+https://listman.redhat.com/mailman/listinfo/exmh-users
+
+

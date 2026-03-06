@@ -1,0 +1,187 @@
+From rpm-list-admin@freshrpms.net  Wed Oct  9 10:51:58 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: zzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id 1C65916F1F
+	for <zzz@localhost>; Wed,  9 Oct 2002 10:51:25 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzz@localhost (single-drop); Wed, 09 Oct 2002 10:51:25 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g996IjK22331 for
+    <zzz-rpm@spamassassin.taint.org>; Wed, 9 Oct 2002 07:18:46 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g996G1f09135; Wed, 9 Oct 2002 08:16:01
+    +0200
+Received: from mta6.snfc21.pbi.net (mta6.snfc21.pbi.net [206.13.28.240])
+    by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g996FAf08636 for
+    <rpm-list@freshrpms.net>; Wed, 9 Oct 2002 08:15:10 +0200
+Received: from eecs.berkeley.edu ([63.192.217.110]) by mta6.snfc21.pbi.net
+    (iPlanet Messaging Server 5.1 (built May  7 2001)) with ESMTP id
+    <0H3P00AM6AP7QI@mta6.snfc21.pbi.net> for rpm-list@freshrpms.net;
+    Tue, 08 Oct 2002 23:15:08 -0700 (PDT)
+From: Ben Liblit <liblit@eecs.berkeley.edu>
+Subject: Re: RedHat 8.0 and his own freetype
+To: rpm-zzzlist@freshrpms.net
+Message-Id: <3DA3C96B.7050007@eecs.berkeley.edu>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="Boundary_(ID_xjiotMI3LbV/zJ0Zs39NiA)"
+X-Accept-Language: en-us, en
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.1) Gecko/20020827
+References: <20021004155451.52f9ecd5.matthias_haase@bennewitz.com>
+    <3D9E1F20.3050300@eecs.berkeley.edu>
+    <20021008202424.67c6e32c.matthias_haase@bennewitz.com>
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Tue, 08 Oct 2002 23:15:07 -0700
+Date: Tue, 08 Oct 2002 23:15:07 -0700
+
+This is a multi-part message in MIME format.
+
+--Boundary_(ID_xjiotMI3LbV/zJ0Zs39NiA)
+Content-type: text/plain; charset=us-ascii; format=flowed
+Content-transfer-encoding: 7BIT
+
+Following further study, I've concluded:
+
+   1. It is easy to enable the bytecode interpreter.
+
+   2. This noticeably improves rendering of non-antialiased text.
+
+   3. This noticeably *harms* rendering of antialiased text.
+
+Point #3 probably surprises the rest of you as much as it surprised me. 
+  Ever since turning on the bytecode interpreter, I've been bugged by a 
+sense that the antialiased text in my GNOME2 applications just looked, 
+well, wrong somehow.  I finally took some comparison screen shots with 
+and without the interpreter, and that made the difference crystal clear.
+
+Consider the two images attached below.  The first, "no-bytecodes.png", 
+shows some text rendered by a GNOME2 panel menu without the bytecode 
+interpreter.  Contrast this with the second, "bytecodes.png", taken with 
+the bytecode interpreter enabled.
+
+When the bytecode interpreter is turned on, notice that several 
+rendering anomalies appear:
+
+   - Several letters are narrower, giving the whole run of text a more
+     compressed feel.  This is especially noticeable in "R" and "o".
+
+   - The left side of the "Q" is painted in too light a shade of grey,
+     causing it to drop out somewhat.  "C", not in this sample, has the
+     same problem.
+
+   - "Qu" are set right up against each other, with insufficient
+     whitespace between them.
+
+   - "M" is distinctly asymmetric.
+
+   - The enclosed loop of "a" looks muddy, as it is partially filled
+     with grey.  Contrast with "a" drawn without the bytecode
+     interpreter, which has a nice clear open loop.
+
+Ick.  Perhaps this is why Red Hat turned the bytecode interpreter off. 
+It may improve non-antialiased rendering, but only at the expense of 
+making a mess of antialiased rendering.
+
+This may come down to a matter of personal aesthetics, but for my part, 
+I'm going back to Red Hat's standard packages with the bytecode 
+interpreter turned *off*.
+
+--Boundary_(ID_xjiotMI3LbV/zJ0Zs39NiA)
+Content-type: image/png; name=no-bytecodes.png
+Content-transfer-encoding: base64
+Content-disposition: inline; filename=no-bytecodes.png
+
+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
+/wCHLIpMysuGygAAAABJRU5ErkJggg==
+
+--Boundary_(ID_xjiotMI3LbV/zJ0Zs39NiA)
+Content-type: image/png; name=bytecodes.png
+Content-transfer-encoding: base64
+Content-disposition: inline; filename=bytecodes.png
+
+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
+
+--Boundary_(ID_xjiotMI3LbV/zJ0Zs39NiA)--
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

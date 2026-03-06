@@ -1,0 +1,62 @@
+From ilug-admin@linux.ie  Tue Jul 30 05:27:31 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E52A2440EF
+	for <jm@localhost>; Tue, 30 Jul 2002 00:27:30 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 05:27:30 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6U4Saq07392 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 05:28:37 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id FAA16464; Tue, 30 Jul 2002 05:25:46 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from escargot.esatclear.ie (escargot.esatclear.ie
+    [194.145.128.30]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id FAA16431
+    for <ilug@linux.ie>; Tue, 30 Jul 2002 05:25:38 +0100
+Received: from esatclear.ie (p-airlock019.esatclear.ie [194.165.169.19])
+    by escargot.esatclear.ie (8.9.3/8.9.3) with ESMTP id FAA25320 for
+    <ilug@linux.ie>; Tue, 30 Jul 2002 05:25:37 +0100
+Message-Id: <3D461484.7030003@esatclear.ie>
+Date: Tue, 30 Jul 2002 05:22:28 +0100
+From: Paul Kelly <longword@esatclear.ie>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.1) Gecko/20020725
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] Optimizing for Pentium Pt.2
+References: <200207262228.XAA19581@lugh.tuatha.org>
+    <20020727015716.A6561@ie.suberic.net>
+    <200207271701.SAA23172@lugh.tuatha.org>	<3D4359EE.9050405@esatclear.ie>
+    <002a01c23664$b7326d40$f264a8c0@sabeo.ie>	<3D44BE4F.8070603@esatclear.ie>
+    <20020729100846.359298c3.lbedford@netnoteinc.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Liam Bedford wrote:
+> that is the CVS version, but it seems that more breakage is to come with the
+> kernel :(
+
+Limbo seems to be able to compile its own kernel with its own gcc 3.1. 
+That said, I don't want to know what kind of patches Redhat are applying 
+to that kernel. The .spec file alone is 128KBytes! One of the patches is 
+2.4.19-ac10. Redhat don't seem to have patched Limbo's gcc too heavily.
+
+Paul.
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

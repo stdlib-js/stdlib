@@ -1,0 +1,70 @@
+From fork-admin@xent.com  Sat Sep 21 10:43:24 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2CD6B16F03
+	for <jm@localhost>; Sat, 21 Sep 2002 10:43:24 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 21 Sep 2002 10:43:24 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8L8BnC15006 for <jm@jmason.org>;
+    Sat, 21 Sep 2002 09:11:49 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D0A912940CA; Sat, 21 Sep 2002 01:08:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp10.atl.mindspring.net (smtp10.atl.mindspring.net
+    [207.69.200.246]) by xent.com (Postfix) with ESMTP id 801AB29409C for
+    <fork@xent.com>; Sat, 21 Sep 2002 01:07:18 -0700 (PDT)
+Received: from user-119ac86.biz.mindspring.com ([66.149.49.6]) by
+    smtp10.atl.mindspring.net with esmtp (Exim 3.33 #1) id 17sfLg-0004Pk-00;
+    Sat, 21 Sep 2002 04:10:44 -0400
+MIME-Version: 1.0
+X-Sender: rahettinga@pop.earthlink.net
+Message-Id: <p05111a27b9b1d842c9fe@[66.149.49.6]>
+In-Reply-To: <DAV72xvjPkQTGpaoG1V00000fd0@hotmail.com>
+References: <979BE8FE-CCF6-11D6-817E-000393A46DEA@alumni.caltech.edu>
+    <DAV72xvjPkQTGpaoG1V00000fd0@hotmail.com>
+To: "Mr. FoRK" <fork_list@hotmail.com>, <fork@spamassassin.taint.org>
+From: "R. A. Hettinga" <rah@shipwright.com>
+Subject: Re: sed /s/United States/Roman Empire/g
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Sat, 21 Sep 2002 04:03:36 -0400
+
+At 9:34 PM -0700 on 9/20/02, Mr. FoRK wrote:
+
+
+> "Free trade and free markets have proven their ability to lift whole
+> societies out of poverty"
+> I'm not a socio-political/history buff - does anybody have some clear
+> examples?
+
+You're probably living in one, or you wouldn't be able to post here.
+
+;-).
+
+Cheers,
+RAH
+
+-- 
+-----------------
+R. A. Hettinga <mailto: rah@ibuc.com>
+The Internet Bearer Underwriting Corporation <http://www.ibuc.com/>
+44 Farquhar Street, Boston, MA 02131 USA
+"... however it may deserve respect for its usefulness and antiquity,
+[predicting the end of the world] has not been found agreeable to
+experience." -- Edward Gibbon, 'Decline and Fall of the Roman Empire'
+
+

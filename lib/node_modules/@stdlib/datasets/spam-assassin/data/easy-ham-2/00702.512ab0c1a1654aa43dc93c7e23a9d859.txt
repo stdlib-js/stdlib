@@ -1,0 +1,107 @@
+From fork-admin@xent.com  Wed Jul 24 03:23:20 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DB532440CC
+	for <jm@localhost>; Tue, 23 Jul 2002 22:23:19 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 03:23:19 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O2Nl414578 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 03:23:48 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C9E84294109; Tue, 23 Jul 2002 19:13:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from krypton.netropolis.org (unknown [209.225.18.137]) by
+    xent.com (Postfix) with ESMTP id 1C418294103 for <fork@xent.com>;
+    Tue, 23 Jul 2002 19:12:07 -0700 (PDT)
+Received: from [203.200.2.119] (helo=rincewind.pobox.com) by
+    krypton.netropolis.org with esmtp (Exim 3.35 #1 (Debian)) id
+    17XBjD-0002gr-00; Tue, 23 Jul 2002 22:18:15 -0400
+X-PGP-Dsskey: 0x55FAB8D3
+X-PGP-Rsakey: 0xCAA67415
+Message-Id: <5.1.0.14.2.20020724074914.02c6fec0@bgl.vsnl.net.in>
+X-Nil: 
+To: "Joseph S. Barrera III" <joe@barrera.org>,
+	Lucas Gonze <lgonze@panix.com>
+From: Udhay Shankar N <udhay@pobox.com>
+Subject: Re: spam maps
+Cc: FoRK <fork@spamassassin.taint.org>
+In-Reply-To: <3D3D7D3F.7090808@barrera.org>
+References: <Pine.LNX.4.44.0207230912380.9499-100000@localhost.localdomain>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"; format=flowed
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Wed, 24 Jul 2002 07:50:21 +0530
+
+At 08:58 AM 7/23/02 -0700, Joseph S. Barrera III wrote:
+
+>And you. I especially hate you.
+
+Heh. The name of the band is SO appropriate...:)
+
+http://www.purelyrics.com/index.php?lyrics=foixjtop
+
+I, hate the rain and sunny weather
+And I, hate the beach and moutains too
+(and) I don't like a thing about the city, no, no
+And I, I, I, hate the country side too!
+
+And I, hate everything about you!
+...everything about you!
+
+I don't like a thing about your mother
+And I, I hate your daddy's guts too
+I, don't like a thing about your sister
+'cause I, I, I, think sex is overrated too.
+
+And I, get sick when I'm around, I, can't stand to be around
+I, hate everything about you!
+
+everything about you, everything about you, everything about
+you
+
+Some say I got a bad attitude
+But that don't change the way I feel about you
+And if you think this might be bringing me down
+Look again cause I ain't wearin' no frown!
+
+I don't really care about your sister
+Fuck the little bitch 'cause I already kissed her
+
+One thing that I did to your lady
+Put her on the bed and she didn't say maybe
+I know you know everybody knows
+The way it comes, the way it's gonna' go
+
+You think it's sad
+And that's too bad
+'cause I'm havin'
+A ball hatin'
+Every little thing about you!
+
+Everything about you, everything about
+I get sick when I'm around
+I can't stand to be around
+I hate everything about you
+
+
+-- 
+((Udhay Shankar N)) ((udhay @ pobox.com)) ((www.digeratus.com))
+      God is silent. Now if we can only get Man to shut up.
+
+http://xent.com/mailman/listinfo/fork
+
+

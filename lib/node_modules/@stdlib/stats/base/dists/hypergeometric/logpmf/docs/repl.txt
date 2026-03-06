@@ -1,0 +1,97 @@
+
+{{alias}}( x, N, K, n )
+    Evaluates the natural logarithm of the probability mass function (PMF) for a
+    hypergeometric distribution with population size `N`, subpopulation size
+    `K`, and number of draws `n` at a value `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided a population size `N`, subpopulation size `K`, or draws `n`
+    which is not a nonnegative integer, the function returns `NaN`.
+
+    If the number of draws `n` or the subpopulation size `K` exceed population
+    size `N`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    N: integer
+        Population size.
+
+    K: integer
+        Subpopulation size.
+
+    n: integer
+        Number of draws.
+
+    Returns
+    -------
+    out: number
+        Evaluated logPMF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0, 8, 4, 2 )
+    ~-0.56
+    > y = {{alias}}( 2.0, 8, 4, 2 )
+    ~-1.54
+    > y = {{alias}}( 0.0, 8, 4, 2 )
+    ~-1.54
+    > y = {{alias}}( 1.5, 8, 4, 2 )
+    -Infinity
+
+    > y = {{alias}}( NaN, 10, 5, 2 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 5, 2 )
+    NaN
+    > y = {{alias}}( 0.0, 10, NaN, 2 )
+    NaN
+    > y = {{alias}}( 0.0, 10, 5, NaN )
+    NaN
+
+    > y = {{alias}}( 2.0, 10.5, 5, 2 )
+    NaN
+    > y = {{alias}}( 2.0, 5, 1.5, 2 )
+    NaN
+    > y = {{alias}}( 2.0, 10, 5, -2.0 )
+    NaN
+    > y = {{alias}}( 2.0, 10, 5, 12 )
+    NaN
+    > y = {{alias}}( 2.0, 8, 3, 9 )
+    NaN
+
+
+{{alias}}.factory( N, K, n )
+    Returns a function for evaluating the natural logarithm of the probability
+    mass function (PMF) of a hypergeometric distribution with population size
+    `N`, subpopulation size `K`, and number of draws `n`.
+
+    Parameters
+    ----------
+    N: integer
+        Population size.
+
+    K: integer
+        Subpopulation size.
+
+    n: integer
+        Number of draws.
+
+    Returns
+    -------
+    logpmf: Function
+        Logarithm of probability mass function (PMF).
+
+    Examples
+    --------
+    > var mylogPMF = {{alias}}.factory( 30, 20, 5 );
+    > var y = mylogPMF( 4.0 )
+    ~-1.079
+    > y = mylogPMF( 1.0 )
+    ~-3.524
+
+    See Also
+    --------
+

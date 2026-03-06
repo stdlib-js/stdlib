@@ -1,0 +1,65 @@
+From fork-admin@xent.com  Wed Jul 24 07:21:33 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 8CAFB440CC
+	for <jm@localhost>; Wed, 24 Jul 2002 02:21:32 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 24 Jul 2002 07:21:32 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6O6Fm424214 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 07:15:49 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 29E98294131; Tue, 23 Jul 2002 23:05:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from t2.serverbox.net (t2.serverbox.net [64.71.187.100]) by
+    xent.com (Postfix) with SMTP id 50AD329410F for <fork@xent.com>;
+    Tue, 23 Jul 2002 23:04:07 -0700 (PDT)
+Received: (qmail 12619 invoked from network); 24 Jul 2002 06:13:18 -0000
+Received: from unknown (HELO techdirt) (12.236.16.241) by t2.serverbox.net
+    with SMTP; 24 Jul 2002 06:13:18 -0000
+Message-Id: <3.0.32.20020723231125.03bc2cf0@techdirt.com>
+X-Sender: mike@techdirt.com
+X-Mailer: Windows Eudora Pro Version 3.0 (32) -- [Cornell Modified]
+To: "Gordon Mohr" <gojomo@usa.net>, <fork@spamassassin.taint.org>
+From: Mike Masnick <mike@techdirt.com>
+Subject: Re: Mossberg on 'ChoiceMail': "In my tests, it cut my spam to zero."
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Tue, 23 Jul 2002 23:11:33 -0700
+
+At 10:46 PM 7/23/02 -0700, Gordon Mohr wrote:
+>Surprised this wasn't already passed through here: about a 
+>week and a half ago, Walter Mossberg reviewed ChoicEMail, 
+>a spam-fighting tool where new, unknown senders have to 
+>request passage through your whitelist-based mailwall.
+
+Lately, a fairly large % of the spam I've been getting has been coming from
+spam systems that forge my own address as the "from" address... Those spam
+messages would get through any whitelist I set up (especially since I email
+stuff to myself all the time).  If whitelists become more popular, I
+imagine spammers will resort to doing that for the majority of their spams,
+making whitelists less helpful.
+
+Plus, I'm still not sure how I feel about whitelists.  I don't think I'm so
+special that people should need to fill out a special form just to send me
+email.  I could see certain friends of mine getting fairly annoyed
+(especially those with multiple email addresses...).
+
+-Mike
+http://xent.com/mailman/listinfo/fork
+
+

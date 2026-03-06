@@ -1,0 +1,27 @@
+
+logStart( fpath )
+    Starts logging commands and printed output to a specified file path.
+
+    Parameters
+    ----------
+    fpath: string
+        File path.
+
+    Returns
+    -------
+    id: number
+        Record identifier.
+
+    Examples
+    --------
+    > var id = logStart( './path/to/file.txt' );
+    > 1 + 1
+    2
+    > 'foo'
+    'foo'
+    > logStop( id );
+
+    See Also
+    --------
+    logStop
+

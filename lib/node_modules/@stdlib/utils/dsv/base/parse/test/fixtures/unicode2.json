@@ -1,0 +1,17 @@
+{
+  "dsv": "id,name\n1,中国人\n2,english\n",
+  "json": [
+    [
+      "id",
+      "name"
+    ],
+    [
+      "1",
+      "中国人"
+    ],
+    [
+      "2",
+      "english"
+    ]
+  ]
+}

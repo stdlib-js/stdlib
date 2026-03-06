@@ -1,0 +1,20 @@
+Return-Path: anthony@interlink.com.au
+Delivery-Date: Sat Sep  7 04:52:54 2002
+From: anthony@interlink.com.au (Anthony Baxter)
+Date: Sat, 07 Sep 2002 13:52:54 +1000
+Subject: [Spambayes] understanding high false negative rate 
+In-Reply-To: <200209070350.g873obE20720@localhost.localdomain> 
+Message-ID: <200209070352.g873qs820746@localhost.localdomain>
+
+
+
+> course, it instantly picked up on 'received:2001' as a non-ham. 
+                                                            -spam.
+
+*sigh*
+
+
+-- 
+Anthony Baxter     <anthony@interlink.com.au>   
+It's never too late to have a happy childhood.
+

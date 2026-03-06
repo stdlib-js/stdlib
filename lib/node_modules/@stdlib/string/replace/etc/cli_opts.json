@@ -1,0 +1,19 @@
+{
+	"boolean": [
+		"help",
+		"version"
+	],
+	"string": [
+		"search",
+		"newval",
+		"split"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		]
+	}
+}

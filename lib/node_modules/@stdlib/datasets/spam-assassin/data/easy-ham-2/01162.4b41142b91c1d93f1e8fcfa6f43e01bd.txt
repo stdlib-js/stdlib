@@ -1,0 +1,87 @@
+From rpm-list-admin@freshrpms.net  Thu Jul 25 11:07:50 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7F628440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 06:07:03 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:07:03 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6P9hM413303 for
+    <jm-rpm@jmason.org>; Thu, 25 Jul 2002 10:43:22 +0100
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by webnote.net
+    (8.9.3/8.9.3) with ESMTP id KAA08926 for <jm-rpm@jmason.org>;
+    Thu, 25 Jul 2002 10:31:22 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g6P9S1C01050; Thu, 25 Jul 2002 11:28:01
+    +0200
+Received: from kamakiriad.com (cable-b-36.sigecom.net [63.69.210.36]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g6P9RbC32353 for
+    <rpm-list@freshrpms.net>; Thu, 25 Jul 2002 11:27:37 +0200
+Received: from aquila.kamakiriad.local (aquila.kamakiriad.local
+    [192.168.1.3]) by kamakiriad.com (8.11.6/8.11.0) with SMTP id g6P9RMo23874
+    for <rpm-list@freshrpms.net>; Thu, 25 Jul 2002 04:27:23 -0500
+From: Brian Fahrlander <kilroy@kamakiriad.com>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: apt-get...universe (was: Sylpheed with GNOME 2
+Message-Id: <20020725042722.60ca98b7.kilroy@kamakiriad.com>
+In-Reply-To: <20020725110700.3797c42e.matthias@egwn.net>
+References: <20020724.FRs.59646600@www.dudex.net>
+    <1027537563.18947.12.camel@fuggles>
+    <1027579516.15921.18.camel@localhost.localdomain>
+    <20020725110700.3797c42e.matthias@egwn.net>
+X-Mailer: Sylpheed version 0.8.0 (GTK+ 1.2.10; i386-redhat-linux)
+X-Message-Flag: : Shame on you!  You know Outlook is how viruses are spread!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Thu, 25 Jul 2002 04:27:22 -0500
+Date: Thu, 25 Jul 2002 04:27:22 -0500
+
+On Thu, 25 Jul 2002 11:07:00 +0200, Matthias Saou <matthias@egwn.net> wrote:
+
+> Once upon a time, Lance wrote :
+> 
+> > Well, from the looks of things, I can import all my mail settings from
+> > Evolution to Sylpheed.  Has anyone successfully run Sylpheed in Gnome
+> > 2.0?  I noticed with 'apt-get install gnome-session' from the 'rpm
+> > http://apt.sunnmore.net gnome2 73' repository, Sylpheed isn't one of the
+> > packages selected for deletion.
+> 
+> I think that's simply because Sylpheed isn't a GNOME application, but a
+> "simple" gtk+ one. It needs no GNOME libs at all, so upgrading to GNOME 2
+> but keeping gtk+ 1.2 will let you keep Sylpheed with no problem.
+
+    Yeah, mine works here; I did about the same thing.
+
+    Hey: "Universe"   I saw this keyword on the gstreamer website.  They said something like "If you're feeling froggy and want to jump into it, use apt-get gstreamer-universe" but I've not gotten the syntax of it right, to get "all" of a project yet.  Has anyone used this yet?
+
+------------------------------------------------------------------------
+Brian Fahrländer              Linux Zealot, Conservative, and Technomad
+Evansville, IN                    My Voyage: http://www.CounterMoon.com
+ICQ  5119262
+------------------------------------------------------------------------
+I don't want to hear news from Isreal until the news contains the words
+"Bullet", "Brain", and "Arafat".
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

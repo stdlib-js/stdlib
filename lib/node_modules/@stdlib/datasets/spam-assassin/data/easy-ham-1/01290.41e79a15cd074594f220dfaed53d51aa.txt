@@ -1,0 +1,119 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  2 12:32:46 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5CDAA43F9B
+	for <jm@localhost>; Mon,  2 Sep 2002 07:32:44 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:32:44 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7V394Z20828 for
+    <jm-rpm@jmason.org>; Sat, 31 Aug 2002 04:09:04 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7V372J07985; Sat, 31 Aug 2002 05:07:02
+    +0200
+Received: from imf20bis.bellsouth.net (mail020.mail.bellsouth.net
+    [205.152.58.60]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g7V36EJ07619 for <rpm-list@freshrpms.net>; Sat, 31 Aug 2002 05:06:14 +0200
+Received: from adsl-157-21-77.msy.bellsouth.net ([66.157.21.77]) by
+    imf20bis.bellsouth.net (InterMail vM.5.01.04.19
+    201-253-122-122-119-20020516) with ESMTP id
+    <20020831030604.PBIG7767.imf20bis.bellsouth.net@adsl-157-21-77.msy.bellsouth.net>
+    for <rpm-list@freshrpms.net>; Fri, 30 Aug 2002 23:06:04 -0400
+Subject: Re: alsa-driver rebuild fails with undeclared USB symbol
+From: Lance <lance_tt@bellsouth.net>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <3D70306F.8090201@eecs.berkeley.edu>
+References: <3D70306F.8090201@eecs.berkeley.edu>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-7)
+Message-Id: <1030763168.15592.1.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 30 Aug 2002 22:06:08 -0500
+Date: 30 Aug 2002 22:06:08 -0500
+
+I know this is simple but do you have /usr/src/linux and
+/usr/src/linux-2.4 symlinked to your kernel source directory?  Also is
+there a .config in /usr/src/yourkernelsource/.config  ?
+
+On Fri, 2002-08-30 at 21:56, Ben Liblit wrote:
+> I am trying to rebuild the recently posted ALSA driver package for my 
+> kernel.  Although I run Red Hat 7.3, I am not using a Red Hat kernel 
+> package: my kernel is lovingly downloaded, configured, and built by 
+> hand.  Call me old fashioned.
+> 
+> Sadly, the RPM rebuild fails part way through:
+> 
+>      % rpm --rebuild alsa-driver-0.9.0rc3-fr6.src.rpm
+> 
+>      gcc -DALSA_BUILD -D__KERNEL__ -DMODULE=1 \
+>      -I/usr/src/redhat/BUILD/alsa-driver-0.9.0rc3/include \
+>      -I/lib/modules/2.4.18/build/include -O2 \
+>      -mpreferred-stack-boundary=2 -march=i686 -DLINUX -Wall \
+>      -Wstrict-prototypes -fomit-frame-pointer -pipe   -DEXPORT_SYMTAB \
+>      -c sound.c
+> 
+>      sound.c:41: `snd_hack_usb_set_interface' undeclared here (not in a \
+>      function)
+> 
+>      sound.c:41: initializer element is not constant
+> 
+>      sound.c:41: (near initialization for \
+>      __ksymtab_snd_hack_usb_set_interface.value')
+> 
+>      make[1]: *** [sound.o] Error 1
+> 
+> The line in question looks like this:
+> 
+> 	/* USB workaround */
+> 	#if LINUX_VERSION_CODE < KERNEL_VERSION(2, 5, 24)
+> 	#if defined(CONFIG_SND_USB_AUDIO) || \
+> 	defined(CONFIG_SND_USB_AUDIO_MODULE) || \
+> 	defined(CONFIG_SND_USB_MIDI) || \
+> 	defined(CONFIG_SND_USB_MIDI_MODULE)
+> -41-> 
+> EXPORT_SYMBOL(snd_hack_usb_set_interface);
+> 	#endif
+> 	#endif
+> 
+> Any suggestions?
+> 
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+-- 
+:
+####[ Linux One Stanza Tip (LOST) ]###########################
+
+Sub : Finding out files larger than given size       LOST #324
+
+To find out all files in a dir over a given size, try:
+find /path/to/dir_of_file -type f -size +Nk
+[Where N is a number like 1024 for 1mb, and multiples thereof] 
+
+####[Discussions on LIH : 04 Jul 2002]########################
+:
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

@@ -1,0 +1,122 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:05:51 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 58EC444152
+	for <jm@localhost>; Mon, 12 Aug 2002 05:55:54 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:55:54 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7ABHLb18973 for
+    <jm-ilug@jmason.org>; Sat, 10 Aug 2002 12:17:21 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA25741; Sat, 10 Aug 2002 12:13:20 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay06.indigo.ie (relay06.indigo.ie [194.125.133.230]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id MAA25706 for <ilug@linux.ie>;
+    Sat, 10 Aug 2002 12:13:15 +0100
+Received: (qmail 45930 messnum 1048917 invoked from
+    network[194.125.174.76/ts09-076.dublin.indigo.ie]); 10 Aug 2002 11:13:13
+    -0000
+Received: from ts09-076.dublin.indigo.ie (HELO tux.indigo.ie)
+    (194.125.174.76) by relay06.indigo.ie (qp 45930) with SMTP; 10 Aug 2002
+    11:13:13 -0000
+Received: from tux (tux [127.0.0.1]) by tux.indigo.ie (Postfix) with ESMTP
+    id 0FFEE26819D for <ilug@linux.ie>; Sat, 10 Aug 2002 12:11:51 +0100 (IST)
+Subject: Re: [ILUG] cdrecord + 2.4.19 = hard-lock
+From: FRLinux <frlinux@frlinux.net>
+To: ilug@linux.ie
+In-Reply-To: <20020810005844.GA652@calm.mc>
+References: <20020810005844.GA652@calm.mc>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8
+Date: 10 Aug 2002 12:11:50 +0100
+Message-Id: <1028977911.4634.2.camel@tux>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hello,
+
+I have been using 2.4.19 since a couple of days on a Mandrake 8.2 with
+standard RPMs for cdrecord and it didn't give any hard locks on it at
+all, i've already burnt a couple of CDs.
+
+Steph
+
+On Sat, 2002-08-10 at 01:58, Michael Conry wrote:
+> Hi all,
+> I've run into a fairly intractable (for me) problem, and was wondering
+> if anybody could give me pointers on how to deal with it.
+> 
+> I am running Debian Woody on a Pentium III IDE based system.
+> I have a Ricoh 7083a ide cd rewriter, which I use using cdrecord and the
+> scsi over ide kernel modules.  I was running kernel 2.4.18 until
+> probably last weekend when I noticed 2.4.19 was out.  Downloaded patch
+> and installed new kernel with no real problems.  This morning I went to
+> burn a CDROM, and the system locked hard.  Rebooting into 2.4.18 allowed
+> cdburning to work fine.
+> 
+> This problem is very reproducible (on my system at least).
+> the cdrecord command I was using was
+>     cdrecord -v speed=4 blank=fast dev=0,1,0 -data bak.iso
+> The blanking appears to go ok, but when it tries to write data, it just
+> locks up the entire system (can't ping it from outside even).  AFAICS,
+> the system just stops.  Hard reset is only way back in, and when it does
+> reboot, I cannot see anything useful in any logfiles (/var/log/messages
+> /var/log/kern.log /var/log/syslog, at any rate).
+> cdrecord -scanbus works fine and reports the two pseudo-scsi devices (my
+> cdr drive and my cdrw).
+> The same lock occurs even if there is no blanking.
+> 
+> I tried upgrading to 2.4.20-pre1-ac1 (on assumption that if there was a
+> kernel issue it might have been fixed in these patches), but it gives
+> the same error.  I also downloaded and compiled the source for
+> cdrecord 1.1.10, and installed it instead of the debian package (i was
+> wondering if maybe there was some compile option the packager had used
+> which maybe would cause the problem), and still the problem persisted.
+> 
+> Anyway, I'm completely stumped.  Google searching has not done me much
+> good, and I'm a little bit lost.  What I'd like to know is
+> a)  How to fix the problem ;-)
+> b)  Is this likely to be an application or kernel problem?  The severity
+>     of the crash would make me suspect it is a kernel problem, but I'm
+>     not very knowledgeable on these things.
+> c)  Should I post a description of this to the kernel mailing list? If
+>     this is an appropriate course of action, are there any tips (beyond
+>     the guidelines on kernel.org)?
+> 
+> Like I said, I'm lost on this one, so any info is very gratefully
+> received.
+> mick
+> -- 
+> Michael Conry   Ph.:+353-1-7161987, Web: http://www.acronymchile.com
+> Key fingerprint = 5508 B563 6791 5C84 A947  CB01 997B 3598 09DE 502C
+> 
+> -- 
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+> List maintainer: listmaster@linux.ie
+> 
+-- 
+Mail sent on Mandkrake 8.2 ext3 k2419 AMD 1.4
+"Piece by Piece, the penguins are taking my sanity apart ..."
+http://frlinux.net - frlinux@frlinux.net
+http://gentoofr.org - Portail Francais sur Gentoo Linux
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

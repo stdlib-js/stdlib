@@ -1,0 +1,62 @@
+From ilug-admin@linux.ie  Tue Aug 13 10:40:40 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0B0C343C36
+	for <jm@localhost>; Tue, 13 Aug 2002 05:39:42 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 10:39:42 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7D9cOb25641 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 10:38:24 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA05830; Tue, 13 Aug 2002 10:36:28 +0100
+Received: from luggage.hts.horizon.ie (gandalf.horizon.ie [193.120.105.3])
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA05797 for
+    <ilug@linux.ie>; Tue, 13 Aug 2002 10:36:21 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host gandalf.horizon.ie
+    [193.120.105.3] claimed to be luggage.hts.horizon.ie
+Received: from hts.horizon.ie (localhost.localdomain [127.0.0.1]) by
+    luggage.hts.horizon.ie (Postfix) with SMTP id 3AC0736B71; Tue,
+    13 Aug 2002 10:32:20 +0100 (IST)
+Date: Tue, 13 Aug 2002 10:32:20 +0100
+From: Chris Higgins <chris.higgins@hts.horizon.ie>
+To: ilug@linux.ie, iiu@taint.org
+Cc: chris.higgins@hts.horizon.ie
+Message-Id: <20020813103220.138dac88.chris.higgins@hts.horizon.ie>
+Reply-To: chris.higgins@hts.horizon.ie
+Organization: Horizon Technical Services Ireland
+X-Mailer: Sylpheed version 0.8.0 (GTK+ 1.2.10; i586-mandrake-linux-gnu)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Subject: [ILUG] Ireland's hub just moved further away from the internet.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+
+Anyone notice that Esat have started routing most of
+their traffic through Concert...  I've just had my
+first >32hop traceroute since the 1995(ish)
+
+So much for being at the heart of the Internet !
+
+--
+
+Chris Higgins
+Horizon
+e: chris.higgins at hts.horizon.ie
+tel: +353-1-6204900
+fax: +353-1-6204901
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

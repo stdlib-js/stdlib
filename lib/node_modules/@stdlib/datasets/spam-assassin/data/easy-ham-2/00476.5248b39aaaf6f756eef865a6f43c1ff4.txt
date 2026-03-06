@@ -1,0 +1,66 @@
+From ilug-admin@linux.ie  Tue Aug 20 23:59:11 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 81E0C43C32
+	for <jm@localhost>; Tue, 20 Aug 2002 18:59:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 20 Aug 2002 23:59:11 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7KMvcZ28087 for
+    <jm-ilug@jmason.org>; Tue, 20 Aug 2002 23:57:38 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA29057; Tue, 20 Aug 2002 23:56:22 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail02.svc.cra.dublin.eircom.net
+    (mail02.svc.cra.dublin.eircom.net [159.134.118.18]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id XAA29020 for <ilug@linux.ie>; Tue,
+    20 Aug 2002 23:56:14 +0100
+Received: (qmail 64653 messnum 31234 invoked from
+    network[194.125.165.67/ts03-067.cork.indigo.ie]); 20 Aug 2002 22:55:44
+    -0000
+Received: from ts03-067.cork.indigo.ie (HELO ?194.125.165.67?)
+    (194.125.165.67) by mail02.svc.cra.dublin.eircom.net (qp 64653) with SMTP;
+    20 Aug 2002 22:55:44 -0000
+User-Agent: Microsoft-Entourage/9.0.2509
+Date: Tue, 20 Aug 2002 23:51:16 +0100
+From: Tim <timod@esatclear.ie>
+To: ILUG <ilug@linux.ie>
+Message-Id: <B9888674.A460B%timod@esatclear.ie>
+MIME-Version: 1.0
+X-Face: 
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    XAA29020
+Subject: [ILUG] [OT] MacOSX mailing list?
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi all,
+
+Sorry for the OT. Just wondering if anybody knows of a similar type mailing
+list specifically dealing with MacOSX?  (which, FYI is a version of BSD)
+
+
+Slán,
+
+Tim
+
+-- 
+One month on the internet in Ireland: Eur720
+One month on the internet in Britain: Eur 25
+Visit http://www.irelandoffline.org
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

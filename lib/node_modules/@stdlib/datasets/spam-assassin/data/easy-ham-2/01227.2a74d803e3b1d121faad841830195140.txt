@@ -1,0 +1,86 @@
+From rpm-list-admin@freshrpms.net  Wed Aug 14 11:00:48 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AF03D44149
+	for <jm@localhost>; Wed, 14 Aug 2002 05:52:05 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:52:05 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7E9Sc408536 for
+    <jm-rpm@jmason.org>; Wed, 14 Aug 2002 10:28:38 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7E9Q2J02895; Wed, 14 Aug 2002 11:26:02
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7E9PgJ01953 for
+    <rpm-list@freshrpms.net>; Wed, 14 Aug 2002 11:25:43 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: DVD+RW tools available (Was: Re: How to add service port ?)
+Message-Id: <20020814112328.325411bb.matthias@egwn.net>
+In-Reply-To: <1029314490.1736.8.camel@athlon.ckloiber.com>
+References: <3D578B98.79F80294@traderman.co.uk>
+    <20020812123237.4014ef57.matthias@egwn.net>
+    <1029314490.1736.8.camel@athlon.ckloiber.com>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Wed, 14 Aug 2002 11:23:28 +0200
+Date: Wed, 14 Aug 2002 11:23:28 +0200
+
+Once upon a time, Chris wrote :
+
+> To bring things back on topic, I was practicing my "rpmbuild'n skillz"
+> and made an rpm with some simple software tools to drive my DVD+RW
+> burner. No GUI frontend, but it works just fine from the command line. I
+> even used it to burn a bootable DVD version of Red Hat 7.3.
+> 
+> ftp://people.redhat.com/ckloiber/dvd+rw-tools-0.1.src.rpm
+
+Nice! :-)
+What about the "dvdrecord" package that's already included in 7.3? It
+doesn't do what this one does? I'm asking this because I've got a friend
+with an iMac running YellowDog Linux (basically Red Hat Linux for PPC), and
+it's one of the newer versions with a DVD burner. I'd be very interested in
+using his drive to burn DVDs full of 2-CDs movies or full of "files for
+xmame" ;-)
+Also, a bootable DVD of Red Hat Linux 7.3 would be great as I've still not
+burned the CDs even once for myself since I always install through the
+network (and haven't found an easy way of purchasing an english boxed set
+here in Spain...).
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

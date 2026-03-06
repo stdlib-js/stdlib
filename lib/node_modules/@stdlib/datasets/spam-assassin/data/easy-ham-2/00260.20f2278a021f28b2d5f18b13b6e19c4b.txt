@@ -1,0 +1,71 @@
+From ilug-admin@linux.ie  Tue Aug  6 11:54:43 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 1A4A8441DB
+	for <jm@localhost>; Tue,  6 Aug 2002 06:48:32 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 06 Aug 2002 11:48:32 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g75N6Fk30644 for
+    <jm-ilug@jmason.org>; Tue, 6 Aug 2002 00:06:15 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA31419; Tue, 6 Aug 2002 00:04:21 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id AAA31386 for <ilug@linux.ie>;
+    Tue, 6 Aug 2002 00:04:14 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17bqtY-0001ep-00; Mon, 05 Aug 2002 16:04:12 -0700
+Date: Mon, 5 Aug 2002 16:04:12 -0700
+To: ilug@linux.ie
+Cc: deccy@csn.ul.ie
+Subject: Re: [ILUG] Dell GX260 V Redhat 7.3
+Message-Id: <20020805230412.GJ5507@linuxmafia.com>
+References: <653270E74A8DD31197AF009027AA4F8B01845F1B@LIMXMMF303>
+    <20020805224355.GB26632@csn.ul.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020805224355.GB26632@csn.ul.ie>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Declan Houlihan (deccy@csn.ul.ie):
+
+> We're actually investigating switching from Sparc/Solaris to 
+> Intel/Linux. I would much prefer to be using Linux at work
+> so I'm pushing for this. It definately doesn't help when 
+> you're given a bog standard Dell box and linux won't work
+> with the graphics card on it.
+
+(1) Quibble:  For values of "work" limited to X11, not console support.
+
+(2) Decent substitute graphics cards with well-tested XFree86 support
+are cheap.  Swap the problematic one out, and save it for some other
+workstation later.  For that matter, somebody with a Win32 system
+containing such a card might be ecstatic over the opportunity to swap.
+
+(3) Welcome to the Linux world, where we've known for... oh... about
+eleven years that you fail to research chipsets before installation at
+your peril.
+
+-- 
+Cheers,   The difference between common sense and paranoia is that common sense
+Rick Moen     is thinking everyone is out to get you.  That's normal; they are.
+rick@linuxmafia.com      Paranoia is thinking they're conspiring.  -- J. Kegler
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

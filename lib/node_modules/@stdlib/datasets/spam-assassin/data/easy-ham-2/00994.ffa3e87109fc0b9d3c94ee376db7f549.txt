@@ -1,0 +1,88 @@
+From fork-admin@xent.com  Mon Aug 12 11:08:40 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 25E76440F1
+	for <jm@localhost>; Mon, 12 Aug 2002 05:56:26 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:56:26 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g79MRZb27985 for <jm@jmason.org>;
+    Fri, 9 Aug 2002 23:27:37 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 309D7294145; Fri,  9 Aug 2002 15:19:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from relay.pair.com (relay1.pair.com [209.68.1.20]) by xent.com
+    (Postfix) with SMTP id E8F8E294144 for <fork@xent.com>; Fri,
+    9 Aug 2002 15:18:26 -0700 (PDT)
+Received: (qmail 16183 invoked from network); 9 Aug 2002 22:18:49 -0000
+Received: from adsl-66-124-225-184.dsl.snfc21.pacbell.net (HELO golden)
+    (66.124.225.184) by relay1.pair.com with SMTP; 9 Aug 2002 22:18:49 -0000
+X-Pair-Authenticated: 66.124.225.184
+Message-Id: <015101c23ff2$bb9ded40$640a000a@golden>
+From: "Gordon Mohr" <gojomo@usa.net>
+To: <fork@spamassassin.taint.org>
+References: <F165H6t92wSdCSyHYM700005dae@hotmail.com>
+Subject: Re: David Friedman: Mail Me the Money!
+MIME-Version: 1.0
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 9 Aug 2002 15:18:47 -0700
+
+My ideal mailwall will allow message passthrough in many ways:
+
+  - Sender membership on my personal whitelist or any one of 
+    many other external whitelists I respect
+  - Payment of a small fee (via a website and PayPal link)
+  - Demonstration of special per-message effort, either 
+    via...
+    - a computational challenge (hashcash)
+    or
+    - other challenge that requires human-level flexibility & 
+      followthrough (sender manual whitelisting)
+  - Inclusion of a legally-enforceable guarantee that the
+    mail is not an unsolicited commercial pitch -- one
+    example of this class of guarantee would be a posted
+    bond
+  - By convincing some analysis software agent of mine that
+    I want to see the mail, based on its content and 
+    distribution list
+
+There's no need to do only one. Some might overlap; the manual
+process for passing a message through might require the assertion
+of a legally-enforceable guarantee about the messages' contents.
+Passing certain tests once might add an address to the persistent
+whitelist.
+
+Any slightly determined and legitimate correspondent would be
+able to find multiple ways to get their mail read, while spammers
+would face a situation where the marginal cost of reaching me
+is much, much greater than the expected return. 
+
+Some economically irrational spammers (and religious/political 
+zealots) would get through, but such traffic should be a 
+background trickle rather than an annoying torrent.
+
+- Gordon
+
+
+http://xent.com/mailman/listinfo/fork
+
+

@@ -1,0 +1,81 @@
+From rpm-list-admin@freshrpms.net  Mon Sep  2 12:34:20 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 59C2E43F99
+	for <jm@localhost>; Mon,  2 Sep 2002 07:34:18 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 02 Sep 2002 12:34:18 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7VAmZZ31525 for
+    <jm-rpm@jmason.org>; Sat, 31 Aug 2002 11:48:35 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7VAk4J03384; Sat, 31 Aug 2002 12:46:04
+    +0200
+Received: from posti.pp.htv.fi (posti.pp.htv.fi [212.90.64.50]) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7VAjAJ01520 for
+    <rpm-list@freshrpms.net>; Sat, 31 Aug 2002 12:45:10 +0200
+Received: from cs78128057.pp.htv.fi ([62.78.128.57]) by posti.pp.htv.fi
+    (8.11.1/8.11.1) with ESMTP id g7VAid629053; Sat, 31 Aug 2002 13:44:39
+    +0300 (EETDST)
+Subject: Re: alsa-driver rebuild fails with undeclared USB symbol
+From: Ville =?ISO-8859-1?Q?Skytt=E4?= <ville.skytta@iki.fi>
+To: liblit@eecs.berkeley.edu
+Cc: rpm-zzzlist@freshrpms.net
+In-Reply-To: <3D705411.9090606@eecs.berkeley.edu>
+References: <3D70306F.8090201@eecs.berkeley.edu>
+    <1030763168.15592.1.camel@localhost.localdomain>
+    <3D704193.3050003@eecs.berkeley.edu>  <3D705411.9090606@eecs.berkeley.edu>
+Content-Type: text/plain; charset=ISO-8859-1
+X-Mailer: Ximian Evolution 1.0.3 (1.0.3-6)
+Message-Id: <1030790671.1963.97.camel@bobcat.ods.org>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by egwn.net id
+    g7VAjAJ01520
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 31 Aug 2002 13:44:30 +0300
+Date: 31 Aug 2002 13:44:30 +0300
+
+On Sat, 2002-08-31 at 08:28, Ben Liblit wrote:
+
+> Well, I've figured out the problem.  I guess you could say it's an ALSA 
+> bug.  When one configures using "--with-cards=all", ALSA blindly turns 
+> on the various CONFIG_SND_USB_* macros even if CONFIG_USB is not 
+> actually set.
+[...]
+> Matthias, would you please consider hooking up this patch in your 
+> alsa-driver.spec?  It can be added in the obvious manner:
+> 
+> I suppose I should send this along to the ALSA developers as well.  For 
+> them I'll produce a "proper" patch that makes the fix in "acinclude.m4". 
+>   Or is someone else on this list already part of the ALSA developer 
+> community, and willing to shepherd this through for me?
+
+Not me, but IMHO it's kind of offtopic to put it in freshrpms.net RPMs. 
+Upstream is the way to go...
+
+-- 
+\/ille Skyttä
+ville.skytta at iki.fi
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

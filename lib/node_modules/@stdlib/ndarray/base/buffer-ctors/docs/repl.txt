@@ -1,0 +1,24 @@
+
+{{alias}}( dtype )
+    Returns an ndarray data buffer constructor.
+
+    Parameters
+    ----------
+    dtype: string|DataType
+        Data type.
+
+    Returns
+    -------
+    out: Function|null
+        Data buffer constructor.
+
+    Examples
+    --------
+    > var ctor = {{alias}}( 'float64' )
+    <Function>
+    > ctor = {{alias}}( 'float' )
+    null
+
+    See Also
+    --------
+

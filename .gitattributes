@@ -1,0 +1,66 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2017 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Configuration file which assigns attributes to pathnames.
+#
+# [1]: https://git-scm.com/docs/gitattributes
+
+# Automatically normalize the line endings of any committed text files:
+* text=auto
+
+# Override line endings for certain files on checkout:
+*.crlf.csv text eol=crlf
+
+# Denote that certain files are binary and should not be modified:
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.mp3 binary
+*.mp4 binary
+*.mov binary
+
+# Override what is considered "vendored" by GitHub's linguist:
+/lib/node_modules/** -linguist-vendored -linguist-generated
+
+# Configure directories which should *not* be included in GitHub language statistics:
+/deps/** linguist-vendored
+/dist/** linguist-generated
+/workshops/** linguist-vendored
+
+benchmark/** linguist-vendored
+docs/* linguist-documentation
+etc/** linguist-vendored
+examples/** linguist-documentation
+scripts/** linguist-vendored
+test/** linguist-vendored
+tools/** linguist-vendored
+
+# Configure files which should *not* be included in GitHub language statistics:
+Makefile linguist-vendored
+*.mk linguist-vendored
+*.jl linguist-vendored
+*.py linguist-vendored
+*.R linguist-vendored
+
+# Configure files which should be included in GitHub language statistics:
+docs/types/*.d.ts -linguist-documentation

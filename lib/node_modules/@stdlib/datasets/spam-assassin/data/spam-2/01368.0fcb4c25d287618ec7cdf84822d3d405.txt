@@ -1,0 +1,205 @@
+From fork-admin@xent.com  Wed Aug  7 16:11:18 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2015D440CD
+	for <jm@localhost>; Wed,  7 Aug 2002 11:11:16 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 16:11:16 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g77F8kk04732 for <jm@jmason.org>;
+    Wed, 7 Aug 2002 16:08:55 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C6C312940A3; Wed,  7 Aug 2002 08:05:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from lm-3 (lm-3.ci.pwr.wroc.pl [156.17.10.114]) by xent.com
+    (Postfix) with SMTP id 991EB29409B for <fork@xent.com>; Wed,
+    7 Aug 2002 08:04:54 -0700 (PDT)
+Received: from 209.163.100.2 ([209.163.100.2]) by Create Solutions (JAMES
+    SMTP Server 2.0a3-cvs) with SMTP ID 825; Wed, 7 Aug 2002 16:12:52 +0200
+Message-Id: <00007af005ae$0000162e$00002729@mail.Flashmail.com>
+To: <cjohnsto@nstar.net>, <jlloyd@shorenet.net>, <rawl@juno.com>,
+	<jade417@att.net>, <kx26@att.net>
+Cc: <kx27@att.net>, <fork@spamassassin.taint.org>, <fork_smoker@msn.com>,
+	<kartman27@att.net>
+From: "Free Software" <rjiohm4027@Flashmail.com>
+Subject: Web Pages Load 300% Faster without cable or DSL
+MIME-Version: 1.0
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 08 Aug 2002 10:13:56 -1600
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML>
+<BODY bgColor=3Dwhite>
+<CENTER>
+  <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D537 border=3D0>
+    <TBODY> 
+    <TR> 
+      <TD bgColor=3Dwhite colSpan=3D3> 
+        <CENTER>
+          <FONT face=3DVerdana color=3D#cc0000 size=3D5><I><B>Web Pages Lo=
+ad 300% Faster!<BR>
+          </B></I></FONT>
+        </CENTER>
+      </TD>
+    </TR>
+    <TR height=3D71> 
+      <TD vAlign=3Dbottom bgColor=3Dwhite colSpan=3D2 height=3D71> 
+        <CENTER>
+          <IMG height=3D71 src=3D"http://www.npag.net/xweb/tipsXLlogoY.gif=
+" 
+      width=3D332><BR>
+          <FONT size=3D1><BR>
+          </FONT><FONT color=3D#cc0000><B>Named Online Software Product of=
+ the Year<BR>
+          </B></FONT><FONT color=3Dblack size=3D2><B>by AGI Consultants<BR=
+>
+          </B></FONT> 
+          <HR noShade SIZE=3D1>
+        </CENTER>
+      </TD>
+      <TD vAlign=3Dbottom height=3D71> 
+        <CENTER>
+          <IMG height=3D122 src=3D"http://www.npag.net/xweb/handwatchY.gif=
+" width=3D75> 
+          <HR noShade SIZE=3D1>
+        </CENTER>
+      </TD>
+    </TR>
+    <TR> 
+      <TD bgColor=3Dwhite colSpan=3D3> 
+        <CENTER>
+          <A href=3D"http://www.tipsxcelaweb.com/cgi-bin/rot-july19.cgi"><=
+FONT 
+      face=3DVerdana color=3D#cc0000 size=3D6><I><B>FREE 7-Day Trial</B></=
+I></FONT></A><FONT face=3DVerdana color=3D#cc0000 size=3D1> 
+          </FONT><FONT face=3DVerdana color=3D#000066 
+      size=3D1><I><B><BR>
+          <BR>
+          </B></I></FONT><FONT face=3DHelvetica 
+      color=3D#000066><B>Unique Software Solution Opens<BR>
+          Private High Speed Network-<BR>
+          No Cable or DSL Connection Required!<BR>
+          You'll Be Amazed!</B></FONT>
+        </CENTER>
+      </TD>
+    </TR>
+    <TR> 
+      <TD width=3D17 bgColor=3Dwhite></TD>
+      <TD width=3D339 bgColor=3Dwhite><BR>
+      </TD>
+      <TD bgColor=3Dwhite></TD>
+    </TR>
+    <TR height=3D63> 
+      <TD bgColor=3Dwhite colSpan=3D3 height=3D63> 
+        <CENTER>
+          <TABLE cellSpacing=3D2 cellPadding=3D3 width=3D551 border=3D0>
+            <TBODY> 
+            <TR> 
+              <TD width=3D253><FONT face=3DHelvetica color=3Dblack><B>* Ke=
+ep Your Internet 
+                Provider!</B></FONT></TD>
+              <TD width=3D15></TD>
+              <TD><FONT face=3DHelvetica color=3Dblack><B>* Perfect for PC=
+'s, and 
+                Laptops!<BR>
+                </B></FONT></TD>
+            </TR>
+            <TR> 
+              <TD width=3D253><FONT face=3DHelvetica color=3Dblack><B>* Ke=
+ep Your Dial-up 
+                Modem!</B></FONT></TD>
+              <TD width=3D15></TD>
+              <TD><FONT face=3DHelvetica color=3Dblack><B>* </B></FONT><A 
+            href=3D"http://www.tipsxcelaweb.com/cgi-bin/rot-july19.cgi"><F=
+ONT 
+            face=3DHelvetica><B>Read Testimonials!</B></FONT></A><FONT 
+            face=3DHelvetica 
+      color=3Dblack><B><BR>
+                </B></FONT></TD>
+            </TR>
+            </TBODY>
+          </TABLE>
+          <BR>
+        </CENTER>
+      </TD>
+    </TR>
+    <TR> 
+      <TD vAlign=3Dbottom colSpan=3D3> 
+        <CENTER>
+          <FONT face=3DVerdana color=3D#cc0000 size=3D4><B>FREE<I> 7-Day T=
+rial! </I></B></FONT><A 
+      href=3D"http://www.tipsxcelaweb.com/cgi-bin/rot-july19.cgi"><FONT 
+      face=3DVerdana color=3D#000066 size=3D2><B>CLICK for 1-min. Download=
+</B></FONT></A><B><FONT face=3DVerdana size=3D2><BR>
+          </FONT><FONT 
+      face=3DVerdana color=3D#cc0000 size=3D1><BR>
+          </FONT><A 
+      href=3D"http://www.tipsxcelaweb.com/cgi-bin/rot-july19.cgi"><FONT 
+      face=3DVerdana color=3D#000066>Learn How to Get it Free Permanently!=
+<BR>
+          </FONT></A><FONT face=3DVerdana color=3D#cc0000 
+      size=3D1><BR>
+          </FONT><A 
+      href=3D"http://www.tipsxcelaweb.com/cgi-bin/rot-july19.cgi"><FONT 
+      face=3DVerdana color=3D#cc0000 size=3D5><I>SPEED UP EMAIL TOO!</I></=
+FONT><FONT 
+      face=3DVerdana size=3D5><I><BR>
+          <HR noShade SIZE=3D1>
+          </I></FONT></A></B>
+        </CENTER>
+      </TD>
+    </TR>
+    <TR> 
+      <TD width=3D17></TD>
+      <TD colSpan=3D2><FONT size=3D1><B><BR>
+        </B></FONT><B>"I was going to sign up for cable modem service, but=
+ they 
+        want $50 per month, plus I had to pay $120 for the&nbsp;cable mode=
+m. Then 
+        I had to pay&nbsp;a guy to hook it all up.&nbsp;You guys rule!!!"<=
+BR>
+        </B><FONT color=3D#000066>(Roger S. from&nbsp;Teaneck, NJ.)<BR>
+        <BR>
+        </FONT><FONT color=3Dblack><B>"Nice job guys!!!&nbsp;Your software=
+ file 
+        size is small, the download was quick and I can see a noticeable i=
+mprovement 
+        in access speed. I am recommending it to all of our clients."<BR>
+        </B></FONT><FONT color=3D#000066>(Computers Are Easy to Use-Raj Pa=
+tel)</FONT></TD>
+    </TR>
+    <TR>
+      <TD width=3D17></TD>
+      <TD colSpan=3D2>
+        <p>&nbsp;</p>
+        <p><font size=3D"1" face=3D"Verdana, Arial, Helvetica, sans-serif"=
+ color=3D"#666666">Your 
+          email address was obtained from a purchased list, reference #172=
+-54a. 
+          If you wish to unsubscribe from this list, please <a href=3D"htt=
+p://www.infowks.com/data1/main_remove.htm">Click 
+          Here</a>. All unsubscribe requests are honored.</font></p>
+      </TD>
+    </TR>
+    </TBODY>
+  </TABLE>
+</CENTER></BODY></HTML>
+
+
+http://xent.com/mailman/listinfo/fork
+
+

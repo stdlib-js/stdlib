@@ -1,0 +1,111 @@
+From fork-admin@xent.com  Thu Jul 25 15:36:11 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2B0C8440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 10:36:07 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 15:36:07 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6PEXf408225 for <jm@jmason.org>;
+    Thu, 25 Jul 2002 15:33:42 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 3CF372940A2; Thu, 25 Jul 2002 07:32:07 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id EC4C229409F for <fork@xent.com>;
+    Thu, 25 Jul 2002 07:31:15 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-031.ptrb.interhop.net
+    [165.154.190.95]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g6PE6RM05633 for <fork@xent.com>; Thu, 25 Jul 2002 10:06:27 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 712811C39A;
+    Thu, 25 Jul 2002 10:30:52 -0400 (EDT)
+To: fork <fork@spamassassin.taint.org>
+Subject: At last, a real DRM hero
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2fzy7nalf.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 25 Jul 2002 10:30:52 -0400
+
+
+Remember when I said that taking an afternoon off to march for Dmitri
+was pissing in the wind and that to be really effective we needed
+people willing to publically break the stupid laws right in the
+face of the authorities?
+
+Well it seems Bruce Perens agrees with me, only he's going one better,
+instead of just mouthing off about it, he's going to do it and do it 
+in a big way ...
+
+
+    Open source campaigner to risk jail
+    By James Middleton [24-07-2002]
+
+    Bruce Perens plans live DVD hack
+
+    With the dust from the Elcomsoft/Sklyarov case still thick in the
+    air, influential open source activist Bruce Perens plans to go one
+    better by breaking the Digital Millennium Copyright Act (DCMA)
+    during a live presentation on Friday.
+
+    Fresh from giving RealNetworks a slating for not completely
+    backing open source with its latest announcement, Perens said that
+    during a Digital Rights Management presentation to be held Friday
+    at the O'Reilly developer conference in San Diego, he would break
+    the law.
+
+    The DMCA has been a sore point in the open source community since
+    the outlawing of DeCSS, a tool created so that DVDs could be
+    played on Linux machines, and more recently since the arrest of
+    Dmitry Sklyarov and the criminal charges faced by his employer,
+    Elcomsoft.
+
+    Based on the recent history of DMCA contravention, Perens could
+    face imprisonment or a $500,000 fine for his actions.
+
+    According to Infoworld the demonstration is to be carried out in
+    protest at the regional system used by the motion picture industry
+    to prevent DVDs released in one country being played on machines
+    in another country.
+
+    During his presentation, Perens will demonstrate how to hack a DVD
+    player so that it can play movies from any region.
+
+    "It is a political and social statement, and the statement is that
+    the people do not need to have a hall monitor living in their
+    stereo system and should be able to play any kind of media on the
+    device they wish," he was quoted as saying.
+
+    But luck may be on his side, if last year is anything to go by. At
+    the same conference in 2001 Perens made a presentation on the
+    triviality of Digital Rights Management systems using exactly the
+    same slides that got Sklyarov arrested.
+
+http://www.vnunet.com/News/1133862
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+
+

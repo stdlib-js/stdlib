@@ -1,0 +1,100 @@
+From rpm-list-admin@freshrpms.net  Mon Aug 12 10:50:33 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 046D8440DC
+	for <jm@localhost>; Mon, 12 Aug 2002 05:50:09 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:50:09 +0100 (IST)
+Received: from egwn.net (auth02.nl.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79JeOb22866 for
+    <jm-rpm@jmason.org>; Fri, 9 Aug 2002 20:40:24 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g79JY1J18090; Fri, 9 Aug 2002 21:34:01
+    +0200
+Received: from imf03bis.bellsouth.net (mail303.mail.bellsouth.net
+    [205.152.58.163]) by egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id
+    g79JXlJ17418 for <rpm-list@freshrpms.net>; Fri, 9 Aug 2002 21:33:47 +0200
+Received: from adsl-157-16-163.msy.bellsouth.net ([66.157.16.163]) by
+    imf03bis.bellsouth.net (InterMail vM.5.01.04.19
+    201-253-122-122-119-20020516) with ESMTP id
+    <20020809193516.XIYO1195.imf03bis.bellsouth.net@adsl-157-16-163.msy.bellsouth.net>
+    for <rpm-list@freshrpms.net>; Fri, 9 Aug 2002 15:35:16 -0400
+Subject: Re: Pango problems
+From: Lance <lance_tt@bellsouth.net>
+To: rpm-zzzlist@freshrpms.net
+In-Reply-To: <20020809173000.0cbd8458.matthias@egwn.net>
+References: <20020807182804.5d5e4dcb.kilroy@kamakiriad.com>
+    <20020808173048.18b4bb62.matthias@egwn.net>
+    <20020808110003.4a20abd4.kilroy@kamakiriad.com>
+    <20020808181551.70b1f8b9.matthias@egwn.net>
+    <1028827085.18927.7.camel@fuggles>
+    <20020809103423.28a52d56.matthias@egwn.net>
+    <20020809070906.4c942cbd.kilroy@kamakiriad.com>
+    <20020809175131.A17958@azrael.smilehouse.com>
+    <20020809173000.0cbd8458.matthias@egwn.net>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.8 (1.0.8-4)
+Message-Id: <1028921621.22637.1.camel@localhost.localdomain>
+MIME-Version: 1.0
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: 09 Aug 2002 14:33:40 -0500
+Date: 09 Aug 2002 14:33:40 -0500
+
+Me too, I prefer the close button in the upper left corner as well.  I
+found nice border themes Iridium-Blueish-0.3.tar.gz and
+Iridium-Greenish-0.3.tar.gz but forgot where I got them from.
+
+If you can find, they're worth a try.
+
+Lance
+
+On Fri, 2002-08-09 at 10:30, Matthias Saou wrote:
+> Once upon a time, Harri wrote :
+> 
+> > My personal problem with gnome2 is that all the wm (metacity) themes are
+> > windows themes with different colours. :) There's one pretty
+> > nice-looking one from the place where you can get "stylish" theme..
+> > forgot where, have to look it up.
+> 
+> I've found some nice Metacity themes, including the Crux one I like so much
+> on www.sunshineinabag.co.uk. They've also got nice gtk2 themes and really
+> cool gdm ones. My only regret here is that I liked the ability of choosing
+> where the buttons were placed in the sawfish Crux theme, as I prefer the
+> close button in the upper left corner :-/
+> 
+> Matthias
+> 
+> -- 
+> Matthias Saou                                World Trade Center
+> -------------                                Edificio Norte 4 Planta
+> System and Network Engineer                  08039 Barcelona, Spain
+> Electronic Group Interactive                 Phone : +34 936 00 23 23
+> 
+> _______________________________________________
+> RPM-List mailing list <RPM-List@freshrpms.net>
+> http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+
+

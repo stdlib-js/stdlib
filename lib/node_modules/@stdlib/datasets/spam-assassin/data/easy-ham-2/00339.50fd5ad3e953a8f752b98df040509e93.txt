@@ -1,0 +1,80 @@
+From ilug-admin@linux.ie  Mon Aug 12 11:07:18 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 453A74415D
+	for <jm@localhost>; Mon, 12 Aug 2002 05:56:06 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 12 Aug 2002 10:56:06 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7BIMnb09833 for
+    <jm-ilug@jmason.org>; Sun, 11 Aug 2002 19:22:49 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA03307; Sun, 11 Aug 2002 19:20:27 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA03285 for <ilug@linux.ie>;
+    Sun, 11 Aug 2002 19:20:20 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17dxK1-00063A-00 for <ilug@linux.ie>; Sun, 11 Aug 2002 11:20:13 -0700
+Date: Sun, 11 Aug 2002 11:20:12 -0700
+To: ilug@linux.ie
+Subject: Re: [ILUG] SUSE 8 disks? (thread changed slightly)
+Message-Id: <20020811182012.GD25331@linuxmafia.com>
+References: <1029023717.2993.4.camel@gemini.windmill>
+    <20020811134458.74257.qmail@web13902.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020811134458.74257.qmail@web13902.mail.yahoo.com>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Paul Linehan (plinehan@yahoo.com):
+
+> Anyway, I should have initiated a new thread for my different request
+> about S.u.S.E. CDs.
+
+You'll probably want to buy a retail boxed set, e.g., via mail order.
+The only editions of SuSE for i386 that are lawful to duplicate and
+redistribute are as follows:
+
+SuSE Evaluation:  This is a single-CD ISO9660 image, currently at v. 7.0. 
+If you don't mind having only one disk's worth of SuSE, and being
+several revisions behind the boxed-set editions, this is quite good and 
+recommended.
+
+SuSE Live Eval:  Another CD image, currently at v. 8.0, but this one
+doesn't install to hard drives at all:  It's a demo disk.
+
+SuSE FTP Edition (for lack of an official name):  Not a CD image, but
+the contents of ftp://ftp.suse.com/pub/suse/i386/current/ .  You would
+have to mirror the ftp directory tree, and then figure out how to
+install (e.g., over NFS).  Currently at v. 8.0.
+
+There are three (non-redistributable) boxed-set editions, at different
+price points.
+
+I'm assuming in the above that you're talking about an i386-architecture
+computer.  Slightly different answers apply for Alpha, IA64, SPARC, PPC,
+SPARC64, PPC64, or S390.
+
+-- 
+Cheers,                   "Teach a man to make fire, and he will be warm 
+Rick Moen                 for a day.  Set a man on fire, and he will be warm
+rick@linuxmafia.com       for the rest of his life."   -- John A. Hrastar
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

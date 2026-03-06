@@ -1,0 +1,87 @@
+From ilug-admin@linux.ie  Wed Dec  4 11:52:58 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 0AA0316F16
+	for <jm@localhost>; Wed,  4 Dec 2002 11:52:58 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 04 Dec 2002 11:52:58 +0000 (GMT)
+Received: from lugh.tuatha.org (postfix@lugh.tuatha.org [194.125.145.45])
+    by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id gB4BYa812645 for
+    <jm-ilug@jmason.org>; Wed, 4 Dec 2002 11:34:36 GMT
+Received: from lugh.tuatha.org (localhost [127.0.0.1]) by lugh.tuatha.org
+    (Postfix) with ESMTP id A749A34237; Wed,  4 Dec 2002 11:36:09 +0000 (GMT)
+Delivered-To: linux.ie-ilug@localhost
+Received: from epa.ie (mail.epa.ie [193.1.210.22]) by lugh.tuatha.org
+    (Postfix) with ESMTP id 03B8434233 for <ILUG@linux.ie>; Wed,
+    4 Dec 2002 11:35:50 +0000 (GMT)
+Received: from EXCHCL.epa.ie (unverified) by epa.ie (Content Technologies
+    SMTPRS 4.2.1) with ESMTP id <T5ef5bd32c1c0a80603318@epa.ie> for
+    <ILUG@linux.ie>; Wed, 4 Dec 2002 11:35:43 +0000
+Received: by exchcl.epa.ie with Internet Mail Service (5.5.2653.19) id
+    <V0QGX6RR>; Wed, 4 Dec 2002 11:36:19 -0000
+Message-Id: <3C0F11345BD5D611BD8D00902733977E12C077@exchcl.epa.ie>
+From: Gianni Ponzi <g.ponzi@epa.ie>
+To: "'ILUG@linux.ie'" <ILUG@linux.ie>
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: [ILUG] Linux Install
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Beenthere: ilug@linux.ie
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:ilug-request@linux.ie?subject=help>
+List-Post: <mailto:ilug@linux.ie>
+List-Subscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=subscribe>
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+List-Unsubscribe: <http://www.linux.ie/mailman/listinfo/ilug>,
+    <mailto:ilug-request@linux.ie?subject=unsubscribe>
+List-Archive: <http://www.linux.ie/pipermail/ilug/>
+X-Original-Date: Wed, 4 Dec 2002 11:36:16 -0000
+Date: Wed, 4 Dec 2002 11:36:16 -0000
+
+Hi all
+
+
+I have a prob when trying to install Linux (tried RedHat, Suse) on my
+laptop. I can start the install but after about 2min, the whole pc just
+dies.
+I know it's not a Linux prob and here is what I have encountered:
+
+I had the same problem when installing Win on it and eventually sorted it
+out by disabling the infrared port. I'm guessing this might be same prob
+although I'm not sure. I am very new to Linux so it's not that easy for me
+to work it out. I did manage to follow the setup procedure at one stage
+(using images on disks) and it cuts out either as it's trying to verify what
+CD-Rom I have or just after (hence my suspicion of the infrared port again).
+
+can anyone help ?
+
+thanks
+Gianni
+
+
+************************************************************************
+This e-mail and any files transmitted with it are confidential
+and intended solely for the use of the individual or entity to
+which they are addressed. If you have received this e-mail
+in error, please notify the EPA postmaster - postmaster@epa.ie
+
+The opinions contained within are personal to the sender and 
+do not necessarily reflect the policy of the Environmental 
+Protection Agency.
+
+This footnote also confirms that this e-mail message has been
+swept by MIMEsweeper for the presence of computer viruses.
+
+************************************************************************
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

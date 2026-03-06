@@ -1,0 +1,17 @@
+
+{{alias}}()
+    Returns an emoji database.
+
+    Returns
+    -------
+    out: Array
+        Emoji database.
+
+    Examples
+    --------
+    > var data = {{alias}}()
+    [ {...}, ... ]
+
+    See Also
+    --------
+

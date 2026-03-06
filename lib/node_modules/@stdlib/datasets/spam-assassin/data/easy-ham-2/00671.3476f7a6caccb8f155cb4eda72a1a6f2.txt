@@ -1,0 +1,60 @@
+From fork-admin@xent.com  Fri Jul 19 16:58:25 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 95EAD440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 11:58:24 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:58:24 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6JFuKJ11601 for <jm@jmason.org>;
+    Fri, 19 Jul 2002 16:56:21 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id AB4422940B3; Fri, 19 Jul 2002 08:45:08 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from jasper.he.net (jasper.he.net [216.218.145.2]) by xent.com
+    (Postfix) with ESMTP id 40678294098 for <FoRK@xent.com>; Fri,
+    19 Jul 2002 08:45:06 -0700 (PDT)
+Received: from to0202a-dhcp108.apple.com
+    (sdsl-64-139-4-22.dsl.sca.megapath.net [64.139.4.22]) by jasper.he.net
+    (8.8.6/8.8.2) with ESMTP id IAA05426; Fri, 19 Jul 2002 08:54:01 -0700
+Date: Fri, 19 Jul 2002 08:54:02 -0700
+Subject: Re: When a Crop Becomes King
+Content-Type: text/plain; charset=US-ASCII; format=flowed
+MIME-Version: 1.0 (Apple Message framework v482)
+Cc: Flatware or Road Kill? <FoRK@xent.com>
+To: Rodent of Unusual Size <Ken.Coar@Golux.Com>
+From: Bill Humphries <bill@whump.com>
+In-Reply-To: <3D382947.947559DF@Golux.Com>
+Message-Id: <BECDBE68-9B2F-11D6-93F3-003065F62CD6@whump.com>
+Content-Transfer-Encoding: 7bit
+X-Mailer: Apple Mail (2.482)
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Friends of Rohit Khare <fork.xent.com>
+X-Beenthere: fork@spamassassin.taint.org
+
+On Friday, July 19, 2002, at 07:59 AM, Rodent of Unusual Size wrote:
+
+> These days the
+> nation's nearly 80 million-acre field of corn rolls across the
+> countryside like a second great lawn, but this wholesome, all-American
+> image obscures a decidedly more dubious reality.
+
+And if you mention any of the health problems too loudly, the kids with 
+glowing eyes take you away into the fields...
+
+http://www.angelfire.com/tn/cotcfanpage/
+
+----
+Bill Humphries <bill@whump.com>
+http://www.whump.com/moreLikeThis/
+
+
+
+http://xent.com/mailman/listinfo/fork
+
+

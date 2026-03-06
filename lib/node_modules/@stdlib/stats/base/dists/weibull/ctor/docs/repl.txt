@@ -1,0 +1,106 @@
+
+{{alias}}( [k, λ] )
+    Returns a Weibull distribution object.
+
+    Parameters
+    ----------
+    k: number (optional)
+        Shape parameter. Must be greater than `0`. Default: `1.0`.
+
+    λ: number (optional)
+        Scale parameter. Must be greater than `0`. Default: `1.0`.
+
+    Returns
+    -------
+    weibull: Object
+        Distribution instance.
+
+    weibull.k: number
+        Shape parameter. If set, the value must be greater than `0`.
+
+    weibull.lambda: number
+        Scale parameter. If set, the value must be greater than `0`.
+
+    weibull.entropy: number
+        Read-only property which returns the differential entropy.
+
+    weibull.kurtosis: number
+        Read-only property which returns the excess kurtosis.
+
+    weibull.mean: number
+        Read-only property which returns the expected value.
+
+    weibull.median: number
+        Read-only property which returns the median.
+
+    weibull.mode: number
+        Read-only property which returns the mode.
+
+    weibull.skewness: number
+        Read-only property which returns the skewness.
+
+    weibull.stdev: number
+        Read-only property which returns the standard deviation.
+
+    weibull.variance: number
+        Read-only property which returns the variance.
+
+    weibull.cdf: Function
+        Evaluates the cumulative distribution function (CDF).
+
+    weibull.logcdf: Function
+        Evaluates the natural logarithm of the cumulative distribution function
+        (CDF).
+
+    weibull.logpdf: Function
+        Evaluates the natural logarithm of the probability density function
+        (PDF).
+
+    weibull.mgf: Function
+        Evaluates the moment-generating function (MGF).
+
+    weibull.pdf: Function
+        Evaluates the probability density function (PDF).
+
+    weibull.quantile: Function
+        Evaluates the quantile function at probability `p`.
+
+    Examples
+    --------
+    > var weibull = {{alias}}( 6.0, 5.0 );
+    > weibull.k
+    6.0
+    > weibull.lambda
+    5.0
+    > weibull.entropy
+    ~1.299
+    > weibull.kurtosis
+    ~0.035
+    > weibull.mean
+    ~4.639
+    > weibull.median
+    ~4.704
+    > weibull.mode
+    ~4.85
+    > weibull.skewness
+    ~-0.373
+    > weibull.stdev
+    ~0.899
+    > weibull.variance
+    ~0.808
+    > weibull.cdf( 3.0 )
+    ~0.046
+    > weibull.logcdf( 3.0 )
+    ~-3.088
+    > weibull.logpdf( 1.0 )
+    ~-7.865
+    > weibull.mgf( -0.5 )
+    ~0.075
+    > weibull.pdf( 3.0 )
+    ~0.089
+    > weibull.quantile( 0.8 )
+    ~5.413
+
+    See Also
+    --------
+

@@ -1,0 +1,112 @@
+
+{{alias}}( [data,] [options] )
+    Returns a Unicode sparkline instance.
+
+    The following chart types are supported:
+
+    - column: column chart (e.g., ▃▆▂▄▁▅▅).
+    - line: line chart (e.g., ⡈⠑⠢⠔⠒⠒⠒).
+    - tristate: tristate chart (e.g., ▄▀──▀▄▄▀).
+    - up-down: up/down chart (e.g., ↓↑↑↑↑↓↓↑).
+    - win-loss: win/loss chart (e.g., ┌╵└┴╵╷╷╵).
+
+    The `data` argument takes precedence over the `data` option.
+
+    Parameters
+    ----------
+    data: ArrayLike|ndarray (optional)
+        Chart data.
+
+    options: Object (optional)
+        Options.
+
+    options.autoRender: boolean (optional)
+        Boolean indicating whether to re-render on a 'change' event. Default:
+        false.
+
+    options.bufferSize: integer|null (optional)
+        Data buffer size. If provided, data is kept in a first-in first-out
+        (FIFO) buffer which cannot exceed the buffer size. Default: +infinity.
+
+    options.data: ArrayLike|ndarray (optional)
+        Chart data.
+
+    options.description: string (optional)
+        Chart description.
+
+    options.infinities: boolean (optional)
+        Boolean indicating whether to encode infinite values. Default: false.
+
+    options.isDefined: Function (optional)
+        An accessor function indicating whether a datum is defined.
+
+    options.label: string (optional)
+        Data label.
+
+    options.type: string (optional)
+        Chart type. Default: 'column'.
+
+    options.yMax: number|null (optional)
+        Maximum value of the y-axis domain. If `null`, the value is computed
+        from the data. Default: null.
+
+    options.yMin: number|null (optional)
+        Minimum value of the y-axis domain. If `null`, the value is computed
+        from the data. Default: null.
+
+    Returns
+    -------
+    chart: ColumnChart
+        Column chart instance.
+
+    chart.autoRender
+        Rendering mode. If `true`, an instance renders on each 'change' event;
+        otherwise, rendering must be triggered manually.
+
+    chart.bufferSize
+        Data buffer size.
+
+    chart.description
+        Chart description.
+
+    chart.data
+        Chart data.
+
+    chart.label
+        Data label.
+
+    chart.infinities
+        Indicates whether to encode infinite values.
+
+    chart.isDefined( d, i )
+        An accessor function which defines whether a datum is defined. This
+        accessor is used to define how missing values are encoded. The default
+        behavior is to ignore values which are `NaN`.
+
+    chart.render()
+        Renders a column chart sparkline.
+
+    chart.type
+        Chart type.
+
+    chart.yMax
+        Maximum value of the y-axis domain. If set to `null`, when accessed, the
+        returned value is computed from the data.
+
+    chart.yMin
+        Minimum value of the y-axis domain. If set to `null`, when accessed, the
+        returned value is computed from the data.
+
+    Examples
+    --------
+    > var data = [ 1.0, 5.0, 3.0, 2.0, 4.0, 4.0, 3.0 ];
+    > var chart = new {{alias}}( data );
+    > chart.render()
+    '▁█▅▃▆▆▅'
+    > chart.type = 'line';
+    > chart.render()
+    '⡈⠑⠢⠔⠒⠒⠒'
+
+    See Also
+    --------
+

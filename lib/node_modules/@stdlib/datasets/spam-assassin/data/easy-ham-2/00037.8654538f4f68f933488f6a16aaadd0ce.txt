@@ -1,0 +1,65 @@
+From social-admin@linux.ie  Mon Jul 22 19:28:32 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F0C47440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 14:28:30 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 19:28:30 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MHQU403461 for
+    <jm+ilug-social@jmason.org>; Mon, 22 Jul 2002 18:26:30 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id MAA23228 for
+    <jm+ilug-social@jmason.org>; Sat, 20 Jul 2002 12:07:33 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA30785; Sat, 20 Jul 2002 12:06:40 +0100
+Received: from matrix.netsoc.tcd.ie (netsoc.tcd.ie [134.226.83.50]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA30747 for <social@linux.ie>;
+    Sat, 20 Jul 2002 12:06:35 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host netsoc.tcd.ie
+    [134.226.83.50] claimed to be matrix.netsoc.tcd.ie
+Received: by matrix.netsoc.tcd.ie (Postfix, from userid 1088) id
+    547293445A; Sat, 20 Jul 2002 12:06:35 +0100 (IST)
+Received: from localhost (localhost [127.0.0.1]) by matrix.netsoc.tcd.ie
+    (Postfix) with ESMTP id 4419331006; Sat, 20 Jul 2002 12:06:35 +0100 (IST)
+Date: Sat, 20 Jul 2002 12:06:35 +0100 (IST)
+From: Greg Farrel <greg@netsoc.tcd.ie>
+X-Sender: greg@matrix
+To: Rick Moen <rick@linuxmafia.com>
+Cc: social@linux.ie
+Subject: Re: [ILUG-Social] Completely silent pc
+In-Reply-To: <20020720051950.GE28205@linuxmafia.com>
+Message-Id: <Pine.GSO.4.10.10207201204580.2055-100000@matrix>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+
+> An old laptop would probably be ideal.  That way, it comes with its own 
+> UPS (the battery).
+D'oh. I ment to say that I cant use a laptop, as I have a pci wireless
+card and the cable for it (about 180 dollars). So it has to be a pc, with
+a pci 2.2 connector (ie some pentiums, and anything above)
+
+ > 
+> Some people strip down old 486 boxes, take out the hard drive, disable
+> the fans, and run the thing from just a floppy drive or a CDR you've
+> burned for the purpose.  
+I'd do that with my 166, but the psu has a fan. And a 486 wont support my
+wireless card :( I know. I'm awkward,
+          Greg
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

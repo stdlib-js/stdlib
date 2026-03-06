@@ -1,0 +1,78 @@
+From ilug-admin@linux.ie  Mon Jul 22 18:12:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D347F440D2
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:21 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:21 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG25Y16946 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:02:05 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id BAA25309 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 01:54:51 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA10664; Sun, 21 Jul 2002 01:54:23 +0100
+Received: from marklar.elive.net (smtp.elive.ie [212.120.138.41]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id BAA10633; Sun, 21 Jul 2002
+    01:54:16 +0100
+Received: from gonzo.waider.ie
+    (IDENT:9yNv5hbo7W6wr7oysu/T1YW/bnEIzd6A@1Cust138.tnt3.dub2.ie.uudial.net
+    [213.116.44.138]) by marklar.elive.net (8.11.6/8.11.6) with ESMTP id
+    g6L0UBj02902; Sun, 21 Jul 2002 01:30:12 +0100
+Received: from klortho.waider.ie
+    (IDENT:BAdQQqovjq9VnkkVZd8ToMgH7Knbc4sS@klortho.waider.ie [10.0.0.100]) by
+    gonzo.waider.ie (8.11.6/8.11.6) with ESMTP id g6L0s0t08885; Sun,
+    21 Jul 2002 01:54:01 +0100
+Received: (from waider@localhost) by klortho.waider.ie (8.11.6/8.11.6) id
+    g6L0rv021891; Sun, 21 Jul 2002 01:53:57 +0100
+X-Authentication-Warning: klortho.waider.ie: waider set sender to
+    waider@waider.ie using -f
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15674.1573.36050.128467@klortho.waider.ie>
+Date: Sun, 21 Jul 2002 01:53:57 +0100
+From: Ronan Waide <waider@waider.ie>
+To: Paul Jakma <paul@clubi.ie>
+Cc: kevin lyda <kevin+dated+1027629217.152a82@linux.ie>,
+	Aidan Kehoe <kehoea@parhasard.net>, ILUG Mailing List <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+In-Reply-To: <Pine.LNX.4.44.0207210115130.29125-100000@fogarty.jakma.org>
+References: <20020720213335.A27034@ie.suberic.net>
+    <Pine.LNX.4.44.0207210115130.29125-100000@fogarty.jakma.org>
+X-Mailer: VM 7.07 under Emacs 21.2.1
+Organization: poor at best.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On July 21, paul@clubi.ie said:
+> 
+> reiser's handles to files are hashes i believe. fat: dont think you 
+> can make symlinks on it.
+
+You can't; hard links only. And those get cleaned up by ScanDisk as
+"cross-linked files". Shortcuts are the Windows analogue of symlinks,
+and they don't work outside the Windows environment - i.e. they're an
+artifact of the OS rather than the FS.
+
+Cheers.
+Waider.
+-- 
+waider@waider.ie / Yes, it /is/ very personal of me.
+"if you can't live the lie, let it die/and if you can't live a life filled
+ with strife/honey, just say oops/and jump through hoops/and get to the end of
+ the line" - FLC, "Bear Hug" (Come Find Yourself)
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

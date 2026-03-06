@@ -1,0 +1,28 @@
+{
+  "alias": "geometric",
+  "pkg": "stdlib/random/strided/geometric",
+  "base_pkg": "stdlib/random/base/geometric",
+  "uniform_prng_pkg_basename": "uniform",
+
+  "param_1": "p",
+  "param_1_stride": "sp",
+  "param_1_offset": "op",
+  "param_1_value": "0.01",
+  "param_1_rand_min": "0.01",
+  "param_1_rand_max": "0.99",
+  "param_1_desc": "success probability",
+  "param_1_dtype": "number",
+
+  "from_desc": "a geometric distribution",
+  "readme_from_desc": "a [geometric][@stdlib/random/base/geometric] distribution",
+
+  "readme_heading": "Geometric Random Numbers",
+
+  "repl_text_main_desc": "Fills a strided array with pseudorandom numbers drawn from a geometric distribution.",
+  "repl_text_ndarray_desc": "Fills a strided array with pseudorandom numbers drawn from a geometric distribution using alternative indexing semantics.",
+  "repl_text_factory_desc": "Returns a function for filling strided arrays with pseudorandom numbers drawn from a geometric distribution.",
+
+  "repl_text_param_1_desc": "Success probability.",
+
+  "keywords": "geometric,bernoulli,discrete"
+}

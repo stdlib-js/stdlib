@@ -1,0 +1,112 @@
+From fork-admin@xent.com  Mon Aug 26 15:31:13 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 787FE47C80
+	for <jm@localhost>; Mon, 26 Aug 2002 10:25:23 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 26 Aug 2002 15:25:23 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7NMWWZ10641 for <jm@jmason.org>;
+    Fri, 23 Aug 2002 23:32:33 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id 6C8922940AD; Fri, 23 Aug 2002 15:30:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from crank.slack.net (slack.net [166.84.151.181]) by xent.com
+    (Postfix) with ESMTP id 62D44294099 for <fork@xent.com>; Fri,
+    23 Aug 2002 15:29:50 -0700 (PDT)
+Received: by crank.slack.net (Postfix, from userid 596) id 7C7BB3EDA5;
+    Fri, 23 Aug 2002 18:33:37 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1]) by crank.slack.net
+    (Postfix) with ESMTP id 7ADD23ED11; Fri, 23 Aug 2002 18:33:37 -0400 (EDT)
+From: Tom <tomwhore@slack.net>
+To: fork@spamassassin.taint.org
+Cc: vox@mindvox.com
+Subject: GPL limits put to a test
+Message-Id: <Pine.BSO.4.44.0208231824140.16631-100000@crank.slack.net>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Fri, 23 Aug 2002 18:33:37 -0400 (EDT)
+
+
+XviD [1] is a project to make GPL divx codecs. Sigma Designs [1] is a
+company  looking to put out hardware to playback, amongst other things,
+divx files. Problem is Sigma is using XviDs gpled code in ways not very
+gpl. The  results....XviD stops work on thier code and ask the users to
+put preasure  on Sigma to honor the GPL.
+
+Some notes from other places....
+
+>>From Doom9 [3]
+"XviD development has been stopped! The Sigma Designs REALMagic MPEG-4
+Video Codec contains wide portions of code taken from the XviD project.
+Soon after the initial release of the REALMagic codec the XviD developers
+have contacted Sigma and informed them about the GPL violation (for those
+who don't know, XviD is distributed under the GNU Public License - GPL -
+which demands that if you modify a GPL program you have to release it
+under the GPL, which in this case means that the source code of the Sigma
+codec must be freely available). Sigma promised to replace the stolen
+code, but the new version of the codec which was released this month only
+disguises the stolen code, it was not actually removed. Sigma was once
+again contacted and asked to remove the offending code but until today
+nothing has happened. Therefore the XviD team is now turning to the public
+in the hope to receive wide public support in their efforts to convince
+Sigma Designs to respect the terms of the GPL. And until the matter has
+been resolved XviD development will not continue.
+
+That being said I hope all the forum members who saw their threads about
+the Sigma Codecs being closed will understand our motivation now.
+Internally we already knew what was going on but since the XviD authors
+first wanted to try and resolve this internally we respected their wishes
+and kept quiet about the matter at hand.
+
+[Update] Sigma has issued a press release announcing the availability of
+the source code of their MPEG-4 codec and it's already up for download.
+However, not a word was lost about the XviD issue and the press release
+makes one think that the Sigma codec was entirely developed by Sigma so we
+might be hearing more about this.
+
+[Update] I found a GPL notice in some of the source code files, but it
+also looks like Sigma placed their own copyright lines there and XviD
+doesn't get any credit in the source either. The GPL notice also collides
+with Sigma's Software Licensing Agreement that you have to sign before
+downloading codec or source. On on the same issue DivXNetworks said they'd
+fully support XviD in this issue and apparently DXn's relationship with
+Sigma didn't really work out either, as Sigma's Xcard is not as DivX
+compatible as it was advertised.
+
+[Update]First an update on the XviD situation. The release of the Sigma
+source code does not mean it's all over, it's far from being over. The
+license agreement which you have to agree to before you can download, and
+install the codec is not compatible with the GPL. Furthermore, it can now
+clearly be seen (download the source code and have a look for yourself)
+that the Sigma codec is pretty much a copy of the XviD codec, but all the
+copyright notices of the original developers have been removed and
+replaced. This does not only violate the GPL but copyright laws - you
+can't just take a program, change a few lines and change the copyright
+statements, you only have copyright protection for the parts you wrote on
+your own. And related to this the Sigma codec also contains code taken
+from the OpenDivX project, the files were outfitted with 2 different
+copyright notices which is quite funny."
+
+
+
+[1] http://www.xvid.org/
+[2] http://www.sigmadesigns.com
+[3] http://www.doom9.org/
+
+http://xent.com/mailman/listinfo/fork
+

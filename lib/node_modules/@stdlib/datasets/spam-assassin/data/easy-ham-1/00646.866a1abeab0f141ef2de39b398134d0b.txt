@@ -1,0 +1,72 @@
+From fork-admin@xent.com  Thu Sep 19 16:25:57 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 2750716F03
+	for <jm@localhost>; Thu, 19 Sep 2002 16:25:57 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 16:25:57 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g8JDdtC21726 for <jm@jmason.org>;
+    Thu, 19 Sep 2002 14:39:56 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id EC3D9294109; Thu, 19 Sep 2002 06:36:05 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from imo-d07.mx.aol.com (imo-d07.mx.aol.com [205.188.157.39]) by
+    xent.com (Postfix) with ESMTP id 734B829409E for <fork@xent.com>;
+    Thu, 19 Sep 2002 06:35:45 -0700 (PDT)
+Received: from ThosStew@aol.com by imo-d07.mx.aol.com (mail_out_v34.10.)
+    id 2.d3.11f46440 (4410) for <fork@xent.com>; Thu, 19 Sep 2002 09:39:00
+    -0400 (EDT)
+From: ThosStew@aol.com
+Message-Id: <d3.11f46440.2abb2d74@aol.com>
+Subject: Re: Hanson's Sept 11 message in the National Review
+Cc: fork@spamassassin.taint.org
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Mailer: AOL 5.0 for Mac sub 45
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 19 Sep 2002 09:39:00 EDT
+
+
+In a message dated 9/19/2002 7:46:37 AM, chuck@topsail.org writes:
+
+>That means *you* can't say anything may not be FoRKed or printed or 
+>whatever. You have the choice to ignore it
+
+
+That's not what the First Amendment says at all. It says that Congress cannot 
+say what can't be FoRKed. FoRK can establish any rules it wants. Similarly, 
+The New York Times gets to choose what news IT thinks is "fit to print." If 
+the Times chose not to print anything about, say, Rosie O'Donnell, it would 
+be exercising its First Amendment rights, just as much as it would be if it 
+chose to print something Rosie O'Donnell doesn't like. The necessary 
+corollary of the freedom to say/publish what one wants is the freedom to 
+refuse to publish or say what one doesn't like. The alternative is a 
+state-controlled press that reprints government press releases and calls them 
+news.
+
+The question of what is or is not FoRKed is (except for libel or other 
+specific exceptions) not a matter of law, but a matter of what the 
+"publisher" (if any) decides or the "community" (if any) negotiates or does 
+as a matter of custom.
+
+For my part, I'd rather people didn't use FoRK as a place in which to dump an 
+expression of their political beliefs.
+
+Tom
+
+

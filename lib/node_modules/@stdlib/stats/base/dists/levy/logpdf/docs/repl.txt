@@ -1,0 +1,70 @@
+
+{{alias}}( x, μ, c )
+    Evaluates the logarithm of the probability density function (PDF) for a Lévy
+    distribution with location parameter `μ` and scale parameter `c` at a value
+    `x`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `c <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: number
+        Input value.
+
+    μ: number
+        Location parameter.
+
+    c: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated logPDF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 2.0, 0.0, 1.0 )
+    ~-2.209
+    > y = {{alias}}( -1.0, 4.0, 2.0 )
+    -Infinity
+    > y = {{alias}}( NaN, 0.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 0.0, NaN )
+    NaN
+    // Negative scale parameter:
+    > y = {{alias}}( 2.0, 0.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( μ, c )
+    Returns a function for evaluating the logarithm of the probability density
+    function (PDF) of a Lévy distribution with location parameter `μ` and scale
+    parameter `c`.
+
+    Parameters
+    ----------
+    μ: number
+        Location parameter.
+
+    c: number
+        Scale parameter.
+
+    Returns
+    -------
+    logpdf: Function
+        Logarithm of probability density function (PDF).
+
+    Examples
+    --------
+    > var mylogPDF = {{alias}}.factory( 10.0, 2.0 );
+    > var y = mylogPDF( 11.0 )
+    ~-1.572
+
+    See Also
+    --------
+

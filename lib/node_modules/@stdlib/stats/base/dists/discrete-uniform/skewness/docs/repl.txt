@@ -1,0 +1,33 @@
+
+{{alias}}( a, b )
+    Returns the skewness of a discrete uniform distribution.
+
+    If `a > b`, the function returns `NaN`.
+
+    If `a` or `b` is not an integer value, the function returns `NaN`.
+
+    Parameters
+    ----------
+    a: integer
+        Minimum support.
+
+    b: integer
+        Maximum support.
+
+    Returns
+    -------
+    out: number
+        Skewness.
+
+    Examples
+    --------
+    > var v = {{alias}}( -2, 2 )
+    0.0
+    > v = {{alias}}( 4, 12 )
+    0.0
+    > v = {{alias}}( 2, 8 )
+    0.0
+
+    See Also
+    --------
+

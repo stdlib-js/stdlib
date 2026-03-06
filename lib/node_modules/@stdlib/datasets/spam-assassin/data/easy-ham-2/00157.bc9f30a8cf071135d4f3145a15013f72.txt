@@ -1,0 +1,67 @@
+From ilug-admin@linux.ie  Tue Jul 30 11:43:11 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 05666440EE
+	for <jm@localhost>; Tue, 30 Jul 2002 06:43:11 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 30 Jul 2002 11:43:11 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6UAiLq21841 for
+    <jm-ilug@jmason.org>; Tue, 30 Jul 2002 11:44:21 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA00469; Tue, 30 Jul 2002 11:41:08 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from fiachra.ucd.ie (fiachra.ucd.ie [137.43.12.82]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA00446 for <ilug@linux.ie>;
+    Tue, 30 Jul 2002 11:41:04 +0100
+Received: from gavin by fiachra.ucd.ie with local (Exim 3.12 #1 (Debian))
+    id 17ZUQK-0005VC-00 for <ilug@linux.ie>; Tue, 30 Jul 2002 11:40:16 +0100
+Date: Tue, 30 Jul 2002 11:40:16 +0100
+From: Gavin McCullagh <ilug_gmc@fiachra.ucd.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Mutt reply hooks
+Message-Id: <20020730114016.A21006@fiachra.ucd.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Mail-Followup-To: ilug@linux.ie
+References: <20020730112811.A32231@wanadoo.fr>
+    <"from <20020730110032.A19970@fiachra.ucd.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020730110032.A19970@fiachra.ucd.ie>; from
+    ilug_gmc@fiachra.ucd.ie on Tue, Jul 30, 2002 at 11:00:32 +0100
+X-Gnupg-Publickey: http://fiachra.ucd.ie/~gavin/public.gpg
+X-Operating-System: Linux 2.4.18 i686
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+
+On Tue, 30 Jul 2002, Gavin McCullagh wrote:
+
+> set alternates = "kbeditor@linuxcare.com|coolapps@linuxcare.com"
+> set reverse_name
+
+PS Make sure not to have a line like this:
+
+	send-hook .  'my_hdr From: Gavin McCullagh <gav......>"
+
+which will only override it and cause pain and suffering.
+
+Gavin
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

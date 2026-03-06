@@ -1,0 +1,754 @@
+Return-Path: <bounce-lglinux-2534371@sprocket.lockergnome.com>
+Received: from lockergnome.com (sprocket.lockergnome.com [130.94.96.247])
+	by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id g6A4gFT29561
+	for <qqqqqqqqqq-lg@spamassassin.taint.org>; Wed, 10 Jul 2002 05:42:15 +0100
+X-Mailer: ListManager Web Interface
+Date: Tue, 9 Jul 2002 21:15:33 -0500
+Subject: [Lockergnome Penguin Shell]  Recursive Metaphor
+To: qqqqqqqqqq-lg@spamassassin.taint.org
+From: Lockergnome Penguin Shell<subscriptions@lockergnome.com>
+List-Unsubscribe: <mailto:leave-lglinux-2534371U@sprocket.lockergnome.com>
+List-Subscribe: <mailto:subscribe-lglinux@sprocket.lockergnome.com>
+List-Owner: <mailto:owner-lglinux@sprocket.lockergnome.com>
+X-URL: <http://www.lockergnome.com/>
+X-List-Host: Lockergnome <http://www.lockergnome.com/>
+Reply-To: leave-lglinux-2534371U@sprocket.lockergnome.com
+Sender: bounce-lglinux-2534371@sprocket.lockergnome.com
+Message-Id: <LISTMANAGERSQL-2534371-1669941-2002.07.09-21.16.26--qqqqqqqqqq-lg#spamassassin.taint.org@sprocket.lockergnome.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=us-ascii
+
+<html><head><!--
+
+      CLICK HERE to read this newsletter on the Web for FREE:
+
+      <a href="http://www.lockergnome.com/issues/penguinshell/20020709.html">
+      http://www.lockergnome.com/issues/penguinshell/20020709.html
+      </a>
+
+      Don't worry about anything else below this paragraph.
+      It's for those with HTML e-mail clients. Just go to
+      the above listed web address to view this issue
+      perfectly in your web browser. Thanks again! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+ body      { BACKGROUND-IMAGE: 
+url(http://www.lockergnome.com/images/issue/top-right.gif); 
+scrollbar-3dlight-color: #DADADA; scrollbar-arrow-color: #17514B; 
+scrollbar-base-color: #007C7A; scrollbar-darkshadow-color: #808080; 
+scrollbar-face-color: #C0C0C0; scrollbar-highlight-color: #DADADA; 
+scrollbar-shadow-color: #808080 }
+ a:link    { COLOR: RED; TEXT-DECORATION: underline }
+ a:visited { COLOR: #FF8080; TEXT-DECORATION: underline }
+ a:active  { color: #000000; TEXT-DECORATION: none }
+ a:hover   { color: #820000; TEXT-DECORATION: none }
+ p.title   { BACKGROUND: #C0C0C0; BORDER-BOTTOM: #808080 4px solid; BORDER-LEFT: 
+
+
+
+#DADADA 4px solid; BORDER-RIGHT: #808080 4px solid; BORDER-TOP: #DADADA 4px 
+solid; COLOR: #000000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, 
+Arial; FONT-SIZE: 14pt; FONT-WEIGHT: normal }
+ p.news    { BACKGROUND: #C0C0C0; BORDER-BOTTOM: #808080 4px solid; BORDER-LEFT: 
+
+
+
+#DADADA 4px solid; BORDER-RIGHT: #808080 4px solid; BORDER-TOP: #DADADA 4px 
+solid; COLOR: #000000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, 
+Arial; FONT-SIZE: 18pt; FONT-WEIGHT: normal }
+ p.sidebar { BACKGROUND: #DADADA; BORDER-BOTTOM: #C0C0C0 3px solid; BORDER-LEFT: 
+
+
+
+#FFFFFF 3px solid; BORDER-RIGHT: #C0C0C0 3px solid; BORDER-TOP: #FFFFFF 3px 
+solid; COLOR: #000000; FONT-FAMILY: Comic Sans MS, Trebuchet MS, Helvetica, 
+Arial; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-ALIGN: center }
+ .link     { BACKGROUND: #DADADA; BORDER-BOTTOM: #C0C0C0 3px solid; BORDER-LEFT: 
+
+
+
+#FFFFFF 3px solid; BORDER-RIGHT: #C0C0C0 3px solid; BORDER-TOP: #FFFFFF 3px 
+solid; COLOR: #808080; font-size: 9pt; font-family: Verdana; font-weight: bold; 
+padding: 3px; width: 100% }
+ .url      { font-size: 8pt; font-family: Verdana, Tahoma, Arial }
+ .fixed    { font-family: courier, courier new; font-size: 10px }
+-->
+</style><title>20020709 Lockergnome Penguin Shell</title></head>
+
+<body   MARGINHEIGHT="0" TOPMARGIN="0" BOTTOMMARGIN="0" bgcolor="#FFFFFF"   
+style="BACKGROUND-POSITION: right top; 
+BACKGROUND-REPEAT: no-repeat" MARGINWIDTH="0" LEFTMARGIN="0" rightmargin="0" 
+text="#000000" alink="#008080" link="RED" 
+vlink="RED">
+
+<!-- background="http://images.lockergnome.com/images/bg.head.gray.gif" 
+bgcolor="#C0C0C0" left width="610" 
+background="http://images.lockergnome.com/images/sp.back.top-r1.gif" -->
+
+ <table width="100%" border="0" cellspacing="0" cellpadding="7" align="CENTER" 
+valign="MIDDLE">
+  <tr><td background="http://www.lockergnome.com/images/issue/top-left.gif" 
+nowrap valign="middle" align="center" 
+colspan="2">
+
+ <!-- TOP BANNER AD -->
+ <center>
+ <a href="http://www.lockergnome.com/"><img 
+src="http://images.lockergnome.com/images/gnomedaily.gif" width="50" height="60" 
+
+
+
+hspace="5" alt="Lockergnome" border="0"></a>
+
+<a href="http://www.qksrv.net/click-471546-487847">
+<img src="http://www.qksrv.net/image-471546-487847" width="468" height="60" 
+alt="Linux Central" border="0"></a>
+<br>
+</center>
+ 
+ <!-- TOP BANNER AD -->
+
+ <!--#include virtual="/include/banner.txt" -->
+
+ </td></tr>
+
+  <tr><td valign="top" bgcolor="#FFFFFF"><font style="font-size: 10pt" 
+face="Verdana, Tahoma, Arial" size="2">
+
+<!-- NEWS -->
+
+<table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p class="news">
+&nbsp; 07.09.2002 PenguinREPORT</p></td></tr></table><p>
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>CAREER SERVICES FROM LOCKERGNOME AND DICE.COM:</b> We've teamed up with
+Dice.com to bring you a full service I.T. career enhancement solution.
+Whether you are looking for your
+<a href="http://seeker.dice.com/jobsearch/jobsearch.epl?rel_code=14">dream 
+job</a>
+or trying to
+<a href="http://seeker.dice.com/jobsearch/jobsearch.epl?rel_code=14">hire 
+talented people</a>,
+the full-featured career resource center is the place to start. Find your
+<a href="http://seeker.dice.com/jobsearch/jobsearch.epl?rel_code=14">IT talent 
+solution</a>
+today!
+</font></td></tr></table></p>
+I don't usually spend much time explaining metaphors. They are, after all, 
+metaphorical. They can be filled with whatever symbolism you choose. Written 
+well, we all come to some similar understanding of their meaning. But, I'll 
+depart today, contrary to my normal practice, to take a few minutes explaining a 
+
+
+
+
+recent metaphor.<p>
+
+I'm a Linux guy through and through. As a user, I see myself as right about at 
+the average on the curve. For love of the language and open source attitude, 
+though, you'd be hard-pressed to find anyone with quite the same level of 
+enthusiasm. Put simply, there's very little about the Linux and broader open 
+source worlds that I don't like or believe in.<p>
+
+Take, for example, the practice of recursive acronyms. GNU ("Gnu's Not Unix"), 
+HURD ("Herd of Unix-Replacing Daemons"), WINE ("Wine Is Not an Emulator"), even 
+PHP ("PHP Hypertext Processor") - all carry on the tradition of recursion in the 
+
+
+
+
+Unix/Linux world. Goofy as it sounds, I love this stuff.<p>
+
+So it is that I set out to create a recursive metaphor last week. It could only 
+have happened on or about the 4th of July. In fact, it happened in the edition 
+of the 3rd. I wrote a piece about how we Americans spend more time over the 
+course of a year talking about what's <i>wrong</i> with our system than what's 
+right. I wrote it knowing full well that many of the responses I'd get would be 
+a) from readers outside the US and b) in sharp disagreement to my comments or 
+those of citizens of other countries. You're following me, right? People would 
+disagree with an article that said we spend much time disagreeing. This, of 
+course, would prove my point in a somewhat metaphorical way - the perfect 
+recursive metaphor. The point was to be made yet more perfectly by the eventual 
+inclusion in Penguin Shell of the comments of someone from <i>outside</i> the US 
+
+
+
+
+disagreeing with my take our argumentativeness as Americans. Ideally, they would 
+
+
+
+
+be comments that disagreed with our collective American perception of being 
+disagreeable. They would, of course, point out things about which citizens of 
+other countries can disagree with Americans on. By exercising the right to 
+disagree, we'd subtly agree that we have that right. Yet another level of 
+recursion and a final layer of metaphor.<p>
+
+The response to both my own and Johan Sauviller's comments was overwhelming. In 
+the main, I believe both were appreciated. Many commented on the balance of the 
+two pieces. Some readers were surprised, I think, to see a dissenting opinion 
+published so quickly, if at all. Overall, the ability to express honestly held 
+opinions, to agree and to disagree on a global level closed the circle on the 
+metaphor in a perfect way.<p>
+
+Things have, however, gotten a bit more ugly in the past few days. I'm not sure 
+whether some were slow in getting to the July 3rd issue, or whether it's just 
+been stewing since then. Take, for instance, these comments by a reader who will 
+
+
+
+
+remain mercifully nameless:
+
+<blockquote>
+We get enough
+America bashing from our left-wing whacko extremist press and schools here
+in the USA that we don't wish to hear some (insert favorite adjective here)
+from Belgium whining too!
+</blockquote><p>
+
+Followed by:
+
+<blockquote>
+... please don't let Tony single-handedly tarnish the fine reputation
+of Lockergnome. I'm sure there are other articulate Linux experts out there who 
+would be able to replace him.
+</blockquote><p>
+
+... and, in a later note on the topic ...
+
+<blockquote>
+Censorship is to be encouraged in a
+free-market society whenever and wherever it doesn't come from the
+government.
+</blockquote><p>
+
+Clearly, the metaphor just whizzed right over the heads of some.<p>
+
+<a href="http://www.lockergnome.com/issues/daily.html" target="_blank">Chris</a> 
+
+
+
+
+has been great about allowing all his authors plenty of room in the editorial 
+piece at the beginning of each newsletter. This particular piece is no 
+exception. He's shown a quiet confidence in the face of some very shrill 
+comments. While we all generally stay focused on technical issues, Chris has 
+shown unwavering support for the notion that we geeks are, in the end, humans 
+with opinions and thoughts to share. I think it's one of the things that makes 
+the Lockergnome newsletters stand out from the pack - the personal touch.<p>
+
+So, despite the irrationality of some of this week's comments, I'll continue to 
+occasionally throw in a personal aside with the technical stuff.<p>
+
+Just watch out. Recursive metaphors are only funny until someone puts an eye 
+out.<p><p>
+
+<p align="right"><font style="font-size: 23pt" face="Tony Steidler-Dennison" 
+size="5">Tony
+Steidler-Dennison&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></P>
+
+<!-- TWEAK -->
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeTWEAK</p></td></tr></table><p>
+
+<p class="sidebar"><table cellpadding="10" cellspacing="0" border="0"><tr><td>
+<font style="font-size: 10pt" face="Verdana, Tahoma, Arial" size="2">
+<b>Lockergnome readers, SAVE 50% on the Computing Encyclopedia!</b>
+Are you looking for the ultimate computing resource? Discover the
+<i>Computing Encyclopedia</i> from Smart Computing.  Regular price $59,
+SPECIAL OFFER for Lockergnome readers,
+<a 
+href="http://www.smartcomputing.com/offer/encyclopediaset.asp?source=2000">get 
+your set TODAY</a>, ONLY $29.95!
+</font></td></tr></table></p>
+<b>Win Apps in Linux?</b><p>
+
+Yesterday, I mentioned an interesting review of two products for Linux by <a 
+href="http://www.codeweavers.com/" target="_blank">CodeWeavers</a> - CrossOver 
+Office and CrossOver Plugin. You've probably heard of both by now, as they've 
+garnered quite a bit of publicity both in and out of the Linux world. You'll 
+recall that I promised to try to secure copies for review this week. With the 
+help of a friendly sales rep at CodeWeavers, I was able to accomplish that task 
+this morning. True to the second half of the promise, we'll spend the next few 
+days looking at these two products and how they might impact your Linux use. 
+Let's take them in chronological order, starting today with CrossOver Plugin.<p>
+
+A bit of background is in order. CodeWeavers is, in their own words, " ... the 
+leading corporate backer of the <a href="http://wine.codeweavers.com/" 
+target="_blank">Wine Project</a>. Wine has been, for the past several years, an 
+ongoing project to port Windows applications to Linux. It's a tough goal, but 
+it's also one that's been undertaken by <a href="http://www.lindows.com/" 
+target="_blank">others</a> in the past year or so. Though the progress has been 
+slow, the Wine project has managed to stay at the front of this development 
+realm.<p>
+
+<a href="http://codeweavers.com/products/crossover/" target="_blank">CrossOver 
+Plugin</a> marks a change in the philosophy of the Wine Project. Prior to its 
+release, Wine had taken a "full system" approach. Running Windows applications 
+in Wine required the installation of a sizeable daemon and no small amount of 
+configuration work. CrossOver Plugin has moved Wine away from the system-wide 
+approach to one that's much more modular. Rather than executing at system 
+startup, Wine is called as-needed, with the virtual Windows path to the called 
+program. When the program is closed, so is Wine. CrossOver Plugin has focused on 
+
+
+
+creating Linux functionality with <i>one</i> related set of Windows 
+applications: browser plugins.<p>
+
+The results stand as a clear indication that the change in philosophy is a 
+success. Off the top, CrossOver Plugin bundles QuickTime 5, Windows Media Player 
+
+
+
+6.2, Shockwave 8.5, Flash 6, and RealPlayer 8 into a Linux-accesible browser 
+plugin package. Throw in more esoteric apps like IPix, Trillian, Authorware Web 
+Player 6 and eFax Messenger 2, and you've got virtually every need plugin need 
+covered.<p>
+
+But this package doesn't stop there. Included in the CrossOver Plugin package 
+are viewers for Word, Excel and Powerpoint, as well as several 
+Microsoft-oriented fonts. Honestly, I was stunned at the range of applications 
+offered by the CodeWeavers developers.<p>
+
+Having had some experience with Wine, I was a bit leery about the install 
+process and about the ability to get all these great applications to work with 
+my RedHat setup. I've never been completely successful with Wine, but I hoped 
+for the best when I started the CrossOver Plugin installation. I really did want 
+
+
+
+these apps to work.<p>
+
+The installation was quite easy. By running the install-crossover.sh script from 
+
+
+
+the command line, I was able to install the installers for both CrossOver Plugin 
+
+
+
+and CrossOver Office, which we'll talk about tomorrow. I started the plugin 
+installs with QuickTime, a tool I've admittedly missed in Linux. In the 
+background, CrossOver Plugin had already created a virtual C:\ drive on my 
+machine. I clicked on the QuickTime install and immediately saw a familiar sight 
+
+
+
+- the Vise installer in its Windows format. CrossOver Plugin first checked for 
+feedback from the Windows binary, opened a virtual Windows window, then stepped 
+out while the Vise installer took care of the rest. Though the install failed 
+four times, it appeared to be a server failure rather than a failure of the 
+CrossOver program. I kept "retry"ing and, with some persistence, managed to get 
+a full QuickTime 5 install downloaded from the Apple servers. Quite literally, 
+the install looked and performed exactly as I've seem many times in Windows. 
+When the install was completed, CrossOver again checked for the Windows binary, 
+located the appropriate .dll files in the virtual C:\ drive and dropped the 
+plugins into the /home/tony/.netscape/plugins and /home/tony/.mozilla/plugins 
+directories.<p>
+
+The process was so smooth that I had to check the plugin listings in these 
+browsers - "Help", "About Plugins." Sure enough, the CrossOver QuickTime plugin 
+was listed. Quickly, I ran out to the Apple site and opened the "Men In Black 
+II" movie trailer. QuickTime performed flawlessly.<p>
+
+I followed with the Windows Media Player, Shockwave, Flash, IPix, and eFax 
+Messenger installs. Of those, the only ones that weren't self-contained in the 
+CrossOver install were IPix and eFax. Even at that, the installer pointed me to 
+the Windows download then found the .exe file when the download was done. Within 
+
+
+
+a half-hour, I had all installed and tested.<p>
+
+Then, just for grins, I installed RealPlayer 8 via CrossOver. This was despite 
+the recommendation in the installer screen to use the Linux version. It went as 
+smoothly as the others with one caveat - the player played media files at a much 
+
+
+
+faster speed than that in Windows. Fast enough to make me laugh, in fact, 
+reminded of Dave and Alvin the Chipmunk. Ah well, six out of seven is pretty 
+strong given my previous troubles with Wine.<p>
+
+I also installed a few fonts - Arial, Times New Roman, Trebuchet, and Veranda. 
+In every case, the install was quick and absolutely painless.<p>
+
+Wine has always held great promise. At times, it's been painful to watch the 
+tedious pace of development, only because that promise was so alluring. With the 
+
+
+
+backing of CodeWeavers and a fundamental change in the approach to development, 
+Wine has finally realized the goal of integrating Windows applications 
+seamlessly into the stable Linux environment. The results are so strong that, if 
+
+
+
+I didn't know better, I'd swear that a few of these plugins actually run better 
+in Linux than in their native Windows. Honestly, I didn't realize how much I 
+missed them until I started using them in Linux today.<p>
+
+Tomorrow holds a few surpirses, with a look at CodeWeavers' CrossOver Office 
+package.<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeCORE">Send us a 
+GnomeTWEAK</a></span>
+
+<!-- CORE -->
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeCORE</p></td></tr></table><p>
+
+<b>Kernel Configuration - Part IX</b><p>
+
+We're nine parts into the kernel configuration series, with quite a bit yet to 
+go. If you haven't been following along, we're breaking out the configuration 
+screens one at a time in an attempt to shed some light on the purpose and 
+function of each. With that knowledge, you should be able to make a clear 
+decision as to how to configure each section.<p>
+
+Today, it's the Parallel Port support section. This is pretty simple. If you 
+need parallel port support - such as for a printer - select this option either 
+as a driver built into the kernel or as a loadable module.<p>
+
+Most will use the PC-style hardware option in conjuction with a Windows printer. 
+
+
+
+But that's not all the parallel port can be used for. As an example, the builds 
+I did with the telescope company required parallel port support, as the 
+telescope cameras were attached to this port.<p>
+
+Be aware - this kernel configuration option only makes a driver available for 
+the parallel port. The computer's BIOS sets the mode for the port - ECP, EPP, or 
+
+
+
+Auto. On the majority of modern computers, the Auto mode is the default and will 
+
+
+
+work just fine. However, if you have problems communicating with your printer 
+following a kernel recompile, try changing the mode of your printer in the 
+BIOS.<p>
+
+Tomorrow, it's Plug and Play configuration.<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeCORE">Send us a GnomeCORE 
+tip</a></span>
+
+<!-- FILE -->
+
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeFILE</p></td></tr></table><p>
+
+<b>Netics 2.0</b><p>
+
+<a class="url" href=""></a><br>
+<a class="url" 
+href="http://www.citi.umich.edu/u/marius/netics/">http://www.citi.umich.edu/u/marius/netics/</a><p>
+
+"Netics is an extensible network statistics collector. It puts the network 
+interface in promiscuous mode and reads the data stream (after it strips off the 
+
+
+
+appropriate protocol headers), then displays the results at specified intervals, 
+
+
+
+either in a "progress bar" mode or as raw statistics. Currently, it supports 2 
+statistics, both involving entropy: LZW compressability and Ueli Maurer's 
+universal statistical test. Maurer's test is a very good and comprehensive 
+measure of entropy, but requires a large amount of data. The LZW statistic 
+requires much less data."<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeFILE">Send us a GnomeFILE 
+suggestion</a></span>
+
+<!-- VOICE -->
+
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeVOICE</p></td></tr></table><p>
+
+<b>Helping Hand</b><br>
+<span class="url">Scribbled by Karl Steenblik</span><p>
+
+"Dear Linux community at Lockergnome.<p>
+
+"I am the web master for largest health care camp in the State of Utah. 
+No not Cancer camp it is the Diabetic camp.<p>
+
+"The Foundation for Children and Youth with Diabetes serves about 900
+diabetic children a year and their families.  We have education, family
+support, diet planning and most important is camp.  The place where kids
+can learn about how to better manage their disease.<p>
+
+"We are a totally non profit camp that puts all money from fees into our
+camp.  We pay no salaries to Physicians, Dietitians, Social Workers,
+Nurses and educators that make our camp possible.  Yes even me the lowly
+web master donates his time and web space at ATT to the cause.<p>
+
+"ATT recently decided to pull access to our photo page due to a password
+protection.  We give out a password to all parents so that they can see
+photos of camp while the sessions are happening.  We do not however what
+the creeps of the web to have access to photos of our kids.<p>
+
+"We are looking for someone in the state to help our camp by donating web
+space.  Now it may not be your organization, but I know Linux people and
+Lockergnome and I think someone there may know someone who would be able
+to help us.<p>
+
+"You can still have access to the public part of our site that ATT has not
+shut down at www.fcyd-inc.org.<p>
+
+"Please I have the parents of 120 diabetic kids wanting to see photos of
+their children.  They are all e-mailing me and I have no one to turn to.<p>
+
+"Hoping to hear from someone soon."<p>
+
+Karl R Steenblik<br>
+Webmaster FCYD camp<br>
+Salt Lake City.<p>
+
+<a href="mailto:tony@lockergnome.com?subject=Penguin Shell - Donate Web 
+Space">Help</a> Karl.<p>
+<p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeVOICE">Speak your 
+GnomeVOICE</a></span>
+
+<!-- CLICK -->
+<p><br><table bgcolor="#C0C0C0" border="0" cellspacing="0" cellpadding="0" 
+width="100%"><tr><td><p 
+class="title">&nbsp;GnomeCLICK</p></td></tr></table><p>
+
+<b>Mobilix.org</b><p>
+
+<a class="url" href="http://mobilix.org/">http://mobilix.org/</a><p>
+
+Mobilix.org is a full site related to using Linux on mobile devices, including 
+PDAs and laptops. It includes information for subsctibing to the linux-laptop 
+mailing list, information on Linux-powered wearable computers, WAP enabled 
+access, and Linux on cell phones. Mobilix looks to be a great resource for all 
+kinds of tips, tricks and useful information for taking your Linux on the 
+road.<p><p>
+
+<p align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="http://www.lockergnome.com/recommend.html">Recommend It!</a><br>
+<span align="right"><a class="url" style="color: gray; text-decoration: none" 
+href="mailto:tony@lockergnome.com?subject=GnomeCLICK">Suggest a 
+GnomeCLICK</a></span>
+
+<!-- ADMINISTRIVIA -->
+<p><br><table cellpadding="0" cellspacing="0" border="0"><tr><td><p 
+class="sidebar">
+<table cellpadding="7" cellspacing="0" border="0"><tr><td><font 
+style="font-size: 8pt" face="Verdana, Tahoma, Arial" 
+size="1">
+<a 
+href="http://www.lockergnome.com/issues/penguinshell/20020709.html">http://www.lockergnome.com/issues/penguinshell/20020709.html</a>
+<p>Your subscribed e-mail address is: [qqqqqqqqqq-lg@spamassassin.taint.org] - To unsubscribe or 
+change your delivery address, please 
+visit the <A HREF="http://www.lockergnome.com/changesub.html">subscription 
+management</A>
+page. Use of the Gnome moniker by Penguin Shell does not imply endorsement of 
+the Gnome Desktop Environment. Penguin 
+Shell is an equal-opportunity desktop employer. For further information, please 
+refer to the GnomeCREDITS in the 
+sidebar.</font></td></tr></table></p></td></tr></table>
+
+
+<!--#include virtual="/include/subscription2.txt" -->
+
+</font></td>
+<td background="http://images.lockergnome.com/images/issue/sidebar.gif" 
+VALIGN="top" align="left" width="145"><font style="font-size: 8pt" 
+color="#990000" face="Verdana, Tahoma, Arial" size="1">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p 
+class="sidebar">LOOK OVER HERE</p></td></tr></table><br>
+
+&nbsp;<a href="http://www.gnometomes.com/">Download Tip eBooks</a><br>
+<p>
+&nbsp;<a href="http://windowsdaily.lockergnome.com/">Latest Windows 
+Daily</a><br>
+&nbsp;<a href="http://digitalmedia.lockergnome.com/">Latest Digital
+Media</a><br>
+&nbsp;<a href="http://techspecialist.lockergnome.com/">Latest Tech 
+Specialist</a><br>
+&nbsp;<a href="http://penguinshell.lockergnome.com/">Latest Penguin 
+Shell</a><br>
+&nbsp;<a href="http://applecore.lockergnome.com/">Latest Apple Core</a><br>
+&nbsp;<a href="http://webmasterweekly.lockergnome.com/">Latest Web 
+Weekly</a><br>
+&nbsp;<a href="http://updates.lockergnome.com/">Latest Bits &amp; Bytes</a><br>
+&nbsp;<A HREF="http://www.gnomeradio.com/">Latest Audio Show</A><BR>
+<p>
+&nbsp;<A HREF="http://lockergnome.pricegrabber.com/">Low Price Search</A><br>
+&nbsp;<A HREF="http://www.gnomedex.com/">Our Tech Conference</A><br>
+<p>
+&nbsp;<a target="_blank" 
+href="http://www.gnometomes.com/tome/000628.html">Microsoft Office Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000627.html">PC 
+Productivity Tips</a><br>
+&nbsp;<a target="_blank" href="http://www.gnometomes.com/tome/000626.html">Cool 
+Internet Tips</a><br>
+&nbsp;<a target="_blank" 
+href="http://www.gnometomes.com/tome/000625.html">Windows 2000 Tips</a><br>
+&nbsp;<a target="_blank" 
+href="http://www.gnometomes.com/tome/000623.html">Windows XP Tips</a><br>
+<p>
+
+<center>
+<a href="http://www.gnomedex.com/" target="_blank"><img alt="See You in August!" 
+
+src="http://chris.pirillo.com/archives/Gnomedex_Banner_going.gif" width="120" 
+height="60" border="0"></a>
+</center>
+
+<p>
+&nbsp;<a href="http://www.lockergnome.com/recommend.html">Tell a Friend About 
+Us!</a><br>
+&nbsp;<a href="http://www.lockergnome.com/advertise.html">Advertise With 
+Us</a><br>
+&nbsp;<A HREF="http://www.lockergnome.com/jobs.html">High-Tech Job 
+Search</A><br>
+&nbsp;<a href="http://www.lockergnome.com/chat.html">Chat With Gnomies</a><br>
+&nbsp;<a href="http://www.lockergnome.com/webcam.html">Watch The Webcams</a><br>
+&nbsp;<a
+href="https://www.sandhills.com/secure/smartcomputing/cpufreetrial3.asp?source=cp491bonus">Computer Power User</a><br>
+<p>
+&nbsp;<a href="http://www.lockergnome.com/issues/">Read Past Issues</a><br>
+&nbsp;<a href="http://www.xteq.com/">Download X-Setup</a><br>
+&nbsp;<a href="http://www.lockergnome.com/about.html">About Lockergnome</a><br>
+&nbsp;<a href="http://www.lockergnome.com/privacy.html">Our Privacy 
+Policy</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html">View More 
+Options</a><br>
+&nbsp;<a href="http://www.lockergnome.com/lockergnome.xml">Our XML / RSS 
+Feed</a><br>
+&nbsp;<a href="http://www.lockergnome.com/options.html#syndicate">Syndicate Our 
+Tips</a><br>
+&nbsp;<a href="http://www.lockergnome.com/images/lockerlink.gif">Link To 
+Lockergnome</a><br>
+&nbsp;<A 
+HREF="http://lockergnome.pricegrabber.com/search_getprod.php/isbn=0966103254/">Get Chris's Book</A><br>
+&nbsp;<A HREF="http://www.tvcd.biz/lockergnome">Win a Digital Camera</A><br>
+<p>
+
+&nbsp;<a 
+href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#101;&#101;&#100;&#98;&#97;&#99;&#107;&#64;&#108;&#111;&#99;&#107;&#101;&#114;&#103;&#110;&#111;&#109;&#101;&#46;&#99;&#111;&#109;?subject=Lockergnome Site Feedback">General Feedback</a><br>
+&nbsp;<A HREF="http://chris.pirillo.com/">Chris's Blog</A><BR>
+&nbsp;<a href="mailto:tony@lockergnome.com?subject=Lockergnome Penguin Shell 
+Comment">E-mail the Editor</a><br>
+
+<!-- GNOME CERTIFICATION -->
+<!-- END GNOME CERTIFICATION -->
+
+<p>&nbsp;<p><table cellpadding="0" cellspacing="0" border="0" width="100%" 
+bgcolor="#FFEEDD"><tr><td><p class="sidebar">GNOMESPECIALS</p></td></tr></table><br>
+&nbsp;<a target="_blank" title="Share your team/project contacts, calendars, tasks, etc. in MS Oulook 2002, without a server!" href="http://outlook.4team.biz/?fr=gnome">Manage Your Workgroup</a><br>
+&nbsp;<a target="_blank" title="Software for filling in paper forms on your computer instead of a typewriter" href="http://www.colorpilot.com/typewriter.html">Form Pilot</a><br>
+&nbsp;<a target="_blank" title="It's both fun and functional! Hear the time, set alarms, style your taskbar clock, sync your PC time, and more. Try Say the Time free for
+30 days." href="http://www.provenio.ws/saythetime/">Say the Time 5.0</a><br>
+&nbsp;<a target="_blank" title="Convert MP3, WAV, AVI, JPG, GIF, and PNG to the SWF format for no buffer streaming" href="http://www.gfx2swf.com/gnome-special/">Boomer - Stream Now</a><br>
+&nbsp;<a target="_blank" title="Creating Web/CD catalogs with HyperPublish is really a snap! Not just an editor but a quick, powerful all-in-one environment for creating stunning catalogs, CDs and Web sites!" href="http://www.hyperpublish.com/create_a_catalog_000018.htm">Create Web/CD catalog</a><br>
+&nbsp;<a target="_blank" title="Create your Web site in minutes with this easy-to-use visual tool!" href="http://www.easywebeditor.com/create_web_page_000004.htm">Easy Web Editor</a><br>
+&nbsp;<a target="_blank" title="Capture TEXT seen in folder trees, file lists, database reports, dialog boxes, menus, status lines, including areas that you could not highlight with your mouse. (Chris cannot live without it!;)" href="http://www.structurise.com/kleptomania">Kleptomania</a><br>
+&nbsp;<a target="_blank" title="Organize all your mp3 collection in seconds! You can rename mp3s quickly and easily, write tag information in batch, from file names or import it from cddb. Get your free trial now!" href="http://www.softpointer.com/tr_2.htm">Tag&amp;Rename</a><br>
+&nbsp;<a target="_blank" title="You will enjoy countless hours of fun with Pretty Good Solitaire!  Play 500 solitaire card games, from classic games like Klondike, FreeCell, and Spider, to original games found nowhere else.  Enjoy lush graphics, large easy-to-read cards, statistics, and quests, a unique new way to play for points." href="http://www.goodsol.com/lockergnome.html">Pretty Good Solitaire</a><br>
+&nbsp;<a target="_blank" title="Choosing color combinations for the web is a careful balance between a scheme designed to draw attention; while being respectful of established color-harmony principles.  ColorCombo's four panels scroll, allowing side-by-side color comparisons.  Also text on background checker, 4096 color array, + more. FREE." href="http://www.colorcombo.com">Visualize Color Combos</a><br>
+&nbsp;<a target="_blank" title="FirstStop WebSearch(TM) Deluxe Edition, a FREE trial version of this incredibly fast, award winning, customizable multi-search engine that has been described as the FASTEST no-nonsense meta search for the net. Now, Gnomies can save 50% when they register a copy of FirstStop WebSearch!" href="http://www.Firststopwebsearch.com/lockergnomeoffer.html">FirstStop WebSearch</a><br>
+&nbsp;<a target="_blank" title="Ecobuilder is the ultimate web application that allows you to get your portal, online community, intranet, extranet or any web site project online by saving time, money and manpower. Gnomies receive $400 off the cost of the software." href="http://www.ecobuilder.com/lockergnome.cfm">Ecobuilder</a><br>
+&nbsp;<a target="_blank" title="Software for organizing your personal book collection. Add books quickly - no typing required! Group, filter, sort and print your database. Click for free trial version." href="http://www.collectorz.com/book?from=lockergnome">Book Collector</a><br>
+<p align="center"><a href="http://www.lockergnome.com/special.html"><B>Get Listed Here</B></a></p>
+Question: which group is 250,000+ strong and always looking for stuff to make their personal and professional lives run smoother? 
+
+<p>
+
+<!--#include virtual="/include/subscribeside.txt" -->
+
+<p>
+<a href="http://images.lockergnome.com/images/video/.WMV"></a>
+
+<p>&nbsp;<p><font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+<table align="center" border="0"><tr><td><a href="http://www.lockergnome.com/webcam.html">
+<img width="125" height="94" alt="Lockergnome Webcam Image" src="http://www.lockergnome.com/images/webcam/steidler.jpg"></a></td></tr>
+<tr><td align="center"><font style="font-size: 7pt" size="1" face="Verdana, Tahoma, Arial">CLICK HERE TO ZOOM</font></td></tr></table>
+</font>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">LOOK IT UP</p></td></tr></table><br>
+<form method="post" action="http://www.lockergnome.com/cgi-bin/htsearch"><input type="hidden" name="method" value="and"><input type="hidden" name="format" value="long"><input type="hidden" name="sort" value="score"><input type="hidden" name="config" value="htdig"><input type="hidden" name="restrict" value=""><input type="hidden" name="exclude" value=""><input type="text" size="14" value=" Lockergnome" name="words"><input type="submit" class="Press" value="go"></form>
+<FORM method="get" action="http://www.amazon.com/exec/obidos/external-search"><INPUT type="text" name="keyword" size="14" value=" Amazon"><INPUT type="hidden" name="mode" value="blended"><INPUT type="hidden" name="tag" value="lockergnomedigit"><INPUT TYPE="submit" VALUE="go" class="Press" NAME="Go"></form>
+<form action="http://www.gnomejob.com/" method="POST"><input type="hidden" name="num_per_page" value="20"><input type="hidden" name="num_to_retrieve" value="500"><input type="hidden" name="iquery" value=""><input type="hidden" name="vlink_color" value="008080"><input type="hidden" name="link_color" value="990000"><input type="hidden" name="background_color" value="FFFFFF"><input type="hidden" name="text_color" value="000000"><input type="hidden" name="title_image" value="http://www.lockergnome.com/images/lgtopper.gif"><input type="hidden" name="site_url" value="http://www.lockergnome.com/"><input type="hidden" name="site_title" value="Lockergnome"><input type="hidden" name="title_text" value="Lockergnome"><input type="hidden" name="custom" value="1"><input value=" Jobs" type="TEXT" name="query" size="14"><input class="Press" type="SUBMIT" value="go"></form>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Hardware" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+<FORM method="get" action="http://lockergnome.pricegrabber.com/search_gen_top.php" target="_parent"><input type="hidden" name="topcat_search" value="1"><input value=" Software" size="14" type=text name=form_keyword><INPUT type="SUBMIT" value="go" class="Press" NAME="Go"></FORM>
+
+<p>&nbsp;<p>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><p class="sidebar">BYTE ME NOW</p></td></tr></table><br>
+<font style="font-size: 8pt" face="Verdana, Tahoma, Arial" size="1">
+&copy;2002, Lockergnome LLC. ISSN: 1095-3965. All Rights Reserved. Please read our <a href="http://www.lockergnome.com/terms.html">Terms of Service</a>. Our Web site is hosted by <a href="http://www.digitaldaze.com/?lg">DigitalDaze</a>. Domain registered at <a href="http://www.dnscentral.com/?lg">DNS Central</a>.
+
+</table>
+</body>
+</html>
+
+

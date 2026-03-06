@@ -1,0 +1,67 @@
+
+{{alias}}( [options] )
+    Returns an "empty" readable stream.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    Returns
+    -------
+    stream: ReadableStream
+        Readable stream.
+
+    Examples
+    --------
+    > function fcn( chunk ) { console.log( chunk.toString() ); };
+    > var s = {{alias}}();
+    > var o = {{alias:@stdlib/streams/node/inspect-sink}}( fcn );
+    > s.pipe( o );
+
+
+{{alias}}.factory( [options] )
+    Returns a function for creating empty readable streams.
+
+    Parameters
+    ----------
+    options: Object (optional)
+        Options.
+
+    options.objectMode: boolean (optional)
+        Specifies whether a stream should operate in "objectMode". Default:
+        false.
+
+    Returns
+    -------
+    fcn: Function
+        Function for creating readable streams.
+
+    Examples
+    --------
+    > var opts = { 'objectMode': true };
+    > var createStream = {{alias}}.factory( opts );
+
+
+{{alias}}.objectMode()
+    Returns an "objectMode" empty readable stream.
+
+    Returns
+    -------
+    stream: ReadableStream
+        Readable stream operating in "objectMode".
+
+    Examples
+    --------
+    > function fcn( v ) { console.log( v ); };
+    > var s = {{alias}}.objectMode();
+    > var o = {{alias:@stdlib/streams/node/inspect-sink}}.objectMode( fcn );
+    > s.pipe( o );
+
+    See Also
+    --------
+

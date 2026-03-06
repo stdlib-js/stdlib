@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Tests for native `Symbol.asyncIterator` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has native `Symbol.asyncIterator`
+        support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

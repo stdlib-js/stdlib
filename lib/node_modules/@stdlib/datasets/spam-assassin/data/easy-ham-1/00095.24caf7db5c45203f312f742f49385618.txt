@@ -1,0 +1,63 @@
+From ilug-admin@linux.ie  Mon Sep  2 13:15:36 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3F16E47C82
+	for <zzzz@localhost>; Mon,  2 Sep 2002 07:44:14 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Mon, 02 Sep 2002 12:44:14 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g82B2DZ29892 for
+    <zzzz-ilug@spamassassin.taint.org>; Mon, 2 Sep 2002 12:02:13 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA32607; Mon, 2 Sep 2002 12:01:05 +0100
+Received: from claymore.diva.ie (diva.ie [195.218.115.17] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id MAA32520 for
+    <ilug@linux.ie>; Mon, 2 Sep 2002 12:00:51 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host diva.ie [195.218.115.17]
+    (may be forged) claimed to be claymore.diva.ie
+Received: from diva.ie (office.diva.ie [62.77.171.149]) by
+    claymore.diva.ie (8.9.3/8.9.3) with ESMTP id MAA13218 for <ilug@linux.ie>;
+    Mon, 2 Sep 2002 12:00:50 +0100
+Message-Id: <3D7344E1.8010309@diva.ie>
+Date: Mon, 02 Sep 2002 12:00:49 +0100
+From: Vincent Cunniffe <vincent@diva.ie>
+Reply-To: vincent@cunniffe.net
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.1)
+    Gecko/20020826
+X-Accept-Language: en, en-us
+MIME-Version: 1.0
+To: ilug@linux.ie
+Subject: Re: [ILUG] Email list management howto
+References: <OFEGLPGPCHPACFLJPAILOEICECAA.macarthy@iol.ie>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Justin MacCarthy wrote:
+> I think I'll ask this question again, as I sent on friday afternoon.  :-) 
+
+Mailman ;-)
+
+Trust me, you do *not* want to running your own mailing lists
+on your own software.
+
+You'll wind up crying in a dark room looking for something
+high-voltage to stick your fingers into.
+
+Regards,
+
+Vin
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+

@@ -1,0 +1,72 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6LJhbCU099754
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Sun, 21 Jul 2002 14:43:37 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6LJhb6X099748
+	for cypherpunks-forward@ds.pro-ns.net; Sun, 21 Jul 2002 14:43:37 -0500 (CDT)
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6LJhWCT099711
+	for <cypherpunks@ds.pro-ns.net>; Sun, 21 Jul 2002 14:43:32 -0500 (CDT)
+	(envelope-from cpunks@einstein.ssz.com)
+X-Authentication-Warning: hq.pro-ns.net: Host cpunks@[207.200.56.4] claimed to be einstein.ssz.com
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id OAA12382
+	for cypherpunks@ds.pro-ns.net; Sun, 21 Jul 2002 14:51:38 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id OAA12371
+	for cypherpunks-outgoing; Sun, 21 Jul 2002 14:51:07 -0500
+Received: from china1mail.com ([218.6.9.34])
+	by einstein.ssz.com (8.8.8/8.8.8) with SMTP id OAA12363
+	for <cypherpunks@einstein.ssz.com>; Sun, 21 Jul 2002 14:50:39 -0500
+Message-Id: <200207211950.OAA12363@einstein.ssz.com>
+From: "Manager" <Emaildata@china1mail.com>
+To: <cypherpunks@einstein.ssz.com>
+Subject: * Promote Your E-Business
+Mime-Version: 1.0
+Content-Type: text/html; charset="ISO-8859-1"
+Date: Mon, 22 Jul 2002 03:40:34 +0800
+Content-Transfer-Encoding: 8bit
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+</head>
+
+<frameset rows="1,*">
+  <frame name="header" scrolling="no" target="main" noresize marginwidth="1" marginheight="1">
+  <frame name="main" src="http://www.como-verder.com/download/sending.htm" scrolling="auto">
+  <noframes>
+  <body>
+  <p>This page uses frames, but your browser doesn't support them.</p>
+  </body>
+  </noframes>
+</frameset>
+</html>
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

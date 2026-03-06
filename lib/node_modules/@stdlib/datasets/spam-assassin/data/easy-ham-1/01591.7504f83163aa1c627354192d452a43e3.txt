@@ -1,0 +1,120 @@
+From razor-users-admin@lists.sourceforge.net  Thu Sep 19 13:01:03 2002
+Return-Path: <razor-users-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 08B2016F03
+	for <jm@localhost>; Thu, 19 Sep 2002 13:01:03 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 19 Sep 2002 13:01:03 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g8J5NMC06882 for <jm-razor@jmason.org>; Thu, 19 Sep 2002 06:23:23 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17rtlM-0001m9-00; Wed,
+    18 Sep 2002 22:22:04 -0700
+Received: from joseki.proulx.com ([216.17.153.58]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17rtl9-0001pM-00 for <razor-users@lists.sourceforge.net>; Wed,
+    18 Sep 2002 22:21:51 -0700
+Received: from misery.proulx.com (misery.proulx.com [192.168.1.108]) by
+    joseki.proulx.com (Postfix) with ESMTP id 14C1314B35 for
+    <razor-users@lists.sourceforge.net>; Wed, 18 Sep 2002 23:21:41 -0600 (MDT)
+Received: by misery.proulx.com (Postfix, from userid 1000) id EF835A8020;
+    Wed, 18 Sep 2002 23:21:40 -0600 (MDT)
+To: "Razor User's List" <razor-users@example.sourceforge.net>
+Subject: Re: [Razor-users] early experiences with Razor2 (and SA)
+Message-Id: <20020919052140.GA13060@misery.proulx.com>
+Mail-Followup-To: Razor User's List <razor-users@example.sourceforge.net>
+References: <Pine.LNX.4.44.0209181532530.19653-100000@burgers.bubbanfriends.org>
+    <PMEMKNKIFEFGJGBCJFPPMEIGCCAA.gary@intrepid.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+    protocol="application/pgp-signature";
+    boundary="huq684BweRXVnRxX"
+Content-Disposition: inline
+In-Reply-To: <PMEMKNKIFEFGJGBCJFPPMEIGCCAA.gary@intrepid.com>
+User-Agent: Mutt/1.4i
+From: bob@proulx.com (Bob Proulx)
+Sender: razor-users-admin@example.sourceforge.net
+Errors-To: razor-users-admin@example.sourceforge.net
+X-Beenthere: razor-users@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:razor-users-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:razor-users@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=subscribe>
+List-Id: <razor-users.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/razor-users>,
+    <mailto:razor-users-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://sourceforge.net/mailarchives/forum.php?forum=razor-users>
+X-Original-Date: Wed, 18 Sep 2002 23:21:40 -0600
+Date: Wed, 18 Sep 2002 23:21:40 -0600
+
+
+--huq684BweRXVnRxX
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+Gary Funck <gary@intrepid.com> [2002-09-18 13:57:00 -0700]:
+> In my experience, there are spam messages that sneak past Spam Assassin,
+> that Razor will pick up. Those are the ones that I'm calling "marginal".
+> Basically, I'm hoping that "the collective" of Razor users make a better
+> judge of spam than any single program like SA can, and therefore I can
+> benefit from their judgement and get more extensive spam filtering. I've
+> seen examples of this already, where SA doesn't score the spam high enough
+> to bounce it, but Razor does.
+
+I think perhaps you missed the fact that SA scores are adjustable.  If
+you want SA to tag all messages listed in Razor then you can put this
+in your ~/.spamassassin/user_prefs file.
+
+  score RAZOR_CHECK 10
+
+The default score is 3 and the default threshold needed is 5.
+Therefore if you wish to have any razor listed messages tagged by SA
+then setting a score for any razor listed messages to anything above 5
+would be sufficient.
+
+If you are already using SA then the above would be more efficient.
+Otherwise you are running all of the mail through razor twice, once
+for SA and once again afterward.  If you really want to run Razor
+individually then you should set the 'score RAZOR_CHECK 0' so that SA
+won't do it and avoid the double network hit.
+
+However, one of the benefits of using SA in combination with Razor has
+been the history of false positive reports in the razor database.  The
+current score of 3 is hefty, but not enough by itself to tag as spam.
+But for any real spam is usually enough to push it over the threshold.
+Razor2 addresses the false positive problem but is not yet in as wide
+of use as Razor1.
+
+Bob
+
+--huq684BweRXVnRxX
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9iV7k0pRcO8E2ULYRAjoAAJ97CB6LpbhPHqa8IJx1l4g/LRiVdwCfUZIB
+kUAK30zsRWL8PTb1TrEQuy8=
+=XVm6
+-----END PGP SIGNATURE-----
+
+--huq684BweRXVnRxX--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Razor-users mailing list
+Razor-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/razor-users
+
+

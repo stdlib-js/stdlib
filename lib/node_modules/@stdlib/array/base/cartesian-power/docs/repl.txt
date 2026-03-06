@@ -1,0 +1,30 @@
+
+{{alias}}( x, n )
+    Returns the Cartesian power.
+
+    If provided an empty array, the function returns an empty array.
+
+    If `n` is less than or equal to zero, the function returns an empty array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    n: integer
+        Power.
+
+    Returns
+    -------
+    out: Array<Array>
+        Cartesian product.
+
+    Examples
+    --------
+    > var x = [ 1, 2 ];
+    > var out = {{alias}}( x, 2 )
+    [ [ 1, 1 ], [ 1, 2 ], [ 2, 1 ], [ 2, 2 ] ]
+
+    See Also
+    --------
+

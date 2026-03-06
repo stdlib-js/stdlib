@@ -1,0 +1,63 @@
+From ilug-admin@linux.ie  Tue Aug 13 14:04:01 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E1ECA43C32
+	for <jm@localhost>; Tue, 13 Aug 2002 09:04:00 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 13 Aug 2002 14:04:00 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7DD39e32579 for
+    <jm-ilug@jmason.org>; Tue, 13 Aug 2002 14:03:10 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA15196; Tue, 13 Aug 2002 14:02:11 +0100
+Received: from mail.tradesignals.com ([217.75.2.27]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA15163; Tue, 13 Aug 2002 14:02:04 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [217.75.2.27] claimed to
+    be mail.tradesignals.com
+Received: from docaoimh.tradesignals.com (docaoimh.tradesignals.com
+    [192.168.1.26]) by mail.tradesignals.com (8.11.6/8.11.6) with ESMTP id
+    g7DD20325294; Tue, 13 Aug 2002 14:02:00 +0100
+Received: from localhost (localhost [[UNIX: localhost]]) by
+    docaoimh.tradesignals.com (8.11.6/8.11.6) id g7DD20W22917; Tue,
+    13 Aug 2002 14:02:00 +0100
+Content-Type: text/plain; charset="iso-8859-1"
+From: Donncha O Caoimh <donncha.ocaoimh@tradesignals.com>
+To: ilug@linux.ie, Niall O Broin <niall@linux.ie>
+Subject: Re: [ILUG] Secure remote file access
+Date: Tue, 13 Aug 2002 14:02:00 +0100
+X-Mailer: KMail [version 1.4]
+References: <20020813112214.GA5163@bilbo.makalumedia.com>
+In-Reply-To: <20020813112214.GA5163@bilbo.makalumedia.com>
+MIME-Version: 1.0
+Message-Id: <200208131402.00058.donncha.ocaoimh@tradesignals.com>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    OAA15163
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+rsync over ssh.. very nice!
+
+Donncha.
+
+
+On Tuesday 13 August 2002 12:22, Niall O Broin wrote:
+> What are the best options available on Linux ? SFTP ? WebDAV ? Something
+> else ? Linux servers - Linux and Mac OS-X clients.
+>
+>
+>
+> Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+

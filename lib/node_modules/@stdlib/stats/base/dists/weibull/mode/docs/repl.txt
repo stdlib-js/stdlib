@@ -1,0 +1,35 @@
+
+{{alias}}( k, λ )
+    Returns the mode of a Weibull distribution.
+
+    If `0 < k <= 1`, the function returns `0.0`.
+
+    If `k <= 0` or `λ <= 0`, the function returns `NaN`.
+
+    If `k` or `λ` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    k: number
+        Shape parameter.
+
+    λ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Mode.
+
+    Examples
+    --------
+    > var v = {{alias}}( 1.0, 1.0 )
+    0.0
+    > v = {{alias}}( 4.0, 12.0 )
+    ~11.167
+    > v = {{alias}}( 8.0, 2.0 )
+    ~1.967
+
+    See Also
+    --------
+

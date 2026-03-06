@@ -1,0 +1,36 @@
+
+{{alias}}( x )
+    Returns an approximate square root of an unsigned 32-bit integer `x`.
+
+    Prefer hardware `sqrt` over a software implementation.
+
+    When using a software `sqrt`, this function provides a performance boost
+    when an application requires only approximate computations for integer
+    arguments.
+
+    For applications requiring high-precision, this function is never suitable.
+
+    Parameters
+    ----------
+    x: uinteger
+        Input value.
+
+    Returns
+    -------
+    out: uinteger
+        Integer square root.
+
+    Examples
+    --------
+    > var v = {{alias}}( 9 >>> 0 )
+    3
+    > v = {{alias}}( 2 >>> 0 )
+    1
+    > v = {{alias}}( 3 >>> 0 )
+    1
+    > v = {{alias}}( 0 >>> 0 )
+    0
+
+    See Also
+    --------
+

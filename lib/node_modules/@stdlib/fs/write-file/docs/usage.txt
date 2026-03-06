@@ -1,0 +1,10 @@
+
+Usage: write-file [options] <filepath>
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+  --enc, --encoding encoding   Encoding. Default: 'utf8'.
+         --flag flag           Flag. Default: 'r'.
+         --mode mode           Mode. Default: 0o666.

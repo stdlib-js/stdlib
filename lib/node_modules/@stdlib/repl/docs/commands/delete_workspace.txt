@@ -1,0 +1,27 @@
+
+deleteWorkspace( [name] )
+    Deletes a workspace.
+
+    If not provided an argument, the REPL deletes the current workspace and
+    switches to the 'base' workspace.
+
+    The 'base' workspace *cannot* be deleted.
+
+    Parameters
+    ----------
+    name: string (optional)
+        Workspace name. Default: the current workspace.
+
+    Examples
+    --------
+    > workspace( 'foobar' );
+    > var x = 3.14;
+    > workspace( 'barfoo' );
+    > workspaces()
+    > deleteWorkspace( 'foobar' );
+    > workspaces()
+
+    See Also
+    --------
+    currentWorkspace, loadWorkspace, workspace, workspaces
+

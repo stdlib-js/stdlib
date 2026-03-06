@@ -1,0 +1,50 @@
+Return-Path: tim.one@comcast.net
+Delivery-Date: Fri Sep  6 15:59:38 2002
+From: tim.one@comcast.net (Tim Peters)
+Date: Fri, 06 Sep 2002 10:59:38 -0400
+Subject: [Spambayes] test sets?
+In-Reply-To: <200209060759.g867xcV03853@localhost.localdomain>
+Message-ID: <LNBBLJKPBEHFEDALKOLCEEHFBCAB.tim.one@comcast.net>
+
+[Anthony Baxter]
+> I've got a test set here that's the last 3 and a bit years email to
+> info@ekit.com and info@ekno.com - it's a really ugly set of 20,000+
+> messages, currently broken into 7,000 spam, 9,000 ham, 9,000 currently
+> unclassified. These addresses are all over the 70-some different
+> ekit/ekno/ISIConnect websites, so they get a LOT of spam.
+>
+> As well as the usual spam, it also has customers complaining about
+> credit card charges, it has people interested in the service and
+> asking questions about long distance rates, &c &c &c. Lots and lots
+> of "commercial" speech, in other words. Stuff that SA gets pretty
+> badly wrong.
+
+Can this corpus be shared?  I suppose not.
+
+> I'm currently mangling it by feeding all parts (text, html, whatever
+> else :) into the filters, as well as both a selected number of headers
+> (to, from, content-type, x-mailer), and also a list of (header,
+> count_of_header). This is showing up some nice stuff - e.g. the
+> X-uidl that stoopid spammers blindly copy into their messages.
+
+If we ever <wink> have a shared corpus, an easy refactoring of timtest
+should allow to plug in different tokenizers.  I've only made three changes
+to Graham's algorithm so far (well, I've made dozens -- only three survived
+testing as proven winners), all the rest has been refining the tokenization
+to provide better clues.
+
+> I did have Received in there, but it's out for the moment, as it causes
+> rates to drop.
+
+That's ambiguous.  Accuracy rates or error rates, ham or spam rates?
+
+> I'm also stripping out HTML tags, except for href="" and src="" - there's
+> so so much goodness in them (note that I'm only keeping the contents of
+> the attributes).
+
+Mining embedded http/https/ftp thingies cut the false negative rate in half
+in my tests (not keying off href, just scanning for anything that "looked
+like" one); that was the single biggest f-n improvement I've seen.  It
+didn't change the false positive rate.  So you know whether src added
+additional power, or did you do both at once?
+

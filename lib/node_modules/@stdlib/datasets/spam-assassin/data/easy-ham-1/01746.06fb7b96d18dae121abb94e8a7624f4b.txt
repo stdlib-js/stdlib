@@ -1,0 +1,29 @@
+Return-Path: skip@pobox.com
+Delivery-Date: Tue Sep 10 17:36:57 2002
+From: skip@pobox.com (Skip Montanaro)
+Date: Tue, 10 Sep 2002 11:36:57 -0500
+Subject: [Spambayes] timtest broke?
+Message-ID: <15742.8105.960711.715561@12-248-11-90.client.attbi.com>
+
+
+After my latest cvs up, timtest fails with
+
+    Traceback (most recent call last):
+      File "/home/skip/src/spambayes/timtest.py", line 294, in ?
+        drive(nsets)
+      File "/home/skip/src/spambayes/timtest.py", line 264, in drive
+        d = Driver()
+      File "/home/skip/src/spambayes/timtest.py", line 152, in __init__
+        self.global_ham_hist = Hist(options.nbuckets)
+    AttributeError: 'OptionsClass' object has no attribute 'nbuckets'
+
+I'm running it as
+
+    timtest -n5 > Data/timtest.out
+
+from my ~/Mail directory (not from my ~/src/spambayes directory).  If I
+create a symlink to ~/src/spambayes/bayes.ini it works once again, but
+shouldn't there be an nbuckets attribute with a default value already?
+
+Skip
+

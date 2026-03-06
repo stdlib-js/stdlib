@@ -1,0 +1,79 @@
+
+{{alias}}( t, α, β )
+    Evaluates the moment-generating function (MGF) for a gamma distribution with
+    shape parameter `α` and rate parameter `β` at a value `t`.
+
+    If `α <= 0` or `β <= 0`, the function returns `NaN`.
+
+    If `α` or `β` is `NaN`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    t: number
+        Input value.
+
+    α: number
+        Shape parameter.
+
+    β: number
+        Rate parameter.
+
+    Returns
+    -------
+    out: number
+        Evaluated MGF.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.5, 0.5, 1.0 )
+    ~1.414
+    > y = {{alias}}( 0.1, 1.0, 1.0 )
+    ~1.111
+    > y = {{alias}}( -1.0, 4.0, 2.0 )
+    ~0.198
+
+    > y = {{alias}}( NaN, 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, NaN, 1.0 )
+    NaN
+    > y = {{alias}}( 0.0, 1.0, NaN )
+    NaN
+
+    > y = {{alias}}( 2.0, 4.0, 1.0 )
+    NaN
+    > y = {{alias}}( 2.0, -0.5, 1.0 )
+    NaN
+    > y = {{alias}}( 2.0, 1.0, 0.0 )
+    NaN
+    > y = {{alias}}( 2.0, 1.0, -1.0 )
+    NaN
+
+
+{{alias}}.factory( α, β )
+    Returns a function for evaluating the moment-generating function (MGF) of a
+    gamma distribution with shape parameter `α` and rate parameter `β`.
+
+    Parameters
+    ----------
+    α: number
+        Shape parameter.
+
+    β: number
+        Rate parameter.
+
+    Returns
+    -------
+    mgf: Function
+        Moment-generating function (MGF).
+
+    Examples
+    --------
+    > var myMGF = {{alias}}.factory( 3.0, 1.5 );
+    > var y = myMGF( 1.0 )
+    ~27.0
+    > y = myMGF( 0.5 )
+    ~3.375
+
+    See Also
+    --------
+

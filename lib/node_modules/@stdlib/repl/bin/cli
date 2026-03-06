@@ -1,0 +1,92 @@
+#!/usr/bin/env node
+
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2019 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+// MODULES //
+
+var resolve = require( 'path' ).resolve;
+var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var CLI = require( '@stdlib/cli/ctor' );
+var REPL = require( './../lib' );
+
+
+// MAIN //
+
+/**
+* Main execution sequence.
+*
+* @private
+*/
+function main() {
+	var flags;
+	var repl; // eslint-disable-line no-unused-vars
+	var opts;
+	var cli;
+
+	// Create a command-line interface:
+	cli = new CLI({
+		'pkg': require( './../package.json' ),
+		'options': require( './../etc/cli_opts.json' ),
+		'help': readFileSync( resolve( __dirname, '..', 'docs', 'usage.txt' ), {
+			'encoding': 'utf8'
+		})
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags.help || flags.version ) {
+		return;
+	}
+
+	opts = {};
+	if ( typeof flags[ 'input-prompt' ] === 'string' ) {
+		opts.inputPrompt = flags[ 'input-prompt' ];
+	}
+	if ( flags.load ) {
+		opts.load = flags.load;
+	}
+	if ( flags.logfile ) {
+		opts.log = flags.logfile;
+	}
+	if ( typeof flags[ 'output-prompt' ] === 'string' ) {
+		opts.outputPrompt = flags[ 'output-prompt' ];
+	}
+	if ( flags.padding ) {
+		opts.padding = parseInt( flags.padding, 10 );
+	}
+	if ( flags.quiet ) {
+		opts.quiet = flags.quiet;
+	}
+	if ( flags.save ) {
+		opts.save = flags.save;
+	}
+	if ( flags.timeout ) {
+		opts.timeout = parseInt( flags.timeout, 10 );
+	}
+	if ( typeof flags.welcome === 'string' ) {
+		opts.welcome = flags.welcome;
+	}
+
+	// Create a new REPL instance:
+	repl = new REPL( opts );
+}
+
+main();

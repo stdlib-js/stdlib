@@ -1,0 +1,133 @@
+From fork-admin@xent.com  Thu Aug 22 16:37:41 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: zzzz@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5DB9843F99
+	for <zzzz@localhost>; Thu, 22 Aug 2002 11:37:40 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Thu, 22 Aug 2002 16:37:40 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g7MFbVZ12617 for <zzzz@spamassassin.taint.org>;
+    Thu, 22 Aug 2002 16:37:32 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id D8D5029409A; Thu, 22 Aug 2002 08:35:09 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from sunserver.permafrost.net (u172n16.hfx.eastlink.ca
+    [24.222.172.16]) by xent.com (Postfix) with ESMTP id 3703F294099 for
+    <fork@xent.com>; Thu, 22 Aug 2002 08:34:40 -0700 (PDT)
+Received: from [192.168.123.179] (helo=permafrost.net) by
+    sunserver.permafrost.net with esmtp (Exim 3.35 #1 (Debian)) id
+    17htxj-0008Ad-00 for <fork@xent.com>; Thu, 22 Aug 2002 12:33:31 -0300
+Message-Id: <3D6505C3.2020405@permafrost.net>
+From: Owen Byrne <owen@permafrost.net>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.0.0) Gecko/20020530
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: fork@spamassassin.taint.org
+Subject: The case for spam
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Thu, 22 Aug 2002 12:39:47 -0300
+
+SpamAssassin is hurting democracy!
+Owen
+---------------------------------------------------------------------------------------------------------------------
+
+http://www.bayarea.com/mld/mercurynews/news/opinion/3900215.htm
+
+Internet can level the political playing field
+By Mike McCurry and Larry Purpuro
+
+NOT many months from now, people across the country will experience one 
+of the great recurring features of American democracy. At shopping 
+malls, on factory floors, at church socials and even on our front 
+stoops, we will be approached by individuals who want to represent us in 
+public office. While chances are high that we won't know them 
+personally, they will walk up to us, offer a handshake and a flier and 
+ask for our votes.
+
+Just as technology is affecting every other area of communication, it 
+has begun to affect the way political candidates communicate with voters.
+
+In this year's GOP gubernatorial primary, California Secretary of State 
+Bill Jones, who faced better-funded candidates, acquired the e-mail 
+addresses of more than a million potential California voters and sent 
+each an unsolicited e-mail asking for support.
+
+That day, he might have chosen any of the more traditional -- and more 
+expensive -- methods of contacting voters, such as direct mail, radio 
+spots or TV ads. But he spent only about 2 cents per message, instead of 
+35 cents or more per message for direct mail or in another medium.
+
+Had Jones chosen direct mail, radio or TV, that communication would have 
+been equally ``unsolicited,'' as defined in the e-mail world. Few voters 
+would have ``opted in'' to receive campaign information from Jones 
+through any of those channels.
+
+The response to Jones' e-mail effort, however, was swift and intense. He 
+was lambasted by anti-spam advocates, and media coverage was almost 
+entirely negative. To be fair, some of Jones' tactics could have been 
+refined. He used a less-than-perfect list and no standard-practice 
+``paid for'' disclaimer in the message.
+
+His detractors, however, attacked him not for his tactical miscues but 
+because the e-mail was sent unsolicited. In fact, Jones' online campaign 
+may have been his most visible asset. In an era of cynicism toward money 
+in politics -- money typically spent on other unsolicited communication 
+mediums -- Jones tried to level the playing field.
+
+No one likes commercial spam. It is irrelevant and untargeted and can be 
+highly intrusive and even offensive. But as a sophisticated society, 
+it's time to differentiate commercial spam from very different 
+unsolicited e-mail sent by political candidates to voters.
+
+The debate is particularly relevant in light of legislation in Congress 
+that would constitute the first federal law to directly address spam. We 
+believe e-mail is no more intrusive than direct mail, telemarketing or 
+TV advertising when it comes to politicians seeking to reach voters. A 
+simple link in good e-mail campaigns allows recipients to opt out of 
+future mailings. Direct mail takes at least a phone call or stamp to be 
+taken off a list, and viewers must repeatedly endure TV ads.
+
+When a candidate lacks a large campaign war chest, he or she can use the 
+Internet to provide constituents with information to better prepare them 
+to perform their civic duty of casting educated votes. With more than 60 
+percent of all potential voters in this country possessing e-mail 
+accounts, it makes sense that political candidates use this medium.
+
+Candidates might avoid some of the tactical problems encountered by the 
+Jones campaign if they use the technologies available today that better 
+ensure quality of e-mail lists and target content to specific recipient 
+groups.
+
+But the broader point remains. When a political candidate sends a voter 
+an e-mail, that recipient can choose to delete the message without 
+opening it, unsubscribe from the list, read it or even reply and engage 
+the sender. That choice should belong to the voter -- not to anti-spam 
+advocates whose efforts are better focused on commercial e-mail. 
+Political candidates should be free to communicate with voters as best 
+they can, and let voters decide what to do with that information.
+
+
+--------------------------------------------------------------------------------
+Mike McCurry, former press secretary for President Clinton, is CEO of an 
+advocacy management and communications software company. Larry Purpuro, 
+the former Republican National Committee deputy chief of staff, is 
+founder and president of a political e-marketing firm. This was written 
+for the Los Angeles Times. 
+
+http://xent.com/mailman/listinfo/fork
+

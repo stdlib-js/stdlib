@@ -1,0 +1,76 @@
+From rpm-list-admin@freshrpms.net  Fri Aug 16 11:26:46 2002
+Return-Path: <rpm-zzzlist-admin@freshrpms.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 795F4441A2
+	for <jm@localhost>; Fri, 16 Aug 2002 06:03:13 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 16 Aug 2002 11:03:13 +0100 (IST)
+Received: from egwn.net (ns2.egwn.net [193.172.5.4]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7G9uVa11631 for
+    <jm-rpm@jmason.org>; Fri, 16 Aug 2002 10:56:31 +0100
+Received: from auth02.nl.egwn.net (localhost [127.0.0.1]) by egwn.net
+    (8.11.6/8.11.6/EGWN) with ESMTP id g7G9p2J07070; Fri, 16 Aug 2002 11:51:03
+    +0200
+Received: from python (gw01.es3.egwn.net [212.9.66.13]) (authenticated) by
+    egwn.net (8.11.6/8.11.6/EGWN) with ESMTP id g7G9oGJ06548 for
+    <rpm-list@freshrpms.net>; Fri, 16 Aug 2002 11:50:16 +0200
+From: Matthias Saou <matthias@egwn.net>
+To: rpm-zzzlist@freshrpms.net
+Subject: Re: advice on 7.3.92 to 7.3.93, and Apt compiling
+Message-Id: <20020816114759.2b1ed25e.matthias@egwn.net>
+In-Reply-To: <20020816.utj.20032800@www.dudex.net>
+References: <20020816.utj.20032800@www.dudex.net>
+Organization: Electronic Group Interactive
+X-Mailer: Sylpheed version 0.8.1claws (GTK+ 1.2.10; i386-redhat-linux)
+Reply-BY: Tue, 24 Jul 2000 19:02:00 +1000
+X-Operating-System: GNU/Linux power!
+X-Message-Flag: Try using a real operating system : GNU/Linux power!
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Mailscanner: Found to be clean, Found to be clean
+Sender: rpm-zzzlist-admin@freshrpms.net
+Errors-To: rpm-zzzlist-admin@freshrpms.net
+X-Beenthere: rpm-zzzlist@freshrpms.net
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+Reply-To: rpm-zzzlist@freshrpms.net
+List-Help: <mailto:rpm-zzzlist-request@freshrpms.net?subject=help>
+List-Post: <mailto:rpm-zzzlist@freshrpms.net>
+List-Subscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=subscribe>
+List-Id: Freshrpms RPM discussion list <rpm-zzzlist.freshrpms.net>
+List-Unsubscribe: <http://lists.freshrpms.net/mailman/listinfo/rpm-zzzlist>,
+    <mailto:rpm-list-request@freshrpms.net?subject=unsubscribe>
+List-Archive: <http://lists.freshrpms.net/pipermail/rpm-zzzlist/>
+X-Original-Date: Fri, 16 Aug 2002 11:47:59 +0200
+Date: Fri, 16 Aug 2002 11:47:59 +0200
+
+Once upon a time, ""Angles" wrote :
+
+> Any sage advice on the most painless way to upgrade from old limbo (.92)
+> to new limbo (.93)?
+> 
+> Apt for rpm from the 7.3 days barely works on Limbo1, and the package:
+> apt-0.5.4cnc6-dwd2.src.rpm will not compile on the Libbo1 box (I was
+> going to use that to dist-upgrade to Limbo2).
+
+Well, the 7.3 binary should work as long as you install the "rpm404" (IIRC)
+compatibility library. The only problem I have with some rpm 4.1 versions
+is that it sometimes hangs at the and of operations (-e, -i, -F or -U) and
+the only workaround is to kill it, "rm -f /var/lib/rpm/__*" and try again.
+
+Matthias
+
+-- 
+Matthias Saou                                World Trade Center
+-------------                                Edificio Norte 4 Planta
+System and Network Engineer                  08039 Barcelona, Spain
+Electronic Group Interactive                 Phone : +34 936 00 23 23
+
+_______________________________________________
+RPM-List mailing list <RPM-List@freshrpms.net>
+http://lists.freshrpms.net/mailman/listinfo/rpm-list
+

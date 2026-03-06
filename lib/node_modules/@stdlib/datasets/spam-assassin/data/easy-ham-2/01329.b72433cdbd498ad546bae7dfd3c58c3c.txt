@@ -1,0 +1,25 @@
+From jm@dogma.slashnull.org  Wed Aug 14 10:53:45 2002
+Return-Path: <yyyy@dogma.slashnull.org>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6493E4410B
+	for <jm@localhost>; Wed, 14 Aug 2002 05:48:28 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 14 Aug 2002 10:48:28 +0100 (IST)
+Received: (from yyyy@localhost) by dogma.slashnull.org (8.11.6/8.11.6) id
+    g7DN0Gi21994 for jm; Wed, 14 Aug 2002 00:00:16 +0100
+Date: Wed, 14 Aug 2002 00:00:16 +0100
+Message-Id: <200208132300.g7DN0Gi21994@dogma.slashnull.org>
+From: root@dogma.slashnull.org (Cron Daemon)
+To: yyyy@dogma.slashnull.org
+Subject: Cron <yyyy@dogma> /home/yyyy/logs/runme
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <HOME=/home/yyyy>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=yyyy>
+
+/etc/rc.d/init.d/httpd: kill: (21982) - No such pid
+/etc/rc.d/init.d/httpd: kill: (21981) - No such pid
+
+

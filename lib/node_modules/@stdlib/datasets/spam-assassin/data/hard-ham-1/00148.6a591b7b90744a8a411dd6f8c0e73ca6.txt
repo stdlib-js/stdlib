@@ -1,0 +1,241 @@
+Received: from rs6000.resqnet.com (rs6000.resqnet.com [64.209.23.67])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6NGGZ409086
+	for <resqnet_com@spamtraps.taint.org>; Tue, 23 Jul 2002 17:16:35 +0100
+Received: from mailhost3 (nelson.techtarget.com [65.214.43.159])
+	by rs6000.resqnet.com (8.11.2/8.11.2) with ESMTP id g6NGFS318144
+	for <zzzarotta@resqnet.com>; Tue, 23 Jul 2002 12:15:29 -0400
+Received: from localhost.localdomain (localhost.localdomain [127.0.0.1])
+	by mailhost3 (Postfix) with ESMTP
+	id A47D33DE5B0; Tue, 23 Jul 2002 12:00:38 -0400 (EDT)
+To: "SearchSecurity" <searchSecurity@lists.techtarget.com>
+From: "SearchSecurity" <searchSecurity-F485FCCE40B794D5@lists.techtarget.com>
+Reply-To: "SearchSecurity" <searchSecurity-F485FCCE40B794D5@lists.techtarget.com>
+Subject: Today's news: Serious PHP flaw found
+Mime-Version: 1.0
+Content-type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: TargetMail E-Mail By TechTarget.com
+X-Content_id: 450897
+Message-Id: <20020723160038.A47D33DE5B0@mailhost3>
+Date: Tue, 23 Jul 2002 12:00:38 -0400 (EDT)
+X-MailScanner: Found to be clean
+X-MailScanner-SpamCheck: not spam, SpamAssassin (score=0.3, required 5,
+	FROM_HAS_MIXED_NUMS, TO_LOCALPART_EQ_REAL, CLICK_BELOW,
+	COPYRIGHT_CLAIMED)
+
+SEARCHSECURITY | Security and Industry News
+July 23, 2002
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+FROM OUR SPONSOR:
+
+- FREE Security Webcast from Microsoft and NetIQ 
+http://searchSecurity.com/r/0,,4619,00.htm?FreeSecurityWebcast 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+IN THIS ISSUE | Today's Highlights
+
+1. THE TOP STORIES 
+- PHP flaw could crash, burn Web servers
+- Quick Takes: Major vendors throw support at SAML
+- NetBugtraq founder's security tips
+- ROI calculators: Honest projection or fuzzy math?
+
+2. IMPORTANT ANNOUNCEMENTS AND LINKS
+- New poll: Will heuristics ever fully replace signature-based
+antivirus protection?
+- Infosec Know IT All Daily Trivia: Tuesday, July 23, 2002
+- Network Security Tip: Firewall best practices 
+- Best Web Links: Risk analysis
+- The Missing Link: Scot has cyber tomb with a view
+ 
+____________________________________________________________________
+*********************** SPONSORED BY: NetIQ **********************
+
+FREE Security Webcast from Microsoft and NetIQ 
+Is your enterprise secure? Learn how to combat hackers during the
+free 8/20/02 Webcast, "Computer Crime Forensics," Part II of the
+"Defending the Enterprise" series. Tune in as security experts from
+the FBI, Shell, Microsoft and NetIQ show you how to dig deep to trace
+the steps of a hacker and preserve valuable evidence if you're ever
+compromised. They'll also cover how to safeguard and harden your
+Windows network during a live Q&A session. Discover expert
+countermeasures to secure and protect your enterprise. Register now! 
+http://searchSecurity.com/r/0,,4619,00.htm?FreeSecurityWebcast 
+
+____________________________________________________________________
+LEAD STORY
+
+PHP FLAW COULD CRASH, BURN WEB SERVERS | News: SearchSecurity
+A security vulnerability in the popular PHP scripting language could
+allow an attacker to crash a Web server or run arbitrary code on a
+system. Only particular versions of PHP are impacted, and users are
+urged to upgrade or patch immediately. 
+http://www.searchsecurity.com/originalContent/0,289142,sid14_gci840432,00.html  
+
+MORE ON THIS TOPIC
+>> Read the SearchSecurity news exclusive, "Open-source security:
+It's all in the scrutiny:"
+http://searchsecurity.techtarget.com/originalContent/0,289142,sid14_gci811614,00.html 
+
+>> Visit our Best Web Links on vulnerabilities:
+http://searchsecurity.techtarget.com/bestWebLinks/0,289521,sid14_tax281934,00.html 
+
+>> Click here for Top 10 Articles of the Week:
+http://searchsecurity.techtarget.com/originalContent/0,289142,sid14_gci816475,00.html    
+____________________________________________________________________
+********************************************************************
+OTHER STORIES
+In addition to the headlines below, others are available on our news
+page.
+ >> Full Stories: http://searchsecurity.techtarget.com/news/
+ 
+QUICK TAKES: MAJOR VENDORS THROW SUPPORT AT SAML | News:
+SearchSecurity
+RSA Security and CRM vendor ePeople announce support for the Security
+Assertion Markup Language (SAML) specification, leading off this
+edition of Quick Takes. Also included are items from Red Siren and
+Veridian, ISS and St. Bernard Software, WatchGuard and Sigaba. 
+http://www.searchsecurity.com/originalContent/0,289142,sid14_gci840356,00.html 
+
+NETBUGTRAQ FOUNDER'S SECURITY TIPS | News: SearchWindowsManageability
+What's wrong with Windows security? How can you right those wrongs?
+Security expert Russ Cooper offers his insights and tips. 
+http://searchwindowsmanageability.techtarget.com/originalContent/0,289142,sid33_gci839660,00.html  
+
+ROI CALCULATORS: HONEST PROJECTION OR FUZZY MATH? | News:
+SearchEBusiness
+Corporate budget watchdogs are breathing down your neck, wanting you
+to justify every technology expense. So do ROI calculators accurately
+forecast a project's likely returns or merely encourage you to open
+up your wallet and spend?
+http://searchebusiness.techtarget.com/originalContent/0,289142,sid19_gci839773,00.html 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ADDITIONAL SECURITY HEADLINES
+All headlines, including those below, are available on our news page.
+ >> Full Stories: http://searchsecurity.techtarget.com/news/
+
+- WHAT DOES THE FUTURE HOLD FOR PGP?
+- GAO FAULTS U.S. CYBER-SECURITY EFFORTS
+- FIREWALL SAFEGUARDS WEB-ENABLED APPS
+- SECURITY FLAWS IN PINGTEL PHONE
+
+____________________________________________________________________
+IMPORTANT FEATURES AND LINKS:
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+TAKE OUR POLL | SearchSecurity reader survey
+
+Will heuristics ever fully replace signature-based antivirus
+protection?
+
+http://searchsecurity.techtarget.com/poll 
+
+PREVIOUS POLL RESULTS
+
+What is the weakest security link in your organization?
+People (138 votes) 92%
+Technology (6 votes) 4%
+Don't know (6 votes) 4%
+Total votes: 150
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+INFOSEC KNOW IT ALL DAILY TRIVIA | Tuesday, July 23, 2002 
+
+This type of IDS involves a wrapper or a scanner that looks for
+specific events. When it sees the event, it correlates it and decides
+whether or not it's an acceptable event.
+a. anomaly detection
+b. signature-based
+c. blind barricade
+d. profile detection
+
+>> Check your answer:
+http://searchsecurity.techtarget.com/tip/1,289483,sid14_gci840086,00.html 
+
+>> Visit our Featured Topic on intrusion detection:
+http://searchsecurity.techtarget.com/featuredTopic/0,290042,sid14_gci779273,00.html 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+FIREWALL BEST PRACTICES | Network Security Tip
+
+Firewalls are not the end-all, be-all solution to information
+security. They are, however, a necessary component of an effective
+information security infrastructure. The following list is a set of
+best practices, in no particular order, that you should consider to
+ensure that your firewall is configured for optimal performance and
+effectiveness...
+http://searchsecurity.techtarget.com/tip/1,289483,sid14_gci838215,00.html  
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+RISK ANALYSIS | Best Web Links
+
+Knowing where your company's security weaknesses are allow you to
+prioritize and better allocate your resources. Learn more about risk
+analysis from the resources we've collected here.
+http://searchsecurity.techtarget.com/bestWebLinks/0,289521,sid14_tax281906,00.html  
+ 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+THE MISSING LINK | Scot has cyber tomb with a view
+
+Sometimes an epitaph just can't be the last word. Billy Kemp was a
+great Scot who died a couple of years ago at the young age of 52. He
+was a councilman, husband, father and pillar of his community. His
+family couldn't possibly post all that on a tombstone. But they did
+manage to fit http://www.billykemp.org.uk/ on there. Yep, Kemp's
+tombstone doubles as a billboard for his Web site, created
+posthumously by his son as a tribute to his father's life. The grave
+site has gotten more than 33,000 hits, perhaps more visits than the
+gravesite!
+
+SOURCE: vnunet
+http://www.vnunet.com/News/1133759 
+ 
+>> Have you missed a Missing Link? Peruse our archive: 
+http://searchsecurity.techtarget.com/bestWebLinks/0,289521,sid14_tax292200,00.html
+
+____________________________________________________________________
+********************** SEARCHSECURITY CONTACTS *********************
+
+CATHY GAGNE, Site Editor (mailto:cgagne@techtarget.com)
+   >> Send in your original articles and best practices.
+____________________________________________________________________
+
+CRYSTAL FERRARO, Assistant Editor (mailto:cferraro@techtarget.com)
+   >> Send in your favorite Web sites.
+____________________________________________________________________
+
+MIKE MIMOSO, News Editor (mailto:mmimoso@techtarget.com)
+   >> Send in your news, product announcements and article ideas.
+____________________________________________________________________
+
+ED HURLEY, Assistant News Editor (mailto:ehurley@techtarget.com)
+   >> Send in your news, product announcements and article ideas.
+____________________________________________________________________
+
+GABRIELLE DERUSSY (mailto:gderussy@techtarget.com)
+   >> Sponsor this or any other TechTarget newsletter.
+____________________________________________________________________
+
+____________________________________________________________________
+********************* ABOUT THIS NEWSLETTER ************************
+
+Created by TechTarget (http://www.techtarget.com)
+ TechTarget - The Most Targeted IT Media
+ Copyright 2002, All Rights Reserved.
+
+
+Unsubscribe from 'Daily News'
+ - Simply Reply to this Email with REMOVE within the Body or Subject
+>  or
+ - Go to: http://searchSecurity.techtarget.com/register
+ - Log in to edit your profile.
+ - Click on the link to Edit email subscriptions.
+ - Uncheck the box next to the newsletter you wish 
+   to unsubscribe from.
+ - When finished, click "Save Changes to My Profile."
+
+
+

@@ -1,0 +1,77 @@
+From sentto-2242572-55981-1034027969-zzzz=spamassassin.taint.org@returns.groups.yahoo.com  Tue Oct  8 00:10:53 2002
+Return-Path: <sentto-2242572-55981-1034027969-zzzz=spamassassin.taint.org@returns.groups.yahoo.com>
+Delivered-To: zzzz@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by spamassassin.taint.org (Postfix) with ESMTP id B81E816F17
+	for <zzzz@localhost>; Tue,  8 Oct 2002 00:10:52 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for zzzz@localhost (single-drop); Tue, 08 Oct 2002 00:10:52 +0100 (IST)
+Received: from n35.grp.scd.yahoo.com (n35.grp.scd.yahoo.com
+    [66.218.66.103]) by dogma.slashnull.org (8.11.6/8.11.6) with SMTP id
+    g97LwmK18667 for <zzzz@spamassassin.taint.org>; Mon, 7 Oct 2002 22:58:48 +0100
+X-Egroups-Return: sentto-2242572-55981-1034027969-zzzz=spamassassin.taint.org@returns.groups.yahoo.com
+Received: from [66.218.67.199] by n35.grp.scd.yahoo.com with NNFMP;
+    07 Oct 2002 21:59:29 -0000
+X-Sender: robert.chambers@baesystems.com
+X-Apparently-To: zzzzteana@yahoogroups.com
+Received: (EGP: mail-8_2_2_0); 7 Oct 2002 21:59:28 -0000
+Received: (qmail 38258 invoked from network); 7 Oct 2002 21:59:27 -0000
+Received: from unknown (66.218.66.217) by m6.grp.scd.yahoo.com with QMQP;
+    7 Oct 2002 21:59:27 -0000
+Received: from unknown (HELO n25.grp.scd.yahoo.com) (66.218.66.81) by
+    mta2.grp.scd.yahoo.com with SMTP; 7 Oct 2002 21:59:27 -0000
+Received: from [66.218.67.135] by n25.grp.scd.yahoo.com with NNFMP;
+    07 Oct 2002 21:59:26 -0000
+To: zzzzteana@yahoogroups.com
+Message-Id: <ant03s+fegg@eGroups.com>
+User-Agent: eGroups-EW/0.82
+X-Mailer: Yahoo Groups Message Poster
+From: "uncle_slacky" <robert.chambers@baesystems.com>
+X-Originating-Ip: 62.255.0.8
+X-Yahoo-Profile: uncle_slacky
+MIME-Version: 1.0
+Mailing-List: list zzzzteana@yahoogroups.com; contact
+    forteana-owner@yahoogroups.com
+Delivered-To: mailing list zzzzteana@yahoogroups.com
+Precedence: bulk
+List-Unsubscribe: <mailto:zzzzteana-unsubscribe@yahoogroups.com>
+Date: Mon, 07 Oct 2002 21:59:24 -0000
+Subject: [zzzzteana] Latest Iraq-related news
+Reply-To: zzzzteana@yahoogroups.com
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+
+Just the headlines and URLs so I don't bore y'all too much....
+
+http://www.guardian.co.uk/Iraq/Story/0,2763,805900,00.html
+
+As a US Republican, I reject George Bush's illegal and
+unconstitutional plan to attack Iraq - Scott Ritter
+
+
+http://jang.com.pk/thenews/oct2002-daily/07-10-2002/world/w9.htm
+
+Saudi Arabia may start fingerprinting Americans
+
+
+<http://news.ft.com/servlet/ContentServer?pagename=FT.com/StoryFT/FullStory&c=StoryFT&cid=1033848737242>
+
+Blair warned war to oust Saddam 'illegal'
+
+
+
+------------------------ Yahoo! Groups Sponsor ---------------------~-->
+Home Selling? Try Us!
+http://us.click.yahoo.com/QrPZMC/iTmEAA/MVfIAA/7gSolB/TM
+---------------------------------------------------------------------~->
+
+To unsubscribe from this group, send an email to:
+forteana-unsubscribe@egroups.com
+
+ 
+
+Your use of Yahoo! Groups is subject to http://docs.yahoo.com/info/terms/ 
+
+
+

@@ -1,0 +1,65 @@
+From fork-admin@xent.com  Tue Sep  3 14:24:06 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id A5FEA16F3A
+	for <jm@localhost>; Tue,  3 Sep 2002 14:22:41 +0100 (IST)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Tue, 03 Sep 2002 14:22:41 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g82NOvZ25819 for <jm@jmason.org>;
+    Tue, 3 Sep 2002 00:24:57 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id C612C2940ED; Mon,  2 Sep 2002 16:22:02 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from mithral.com (watcher.mithral.com [204.153.244.1]) by
+    xent.com (Postfix) with SMTP id E7D342940AC for <fork@xent.com>;
+    Mon,  2 Sep 2002 16:21:45 -0700 (PDT)
+Received: (qmail 7871 invoked by uid 1111); 2 Sep 2002 23:24:05 -0000
+From: "Adam L. Beberg" <beberg@mithral.com>
+To: "Reza B'Far (eBuilt)" <rbfar@ebuilt.com>
+Cc: <fork@spamassassin.taint.org>
+Subject: RE: Java is for kiddies
+In-Reply-To: <NCBBJMBPOKEEKDAILFNGOEBKFEAA.rbfar@ebuilt.com>
+Message-Id: <Pine.LNX.4.33.0209021619291.7820-100000@watcher.mithral.com>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: Mon, 2 Sep 2002 16:24:05 -0700 (PDT)
+
+On Mon, 2 Sep 2002, Reza B'Far (eBuilt) wrote:
+
+> With the increasing prevalence of web services (not that they are always a
+> good thing), I doubt that parsing XML will be something that will remain at
+> the Java application layer for long... Recent threads here on Fork
+> indicating the move towards hardware parsing or this code even become part
+> of the native implementation of Java on various platforms...
+
+OK, so, you get the XML toss it through hardware and turn it back into a
+struct/object whatever you call your binary data. I agree this is the way
+things will go, as XML parsing has just too much overhead to survive in the
+application layer. So why turn it into XML in the first place? Becasue it
+gives geeks something to do and sells XML hardware accelerators and way more
+CPUs?
+
+Is there anyone out there actually doing anything new that actually IMPROVES
+things anymore, or are they all too scared of the fact that improvements put
+people out of work and cut #1 is the creators...
+
+- Adam L. "Duncan" Beberg
+  http://www.mithral.com/~beberg/
+  beberg@mithral.com
+
+

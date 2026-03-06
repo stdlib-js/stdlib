@@ -1,0 +1,368 @@
+Return-Path: <Online#3.20230.ac-q5A1l6tzmmPhUdRR.1.b@newsletter.online.com>
+Received: from acmta4.cnet.com (abv-sfo1-acmta4.cnet.com [206.16.1.163])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6H34BJ14074
+	for <qqqqqqqqqq-zdnet@spamassassin.taint.org>; Wed, 17 Jul 2002 04:04:12 +0100
+Received: from abv-sfo1-ac-agent3 (206.16.0.225) by acmta4.cnet.com (PowerMTA(TM) v1.5); Tue, 16 Jul 2002 19:58:40 -0700 (envelope-from <Online#3.20230.ac-q5A1l6tzmmPhUdRR.1.b@newsletter.online.com>)
+Message-ID: <2047095.1026875040998.JavaMail.root@abv-sfo1-ac-agent3>
+Date: Tue, 16 Jul 2002 20:04:00 -0700 (PDT)
+From: "CNET Download.com for Mac" <Online#3.20230.ac-q5A1l6tzmmPhUdRR.1@newsletter.online.com>
+To: qqqqqqqqqq-zdnet@spamassassin.taint.org
+Subject: This week: Marine Aquarium, QuickTime, MoonDock
+Mime-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+X-Mailer: Accucast (http://www.accucast.com)
+X-Mailer-Version: 2.8.4-2
+
+CNET | DOWNLOAD DISPATCH(Mac Edition)
+July 16, 2002
+Vol. 7, No. 28
+
+A Screen Dream
+
+Good Mac screensavers are hard to come by. And screensavers are
+important: not only do they preserve your screen quality, but
+they can also turn your monitor into a conversation piece.
+Marine Aquarium, our Pick of the Week, will turn your desktop
+into a virtual tropical fish aquarium that will make your Mac
+turn some heads. No need to feed:
+
+http://clickthru.online.com/Click?q=c2-oXxLQUEkRh6pmyFgVnxXFZcIuInR 
+
+Also this week, we've got QuickTime 6, the media player's long-
+awaited first foray into MPEG-4 technology; Cartoon Editor, a
+graphic editor that will help you make QuickTime cartoons;
+MoonDock, so you can keep track of moon phases on your desktop;
+WebDesign, a full-featured HTML editor with lots of extras; and
+Sigma Chess Lite, so you can challenge your mind and develop
+your skills at the ancient game of chess.
+
+Enjoy!
+
+Jason Parker
+Assistant Editor, CNET Download.com
+--
+
+(Unsubscribe instructions are at the bottom of this
+newsletter.)
+
+<---------------Advertisement--------------->
+
+Gateway High Performance Desktops - starting at $699!
+
+High Performance, the 500 Series goes beyond the basics and
+features some of the latest technology.  With new sleek
+platinum cases, systems include Intel(R) Pentium(R) 4
+processors, USB 2.0 support, Mid-Tower chassis, Broadband
+Ready and Microsoft(R) Windows(R)XP.  Click here for details!
+
+http://clickthru.online.com/Click?q=d7-wk3ZQLWkDhLMkvyRmBekeVktk2eR 
+
+<------------------------------------------->
+
+IN THIS ISSUE:
+
+1. This Week's Top 10 Downloads
+2. Pick of the Week: Marine Aquarium
+3. The Week in Wares:
+              - Multimedia and design: QuickTime, Cartoon Editor
+              - Home and education: MoonDock
+              - Development tools: WebDesign
+              - Games: Sigma Chess Lite
+4. Updates & Drivers
+5. The Week in Reviews: A TiVo-like toy for the Mac?
+6. Overheard on Download.com
+7. Download.com Outage Notice
+
+P.S. Got a suggestion for CNET Download.com? Send it to:
+suggestions@download.com
+_____________________________________________________________
+
+1. This Week's Top 10 Downloads
+
+   1. LimeWire 2.4.4                         6,190 downloads
+   2. LimeWire (OS X) 2.4.4                  4,561 downloads
+   3. MacSatellite  1.6.1                    4,313 downloads
+   4. Hotline Connect Client 1.8.5           3,656 downloads
+   5. RealPlayer 8.0                         2,939 downloads
+   6. Deck 3.5                               2,908 downloads
+   7. Fetch 4.0.1                            2,333 downloads
+   8. Internet Explorer 5.1.4                2,229 downloads
+   9. Marine Aquarium 0.99.0                 1,837 downloads
+  10. Internet Explorer (OS X) 5.2.1         1,820 downloads
+
+For more details on Download.com's most popular files, click
+here: http://clickthru.online.com/Click?q=ec-MHyXQVy2Fg64heA1kOqFb2GVaGyR 
+______________________________________________________________
+
+2. Pick of the Week
+
+   MARINE AQUARIUM
+   Version: 0.99.0
+   File size: 3MB
+   License: Free to try; $12.95 to buy
+   Minimum Requirements: Mac OS X
+
+   As the name suggests, this program puts an incredibly
+   realistic aquarium of saltwater fish on your screen. You can
+   select from a variety of highly textured fish to swim across
+   your desktop, and you can control variables such as lighting
+   and the number of fish. There is even a starfish that you can
+   track over time to watch how it adapts to its environment.
+
+   http://clickthru.online.com/Click?q=01-9oXDI2jHs5fAjPfvurMPGPxZ6RlR 
+
+   Want to review Marine Aquarium? Submit your opinion here:
+   http://clickthru.online.com/Click?q=17-agitI5XroKlI4b9Iz4s1RhjGRseR 
+
+   Find all of our Picks here:
+   http://clickthru.online.com/Click?q=2c-DatOIc0DRUD42bbc-r7MBvWpjuyR 
+______________________________________________________________
+
+3. The Week in Wares
+
+   IN MULTIMEDIA AND DESIGN:
+
+   QUICKTIME
+   Version 6.0
+   File size: 402K
+   License: Free
+   Minimum requirements: Mac OS 8.6/9.x or Mac OS X
+
+   The latest version of Apple's premiere media application
+   supports the increasingly popular MPEG-4 codec for high-
+   quality, highly compressed video, as well as modern formats
+   such as AAC (Advanced Audio Codec) and JPEG 2000. It also
+   provides skip protection, an enhanced user interface with a
+   more intuitive and useful Favorites menu, new developer APIs,
+   and other useful features such as support for Flash 5 files.
+
+   http://clickthru.online.com/Click?q=41-qqJ1IEKIeDjNLmwU5CfCkxHB0FFR 
+
+   Want to review QuickTime? Submit your opinion here:
+   http://clickthru.online.com/Click?q=56-NwKYInnsvJh4BuHrctPQDwwaMC9R 
+
+
+   CARTOON EDITOR
+   Version: 1.2.1
+   File size: 2.38MB
+   License: Free
+   Minimum requirements: Mac OS X
+
+   Cartoon Editor won't turn you into a gifted cartoonist
+   overnight. But what this graphic editor will do is make quick
+   work of creating short QuickTime movies and animated GIFs--
+   and for OS X freeware, it doesn't get much better than that.
+   Cartoon Editor lets you draw or import JPEGs and GIFs, which
+   you can then manipulate with a set of tools that lets you
+   group, scale, duplicate, ghost, and all sorts of other useful
+   cartoony things. The program's Java2D foundation allows for
+   some surprisingly powerful features, like gradients,
+   antialiasing, splining, and transparencies.
+
+   http://clickthru.online.com/Click?q=6b-8g5ZIHEcOAstO5H80ywQ-4d0P6cR 
+
+   Want to review Cartoon Editor? Submit your opinion here:
+   http://clickthru.online.com/Click?q=80-KTKvQQ0KYe11T0DoaDkjVsTLZ8iR 
+
+   Find all of the latest multimedia and design software here:
+   http://clickthru.online.com/Click?q=95-XdwrQvdJfe0atPOr1yZeU_u_KnPR 
+
+
+   IN HOME AND EDUCATION:
+
+   MOONDOCK
+   Version: 1.2.2
+   File size: 1.95MB
+   License: Free
+   Minimum Requirements: Mac OS X
+
+   Get in touch with the natural rhythms of our solar system
+   with MoonDock, a simple piece of software that tracks the
+   phases of the moon for you and displays lovely images of our
+   planet's companion satellite on your desktop. The images are
+   high-quality color photos that change over time in accordance
+   with the date. MoonDock includes both astronomical and survey
+   data, meaning that you can calculate the appropriate moon
+   phase for a particular date and identify topographical
+   features on the moon using a built-in catalog of those that
+   have been surveyed by astronomers and astronauts. This update
+   incorporates improved help features and a few bug fixes.
+
+   http://clickthru.online.com/Click?q=aa-gBteQXUr_tMV_meWLXZBXqONOVnR 
+
+   Want to review MoonDock? Submit your opinion here:
+   http://clickthru.online.com/Click?q=bf-JtRfQ8Zrg9xPaKu5w8PF_jEuwteR 
+
+   Find all of the latest home and education software here:
+   http://clickthru.online.com/Click?q=d4-E0SqQ0ExoPq8KVw_4Mc3148lk6yR 
+
+
+   IN DEVELOPMENT TOOLS:
+
+   WEBDESIGN
+   Version: 1.6
+   File size: 1.5MB
+   License: Free to try; $28.95 to buy
+   Minimum Requirements: Mac OS 9.x through Mac OS X 10.1.5
+
+   Web designers have an array of software choices, from writing
+   straight code in something like SimpleText to automating
+   everything via drag-and-drop programs that keep HTML at arm's
+   length. WebDesign offers a happy medium, with a significant
+   number of nice extras. You can drag-and-drop from menus or
+   edit your syntax line by line; build image maps and forms
+   with relative ease; and work with a full selection of tools
+   for site-wide color scheme changes, text manipulation, and
+   localization. WebDesign supports both HTML and XHTML, along
+   with JavaScript, tabs, and Cascading Style Sheets. This new
+   version lets you view your designs as they will be seen with
+   various browsers, and has more stable editing and FTP tools.
+
+   http://clickthru.online.com/Click?q=ea-fjLyQhV4XV54QHSAwQ4lAUw-5WnR 
+
+   Want to review WebDesign? Submit your opinion here:
+   http://clickthru.online.com/Click?q=ff-sVoVQms4mycg6wFZxrhBm0WHtheR 
+
+   Find all of the latest development tools here:
+   http://clickthru.online.com/Click?q=14-5MRAIF-zGNg8yFP8ZvQIzTKtR1yR 
+
+
+   IN GAMES:
+
+   SIGMA CHESS LITE
+   Version: 6.01
+   File size: 2.94MB
+   License: Free
+   Minimum Requirements: System 7.x
+
+   Put your mind to the test with this customizable chess game.
+   Sigma is OS X-native and lets you develop your skills through
+   levels with adjustable difficulty and customizable pieces and
+   boards. What's more, Sigma offers advanced features such as
+   printing functions, player rankings, and the ability to
+   record and collect your matches.
+
+   http://clickthru.online.com/Click?q=29-Sg_rIjMAh2p0eOyNyGEI9rCM8vlR 
+
+   Want to review Sigma Chess Lite? Submit your opinion here:
+   http://clickthru.online.com/Click?q=3e-F51nIizXmE6GxOG_7DQESNPe-i4R 
+
+   Find all of the latest games here:
+   http://clickthru.online.com/Click?q=53-n86dINn6Z4onc-PjHpx8lOheMncR 
+
+______________________________________________________________
+
+4. Updates & Drivers: Stay on Top of Bug Fixes and New Features
+
+   IN INTERNET:
+
+   - Internet Explorer (OS X) 5.2.1
+     http://clickthru.online.com/Click?q=68-iM8qIsPPH1noIAYywvjsK-FdLPRR 
+
+   - mDialog 1.5
+     http://clickthru.online.com/Click?q=7d-FFEqIDLPzooVNqPUywq2NRJSBTZR 
+
+   - Email Magician 1.9
+     http://clickthru.online.com/Click?q=92-ubRVQTzT5OEFHMGzeFOPq1FsnynR 
+
+
+   IN MULTIMEDIA & DESIGN:
+
+   - Audacity 1.0
+     http://clickthru.online.com/Click?q=a7-fR_2Q8BwVK0bvAKLF5vLk7KCgFeR 
+
+   - Audion 3.0
+     http://clickthru.online.com/Click?q=bd-c0nUQ7py5LqbJMqpAEVgnfqGsJPR 
+
+   - Audion (OS X) 3.0
+     http://clickthru.online.com/Click?q=d2-THo_QULw1K18AlW3Gl22vbAOyenR 
+
+
+   IN UTILITIES:
+
+   - MacAnalysis 2.2.1
+     http://clickthru.online.com/Click?q=e7-2y-GQmVXoNS0Rb0VqS8CMB0qvseR 
+
+   - SpeedRun 1.1
+     http://clickthru.online.com/Click?q=fc-WpHmQVwFSZlZa-Pa9-0t3VVat9yR 
+
+   - DockFun! 3 preview 1
+     http://clickthru.online.com/Click?q=11-l8riI2-4EmyuB-jX3VynhNBuCqlR 
+
+
+   IN BUSINESS AND FINANCE:
+
+   - OmniGraffle (OS X) 2.0.5
+     http://clickthru.online.com/Click?q=26-KqPVIiMHorsZwJdBBBkqU8niQ74R 
+
+   - Sambucus 2.0.1
+     http://clickthru.online.com/Click?q=3b-XhxVINdHn73JEjnFPcZsjpRp-LrR 
+
+
+   IN HOME AND EDUCATION:
+
+   - Blues Music 1.0
+     http://clickthru.online.com/Click?q=50-M_CBIR0XguMCAewASOnO8CtmMgRR 
+
+   - Dramatica Pro 4.0
+     http://clickthru.online.com/Click?q=65-K82zIDPtIzc8RGwD70VOf0m8P9ZR 
+
+   - iNotePad 1.6.1
+     http://clickthru.online.com/Click?q=7a-EE_AIPBjUlSulSvhU6coezkBZXdR 
+_______________________________________________________________
+
+5. The Week in Reviews:
+
+   A TiVo-like toy for the Mac?
+
+   A Macintosh software company plans to launch Monday the first
+   consumer personal video recorder for Mac aficionados.
+
+   http://clickthru.online.com/Click?q=8f-OOYvQ8KKwfwRqEUXvsg9tyQFWveR 
+_______________________________________________________________
+
+6. Overheard on Download.com
+
+   Here are some user comments about a Mac game that takes you
+   back to the days of hanging out at the arcade:
+
+   "Cool!"
+
+   "An arcade classic!!!"
+
+   "Great fun without violence!"
+
+   "Addicting!!!!"
+
+   "Excelente"
+
+   So what's the name of this mystery download? Click here to
+   find out:
+
+   http://clickthru.online.com/Click?q=a5-DyaHQ7ZTaQfujbpsIC1b2OB8OEPR 
+_______________________________________________________________
+
+The e-mail address for your subscription is qqqqqqqqqq-zdnet@spamassassin.taint.org
+
+To sign up for more CNET newsletters, click here:
+http://nl.com.com/servlet/url_login?email=&brand=cnet
+
+To unsubscribe, click here:
+http://clickthru.online.com/Click?q=ba-m-e5rUpfTfmrcJ0ghqSMlcoEWYe2yRRR
+
+To receive your newsletter in HTML format, click here:
+http://nl.com.com/servlet/url_login?email=&brand=cnet
+
+For the CNET Newsletters FAQ, click here:
+http://clickthru.online.com/Click?q=cf-ebM-QLw2HM7JIXMJaylIO7r3fxeR 
+
+To learn about advertising opportunities in CNET Newsletters, click here:
+http://clickthru.online.com/Click?q=e4-ABYFQVkWG2Bq9mbI81u0PT_Qv1yR 
+
+
+Copyright 2002 CNET Networks, Inc. All rights reserved.
+
+
+
+

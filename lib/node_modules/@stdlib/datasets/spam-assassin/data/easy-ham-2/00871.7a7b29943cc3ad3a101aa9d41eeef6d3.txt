@@ -1,0 +1,67 @@
+From fork-admin@xent.com  Thu Jul 25 11:09:23 2002
+Return-Path: <fork-admin@xent.com>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 96E8F440D0
+	for <jm@localhost>; Thu, 25 Jul 2002 06:08:43 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 25 Jul 2002 11:08:43 +0100 (IST)
+Received: from xent.com ([64.161.22.236]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with ESMTP id g6OMP0411566 for <jm@jmason.org>;
+    Wed, 24 Jul 2002 23:25:01 +0100
+Received: from lair.xent.com (localhost [127.0.0.1]) by xent.com (Postfix)
+    with ESMTP id B185B294163; Wed, 24 Jul 2002 15:20:06 -0700 (PDT)
+Delivered-To: fork@spamassassin.taint.org
+Received: from smtp1.auracom.net (smtp1.auracom.net [165.154.140.23]) by
+    xent.com (Postfix) with ESMTP id A28D0294159 for <fork@xent.com>;
+    Wed, 24 Jul 2002 15:19:50 -0700 (PDT)
+Received: from maya.dyndns.org (ts5-034.ptrb.interhop.net
+    [165.154.190.98]) by smtp1.auracom.net (8.11.2/8.11.2) with ESMTP id
+    g6OLt2M04012 for <fork@xent.com>; Wed, 24 Jul 2002 17:55:02 -0400 (EDT)
+Received: by maya.dyndns.org (Postfix, from userid 501) id 335BF1C39A;
+    Wed, 24 Jul 2002 18:19:30 -0400 (EDT)
+To: <fork@spamassassin.taint.org>
+Subject: Re: Asteroids anyone ?
+References: <001301c23359$d8208130$0100a8c0@PETER>
+From: Gary Lawrence Murphy <garym@canada.com>
+X-Home-Page: http://www.teledyn.com
+Organization: TCI Business Innovation through Open Source Computing
+Message-Id: <m2n0sgojke.fsf@maya.dyndns.org>
+Reply-To: Gary Lawrence Murphy <garym@canada.com>
+X-Url: http://www.teledyn.com/
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: fork-admin@xent.com
+Errors-To: fork-admin@xent.com
+X-Beenthere: fork@spamassassin.taint.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:fork-request@xent.com?subject=help>
+List-Post: <mailto:fork@spamassassin.taint.org>
+List-Subscribe: <http://xent.com/mailman/listinfo/fork>, <mailto:fork-request@xent.com?subject=subscribe>
+List-Id: Friends of Rohit Khare <fork.xent.com>
+List-Unsubscribe: <http://xent.com/mailman/listinfo/fork>,
+    <mailto:fork-request@xent.com?subject=unsubscribe>
+List-Archive: <http://xent.com/pipermail/fork/>
+Date: 24 Jul 2002 18:19:29 -0400
+
+
+Instead of spreading BBC FUD, it's best to go straight to the horse's
+mouth: http://neo.jpl.nasa.gov/risk/2002nt7.html
+
+That said, if you do a comparison with the Google cache page, you'll
+see that the probability of impact has increased significantly given
+the last three days worth of observations.
+
+Hit or miss, Groundhog Day 2019 is going to be one heck of a show.
+Book early, avoid the rush.
+
+-- 
+Gary Lawrence Murphy <garym@teledyn.com> TeleDynamics Communications Inc
+Business Innovations Through Open Source Systems: http://www.teledyn.com
+"Computers are useless.  They can only give you answers."(Pablo Picasso)
+
+http://xent.com/mailman/listinfo/fork
+
+

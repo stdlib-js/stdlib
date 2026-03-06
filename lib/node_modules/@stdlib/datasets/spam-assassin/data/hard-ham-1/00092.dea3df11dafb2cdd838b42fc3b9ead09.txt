@@ -1,0 +1,489 @@
+Return-Path: <2.20803.e3-IczdlShkrpJ3.1.b@ummail4.unitedmedia.com>
+Received: from ummail1.unitedmedia.com (ummail1.unitedmedia.com [65.114.4.73])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6H7inJ30707
+	for <qqqqqqqqqq-dilbert@spamassassin.taint.org>; Wed, 17 Jul 2002 08:44:49 +0100
+Received: from umsan1 (10.1.1.75) by ummail1.unitedmedia.com (PowerMTA(TM) v1.5); Wed, 17 Jul 2002 03:36:45 -0400 (envelope-from <2.20803.e3-IczdlShkrpJ3.1.b@ummail4.unitedmedia.com>)
+Message-ID: <13807782.1026891797710.JavaMail.root@umsan1>
+Date: Wed, 17 Jul 2002 03:43:17 -0400 (EDT)
+From: Daily Dilbert <2.20803.e3-IczdlShkrpJ3.1@ummail4.unitedmedia.com>
+To: qqqqqqqqqq-dilbert@spamassassin.taint.org
+Subject: Your Daily Dilbert 07/17/2002
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary=25685224.1026891797705.JavaMail.root.umsan1
+
+--25685224.1026891797705.JavaMail.root.umsan1
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+E-mail error
+
+You're subscribed to the HTML version of the Daily Dilbert,
+which shows the comic strip as a graphic, but your mail system
+either can't support HTML or is set up to remove HTML content. For
+more information, contact your Internet service provider or mail
+system administrator.
+
+To change to a plain text subscription, modify your account
+preferences at 
+http://www.dilbert.com/comics/dilbert/daily_dilbert/html/login.html
+
+The plain text option appears toward the bottom of the modification
+page.
+
+
+
+
+
+--25685224.1026891797705.JavaMail.root.umsan1
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+<TITLE>Daily Dilbert</TITLE>
+<meta http-equiv=3D"pragma" content=3D"no-cache">
+<META HTTP-EQUIV=3D"expires" CONTENT=3D"0">
+<meta http-equiv=3D"Cache-control" content=3D"no-cache">
+</HEAD>
+
+<BODY BGCOLOR=3D"#336699" text=3D"#000000" link=3D"#000000" vlink=3D"#00339=
+9" alink=3D"#3333CC" MARGINWIDTH=3D"0" MARGINHEIGHT=3D"8" LEFTMARGIN=3D"0" =
+TOPMARGIN=3D"8">
+
+<TABLE WIDTH=3D"100%" BORDER=3D"0" CELLPADDING=3D"0" BGCOLOR=3D"#336699">
+<TR>
+<TD BGCOLOR=3D"#336699" WIDTH=3D"15"><IMG SRC=3D"http://www.comics.com/comi=
+cs/dilbert/images/clear_dot.gif" WIDTH=3D"15" BORDER=3D"0" ALT=3D""></TD>
+<TD BGCOLOR=3D"#336699">
+
+
+
+<SCRIPT LANGUAGE=3D"JAVASCRIPT">
+<!--=20
+function rand(n)=20
+{
+seed =3D (0x015a4e35 * seed) % 0xfffffff;
+return (seed >> 16) % n;
+}
+var now =3D new Date ();
+var seed =3D now.getTime() % 0xffffffff;
+var same =3D rand(1000);
+// End hiding script from old browsers -->
+</SCRIPT>
+
+<SCRIPT Language=3D"JavaScript">
+<!-- hide from old browsers
+
+  var today =3D new Date()
+
+//-->
+</SCRIPT>
+
+
+
+<!-- CONTENT AND SKYSCRAPER AD TABLE BEGIN -->
+<TABLE CELLPADDING=3D"0" CELLSPACING=3D"0" BORDER=3D"0">
+=09<TR VALIGN=3D"TOP">=09
+=09=09<TD BGCOLOR=3D"#336699">
+
+=09=09=09<!-- AD TABLE BEGIN -->
+=09=09=09<TABLE WIDTH=3D"627" CELLPADDING=3D"0" CELLSPACING=3D"0" BORDER=3D=
+"0">
+=09=09=09=09<TR VALIGN=3D"TOP">=09
+=09=09=09=09=09<TD WIDTH=3D"468" BGCOLOR=3D"#336699"><IMG SRC=3D"http://www=
+.comics.com/comics/dilbert/images/small_ad.gif" WIDTH=3D"20" HEIGHT=3D"11" =
+BORDER=3D"0" ALT=3D"Advertisement"><BR><IMG SRC=3D"http://www.comics.com/co=
+mics/dilbert/images/clear_dot.gif" WIDTH=3D"1" HEIGHT=3D"1" BORDER=3D"0" AL=
+T=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"21" BGCOLOR=3D"#336699" ROWSPAN=3D"2"><IMG SRC=
+=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"21"=
+ HEIGHT=3D"72" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"120" BGCOLOR=3D"#336699"><IMG SRC=3D"http://www=
+.comics.com/comics/dilbert/images/small_ad.gif" WIDTH=3D"20" HEIGHT=3D"11" =
+BORDER=3D"0" ALT=3D"Advertisement"><BR><IMG SRC=3D"http://www.comics.com/co=
+mics/dilbert/images/clear_dot.gif" WIDTH=3D"1" HEIGHT=3D"1" BORDER=3D"0" AL=
+T=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"18" BGCOLOR=3D"#336699" ROWSPAN=3D"2"><IMG SRC=
+=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"18"=
+ HEIGHT=3D"72" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09=09
+=09=09=09=09
+=09=09=09=09<TR VALIGN=3D"TOP">=09
+=09=09=09=09=09<TD WIDTH=3D"468" BGCOLOR=3D"#336699">
+=09=09=09=09=09<!-- BEGIN ENHANCED CREATIVE -->
+=09=09=09=09=09<SCRIPT LANGUAGE=3D"JavaScript">
+=09=09=09=09=09<!--
+=09=09=09=09=09document.write ('<TABLE WIDTH=3D"468" CELLSPACING=3D"0" CELL=
+PADDING=3D"0" BORDER=3D"0"><TR VALIGN=3D"TOP"><TD ALIGN=3D"LEFT"><ILAYER ID=
+=3Dph1 VISIBILITY=3Dhidden width=3D"468" height=3D"60"></ILAYER></TD></TR><=
+/TABLE>');
+=09=09=09=09=09document.write ('<NOLAYER>');
+=09=09=09=09=09document.write ('<IFRAME SRC=3D"http://ad.doubleclick.net/ad=
+i/dilbert.email.com/email/;sz=3D468x60;ptile=3D1;ord=3D' + same + '?" name=
+=3D"frame1" width=3D"468" height=3D"60" frameborder=3D"no" border=3D"0" MAR=
+GINWIDTH=3D"0" MARGINHEIGHT=3D"0" SCROLLING=3D"no">');
+=09=09=09=09=09document.write ('<A target=3D"_blank" HREF=3D"http://ummail4=
+.unitedmedia.com:80/Click?q=3Df9-mtITQxOZLWlluKKSMfs3MbfwfsRR">');
+=09=09=09=09=09document.write ('<IMG SRC=3D"http://ad.doubleclick.net/ad/di=
+lbert.email.com/email/;abr=3D!ie;sz=3D468x60;ptile=3D1;ord=3D' + same + '?"=
+ border=3D"0" WIDTH=3D"468" HEIGHT=3D"60"></A></IFRAME>');
+=09=09=09=09=09document.write ('</NOLAYER>');=20
+=09=09=09=09=09//-->
+=09=09=09=09=09</SCRIPT>
+=09=09=09=09=09<NOSCRIPT>
+=09=09=09=09=09<A target=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:=
+80/Click?q=3D0e--eDTIiQKhA9L4NS4rLdEHR-t69RR"><IMG SRC=3D"http://ad.doublec=
+lick.net/ad/dilbert.email.com/email/;abr=3D!ie;sz=3D468x60;ptile=3D1;ord=3D=
+1986839?" BORDER=3D"0" WIDTH=3D"468" HEIGHT=3D"60"></a>
+=09=09=09=09=09</NOSCRIPT>
+=09=09=09=09=09<!-- END ENHANCED CREATIVE --></TD>
+=09=09=09=09=09
+=09=09=09=09=09
+=09=09=09=09=09
+=09=09=09=09=09<TD WIDTH=3D"120" BGCOLOR=3D"#336699"><IMG SRC=3D"http://www=
+.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"1" HEIGHT=3D"1" B=
+ORDER=3D"0" ALT=3D""><BR><A target=3D"_blank" HREF=3D"http://ummail4.united=
+media.com:80/Click?q=3D23-sFrGINMN0Cu_0ItiAg2jtuP2j9RR"><IMG SRC=3D"http://=
+www.comics.com/comics/dilbert/daily_dilbert/images/dilbert_tshirt_120x60.gi=
+f" WIDTH=3D"120" HEIGHT=3D"60" BORDER=3D"0" ALT=3D"Shop Dilbert"></A></TD>
+=09=09=09=09</TR>
+=09=09=09=09
+=09=09=09=09
+=09=09=09=09
+=09=09=09=09
+=09=09=09=09<TR VALIGN=3D"TOP">
+=09=09=09=09=09<TD WIDTH=3D"627" HEIGHT=3D"10" COLSPAN=3D"4"><IMG SRC=3D"ht=
+tp://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"627" HEIG=
+HT=3D"10" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09</TABLE>
+=09=09=09<!-- AD TABLE END -->
+=09=09=09
+=09=09=09<!-- HEADER TABLE BEGIN -->
+=09=09=09<TABLE WIDTH=3D"627" CELLPADDING=3D"0" CELLSPACING=3D"0" BORDER=3D=
+"0">
+=09=09=09=09<TR VALIGN=3D"TOP">=09
+=09=09=09=09=09<TD WIDTH=3D"515" BGCOLOR=3D"#336699" ROWSPAN=3D"3"><A targe=
+t=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Click?q=3D38-bLgmIRM=
+ALJwXckQnhYi2ZpexcRRR"><IMG SRC=3D"http://www.comics.com/comics/dilbert/dai=
+ly_dilbert/images/daily_dilbert_header_left.gif" WIDTH=3D"515" HEIGHT=3D"76=
+" BORDER=3D"0" ALT=3D"Daily Dilbert"></A></TD>
+=09=09=09=09=09<TD WIDTH=3D"90" BGCOLOR=3D"#336699"><IMG SRC=3D"http://www.=
+comics.com/comics/dilbert/daily_dilbert/images/daily_dilbert_header_mid_top=
+.gif" WIDTH=3D"90" HEIGHT=3D"55" BORDER=3D"0" ALT=3D"Daily Dilbert"></TD>
+=09=09=09=09=09<TD WIDTH=3D"5" BGCOLOR=3D"#336699" ROWSPAN=3D"3"><IMG SRC=
+=3D"http://www.comics.com/comics/dilbert/daily_dilbert/images/daily_dilbert=
+_header_right.gif" WIDTH=3D"5" HEIGHT=3D"76" BORDER=3D"0" ALT=3D"Daily Dilb=
+ert"></TD>
+=09=09=09=09=09<TD WIDTH=3D"17" ROWSPAN=3D"3"><IMG SRC=3D"http://www.comics=
+.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"17" HEIGHT=3D"10" BORDER=
+=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09=09
+=09=09=09=09<!-- ENTER DATE HERE -->
+=09=09=09=09<TR VALIGN=3D"TOP">=09
+=09=09=09=09=09<TD WIDTH=3D"90" BGCOLOR=3D"#003366" HEIGHT=3D"13"><FONT FAC=
+E=3D"helvetica, arial" SIZE=3D"1" COLOR=3D"#FFFFFF"><B>07/17/2002</B></FONT=
+></TD>
+=09=09=09=09</TR>
+=09=09=09=09<TR VALIGN=3D"TOP">
+=09=09=09=09=09<TD WIDTH=3D"90" BGCOLOR=3D"#336699"><IMG SRC=3D"http://www.=
+comics.com/comics/dilbert/daily_dilbert/images/daily_dilbert_header_mid_bot=
+tom.gif" WIDTH=3D"90" HEIGHT=3D"8" BORDER=3D"0" ALT=3D"Daily Dilbert"></TD>
+=09=09=09=09</TR>
+=09=09=09</TABLE>
+=09=09=09<!-- HEADER TABLE END -->
+=09=09=09
+=09=09=09<!-- WHITE LINE AND GREETING TABLE BEGIN -->
+=09=09=09<TABLE WIDTH=3D"627" CELLPADDING=3D"0" CELLSPACING=3D"0" BORDER=3D=
+"0">
+=09=09=09=09<TR VALIGN=3D"TOP">=09
+=09=09=09=09=09<TD WIDTH=3D"1" HEIGHT=3D"2" BGCOLOR=3D"#003366"><IMG SRC=3D=
+"http://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"1" HEI=
+GHT=3D"2" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"605" HEIGHT=3D"2" BGCOLOR=3D"#FFFFFF" COLSPAN=
+=3D"2"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gi=
+f" WIDTH=3D"605" HEIGHT=3D"2" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"4" HEIGHT=3D"2" BGCOLOR=3D"#FFFFFF"><IMG SRC=3D=
+"http://www.comics.com/comics/dilbert/daily_dilbert/images/white_line_right=
+.gif" WIDTH=3D"4" HEIGHT=3D"2" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"17" HEIGHT=3D"48" ROWSPAN=3D"4"><IMG SRC=3D"htt=
+p://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"17" HEIGHT=
+=3D"48" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09=09<TR VALIGN=3D"TOP">=09
+=09=09=09=09=09<TD WIDTH=3D"1" HEIGHT=3D"37" BGCOLOR=3D"#003366" ROWSPAN=3D=
+"2"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif" =
+WIDTH=3D"1" HEIGHT=3D"39" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"605" HEIGHT=3D"5" BGCOLOR=3D"#FFCC66" COLSPAN=
+=3D"2"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gi=
+f" WIDTH=3D"605" HEIGHT=3D"7" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"4" HEIGHT=3D"37" BACKGROUND=3D"http://www.comic=
+s.com/comics/dilbert/daily_dilbert/images/ffcc66_right.gif" ROWSPAN=3D"2"><=
+IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=
+=3D"4" HEIGHT=3D"39" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09=09<TR VALIGN=3D"TOP">
+=09=09=09=09=09<TD WIDTH=3D"10" HEIGHT=3D"32" BGCOLOR=3D"#FFCC66"><IMG SRC=
+=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"10"=
+ HEIGHT=3D"32" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"595" HEIGHT=3D"32" BGCOLOR=3D"#FFCC66"><FONT FA=
+CE=3D"Arial,Verdana" SIZE=3D"1">Hi Justin, enjoy your daily comic from <A t=
+arget=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Click?q=3D4d--Ui=
+sIKZgQ-nrJUCdaN021jq-0dRR">Dilbert.com</A>.<BR><B>If you like the Daily Dil=
+bert, tell a friend! <A target=3D"_blank" HREF=3D"http://ummail4.unitedmedi=
+a.com:80/Click?q=3D63-tPIjIHW5saXNVQTg_s-ssJL9E9RR">Click here to send mail=
+</A></B></FONT></TD>
+=09=09=09=09</TR>
+=09=09=09=09<TR VALIGN=3D"TOP">
+=09=09=09=09=09<TD WIDTH=3D"1" BGCOLOR=3D"#003366"><IMG SRC=3D"http://www.c=
+omics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"1" HEIGHT=3D"7" BOR=
+DER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"605" BGCOLOR=3D"#FFFFFF" COLSPAN=3D"2"><IMG SRC=
+=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"605=
+" HEIGHT=3D"7" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"4" HEIGHT=3D"7" BACKGROUND=3D"http://www.comics=
+.com/comics/dilbert/daily_dilbert/images/ffffff_right.gif"><IMG SRC=3D"http=
+://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"4" BORDER=
+=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09</TABLE>
+=09=09=09<!-- WHITE LINE AND GREETING TABLE END -->
+=09=09=09
+=09=09=09<!-- ONLINE STORE AND STRIP TABLE BEGIN -->
+=09=09=09<TABLE WIDTH=3D"627" CELLPADDING=3D"0" CELLSPACING=3D"0" BORDER=3D=
+"0">
+=09=09=09=09<TR VALIGN=3D"TOP">=09
+=09=09=09=09=09<TD WIDTH=3D"1" HEIGHT=3D"348" BGCOLOR=3D"#003366" ROWSPAN=
+=3D"6"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gi=
+f" WIDTH=3D"1" HEIGHT=3D"348" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"4" HEIGHT=3D"348" BGCOLOR=3D"#FFFFFF" ROWSPAN=
+=3D"6"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gi=
+f" WIDTH=3D"4" HEIGHT=3D"348" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"6" HEIGHT=3D"83" BGCOLOR=3D"#FFFFFF" ROWSPAN=3D=
+"5"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif" =
+WIDTH=3D"6" HEIGHT=3D"83" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"585" HEIGHT=3D"19" BGCOLOR=3D"#FFFFFF" COLSPAN=
+=3D"7"><IMG SRC=3D"http://www.comics.com/comics/dilbert/daily_dilbert/image=
+s/header_online_store.gif" WIDTH=3D"200" HEIGHT=3D"15" BORDER=3D"0" ALT=3D"=
+"><BR><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif=
+" WIDTH=3D"4" HEIGHT=3D"4" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"9" HEIGHT=3D"83" BGCOLOR=3D"#FFFFFF" ROWSPAN=3D=
+"5"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif" =
+WIDTH=3D"9" HEIGHT=3D"83" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"1" HEIGHT=3D"348" BGCOLOR=3D"#FFFFFF" ROWSPAN=
+=3D"6"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gi=
+f" WIDTH=3D"1" HEIGHT=3D"348" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"4" HEIGHT=3D"348" BACKGROUND=3D"http://www.comi=
+cs.com/comics/dilbert/daily_dilbert/images/white_line_right.gif" ROWSPAN=3D=
+"6"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif" =
+WIDTH=3D"4" HEIGHT=3D"348" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"17" HEIGHT=3D"349" ROWSPAN=3D"7"><IMG SRC=3D"ht=
+tp://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"17" HEIGH=
+T=3D"349" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09=09<TR VALIGN=3D"TOP">
+=09=09=09=09=09<TD WIDTH=3D"200" HEIGHT=3D"59" BGCOLOR=3D"#FFFFFF" ROWSPAN=
+=3D"2"><FONT FACE=3D"Arial,Verdana" SIZE=3D"1"><IMG SRC=3D"http://www.comic=
+s.com/comics/dilbert/daily_dilbert/images/books.gif" WIDTH=3D"35" HEIGHT=3D=
+"15" BORDER=3D"0" ALT=3D"Books"><BR><A target=3D"_blank" HREF=3D"http://umm=
+ail4.unitedmedia.com:80/Click?q=3D78-d5tsIdUgx-7KLIF5viMd-qmfZRRR"><IMG SRC=
+=3D"http://www.comics.com/comics/dilbert/ads/book_badge.gif" WIDTH=3D"169" =
+HEIGHT=3D"60" BORDER=3D"0" ALT=3D"Another Day in Cubicle Paradise"></A><BR>=
+<BR>Complete your collection while pretending to work!<BR>
+<A target=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Click?q=3D8d=
+-nbp1Q7nx54aoOTgIikuIXxa-L9RR">> Shop</A></FONT></TD>
+=09=09=09=09=09<TD WIDTH=3D"10" HEIGHT=3D"59" BGCOLOR=3D"#FFFFFF" ROWSPAN=
+=3D"2"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gi=
+f" WIDTH=3D"10" HEIGHT=3D"7" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"83" HEIGHT=3D"59" BGCOLOR=3D"#FFFFFF" ROWSPAN=
+=3D"2"><A target=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Click=
+?q=3Da2-6-07QXZoTv3TbpE9R6C1DQolgRRR"><IMG SRC=3D"http://www.comics.com/com=
+ics/dilbert/daily_dilbert/images/thumb_dilbert_mints.gif" WIDTH=3D"83" HEIG=
+HT=3D"57" BORDER=3D"0" ALT=3D"Dilbert Mints"></A></TD>
+=09=09=09=09=09<TD WIDTH=3D"120" HEIGHT=3D"59" BGCOLOR=3D"#FFFFFF" ROWSPAN=
+=3D"2"><FONT FACE=3D"Arial,Verdana" SIZE=3D"1"><IMG SRC=3D"http://www.comic=
+s.com/comics/dilbert/daily_dilbert/images/mints.gif" WIDTH=3D"35" HEIGHT=3D=
+"15" BORDER=3D"0" ALT=3D"Graphic (live connection required)"><BR><IMG SRC=
+=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"120=
+" HEIGHT=3D"1" BORDER=3D"0" ALT=3D""><BR>They're character-shaped, in colle=
+ctible tins.<BR><B>&gt; <A target=3D"_blank" HREF=3D"http://ummail4.unitedm=
+edia.com:80/Click?q=3Db7-FOkPQ8JogORm2Ip0N-bWBXqWPdRR">Shop</A></B></FONT><=
+/TD>
+=09=09=09=09=09<TD WIDTH=3D"10" HEIGHT=3D"59" BGCOLOR=3D"#FFFFFF" ROWSPAN=
+=3D"2"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gi=
+f" WIDTH=3D"10" HEIGHT=3D"10" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"162" HEIGHT=3D"24" BGCOLOR=3D"#FFFFFF" COLSPAN=
+=3D"2"><FONT FACE=3D"Arial,Verdana" SIZE=3D"1"><IMG SRC=3D"http://www.comic=
+s.com/comics/dilbert/daily_dilbert/images/clothing_and_posters.gif" WIDTH=
+=3D"121" HEIGHT=3D"15" BORDER=3D"0" ALT=3D""><BR>Get any Dilbert strip publ=
+ished in the last 90 days printed on a<BR>T-shirt, sweatshirt or poster. Se=
+lected older strips are also available.<BR>
+<B>&gt; <A target=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Clic=
+k?q=3Dcc-h4hQQ0OYtV3XRIW7qlZmmgdcodRR">Shop</A></B><BR>
+<IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif" WIDT=
+H=3D"148" HEIGHT=3D"20" BORDER=3D"0" ALT=3D""></FONT></TD>
+=09=09=09=09</TR>
+=09=09=09=09<TR VALIGN=3D"TOP">
+=09=09=09=09<TD WIDTH=3D"14" HEIGHT=3D"35" BGCOLOR=3D"#FFFFFF"><IMG SRC=3D"=
+http://www.comics.com/comics/dilbert/daily_dilbert/images/bullet.gif" WIDTH=
+=3D"14" HEIGHT=3D"11" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"148" HEIGHT=3D"35" BGCOLOR=3D"#FFFFFF"><FONT FA=
+CE=3D"Arial,Verdana" SIZE=3D"1"><A target=3D"_blank" HREF=3D"http://ummail4=
+.unitedmedia.com:80/Click?q=3De1-6RSNQxkAWvzksAFPh9YLA-VXvsRR">View all pro=
+ducts</A></FONT></TD>
+=09=09=09=09</TR>
+=09=09=09=09<TR VALIGN=3D"TOP">
+=09=09=09=09=09<TD WIDTH=3D"585" HEIGHT=3D"5" BGCOLOR=3D"#FFFFFF" COLSPAN=
+=3D"7"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gi=
+f" WIDTH=3D"585" HEIGHT=3D"5" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09=09<!-- COMIC STRIP HERE -->
+=09=09=09=09<TR VALIGN=3D"TOP">
+                <TD ALIGN=3D"LEFT" BGCOLOR=3D"#FFFFFF"><FONT face=3D"helvet=
+ica, arial" size=3D1><IMG SRC=3D"http://www.comics.com/comics/dilbert/daily=
+_dilbert/images/bullet.gif" WIDTH=3D"14" HEIGHT=3D"11" ALT=3D"" BORDER=3D"0=
+"><A target=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Click?q=3D=
+f6-QkaIQMwXDgaXW-XYYdGxFRTBe9RR">Modify Your Account</A>/<A target=3D"_blan=
+k" HREF=3D"http://ummail4.unitedmedia.com:80/Click?q=3D0b-0NK-INQtdZl2ya_Gf=
+wmMRCSDiRRR">Unsubscribe</A></FONT></TD><TD ALIGN=3D"RIGHT" BGCOLOR=3D"#FFF=
+FFF" COLSPAN=3D"7"><FONT FACE=3D"helvetica, arial" SIZE=3D"1"><A target=3D"=
+_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Click?q=3D21-UPiOIjdgVF9D=
+SQYoQIYk88r4jdRR"><IMG SRC=3D"http://www.comics.com/comics/dilbert/daily_di=
+lbert/images/bullet.gif" WIDTH=3D"14" HEIGHT=3D"11" ALT=3D"" BORDER=3D"0">B=
+uy This Strip</A>&nbsp;&nbsp;&nbsp;<A HREF=3D"http://www.comics.com/webmail=
+/SendAStrip?AppName=3DSendAStrip&ComicName=3D/comics/dilbert/&Attachments=
+=3D/comics/dilbert/archive/images/dilbert2003482920717.gif&EmailDate=3DJuly=
+-17-2002"><IMG SRC=3D"http://www.comics.com/comics/dilbert/daily_dilbert/im=
+ages/bullet.gif" WIDTH=3D"14" HEIGHT=3D"11" ALT=3D"" BORDER=3D"0">Send This=
+ Strip to a Friend</A>&nbsp;&nbsp;&nbsp;<A target=3D"_blank" HREF=3D"http:/=
+/ummail4.unitedmedia.com:80/Click?q=3D36-wgY-IiItoUKXe2aMxgHvr6RUNsRR"><IMG=
+ SRC=3D"http://www.comics.com/comics/dilbert/daily_dilbert/images/bullet.gi=
+f" WIDTH=3D"14" HEIGHT=3D"11" ALT=3D"" BORDER=3D"0">Month of Dilbert</A>&nb=
+sp;&nbsp;</FONT><BR></TD></TR>
+=09=09=09=09<TR VALIGN=3D"TOP">
+                <TD ALIGN=3D"LEFT" BGCOLOR=3D"#FFFFFF" COLSPAN=3D"10"><A ta=
+rget=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Click?q=3D4b-k_F7=
+IBUUPQW8ARQP9aAvvFGTn9RR"><IMG SRC=3D"http://www.comics.com/comics/dilbert/=
+archive/images/dilbert2003482920717.gif" BORDER=3D"0" ALT=3D"You need to go=
+ online to see today's strip and other cool features on the Daily Dilbert."=
+></A><BR><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.=
+gif" WIDTH=3D"600" HEIGHT=3D"8" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09</TABLE>
+=09=09=09<!-- ONLINE STORE AND STRIP TABLE END -->
+=09=09=09
+=09=09=09<!-- FOOTER TABLE BEGIN -->
+=09=09=09<TABLE WIDTH=3D"610" CELLPADDING=3D"0" CELLSPACING=3D"0" BORDER=3D=
+"0">
+=09=09=09=09<TR VALIGN=3D"TOP">=09
+=09=09=09=09=09<TD WIDTH=3D"610" HEIGHT=3D"1" BGCOLOR=3D"#003366" COLSPAN=
+=3D"8"><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gi=
+f" WIDTH=3D"610" HEIGHT=3D"1" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09=09<TR VALIGN=3D"TOP">=09
+=09=09=09=09=09<TD WIDTH=3D"1" BGCOLOR=3D"#003366"><IMG SRC=3D"http://www.c=
+omics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"1" HEIGHT=3D"4" BOR=
+DER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"10" BGCOLOR=3D"#FFFFFF"><IMG SRC=3D"http://www.=
+comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"10" HEIGHT=3D"4" B=
+ORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"478" BGCOLOR=3D"#FFFFFF"><IMG SRC=3D"http://www=
+.comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"478" HEIGHT=3D"4"=
+ BORDER=3D"0" ALT=3D""><BR><FONT FACE=3D"helvetica, arial" SIZE=3D"1"><A ta=
+rget=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Click?q=3D60-oqKt=
+IsE2uhVC0kDLNLS4fYkaERRR">Unsubscribe</A> | <A target=3D"_blank" HREF=3D"ht=
+tp://ummail4.unitedmedia.com:80/Click?q=3D75-whVtIKU2Iu8GQEo_rEuIwvpIpdRR">=
+Modify Your Subscription</A> | <A target=3D"_blank" HREF=3D"http://ummail4.=
+unitedmedia.com:80/Click?q=3D8a-3y2dQXn0aNjA02KO3Btq9D6yURRR">Request a New=
+ Subscription</A> | <a href=3D"mailto:dilberthelp@unitedmedia.com">Report S=
+ubscription Problems</A><BR>
+<A target=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Click?q=3D9f=
+-o7QMQ1J0L3ntQajYlZGsyOF6BdRR">Subscribe to the Dilbert Newsletter/Join Dog=
+bert's New Ruling Class</A> |<BR>
+<A target=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Click?q=3Db4=
+-aJFbQ6Z3xDlOmpkqJ7DOkTHEPsRR">Dilbert on Your Site/Intranet</A> | <A targe=
+t=3D"_blank" HREF=3D"http://ummail4.unitedmedia.com:80/Click?q=3Dc9-3OPLQpg=
+OUNkuGQYjg6SO6eP2hsRR">Advertising Info</A> | <A target=3D"_blank" HREF=3D"=
+http://ummail4.unitedmedia.com:80/Click?q=3Dde-7tLkQMW9OAU-vjatTKD2NHz7HRRR=
+">Dilbert in Your Publication</A></FONT></TD>
+=09=09=09=09=09<TD WIDTH=3D"45" BGCOLOR=3D"#FFFFFF"><IMG SRC=3D"http://www.=
+comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"45" HEIGHT=3D"4" B=
+ORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"62" BGCOLOR=3D"#FFFFFF"><IMG SRC=3D"http://www.=
+comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"62" HEIGHT=3D"4" B=
+ORDER=3D"0" ALT=3D""><BR><A target=3D"_blank" HREF=3D"http://ummail4.united=
+media.com:80/Click?q=3Df3-LjVgQJOyjR2hzkpCsHCfK5y7mRRR"><IMG SRC=3D"http://=
+www.comics.com/comics/dilbert/daily_dilbert/images/comics_com_logo.gif" WID=
+TH=3D"62" HEIGHT=3D"42" BORDER=3D"0" ALT=3D"Comics.com"></A></TD>
+=09=09=09=09=09<TD WIDTH=3D"10" BGCOLOR=3D"#FFFFFF"><IMG SRC=3D"http://www.=
+comics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"10" HEIGHT=3D"4" B=
+ORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09=09<TD WIDTH=3D"4" BACKGROUND=3D"http://www.comics.com/comics/d=
+ilbert/daily_dilbert/images/white_line_right.gif"><IMG SRC=3D"http://www.co=
+mics.com/comics/dilbert/images/clear_dot.gif" WIDTH=3D"4" HEIGHT=3D"4" BORD=
+ER=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09=09<TR VALIGN=3D"TOP">=09
+=09=09=09=09=09<TD WIDTH=3D"610" COLSPAN=3D"8"><IMG SRC=3D"http://www.comic=
+s.com/comics/dilbert/daily_dilbert/images/daily_dilbert_footer.gif" WIDTH=
+=3D"610" HEIGHT=3D"11" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09</TABLE>
+=09=09=09<!-- FOOTER TABLE END -->
+=09=09=09
+=09=09</TD>
+=09=09<TD>
+=09=09
+=09=09=09
+=09=09
+=09=09=09<!-- SKYSCRAPER TABLE BEGIN -->
+=09=09=09<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" height=3D"=
+600">
+=09=09=09=09<TR VALIGN=3D"TOP">
+=09=09=09=09=09<TD><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/=
+small_ad.gif" WIDTH=3D"20" HEIGHT=3D"11" BORDER=3D"0" ALT=3D"Advertisement"=
+><BR><IMG SRC=3D"http://www.comics.com/comics/dilbert/images/clear_dot.gif"=
+ WIDTH=3D"2" HEIGHT=3D"2" BORDER=3D"0" ALT=3D""></TD>
+=09=09=09=09</TR>
+=09=09=09=09<TR VALIGN=3D"TOP">
+=09=09=09=09=09<TD><a href=3D"http://www.partner2profit.com/redir.cfm?ccode=
+=3D1D74C2EA&pcode=3DEF39755C" target=3D"_blank"><img src=3D"http://www.flow=
+go.com/images/bt/p2p.gif?ccode=3D1D74C2EA&pcode=3DEF39755C" width=3D120 hei=
+ght=3D600 border=3D0></a></TD>
+=09=09=09=09</TR>
+=09=09=09</table>
+=09=09=09<!-- SKYSCRAPER TABLE END -->
+=09=09=09
+=09=09=09
+=09=09=09
+=09=09</TD>
+=09</TR>
+</TABLE>
+<!-- CONTENT AND SKYSCRAPER AD TABLE END -->
+
+
+
+<a href=3D"http://www.partner2profit.com/redir.cfm?ccode=3DAFEBB3C4&pcode=
+=3DEF39755C" target=3D"_blank"><img src=3D"http://www.flowgo.com/images/bt/=
+p2p.gif?ccode=3DAFEBB3C4&pcode=3DEF39755C" width=3D"120" height=3D"600" bor=
+der=3D"0"></a>
+
+</TD>
+</TR>
+</TABLE>
+
+
+
+</BODY>
+</HTML>
+
+
+<IMG HEIGHT=3D1 WIDTH=3D1 SRC=3D"http://ummail4.unitedmedia.com:80/Click?q=
+=3D09-jooSno8-sksh69p0bkgiUM1v">
+--25685224.1026891797705.JavaMail.root.umsan1--
+
+

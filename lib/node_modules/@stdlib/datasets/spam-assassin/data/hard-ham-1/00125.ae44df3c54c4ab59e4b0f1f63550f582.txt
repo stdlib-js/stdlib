@@ -1,0 +1,152 @@
+Return-Path: <update@list.theregister.co.uk>
+Received: from list.theregister.co.uk (theregister-sql2.hosted.netline.net.uk [213.40.196.63])
+	by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6J2vLJ32688
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Fri, 19 Jul 2002 03:57:21 +0100
+Received: from localhost ([127.0.0.1] helo=list.theregister.co.uk)
+	by list.theregister.co.uk with smtp (Exim 3.31 #1)
+	id 17VN87-0007jT-0F
+	for <qqqqqqqqqq-reg@spamassassin.taint.org>; Fri, 19 Jul 2002 03:04:27 +0100
+Date: Fri, 19 Jul 2002 03:00:01 +0100
+From: update@list.theregister.co.uk
+Subject: Reg Headlines Friday July 19
+To: Reg Subscribers <update@list.theregister.co.uk>
+Precedence: list
+X-Bulkmail: 2.05
+Message-Id: <E17VN87-0007jT-0F@list.theregister.co.uk>
+
+Today's Headlines from The Register
+-----------------------------------
+
+    To unsubscribe from this daily news update, see the instructions at
+    the end of this message.
+
+
+
+Software
+
+    JPEGs are not free: Patent holder pursues IP grab
+    And Sony's already coughed up
+        http://www.theregister.co.uk/content/4/26272.html
+
+    Mac users outraged at iTools, upgrade taxes
+    Read my lips: pony up
+        http://www.theregister.co.uk/content/4/26269.html
+
+    Amazon opens web services kimono
+    But where's Henry Raddick?
+        http://www.theregister.co.uk/content/4/26267.html
+
+Personal Hardware
+
+    Hitachi creates splash with water cooled P4 notebook
+    Well no, actually. The idea is it doesn't splash...
+        http://www.theregister.co.uk/content/54/26273.html
+
+Semiconductors
+
+    AMD chalks up huge loss, admits to extended red zone
+    AMD up agin it may be a sign the economy's returning to normal...
+        http://www.theregister.co.uk/content/3/26256.html
+
+Internet
+
+    Fair Use advocates silenced by Big Brother
+    Commerce Dept. doesn't want to hear it
+        http://www.theregister.co.uk/content/6/26275.html
+
+    Net access at work is a perk, say employees
+    Or not, as the case may be
+        http://www.theregister.co.uk/content/6/26270.html
+
+    'Dotcom millionaire' pulls out of porn
+    Benjamin Cohen refocuses 
+        http://www.theregister.co.uk/content/6/26268.html
+
+    Virgin.net pilots broadband
+    Full launch in September
+        http://www.theregister.co.uk/content/6/26262.html
+
+    BT ordered to cut cost of Net access
+    Don't you love it when Oftel talks tough?
+        http://www.theregister.co.uk/content/6/26258.html
+
+    Internet monopoly alert!
+    Verisign up to its old tricks again
+        http://www.theregister.co.uk/content/6/26254.html
+
+    Copyright enforcer Ranger Online caught stealing content
+    Do as we say, not as we do
+        http://www.theregister.co.uk/content/6/26250.html
+
+Net Security
+
+    Symantec buys SecurityFocus, Riptech, Recourse
+    So that's who's got the cashflow...
+        http://www.theregister.co.uk/content/55/26255.html
+
+Business
+
+    Nokia shares slip on lowered estimates 
+    Upsy-daisy
+        http://www.theregister.co.uk/content/7/26271.html
+
+    AOL "cooked books" as dot.com bubble burst
+    Revenue "not of highest quality". Right
+        http://www.theregister.co.uk/content/7/26264.html
+
+    Redbus row rumbles on
+    Cliff launches Portal of Discontent
+        http://www.theregister.co.uk/content/7/26260.html
+
+    Symantec buys SecurityFocus, Riptech, Recourse
+    So that's who's got the cashflow...
+        http://www.theregister.co.uk/content/7/26255.html
+
+    Reading the runes of IBM's Q2s
+    6 per cent down, but maybe good all the same
+        http://www.theregister.co.uk/content/7/26253.html
+
+The Vulture Central Mailbag
+
+    FoTW: Bad language breeds Bad language
+    LettersC# barbs fall flat
+
+
+        http://www.theregister.co.uk/content/35/26266.html
+
+Site News
+
+    Cash'n'Carrion sinks claws into Nigerian 419 scam
+    You read the email, you sent the cash, now wear the shirt
+        http://www.theregister.co.uk/content/31/26259.html
+
+Bootnotes
+
+    Deloitte Consulting rebrands as mineral water
+    All hail Braxton!
+        http://www.theregister.co.uk/content/28/26265.html
+
+    Hello, I'd like to speak to Dr Really Evil please...
+    404- Bond villain Not Found
+        http://www.theregister.co.uk/content/28/26261.html
+
+    Deloitte Consulting has Monday: on its mind
+    More: rebranding: malarkey: from: the: wonderful: world: of: consultancy:
+        http://www.theregister.co.uk/content/28/26257.html
+
+
+
+The Register and its contents are copyright 2002 Situation Publishing.
+All rights reserved.
+
+    Tel:     +44 (0)20 7499 2264.
+    Fax:     +44 (0)20 7493 5922.
+    E-Mail:  press.releases@theregister.co.uk
+
+To unsubscribe from these daily updates, visit the following URL.  Make
+sure that you enter exactly the same e-mail address as you used to join
+this service.
+
+    http://list.theregister.co.uk/cgi-bin/unsub.cgi
+
+

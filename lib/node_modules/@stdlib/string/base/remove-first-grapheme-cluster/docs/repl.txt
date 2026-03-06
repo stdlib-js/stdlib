@@ -1,0 +1,30 @@
+
+{{alias}}( str, n )
+    Removes the first `n` grapheme clusters (i.e., user-perceived characters)
+    of a string.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+
+    n: integer
+        Number of grapheme clusters to remove.
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep', 1 )
+    'eep'
+    > out = {{alias}}( 'Boop', 1 )
+    'oop'
+    > out = {{alias}}( 'foo bar', 5 )
+    'ar'
+
+    See Also
+    --------
+

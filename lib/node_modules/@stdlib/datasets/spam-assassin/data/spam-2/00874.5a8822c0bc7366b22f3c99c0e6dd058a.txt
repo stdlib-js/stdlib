@@ -1,0 +1,222 @@
+Received: from hq.pro-ns.net (localhost [127.0.0.1])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MD6bhY016914
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks-forward@ds.pro-ns.net>; Mon, 22 Jul 2002 08:06:38 -0500 (CDT)
+	(envelope-from cpunks@hq.pro-ns.net)
+Received: (from cpunks@localhost)
+	by hq.pro-ns.net (8.12.5/8.12.5/Submit) id g6MD6bYq016909
+	for cypherpunks-forward@ds.pro-ns.net; Mon, 22 Jul 2002 08:06:37 -0500 (CDT)
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by hq.pro-ns.net (8.12.5/8.12.5) with ESMTP id g6MD6UhY016854
+	(version=TLSv1/SSLv3 cipher=EDH-DSS-DES-CBC3-SHA bits=168 verify=NO)
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 08:06:31 -0500 (CDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: from waste.minder.net (daemon@waste [66.92.53.73])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MD6TJ34174
+	for <cypherpunks@ds.pro-ns.net>; Mon, 22 Jul 2002 09:06:29 -0400 (EDT)
+	(envelope-from cpunks@waste.minder.net)
+Received: (from cpunks@localhost)
+	by waste.minder.net (8.11.6/8.11.6) id g6MD6TK24616
+	for cypherpunks@ds.pro-ns.net; Mon, 22 Jul 2002 09:06:29 -0400
+Received: from locust.minder.net (locust.minder.net [66.92.53.74])
+	by waste.minder.net (8.11.6/8.11.6) with ESMTP id g6MD6SR24591
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 09:06:28 -0400
+Received: from einstein.ssz.com (cpunks@[207.200.56.4])
+	by locust.minder.net (8.11.6/8.11.6) with ESMTP id g6MD6QJ34157
+	for <cpunks@minder.net>; Mon, 22 Jul 2002 09:06:26 -0400 (EDT)
+	(envelope-from cpunks@einstein.ssz.com)
+Received: (from cpunks@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id IAA07233
+	for cpunks@minder.net; Mon, 22 Jul 2002 08:14:41 -0500
+Received: (from mdom@localhost)
+	by einstein.ssz.com (8.8.8/8.8.8) id IAA07195
+	for cypherpunks-outgoing; Mon, 22 Jul 2002 08:13:09 -0500
+Received: from mail2.egrad.com (hidden-user@adsl-141-154-210-66.ba-dsg.net [141.154.210.66])
+	by einstein.ssz.com (8.8.8/8.8.8) with ESMTP id IAA07184
+	for <cypherpunks@ssz.com>; Mon, 22 Jul 2002 08:12:59 -0500
+Received: from broadbandpublisher.com [10.0.0.1] by mail2.egrad.com with ESMTP
+  (SMTPD32-7.06) id A2E21CB000A0; Mon, 22 Jul 2002 09:04:34 -0400
+From: Insight on the News <InsightontheNews@broadbandpublisher.com>
+To: cypherpunks@einstein.ssz.com
+Old-Subject: CDR: Insight on the News Email Edition
+Date: 22 Jul 2002 09:03:37 -0400
+MIME-Version: 1.0
+Content-Type: text/plain
+Message-Id: <200207220904556.SM01248@broadbandpublisher.com>
+Sender: owner-cypherpunks@einstein.ssz.com
+Precedence: bulk
+Reply-To: cypherpunks@einstein.ssz.com
+X-Mailing-List: cypherpunks@ssz.com
+X-Unsubscription-Info: http://einstein.ssz.com/cdr
+X-List-Admin: list@ssz.com
+X-Loop: ssz.com
+X-Acceptable-Languages: English, Russian, German, French, Spanish
+Subject: Insight on the News Email Edition
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by hq.pro-ns.net id g6MELghX047052
+
+INSIGHT NEWS ALERT!
+
+A new issue of Insight on the News is now online
+
+http://insightmag.com/news/258763.html
+
+...............................................
+
+Folks, the summer=92s upon us here in the nation=92s capital. And, matchi=
+ng the=20
+weather, your representatives are heatedly working to improve the Wall St=
+reet=20
+mess. Let=92s hope they don=92t make it worse. Jennifer Hickey tells all =
+in her=20
+revealing Washington=92s Week piece http://insightmag.com/news/258785.htm=
+l.=20
+
+And Zoli Simon has discovered that the Chinese have targeted Russian crui=
+se=20
+missiles at U.S. ships. Read all about it=20
+http://insightmag.com/news/258778.html. And guess which party is poised t=
+o=20
+become a major force in time for the November elections? Hint =96 It=92s =
+not the=20
+Republicans or Democrats http://insightmag.com/news/258781.html. Along wi=
+th the=20
+usual reliable revelations and opinions described below. =91Bye for now. =
+>>From the=20
+Bunker, I remain your newsman in Washington.
+
+...............................................
+
+CHINA ARMS FOR WAR
+
+Zoli Simon writes that China's acquisition of cruise-missile weapons syst=
+ems=20
+from Russia poses a clear and present danger to U.S. naval forces =96 and=
+ to the=20
+American homeland as well.
+
+http://insightmag.com/news/258778.html
+
+...............................................
+
+WASHINGTON=92S WEEK =96 ON THE LEGISLATIVE WARPATH
+
+Jennifer Hickey tells us as investor anger registered more clearly with e=
+ach=20
+downward tick of the stock markets, legislators engaged in an indelicate=20
+parliamentary exchange of whoops about arcane congressional rules while t=
+hey=20
+danced and ululated to mutual charges of chicanery.
+
+http://insightmag.com/news/258785.html
+
+...............................................
+
+TAX CODE TRAUMA
+
+John Berlau tells us that experts contend that simplifying the U.S. tax c=
+ode=20
+would do more to cut down on corporate-accounting chicanery than the=20
+introduction of still more regulations and criminal penalties.
+
+http://insightmag.com/news/258763.html
+
+
+
+ =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+               Is Bin-Laden the Pawn of China?
+
+On September 11, 2001, a Chinese Peoples Liberation Army transport aircra=
+ft from=20
+Beijing landed in Kabul with the most important delegation the ruling Tal=
+iban=20
+had ever received.  They had come to sign the contract with Afghanistan t=
+hat=20
+Osama bin-Laden had asked for, that would provide the Taliban state of th=
+e art=20
+air defense systems in exchange for the Taliban's promise to end the atta=
+cks by=20
+Muslim extremists in China's north-western regions.  Hours later, CIA Dir=
+ector=20
+George Tenet received a coded "red alert" message from Mossad's Tel Aviv=20
+headquarters that presented what he called a "worst case scenario" -- tha=
+t China=20
+would use a ruthless surrogate, bin-Laden, to attack the United States.  =
+In=20
+SEEDS OF FIRE, Gordon Thomas asks the question: In the war on terror, is =
+China=20
+with us or against us?  Click here:=20
+http://www.conservativebookservice.com/BookPage.asp?prod_cd=3DC5969&sour_=
+cd=3DINT003901
+
+ =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+
+
+AUSTRIA CONFRONTS ITS DARK NAZI PAST
+
+Ken Timmerman writes that as a government commission prepares to release =
+an=20
+inventory of property stolen from Jews by the Nazis, a new tide of anti-S=
+emitism=20
+is sweeping the country.
+
+http://insightmag.com/news/258764.html
+
+...............................................
+
+=91PARTY OF PRINCIPLE=92 GAINING GROUND
+
+Doreen Englert says, once an afterthought on the U.S. political landscape=
+, the=20
+Libertarian Party steadily has increased both in numbers and influence si=
+nce its=20
+founding 30 years ago.
+
+http://insightmag.com/news/258781.html
+
+...............................................
+
+CHURCH EXPLORES =91HARD CHANGE=92
+
+Jennifer Hickey writes that seeking to repair its severely damaged reputa=
+tion=20
+and begin the healing process, the Catholic Church takes steps to impleme=
+nt a=20
+nationwide policy on sexual abuse.
+
+http://insightmag.com/news/258761.html
+
+
+You have received this newsletter because you have a user name and passwo=
+rd at=20
+Insight on the News.
+To unsubscribe from this newsletter, visit=20
+"http://insightmag.com/main.cfm?include=3Dunsubscribe". You may also log =
+into=20
+Insight on the News and edit your account preferences on the Web.
+
+If you have forgotten or don't know your user name and password, it will =
+be=20
+emailed to you after visiting the following link:
+http://insightmag.com/main.cfm?include=3DemailPassword&serialNumber=3D16o=
+ai891z5&email=3Dcypherpunks@ssz.com
+
+
+
+--DeathToSpamDeathToSpamDeathToSpam--
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by:ThinkGeek
+Welcome to geek heaven.
+http://thinkgeek.com/sf
+_______________________________________________
+Spamassassin-Sightings mailing list
+Spamassassin-Sightings@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings
+
+

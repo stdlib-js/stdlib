@@ -1,0 +1,426 @@
+From imho@eircom.net  Thu Nov 28 11:41:56 2002
+Return-Path: <imho@eircom.net>
+Delivered-To: yyyy@localhost.spamassassin.taint.org
+Received: from localhost (jalapeno [127.0.0.1])
+	by jmason.org (Postfix) with ESMTP id 5442816F1E
+	for <jm@localhost>; Thu, 28 Nov 2002 11:41:33 +0000 (GMT)
+Received: from jalapeno [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 28 Nov 2002 11:41:33 +0000 (GMT)
+Received: from mail01.svc.cra.dublin.eircom.net
+    (mail01.svc.cra.dublin.eircom.net [159.134.118.17]) by dogma.slashnull.org
+    (8.11.6/8.11.6) with SMTP id gASAq2W02132 for <jm@jmason.org>;
+    Thu, 28 Nov 2002 10:52:05 GMT
+Received: (qmail 2812 messnum 213013 invoked from
+    network[159.134.212.7/p212-7.as1.bay.bantry.eircom.net]); 28 Nov 2002
+    10:53:19 -0000
+Received: from p212-7.as1.bay.bantry.eircom.net (HELO mary)
+    (159.134.212.7) by mail01.svc.cra.dublin.eircom.net (qp 2812) with SMTP;
+    28 Nov 2002 10:53:19 -0000
+Message-Id: <00bb01c296cc$8b012cc0$07d4869f@mary>
+From: "Hugh mT" <imho@eircom.net>
+To: <Undisclosed-Recipient:;@jalapeno.spamassassin.taint.org>
+Subject: IMHO 1.10 - Chomsky, Fashion, and Segways
+Date: Thu, 28 Nov 2002 10:31:57 -0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2615.200
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2615.200
+
+                  ___           ___           ___
+                 /\  \         /\  \         /\  \
+    ___         |::\  \        \:\  \       /::\  \
+   /\__\        |:|:\  \        \:\  \     /:/\:\  \
+  /:/__/      __|:|\:\  \   ___ /::\  \   /:/  \:\  \
+ /::\  \     /::::|_\:\__\ /\  /:/\:\__\ /:/__/ \:\__\
+ \/\:\  \__  \:\~~\  \/__/ \:\/:/  \/__/ \:\  \ /:/  /
+  ~~\:\/\__\  \:\  \        \::/__/       \:\  /:/  /
+     \::/  /   \:\  \        \:\  \        \:\/:/  /
+     /:/  /     \:\__\        \:\__\        \::/  /
+     \/__/       \/__/         \/__/         \/__/           one.ten
+                                                            27.11.02
+
+                        Insignificant Matters Heavily Overemphasised
+                                                   <www.imho.8m.com>
+                                                          by Hugh mT
+====================================================================
+
+It's time again for IMHO, brought to you as always by the letters I,
+M, H and O, in partnership with the goofy electronic hubris of the
+Irish Internet.  IMHO will be in orbit again sometime in early
+December.
+
+   * * *   Back issues online at http://www.imho.8m.com   * * *
+
+Formatted for easy reading in Courier New, so you might like to
+print it out in that font.  IMHO also contains hyperlinks to sites
+of interest or relevance: read it while online, too, and check 'em
+out.
+
+In case you're wondering, we Bowdlerise colourful language (e.g.
+'bas7ard') so that IMHO can sneak past corporate obscenity filters,
+like a Dublin solicitor's staff car zooming slyly down the taxi lane
+with a cheap post-regulation taxi plate on top: http://xsls.com?81
+
+====================================================================
+
+Heartfelt thanks this ish to AnnieT, Sean, Ray and the indefatigable
+Mr Brennan for leads and content.  And a big Brava! of
+congratulations to Jacqueline on her outstanding occupational
+odyssey, plus a Bravo! of felicitations to Badger for his famous
+fourwheeled feat.
+
+====================================================================
+
+Please FORWARD this to anyone you think might be interested: if
+that's how you received this, then please SUBSCRIBE by sending mail
+to imho@eircom.net with the word 'subscribe' in the subject line.
+
+You didn't see the previous IMHOs?  They're either in your Junk Mail
+folder with the rest of the s9am, or you weren't sent them.  Read
+them online at http://www.imho.8m.com.  But make sure to SUBSCRIBE!
+
+====================================================================
+
+
+AN INTERNET EIREANNACH............................Ping An Irish Song
+
+Yet another Irish internet company, Octagon Technologies, closed for
+good this week.  And after reading the phrase for what seemed like
+the umpteen-thousandth time, we were idly wondering how many Irish
+tech companies blamed their misfortunes "on the global downturn":
+http://makeashorterlink.com/?S35A63392
+
+Oh, so it's about 450 then.  Thanks, Google.
+
+*
+
+The death occurred recently of that great Irish washtub musician
+Lonnie Donegan.  RIP.  This seems like an apt time therefore to
+reflect on his many accomplishments: his virtuoso playing of
+utensil-based instruments, his worldwide commercial success, his
+place in history as King of Skiffle, and how he wiped billions of
+yen off the value of the Tokyo stock market:
+http://groups.google.com/groups?selm=373A9C4F.61B@time.life
+("panic and subsequent 10+% decline of Tokyo Stock Exchange when Reuters
+advised 'Lonnie Donnegan' was dead")
+and also at
+http://xsls.com?80
+("to Japanese ears it sounded like Ronald Reagan").
+
+*
+
+UCD's Literary and Historical Society this week awarded an honorary
+fellowship to the tediously brilliant American multidisciplarian Dr
+Noam Chomsky.  Now the idea of some trifling college society
+awarding a mere honorary fellowship actually sounds rather like an
+insult to us, considering that Niall Quinn and Marian Finucane were
+given *degrees* by DIT the very next day, but then Chomsky
+apparently inspired some of Radiohead's most caterwaulingly blunted
+songs, so we suppose it serves him right.  Anyway, if you're an
+admirer of the great man's hermeutic genius, linguistic philosophy
+or contentious views on US foreign policy, perhaps you might also
+appreciate his amazing interview of Tom Hanks:
+http://www.sadiethepilot.com/aaweb/tapes.htm#tomnnoam
+
+Very special thanks to IMHO's London correspondent Ray Butler for
+this one.
+
+*
+
+Key IMHO contributor Sean Lynch quite realistically predicts a post-
+Budget dole queue for all of us, and wonders if we'll miss those
+cash-and-job cow multinationals when they're gone?   Not if their
+Irish presence was as permanent and impressive as "the world's
+leading risk and insurance services firm", he concludes:
+http://www.marsh.ie
+(compare and contrast with, say, http://www.marsh.co.uk/)
+
+*
+
+Also: we've been remiss in the past in not featuring
+EircomTribunal.com's stalwart and righteous campaigning against
+Eircom's crippling rates and crippled infrastructure in this
+country.  Well, we aim to redress that right now, by pointing out
+(1) Their 'Banana Republic' international price comparison page at
+http://www.eircomtribunal.com/dossier_banana_rep.html, which will
+surely make you mad enough to
+(2) Download and print out their marvellously bitter "No More
+Favours For You, Mr Eircom Employee" flyer from
+http://www.eircomtribunal.com/counterstrike_a2_nomore.html, designed
+to be stuck under the windshields of the ubiquitous and bilious
+blue/orange Eircom vans.
+Now if only EircomTribunal.com could somehow could retrieve that
+money we all lost on bloody Eircom shares...
+
+
+                          * * * * * * * * *
+
+
+IMHO'S PICK: JOB....................IMHO HO HO (AND A BOTTLE OF RUM)
+
+"FATHER CHRISTMAS on a bike - Student - Giving out FREEBIES - Four
+weeks".  No, not us telegraphing our worst nightmare to our shrink,
+but a job description for a position that apparently pays "enough".
+Email tmckeagney@msn.com or hell, cycle into his perfume shop at 128
+The Stephens Green Centre and show him what you can do.
+
+And hey, if you're a crazy maniac, that's great too.  It's about
+time we had an Irish SANTACON - after all, no force on earth can
+stop one hundred Santas, especially if they're drunk:
+http://www.santarchy.com/
+(from the San Francisco Police Report, "the naughty Santas ... had
+reeked (sic) havoc in the emporium ... in an un-Christmas like
+fashion.")
+
+*
+
+Heh.  Disproving the stereotype that all accountants are boring:
+some Dublin 2 company is looking for a "Parti-time bookkeeper" at
+http://xsls.com?83
+
+*
+
+Our attention-deficient gaze also fell briefly this week onto a box
+ad in a Sunday paper which is seeking private investors for an
+ADVENTURE SPORTS RETAILING business in Dublin.  Now this probably
+just means selling snowboards or something equally tame, but in our
+imagination we see IMHO readers hunting elephants, dogfighting in
+biplanes over the Wicklow Hills and abseiling down moon craters.
+Just in case we're right, any "smart, experienced partner/investor"
+looking for an "equity stake/board position" should "express"
+"interest" to neptune@atomic.ie.
+
+You know, it might look like we're giving these people free
+advertising, but by putting their email addresses on the public web,
+we're actually GUARANTEEING them spam...
+
+
+                          * * * * * * * * *
+
+
+IMHO'S PICK: EVENT...........................Allow Us To Demonstrate
+
+Friday is BUY NOTHING DAY.  For the sake of your own mental health
+and the socio-economic future, we urge you to give it a try.  It's
+not that hard to get through 24 hours without a purchase, and those
+corporate balance sheets sure look funny with a big pre-Christmas
+hole in them.
+
+The official home of BND is of course Adbusters
+(http://adbusters.org/campaigns/bnd/) and they have a run-down of
+Irish activities at http://xsls.com?84... rather a disappointing line-up
+at this late stage, although the Zombie-Shopping in Galway sounds
+like fun - shame they're moving the day to Saturday, hopefully it's
+not for purpose-defeating reasons ("Friday?  Damn, I'm working the
+late shift at McDonald's... how about Saturday?").  In addition and
+elsewhere you can expect bring-and-trade markets, flypostering, free
+stuff, public speaking and all the other happy faces of democratic
+consumer agitation.  Punk's not dead!  Party for your right to
+fight!  No Logo!  Hare Hare!  And so on.
+
+*
+
+We're now going to risk life and limb by mentioning an event which
+is so diametrically opposed to the above that we might just bring
+about the heat-death of the Internet by combining them in the one
+newsletter.
+
+We speak of course of the benighted and spiritually-denuded sickness
+of the TRILOGY FASHION SHOW in the RDS on December 4th, tickets
+starting at "just E50" (but rising to E395 + VAT, natch).  The
+advertising for this bleak celebration focuses entirely on "the most
+beautiful women in the world" who will grace the Simmonscourt
+Pavilion with their airbrushed emptiness: Tyra Banks, Sophie Dahl
+and Anna Kournikova (not the virus) are the only names we recognise.
+You have to pore pretty closely over the small print of the press
+ads to divine that it's the "new Escada Collection" (the who now?)
+they're modelling.  And in an utterly appropriate and inevitable
+partnership, tickets are available from the cultural sewage
+treatment system that is Ticketmaster.
+http://www.cslassociates.ie/events/trilogy_fashion.htm
+
+
+                          * * * * * * * * *
+
+
+IMHO'S PICK: DOWNLOAD..................Transparent and Unaccountable
+
+Given our internet focus and the subversive nature of our scurrilous
+publishing agenda, there is only one possible download
+recommendation this week.  It's the brilliant GHOSTZILLA browser, a
+creation of architectural genius which brings office escapism to
+heady new heights.
+
+Designed to facilitate inconspicuous worktime browsing, Ghostzilla
+sits quietly and invisibly in the background until you summon it
+with a special mouse movement.  It then adapts itself to your
+currently-uppermost application, for example Micro$oft Word, leaving
+Word's toolbars intact while showing web pages in a subtle grayed-
+out wash in the main window.  Images appear in a subdued two-tone
+unless you summon them, and the overall effect is to make it look
+like you're working exactly as you should be.  A casual glance from
+your Office Space boss as he paces past your cubicle shouldn't
+detect anything that looks like browsing.  To think that someone
+devoted their life to creating something so wonderfully juvenile!
+It's a beautiful thing.  Go ghosting at
+http://www.ghostzilla.com.
+
+
+                          * * * * * * * * *
+
+
+IMHO'S PICK: INTERNET^HWS................................ON YER BIKE
+
+Roll up, roll up roll up!  Segue right this way!  Amazon is now
+selling the celebrated SEGWAY (aka Ginger, aka IT) online, the hype
+of the millennium finally made available to lowly consumers.  You're
+only four months and five thousands bucks away from participating in
+the future of transport, the most fundamental and significant
+breakthrough in human evolution since the invention of the leg, the
+"spirit that can change the world", etc. etc.
+
+Get out your chequebook and get your Segway at
+http://makeashorterlink.com/?N49A51392.
+
+*
+
+The perfect expression of our post-modern mania for meta-media
+(whoah! Easy, Chomsky!) is the utterly compelling 'Hoax Photo Test'
+at http://www.museumofhoaxes.com/tests/hoaxphototest.html
+
+(If you've seen this already, that's prolly 'cos the mighty B3TA.com
+featured it last Friday - credit where it's due)
+
+*
+
+"Imagine being able to run a Google-like search on your life," says
+one of the prophets of doom behind MyLifeBits, an incredibly Dickian
+personalised self-database being developed by - who else? -
+Microsoft.  By cataloguing every single artifact of your life
+history, storing everything in an online repository, you build a
+searchable index of every conversation, document, movement, event
+and action that you ever generate or perform.  It's a continuous
+real-time alibi recorder.  It's a voluntary submission of every
+second of existence to information overload.  It's a system that can
+show you all the photos you were ever in, tell you exactly how many
+phonecalls you've ever made, or retrieve an mpeg of you going to the
+toilet in March, 1986:
+http://www.newscientist.com/news/news.jsp?id=ns99993084
+
+Also: we knew that modern innovation was roaring ahead at a
+blistering pace, but can MyLifeBits really allow "time-shifting"?
+http://research.microsoft.com/barc/MediaPresence/MyLifeBits.asp
+
+For a fictional (OR IS IT???) look at where this sinister technology
+might just lead, check out this wonderful piece of short science
+fiction (OR IS IT???):
+http://www.ftrain.com/robot_exclusion_protocol.html
+("I'm a Googlebot!  I will not kill you.")
+
+*
+
+The newest in the intriguing development of really sick-minded God-
+perspective Flash games (e.g. suicide bombers at
+http://www.albinoblacksheep.com/flash/kaboom.html, giant human-burning
+magnifying glass at http://xsls.com?82) has arrived... boasting a title as
+bereft of imagination as the gameplay is of taste, it's 'Pedestrian
+Killer':
+http://www.flaboratorium.org/data/flabor/4/4.htm
+
+But if you prefer God-games which let you manipulate the very atoms
+of creation, check out the awe-inspiring microscopic version of
+Tetris using computer-controlled microspheres these loons have
+created:
+http://www.nat.vu.nl/~joost/complex/index.html.
+
+*
+
+We Irish are sometimes so uncultured, compared to our continental
+cousins - even in things you'd expect us to be good at, like
+vandalism.  Here we get inarticulate clowns with cans of red paint
+daubing "666" on the gates of Cardinal Connell's palatial Drumcondra
+residence... whereas in Paris, to pick an example out of the blue,
+egghead situationists sneakily attach absurdist plaques (e.g. "On
+April 17, 1967, nothing happened here") onto public buildings:
+http://news.bbc.co.uk/2/hi/europe/2478161.stm
+
+*
+
+Microsoft have co-opted the AmIHotOrNot concept, as is their wont, mixed
+it up with a bit of Miss World, and come up with the 'Microsoft Office v.
+X Integrated Experience', or Ms. M.o.X.i.e. competition:
+http://www.microsoft.com/mac/officex/contests/votemain.asp
+Was it for this Emily Wilding Davison died beneath King George V's horse?
+Was it for this that all those bras were burned?  It's like Girl Power
+never happened.
+
+*
+
+When good TiVos go bad: you tape one episode of Ellen, they assume
+you're gay:
+http://online.wsj.com/article_email/0,,SB1038261936872356908,00.html
+
+
+                          * * * * * * * * *
+
+
+LEGACY MEDIA.................There Was Nothing In The Air That Night
+
+IRISH TV: If you rush straight home from work after reading this on
+Thursday, you might catch the second semi-final of corny but
+challenging elimination quiz IT'S NOT THE ANSWER (RTE1, 17:30).
+Come on the beardy guy!  The final's on at the same time tomorrow.
+Calm down from all that excitement with the laughable one-hour FAIR
+CITY murder trial special (RTE1, 20:00) - it's quite brilliant how
+the risible scripts really bring out the absolute worst in truly
+terrible actors.  Settle down with a few G&Ts to watch PRIME TIME on
+the same channel at 21:30, where they're discussing Ireland's
+alcoholic epidemic and its attendant social problems, or waste them
+on either the bottom-scraping POLICE ACADEMY 3 (N2, 21:30) or the
+geriatric 1978 blockbuster COMA (TG4, 22:05).
+
+Friday night, and after a hard day of buying nothing you can flop in
+front of creepy Hitler doco SIX MOST EVIL MEN (N2, 21:00).  Near as
+we can tell, the other evil men are Macauley Culkin in UNCLE BUCK
+(TV3, 20:00), gossip columnist WINCHELL in a solid eponymous biopic
+(N2, 21:30), the big boss bad guy - is it Kang? Kane? Cowen? - in
+MORTAL KOMBAT (TG4, 21:25), Mel Gibson in predictable 80s drug
+thriller TEQUILA SUNRISE (RTE1, 23:50), and Quentin Tarantino
+jumping on his own bandwagon in DESTINY TURNS ON THE RADIO (TV3,
+0:50).  Hang on, Dave Fanning might be one of the evil men too: he's
+presenting THE LAST BROADCAST on Network 2 at 23:35.
+
+
+                          * * * * * * * * *
+
+
+COLOPHON....................................................APOLOGIA
+
+We'd like to focus mainly on the IRISH Internet, but, uh, we were
+sick that day.  Please help us out by mailing in your topical Irish
+net news, your high-profile .ie failures, your worthy Gaelic
+successes, your hilarious local web misadventures, anything that
+seems messed-up, inappropriate or insane... or just mail us your
+feedback.  (That address is imho@eircom.net)
+
+But whatever you do, PLEASE PLEASE PLEASE send this on to as many
+people as you can.  If you don't, hostile scripts embedded in this
+character string will disable your 'Forward' button forever:
+~:|``¦?
+
+====================================================================
+
+SUBSCRIBE by sending mail to imho@eircom.net with the word
+'subscribe' in the subject line.
+UNSUBSCRIBE by sending mail to imho@eircom.net with the word
+'unsubscribe' in the subject line.
+
+====================================================================
+
+
+
+

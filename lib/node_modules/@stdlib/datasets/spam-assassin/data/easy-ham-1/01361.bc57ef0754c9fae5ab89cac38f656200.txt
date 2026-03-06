@@ -1,0 +1,83 @@
+From spamassassin-devel-admin@lists.sourceforge.net  Thu Aug 29 11:06:15 2002
+Return-Path: <spamassassin-devel-admin@example.sourceforge.net>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A0E4244164
+	for <jm@localhost>; Thu, 29 Aug 2002 06:04:59 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 29 Aug 2002 11:04:59 +0100 (IST)
+Received: from usw-sf-list2.sourceforge.net (usw-sf-fw2.sourceforge.net
+    [216.136.171.252]) by dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id
+    g7SKt8Z09995 for <jm@jmason.org>; Wed, 28 Aug 2002 21:55:08 +0100
+Received: from usw-sf-list1-b.sourceforge.net ([10.3.1.13]
+    helo=usw-sf-list1.sourceforge.net) by usw-sf-list2.sourceforge.net with
+    esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id 17k9pF-000674-00; Wed,
+    28 Aug 2002 13:54:05 -0700
+Received: from moutng.kundenserver.de ([212.227.126.185]) by
+    usw-sf-list1.sourceforge.net with esmtp (Exim 3.31-VA-mm2 #1 (Debian)) id
+    17k9p6-0007FX-00 for <SpamAssassin-devel@lists.sourceforge.net>;
+    Wed, 28 Aug 2002 13:53:56 -0700
+Received: from [212.227.126.155] (helo=mrelayng1.kundenserver.de) by
+    moutng7.kundenserver.de with esmtp (Exim 3.35 #2) id 17k9p3-0001ZZ-00 for
+    SpamAssassin-devel@lists.sourceforge.net; Wed, 28 Aug 2002 22:53:53 +0200
+Received: from [80.129.8.19] (helo=silence.homedns.org) by
+    mrelayng1.kundenserver.de with asmtp (Exim 3.35 #2) id 17k9p3-0005BT-00
+    for SpamAssassin-devel@lists.sourceforge.net; Wed, 28 Aug 2002 22:53:53
+    +0200
+Received: (qmail 9394 invoked by uid 1000); 28 Aug 2002 20:53:52 -0000
+From: Klaus Heinz <k.heinz.aug.zwei@onlinehome.de>
+To: SpamAssassin-devel@example.sourceforge.net
+Subject: Re: [SAdev] 2.40: ready for release?
+Message-Id: <20020828225352.A9191@silence.homedns.org>
+Mail-Followup-To: SpamAssassin-devel@example.sourceforge.net
+References: <20020828184218.399CE43F99@phobos.labs.netnoteinc.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020828184218.399CE43F99@phobos.labs.netnoteinc.com>;
+    from jm@jmason.org on Wed, Aug 28, 2002 at 07:42:13PM +0100
+Sender: spamassassin-devel-admin@example.sourceforge.net
+Errors-To: spamassassin-devel-admin@example.sourceforge.net
+X-Beenthere: spamassassin-devel@example.sourceforge.net
+X-Mailman-Version: 2.0.9-sf.net
+Precedence: bulk
+List-Help: <mailto:spamassassin-devel-request@example.sourceforge.net?subject=help>
+List-Post: <mailto:spamassassin-devel@example.sourceforge.net>
+List-Subscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=subscribe>
+List-Id: SpamAssassin Developers <spamassassin-devel.example.sourceforge.net>
+List-Unsubscribe: <https://example.sourceforge.net/lists/listinfo/spamassassin-devel>,
+    <mailto:spamassassin-devel-request@lists.sourceforge.net?subject=unsubscribe>
+List-Archive: <http://www.geocrawler.com/redir-sf.php3?list=spamassassin-devel>
+X-Original-Date: Wed, 28 Aug 2002 22:53:52 +0200
+Date: Wed, 28 Aug 2002 22:53:52 +0200
+
+Justin Mason wrote:
+
+> What do you all think?  are we ready to go?  anyone run into any trouble
+> with the new autoconf code, or found a bug from the merge of that spamc
+
+I am now preparing a small patch to configure.in for NetBSD (possibly
+also useful for Open- and FreeBSD, don't know). Should be ready and
+tested in the next half hour.
+
+If you think 2.40 is ready, I would suggest to wait just 24 hours more
+for possible reports by b2_4_0 users. Not everyone can follow the
+development during daytime (at work).
+
+
+ciao
+     Klaus
+
+
+
+-------------------------------------------------------
+This sf.net email is sponsored by: Jabber - The world's fastest growing 
+real-time communications platform! Don't just IM. Build it in! 
+http://www.jabber.com/osdn/xim
+_______________________________________________
+Spamassassin-devel mailing list
+Spamassassin-devel@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/spamassassin-devel
+
