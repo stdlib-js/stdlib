@@ -23,14 +23,14 @@
 import { ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Returns an array without singleton dimensions.
+* Returns an ndarray without singleton dimensions.
 *
 * ## Notes
 *
-* -   If a provided ndarray does not have any singleton dimensions, the function returns the provided ndarray unchanged.
-* -   If a provided ndarray does have singleton dimensions, the function returns a new ndarray view.
+* -   The function always returns a new ndarray instance even if the input ndarray does not contain any singleton dimensions.
 *
 * @param x - input array
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns squeezed array
 *
 * @example
@@ -39,30 +39,12 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
 *     'ndmin': 5
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ] ]
 *
-* var shx = x.shape;
-* // returns [ 1, 1, 1, 2, 2 ]
-*
-* var y = removeSingletonDimensions( x );
-* // returns <ndarray>
-*
-* var shy = y.shape;
-* // returns [ 2, 2 ]
-*
-* var v = y.get( 0, 0 );
-* // returns 1
-*
-* v = y.get( 0, 1 );
-* // returns 2
-*
-* v = y.get( 1, 0 );
-* // returns 3
-*
-* v = y.get( 1, 1 );
-* // returns 4
+* var y = removeSingletonDimensions( x, false );
+* // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function removeSingletonDimensions( x: ndarray ): ndarray;
+declare function removeSingletonDimensions( x: ndarray, writable: boolean ): ndarray;
 
 
 // EXPORTS //
