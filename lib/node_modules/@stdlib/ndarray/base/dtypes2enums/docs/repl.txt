@@ -12,7 +12,7 @@
 
     Returns
     -------
-    out: Array<integer>
+    out: Array<integer|null>
         Results.
 
     Examples

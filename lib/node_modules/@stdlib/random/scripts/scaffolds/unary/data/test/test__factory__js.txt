@@ -356,7 +356,6 @@ tape( 'the function returns a function which throws an error if provided a `dtyp
 
 	values = [
 		'5',
-		5,
 		NaN,
 		true,
 		false,
