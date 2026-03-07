@@ -38,7 +38,7 @@
 *
 * @example
 * var v = mean( 1.1 );
-* // returns ~0.4989
+* // returns ~0.49896
 *
 * @example
 * var v = mean( NaN );

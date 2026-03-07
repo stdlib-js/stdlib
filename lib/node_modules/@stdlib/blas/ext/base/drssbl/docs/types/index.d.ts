@@ -1,0 +1,105 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+/**
+* Interface describing `drssbl`.
+*/
+interface Routine {
+	/**
+	* Computes the residual sum of squares of two double-precision floating-point strided arrays using Blue's algorithm.
+	*
+	* @param N - number of indexed elements
+	* @param x - first input array
+	* @param strideX - stride length of `x`
+	* @param y - second input array
+	* @param strideY - stride length of `y`
+	* @returns residual sum of squares
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
+	* var y = new Float64Array( [ 2.0, 1.0, 2.0, 1.0, -2.0, 2.0, 3.0, 4.0 ] );
+	*
+	* var z = drssbl( x.length, x, 1, y, 1 );
+	* // returns 72.0
+	*/
+	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number ): number;
+
+	/**
+	* Computes the residual sum of squares of two double-precision floating-point strided arrays using Blue's algorithm and alternative indexing semantics.
+	*
+	* @param N - number of indexed elements
+	* @param x - first input array
+	* @param strideX - stride length of `x`
+	* @param offsetX - starting index of `x`
+	* @param y - second input array
+	* @param strideY - stride length of `y`
+	* @param offsetY - starting index of `y`
+	* @returns residual sum of squares
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	*
+	* var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
+	* var y = new Float64Array( [ 2.0, 1.0, 2.0, 1.0, -2.0, 2.0, 3.0, 4.0 ] );
+	*
+	* var z = drssbl.ndarray( x.length, x, 1, 0, y, 1, 0 );
+	* // returns 72.0
+	*/
+	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, y: Float64Array, strideY: number, offsetY: number ): number;
+}
+
+/**
+* Computes the residual sum of squares of two double-precision floating-point strided arrays using Blue's algorithm.
+*
+* @param N - number of indexed elements
+* @param x - first input array
+* @param strideX - stride length of `x`
+* @param y - second input array
+* @param strideY - stride length of `y`
+* @returns residual sum of squares
+*
+* @example
+* var Float64Array = require( '@stdlib/array/float64' );
+* var drssbl = require( '@stdlib/blas/ext/base/drssbl' );
+*
+* var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
+* var y = new Float64Array( [ 1.0, 1.0, -4.0 ] );
+*
+* var out = drssbl( x.length, x, 1, y, 1 );
+* // returns 45.0
+*
+* @example
+* var Float64Array = require( '@stdlib/array/float64' );
+* var drssbl = require( '@stdlib/blas/ext/base/drssbl' );
+*
+* var x = new Float64Array( [ 1.0, 2.0, 2.0, -7.0, -2.0, 3.0, 4.0, 2.0 ] );
+* var y = new Float64Array( [ 2.0, 1.0, 2.0, 1.0, -2.0, 2.0, 3.0, 4.0 ] );
+*
+* var z = drssbl.ndarray( x.length, x, 1, 0, y, 1, 0 );
+* // returns 72.0
+*/
+declare var drssbl: Routine;
+
+
+// EXPORTS //
+
+export = drssbl;

@@ -86,6 +86,8 @@ The function has the following parameters:
 
 <section class="notes">
 
+## Notes
+
 -   The function returns views having **only** those keys which are present in a provided mapping object. Any keys which are **not** present in the provided mapping object, but are present in the original objects, are **omitted** during view creation.
 -   The function assumes that each object has the keys specified in a provided mapping object.
 -   Each view in the returned array shares the same memory as the corresponding elements in the input arrays. Accordingly, mutation of either an array element or a view will mutate the other.

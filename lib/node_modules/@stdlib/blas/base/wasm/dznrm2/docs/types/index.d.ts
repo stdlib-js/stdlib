@@ -222,7 +222,7 @@ interface Routine extends ModuleWrapper {
 	*
 	* // Perform operation:
 	* var out = dznrm2.main( x.length, x, 1 );
-	* // returns ~9.53
+	* // returns ~9.54
 	*/
 	main( N: number, x: Complex128Array, strideX: number ): number;
 
@@ -242,7 +242,7 @@ interface Routine extends ModuleWrapper {
 	* var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* var out = dznrm2.ndarray( x.length, x, 1, 0 );
-	* // returns ~9.53
+	* // returns ~9.54
 	*/
 	ndarray( N: number, x: Complex128Array, strideX: number, offsetX: number ): number;
 
@@ -303,7 +303,7 @@ interface Routine extends ModuleWrapper {
 * var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
 * var out = dznrm2.main( x.length, x, 1 );
-* // returns ~9.53
+* // returns ~9.54
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
@@ -312,7 +312,7 @@ interface Routine extends ModuleWrapper {
 * var x = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
 * var out = dznrm2.ndarray( x.length, x, 1, 0 );
-* // returns ~9.53
+* // returns ~9.54
 */
 declare var dznrm2: Routine;
 

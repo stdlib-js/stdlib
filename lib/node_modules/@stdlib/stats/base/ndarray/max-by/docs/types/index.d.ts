@@ -23,14 +23,14 @@
 import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
-* Returns the result of callback function.
+* Callback function applied to each element of an ndarray.
 *
 * @returns result
 */
 type Nullary<ThisArg> = ( this: ThisArg ) => number | void;
 
 /**
-* Returns the result of callback function.
+* Callback function applied to each element of an ndarray.
 *
 * @param value - current array element
 * @returns result
@@ -38,7 +38,7 @@ type Nullary<ThisArg> = ( this: ThisArg ) => number | void;
 type Unary<T, ThisArg> = ( this: ThisArg, value: T ) => number | void;
 
 /**
-* Returns the result of callback function.
+* Callback function applied to each element of an ndarray.
 *
 * @param value - current array element
 * @param index - current array element index
@@ -47,7 +47,7 @@ type Unary<T, ThisArg> = ( this: ThisArg, value: T ) => number | void;
 type Binary<T, ThisArg> = ( this: ThisArg, value: T, index: number ) => number | void;
 
 /**
-* Returns the result of callback function.
+* Callback function applied to each element of an ndarray.
 *
 * @param value - current array element
 * @param index - current array element index
@@ -57,7 +57,7 @@ type Binary<T, ThisArg> = ( this: ThisArg, value: T, index: number ) => number |
 type Ternary<T, U, ThisArg> = ( this: ThisArg, value: T, index: number, array: U ) => number | void;
 
 /**
-* Returns the result of callback function.
+* Callback function applied to each element of an ndarray.
 *
 * @param value - current array element
 * @param index - current array element index

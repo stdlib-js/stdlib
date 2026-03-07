@@ -124,10 +124,7 @@ interface CountIf {
 	*
 	* // Perform reduction:
 	* var out = countIf( x, predicate );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 5
+	* // returns <ndarray>[ 5 ]
 	*/
 	<T = unknown, U = unknown>( x: typedndarray<T>, predicate: Predicate<T, U>, thisArg?: ThisParameterType<Predicate<T, U>> ): int32ndarray; // FIXME: update once `int64` dtype support
 
@@ -167,10 +164,7 @@ interface CountIf {
 	*
 	* // Perform reduction:
 	* var out = countIf( x, {}, predicate );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 5
+	* // returns <ndarray>[ 5 ]
 	*/
 	<T = unknown, U = unknown>( x: typedndarray<T>, options: Options, predicate: Predicate<T, U>, thisArg?: ThisParameterType<Predicate<T, U>> ): int32ndarray; // FIXME: update once `int64` dtype support; may require adding support for an output `dtype` option
 
@@ -216,10 +210,7 @@ interface CountIf {
 	*
 	* // Perform reduction:
 	* var out = countIf.assign( x, y, predicate );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 5
+	* // returns <ndarray>[ 5 ]
 	*/
 	assign<T = unknown, U extends typedndarray<unknown> = typedndarray<unknown>, V = unknown>( x: typedndarray<T>, y: U, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): U;
 
@@ -265,10 +256,7 @@ interface CountIf {
 	*
 	* // Perform reduction:
 	* var out = countIf.assign( x, y, {}, predicate );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 5
+	* // returns <ndarray>[ 5 ]
 	*/
 	assign<T = unknown, U extends typedndarray<unknown> = typedndarray<unknown>, V = unknown>( x: typedndarray<T>, y: U, options: BaseOptions, predicate: Predicate<T, V>, thisArg?: ThisParameterType<Predicate<T, V>> ): U;
 }
@@ -309,10 +297,7 @@ interface CountIf {
 *
 * // Perform reduction:
 * var out = countIf( x, predicate );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns 5
+* // returns <ndarray>[ 5 ]
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -345,10 +330,7 @@ interface CountIf {
 *
 * // Perform reduction:
 * var out = countIf.assign( x, y, predicate );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns 5
+* // returns <ndarray>[ 5 ]
 */
 declare var countIf: CountIf;
 

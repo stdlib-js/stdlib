@@ -140,22 +140,18 @@ y = mymgf( 0.4 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mgf = require( '@stdlib/stats/base/dists/laplace/mgf' );
 
-var mu;
-var b;
-var t;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var t = uniform( 10, 0.0, 1.0, opts );
+var mu = uniform( 10, -5.0, 5.0, opts );
+var b = uniform( 10, 0.0, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    t = randu();
-    mu = (randu() * 10.0) - 5.0;
-    b = randu() * 20.0;
-    y = mgf( t, mu, b );
-    console.log( 't: %d, µ: %d, b: %d, M_X(t;µ,b): %d', t.toFixed( 4 ), mu.toFixed( 4 ), b.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 't: %0.4f, µ: %0.4f, b: %0.4f, M_X(t;µ,b): %0.4f', t, mu, b, mgf );
 ```
 
 </section>

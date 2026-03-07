@@ -2,9 +2,7 @@
 {{alias}}( arrays )
     Computes the sum of all elements in a one-dimensional ndarray.
 
-    If provided a real-valued empty ndarray, the function returns `0.0`.
-
-    If provided a complex-valued empty ndarray, the function returns `0+0i`.
+    If provided an empty ndarray, the function returns `0.0`.
 
     Parameters
     ----------
@@ -13,7 +11,7 @@
 
     Returns
     -------
-    out: number|Complex
+    out: number
         Sum.
 
     Examples

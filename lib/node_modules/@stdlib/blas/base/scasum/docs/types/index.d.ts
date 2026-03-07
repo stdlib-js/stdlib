@@ -40,7 +40,7 @@ interface Routine {
 	* var x = new Complex64Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
 	*
 	* var out = scasum( 5, x, 1 );
-	* // returns ~6.9
+	* // returns ~6.6
 	*/
 	( N: number, x: Complex64Array, strideX: number ): number;
 
@@ -59,7 +59,7 @@ interface Routine {
 	* var x = new Complex64Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
 	*
 	* var out = scasum.ndarray( 5, x, 1, 0 );
-	* // returns ~6.9
+	* // returns ~6.6
 	*/
 	ndarray( N: number, x: Complex64Array, strideX: number, offsetX: number ): number;
 }

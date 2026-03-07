@@ -1260,21 +1260,21 @@ rules[ 'no-restricted-syntax' ] = [ 'error',
 	// String.prototype.trimStart / trimLeft
 	{
 		'selector': 'CallExpression[callee.property.name="trimStart"]',
-		'message': 'Use `@stdlib/string/base/left-trim` instead of String.prototype.trimStart.'
+		'message': 'Use `@stdlib/string/left-trim` or `@stdlib/string/base/left-trim` instead of String.prototype.trimStart.'
 	},
 	{
 		'selector': 'CallExpression[callee.property.name="trimLeft"]',
-		'message': 'Use `@stdlib/string/base/left-trim` instead of String.prototype.trimLeft.'
+		'message': 'Use `@stdlib/string/left-trim` or `@stdlib/string/base/left-trim` instead of String.prototype.trimLeft.'
 	},
 
 	// String.prototype.trimEnd / trimRight
 	{
 		'selector': 'CallExpression[callee.property.name="trimEnd"]',
-		'message': 'Use `@stdlib/string/base/right-trim` instead of String.prototype.trimEnd.'
+		'message': 'Use `@stdlib/string/right-trim` or `@stdlib/string/base/right-trim` instead of String.prototype.trimEnd.'
 	},
 	{
 		'selector': 'CallExpression[callee.property.name="trimRight"]',
-		'message': 'Use `@stdlib/string/base/right-trim` instead of String.prototype.trimRight.'
+		'message': 'Use `@stdlib/string/right-trim` or `@stdlib/string/base/right-trim` instead of String.prototype.trimRight.'
 	},
 
 	// Object.keys

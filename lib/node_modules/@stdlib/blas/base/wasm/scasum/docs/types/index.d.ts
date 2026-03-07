@@ -219,7 +219,7 @@ interface Routine extends ModuleWrapper {
 	*
 	* var x = new Complex64Array( [ 2.0, 1.0, 3.0, 5.0, 4.0, 0.0, 1.0, 3.0 ] );
 	*
-	* var out = scasum.main( x.length, 5.0, x, 1, y, 1 );
+	* var out = scasum.main( x.length, x, 1 );
 	* // returns 19.0
 	*/
 	main( N: number, x: Complex64Array, strideX: number ): number;
@@ -299,7 +299,7 @@ interface Routine extends ModuleWrapper {
 * var x = new Complex64Array( [ 2.0, 1.0, 3.0, 5.0, 4.0, 0.0, 1.0, 3.0 ] );
 *
 * var out = scasum.main( x.length, x, 1 );
-* // returns 21.0
+* // returns 19.0
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
@@ -307,7 +307,7 @@ interface Routine extends ModuleWrapper {
 * var x = new Complex64Array( [ 2.0, 1.0, 3.0, 5.0, 4.0, 0.0, 1.0, 3.0 ] );
 *
 * var out = scasum.ndarray( x.length, x, 1, 0 );
-* // returns 21.0
+* // returns 19.0
 */
 declare var scasum: Routine;
 
