@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/stats/array/midrange",
   "version": "0.0.0",
-  "description": "Calculate the midrange of an array.",
+  "description": "Calculate the mid-range of an array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -61,6 +61,7 @@
     "max",
     "range",
     "midrange",
+    "mid-range",
     "extremes",
     "domain",
     "extent",
