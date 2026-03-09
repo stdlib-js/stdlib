@@ -55,7 +55,7 @@ var pmf = require( '@stdlib/stats/base/dists/poisson/pmf' );
 
 #### pmf( x, lambda )
 
-Evaluates the [probability mass function][pmf] (PMF) of a [Poisson][poisson-distribution] distribution with mean parameter `lambda`.
+Evaluates the [probability mass function][pmf] (PMF) of a [Poisson][poisson-distribution] distribution with mean parameter `lambda` at value `x`.
 
 ```javascript
 var y = pmf( 4.0, 3.0 );
@@ -139,6 +139,105 @@ logEachMap( 'x: %d, λ: %0.4f, P(X=x;λ): %0.4f', x, lambda, pmf );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/poisson/pmf.h"
+```
+
+#### stdlib_base_dists_poisson_pmf( x, lambda )
+
+Evaluates the [probability mass function][pmf] (PMF) of a [Poisson][poisson-distribution] distribution with mean parameter `lambda` at value `x`.
+
+```c
+double out = stdlib_base_dists_poisson_pmf( 4.0, 3.0 );
+// returns ~0.168
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` value at which to evaluate the PMF.
+-   **lambda**: `[in] double` mean parameter.
+
+```c
+double stdlib_base_dists_poisson_pmf( const double x, const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/poisson/pmf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+static int random_discrete_uniform( const int min, const int max ) {
+    return min + ( rand() % ( max - min + 1 ) );
+}
+
+int main( void ) {
+    double lambda;
+    double y;
+    int x;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        x = random_discrete_uniform( 0, 10 );
+        lambda = random_uniform( 0.0, 20.0 );
+        y = stdlib_base_dists_poisson_pmf( x, lambda );
+        printf( "x: %d, λ: %.4f, P(X=x;λ): %.4f\n", x, lambda, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
