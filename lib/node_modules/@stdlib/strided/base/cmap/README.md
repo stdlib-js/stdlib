@@ -42,8 +42,6 @@ Applies a unary function to a single-precision complex floating-point strided in
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 var cceilf = require( '@stdlib/math/base/special/cceilf' );
 
 var x = new Complex64Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
@@ -52,13 +50,7 @@ var y = new Complex64Array( x.length );
 cmap( x.length, x, 1, y, 1, cceilf );
 
 var v = y.get( 0 );
-// returns <Complex64>
-
-var re = real( v );
-// returns -2.0
-
-var im = imag( v );
-// returns 2.0
+// returns <Complex64>[ -2.0, 2.0 ]
 ```
 
 The function accepts the following arguments:
@@ -74,8 +66,6 @@ The `N` and stride parameters determine which elements in the strided arrays are
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 var cceilf = require( '@stdlib/math/base/special/cceilf' );
 
 var x = new Complex64Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
@@ -84,21 +74,13 @@ var y = new Complex64Array( x.length );
 cmap( 2, x, 2, y, -1, cceilf );
 
 var v = y.get( 0 );
-// returns <Complex64>
-
-var re = real( v );
-// returns 5.0
-
-var im = imag( v );
-// returns 0.0
+// returns <Complex64>[ 5.0, 0.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][@stdlib/array/complex64] views.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 var cceilf = require( '@stdlib/math/base/special/cceilf' );
 
 // Initial arrays...
@@ -112,13 +94,7 @@ var y1 = new Complex64Array( y0.buffer, y0.BYTES_PER_ELEMENT*2 ); // start at 3r
 cmap( 2, x1, -2, y1, 1, cceilf );
 
 var v = y0.get( 2 );
-// returns <Complex64>
-
-var re = real( v );
-// returns -1.0
-
-var im = imag( v );
-// returns 4.0
+// returns <Complex64>[ -1.0, 4.0 ]
 ```
 
 #### cmap.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, fcn )
@@ -127,8 +103,6 @@ Applies a unary function to a single-precision complex floating-point strided in
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 var cceilf = require( '@stdlib/math/base/special/cceilf' );
 
 var x = new Complex64Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
@@ -137,13 +111,7 @@ var y = new Complex64Array( x.length );
 cmap.ndarray( x.length, x, 1, 0, y, 1, 0, cceilf );
 
 var v = y.get( 0 );
-// returns <Complex64>
-
-var re = real( v );
-// returns -2.0
-
-var im = imag( v );
-// returns 2.0
+// returns <Complex64>[ -2.0, 2.0 ]
 ```
 
 The function accepts the following additional arguments:
@@ -155,8 +123,6 @@ While [`typed array`][@stdlib/array/complex64] views mandate a view offset based
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 var cceilf = require( '@stdlib/math/base/special/cceilf' );
 
 var x = new Complex64Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
@@ -165,13 +131,7 @@ var y = new Complex64Array( x.length );
 cmap.ndarray( 2, x, 2, 1, y, -1, y.length-1, cceilf );
 
 var v = y.get( y.length-1 );
-// returns <Complex64>
-
-var re = real( v );
-// returns 4.0
-
-var im = imag( v );
-// returns -5.0
+// returns <Complex64>[ 4.0, -5.0 ]
 ```
 
 </section>

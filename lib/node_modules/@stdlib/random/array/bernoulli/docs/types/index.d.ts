@@ -185,7 +185,7 @@ interface Random extends PRNG {
 	* var x = zeros( 10, 'float64' );
 	* // returns <Float64Array>
 	*
-	* var out = bernoulli( 0.5, out );
+	* var out = bernoulli( 0.5, x );
 	* // returns <Float64Array>
 	*
 	* var bool = ( out === x );

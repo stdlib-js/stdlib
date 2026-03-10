@@ -275,7 +275,7 @@ interface InMapRightAsync {
 	* };
 	*
 	* // Create a `inmapRightAsync` function which invokes `read` for each collection element sequentially:
-	* var inmapRightAsync = factory( opts, read );
+	* var inmapRight = inmapRightAsync.factory( opts, read );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -292,7 +292,7 @@ interface InMapRightAsync {
 	* }
 	*
 	* // Run `read` for each element in `files`:
-	* inmapRightAsync( files, done );
+	* inmapRight( files, done );
 	*/
 	factory<T = unknown, U = unknown, V = unknown>( options: Options<T, U, V>, fcn: Fcn<T, U, V> ): FactoryFunction<T, U>;
 
@@ -326,7 +326,7 @@ interface InMapRightAsync {
 	* }
 	*
 	* // Create a `inmapRightAsync` function which invokes `read` for each collection element sequentially:
-	* var inmapRightAsync = factory( read );
+	* var inmapRight = inmapRightAsync.factory( read );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -343,7 +343,7 @@ interface InMapRightAsync {
 	* }
 	*
 	* // Run `read` for each element in `files`:
-	* inmapRightAsync( files, done );
+	* inmapRight( files, done );
 	*/
 	factory<T = unknown, U = unknown, V = unknown>( fcn: Fcn<T, U, V> ): FactoryFunction<T, U>;
 }

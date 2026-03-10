@@ -53,7 +53,7 @@ interface Namespace {
 	*
 	* @example
 	* var b = new ns.Boolean( false );
-	* // returns <ns.Boolean>
+	* // returns <Boolean>
 	*/
 	Boolean: typeof Boolean;
 }

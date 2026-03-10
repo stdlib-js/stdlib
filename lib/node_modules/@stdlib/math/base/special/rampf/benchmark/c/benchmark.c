@@ -103,15 +103,18 @@ float rampf( float x ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	float x;
+	float x[ 100 ];
 	float y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 100.0f*rand_float() ) - 50.0f;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 100.0f*rand_float() ) - 50.0f;
-		y = rampf( x );
+		y = rampf( x[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

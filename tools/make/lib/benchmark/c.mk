@@ -98,3 +98,27 @@ benchmark-c-files:
 	done
 
 .PHONY: benchmark-c-files
+
+#/
+# Runs random c benchmarks consecutively.
+#
+# @param {string} [PACKAGES_PATTERN='package.json'] - filename pattern for identifying packages
+# @param {string} [PACKAGES_FILTER='.*/.*'] - filepath pattern for finding packages
+# @param {string} [RANDOM_SELECTION_SIZE=100] - number of packages
+#
+# @example
+# make benchmark-random-c
+#
+# @example
+# make benchmark-random-c RANDOM_SELECTION_SIZE=10
+#/
+benchmark-random-c: $(NODE_MODULES)
+	$(QUIET) $(MAKE) -f $(this_file) -s list-random-lib-pkgs PACKAGES_PATTERN='manifest.json' | while read -r pkg; do \
+		echo ""; \
+		echo "Running benchmark: $$pkg"; \
+		NODE_ENV="$(NODE_ENV_BENCHMARK)" \
+		NODE_PATH="$(NODE_PATH_BENCHMARK)" \
+		$(MAKE) -f $(this_file) benchmark-c BENCHMARKS_FILTER="$$pkg/.*" || exit 1; \
+	done
+
+.PHONY: benchmark-random-c

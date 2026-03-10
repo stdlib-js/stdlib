@@ -1,0 +1,12 @@
+
+{{alias}}
+    Glaisher-Kinkelin constant.
+
+    Examples
+    --------
+    > {{alias}}
+    1.2824270725250244
+
+    See Also
+    --------
+

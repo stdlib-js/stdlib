@@ -39,7 +39,6 @@ void API_SUFFIX(stdlib_strided_ssort2ins)( const CBLAS_INT N, const float order,
 	API_SUFFIX(stdlib_strided_ssort2ins_ndarray)( N, order, X, strideX, ox, Y, strideY, oy );
 }
 
-
 /**
 * Simultaneously sorts two single-precision floating-point strided arrays based on the sort order of the first array using insertion sort and alternative indexing semantics.
 *

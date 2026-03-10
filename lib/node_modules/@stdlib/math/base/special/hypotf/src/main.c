@@ -37,11 +37,13 @@ float stdlib_base_hypotf( const float x, const float y ) {
 	float tmp;
 	float a;
 	float b;
-	if ( stdlib_base_is_nanf( x ) || stdlib_base_is_nanf( y ) ) {
-		return 0.0f / 0.0f; // NaN
-	}
+
+	// If one of the arguments is `+-infinity`, return `+infinity` even if the other argument is `NaN` (IEEE 754-2019)...
 	if ( stdlib_base_is_infinitef( x ) || stdlib_base_is_infinitef( y ) ) {
 		return STDLIB_CONSTANT_FLOAT32_PINF;
+	}
+	if ( stdlib_base_is_nanf( x ) || stdlib_base_is_nanf( y ) ) {
+		return 0.0f / 0.0f; // NaN
 	}
 	a = x;
 	b = y;

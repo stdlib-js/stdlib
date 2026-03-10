@@ -75,7 +75,7 @@ declare function last( str: string, n: number, options?: Options ): string;
 * var out = last( '🐶🐮🐷🐰🐸', {
 *    'mode': 'grapheme'
 * });
-* // returns '🐰🐸'
+* // returns '🐸'
 */
 declare function last( str: string, options?: Options ): string;
 

@@ -75,7 +75,7 @@ declare function first( str: string, n: number, options?: Options ): string;
 * var out = first( '🐶🐮🐷🐰🐸', {
 *    'mode': 'grapheme'
 * });
-* // returns '🐶🐮'
+* // returns '🐶'
 */
 declare function first( str: string, options?: Options ): string;
 

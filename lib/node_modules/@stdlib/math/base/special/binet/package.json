@@ -64,5 +64,80 @@
     "fib",
     "number",
     "reals"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "binet",
+      "alias": "binet",
+      "pkg_desc": "evaluate Binet's formula extended to real numbers for a double-precision floating-point number",
+      "desc": "evaluates Binet's formula extended to real numbers for a double-precision floating-point number",
+      "short_desc": "Binet's formula",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -50,
+              50
+            ]
+          },
+          "example_values": [
+            250.8,
+            -41.2,
+            0.37,
+            -120.5,
+            73.1,
+            -7.6,
+            12.3,
+            -0.95,
+            19.8,
+            -25.7,
+            5.5,
+            -3.9,
+            34.6,
+            -88.4,
+            1.7,
+            0,
+            47.8,
+            -15.4,
+            102.6,
+            -10.3
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "real-valued result",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "binet",
+        "fibonacci",
+        "fib",
+        "number",
+        "reals"
+      ],
+      "extra_keywords": []
+    }
+  }
 }
