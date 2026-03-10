@@ -61,10 +61,8 @@ double API_SUFFIX(stdlib_strided_dcityblock_ndarray)( const CBLAS_INT N, const d
 	ox = offsetX;
 	oy = offsetY;
 
-	d = stdlib_base_abs( X[ ox ] - Y[ oy ] );
-	ox += strideX;
-	oy += strideY;
-	for ( i = 1; i < N; i++ ) {
+	d = 0.0;
+	for ( i = 0; i < N; i++ ) {
 		d += stdlib_base_abs( X[ ox ] - Y[ oy ] );
 		ox += strideX;
 		oy += strideY;

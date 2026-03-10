@@ -164,7 +164,6 @@ interface Namespace {
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	*
 	* var xbuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -183,10 +182,7 @@ interface Namespace {
 	* });
 	*
 	* var out = ns.dlinspace( [ x, start, stop, endpoint ] );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
+	* // returns <ndarray>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
 	dlinspace: typeof dlinspace;
 
