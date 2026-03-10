@@ -20,7 +20,7 @@ limitations under the License.
 
 # snanmskminabs
 
-> Calculate the minimum absolute value of a one-dimensional single-precision floating-point ndarray according to a mask, ignoring `NaN` values.
+> Compute the minimum absolute value of a one-dimensional single-precision floating-point ndarray according to a mask, ignoring `NaN` values.
 
 <section class="intro">
 
