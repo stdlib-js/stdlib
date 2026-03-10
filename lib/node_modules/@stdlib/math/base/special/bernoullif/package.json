@@ -59,7 +59,71 @@
     "special",
     "function",
     "bernoulli",
-    "bernoullif",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "bernoulli",
+      "alias": "bernoullif",
+      "pkg_desc": "compute the nth Bernoulli number as a single-precision floating-point number ",
+      "desc": "computes the nth Bernoulli number as a single-precision floating-point number",
+      "short_desc": "Bernoulli number",
+      "parameters": [
+        {
+          "name": "n",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              0,
+              30
+            ]
+          },
+          "example_values": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            10,
+            20,
+            15,
+            18,
+            25,
+            21,
+            22
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "bernoulli"
+      ],
+      "extra_keywords": []
+    }
+  }
 }
