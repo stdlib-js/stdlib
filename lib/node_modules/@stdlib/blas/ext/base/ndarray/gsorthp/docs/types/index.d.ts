@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { typedndarray } from '@stdlib/types/ndarray';
+import { typedndarray, genericndarray } from '@stdlib/types/ndarray';
 
 /**
 * Sorts a one-dimensional ndarray using heapsort.
@@ -50,7 +50,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var arr = ndarray2array( out );
 * // returns [ -4.0, -2.0, 1.0, 3.0 ]
 */
-declare function gsorthp<T = unknown>( arrays: [ typedndarray<T>, typedndarray<number> ] ): typedndarray<T>;
+declare function gsorthp<T extends typedndarray<unknown> | genericndarray<unknown> = typedndarray<unknown>>( arrays: [ T, typedndarray<number> ] ): T;
 
 
 // EXPORTS //

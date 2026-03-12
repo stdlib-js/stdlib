@@ -59,10 +59,7 @@
 
     // Fill the input ndarray:
     > {{alias}}( [ x, start, stop, endpoint ] )
-    <ndarray>
-
-    > {{alias:@stdlib/ndarray/to-array}}( x )
-    [ 0.0, 1.0, 2.0, 3.0 ]
+    <ndarray>[ 0.0, 1.0, 2.0, 3.0 ]
 
     See Also
     --------
