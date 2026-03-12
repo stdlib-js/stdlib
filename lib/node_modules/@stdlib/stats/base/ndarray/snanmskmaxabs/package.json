@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/stats/base/ndarray/snanmskmaxabs",
   "version": "0.0.0",
-  "description": "Calculate the maximum absolute value of a one-dimensional single-precision floating-point ndarray according to a mask, ignoring NaN values.",
+  "description": "Compute the maximum absolute value of a one-dimensional single-precision floating-point ndarray according to a mask, ignoring NaN values.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
