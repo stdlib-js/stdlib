@@ -18,10 +18,6 @@ limitations under the License.
 
 -->
 
-# Zulip Guide
-
-> Guide to the stdlib Zulip chat.
-
 <!-- lint disable first-heading-level -->
 
 <!-- FIXME: the following two empty sections are merely to satisfy the linter for `expected-html-sections` which cannot, atm, be turned off -->
@@ -37,6 +33,10 @@ limitations under the License.
 </section>
 
 <!-- /.examples -->
+
+# Zulip Guide
+
+> Guide to the stdlib Zulip chat.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
