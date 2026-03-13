@@ -42,7 +42,7 @@ limitations under the License.
 
 <section class="intro">
 
-This guide provides best practices and community norms for the [**stdlib Zulip chat**][stdlib-zulip]---the home of the stdlib community [announced][zulip-announcement] in December 2025. Anyone is welcome to join, or browse the web-public channels (which you can see without signing up). The community norms and guidelines here are to help ensure that everyone can get the most out of this platform and, hopefully, have a positive experience.
+This guide provides best practices and community norms for the [**stdlib Zulip chat**][stdlib-zulip]—the home of the stdlib community [announced][zulip-announcement] in December 2025. Anyone is welcome to join, or browse the web-public channels (which you can see without signing up). The community norms and guidelines here are to help ensure that everyone can get the most out of this platform and, hopefully, have a positive experience.
 
 </section>
 
@@ -60,7 +60,7 @@ We encourage you to come say hello and tell us a bit about yourself in the [**#i
 
 First and foremost, whenever possible, try to post your questions **in public** (rather than sending DMs). Asking questions in public is the fastest way to get a response, as more people can help, _plus_ it's likely that someone else will benefit from finding out the answer to your question. The stdlib team is active in the chat, so you shouldn't need to use **@-mentions** by default.
 
-Each channel has a description (don't worry too much about posting in the "right" channel---moderators can help [move content][zulip-move-content] if needed), and conversations are organized into [**topics**][zulip-intro-to-topics]. If you're starting a new discussion, try to pick a brief, descriptive topic name that captures the subject of your message. Topic names also help others find relevant information from past conversations (learn more about [Zulip search filters here][zulip-search-filters]). You can edit a topic name at any time, so if you realize that your original topic name isn't quite right, feel free to update it.
+Each channel has a description (don't worry too much about posting in the "right" channel—moderators can help [move content][zulip-move-content] if needed), and conversations are organized into [**topics**][zulip-intro-to-topics]. If you're starting a new discussion, try to pick a brief, descriptive topic name that captures the subject of your message. Topic names also help others find relevant information from past conversations (learn more about [Zulip search filters here][zulip-search-filters]). You can edit a topic name at any time, so if you realize that your original topic name isn't quite right, feel free to update it.
 
 Because it's easy to move content around, please **do NOT cross-post**. Not only can this be confusing, but you risk duplication of effort if multiple people respond to the same question in different channels.
 
