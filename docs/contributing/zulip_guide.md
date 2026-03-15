@@ -76,7 +76,7 @@ The [stdlib Code of Conduct][stdlib-code-of-conduct] applies to all community sp
 
 If you have feedback or suggestions about improving our Zulip community, don't hesitate to share your thoughts. We have a special meta channel, [**#zulip**][stdlib-zulip-channel], for discussing community-related topics. For more general feedback, there's also the aptly-named [**#feedback**][stdlib-feedback-channel] channel.
 
-The best part of open source is the community, so we're commited to making our Zulip a welcoming and inclusive space for everyone. We look forward to chatting with you there!
+The best part of open source is the community, so we're committed to making our Zulip a welcoming and inclusive space for everyone. We look forward to chatting with you there!
 
 <section class="notes">
 
