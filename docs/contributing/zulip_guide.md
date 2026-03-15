@@ -66,7 +66,7 @@ Because it's easy to move content around, please **do NOT cross-post**. Not only
 
 ### Custom Linkifiers
 
-We've set up some [custom linkifiers][zulip-linkifiers] to make it easy to share links to GitHub issues, and pull requests. If you type **`#1234`** in a message, it will automatically link to the issue or PR with that number in the main [stdlib GitHub repository][stdlib-github-repo]. There's also a special linkifier for the [stdlib Google Summer of Code repo][stdlib-gsoc-repo], you simply type **`#G{id-number}`**. Note that these work for both issues and pull requests (GitHub uses the same numbering for both).
+We've set up some [custom linkifiers][zulip-linkifiers] to make it easy to share links to GitHub issues and pull requests. If you type **`#1234`** in a message, it will automatically link to the issue or PR with that number in the main [stdlib GitHub repository][stdlib-github-repo]. There's also a special linkifier for the [stdlib Google Summer of Code repo][stdlib-gsoc-repo]; you simply type **`#G{id-number}`**. Note that these work for both issues and pull requests (GitHub uses the same numbering for both).
 
 ### Code of Conduct
 
