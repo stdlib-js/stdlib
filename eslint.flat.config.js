@@ -59,7 +59,13 @@ config = [
 			'**/build/',
 			'**/reports/',
 			'dist/',
-			'.git*'
+			'.git*',
+
+			// Un-ignore stdlib source:
+			'!**/node_modules/',
+
+			// Ignore third-party dependencies:
+			'node_modules/'
 		]
 	},
 
