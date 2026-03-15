@@ -1848,12 +1848,12 @@ rules[ 'quotes' ] = [ 'error', 'single', {
 /**
 * Require JSDoc comments.
 *
-* @name require-jsdoc
+* @name jsdoc/require-jsdoc
 * @memberof rules
 * @type {Array}
-* @see [require-jsdoc]{@link https://eslint.org/docs/rules/require-jsdoc}
+* @see [require-jsdoc]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-jsdoc.md}
 */
-rules[ 'require-jsdoc' ] = [ 'error', {
+rules[ 'jsdoc/require-jsdoc' ] = [ 'error', {
 	'require': {
 		'FunctionDeclaration': true,
 		'ClassDeclaration': true,

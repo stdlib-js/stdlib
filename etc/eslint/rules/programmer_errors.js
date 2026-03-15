@@ -839,26 +839,54 @@ rules[ 'require-atomic-updates' ] = 'error';
 rules[ 'use-isnan' ] = 'error';
 
 /**
-* Require valid JSDoc.
+* Require a JSDoc description.
 *
-* @name valid-jsdoc
+* @name jsdoc/require-description
 * @memberof rules
-* @type {Array}
-* @see [valid-jsdoc]{@link https://eslint.org/docs/rules/valid-jsdoc}
+* @type {string}
+* @see [require-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description.md}
 */
-rules[ 'valid-jsdoc' ] = [ 'error', {
-	'prefer': {
-		'arg': 'param',
-		'argument': 'param',
-		'class': 'constructor',
-		'return': 'returns'
-	},
-	'requireReturn': false,
-	'requireReturnType': true,
-	'matchDescription': '.+',
-	'requireParamDescription': true,
-	'requireReturnDescription': true
-}];
+rules[ 'jsdoc/require-description' ] = 'error';
+
+/**
+* Require `@param` description.
+*
+* @name jsdoc/require-param-description
+* @memberof rules
+* @type {string}
+* @see [require-param-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-description.md}
+*/
+rules[ 'jsdoc/require-param-description' ] = 'error';
+
+/**
+* Require `@returns` type.
+*
+* @name jsdoc/require-returns-type
+* @memberof rules
+* @type {string}
+* @see [require-returns-type]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-type.md}
+*/
+rules[ 'jsdoc/require-returns-type' ] = 'error';
+
+/**
+* Require `@returns` description.
+*
+* @name jsdoc/require-returns-description
+* @memberof rules
+* @type {string}
+* @see [require-returns-description]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-description.md}
+*/
+rules[ 'jsdoc/require-returns-description' ] = 'error';
+
+/**
+* Enforce valid JSDoc tag names.
+*
+* @name jsdoc/check-tag-names
+* @memberof rules
+* @type {string}
+* @see [check-tag-names]{@link https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-tag-names.md}
+*/
+rules[ 'jsdoc/check-tag-names' ] = 'error';
 
 /**
 * Only allow the result of `typeof` to be compared against a select subset of known strings (e.g., 'string', 'undefined', etc.).
