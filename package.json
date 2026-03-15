@@ -140,7 +140,7 @@
     "editorconfig-checker": "^6.0.0",
     "envify": "^4.0.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-n": "^17.17.0",
     "eslint-plugin-expect-type": "^0.2.3",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jsdoc": "^46.8.2",
