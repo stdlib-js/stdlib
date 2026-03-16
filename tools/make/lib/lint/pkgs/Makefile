@@ -19,7 +19,7 @@
 # VARIABLES #
 
 # Define the path for script validating `package.json` metadata:
-VALIDATE_PKG_JSON ?= "${TOOLS_PKGS_DIR}/package-json/scripts/validate_package_json_files"
+VALIDATE_PKG_JSON ?= $(TOOLS_PKGS_DIR)/package-json/scripts/validate_package_json_files
 
 
 # RULES #
