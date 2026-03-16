@@ -171,11 +171,11 @@ jobs:
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_package_json_files" "${{ steps.changed-files.outputs.files }}"
 
-      # Validate package.json metadata:
-      - name: 'Validate package.json metadata'
+      # Lint package.json metadata:
+      - name: 'Lint package.json metadata'
         if: success() || failure()
         run: |
-          make validate-pkg-json FILES="${{ steps.changed-files.outputs.files }}"
+          make lint-pkgs-metadata-files FILES="${{ steps.changed-files.outputs.files }}"
 
       # Lint REPL help files...
       - name: 'Lint REPL help files'

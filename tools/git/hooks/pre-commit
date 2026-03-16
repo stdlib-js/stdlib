@@ -254,10 +254,10 @@ run_lint() {
 	else
 		task_status 'skipped'
 	fi
-	add_task 'validate_package_json'
+	add_task 'lint_pkgs_metadata'
 	if [[ -z "${skip_package_json}" ]]; then
 		files=$(echo "${changed_files}" | tr '\n' ' ')
-		make FILES="${files}" validate-pkg-json > /dev/null >&2
+		make FILES="${files}" lint-pkgs-metadata-files > /dev/null >&2
 		if [[ "$?" -ne 0 ]]; then
 			task_status 'failed'
 			echo '' >&2

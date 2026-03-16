@@ -24,9 +24,6 @@ PACKAGE_JSON_LINTER ?= $(TOOLS_PKGS_DIR)/lint/pkg-json/bin/cli
 # Define the command-line options to be used when invoking the executable:
 PACKAGE_JSON_LINTER_FLAGS ?=
 
-# Define the path for script validating `package.json` metadata:
-VALIDATE_PKG_JSON ?= "${TOOLS_PKGS_DIR}/package-json/scripts/validate_package_json_files"
-
 
 # RULES #
 
@@ -41,17 +38,3 @@ lint-pkg-json: $(NODE_MODULES)
 	$(QUIET) NODE_PATH="$(NODE_PATH)" $(NODE) "$(PACKAGE_JSON_LINTER)" $(PACKAGE_JSON_LINTER_FLAGS) "$(ROOT_DIR)"
 
 .PHONY: lint-pkg-json
-
-#/
-# Validates `package.json` metadata associated with a list of files.
-#
-# @param {string} FILES - list of file paths
-#
-# @example
-# make validate-pkg-json FILES='/foo/lib/index.js /bar/package.json'
-#/
-validate-pkg-json: $(NODE_MODULES)
-	$(QUIET) echo 'Validating package.json metadata...'
-	$(QUIET) $(VALIDATE_PKG_JSON) $(FILES)
-
-.PHONY: validate-pkg-json
