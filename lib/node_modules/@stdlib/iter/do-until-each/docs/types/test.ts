@@ -57,7 +57,6 @@ function predicate( v: unknown, i: number ): boolean {
 *
 * @param v - iterated value
 * @param i - iteration index
-* @returns callback result
 */
 function fcn( v: unknown, i: number ): void {
 	if ( v !== v || i !== i ) {

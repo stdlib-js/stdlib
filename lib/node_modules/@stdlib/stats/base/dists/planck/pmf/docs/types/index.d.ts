@@ -75,12 +75,12 @@ interface PMF {
 	* @returns PMF
 	*
 	* @example
-	* var pmf = factory( 0.5 );
-	* var y = pmf( 3.0 );
-	* // returns ~0.0879
+	* var mypmf = pmf.factory( 0.5 );
+	* var y = mypmf( 3.0 );
+	* // returns ~0.0878
 	*
-	* y = pmf( 1.0 );
-	* // returns ~0.2386
+	* y = mypmf( 1.0 );
+	* // returns ~0.239
 	*/
 	factory( lambda: number ): Unary;
 }

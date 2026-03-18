@@ -47,5 +47,5 @@ double API_SUFFIX(stdlib_strided_dnanstdevwd)( const CBLAS_INT N, const double c
 * @return             output value
 */
 double API_SUFFIX(stdlib_strided_dnanstdevwd_ndarray)( const CBLAS_INT N, const double correction, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
-	return stdlib_base_sqrt( API_SUFFIX(stdlib_strided_dnanvariancewd_ndarray )( N, correction, X, strideX, offsetX ) );
+	return stdlib_base_sqrt( API_SUFFIX(stdlib_strided_dnanvariancewd_ndarray)( N, correction, X, strideX, offsetX ) );
 }

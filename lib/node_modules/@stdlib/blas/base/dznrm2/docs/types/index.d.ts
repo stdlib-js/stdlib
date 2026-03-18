@@ -30,46 +30,46 @@ interface Routine {
 	* Computes the L2-norm of a complex double-precision floating-point vector.
 	*
 	* @param N - number of indexed elements
-	* @param zx - input array
-	* @param strideX - stride length for `zx`
+	* @param x - input array
+	* @param strideX - stride length for `x`
 	* @returns L2-norm
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	*
-	* var zx = new Complex128Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
+	* var x = new Complex128Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
 	*
-	* var norm = dznrm2( 4, zx, 1 );
+	* var norm = dznrm2( 4, x, 1 );
 	* // returns ~0.8
 	*/
-	( N: number, zx: Complex128Array, strideX: number ): number;
+	( N: number, x: Complex128Array, strideX: number ): number;
 
 	/**
 	* Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
-	* @param zx - input array
-	* @param strideX - stride length for `zx`
-	* @param offsetX - starting index for `zx`
+	* @param x - input array
+	* @param strideX - stride length for `x`
+	* @param offsetX - starting index for `x`
 	* @returns L2-norm
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	*
-	* var zx = new Complex128Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
+	* var x = new Complex128Array( [ 0.3, 0.1, 0.5, 0.0, 0.0, 0.5, 0.0, 0.2, 2.0, 3.0 ] );
 	*
-	* var norm = dznrm2.ndarray( 4, zx, 1, 0 );
+	* var norm = dznrm2.ndarray( 4, x, 1, 0 );
 	* // returns ~0.8
 	*/
-	ndarray( N: number, zx: Complex128Array, strideX: number, offsetX: number ): number;
+	ndarray( N: number, x: Complex128Array, strideX: number, offsetX: number ): number;
 }
 
 /**
 * Computes the L2-norm of a complex double-precision floating-point vector.
 *
 * @param N - number of indexed elements
-* @param zx - input array
-* @param strideX - stride length for `zx`
+* @param x - input array
+* @param strideX - stride length for `x`
 * @returns L2-norm
 *
 * @example
@@ -77,7 +77,7 @@ interface Routine {
 *
 * var x = new Complex128Array( [ 3.0, -4.0, 0.0, 0.0, 5.0, -6.0 ] );
 *
-* var norm = dznrm2( 2, zx, 2 );
+* var norm = dznrm2( 2, x, 2 );
 * // returns ~9.3
 *
 * @example
@@ -85,7 +85,7 @@ interface Routine {
 *
 * var x = new Complex128Array( [ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ] );
 *
-* var norm = dznrm2.ndarray( 2, zx, 1, 1 );
+* var norm = dznrm2.ndarray( 2, x, 1, 1 );
 * // returns ~9.3
 */
 declare var dznrm2: Routine;

@@ -120,21 +120,18 @@ v = stdev( 20, 1.5 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var stdev = require( '@stdlib/stats/base/dists/binomial/stdev' );
 
-var v;
-var i;
-var n;
-var p;
+var opts = {
+    'dtype': 'float64'
+};
+var n = discreteUniform( 10, 0, 100, opts );
+var p = uniform( 10, 0.0, 1.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    n = round( randu() * 100.0 );
-    p = randu();
-    v = stdev( n, p );
-    console.log( 'n: %d, p: %d, SD(X;n,p): %d', n, p.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'n: %0.4f, p: %0.4f, SD(X;n,p): %0.4f', n, p, stdev );
 ```
 
 </section>

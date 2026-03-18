@@ -1,0 +1,27 @@
+
+{{alias}}( shape, dims )
+    Returns the shape defined by the dimensions which are not included in a list
+    of dimensions.
+
+    Parameters
+    ----------
+    shape: ArrayLike<number>
+        Array shape.
+
+    dims: ArrayLike<number>
+        List of dimensions.
+
+    Returns
+    -------
+    out: Array<number>
+        Output shape.
+
+    Examples
+    --------
+    > var sh = [ 3, 2 ];
+    > var out = {{alias}}( sh, [ 1 ] )
+    [ 3 ]
+
+    See Also
+    --------
+

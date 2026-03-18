@@ -26,7 +26,7 @@
 *
 * @example
 * var v = acosd( 0.0 );
-* // returns 0.0
+* // returns 90.0
 *
 * @example
 * var v = acosd( 0.5 );

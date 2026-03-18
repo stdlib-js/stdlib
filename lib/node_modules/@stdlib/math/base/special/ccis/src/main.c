@@ -68,7 +68,7 @@ stdlib_complex128_t stdlib_base_ccis( const stdlib_complex128_t z ) {
 	stdlib_complex128_reim( z, &re, &im );
 
 	stdlib_base_sincos( re, &y, &x );
-	if( im != 0.0 ) {
+	if ( im != 0.0 ) {
 		e = stdlib_base_exp( -im );
 		y *= e;
 		x *= e;

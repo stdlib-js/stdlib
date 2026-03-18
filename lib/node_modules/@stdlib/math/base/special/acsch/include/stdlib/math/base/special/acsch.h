@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the hyperbolic arccosecant of double-precision floating-point number.
+* Computes the hyperbolic arccosecant of a double-precision floating-point number.
 */
 double stdlib_base_acsch( const double x );
 

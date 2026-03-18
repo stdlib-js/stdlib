@@ -19,5 +19,4 @@
 #include "stdlib/stats/base/dists/geometric/median.h"
 #include "stdlib/math/base/napi/unary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_dists_geometric_median )

@@ -1,0 +1,30 @@
+
+{{alias}}( properties, values )
+    Creates an object from a provided list of properties and a provided list of
+    corresponding values.
+
+    The function assumes that both input arrays are the same length.
+
+    Parameters
+    ----------
+    properties: ArrayLikeObject
+        List of properties.
+
+    values: ArrayLikeObject
+        List of values.
+
+    Returns
+    -------
+    out: Object
+        Result.
+
+    Examples
+    --------
+    > var x1 = [ 1, 2 ];
+    > var x2 = [ 3, 4 ];
+    > var out = {{alias}}( x1, x2 )
+    { '1': 3, '2': 4 }
+
+    See Also
+    --------
+
