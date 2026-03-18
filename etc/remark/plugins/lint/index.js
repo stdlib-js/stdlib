@@ -1323,6 +1323,16 @@ plugins.push([
 	[ 'error', '-' ]
 ]);
 
+/**
+* Validate HTML section hierarchy in README files according to stdlib conventions.
+*/
+plugins.push( require( './../lint-expected-html-sections' ) );
+
+/**
+* Validate HTML section structure in README files.
+*/
+plugins.push( require( './../lint-html-section-structure' ) );
+
 
 // EXPORTS //
 
