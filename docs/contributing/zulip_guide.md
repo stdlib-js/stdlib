@@ -58,7 +58,7 @@ We encourage you to come say hello and tell us a bit about yourself in the [**#i
 
 ### Where to post
 
-First and foremost, whenever possible, try to post your questions **in public** (rather than sending DMs). Asking questions in public is the fastest way to get a response, as more people can help, _plus_ it's likely that someone else will benefit from finding out the answer to your question. The stdlib team is active in the chat, so you shouldn't need to use **@-mentions** by default.
+First and foremost, whenever possible, try to post your questions **in public** (rather than sending direct messages, a.k.a. DMs). Asking questions in public is the fastest way to get a response, as more people can help, _plus_ it's likely that someone else will benefit from finding out the answer to your question. The stdlib team is active in the chat, so you shouldn't need to use **@-mentions** by default.
 
 Each channel has a description (don't worry too much about posting in the "right" channel—moderators can help [move content][zulip-move-content] if needed), and conversations are organized into [**topics**][zulip-intro-to-topics]. If you're starting a new discussion, try to pick a brief, descriptive topic name that captures the subject of your message. Topic names also help others find relevant information from past conversations (learn more about [Zulip search filters here][zulip-search-filters]). You can edit a topic name at any time, so if you realize that your original topic name isn't quite right, feel free to update it.
 
