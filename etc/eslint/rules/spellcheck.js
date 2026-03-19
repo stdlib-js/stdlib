@@ -97,8 +97,14 @@ rules[ '@cspell/spellchecker' ] = [ 'warn', {
 			'ncols',
 			'ndims',
 			'ndim',
-			'nout',
+			'nprocessed',
+				'nout',
 			'ndarray',
+				'ndarrays',
+				'ndim',
+				'ndims',
+				'ndone',
+				'nerrors',
 			'ndarrays',
 			'nrows',
 			'nsubmodes',
@@ -116,7 +122,8 @@ rules[ '@cspell/spellchecker' ] = [ 'warn', {
 			'trigamma',
 			'uncapitalize',
 			'unregularized',
-			'Fréchet'
+			'zalgo',
+				'Fréchet'
 		]
 	}
 }];
