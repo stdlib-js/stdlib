@@ -80,9 +80,9 @@ rules[ '@cspell/spellchecker' ] = [ 'warn', {
 			'dilogarithm',
 			'dtype',
 			'dtypes',
-			'exponentiated',
 			'evalpoly',
 			'evalrational',
+			'exponentiated',
 			'hommel',
 			'iget',
 			'iset',
@@ -95,17 +95,14 @@ rules[ '@cspell/spellchecker' ] = [ 'warn', {
 			'napi',
 			'nargs',
 			'ncols',
-			'ndims',
-			'ndim',
-			'nprocessed',
-				'nout',
 			'ndarray',
-				'ndarrays',
-				'ndim',
-				'ndims',
-				'ndone',
-				'nerrors',
 			'ndarrays',
+			'ndim',
+			'ndims',
+			'ndone',
+			'nerrors',
+			'nout',
+			'nprocessed',
 			'nrows',
 			'nsubmodes',
 			'pvalues',
@@ -123,7 +120,7 @@ rules[ '@cspell/spellchecker' ] = [ 'warn', {
 			'uncapitalize',
 			'unregularized',
 			'zalgo',
-				'Fréchet'
+			'Fréchet'
 		]
 	}
 }];
