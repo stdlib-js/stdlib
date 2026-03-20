@@ -22,11 +22,13 @@
 
 var plugins = [];
 
-plugins.push( require( './frontmatter' ) );
-plugins = plugins.concat( require( './lint' ) );
-plugins.push( require( './eslint' ) );
-plugins.push( require( './lint-equations' ) );
-plugins.push( require( './validate-links' ) );
+plugins.push(require( './frontmatter' ));
+plugins = plugins.concat(require( './lint' ));
+plugins.push(require( './eslint' ));
+plugins.push(require( './lint-equations' ));
+plugins.push(require( './lint-expected-html-sections' ));
+plugins.push(require( './lint-html-section-structure' ));
+plugins.push(require( './validate-links' ));
 
 
 // EXPORTS //

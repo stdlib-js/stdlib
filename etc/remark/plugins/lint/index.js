@@ -23,7 +23,7 @@
 /**
 * Lint plugins.
 */
-var plugins = [ require( 'remark-lint' ) ];
+var plugins = [require( 'remark-lint' )];
 
 /**
 * Require blockquotes to have `2` character indentation.
@@ -42,7 +42,7 @@ var plugins = [ require( 'remark-lint' ) ];
 */
 plugins.push([
 	require( 'remark-lint-blockquote-indentation' ),
-	[ 'error', 2 ]
+	['error', 2]
 ]);
 
 /**
@@ -88,7 +88,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-checkbox-content-indent' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /* eslint-disable stdlib/jsdoc-no-multiple-blank-lines */
@@ -117,7 +117,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-code-block-style' ),
-	[ 'error', 'fenced' ]
+	['error', 'fenced']
 ]);
 
 /* eslint-enable stdlib/jsdoc-no-multiple-blank-lines */
@@ -139,7 +139,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-definition-case' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -159,7 +159,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-definition-spacing' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /* eslint-disable stdlib/jsdoc-no-multiple-blank-lines */
@@ -181,7 +181,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-emphasis-marker' ),
-	[ 'error', '_' ]
+	['error', '_']
 ]);
 
 /* eslint-enable stdlib/jsdoc-no-multiple-blank-lines */
@@ -236,7 +236,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-fenced-code-marker' ),
-	[ 'error', '`' ]
+	['error', '`']
 ]);
 
 /**
@@ -246,7 +246,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-file-extension' ),
-	[ 'error', 'md' ]
+	['error', 'md']
 ]);
 
 /**
@@ -256,7 +256,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-final-definition' ),
-	[ 'off' ]
+	['off']
 ]);
 
 /**
@@ -266,7 +266,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-final-newline' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -276,7 +276,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-first-heading-level' ),
-	[ 'error', 1 ]
+	['error', 1]
 ]);
 
 /**
@@ -286,7 +286,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-hard-break-spaces' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -296,7 +296,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-heading-increment' ),
-	[ 'off' ]
+	['off']
 ]);
 
 /**
@@ -322,7 +322,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-heading-style' ),
-	[ 'error', 'atx' ]
+	['error', 'atx']
 ]);
 
 /**
@@ -332,7 +332,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-linebreak-style' ),
-	[ 'error', 'unix' ]
+	['error', 'unix']
 ]);
 
 /**
@@ -352,7 +352,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-link-title-style' ),
-	[ 'error', '"' ]
+	['error', '"']
 ]);
 
 /**
@@ -375,7 +375,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-list-item-bullet-indent' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -400,7 +400,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-list-item-content-indent' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -432,7 +432,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-list-item-indent' ),
-	[ 'error', 'tab-size' ]
+	['error', 'tab-size']
 ]);
 
 /**
@@ -467,7 +467,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-list-item-spacing' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -477,7 +477,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-maximum-heading-length' ),
-	[ 'error', 80 ]
+	['error', 80]
 ]);
 
 /**
@@ -487,7 +487,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-maximum-line-length' ),
-	[ 'off' ]
+	['off']
 ]);
 
 /**
@@ -508,7 +508,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-auto-link-without-protocol' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -533,7 +533,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-blockquote-without-marker' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -543,7 +543,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-consecutive-blank-lines' ),
-	[ 'off' ]
+	['off']
 ]);
 
 /**
@@ -566,7 +566,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-duplicate-definitions' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -590,7 +590,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-duplicate-headings' ),
-	[ 'off' ]
+	['off']
 ]);
 
 /**
@@ -619,7 +619,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-duplicate-headings-in-section' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -644,7 +644,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-emphasis-as-heading' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -665,7 +665,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-empty-url' ),
-	[ 'error']
+	['error']
 ]);
 
 /**
@@ -675,7 +675,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-file-name-articles' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -685,7 +685,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-file-name-consecutive-dashes' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -695,7 +695,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-file-name-irregular-characters' ),
-	[ 'error', '\\.a-zA-Z0-9-_' ]
+	['error', '\\.a-zA-Z0-9-_']
 ]);
 
 /**
@@ -705,7 +705,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-file-name-mixed-case' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -715,7 +715,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-file-name-outer-dashes' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -740,7 +740,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-heading-content-indent' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -774,7 +774,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-heading-indent' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -790,7 +790,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-heading-like-paragraph' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -806,7 +806,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-heading-punctuation' ),
-	[ 'error', '.,;:!?' ]
+	['error', '.,;:!?']
 ]);
 
 /**
@@ -825,7 +825,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-html' ),
-	[ 'off' ]
+	['off']
 ]);
 
 /**
@@ -846,7 +846,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-inline-padding' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -867,7 +867,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-literal-urls' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -914,7 +914,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-multiple-toplevel-headings' ),
-	[ 'off' ]
+	['off']
 ]);
 
 /**
@@ -938,7 +938,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-paragraph-content-indent' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -963,7 +963,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-reference-like-url' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -980,7 +980,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-shell-dollars' ),
-	[ 'off' ]
+	['off']
 ]);
 
 /**
@@ -1005,7 +1005,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-shortcut-reference-image' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -1030,7 +1030,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-shortcut-reference-link' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -1059,7 +1059,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-table-indentation' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -1069,7 +1069,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-tabs' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -1099,7 +1099,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-undefined-references' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -1122,7 +1122,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-no-unused-definitions' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -1145,7 +1145,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-ordered-list-marker-style' ),
-	[ 'error', '.' ]
+	['error', '.']
 ]);
 
 /**
@@ -1172,7 +1172,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-ordered-list-marker-value' ),
-	[ 'off', 'ordered' ]
+	['off', 'ordered']
 ]);
 
 /* eslint-disable stdlib/jsdoc-no-multiple-blank-lines */
@@ -1195,7 +1195,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-rule-style' ),
-	[ 'error', '* * *' ]
+	['error', '* * *']
 ]);
 
 /* eslint-enable stdlib/jsdoc-no-multiple-blank-lines */
@@ -1218,7 +1218,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-strong-marker' ),
-	[ 'error', '*' ]
+	['error', '*']
 ]);
 
 /**
@@ -1243,7 +1243,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-table-cell-padding' ),
-	[ 'error', 'padded' ]
+	['error', 'padded']
 ]);
 
 /**
@@ -1268,7 +1268,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-table-pipe-alignment' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -1293,7 +1293,7 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-table-pipes' ),
-	[ 'error' ]
+	['error']
 ]);
 
 /**
@@ -1320,18 +1320,8 @@ plugins.push([
 */
 plugins.push([
 	require( 'remark-lint-unordered-list-marker-style' ),
-	[ 'error', '-' ]
+	['error', '-']
 ]);
-
-/**
-* Validate HTML section hierarchy in README files according to stdlib conventions.
-*/
-plugins.push( require( './../lint-expected-html-sections' ) );
-
-/**
-* Validate HTML section structure in README files.
-*/
-plugins.push( require( './../lint-html-section-structure' ) );
 
 
 // EXPORTS //
