@@ -68,7 +68,9 @@ console.log( UINT32_MAX );
 // => 4294967295
 ```
 
-<!-- </examples -->
+</section>
+
+<!-- /.examples -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
