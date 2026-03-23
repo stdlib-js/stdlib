@@ -32,7 +32,6 @@ import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 * var Float64Array = require( '@stdlib/array/float64' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
-* var dmeanstdev = require( '@stdlib/stats/base/ndarray/dmeanstdev' );
 *
 * var opts = {
 *     'dtype': 'float64'

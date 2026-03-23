@@ -27,14 +27,18 @@
       "src": [
         "./src/dddd_d.c",
         "./src/diii_d.c",
-        "./src/ffff_f.c"
+        "./src/ffff_f.c",
+        "./src/zzzz_z.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/complex/float64/ctor",
+        "@stdlib/complex/float64/reim"
+      ]
     }
   ]
 }

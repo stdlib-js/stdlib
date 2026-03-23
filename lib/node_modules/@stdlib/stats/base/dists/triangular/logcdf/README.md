@@ -181,15 +181,15 @@ for ( i = 0; i < 25; i++ ) {
 ### Usage
 
 ```c
-#include "stdlib/stats/base/dists/geometric/logcdf.h"
+#include "stdlib/stats/base/dists/triangular/logcdf.h"
 ```
 
-#### stdlib_base_dists_geometric_logcdf( x, a, b, c )
+#### stdlib_base_dists_triangular_logcdf( x, a, b, c )
 
 Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [triangular][triangular-distribution] distribution with parameters `a` (lower limit), `b` (upper limit), and `c` (mode).
 
 ```c
-double y = stdlib_base_dists_geometric_logcdf( 0.5, -1.0, 1.0, 0.0 );
+double y = stdlib_base_dists_triangular_logcdf( 0.5, -1.0, 1.0, 0.0 );
 // returns ~-0.134
 ```
 
@@ -201,7 +201,7 @@ The function accepts the following arguments:
 -   **c**: `[in] double` mode.
 
 ```c
-double stdlib_base_dists_geometric_logcdf( const double x, const double a, const double b, const double c );
+double stdlib_base_dists_triangular_logcdf( const double x, const double a, const double b, const double c );
 ```
 
 </section>
