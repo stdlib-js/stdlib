@@ -60,7 +60,7 @@ examples: examples-javascript
 # @example
 # make examples-lang EXAMPLES_FILTER=".*/blas/base/dasum/.*"
 #/
-examples-lang: examples-javascript examples-c examples-cpp markdown-examples-c doctest-c
+examples-lang: examples-javascript examples-c examples-cpp doctest-c
 
 .PHONY: examples-lang
 
