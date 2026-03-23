@@ -165,9 +165,8 @@ main() {
 	files=$(echo "${files}" | grep -v '/fixtures/') || true
 
 	if [[ -n "${files}" ]]; then
-		# Invoke make in batches to avoid "Argument list too long" errors
-		# when the total length of file paths exceeds OS limits:
-		printf '%s\n' ${files} | xargs -s 65536 sh -c 'make test-javascript-files-min FILES="$*"' _
+		# Invoke make in batches to avoid "Argument list too long" errors:
+		printf '%s\n' ${files} | xargs sh -c 'make test-javascript-files-min FILES="$*"' _
 	fi
 
 	cleanup
