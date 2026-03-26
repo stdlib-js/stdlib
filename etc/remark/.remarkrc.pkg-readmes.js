@@ -21,7 +21,7 @@
 // MAIN //
 
 var config = {
-	'plugins': require( './plugins/docs.js' )
+	'plugins': require( './plugins' )
 };
 
 

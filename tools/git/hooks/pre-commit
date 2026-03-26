@@ -77,9 +77,6 @@ cppcheck_examples_suppressions_list="${root}/etc/cppcheck/suppressions.examples.
 # Define the path to cppcheck configuration file for linting test fixtures:
 cppcheck_tests_fixtures_suppressions_list="${root}/etc/cppcheck/suppressions.tests_fixtures.txt"
 
-# Define the path to remark configuration file for linting non-package README Markdown files:
-remark_docs_conf="${root}/etc/remark/.remarkrc.docs.js"
-
 # Define the path to cppcheck configuration file for linting benchmarks:
 cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
@@ -219,16 +216,16 @@ run_lint() {
 	else
 		task_status 'skipped'
 	fi
-	# Lint package Markdown files...
-	add_task 'lint_markdown_pkg'
+	# Lint package README Markdown files...
+	add_task 'lint_markdown_pkg_readmes'
 	if [[ -z "${skip_markdown}" ]]; then
 		files=$(echo "${changed_files}" | grep '\.md$' | grep -v '\.github/workflows/.*\.md$' | grep 'lib/node_modules/@stdlib/' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
-			make FILES="${files}" lint-markdown-files > /dev/null >&2
+			make FILES="${files}" lint-markdown-package-readme-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				task_status 'failed'
 				echo '' >&2
-				echo 'Markdown lint errors for package files.' >&2
+				echo 'Markdown lint errors for package README files.' >&2
 				return 1
 			fi
 			task_status 'passed'
@@ -238,16 +235,35 @@ run_lint() {
 	else
 		task_status 'skipped'
 	fi
-	# Lint non-package Markdown files...
+	# Lint docs Markdown files...
 	add_task 'lint_markdown_docs'
 	if [[ -z "${skip_markdown}" ]]; then
-		files=$(echo "${changed_files}" | grep '\.md$' | grep -v '\.github/workflows/.*\.md$' | grep -v 'lib/node_modules/@stdlib/' | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep '\.md$' | grep -v '\.github/workflows/.*\.md$' | grep '^docs/' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
-			make FILES="${files}" REMARK_CONF="${remark_docs_conf}" lint-markdown-files > /dev/null >&2
+			make FILES="${files}" lint-markdown-docs-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
 				task_status 'failed'
 				echo '' >&2
-				echo 'Markdown lint errors for non-package files.' >&2
+				echo 'Markdown lint errors for docs files.' >&2
+				return 1
+			fi
+			task_status 'passed'
+		else
+			task_status 'na'
+		fi
+	else
+		task_status 'skipped'
+	fi
+	# Lint other Markdown files...
+	add_task 'lint_markdown'
+	if [[ -z "${skip_markdown}" ]]; then
+		files=$(echo "${changed_files}" | grep '\.md$' | grep -v '\.github/workflows/.*\.md$' | grep -v 'lib/node_modules/@stdlib/' | grep -v '^docs/' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			make FILES="${files}" lint-markdown-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
+				echo '' >&2
+				echo 'Markdown lint errors.' >&2
 				return 1
 			fi
 			task_status 'passed'
