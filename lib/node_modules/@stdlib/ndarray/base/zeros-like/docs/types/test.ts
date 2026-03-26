@@ -38,7 +38,7 @@ import zerosLike = require( './index' );
 	zerosLike( zeros( 'uint16', sh, ord ) ); // $ExpectType uint16ndarray
 	zerosLike( zeros( 'uint8', sh, ord ) ); // $ExpectType uint8ndarray
 	zerosLike( zeros( 'uint8c', sh, ord ) ); // $ExpectType uint8cndarray
-	zerosLike( zeros( 'generic', sh, ord ) ); // $ExpectType typedndarray<number>
+	zerosLike( zeros( 'generic', sh, ord ) ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument is not an ndarray which has a recognized/supported data type...
