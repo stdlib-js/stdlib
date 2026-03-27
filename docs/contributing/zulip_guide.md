@@ -18,35 +18,13 @@ limitations under the License.
 
 -->
 
-<!-- lint disable first-heading-level -->
-
-<!-- FIXME: the following two empty sections are merely to satisfy the linter for `expected-html-sections` which cannot, atm, be turned off -->
-
-<section class="usage">
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-</section>
-
-<!-- /.examples -->
+<!-- lint disable expected-html-sections -->
 
 # Zulip Guide
 
 > Guide to the stdlib Zulip chat.
 
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-This guide provides best practices and community norms for the [**stdlib Zulip chat**][stdlib-zulip], home of the stdlib community (see [announcemount][zulip-announcement]). Anyone is welcome to join or browse the web-public channels (which you can see without signing up). The community norms and guidelines provided in this document are to help ensure that everyone can get the most out of this platform and, hopefully, have a positive experience.
-
-</section>
-
-<!-- /.intro -->
+This guide provides best practices and community norms for the [**stdlib Zulip chat**][stdlib-zulip], home of the stdlib community (see [announcement][zulip-announcement]). Anyone is welcome to join or browse the web-public channels (which you can see without signing up). The community norms and guidelines provided in this document are to help ensure that everyone can get the most out of this platform and, hopefully, have a positive experience.
 
 ## Getting Started
 
@@ -64,6 +42,43 @@ Each channel has a description (don't worry too much about posting in the "right
 
 Because it's easy to move content around, please **do NOT cross-post**. Not only can this be confusing, but you risk duplication of effort if multiple people respond to the same question in different channels.
 
+#### Channels
+
+When you first join, you'll automatically be subscribed to several "default" channels. However, there are more channels you might want to explore.
+The channels are roughly organized into categories in the left-hand sidebar. At the bottom, you can click on "Browse Channels" to see the full list.
+
+Some categories and channels of interest include:
+
+-   **General Interest**
+    -   **announcements**: Announcements everyone should see, including new releases, blog posts, and public events.
+    -   **general**: General topics.
+    -   **office-hours**: Information related to stdlib's weekly [office hours][stdlib-office-hours].
+    -   **water-cooler**: A place to discuss random topics, unrelated to stdlib and its development.
+
+-   **Feedback & Support**
+    -   **case-studies**: Using stdlib in your application? Got a cool new demo? Share it here!
+    -   **feedback**: Post your reactions to or feedback on using stdlib.
+    -   **problems**: For reporting and discussing issues in using stdlib.
+    -   **user-questions**: For questions about how to accomplish your goals with stdlib.
+
+-   **GSOC**
+    -   **gsoc-questions**: Interested in participating in Google Summer of Code? Have questions? Ask here!
+
+-   **Contributors**
+    -   **dev**: General development topics.
+    -   **dev-questions**: Ask questions related to developing stdlib.
+    -   **getting-started**: Are you a new contributor? Post your questions here!
+    -   **introductions**: Interested in contributing to stdlib? Please introduce yourself here!
+    -   **review-requests**: Requests for PR reviews.
+
+-   **Development**: Channels related to specific stdlib namespaces, and other areas such as **documentation**, and **tooling**.
+
+-   **GitHub**: These are feeds generated from GitHub activity, such as new issues and pull requests. You can use these channels to keep up with the latest activity in the project.
+
+-   **Other**
+    -   **sandbox**: Experiment with Zulip here.
+    -   **zulip**: Questions and discussion about using Zulip.
+
 ### Custom Linkifiers
 
 We've set up some [custom linkifiers][zulip-linkifiers] to make it easy to share links to GitHub issues and pull requests. If you type **`#1234`** in a message, it will automatically link to the issue or PR with that number in the main [stdlib GitHub repository][stdlib-github-repo]. There's also a special linkifier for the [stdlib Google Summer of Code repo][stdlib-gsoc-repo]; you simply type **`#G{id-number}`**. Note that these work for both issues and pull requests (GitHub uses the same numbering for both).
@@ -77,14 +92,6 @@ The [stdlib Code of Conduct][stdlib-code-of-conduct] applies to all community sp
 If you have feedback or suggestions about improving our Zulip community, don't hesitate to share your thoughts. We have a special meta channel, [**#zulip**][stdlib-zulip-channel], for discussing community-related topics. For more general feedback, there's also the aptly-named [**#feedback**][stdlib-feedback-channel] channel.
 
 The best part of open source is the community, so we're committed to making our Zulip a welcoming and inclusive space for everyone. We look forward to chatting with you there!
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
 
@@ -115,6 +122,8 @@ The best part of open source is the community, so we're committed to making our 
 [stdlib-zulip-channel]: https://stdlib.zulipchat.com/#narrow/channel/546662-zulip
 
 [stdlib-feedback-channel]: https://stdlib.zulipchat.com/#narrow/channel/546708-feedback
+
+[stdlib-office-hours]: https://github.com/stdlib-js/meetings/issues?q=sort:updated-desc%20is:issue%20label:%22Office%20Hours%22
 
 </section>
 
