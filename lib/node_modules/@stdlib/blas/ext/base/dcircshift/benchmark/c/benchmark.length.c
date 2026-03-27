@@ -183,10 +183,6 @@ int main( void ) {
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
 		}
-	}
-	for ( i = MIN; i <= MAX; i++ ) {
-		len = pow( 10, i );
-		iter = ITERATIONS / pow( 10, i-1 );
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
 			printf( "# c::%s:ndarray:len=%d\n", NAME, len );

@@ -68,7 +68,7 @@ interface Routine {
 }
 
 /**
-* Compute the residual sum of squares of two double-precision floating-point strided arrays using an improved Kahan–Babuška algorithm.
+* Computes the residual sum of squares of two double-precision floating-point strided arrays using an improved Kahan–Babuška algorithm.
 *
 * @param N - number of indexed elements
 * @param x - first input array
