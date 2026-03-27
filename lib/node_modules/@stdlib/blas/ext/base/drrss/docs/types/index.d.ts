@@ -68,7 +68,7 @@ interface Routine {
 }
 
 /**
-* Compute the square root of the residual sum of squares of two double-precision floating-point strided arrays.
+* Computes the square root of the residual sum of squares of two double-precision floating-point strided arrays.
 *
 * @param N - number of indexed elements
 * @param x - first input array
