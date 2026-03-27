@@ -31,7 +31,7 @@
 * @return         evaluated logPDF
 *
 * @example
-* double y = stdlib_base_dists_beta_logpdf( 0.5, 1.0, 1.0 );
+* double y = stdlib_base_dists_betaprime_logpdf( 0.5, 1.0, 1.0 );
 * // returns ~-0.811
 */
 double stdlib_base_dists_betaprime_logpdf( const double x, const double alpha, const double beta ) {
