@@ -45,6 +45,7 @@ Because it's easy to move content around, please **do NOT cross-post**. Not only
 #### Channels
 
 When you first join, you'll automatically be subscribed to several "default" channels. However, there are more channels you might want to explore.
+
 The channels are roughly organized into categories in the left-hand sidebar. At the bottom, you can click on "Browse Channels" to see the full list.
 
 Some categories and channels of interest include:
