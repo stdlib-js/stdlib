@@ -51,21 +51,25 @@ The channels are roughly organized into categories in the left-hand sidebar. At 
 Some categories and channels of interest include:
 
 -   **General Interest**
+
     -   **announcements**: Announcements everyone should see, including new releases, blog posts, and public events.
     -   **general**: General topics.
     -   **office-hours**: Information related to stdlib's weekly [office hours][stdlib-office-hours].
     -   **water-cooler**: A place to discuss random topics, unrelated to stdlib and its development.
 
 -   **Feedback & Support**
+
     -   **case-studies**: Using stdlib in your application? Got a cool new demo? Share it here!
     -   **feedback**: Post your reactions to or feedback on using stdlib.
     -   **problems**: For reporting and discussing issues in using stdlib.
     -   **user-questions**: For questions about how to accomplish your goals with stdlib.
 
 -   **GSOC**
+
     -   **gsoc-questions**: Interested in participating in Google Summer of Code? Have questions? Ask here!
 
 -   **Contributors**
+
     -   **dev**: General development topics.
     -   **dev-questions**: Ask questions related to developing stdlib.
     -   **getting-started**: Are you a new contributor? Post your questions here!
@@ -77,6 +81,7 @@ Some categories and channels of interest include:
 -   **GitHub**: These are feeds generated from GitHub activity, such as new issues and pull requests. You can use these channels to keep up with the latest activity in the project.
 
 -   **Other**
+
     -   **sandbox**: Experiment with Zulip here.
     -   **zulip**: Questions and discussion about using Zulip.
 
