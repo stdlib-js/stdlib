@@ -76,7 +76,7 @@ Some categories and channels of interest include:
     -   **introductions**: Interested in contributing to stdlib? Please introduce yourself here!
     -   **review-requests**: Requests for PR reviews.
 
--   **Development**: Channels related to specific stdlib namespaces, and other areas such as **documentation**, and **tooling**.
+-   **Development**: Channels related to specific stdlib namespaces, and other areas such as documentation and tooling.
 
 -   **GitHub**: These are feeds generated from GitHub activity, such as new issues and pull requests. You can use these channels to keep up with the latest activity in the project.
 
