@@ -24,7 +24,7 @@ limitations under the License.
 
 > Guide to the stdlib Zulip chat.
 
-This guide provides best practices and community norms for the [**stdlib Zulip chat**][stdlib-zulip], home of the stdlib community (see [announcement][zulip-announcement]). Anyone is welcome to join or browse the web-public channels (which you can see without signing up). The community norms and guidelines provided in this document are to help ensure that everyone can get the most out of this platform and, hopefully, have a positive experience.
+This guide provides best practices and community norms for the [**stdlib Zulip chat**][stdlib-zulip], home of the stdlib community (see [announcement][zulip-announcement]). Everyone is welcome to join or browse the web-public channels (which you can see without signing up). The community norms and guidelines provided in this document are to help ensure that everyone can get the most out of this platform and, hopefully, have a positive experience.
 
 ## Getting Started
 
