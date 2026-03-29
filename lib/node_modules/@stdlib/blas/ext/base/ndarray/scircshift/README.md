@@ -43,7 +43,6 @@ Circularly shifts the elements of a one-dimensional single-precision floating-po
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
 var xbuf = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
