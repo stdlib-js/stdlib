@@ -604,3 +604,4 @@ jobs:
             reviewers
           branch: 'fix-lint-errors'
           delete-branch: true
+          sign-commits: true

@@ -131,6 +131,7 @@ jobs:
             reviewers
           branch: update-contributors
           delete-branch: true
+          sign-commits: true
 
       # Create a pull request summary:
       - name: 'Create summary'

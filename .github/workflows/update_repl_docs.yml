@@ -132,6 +132,7 @@ jobs:
             reviewers
           branch: update-repl-docs
           delete-branch: true
+          sign-commits: true
 
       # Create a pull request summary:
       - name: 'Create summary'

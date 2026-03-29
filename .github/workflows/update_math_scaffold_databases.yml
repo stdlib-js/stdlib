@@ -142,6 +142,7 @@ jobs:
             reviewers
           branch: update-math-scaffold-databases
           delete-branch: true
+          sign-commits: true
 
       # Create a pull request summary:
       - name: 'Create summary'

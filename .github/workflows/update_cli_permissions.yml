@@ -112,3 +112,4 @@ jobs:
             reviewers
           branch: update-cli-permissions
           delete-branch: true
+          sign-commits: true

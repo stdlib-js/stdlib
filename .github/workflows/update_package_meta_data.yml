@@ -126,6 +126,7 @@ jobs:
             reviewers
           branch: update-package-meta-data
           delete-branch: true
+          sign-commits: true
 
       # Create a pull request summary:
       - name: 'Create summary'

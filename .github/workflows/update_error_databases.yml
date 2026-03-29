@@ -174,3 +174,4 @@ jobs:
             reviewers
           branch: update-error-databases
           delete-branch: true
+          sign-commits: true
