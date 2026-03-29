@@ -144,7 +144,7 @@ interface LogPMF {
 * // returns ~-1.079
 *
 * y = mylogpmf( 1.0 );
-* // returns ~-3.54
+* // returns ~-3.524
 */
 declare var logpmf: LogPMF;
 

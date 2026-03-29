@@ -163,7 +163,7 @@ declare function fillSlice<T extends complexndarray>( x: T, value: number | Comp
 * // returns true
 *
 * var arr = ndarray2array( x );
-* // returns [ [ 0, 0, 0, 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0, 0, 5, 5 ], [ 0, 0, 0, 0, 0, 0, 5, 5 ] ]
+* // returns [ [ 0, 0, 0, 0 ], [ 0, 0, 5, 5 ], [ 0, 0, 5, 5 ] ]
 *
 * @example
 * var zeros = require( '@stdlib/ndarray/zeros' );
@@ -186,7 +186,7 @@ declare function fillSlice<T extends complexndarray>( x: T, value: number | Comp
 * // returns true
 *
 * var arr = ndarray2array( x );
-* // returns [ [ 0, 0, 0, 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0, 0, 5, 5 ], [ 0, 0, 0, 0, 0, 0, 5, 5 ] ]
+* // returns [ [ 0, 0, 0, 0 ], [ 0, 0, 5, 5 ], [ 0, 0, 5, 5 ] ]
 */
 declare function fillSlice<T = unknown, U extends typedndarray<T> = typedndarray<T>>( x: U, value: Element<U>, s: MultiSlice | ArrayLike<SliceArgument>, options?: Options ): U;
 
@@ -256,7 +256,7 @@ declare function fillSlice<T = unknown, U extends typedndarray<T> = typedndarray
 * // returns true
 *
 * var arr = ndarray2array( x );
-* // returns [ [ 0, 0, 0, 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0, 0, 5, 5 ], [ 0, 0, 0, 0, 0, 0, 5, 5 ] ]
+* // returns [ [ 0, 0, 0, 0 ], [ 0, 0, 5, 5 ], [ 0, 0, 5, 5 ] ]
 *
 * @example
 * var zeros = require( '@stdlib/ndarray/zeros' );
@@ -279,7 +279,7 @@ declare function fillSlice<T = unknown, U extends typedndarray<T> = typedndarray
 * // returns true
 *
 * var arr = ndarray2array( x );
-* // returns [ [ 0, 0, 0, 0, 0, 0, 0, 0 ], [ 0, 0, 0, 0, 0, 0, 5, 5 ], [ 0, 0, 0, 0, 0, 0, 5, 5 ] ]
+* // returns [ [ 0, 0, 0, 0 ], [ 0, 0, 5, 5 ], [ 0, 0, 5, 5 ] ]
 */
 declare function fillSlice<T = unknown, U = unknown>( x: genericndarray<T>, value: U, s: MultiSlice | ArrayLike<SliceArgument>, options?: Options ): genericndarray<T | U>;
 

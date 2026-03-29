@@ -28,14 +28,13 @@
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
     <ndarray>
-    > x.shape
+    > {{alias:@stdlib/ndarray/shape}}( x )
     [ 2, 2 ]
     > var y = {{alias}}( x, false )
-    <ndarray>
-    > y.shape
+    <ndarray>[ [ 3, 4 ], [ 1, 2 ] ]
+    > {{alias:@stdlib/ndarray/shape}}( y )
     [ 2, 2 ]
-    > {{alias:@stdlib/ndarray/to-array}}( y )
-    [ [ 3, 4 ], [ 1, 2 ] ]
+
 
     See Also
     --------

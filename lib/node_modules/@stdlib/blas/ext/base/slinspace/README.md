@@ -115,7 +115,29 @@ slinspace.ndarray( 3, 1.0, 3.0, true, x, 1, x.length-3 );
 
 ## Notes
 
--   Let `M` be the number of generated values (which is either `N` or `N+1` depending on whether `endpoint` is `true` or `false`, respectively). The spacing between values is thus given by `Δ = (stop-start)/(M-1)`.
+-   Let `M` be the number of generated values (which is either `N` or `N+1` depending on whether `endpoint` is `true` or `false`, respectively). The spacing between values is thus given by
+
+    ```text
+    Δ = (stop-start)/(M-1)
+    ```
+
+-   When the number of generated values is greater than `1` and `endpoint` is `true`, the set of values written to a provided input array is guaranteed to include the `start` and `stop` values. Beware, however, that values between `start` and `stop` are subject to floating-point rounding errors. Hence,
+
+    ```javascript
+    var Float32Array = require( '@stdlib/array/float32' );
+
+    var x = new Float32Array( [ 0.0, 0.0, 0.0 ] );
+
+    slinspace( 3, 0.0, 1.0, true, x, 1 );
+    // x => <Float32Array>[ 0.0, ~0.5, 1.0 ]
+    ```
+
+    where `x[1]` is only guaranteed to be approximately equal to `0.5`.
+
+-   When `N = 1` and `endpoint` is `false`, only the `start` value is written to a provided input array. When `N = 1` and `endpoint` is `true`, only the `stop` value is written to a provided input array.
+
+-   If `start < stop`, values are written to a provided input array in ascending order; otherwise, values are written in descending order.
+
 -   If `N <= 0`, both functions return `x` unchanged.
 
 </section>

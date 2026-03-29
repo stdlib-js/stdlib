@@ -8,11 +8,11 @@
     prng: Function
         Binary pseudorandom value generator.
 
-    idtypes: Array<Array<string>>
+    idtypes: Array<Array<string|DataType>>
         List containing a list of supported input data types for each PRNG
         parameter.
 
-    odtypes: Array<string>
+    odtypes: Array<string|DataType>
         List of supported output data types.
 
     policies: Object
@@ -58,7 +58,7 @@
     options: Object (optional)
         Function options.
 
-    options.dtype: string (optional)
+    options.dtype: string|DataType (optional)
         Output data type. Setting this option overrides the output data type
         policy.
 

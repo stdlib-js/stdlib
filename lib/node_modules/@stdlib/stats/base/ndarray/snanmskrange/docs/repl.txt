@@ -1,0 +1,35 @@
+
+{{alias}}( arrays )
+    Calculates the range of a one-dimensional single-precision floating-point
+    ndarray according to a mask, ignoring `NaN` values.
+
+    If provided an empty ndarray or a mask with all elements set to `1`, the
+    function returns `NaN`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing an input ndarray and a mask ndarray.
+
+    Returns
+    -------
+    out: number
+        Range.
+
+    Examples
+    --------
+    > var xbuf = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 4.0, 2.0, NaN ] );
+    > var dt = 'float32';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var maskbuf = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 1, 0, 0 ] );
+    > var mask = new {{alias:@stdlib/ndarray/ctor}}( 'uint8', maskbuf, sh, sx, ox, ord );
+    > {{alias}}( [ x, mask ] )
+    4.0
+
+    See Also
+    --------
+

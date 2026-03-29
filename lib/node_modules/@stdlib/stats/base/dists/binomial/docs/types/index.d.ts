@@ -58,7 +58,7 @@ interface Namespace {
 	* // returns ~0.834
 	*
 	* y = ns.cdf( 0.0, 10, 0.4 );
-	* // returns ~0.06
+	* // returns ~0.006
 	*
 	* var mycdf = ns.cdf.factory( 10, 0.5 );
 	*
@@ -167,7 +167,7 @@ interface Namespace {
 	* var mylogpmf = ns.logpmf.factory( 10, 0.5 );
 	*
 	* y = mylogpmf( 3.0 );
-	* // returns ~-2.146
+	* // returns ~-2.144
 	*
 	* y = mylogpmf( 5.0 );
 	* // returns ~-1.402
@@ -320,7 +320,7 @@ interface Namespace {
 	* // returns ~0.201
 	*
 	* y = ns.pmf( 0.0, 10, 0.4 );
-	* // returns ~0.06
+	* // returns ~0.006
 	*
 	* var mypmf = ns.pmf.factory( 10, 0.5 );
 	*
@@ -342,7 +342,7 @@ interface Namespace {
 	*
 	* @example
 	* var y = ns.quantile( 0.4, 20, 0.2 );
-	* // returns 2
+	* // returns 3
 	*
 	* y = ns.quantile( 0.8, 20, 0.2 );
 	* // returns 5

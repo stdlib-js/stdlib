@@ -110,6 +110,18 @@ console.log( v );
 
 <!-- /.examples -->
 
+* * *
+
+<section class="references">
+
+## References
+
+-   Higham, Nicholas J. 1993. "The Accuracy of Floating Point Summation." _SIAM Journal on Scientific Computing_ 14 (4): 783–99. doi:[10.1137/0914050][@higham:1993a].
+
+</section>
+
+<!-- /.references -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -123,6 +135,8 @@ console.log( v );
 <section class="links">
 
 [arithmetic-mean]: https://en.wikipedia.org/wiki/Arithmetic_mean
+
+[@higham:1993a]: https://doi.org/10.1137/0914050
 
 </section>
 

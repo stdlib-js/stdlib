@@ -1,0 +1,110 @@
+
+{{alias}}( N, x, strideX, y, strideY )
+    Computes the cosine similarity of two double-precision floating-point
+    strided arrays.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    Returns
+    -------
+    out: number
+        Cosine similarity.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
+    > var out = {{alias}}( x.length, x, 1, y, 1 )
+    ~-0.061
+
+    // Using N and stride parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, 1.0, 0.0, 0.0, 0.0 ] );
+    > out = {{alias}}( 3, x, 1, y, -1 )
+    ~0.926
+
+    // Using view offsets:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x.buffer, x.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y.buffer, y.BYTES_PER_ELEMENT*3 );
+    > out = {{alias}}( 3, x1, 1, y1, 1 )
+    ~0.982
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
+    Computes the cosine similarity of two double-precision floating-point
+    strided arrays using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    Returns
+    -------
+    out: number
+        Cosine similarity.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
+    > var out = {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0 )
+    ~-0.061
+
+    // Using starting indices:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+    > out = {{alias}}.ndarray( 3, x, 1, 1, y, 1, 3 )
+    ~0.982
+
+    See Also
+    --------
