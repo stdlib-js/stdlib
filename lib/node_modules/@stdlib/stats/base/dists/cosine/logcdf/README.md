@@ -189,7 +189,7 @@ Evaluates the natural logarithm of the [cumulative distribution function][cdf] (
 
 ```c
 double out = stdlib_base_dists_cosine_logcdf( 0.5, 0.0, 1.0 );
-// returns ~0.909
+// returns ~-0.095
 ```
 
 The function accepts the following arguments:
@@ -221,7 +221,7 @@ double stdlib_base_dists_cosine_logcdf( const double x, const double mu, const d
 ### Examples
 
 ```c
-#include "stdlib/stats/base/dists/cosine/cdf.h"
+#include "stdlib/stats/base/dists/cosine/logcdf.h"
 #include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
