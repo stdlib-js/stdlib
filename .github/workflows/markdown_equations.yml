@@ -188,7 +188,6 @@ jobs:
             reviewers
           branch: markdown-insert-equations
           delete-branch: true
-          sign-commits: true
 
       # Create Markdown summary of the pull request:
       - name: 'Create summary'

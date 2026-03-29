@@ -146,4 +146,3 @@ jobs:
             reviewers
           branch: update-namespace-exports
           delete-branch: true
-          sign-commits: true

@@ -174,4 +174,3 @@ jobs:
             reviewers
           branch: markdown-related-packages
           delete-branch: true
-          sign-commits: true

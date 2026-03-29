@@ -162,4 +162,3 @@ jobs:
             reviewers
           branch: markdown-pkg-urls
           delete-branch: true
-          sign-commits: true
