@@ -52,8 +52,8 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 	# Allow commented code outside roxygen blocks:
 	commented_code_linter = NULL, # lintr::commented_code_linter,
 
-	# Require the `[[` operator is used when extracting a single element from an object, not `[` (subsetting) or `$` (interactive use):
-	extraction_operator_linter = lintr::extraction_operator_linter(),
+	# Deprecated in lintr >= 3.2.0:
+	extraction_operator_linter = NULL,
 
 	# Require that integers are explicitly typed using the form `1L` instead of `1`:
 	implicit_integer_linter = lintr::implicit_integer_linter(),
