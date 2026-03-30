@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_MATH_BASE_SPECIAL_FAST_POW_H
-#define STDLIB_MATH_BASE_SPECIAL_FAST_POW_H
+#ifndef STDLIB_MATH_BASE_SPECIAL_FAST_POW_INT_H
+#define STDLIB_MATH_BASE_SPECIAL_FAST_POW_INT_H
 
 #include <stdint.h>
 
@@ -37,4 +37,4 @@ double stdlib_base_fast_pow( const double x, const int32_t y );
 }
 #endif
 
-#endif // !STDLIB_MATH_BASE_SPECIAL_FAST_POW_H
+#endif // !STDLIB_MATH_BASE_SPECIAL_FAST_POW_INT_H
