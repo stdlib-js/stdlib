@@ -25,7 +25,7 @@
 # [1]: https://github.com/jimhester/lintr
 
 # Ensure that the `lintr` package is installed...
-if ( !require( 'lintr', quietly = TRUE, character.only = TRUE ) ) {
+if ( !requireNamespace( 'lintr', quietly = TRUE ) ) {
 	install.packages( 'lintr', repos = 'http://lib.stat.cmu.edu/R/CRAN/', quiet = TRUE );
 }
 
