@@ -42,7 +42,7 @@ if ( n == 0L ) {
 options( warnPartialMatchDollar = TRUE );
 
 # Specify which linters to use...
-linters <- lintr::linters_with_defaults( defaults = lintr::default_linters,
+linters <- lintr::linters_with_defaults(
 	# Check that no absolute paths are used:
 	absolute_path_linter = lintr::absolute_path_linter(),
 
