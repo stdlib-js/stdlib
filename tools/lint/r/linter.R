@@ -38,6 +38,9 @@ if ( n == 0L ) {
 	stop( 'Must provide at least one file to lint.', call. = FALSE );
 }
 
+# Warn on partial `$` matches as replacement for deprecated `extraction_operator_linter`:
+options( warnPartialMatchDollar = TRUE );
+
 # Specify which linters to use...
 linters <- lintr::linters_with_defaults( defaults = default_linters,
 	# Check that no absolute paths are used:
@@ -51,9 +54,6 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 
 	# Allow commented code outside roxygen blocks:
 	commented_code_linter = NULL, # lintr::commented_code_linter,
-
-	# Deprecated in lintr >= 3.2.0:
-	extraction_operator_linter = NULL,
 
 	# Require that integers are explicitly typed using the form `1L` instead of `1`:
 	implicit_integer_linter = lintr::implicit_integer_linter(),
