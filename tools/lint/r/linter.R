@@ -42,7 +42,7 @@ if ( n == 0L ) {
 options( warnPartialMatchDollar = TRUE );
 
 # Specify which linters to use...
-linters <- lintr::linters_with_defaults( defaults = default_linters,
+linters <- lintr::linters_with_defaults( defaults = lintr::default_linters,
 	# Check that no absolute paths are used:
 	absolute_path_linter = lintr::absolute_path_linter(),
 
@@ -111,7 +111,7 @@ linters <- lintr::linters_with_defaults( defaults = default_linters,
 	T_and_F_symbol_linter = lintr::T_and_F_symbol_linter(),
 
 	# Report the use of undesirable functions (e.g., `attach` or `sapply`) and suggest an alternative:
-	undesirable_function_linter = lintr::undesirable_function_linter( fun = within( default_undesirable_functions, rm( options ) ) ),
+	undesirable_function_linter = lintr::undesirable_function_linter( fun = within( lintr::default_undesirable_functions, rm( options ) ) ),
 
 	# Report the use of undesirable operators (e.g., `:::` or `<<-`) and suggest an alternative:
 	undesirable_operator_linter = lintr::undesirable_operator_linter(),
