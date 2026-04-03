@@ -38,53 +38,36 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns list of broadcasted arrays
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var array = require( '@stdlib/ndarray/array' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
-* var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
-* // returns <ndarray>
+* var x1 = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+* // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 *
-* var shx = x.shape;
+* var shx = getShape( x1 );
 * // returns [ 2, 2 ]
 *
 * var y1 = zeros( [ 3, 2, 2 ] );
-* // returns <ndarray>
+* // returns <ndarray>[ [ [ 0, 0 ], [ 0, 0 ] ], [ [ 0, 0 ], [ 0, 0 ] ], [ [ 0, 0 ], [ 0, 0 ] ] ]
 *
-* var shy = y1.shape;
+* var shy = getShape( y1 );
 * // returns [ 3, 2, 2 ]
 *
-* var out = maybeBroadcastArrays( [ x, y1 ] );
+* var out = maybeBroadcastArrays( [ x1, y1 ] );
 * // returns [ <ndarray>, <ndarray> ]
 *
 * var x2 = out[ 0 ];
-* // returns <ndarray>
+* // returns <ndarray>[ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 1, 2 ], [ 3, 4 ] ], [ [ 1, 2 ], [ 3, 4 ] ] ]
 *
 * var y2 = out[ 1 ];
-* // returns <ndarray>
+* // returns <ndarray>[ [ [ 0, 0 ], [ 0, 0 ] ], [ [ 0, 0 ], [ 0, 0 ] ], [ [ 0, 0 ], [ 0, 0 ] ] ]
 *
-* shx = x2.shape;
+* shx = getShape( x2 );
 * // returns [ 3, 2, 2 ]
 *
-* shy = y2.shape;
+* shy = getShape( y2 );
 * // returns [ 3, 2, 2 ]
-*
-* var v = x2.get( 0, 0, 0 );
-* // returns 1
-*
-* v = x2.get( 0, 0, 1 );
-* // returns 2
-*
-* v = x2.get( 1, 0, 0 );
-* // returns 1
-*
-* v = x2.get( 1, 1, 0 );
-* // returns 3
-*
-* v = x2.get( 2, 0, 0 );
-* // returns 1
-*
-* v = x2.get( 2, 1, 1 );
-* // returns 4
 */
 declare function maybeBroadcastArrays( arrays: ArrayLike<ndarray> ): Array<ndarray>;
 
