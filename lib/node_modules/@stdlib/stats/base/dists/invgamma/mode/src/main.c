@@ -26,7 +26,7 @@
 * @return         mode
 *
 * @example
-* double y = stdlib_base_invgamma_mode( 1.0, 1.0 );
+* double y = stdlib_base_dists_invgamma_mode( 1.0, 1.0 );
 * // returns 0.5
 */
 double stdlib_base_dists_invgamma_mode( const double alpha, const double beta ) {
