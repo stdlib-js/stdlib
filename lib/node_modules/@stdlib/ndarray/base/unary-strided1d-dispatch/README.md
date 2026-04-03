@@ -128,7 +128,6 @@ By default, the method returns an ndarray having a data type determined by the o
 
 ```javascript
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var base = require( '@stdlib/stats/base/ndarray/cumax' );
 var getDType = require( '@stdlib/ndarray/dtype' );
 

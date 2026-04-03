@@ -99,7 +99,6 @@ v = ndarray2array( y );
 By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [data type][@stdlib/ndarray/dtypes] determined by the function's output data type [policy][@stdlib/ndarray/output-dtype-policies]. To override the default behavior, set the `dtype` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var getDType = require( '@stdlib/ndarray/dtype' );
 var array = require( '@stdlib/ndarray/array' );
 
