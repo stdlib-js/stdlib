@@ -164,6 +164,9 @@ main() {
 	# Exclude files residing in test fixtures directories:
 	files=$(echo "${files}" | grep -v '/fixtures/') || true
 
+	# Exclude the namespace CLI test, as it spawns child processes that dump the entire namespace and is too slow for affected-test runs:
+	files=$(echo "${files}" | tr ' ' '\n' | grep -v '@stdlib/namespace/test/test.cli.js' | tr '\n' ' ') || true
+
 	if [[ -n "${files}" ]]; then
 		# Invoke make in batches to avoid "Argument list too long" errors:
 		printf '%s\n' ${files} | xargs sh -c 'make test-javascript-files-min FILES="$*"' _
