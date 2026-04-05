@@ -122,23 +122,30 @@ main() {
 	# Extract package names from changed package directories (e.g., @stdlib/math/base/special/sin) by removing the leading 'lib/node_modules/':
 	packages=$(echo "${directories}" | sed -E 's/^lib\/node_modules\///')
 
-	# Find all package directories which `require()` one of the changed packages:
-	required_by=""
-	for package in ${packages}; do
-		echo "Finding packages which depend on '${package}'..."
-		escaped_package=$(echo "$package" | sed 's/[\/&]/\\&/g')
-		dependents=$(find lib/node_modules/@stdlib -type f -name '*.js' -exec grep -ol -E "require\( [']${escaped_package}['] \)" {} +) || true
-		echo "Found: ${dependents}"
-		if [ -n "${dependents}" ]; then
-			dependents=$(dirname $dependents | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?$//' | sort -u)
-			echo "List of dependents: ${dependents}"
-			required_by="${required_by} ${dependents}"
-		fi
-	done
+	# Determine whether any non-fixture files changed. If only test fixtures were modified, skip dependency fan-out since downstream packages cannot be affected:
+	non_fixture_files=$(echo "${changed}" | tr ' ' '\n' | grep -v '/test/fixtures/') || true
 
-	# Concatenate the list of changed package directories and package directories which `require()` one of the changed packages:
-	if [ -n "${required_by}" ]; then
-		directories="${directories} ${required_by}"
+	if [ -n "${non_fixture_files}" ]; then
+		# Find all package directories which `require()` one of the changed packages:
+		required_by=""
+		for package in ${packages}; do
+			echo "Finding packages which depend on '${package}'..."
+			escaped_package=$(echo "$package" | sed 's/[\/&]/\\&/g')
+			dependents=$(find lib/node_modules/@stdlib -type f -name '*.js' -exec grep -ol -E "require\( [']${escaped_package}['] \)" {} +) || true
+			echo "Found: ${dependents}"
+			if [ -n "${dependents}" ]; then
+				dependents=$(dirname $dependents | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?$//' | sort -u)
+				echo "List of dependents: ${dependents}"
+				required_by="${required_by} ${dependents}"
+			fi
+		done
+
+		# Concatenate the list of changed package directories and package directories which `require()` one of the changed packages:
+		if [ -n "${required_by}" ]; then
+			directories="${directories} ${required_by}"
+		fi
+	else
+		echo 'Only test fixture files changed. Skipping dependency fan-out.' >&2
 	fi
 
 	# Build native add-ons for packages (if applicable):
@@ -163,9 +170,6 @@ main() {
 
 	# Exclude files residing in test fixtures directories:
 	files=$(echo "${files}" | grep -v '/fixtures/') || true
-
-	# Exclude the namespace CLI test, as it spawns child processes that dump the entire namespace and is too slow for affected-test runs:
-	files=$(echo "${files}" | tr ' ' '\n' | grep -v '@stdlib/namespace/test/test.cli.js' | tr '\n' ' ') || true
 
 	if [[ -n "${files}" ]]; then
 		# Invoke make in batches to avoid "Argument list too long" errors:
