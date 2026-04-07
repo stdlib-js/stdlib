@@ -129,7 +129,6 @@ By default, the function returns an ndarray having a data type determined by the
 <!-- eslint-disable id-length -->
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 var base = require( '@stdlib/stats/base/ndarray/cumax' );
 var getDType = require( '@stdlib/ndarray/dtype' );
