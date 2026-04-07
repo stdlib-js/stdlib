@@ -147,7 +147,7 @@ jobs:
       - name: 'Lint Markdown files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | grep -v '^\.github/workflows/.*\.md$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
             make lint-markdown-files FILES="${files}"
           fi
@@ -345,7 +345,7 @@ jobs:
       - name: 'Lint license headers'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}")
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -v '\.github/workflows/.*\.md$' | grep -v '\.lock\.yml$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-license-headers-files FILES="${files}"
           fi

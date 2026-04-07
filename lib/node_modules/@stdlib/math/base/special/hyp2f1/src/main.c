@@ -408,7 +408,7 @@ static double hyt2f1( const double a, const double b, const double c, const doub
 * @return         function value
 *
 * @example
-* double v = stdlib_base_gamma( 1.0, 1.0, 1.0, 0.0 );
+* double v = stdlib_base_hyp2f1( 1.0, 1.0, 1.0, 0.0 );
 * // returns 1.0
 */
 double stdlib_base_hyp2f1( const double a, const double b, const double c, const double x ) {
