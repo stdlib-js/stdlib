@@ -33,7 +33,7 @@
 * @param strideY     Y stride length
 *
 * @example
-* include <stdint.h>
+* #include <stdint.h>
 *
 * // Create an input strided array:
 * const double x[] = { 0.0, 1.0, 8.0, 27.0, 64.0, 125.0, 216.0, 343.0 };
