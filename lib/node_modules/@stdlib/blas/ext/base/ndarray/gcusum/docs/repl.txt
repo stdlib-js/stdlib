@@ -29,9 +29,8 @@
     > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
     > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, st, oo, ord );
     > var s = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, { 'dtype': dt } );
-    > {{alias}}( [ x, y, s ] );
-    > {{alias:@stdlib/ndarray/to-array}}( y )
-    [ 1.0, -1.0, 1.0 ]
+    > {{alias}}( [ x, y, s ] )
+    <ndarray>[ 1.0, -1.0, 1.0 ]
 
     See Also
     --------

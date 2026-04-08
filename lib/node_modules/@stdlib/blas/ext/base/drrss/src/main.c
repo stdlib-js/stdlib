@@ -31,7 +31,6 @@ static const double tbig = 1.9979190722022350E+146;
 static const double ssml = 4.4989137945431964E+161;
 static const double sbig = 1.1113793747425387E-162;
 
-
 /**
 * Computes the square root of the residual sum of squares of two double-precision floating-point strided arrays.
 *
