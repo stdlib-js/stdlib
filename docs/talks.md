@@ -32,7 +32,7 @@ limitations under the License.
 
 <div class="image" align="center">
     <a title="The Compute Revolution You’re Ignoring: JavaScript in Science" href="https://youtu.be/pPjMEzm_R-0">
-        <img width="480" src="" alt="The Compute Revolution You’re Ignoring: JavaScript in Science">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@56193c7549e4a0576f9636098a7491d2ff1f135d/docs/assets/talks/devconf_pune_2026_gunj_joshi.png" alt="The Compute Revolution You’re Ignoring: JavaScript in Science">
     </a>
     <br>
 </div>
