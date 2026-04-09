@@ -183,7 +183,7 @@ Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [
 
 ```c
 double out = stdlib_base_dists_weibull_logpdf( 2.0, 1.0, 0.5 );
-// returns ~3.307
+// returns ~-3.307
 ```
 
 The function accepts the following arguments:

@@ -219,7 +219,7 @@ run_lint() {
 	# Lint Markdown files...
 	add_task 'lint_markdown'
 	if [[ -z "${skip_markdown}" ]]; then
-		files=$(echo "${changed_files}" | grep '\.md$' | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep '\.md$' | grep -v '\.github/workflows/.*\.md$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-markdown-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
@@ -604,7 +604,7 @@ run_lint() {
 	# Lint license headers...
 	add_task 'lint_license_headers'
 	if [[ -z "${skip_license_headers}" ]]; then
-		files=$(echo "${changed_files}" | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep -v '\.github/workflows/.*\.md$' | grep -v '\.lock\.yml$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-license-headers-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
