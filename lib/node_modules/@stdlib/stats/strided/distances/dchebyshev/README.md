@@ -24,7 +24,7 @@ limitations under the License.
 
 <section class="intro">
 
-The [Chebyshev distance][wikipedia-chebyshev-distance] (also known as the $L_∞$ metric) is defined as
+The [Chebyshev distance][wikipedia-chebyshev-distance] (also known as the $L\_∞$ metric) is defined as
 
 <!-- <equation class="equation" label="eq:chebyshev_distance" align="center" raw="D(A,B)=\max _{i}(|a_{i}-b_{i}|) = \lim _{p\to \infty}{\bigg (}\sum_{i=0}^{N-1}\left|a_{i}-b_{i}\right|^{p}{\bigg )}^{1/p}" alt="Equation for Chebyshev distance."> -->
 

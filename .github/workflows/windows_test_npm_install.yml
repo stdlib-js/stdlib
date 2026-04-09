@@ -245,7 +245,7 @@ jobs:
       # Install Windows build tools for compiling Node.js native add-ons.
       - name: 'Install Windows build tools'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-chocolatey@2526f467ccbd337d307fe179959cabbeca0bc8c0 # v3.4.0
+        uses: crazy-max/ghaction-chocolatey@dff3862348493b11fba2fbc49147b6d2dfe09b66 # v4.0.0
         with:
           args: install -y visualstudio2019buildtools visualstudio2019-workload-vctools
         timeout-minutes: 10
@@ -287,7 +287,7 @@ jobs:
       # Upload the log file:
       - name: 'Upload log file'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         if: always()
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
