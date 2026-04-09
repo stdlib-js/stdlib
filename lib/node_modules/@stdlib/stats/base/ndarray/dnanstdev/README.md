@@ -133,7 +133,6 @@ The function has the following parameters:
 
 -   If provided an empty one-dimensional ndarray, the function returns `NaN`.
 -   If `N - c` is less than or equal to `0` (where `N` corresponds to the number of non-NaN elements in the input ndarray and `c` corresponds to the provided degrees of freedom adjustment), the function returns `NaN`.
--   The function ignores `NaN` values when computing the standard deviation.
 
 </section>
 

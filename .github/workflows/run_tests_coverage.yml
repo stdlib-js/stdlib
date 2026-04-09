@@ -228,8 +228,8 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
-          # Limit clone depth to the most recent commit:
-          fetch-depth: 1
+          # Fetch extra history so `git pull --rebase` can find a common ancestor:
+          fetch-depth: 20
 
           # Token for accessing the repository:
           token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
@@ -282,4 +282,22 @@ jobs:
           git config --local user.name "stdlib-bot"
           git add .
           git commit -m "Update artifacts" || exit 0
-          git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git" main
+
+          REMOTE_URL="https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git"
+          MAX_ATTEMPTS=5
+          for i in $(seq 1 $MAX_ATTEMPTS); do
+            if git push "$REMOTE_URL" main; then
+              echo "Push succeeded on attempt $i."
+              break
+            fi
+            if [ "$i" -eq "$MAX_ATTEMPTS" ]; then
+              echo "Push failed after $MAX_ATTEMPTS attempts."
+              exit 1
+            fi
+            echo "Push failed on attempt $i. Pulling and retrying..."
+            git pull --rebase "$REMOTE_URL" main || {
+              echo "Rebase failed due to conflict. Falling back to merge..."
+              git rebase --abort
+              git pull --no-rebase "$REMOTE_URL" main
+            }
+          done
