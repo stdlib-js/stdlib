@@ -34,37 +34,15 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] )
-    <ndarray>
-    > var sh = x.shape
-    [ 2, 2 ]
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
     > var y = {{alias:@stdlib/ndarray/zeros}}( [ 3, 2, 2 ] )
-    <ndarray>
+    <ndarray>[ [ [0,0], [0,0] ], [ [0,0], [0,0] ], [ [0,0], [0,0] ] ]
     > var out = {{alias}}( [ x, y ] )
     [ <ndarray>, <ndarray> ]
 
     // Retrieve the broadcasted "x" array:
     > var bx = out[ 0 ]
-    <ndarray>
-    > sh = bx.shape
-    [ 3, 2, 2 ]
-
-    // Retrieve broadcasted elements...
-    > var v = bx.get( 0, 0, 0 )
-    1
-    > v = bx.get( 0, 0, 1 )
-    2
-    > v = bx.get( 0, 1, 0 )
-    3
-    > v = bx.get( 0, 1, 1 )
-    4
-    > v = bx.get( 1, 0, 0 )
-    1
-    > v = bx.get( 1, 1, 0 )
-    3
-    > v = bx.get( 2, 0, 0 )
-    1
-    > v = bx.get( 2, 1, 1 )
-    4
+    <ndarray>[ [ [1,2], [3,4] ], [ [1,2], [3,4] ], [ [1,2], [3,4] ] ]
 
     See Also
     --------
