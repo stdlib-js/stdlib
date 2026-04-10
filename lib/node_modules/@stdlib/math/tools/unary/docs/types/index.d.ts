@@ -106,7 +106,6 @@ interface Unary {
 * var base = require( '@stdlib/math/base/special/abs' );
 * var dispatch = require( '@stdlib/ndarray/dispatch' );
 * var unary = require( '@stdlib/ndarray/base/unary' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var types = [
@@ -134,10 +133,7 @@ interface Unary {
 * // returns <ndarray>
 *
 * var y = abs( x );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 */
 declare function factory<T = unknown, U = unknown>( fcn: UnaryFunction<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): Unary;
 

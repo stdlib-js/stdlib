@@ -52,10 +52,7 @@ function clbk( v ) {
 }
 
 var y = rangeBy( x, clbk );
-// returns <ndarray>
-
-var v = y.get();
-// returns 10.0
+// returns <ndarray>[ 10.0 ]
 ```
 
 The function has the following parameters:
@@ -89,10 +86,7 @@ var ctx = {
     'count': 0
 };
 var y = rangeBy( x, clbk, ctx );
-// returns <ndarray>
-
-var v = y.get();
-// returns 10.0
+// returns <ndarray>[ 10.0 ]
 
 var count = ctx.count;
 // returns 3
@@ -107,7 +101,6 @@ The function accepts the following options:
 By default, the function performs a reduction over all elements in a provided input [ndarray][@stdlib/ndarray/ctor]. To perform a reduction over specific dimensions, provide a `dims` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 function clbk( v ) {
@@ -118,41 +111,30 @@ var x = array( [ -1.0, 2.0, -3.0, 4.0 ], {
     'shape': [ 2, 2 ],
     'order': 'row-major'
 });
-var v = ndarray2array( x );
-// returns [ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ]
+// returns <ndarray>[ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ]
 
 var opts = {
     'dims': [ 0 ]
 };
 var y = rangeBy( x, opts, clbk );
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ 200.0, 200.0 ]
+// returns <ndarray>[ 200.0, 200.0 ]
 
 opts = {
     'dims': [ 1 ]
 };
 y = rangeBy( x, opts, clbk );
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ 300.0, 700.0 ]
+// returns <ndarray>[ 300.0, 700.0 ]
 
 opts = {
     'dims': [ 0, 1 ]
 };
 y = rangeBy( x, opts, clbk );
-// returns <ndarray>
-
-v = y.get();
-// returns 700.0
+// returns <ndarray>[ 700.0 ]
 ```
 
 By default, the function excludes reduced dimensions from the output [ndarray][@stdlib/ndarray/ctor]. To include the reduced dimensions as singleton dimensions, set the `keepdims` option to `true`.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 function clbk( v ) {
@@ -163,39 +145,28 @@ var x = array( [ -1.0, 2.0, -3.0, 4.0 ], {
     'shape': [ 2, 2 ],
     'order': 'row-major'
 });
-
-var v = ndarray2array( x );
-// returns [ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ]
+// returns <ndarray>[ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ]
 
 var opts = {
     'dims': [ 0 ],
     'keepdims': true
 };
 var y = rangeBy( x, opts, clbk );
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ [ 200.0, 200.0 ] ]
+// returns <ndarray>[ [ 200.0, 200.0 ] ]
 
 opts = {
     'dims': [ 1 ],
     'keepdims': true
 };
 y = rangeBy( x, opts, clbk );
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ [ 300.0 ], [ 700.0 ] ]
+// returns <ndarray>[ [ 300.0 ], [ 700.0 ] ]
 
 opts = {
     'dims': [ 0, 1 ],
     'keepdims': true
 };
 y = rangeBy( x, opts, clbk );
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ [ 700.0 ] ]
+// returns <ndarray>[ [ 700.0 ] ]
 ```
 
 By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [data type][@stdlib/ndarray/dtypes] determined by the function's output data type [policy][@stdlib/ndarray/output-dtype-policies]. To override the default behavior, set the `dtype` option.
@@ -238,10 +209,7 @@ var x = array( [ -1.0, 2.0, -3.0 ] );
 var y = zeros( [] );
 
 var out = rangeBy.assign( x, y, clbk );
-// returns <ndarray>
-
-var v = out.get();
-// returns 500.0
+// returns <ndarray>[ 500.0 ]
 
 var bool = ( out === y );
 // returns true
@@ -316,7 +284,7 @@ var opts = {
 var y = rangeBy( x, opts, accessor );
 
 // Resolve the output array data type:
-var dt = getDType( y );
+var dt = String( getDType( y ) );
 console.log( dt );
 
 // Print the results:

@@ -16,43 +16,43 @@
 * limitations under the License.
 */
 
-import isSameValueZerof = require( './index' );
+import isSameValueZero = require( './index' );
 
 
 // TESTS //
 
 // The function returns a boolean...
 {
-	isSameValueZerof( 3.14, 3.14 ); // $ExpectType boolean
+	isSameValueZero( 3.14, 3.14 ); // $ExpectType boolean
 }
 
 // The compiler throws an error if the function is not provided a first argument which is a number...
 {
-	isSameValueZerof( '5', 3.14 ); // $ExpectError
-	isSameValueZerof( true, 3.14 ); // $ExpectError
-	isSameValueZerof( false, 3.14 ); // $ExpectError
-	isSameValueZerof( null, 3.14 ); // $ExpectError
-	isSameValueZerof( void 0, 3.14 ); // $ExpectError
-	isSameValueZerof( [], 3.14 ); // $ExpectError
-	isSameValueZerof( {}, 3.14 ); // $ExpectError
-	isSameValueZerof( ( x: number ): number => x, 3.14 ); // $ExpectError
+	isSameValueZero( '5', 3.14 ); // $ExpectError
+	isSameValueZero( true, 3.14 ); // $ExpectError
+	isSameValueZero( false, 3.14 ); // $ExpectError
+	isSameValueZero( null, 3.14 ); // $ExpectError
+	isSameValueZero( void 0, 3.14 ); // $ExpectError
+	isSameValueZero( [], 3.14 ); // $ExpectError
+	isSameValueZero( {}, 3.14 ); // $ExpectError
+	isSameValueZero( ( x: number ): number => x, 3.14 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is not provided a second argument which is a number...
 {
-	isSameValueZerof( 3.14, '5' ); // $ExpectError
-	isSameValueZerof( 3.14, true ); // $ExpectError
-	isSameValueZerof( 3.14, false ); // $ExpectError
-	isSameValueZerof( 3.14, null ); // $ExpectError
-	isSameValueZerof( 3.14, void 0 ); // $ExpectError
-	isSameValueZerof( 3.14, [] ); // $ExpectError
-	isSameValueZerof( 3.14, {} ); // $ExpectError
-	isSameValueZerof( 3.14, ( x: number ): number => x ); // $ExpectError
+	isSameValueZero( 3.14, '5' ); // $ExpectError
+	isSameValueZero( 3.14, true ); // $ExpectError
+	isSameValueZero( 3.14, false ); // $ExpectError
+	isSameValueZero( 3.14, null ); // $ExpectError
+	isSameValueZero( 3.14, void 0 ); // $ExpectError
+	isSameValueZero( 3.14, [] ); // $ExpectError
+	isSameValueZero( 3.14, {} ); // $ExpectError
+	isSameValueZero( 3.14, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	isSameValueZerof(); // $ExpectError
-	isSameValueZerof( 3.14 ); // $ExpectError
-	isSameValueZerof( 3.14, 3.14, 3.14 ); // $ExpectError
+	isSameValueZero(); // $ExpectError
+	isSameValueZero( 3.14 ); // $ExpectError
+	isSameValueZero( 3.14, 3.14, 3.14 ); // $ExpectError
 }
