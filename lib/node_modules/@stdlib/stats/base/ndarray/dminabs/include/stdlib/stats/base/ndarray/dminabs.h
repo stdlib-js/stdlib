@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the minimum value of a one-dimensional double-precision floating-point ndarray.
+* Computes the minimum absolute value of a one-dimensional double-precision floating-point ndarray.
 */
 double stdlib_stats_dminabs( const struct ndarray *arrays[] );
 
