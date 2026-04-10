@@ -75,7 +75,7 @@ jobs:
       # Restore cache if up-to-date:
       - name: 'Restore cache if up-to-date'
         # Pin action to full length commit SHA
-        uses: actions/cache/restore@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
+        uses: actions/cache/restore@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
         id: cache
         with:
           path: |
@@ -138,7 +138,7 @@ jobs:
       # Save cache after editorconfig-checker binary has been downloaded:
       - name: 'Save cache after editorconfig-checker binary has been downloaded'
         if: always() && steps.cache.outputs.cache-hit != 'true'
-        uses: actions/cache/save@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
+        uses: actions/cache/save@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
         with:
           path: ${{ github.workspace }}/node_modules
           key: ${{ steps.cache.outputs.cache-primary-key }}
@@ -147,7 +147,7 @@ jobs:
       - name: 'Lint Markdown files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | grep -v '^\.github/workflows/.*\.md$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
             make lint-markdown-files FILES="${files}"
           fi
@@ -274,7 +274,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: r-lib/actions/setup-r@6f6e5bc62fba3a704f74e7ad7ef7676c5c6a2590 # v2.11.4
         with:
-          r-version: '3.5.3'
+          r-version: '4.2.0'
 
       # Lint R files:
       - name: 'Lint R files'
@@ -345,7 +345,7 @@ jobs:
       - name: 'Lint license headers'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}")
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -v '\.github/workflows/.*\.md$' | grep -v '\.lock\.yml$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-license-headers-files FILES="${files}"
           fi

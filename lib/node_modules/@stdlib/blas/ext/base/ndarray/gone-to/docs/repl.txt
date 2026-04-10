@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Fills a one-dimensional ndarray with linearly spaced numeric elements which
+    increment by `1` starting from one.
+
+    The input ndarray is modified *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var xbuf = [ 0.0, 0.0, 0.0, 0.0 ];
+    > var dt = 'generic';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > {{alias}}( [ x ] )
+    <ndarray>[ 1.0, 2.0, 3.0, 4.0 ]
+
+    See Also
+    --------
