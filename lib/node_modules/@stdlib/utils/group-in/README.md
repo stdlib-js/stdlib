@@ -146,7 +146,7 @@ var opts = {
     'returns': '*'
 };
 var out = groupIn( obj, opts, indicator );
-// e.g., returns { 'b': [ [ 'a', 'beep' ], [ 'b', 'boop ], [ 'd', 'bar' ] ], 'f': [ [ 'c', 'foo' ] ] }
+// e.g., returns { 'b': [ [ 'a', 'beep' ], [ 'b', 'boop' ], [ 'd', 'bar' ] ], 'f': [ [ 'c', 'foo' ] ] }
 ```
 
 To set the `indicator` execution context, provide a `thisArg`.
