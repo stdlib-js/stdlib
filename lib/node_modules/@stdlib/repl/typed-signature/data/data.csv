@@ -1156,7 +1156,7 @@ base.ndarray.prototype.toLocaleString,"base.ndarray.prototype.toLocaleString( [l
 base.ndarray.prototype.toString,"base.ndarray.prototype.toString()"
 base.ndarray.prototype.toJSON,"base.ndarray.prototype.toJSON()"
 base.ndarrayUnary,"base.ndarrayUnary( arrays:ArrayLikeObject<ndarray>, fcn:Function )"
-base.ndzeros,"base.ndzeros( dtype:string, shape:ArrayLikeObject<integer>, order:string )"
+base.ndzeros,"base.ndzeros( dtype:string|DataType, shape:ArrayLikeObject<integer>, order:string )"
 base.ndzerosLike,"base.ndzerosLike( x:ndarray )"
 base.negafibonacci,"base.negafibonacci( n:integer )"
 base.negalucas,"base.negalucas( n:integer )"
