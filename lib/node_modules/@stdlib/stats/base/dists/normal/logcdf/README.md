@@ -155,7 +155,7 @@ logEachMap( 'x: %0.4f, µ: %0.4f, σ: %0.4f, ln(F(x;µ,σ)): %0.4f', x, mu, sigm
 Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [normal][normal-distribution] distribution with parameters `mu` (mean) and `sigma` (standard deviation).
 
 ```c
-double out = stdlib_base_dists_normal_cdf( 2.0, 0.0, 1.0 );
+double out = stdlib_base_dists_normal_logcdf( 2.0, 0.0, 1.0 );
 // returns ~-0.023
 ```
 
