@@ -1,0 +1,136 @@
+
+{{alias}}( order, mode, M, N, x, strideX, out, ldo )
+    Generates a Vandermonde matrix.
+
+    When the mode is positive, the matrix is generated such that
+
+        [
+            1   x_0^1   x_0^2   ...   x_0^(N-1)
+            1   x_1^1   x_1^2   ...   x_1^(N-1)
+            ...
+        ]
+
+    with increasing powers along the rows.
+
+    When the mode is negative, the matrix is generated such that
+
+        [
+            x_0^(N-1)   ...   x_0^2   x_0^1   1
+            x_1^(N-1)   ...   x_1^2   x_1^1   1
+            ...
+        ]
+
+    with decreasing powers along the rows.
+
+    If `M <= 0` or `N <= 0`, the function returns the output matrix unchanged.
+
+    Parameters
+    ----------
+    order: string
+        Row-major (C-style) or column-major (Fortran-style) order.
+
+    mode: integer
+        Mode. If `mode < 0`, the function generates decreasing powers. If
+        `mode > 0`, the function generates increasing powers.
+
+    M: integer
+        Number of rows in `out` and number of indexed elements in `x`.
+
+    N: integer
+        Number of columns in `out`.
+
+    x: Array<number>|TypedArray
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    out: Array<number>|TypedArray
+        Output matrix.
+
+    ldo: integer
+        Stride of the first dimension of `out` (a.k.a., leading dimension of
+        the matrix `out`).
+
+    Returns
+    -------
+    out: Array<number>|TypedArray
+        Output matrix.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 1.0, 2.0, 3.0 ];
+    > var out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( 'row-major', 1, 3, 3, x, 1, out, 3 )
+    [ 1.0, 1.0, 1.0, 1.0, 2.0, 4.0, 1.0, 3.0, 9.0 ]
+
+    // Decreasing mode:
+    > x = [ 1.0, 2.0, 3.0 ];
+    > out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}( 'row-major', -1, 3, 3, x, 1, out, 3 )
+    [ 1.0, 1.0, 1.0, 4.0, 2.0, 1.0, 9.0, 3.0, 1.0 ]
+
+
+{{alias}}.ndarray( mode, M, N, x, strideX, offsetX, out, so1, so2, oo )
+    Generates a Vandermonde matrix using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on
+    starting indices.
+
+    Parameters
+    ----------
+    mode: integer
+        Mode. If `mode < 0`, the function generates decreasing powers. If
+        `mode > 0`, the function generates increasing powers.
+
+    M: integer
+        Number of rows in `out` and number of indexed elements in `x`.
+
+    N: integer
+        Number of columns in `out`.
+
+    x: Array<number>|TypedArray
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    out: Array<number>|TypedArray
+        Output matrix.
+
+    so1: integer
+        Stride length for the first dimension of `out`.
+
+    so2: integer
+        Stride length for the second dimension of `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: Array<number>|TypedArray
+        Output matrix.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 1.0, 2.0, 3.0 ];
+    > var out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( 1, 3, 3, x, 1, 0, out, 3, 1, 0 )
+    [ 1.0, 1.0, 1.0, 1.0, 2.0, 4.0, 1.0, 3.0, 9.0 ]
+
+    // Advanced indexing:
+    > x = [ 0.0, 1.0, 0.0, 2.0, 0.0, 3.0 ];
+    > out = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > {{alias}}.ndarray( 1, 3, 3, x, 2, 1, out, 3, 1, 0 )
+    [ 1.0, 1.0, 1.0, 1.0, 2.0, 4.0, 1.0, 3.0, 9.0 ]
+
+    See Also
+    --------
+
