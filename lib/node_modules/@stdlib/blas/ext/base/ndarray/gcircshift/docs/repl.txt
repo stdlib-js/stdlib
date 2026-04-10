@@ -1,0 +1,37 @@
+
+{{alias}}( arrays )
+    Circularly shifts the elements of a one-dimensional ndarray by a specified
+    number of positions.
+
+    The input ndarray is shifted *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray specifying the number of positions to
+        shift.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var dt = 'generic';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var k = {{alias:@stdlib/ndarray/from-scalar}}( 2, { 'dtype': dt } );
+    > {{alias}}( [ x, k ] )
+    <ndarray>[ 3.0, 4.0, 1.0, 2.0 ]
+
+    See Also
+    --------
