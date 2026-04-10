@@ -173,7 +173,7 @@ Evaluates the [probability density function][pdf] (PDF) for a [Weibull][weibull-
 
 ```c
 double out = stdlib_base_dists_weibull_pdf( 2.0, 1.0, 1.0 );
-// returns ~0.037
+// returns ~0.135
 ```
 
 The function accepts the following arguments:
