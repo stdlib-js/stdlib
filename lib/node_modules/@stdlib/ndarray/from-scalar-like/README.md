@@ -42,7 +42,7 @@ var scalar2ndarrayLike = require( '@stdlib/ndarray/from-scalar-like' );
 
 #### scalar2ndarrayLike( x, value\[, options] )
 
-Converts a scalar value to a zero-dimensional [ndarray][@stdlib/ndarray/ctor] having the same [data-type][@stdlib/ndarray/dtypes] as a provided [ndarray][@stdlib/ndarray/ctor]
+Converts a scalar value to a zero-dimensional [ndarray][@stdlib/ndarray/ctor] having the same [data-type][@stdlib/ndarray/dtypes] as a provided [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );

@@ -47,7 +47,7 @@
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0, 3.0 ] )
     <ndarray>[ 1.0, 2.0, 3.0 ]
-    > var x = {{alias}}( x, 1.0 )
+    > var y = {{alias}}( x, 1.0 )
     <ndarray>[ 1.0 ]
 
     See Also

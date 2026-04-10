@@ -67,13 +67,13 @@ import toReversedDimension = require( './index' );
 {
 	const x = empty( [ 2, 2 ] );
 
-	toReversedDimension( x, { 'dim': '5'} ); // $ExpectError
+	toReversedDimension( x, { 'dim': '5' } ); // $ExpectError
 	toReversedDimension( x, { 'dim': true } ); // $ExpectError
 	toReversedDimension( x, { 'dim': false } ); // $ExpectError
 	toReversedDimension( x, { 'dim': null } ); // $ExpectError
 	toReversedDimension( x, { 'dim': [ '5' ] } ); // $ExpectError
 	toReversedDimension( x, { 'dim': {} } ); // $ExpectError
-	toReversedDimension( x, { 'dim': ( x: number ): number => x} ); // $ExpectError
+	toReversedDimension( x, { 'dim': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...

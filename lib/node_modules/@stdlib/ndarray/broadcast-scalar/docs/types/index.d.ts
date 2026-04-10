@@ -84,7 +84,7 @@ declare function broadcastScalar( value: number, shape: ArrayLike<number>, optio
 *
 * @example
 * var getDType = require( '@stdlib/ndarray/dtype' );
-* var Complex64 = require( '@stdlib/complex/float64/ctor' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var v = new Complex64( 1.0, 2.0 );
 *

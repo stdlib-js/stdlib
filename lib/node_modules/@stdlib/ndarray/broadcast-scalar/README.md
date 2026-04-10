@@ -119,7 +119,7 @@ var broadcastScalar = require( '@stdlib/ndarray/broadcast-scalar' );
 // Get a list of data types:
 var dt = dtypes( 'integer_and_generic' );
 
-// Generate zero-dimensional arrays...
+// Generate two-dimensional arrays...
 var x;
 var i;
 for ( i = 0; i < dt.length; i++ ) {
