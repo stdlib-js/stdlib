@@ -374,7 +374,7 @@ jobs:
         # Pin action to full length commit SHA
         uses: r-lib/actions/setup-r@6f6e5bc62fba3a704f74e7ad7ef7676c5c6a2590 # v2.11.4
         with:
-          r-version: '4.2.0'
+          r-version: '4.3.3'
 
       # Lint R files:
       - name: 'Lint R files'
