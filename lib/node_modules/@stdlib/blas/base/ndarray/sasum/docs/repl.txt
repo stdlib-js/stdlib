@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Computes the sum of absolute values for all elements in a one-dimensional
+    single-precision floating-point ndarray.
+
+    If provided an empty input ndarray, the function returns `0.0`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: number
+        The sum of absolute values.
+
+    Examples
+    --------
+    > var xbuf = new {{alias:@stdlib/array/float32}}( [ 1.0, -2.0, 3.0, -4.0, 5.0 ] );
+    > var dt = 'float32';
+    > var sh = [ xbuf.length ];
+    > var st = [ 1 ];
+    > var oo = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
+    > {{alias}}( [ x ] )
+    15.0
+
+    See Also
+    --------
+
