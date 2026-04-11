@@ -148,7 +148,7 @@ Returns the differential entropy of a Student's t distribution.
 
 ```c
 double out = stdlib_base_dists_t_entropy( 9.0 );
-// returns ~1.553
+// returns ~1.533
 ```
 
 The function accepts the following arguments:

@@ -246,7 +246,7 @@ int main( void ) {
         t = random_uniform( 0.0, 20.0 );
         alpha = random_uniform( 1.0 + STDLIB_CONSTANT_FLOAT64_EPS, 100.0 );
         beta = random_uniform( 1.0 + STDLIB_CONSTANT_FLOAT64_EPS, 100.0 );
-        y = stdlib_base_dists_beta_mgf( alpha, beta );
+        y = stdlib_base_dists_beta_mgf( t, alpha, beta );
         printf( "t: %lf, α: %lf, β: %lf, M_X(t;α,β): %lf\n", t, alpha, beta, y );
     }
 }
