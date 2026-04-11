@@ -160,7 +160,7 @@ logEachMap( 'x: %0.4f, λ: %0.4f, ln(F(x;λ)): %0.4f', x, lambda, logcdf );
 ### Usage
 
 ```c
-#include "stdlib/stats/base/dists/exponential/cdf.h"
+#include "stdlib/stats/base/dists/exponential/logcdf.h"
 ```
 
 #### stdlib_base_dists_exponential_cdf( x, lambda )

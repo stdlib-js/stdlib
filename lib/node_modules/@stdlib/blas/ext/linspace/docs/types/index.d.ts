@@ -128,15 +128,10 @@ interface Linspace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
-	*
 	* var out = linspace( [ 2, 4 ], 0.0, 3.0, {
 	*     'dtype': 'float64'
 	* });
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
+	* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*/
 	<T extends RealStart = RealStart, U extends RealStop = RealStop>( shape: number | ArrayLike<number>, start: T, stop: U, options: OptionsWithDataType ): OutputArray; // TODO: we lose some type specificity here. We could likely improve specificity here by using type maps
 
@@ -150,13 +145,8 @@ interface Linspace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
-	*
 	* var out = linspace( [ 2, 4 ], 0.0, 3.0, {} );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
+	* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*/
 	<T extends RealStart = RealStart, U extends RealStop = RealStop>( shape: number | ArrayLike<number>, start: T, stop: U, options: Options ): RealOutputArray; // NOTE: we lose some type specificity here, as the output ndarray data type is determined according to type promotion rules
 
@@ -171,15 +161,10 @@ interface Linspace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
-	*
 	* var out = linspace( [ 2, 4 ], 0.0, 3.0, true, {
 	*     'dtype': 'float64'
 	* });
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
+	* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*/
 	<T extends RealStart = RealStart, U extends RealStop = RealStop, V extends Endpoint = Endpoint>( shape: number | ArrayLike<number>, start: T, stop: U, endpoint: V, options: OptionsWithDataType ): OutputArray; // TODO: we lose some type specificity here. We could likely improve specificity here by using type maps
 
@@ -194,13 +179,8 @@ interface Linspace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
-	*
 	* var out = linspace( [ 2, 4 ], 0.0, 3.0 );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
+	* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*/
 	<T extends RealStart = RealStart, U extends RealStop = RealStop, V extends Endpoint = Endpoint>( shape: number | ArrayLike<number>, start: T, stop: U, endpoint?: V, options?: Options ): RealOutputArray; // NOTE: we lose some type specificity here, as the output ndarray data type is determined according to type promotion rules
 
@@ -214,15 +194,10 @@ interface Linspace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
-	*
 	* var out = linspace( [ 2, 4 ], 0.0, 3.0, {
 	*     'dtype': 'float64'
 	* });
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
+	* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*/
 	<T extends Start = Start, U extends Stop = Stop>( shape: number | ArrayLike<number>, start: T, stop: U, options: OptionsWithDataType ): ComplexOutputArray; // TODO: we lose some type specificity here. We could likely improve specificity here by using type maps
 
@@ -236,13 +211,8 @@ interface Linspace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
-	*
 	* var out = linspace( [ 2, 4 ], 0.0, 3.0, {} );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
+	* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*/
 	<T extends Start = Start, U extends Stop = Stop>( shape: number | ArrayLike<number>, start: T, stop: U, options: Options ): ComplexOutputArray; /* eslint-disable-line @typescript-eslint/unified-signatures */ // NOTE: we lose some type specificity here, as the output ndarray data type is determined according to type promotion rules
 
@@ -257,15 +227,10 @@ interface Linspace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
-	*
 	* var out = linspace( [ 2, 4 ], 0.0, 3.0, true, {
 	*     'dtype': 'float64'
 	* });
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
+	* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*/
 	<T extends Start = Start, U extends Stop = Stop, V extends Endpoint = Endpoint>( shape: number | ArrayLike<number>, start: T, stop: U, endpoint: V, options: OptionsWithDataType ): ComplexOutputArray; // TODO: we lose some type specificity here. We could likely improve specificity here by using type maps
 
@@ -280,13 +245,8 @@ interface Linspace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
-	*
 	* var out = linspace( [ 2, 4 ], 0.0, 3.0, true );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
+	* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*/
 	<T extends Start = Start, U extends Stop = Stop, V extends Endpoint = Endpoint>( shape: number | ArrayLike<number>, start: T, stop: U, endpoint?: V, options?: Options ): ComplexOutputArray; // NOTE: we lose some type specificity here, as the output ndarray data type is determined according to type promotion rules
 
@@ -301,19 +261,15 @@ interface Linspace {
 	*
 	* @example
 	* var zeros = require( '@stdlib/ndarray/zeros' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	*
 	* var x = zeros( [ 2, 4 ] );
 	* // returns <ndarray>
 	*
 	* var out = linspace.assign( x, 0.0, 3.0 );
-	* // returns <ndarray>
+	* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*
 	* var bool = ( out === x );
 	* // returns true
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*/
 	assign<T extends OutputArray = OutputArray>( out: T, start: Start, stop: Stop, options: BaseOptions ): T;
 
@@ -329,19 +285,15 @@ interface Linspace {
 	*
 	* @example
 	* var zeros = require( '@stdlib/ndarray/zeros' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	*
 	* var x = zeros( [ 2, 4 ] );
 	* // returns <ndarray>
 	*
 	* var out = linspace.assign( x, 0.0, 3.0 );
-	* // returns <ndarray>
+	* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*
 	* var bool = ( out === x );
 	* // returns true
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 	*/
 	assign<T extends OutputArray = OutputArray>( out: T, start: Start, stop: Stop, endpoint?: Endpoint, options?: BaseOptions ): T;
 }
@@ -356,29 +308,20 @@ interface Linspace {
 * @param options - function options
 *
 * @example
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
-*
 * var out = linspace( [ 2, 4 ], 0.0, 3.0 );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( out );
-* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
+* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 *
 * @example
 * var zeros = require( '@stdlib/ndarray/zeros' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var x = zeros( [ 2, 4 ] );
 * // returns <ndarray>
 *
 * var out = linspace.assign( x, 0.0, 3.0 );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 *
 * var bool = ( out === x );
 * // returns true
-*
-* var arr = ndarray2array( out );
-* // returns [ [ 0.0, 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0, 3.0 ] ]
 */
 declare const linspace: Linspace;
 
