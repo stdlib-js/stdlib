@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@
 #include "stdlib/blas/ext/base/ssorthp.h"
 #include "stdlib/math/base/assert/is_positive_zerof.h"
 #include "stdlib/math/base/assert/is_nanf.h"
-#include <stdint.h>
-#include <math.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Sorts a single-precision floating-point strided array using heapsort.
@@ -34,20 +34,43 @@
 * -   Williams, John William Joseph. 1964. "Algorithm 232: Heapsort." _Communications of the ACM_ 7 (6). New York, NY, USA: Association for Computing Machinery: 347–49. doi:[10.1145/512274.512284](https://doi.org/10.1145/512274.512284).
 * -   Floyd, Robert W. 1964. "Algorithm 245: Treesort." _Communications of the ACM_ 7 (12). New York, NY, USA: Association for Computing Machinery: 701. doi:[10.1145/355588.365103](https://doi.org/10.1145/355588.365103).
 *
-* @param N       number of indexed elements
-* @param order   sort order
-* @param X       input array
-* @param stride  index increment
+* @param N        number of indexed elements
+* @param order    sort order
+* @param X        input array
+* @param strideX  stride length
 */
-void c_ssorthp( const int64_t N, const float order, float *X, const int64_t stride ) {
-	int64_t offset;
-	int64_t parent;
-	int64_t child;
-	int64_t sx;
-	int64_t n;
-	int64_t i;
-	int64_t j;
-	int64_t k;
+void API_SUFFIX(stdlib_strided_ssorthp)( const CBLAS_INT N, const float order, float *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	API_SUFFIX(stdlib_strided_ssorthp_ndarray)( N, order, X, strideX, ox );
+}
+
+/**
+* Sorts a single-precision floating-point strided array using heapsort and alternative indexing semantics.
+*
+* ## Notes
+*
+* -   This implementation uses an in-place algorithm derived from the work of Floyd (1964).
+*
+* ## References
+*
+* -   Williams, John William Joseph. 1964. "Algorithm 232: Heapsort." _Communications of the ACM_ 7 (6). New York, NY, USA: Association for Computing Machinery: 347–49. doi:[10.1145/512274.512284](https://doi.org/10.1145/512274.512284).
+* -   Floyd, Robert W. 1964. "Algorithm 245: Treesort." _Communications of the ACM_ 7 (12). New York, NY, USA: Association for Computing Machinery: 701. doi:[10.1145/355588.365103](https://doi.org/10.1145/355588.365103).
+*
+* @param N        number of indexed elements
+* @param order    sort order
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index
+*/
+void API_SUFFIX(stdlib_strided_ssorthp_ndarray)( const CBLAS_INT N, const float order, float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	CBLAS_INT parent;
+	CBLAS_INT child;
+	CBLAS_INT ox;
+	CBLAS_INT sx;
+	CBLAS_INT n;
+	CBLAS_INT i;
+	CBLAS_INT j;
+	CBLAS_INT k;
 	float v1;
 	float v2;
 	float t;
@@ -57,27 +80,24 @@ void c_ssorthp( const int64_t N, const float order, float *X, const int64_t stri
 	}
 	// For a positive stride, sorting in decreasing order is equivalent to providing a negative stride and sorting in increasing order, and, for a negative stride, sorting in decreasing order is equivalent to providing a positive stride and sorting in increasing order...
 	if ( order < 0.0f ) {
-		sx = -stride;
+		sx = -strideX;
+		ox = offsetX - ( (N-1)*sx );
 	} else {
-		sx = stride;
-	}
-	if ( sx < 0 ) {
-		offset = (1-N) * sx;
-	} else {
-		offset = 0;
+		sx = strideX;
+		ox = offsetX;
 	}
 	// Set the initial heap size:
 	n = N;
 
 	// Specify an initial "parent" index for building the heap:
-	parent = floorf( N / 2 );
+	parent = N / 2;
 
 	// Continue looping until the array is sorted...
 	while ( true ) {
 		if ( parent > 0 ) {
 			// We need to build the heap...
 			parent -= 1;
-			t = X[ offset+(parent*sx) ];
+			t = X[ ox+(parent*sx) ];
 		} else {
 			// Reduce the heap size:
 			n -= 1;
@@ -87,11 +107,11 @@ void c_ssorthp( const int64_t N, const float order, float *X, const int64_t stri
 				return;
 			}
 			// Store the last heap value in a temporary variable in order to make room for the heap root being placed into its sorted position:
-			i = offset + (n*sx);
+			i = ox + (n*sx);
 			t = X[ i ];
 
 			// Move the heap root to its sorted position:
-			X[ i ] = X[ offset ];
+			X[ i ] = X[ ox ];
 		}
 		// We need to "sift down", pushing `t` down the heap to in order to replace the parent and satisfy the heap property...
 
@@ -105,8 +125,8 @@ void c_ssorthp( const int64_t N, const float order, float *X, const int64_t stri
 			// Find the largest child...
 			k = child + 1;
 			if ( k < n ) {
-				v1 = X[ offset+(k*sx) ];
-				v2 = X[ offset+(child*sx) ];
+				v1 = X[ ox+(k*sx) ];
+				v2 = X[ ox+(child*sx) ];
 
 				// Check if a "right" child exists and is "bigger"...
 				if ( v1 > v2 || stdlib_base_is_nanf( v1 ) || (v1 == v2 && stdlib_base_is_positive_zerof( v1 ) ) ) {
@@ -114,10 +134,10 @@ void c_ssorthp( const int64_t N, const float order, float *X, const int64_t stri
 				}
 			}
 			// Check if the largest child is bigger than `t`...
-			v1 = X[ offset+(child*sx) ];
+			v1 = X[ ox+(child*sx) ];
 			if ( v1 > t || stdlib_base_is_nanf( v1 ) || ( v1 == t && stdlib_base_is_positive_zerof( v1 ) ) ) {
 				// Insert the larger child value:
-				X[ offset+(j*sx) ] = v1;
+				X[ ox+(j*sx) ] = v1;
 
 				// Update `j` to point to the child index:
 				j = child;
@@ -130,6 +150,6 @@ void c_ssorthp( const int64_t N, const float order, float *X, const int64_t stri
 			}
 		}
 		// Insert `t` into the heap:
-		X[ offset+(j*sx) ] = t;
+		X[ ox+(j*sx) ] = t;
 	}
 }

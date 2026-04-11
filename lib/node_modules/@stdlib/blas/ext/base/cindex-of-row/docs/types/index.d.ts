@@ -47,8 +47,8 @@ interface Routine {
 	* @returns row index
 	*
 	* @example
-	* var Complex64Array = require( `@stdlib/array/complex64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Complex64Array = require( '@stdlib/array/complex64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var A = new Complex64Array( [ 1.0, 0.0, 2.0, 0.0, 0.0, 0.0, 3.0, 0.0, 4.0, 0.0, 0.0, 0.0 ] );
 	* var x = new Complex64Array( [ 2.0, 0.0, 4.0, 0.0 ] );
@@ -82,8 +82,8 @@ interface Routine {
 	* @returns row index
 	*
 	* @example
-	* var Complex64Array = require( `@stdlib/array/complex64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Complex64Array = require( '@stdlib/array/complex64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var A = new Complex64Array( [ 1.0, 0.0, 2.0, 0.0, 0.0, 0.0, 3.0, 0.0, 4.0, 0.0, 0.0, 0.0 ] );
 	* var x = new Complex64Array( [ 2.0, 0.0, 4.0, 0.0 ] );
@@ -115,8 +115,8 @@ interface Routine {
 * @returns row index
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var A = new Complex64Array( [ 1.0, 0.0, 2.0, 0.0, 0.0, 0.0, 3.0, 0.0, 4.0, 0.0, 0.0, 0.0 ] );
 * var x = new Complex64Array( [ 2.0, 0.0, 4.0, 0.0 ] );
@@ -126,8 +126,8 @@ interface Routine {
 * // returns 1
 *
 * @example
-* var Complex64Array = require( `@stdlib/array/complex64` );
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Complex64Array = require( '@stdlib/array/complex64' );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var A = new Complex64Array( [ 1.0, 0.0, 2.0, 0.0, 0.0, 0.0, 3.0, 0.0, 4.0, 0.0, 0.0, 0.0 ] );
 * var x = new Complex64Array( [ 2.0, 0.0, 4.0, 0.0 ] );
