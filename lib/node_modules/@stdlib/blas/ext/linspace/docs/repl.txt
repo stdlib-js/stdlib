@@ -128,9 +128,8 @@
 
     Examples
     --------
-    > var out = {{alias}}( [ 4 ], 1.0, 4.0 );
-    > {{alias:@stdlib/ndarray/to-array}}( out )
-    [ 1.0, 2.0, 3.0, 4.0 ]
+    > var out = {{alias}}( [ 4 ], 1.0, 4.0 )
+    <ndarray>[ 1.0, 2.0, 3.0, 4.0 ]
 
 
 {{alias}}.assign( out, start, stop[, endpoint][, options] )
@@ -220,9 +219,8 @@
     Examples
     --------
     > var x = {{alias:@stdlib/ndarray/zeros}}( [ 4 ] );
-    > var out = {{alias}}.assign( x, 1.0, 4.0 );
-    > {{alias:@stdlib/ndarray/to-array}}( out )
-    [ 1.0, 2.0, 3.0, 4.0 ]
+    > var out = {{alias}}.assign( x, 1.0, 4.0 )
+    <ndarray>[ 1.0, 2.0, 3.0, 4.0 ]
     > var bool = ( out === x )
     true
 
