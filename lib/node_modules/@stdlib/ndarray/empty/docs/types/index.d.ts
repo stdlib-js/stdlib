@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, complex128ndarray, complex64ndarray, genericndarray, DataType, Mode } from '@stdlib/types/ndarray';
+import { Shape, Order, Mode, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, complex128ndarray, complex64ndarray, genericndarray, DataType, Float64DataType, Float32DataType, Complex128DataType, Complex64DataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, BooleanDataType, GenericDataType } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing function options.
@@ -57,7 +57,7 @@ interface Float64Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'float64';
+	dtype: Float64DataType;
 }
 
 /**
@@ -71,7 +71,7 @@ interface Float32Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'float32';
+	dtype: Float32DataType;
 }
 
 /**
@@ -85,7 +85,7 @@ interface Complex128Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'complex128';
+	dtype: Complex128DataType;
 }
 
 /**
@@ -99,7 +99,7 @@ interface Complex64Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'complex64';
+	dtype: Complex64DataType;
 }
 
 /**
@@ -113,7 +113,7 @@ interface Int32Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'int32';
+	dtype: Int32DataType;
 }
 
 /**
@@ -127,7 +127,7 @@ interface Int16Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'int16';
+	dtype: Int16DataType;
 }
 
 /**
@@ -141,7 +141,7 @@ interface Int8Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'int8';
+	dtype: Int8DataType;
 }
 
 /**
@@ -155,7 +155,7 @@ interface Uint32Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'uint32';
+	dtype: Uint32DataType;
 }
 
 /**
@@ -169,7 +169,7 @@ interface Uint16Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'uint16';
+	dtype: Uint16DataType;
 }
 
 /**
@@ -183,7 +183,7 @@ interface Uint8Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'uint8';
+	dtype: Uint8DataType;
 }
 
 /**
@@ -197,7 +197,7 @@ interface Uint8COptions extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'uint8c';
+	dtype: Uint8cDataType;
 }
 
 /**
@@ -211,7 +211,7 @@ interface BoolOptions extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'bool';
+	dtype: BooleanDataType;
 }
 
 /**
@@ -225,7 +225,7 @@ interface GenericOptions extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'generic';
+	dtype: GenericDataType;
 }
 
 /**
@@ -251,18 +251,21 @@ interface OptionsWithDType extends Options {
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'float64'
 */
 declare function empty( shape: Shape | number, options: Float64Options ): float64ndarray;
@@ -276,18 +279,21 @@ declare function empty( shape: Shape | number, options: Float64Options ): float6
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'float32'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'float32'
 */
 declare function empty( shape: Shape | number, options: Float32Options ): float32ndarray;
@@ -301,18 +307,21 @@ declare function empty( shape: Shape | number, options: Float32Options ): float3
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'complex128'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'complex128'
 */
 declare function empty( shape: Shape | number, options: Complex128Options ): complex128ndarray;
@@ -326,18 +335,21 @@ declare function empty( shape: Shape | number, options: Complex128Options ): com
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'complex64'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'complex64'
 */
 declare function empty( shape: Shape | number, options: Complex64Options ): complex64ndarray;
@@ -351,18 +363,21 @@ declare function empty( shape: Shape | number, options: Complex64Options ): comp
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'int32'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'int32'
 */
 declare function empty( shape: Shape | number, options: Int32Options ): int32ndarray;
@@ -376,18 +391,21 @@ declare function empty( shape: Shape | number, options: Int32Options ): int32nda
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'int16'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'int16'
 */
 declare function empty( shape: Shape | number, options: Int16Options ): int16ndarray;
@@ -401,18 +419,21 @@ declare function empty( shape: Shape | number, options: Int16Options ): int16nda
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'int8'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'int8'
 */
 declare function empty( shape: Shape | number, options: Int8Options ): int8ndarray;
@@ -426,18 +447,21 @@ declare function empty( shape: Shape | number, options: Int8Options ): int8ndarr
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'uint32'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'uint32'
 */
 declare function empty( shape: Shape | number, options: Uint32Options ): uint32ndarray;
@@ -451,18 +475,21 @@ declare function empty( shape: Shape | number, options: Uint32Options ): uint32n
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'uint16'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'uint16'
 */
 declare function empty( shape: Shape | number, options: Uint16Options ): uint16ndarray;
@@ -476,18 +503,21 @@ declare function empty( shape: Shape | number, options: Uint16Options ): uint16n
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'uint8'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'uint8'
 */
 declare function empty( shape: Shape | number, options: Uint8Options ): uint8ndarray;
@@ -501,18 +531,21 @@ declare function empty( shape: Shape | number, options: Uint8Options ): uint8nda
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'uint8c'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'uint8c'
 */
 declare function empty( shape: Shape | number, options: Uint8COptions ): uint8cndarray;
@@ -526,18 +559,21 @@ declare function empty( shape: Shape | number, options: Uint8COptions ): uint8cn
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'bool'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'bool'
 */
 declare function empty( shape: Shape | number, options: BoolOptions ): boolndarray;
@@ -554,15 +590,18 @@ declare function empty( shape: Shape | number, options: BoolOptions ): boolndarr
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ], {
 *     'dtype': 'generic'
 * });
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'generic'
 */
 declare function empty( shape: Shape | number, options: GenericOptions ): genericndarray<number>;
@@ -576,16 +615,19 @@ declare function empty( shape: Shape | number, options: GenericOptions ): generi
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ] );
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'float64'
 */
 declare function empty( shape: Shape | number, options?: Options ): float64ndarray;
@@ -599,16 +641,19 @@ declare function empty( shape: Shape | number, options?: Options ): float64ndarr
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = empty( [ 2, 2 ] );
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'float64'
 */
 declare function empty<T = unknown>( shape: Shape | number, options?: OptionsWithDType ): typedndarray<T>;

@@ -260,7 +260,7 @@ interface FindLastIndex {
 *     return value % 2.0 === 0.0;
 * }
 *
-* var x = array( [ -1.0, 2.0, -3.0 ] )
+* var x = array( [ -1.0, 2.0, -3.0 ] );
 *
 * var y = findLastIndex( x, clbk );
 * // returns <ndarray>
@@ -276,7 +276,7 @@ interface FindLastIndex {
 *     return value % 2.0 === 0.0;
 * }
 *
-* var x = array( [ -1.0, 2.0, -3.0 ] )
+* var x = array( [ -1.0, 2.0, -3.0 ] );
 * var y = zeros( [] );
 *
 * var out = findLastIndex.assign( x, y, clbk );

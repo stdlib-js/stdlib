@@ -54,7 +54,7 @@ jobs:
       # Checkout repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Ensure we have access to the scripts directory and .mailmap file for generating the commit message:
           sparse-checkout: |
@@ -70,6 +70,11 @@ jobs:
           COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message/run $PR_NUMBER)
           EXIT_CODE=$?
 
+          if [ $EXIT_CODE -eq 1 ]; then
+            echo "::error::Failed to generate commit message for PR #$PR_NUMBER"
+            exit 1
+          fi
+
           echo "commit_message<<EOF" >> $GITHUB_OUTPUT
           echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
@@ -79,9 +84,6 @@ jobs:
           else
             echo "has_tracking_issue=false" >> $GITHUB_OUTPUT
           fi
-
-          # Ensure the script itself doesn't fail the workflow:
-          exit 0
 
       # Check if the commit message already exists in the PR comments:
       - name: 'Check if commit message already exists in PR comments'

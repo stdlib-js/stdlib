@@ -55,7 +55,7 @@ declare module '@stdlib/types/array' {
 	/**
 	* Data type for floating-point typed arrays.
 	*/
-	type RealFloatingPointDataType = 'float64' | 'float32'; // "real_floating_point"
+	type RealFloatingPointDataType = 'float64' | 'float32' | 'float16'; // "real_floating_point"
 
 	/**
 	* Data type for floating-point typed arrays.
@@ -464,8 +464,9 @@ declare module '@stdlib/types/array' {
 	* @example
 	* const x: FloatTypedArray = new Float64Array( 10 );
 	* const y: FloatTypedArray = new Float32Array( 10 );
+	* const z: FloatTypedArray = new Float16Array( 10 );
 	*/
-	type FloatTypedArray = Float32Array | Float64Array;
+	type FloatTypedArray = Float16Array | Float32Array | Float64Array;
 
 	/**
 	* A complex number typed array.
@@ -790,6 +791,7 @@ declare module '@stdlib/types/array' {
 	type RealFloatingPointDataTypeMap = { // eslint-disable-line @typescript-eslint/consistent-type-definitions
 		'float64': Float64Array;
 		'float32': Float32Array;
+		'float16': Float16Array;
 	};
 
 	/**
@@ -1462,7 +1464,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Data type string for floating-point ndarrays.
 	*/
-	type RealFloatingPointDataTypeString = 'float64' | 'float32'; // "real_floating_point"
+	type RealFloatingPointDataTypeString = 'float64' | 'float32' | 'float16'; // "real_floating_point"
 
 	/**
 	* Data type string for floating-point ndarrays.
@@ -2157,7 +2159,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Data type object for floating-point ndarrays.
 	*/
-	type RealFloatingPointDataTypeObject = Float64DataTypeObject | Float32DataTypeObject; // "real_floating_point"
+	type RealFloatingPointDataTypeObject = Float64DataTypeObject | Float32DataTypeObject | Float16DataTypeObject; // "real_floating_point"
 
 	/**
 	* Data type object for floating-point ndarrays.
@@ -3148,6 +3150,63 @@ declare module '@stdlib/types/ndarray' {
 		* @returns ndarray instance
 		*/
 		set( ...args: Array<number> ): float32ndarray;
+	}
+
+	/**
+	* Interface describing an ndarray having a half-precision floating-point data type.
+	*
+	* @example
+	* const arr: float16ndarray = {
+	*     'byteLength': 6,
+	*     'BYTES_PER_ELEMENT': 2,
+	*     'data': new Float16Array( [ 1, 2, 3 ] ),
+	*     'dtype': 'float16',
+	*     'flags': {
+	*         'ROW_MAJOR_CONTIGUOUS': true,
+	*         'COLUMN_MAJOR_CONTIGUOUS': false
+	*     },
+	*     'length': 3,
+	*     'ndims': 1,
+	*     'offset': 0,
+	*     'order': 'row-major',
+	*     'shape': [ 3 ],
+	*     'strides': [ 1 ],
+	*     'get': function get( i ) {
+	*         return this.data[ i ];
+	*     },
+	*     'set': function set( i, v ) {
+	*         this.data[ i ] = v;
+	*         return this;
+	*     }
+	* };
+	*/
+	interface float16ndarray extends floatndarray {
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: 2;
+
+		/**
+		* A reference to the underlying data buffer.
+		*/
+		data: Float16Array;
+
+		/**
+		* Underlying data type.
+		*/
+		dtype: Float16DataType;
+
+		/**
+		* Sets an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts and value to set
+		* @returns ndarray instance
+		*/
+		set( ...args: Array<number> ): float16ndarray;
 	}
 
 	/**
@@ -4400,6 +4459,7 @@ declare module '@stdlib/types/ndarray' {
 	type RealFloatingPointDataTypeMap = { // eslint-disable-line @typescript-eslint/consistent-type-definitions
 		'float64': float64ndarray;
 		'float32': float32ndarray;
+		'float16': float16ndarray;
 	};
 
 	/**
