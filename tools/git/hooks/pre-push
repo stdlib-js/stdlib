@@ -168,8 +168,8 @@ amend_commit() {
 
 # Checks if commits exist to push, as `git push` will execute regardless of whether commits exist to push or not.
 has_commits() {
-	local commits
 	local remote_ref="${remote}/${GIT_CURRENT_BRANCH}"
+	local commits
 
 	echo 'Checking if remote branch exists...' >&2
 	# We use rev-parse to test the actual ref.
