@@ -183,7 +183,6 @@ has_commits() {
 		echo 'Checking for commits to push...' >&2
 		commits=$(git log "${GIT_CURRENT_BRANCH}" --oneline --)
 	fi
-
 	if [[ -z "${commits}" ]]; then
 		echo 'No commits to push.'
 		return 1
