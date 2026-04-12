@@ -21,9 +21,9 @@ name: standalone_keepalive
 
 # Workflow triggers:
 on:
-  # Run the workflow on the first day of each week:
+  # Run the workflow daily:
   schedule:
-    - cron: '0 0 * * 1'
+    - cron: '0 2 * * *'
 
   # Allow the workflow to be manually run:
   workflow_dispatch:
