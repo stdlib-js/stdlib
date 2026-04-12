@@ -172,6 +172,7 @@ has_commits() {
 	local commits
 
 	echo 'Checking if remote branch exists...' >&2
+
 	# We use rev-parse to test the actual ref. Directing to /dev/null makes it silent on failure; the exit code is what matters...
 	if git rev-parse --verify "refs/remotes/${remote_ref}" > /dev/null 2>&1; then
 		echo 'Remote branch exists.' >&2
