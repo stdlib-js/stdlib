@@ -168,28 +168,28 @@ amend_commit() {
 
 # Checks if commits exist to push, as `git push` will execute regardless of whether commits exist to push or not.
 has_commits() {
-    local commits
-    local remote_ref="${remote}/${GIT_CURRENT_BRANCH}"
+	local commits
+	local remote_ref="${remote}/${GIT_CURRENT_BRANCH}"
 
-    echo 'Checking if remote branch exists...' >&2
-    # We use rev-parse to test the actual ref.
-    # 2>/dev/null makes it silent on failure; the exit code is what matters.
-    if git rev-parse --verify "refs/remotes/${remote_ref}" > /dev/null 2>&1; then
-        echo 'Remote branch exists.' >&2
-        echo 'Checking for commits to push...' >&2
-        commits=$(git log "${remote_ref}..${GIT_CURRENT_BRANCH}" --oneline --)
-    else
-        echo 'Remote branch does not exist.' >&2
-        echo 'Checking for commits to push...' >&2
-        commits=$(git log "${GIT_CURRENT_BRANCH}" --oneline --)
-    fi
+	echo 'Checking if remote branch exists...' >&2
+	# We use rev-parse to test the actual ref.
+	# 2>/dev/null makes it silent on failure; the exit code is what matters.
+	if git rev-parse --verify "refs/remotes/${remote_ref}" > /dev/null 2>&1; then
+		echo 'Remote branch exists.' >&2
+		echo 'Checking for commits to push...' >&2
+		commits=$(git log "${remote_ref}..${GIT_CURRENT_BRANCH}" --oneline --)
+	else
+		echo 'Remote branch does not exist.' >&2
+		echo 'Checking for commits to push...' >&2
+		commits=$(git log "${GIT_CURRENT_BRANCH}" --oneline --)
+	fi
 
-    if [[ -z "${commits}" ]]; then
-        echo 'No commits to push.'
-        return 1
-    fi
-    echo 'Found commits to push.'
-    return 0
+	if [[ -z "${commits}" ]]; then
+		echo 'No commits to push.'
+		return 1
+	fi
+	echo 'Found commits to push.'
+	return 0
 }
 
 # Checks licenses.
