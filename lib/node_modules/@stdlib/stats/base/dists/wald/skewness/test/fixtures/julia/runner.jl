@@ -16,19 +16,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import Distributions: skewness, InverseGaussian
 import JSON
 
 """
 	gen( mu, lambda, name )
 
-Generate fixture data for the skewness of a Wald (Inverse Gaussian)
-distribution and write to file.
+Generate fixture data and write to file.
 
 # Arguments
 
-- `mu`: mean parameter
-- `lambda`: shape parameter
-- `name::AbstractString`: output filename
+* `mu`: mean parameter
+* `lambda`: shape parameter
+* `name::AbstractString`: output filename
 
 # Examples
 
@@ -41,7 +41,7 @@ julia> gen( mu, lambda, "data.json" );
 function gen( mu, lambda, name )
 	z = Array{Float64}( undef, length(mu) );
 	for i in eachindex(mu)
-		z[i] = 3.0 * sqrt( mu[i] / lambda[i] );
+		z[ i ] = skewness( InverseGaussian( mu[i], lambda[i] ) );
 	end
 
 	# Store data to be written to file as a collection:
