@@ -27,34 +27,49 @@ import transpose = require( './index' );
 	const sh = [ 2, 2 ];
 	const ord = 'row-major';
 
-	transpose( zeros( 'float64', sh, ord ) ); // $ExpectType float64ndarray
-	transpose( zeros( 'float32', sh, ord ) ); // $ExpectType float32ndarray
-	transpose( zeros( 'complex128', sh, ord ) ); // $ExpectType complex128ndarray
-	transpose( zeros( 'complex64', sh, ord ) ); // $ExpectType complex64ndarray
-	transpose( zeros( 'int32', sh, ord ) ); // $ExpectType int32ndarray
-	transpose( zeros( 'int16', sh, ord ) ); // $ExpectType int16ndarray
-	transpose( zeros( 'int8', sh, ord ) ); // $ExpectType int8ndarray
-	transpose( zeros( 'uint32', sh, ord ) ); // $ExpectType uint32ndarray
-	transpose( zeros( 'uint16', sh, ord ) ); // $ExpectType uint16ndarray
-	transpose( zeros( 'uint8', sh, ord ) ); // $ExpectType uint8ndarray
-	transpose( zeros( 'uint8c', sh, ord ) ); // $ExpectType uint8cndarray
-	transpose( zeros( 'generic', sh, ord ) ); // $ExpectType ndarray
+	transpose( zeros( 'float64', sh, ord ), false ); // $ExpectType float64ndarray
+	transpose( zeros( 'float32', sh, ord ), false ); // $ExpectType float32ndarray
+	transpose( zeros( 'complex128', sh, ord ), false ); // $ExpectType complex128ndarray
+	transpose( zeros( 'complex64', sh, ord ), false ); // $ExpectType complex64ndarray
+	transpose( zeros( 'int32', sh, ord ), false ); // $ExpectType int32ndarray
+	transpose( zeros( 'int16', sh, ord ), false ); // $ExpectType int16ndarray
+	transpose( zeros( 'int8', sh, ord ), false ); // $ExpectType int8ndarray
+	transpose( zeros( 'uint32', sh, ord ), false ); // $ExpectType uint32ndarray
+	transpose( zeros( 'uint16', sh, ord ), false ); // $ExpectType uint16ndarray
+	transpose( zeros( 'uint8', sh, ord ), false ); // $ExpectType uint8ndarray
+	transpose( zeros( 'uint8c', sh, ord ), false ); // $ExpectType uint8cndarray
+	transpose( zeros( 'generic', sh, ord ), false ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray having a recognized/supported data type...
 {
-	transpose( '10' ); // $ExpectError
-	transpose( 10 ); // $ExpectError
-	transpose( false ); // $ExpectError
-	transpose( true ); // $ExpectError
-	transpose( null ); // $ExpectError
-	transpose( [] ); // $ExpectError
-	transpose( {} ); // $ExpectError
-	transpose( ( x: number ): number => x ); // $ExpectError
+	transpose( '10', false ); // $ExpectError
+	transpose( 10, false ); // $ExpectError
+	transpose( false, false ); // $ExpectError
+	transpose( true, false ); // $ExpectError
+	transpose( null, false ); // $ExpectError
+	transpose( void 0, false ); // $ExpectError
+	transpose( [], false ); // $ExpectError
+	transpose( {}, false ); // $ExpectError
+	transpose( ( x: number ): number => x, false ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a second argument which is not a boolean...
+{
+	const x = zeros( 'float64', [ 2, 2 ], 'row-major' );
+
+	transpose( x, '5' ); // $ExpectError
+	transpose( x, 5 ); // $ExpectError
+	transpose( x, void 0 ); // $ExpectError
+	transpose( x, null ); // $ExpectError
+	transpose( x, {} ); // $ExpectError
+	transpose( x, [] ); // $ExpectError
+	transpose( x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	transpose(); // $ExpectError
-	transpose( zeros( 'float64', [ 2, 2 ], 'row-major' ), 1 ); // $ExpectError
+	transpose( zeros( 'float64', [ 2, 2 ], 'row-major' ) ); // $ExpectError
+	transpose( zeros( 'float64', [ 2, 2 ], 'row-major' ), false, {} ); // $ExpectError
 }

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2025 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@
 
 var bench = require( '@stdlib/bench' );
 var pow = require( '@stdlib/math/base/special/pow' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var TODO = require( './../lib' );
 
@@ -91,7 +92,7 @@ function main() {
 	for ( i = min; i <= max; i++ ) {
 		len = pow( 10, i );
 		f = createBenchmark( len );
-		bench( pkg+':len='+len, f );
+		bench( format( '%s:len=%d', pkg, len ), f );
 	}
 }
 

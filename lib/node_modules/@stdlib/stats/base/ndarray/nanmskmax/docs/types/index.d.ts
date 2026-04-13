@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Calculates the maximum value of a one-dimensional ndarray according to a mask, ignoring `NaN` values.
@@ -40,7 +40,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var v = nanmskmax( [ x, mask ] );
 * // returns 2.0
 */
-declare function nanmskmax<T extends ndarray = ndarray>( arrays: [ T, T ] ): number;
+declare function nanmskmax<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, T ] ): number;
 
 
 // EXPORTS //

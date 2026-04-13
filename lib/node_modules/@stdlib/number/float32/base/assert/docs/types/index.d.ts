@@ -182,7 +182,7 @@ interface Namespace {
 }
 
 /**
-* Base double-precision floating-point number assert functions.
+* Base single-precision floating-point number assert functions.
 */
 declare var ns: Namespace;
 

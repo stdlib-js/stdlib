@@ -82,8 +82,9 @@ float API_SUFFIX(stdlib_strided_ssumpw_ndarray)( const CBLAS_INT N, const float 
 	}
 	if ( N < 8 ) {
 		// Use simple summation...
-		sum = 0.0f;
-		for ( i = 0; i < N; i++ ) {
+		sum = X[ ix ];
+		ix += strideX;
+		for ( i = 1; i < N; i++ ) {
 			sum += X[ ix ];
 			ix += strideX;
 		}
