@@ -124,6 +124,7 @@
     "@conventional-commits/parser": "^0.4.1",
     "@cspell/eslint-plugin": "^8.8.0",
     "@kaciras/deasync": "^1.0.1",
+    "@mathjax/src": "^4.0.0",
     "@types/node": "^13.9.0",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
