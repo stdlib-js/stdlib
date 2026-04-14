@@ -3651,7 +3651,7 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [idiomatic-js]: https://github.com/rwaldron/idiomatic.js/
 
-[popular-convention]: http://sideeffect.kr/popularconvention/#javascript
+[popular-convention]: https://web.archive.org/web/20150701000000/http://sideeffect.kr/popularconvention/#javascript
 
 [quality-guide]: https://github.com/bevacqua/js
 

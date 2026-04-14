@@ -153,7 +153,7 @@ const int64_t ndims = 3;
 const int64_t shape[] = { 2, 3, 10 };
 int64_t out[ 2 ];
 
-stdlib_ndarray_flatten_shape( ndims, shape, 1, out );
+stdlib_ndarray_flatten_shape_from( ndims, shape, 1, out );
 ```
 
 The function accepts the following arguments:

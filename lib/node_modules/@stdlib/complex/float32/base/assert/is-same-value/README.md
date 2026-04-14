@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# isSameValuef
+# isSameValue
 
 > Test whether two single-precision complex floating-point numbers are the same value.
 
@@ -37,10 +37,10 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var isSameValuef = require( '@stdlib/complex/float32/base/assert/is-same-value' );
+var isSameValue = require( '@stdlib/complex/float32/base/assert/is-same-value' );
 ```
 
-#### isSameValuef( z1, z2 )
+#### isSameValue( z1, z2 )
 
 Tests whether two single-precision complex floating-point numbers are the same value.
 
@@ -50,7 +50,7 @@ var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var z1 = new Complex64( 5.0, 3.0 );
 var z2 = new Complex64( 5.0, 3.0 );
 
-var out = isSameValuef( z1, z2 );
+var out = isSameValue( z1, z2 );
 // returns true
 ```
 
@@ -62,13 +62,13 @@ var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var z1 = new Complex64( NaN, NaN );
 var z2 = new Complex64( NaN, NaN );
 
-var out = isSameValuef( z1, z2 );
+var out = isSameValue( z1, z2 );
 // returns true
 
 z1 = new Complex64( -0.0, 0.0 );
 z2 = new Complex64( 0.0, -0.0 );
 
-out = isSameValuef( z1, z2 );
+out = isSameValue( z1, z2 );
 // returns false
 ```
 
@@ -98,21 +98,21 @@ out = isSameValuef( z1, z2 );
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var isSameValuef = require( '@stdlib/complex/float32/base/assert/is-same-value' );
+var isSameValue = require( '@stdlib/complex/float32/base/assert/is-same-value' );
 
 var z1 = new Complex64( 5.0, 3.0 );
 var z2 = new Complex64( 5.0, 3.0 );
-var out = isSameValuef( z1, z2 );
+var out = isSameValue( z1, z2 );
 // returns true
 
 z1 = new Complex64( -5.0, -3.0 );
 z2 = new Complex64( 5.0, 3.0 );
-out = isSameValuef( z1, z2 );
+out = isSameValue( z1, z2 );
 // returns false
 
 z1 = new Complex64( NaN, 3.0 );
 z2 = new Complex64( NaN, 3.0 );
-out = isSameValuef( z1, z2 );
+out = isSameValue( z1, z2 );
 // returns true
 ```
 

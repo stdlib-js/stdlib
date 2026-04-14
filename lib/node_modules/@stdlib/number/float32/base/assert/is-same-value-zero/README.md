@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# isSameValueZerof
+# isSameValueZero
 
 > Test if two single-precision floating-point numbers are the same value.
 
@@ -27,32 +27,32 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var isSameValueZerof = require( '@stdlib/number/float32/base/assert/is-same-value-zero' );
+var isSameValueZero = require( '@stdlib/number/float32/base/assert/is-same-value-zero' );
 ```
 
-#### isSameValueZerof( a, b )
+#### isSameValueZero( a, b )
 
 Tests if two single-precision floating-point numbers `a` and `b` are the same value.
 
 ```javascript
 var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 
-var bool = isSameValueZerof( toFloat32( 3.14 ), toFloat32( 3.14 ) );
+var bool = isSameValueZero( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 // returns true
 
-bool = isSameValueZerof( toFloat32( 5.0 ), toFloat32( 3.0 ) );
+bool = isSameValueZero( toFloat32( 5.0 ), toFloat32( 3.0 ) );
 // returns false
 ```
 
 In contrast to the strict equality operator `===`, the function treats `NaNs` as the same value.
 
-<!-- eslint-disable use-isnan -->
+<!-- eslint-disable use-isnan, @cspell/spellchecker -->
 
 ```javascript
 var bool = ( NaN === NaN );
 // returns false
 
-bool = isSameValueZerof( NaN, NaN );
+bool = isSameValueZero( NaN, NaN );
 // returns true
 ```
 
@@ -64,10 +64,10 @@ In contrast to the [SameValue Algorithm][@stdlib/number/float32/base/assert/is-s
 var bool = ( 0.0 === -0.0 );
 // returns true
 
-bool = isSameValueZerof( 0.0, -0.0 );
+bool = isSameValueZero( 0.0, -0.0 );
 // returns true
 
-bool = isSameValueZerof( -0.0, 0.0 );
+bool = isSameValueZero( -0.0, 0.0 );
 // returns true
 ```
 
@@ -89,18 +89,18 @@ bool = isSameValueZerof( -0.0, 0.0 );
 
 ```javascript
 var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
-var isSameValueZerof = require( '@stdlib/number/float32/base/assert/is-same-value-zero' );
+var isSameValueZero = require( '@stdlib/number/float32/base/assert/is-same-value-zero' );
 
-var bool = isSameValueZerof( toFloat32( 3.14 ), toFloat32( 3.14 ) );
+var bool = isSameValueZero( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 // returns true
 
-bool = isSameValueZerof( toFloat32( 0.0 ), toFloat32( 0.0 ) );
+bool = isSameValueZero( toFloat32( 0.0 ), toFloat32( 0.0 ) );
 // returns true
 
-bool = isSameValueZerof( toFloat32( -0.0 ), toFloat32( 0.0 ) );
+bool = isSameValueZero( toFloat32( -0.0 ), toFloat32( 0.0 ) );
 // returns true
 
-bool = isSameValueZerof( toFloat32( NaN ), toFloat32( NaN ) );
+bool = isSameValueZero( toFloat32( NaN ), toFloat32( NaN ) );
 // returns true
 ```
 

@@ -20,7 +20,7 @@ limitations under the License.
 
 # Uniform Random Numbers
 
-> Generate pseudorandom numbers drawn from a [uniform][@stdlib/random/base/uniform] distribution.
+> Generate pseudorandom numbers drawn from a [continuous uniform][@stdlib/random/base/uniform] distribution.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var uniform = require( '@stdlib/random/uniform' );
 
 #### uniform( shape, a, b\[, options] )
 
-Returns an [ndarray][@stdlib/ndarray/ctor] containing pseudorandom numbers drawn from a [uniform][@stdlib/random/base/uniform] distribution.
+Returns an [ndarray][@stdlib/ndarray/ctor] containing pseudorandom numbers drawn from a [continuous uniform][@stdlib/random/base/uniform] distribution.
 
 ```javascript
 var arr = uniform( [ 3, 3 ], 0.0, 1.0 );
@@ -55,7 +55,7 @@ var array = require( '@stdlib/ndarray/array' );
 var a = array( [ [ [ 0.0 ] ], [ [ 10.0 ] ] ] );
 // returns <ndarray>
 
-var b = array( [ [ [ 10.0 ] ], [ [ 20.0 ] ] ] );
+var b = array( [ [ [ 1.0 ] ], [ [ 20.0 ] ] ] );
 // returns <ndarray>
 
 var shape = getShape( a );
@@ -100,13 +100,13 @@ var opts = {
 var arr = uniform( [ 3, 3 ], 0.0, 1.0, opts );
 // returns <ndarray>
 
-var dt = getDType( arr );
+var dt = String( getDType( arr ) );
 // returns 'generic'
 ```
 
 #### uniform.assign( a, b, out )
 
-Fills an [ndarray][@stdlib/ndarray/ctor] with pseudorandom numbers drawn from a [uniform][@stdlib/random/base/uniform] distribution.
+Fills an [ndarray][@stdlib/ndarray/ctor] with pseudorandom numbers drawn from a [continuous uniform][@stdlib/random/base/uniform] distribution.
 
 ```javascript
 var zeros = require( '@stdlib/ndarray/zeros' );
@@ -129,7 +129,7 @@ The method has the following parameters:
 
 #### uniform.factory( \[options] )
 
-Returns a function for generating pseudorandom numbers drawn from a [uniform][@stdlib/random/base/uniform] distribution.
+Returns a function for generating pseudorandom numbers drawn from a [continuous uniform][@stdlib/random/base/uniform] distribution.
 
 ```javascript
 var getShape = require( '@stdlib/ndarray/shape' );
@@ -321,7 +321,7 @@ var sz = random.byteLength;
 
 ```javascript
 var logEach = require( '@stdlib/console/log-each' );
-var toArray = require( '@stdlib/ndarray/to-array' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var uniform = require( '@stdlib/random/uniform' );
 
 // Create a function for generating random arrays originating from the same state:
@@ -336,7 +336,7 @@ var x2 = random( [ 5 ], 0.0, 1.0 );
 var x3 = random( [ 5 ], 0.0, 1.0 );
 
 // Print the contents:
-logEach( '%f, %f, %f', toArray( x1 ), toArray( x2 ), toArray( x3 ) );
+logEach( '%f, %f, %f', ndarray2array( x1 ), ndarray2array( x2 ), ndarray2array( x3 ) );
 
 // Create another function for generating random arrays with the original state:
 random = uniform.factory({
@@ -348,7 +348,7 @@ random = uniform.factory({
 var x4 = random( [ 3, 5 ], 0.0, 1.0 );
 
 // Convert to a list of nested arrays:
-var arr = toArray( x4 );
+var arr = ndarray2array( x4 );
 
 // Print the contents:
 console.log( '' );

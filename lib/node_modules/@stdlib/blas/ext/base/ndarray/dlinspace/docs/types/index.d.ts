@@ -40,7 +40,6 @@ import { float64ndarray, boolndarray } from '@stdlib/types/ndarray';
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
 * var xbuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -59,10 +58,7 @@ import { float64ndarray, boolndarray } from '@stdlib/types/ndarray';
 * });
 *
 * var out = dlinspace( [ x, start, stop, endpoint ] );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( out );
-* // returns [ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
+* // returns <ndarray>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 */
 declare function dlinspace( arrays: [ float64ndarray, float64ndarray, float64ndarray, boolndarray ] ): float64ndarray;
 
