@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Probability Density Function
 
-> [Half-Normal][half-normal-distribution] distribution logarithm of [probability density function (PDF)][pdf].
+> [Half-normal][half-normal-distribution] distribution logarithm of [probability density function (PDF)][pdf].
 
 <section class="intro">
 
@@ -175,7 +175,7 @@ logEachMap( 'x: %0.4f, σ: %0.4f, ln(f(x;σ)): %0.4f', x, sigma, logpdf );
 
 #### stdlib_base_dists_halfnormal_logpdf( x, sigma )
 
-Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [Half-Normal][half-normal-distribution] distribution with parameter `sigma` (scale parameter).
+Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [half-normal][half-normal-distribution] distribution with parameter `sigma` (scale parameter).
 
 ```c
 double out = stdlib_base_dists_halfnormal_logpdf( 0.8, 1.0 );
