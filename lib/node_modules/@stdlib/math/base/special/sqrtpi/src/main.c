@@ -28,7 +28,7 @@
 *
 * @example
 * double out = stdlib_base_sqrtpi( 4.0 );
-* // returns 3.5449
+* // returns ~3.5449
 */
 double stdlib_base_sqrtpi( const double x ) {
 	return stdlib_base_sqrt( x * STDLIB_CONSTANT_FLOAT64_PI );
