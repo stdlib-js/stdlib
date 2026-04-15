@@ -25,7 +25,7 @@ MARKDOWN_LINT ?= $(REMARK)
 REMARK_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 
 # Define the path to the remark configuration file for linting package READMEs:
-REMARK_CONF_PKG_READMES ?= $(CONFIG_DIR)/remark/.remarkrc.pkg-readmes.js
+REMARK_CONF_PKG_READMES ?= $(CONFIG_DIR)/remark/.remarkrc.pkg_readmes.js
 
 # Define the path to the remark configuration file for linting documentation files:
 REMARK_CONF_DOCS ?= $(CONFIG_DIR)/remark/.remarkrc.docs.js
