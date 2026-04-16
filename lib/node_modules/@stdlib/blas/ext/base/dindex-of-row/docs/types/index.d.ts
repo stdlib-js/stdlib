@@ -46,8 +46,8 @@ interface Routine {
 	* @returns row index
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
 	* var x = new Float64Array( [ 2.0, 4.0 ] );
@@ -81,8 +81,8 @@ interface Routine {
 	* @returns row index
 	*
 	* @example
-	* var Float64Array = require( `@stdlib/array/float64` );
-	* var Uint8Array = require( `@stdlib/array/uint8` );
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var Uint8Array = require( '@stdlib/array/uint8' );
 	*
 	* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
 	* var x = new Float64Array( [ 2.0, 4.0 ] );
@@ -114,8 +114,8 @@ interface Routine {
 * @returns row index
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
 * var x = new Float64Array( [ 2.0, 4.0 ] );
@@ -125,8 +125,8 @@ interface Routine {
 * // returns 1
 *
 * @example
-* var Float64Array = require( `@stdlib/array/float64` );
-* var Uint8Array = require( `@stdlib/array/uint8` );
+* var Float64Array = require( '@stdlib/array/float64' );
+* var Uint8Array = require( '@stdlib/array/uint8' );
 *
 * var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
 * var x = new Float64Array( [ 2.0, 4.0 ] );
