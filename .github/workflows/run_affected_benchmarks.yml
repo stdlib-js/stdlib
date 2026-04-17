@@ -131,7 +131,15 @@ jobs:
               files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
             fi
           fi
-          directories=$(for file in $files; do dirname $file; done | uniq | tr '\n' ' ' | sed 's/ $//')
+          directories=$(
+            for file in $files; do
+              d="$(dirname "$file")"
+              echo "$d" | sed -n 's#^\(lib/.*\)/benchmark/.*#\1/benchmark#p'
+            done \
+            | sort -u \
+            | tr '\n' ' ' \
+            | sed 's/ $//'
+          )
           echo "directories=${directories}" >> $GITHUB_OUTPUT
 
       # Get list of changed directories from workflow dispatch event:
@@ -150,5 +158,13 @@ jobs:
           else
             directories="${{ steps.changed-directories.outputs.directories }}"
           fi
+          if [ -z "$directories" ]; then
+            echo "No changed benchmark directories detected; skipping."
+            exit 0
+          fi
+          if [ -z "$directories" ]; then
+            echo "No changed benchmark directories detected; skipping."
+            exit 0
+          fi
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_benchmarks/run" "$directories"
-        timeout-minutes: 60
+        timeout-minutes: 120
