@@ -8,7 +8,7 @@
     ndarray is sorted in increasing order. When the sort order is equal to zero,
     the input ndarray is left unchanged.
 
-    The input ndarray is sorted *in-place* (i.e., the input strided array is
+    The input ndarray is sorted *in-place* (i.e., the input ndarray is
     *mutated*).
 
     Parameters

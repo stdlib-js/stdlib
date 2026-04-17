@@ -23,7 +23,7 @@
 import { typedndarray, float64ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Sorts a double-precision floating-point ndarray.
+* Sorts a one-dimensional double-precision floating-point ndarray.
 *
 * ## Notes
 *

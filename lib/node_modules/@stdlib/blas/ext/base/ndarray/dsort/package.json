@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/ndarray/dsort",
   "version": "0.0.0",
-  "description": "Sort a double-precision floating-point ndarray.",
+  "description": "Sort a one-dimensional double-precision floating-point ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
