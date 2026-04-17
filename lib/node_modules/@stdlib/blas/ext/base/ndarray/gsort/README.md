@@ -42,7 +42,6 @@ Sorts a one-dimensional ndarray.
 
 ```javascript
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ 1.0, -2.0, 3.0, -4.0 ], {
