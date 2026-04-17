@@ -36,8 +36,11 @@ commit_message="$1"
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
 
+# Determine git directory (resolves where `${root}/.git` is file OR directory):
+git_dir=$(git rev-parse --absolute-git-dir)
+
 # Define the path to a report generated during the pre-commit hook:
-pre_commit_report="${root}/.git/hooks-cache/pre_commit_report.yml"
+pre_commit_report="${git_dir}/hooks-cache/pre_commit_report.yml"
 
 
 # FUNCTIONS #
