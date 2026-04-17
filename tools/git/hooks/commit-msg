@@ -33,7 +33,7 @@ skip_lint="${SKIP_LINT_COMMIT}"
 # Get the path to a file containing the commit message:
 commit_message="$1"
 
-# Determine git directory (resolves where `${root}/.git` is file OR directory):
+# Resolve the location of the Git directory:
 git_dir=$(git rev-parse --absolute-git-dir)
 
 # Define the path to a report generated during the pre-commit hook:

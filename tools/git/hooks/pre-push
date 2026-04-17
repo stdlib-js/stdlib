@@ -59,7 +59,7 @@ GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
 
-# Determine git directory (resolves where `${root}/.git` is file OR directory):
+# Resolve the location of the Git directory:
 git_dir=$(git rev-parse --absolute-git-dir)
 
 # Define the path to a directory for caching hook results:
