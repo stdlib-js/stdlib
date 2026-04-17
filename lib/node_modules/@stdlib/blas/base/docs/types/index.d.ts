@@ -466,12 +466,12 @@ interface Namespace {
 	* @param K - number of columns in the matrix `op(A)` and number of rows in the matrix `op(B)`
 	* @param alpha - scalar constant
 	* @param A - first matrix
-	* @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
+	* @param LDA - stride between successive contiguous vectors of the matrix `A` (a.k.a., leading dimension of the matrix `A`)
 	* @param B - second matrix
-	* @param LDB - stride of the first dimension of `B` (a.k.a., leading dimension of the matrix `B`)
+	* @param LDB - stride between successive contiguous vectors of the matrix `B` (a.k.a., leading dimension of the matrix `B`)
 	* @param beta - scalar constant
 	* @param C - third matrix
-	* @param LDC - stride of the first dimension of `C` (a.k.a., leading dimension of the matrix `C`)
+	* @param LDC - stride between successive contiguous vectors of the matrix `C` (a.k.a., leading dimension of the matrix `C`)
 	* @returns `C`
 	*
 	* @example

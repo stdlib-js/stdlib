@@ -35,16 +35,12 @@ var sorthp = require( '@stdlib/blas/ext/sorthp' );
 Sorts an input [ndarray][@stdlib/ndarray/ctor] along one or more [ndarray][@stdlib/ndarray/ctor] dimensions using heapsort.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0 ] );
 
 var y = sorthp( x );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ -3.0, -1.0, 2.0 ]
+// returns <ndarray>[ -3.0, -1.0, 2.0 ]
 
 var bool = ( x === y );
 // returns true
@@ -63,62 +59,45 @@ The function accepts the following options:
 By default, the function sorts elements in increasing order. To sort in a different order, provide a `sortOrder` argument.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0 ] );
 
 var y = sorthp( x, -1.0 );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ 2.0, -1.0, -3.0 ]
+// returns <ndarray>[ 2.0, -1.0, -3.0 ]
 ```
 
 In addition to numeric values, one can specify the sort order via one of the following string literals: `'ascending'`, `'asc'`, `'descending'`, or `'desc'`. The first two literals indicate to sort in ascending (i.e., increasing) order. The last two literals indicate to sort in descending (i.e., decreasing) order.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0 ] );
 
 // Sort in ascending order:
 var y = sorthp( x, 'asc' );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ -3.0, -1.0, 2.0 ]
+// returns <ndarray>[ -3.0, -1.0, 2.0 ]
 
 // Sort in descending order:
 y = sorthp( x, 'descending' );
-// returns <ndarray>
-
-arr = ndarray2array( y );
-// returns [ 2.0, -1.0, -3.0 ]
+// returns <ndarray>[ 2.0, -1.0, -3.0 ]
 ```
 
 By default, the function performs the operation over all elements in a provided input [ndarray][@stdlib/ndarray/ctor]. To perform the operation over specific dimensions, provide a `dims` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0, 4.0 ], {
     'shape': [ 2, 2 ],
     'order': 'row-major'
 });
-
-var v = ndarray2array( x );
-// returns [ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ]
+// returns <ndarray>[ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ]
 
 var y = sorthp( x, {
     'dims': [ 0 ]
 });
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ [ -3.0, 2.0 ], [ -1.0, 4.0 ] ]
+// returns <ndarray>[ [ -3.0, 2.0 ], [ -1.0, 4.0 ] ]
 ```
 
 </section>
