@@ -609,7 +609,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -621,10 +620,7 @@ interface Namespace {
 	* });
 	*
 	* var out = ns.dsortins( [ x, ord ] );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ -4.0, -2.0, 1.0, 3.0 ]
+	* // returns <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]
 	*/
 	dsortins: typeof dsortins;
 
@@ -640,7 +636,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -652,10 +647,7 @@ interface Namespace {
 	* });
 	*
 	* var out = ns.dsortsh( [ x, ord ] );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ -4.0, -2.0, 1.0, 3.0 ]
+	* // returns <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]
 	*/
 	dsortsh: typeof dsortsh;
 
@@ -823,7 +815,6 @@ interface Namespace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -836,13 +827,10 @@ interface Namespace {
 	* var initial = scalar2ndarray( 0.0, 'generic', 'row-major' );
 	*
 	* var v = ns.gcusumkbn( [ x, y, initial ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 4.0, 8.0, 10.0 ]
 	*/
 	gcusumkbn: typeof gcusumkbn;
 
@@ -853,7 +841,6 @@ interface Namespace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -866,13 +853,10 @@ interface Namespace {
 	* var initial = scalar2ndarray( 0.0, 'generic', 'row-major' );
 	*
 	* var v = ns.gcusumkbn2( [ x, y, initial ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 4.0, 8.0, 10.0 ]
 	*/
 	gcusumkbn2: typeof gcusumkbn2;
 
@@ -883,7 +867,6 @@ interface Namespace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -896,13 +879,10 @@ interface Namespace {
 	* var initial = scalar2ndarray( 0.0, 'generic', 'row-major' );
 	*
 	* var v = ns.gcusumors( [ x, y, initial ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 4.0, 8.0, 10.0 ]
 	*/
 	gcusumors: typeof gcusumors;
 
@@ -913,7 +893,6 @@ interface Namespace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -926,13 +905,10 @@ interface Namespace {
 	* var initial = scalar2ndarray( 0.0, 'generic', 'row-major' );
 	*
 	* var v = ns.gcusumpw( [ x, y, initial ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 4.0, 8.0, 10.0 ]
 	*/
 	gcusumpw: typeof gcusumpw;
 
@@ -1110,7 +1086,6 @@ interface Namespace {
 	*
 	* @example
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	*
 	* var xbuf = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
@@ -1129,10 +1104,7 @@ interface Namespace {
 	* });
 	*
 	* var out = ns.glinspace( [ x, start, stop, endpoint ] );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
+	* // returns <ndarray>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
 	glinspace: typeof glinspace;
 
@@ -1279,7 +1251,6 @@ interface Namespace {
 	* @returns input ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -1291,10 +1262,7 @@ interface Namespace {
 	* });
 	*
 	* var out = ns.gsorthp( [ x, ord ] );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ -4.0, -2.0, 1.0, 3.0 ]
+	* // returns <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]
 	*/
 	gsorthp: typeof gsorthp;
 
@@ -1459,7 +1427,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -1472,13 +1439,10 @@ interface Namespace {
 	* var initial = scalar2ndarray( 0.0, 'float32', 'row-major' );
 	*
 	* var v = ns.scusumkbn( [ x, y, initial ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 4.0, 8.0, 10.0 ]
 	*/
 	scusumkbn: typeof scusumkbn;
 
@@ -1490,7 +1454,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -1503,13 +1466,10 @@ interface Namespace {
 	* var initial = scalar2ndarray( 0.0, 'float32', 'row-major' );
 	*
 	* var v = ns.scusumkbn2( [ x, y, initial ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 4.0, 8.0, 10.0 ]
 	*/
 	scusumkbn2: typeof scusumkbn2;
 
@@ -1521,7 +1481,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -1534,13 +1493,10 @@ interface Namespace {
 	* var initial = scalar2ndarray( 0.0, 'float32', 'row-major' );
 	*
 	* var v = ns.scusumors( [ x, y, initial ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 4.0, 8.0, 10.0 ]
 	*/
 	scusumors: typeof scusumors;
 
@@ -1616,7 +1572,6 @@ interface Namespace {
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	*
 	* var xbuf = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -1635,10 +1590,7 @@ interface Namespace {
 	* });
 	*
 	* var out = ns.slinspace( [ x, start, stop, endpoint ] );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
+	* // returns <ndarray>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
 	slinspace: typeof slinspace;
 
@@ -1793,7 +1745,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
@@ -1805,10 +1756,7 @@ interface Namespace {
 	* });
 	*
 	* var out = ns.ssorthp( [ x, ord ] );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ -4.0, -2.0, 1.0, 3.0 ]
+	* // returns <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]
 	*/
 	ssorthp: typeof ssorthp;
 
