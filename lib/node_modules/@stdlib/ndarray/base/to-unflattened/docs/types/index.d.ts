@@ -31,7 +31,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * @returns output array
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 * // returns <ndarray>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
