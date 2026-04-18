@@ -81,7 +81,7 @@ jobs:
       # Check contributing guidelines acceptance:
       - name: 'Check contributing guidelines acceptance'
         env:
-          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number || inputs.pull_request_number }}
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/check_contributing_guidelines_acceptance/run" $PR_NUMBER
