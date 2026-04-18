@@ -119,10 +119,6 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
     napi_value value;
     napi_status status = stdlib_napi_create_uint64( env, 1, &value );
     assert( status == napi_ok );
-    if ( err != NULL ) {
-        assert( napi_throw( env, err ) == napi_ok );
-        return NULL;
-    }
 
     // ...
 }
@@ -186,6 +182,8 @@ The macro expects the following arguments:
 <!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+-   The generated JavaScript value is a `BigInt` (N-API Version 6+).
 
 </section>
 
