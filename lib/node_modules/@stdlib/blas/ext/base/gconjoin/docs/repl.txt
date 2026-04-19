@@ -1,0 +1,95 @@
+
+{{alias}}( N, prefix, suffix, conjunction, oxfordComma, x, strideX )
+    Returns a string created by joining strided array elements into a human-
+    readable list using a conjunction.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns the prefix followed by the suffix.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    prefix: string
+        String to prepend.
+
+    suffix: string
+        String to append.
+
+    conjunction: string
+        Conjunction before the last element.
+
+    oxfordComma: boolean
+        Boolean specifying whether to include an Oxford comma.
+
+    x: Array|TypedArray
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    Returns
+    -------
+    str: string
+        Joined string.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var str = {{alias}}( x.length, '', '', 'and', true, x, 1 )
+    '1, 2, 3, and 4'
+
+
+{{alias}}.ndarray( N, prefix, suffix, conjunction, oxfordComma, x, sx, ox )
+    Returns a string created by joining strided array elements into a human-
+    readable list using a conjunction and alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    prefix: string
+        String to prepend.
+
+    suffix: string
+        String to append.
+
+    conjunction: string
+        Conjunction before the last element.
+
+    oxfordComma: boolean
+        Boolean specifying whether to include an Oxford comma.
+
+    x: Array|TypedArray
+        Input array.
+
+    sx: integer
+        Stride length.
+
+    ox: integer
+        Starting index.
+
+    Returns
+    -------
+    str: string
+        Joined string.
+
+    Examples
+    --------
+    > var x = [ 1, 2, 3, 4 ];
+    > var str = {{alias}}.ndarray( x.length, '', '', 'and', true, x, 1, 0 )
+    '1, 2, 3, and 4'
+
+    See Also
+    --------
