@@ -33,7 +33,7 @@ ifneq ($(OS), Darwin)
 endif
 
 # Define a command for listing package README files:
-FIND_MARKDOWN_PKG_READMES_CMD ?= find $(find_kernel_prefix) $(SRC_DIR)/@stdlib $(FIND_MARKDOWN_PKG_READMES_FLAGS)
+FIND_MARKDOWN_PKG_READMES_CMD ?= find $(find_kernel_prefix) $(SRC_DIR) $(FIND_MARKDOWN_PKG_READMES_FLAGS)
 
 # Define the list of package README files:
 MARKDOWN_PKG_READMES_FILES ?= $(shell $(FIND_MARKDOWN_PKG_READMES_CMD))
@@ -53,6 +53,6 @@ MARKDOWN_PKG_READMES_FILES ?= $(shell $(FIND_MARKDOWN_PKG_READMES_CMD))
 # make list-markdown-pkg-readmes MARKDOWN_PKG_READMES_FILTER=".*/math/base/special/abs/.*"
 #/
 list-markdown-pkg-readmes:
-	$(QUIET) find $(find_kernel_prefix) $(SRC_DIR)/@stdlib $(FIND_MARKDOWN_PKG_READMES_FLAGS) $(find_print_list)
+	$(QUIET) find $(find_kernel_prefix) $(SRC_DIR) $(FIND_MARKDOWN_PKG_READMES_FLAGS) $(find_print_list)
 
 .PHONY: list-markdown-pkg-readmes
