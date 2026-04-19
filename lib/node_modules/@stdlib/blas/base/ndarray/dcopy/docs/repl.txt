@@ -1,0 +1,37 @@
+
+{{alias}}( arrays )
+    Copies values from a one-dimensional double-precision floating-point ndarray
+    `x` into a one-dimensional double-precision floating-point ndarray `y`.
+
+    If provided an empty input ndarray, the function returns the output ndarray
+    unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing an input ndarray and an output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
+    > var ybuf = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+    > var dt = 'float64';
+    > var sh = [ xbuf.length ];
+    > var st = [ 1 ];
+    > var oo = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
+    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, st, oo, ord );
+
+    > {{alias}}( [ x, y ] );
+    > y
+    <ndarray>[ 4.0, 2.0, -3.0, 5.0, -1.0 ]
+
+    See Also
+    --------
+
