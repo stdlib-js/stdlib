@@ -1,0 +1,41 @@
+
+{{alias}}( dtype, shape, order, clbk[, thisArg] )
+    Returns an ndarray filled according to a callback function and having a
+    specified shape and data type.
+
+    The callback function is provided the following arguments:
+
+    - indices: current array element indices.
+
+    Parameters
+    ----------
+    dtype: string|DataType
+        Underlying data type.
+
+    shape: ArrayLikeObject<integer>
+        Array shape.
+
+    order: string
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style).
+
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback function execution context.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > function clbk() { return 10.0; };
+    > var arr = {{alias}}( 'float64', [ 2, 2 ], 'row-major', clbk )
+    <ndarray>[ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
+
+    See Also
+    --------
+
