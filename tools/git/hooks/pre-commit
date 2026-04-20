@@ -50,6 +50,9 @@ skip_editorconfig="${SKIP_LINT_EDITORCONFIG}"
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
 
+# Resolve the location of the Git directory:
+git_dir=$(git rev-parse --absolute-git-dir)
+
 # Define the path to a utility for linting filenames:
 lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
 
@@ -81,7 +84,7 @@ cppcheck_tests_fixtures_suppressions_list="${root}/etc/cppcheck/suppressions.tes
 cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
 # Define the path to a directory for caching hook results:
-cache_dir="${root}/.git/hooks-cache"
+cache_dir="${git_dir}/hooks-cache"
 
 # Define the path to a file for storing hook results:
 cache_file="${cache_dir}/pre_commit_report.yml"
