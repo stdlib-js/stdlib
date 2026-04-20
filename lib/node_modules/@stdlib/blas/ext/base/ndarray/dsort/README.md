@@ -20,7 +20,7 @@ limitations under the License.
 
 # dsort
 
-> Sort a double-precision floating-point ndarray.
+> Sort a one-dimensional double-precision floating-point ndarray.
 
 <section class="intro">
 
@@ -38,7 +38,7 @@ var dsort = require( '@stdlib/blas/ext/base/ndarray/dsort' );
 
 #### dsort( arrays )
 
-Sorts a double-precision floating-point ndarray.
+Sorts a one-dimensional double-precision floating-point ndarray.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
