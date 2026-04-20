@@ -43,7 +43,6 @@ Sorts a one-dimensional double-precision floating-point ndarray using Shellsort.
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
 var xbuf = new Float64Array( [ 1.0, -2.0, 3.0, -4.0 ] );
@@ -54,10 +53,7 @@ var order = scalar2ndarray( 1.0, {
 });
 
 var out = dsortsh( [ x, order ] );
-// returns <ndarray>
-
-var arr = ndarray2array( out );
-// returns [ -4.0, -2.0, 1.0, 3.0 ]
+// returns <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]
 ```
 
 The function has the following parameters:
