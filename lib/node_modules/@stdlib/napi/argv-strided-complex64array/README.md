@@ -147,7 +147,7 @@ The function accepts the following arguments:
 -   **data**: `[out] float**` pointer for returning a reference to the output array.
 -   **message1**: `[in] char*` error message if a value is not a `Float32Array`.
 -   **message2**: `[in] char*` error message if a value has insufficient elements.
--   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided a number, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
+-   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided a `Float32Array` or sufficient elements, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
 
 ```c
 napi_status stdlib_napi_argv_strided_complex64array( const napi_env env, const int64_t N, const int64_t stride, const napi_value value, float **data, const char *message1, const char *message2, napi_value *err );
