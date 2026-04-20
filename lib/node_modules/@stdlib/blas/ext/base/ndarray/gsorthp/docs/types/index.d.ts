@@ -33,7 +33,6 @@ import { typedndarray, genericndarray } from '@stdlib/types/ndarray';
 * @returns input ndarray
 *
 * @example
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
@@ -45,10 +44,7 @@ import { typedndarray, genericndarray } from '@stdlib/types/ndarray';
 * });
 *
 * var out = gsorthp( [ x, ord ] );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( out );
-* // returns [ -4.0, -2.0, 1.0, 3.0 ]
+* // returns <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]
 */
 declare function gsorthp<T extends typedndarray<unknown> | genericndarray<unknown> = typedndarray<unknown>>( arrays: [ T, typedndarray<number> ] ): T;
 
