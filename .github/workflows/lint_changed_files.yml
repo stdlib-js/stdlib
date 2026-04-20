@@ -341,6 +341,43 @@ jobs:
             make lint-typescript-declarations-files FILES="${files}"
           fi
 
+      # Lint TypeScript declarations test files:
+      - name: 'Lint TypeScript declarations test files'
+        if: success() || failure()
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to ESLint configuration file for linting TypeScript tests:
+          eslint_typescript_tests_conf="${root}/etc/eslint/.eslintrc.typescript.tests.js"
+
+          # Get changed files:
+          changed_files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n')
+
+          # Get directly changed `test.ts` files:
+          files=$(echo "${changed_files}" | grep '/docs/types/test\.ts$' | tr '\n' ' ' | sed 's/ $//')
+
+          # Also get `test.ts` files corresponding to changed `index.d.ts` files...
+          declaration_files=$(echo "${changed_files}" | grep '/docs/types/.*\.d\.ts$' | sed 's/ $//')
+          if [[ -n "${declaration_files}" ]]; then
+            while IFS= read -r decl_file; do
+              # Only process index.d.ts files (skip other .d.ts files)
+              if [[ "${decl_file}" == */index.d.ts ]]; then
+                # Replace `index.d.ts` with `test.ts` to get the test file path:
+                test_file="${decl_file%index.d.ts}test.ts"
+
+                # Check if the test file exists and isn't already in the list:
+                if [[ -f "${test_file}" ]] && [[ ! " ${files} " =~ [[:space:]]${test_file}[[:space:]] ]]; then
+                  files="${files} ${test_file}"
+                fi
+              fi
+            done <<< "${declaration_files}"
+          fi
+
+          if [[ -n "${files}" ]]; then
+            make lint-typescript-declarations-files FILES="${files}" ESLINT_TS_CONF="${eslint_typescript_tests_conf}"
+          fi
+
       # Lint license headers:
       - name: 'Lint license headers'
         if: success() || failure()
