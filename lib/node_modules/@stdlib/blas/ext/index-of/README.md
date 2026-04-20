@@ -43,10 +43,7 @@ var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 // Perform operation:
 var out = indexOf( x, 2.0 );
-// returns <ndarray>
-
-var idx = out.get();
-// returns 1
+// returns <ndarray>[ 1 ]
 ```
 
 The function has the following parameters:
@@ -73,10 +70,7 @@ var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 // Perform operation:
 var out = indexOf( x, 10.0 );
-// returns <ndarray>
-
-var idx = out.get();
-// returns -1
+// returns <ndarray>[ -1 ]
 ```
 
 By default, the function begins searching from the first element along the reduction dimension. To begin searching from a different index, provide a `fromIndex` argument.
@@ -90,16 +84,12 @@ var x = array( [ 1.0, 2.0, 3.0, 4.0, 2.0, 6.0 ] );
 
 // Perform operation:
 var out = indexOf( x, 2.0, 2 );
-// returns <ndarray>
-
-var idx = out.get();
-// returns 4
+// returns <ndarray>[ 4 ]
 ```
 
 By default, the function performs the operation over elements in the last dimension. To perform the operation over a different dimension, provide a `dim` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ] );
@@ -107,17 +97,13 @@ var x = array( [ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ] );
 var out = indexOf( x, -3.0, {
     'dim': 0
 });
-// returns <ndarray>
-
-var idx = ndarray2array( out );
-// returns [ 1, -1 ]
+// returns <ndarray>[ 1, -1 ]
 ```
 
 By default, the function excludes reduced dimensions from the output [ndarray][@stdlib/ndarray/ctor]. To include the reduced dimensions as singleton dimensions, set the `keepdims` option to `true`.
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 var x = array( [ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ] );
 
@@ -127,10 +113,7 @@ var opts = {
 };
 
 var out = indexOf( x, -3.0, opts );
-// returns <ndarray>
-
-var idx = ndarray2array( out );
-// returns [ [ 1, -1 ] ]
+// returns <ndarray>[ [ 1, -1 ] ]
 ```
 
 By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [data type][@stdlib/ndarray/dtypes] determined by the function's output data type [policy][@stdlib/ndarray/output-dtype-policies]. To override the default behavior, set the `dtype` option.
@@ -164,10 +147,7 @@ var y = zeros( [], {
 });
 
 var out = indexOf.assign( x, 3.0, y );
-// returns <ndarray>
-
-var idx = out.get();
-// returns 2
+// returns <ndarray>[ 2 ]
 
 var bool = ( out === y );
 // returns true
