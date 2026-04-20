@@ -72,7 +72,7 @@ interface Routine {
 *
 * @param N - number of indexed elements
 * @param x - first input array
-* @param strideX - stride length of `x
+* @param strideX - stride length of `x`
 * @param y - second input array
 * @param strideY - stride length of `y`
 * @returns sample correlation coefficient

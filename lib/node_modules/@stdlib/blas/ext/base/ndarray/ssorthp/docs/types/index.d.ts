@@ -34,7 +34,6 @@ import { typedndarray, float32ndarray } from '@stdlib/types/ndarray';
 *
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
@@ -46,10 +45,7 @@ import { typedndarray, float32ndarray } from '@stdlib/types/ndarray';
 * });
 *
 * var out = ssorthp( [ x, ord ] );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( out );
-* // returns [ -4.0, -2.0, 1.0, 3.0 ]
+* // returns <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]
 */
 declare function ssorthp( arrays: [ float32ndarray, typedndarray<number> ] ): float32ndarray;
 
