@@ -32,9 +32,7 @@
     > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
     > var o = {{alias:@stdlib/ndarray/from-scalar}}( 1.0 );
     > {{alias}}( [ x, o ] )
-    <ndarray>
-    > var data = x.data
-    [ -4.0, -2.0, 1.0, 3.0 ]
+    <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]
 
     See Also
     --------
