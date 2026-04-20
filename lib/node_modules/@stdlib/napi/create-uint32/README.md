@@ -119,10 +119,6 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
     napi_value value;
     napi_status status = stdlib_napi_create_uint32( env, 1, &value );
     assert( status == napi_ok );
-    if ( err != NULL ) {
-        assert( napi_throw( env, err ) == napi_ok );
-        return NULL;
-    }
 
     // ...
 }
