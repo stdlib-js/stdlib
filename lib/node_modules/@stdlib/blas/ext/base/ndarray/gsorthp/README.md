@@ -42,7 +42,6 @@ Sorts a one-dimensional ndarray using heapsort.
 
 ```javascript
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
 var xbuf = [ 1.0, -2.0, 3.0, -4.0 ];
@@ -53,10 +52,7 @@ var order = scalar2ndarray( 1.0, {
 });
 
 var out = gsorthp( [ x, order ] );
-// returns <ndarray>
-
-var arr = ndarray2array( out );
-// returns [ -4.0, -2.0, 1.0, 3.0 ]
+// returns <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]
 ```
 
 The function has the following parameters:
