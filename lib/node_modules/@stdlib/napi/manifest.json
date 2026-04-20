@@ -33,6 +33,7 @@
       "dependencies": [
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-bool",
+        "@stdlib/napi/argv-booleanarray",
         "@stdlib/napi/argv-complex64",
         "@stdlib/napi/argv-complex64array",
         "@stdlib/napi/argv-complex128",
