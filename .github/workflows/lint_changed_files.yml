@@ -147,9 +147,24 @@ jobs:
       - name: 'Lint Markdown files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | grep -v '^\.github/workflows/.*\.md$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '\.md$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
-            make lint-markdown-files FILES="${files}"
+            # Partition Markdown files by scope to match remark configs:
+            pkg_readme_files=$(echo "${files}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib/.*/README\.md$' | tr '\n' ' ' | sed 's/ $//' || true)
+            docs_files=$(echo "${files}" | tr ' ' '\n' | grep '^docs/' | tr '\n' ' ' | sed 's/ $//' || true)
+            other_files=$(echo "${files}" | tr ' ' '\n' | grep -v '\.github/workflows/.*\.md$' | grep -v 'lib/node_modules/@stdlib/.*/README\.md$' | grep -v '^docs/' | tr '\n' ' ' | sed 's/ $//' || true)
+
+            status=0
+            if [ -n "${pkg_readme_files}" ]; then
+              make lint-markdown-package-readme-files FILES="${pkg_readme_files}" || status=$?
+            fi
+            if [ -n "${docs_files}" ]; then
+              make lint-markdown-docs-files FILES="${docs_files}" || status=$?
+            fi
+            if [ -n "${other_files}" ]; then
+              make lint-markdown-files FILES="${other_files}" || status=$?
+            fi
+            exit $status
           fi
 
       # Lint shell script files:
