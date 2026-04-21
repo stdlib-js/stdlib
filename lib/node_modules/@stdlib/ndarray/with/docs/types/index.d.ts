@@ -42,10 +42,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var x = ndarray( 'generic', buffer, shape, strides, offset, order  );
 *
 * var out = ndarrayWith( x, [ 0, 0 ], 5 );
-* // returns <ndarray>
-*
-* var v = out.get( 0, 0 );
-* // returns 5
+* // returns <ndarray>[ [ 5, 2 ], [ 3, 4 ] ]
 */
 declare function ndarrayWith<T = unknown, U extends typedndarray<T> = typedndarray<T>>( x: typedndarray<T>, indices: Array<number>, value: T ): U;
 

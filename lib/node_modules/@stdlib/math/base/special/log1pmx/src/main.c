@@ -43,7 +43,7 @@
 *
 * @example
 * double out = stdlib_base_log1pmx( 0.0 );
-* // returns ~0.693
+* // returns 0.0
 */
 double stdlib_base_log1pmx( const double x ) {
 	double ax;
