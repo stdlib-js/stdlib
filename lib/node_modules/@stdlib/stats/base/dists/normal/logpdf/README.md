@@ -169,7 +169,7 @@ logEachMap( 'x: %0.4f, µ: %0.4f, σ: %0.4f, ln(f(x;µ,σ)): %0.4f', x, mu, sigm
 Evaluates the natural logarithm of the probability density function (logPDF) for a normal distribution.
 
 ```c
-double out = stdlib_base_dists_normal_pdf( 2.0, 0.0, 1.0 );
+double out = stdlib_base_dists_normal_logpdf( 2.0, 0.0, 1.0 );
 // returns ~-2.919
 ```
 
