@@ -39,7 +39,6 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
 * var xbuf = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
@@ -58,10 +57,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * });
 *
 * var out = glinspace( [ x, start, stop, endpoint ] );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( out );
-* // returns [ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
+* // returns <ndarray>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 */
 declare function glinspace<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, typedndarray<number>, typedndarray<number>, typedndarray<boolean> ] ): T;
 

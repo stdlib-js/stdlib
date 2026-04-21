@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Calculates the range of a one-dimensional ndarray according to a mask, ignoring `NaN` values.
@@ -40,7 +40,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var v = nanmskrange( [ x, mask ] );
 * // returns 4.0
 */
-declare function nanmskrange<T extends ndarray = ndarray>( arrays: [ T, T ] ): number;
+declare function nanmskrange<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, T ] ): number;
 
 
 // EXPORTS //
