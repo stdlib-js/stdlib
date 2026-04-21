@@ -171,7 +171,7 @@ logEachMap( 'k: %d, λ: %0.4f, Var(X;k,λ): %0.4f', k, lambda, variance );
 Returns the [variance][variance] of an [Erlang][erlang-distribution] distribution with parameters `k` (shape parameter) and `lambda` (rate parameter).
 
 ```c
-double y = stdlib_base_dists_beta_variance( 1, 1.0 );
+double y = stdlib_base_dists_erlang_variance( 1, 1.0 );
 // returns 1.0
 ```
 

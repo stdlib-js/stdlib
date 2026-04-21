@@ -43,7 +43,6 @@ Fills a one-dimensional single-precision floating-point ndarray with linearly sp
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
 var xbuf = new Float32Array( [ 0.0, 0.0, 0.0, 0.0 ] );
@@ -62,10 +61,7 @@ var endpoint = scalar2ndarray( true, {
 });
 
 var out = slinspace( [ x, start, end, endpoint ] );
-// returns <ndarray>
-
-var arr = ndarray2array( out );
-// returns [ 0.0, 1.0, 2.0, 3.0 ]
+// returns <ndarray>[ 0.0, 1.0, 2.0, 3.0 ]
 ```
 
 The function has the following parameters:
