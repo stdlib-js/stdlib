@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Returns the excess kurtosis for a Wald distribution with mean `mu` and shape parameter `lambda`.
+* Returns the excess kurtosis of a Wald distribution with mean `mu` and shape parameter `lambda`.
 *
 * ## Notes
 *
