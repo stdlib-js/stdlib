@@ -1,0 +1,24 @@
+
+{{alias}}( arrays )
+    Computes the minimum value of a sorted one-dimensional ndarray.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: number
+        Minimum value.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var x = {{alias:@stdlib/ndarray/base/ctor}}( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+    > {{alias}}( [ x ] )
+    1.0
+
+    See Also
+    --------
+

@@ -68,5 +68,82 @@
     "angle",
     "polyfill",
     "ponyfill"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "asinh",
+      "alias": "asinh",
+      "pkg_desc": "compute the hyperbolic arcsine of a double-precision floating-point number",
+      "desc": "computes the hyperbolic arcsine of a double-precision floating-point number",
+      "short_desc": "hyperbolic arcsine",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -5,
+              5
+            ]
+          },
+          "example_values": [
+            100,
+            -37.5,
+            0.42,
+            -250.8,
+            3.78,
+            -0.42,
+            1.97,
+            -4.63,
+            0.12,
+            -1.55,
+            4.41,
+            -0.93,
+            2.88,
+            -3.37,
+            0.68,
+            -2.46,
+            5,
+            -0.17,
+            -100,
+            250.3
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "hyperbolic arcsine",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "asinh",
+        "hyperbolic",
+        "inverse",
+        "arcsine",
+        "sine"
+      ],
+      "extra_keywords": [
+        "math.asinh"
+      ]
+    }
+  }
 }

@@ -42,7 +42,7 @@ var isNumericDataType = require( '@stdlib/ndarray/base/assert/is-numeric-data-ty
 
 #### isNumericDataType( value )
 
-Tests if an input `value` is a supported ndarray numeric data type.
+Tests if an input value is a supported ndarray numeric data type.
 
 ```javascript
 var bool = isNumericDataType( 'float32' );

@@ -59,7 +59,7 @@ declare function emptyLike( x: Array<any> ): Array<number>;
 * var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
-* // returns <Float32Array>[ 0.0, 0.0 ]
+* // returns <Float64Array>[ 0.0, 0.0 ]
 *
 * var arr = emptyLike( x, 'float32' );
 * // returns <Float32Array>
@@ -83,7 +83,7 @@ declare function emptyLike<T extends TypedArray | ComplexTypedArray | BooleanTyp
 * var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
-* // returns <Float32Array>[ 0.0, 0.0 ]
+* // returns <Float64Array>[ 0.0, 0.0 ]
 *
 * var arr = emptyLike( x, 'float32' );
 * // returns <Float32Array>

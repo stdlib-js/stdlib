@@ -119,6 +119,20 @@ eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 */
 eslint.rules[ 'stdlib/jsdoc-doctest' ] = 'off';
 
+/**
+* Do not enforce nested function elevation.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'off';
+
+/**
+* Warn when using string concatenation in benchmark descriptions.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/no-bench-string-concat' ] = 'warn';
+
 
 // EXPORTS //
 

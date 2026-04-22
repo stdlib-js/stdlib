@@ -66,10 +66,14 @@ declare function complexarray<T extends keyof DataTypeMap = 'complex128'>( lengt
 * @returns complex number typed array
 *
 * @example
+* var Complex128Array = require( '@stdlib/array/complex128' );
+*
 * var arr = complexarray( new Complex128Array( 2 ) );
 * // returns <Complex128Array>
 *
 * @example
+* var Complex128Array = require( '@stdlib/array/complex128' );
+*
 * var arr = complexarray( new Complex128Array( 2 ), 'complex64' );
 * // returns <Complex64Array>
 */

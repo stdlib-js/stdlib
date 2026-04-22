@@ -52,7 +52,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -67,15 +67,15 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
-      # Cache dependencies:
-      - name: 'Cache dependencies'
+      # Restore cache if up-to-date:
+      - name: 'Restore cache if up-to-date'
         # Pin action to full length commit SHA
-        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
+        uses: actions/cache/restore@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
         id: cache
         with:
           path: |
@@ -135,11 +135,19 @@ jobs:
         run: |
           make lint-editorconfig-files EDITORCONFIG_FORMAT=github-actions FILES="${{ steps.changed-files.outputs.files }}"
 
+      # Save cache after editorconfig-checker binary has been downloaded:
+      - name: 'Save cache after editorconfig-checker binary has been downloaded'
+        if: always() && steps.cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
+        with:
+          path: ${{ github.workspace }}/node_modules
+          key: ${{ steps.cache.outputs.cache-primary-key }}
+
       # Lint Markdown files:
       - name: 'Lint Markdown files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | grep -v '^\.github/workflows/.*\.md$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
             make lint-markdown-files FILES="${files}"
           fi
@@ -148,7 +156,7 @@ jobs:
       - name: 'Lint shell script files'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             # Install shellcheck:
             make install-deps-shellcheck
@@ -161,7 +169,7 @@ jobs:
       - name: 'Lint package.json files'
         if: success() || failure()
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_package_json_files" "${{ steps.changed-files.outputs.files }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_package_json_files" "${{ steps.changed-files.outputs.files }}"
 
       # Lint REPL help files...
       - name: 'Lint REPL help files'
@@ -264,9 +272,9 @@ jobs:
       - name: 'Setup R'
         if: ( success() || failure() ) && steps.check-r-files.outputs.files != ''
         # Pin action to full length commit SHA
-        uses: r-lib/actions/setup-r@bd49c52ffe281809afa6f0fecbf37483c5dd0b93 # v2.11.3
+        uses: r-lib/actions/setup-r@6f6e5bc62fba3a704f74e7ad7ef7676c5c6a2590 # v2.11.4
         with:
-          r-version: '3.5.3'
+          r-version: '4.3.3'
 
       # Lint R files:
       - name: 'Lint R files'
@@ -333,11 +341,48 @@ jobs:
             make lint-typescript-declarations-files FILES="${files}"
           fi
 
+      # Lint TypeScript declarations test files:
+      - name: 'Lint TypeScript declarations test files'
+        if: success() || failure()
+        run: |
+          # Determine root directory:
+          root=$(git rev-parse --show-toplevel)
+
+          # Define the path to ESLint configuration file for linting TypeScript tests:
+          eslint_typescript_tests_conf="${root}/etc/eslint/.eslintrc.typescript.tests.js"
+
+          # Get changed files:
+          changed_files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n')
+
+          # Get directly changed `test.ts` files:
+          files=$(echo "${changed_files}" | grep '/docs/types/test\.ts$' | tr '\n' ' ' | sed 's/ $//')
+
+          # Also get `test.ts` files corresponding to changed `index.d.ts` files...
+          declaration_files=$(echo "${changed_files}" | grep '/docs/types/.*\.d\.ts$' | sed 's/ $//')
+          if [[ -n "${declaration_files}" ]]; then
+            while IFS= read -r decl_file; do
+              # Only process index.d.ts files (skip other .d.ts files)
+              if [[ "${decl_file}" == */index.d.ts ]]; then
+                # Replace `index.d.ts` with `test.ts` to get the test file path:
+                test_file="${decl_file%index.d.ts}test.ts"
+
+                # Check if the test file exists and isn't already in the list:
+                if [[ -f "${test_file}" ]] && [[ ! " ${files} " =~ [[:space:]]${test_file}[[:space:]] ]]; then
+                  files="${files} ${test_file}"
+                fi
+              fi
+            done <<< "${declaration_files}"
+          fi
+
+          if [[ -n "${files}" ]]; then
+            make lint-typescript-declarations-files FILES="${files}" ESLINT_TS_CONF="${eslint_typescript_tests_conf}"
+          fi
+
       # Lint license headers:
       - name: 'Lint license headers'
         if: success() || failure()
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}")
+          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -v '\.github/workflows/.*\.md$' | grep -v '\.lock\.yml$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-license-headers-files FILES="${files}"
           fi

@@ -1223,7 +1223,155 @@ rules[ 'no-restricted-syntax' ] = [ 'error',
 	'ImportDeclaration',
 	'ImportSpecifier',
 	'ImportDefaultSpecifier',
-	'ImportNamespaceSpecifier'
+	'ImportNamespaceSpecifier',
+
+	// Enforce stdlib package usage over built-in methods:
+
+	// String.prototype.endsWith
+	{
+		'selector': 'CallExpression[callee.property.name="endsWith"]',
+		'message': 'Use `@stdlib/string/ends-with` or `@stdlib/string/base/ends-with` instead of String.prototype.endsWith.'
+	},
+
+	// String.prototype.startsWith
+	{
+		'selector': 'CallExpression[callee.property.name="startsWith"]',
+		'message': 'Use `@stdlib/string/starts-with` or `@stdlib/string/base/starts-with` instead of String.prototype.startsWith.'
+	},
+
+	// String.prototype.toLowerCase
+	{
+		'selector': 'CallExpression[callee.property.name="toLowerCase"]',
+		'message': 'Use `@stdlib/string/lowercase` or `@stdlib/string/base/lowercase` instead of String.prototype.toLowerCase.'
+	},
+
+	// String.prototype.toUpperCase
+	{
+		'selector': 'CallExpression[callee.property.name="toUpperCase"]',
+		'message': 'Use `@stdlib/string/uppercase` or `@stdlib/string/base/uppercase` instead of String.prototype.toUpperCase.'
+	},
+
+	// String.prototype.trim
+	{
+		'selector': 'CallExpression[callee.property.name="trim"]',
+		'message': 'Use `@stdlib/string/trim` or `@stdlib/string/base/trim` instead of String.prototype.trim.'
+	},
+
+	// String.prototype.trimStart / trimLeft
+	{
+		'selector': 'CallExpression[callee.property.name="trimStart"]',
+		'message': 'Use `@stdlib/string/left-trim` or `@stdlib/string/base/left-trim` instead of String.prototype.trimStart.'
+	},
+	{
+		'selector': 'CallExpression[callee.property.name="trimLeft"]',
+		'message': 'Use `@stdlib/string/left-trim` or `@stdlib/string/base/left-trim` instead of String.prototype.trimLeft.'
+	},
+
+	// String.prototype.trimEnd / trimRight
+	{
+		'selector': 'CallExpression[callee.property.name="trimEnd"]',
+		'message': 'Use `@stdlib/string/right-trim` or `@stdlib/string/base/right-trim` instead of String.prototype.trimEnd.'
+	},
+	{
+		'selector': 'CallExpression[callee.property.name="trimRight"]',
+		'message': 'Use `@stdlib/string/right-trim` or `@stdlib/string/base/right-trim` instead of String.prototype.trimRight.'
+	},
+
+	// Object.keys
+	{
+		'selector': 'CallExpression[callee.object.name="Object"][callee.property.name="keys"]',
+		'message': 'Use `@stdlib/utils/keys` instead of Object.keys.'
+	},
+
+	// Object.values
+	{
+		'selector': 'CallExpression[callee.object.name="Object"][callee.property.name="values"]',
+		'message': 'Use `@stdlib/utils/values` instead of Object.values.'
+	},
+
+	// Object.entries
+	{
+		'selector': 'CallExpression[callee.object.name="Object"][callee.property.name="entries"]',
+		'message': 'Use `@stdlib/utils/entries` instead of Object.entries.'
+	},
+
+	// Object.defineProperty
+	{
+		'selector': 'CallExpression[callee.object.name="Object"][callee.property.name="defineProperty"]',
+		'message': 'Use `@stdlib/utils/define-property` instead of Object.defineProperty.'
+	},
+
+	// fs.readFile
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="readFile"]',
+		'message': 'Use `@stdlib/fs/read-file` instead of fs.readFile.'
+	},
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="readFileSync"]',
+		'message': 'Use `@stdlib/fs/read-file` instead of fs.readFileSync.'
+	},
+
+	// fs.writeFile
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="writeFile"]',
+		'message': 'Use `@stdlib/fs/write-file` instead of fs.writeFile.'
+	},
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="writeFileSync"]',
+		'message': 'Use `@stdlib/fs/write-file` instead of fs.writeFileSync.'
+	},
+
+	// fs.readdir
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="readdir"]',
+		'message': 'Use `@stdlib/fs/read-dir` instead of fs.readdir.'
+	},
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="readdirSync"]',
+		'message': 'Use `@stdlib/fs/read-dir` instead of fs.readdirSync.'
+	},
+
+	// fs.exists
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="exists"]',
+		'message': 'Use `@stdlib/fs/exists` instead of fs.exists.'
+	},
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="existsSync"]',
+		'message': 'Use `@stdlib/fs/exists` instead of fs.existsSync.'
+	},
+
+	// fs.unlink
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="unlink"]',
+		'message': 'Use `@stdlib/fs/unlink` instead of fs.unlink.'
+	},
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="unlinkSync"]',
+		'message': 'Use `@stdlib/fs/unlink` instead of fs.unlinkSync.'
+	},
+
+	// fs.rename
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="rename"]',
+		'message': 'Use `@stdlib/fs/rename` instead of fs.rename.'
+	},
+	{
+		'selector': 'CallExpression[callee.object.name="fs"][callee.property.name="renameSync"]',
+		'message': 'Use `@stdlib/fs/rename` instead of fs.renameSync.'
+	},
+
+	// path.dirname
+	{
+		'selector': 'CallExpression[callee.object.name="path"][callee.property.name="dirname"]',
+		'message': 'Use `@stdlib/utils/dirname` instead of path.dirname.'
+	},
+
+	// path.extname
+	{
+		'selector': 'CallExpression[callee.object.name="path"][callee.property.name="extname"]',
+		'message': 'Use `@stdlib/utils/extname` instead of path.extname.'
+	}
 ];
 
 /**
@@ -1405,7 +1553,7 @@ rules[ 'object-curly-spacing' ] = [ 'warn', 'always', {
 * Require newlines between each object property.
 *
 * @name object-property-newline
-* memberof rules
+* @memberof rules
 * @type {Array}
 * @see [object-property-newline]{@link https://eslint.org/docs/rules/object-property-newline}
 *

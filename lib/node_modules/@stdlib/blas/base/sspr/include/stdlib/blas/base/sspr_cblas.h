@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 2 routine `cblas_sspr`.
 */
-#ifndef SSPR_CBLAS_H
-#define SSPR_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_SSPR_CBLAS_H
+#define STDLIB_BLAS_BASE_SSPR_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -40,4 +40,4 @@ void API_SUFFIX(cblas_sspr)( const CBLAS_LAYOUT order, const CBLAS_UPLO uplo, co
 }
 #endif
 
-#endif // !SSPR_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_SSPR_CBLAS_H

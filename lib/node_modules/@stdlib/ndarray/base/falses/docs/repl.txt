@@ -1,0 +1,30 @@
+
+{{alias}}( dtype, shape, order )
+    Returns an ndarray filled with `false` values and having a specified shape
+    and data type.
+
+    Parameters
+    ----------
+    dtype: string|DataType
+        Underlying data type. Must be a "boolean" data type.
+
+    shape: ArrayLikeObject<integer>
+        Array shape.
+
+    order: string
+        Specifies whether an array is row-major (C-style) or column-major
+        (Fortran-style).
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 'bool', [ 2, 2 ], 'row-major' )
+    <ndarray>[ [ false, false ], [ false, false ] ]
+
+    See Also
+    --------
+

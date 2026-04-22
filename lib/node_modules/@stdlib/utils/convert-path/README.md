@@ -67,7 +67,7 @@ The following output path conventions are supported:
 
 -   A Windows [extended-length path][extended-length-path] **cannot** be converted to either a `mixed` or `posix` path convention, as forward slashes cannot be used as path separators.
 -   If a POSIX path begins with `/[A-Za-z]/` (e.g., `/c/`), the path is assumed to begin with a volume name.
--   The function makes no attempt to verify that a provided path is valid. 
+-   The function makes no attempt to verify that a provided path is valid.
 
 </section>
 

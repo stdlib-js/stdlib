@@ -33,11 +33,11 @@
 */
 double stdlib_base_dists_erlang_mean( const int32_t k, const double lambda ) {
 	if (
-		k <= 0.0 ||
+		k <= 0 ||
 		stdlib_base_is_nan( lambda ) ||
 		lambda <= 0.0
 	) {
 		return 0.0/0.0; // NaN
 	}
-	return k / lambda;
+	return (double)k / lambda;
 }

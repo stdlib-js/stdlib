@@ -119,10 +119,6 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
     napi_value value;
     napi_status status = stdlib_napi_create_complex_like( env, 3.0, 5.0, &value );
     assert( status == napi_ok );
-    if ( err != NULL ) {
-        assert( napi_throw( env, err ) == napi_ok );
-        return NULL;
-    }
 
     // ...
 }

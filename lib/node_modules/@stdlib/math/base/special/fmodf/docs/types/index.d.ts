@@ -35,7 +35,7 @@
 *
 * @example
 * var v = fmodf( 8.9, 3.0 );
-* // returns 2.9
+* // returns ~2.9
 *
 * @example
 * var v = fmodf( NaN, 3.0 );
