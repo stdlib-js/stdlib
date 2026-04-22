@@ -17,7 +17,7 @@
     options: Object (optional)
         Options.
 
-    options.dtype: string (optional)
+    options.dtype: string|DataType (optional)
         Underlying data type. Default: 'float64'.
 
     options.order: string (optional)
@@ -56,10 +56,6 @@
     --------
     > var arr = {{alias}}( [ 2, 2 ] )
     <ndarray>
-    > var sh = arr.shape
-    [ 2, 2 ]
-    > var dt = arr.dtype
-    'float64'
 
     See Also
     --------
