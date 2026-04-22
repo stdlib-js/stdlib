@@ -1,0 +1,38 @@
+
+{{alias}}( x )
+    Reinterprets a single-precision complex floating-point ndarray as a real-
+    valued single-precision floating-point ndarray containing interleaved real
+    and imaginary components.
+
+    The returned ndarray is a view on the input ndarray data buffer.
+
+    The returned ndarray has an additional trailing dimension of size two whose
+    elements correspond to the real and imaginary components, respectively, of
+    each complex-valued element in the input ndarray.
+
+    The returned ndarray is a "base" ndarray, and, thus, the returned ndarray
+    does not perform bounds checking or afford any of the guarantees of the
+    non-base ndarray constructor. The primary intent of this function is to
+    reinterpret an ndarray-like object within internal implementations and to
+    do so with minimal overhead.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Single-precision floating-point ndarray view.
+
+    Examples
+    --------
+    > var dt = 'complex64';
+    > var x = {{alias:@stdlib/ndarray/base/zeros}}( dt, [ 2, 2 ], 'row-major' );
+    > var out = {{alias}}( x )
+    <ndarray>[ [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ], [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] ]
+
+    See Also
+    --------
+
