@@ -42,7 +42,7 @@ var rot90 = require( '@stdlib/ndarray/base/rot90' );
 
 #### rot90( x, dims, k, writable )
 
-Rotates an ndarray 90 degrees in the plane specified by two dimension indices.
+Rotates an ndarray 90 degrees in a specified plane.
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
