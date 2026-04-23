@@ -1,0 +1,34 @@
+
+{{alias}}( arrays )
+    Multiplies a one-dimensional single-precision complex floating-point
+    ndarray `x` by a constant `alpha` and adds the result to a one-dimensional
+    single-precision complex floating-point ndarray `y`.
+
+    If provided an empty input ndarray, the function returns the output ndarray
+    unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing an input ndarray, an output ndarray, and
+        a zero-dimensional ndarray containing a scalar constant `alpha`.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/complex64}}( [ 4.0, 2.0, -3.0, 5.0 ] );
+    > var y = new {{alias:@stdlib/ndarray/vector/complex64}}( [ 2.0, 6.0, -1.0, -4.0 ] );
+    > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 2.0 );
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( ca, { 'dtype': 'complex64' } );
+
+    > {{alias}}( [ x, y, alpha ] );
+    > y
+    <ndarray>[ <Complex64>[ 2.0, 16.0 ], <Complex64>[ -14.0, -5.0 ] ]
+
+    See Also
+    --------
+

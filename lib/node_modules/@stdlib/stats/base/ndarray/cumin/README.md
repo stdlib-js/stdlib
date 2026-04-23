@@ -41,7 +41,6 @@ var cumin = require( '@stdlib/stats/base/ndarray/cumin' );
 Computes the cumulative minimum value of a one-dimensional ndarray.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
 var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
@@ -51,13 +50,10 @@ var ybuf = [ 0.0, 0.0, 0.0, 0.0 ];
 var y = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
 
 var v = cumin( [ x, y ] );
-// returns <ndarray>
+// returns <ndarray>[ 1.0, 1.0, 1.0, 1.0 ]
 
 var bool = ( v === y );
 // returns true
-
-var arr = ndarray2array( v );
-// returns [ 1.0, 1.0, 1.0, 1.0 ]
 ```
 
 The function has the following parameters:
