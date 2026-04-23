@@ -21,7 +21,7 @@
 // MAIN //
 
 var config = {
-	'plugins': require( './plugins' )
+	'plugins': require( './plugins/pkg_readmes.js' )
 };
 
 

@@ -20,7 +20,11 @@
 
 // MAIN //
 
-var plugins = require( './base.js' );
+var plugins = [];
+
+plugins = plugins.concat( require( './base.js' ) );
+plugins.push( require( './lint-expected-html-sections' ) );
+plugins.push( require( './lint-html-section-structure' ) );
 
 
 // EXPORTS //
