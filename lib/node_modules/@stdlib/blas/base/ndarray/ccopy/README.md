@@ -41,14 +41,10 @@ var ccopy = require( '@stdlib/blas/base/ndarray/ccopy' );
 Copies values from a one-dimensional single-precision complex floating-point ndarray `x` into a one-dimensional single-precision complex floating-point ndarray `y`.
 
 ```javascript
-var Complex64Array = require( '@stdlib/array/complex64' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
 
-var xbuf = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-var x = new ndarray( 'complex64', xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
-
-var ybuf = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-var y = new ndarray( 'complex64', ybuf, [ 3 ], [ 1 ], 0, 'row-major' );
+var x = new Complex64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+var y = new Complex64Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 var z = ccopy( [ x, y ] );
 // returns <ndarray>[ <Complex64>[ 1.0, 2.0 ], <Complex64>[ 3.0, 4.0 ], <Complex64>[ 5.0, 6.0 ] ]
@@ -59,7 +55,10 @@ var bool = ( y === z );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing an input ndarray and an output ndarray.
+-   **arrays**: array-like object containing the following ndarrays in order:
+
+    -   input ndarray
+    -   output ndarray
 
 </section>
 
@@ -79,8 +78,7 @@ The function has the following parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var Complex64Array = require( '@stdlib/array/complex64' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ccopy = require( '@stdlib/blas/base/ndarray/ccopy' );
 
@@ -88,12 +86,10 @@ var opts = {
     'dtype': 'float32'
 };
 
-var xbuf = new Complex64Array( discreteUniform( 10, 0, 100, opts ) );
-var x = new ndarray( 'complex64', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = new Complex64Vector( discreteUniform( 10, 0, 100, opts ) );
 console.log( ndarray2array( x ) );
 
-var ybuf = new Complex64Array( discreteUniform( xbuf.length*2, 0, 10, opts ) );
-var y = new ndarray( 'complex64', ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
+var y = new Complex64Vector( discreteUniform( 10, 0, 10, opts ) );
 console.log( ndarray2array( y ) );
 
 var out = ccopy( [ x, y ] );

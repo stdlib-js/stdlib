@@ -1745,6 +1745,7 @@
 "@stdlib/array/float64",Float64Array
 "@stdlib/array/fixed-endian-float64",Float64ArrayFE
 "@stdlib/array/little-endian-float64",Float64ArrayLE
+"@stdlib/ndarray/vector/float64",Float64Vector
 "@stdlib/utils/for-each",forEach
 "@stdlib/utils/async/for-each",forEachAsync
 "@stdlib/string/for-each",forEachChar

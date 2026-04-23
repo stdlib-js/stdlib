@@ -17,15 +17,8 @@
 
     Examples
     --------
-    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
-    > var ybuf = new {{alias:@stdlib/array/float64}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
-    > var dt = 'float64';
-    > var sh = [ xbuf.length ];
-    > var st = [ 1 ];
-    > var oo = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
-    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, st, oo, ord );
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
+    > var y = new {{alias:@stdlib/ndarray/vector/float64}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
     > {{alias}}( [ x, y ] )
     -5.0
 

@@ -41,14 +41,10 @@ var zcopy = require( '@stdlib/blas/base/ndarray/zcopy' );
 Copies values from a one-dimensional double-precision complex floating-point ndarray `x` into a one-dimensional double-precision complex floating-point ndarray `y`.
 
 ```javascript
-var Complex128Array = require( '@stdlib/array/complex128' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 
-var xbuf = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-var x = new ndarray( 'complex128', xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
-
-var ybuf = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-var y = new ndarray( 'complex128', ybuf, [ 3 ], [ 1 ], 0, 'row-major' );
+var x = new Complex128Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+var y = new Complex128Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 var z = zcopy( [ x, y ] );
 // returns <ndarray>[ <Complex128>[ 1.0, 2.0 ], <Complex128>[ 3.0, 4.0 ], <Complex128>[ 5.0, 6.0 ] ]
@@ -59,7 +55,10 @@ var bool = ( y === z );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing an input ndarray and an output ndarray.
+-   **arrays**: array-like object containing the following ndarrays in order:
+
+    -   input ndarray
+    -   output ndarray
 
 </section>
 
@@ -79,8 +78,7 @@ The function has the following parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var Complex128Array = require( '@stdlib/array/complex128' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var zcopy = require( '@stdlib/blas/base/ndarray/zcopy' );
 
@@ -88,12 +86,10 @@ var opts = {
     'dtype': 'float64'
 };
 
-var xbuf = new Complex128Array( discreteUniform( 10, 0, 100, opts ) );
-var x = new ndarray( 'complex128', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = new Complex128Vector( discreteUniform( 10, 0, 100, opts ) );
 console.log( ndarray2array( x ) );
 
-var ybuf = new Complex128Array( discreteUniform( xbuf.length*2, 0, 10, opts ) );
-var y = new ndarray( 'complex128', ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
+var y = new Complex128Vector( discreteUniform( 10, 0, 10, opts ) );
 console.log( ndarray2array( y ) );
 
 var out = zcopy( [ x, y ] );

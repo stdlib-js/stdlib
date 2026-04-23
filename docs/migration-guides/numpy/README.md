@@ -35,10 +35,10 @@ limitations under the License.
 | Broadcast a scalar to a specified shape | `np.broadcast_to(np.array(scalar), shape)` | [`broadcastScalar(scalar, shape)`][@stdlib/ndarray/broadcast-scalar] |
 | Copy an array | `np.copy(x)` | [`copy(x)`][@stdlib/ndarray/copy] |
 | Count the number of falsy values in an array | `x.size-np.count_nonzero(x)` | [`countFalsy(x)`][@stdlib/ndarray/count-falsy] |
-| Count the number of truthy values in an array | `np.count_nonzeros(x)` | [`countTruthy(x)`][@stdlib/ndarray/count-truthy] |
+| Count the number of truthy values in an array | `np.count_nonzero(x)` | [`countTruthy(x)`][@stdlib/ndarray/count-truthy] |
 | Test whether an array includes a specific value | `np.any(np.equal(x,v))` | [`includes(x,v)`][@stdlib/ndarray/includes] |
 | Reverse the elements along a dimension | `np.flip(x, axis=dim)` | [`reverseDimension(x, dim)`][@stdlib/ndarray/reverse-dimension] |
-| Prepend a a specified number of singleton dimensions | `np.reshape(x, (1,)*n + x.shape)` | [`prependSingletonDimensions(x, n)`][@stdlib/ndarray/prepend-singleton-dimensions] |
+| Prepend a specified number of singleton dimensions | `np.reshape(x, (1,)*n + x.shape)` | [`prependSingletonDimensions(x, n)`][@stdlib/ndarray/prepend-singleton-dimensions] |
 | Test whether an array contains at least `n` truthy values | `np.count_nonzero(x) >= n` | [`some(x, n)`][@stdlib/ndarray/some] |
 
 <!-- lint enable table-pipe-alignment -->
