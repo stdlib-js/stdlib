@@ -121,9 +121,42 @@ y = mycdf( 1.5 );
 // returns ~0.478
 ```
 
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var cdf = require( '@stdlib/stats/base/dists/chi/cdf' );
+
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 20, 0.0, 10.0, opts );
+var k = discreteUniform( 20, 0, 10, opts );
+
+logEachMap( 'x: %0.4f, k: %d, F(x;k): %0.4f', x, k, cdf );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
 * * *
 
-### C APIs
+<section class="c">
+
+## C APIs
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -137,7 +170,7 @@ y = mycdf( 1.5 );
 
 <section class="usage">
 
-#### Usage
+### Usage
 
 ```c
 #include "stdlib/stats/base/dists/chi/cdf.h"
@@ -213,32 +246,7 @@ int main( void ) {
 
 </section>
 
-<!-- /.usage -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var uniform = require( '@stdlib/random/array/uniform' );
-var logEachMap = require( '@stdlib/console/log-each-map' );
-var cdf = require( '@stdlib/stats/base/dists/chi/cdf' );
-
-var opts = {
-    'dtype': 'float64'
-};
-var x = uniform( 20, 0.0, 10.0, opts );
-var k = discreteUniform( 20, 0, 10, opts );
-
-logEachMap( 'x: %0.4f, k: %d, F(x;k): %0.4f', x, k, cdf );
-```
-
-</section>
-
-<!-- /.examples -->
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
