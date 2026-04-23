@@ -54,7 +54,7 @@ var alpha = scalar2ndarray( new Complex64( 1.0, 2.0 ), {
 var z = caxpy( [ x, y, alpha ] );
 // returns <ndarray>[ <Complex64>[ -2.0, 5.0 ], <Complex64>[ -4.0, 11.0 ], <Complex64>[ -6.0, 17.0 ] ]
 
-var bool = ( y === z );
+var bool = ( z === y );
 // returns true
 ```
 

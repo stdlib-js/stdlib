@@ -49,7 +49,7 @@ var y = new Complex64Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 var z = ccopy( [ x, y ] );
 // returns <ndarray>[ <Complex64>[ 1.0, 2.0 ], <Complex64>[ 3.0, 4.0 ], <Complex64>[ 5.0, 6.0 ] ]
 
-var bool = ( y === z );
+var bool = ( z === y );
 // returns true
 ```
 
