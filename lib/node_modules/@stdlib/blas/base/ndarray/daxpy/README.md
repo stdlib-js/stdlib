@@ -41,27 +41,30 @@ var daxpy = require( '@stdlib/blas/base/ndarray/daxpy' );
 Multiplies a one-dimensional double-precision floating-point ndarray `x` by a constant `alpha` and adds the result to a one-dimensional double-precision floating-point ndarray `y`.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+var y = new Float64Vector( [ 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 
-var ybuf = new Float64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-var y = new ndarray( 'float64', ybuf, [ 5 ], [ 1 ], 0, 'row-major' );
+var alpha = scalar2ndarray( 5.0, {
+    'dtype': 'float64'
+});
 
-var alpha = scalar2ndarray( 5.0, 'float64', 'row-major' );
 var z = daxpy( [ x, y, alpha ] );
 // returns <ndarray>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]
 
-var bool = ( y === z );
+var bool = ( z === y );
 // returns true
 ```
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing an input ndarray, an output ndarray, and a zero-dimensional ndarray containing a scalar constant.
+-   **arrays**: array-like object containing the following ndarrays in order:
+
+    -   input ndarray
+    -   output ndarray
+    -   zero-dimensional ndarray containing a scalar constant
 
 </section>
 
@@ -80,9 +83,8 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var daxpy = require( '@stdlib/blas/base/ndarray/daxpy' );
 
@@ -90,15 +92,14 @@ var opts = {
     'dtype': 'float64'
 };
 
-var xbuf = discreteUniform( 10, 0, 100, opts );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = discreteUniform( [ 10 ], 0, 100, opts );
 console.log( ndarray2array( x ) );
 
-var ybuf = discreteUniform( xbuf.length, 0, 10, opts );
-var y = new ndarray( opts.dtype, ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
+var y = discreteUniform( [ 10 ], 0, 10, opts );
 console.log( ndarray2array( y ) );
 
 var alpha = scalar2ndarray( 5.0, opts );
+
 var out = daxpy( [ x, y, alpha ] );
 console.log( ndarray2array( out ) );
 ```

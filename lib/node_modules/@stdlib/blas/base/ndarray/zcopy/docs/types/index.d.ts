@@ -29,14 +29,10 @@ import { complex128ndarray } from '@stdlib/types/ndarray';
 * @returns output ndarray
 *
 * @example
-* var Complex128Array = require( '@stdlib/array/complex128' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 *
-* var xbuf = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-* var x = new ndarray( 'complex128', xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
-*
-* var ybuf = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-* var y = new ndarray( 'complex128', ybuf, [ 3 ], [ 1 ], 0, 'row-major' );
+* var x = new Complex128Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+* var y = new Complex128Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * var z = zcopy( [ x, y ] );
 * // returns <ndarray>[ <Complex128>[ 1.0, 2.0 ], <Complex128>[ 3.0, 4.0 ], <Complex128>[ 5.0, 6.0 ] ]

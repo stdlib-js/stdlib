@@ -56,13 +56,10 @@ var gdot = require( '@stdlib/blas/base/ndarray/gdot' );
 Computes the dot product of two one-dimensional ndarrays.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 
-var xbuf = [ 4.0, 2.0, -3.0, 5.0, -1.0 ];
-var x = new ndarray( 'generic', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
-
-var ybuf = [ 2.0, 6.0, -1.0, -4.0, 8.0 ];
-var y = new ndarray( 'generic', ybuf, [ 5 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 4.0, 2.0, -3.0, 5.0, -1.0 ], 'generic' );
+var y = vector( [ 2.0, 6.0, -1.0, -4.0, 8.0 ], 'generic' );
 
 var z = gdot( [ x, y ] );
 // returns -5.0
@@ -70,7 +67,10 @@ var z = gdot( [ x, y ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing two one-dimensional input ndarrays.
+-   **arrays**: array-like object containing the following ndarrays in order:
+
+    -   first input ndarray
+    -   second input ndarray
 
 </section>
 
@@ -89,8 +89,7 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var gdot = require( '@stdlib/blas/base/ndarray/gdot' );
 
@@ -98,12 +97,10 @@ var opts = {
     'dtype': 'generic'
 };
 
-var xbuf = discreteUniform( 10, 0, 500, opts );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = discreteUniform( [ 10 ], 0, 500, opts );
 console.log( ndarray2array( x ) );
 
-var ybuf = discreteUniform( 10, 0, 255, opts );
-var y = new ndarray( opts.dtype, ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
+var y = discreteUniform( [ 10 ], 0, 255, opts );
 console.log( ndarray2array( y ) );
 
 var out = gdot( [ x, y ] );

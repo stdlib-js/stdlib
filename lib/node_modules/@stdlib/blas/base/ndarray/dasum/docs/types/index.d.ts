@@ -29,11 +29,9 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 * @returns sum
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 *
-* var xbuf = new Float64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0 ] );
-* var x = new ndarray( 'float64', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
+* var x = new Float64Vector( [ 1.0, -2.0, 3.0, -4.0, 5.0 ] );
 *
 * var y = dasum( [ x ] );
 * // returns 15.0

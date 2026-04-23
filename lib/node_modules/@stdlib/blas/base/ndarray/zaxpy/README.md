@@ -41,18 +41,16 @@ var zaxpy = require( '@stdlib/blas/base/ndarray/zaxpy' );
 Multiplies a one-dimensional double-precision complex floating-point ndarray `x` by a constant `alpha` and adds the result to a one-dimensional double-precision complex floating-point ndarray `y`.
 
 ```javascript
-var Complex128Array = require( '@stdlib/array/complex128' );
+var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
-var xbuf = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-var x = new ndarray( 'complex128', xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
+var x = new Complex128Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+var y = new Complex128Vector( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 
-var ybuf = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-var y = new ndarray( 'complex128', ybuf, [ 3 ], [ 1 ], 0, 'row-major' );
-
-var alpha = scalar2ndarray( new Complex128( 1.0, 2.0 ), 'complex128', 'row-major' );
+var alpha = scalar2ndarray( new Complex128( 1.0, 2.0 ), {
+    'dtype': 'complex128'
+});
 var z = zaxpy( [ x, y, alpha ] );
 // returns <ndarray>[ <Complex128>[ -2.0, 5.0 ], <Complex128>[ -4.0, 11.0 ], <Complex128>[ -6.0, 17.0 ] ]
 
@@ -62,7 +60,11 @@ var bool = ( y === z );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing an input ndarray, an output ndarray, and a zero-dimensional ndarray containing a scalar constant.
+-   **arrays**: array-like object containing the following ndarrays in order:
+
+    -   input ndarray
+    -   output ndarray
+    -   zero-dimensional ndarray containing a scalar constant
 
 </section>
 
@@ -82,10 +84,9 @@ The function has the following parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var Complex128Array = require( '@stdlib/array/complex128' );
+var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var zaxpy = require( '@stdlib/blas/base/ndarray/zaxpy' );
 
@@ -93,12 +94,10 @@ var opts = {
     'dtype': 'float64'
 };
 
-var xbuf = new Complex128Array( discreteUniform( 10, 0, 100, opts ) );
-var x = new ndarray( 'complex128', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = new Complex128Vector( discreteUniform( 10, 0, 100, opts ) );
 console.log( ndarray2array( x ) );
 
-var ybuf = new Complex128Array( discreteUniform( xbuf.length*2, 0, 10, opts ) );
-var y = new ndarray( 'complex128', ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
+var y = new Complex128Vector( discreteUniform( 10, 0, 10, opts ) );
 console.log( ndarray2array( y ) );
 
 var alpha = scalar2ndarray( new Complex128( 1.0, 2.0 ), {

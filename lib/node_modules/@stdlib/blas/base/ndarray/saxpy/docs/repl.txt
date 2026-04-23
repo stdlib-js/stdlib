@@ -20,16 +20,9 @@
 
     Examples
     --------
-    > var xbuf = new {{alias:@stdlib/array/float32}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
-    > var ybuf = new {{alias:@stdlib/array/float32}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
-    > var dt = 'float32';
-    > var sh = [ xbuf.length ];
-    > var st = [ 1 ];
-    > var oo = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
-    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, st, oo, ord );
-    > var alpha = {{alias:@stdlib/ndarray/base/from-scalar}}( 5.0, dt, ord );
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
+    > var y = new {{alias:@stdlib/ndarray/vector/float32}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 5.0, { 'dtype': 'float32' });
 
     > {{alias}}( [ x, y, alpha ] );
     > y

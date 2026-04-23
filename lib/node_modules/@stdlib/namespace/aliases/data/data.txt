@@ -1745,6 +1745,7 @@ FLOAT64_SMALLEST_SUBNORMAL
 Float64Array
 Float64ArrayFE
 Float64ArrayLE
+Float64Vector
 forEach
 forEachAsync
 forEachChar

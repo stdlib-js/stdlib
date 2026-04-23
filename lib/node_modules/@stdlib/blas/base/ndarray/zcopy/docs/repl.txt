@@ -19,15 +19,8 @@
 
     Examples
     --------
-    > var xbuf = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > var ybuf = new {{alias:@stdlib/array/complex128}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > var dt = 'complex128';
-    > var sh = [ xbuf.length ];
-    > var st = [ 1 ];
-    > var oo = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
-    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, st, oo, ord );
+    > var x = new {{alias:@stdlib/ndarray/vector/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = new {{alias:@stdlib/ndarray/vector/complex128}}( [ 0.0, 0.0, 0.0, 0.0 ] );
 
     > {{alias}}( [ x, y ] );
     > y
