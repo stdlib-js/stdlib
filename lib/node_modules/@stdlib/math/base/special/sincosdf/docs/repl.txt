@@ -1,0 +1,61 @@
+
+{{alias}}( x )
+    Simultaneously computes the sine and cosine of a single-precision
+    floating-point number (in degrees).
+
+    Parameters
+    ----------
+    x: number
+        Input value (in degrees).
+
+    Returns
+    -------
+    y: Array<number>
+        Sine and cosine.
+
+    Examples
+    --------
+    > var y = {{alias}}( 0.0 )
+    [ ~0.0, ~1.0 ]
+    > y = {{alias}}( 90.0 )
+    [ ~1.0, ~0.0 ]
+    > y = {{alias}}( -30.0 )
+    [ ~-0.5, ~0.866 ]
+    > y = {{alias}}( NaN )
+    [ NaN, NaN ]
+
+
+{{alias}}.assign( x, out, stride, offset )
+    Simultaneously computes the sine and cosine of a single-precision
+    floating-point number (in degrees) and assigns the results to a provided
+    output array.
+
+    Parameters
+    ----------
+    x: number
+        Input value (in degrees).
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    y: Array|TypedArray|Object
+        Sine and cosine.
+
+    Examples
+    --------
+    > var out = new {{alias:@stdlib/array/float32}}( 2 );
+    > var v = {{alias}}.assign( 0.0, out, 1, 0 )
+    <Float32Array>[ ~0.0, ~1.0 ]
+    > var bool = ( v === out )
+    true
+
+    See Also
+    --------

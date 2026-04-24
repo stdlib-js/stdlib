@@ -258,7 +258,7 @@ Computes the [mean][arithmetic-mean] and [variance][variance] of a double-precis
 
 ```c
 const double x[] = { 1.0, -2.0, 2.0 };
-double out[] = { 0.0, 0.0 }
+double out[] = { 0.0, 0.0 };
 
 stdlib_strided_dmeanvarpn( 3, 1.0, x, 1, out, 1 );
 ```
@@ -282,7 +282,7 @@ Computes the [mean][arithmetic-mean] and [variance][variance] of a double-precis
 
 ```c
 const double x[] = { 1.0, -2.0, 2.0 };
-double out[] = { 0.0, 0.0 }
+double out[] = { 0.0, 0.0 };
 
 stdlib_strided_dmeanvarpn_ndarray( 3, 1.0, x, 1, 0, out, 1, 0 );
 ```

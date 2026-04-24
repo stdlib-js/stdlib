@@ -227,7 +227,7 @@ var opts = {
 var x = uniform( 20, 0.0, 10.0, opts );
 var k = discreteUniform( 20, 0, 10, opts );
 
-logEachMap( 'x: %0.4f, k: %0.4f, F(x;k): %0.4f', x, k, cdf );
+logEachMap( 'x: %0.4f, k: %d, F(x;k): %0.4f', x, k, cdf );
 ```
 
 </section>

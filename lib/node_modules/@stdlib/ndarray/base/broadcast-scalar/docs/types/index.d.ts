@@ -42,7 +42,7 @@ import { ndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, in
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var v = x.get( 0, 1 );
@@ -69,7 +69,7 @@ declare function broadcastScalar( value: number, dtype: 'float64', shape: Shape,
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'float32'
 *
 * var v = x.get( 0, 1 );
@@ -103,7 +103,7 @@ declare function broadcastScalar( value: number, dtype: 'float32', shape: Shape,
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'complex128'
 *
 * var v = x.get( 0, 1 );
@@ -139,7 +139,7 @@ declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex12
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'complex64'
 *
 * var v = x.get( 0, 1 );
@@ -172,7 +172,7 @@ declare function broadcastScalar( value: number | ComplexLike, dtype: 'complex64
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'int32'
 *
 * var v = x.get( 0, 1 );
@@ -199,7 +199,7 @@ declare function broadcastScalar( value: number, dtype: 'int32', shape: Shape, o
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'int16'
 *
 * var v = x.get( 0, 1 );
@@ -226,7 +226,7 @@ declare function broadcastScalar( value: number, dtype: 'int16', shape: Shape, o
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'int8'
 *
 * var v = x.get( 0, 1 );
@@ -253,7 +253,7 @@ declare function broadcastScalar( value: number, dtype: 'int8', shape: Shape, or
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'uint32'
 *
 * var v = x.get( 0, 1 );
@@ -280,7 +280,7 @@ declare function broadcastScalar( value: number, dtype: 'uint32', shape: Shape, 
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'uint16'
 *
 * var v = x.get( 0, 1 );
@@ -307,7 +307,7 @@ declare function broadcastScalar( value: number, dtype: 'uint16', shape: Shape, 
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'uint8'
 *
 * var v = x.get( 0, 1 );
@@ -334,7 +334,7 @@ declare function broadcastScalar( value: number, dtype: 'uint8', shape: Shape, o
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'uint8c'
 *
 * var v = x.get( 0, 1 );
@@ -361,7 +361,7 @@ declare function broadcastScalar( value: number, dtype: 'uint8c', shape: Shape, 
 * var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = getDType( x );
+* var dt = String( getDType( x ) );
 * // returns 'generic'
 *
 * var v = x.get( 0, 1 );

@@ -209,8 +209,6 @@ interface Namespace {
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -219,28 +217,14 @@ interface Namespace {
 	* ns.crot( 2, cx, 2, cy, 1, 0.8, s );
 	*
 	* var z = cy.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns ~-1.1
-	*
-	* var im = imagf( z );
-	* // returns ~-0.2
+	* // returns <Complex64>[ ~-1.1, ~-0.2 ]
 	*
 	* z = cx.get( 0 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns ~0.8
-	*
-	* im = imagf( z );
-	* // returns ~1.6
+	* // returns <Complex64>[ ~0.8, ~1.6 ]
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var cy = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
@@ -249,22 +233,10 @@ interface Namespace {
 	* ns.crot.ndarray( 2, cx, 2, 0, cy, 1, 0, 0.8, s );
 	*
 	* var z = cy.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns ~-1.1
-	*
-	* var im = imagf( z );
-	* // returns ~-0.2
+	* // returns <Complex64>[ ~-1.1, ~-0.2 ]
 	*
 	* z = cx.get( 0 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns ~0.8
-	*
-	* im = imagf( z );
-	* // returns ~1.6
+	* // returns <Complex64>[ ~0.8, ~1.6 ]
 	*/
 	crot: typeof crot;
 
