@@ -41,14 +41,10 @@ var dswap = require( '@stdlib/blas/base/ndarray/dswap' );
 Interchanges two one-dimensional double-precision floating-point ndarrays.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
-
-var ybuf = new Float64Array( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
-var y = new ndarray( 'float64', ybuf, [ 5 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+var y = new Float64Vector( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
 
 var z = dswap( [ x, y ] );
 // x => <ndarray>[ 6.0, 7.0, 8.0, 9.0, 10.0 ]
@@ -60,7 +56,10 @@ var bool = ( z === y );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing two input ndarrays.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   first one-dimensional input ndarray.
+    -   second one-dimensional input ndarray.
 
 </section>
 
@@ -79,8 +78,7 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dswap = require( '@stdlib/blas/base/ndarray/dswap' );
 
@@ -88,12 +86,10 @@ var opts = {
     'dtype': 'float64'
 };
 
-var xbuf = discreteUniform( 10, 0, 100, opts );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = discreteUniform( [ 10 ], 0, 100, opts );
 console.log( ndarray2array( x ) );
 
-var ybuf = discreteUniform( 10, 0, 100, opts );
-var y = new ndarray( opts.dtype, ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
+var y = discreteUniform( [ 10 ], 0, 100, opts );
 console.log( ndarray2array( y ) );
 
 var out = dswap( [ x, y ] );

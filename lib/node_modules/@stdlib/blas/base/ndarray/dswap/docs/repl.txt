@@ -8,7 +8,10 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing two input ndarrays.
+        Array-like object containing the following ndarrays:
+
+        - first one-dimensional input ndarray.
+        - second one-dimensional input ndarray.
 
     Returns
     -------
@@ -17,15 +20,8 @@
 
     Examples
     --------
-    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 4.0, 2.0, -3.0 ] );
-    > var ybuf = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0 ] );
-    > var dt = 'float64';
-    > var sh = [ xbuf.length ];
-    > var st = [ 1 ];
-    > var oo = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
-    > var y = new {{alias:@stdlib/ndarray/ctor}}( dt, ybuf, sh, st, oo, ord );
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 4.0, 2.0, -3.0 ] );
+    > var y = new {{alias:@stdlib/ndarray/vector/float64}}( [ 0.0, 0.0, 0.0 ] );
 
     > {{alias}}( [ x, y ] );
     > x

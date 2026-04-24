@@ -46,6 +46,8 @@ limitations under the License.
 | Create an array containing evenly spaced numbers over a specified interval and having a desired shape | `np.reshape(np.linspace(start, stop), shape)` | [`linspace(shape, start, stop)`][@stdlib/blas/ext/linspace] |
 | Create an array of uniformly distributed pseudorandom numbers | `np.random.default_rng().uniform(low,high,shape)` | [`uniform(shape,low,high)`][@stdlib/random/uniform] |
 | Filter an array according to a predicate function | `x[np.vectorize(predicate)(x)]` | [`filter(x, predicate)`][@stdlib/ndarray/filter] |
+| Find the index of the first element which equals a specified value | `np.argmax(x == v, axis=dim)` | [`indexOf(x, v, {dim: dim})`][@stdlib/blas/ext/index-of] |
+| Find the index of the last element which equals a specified value | `x.shape[dim]-1-np.argmax(np.flip(x, axis=dim) == v, axis=dim)` | [`lastIndexOf(x, v, {dim: dim})`][@stdlib/blas/ext/last-index-of] |
 | Flatten an array to a desired depth | `np.reshape(x, newshape)` | [`flatten(x, {depth: depth})`][@stdlib/ndarray/flatten] |
 | Flatten an array starting from a specific dimension | `np.reshape(x, x.shape[:dim] + (-1,))` | [`flattenFrom(x, dim)`][@stdlib/ndarray/flatten-from] |
 | Prepend a specified number of singleton dimensions | `np.reshape(x, (1,)*n + x.shape)` | [`prependSingletonDimensions(x, n)`][@stdlib/ndarray/prepend-singleton-dimensions] |
@@ -57,7 +59,7 @@ limitations under the License.
 | Sort an array in-place | `x[:] = np.sort(x)` | [`sort(x)`][@stdlib/blas/ext/sort] |
 | Test whether an array contains at least `n` truthy values | `np.count_nonzero(x) >= n` | [`some(x, n)`][@stdlib/ndarray/some] |
 | Test whether an array contains truthy values | `np.any(x)` | [`any(x)`][@stdlib/ndarray/any] |
-| Test whether an array includes a specific value | `np.any(np.equal(x,v))` | [`includes(x,v)`][@stdlib/ndarray/includes] |
+| Test whether an array includes a specific value | `np.any(x == v)` | [`includes(x,v)`][@stdlib/ndarray/includes] |
 
 <!-- lint enable table-pipe-alignment -->
 
@@ -66,6 +68,10 @@ limitations under the License.
 {{table}}
 
 <section class="links">
+
+[@stdlib/blas/ext/index-of]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/index-of
+
+[@stdlib/blas/ext/last-index-of]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/last-index-of
 
 [@stdlib/blas/ext/linspace]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/ext/linspace
 
