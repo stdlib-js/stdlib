@@ -41,25 +41,24 @@ var scopy = require( '@stdlib/blas/base/ndarray/scopy' );
 Copies values from a one-dimensional single-precision floating-point ndarray `x` into a one-dimensional single-precision floating-point ndarray `y`.
 
 ```javascript
-var Float32Array = require( '@stdlib/array/float32' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 
-var xbuf = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
-var x = new ndarray( 'float32', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
-
-var ybuf = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-var y = new ndarray( 'float32', ybuf, [ 5 ], [ 1 ], 0, 'row-major' );
+var x = new Float32Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+var y = new Float32Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 var z = scopy( [ x, y ] );
 // returns <ndarray>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 
-var bool = ( y === z );
+var bool = ( z === y );
 // returns true
 ```
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing an input ndarray and an output ndarray.
+-   **arrays**: array-like object containing the following ndarrays in order:
+
+    -   input ndarray
+    -   output ndarray
 
 </section>
 
@@ -78,8 +77,7 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var scopy = require( '@stdlib/blas/base/ndarray/scopy' );
 
@@ -87,12 +85,10 @@ var opts = {
     'dtype': 'float32'
 };
 
-var xbuf = discreteUniform( 10, 0, 100, opts );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = discreteUniform( [ 10 ], 0, 100, opts );
 console.log( ndarray2array( x ) );
 
-var ybuf = discreteUniform( xbuf.length, 0, 10, opts );
-var y = new ndarray( opts.dtype, ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
+var y = discreteUniform( [ 10 ], 0, 10, opts );
 console.log( ndarray2array( y ) );
 
 var out = scopy( [ x, y ] );

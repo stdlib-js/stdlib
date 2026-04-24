@@ -56,14 +56,10 @@ var ddot = require( '@stdlib/blas/base/ndarray/ddot' );
 Computes the dot product of two one-dimensional double-precision floating-point ndarrays.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 
-var xbuf = new Float64Array( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
-
-var ybuf = new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
-var y = new ndarray( 'float64', ybuf, [ 5 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
+var y = new Float64Vector( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
 
 var z = ddot( [ x, y ] );
 // returns -5.0
@@ -71,7 +67,10 @@ var z = ddot( [ x, y ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing two one-dimensional input ndarrays.
+-   **arrays**: array-like object containing the following ndarrays in order
+
+    -   first input ndarray
+    -   second input ndarray
 
 </section>
 
@@ -90,8 +89,7 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ddot = require( '@stdlib/blas/base/ndarray/ddot' );
 
@@ -99,12 +97,10 @@ var opts = {
     'dtype': 'float64'
 };
 
-var xbuf = discreteUniform( 10, 0, 500, opts );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = discreteUniform( [ 10 ], 0, 500, opts );
 console.log( ndarray2array( x ) );
 
-var ybuf = discreteUniform( 10, 0, 255, opts );
-var y = new ndarray( opts.dtype, ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
+var y = discreteUniform( [ 10 ], 0, 255, opts );
 console.log( ndarray2array( y ) );
 
 var out = ddot( [ x, y ] );

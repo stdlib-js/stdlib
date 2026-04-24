@@ -34,8 +34,13 @@
 * const x: ArrayLike<number> = [ 1, 2, 3 ];
 */
 declare module '@stdlib/types/array' {
-	import { ComplexLike, Complex64, Complex128 } from '@stdlib/types/complex';
+	import { ComplexLike, Complex32, Complex64, Complex128 } from '@stdlib/types/complex';
 	import { Remap } from '@stdlib/types/utilities';
+
+	/**
+	* Half-precision floating-point typed array.
+	*/
+	type Float16Array = ArrayLike<number>; // FIXME: revisit once we upgrade TS to a version which natively supports Float16Array
 
 	/**
 	* Data type.
@@ -95,7 +100,7 @@ declare module '@stdlib/types/array' {
 	/**
 	* Data type for complex number typed arrays.
 	*/
-	type ComplexFloatingPointDataType = 'complex64' | 'complex128'; // "complex_floating_point"
+	type ComplexFloatingPointDataType = 'complex32' | 'complex64' | 'complex128'; // "complex_floating_point"
 
 	/**
 	* Data type for complex number typed arrays.
@@ -474,7 +479,7 @@ declare module '@stdlib/types/array' {
 	* @example
 	* const x: ComplexTypedArray = new Complex64Array( 10 );
 	*/
-	type ComplexTypedArray = Complex64Array | Complex128Array;
+	type ComplexTypedArray = Complex32Array | Complex64Array | Complex128Array;
 
 	/**
 	* A real or complex array.
@@ -660,6 +665,50 @@ declare module '@stdlib/types/array' {
 	}
 
 	/**
+	* 32-bit complex number array.
+	*
+	* @example
+	* const buf = new Float16Array( 8 );
+	*
+	* const z: Complex64Array = {
+	*     'byteLength': 16,
+	*     'byteOffset': 0,
+	*     'BYTES_PER_ELEMENT': 2,
+	*     'length': 4
+	*     'get': ( i: number ): obj.Complex32 => {
+	*         return {
+	*             're': i * 10,
+	*             'im': i * 10,
+	*             'byteLength': 4,
+	*             'BYTES_PER_ELEMENT': 2
+	*         };
+	*     },
+	*     'set': ( value: obj.ComplexLike, i?: number ) => {
+	*         i = ( i ) ? i : 0;
+	*         buf[ i ] = value.re;
+	*         buf[ i + 1 ] = value.im;
+	*     }
+	* };
+	*/
+	interface Complex32Array extends ComplexArrayLike {
+		/**
+		* Returns an array element.
+		*
+		* @param i - element index
+		* @returns array element
+		*/
+		get( i: number ): Complex32 | void;
+
+		/**
+		* Sets an array element.
+		*
+		* @param value - value(s)
+		* @param i - element index at which to start writing values (default: 0)
+		*/
+		set( value: ArrayLike<number | ComplexLike> | Complex32Array | ComplexLike, i?: number ): void;
+	}
+
+	/**
 	* 64-bit complex number array.
 	*
 	* @example
@@ -803,6 +852,7 @@ declare module '@stdlib/types/array' {
 	* Mapping of data types for complex number typed arrays to array constructors.
 	*/
 	type ComplexFloatingPointDataTypeMap = {  // eslint-disable-line @typescript-eslint/consistent-type-definitions
+		'complex32': Complex32Array;
 		'complex64': Complex64Array;
 		'complex128': Complex128Array;
 	};
@@ -1504,7 +1554,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Data type string for complex number ndarrays.
 	*/
-	type ComplexFloatingPointDataTypeString = 'complex64' | 'complex128'; // "complex_floating_point"
+	type ComplexFloatingPointDataTypeString = 'complex32' | 'complex64' | 'complex128'; // "complex_floating_point"
 
 	/**
 	* Data type string for complex number ndarrays.
@@ -2199,7 +2249,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Data type object for complex number ndarrays.
 	*/
-	type ComplexFloatingPointDataTypeObject = Complex64DataTypeObject | Complex128DataTypeObject; // "complex_floating_point"
+	type ComplexFloatingPointDataTypeObject = Complex32DataTypeObject | Complex64DataTypeObject | Complex128DataTypeObject; // "complex_floating_point"
 
 	/**
 	* Data type object for complex number ndarrays.
@@ -4307,6 +4357,75 @@ declare module '@stdlib/types/ndarray' {
 	}
 
 	/**
+	* Interface describing an ndarray having a half-precision complex floating-point data type.
+	*
+	* @example
+	* const arr: complex32ndarray = {
+	*     'byteLength': 12,
+	*     'BYTES_PER_ELEMENT': 4,
+	*     'data': new Complex32Array( [ 1, 2, 3, 4, 5, 6 ] ),
+	*     'dtype': 'complex32',
+	*     'flags': {
+	*         'ROW_MAJOR_CONTIGUOUS': true,
+	*         'COLUMN_MAJOR_CONTIGUOUS': false
+	*     },
+	*     'length': 3,
+	*     'ndims': 1,
+	*     'offset': 0,
+	*     'order': 'row-major',
+	*     'shape': [ 3 ],
+	*     'strides': [ 1 ],
+	*     'get': function get( i ) {
+	*         return new Complex32( this.data[ i*2 ], this.data[ (i*2)+1 ] );
+	*     },
+	*     'set': function set( i, v ) {
+	*         this.data[ i ] = v;
+	*         return this;
+	*     }
+	* };
+	*/
+	interface complex32ndarray extends complexndarray {
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: 4;
+
+		/**
+		* A reference to the underlying data buffer.
+		*/
+		data: Complex32Array;
+
+		/**
+		* Underlying data type.
+		*/
+		dtype: Complex32DataType;
+
+		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): Complex32;
+
+		/**
+		* Sets an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts and value to set
+		* @returns ndarray instance
+		*/
+		set( ...args: Array<number | ComplexLike> ): complex32ndarray;
+	}
+
+	/**
 	* Interface describing a one-dimensional ndarray having a homogeneous data type.
 	*
 	* @example
@@ -4471,6 +4590,7 @@ declare module '@stdlib/types/ndarray' {
 	* Mapping of data types for complex number typed ndarrays to ndarray constructors.
 	*/
 	type ComplexFloatingPointDataTypeMap = {  // eslint-disable-line @typescript-eslint/consistent-type-definitions
+		'complex32': complex32ndarray;
 		'complex64': complex64ndarray;
 		'complex128': complex128ndarray;
 	};
@@ -5129,7 +5249,7 @@ declare module '@stdlib/types/complex' {
 	/**
 	* Complex number data type.
 	*/
-	type ComplexFloatingPointDataType = 'complex64' | 'complex128';
+	type ComplexFloatingPointDataType = 'complex32' | 'complex64' | 'complex128';
 
 	/**
 	* A complex number-like object.
@@ -5147,6 +5267,29 @@ declare module '@stdlib/types/complex' {
 		* Imaginary component.
 		*/
 		im: number;
+	}
+
+	/**
+	* A 32-bit complex number.
+	*
+	* @example
+	* const x: Complex32 = {
+	*     're': 5.0,
+	*     'im': 3.0,
+	*     'byteLength': 4,
+	*     'BYTES_PER_ELEMENT': 2
+	* };
+	*/
+	interface Complex32 extends ComplexLike {
+		/**
+		* Size (in bytes) of the complex number.
+		*/
+		byteLength: 4;
+
+		/**
+		* Size (in bytes) of each component.
+		*/
+		BYTES_PER_ELEMENT: 2;
 	}
 
 	/**

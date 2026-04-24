@@ -29,16 +29,15 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * @returns output ndarray
 *
 * @example
-* var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
+* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
-* var xbuf = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ], 'generic' );
+* var y = vector( [ 1.0, 1.0, 1.0, 1.0, 1.0 ], 'generic' );
 *
-* var ybuf = [ 1.0, 1.0, 1.0, 1.0, 1.0 ];
-* var y = new ndarray( 'generic', ybuf, [ 5 ], [ 1 ], 0, 'row-major' );
-*
-* var alpha = scalar2ndarray( 5.0, 'generic', 'row-major' );
+* var alpha = scalar2ndarray( 5.0, {
+*     'dtype': 'generic'
+* });
 *
 * var z = gaxpy( [ x, y, alpha ] );
 * // returns <ndarray>[ 6.0, 11.0, 16.0, 21.0, 26.0 ]

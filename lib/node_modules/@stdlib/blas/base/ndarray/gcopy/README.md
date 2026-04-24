@@ -41,24 +41,24 @@ var gcopy = require( '@stdlib/blas/base/ndarray/gcopy' );
 Copies values from a one-dimensional ndarray `x` into a one-dimensional ndarray `y`.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 
-var xbuf = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
-var x = new ndarray( 'generic', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
-
-var ybuf = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
-var y = new ndarray( 'generic', ybuf, [ 5 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ], 'generic' );
+var y = vector( [ 0.0, 0.0, 0.0, 0.0, 0.0 ], 'generic' );
 
 var z = gcopy( [ x, y ] );
 // returns <ndarray>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 
-var bool = ( y === z );
+var bool = ( z === y );
 // returns true
 ```
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing an input ndarray and an output ndarray.
+-   **arrays**: array-like object containing the following ndarrays in order:
+
+    -   input ndarray
+    -   output ndarray
 
 </section>
 
@@ -77,8 +77,7 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var gcopy = require( '@stdlib/blas/base/ndarray/gcopy' );
 
@@ -86,12 +85,10 @@ var opts = {
     'dtype': 'generic'
 };
 
-var xbuf = discreteUniform( 10, 0, 100, opts );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = discreteUniform( [ 10 ], 0, 100, opts );
 console.log( ndarray2array( x ) );
 
-var ybuf = discreteUniform( xbuf.length, 0, 10, opts );
-var y = new ndarray( opts.dtype, ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
+var y = discreteUniform( [ 10 ], 0, 10, opts );
 console.log( ndarray2array( y ) );
 
 var out = gcopy( [ x, y ] );

@@ -29,18 +29,16 @@ import { complex128ndarray } from '@stdlib/types/ndarray';
 * @returns output ndarray
 *
 * @example
-* var Complex128Array = require( '@stdlib/array/complex128' );
+* var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
-* var xbuf = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ] );
-* var x = new ndarray( 'complex128', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
+* var x = new Complex128Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ] );
+* var y = new Complex128Vector( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 *
-* var ybuf = new Complex128Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
-* var y = new ndarray( 'complex128', ybuf, [ 5 ], [ 1 ], 0, 'row-major' );
-*
-* var alpha = scalar2ndarray( new Complex128( 1.0, 2.0 ), 'complex128', 'row-major' );
+* var alpha = scalar2ndarray( new Complex128( 1.0, 2.0 ), {
+*     'dtype': 'complex128'
+* });
 *
 * var z = zaxpy( [ x, y, alpha ] );
 * // returns <ndarray>[ <Complex128>[ -2.0, 5.0 ], <Complex128>[ -4.0, 11.0 ], <Complex128>[ -6.0, 17.0 ], <Complex128>[ -8.0, 23.0 ], <Complex128>[ -10.0, 29.0 ] ]
