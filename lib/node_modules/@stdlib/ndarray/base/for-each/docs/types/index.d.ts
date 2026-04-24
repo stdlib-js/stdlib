@@ -24,47 +24,47 @@ import { ArrayLike } from '@stdlib/types/array';
 import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
-* Callback invoked for each ndarray element.
+* Callback invoked for each element in an ndarray.
 */
-type Nullary<U> = ( this: U ) => void;
+type Nullary<ThisArg> = ( this: ThisArg ) => void;
 
 /**
-* Callback invoked for each ndarray element.
+* Callback invoked for each element in an ndarray.
 *
 * @param value - current array element
 */
-type Unary<T, U> = ( this: U, value: T ) => void;
+type Unary<T, ThisArg> = ( this: ThisArg, value: T ) => void;
 
 /**
-* Callback invoked for each ndarray element.
-*
-* @param value - current array element
-* @param indices - current array element indices
-*/
-type Binary<T, U> = ( this: U, value: T, indices: Array<number> ) => void;
-
-/**
-* Callback invoked for each ndarray element.
+* Callback invoked for each element in an ndarray.
 *
 * @param value - current array element
 * @param indices - current array element indices
-* @param arr - input array
 */
-type Ternary<T, U> = ( this: U, value: T, indices: Array<number>, arr: typedndarray<T> ) => void;
+type Binary<T, ThisArg> = ( this: ThisArg, value: T, indices: Array<number> ) => void;
 
 /**
-* Callback invoked for each ndarray element.
+* Callback invoked for each element in an ndarray.
 *
 * @param value - current array element
 * @param indices - current array element indices
 * @param arr - input array
 */
-type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
+type Ternary<T, U, ThisArg> = ( this: ThisArg, value: T, indices: Array<number>, arr: U ) => void;
 
 /**
-* Invokes a callback function once for each ndarray element.
+* Callback invoked for each element in an ndarray.
 *
-* @param arrays - array-like object containing an output ndarray
+* @param value - current array element
+* @param indices - current array element indices
+* @param arr - input array
+*/
+type Callback<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T, ThisArg> | Ternary<T, U, ThisArg>;
+
+/**
+* Invokes a callback function once for each element in an ndarray.
+*
+* @param arrays - array-like object containing an input ndarray
 * @param fcn - callback function
 * @param thisArg - callback function execution context
 *
@@ -86,13 +86,13 @@ type Callback<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 * // Define the index offset:
 * var ox = 1;
 *
-* // Create the output ndarray:
+* // Create the input ndarray:
 * var x = ndarray( 'float64', xbuf, shape, sx, ox, 'row-major' );
 *
 * // Apply the callback function:
 * forEach( [ x ], naryFunction( log, 1 ) );
 */
-declare function forEach<T = unknown, U = unknown>( arrays: ArrayLike<typedndarray<T>>, fcn: Callback<T, U>, thisArg?: ThisParameterType<Callback<T, U>> ): void;
+declare function forEach<T = unknown, U extends typedndarray<T> = typedndarray<T>, ThisArg = unknown>( arrays: ArrayLike<U>, fcn: Callback<T, U, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, ThisArg>> ): void;
 
 
 // EXPORTS //

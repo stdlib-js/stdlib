@@ -21,7 +21,7 @@
     Examples
     --------
     > var r = new {{alias}}();
-    > r.toString( { 'format': 'linear' } )
+    > r.toString()
     <string>
 
     See Also

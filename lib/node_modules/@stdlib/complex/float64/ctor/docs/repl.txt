@@ -25,6 +25,15 @@
         Read-only property returning the imaginary component.
 
 
+{{alias}}.name
+    Constructor name.
+
+    Examples
+    --------
+    > var str = {{alias}}.name
+    'Complex128'
+
+
 {{alias}}.BYTES_PER_ELEMENT
     Size (in bytes) of each component.
 

@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the dot product of two one-dimensional ndarrays.
@@ -40,7 +40,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var z = gdot( [ x, y ] );
 * // returns -5.0
 */
-declare function gdot<T extends ndarray = ndarray>( arrays: [ T, T ] ): number;
+declare function gdot<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, T ] ): number;
 
 
 // EXPORTS //
