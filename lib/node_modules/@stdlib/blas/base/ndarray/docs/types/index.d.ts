@@ -173,14 +173,10 @@ interface Namespace {
 	* @returns second input ndarray
 	*
 	* @example
-	* var Float64Array = require( '@stdlib/array/float64' );
-	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+	* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 	*
-	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
-	* var x = new ndarray( 'float64', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
-	*
-	* var ybuf = new Float64Array( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
-	* var y = new ndarray( 'float64', ybuf, [ 5 ], [ 1 ], 0, 'row-major' );
+	* var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+	* var y = new Float64Vector( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
 	*
 	* var z = ns.dswap( [ x, y ] );
 	* // x => <ndarray>[ 6.0, 7.0, 8.0, 9.0, 10.0 ]
