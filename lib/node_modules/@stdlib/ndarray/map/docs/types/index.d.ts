@@ -276,7 +276,6 @@ interface GenericOptions extends Options {
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -291,10 +290,7 @@ interface GenericOptions extends Options {
 * // returns <ndarray>
 *
 * var y = map( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
+* // returns <ndarray>[ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
 declare function map<W = unknown>( x: float64ndarray, fcn: Callback<number, float64ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, float64ndarray, number, W>> ): float64ndarray;
 
@@ -309,7 +305,6 @@ declare function map<W = unknown>( x: float64ndarray, fcn: Callback<number, floa
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -324,10 +319,7 @@ declare function map<W = unknown>( x: float64ndarray, fcn: Callback<number, floa
 * // returns <ndarray>
 *
 * var y = map( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
+* // returns <ndarray>[ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
 declare function map<W = unknown>( x: float32ndarray, fcn: Callback<number, float32ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, float32ndarray, number, W>> ): float32ndarray;
 
@@ -400,7 +392,6 @@ declare function map<W = unknown>( x: complex128ndarray, fcn: Callback<Complex12
 * @example
 * var Int32Array = require( '@stdlib/array/int32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10;
@@ -415,10 +406,7 @@ declare function map<W = unknown>( x: complex128ndarray, fcn: Callback<Complex12
 * // returns <ndarray>
 *
 * var y = map( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<W = unknown>( x: int32ndarray, fcn: Callback<number, int32ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, int32ndarray, number, W>> ): int32ndarray;
 
@@ -433,7 +421,6 @@ declare function map<W = unknown>( x: int32ndarray, fcn: Callback<number, int32n
 * @example
 * var Int16Array = require( '@stdlib/array/int16' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10;
@@ -448,10 +435,7 @@ declare function map<W = unknown>( x: int32ndarray, fcn: Callback<number, int32n
 * // returns <ndarray>
 *
 * var y = map( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<W = unknown>( x: int16ndarray, fcn: Callback<number, int16ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, int16ndarray, number, W>> ): int16ndarray;
 
@@ -466,7 +450,6 @@ declare function map<W = unknown>( x: int16ndarray, fcn: Callback<number, int16n
 * @example
 * var Int8Array = require( '@stdlib/array/int8' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10;
@@ -481,10 +464,7 @@ declare function map<W = unknown>( x: int16ndarray, fcn: Callback<number, int16n
 * // returns <ndarray>
 *
 * var y = map( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<W = unknown>( x: int8ndarray, fcn: Callback<number, int8ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, int8ndarray, number, W>> ): int8ndarray;
 
@@ -499,7 +479,6 @@ declare function map<W = unknown>( x: int8ndarray, fcn: Callback<number, int8nda
 * @example
 * var Uint32Array = require( '@stdlib/array/uint32' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10;
@@ -514,10 +493,7 @@ declare function map<W = unknown>( x: int8ndarray, fcn: Callback<number, int8nda
 * // returns <ndarray>
 *
 * var y = map( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<W = unknown>( x: uint32ndarray, fcn: Callback<number, uint32ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, uint32ndarray, number, W>> ): uint32ndarray;
 
@@ -532,7 +508,6 @@ declare function map<W = unknown>( x: uint32ndarray, fcn: Callback<number, uint3
 * @example
 * var Uint16Array = require( '@stdlib/array/uint16' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10;
@@ -547,10 +522,7 @@ declare function map<W = unknown>( x: uint32ndarray, fcn: Callback<number, uint3
 * // returns <ndarray>
 *
 * var y = map( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<W = unknown>( x: uint16ndarray, fcn: Callback<number, uint16ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, uint16ndarray, number, W>> ): uint16ndarray;
 
@@ -565,7 +537,6 @@ declare function map<W = unknown>( x: uint16ndarray, fcn: Callback<number, uint1
 * @example
 * var Uint8Array = require( '@stdlib/array/uint8' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10;
@@ -580,10 +551,7 @@ declare function map<W = unknown>( x: uint16ndarray, fcn: Callback<number, uint1
 * // returns <ndarray>
 *
 * var y = map( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<W = unknown>( x: uint8ndarray, fcn: Callback<number, uint8ndarray, number, W>, thisArg?: ThisParameterType<Callback<number, uint8ndarray, number, W>> ): uint8ndarray;
 
@@ -598,7 +566,6 @@ declare function map<W = unknown>( x: uint8ndarray, fcn: Callback<number, uint8n
 * @example
 * var Uint8ClampedArray = require( '@stdlib/array/uint8c' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10;
@@ -613,10 +580,7 @@ declare function map<W = unknown>( x: uint8ndarray, fcn: Callback<number, uint8n
 * // returns <ndarray>
 *
 * var y = map( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<W = unknown>( x: uint8cndarray, fcn: Callback<number, uint8cndarray, number, W>, thisArg?: ThisParameterType<Callback<number, uint8cndarray, number, W>> ): uint8cndarray;
 
@@ -631,7 +595,6 @@ declare function map<W = unknown>( x: uint8cndarray, fcn: Callback<number, uint8
 * @example
 * var BooleanArray = require( '@stdlib/array/bool' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function invert( v ) {
 *     return !v;
@@ -646,10 +609,7 @@ declare function map<W = unknown>( x: uint8cndarray, fcn: Callback<number, uint8
 * // returns <ndarray>
 *
 * var y = map( x, invert );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ true, true, true ], [ true, true, true ] ]
+* // returns <ndarray>[ [ true, true, true ], [ true, true, true ] ]
 */
 declare function map<W = unknown>( x: boolndarray, fcn: Callback<boolean, boolndarray, boolean, W>, thisArg?: ThisParameterType<Callback<boolean, boolndarray, boolean, W>> ): boolndarray;
 
@@ -663,7 +623,6 @@ declare function map<W = unknown>( x: boolndarray, fcn: Callback<boolean, boolnd
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -678,10 +637,7 @@ declare function map<W = unknown>( x: boolndarray, fcn: Callback<boolean, boolnd
 * // returns <ndarray>
 *
 * var y = map( x, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
+* // returns <ndarray>[ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
 declare function map<T = unknown, V = unknown, W = unknown>( x: genericndarray<T>, fcn: Callback<T, genericndarray<T>, V, W>, thisArg?: ThisParameterType<Callback<T, genericndarray<T>, V, W>> ): genericndarray<V>;
 
@@ -698,7 +654,6 @@ declare function map<T = unknown, V = unknown, W = unknown>( x: genericndarray<T
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -716,10 +671,7 @@ declare function map<T = unknown, V = unknown, W = unknown>( x: genericndarray<T
 *     'dtype': 'float64'
 * };
 * var y = map( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
+* // returns <ndarray>[ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
 declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Float64Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): float64ndarray;
 
@@ -736,7 +688,6 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Flo
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -754,10 +705,7 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Flo
 *     'dtype': 'float32'
 * };
 * var y = map( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
+* // returns <ndarray>[ [ 20.0, 30.0, 40.0 ], [ 80.0, 90.0, 100.0 ] ]
 */
 declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Float32Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): float32ndarray;
 
@@ -844,7 +792,6 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Com
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -862,10 +809,7 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Com
 *     'dtype': 'int32'
 * };
 * var y = map( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int32Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): int32ndarray;
 
@@ -882,7 +826,6 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -900,10 +843,7 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int
 *     'dtype': 'int16'
 * };
 * var y = map( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int16Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): int16ndarray;
 
@@ -920,7 +860,6 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -938,10 +877,7 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int
 *     'dtype': 'int8'
 * };
 * var y = map( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int8Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): int8ndarray;
 
@@ -958,7 +894,6 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -976,10 +911,7 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Int
 *     'dtype': 'uint32'
 * };
 * var y = map( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uint32Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): uint32ndarray;
 
@@ -996,7 +928,6 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uin
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -1014,10 +945,7 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uin
 *     'dtype': 'uint16'
 * };
 * var y = map( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uint16Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): uint16ndarray;
 
@@ -1034,7 +962,6 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uin
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -1052,10 +979,7 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uin
 *     'dtype': 'uint8'
 * };
 * var y = map( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uint8Options, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): uint8ndarray;
 
@@ -1072,7 +996,6 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uin
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -1090,10 +1013,7 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uin
 *     'dtype': 'uint8c'
 * };
 * var y = map( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uint8COptions, fcn: Callback<T, typedndarray<T>, number, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, number, W>> ): uint8cndarray;
 
@@ -1110,7 +1030,6 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uin
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var Boolean = require( '@stdlib/boolean/ctor' );
 *
 * function toBoolean( z ) {
@@ -1129,10 +1048,7 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Uin
 *     'dtype': 'bool'
 * };
 * var y = map( x, opts, toBoolean );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ true, true, true ], [ true, true, true ] ]
+* // returns <ndarray>[ [ true, true, true ], [ true, true, true ] ]
 */
 declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: BoolOptions, fcn: Callback<T, typedndarray<T>, boolean, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, boolean, W>> ): boolndarray;
 
@@ -1149,7 +1065,6 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Boo
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * function scale( z ) {
 *     return z * 10.0;
@@ -1167,10 +1082,7 @@ declare function map<T = unknown, W = unknown>( x: typedndarray<T>, options: Boo
 *     'dtype': 'generic'
 * };
 * var y = map( x, opts, scale );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 */
 declare function map<T = unknown, V = unknown, W = unknown>( x: typedndarray<T>, options: GenericOptions, fcn: Callback<T, typedndarray<T>, V, W>, thisArg?: ThisParameterType<Callback<T, typedndarray<T>, V, W>> ): genericndarray<V>;
 

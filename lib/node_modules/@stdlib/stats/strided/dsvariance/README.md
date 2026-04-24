@@ -241,7 +241,7 @@ console.log( v );
 Computes the [variance][variance] of a single-precision floating-point strided array using extended accumulation and returning an extended precision result.
 
 ```c
-const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f }
+const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
 
 double v = stdlib_strided_dsvariance( 8, 1.0f, x, 1 );
 // returns 6.0
@@ -263,7 +263,7 @@ double stdlib_strided_dsvariance( const CBLAS_INT N, const float correction, con
 Computes the [variance][variance] of a single-precision floating-point strided array using extended accumulation and alternative indexing semantics and returning an extended precision result.
 
 ```c
-const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f }
+const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
 
 double v = stdlib_strided_dsvariance_ndarray( 4, 1.0f, x, 2, 0 );
 // returns ~6.666667

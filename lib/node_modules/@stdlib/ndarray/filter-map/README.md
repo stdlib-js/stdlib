@@ -45,7 +45,6 @@ Filters and maps elements in an input [ndarray][@stdlib/ndarray/ctor] to element
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 function fcn( z ) {
     if ( z > 5.0 ) {
@@ -62,10 +61,7 @@ var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
 // returns <ndarray>
 
 var y = filterMap( x, fcn );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ 80.0, 90.0, 100.0 ]
+// returns <ndarray>[ 80.0, 90.0, 100.0 ]
 ```
 
 The function accepts the following arguments:
@@ -88,7 +84,6 @@ By default, the output ndarray [data type][@stdlib/ndarray/dtypes] is inferred f
 var Float64Array = require( '@stdlib/array/float64' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
 var dtype = require( '@stdlib/ndarray/dtype' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 function fcn( z ) {
     if ( z > 5.0 ) {
@@ -108,13 +103,10 @@ var opts = {
     'dtype': 'float32'
 };
 var y = filterMap( x, opts, fcn );
-// returns <ndarray>
+// returns <ndarray>[ 80.0, 90.0, 100.0 ]
 
 var dt = dtype( y );
 // returns 'float32'
-
-var arr = ndarray2array( y );
-// returns [ 80.0, 90.0, 100.0 ]
 ```
 
 To set the callback function execution context, provide a `thisArg`.
@@ -124,7 +116,6 @@ To set the callback function execution context, provide a `thisArg`.
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 function fcn( z ) {
     this.count += 1;
@@ -145,10 +136,7 @@ var ctx = {
     'count': 0
 };
 var y = filterMap( x, fcn, ctx );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ 80.0, 90.0, 100.0 ]
+// returns <ndarray>[ 80.0, 90.0, 100.0 ]
 
 var count = ctx.count;
 // returns 6
@@ -176,7 +164,6 @@ The callback function is provided the following arguments:
     var Float64Array = require( '@stdlib/array/float64' );
     var ndarray = require( '@stdlib/ndarray/ctor' );
     var Complex128 = require( '@stdlib/complex/float64/ctor' );
-    var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
     function fcn( z ) {
         if ( z > 5.0 ) {
