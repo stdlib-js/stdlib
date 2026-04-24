@@ -46,7 +46,7 @@ limitations under the License.
 | Create an array containing evenly spaced numbers over a specified interval and having a desired shape | `np.reshape(np.linspace(start, stop), shape)` | [`linspace(shape, start, stop)`][@stdlib/blas/ext/linspace] |
 | Create an array of uniformly distributed pseudorandom numbers | `np.random.default_rng().uniform(low,high,shape)` | [`uniform(shape,low,high)`][@stdlib/random/uniform] |
 | Filter an array according to a predicate function | `x[np.vectorize(predicate)(x)]` | [`filter(x, predicate)`][@stdlib/ndarray/filter] |
-| Flatten an array to a desired depth | `np.reshape(x, newshape)`] | [`flatten(x, {depth: depth})`][@stdlib/ndarray/flatten] |
+| Flatten an array to a desired depth | `np.reshape(x, newshape)` | [`flatten(x, {depth: depth})`][@stdlib/ndarray/flatten] |
 | Flatten an array starting from a specific dimension | `np.reshape(x, x.shape[:dim] + (-1,))` | [`flattenFrom(x, dim)`][@stdlib/ndarray/flatten-from] |
 | Prepend a specified number of singleton dimensions | `np.reshape(x, (1,)*n + x.shape)` | [`prependSingletonDimensions(x, n)`][@stdlib/ndarray/prepend-singleton-dimensions] |
 | Prepend a zero-filled array of the same shape along a specified dimension | `np.concat((np.zeros_like(x), x), axis=dim)` | [`concat([zerosLike(x), x], {dim: dim})`][@stdlib/ndarray/concat] |
