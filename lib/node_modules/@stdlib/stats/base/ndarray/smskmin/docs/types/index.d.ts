@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { float32ndarray, uint8ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the minimum value of a one-dimensional single-precision floating-point ndarray according to a mask.
@@ -42,7 +42,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var v = smskmin( [ x, mask ] );
 * // returns -2.0
 */
-declare function smskmin<T extends ndarray = ndarray>( arrays: [ T, T ] ): number;
+declare function smskmin( arrays: [ float32ndarray, uint8ndarray ] ): number;
 
 
 // EXPORTS //

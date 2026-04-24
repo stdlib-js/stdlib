@@ -205,7 +205,7 @@ double stdlib_base_dists_invgamma_logpdf( const double x, const double mu, const
 ### Examples
 
 ```c
-#include "stdlib/stats/base/dists/laplace/logpdf.h"
+#include "stdlib/stats/base/dists/invgamma/logpdf.h"
 #include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
