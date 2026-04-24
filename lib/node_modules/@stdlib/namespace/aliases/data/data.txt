@@ -1534,11 +1534,13 @@ COMPLEX64_NAN
 COMPLEX64_NUM_BYTES
 COMPLEX64_ZERO
 Complex64Array
+Complex64Vector
 Complex128
 COMPLEX128_NAN
 COMPLEX128_NUM_BYTES
 COMPLEX128_ZERO
 Complex128Array
+Complex128Vector
 complexarray
 complexarrayCtors
 complexarrayDataTypes
@@ -1716,6 +1718,7 @@ FLOAT32_TWO_PI
 Float32Array
 Float32ArrayFE
 Float32ArrayLE
+Float32Vector
 FLOAT64_EXPONENT_BIAS
 FLOAT64_HIGH_WORD_ABS_MASK
 FLOAT64_HIGH_WORD_EXPONENT_MASK
@@ -3136,6 +3139,7 @@ US_STATES_NAMES
 US_STATES_NAMES_CAPITALS
 utf16ToUTF8Array
 vartest
+vector
 waterfall
 WebAssemblyMemory
 whileAsync

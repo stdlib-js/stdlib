@@ -49,7 +49,7 @@ var y = new Complex128Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 var z = zcopy( [ x, y ] );
 // returns <ndarray>[ <Complex128>[ 1.0, 2.0 ], <Complex128>[ 3.0, 4.0 ], <Complex128>[ 5.0, 6.0 ] ]
 
-var bool = ( y === z );
+var bool = ( z === y );
 // returns true
 ```
 

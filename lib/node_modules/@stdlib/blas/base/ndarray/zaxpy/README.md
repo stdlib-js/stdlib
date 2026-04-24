@@ -54,7 +54,7 @@ var alpha = scalar2ndarray( new Complex128( 1.0, 2.0 ), {
 var z = zaxpy( [ x, y, alpha ] );
 // returns <ndarray>[ <Complex128>[ -2.0, 5.0 ], <Complex128>[ -4.0, 11.0 ], <Complex128>[ -6.0, 17.0 ] ]
 
-var bool = ( y === z );
+var bool = ( z === y );
 // returns true
 ```
 
