@@ -25,15 +25,21 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Circularly shifts the elements of a one-dimensional ndarray by a specified number of positions.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying the number of positions to shift
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray specifying the number of positions to shift.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns input ndarray
 *
 * @example
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
-* var xbuf = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ], 'generic' );
 *
 * var k = scalar2ndarray( 2, {
 *    'dtype': 'generic'

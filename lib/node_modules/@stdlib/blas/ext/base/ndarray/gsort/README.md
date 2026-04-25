@@ -41,12 +41,10 @@ var gsort = require( '@stdlib/blas/ext/base/ndarray/gsort' );
 Sorts a one-dimensional ndarray.
 
 ```javascript
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var array = require( '@stdlib/ndarray/array' );
 
-var x = array( [ 1.0, -2.0, 3.0, -4.0 ], {
-    'dtype': 'generic'
-});
+var x = vector( [ 1.0, -2.0, 3.0, -4.0 ], 'generic' );
 
 var order = scalar2ndarray( 1.0, {
     'dtype': 'generic'
@@ -58,7 +56,10 @@ var out = gsort( [ x, order ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying the sort order.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a zero-dimensional ndarray specifying the sort order.
 
 </section>
 
