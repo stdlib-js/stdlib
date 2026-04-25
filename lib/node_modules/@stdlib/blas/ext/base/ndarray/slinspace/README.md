@@ -41,12 +41,10 @@ var slinspace = require( '@stdlib/blas/ext/base/ndarray/slinspace' );
 Fills a one-dimensional single-precision floating-point ndarray with linearly spaced values over a specified interval.
 
 ```javascript
-var Float32Array = require( '@stdlib/array/float32' );
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
-var xbuf = new Float32Array( [ 0.0, 0.0, 0.0, 0.0 ] );
-var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float32Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 
 var start = scalar2ndarray( 0.0, {
     'dtype': 'float32'
@@ -66,12 +64,12 @@ var out = slinspace( [ x, start, end, endpoint ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing the following ndarrays in order:
+-   **arrays**: array-like object containing the following ndarrays:
 
-    1.  a one-dimensional input ndarray.
-    2.  a zero-dimensional ndarray specifying the start of the interval.
-    3.  a zero-dimensional ndarray specifying the end of the interval.
-    4.  a zero-dimensional ndarray specifying whether to include the end of the interval when writing values to the input ndarray.
+    -   a one-dimensional input ndarray.
+    -   a zero-dimensional ndarray specifying the start of the interval.
+    -   a zero-dimensional ndarray specifying the end of the interval.
+    -   a zero-dimensional ndarray specifying whether to include the end of the interval when writing values to the input ndarray.
 
 </section>
 
@@ -108,27 +106,23 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarraylike2scalar = require( '@stdlib/ndarray/base/ndarraylike2scalar' );
 var slinspace = require( '@stdlib/blas/ext/base/ndarray/slinspace' );
 
-var xbuf = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float32'
-});
-var x = new ndarray( 'float32', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = discreteUniform( [ 10 ], -100, 100, opts );
 console.log( ndarray2array( x ) );
 
-var start = scalar2ndarray( 0.0, {
-    'dtype': 'float32'
-});
+var start = scalar2ndarray( 0.0, opts );
 console.log( 'Start: %d', ndarraylike2scalar( start ) );
 
-var end = scalar2ndarray( 100.0, {
-    'dtype': 'float32'
-});
+var end = scalar2ndarray( 100.0, opts );
 console.log( 'Stop: %d', ndarraylike2scalar( end ) );
 
 var endpoint = scalar2ndarray( true, {

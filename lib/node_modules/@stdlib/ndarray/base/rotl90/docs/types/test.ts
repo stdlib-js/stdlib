@@ -41,7 +41,7 @@ import rotl90 = require( './index' );
 	rotl90( zeros( 'generic', sh, ord ), 1, false ); // $ExpectType genericndarray<number>
 }
 
-// The compiler throws an error if the function is provided a first argument which is not an ndarray having a recognized/supported data type...
+// The compiler throws an error if the function is provided a first argument which is not an ndarray...
 {
 	rotl90( '10', 1, false ); // $ExpectError
 	rotl90( 10, 1, false ); // $ExpectError
