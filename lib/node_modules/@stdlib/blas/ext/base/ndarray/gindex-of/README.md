@@ -41,11 +41,10 @@ var gindexOf = require( '@stdlib/blas/ext/base/ndarray/gindex-of' );
 Returns the first index of a specified search element in a one-dimensional ndarray.
 
 ```javascript
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
-var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, 3.0, 4.0, 2.0 ], 'generic' );
 
 var searchElement = scalar2ndarray( 2.0, {
     'dtype': 'generic'
@@ -70,11 +69,10 @@ The function has the following parameters:
 If the function is unable to find a search element, the function returns `-1`.
 
 ```javascript
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
-var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, 3.0, 4.0, 2.0 ], 'generic' );
 
 var searchElement = scalar2ndarray( 10.0, {
     'dtype': 'generic'
@@ -109,27 +107,23 @@ var idx = gindexOf( [ x, searchElement, fromIndex ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarraylike2scalar = require( '@stdlib/ndarray/base/ndarraylike2scalar' );
 var gindexOf = require( '@stdlib/blas/ext/base/ndarray/gindex-of' );
 
-var xbuf = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'generic'
-});
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = discreteUniform( [ 10 ], -100, 100, opts );
 console.log( ndarray2array( x ) );
 
-var searchElement = scalar2ndarray( 80.0, {
-    'dtype': 'generic'
-});
+var searchElement = scalar2ndarray( 80.0, opts );
 console.log( 'Search Element:', ndarraylike2scalar( searchElement ) );
 
-var fromIndex = scalar2ndarray( 0, {
-    'dtype': 'generic'
-});
+var fromIndex = scalar2ndarray( 0, opts );
 console.log( 'From Index:', ndarraylike2scalar( fromIndex ) );
 
 var idx = gindexOf( [ x, searchElement, fromIndex ] );
