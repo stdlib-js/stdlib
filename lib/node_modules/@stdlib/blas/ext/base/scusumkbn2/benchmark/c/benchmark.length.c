@@ -120,6 +120,8 @@ static double benchmark1( int iterations, int len ) {
 	if ( y[ len-1 ] != y[ len-1 ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( y );
 	return elapsed;
 }
 

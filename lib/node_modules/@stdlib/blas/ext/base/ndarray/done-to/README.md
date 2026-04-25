@@ -41,11 +41,9 @@ var doneTo = require( '@stdlib/blas/ext/base/ndarray/done-to' );
 Fills a one-dimensional double-precision floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from one.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 
-var xbuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 // returns <ndarray>[ 0.0, 0.0, 0.0, 0.0 ]
 
 var out = doneTo( [ x ] );
@@ -77,13 +75,11 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var zeros = require( '@stdlib/array/zeros' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var doneTo = require( '@stdlib/blas/ext/base/ndarray/done-to' );
 
-var xbuf = zeros( 10, 'float64' );
-var x = new ndarray( 'float64', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( 10 );
 console.log( ndarray2array( x ) );
 
 doneTo( [ x ] );
