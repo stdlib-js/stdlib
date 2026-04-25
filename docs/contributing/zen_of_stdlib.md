@@ -95,7 +95,7 @@ Complexity makes code hard to reason about. Complex code collapses under its own
 
 ### Push complexity up the stack
 
-Avoid overloading lower level interfaces with complex interfaces and configuration. As you move down the stack, interfaces should become simpler, more predictable, and have less configurable behavior.
+Avoid overloading lower-level interfaces with complex interfaces and configuration. As you move down the stack, interfaces should become simpler, more predictable, and have less configurable behavior.
 
 ### If it's hard to explain, it's a bad idea
 
