@@ -1,0 +1,90 @@
+
+{{alias}}( shape, stridesX, stridesY, stridesZ, stridesW, stridesU, stridesV )
+    Reorders ndarray dimensions and associated strides for loop interchange.
+
+    The function returns an object having the following properties:
+
+    - sh: ordered dimensions.
+    - sx: first input array strides sorted in loop order.
+    - sy: second input array strides sorted in loop order.
+    - sz: third input array strides sorted in loop order.
+    - sw: fourth input array strides sorted in loop order.
+    - su: fifth input array strides sorted in loop order.
+    - sv: output array strides sorted in loop order.
+
+    For all returned arrays, the first element corresponds to the innermost
+    loop, and the last element corresponds to the outermost loop.
+
+    The function assumes that the input and output ndarrays have the same shape.
+    Hence, loop interchange order should only be determined after broadcasting.
+
+    Parameters
+    ----------
+    shape: ArrayLikeObject<integer>
+        Array dimensions.
+
+    stridesX: ArrayLikeObject<integer>
+        First input array strides.
+
+    stridesY: ArrayLikeObject<integer>
+        Second input array strides.
+
+    stridesZ: ArrayLikeObject<integer>
+        Third input array strides.
+
+    stridesW: ArrayLikeObject<integer>
+        Fourth input array strides.
+
+    stridesU: ArrayLikeObject<integer>
+        Fifth input array strides.
+
+    stridesV: ArrayLikeObject<integer>
+        Output array strides.
+
+    Returns
+    -------
+    out: Object
+        Loop interchange data.
+
+    out.sh: Array<integer>
+        Ordered dimensions.
+
+    out.sx: Array<integer>
+        First input array strides sorted in loop order.
+
+    out.sy: Array<integer>
+        Second input array strides sorted in loop order.
+
+    out.sz: Array<integer>
+        Third input array strides sorted in loop order.
+
+    out.sw: Array<integer>
+        Fourth input array strides sorted in loop order.
+
+    out.su: Array<integer>
+        Fifth input array strides sorted in loop order.
+
+    out.sv: Array<integer>
+        Output array strides sorted in loop order.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2 ], [ 3, 4 ] ] );
+    > var y = {{alias:@stdlib/ndarray/array}}( [ [ 5, 6 ], [ 7, 8 ] ] );
+    > var z = {{alias:@stdlib/ndarray/array}}( [ [ 9, 10 ], [ 11, 12 ] ] );
+    > var w = {{alias:@stdlib/ndarray/array}}( [ [ 13, 14 ], [ 15, 16 ] ] );
+    > var u = {{alias:@stdlib/ndarray/array}}( [ [ 17, 18 ], [ 19, 20 ] ] );
+    > var v = {{alias:@stdlib/ndarray/array}}( [ [ 0, 0 ], [ 0, 0 ] ] );
+    > var sh = {{alias:@stdlib/ndarray/shape}}( x );
+    > var sx = {{alias:@stdlib/ndarray/strides}}( x );
+    > var sy = {{alias:@stdlib/ndarray/strides}}( y );
+    > var sz = {{alias:@stdlib/ndarray/strides}}( z );
+    > var sw = {{alias:@stdlib/ndarray/strides}}( w );
+    > var su = {{alias:@stdlib/ndarray/strides}}( u );
+    > var sv = {{alias:@stdlib/ndarray/strides}}( v );
+    > var o = {{alias}}( sh, sx, sy, sz, sw, su, sv )
+    {...}
+
+    See Also
+    --------
+

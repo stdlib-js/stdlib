@@ -1,0 +1,44 @@
+
+{{alias}}( x, value )
+    Broadcasts a scalar value to an ndarray having the same shape and data type
+    as a provided input ndarray.
+
+    Along with data type, shape, and order, the function infers the "class" of
+    the returned ndarray from the provided ndarray. For example, if provided a
+    "base" ndarray, the function returns a base ndarray. If provided a non-base
+    ndarray, the function returns a non-base ndarray.
+
+    If `value` is a number and a provided ndarray has a complex number data
+    type, the function returns an ndarray containing a complex number whose real
+    component equals the provided scalar value and whose imaginary component is
+    zero.
+
+    The returned ndarray is a view on a single-element buffer. The returned
+    ndarray is not contiguous. As more than one element of a returned ndarray
+    refers to the same memory location, writing to the returned ndarray may
+    affect multiple elements. If you need to write to the returned ndarray, copy
+    the ndarray before performing operations which may mutate elements.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    value: any
+        Scalar value.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/base/zeros}}( 'float64', [ 2, 2 ], 'row-major' )
+    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+    > var y = {{alias}}( x, 1.0 )
+    <ndarray>[ [ 1.0, 1.0 ], [ 1.0, 1.0 ] ]
+
+    See Also
+    --------
+

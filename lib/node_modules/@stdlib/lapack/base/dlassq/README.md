@@ -232,6 +232,19 @@ TODO
 
 <!-- /.c -->
 
+* * *
+
+<section class="references">
+
+## References
+
+-   Blue, James L. 1978. "A Portable Fortran Program to Find the Euclidean Norm of a Vector." _ACM Transactions on Mathematical Software_ 4 (1). New York, NY, USA: Association for Computing Machinery: 15–23. doi:[10.1145/355769.355771][@blue:1978a].
+-   Anderson, Edward. 2017. "Algorithm 978: Safe Scaling in the Level 1 BLAS." _ACM Transactions on Mathematical Software_ 44 (1). New York, NY, USA: Association for Computing Machinery: 1–28. doi:[10.1145/3061665][@anderson:2017a].
+
+</section>
+
+<!-- /.references -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -251,6 +264,10 @@ TODO
 [mdn-float64array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
+
+[@blue:1978a]: https://doi.org/10.1145/355769.355771
+
+[@anderson:2017a]: https://doi.org/10.1145/3061665
 
 </section>
 

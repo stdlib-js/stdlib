@@ -127,10 +127,7 @@ interface SomeBy {
 	*
 	* // Perform reduction:
 	* var out = someBy( x, 3, isEven );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, n: integerndarray | number, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): boolndarray;
 
@@ -168,10 +165,7 @@ interface SomeBy {
 	*
 	* // Perform reduction:
 	* var out = someBy( x, 3, {}, isEven );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, n: integerndarray | number, options: Options, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): boolndarray;
 
@@ -213,10 +207,7 @@ interface SomeBy {
 	*
 	* // Perform reduction:
 	* var out = someBy.assign( x, 3, y, isEven );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends ndarray = ndarray, ThisArg = unknown>( x: ndarray, n: integerndarray | number, y: V, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 
@@ -260,10 +251,7 @@ interface SomeBy {
 	*
 	* // Perform reduction:
 	* var out = someBy.assign( x, 3, y, {}, isEven );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	assign<T = unknown, U extends InputArray<T> = InputArray<T>, V extends ndarray = ndarray, ThisArg = unknown>( x: ndarray, n: integerndarray | number, y: V, options: BaseOptions, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 }
@@ -302,10 +290,7 @@ interface SomeBy {
 *
 * // Perform reduction:
 * var out = someBy( x, 3, isEven );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns true
+* // returns <ndarray>[ true ]
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -335,10 +320,7 @@ interface SomeBy {
 *
 * // Perform reduction:
 * var out = someBy.assign( x, 3, y, isEven );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns true
+* // returns <ndarray>[ true ]
 */
 declare var someBy: SomeBy;
 

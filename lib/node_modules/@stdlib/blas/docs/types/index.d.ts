@@ -68,10 +68,7 @@ interface Namespace {
 	* var y = array( new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );
 	*
 	* var z = ns.ddot( x, y );
-	* // returns <ndarray>
-	*
-	* var v = z.get();
-	* // returns -5.0
+	* // returns <ndarray>[ -5.0 ]
 	*/
 	ddot: typeof ddot;
 
