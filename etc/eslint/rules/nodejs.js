@@ -350,7 +350,7 @@ rules[ 'n/no-unsupported-features/es-builtins' ] = [ 'error', {
 */
 rules[ 'n/no-unsupported-features/es-syntax' ] = [ 'error', {
 	'version': '>=0.12.18',
-	'ignores': [ 'bigint', 'hashbang' ]
+	'ignores': [ 'bigint' ]
 }];
 
 /**
