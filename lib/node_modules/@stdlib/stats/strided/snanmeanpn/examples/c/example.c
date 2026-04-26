@@ -17,11 +17,12 @@
 */
 
 #include "stdlib/stats/strided/snanmeanpn.h"
+#include "stdlib/constants/float32/nan.h"
 #include <stdio.h>
 
 int main( void ) {
 	// Create a strided array:
-	const float x[] = { 1.0f, 2.0f, 0.0f/0.0f, 3.0f, 0.0f/0.0f, 4.0f, 5.0f, 6.0f, 0.0f/0.0f, 7.0f, 8.0f, 0.0f/0.0f };
+	const float x[] = { 1.0f, 2.0f, STDLIB_CONSTANT_FLOAT32_NAN, 3.0f, STDLIB_CONSTANT_FLOAT32_NAN, 4.0f, 5.0f, 6.0f, STDLIB_CONSTANT_FLOAT32_NAN, 7.0f, 8.0f, STDLIB_CONSTANT_FLOAT32_NAN };
 
 	// Specify the number of elements:
 	const int N = 6;
