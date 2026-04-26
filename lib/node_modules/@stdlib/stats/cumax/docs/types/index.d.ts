@@ -65,16 +65,12 @@ interface Unary {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = cumax( x );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ -1.0, 2.0, 2.0 ]
+	* // returns <ndarray>[ -1.0, 2.0, 2.0 ]
 	*/
 	<T = unknown, U = unknown>( x: InputArray<T>, options?: Options ): OutputArray<U>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output ndarray data type is dependent on how `x` interacts with output data type policy and whether that policy has been overridden by `options.dtype`.
 
@@ -87,7 +83,6 @@ interface Unary {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var zerosLike = require( '@stdlib/ndarray/zeros-like' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
@@ -95,13 +90,10 @@ interface Unary {
 	* var y = zerosLike( x );
 	*
 	* var out = cumax.assign( x, y );
-	* // returns <ndarray>
+	* // returns <ndarray>[ -1.0, 2.0, 2.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ -1.0, 2.0, 2.0 ]
 	*/
 	assign<T = unknown, U extends OutputArray<unknown> = OutputArray<unknown>>( x: InputArray<T>, out: U, options?: BaseOptions ): U;
 }
@@ -114,19 +106,14 @@ interface Unary {
 * @returns output ndarray
 *
 * @example
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ -1.0, 2.0, -3.0 ] );
 *
 * var y = cumax( x );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ -1.0, 2.0, 2.0 ]
+* // returns <ndarray>[ -1.0, 2.0, 2.0 ]
 *
 * @example
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var zerosLike = require( '@stdlib/ndarray/zeros-like' );
 * var array = require( '@stdlib/ndarray/array' );
 *
@@ -134,13 +121,10 @@ interface Unary {
 * var y = zerosLike( x );
 *
 * var out = cumax.assign( x, y );
-* // returns <ndarray>
+* // returns <ndarray>[ -1.0, 2.0, 2.0 ]
 *
 * var bool = ( out === y );
 * // returns true
-*
-* var arr = ndarray2array( out );
-* // returns [ -1.0, 2.0, 2.0 ]
 */
 declare const cumax: Unary;
 
