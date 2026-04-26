@@ -31,7 +31,7 @@ var rules = {};
 * @name n/callback-return
 * @memberof rules
 * @type {Array}
-* @see [node/callback-return]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/callback-return.md}
+* @see [n/callback-return]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/callback-return.md}
 *
 * @example
 * // Bad...
@@ -67,7 +67,7 @@ rules[ 'n/callback-return' ] = [ 'warn', [
 * @name n/file-extension-in-import
 * @memberof rules
 * @type {Array}
-* @see [node/file-extension-in-import]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/file-extension-in-import.md}
+* @see [n/file-extension-in-import]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/file-extension-in-import.md}
 *
 * @example
 * // Bad...
@@ -88,7 +88,7 @@ rules[ 'n/file-extension-in-import' ] = [ 'error', 'always' ];
 * @name n/exports-style
 * @memberof rules
 * @type {Array}
-* @see [node/exports-style]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/exports-style.md}
+* @see [n/exports-style]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/exports-style.md}
 *
 * @example
 * // Bad...
@@ -111,7 +111,7 @@ rules[ 'n/exports-style' ] = [ 'error', 'module.exports' ];
 * @memberof rules
 * @type {string}
 * @default 'off'
-* @see [node/global-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/global-require.md}
+* @see [n/global-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/global-require.md}
 *
 * @example
 * // Okay...
@@ -128,7 +128,7 @@ rules[ 'n/global-require' ] = 'off';
 * @memberof rules
 * @type {Array}
 * @default [ 'error', '^(err|error)$' ]
-* @see [node/handle-callback-err]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/handle-callback-err.md}
+* @see [n/handle-callback-err]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/handle-callback-err.md}
 *
 * @example
 * // Bad...
@@ -154,7 +154,7 @@ rules[ 'n/handle-callback-err' ] = [ 'error', '^(err|error)$' ];
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [node/no-exports-assign]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-exports-assign.md}
+* @see [n/no-exports-assign]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-exports-assign.md}
 *
 * @example
 * // Bad...
@@ -175,7 +175,7 @@ rules[ 'n/no-exports-assign' ] = 'error';
 * @name n/no-mixed-requires
 * @memberof rules
 * @type {Array}
-* @see [node/no-mixed-requires]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-mixed-requires.md}
+* @see [n/no-mixed-requires]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-mixed-requires.md}
 *
 * @example
 * // Good...
@@ -196,7 +196,7 @@ rules[ 'n/no-mixed-requires' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [node/no-new-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-new-require.md}
+* @see [n/no-new-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-new-require.md}
 *
 * @example
 * // Bad...
@@ -217,7 +217,7 @@ rules[ 'n/no-new-require' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [node/no-path-concat]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-path-concat.md}
+* @see [n/no-path-concat]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-path-concat.md}
 *
 * @example
 * // Bad...
@@ -237,7 +237,7 @@ rules[ 'n/no-path-concat' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [node/no-process-env]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-env.md}
+* @see [n/no-process-env]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-env.md}
 */
 rules[ 'n/no-process-env' ] = 'error';
 
@@ -248,7 +248,7 @@ rules[ 'n/no-process-env' ] = 'error';
 * @memberof rules
 * @type {string}
 * @default 'warn'
-* @see [node/no-process-exit]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-exit.md}
+* @see [n/no-process-exit]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-process-exit.md}
 */
 rules[ 'n/no-process-exit' ] = 'warn';
 
@@ -258,7 +258,7 @@ rules[ 'n/no-process-exit' ] = 'warn';
 * @name n/no-restricted-require
 * @memberof rules
 * @type {Array}
-* @see [node/no-restricted-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-require.md}
+* @see [n/no-restricted-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-require.md}
 */
 rules[ 'n/no-restricted-require' ] = [ 'error', [
 	'underscore',
@@ -272,7 +272,7 @@ rules[ 'n/no-restricted-require' ] = [ 'error', [
 * @name n/no-restricted-import
 * @memberof rules
 * @type {Array}
-* @see [node/no-restricted-import]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-import.md}
+* @see [n/no-restricted-import]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-restricted-import.md}
 */
 rules[ 'n/no-restricted-import' ] = [ 'error', [
 	'underscore',
@@ -287,7 +287,7 @@ rules[ 'n/no-restricted-import' ] = [ 'error', [
 * @memberof rules
 * @type {string}
 * @default 'warn'
-* @see [node/no-sync]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-sync.md}
+* @see [n/no-sync]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-sync.md}
 */
 rules[ 'n/no-sync' ] = 'warn';
 
@@ -297,7 +297,7 @@ rules[ 'n/no-sync' ] = 'warn';
 * @name n/no-unpublished-bin
 * @memberof rules
 * @type {Array}
-* @see [node/no-unpublished-bin]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-bin.md}
+* @see [n/no-unpublished-bin]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-bin.md}
 */
 rules[ 'n/no-unpublished-bin' ] = [ 'error' ];
 
@@ -307,7 +307,7 @@ rules[ 'n/no-unpublished-bin' ] = [ 'error' ];
 * @name n/no-unpublished-import
 * @memberof rules
 * @type {Array}
-* @see [node/no-unpublished-import]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-import.md}
+* @see [n/no-unpublished-import]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-import.md}
 */
 rules[ 'n/no-unpublished-import' ] = [ 'error', {
 	'allowModules': [],
@@ -320,7 +320,7 @@ rules[ 'n/no-unpublished-import' ] = [ 'error', {
 * @name n/no-unpublished-require
 * @memberof rules
 * @type {Array}
-* @see [node/no-unpublished-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-require.md}
+* @see [n/no-unpublished-require]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unpublished-require.md}
 */
 rules[ 'n/no-unpublished-require' ] = [ 'error', {
 	'allowModules': [],
@@ -333,7 +333,7 @@ rules[ 'n/no-unpublished-require' ] = [ 'error', {
 * @name n/no-unsupported-features/es-builtins
 * @memberof rules
 * @type {Array}
-* @see [node/no-unsupported-features/es-builtins]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-builtins.md}
+* @see [n/no-unsupported-features/es-builtins]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-builtins.md}
 */
 rules[ 'n/no-unsupported-features/es-builtins' ] = [ 'error', {
 	'version': '>=0.12.18',
@@ -346,7 +346,7 @@ rules[ 'n/no-unsupported-features/es-builtins' ] = [ 'error', {
 * @name n/no-unsupported-features/es-syntax
 * @memberof rules
 * @type {Array}
-* @see [node/no-unsupported-features/es-syntax]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-syntax.md}
+* @see [n/no-unsupported-features/es-syntax]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/es-syntax.md}
 */
 rules[ 'n/no-unsupported-features/es-syntax' ] = [ 'error', {
 	'version': '>=0.12.18',
@@ -359,7 +359,7 @@ rules[ 'n/no-unsupported-features/es-syntax' ] = [ 'error', {
 * @name n/no-unsupported-features/node-builtins
 * @memberof rules
 * @type {Array}
-* @see [node/no-unsupported-features/node-builtins]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/node-builtins.md}
+* @see [n/no-unsupported-features/node-builtins]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/no-unsupported-features/node-builtins.md}
 */
 rules[ 'n/no-unsupported-features/node-builtins' ] = [ 'error', {
 	'version': '>=0.12.18',
@@ -373,7 +373,7 @@ rules[ 'n/no-unsupported-features/node-builtins' ] = [ 'error', {
 * @memberof rules
 * @type {string}
 * @default 'error'
-* @see [node/process-exit-as-throw]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md}
+* @see [n/process-exit-as-throw]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/process-exit-as-throw.md}
 */
 rules[ 'n/process-exit-as-throw' ] = 'error';
 
@@ -383,7 +383,7 @@ rules[ 'n/process-exit-as-throw' ] = 'error';
 * @name n/hashbang
 * @memberof rules
 * @type {Array}
-* @see [node/shebang]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/shebang.md}
+* @see [n/hashbang]{@link https://github.com/eslint-community/eslint-plugin-n/blob/HEAD/docs/rules/hashbang.md}
 */
 rules[ 'n/hashbang' ] = [ 'off' ];
 
