@@ -1,0 +1,90 @@
+
+{{alias}}( x[, options] )
+    Returns an ndarray created by joining elements using a separator along one
+    or more ndarray dimensions.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.sep: ndarray|any
+        Separator. May be either a scalar value or an ndarray. If provided an
+        ndarray, the value must have a shape which is broadcast compatible with
+        the complement of the shape defined by `options.dims`. For example,
+        given the input shape [2, 3, 4] and `options.dims=[0]`, an ndarray
+        separator value must have a shape which is broadcast compatible with the
+        shape [3, 4]. Similarly, when performing the operation over all elements
+        in a provided input ndarray, an ndarray separator value must be a zero-
+        dimensional ndarray. Default: ','.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided, the
+        function performs the operation over all elements in a provided input
+        ndarray.
+
+    options.keepdims: boolean (optional)
+        Boolean indicating whether the reduced dimensions should be included in
+        the returned ndarray as singleton dimensions. Default: false.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = {{alias}}( x )
+    <ndarray>[ '1,2,3,4' ]
+
+
+{{alias}}.assign( x, out[, options] )
+    Joins elements of an input ndarray using a separator along one or more
+    ndarray dimensions and assigns results to a provided output ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    out: ndarray
+        Output array.
+
+    options: Object (optional)
+        Function options.
+
+    options.sep: ndarray|any
+        Separator. May be either a scalar value or an ndarray. If provided an
+        ndarray, the value must have a shape which is broadcast compatible with
+        the complement of the shape defined by `options.dims`. For example,
+        given the input shape [2, 3, 4] and `options.dims=[0]`, an ndarray
+        separator value must have a shape which is broadcast compatible with the
+        shape [3, 4]. Similarly, when performing the operation over all elements
+        in a provided input ndarray, an ndarray separator value must be a zero-
+        dimensional ndarray. Default: ','.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided, the
+        function performs the operation over all elements in a provided input
+        ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var out = {{alias:@stdlib/ndarray/from-scalar}}( '' );
+    > var y = {{alias}}.assign( x, out )
+    <ndarray>[ '1,2,3,4' ]
+    > var bool = ( out === y )
+    true
+
+    See Also
+    --------

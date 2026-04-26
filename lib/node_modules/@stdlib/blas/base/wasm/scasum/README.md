@@ -283,7 +283,7 @@ console.log( out );
 
 [blas]: http://www.netlib.org/blas
 
-[scasum]: https://www.netlib.org/lapack/explore-html-3.6.1/df/d28/group__single__blas__level1_gadd7d12f994e4868ca9998b054707d934.html
+[scasum]: https://www.netlib.org/lapack/explore-html/d5/d72/group__asum_ga89c76eef329f84ba9ed106b34fedab16.html
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
