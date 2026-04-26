@@ -1,0 +1,1 @@
+{"env":{"node":true,"es2020":true},"extends":"eslint:recommended","rules":{"no-unused-vars":["warn",{"argsIgnorePattern":"^_"}],"no-trailing-spaces":"error","no-multiple-empty-lines":["error",{"max":1}],"indent":["error",2],"quotes":["error","double",{"avoidEscape":true}],"semi":["error","always"],"comma-dangle":["error","always-multiline"],"eqeqeq":"off"}}
