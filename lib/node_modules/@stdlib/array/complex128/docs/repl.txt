@@ -82,7 +82,7 @@
 
 
 {{alias}}( obj )
-    Creates a 128-bit complex number array from an array-like object or 
+    Creates a 128-bit complex number array from an array-like object or
     iterable.
 
     Parameters
@@ -165,12 +165,11 @@
 
     thisArg: Any (optional)
         Callback execution context.
-    
     Returns
     -------
     out: Complex128Array
         A typed array.
-    
+
     Examples
     --------
     > function clbkFcn( v ) { return v * 2.0 };
@@ -179,11 +178,7 @@
     > var len = arr.length
     2
     > var z = arr.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -2.0
+    <Complex128>[ 2.0, -2.0 ]
 
 
 {{alias}}.of( element0[, element1[, ...elementN]] )
@@ -219,11 +214,7 @@
     > len = arr.length
     2
     > var z = arr.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -1.0
+    <Complex128>[ 1.0, -1.0 ]
 
 
 {{alias}}.BYTES_PER_ELEMENT
@@ -327,11 +318,7 @@
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
     <Complex128Array>
     > var z = arr.at( 1 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -2.0
+    <Complex128>[ 2.0, -2.0 ]
 
 
 {{alias}}.prototype.copyWithin( target, start[, end] )
@@ -342,10 +329,10 @@
     ----------
     target: integer
         Target start index position.
-    
+
     start: integer
         Source start index position.
-    
+
     end: integer (optional)
         Source end index position. Default: out.length.
 
@@ -353,7 +340,7 @@
     -------
     out: Complex128Array
         Modified array.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0 ] )
@@ -361,11 +348,7 @@
     > arr.copyWithin( 0, 2 )
     <Complex128Array>
     > var z = arr.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    3.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -3.0
+    <Complex128>[ 3.0, -3.0 ]
 
 
 {{alias}}.prototype.entries()
@@ -382,23 +365,11 @@
     <Complex128Array>
     > var it = arr.entries();
     > var v = it.next().value
-    [ 0, <Complex128> ]
-    > var re = {{alias:@stdlib/complex/float64/real}}( v[ 1 ] )
-    1.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( v[ 1 ] )
-    -1.0
+    [ 0, <Complex128>[ 1.0, -1.0 ] ]
     > v = it.next().value
-    [ 1, <Complex128> ]
-    > re = {{alias:@stdlib/complex/float64/real}}( v[ 1 ] )
-    2.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( v[ 1 ] )
-    -2.0
+    [ 1, <Complex128>[ 2.0, -2.0 ] ]
     > v = it.next().value
-    [ 2, <Complex128> ]
-    > re = {{alias:@stdlib/complex/float64/real}}( v[ 1 ] )
-    3.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( v[ 1 ] )
-    -3.0
+    [ 2, <Complex128>[ 3.0, -3.0 ] ]
     > var bool = it.next().done
     true
 
@@ -456,30 +427,18 @@
     -------
     out: Complex128Array
         Modified array.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( 3 )
     <Complex128Array>
     > arr.fill( new {{alias:@stdlib/complex/float64/ctor}}( 1.0, 1.0 ) );
     > var z = arr.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    1.0
+    <Complex128>[ 1.0, 1.0 ]
     > z = arr.get( 1 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    1.0
+    <Complex128>[ 1.0, 1.0 ]
     > z = arr.get( 2 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    1.0
+    <Complex128>[ 1.0, 1.0 ]
 
 
 {{alias}}.prototype.filter( predicate[, thisArg] )
@@ -508,7 +467,7 @@
     -------
     out: Complex128Array
         A new typed array.
-    
+
     Examples
     --------
     > function predicate( v ) { return ( {{alias:@stdlib/complex/float64/real}}( v ) === {{alias:@stdlib/complex/float64/imag}}( v ) ); };
@@ -519,11 +478,7 @@
     > var len = out.length
     1
     > var z = out.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    2.0
+    <Complex128>[ 2.0, 2.0 ]
 
 
 {{alias}}.prototype.find( predicate[, thisArg] )
@@ -546,23 +501,19 @@
 
     thisArg: Any (optional)
         Execution context.
-    
+
     Returns
     -------
     out: Complex128|void
         Array element or `undefined`.
-    
+
     Examples
     --------
     > function predicate( v ) { return ( {{alias:@stdlib/complex/float64/real}}( v ) === {{alias:@stdlib/complex/float64/imag}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex128Array>
     > var z = arr.find( predicate )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    1.0
+    <Complex128>[ 1.0, 1.0 ]
 
 
 {{alias}}.prototype.findIndex( predicate[, thisArg] )
@@ -585,12 +536,12 @@
 
     thisArg: Any (optional)
         Execution context.
-    
+
     Returns
     -------
     out: integer
         Array index or `-1`.
-    
+
     Examples
     --------
     > function predicate( v ) { return ( {{alias:@stdlib/complex/float64/real}}( v ) === {{alias:@stdlib/complex/float64/imag}}( v ) ); };
@@ -619,24 +570,20 @@
         Predicate function which tests array elements.
 
     thisArg: Any (optional)
-        Execution context.  
-    
+        Execution context.
+
     Returns
     -------
     out: Complex128|void
         Array element or `undefined`.
-    
+
     Examples
     --------
     > function predicate( v ) { return ( {{alias:@stdlib/complex/float64/real}}( v ) === {{alias:@stdlib/complex/float64/imag}}( v ) ); };
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, -3.0 ] )
     <Complex128Array>
     > var z = arr.findLast( predicate )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    2.0
+    <Complex128>[ 2.0, 2.0 ]
 
 
 {{alias}}.prototype.findLastIndex( predicate[, thisArg] )
@@ -664,7 +611,7 @@
     -------
     out: integer
         Array index or `-1`.
-    
+
     Examples
     --------
     > function predicate( v ) { return ( {{alias:@stdlib/complex/float64/real}}( v ) === {{alias:@stdlib/complex/float64/imag}}( v ) ); };
@@ -690,7 +637,7 @@
 
     thisArg: Any (optional)
         Execution context.
-    
+
     Examples
     --------
     > var str = '%';
@@ -712,22 +659,18 @@
     ----------
     i: integer
         Element index.
-    
+
     Returns
     -------
     out: Complex128|void
         Array element or `undefined`.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
     <Complex128Array>
     > var z = arr.get( 1 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -2.0
+    <Complex128>[ 2.0, -2.0 ]
 
 
 {{alias}}.prototype.includes( searchElement[, fromIndex] )
@@ -742,12 +685,12 @@
         Array index at which to start the search. If provided a negative value,
         the method resolves the start index relative to the last array element.
         Default: 0.
-    
+
     Returns
     -------
     bool: boolean
         Boolean indicating whether an array includes a search element.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0 ] )
@@ -777,7 +720,7 @@
     -------
     out: integer
         Array index or `-1`.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0 ] )
@@ -796,12 +739,12 @@
     ----------
     separator: string (optional)
         Separator string. Default: ','.
-    
+
     Returns
     -------
     out: string
         Array serialized as a string.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
@@ -819,7 +762,7 @@
     -------
     iterator: Iterator
         Iterator for iterating over array index keys.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
@@ -847,12 +790,12 @@
         Array index at which to start the search. If provided a negative value,
         the method resolves the start index relative to the last array element.
         Default: out.length-1.
-    
+
     Returns
     -------
     out: integer
         Array index or `-1`.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 1.0, -1.0 ] )
@@ -887,7 +830,7 @@
     -------
     out: Complex128Array
         A new typed array.
-    
+
     Examples
     --------
     > function clbk( v ) { return v; };
@@ -896,17 +839,9 @@
     > var out = arr.map( clbk )
     <Complex128Array>
     > var z = out.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -1.0
+    <Complex128>[ 1.0, -1.0 ]
     > z = out.get( 1 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -2.0
+    <Complex128>[ 2.0, -2.0 ]
 
 
 {{alias}}.prototype.reduce( reducerFn[, initialValue] )
@@ -932,26 +867,22 @@
     Parameters
     ----------
     reducerFn: Function
-        Function to apply to each array element.    
+        Function to apply to each array element.
 
     initialValue: any (optional)
         Initial accumulation value.
-    
+
     Returns
     -------
     out: any
         Accumulated result.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
     <Complex128Array>
     > var z = arr.reduce( {{alias:@stdlib/complex/float64/base/add}} )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    3.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -3.0
+    <Complex128>[ 3.0, -3.0 ]
 
 
 {{alias}}.prototype.reduceRight( reducerFn[, initialValue] )
@@ -981,22 +912,18 @@
 
     initialValue: any (optional)
         Initial accumulation value.
-    
+
     Returns
     -------
     out: any
         Accumulated result.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
     <Complex128Array>
     > var z = arr.reduceRight( {{alias:@stdlib/complex/float64/base/add}} )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    3.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -3.0
+    <Complex128>[ 3.0, -3.0 ]
 
 
 {{alias}}.prototype.reverse()
@@ -1015,23 +942,11 @@
     <Complex128Array>
     > arr.reverse();
     > var z = arr.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    3.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -3.0
+    <Complex128>[ 3.0, -3.0 ]
     > z = arr.get( 1 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -2.0
+    <Complex128>[ 2.0, -2.0 ]
     > z = arr.get( 2 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -1.0
+    <Complex128>[ 1.0, -1.0 ]
 
 
 {{alias}}.prototype.set( z[, i] )
@@ -1058,18 +973,10 @@
     <Complex128Array>
     > arr.set( new {{alias:@stdlib/complex/float64/ctor}}( 1.0, -1.0 ) );
     > var z = arr.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -1.0
+    <Complex128>[ 1.0, -1.0 ]
     > arr.set( new {{alias:@stdlib/complex/float64/ctor}}( 2.0, -2.0 ), 1 );
     > z = arr.get( 1 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -2.0
+    <Complex128>[ 2.0, -2.0 ]
 
 
 {{alias}}.prototype.slice( [start[, end]] )
@@ -1084,12 +991,12 @@
     end: integer (optional)
         End index (non-inclusive). If less than zero, the end index is resolved
         relative to the last array element. Default: out.length.
-    
+
     Returns
     -------
     out: Complex128Array
         New typed array.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0 ] )
@@ -1099,17 +1006,9 @@
     > var len = out.length
     2
     > var z = out.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -2.0
+    <Complex128>[ 2.0, -2.0 ]
     > z = out.get( 1 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    3.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -3.0
+    <Complex128>[ 3.0, -3.0 ]
 
 
 {{alias}}.prototype.some( predicate[, thisArg] )
@@ -1127,15 +1026,15 @@
         Predicate function which tests array elements. If a predicate function
         returns a truthy value, an array element passes; otherwise, an array
         element fails.
-    
+
     thisArg: Any (optional)
         Execution context.
-    
+
     Returns
     -------
     bool: boolean
         Boolean indicating whether at least one element passes the test.
-    
+
     Examples
     --------
     > function predicate( v ) { return ( {{alias:@stdlib/complex/float64/real}}( v ) === {{alias:@stdlib/complex/float64/imag}}( v ) ); };
@@ -1162,12 +1061,12 @@
     ----------
     compareFunction: Function
         Comparison function.
-    
+
     Returns
     -------
     out: Complex128Array
         Modified array.
-    
+
     Examples
     --------
     > function compare( a, b ) { return ( {{alias:@stdlib/complex/float64/real}}( a ) - {{alias:@stdlib/complex/float64/real}}( b ) ); };
@@ -1175,23 +1074,11 @@
     <Complex128Array>
     > arr.sort( compare );
     > var z = arr.get( 0 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -1.0
+    <Complex128>[ 1.0, -1.0 ]
     > z = arr.get( 1 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    2.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -2.0
+    <Complex128>[ 2.0, -2.0 ]
     > z = arr.get( 2 )
-    <Complex128>
-    > re = {{alias:@stdlib/complex/float64/real}}( z )
-    3.0
-    > im = {{alias:@stdlib/complex/float64/imag}}( z )
-    -3.0
+    <Complex128>[ 3.0, -3.0 ]
 
 
 {{alias}}.prototype.subarray( [begin[, end]] )
@@ -1242,10 +1129,10 @@
     ----------
     locales: string|Array (optional)
         Locale identifier(s).
-    
+
     options: Object (optional)
         An object containing serialization options.
-    
+
     Returns
     -------
     str: string
@@ -1266,7 +1153,7 @@
     -------
     out: Complex128Array
         New typed array.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, 2.0, 3.0, 3.0 ] )
@@ -1310,12 +1197,12 @@
     ----------
     compareFcn: Function
         Comparison function.
-    
+
     Returns
     -------
     out: Complex128Array
         New typed array.
-    
+
     Examples
     --------
     > function compare( a, b ) { return ( {{alias:@stdlib/complex/float64/real}}( a ) - {{alias:@stdlib/complex/float64/real}}( b ) ); };
@@ -1349,7 +1236,7 @@
     -------
     str: string
         String serialization of the array.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, 1.0, 2.0, -2.0, 3.0, 3.0 ] )
@@ -1365,7 +1252,7 @@
     -------
     iterator: Iterator
         Iterator for iterating over array values.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )
@@ -1395,15 +1282,15 @@
     ----------
     index: integer
         Element index.
-    
+
     value: Complex128
-        Element value.  
+        Element value.
 
     Returns
     -------
     out: Complex128Array
         New typed array.
-    
+
     Examples
     --------
     > var arr = new {{alias}}( [ 1.0, -1.0, 2.0, -2.0 ] )

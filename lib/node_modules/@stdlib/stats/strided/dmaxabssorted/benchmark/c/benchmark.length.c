@@ -78,16 +78,6 @@ static double tic( void ) {
 }
 
 /**
-* Generates a random number on the interval [0,1).
-*
-* @return random number
-*/
-static double rand_double( void ) {
-	int r = rand();
-	return (double)r / ( (double)RAND_MAX + 1.0 );
-}
-
-/**
 * Runs a benchmark.
 *
 * @param iterations   number of iterations
