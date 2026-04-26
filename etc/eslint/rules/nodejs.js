@@ -350,7 +350,7 @@ rules[ 'n/no-unsupported-features/es-builtins' ] = [ 'error', {
 */
 rules[ 'n/no-unsupported-features/es-syntax' ] = [ 'error', {
 	'version': '>=0.12.18',
-	'ignores': [ 'bigint', 'hashbang', 'object-assign', 'object-getownpropertydescriptors', 'proxy', 'string-fromcodepoint', 'string-prototype-repeat' ]
+	'ignores': [ 'bigint', 'hashbang' ]
 }];
 
 /**
@@ -363,7 +363,7 @@ rules[ 'n/no-unsupported-features/es-syntax' ] = [ 'error', {
 */
 rules[ 'n/no-unsupported-features/node-builtins' ] = [ 'error', {
 	'version': '>=0.12.18',
-	'ignores': [ 'http2.connect', 'http2.createSecureServer', 'process.release' ]
+	'ignores': []
 }];
 
 /**
