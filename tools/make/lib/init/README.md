@@ -110,7 +110,6 @@ $ make init-git-hooks
 
 [git-hooks]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 
-
 </section>
 
 <!-- /.links -->

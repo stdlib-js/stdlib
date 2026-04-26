@@ -18,5 +18,12 @@
 
 'use strict';
 
-// eslint-disable-next-line stdlib/no-dynamic-exports, node/no-unpublished-require
-module.exports = require( './../../../lib/node_modules/@stdlib/_tools/eslint/rules/scripts/plugin.js' );
+// MODULES //
+
+// eslint-disable-next-line node/no-unpublished-require
+var plugin = require( './../../../lib/node_modules/@stdlib/_tools/eslint/rules/scripts/plugin.js' );
+
+
+// EXPORTS //
+
+module.exports = plugin;
