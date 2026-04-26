@@ -4187,6 +4187,27 @@ rules[ 'stdlib/no-dynamic-require' ] = 'error';
 rules[ 'stdlib/no-empty-comments' ] = 'error';
 
 /**
+* Enforce no empty lines between module-level require statements.
+*
+* @name no-empty-lines-between-requires
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var foo = require( 'foo' );
+*
+* var bar = require( 'bar' );
+*
+* @example
+* // Good...
+* var foo = require( 'foo' );
+* var bar = require( 'bar' );
+*/
+rules[ 'stdlib/no-empty-lines-between-requires' ] = 'error';
+
+/**
 * Disallow string concatenation in error messages.
 *
 * @name no-error-string-concat

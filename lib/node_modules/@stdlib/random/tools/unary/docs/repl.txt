@@ -8,10 +8,10 @@
     prng: Function
         Unary pseudorandom value generator.
 
-    idtypes: Array<string>
+    idtypes: Array<string|DataType>
         List of supported input data types.
 
-    odtypes: Array<string>
+    odtypes: Array<string|DataType>
         List of supported output data types.
 
     policies: Object
@@ -53,7 +53,7 @@
     options: Object (optional)
         Function options.
 
-    options.dtype: string (optional)
+    options.dtype: string|DataType (optional)
         Output data type. Setting this option overrides the output data type
         policy.
 

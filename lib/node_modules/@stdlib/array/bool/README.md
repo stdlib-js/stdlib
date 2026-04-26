@@ -1813,8 +1813,6 @@ logEach( '%s', out );
 arr = new Uint8Array( [ 1, 0, 1, 1, 0, 1 ] );
 out = new BooleanArray( arr.buffer, 1, 2 );
 logEach( '%s', out );
-
-console.log( '%s', false );
 ```
 
 </section>

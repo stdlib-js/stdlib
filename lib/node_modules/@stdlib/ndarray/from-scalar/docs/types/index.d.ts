@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ComplexLike } from '@stdlib/types/complex';
-import { ndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, boolndarray, DataType, Order } from '@stdlib/types/ndarray';
+import { float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, genericndarray, boolndarray, DataType, Order } from '@stdlib/types/ndarray';
 
 /**
 * Interface defining common options.
@@ -520,7 +520,7 @@ declare function scalar2ndarray( value: number, options: Uint8cOptions ): uint8c
 * var v = x.get();
 * // returns 1.0
 */
-declare function scalar2ndarray( value: any, options?: Options ): ndarray;
+declare function scalar2ndarray<T = any>( value: T, options?: Options ): genericndarray<T>;
 
 
 // EXPORTS //
