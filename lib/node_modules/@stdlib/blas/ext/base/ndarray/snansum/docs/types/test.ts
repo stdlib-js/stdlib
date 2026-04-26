@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable space-in-parens */
+
 import zeros = require( '@stdlib/ndarray/zeros' );
 import snansum = require( './index' );
 
