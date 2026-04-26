@@ -81,6 +81,22 @@ logEachMap( 'atand(%0.4f) = %0.4f', x, atand );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
 <!-- C usage documentation. -->
 
 <section class="usage">
