@@ -65,7 +65,11 @@ limitations under the License.
 
 ## Function Reference
 
+<!-- table -->
+
 {{table}}
+
+<!-- /.table -->
 
 <section class="links">
 
