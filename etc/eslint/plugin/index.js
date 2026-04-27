@@ -20,7 +20,7 @@
 
 // MODULES //
 
-// eslint-disable-next-line node/no-unpublished-require
+// eslint-disable-next-line n/no-unpublished-require
 var plugin = require( './../../../lib/node_modules/@stdlib/_tools/eslint/rules/scripts/plugin.js' );
 
 
