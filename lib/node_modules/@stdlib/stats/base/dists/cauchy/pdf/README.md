@@ -167,7 +167,7 @@ Evaluates the [probability density function][pdf] (PDF) for a [Cauchy][cauchy-di
 
 ```c
 double out = stdlib_base_dists_cauchy_pdf( 0.5, 0.0, 2.0 );
-// returns ~0.333
+// returns ~0.14979
 ```
 
 The function accepts the following arguments:

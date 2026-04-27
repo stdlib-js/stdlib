@@ -79,16 +79,12 @@ type Options<U> = BaseOptions & {
 *
 * @example
 * var array = require( '@stdlib/ndarray/array' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
 * // returns <ndarray>
 *
 * var y = flatten( x );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
+* // returns <ndarray>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 */
 declare function flatten<T extends ndarray>( x: T, options?: BaseOptions ): T;
 
@@ -108,16 +104,12 @@ declare function flatten<T extends ndarray>( x: T, options?: BaseOptions ): T;
 *
 * @example
 * var array = require( '@stdlib/ndarray/array' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
 * // returns <ndarray>
 *
 * var y = flatten( x );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
+* // returns <ndarray>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 */
 declare function flatten<T = unknown, U extends keyof DataTypeMap<T> = 'generic'>( x: typedndarray<T>, options: Options<U> ): DataTypeMap<T>[U];
 

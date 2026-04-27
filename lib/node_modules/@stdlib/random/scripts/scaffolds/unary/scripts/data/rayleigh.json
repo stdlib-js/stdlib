@@ -1,0 +1,37 @@
+{
+  "alias": "rayleigh",
+  "pkg": "stdlib/random/rayleigh",
+  "base_pkg": "stdlib/random/base/rayleigh",
+
+  "param_1": "sigma",
+  "param_1_value": "2.0",
+  "param_1_value_aux": "10.0",
+  "param_1_desc": "scale parameter",
+  "param_1_dtype": "number",
+  "param_1_jsdoc_dtype": "PositiveNumber",
+  "param_1_dtype_kind": "real_and_generic",
+
+  "output_ts_dtype": "RealFloatingPointAndGenericDataType",
+  "output_ts_typed_ndarray": "floatndarray",
+  "output_dtype_kind": "real_floating_point_and_generic",
+  "output_dtype_policy": "real_floating_point_and_generic",
+
+  "default_dtype": "float64",
+  "default_dtype_kind": "real_floating_point",
+
+  "from_desc": "a Rayleigh distribution",
+  "readme_from_desc": "a [Rayleigh][@stdlib/random/base/rayleigh] distribution",
+
+  "readme_heading": "Rayleigh Random Numbers",
+  "readme_dtype_kind_desc": "a real-valued floating-point",
+  "readme_dtype_kind_pkg": "stdlib/ndarray/dtypes",
+
+  "repl_text_main_desc": "Returns an ndarray containing pseudorandom numbers drawn from a Rayleigh distribution.",
+  "repl_text_assign_desc": "Fills an ndarray with pseudorandom numbers drawn from a Rayleigh distribution.",
+  "repl_text_factory_desc": "Returns a function for generating pseudorandom numbers drawn from a Rayleigh distribution.",
+
+  "repl_text_param_1_desc": "Scale parameter. If an ndarray, must be broadcast compatible with the specified array shape.",
+  "repl_text_assign_param_1_desc": "Scale parameter. If an ndarray, must be broadcast compatible with the provided output array.",
+
+  "keywords": "rayleigh,continuous"
+}
