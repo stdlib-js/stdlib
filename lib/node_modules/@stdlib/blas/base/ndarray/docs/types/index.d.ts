@@ -216,8 +216,8 @@ interface Namespace {
 	*
 	* -   The function expects the following ndarrays:
 	*
-	*     -   first one-dimensional input ndarray.
-	*     -   second one-dimensional input ndarray.
+	*     -   a first one-dimensional input ndarray.
+	*     -   a second one-dimensional input ndarray.
 	*
 	* @param arrays - array-like object containing ndarrays
 	* @returns second input ndarray
