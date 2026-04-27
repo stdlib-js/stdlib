@@ -41,11 +41,10 @@ var glinspace = require( '@stdlib/blas/ext/base/ndarray/glinspace' );
 Fills a one-dimensional ndarray with linearly spaced values over a specified interval.
 
 ```javascript
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
-var xbuf = [ 0.0, 0.0, 0.0, 0.0 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 0.0, 0.0, 0.0, 0.0 ], 'generic' );
 
 var start = scalar2ndarray( 0.0, {
     'dtype': 'generic'
@@ -65,12 +64,12 @@ var out = glinspace( [ x, start, end, endpoint ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing the following ndarrays in order:
+-   **arrays**: array-like object containing the following ndarrays:
 
-    1.  a one-dimensional input ndarray.
-    2.  a zero-dimensional ndarray specifying the start of the interval.
-    3.  a zero-dimensional ndarray specifying the end of the interval.
-    4.  a zero-dimensional ndarray specifying whether to include the end of the interval when writing values to the input ndarray.
+    -   a one-dimensional input ndarray.
+    -   a zero-dimensional ndarray specifying the start of the interval.
+    -   a zero-dimensional ndarray specifying the end of the interval.
+    -   a zero-dimensional ndarray specifying whether to include the end of the interval when writing values to the input ndarray.
 
 </section>
 
@@ -107,27 +106,23 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarraylike2scalar = require( '@stdlib/ndarray/base/ndarraylike2scalar' );
 var glinspace = require( '@stdlib/blas/ext/base/ndarray/glinspace' );
 
-var xbuf = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'generic'
-});
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = discreteUniform( [ 10 ], -100, 100, opts );
 console.log( ndarray2array( x ) );
 
-var start = scalar2ndarray( 0.0, {
-    'dtype': 'generic'
-});
+var start = scalar2ndarray( 0.0, opts );
 console.log( 'Start: %d', ndarraylike2scalar( start ) );
 
-var end = scalar2ndarray( 100.0, {
-    'dtype': 'generic'
-});
+var end = scalar2ndarray( 100.0, opts );
 console.log( 'Stop: %d', ndarraylike2scalar( end ) );
 
 var endpoint = scalar2ndarray( true, {
