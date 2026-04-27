@@ -1,0 +1,24 @@
+
+{{alias}}( x )
+    Converts a half-precision floating-point number to the nearest single-
+    precision floating-point number.
+
+    Parameters
+    ----------
+    x: number
+        Half-precision floating-point number.
+
+    Returns
+    -------
+    out: float
+        Nearest single-precision floating-point number.
+
+    Examples
+    --------
+    > var f16 = {{alias:@stdlib/number/float64/base/to-float16}}( 1.337 )
+    1.3369140625
+    > var y = {{alias}}( f16 )
+    1.3369140625
+
+    See Also
+    --------
