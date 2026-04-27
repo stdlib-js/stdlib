@@ -1,0 +1,54 @@
+
+{{alias}}( arrays )
+    Computes the standard deviation of a one-dimensional ndarray.
+
+    If provided an empty one-dimensional ndarray, the function returns `NaN`.
+
+    If `N - c` is less than or equal to `0` (where `N` corresponds to the number
+    of elements in the input ndarray and `c` corresponds to the provided degrees
+    of freedom adjustment), the function returns `NaN`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing two elements: a one-dimensional input
+        ndarray and a zero-dimensional ndarray specifying the degrees of freedom
+        adjustment. Providing a non-zero degrees of freedom adjustment has the
+        effect of adjusting the divisor during the calculation of the standard
+        deviation according to `N-c` where `N` is the number of elements in the
+        input ndarray and `c` corresponds to the provided degrees of freedom
+        adjustment. When computing the standard deviation of a population,
+        setting this parameter to `0` is the standard choice (i.e., the provided
+        array contains data constituting an entire population). When computing
+        the corrected sample standard deviation, setting this parameter to `1`
+        is the standard choice (i.e., the provided array contains data sampled
+        from a larger population; this is commonly referred to as Bessel's
+        correction).
+
+    Returns
+    -------
+    out: number
+        The standard deviation.
+
+    Examples
+    --------
+    // Create input ndarray:
+    > var xbuf = [ 1.0, -2.0, 2.0 ];
+    > var dt = 'generic';
+    > var sh = [ xbuf.length ];
+    > var st = [ 1 ];
+    > var oo = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, st, oo, ord );
+
+    // Create correction ndarray:
+    > var opts = { 'dtype': dt };
+    > var correction = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
+
+    // Compute the standard deviation:
+    > {{alias}}( [ x, correction ] )
+    ~2.0817
+
+    See Also
+    --------
+
