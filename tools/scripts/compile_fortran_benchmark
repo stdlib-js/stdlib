@@ -65,18 +65,22 @@ if [[ -z "${node_cmd}" ]]; then
 fi
 
 # Define the node path:
+# shellcheck disable=SC2153
 node_path="${NODE_PATH}"
 
 # Define the path to a Fortran compiler:
+# shellcheck disable=SC2153
 fortran_compiler="${FORTRAN_COMPILER}"
 if [[ -z "${fortran_compiler}" ]]; then
 	fortran_compiler='gfortran'
 fi
 
 # Define a list of `include` directories (e.g., `-I /foo/bar -I /beep/boop/include`):
+# shellcheck disable=SC2153
 include="${INCLUDE}"
 
 # Define a list of source files:
+# shellcheck disable=SC2153
 source_files="${SOURCE_FILES}"
 
 
@@ -180,8 +184,7 @@ resolve_source_files() {
 #
 # $1 - source directory
 compile() {
-	cd "$1" && FORTRAN_COMPILER="${fortran_compiler}" INCLUDE="${include}" SOURCE_FILES="${source_files}" make 2>&1
-	if [[ "$?" -ne 0 ]]; then
+	if ! { cd "$1" && FORTRAN_COMPILER="${fortran_compiler}" INCLUDE="${include}" SOURCE_FILES="${source_files}" make 2>&1; }; then
 		echo 'Error when attempting to compile benchmark.' >&2
 		return 1
 	fi
@@ -195,31 +198,28 @@ compile() {
 # Main execution sequence.
 main() {
 	local pkg_path
-	local manifest
 	local src_dir
 
+	src_dir=$(dirname "${file_path}")
+
 	echo 'Resolving package path...' >&2
-	pkg_path=$(resolve_pkg_path "${src_dir}")
-	if [[ "$?" -ne 0 ]]; then
+	if ! pkg_path=$(resolve_pkg_path "${src_dir}"); then
 		on_error 1
 	fi
 	echo "Package path: ${pkg_path}" >&2
 
 	echo 'Resolving package manifest...' >&2
-	manifest=$(resolve_pkg_manifest "${pkg_path}")
-	if [[ "$?" -eq 0 ]]; then
+	if resolve_pkg_manifest "${pkg_path}"; then
 		echo 'Successfully resolved package manifest.' >&2
 		if [[ -z "${include}" ]]; then
 			echo 'Resolving include directories...' >&2
-			include=$(resolve_includes "${pkg_path}")
-			if [[ "$?" -ne 0 ]]; then
+			if ! include=$(resolve_includes "${pkg_path}"); then
 				on_error 1
 			fi
 		fi
 		if [[ -z "${source_files}" ]]; then
 			echo 'Resolving source files...' >&2
-			source_files=$(resolve_source_files "${pkg_path}")
-			if [[ "$?" -ne 0 ]]; then
+			if ! source_files=$(resolve_source_files "${pkg_path}"); then
 				on_error 1
 			fi
 		fi
@@ -227,9 +227,7 @@ main() {
 		echo 'Unable to resolve package manifest.' >&2
 	fi
 	echo 'Compiling benchmark...' >&2
-	src_dir=$(dirname "${file_path}")
-	compile "${src_dir}"
-	if [[ "$?" -ne 0 ]]; then
+	if ! compile "${src_dir}"; then
 		on_error 1
 	fi
 	print_success
