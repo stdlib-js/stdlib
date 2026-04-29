@@ -26,6 +26,17 @@ limitations under the License.
 
 ## 2026
 
+### Bringing Complex Computations To Browsers With Open Source
+
+> [Gunj Joshi][gunjjoshi], HPSF Conference, March 2026
+
+<div class="image" align="center">
+    <a title="Bringing Complex Computations To Browsers With Open Source" href="https://youtu.be/rox9LZz_ffI">
+        <img width="480" src="" alt="Bringing Complex Computations To Browsers With Open Source">
+    </a>
+    <br>
+</div>
+
 ### The Compute Revolution You’re Ignoring: JavaScript in Science
 
 > [Gunj Joshi][gunjjoshi], DevConf.IN, February 2026
