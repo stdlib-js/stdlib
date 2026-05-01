@@ -75,7 +75,7 @@ jobs:
       # Restore cache if up-to-date:
       - name: 'Restore cache if up-to-date'
         # Pin action to full length commit SHA
-        uses: actions/cache/restore@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
+        uses: actions/cache/restore@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         id: cache
         with:
           path: |
@@ -138,7 +138,7 @@ jobs:
       # Save cache after editorconfig-checker binary has been downloaded:
       - name: 'Save cache after editorconfig-checker binary has been downloaded'
         if: always() && steps.cache.outputs.cache-hit != 'true'
-        uses: actions/cache/save@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
+        uses: actions/cache/save@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         with:
           path: ${{ github.workspace }}/node_modules
           key: ${{ steps.cache.outputs.cache-primary-key }}
