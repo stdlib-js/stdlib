@@ -50,5 +50,5 @@ double API_SUFFIX(stdlib_strided_dpcorr)( const CBLAS_INT N, const double *X, co
 * @return             output value
 */
 double API_SUFFIX(stdlib_strided_dpcorr_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
-	return stdlib_strided_dpcorrwd_ndarray( N, X, strideX, offsetX, Y, strideY, offsetY );
+	return API_SUFFIX(stdlib_strided_dpcorrwd_ndarray)( N, X, strideX, offsetX, Y, strideY, offsetY );
 }
