@@ -18,6 +18,8 @@ limitations under the License.
 
 -->
 
+<!--lint disable expected-html-sections-->
+
 <!--lint disable no-duplicate-headings-in-section-->
 
 # Talks
