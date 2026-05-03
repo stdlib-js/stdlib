@@ -86,7 +86,7 @@ var v = mskmaxabs( 4, x1, 2, mask1, 2 );
 
 #### mskmaxabs.ndarray( N, x, strideX, offsetX, mask, strideMask, offsetMask )
 
-Computes the maximum absolute value of a strided array according to a `mask` and using alternative indexing semantics.
+Computes the maximum absolute value of a strided array according to a mask and using alternative indexing semantics.
 
 ```javascript
 var x = [ 1.0, -2.0, 4.0, 2.0 ];

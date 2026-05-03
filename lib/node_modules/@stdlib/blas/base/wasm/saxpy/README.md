@@ -128,7 +128,7 @@ saxpy.ndarray( 3, alpha, x, 2, 1, y, -1, y.length-1 );
 
 Returns a new WebAssembly [module wrapper][@stdlib/wasm/module-wrapper] instance which uses the provided WebAssembly [memory][@stdlib/wasm/memory] instance as its underlying memory.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -151,7 +151,7 @@ mod.initializeSync();
 
 Multiplies a vector `x` by a constant and adds the result to `y`.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -211,7 +211,7 @@ The function has the following parameters:
 
 Multiplies a vector `x` by a constant and adds the result to `y` using alternative indexing semantics.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
