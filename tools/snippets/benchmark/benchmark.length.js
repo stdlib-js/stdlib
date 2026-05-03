@@ -42,7 +42,7 @@ function createBenchmark( len ) {
 
 	x = [];
 	for ( i = 0; i < len; i++ ) {
-		x.push( null ); // TODO: set values
+		x.push( null ); // TODO: manually set values, or potentially use a function from @stdlib/array/* or @stdlib/random/array/*
 	}
 	return benchmark;
 
