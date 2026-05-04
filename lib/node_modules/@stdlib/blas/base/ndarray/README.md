@@ -47,7 +47,7 @@ The namespace exposes the following APIs:
 
 -   <span class="signature">[`caxpy( arrays )`][@stdlib/blas/base/ndarray/caxpy]</span><span class="delimiter">: </span><span class="description">multiply a one-dimensional single-precision complex floating-point ndarray `x` by a constant `alpha` and add the result to a one-dimensional single-precision complex floating-point ndarray `y`.</span>
 -   <span class="signature">[`ccopy( arrays )`][@stdlib/blas/base/ndarray/ccopy]</span><span class="delimiter">: </span><span class="description">copy values from a one-dimensional single-precision complex floating-point ndarray `x` into a one-dimensional single-precision complex floating-point ndarray `y`.</span>
--   <span class="signature">[`cswap( arrays )`][@stdlib/blas/base/ndarray/cswap]</span><span class="delimiter">: </span><span class="description">interchange two one-dimensional complex single-precision floating-point ndarrays.</span>
+-   <span class="signature">[`cswap( arrays )`][@stdlib/blas/base/ndarray/cswap]</span><span class="delimiter">: </span><span class="description">interchange two one-dimensional single-precision complex floating-point ndarrays.</span>
 -   <span class="signature">[`dasum( arrays )`][@stdlib/blas/base/ndarray/dasum]</span><span class="delimiter">: </span><span class="description">calculate the sum of absolute values for all elements in a one-dimensional double-precision floating-point ndarray.</span>
 -   <span class="signature">[`daxpy( arrays )`][@stdlib/blas/base/ndarray/daxpy]</span><span class="delimiter">: </span><span class="description">multiply a one-dimensional double-precision floating-point ndarray `x` by a constant `alpha` and add the result to a one-dimensional double-precision floating-point ndarray `y`.</span>
 -   <span class="signature">[`dcopy( arrays )`][@stdlib/blas/base/ndarray/dcopy]</span><span class="delimiter">: </span><span class="description">copy values from a one-dimensional double-precision floating-point ndarray `x` into a one-dimensional double-precision floating-point ndarray `y`.</span>
@@ -65,7 +65,7 @@ The namespace exposes the following APIs:
 -   <span class="signature">[`sswap( arrays )`][@stdlib/blas/base/ndarray/sswap]</span><span class="delimiter">: </span><span class="description">interchange two one-dimensional single-precision floating-point ndarrays.</span>
 -   <span class="signature">[`zaxpy( arrays )`][@stdlib/blas/base/ndarray/zaxpy]</span><span class="delimiter">: </span><span class="description">multiply a one-dimensional double-precision complex floating-point ndarray `x` by a constant `alpha` and add the result to a one-dimensional double-precision complex floating-point ndarray `y`.</span>
 -   <span class="signature">[`zcopy( arrays )`][@stdlib/blas/base/ndarray/zcopy]</span><span class="delimiter">: </span><span class="description">copy values from a one-dimensional double-precision complex floating-point ndarray `x` into a one-dimensional double-precision complex floating-point ndarray `y`.</span>
--   <span class="signature">[`zswap( arrays )`][@stdlib/blas/base/ndarray/zswap]</span><span class="delimiter">: </span><span class="description">interchange two one-dimensional complex double-precision floating-point ndarrays.</span>
+-   <span class="signature">[`zswap( arrays )`][@stdlib/blas/base/ndarray/zswap]</span><span class="delimiter">: </span><span class="description">interchange two one-dimensional double-precision complex floating-point ndarrays.</span>
 
 </div>
 
