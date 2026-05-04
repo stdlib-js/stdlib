@@ -152,7 +152,7 @@ static double benchmark2( int iterations, int len ) {
 	c = 0.0;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		c = stdlib_strided_dpcorrwd_ndarray( len, x, 1, 0, x, 1, 0 );
+		c = stdlib_strided_dpcorrwd_ndarray( len, x, 1, 0, y, 1, 0 );
 		if ( c != c ) {
 			printf( "should not return NaN\n" );
 			break;

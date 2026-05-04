@@ -123,7 +123,7 @@ var z = sdsdot.ndarray( 3, 0.0, x, 2, 1, y, -1, y.length-1 );
 
 Returns a new WebAssembly [module wrapper][@stdlib/wasm/module-wrapper] instance which uses the provided WebAssembly [memory][@stdlib/wasm/memory] instance as its underlying memory.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -146,7 +146,7 @@ mod.initializeSync();
 
 Computes the dot product of two single-precision floating-point vectors with extended accumulation.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -201,7 +201,7 @@ The function has the following parameters:
 
 Computes the dot product of two single-precision floating-point vectors with extended accumulation using alternative indexing semantics.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
