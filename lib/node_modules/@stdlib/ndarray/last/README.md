@@ -63,7 +63,7 @@ The function accepts the following `options`:
 
 -   **dims**: list of dimensions over which to perform the operation. If a dimension index is provided as an integer less than zero, the dimension index is resolved relative to the last dimension, with the last dimension corresponding to the value `-1`. By default, the function performs the operation over all dimensions.
 
-To resolve the last element (or subarray) along one or more specific dimensions, provide a `dims` option:
+To resolve the last element (or subarray) along one or more specified dimensions, provide a `dims` option:
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
