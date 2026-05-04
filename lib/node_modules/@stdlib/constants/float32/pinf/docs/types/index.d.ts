@@ -23,7 +23,7 @@
 *
 * @example
 * var pinf = FLOAT32_PINF;
-* // returns +infinity
+* // returns Infinity
 */
 declare const FLOAT32_PINF: number;
 

@@ -42,7 +42,7 @@ double stdlib_base_dists_exponential_logpdf( const double x, const double lambda
 	) {
 		return 0.0/0.0; // NaN
 	}
-	if( x < 0.0){
+	if ( x < 0.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;
 	}
 	return ( -x*lambda ) + stdlib_base_ln( lambda );

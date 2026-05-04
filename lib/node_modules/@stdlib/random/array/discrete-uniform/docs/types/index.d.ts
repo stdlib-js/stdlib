@@ -189,7 +189,7 @@ interface Random extends PRNG {
 	* var x = zeros( 10, 'float64' );
 	* // returns <Float64Array>
 	*
-	* var out = discreteUniform( -10, 10, out );
+	* var out = discreteUniform( -10, 10, x );
 	* // returns <Float64Array>
 	*
 	* var bool = ( out === x );

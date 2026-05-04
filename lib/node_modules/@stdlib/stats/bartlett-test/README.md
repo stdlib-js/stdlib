@@ -57,7 +57,7 @@ var bartlettTest = require( '@stdlib/stats/bartlett-test' );
 
 #### bartlettTest( a\[,b,...,k]\[, opts] )
 
-For input arrays `a`, `b`, ... holding numeric observations, this function calculates Bartlett’s test, which tests the null hypothesis that the variances in all `k` groups are the same. 
+For input arrays `a`, `b`, ... holding numeric observations, this function calculates Bartlett’s test, which tests the null hypothesis that the variances in all `k` groups are the same.
 
 ```javascript
 // Data from Hollander & Wolfe (1973), p. 116:

@@ -17,10 +17,8 @@
 */
 
 #include "stdlib/stats/base/dists/pareto-type1/stdev.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
-#include "stdlib/math/base/special/pow.h"
-#include "stdlib/constants/float64/pinf.h"
+#include "stdlib/stats/base/dists/pareto-type1/variance.h"
 
 /**
 * Returns the standard deviation of a Pareto (Type I) distribution.
@@ -34,18 +32,5 @@
 * // returns ~5.657
 */
 double stdlib_base_dists_pareto_type1_stdev( const double alpha, const double beta ) {
-	double out;
-	if (
-		stdlib_base_is_nan( alpha ) ||
-		alpha <= 0.0 ||
-		stdlib_base_is_nan( beta ) ||
-		beta <= 0.0
-	) {
-		return 0.0 / 0.0; // NaN
-	}
-	if ( alpha < 2.0 ) {
-		return STDLIB_CONSTANT_FLOAT64_PINF;
-	}
-	out = ( ( beta*beta ) * alpha ) / ( stdlib_base_pow( alpha-1.0, 2.0 ) * ( alpha-2.0 ) );
-	return stdlib_base_sqrt( out );
+	return stdlib_base_sqrt( stdlib_base_dists_pareto_type1_variance( alpha, beta ) );
 }

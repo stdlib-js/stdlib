@@ -258,7 +258,7 @@ interface ForEachRightAsync {
 	* };
 	*
 	* // Create a `forEachRightAsync` function which invokes `read` for each collection element sequentially:
-	* var forEachRightAsync = factory( opts, read );
+	* var forEachRight = forEachRightAsync.factory( opts, read );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -275,7 +275,7 @@ interface ForEachRightAsync {
 	* }
 	*
 	* // Run `read` for each element in `files`:
-	* forEachRightAsync( files, done );
+	* forEachRight( files, done );
 	*/
 	factory<T = unknown, V = unknown>( options: Options<T, V>, fcn: Fcn<T, V> ): FactoryFunction;
 
@@ -309,7 +309,7 @@ interface ForEachRightAsync {
 	* }
 	*
 	* // Create a `forEachRightAsync` function which invokes `read` for each collection element sequentially:
-	* var forEachRightAsync = factory( read );
+	* var forEachRight = forEachRightAsync.factory( read );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -326,7 +326,7 @@ interface ForEachRightAsync {
 	* }
 	*
 	* // Run `read` for each element in `files`:
-	* forEachRightAsync( files, done );
+	* forEachRight( files, done );
 	*/
 	factory<T = unknown, V = unknown>( fcn: Fcn<T, V> ): FactoryFunction;
 }

@@ -1,12 +1,12 @@
 {
   "name": "stdlib-datasets-img-allium-oreophilum",
   "version": "",
-  "title": "Allium ostrowskianum",
+  "title": "Allium oreophilum",
   "description": "Allium oreophilum (pink lily leek).",
   "resources": [
     {
       "name": "allium-oreophilum-jpg",
-      "title": "Allium ostrowskianum",
+      "title": "Allium oreophilum",
       "description": "Allium oreophilum (pink lily leek).",
       "format": "jpeg",
       "mediatype": "image/jpeg",
@@ -24,8 +24,11 @@
   "keywords": [
     "image",
     "img",
-    "acanthus",
-    "mollis",
+    "allium",
+    "oreophilum",
+    "pink",
+    "lily",
+    "leek",
     "plant",
     "flower"
   ],

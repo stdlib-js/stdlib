@@ -191,20 +191,12 @@ declare function resolveGetter( x: Float32Array ): GetFloat32;
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
-* var real = require( '@stdlib/array/real' );
-* var imag = require( '@stdlib/array/imag' );
 *
 * var arr = new Complex128Array( [ 1, 2, 3, 4 ] );
 *
 * var get = resolveGetter( arr );
 * var v = get( arr, 1 );
-* // returns <Complex128>
-*
-* var re = real( v );
-* // returns 3.0
-*
-* var im = imag( v );
-* // returns 4.0
+* // returns <Complex128>[ 3.0, 4.0 ]
 */
 declare function resolveGetter( x: Complex128Array ): GetComplex128;
 
@@ -216,20 +208,12 @@ declare function resolveGetter( x: Complex128Array ): GetComplex128;
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
-* var realf = require( '@stdlib/array/realf' );
-* var imagf = require( '@stdlib/array/imagf' );
 *
 * var arr = new Complex64Array( [ 1, 2, 3, 4 ] );
 *
 * var get = resolveGetter( arr );
 * var v = get( arr, 1 );
-* // returns <Complex64>
-*
-* var re = realf( v );
-* // returns 3.0
-*
-* var im = imagf( v );
-* // returns 4.0
+* // returns <Complex64>[ 3.0, 4.0 ]
 */
 declare function resolveGetter( x: Complex64Array ): GetComplex64;
 

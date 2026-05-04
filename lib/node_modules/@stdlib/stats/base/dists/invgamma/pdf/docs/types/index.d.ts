@@ -92,7 +92,7 @@ interface PDF {
 	* // returns ~0.377
 	*
 	* y = myPDF( 4.0 );
-	* // returns ~0.067
+	* // returns ~0.005
 	*/
 	factory( alpha: number, beta: number ): Unary;
 }

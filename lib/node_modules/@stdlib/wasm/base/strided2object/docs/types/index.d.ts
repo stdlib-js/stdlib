@@ -754,7 +754,7 @@ interface GetSetAccessorObject<T> extends OutputObject {
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Float64Array, stride: number, offset: number ): Float64AccessorObject;
@@ -796,7 +796,7 @@ declare function strided2object( N: number, x: Float64Array, stride: number, off
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Float32Array, stride: number, offset: number ): Float32AccessorObject;
@@ -838,7 +838,7 @@ declare function strided2object( N: number, x: Float32Array, stride: number, off
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Int32Array, stride: number, offset: number ): Int32AccessorObject;
@@ -880,7 +880,7 @@ declare function strided2object( N: number, x: Int32Array, stride: number, offse
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Int16Array, stride: number, offset: number ): Int16AccessorObject;
@@ -922,7 +922,7 @@ declare function strided2object( N: number, x: Int16Array, stride: number, offse
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Int8Array, stride: number, offset: number ): Int8AccessorObject;
@@ -964,7 +964,7 @@ declare function strided2object( N: number, x: Int8Array, stride: number, offset
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Uint32Array, stride: number, offset: number ): Uint32AccessorObject;
@@ -1006,7 +1006,7 @@ declare function strided2object( N: number, x: Uint32Array, stride: number, offs
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Uint16Array, stride: number, offset: number ): Uint16AccessorObject;
@@ -1048,7 +1048,7 @@ declare function strided2object( N: number, x: Uint16Array, stride: number, offs
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Uint8Array, stride: number, offset: number ): Uint8AccessorObject;
@@ -1090,7 +1090,7 @@ declare function strided2object( N: number, x: Uint8Array, stride: number, offse
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object( N: number, x: Uint8ClampedArray, stride: number, offset: number ): Uint8cAccessorObject;
@@ -1226,7 +1226,7 @@ declare function strided2object( N: number, x: Complex64Array, stride: number, o
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object<T = unknown>( N: number, x: AccessorArrayLike<T>, stride: number, offset: number ): GetSetAccessorObject<T>;
@@ -1266,7 +1266,7 @@ declare function strided2object<T = unknown>( N: number, x: AccessorArrayLike<T>
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object<T = unknown>( N: number, x: Array<T>, stride: number, offset: number ): GenericAccessorObject<T>;
@@ -1312,7 +1312,7 @@ declare function strided2object<T = unknown>( N: number, x: Array<T>, stride: nu
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function strided2object<T = unknown>( N: number, x: Collection<T>, stride: number, offset: number ): IndexedAccessorObject<T>;

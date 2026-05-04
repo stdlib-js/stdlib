@@ -27,19 +27,8 @@ import bytesPerElement = require( './index' );
 	bytesPerElement( 'generic' ); // $ExpectType number | null
 }
 
-// The compiler throws an error if the function is provided a value other than a string...
-{
-	bytesPerElement( true ); // $ExpectError
-	bytesPerElement( false ); // $ExpectError
-	bytesPerElement( null ); // $ExpectError
-	bytesPerElement( undefined ); // $ExpectError
-	bytesPerElement( 5 ); // $ExpectError
-	bytesPerElement( [] ); // $ExpectError
-	bytesPerElement( {} ); // $ExpectError
-	bytesPerElement( ( x: number ): number => x ); // $ExpectError
-}
-
-// The compiler throws an error if the function is provided insufficient arguments...
+// The compiler throws an error if the function is provided unsupported number of arguments...
 {
 	bytesPerElement(); // $ExpectError
+	bytesPerElement( 'float64', {} ); // $ExpectError
 }

@@ -1,0 +1,105 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/math/base/special/kernel-cosf",
+        "@stdlib/math/base/special/kernel-sinf",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits",
+        "@stdlib/constants/float32/exponent-bias"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/math/base/special/kernel-cosf",
+        "@stdlib/math/base/special/kernel-sinf",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits",
+        "@stdlib/constants/float32/exponent-bias"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [
+        "-lm"
+      ],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/math/base/special/kernel-cosf",
+        "@stdlib/math/base/special/kernel-sinf",
+        "@stdlib/constants/float64/pi",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits",
+        "@stdlib/constants/float32/exponent-bias"
+      ]
+    }
+  ]
+}

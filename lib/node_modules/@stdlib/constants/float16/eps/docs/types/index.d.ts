@@ -22,7 +22,7 @@
 * Difference between one and the smallest value greater than one that can be represented as a half-precision floating-point number.
 *
 * @example
-* var eps = FLOAT16_EPSILON;
+* var eps = FLOAT16_EPS;
 * // returns 0.0009765625
 */
 declare const FLOAT16_EPS: number;

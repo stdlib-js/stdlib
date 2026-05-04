@@ -1,0 +1,194 @@
+#!/usr/bin/env bash
+#
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Script to remove sub-issues from a parent issue.
+#
+# Usage: ./remove_sub_issues <parent-issue-number> [--all]
+#
+# Arguments:
+#
+#   parent-issue-number  Number of the parent issue.
+#   --all                Remove all sub-issues. Without this flag, only
+#                        closed sub-issues are removed.
+#
+# Environment variables:
+#
+#   GITHUB_TOKEN         GitHub authentication token.
+#
+
+# shellcheck disable=SC2153,SC2317
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+# VARIABLES #
+
+# Assign command line arguments to variables:
+parent_issue_number="$1"
+remove_all="false"
+if [ "$2" = "--all" ]; then
+	remove_all="true"
+fi
+
+# Repository information:
+owner="stdlib-js"
+repo="stdlib"
+
+# Get the GitHub authentication token:
+github_token="${GITHUB_TOKEN}"
+if [ -z "$github_token" ]; then
+	echo -e "ERROR: GITHUB_TOKEN environment variable is not set."
+	exit 1
+fi
+
+# Validate arguments:
+if [ -z "$parent_issue_number" ]; then
+	echo -e "ERROR: Parent issue number is required."
+	echo -e "Usage: ./remove_sub_issues <parent-issue-number> [--all]"
+	exit 1
+fi
+
+if [ -n "$2" ] && [ "$2" != "--all" ]; then
+	echo -e "ERROR: Invalid option. Use --all to remove all sub-issues."
+	exit 1
+fi
+
+# FUNCTIONS #
+
+# Error handler.
+#
+# $1 - error status
+on_error() {
+	echo -e "ERROR: An error was encountered during execution." >&2
+	exit "$1"
+}
+
+# Prints a success message.
+print_success() {
+	echo -e "Success!" >&2
+}
+
+# Fetches the parent issue ID and its sub-issues.
+fetch_issue_with_sub_issues() {
+	local response
+	response=$(curl -s -X POST 'https://api.github.com/graphql' \
+		-H "Authorization: bearer ${github_token}" \
+		-H "GraphQL-Features: issue_types" \
+		-H "GraphQL-Features: sub_issues" \
+		-H "Content-Type: application/json" \
+		--data @- << EOF
+{
+	"query": "query(\$owner: String!, \$repo: String!, \$number: Int!) { repository(owner: \$owner, name: \$repo) { issue(number: \$number) { id subIssues(first: 100) { nodes { id number state } } } } }",
+	"variables": {
+		"owner": "${owner}",
+		"repo": "${repo}",
+		"number": ${parent_issue_number}
+	}
+}
+EOF
+)
+	echo "$response"
+}
+
+# Removes a sub-issue relationship.
+#
+# $1 - parent issue ID
+# $2 - sub-issue ID
+remove_sub_issue() {
+	local parent_issue_id="$1"
+	local sub_issue_id="$2"
+	local response
+	response=$(curl -s -X POST 'https://api.github.com/graphql' \
+		-H "Authorization: bearer ${github_token}" \
+		-H "GraphQL-Features: issue_types" \
+		-H "GraphQL-Features: sub_issues" \
+		-H "Content-Type: application/json" \
+		--data @- << EOF
+{
+	"query": "mutation(\$parentIssueId: ID!, \$subIssueId: ID!) { removeSubIssue(input: { issueId: \$parentIssueId, subIssueId: \$subIssueId }) { issue { number } subIssue { number } } }",
+	"variables": {
+		"parentIssueId": "${parent_issue_id}",
+		"subIssueId": "${sub_issue_id}"
+	}
+}
+EOF
+)
+	echo "$response"
+}
+
+# Main execution sequence.
+main() {
+	echo "Fetching issue #${parent_issue_number} with sub-issues..."
+	issue_response=$(fetch_issue_with_sub_issues)
+
+	parent_issue_id=$(echo "$issue_response" | jq -r '.data.repository.issue.id')
+	if [ -z "$parent_issue_id" ] || [ "$parent_issue_id" = "null" ]; then
+		echo -e "Failed to fetch parent issue. Response: ${issue_response}"
+		exit 1
+	fi
+
+	# Extract sub-issues based on filter...
+	if [ "$remove_all" = "true" ]; then
+		sub_issues=$(echo "$issue_response" | jq -c '.data.repository.issue.subIssues.nodes[]')
+		echo "Removing all sub-issues..."
+	else
+		sub_issues=$(echo "$issue_response" | jq -c '.data.repository.issue.subIssues.nodes[] | select(.state == "CLOSED")')
+		echo "Removing closed sub-issues..."
+	fi
+
+	# Check if there are any sub-issues to remove...
+	if [ -z "$sub_issues" ]; then
+		echo "No sub-issues to remove."
+		print_success
+		exit 0
+	fi
+
+	# Count sub-issues...
+	sub_issue_count=$(echo "$sub_issues" | wc -l | tr -d ' ')
+	echo "Found ${sub_issue_count} sub-issue(s) to remove."
+
+	# Remove each sub-issue...
+	removed_count=0
+	while IFS= read -r sub_issue; do
+		sub_issue_id=$(echo "$sub_issue" | jq -r '.id')
+		sub_issue_number=$(echo "$sub_issue" | jq -r '.number')
+		sub_issue_state=$(echo "$sub_issue" | jq -r '.state')
+
+		echo "Removing sub-issue #${sub_issue_number} (${sub_issue_state})..."
+		remove_response=$(remove_sub_issue "$parent_issue_id" "$sub_issue_id")
+
+		removed_number=$(echo "$remove_response" | jq -r '.data.removeSubIssue.subIssue.number')
+		if [ -z "$removed_number" ] || [ "$removed_number" = "null" ]; then
+			echo -e "Warning: Failed to remove sub-issue #${sub_issue_number}. Response: ${remove_response}"
+		else
+			echo -e "Removed sub-issue #${sub_issue_number}"
+			removed_count=$((removed_count + 1))
+		fi
+	done <<< "$sub_issues"
+
+	echo -e "Successfully removed ${removed_count} sub-issue(s) from issue #${parent_issue_number}"
+
+	print_success
+	exit 0
+}
+
+# Set an error handler to capture errors and perform any clean-up tasks:
+trap 'on_error $?' ERR
+
+# Run main:
+main
