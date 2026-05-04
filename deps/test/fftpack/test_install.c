@@ -22,8 +22,8 @@
 extern void rffti( int n, double *wsave );
 
 int main( void ) {
+	double wsave[ 2*8 + 15 ]; // 2*n + 15
 	int n = 8;
-	double wsave[ 2*n + 15 ];
 	int i;
 
 	rffti( n, wsave );
