@@ -1,0 +1,33 @@
+
+{{alias}}( σ )
+    Returns the excess kurtosis of a half-normal distribution with scale
+    parameter `σ`.
+
+    If provided `NaN`, the function returns `NaN`.
+
+    If provided `σ <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    σ: number
+        Scale parameter.
+
+    Returns
+    -------
+    out: number
+        Excess kurtosis.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0 )
+    ~0.869
+    > y = {{alias}}( 4.0 )
+    ~0.869
+    > y = {{alias}}( NaN )
+    NaN
+    > y = {{alias}}( 0.0 )
+    NaN
+
+    See Also
+    --------
+

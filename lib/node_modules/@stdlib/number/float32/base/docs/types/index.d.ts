@@ -72,7 +72,7 @@ interface Namespace {
 	add: typeof add;
 
 	/**
-	* Base double-precision floating-point number assert functions.
+	* Base single-precision floating-point number assert functions.
 	*/
 	assert: typeof assert;
 
