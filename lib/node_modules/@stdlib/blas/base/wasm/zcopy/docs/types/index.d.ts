@@ -157,7 +157,7 @@ interface ModuleConstructor {
 */
 interface Module extends ModuleWrapper {
 	/**
-	* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
+	* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector.
 	*
 	* @param N - number of indexed elements
 	* @param xptr - input array pointer (i.e., byte offset)
@@ -223,7 +223,7 @@ interface Module extends ModuleWrapper {
 	main( N: number, xptr: number, strideX: number, yptr: number, strideY: number ): number;
 
 	/**
-	* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector using alternative indexing semantics.
+	* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param xptr - input array pointer (i.e., byte offset)
@@ -296,7 +296,7 @@ interface Module extends ModuleWrapper {
 */
 interface Routine extends ModuleWrapper {
 	/**
-	* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
+	* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -318,7 +318,7 @@ interface Routine extends ModuleWrapper {
 	main( N: number, x: Complex128Array, strideX: number, y: Complex128Array, strideY: number ): Complex128Array;
 
 	/**
-	* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector using alternative indexing semantics.
+	* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -406,7 +406,7 @@ interface Routine extends ModuleWrapper {
 }
 
 /**
-* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
+* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector.
 *
 * @param N - number of indexed elements
 * @param x - input array

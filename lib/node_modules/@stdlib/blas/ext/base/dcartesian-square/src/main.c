@@ -77,10 +77,10 @@ void API_SUFFIX(stdlib_strided_dcartesian_square_ndarray)( const CBLAS_INT N, co
 	}
 	sa[ 0 ] = strideOut1;
 	sa[ 1 ] = strideOut2;
+	ix = offsetX;
+	io = offsetOut;
 	isrm = stdlib_ndarray_is_row_major( 2, sa );
 	if ( isrm ) {
-		ix = offsetX;
-		io = offsetOut;
 		for ( i = 0; i < N; i++ ) {
 			jx = offsetX;
 			for ( j = 0; j < N; j++ ) {
@@ -92,8 +92,6 @@ void API_SUFFIX(stdlib_strided_dcartesian_square_ndarray)( const CBLAS_INT N, co
 			ix += strideX;
 		}
 	} else { // isColMajor
-		ix = offsetX;
-		io = offsetOut;
 		for ( i = 0; i < N; i++ ) {
 			API_SUFFIX(stdlib_strided_dfill_ndarray)( N, X[ ix ], Out, strideOut1, io );
 			io += N * strideOut1;
