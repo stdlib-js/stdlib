@@ -172,7 +172,7 @@ interface Namespace {
 	caxpy: typeof caxpy;
 
 	/**
-	* Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
+	* Copies values from one single-precision complex floating-point vector to another single-precision complex floating-point vector.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -339,7 +339,7 @@ interface Namespace {
 	csscal: typeof csscal;
 
 	/**
-	* Interchanges two complex single-precision floating-point vectors.
+	* Interchanges two single-precision complex floating-point vectors.
 	*
 	* @param N - number of indexed elements
 	* @param x - first input array
@@ -1145,7 +1145,7 @@ interface Namespace {
 	dtrsv: typeof dtrsv;
 
 	/**
-	* Computes the L2-norm of a complex double-precision floating-point vector.
+	* Computes the L2-norm of a double-precision complex floating-point vector.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -1929,7 +1929,7 @@ interface Namespace {
 	scasum: typeof scasum;
 
 	/**
-	* Computes the L2-norm of a complex single-precision floating-point vector.
+	* Computes the L2-norm of a single-precision complex floating-point vector.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -2699,7 +2699,7 @@ interface Namespace {
 	zaxpy: typeof zaxpy;
 
 	/**
-	* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector.
+	* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -2821,7 +2821,7 @@ interface Namespace {
 	zscal: typeof zscal;
 
 	/**
-	* Interchanges two complex double-precision floating-point vectors.
+	* Interchanges two double-precision complex floating-point vectors.
 	*
 	* @param N - number of indexed elements
 	* @param x - first input array

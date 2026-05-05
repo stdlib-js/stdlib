@@ -1,7 +1,7 @@
 
 {{alias}}.main( N, x, strideX, y, strideY )
-    Copies values from one complex double-precision floating-point vector to
-    another complex double-precision floating-point vector.
+    Copies values from one double-precision complex floating-point vector to
+    another double-precision complex floating-point vector.
 
     The `N` and stride parameters determine how values from `x` are copied into
     `y`.
@@ -59,8 +59,8 @@
 
 
 {{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
-    Copies values from one complex double-precision floating-point vector to
-    another complex double-precision floating-point vector using alternative
+    Copies values from one double-precision complex floating-point vector to
+    another double-precision complex floating-point vector using alternative
     indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
@@ -442,8 +442,8 @@
 
 
 {{alias}}.Module.prototype.main( N, xp, sx, yp, sy )
-    Copies values from one complex double-precision floating-point vector to
-    another complex double-precision floating-point vector.
+    Copies values from one double-precision complex floating-point vector to
+    another double-precision complex floating-point vector.
 
     Parameters
     ----------
@@ -501,8 +501,8 @@
 
 
 {{alias}}.Module.prototype.ndarray( N, xp, sx, ox, yp, sy, oy )
-    Copies values from one complex double-precision floating-point vector to
-    another complex double-precision floating-point vector using alternative
+    Copies values from one double-precision complex floating-point vector to
+    another double-precision complex floating-point vector using alternative
     indexing semantics.
 
     Parameters
