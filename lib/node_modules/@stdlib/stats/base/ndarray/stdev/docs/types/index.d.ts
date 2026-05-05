@@ -44,7 +44,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var v = stdev( [ x, correction ] );
 * // returns ~2.0817
 */
-declare function stdev<T extends typedndarray = typedndarray>( arrays: [ T, T ] ): number;
+declare function stdev<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, T ] ): number;
 
 
 // EXPORTS //

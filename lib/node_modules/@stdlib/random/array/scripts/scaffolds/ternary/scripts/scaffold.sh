@@ -18,7 +18,7 @@
 
 # Script for scaffolding a package generating pseudorandom numbers.
 #
-# Usage: scaffold.h
+# Usage: scaffold.sh
 #
 # Environment Variables:
 #
