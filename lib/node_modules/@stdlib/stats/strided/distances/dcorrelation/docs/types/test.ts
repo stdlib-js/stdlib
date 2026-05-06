@@ -242,7 +242,6 @@ import dcorrelation = require( './index' );
 	dcorrelation.ndarray( x.length, x ); // $ExpectError
 	dcorrelation.ndarray( x.length, x, 1 ); // $ExpectError
 	dcorrelation.ndarray( x.length, x, 1, 0 ); // $ExpectError
-	dcorrelation.ndarray( x.length, x, 1, 0 ); // $ExpectError
 	dcorrelation.ndarray( x.length, x, 1, 0, y ); // $ExpectError
 	dcorrelation.ndarray( x.length, x, 1, 0, y, 1 ); // $ExpectError
 	dcorrelation.ndarray( x.length, x, 1, 0, y, 1, 0, 0 ); // $ExpectError
