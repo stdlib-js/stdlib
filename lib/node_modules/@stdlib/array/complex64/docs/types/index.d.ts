@@ -352,13 +352,13 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* var arr = new Complex64Array( 10 );
 	*
 	* var z = arr.at( 0 );
-	* // returns <Complex64>
+	* // returns <Complex64>[ 0.0, 0.0 ]
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
 	* arr.set( [ 9.0, -9.0 ], 9 );
 	*
 	* z = arr.at( -1 );
-	* // returns <Complex64>
+	* // returns <Complex64>[ 9.0, -9.0 ]
 	*
 	* z = arr.at( 100 );
 	* // returns undefined
@@ -433,8 +433,6 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	*
 	* @example
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	*
 	* var arr = new Complex64Array( 4 );
 	*
@@ -449,12 +447,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	*
 	* // Get the last array element:
 	* var z = arr.get( 3 );
-	*
-	* var re = realf( z );
-	* // returns 2.0
-	*
-	* var im = imagf( z );
-	* // returns 2.0
+	* // returns <Complex64>[ 2.0, 2.0 ]
 	*/
 	copyWithin( target: number, start: number, end?: number ): Complex64Array;
 
@@ -526,30 +519,15 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns modified typed array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
-	*
 	* var arr = new Complex64Array( 3 );
 	*
 	* arr.fill( new Complex64( 1.0, 1.0 ), 1 );
 	*
 	* var z = arr.get( 1 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 1.0
-	*
-	* var im = imagf( z );
-	* // returns 1.0
+	* // returns <Complex64>[ 1.0, 1.0 ]
 	*
 	* z = arr.get( 2 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 1.0
-	*
-	* im = imagf( z );
-	* // returns 1.0
+	* // returns <Complex64>[ 1.0, 1.0 ]
 	*/
 	fill( value: ComplexLike, start?: number, end?: number ): Complex64Array;
 
@@ -581,13 +559,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* // returns 1
 	*
 	* var z = out.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 2.0
-	*
-	* var im = imagf( z );
-	* // returns 2.0
+	* // returns <Complex64>[ 2.0, 2.0 ]
 	*/
 	filter<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex64Array;
 
@@ -614,13 +586,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var z = arr.find( predicate );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 1.0
-	*
-	* var im = imagf( z );
-	* // returns 1.0
+	* // returns <Complex64>[ 1.0, 1.0 ]
 	*/
 	find<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex64 | void;
 
@@ -674,13 +640,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var z = arr.findLast( predicate );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 3.0
-	*
-	* var im = imagf( z );
-	* // returns 3.0
+	* // returns <Complex64>[ 3.0, 3.0 ]
 	*/
 	findLast<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex64 | void;
 
@@ -746,7 +706,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* var arr = new Complex64Array( 10 );
 	*
 	* var z = arr.get( 0 );
-	* // returns <Complex64>
+	* // returns <Complex64>[ 0.0, 0.0 ]
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
 	*
@@ -908,13 +868,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* // returns <Complex64Array>
 	*
 	* var z = out.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 2.0
-	*
-	* var im = imagf( z );
-	* // returns -2.0
+	* // returns <Complex64>[ 2.0, -2.0 ]
 	*/
 	map<U = unknown>( fcn: MapFcn<U>, thisArg?: ThisParameterType<MapFcn<U>> ): Complex64Array;
 
@@ -926,8 +880,6 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns accumulated result
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	* var caddf = require( '@stdlib/complex/float32/base/add' );
 	*
 	* var arr = new Complex64Array( 3 );
@@ -937,13 +889,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var z = arr.reduce( caddf );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 6.0
-	*
-	* var im = imagf( z );
-	* // returns 6.0
+	* // returns <Complex64>[ 6.0, 6.0 ]
 	*/
 	reduce<U = unknown>( reducer: Reducer<U>, initialValue?: U ): U;
 
@@ -955,8 +901,6 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns accumulated result
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	* var caddf = require( '@stdlib/complex/float32/base/add' );
 	*
 	* var arr = new Complex64Array( 3 );
@@ -966,13 +910,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var z = arr.reduceRight( caddf );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 6.0
-	*
-	* var im = imagf( z );
-	* // returns 6.0
+	* // returns <Complex64>[ 6.0, 6.0 ]
 	*/
 	reduceRight<U = unknown>( reducer: Reducer<U>, initialValue?: U ): U;
 
@@ -982,9 +920,6 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns reversed array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
-	*
 	* var arr = new Complex64Array( 3 );
 	*
 	* arr.set( [ 1.0, 1.0 ], 0 );
@@ -992,34 +927,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var out = arr.reverse();
-	* // returns <Complex64Array>
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 3.0
-	*
-	* var im = imagf( z );
-	* // returns 3.0
-	*
-	* z = out.get( 1 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 2.0
-	*
-	* im = imagf( z );
-	* // returns 2.0
-	*
-	* z = out.get( 2 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 1.0
-	*
-	* im = imagf( z );
-	* // returns 1.0
+	* // returns <Complex64Array>[ 3.0, 3.0, 2.0, 2.0, 1.0, 1.0 ]
 	*/
 	reverse(): Complex64Array;
 
@@ -1055,30 +963,15 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @throws target array lacks sufficient storage to accommodate source values
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
-	*
 	* var arr = new Complex64Array( 10 );
 	*
 	* var z = arr.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 0.0
-	*
-	* var im = imagf( z );
-	* // returns 0.0
+	* // returns <Complex64>[ 0.0, 0.0 ]
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
 	*
 	* z = arr.get( 0 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 1.0
-	*
-	* im = imagf( z );
-	* // returns -1.0
+	* // returns <Complex64>[ 1.0, -1.0 ]
 	*/
 	set( value: ArrayLike<number | ComplexLike> | RealOrComplexTypedArray | ComplexLike, i?: number ): void;
 
@@ -1091,9 +984,6 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns output array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
-	*
 	* var arr = new Complex64Array( 5 );
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
@@ -1103,52 +993,16 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 5.0, -5.0 ], 4 );
 	*
 	* var out = arr.slice();
-	* // returns <Complex64Array>
+	* // returns <Complex64Array>[ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0, 5.0, -5.0 ]
 	*
 	* var len = out.length;
 	* // returns 5
 	*
-	* var z = out.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 1.0
-	*
-	* var im = imagf( z );
-	* // returns -1.0
-	*
-	* z = out.get( len-1 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 5.0
-	*
-	* im = imagf( z );
-	* // returns -5.0
-	*
 	* out = arr.slice( 1, -2 );
-	* // returns <Complex64Array>
+	* // returns <Complex64Array>[ 2.0, -2.0, 3.0, -3.0 ]
 	*
 	* len = out.length;
 	* // returns 2
-	*
-	* z = out.get( 0 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 2.0
-	*
-	* im = imagf( z );
-	* // returns -2.0
-	*
-	* z = out.get( len-1 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 3.0
-	*
-	* im = imagf( z );
-	* // returns -3.0
 	*/
 	slice( start?: number, end?: number ): Complex64Array;
 
@@ -1219,34 +1073,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 2.0, -2.0 ], 2 );
 	*
 	* var out = arr.sort( compare );
-	* // returns <Complex64Array>
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 1.0
-	*
-	* var im = imagf( z );
-	* // returns -1.0
-	*
-	* z = out.get( 1 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 2.0
-	*
-	* im = imagf( z );
-	* // returns -2.0
-	*
-	* z = out.get( 2 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 3.0
-	*
-	* im = imagf( z );
-	* // returns -3.0
+	* // returns <Complex64Array>[ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0 ]
 	*/
 	sort( compareFcn: CompareFcn ): Complex64Array;
 
@@ -1259,9 +1086,6 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns subarray
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
-	*
 	* var arr = new Complex64Array( 5 );
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
@@ -1271,52 +1095,16 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 5.0, -5.0 ], 4 );
 	*
 	* var subarr = arr.subarray();
-	* // returns <Complex64Array>
+	* // returns <Complex64Array>[ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0, 5.0, -5.0 ]
 	*
 	* var len = subarr.length;
 	* // returns 5
 	*
-	* var z = subarr.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 1.0
-	*
-	* var im = imagf( z );
-	* // returns -1.0
-	*
-	* z = subarr.get( len-1 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 5.0
-	*
-	* im = imagf( z );
-	* // returns -5.0
-	*
 	* subarr = arr.subarray( 1, -2 );
-	* // returns <Complex64Array>
+	* // returns <Complex64Array>[ 2.0, -2.0, 3.0, -3.0 ]
 	*
 	* len = subarr.length;
 	* // returns 2
-	*
-	* z = subarr.get( 0 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 2.0
-	*
-	* im = imagf( z );
-	* // returns -2.0
-	*
-	* z = subarr.get( len-1 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 3.0
-	*
-	* im = imagf( z );
-	* // returns -3.0
 	*/
 	subarray( begin?: number, end?: number ): Complex64Array;
 
@@ -1344,9 +1132,6 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns reversed array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
-	*
 	* var arr = new Complex64Array( 3 );
 	*
 	* arr.set( [ 1.0, 1.0 ], 0 );
@@ -1354,34 +1139,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var out = arr.toReversed();
-	* // returns <Complex64Array>
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 3.0
-	*
-	* var im = imagf( z );
-	* // returns 3.0
-	*
-	* z = out.get( 1 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 2.0
-	*
-	* im = imagf( z );
-	* // returns 2.0
-	*
-	* z = out.get( 2 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 1.0
-	*
-	* im = imagf( z );
-	* // returns 1.0
+	* // returns <Complex64Array>[ 3.0, 3.0, 2.0, 2.0, 1.0, 1.0 ]
 	*/
 	toReversed(): Complex64Array;
 
@@ -1426,34 +1184,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 2.0, -2.0 ], 2 );
 	*
 	* var out = arr.toSorted( compare );
-	* // returns <Complex64Array>
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 1.0
-	*
-	* var im = imagf( z );
-	* // returns -1.0
-	*
-	* z = out.get( 1 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 2.0
-	*
-	* im = imagf( z );
-	* // returns -2.0
-	*
-	* z = out.get( 2 );
-	* // returns <Complex64>
-	*
-	* re = realf( z );
-	* // returns 3.0
-	*
-	* im = imagf( z );
-	* // returns -3.0
+	* // returns <Complex64Array>[ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0 ]
 	*/
 	toSorted( compareFcn: CompareFcn ): Complex64Array;
 
@@ -1479,8 +1210,6 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns iterator
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	* var arr = new Complex64Array( 2 );
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
@@ -1489,22 +1218,10 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* var iter = arr.values();
 	*
 	* var v = iter.next().value;
-	* // returns <Complex64>
-	*
-	* var re = realf( v );
-	* // returns 1.0
-	*
-	* var im = imagf( v );
-	* // returns -1.0
+	* // returns <Complex64>[ 1.0, -1.0 ]
 	*
 	* v = iter.next().value;
-	* // returns <Complex64>
-	*
-	* re = realf( v );
-	* // returns 2.0
-	*
-	* im = imagf( v );
-	* // returns -2.0
+	* // returns <Complex64>[ 2.0, -2.0 ]
 	*
 	* var bool = iter.next().done;
 	* // returns true
@@ -1522,8 +1239,6 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* @returns modified typed array
 	*
 	* @example
-	* var realf = require( '@stdlib/complex/float32/real' );
-	* var imagf = require( '@stdlib/complex/float32/imag' );
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
 	* var arr = new Complex64Array( 3 );
@@ -1533,16 +1248,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var out = arr.with( 0, new Complex64( 4.0, 4.0 ) );
-	* // returns <Complex64Array>
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = realf( z );
-	* // returns 4.0
-	*
-	* var im = imagf( z );
-	* // returns 4.0
+	* // returns <Complex64Array>[ 4.0, 4.0, 2.0, 2.0, 3.0, 3.0 ]
 	*/
 	with( index: number, value: ComplexLike ): Complex64Array;
 }
