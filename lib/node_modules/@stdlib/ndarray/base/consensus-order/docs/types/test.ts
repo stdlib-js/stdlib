@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-import consensusLayout = require( './index' );
+import consensusOrder = require( './index' );
 
 
 // TESTS //
@@ -26,17 +26,17 @@ import consensusLayout = require( './index' );
 	const sx = [ 2, 1 ];
 	const sy = [ 2, 1 ];
 	const sz = [ 4, 2 ];
-	consensusLayout( [ sx, sy, sz ] ); // $ExpectType Layout
+	consensusOrder( [ sx, sy, sz ] ); // $ExpectType Layout
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array-like object of numbers...
 {
-	consensusLayout( true ); // $ExpectError
-	consensusLayout( false ); // $ExpectError
-	consensusLayout( '5' ); // $ExpectError
-	consensusLayout( 123 ); // $ExpectError
-	consensusLayout( {} ); // $ExpectError
-	consensusLayout( ( x: number ): number => x ); // $ExpectError
+	consensusOrder( true ); // $ExpectError
+	consensusOrder( false ); // $ExpectError
+	consensusOrder( '5' ); // $ExpectError
+	consensusOrder( 123 ); // $ExpectError
+	consensusOrder( {} ); // $ExpectError
+	consensusOrder( ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -44,6 +44,6 @@ import consensusLayout = require( './index' );
 	const sx = [ 2, 1 ];
 	const sy = [ 2, 1 ];
 	const sz = [ 4, 2 ];
-	consensusLayout(); // $ExpectError
-	consensusLayout( [ sx, sy, sz ], [] ); // $ExpectError
+	consensusOrder(); // $ExpectError
+	consensusOrder( [ sx, sy, sz ], [] ); // $ExpectError
 }
