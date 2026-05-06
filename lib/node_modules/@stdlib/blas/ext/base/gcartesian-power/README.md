@@ -104,8 +104,8 @@ The function has the following parameters:
 -   **strideX**: stride length for `x`.
 -   **offsetX**: starting index for `x`.
 -   **out**: output [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
--   **strideOut1**: stride length for the first dimension of `out`.
--   **strideOut2**: stride length for the second dimension of `out`.
+-   **strideOut1**: stride length of the first dimension of `out`.
+-   **strideOut2**: stride length of the second dimension of `out`.
 -   **offsetOut**: starting index for `out`.
 
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to access only the last two elements:

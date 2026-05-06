@@ -352,13 +352,13 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* var arr = new Complex128Array( 10 );
 	*
 	* var z = arr.at( 0 );
-	* // returns <Complex128>
+	* // returns <Complex128>[ 0.0, 0.0 ]
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
 	* arr.set( [ 9.0, -9.0 ], 9 );
 	*
 	* z = arr.at( -1 );
-	* // returns <Complex128>
+	* // returns <Complex128>[ 9.0, -9.0 ]
 	*
 	* z = arr.at( 100 );
 	* // returns undefined
@@ -526,30 +526,15 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns modified typed array
 	*
 	* @example
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
-	*
 	* var arr = new Complex128Array( 3 );
 	*
 	* arr.fill( new Complex128( 1.0, 1.0 ), 1 );
 	*
 	* var z = arr.get( 1 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 1.0
-	*
-	* var im = imag( z );
-	* // returns 1.0
+	* // returns <Complex128>[ 1.0, 1.0 ]
 	*
 	* z = arr.get( 2 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 1.0
-	*
-	* im = imag( z );
-	* // returns 1.0
+	* // returns <Complex128>[ 1.0, 1.0 ]
 	*/
 	fill( value: ComplexLike, start?: number, end?: number ): Complex128Array;
 
@@ -575,19 +560,10 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 3.0, -3.0 ], 2 );
 	*
 	* var out = arr.filter( predicate );
-	* // returns <Complex128Array>
+	* // returns <Complex128Array>[ 2.0, 2.0 ]
 	*
 	* var len = out.length;
 	* // returns 1
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 2.0
-	*
-	* var im = imag( z );
-	* // returns 2.0
 	*/
 	filter<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex128Array;
 
@@ -613,13 +589,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var z = arr.find( predicate );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 1.0
-	*
-	* var im = imag( z );
-	* // returns 1.0
+	* // returns <Complex128>[ 1.0, 1.0 ]
 	*/
 	find<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex128 | void;
 
@@ -671,13 +641,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var z = arr.findLast( predicate );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 3.0
-	*
-	* var im = imag( z );
-	* // returns 3.0
+	* // returns <Complex128>[ 3.0, 3.0 ]
 	*/
 	findLast<U = unknown>( predicate: Predicate<U>, thisArg?: ThisParameterType<Predicate<U>> ): Complex128 | void;
 
@@ -742,7 +706,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* var arr = new Complex128Array( 10 );
 	*
 	* var z = arr.get( 0 );
-	* // returns <Complex128>
+	* // returns <Complex128>[ 0.0, 0.0 ]
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
 	*
@@ -903,16 +867,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 3.0, -3.0 ], 2 );
 	*
 	* var out = arr.map( scale );
-	* // returns <Complex128Array>
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 2.0
-	*
-	* var im = imag( z );
-	* // returns -2.0
+	* // returns <Complex128Array>[ 2.0, -2.0, 4.0, -4.0, 6.0, -6.0 ]
 	*/
 	map<U = unknown>( fcn: MapFcn<U>, thisArg?: ThisParameterType<MapFcn<U>> ): Complex128Array;
 
@@ -924,8 +879,6 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns accumulated result
 	*
 	* @example
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	* var cadd = require( '@stdlib/complex/float64/base/add' );
 	*
 	* var arr = new Complex128Array( 3 );
@@ -935,13 +888,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var z = arr.reduce( cadd );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 6.0
-	*
-	* var im = imag( z );
-	* // returns 6.0
+	* // returns <Complex128>[ 6.0, 6.0 ]
 	*/
 	reduce<U = unknown>( reducer: Reducer<U>, initialValue?: U ): U;
 
@@ -953,8 +900,6 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns accumulated result
 	*
 	* @example
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	* var cadd = require( '@stdlib/complex/float64/base/add' );
 	*
 	* var arr = new Complex128Array( 3 );
@@ -964,13 +909,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var z = arr.reduceRight( cadd );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 6.0
-	*
-	* var im = imag( z );
-	* // returns 6.0
+	* // returns <Complex128>[ 6.0, 6.0 ]
 	*/
 	reduceRight<U = unknown>( reducer: Reducer<U>, initialValue?: U ): U;
 
@@ -980,9 +919,6 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns reversed array
 	*
 	* @example
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
-	*
 	* var arr = new Complex128Array( 3 );
 	*
 	* arr.set( [ 1.0, 1.0 ], 0 );
@@ -990,34 +926,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var out = arr.reverse();
-	* // returns <Complex128Array>
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 3.0
-	*
-	* var im = imag( z );
-	* // returns 3.0
-	*
-	* z = out.get( 1 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 2.0
-	*
-	* im = imag( z );
-	* // returns 2.0
-	*
-	* z = out.get( 2 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 1.0
-	*
-	* im = imag( z );
-	* // returns 1.0
+	* // returns <Complex128Array>[ 3.0, 3.0, 2.0, 2.0, 1.0, 1.0 ]
 	*/
 	reverse(): Complex128Array;
 
@@ -1053,30 +962,15 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @throws target array lacks sufficient storage to accommodate source values
 	*
 	* @example
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
-	*
 	* var arr = new Complex128Array( 10 );
 	*
 	* var z = arr.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 0.0
-	*
-	* var im = imag( z );
-	* // returns 0.0
+	* // returns <Complex128>[ 0.0, 0.0 ]
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
 	*
 	* z = arr.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 1.0
-	*
-	* im = imag( z );
-	* // returns -1.0
+	* // returns <Complex128>[ 1.0, -1.0 ]
 	*/
 	set( value: ArrayLike<number | ComplexLike> | RealOrComplexTypedArray | ComplexLike, i?: number ): void;
 
@@ -1089,9 +983,6 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns output array
 	*
 	* @example
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
-	*
 	* var arr = new Complex128Array( 5 );
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
@@ -1101,52 +992,10 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 5.0, -5.0 ], 4 );
 	*
 	* var out = arr.slice();
-	* // returns <Complex128Array>
-	*
-	* var len = out.length;
-	* // returns 5
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 1.0
-	*
-	* var im = imag( z );
-	* // returns -1.0
-	*
-	* z = out.get( len-1 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 5.0
-	*
-	* im = imag( z );
-	* // returns -5.0
+	* // returns <Complex128Array>[ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0, 5.0, -5.0 ]
 	*
 	* out = arr.slice( 1, -2 );
-	* // returns <Complex128Array>
-	*
-	* len = out.length;
-	* // returns 2
-	*
-	* z = out.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 2.0
-	*
-	* im = imag( z );
-	* // returns -2.0
-	*
-	* z = out.get( len-1 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 3.0
-	*
-	* im = imag( z );
-	* // returns -3.0
+	* // returns <Complex128Array>[ 2.0, -2.0, 3.0, -3.0 ]
 	*/
 	slice( start?: number, end?: number ): Complex128Array;
 
@@ -1217,34 +1066,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 2.0, -2.0 ], 2 );
 	*
 	* var out = arr.sort( compare );
-	* // returns <Complex128Array>
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 1.0
-	*
-	* var im = imag( z );
-	* // returns -1.0
-	*
-	* z = out.get( 1 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 2.0
-	*
-	* im = imag( z );
-	* // returns -2.0
-	*
-	* z = out.get( 2 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 3.0
-	*
-	* im = imag( z );
-	* // returns -3.0
+	* // returns <Complex128Array>[ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0 ]
 	*/
 	sort( compareFcn: CompareFcn ): Complex128Array;
 
@@ -1257,9 +1079,6 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns subarray
 	*
 	* @example
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
-	*
 	* var arr = new Complex128Array( 5 );
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
@@ -1269,52 +1088,10 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 5.0, -5.0 ], 4 );
 	*
 	* var subarr = arr.subarray();
-	* // returns <Complex128Array>
-	*
-	* var len = subarr.length;
-	* // returns 5
-	*
-	* var z = subarr.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 1.0
-	*
-	* var im = imag( z );
-	* // returns -1.0
-	*
-	* z = subarr.get( len-1 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 5.0
-	*
-	* im = imag( z );
-	* // returns -5.0
+	* // returns <Complex128Array>[ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0, 4.0, -4.0, 5.0, -5.0 ]
 	*
 	* subarr = arr.subarray( 1, -2 );
-	* // returns <Complex128Array>
-	*
-	* len = subarr.length;
-	* // returns 2
-	*
-	* z = subarr.get( 0 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 2.0
-	*
-	* im = imag( z );
-	* // returns -2.0
-	*
-	* z = subarr.get( len-1 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 3.0
-	*
-	* im = imag( z );
-	* // returns -3.0
+	* // returns <Complex128Array>[ 2.0, -2.0, 3.0, -3.0 ]
 	*/
 	subarray( begin?: number, end?: number ): Complex128Array;
 
@@ -1342,9 +1119,6 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns reversed array
 	*
 	* @example
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
-	*
 	* var arr = new Complex128Array( 3 );
 	*
 	* arr.set( [ 1.0, 1.0 ], 0 );
@@ -1352,34 +1126,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var out = arr.toReversed();
-	* // returns <Complex128Array>
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 3.0
-	*
-	* var im = imag( z );
-	* // returns 3.0
-	*
-	* z = out.get( 1 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 2.0
-	*
-	* im = imag( z );
-	* // returns 2.0
-	*
-	* z = out.get( 2 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 1.0
-	*
-	* im = imag( z );
-	* // returns 1.0
+	* // returns <Complex128Array>[ 3.0, 3.0, 2.0, 2.0, 1.0, 1.0 ]
 	*/
 	toReversed(): Complex128Array;
 
@@ -1424,34 +1171,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 2.0, -2.0 ], 2 );
 	*
 	* var out = arr.toSorted( compare );
-	* // returns <Complex128Array>
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 1.0
-	*
-	* var im = imag( z );
-	* // returns -1.0
-	*
-	* z = out.get( 1 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 2.0
-	*
-	* im = imag( z );
-	* // returns -2.0
-	*
-	* z = out.get( 2 );
-	* // returns <Complex128>
-	*
-	* re = real( z );
-	* // returns 3.0
-	*
-	* im = imag( z );
-	* // returns -3.0
+	* // returns <Complex128Array>[ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0 ]
 	*/
 	toSorted( compareFcn: CompareFcn ): Complex128Array;
 
@@ -1477,8 +1197,6 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns iterator
 	*
 	* @example
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	* var arr = new Complex128Array( 2 );
 	*
 	* arr.set( [ 1.0, -1.0 ], 0 );
@@ -1487,22 +1205,10 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* var iter = arr.values();
 	*
 	* var v = iter.next().value;
-	* // returns <Complex128>
-	*
-	* var re = real( v );
-	* // returns 1.0
-	*
-	* var im = imag( v );
-	* // returns -1.0
+	* // returns <Complex128>[ 1.0, -1.0 ]
 	*
 	* v = iter.next().value;
-	* // returns <Complex128>
-	*
-	* re = real( v );
-	* // returns 2.0
-	*
-	* im = imag( v );
-	* // returns -2.0
+	* // returns <Complex128>[ 2.0, -2.0 ]
 	*
 	* var bool = iter.next().done;
 	* // returns true
@@ -1520,8 +1226,6 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @returns modified typed array
 	*
 	* @example
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
 	*
 	* var arr = new Complex128Array( 3 );
@@ -1531,16 +1235,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* arr.set( [ 3.0, 3.0 ], 2 );
 	*
 	* var out = arr.with( 0, new Complex128( 4.0, 4.0 ) );
-	* // returns <Complex128Array>
-	*
-	* var z = out.get( 0 );
-	* // returns <Complex128>
-	*
-	* var re = real( z );
-	* // returns 4.0
-	*
-	* var im = imag( z );
-	* // returns 4.0
+	* // returns <Complex128Array>[ 4.0, 4.0, 2.0, 2.0, 3.0, 3.0 ]
 	*/
 	with( index: number, value: ComplexLike ): Complex128Array;
 }
