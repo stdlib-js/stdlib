@@ -153,13 +153,13 @@ eye,(planned)
 f2py,N/A
 fabs,(planned)
 fft,(planned)
-fill_diagonal,(planned)
+fill_diagonal,@stdlib/ndarray/fill-diagonal
 finfo,(planned)
 fix,N/A
 flatiter,(planned)
 flatnonzero,(planned)
 flexible,N/A
-flip,(planned)
+flip,@stdlib/ndarray/reverse-dimensions
 fliplr,@stdlib/ndarray/fliplr
 flipud,@stdlib/ndarray/flipud
 float16,@stdlib/ndarray/dtypes
@@ -178,7 +178,7 @@ frexp,(planned)
 from_dlpack,(planned)
 frombuffer,N/A
 fromfile,(planned)
-fromfunction,(planned)
+fromfunction,@stdlib/ndarray/full-by
 fromiter,(planned)
 frompyfunc,(planned)
 fromregex,(planned)
@@ -212,7 +212,7 @@ i0,(planned)
 identity,(planned)
 iinfo,(planned)
 imag,(planned)
-in1d,(planned)
+in1d,N/A
 index_exp,N/A
 indices,(planned)
 inexact,N/A
@@ -259,9 +259,9 @@ less,(planned)
 less_equal,(planned)
 lexsort,(planned)
 lib,N/A
-linalg,(planned)
+linalg,N/A
 linspace,@stdlib/blas/ext/linspace
-little_endian,N/A
+little_endian,@stdlib/assert/is-little-endian
 load,(planned)
 loadtxt,(planned)
 log,(planned)
@@ -282,7 +282,7 @@ ma,(planned)
 mask_indices,(planned)
 matmul,(planned)
 matrix,(planned)
-matrix_transpose,(planned)
+matrix_transpose,@stdlib/ndarray/transpose
 max,@stdlib/stats/max
 maximum,(planned)
 may_share_memory,(planned)

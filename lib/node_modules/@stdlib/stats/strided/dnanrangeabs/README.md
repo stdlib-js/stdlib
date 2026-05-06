@@ -38,7 +38,7 @@ The [**range**][range] is defined as the difference between the maximum and mini
 var dnanrangeabs = require( '@stdlib/stats/strided/dnanrangeabs' );
 ```
 
-### dnanrangeabs( N, x, strideX )
+#### dnanrangeabs( N, x, strideX )
 
 Computes the [range][range] of absolute values of a double-precision floating-point strided array, ignoring `NaN` values.
 
@@ -82,7 +82,7 @@ var v = dnanrangeabs( 4, x1, 2 );
 // returns 3.0
 ```
 
-### dnanrangeabs.ndarray( N, x, strideX, offsetX )
+#### dnanrangeabs.ndarray( N, x, strideX, offsetX )
 
 Computes the [range][range] of absolute values of a double-precision floating-point strided array, ignoring `NaN` values and using alternative indexing semantics.
 
