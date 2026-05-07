@@ -1,0 +1,53 @@
+
+{{alias}}( arrays )
+    Computes the mean and standard deviation of a one-dimensional double-
+    precision floating-point ndarray.
+
+    If provided an empty ndarray, the function returns `NaN` values.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays in order:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray to store the mean and standard
+        deviation.
+        - a zero-dimensional ndarray specifying the degrees of freedom
+        adjustment. Providing a non-zero degrees of freedom adjustment has the
+        effect of adjusting the divisor during the calculation of the standard
+        deviation according to `N-c` where `N` is the number of elements in the
+        input ndarray and `c` corresponds to the provided degrees of freedom
+        adjustment. When computing the standard deviation of a population,
+        setting this parameter to `0` is the standard choice (i.e., the provided
+        array contains data constituting an entire population). When computing
+        the corrected sample standard deviation, setting this parameter to `1`
+        is the standard choice (i.e., the provided array contains data sampled
+        from a larger population; this is commonly referred to as Bessel's
+        correction).
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 2.0, 1.0, 2.0, -2.0 ] );
+    > var dt = 'float64';
+    > var sh = [ xbuf.length ];
+    > var sx = [ 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var obuf = new {{alias:@stdlib/array/float64}}( 2 );
+    > var out = new {{alias:@stdlib/ndarray/ctor}}( dt, obuf, [ 2 ], [ 1 ], ox, ord );
+    > var opts = { 'dtype': dt };
+    > var correction = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
+    > {{alias}}( [ x, out, correction ] );
+    > out
+    <ndarray>[ ~0.75, ~1.8930 ]
+
+    See Also
+    --------
+

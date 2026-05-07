@@ -150,7 +150,7 @@ var bool = ( out === y );
 
 The method has the following parameters:
 
--   **x**: input [ndarray][@stdlib/ndarray/ctor]. Must have a real-valued or generic [data type][@stdlib/ndarray/dtypes].
+-   **x**: input [ndarray][@stdlib/ndarray/ctor]. Must have a real-valued or "generic" [data type][@stdlib/ndarray/dtypes].
 -   **out**: output [ndarray][@stdlib/ndarray/ctor].
 -   **options**: function options (_optional_).
 

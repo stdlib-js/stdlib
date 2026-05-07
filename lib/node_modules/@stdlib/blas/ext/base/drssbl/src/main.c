@@ -31,7 +31,6 @@ static const double SSML = 4.4989137945431964E+161;
 static const double TBIG = 1.9979190722022350E+146;
 static const double TSML = 1.4916681462400413E-154;
 
-
 /**
 * Computes the residual sum of squares of two double-precision floating-point strided arrays using Blue's algorithm.
 *
@@ -61,18 +60,18 @@ double API_SUFFIX(stdlib_strided_drssbl)( const CBLAS_INT N, const double *X, co
 * @return             output value
 */
 double API_SUFFIX(stdlib_strided_drssbl_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
-	bool notbig;
+	CBLAS_INT ix;
+	CBLAS_INT iy;
 	double sumsq;
 	double scale;
+	CBLAS_INT i;
 	double abig;
 	double asml;
 	double amed;
 	double ymin;
 	double ymax;
+	bool notbig;
 	double az;
-	CBLAS_INT ix;
-	CBLAS_INT iy;
-	CBLAS_INT i;
 
 	if ( N <= 0 ) {
 		return 0.0;

@@ -31,15 +31,15 @@ type Unary = ( x: number ) => number;
 */
 interface LogCDF {
 	/**
-	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a lognormal distribution with mean `mu` and standard deviation `sigma` at a value `x`.
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a lognormal distribution with location parameter `mu` and scale parameter `sigma` at a value `x`.
 	*
 	* ## Notes
 	*
 	* -   If provided `sigma < 0`, the function returns `NaN`.
 	*
 	* @param x - input value
-	* @param mu - mean
-	* @param sigma - standard deviation
+	* @param mu - location parameter
+	* @param sigma - scale parameter
 	* @returns logarithm of cumulative distribution function
 	*
 	* @example
@@ -63,7 +63,7 @@ interface LogCDF {
 	* // returns NaN
 	*
 	* @example
-	* // Negative standard deviation:
+	* // Negative scale parameter:
 	* var y = logcdf( 2.0, 0.0, -1.0 );
 	* // returns NaN
 	*
@@ -78,10 +78,10 @@ interface LogCDF {
 	( x: number, mu: number, sigma: number ): number;
 
 	/**
-	* Returns a function for evaluating the natural logarithm of the cumulative distribution function (CDF) for a lognormal distribution.
+	* Returns a function for evaluating the natural logarithm of the cumulative distribution function (CDF) for a lognormal distribution with location parameter `mu` and scale parameter `sigma`.
 	*
-	* @param mu - mean
-	* @param sigma - standard deviation
+	* @param mu - location parameter
+	* @param sigma - scale parameter
 	* @returns logcdf
 	*
 	* @example
@@ -99,8 +99,8 @@ interface LogCDF {
 * Lognormal distribution natural logarithm of cumulative distribution function (CDF).
 *
 * @param x - input value
-* @param mu - mean
-* @param sigma - standard deviation
+* @param mu - location parameter
+* @param sigma - scale parameter
 * @returns evaluated logcdf
 *
 * @example
