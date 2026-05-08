@@ -25,7 +25,6 @@
 #include "stdlib/napi/argv_strided_booleanarray.h"
 #include "stdlib/napi/argv_strided_complex128array.h"
 #include <node_api.h>
-#include <stdbool.h>
 
 /**
 * Receives JavaScript callback invocation data.
