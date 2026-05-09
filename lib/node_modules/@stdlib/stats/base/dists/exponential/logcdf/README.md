@@ -163,7 +163,7 @@ logEachMap( 'x: %0.4f, λ: %0.4f, ln(F(x;λ)): %0.4f', x, lambda, logcdf );
 #include "stdlib/stats/base/dists/exponential/logcdf.h"
 ```
 
-#### stdlib_base_dists_exponential_cdf( x, lambda )
+#### stdlib_base_dists_exponential_logcdf( x, lambda )
 
 Evaluates the natural logarithm of the [cumulative distribution function (CDF)][cdf] for an exponential distribution with rate parameter `lambda`.
 

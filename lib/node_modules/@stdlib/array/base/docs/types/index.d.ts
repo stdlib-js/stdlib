@@ -581,7 +581,7 @@ interface Namespace {
 	* var fcns = obj.accessors;
 	* // returns [ <Function>, <Function> ]
 	*
-	* var v = fcns[ 0 ]( x.data, 2 );
+	* var v = fcns[ 0 ]( x, 2 );
 	* // returns 3
 	*/
 	arraylike2object: typeof arraylike2object;
