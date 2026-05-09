@@ -25,7 +25,7 @@
 * Computes the minimum absolute value of a one-dimensional single-precision floating-point ndarray.
 *
 * @param arrays    list containing an input ndarray
-* @return          minimum value
+* @return          minimum absolute value
 */
 float stdlib_stats_sminabs( const struct ndarray *arrays[] ) {
 	const struct ndarray *x = arrays[ 0 ];

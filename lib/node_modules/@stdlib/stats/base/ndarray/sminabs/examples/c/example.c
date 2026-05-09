@@ -67,7 +67,7 @@ int main( void ) {
 	float v = stdlib_stats_sminabs( arrays );
 
 	// Print the result:
-	printf( "min: %f\n", v );
+	printf( "minabs: %f\n", v );
 
 	// Free allocated memory:
 	stdlib_ndarray_free( x );
