@@ -45,7 +45,6 @@ Returns a shallow copy of an [ndarray][@stdlib/ndarray/ctor] containing only tho
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 function predicate( z ) {
     return z > 6.0;
@@ -60,10 +59,7 @@ var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
 // returns <ndarray>
 
 var y = filter( x, predicate );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ 8.0, 9.0, 10.0 ]
+// returns <ndarray>[ 8.0, 9.0, 10.0 ]
 ```
 
 The function accepts the following arguments:
@@ -86,7 +82,6 @@ By default, the output ndarray [data type][@stdlib/ndarray/dtypes] is inferred f
 var Float64Array = require( '@stdlib/array/float64' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
 var dtype = require( '@stdlib/ndarray/dtype' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 function predicate( z ) {
     return z > 6.0;
@@ -104,13 +99,10 @@ var opts = {
     'dtype': 'float32'
 };
 var y = filter( x, opts, predicate );
-// returns <ndarray>
+// returns <ndarray>[ 8.0, 9.0, 10.0 ]
 
 var dt = dtype( y );
 // returns 'float32'
-
-var arr = ndarray2array( y );
-// returns [ 8.0, 9.0, 10.0 ]
 ```
 
 To set the `predicate` function execution context, provide a `thisArg`.
@@ -120,7 +112,6 @@ To set the `predicate` function execution context, provide a `thisArg`.
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 function predicate( z ) {
     this.count += 1;
@@ -139,10 +130,7 @@ var ctx = {
     'count': 0
 };
 var y = filter( x, predicate, ctx );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ 8.0, 9.0, 10.0 ]
+// returns <ndarray>[ 8.0, 9.0, 10.0 ]
 
 var count = ctx.count;
 // returns 6
