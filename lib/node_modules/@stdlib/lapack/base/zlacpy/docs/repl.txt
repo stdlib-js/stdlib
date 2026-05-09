@@ -47,11 +47,8 @@
     > var A = new {{alias:@stdlib/array/complex128}}( abuf );
     > var B = new {{alias:@stdlib/array/complex128}}( bbuf );
     > {{alias}}( 'row-major', 'all', 2, 2, A, 2, B, 2 );
-    > var z = B.get( 0 );
-    > {{alias:@stdlib/complex/float64/real}}( z )
-    1.0
-    > {{alias:@stdlib/complex/float64/imag}}( z )
-    2.0
+    > B
+    <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 
 
 {{alias}}.ndarray( uplo, M, N, A, sa1, sa2, oa, B, sb1, sb2, ob )
@@ -106,15 +103,12 @@
     Examples
     --------
     > var abuf = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ];
-    > var bbuf = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+    > var bbuf = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
     > var A = new {{alias:@stdlib/array/complex128}}( abuf );
     > var B = new {{alias:@stdlib/array/complex128}}( bbuf );
-    > {{alias}}.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
-    > var z = B.get( 2 );
-    > {{alias:@stdlib/complex/float64/real}}( z )
-    3.0
-    > {{alias:@stdlib/complex/float64/imag}}( z )
-    4.0
+    > {{alias}}.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 0 );
+    > B
+    <Complex128Array>[ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ]
 
     See Also
     --------

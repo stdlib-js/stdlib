@@ -115,7 +115,7 @@ interface ModuleConstructor {
 */
 interface Module extends ModuleWrapper {
 	/**
-	* Computes the L2-norm of a complex double-precision floating-point vector.
+	* Computes the L2-norm of a double-precision complex floating-point vector.
 	*
 	* @param N - number of indexed elements
 	* @param xptr - input array pointer (i.e., byte offset)
@@ -158,7 +158,7 @@ interface Module extends ModuleWrapper {
 	main( N: number, xptr: number, strideX: number ): number;
 
 	/**
-	* Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
+	* Computes the L2-norm of a double-precision complex floating-point vector using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param xptr - input array pointer (i.e., byte offset)
@@ -207,7 +207,7 @@ interface Module extends ModuleWrapper {
 */
 interface Routine extends ModuleWrapper {
 	/**
-	* Computes the L2-norm of a complex double-precision floating-point vector.
+	* Computes the L2-norm of a double-precision complex floating-point vector.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -227,7 +227,7 @@ interface Routine extends ModuleWrapper {
 	main( N: number, x: Complex128Array, strideX: number ): number;
 
 	/**
-	* Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
+	* Computes the L2-norm of a double-precision complex floating-point vector using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -289,7 +289,7 @@ interface Routine extends ModuleWrapper {
 }
 
 /**
-* Computes the L2-norm of a complex double-precision floating-point vector.
+* Computes the L2-norm of a double-precision complex floating-point vector.
 *
 * @param N - number of indexed elements
 * @param x - input array
