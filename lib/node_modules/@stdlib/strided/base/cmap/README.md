@@ -48,9 +48,7 @@ var x = new Complex64Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
 var y = new Complex64Array( x.length );
 
 cmap( x.length, x, 1, y, 1, cceilf );
-
-var v = y.get( 0 );
-// returns <Complex64>[ -2.0, 2.0 ]
+// y => <Complex64Array>[ -2.0, 2.0, 4.0, -5.0, 5.0, 0.0, -1.0, 4.0 ]
 ```
 
 The function accepts the following arguments:
@@ -72,9 +70,7 @@ var x = new Complex64Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
 var y = new Complex64Array( x.length );
 
 cmap( 2, x, 2, y, -1, cceilf );
-
-var v = y.get( 0 );
-// returns <Complex64>[ 5.0, 0.0 ]
+// y => <Complex64Array>[ 5.0, 0.0, -2.0, 2.0, 0.0, 0.0, 0.0, 0.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][@stdlib/array/complex64] views.
@@ -92,9 +88,7 @@ var x1 = new Complex64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2n
 var y1 = new Complex64Array( y0.buffer, y0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
 
 cmap( 2, x1, -2, y1, 1, cceilf );
-
-var v = y0.get( 2 );
-// returns <Complex64>[ -1.0, 4.0 ]
+// y0 => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, -1.0, 4.0, 4.0, -5.0 ]
 ```
 
 #### cmap.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, fcn )
@@ -109,9 +103,7 @@ var x = new Complex64Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
 var y = new Complex64Array( x.length );
 
 cmap.ndarray( x.length, x, 1, 0, y, 1, 0, cceilf );
-
-var v = y.get( 0 );
-// returns <Complex64>[ -2.0, 2.0 ]
+// y => <Complex64Array>[ -2.0, 2.0, 4.0, -5.0, 5.0, 0.0, -1.0, 4.0 ]
 ```
 
 The function accepts the following additional arguments:
@@ -129,9 +121,7 @@ var x = new Complex64Array( [ -2.3, 1.5, 3.1, -5.2, 4.8, 0.0, -1.6, 3.4 ] );
 var y = new Complex64Array( x.length );
 
 cmap.ndarray( 2, x, 2, 1, y, -1, y.length-1, cceilf );
-
-var v = y.get( y.length-1 );
-// returns <Complex64>[ 4.0, -5.0 ]
+// y => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, -1.0, 4.0, 4.0, -5.0 ]
 ```
 
 </section>

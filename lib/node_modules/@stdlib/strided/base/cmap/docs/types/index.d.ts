@@ -62,15 +62,7 @@ interface Routine {
 	* var y = new Complex64Array( x.length );
 	*
 	* cmap( x.length, x, 1, y, 1, scale );
-	*
-	* var v = y.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = real( v );
-	* // returns 10.0
-	*
-	* var im = imag( v );
-	* // returns 10.0
+	* // y => <Complex64Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 	*/
 	( N: number, x: Complex64Array, strideX: number, y: Complex64Array, strideY: number, fcn: Unary ): Complex64Array;
 
@@ -103,15 +95,7 @@ interface Routine {
 	* var y = new Complex64Array( x.length );
 	*
 	* cmap.ndarray( x.length, x, 1, 0, y, 1, 0, scale );
-	*
-	* var v = y.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = real( v );
-	* // returns 10.0
-	*
-	* var im = imag( v );
-	* // returns 10.0
+	* // y => <Complex64Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 	*/
 	ndarray( N: number, x: Complex64Array, strideX: number, offsetX: number, y: Complex64Array, strideY: number, offsetY: number, fcn: Unary ): Complex64Array;
 }
@@ -143,15 +127,7 @@ interface Routine {
 * var y = new Complex64Array( x.length );
 *
 * cmap( x.length, x, 1, y, 1, scale );
-*
-* var v = y.get( 0 );
-* // returns <Complex64>
-*
-* var re = real( v );
-* // returns 10.0
-*
-* var im = imag( v );
-* // returns 10.0
+* // y => <Complex64Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
@@ -169,15 +145,7 @@ interface Routine {
 * var y = new Complex64Array( x.length );
 *
 * cmap.ndarray( x.length, x, 1, 0, y, 1, 0, scale );
-*
-* var v = y.get( 0 );
-* // returns <Complex64>
-*
-* var re = real( v );
-* // returns 10.0
-*
-* var im = imag( v );
-* // returns 10.0
+* // y => <Complex64Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 */
 declare var cmap: Routine;
 

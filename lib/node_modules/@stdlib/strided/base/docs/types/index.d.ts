@@ -265,15 +265,7 @@ interface Namespace {
 	* var y = new Complex64Array( x.length );
 	*
 	* ns.cmap( x.length, x, 1, y, 1, scale );
-	*
-	* var v = y.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = real( v );
-	* // returns 10.0
-	*
-	* var im = imag( v );
-	* // returns 10.0
+	* // y => <Complex64Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
@@ -291,15 +283,7 @@ interface Namespace {
 	* var y = new Complex64Array( x.length );
 	*
 	* ns.cmap.ndarray( x.length, x, 1, 0, y, 1, 0, scale );
-	*
-	* var v = y.get( 0 );
-	* // returns <Complex64>
-	*
-	* var re = real( v );
-	* // returns 10.0
-	*
-	* var im = imag( v );
-	* // returns 10.0
+	* // y => <Complex64Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 	*/
 	cmap: typeof cmap;
 
@@ -449,7 +433,7 @@ interface Namespace {
 	* var z = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 0 ] );
 	*
-	* ns.dmskmap2( x.length, x, 1, m, 1, y, 1, add );
+	* ns.dmskmap2( x.length, x, 1, y, 1, m, 1, z, 1, add );
 	* // z => <Float64Array>[ 2.0, 4.0, 0.0, 8.0, 10.0 ]
 	*
 	* @example
@@ -592,6 +576,7 @@ interface Namespace {
 	* function accessor( values ) {
 	*     values[ 0 ] *= 2.0;
 	*     values[ 1 ] *= 2.0;
+	*     return values;
 	* }
 	*
 	* var x = [ 1.0, -2.0, 3.0, -4.0, 5.0 ];
@@ -607,6 +592,7 @@ interface Namespace {
 	* function accessor( values ) {
 	*     values[ 0 ] *= 2.0;
 	*     values[ 1 ] *= 2.0;
+	*     return values;
 	* }
 	*
 	* var x = [ 1.0, -2.0, 3.0, -4.0, 5.0 ];
@@ -1317,7 +1303,7 @@ interface Namespace {
 	* var z = new Float32Array( [ 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	* var m = new Uint8Array( [ 0, 0, 1, 0, 0 ] );
 	*
-	* ns.smskmap2( x.length, x, 1, m, 1, y, 1, addf );
+	* ns.smskmap2( x.length, x, 1, y, 1, m, 1, z, 1, addf );
 	* // z => <Float32Array>[ 2.0, 4.0, 0.0, 8.0, 10.0 ]
 	*
 	* @example
@@ -1388,7 +1374,7 @@ interface Namespace {
 	* var fcns = obj.accessors;
 	* // returns [ <Function>, <Function> ]
 	*
-	* var v = fcns[ 0 ]( x.data, 2 );
+	* var v = fcns[ 0 ]( obj.data, 2 );
 	* // returns 3
 	*/
 	strided2object: typeof strided2object;
@@ -1723,9 +1709,7 @@ interface Namespace {
 	* var y = new Complex128Array( x.length );
 	*
 	* ns.zmap( x.length, x, 1, y, 1, scale );
-	*
-	* var v = y.get( 0 );
-	* // returns <Complex128>[ 10.0, 10.0 ]
+	* // y => <Complex128Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
@@ -1743,9 +1727,7 @@ interface Namespace {
 	* var y = new Complex128Array( x.length );
 	*
 	* ns.zmap.ndarray( x.length, x, 1, 0, y, 1, 0, scale );
-	*
-	* var v = y.get( 0 );
-	* // returns <Complex128>[ 10.0, 10.0 ]
+	* // y => <Complex128Array>[ 10.0, 10.0, 20.0, 20.0, 30.0, 30.0, 40.0, 40.0, 50.0, 50.0 ]
 	*/
 	zmap: typeof zmap;
 }
