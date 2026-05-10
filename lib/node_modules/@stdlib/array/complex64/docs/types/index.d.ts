@@ -444,10 +444,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	*
 	* // Copy the first two elements to the last two elements:
 	* arr.copyWithin( 2, 0, 2 );
-	*
-	* // Get the last array element:
-	* var z = arr.get( 3 );
-	* // returns <Complex64>[ 2.0, 2.0 ]
+	* // arr => <Complex64Array>[ 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 2.0, 2.0 ]
 	*/
 	copyWithin( target: number, start: number, end?: number ): Complex64Array;
 
