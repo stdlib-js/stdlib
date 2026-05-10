@@ -3104,12 +3104,15 @@ UINT8_MAX
 UINT8_NUM_BYTES
 Uint8Array
 Uint8ClampedArray
+Uint8Vector
 UINT16_MAX
 UINT16_NUM_BYTES
 Uint16Array
+Uint16Vector
 UINT32_MAX
 UINT32_NUM_BYTES
 Uint32Array
+Uint32Vector
 umask
 uncapitalize
 uncapitalizeKeys

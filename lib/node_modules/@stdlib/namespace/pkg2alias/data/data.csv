@@ -3104,12 +3104,15 @@
 "@stdlib/constants/uint8/num-bytes",UINT8_NUM_BYTES
 "@stdlib/array/uint8",Uint8Array
 "@stdlib/array/uint8c",Uint8ClampedArray
+"@stdlib/ndarray/vector/uint8",Uint8Vector
 "@stdlib/constants/uint16/max",UINT16_MAX
 "@stdlib/constants/uint16/num-bytes",UINT16_NUM_BYTES
 "@stdlib/array/uint16",Uint16Array
+"@stdlib/ndarray/vector/uint16",Uint16Vector
 "@stdlib/constants/uint32/max",UINT32_MAX
 "@stdlib/constants/uint32/num-bytes",UINT32_NUM_BYTES
 "@stdlib/array/uint32",Uint32Array
+"@stdlib/ndarray/vector/uint32",Uint32Vector
 "@stdlib/process/umask",umask
 "@stdlib/string/uncapitalize",uncapitalize
 "@stdlib/object/uncapitalize-keys",uncapitalizeKeys
