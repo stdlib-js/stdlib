@@ -229,8 +229,6 @@ declare function scalar2ndarray( value: number, options: Float32Options ): float
 *
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var v = new Complex128( 1.0, 2.0 );
 *
@@ -245,14 +243,8 @@ declare function scalar2ndarray( value: number, options: Float32Options ): float
 * var dt = x.dtype;
 * // returns 'complex128'
 *
-* var v = x.get();
-* // returns <Complex128>
-*
-* var re = real( v );
-* // returns 1.0
-*
-* var im = imag( v );
-* // returns 2.0
+* var buf = x.data;
+* // buf => <Complex128Array>[ 1.0, 2.0 ]
 */
 declare function scalar2ndarray( value: number | ComplexLike, options: Complex128Options ): complex128ndarray;
 
@@ -268,9 +260,7 @@ declare function scalar2ndarray( value: number | ComplexLike, options: Complex12
 * @returns zero-dimensional ndarray
 *
 * @example
-* var Complex64 = require( '@stdlib/complex/float64/ctor' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var v = new Complex64( 1.0, 2.0 );
 *
@@ -285,14 +275,8 @@ declare function scalar2ndarray( value: number | ComplexLike, options: Complex12
 * var dt = x.dtype;
 * // returns 'complex64'
 *
-* var v = x.get();
-* // returns <Complex64>
-*
-* var re = realf( v );
-* // returns 1.0
-*
-* var im = imagf( v );
-* // returns 2.0
+* var buf = x.data;
+* // buf => <Complex64Array>[ 1.0, 2.0 ]
 */
 declare function scalar2ndarray( value: number | ComplexLike, options: Complex64Options ): complex64ndarray;
 
