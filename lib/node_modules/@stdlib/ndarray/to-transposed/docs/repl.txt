@@ -1,0 +1,29 @@
+
+{{alias}}( x )
+    Returns a new ndarray containing the elements of an input ndarray but whose
+    last two dimensions are transposed.
+
+    The function operates on a stack of matrices, transposing the last two
+    dimensions of the input ndarray.
+
+    The input ndarray must have at least two dimensions.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ] )
+    <ndarray>[ [ 1, 2, 3 ], [ 4, 5, 6 ] ]
+    > var y = {{alias}}( x )
+    <ndarray>[ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ]
+
+    See Also
+    --------
