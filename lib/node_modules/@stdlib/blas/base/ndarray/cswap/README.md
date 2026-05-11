@@ -20,7 +20,7 @@ limitations under the License.
 
 # cswap
 
-> Interchange two one-dimensional complex single-precision floating-point ndarrays.
+> Interchange two one-dimensional single-precision complex floating-point ndarrays.
 
 <section class="intro">
 
@@ -38,7 +38,7 @@ var cswap = require( '@stdlib/blas/base/ndarray/cswap' );
 
 #### cswap( arrays )
 
-Interchanges two one-dimensional complex single-precision floating-point ndarrays.
+Interchanges two one-dimensional single-precision complex floating-point ndarrays.
 
 ```javascript
 var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );

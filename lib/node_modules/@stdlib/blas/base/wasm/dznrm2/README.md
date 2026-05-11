@@ -20,7 +20,7 @@ limitations under the License.
 
 # dznrm2
 
-> Calculate the L2-norm of a complex double-precision floating-point vector.
+> Calculate the L2-norm of a double-precision complex floating-point vector.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var dznrm2 = require( '@stdlib/blas/base/wasm/dznrm2' );
 
 #### dznrm2.main( N, x, strideX )
 
-Calculates the L2-norm of a complex double-precision floating-point vector.
+Calculates the L2-norm of a double-precision complex floating-point vector.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
@@ -79,7 +79,7 @@ var z = dznrm2.main( 2, x1, 2 );
 
 #### dznrm2.ndarray( N, x, strideX, offsetX )
 
-Calculates the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
+Calculates the L2-norm of a double-precision complex floating-point vector using alternative indexing semantics.
 
 ```javascript
 var Complex128Array = require( '@stdlib/array/complex128' );
@@ -134,7 +134,7 @@ mod.initializeSync();
 
 #### dznrm2.Module.prototype.main( N, xp, sx )
 
-Computes the L2-norm of a complex double-precision floating-point vector.
+Computes the L2-norm of a double-precision complex floating-point vector.
 
 <!-- eslint-disable n/no-sync -->
 
@@ -183,7 +183,7 @@ The function has the following parameters:
 
 #### dznrm2.Module.prototype.ndarray( N, xp, sx, ox )
 
-Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
+Computes the L2-norm of a double-precision complex floating-point vector using alternative indexing semantics.
 
 <!-- eslint-disable n/no-sync -->
 
