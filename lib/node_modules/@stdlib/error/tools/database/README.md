@@ -50,7 +50,7 @@ var db = database();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var invertObject = require( '@stdlib/utils/object-inverse' );
+var invertObject = require( '@stdlib/object/inverse' );
 var replace = require( '@stdlib/string/replace' );
 var database = require( '@stdlib/error/tools/database' );
 
