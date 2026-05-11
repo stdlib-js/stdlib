@@ -126,23 +126,19 @@ y = mean( 1.0, -1.0, 2.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var mean = require( '@stdlib/stats/base/dists/frechet/mean' );
 
-var alpha;
-var m;
-var s;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var alpha = uniform( 10, EPS, 20.0, opts );
+var m = uniform( 10, -20.0, 20.0, opts );
+var s = uniform( 10, EPS, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    alpha = ( randu()*20.0 ) + EPS;
-    s = ( randu()*20.0 ) + EPS;
-    m = ( randu()*40.0 ) - 20.0;
-    y = mean( alpha, s, m );
-    console.log( 'α: %d, s: %d, m: %d, E(X;α,s,m): %d', alpha.toFixed( 4 ), s.toFixed( 4 ), m.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'α: %0.4f, s: %0.4f, m: %0.4f, E(X;α,s,m): %0.4f', alpha, s, m, mean );
 ```
 
 </section>
