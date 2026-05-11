@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the excess kurtosis for a Half-normal distribution with scale parameter `sigma`.
+* Returns the excess kurtosis for a half-normal distribution with scale parameter `sigma`.
 */
 double stdlib_base_dists_halfnormal_kurtosis( const double sigma );
 

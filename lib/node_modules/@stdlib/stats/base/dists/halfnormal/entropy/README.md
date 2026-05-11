@@ -58,10 +58,10 @@ Returns the [differential entropy][entropy] of a [half-normal][half-normal-distr
 
 ```javascript
 var y = entropy( 1.0 );
-// returns ~1.014
+// returns ~0.7258
 
 y = entropy( 5.0 );
-// returns ~2.624
+// returns ~2.3352
 ```
 
 If provided `sigma ≤ 0`, the function returns `NaN`.
@@ -140,7 +140,7 @@ Returns the differential entropy of a half-normal distribution.
 
 ```c
 double out = stdlib_base_dists_halfnormal_entropy( 1.0 );
-// returns ~1.014
+// returns ~0.7258
 ```
 
 The function accepts the following arguments:

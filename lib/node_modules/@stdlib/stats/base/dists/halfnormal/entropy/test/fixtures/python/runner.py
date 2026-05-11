@@ -16,49 +16,54 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Generate HalfNormal entropy fixtures."""
+"""Generate fixtures."""
 
 import os
 import json
-import numpy as np
 from numpy.random import rand
 from scipy.stats import halfnorm
 
-# Get the file path
+# Get the file path:
 FILE = os.path.realpath(__file__)
+
+# Extract the directory in which this file resides:
 DIR = os.path.dirname(FILE)
 
 
-def gen(sigma, name):
-    """Generate entropy fixture data and write to JSON.
+def gen(x, name):
+    """Generate fixture data and write to JSON.
 
     # Arguments
-    * `sigma`: scale parameter array
+
+    * `x`: domain
     * `name::str`: output filename
 
-    # Example
+    # Examples
+
     ``` python
-    python> sigma = rand(1000) * 10.0 + 1.0
-    python> gen(sigma, './data.json')
+    python> x = (rand(1000) * 10.0) + 1.0
+    python> gen(x, "data.json")
     ```
     """
-    y = []
-    for s in np.nditer(sigma):
-        y.append(halfnorm.entropy(scale=float(s)))
+    y = halfnorm.entropy(loc=0.0, scale=x)
 
+    # Store data to be written to file as a dictionary:
     data = {
-        "sigma": sigma.tolist(),
-        "expected": y
+        "sigma": x.tolist(),
+        "expected": y.tolist()
     }
 
+    # Based on the script directory, create an output filepath:
     filepath = os.path.join(DIR, name)
+
+    # Write the data to the output filepath as JSON:
     with open(filepath, "w", encoding="utf-8") as outfile:
         json.dump(data, outfile)
 
 
 def main():
     """Generate fixture data."""
-    sigma = rand(1000) * 20.0 + 2.0
+    sigma = (rand(1000) * 20.0) + 2.0
     gen(sigma, "data.json")
 
 

@@ -17,10 +17,10 @@
 */
 
 #include "stdlib/stats/base/dists/halfnormal/entropy.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/ln.h"
-#include "stdlib/constants/float64/eulergamma.h"
-#include "stdlib/constants/float64/sqrt_half_pi.h"
+#include "stdlib/math/base/assert/is_nan.h"
+
+static const double scalar = 0.7257913526447274; // ( ln(π/2)+1 ) / 2
 
 /**
 * Returns the differential entropy of a half-normal distribution.
@@ -30,14 +30,11 @@
 *
 * @example
 * double y = stdlib_base_dists_halfnormal_entropy( 1.0 );
-* // returns ~1.014
+* // returns ~0.7258
 */
 double stdlib_base_dists_halfnormal_entropy( const double sigma ) {
-	if (
-		stdlib_base_is_nan( sigma ) ||
-		sigma <= 0.0
-	) {
+	if ( stdlib_base_is_nan( sigma ) || sigma <= 0.0 ) {
 		return 0.0/0.0; // NaN
 	}
-	return 0.5 + stdlib_base_ln( sigma ) + stdlib_base_ln( STDLIB_CONSTANT_FLOAT64_SQRT_HALF_PI ) + ( 0.5 * STDLIB_CONSTANT_FLOAT64_EULERGAMMA );
+	return stdlib_base_ln( sigma ) + scalar;
 }

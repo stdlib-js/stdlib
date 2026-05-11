@@ -20,7 +20,7 @@ limitations under the License.
 
 # srangeabs
 
-> Calculate the [range][range] of absolute values of a single-precision floating-point strided array.
+> Compute the [range][range] of absolute values of a single-precision floating-point strided array.
 
 <section class="intro">
 
@@ -40,7 +40,7 @@ var srangeabs = require( '@stdlib/stats/strided/srangeabs' );
 
 #### srangeabs( N, x, strideX )
 
-Computes the [range][range] of absolute values of a single-precision floating-point strided array `x`.
+Computes the [range][range] of absolute values of a single-precision floating-point strided array.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
@@ -55,7 +55,7 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input [`Float32Array`][@stdlib/array/float32].
--   **strideX**: index increment for `x`.
+-   **strideX**: stride length for `x`.
 
 The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the [range][range] of absolute values of every other element in `x`,
 
@@ -175,7 +175,7 @@ console.log( v );
 
 #### stdlib_strided_srangeabs( N, \*X, strideX )
 
-Computes the [range][range] of absolute values of a single-precision floating-point strided array `x`.
+Computes the [range][range] of absolute values of a single-precision floating-point strided array.
 
 ```c
 const float x[] = { 1.0f, -2.0f, 3.0f, -4.0f };

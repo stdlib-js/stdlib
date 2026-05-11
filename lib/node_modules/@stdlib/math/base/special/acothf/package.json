@@ -74,10 +74,10 @@
   "__stdlib__": {
     "scaffold": {
       "$schema": "math/base@v1.0",
-      "base_alias": "acothf",
+      "base_alias": "acoth",
       "alias": "acothf",
-      "pkg_desc": "compute the inverse hyperbolic cotangent of a single-precision floating-point number.",
-      "desc": "computes the inverse hyperbolic cotangent of a single-precision floating-point number.",
+      "pkg_desc": "compute the inverse hyperbolic cotangent of a single-precision floating-point number",
+      "desc": "computes the inverse hyperbolic cotangent of a single-precision floating-point number",
       "short_desc": "inverse hyperbolic cotangent",
       "parameters": [
         {
@@ -154,7 +154,7 @@
         "angle"
       ],
       "extra_keywords": [
-        "math.atanhf"
+        "math.atanh"
       ]
     }
   }

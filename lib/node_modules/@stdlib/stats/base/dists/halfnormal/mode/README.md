@@ -20,7 +20,7 @@ limitations under the License.
 
 # Mode
 
-> [half-normal][half-normal-distribution] distribution [mode][mode].
+> [Half-normal][half-normal-distribution] distribution [mode][mode].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -67,7 +67,7 @@ y = mode( 2.0 );
 // returns 0.0
 ```
 
-If provided `NaN` as any argument, the function returns `NaN`.
+If provided `NaN`, the function returns `NaN`.
 
 ```javascript
 var y = mode( NaN );

@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/stats/base/dists/binomial/stdev.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/stats/base/dists/binomial/variance.h"
 #include <stdint.h>
 
 /**
@@ -33,13 +33,5 @@
 * // returns 3.0
 */
 double stdlib_base_dists_binomial_stdev( const int32_t n, const double p ) {
-	if (
-		stdlib_base_is_nan( p ) ||
-		n < 0 ||
-		p < 0.0 ||
-		p > 1.0
-	) {
-		return 0.0 / 0.0;
-	}
-	return stdlib_base_sqrt( n * p * (1.0 - p) );
+	return stdlib_base_sqrt( stdlib_base_dists_binomial_variance( n, p ) );
 }

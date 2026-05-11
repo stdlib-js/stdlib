@@ -40,9 +40,7 @@
       "dependencies": [
         "@stdlib/math/base/napi/unary",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/eulergamma",
-        "@stdlib/constants/float64/sqrt-half-pi"
+        "@stdlib/math/base/special/ln"
       ]
     },
     {
@@ -59,8 +57,6 @@
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/eulergamma",
-        "@stdlib/constants/float64/sqrt-half-pi",
         "@stdlib/constants/float64/eps"
       ]
     },
@@ -77,9 +73,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/ln",
-        "@stdlib/constants/float64/eulergamma",
-        "@stdlib/constants/float64/sqrt-half-pi"
+        "@stdlib/math/base/special/ln"
       ]
     }
   ]

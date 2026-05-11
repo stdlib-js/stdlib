@@ -1,7 +1,7 @@
 
 {{alias}}( N, x, strideX )
-    Computes the range of absolute values of a single-precision
-    floating-point strided array.
+    Computes the range of absolute values of a single-precision floating-point
+    strided array.
 
     The `N` and stride parameters determine which elements in the strided array
     are accessed at runtime.
@@ -47,12 +47,12 @@
 
 
 {{alias}}.ndarray( N, x, strideX, offsetX )
-    Computes the range of absolute values of a single-precision
-    floating-point strided array using alternative indexing semantics.
+    Computes the range of absolute values of a single-precision floating-point
+    strided array using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
 
     Parameters
     ----------

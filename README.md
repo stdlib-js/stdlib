@@ -18,21 +18,7 @@ limitations under the License.
 
 -->
 
-<!-- lint disable first-heading-level -->
-
-<!-- FIXME: the following two empty sections are merely to satisfy the linter for `expected-html-sections` which cannot, atm, be turned off -->
-
-<section class="usage">
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-</section>
-
-<!-- /.examples -->
+<!-- lint disable first-heading-level expected-html-sections -->
 
 <!-- Section to include announcements. If section is included, add a horizontal rule *after* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 

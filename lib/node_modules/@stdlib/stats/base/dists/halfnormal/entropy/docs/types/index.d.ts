@@ -30,11 +30,11 @@
 *
 * @example
 * var v = entropy( 1.0 );
-* // returns ~1.014
+* // returns ~0.7258
 *
 * @example
 * var v = entropy( 5.0 );
-* // returns ~2.624
+* // returns ~2.3352
 *
 * @example
 * var v = entropy( -0.2 );

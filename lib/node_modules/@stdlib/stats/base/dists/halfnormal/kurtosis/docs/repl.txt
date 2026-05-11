@@ -1,9 +1,9 @@
 
 {{alias}}( σ )
-    Returns the excess kurtosis of a half-normal distribution with
-    scale parameter `σ`.
+    Returns the excess kurtosis of a half-normal distribution with scale
+    parameter `σ`.
 
-    If provided `NaN` as any argument, the function returns `NaN`.
+    If provided `NaN`, the function returns `NaN`.
 
     If provided `σ <= 0`, the function returns `NaN`.
 
