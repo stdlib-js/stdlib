@@ -1,0 +1,34 @@
+
+{{alias}}( x, y )
+    Evaluates the modulus function for single-precision floating-point numbers.
+
+    Parameters
+    ----------
+    x: number
+        Dividend.
+
+    y: number
+        Divisor.
+
+    Returns
+    -------
+    z: number
+        Remainder.
+
+    Examples
+    --------
+    > var y = {{alias}}( 8.0, 3.0 )
+    2.0
+    > y = {{alias}}( 9.0, 3.0 )
+    0.0
+    > y = {{alias}}( 8.9, 3.0 )
+    ~2.9
+    > y = {{alias}}( NaN, 3.0 )
+    NaN
+    > y = {{alias}}( 5.0, NaN )
+    NaN
+    > y = {{alias}}( NaN, NaN )
+    NaN
+
+    See Also
+    --------

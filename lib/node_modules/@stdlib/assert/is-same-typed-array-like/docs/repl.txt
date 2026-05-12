@@ -1,0 +1,36 @@
+
+{{alias}}( v1, v2 )
+    Tests if two arguments are both typed-array-like objects and have the same
+    values.
+
+    Parameters
+    ----------
+    v1: any
+        First input value.
+
+    v2: any
+        Second input value.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arguments are both typed-array-like
+        objects and have the same values.
+
+    Examples
+    --------
+    > var Int8Array = require( '@stdlib/array/int8' );
+    > var Int16Array = require( '@stdlib/array/int16' );
+    > var x = new Int8Array( [ 1.0, 2.0, 3.0 ] );
+    > var y = new Int16Array( [ 1.0, 2.0, 3.0 ] );
+    > var bool = {{alias}}( x, y )
+    true
+
+    > x = new Int8Array( [ 1.0, 2.0, 4.0 ] );
+    > y = new Int8Array( [ 1.0, 2.0, 3.0 ] );
+    > bool = {{alias}}( x, y )
+    false
+
+    See Also
+    --------
+

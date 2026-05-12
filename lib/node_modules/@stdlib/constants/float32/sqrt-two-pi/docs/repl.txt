@@ -1,0 +1,13 @@
+
+{{alias}}
+    Square root of the mathematical constant `π` times `2` as a single-precision
+    floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    2.5066282749176025
+
+    See Also
+    --------
+

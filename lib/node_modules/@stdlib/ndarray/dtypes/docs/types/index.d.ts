@@ -20,13 +20,15 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { DataType, DataTypeKind } from '@stdlib/types/ndarray';
+import { DataTypeString, DataTypeKind } from '@stdlib/types/ndarray';
+
+// TODO: document `DataType` instances once we've added a `DataType` type definition to `@stdlib/types`
 
 /**
-* Returns a list of ndarray data types.
+* Returns a list of ndarray data type strings.
 *
 * @param kind - data type kind
-* @returns list of ndarray data types
+* @returns list of ndarray data type strings
 *
 * @example
 * var list = dtypes();
@@ -36,7 +38,7 @@ import { DataType, DataTypeKind } from '@stdlib/types/ndarray';
 * var list = dtypes( 'floating_point' );
 * // returns [...]
 */
-declare function dtypes( kind?: DataTypeKind ): Array<DataType>;
+declare function dtypes( kind?: DataTypeKind ): Array<DataTypeString>;
 
 
 // EXPORTS //

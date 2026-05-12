@@ -45,8 +45,11 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-complex128array"
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
       ]
     },
     {
@@ -55,14 +58,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/zcopy.c"
+        "./src/zcopy.c",
+        "./src/zcopy_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
     {
       "task": "examples",
@@ -70,14 +77,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/zcopy.c"
+        "./src/zcopy.c",
+        "./src/zcopy_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
 
     {
@@ -99,8 +110,11 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-complex128array"
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
       ]
     },
     {
@@ -119,7 +133,11 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
+      ]
     },
     {
       "task": "examples",
@@ -137,7 +155,11 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
+      ]
     },
 
     {
@@ -157,8 +179,11 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-complex128array"
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
       ]
     },
     {
@@ -167,14 +192,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/zcopy.c"
+        "./src/zcopy.c",
+        "./src/zcopy_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
     {
       "task": "examples",
@@ -182,14 +211,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/zcopy.c"
+        "./src/zcopy.c",
+        "./src/zcopy_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
 
     {
@@ -210,8 +243,11 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-complex128array"
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
       ]
     },
     {
@@ -229,7 +265,11 @@
         "-lblas"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
+      ]
     },
     {
       "task": "examples",
@@ -246,7 +286,11 @@
         "-lblas"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
+      ]
     },
 
     {
@@ -268,8 +312,11 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-complex128array"
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
       ]
     },
     {
@@ -288,7 +335,11 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
+      ]
     },
     {
       "task": "examples",
@@ -306,7 +357,11 @@
         "-lpthread"
       ],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float64/ctor"
+      ]
     },
 
     {
@@ -315,7 +370,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/zcopy.c"
+        "./src/zcopy.c",
+        "./src/zcopy_ndarray.c"
       ],
       "include": [
         "./include"
@@ -325,8 +381,10 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
+        "@stdlib/blas/base/shared",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-complex128array"
+        "@stdlib/napi/argv-strided-complex128array",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -335,14 +393,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/zcopy.c"
+        "./src/zcopy.c",
+        "./src/zcopy_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
     {
       "task": "examples",
@@ -350,14 +412,18 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/zcopy.c"
+        "./src/zcopy.c",
+        "./src/zcopy_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     },
 
     {
@@ -366,14 +432,18 @@
       "blas": "",
       "wasm": true,
       "src": [
-        "./src/zcopy.c"
+        "./src/zcopy.c",
+        "./src/zcopy_ndarray.c"
       ],
       "include": [
         "./include"
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
+      ]
     }
   ]
 }

@@ -9,9 +9,9 @@
     When invoked, both the predicate function and the function to apply are
     provided three arguments:
 
-    - `value`: collection value
-    - `index`: collection index
-    - `collection`: the input collection
+    - value: collection value.
+    - index: collection index.
+    - collection: the input collection.
 
     If provided an empty collection, both `value` and `index` are `undefined`.
 

@@ -28,7 +28,7 @@ endif
 # GENERAL VARIABLES #
 
 # Define supported Node.js versions:
-NODE_VERSIONS ?= '0.10 0.12 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 node'
+NODE_VERSIONS ?= '0.10 0.12 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 node'
 
 # Define a license SPDX identifier whitelist:
 LICENSES_WHITELIST ?= 'Apache-2.0,Artistic-2.0,BSD-2-Clause,BSD-3-Clause,BSL-1.0,CC0-1.0,ISC,MIT,MPL-2.0,Unlicense,WTFPL'
@@ -44,6 +44,17 @@ ifeq ($(FAST_FAIL), 0)
 	FAIL_FAST := false
 else
 	FAIL_FAST := true
+endif
+endif
+
+# Indicate whether to build native add-ons:
+ifndef BUILD_ADDONS
+	BUILD_NATIVE_ADDONS := false
+else
+ifeq ($(BUILD_ADDONS), 1)
+	BUILD_NATIVE_ADDONS := true
+else
+	BUILD_NATIVE_ADDONS := false
 endif
 endif
 
@@ -216,6 +227,12 @@ GIT_BRANCH ?= $(GIT) rev-parse --abbrev-ref HEAD
 # Define the command for CMake:
 CMAKE ?= cmake
 
+# Define the command for clang-format:
+CLANG_FORMAT ?= $(DEPS_LLVM_CLANG_FORMAT)
+
+# Define the command for clang-tidy:
+CLANG_TIDY ?= $(DEPS_LLVM_CLANG_TIDY)
+
 # Determine the `open` command:
 ifeq ($(OS), Darwin)
 	OPEN ?= open
@@ -385,14 +402,10 @@ endif
 
 # EXTERNAL DEPENDENCIES #
 
-# Define the BLAS library to use:
-BLAS ?=
-
-# Define the path to the BLAS library (used for includes and linking):
-BLAS_DIR ?=
-
 # Define the path for building dependencies:
 DEPS_BUILD_DIR ?= $(DEPS_DIR)/build
+
+# Boost...
 
 # Define the Boost version:
 DEPS_BOOST_VERSION ?= 1.69.0
@@ -402,6 +415,19 @@ deps_boost_version_slug := $(subst .,_,$(DEPS_BOOST_VERSION))
 
 # Define the output path when building Boost:
 DEPS_BOOST_BUILD_OUT ?= $(DEPS_BUILD_DIR)/boost_$(deps_boost_version_slug)
+
+# BLAS (general)...
+
+# Define the BLAS library to use:
+BLAS ?=
+
+# Define the path to the BLAS library (used for includes and linking):
+BLAS_DIR ?=
+
+# Define the primary integer type to use in BLAS routines:
+CBLAS_INT ?=
+
+# OpenBLAS...
 
 # Define the OpenBLAS version:
 DEPS_OPENBLAS_VERSION ?= 0.3.27
@@ -490,6 +516,42 @@ ifeq (, $(BLAS_DIR))
 endif
 endif
 
+# LLVM...
+
+# Define the output path when building LLVM:
+DEPS_LLVM_BUILD_OUT ?= $(DEPS_BUILD_DIR)/llvm
+
+# Define the LLVM version:
+DEPS_LLVM_VERSION ?=
+
+# Define the path to the LLVM clang compiler:
+DEPS_LLVM_CLANG ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/clang
+
+# Define the path to the clang format utility:
+DEPS_LLVM_CLANG_FORMAT ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/clang-format
+
+# Define the path to the clang tidy utility:
+DEPS_LLVM_CLANG_TIDY ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/clang-tidy
+
+# Define the path to the LLVM archiver:
+DEPS_LLVM_AR ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/llvm-ar
+
+# Define the path to the LLVM tool for listing LLVM bitcode and object file symbol tables:
+DEPS_LLVM_NM ?= $(DEPS_LLVM_BUILD_OUT)/build/bin/llvm-nm
+
+# WebAssembly System Interface (WASI)...
+
+# Define the output path when building WASI libc:
+DEPS_WASI_LIBC_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wasi-libc
+
+# Define the WASI libc version:
+DEPS_WASI_LIBC_VERSION ?=
+
+# Define the path to WASI libc sysroot:
+DEPS_WASI_LIBC_SYSROOT ?= $(DEPS_WASI_LIBC_BUILD_OUT)/sysroot
+
+# EMSDK...
+
 # Define the output path when building the Emscripten SDK:
 DEPS_EMSDK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
 
@@ -497,7 +559,7 @@ DEPS_EMSDK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/emsdk
 DEPS_EMSDK_VERSION ?= latest
 
 # Define the path to Emscripten:
-DEPS_EMSDK_EMSCRIPTEN ?= $(DEPS_EMSDK_BUILD_OUT)/emscripten/$(DEPS_EMSDK_VERSION)
+DEPS_EMSDK_EMSCRIPTEN ?= $(DEPS_EMSDK_BUILD_OUT)/upstream/emscripten
 
 # Define the path to the Emscripten C compiler:
 DEPS_EMSDK_EMSCRIPTEN_EMCC ?= $(DEPS_EMSDK_EMSCRIPTEN)/emcc
@@ -505,8 +567,8 @@ DEPS_EMSDK_EMSCRIPTEN_EMCC ?= $(DEPS_EMSDK_EMSCRIPTEN)/emcc
 # Define the path to the Emscripten C++ compiler:
 DEPS_EMSDK_EMSCRIPTEN_EMXX ?= $(DEPS_EMSDK_EMSCRIPTEN)/em++
 
-# Define the Binaryen version:
-DEPS_EMSDK_BINARYEN_VERSION ?= main
+# Define the path to the utility for converting WebAssembly binary files to JavaScript:
+DEPS_EMSDK_EMSCRIPTEN_WASM2JS ?= $(DEPS_EMSDK_BUILD_OUT)/upstream/bin/wasm2js
 
 # Define the output path when building the WebAssembly Binary Toolkit (WABT):
 DEPS_WABT_BUILD_OUT ?= $(DEPS_BUILD_DIR)/wabt
@@ -517,8 +579,7 @@ DEPS_WABT_WASM2WAT ?= $(DEPS_WABT_BUILD_OUT)/build/wasm2wat
 # Define the path to the utility for converting WebAssembly text format files to the WebAssembly binary format:
 DEPS_WABT_WAT2WASM ?= $(DEPS_WABT_BUILD_OUT)/build/wat2wasm
 
-# Define the path to the utility for linking (merging) multiple WebAssembly files:
-DEPS_WABT_WASM_LINK ?= $(DEPS_WABT_BUILD_OUT)/build/wasm-link
+# Cephes...
 
 # Define the Cephes distribution to build (netlib, moshier, cephes-2.8):
 DEPS_CEPHES_DIST ?= moshier
@@ -580,6 +641,8 @@ else
 endif
 endif
 
+# Electron...
+
 # Define the Electron version:
 DEPS_ELECTRON_VERSION ?= 25.3.1
 
@@ -594,6 +657,8 @@ DEPS_ELECTRON_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_
 
 # Host platform:
 DEPS_ELECTRON_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
+
+# Shellcheck...
 
 # Define the shellcheck version:
 DEPS_SHELLCHECK_VERSION ?= 0.8.0
@@ -610,8 +675,10 @@ DEPS_SHELLCHECK_ARCH := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOS
 # Host platform:
 DEPS_SHELLCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
+# cppcheck...
+
 # Define the cppcheck version:
-DEPS_CPPCHECK_VERSION ?= 2.9
+DEPS_CPPCHECK_VERSION ?= 2.15.0
 
 # Generate a version slug:
 deps_cppcheck_version_slug := $(subst .,_,$(DEPS_CPPCHECK_VERSION))
@@ -622,8 +689,13 @@ DEPS_CPPCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cppcheck_$(deps_cppcheck_version_sl
 # Host platform:
 DEPS_CPPCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
 
-# API key for the stdlib scaffolding service:
-ifneq ($(wildcard .stdlibrc),)
-	include .stdlibrc
-	export SCAFFOLD_API_KEY
-endif
+# FFTPACK...
+
+# Define the PFFFT version:
+DEPS_FFTPACK_VERSION ?= 1.1.0
+
+# Generate a version slug:
+deps_fftpack_version_slug := $(subst .,_,$(DEPS_FFTPACK_VERSION))
+
+# Define the output path when building FFTPACK:
+DEPS_FFTPACK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/pffft-$(DEPS_FFTPACK_VERSION)

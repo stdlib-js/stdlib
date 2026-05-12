@@ -22,7 +22,7 @@ limitations under the License.
 
 > Perform the matrix-vector operation `y = α*A*x + β*y` where `α` and `β` are scalars, `x` and `y` are `N` element vectors and, `A` is an `N` by `N` symmetric matrix supplied in packed form.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 

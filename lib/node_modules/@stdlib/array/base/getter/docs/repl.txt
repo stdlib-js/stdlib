@@ -5,8 +5,8 @@
 
     An accessor function accepts the following arguments:
 
-    - arr: input array
-    - idx: element index
+    - arr: input array.
+    - idx: element index.
 
     If provided an unsupported `dtype`, the function returns a default accessor
     function for accessing elements from any indexed array-like object.

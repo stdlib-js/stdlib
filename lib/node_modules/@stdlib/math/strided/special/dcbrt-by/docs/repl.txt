@@ -13,10 +13,10 @@
 
     The callback function is provided four arguments:
 
-    - value: array element
-    - idx: iteration index
-    - indices: strided array indices (offset + idx*stride)
-    - arrays: input and output arrays
+    - value: array element.
+    - idx: iteration index.
+    - indices: strided array indices (offset + idx*stride).
+    - arrays: input and output arrays.
 
     If the callback function does not return any value (or equivalently,
     explicitly returns `undefined`), the value is ignored.
@@ -86,10 +86,10 @@
 
     The callback function is provided four arguments:
 
-    - value: array element
-    - idx: iteration index
-    - indices: strided array indices (offset + idx*stride)
-    - arrays: input and output arrays
+    - value: array element.
+    - idx: iteration index.
+    - indices: strided array indices (offset + idx*stride).
+    - arrays: input and output arrays.
 
     If the callback function does not return any value (or equivalently,
     explicitly returns `undefined`), the value is ignored.

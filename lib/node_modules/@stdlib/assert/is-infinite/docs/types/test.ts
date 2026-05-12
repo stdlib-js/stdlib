@@ -46,7 +46,6 @@ import isInfinite = require( './index' );
 	isInfinite.isPrimitive( 1 / 0, 123 ); // $ExpectError
 }
 
-
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers

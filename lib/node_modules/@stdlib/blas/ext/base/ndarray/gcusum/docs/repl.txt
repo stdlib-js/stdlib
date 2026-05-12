@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Computes the cumulative sum of a one-dimensional ndarray.
+
+    If provided an empty input ndarray, the function returns the output ndarray
+    unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+        - a zero-dimensional ndarray containing the initial sum.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, -2.0, 2.0 ], 'generic' );
+    > var y = {{alias:@stdlib/ndarray/vector/ctor}}( [ 0.0, 0.0, 0.0 ], 'generic' );
+    > var s = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, { 'dtype': 'generic' } );
+    > {{alias}}( [ x, y, s ] )
+    <ndarray>[ 1.0, -1.0, 1.0 ]
+
+    See Also
+    --------
+

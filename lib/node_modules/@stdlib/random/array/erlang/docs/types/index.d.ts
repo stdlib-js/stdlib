@@ -189,7 +189,7 @@ interface Random extends PRNG {
 	* var x = zeros( 10, 'float64' );
 	* // returns <Float64Array>
 	*
-	* var out = erlang( 2, 5.0, out );
+	* var out = erlang( 2, 5.0, x );
 	* // returns <Float64Array>
 	*
 	* var bool = ( out === x );

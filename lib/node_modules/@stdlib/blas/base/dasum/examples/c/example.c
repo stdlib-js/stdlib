@@ -34,4 +34,10 @@ int main( void ) {
 
 	// Print the result:
 	printf( "sum: %lf\n", sum );
+
+	// Compute the sum of absolute values:
+	sum = c_dasum_ndarray( N, x, -strideX, N-1 );
+
+	// Print the result:
+	printf( "sum: %lf\n", sum );
 }

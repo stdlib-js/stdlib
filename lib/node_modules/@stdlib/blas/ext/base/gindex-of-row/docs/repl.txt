@@ -1,0 +1,103 @@
+
+{{alias}}( order, M, N, A, LDA, x, strideX )
+    Returns the index of the first row in an input matrix which has the same
+    elements as a provided search vector.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If the function is provided an empty matrix or if the function is unable to
+    find a matching row, the function returns `-1` (i.e., an invalid index).
+
+    Parameters
+    ----------
+    order: string
+        Row-major (C-style) or column-major (Fortran-style) order. Must be
+        either 'row-major' or 'column-major'.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    A: Array|TypedArray
+        Input matrix `A`.
+
+    LDA: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    x: Array|TypedArray
+        Search vector.
+
+    strideX:
+        Stride length for `x`.
+
+    Returns
+    -------
+    out: integer
+        Row index.
+
+    Examples
+    --------
+    > var A = [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ];
+    > var x = [ 3.0, 4.0 ];
+    > {{alias}}( 'row-major', 2, 2, A, 2, x, 1 )
+    1
+
+
+{{alias}}.ndarray( M, N, A, strideA1, strideA2, offsetA, x, strideX, offsetX )
+    Returns the index of the first row in an input matrix which has the same
+    elements as a provided search vector using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, offset parameters support indexing semantics based on starting
+    indices.
+
+    If the method is provided an empty matrix or if the method is unable to find
+    a matching row, the method returns `-1` (i.e., an invalid index).
+
+    Parameters
+    ----------
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    A: Array|TypedArray
+        Input matrix `A`.
+
+    strideA1: integer
+        Stride of the first dimension of `A`.
+
+    strideA2: integer
+        Stride of the second dimension of `A`.
+
+    offsetA: integer
+        Starting index for `A`.
+
+    x: Array|TypedArray
+        Search vector.
+
+    strideX:
+        Stride length for `x`.
+
+    offsetX:
+        Starting index for `x`.
+
+    Returns
+    -------
+    out: integer
+        Row index.
+
+    Examples
+    --------
+    > var A =[ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ];
+    > var x = [ 3.0, 4.0 ];
+    > {{alias}}.ndarray( 2, 2, A, 2, 1, 0, x, 1, 0 )
+    1
+
+    See Also
+    --------

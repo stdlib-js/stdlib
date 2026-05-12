@@ -1,0 +1,33 @@
+
+{{alias}}( x, y )
+    Returns the maximum value of two single-precision floating-point numbers,
+    ignoring NaN.
+
+    If one operand is NaN, the other operand is always returned.
+
+    Parameters
+    ----------
+    x: number
+        First number.
+
+    y: number
+        Second number.
+
+    Returns
+    -------
+    out: number
+        Maximum value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 3.14, 4.2 )
+    4.2
+    > v = {{alias}}( 3.14, NaN )
+    3.14
+    > v = {{alias}}( NaN, 4.2 )
+    4.2
+    > v = {{alias}}( NaN, NaN )
+    NaN
+
+    See Also
+    --------

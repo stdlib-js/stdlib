@@ -46,6 +46,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -58,7 +60,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scasum.c"
+        "./src/scasum.c",
+        "./src/scasum_ndarray.c"
       ],
       "include": [
         "./include"
@@ -67,7 +70,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -76,7 +80,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scasum.c"
+        "./src/scasum.c",
+        "./src/scasum_ndarray.c"
       ],
       "include": [
         "./include"
@@ -85,7 +90,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -108,6 +114,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -131,7 +139,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
     {
@@ -151,7 +161,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
 
@@ -173,6 +185,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -185,7 +199,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scasum.c"
+        "./src/scasum.c",
+        "./src/scasum_ndarray.c"
       ],
       "include": [
         "./include"
@@ -194,7 +209,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -203,7 +219,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scasum.c"
+        "./src/scasum.c",
+        "./src/scasum_ndarray.c"
       ],
       "include": [
         "./include"
@@ -212,7 +229,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -234,6 +252,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -256,7 +276,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
     {
@@ -275,7 +297,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
 
@@ -298,6 +322,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -321,7 +347,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/strided/base/min-view-buffer-index"
       ]
     },
     {
@@ -351,7 +379,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scasum.c"
+        "./src/scasum.c",
+        "./src/scasum_ndarray.c"
       ],
       "include": [
         "./include"
@@ -361,6 +390,7 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -374,7 +404,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scasum.c"
+        "./src/scasum.c",
+        "./src/scasum_ndarray.c"
       ],
       "include": [
         "./include"
@@ -383,7 +414,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
@@ -392,7 +424,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/scasum.c"
+        "./src/scasum.c",
+        "./src/scasum_ndarray.c"
       ],
       "include": [
         "./include"
@@ -401,7 +434,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
 
@@ -411,7 +445,8 @@
       "blas": "",
       "wasm": true,
       "src": [
-        "./src/scasum.c"
+        "./src/scasum.c",
+        "./src/scasum_ndarray.c"
       ],
       "include": [
         "./include"
@@ -420,7 +455,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
-        "@stdlib/math/base/special/absf"
+        "@stdlib/math/base/special/absf",
+        "@stdlib/strided/base/stride2offset"
       ]
     }
   ]

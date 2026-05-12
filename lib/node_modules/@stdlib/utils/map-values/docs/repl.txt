@@ -4,9 +4,9 @@
 
     The transform function is provided three arguments:
 
-    - `value`: object value corresponding to `key`
-    - `key`: object key
-    - `obj`: the input object
+    - value: object value corresponding to `key`.
+    - key: object key.
+    - obj: the input object.
 
     The function only maps values from own properties. Hence, the function does
     not map inherited properties.

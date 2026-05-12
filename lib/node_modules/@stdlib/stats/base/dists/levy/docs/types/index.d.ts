@@ -115,7 +115,7 @@ interface Namespace {
 	* // returns ~-0.538
 	*
 	* y = ns.logcdf( 0.3, 0.0, 3.0 );
-	* // returns ~-6.215
+	* // returns ~-6.4596
 	*
 	* var mylogcdf = ns.logcdf.factory( 2.0, 3.0 );
 	* var y = mylogcdf( 100.0 );
@@ -274,7 +274,7 @@ interface Namespace {
 	*
 	* @example
 	* var y = ns.quantile( 0.8, 0.0, 1.0 );
-	* // returns ~1.386
+	* // returns ~15.58
 	*
 	* var myQuantile = ns.quantile.factory( 10.0, 2.0 );
 	*

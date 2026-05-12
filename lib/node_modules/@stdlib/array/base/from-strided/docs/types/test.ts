@@ -25,7 +25,7 @@ import strided2array = require( './index' );
 {
 	const x = [ 1.0, 2.0, 3.0, 4.0 ];
 
-	strided2array( x.length, x, 1, 0 ); // $ExpectType Array<number>
+	strided2array( x.length, x, 1, 0 ); // $ExpectType number[]
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...

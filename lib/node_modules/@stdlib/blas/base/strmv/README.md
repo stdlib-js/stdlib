@@ -22,7 +22,7 @@ limitations under the License.
 
 > Perform one of the matrix-vector operations `x = A*x` or `x = A^T*x`.
 
-<section class = "usage">
+<section class="usage">
 
 ## Usage
 

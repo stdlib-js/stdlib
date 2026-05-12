@@ -27,11 +27,13 @@
 #
 # Environment Variables:
 #
-#   OS              Host operating system. Default: `linux`.
 #   NODE            Command for running Node.js. Default: `node`.
 #   NODE_PATH       Path for resolving node modules.
-#   EMCCC_COMPILER  Emscripten C compiler. Default: `emcc`.
-#   WASM2WAT        Command for converting wasm binary format to text format. Default. `wasm2wat`.
+#   CLANG_COMPILER  LLVM Clang compiler. Default: `clang`.
+#   CLANG_SYSROOT   Path to a C standard library.
+#   EMCC_COMPILER   Emscripten C compiler. Default: `emcc`.
+#   WASM2WAT        Command for converting WebAssembly binary format to text format. Default. `wasm2wat`.
+#   WASM2JS         Command for converting WebAssembly binary format to JavaScript. Default. `wasm2js`.
 #   SRC_FOLDER      Folder containing source files. Default: `src`.
 #   INCLUDE         Includes (e.g., `-I /foo/bar -I /a/b`).
 #   SOURCE_FILES    Source file list.
@@ -56,6 +58,12 @@ fi
 # Define the node path:
 node_path="${NODE_PATH}"
 
+# Define the path to the LLVM `clang` compiler:
+clang_compiler="${CLANG_COMPILER}"
+if [[ -z "${clang_compiler}" ]]; then
+	clang_compiler='clang'
+fi
+
 # Define the path to the Emscripten `emcc` compiler:
 emcc_compiler="${EMCC_COMPILER}"
 if [[ -z "${emcc_compiler}" ]]; then
@@ -68,11 +76,20 @@ if [[ -z "${wasm_to_wat}" ]]; then
 	wasm_to_wat='wasm2wat'
 fi
 
+# Define the path to an executable for converting a WebAssembly binary to JavaScript:
+wasm_to_js="${WASM2JS}"
+if [[ -z "${wasm_to_js}" ]]; then
+	wasm_to_js='wasm2js'
+fi
+
 # Define the folder containing source files:
 src_folder="${SRC_FOLDER}"
 if [[ -z "${src_folder}" ]]; then
 	src_folder='src'
 fi
+
+# Define a path to a C standard library:
+clang_sysroot="${CLANG_SYSROOT}"
 
 # Define a list of external `include` directories:
 include="${INCLUDE}"
@@ -123,7 +140,7 @@ resolve_includes() {
 	local script
 	local opts
 
-	opts="{'wasm':true}"
+	opts="{'wasm':true,'os':''}"
 
 	# Generate the script for resolving external include directories:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).include; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += '-I '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -142,7 +159,7 @@ resolve_source_files() {
 	local script
 	local opts
 
-	opts="{'wasm':true}"
+	opts="{'wasm':true,'os':''}"
 
 	# Generate the script for resolving external source files:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).src; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); if (p.indexOf('$1') === 0) {continue;}; str += p+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -161,7 +178,7 @@ resolve_libraries() {
 	local script
 	local opts
 
-	opts="{'wasm':true}"
+	opts="{'wasm':true,'os':''}"
 
 	# Generate the script for resolving libraries:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libraries; var str = ''; for (var i = 0; i < arr.length; i++){str += arr[i]+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -180,7 +197,7 @@ resolve_libpaths() {
 	local script
 	local opts
 
-	opts="{'wasm':true}"
+	opts="{'wasm':true,'os':''}"
 
 	# Generate the script for resolving library paths:
 	script='"'"var path = require('path'); var arr = require('@stdlib/utils/library-manifest')(path.join('$1','manifest.json'),${opts},{'basedir':'$1','paths':'posix'}).libpath; var str = ''; for (var i = 0; i < arr.length; i++){var p = path.resolve('$1', arr[i]); str += '-L '+p+' ';}; console.log(str.substring(0, str.length-1));"'"'
@@ -195,7 +212,7 @@ resolve_libpaths() {
 #
 # $1 - source directory
 compile() {
-	cd "$1" && EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" make wasm 2>&1
+	cd "$1" && CLANG_COMPILER="${clang_compiler}" CLANG_SYSROOT="${clang_sysroot}" EMCC_COMPILER="${emcc_compiler}" WASM2WAT="${wasm_to_wat}" WASM2JS="${wasm_to_js}" INCLUDE="${include}" SOURCE_FILES="${source_files}" LIBRARIES="${libraries}" LIBPATH="${libpath}" make wasm 2>&1
 	if [[ "$?" -ne 0 ]]; then
 		echo 'Error when attempting to compile WebAssembly.' >&2
 		return 1

@@ -47,7 +47,7 @@
 * int64_t max = out[ 1 ];
 * // returns 99
 */
-int8_t stdlib_ndarray_minmax_view_buffer_index( int64_t ndims, int64_t *shape, int64_t *strides, int64_t offset, int64_t *out ) {
+int8_t stdlib_ndarray_minmax_view_buffer_index( const int64_t ndims, const int64_t *shape, const int64_t *strides, const int64_t offset, int64_t *out ) {
 	int64_t min;
 	int64_t max;
 	int64_t s;

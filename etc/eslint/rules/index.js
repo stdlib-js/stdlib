@@ -47,7 +47,7 @@ var rules = merge(
 	require( './nodejs.js' ),
 	require( './style.js' ),
 	require( './es2015.js' ),
-	require( './stdlib.js')
+	require( './stdlib.js' )
 );
 
 

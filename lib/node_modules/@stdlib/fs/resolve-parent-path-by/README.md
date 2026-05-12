@@ -81,8 +81,8 @@ function onPath( error, path ) {
 
 When invoked, the `predicate` function is provided two arguments:
 
--   `path`: a resolved path.
--   `next`: a callback which should be called once the `predicate` function has finished processing a resolved path.
+-   **path**: a resolved path.
+-   **next**: a callback which should be called once the `predicate` function has finished processing a resolved path.
 
 If a `predicate` function calls the `next` callback with a truthy second argument, the function stops processing any additional paths and returns the resolved path as the test result.
 
@@ -105,7 +105,7 @@ The function accepts the same `options` as [`resolveParentPathBy()`](#resolve-pa
 
 When invoked, the `predicate` function is provided one argument:
 
--   `path`: a resolved path.
+-   **path**: a resolved path.
 
 The function immediately returns upon encountering a truthy `predicate` function return value.
 

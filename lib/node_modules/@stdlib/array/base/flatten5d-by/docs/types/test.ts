@@ -21,7 +21,7 @@ import flatten5dBy = require( './index' );
 /**
 * Identity function.
 *
-* @param v - input value
+* @param value - input value
 * @returns input value
 */
 function identity<T>( value: T ): T {

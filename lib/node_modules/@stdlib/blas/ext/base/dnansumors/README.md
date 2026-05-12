@@ -36,7 +36,7 @@ limitations under the License.
 var dnansumors = require( '@stdlib/blas/ext/base/dnansumors' );
 ```
 
-#### dnansumors( N, x, stride )
+#### dnansumors( N, x, strideX )
 
 Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using ordinary recursive summation.
 
@@ -44,9 +44,8 @@ Computes the sum of double-precision floating-point strided array elements, igno
 var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
-var N = x.length;
 
-var v = dnansumors( N, x, 1 );
+var v = dnansumors( x.length, x, 1 );
 // returns 1.0
 ```
 
@@ -54,7 +53,7 @@ The function has the following parameters:
 
 -   **N**: number of indexed elements.
 -   **x**: input [`Float64Array`][@stdlib/array/float64].
--   **stride**: index increment for `x`.
+-   **strideX**: stride length for `x`.
 
 The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compute the sum of every other element in `x`,
 
@@ -82,7 +81,7 @@ var v = dnansumors( 4, x1, 2 );
 // returns 5.0
 ```
 
-#### dnansumors.ndarray( N, x, stride, offset )
+#### dnansumors.ndarray( N, x, strideX, offsetX )
 
 Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using ordinary recursive summation and alternative indexing semantics.
 
@@ -91,15 +90,15 @@ var Float64Array = require( '@stdlib/array/float64' );
 
 var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 
-var v = dnansumors.ndarray( 4, x, 1, 0 );
+var v = dnansumors.ndarray( x.length, x, 1, 0 );
 // returns 1.0
 ```
 
 The function has the following additional parameters:
 
--   **offset**: starting index for `x`.
+-   **offsetX**: starting index for `x`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the sum of every other value in `x` starting from the second value
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to calculate the sum of every other element starting from the second element,
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -154,6 +153,123 @@ console.log( v );
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/blas/ext/base/dnansumors.h"
+```
+
+#### stdlib_strided_dnansumors( N, \*X, strideX )
+
+Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using ordinary recursive summation.
+
+```c
+const double x[] = { 1.0, 2.0, 0.0/0.0, 4.0 };
+
+double v = stdlib_strided_dnansumors( 4, x, 1 );
+// returns 7.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+
+```c
+double stdlib_strided_dnansumors( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
+```
+
+#### stdlib_strided_dnansumors_ndarray( N, \*X, strideX, offsetX )
+
+Computes the sum of double-precision floating-point strided array elements, ignoring `NaN` values and using ordinary recursive summation and alternative indexing semantics.
+
+```c
+const double x[] = { 1.0, 2.0, 0.0/0.0, 4.0 };
+
+double v = stdlib_strided_dnansumors_ndarray( 4, x, 1, 0 );
+// returns 7.0
+```
+
+The function accepts the following arguments:
+
+-   **N**: `[in] CBLAS_INT` number of indexed elements.
+-   **X**: `[in] double*` input array.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
+
+```c
+double stdlib_strided_dnansumors_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/blas/ext/base/dnansumors.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Create a strided array:
+    const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 0.0/0.0, 0.0/0.0 };
+
+    // Specify the number of elements:
+    const int N = 5;
+
+    // Specify the stride length:
+    const int strideX = 2;
+
+    // Compute the sum:
+    double v = stdlib_strided_dnansumors( N, x, strideX );
+
+    // Print the result:
+    printf( "sum: %lf\n", v );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

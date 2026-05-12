@@ -65,5 +65,85 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "csc",
+      "alias": "csc",
+      "pkg_desc": "evaluate the cosecant of a double-precision floating-point number (in radians)",
+      "desc": "evaluates the cosecant of a double-precision floating-point number (in radians)",
+      "short_desc": "cosecant",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in radians)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": -5e-324
+            },
+            {
+              "min": 5e-324,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.5,
+              50
+            ]
+          },
+          "example_values": [
+            -37.41,
+            12.86,
+            -0.77,
+            0.69,
+            -19.23,
+            4.03,
+            -6.58,
+            28.17,
+            -1.42,
+            2.61,
+            -15.37,
+            10.92,
+            -3.84,
+            7.46,
+            -9.73,
+            18.65,
+            -22.09,
+            13.74,
+            -2.53,
+            41.28
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "cosecant",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "sin",
+        "sine",
+        "cosec",
+        "csc"
+      ],
+      "extra_keywords": [
+        "math.sin"
+      ]
+    }
+  }
 }
