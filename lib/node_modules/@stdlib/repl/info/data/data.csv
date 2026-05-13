@@ -3821,7 +3821,7 @@ isTriangularNumber.isPrimitive,"\nisTriangularNumber.isPrimitive( value:any )\n 
 isTriangularNumber.isObject,"\nisTriangularNumber.isObject( value:any )\n    Tests if a value is a number object having a value which is a triangular\n    number.\n"
 isTruthy,"\nisTruthy( value:any )\n    Tests if a value is a value which translates to `true` when evaluated in a\n    boolean context.\n"
 isTruthyArray,"\nisTruthyArray( value:any )\n    Tests if a value is an array-like object containing only truthy values.\n"
-isTypedArray,"\nisTypedArray( value:any )\n    Tests if a value is a typed array.\n"
+isTypedArray,"\nisTypedArray( value:any )\n    Tests if a value is a built-in typed array.\n"
 isTypedArrayLength,"\nisTypedArrayLength( value:any )\n    Tests if a value is a valid typed array length.\n"
 isTypedArrayLike,"\nisTypedArrayLike( value:any )\n    Tests if a value is typed-array-like.\n"
 isTypeError,"\nisTypeError( value:any )\n    Tests if a value is a TypeError object.\n"
