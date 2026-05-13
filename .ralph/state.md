@@ -45,10 +45,37 @@ The package was well-implemented and mostly complete. One gap was identified:
 
 ## Iteration 1
 
-### Goal: Implement — fix missing TypeScript namespace declaration for onesLike
+### Goal: Implement — fix missing TypeScript namespace declaration for onesLike + fix benchmarks
 
 ### Review Findings
-(populated after sub-agent dispatch)
+
+#### Sub-agent A — Correctness (no blockers/majors)
+- MINOR: `See Also` in `repl.txt` is empty — consistent with zeros-like, auto-populated by tooling. **Disputed/no action.**
+- MINOR: `order` validation is deferred to the ndarray constructor — identical to zeros-like. **Disputed/no action.**
+
+#### Sub-agent B — Test Quality (many suggestions, all pre-existing in zeros-like)
+- Tests are a faithful port of zeros-like, which is the correct approach for a "review" issue.
+- Missing tests for column-major inferred order, dtype-only/order-only overrides, strides verification, default readonly flag, etc.
+- **Decision**: These gaps exist equally in zeros-like (parent pattern). Logging as minor/pattern; no action required for this PR.
+
+#### Sub-agent C — Code Quality & Conventions
+- **MAJOR**: All 13 benchmark files used `@stdlib/ndarray/zeros` (high-level, options object) instead of `@stdlib/ndarray/base/zeros` (positional args). **FIXED in commit ff38a6c32.**
+- MINOR: README `<section class="related">` is empty — auto-populated by tooling. No action.
+- Everything else verified correct.
+
+#### Sub-agent D — Security & Robustness
+(pending)
+
+#### Sub-agent E — Issue-Scope Auditor (no issues)
+- Diff does exactly what the issue asked for, nothing more, nothing less.
+
+### Decisions
+- Test gaps are pre-existing in zeros-like and not introduced by this PR. Parity with zeros-like is correct.
+- The `fill(out, 1.0)` before returning a readonly array is correct per sub-agent A analysis.
+
+### Fixes Applied This Iteration
+1. Added `onesLike` to `lib/node_modules/@stdlib/ndarray/docs/types/index.d.ts` (commit 279ba8c94)
+2. Fixed all 13 benchmark files to use `@stdlib/ndarray/base/zeros` with positional args (commit ff38a6c32)
 
 ## Open Questions
 None.
