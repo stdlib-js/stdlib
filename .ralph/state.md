@@ -90,7 +90,12 @@ The primary gap is test coverage. The implementation itself is correct and consi
 - All other files were reviewed and found correct (no changes needed to main.js, docs, types, README, benchmark, examples, package.json)
 
 #### Convention Reviewer (a6bd838221cc3c1cf)
-(pending)
+- MEDIUM: JSDoc `buffer` type `{Collection}` → fixed to `{(ArrayLikeObject|TypedArray|Buffer)}` to match `ndarray/base/ctor`
+- MEDIUM: JSDoc `dtype` type `{*}` — DISPUTED: consistent with non-validating base packages (`buffer`, `empty`, `full`, `bytes-per-element`); the `{string}` pattern is for validating packages (ctor validates dtype)
+- LOW: README eslint comment ordering reversed → fixed (`no-undef` before `eslint-disable max-len`)
+- LOW: Use `isPlainObject` instead of raw prototype check → fixed
+- INFORMATIONAL: Copyright year 2026 — correct for new package, no change needed
+- INFORMATIONAL: Missing utility/util keywords — consistent with `ndarray/base/ctor`, no change needed
 
 ### Findings Triage
 - Blocker: None
