@@ -64,7 +64,13 @@ The package was well-implemented and mostly complete. One gap was identified:
 - Everything else verified correct.
 
 #### Sub-agent D — Security & Robustness
-(pending)
+- **MAJOR (reclassified from sub-agent's BLOCKER)**: `order` option not validated inline — deferred to ndarray constructor, producing unhelpful "Sixth argument" error. **FIXED in commit 46f874e4a** by adding `isOrder` check with proper message.
+- A1 (Advisory): `numel` overflow — pre-existing library-wide issue in numel/buffer; not actionable in this PR. **Logged.**
+- A2 (Advisory): `fill(out, 1.0)` bypasses READONLY flag — intentional, correct design. **Disputed/no action.**
+- A3 (Advisory): shape element safe-integer bound — pre-existing across all ndarray allocators. **Logged.**
+- A4 (Advisory): inconsistent error origin for `mode`/`submode` vs `order` — **FIXED by A's fix.**
+- A5 (Advisory): `DTYPES` array not frozen — pre-existing pattern. **Logged.**
+- Prototype pollution, FP hazard, race conditions, error swallowing: all verified clean.
 
 #### Sub-agent E — Issue-Scope Auditor (no issues)
 - Diff does exactly what the issue asked for, nothing more, nothing less.
@@ -76,6 +82,16 @@ The package was well-implemented and mostly complete. One gap was identified:
 ### Fixes Applied This Iteration
 1. Added `onesLike` to `lib/node_modules/@stdlib/ndarray/docs/types/index.d.ts` (commit 279ba8c94)
 2. Fixed all 13 benchmark files to use `@stdlib/ndarray/base/zeros` with positional args (commit ff38a6c32)
+3. Added inline `isOrder` validation to `lib/main.js` with proper error message (commit 46f874e4a)
+
+## Acceptance Criteria — Final Status
+- [x] All package artifacts present and correct
+- [x] TypeScript namespace declarations include `onesLike`
+- [x] Benchmarks use low-level `base/zeros` API
+- [x] `order` option validated inline with proper error message
+- [x] 270 tests pass
+- [x] Examples run correctly
+- [x] Zero blockers/majors remaining after review pass
 
 ## Open Questions
 None.
