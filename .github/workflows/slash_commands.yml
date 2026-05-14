@@ -298,27 +298,25 @@ jobs:
             const targetOwner = 'stdlib-js';
             const targetRepo = ( stdlibTarget === 'private' ) ? 'todo' : 'stdlib';
 
-            // For private repo targets, verify the commenter is an org member:
-            if ( stdlibTarget === 'private' ) {
-              const commenter = context.payload.comment.user.login;
-              try {
-                await github.rest.orgs.checkMembershipForUser({
-                  'org': targetOwner,
-                  'username': commenter
-                });
-              } catch ( err ) {
-                console.log( 'Error checking org membership: %s', err.message );
-                const lines = commentBody.split( '\n' );
-                const quote = lines.map( line => `> ${line}` ).join( '\n' );
-                await github.rest.issues.createComment({
-                  'owner': context.repo.owner,
-                  'repo': context.repo.repo,
-                  'issue_number': context.issue.number,
-                  'body': `${quote}\n\n@${commenter}, you must be a member of the \`${targetOwner}\` organization to create issues on the private todo repository.`
-                });
-                core.setFailed( `User ${commenter} is not a member of ${targetOwner}.` );
-                return;
-              }
+            // Verify the commenter is an org member:
+            const commenter = context.payload.comment.user.login;
+            try {
+              await github.rest.orgs.checkMembershipForUser({
+                'org': targetOwner,
+                'username': commenter
+              });
+            } catch ( err ) {
+              console.log( 'Error checking org membership: %s', err.message );
+              const lines = commentBody.split( '\n' );
+              const quote = lines.map( line => `> ${line}` ).join( '\n' );
+              await github.rest.issues.createComment({
+                'owner': context.repo.owner,
+                'repo': context.repo.repo,
+                'issue_number': context.issue.number,
+                'body': `${quote}\n\n@${commenter}, you must be a member of the \`${targetOwner}\` organization to use the \`/stdlib todo\` command.`
+              });
+              core.setFailed( `User ${commenter} is not a member of ${targetOwner}.` );
+              return;
             }
 
             // Build issue creation parameters:
@@ -329,7 +327,7 @@ jobs:
             };
             // Build provenance footer:
             const prUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/pull/${context.issue.number}`;
-            const provenance = `\n\n---\n*Created via \`/stdlib todo\` from [${context.repo.owner}/${context.repo.repo}#${context.issue.number}](${prUrl}) by @${context.payload.comment.user.login}.*`;
+            const provenance = `\n\n---\n*Created via \`/stdlib todo\` from [${context.repo.owner}/${context.repo.repo}#${context.issue.number}](${prUrl}) by @${commenter}.*`;
 
             if ( body ) {
               issueParams.body = body + provenance;
@@ -349,8 +347,8 @@ jobs:
 
             // Post a confirmation comment:
             const confirmBody = droppedLabels.length > 0
-              ? `@${context.payload.comment.user.login}, the following todo issue has been created: ${issue.data.html_url}\n\n> [!WARNING]\n> The following labels were not applied because they do not exist on \`${targetOwner}/${targetRepo}\`: ${droppedLabels.map( l => `\`${l}\`` ).join( ', ' )}.`
-              : `@${context.payload.comment.user.login}, the following todo issue has been created: ${issue.data.html_url}`;
+              ? `@${commenter}, the following todo issue has been created: ${issue.data.html_url}\n\n> [!WARNING]\n> The following labels were not applied because they do not exist on \`${targetOwner}/${targetRepo}\`: ${droppedLabels.map( l => `\`${l}\`` ).join( ', ' )}.`
+              : `@${commenter}, the following todo issue has been created: ${issue.data.html_url}`;
             await github.rest.issues.createComment({
               'owner': context.repo.owner,
               'repo': context.repo.repo,
