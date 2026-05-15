@@ -59,7 +59,6 @@
     "matrix",
     "fill",
     "filled",
-    "nans",
-    "numpy.nans"
+    "nans"
   ]
 }
