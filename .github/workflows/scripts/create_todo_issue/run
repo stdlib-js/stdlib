@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#/
+#
 # @license Apache-2.0
 #
 # Copyright (c) 2024 The Stdlib Authors.
@@ -15,7 +15,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#/
 
 # Script to create a new todo issue from a /stdlib todo slash command.
 #
@@ -24,7 +23,8 @@
 #   GITHUB_TOKEN   GitHub token with permission to create issues and comments.
 #   COMMENT_BODY   Body of the /stdlib todo slash command comment.
 #   COMMENTER      GitHub login of the commenter.
-#   PR_NUMBER      Pull request number.
+#   PR_NUMBER      Pull request number (mutually exclusive with COMMIT_SHA).
+#   COMMIT_SHA     Commit SHA (mutually exclusive with PR_NUMBER).
 
 # Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
 set -o pipefail
@@ -58,19 +58,25 @@ print_success() {
 	echo 'Success!' >&2
 }
 
-# Posts a comment on the pull request.
+# Posts a comment on the source context (pull request or commit).
 #
 # $1 - comment body (plain text; will be JSON-encoded)
-post_pr_comment() {
+post_source_comment() {
 	local body="$1"
 	local payload
+	local endpoint
 	payload="{\"body\":$(printf '%s' "${body}" | jq -R -s -c .)}"
+	if [ -n "${PR_NUMBER}" ]; then
+		endpoint="${github_api_url}/repos/${repo_owner}/${repo_name}/issues/${PR_NUMBER}/comments"
+	else
+		endpoint="${github_api_url}/repos/${repo_owner}/${repo_name}/commits/${COMMIT_SHA}/comments"
+	fi
 	curl -s -X POST \
 		-H "Authorization: token ${GITHUB_TOKEN}" \
 		-H "Accept: application/vnd.github.v3+json" \
 		-H "Content-Type: application/json" \
 		-d "${payload}" \
-		"${github_api_url}/repos/${repo_owner}/${repo_name}/issues/${PR_NUMBER}/comments" \
+		"${endpoint}" \
 		> /dev/null
 }
 
@@ -95,7 +101,6 @@ main() {
 	local target_owner
 	local target_repo
 	local membership_status
-	local pr_url
 	local provenance
 	local issue_body
 	local issue_payload
@@ -107,8 +112,12 @@ main() {
 	local label
 
 	# Validate required inputs:
-	if [ -z "${PR_NUMBER}" ]; then
-		echo "ERROR: PR_NUMBER is required." >&2
+	if [ -z "${PR_NUMBER}" ] && [ -z "${COMMIT_SHA}" ]; then
+		echo "ERROR: Either PR_NUMBER or COMMIT_SHA is required." >&2
+		on_error 1
+	fi
+	if [ -n "${PR_NUMBER}" ] && [ -n "${COMMIT_SHA}" ]; then
+		echo "ERROR: PR_NUMBER and COMMIT_SHA are mutually exclusive." >&2
 		on_error 1
 	fi
 	if [ -z "${COMMENTER}" ]; then
@@ -159,7 +168,7 @@ main() {
 
 	# Verify that a code block was found:
 	if [ ! -f "${tmp_attrs}" ]; then
-		post_pr_comment "${quote}
+		post_source_comment "${quote}
 
 @${COMMENTER}, failed to parse the ${bt}/stdlib todo${bt} command. Expected a fenced code block with attributes, e.g.,
 
@@ -186,7 +195,7 @@ ${bt}${bt}${bt}"
 	fi
 
 	if [ "${stdlib_target}" != "public" ] && [ "${stdlib_target}" != "private" ]; then
-		post_pr_comment "${quote}
+		post_source_comment "${quote}
 
 @${COMMENTER}, unrecognized ${bt}stdlib${bt} attribute value ${bt}${stdlib_target}${bt}. Valid values are ${bt}public${bt} (opens issue on ${bt}stdlib-js/stdlib${bt}) or ${bt}private${bt} (opens issue on the internal todo repository)."
 		rm -rf "${tmp_dir}"
@@ -205,7 +214,7 @@ ${bt}${bt}${bt}"
 	first_line=$(printf '%s' "${content}" | head -n 1)
 	title=$(printf '%s' "${first_line}" | grep -ioP '(?<=^\[TODO\]:[[:space:]])\S.*' || true)
 	if [ -z "${title}" ]; then
-		post_pr_comment "${quote}
+		post_source_comment "${quote}
 
 @${COMMENTER}, failed to parse the todo title. The first line of the code block must be of the form ${bt}[TODO]: Issue title${bt}."
 		rm -rf "${tmp_dir}"
@@ -232,7 +241,7 @@ ${bt}${bt}${bt}"
 
 	if [ "${membership_status}" != "204" ]; then
 		echo "Error checking org membership: HTTP ${membership_status}" >&2
-		post_pr_comment "${quote}
+		post_source_comment "${quote}
 
 @${COMMENTER}, you must be a member of the ${bt}${target_owner}${bt} organization to use the ${bt}/stdlib todo${bt} command."
 		rm -rf "${tmp_dir}"
@@ -240,9 +249,13 @@ ${bt}${bt}${bt}"
 	fi
 
 	# Build provenance footer:
-	pr_url="https://github.com/${repo_owner}/${repo_name}/pull/${PR_NUMBER}"
-	provenance="---
-*Created via ${bt}/stdlib todo${bt} from [${repo_owner}/${repo_name}#${PR_NUMBER}](${pr_url}) by @${COMMENTER}.*"
+	if [ -n "${PR_NUMBER}" ]; then
+		provenance="---
+*Created via ${bt}/stdlib todo${bt} from [${repo_owner}/${repo_name}#${PR_NUMBER}](https://github.com/${repo_owner}/${repo_name}/pull/${PR_NUMBER}) by @${COMMENTER}.*"
+	else
+		provenance="---
+*Created via ${bt}/stdlib todo${bt} from [${repo_owner}/${repo_name}@${COMMIT_SHA:0:7}](https://github.com/${repo_owner}/${repo_name}/commit/${COMMIT_SHA}) by @${COMMENTER}.*"
+	fi
 
 	# Build the issue body with provenance footer:
 	if [ -n "${body}" ]; then
@@ -296,12 +309,12 @@ ${provenance}"
 				dropped_list="${bt}${label}${bt}"
 			fi
 		done
-		post_pr_comment "@${COMMENTER}, the following todo issue has been created: ${issue_url}
+		post_source_comment "@${COMMENTER}, the following todo issue has been created: ${issue_url}
 
 > [!WARNING]
 > The following labels were not applied because they do not exist on ${bt}${target_owner}/${target_repo}${bt}: ${dropped_list}."
 	else
-		post_pr_comment "@${COMMENTER}, the following todo issue has been created: ${issue_url}"
+		post_source_comment "@${COMMENTER}, the following todo issue has been created: ${issue_url}"
 	fi
 
 	rm -rf "${tmp_dir}"

@@ -26,9 +26,13 @@ on:
     # Define the input parameters for the workflow:
     inputs:
       pull_request_number:
-        description: 'Pull request number'
-        required: true
-        type: number
+        description: 'Pull request number (required when triggered from a PR comment; mutually exclusive with commit_sha)'
+        required: false
+        type: string
+      commit_sha:
+        description: 'Commit SHA (required when triggered from a commit comment; mutually exclusive with pull_request_number)'
+        required: false
+        type: string
       comment_body:
         description: 'Body of the slash command comment'
         required: true
@@ -48,9 +52,13 @@ on:
   workflow_dispatch:
     inputs:
       pull_request_number:
-        description: 'Pull request number'
-        required: true
-        type: number
+        description: 'Pull request number (required when triggered from a PR comment; mutually exclusive with commit_sha)'
+        required: false
+        type: string
+      commit_sha:
+        description: 'Commit SHA (required when triggered from a commit comment; mutually exclusive with pull_request_number)'
+        required: false
+        type: string
       comment_body:
         description: 'Body of the slash command comment'
         required: true
@@ -92,6 +100,7 @@ jobs:
           COMMENT_BODY: ${{ inputs.comment_body }}
           COMMENTER: ${{ inputs.user }}
           PR_NUMBER: ${{ inputs.pull_request_number }}
+          COMMIT_SHA: ${{ inputs.commit_sha }}
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_todo_issue/run"
         timeout-minutes: 10
