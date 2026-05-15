@@ -74,139 +74,24 @@ jobs:
 
     # Define the job's steps:
     steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # Ensure we have access to the scripts directory:
+          sparse-checkout: |
+              .github/workflows/scripts
+          sparse-checkout-cone-mode: false
+        timeout-minutes: 10
+
       # Create a new todo issue:
       - name: 'Create a new todo issue'
-        # Pin action to full length commit SHA
-        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN || secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           COMMENT_BODY: ${{ inputs.comment_body }}
           COMMENTER: ${{ inputs.user }}
           PR_NUMBER: ${{ inputs.pull_request_number }}
-        with:
-          github-token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
-          script: |
-            const commentBody = process.env.COMMENT_BODY.trim();
-            const commenter = process.env.COMMENTER;
-            const prNumber = parseInt( process.env.PR_NUMBER, 10 );
-
-            // Parse the fenced code block following '/stdlib todo':
-            const RE_CODE_BLOCK = /```text\s*\{([^}]*)\}\s*\n([\s\S]*?)```/;
-            const blockMatch = commentBody.match( RE_CODE_BLOCK );
-            if ( !blockMatch ) {
-              const lines = commentBody.split( '\n' );
-              const quote = lines.map( line => `> ${line}` ).join( '\n' );
-              await github.rest.issues.createComment({
-                'owner': context.repo.owner,
-                'repo': context.repo.repo,
-                'issue_number': prNumber,
-                'body': `${quote}\n\n@${commenter}, failed to parse the \`/stdlib todo\` command. Expected a fenced code block with attributes, e.g.,\n\n\`\`\`\n/stdlib todo\n\n\\\`\\\`\\\`text {stdlib=public labels="foo,bar"}\n[TODO]: Issue title\n\nIssue body\n\\\`\\\`\\\`\n\`\`\``
-              });
-              core.setFailed( 'No code block found in /stdlib todo comment.' );
-              return;
-            }
-
-            const attrs = blockMatch[ 1 ];
-            const content = blockMatch[ 2 ].trim();
-
-            // Parse 'stdlib' attribute (values: 'public' or 'private'):
-            const stdlibAttrMatch = attrs.match( /stdlib=(\w+)/i );
-            const stdlibTarget = stdlibAttrMatch ? stdlibAttrMatch[ 1 ].toLowerCase() : 'public';
-            if ( stdlibTarget !== 'public' && stdlibTarget !== 'private' ) {
-              const lines = commentBody.split( '\n' );
-              const quote = lines.map( line => `> ${line}` ).join( '\n' );
-              await github.rest.issues.createComment({
-                'owner': context.repo.owner,
-                'repo': context.repo.repo,
-                'issue_number': prNumber,
-                'body': `${quote}\n\n@${commenter}, unrecognized \`stdlib\` attribute value \`${stdlibTarget}\`. Valid values are \`public\` (opens issue on \`stdlib-js/stdlib\`) or \`private\` (opens issue on the internal todo repository).`
-              });
-              core.setFailed( `Unrecognized stdlib attribute value: ${stdlibTarget}` );
-              return;
-            }
-
-            // Parse 'labels' attribute (comma-separated list):
-            const labelsAttrMatch = attrs.match( /labels="([^"]*)"/i );
-            const labels = labelsAttrMatch
-              ? labelsAttrMatch[ 1 ].split( ',' ).map( l => l.trim() ).filter( Boolean )
-              : [];
-
-            // Parse the issue title from the '[TODO]:' line:
-            const contentLines = content.split( '\n' );
-            const RE_TITLE = /^\[TODO\]:\s*(.+)/i;
-            const titleMatch = contentLines[ 0 ].match( RE_TITLE );
-            if ( !titleMatch ) {
-              const lines = commentBody.split( '\n' );
-              const quote = lines.map( line => `> ${line}` ).join( '\n' );
-              await github.rest.issues.createComment({
-                'owner': context.repo.owner,
-                'repo': context.repo.repo,
-                'issue_number': prNumber,
-                'body': `${quote}\n\n@${commenter}, failed to parse the todo title. The first line of the code block must be of the form \`[TODO]: Issue title\`.`
-              });
-              core.setFailed( 'No [TODO]: line found in the code block.' );
-              return;
-            }
-
-            const title = titleMatch[ 1 ].trim();
-            const body = contentLines.slice( 1 ).join( '\n' ).trim();
-
-            // Determine the target repository:
-            const targetOwner = 'stdlib-js';
-            const targetRepo = ( stdlibTarget === 'private' ) ? 'todo' : 'stdlib';
-
-            // Verify the commenter is an org member:
-            try {
-              await github.rest.orgs.checkMembershipForUser({
-                'org': targetOwner,
-                'username': commenter
-              });
-            } catch ( err ) {
-              console.log( 'Error checking org membership: %s', err.message );
-              const lines = commentBody.split( '\n' );
-              const quote = lines.map( line => `> ${line}` ).join( '\n' );
-              await github.rest.issues.createComment({
-                'owner': context.repo.owner,
-                'repo': context.repo.repo,
-                'issue_number': prNumber,
-                'body': `${quote}\n\n@${commenter}, you must be a member of the \`${targetOwner}\` organization to use the \`/stdlib todo\` command.`
-              });
-              core.setFailed( `User ${commenter} is not a member of ${targetOwner}.` );
-              return;
-            }
-
-            // Build issue creation parameters:
-            const issueParams = {
-              'owner': targetOwner,
-              'repo': targetRepo,
-              'title': title
-            };
-            // Build provenance footer:
-            const prUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/pull/${prNumber}`;
-            const provenance = `\n\n---\n*Created via \`/stdlib todo\` from [${context.repo.owner}/${context.repo.repo}#${prNumber}](${prUrl}) by @${commenter}.*`;
-
-            if ( body ) {
-              issueParams.body = body + provenance;
-            } else {
-              issueParams.body = provenance.trim();
-            }
-            if ( labels.length > 0 ) {
-              issueParams.labels = labels;
-            }
-
-            // Create the issue:
-            const issue = await github.rest.issues.create( issueParams );
-
-            // Check for labels that were silently dropped (do not exist in the target repo):
-            const appliedLabels = issue.data.labels.map( l => l.name );
-            const droppedLabels = labels.filter( l => !appliedLabels.includes( l ) );
-
-            // Post a confirmation comment:
-            const confirmBody = droppedLabels.length > 0
-              ? `@${commenter}, the following todo issue has been created: ${issue.data.html_url}\n\n> [!WARNING]\n> The following labels were not applied because they do not exist on \`${targetOwner}/${targetRepo}\`: ${droppedLabels.map( l => `\`${l}\`` ).join( ', ' )}.`
-              : `@${commenter}, the following todo issue has been created: ${issue.data.html_url}`;
-            await github.rest.issues.createComment({
-              'owner': context.repo.owner,
-              'repo': context.repo.repo,
-              'issue_number': prNumber,
-              'body': confirmBody
-            });
+        run: |
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_todo_issue/run"
+        timeout-minutes: 10
