@@ -37,11 +37,13 @@ This directory contains [`make`][make] rules for running the project's installat
     -   [Cppcheck](#cppcheck)
     -   [Electron](#electron)
     -   [Emscripten SDK](#emscripten-sdk)
+    -   [LLVM](#llvm)
     -   [OpenBLAS](#openblas)
     -   [Python](#python)
     -   [R](#r)
     -   [ShellCheck](#shellcheck)
     -   [WebAssembly Binary Toolkit](#wabt)
+    -   [WASI libc](#wasi-libc)
 
 </section>
 
@@ -419,6 +421,36 @@ $ make clean-deps-emscripten-tests
 
 * * *
 
+<a name="llvm"></a>
+
+### LLVM
+
+#### install-deps-llvm
+
+Installs [LLVM][llvm].
+
+```bash
+$ make install-deps-llvm
+```
+
+#### clean-deps-llvm
+
+Removes an installed [LLVM][llvm] distribution.
+
+```bash
+$ make clean-deps-llvm
+```
+
+#### clean-deps-llvm-tests
+
+Removes [LLVM][llvm] installation tests.
+
+```bash
+$ make clean-deps-llvm-tests
+```
+
+* * *
+
 <a name="openblas"></a>
 
 ### OpenBLAS
@@ -567,6 +599,36 @@ Removes [WebAssembly Binary Toolkit][wabt] installation tests.
 $ make clean-deps-wabt-tests
 ```
 
+* * *
+
+<a name="wasi-libc"></a>
+
+### WASI libc
+
+#### install-deps-wasi-libc
+
+Installs a [WASI libc][wasi-libc] implementation for WebAssembly.
+
+```bash
+$ make install-deps-wasi-libc
+```
+
+#### clean-deps-wasi-libc
+
+Removes an installed [WASI libc][wasi-libc] distribution.
+
+```bash
+$ make clean-deps-wasi-libc
+```
+
+#### clean-deps-wasi-libc-tests
+
+Removes [WASI libc][wasi-libc] installation tests.
+
+```bash
+$ make clean-deps-wasi-libc-tests
+```
+
 </section>
 
 <!-- /.usage -->
@@ -595,6 +657,8 @@ $ make clean-deps-wabt-tests
 
 [emscripten-sdk]: https://github.com/emscripten-core/emsdk
 
+[llvm]: https://llvm.org
+
 [node-js]: https://nodejs.org/en/
 
 [node-js-add-ons]: https://nodejs.org/api/addons.html
@@ -604,6 +668,8 @@ $ make clean-deps-wabt-tests
 [shellcheck]: https://github.com/koalaman/shellcheck
 
 [wabt]: https://github.com/WebAssembly/wabt
+
+[wasi-libc]: https://github.com/WebAssembly/wasi-libc
 
 </section>
 

@@ -38,7 +38,14 @@
       "dependencies": [
         "@stdlib/math/base/napi/unary",
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/float64/reim"
+        "@stdlib/complex/float64/reim",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/sincos",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf"
       ]
     },
     {
@@ -53,7 +60,14 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/float64/reim"
+        "@stdlib/complex/float64/reim",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/sincos",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf"
       ]
     },
     {
@@ -68,7 +82,14 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/complex/float64/ctor",
-        "@stdlib/complex/float64/reim"
+        "@stdlib/complex/float64/reim",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/sincos",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-infinite",
+        "@stdlib/math/base/special/copysign",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/constants/float64/ninf"
       ]
     }
   ]

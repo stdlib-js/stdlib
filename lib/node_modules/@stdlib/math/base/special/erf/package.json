@@ -62,5 +62,78 @@
     "function",
     "special",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "erf",
+      "alias": "erf",
+      "pkg_desc": "evaluate the error function for a double-precision floating-point number",
+      "desc": "evaluates the error function for a double-precision floating-point number",
+      "short_desc": "error function",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -5,
+              5
+            ]
+          },
+          "example_values": [
+            -3.71,
+            2.48,
+            -1.96,
+            0.83,
+            -0.27,
+            1.15,
+            -4.29,
+            3.06,
+            -2.53,
+            4.77,
+            -0.94,
+            0.36,
+            -1.42,
+            2.91,
+            -3.18,
+            1.67,
+            -4.86,
+            0.59,
+            -2.07,
+            4.12
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "function value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "erf",
+        "error",
+        "function"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

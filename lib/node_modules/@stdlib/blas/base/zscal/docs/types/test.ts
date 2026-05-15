@@ -25,178 +25,178 @@ import zscal = require( './index' );
 
 // The function returns a Complex128Array...
 {
-	const zx = new Complex128Array( 10 );
-	const za = new Complex128( 2.0, 2.0 );
+	const x = new Complex128Array( 10 );
+	const alpha = new Complex128( 2.0, 2.0 );
 
-	zscal( zx.length, za, zx, 1 ); // $ExpectType Complex128Array
+	zscal( x.length, alpha, x, 1 ); // $ExpectType Complex128Array
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
 {
-	const zx = new Complex128Array( 10 );
-	const za = new Complex128( 2.0, 2.0 );
+	const x = new Complex128Array( 10 );
+	const alpha = new Complex128( 2.0, 2.0 );
 
-	zscal( '10', za, zx, 1 ); // $EzxpectError
-	zscal( true, za, zx, 1 ); // $ExpectError
-	zscal( false, za, zx, 1 ); // $ExpectError
-	zscal( null, za, zx, 1 ); // $ExpectError
-	zscal( undefined, za, zx, 1 ); // $ExpectError
-	zscal( [], za, zx, 1 ); // $ExpectError
-	zscal( {}, za, zx, 1 ); // $ExpectError
-	zscal( ( zx: number ): number => zx, za, zx, 1 ); // $ExpectError
+	zscal( '10', alpha, x, 1 ); // $ExpectError
+	zscal( true, alpha, x, 1 ); // $ExpectError
+	zscal( false, alpha, x, 1 ); // $ExpectError
+	zscal( null, alpha, x, 1 ); // $ExpectError
+	zscal( undefined, alpha, x, 1 ); // $ExpectError
+	zscal( [], alpha, x, 1 ); // $ExpectError
+	zscal( {}, alpha, x, 1 ); // $ExpectError
+	zscal( ( x: number ): number => x, alpha, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a complex number...
 {
-	const zx = new Complex128Array( 10 );
+	const x = new Complex128Array( 10 );
 
-	zscal( zx.length, 10, zx, 1 ); // $ExpectError
-	zscal( zx.length, '10', zx, 1 ); // $ExpectError
-	zscal( zx.length, true, zx, 1 ); // $ExpectError
-	zscal( zx.length, false, zx, 1 ); // $ExpectError
-	zscal( zx.length, null, zx, 1 ); // $ExpectError
-	zscal( zx.length, undefined, zx, 1 ); // $ExpectError
-	zscal( zx.length, [ '1' ], zx, 1 ); // $ExpectError
-	zscal( zx.length, {}, zx, 1 ); // $ExpectError
-	zscal( zx.length, ( zx: number ): number => zx, zx, 1 ); // $ExpectError
+	zscal( x.length, 10, x, 1 ); // $ExpectError
+	zscal( x.length, '10', x, 1 ); // $ExpectError
+	zscal( x.length, true, x, 1 ); // $ExpectError
+	zscal( x.length, false, x, 1 ); // $ExpectError
+	zscal( x.length, null, x, 1 ); // $ExpectError
+	zscal( x.length, undefined, x, 1 ); // $ExpectError
+	zscal( x.length, [ '1' ], x, 1 ); // $ExpectError
+	zscal( x.length, {}, x, 1 ); // $ExpectError
+	zscal( x.length, ( x: number ): number => x, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a Complex128Array...
 {
-	const zx = new Complex128Array( 10 );
-	const za = new Complex128( 2.0, 2.0 );
+	const x = new Complex128Array( 10 );
+	const alpha = new Complex128( 2.0, 2.0 );
 
-	zscal( zx.length, za, 10, 1 ); // $ExpectError
-	zscal( zx.length, za, '10', 1 ); // $ExpectError
-	zscal( zx.length, za, true, 1 ); // $ExpectError
-	zscal( zx.length, za, false, 1 ); // $ExpectError
-	zscal( zx.length, za, null, 1 ); // $ExpectError
-	zscal( zx.length, za, undefined, 1 ); // $ExpectError
-	zscal( zx.length, za, [ '1' ], 1 ); // $ExpectError
-	zscal( zx.length, za, {}, 1 ); // $ExpectError
-	zscal( zx.length, za, ( zx: number ): number => zx, 1 ); // $ExpectError
+	zscal( x.length, alpha, 10, 1 ); // $ExpectError
+	zscal( x.length, alpha, '10', 1 ); // $ExpectError
+	zscal( x.length, alpha, true, 1 ); // $ExpectError
+	zscal( x.length, alpha, false, 1 ); // $ExpectError
+	zscal( x.length, alpha, null, 1 ); // $ExpectError
+	zscal( x.length, alpha, undefined, 1 ); // $ExpectError
+	zscal( x.length, alpha, [ '1' ], 1 ); // $ExpectError
+	zscal( x.length, alpha, {}, 1 ); // $ExpectError
+	zscal( x.length, alpha, ( x: number ): number => x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not a number...
 {
-	const zx = new Complex128Array( 10 );
-	const za = new Complex128( 2.0, 2.0 );
+	const x = new Complex128Array( 10 );
+	const alpha = new Complex128( 2.0, 2.0 );
 
-	zscal( zx.length, za, zx, '10' ); // $ExpectError
-	zscal( zx.length, za, zx, true ); // $ExpectError
-	zscal( zx.length, za, zx, false ); // $ExpectError
-	zscal( zx.length, za, zx, null ); // $ExpectError
-	zscal( zx.length, za, zx, undefined ); // $ExpectError
-	zscal( zx.length, za, zx, [] ); // $ExpectError
-	zscal( zx.length, za, zx, {} ); // $ExpectError
-	zscal( zx.length, za, zx, ( zx: number ): number => zx ); // $ExpectError
+	zscal( x.length, alpha, x, '10' ); // $ExpectError
+	zscal( x.length, alpha, x, true ); // $ExpectError
+	zscal( x.length, alpha, x, false ); // $ExpectError
+	zscal( x.length, alpha, x, null ); // $ExpectError
+	zscal( x.length, alpha, x, undefined ); // $ExpectError
+	zscal( x.length, alpha, x, [] ); // $ExpectError
+	zscal( x.length, alpha, x, {} ); // $ExpectError
+	zscal( x.length, alpha, x, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	const zx = new Complex128Array( 10 );
-	const za = new Complex128( 2.0, 2.0 );
+	const x = new Complex128Array( 10 );
+	const alpha = new Complex128( 2.0, 2.0 );
 
 	zscal(); // $ExpectError
-	zscal( zx.length ); // $ExpectError
-	zscal( zx.length, za ); // $ExpectError
-	zscal( zx.length, za, zx ); // $ExpectError
-	zscal( zx.length, za, zx, 1, 10 ); // $ExpectError
+	zscal( x.length ); // $ExpectError
+	zscal( x.length, alpha ); // $ExpectError
+	zscal( x.length, alpha, x ); // $ExpectError
+	zscal( x.length, alpha, x, 1, 10 ); // $ExpectError
 }
 
 // Attached to main export is an `ndarray` method which returns a Complex128Array...
 {
-	const zx = new Complex128Array( 10 );
-	const za = new Complex128( 2.0, 2.0 );
+	const x = new Complex128Array( 10 );
+	const alpha = new Complex128( 2.0, 2.0 );
 
-	zscal.ndarray( zx.length, za, zx, 1, 0 ); // $ExpectType Complex128Array
+	zscal.ndarray( x.length, alpha, x, 1, 0 ); // $ExpectType Complex128Array
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
 {
-	const zx = new Complex128Array( 10 );
-	const za = new Complex128( 2.0, 2.0 );
+	const x = new Complex128Array( 10 );
+	const alpha = new Complex128( 2.0, 2.0 );
 
-	zscal.ndarray( '10', za, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( true, za, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( false, za, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( null, za, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( undefined, za, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( [], za, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( {}, za, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( ( zx: number ): number => zx, za, zx, 1, 0 ); // $ExpectError
+	zscal.ndarray( '10', alpha, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( true, alpha, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( false, alpha, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( null, alpha, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( undefined, alpha, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( [], alpha, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( {}, alpha, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( ( x: number ): number => x, alpha, x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a complex number...
 {
-	const zx = new Complex128Array( 10 );
+	const x = new Complex128Array( 10 );
 
-	zscal.ndarray( zx.length, 10, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, '10', zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, true, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, false, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, null, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, undefined, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, [ '1' ], zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, {}, zx, 1, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, ( zx: number ): number => zx, zx, 1, 0 ); // $ExpectError
+	zscal.ndarray( x.length, 10, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( x.length, '10', x, 1, 0 ); // $ExpectError
+	zscal.ndarray( x.length, true, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( x.length, false, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( x.length, null, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( x.length, undefined, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( x.length, [ '1' ], x, 1, 0 ); // $ExpectError
+	zscal.ndarray( x.length, {}, x, 1, 0 ); // $ExpectError
+	zscal.ndarray( x.length, ( x: number ): number => x, x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a Complex128Array...
 {
-	const zx = new Complex128Array( 10 );
-	const za = new Complex128( 2.0, 2.0 );
+	const x = new Complex128Array( 10 );
+	const alpha = new Complex128( 2.0, 2.0 );
 
-	zscal( zx.length, za, 10, 1, 0 ); // $ExpectError
-	zscal( zx.length, za, '10', 1, 0 ); // $ExpectError
-	zscal( zx.length, za, true, 1, 0 ); // $ExpectError
-	zscal( zx.length, za, false, 1, 0 ); // $ExpectError
-	zscal( zx.length, za, null, 1, 0 ); // $ExpectError
-	zscal( zx.length, za, undefined, 1, 0 ); // $ExpectError
-	zscal( zx.length, za, [ '1' ], 1, 0 ); // $ExpectError
-	zscal( zx.length, za, {}, 1, 0 ); // $ExpectError
-	zscal( zx.length, za, ( zx: number ): number => zx, 1, 0 ); // $ExpectError
+	zscal( x.length, alpha, 10, 1, 0 ); // $ExpectError
+	zscal( x.length, alpha, '10', 1, 0 ); // $ExpectError
+	zscal( x.length, alpha, true, 1, 0 ); // $ExpectError
+	zscal( x.length, alpha, false, 1, 0 ); // $ExpectError
+	zscal( x.length, alpha, null, 1, 0 ); // $ExpectError
+	zscal( x.length, alpha, undefined, 1, 0 ); // $ExpectError
+	zscal( x.length, alpha, [ '1' ], 1, 0 ); // $ExpectError
+	zscal( x.length, alpha, {}, 1, 0 ); // $ExpectError
+	zscal( x.length, alpha, ( x: number ): number => x, 1, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
 {
-	const zx = new Complex128Array( 10 );
-	const za = new Complex128( 2.0, 2.0 );
+	const x = new Complex128Array( 10 );
+	const alpha = new Complex128( 2.0, 2.0 );
 
-	zscal.ndarray( zx.length, za, zx, '10', 0 ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, true, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, false, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, null, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, undefined, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, [], 0 ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, {}, 0 ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, ( zx: number ): number => zx, 0 ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, '10', 0 ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, true, 0 ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, false, 0 ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, null, 0 ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, undefined, 0 ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, [], 0 ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, {}, 0 ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, ( x: number ): number => x, 0 ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a number...
 {
-	const zx = new Complex128Array( 10 );
-	const za = new Complex128( 2.0, 2.0 );
+	const x = new Complex128Array( 10 );
+	const alpha = new Complex128( 2.0, 2.0 );
 
-	zscal.ndarray( zx.length, za, zx, 1, '10' ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, 1, true ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, 1, false ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, 1, null ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, 1, undefined ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, 1, [] ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, 1, {} ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, 1, ( zx: number ): number => zx ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, 1, '10' ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, 1, true ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, 1, false ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, 1, null ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, 1, undefined ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, 1, [] ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, 1, {} ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
 {
-	const zx = new Complex128Array( 10 );
-	const za = new Complex128( 2.0, 2.0 );
+	const x = new Complex128Array( 10 );
+	const alpha = new Complex128( 2.0, 2.0 );
 
 	zscal.ndarray(); // $ExpectError
-	zscal.ndarray( zx.length ); // $ExpectError
-	zscal.ndarray( zx.length, za ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, 1 ); // $ExpectError
-	zscal.ndarray( zx.length, za, zx, 1, 0, 10 ); // $ExpectError
+	zscal.ndarray( x.length ); // $ExpectError
+	zscal.ndarray( x.length, alpha ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, 1 ); // $ExpectError
+	zscal.ndarray( x.length, alpha, x, 1, 0, 10 ); // $ExpectError
 }

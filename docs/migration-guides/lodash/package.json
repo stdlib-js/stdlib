@@ -16,7 +16,8 @@
   ],
   "main": "./package.json",
   "directories": {
-    "benchmark": "./benchmark"
+    "benchmark": "./benchmark",
+    "data": "./data"
   },
   "scripts": {
     "bench": "NODE_PATH=./../../../lib/node_modules/ node ./benchmark/benchmark.for_each.js"

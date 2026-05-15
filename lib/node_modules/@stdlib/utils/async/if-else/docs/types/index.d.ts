@@ -62,12 +62,12 @@ type PredicateCallback =  PredicateNullary | PredicateUnary | PredicateBinary;
 type Predicate = ( clbk: PredicateCallback ) => void;
 
 /**
- * Determines the relationship between two types `T` and `U`, and returns:
- *
- * -   `T` if `T` is assignable to `U`,
- * -   `U` if `U` is assignable to `T`,
- * -    A union of `U | T` as a fallback.
- */
+* Determines the relationship between two types `T` and `U`, and returns:
+*
+* -   `T` if `T` is assignable to `U`,
+* -   `U` if `U` is assignable to `T`,
+* -    A union of `U | T` as a fallback.
+*/
 type ResultFunction<T, U> = T extends U ? T : U extends T ? U : U | T;
 
 /**

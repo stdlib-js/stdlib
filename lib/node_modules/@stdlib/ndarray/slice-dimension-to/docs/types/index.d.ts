@@ -21,7 +21,6 @@
 /// <reference types="@stdlib/types"/>
 
 import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
-import { ArrayLike } from '@stdlib/types/array';
 
 /**
 * Interface defining function options.
@@ -504,6 +503,7 @@ declare function sliceDimensionTo<T = unknown>( x: genericndarray<T>, dim: numbe
 * Returns a read-only truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
+* @param dim - index of dimension to slice
 * @param stop - ending index (exclusive)
 * @param options - function options
 * @param options.strict - boolean indicating whether to enforce strict bounds checking

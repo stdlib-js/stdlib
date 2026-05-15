@@ -80,16 +80,16 @@ ifthenAsync( predicate, x, y, done );
 
 The `predicate` function is provided a single argument:
 
--   `clbk`: callback to invoke upon `predicate` function completion
+-   `clbk`: callback to invoke upon `predicate` function completion.
 
 The callback accepts two arguments:
 
--   `error`: error object
--   `bool`: condition used to determine whether to invoke `x` or `y`
+-   `error`: error object.
+-   `bool`: condition used to determine whether to invoke `x` or `y`.
 
 Both `x` and `y` are provided a single argument:
 
--   `clbk`: callback to invoke upon function completion
+-   `clbk`: callback to invoke upon function completion.
 
 The callback function accepts any number of arguments, with the first argument reserved for providing an error. If the error argument is falsy, the `done` callback is invoked with its first argument as `null` and all other provided arguments. If the error argument is truthy, the `done` callback is invoked with only an error argument.
 

@@ -28,7 +28,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param alpha - constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param stride - index increment
 	* @returns input array
 	*
 	* @example
@@ -47,7 +47,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param alpha - constant
 	* @param x - input array
-	* @param stride - stride length
+	* @param stride - index increment
 	* @param offset - starting index
 	* @returns input array
 	*
@@ -68,7 +68,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param alpha - constant
 * @param x - input array
-* @param stride - stride length
+* @param stride - index increment
 * @returns input array
 *
 * @example

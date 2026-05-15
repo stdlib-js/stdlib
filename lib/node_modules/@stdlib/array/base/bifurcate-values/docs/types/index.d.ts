@@ -33,7 +33,7 @@ import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 * var x = [ 'beep', 'boop', 'foo', 'bar' ];
 * var filter = [ true, true, false, true ];
 *
-* var out = bifurcateValues( arr, filter );
+* var out = bifurcateValues( x, filter );
 * // returns [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
 */
 declare function bifurcateValues<T = unknown>( x: Collection<T> | AccessorArrayLike<T>, filter: Collection | AccessorArrayLike<any> ): [ Array<T>, Array<T> ]; // eslint-disable-line @typescript-eslint/no-explicit-any

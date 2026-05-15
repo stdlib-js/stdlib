@@ -1,6 +1,7 @@
 
 {{alias}}( s )
-    Evaluates the Dirichlet eta function as a function of a real variable `s`.
+    Evaluates the Dirichlet eta function for a double-precision
+    floating-point number `s`.
 
     Parameters
     ----------

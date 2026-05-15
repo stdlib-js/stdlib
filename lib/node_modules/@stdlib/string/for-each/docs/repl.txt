@@ -4,9 +4,9 @@
 
     When invoked, the provided function is provided three arguments:
 
-    - value: character
-    - index: starting character index
-    - str: input string
+    - value: character.
+    - index: starting character index.
+    - str: input string.
 
     Parameters
     ----------

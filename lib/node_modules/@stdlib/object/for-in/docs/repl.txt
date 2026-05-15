@@ -1,0 +1,44 @@
+
+{{alias}}( obj, fcn[, thisArg] )
+    Invokes a function for each own and inherited enumerable property of an
+    object.
+
+    When invoked, the function is provided three arguments:
+
+    - value: object property value.
+    - key: object property.
+    - obj: the input object.
+
+    To terminate iteration before visiting all properties, the provided function
+    must explicitly return `false`.
+
+    Property iteration order is *not* guaranteed.
+
+    Parameters
+    ----------
+    obj: Object
+        Input object, including arrays, typed arrays, and other collections.
+
+    fcn: Function
+        The function to invoke for each own enumerable property.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    out: Object
+        Input object.
+
+    Examples
+    --------
+    > function logger( v, k ) { console.log( '%s: %d', k, v ); };
+    > function Foo() { return this; };
+    > Foo.prototype.beep = 'boop';
+    > var obj = new Foo();
+    > {{alias}}( obj, logger )
+    beep: boop
+
+    See Also
+    --------
+

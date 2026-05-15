@@ -24,6 +24,7 @@
 * -   Run this script from the directory in which fixtures should be written.
 *
 */
+
 #include <stdlib.h>
 #include <stdio.h>
 

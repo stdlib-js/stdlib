@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,29 +20,17 @@
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/base/mul.h"
-#include <stdint.h>
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Scales a double-precision complex floating-point vector by a double-precision complex floating-point constant.
 *
 * @param N        number of indexed elements
-* @param za       scalar constant
-* @param ZX       input array
-* @param strideX  ZX stride length
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  X stride length
 */
-void API_SUFFIX(c_zscal)( const CBLAS_INT N, const stdlib_complex128_t za, void *ZX, const CBLAS_INT strideX ) {
-	stdlib_complex128_t z;
-	CBLAS_INT i;
-
-	uint8_t *ip1 = (uint8_t *)ZX;
-	int64_t is1 = 16 * strideX;
-
-	if ( N <= 0 || strideX <= 0 ) {
-		return;
-	}
-	for ( i = 0; i < N; i++, ip1 += is1 ) {
-		z = *(stdlib_complex128_t *)ip1;
-		*(stdlib_complex128_t *)ip1 = stdlib_base_complex128_mul( za, z );
-	}
-	return;
+void API_SUFFIX(c_zscal)( const CBLAS_INT N, const stdlib_complex128_t alpha, void *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	API_SUFFIX(c_zscal_ndarray)( N, alpha, X, strideX, ox );
 }

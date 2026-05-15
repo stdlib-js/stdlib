@@ -26,8 +26,8 @@
 * -   If both `a` and `b` are `0`, the function returns `0`.
 * -   Both `a` and `b` must have integer values; otherwise, the function returns `NaN`.
 *
-* @param a - integer
-* @param b - integer
+* @param a - first number
+* @param b - second number
 * @returns greatest common divisor
 *
 * @example

@@ -40,12 +40,12 @@
 *     return capitalize( p1 );
 * }
 *
-* var out = replace( str, /([^\s]*)/gi, replacer);
+* var out = replace( str, /([^\s]*)/gi, replacer );
 * // returns 'Oranges And Lemons Say The Bells Of St. Clement\'s'
 */
-declare function repeat( str: string, search: RegExp, newval: string | Function ): string;
+declare function replace( str: string, search: RegExp, newval: string | Function ): string;
 
 
 // EXPORTS //
 
-export = repeat;
+export = replace;

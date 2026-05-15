@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Computes `log(1+f) - f` for `1+f` in `~[sqrt(2)/2, sqrt(2)]`.
+* Evaluates a correction term for double-precision base-2 and base-10 logarithms when `1+f` is in `[√2/2, √2]`.
 *
 * ## Notes
 *

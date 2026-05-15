@@ -266,7 +266,7 @@ interface SomeByAsync {
 	* };
 	*
 	* // Create a `someByAsync` function which invokes the predicate function for each collection element sequentially:
-	* var someByAsync = factory( opts, predicate );
+	* var someBy = someByAsync.factory( opts, predicate );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -287,7 +287,7 @@ interface SomeByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* someByAsync( files, 2, done );
+	* someBy( files, 2, done );
 	*/
 	factory<T = unknown, V = unknown>( options: Options<T, V>, predicate: Predicate<T, V> ): FactoryFunction<T>;
 
@@ -320,7 +320,7 @@ interface SomeByAsync {
 	* }
 	*
 	* // Create a `someByAsync` function which invokes the predicate function for each collection element sequentially:
-	* var someByAsync = factory( predicate );
+	* var someBy = someByAsync.factory( predicate );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -341,7 +341,7 @@ interface SomeByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* someByAsync( files, 2, done );
+	* someBy( files, 2, done );
 	*/
 	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>;
 }

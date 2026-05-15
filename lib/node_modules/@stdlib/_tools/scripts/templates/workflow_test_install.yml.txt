@@ -48,10 +48,10 @@ jobs:
 
     # Define environment variables:
     env:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      ZULIP_API_KEY: ${{ secrets.ZULIP_API_KEY }}
 
-    # Run workflow job if `publish` workflow run is successful or when the workflow is manually run:
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    # Run workflow job if `publish` workflow run is successful or when the workflow is manually triggered or on a schedule:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' }}
 
     # Define the sequence of job steps...
     steps:
@@ -75,11 +75,20 @@ jobs:
           npm install --only=prod || npm install --only=prod || npm install --only=prod
         timeout-minutes: 15
 
-      # Send Slack notification if job fails:
-      - name: 'Send notification to Slack in case of failure'
+      # Send notification to Zulip if job fails:
+      - name: 'Send notification to Zulip in case of failure'
         # Pin action to full length commit SHA
-        uses: 8398a7/action-slack@28ba43ae48961b90635b50953d216767a6bea486 # v3.16.2
-        with:
-          status: ${{ job.status }}
-          channel: '#npm-ci'
+        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
         if: failure()
+        with:
+          api-key: ${{ secrets.ZULIP_API_KEY }}
+          email: 'github-actions-bot@stdlib.zulipchat.com'
+          organization-url: 'https://stdlib.zulipchat.com'
+          to: 'workflows-standalone'
+          type: 'stream'
+          topic: ${{ github.event.repository.name }}
+          content: |
+            :cross_mark: **${{ github.workflow }}** workflow failed
+
+            **Repository:** [${{ github.repository }}](${{ github.server_url }}/${{ github.repository }})
+            **Run:** [View workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})

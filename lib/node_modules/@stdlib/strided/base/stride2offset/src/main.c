@@ -33,7 +33,7 @@
 * int64_t offset = stdlib_strided_stride2offset( 10, -10 );
 * // returns 90
 */
-int64_t stdlib_strided_stride2offset( int64_t N, int64_t stride ) {
+int64_t stdlib_strided_stride2offset( const int64_t N, const int64_t stride ) {
 	if ( stride > 0 ) {
 		return 0;
 	}

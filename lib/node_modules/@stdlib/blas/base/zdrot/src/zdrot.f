@@ -42,14 +42,14 @@
 ! > * We will gladly answer any questions regarding the software. If a modification is done, however, it is the responsibility of the person who modified the routine to provide support.
 !
 ! @param {integer} N - number of indexed elements
-! @param {Array<complex<double>>} zx - first input array
-! @param {integer} strideX - `zx` stride length
-! @param {Array<complex<double>>} zy - second input array
-! @param {integer} strideY - `zy` stride length
+! @param {Array<complex<double>>} x - first input array
+! @param {integer} strideX - `x` stride length
+! @param {Array<complex<double>>} y - second input array
+! @param {integer} strideY - `y` stride length
 ! @param {double} c - cosine of the angle of rotation
 ! @param {double} s - sine of the angle of rotation
 !<
-subroutine zdrot( N, zx, strideX, zy, strideY, c, s )
+subroutine zdrot( N, x, strideX, y, strideY, c, s )
   implicit none
   ! ..
   ! Scalar arguments:
@@ -57,7 +57,7 @@ subroutine zdrot( N, zx, strideX, zy, strideY, c, s )
   double precision :: c, s
   ! ..
   ! Array arguments:
-  complex(kind=kind(0.0d0)) :: zx(*), zy(*)
+  complex(kind=kind(0.0d0)) :: x(*), y(*)
   ! ..
   ! Local scalars:
   integer :: ix, iy, i
@@ -69,9 +69,9 @@ subroutine zdrot( N, zx, strideX, zy, strideY, c, s )
   ! ..
   if ( strideX == 1 .AND. strideY == 1 ) then
     do i = 1, N
-      ztmp = ( c*zx( i ) ) + ( s*zy( i ) )
-      zy( i ) = ( c*zy( i ) ) - ( s*zx( i ) )
-      zx( i ) = ztmp
+      ztmp = ( c*x( i ) ) + ( s*y( i ) )
+      y( i ) = ( c*y( i ) ) - ( s*x( i ) )
+      x( i ) = ztmp
     end do
   else
     if ( strideX < 0 ) then
@@ -85,9 +85,9 @@ subroutine zdrot( N, zx, strideX, zy, strideY, c, s )
       iy = 1
     end if
     do i = 1, N
-      ztmp = ( c*zx( ix ) ) + ( s*zy( iy ) )
-      zy( iy ) = ( c*zy( iy ) ) - ( s*zx( ix ) )
-      zx( ix ) = ztmp
+      ztmp = ( c*x( ix ) ) + ( s*y( iy ) )
+      y( iy ) = ( c*y( iy ) ) - ( s*x( ix ) )
+      x( ix ) = ztmp
       ix = ix + strideX
       iy = iy + strideY
     end do

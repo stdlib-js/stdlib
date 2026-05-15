@@ -1,0 +1,13 @@
+
+{{alias}}
+    Number of significand bits in the high word of a double-precision floating-
+    point number.
+
+    Examples
+    --------
+    > {{alias}}
+    20
+
+    See Also
+    --------
+

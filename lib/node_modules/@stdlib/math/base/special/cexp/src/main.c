@@ -17,9 +17,15 @@
 */
 
 #include "stdlib/math/base/special/cexp.h"
+#include "stdlib/math/base/special/exp.h"
+#include "stdlib/math/base/special/sincos.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/assert/is_infinite.h"
+#include "stdlib/constants/float64/pinf.h"
+#include "stdlib/math/base/special/copysign.h"
+#include "stdlib/constants/float64/ninf.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/reim.h"
-#include <math.h>
 
 /**
 * Evaluates the exponential function of a double-precision complex floating-point number.
@@ -48,27 +54,28 @@ stdlib_complex128_t stdlib_base_cexp( const stdlib_complex128_t z ) {
 
 	stdlib_complex128_reim( z, &re, &im );
 
-	if ( isnan( re ) ){
-		re = NAN;
+	if ( stdlib_base_is_nan( re ) ) {
+		re = 0.0 / 0.0; // NaN
 		im = ( im == 0.0 ) ? im : re;
-	} else if ( isinf( im ) ){
-		if ( re == INFINITY ) {
+	} else if ( stdlib_base_is_infinite( im ) ) {
+		if ( re == STDLIB_CONSTANT_FLOAT64_PINF ) {
 			re = -re;
-			im = NAN;
-		} else if ( re == -INFINITY ) {
+			im = 0.0 / 0.0; // NaN
+		} else if ( re == STDLIB_CONSTANT_FLOAT64_NINF ) {
 			re = -0.0;
-			im = copysign( 0.0, im );
+			im = stdlib_base_copysign( 0.0, im );
 		} else {
-			re = NAN;
-			im = NAN;
+			re = 0.0 / 0.0; // NaN
+			im = 0.0 / 0.0; // NaN
 		}
 	} else {
-		e = exp( re );
+		e = stdlib_base_exp( re );
 		if ( im == 0.0 ) {
 			re = e;
 		} else {
-			re = cos( im ) * e;
-			im = sin( im ) * e;
+			stdlib_base_sincos( im, &im, &re );
+			re *= e;
+			im *= e;
 		}
 	}
 	return stdlib_complex128( re, im );
