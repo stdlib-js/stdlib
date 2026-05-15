@@ -25,6 +25,7 @@
 #define NAME "sincospi"
 #define ITERATIONS 1000000
 #define REPEATS 3
+#define PI 3.14159265358979323846
 
 /**
 * Prints the TAP version.
@@ -102,8 +103,8 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = sin( M_PI * x[ i%100 ] );
-		z = cos( M_PI * x[ i%100 ] );
+		y = sin( PI * x[ i%100 ] );
+		z = cos( PI * x[ i%100 ] );
 		if ( y != y || z != z ) {
 			printf( "should not return NaN\n" );
 			break;

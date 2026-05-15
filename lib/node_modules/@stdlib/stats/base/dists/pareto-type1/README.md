@@ -46,7 +46,7 @@ The namespace contains the following distribution functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`cdf( x, alpha, beta )`][@stdlib/stats/base/dists/pareto-type1/cdf]</span><span class="delimiter">: </span><span class="description">Pareto (Type I) distribution cumulative distribution function.</span>
--   <span class="signature">[`logcdf( x, alpha, beta )`][@stdlib/stats/base/dists/pareto-type1/logcdf]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of the cumulative distribution function for a Pareto (Type I) distribution.</span>
+-   <span class="signature">[`logcdf( x, alpha, beta )`][@stdlib/stats/base/dists/pareto-type1/logcdf]</span><span class="delimiter">: </span><span class="description">Pareto (Type I) distribution logarithm of cumulative distribution function.</span>
 -   <span class="signature">[`logpdf( x, alpha, beta )`][@stdlib/stats/base/dists/pareto-type1/logpdf]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of the probability density function (PDF) for a Pareto (Type I) distribution.</span>
 -   <span class="signature">[`pdf( x, alpha, beta )`][@stdlib/stats/base/dists/pareto-type1/pdf]</span><span class="delimiter">: </span><span class="description">Pareto (Type I) distribution probability density function (PDF).</span>
 -   <span class="signature">[`quantile( p, alpha, beta )`][@stdlib/stats/base/dists/pareto-type1/quantile]</span><span class="delimiter">: </span><span class="description">Pareto (Type I) distribution quantile function.</span>

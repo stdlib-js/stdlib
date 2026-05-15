@@ -107,7 +107,7 @@ interface Routine {
 * var y = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 *
 * dsyr2( 'column-major', 'upper', 3, 1.0, x, 1, y, 1, A, 3 );
-* // A => <Float64Array>[ 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 3.0, 2.0, 19.0 ]
+* // A => <Float64Array>[ 3.0, 2.0, 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 19.0 ]
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
@@ -117,7 +117,7 @@ interface Routine {
 * var y = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 *
 * dsyr2.ndarray( 'upper', 3, 1.0, x, 1, 0, y, 1, 0, A, 1, 3, 0 );
-* // A => <Float64Array>[ 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 3.0, 2.0, 19.0 ]
+* // A => <Float64Array>[ 3.0, 2.0, 3.0, 6.0, 9.0, 2.0, 9.0, 14.0, 19.0 ]
 */
 declare var dsyr2: Routine;
 

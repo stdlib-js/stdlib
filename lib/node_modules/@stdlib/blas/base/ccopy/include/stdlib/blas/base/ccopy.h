@@ -32,12 +32,12 @@ extern "C" {
 #endif
 
 /**
-* Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
+* Copies values from one single-precision complex floating-point vector to another single-precision complex floating-point vector.
 */
 void API_SUFFIX(c_ccopy)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, void *Y, const CBLAS_INT strideY );
 
 /**
-* Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector using alternative indexing semantics.
+* Copies values from one single-precision complex floating-point vector to another single-precision complex floating-point vector using alternative indexing semantics.
 */
 void API_SUFFIX(c_ccopy_ndarray)( const CBLAS_INT N, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 

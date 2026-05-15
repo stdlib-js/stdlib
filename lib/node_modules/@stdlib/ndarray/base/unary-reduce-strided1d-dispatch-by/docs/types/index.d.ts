@@ -551,6 +551,7 @@ interface UnaryStrided1dDispatchByConstructor {
 */
 declare var ctor: UnaryStrided1dDispatchByConstructor;
 
+// eslint-doctest-alias: UnaryStrided1dDispatchBy
 
 // EXPORTS //
 
