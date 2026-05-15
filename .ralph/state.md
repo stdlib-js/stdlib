@@ -46,8 +46,18 @@ TypeScript type: `T extends typedndarray<boolean>` (same as `falsesLike`).
 ## Open Questions
 None.
 
-## Review Findings
-(pending first review)
+## Iteration 1 — Review Findings
+
+### Sub-agent E (Issue-scope auditor): NO ISSUES
+The diff does exactly what the issue asked — nothing more, nothing less.
+
+### Sub-agent C (Code quality & convention): 4 MINOR issues — ALL FIXED
+1. ~~`package.json` description missing backticks around `true`~~ → FIXED
+2. ~~`package.json` missing `booleans` keyword, wrong order of `bool`/`boolean`~~ → FIXED
+3. ~~Size benchmarks used `@stdlib/ndarray/base/trues` instead of `@stdlib/ndarray/empty`~~ → FIXED
+4. ~~Test titles missing "and" word~~ → FIXED
+
+### Sub-agents A, B, D: pending
 
 ## Decision Log
 - Using `falses-like` as primary reference (not `ones-like`) because it supports the same boolean/generic dtype subset.
