@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# gammincinv
+# gammaincinv
 
 > Inverse of [incomplete gamma function][incomplete-gamma-function].
 

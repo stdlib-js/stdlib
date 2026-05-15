@@ -1,0 +1,125 @@
+{
+  "all": [
+    "r",
+    "x",
+    "j",
+    "c",
+    "z",
+    "h",
+    "f",
+    "d",
+    "o",
+    "k",
+    "i",
+    "s",
+    "t",
+    "u",
+    "b",
+    "a"
+  ],
+  "typed": [
+    "r",
+    "x",
+    "j",
+    "c",
+    "z",
+    "h",
+    "f",
+    "d",
+    "k",
+    "i",
+    "s",
+    "t",
+    "u",
+    "b",
+    "a"
+  ],
+  "floating_point": [
+    "j",
+    "c",
+    "z",
+    "h",
+    "f",
+    "d"
+  ],
+  "real_floating_point": [
+    "h",
+    "f",
+    "d"
+  ],
+  "complex_floating_point": [
+    "j",
+    "c",
+    "z"
+  ],
+  "boolean": [
+    "x"
+  ],
+  "integer": [
+    "k",
+    "i",
+    "s",
+    "t",
+    "u",
+    "b",
+    "a"
+  ],
+  "signed_integer": [
+    "k",
+    "i",
+    "s"
+  ],
+  "unsigned_integer": [
+    "t",
+    "u",
+    "b",
+    "a"
+  ],
+  "real": [
+    "h",
+    "f",
+    "d",
+    "k",
+    "i",
+    "s",
+    "t",
+    "u",
+    "b",
+    "a"
+  ],
+  "numeric": [
+    "j",
+    "c",
+    "z",
+    "h",
+    "f",
+    "d",
+    "k",
+    "i",
+    "s",
+    "t",
+    "u",
+    "b",
+    "a"
+  ],
+  "index": [
+    "i",
+    "b",
+    "x",
+    "o"
+  ],
+  "integer_index": [
+    "i"
+  ],
+  "boolean_index": [
+    "x"
+  ],
+  "mask_index": [
+    "b"
+  ],
+  "typed_index": [
+    "i",
+    "b",
+    "x"
+  ]
+}

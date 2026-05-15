@@ -5,11 +5,11 @@
 
     Parameters
     ----------
-    from: string
-        ndarray data type.
+    from: string|DataType
+        Data type to cast from.
 
-    to: string
-        ndarray data type.
+    to: string|DataType
+        Data type to cast to.
 
     Returns
     -------

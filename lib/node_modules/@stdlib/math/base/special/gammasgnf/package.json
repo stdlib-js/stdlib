@@ -63,5 +63,78 @@
     "float32",
     "sign",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "gammasgn",
+      "alias": "gammasgnf",
+      "pkg_desc": "compute the sign of the gamma function for a single-precision floating-point number",
+      "desc": "computes the sign of the gamma function for a single-precision floating-point number",
+      "short_desc": "sign of the gamma function",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -10,
+              10
+            ]
+          },
+          "example_values": [
+            1,
+            -0.5,
+            -1.5,
+            1.5,
+            2,
+            -2,
+            3,
+            4,
+            5,
+            0.5,
+            2.5,
+            -2.5,
+            -3.5,
+            0,
+            -1,
+            -3,
+            10,
+            -10.5,
+            0.1,
+            -0.1
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "sign of the gamma function",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "gamma",
+        "sign",
+        "gammasgn"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

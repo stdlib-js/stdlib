@@ -47,6 +47,17 @@ else
 endif
 endif
 
+# Indicate whether to build native add-ons:
+ifndef BUILD_ADDONS
+	BUILD_NATIVE_ADDONS := false
+else
+ifeq ($(BUILD_ADDONS), 1)
+	BUILD_NATIVE_ADDONS := true
+else
+	BUILD_NATIVE_ADDONS := false
+endif
+endif
+
 # Indicate whether to fix linting errors:
 ifndef FIX
 	AUTOFIX := false
@@ -677,3 +688,14 @@ DEPS_CPPCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cppcheck_$(deps_cppcheck_version_sl
 
 # Host platform:
 DEPS_CPPCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
+
+# FFTPACK...
+
+# Define the PFFFT version:
+DEPS_FFTPACK_VERSION ?= 1.1.0
+
+# Generate a version slug:
+deps_fftpack_version_slug := $(subst .,_,$(DEPS_FFTPACK_VERSION))
+
+# Define the output path when building FFTPACK:
+DEPS_FFTPACK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/pffft-$(DEPS_FFTPACK_VERSION)

@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { RealFloatingPointAndGenericDataType as DataType, floatndarray, genericndarray, Order, Mode, Shape, typedndarray } from '@stdlib/types/ndarray';
+import { RealFloatingPointAndGenericDataType as DataType, floatndarray, typedndarray, genericndarray, Order, Mode, Shape } from '@stdlib/types/ndarray';
 import * as random from '@stdlib/types/random';
 
 /**
@@ -119,11 +119,11 @@ interface PRNG {
 }
 
 /**
-* Interface for generating pseudorandom numbers drawn from a uniform distribution.
+* Interface for generating pseudorandom numbers drawn from a continuous uniform distribution.
 */
 interface RandomFunction extends PRNG {
 	/**
-	* Returns an ndarray containing pseudorandom numbers drawn from a uniform distribution.
+	* Returns an ndarray containing pseudorandom numbers drawn from a continuous uniform distribution.
 	*
 	* @param shape - output shape
 	* @param a - minimum support (inclusive)
@@ -135,7 +135,7 @@ interface RandomFunction extends PRNG {
 	<T extends typedndarray<number>, U extends typedndarray<number>>( shape: Shape, a: number | T, b: number | U, options?: Options ): RandomArray;
 
 	/**
-	* Fills an ndarray with pseudorandom numbers drawn from a uniform distribution.
+	* Fills an ndarray with pseudorandom numbers drawn from a continuous uniform distribution.
 	*
 	* @param a - minimum support (inclusive)
 	* @param b - maximum support (exclusive)
@@ -147,11 +147,11 @@ interface RandomFunction extends PRNG {
 }
 
 /**
-* Interface for generating pseudorandom numbers drawn from a uniform distribution.
+* Interface for generating pseudorandom numbers drawn from a continuous uniform distribution.
 */
 interface Random extends PRNG {
 	/**
-	* Returns an ndarray containing pseudorandom numbers drawn from a uniform distribution.
+	* Returns an ndarray containing pseudorandom numbers drawn from a continuous uniform distribution.
 	*
 	* @param shape - output shape
 	* @param a - minimum support (inclusive)
@@ -167,7 +167,7 @@ interface Random extends PRNG {
 	<T extends typedndarray<number>, U extends typedndarray<number>>( shape: Shape, a: number | T, b: number | U, options?: Options ): RandomArray;
 
 	/**
-	* Fills an ndarray with pseudorandom numbers drawn from a uniform distribution.
+	* Fills an ndarray with pseudorandom numbers drawn from a continuous uniform distribution.
 	*
 	* @param a - minimum support (inclusive)
 	* @param b - maximum support (exclusive)
@@ -190,7 +190,7 @@ interface Random extends PRNG {
 	assign<T extends typedndarray<number>, U extends typedndarray<number>, V extends typedndarray<number>>( a: number | T, b: number | U, out: V ): V;
 
 	/**
-	* Returns a function for creating ndarrays containing pseudorandom numbers drawn from a uniform distribution.
+	* Returns a function for creating ndarrays containing pseudorandom numbers drawn from a continuous uniform distribution.
 	*
 	* @param options - function options
 	* @throws must provide a valid state
@@ -213,7 +213,7 @@ interface Random extends PRNG {
 }
 
 /**
-* Generates pseudorandom numbers drawn from a uniform distribution.
+* Generates pseudorandom numbers drawn from a continuous uniform distribution.
 *
 * @param shape - output shape
 * @param a - minimum support (inclusive)

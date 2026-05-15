@@ -175,7 +175,7 @@ int main( void ) {
     int i;
     for ( i = 0; i < 100; i++ ) {
         x = ( ( (double)rand() / (double)RAND_MAX ) * 100.0 );
-        v = stdlib_base_log( x );
+        v = stdlib_base_log2( x );
         printf( "log2(%lf) = %lf\n", x, v );
     }
 }

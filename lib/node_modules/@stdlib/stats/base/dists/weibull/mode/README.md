@@ -127,21 +127,18 @@ v = mode( 1.0, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var mode = require( '@stdlib/stats/base/dists/weibull/mode' );
 
-var lambda;
-var k;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var lambda = uniform( 10, EPS, 10.0, opts );
+var k = uniform( 10, EPS, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    k = ( randu()*10.0 ) + EPS;
-    lambda = ( randu()*10.0 ) + EPS;
-    v = mode( k, lambda );
-    console.log( 'k: %d, λ: %d, mode(X;k,λ): %d', k.toFixed( 4 ), lambda.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'k: %0.4f, λ: %0.4f, mode(X;k,λ): %0.4f', k, lambda, mode );
 ```
 
 </section>

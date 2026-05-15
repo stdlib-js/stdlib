@@ -117,10 +117,10 @@ type Callback = Nullary | Unary | Binary | Ternary | Quaternary;
 * // returns 1
 *
 * r = iter.next().value;
-* // returns 2
+* // returns 3
 *
 * r = iter.next().value;
-* // returns 4
+* // returns 7
 *
 * // ...
 */
@@ -161,10 +161,10 @@ declare function iterStridedBy( iterator: Iterator, fcn: Callback, offset?: numb
 * // returns 1
 *
 * r = iter.next().value;
-* // returns 2
+* // returns 3
 *
 * r = iter.next().value;
-* // returns 4
+* // returns 7
 *
 * // ...
 */
@@ -207,7 +207,7 @@ declare function iterStridedBy( iterator: Iterator, fcn: Callback, offset?: numb
 * // returns 1
 *
 * r = iter.next().value;
-* // returns 2
+* // returns 3
 *
 * // ...
 */

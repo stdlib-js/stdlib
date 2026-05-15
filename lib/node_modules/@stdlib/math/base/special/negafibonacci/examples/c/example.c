@@ -18,14 +18,13 @@
 
 #include "stdlib/math/base/special/negafibonacci.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-	int32_t i;
+	double i;
 	double v;
 
-	for ( i = 0; i > -79; i-- ) {
+	for ( i = 0.0; i > -79.0; i-- ) {
 		v = stdlib_base_negafibonacci( i );
-		printf( "negafibonacci(%d) = %lf\n", i, v );
+		printf( "negafibonacci(%lf) = %lf\n", i, v );
 	}
 }

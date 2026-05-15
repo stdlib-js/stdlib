@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the  Level 1 routine `sscal`.
 */
-#ifndef SSCAL_H
-#define SSCAL_H
+#ifndef STDLIB_BLAS_BASE_SSCAL_H
+#define STDLIB_BLAS_BASE_SSCAL_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,5 +45,5 @@ void API_SUFFIX(c_sscal_ndarray)( const CBLAS_INT N, const float alpha, float *X
 }
 #endif
 
-#endif // !SSCAL_H
+#endif // !STDLIB_BLAS_BASE_SSCAL_H
 

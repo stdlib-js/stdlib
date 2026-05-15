@@ -47,15 +47,20 @@ var opts = {
 httpServer( opts );
 ```
 
+The function supports the following parameters:
+
+-   **options**: function options.
+-   **clbk**: callback to invoke upon creating a server (_optional_).
+
 The function accepts the following options:
 
--   **html**: `buffer` or `string` to serve as HTML content.
--   **javascript**: `buffer` or `string` to serve as JavaScript.
+-   **html**: Buffer or string to serve as HTML content.
+-   **javascript**: Buffer or string to serve as JavaScript.
 -   **port**: server port. Default: `0` (i.e., randomly assigned).
 -   **maxport**: max server port (used when port hunting). Default: `=port`.
 -   **hostname**: server hostname.
 -   **address**: server address. Default: `"0.0.0.0"`.
--   **open**: `boolean` indicating whether to launch a web browser. Default: `false`.
+-   **open**: boolean indicating whether to launch a web browser. Default: `false`.
 
 To serve HTML content, set the `html` option. Once the content is requested, the server will close.
 
@@ -127,7 +132,7 @@ httpServer( opts, onReady );
 
 ## Notes
 
--   If neither the `html` or `javascript` option is set, the server serves an HTML boilerplate and then closes.
+-   If neither the `html` nor `javascript` option is set, the server serves an HTML boilerplate and then closes.
 
 </section>
 

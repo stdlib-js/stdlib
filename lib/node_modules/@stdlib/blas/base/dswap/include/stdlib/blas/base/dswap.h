@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `dswap`.
 */
-#ifndef DSWAP_H
-#define DSWAP_H
+#ifndef STDLIB_BLAS_BASE_DSWAP_H
+#define STDLIB_BLAS_BASE_DSWAP_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_dswap_ndarray)( const CBLAS_INT N, double *X, const CBLAS_INT 
 }
 #endif
 
-#endif // !DSWAP_H
+#endif // !STDLIB_BLAS_BASE_DSWAP_H
