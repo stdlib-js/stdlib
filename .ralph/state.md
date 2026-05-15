@@ -57,7 +57,15 @@ The diff does exactly what the issue asked — nothing more, nothing less.
 3. ~~Size benchmarks used `@stdlib/ndarray/base/trues` instead of `@stdlib/ndarray/empty`~~ → FIXED
 4. ~~Test titles missing "and" word~~ → FIXED
 
-### Sub-agents A, B, D: pending
+### Sub-agent D (Security & Robustness): NO BLOCKERS — All advisory
+1. Misleading error when numeric dtype passed → DISPUTED: `falses-like` has identical behavior; no dtype guard exists there either. Consistent with codebase pattern.
+2. No test coverage for numeric-dtype rejection → DISPUTED: `falses-like` tests also don't cover this. Consistent.
+3. TypeScript type vs runtime guard gap → DISPUTED: Same in `falses-like`.
+4. Error propagation message quality → DISPUTED: Same as `falses-like`.
+5. Prototype pollution: None found.
+6. Shared state: None found.
+
+### Sub-agents A, B: pending
 
 ## Decision Log
 - Using `falses-like` as primary reference (not `ones-like`) because it supports the same boolean/generic dtype subset.
