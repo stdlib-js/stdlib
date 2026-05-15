@@ -46,7 +46,7 @@ jobs:
 
     # Define the job's steps:
     steps:
-      # Add "bot: In progress" label to the issue / PR (only applicable to PR comments):
+      # Add "bot: In progress" label to the issue / PR:
       - name: 'Add in-progress label'
         if: github.event.issue.pull_request
         # Pin action to full length commit SHA
