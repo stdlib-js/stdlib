@@ -72,7 +72,21 @@ The diff does exactly what the issue asked — nothing more, nothing less.
 
 All acceptance criteria 1–7 confirmed functionally satisfied.
 
-### Sub-agent B (Test quality): pending
+### Sub-agent B (Test quality): All findings DISPUTED — all pre-existing in `falses-like`
+- "BLOCKER" incompatible dtype test missing → DISPUTED: `falses-like` also lacks this test; consistent with established pattern.
+- "MAJOR" missing `instanceOf(getData(arr), Array)` → DISPUTED: `falses-like` only uses `isEqualArray`, same pattern.
+- "MAJOR" missing `instanceOf(getData(arr), BooleanArray)` → DISPUTED: `falses-like` uses `isEqualBooleanArray` (same pattern).
+- "MAJOR" vacuous empty assertion → DISPUTED: `falses-like` has same assertion.
+- All MINOR items → DISPUTED: pre-existing in `falses-like`.
+- Sub-agent B claims "and" in test titles is spurious → INCORRECT: `falses-like` has "and" in titles; sub-agent C correctly identified this as the convention.
+
+## Exit Condition Check
+- [x] All acceptance criteria satisfied (functionally verified)
+- [x] Zero blocker/major findings remain open
+- [x] All disputed findings documented with written justification
+- [x] Examples run cleanly
+- [x] Namespace registration correct
+- [x] PR template can be filled in truthfully
 
 ## Decision Log
 - Using `falses-like` as primary reference (not `ones-like`) because it supports the same boolean/generic dtype subset.
