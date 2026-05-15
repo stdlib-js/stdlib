@@ -1,6 +1,6 @@
 
 {{alias}}( ord, uplo, trans, diag, N, A, lda, x, sx )
-    Performs one of the matrix-vector operations `x = A*x` or `x = A**T*x`,
+    Performs one of the matrix-vector operations `x = A*x` or `x = A^T*x`,
     where `x` is an `N` element vector and `A` is an `N` by `N` unit, or
     non-unit, upper or lower triangular matrix.
 
@@ -55,7 +55,7 @@
 
 
 {{alias}}.ndarray( uplo, trans, diag, N, A, sa1, sa2, oa, x, sx, ox )
-    Performs one of the matrix-vector operations `x = A*x` or `x = A**T*x`,
+    Performs one of the matrix-vector operations `x = A*x` or `x = A^T*x`,
     using alternative indexing semantics and where `x` is an `N` element vector
     and `A` is an `N` by `N` unit, or non-unit, upper or lower triangular
     matrix.

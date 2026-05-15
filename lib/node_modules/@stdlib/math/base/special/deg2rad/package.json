@@ -67,5 +67,79 @@
     "double",
     "dbl"
   ],
-  "__stdlib__": {}
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "deg2rad",
+      "alias": "deg2rad",
+      "pkg_desc": "convert an angle from degrees to radians",
+      "desc": "converts an angle from degrees to radians",
+      "short_desc": "",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "angle in degrees",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -360,
+              360
+            ]
+          },
+          "example_values": [
+            -213,
+            0,
+            147,
+            -58,
+            339,
+            -301,
+            72,
+            -149,
+            19,
+            -276,
+            95,
+            -33,
+            281,
+            -194,
+            46,
+            -9,
+            128,
+            -327,
+            219,
+            -85
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "angle in radians",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "geometry",
+        "radians",
+        "degrees",
+        "angle",
+        "convert"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

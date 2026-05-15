@@ -42,19 +42,11 @@ Scales a double-precision complex floating-point number by a real-valued double-
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var z = new Complex128( 5.0, 3.0 );
 
 var v = scale( 5.0, z );
-// returns <Complex128>
-
-var re = real( v );
-// returns 25.0
-
-var im = imag( v );
-// returns 15.0
+// returns <Complex128>[ 25.0, 15.0 ]
 ```
 
 The function supports the following parameters:

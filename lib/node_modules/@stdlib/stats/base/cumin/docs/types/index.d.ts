@@ -51,7 +51,7 @@ interface Routine {
 	* var y = [ 0.0, 0.0, 0.0 ];
 	*
 	* cumin( x.length, x, 1, y, 1 );
-	* // y => [ 1.0, 1.0, 2.0 ]
+	* // y => [ 1.0, -2.0, -2.0 ]
 	*/
 	<T extends OutputArray>( N: number, x: InputArray, strideX: number, y: T, strideY: number ): T;
 
@@ -72,7 +72,7 @@ interface Routine {
 	* var y = [ 0.0, 0.0, 0.0 ];
 	*
 	* cumin.ndarray( x.length, x, 1, 0, y, 1, 0 );
-	* // y => [ 1.0, 1.0, 2.0 ]
+	* // y => [ 1.0, -2.0, -2.0 ]
 	*/
 	ndarray<T extends OutputArray>( N: number, x: InputArray, strideX: number, offsetX: number, y: T, strideY: number, offsetY: number ): T;
 }
@@ -92,14 +92,14 @@ interface Routine {
 * var y = [ 0.0, 0.0, 0.0 ];
 *
 * cumin( x.length, x, 1, y, 1 );
-* // y => [ 1.0, 1.0, 2.0 ]
+* // y => [ 1.0, -2.0, -2.0 ]
 *
 * @example
-* var x = [ 1.0, -2.0, 2.0 ] );
+* var x = [ 1.0, -2.0, 2.0 ];
 * var y = [ 0.0, 0.0, 0.0 ];
 *
 * cumin.ndarray( x.length, x, 1, 0, y, 1, 0 );
-* // y => [ 1.0, 1.0, 2.0 ]
+* // y => [ 1.0, -2.0, -2.0 ]
 */
 declare var cumin: Routine;
 

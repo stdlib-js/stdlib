@@ -258,7 +258,7 @@ interface ForEachAsync {
 	* };
 	*
 	* // Create a `forEachAsync` function which invokes `read` for each collection element sequentially:
-	* var forEachAsync = factory( opts, read );
+	* var forEach = forEachAsync.factory( opts, read );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -275,7 +275,7 @@ interface ForEachAsync {
 	* }
 	*
 	* // Run `read` for each element in `files`:
-	* forEachAsync( files, done );
+	* forEach( files, done );
 	*/
 	factory<T = unknown, V = unknown>( options: Options<T, V>, fcn: Fcn<T, V> ): FactoryFunction;
 
@@ -309,7 +309,7 @@ interface ForEachAsync {
 	* }
 	*
 	* // Create a `forEachAsync` function which invokes `read` for each collection element sequentially:
-	* var forEachAsync = factory( read );
+	* var forEach = forEachAsync.factory( read );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -326,7 +326,7 @@ interface ForEachAsync {
 	* }
 	*
 	* // Run `read` for each element in `files`:
-	* forEachAsync( files, done );
+	* forEach( files, done );
 	*/
 	factory<T = unknown, V = unknown>( fcn: Fcn<T, V> ): FactoryFunction;
 }

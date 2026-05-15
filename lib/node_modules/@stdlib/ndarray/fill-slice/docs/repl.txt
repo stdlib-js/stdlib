@@ -1,0 +1,65 @@
+
+{{alias}}( x, value, ...s[, options] )
+    Fills an input ndarray view with a specified value.
+
+    The function supports three (mutually exclusive) means of providing slice
+    arguments:
+
+    1. Providing a single MultiSlice object.
+    2. Providing a single array containing slice arguments.
+    3. Providing slice arguments as separate arguments.
+
+    An individual slice argument must be either a Slice, an integer, null, or
+    undefined.
+
+    If providing a MultiSlice object or an array of slice arguments, no other
+    slice arguments should be provided.
+
+    Mixing function invocation styles (e.g., providing multiple MultiSlice
+    objects or providing an array of slice arguments followed by additional
+    slice arguments) is not supported.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    value: any
+        Fill value. Must be able to safely cast to the input ndarray data type.
+        Fill values having floating-point data types (both real and complex) are
+        allowed to downcast to a lower precision data type of the same kind
+        (e.g., a scalar double-precision floating-point number can be used to
+        fill a 'float32' input ndarray).
+
+    s: ...MultiSlice|Slice|null|undefined|integer|ArrayLike
+        Slice arguments.
+
+    options: Object (optional)
+        Options.
+
+    options.strict: boolean (optional)
+        Boolean indicating whether to enforce strict bounds checking. Default:
+        true.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ], { 'dtype': 'float64' } );
+    > {{alias:@stdlib/ndarray/to-array}}( x )
+    [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+    > var s0 = new {{alias:@stdlib/slice/ctor}}( 0, 1 );
+    > var s1 = new {{alias:@stdlib/slice/ctor}}( null, null );
+    > var s = new {{alias:@stdlib/slice/multi}}( s0, s1 );
+    > var out = {{alias}}( x, 10.0, s );
+    > var bool = ( out === x )
+    true
+    > {{alias:@stdlib/ndarray/to-array}}( x )
+    [ [ 10.0, 10.0 ], [ 0.0, 0.0 ] ]
+
+    See Also
+    --------
+

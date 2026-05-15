@@ -68,5 +68,83 @@
     "trigonometry",
     "polyfill",
     "ponyfill"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "atan",
+      "alias": "atan",
+      "pkg_desc": "compute the arctangent (in radians) of a double-precision floating-point number",
+      "desc": "computes the arctangent (in radians) of a double-precision floating-point number",
+      "short_desc": "arctangent",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -100,
+              100
+            ]
+          },
+          "example_values": [
+            0.33,
+            -57.2,
+            1.2,
+            -0.77,
+            1000,
+            -3.41,
+            8.9,
+            -250.5,
+            0.01,
+            42,
+            -19.7,
+            73.6,
+            -0.58,
+            5.5,
+            -99.9,
+            7.25,
+            -12.3,
+            0,
+            315.8,
+            -1.1
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "arctangent (in radians)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "atan",
+        "arctangent",
+        "tangent",
+        "tan",
+        "arc",
+        "inverse"
+      ],
+      "extra_keywords": [
+        "math.atan"
+      ]
+    }
+  }
 }

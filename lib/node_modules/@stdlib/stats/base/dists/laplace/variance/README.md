@@ -111,20 +111,17 @@ y = variance( 0.0, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var variance = require( '@stdlib/stats/base/dists/laplace/variance' );
 
-var mu;
-var b;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var mu = uniform( 10, -5.0, 5.0, opts );
+var b = uniform( 10, 0.0, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    mu = ( randu()*10.0 ) - 5.0;
-    b = randu() * 20.0;
-    y = variance( mu, b );
-    console.log( 'µ: %d, b: %d, Var(X;µ,b): %d', mu.toFixed( 4 ), b.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'µ: %0.4f, b: %0.4f, Var(X;µ,b): %0.4f', mu, b, variance );
 ```
 
 </section>
