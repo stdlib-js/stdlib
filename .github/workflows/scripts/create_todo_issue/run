@@ -73,7 +73,7 @@ post_source_comment() {
 	fi
 	curl -s -X POST \
 		-H "Authorization: token ${GITHUB_TOKEN}" \
-		-H "Accept: application/vnd.github.v3+json" \
+		-H "Accept: application/vnd.github+json" \
 		-H "Content-Type: application/json" \
 		-d "${payload}" \
 		"${endpoint}" \
@@ -240,7 +240,7 @@ ${bt}${bt}${bt}"
 	# Verify the commenter is a member of the target organization:
 	membership_status=$(curl -s -o /dev/null -w "%{http_code}" \
 		-H "Authorization: token ${GITHUB_TOKEN}" \
-		-H "Accept: application/vnd.github.v3+json" \
+		-H "Accept: application/vnd.github+json" \
 		"${github_api_url}/orgs/${target_owner}/members/${COMMENTER}")
 
 	if [ "${membership_status}" != "204" ]; then
@@ -281,7 +281,7 @@ ${provenance}"
 	issue_response=$(curl -s \
 		-X POST \
 		-H "Authorization: token ${GITHUB_TOKEN}" \
-		-H "Accept: application/vnd.github.v3+json" \
+		-H "Accept: application/vnd.github+json" \
 		-H "Content-Type: application/json" \
 		-d "${issue_payload}" \
 		"${github_api_url}/repos/${target_owner}/${target_repo}/issues")
@@ -325,5 +325,8 @@ ${provenance}"
 	print_success
 	exit 0
 }
+
+# Set an error handler to capture errors and perform any clean-up tasks:
+trap 'on_error $?' ERR
 
 main

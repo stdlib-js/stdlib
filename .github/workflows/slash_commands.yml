@@ -103,7 +103,7 @@ jobs:
                   'owner': context.repo.owner,
                   'repo': context.repo.repo,
                   'commit_sha': context.payload.comment.commit_id,
-                  'body': `${quote}\n\n@${context.payload.comment.user.login}, slash command not recognized. Please use \`/stdlib help\` to view available commands.`
+                  'body': `${quote}\n\n@${context.payload.comment.user.login}, slash command not recognized. On commit comments, only \`/stdlib todo\` is supported.`
                 });
               } else {
                 await github.rest.issues.createComment({
