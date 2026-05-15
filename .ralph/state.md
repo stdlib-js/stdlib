@@ -65,7 +65,14 @@ The diff does exactly what the issue asked — nothing more, nothing less.
 5. Prototype pollution: None found.
 6. Shared state: None found.
 
-### Sub-agents A, B: pending
+### Sub-agent A (Correctness): NO BLOCKERS / NO MAJOR — 3 minor, all disputed
+1. Missing `@throws` JSDoc in `lib/main.js` → DISPUTED: `falses-like` and `ones-like` "like" packages don't have `@throws` either. The "like" packages delegate validation to `emptyLike`; only the non-like packages (trues, zeros) have `@throws` because they accept an explicit dtype string argument.
+2. No aliasing check (`arr !== x`) in tests → DISPUTED: `falses-like` tests also lack this. Pre-existing pattern.
+3. No stride verification → DISPUTED: `falses-like` tests also lack this. Pre-existing pattern.
+
+All acceptance criteria 1–7 confirmed functionally satisfied.
+
+### Sub-agent B (Test quality): pending
 
 ## Decision Log
 - Using `falses-like` as primary reference (not `ones-like`) because it supports the same boolean/generic dtype subset.
