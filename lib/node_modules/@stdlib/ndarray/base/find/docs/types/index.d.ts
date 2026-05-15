@@ -111,7 +111,7 @@ type Predicate<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T,
 * var out = find( [ x, sv ], predicate );
 * // returns 2.0
 */
-declare function find<T = unknown, U extends typedndarray<T> = typedndarray<T>, V = unknown, ThisArg = unknown >( arrays: [ typedndarray<T>, typedndarray<V> ], predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): T | V;
+declare function find<T = unknown, U extends typedndarray<T> = typedndarray<T>, V = unknown, ThisArg = unknown>( arrays: [ typedndarray<T>, typedndarray<V> ], predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): T | V;
 
 
 // EXPORTS //

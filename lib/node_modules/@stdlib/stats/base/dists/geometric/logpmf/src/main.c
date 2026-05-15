@@ -21,7 +21,6 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/ninf.h"
-#include <math.h>
 
 /**
 * Evaluates the logarithm of the probability mass function (PMF) for a geometric distribution with success probability `p` at a value `x`.

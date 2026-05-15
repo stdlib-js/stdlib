@@ -43,7 +43,7 @@ interface Namespace {
 	* var dtypes = [ 'float64', 'float32', 'generic' ];
 	* var defaultDType = 'float64';
 	*
-	* var rand = new RandomArray( arcsine, dtypes, defaultDType );
+	* var rand = new ns.binary( arcsine, dtypes, defaultDType );
 	*
 	* var v = rand.generate( 10, 2.0, 5.0 );
 	* // returns <Float64Array>
@@ -64,7 +64,7 @@ interface Namespace {
 	* var dtypes = [ 'float64', 'float32', 'generic' ];
 	* var defaultDType = 'float64';
 	*
-	* var rand = new RandomArray( exponential.factory( 2.0 ), dtypes, defaultDType );
+	* var rand = new ns.nullary( exponential.factory( 2.0 ), dtypes, defaultDType );
 	*
 	* var v = rand.generate( 10 );
 	* // returns <Float64Array>
@@ -85,7 +85,7 @@ interface Namespace {
 	* var dtypes = [ 'float64', 'float32', 'generic' ];
 	* var defaultDType = 'float64';
 	*
-	* var rand = new RandomArray( triangular, dtypes, defaultDType );
+	* var rand = new ns.ternary( triangular, dtypes, defaultDType );
 	*
 	* var v = rand.generate( 10, 2.0, 5.0, 3.33 );
 	* // returns <Float64Array>
@@ -106,12 +106,13 @@ interface Namespace {
 	* var dtypes = [ 'float64', 'float32', 'generic' ];
 	* var defaultDType = 'float64';
 	*
-	* var rand = new RandomArray( exponential, dtypes, defaultDType );
+	* var rand = new ns.unary( exponential, dtypes, defaultDType );
 	*
 	* var v = rand.generate( 10, 2.0 );
 	* // returns <Float64Array>
 	*/
 	unary: typeof unary;
+
 }
 
 /**

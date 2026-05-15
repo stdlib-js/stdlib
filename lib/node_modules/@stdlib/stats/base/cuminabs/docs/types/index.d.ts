@@ -95,7 +95,7 @@ interface Routine {
 * // y => [ 1.0, 1.0, 1.0 ]
 *
 * @example
-* var x = [ 1.0, -2.0, 2.0 ] );
+* var x = [ 1.0, -2.0, 2.0 ];
 * var y = [ 0.0, 0.0, 0.0 ];
 *
 * cuminabs.ndarray( x.length, x, 1, 0, y, 1, 0 );

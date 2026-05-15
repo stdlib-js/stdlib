@@ -349,7 +349,7 @@ int main( void ) {
 
 [blas]: http://www.netlib.org/blas
 
-[blas-sgemv]: https://www.netlib.org/lapack/explore-html-3.6.1/d6/d30/group__single__blas__level2_gafc92361b74c6d41c7e5afa0aa5d13ec9.html
+[blas-sgemv]: https://www.netlib.org/lapack/explore-html/d7/dda/group__gemv_ga0d35d880b663ad18204bb23bd186e380.html
 
 [mdn-float32array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array
 

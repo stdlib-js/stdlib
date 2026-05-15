@@ -62,5 +62,80 @@
     "trig",
     "trigonometry",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "secd",
+      "alias": "secdf",
+      "pkg_desc": "compute the secant of a single-precision floating-point number (in degrees)",
+      "desc": "computes the secant of a single-precision floating-point number (in degrees)",
+      "short_desc": "secant",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in degrees)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -180,
+              180
+            ]
+          },
+          "example_values": [
+            0,
+            30,
+            45,
+            60,
+            90,
+            120,
+            135,
+            150,
+            180,
+            -30,
+            -45,
+            -60,
+            -90,
+            -120,
+            -135,
+            -150,
+            -180
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "secant",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "secant",
+        "cosine",
+        "inverse",
+        "trig",
+        "trigonometry",
+        "angle"
+      ],
+      "extra_keywords": [
+        "math.sec"
+      ]
+    }
+  }
 }

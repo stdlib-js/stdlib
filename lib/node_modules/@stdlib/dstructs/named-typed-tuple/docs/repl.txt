@@ -1144,7 +1144,7 @@ tuple.slice( [begin[, end]] )
     the host tuple.
 
     If the method is unable to resolve indices to a non-empty tuple subsequence,
-    the method returns `null`.
+    the method returns an empty typed array.
 
     Parameters
     ----------
@@ -1303,8 +1303,8 @@ tuple.subtuple( [begin[, end]] )
     Creates a new named typed tuple over the same underlying ArrayBuffer and
     with the same underlying data type as the host tuple.
 
-    If the function is unable to resolve indices to a non-empty tuple
-    subsequence, the function returns `null`.
+    If the method is unable to resolve indices to a non-empty tuple subsequence,
+    the method returns an empty typed array.
 
     Parameters
     ----------
@@ -1318,7 +1318,7 @@ tuple.subtuple( [begin[, end]] )
 
     Returns
     -------
-    tuple: TypedArray|null
+    tuple: TypedArray
         A new named typed tuple.
 
     Examples

@@ -250,7 +250,7 @@ interface MapFunAsync {
 	*     }
 	* }
 	*
-	* var map = mapFunAsync.factory( fcn );
+	* var mapFun = mapFunAsync.factory( fcn );
 	*
 	* function done( error, results ) {
 	*     if ( error ) {
@@ -259,7 +259,7 @@ interface MapFunAsync {
 	*     console.log( results );
 	* }
 	*
-	* mapFunAsync( 10, done );
+	* mapFun( 10, done );
 	*/
 	factory( fcn: Fcn ): FactoryFunction;
 }

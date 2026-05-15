@@ -59,8 +59,81 @@
     "special functions",
     "special",
     "function",
-    "fibonaccif",
+    "fibonacci",
     "fib",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "fibonacci",
+      "alias": "fibonaccif",
+      "pkg_desc": "compute the nth Fibonacci number as a single-precision floating-point number",
+      "desc": "computes the nth Fibonacci number as a single-precision floating-point number",
+      "short_desc": "Fibonacci number",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              0,
+              100
+            ]
+          },
+          "example_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            21,
+            34,
+            41,
+            55
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "fibonacci number",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "fibonacci",
+        "fib"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

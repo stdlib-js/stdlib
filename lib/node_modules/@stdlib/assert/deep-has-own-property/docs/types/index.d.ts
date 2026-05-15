@@ -36,7 +36,7 @@ interface Options {
 *
 * @example
 * var obj = { 'a': { 'b': { 'c': 'd' } } };
-* var bool = deepHasOwnProp( obj );
+* var bool = deepHasOwnProp( obj, 'a' );
 */
 type HasFunction = ( value: any ) => boolean;
 
@@ -96,7 +96,7 @@ interface DeepHasOwnProp {
 	( value: any, path: string | Array<string>, options?: Options ): boolean;
 
 	/**
-	* Returns a function which tests whether an object has a nested key path, either own or inherited.
+	* Returns a function which tests whether an object has a nested key path.
 	*
 	* ## Notes
 	*

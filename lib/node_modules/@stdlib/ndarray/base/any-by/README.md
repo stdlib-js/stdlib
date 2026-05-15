@@ -82,7 +82,7 @@ The function accepts the following arguments:
 -   **predicate**: predicate function.
 -   **thisArg**: predicate function execution context (_optional_).
 
-The provided ndarray should be an `object` with the following properties:
+The provided ndarray should be an object with the following properties:
 
 -   **dtype**: data type.
 -   **data**: data buffer.

@@ -105,7 +105,7 @@ interface LogPDF {
 *
 * @example
 * var y = logpdf( 2.0, 0.0, 1.0 );
-* // returns ~-2.254
+* // returns -Infinity
 *
 * var mylogpdf = logpdf.factory( 10.0, 2.0 );
 * y = mylogpdf( 10.0 );

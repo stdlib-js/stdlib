@@ -96,14 +96,14 @@ static double benchmark( void ) {
 	int i;
 
 	int64_t out[ 2 ];
-	int64_t shape[] = { 10, 10, 10 };
+	const int64_t shape[] = { 10, 10, 10 };
 	int64_t strides[] = { 100, 10, 1 };
-	int64_t offset = 1000;
-	int64_t ndims = 3;
+	const int64_t offset = 1000;
+	const int64_t ndims = 3;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		strides[ 0 ] *= ( rand_double() < 0.5 ) ? 1 : -1;
+		strides[ 0 ] = ( i%2 ) ? 100 : -100;
 		stdlib_ndarray_minmax_view_buffer_index( ndims, shape, strides, offset, out );
 		if ( out[ 0 ] > 1e10 ) {
 			printf( "unexpected result\n" );
