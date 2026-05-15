@@ -25,13 +25,13 @@ on:
   workflow_call:
     # Define the input parameters for the workflow:
     inputs:
-      pull_request_number:
-        description: 'Pull request number (required when triggered from a PR comment; mutually exclusive with commit_sha)'
-        required: false
+      source_type:
+        description: 'Source context type: ''pr'' (pull request comment) or ''commit'' (commit comment)'
+        required: true
         type: string
-      commit_sha:
-        description: 'Commit SHA (required when triggered from a commit comment; mutually exclusive with pull_request_number)'
-        required: false
+      source_ref:
+        description: 'Pull request number when source_type is ''pr''; commit SHA when source_type is ''commit'''
+        required: true
         type: string
       comment_body:
         description: 'Body of the slash command comment'
@@ -51,13 +51,13 @@ on:
   # Allow the workflow to be manually triggered:
   workflow_dispatch:
     inputs:
-      pull_request_number:
-        description: 'Pull request number (required when triggered from a PR comment; mutually exclusive with commit_sha)'
-        required: false
+      source_type:
+        description: 'Source context type: ''pr'' (pull request comment) or ''commit'' (commit comment)'
+        required: true
         type: string
-      commit_sha:
-        description: 'Commit SHA (required when triggered from a commit comment; mutually exclusive with pull_request_number)'
-        required: false
+      source_ref:
+        description: 'Pull request number when source_type is ''pr''; commit SHA when source_type is ''commit'''
+        required: true
         type: string
       comment_body:
         description: 'Body of the slash command comment'
@@ -99,8 +99,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN || secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           COMMENT_BODY: ${{ inputs.comment_body }}
           COMMENTER: ${{ inputs.user }}
-          PR_NUMBER: ${{ inputs.pull_request_number }}
-          COMMIT_SHA: ${{ inputs.commit_sha }}
+          SOURCE_TYPE: ${{ inputs.source_type }}
+          SOURCE_REF: ${{ inputs.source_ref }}
         run: |
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_todo_issue/run"
         timeout-minutes: 10

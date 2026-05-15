@@ -249,8 +249,8 @@ jobs:
     # Run reusable workflow:
     uses: ./.github/workflows/create_todo_issue.yml
     with:
-      pull_request_number: ${{ github.event_name != 'commit_comment' && github.event.issue.number || '' }}
-      commit_sha: ${{ github.event_name == 'commit_comment' && github.event.comment.commit_id || '' }}
+      source_type: ${{ github.event_name == 'commit_comment' && 'commit' || 'pr' }}
+      source_ref: ${{ github.event_name == 'commit_comment' && github.event.comment.commit_id || github.event.issue.number }}
       comment_body: ${{ github.event.comment.body }}
       user: ${{ github.event.comment.user.login }}
     secrets:

@@ -23,8 +23,8 @@
 #   GITHUB_TOKEN   GitHub token with permission to create issues and comments.
 #   COMMENT_BODY   Body of the /stdlib todo slash command comment.
 #   COMMENTER      GitHub login of the commenter.
-#   PR_NUMBER      Pull request number (mutually exclusive with COMMIT_SHA).
-#   COMMIT_SHA     Commit SHA (mutually exclusive with PR_NUMBER).
+#   SOURCE_TYPE    Source context type: 'pr' or 'commit'.
+#   SOURCE_REF     Pull request number when SOURCE_TYPE is 'pr'; commit SHA when SOURCE_TYPE is 'commit'.
 
 # Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
 set -o pipefail
@@ -66,10 +66,10 @@ post_source_comment() {
 	local payload
 	local endpoint
 	payload="{\"body\":$(printf '%s' "${body}" | jq -R -s -c .)}"
-	if [ -n "${PR_NUMBER}" ]; then
-		endpoint="${github_api_url}/repos/${repo_owner}/${repo_name}/issues/${PR_NUMBER}/comments"
+	if [ "${SOURCE_TYPE}" = "pr" ]; then
+		endpoint="${github_api_url}/repos/${repo_owner}/${repo_name}/issues/${SOURCE_REF}/comments"
 	else
-		endpoint="${github_api_url}/repos/${repo_owner}/${repo_name}/commits/${COMMIT_SHA}/comments"
+		endpoint="${github_api_url}/repos/${repo_owner}/${repo_name}/commits/${SOURCE_REF}/comments"
 	fi
 	curl -s -X POST \
 		-H "Authorization: token ${GITHUB_TOKEN}" \
@@ -112,12 +112,16 @@ main() {
 	local label
 
 	# Validate required inputs:
-	if [ -z "${PR_NUMBER}" ] && [ -z "${COMMIT_SHA}" ]; then
-		echo "ERROR: Either PR_NUMBER or COMMIT_SHA is required." >&2
+	if [ -z "${SOURCE_TYPE}" ]; then
+		echo "ERROR: SOURCE_TYPE is required." >&2
 		on_error 1
 	fi
-	if [ -n "${PR_NUMBER}" ] && [ -n "${COMMIT_SHA}" ]; then
-		echo "ERROR: PR_NUMBER and COMMIT_SHA are mutually exclusive." >&2
+	if [ "${SOURCE_TYPE}" != "pr" ] && [ "${SOURCE_TYPE}" != "commit" ]; then
+		echo "ERROR: SOURCE_TYPE must be 'pr' or 'commit'." >&2
+		on_error 1
+	fi
+	if [ -z "${SOURCE_REF}" ]; then
+		echo "ERROR: SOURCE_REF is required." >&2
 		on_error 1
 	fi
 	if [ -z "${COMMENTER}" ]; then
@@ -249,12 +253,12 @@ ${bt}${bt}${bt}"
 	fi
 
 	# Build provenance footer:
-	if [ -n "${PR_NUMBER}" ]; then
+	if [ "${SOURCE_TYPE}" = "pr" ]; then
 		provenance="---
-*Created via ${bt}/stdlib todo${bt} from [${repo_owner}/${repo_name}#${PR_NUMBER}](https://github.com/${repo_owner}/${repo_name}/pull/${PR_NUMBER}) by @${COMMENTER}.*"
+*Created via ${bt}/stdlib todo${bt} from [${repo_owner}/${repo_name}#${SOURCE_REF}](https://github.com/${repo_owner}/${repo_name}/pull/${SOURCE_REF}) by @${COMMENTER}.*"
 	else
 		provenance="---
-*Created via ${bt}/stdlib todo${bt} from [${repo_owner}/${repo_name}@${COMMIT_SHA:0:7}](https://github.com/${repo_owner}/${repo_name}/commit/${COMMIT_SHA}) by @${COMMENTER}.*"
+*Created via ${bt}/stdlib todo${bt} from [${repo_owner}/${repo_name}@${SOURCE_REF:0:7}](https://github.com/${repo_owner}/${repo_name}/commit/${SOURCE_REF}) by @${COMMENTER}.*"
 	fi
 
 	# Build the issue body with provenance footer:
