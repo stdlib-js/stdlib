@@ -24,6 +24,12 @@ MARKDOWN_LINT ?= $(REMARK)
 # Define the path to the remark configuration file:
 REMARK_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
 
+# Define the path to the remark configuration file for linting package READMEs:
+REMARK_CONF_PKG_READMES ?= $(CONFIG_DIR)/remark/.remarkrc.pkg_readmes.js
+
+# Define the path to the remark configuration file for linting documentation files:
+REMARK_CONF_DOCS ?= $(CONFIG_DIR)/remark/.remarkrc.docs.js
+
 # Define the path to the remark ignore file:
 # REMARK_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore FIXME
 REMARK_IGNORE ?= $(ROOT_DIR)/.remarkignore
@@ -32,6 +38,26 @@ REMARK_IGNORE ?= $(ROOT_DIR)/.remarkignore
 MARKDOWN_LINT_FLAGS ?= \
 	--ext $(MARKDOWN_FILENAME_EXT) \
 	--rc-path $(REMARK_CONF) \
+	--ignore-path $(REMARK_IGNORE) \
+	--no-stdout \
+	--no-ignore \
+	--no-config \
+	--quiet
+
+# Define the command-line options when invoking the remark executable for linting package READMEs:
+MARKDOWN_LINT_FLAGS_PKG_READMES ?= \
+	--ext $(MARKDOWN_FILENAME_EXT) \
+	--rc-path $(REMARK_CONF_PKG_READMES) \
+	--ignore-path $(REMARK_IGNORE) \
+	--no-stdout \
+	--no-ignore \
+	--no-config \
+	--quiet
+
+# Define the command-line options when invoking the remark executable for linting documentation files:
+MARKDOWN_LINT_FLAGS_DOCS ?= \
+	--ext $(MARKDOWN_FILENAME_EXT) \
+	--rc-path $(REMARK_CONF_DOCS) \
 	--ignore-path $(REMARK_IGNORE) \
 	--no-stdout \
 	--no-ignore \

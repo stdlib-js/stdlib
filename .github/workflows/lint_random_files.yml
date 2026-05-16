@@ -250,9 +250,24 @@ jobs:
       - name: 'Lint Markdown files'
         if: ( github.event.inputs.markdown != 'false' ) && ( success() || failure() )
         run: |
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.md$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep '\.md$' | tr '\n' ' ')
           if [ -n "${files}" ]; then
-            make lint-markdown-files FAST_FAIL=0 FILES="${files}"
+            # Partition Markdown files by scope to match remark configs:
+            pkg_readme_files=$(echo "${files}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib/.*/README\.md$' | tr '\n' ' ' | sed 's/ $//' || true)
+            docs_files=$(echo "${files}" | tr ' ' '\n' | grep '^docs/' | tr '\n' ' ' | sed 's/ $//' || true)
+            other_files=$(echo "${files}" | tr ' ' '\n' | grep -v 'lib/node_modules/@stdlib/.*/README\.md$' | grep -v '^docs/' | tr '\n' ' ' | sed 's/ $//' || true)
+
+            status=0
+            if [ -n "${pkg_readme_files}" ]; then
+              make lint-markdown-package-readme-files FAST_FAIL=0 FILES="${pkg_readme_files}" || status=$?
+            fi
+            if [ -n "${docs_files}" ]; then
+              make lint-markdown-docs-files FAST_FAIL=0 FILES="${docs_files}" || status=$?
+            fi
+            if [ -n "${other_files}" ]; then
+              make lint-markdown-files FAST_FAIL=0 FILES="${other_files}" || status=$?
+            fi
+            exit $status
           fi
 
       # Lint package.json files:
