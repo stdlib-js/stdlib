@@ -133,6 +133,18 @@ main() {
 		on_error 1
 	fi
 
+	# Verify the commenter is a member of the organization before processing any input:
+	membership_status=$(curl -s -o /dev/null -w "%{http_code}" \
+		-H "Authorization: token ${GITHUB_TOKEN}" \
+		-H "Accept: application/vnd.github+json" \
+		"${github_api_url}/orgs/${repo_owner}/members/${COMMENTER}")
+
+	if [ "${membership_status}" != "204" ]; then
+		echo "Error checking org membership: HTTP ${membership_status}" >&2
+		post_source_comment "@${COMMENTER}, you must be a member of the ${bt}${repo_owner}${bt} organization to use the ${bt}/stdlib todo${bt} command."
+		on_error 1
+	fi
+
 	# Create a temporary working directory:
 	tmp_dir=$(mktemp -d)
 	tmp_comment="${tmp_dir}/comment.txt"
@@ -235,21 +247,6 @@ ${bt}${bt}${bt}"
 		target_repo="todo"
 	else
 		target_repo="stdlib"
-	fi
-
-	# Verify the commenter is a member of the target organization:
-	membership_status=$(curl -s -o /dev/null -w "%{http_code}" \
-		-H "Authorization: token ${GITHUB_TOKEN}" \
-		-H "Accept: application/vnd.github+json" \
-		"${github_api_url}/orgs/${target_owner}/members/${COMMENTER}")
-
-	if [ "${membership_status}" != "204" ]; then
-		echo "Error checking org membership: HTTP ${membership_status}" >&2
-		post_source_comment "${quote}
-
-@${COMMENTER}, you must be a member of the ${bt}${target_owner}${bt} organization to use the ${bt}/stdlib todo${bt} command."
-		rm -rf "${tmp_dir}"
-		on_error 1
 	fi
 
 	# Build provenance footer:
