@@ -63,8 +63,8 @@ print_success() {
 # $1 - comment body (plain text; will be JSON-encoded)
 post_source_comment() {
 	local body="$1"
-	local payload
 	local endpoint
+	local payload
 	payload="{\"body\":$(printf '%s' "${body}" | jq -R -s -c .)}"
 	if [ "${SOURCE_TYPE}" = "pr" ]; then
 		endpoint="${github_api_url}/repos/${repo_owner}/${repo_name}/issues/${SOURCE_REF}/comments"
@@ -81,8 +81,7 @@ post_source_comment() {
 }
 
 
-# MAIN #
-
+# Main execution sequence.
 main() {
 	local membership_status
 	local requested_label
