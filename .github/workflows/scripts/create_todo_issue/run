@@ -84,32 +84,32 @@ post_source_comment() {
 # MAIN #
 
 main() {
-	local tmp_dir
-	local tmp_comment
-	local tmp_attrs
-	local tmp_content
-	local quote
-	local attrs
-	local stdlib_target
-	local labels_raw
-	local labels_json
-	local content
-	local first_line
-	local title
-	local body_raw
-	local body
-	local target_owner
-	local target_repo
 	local membership_status
-	local provenance
-	local issue_body
-	local issue_payload
-	local issue_response
-	local issue_url
 	local requested_label
 	local dropped_labels
+	local issue_response
+	local issue_payload
+	local stdlib_target
 	local dropped_list
+	local target_owner
+	local labels_json
+	local target_repo
+	local tmp_comment
+	local tmp_content
+	local first_line
+	local issue_body
+	local labels_raw
+	local provenance
+	local issue_url
+	local tmp_attrs
+	local body_raw
+	local content
+	local tmp_dir
+	local attrs
 	local label
+	local quote
+	local title
+	local body
 
 	# Validate required inputs:
 	if [ -z "${SOURCE_TYPE}" ]; then
