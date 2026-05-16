@@ -174,7 +174,7 @@ main() {
 	if [ ! -f "${tmp_attrs}" ]; then
 		post_source_comment "${quote}
 
-@${COMMENTER}, failed to parse the ${bt}/stdlib todo${bt} command. Expected a fenced code block with attributes, e.g.,
+@${COMMENTER}, failed to parse the ${bt}/stdlib todo${bt} command. Expected a fenced code block with attributes; e.g.,
 
 ${bt}${bt}${bt}
 /stdlib todo
@@ -214,13 +214,13 @@ ${bt}${bt}${bt}"
 		labels_json='[]'
 	fi
 
-	# Parse the issue title from the '[TODO]: ...' line:
+	# Parse the issue title from the '[<TAG>]: ...' line:
 	first_line=$(printf '%s' "${content}" | head -n 1)
-	title=$(printf '%s' "${first_line}" | grep -ioP '(?<=^\[TODO\]:[[:space:]])\S.*' || true)
+	title=$(printf '%s' "${first_line}" | grep -oP '^\[[^\]]+\]:[[:space:]]+\K\S.*' || true)
 	if [ -z "${title}" ]; then
 		post_source_comment "${quote}
 
-@${COMMENTER}, failed to parse the todo title. The first line of the code block must be of the form ${bt}[TODO]: Issue title${bt}."
+@${COMMENTER}, failed to parse the issue title. The first line of the code block must be of the form ${bt}[<TAG>]: Issue title${bt}."
 		rm -rf "${tmp_dir}"
 		on_error 1
 	fi
