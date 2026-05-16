@@ -101,13 +101,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_MARKDOWN_PKG_READMES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_PKG_READMES_FLAGS) $$file || exit 1; \
+		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS_PKG_READMES) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_MARKDOWN_PKG_READMES_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_PKG_READMES_FLAGS) $$file || echo 'Linting failed.'; \
+		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS_PKG_READMES) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -131,13 +131,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_PKG_READMES_FLAGS) $$file || exit 1; \
+		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS_PKG_READMES) $$file || exit 1; \
 	done
 else
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_PKG_READMES_FLAGS) $$file || echo 'Linting failed.'; \
+		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS_PKG_READMES) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -160,13 +160,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) $(FIND_MARKDOWN_DOCS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_DOCS_FLAGS) $$file || exit 1; \
+		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS_DOCS) $$file || exit 1; \
 	done
 else
 	$(QUIET) $(FIND_MARKDOWN_DOCS_CMD) | grep '^[\/]\|^[a-zA-Z]:[/\]' | while read -r file; do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_DOCS_FLAGS) $$file || echo 'Linting failed.'; \
+		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS_DOCS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
@@ -190,13 +190,13 @@ ifeq ($(FAIL_FAST), true)
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_DOCS_FLAGS) $$file || exit 1; \
+		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS_DOCS) $$file || exit 1; \
 	done
 else
 	$(QUIET) for file in $(FILES); do \
 		echo ''; \
 		echo "Linting file: $$file"; \
-		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_DOCS_FLAGS) $$file || echo 'Linting failed.'; \
+		NODE_PATH="$(NODE_PATH)" $(MARKDOWN_LINT) $(MARKDOWN_LINT_FLAGS_DOCS) $$file || echo 'Linting failed.'; \
 	done
 endif
 
