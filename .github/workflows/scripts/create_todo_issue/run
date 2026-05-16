@@ -93,6 +93,7 @@ post_source_comment() {
 main() {
 	local membership_status
 	local requested_label
+	local dropped_labels
 	local issue_response
 	local issue_payload
 	local stdlib_target
@@ -291,7 +292,7 @@ ${provenance}"
 	fi
 
 	# Identify labels that were silently dropped (labels that do not exist in the target repo):
-	local dropped_labels=()
+	dropped_labels=()
 	while IFS= read -r requested_label; do
 		if [ -n "${requested_label}" ]; then
 			if ! printf '%s' "${issue_response}" | jq -e --arg l "${requested_label}" '[.labels[].name] | index($l) != null' > /dev/null 2>&1; then
