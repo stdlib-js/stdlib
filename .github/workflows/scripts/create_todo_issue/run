@@ -50,7 +50,15 @@ bt='`'
 # $1 - error status
 on_error() {
 	echo 'ERROR: An error was encountered during execution.' >&2
+	cleanup
 	exit "$1"
+}
+
+# Runs clean-up tasks.
+cleanup() {
+	if [ -n "${tmp_dir:-}" ]; then
+		rm -rf "${tmp_dir}"
+	fi
 }
 
 # Prints a success message.
@@ -85,12 +93,10 @@ post_source_comment() {
 main() {
 	local membership_status
 	local requested_label
-	local dropped_labels
 	local issue_response
 	local issue_payload
 	local stdlib_target
 	local dropped_list
-	local target_owner
 	local labels_json
 	local target_repo
 	local tmp_comment
@@ -139,7 +145,7 @@ main() {
 		"${github_api_url}/orgs/${repo_owner}/members/${COMMENTER}")
 
 	if [ "${membership_status}" != "204" ]; then
-		echo "Error checking org membership: HTTP ${membership_status}" >&2
+		echo "ERROR: Unexpected membership status: HTTP ${membership_status}" >&2
 		post_source_comment "@${COMMENTER}, you must be a member of the ${bt}${repo_owner}${bt} organization to use the ${bt}/stdlib todo${bt} command."
 		on_error 1
 	fi
@@ -196,7 +202,6 @@ ${bt}${bt}${bt}text {stdlib=public labels=\"foo,bar\"}
 Issue body
 ${bt}${bt}${bt}
 ${bt}${bt}${bt}"
-		rm -rf "${tmp_dir}"
 		on_error 1
 	fi
 
@@ -213,7 +218,6 @@ ${bt}${bt}${bt}"
 		post_source_comment "${quote}
 
 @${COMMENTER}, unrecognized ${bt}stdlib${bt} attribute value ${bt}${stdlib_target}${bt}. Valid values are ${bt}public${bt} (opens issue on ${bt}stdlib-js/stdlib${bt}) or ${bt}private${bt} (opens issue on the internal todo repository)."
-		rm -rf "${tmp_dir}"
 		on_error 1
 	fi
 
@@ -232,7 +236,6 @@ ${bt}${bt}${bt}"
 		post_source_comment "${quote}
 
 @${COMMENTER}, failed to parse the issue title. The first line of the code block must be of the form ${bt}[<TAG>]: Issue title${bt}."
-		rm -rf "${tmp_dir}"
 		on_error 1
 	fi
 
@@ -241,7 +244,6 @@ ${bt}${bt}${bt}"
 	body=$(printf '%s' "${body_raw}" | sed '/./,$!d' | tac | sed '/./,$!d' | tac)
 
 	# Determine the target repository:
-	target_owner="stdlib-js"
 	if [ "${stdlib_target}" = "private" ]; then
 		target_repo="todo"
 	else
@@ -280,17 +282,16 @@ ${provenance}"
 		-H "Accept: application/vnd.github+json" \
 		-H "Content-Type: application/json" \
 		-d "${issue_payload}" \
-		"${github_api_url}/repos/${target_owner}/${target_repo}/issues")
+		"${github_api_url}/repos/${repo_owner}/${target_repo}/issues")
 
 	issue_url=$(printf '%s' "${issue_response}" | jq -r '.html_url // empty')
 	if [ -z "${issue_url}" ]; then
 		echo "ERROR: Failed to create issue. Response: ${issue_response}" >&2
-		rm -rf "${tmp_dir}"
 		on_error 1
 	fi
 
 	# Identify labels that were silently dropped (labels that do not exist in the target repo):
-	dropped_labels=()
+	local dropped_labels=()
 	while IFS= read -r requested_label; do
 		if [ -n "${requested_label}" ]; then
 			if ! printf '%s' "${issue_response}" | jq -e --arg l "${requested_label}" '[.labels[].name] | index($l) != null' > /dev/null 2>&1; then
@@ -309,15 +310,15 @@ ${provenance}"
 				dropped_list="${bt}${label}${bt}"
 			fi
 		done
-		post_source_comment "@${COMMENTER}, the following todo issue has been created: ${issue_url}
+		post_source_comment "@${COMMENTER}, the following issue has been created: ${issue_url}
 
 > [!WARNING]
-> The following labels were not applied because they do not exist on ${bt}${target_owner}/${target_repo}${bt}: ${dropped_list}."
+> The following labels were not applied because they do not exist on ${bt}${repo_owner}/${target_repo}${bt}: ${dropped_list}."
 	else
-		post_source_comment "@${COMMENTER}, the following todo issue has been created: ${issue_url}"
+		post_source_comment "@${COMMENTER}, the following issue has been created: ${issue_url}"
 	fi
 
-	rm -rf "${tmp_dir}"
+	cleanup
 	print_success
 	exit 0
 }
