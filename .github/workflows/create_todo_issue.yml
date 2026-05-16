@@ -96,7 +96,7 @@ jobs:
       # Create a new todo issue:
       - name: 'Create a new todo issue'
         env:
-          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN || secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
           COMMENT_BODY: ${{ inputs.comment_body }}
           COMMENTER: ${{ inputs.user }}
           SOURCE_TYPE: ${{ inputs.source_type }}
