@@ -45,7 +45,7 @@ MARKDOWN_LINT_FLAGS ?= \
 	--quiet
 
 # Define the command-line options when invoking the remark executable for linting package READMEs:
-MARKDOWN_LINT_FLAGS_PKG_READMES ?= \
+MARKDOWN_LINT_PKG_READMES_FLAGS ?= \
 	--ext $(MARKDOWN_FILENAME_EXT) \
 	--rc-path $(REMARK_CONF_PKG_READMES) \
 	--ignore-path $(REMARK_IGNORE) \
@@ -55,7 +55,7 @@ MARKDOWN_LINT_FLAGS_PKG_READMES ?= \
 	--quiet
 
 # Define the command-line options when invoking the remark executable for linting documentation files:
-MARKDOWN_LINT_FLAGS_DOCS ?= \
+MARKDOWN_LINT_DOCS_FLAGS ?= \
 	--ext $(MARKDOWN_FILENAME_EXT) \
 	--rc-path $(REMARK_CONF_DOCS) \
 	--ignore-path $(REMARK_IGNORE) \
