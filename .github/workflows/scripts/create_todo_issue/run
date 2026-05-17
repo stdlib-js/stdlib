@@ -73,7 +73,6 @@ post_source_comment() {
 	local endpoint
 	local payload
 	local body
-	
 	body="$1"
 	payload="{\"body\":$(printf '%s' "${body}" | jq -R -s -c .)}"
 	if [ "${SOURCE_TYPE}" = "pr" ]; then
