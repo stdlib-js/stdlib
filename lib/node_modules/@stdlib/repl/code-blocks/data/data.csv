@@ -5642,6 +5642,7 @@ transformStream.factory,"var opts = { 'highWaterMark': 64 };\nvar createStream =
 transformStream.objectMode,"var s = transformStream.objectMode();\ns.write( { 'value': 'a' } );\ns.write( { 'value': 'b' } );\ns.write( { 'value': 'c' } );\ns.end();\n"
 transformStream.ctor,"function fcn( chunk, enc, cb ) { cb( null, chunk.toString()+'-beep' ); };\nvar opts = { 'highWaterMark': 64, 'transform': fcn };\nvar customStream = transformStream.ctor( opts );\nvar s = customStream();\ns.write( 'a' );\ns.write( 'b' );\ns.write( 'c' );\ns.end();\n"
 trim,"var out = trim( ' \t\t\n  Beep \r\n\t  ' )\n"
+trues,"var arr = trues( [ 2, 2 ] )\n"
 truncate,"var str = 'beep boop';\nvar out = truncate( str, 5 )\nout = truncate( str, 5, '|' )\n"
 truncateMiddle,"var str = 'beep boop';\nvar out = truncateMiddle( str, 5 )\nout = truncateMiddle( str, 5, '|' )\n"
 trycatch,"function x() {\n if ( base.random.randu() < 0.5 ) {\n     throw new Error( 'beep' );\n }\n return 1.0;\n };\nvar z = trycatch( x, -1.0 )\n"
