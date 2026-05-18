@@ -204,12 +204,12 @@ var y = filledarrayBy( M, 'complex64', rand );
 var alpha = new Complex64( 0.5, 0.5 );
 var beta = new Complex64( 0.5, -0.5 );
 
-cgemv( 'column-major', 'no-transpose', M, N, alpha, A, 4, x, 1, beta, y, 1 );
+cgemv( 'column-major', 'no-transpose', M, N, alpha, A, M, x, 1, beta, y, 1 );
 
 // Print the results:
 logEach( '%s', x );
 
-cgemv.ndarray( 'no-transpose', M, N, alpha, A, 1, 4, 0, x, 1, 0, beta, y, 1, 0 );
+cgemv.ndarray( 'no-transpose', M, N, alpha, A, 1, M, 0, x, 1, 0, beta, y, 1, 0 );
 
 // Print the results:
 logEach( '%s', x );
@@ -242,21 +242,96 @@ logEach( '%s', x );
 ### Usage
 
 ```c
-TODO
+#include "stdlib/blas/base/cgemv.h"
 ```
 
-#### TODO
+<!-- lint disable maximum-heading-length -->
 
-TODO.
+#### c_cgemv( layout, trans, M, N, alpha, \*A, LDA, \*X, strideX, beta, \*Y, strideY )
+
+Performs one of the matrix-vector operations `Y = α*A*X + β*Y` or `Y = α*A^T*X + β*Y` or `Y = α*A^H*X + β*Y` where `α` and `β` are scalars, `X` and `Y` are vectors, and `A` is an `M` by `N` matrix.
 
 ```c
-TODO
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/complex/float32/ctor.h"
+
+const float A[] = {
+    1.0f, 1.0f, 2.0f, 2.0f,
+    3.0f, 3.0f, 4.0f, 4.0f,
+    5.0f, 5.0f, 6.0f, 6.0f,
+    7.0f, 7.0f, 8.0f, 8.0f
+};
+const float x[] = { 1.0f, 1.0f, 2.0f, 2.0f };
+float y[] = { 1.0f, 1.0f, 2.0f, 2.0f, 3.0f, 3.0f, 4.0f, 4.0f };
+const stdlib_complex64_t alpha = stdlib_complex64( 0.5f, 0.5f );
+const stdlib_complex64_t beta = stdlib_complex64( 0.5f, -0.5f );
+
+c_cgemv( CblasColMajor, CblasNoTrans, 4, 2, alpha, (void *)A, 4, (void *)x, 1, beta, (void *)y, 1 );
 ```
 
-TODO
+The function accepts the following arguments:
+
+-   **layout**: `[in] CBLAS_LAYOUT` storage layout.
+-   **trans**: `[in] CBLAS_TRANSPOSE` specifies whether `A` should be transposed, conjugate-transposed, or not transposed.
+-   **M**: `[in] CBLAS_INT` number of rows in the matrix `A`.
+-   **N**: `[in] CBLAS_INT` number of columns in the matrix `A`.
+-   **alpha**: `[in] stdlib_complex64_t` scalar constant.
+-   **A**: `[in] void*` input matrix.
+-   **LDA**: `[in] CBLAS_INT` stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+-   **X**: `[in] void*` first input vector.
+-   **strideX**: `[in] CBLAS_INT` stride length for `X`.
+-   **beta**: `[in] stdlib_complex64_t` scalar constant.
+-   **Y**: `[inout] void*` second input vector.
+-   **strideY**: `[in] CBLAS_INT` stride length for `Y`.
 
 ```c
-TODO
+void c_cgemv( const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE trans, const CBLAS_INT M, const CBLAS_INT N, const stdlib_complex64_t alpha, const void *A, const CBLAS_INT LDA, const void *X, const CBLAS_INT strideX, const stdlib_complex64_t beta, void *Y, const CBLAS_INT strideY )
+```
+
+<!-- lint disable maximum-heading-length -->
+
+#### c_cgemv_ndarray( trans, M, N, alpha, \*A, sa1, sa2, oa, \*X, sx, ox, beta, \*Y, sy, oy )
+
+Performs one of the matrix-vector operations `Y = α*A*X + β*Y` or `Y = α*A^T*X + β*Y` or `Y = α*A^H*X + β*Y` using indexing alternative semantics and where `α` and `β` are scalars, `X` and `Y` are vectors, and `A` is an `M` by `N` matrix.
+
+```c
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/complex/float32/ctor.h"
+
+const float A[] = {
+    1.0f, 1.0f, 2.0f, 2.0f,
+    3.0f, 3.0f, 4.0f, 4.0f,
+    5.0f, 5.0f, 6.0f, 6.0f,
+    7.0f, 7.0f, 8.0f, 8.0f
+};
+const float x[] = { 1.0f, 1.0f, 2.0f, 2.0f };
+float y[] = { 1.0f, 1.0f, 2.0f, 2.0f, 3.0f, 3.0f, 4.0f, 4.0f };
+const stdlib_complex64_t alpha = stdlib_complex64( 0.5f, 0.5f );
+const stdlib_complex64_t beta = stdlib_complex64( 0.5f, -0.5f );
+
+c_cgemv( CblasNoTrans, 4, 2, alpha, (void *)A, 1, 4, (void *)x, 1, 0, beta, (void *)y, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **trans**: `[in] CBLAS_TRANSPOSE` specifies whether `A` should be transposed, conjugate-transposed, or not transposed.
+-   **M**: `[in] CBLAS_INT` number of rows in the matrix `A`.
+-   **N**: `[in] CBLAS_INT` number of columns in the matrix `A`.
+-   **alpha**: `[in] stdlib_complex64_t` scalar constant.
+-   **A**: `[in] void*` input matrix.
+-   **sa1**: `[in] CBLAS_INT` stride of the first dimension of `A`.
+-   **sa2**: `[in] CBLAS_INT` stride of the second dimension of `A`.
+-   **oa**: `[in] CBLAS_INT` starting index for `A`.
+-   **X**: `[in] void*` first input vector.
+-   **sx**: `[in] CBLAS_INT` stride length for `X`.
+-   **ox**: `[in] CBLAS_INT` starting index for `X`.
+-   **beta**: `[in] stdlib_complex64_t` scalar constant.
+-   **Y**: `[inout] void*` second input vector.
+-   **sy**: `[in] CBLAS_INT` stride length for `Y`.
+-   **oy**: `[in] CBLAS_INT` starting index for `Y`.
+
+```c
+void c_cgemv_ndarray( const CBLAS_TRANSPOSE trans, const CBLAS_INT M, const CBLAS_INT N, const stdlib_complex64_t alpha, const void *A, const CBLAS_INT strideA1, const CBLAS_INT strideA2, const CBLAS_INT offsetA, const void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const stdlib_complex64_t beta, void *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY )
 ```
 
 </section>
@@ -278,7 +353,47 @@ TODO
 ### Examples
 
 ```c
-TODO
+#include "stdlib/blas/base/cgemv.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/complex/float32/ctor.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Define a 3x3 matrix stored in row-major order:
+    const float A[ 3*3*2 ] = {
+        1.0f, 1.0f, 2.0f, 2.0f, 3.0f, 3.0f,
+        4.0f, 4.0f, 5.0f, 5.0f, 6.0f, 6.0f,
+        7.0f, 7.0f, 8.0f, 8.0f, 9.0f, 9.0f
+    };
+
+    // Define `x` and `y` vectors:
+    const float x[ 3*2 ] = { 1.0f, 1.0f, 2.0f, 2.0f, 3.0f, 3.0f };
+    float y[ 3*2 ] = { 3.0f, 3.0f, 2.0f, 2.0f, 1.0f, 1.0f };
+
+    // Create complex scalars:
+    const stdlib_complex64_t alpha = stdlib_complex64( 0.5f, 0.5f );
+    const stdlib_complex64_t beta = stdlib_complex64( 0.5f, -0.5f );
+
+    // Specify the number of elements along each dimension of `A`:
+    const int M = 3;
+    const int N = 3;
+
+    // Perform the matrix-vector operation `y = α*A*x + β*y`:
+    c_cgemv( CblasRowMajor, CblasNoTrans, M, N, alpha, (void *)A, M, (void *)x, 1, beta, (void *)y, 1 );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "y[ %i ] = %f + %fj\n", i, y[ i*2 ], y[ (i*2)+1 ] );
+    }
+
+    // Perform the matrix-vector operation `y = α*A*x + β*y` using alternative indexing semantics:
+    c_cgemv_ndarray( CblasNoTrans, M, N, alpha, (void *)A, N, 1, 0, (void *)x, 1, 0, beta, (void *)y, 1, 0 );
+
+    // Print the result:
+    for ( int i = 0; i < N; i++ ) {
+        printf( "y[ %i ] = %f + %fj\n", i, y[ i*2 ], y[ (i*2)+1 ] );
+    }
+}
 ```
 
 </section>
