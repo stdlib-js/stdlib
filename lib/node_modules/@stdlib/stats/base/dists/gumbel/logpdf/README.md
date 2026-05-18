@@ -170,7 +170,7 @@ logEachMap( 'x: %0.4f, µ: %0.4f, β: %0.4f, ln(f(x;µ,β)): %0.4f', x, mu, beta
 #include "stdlib/stats/base/dists/gumbel/logpdf.h"
 ```
 
-#### stdlib_base_dists_gumbel_logcdf( x, mu, beta )
+#### stdlib_base_dists_gumbel_logpdf( x, mu, beta )
 
 Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [Gumbel][gumbel-distribution] distribution with parameters `mu` (location parameter) and `beta > 0` (scale parameter).
 
