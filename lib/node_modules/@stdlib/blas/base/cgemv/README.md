@@ -292,7 +292,7 @@ void c_cgemv( const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE trans, const CBLA
 
 #### c_cgemv_ndarray( trans, M, N, alpha, \*A, sa1, sa2, oa, \*X, sx, ox, beta, \*Y, sy, oy )
 
-Performs one of the matrix-vector operations `Y = α*A*X + β*Y` or `Y = α*A^T*X + β*Y` or `Y = α*A^H*X + β*Y` using indexing alternative semantics and where `α` and `β` are scalars, `X` and `Y` are vectors, and `A` is an `M` by `N` matrix.
+Performs one of the matrix-vector operations `Y = α*A*X + β*Y` or `Y = α*A^T*X + β*Y` or `Y = α*A^H*X + β*Y` using alternative indexing semantics and where `α` and `β` are scalars, `X` and `Y` are vectors, and `A` is an `M` by `N` matrix.
 
 ```c
 #include "stdlib/blas/base/shared.h"
