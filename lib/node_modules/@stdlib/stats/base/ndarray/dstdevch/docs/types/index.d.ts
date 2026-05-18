@@ -25,20 +25,25 @@ import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the standard deviation of a one-dimensional double-precision floating-point ndarray using a one-pass trial mean algorithm.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying a degrees of freedom adjustment
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray specifying the degrees of freedom adjustment.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns standard deviation
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-* var Float64Array = require( '@stdlib/array/float64' );
 *
 * var opts = {
 *     'dtype': 'float64'
 * };
 *
-* var xbuf = new Float64Array( [ 1.0, -2.0, 2.0 ] );
-* var x = new ndarray( opts.dtype, xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
+* var x = new Float64Vector( [ 1.0, -2.0, 2.0 ] );
 * var correction = scalar2ndarray( 1.0, opts );
 *
 * var v = dstdevch( [ x, correction ] );

@@ -13,8 +13,10 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing a one-dimensional input ndarray and a
-        zero-dimensional ndarray specifying the sort order.
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray specifying the sort order.
 
     Returns
     -------
@@ -23,8 +25,8 @@
 
     Examples
     --------
-    > var x = new {{alias:@stdlib/ndarray/array}}( [ 1.0, -2.0, 3.0, -4.0 ], { 'dtype': 'generic' } );
-    > var o = {{alias:@stdlib/ndarray/from-scalar}}( 1.0 );
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, -2.0, 3.0, -4.0 ], 'generic' );
+    > var o = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, { 'dtype': 'generic' } );
     > {{alias}}( [ x, o ] )
     <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]
 
