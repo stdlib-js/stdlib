@@ -67,6 +67,11 @@ The function has the following parameters:
 
 <section class="notes">
 
+## Notes
+
+-   If provided an empty one-dimensional ndarray, the function returns an empty string.
+-   If an array element is either `null` or `undefined`, the function will serialize the element as an empty string.
+
 </section>
 
 <!-- /.notes -->
