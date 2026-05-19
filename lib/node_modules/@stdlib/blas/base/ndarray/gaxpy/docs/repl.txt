@@ -9,8 +9,11 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing an input ndarray, an output ndarray, and
-        a zero-dimensional ndarray containing a scalar constant `alpha`.
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+        - a zero-dimensional ndarray containing a scalar constant `alpha`.
 
     Returns
     -------

@@ -25,7 +25,14 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the dot product of two one-dimensional ndarrays.
 *
-* @param arrays - array-like object containing two one-dimensional input ndarrays
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   first one-dimensional input ndarray.
+*     -   second one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns dot product
 *
 * @example

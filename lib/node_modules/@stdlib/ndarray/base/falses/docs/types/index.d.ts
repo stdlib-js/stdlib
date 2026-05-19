@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, boolndarray, BooleanDataType } from '@stdlib/types/ndarray';
+import { Shape, Order, boolndarray, genericndarray, BooleanDataType, GenericDataType } from '@stdlib/types/ndarray';
 
 /**
 * Creates an ndarray filled with `false` values and having a specified shape and data type.
@@ -40,6 +40,25 @@ import { Shape, Order, boolndarray, BooleanDataType } from '@stdlib/types/ndarra
 * // returns 'bool'
 */
 declare function falses( dtype: BooleanDataType, shape: Shape, order: Order ): boolndarray;
+
+/**
+* Creates an ndarray filled with `false` values and having a specified shape and data type.
+*
+* @param dtype - underlying data type
+* @param shape - array shape
+* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+* @returns `false`-filled array
+*
+* @example
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
+* var arr = falses( 'generic', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ false, false ], [ false, false ] ]
+*
+* var dt = String( getDType( arr ) );
+* // returns 'generic'
+*/
+declare function falses( dtype: GenericDataType, shape: Shape, order: Order ): genericndarray<boolean>;
 
 
 // EXPORTS //

@@ -10,7 +10,10 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing an input ndarray and an output ndarray.
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
 
     Returns
     -------

@@ -25,19 +25,22 @@ import { float64ndarray, uint8ndarray } from '@stdlib/types/ndarray';
 /**
 * Calculates the range of a one-dimensional double-precision floating-point ndarray according to a mask, ignoring `NaN` values.
 *
-* @param arrays - array-like object containing an input ndarray and a mask ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a one-dimensional mask ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns range
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
-* var Uint8Array = require( '@stdlib/array/uint8' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+* var Uint8Vector = require( '@stdlib/ndarray/vector/uint8' );
 *
-* var xbuf = new Float64Array( [ 1.0, -2.0, 4.0, 2.0, NaN ] );
-* var x = new ndarray( 'float64', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
-*
-* var maskbuf = new Uint8Array( [ 0, 0, 1, 0, 0 ] );
-* var mask = new ndarray( 'uint8', maskbuf, [ 5 ], [ 1 ], 0, 'row-major' );
+* var x = new Float64Vector( [ 1.0, -2.0, 4.0, 2.0, NaN ] );
+* var mask = new Uint8Vector( [ 0, 0, 1, 0, 0 ] );
 *
 * var v = dnanmskrange( [ x, mask ] );
 * // returns 4.0

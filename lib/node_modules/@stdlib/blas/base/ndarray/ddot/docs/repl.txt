@@ -8,7 +8,10 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing two one-dimensional input ndarrays.
+        Array-like object containing the following ndarrays:
+
+        - first one-dimensional input ndarray.
+        - second one-dimensional input ndarray.
 
     Returns
     -------

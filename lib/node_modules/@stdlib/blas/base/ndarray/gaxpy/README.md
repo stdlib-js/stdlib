@@ -60,11 +60,11 @@ var bool = ( z === y );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing the following ndarrays in order:
+-   **arrays**: array-like object containing the following ndarrays:
 
-    -   input ndarray
-    -   output ndarray
-    -   zero-dimensional ndarray containing a scalar constant
+    -   a one-dimensional input ndarray.
+    -   a one-dimensional output ndarray.
+    -   a zero-dimensional ndarray containing a scalar constant.
 
 </section>
 
