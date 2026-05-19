@@ -5646,6 +5646,7 @@ transformStream.objectMode,"\ntransformStream.objectMode( [options:Object] )\n  
 transformStream.ctor,"\ntransformStream.ctor( [options:Object] )\n    Returns a custom transform stream constructor.\n"
 trim,"\ntrim( str:string )\n    Trims whitespace from the beginning and end of a `string`.\n"
 trues,"\ntrues( shape:ArrayLikeObject<integer>|integer[, options:Object] )\n    Returns an ndarray filled with `true` values and having a specified shape\n    and data type.\n"
+truesLike,"\ntruesLike( x:ndarray[, options:Object] )\n    Returns an ndarray filled with `true` values and having the same shape and\n    data type as a provided input ndarray.\n"
 truncate,"\ntruncate( str:string, len:integer[, ending:string] )\n    Truncates a string to a specified length.\n"
 truncateMiddle,"\ntruncateMiddle( str:string, len:integer[, seq:string] )\n    Truncates a string in the middle to a specified length.\n"
 trycatch,"\ntrycatch( x:Function, y:any )\n    If a function does not throw, returns the function return value; otherwise,\n    returns `y`.\n"
