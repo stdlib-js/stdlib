@@ -20,6 +20,8 @@
 
 # TODO: support linting filenames, package.json, REPL help, JavaScript CLI files (see pre-commit hook), license headers
 
+# TODO: ensure support for `FAST_FAIL`
+
 #/
 # Lints packages.
 #

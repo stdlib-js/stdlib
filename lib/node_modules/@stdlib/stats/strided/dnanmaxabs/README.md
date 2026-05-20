@@ -178,17 +178,17 @@ console.log( v );
 ### Usage
 
 ```c
-#include "stdlib/stats/strided/dnanmax.h"
+#include "stdlib/stats/strided/dnanmaxabs.h"
 ```
 
-#### stdlib_strided_dnanmax( N, \*X, strideX )
+#### stdlib_strided_dnanmaxabs( N, \*X, strideX )
 
 Computes the maximum absolute value of a double-precision floating-point strided array, ignoring `NaN` values.
 
 ```c
 const double x[] = { 1.0, -2.0, 0.0 / 0.0, -4.0 };
 
-double v = stdlib_strided_dnanmax( 4, x, 1 );
+double v = stdlib_strided_dnanmaxabs( 4, x, 1 );
 // returns 4.0
 ```
 
@@ -199,17 +199,17 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 
 ```c
-double stdlib_strided_dnanmax( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
+double stdlib_strided_dnanmaxabs( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
 ```
 
-#### stdlib_strided_dnanmax_ndarray( N, \*X, strideX, offsetX )
+#### stdlib_strided_dnanmaxabs_ndarray( N, \*X, strideX, offsetX )
 
 Computes the maximum absolute value of a double-precision floating-point strided array, ignoring `NaN` values and using alternative indexing semantics.
 
 ```c
 const double x[] = { 1.0, -2.0, 0.0 / 0.0, -4.0 };
 
-double v = stdlib_strided_dnanmax_ndarray( 4, x, 1, 0 );
+double v = stdlib_strided_dnanmaxabs_ndarray( 4, x, 1, 0 );
 // returns 4.0
 ```
 
@@ -221,7 +221,7 @@ The function accepts the following arguments:
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
 ```c
-double stdlib_strided_dnanmax_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+double stdlib_strided_dnanmaxabs_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>
