@@ -6,7 +6,7 @@
     Parameters
     ----------
     dtype: string|DataType
-        Underlying data type. Must be a "boolean" data type.
+        Underlying data type. Must be a boolean or "generic" data type.
 
     shape: ArrayLikeObject<integer>
         Array shape.

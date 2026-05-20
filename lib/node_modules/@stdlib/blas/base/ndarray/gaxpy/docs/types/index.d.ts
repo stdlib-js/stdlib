@@ -25,7 +25,15 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Multiplies a one-dimensional ndarray `x` by a constant `alpha` and adds the result to a one-dimensional ndarray `y`.
 *
-* @param arrays - array-like object containing an input ndarray, an output ndarray, and a zero-dimensional ndarray containing a scalar constant
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a one-dimensional output ndarray.
+*     -   a zero-dimensional ndarray containing a scalar constant.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns output ndarray
 *
 * @example

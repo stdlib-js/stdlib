@@ -25,7 +25,13 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the sum of absolute values for all elements in a one-dimensional ndarray.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns sum
 *
 * @example

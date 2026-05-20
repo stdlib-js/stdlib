@@ -67,10 +67,10 @@ var z = gdot( [ x, y ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing the following ndarrays in order:
+-   **arrays**: array-like object containing the following ndarrays:
 
-    -   first input ndarray
-    -   second input ndarray
+    -   first one-dimensional input ndarray.
+    -   second one-dimensional input ndarray.
 
 </section>
 

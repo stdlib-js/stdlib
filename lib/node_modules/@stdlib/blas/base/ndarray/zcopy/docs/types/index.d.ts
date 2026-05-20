@@ -25,7 +25,14 @@ import { complex128ndarray } from '@stdlib/types/ndarray';
 /**
 * Copies values from a one-dimensional double-precision complex floating-point ndarray `x` into a one-dimensional double-precision complex floating-point ndarray `y`.
 *
-* @param arrays - array-like object containing an input ndarray and an output ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a one-dimensional output ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns output ndarray
 *
 * @example

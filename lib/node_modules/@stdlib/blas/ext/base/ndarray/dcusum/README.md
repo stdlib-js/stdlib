@@ -41,28 +41,30 @@ var dcusum = require( '@stdlib/blas/ext/base/ndarray/dcusum' );
 Computes the cumulative sum of a one-dimensional double-precision floating-point ndarray.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
-var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
+var y = new Float64Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 
-var ybuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0 ] );
-var y = new ndarray( 'float64', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var initial = scalar2ndarray( 0.0, {
+    'dtype': 'float64'
+});
 
-var initial = scalar2ndarray( 0.0, 'float64', 'row-major' );
-
-var v = dcusum( [ x, y, initial ] );
+var z = dcusum( [ x, y, initial ] );
 // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
 
-var bool = ( v === y );
+var bool = ( z === y );
 // returns true
 ```
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing a one-dimensional input ndarray, a one-dimensional output ndarray, and a zero-dimensional ndarray containing the initial sum.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a one-dimensional output ndarray.
+    -   a zero-dimensional ndarray containing the initial sum.
 
 </section>
 
@@ -85,25 +87,23 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var zerosLike = require( '@stdlib/ndarray/zeros-like' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dcusum = require( '@stdlib/blas/ext/base/ndarray/dcusum' );
 
-var xbuf = discreteUniform( 10, -50, 50, {
+var opts = {
     'dtype': 'float64'
-});
-var x = new ndarray( 'float64', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = discreteUniform( [ 10 ], -50, 50, opts );
 console.log( ndarray2array( x ) );
 
 var y = zerosLike( x );
 console.log( ndarray2array( y ) );
 
-var initial = scalar2ndarray( 100.0, {
-    'dtype': 'float64'
-});
+var initial = scalar2ndarray( 100.0, opts );
 
 var v = dcusum( [ x, y, initial ] );
 console.log( ndarray2array( v ) );
