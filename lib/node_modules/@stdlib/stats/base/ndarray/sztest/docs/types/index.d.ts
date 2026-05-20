@@ -27,7 +27,7 @@ import { float32ndarray, int8ndarray, ndarray } from '@stdlib/types/ndarray';
 *
 * ## Notes
 *
-* -   The function expects the following ndarrays in order:
+* -   The function expects the following ndarrays:
 *
 *     -   a one-dimensional input ndarray.
 *     -   a zero-dimensional output ndarray containing a results object.
@@ -43,7 +43,7 @@ import { float32ndarray, int8ndarray, ndarray } from '@stdlib/types/ndarray';
 * var Float32Results = require( '@stdlib/stats/base/ztest/one-sample/results/float32' );
 * var resolveEnum = require( '@stdlib/stats/base/ztest/alternative-resolve-enum' );
 * var structFactory = require( '@stdlib/array/struct-factory' );
-* var Float32Array = require( '@stdlib/array/float32' );
+* var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
@@ -52,8 +52,7 @@ import { float32ndarray, int8ndarray, ndarray } from '@stdlib/types/ndarray';
 * };
 *
 * // Define a one-dimensional input ndarray:
-* var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
-* var x = new ndarray( opts.dtype, xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = new Float32Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
 *
 * // Specify the alternative hypothesis:
 * var alt = scalar2ndarray( resolveEnum( 'two-sided' ), {
