@@ -67,9 +67,7 @@ interface Namespace {
 	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* ns.clacgv( 3, cx, 1 );
-	*
-	* var z = cx.get( 1 );
-	* // returns <Complex64>[ 3.0, -4.0 ]
+	* // cx => <Complex64Array>[ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ]
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
@@ -77,9 +75,7 @@ interface Namespace {
 	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* ns.clacgv.ndarray( 2, cx, 1, 1 );
-	*
-	* var z = cx.get( 1 );
-	* // returns <Complex64>[ 3.0, -4.0 ]
+	* // cx => <Complex64Array>[ 1.0, 2.0, 3.0, -4.0, 5.0, -6.0 ]
 	*/
 	clacgv: typeof clacgv;
 
@@ -99,13 +95,11 @@ interface Namespace {
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	*
-	* var A = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+	* var A = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var B = new Complex64Array( 4 );
 	*
 	* ns.clacpy( 'row-major', 'all', 2, 2, A, 2, B, 2 );
-	*
-	* var z = B.get( 0 );
-	* // returns <Complex64>[ 1.0, 2.0 ]
+	* // B => <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
@@ -114,9 +108,7 @@ interface Namespace {
 	* var B = new Complex64Array( 12 );
 	*
 	* ns.clacpy.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
-	*
-	* var z = B.get( 2 );
-	* // returns <Complex64>[ 3.0, 4.0 ]
+	* // B => <Complex64Array>[ 0.0, 0.0, 0.0, 0.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 	*/
 	clacpy: typeof clacpy;
 
@@ -215,12 +207,8 @@ interface Namespace {
 	* var s = new Complex64( 0.3, 0.4 );
 	*
 	* ns.crot( 2, cx, 2, cy, 1, 0.8, s );
-	*
-	* var z = cy.get( 0 );
-	* // returns <Complex64>[ ~-1.1, ~-0.2 ]
-	*
-	* z = cx.get( 0 );
-	* // returns <Complex64>[ ~0.8, ~1.6 ]
+	* // cy => <Complex64Array>[ ~-1.1, ~-0.2, ~-3.9, ~0.2, 0.0, 0.0, 0.0, 0.0 ]
+	* // cx => <Complex64Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
@@ -231,12 +219,8 @@ interface Namespace {
 	* var s = new Complex64( 0.3, 0.4 );
 	*
 	* ns.crot.ndarray( 2, cx, 2, 0, cy, 1, 0, 0.8, s );
-	*
-	* var z = cy.get( 0 );
-	* // returns <Complex64>[ ~-1.1, ~-0.2 ]
-	*
-	* z = cx.get( 0 );
-	* // returns <Complex64>[ ~0.8, ~1.6 ]
+	* // cy => <Complex64Array>[ ~-1.1, ~-0.2, ~-3.9, ~0.2, 0.0, 0.0, 0.0, 0.0 ]
+	* // cx => <Complex64Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
 	*/
 	crot: typeof crot;
 
@@ -845,9 +829,7 @@ interface Namespace {
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* ns.zlacgv( 3, zx, 1 );
-	*
-	* var z = zx.get( 1 );
-	* // returns <Complex128>[ 3.0, -4.0 ]
+	* // zx => <Complex128Array>[ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
@@ -855,9 +837,7 @@ interface Namespace {
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* ns.zlacgv.ndarray( 2, zx, 1, 1 );
-	*
-	* var z = zx.get( 1 );
-	* // returns <Complex128>[ 3.0, -4.0 ]
+	* // zx => <Complex128Array>[ 1.0, 2.0, 3.0, -4.0, 5.0, -6.0 ]
 	*/
 	zlacgv: typeof zlacgv;
 
@@ -877,13 +857,11 @@ interface Namespace {
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
 	*
-	* var A = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+	* var A = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 	* var B = new Complex128Array( 4 );
 	*
 	* ns.zlacpy( 'row-major', 'all', 2, 2, A, 2, B, 2 );
-	*
-	* var z = B.get( 0 );
-	* // returns <Complex128>[ 1.0, 2.0 ]
+	* // B => <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
@@ -892,9 +870,7 @@ interface Namespace {
 	* var B = new Complex128Array( 12 );
 	*
 	* ns.zlacpy.ndarray( 'all', 2, 2, A, 2, 1, 1, B, 2, 1, 2 );
-	*
-	* var z = B.get( 2 );
-	* // returns <Complex128>[ 3.0, 4.0 ]
+	* // B => <Complex128Array>[ 0.0, 0.0, 0.0, 0.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 	*/
 	zlacpy: typeof zlacpy;
 
@@ -993,12 +969,8 @@ interface Namespace {
 	* var s = new Complex128( 0.3, 0.4 );
 	*
 	* ns.zrot( 2, zx, 2, zy, 1, 0.8, s );
-	*
-	* var z = zy.get( 0 );
-	* // returns <Complex128>[ ~-1.1, ~-0.2 ]
-	*
-	* z = zx.get( 0 );
-	* // returns <Complex128>[ ~0.8, ~1.6 ]
+	* // zy => <Complex128Array>[ ~-1.1, ~-0.2, ~-3.9, ~0.2, 0.0, 0.0, 0.0, 0.0 ]
+	* // zx => <Complex128Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
 	*
 	* @example
 	* var Complex128Array = require( '@stdlib/array/complex128' );
@@ -1009,12 +981,8 @@ interface Namespace {
 	* var s = new Complex128( 0.3, 0.4 );
 	*
 	* ns.zrot.ndarray( 2, zx, 2, 0, zy, 1, 0, 0.8, s );
-	*
-	* var z = zy.get( 0 );
-	* // returns <Complex128>[ ~-1.1, ~-0.2 ]
-	*
-	* z = zx.get( 0 );
-	* // returns <Complex128>[ ~0.8, ~1.6 ]
+	* // zy => <Complex128Array>[ ~-1.1, ~-0.2, ~-3.9, ~0.2, 0.0, 0.0, 0.0, 0.0 ]
+	* // zx => <Complex128Array>[ ~0.8, ~1.6, 3.0, 4.0, 4.0, ~4.8, 7.0, 8.0 ]
 	*/
 	zrot: typeof zrot;
 }
