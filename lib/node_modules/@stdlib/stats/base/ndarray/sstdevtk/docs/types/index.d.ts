@@ -25,21 +25,24 @@ import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the standard deviation of a one-dimensional single-precision floating-point ndarray using a one-pass textbook algorithm.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying a degrees of freedom adjustment
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray specifying the degrees of freedom adjustment.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns standard deviation
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/ctor' );
+* var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-* var Float32Array = require( '@stdlib/array/float32' );
 *
-* var opts = {
+* var x = new Float32Vector( [ 1.0, -2.0, 2.0 ] );
+* var correction = scalar2ndarray( 1.0, {
 *     'dtype': 'float32'
-* };
-*
-* var xbuf = new Float32Array( [ 1.0, -2.0, 2.0 ] );
-* var x = new ndarray( opts.dtype, xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
-* var correction = scalar2ndarray( 1.0, opts );
+* });
 *
 * var v = sstdevtk( [ x, correction ] );
 * // returns ~2.0817
