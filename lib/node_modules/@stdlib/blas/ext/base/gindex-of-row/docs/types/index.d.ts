@@ -37,7 +37,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If the function is provided an empty matrix or if the function is unable to find a search vector, the function returns `-1` (i.e., an invalid index).
+	* -   If the function is provided an empty matrix or if the function is unable to find a matching row, the function returns `-1` (i.e., an invalid index).
 	*
 	* @param order - storage layout
 	* @param M - number of rows in `A`
@@ -62,7 +62,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If the function is provided an empty matrix or if the function is unable to find a search vector, the function returns `-1` (i.e., an invalid index).
+	* -   If the function is provided an empty matrix or if the function is unable to find a matching row, the function returns `-1` (i.e., an invalid index).
 	*
 	* @param M - number of rows in `A`
 	* @param N - number of columns in `A`
@@ -89,7 +89,7 @@ interface Routine {
 *
 * ## Notes
 *
-* -   If the function is provided an empty matrix or if the function is unable to find a search vector, the function returns `-1` (i.e., an invalid index).
+* -   If the function is provided an empty matrix or if the function is unable to find a matching row, the function returns `-1` (i.e., an invalid index).
 *
 * @param order - storage layout
 * @param M - number of rows in `A`
