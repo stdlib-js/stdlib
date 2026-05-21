@@ -27,7 +27,7 @@ import { typedndarray, ndarray } from '@stdlib/types/ndarray';
 *
 * ## Notes
 *
-* -   The function expects the following ndarrays in order:
+* -   The function expects the following ndarrays:
 *
 *     -   a one-dimensional input ndarray.
 *     -   a zero-dimensional output ndarray containing a results object.
@@ -44,6 +44,7 @@ import { typedndarray, ndarray } from '@stdlib/types/ndarray';
 * var resolveEnum = require( '@stdlib/stats/base/ztest/alternative-resolve-enum' );
 * var structFactory = require( '@stdlib/array/struct-factory' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var opts = {
@@ -51,8 +52,7 @@ import { typedndarray, ndarray } from '@stdlib/types/ndarray';
 * };
 *
 * // Define a one-dimensional input ndarray:
-* var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
-* var x = new ndarray( opts.dtype, xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, 3.0, 4.0, 2.0 ], 'generic' );
 *
 * // Specify the alternative hypothesis:
 * var alt = scalar2ndarray( resolveEnum( 'two-sided' ), {
@@ -78,7 +78,7 @@ import { typedndarray, ndarray } from '@stdlib/types/ndarray';
 *
 * console.log( v.get().toString() );
 */
-declare function ztest<T extends typedndarray<number>, U extends ndarray>( arrays: [ T, U, T, T, T, T ] ): U;
+declare function ztest<T extends ndarray>( arrays: [ typedndarray<number>, T, typedndarray<number>, typedndarray<number>, typedndarray<number>, typedndarray<number> ] ): T;
 
 
 // EXPORTS //

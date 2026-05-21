@@ -31,14 +31,14 @@ type Unary = ( t: number ) => number;
 */
 interface MGF {
 	/**
-	* Evaluates the moment-generating function (MGF) for a Gumbel distribution with location parameter `mu` and scale parameter `b` at a value `t`.
+	* Evaluates the moment-generating function (MGF) for a Gumbel distribution with location parameter `mu` and scale parameter `beta` at a value `t`.
 	*
 	* ## Notes
 	*
 	* -   If provided `beta <= 0`, the function returns `NaN`.
 	*
 	* @param t - input value
-	* @param mu - mean
+	* @param mu - location parameter
 	* @param beta - scale parameter
 	* @returns evaluated MGF
 	*
@@ -74,9 +74,9 @@ interface MGF {
 	( t: number, mu: number, beta: number ): number;
 
 	/**
-	* Returns a function for evaluating the moment-generating function (MGF) of a Gumbel distribution with location parameter `mu` and scale parameter `b`.
+	* Returns a function for evaluating the moment-generating function (MGF) of a Gumbel distribution with location parameter `mu` and scale parameter `beta`.
 	*
-	* @param mu - mean
+	* @param mu - location parameter
 	* @param beta - scale parameter
 	* @returns MGF
 	*
@@ -93,10 +93,10 @@ interface MGF {
 }
 
 /**
-* Gamma distribution moment-generating function (MGF).
+* Gumbel distribution moment-generating function (MGF).
 *
 * @param t - input value
-* @param mu - mean
+* @param mu - location parameter
 * @param beta - scale parameter
 * @returns evaluated MGF
 *
