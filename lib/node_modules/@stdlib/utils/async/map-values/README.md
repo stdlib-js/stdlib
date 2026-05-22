@@ -267,7 +267,7 @@ var obj1 = {
 };
 
 f( obj1, done );
-// => { 'a': 'beep:1', 'b': 'beep:2' }
+// e.g., => { 'a': 'beep:1', 'b': 'beep:2' }
 
 var obj2 = {
     'c': 3,
@@ -275,7 +275,7 @@ var obj2 = {
 };
 
 f( obj2, done );
-// => { 'c': 'beep:3', 'd': 'beep:4' }
+// e.g., => { 'c': 'beep:3', 'd': 'beep:4' }
 ```
 
 The function accepts the same `options` as `mapValuesAsync()`.
@@ -313,6 +313,7 @@ The function accepts the same `options` as `mapValuesAsync()`.
 ```javascript
 var resolve = require( 'path' ).resolve;
 var stats = require( 'fs' ).stat;
+var format = require( '@stdlib/string/format' );
 var mapValuesAsync = require( '@stdlib/utils/async/map-values' );
 
 var files = {
@@ -332,7 +333,7 @@ function getStats( file, next ) {
 
     function onStats( error, data ) {
         if ( error ) {
-            error = new Error( 'unable to retrieve stats: '+file );
+            error = new Error( format( 'unable to retrieve stats: %s', file ) );
             return next( error );
         }
         next( null, data );

@@ -30,7 +30,7 @@
 * @return    evaluated logPDF
 *
 * @example
-* var y = logpdf( 2.0, 0.0, 4.0 );
+* double y = stdlib_base_dists_uniform_logpdf( 2.0, 0.0, 4.0 );
 * // returns ~-1.386
 */
 double stdlib_base_dists_uniform_logpdf( const double x, const double a, const double b ) {

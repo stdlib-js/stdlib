@@ -105,7 +105,7 @@
 * // Apply the callback:
 * stdlib_strided_ddddd_d( arrays, shape, strides, (void *)add5 );
 */
-void stdlib_strided_ddddd_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_ddddd_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	QuinaryFcnFloat64 *f = (QuinaryFcnFloat64 *)fcn;
 	STDLIB_QUINARY_LOOP_CLBK( double, double )
 }
@@ -147,7 +147,7 @@ void stdlib_strided_ddddd_d( uint8_t *arrays[], int64_t *shape, int64_t *strides
 * // Apply the callback:
 * stdlib_strided_fffff_f( arrays, shape, strides, (void *)add5 );
 */
-void stdlib_strided_fffff_f( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_fffff_f( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	QuinaryFcnFloat32 *f = (QuinaryFcnFloat32 *)fcn;
 	STDLIB_QUINARY_LOOP_CLBK( float, float )
 }
@@ -189,7 +189,7 @@ void stdlib_strided_fffff_f( uint8_t *arrays[], int64_t *shape, int64_t *strides
 * // Apply the callback:
 * stdlib_strided_fffff_f_as_ddddd_d( arrays, shape, strides, (void *)add5 );
 */
-void stdlib_strided_fffff_f_as_ddddd_d( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_fffff_f_as_ddddd_d( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	QuinaryFcnFloat64 *f = (QuinaryFcnFloat64 *)fcn;
 	STDLIB_QUINARY_LOOP_CLBK_ARG_CAST( float, float, double )
 }
@@ -231,7 +231,7 @@ void stdlib_strided_fffff_f_as_ddddd_d( uint8_t *arrays[], int64_t *shape, int64
 * // Apply the callback:
 * stdlib_strided_IIIII_I( arrays, shape, strides, (void *)add5 );
 */
-void stdlib_strided_IIIII_I( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_IIIII_I( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	QuinaryFcnUint32 *f = (QuinaryFcnUint32 *)fcn;
 	STDLIB_QUINARY_LOOP_CLBK( uint32_t, uint32_t )
 }
@@ -273,7 +273,7 @@ void stdlib_strided_IIIII_I( uint8_t *arrays[], int64_t *shape, int64_t *strides
 * // Apply the callback:
 * stdlib_strided_iiiii_i( arrays, shape, strides, (void *)add5 );
 */
-void stdlib_strided_iiiii_i( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_iiiii_i( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	QuinaryFcnInt32 *f = (QuinaryFcnInt32 *)fcn;
 	STDLIB_QUINARY_LOOP_CLBK( int32_t, int32_t )
 }
@@ -315,7 +315,7 @@ void stdlib_strided_iiiii_i( uint8_t *arrays[], int64_t *shape, int64_t *strides
 * // Apply the callback:
 * stdlib_strided_HHHHH_H( arrays, shape, strides, (void *)add5 );
 */
-void stdlib_strided_HHHHH_H( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_HHHHH_H( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	QuinaryFcnUint16 *f = (QuinaryFcnUint16 *)fcn;
 	STDLIB_QUINARY_LOOP_CLBK( uint16_t, uint16_t )
 }
@@ -357,7 +357,7 @@ void stdlib_strided_HHHHH_H( uint8_t *arrays[], int64_t *shape, int64_t *strides
 * // Apply the callback:
 * stdlib_strided_hhhhh_h( arrays, shape, strides, (void *)add5 );
 */
-void stdlib_strided_hhhhh_h( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_hhhhh_h( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	QuinaryFcnInt16 *f = (QuinaryFcnInt16 *)fcn;
 	STDLIB_QUINARY_LOOP_CLBK( int16_t, int16_t )
 }
@@ -399,7 +399,7 @@ void stdlib_strided_hhhhh_h( uint8_t *arrays[], int64_t *shape, int64_t *strides
 * // Apply the callback:
 * stdlib_strided_BBBBB_B( arrays, shape, strides, (void *)add5 );
 */
-void stdlib_strided_BBBBB_B( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_BBBBB_B( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	QuinaryFcnUint8 *f = (QuinaryFcnUint8 *)fcn;
 	STDLIB_QUINARY_LOOP_CLBK( uint8_t, uint8_t )
 }
@@ -441,7 +441,7 @@ void stdlib_strided_BBBBB_B( uint8_t *arrays[], int64_t *shape, int64_t *strides
 * // Apply the callback:
 * stdlib_strided_bbbbb_b( arrays, shape, strides, (void *)add5 );
 */
-void stdlib_strided_bbbbb_b( uint8_t *arrays[], int64_t *shape, int64_t *strides, void *fcn ) {
+void stdlib_strided_bbbbb_b( uint8_t *arrays[], const int64_t *shape, const int64_t *strides, void *fcn ) {
 	QuinaryFcnInt8 *f = (QuinaryFcnInt8 *)fcn;
 	STDLIB_QUINARY_LOOP_CLBK( int8_t, int8_t )
 }
