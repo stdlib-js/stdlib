@@ -70,7 +70,7 @@ interface Namespace {
 	Levy: typeof Levy;
 
 	/**
-	* Returns the differential entropy for a Lévy distribution with location `mu` and scale `s`.
+	* Returns the differential entropy for a Lévy distribution with location `mu` and scale `c`.
 	*
 	* ## Notes
 	*
