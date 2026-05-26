@@ -106,7 +106,7 @@ interface Routine {
 * var x = [ 1.0, 1.0 ];
 * var y = [ 1.0, 1.0, 1.0 ];
 *
-* gger( 'row-major', 2, 3, 1.0, x, 1, y, 1, A, 2 );
+* gger( 'row-major', 2, 3, 1.0, x, 1, y, 1, A, 3 );
 * // A => [ 2.0, 5.0, 3.0, 6.0, 4.0, 7.0 ]
 *
 * @example

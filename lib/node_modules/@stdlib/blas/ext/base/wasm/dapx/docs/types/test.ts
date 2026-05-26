@@ -24,11 +24,11 @@ import dapx = require( './index' );
 
 // TESTS //
 
-// Attached to the main export is a `main` method which returns a number...
+// Attached to the main export is a `main` method which returns a Float64Array...
 {
 	const x = new Float64Array( 10 );
 
-	dapx.main( x.length, 5.0, x, 1 ); // $ExpectType number
+	dapx.main( x.length, 5.0, x, 1 ); // $ExpectType Float64Array
 }
 
 // The compiler throws an error if the `main` method is provided a first argument which is not a number...
@@ -99,11 +99,11 @@ import dapx = require( './index' );
 	dapx.main( x.length, x, 1, 10, 2 ); // $ExpectError
 }
 
-// Attached to main export is an `ndarray` method which returns a number...
+// Attached to main export is an `ndarray` method which returns a Float64Array...
 {
 	const x = new Float64Array( 10 );
 
-	dapx.ndarray( x.length, 5.0, x, 1, 0 ); // $ExpectType number
+	dapx.ndarray( x.length, 5.0, x, 1, 0 ); // $ExpectType Float64Array
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

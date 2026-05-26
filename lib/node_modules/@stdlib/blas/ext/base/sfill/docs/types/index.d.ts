@@ -37,7 +37,7 @@ interface Routine {
 	* var x = new Float32Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 	*
 	* sfill( x.length, 5.0, x, 1 );
-	* // x => <Float32Array>[ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	* // x => <Float32Array>[ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
 	( N: number, alpha: number, x: Float32Array, strideX: number ): Float32Array;
 
@@ -57,7 +57,7 @@ interface Routine {
 	* var x = new Float32Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 	*
 	* sfill.ndarray( x.length, 5.0, x, 1, 0 );
-	* // x => <Float32Array>[ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	* // x => <Float32Array>[ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
 	ndarray( N: number, alpha: number, x: Float32Array, strideX: number, offsetX: number ): Float32Array;
 }
@@ -77,7 +77,7 @@ interface Routine {
 * var x = new Float32Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 *
 * sfill( x.length, 5.0, x, 1 );
-* // x => <Float32Array>[ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+* // x => <Float32Array>[ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 *
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
@@ -85,7 +85,7 @@ interface Routine {
 * var x = new Float32Array( [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ] );
 *
 * sfill.ndarray( x.length, 5.0, x, 1, 0 );
-* // x => <Float32Array>[ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+* // x => <Float32Array>[ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 */
 declare var sfill: Routine;
 
