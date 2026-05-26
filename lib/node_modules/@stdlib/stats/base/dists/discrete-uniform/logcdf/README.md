@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> Evaluate the natural logarithm of the [cumulative distribution function][cdf] for a [discrete uniform][discrete-uniform-distribution] distribution.
+> [Discrete uniform][discrete-uniform-distribution] distribution logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 

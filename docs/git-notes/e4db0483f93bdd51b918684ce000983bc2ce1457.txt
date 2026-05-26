@@ -6,3 +6,4 @@ feat: add `number/float16/base/exponent`
 PR-URL: #8576
 
 Co-authored-by: stdlib-bot <noreply@stdlib.io>
+Reviewed-by: Athan Reines <kgryte@gmail.com>
