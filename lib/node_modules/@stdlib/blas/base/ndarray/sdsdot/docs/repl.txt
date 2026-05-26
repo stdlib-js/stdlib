@@ -3,7 +3,8 @@
     Computes the dot product of two one-dimensional single-precision floating-
     point ndarrays with extended accumulation.
 
-    If provided an empty input ndarray, the function returns `0.0`.
+    If provided an empty input ndarray, the function returns the scalar
+    constant.
 
     Parameters
     ----------
