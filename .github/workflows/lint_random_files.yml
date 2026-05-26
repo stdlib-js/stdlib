@@ -521,9 +521,11 @@ jobs:
         if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
         run: |
           set -o pipefail
-          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
+          files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ' || true)
           if [[ -n "${files}" ]]; then
             make TYPESCRIPT_DECLARATIONS_LINTER=eslint lint-typescript-declarations-files FAST_FAIL=0 FILES="${files}" 2>&1 | tee lint_typescript_declarations_errors.txt
+          else
+            echo "No TypeScript declaration files to lint."
           fi
 
       # Create sub-issue for TypeScript declarations lint failures:
