@@ -20,7 +20,7 @@ limitations under the License.
 
 # drangeabs
 
-> Compute the [range][range] of absolute values of a double-precision floating-point strided array.
+> Calculate the [range][range] of absolute values of a double-precision floating-point strided array.
 
 <section class="intro">
 

@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/stats/base/dists/pareto-type1/pdf",
   "version": "0.0.0",
-  "description": "Pareto  distribution (Type I) probability density function (PDF).",
+  "description": "Pareto distribution (Type I) probability density function (PDF).",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
