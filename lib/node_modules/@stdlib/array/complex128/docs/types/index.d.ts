@@ -433,8 +433,6 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	*
 	* @example
 	* var Complex128 = require( '@stdlib/complex/float64/ctor' );
-	* var real = require( '@stdlib/complex/float64/real' );
-	* var imag = require( '@stdlib/complex/float64/imag' );
 	*
 	* var arr = new Complex128Array( 4 );
 	*
@@ -446,15 +444,7 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	*
 	* // Copy the first two elements to the last two elements:
 	* arr.copyWithin( 2, 0, 2 );
-	*
-	* // Get the last array element:
-	* var z = arr.get( 3 );
-	*
-	* var re = real( z );
-	* // returns 2.0
-	*
-	* var im = imag( z );
-	* // returns 2.0
+	* // arr => <Complex128Array>[ 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 2.0, 2.0 ]
 	*/
 	copyWithin( target: number, start: number, end?: number ): Complex128Array;
 
