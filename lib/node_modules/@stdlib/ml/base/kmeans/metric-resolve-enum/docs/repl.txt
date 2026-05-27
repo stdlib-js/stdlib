@@ -1,0 +1,29 @@
+
+{{alias}}( value )
+    Returns the enumeration constant associated with a supported k-means
+    distance metric value.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `SQEUCLIDEAN == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    value: any
+        Distance metric value.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'sqeuclidean' )
+    <number>
+    > out = {{alias}}( {{alias:@stdlib/ml/base/kmeans/metric-str2enum}}( 'sqeuclidean' ) )
+    <number>
+
+    See Also
+    --------
+
