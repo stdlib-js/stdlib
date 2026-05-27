@@ -41,12 +41,10 @@ var dlastIndexOf = require( '@stdlib/blas/ext/base/ndarray/dlast-index-of' );
 Returns the last index of a specified search element in a one-dimensional double-precision floating-point ndarray.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
-var xbuf = new Float64Array( [ 1.0, 2.0, 4.0, 2.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, 2.0, 4.0, 2.0 ] );
 
 var searchElement = scalar2ndarray( 2.0, {
     'dtype': 'float64'
@@ -71,12 +69,10 @@ The function has the following parameters:
 If the function is unable to find a search element, the function returns `-1`.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
-var xbuf = new Float64Array( [ 1.0, 2.0, 4.0, 2.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, 2.0, 4.0, 2.0 ] );
 
 var searchElement = scalar2ndarray( 10.0, {
     'dtype': 'float64'
@@ -111,22 +107,20 @@ var idx = dlastIndexOf( [ x, searchElement, fromIndex ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarraylike2scalar = require( '@stdlib/ndarray/base/ndarraylike2scalar' );
 var dlastIndexOf = require( '@stdlib/blas/ext/base/ndarray/dlast-index-of' );
 
-var xbuf = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float64'
-});
-var x = new ndarray( 'float64', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = discreteUniform( [ 10 ], -100, 100, opts );
 console.log( ndarray2array( x ) );
 
-var searchElement = scalar2ndarray( 80.0, {
-    'dtype': 'float64'
-});
+var searchElement = scalar2ndarray( 80.0, opts );
 console.log( 'Search Element:', ndarraylike2scalar( searchElement ) );
 
 var fromIndex = scalar2ndarray( -1, {
