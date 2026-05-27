@@ -47,9 +47,8 @@
     --------
     > var x = {{alias:@stdlib/ndarray/array}}( [ [ [ 1, 2 ], [ 3, 4 ] ] ] );
     > var it = {{alias}}( x, [ 1, 2 ] );
-    > var v = it.next().value;
-    > {{alias:@stdlib/ndarray/to-array}}( v )
-    [ [ 1, 2 ], [ 3, 4 ] ]
+    > var v = it.next().value
+    <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 
     See Also
     --------

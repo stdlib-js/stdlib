@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Computes the dot product of two one-dimensional single-precision floating-
+    point ndarrays with extended accumulation.
+
+    If provided an empty input ndarray, the function returns `0.0`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - first one-dimensional input ndarray.
+        - second one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing a scalar constant.
+
+    Returns
+    -------
+    out: number
+        The dot product.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
+    > var y = new {{alias:@stdlib/ndarray/vector/float32}}( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
+    > var scalar = {{alias:@stdlib/ndarray/from-scalar}}( 10.0, { 'dtype': 'float32' } );
+    > {{alias}}( [ x, y, scalar ] )
+    5.0
+
+    See Also
+    --------
+

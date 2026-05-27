@@ -61,7 +61,7 @@ The function has the following parameters:
 -   **mask**: mask [`Uint8Array`][@stdlib/array/uint8]. If a `mask` array element is `0`, the corresponding element in `x` is considered valid and **included** in computation. If a `mask` array element is `1`, the corresponding element in `x` is considered invalid/missing and **excluded** from computation.
 -   **strideMask**: stride length for `mask`.
 
-The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute the minimum absolute value of every other element in `x`,
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compute the minimum absolute value of every other element in `x`,
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
