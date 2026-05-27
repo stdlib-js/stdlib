@@ -20,7 +20,7 @@ limitations under the License.
 
 # dsdot
 
-> Calculate the dot product of two one-dimensional single-precision floating-point ndarrays.
+> Calculate the dot product of two one-dimensional single-precision floating-point ndarrays with double-precision accumulation.
 
 <section class="intro">
 
@@ -53,7 +53,7 @@ var dsdot = require( '@stdlib/blas/base/ndarray/dsdot' );
 
 #### dsdot( arrays )
 
-Computes the dot product of two one-dimensional single-precision floating-point ndarrays.
+Computes the dot product of two one-dimensional single-precision floating-point ndarrays with double-precision accumulation.
 
 ```javascript
 var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
