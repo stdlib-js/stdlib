@@ -207,12 +207,12 @@ var beta = new Complex64( 0.5, -0.5 );
 cgemv( 'column-major', 'no-transpose', M, N, alpha, A, M, x, 1, beta, y, 1 );
 
 // Print the results:
-logEach( '%s', x );
+logEach( '%s', y );
 
 cgemv.ndarray( 'no-transpose', M, N, alpha, A, 1, M, 0, x, 1, 0, beta, y, 1, 0 );
 
 // Print the results:
-logEach( '%s', x );
+logEach( '%s', y );
 ```
 
 </section>
