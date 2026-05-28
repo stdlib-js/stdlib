@@ -520,7 +520,6 @@ jobs:
         id: lint-typescript-declarations
         if: ( github.event.inputs.javascript != 'false' ) && ( success() || failure() )
         run: |
-          set -o pipefail
           files=$(echo "${{ steps.random-files.outputs.files }}" | tr ',' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ')
           if [[ -n "${files}" ]]; then
             make TYPESCRIPT_DECLARATIONS_LINTER=eslint lint-typescript-declarations-files FAST_FAIL=0 FILES="${files}" 2>&1 | tee lint_typescript_declarations_errors.txt
