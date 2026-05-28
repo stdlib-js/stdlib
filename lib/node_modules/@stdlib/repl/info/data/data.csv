@@ -3718,7 +3718,7 @@ isObjectLike,"\nisObjectLike( value:any )\n    Tests if a value is object-like.\
 isOdd,"\nisOdd( value:any )\n    Tests if a value is an odd number.\n"
 isOdd.isPrimitive,"\nisOdd.isPrimitive( value:any )\n    Tests if a value is a number primitive that is an odd number.\n"
 isOdd.isObject,"\nisOdd.isObject( value:any )\n    Tests if a value is a number object that has an odd number value.\n"
-isoWeeksInYear,"\nisoWeeksInYear( [year:integer] )\n    Returns the number of ISO weeks in a year according to the Gregorian\n    calendar.\n"
+isoWeeksInYear,"\nisoWeeksInYear( [value:integer|Date] )\n    Returns the number of ISO weeks in a year according to the Gregorian\n    calendar.\n"
 isPascalcase,"\nisPascalcase( value:any )\n    Tests if a value is a string in Pascal case.\n"
 isPersymmetricMatrix,"\nisPersymmetricMatrix( value:any )\n    Tests if a value is a square matrix which is symmetric about its\n    antidiagonal.\n"
 isPlainObject,"\nisPlainObject( value:any )\n    Tests if a value is a plain object.\n"
