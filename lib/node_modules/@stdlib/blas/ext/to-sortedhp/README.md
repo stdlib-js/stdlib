@@ -35,16 +35,12 @@ var toSortedhp = require( '@stdlib/blas/ext/to-sortedhp' );
 Returns a new [ndarray][@stdlib/ndarray/ctor] containing the elements of an input [ndarray][@stdlib/ndarray/ctor] sorted along one or more [ndarray][@stdlib/ndarray/ctor] dimensions using heapsort.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0 ] );
 
 var y = toSortedhp( x );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ -3.0, -1.0, 2.0 ]
+// returns <ndarray>[ -3.0, -1.0, 2.0 ]
 ```
 
 The function has the following parameters:
@@ -61,45 +57,33 @@ The function accepts the following options:
 By default, the function sorts elements in increasing order. To sort in a different order, provide a `sortOrder` argument.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0 ] );
 
 var y = toSortedhp( x, -1.0 );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ 2.0, -1.0, -3.0 ]
+// returns <ndarray>[ 2.0, -1.0, -3.0 ]
 ```
 
 In addition to numeric values, one can specify the sort order via one of the following string literals: `'ascending'`, `'asc'`, `'descending'`, or `'desc'`. The first two literals indicate to sort in ascending (i.e., increasing) order. The last two literals indicate to sort in descending (i.e., decreasing) order.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0 ] );
 
 // Sort in ascending order:
 var y = toSortedhp( x, 'asc' );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ -3.0, -1.0, 2.0 ]
+// returns <ndarray>[ -3.0, -1.0, 2.0 ]
 
 // Sort in descending order:
 y = toSortedhp( x, 'descending' );
-// returns <ndarray>
-
-arr = ndarray2array( y );
-// returns [ 2.0, -1.0, -3.0 ]
+// returns <ndarray>[ 2.0, -1.0, -3.0 ]
 ```
 
 By default, the function performs the operation over all elements in a provided input [ndarray][@stdlib/ndarray/ctor]. To perform the operation over specific dimensions, provide a `dims` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0, 4.0 ], {
@@ -107,22 +91,15 @@ var x = array( [ -1.0, 2.0, -3.0, 4.0 ], {
     'order': 'row-major'
 });
 
-var v = ndarray2array( x );
-// returns [ [ -1.0, 2.0 ], [ -3.0, 4.0 ] ]
-
 var y = toSortedhp( x, {
     'dims': [ 0 ]
 });
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ [ -3.0, 2.0 ], [ -1.0, 4.0 ] ]
+// returns <ndarray>[ [ -3.0, 2.0 ], [ -1.0, 4.0 ] ]
 ```
 
 To specify the output [ndarray][@stdlib/ndarray/ctor] [data type][@stdlib/ndarray/dtypes], provide a `dtype` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ -1.0, 2.0, -3.0 ] );
@@ -130,10 +107,7 @@ var x = array( [ -1.0, 2.0, -3.0 ] );
 var y = toSortedhp( x, {
     'dtype': 'float32'
 });
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ -3.0, -1.0, 2.0 ]
+// returns <ndarray>[ -3.0, -1.0, 2.0 ]
 ```
 
 #### toSortedhp.assign( x, out\[, sortOrder]\[, options] )
@@ -141,7 +115,6 @@ var arr = ndarray2array( y );
 Sorts the elements of an input [ndarray][@stdlib/ndarray/ctor] along one or more [ndarray][@stdlib/ndarray/ctor] dimensions using heapsort and assigns the results to an output [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var zeros = require( '@stdlib/ndarray/zeros' );
 var array = require( '@stdlib/ndarray/array' );
 
@@ -149,10 +122,7 @@ var x = array( [ -1.0, 2.0, -3.0 ] );
 var y = zeros( [ 3 ] );
 
 var out = toSortedhp.assign( x, y );
-// returns <ndarray>
-
-var arr = ndarray2array( out );
-// returns [ -3.0, -1.0, 2.0 ]
+// returns <ndarray>[ -3.0, -1.0, 2.0 ]
 
 var bool = ( y === out );
 // returns true
