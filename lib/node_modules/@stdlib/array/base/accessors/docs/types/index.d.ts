@@ -761,7 +761,7 @@ declare function accessors( x: Uint8ClampedArray ): Uint8cAccessorObject;
 * // returns [ <Function>, <Function> ]
 *
 * var v = fcns[ 0 ]( x, 1 );
-* // returns <Complex128>
+* // returns <Complex128>[ 3.0, 4.0 ]
 */
 declare function accessors( x: Complex128Array ): Complex128AccessorObject;
 
@@ -789,7 +789,7 @@ declare function accessors( x: Complex128Array ): Complex128AccessorObject;
 * // returns [ <Function>, <Function> ]
 *
 * var v = fcns[ 0 ]( x, 1 );
-* // returns <Complex64>
+* // returns <Complex64>[ 3.0, 4.0 ]
 */
 declare function accessors( x: Complex64Array ): Complex64AccessorObject;
 
