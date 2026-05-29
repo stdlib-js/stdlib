@@ -119,7 +119,10 @@ jobs:
     needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
-    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib make-commands')
+    if: |
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/stdlib make-commands')  &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
 
     # Run reusable workflow:
     uses: ./.github/workflows/pr_commands_comment.yml
