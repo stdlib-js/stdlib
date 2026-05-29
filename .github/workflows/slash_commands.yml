@@ -234,7 +234,10 @@ jobs:
     needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
-    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib help')
+    if: |
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/stdlib help') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
 
     # Define the job's steps:
     steps:
