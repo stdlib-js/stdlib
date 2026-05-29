@@ -97,7 +97,10 @@ jobs:
     needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
-    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib check-files')
+    if: |
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/stdlib check-files') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
 
     # Run reusable workflow:
     uses: ./.github/workflows/check_required_files.yml
@@ -116,7 +119,10 @@ jobs:
     needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
-    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib make-commands')
+    if: |
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/stdlib make-commands')  &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
 
     # Run reusable workflow:
     uses: ./.github/workflows/pr_commands_comment.yml
@@ -132,7 +138,10 @@ jobs:
     name: 'Update copyright header years'
 
     # Define the conditions under which the job should run:
-    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib update-copyright-years')
+    if: |
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/stdlib update-copyright-years') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
 
     # Run reusable workflow:
     uses: ./.github/workflows/update_pr_copyright_years.yml
@@ -153,7 +162,10 @@ jobs:
     needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
-    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib lint-autofix')
+    if: |
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/stdlib lint-autofix') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
 
     # Run reusable workflow:
     uses: ./.github/workflows/lint_autofix.yml
@@ -174,7 +186,10 @@ jobs:
     needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
-    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib merge')
+    if: |
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/stdlib merge') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
 
     # Run reusable workflow:
     uses: ./.github/workflows/pr_merge_develop.yml
@@ -195,7 +210,10 @@ jobs:
     needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
-    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib rebase')
+    if: |
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/stdlib rebase') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
 
     # Run reusable workflow:
     uses: ./.github/workflows/pr_rebase_develop.yml
@@ -219,7 +237,10 @@ jobs:
     needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
-    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib help')
+    if: |
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/stdlib help') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
 
     # Define the job's steps:
     steps:
