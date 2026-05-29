@@ -27,7 +27,7 @@ import { float32ndarray, ndarray } from '@stdlib/types/ndarray';
 *
 * ## Notes
 *
-* -   The function expects the following ndarrays in order:
+* -   The function expects the following ndarrays:
 *
 *     -   first one-dimensional input ndarray.
 *     -   second one-dimensional input ndarray.
@@ -45,7 +45,7 @@ import { float32ndarray, ndarray } from '@stdlib/types/ndarray';
 * var Float32Results = require( '@stdlib/stats/base/ztest/two-sample/results/float32' );
 * var resolveEnum = require( '@stdlib/stats/base/ztest/alternative-resolve-enum' );
 * var structFactory = require( '@stdlib/array/struct-factory' );
-* var Float32Array = require( '@stdlib/array/float32' );
+* var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
@@ -54,11 +54,8 @@ import { float32ndarray, ndarray } from '@stdlib/types/ndarray';
 * };
 *
 * // Define one-dimensional input ndarrays:
-* var xbuf = new Float32Array( [ 4.0, 4.0, 6.0, 6.0, 5.0 ] );
-* var x = new ndarray( opts.dtype, xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
-*
-* var ybuf = new Float32Array( [ 3.0, 3.0, 5.0, 7.0, 7.0 ] );
-* var y = new ndarray( opts.dtype, ybuf, [ 5 ], [ 1 ], 0, 'row-major' );
+* var x = new Float32Vector( [ 4.0, 4.0, 6.0, 6.0, 5.0 ] );
+* var y = new Float32Vector( [ 3.0, 3.0, 5.0, 7.0, 7.0 ] );
 *
 * // Specify the alternative hypothesis:
 * var alt = scalar2ndarray( resolveEnum( 'two-sided' ), {
