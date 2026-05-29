@@ -67,22 +67,29 @@ jobs:
         if: steps.download-metadata.outcome == 'success'
         run: |
           pr_number=$(cat pr-metadata/pr_number)
+
+          # Validate that the PR number is a positive integer; otherwise, abort:
+          if ! [[ "$pr_number" =~ ^[0-9]+$ ]]; then
+            echo "Invalid PR number: not a positive integer."
+            exit 1
+          fi
           echo "pr_number=$pr_number" >> $GITHUB_OUTPUT
-          {
-            echo 'report<<EOF'
-            cat pr-metadata/report
-            echo 'EOF'
-          } >> $GITHUB_OUTPUT
 
       # Post report as comment to PR:
       - name: 'Post report as comment to PR'
         if: steps.download-metadata.outcome == 'success'
         # Pin action to full length commit SHA
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          PR_NUMBER: ${{ steps.pr-metadata.outputs.pr_number }}
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
-            const prNumber = parseInt('${{ steps.pr-metadata.outputs.pr_number }}');
+            const fs = require( 'fs' );
+
+            const prNumber = parseInt( process.env.PR_NUMBER, 10 );
+            const report = fs.readFileSync( 'pr-metadata/report', 'utf8' );
+
             const { data: comments } = await github.rest.issues.listComments({
               'issue_number': prNumber,
               'owner': context.repo.owner,
@@ -95,14 +102,14 @@ jobs:
                 'owner': context.repo.owner,
                 'repo': context.repo.repo,
                 'comment_id': botComment.id,
-                'body': `${{ steps.pr-metadata.outputs.report }}`
+                'body': report
               });
             } else {
               await github.rest.issues.createComment({
                 'issue_number': prNumber,
                 'owner': context.repo.owner,
                 'repo': context.repo.repo,
-                'body': `${{ steps.pr-metadata.outputs.report }}`
+                'body': report
               });
             }
 
@@ -145,11 +152,13 @@ jobs:
       # Checkout coverage repository branch for PR:
       - name: 'Checkout coverage repository branch'
         if: steps.download-coverage.outcome == 'success'
+        env:
+          PR_NUMBER: ${{ steps.pr-metadata.outputs.pr_number }}
         run: |
           cd ./www-test-code-coverage
-          BRANCH_NAME="pr-${{ steps.pr-metadata.outputs.pr_number }}"
-          git fetch origin $BRANCH_NAME || true
-          git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME
+          BRANCH_NAME="pr-$PR_NUMBER"
+          git fetch origin "$BRANCH_NAME" || true
+          git checkout "$BRANCH_NAME" || git checkout -b "$BRANCH_NAME"
 
           # Remove all directories except .github and .git from branch:
           find . -mindepth 1 -maxdepth 1 -type d -not -name '.github' -not -name '.git' -exec git rm -rf {} + || true
@@ -166,12 +175,11 @@ jobs:
             commit_timestamp=$(date -u +"%Y-%m-%d %H:%M:%S")
 
             # Append coverage to ndjson files:
-            files=$(find ./artifacts -name 'index.html')
-            for file in $files; do
-              file=${file//artifacts/www-test-code-coverage}
-              coverage=$(echo -n '['; grep -oP "(?<=class='fraction'>)[0-9]+/[0-9]+" $file | awk -F/ '{ if ($2 != 0) print $1 "," $2 "," ($1/$2)*100; else print $1 "," $2 ",100" }' | tr '\n' ',' | sed 's/,$//'; echo -n ",\"$commit_sha\",\"$commit_timestamp\"]")
-              echo $coverage >> $(dirname $file)/coverage.ndjson
-            done
+            while IFS= read -r -d '' file; do
+              file="${file//artifacts/www-test-code-coverage}"
+              coverage=$(echo -n '['; grep -oP "(?<=class='fraction'>)[0-9]+/[0-9]+" "$file" | awk -F/ '{ if ($2 != 0) print $1 "," $2 "," ($1/$2)*100; else print $1 "," $2 ",100" }' | tr '\n' ',' | sed 's/,$//'; echo -n ",\"$commit_sha\",\"$commit_timestamp\"]")
+              echo "$coverage" >> "$(dirname "$file")/coverage.ndjson"
+            done < <(find ./artifacts -name 'index.html' -print0)
           else
             echo "The artifacts directory does not exist."
           fi
@@ -194,11 +202,12 @@ jobs:
         env:
           REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           USER_NAME: stdlib-bot
+          PR_NUMBER: ${{ steps.pr-metadata.outputs.pr_number }}
         run: |
           cd ./www-test-code-coverage
-          BRANCH_NAME="pr-${{ steps.pr-metadata.outputs.pr_number }}"
+          BRANCH_NAME="pr-$PR_NUMBER"
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
           git config --local user.name "stdlib-bot"
           git add .
           git commit -m "Update artifacts" || exit 0
-          git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git" $BRANCH_NAME
+          git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git" "$BRANCH_NAME"
