@@ -278,12 +278,12 @@ declare class Complex128Array implements Complex128ArrayInterface {
 	* @param arg - length, typed array, array-like object, or buffer
 	* @param byteOffset - byte offset (default: 0)
 	* @param length - view length
-	* @throws ArrayBuffer byte length must be a multiple of `8`
+	* @throws ArrayBuffer byte length must be a multiple of `16`
 	* @throws array-like object and typed array input arguments must have a length which is a multiple of two
 	* @throws if provided only a single argument, must provide a valid argument
 	* @throws byte offset must be a nonnegative integer
-	* @throws byte offset must be a multiple of `8`
-	* @throws view length must be a positive multiple of `8`
+	* @throws byte offset must be a multiple of `16`
+	* @throws view length must be a positive multiple of `16`
 	* @throws must provide sufficient memory to accommodate byte offset and view length requirements
 	* @throws an iterator must return either a two element array containing real and imaginary components or a complex number
 	* @returns complex number array
@@ -1240,12 +1240,12 @@ interface Complex128ArrayConstructor {
 	* @param arg - length, typed array, array-like object, or buffer
 	* @param byteOffset - byte offset (default: 0)
 	* @param length - view length
-	* @throws ArrayBuffer byte length must be a multiple of `8`
+	* @throws ArrayBuffer byte length must be a multiple of `16`
 	* @throws array-like object and typed array input arguments must have a length which is a multiple of two
 	* @throws if provided only a single argument, must provide a valid argument
 	* @throws byte offset must be a nonnegative integer
-	* @throws byte offset must be a multiple of `8`
-	* @throws view length must be a positive multiple of `8`
+	* @throws byte offset must be a multiple of `16`
+	* @throws view length must be a positive multiple of `16`
 	* @throws must provide sufficient memory to accommodate byte offset and view length requirements
 	* @throws an iterator must return either a two element array containing real and imaginary components or a complex number
 	* @returns complex number array
@@ -1309,12 +1309,12 @@ interface Complex128ArrayConstructor {
 	* @param arg - length, typed array, array-like object, or buffer
 	* @param byteOffset - byte offset (default: 0)
 	* @param length - view length
-	* @throws ArrayBuffer byte length must be a multiple of `8`
+	* @throws ArrayBuffer byte length must be a multiple of `16`
 	* @throws array-like object and typed array input arguments must have a length which is a multiple of two
 	* @throws if provided only a single argument, must provide a valid argument
 	* @throws byte offset must be a nonnegative integer
-	* @throws byte offset must be a multiple of `8`
-	* @throws view length must be a positive multiple of `8`
+	* @throws byte offset must be a multiple of `16`
+	* @throws view length must be a positive multiple of `16`
 	* @throws must provide sufficient memory to accommodate byte offset and view length requirements
 	* @throws an iterator must return either a two element array containing real and imaginary components or a complex number
 	* @returns complex number array
@@ -1456,12 +1456,12 @@ interface Complex128ArrayConstructor {
 * @param arg - length, typed array, array-like object, or buffer
 * @param byteOffset - byte offset (default: 0)
 * @param length - view length
-* @throws ArrayBuffer byte length must be a multiple of `8`
+* @throws ArrayBuffer byte length must be a multiple of `16`
 * @throws array-like object and typed array input arguments must have a length which is a multiple of two
 * @throws if provided only a single argument, must provide a valid argument
 * @throws byte offset must be a nonnegative integer
-* @throws byte offset must be a multiple of `8`
-* @throws view length must be a positive multiple of `8`
+* @throws byte offset must be a multiple of `16`
+* @throws view length must be a positive multiple of `16`
 * @throws must provide sufficient memory to accommodate byte offset and view length requirements
 * @throws an iterator must return either a two element array containing real and imaginary components or a complex number
 * @returns complex number array
