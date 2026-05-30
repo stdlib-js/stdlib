@@ -50,6 +50,9 @@ skip_editorconfig="${SKIP_LINT_EDITORCONFIG}"
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
 
+# Resolve the location of the Git directory:
+git_dir=$(git rev-parse --absolute-git-dir)
+
 # Define the path to a utility for linting filenames:
 lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
 
@@ -81,7 +84,7 @@ cppcheck_tests_fixtures_suppressions_list="${root}/etc/cppcheck/suppressions.tes
 cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
 # Define the path to a directory for caching hook results:
-cache_dir="${root}/.git/hooks-cache"
+cache_dir="${git_dir}/hooks-cache"
 
 # Define the path to a file for storing hook results:
 cache_file="${cache_dir}/pre_commit_report.yml"
@@ -216,10 +219,48 @@ run_lint() {
 	else
 		task_status 'skipped'
 	fi
-	# Lint Markdown files...
+	# Lint package README Markdown files...
+	add_task 'lint_markdown_pkg_readmes'
+	if [[ -z "${skip_markdown}" ]]; then
+		files=$(echo "${changed_files}" | grep '^lib/node_modules/@stdlib/.*/README\.md$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			make FILES="${files}" lint-markdown-package-readme-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
+				echo '' >&2
+				echo 'Markdown lint errors for package README files.' >&2
+				return 1
+			fi
+			task_status 'passed'
+		else
+			task_status 'na'
+		fi
+	else
+		task_status 'skipped'
+	fi
+	# Lint docs Markdown files...
+	add_task 'lint_markdown_docs'
+	if [[ -z "${skip_markdown}" ]]; then
+		files=$(echo "${changed_files}" | grep '\.md$' | grep '^docs/' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			make FILES="${files}" lint-markdown-docs-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
+				echo '' >&2
+				echo 'Markdown lint errors for docs files.' >&2
+				return 1
+			fi
+			task_status 'passed'
+		else
+			task_status 'na'
+		fi
+	else
+		task_status 'skipped'
+	fi
+	# Lint other Markdown files...
 	add_task 'lint_markdown'
 	if [[ -z "${skip_markdown}" ]]; then
-		files=$(echo "${changed_files}" | grep '\.md$' | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep '\.md$' | grep -v '\.github/workflows/.*\.md$' | grep -v 'lib/node_modules/@stdlib/.*/README\.md$' | grep -v '^docs/' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-markdown-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
@@ -545,8 +586,9 @@ run_lint() {
 	fi
 	# Lint TypeScript declaration files...
 	add_task 'lint_typescript_declarations'
+	declaration_files=$(echo "${changed_files}" | grep '/docs/types/.*\.d\.ts$')
 	if [[ -z "${skip_typescript_declarations}" ]]; then
-		files=$(echo "${changed_files}" | grep '/docs/types/.*\.d.ts$' | tr '\n' ' ')
+		files=$(echo "${declaration_files}" | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" lint-typescript-declarations-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
@@ -565,7 +607,26 @@ run_lint() {
 	# Lint TypeScript declaration test files...
 	add_task 'lint_typescript_tests'
 	if [[ -z "${skip_typescript_tests}" ]]; then
+		# Get directly changed `test.ts` files:
 		files=$(echo "${changed_files}" | grep '/docs/types/test.ts$' | tr '\n' ' ')
+
+		# Also get `test.ts` files corresponding to changed `index.d.ts` files...
+		if [[ -n "${declaration_files}" ]]; then
+			while IFS= read -r decl_file; do
+				# Only process index.d.ts files (skip other .d.ts files)
+				if [[ "${decl_file}" == */index.d.ts ]]; then
+					# Replace `index.d.ts` with `test.ts` to get the test file path:
+					test_file="${decl_file%index.d.ts}test.ts"
+
+					# Check if the test file exists and isn't already in the list:
+					if [[ -f "${test_file}" ]] && [[ ! " ${files} " =~ [[:space:]]${test_file}[[:space:]] ]]; then
+						files="${files} ${test_file}"
+					fi
+				fi
+			done <<< "${declaration_files}"
+		fi
+
+		# Lint all collected test files...
 		if [[ -n "${files}" ]]; then
 			make TYPESCRIPT_DECLARATIONS_LINTER=eslint FILES="${files}" ESLINT_TS_CONF="${eslint_typescript_tests_conf}" lint-typescript-declarations-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then
@@ -584,7 +645,7 @@ run_lint() {
 	# Lint license headers...
 	add_task 'lint_license_headers'
 	if [[ -z "${skip_license_headers}" ]]; then
-		files=$(echo "${changed_files}" | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep -v '\.github/workflows/.*\.md$' | grep -v '\.lock\.yml$' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-license-headers-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then

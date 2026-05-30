@@ -179,7 +179,7 @@ interface ArrayWith {
 	* var out = toAccessorArray( [ 0, 0, 0, 0 ] );
 	* var arr = arrayWith.assign( x, 0, 5, out, 1, 0 );
 	*
-	* var v = out[ 0 ];
+	* var v = out.get( 0 );
 	* // returns 5
 	*
 	* var bool = ( arr === out );

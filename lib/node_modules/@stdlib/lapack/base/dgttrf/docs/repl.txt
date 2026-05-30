@@ -1,0 +1,195 @@
+
+{{alias}}( N, DL, D, DU, DU2, IPIV )
+    Computes an LU factorization of a real tridiagonal matrix `A` using
+    elimination with partial pivoting and row interchanges.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    The function mutates `DL`, `D`, `DU`, `DU2`, and `IPIV`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of rows/columns in `A`.
+
+    DL: Float64Array
+        The first sub diagonal of `A`. Should have `N-1` indexed elements. `DL`
+        is overwritten by the multipliers that define the matrix `L` from the LU
+        factorization of `A`.
+
+    D: Float64Array
+        The diagonal of `A`. Should have `N` indexed elements. `D` is
+        overwritten by the diagonal elements of the upper triangular matrix `U`
+        from the LU factorization of `A`.
+
+    DU: Float64Array
+        The first super-diagonal of `A`. Should have `N-1` indexed elements.
+        `DU` is overwritten by the elements of the first super-diagonal of `U`.
+
+    DU2: Float64Array
+        The second super-diagonal of `U`. Should have `N-2` indexed elements.
+        `DU2` is overwritten by the elements of the second super-diagonal of
+        `U`.
+
+    IPIV: Int32Array
+        Vector of pivot indices. Should have `N` indexed elements.
+
+    Returns
+    -------
+    info: integer
+        Status code. The status code indicates the following conditions:
+
+        - if equal to zero, then the factorization was successful.
+        - if greater than zero, then `U(k, k)` is exactly zero the factorization
+        has been completed, but the factor `U` is exactly singular, and division
+        by zero will occur if it is used to solve a system of equations where
+        `k = StatusCode`.
+
+    Examples
+    --------
+    > var DL = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var D = new {{alias:@stdlib/array/float64}}( [ 2.0, 3.0, 1.0 ] );
+    > var DU = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var DU2 = new {{alias:@stdlib/array/float64}}( 1 );
+    > var IPIV = new {{alias:@stdlib/array/int32}}( 3 );
+    > {{alias}}( 3, DL, D, DU, DU2, IPIV )
+    0
+    > DL
+    <Float64Array>[ 0.5, 0.4 ]
+    > D
+    <Float64Array>[ 2.0, 2.5, 0.6 ]
+    > DU
+    <Float64Array>[ 1.0, 1.0 ]
+    > DU2
+    <Float64Array>[ 0.0 ]
+    > IPIV
+    <Int32Array>[ 0, 1, 2 ]
+
+    // Using typed array views:
+    > var DL0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 1.0 ] );
+    > var D0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 2.0, 3.0, 1.0 ] );
+    > var DU0 = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 1.0 ] );
+    > var DU20 = new {{alias:@stdlib/array/float64}}( 2 );
+    > var IPIV0 = new {{alias:@stdlib/array/int32}}( 4 );
+    > DL = new Float64Array( DL0.buffer, DL0.BYTES_PER_ELEMENT*1 );
+    > D = new Float64Array( D0.buffer, D0.BYTES_PER_ELEMENT*1 );
+    > DU = new Float64Array( DU0.buffer, DU0.BYTES_PER_ELEMENT*1 );
+    > DU2 = new Float64Array( DU20.buffer, DU20.BYTES_PER_ELEMENT*1 );
+    > IPIV = new Int32Array( IPIV0.buffer, IPIV0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 3, DL, D, DU, DU2, IPIV )
+    0
+    > DL0
+    <Float64Array>[ 0.0, 0.5, 0.4 ]
+    > D0
+    <Float64Array>[ 0.0, 2.0, 2.5, 0.6 ]
+    > DU0
+    <Float64Array>[ 0.0, 1.0, 1.0 ]
+    > DU20
+    <Float64Array>[ 0.0, 0.0 ]
+    > IPIV0
+    <Int32Array>[ 0, 0, 1, 2 ]
+
+
+{{alias}}.ndarray(N, DL,sdl,odl, D,sd,od, DU,sdu,odu, DU2,sdu2,odu2, IPIV,si,oi)
+    Computes an LU factorization of a real tridiagonal matrix `A` using
+    elimination with partial pivoting and row interchanges and alternative
+    indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    The function mutates `DL`, `D`, `DU`, `DU2`, and `IPIV`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of rows/columns in `A`.
+
+    DL: Float64Array
+        The first sub diagonal of `A`. Should have `N-1` indexed elements. `DL`
+        is overwritten by the multipliers that define the matrix `L` from the LU
+        factorization of `A`.
+
+    sdl: integer
+        Stride length for `DL`.
+
+    odl: integer
+        Starting index for `DL`.
+
+    D: Float64Array
+        The diagonal of `A`. Should have `N` indexed elements. `D` is
+        overwritten by the diagonal elements of the upper triangular matrix `U`
+        from the LU factorization of `A`.
+
+    sd: integer
+        Stride length for `D`.
+
+    od: integer
+        Starting index for `D`.
+
+    DU: Float64Array
+        The first super-diagonal of `A`. Should have `N-1` indexed elements.
+        `DU` is overwritten by the elements of the first super-diagonal of `U`.
+
+    sdu: integer
+        Stride length for `DU`.
+
+    odu: integer
+        Starting index for `DU2`.
+
+    DU2: Float64Array
+        The second super-diagonal of `U`. Should have `N-2` indexed elements.
+        `DU2` is overwritten by the elements of the second super-diagonal of
+        `U`.
+
+    sdu2: integer
+        Stride length for `DU2`.
+
+    odu2: integer
+        Starting index for `DU2`.
+
+    IPIV: Int32Array
+        Vector of pivot indices. Should have `N` indexed elements.
+
+    si: integer
+        Stride length for `IPIV`.
+
+    oi: integer
+        Starting index for `IPIV`.
+
+    Returns
+    -------
+    info: integer
+        Status code. The status code indicates the following conditions:
+
+        - if equal to zero, then the factorization was successful.
+        - if greater than zero, then `U(k, k)` is exactly zero the factorization
+        has been completed, but the factor `U` is exactly singular, and division
+        by zero will occur if it is used to solve a system of equations where
+        `k = StatusCode`.
+
+    Examples
+    --------
+    > var DL = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var D = new {{alias:@stdlib/array/float64}}( [ 2.0, 3.0, 1.0 ] );
+    > var DU = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0 ] );
+    > var DU2 = new {{alias:@stdlib/array/float64}}( 1 );
+    > var IPIV = new {{alias:@stdlib/array/int32}}( 3 );
+    > {{alias}}.ndarray( 3, DL, 1, 0, D, 1, 0, DU, 1, 0, DU2, 1, 0, IPIV, 1, 0 )
+    0
+    > DL
+    <Float64Array>[ 0.5, 0.4 ]
+    > D
+    <Float64Array>[ 2.0, 2.5, 0.6 ]
+    > DU
+    <Float64Array>[ 1.0, 1.0 ]
+    > DU2
+    <Float64Array>[ 0.0 ]
+    > IPIV
+    <Int32Array>[ 0, 1, 2 ]
+
+    See Also
+    --------
+

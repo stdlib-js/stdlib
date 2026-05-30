@@ -22,7 +22,7 @@
 * Size (in bytes) of a single-precision floating-point number.
 *
 * @example
-* var bytes = FLOAT32_NUM_BYTES
+* var bytes = FLOAT32_NUM_BYTES;
 * // returns 4
 */
 declare const FLOAT32_NUM_BYTES: number;

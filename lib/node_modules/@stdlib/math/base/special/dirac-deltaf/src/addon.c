@@ -19,5 +19,4 @@
 #include "stdlib/math/base/special/dirac_deltaf.h"
 #include "stdlib/math/base/napi/unary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_F_F( stdlib_base_dirac_deltaf )

@@ -87,5 +87,5 @@ int main( void ) {
 	printf( "nfunctions = %i\n", obj2->nfunctions );
 
 	// Free allocated memory:
-	stdlib_ndarray_function_free( obj );
+	stdlib_ndarray_function_free( obj2 );
 }

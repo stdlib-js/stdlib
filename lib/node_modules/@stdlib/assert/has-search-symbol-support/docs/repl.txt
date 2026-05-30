@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Tests for native `Symbol.search` support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has native `Symbol.search`
+        support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+

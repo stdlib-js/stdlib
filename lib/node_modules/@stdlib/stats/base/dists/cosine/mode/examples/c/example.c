@@ -36,6 +36,6 @@ int main( void ) {
 		mu = random_uniform( -50.0, 50.0 );
 		s = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 		y = stdlib_base_dists_cosine_mode( mu, s );
-		printf( "µ: %lf, s: %lf, mode(X;µ,s): %lf\n", mu, s , y );
+		printf( "µ: %lf, s: %lf, mode(X;µ,s): %lf\n", mu, s, y );
 	}
 }

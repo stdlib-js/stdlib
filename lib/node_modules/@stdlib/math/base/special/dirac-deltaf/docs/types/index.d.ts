@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Evaluates the Dirac delta function in single-precision floating-point format.
+* Evaluates the Dirac delta function for a single-precision floating-point number.
 *
 * @param x - input value
 * @returns function value

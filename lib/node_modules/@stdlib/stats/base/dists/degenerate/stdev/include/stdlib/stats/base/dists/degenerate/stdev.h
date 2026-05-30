@@ -28,9 +28,6 @@ extern "C" {
 
 /**
 * Returns the standard deviation of a degenerate distribution centered at `mu`.
-*
-* @param mu    constant value of the distribution
-* @return      standard deviation
 */
 double stdlib_base_dists_degenerate_stdev( const double mu );
 

@@ -92,14 +92,14 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	int32_t x;
+	double x;
 	double y;
 	double t;
 	int i;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = (int32_t)(rand_double() * 301);
+		x = round( rand_double() * 301.0 );
 		y = stdlib_base_factorial2( x );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );

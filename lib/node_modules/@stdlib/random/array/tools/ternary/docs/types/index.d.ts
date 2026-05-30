@@ -203,3 +203,5 @@ declare var ctor: RandomArrayConstructor;
 // EXPORTS //
 
 export = ctor;
+
+// eslint-doctest-alias: RandomArray

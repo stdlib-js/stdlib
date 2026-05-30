@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/stats/base/sdsnanmean.h"
-#include "stdlib/stats/base/sdsnanmeanors.h"
+#include "stdlib/stats/strided/sdsnanmeanors.h"
 #include <stdint.h>
 
 /**

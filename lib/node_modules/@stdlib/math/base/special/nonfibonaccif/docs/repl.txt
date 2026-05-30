@@ -2,7 +2,7 @@
 {{alias}}( n )
     Computes the nth non-Fibonacci single-precision floating-point number.
 
-    If not provided a nonnegative integer value, the function returns `NaN`.
+    If provided either a non-integer or `n < 1`, the function returns `NaN`.
 
     If provided `NaN`, the function returns `NaN`.
 

@@ -35,7 +35,7 @@ interface Routine {
 	*
 	* @example
 	* var out = drotg( 6.0, -8.0 );
-	* // returns <Float64Array>[ 10.0, ~-1.666, -0.6, 0.8 ]
+	* // returns <Float64Array>[ ~-10.0, ~-1.667, ~-0.6, ~0.8 ]
 	*/
 	( a: number, b: number ): Float64Array;
 

@@ -27,6 +27,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
 /**
 * Returns the expected value of a discrete uniform distribution with parameters `a` (minimum support) and `b` (maximum support).
 */

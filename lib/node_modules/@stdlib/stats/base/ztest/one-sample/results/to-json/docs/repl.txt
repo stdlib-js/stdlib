@@ -1,0 +1,33 @@
+
+{{alias}}( results )
+    Serializes a one-sample Z-test results object as a JSON object.
+
+    Parameters
+    ----------
+    results: Object
+        One-sample Z-test results object.
+
+    Returns
+    -------
+    out: Object
+        Serialized object.
+
+    Examples
+    --------
+    > var res = {
+    ...    'rejected': false,
+    ...    'alpha': 0.05,
+    ...    'pValue': 0.3364,
+    ...    'statistic': 11.7586,
+    ...    'nullValue': 0.0,
+    ...    'sd': 0.4563,
+    ...    'ci': new {{alias:@stdlib/array/float64}}( [ 9.9983, 11.4123 ] ),
+    ...    'alternative': 'two-sided',
+    ...    'method': 'One-sample Z-test'
+    ... };
+    > var o = {{alias}}( res )
+    {...}
+
+    See Also
+    --------
+
