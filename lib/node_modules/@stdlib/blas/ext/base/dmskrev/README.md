@@ -191,6 +191,8 @@ console.log( x );
 Reverses a double-precision floating-point strided array in-place according to a mask.
 
 ```c
+#include <stdint.h>
+
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
 const uint8_t mask[] = { 0, 0, 0, 0 };
 
@@ -218,6 +220,8 @@ void stdlib_strided_dmskrev( const CBLAS_INT N, double *X, const CBLAS_INT strid
 Reverses a double-precision floating-point strided array in-place according to a mask and using alternative indexing semantics.
 
 ```c
+#include <stdint.h>
+
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
 const uint8_t mask[] = { 0, 0, 0, 0 };
 
