@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, genericndarray, complex128ndarray, complex64ndarray, NumericAndGenericDataType } from '@stdlib/types/ndarray';
+import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, genericndarray, complex128ndarray, complex64ndarray, NumericAndGenericDataType, Float64DataType, Float32DataType, Complex128DataType, Complex64DataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, GenericDataType } from '@stdlib/types/ndarray';
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -31,16 +31,19 @@ import { Shape, Order, typedndarray, float64ndarray, float32ndarray, int32ndarra
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'float64', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( 'float64', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'float64'
 */
-declare function zeros( dtype: 'float64', shape: Shape, order: Order ): float64ndarray;
+declare function zeros( dtype: Float64DataType, shape: Shape, order: Order ): float64ndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -51,16 +54,19 @@ declare function zeros( dtype: 'float64', shape: Shape, order: Order ): float64n
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'float32', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( 'float32', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'float32'
 */
-declare function zeros( dtype: 'float32', shape: Shape, order: Order ): float32ndarray;
+declare function zeros( dtype: Float32DataType, shape: Shape, order: Order ): float32ndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -71,16 +77,19 @@ declare function zeros( dtype: 'float32', shape: Shape, order: Order ): float32n
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = zeros( 'complex128', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'complex128'
 */
-declare function zeros( dtype: 'complex128', shape: Shape, order: Order ): complex128ndarray;
+declare function zeros( dtype: Complex128DataType, shape: Shape, order: Order ): complex128ndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -91,16 +100,19 @@ declare function zeros( dtype: 'complex128', shape: Shape, order: Order ): compl
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+*
 * var arr = zeros( 'complex64', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = arr.shape;
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'complex64'
 */
-declare function zeros( dtype: 'complex64', shape: Shape, order: Order ): complex64ndarray;
+declare function zeros( dtype: Complex64DataType, shape: Shape, order: Order ): complex64ndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -111,16 +123,19 @@ declare function zeros( dtype: 'complex64', shape: Shape, order: Order ): comple
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'int32', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( 'int32', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'int32'
 */
-declare function zeros( dtype: 'int32', shape: Shape, order: Order ): int32ndarray;
+declare function zeros( dtype: Int32DataType, shape: Shape, order: Order ): int32ndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -131,16 +146,19 @@ declare function zeros( dtype: 'int32', shape: Shape, order: Order ): int32ndarr
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'int16', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( 'int16', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'int16'
 */
-declare function zeros( dtype: 'int16', shape: Shape, order: Order ): int16ndarray;
+declare function zeros( dtype: Int16DataType, shape: Shape, order: Order ): int16ndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -151,16 +169,19 @@ declare function zeros( dtype: 'int16', shape: Shape, order: Order ): int16ndarr
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'int8', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( 'int8', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'int8'
 */
-declare function zeros( dtype: 'int8', shape: Shape, order: Order ): int8ndarray;
+declare function zeros( dtype: Int8DataType, shape: Shape, order: Order ): int8ndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -171,16 +192,19 @@ declare function zeros( dtype: 'int8', shape: Shape, order: Order ): int8ndarray
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'uint32', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( 'uint32', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'uint32'
 */
-declare function zeros( dtype: 'uint32', shape: Shape, order: Order ): uint32ndarray;
+declare function zeros( dtype: Uint32DataType, shape: Shape, order: Order ): uint32ndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -191,16 +215,19 @@ declare function zeros( dtype: 'uint32', shape: Shape, order: Order ): uint32nda
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'uint16', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( 'uint16', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'uint16'
 */
-declare function zeros( dtype: 'uint16', shape: Shape, order: Order ): uint16ndarray;
+declare function zeros( dtype: Uint16DataType, shape: Shape, order: Order ): uint16ndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -211,16 +238,19 @@ declare function zeros( dtype: 'uint16', shape: Shape, order: Order ): uint16nda
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'uint8', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( 'uint8', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'uint8'
 */
-declare function zeros( dtype: 'uint8', shape: Shape, order: Order ): uint8ndarray;
+declare function zeros( dtype: Uint8DataType, shape: Shape, order: Order ): uint8ndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -231,16 +261,19 @@ declare function zeros( dtype: 'uint8', shape: Shape, order: Order ): uint8ndarr
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'uint8c', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( 'uint8c', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'uint8c'
 */
-declare function zeros( dtype: 'uint8c', shape: Shape, order: Order ): uint8cndarray;
+declare function zeros( dtype: Uint8cDataType, shape: Shape, order: Order ): uint8cndarray;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -251,16 +284,19 @@ declare function zeros( dtype: 'uint8c', shape: Shape, order: Order ): uint8cnda
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'generic', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( 'generic', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'generic'
 */
-declare function zeros( dtype: 'generic', shape: Shape, order: Order ): genericndarray<number>;
+declare function zeros( dtype: GenericDataType, shape: Shape, order: Order ): genericndarray<number>;
 
 /**
 * Creates a zero-filled array having a specified shape and data type.
@@ -271,13 +307,16 @@ declare function zeros( dtype: 'generic', shape: Shape, order: Order ): genericn
 * @returns zero-filled array
 *
 * @example
-* var arr = zeros( 'float64', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( 'float64', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
+* var dt = String( getDType( arr ) );
 * // returns 'float64'
 */
 declare function zeros( dtype: NumericAndGenericDataType, shape: Shape, order: Order ): typedndarray<number>;

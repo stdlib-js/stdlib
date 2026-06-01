@@ -45,15 +45,16 @@ var zerosLike = require( '@stdlib/ndarray/base/zeros-like' );
 Creates a zero-filled ndarray having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 ```javascript
+var getShape = require( '@stdlib/ndarray/shape' );
 var zeros = require( '@stdlib/ndarray/base/zeros' );
 
 var x = zeros( 'float64', [ 2, 2 ], 'row-major' );
-// returns <ndarray>
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
 var y = zerosLike( x );
-// returns <ndarray>
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
-var sh = y.shape;
+var sh = getShape( y );
 // returns [ 2, 2 ]
 ```
 
@@ -84,19 +85,18 @@ var sh = y.shape;
 ```javascript
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var zeros = require( '@stdlib/ndarray/base/zeros' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var zerosLike = require( '@stdlib/ndarray/base/zeros-like' );
 
 // Get a list of data types:
-var dt = dtypes( 'numeric' );
+var dt = dtypes( 'integer_and_generic' );
 
 // Generate zero-filled arrays...
 var x;
-var y;
 var i;
 for ( i = 0; i < dt.length; i++ ) {
-    x = zeros( dt[ i ], [ 2, 2 ], 'row-major' );
-    y = zerosLike( x );
-    console.log( y.data );
+    x = zerosLike( zeros( dt[ i ], [ 2, 2 ], 'row-major' ) );
+    console.log( ndarray2array( x ) );
 }
 ```
 
