@@ -56,11 +56,9 @@ var snanmeanwd = require( '@stdlib/stats/base/ndarray/snanmeanwd' );
 Computes the [arithmetic mean][arithmetic-mean] of a one-dimensional single-precision floating-point ndarray, ignoring `NaN` values and using Welford's algorithm. 
 
 ```javascript
-var Float32Array = require( '@stdlib/array/float32' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 
-var xbuf = new Float32Array( [ 1.0, 3.0, NaN, 2.0 ] );
-var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float32Vector( [ 1.0, 3.0, NaN, 2.0 ] );
 
 var v = snanmeanwd( [ x ] );
 // returns 2.0
@@ -92,9 +90,9 @@ The function has the following parameters:
 
 ```javascript
 var uniform = require( '@stdlib/random/base/uniform' );
-var filledarrayBy = require( '@stdlib/array/filled-by' );
 var bernoulli = require( '@stdlib/random/base/bernoulli' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var fillBy = require( '@stdlib/ndarray/fill-by' );
+var zeros = require( '@stdlib/ndarray/zeros' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var snanmeanwd = require( '@stdlib/stats/base/ndarray/snanmeanwd' );
 
@@ -105,8 +103,10 @@ function rand() {
     return uniform( -50.0, 50.0 );
 }
 
-var xbuf = filledarrayBy( 10, 'float32', rand );
-var x = new ndarray( 'float32', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var opts = {
+    'dtype': 'float32'
+};
+var x = fillBy( zeros( [ 10 ], opts ), rand );
 console.log( ndarray2array( x ) );
 
 var v = snanmeanwd( [ x ] );
