@@ -156,7 +156,6 @@ swhere.ndarray( 3, condition, 2, 1, x, 2, 1, y, 2, 1, out, 1, 0 );
 ## Notes
 
 -   If `N <= 0`, both functions return `out` unchanged.
--   The `condition` argument must be a [`BooleanArray`][@stdlib/array/bool].
 
 </section>
 

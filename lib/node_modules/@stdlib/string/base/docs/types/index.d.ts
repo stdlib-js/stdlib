@@ -1086,7 +1086,7 @@ interface Namespace {
 	*
 	* @example
 	* var out = ns.replaceBefore( 'Hello World!', '', 'foo', 0 );
-	* // returns 'Hello world!'
+	* // returns 'Hello World!'
 	*
 	* @example
 	* var out = ns.replaceBefore( 'Hello World!', 'xyz', 'foo', 0 );
@@ -1301,7 +1301,7 @@ interface Namespace {
 	*
 	* @example
 	* var out = ns.slice( 'foo bar', 2, 7 );
-	* // returns 'ar'
+	* // returns 'o bar'
 	*
 	* @example
 	* var out = ns.slice( 'foo bar', -1, 7 );

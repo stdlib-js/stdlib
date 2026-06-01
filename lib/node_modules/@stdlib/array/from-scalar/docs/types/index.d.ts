@@ -95,7 +95,7 @@ declare function scalar2array( value: number | ComplexLike, dtype: 'complex128' 
 * @returns output array
 *
 * @example
-* var Complex64 = require( '@stdlib/complex/float64/ctor' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var v = new Complex64( 1.0, 2.0 );
 *
