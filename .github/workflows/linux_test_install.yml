@@ -331,7 +331,7 @@ jobs:
       # Send notification to Zulip:
       - name: 'Send notification'
         # Pin action to full length commit SHA
-        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
+        uses: zulip/github-actions-zulip/send-message@bd8ec52de371d139ae8313661b7d8318c19266aa # v2.0.1
         if: success()
         with:
           api-key: ${{ secrets.ZULIP_API_KEY }}
