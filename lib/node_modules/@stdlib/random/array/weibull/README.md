@@ -42,8 +42,8 @@ var out = weibull( 10, 2.0, 5.0 );
 The function has the following parameters:
 
 -   **len**: output array length.
--   **k**: scale parameter.
--   **lambda**: shape parameter.
+-   **k**: shape parameter.
+-   **lambda**: scale parameter.
 -   **options**: function options.
 
 The function accepts the following `options`:
@@ -80,8 +80,8 @@ var bool = ( out === x );
 
 The function has the following parameters:
 
--   **k**: scale parameter.
--   **lambda**: shape parameter.
+-   **k**: shape parameter.
+-   **lambda**: scale parameter.
 -   **out**: output array.
 
 #### weibull.factory( \[k, lambda, ]\[options] )

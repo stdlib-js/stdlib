@@ -10,11 +10,11 @@
 
         - factory: returns a new binary pseudorandom value generator.
 
-    idtypes: Array<Array<string>>
+    idtypes: Array<Array<string|DataType>>
         List containing a list of supported input data types for each PRNG
         parameter.
 
-    odtypes: Array<string>
+    odtypes: Array<string|DataType>
         List of supported output data types.
 
     policies: Object

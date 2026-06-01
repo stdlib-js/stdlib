@@ -99,7 +99,7 @@ interface Results {
 *     'b', 'b', 'b', 'b',
 *     'c', 'c', 'c', 'c', 'c'
 * ];
-* varout = bartlettTest( arr, {
+* var out = bartlettTest( arr, {
 *     'groups': groups
 * });
 * // returns {...}

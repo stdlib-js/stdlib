@@ -270,7 +270,7 @@ interface Namespace {
 	* // returns ~1.502
 	*
 	* y = mymgf( 0.5 );
-	* // returns ~16.25
+	* // returns ~16.249
 	*/
 	mgf: typeof mgf;
 

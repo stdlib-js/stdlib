@@ -100,11 +100,11 @@ interface LogPDF {
 *
 * @example
 * var y = logpdf( 2.0, 1.0, 0.5 );
-* // returns ~-3.297
+* // returns ~-3.307
 *
 * var mylogpdf = logpdf.factory( 7.0, 6.0 );
 * y = mylogpdf( 7.0 );
-* // returns ~-1.864
+* // returns ~-1.863
 */
 declare var logpdf: LogPDF;
 

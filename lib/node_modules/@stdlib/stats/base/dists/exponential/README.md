@@ -46,7 +46,7 @@ The namespace contains the following distribution functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`cdf( x, lambda )`][@stdlib/stats/base/dists/exponential/cdf]</span><span class="delimiter">: </span><span class="description">exponential distribution cumulative distribution function.</span>
--   <span class="signature">[`logcdf( x, lambda )`][@stdlib/stats/base/dists/exponential/logcdf]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of the cumulative distribution function for an exponential distribution.</span>
+-   <span class="signature">[`logcdf( x, lambda )`][@stdlib/stats/base/dists/exponential/logcdf]</span><span class="delimiter">: </span><span class="description">exponential distribution logarithm of cumulative distribution function.</span>
 -   <span class="signature">[`logpdf( x, lambda )`][@stdlib/stats/base/dists/exponential/logpdf]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of the probability density function (PDF) for an exponential distribution.</span>
 -   <span class="signature">[`mgf( t, lambda )`][@stdlib/stats/base/dists/exponential/mgf]</span><span class="delimiter">: </span><span class="description">exponential distribution moment-generating function (MGF).</span>
 -   <span class="signature">[`pdf( x, lambda )`][@stdlib/stats/base/dists/exponential/pdf]</span><span class="delimiter">: </span><span class="description">exponential distribution probability density function (PDF).</span>

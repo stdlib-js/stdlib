@@ -123,7 +123,7 @@ interface Quantile {
 * y = quantile( 0.5, 2.0, 4.0 );
 * // returns ~0.399
 *
-* var myQuantile = factory( 0.5, 0.5 );
+* var myQuantile = quantile.factory( 0.5, 0.5 );
 *
 * y = myQuantile( 0.8 );
 * // returns ~0.922

@@ -126,7 +126,7 @@ interface Quantile {
 *
 * @example
 * var y = quantile( 0.4, 20, 0.2 );
-* // returns 2
+* // returns 3
 *
 * y = quantile( 0.8, 20, 0.2 );
 * // returns 5
