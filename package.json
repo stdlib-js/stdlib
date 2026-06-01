@@ -2,35 +2,7 @@
   "name": "@stdlib/stdlib",
   "version": "0.3.2",
   "description": "Standard library.",
-  "license": "Apache-2.0 AND BSL-1.0",
-  "author": {
-    "name": "The Stdlib Authors",
-    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-  },
-  "contributors": [
-    {
-      "name": "The Stdlib Authors",
-      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-    }
-  ],
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/stdlib"
-  },
-  "bin": {
-    "stdlib": "./bin/cli"
-  },
   "main": "./lib",
-  "browser": {
-    "process": "process/"
-  },
-  "directories": {
-    "doc": "./docs",
-    "example": "./examples",
-    "lib": "./lib",
-    "test": "./test"
-  },
-  "types": "./docs/types",
   "scripts": {
     "notes": "make notes",
     "lint": "make lint",
@@ -45,78 +17,19 @@
     "check-licenses": "make check-licenses",
     "postinstall": "tools/scripts/apply_patches"
   },
-  "homepage": "https://github.com/stdlib-js/stdlib",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/stdlib-js/stdlib.git"
-  },
-  "bugs": {
-    "url": "https://github.com/stdlib-js/stdlib/issues"
-  },
-  "dependencies": {
-    "@stdlib/array": "^0.3.3",
-    "@stdlib/assert": "^0.3.3",
-    "@stdlib/bench": "^0.4.3",
-    "@stdlib/bigint": "^0.3.3",
-    "@stdlib/blas": "^0.3.3",
-    "@stdlib/boolean": "^0.3.3",
-    "@stdlib/buffer": "^0.3.3",
-    "@stdlib/cli": "^0.3.3",
-    "@stdlib/complex": "^0.3.3",
-    "@stdlib/console": "^0.3.3",
-    "@stdlib/constants": "^0.3.3",
-    "@stdlib/datasets": "^0.3.0",
-    "@stdlib/error": "^0.3.3",
-    "@stdlib/fs": "^0.3.3",
-    "@stdlib/function": "^0.3.3",
-    "@stdlib/iter": "^0.3.3",
-    "@stdlib/lapack": "^0.1.3",
-    "@stdlib/math": "^0.3.3",
-    "@stdlib/ml": "^0.3.3",
-    "@stdlib/namespace": "^0.3.3",
-    "@stdlib/napi": "^0.3.3",
-    "@stdlib/ndarray": "^0.3.3",
-    "@stdlib/net": "^0.3.3",
-    "@stdlib/nlp": "^0.3.3",
-    "@stdlib/number": "^0.3.3",
-    "@stdlib/object": "^0.3.3",
-    "@stdlib/os": "^0.3.3",
-    "@stdlib/plot": "^0.3.3",
-    "@stdlib/process": "^0.3.3",
-    "@stdlib/proxy": "^0.3.3",
-    "@stdlib/random": "^0.3.3",
-    "@stdlib/regexp": "^0.3.3",
-    "@stdlib/repl": "^0.3.3",
-    "@stdlib/simulate": "^0.3.3",
-    "@stdlib/slice": "^0.3.3",
-    "@stdlib/stats": "^0.3.3",
-    "@stdlib/streams": "^0.3.3",
-    "@stdlib/strided": "^0.3.3",
-    "@stdlib/string": "^0.3.3",
-    "@stdlib/symbol": "^0.3.3",
-    "@stdlib/time": "^0.3.3",
-    "@stdlib/types": "^0.4.3",
-    "@stdlib/utils": "^0.3.3",
-    "@stdlib/wasm": "^0.1.1",
-    "acorn": "^8.1.0",
-    "acorn-loose": "^8.0.2",
-    "acorn-walk": "^8.0.2",
-    "d3-format": "^1.0.0",
-    "d3-scale": "^1.0.0",
-    "d3-shape": "^1.0.0",
-    "d3-time-format": "^2.0.0",
-    "debug": "^2.6.9",
-    "glob": "^7.0.5",
-    "minimist": "^1.2.0",
-    "readable-stream": "^2.1.4",
-    "resolve": "^1.1.7",
-    "vdom-to-html": "^2.3.0",
-    "virtual-dom": "^2.1.1"
-  },
-  "optionalDependencies": {
-    "node-gyp": "^9.3.1"
-  },
   "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-regenerator": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "bake-cli": "^0.1.6",
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^5.3.1",
+    "eslint-plugin-promise": "^1.1.0",
+    "eslint-plugin-standard": "^1.3.2",
+    "mocha": "^2.5.2",
+    "standard-version": "^2.2.1",
+    "watchd": "github:mklabs/watchd",
     "0x": "^4.10.2",
     "@cspell/eslint-plugin": "^8.8.0",
     "@commitlint/cli": "^17.4.4",
@@ -139,7 +52,6 @@
     "doctrine": "^3.0.0",
     "editorconfig-checker": "^6.0.0",
     "envify": "^4.0.0",
-    "eslint": "^8.57.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-expect-type": "^0.2.3",
     "eslint-plugin-import": "^2.29.0",
@@ -254,6 +166,116 @@
     "unist-util-visit": "^2.0.0",
     "unist-util-visit-parents": "^3.1.1",
     "yaml": "^1.0.0"
+  },
+  "bake": {
+    "description": "Scaffold a basic ES6 setup",
+    "scripts": {
+      "start": "echo Starting generation of default template",
+      "prestart": "echo prestart",
+      "poststart": "echo poststart",
+      "install": "npm install --loglevel warn --cache-min Infinity",
+      "preinstall": "echo Installing dependencies ...",
+      "postinstall": "npm ls --depth 0"
+    }
+  },
+  "license": "Apache-2.0 AND BSL-1.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/stdlib"
+  },
+  "bin": {
+    "stdlib": "./bin/cli"
+  },
+  "browser": {
+    "process": "process/"
+  },
+  "directories": {
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {
+    "@stdlib/array": "^0.3.3",
+    "@stdlib/assert": "^0.3.3",
+    "@stdlib/bench": "^0.4.3",
+    "@stdlib/bigint": "^0.3.3",
+    "@stdlib/blas": "^0.3.3",
+    "@stdlib/boolean": "^0.3.3",
+    "@stdlib/buffer": "^0.3.3",
+    "@stdlib/cli": "^0.3.3",
+    "@stdlib/complex": "^0.3.3",
+    "@stdlib/console": "^0.3.3",
+    "@stdlib/constants": "^0.3.3",
+    "@stdlib/datasets": "^0.3.0",
+    "@stdlib/error": "^0.3.3",
+    "@stdlib/fs": "^0.3.3",
+    "@stdlib/function": "^0.3.3",
+    "@stdlib/iter": "^0.3.3",
+    "@stdlib/lapack": "^0.1.3",
+    "@stdlib/math": "^0.3.3",
+    "@stdlib/ml": "^0.3.3",
+    "@stdlib/namespace": "^0.3.3",
+    "@stdlib/napi": "^0.3.3",
+    "@stdlib/ndarray": "^0.3.3",
+    "@stdlib/net": "^0.3.3",
+    "@stdlib/nlp": "^0.3.3",
+    "@stdlib/number": "^0.3.3",
+    "@stdlib/object": "^0.3.3",
+    "@stdlib/os": "^0.3.3",
+    "@stdlib/plot": "^0.3.3",
+    "@stdlib/process": "^0.3.3",
+    "@stdlib/proxy": "^0.3.3",
+    "@stdlib/random": "^0.3.3",
+    "@stdlib/regexp": "^0.3.3",
+    "@stdlib/repl": "^0.3.3",
+    "@stdlib/simulate": "^0.3.3",
+    "@stdlib/slice": "^0.3.3",
+    "@stdlib/stats": "^0.3.3",
+    "@stdlib/streams": "^0.3.3",
+    "@stdlib/strided": "^0.3.3",
+    "@stdlib/string": "^0.3.3",
+    "@stdlib/symbol": "^0.3.3",
+    "@stdlib/time": "^0.3.3",
+    "@stdlib/types": "^0.4.3",
+    "@stdlib/utils": "^0.3.3",
+    "@stdlib/wasm": "^0.1.1",
+    "acorn": "^8.1.0",
+    "acorn-loose": "^8.0.2",
+    "acorn-walk": "^8.0.2",
+    "d3-format": "^1.0.0",
+    "d3-scale": "^1.0.0",
+    "d3-shape": "^1.0.0",
+    "d3-time-format": "^2.0.0",
+    "debug": "^2.6.9",
+    "glob": "^7.0.5",
+    "minimist": "^1.2.0",
+    "readable-stream": "^2.1.4",
+    "resolve": "^1.1.7",
+    "vdom-to-html": "^2.3.0",
+    "virtual-dom": "^2.1.1"
+  },
+  "optionalDependencies": {
+    "node-gyp": "^9.3.1"
   },
   "engines": {
     "node": ">=0.10.0",
