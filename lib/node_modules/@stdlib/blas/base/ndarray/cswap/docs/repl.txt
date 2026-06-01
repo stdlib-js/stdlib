@@ -1,6 +1,6 @@
 
 {{alias}}( arrays )
-    Interchanges two one-dimensional complex single-precision floating-point
+    Interchanges two one-dimensional single-precision complex floating-point
     ndarrays.
 
     If provided an empty input ndarray, the function returns the output ndarray
