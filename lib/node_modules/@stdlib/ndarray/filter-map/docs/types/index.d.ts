@@ -382,7 +382,7 @@ declare function filterMap<V = unknown>( x: float32ndarray, fcn: Callback<number
 * // returns <ndarray>
 *
 * var y = filterMap( x, fcn );
-* // returns <ndarray>
+* // returns <ndarray>[ <Complex64>[ 7.0, 8.0 ], <Complex64>[ 9.0, 10.0 ], <Complex64>[ 11.0, 12.0 ] ]
 */
 declare function filterMap<V = unknown>( x: complex64ndarray, fcn: Callback<Complex64, ComplexLike, V>, thisArg?: ThisParameterType<Callback<Complex64, ComplexLike, V>> ): complex64ndarray;
 
@@ -413,7 +413,7 @@ declare function filterMap<V = unknown>( x: complex64ndarray, fcn: Callback<Comp
 * // returns <ndarray>
 *
 * var y = filterMap( x, fcn );
-* // returns <ndarray>
+* // returns <ndarray>[ <Complex128>[ 7.0, 8.0 ], <Complex128>[ 9.0, 10.0 ], <Complex128>[ 11.0, 12.0 ] ]
 */
 declare function filterMap<V = unknown>( x: complex128ndarray, fcn: Callback<Complex128, ComplexLike, V>, thisArg?: ThisParameterType<Callback<Complex128, ComplexLike, V>> ): complex128ndarray;
 
@@ -799,7 +799,7 @@ declare function filterMap<V = unknown>( x: float32ndarray, options: OrderOption
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, fcn );
-* // returns <ndarray>
+* // returns <ndarray>[ <Complex64>[ 7.0, 8.0 ], <Complex64>[ 9.0, 10.0 ], <Complex64>[ 11.0, 12.0 ] ]
 */
 declare function filterMap<V = unknown>( x: complex64ndarray, options: OrderOptions, fcn: Callback<Complex64, ComplexLike, V>, thisArg?: ThisParameterType<Callback<Complex64, ComplexLike, V>> ): complex64ndarray;
 
@@ -835,7 +835,7 @@ declare function filterMap<V = unknown>( x: complex64ndarray, options: OrderOpti
 *     'order': 'row-major'
 * };
 * var y = filterMap( x, opts, fcn );
-* // returns <ndarray>
+* // returns <ndarray>[ <Complex128>[ 7.0, 8.0 ], <Complex128>[ 9.0, 10.0 ], <Complex128>[ 11.0, 12.0 ] ]
 */
 declare function filterMap<V = unknown>( x: complex128ndarray, options: OrderOptions, fcn: Callback<Complex128, ComplexLike, V>, thisArg?: ThisParameterType<Callback<Complex128, ComplexLike, V>> ): complex128ndarray;
 
@@ -1270,7 +1270,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'complex128'
 * };
 * var y = filterMap( x, opts, fcn );
-* // returns <ndarray>
+* // returns <ndarray>[ <Complex128>[ 8.0, 0.0 ], <Complex128>[ 9.0, 0.0 ], <Complex128>[ 10.0, 0.0 ] ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Complex128Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): complex128ndarray;
 
@@ -1288,7 +1288,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
-* var Complex64 = require( '@stdlib/complex/float64/ctor' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * function fcn( z, idx ) {
 *     if ( idx[ 0 ] > 0 ) {
@@ -1308,7 +1308,7 @@ declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarr
 *     'dtype': 'complex64'
 * };
 * var y = filterMap( x, opts, fcn );
-* // returns <ndarray>
+* // returns <ndarray>[ <Complex64>[ 8.0, 0.0 ], <Complex64>[ 9.0, 0.0 ], <Complex64>[ 10.0, 0.0 ] ]
 */
 declare function filterMap<T = unknown, U = unknown, V = unknown>( x: typedndarray<T>, options: Complex64Options, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): complex64ndarray;
 
