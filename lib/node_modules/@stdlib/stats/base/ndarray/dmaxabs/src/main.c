@@ -29,5 +29,5 @@
 */
 double stdlib_stats_dmaxabs( const struct ndarray *arrays[] ) {
 	const struct ndarray *x = arrays[ 0 ];
-return API_SUFFIX(stdlib_strided_dmaxabs_ndarray)( stdlib_ndarray_dimension( x, 0 ), (const double *)stdlib_ndarray_data( x ), stdlib_ndarray_stride_elements( x, 0 ), stdlib_ndarray_offset_elements( x ) );
+	return API_SUFFIX(stdlib_strided_dmaxabs_ndarray)( stdlib_ndarray_dimension( x, 0 ), (const double *)stdlib_ndarray_data( x ), stdlib_ndarray_stride_elements( x, 0 ), stdlib_ndarray_offset_elements( x ) );
 }
