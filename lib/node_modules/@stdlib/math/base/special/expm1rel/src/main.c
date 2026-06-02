@@ -22,10 +22,24 @@
 #include "stdlib/constants/float64/eps.h"
 #include "stdlib/constants/float64/pinf.h"
 
-static const double OVERFLOW_THRESHOLD = 7.09782712893383973096e+02; // 0x40862E42 0xFEFA39EF
+static const double HUGE_THRESHOLD = 7.09782712893383973096e+02; // 0x40862E42 0xFEFA39EF
+static const double OVERFLOW_THRESHOLD = 7.163568913878179e+02;
 
 /**
 * Computes the relative error exponential.
+*
+* ## Method
+*
+* To avoid overflow when \\( x \\) exceeds the natural logarithm of the maximum double-precision floating-point number, we can derive the following identity:
+*
+* ```tex
+* \begin{align*}
+* \frac{e^x - 1}{x} &= \frac{(e^{x/2} - 1)(e^{x/2} + 1)}{x} \\
+*                   &= \frac{(e^{x/2} - 1)(e^{x/2} - 1 + 2)}{x} \\
+*                   &= \frac{\operatorname{expm1}(x/2) \cdot (\operatorname{expm1}(x/2) + 2)}{x} \\
+*                   &= \frac{\operatorname{expm1}(x/2)}{x} \cdot (\operatorname{expm1}(x/2) + 2)
+* \end{align*}
+* ```
 *
 * @param x    input value
 * @return     output value
@@ -35,11 +49,17 @@ static const double OVERFLOW_THRESHOLD = 7.09782712893383973096e+02; // 0x40862E
 * // returns 1.0
 */
 double stdlib_base_expm1rel( const double x ) {
+	double tmp;
 	if ( stdlib_base_abs( x ) <= STDLIB_CONSTANT_FLOAT64_EPS ) {
 		return 1.0; // L'Hopital's Rule
+	}
+	if ( x < HUGE_THRESHOLD ) {
+		return stdlib_base_expm1( x ) / x;
 	}
 	if ( x >= OVERFLOW_THRESHOLD ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF; // L'Hopital's Rule
 	}
-	return stdlib_base_expm1( x ) / x;
+	// HUGE_VALUE <= x < OVERFLOW_THRESHOLD
+	tmp = stdlib_base_expm1( x/2.0 );
+	return ( tmp/x ) * ( tmp+2.0 ); // note: we keep the `+2` term in order to prevent compiler optimizations from rearranging terms, even though `tmp + 2 = tmp` due to the limits of floating-point precision
 }

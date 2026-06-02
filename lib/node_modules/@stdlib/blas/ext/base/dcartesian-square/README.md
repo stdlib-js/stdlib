@@ -108,8 +108,8 @@ The function has the following parameters:
 -   **strideX**: stride length for `x`.
 -   **offsetX**: starting index for `x`.
 -   **out**: output [`Float64Array`][@stdlib/array/float64].
--   **strideOut1**: stride length of the first dimension of `out`.
--   **strideOut2**: stride length of the second dimension of `out`.
+-   **strideOut1**: stride length for the first dimension of `out`.
+-   **strideOut2**: stride length for the second dimension of `out`.
 -   **offsetOut**: starting index for `out`.
 
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to access only the last two elements:
@@ -241,8 +241,8 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` stride length for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 -   **Out**: `[out] double*` output array.
--   **strideOut1**: `[in] CBLAS_INT` stride length of the first dimension of `Out`.
--   **strideOut2**: `[in] CBLAS_INT` stride length of the second dimension of `Out`.
+-   **strideOut1**: `[in] CBLAS_INT` stride length for the first dimension of `Out`.
+-   **strideOut2**: `[in] CBLAS_INT` stride length for the second dimension of `Out`.
 -   **offsetOut**: `[in] CBLAS_INT` starting index for `Out`.
 
 ```c
