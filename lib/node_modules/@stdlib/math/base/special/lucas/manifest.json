@@ -37,6 +37,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/assert/is-nonnegative-integer",
         "@stdlib/constants/float64/max-safe-nth-lucas"
       ]
     },
@@ -51,6 +52,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/math/base/assert/is-nonnegative-integer",
         "@stdlib/constants/float64/max-safe-nth-lucas"
       ]
     },
@@ -65,6 +67,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
+        "@stdlib/math/base/assert/is-nonnegative-integer",
         "@stdlib/constants/float64/max-safe-nth-lucas"
       ]
     }

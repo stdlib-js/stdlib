@@ -24,8 +24,9 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var filledBy = require( '@stdlib/array/filled-by' );
+var format = require( '@stdlib/string/format' );
 var uniform = require( '@stdlib/random/base/uniform' ).factory;
-var base = require( '@stdlib/math/base/ops/mul' );
+var base = require( '@stdlib/number/float64/base/mul' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
 
@@ -40,7 +41,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/base/ops/mul:value=number', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:number/float64/base/mul:value=number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var z;
@@ -68,7 +69,7 @@ bench( pkg+'::stdlib:math/base/ops/mul:value=number', opts, function benchmark( 
 
 // TODO: add math/ops/mul benchmarks
 
-bench( pkg+'::mathjs:multiply:value=number', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:multiply:value=number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var z;

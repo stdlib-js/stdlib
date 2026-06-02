@@ -193,7 +193,7 @@ interface Random extends PRNG {
 	* var x = zeros( 10, 'float64' );
 	* // returns <Float64Array>
 	*
-	* var out = hypergeometric( 20, 10, 7, out );
+	* var out = hypergeometric( 20, 10, 7, x );
 	* // returns <Float64Array>
 	*
 	* var bool = ( out === x );

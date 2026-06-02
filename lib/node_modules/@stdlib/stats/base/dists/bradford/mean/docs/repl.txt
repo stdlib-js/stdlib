@@ -1,0 +1,29 @@
+
+{{alias}}( c )
+    Returns the expected value of a Bradford distribution with shape parameter
+    `c`.
+
+    If `c <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    c: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Expected value.
+
+    Examples
+    --------
+    > var v = {{alias}}( 0.1 )
+    ~0.492
+    > v = {{alias}}( 0.5 )
+    ~0.466
+    > v = {{alias}}( 10.0 )
+    ~0.317
+
+    See Also
+    --------
+

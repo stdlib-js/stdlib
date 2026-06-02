@@ -41,7 +41,7 @@ interface Routine {
 	* var param = new Float32Array( [ 0.0, 0.0, 2.0, -3.0, 0.0 ] );
 	*
 	* srotm( 4, x, -1, y, -2, param );
-	* // x => <Float32Array>[ -0.9, -0.8, 1.3, -1.6, 0.9, -0.3, -0.4 ]
+	* // x => <Float32Array>[ ~-0.9, ~-0.8, ~1.3, ~-1.6, ~0.9, ~-0.3, ~-0.4 ]
 	* // y => <Float32Array>[ 1.7, -0.9, 0.5, 0.7, -1.6, 0.2, 2.4 ]
 	*/
 	( N: number, x: Float32Array, strideX: number, y: Float32Array, strideY: number, param: Float32Array ): Float32Array;
@@ -68,7 +68,7 @@ interface Routine {
 	* var param = new Float32Array( [ 0.0, 0.0, 2.0, -3.0, 0.0 ] );
 	*
 	* srotm.ndarray( 4, x, -1, 3, y, -2, 6, param );
-	* // x => <Float32Array>[ -0.9, -0.8, 1.3, -1.6, 0.9, -0.3, -0.4 ]
+	* // x => <Float32Array>[ ~-0.9, ~-0.8, ~1.3, ~-1.6, ~0.9, ~-0.3, ~-0.4 ]
 	* // y => <Float32Array>[ 1.7, -0.9, 0.5, 0.7, -1.6, 0.2, 2.4 ]
 	*/
 	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number, y: Float32Array, strideY: number, offsetY: number, param: Float32Array ): Float32Array;

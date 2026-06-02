@@ -1,0 +1,8 @@
+---
+type: amend-message
+---
+refactor: update `blas/ext/base/gsumkbn` to follow current project conventions
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/4677
+
+Reviewed-by: Athan Reines <kgryte@gmail.com>

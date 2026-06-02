@@ -95,4 +95,4 @@ declare function iterCuAnyBy<T, U>( iterator: Iterator<T>, predicate: Predicate<
 
 // EXPORTS //
 
-export = iterCuAnyBy ;
+export = iterCuAnyBy;

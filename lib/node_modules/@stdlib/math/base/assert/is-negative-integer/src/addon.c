@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_negative_integer.h"
 #include <node_api.h>
+#include <stdbool.h>
 #include <stdint.h>
 #include <assert.h>
 

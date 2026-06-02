@@ -56,15 +56,96 @@
     "stdmath",
     "mathematics",
     "math",
-    "math.asin",
-    "asin",
+    "math.acos",
+    "acos",
     "degree",
     "arcsecant",
-    "sine",
+    "cosine",
     "inverse",
     "trig",
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "asecd",
+      "alias": "asecd",
+      "pkg_desc": "compute the arcsecant (in degrees) of a double-precision floating-point number",
+      "desc": "computes the arcsecant (in degrees) of a double-precision floating-point number",
+      "short_desc": "arcsecant",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": -1
+            },
+            {
+              "min": 1,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              1.1,
+              10
+            ]
+          },
+          "example_values": [
+            100,
+            -1.07,
+            2.51,
+            -4.73,
+            19.5,
+            -212.3,
+            7.66,
+            -9.38,
+            3.41,
+            -5.28,
+            12.3,
+            -20,
+            1.96,
+            -1.21,
+            9.91,
+            -6.7,
+            15.4,
+            -3.36,
+            1506.98,
+            -1000
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "arcsecant (in degrees)",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "acos",
+        "degree",
+        "arcsecant",
+        "cosine",
+        "inverse"
+      ],
+      "extra_keywords": [
+        "math.acos"
+      ]
+    }
+  }
 }

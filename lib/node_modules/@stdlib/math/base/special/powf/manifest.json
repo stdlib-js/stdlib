@@ -1,0 +1,120 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/math/base/special/copysignf",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/special/ldexpf",
+        "@stdlib/math/base/special/sqrtf",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/math/base/assert/is-oddf",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/assert/is-integerf",
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/ninf",
+        "@stdlib/constants/float32/ln-two",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/exponent-bias",
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/copysignf",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/special/ldexpf",
+        "@stdlib/math/base/special/sqrtf",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/math/base/assert/is-oddf",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/assert/is-integerf",
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/ninf",
+        "@stdlib/constants/float32/ln-two",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/exponent-bias",
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/copysignf",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/special/ldexpf",
+        "@stdlib/math/base/special/sqrtf",
+        "@stdlib/number/float32/base/from-word",
+        "@stdlib/number/float32/base/to-word",
+        "@stdlib/math/base/assert/is-oddf",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/assert/is-integerf",
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/ninf",
+        "@stdlib/constants/float32/ln-two",
+        "@stdlib/constants/float32/abs-mask",
+        "@stdlib/constants/float32/exponent-bias",
+        "@stdlib/constants/float32/significand-mask",
+        "@stdlib/constants/float32/num-significand-bits"
+      ]
+    }
+  ]
+}
