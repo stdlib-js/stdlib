@@ -25,14 +25,12 @@
 * @returns boolean indicating whether an input value is an array-like object containing only functions
 *
 * @example
-* function beep() {}
+* var noop = require( '@stdlib/utils/noop' );
 *
-* function boop() {}
-*
-* var bool = isFunctionArray( [ beep, boop ] );
+* var bool = isFunctionArray( [ noop, noop ] );
 * // returns true
 *
-* bool = isFunctionArray( [ {}, beep ] );
+* bool = isFunctionArray( [ {}, noop ] );
 * // returns false
 *
 * bool = isFunctionArray( [] );

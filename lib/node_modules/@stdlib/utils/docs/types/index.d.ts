@@ -1883,7 +1883,7 @@ interface Namespace {
 	/**
 	* Creates an object from an array of key-value pairs.
 	*
-	* @param entries - input object
+	* @param entries - array containing key-value pairs
 	* @returns object created from `[key, value]` pairs
 	*
 	* @example
@@ -2712,8 +2712,8 @@ interface Namespace {
 	*
 	* -   Name order is not guaranteed, as object key enumeration is not specified according to the ECMAScript specification. In practice, however, most engines use insertion order to sort an object's keys, thus allowing for deterministic extraction.
 	*
-	* @param obj - input value
-	* @returns key array
+	* @param obj - input object
+	* @returns a list of an object's own and inherited enumerable property names
 	*
 	* @example
 	* function Foo() {
@@ -2911,7 +2911,7 @@ interface Namespace {
 	*
 	* ## Notes
 	*
-	* -   The mapping function is provided four arguments:
+	* -   The mapping function is provided three arguments:
 	*
 	*     -   **value**: array element.
 	*     -   **index**: element index.
@@ -2954,7 +2954,7 @@ interface Namespace {
 	*
 	* ## Notes
 	*
-	* -   The mapping function is provided four arguments:
+	* -   The mapping function is provided three arguments:
 	*
 	*     -   **value**: array element.
 	*     -   **index**: element index.
@@ -3952,6 +3952,17 @@ interface Namespace {
 	*/
 	parseJSON: typeof parseJSON;
 
+	/**
+	* Parses a string as newline-delimited JSON (NDJSON).
+	*
+	* @param str - input string containing NDJSON
+	* @param reviver - transformation function applied to each line
+	* @returns array of parsed values or an error
+	*
+	* @example
+	* var arr = ns.parseNDJSON( '{"beep":"boop"}\n{"example":42}\n{"data":[1,2,3]}' );
+	* // returns [ { 'beep': 'boop' }, { 'example': 42 }, { 'data': [ 1, 2, 3 ] } ]
+	*/
 	parseNDJSON: typeof parseNDJSON;
 
 	/**

@@ -30,7 +30,7 @@ import { Collection } from '@stdlib/types/array';
 type Nullary<T, U> = ( this: U ) => T;
 
 /**
-*Returns an updated collection element.
+* Returns an updated collection element.
 *
 * @param value - collection value
 * @returns updated element
