@@ -25,7 +25,7 @@
 #include <sys/time.h>
 #include <stdint.h>
 
-#define NAME "dindexofrow"
+#define NAME "dindex_of_row"
 #define ITERATIONS 10000000
 #define REPEATS 3
 #define MIN 1
