@@ -20,7 +20,7 @@
 #include "stdlib/blas/base/shared.h"
 
 /**
-* Copies values from one complex double-precision floating-point vector to another complex double-precision floating-point vector using alternative indexing semantics.
+* Copies values from one double-precision complex floating-point vector to another double-precision complex floating-point vector using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        input array

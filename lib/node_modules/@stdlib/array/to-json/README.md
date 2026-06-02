@@ -87,7 +87,7 @@ For guidance on reviving a JSON-serialized typed array, see [`reviver()`][@stdli
 
 -   The implementation provides basic support for custom typed arrays and sets the `type` field to the closest known typed array type.
 
-    <!-- eslint-disable no-restricted-syntax, no-useless-constructor, new-cap, stdlib/require-globals, node/no-unsupported-features/es-syntax -->
+    <!-- eslint-disable no-restricted-syntax, no-useless-constructor, new-cap, stdlib/require-globals, n/no-unsupported-features/es-syntax -->
 
     ```javascript
     class CustomArray extends Float64Array() {

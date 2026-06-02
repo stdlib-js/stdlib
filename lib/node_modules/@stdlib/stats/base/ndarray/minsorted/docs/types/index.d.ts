@@ -20,24 +20,29 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the minimum value of a sorted one-dimensional ndarray.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a sorted one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns minimum value
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
-* var xbuf = [ 1.0, 2.0, 3.0, 4.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, 2.0, 3.0, 4.0 ], 'generic' );
 *
 * var v = minsorted( [ x ] );
 * // returns 1.0
 */
-declare function minsorted( arrays: ArrayLike<ndarray> ): number;
+declare function minsorted<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T ] ): number;
 
 
 // EXPORTS //

@@ -23,7 +23,7 @@
 #include <time.h>
 #include <sys/time.h>
 
-#define NAME "sindexof"
+#define NAME "sindex_of"
 #define ITERATIONS 10000000
 #define REPEATS 3
 #define MIN 1
