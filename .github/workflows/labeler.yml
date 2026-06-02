@@ -68,7 +68,7 @@ jobs:
       - name: 'Add "First-time Contributor" label if PR is from a first-time contributor'
         if: ${{ github.event.action == 'opened' || github.event.action == 'reopened' }}
         # Pin action to full-length commit SHA
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
@@ -93,7 +93,7 @@ jobs:
       - name: 'Add "Needs Review" label if PR is opened and not draft'
         if: ${{ github.event.action == 'opened' && github.event.pull_request.draft == false }}
         # Pin action to full length commit SHA
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
@@ -108,7 +108,7 @@ jobs:
       - name: 'Add "Needs Review" label if PR is ready for review or review is requested'
         if: ${{ github.event.action == 'ready_for_review' || github.event.action == 'review_requested' }}
         # Pin action to full length commit SHA
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
@@ -123,7 +123,7 @@ jobs:
       - name: 'Remove "Needs Review" label if PR is converted to draft or closed'
         if: ${{ github.event.action == 'converted_to_draft' || github.event.action == 'closed' }}
         # Pin action to full length commit SHA
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
@@ -142,7 +142,7 @@ jobs:
       - name: 'Remove "Ready To Merge" label if PR is merged'
         if: ${{ github.event.action == 'closed' && github.event.pull_request.merged == true }}
         # Pin action to full length commit SHA
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
@@ -160,7 +160,7 @@ jobs:
       # Remove "Needs Review" and "Needs Changes" labels when "Ready To Merge" is assigned:
       - name: 'Remove "Needs Review" and "Needs Changes" labels when "Ready To Merge" is assigned'
         if: ${{ github.event.action == 'labeled' && github.event.label.name == 'Ready To Merge' }}
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
@@ -182,7 +182,7 @@ jobs:
       - name: 'Remove "First-time Contributor" label from other open PRs of same author if PR is merged'
         if: ${{ github.event.action == 'closed' && github.event.pull_request.merged == true }}
         # Pin action to full length commit SHA
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |

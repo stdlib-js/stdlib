@@ -87,7 +87,6 @@ Applies a strided function to a provided input ndarray.
 <!-- eslint-disable id-length -->
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 var base = require( '@stdlib/stats/base/ndarray/cumax' );
 
@@ -107,10 +106,7 @@ var xbuf = [ -1.0, 2.0, -3.0 ];
 var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
 
 var y = unary( x );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ -1.0, 2.0, 2.0 ]
+// returns <ndarray>[ -1.0, 2.0, 2.0 ]
 ```
 
 The function has the following parameters:
@@ -153,7 +149,7 @@ var y = unary( x, {
 });
 // returns <ndarray>
 
-var dt = getDType( y );
+var dt = String( getDType( y ) );
 // returns 'float64'
 ```
 
@@ -166,7 +162,6 @@ Applies a strided function to a provided input ndarray and assigns results to a 
 ```javascript
 var base = require( '@stdlib/stats/base/ndarray/cumax' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
 var idt = dtypes( 'real_and_generic' );
@@ -188,10 +183,7 @@ var ybuf = [ 0.0, 0.0, 0.0 ];
 var y = new ndarray( 'generic', ybuf, [ ybuf.length ], [ 1 ], 0, 'row-major' );
 
 var out = unary.assign( x, y );
-// returns <ndarray>
-
-var arr = ndarray2array( out );
-// returns [ -1.0, 2.0, 2.0 ]
+// returns <ndarray>[ -1.0, 2.0, 2.0 ]
 
 var bool = ( out === y );
 // returns true
