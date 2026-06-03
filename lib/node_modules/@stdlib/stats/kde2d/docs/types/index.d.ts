@@ -80,7 +80,7 @@ interface Output {
 	/**
 	* Density values.
 	*/
-	z: Array<number>;
+	z: ndarray;
 }
 
 /**
