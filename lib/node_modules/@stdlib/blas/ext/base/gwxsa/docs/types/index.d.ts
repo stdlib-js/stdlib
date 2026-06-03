@@ -32,72 +32,72 @@ type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 */
 interface Routine {
 	/**
-	* Subtracts a scalar constant from each element in a strided array `x` and assigns the results to a strided array `y`.
+	* Subtracts a scalar constant from each element in a strided array `x` and assigns the results to a strided array `w`.
 	*
 	* @param N - number of indexed elements
 	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - `x` stride length
-	* @param y - output array
-	* @param strideY - `y` stride length
-	* @returns `y`
+	* @param w - output array
+	* @param strideW - `w` stride length
+	* @returns `w`
 	*
 	* @example
 	* var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
-	* var y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+	* var w = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 	*
-	* gwxsa( x.length, 5.0, x, 1, y, 1 );
-	* // y => [ -7.0, -4.0, -2.0, -10.0, -1.0, -5.0, -6.0, -8.0 ]
+	* gwxsa( x.length, 5.0, x, 1, w, 1 );
+	* // w => [ -7.0, -4.0, -2.0, -10.0, -1.0, -5.0, -6.0, -8.0 ]
 	*/
-	<T extends InputArray, U extends InputArray>( N: number, alpha: number, x: T, strideX: number, y: U, strideY: number ): U;
+	<T extends InputArray, U extends InputArray>( N: number, alpha: number, x: T, strideX: number, w: U, strideW: number ): U;
 
 	/**
-	* Subtracts a scalar constant from each element in a strided array `x` and assigns the results to a strided array `y` using alternative indexing semantics.
+	* Subtracts a scalar constant from each element in a strided array `x` and assigns the results to a strided array `w` using alternative indexing semantics.
 	*
 	* @param N - number of indexed elements
 	* @param alpha - scalar constant
 	* @param x - input array
 	* @param strideX - `x` stride length
 	* @param offsetX - starting index for `x`
-	* @param y - output array
-	* @param strideY - `y` stride length
-	* @param offsetY - starting index for `y`
-	* @returns `y`
+	* @param w - output array
+	* @param strideW - `w` stride length
+	* @param offsetW - starting index for `w`
+	* @returns `w`
 	*
 	* @example
 	* var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
-	* var y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+	* var w = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 	*
-	* gwxsa.ndarray( x.length, 5.0, x, 1, 0, y, 1, 0 );
-	* // y => [ -7.0, -4.0, -2.0, -10.0, -1.0, -5.0, -6.0, -8.0 ]
+	* gwxsa.ndarray( x.length, 5.0, x, 1, 0, w, 1, 0 );
+	* // w => [ -7.0, -4.0, -2.0, -10.0, -1.0, -5.0, -6.0, -8.0 ]
 	*/
-	ndarray<T extends InputArray, U extends InputArray>( N: number, alpha: number, x: T, strideX: number, offsetX: number, y: U, strideY: number, offsetY: number ): U;
+	ndarray<T extends InputArray, U extends InputArray>( N: number, alpha: number, x: T, strideX: number, offsetX: number, w: U, strideW: number, offsetW: number ): U;
 }
 
 /**
-* Subtracts a scalar constant from each element in a strided array `x` and assigns the results to a strided array `y`.
+* Subtracts a scalar constant from each element in a strided array `x` and assigns the results to a strided array `w`.
 *
 * @param N - number of indexed elements
 * @param alpha - scalar constant
 * @param x - input array
 * @param strideX - `x` stride length
-* @param y - output array
-* @param strideY - `y` stride length
-* @returns `y`
+* @param w - output array
+* @param strideW - `w` stride length
+* @returns `w`
 *
 * @example
 * var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
-* var y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+* var w = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 *
-* gwxsa( x.length, 5.0, x, 1, y, 1 );
-* // y => [ -7.0, -4.0, -2.0, -10.0, -1.0, -5.0, -6.0, -8.0 ]
+* gwxsa( x.length, 5.0, x, 1, w, 1 );
+* // w => [ -7.0, -4.0, -2.0, -10.0, -1.0, -5.0, -6.0, -8.0 ]
 *
 * @example
 * var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
-* var y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+* var w = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 *
-* gwxsa.ndarray( x.length, 5.0, x, 1, 0, y, 1, 0 );
-* // y => [ -7.0, -4.0, -2.0, -10.0, -1.0, -5.0, -6.0, -8.0 ]
+* gwxsa.ndarray( x.length, 5.0, x, 1, 0, w, 1, 0 );
+* // w => [ -7.0, -4.0, -2.0, -10.0, -1.0, -5.0, -6.0, -8.0 ]
 */
 declare var gwxsa: Routine;
 

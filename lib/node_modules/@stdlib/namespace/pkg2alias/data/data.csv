@@ -3156,6 +3156,7 @@
 "@stdlib/constants/uint32/num-bytes",UINT32_NUM_BYTES
 "@stdlib/array/uint32",Uint32Array
 "@stdlib/ndarray/vector/uint32",Uint32Vector
+"@stdlib/number/uint64/ctor",Uint64
 "@stdlib/process/umask",umask
 "@stdlib/string/uncapitalize",uncapitalize
 "@stdlib/object/uncapitalize-keys",uncapitalizeKeys
