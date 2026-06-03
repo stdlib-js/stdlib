@@ -4807,7 +4807,7 @@ interface Namespace {
 	isndarrayLikeWithDataType: typeof isndarrayLikeWithDataType;
 
 	/**
-	* Tests if a value is a negative number.
+	* Tests if a value is a finite negative number.
 	*
 	* @param value - value to test
 	* @returns boolean indicating whether value is a finite negative number
@@ -6131,7 +6131,7 @@ interface Namespace {
 	/**
 	* Tests if a value is PRNG-like.
 	*
-	* @param v - value to test
+	* @param value - value to test
 	* @returns boolean indicating if a value is PRNG-like
 	*
 	* @example
