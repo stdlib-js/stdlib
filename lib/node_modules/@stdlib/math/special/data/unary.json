@@ -13479,8 +13479,8 @@
     "$schema": "math/base@v1.0",
     "base_alias": "nonfibonacci",
     "alias": "nonfibonaccif",
-    "pkg_desc": "compute the nth non-Fibonacci single-precision floating-point number",
-    "desc": "computes the nth non-Fibonacci single-precision floating-point number",
+    "pkg_desc": "compute the nth non-Fibonacci number as a single-precision floating-point number",
+    "desc": "computes the nth non-Fibonacci number as a single-precision floating-point number",
     "short_desc": "non-Fibonacci number",
     "parameters": [
       {
