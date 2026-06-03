@@ -41,12 +41,10 @@ var ssorthp = require( '@stdlib/blas/ext/base/ndarray/ssorthp' );
 Sorts a one-dimensional single-precision floating-point ndarray using heapsort.
 
 ```javascript
-var Float32Array = require( '@stdlib/array/float32' );
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
-var xbuf = new Float32Array( [ 1.0, -2.0, 3.0, -4.0 ] );
-var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float32Vector( [ 1.0, -2.0, 3.0, -4.0 ] );
 
 var order = scalar2ndarray( 1.0, {
     'dtype': 'generic'
@@ -58,7 +56,10 @@ var out = ssorthp( [ x, order ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying the sort order.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a zero-dimensional ndarray specifying the sort order.
 
 </section>
 
@@ -82,17 +83,17 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarraylike2scalar = require( '@stdlib/ndarray/base/ndarraylike2scalar' );
 var ssorthp = require( '@stdlib/blas/ext/base/ndarray/ssorthp' );
 
-var xbuf = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float32'
-});
-var x = new ndarray( 'float32', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = discreteUniform( [ 10 ], -100, 100, opts );
 console.log( ndarray2array( x ) );
 
 var order = scalar2ndarray( 1.0, {

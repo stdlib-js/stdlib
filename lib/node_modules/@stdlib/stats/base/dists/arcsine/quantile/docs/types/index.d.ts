@@ -25,7 +25,7 @@
 *
 * -   If `p < 0` or `p > 1`, the function returns `NaN`.
 *
-* @param p - input value
+* @param x - input value
 * @returns evaluated quantile function
 */
 type Unary = ( x: number ) => number;
@@ -82,7 +82,7 @@ interface Quantile {
 	( p: number, a: number, b: number ): number;
 
 	/**
-	* Returns a function for evaluating the quantile function for an arcsine distribution with minimum support `a` an maximum support `b`.
+	* Returns a function for evaluating the quantile function for an arcsine distribution with minimum support `a` and maximum support `b`.
 	*
 	* @param a - minimum support
 	* @param b - maximum support
@@ -102,7 +102,7 @@ interface Quantile {
 /**
 * Arcsine distribution quantile function.
 *
-* @param x - input value
+* @param p - input value
 * @param a - minimum support
 * @param b - maximum support
 * @returns evaluated quantile function

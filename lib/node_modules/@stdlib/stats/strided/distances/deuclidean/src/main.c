@@ -53,5 +53,5 @@ double API_SUFFIX(stdlib_strided_deuclidean_ndarray)( const CBLAS_INT N, const d
 	if ( N <= 0 ) {
 		return 0.0/0.0; // NaN
 	}
-	return stdlib_strided_drrss_ndarray( N, X, strideX, offsetX, Y, strideY, offsetY );
+	return API_SUFFIX(stdlib_strided_drrss_ndarray)( N, X, strideX, offsetX, Y, strideY, offsetY );
 }

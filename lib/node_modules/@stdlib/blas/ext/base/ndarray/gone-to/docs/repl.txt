@@ -18,13 +18,7 @@
 
     Examples
     --------
-    > var xbuf = [ 0.0, 0.0, 0.0, 0.0 ];
-    > var dt = 'generic';
-    > var sh = [ xbuf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 0.0, 0.0, 0.0, 0.0 ], 'generic' );
     > {{alias}}( [ x ] )
     <ndarray>[ 1.0, 2.0, 3.0, 4.0 ]
 

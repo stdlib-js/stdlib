@@ -25,6 +25,7 @@ package.json.copy
 ###############
 build/
 downloads/
+plans/
 reports/
 tmp/
 
@@ -174,6 +175,10 @@ acs-*.bib
 *.ilg
 *.ind
 *.ist
+
+# Git #
+#######
+.worktrees
 
 # Visual Studio #
 #################
