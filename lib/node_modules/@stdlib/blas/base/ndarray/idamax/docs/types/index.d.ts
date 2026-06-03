@@ -40,7 +40,7 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 * var x = new Float64Vector( [ 1.0, -2.0, 3.0, -4.0, 5.0 ] );
 *
 * var y = idamax( [ x ] );
-* // returns 4.0
+* // returns 4
 */
 declare function idamax( arrays: [ float64ndarray ] ): number;
 

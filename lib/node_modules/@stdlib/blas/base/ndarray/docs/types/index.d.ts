@@ -677,7 +677,7 @@ interface Namespace {
 	* var x = new Float64Vector( [ 1.0, -2.0, 3.0, -4.0, 5.0 ] );
 	*
 	* var y = ns.idamax( [ x ] );
-	* // returns 4.0
+	* // returns 4
 	*/
 	idamax: typeof idamax;
 
@@ -721,7 +721,7 @@ interface Namespace {
 	* var x = new Float32Vector( [ 1.0, -2.0, 3.0, -4.0, 5.0 ] );
 	*
 	* var y = ns.isamax( [ x ] );
-	* // returns 4.0
+	* // returns 4
 	*/
 	isamax: typeof isamax;
 
