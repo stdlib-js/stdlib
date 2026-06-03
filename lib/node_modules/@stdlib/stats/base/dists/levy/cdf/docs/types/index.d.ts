@@ -35,7 +35,7 @@ interface CDF {
 	*
 	* ## Notes
 	*
-	* -   If provided `c = < 0`, the function returns `NaN`.
+	* -   If provided `c <= 0`, the function returns `NaN`.
 	*
 	* @param x - input value
 	* @param mu - location parameter

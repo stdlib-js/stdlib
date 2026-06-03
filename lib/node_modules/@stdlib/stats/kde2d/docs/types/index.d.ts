@@ -58,7 +58,7 @@ interface Options {
 	yMax?: number;
 
 	/**
-	* A string or function to specifying the used kernel function (default: 'gaussian').
+	* A string or function specifying the kernel function to use (default: 'gaussian').
 	*/
 	kernel?: 'gaussian' | 'epanechnikov' | 'cosine' | 'quartic' | 'triangular' | 'tricube' | 'triweight' | 'uniform' | Function;
 }
@@ -94,7 +94,7 @@ interface Output {
 * @param options.xMax - upper limit of x
 * @param options.yMin - lower limit of y
 * @param options.yMax - upper limit of y
-* @param options.kernel - a string or function to specifying the used kernel function (default: 'gaussian')
+* @param options.kernel - a string or function specifying the kernel function to use (default: 'gaussian')
 * @throws must provide valid options
 * @returns object containing the density estimates (`z`) along grid points (`x` and `y` values)
 *
@@ -128,7 +128,7 @@ declare function kde2d( arr: ndarray, options?: Options ): Output;
 * @param options.xMax - upper limit of x
 * @param options.yMin - lower limit of y
 * @param options.yMax - upper limit of y
-* @param options.kernel - a string or function to specifying the used kernel function (default: 'gaussian')
+* @param options.kernel - a string or function specifying the kernel function to use (default: 'gaussian')
 * @throws first and second arguments must be of the same length
 * @throws must provide valid options
 * @returns object containing the density estimates (`z`) along grid points (`x` and `y` values)
