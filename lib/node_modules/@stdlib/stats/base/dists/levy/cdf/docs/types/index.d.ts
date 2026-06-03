@@ -71,7 +71,7 @@ interface CDF {
 	* var y = cdf( 2.0, 0.0, -1.0 );
 	* // returns NaN
 	*/
-	( x: number, mu: number, b: number ): number;
+	( x: number, mu: number, c: number ): number;
 
 	/**
 	* Returns a function for evaluating the cumulative distribution function (CDF) for a Lévy distribution with location parameter `mu` and scale parameter `c`.
