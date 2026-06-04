@@ -129,7 +129,7 @@ declare class Erlang {
 	*
 	* @param t - input value
 	* @returns evaluated MGF
-	 */
+	*/
 	mgf( t: number ): number;
 
 	/**

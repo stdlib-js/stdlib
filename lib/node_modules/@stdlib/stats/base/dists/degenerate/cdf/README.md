@@ -100,10 +100,10 @@ var cdf = require( '@stdlib/stats/base/dists/degenerate/cdf' );
 var opts = {
     'dtype': 'float64'
 };
-var x = discreteUniform( 10, 0.0, 10.0, opts );
-var mu = discreteUniform( 10, 0.0, 10.0, opts );
+var x = discreteUniform( 10, 0, 10, opts );
+var mu = discreteUniform( 10, 0, 10, opts );
 
-logEachMap( 'x: %0.4f, µ: %0.4f, F(x;µ): %0.4f', x, mu, cdf );
+logEachMap( 'x: %d, µ: %d, F(x;µ): %0.4f', x, mu, cdf );
 ```
 
 </section>
