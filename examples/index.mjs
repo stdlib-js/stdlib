@@ -23,5 +23,5 @@ const keys = stdlib.utils.objectKeys( stdlib );
 console.log( keys );
 
 // Compute the value of sine:
-const y = stdlib.math.base.special.sin( Math.PI );
+const y = stdlib.math.base.special.sin( 3.14 );
 console.log( y );
