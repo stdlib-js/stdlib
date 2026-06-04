@@ -5423,7 +5423,7 @@ declare module '@stdlib/types/number' {
 	type NumberDataType = IntegerDataType;
 
 	/**
-	* A unsigned 64-bit integer.
+	* An unsigned 64-bit integer.
 	*
 	* @example
 	* const x: Uint64 = {
