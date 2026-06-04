@@ -1,0 +1,29 @@
+
+{{alias}}( din1, din2 )
+    Tests input for NaN by comparing two double-precision floating-point
+    arguments for inequality.
+
+    Parameters
+    ----------
+    din1: number
+        First input number.
+
+    din2: number
+        Second input number.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether the arguments are unequal.
+
+    Examples
+    --------
+    > var bool = {{alias}}( NaN, NaN )
+    true
+    > bool = {{alias}}( NaN, 5.0 )
+    true
+    > bool = {{alias}}( 5.0, 5.0 )
+    false
+
+    See Also
+    --------
