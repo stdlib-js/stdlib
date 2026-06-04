@@ -102,7 +102,7 @@ interface LogPDF {
 *
 * @param x - input value
 * @param alpha - shape parameter
-* @param beta - rate parameter
+* @param beta - scale parameter
 * @returns evaluated logPDF
 *
 * @example

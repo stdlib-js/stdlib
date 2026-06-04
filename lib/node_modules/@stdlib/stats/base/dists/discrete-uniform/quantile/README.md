@@ -170,7 +170,7 @@ for ( i = 0; i < 10; i++ ) {
 #include "stdlib/stats/base/dists/discrete-uniform/quantile.h"
 ```
 
-#### stdlib_base_dists_discrete_uniform_quantile( x, a, b )
+#### stdlib_base_dists_discrete_uniform_quantile( p, a, b )
 
 Evaluates the [quantile function][quantile-function] for a [discrete uniform][discrete-uniform-distribution] distribution with parameters `a` (minimum support) and `b` (maximum support).
 

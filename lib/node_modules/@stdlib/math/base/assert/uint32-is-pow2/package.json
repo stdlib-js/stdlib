@@ -73,6 +73,9 @@
     "int",
     "unsigned",
     "signed",
-    "number"
+    "number",
+    "is",
+    "type",
+    "check"
   ]
 }

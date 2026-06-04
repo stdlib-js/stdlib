@@ -104,7 +104,7 @@ interface Unary {
 }
 
 /**
-* Computes the arithmetic mean along one or more ndarray dimensions using a second-order iterative Kahan-Babuska algorithm.
+* Computes the arithmetic mean along one or more ndarray dimensions using a second-order iterative Kahan–Babuška algorithm.
 *
 * @param x - input ndarray
 * @param options - function options
