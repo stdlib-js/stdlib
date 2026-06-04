@@ -25,10 +25,10 @@
 *
 * -   If `p < 0` or `p > 1`, the function returns `NaN`.
 *
-* @param x - input value
+* @param p - input value
 * @returns evaluated quantile function
 */
-type Unary = ( x: number ) => number;
+type Unary = ( p: number ) => number;
 
 /**
 * Interface for the quantile function of an arcsine distribution.
