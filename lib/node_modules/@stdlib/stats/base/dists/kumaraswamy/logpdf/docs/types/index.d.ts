@@ -108,7 +108,7 @@ interface LogPDF {
 }
 
 /**
-* Arcsine distribution logarithm of probability density function (PDF).
+* Kumaraswamy's double bounded distribution logarithm of probability density function (PDF).
 *
 * @param x - input value
 * @param a - first shape parameter

@@ -1,0 +1,118 @@
+
+{{alias}}( N, k, x, strideX, out, strideOut )
+    Cumulatively tests whether at least `k` elements in a strided array are
+    truthy.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `out` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Minimum number of truthy elements.
+
+    x: ArrayLikeObject
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    strideOut: integer
+        Stride length for `out`.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 0, 0, 1, 1, 1 ];
+    > var out = [ false, false, false, false, false ];
+    > {{alias}}( x.length, 2, x, 1, out, 1 )
+    [ false, false, false, true, true ]
+
+    // Using `N` and stride parameters:
+    > x = [ 0, 0, 1, 0, 1, 0, 1, 0 ];
+    > out = [ false, false, false, false ];
+    > {{alias}}( 4, 2, x, 2, out, 1 )
+    [ false, false, true, true ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 1, 0, 1, 1 ] );
+    > var o0 = new {{alias:@stdlib/array/uint8}}( x0.length );
+    > var x1 = new {{alias:@stdlib/array/uint8}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var o1 = new {{alias:@stdlib/array/uint8}}( o0.buffer, o0.BYTES_PER_ELEMENT*3 );
+    > {{alias}}( 3, 2, x1, 2, o1, 1 )
+    <Uint8Array>[ 0, 0, 0 ]
+    > o0
+    <Uint8Array>[ 0, 0, 0, 0, 0, 0 ]
+
+
+{{alias}}.ndarray( N, k, x, strideX, offsetX, out, strideOut, offsetOut )
+    Cumulatively tests whether at least `k` elements in a strided array are
+    truthy using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Minimum number of truthy elements.
+
+    x: ArrayLikeObject
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    out: ArrayLikeObject
+        Output array.
+
+    strideOut: integer
+        Stride length for `out`.
+
+    offsetOut: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: ArrayLikeObject
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 0, 0, 1, 1, 1 ];
+    > var out = [ false, false, false, false, false ];
+    > {{alias}}.ndarray( x.length, 2, x, 1, 0, out, 1, 0 )
+    [ false, false, false, true, true ]
+
+    // Advanced indexing:
+    > x = [ 0, 0, 1, 0, 1, 0, 1, 0 ];
+    > out = [ false, false, false ];
+    > {{alias}}.ndarray( 3, 2, x, 2, 2, out, 1, 0 )
+    [ false, true, true ]
+
+    See Also
+    --------

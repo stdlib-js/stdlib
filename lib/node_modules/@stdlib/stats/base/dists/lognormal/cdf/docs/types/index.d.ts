@@ -61,6 +61,11 @@ interface CDF {
 	* @example
 	* var y = cdf( NaN, 0.0, 1.0 );
 	* // returns NaN
+	*
+	* @example
+	* // Negative scale parameter:
+	* var y = cdf( 2.0, 0.0, -1.0 );
+	* // returns NaN
 	*/
 	( x: number, mu: number, sigma: number ): number;
 
