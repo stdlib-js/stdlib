@@ -45,7 +45,7 @@ type Callback = ( err: Error | null, file: Uint8Array ) => void;
 */
 interface ReadWASM {
 	/**
-	* Reads the entire contents of a WebAssembly file.
+	* Asynchronously reads the entire contents of a WebAssembly file.
 	*
 	* @param file - file path or file descriptor
 	* @param options - options
@@ -69,7 +69,7 @@ interface ReadWASM {
 	( file: string | Buffer | number, options: Options, clbk: Callback ): void;
 
 	/**
-	* Reads the entire contents of a WebAssembly file.
+	* Asynchronously reads the entire contents of a WebAssembly file.
 	*
 	* @param file - file path or file descriptor
 	* @param clbk - callback to invoke after reading a file
@@ -113,7 +113,7 @@ interface ReadWASM {
 }
 
 /**
-* Reads the entire contents of a WebAssembly file.
+* Asynchronously reads the entire contents of a WebAssembly file.
 *
 * @param file - file path or file descriptor
 * @param options - options

@@ -125,9 +125,42 @@ y = mylogcdf( 4.0 );
 // returns ~-0.064
 ```
 
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var logcdf = require( '@stdlib/stats/base/dists/gamma/logcdf' );
+
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 10, 0.0, 3.0, opts );
+var alpha = uniform( 10, 0.0, 5.0, opts );
+var beta = uniform( 10, 0.0, 5.0, opts );
+
+logEachMap( 'x: %0.4f, α: %0.4f, β: %0.4f, ln(f(x;α,β)): %0.4f', x, alpha, beta, logcdf );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- C interface documentation. -->
+
 * * *
 
-### C APIs
+<section class="c">
+
+## C APIs
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -141,7 +174,7 @@ y = mylogcdf( 4.0 );
 
 <section class="usage">
 
-#### Usage
+### Usage
 
 ```c
 #include "stdlib/stats/base/dists/gamma/logcdf.h"
@@ -220,32 +253,7 @@ int main( void ) {
 
 </section>
 
-<!-- /.usage -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var uniform = require( '@stdlib/random/array/uniform' );
-var logEachMap = require( '@stdlib/console/log-each-map' );
-var logcdf = require( '@stdlib/stats/base/dists/gamma/logcdf' );
-
-var opts = {
-    'dtype': 'float64'
-};
-var x = uniform( 10, 0.0, 3.0, opts );
-var alpha = uniform( 10, 0.0, 5.0, opts );
-var beta = uniform( 10, 0.0, 5.0, opts );
-
-logEachMap( 'x: %0.4f, α: %0.4f, β: %0.4f, ln(f(x;α,β)): %0.4f', x, alpha, beta, logcdf );
-```
-
-</section>
-
-<!-- /.examples -->
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

@@ -41,11 +41,9 @@ var dnanmin = require( '@stdlib/stats/base/ndarray/dnanmin' );
 Computes the minimum value of a one-dimensional double-precision floating-point ndarray, ignoring `NaN` values.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 
-var xbuf = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, -2.0, NaN, 2.0 ] );
 
 var v = dnanmin( [ x ] );
 // returns -2.0
@@ -77,9 +75,9 @@ The function has the following parameters:
 
 ```javascript
 var uniform = require( '@stdlib/random/base/uniform' );
-var filledarrayBy = require( '@stdlib/array/filled-by' );
 var bernoulli = require( '@stdlib/random/base/bernoulli' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var fillBy = require( '@stdlib/ndarray/fill-by' );
+var zeros = require( '@stdlib/ndarray/zeros' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dnanmin = require( '@stdlib/stats/base/ndarray/dnanmin' );
 
@@ -90,8 +88,10 @@ function rand() {
     return uniform( -50.0, 50.0 );
 }
 
-var xbuf = filledarrayBy( 10, 'float64', rand );
-var x = new ndarray( 'float64', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var opts = {
+    'dtype': 'float64'
+};
+var x = fillBy( zeros( [ 10 ], opts ), rand );
 console.log( ndarray2array( x ) );
 
 var v = dnanmin( [ x ] );
