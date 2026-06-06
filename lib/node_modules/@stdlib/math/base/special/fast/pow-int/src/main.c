@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/special/fast/pow.h"
+#include "stdlib/math/base/special/fast/pow_int.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float64/pinf.h"
 

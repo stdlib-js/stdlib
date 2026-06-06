@@ -26,15 +26,19 @@ import { Complex64 } from '@stdlib/types/complex';
 /**
 * Computes the sum of all elements in a one-dimensional single-precision complex floating-point ndarray using an improved Kahan–Babuška algorithm.
 *
-* @param arrays - array-like object containing an input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns sum
 *
 * @example
-* var Complex64Array = require( '@stdlib/array/complex64' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
 *
-* var xbuf = new Complex64Array( [ 1.0, -2.0, 2.0, 3.0 ] );
-* var x = new ndarray( 'complex64', xbuf, [ 2 ], [ 1 ], 0, 'row-major' );
+* var x = new Complex64Vector( [ 1.0, -2.0, 2.0, 3.0 ] );
 *
 * var v = csumkbn( [ x ] );
 * // returns <Complex64>[ 3.0, 1.0 ]

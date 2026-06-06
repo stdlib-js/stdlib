@@ -46,10 +46,7 @@ interface Concat1d {
 	* var y = array( [ -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ] );
 	*
 	* var out = concat1d( x, y );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
+	* // returns <ndarray>[ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
 	*/
 	<T = unknown>( arrays: Array<Input<T>> ): typedndarray<T>; // FIXME: this is a tricky one to type correctly, as the actual output dtype depends on type promotion rules
 
@@ -68,10 +65,7 @@ interface Concat1d {
 	* var y = array( [ -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ] );
 	*
 	* var out = concat1d( x, y );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
+	* // returns <ndarray>[ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
 	*/
 	<T = unknown>( arg: Input<T>, ...arrays: Array<Input<T>> ): typedndarray<T>; // FIXME: this is a tricky one to type correctly, as the actual output dtype depends on type promotion rules
 
@@ -92,13 +86,10 @@ interface Concat1d {
 	* var z = empty( [ 10 ] );
 	*
 	* var out = concat1d.assign( [ x, y ], z );
-	* // returns <ndarray>
+	* // returns <ndarray>[ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
 	*
 	* var bool = ( out === z );
 	* // returns true
-	*
-	* var arr = ndarray2array( z );
-	* // returns [ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
 	*/
 	assign<T = unknown, U = unknown, V extends typedndarray<U> = typedndarray<U>>( args: ArrayLike<Input<T>>, out: V ): V;
 
@@ -121,13 +112,10 @@ interface Concat1d {
 	* var z = empty( [ 10 ] );
 	*
 	* var out = concat1d.assign( x, y, z );
-	* // returns <ndarray>
+	* // returns <ndarray>[ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
 	*
 	* var bool = ( out === z );
 	* // returns true
-	*
-	* var arr = ndarray2array( z );
-	* // returns [ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
 	*/
 	assign<T = unknown, U = unknown, V extends typedndarray<U> = typedndarray<U>>( arg1: Input<T>, arg2: Input<T> | V, ...args: Array<Input<T> | V> ): V; // FIXME: in order to more robustly return a correct output type here, we'd likely need to use overloads with varying arity. The issue here is that `V` needs to be the last argument, which is not captured here.
 }
@@ -146,10 +134,7 @@ interface Concat1d {
 * var y = array( [ -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ] );
 *
 * var out = concat1d( x, y );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( out );
-* // returns [ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
+* // returns <ndarray>[ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
 *
 * @example
 * var array = require( '@stdlib/ndarray/array' );
@@ -161,13 +146,10 @@ interface Concat1d {
 * var z = empty( [ 10 ] );
 *
 * var out = concat1d.assign( [ x, y ], z );
-* // returns <ndarray>
+* // returns <ndarray>[ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
 *
 * var bool = ( out === z );
 * // returns true
-*
-* var arr = ndarray2array( z );
-* // returns [ -1.0, 2.0, 3.0, 4.0, -5.0, 6.0, -7.0, -8.0, 9.0, -10.0 ]
 */
 declare var concat1d: Concat1d;
 
