@@ -98,6 +98,35 @@ rules[ 'stdlib/capitalized-comments' ] = [ 'warn', {
 rules[ 'stdlib/doctest' ] = 'off';
 
 /**
+* Enforce spacing in return annotations in single-line comments.
+*
+* @name doctest-annotation-spacing
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var v = 3.14;
+* // returns             3.14
+*
+* console.log( 'beep' );
+* //=> 'beep'
+*
+* var x = true;
+* //  returns true
+*
+* @example
+* // Good...
+* var v = 3.14;
+* // returns 3.14
+*
+* console.log( 'beep' );
+* // => 'beep'
+*/
+rules[ 'stdlib/doctest-annotation-spacing' ] = 'error';
+
+/**
 * Enforce marker style conventions for return annotations.
 *
 * @name doctest-marker
@@ -4156,6 +4185,46 @@ rules[ 'stdlib/no-dynamic-require' ] = 'error';
 * }
 */
 rules[ 'stdlib/no-empty-comments' ] = 'error';
+
+/**
+* Enforce no empty lines between module-level require statements.
+*
+* @name no-empty-lines-between-requires
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var foo = require( 'foo' );
+*
+* var bar = require( 'bar' );
+*
+* @example
+* // Good...
+* var foo = require( 'foo' );
+* var bar = require( 'bar' );
+*/
+rules[ 'stdlib/no-empty-lines-between-requires' ] = 'error';
+
+/**
+* Disallow string concatenation in error messages.
+*
+* @name no-error-string-concat
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* throw new Error( 'invalid argument. Value: `' + value + '`.' );
+*
+* @example
+* // Good...
+* throw new Error( 'unexpected error.' );
+* throw new Error( format( 'invalid argument. Value: `%s`.', value ) );
+*/
+rules[ 'stdlib/no-error-string-concat' ] = 'error';
 
 /**
 * Enforce that `require()` expressions are not immediately invoked.
