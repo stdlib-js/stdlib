@@ -47,7 +47,7 @@ import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 * var v = sstdevwd( [ x, correction ] );
 * // returns ~2.0817
 */
-declare function sstdevwd<T extends typedndarray<number> = typedndarray<number>>( arrays: [ float32ndarray, T ] ): number;
+declare function sstdevwd( arrays: [ float32ndarray, typedndarray<number> ] ): number;
 
 
 // EXPORTS //
