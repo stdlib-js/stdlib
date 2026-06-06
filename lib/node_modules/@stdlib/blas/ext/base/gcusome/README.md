@@ -72,18 +72,19 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
+var BooleanArray = require( '@stdlib/array/bool' );
 var Uint8Array = require( '@stdlib/array/uint8' );
 
 // Initial arrays...
 var x0 = new Uint8Array( [ 0, 0, 1, 0, 1, 1 ] );
-var o0 = new Uint8Array( x0.length );
+var o0 = new BooleanArray( x0.length );
 
 // Create offset views...
 var x1 = new Uint8Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var o1 = new Uint8Array( o0.buffer, o0.BYTES_PER_ELEMENT*3 ); // start at 4th element
+var o1 = new BooleanArray( o0.buffer, o0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 
 gcusome( 3, 2, x1, 2, o1, 1 );
-// o0 => <Uint8Array>[ 0, 0, 0, 0, 0, 0 ]
+// o0 => <BooleanArray>[ false, false, false, false, false, false ]
 ```
 
 #### gcusome.ndarray( N, k, x, strideX, offsetX, out, strideOut, offsetOut )
@@ -136,7 +137,7 @@ gcusome.ndarray( 3, 2, x, 2, 2, out, 1, 0 );
 
 ```javascript
 var bernoulli = require( '@stdlib/random/array/bernoulli' );
-var filled = require( '@stdlib/array/base/filled' );
+var falses = require( '@stdlib/array/falses' );
 var gcusome = require( '@stdlib/blas/ext/base/gcusome' );
 
 var x = bernoulli( 10, 0.5, {
@@ -144,7 +145,7 @@ var x = bernoulli( 10, 0.5, {
 });
 console.log( x );
 
-var out = filled( false, x.length );
+var out = falses( x.length, 'generic' );
 gcusome( x.length, 2, x, 1, out, 1 );
 console.log( out );
 ```
