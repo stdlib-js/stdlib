@@ -151,7 +151,7 @@ interface Namespace {
 	findIndex: typeof findIndex;
 
 	/**
-	* Returns the index of the last element along an ndarray dimension which passes a test implemented by a predicate function and assigns results to a provided output ndarray.
+	* Returns the index of the last element along an ndarray dimension which passes a test implemented by a predicate function.
 	*
 	* ## Notes
 	*
@@ -160,7 +160,7 @@ interface Namespace {
 	* @param x - input ndarray
 	* @param options - function options
 	* @param clbk - predicate function
-	* @param thisArg - Predicate execution context
+	* @param thisArg - predicate function execution context
 	* @returns output ndarray
 	*
 	* @example
@@ -320,6 +320,7 @@ interface Namespace {
 	* @param stop - end of interval
 	* @param endpoint - specifies whether to include the end of the interval when writing values to the output ndarray
 	* @param options - function options
+	* @returns output ndarray
 	*
 	* @example
 	* var out = ns.linspace( [ 2, 4 ], 0.0, 3.0 );
@@ -384,7 +385,7 @@ interface Namespace {
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
-	* var y = ns.sort( x, 1.0 );
+	* var y = ns.sort( x );
 	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 	*
 	* @example
@@ -392,8 +393,8 @@ interface Namespace {
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
-	* var y = ns.sort( x, 1.0 );
-	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
+	* var y = ns.sort( x, -1.0 );
+	* // returns <ndarray>[ 2.0, -1.0, -3.0 ]
 	*/
 	sort: typeof sort;
 
@@ -427,8 +428,8 @@ interface Namespace {
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
-	* var y = ns.sorthp( x, 1.0 );
-	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
+	* var y = ns.sorthp( x, -1.0 );
+	* // returns <ndarray>[ 2.0, -1.0, -3.0 ]
 	*/
 	sorthp: typeof sorthp;
 
