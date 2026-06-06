@@ -149,7 +149,7 @@ import dediff = require( './index' );
 	dediff( x.length, x, 1, 1, p, 1, ( x: number ): number => x, a, 1, out, 1 ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided an eigth argument which is not a Float64Array...
+// The compiler throws an error if the function is provided an eighth argument which is not a Float64Array...
 {
 	const x = new Float64Array( 10 );
 	const p = new Float64Array( 1 );
@@ -243,7 +243,7 @@ import dediff = require( './index' );
 	const a = new Float64Array( 1 );
 	const out = new Float64Array( 11 );
 
-	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1, a, 1, 0, out, 1 ); // $ExpectType Float64Array
+	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1, a, 1, 0, out, 1, 0 ); // $ExpectType Float64Array
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
@@ -364,7 +364,7 @@ import dediff = require( './index' );
 	dediff.ndarray( x.length, x, 1, 0, 1, p, ( x: number ): number => x, 0, 1, a, 1, 0, out, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided an eigth argument which is not a number...
+// The compiler throws an error if the `ndarray` method is provided an eighth argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 	const p = new Float64Array( 1 );
@@ -431,7 +431,7 @@ import dediff = require( './index' );
 	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1, a, ( x: number ): number => x, 0, out, 1, 0 ); // $ExpectError
 }
 
-// The compiler throws an error if the `ndarray` method is provided a twelveth argument which is not a number...
+// The compiler throws an error if the `ndarray` method is provided a twelfth argument which is not a number...
 {
 	const x = new Float64Array( 10 );
 	const p = new Float64Array( 1 );
@@ -509,15 +509,15 @@ import dediff = require( './index' );
 	dediff.ndarray( x.length ); // $ExpectError
 	dediff.ndarray( x.length, x ); // $ExpectError
 	dediff.ndarray( x.length, x, 1 ); // $ExpectError
-	dediff.ndarray( x.length, x, 1 ); // $ExpectError
+	dediff.ndarray( x.length, x, 1, 0 ); // $ExpectError
 	dediff.ndarray( x.length, x, 1, 0, 1 ); // $ExpectError
 	dediff.ndarray( x.length, x, 1, 0, 1, p ); // $ExpectError
 	dediff.ndarray( x.length, x, 1, 0, 1, p, 1 ); // $ExpectError
-	dediff.ndarray( x.length, x, 1, 0, 1, p, 1 ); // $ExpectError
+	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0 ); // $ExpectError
 	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1 ); // $ExpectError
 	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1, a ); // $ExpectError
 	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1, a, 1 ); // $ExpectError
-	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1, a, 1 ); // $ExpectError
+	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1, a, 1, 0 ); // $ExpectError
 	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1, a, 1, 0, out ); // $ExpectError
 	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1, a, 1, 0, out, 1 ); // $ExpectError
 	dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1, a, 1, 0, out, 1, 0, {} ); // $ExpectError

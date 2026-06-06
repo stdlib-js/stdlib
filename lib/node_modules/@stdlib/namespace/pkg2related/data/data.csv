@@ -3156,6 +3156,7 @@
 "@stdlib/constants/uint32/num-bytes","@stdlib/constants/int32/num-bytes,@stdlib/constants/uint16/num-bytes,@stdlib/constants/uint8/num-bytes"
 "@stdlib/array/uint32","@stdlib/array/buffer,@stdlib/array/float32,@stdlib/array/float64,@stdlib/array/int16,@stdlib/array/int32,@stdlib/array/int8,@stdlib/array/uint16,@stdlib/array/uint8,@stdlib/array/uint8c"
 "@stdlib/ndarray/vector/uint32","@stdlib/ndarray/vector/float64,@stdlib/ndarray/vector/float32,@stdlib/ndarray/vector/int16,@stdlib/ndarray/vector/int32,@stdlib/ndarray/vector/int8,@stdlib/ndarray/vector/uint16,@stdlib/ndarray/vector/uint8,@stdlib/ndarray/vector/uint8c,@stdlib/ndarray/vector/complex128,@stdlib/ndarray/vector/complex64,@stdlib/ndarray/vector/bool,@stdlib/ndarray/vector/ctor,@stdlib/ndarray/ctor"
+"@stdlib/number/uint64/ctor","@stdlib/number/ctor"
 "@stdlib/process/umask",""
 "@stdlib/string/uncapitalize","@stdlib/string/capitalize,@stdlib/string/lowercase"
 "@stdlib/object/uncapitalize-keys","@stdlib/object/capitalize-keys,@stdlib/object/lowercase-keys"

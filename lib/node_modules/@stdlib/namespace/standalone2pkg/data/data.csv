@@ -3156,6 +3156,7 @@
 "@stdlib/constants-uint32-num-bytes","@stdlib/constants/uint32/num-bytes"
 "@stdlib/array-uint32","@stdlib/array/uint32"
 "@stdlib/ndarray-vector-uint32","@stdlib/ndarray/vector/uint32"
+"@stdlib/number-uint64-ctor","@stdlib/number/uint64/ctor"
 "@stdlib/process-umask","@stdlib/process/umask"
 "@stdlib/string-uncapitalize","@stdlib/string/uncapitalize"
 "@stdlib/object-uncapitalize-keys","@stdlib/object/uncapitalize-keys"
