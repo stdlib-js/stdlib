@@ -29,7 +29,7 @@
 type accumulator = ( x?: number ) => number | null;
 
 /**
-* Returns an accumulator function which incrementally computes a moving sum , ignoring `NaN` values.
+* Returns an accumulator function which incrementally computes a moving sum, ignoring `NaN` values.
 *
 * ## Notes
 *
@@ -40,8 +40,6 @@ type accumulator = ( x?: number ) => number | null;
 * @returns accumulator function
 *
 * @example
-* var nanmsum = require( '@stdlib/stats/incr/nanmsum' );
-*
 * var accumulator = incrnanmsum( 3 );
 *
 * var v = accumulator();

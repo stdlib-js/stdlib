@@ -102,12 +102,12 @@ declare class Geometric {
 	logcdf( x: number ): number;
 
 	/**
-	* Evaluates the natural logarithm of the probability density function (PDF).
+	* Evaluates the natural logarithm of the probability mass function (PMF).
 	*
 	* @param x - input value
-	* @returns evaluated logPDF
+	* @returns evaluated logPMF
 	*/
-	logpdf( x: number ): number;
+	logpmf( x: number ): number;
 
 	/**
 	* Evaluates the moment-generating function (MGF).

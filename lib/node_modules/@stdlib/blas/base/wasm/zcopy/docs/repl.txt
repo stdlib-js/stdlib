@@ -475,7 +475,7 @@
 
     // Define "pointers" (i.e., byte offsets) into module memory:
     > var xptr = 0;
-    > var yptr = 40;
+    > var yptr = 80;
 
     // Write data to module memory:
     > var xbuf = {{alias:@stdlib/array/one-to}}( 10, 'float64' );
@@ -493,11 +493,8 @@
     > var view = {{alias:@stdlib/array/zeros}}( 5, 'complex128' );
     > mod.read( yptr, view );
 
-    > var v = view.get( 0 );
-    > var re = {{alias:@stdlib/complex/float64/real}}( v )
-    1.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( v )
-    2.0
+    > view
+    <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ]
 
 
 {{alias}}.Module.prototype.ndarray( N, xp, sx, ox, yp, sy, oy )
@@ -541,7 +538,7 @@
 
     // Define "pointers" (i.e., byte offsets) into module memory:
     > var xptr = 0;
-    > var yptr = 40;
+    > var yptr = 80;
 
     // Write data to module memory:
     > var xbuf = {{alias:@stdlib/array/one-to}}( 10, 'float64' );
@@ -559,11 +556,8 @@
     > var view = {{alias:@stdlib/array/zeros}}( 5, 'complex128' );
     > mod.read( yptr, view );
 
-    > var v = view.get( 0 );
-    > var re = {{alias:@stdlib/complex/float64/real}}( v )
-    1.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( v )
-    2.0
+    > view
+    <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ]
 
     See Also
     --------

@@ -148,7 +148,7 @@ for ( i = 1; i < 100; i++ ) {
 
 #### stdlib_base_nonfibonaccif( x )
 
-Computes the nth non-Fibonacci single-precision floating-point number.
+Computes the nth non-Fibonacci number as a single-precision floating-point number.
 
 ```c
 float out = stdlib_base_nonfibonaccif( 1.0f );

@@ -144,7 +144,7 @@ interface ExtendedOptions extends Options {
 * @param options.flatten - boolean indicating whether to automatically flatten generic array data sources (default: true)
 * @param options.ndmin - minimum number of dimensions (default: 0)
 * @param options.casting - casting rule used to determine what constitutes an acceptable cast (default: 'safe')
-* @param options.readonly - boolean indicating whether an array should be read-only
+* @param options.readonly - boolean indicating whether an array should be read-only (default: false)
 * @throws must provide valid options
 * @throws must provide either an array shape, data source, or both
 * @throws invalid cast
@@ -181,7 +181,7 @@ declare function array<T = unknown>( options: OptionsWithShape | OptionsWithBuff
 * @param options.flatten - boolean indicating whether to automatically flatten generic array data sources (default: true)
 * @param options.ndmin - minimum number of dimensions (default: 0)
 * @param options.casting - casting rule used to determine what constitutes an acceptable cast (default: 'safe')
-* @param options.readonly - boolean indicating whether an array should be read-only
+* @param options.readonly - boolean indicating whether an array should be read-only (default: false)
 * @throws must provide valid options
 * @throws must provide either an array shape, data source, or both
 * @throws invalid cast
