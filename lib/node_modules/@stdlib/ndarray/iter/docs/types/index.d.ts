@@ -188,7 +188,7 @@ interface Namespace {
 	*
 	* ## Notes
 	*
-	* -   The function throws an error if a provided broadcast-incompatible ndarrays.
+	* -   The function throws an error if provided broadcast-incompatible ndarrays.
 	* -   For input ndarrays supporting read-only views, the function returns *read-only* views of interleaved subarrays. As input ndarrays may be broadcasted, a view is typically *not* contiguous. As more than one element of a returned view may refer to the same memory location, writing to a view may affect multiple elements. If you need to write to a subarray, copy the subarray before attempting mutation.
 	*
 	* @param arr - input ndarrays

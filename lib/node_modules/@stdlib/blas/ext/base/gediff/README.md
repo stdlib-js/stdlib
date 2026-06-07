@@ -22,6 +22,12 @@ limitations under the License.
 
 > Calculate the differences between consecutive elements of a strided array.
 
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
