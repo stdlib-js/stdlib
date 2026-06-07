@@ -59,10 +59,6 @@ void API_SUFFIX(stdlib_strided_caxpby)( const CBLAS_INT N, const stdlib_complex6
 * @param offsetY  starting index for `Y`
 */
 void API_SUFFIX(stdlib_strided_caxpby_ndarray)( const CBLAS_INT N, const stdlib_complex64_t alpha, const stdlib_complex64_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const stdlib_complex64_t beta, stdlib_complex64_t *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
-	float alpha_re;
-	float alpha_im;
-	float beta_re;
-	float beta_im;
 	CBLAS_INT ix;
 	CBLAS_INT iy;
 	CBLAS_INT m;
@@ -71,20 +67,13 @@ void API_SUFFIX(stdlib_strided_caxpby_ndarray)( const CBLAS_INT N, const stdlib_
 	if ( N <= 0 ) {
 		return;
 	}
-
-	// Decompose the constants into their real and imaginary components:
-	alpha_re = stdlib_complex64_real( alpha );
-	alpha_im = stdlib_complex64_imag( alpha );
-	beta_re  = stdlib_complex64_real( beta );
-	beta_im  = stdlib_complex64_imag( beta );
-
 	// Fast path: when alpha = 0+0i, delegate to cscal (y = beta * y)
-	if ( alpha_re == 0.0f && alpha_im == 0.0f ) {
+	if ( stdlib_complex64_real( alpha ) == 0.0f && stdlib_complex64_imag( alpha ) == 0.0f ) {
 		API_SUFFIX(c_cscal_ndarray)( N, beta, Y, strideY, offsetY );
 		return;
 	}
 	// Fast path: when beta = 1+0i, delegate to caxpy (y = alpha * x + y)
-	if ( beta_re == 1.0f && beta_im == 0.0f ) {
+	if ( stdlib_complex64_real( beta ) == 1.0f && stdlib_complex64_imag( beta ) == 0.0f ) {
 		API_SUFFIX(c_caxpy_ndarray)( N, alpha, X, strideX, offsetX, Y, strideY, offsetY );
 		return;
 	}
