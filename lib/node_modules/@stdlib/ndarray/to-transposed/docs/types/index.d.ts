@@ -28,7 +28,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * ## Notes
 *
 * -   The function operates on a stack of matrices, transposing the last two dimensions of the input ndarray.
-* -   The input ndarray must have at least two dimensions.
+* -   The input ndarray must have two or more dimensions.
 *
 * @param x - input array
 * @returns output ndarray

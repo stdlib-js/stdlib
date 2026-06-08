@@ -153,7 +153,7 @@ interface Namespace {
 	*
 	* var mylogcdf = ns.logcdf.factory( 0.0, 10.0 );
 	* y = mylogcdf( 0.5 );
-	* // returns ~-1.938
+	* // returns ~-1.941
 	*
 	* y = mylogcdf( 8.0 );
 	* // returns ~-0.35
@@ -316,7 +316,7 @@ interface Namespace {
 	/**
 	* Arcsine distribution quantile function.
 	*
-	* @param x - input value
+	* @param p - input value
 	* @param a - minimum support
 	* @param b - maximum support
 	* @returns evaluated quantile function

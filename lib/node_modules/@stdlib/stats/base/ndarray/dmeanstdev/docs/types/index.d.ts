@@ -52,7 +52,7 @@ import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 * var v = dmeanstdev( [ x, out, correction ] );
 * // returns <ndarray>[ 2.5, ~1.2910 ]
 */
-declare function dmeanstdev<T extends typedndarray<number> = typedndarray<number>>( arrays: [ float64ndarray, float64ndarray, T ] ): float64ndarray;
+declare function dmeanstdev( arrays: [ float64ndarray, float64ndarray, typedndarray<number> ] ): float64ndarray;
 
 
 // EXPORTS //

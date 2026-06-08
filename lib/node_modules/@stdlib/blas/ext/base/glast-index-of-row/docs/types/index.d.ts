@@ -42,7 +42,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If the function is provided an empty matrix or if the function is unable to find a search vector, the function returns `-1` (i.e., an invalid index).
+	* -   If the function is provided an empty matrix or if the function is unable to find a matching row, the function returns `-1` (i.e., an invalid index).
 	* -   The `workspace` array is only applicable when an input matrix is stored in column-major order. When the matrix is stored in row-major order, the workspace array is ignored.
 	*
 	* @param order - storage layout
@@ -71,7 +71,7 @@ interface Routine {
 	*
 	* ## Notes
 	*
-	* -   If the function is provided an empty matrix or if the function is unable to find a search vector, the function returns `-1` (i.e., an invalid index).
+	* -   If the function is provided an empty matrix or if the function is unable to find a matching row, the function returns `-1` (i.e., an invalid index).
 	* -   The `workspace` array is only applicable when an input matrix is stored in column-major order. When the matrix is stored in row-major order, the workspace array is ignored.
 	*
 	* @param M - number of rows in `A`
@@ -104,7 +104,7 @@ interface Routine {
 *
 * ## Notes
 *
-* -   If the function is provided an empty matrix or if the function is unable to find a search vector, the function returns `-1` (i.e., an invalid index).
+* -   If the function is provided an empty matrix or if the function is unable to find a matching row, the function returns `-1` (i.e., an invalid index).
 * -   The `workspace` array is only applicable when an input matrix is stored in column-major order. When the matrix is stored in row-major order, the workspace array is ignored.
 *
 * @param order - storage layout
