@@ -20,11 +20,11 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/array';
 import { ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Broadcasts an ndarray to a specified shape if and only if the specified shape differs from the provided ndarray's shape.
+* Broadcasts an ndarray to a specified shape while keeping a list of specified dimensions unchanged if and only if the specified shape differs from the provided ndarray's shape.
 *
 * ## Notes
 *
@@ -53,7 +53,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var y = maybeBroadcastArrayExceptDimensions( x, [ 2, 2, 3 ], [ -2 ] );
 * // returns <ndarray>[ [ [ 1, 2, 3 ] ], [ [ 1, 2, 3 ] ] ]
 */
-declare function maybeBroadcastArrayExceptDimensions( arr: ndarray, shape: ArrayLike<number>, dims: ArrayLike<number> ): ndarray;
+declare function maybeBroadcastArrayExceptDimensions<T extends ndarray>( arr: T, shape: Collection<number>, dims: Collection<number> ): T;
 
 
 // EXPORTS //
