@@ -22,6 +22,12 @@ limitations under the License.
 
 > Find the index of the first element having the maximum absolute value for all elements in a one-dimensional double-precision floating-point ndarray.
 
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
 <section class="usage">
 
 ## Usage
