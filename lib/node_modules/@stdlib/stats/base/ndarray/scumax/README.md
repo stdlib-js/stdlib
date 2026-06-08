@@ -42,7 +42,6 @@ Computes the cumulative maximum value of a one-dimensional single-precision floa
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
 var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
@@ -52,13 +51,10 @@ var ybuf = new Float32Array( [ 0.0, 0.0, 0.0, 0.0 ] );
 var y = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
 
 var v = scumax( [ x, y ] );
-// returns <ndarray>
+// returns <ndarray>[ 1.0, 3.0, 4.0, 4.0 ]
 
 var bool = ( v === y );
 // returns true
-
-var arr = ndarray2array( v );
-// returns [ 1.0, 3.0, 4.0, 4.0 ]
 ```
 
 The function has the following parameters:
