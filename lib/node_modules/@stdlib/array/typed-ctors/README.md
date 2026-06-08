@@ -53,6 +53,7 @@ The function returns constructors for the following data types:
 
 -   `float32`: single-precision floating-point numbers.
 -   `float64`: double-precision floating-point numbers.
+-   `float16`: half-precision floating-point numbers.
 -   `complex64`: single-precision complex floating-point numbers.
 -   `complex128`: double-precision complex floating-point numbers.
 -   `bool`: boolean values.
