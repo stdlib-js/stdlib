@@ -62,7 +62,7 @@ interface LogCDF {
 	* var y = logcdf( NaN, 0.0, 1.0 );
 	* // returns NaN
 	*/
-	( x: number, mu: number, beta: number ): number;
+	( x: number, mu: number, s: number ): number;
 
 	/**
 	* Returns a function for evaluating the logarithm of the cumulative distribution function (CDF) for a logistic distribution with location parameter `mu` and scale parameter `s`.
@@ -80,7 +80,7 @@ interface LogCDF {
 	* y = mylogcdf( 4.0 );
 	* // returns ~-0.414
 	*/
-	factory( mu: number, beta: number ): Unary;
+	factory( mu: number, s: number ): Unary;
 }
 
 /**

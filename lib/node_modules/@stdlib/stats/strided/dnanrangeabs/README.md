@@ -20,7 +20,7 @@ limitations under the License.
 
 # dnanrangeabs
 
-> Compute the [range][range] of absolute values of a double-precision floating-point strided array, ignoring `NaN` values.
+> Calculate the [range][range] of absolute values of a double-precision floating-point strided array, ignoring `NaN` values.
 
 <section class="intro">
 

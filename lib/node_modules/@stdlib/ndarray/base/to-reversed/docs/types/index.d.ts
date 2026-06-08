@@ -30,6 +30,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 *
 * @example
 * var typedarray = require( '@stdlib/array/typed' );
+* var getShape = require( '@stdlib/ndarray/shape' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float64' );
@@ -40,13 +41,13 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 3, 2 ]
 *
 * var y = toReversed( x );
 * // returns <ndarray>[ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 3, 2 ]
 */
 declare function toReversed<T extends ndarray>( x: T ): T;

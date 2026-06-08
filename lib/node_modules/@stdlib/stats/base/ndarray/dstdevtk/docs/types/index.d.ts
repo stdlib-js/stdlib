@@ -49,7 +49,7 @@ import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 * var v = dstdevtk( [ x, correction ] );
 * // returns ~2.0817
 */
-declare function dstdevtk<T extends typedndarray<number> = typedndarray<number>>( arrays: [ float64ndarray, T ] ): number;
+declare function dstdevtk( arrays: [ float64ndarray, typedndarray<number> ] ): number;
 
 
 // EXPORTS //
