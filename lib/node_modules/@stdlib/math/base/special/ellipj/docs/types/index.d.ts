@@ -19,51 +19,40 @@
 // TypeScript Version: 4.1
 
 /**
-* Computes the Jacobi elliptic functions sn, cn, and dn.
+* Simultaneously computes the Jacobi elliptic functions sn, cn, and dn, and the Jacobi amplitude am.
 *
 * ## Notes
 *
-* -   The functions are evaluated using the [complete elliptic integral of the first kind](https://en.wikipedia.org/wiki/Elliptic_integral#Complete_elliptic_integral_of_the_first_kind) `K`.
+* -   Values are computed using the arithmetic-geometric mean from Abramowitz and Stegun 16.4.
+* -   When `m < 0` or `m > 1`, `sn`, `cn`, and `dn` are computed in terms of elliptic functions with `0 < m < 1` using the transformations from Abramowitz and Stegun 16.10 and 16.11, respectively. Thus, the domain of `m` is any real number. When `m < 0` or `m > 1`, `am` is not computed and is returned as `NaN`.
+* -   Values for small `m` (`m < SQRT_EPS`) are computed using the approximations of Abramowitz and Stegun 16.13.
+* -   Values for `m` near unity (`m > 1 - SQRT_EPS`) are computed using the approximations of Abramowitz and Stegun 16.15.
 *
-* -   The `x` argument is converted to double-precision floating-point format.
-*
-* -   The returned values are exact for `m` values where `|m| < 2**-24`.
-*
-* -   The functions return `NaN` for `m >= 1`.
-*
-* -   When `m < 1`, the following relations hold
-*
-*     ```tex
-*     \operatorname{sn}(x+x) = 2\operatorname{sn}(x)\operatorname{cn}(x)
-*     \operatorname{cn}(x+x) = 1 - 2\operatorname{sn}(x)^{2}
-*     \operatorname{dn}(x+x) = 1 - 2\operatorname{sn}(x)^{2}\operatorname{dn}(x)
-*     ```
-*
-* @param m - parameter
-* @param x - argument
-* @returns array containing four elements corresponding to the Jacobi elliptic functions and the Jacobi amplitude `am`.
+* @param u - input value
+* @param m - modulus `m`, equivalent to `k²`
+* @returns array containing the Jacobi elliptic functions sn, cn, and dn, and the Jacobi amplitude am
 *
 * @example
-* var v = ellipj( 0.5, 0 );
-* // returns [ ~0.479, ~0.878, 1 ]
+* var v = ellipj( 0.3, 0.5 );
+* // returns [ ~0.293, ~0.956, ~0.978, ~0.298 ]
 *
 * @example
-* var v = ellipj( 0.5, -1.0 );
-* // returns [ ~0.497, ~0.868, ~1.117 ]
+* var v = ellipj( 0.0, 0.0 );
+* // returns [ ~0.0, ~1.0, ~1.0, ~0.0 ]
 *
 * @example
-* var v = ellipj( Infinity, 0.5 );
-* // returns [ NaN, NaN, NaN ]
+* var v = ellipj( Infinity, 1.0 );
+* // returns [ ~1.0, ~0.0, ~0.0, ~1.571 ]
 *
 * @example
-* var v = ellipj( -Infinity );
-* // returns [ NaN, NaN, NaN ]
+* var v = ellipj( 0.0, -2.0 );
+* // returns [ ~0.0, ~1.0, ~1.0, NaN ]
 *
 * @example
-* var v = ellipj( NaN );
-* // returns [ NaN, NaN, NaN ]
+* var v = ellipj( NaN, NaN );
+* // returns [ NaN, NaN, NaN, NaN ]
 */
-declare function ellipj( m: number, x?: number ): Array<number>;
+declare function ellipj( u: number, m: number ): [ number, number, number, number ];
 
 
 // EXPORTS //

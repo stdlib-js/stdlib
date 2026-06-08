@@ -23,7 +23,7 @@
 import { float64ndarray, uint8ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Computes the minimum value of a double-precision floating-point ndarray according to a mask, ignoring `NaN` values.
+* Computes the minimum value of a one-dimensional double-precision floating-point ndarray according to a mask, ignoring `NaN` values.
 *
 * ## Notes
 *
