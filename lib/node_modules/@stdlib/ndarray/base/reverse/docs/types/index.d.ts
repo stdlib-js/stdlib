@@ -51,7 +51,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * sh = getShape( y );
 * // returns [ 3, 2 ]
 */
-declare function reverse<T extends ndarray>( x: T, writable: boolean ): T;
+declare function reverse<T extends ndarray = ndarray>( x: T, writable: boolean ): T;
 
 
 // EXPORTS //

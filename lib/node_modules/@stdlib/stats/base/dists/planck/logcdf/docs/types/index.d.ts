@@ -27,11 +27,11 @@
 type Unary = ( x: number ) => number;
 
 /**
-* Interface for the logarithm of the cumulative distribution function (CDF) of a Planck distribution.
+* Interface for the natural logarithm of the cumulative distribution function (CDF) of a Planck distribution.
 */
 interface LogCDF {
 	/**
-	* Evaluates the logarithm of the cumulative distribution function (CDF) for a Planck distribution with shape parameter `lambda` at a value `x`.
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Planck distribution with shape parameter `lambda` at a value `x`.
 	*
 	* ## Notes
 	*
@@ -69,7 +69,7 @@ interface LogCDF {
 	( x: number, lambda: number ): number;
 
 	/**
-	* Returns a function for evaluating the logarithm of the cumulative distribution function (CDF) for a Planck distribution with shape parameter `lambda`.
+	* Returns a function for evaluating the natural logarithm of the cumulative distribution function (CDF) for a Planck distribution with shape parameter `lambda`.
 	*
 	* @param lambda - shape parameter
 	* @returns logCDF

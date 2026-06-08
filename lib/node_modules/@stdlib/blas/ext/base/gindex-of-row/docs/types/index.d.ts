@@ -69,6 +69,7 @@ interface Routine {
 	* @param A - input matrix
 	* @param strideA1 - stride of the first dimension of `A`
 	* @param strideA2 - stride of the second dimension of `A`
+	* @param offsetA - starting index for `A`
 	* @param x - search vector
 	* @param strideX - stride length for `x`
 	* @param offsetX - starting index for `x`
