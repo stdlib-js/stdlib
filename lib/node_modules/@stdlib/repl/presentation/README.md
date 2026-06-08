@@ -912,7 +912,7 @@ function done() {
 
 #### Presentation.prototype.show()
 
-Shows a presentation slide (i.e., writes a rendered slide to the presentation [REPL][@stdlib/repl])
+Shows a presentation slide (i.e., writes a rendered slide to the presentation [REPL][@stdlib/repl]).
 
 <!-- eslint-disable stdlib/no-redeclare -->
 

@@ -86,11 +86,12 @@ static double tic( void ) {
 */
 static double benchmark1( int iterations, int len ) {
 	double elapsed;
-	double x[ len ];
+	double *x;
 	double v;
 	double t;
 	int i;
 
+	x = (double *) malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = i - (len/2);
 	}
@@ -108,6 +109,7 @@ static double benchmark1( int iterations, int len ) {
 	if ( v != v ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
 	return elapsed;
 }
 
@@ -120,11 +122,12 @@ static double benchmark1( int iterations, int len ) {
 */
 static double benchmark2( int iterations, int len ) {
 	double elapsed;
-	double x[ len ];
+	double *x;
 	double v;
 	double t;
 	int i;
 
+	x = (double *) malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = i - (len/2);
 	}
@@ -142,6 +145,7 @@ static double benchmark2( int iterations, int len ) {
 	if ( v != v ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
 	return elapsed;
 }
 

@@ -74,7 +74,7 @@ The function accepts the following arguments:
 -   If `k > 0`, the function rotates the matrix clockwise.
 -   If `k < 0`, the function rotates the matrix counterclockwise.
 -   The returned ndarray is a **view** of the input ndarray. Accordingly, writing to the original ndarray will **mutate** the returned ndarray and vice versa.
--   If provided an ndarray with fewer than two dimensions, the function does not perform rotation and simply returns a new view of the input ndarray.
+-   If provided an ndarray with fewer than two dimensions, the function does not perform a rotation and simply returns a new view of the input ndarray.
 
 </section>
 
