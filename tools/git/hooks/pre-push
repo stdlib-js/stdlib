@@ -59,8 +59,11 @@ GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
 
+# Resolve the location of the Git directory:
+git_dir=$(git rev-parse --absolute-git-dir)
+
 # Define the path to a directory for caching hook results:
-cache_dir="${root}/.git/hooks-cache"
+cache_dir="${git_dir}/hooks-cache"
 
 # Define the path to a file for storing hook results:
 cache_file="${cache_dir}/pre_push_report.yml"
