@@ -26,7 +26,7 @@
 #include "stdlib/constants/float64/pinf.h"
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for a logistic distribution with location parameter `mu` and scale parameter `s` at a value `x`.
+* Evaluates the natural logarithm of the probability density function (PDF) for a logistic distribution with location parameter `mu` and scale parameter `s` at a value `x`.
 *
 * @param x   input value
 * @param mu  location parameter
