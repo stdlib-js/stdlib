@@ -22,7 +22,7 @@
 * Evaluates the natural logarithm of the probability mass function (PMF) for a geometric distribution.
 *
 * @param x - input value
-* @returns evaluated PMF
+* @returns evaluated logPMF
 */
 type Unary = ( x: number ) => number;
 

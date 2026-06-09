@@ -30,7 +30,7 @@
 #   LOG_FILE       Log file.
 #
 
-# shellcheck disable=SC2034,SC2153,SC2317
+# shellcheck disable=SC2034,SC2086,SC2153,SC2317
 
 # Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
 set -o pipefail
@@ -141,7 +141,8 @@ main() {
 
 	# Run JS benchmarks:
 	if [ -n "${js_bench_files}" ]; then
-		make benchmark-javascript-files FILES="${js_bench_files}"
+		# Invoke make in batches to avoid "Argument list too long" errors:
+		printf '%s\n' ${js_bench_files} | xargs sh -c 'make benchmark-javascript-files FILES="$*"' _
 	else
 		echo 'No JavaScript benchmarks to run.' >&2
 	fi
@@ -172,7 +173,8 @@ main() {
 	fi
 
 	if [ -n "${c_bench_files}" ]; then
-		make benchmark-c-files FILES="${c_bench_files}"
+		# Invoke make in batches to avoid "Argument list too long" errors:
+		printf '%s\n' ${c_bench_files} | xargs sh -c 'make benchmark-c-files FILES="$*"' _
 	else
 		echo 'No C benchmarks to run.' >&2
 	fi
