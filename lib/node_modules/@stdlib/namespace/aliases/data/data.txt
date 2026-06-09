@@ -1059,7 +1059,7 @@ base.strided.dmap
 base.strided.dmap2
 base.strided.dmax
 base.strided.dmaxabs
-base.strided.dmaxabssorted
+base.strided.dmaxabsSorted
 base.strided.dmaxsorted
 base.strided.dmean
 base.strided.dmeankbn
