@@ -95,6 +95,9 @@ jobs:
           # File path to checkout to:
           path: './'
 
+          # Avoid persisting the access token in the local Git configuration, where build/lint tooling running against the untrusted PR checkout could read it (the final push below uses an explicit authenticated remote URL):
+          persist-credentials: false
+
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
@@ -133,14 +136,40 @@ jobs:
           files=$(echo "$files" | tr '\n' ' ' | sed 's/^ //;s/ $//')
           echo "files=${files}" >> $GITHUB_OUTPUT
 
+      # Checkout trusted workflow scripts from the base repository (so that we source helper script bodies from the base repository, never from the untrusted PR checkout). Performed after the build steps so that `make init`/`make install-node-modules` cannot remove the trusted checkout:
+      - name: 'Checkout trusted workflow scripts'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # Always use the base repository, never the PR's (potentially forked) repository:
+          repository: 'stdlib-js/stdlib'
+
+          # Pin to the base repository's default branch:
+          ref: 'develop'
+
+          # Checkout into a separate directory, outside the PR working tree:
+          path: './_trusted'
+
+          # Only fetch the workflow helper scripts:
+          sparse-checkout: |
+            .github/workflows/scripts
+          sparse-checkout-cone-mode: false
+
+          # Limit clone depth to the most recent commit:
+          fetch-depth: 1
+
+          # Avoid persisting any token in the local Git configuration:
+          persist-credentials: false
+        timeout-minutes: 10
+
       # Fix JavaScript lint errors:
       - name: 'Fix JavaScript lint errors'
         id: fix-lint-errors
         env:
           FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files="$FILES"
-          FIX=1 . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_javascript_files" "$files" || true
+          # Source the trusted fixer script from the base repository (not the untrusted PR checkout):
+          FIX=1 . "$GITHUB_WORKSPACE/_trusted/.github/workflows/scripts/common/lint_javascript_files" "$FILES" || true
 
       # Add missing trailing newlines:
       - name: 'Add missing trailing newlines'
@@ -148,16 +177,19 @@ jobs:
         env:
           FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files="$FILES"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_autofix/add_trailing_newlines" "$files"
+          # Source the trusted fixer script from the base repository (not the untrusted PR checkout):
+          . "$GITHUB_WORKSPACE/_trusted/.github/workflows/scripts/lint_autofix/add_trailing_newlines" "$FILES"
 
       # Remove related packages from README.md files:
       - name: 'Remove related packages from README.md files'
         env:
           FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files="$FILES"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_autofix/remove_related_packages" "$files"
+          # Source the trusted fixer script from the base repository (not the untrusted PR checkout):
+          . "$GITHUB_WORKSPACE/_trusted/.github/workflows/scripts/lint_autofix/remove_related_packages" "$FILES"
+
+          # Remove the trusted checkout so that it is not included in the subsequent commit:
+          rm -rf "$GITHUB_WORKSPACE/_trusted"
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
