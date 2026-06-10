@@ -89,11 +89,11 @@ interface LogCDF {
 	( x: number, a: number, b: number ): number;
 
 	/**
-	* Returns a function for evaluating the cumulative distribution function (CDF) for a Kumaraswamy's double bounded distribution with first shape parameter `a` and second shape parameter `b`.
+	* Returns a function for evaluating the natural logarithm of the cumulative distribution function (CDF) for a Kumaraswamy's double bounded distribution with first shape parameter `a` and second shape parameter `b`.
 	*
 	* @param a - first shape parameter
 	* @param b - second shape parameter
-	* @returns CDF
+	* @returns logCDF
 	*
 	* @example
 	* var mylogcdf = logcdf.factory( 0.5, 0.5 );

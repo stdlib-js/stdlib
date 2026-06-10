@@ -1,0 +1,33 @@
+
+{{alias}}()
+    Returns an accumulator function which incrementally computes the mean
+    squared error (MSE), ignoring `NaN` values.
+
+    If provided input values, the accumulator function returns an updated mean
+    squared error. If not provided input values, the accumulator function
+    returns the current mean squared error.
+
+    If either input value is `NaN`, the input value is ignored.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var m = accumulator()
+    null
+    > m = accumulator( 2.0, 3.0 )
+    1.0
+    > m = accumulator( NaN, 2.0 )
+    1.0
+    > m = accumulator( -5.0, 2.0 )
+    25.0
+    > m = accumulator()
+    25.0
+
+    See Also
+    --------
+

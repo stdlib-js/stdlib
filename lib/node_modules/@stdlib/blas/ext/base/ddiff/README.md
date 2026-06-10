@@ -68,7 +68,7 @@ The function has the following parameters:
 -   **workspace**: workspace [`Float64Array`][@stdlib/array/float64]. Must have `N + N1 + N2 - 1` elements.
 -   **strideW**: stride length for `workspace`.
 
-The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to differences of every other element:
+The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to compute differences of every other element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );

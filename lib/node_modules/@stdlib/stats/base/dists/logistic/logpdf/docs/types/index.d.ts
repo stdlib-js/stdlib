@@ -75,7 +75,7 @@ interface LogPDF {
 	* var y = logpdf( 8.0, 8.0, 0.0 );
 	* // returns Infinity
 	*/
-	( x: number, mu: number, beta: number ): number;
+	( x: number, mu: number, s: number ): number;
 
 	/**
 	* Returns a function for evaluating the logarithm of the probability density function (PDF) for a logistic distribution.
@@ -92,7 +92,7 @@ interface LogPDF {
 	* y = mylogpdf( 5.0 );
 	* // returns ~-3.351
 	*/
-	factory( mu: number, beta: number ): Unary;
+	factory( mu: number, s: number ): Unary;
 }
 
 /**
