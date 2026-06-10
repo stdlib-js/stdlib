@@ -129,8 +129,10 @@ jobs:
       # Exit early if non-package directories are changed:
       - name: 'Exit early if non-package directories are changed'
         id: check-changed
+        env:
+          DIRECTORIES: ${{ steps.changed-directories.outputs.directories }}
         run: |
-          directories="${{ steps.changed-directories.outputs.directories }}"
+          directories="$DIRECTORIES"
           skip="false"
           for directory in $directories; do
             if [[ "$directory" != "lib/node_modules/@stdlib"* ]]; then
@@ -149,8 +151,9 @@ jobs:
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_REF: ${{ github.ref }}
           COVERAGE_BASE_URL: 'https://coverage.stdlib.io/pr-${{ github.event.pull_request.number }}'
+          DIRECTORIES: ${{ steps.changed-directories.outputs.directories }}
         run: |
-          directories="${{ steps.changed-directories.outputs.directories }}"
+          directories="$DIRECTORIES"
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_tests_coverage/run" "$directories"
         timeout-minutes: 30
 
@@ -158,8 +161,10 @@ jobs:
       - name: 'Create final coverage report'
         id: create-report
         if: steps.check-changed.outputs.skip == 'false'
+        env:
+          TABLE: ${{ steps.extract-coverage.outputs.table }}
         run: |
-          table="${{ steps.extract-coverage.outputs.table }}"
+          table="$TABLE"
           if [ -z "$table" ]; then
             report="## Coverage Report\n\nNo coverage information available."
           else
@@ -172,12 +177,13 @@ jobs:
       # Save PR metadata for the publish workflow:
       - name: 'Save PR metadata'
         if: steps.check-changed.outputs.skip == 'false'
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPORT: ${{ steps.create-report.outputs.report }}
         run: |
           mkdir -p pr-metadata
-          echo "${{ github.event.pull_request.number }}" > pr-metadata/pr_number
-          cat > pr-metadata/report <<'EOF'
-          ${{ steps.create-report.outputs.report }}
-          EOF
+          printf '%s\n' "$PR_NUMBER" > pr-metadata/pr_number
+          printf '%s\n' "$REPORT" > pr-metadata/report
 
       # Upload PR metadata as artifact:
       - name: 'Upload PR metadata'
