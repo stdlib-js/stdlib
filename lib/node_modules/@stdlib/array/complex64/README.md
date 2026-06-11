@@ -282,14 +282,10 @@ The iterator returned by an iterable must return either a complex number or an a
 ```javascript
 var ITERATOR_SYMBOL = require( '@stdlib/symbol/iterator' );
 var Float32Array = require( '@stdlib/array/float32' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var iter;
 var arr;
 var len;
-var re;
-var im;
 var z;
 
 // Define a function which returns an iterator protocol-compliant object...
@@ -331,13 +327,7 @@ if ( ITERATOR_SYMBOL === null ) {
     // returns 2
 
     z = arr.get( 0 );
-    // returns <Complex64>
-
-    re = realf( z );
-    // returns 1.0
-
-    im = imagf( z );
-    // returns -1.0
+    // returns <Complex64>[ 1.0, -1.0 ]
 }
 ```
 
@@ -363,13 +353,7 @@ var len = arr.length;
 // returns 1
 
 var z = arr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 2.0
-
-var im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 2.0, -2.0 ]
 ```
 
 or an array-like object containing real and imaginary components
@@ -403,22 +387,10 @@ var len = arr.length;
 // returns 2
 
 var z = arr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 2.0
-
-var im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 2.0, -2.0 ]
 
 z = arr.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 4.0
-
-im = imagf( z );
-// returns -4.0
+// returns <Complex64>[ 4.0, -4.0 ]
 ```
 
 If `src` is an array-like object containing interleaved real and imaginary components, the callback is invoked for each component and should return the transformed component value.
@@ -426,8 +398,6 @@ If `src` is an array-like object containing interleaved real and imaginary compo
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 function map( v ) {
     return v * 2.0;
@@ -444,13 +414,7 @@ var len = arr.length;
 // returns 1
 
 var z = arr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 2.0
-
-var im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 2.0, -2.0 ]
 ```
 
 A callback function is provided two arguments:
@@ -521,9 +485,6 @@ len = arr.length;
 Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer positions.
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
-
 var arr = new Complex64Array( 10 );
 
 // Set the first, second, and last elements:
@@ -533,23 +494,11 @@ arr.set( [ 9.0, -9.0 ], 9 );
 
 // Get the first element:
 var z = arr.at( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns -1.0
+// returns <Complex64>[ 1.0, -1.0 ]
 
 // Get the last element:
 z = arr.at( -1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 9.0
-
-im = imagf( z );
-// returns -9.0
+// returns <Complex64>[ 9.0, -9.0 ]
 ```
 
 If provided an out-of-bounds index, the method returns `undefined`.
@@ -572,8 +521,6 @@ Copies a sequence of elements within the array starting at `start` and ending at
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( 4 );
 
@@ -585,54 +532,28 @@ arr.set( new Complex64( 4.0, -4.0 ), 3 );
 
 // Get the first array element:
 var z = arr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns -1.0
+// returns <Complex64>[ 1.0, -1.0 ]
 
 // Get the second array element:
 z = arr.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 2.0
-
-im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 2.0, -2.0 ]
 
 // Copy the last two elements to the first two elements:
 arr.copyWithin( 0, 2 );
 
 // Get the first array element:
 z = arr.get( 0 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 3.0
-
-im = imagf( z );
-// returns -3.0
+// returns <Complex64>[ 3.0, -3.0 ]
 
 // Get the second array element:
 z = arr.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 4.0
-
-im = imagf( z );
-// returns -4.0
+// returns <Complex64>[ 4.0, -4.0 ]
 ```
 
 By default, `end` equals the number of array elements (i.e., one more than the last array index). To limit the sequence length, provide an `end` argument.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( 4 );
 
@@ -644,54 +565,28 @@ arr.set( new Complex64( 4.0, -4.0 ), 3 );
 
 // Get the third array element:
 var z = arr.get( 2 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns -3.0
+// returns <Complex64>[ 3.0, -3.0 ]
 
 // Get the last array element:
 z = arr.get( 3 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 4.0
-
-im = imagf( z );
-// returns -4.0
+// returns <Complex64>[ 4.0, -4.0 ]
 
 // Copy the first two elements to the last two elements:
 arr.copyWithin( 2, 0, 2 );
 
 // Get the third array element:
 z = arr.get( 2 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 1.0
-
-im = imagf( z );
-// returns -1.0
+// returns <Complex64>[ 1.0, -1.0 ]
 
 // Get the last array element:
 z = arr.get( 3 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 2.0
-
-im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 2.0, -2.0 ]
 ```
 
 When a `target`, `start`, and/or `end` index is negative, the respective index is determined relative to the last array element. The following example achieves the same behavior as the previous example:
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( 4 );
 
@@ -703,46 +598,22 @@ arr.set( new Complex64( 4.0, -4.0 ), 3 );
 
 // Get the third array element:
 var z = arr.get( 2 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns -3.0
+// returns <Complex64>[ 3.0, -3.0 ]
 
 // Get the last array element:
 z = arr.get( 3 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 4.0
-
-im = imagf( z );
-// returns -4.0
+// returns <Complex64>[ 4.0, -4.0 ]
 
 // Copy the first two elements to the last two elements using negative indices:
 arr.copyWithin( -2, -4, -2 );
 
 // Get the third array element:
 z = arr.get( 2 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 1.0
-
-im = imagf( z );
-// returns -1.0
+// returns <Complex64>[ 1.0, -1.0 ]
 
 // Get the last array element:
 z = arr.get( 3 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 2.0
-
-im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 2.0, -2.0 ]
 ```
 
 <a name="method-entries"></a>
@@ -753,8 +624,6 @@ Returns an iterator for iterating over array key-value pairs.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = [
     new Complex64( 1.0, -1.0 ),
@@ -768,31 +637,13 @@ var it = arr.entries();
 
 // Iterate over the key-value pairs...
 var v = it.next().value;
-// returns [ 0, <Complex64> ]
-
-var re = realf( v[ 1 ] );
-// returns 1.0
-
-var im = imagf( v[ 1 ] );
-// returns -1.0
+// returns [ 0, <Complex64>[ 1.0, -1.0 ] ]
 
 v = it.next().value;
-// returns [ 1, <Complex64> ]
-
-re = realf( v[ 1 ] );
-// returns 2.0
-
-im = imagf( v[ 1 ] );
-// returns -2.0
+// returns [ 1, <Complex64>[ 2.0, -2.0 ] ]
 
 v = it.next().value;
-// returns [ 2, <Complex64> ]
-
-re = realf( v[ 1 ] );
-// returns 3.0
-
-im = imagf( v[ 1 ] );
-// returns -3.0
+// returns [ 2, <Complex64>[ 3.0, -3.0 ] ]
 
 var bool = it.next().done;
 // returns true
@@ -869,8 +720,6 @@ Returns a modified typed array filled with a fill value.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( 3 );
 
@@ -878,72 +727,34 @@ var arr = new Complex64Array( 3 );
 arr.fill( new Complex64( 1.0, 1.0 ) );
 
 var z = arr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns 1.0
+// returns <Complex64>[ 1.0, 1.0 ]
 
 z = arr.get( 2 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 1.0
-
-im = imagf( z );
-// returns 1.0
+// returns <Complex64>[ 1.0, 1.0 ]
 
 // Fill all elements starting from the second element:
 arr.fill( new Complex64( 2.0, 2.0 ), 1 );
 
 z = arr.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 2.0
-
-im = imagf( z );
-// returns 2.0
+// returns <Complex64>[ 2.0, 2.0 ]
 
 z = arr.get( 2 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 2.0
-
-im = imagf( z );
-// returns 2.0
+// returns <Complex64>[ 2.0, 2.0 ]
 
 // Fill all elements from first element until the second-to-last element:
 arr.fill( new Complex64( 3.0, 3.0 ), 0, 2 );
 
 z = arr.get( 0 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 3.0
-
-im = imagf( z );
-// returns 3.0
+// returns <Complex64>[ 3.0, 3.0 ]
 
 z = arr.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 3.0
-
-im = imagf( z );
-// returns 3.0
+// returns <Complex64>[ 3.0, 3.0 ]
 ```
 
 When a `start` and/or `end` index is negative, the respective index is determined relative to the last array element.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( 3 );
 
@@ -951,22 +762,10 @@ var arr = new Complex64Array( 3 );
 arr.fill( new Complex64( 1.0, 1.0 ), 0, -1 );
 
 var z = arr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns 1.0
+// returns <Complex64>[ 1.0, 1.0 ]
 
 z = arr.get( arr.length - 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 0.0
-
-im = imagf( z );
-// returns 0.0
+// returns <Complex64>[ 0.0, 0.0 ]
 ```
 
 <a name="method-filter"></a>
@@ -997,13 +796,7 @@ var len = out.length;
 // returns 1
 
 var z = out.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 2.0
-
-var im = imagf( z );
-// returns 2.0
+// returns <Complex64>[ 2.0, 2.0 ]
 ```
 
 The `predicate` function is provided three arguments:
@@ -1067,13 +860,7 @@ arr.set( [ 2.0, 2.0 ], 1 );
 arr.set( [ 3.0, 3.0 ], 2 );
 
 var z = arr.find( predicate );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns 1.0
+// returns <Complex64>[ 1.0, 1.0 ]
 ```
 
 The `predicate` function is provided three arguments:
@@ -1105,13 +892,7 @@ arr.set( [ 2.0, 2.0 ], 1 );
 arr.set( [ 3.0, 3.0 ], 2 );
 
 var z = arr.find( predicate, context );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 2.0
-
-var im = imagf( z );
-// returns 2.0
+// returns <Complex64>[ 2.0, 2.0 ]
 
 var count = context.count;
 // returns 2
@@ -1200,13 +981,7 @@ arr.set( [ 2.0, 2.0 ], 1 );
 arr.set( [ 3.0, 3.0 ], 2 );
 
 var z = arr.findLast( predicate );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns 3.0
+// returns <Complex64>[ 3.0, 3.0 ]
 ```
 
 The `predicate` function is provided three arguments:
@@ -1238,13 +1013,7 @@ arr.set( [ 2.0, 2.0 ], 1 );
 arr.set( [ 3.0, -3.0 ], 2 );
 
 var z = arr.findLast( predicate, context );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 2.0
-
-var im = imagf( z );
-// returns 2.0
+// returns <Complex64>[ 2.0, 2.0 ]
 
 var count = context.count;
 // returns 2
@@ -1383,9 +1152,6 @@ var count = context.count;
 Returns an array element located at a nonnegative integer position (index) `i`.
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
-
 var arr = new Complex64Array( 10 );
 
 // Set the first element:
@@ -1393,13 +1159,7 @@ arr.set( [ 1.0, -1.0 ], 0 );
 
 // Get the first element:
 var z = arr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns -1.0
+// returns <Complex64>[ 1.0, -1.0 ]
 ```
 
 If provided an out-of-bounds index, the method returns `undefined`.
@@ -1611,13 +1371,7 @@ var out = arr.map( scale );
 // returns <Complex64Array>
 
 var z = out.get( 0 );
-// returns <complex64>
-
-var re = realf( z );
-// returns 2.0
-
-var im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 2.0, -2.0 ]
 ```
 
 The callback function is provided three arguments:
@@ -1663,8 +1417,6 @@ var count = context.count;
 Applies a provided callback function to each element of the array, in order, passing in the return value from the calculation on the preceding element and returning the accumulated result upon completion.
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 var caddf = require( '@stdlib/complex/float32/base/add' );
 
 var arr = new Complex64Array( 3 );
@@ -1674,13 +1426,7 @@ arr.set( [ 2.0, 2.0 ], 1 );
 arr.set( [ 3.0, 3.0 ], 2 );
 
 var z = arr.reduce( caddf );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 6.0
-
-var im = imagf( z );
-// returns 6.0
+// returns <Complex64>[ 6.0, 6.0 ]
 ```
 
 The reducer function is provided four arguments:
@@ -1717,8 +1463,6 @@ var z = arr.reduce( reducer, 0.0 );
 Applies a provided callback function to each element of the array, in reverse order, passing in the return value from the calculation on the following element and returning the accumulated result upon completion.
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 var caddf = require( '@stdlib/complex/float32/base/add' );
 
 var arr = new Complex64Array( 3 );
@@ -1728,13 +1472,7 @@ arr.set( [ 2.0, 2.0 ], 1 );
 arr.set( [ 3.0, 3.0 ], 2 );
 
 var z = arr.reduceRight( caddf );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 6.0
-
-var im = imagf( z );
-// returns 6.0
+// returns <Complex64>[ 6.0, 6.0 ]
 ```
 
 The reducer function is provided four arguments:
@@ -1771,9 +1509,6 @@ var z = arr.reduceRight( reducer, 0.0 );
 Reverses an array in-place.
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
-
 var arr = new Complex64Array( 3 );
 
 arr.set( [ 1.0, 1.0 ], 0 );
@@ -1781,34 +1516,7 @@ arr.set( [ 2.0, 2.0 ], 1 );
 arr.set( [ 3.0, 3.0 ], 2 );
 
 var out = arr.reverse();
-// returns <Complex64Array>
-
-var z = out.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns 3.0
-
-z = out.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 2.0
-
-im = imagf( z );
-// returns 2.0
-
-z = out.get( 2 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 1.0
-
-im = imagf( z );
-// returns 1.0
+// returns <Complex64Array>[ 3.0, 3.0, 2.0, 2.0, 1.0, 1.0 ]
 ```
 
 <a name="method-set"></a>
@@ -1819,74 +1527,44 @@ Sets one or more array elements.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( 10 );
 
 // Get the first element:
 var z = arr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 0.0
-
-var im = imagf( z );
-// returns 0.0
+// returns <Complex64>[ 0.0, 0.0 ]
 
 // Set the first element:
 arr.set( new Complex64( 1.0, -1.0 ) );
 
 // Get the first element:
 z = arr.get( 0 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 1.0
-
-im = imagf( z );
-// returns -1.0
+// returns <Complex64>[ 1.0, -1.0 ]
 ```
 
 By default, the method sets array elements starting at position (index) `i = 0`. To set elements starting elsewhere in the array, provide an index argument `i`.
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( 10 );
 
 // Get the fifth element:
 var z = arr.get( 4 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 0.0
-
-var im = imagf( z );
-// returns 0.0
+// returns <Complex64>[ 0.0, 0.0 ]
 
 // Set the fifth element:
 arr.set( new Complex64( 1.0, -1.0 ), 4 );
 
 // Get the fifth element:
 z = arr.get( 4 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 1.0
-
-im = imagf( z );
-// returns -1.0
+// returns <Complex64>[ 1.0, -1.0 ]
 ```
 
 In addition to providing a complex number, to set one or more array elements, provide an array-like object containing either complex numbers
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( 10 );
 
@@ -1902,21 +1580,13 @@ arr.set( buf, 4 );
 
 // Get the sixth element:
 var z = arr.get( 5 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 2.0
-
-var im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 2.0, -2.0 ]
 ```
 
 or interleaved real and imaginary components
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 
 var arr = new Complex64Array( 10 );
 
@@ -1928,13 +1598,7 @@ arr.set( buf, 4 );
 
 // Get the sixth element:
 var z = arr.get( 5 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 2.0
-
-var im = imagf( z );
-// returns -2.0
+// returns <Complex64>[ 2.0, -2.0 ]
 ```
 
 A few notes:
@@ -1950,91 +1614,37 @@ A few notes:
 Copies a portion of a typed array to a new typed array.
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
-
 var arr = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 var out = arr.slice();
-// returns <Complex64Array>
+// returns <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 
 var len = out.length;
 // returns 4
-
-var z = out.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns 2.0
-
-z = out.get( len-1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 7.0
-
-im = imagf( z );
-// returns 8.0
 ```
 
 By default, the method returns a typed array beginning with the first array element. To specify an alternative array index at which to begin, provide a `start` index (inclusive).
 
 ```javascript
-var imagf = require( '@stdlib/complex/float32/imag' );
-var realf = require( '@stdlib/complex/float32/real' );
-
 var arr = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 var out = arr.slice( 1 );
-// returns <Complex64Array>
+// returns <Complex64Array>[ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 
 var len = out.length;
 // returns 3
-
-var z = out.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns 4.0
 ```
 
 By default, the method returns a typed array which includes all array elements after `start`. To limit the number of array elements after `start`, provide an `end` index (exclusive).
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
-
 var arr = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 var out = arr.slice( 1, -1 );
-// returns <Complex64Array>
+// returns <Complex64Array>[ 3.0, 4.0, 5.0, 6.0 ]
 
 var len = out.length;
 // returns 2
-
-var z = out.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns 4.0
-
-z = out.get( len-1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 5.0
-
-im = imagf( z );
-// returns 6.0
 ```
 
 <a name="method-some"></a>
@@ -2139,34 +1749,7 @@ arr.set( [ 1.0, -1.0 ], 1 );
 arr.set( [ 2.0, -2.0 ], 2 );
 
 var out = arr.sort( compare );
-// returns <Complex64Array>
-
-var z = out.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns -1.0
-
-z = out.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 2.0
-
-im = imagf( z );
-// returns -2.0
-
-z = out.get( 2 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 3.0
-
-im = imagf( z );
-// returns -3.0
+// returns <Complex64Array>[ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0 ]
 ```
 
 The `compareFcn` determines the order of the elements. The function is called with the following arguments:
@@ -2189,91 +1772,37 @@ In contrast to real numbers, one cannot define a default order relation which is
 Creates a new typed array view over the same underlying [`ArrayBuffer`][@stdlib/array/buffer] and with the same underlying data type as the host array.
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
-
 var arr = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 var subarr = arr.subarray();
-// returns <Complex64Array>
+// returns <Complex64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 
 var len = subarr.length;
 // returns 4
-
-var z = subarr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns 2.0
-
-z = subarr.get( len-1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 7.0
-
-im = imagf( z );
-// returns 8.0
 ```
 
 By default, the method creates a typed array view beginning with the first array element. To specify an alternative array index at which to begin, provide a `begin` index (inclusive).
 
 ```javascript
-var imagf = require( '@stdlib/complex/float32/imag' );
-var realf = require( '@stdlib/complex/float32/real' );
-
 var arr = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 var subarr = arr.subarray( 1 );
-// returns <Complex64Array>
+// returns <Complex64Array>[ 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ]
 
 var len = subarr.length;
 // returns 3
-
-var z = subarr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns 4.0
 ```
 
 By default, the method creates a typed array view which includes all array elements after `begin`. To limit the number of array elements after `begin`, provide an `end` index (exclusive).
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
-
 var arr = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 
 var subarr = arr.subarray( 1, -1 );
-// returns <Complex64Array>
+// returns <Complex64Array>[ 3.0, 4.0, 5.0, 6.0 ]
 
 var len = subarr.length;
 // returns 2
-
-var z = subarr.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns 4.0
-
-z = subarr.get( len-1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 5.0
-
-im = imagf( z );
-// returns 6.0
 ```
 
 <a name="method-to-locale-string"></a>
@@ -2304,9 +1833,6 @@ The method supports the following arguments:
 Returns a new typed array containing the elements in reversed order.
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
-
 var arr = new Complex64Array( 3 );
 
 arr.set( [ 1.0, 1.0 ], 0 );
@@ -2314,34 +1840,7 @@ arr.set( [ 2.0, 2.0 ], 1 );
 arr.set( [ 3.0, 3.0 ], 2 );
 
 var out = arr.toReversed();
-// returns <Complex64Array>
-
-var z = out.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 3.0
-
-var im = imagf( z );
-// returns 3.0
-
-z = out.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 2.0
-
-im = imagf( z );
-// returns 2.0
-
-z = out.get( 2 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 1.0
-
-im = imagf( z );
-// returns 1.0
+// returns <Complex64Array>[ 3.0, 3.0, 2.0, 2.0, 1.0, 1.0 ]
 ```
 
 <a name="method-to-sorted"></a>
@@ -2385,34 +1884,7 @@ arr.set( [ 1.0, -1.0 ], 1 );
 arr.set( [ 2.0, -2.0 ], 2 );
 
 var out = arr.toSorted( compare );
-// returns <Complex64Array>
-
-var z = out.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 1.0
-
-var im = imagf( z );
-// returns -1.0
-
-z = out.get( 1 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 2.0
-
-im = imagf( z );
-// returns -2.0
-
-z = out.get( 2 );
-// returns <Complex64>
-
-re = realf( z );
-// returns 3.0
-
-im = imagf( z );
-// returns -3.0
+// returns <Complex64Array>[ 1.0, -1.0, 2.0, -2.0, 3.0, -3.0 ]
 ```
 
 The `compareFcn` determines the order of the elements. The function is called with the following arguments:
@@ -2452,8 +1924,6 @@ var str = arr.toString();
 Returns an iterator for iterating over each value in a typed array.
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 var arr = new Complex64Array( 2 );
 
 arr.set( [ 1.0, -1.0 ], 0 );
@@ -2462,22 +1932,10 @@ arr.set( [ 2.0, -2.0 ], 1 );
 var iter = arr.values();
 
 var v = iter.next().value;
-// returns <Complex64>
-
-var re = realf( v );
-// returns 1.0
-
-var im = imagf( v );
-// returns -1.0
+// returns <Complex64>[ 1.0, -1.0 ]
 
 v = iter.next().value;
-// returns <Complex64>
-
-re = realf( v );
-// returns 2.0
-
-im = imagf( v );
-// returns -2.0
+// returns <Complex64>[ 2.0, -2.0 ]
 
 var bool = iter.next().done;
 // returns true
@@ -2495,27 +1953,16 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 Returns a new typed array with the element at a provided index replaced with a provided value.
 
 ```javascript
-var realf = require( '@stdlib/complex/float32/real' );
-var imagf = require( '@stdlib/complex/float32/imag' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
 
 var arr = new Complex64Array( 3 );
 
 arr.set( [ 1.0, 1.0 ], 0 );
 arr.set( [ 2.0, 2.0 ], 1 );
-arr.set( [ 3.0, 3.0 ], 1 );
+arr.set( [ 3.0, 3.0 ], 2 );
 
 var out = arr.with( 0, new Complex64( 4.0, 4.0 ) );
-// returns <Complex64Array>
-
-var z = out.get( 0 );
-// returns <Complex64>
-
-var re = realf( z );
-// returns 4.0
-
-var im = imagf( z );
-// returns 4.0
+// returns <Complex64Array>[ 4.0, 4.0, 2.0, 2.0, 3.0, 3.0 ]
 ```
 
 </section>

@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for a raised cosine distribution.
+* Evaluates the natural logarithm of the probability density function (PDF) for a raised cosine distribution.
 *
 * @param x - input value
 * @returns evaluated logPDF
@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogPDF {
 	/**
-	* Evaluates the logarithm of the probability density function (PDF) for a raised cosine distribution with location parameter `mu` and scale parameter `s` at a value `x`.
+	* Evaluates the natural logarithm of the probability density function (PDF) for a raised cosine distribution with location parameter `mu` and scale parameter `s` at a value `x`.
 	*
 	* ## Notes
 	*
@@ -78,7 +78,7 @@ interface LogPDF {
 	( x: number, mu: number, s: number ): number;
 
 	/**
-	* Returns a function for evaluating the logarithm of the probability density function (PDF) for a raised cosine distribution.
+	* Returns a function for evaluating the natural logarithm of the probability density function (PDF) for a raised cosine distribution.
 	*
 	* @param mu - location parameter
 	* @param s - scale parameter
@@ -96,7 +96,7 @@ interface LogPDF {
 }
 
 /**
-* Raised cosine distribution logarithm of probability density function (PDF).
+* Raised cosine distribution natural logarithm of probability density function (PDF).
 *
 * @param x - input value
 * @param mu - location parameter

@@ -18,36 +18,36 @@
 
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 
-import Lognormal = require( './index' );
+import LogNormal = require( './index' );
 
 
 // TESTS //
 
 // The function returns a distribution instance...
 {
-	new Lognormal(); // $ExpectType Lognormal
-	new Lognormal( 1.0, 2.0 ); // $ExpectType Lognormal
+	new LogNormal(); // $ExpectType LogNormal
+	new LogNormal( 1.0, 2.0 ); // $ExpectType LogNormal
 }
 
 // The compiler throws an error if the function is provided values other than two numbers...
 {
-	new Lognormal( true, 2.0 ); // $ExpectError
-	new Lognormal( false, 2.0 ); // $ExpectError
-	new Lognormal( '5', 2.0 ); // $ExpectError
-	new Lognormal( [], 2.0 ); // $ExpectError
-	new Lognormal( {}, 2.0 ); // $ExpectError
-	new Lognormal( ( x: number ): number => x, 2.0 ); // $ExpectError
+	new LogNormal( true, 2.0 ); // $ExpectError
+	new LogNormal( false, 2.0 ); // $ExpectError
+	new LogNormal( '5', 2.0 ); // $ExpectError
+	new LogNormal( [], 2.0 ); // $ExpectError
+	new LogNormal( {}, 2.0 ); // $ExpectError
+	new LogNormal( ( x: number ): number => x, 2.0 ); // $ExpectError
 
-	new Lognormal( 1.0, true ); // $ExpectError
-	new Lognormal( 1.0, false ); // $ExpectError
-	new Lognormal( 1.0, '5' ); // $ExpectError
-	new Lognormal( 1.0, [] ); // $ExpectError
-	new Lognormal( 1.0, {} ); // $ExpectError
-	new Lognormal( 1.0, ( x: number ): number => x ); // $ExpectError
+	new LogNormal( 1.0, true ); // $ExpectError
+	new LogNormal( 1.0, false ); // $ExpectError
+	new LogNormal( 1.0, '5' ); // $ExpectError
+	new LogNormal( 1.0, [] ); // $ExpectError
+	new LogNormal( 1.0, {} ); // $ExpectError
+	new LogNormal( 1.0, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	new Lognormal( 1.0 ); // $ExpectError
-	new Lognormal( 1.0, 1.0, 2.0 ); // $ExpectError
+	new LogNormal( 1.0 ); // $ExpectError
+	new LogNormal( 1.0, 1.0, 2.0 ); // $ExpectError
 }

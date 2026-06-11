@@ -67,13 +67,13 @@ double API_SUFFIX(stdlib_strided_dminkowski_ndarray)( const CBLAS_INT N, const d
 		return 0.0 / 0.0; // NaN
 	}
 	if ( p == 1.0 ) {
-		return stdlib_strided_dcityblock_ndarray( N, X, strideX, offsetX, Y, strideY, offsetY );
+		return API_SUFFIX(stdlib_strided_dcityblock_ndarray)( N, X, strideX, offsetX, Y, strideY, offsetY );
 	}
 	if ( p == 2.0 ) {
-		return stdlib_strided_deuclidean_ndarray( N, X, strideX, offsetX, Y, strideY, offsetY );
+		return API_SUFFIX(stdlib_strided_deuclidean_ndarray)( N, X, strideX, offsetX, Y, strideY, offsetY );
 	}
 	if ( p == STDLIB_CONSTANT_FLOAT64_PINF ) {
-		return stdlib_strided_dchebyshev_ndarray( N, X, strideX, offsetX, Y, strideY, offsetY );
+		return API_SUFFIX(stdlib_strided_dchebyshev_ndarray)( N, X, strideX, offsetX, Y, strideY, offsetY );
 	}
 	ox = offsetX;
 	oy = offsetY;
