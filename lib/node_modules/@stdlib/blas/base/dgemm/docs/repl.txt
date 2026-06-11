@@ -43,15 +43,15 @@
         First matrix.
 
     lda: integer
-        Stride of the first dimension of `A` (a.k.a., leading dimension of the
-        matrix `A`).
+        Stride between successive contiguous vectors of the matrix `A` (a.k.a.,
+        leading dimension of the matrix `A`).
 
     B: Float64Array
         Second matrix.
 
     ldb: integer
-        Stride of the first dimension of `B` (a.k.a., leading dimension of the
-        matrix `B`).
+        Stride between successive contiguous vectors of the matrix `B` (a.k.a.,
+        leading dimension of the matrix `B`).
 
     β: number
         Scalar constant.
@@ -60,8 +60,8 @@
         Third matrix.
 
     ldc: integer
-        Stride of the first dimension of `C` (a.k.a., leading dimension of the
-        matrix `C`).
+        Stride between successive contiguous vectors of the matrix `C` (a.k.a.,
+        leading dimension of the matrix `C`).
 
     Returns
     -------

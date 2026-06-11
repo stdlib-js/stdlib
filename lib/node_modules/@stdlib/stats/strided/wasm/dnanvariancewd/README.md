@@ -115,7 +115,7 @@ var v = dnanvariancewd.ndarray( 5, 1, x, 2, 1 );
 
 Returns a new WebAssembly [module wrapper][@stdlib/wasm/module-wrapper] instance which uses the provided WebAssembly [memory][@stdlib/wasm/memory] instance as its underlying memory.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -138,7 +138,7 @@ mod.initializeSync();
 
 Computes the [variance][variance] of a double-precision floating-point strided array ignoring `NaN` values and using Welford's algorithm.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -186,7 +186,7 @@ The function has the following parameters:
 
 Computes the [variance][variance] of a double-precision floating-point strided array ignoring `NaN` values and using Welford's algorithm and alternative indexing semantics.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );

@@ -21,6 +21,10 @@
 /**
 * Tests if two arguments are both typed-array-like objects and have the same values.
 *
+* ## Notes
+*
+* -   The function differs from the `===` operator in that the function treats `-0` and `+0` as distinct and `NaNs` as the same.
+*
 * @param v1 - first input value
 * @param v2 - second input value
 * @returns boolean indicating whether the two arguments are both typed-array-like objects with the same values

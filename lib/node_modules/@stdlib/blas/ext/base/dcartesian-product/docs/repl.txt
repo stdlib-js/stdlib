@@ -1,0 +1,141 @@
+
+{{alias}}( order, M, N, x, strideX, y, strideY, out, LDO )
+    Computes the Cartesian product for two double-precision floating-point
+    strided arrays.
+
+    The `M`, `N`, and stride parameters determine which elements in the strided
+    arrays are accessed at runtime.
+
+    Pairs are stored as rows in the output matrix, where the first column
+    contains the first element of each pair and the second column contains
+    the second element.
+
+    If `M <= 0` or `N <= 0`, the function returns `out` unchanged.
+
+    Parameters
+    ----------
+    order: string
+        Storage layout.
+
+    M: integer
+        Number of indexed elements in `x`.
+
+    N: integer
+        Number of indexed elements in `y`.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    out: Float64Array
+        Output array.
+
+    LDO: integer
+        Stride length between successive contiguous vectors of the matrix
+        `out` (a.k.a., leading dimension of `out`). For row-major order,
+        must be greater than or equal to `2`. For column-major order, must
+        be greater than or equal to `max(1,M*N)`.
+
+    Returns
+    -------
+    out: Float64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 3.0, 4.0 ] );
+    > var out = new {{alias:@stdlib/array/float64}}( 8 );
+    > {{alias}}( 'row-major', x.length, y.length, x, 1, y, 1, out, 2 )
+    <Float64Array>[ 1.0, 3.0, 1.0, 4.0, 2.0, 3.0, 2.0, 4.0 ]
+
+    // Using `M`, `N`, and stride parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 0.0, 2.0, 0.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 3.0, 4.0 ] );
+    > out = new {{alias:@stdlib/array/float64}}( 8 );
+    > {{alias}}( 'row-major', 2, y.length, x, 2, y, 1, out, 2 )
+    <Float64Array>[ 1.0, 3.0, 1.0, 4.0, 2.0, 3.0, 2.0, 4.0 ]
+
+
+{{alias}}.ndarray( M, N, x, sx, ox, y, sy, oy, out, so1, so2, oo )
+    Computes the Cartesian product for two double-precision floating-point
+    strided arrays using alternative indexing semantics.
+
+    Pairs are stored as rows in the output matrix, where the first column
+    contains the first element of each pair and the second column contains
+    the second element.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on
+    starting indices.
+
+    Parameters
+    ----------
+    M: integer
+        Number of indexed elements in `x`.
+
+    N: integer
+        Number of indexed elements in `y`.
+
+    x: Float64Array
+        First input array.
+
+    sx: integer
+        Stride length for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    y: Float64Array
+        Second input array.
+
+    sy: integer
+        Stride length for `y`.
+
+    oy: integer
+        Starting index for `y`.
+
+    out: Float64Array
+        Output array.
+
+    so1: integer
+        Stride length for the first dimension of `out`.
+
+    so2: integer
+        Stride length for the second dimension of `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    Returns
+    -------
+    out: Float64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 3.0, 4.0 ] );
+    > var out = new {{alias:@stdlib/array/float64}}( 8 );
+    > {{alias}}.ndarray( x.length, y.length, x, 1, 0, y, 1, 0, out, 2, 1, 0 )
+    <Float64Array>[ 1.0, 3.0, 1.0, 4.0, 2.0, 3.0, 2.0, 4.0 ]
+
+    // Using an index offset:
+    > x = new {{alias:@stdlib/array/float64}}( [ 0.0, 1.0, 2.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 3.0, 4.0 ] );
+    > out = new {{alias:@stdlib/array/float64}}( 8 );
+    > {{alias}}.ndarray( 2, y.length, x, 1, 1, y, 1, 0, out, 2, 1, 0 )
+    <Float64Array>[ 1.0, 3.0, 1.0, 4.0, 2.0, 3.0, 2.0, 4.0 ]
+
+    See Also
+    --------
