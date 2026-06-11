@@ -23,7 +23,7 @@
 *
 * @param value - value to test
 * @param property - property to test
-* @returns  boolean indicating if an object property is readable
+* @returns boolean indicating if an object property is readable
 *
 * @example
 * var defineProperty = require( '@stdlib/utils/define-property' );
