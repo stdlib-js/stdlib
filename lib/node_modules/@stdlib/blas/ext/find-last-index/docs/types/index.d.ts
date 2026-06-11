@@ -241,7 +241,7 @@ interface FindLastIndex {
 }
 
 /**
-* Returns the index of the last element along an ndarray dimension which passes a test implemented by a predicate function and assigns results to a provided output ndarray.
+* Returns the index of the last element along an ndarray dimension which passes a test implemented by a predicate function.
 *
 * ## Notes
 *
@@ -250,7 +250,7 @@ interface FindLastIndex {
 * @param x - input ndarray
 * @param options - function options
 * @param clbk - predicate function
-* @param thisArg - Predicate execution context
+* @param thisArg - predicate function execution context
 * @returns output ndarray
 *
 * @example

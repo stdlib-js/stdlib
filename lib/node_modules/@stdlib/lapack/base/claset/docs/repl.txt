@@ -45,9 +45,8 @@
     > var A = new {{alias:@stdlib/array/complex64}}( 4 );
     > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 2.0 );
     > var beta = new {{alias:@stdlib/complex/float32/ctor}}( 3.0, 4.0 );
-    > {{alias}}( 'row-major', 'all', 2, 2, alpha, beta, A, 2 );
-    > var z = A.get( 0 )
-    <Complex64>[ 3.0, 4.0 ]
+    > {{alias}}( 'row-major', 'all', 2, 2, alpha, beta, A, 2 )
+    <Complex64Array>[ 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 
 
 {{alias}}.ndarray( uplo, M, N, alpha, beta, A, sa1, sa2, oa )
@@ -99,9 +98,8 @@
     > var A = new {{alias:@stdlib/array/complex64}}( 5 );
     > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 2.0 );
     > var beta = new {{alias:@stdlib/complex/float32/ctor}}( 3.0, 4.0 );
-    > {{alias}}.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 1 );
-    > var z = A.get( 1 )
-    <Complex64>[ 3.0, 4.0 ]
+    > {{alias}}.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 1 )
+    <Complex64Array>[ 0.0, 0.0, 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 
     See Also
     --------

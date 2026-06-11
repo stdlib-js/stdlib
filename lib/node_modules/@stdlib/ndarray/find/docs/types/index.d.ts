@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ArrayLike } from '@stdlib/types/array';
-import { ndarray, typedndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Returns a boolean indicating whether an element passes a test.
@@ -227,7 +227,7 @@ interface Find {
 	* var v = out.get();
 	* // returns 2.0
 	*/
-	assign<T = unknown, U extends typedndarray<T> = typedndarray<T>, ThisArg = unknown>( x: ndarray, out: U, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): U;
+	assign<T = unknown, U extends typedndarray<T> = typedndarray<T>, V extends typedndarray<T> = typedndarray<T>, ThisArg = unknown>( x: U, out: V, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 
 	/**
 	* Finds the first elements which pass a test implemented by a predicate function along one or more ndarray dimensions and assigns results to a provided output ndarray.
@@ -271,7 +271,7 @@ interface Find {
 	* var out = find.assign( x, y, {}, isEven );
 	* // returns <ndarray>
 	*/
-	assign<T = unknown, U extends typedndarray<T> = typedndarray<T>, V = T, ThisArg = unknown>( x: ndarray, out: U, options: AssignOptions<V>, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): U;
+	assign<T = unknown, U extends typedndarray<T> = typedndarray<T>, V extends typedndarray<T> = typedndarray<T>, W = T, ThisArg = unknown>( x: U, out: V, options: AssignOptions<W>, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): V;
 }
 
 /**
