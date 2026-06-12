@@ -107,9 +107,11 @@ jobs:
         if: ${{ steps.changed_packages.outputs.packages != '[]' }}
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          PACKAGES: ${{ steps.changed_packages.outputs.packages }}
+          PACKAGES_LIST: ${{ join( fromJSON( steps.changed_packages.outputs.packages ), ' ' ) }}
         run: |
-          echo "Pushing changes to the following repositories: ${{ steps.changed_packages.outputs.packages }}"
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ join( fromJSON( steps.changed_packages.outputs.packages ), ' ' ) }}
+          echo "Pushing changes to the following repositories: $PACKAGES"
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js $PACKAGES_LIST
 
   # Define a job for sending notifications to Zulip...
   zulip:

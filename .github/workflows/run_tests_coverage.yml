@@ -141,16 +141,20 @@ jobs:
       - name: 'Get list of changed directories (from user input)'
         if: github.event_name == 'workflow_dispatch'
         id: changed-directories-user-input
+        env:
+          DIRECTORIES: ${{ github.event.inputs.directories }}
         run: |
-          echo "directories=${{ github.event.inputs.directories }}" >> $GITHUB_OUTPUT
+          echo "directories=${DIRECTORIES}" >> $GITHUB_OUTPUT
         timeout-minutes: 5
 
       # Exit early if non-package directories are changed:
       - name: 'Exit early if non-package directories are changed'
         id: check-changed
         if: github.event_name != 'workflow_dispatch'
+        env:
+          DIRECTORIES: ${{ steps.changed-directories.outputs.directories }}
         run: |
-          directories="${{ steps.changed-directories.outputs.directories }}"
+          directories="$DIRECTORIES"
           skip="false"
           for directory in $directories; do
             if [[ "$directory" != "lib/node_modules/@stdlib"* ]]; then
@@ -169,11 +173,13 @@ jobs:
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_REF: ${{ github.ref }}
           COVERAGE_BASE_URL: 'https://coverage.stdlib.io'
+          DIRECTORIES_USER_INPUT: ${{ steps.changed-directories-user-input.outputs.directories }}
+          DIRECTORIES_CHANGED: ${{ steps.changed-directories.outputs.directories }}
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            directories="${{ steps.changed-directories-user-input.outputs.directories }}"
+            directories="$DIRECTORIES_USER_INPUT"
           else
-            directories="${{ steps.changed-directories.outputs.directories }}"
+            directories="$DIRECTORIES_CHANGED"
           fi
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_tests_coverage/run" "$directories"
@@ -183,8 +189,10 @@ jobs:
       - name: 'Create final coverage report'
         id: create-report
         if: steps.check-changed.outputs.skip == 'false'
+        env:
+          TABLE: ${{ steps.extract-coverage.outputs.table }}
         run: |
-          table="${{ steps.extract-coverage.outputs.table }}"
+          table="$TABLE"
           if [ -z "$table" ]; then
             report="## Coverage Report\n\nNo coverage information available."
           else
@@ -203,6 +211,8 @@ jobs:
         if: github.event_name == 'push' && steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          REPORT: ${{ steps.create-report.outputs.report }}
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
@@ -210,7 +220,7 @@ jobs:
               'commit_sha': context.sha,
               'owner': context.repo.owner,
               'repo': context.repo.repo,
-              'body': '${{ steps.create-report.outputs.report }}'
+              'body': process.env.REPORT.replace( /\\n/g, '\n' )
             })
 
       # Checkout coverage repository:
