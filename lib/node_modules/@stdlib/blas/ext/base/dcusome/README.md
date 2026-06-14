@@ -20,7 +20,7 @@ limitations under the License.
 
 # dcusome
 
-> Cumulatively test whether at least k elements in a double-precision floating-point strided array are truthy.
+> Cumulatively test whether at least `k` elements in a double-precision floating-point strided array are truthy.
 
 <section class="intro">
 

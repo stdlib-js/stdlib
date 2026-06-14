@@ -3781,9 +3781,10 @@ interface Namespace {
 	* @param args - subscripts followed by an optional options object
 	* @throws first argument must be an array-like object containing nonnegative integers
 	* @throws subscripts must be integer valued
+	* @throws options argument must be an object
 	* @throws must provide valid options
 	* @throws must provide subscripts which do not exceed array dimensions
-	* @throws number of subscripts much match the number of dimensions
+	* @throws number of subscripts must match the number of dimensions
 	* @returns linear index
 	*
 	* @example
