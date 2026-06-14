@@ -45,7 +45,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * });
 *
 * var v = variancepn( [ x, correction ] );
-* // returns ~4.333
+* // returns ~4.3333
 */
 declare function variancepn( arrays: [ typedndarray<number>, typedndarray<number> ] ): number;
 

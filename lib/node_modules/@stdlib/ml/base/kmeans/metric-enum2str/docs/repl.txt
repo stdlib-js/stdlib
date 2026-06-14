@@ -1,0 +1,23 @@
+
+{{alias}}( value )
+    Returns the k-means distance metric string associated with a k-means
+    distance metric enumeration constant.
+
+    Parameters
+    ----------
+    value: integer
+        Distance metric enumeration constant.
+
+    Returns
+    -------
+    out: string|null
+        Distance metric string.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/ml/base/kmeans/metric-str2enum}}( 'sqeuclidean' ) )
+    'sqeuclidean'
+
+    See Also
+    --------
+

@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/blas/ext/base/dcartesianpower.h"
+#include "stdlib/blas/ext/base/dcartesian_power.h"
 #include "stdlib/blas/base/shared.h"
 #include <stdlib.h>
 #include <stdio.h>

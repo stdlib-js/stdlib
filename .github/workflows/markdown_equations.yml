@@ -126,8 +126,10 @@ jobs:
       # Generate SVG equations:
       - name: 'Generate SVG equations'
         id: svg-equations
+        env:
+          FILES: ${{ steps.changed.outputs.files }}
         run: |
-          make markdown-svg-equations-files FILES="${{ steps.changed.outputs.files }}"
+          make markdown-svg-equations-files FILES="$FILES"
 
           # Stage *all* tracked and untracked changes first...
           git add -A
@@ -146,9 +148,11 @@ jobs:
       # Update Markdown equation elements:
       - name: 'Update equation elements'
         id: equation-elements
+        env:
+          FILES: ${{ steps.changed.outputs.files }}
         run: |
-          make markdown-img-equations-files FILES="${{ steps.changed.outputs.files }}"
-          make markdown-img-equations-src-urls-files FILES="${{ steps.changed.outputs.files }}"
+          make markdown-img-equations-files FILES="$FILES"
+          make markdown-img-equations-src-urls-files FILES="$FILES"
 
           # Stage *all* tracked and untracked changes first...
           git add -A

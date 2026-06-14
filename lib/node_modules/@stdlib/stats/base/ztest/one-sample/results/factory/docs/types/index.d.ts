@@ -175,7 +175,7 @@ interface ResultsConstructor<T> {
 	* @param arg - buffer or data object
 	* @param byteOffset - byte offset
 	* @param byteLength - maximum byte length
-	* @returns struct
+	* @returns results object
 	*/
 	new( arg?: ArrayBuffer | Results<T>, byteOffset?: number, byteLength?: number ): ResultsStruct<T>;
 
@@ -185,7 +185,7 @@ interface ResultsConstructor<T> {
 	* @param arg - buffer or data object
 	* @param byteOffset - byte offset
 	* @param byteLength - maximum byte length
-	* @returns struct
+	* @returns results object
 	*/
 	( arg?: ArrayBuffer | Results<T>, byteOffset?: number, byteLength?: number ): ResultsStruct<T>;
 }
