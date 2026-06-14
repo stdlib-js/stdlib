@@ -262,7 +262,10 @@ jobs:
     needs: [ add_initial_reaction ]
 
     # Define the conditions under which the job should run:
-    if: (github.event.issue.pull_request || github.event_name == 'commit_comment') && startsWith(github.event.comment.body, '/stdlib todo')
+    if: |
+      (github.event.issue.pull_request || github.event_name == 'commit_comment') &&
+      startsWith(github.event.comment.body, '/stdlib todo') &&
+      contains(fromJSON('["OWNER","MEMBER"]'), github.event.comment.author_association)
 
     # Run reusable workflow:
     uses: ./.github/workflows/create_todo_issue.yml

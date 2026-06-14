@@ -314,10 +314,14 @@ ${provenance}"
 		done
 		post_source_comment "@${COMMENTER}, the following issue has been created: ${issue_url}
 
+Please make any subsequent edits to the issue itself rather than by updating the todo comment.
+
 > [!WARNING]
 > The following labels were not applied because they do not exist on ${bt}${repo_owner}/${target_repo}${bt}: ${dropped_list}."
 	else
-		post_source_comment "@${COMMENTER}, the following issue has been created: ${issue_url}"
+		post_source_comment "@${COMMENTER}, the following issue has been created: ${issue_url}
+
+Please make any subsequent edits to the issue itself rather than by updating the todo comment."
 	fi
 
 	cleanup
