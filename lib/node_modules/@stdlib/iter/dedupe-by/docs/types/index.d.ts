@@ -86,8 +86,9 @@ type Quinary = ( curr: any, sprev: any, dprev: any, index: number, acc: any ) =>
 * Indicates whether an iterated value is a "duplicate".
 *
 * @param curr - current source iterated value
-* @param prev - previous iterated value
-* @param index - iteration index (zero-based)
+* @param sprev - previous source iterated value
+* @param dprev - previous downstream iterated value
+* @param index - source iteration index (zero-based)
 * @param acc - previous resolved value
 * @returns resolved value
 */

@@ -43,13 +43,10 @@ var nanmskrange = require( '@stdlib/stats/base/ndarray/nanmskrange' );
 Computes the [range][range] of a one-dimensional ndarray according to a mask, ignoring `NaN` values.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 
-var xbuf = [ 1.0, -2.0, 4.0, 2.0, NaN ];
-var x = new ndarray( 'generic', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
-
-var maskbuf = [ 0, 0, 1, 0, 0 ];
-var mask = new ndarray( 'generic', maskbuf, [ 5 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, -2.0, 4.0, 2.0, NaN ], 'generic' );
+var mask = vector( [ 0, 0, 1, 0, 0 ], 'uint8' );
 
 var v = nanmskrange( [ x, mask ] );
 // returns 4.0
@@ -57,7 +54,10 @@ var v = nanmskrange( [ x, mask ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing a one-dimensional input ndarray and a one-dimensional mask ndarray.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a one-dimensional mask ndarray.
 
 </section>
 
@@ -81,22 +81,22 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/array/uniform' );
-var bernoulli = require( '@stdlib/random/array/bernoulli' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var uniform = require( '@stdlib/random/uniform' );
+var bernoulli = require( '@stdlib/random/bernoulli' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var nanmskrange = require( '@stdlib/stats/base/ndarray/nanmskrange' );
 
-var xbuf = uniform( 10, -50.0, 50.0, {
+var opts = {
     'dtype': 'generic'
-});
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+var mopts = {
+    'dtype': 'uint8'
+};
+
+var x = uniform( [ 10 ], -50.0, 50.0, opts );
 console.log( ndarray2array( x ) );
 
-var maskbuf = bernoulli( xbuf.length, 0.2, {
-    'dtype': 'generic'
-});
-var mask = new ndarray( 'generic', maskbuf, [ maskbuf.length ], [ 1 ], 0, 'row-major' );
+var mask = bernoulli( [ 10 ], 0.2, mopts );
 console.log( ndarray2array( mask ) );
 
 var v = nanmskrange( [ x, mask ] );

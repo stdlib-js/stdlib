@@ -37,7 +37,7 @@ interface Options<T, U, V> {
 	limit?: number;
 
 	/**
-	* Boolean indicating whether to sequentially invoke the provided function for each `collection` element. If `true`, the function sets `options.limit=1`. Default: false.
+	* Boolean indicating whether to wait for a previous invocation to complete before invoking a provided function for the next element in a collection. If `true`, the function sets `options.limit=1`. Default: false.
 	*/
 	series?: boolean;
 }

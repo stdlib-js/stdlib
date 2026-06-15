@@ -224,7 +224,7 @@ interface Namespace {
 	* // returns true
 	*
 	* @example
-	* var bool = ns.isFinitef( -2.0e64 );
+	* var bool = ns.isFinitef( -2.0e24 );
 	* // returns true
 	*
 	* @example
@@ -411,6 +411,10 @@ interface Namespace {
 
 	/**
 	* Tests if a finite single-precision floating-point number is a negative integer.
+	*
+	* ## Notes
+	*
+	* -   The function assumes a finite number. If provided negative infinity, the function will return `true`, when, in fact, the result is undefined.
 	*
 	* @param x - value to test
 	* @returns boolean indicating whether the value is a negative integer

@@ -46,8 +46,8 @@ The namespace contains the following distribution functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`cdf( x, a, b )`][@stdlib/stats/base/dists/uniform/cdf]</span><span class="delimiter">: </span><span class="description">uniform distribution cumulative distribution function.</span>
--   <span class="signature">[`logcdf( x, a, b )`][@stdlib/stats/base/dists/uniform/logcdf]</span><span class="delimiter">: </span><span class="description">uniform distribution logarithm of cumulative distribution function.</span>
--   <span class="signature">[`logpdf( x, a, b )`][@stdlib/stats/base/dists/uniform/logpdf]</span><span class="delimiter">: </span><span class="description">uniform distribution logarithm of probability density function (PDF).</span>
+-   <span class="signature">[`logcdf( x, a, b )`][@stdlib/stats/base/dists/uniform/logcdf]</span><span class="delimiter">: </span><span class="description">uniform distribution natural logarithm of cumulative distribution function.</span>
+-   <span class="signature">[`logpdf( x, a, b )`][@stdlib/stats/base/dists/uniform/logpdf]</span><span class="delimiter">: </span><span class="description">uniform distribution natural logarithm of probability density function (PDF).</span>
 -   <span class="signature">[`mgf( t, a, b )`][@stdlib/stats/base/dists/uniform/mgf]</span><span class="delimiter">: </span><span class="description">uniform distribution moment-generating function (MGF).</span>
 -   <span class="signature">[`pdf( x, a, b )`][@stdlib/stats/base/dists/uniform/pdf]</span><span class="delimiter">: </span><span class="description">uniform distribution probability density function (PDF).</span>
 -   <span class="signature">[`quantile( p, a, b )`][@stdlib/stats/base/dists/uniform/quantile]</span><span class="delimiter">: </span><span class="description">uniform distribution quantile function.</span>

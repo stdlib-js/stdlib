@@ -25,15 +25,19 @@ import { float32ndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the range of absolute values of a one-dimensional single-precision floating-point ndarray.
 *
-* @param arrays - array-like object containing an input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns range
 *
 * @example
-* var Float32Array = require( '@stdlib/array/float32' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 *
-* var xbuf = new Float32Array( [ 1.0, -3.0, 4.0, 2.0 ] );
-* var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = new Float32Vector( [ 1.0, -3.0, 4.0, 2.0 ] );
 *
 * var v = srangeabs( [ x ] );
 * // returns 3.0

@@ -25,15 +25,22 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Returns the first index of a search element in a one-dimensional ndarray.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray, a zero-dimensional ndarray containing the search element, and a zero-dimensional ndarray containing the index from which to begin searching
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray containing the search element.
+*     -   a zero-dimensional ndarray containing the index from which to begin searching.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns index
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
-* var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, 3.0, 4.0, 2.0 ], 'generic' );
 *
 * var searchElement = scalar2ndarray( 2.0, {
 *     'dtype': 'generic'

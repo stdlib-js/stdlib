@@ -131,7 +131,7 @@ interface TTest {
 	* var opts = {
 	*     'alpha': 0.1
 	* };
-	* var out = ttest( x, opts );
+	* var out = ttest( x, y, opts );
 	* // returns {...}
 	*/
 	( x: NumericArray, y: NumericArray, options?: Options ): Results;
@@ -197,7 +197,7 @@ interface TTest {
 * var opts = {
 *     'alpha': 0.1
 * };
-* var out = ttest( x, opts );
+* var out = ttest( x, y, opts );
 * // returns {...}
 */
 declare var ttest: TTest;

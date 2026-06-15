@@ -41,10 +41,9 @@ var maxsorted = require( '@stdlib/stats/base/ndarray/maxsorted' );
 Computes the maximum value of a sorted one-dimensional ndarray.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 
-var xbuf = [ 1.0, 2.0, 3.0, 4.0 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, 2.0, 3.0, 4.0 ], 'generic' );
 
 var v = maxsorted( [ x ] );
 // returns 4.0
@@ -76,15 +75,15 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var linspace = require( '@stdlib/blas/ext/linspace' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var maxsorted = require( '@stdlib/stats/base/ndarray/maxsorted' );
 
-var xbuf = linspace( -50, 50, 10, {
+var opts = {
     'dtype': 'generic'
-});
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = linspace( [ 10 ], -50.0, 50.0, opts );
 console.log( ndarray2array( x ) );
 
 var v = maxsorted( [ x ] );
