@@ -134,6 +134,7 @@ scuany.ndarray( 3, x, 2, 2, out, 1, 0 );
 ## Notes
 
 -   If `N <= 0`, both functions return `out` unchanged.
+-   Both functions explicitly treat `NaN` values as falsy elements.
 
 </section>
 
@@ -254,6 +255,10 @@ void stdlib_strided_scuany_ndarray( const CBLAS_INT N, const float *X, const CBL
 <!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+### Notes
+
+-   The function explicitly treats `NaN` values as falsy.
 
 </section>
 
