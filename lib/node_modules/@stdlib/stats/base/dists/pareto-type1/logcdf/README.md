@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Pareto (Type I)][pareto-distribution] distribution logarithm of [cumulative distribution function][cdf].
+> [Pareto (Type I)][pareto-distribution] distribution natural logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 
