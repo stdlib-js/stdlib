@@ -148,9 +148,9 @@ scusome.ndarray( 3, 1, x, 2, 2, out, 1, 0 );
 
 ```javascript
 var bernoulli = require( '@stdlib/random/array/bernoulli' );
-var scusome = require( '@stdlib/blas/ext/base/scusome' );
-var logEach = require( '@stdlib/console/log-each' );
 var BooleanArray = require( '@stdlib/array/bool' );
+var logEach = require( '@stdlib/console/log-each' );
+var scusome = require( '@stdlib/blas/ext/base/scusome' );
 
 var x = bernoulli( 10, 0.5, {
     'dtype': 'float32'

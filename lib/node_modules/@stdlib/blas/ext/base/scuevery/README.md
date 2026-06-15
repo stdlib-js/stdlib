@@ -147,9 +147,9 @@ scuevery.ndarray( 3, x, 2, 2, out, 1, 0 );
 
 ```javascript
 var bernoulli = require( '@stdlib/random/array/bernoulli' );
-var scuevery = require( '@stdlib/blas/ext/base/scuevery' );
-var logEach = require( '@stdlib/console/log-each' );
 var BooleanArray = require( '@stdlib/array/bool' );
+var logEach = require( '@stdlib/console/log-each' );
+var scuevery = require( '@stdlib/blas/ext/base/scuevery' );
 
 var x = bernoulli( 10, 0.5, {
     'dtype': 'float32'
