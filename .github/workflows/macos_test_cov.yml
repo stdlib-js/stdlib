@@ -87,7 +87,7 @@ jobs:
         BUILD_TASK: ['test-coverage']
 
         # Define the list of Node.js versions:
-        NODE_VERSION: ['16', '14', '12']
+        NODE_VERSION: ['16']
 
         # Define the list of operating systems:
         OS: ['macOS-latest']
@@ -98,12 +98,6 @@ jobs:
             PLATFORM: 'macos'
 
           - NODE_VERSION: '16'
-            NPM_VERSION: '>2.7.0'
-
-          - NODE_VERSION: '14'
-            NPM_VERSION: '>2.7.0'
-
-          - NODE_VERSION: '12'
             NPM_VERSION: '>2.7.0'
 
           # - NODE_VERSION: '10'
