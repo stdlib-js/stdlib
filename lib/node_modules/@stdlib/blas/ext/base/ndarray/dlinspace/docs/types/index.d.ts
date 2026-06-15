@@ -27,7 +27,7 @@ import { float64ndarray, boolndarray } from '@stdlib/types/ndarray';
 *
 * ## Notes
 *
-* -   The function expects the following ndarrays in order:
+* -   The function expects the following ndarrays:
 *
 *     -   a one-dimensional input ndarray.
 *     -   a zero-dimensional ndarray specifying the start of the interval.
@@ -38,12 +38,10 @@ import { float64ndarray, boolndarray } from '@stdlib/types/ndarray';
 * @returns input ndarray
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
-* var xbuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-* var x = new ndarray( 'float64', xbuf, [ 6 ], [ 1 ], 0, 'row-major' );
+* var x = new Float64Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * var start = scalar2ndarray( 0.0, {
 *    'dtype': 'float64'
