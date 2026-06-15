@@ -110,7 +110,7 @@ var y = dmeanpw.ndarray( 4, x, 2, 1 );
 
 Returns a new WebAssembly [module wrapper][@stdlib/wasm/module-wrapper] instance which uses the provided WebAssembly [memory][@stdlib/wasm/memory] instance as its underlying memory.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -133,7 +133,7 @@ mod.initializeSync();
 
 Computes the [arithmetic mean][arithmetic-mean] of a double-precision floating-point strided array using pairwise summation.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
@@ -179,7 +179,7 @@ The function has the following parameters:
 
 Computes the [arithmetic mean][arithmetic-mean] of a double-precision floating-point strided array using pairwise summation and alternative indexing semantics.
 
-<!-- eslint-disable node/no-sync -->
+<!-- eslint-disable n/no-sync -->
 
 ```javascript
 var Memory = require( '@stdlib/wasm/memory' );
