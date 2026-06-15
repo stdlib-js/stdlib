@@ -1,0 +1,35 @@
+
+{{alias}}( arrays )
+    Interchanges two one-dimensional complex double-precision floating-point
+    ndarrays.
+
+    If provided an empty input ndarray, the function returns the output ndarray
+    unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - first one-dimensional input ndarray.
+        - second one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        The second input ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/complex128}}( [ 4.0, 2.0, -3.0, 5.0 ] );
+    > var y = new {{alias:@stdlib/ndarray/vector/complex128}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+
+    > {{alias}}( [ x, y ] );
+    > x
+    <ndarray>[ <Complex128>[ 0.0, 0.0 ], <Complex128>[ 0.0, 0.0 ] ]
+    > y
+    <ndarray>[ <Complex128>[ 4.0, 2.0 ], <Complex128>[ -3.0, 5.0 ] ]
+
+    See Also
+    --------
+
