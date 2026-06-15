@@ -86,8 +86,7 @@ jobs:
 
         # Define the list of Node.js versions:
         # NODE_VERSION: ['16', '14', '12', '10', '8', '6', '4', '0.12', '0.10']
-        # Note: v12 and v14 are excluded because macOS-latest runners use Apple Silicon (arm64)
-        # and neither Node.js v12 nor v14 ship arm64/darwin binaries.
+        # Note: versions earlier than v16 are excluded because macOS-latest runners use Apple Silicon (arm64), and versions earlier than v16 do not ship arm64/darwin binaries.
         NODE_VERSION: ['16']
 
         # Define the list of operating systems:
