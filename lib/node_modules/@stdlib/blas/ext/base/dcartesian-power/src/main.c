@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/blas/ext/base/dcartesianpower.h"
+#include "stdlib/blas/ext/base/dcartesian_power.h"
 #include "stdlib/ndarray/base/assert/is_row_major.h"
 #include "stdlib/math/base/special/pow.h"
 #include "stdlib/blas/base/shared.h"

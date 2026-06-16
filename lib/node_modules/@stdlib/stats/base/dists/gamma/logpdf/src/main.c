@@ -159,7 +159,7 @@ static double gamma_p_derivative( const double a, const double x ) {
 // END: gammma_p_derivative
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta` at a value `x`.
+* Evaluates the natural logarithm of the probability density function (PDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta` at a value `x`.
 *
 * @param x       input value
 * @param alpha   shape parameter

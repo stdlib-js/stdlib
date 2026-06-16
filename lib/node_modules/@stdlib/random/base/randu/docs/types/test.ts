@@ -64,7 +64,7 @@ import randu = require( './index' );
 	randu.factory( { 'name': null } ); // $ExpectError
 	randu.factory( { 'name': [] } ); // $ExpectError
 	randu.factory( { 'name': {} } ); // $ExpectError
-	randu.factory( { 'name': true ); // $ExpectError
+	randu.factory( { 'name': true } ); // $ExpectError
 	randu.factory( { 'name': ( x: number ): number => x } ); // $ExpectError
 }
 
@@ -85,7 +85,7 @@ import randu = require( './index' );
 	randu.factory( { 'state': null } ); // $ExpectError
 	randu.factory( { 'state': [] } ); // $ExpectError
 	randu.factory( { 'state': {} } ); // $ExpectError
-	randu.factory( { 'state': true ); // $ExpectError
+	randu.factory( { 'state': true } ); // $ExpectError
 	randu.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

@@ -380,7 +380,6 @@ interface Namespace {
 	* @param value - input value
 	* @param searchValue - search value
 	* @param position - position at which to start searching for `searchValue` (default: 0)
-	* @throws second argument must be a primitive string primitive when the first argument is a string
 	* @returns boolean indicating whether one value contains another
 	*
 	* @example
@@ -2082,32 +2081,14 @@ interface Namespace {
 	* @example
 	* var BigInt = require( '@stdlib/bigint/ctor' );
 	*
-	* var bool = ns.isBigInt.isPrimitive( BigInt( '1' ) );
+	* var bool = ns.isBigInt( BigInt( '1' ) );
 	* // returns true
-	*
-	* @example
-	* var BigInt = require( '@stdlib/bigint/ctor' );
-	*
-	* var bool = ns.isBigInt.isPrimitive( Object( BigInt( '1' ) ) );
-	* // returns false
 	*
 	* @example
 	* var BigInt = require( '@stdlib/bigint/ctor' );
 	*
 	* var bool = ns.isBigInt.isPrimitive( BigInt( '1' ) );
 	* // returns true
-	*
-	* @example
-	* var BigInt = require( '@stdlib/bigint/ctor' );
-	*
-	* var bool = ns.isBigInt.isPrimitive( Object( BigInt( '1' ) ) );
-	* // returns false
-	*
-	* @example
-	* var BigInt = require( '@stdlib/bigint/ctor' );
-	*
-	* var bool = ns.isBigInt.isObject( BigInt( '1' ) );
-	* // returns false
 	*
 	* @example
 	* var BigInt = require( '@stdlib/bigint/ctor' );
@@ -3785,7 +3766,7 @@ interface Namespace {
 	isFalsy: typeof isFalsy;
 
 	/**
-	* Test if a value is an array-like object containing only falsy values.
+	* Tests if a value is an array-like object containing only falsy values.
 	*
 	* @param value - value to test
 	* @returns boolean indicating whether a value is an array-like object containing only falsy values
@@ -4065,7 +4046,7 @@ interface Namespace {
 	isFunction: typeof isFunction;
 
 	/**
-	* Test if a value is an array-like object containing only functions.
+	* Tests if a value is an array-like object containing only functions.
 	*
 	* @param value - value to test
 	* @returns boolean indicating whether an input value is an array-like object containing only functions
@@ -4355,6 +4336,7 @@ interface Namespace {
 	* @example
 	* var bool = ns.isIntegerArray( [ -3.0, '3.0' ] );
 	* // returns false
+	*
 	* @example
 	* var bool = ns.isIntegerArray.primitives( [ -1.0, 0.0, 5.0 ] );
 	* // returns true
@@ -4438,15 +4420,15 @@ interface Namespace {
 	* @returns boolean indicating whether a value is a string in kebab case
 	*
 	* @example
-	* var bool = ns.isKebabcase( `beep-boop` );
+	* var bool = ns.isKebabcase( 'beep-boop' );
 	* // returns true
 	*
 	* @example
-	* var bool = ns.isKebabcase( `Beep-boop` );
+	* var bool = ns.isKebabcase( 'Beep-boop' );
 	* // returns false
 	*
 	* @example
-	* var bool = ns.isKebabcase( `BEEP_BOOP` );
+	* var bool = ns.isKebabcase( 'BEEP_BOOP' );
 	* // returns false
 	*
 	* @example
@@ -4463,7 +4445,7 @@ interface Namespace {
 	* -   According to the Gregorian calendar, every year that is exactly divisible by `4` is a leap year, except those years which are also divisible by `100` and not by `400` (e.g., `1900`).
 	*
 	* @param value - input value
-	* @returns boolean whether a value corresponds to a leap year
+	* @returns boolean indicating whether a value corresponds to a leap year
 	*
 	* @example
 	* var bool = ns.isLeapYear();
@@ -5272,6 +5254,36 @@ interface Namespace {
 	*/
 	isNonEnumerablePropertyIn: typeof isNonEnumerablePropertyIn;
 
+	/**
+	* Tests if a value is a nonnegative finite number.
+	*
+	* @param value - value to test
+	* @returns boolean indicating whether value is a nonnegative finite number
+	*
+	* @example
+	* var bool = ns.isNonNegativeFinite( 5.0 );
+	* // returns true
+	*
+	* @example
+	* var bool = ns.isNonNegativeFinite( new Number( 5.0 ) );
+	* // returns true
+	*
+	* @example
+	* var bool = ns.isNonNegativeFinite( 3.14 );
+	* // returns true
+	*
+	* @example
+	* var bool = ns.isNonNegativeFinite( 1.0/0.0 );
+	* // returns false
+	*
+	* @example
+	* var bool = ns.isNonNegativeFinite( -5.0 );
+	* // returns false
+	*
+	* @example
+	* var bool = ns.isNonNegativeFinite( null );
+	* // returns false
+	*/
 	isNonNegativeFinite: typeof isNonNegativeFinite;
 
 	/**
@@ -5648,6 +5660,7 @@ interface Namespace {
 	* @example
 	* var bool = ns.isNumberArray( [ -3.0, '3.0' ] );
 	* // returns false
+	*
 	* @example
 	* var bool = ns.isNumberArray.primitives( [ -1.0, 0.0, 5.0 ] );
 	* // returns true
@@ -5693,7 +5706,7 @@ interface Namespace {
 	isObject: typeof isObject;
 
 	/**
-	* Test if a value is an array-like object containing only objects.
+	* Tests if a value is an array-like object containing only objects.
 	*
 	* @param value - value to test
 	* @returns boolean indicating whether an input value is an array-like object containing only objects
@@ -6183,10 +6196,10 @@ interface Namespace {
 	isProbability: typeof isProbability;
 
 	/**
-	* Test if a value is an array-like object containing only probabilities.
+	* Tests if a value is an array-like object containing only probabilities.
 	*
 	* @param value - value to test
-	* @returns boolean indicating whether value is a positive integer
+	* @returns boolean indicating whether value is an array-like object containing only probabilities
 	*
 	* @example
 	* var bool = ns.isProbabilityArray( [ 0.3, new Number(0.3) ] );
@@ -6428,7 +6441,7 @@ interface Namespace {
 	*
 	* @param value - value to test
 	* @param property - property to test
-	* @returns  boolean indicating if an object property is readable
+	* @returns boolean indicating if an object property is readable
 	*
 	* @example
 	* var defineProperty = require( '@stdlib/utils/define-property' );
@@ -7065,6 +7078,10 @@ interface Namespace {
 	/**
 	* Tests if two arguments are both typed-array-like objects and have the same values.
 	*
+	* ## Notes
+	*
+	* -   The function differs from the `===` operator in that the function treats `-0` and `+0` as distinct and `NaNs` as the same.
+	*
 	* @param v1 - first input value
 	* @param v2 - second input value
 	* @returns boolean indicating whether the two arguments are both typed-array-like objects with the same values
@@ -7435,10 +7452,12 @@ interface Namespace {
 	* var bool = ns.isStartcase( 'Beep Boop' );
 	* // returns true
 	*
-	* bool = ns.isStartcase( 'beep boop' );
+	* @example
+	* var bool = ns.isStartcase( 'beep boop' );
 	* // returns false
 	*
-	* bool = ns.isStartcase( 'Beep and Boop' );
+	* @example
+	* var bool = ns.isStartcase( 'Beep and Boop' );
 	* // returns false
 	*/
 	isStartcase: typeof isStartcase;
@@ -7591,32 +7610,14 @@ interface Namespace {
 	* @example
 	* var Symbol = require( '@stdlib/symbol/ctor' );
 	*
-	* var bool = ns.isSymbol.isPrimitive( Symbol( 'beep' ) );
+	* var bool = ns.isSymbol( Symbol( 'beep' ) );
 	* // returns true
-	*
-	* @example
-	* var Symbol = require( '@stdlib/symbol/ctor' );
-	*
-	* var bool = ns.isSymbol.isPrimitive( Object( Symbol( 'beep' ) ) );
-	* // returns false
 	*
 	* @example
 	* var Symbol = require( '@stdlib/symbol/ctor' );
 	*
 	* var bool = ns.isSymbol.isPrimitive( Symbol( 'beep' ) );
 	* // returns true
-	*
-	* @example
-	* var Symbol = require( '@stdlib/symbol/ctor' );
-	*
-	* var bool = ns.isSymbol.isPrimitive( Object( Symbol( 'beep' ) ) );
-	* // returns false
-	*
-	* @example
-	* var Symbol = require( '@stdlib/symbol/ctor' );
-	*
-	* var bool = ns.isSymbol.isObject( Symbol( 'beep' ) );
-	* // returns false
 	*
 	* @example
 	* var Symbol = require( '@stdlib/symbol/ctor' );
@@ -7634,7 +7635,7 @@ interface Namespace {
 	* -   In pre-ES2015 environments, the function always returns `false`.
 	*
 	* @param value - value to test
-	* @returns boolean indicating whether value is an array of strings
+	* @returns boolean indicating whether value is an array-like object containing only symbols
 	*
 	* @example
 	* var bool = ns.isSymbolArray( [ Symbol( 'abc' ), Symbol( 'def' ) ] );
@@ -8021,7 +8022,7 @@ interface Namespace {
 	* Tests if a value is `undefined` or `null`.
 	*
 	* @param value - value to test
-	* @returns boolean indicating whether value is undefined
+	* @returns boolean indicating whether value is undefined or null
 	*
 	* @example
 	* var bool = ns.isUndefinedOrNull( undefined );
