@@ -28,7 +28,7 @@ interface Routine {
 	* ## Notes
 	*
 	* -   If unable to find a truthy element, the function returns `-1`.
-	* -   The function explicitly treats `NaN` values as falsy elements.
+	* -   The function explicitly treats `NaN` values as falsy.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -51,7 +51,7 @@ interface Routine {
 	* ## Notes
 	*
 	* -   If unable to find a truthy element, the function returns `-1`.
-	* -   The function explicitly treats `NaN` values as falsy elements.
+	* -   The function explicitly treats `NaN` values as falsy.
 	*
 	* @param N - number of indexed elements
 	* @param x - input array
@@ -76,7 +76,7 @@ interface Routine {
 * ## Notes
 *
 * -   If unable to find a truthy element, the function returns `-1`.
-* -   The function explicitly treats `NaN` values as falsy elements.
+* -   The function explicitly treats `NaN` values as falsy.
 *
 * @param N - number of indexed elements
 * @param x - input array
