@@ -24,7 +24,7 @@ import Uint64 = require( './index' );
 
 // TESTS //
 
-// The function returns an unsigned 64-bit integer with the expected properties...
+// The function returns a 64-bit unsigned integer with the expected properties...
 {
 	const x = new Uint64( 5 ); // $ExpectType Uint64
 	x.hi; // $ExpectType number
@@ -72,7 +72,7 @@ import Uint64 = require( './index' );
 	new Uint64( 5, 3 ); // $ExpectError
 }
 
-// Attached to the constructor is a `from` method which returns an unsigned 64-bit integer...
+// Attached to the constructor is a `from` method which returns a 64-bit unsigned integer...
 {
 	Uint64.from( [ 0, 1 ] ); // $ExpectType Uint64
 	Uint64.from( new Uint32Array( [ 0, 1 ] ) ); // $ExpectType Uint64
@@ -88,7 +88,7 @@ import Uint64 = require( './index' );
 	Uint64.from( {} ); // $ExpectError
 }
 
-// Attached to the constructor is an `of` method which returns an unsigned 64-bit integer...
+// Attached to the constructor is an `of` method which returns a 64-bit unsigned integer...
 {
 	Uint64.of( 0, 1 ); // $ExpectType Uint64
 }

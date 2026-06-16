@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/number/uint64/ctor",
   "version": "0.0.0",
-  "description": "Unsigned 64-bit integer.",
+  "description": "64-bit unsigned integer.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
