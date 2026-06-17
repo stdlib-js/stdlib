@@ -1,0 +1,11 @@
+---
+type: amend-message
+---
+feat: add C implementation for `stats/base/dists/erlang/logpdf`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/10719
+Closes: https://github.com/stdlib-js/stdlib/issues/3571
+Co-authored-by: Neeraj Pathak <neerajrpathak710@gmail.com>
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Assisted-by: Claude <noreply@anthropic.com>
