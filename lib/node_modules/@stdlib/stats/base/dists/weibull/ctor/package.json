@@ -67,6 +67,7 @@
     "quantile",
     "properties",
     "props",
-    "univariate"
+    "univariate",
+    "continuous"
   ]
 }

@@ -41,28 +41,30 @@ var scusumkbn2 = require( '@stdlib/blas/ext/base/ndarray/scusumkbn2' );
 Computes the cumulative sum of a one-dimensional single-precision floating-point ndarray using a second-order iterative Kahan–Babuška algorithm.
 
 ```javascript
-var Float32Array = require( '@stdlib/array/float32' );
-var scalar2ndarray = require( '@stdlib/ndarray/base/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 
-var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
-var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float32Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
+var y = new Float32Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 
-var ybuf = new Float32Array( [ 0.0, 0.0, 0.0, 0.0 ] );
-var y = new ndarray( 'float32', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var initial = scalar2ndarray( 0.0, {
+    'dtype': 'float32'
+});
 
-var initial = scalar2ndarray( 0.0, 'float32', 'row-major' );
-
-var v = scusumkbn2( [ x, y, initial ] );
+var z = scusumkbn2( [ x, y, initial ] );
 // returns <ndarray>[ 1.0, 4.0, 8.0, 10.0 ]
 
-var bool = ( v === y );
+var bool = ( z === y );
 // returns true
 ```
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing a one-dimensional input ndarray, a one-dimensional output ndarray, and a zero-dimensional ndarray containing the initial sum.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a one-dimensional output ndarray.
+    -   a zero-dimensional ndarray containing the initial sum.
 
 </section>
 
@@ -85,28 +87,26 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var zerosLike = require( '@stdlib/ndarray/zeros-like' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var scusumkbn2 = require( '@stdlib/blas/ext/base/ndarray/scusumkbn2' );
 
-var xbuf = discreteUniform( 10, -50, 50, {
+var opts = {
     'dtype': 'float32'
-});
-var x = new ndarray( 'float32', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = discreteUniform( [ 10 ], -50, 50, opts );
 console.log( ndarray2array( x ) );
 
 var y = zerosLike( x );
 console.log( ndarray2array( y ) );
 
-var initial = scalar2ndarray( 100.0, {
-    'dtype': 'float32'
-});
+var initial = scalar2ndarray( 100.0, opts );
 
-var v = scusumkbn2( [ x, y, initial ] );
-console.log( ndarray2array( v ) );
+var z = scusumkbn2( [ x, y, initial ] );
+console.log( ndarray2array( z ) );
 ```
 
 </section>

@@ -32,7 +32,7 @@
 * -   Support for copying class instances is inherently fragile. Any instances with privileged access to variables (e.g., within closures) cannot be cloned. This stated, basic copying of class instances is supported. Provided an environment which supports ES5, the implementation is greedy and performs a deep clone of any arbitrary class instance and its properties. The implementation assumes that the concept of `level` applies only to the class instance reference, but not to its internal state.
 *
 * @param value - value to copy
-* @param  level - copy depth (default: +infinity)
+* @param level - copy depth (default: +infinity)
 * @throws `level` must be a nonnegative integer
 * @returns value copy
 *

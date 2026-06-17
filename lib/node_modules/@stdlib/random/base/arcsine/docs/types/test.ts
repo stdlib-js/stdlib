@@ -151,14 +151,14 @@ import arcsine = require( './index' );
 	arcsine.factory( 2, 2, { 'prng': null } ); // $ExpectError
 	arcsine.factory( 2, 2, { 'prng': [] } ); // $ExpectError
 	arcsine.factory( 2, 2, { 'prng': {} } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'prng': true ); // $ExpectError
+	arcsine.factory( 2, 2, { 'prng': true } ); // $ExpectError
 
 	arcsine.factory( { 'prng': 123 } ); // $ExpectError
 	arcsine.factory( { 'prng': 'abc' } ); // $ExpectError
 	arcsine.factory( { 'prng': null } ); // $ExpectError
 	arcsine.factory( { 'prng': [] } ); // $ExpectError
 	arcsine.factory( { 'prng': {} } ); // $ExpectError
-	arcsine.factory( { 'prng': true ); // $ExpectError
+	arcsine.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import arcsine = require( './index' );
 	arcsine.factory( 2, 2, { 'state': null } ); // $ExpectError
 	arcsine.factory( 2, 2, { 'state': [] } ); // $ExpectError
 	arcsine.factory( 2, 2, { 'state': {} } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'state': true ); // $ExpectError
+	arcsine.factory( 2, 2, { 'state': true } ); // $ExpectError
 	arcsine.factory( 2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	arcsine.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import arcsine = require( './index' );
 	arcsine.factory( { 'state': null } ); // $ExpectError
 	arcsine.factory( { 'state': [] } ); // $ExpectError
 	arcsine.factory( { 'state': {} } ); // $ExpectError
-	arcsine.factory( { 'state': true ); // $ExpectError
+	arcsine.factory( { 'state': true } ); // $ExpectError
 	arcsine.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 
