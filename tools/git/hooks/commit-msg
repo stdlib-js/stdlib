@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# A Git hook called after a developer writes a commit message. If this scripts exits with a non-zero status, the commit will be aborted.
+# A Git hook called after a developer writes a commit message. If this script exits with a non-zero status, the commit will be aborted.
 #
 # This hook is called with the following arguments:
 #

@@ -46,8 +46,8 @@ The namespace contains the following distribution functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`cdf( x, lambda )`][@stdlib/stats/base/dists/planck/cdf]</span><span class="delimiter">: </span><span class="description">planck (discrete exponential) distribution cumulative distribution function.</span>
--   <span class="signature">[`logcdf( x, lambda )`][@stdlib/stats/base/dists/planck/logcdf]</span><span class="delimiter">: </span><span class="description">evaluate the logarithm of the cumulative distribution function for a Planck (discrete exponential) distribution.</span>
--   <span class="signature">[`logpmf( x, lambda )`][@stdlib/stats/base/dists/planck/logpmf]</span><span class="delimiter">: </span><span class="description">evaluate the logarithm of the probability mass function (PMF) for a Planck (discrete exponential) distribution.</span>
+-   <span class="signature">[`logcdf( x, lambda )`][@stdlib/stats/base/dists/planck/logcdf]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of the cumulative distribution function for a Planck (discrete exponential) distribution.</span>
+-   <span class="signature">[`logpmf( x, lambda )`][@stdlib/stats/base/dists/planck/logpmf]</span><span class="delimiter">: </span><span class="description">evaluate the natural logarithm of the probability mass function (PMF) for a Planck (discrete exponential) distribution.</span>
 -   <span class="signature">[`mgf( t, lambda )`][@stdlib/stats/base/dists/planck/mgf]</span><span class="delimiter">: </span><span class="description">planck (discrete exponential) distribution moment-generating function (MGF).</span>
 -   <span class="signature">[`pmf( x, lambda )`][@stdlib/stats/base/dists/planck/pmf]</span><span class="delimiter">: </span><span class="description">planck (discrete exponential) distribution probability mass function (PMF).</span>
 -   <span class="signature">[`quantile( p, lambda )`][@stdlib/stats/base/dists/planck/quantile]</span><span class="delimiter">: </span><span class="description">planck (discrete exponential) distribution quantile function.</span>

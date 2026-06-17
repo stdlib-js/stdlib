@@ -25,15 +25,19 @@ import { complex128ndarray } from '@stdlib/types/ndarray';
 /**
 * Fills a one-dimensional double-precision complex floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from zero.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns input ndarray
 *
 * @example
-* var Complex128Array = require( '@stdlib/array/complex128' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 *
-* var xbuf = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-* var x = new ndarray( 'complex128', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = new Complex128Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 *
 * var out = zzeroTo( [ x ] );
 * // returns <ndarray>[ <Complex128>[ 0.0, 0.0 ], <Complex128>[ 1.0, 0.0 ], <Complex128>[ 2.0, 0.0 ], <Complex128>[ 3.0, 0.0 ] ]
