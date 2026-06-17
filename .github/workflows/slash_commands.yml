@@ -25,6 +25,9 @@ on:
     types:
       - created
       - edited
+  commit_comment:
+    types:
+      - created
 
 # Workflow jobs:
 jobs:
@@ -39,12 +42,13 @@ jobs:
     runs-on: ubuntu-latest
 
     # Define the conditions under which the job should run:
-    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/stdlib')
+    if: (github.event.issue.pull_request || github.event_name == 'commit_comment') && startsWith(github.event.comment.body, '/stdlib')
 
     # Define the job's steps:
     steps:
       # Add "bot: In progress" label to the issue / PR:
       - name: 'Add in-progress label'
+        if: github.event.issue.pull_request
         # Pin action to full length commit SHA
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
@@ -63,28 +67,52 @@ jobs:
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
+            const isCommitComment = context.eventName === 'commit_comment';
             const commentBody = context.payload.comment.body.trim();
             const RE_COMMANDS = /^\/stdlib\s+(help|check-files|update-copyright-years|lint-autofix|merge|rebase|make-commands)$/i;
-            const isRecognizedCommand = RE_COMMANDS.test( commentBody );
+            const RE_TODO_COMMAND = /^\/stdlib\s+todo\b/i;
+
+            // For commit comments, only the todo command is supported:
+            const isRecognizedCommand = isCommitComment
+              ? RE_TODO_COMMAND.test( commentBody )
+              : RE_COMMANDS.test( commentBody ) || RE_TODO_COMMAND.test( commentBody );
 
             if ( isRecognizedCommand ) {
-              await github.rest.reactions.createForIssueComment({
-                'owner': context.repo.owner,
-                'repo': context.repo.repo,
-                'comment_id': context.payload.comment.id,
-                'content': 'eyes'
-              });
+              if ( isCommitComment ) {
+                await github.rest.reactions.createForCommitComment({
+                  'owner': context.repo.owner,
+                  'repo': context.repo.repo,
+                  'comment_id': context.payload.comment.id,
+                  'content': 'eyes'
+                });
+              } else {
+                await github.rest.reactions.createForIssueComment({
+                  'owner': context.repo.owner,
+                  'repo': context.repo.repo,
+                  'comment_id': context.payload.comment.id,
+                  'content': 'eyes'
+                });
+              }
             } else {
               // Include the full user comment as a Markdown quote block in response:
               const lines = commentBody.split( '\n' );
               const quote = lines.map( line => `> ${line}` ).join( '\n' );
 
-              await github.rest.issues.createComment({
-                'owner': context.repo.owner,
-                'repo': context.repo.repo,
-                'issue_number': context.issue.number,
-                'body': `${quote}\n\n@${context.payload.comment.user.login}, slash command not recognized. Please use \`/stdlib help\` to view available commands.`
-              });
+              if ( isCommitComment ) {
+                await github.rest.repos.createCommitComment({
+                  'owner': context.repo.owner,
+                  'repo': context.repo.repo,
+                  'commit_sha': context.payload.comment.commit_id,
+                  'body': `${quote}\n\n@${context.payload.comment.user.login}, slash command not recognized. On commit comments, only \`/stdlib todo\` is supported.`
+                });
+              } else {
+                await github.rest.issues.createComment({
+                  'owner': context.repo.owner,
+                  'repo': context.repo.repo,
+                  'issue_number': context.issue.number,
+                  'body': `${quote}\n\n@${context.payload.comment.user.login}, slash command not recognized. Please use \`/stdlib help\` to view available commands.`
+                });
+              }
             }
 
   # Define a job for checking for required files:
@@ -224,6 +252,31 @@ jobs:
       STDLIB_BOT_GPG_PRIVATE_KEY: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
       STDLIB_BOT_GPG_PASSPHRASE: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
 
+  # Define a job for creating a new todo issue:
+  todo:
+
+    # Define a display name:
+    name: 'Create a new todo issue'
+
+    # Ensure initial reaction job has completed before running this job:
+    needs: [ add_initial_reaction ]
+
+    # Define the conditions under which the job should run:
+    if: |
+      (github.event.issue.pull_request || github.event_name == 'commit_comment') &&
+      startsWith(github.event.comment.body, '/stdlib todo') &&
+      contains(fromJSON('["OWNER","MEMBER"]'), github.event.comment.author_association)
+
+    # Run reusable workflow:
+    uses: ./.github/workflows/create_todo_issue.yml
+    with:
+      source_type: ${{ github.event_name == 'commit_comment' && 'commit' || 'pr' }}
+      source_ref: ${{ github.event_name == 'commit_comment' && github.event.comment.commit_id || github.event.issue.number }}
+      comment_body: ${{ github.event.comment.body }}
+      user: ${{ github.event.comment.user.login }}
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+
   # Define a job for printing a list of available slash commands:
   help:
 
@@ -262,6 +315,7 @@ jobs:
             - `/stdlib lint-autofix` - Auto-fix lint errors.
             - `/stdlib merge` - Merge changes from develop branch into this PR.
             - `/stdlib rebase` - Rebase this PR on top of develop branch.
+            - `/stdlib todo` - Create a new todo issue.
 
           # GitHub token:
           token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
@@ -276,7 +330,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Ensure all previous jobs have completed before running this job:
-    needs: [ add_initial_reaction, check_files, make-commands, update_copyright_years, fix_lint_errors, merge_develop, rebase_develop, help ]
+    needs: [ add_initial_reaction, check_files, make-commands, update_copyright_years, fix_lint_errors, merge_develop, rebase_develop, help, todo ]
 
     # Define the conditions under which the job should run:
     if: |

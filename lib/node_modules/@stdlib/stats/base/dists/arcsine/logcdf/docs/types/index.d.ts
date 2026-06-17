@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Evaluates the logarithm of the cumulative distribution function (CDF) for an arcsine distribution.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for an arcsine distribution.
 *
 * @param x - input value
 * @returns evaluated logCDF
@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogCDF {
 	/**
-	* Evaluates the logarithm of the cumulative distribution function (CDF) for an arcsine distribution with minimum support `a` and maximum support `b` at a value `x`.
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for an arcsine distribution with minimum support `a` and maximum support `b` at a value `x`.
 	*
 	* ## Notes
 	*

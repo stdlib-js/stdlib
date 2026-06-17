@@ -190,7 +190,7 @@ console.log( out );
 ### Usage
 
 ```c
-#include "stdlib/blas/ext/base/dcartesiansquare.h"
+#include "stdlib/blas/ext/base/dcartesian_square.h"
 ```
 
 #### stdlib_strided_dcartesian_square( order, N, \*X, strideX, \*Out, LDO )
@@ -268,7 +268,7 @@ void stdlib_strided_dcartesian_square_ndarray( const CBLAS_INT N, const double *
 ### Examples
 
 ```c
-#include "stdlib/blas/ext/base/dcartesiansquare.h"
+#include "stdlib/blas/ext/base/dcartesian_square.h"
 #include "stdlib/blas/base/shared.h"
 #include <stdio.h>
 

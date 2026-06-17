@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Probability Density Function
 
-> [Logistic][logistic-distribution] distribution logarithm of [probability density function (PDF)][pdf].
+> [Logistic][logistic-distribution] distribution natural logarithm of [probability density function (PDF)][pdf].
 
 <section class="intro">
 
@@ -55,7 +55,7 @@ var logpdf = require( '@stdlib/stats/base/dists/logistic/logpdf' );
 
 #### logpdf( x, mu, s )
 
-Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [logistic][logistic-distribution] distribution with parameters `mu` (location parameter) and `s` (scale parameter).
+Evaluates the natural logarithm of the [probability density function][pdf] (PDF) for a [logistic][logistic-distribution] distribution with parameters `mu` (location parameter) and `s` (scale parameter).
 
 ```javascript
 var y = logpdf( 2.0, 0.0, 1.0 );
@@ -176,7 +176,7 @@ logEachMap( 'x: %0.4f, µ: %0.4f, s: %0.4f, ln(f(x;µ,s)): %0.4f', x, mu, s, log
 
 #### stdlib_base_dists_logistic_logpdf( x, mu, s )
 
-Evaluates the logarithm of the probability density function (PDF) for a logistic distribution with location parameter `mu` and scale parameter `s` at a value `x`.
+Evaluates the natural logarithm of the probability density function (PDF) for a logistic distribution with location parameter `mu` and scale parameter `s` at a value `x`.
 
 ```c
 double out = stdlib_base_dists_logistic_logpdf( 2.0, 0.0, 1.0 );

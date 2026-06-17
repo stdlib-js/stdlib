@@ -103,7 +103,7 @@ interface Namespace {
 	entropy: typeof entropy;
 
 	/**
-	* Lévy distribution logarithm of cumulative distribution function (logCDF).
+	* Lévy distribution natural logarithm of cumulative distribution function (logCDF).
 	*
 	* @param x - input value
 	* @param mu - location parameter

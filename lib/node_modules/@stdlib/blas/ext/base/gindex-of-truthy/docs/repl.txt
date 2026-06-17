@@ -1,0 +1,70 @@
+
+{{alias}}( N, x, strideX )
+    Returns the index of the first truthy element in a strided array.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    if `N <= 0`, the function returns `-1`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Array|TypedArray
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    Returns
+    -------
+    idx: integer
+        Index.
+
+    Examples
+    --------
+    > var x = [ 0.0, 0.0, 1.0, 0.0, 2.0, 3.0 ];
+    > var idx = {{alias}}( x.length, x, 1 )
+    2
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX )
+    Returns the index of the first truthy element in a strided array using
+    alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a
+    starting index.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Array|TypedArray
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    Returns
+    -------
+    idx: integer
+        Index.
+
+    Examples
+    --------
+    > var x = [ 0.0, 0.0, 1.0, 0.0, 2.0, 3.0 ];
+    > var idx = {{alias}}.ndarray( x.length, x, 1, 0 )
+    2
+
+    See Also
+    --------
