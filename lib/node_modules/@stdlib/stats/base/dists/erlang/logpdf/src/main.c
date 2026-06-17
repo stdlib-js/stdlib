@@ -29,7 +29,7 @@
 * @return          evaluated logPDF
 *
 * @example
-* double v = stdlib_base_dists_erlang_logpdf( 0.1, 1, 1.0 );
+* double v = stdlib_base_dists_erlang_logpdf( 0.1, 1.0, 1.0 );
 * // returns ~-0.1
 */
 double stdlib_base_dists_erlang_logpdf( const double x, const double k, const double lambda ) {

@@ -125,7 +125,7 @@ var idx = gindexOfTruthy.ndarray( 3, x, 1, x.length-3 );
 
 ## Notes
 
--   Both functions return `-1`, if the functions are unable to find a truthy element.
+-   If unable to find a truthy element, both functions return `-1`.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>

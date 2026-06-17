@@ -129,6 +129,32 @@ y = mylogpdf( 4.0 );
 
 <!-- /.usage -->
 
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var uniform = require( '@stdlib/random/array/uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
+var logpdf = require( '@stdlib/stats/base/dists/erlang/logpdf' );
+
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 20, 0.0, 10.0, opts );
+var k = discreteUniform( 20, 0, 10, opts );
+var lambda = uniform( 20, 0.0, 5.0, opts );
+
+logEachMap( 'x: %0.4f, k: %d, λ: %0.4f, ln(f(x;k,λ)): %0.4f', x, k, lambda, logpdf );
+```
+
+</section>
+
+<!-- /.examples -->
+
 <section class="c">
 
 ## C APIs
@@ -223,32 +249,6 @@ int main( void ) {
 </section>
 
 <!-- /.c -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var uniform = require( '@stdlib/random/array/uniform' );
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var logEachMap = require( '@stdlib/console/log-each-map' );
-var logpdf = require( '@stdlib/stats/base/dists/erlang/logpdf' );
-
-var opts = {
-    'dtype': 'float64'
-};
-var x = uniform( 20, 0.0, 10.0, opts );
-var k = discreteUniform( 20, 0, 10, opts );
-var lambda = uniform( 20, 0.0, 5.0, opts );
-
-logEachMap( 'x: %0.4f, k: %d, λ: %0.4f, ln(f(x;k,λ)): %0.4f', x, k, lambda, logpdf );
-```
-
-</section>
-
-<!-- /.examples -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
