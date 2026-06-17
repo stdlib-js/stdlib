@@ -53,7 +53,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var y = maybeBroadcastArrayExceptDimensions( x, [ 2, 2, 3 ], [ -2 ] );
 * // returns <ndarray>[ [ [ 1, 2, 3 ] ], [ [ 1, 2, 3 ] ] ]
 */
-declare function maybeBroadcastArrayExceptDimensions<T extends ndarray>( arr: T, shape: Collection<number>, dims: Collection<number> ): T;
+declare function maybeBroadcastArrayExceptDimensions<T extends ndarray = ndarray>( arr: T, shape: Collection<number>, dims: Collection<number> ): T;
 
 
 // EXPORTS //

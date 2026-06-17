@@ -44,7 +44,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var out = ndarrayWith( x, [ 0, 0 ], 5 );
 * // returns <ndarray>[ [ 5, 2 ], [ 3, 4 ] ]
 */
-declare function ndarrayWith<T = unknown, U extends typedndarray<T> = typedndarray<T>>( x: typedndarray<T>, indices: Array<number>, value: T ): U;
+declare function ndarrayWith<T = unknown, U extends typedndarray<T> = typedndarray<T>>( x: U, indices: Array<number>, value: T ): U;
 
 
 // EXPORTS //
