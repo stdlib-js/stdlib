@@ -25,7 +25,7 @@ declare class Frechet {
 	/**
 	* Fréchet distribution constructor.
 	*
-	* @param alpha - shape parameter (default: 0.0)
+	* @param alpha - shape parameter (default: 1.0)
 	* @param s - scale parameter (default: 1.0)
 	* @param m - location parameter (default: 0.0)
 	* @throws `alpha` must be a positive number
@@ -49,12 +49,12 @@ declare class Frechet {
 	* @returns distribution instance
 	*
 	* @example
-	* var Frechet = new Frechet();
+	* var frechet = new Frechet();
 	*
-	* var y = Frechet.cdf( 0.8 );
+	* var y = frechet.cdf( 0.8 );
 	* // returns ~0.287
 	*
-	* var mu = Frechet.mean;
+	* var mu = frechet.mean;
 	* // returns Infinity
 	*/
 	constructor();

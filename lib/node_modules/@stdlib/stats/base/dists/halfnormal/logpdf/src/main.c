@@ -27,7 +27,7 @@
 static const double C = 0.5 * ( STDLIB_CONSTANT_FLOAT64_LN2 - STDLIB_CONSTANT_FLOAT64_LN_PI );
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for a half-normal distribution with scale parameter `sigma`.
+* Evaluates the natural logarithm of the probability density function (PDF) for a half-normal distribution with scale parameter `sigma`.
 *
 * @param x       input value
 * @param sigma   scale parameter

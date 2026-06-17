@@ -97,10 +97,10 @@ static double benchmark( void ) {
 	double t;
 	int i;
 
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 100, 10, 1 };
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 100, 10, 1 };
 	int64_t offset = 0;
-	int64_t ndims = 3;
+	const int64_t ndims = 3;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {

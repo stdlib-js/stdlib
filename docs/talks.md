@@ -18,6 +18,8 @@ limitations under the License.
 
 -->
 
+<!--lint disable expected-html-sections-->
+
 <!--lint disable no-duplicate-headings-in-section-->
 
 # Talks
@@ -32,7 +34,7 @@ limitations under the License.
 
 <div class="image" align="center">
     <a title="Bringing Complex Computations To Browsers With Open Source" href="https://youtu.be/rox9LZz_ffI">
-        <img width="480" src="" alt="Bringing Complex Computations To Browsers With Open Source">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@59a6ae8e735cabb5db1603d36ca6d0693f8184b4/docs/assets/talks/hpsf_conference_2026_gunj_joshi.png" alt="Bringing Complex Computations To Browsers With Open Source">
     </a>
     <br>
 </div>
