@@ -74,6 +74,64 @@ interface Results {
 }
 
 /**
+* Interface describing a serialized results object.
+*/
+interface ResultsJSON {
+	/**
+	* Boolean indicating whether the null hypothesis was rejected.
+	*/
+	rejected: boolean;
+
+	/**
+	* Alternative hypothesis.
+	*/
+	alternative: string;
+
+	/**
+	* Significance level.
+	*/
+	alpha: number;
+
+	/**
+	* p-value.
+	*/
+	pValue: number;
+
+	/**
+	* Test statistic.
+	*/
+	statistic: number;
+
+	/**
+	* Confidence interval.
+	*/
+	ci: {
+		type: string;
+		data: Array<number>;
+	};
+
+	/**
+	* Difference in means under the null hypothesis.
+	*/
+	nullValue: number;
+
+	/**
+	* Sample mean of `x`.
+	*/
+	xmean: number;
+
+	/**
+	* Sample mean of `y`.
+	*/
+	ymean: number;
+
+	/**
+	* Test method.
+	*/
+	method: string;
+}
+
+/**
 * Serializes a two-sample Z-test results object as a JSON object.
 *
 * @param results - two-sample Z-test results object
@@ -98,7 +156,7 @@ interface Results {
 * var obj = res2json( results );
 * // returns {...}
 */
-declare function res2json( results: Results ): Results;
+declare function res2json( results: Results ): ResultsJSON;
 
 
 // EXPORTS //
