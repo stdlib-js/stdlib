@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogPMF {
 	/**
-	* Evaluates the logarithm of the probability mass function (PMF) for a Planck distribution with shape parameter `lambda` at a value `x`.
+	* Evaluates the natural logarithm of the probability mass function (PMF) for a Planck distribution with shape parameter `lambda` at a value `x`.
 	*
 	* ## Notes
 	*
