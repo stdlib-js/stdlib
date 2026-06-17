@@ -28,10 +28,12 @@
 * var bool = isStartcase( 'Beep Boop' );
 * // returns true
 *
-* bool = isStartcase( 'beep boop' );
+* @example
+* var bool = isStartcase( 'beep boop' );
 * // returns false
 *
-* bool = isStartcase( 'Beep and Boop' );
+* @example
+* var bool = isStartcase( 'Beep and Boop' );
 * // returns false
 */
 declare function isStartcase( value: any ): boolean;

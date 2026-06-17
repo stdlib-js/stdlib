@@ -32,7 +32,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - `x` stride length
-	* @returns out
+	* @returns sum of absolute values
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
@@ -51,7 +51,7 @@ interface Routine {
 	* @param x - input array
 	* @param strideX - `x` stride length
 	* @param offsetX - starting index for `x`
-	* @returns out
+	* @returns sum of absolute values
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
@@ -70,7 +70,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param x - input array
 * @param strideX - `x` stride length
-* @returns out
+* @returns sum of absolute values
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
