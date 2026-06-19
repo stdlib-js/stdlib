@@ -70,11 +70,11 @@ void API_SUFFIX(c_cgemv)( const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE trans
 		return;
 	}
 	if ( strideX == 0 ) {
-		c_xerbla( 9, "c_cgemv", "Error: invalid argument. Ninth argument must be a nonzero. Value: `%d`.", strideX );
+		c_xerbla( 9, "c_cgemv", "Error: invalid argument. Ninth argument must be nonzero. Value: `%d`.", strideX );
 		return;
 	}
 	if ( strideY == 0 ) {
-		c_xerbla( 12, "c_cgemv", "Error: invalid argument. Twelfth argument must be a nonzero. Value: `%d`.", strideY );
+		c_xerbla( 12, "c_cgemv", "Error: invalid argument. Twelfth argument must be nonzero. Value: `%d`.", strideY );
 		return;
 	}
 	if ( layout == CblasColMajor ) {
@@ -88,7 +88,7 @@ void API_SUFFIX(c_cgemv)( const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE trans
 	} else {
 		vala = v;
 	}
-	if ( LDA < v ) {
+	if ( LDA < vala ) {
 		c_xerbla( 7, "c_cgemv", "Error: invalid argument. Seventh argument must be greater than or equal to max(1,%d). Value: `%d`.", vala, LDA );
 		return;
 	}

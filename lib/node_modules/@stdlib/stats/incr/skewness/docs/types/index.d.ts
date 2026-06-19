@@ -35,11 +35,6 @@ type accumulator = ( x?: number ) => number | null;
 /**
 * Returns an accumulator function which incrementally computes a corrected sample skewness.
 *
-* ## Notes
-*
-* -   If provided a value, the accumulator function returns an updated corrected sample skewness. If not provided a value, the accumulator function returns the current corrected sample skewness.
-* -   If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for all future invocations.
-*
 * @returns accumulator function
 *
 * @example

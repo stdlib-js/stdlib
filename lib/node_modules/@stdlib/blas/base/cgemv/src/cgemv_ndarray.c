@@ -37,7 +37,7 @@
 * @param alpha     scalar constant
 * @param A         input matrix
 * @param strideA1  stride of the first dimension of `A`
-* @param strideA1  stride of the second dimension of `A`
+* @param strideA2  stride of the second dimension of `A`
 * @param offsetA   starting index for `A`
 * @param X         first input vector
 * @param strideX   `X` stride length
@@ -84,11 +84,11 @@ void API_SUFFIX(c_cgemv_ndarray)( const CBLAS_TRANSPOSE trans, const CBLAS_INT M
 		return;
 	}
 	if ( strideX == 0 ) {
-		c_xerbla( 10, "c_cgemv_ndarray", "Error: invalid argument. Tenth argument must be a nonzero. Value: `%d`.", strideX );
+		c_xerbla( 10, "c_cgemv_ndarray", "Error: invalid argument. Tenth argument must be nonzero. Value: `%d`.", strideX );
 		return;
 	}
 	if ( strideY == 0 ) {
-		c_xerbla( 14, "c_cgemv_ndarray", "Error: invalid argument. Fourteenth argument must be a nonzero. Value: `%d`.", strideY );
+		c_xerbla( 14, "c_cgemv_ndarray", "Error: invalid argument. Fourteenth argument must be nonzero. Value: `%d`.", strideY );
 		return;
 	}
 	ap = (stdlib_complex64_t *)A;
@@ -113,7 +113,7 @@ void API_SUFFIX(c_cgemv_ndarray)( const CBLAS_TRANSPOSE trans, const CBLAS_INT M
 	}
 	// Y = beta * Y
 	if ( stdlib_base_complex64_is_equal( beta, zero ) ) {
-		API_SUFFIX(stdlib_strided_cfill_ndarray)( ylen, alpha, Y, strideY, offsetY );
+		API_SUFFIX(stdlib_strided_cfill_ndarray)( ylen, zero, Y, strideY, offsetY );
 	} else if ( !stdlib_base_complex64_is_equal( beta, one ) ) {
 		API_SUFFIX(c_cscal_ndarray)( ylen, beta, Y, strideY, offsetY );
 	}
