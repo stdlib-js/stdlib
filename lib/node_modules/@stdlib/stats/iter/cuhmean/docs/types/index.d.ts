@@ -23,7 +23,7 @@
 import { Iterator } from '@stdlib/types/iter';
 
 /**
-* Returns an iterator which iteratively computes a cumulative arithmetic geometric mean.
+* Returns an iterator which iteratively computes a cumulative harmonic mean.
 *
 * ## Notes
 *

@@ -542,7 +542,7 @@ interface Namespace {
 	*
 	* var X = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 	*
-	* var out = ns.dlassq( 4, X, 1, 1.0, 0.0, out );
+	* var out = ns.dlassq( 4, X, 1, 1.0, 0.0 );
 	* // returns <Float64Array>[ 1.0, 30.0 ]
 	*
 	* @example
@@ -636,17 +636,17 @@ interface Namespace {
 	* @returns index of the last non-zero column
 	*
 	* @example
-	* var Float64array = require( '@stdlib/array/float64' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var A = new Float64array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] ); // => [ [ 1.0, 2.0, 0,0 ], [ 3.0, 4.0, 0.0 ] ]
+	* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] ); // => [ [ 1.0, 2.0, 0.0 ], [ 3.0, 4.0, 0.0 ] ]
 	*
 	* var out = ns.iladlc( 'row-major', 2, 3, A, 3 );
 	* // returns 1
 	*
 	* @example
-	* var Float64array = require( '@stdlib/array/float64' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var A = new Float64array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] ); // => [ [ 1.0, 2.0, 0,0 ], [ 3.0, 4.0, 0.0 ] ]
+	* var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] ); // => [ [ 1.0, 2.0, 0.0 ], [ 3.0, 4.0, 0.0 ] ]
 	*
 	* var out = ns.iladlc.ndarray( 2, 3, A, 3, 1, 0 );
 	* // returns 1
@@ -668,17 +668,17 @@ interface Namespace {
 	* @returns index of the last non-zero row
 	*
 	* @example
-	* var Float64array = require( '@stdlib/array/float64' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var A = new Float64array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
+	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
 	*
 	* var out = ns.iladlr( 'row-major', 3, 2, A, 2 );
 	* // returns 1
 	*
 	* @example
-	* var Float64array = require( '@stdlib/array/float64' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var A = new Float64array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
+	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
 	*
 	* var out = ns.iladlr.ndarray( 3, 2, A, 2, 1, 0 );
 	* // returns 1

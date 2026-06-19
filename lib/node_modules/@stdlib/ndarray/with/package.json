@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/ndarray/with",
   "version": "0.0.0",
-  "description": "Returns a new ndarray with the element at a specified index replaced by a provided value.",
+  "description": "Return a new ndarray with the element at a specified index replaced by a provided value.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
