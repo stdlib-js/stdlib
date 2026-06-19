@@ -30,7 +30,7 @@ extern "C" {
 #endif
 
 /**
-* Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
+* Copies values from one single-precision complex floating-point vector to another single-precision complex floating-point vector.
 */
 void ccopy( const CBLAS_INT *, const void *, const CBLAS_INT *, void *, const CBLAS_INT * );
 

@@ -46,8 +46,8 @@ The namespace contains the following distribution functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`cdf( x, k, lambda )`][@stdlib/stats/base/dists/weibull/cdf]</span><span class="delimiter">: </span><span class="description">Weibull distribution cumulative distribution function.</span>
--   <span class="signature">[`logcdf( x, k, lambda )`][@stdlib/stats/base/dists/weibull/logcdf]</span><span class="delimiter">: </span><span class="description">Weibull distribution logarithm of cumulative distribution function.</span>
--   <span class="signature">[`logpdf( x, k, lambda )`][@stdlib/stats/base/dists/weibull/logpdf]</span><span class="delimiter">: </span><span class="description">Weibull distribution logarithm of probability density function (PDF).</span>
+-   <span class="signature">[`logcdf( x, k, lambda )`][@stdlib/stats/base/dists/weibull/logcdf]</span><span class="delimiter">: </span><span class="description">Weibull distribution natural logarithm of cumulative distribution function.</span>
+-   <span class="signature">[`logpdf( x, k, lambda )`][@stdlib/stats/base/dists/weibull/logpdf]</span><span class="delimiter">: </span><span class="description">Weibull distribution natural logarithm of probability density function (PDF).</span>
 -   <span class="signature">[`mgf( t, k, lambda )`][@stdlib/stats/base/dists/weibull/mgf]</span><span class="delimiter">: </span><span class="description">Weibull distribution moment-generating function (MGF).</span>
 -   <span class="signature">[`pdf( x, k, lambda )`][@stdlib/stats/base/dists/weibull/pdf]</span><span class="delimiter">: </span><span class="description">Weibull distribution probability density function (PDF).</span>
 -   <span class="signature">[`quantile( p, k, lambda )`][@stdlib/stats/base/dists/weibull/quantile]</span><span class="delimiter">: </span><span class="description">Weibull distribution quantile function.</span>

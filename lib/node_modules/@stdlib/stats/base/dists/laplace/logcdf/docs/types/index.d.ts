@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogCDF {
 	/**
-	* Evaluates the logarithm of the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at value `x`.
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at value `x`.
 	*
 	* ## Notes
 	*

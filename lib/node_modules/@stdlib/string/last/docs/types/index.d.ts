@@ -44,7 +44,7 @@ interface Options {
 * @param str - input string
 * @param n - number of characters to return
 * @param options - options
-* @returns updated string
+* @returns output string
 *
 * @example
 * var out = last( 'last man standing', 2 );
@@ -63,7 +63,7 @@ declare function last( str: string, n: number, options?: Options ): string;
 *
 * @param str - input string
 * @param options - options
-* @returns updated string
+* @returns output string
 *
 * @example
 * var out = last( 'last man standing', {
@@ -84,7 +84,7 @@ declare function last( str: string, options?: Options ): string;
 *
 * @param str - input string
 * @param n - number of characters to return (default: 1)
-* @returns updated string
+* @returns output string
 *
 * @example
 * var out = last( 'last man standing' );
