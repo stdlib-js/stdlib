@@ -1060,7 +1060,7 @@
 "@stdlib/stats/strided/dmax",base.strided.dmax
 "@stdlib/stats/strided/dmaxabs",base.strided.dmaxabs
 "@stdlib/stats/strided/dmaxabs-sorted",base.strided.dmaxabsSorted
-"@stdlib/stats/strided/dmaxsorted",base.strided.dmaxsorted
+"@stdlib/stats/strided/dmax-sorted",base.strided.dmaxSorted
 "@stdlib/stats/strided/dmean",base.strided.dmean
 "@stdlib/stats/strided/dmeankbn",base.strided.dmeankbn
 "@stdlib/stats/strided/dmeankbn2",base.strided.dmeankbn2
