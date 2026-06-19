@@ -88,7 +88,7 @@ a = new Uint64( 10000000000 );
 w = toWords( a );
 // returns [ 2, 1410065408 ]
 
-a = new Uint64.of( 12, 34 );
+a = Uint64.of( 12, 34 );
 w = toWords( a );
 // returns [ 12, 34 ]
 ```
