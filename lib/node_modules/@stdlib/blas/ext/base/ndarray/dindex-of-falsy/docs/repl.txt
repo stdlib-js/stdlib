@@ -1,0 +1,27 @@
+
+{{alias}}( arrays )
+    Returns the index of the first falsy element in a one-dimensional double-
+    precision floating-point ndarray.
+
+    If unable to find a falsy element, the function returns `-1`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: integer
+        Index.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, 0.0, 3.0 ] );
+    > {{alias}}( [ x ] )
+    1
+
+    See Also
+    --------
