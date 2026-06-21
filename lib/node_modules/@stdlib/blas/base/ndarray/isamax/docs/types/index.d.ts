@@ -40,7 +40,7 @@ import { float32ndarray } from '@stdlib/types/ndarray';
 * var x = new Float32Vector( [ 1.0, -2.0, 3.0, -4.0, 5.0 ] );
 *
 * var y = isamax( [ x ] );
-* // returns 4.0
+* // returns 4
 */
 declare function isamax( arrays: [ float32ndarray ] ): number;
 

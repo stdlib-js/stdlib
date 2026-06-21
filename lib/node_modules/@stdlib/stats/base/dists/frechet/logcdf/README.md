@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Fréchet][frechet-distribution] distribution logarithm of [cumulative distribution function][cdf].
+> [Fréchet][frechet-distribution] distribution natural logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 
