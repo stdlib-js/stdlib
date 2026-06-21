@@ -11,6 +11,8 @@
 
     If `N <= 0`, the function returns `false`.
 
+    The function explicitly treats `NaN` values as falsy.
+
     Parameters
     ----------
     N: integer
