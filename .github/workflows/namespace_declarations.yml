@@ -154,7 +154,7 @@ jobs:
           - [ ] Approve the PR once you are confident about the classification and changes made." \
                   --label "Documentation" \
                   --label "automated-pr" \
-                  --reviewer "@stdlib-js/reviewers" \
+                  --reviewer "stdlib-js/reviewers" \
                   --base develop \
                   --head "$branch_name"
               fi

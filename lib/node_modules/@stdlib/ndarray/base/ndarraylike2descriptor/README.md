@@ -40,7 +40,7 @@ limitations under the License.
 var ndarraylike2descriptor = require( '@stdlib/ndarray/base/ndarraylike2descriptor' );
 ```
 
-#### ndarraylike2descriptor( dtype, buffer, shape, strides, offset, order )
+#### ndarraylike2descriptor( x )
 
 Converts an ndarray-like object to an ndarray [descriptor][@stdlib/ndarray/base/descriptor].
 

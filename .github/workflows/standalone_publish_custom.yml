@@ -130,8 +130,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           DEBUG: ${{ env.ACTIONS_STEP_DEBUG && 'scripts:publish-packages' || '' }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          PACKAGES: ${{ github.event.inputs.packages }}
+          PACKAGES_PATTERN: ${{ github.event.inputs.pattern }}
         run: |
           # Save NPM_TOKEN to user's .npmrc:
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 
-          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js ${{ github.event.inputs.packages }} --release-type ${{ github.event.inputs.release-type }} ${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual ' || '' }}${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel ' || '' }}${{ github.event.inputs.only-unpublished == 'true' && '--only-unpublished ' || '' }}${{ github.event.inputs.pattern && format('--pattern {0}', github.event.inputs.pattern ) || '' }}
+          node lib/node_modules/@stdlib/_tools/scripts/publish_packages.js $PACKAGES --release-type ${{ github.event.inputs.release-type }} ${{ github.event.inputs.dry-run == 'true' && '--skip-upload ' || '' }}${{ github.event.inputs.skip == 'skip-individual' && '--skip-individual ' || '' }}${{ github.event.inputs.skip == 'skip-toplevel' && '--skip-toplevel ' || '' }}${{ github.event.inputs.only-unpublished == 'true' && '--only-unpublished ' || '' }}${PACKAGES_PATTERN:+--pattern "$PACKAGES_PATTERN"}

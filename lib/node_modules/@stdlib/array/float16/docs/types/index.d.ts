@@ -239,6 +239,8 @@ type BinaryReducer<U> = ( acc: U, value: number ) => U;
 type TernaryReducer<U> = ( acc: U, value: number, index: number ) => U;
 
 /**
+* Reducer function invoked for each element in an array.
+*
 * @param acc - accumulated result
 * @param value - current array element
 * @param index - current array element index
@@ -280,6 +282,7 @@ declare class Float16Array {
 	* @throws ArrayBuffer byte length must be a multiple of `2`
 	* @throws if provided only a single argument, must provide a valid argument
 	* @throws byte offset must be a nonnegative integer
+	* @throws byte offset must be a multiple of `2`
 	* @throws view length must be a positive multiple of `2`
 	* @throws must provide sufficient memory to accommodate byte offset and view length requirements
 	* @returns half-precision floating-point number array

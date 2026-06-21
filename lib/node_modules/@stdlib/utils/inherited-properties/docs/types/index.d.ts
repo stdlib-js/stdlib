@@ -23,6 +23,7 @@
 *
 * ## Notes
 *
+* -   Property order is not guaranteed, as object property enumeration is not specified according to the ECMAScript specification. In practice, however, most engines use insertion order to sort an object's properties, thus allowing for deterministic extraction.
 * -   If provided `null` or `undefined`, the function returns an empty array.
 *
 * @param value - input object
@@ -32,7 +33,6 @@
 *
 * @example
 * var props = inheritedProperties( [] );
-* // returns [...]
 */
 declare function inheritedProperties( value: any, level?: number ): Array<string|symbol>;
 

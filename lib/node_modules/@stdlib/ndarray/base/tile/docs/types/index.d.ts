@@ -44,7 +44,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var y = tile( x, [ 2, 2 ] );
 * // returns <ndarray>[ [ 1, 2, 1, 2 ], [ 3, 4, 3, 4 ], [ 1, 2, 1, 2 ], [ 3, 4, 3, 4 ] ]
 */
-declare function tile<T extends ndarray>( x: T, reps: ArrayLike<number> ): T;
+declare function tile<T extends ndarray = ndarray>( x: T, reps: ArrayLike<number> ): T;
 
 
 // EXPORTS //

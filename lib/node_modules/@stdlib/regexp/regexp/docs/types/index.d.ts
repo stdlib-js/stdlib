@@ -21,7 +21,7 @@
 /**
 * Interface for a regular expression to parse a regular expression string.
 */
-interface ReNativeFunction {
+interface ReRegExp {
 	/**
 	* Returns a regular expression to parse a regular expression string.
 	*
@@ -66,7 +66,7 @@ interface ReNativeFunction {
 * var bool = reRegExp.REGEXP.test( '/^beep$/' );
 * // returns true
 */
-declare var reRegExp: ReNativeFunction;
+declare var reRegExp: ReRegExp;
 
 
 // EXPORTS //
