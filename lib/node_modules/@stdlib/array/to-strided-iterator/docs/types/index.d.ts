@@ -92,8 +92,10 @@ type MapFunction = Nullary | Unary | Binary | Ternary | Quaternary;
 * @param mapFcn - function to invoke for each iterated value
 * @param thisArg - execution context
 * @throws first argument must be a nonnegative integer
+* @throws second argument must be an array-like object
 * @throws third argument must be an integer
 * @throws fourth argument must be a nonnegative integer
+* @throws fifth argument must be a function
 * @returns iterator
 *
 * @example

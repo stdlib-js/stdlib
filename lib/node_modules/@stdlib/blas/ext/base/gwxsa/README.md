@@ -20,16 +20,16 @@ limitations under the License.
 
 # gwxsa
 
-> Subtract a scalar constant from each element in a strided array `x` and assign the results to elements in a strided array `y`.
+> Subtract a scalar constant from each element in a strided array `x` and assign the results to elements in a strided array `w`.
 
 <section class="intro">
 
 This BLAS extension implements the operation
 
-<!-- <equation class="equation" label="eq:wxsa" align="center" raw="\mathbf{y} = \mathbf{x} - \alpha" alt="Equation for wxsa operation."> -->
+<!-- <equation class="equation" label="eq:wxsa" align="center" raw="\mathbf{w} = \mathbf{x} - \alpha" alt="Equation for wxsa operation."> -->
 
 ```math
-\mathbf{y} = \mathbf{x} - \alpha
+\mathbf{w} = \mathbf{x} - \alpha
 ```
 
 <!-- </equation> -->
@@ -48,16 +48,16 @@ This API is complementary to the package [`@stdlib/blas/ext/base/gwapx`][@stdlib
 var gwxsa = require( '@stdlib/blas/ext/base/gwxsa' );
 ```
 
-#### gwxsa( N, alpha, x, strideX, y, strideY )
+#### gwxsa( N, alpha, x, strideX, w, strideW )
 
-Subtracts a scalar constant from each element in a strided array `x` and assigns the results to elements in a strided array `y`.
+Subtracts a scalar constant from each element in a strided array `x` and assigns the results to elements in a strided array `w`.
 
 ```javascript
 var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
-var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
+var w = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
-gwxsa( x.length, 5.0, x, 1, y, 1 );
-// y => [ -4.0, -3.0, -2.0, -1.0, 0.0 ]
+gwxsa( x.length, 5.0, x, 1, w, 1 );
+// w => [ -4.0, -3.0, -2.0, -1.0, 0.0 ]
 ```
 
 The function has the following parameters:
@@ -66,17 +66,17 @@ The function has the following parameters:
 -   **alpha**: scalar constant.
 -   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideX**: stride length for `x`.
--   **y**: output [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
--   **strideY**: stride length for `y`.
+-   **w**: output [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
+-   **strideW**: stride length for `w`.
 
-The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to subtract `alpha` from every other element in `x` and assign the results to every other element in `y`:
+The `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to subtract `alpha` from every other element in `x` and assign the results to every other element in `w`:
 
 ```javascript
 var x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
-var y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
+var w = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
-gwxsa( 3, 5.0, x, 2, y, 2 );
-// y => [ -4.0, 0.0, -2.0, 0.0, 0.0, 0.0 ]
+gwxsa( 3, 5.0, x, 2, w, 2 );
+// w => [ -4.0, 0.0, -2.0, 0.0, 0.0, 0.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -86,41 +86,41 @@ var Float64Array = require( '@stdlib/array/float64' );
 
 // Initial arrays...
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-var y0 = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
+var w0 = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 // Create offset views...
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
+var w1 = new Float64Array( w0.buffer, w0.BYTES_PER_ELEMENT*2 ); // start at 3rd element
 
-gwxsa( 3, 5.0, x1, 1, y1, 1 );
-// y0 => <Float64Array>[ 0.0, 0.0, -3.0, -2.0, -1.0, 0.0 ]
+gwxsa( 3, 5.0, x1, 1, w1, 1 );
+// w0 => <Float64Array>[ 0.0, 0.0, -3.0, -2.0, -1.0, 0.0 ]
 ```
 
-#### gwxsa.ndarray( N, alpha, x, strideX, offsetX, y, strideY, offsetY )
+#### gwxsa.ndarray( N, alpha, x, strideX, offsetX, w, strideW, offsetW )
 
-Subtracts a scalar constant from each element in a strided array `x` and assigns the results to elements in a strided array `y` using alternative indexing semantics.
+Subtracts a scalar constant from each element in a strided array `x` and assigns the results to elements in a strided array `w` using alternative indexing semantics.
 
 ```javascript
 var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
-var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
+var w = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
-gwxsa.ndarray( x.length, 5.0, x, 1, 0, y, 1, 0 );
-// y => [ -4.0, -3.0, -2.0, -1.0, 0.0 ]
+gwxsa.ndarray( x.length, 5.0, x, 1, 0, w, 1, 0 );
+// w => [ -4.0, -3.0, -2.0, -1.0, 0.0 ]
 ```
 
 The function has the following additional parameters:
 
 -   **offsetX**: starting index for `x`.
--   **offsetY**: starting index for `y`.
+-   **offsetW**: starting index for `w`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to subtract `alpha` from the last three elements of `x` and assign the results to the last three elements of `y`:
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to subtract `alpha` from the last three elements of `x` and assign the results to the last three elements of `w`:
 
 ```javascript
 var x = [ 1.0, 2.0, 3.0, 4.0, 5.0 ];
-var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
+var w = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
-gwxsa.ndarray( 3, 5.0, x, 1, x.length-3, y, 1, y.length-3 );
-// y => [ 0.0, 0.0, -2.0, -1.0, 0.0 ]
+gwxsa.ndarray( 3, 5.0, x, 1, x.length-3, w, 1, w.length-3 );
+// w => [ 0.0, 0.0, -2.0, -1.0, 0.0 ]
 ```
 
 </section>
@@ -131,7 +131,7 @@ gwxsa.ndarray( 3, 5.0, x, 1, x.length-3, y, 1, y.length-3 );
 
 ## Notes
 
--   If `N <= 0`, both functions return `y` unchanged.
+-   If `N <= 0`, both functions return `w` unchanged.
 -   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 
 </section>
@@ -153,13 +153,13 @@ var x = discreteUniform( 10, -100, 100, {
 });
 console.log( x );
 
-var y = discreteUniform( 10, -100, 100, {
+var w = discreteUniform( 10, -100, 100, {
     'dtype': 'float64'
 });
-console.log( y );
+console.log( w );
 
-gwxsa( x.length, 5.0, x, 1, y, 1 );
-console.log( y );
+gwxsa( x.length, 5.0, x, 1, w, 1 );
+console.log( w );
 ```
 
 </section>

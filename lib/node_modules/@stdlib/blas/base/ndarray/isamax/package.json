@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/base/ndarray/isamax",
   "version": "0.0.0",
-  "description": "Finds the index of the first element having the maximum absolute value for all elements in a one-dimensional single-precision floating-point ndarray.",
+  "description": "Find the index of the first element having the maximum absolute value for all elements in a one-dimensional single-precision floating-point ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

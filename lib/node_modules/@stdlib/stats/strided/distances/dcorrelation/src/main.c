@@ -25,12 +25,12 @@
 /**
 * Computes the correlation distance between two double-precision floating-point strided arrays.
 *
-* @param N            number of indexed elements
-* @param X            first input array
-* @param strideX      stride length of `X`
-* @param Y            second input array
-* @param strideY      stride length of `Y`
-* @return             output value
+* @param N        number of indexed elements
+* @param X        first input array
+* @param strideX  X stride length
+* @param Y        second input array
+* @param strideY  Y stride length
+* @return         correlation distance
 */
 double API_SUFFIX(stdlib_strided_dcorrelation)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY ) {
 	const CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
@@ -41,14 +41,14 @@ double API_SUFFIX(stdlib_strided_dcorrelation)( const CBLAS_INT N, const double 
 /**
 * Computes the correlation distance between two double-precision floating-point strided arrays using alternative indexing semantics.
 *
-* @param N            number of indexed elements
-* @param X            first input array
-* @param strideX      stride length of `X`
-* @param offsetX      starting index for X
-* @param Y            second input array
-* @param strideY      stride length of `Y`
-* @param offsetY      starting index for Y
-* @return             output value
+* @param N        number of indexed elements
+* @param X        first input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
+* @param Y        second input array
+* @param strideY  Y stride length
+* @param offsetY  starting index for Y
+* @return         correlation distance
 */
 double API_SUFFIX(stdlib_strided_dcorrelation_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY ) {
 	if ( N <= 0 ) {

@@ -38,11 +38,11 @@
 * // returns 1.0
 *
 * @example
-* var v = powf( 3.141592653589793, 5.0 );
+* var v = powf( 3.1415927410125732, 5.0 );
 * // returns ~306.0197
 *
 * @example
-* var v = powf( 3.141592653589793, -0.2 );
+* var v = powf( 3.1415927410125732, -0.2 );
 * // returns ~0.7954
 *
 * @example

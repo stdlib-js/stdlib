@@ -1,0 +1,88 @@
+
+{{alias}}( N, x, strideX )
+    Tests whether every element in a strided array is falsy.
+
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `true`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: ArrayLikeObject
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether all elements are falsy.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 0, 0, 1, 1 ];
+    > {{alias}}( x.length, x, 1 )
+    false
+
+    // Using `N` and stride parameters:
+    > x = [ 0, 0, 0, 0, 1, 0, 1, 0 ];
+    > {{alias}}( 4, x, 2 )
+    false
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 0, 1, 1, 1 ] );
+    > var x1 = new {{alias:@stdlib/array/uint8}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 3, x1, 2 )
+    false
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX )
+    Tests whether every element in a strided array is falsy using alternative
+    indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: ArrayLikeObject
+        Input array.
+
+    strideX: integer
+        Stride length.
+
+    offsetX: integer
+        Starting index.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether all elements are falsy.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = [ 0, 0, 1, 1 ];
+    > {{alias}}.ndarray( x.length, x, 1, 0 )
+    false
+
+    // Advanced indexing:
+    > x = [ 0, 0, 0, 0, 1, 0, 1, 0 ];
+    > {{alias}}.ndarray( 3, x, 2, 2 )
+    false
+
+    See Also
+    --------

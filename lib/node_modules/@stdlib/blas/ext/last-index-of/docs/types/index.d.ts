@@ -75,7 +75,7 @@ interface Options extends BaseOptions {
 /**
 * Interface describing `lastIndexOf`.
 */
-interface lastIndexOf {
+interface LastIndexOf {
 	/**
 	* Returns the last index of a specified search element along an ndarray dimension.
 	*
@@ -224,7 +224,7 @@ interface lastIndexOf {
 * var bool = ( out === y );
 * // returns true
 */
-declare const lastIndexOf: lastIndexOf;
+declare const lastIndexOf: LastIndexOf;
 
 
 // EXPORTS //
