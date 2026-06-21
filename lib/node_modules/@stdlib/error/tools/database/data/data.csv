@@ -1272,3 +1272,5 @@
 "KV","invalid option. Dimension index exceeds the number of dimensions. Number of dimensions: %d. Value: `%d`.","RangeError"
 "KW","invalid argument. All ndarrays must have the same number of rows. Expected number of rows: `%u`. Actual number of rows: `%u`.","Error"
 "KX","invalid argument. Second argument must be a string or an array of strings. Value: `%s`.","TypeError"
+"KY","invalid invocation. Insufficient arguments. Array shape: (%s). Number of indices: %u.","RangeError"
+"KZ","invalid invocation. Too many arguments. Array shape: (%s). Number of indices: %u.","RangeError"
