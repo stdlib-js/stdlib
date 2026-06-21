@@ -203,10 +203,10 @@ console.log( v );
 Computes the [arithmetic mean][arithmetic-mean] of a single-precision floating-point strided array, ignoring `NaN` values and using a two-pass error correction algorithm.
 
 ```c
-const double x[] = { 1.0f, -2.0f, 0.0f/0.0f, 2.0f };
+const float x[] = { 1.0f, -2.0f, 0.0f/0.0f, 2.0f };
 
-double v = stdlib_strided_snanmeanpn( 4, x, 1 );
-// returns ~0.33333
+float v = stdlib_strided_snanmeanpn( 4, x, 1 );
+// returns ~0.33333f
 ```
 
 The function accepts the following arguments:
@@ -224,10 +224,10 @@ float stdlib_strided_snanmeanpn( const CBLAS_INT N, const float *X, const CBLAS_
 Computes the [arithmetic mean][arithmetic-mean] of a single-precision floating-point strided array, ignoring `NaN` values and using a two-pass error correction algorithm and alternative indexing semantics.
 
 ```c
-const double x[] = { 1.0f, -2.0f, 0.0f/0.0f, 2.0f };
+const float x[] = { 1.0f, -2.0f, 0.0f/0.0f, 2.0f };
 
-double v = stdlib_strided_snanmeanpn_ndarray( 4, x, 1, 0 );
-// returns ~0.33333
+float v = stdlib_strided_snanmeanpn_ndarray( 4, x, 1, 0 );
+// returns ~0.33333f
 ```
 
 The function accepts the following arguments:
