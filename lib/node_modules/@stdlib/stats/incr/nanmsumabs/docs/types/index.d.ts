@@ -41,8 +41,6 @@ type accumulator = ( x?: number ) => number | null;
 * @returns accumulator function
 *
 * @example
-* var nanmsumabs = require( '@stdlib/stats/incr/nanmsumabs' );
-*
 * var accumulator = incrnanmsumabs( 3 );
 *
 * var v = accumulator();

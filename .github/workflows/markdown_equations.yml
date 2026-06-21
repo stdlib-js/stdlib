@@ -168,6 +168,15 @@ jobs:
           fi
         timeout-minutes: 15
 
+      # Delete remote PR branch to ensure a clean push when the branch has diverged:
+      - name: 'Delete remote PR branch'
+        if: steps.svg-equations.outputs.changed == 'true' || steps.equation-elements.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          gh api -X DELETE repos/stdlib-js/stdlib/git/refs/heads/markdown-insert-equations 2>/dev/null || true
+        timeout-minutes: 5
+
       # Create a pull request with the updated equations:
       - name: 'Create pull request'
         id: cpr
