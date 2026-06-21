@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/blas/ext/base/scartesianpower.h"
+#include "stdlib/blas/ext/base/scartesian_power.h"
 #include "stdlib/blas/base/shared.h"
 #include <stdlib.h>
 #include <stdio.h>

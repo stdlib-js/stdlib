@@ -79,7 +79,7 @@ interface PDF {
 	( x: number, alpha: number, beta: number ): number;
 
 	/**
-	* Returns a function for evaluating the probability density function (PDF) for a gamma distribution with shape parameter `alpha` and rate parameter `beta`.
+	* Returns a function for evaluating the probability density function (PDF) for an inverse gamma distribution with shape parameter `alpha` and rate parameter `beta`.
 	*
 	* @param alpha - shape parameter
 	* @param beta - rate parameter
