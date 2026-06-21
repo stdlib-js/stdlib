@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the expected value of an anglit distribution with location parameter `mu` and scale parameter `sigma`.
+* Returns the expected value of an anglit distribution with location parameter `mu` and scale parameter `sigma`.
 */
 double stdlib_base_dists_anglit_mean( const double mu, const double sigma );
 
