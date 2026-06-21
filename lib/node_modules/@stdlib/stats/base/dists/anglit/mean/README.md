@@ -26,7 +26,7 @@ limitations under the License.
 
 <section class="intro">
 
-The [mean][mean] of an [anglit][anglit-distribution] random variable with location parameter `mu` and scale parameter `sigma` is
+The [mean][mean] of an [anglit][anglit-distribution] random variable with location parameter `μ` and scale parameter `σ > 0` is
 
 <!-- <equation class="equation" label="eq:anglit_mean" align="center" raw="\mathbb{E}\left[ X \right] = \mu" alt="Mean for an anglit distribution."> -->
 
