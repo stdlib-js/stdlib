@@ -51,4 +51,3 @@
     ],
   }, # end variables
 }
-
