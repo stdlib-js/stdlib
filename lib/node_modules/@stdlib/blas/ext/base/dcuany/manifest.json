@@ -37,6 +37,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/math/base/assert/is-nan",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
@@ -57,6 +58,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/math/base/assert/is-nan",
         "@stdlib/strided/base/stride2offset"
       ]
     },
@@ -72,6 +74,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/math/base/assert/is-nan",
         "@stdlib/strided/base/stride2offset"
       ]
     }

@@ -40,7 +40,7 @@ double stdlib_base_dists_logistic_stdev( const double mu, const double s ) {
 		stdlib_base_is_nan( s ) ||
 		s <= 0.0
 	) {
-		return 0.0/0.0; // NaN
+		return 0.0 / 0.0; // NaN
 	}
 	return s * PI_OVER_SQRT_THREE;
 }

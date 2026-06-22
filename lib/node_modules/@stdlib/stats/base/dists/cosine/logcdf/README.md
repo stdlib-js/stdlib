@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Raised cosine][cosine-distribution] distribution logarithm of [cumulative distribution function][cdf].
+> [Raised cosine][cosine-distribution] distribution natural logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 
