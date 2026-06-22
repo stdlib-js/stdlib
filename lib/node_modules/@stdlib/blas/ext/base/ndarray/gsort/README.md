@@ -86,7 +86,7 @@ The function has the following parameters:
 var uniform = require( '@stdlib/random/uniform' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
-var ndarraylike2scalar = require( '@stdlib/ndarray/base/ndarraylike2scalar' );
+var ndarraylike2scalar = require( '@stdlib/ndarray/ndarraylike2scalar' );
 var gsort = require( '@stdlib/blas/ext/base/ndarray/gsort' );
 
 var x = uniform( [ 10 ], -100, 100, {

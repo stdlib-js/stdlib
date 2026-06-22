@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Lévy][levy-distribution] distribution logarithm of [cumulative distribution function][cdf].
+> [Lévy][levy-distribution] distribution natural logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 
@@ -55,7 +55,7 @@ var logcdf = require( '@stdlib/stats/base/dists/levy/logcdf' );
 
 #### logcdf( x, mu, c )
 
-Evaluates the logarithm of the [cumulative distribution function][cdf] (CDF) for a [Lévy][levy-distribution] distribution with parameters `mu` (location parameter) and `c > 0` (scale parameter).
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [Lévy][levy-distribution] distribution with parameters `mu` (location parameter) and `c > 0` (scale parameter).
 
 ```javascript
 var y = logcdf( 2.0, 0.0, 1.0 );
@@ -177,7 +177,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_dists_levy_logcdf( x, mu, c )
 
-Evaluates the logarithm of the [cumulative distribution function][cdf] (CDF) for a [Lévy][levy-distribution] distribution with parameters `mu` (location parameter) and `c > 0` (scale parameter).
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [Lévy][levy-distribution] distribution with parameters `mu` (location parameter) and `c > 0` (scale parameter).
 
 ```c
 double out = stdlib_base_dists_levy_logcdf( 2.0, 0.0, 1.0 );
