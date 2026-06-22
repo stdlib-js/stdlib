@@ -114,8 +114,10 @@ jobs:
         # Only run this step if a user has write access:
         if: steps.assert-write-access.outcome == 'success'
 
+        env:
+          METADATA: ${{ steps.extract-metadata.outputs.metadata }}
         run: |
-          inputs=$(echo '${{ steps.extract-metadata.outputs.metadata }}' | jq -c '.[] | select(.type | contains("workflow_dispatch"))')
+          inputs=$(echo "$METADATA" | jq -c '.[] | select(.type | contains("workflow_dispatch"))')
           if [ -n "$inputs" ]; then
             name=$(echo $inputs | jq -r '.name')
             inputs=$(echo $inputs | jq -c 'del(.type, .name, .author, .id, .url) | map_values(tostring)')

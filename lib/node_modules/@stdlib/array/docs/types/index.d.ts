@@ -349,12 +349,12 @@ interface Namespace {
 	* @param arg - length, typed array, array-like object, or buffer
 	* @param byteOffset - byte offset (default: 0)
 	* @param length - view length
-	* @throws ArrayBuffer byte length must be a multiple of `8`
+	* @throws ArrayBuffer byte length must be a multiple of `16`
 	* @throws array-like object and typed array input arguments must have a length which is a multiple of two
 	* @throws if provided only a single argument, must provide a valid argument
 	* @throws byte offset must be a nonnegative integer
-	* @throws byte offset must be a multiple of `8`
-	* @throws view length must be a positive multiple of `8`
+	* @throws byte offset must be a multiple of `16`
+	* @throws view length must be a positive multiple of `16`
 	* @throws must provide sufficient memory to accommodate byte offset and view length requirements
 	* @throws an iterator must return either a two element array containing real and imaginary components or a complex number
 	* @returns complex number array
@@ -473,7 +473,7 @@ interface Namespace {
 	* @param length - output array length (default: 100)
 	* @param options - function options
 	* @param options.round - specifies how sub-millisecond times should be rounded: [ 'floor', 'ceil', 'round' ] (default: 'floor' )
-	* @throws length argument must a positive integer
+	* @throws length argument must be a positive integer
 	* @throws must provide valid options
 	* @returns array of dates
 	*
@@ -496,7 +496,7 @@ interface Namespace {
 	datespace: typeof datespace;
 
 	/**
-	* Returns default ndarray settings.
+	* Returns default array settings.
 	*
 	* @returns default settings
 	*
@@ -1642,8 +1642,10 @@ interface Namespace {
 	* @param mapFcn - function to invoke for each iterated value
 	* @param thisArg - execution context
 	* @throws first argument must be a nonnegative integer
+	* @throws second argument must be an array-like object
 	* @throws third argument must be an integer
 	* @throws fourth argument must be a nonnegative integer
+	* @throws fifth argument must be a function
 	* @returns iterator
 	*
 	* @example
@@ -1940,7 +1942,7 @@ interface Namespace {
 	/**
 	* Returns a list of typed array real-valued data types.
 	*
-	* @returns list of typed array data types
+	* @returns list of typed array real-valued data types
 	*
 	* @example
 	* var list = ns.realarrayDataTypes();

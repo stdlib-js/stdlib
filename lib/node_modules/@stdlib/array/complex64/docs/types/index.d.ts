@@ -345,7 +345,7 @@ declare class Complex64Array implements Complex64ArrayInterface {
 	* Returns an array element with support for both nonnegative and negative integer indices.
 	*
 	* @param i - element index
-	* @throws index argument must be a integer
+	* @throws index argument must be an integer
 	* @returns array element
 	*
 	* @example

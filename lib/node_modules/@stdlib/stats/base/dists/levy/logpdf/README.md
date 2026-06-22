@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Probability Density Function
 
-> [Lévy][levy-distribution] distribution logarithm of [probability density function (PDF)][pdf].
+> [Lévy][levy-distribution] distribution natural logarithm of [probability density function (PDF)][pdf].
 
 <section class="intro">
 
@@ -55,7 +55,7 @@ var logpdf = require( '@stdlib/stats/base/dists/levy/logpdf' );
 
 #### logpdf( x, mu, c )
 
-Evaluates the logarithm of the [probability density function][pdf] (PDF) for a [Lévy][levy-distribution] distribution with parameters `mu` (location parameter) and `c` (scale parameter).
+Evaluates the natural logarithm of the [probability density function][pdf] (PDF) for a [Lévy][levy-distribution] distribution with parameters `mu` (location parameter) and `c` (scale parameter).
 
 ```javascript
 var y = logpdf( 2.0, 0.0, 1.0 );

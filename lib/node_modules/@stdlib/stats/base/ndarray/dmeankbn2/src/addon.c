@@ -45,8 +45,12 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 		assert( status == napi_ok );
 		return NULL;
 	}
+	// Create a const-qualified view of the argument pointer list:
+	const struct ndarray *arr[ 1 ] = {
+		arrays[ 0 ]
+	};
 	// Perform computation:
-	STDLIB_NAPI_CREATE_DOUBLE( env, stdlib_stats_dmeankbn2( arrays ), v );
+	STDLIB_NAPI_CREATE_DOUBLE( env, stdlib_stats_dmeankbn2( arr ), v );
 
 	// Free allocated memory:
 	stdlib_ndarray_free( arrays[ 0 ] );

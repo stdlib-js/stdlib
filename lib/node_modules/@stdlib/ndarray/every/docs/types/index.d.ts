@@ -125,7 +125,7 @@ interface Every {
 	* var v = out.get();
 	* // returns true
 	*/
-	assign<T extends ndarray>( x: ndarray, y: T, options?: BaseOptions ): T;
+	assign<T extends ndarray = ndarray>( x: ndarray, y: T, options?: BaseOptions ): T;
 }
 
 /**

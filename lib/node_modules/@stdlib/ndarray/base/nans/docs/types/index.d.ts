@@ -23,12 +23,12 @@
 import { Shape, Order, typedndarray, genericndarray, float64ndarray, float32ndarray, complex128ndarray, complex64ndarray, FloatingPointAndGenericDataType, GenericDataType, Float64DataType, Float32DataType, Complex128DataType, Complex64DataType } from '@stdlib/types/ndarray';
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param dtype - underlying data type
 * @param shape - array shape
 * @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getDType = require( '@stdlib/ndarray/dtype' );
@@ -42,12 +42,12 @@ import { Shape, Order, typedndarray, genericndarray, float64ndarray, float32ndar
 declare function nans( dtype: Float64DataType, shape: Shape, order: Order ): float64ndarray;
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param dtype - underlying data type
 * @param shape - array shape
 * @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getDType = require( '@stdlib/ndarray/dtype' );
@@ -61,12 +61,12 @@ declare function nans( dtype: Float64DataType, shape: Shape, order: Order ): flo
 declare function nans( dtype: Float32DataType, shape: Shape, order: Order ): float32ndarray;
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param dtype - underlying data type
 * @param shape - array shape
 * @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getDType = require( '@stdlib/ndarray/dtype' );
@@ -80,12 +80,12 @@ declare function nans( dtype: Float32DataType, shape: Shape, order: Order ): flo
 declare function nans( dtype: Complex128DataType, shape: Shape, order: Order ): complex128ndarray;
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param dtype - underlying data type
 * @param shape - array shape
 * @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getDType = require( '@stdlib/ndarray/dtype' );
@@ -99,12 +99,12 @@ declare function nans( dtype: Complex128DataType, shape: Shape, order: Order ): 
 declare function nans( dtype: Complex64DataType, shape: Shape, order: Order ): complex64ndarray;
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param dtype - underlying data type
 * @param shape - array shape
 * @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getDType = require( '@stdlib/ndarray/dtype' );
@@ -118,12 +118,12 @@ declare function nans( dtype: Complex64DataType, shape: Shape, order: Order ): c
 declare function nans( dtype: GenericDataType, shape: Shape, order: Order ): genericndarray<number>;
 
 /**
-* Creates a NaN-filled array having a specified shape and data type.
+* Creates a NaN-filled ndarray having a specified shape and data type.
 *
 * @param dtype - underlying data type
 * @param shape - array shape
 * @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getDType = require( '@stdlib/ndarray/dtype' );
