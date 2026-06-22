@@ -37,6 +37,7 @@ This directory contains [`make`][make] rules for running the project's installat
     -   [Cppcheck](#cppcheck)
     -   [Electron](#electron)
     -   [Emscripten SDK](#emscripten-sdk)
+    -   [Highway](#highway)
     -   [LLVM](#llvm)
     -   [OpenBLAS](#openblas)
     -   [Python](#python)
@@ -421,6 +422,36 @@ $ make clean-deps-emscripten-tests
 
 * * *
 
+<a name="highway"></a>
+
+### Highway
+
+#### install-deps-highway
+
+Installs [Highway][highway].
+
+```bash
+$ make install-deps-highway
+```
+
+#### clean-deps-highway
+
+Removes an installed [Highway][highway] distribution.
+
+```bash
+$ make clean-deps-highway
+```
+
+#### clean-deps-highway-tests
+
+Removes compiled [Highway][highway] installation tests.
+
+```bash
+$ make clean-deps-highway-tests
+```
+
+* * *
+
 <a name="llvm"></a>
 
 ### LLVM
@@ -656,6 +687,8 @@ $ make clean-deps-wasi-libc-tests
 [electron]: https://www.electronjs.org/
 
 [emscripten-sdk]: https://github.com/emscripten-core/emsdk
+
+[highway]: https://github.com/google/highway
 
 [llvm]: https://llvm.org
 
