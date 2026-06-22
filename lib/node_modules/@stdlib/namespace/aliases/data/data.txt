@@ -1060,7 +1060,7 @@ base.strided.dmap2
 base.strided.dmax
 base.strided.dmaxabs
 base.strided.dmaxabsSorted
-base.strided.dmaxsorted
+base.strided.dmaxSorted
 base.strided.dmean
 base.strided.dmeankbn
 base.strided.dmeankbn2
