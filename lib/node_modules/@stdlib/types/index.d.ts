@@ -38,9 +38,43 @@ declare module '@stdlib/types/array' {
 	import { Remap } from '@stdlib/types/utilities';
 
 	/**
+	* Interface describing a half-precision floating-point typed array for environments lacking native `Float16Array` support.
+	*/
+	interface Float16ArrayFallback { // FIXME: revisit this and the following `Float16Array` workarounds once we upgrade TS to a version which natively supports Float16Array
+		/**
+		* Underlying buffer.
+		*/
+		readonly buffer: ArrayBuffer;
+
+		/**
+		* Byte length.
+		*/
+		readonly byteLength: number;
+
+		/**
+		* Byte offset.
+		*/
+		readonly byteOffset: number;
+
+		/**
+		* Number of bytes per element.
+		*/
+		readonly BYTES_PER_ELEMENT: 2;
+
+		/**
+		* Indexed properties.
+		*/
+		[ index: number ]: number;
+	}
+
+	/**
 	* Half-precision floating-point typed array.
 	*/
-	type Float16Array = ArrayLike<number>; // FIXME: revisit once we upgrade TS to a version which natively supports Float16Array
+	type Float16Array = typeof globalThis extends {
+		readonly Float16Array: {
+			readonly prototype: infer T;
+		}
+	} ? T : Float16ArrayFallback;
 
 	/**
 	* Data type.
