@@ -1074,7 +1074,7 @@
 "@stdlib/stats/strided/dmeanvar",base.strided.dmeanvar
 "@stdlib/stats/strided/dmeanvarpn",base.strided.dmeanvarpn
 "@stdlib/stats/strided/dmeanwd",base.strided.dmeanwd
-"@stdlib/stats/strided/dmediansorted",base.strided.dmediansorted
+"@stdlib/stats/strided/dmedian-sorted",base.strided.dmedianSorted
 "@stdlib/stats/strided/dmidrange",base.strided.dmidrange
 "@stdlib/stats/strided/dmin",base.strided.dmin
 "@stdlib/stats/strided/dminabs",base.strided.dminabs

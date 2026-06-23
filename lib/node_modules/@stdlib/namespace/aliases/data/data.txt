@@ -1074,7 +1074,7 @@ base.strided.dmeanstdevpn
 base.strided.dmeanvar
 base.strided.dmeanvarpn
 base.strided.dmeanwd
-base.strided.dmediansorted
+base.strided.dmedianSorted
 base.strided.dmidrange
 base.strided.dmin
 base.strided.dminabs
