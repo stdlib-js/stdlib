@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+feat: add float16 datatype support in `array/dtypes`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/9809
+Co-authored-by: Athan Reines <kgryte@gmail.com>
+Reviewed-by: Athan Reines <kgryte@gmail.com>
+Signed-off-by: Athan Reines <kgryte@gmail.com>
