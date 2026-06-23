@@ -73,7 +73,7 @@ declare module '@stdlib/types/array' {
 	type Float16Array = typeof globalThis extends {
 		readonly Float16Array: {
 			readonly prototype: infer T;
-		}
+		};
 	} ? T : Float16ArrayFallback;
 
 	/**
