@@ -224,6 +224,8 @@ void stdlib_strided_f_as_d(...) {...}
 
 is a function which accepts one single-precision floating-point strided output array. However, the callback returns double-precision floating-point numbers. Accordingly, the output value needs to be cast using the following conversion sequence
 
+<!-- run-disable -->
+
 ```c
 // Evaluate the callback:
 double out = f();
@@ -2098,6 +2100,8 @@ void stdlib_strided_z_as_u( uint8_t *arrays[], const int64_t *shape, const int64
 
 Macro containing the preamble for a loop which updates a strided output array.
 
+<!-- run-disable -->
+
 ```c
 STDLIB_STRIDED_NULLARY_LOOP_PREMABLE {
     // Loop body...
@@ -2117,6 +2121,8 @@ The macro defines the following variables:
 -   **n**: `int64_t` number of indexed elements.
 -   **i**: `int64_t` loop counter.
 
+<!-- run-disable -->
+
 ```c
 #define STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE               \
     uint8_t *op1 = arrays[ 0 ];                            \
@@ -2135,6 +2141,8 @@ The macro defines the following variables:
 #### STDLIB_STRIDED_NULLARY_LOOP_TWO_OUT_PREAMBLE
 
 Macro containing the preamble for a loop which updates two strided output arrays.
+
+<!-- run-disable -->
 
 ```c
 STDLIB_STRIDED_NULLARY_LOOP_TWO_OUT_PREMABLE {
@@ -2156,6 +2164,8 @@ The macro defines the following variables:
 -   **os2**: `int64_t` index increment for the second output strided array.
 -   **n**: `int64_t` number of indexed elements.
 -   **i**: `int64_t` loop counter.
+
+<!-- run-disable -->
 
 ```c
 #define STDLIB_STRIDED_NULLARY_LOOP_TWO_OUT_PREAMBLE       \
@@ -2181,6 +2191,8 @@ The macro defines the following variables:
 
 Macro for a nullary loop which inlines an expression.
 
+<!-- run-disable -->
+
 ```c
 STDLIB_STRIDED_NULLARY_LOOP_INLINE( double, *out = (double)1.0 )
 ```
@@ -2196,6 +2208,8 @@ In addition to the variables defined by the `STDLIB_STRIDED_NULLARY_LOOP_PREAMBL
 
 The macro expects a provided expression to store the result via `*out`.
 
+<!-- run-disable -->
+
 ```c
 #define STDLIB_STRIDED_NULLARY_LOOP_INLINE( tout, expr )   \
     STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                 \
@@ -2207,6 +2221,8 @@ The macro expects a provided expression to store the result via `*out`.
 #### STDLIB_STRIDED_NULLARY_LOOP_CLBK( tout )
 
 Macro for a nullary loop which invokes a callback.
+
+<!-- run-disable -->
 
 ```c
 STDLIB_STRIDED_NULLARY_LOOP_CLBK( double )
@@ -2220,6 +2236,8 @@ In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`,
 
 -   **f**: nullary callback.
 
+<!-- run-disable -->
+
 ```c
 #define STDLIB_STRIDED_NULLARY_LOOP_CLBK( tout )           \
     STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                 \
@@ -2230,6 +2248,8 @@ In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`,
 #### STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NOCAST( tout )
 
 Macro for a nullary loop which invokes a callback and does not cast the return callback's return value (e.g., a `struct`).
+
+<!-- run-disable -->
 
 ```c
 #include "stdlib/complex/float64/ctor.h"
@@ -2245,6 +2265,8 @@ In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`,
 
 -   **f**: nullary callback.
 
+<!-- run-disable -->
+
 ```c
 #define STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_NOCAST( tout )                    \
     STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE {                                     \
@@ -2255,6 +2277,8 @@ In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`,
 #### STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_CAST_FCN( tout, cout )
 
 Macro for a nullary loop which invokes a callback whose return values should be cast to a different type via casting functions.
+
+<!-- run-disable -->
 
 ```c
 #include "stdlib/complex/float32/ctor.h"
@@ -2271,6 +2295,8 @@ The macro expects the following arguments:
 In addition to the variables expected by `STDLIB_STRIDED_NULLARY_LOOP_PREAMBLE`, the macro expects the following variables to be defined:
 
 -   **f**: nullary callback.
+
+<!-- run-disable -->
 
 ```c
 #define STDLIB_STRIDED_NULLARY_LOOP_CLBK_RET_CAST_FCN( tout, cout )            \
