@@ -1,0 +1,13 @@
+---
+type: amend-message
+---
+remove!: remove migrated `stats/strided/*` imports from `stats/base/*` namespace
+
+This commit removes leftover symbols from package migration. The removed symbols are all now present in the `stats/strided/*` namespace.
+
+BREAKING CHANGE: remove `d*` symbols from namespace
+
+To migrate, users should access the same symbols in the `stats/strided/*` namespace.
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/13103
+Reviewed-by: Athan Reines <kgryte@gmail.com>
