@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/ndarray/zxsy",
   "version": "0.0.0",
-  "description": "Subtract elements of an output one-dimensional double-precision complex floating-point ndarray from the corresponding elements in an input one-dimensional double-precision complex floating-point ndarray and assign the results to the output ndarray.",
+  "description": "Subtract the elements of an output one-dimensional double-precision complex floating-point ndarray from the corresponding elements in an input one-dimensional double-precision complex floating-point ndarray and assign the results to the output ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
