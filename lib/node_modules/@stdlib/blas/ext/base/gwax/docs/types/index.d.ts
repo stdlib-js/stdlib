@@ -49,7 +49,7 @@ interface Routine {
 	* gwax( x.length, 5.0, x, 1, w, 1 );
 	* // w => [ -10.0, 5.0, 15.0, -25.0, 20.0, 0.0, -5.0, -15.0 ]
 	*/
-	<T extends InputArray, U extends InputArray>( N: number, alpha: number, x: T, strideX: number, w: U, strideW: number ): U;
+	<T extends InputArray = InputArray>( N: number, alpha: number, x: InputArray, strideX: number, w: T, strideW: number ): T;
 
 	/**
 	* Multiplies each element in a strided array `x` by a scalar constant and assigns the results to elements in a strided array `w` using alternative indexing semantics.
@@ -71,7 +71,7 @@ interface Routine {
 	* gwax.ndarray( x.length, 5.0, x, 1, 0, w, 1, 0 );
 	* // w => [ -10.0, 5.0, 15.0, -25.0, 20.0, 0.0, -5.0, -15.0 ]
 	*/
-	ndarray<T extends InputArray, U extends InputArray>( N: number, alpha: number, x: T, strideX: number, offsetX: number, w: U, strideW: number, offsetW: number ): U;
+	ndarray<T extends InputArray = InputArray>( N: number, alpha: number, x: InputArray, strideX: number, offsetX: number, w: T, strideW: number, offsetW: number ): T;
 }
 
 /**

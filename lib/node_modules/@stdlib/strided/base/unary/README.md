@@ -231,6 +231,8 @@ void stdlib_strided_f_f_as_d_d(...) {...}
 
 is a function which accepts one single-precision floating-point strided input array and one single-precision floating-point strided output array. However, the callback accepts and returns double-precision floating-point numbers. Accordingly, the input and output values need to be cast using the following conversion sequence
 
+<!-- run-disable -->
+
 ```c
 // Convert each input array element to double-precision:
 double in1 = (double)x[ i ];

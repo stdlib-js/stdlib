@@ -224,6 +224,8 @@ stdlib_strided_mask_<input_data_type>_<output_data_type>[_as_<callback_arg_data_
 
 For example,
 
+<!-- run-disable -->
+
 ```c
 void stdlib_strided_mask_d_d(...) {...}
 ```
@@ -232,11 +234,15 @@ is a function which accepts one double-precision floating-point strided input ar
 
 To support callbacks whose input arguments and/or return values are of a different data type than the strided input and/or output array data types, the naming convention supports appending an `as` suffix. For example,
 
+<!-- run-disable -->
+
 ```c
 void stdlib_strided_mask_f_f_as_d_d(...) {...}
 ```
 
 is a function which accepts one single-precision floating-point strided input array and one single-precision floating-point strided output array. However, the callback accepts and returns double-precision floating-point numbers. Accordingly, the input and output values need to be cast using the following conversion sequence
+
+<!-- run-disable -->
 
 ```c
 // Convert each input array element to double-precision:
