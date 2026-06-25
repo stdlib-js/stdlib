@@ -51,7 +51,7 @@ interface Routine {
 	* gwxpy( x.length, x, 1, y, 1, w, 1 );
 	* // w => [ 3.0, 5.0, 7.0, 9.0, 11.0 ]
 	*/
-	<T extends InputArray, U extends InputArray, V extends InputArray>( N: number, x: T, strideX: number, y: U, strideY: number, w: V, strideW: number ): V;
+	<T extends InputArray = InputArray>( N: number, x: InputArray, strideX: number, y: InputArray, strideY: number, w: T, strideW: number ): T;
 
 	/**
 	* Adds elements of a strided array `x` to the corresponding elements of a strided array `y` and assigns the results to elements in a strided array `w` using alternative indexing semantics.
@@ -76,7 +76,7 @@ interface Routine {
 	* gwxpy.ndarray( x.length, x, 1, 0, y, 1, 0, w, 1, 0 );
 	* // w => [ 3.0, 5.0, 7.0, 9.0, 11.0 ]
 	*/
-	ndarray<T extends InputArray, U extends InputArray, V extends InputArray>( N: number, x: T, strideX: number, offsetX: number, y: U, strideY: number, offsetY: number, w: V, strideW: number, offsetW: number ): V;
+	ndarray<T extends InputArray = InputArray>( N: number, x: InputArray, strideX: number, offsetX: number, y: InputArray, strideY: number, offsetY: number, w: T, strideW: number, offsetW: number ): T;
 }
 
 /**

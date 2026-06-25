@@ -20,7 +20,7 @@ limitations under the License.
 
 # zxsy
 
-> Subtract elements of an output one-dimensional double-precision complex floating-point ndarray from the corresponding elements in an input one-dimensional double-precision complex floating-point ndarray and assign the results to the output ndarray.
+> Subtract the elements of an output one-dimensional double-precision complex floating-point ndarray from the corresponding elements in an input one-dimensional double-precision complex floating-point ndarray and assign the results to the output ndarray.
 
 <section class="intro">
 
