@@ -305,7 +305,7 @@ interface Namespace {
 	* @param options.order - specifies the memory layout of the array as either row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 	* @param options.shape - array shape
 	* @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
-	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: [options.mode])
 	* @param options.copy - boolean indicating whether to copy source data to a new data buffer (default: false)
 	* @param options.flatten - boolean indicating whether to automatically flatten generic array data sources (default: true)
 	* @param options.ndmin - minimum number of dimensions (default: 0)
@@ -945,7 +945,7 @@ interface Namespace {
 	* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
 	* @param options - function options
 	* @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
-	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: [options.mode])
 	* @param options.readonly - specifies whether an array should be read-only (default: false)
 	* @throws `buffer` argument `get` and `set` properties must be functions
 	* @throws `shape` argument must be an array-like object containing nonnegative integers
@@ -1405,7 +1405,7 @@ interface Namespace {
 	* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
 	* @param options - function options
 	* @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
-	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: [options.mode])
 	* @param options.readonly - specifies whether an array should be read-only (default: false)
 	* @throws `buffer` argument `get` and `set` properties must be functions
 	* @throws `shape` argument must be an array-like object containing nonnegative integers
@@ -2580,7 +2580,7 @@ interface Namespace {
 	* @param x - input ndarray
 	* @param options - function options
 	* @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
-	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: [options.mode])
 	* @param options.readonly - specifies whether an array should be read-only
 	* @returns ndarray
 	*
