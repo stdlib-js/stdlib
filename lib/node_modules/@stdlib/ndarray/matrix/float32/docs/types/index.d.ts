@@ -443,7 +443,7 @@ interface Float32Matrix {
 	* var ArrayBuffer = require( '@stdlib/array/buffer' );
 	*
 	* var buf = new ArrayBuffer( 32 );
-	* var arr = new Float32Matrix( buf, 8, [ 2, 1 ] );
+	* var arr = new Float32Matrix( buf, 8, 2, 1 );
 	* // returns <ndarray>
 	*
 	* var sh = getShape( arr );
