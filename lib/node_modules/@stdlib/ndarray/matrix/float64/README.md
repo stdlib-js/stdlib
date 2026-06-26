@@ -116,7 +116,7 @@ var sh = getShape( arr );
 
 The function accepts the following arguments:
 
--   **obj**: array-like object or iterable from which to generate an [ndarray][@stdlib/ndarray/ctor]. If an array-like object, the value must be a nested array (i.e., an array-like object of array-like objects), where each nested array must have the same number of elements. If an iterable, the iterable must return array- like objects, each of which must have the same number of elements.
+-   **obj**: array-like object or iterable from which to generate an [ndarray][@stdlib/ndarray/ctor]. If an array-like object, the value must be a nested array (i.e., an array-like object of array-like objects), where each nested array must have the same number of elements. If an iterable, the iterable must return array-like objects, each of which must have the same number of elements.
 -   **options**: function options. See above.
 
 #### Float64Matrix( buffer\[, byteOffset\[, shape]]\[, options] )

@@ -443,7 +443,7 @@ interface Float64Matrix {
 	* var ArrayBuffer = require( '@stdlib/array/buffer' );
 	*
 	* var buf = new ArrayBuffer( 32 );
-	* var arr = new Float64Matrix( buf, 8, [ 2, 1 ] );
+	* var arr = new Float64Matrix( buf, 8, 2, 1 );
 	* // returns <ndarray>
 	*
 	* var sh = getShape( arr );
