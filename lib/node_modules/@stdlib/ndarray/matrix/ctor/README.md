@@ -161,7 +161,7 @@ var sh2 = getShape( arr2 );
 
 The function accepts the following arguments:
 
--   **obj**: array-like object or iterable from which to generate an [ndarray][@stdlib/ndarray/ctor]. If an array-like object, the value must be a nested array (i.e., an array-like object of array-like objects), where each nested array must have the same number of elements. If an iterable, the iterable must return array- like objects, each of which must have the same number of elements.
+-   **obj**: array-like object or iterable from which to generate an [ndarray][@stdlib/ndarray/ctor]. If an array-like object, the value must be a nested array (i.e., an array-like object of array-like objects), where each nested array must have the same number of elements. If an iterable, the iterable must return array-like objects, each of which must have the same number of elements.
 -   **dtype**: [data type][@stdlib/ndarray/dtypes].
 -   **options**: function options. See above.
 
