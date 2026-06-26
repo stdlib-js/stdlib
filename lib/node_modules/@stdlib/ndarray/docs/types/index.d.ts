@@ -1405,7 +1405,7 @@ interface Namespace {
 	* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
 	* @param options - function options
 	* @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
-	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: [options.mode])
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
 	* @param options.readonly - specifies whether an array should be read-only (default: false)
 	* @throws `buffer` argument `get` and `set` properties must be functions
 	* @throws `shape` argument must be an array-like object containing nonnegative integers
