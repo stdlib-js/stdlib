@@ -124,7 +124,7 @@ declare class Uint64 {
 	/**
 	* Returns the low 32-bit word of a 64-bit unsigned integer.
 	*
-	* @returns high word (32-bit unsigned integer)
+	* @returns low word (32-bit unsigned integer)
 	*
 	* @example
 	* var x = Uint64.from( [ 1, 2 ] );
