@@ -443,7 +443,7 @@ interface Complex128Matrix {
 	* var ArrayBuffer = require( '@stdlib/array/buffer' );
 	*
 	* var buf = new ArrayBuffer( 64 );
-	* var arr = new Complex128Matrix( buf, 16, [ 2, 1 ] );
+	* var arr = new Complex128Matrix( buf, 16, 2, 1 );
 	* // returns <ndarray>
 	*
 	* var sh = getShape( arr );
