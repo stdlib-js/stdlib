@@ -1,6 +1,6 @@
 
 {{alias}}( value )
-    Unsigned 64-bit integer constructor.
+    64-bit unsigned integer constructor.
 
     Parameters
     ----------
@@ -10,7 +10,7 @@
     Returns
     -------
     v: Uint64
-        Unsigned 64-bit integer.
+        64-bit unsigned integer.
 
     Examples
     --------
@@ -30,18 +30,18 @@
 
 
 {{alias}}.from( words )
-    Creates a new unsigned 64-bit integer from an array-like object containing a
+    Creates a new 64-bit unsigned integer from an array-like object containing a
     high and low word.
 
     Parameters
     ----------
     words: ArrayLikeObject
-        High and low words.
+        High and low words as 32-bit unsigned integers.
 
     Returns
     -------
     v: Uint64
-        Unsigned 64-bit integer.
+        64-bit unsigned integer.
 
     Examples
     --------
@@ -50,20 +50,20 @@
 
 
 {{alias}}.of( high, low )
-    Creates a new unsigned 64-bit integer from a high and low word.
+    Creates a new 64-bit unsigned integer from a high and low word.
 
     Parameters
     ----------
     high: integer
-        High word.
+        High word (32-bit unsigned integer).
 
     low: integer
-        Low word.
+        Low word (32-bit unsigned integer).
 
     Returns
     -------
     v: Uint64
-        Unsigned 64-bit integer.
+        64-bit unsigned integer.
 
     Examples
     --------
@@ -118,12 +118,12 @@
 
 
 {{alias}}.prototype.hi
-    Returns the high 32-bit word of an unsigned 64-bit integer.
+    Returns the high 32-bit word of a 64-bit unsigned integer.
 
     Returns
     -------
     w: integer
-        High word.
+        High word (32-bit unsigned integer).
 
     Examples
     --------
@@ -134,12 +134,12 @@
 
 
 {{alias}}.prototype.lo
-    Returns the low 32-bit word of an unsigned 64-bit integer.
+    Returns the low 32-bit word of a 64-bit unsigned integer.
 
     Returns
     -------
     w: integer
-        Low word.
+        Low word (32-bit unsigned integer).
 
     Examples
     --------

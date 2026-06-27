@@ -6137,7 +6137,7 @@ void stdlib_strided_z_z( uint8_t *arrays[], const int64_t *shape, const int64_t 
 Macro containing the preamble for a loop which operates on strided array elements.
 
 ```c
-STDLIB_STRIDED_UNARY_LOOP_PREMABLE {
+STDLIB_STRIDED_UNARY_LOOP_PREAMBLE {
     // Loop body...
 }
 ```
