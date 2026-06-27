@@ -53,7 +53,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var bool = ( z === y );
 * // returns true
 */
-declare function gaxpy<T extends typedndarray<number> = typedndarray<number>, U extends typedndarray<number> = typedndarray<number>>( arrays: [ T, U, T ] ): U;
+declare function gaxpy<T extends typedndarray<number> = typedndarray<number>, U extends typedndarray<number> = typedndarray<number>>( arrays: [ T, U, typedndarray<number> ] ): U;
 
 
 // EXPORTS //

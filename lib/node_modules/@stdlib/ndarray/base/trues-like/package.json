@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/ndarray/base/trues-like",
   "version": "0.0.0",
-  "description": "Create an ndarray filled with `true` values and having the same shape and data type as a provided ndarray.",
+  "description": "Create an ndarray filled with true values and having the same shape and data type as a provided ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

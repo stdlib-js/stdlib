@@ -42,6 +42,7 @@ interface Routine {
 	*
 	* @example
 	* var BooleanArray = require( '@stdlib/array/bool' );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var condition = new BooleanArray( [ true, false, true ] );
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
@@ -73,6 +74,7 @@ interface Routine {
 	*
 	* @example
 	* var BooleanArray = require( '@stdlib/array/bool' );
+	* var Float32Array = require( '@stdlib/array/float32' );
 	*
 	* var condition = new BooleanArray( [ true, false, true ] );
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
@@ -101,6 +103,7 @@ interface Routine {
 *
 * @example
 * var BooleanArray = require( '@stdlib/array/bool' );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var condition = new BooleanArray( [ true, false, true ] );
 * var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
@@ -112,6 +115,7 @@ interface Routine {
 *
 * @example
 * var BooleanArray = require( '@stdlib/array/bool' );
+* var Float32Array = require( '@stdlib/array/float32' );
 *
 * var condition = new BooleanArray( [ true, false, true ] );
 * var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );

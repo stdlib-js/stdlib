@@ -40,7 +40,7 @@
 * @param strideOut  stride length for Out
 * @param offsetOut  starting index for Out
 */
-static void stdlib_strided_internal_sdiff_ndarray( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const CBLAS_INT N1, const float *Prepend, const CBLAS_INT strideP, const CBLAS_INT offsetP, const CBLAS_INT N2, const float *Append, const CBLAS_INT strideA, const CBLAS_INT offsetA, float *Out, const CBLAS_INT strideOut, const CBLAS_INT offsetOut ) {
+static void API_SUFFIX(stdlib_strided_internal_sdiff_ndarray)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const CBLAS_INT N1, const float *Prepend, const CBLAS_INT strideP, const CBLAS_INT offsetP, const CBLAS_INT N2, const float *Append, const CBLAS_INT strideA, const CBLAS_INT offsetA, float *Out, const CBLAS_INT strideOut, const CBLAS_INT offsetOut ) {
 	CBLAS_INT total;
 	CBLAS_INT ix;
 	CBLAS_INT ip;
@@ -207,33 +207,33 @@ void API_SUFFIX(stdlib_strided_sdiff_ndarray)( const CBLAS_INT N, const CBLAS_IN
 	// If `k` is equal to zero, there are no differences to compute, so we merely copy the various arrays into the output array...
 	if ( k == 0 ) {
 		// Copy `Prepend` into output array:
-		c_scopy_ndarray( N1, Prepend, strideP, offsetP, Out, strideOut, offsetOut );
+		API_SUFFIX(c_scopy_ndarray)( N1, Prepend, strideP, offsetP, Out, strideOut, offsetOut );
 
 		// Copy `X` into output array:
 		io = offsetOut + ( N1 * strideOut );
-		c_scopy_ndarray( N, X, strideX, offsetX, Out, strideOut, io );
+		API_SUFFIX(c_scopy_ndarray)( N, X, strideX, offsetX, Out, strideOut, io );
 
 		// Copy `Append` into output array:
 		io = offsetOut + ( ( N1 + N ) * strideOut );
-		c_scopy_ndarray( N2, Append, strideA, offsetA, Out, strideOut, io );
+		API_SUFFIX(c_scopy_ndarray)( N2, Append, strideA, offsetA, Out, strideOut, io );
 
 		return;
 	}
 	// If `k` is equal to one, we can compute the forward difference while writing directly to the output array...
 	if ( k == 1 ) {
-		stdlib_strided_internal_sdiff_ndarray( N, X, strideX, offsetX, N1, Prepend, strideP, offsetP, N2, Append, strideA, offsetA, Out, strideOut, offsetOut );
+		API_SUFFIX(stdlib_strided_internal_sdiff_ndarray)( N, X, strideX, offsetX, N1, Prepend, strideP, offsetP, N2, Append, strideA, offsetA, Out, strideOut, offsetOut );
 		return;
 	}
 	// Compute the first forward difference:
-	stdlib_strided_internal_sdiff_ndarray( N, X, strideX, offsetX, N1, Prepend, strideP, offsetP, N2, Append, strideA, offsetA, Workspace, strideW, offsetW );
+	API_SUFFIX(stdlib_strided_internal_sdiff_ndarray)( N, X, strideX, offsetX, N1, Prepend, strideP, offsetP, N2, Append, strideA, offsetA, Workspace, strideW, offsetW );
 
 	// Recursively compute the next forward differences...
 	n = total - 1;
 	for ( i = 1; i < k - 1; i++ ) {
-		stdlib_strided_internal_sdiff_ndarray( n, Workspace, strideW, offsetW, 0, Prepend, strideP, offsetP, 0, Append, strideA, offsetA, Workspace, strideW, offsetW );
+		API_SUFFIX(stdlib_strided_internal_sdiff_ndarray)( n, Workspace, strideW, offsetW, 0, Prepend, strideP, offsetP, 0, Append, strideA, offsetA, Workspace, strideW, offsetW );
 		n -= 1;
 	}
 	// For the last forward difference, ensure that results are written to the output array:
-	stdlib_strided_internal_sdiff_ndarray( n, Workspace, strideW, offsetW, 0, Prepend, strideP, offsetP, 0, Append, strideA, offsetA, Out, strideOut, offsetOut );
+	API_SUFFIX(stdlib_strided_internal_sdiff_ndarray)( n, Workspace, strideW, offsetW, 0, Prepend, strideP, offsetP, 0, Append, strideA, offsetA, Out, strideOut, offsetOut );
 	return;
 }
