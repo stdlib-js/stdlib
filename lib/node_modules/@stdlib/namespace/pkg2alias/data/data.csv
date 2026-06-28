@@ -1535,12 +1535,14 @@
 "@stdlib/constants/complex64/num-bytes",COMPLEX64_NUM_BYTES
 "@stdlib/constants/complex64/zero",COMPLEX64_ZERO
 "@stdlib/array/complex64",Complex64Array
+"@stdlib/ndarray/matrix/complex64",Complex64Matrix
 "@stdlib/ndarray/vector/complex64",Complex64Vector
 "@stdlib/complex/float64/ctor",Complex128
 "@stdlib/constants/complex128/nan",COMPLEX128_NAN
 "@stdlib/constants/complex128/num-bytes",COMPLEX128_NUM_BYTES
 "@stdlib/constants/complex128/zero",COMPLEX128_ZERO
 "@stdlib/array/complex128",Complex128Array
+"@stdlib/ndarray/matrix/complex128",Complex128Matrix
 "@stdlib/ndarray/vector/complex128",Complex128Vector
 "@stdlib/array/typed-complex",complexarray
 "@stdlib/array/typed-complex-ctors",complexarrayCtors
@@ -1722,6 +1724,7 @@
 "@stdlib/array/float32",Float32Array
 "@stdlib/array/fixed-endian-float32",Float32ArrayFE
 "@stdlib/array/little-endian-float32",Float32ArrayLE
+"@stdlib/ndarray/matrix/float32",Float32Matrix
 "@stdlib/ndarray/vector/float32",Float32Vector
 "@stdlib/constants/float64/exponent-bias",FLOAT64_EXPONENT_BIAS
 "@stdlib/constants/float64/high-word-abs-mask",FLOAT64_HIGH_WORD_ABS_MASK
@@ -1752,6 +1755,7 @@
 "@stdlib/array/float64",Float64Array
 "@stdlib/array/fixed-endian-float64",Float64ArrayFE
 "@stdlib/array/little-endian-float64",Float64ArrayLE
+"@stdlib/ndarray/matrix/float64",Float64Matrix
 "@stdlib/ndarray/vector/float64",Float64Vector
 "@stdlib/utils/for-each",forEach
 "@stdlib/utils/async/for-each",forEachAsync
@@ -1991,6 +1995,7 @@
 "@stdlib/constants/int32/min",INT32_MIN
 "@stdlib/constants/int32/num-bytes",INT32_NUM_BYTES
 "@stdlib/array/int32",Int32Array
+"@stdlib/ndarray/matrix/int32",Int32Matrix
 "@stdlib/ndarray/vector/int32",Int32Vector
 "@stdlib/assert/is-big-endian",IS_BIG_ENDIAN
 "@stdlib/assert/is-browser",IS_BROWSER
@@ -2556,6 +2561,7 @@
 "@stdlib/utils/map-values",mapValues
 "@stdlib/utils/async/map-values",mapValuesAsync
 "@stdlib/utils/mask-arguments",maskArguments
+"@stdlib/ndarray/matrix/ctor",matrix
 "@stdlib/constants/array/max-array-length",MAX_ARRAY_LENGTH
 "@stdlib/constants/array/max-typed-array-length",MAX_TYPED_ARRAY_LENGTH
 "@stdlib/ndarray/maybe-broadcast-array",maybeBroadcastArray
