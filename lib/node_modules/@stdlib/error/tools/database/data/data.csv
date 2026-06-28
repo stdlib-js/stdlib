@@ -1274,3 +1274,8 @@
 "KX","invalid argument. Second argument must be a string or an array of strings. Value: `%s`.","TypeError"
 "KY","invalid invocation. Insufficient arguments. Array shape: (%s). Number of indices: %u.","RangeError"
 "KZ","invalid invocation. Too many arguments. Array shape: (%s). Number of indices: %u.","RangeError"
+"Ka","invalid argument. Must provide a shape, ArrayBuffer, array-like object, iterable, data type, or options object. Value: `%s`.","TypeError"
+"Kb","invalid argument. First argument must be a shape, ArrayBuffer, array-like object, or iterable. Value: `%s`.","TypeError"
+"Kc","invalid argument. Third argument must be a valid shape. Value: `%s`.","TypeError"
+"Kd","invalid argument. Fifth argument must be a recognized/supported data type. Value: `%s`.","TypeError"
+"Ke","invalid argument. Second argument must be a supported distance metric. Value: `%s`.","TypeError"
