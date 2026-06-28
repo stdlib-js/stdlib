@@ -533,7 +533,7 @@ interface Namespace {
 	*
 	* @example
 	* var list = ns.dtypes();
-	* // e.g., returns [ 'float32', 'float64', ... ]
+	* // e.g., returns [ 'float16', 'float32', ... ]
 	*
 	* @example
 	* var list = ns.dtypes( 'floating_point' );
