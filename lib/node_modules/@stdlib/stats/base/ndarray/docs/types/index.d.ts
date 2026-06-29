@@ -233,7 +233,6 @@ interface Namespace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
 	* var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
@@ -243,13 +242,10 @@ interface Namespace {
 	* var y = new ndarray( 'generic', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 	*
 	* var v = ns.cumax( [ x, y ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 3.0, 4.0, 4.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 3.0, 4.0, 4.0 ]
 	*/
 	cumax: typeof cumax;
 
@@ -260,7 +256,6 @@ interface Namespace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
 	* var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
@@ -270,13 +265,10 @@ interface Namespace {
 	* var y = new ndarray( 'generic', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 	*
 	* var v = ns.cumin( [ x, y ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 1.0, 1.0, 1.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 1.0, 1.0, 1.0 ]
 	*/
 	cumin: typeof cumin;
 
@@ -328,7 +320,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
 	* var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
@@ -338,13 +329,10 @@ interface Namespace {
 	* var y = new ndarray( 'float64', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 	*
 	* var v = ns.dcumax( [ x, y ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 3.0, 4.0, 4.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 3.0, 4.0, 4.0 ]
 	*/
 	dcumax: typeof dcumax;
 
@@ -356,7 +344,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
 	* var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
@@ -366,13 +353,10 @@ interface Namespace {
 	* var y = new ndarray( 'float64', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 	*
 	* var v = ns.dcumaxabs( [ x, y ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 3.0, 4.0, 4.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 3.0, 4.0, 4.0 ]
 	*/
 	dcumaxabs: typeof dcumaxabs;
 
@@ -384,7 +368,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
 	* var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
@@ -394,13 +377,10 @@ interface Namespace {
 	* var y = new ndarray( 'float64', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 	*
 	* var v = ns.dcumin( [ x, y ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 1.0, 1.0, 1.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 1.0, 1.0, 1.0 ]
 	*/
 	dcumin: typeof dcumin;
 
@@ -412,7 +392,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
 	* var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
@@ -422,13 +401,10 @@ interface Namespace {
 	* var y = new ndarray( 'float64', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 	*
 	* var v = ns.dcuminabs( [ x, y ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 1.0, 1.0, 1.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 1.0, 1.0, 1.0 ]
 	*/
 	dcuminabs: typeof dcuminabs;
 
@@ -2268,7 +2244,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
 	* var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
@@ -2278,13 +2253,10 @@ interface Namespace {
 	* var y = new ndarray( 'float32', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 	*
 	* var v = ns.scumax( [ x, y ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 3.0, 4.0, 4.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 3.0, 4.0, 4.0 ]
 	*/
 	scumax: typeof scumax;
 
@@ -2296,7 +2268,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
 	* var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
@@ -2306,13 +2277,10 @@ interface Namespace {
 	* var y = new ndarray( 'float32', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 	*
 	* var v = ns.scumaxabs( [ x, y ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 3.0, 4.0, 4.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 3.0, 4.0, 4.0 ]
 	*/
 	scumaxabs: typeof scumaxabs;
 
@@ -2324,7 +2292,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
 	* var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
@@ -2334,13 +2301,10 @@ interface Namespace {
 	* var y = new ndarray( 'float32', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 	*
 	* var v = ns.scumin( [ x, y ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 1.0, 1.0, 1.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 1.0, 1.0, 1.0 ]
 	*/
 	scumin: typeof scumin;
 
@@ -2352,7 +2316,6 @@ interface Namespace {
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 	*
 	* var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
@@ -2362,13 +2325,10 @@ interface Namespace {
 	* var y = new ndarray( 'float32', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 	*
 	* var v = ns.scuminabs( [ x, y ] );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 1.0, 1.0, 1.0, 1.0 ]
 	*
 	* var bool = ( v === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( v );
-	* // returns [ 1.0, 1.0, 1.0, 1.0 ]
 	*/
 	scuminabs: typeof scuminabs;
 

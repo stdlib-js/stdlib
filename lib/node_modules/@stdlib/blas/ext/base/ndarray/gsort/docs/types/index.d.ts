@@ -27,24 +27,25 @@ import { typedndarray, genericndarray } from '@stdlib/types/ndarray';
 *
 * ## Notes
 *
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray specifying the sort order.
+*
 * -   When the sort order is less than zero, the input ndarray is sorted in **decreasing** order. When the sort order is greater than zero, the input ndarray is sorted in **increasing** order. When the sort order is equal to zero, the input ndarray is left unchanged.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying the sort order
+* @param arrays - array-like object containing ndarrays
 * @returns input ndarray
 *
 * @example
-* var array = require( '@stdlib/ndarray/array' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 *
-* var x = array( [ 1.0, -2.0, 3.0, -4.0 ], {
-*    'dtype': 'generic'
-* });
-* // returns <ndarray>[ 1.0, -2.0, 3.0, -4.0 ]
+* var x = vector( [ 1.0, -2.0, 3.0, -4.0 ], 'generic' );
 *
 * var ord = scalar2ndarray( 1.0, {
 *    'dtype': 'generic'
 * });
-* // returns <ndarray>[ 1.0 ]
 *
 * var out = gsort( [ x, ord ] );
 * // returns <ndarray>[ -4.0, -2.0, 1.0, 3.0 ]

@@ -47,10 +47,7 @@ var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
 // Perform operation:
 var out = findIndex( x, isEven );
-// returns <ndarray>
-
-var idx = out.get();
-// returns 1
+// returns <ndarray>[ 1 ]
 ```
 
 The function has the following parameters:
@@ -84,10 +81,7 @@ var ctx = {
     'count': 0
 };
 var out = findIndex( x, isEven, ctx );
-// returns <ndarray>
-
-var idx = out.get();
-// returns 1
+// returns <ndarray>[ 1 ]
 
 var count = ctx.count;
 // returns 2
@@ -114,16 +108,12 @@ var x = array( [ 1.0, 3.0, 5.0, 7.0 ] );
 
 // Perform operation:
 var out = findIndex( x, isEven );
-// returns <ndarray>
-
-var idx = out.get();
-// returns -1
+// returns <ndarray>[ -1 ]
 ```
 
 By default, the function performs the operation over elements in the last dimension. To perform the operation over a different dimension, provide a `dim` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 function isEven( v ) {
@@ -137,17 +127,13 @@ var opts = {
 };
 
 var out = findIndex( x, opts, isEven );
-// returns <ndarray>
-
-var idx = ndarray2array( out );
-// returns [ -1, 0 ]
+// returns <ndarray>[ -1, 0 ]
 ```
 
 By default, the function excludes reduced dimensions from the output [ndarray][@stdlib/ndarray/ctor]. To include the reduced dimensions as singleton dimensions, set the `keepdims` option to `true`.
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 function isEven( v ) {
     return v % 2.0 === 0.0;
@@ -161,10 +147,7 @@ var opts = {
 };
 
 var out = findIndex( x, opts, isEven );
-// returns <ndarray>
-
-var idx = ndarray2array( out );
-// returns [ [ -1, 0 ] ]
+// returns <ndarray>[ [ -1, 0 ] ]
 ```
 
 By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [data type][@stdlib/ndarray/dtypes] determined by the function's output data type [policy][@stdlib/ndarray/output-dtype-policies]. To override the default behavior, set the `dtype` option.
@@ -184,7 +167,7 @@ var opts = {
 };
 
 var idx = findIndex( x, opts, isEven );
-// returns <ndarray>
+// returns <ndarray>[ 1 ]
 
 var dt = dtype( idx );
 // returns 'generic'
@@ -208,10 +191,7 @@ var y = zeros( [], {
 });
 
 var out = findIndex.assign( x, y, isEven );
-// returns <ndarray>
-
-var idx = out.get();
-// returns 1
+// returns <ndarray>[ 1 ]
 
 var bool = ( out === y );
 // returns true

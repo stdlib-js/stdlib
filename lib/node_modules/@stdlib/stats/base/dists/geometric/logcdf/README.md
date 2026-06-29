@@ -87,7 +87,7 @@ y = logcdf( 2.0, 1.5 );
 
 #### logcdf.factory( p )
 
-Returns a function for evaluating the logarithm of the [cumulative distribution function][cdf] of a [geometric][geometric-distribution] distribution with success probability `p`
+Returns a function for evaluating the logarithm of the [cumulative distribution function][cdf] of a [geometric][geometric-distribution] distribution with success probability `p`.
 
 ```javascript
 var mylogcdf = logcdf.factory( 0.5 );

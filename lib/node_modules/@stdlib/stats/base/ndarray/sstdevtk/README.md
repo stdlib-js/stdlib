@@ -133,6 +133,7 @@ The function has the following parameters:
 
 -   If provided an empty one-dimensional ndarray, the function returns `NaN`.
 -   If `N - c` is less than or equal to `0` (where `N` corresponds to the number of elements in the input ndarray and `c` corresponds to the provided degrees of freedom adjustment), the function returns `NaN`.
+-   Some caution should be exercised when using the one-pass textbook algorithm. Literature overwhelmingly discourages the algorithm's use for two reasons: 1) the lack of safeguards against underflow and overflow and 2) the risk of catastrophic cancellation when subtracting the two sums if the sums are large and the variance small. These concerns have merit; however, the one-pass textbook algorithm should not be dismissed outright. For data distributions with a moderately large standard deviation to mean ratio (i.e., **coefficient of variation**), the one-pass textbook algorithm may be acceptable, especially when performance is paramount and some precision loss is acceptable (including a risk of computing a negative variance due to floating-point rounding errors!). In short, no single "best" algorithm for computing the standard deviation exists. The "best" algorithm depends on the underlying data distribution, your performance requirements, and your minimum precision requirements. When evaluating which algorithm to use, consider the relative pros and cons, and choose the algorithm which best serves your needs.
 
 </section>
 

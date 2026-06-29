@@ -29,7 +29,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * @returns output array
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
 *     'ndmin': 5

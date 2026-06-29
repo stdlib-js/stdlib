@@ -41,7 +41,7 @@ import zerosLike = require( './index' );
 	zerosLike( zeros( 'generic', sh, ord ) ); // $ExpectType genericndarray<number>
 }
 
-// The compiler throws an error if the function is provided a first argument which is not an ndarray having a recognized/supported data type...
+// The compiler throws an error if the function is provided a first argument which is not an ndarray...
 {
 	zerosLike( '10' ); // $ExpectError
 	zerosLike( 10 ); // $ExpectError

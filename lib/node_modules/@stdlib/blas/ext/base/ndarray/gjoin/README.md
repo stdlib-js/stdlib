@@ -41,11 +41,10 @@ var gjoin = require( '@stdlib/blas/ext/base/ndarray/gjoin' );
 Returns a string created by joining one-dimensional ndarray elements using a specified separator.
 
 ```javascript
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
-var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, 3.0, 4.0, 2.0 ], 'generic' );
 
 var separator = scalar2ndarray( ',', {
     'dtype': 'generic'
@@ -60,7 +59,7 @@ The function has the following parameters:
 -   **arrays**: array-like object containing the following ndarrays:
 
     -   a one-dimensional input ndarray.
-    -   a zero-dimensional ndarray containing the separator.
+    -   a zero-dimensional ndarray containing a separator.
 
 </section>
 
@@ -79,22 +78,20 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarraylike2scalar = require( '@stdlib/ndarray/base/ndarraylike2scalar' );
 var gjoin = require( '@stdlib/blas/ext/base/ndarray/gjoin' );
 
-var xbuf = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'generic'
-});
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = discreteUniform( [ 10 ], -100, 100, opts );
 console.log( ndarray2array( x ) );
 
-var separator = scalar2ndarray( ',', {
-    'dtype': 'generic'
-});
+var separator = scalar2ndarray( ',', opts );
 console.log( 'Separator:', ndarraylike2scalar( separator ) );
 
 var out = gjoin( [ x, separator ] );

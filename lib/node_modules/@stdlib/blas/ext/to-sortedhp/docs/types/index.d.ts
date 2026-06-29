@@ -78,16 +78,12 @@ interface ToSortedhp {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = toSortedhp( x );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ -3.0, -1.0, 2.0 ]
+	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 	*/
 	<T extends InputArray = InputArray>( x: T, options?: BaseOptions ): T;
 
@@ -107,16 +103,12 @@ interface ToSortedhp {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = toSortedhp( x );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ -3.0, -1.0, 2.0 ]
+	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 	*/
 	<T extends InputArray = InputArray, U extends OutputArray = OutputArray>( x: T, options?: Options ): U; // NOTE: we lose type specificity here. We can likely address this with type maps
 
@@ -137,16 +129,12 @@ interface ToSortedhp {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = toSortedhp( x, 1.0 );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ -3.0, -1.0, 2.0 ]
+	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 	*/
 	<T extends InputArray = InputArray>( x: T, sortOrder: SortOrder, options?: BaseOptions ): T;
 
@@ -167,16 +155,12 @@ interface ToSortedhp {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = toSortedhp( x, 1.0 );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ -3.0, -1.0, 2.0 ]
+	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 	*/
 	<T extends InputArray = InputArray, U extends OutputArray = OutputArray>( x: T, sortOrder: SortOrder, options?: Options ): U; // NOTE: we lose type specificity here. We can likely address this with type maps
 
@@ -197,7 +181,6 @@ interface ToSortedhp {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var zeros = require( '@stdlib/ndarray/zeros' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
@@ -206,10 +189,7 @@ interface ToSortedhp {
 	* var y = zeros( [ 3 ] );
 	*
 	* var out = toSortedhp.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ -3.0, -1.0, 2.0 ]
+	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -234,7 +214,6 @@ interface ToSortedhp {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var zeros = require( '@stdlib/ndarray/zeros' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
@@ -243,10 +222,7 @@ interface ToSortedhp {
 	* var y = zeros( [ 3 ] );
 	*
 	* var out = toSortedhp.assign( x, y, 1);
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( out );
-	* // returns [ -3.0, -1.0, 2.0 ]
+	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -271,19 +247,14 @@ interface ToSortedhp {
 * @returns output ndarray
 *
 * @example
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ -1.0, 2.0, -3.0 ] );
 *
 * var y = toSortedhp( x, 1.0 );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ -3.0, -1.0, 2.0 ]
+* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 *
 * @example
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 * var array = require( '@stdlib/ndarray/array' );
 *
@@ -292,10 +263,7 @@ interface ToSortedhp {
 * var y = zeros( [ 3 ] );
 *
 * var out = toSortedhp.assign( x, y );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( out );
-* // returns [ -3.0, -1.0, 2.0 ]
+* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 *
 * var bool = ( out === y );
 * // returns true

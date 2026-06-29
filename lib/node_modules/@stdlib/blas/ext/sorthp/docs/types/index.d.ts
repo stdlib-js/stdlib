@@ -65,16 +65,12 @@ interface Sorthp {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = sorthp( x );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ -3.0, -1.0, 2.0 ]
+	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 	*/
 	<T extends InputArray = InputArray>( x: T, options?: Options ): T;
 
@@ -96,16 +92,12 @@ interface Sorthp {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = sorthp( x, 1.0 );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ -3.0, -1.0, 2.0 ]
+	* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 	*/
 	<T extends InputArray = InputArray>( x: T, sortOrder: SortOrder, options?: Options ): T;
 }
@@ -128,28 +120,20 @@ interface Sorthp {
 * @returns output ndarray
 *
 * @example
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ -1.0, 2.0, -3.0 ] );
 *
 * var y = sorthp( x, 1.0 );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ -3.0, -1.0, 2.0 ]
+* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 *
 * @example
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ -1.0, 2.0, -3.0 ] );
 *
 * var y = sorthp( x, 1.0 );
-* // returns <ndarray>
-*
-* var arr = ndarray2array( y );
-* // returns [ -3.0, -1.0, 2.0 ]
+* // returns <ndarray>[ -3.0, -1.0, 2.0 ]
 */
 declare const sorthp: Sorthp;
 

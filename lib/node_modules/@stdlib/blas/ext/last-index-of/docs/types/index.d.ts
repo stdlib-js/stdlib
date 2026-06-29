@@ -95,10 +95,7 @@ interface lastIndexOf {
 	* var x = array( [ -1.0, 2.0, -3.0, 2.0 ] );
 	*
 	* var y = lastIndexOf( x, 2.0 );
-	* // returns <ndarray>
-	*
-	* var idx = y.get();
-	* // returns 3
+	* // returns <ndarray>[ 3 ]
 	*/
 	<T = unknown>( x: InputArray<T>, searchElement: SearchElement<T>, options?: Options ): OutputArray;
 
@@ -122,10 +119,7 @@ interface lastIndexOf {
 	* var x = array( [ 1.0, 2.0, -3.0, 2.0, -5.0, 6.0 ] );
 	*
 	* var y = lastIndexOf( x, 2.0, 5 );
-	* // returns <ndarray>
-	*
-	* var idx = y.get();
-	* // returns 3
+	* // returns <ndarray>[ 3 ]
 	*/
 	<T = unknown>( x: InputArray<T>, searchElement: SearchElement<T>, fromIndex: FromIndex, options?: Options ): OutputArray;
 
@@ -153,13 +147,10 @@ interface lastIndexOf {
 	* } );
 	*
 	* var out = lastIndexOf.assign( x, 2.0, y );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 3 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
-	*
-	* var idx = out.get();
-	* // returns 3
 	*/
 	assign<T = unknown, U extends OutputArray = OutputArray>( x: InputArray<T>, searchElement: SearchElement<T>, out: U, options?: BaseOptions ): U;
 
@@ -188,13 +179,10 @@ interface lastIndexOf {
 	* } );
 	*
 	* var out = lastIndexOf.assign( x, 1.0, 5, y );
-	* // returns <ndarray>
+	* // returns <ndarray>[ 0 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
-	*
-	* var idx = out.get();
-	* // returns 0
 	*/
 	assign<T = unknown, U extends OutputArray = OutputArray>( x: InputArray<T>, searchElement: SearchElement<T>, fromIndex: FromIndex, out: U, options?: BaseOptions ): U;
 }
@@ -219,10 +207,7 @@ interface lastIndexOf {
 * var x = array( [ -1.0, 2.0, -3.0, 2.0 ] );
 *
 * var y = lastIndexOf( x, 2.0 );
-* // returns <ndarray>
-*
-* var idx = y.get();
-* // returns 3
+* // returns <ndarray>[ 3 ]
 *
 * @example
 * var zeros = require( '@stdlib/ndarray/zeros' );
@@ -234,13 +219,10 @@ interface lastIndexOf {
 * } );
 *
 * var out = lastIndexOf.assign( x, 2.0, y );
-* // returns <ndarray>
+* // returns <ndarray>[ 3 ]
 *
 * var bool = ( out === y );
 * // returns true
-*
-* var idx = out.get();
-* // returns 3
 */
 declare const lastIndexOf: lastIndexOf;
 

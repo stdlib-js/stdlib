@@ -30,7 +30,6 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 *
 * @example
 * var Float64Array = require( '@stdlib/array/float64' );
-* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
 * var xbuf = new Float64Array( [ 1.0, 3.0, 4.0, 2.0 ] );
@@ -40,13 +39,10 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 * var y = new ndarray( 'float64', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 *
 * var v = dcumaxabs( [ x, y ] );
-* // returns <ndarray>
+* // returns <ndarray>[ 1.0, 3.0, 4.0, 4.0 ]
 *
 * var bool = ( v === y );
 * // returns true
-*
-* var arr = ndarray2array( v );
-* // returns [ 1.0, 3.0, 4.0, 4.0 ]
 */
 declare function dcumaxabs( arrays: [ float64ndarray, float64ndarray ] ): float64ndarray;
 
