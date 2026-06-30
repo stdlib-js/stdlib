@@ -59,7 +59,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-       "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/pow",
         "@stdlib/math/base/special/log10",
@@ -81,7 +81,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-       "@stdlib/math/base/assert/is-nan",
+        "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/pow",
         "@stdlib/math/base/special/log10",

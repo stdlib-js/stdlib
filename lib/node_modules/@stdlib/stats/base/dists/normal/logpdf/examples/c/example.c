@@ -36,7 +36,7 @@ int main( void ) {
 	for ( i = 0; i < 10; i++ ) {
 		x = random_uniform( 0.0, 10.0 );
 		mu = random_uniform( -5.0, 5.0 );
-		sigma = random_uniform( 0.0, 20.0 );
+		sigma = random_uniform( 0.1, 20.0 );
 		y = stdlib_base_dists_normal_logpdf( x, mu, sigma );
 		printf( "x: %lf, µ: %lf, σ: %lf, ln(f(x;µ,σ)): %lf\n", x, mu, sigma, y );
 	}

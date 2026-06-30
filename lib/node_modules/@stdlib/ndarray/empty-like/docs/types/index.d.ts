@@ -22,7 +22,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Shape, Order, ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, genericndarray, complex128ndarray, complex64ndarray, DataType, Mode } from '@stdlib/types/ndarray';
+import { Shape, Order, Mode, ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, boolndarray, genericndarray, complex128ndarray, complex64ndarray, DataType, Float64DataType, Float32DataType, Complex128DataType, Complex64DataType, Int32DataType, Int16DataType, Int8DataType, Uint32DataType, Uint16DataType, Uint8DataType, Uint8cDataType, BooleanDataType, GenericDataType } from '@stdlib/types/ndarray';
 
 /**
 * Interface describing function options.
@@ -68,7 +68,7 @@ interface Float64Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'float64';
+	dtype: Float64DataType;
 }
 
 /**
@@ -82,7 +82,7 @@ interface Float32Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'float32';
+	dtype: Float32DataType;
 }
 
 /**
@@ -96,7 +96,7 @@ interface Complex128Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'complex128';
+	dtype: Complex128DataType;
 }
 
 /**
@@ -110,7 +110,7 @@ interface Complex64Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'complex64';
+	dtype: Complex64DataType;
 }
 
 /**
@@ -124,7 +124,7 @@ interface Int32Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'int32';
+	dtype: Int32DataType;
 }
 
 /**
@@ -138,7 +138,7 @@ interface Int16Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'int16';
+	dtype: Int16DataType;
 }
 
 /**
@@ -152,7 +152,7 @@ interface Int8Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'int8';
+	dtype: Int8DataType;
 }
 
 /**
@@ -166,7 +166,7 @@ interface Uint32Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'uint32';
+	dtype: Uint32DataType;
 }
 
 /**
@@ -180,7 +180,7 @@ interface Uint16Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'uint16';
+	dtype: Uint16DataType;
 }
 
 /**
@@ -194,7 +194,7 @@ interface Uint8Options extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'uint8';
+	dtype: Uint8DataType;
 }
 
 /**
@@ -208,7 +208,7 @@ interface Uint8COptions extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'uint8c';
+	dtype: Uint8cDataType;
 }
 
 /**
@@ -222,7 +222,7 @@ interface BoolOptions extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'bool';
+	dtype: BooleanDataType;
 }
 
 /**
@@ -236,7 +236,7 @@ interface GenericOptions extends Options {
 	*
 	* -   This option overrides the input array's inferred data type.
 	*/
-	dtype: 'generic';
+	dtype: GenericDataType;
 }
 
 /**
@@ -265,438 +265,8 @@ interface OptionsWithDType extends Options {
 * @returns output array
 *
 * @example
-* var zeros = require( '@stdlib/ndarray/zeros' );
-*
-* var x = zeros( [ 2, 2 ], {
-*     'dtype': 'float64'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'float64'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'float64'
-*/
-declare function emptyLike( x: float64ndarray, options?: Options ): float64ndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
-* var zeros = require( '@stdlib/ndarray/zeros' );
-*
-* var x = zeros( [ 2, 2 ], {
-*     'dtype': 'float32'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'float32'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'float32'
-*/
-declare function emptyLike( x: float32ndarray, options?: Options ): float32ndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
-* var zeros = require( '@stdlib/ndarray/zeros' );
-*
-* var x = zeros( [ 2, 2 ], {
-*     'dtype': 'complex128'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'complex128'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'complex128'
-*/
-declare function emptyLike( x: complex128ndarray, options?: Options ): complex128ndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
-* var zeros = require( '@stdlib/ndarray/zeros' );
-*
-* var x = zeros( [ 2, 2 ], {
-*     'dtype': 'complex64'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'complex64'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'complex64'
-*/
-declare function emptyLike( x: complex64ndarray, options?: Options ): complex64ndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
-* var zeros = require( '@stdlib/ndarray/zeros' );
-*
-* var x = zeros( [ 2, 2 ], {
-*     'dtype': 'int32'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'int32'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'int32'
-*/
-declare function emptyLike( x: int32ndarray, options?: Options ): int32ndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
-* var zeros = require( '@stdlib/ndarray/zeros' );
-*
-* var x = zeros( [ 2, 2 ], {
-*     'dtype': 'int16'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'int16'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'int16'
-*/
-declare function emptyLike( x: int16ndarray, options?: Options ): int16ndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
-* var zeros = require( '@stdlib/ndarray/zeros' );
-*
-* var x = zeros( [ 2, 2 ], {
-*     'dtype': 'int8'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'int8'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'int8'
-*/
-declare function emptyLike( x: int8ndarray, options?: Options ): int8ndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
-* var zeros = require( '@stdlib/ndarray/zeros' );
-*
-* var x = zeros( [ 2, 2 ], {
-*     'dtype': 'uint32'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'uint32'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'uint32'
-*/
-declare function emptyLike( x: uint32ndarray, options?: Options ): uint32ndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
-* var zeros = require( '@stdlib/ndarray/zeros' );
-*
-* var x = zeros( [ 2, 2 ], {
-*     'dtype': 'uint16'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'uint16'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'uint16'
-*/
-declare function emptyLike( x: uint16ndarray, options?: Options ): uint16ndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
-* var zeros = require( '@stdlib/ndarray/zeros' );
-*
-* var x = zeros( [ 2, 2 ], {
-*     'dtype': 'uint8'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'uint8'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'uint8'
-*/
-declare function emptyLike( x: uint8ndarray, options?: Options ): uint8ndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
-* var zeros = require( '@stdlib/ndarray/zeros' );
-*
-* var x = zeros( [ 2, 2 ], {
-*     'dtype': 'uint8c'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'uint8c'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'uint8c'
-*/
-declare function emptyLike( x: uint8cndarray, options?: Options ): uint8cndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
-* var empty = require( '@stdlib/ndarray/empty' );
-*
-* var x = empty( [ 2, 2 ], {
-*     'dtype': 'bool'
-* });
-* // returns <ndarray>
-*
-* var sh = x.shape;
-* // returns [ 2, 2 ]
-*
-* var dt = x.dtype;
-* // returns 'bool'
-*
-* var y = emptyLike( x );
-* // returns <ndarray>
-*
-* sh = y.shape;
-* // returns [ 2, 2 ]
-*
-* dt = y.dtype;
-* // returns 'bool'
-*/
-declare function emptyLike( x: boolndarray, options?: Options ): boolndarray;
-
-/**
-* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
-*
-* @param x - input array
-* @param options - options
-* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
-* @param options.shape - output array shape
-* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns output array
-*
-* @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2, 2 ], {
@@ -704,22 +274,60 @@ declare function emptyLike( x: boolndarray, options?: Options ): boolndarray;
 * });
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'generic'
 *
 * var y = emptyLike( x );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'generic'
 */
 declare function emptyLike( x: genericndarray<any>, options?: Options ): genericndarray<number>;
+
+/**
+* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
+*
+* @param x - input array
+* @param options - options
+* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
+* @param options.shape - output array shape
+* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @returns output array
+*
+* @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+* var zeros = require( '@stdlib/ndarray/zeros' );
+*
+* var x = zeros( [ 2, 2 ], {
+*     'dtype': 'float64'
+* });
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+*
+* var sh = getShape( x );
+* // returns [ 2, 2 ]
+*
+* var dt = String( getDType( x ) );
+* // returns 'float64'
+*
+* var y = emptyLike( x );
+* // returns <ndarray>
+*
+* sh = getShape( y );
+* // returns [ 2, 2 ]
+*
+* dt = String( getDType( y ) );
+* // returns 'float64'
+*/
+declare function emptyLike<T extends typedndarray<unknown>>( x: T, options?: Options ): T;
 
 /**
 * Creates an uninitialized double-precision floating-point array having the same shape as a provided input ndarray.
@@ -734,17 +342,19 @@ declare function emptyLike( x: genericndarray<any>, options?: Options ): generic
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'generic'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'generic'
 *
 * var y = emptyLike( x, {
@@ -752,10 +362,10 @@ declare function emptyLike( x: genericndarray<any>, options?: Options ): generic
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'float64'
 */
 declare function emptyLike( x: ndarray, options: Float64Options ): float64ndarray;
@@ -773,17 +383,19 @@ declare function emptyLike( x: ndarray, options: Float64Options ): float64ndarra
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -791,10 +403,10 @@ declare function emptyLike( x: ndarray, options: Float64Options ): float64ndarra
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'float32'
 */
 declare function emptyLike( x: ndarray, options: Float32Options ): float32ndarray;
@@ -812,17 +424,19 @@ declare function emptyLike( x: ndarray, options: Float32Options ): float32ndarra
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -830,10 +444,10 @@ declare function emptyLike( x: ndarray, options: Float32Options ): float32ndarra
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'complex128'
 */
 declare function emptyLike( x: ndarray, options: Complex128Options ): complex128ndarray;
@@ -851,17 +465,19 @@ declare function emptyLike( x: ndarray, options: Complex128Options ): complex128
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -869,10 +485,10 @@ declare function emptyLike( x: ndarray, options: Complex128Options ): complex128
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'complex64'
 */
 declare function emptyLike( x: ndarray, options: Complex64Options ): complex64ndarray;
@@ -890,17 +506,19 @@ declare function emptyLike( x: ndarray, options: Complex64Options ): complex64nd
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -908,10 +526,10 @@ declare function emptyLike( x: ndarray, options: Complex64Options ): complex64nd
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'int32'
 */
 declare function emptyLike( x: ndarray, options: Int32Options ): int32ndarray;
@@ -929,17 +547,19 @@ declare function emptyLike( x: ndarray, options: Int32Options ): int32ndarray;
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -947,10 +567,10 @@ declare function emptyLike( x: ndarray, options: Int32Options ): int32ndarray;
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'int16'
 */
 declare function emptyLike( x: ndarray, options: Int16Options ): int16ndarray;
@@ -968,17 +588,19 @@ declare function emptyLike( x: ndarray, options: Int16Options ): int16ndarray;
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -986,10 +608,10 @@ declare function emptyLike( x: ndarray, options: Int16Options ): int16ndarray;
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'int8'
 */
 declare function emptyLike( x: ndarray, options: Int8Options ): int8ndarray;
@@ -1007,17 +629,19 @@ declare function emptyLike( x: ndarray, options: Int8Options ): int8ndarray;
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -1025,10 +649,10 @@ declare function emptyLike( x: ndarray, options: Int8Options ): int8ndarray;
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'uint32'
 */
 declare function emptyLike( x: ndarray, options: Uint32Options ): uint32ndarray;
@@ -1046,17 +670,19 @@ declare function emptyLike( x: ndarray, options: Uint32Options ): uint32ndarray;
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -1064,10 +690,10 @@ declare function emptyLike( x: ndarray, options: Uint32Options ): uint32ndarray;
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'uint16'
 */
 declare function emptyLike( x: ndarray, options: Uint16Options ): uint16ndarray;
@@ -1085,17 +711,19 @@ declare function emptyLike( x: ndarray, options: Uint16Options ): uint16ndarray;
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -1103,10 +731,10 @@ declare function emptyLike( x: ndarray, options: Uint16Options ): uint16ndarray;
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'uint8'
 */
 declare function emptyLike( x: ndarray, options: Uint8Options ): uint8ndarray;
@@ -1124,17 +752,19 @@ declare function emptyLike( x: ndarray, options: Uint8Options ): uint8ndarray;
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -1142,10 +772,10 @@ declare function emptyLike( x: ndarray, options: Uint8Options ): uint8ndarray;
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'uint8c'
 */
 declare function emptyLike( x: ndarray, options: Uint8COptions ): uint8cndarray;
@@ -1163,17 +793,19 @@ declare function emptyLike( x: ndarray, options: Uint8COptions ): uint8cndarray;
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -1181,10 +813,10 @@ declare function emptyLike( x: ndarray, options: Uint8COptions ): uint8cndarray;
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'bool'
 */
 declare function emptyLike( x: ndarray, options: BoolOptions ): boolndarray;
@@ -1202,17 +834,19 @@ declare function emptyLike( x: ndarray, options: BoolOptions ): boolndarray;
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x, {
@@ -1220,10 +854,10 @@ declare function emptyLike( x: ndarray, options: BoolOptions ): boolndarray;
 * });
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'generic'
 */
 declare function emptyLike( x: ndarray, options: GenericOptions ): genericndarray<number>;
@@ -1241,26 +875,28 @@ declare function emptyLike( x: ndarray, options: GenericOptions ): genericndarra
 * @returns output array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ], {
 *     'dtype': 'float64'
 * });
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = emptyLike( x );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'float64'
 */
 declare function emptyLike( x: ndarray, options?: Options | OptionsWithDType ): typedndarray<number>;
