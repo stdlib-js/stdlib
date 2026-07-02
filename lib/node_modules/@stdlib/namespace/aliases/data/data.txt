@@ -1535,12 +1535,14 @@ COMPLEX64_NAN
 COMPLEX64_NUM_BYTES
 COMPLEX64_ZERO
 Complex64Array
+Complex64Matrix
 Complex64Vector
 Complex128
 COMPLEX128_NAN
 COMPLEX128_NUM_BYTES
 COMPLEX128_ZERO
 Complex128Array
+Complex128Matrix
 Complex128Vector
 complexarray
 complexarrayCtors
@@ -1722,6 +1724,7 @@ FLOAT32_TWO_PI
 Float32Array
 Float32ArrayFE
 Float32ArrayLE
+Float32Matrix
 Float32Vector
 FLOAT64_EXPONENT_BIAS
 FLOAT64_HIGH_WORD_ABS_MASK
@@ -1752,6 +1755,7 @@ FLOAT64_SMALLEST_SUBNORMAL
 Float64Array
 Float64ArrayFE
 Float64ArrayLE
+Float64Matrix
 Float64Vector
 forEach
 forEachAsync
@@ -1991,6 +1995,7 @@ INT32_MAX
 INT32_MIN
 INT32_NUM_BYTES
 Int32Array
+Int32Matrix
 Int32Vector
 IS_BIG_ENDIAN
 IS_BROWSER
@@ -2556,6 +2561,7 @@ mapRight
 mapValues
 mapValuesAsync
 maskArguments
+matrix
 MAX_ARRAY_LENGTH
 MAX_TYPED_ARRAY_LENGTH
 maybeBroadcastArray

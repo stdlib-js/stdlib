@@ -20,7 +20,7 @@ limitations under the License.
 
 # Uint64
 
-> Unsigned 64-bit integer.
+> 64-bit unsigned integer.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,7 +42,7 @@ var Uint64 = require( '@stdlib/number/uint64/ctor' );
 
 #### Uint64( value )
 
-Unsigned 64-bit integer constructor.
+64-bit unsigned integer constructor.
 
 ```javascript
 var x = new Uint64( 5 );
@@ -95,7 +95,7 @@ var nbytes = x.byteLength;
 
 #### Uint64.prototype.hi
 
-High 32-bit word of an unsigned 64-bit integer.
+High 32-bit word of a 64-bit unsigned integer.
 
 ```javascript
 var x = Uint64.from( [ 1234, 5678 ] );
@@ -106,7 +106,7 @@ var w = x.hi;
 
 #### Uint64.prototype.lo
 
-Low 32-bit word of an unsigned 64-bit integer.
+Low 32-bit word of a 64-bit unsigned integer.
 
 ```javascript
 var x = Uint64.from( [ 1234, 5678 ] );
@@ -123,7 +123,7 @@ var w = x.lo;
 
 #### Uint64.from( array )
 
-Creates a new unsigned 64-bit integer from an array-like object containing a high and low word.
+Creates a new 64-bit unsigned integer from an array-like object containing a high and low word.
 
 ```javascript
 var x = Uint64.from( [ 1234, 5678 ] );
@@ -132,7 +132,7 @@ var x = Uint64.from( [ 1234, 5678 ] );
 
 #### Uint64.of( high, low )
 
-Creates a new unsigned 64-bit integer from a high and low word.
+Creates a new 64-bit unsigned integer from a high and low word.
 
 ```javascript
 var x = Uint64.of( 1234, 5678 );
@@ -141,7 +141,7 @@ var x = Uint64.of( 1234, 5678 );
 
 ### Accessor Methods
 
-These methods do **not** mutate a `Uint64` instance and, instead, return an unsigned 64-bit integer representation.
+These methods do **not** mutate a `Uint64` instance and, instead, return a 64-bit unsigned integer representation.
 
 #### Uint64.prototype.toString()
 
@@ -189,7 +189,7 @@ var v = x.valueOf();
 
 ## Notes
 
--   An unsigned 64-bit integer has a range of \[`0`, `2^64-1`\].
+-   A 64-bit unsigned integer has a range of \[`0`, `2^64-1`\].
 
 </section>
 
