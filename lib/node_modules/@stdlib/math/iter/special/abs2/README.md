@@ -93,18 +93,17 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/iter/randu' );
-var iterAdd = require( '@stdlib/math/iter/ops/add' );
+var uniform = require( '@stdlib/random/iter/uniform' );
 var iterAbs2 = require( '@stdlib/math/iter/special/abs2' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
-var rand = randu({
+var rand = uniform( -2.0, 2.0, {
     'seed': 1234,
     'iter': 10
 });
 
 // Create an iterator which consumes the pseudorandom number iterator:
-var it = iterAbs2( iterAdd( rand, -0.5 ) );
+var it = iterAbs2( rand );
 
 // Perform manual iteration...
 var r;

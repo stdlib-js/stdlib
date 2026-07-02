@@ -60,6 +60,7 @@
     "cdf",
     "logcdf",
     "lognormal",
+    "gaussian",
     "normal",
     "bell-shape",
     "logarithm",

@@ -22,7 +22,7 @@
 #include <inttypes.h>
 
 int main( void ) {
-	float x[] = { 4.0f, 0.0f, -0.0f, 1.0f, -1.0f, 3.14f, -3.14f, 1.0e-38f, -1.0e-38f, 1.0f/0.0f, -1.0f/0.0f, 0.0f/0.0f };
+	const float x[] = { 4.0f, 0.0f, -0.0f, 1.0f, -1.0f, 3.14f, -3.14f, 1.0e-38f, -1.0e-38f, 1.0f/0.0f, -1.0f/0.0f, 0.0f/0.0f };
 
 	int32_t exp;
 	float y;
