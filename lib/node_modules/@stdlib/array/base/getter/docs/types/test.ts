@@ -71,7 +71,7 @@ import getter = require( './index' );
 
 	const get4 = getter( 'float16' );
 	const x4 = new Float16Array( [ 1, 2, 3, 4 ] );
-	get4( x4 , 2 ); // $ExpectType number | void
+	get4( x4, 2 ); // $ExpectType number | void
 
 	const get5 = getter( 'int32' );
 	const x5 = new Int32Array( [ 1, 2, 3, 4 ] );
