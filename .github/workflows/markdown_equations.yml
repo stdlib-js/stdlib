@@ -126,8 +126,10 @@ jobs:
       # Generate SVG equations:
       - name: 'Generate SVG equations'
         id: svg-equations
+        env:
+          FILES: ${{ steps.changed.outputs.files }}
         run: |
-          make markdown-svg-equations-files FILES="${{ steps.changed.outputs.files }}"
+          make markdown-svg-equations-files FILES="$FILES"
 
           # Stage *all* tracked and untracked changes first...
           git add -A
@@ -146,9 +148,11 @@ jobs:
       # Update Markdown equation elements:
       - name: 'Update equation elements'
         id: equation-elements
+        env:
+          FILES: ${{ steps.changed.outputs.files }}
         run: |
-          make markdown-img-equations-files FILES="${{ steps.changed.outputs.files }}"
-          make markdown-img-equations-src-urls-files FILES="${{ steps.changed.outputs.files }}"
+          make markdown-img-equations-files FILES="$FILES"
+          make markdown-img-equations-src-urls-files FILES="$FILES"
 
           # Stage *all* tracked and untracked changes first...
           git add -A
@@ -163,6 +167,17 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
         timeout-minutes: 15
+
+      # Delete remote PR branch to ensure a clean push when the branch has diverged:
+      - name: 'Delete remote PR branch'
+        if: steps.svg-equations.outputs.changed == 'true' || steps.equation-elements.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+        run: |
+          # Fetch the branch first so that --force-with-lease in the subsequent push has a local tracking reference and can verify the remote state:
+          git fetch origin markdown-insert-equations 2>/dev/null || true
+          gh api -X DELETE repos/stdlib-js/stdlib/git/refs/heads/markdown-insert-equations 2>/dev/null || true
+        timeout-minutes: 5
 
       # Create a pull request with the updated equations:
       - name: 'Create pull request'

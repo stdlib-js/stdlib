@@ -78,7 +78,7 @@ import { float32ndarray, int8ndarray, ndarray } from '@stdlib/types/ndarray';
 *
 * console.log( v.get().toString() );
 */
-declare function sztest<T extends ndarray>( arrays: [ float32ndarray, T, int8ndarray, float32ndarray, float32ndarray, float32ndarray ] ): T;
+declare function sztest<T extends ndarray = ndarray>( arrays: [ float32ndarray, T, int8ndarray, float32ndarray, float32ndarray, float32ndarray ] ): T;
 
 
 // EXPORTS //

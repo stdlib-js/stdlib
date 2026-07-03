@@ -28,7 +28,7 @@ import { Shape, Order, boolndarray, genericndarray, BooleanDataType, GenericData
 * @param dtype - underlying data type
 * @param shape - array shape
 * @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
-* @returns `false`-filled array
+* @returns `false`-filled ndarray
 *
 * @example
 * var getDType = require( '@stdlib/ndarray/dtype' );
@@ -47,7 +47,7 @@ declare function falses( dtype: BooleanDataType, shape: Shape, order: Order ): b
 * @param dtype - underlying data type
 * @param shape - array shape
 * @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
-* @returns `false`-filled array
+* @returns `false`-filled ndarray
 *
 * @example
 * var getDType = require( '@stdlib/ndarray/dtype' );
