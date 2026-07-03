@@ -29,7 +29,7 @@
 * @param strideX       stride length
 * @return              index
 */
-CBLAS_INT API_SUFFIX(stdlib_strided_sindex_of)( const CBLAS_INT N, const CBLAS_INT searchElement, const float *X, const CBLAS_INT strideX ) {
+CBLAS_INT API_SUFFIX(stdlib_strided_sindex_of)( const CBLAS_INT N, const float searchElement, const float *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
 	return API_SUFFIX(stdlib_strided_sindex_of_ndarray)( N, searchElement, X, strideX, ox );
 }
@@ -44,7 +44,7 @@ CBLAS_INT API_SUFFIX(stdlib_strided_sindex_of)( const CBLAS_INT N, const CBLAS_I
 * @param offsetX       starting index
 * @return              index
 */
-CBLAS_INT API_SUFFIX(stdlib_strided_sindex_of_ndarray)( const CBLAS_INT N, const CBLAS_INT searchElement, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+CBLAS_INT API_SUFFIX(stdlib_strided_sindex_of_ndarray)( const CBLAS_INT N, const float searchElement, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	CBLAS_INT ix;
 	CBLAS_INT i;
 

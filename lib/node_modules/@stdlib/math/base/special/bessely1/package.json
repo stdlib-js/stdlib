@@ -61,5 +61,77 @@
     "bessel",
     "y1",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "bessely1",
+      "alias": "bessely1",
+      "pkg_desc": "compute the Bessel function of the second kind of order one for a double-precision floating-point number",
+      "desc": "computes the Bessel function of the second kind of order one for a double-precision floating-point number",
+      "short_desc": "Bessel function of the second kind of order one",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.01,
+              100
+            ]
+          },
+          "example_values": [
+            73.2,
+            0.03,
+            5.41,
+            121.7,
+            0.67,
+            44.9,
+            2.85,
+            89.1,
+            0.12,
+            15.8,
+            33.05,
+            0.98,
+            7.43,
+            58.6,
+            101.9,
+            0.29,
+            24.1,
+            12.2,
+            66.9,
+            140.3
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "evaluated Bessel function",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "bessel",
+        "y1"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

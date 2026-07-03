@@ -116,6 +116,88 @@ logEachMap( 'c: %0.4f, Median(X;c): %0.4f', c, median );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+<section class="c">
+
+## C APIs
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/bradford/median.h"
+```
+
+#### stdlib_base_dists_bradford_median( c )
+
+Returns the median of a Bradford distribution.
+
+```c
+double out = stdlib_base_dists_bradford_median( 0.1 );
+// returns ~0.488
+```
+
+The function accepts the following arguments:
+
+-   **c**: `[in] double` shape parameter.
+
+```c
+double stdlib_base_dists_bradford_median( const double c );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/bradford/median.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double c;
+    double y;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        c = random_uniform( 0.01, 10.0 );
+        y = stdlib_base_dists_bradford_median( c );
+        printf( "c: %lf, median(X;c): %lf\n", c, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

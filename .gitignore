@@ -25,6 +25,7 @@ package.json.copy
 ###############
 build/
 downloads/
+plans/
 reports/
 tmp/
 
@@ -175,6 +176,10 @@ acs-*.bib
 *.ind
 *.ist
 
+# Git #
+#######
+.worktrees
+
 # Visual Studio #
 #################
 .vscode/
@@ -188,7 +193,12 @@ jsconfig.json
 # Other editor files #
 ######################
 .idea/
-
-# Cursor #
-##########
+.cursor
 .cursorignore
+.windsurfrules
+.clinerules
+
+# AI coding agents #
+####################
+CLAUDE.md
+GEMINI.md

@@ -27,7 +27,7 @@
 * @return          entropy
 *
 * @example
-* double y = stdlib_base_exponential_entropy( 9.0 );
+* double y = stdlib_base_dists_exponential_entropy( 9.0 );
 * // returns ~-1.197
 */
 double stdlib_base_dists_exponential_entropy( const double lambda ) {

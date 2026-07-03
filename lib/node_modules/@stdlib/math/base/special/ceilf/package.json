@@ -67,5 +67,83 @@
     "float32",
     "single-precision",
     "flt"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "ceil",
+      "alias": "ceilf",
+      "pkg_desc": "round a single-precision floating-point number toward positive infinity",
+      "desc": "rounds a single-precision floating-point number toward positive infinity",
+      "short_desc": "",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -50,
+              50
+            ]
+          },
+          "example_values": [
+            11.11,
+            -0.01,
+            31.6,
+            -7.2,
+            0.49,
+            49.99,
+            2.3,
+            -13.7,
+            0,
+            7.01,
+            -0.9,
+            19.7,
+            3.99,
+            0.02,
+            42.05,
+            1.01,
+            23.4,
+            5.6,
+            15.2,
+            9.9
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "rounded value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "ceil",
+        "round",
+        "integer",
+        "nearest",
+        "ceiling",
+        "floor"
+      ],
+      "extra_keywords": [
+        "math.ceil"
+      ]
+    }
+  }
 }

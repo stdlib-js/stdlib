@@ -25,6 +25,8 @@
 * @returns boolean indicating whether value is an Int8Array
 *
 * @example
+* var Int8Array = require( '@stdlib/array/int8' );
+*
 * var bool = isInt8Array( new Int8Array( 10 ) );
 * // returns true
 *
