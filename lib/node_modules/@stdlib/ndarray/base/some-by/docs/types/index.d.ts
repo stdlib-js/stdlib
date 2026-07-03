@@ -77,6 +77,7 @@ type Predicate<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U> | Ternary<T, U>;
 * @example
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 * var Float64Array = require( '@stdlib/array/float64' );
+* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
 * function predicate( value ) {
 *    return value > 0.0;

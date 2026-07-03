@@ -36,7 +36,7 @@ interface CuAny {
 	* var x = [ false, false , true, false , false ];
 	*
 	* var y = cuany( x );
-	*  // returns [ false, false, true, true, true ];
+	* // returns [ false, false, true, true, true ];
 	*/
 	( x: Collection | AccessorArrayLike<any> ): Array<boolean>;
 
@@ -53,7 +53,7 @@ interface CuAny {
 	* var x = [ false, false, true, false, false ];
 	* var y = [ false, null, false, null, false, null, false, null, false, null ];
 	*
-	* var arr = cuany.assign( x, y, 2, 0 );,
+	* var arr = cuany.assign( x, y, 2, 0 );
 	* // returns [ false, null, false, null, true, null, true, null, true, null ];
 	*/
 	assign<T, U extends Collection<T> | AccessorArrayLike<T>>( x: Collection | AccessorArrayLike<any>, y: U, stride: number, offset: number ): U;

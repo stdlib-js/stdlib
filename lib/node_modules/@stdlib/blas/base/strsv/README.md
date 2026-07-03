@@ -52,7 +52,7 @@ The function has the following parameters:
 -   **diag**: specifies whether `A` has a unit diagonal.
 -   **N**: number of elements along each dimension of `A`.
 -   **A**: input matrix stored in linear memory as a [`Float32Array`][mdn-float32array].
--   **lda**: stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+-   **LDA**: stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
 -   **x**: input vector [`Float32Array`][mdn-float32array].
 -   **sx**: `x` stride length.
 

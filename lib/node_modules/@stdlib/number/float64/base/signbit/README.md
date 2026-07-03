@@ -152,7 +152,7 @@ int main( void ) {
     int8_t out;
     int i;
     for ( i = 0; i < 9; i++ ) {
-        stdlib_base_float64_signbit( x[ i ], &out );
+        out = stdlib_base_float64_signbit( x[ i ] );
         printf( "%lf => signbit: %" PRId8 "\n", x[ i ], out );
     }
 }

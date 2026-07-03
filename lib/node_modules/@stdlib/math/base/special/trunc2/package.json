@@ -67,5 +67,86 @@
     "prevpow2",
     "nearest",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "trunc2",
+      "alias": "trunc2",
+      "pkg_desc": "round a numeric value to the nearest power of two toward zero",
+      "desc": "rounds a numeric value to the nearest power of two toward zero",
+      "short_desc": "",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -1000,
+              1000
+            ]
+          },
+          "example_values": [
+            5.6,
+            49,
+            0.7,
+            -0.9,
+            -42,
+            88,
+            -3.2,
+            120,
+            -15,
+            230,
+            -375,
+            0,
+            9,
+            -99,
+            100,
+            -1000,
+            1500,
+            -2500,
+            7,
+            -8
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "rounded value",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "truncate",
+        "trunc",
+        "trunc2",
+        "round",
+        "floor",
+        "ceil",
+        "nextpow2",
+        "prevpow2",
+        "nearest"
+      ],
+      "extra_keywords": [
+        "math.trunc"
+      ]
+    }
+  }
 }

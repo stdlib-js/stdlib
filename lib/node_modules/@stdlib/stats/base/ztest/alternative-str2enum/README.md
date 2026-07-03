@@ -40,7 +40,7 @@ limitations under the License.
 var str2enum = require( '@stdlib/stats/base/ztest/alternative-str2enum' );
 ```
 
-#### str2enum( diagonal )
+#### str2enum( alternative )
 
 Returns the enumeration constant associated with a Z-test alternative hypothesis string.
 
