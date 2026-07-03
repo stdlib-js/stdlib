@@ -1,0 +1,8 @@
+---
+type: amend-message
+---
+docs: improve doctests for ndarray instances in `blas/ext/cusum`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/10236
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

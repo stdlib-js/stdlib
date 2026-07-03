@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_daxpy`.
 */
-#ifndef DAXPY_CBLAS_H
-#define DAXPY_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_DAXPY_CBLAS_H
+#define STDLIB_BLAS_BASE_DAXPY_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -40,4 +40,4 @@ void API_SUFFIX(cblas_daxpy)( const CBLAS_INT N, const double alpha, const doubl
 }
 #endif
 
-#endif // !DAXPY_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_DAXPY_CBLAS_H

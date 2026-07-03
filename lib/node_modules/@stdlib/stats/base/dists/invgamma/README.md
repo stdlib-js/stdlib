@@ -106,7 +106,7 @@ var y = dist.cdf( 0.5 );
 ```javascript
 var invgammaRandomFactory = require( '@stdlib/random/base/invgamma' ).factory;
 var filledarrayBy = require( '@stdlib/array/filled-by' );
-var variance = require( '@stdlib/stats/base/variance' );
+var variance = require( '@stdlib/stats/strided/variance' );
 var linspace = require( '@stdlib/array/base/linspace' );
 var gamma = require( '@stdlib/stats/base/dists/gamma' );
 var mean = require( '@stdlib/stats/strided/mean' );

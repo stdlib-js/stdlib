@@ -68,7 +68,7 @@ var cphasef = require( '@stdlib/math/base/special/cphasef' );
 // Create an array of random numbers:
 var arr = new Complex64Array( uniform( 200, -100.0, 100.0 ) );
 
-// Compute the inverse of each number in the array:
+// Compute the argument of each number in the array:
 logEachMap( 'cphasef(%s) = %0.4f', arr, cphasef );
 ```
 
