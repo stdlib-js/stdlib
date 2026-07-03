@@ -5129,11 +5129,11 @@ interface Namespace {
 	*
 	* @example
 	* var out = ns.frexp( Infinity );
-	* // returns [ Infinity , 0 ]
+	* // returns [ Infinity, 0 ]
 	*
 	* @example
 	* var out = ns.frexp( -Infinity );
-	* // returns [ -Infinity , 0 ]
+	* // returns [ -Infinity, 0 ]
 	*/
 	frexp: typeof frexp;
 
@@ -5167,11 +5167,11 @@ interface Namespace {
 	*
 	* @example
 	* var out = ns.frexpf( Infinity );
-	* // returns [ Infinity , 0 ]
+	* // returns [ Infinity, 0 ]
 	*
 	* @example
 	* var out = ns.frexpf( -Infinity );
-	* // returns [ -Infinity , 0 ]
+	* // returns [ -Infinity, 0 ]
 	*/
 	frexpf: typeof frexpf;
 
