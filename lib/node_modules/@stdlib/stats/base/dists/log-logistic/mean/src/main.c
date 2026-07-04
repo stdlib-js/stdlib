@@ -22,7 +22,7 @@
 #include "stdlib/constants/float64/pi.h"
 
 /**
-* Returns the mean of a log logistic distribution with scale parameter `alpha` and shape parameter `beta`.
+* Returns the mean of a log-logistic distribution with scale parameter `alpha` and shape parameter `beta`.
 *
 * @param alpha    scale parameter
 * @param beta     shape parameter

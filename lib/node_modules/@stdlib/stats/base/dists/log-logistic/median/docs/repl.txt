@@ -1,6 +1,6 @@
 
 {{alias}}( α, β )
-    Returns the median of a log logistic distribution with scale parameter
+    Returns the median of a log-logistic distribution with scale parameter
     `α` and shape parameter `β`.
 
     If provided `NaN` as any argument, the function returns `NaN`.

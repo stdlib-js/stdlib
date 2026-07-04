@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Returns the median of a log logistic distribution with scale parameter `alpha` and shape parameter `beta`.
+* Returns the median of a log-logistic distribution with scale parameter `alpha` and shape parameter `beta`.
 *
 * ## Notes
 *
