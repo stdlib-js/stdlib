@@ -1,0 +1,44 @@
+
+{{alias}}( α, β )
+    Returns the expected value of a log logistic distribution with scale
+    parameter `α` and shape parameter `β`.
+
+    If provided `NaN` as any argument, the function returns `NaN`.
+
+    If provided `α <= 0`, the function returns `NaN`.
+
+    If provided `β <= 1`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    α: number
+        Scale parameter.
+
+    β: number
+        Shape parameter.
+
+    Returns
+    -------
+    out: number
+        Expected value.
+
+    Examples
+    --------
+    > var y = {{alias}}( 1.0, 2.0 )
+    ~1.571
+    > y = {{alias}}( 4.0, 3.0 )
+    ~4.837
+    > y = {{alias}}( 1.0, 1.0 )
+    NaN
+    > y = {{alias}}( NaN, 2.0 )
+    NaN
+    > y = {{alias}}( 2.0, NaN )
+    NaN
+    > y = {{alias}}( -1.0, 2.0 )
+    NaN
+    > y = {{alias}}( 2.0, -1.0 )
+    NaN
+
+    See Also
+    --------
+
