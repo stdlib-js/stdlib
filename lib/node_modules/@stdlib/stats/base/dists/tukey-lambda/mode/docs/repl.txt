@@ -2,7 +2,7 @@
 {{alias}}( λ )
     Returns the mode of a Tukey lambda distribution with shape parameter `λ`.
 
-    If provided `NaN` as any argument, the function returns `NaN`.
+    If provided `NaN`, the function returns `NaN`.
 
     Parameters
     ----------

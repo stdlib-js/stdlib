@@ -30,9 +30,7 @@
 * // returns 0.0
 */
 double stdlib_base_dists_tukey_lambda_mode( const double lambda ) {
-	if (
-		stdlib_base_is_nan( lambda )
-	) {
+	if ( stdlib_base_is_nan( lambda ) ) {
 		return 0.0 / 0.0; // NaN
 	}
 	return 0.0;
