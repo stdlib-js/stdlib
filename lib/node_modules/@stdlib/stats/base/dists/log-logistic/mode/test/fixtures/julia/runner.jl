@@ -42,14 +42,17 @@ function gen( alpha, beta, name )
 	for i in eachindex(alpha)
 		z[ i ] = mode( LogLogistic( alpha[i], beta[i] ) );
 	end
+
 	# Store data to be written to file as a collection:
 	data = Dict([
 		("alpha", alpha),
 		("beta", beta),
 		("expected", z)
 	]);
+
 	# Based on the script directory, create an output filepath:
 	filepath = joinpath( dir, name );
+
 	# Write the data to the output filepath as JSON:
 	outfile = open( filepath, "w" );
 	write( outfile, JSON.json(data) );
@@ -64,6 +67,6 @@ file = @__FILE__;
 dir = dirname( file );
 
 # Generate fixtures:
-alpha = rand( 1000 ) .* 10.0 .+ 0.1;
-beta = rand( 1000 ) .* 9.0 .+ 1.1;
+alpha = ( rand( 1000 ) .* 10.0 ) .+ 0.1;
+beta = ( rand( 1000 ) .* 9.0 ) .+ 1.1;
 gen( alpha, beta, "data.json" );
