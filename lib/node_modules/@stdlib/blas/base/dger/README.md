@@ -172,7 +172,7 @@ dger( 'row-major', M, N, 1.0, x, 1, y, 1, A, N );
 console.log( A );
 
 dger.ndarray( M, N, 1.0, x, 1, 0, y, 1, 0, A, 1, M, 0 );
-console.log(A);
+console.log( A );
 
 ```
 

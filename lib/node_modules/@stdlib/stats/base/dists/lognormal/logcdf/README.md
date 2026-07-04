@@ -38,7 +38,7 @@ var logcdf = require( '@stdlib/stats/base/dists/lognormal/logcdf' );
 
 #### logcdf( x, mu, sigma )
 
-Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [lognormal][lognormal-distribution] distribution with parameters `mu` (mean) and `sigma` (standard deviation).
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [lognormal][lognormal-distribution] distribution with parameters `mu` (location parameter) and `sigma` (scale parameter).
 
 ```javascript
 var y = logcdf( 2.0, 0.0, 1.0 );
@@ -83,7 +83,7 @@ y = logcdf( 10.0, 8.0, 0.0 );
 
 #### logcdf.factory( mu, sigma )
 
-Returns a `function` for evaluating the [cumulative distribution function][cdf] (CDF) of a [lognormal][lognormal-distribution] distribution with parameters `mu` (mean) and `sigma` (standard deviation).
+Returns a `function` for evaluating the [cumulative distribution function][cdf] (CDF) of a [lognormal][lognormal-distribution] distribution with parameters `mu` (location parameter) and `sigma` (scale parameter).
 
 ```javascript
 var mylogcdf = logcdf.factory( 10.0, 2.0 );

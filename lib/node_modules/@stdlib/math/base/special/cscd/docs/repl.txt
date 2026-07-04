@@ -1,6 +1,6 @@
 
 {{alias}}( x )
-    Computes the cosecant of a degree.
+    Computes the cosecant of an angle measured in degrees.
 
     Parameters
     ----------
