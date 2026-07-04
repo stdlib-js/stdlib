@@ -33,6 +33,7 @@
 * // returns ~1.571
 */
 double stdlib_base_dists_log_logistic_mean( const double alpha, const double beta ) {
+	double c;
 	if (
 		stdlib_base_is_nan( alpha ) ||
 		stdlib_base_is_nan( beta ) ||
@@ -41,5 +42,6 @@ double stdlib_base_dists_log_logistic_mean( const double alpha, const double bet
 	) {
 		return 0.0 / 0.0; // NaN
 	}
-	return alpha * ( STDLIB_CONSTANT_FLOAT64_PI / beta ) / stdlib_base_sin( STDLIB_CONSTANT_FLOAT64_PI / beta );
+	c = STDLIB_CONSTANT_FLOAT64_PI / beta;
+	return alpha * c / stdlib_base_sin( c );
 }
