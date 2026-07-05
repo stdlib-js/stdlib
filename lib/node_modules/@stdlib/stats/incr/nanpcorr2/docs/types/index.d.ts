@@ -30,7 +30,7 @@
 type accumulator = ( x?: number, y?: number ) => number | null;
 
 /**
-* Returns an accumulator function which incrementally computes a squared sample Pearson product-moment correlation coefficient, ignoring NaN values.
+* Returns an accumulator function which incrementally computes a squared sample Pearson product-moment correlation coefficient, ignoring `NaN` values.
 *
 * @param meanx - mean value
 * @param meany - mean value
@@ -42,7 +42,7 @@ type accumulator = ( x?: number, y?: number ) => number | null;
 declare function incrnanpcorr2( meanx: number, meany: number ): accumulator;
 
 /**
-* Returns an accumulator function which incrementally computes a squared sample Pearson product-moment correlation coefficient, ignoring NaN values.
+* Returns an accumulator function which incrementally computes a squared sample Pearson product-moment correlation coefficient, ignoring `NaN` values.
 *
 * @returns accumulator function
 *
