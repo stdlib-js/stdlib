@@ -25,7 +25,7 @@
 *
 * ## Notes
 *
-* -   If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is not updated (i.e., NaN values are ignored).
+* -   If provided `NaN`, the accumulated value is not updated (i.e., `NaN` values are ignored).
 *
 * @param x - value
 * @returns accumulated value or null
@@ -33,7 +33,7 @@
 type accumulator = ( x?: number ) => number | null;
 
 /**
-* Returns an accumulator function which incrementally computes a moving variance-to-mean ratio (VMR) while ignoring NaN values.
+* Returns an accumulator function which incrementally computes a moving variance-to-mean ratio (VMR) while ignoring `NaN` values.
 *
 * @param W - window size
 * @param mean - mean value
