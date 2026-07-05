@@ -40,7 +40,6 @@ type accumulator = ( x?: number ) => number | null;
 *
 * -   The `W` parameter defines the number of values over which to compute the moving range.
 * -   As `W` values are needed to fill the window buffer, the first `W-1` returned values are calculated from smaller sample sizes. Until the window is full, each returned value is calculated from all provided values.
-* -   `NaN` values are ignored.
 *
 * @param W - window size
 * @throws must provide a positive integer
