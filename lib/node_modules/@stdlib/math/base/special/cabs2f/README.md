@@ -139,18 +139,20 @@ for ( i = 0; i < 100; i++ ) {
 Computes the squared [absolute value][absolute-value] of a single-precision complex floating-point number.
 
 ```c
-#include <complex.h>
+#include "stdlib/complex/float32/ctor.h"
 
-float y = stdlib_base_cabs2f( 5.0+3.0*I );
+stdlib_complex64_t z = stdlib_complex64( 5.0f, 3.0f );
+
+float y = stdlib_base_cabs2f( z );
 // returns 34.0f
 ```
 
 The function accepts the following arguments:
 
--   **z**: `[in] float complex` input value.
+-   **z**: `[in] stdlib_complex64_t` input value.
 
 ```c
-float stdlib_base_cabs2f( const float complex z );
+float stdlib_base_cabs2f( const stdlib_complex64_t z );
 ```
 
 </section>
@@ -173,19 +175,28 @@ float stdlib_base_cabs2f( const float complex z );
 
 ```c
 #include "stdlib/math/base/special/cabs2f.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/reim.h"
 #include <stdio.h>
-#include <complex.h>
 
 int main( void ) {
-    const float complex x[] = { 3.14f+1.0f*I, -3.14f-1.0f*I, 0.0f+0.0f*I, 0.0f/0.0f+0.0f/0.0f*I };
+    const stdlib_complex64_t x[] = {
+        stdlib_complex64( 3.14f, 1.0f ),
+        stdlib_complex64( -3.14f, -1.0f ),
+        stdlib_complex64( 0.0f, 0.0f ),
+        stdlib_complex64( 0.0f/0.0f, 0.0f/0.0f )
+    };
 
-    float complex v;
+    stdlib_complex64_t v;
+    float re;
+    float im;
     float y;
     int i;
     for ( i = 0; i < 4; i++ ) {
         v = x[ i ];
         y = stdlib_base_cabs2f( v );
-        printf( "f(%f + %f) = %f\n", crealf( v ), cimagf( v ), y );
+        stdlib_complex64_reim( v, &re, &im );
+        printf( "f(%f + %fi) = %f\n", re, im, y );
     }
 }
 ```

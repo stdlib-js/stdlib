@@ -101,7 +101,6 @@ bool = isNegativeNumber.isObject( new Number( -3.0 ) );
 
 ```javascript
 var Number = require( '@stdlib/number/ctor' );
-
 var isNegativeNumber = require( '@stdlib/assert/is-negative-number' );
 
 var bool = isNegativeNumber( -5.0 );

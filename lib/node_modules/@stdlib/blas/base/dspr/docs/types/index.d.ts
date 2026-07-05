@@ -45,7 +45,7 @@ interface Routine {
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* dspr( 'row-major', 'upper', 3, 1.0, x, 1, AP );
-	* // A => <Float64Array>[ 2.0, 4.0, 6.0, 5.0, 8.0, 10.0 ]
+	* // AP => <Float64Array>[ 2.0, 4.0, 6.0, 5.0, 8.0, 10.0 ]
 	*/
 	( order: Layout, uplo: MatrixTriangle, N: number, alpha: number, x: Float64Array, strideX: number, AP: Float64Array ): Float64Array;
 
@@ -71,7 +71,7 @@ interface Routine {
 	* var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 	*
 	* dspr.ndarray( 'row-major', 'upper', 3, 1.0, x, 1, 0, AP, 1, 0 );
-	* // A => <Float64Array>[ 2.0, 4.0, 6.0, 5.0, 8.0, 10.0 ]
+	* // AP => <Float64Array>[ 2.0, 4.0, 6.0, 5.0, 8.0, 10.0 ]
 	*/
 	ndarray( order: Layout, uplo: MatrixTriangle, N: number, alpha: number, x: Float64Array, strideX: number, offsetX: number, AP: Float64Array, strideAP: number, offsetAP: number ): Float64Array;
 }

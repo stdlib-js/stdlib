@@ -1,0 +1,218 @@
+
+{{alias}}( order, orient, uplo, M, N, correction, means, sm, A, lda, B, ldb )
+    Computes the covariance matrix for an `M` by `N` double-precision floating-
+    point matrix `A` and assigns the results to a matrix `B` when provided known
+    means and using a one-pass textbook algorithm.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `M` or `N` is equal to `0`, the function returns `B` unchanged.
+
+    When `orient = 'columns'`,
+
+    - each column in `A` represents a variable and each row in `A` represents an
+    observation.
+    - `B` should be an `N` by `N` matrix.
+    - the list of known means should be an `N` element vector.
+
+    When `orient = 'rows'`,
+
+    - each row in `A` represents a variable and each column in `A` represents an
+    observation.
+    - `B` should be an `M` by `M` matrix.
+    - the list of known means should be an `M` element vector.
+
+    Parameters
+    ----------
+    order: string
+        Row-major (C-style) or column-major (Fortran-style) order.
+
+    orient: string
+        Specifies whether variables are stored along columns or along rows.
+
+    uplo: string
+        Specifies whether to overwrite the upper or lower triangular part of
+        matrix `B`.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    correction: number
+        Degrees of freedom adjustment. Setting this parameter to a value other
+        than `0` has the effect of adjusting the divisor during the calculation
+        of the covariance according to `N - c` where `c` corresponds to the
+        provided degrees of freedom adjustment. When computing the population
+        covariance, setting this parameter to `0` is the standard choice (i.e.,
+        the provided arrays contain data constituting entire populations). When
+        computing the unbiased sample covariance, setting this parameter to `1`
+        is the standard choice (i.e., the provided array contains data sampled
+        from larger populations; this is commonly referred to as Bessel's
+        correction).
+
+    means: Float64Array
+        Vector of known means.
+
+    sm: integer
+        Stride length of `means`.
+
+    A: Float64Array
+        Input matrix.
+
+    lda: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of the
+        matrix `A`).
+
+    B: Float64Array
+        Output matrix.
+
+    ldb: integer
+        Stride of the first dimension of `B` (a.k.a., leading dimension of the
+        matrix `B`).
+
+    Returns
+    -------
+    B: Float64Array
+        Output matrix.
+
+    Examples
+    --------
+    // Define a 2x3 row-major matrix in which variables are stored along rows:
+    > var ord = 'row-major';
+    > var A = new {{alias:@stdlib/array/float64}}([
+    ...    1.0, -2.0, 2.0,
+    ...    2.0, -2.0, 1.0
+    ... ]);
+
+    // Define a vector of known means:
+    > var mu = new {{alias:@stdlib/array/float64}}( [ 1.0/3.0, 1.0/3.0 ] );
+
+    // Allocate a 2x2 output matrix:
+    > var B = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+
+    // Perform operation:
+    > var out = {{alias}}( ord, 'rows', 'full', 2, 3, 1, mu, 1, A, 3, B, 2 )
+    <Float64Array>[ ~4.3333, ~3.8333, ~3.8333, ~4.3333 ]
+
+    > var bool = ( B === out )
+    true
+
+
+{{alias}}.ndarray( orient,uplo, M,N, c, m,sm,om, A,sa1,sa2,oa, B,sb1,sb2,ob )
+    Computes the covariance matrix for an `M` by `N` double-precision floating-
+    point matrix `A` and assigns the results to a matrix `B` when provided known
+    means and using a one-pass textbook algorithm and alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, offset parameters support indexing semantics based on starting
+    indices.
+
+    If `M` or `N` is equal to `0`, the function returns `B` unchanged.
+
+    When `orient = 'columns'`,
+
+    - each column in `A` represents a variable and each row in `A` represents an
+    observation.
+    - `B` should be an `N` by `N` matrix.
+    - the list of known means should be an `N` element vector.
+
+    When `orient = 'rows'`,
+
+    - each row in `A` represents a variable and each column in `A` represents an
+    observation.
+    - `B` should be an `M` by `M` matrix.
+    - the list of known means should be an `M` element vector.
+
+    Parameters
+    ----------
+    orient: string
+        Specifies whether variables are stored along columns or along rows.
+
+    uplo: string
+        Specifies whether to overwrite the upper or lower triangular part of
+        matrix `B`.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    c: number
+        Degrees of freedom adjustment. Setting this parameter to a value other
+        than `0` has the effect of adjusting the divisor during the calculation
+        of the covariance according to `N - c` where `c` corresponds to the
+        provided degrees of freedom adjustment. When computing the population
+        covariance, setting this parameter to `0` is the standard choice (i.e.,
+        the provided arrays contain data constituting entire populations). When
+        computing the unbiased sample covariance, setting this parameter to `1`
+        is the standard choice (i.e., the provided array contains data sampled
+        from larger populations; this is commonly referred to as Bessel's
+        correction).
+
+    m: Float64Array
+        Vector of known means.
+
+    sm: integer
+        Stride length of `m`.
+
+    om: integer
+        Starting index for `m`.
+
+    A: Float64Array
+        Input matrix.
+
+    sa1: integer
+        Stride of the first dimension of `A`.
+
+    sa2: integer
+        Stride of the second dimension of `A`.
+
+    oa: integer
+        Starting index for `A`.
+
+    B: Float64Array
+        Output matrix.
+
+    sb1: integer
+        Stride of the first dimension of `B`.
+
+    sb2: integer
+        Stride of the second dimension of `B`.
+
+    ob: integer
+        Starting index for `B`.
+
+    Returns
+    -------
+    B: Float64Array
+        Output matrix.
+
+    Examples
+    --------
+    // Define a 2x3 row-major matrix in which variables are stored along rows:
+    > var A = new {{alias:@stdlib/array/float64}}([
+    ...    1.0, -2.0, 2.0,
+    ...    2.0, -2.0, 1.0
+    ... ]);
+
+    // Define a vector of known means:
+    > var mu = new {{alias:@stdlib/array/float64}}( [ 1.0/3.0, 1.0/3.0 ] );
+
+    // Allocate a 2x2 output matrix:
+    > var B = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+
+    // Perform operation:
+    > var out = {{alias}}.ndarray( 'rows','full',2,3,1,mu,1,0,A,3,1,0,B,2,1,0 )
+    <Float64Array>[ ~4.3333, ~3.8333, ~3.8333, ~4.3333 ]
+
+    > var bool = ( B === out )
+    true
+
+    See Also
+    --------
+
