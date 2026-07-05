@@ -38,7 +38,7 @@ type Results<T> = [ Array<[ number, T ]>, Array<[ number, T ]> ];
 * var x = [ 'beep', 'boop', 'foo', 'bar' ];
 * var filter = [ true, true, false, true ];
 *
-* var out = bifurcateEntries( arr, filter );
+* var out = bifurcateEntries( x, filter );
 * // returns [ [ [ 0, 'beep' ], [ 1, 'boop' ], [ 3, 'bar' ] ], [ [ 2, 'foo' ] ] ]
 */
 declare function bifurcateEntries<T = unknown>( x: Collection<T> | AccessorArrayLike<T>, filter: Collection | AccessorArrayLike<any> ): Results<T>; // eslint-disable-line @typescript-eslint/no-explicit-any

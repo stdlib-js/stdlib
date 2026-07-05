@@ -1,0 +1,30 @@
+
+{{alias}}( value )
+    Tests if a value is a `struct` instance.
+
+    Parameters
+    ----------
+    value: any
+        Value to test.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether a value is a `struct` instance.
+
+    Examples
+    --------
+    > var schema = [ { 'name': 'foo', 'type': 'float64' } ];
+    > var S = {{alias:@stdlib/dstructs/struct}}( schema );
+    > var bool = {{alias}}( new S() )
+    true
+    > bool = {{alias}}( [ 1, 2, 3, 4 ] )
+    false
+    > bool = {{alias}}( 3.14 )
+    false
+    > bool = {{alias}}( {} )
+    false
+
+    See Also
+    --------
+

@@ -6,7 +6,7 @@
     Examples
     --------
     > {{alias}}
-    34
+    10
 
     See Also
     --------

@@ -71,19 +71,17 @@ d = rad2degf( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var TWO_PI = require( '@stdlib/constants/float32/two-pi' );
 var rad2degf = require( '@stdlib/math/base/special/rad2degf' );
 
-var r;
-var d;
-var i;
+var opts = {
+    'dtype': 'float32'
+};
+var r = uniform( 100, 0.0, TWO_PI, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    r = randu() * TWO_PI;
-    d = rad2degf( r );
-    console.log( 'radians: %d => degrees: %d', r, d );
-}
+logEachMap( 'radians: %0.4f => degrees: %0.4f', r, rad2degf );
 ```
 
 </section>

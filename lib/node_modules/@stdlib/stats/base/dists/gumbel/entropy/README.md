@@ -113,20 +113,17 @@ y = entropy( 0.0, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var entropy = require( '@stdlib/stats/base/dists/gumbel/entropy' );
 
-var beta;
-var mu;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var beta = uniform( 10, 0.0, 20.0, opts );
+var mu = uniform( 10, -5.0, 5.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    mu = ( randu()*10.0 ) - 5.0;
-    beta = randu() * 20.0;
-    y = entropy( mu, beta );
-    console.log( 'µ: %d, β: %d, h(X;µ,β): %d', mu.toFixed( 4 ), beta.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'µ: %0.4f, β: %0.4f, h(X;µ,β): %0.4f', mu, beta, entropy );
 ```
 
 </section>

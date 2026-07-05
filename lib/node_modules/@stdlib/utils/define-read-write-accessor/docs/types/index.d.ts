@@ -32,7 +32,7 @@ type Getter = () => any;
 /**
 * Setter function.
 *
-* @param value - property value
+* @param x - property value
 */
 type Setter = ( x: any ) => void;
 

@@ -24,7 +24,8 @@
 * ## Notes
 *
 * -   If `n` is not a nonnegative integer, the function returns `NaN`.
-* -   If `x` is zero or a negative integer, the function returns `NaN`.
+* -   If `x` is zero or a negative odd integer, the function returns `+Infinity`.
+* -   If `x` is a negative even integer, the function returns `NaN`.
 *
 * @param n - order of derivative
 * @param x - input value
