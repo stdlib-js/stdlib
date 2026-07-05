@@ -67,6 +67,6 @@ file = @__FILE__;
 dir = dirname( file );
 
 # Generate fixtures:
-alpha = rand( 1000 ) .* 10.0 .+ 0.1;
-beta = rand( 1000 ) .* 10.0 .+ 0.1;
+alpha = ( rand( 1000 ) .* 10.0 ) .+ 0.1;
+beta = ( rand( 1000 ) .* 10.0 ) .+ 0.1;
 gen( alpha, beta, "data.json" );

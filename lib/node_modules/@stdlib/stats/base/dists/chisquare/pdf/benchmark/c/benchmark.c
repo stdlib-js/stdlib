@@ -138,5 +138,4 @@ int main( void ) {
 		printf( "ok %d benchmark finished\n", i + 1 );
 	}
 	print_summary( REPEATS, REPEATS );
-	return 0;
 }
