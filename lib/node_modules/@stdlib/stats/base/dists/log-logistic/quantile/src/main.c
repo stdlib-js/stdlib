@@ -19,6 +19,7 @@
 #include "stdlib/stats/base/dists/log-logistic/quantile.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/pow.h"
+#include "stdlib/constants/float64/pinf.h"
 
 /**
 * Evaluates the quantile function for a log-logistic distribution with scale parameter `alpha` and shape parameter `beta` at a probability `p`.
@@ -42,13 +43,13 @@ double stdlib_base_dists_log_logistic_quantile( const double p, const double alp
 		p < 0.0 ||
 		p > 1.0
 	) {
-		return 0.0 / 0.0;
+		return 0.0 / 0.0; // NaN
 	}
 	if ( p == 0.0 ) {
 		return 0.0;
 	}
 	if ( p == 1.0 ) {
-		return 1.0 / 0.0;
+		return STDLIB_CONSTANT_FLOAT64_PINF;
 	}
 	return alpha * stdlib_base_pow( p / ( 1.0 - p ), 1.0 / beta );
 }
