@@ -66,7 +66,7 @@ def gen(mean, scale, name):
 
 def main():
     """Generate fixture data."""
-    mean = rand(1000) * 10.0 - 5.0
+    mean = (rand(1000) * 10.0) - 5.0
     scale = (rand(1000) * 10.0) + 0.1
     gen(mean, scale, "data.json")
 

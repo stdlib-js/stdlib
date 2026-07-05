@@ -1,8 +1,8 @@
 
 {{alias}}( x, alpha, beta )
     Evaluates the cumulative distribution function (CDF) for a log-logistic
-    distribution with scale parameter `alpha` and shape parameter `beta`
-    at a value `x`.
+    distribution with scale parameter `alpha` and shape parameter `beta` at a
+    value `x`.
 
     If provided `alpha <= 0` or `beta <= 0`, the function returns `NaN`.
 
@@ -47,9 +47,9 @@
 
 
 {{alias}}.factory( alpha, beta )
-    Returns a function for evaluating the cumulative distribution function
-    (CDF) of a log-logistic distribution with scale parameter `alpha`
-    and shape parameter `beta`.
+    Returns a function for evaluating the cumulative distribution function (CDF)
+    of a log-logistic distribution with scale parameter `alpha` and shape
+    parameter `beta`.
 
     Parameters
     ----------
