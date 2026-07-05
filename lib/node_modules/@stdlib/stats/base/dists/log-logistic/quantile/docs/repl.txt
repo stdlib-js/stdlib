@@ -1,7 +1,7 @@
 
 {{alias}}( p, α, β )
-    Evaluates the quantile function for a log-logistic distribution with
-    scale parameter `α` and shape parameter `β` at a probability `p`.
+    Evaluates the quantile function for a log-logistic distribution with scale
+    parameter `α` and shape parameter `β` at a probability `p`.
 
     If provided `α <= 0` or `β <= 0`, the function returns `NaN`.
 
@@ -44,9 +44,8 @@
 
 
 {{alias}}.factory( α, β )
-    Returns a function for evaluating the quantile function of a
-    log-logistic distribution with scale parameter `α` and
-    shape parameter `β`.
+    Returns a function for evaluating the quantile function of a log-logistic
+    distribution with scale parameter `α` and shape parameter `β`.
 
     Parameters
     ----------

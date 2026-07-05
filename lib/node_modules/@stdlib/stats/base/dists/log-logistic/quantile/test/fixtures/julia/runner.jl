@@ -72,6 +72,6 @@ dir = dirname( file );
 
 # Generate fixture data:
 p = rand( 1000 );
-alpha = rand( 1000 ) .* 5.0 .+ 0.5;
-beta = rand( 1000 ) .* 5.0 .+ 0.5;
+alpha = ( rand( 1000 ) .* 5.0 ) .+ 0.5;
+beta = ( rand( 1000 ) .* 5.0 ) .+ 0.5;
 gen( p, alpha, beta, "data.json" );
