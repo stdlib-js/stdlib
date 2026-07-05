@@ -1279,3 +1279,5 @@
 "Kc","invalid argument. Third argument must be a valid shape. Value: `%s`.","TypeError"
 "Kd","invalid argument. Fifth argument must be a recognized/supported data type. Value: `%s`.","TypeError"
 "Ke","invalid argument. Second argument must be a supported distance metric. Value: `%s`.","TypeError"
+"Kf","invalid argument. Must provide an integer on the interval [-(2^63), 2^63-1]. Value: `%s`.","TypeError"
+"Kg","invalid argument. Must provide an integer on the interval [-(2^53-1), 2^53-1]. Value: `%s`.","TypeError"
