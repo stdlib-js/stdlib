@@ -39,7 +39,7 @@ import Int64 = require( './index' );
 	x.toString(); // $ExpectType string
 }
 
-// The function returns an instance having a `toJSON` method to serialize an instance as a JSON object....
+// The function returns an instance having a `toJSON` method to serialize an instance as a JSON object...
 {
 	const x = new Int64( 5 ); // $ExpectType Int64
 	x.toJSON(); // $ExpectType SerializedInt64

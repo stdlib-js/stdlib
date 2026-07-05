@@ -2656,6 +2656,8 @@
 "2iD",@stdlib/blas-ext-base-ndarray-zzero-to
 "0Eq",@stdlib/blas/ext/base
 "0Er",@stdlib/blas-ext-base
+"2zE",@stdlib/blas/ext/base/sany
+"2zF",@stdlib/blas-ext-base-sany
 "0Es",@stdlib/blas/ext/base/sapx
 "0Et",@stdlib/blas-ext-base-sapx
 "0Eu",@stdlib/blas/ext/base/sapxsum
@@ -6519,6 +6521,8 @@
 "0lh",@stdlib/number-int32-base-to-uint32
 "0li",@stdlib/number/int32
 "0lj",@stdlib/number-int32
+"2zG",@stdlib/number/int64/ctor
+"2zH",@stdlib/number-int64-ctor
 "2Tw",@stdlib/number/int8/base/identity
 "2Tx",@stdlib/number-int8-base-identity
 "2Ya",@stdlib/number/int8/base
@@ -6568,6 +6572,8 @@
 "2xN",@stdlib/number-uint64-base-add
 "2xO",@stdlib/number/uint64/base/assert/is-equal
 "2xP",@stdlib/number-uint64-base-assert-is-equal
+"2zI",@stdlib/number/uint64/base/number2words
+"2zJ",@stdlib/number-uint64-base-number2words
 "2xQ",@stdlib/number/uint64/base/to-words
 "2xR",@stdlib/number-uint64-base-to-words
 "2p4",@stdlib/number/uint64/ctor
@@ -7522,6 +7528,8 @@
 "2xT",@stdlib/stats-base-dists-anglit-mean
 "2xU",@stdlib/stats/base/dists/anglit/median
 "2xV",@stdlib/stats-base-dists-anglit-median
+"2zK",@stdlib/stats/base/dists/anglit/quantile
+"2zL",@stdlib/stats-base-dists-anglit-quantile
 "0ty",@stdlib/stats/base/dists/arcsine/cdf
 "0tz",@stdlib/stats-base-dists-arcsine-cdf
 "0u0",@stdlib/stats/base/dists/arcsine/ctor
@@ -8164,6 +8172,14 @@
 "14X",@stdlib/stats-base-dists-levy-stdev
 "14Y",@stdlib/stats/base/dists/levy/variance
 "14Z",@stdlib/stats-base-dists-levy-variance
+"2zM",@stdlib/stats/base/dists/log-logistic/mean
+"2zN",@stdlib/stats-base-dists-log-logistic-mean
+"2zO",@stdlib/stats/base/dists/log-logistic/median
+"2zP",@stdlib/stats-base-dists-log-logistic-median
+"2zQ",@stdlib/stats/base/dists/log-logistic/mode
+"2zR",@stdlib/stats-base-dists-log-logistic-mode
+"2zS",@stdlib/stats/base/dists/log-logistic/pdf
+"2zT",@stdlib/stats-base-dists-log-logistic-pdf
 "14a",@stdlib/stats/base/dists/logistic/cdf
 "14b",@stdlib/stats-base-dists-logistic-cdf
 "14c",@stdlib/stats/base/dists/logistic/ctor
@@ -8438,6 +8454,8 @@
 "18x",@stdlib/stats-base-dists-triangular-pdf
 "18y",@stdlib/stats/base/dists/triangular/quantile
 "18z",@stdlib/stats-base-dists-triangular-quantile
+"2zU",@stdlib/stats/base/dists/tukey-lambda/mode
+"2zV",@stdlib/stats-base-dists-tukey-lambda-mode
 "19A",@stdlib/stats/base/dists/uniform/cdf
 "19B",@stdlib/stats-base-dists-uniform-cdf
 "19C",@stdlib/stats/base/dists/uniform/ctor
