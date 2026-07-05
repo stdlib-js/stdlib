@@ -24,8 +24,8 @@ import gfirstIndexEqual = require( './index' );
 
 // The function returns a number...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual( x.length, x, 1, y, 1 ); // $ExpectType number
 	gfirstIndexEqual( x.length, new AccessorArray( x ), 1, new AccessorArray( y ), 1 ); // $ExpectType number
@@ -33,8 +33,8 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual( '1', x, 1, y, 1 ); // $ExpectError
 	gfirstIndexEqual( true, x, 1, y, 1 ); // $ExpectError
@@ -48,7 +48,7 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the function is provided a second argument which is not a collection...
 {
-	var y = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual( 3, 10, 1, y, 1 ); // $ExpectError
 	gfirstIndexEqual( 3, true, 1, y, 1 ); // $ExpectError
@@ -60,8 +60,8 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the function is provided a third argument which is not a number...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual( x.length, x, '1', y, 1 ); // $ExpectError
 	gfirstIndexEqual( x.length, x, true, y, 1 ); // $ExpectError
@@ -75,7 +75,7 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the function is provided a fourth argument which is not a collection...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual( x.length, x, 1, 10, 1 ); // $ExpectError
 	gfirstIndexEqual( x.length, x, 1, true, 1 ); // $ExpectError
@@ -87,8 +87,8 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the function is provided a fifth argument which is not a number...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual( x.length, x, 1, y, '1' ); // $ExpectError
 	gfirstIndexEqual( x.length, x, 1, y, true ); // $ExpectError
@@ -102,8 +102,8 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual(); // $ExpectError
 	gfirstIndexEqual( 3 ); // $ExpectError
@@ -115,8 +115,8 @@ import gfirstIndexEqual = require( './index' );
 
 // Attached to main export is an `ndarray` method which returns a number...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType number
 	gfirstIndexEqual.ndarray( x.length, new AccessorArray( x ), 1, 0, new AccessorArray( y ), 1, 0 ); // $ExpectType number
@@ -124,8 +124,8 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual.ndarray( '1', x, 1, 0, y, 1, 0 ); // $ExpectError
 	gfirstIndexEqual.ndarray( true, x, 1, 0, y, 1, 0 ); // $ExpectError
@@ -139,7 +139,7 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the `ndarray` method is provided a second argument which is not a collection...
 {
-	var y = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual.ndarray( 3, 10, 1, 0, y, 1, 0 ); // $ExpectError
 	gfirstIndexEqual.ndarray( 3, true, 1, 0, y, 1, 0 ); // $ExpectError
@@ -151,8 +151,8 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the `ndarray` method is provided a third argument which is not a number...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual.ndarray( x.length, x, '1', 0, y, 1, 0 ); // $ExpectError
 	gfirstIndexEqual.ndarray( x.length, x, true, 0, y, 1, 0 ); // $ExpectError
@@ -166,8 +166,8 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the `ndarray` method is provided a fourth argument which is not a number...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual.ndarray( x.length, x, 1, '1', y, 1, 0 ); // $ExpectError
 	gfirstIndexEqual.ndarray( x.length, x, 1, true, y, 1, 0 ); // $ExpectError
@@ -181,7 +181,7 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a collection...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual.ndarray( x.length, x, 1, 0, 10, 1, 0 ); // $ExpectError
 	gfirstIndexEqual.ndarray( x.length, x, 1, 0, true, 1, 0 ); // $ExpectError
@@ -193,8 +193,8 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the `ndarray` method is provided a sixth argument which is not a number...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual.ndarray( x.length, x, 1, 0, y, '1', 0 ); // $ExpectError
 	gfirstIndexEqual.ndarray( x.length, x, 1, 0, y, true, 0 ); // $ExpectError
@@ -208,8 +208,8 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the `ndarray` method is provided a seventh argument which is not a number...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual.ndarray( x.length, x, 1, 0, y, 1, '1' ); // $ExpectError
 	gfirstIndexEqual.ndarray( x.length, x, 1, 0, y, 1, true ); // $ExpectError
@@ -223,8 +223,8 @@ import gfirstIndexEqual = require( './index' );
 
 // The compiler throws an error if the `ndarray` method is provided an unsupported number of arguments...
 {
-	var x = [ 1.0, 2.0, 3.0 ];
-	var y = [ 1.0, 2.0, 3.0 ];
+	const x = [ 1.0, 2.0, 3.0 ];
+	const y = [ 1.0, 2.0, 3.0 ];
 
 	gfirstIndexEqual.ndarray(); // $ExpectError
 	gfirstIndexEqual.ndarray( 3 ); // $ExpectError
