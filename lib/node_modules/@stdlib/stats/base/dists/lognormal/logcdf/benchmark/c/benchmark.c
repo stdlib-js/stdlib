@@ -26,7 +26,6 @@
 #define NAME "lognormal-logcdf"
 #define ITERATIONS 1000000
 #define REPEATS 3
-#define LEN 100
 
 /**
 * Prints the TAP version.
@@ -93,15 +92,15 @@ static double random_uniform( const double min, const double max ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double sigma[ 100 ];
+	double mu[ 100 ];
+	double x[ 100 ];
 	double elapsed;
-	double x[ LEN ];
-	double mu[ LEN ];
-	double sigma[ LEN ];
 	double y;
 	double t;
 	int i;
 
-	for ( i = 0; i < LEN; i++ ) {
+	for ( i = 0; i < 100; i++ ) {
 		x[ i ] = random_uniform( 0.0, 100.0 );
 		mu[ i ] = random_uniform( -10.0, 10.0 );
 		sigma[ i ] = random_uniform( 0.1, 10.0 );
@@ -109,7 +108,7 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = stdlib_base_dists_lognormal_logcdf( x[ i%LEN ], mu[ i%LEN ], sigma[ i%LEN ] );
+		y = stdlib_base_dists_lognormal_logcdf( x[ i%100 ], mu[ i%100 ], sigma[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
