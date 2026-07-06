@@ -24,7 +24,7 @@ This directory contains [Python][python] configuration files.
 
 <section class="links">
 
-[python]: http://python.com/
+[python]: https://www.python.org/
 
 </section>
 

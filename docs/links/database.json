@@ -9408,7 +9408,7 @@
       "mastering"
     ]
   },
-  "https://gyp.gsrc.io/": {
+  "https://chromium.googlesource.com/external/gyp": {
     "id": "gyp",
     "description": "Gyp is a Meta-Build system: : a build system that generates other build systems.",
     "short_url": "",
@@ -10837,7 +10837,7 @@
       "maape"
     ]
   },
-  "https://www.scipy.org/scipylib/index.html": {
+  "https://scipy.org/scipylib/index.html": {
     "id": "scipy",
     "description": "Official homepage for SciPy, a collection of mathematical algorithms and convenience functions built on the Numpy extension of Python.",
     "short_url": "",

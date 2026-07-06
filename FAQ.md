@@ -828,7 +828,7 @@ See the [contributing guide][contributing-guide].
 
 [asm]: http://asmjs.org/spec/latest/
 
-[gyp]: https://gyp.gsrc.io/
+[gyp]: https://chromium.googlesource.com/external/gyp
 
 [gfortran]: https://gcc.gnu.org/fortran/
 
@@ -836,7 +836,7 @@ See the [contributing guide][contributing-guide].
 
 [numpy]: https://numpy.org/
 
-[scipy]: https://www.scipy.org/scipylib/index.html
+[scipy]: https://scipy.org/scipylib/index.html
 
 [scikit-learn]: http://scikit-learn.org/stable/
 
@@ -882,7 +882,7 @@ See the [contributing guide][contributing-guide].
 
 [golang-big]: https://golang.org/pkg/math/big/
 
-[julia-bigint]: http://docs.julialang.org/en/stable/stdlib/numbers/?highlight=bigfloat#Base.BigInt
+[julia-bigint]: https://docs.julialang.org/en/stable/stdlib/numbers/#Base.BigInt
 
 [julia-bigfloat]: https://docs.julialang.org/en/stable/stdlib/numbers/#Base.BigFloat
 
