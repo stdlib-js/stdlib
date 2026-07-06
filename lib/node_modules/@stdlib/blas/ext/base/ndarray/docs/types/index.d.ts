@@ -865,7 +865,7 @@ interface Namespace {
 	dlinspace: typeof dlinspace;
 
 	/**
-	* Computes the sum of a one-dimensional double-precision floating-point ndarray, ignoring NaN values.
+	* Computes the sum of a one-dimensional double-precision floating-point ndarray, ignoring `NaN` values.
 	*
 	* ## Notes
 	*
