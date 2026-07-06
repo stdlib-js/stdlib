@@ -1,0 +1,34 @@
+
+{{alias}}( arrays )
+    Subtracts the elements of an output one-dimensional double-precision complex
+    floating-point ndarray from the corresponding elements in an input one-
+    dimensional double-precision complex floating-point ndarray and assigns the
+    results to the output ndarray.
+
+    The output ndarray is modified *in-place* (i.e., the output ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var bufX = [ 1.0, -2.0, 3.0, 4.0, -5.0, 6.0 ];
+    > var bufY = [ 2.0, 3.0, -4.0, 5.0, 6.0, -7.0 ];
+    > var x = new {{alias:@stdlib/ndarray/vector/complex128}}( bufX );
+    > var y = new {{alias:@stdlib/ndarray/vector/complex128}}( bufY );
+    > {{alias}}( [ x, y ] )
+    <ndarray>[ <Complex128>[-1,-5], <Complex128>[7,-1], <Complex128>[-11,13] ]
+
+    See Also
+    --------

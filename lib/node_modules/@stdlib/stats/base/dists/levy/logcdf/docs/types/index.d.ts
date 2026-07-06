@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogCDF {
 	/**
-	* Evaluates the logarithm of the cumulative distribution function (CDF) for a Lévy distribution with location parameter `mu` and scale parameter `c` at value `x`.
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Lévy distribution with location parameter `mu` and scale parameter `c` at value `x`.
 	*
 	* ## Notes
 	*
@@ -74,7 +74,7 @@ interface LogCDF {
 	( x: number, mu: number, c: number ): number;
 
 	/**
-	* Returns a function for evaluating the logarithm of the cumulative distribution function (CDF) for a Lévy distribution with location parameter `mu` and scale parameter `c`.
+	* Returns a function for evaluating the natural logarithm of the cumulative distribution function (CDF) for a Lévy distribution with location parameter `mu` and scale parameter `c`.
 	*
 	* @param mu - location parameter
 	* @param c - scale parameter
@@ -93,7 +93,7 @@ interface LogCDF {
 }
 
 /**
-* Lévy distribution logarithm of cumulative distribution function (logCDF).
+* Lévy distribution natural logarithm of cumulative distribution function (logCDF).
 *
 * @param x - input value
 * @param mu - location parameter

@@ -29,9 +29,9 @@ import falses = require( './index' );
 // The compiler throws an error if the function is provided an argument which is not a number...
 {
 	falses( 'abc' ); // $ExpectError
+	falses( true ); // $ExpectError
 	falses( false ); // $ExpectError
-	falses( false ); // $ExpectError
-	falses( false ); // $ExpectError
+	falses( null ); // $ExpectError
 	falses( [] ); // $ExpectError
 	falses( {} ); // $ExpectError
 	falses( ( x: number ): number => x ); // $ExpectError

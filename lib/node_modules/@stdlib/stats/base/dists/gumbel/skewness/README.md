@@ -213,7 +213,7 @@ int main( void ) {
         beta = random_uniform( 0.0, 20.0 );
         y = stdlib_base_dists_gumbel_skewness( mu, beta );
         printf( "µ: %lf, β: %lf, Skew(X;µ,β): %lf\n", mu, beta, y );
-    s}
+    }
 }
 ```
 

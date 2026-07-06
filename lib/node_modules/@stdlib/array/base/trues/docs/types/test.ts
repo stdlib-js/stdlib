@@ -31,7 +31,7 @@ import trues = require( './index' );
 	trues( 'abc' ); // $ExpectError
 	trues( true ); // $ExpectError
 	trues( false ); // $ExpectError
-	trues( true ); // $ExpectError
+	trues( null ); // $ExpectError
 	trues( [] ); // $ExpectError
 	trues( {} ); // $ExpectError
 	trues( ( x: number ): number => x ); // $ExpectError

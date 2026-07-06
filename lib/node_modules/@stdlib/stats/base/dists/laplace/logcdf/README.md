@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Laplace][laplace-distribution] distribution logarithm of [cumulative distribution function][cdf].
+> [Laplace][laplace-distribution] distribution natural logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 
@@ -55,7 +55,7 @@ var logcdf = require( '@stdlib/stats/base/dists/laplace/logcdf' );
 
 #### logcdf( x, mu, b )
 
-Evaluates the logarithm of the [cumulative distribution function][cdf] (CDF) for a [Laplace][laplace-distribution] distribution with parameters `mu` (location parameter) and `b > 0` (scale parameter).
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [Laplace][laplace-distribution] distribution with parameters `mu` (location parameter) and `b > 0` (scale parameter).
 
 ```javascript
 var y = logcdf( 2.0, 0.0, 1.0 );
@@ -169,7 +169,7 @@ logEachMap( 'x: %0.4f, µ: %0.4f, b: %0.4f, ln(F(x;µ,b)): %0.4f', x, mu, b, log
 
 #### stdlib_base_dists_laplace_logcdf( x, mu, b )
 
-Evaluates the logarithm of the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
+Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
 
 ```c
 double out = stdlib_base_dists_laplace_logcdf( 2.0, 0.0, 1.0 );
