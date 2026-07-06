@@ -82,7 +82,7 @@ import { float64ndarray, ndarray } from '@stdlib/types/ndarray';
 *
 * console.log( v.get().toString() );
 */
-declare function dztest2<T extends ndarray>( arrays: [ float64ndarray, float64ndarray, T, float64ndarray, float64ndarray, float64ndarray, float64ndarray, float64ndarray ] ): T;
+declare function dztest2<T extends ndarray = ndarray>( arrays: [ float64ndarray, float64ndarray, T, float64ndarray, float64ndarray, float64ndarray, float64ndarray, float64ndarray ] ): T;
 
 
 // EXPORTS //

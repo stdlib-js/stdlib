@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/gwapx",
   "version": "0.0.0",
-  "description": "Add a scalar constant to each element in a strided array `x` and assign the results to elements in a strided array `w`",
+  "description": "Add a scalar constant to each element in a strided array `x` and assign the results to elements in a strided array `w`.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
