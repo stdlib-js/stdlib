@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# gfill-nan
+# gfillNaN
 
 > Replace strided array elements equal to `NaN` with a specified scalar constant.
 
