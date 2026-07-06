@@ -136,7 +136,7 @@ $ code .
 
 [vscode-spell-checker]: https://github.com/Jason-Rev/vscode-spell-checker
 
-[vscode-spell-checker-readme]: https://github.com/Jason-Rev/vscode-spell-checker/blob/master/client/README.md
+[vscode-spell-checker-readme]: https://github.com/streetsidesoftware/vscode-spell-checker/blob/main/client/README.md
 
 [vscode-path-intellisense]: https://github.com/ChristianKohler/PathIntellisense
 

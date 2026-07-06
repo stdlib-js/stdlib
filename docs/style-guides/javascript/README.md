@@ -2278,7 +2278,7 @@ Code review.
 
 ##### Reason
 
-Throw and provide tailored `error` messages if expected conditions are not met. Doing so facilitates debugging and eases code maintenance (see [programmer errors](https://www.joyent.com/developers/node/design/errors)).
+Throw and provide tailored `error` messages if expected conditions are not met. Doing so facilitates debugging and eases code maintenance (see [programmer errors](https://web.archive.org/web/20230601000000/https://www.joyent.com/developers/node/design/errors)).
 
 ##### Bad Example
 

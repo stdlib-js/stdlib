@@ -884,7 +884,7 @@ See the [contributing guide][contributing-guide].
 
 [julia-bigint]: http://docs.julialang.org/en/stable/stdlib/numbers/?highlight=bigfloat#Base.BigInt
 
-[julia-bigfloat]: http://docs.julialang.org/en/stable/stdlib/numbers/?highlight=bigfloat#Base.BigFloat
+[julia-bigfloat]: https://docs.julialang.org/en/stable/stdlib/numbers/#Base.BigFloat
 
 <!--
 [@stdlib/math/base/special/frexp]: https://github.com/stdlib-js/stdlib/blob/0b1a64efef8859a17a60edb7ccaab62937b77a63/lib/node_modules/%40stdlib/math/base/special/frexp/lib/frexp.js#L67

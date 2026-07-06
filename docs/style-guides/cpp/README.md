@@ -8,7 +8,7 @@ TODO
 
 -   [FAQ](http://www.stroustrup.com/bs_faq2.html)
 
--   [cppdoc](http://www.edparrish.net/common/cppdoc.html)
+-   [cppdoc](https://web.archive.org/web/20230601000000/http://www.edparrish.net/common/cppdoc.html)
 
 -   [cpm](https://github.com/iauns/cpm)
 
