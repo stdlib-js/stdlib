@@ -139,7 +139,7 @@ var fcns = special;
 -   <span class="signature">[`risingFactorial( x, n )`][@stdlib/math/base/special/rising-factorial]</span><span class="delimiter">: </span><span class="description">compute the rising factorial.</span>
 -   <span class="signature">[`sin( x )`][@stdlib/math/base/special/sin]</span><span class="delimiter">: </span><span class="description">compute the sine of a number.</span>
 -   <span class="signature">[`sinc( x )`][@stdlib/math/base/special/sinc]</span><span class="delimiter">: </span><span class="description">compute the cardinal sine of a number.</span>
--   <span class="signature">[`sincf( x )`][@stdlib/math/base/special/sincf]</span><span class="delimiter">: </span><span class="description">compute the cardinal sine of a single-precision floating-point number (in radians).</span>
+-   <span class="signature">[`sincf( x )`][@stdlib/math/base/special/sincf]</span><span class="delimiter">: </span><span class="description">compute the cardinal sine of a single-precision floating-point number.</span>
 -   <span class="signature">[`sincos( x )`][@stdlib/math/base/special/sincos]</span><span class="delimiter">: </span><span class="description">simultaneously compute the sine and cosine of an angle measured in radians.</span>
 -   <span class="signature">[`sincosd( x )`][@stdlib/math/base/special/sincosd]</span><span class="delimiter">: </span><span class="description">simultaneously compute the sine and cosine of an angle measured in degrees.</span>
 -   <span class="signature">[`sincosf( x )`][@stdlib/math/base/special/sincosf]</span><span class="delimiter">: </span><span class="description">simultaneously compute the sine and cosine of a single-precision floating-point number (in radians).</span>

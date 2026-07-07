@@ -648,7 +648,7 @@ interface Namespace {
 	* @returns enumeration constant
 	*
 	* @example
-	* var v = ns.diagonalTypeResolveEnum( 'non-unit' );
+	* var v = ns.diagonalTypeResolveEnum( 'unit' );
 	* // returns <number>
 	*/
 	diagonalTypeResolveEnum: typeof diagonalTypeResolveEnum;
@@ -816,9 +816,9 @@ interface Namespace {
 	* Multiplies a double-precision floating-point vector `x` by a constant `alpha`.
 	*
 	* @param N - number of indexed elements
-	* @param alpha - constant
+	* @param alpha - scalar constant
 	* @param x - input array
-	* @param stride - index increment
+	* @param stride - stride length
 	* @returns input array
 	*
 	* @example
@@ -974,10 +974,10 @@ interface Namespace {
 	* Performs the matrix-vector operation `y = alpha*A*x + beta*y` where `alpha` and `beta` are scalars, `x` and `y` are `N` element vectors, and `A` is an `N` by `N` symmetric matrix.
 	*
 	* @param order - storage layout
-	* @param uplo - specifies whether the upper or lower triangular part of the symmetric matrix `A` is to be referenced
+	* @param uplo - specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced
 	* @param N - number of elements along each dimension in the matrix `A`
 	* @param alpha - scalar constant
-	* @param A - matrix
+	* @param A - input matrix
 	* @param LDA - stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 	* @param x - first input array
 	* @param strideX - `x` stride length
@@ -1387,12 +1387,12 @@ interface Namespace {
 	* @returns `A`
 	*
 	* @example
-	* var A = [ 1.0, 4.0, 2.0, 5.0, 3.0, 6.0 ];
+	* var A = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 	* var x = [ 1.0, 1.0 ];
 	* var y = [ 1.0, 1.0, 1.0 ];
 	*
 	* ns.gger( 'row-major', 2, 3, 1.0, x, 1, y, 1, A, 3 );
-	* // A => [ 2.0, 5.0, 3.0, 6.0, 4.0, 7.0 ]
+	* // A => [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0 ]
 	*
 	* @example
 	* var A = [ 1.0, 4.0, 2.0, 5.0, 3.0, 6.0 ];
@@ -1958,7 +1958,7 @@ interface Namespace {
 	* @param N - number of indexed elements
 	* @param x - input array
 	* @param strideX - `x` stride length
-	* @returns out
+	* @returns sum of absolute values
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
@@ -2401,7 +2401,7 @@ interface Namespace {
 	* @param uplo - specifies whether the upper or lower triangular part of the symmetric matrix `A` is supplied
 	* @param N - number of elements along each dimension of `A`
 	* @param alpha - scalar constant
-	* @param x - first input array
+	* @param x - input vector
 	* @param strideX - `x` stride length
 	* @param AP - packed form of a symmetric matrix `A`
 	* @returns `AP`

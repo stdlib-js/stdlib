@@ -194,7 +194,7 @@ console.log( out );
 ### Usage
 
 ```c
-#include "stdlib/blas/ext/base/dcartesianpower.h"
+#include "stdlib/blas/ext/base/dcartesian_power.h"
 ```
 
 #### stdlib_strided_dcartesian_power( order, N, k, \*X, strideX, \*Out, LDO )
@@ -274,7 +274,7 @@ void stdlib_strided_dcartesian_power_ndarray( const CBLAS_INT N, const CBLAS_INT
 ### Examples
 
 ```c
-#include "stdlib/blas/ext/base/dcartesianpower.h"
+#include "stdlib/blas/ext/base/dcartesian_power.h"
 #include "stdlib/blas/base/shared.h"
 #include <stdio.h>
 #include <math.h>

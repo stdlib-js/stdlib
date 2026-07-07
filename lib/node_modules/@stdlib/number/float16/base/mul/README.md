@@ -20,7 +20,7 @@ limitations under the License.
 
 # mul
 
-> Multiply two half-precision floating-point numbers.
+> Multiply two [half-precision floating-point numbers][ieee754].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -107,6 +107,8 @@ logEachMap( '%d x %d = %d', x, y, mul );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
 
 </section>
 

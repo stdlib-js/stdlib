@@ -48,13 +48,13 @@
 
     // Using view offsets:
     > var x0 = new {{alias:@stdlib/array/uint8}}( [ 1, 1, 1, 0, 0, 0 ] );
-    > var o0 = new {{alias:@stdlib/array/uint8}}( x0.length );
+    > var o0 = new {{alias:@stdlib/array/bool}}( x0.length );
     > var x1 = new {{alias:@stdlib/array/uint8}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
-    > var o1 = new {{alias:@stdlib/array/uint8}}( o0.buffer, o0.BYTES_PER_ELEMENT*3 );
+    > var o1 = new {{alias:@stdlib/array/bool}}( o0.buffer, o0.BYTES_PER_ELEMENT*3 );
     > {{alias}}( 3, x1, 2, o1, 1 )
-    <Uint8Array>[ 1, 0, 0 ]
+    <BooleanArray>[ true, false, false ]
     > o0
-    <Uint8Array>[ 0, 0, 0, 1, 0, 0 ]
+    <BooleanArray>[ false, false, false, true, false, false ]
 
 
 {{alias}}.ndarray( N, x, strideX, offsetX, out, strideOut, offsetOut )

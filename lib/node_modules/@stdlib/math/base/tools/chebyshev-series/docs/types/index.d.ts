@@ -49,7 +49,7 @@ interface ChebyshevSeries {
 	* @returns evaluated Chebyshev series
 	*
 	* @example
-	* var v = chebyshevSeries( 1.0, [ 1.0, 0.5 ] ); // 1*T_0(1/2) + 0.5*T_1(1/2)
+	* var v = chebyshevSeries( 1.0, [ 1.0, 0.5 ] );
 	* // returns 0.75
 	*/
 	( x: number, c: Collection<number> ): number;
@@ -91,11 +91,11 @@ interface ChebyshevSeries {
 * @returns evaluated Chebyshev series
 *
 * @example
-* var v = chebyshevSeries( 1.0, [ 1.0, 0.5 ] ); // 1*T_0(1/2) + 0.5*T_1(1/2)
+* var v = chebyshevSeries( 1.0, [ 1.0, 0.5 ] );
 * // returns 0.75
 *
 * @example
-* var evaluate = chebyshevSeries.factory( [ 1.0, 0.5 ] ); // 1*T_0(1/2) + 0.5*T_1(1/2)
+* var evaluate = chebyshevSeries.factory( [ 1.0, 0.5 ] );
 *
 * var v = evaluate( 1.0 );
 * // returns 0.75

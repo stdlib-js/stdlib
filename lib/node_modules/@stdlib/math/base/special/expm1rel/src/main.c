@@ -59,7 +59,7 @@ double stdlib_base_expm1rel( const double x ) {
 	if ( x >= OVERFLOW_THRESHOLD ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF; // L'Hopital's Rule
 	}
-	// HUGE_VALUE <= x < OVERFLOW_THRESHOLD
+	// HUGE_THRESHOLD <= x < OVERFLOW_THRESHOLD
 	tmp = stdlib_base_expm1( x/2.0 );
 	return ( tmp/x ) * ( tmp+2.0 ); // note: we keep the `+2` term in order to prevent compiler optimizations from rearranging terms, even though `tmp + 2 = tmp` due to the limits of floating-point precision
 }

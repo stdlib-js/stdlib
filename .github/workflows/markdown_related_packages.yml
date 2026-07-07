@@ -118,20 +118,22 @@ jobs:
       # Pick random READMEs from the `lib/node_modules/@stdlib` directory:
       - name: 'Pick random READMEs from the `lib/node_modules/@stdlib` directory'
         id: random-readmes
+        env:
+          NUM: ${{ github.event.inputs.num || 250 }}
         run: |
-          command="find lib/node_modules/@stdlib -type f -name 'README.md' |
-            grep -v '/fixtures/' |
-            grep -v '/_tools/' |
-            shuf -n ${{ github.event.inputs.num || 250 }} | tr '\n' ','"
-          readmes=$(eval ${command})
+          # The `find` invocation is fully static, so no `eval` is needed; the user-supplied
+          # `NUM` is used as an ordinary double-quoted expansion and cannot be interpreted as shell:
+          readmes=$(find lib/node_modules/@stdlib -type f -name 'README.md' | grep -v '/fixtures/' | grep -v '/_tools/' | shuf -n "$NUM" | tr '\n' ',')
 
           echo "readmes=$readmes" >> $GITHUB_OUTPUT
 
       # Update READMEs:
       - name: 'Update READMEs'
         id: update-related-packages
+        env:
+          READMES: ${{ steps.random-readmes.outputs.readmes }}
         run: |
-          files=$(echo "${{ steps.random-readmes.outputs.readmes }}" | tr ',' ' ')
+          files=$(echo "$READMES" | tr ',' ' ')
           make markdown-related-files FILES="${files}"
           make markdown-pkg-urls-files FILES="${files}"
 
