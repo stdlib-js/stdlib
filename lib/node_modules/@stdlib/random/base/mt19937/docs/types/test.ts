@@ -74,7 +74,7 @@ import mt19937 = require( './index' );
 	mt19937.factory( { 'state': null } ); // $ExpectError
 	mt19937.factory( { 'state': [] } ); // $ExpectError
 	mt19937.factory( { 'state': {} } ); // $ExpectError
-	mt19937.factory( { 'state': true ); // $ExpectError
+	mt19937.factory( { 'state': true } ); // $ExpectError
 	mt19937.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 
