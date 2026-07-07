@@ -148,7 +148,7 @@ interface OptionsWithDType extends Options {
 }
 
 /**
-* Creates a NaN-filled array having the same shape and data type as a provided input ndarray.
+* Creates a NaN-filled ndarray having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @param options - options
@@ -157,7 +157,7 @@ interface OptionsWithDType extends Options {
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -187,7 +187,7 @@ interface OptionsWithDType extends Options {
 declare function nansLike<T extends genericndarray<any> | typedndarray<number | ComplexLike>>( x: T, options?: Options ): T;
 
 /**
-* Creates a NaN-filled array having the same shape and data type as a provided input ndarray.
+* Creates a NaN-filled ndarray having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @param options - options
@@ -196,7 +196,7 @@ declare function nansLike<T extends genericndarray<any> | typedndarray<number | 
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -236,7 +236,7 @@ declare function nansLike( x: genericndarray<any>, options?: Options ): genericn
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -278,7 +278,7 @@ declare function nansLike( x: ndarray, options: Float64Options ): float64ndarray
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -320,7 +320,7 @@ declare function nansLike( x: ndarray, options: Float32Options ): float32ndarray
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -362,7 +362,7 @@ declare function nansLike( x: ndarray, options: Complex128Options ): complex128n
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -404,7 +404,7 @@ declare function nansLike( x: ndarray, options: Complex64Options ): complex64nda
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -436,7 +436,7 @@ declare function nansLike( x: ndarray, options: Complex64Options ): complex64nda
 declare function nansLike( x: ndarray, options: GenericOptions ): genericndarray<number>;
 
 /**
-* Creates a NaN-filled array having the same shape and data type as a provided input ndarray.
+* Creates a NaN-filled ndarray having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @param options - options
@@ -446,7 +446,7 @@ declare function nansLike( x: ndarray, options: GenericOptions ): genericndarray
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns NaN-filled array
+* @returns NaN-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
