@@ -20,13 +20,13 @@ limitations under the License.
 
 # Moment-Generating Function
 
-> [Degenerate][degenerate] distribution moment-generating function (MGF).
+> [Degenerate][degenerate-distribution] distribution moment-generating function (MGF).
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
-The [moment-generating function][mgf] for a [degenerate][degenerate] random variable is
+The [moment-generating function][mgf] for a [degenerate][degenerate-distribution] random variable is
 
 <!-- <equation class="equation" label="eq:degenerate_mgf" align="center" raw="M_X(t) := e^{\mu t}" alt="Moment-generating function (MGF) of a degenerate distribution."> -->
 
@@ -59,7 +59,7 @@ var mgf = require( '@stdlib/stats/base/dists/degenerate/mgf' );
 
 #### mgf( t, mu )
 
-Evaluates the moment-generating function ([MGF][mgf]) of a [degenerate][degenerate] distribution with parameter `mu` (mean).
+Evaluates the moment-generating function ([MGF][mgf]) of a [degenerate][degenerate-distribution] distribution with parameter `mu` (mean).
 
 ```javascript
 var y = mgf( 1.0, 1.0 );
@@ -81,7 +81,7 @@ y = mgf( 0.0, NaN );
 
 #### mgf.factory( mu )
 
-Returns a function for evaluating the [moment-generating function][mgf] of a [degenerate][degenerate] distribution with parameter `mu` (mean).
+Returns a function for evaluating the [moment-generating function][mgf] of a [degenerate][degenerate-distribution] distribution with parameter `mu` (mean).
 
 ```javascript
 var mymgf = mgf.factory( 10.0 );
@@ -156,7 +156,7 @@ logEachMap( 'x: %0.4f, µ: %0.4f, M_X(t;µ): %0.4f', t, mu, mgf );
 
 #### stdlib_base_dists_degenerate_mgf( t, mu )
 
-Evaluates the moment-generating function ([MGF][mgf]) of a [degenerate][degenerate] distribution with parameter `mu` (mean).
+Evaluates the moment-generating function ([MGF][mgf]) of a [degenerate][degenerate-distribution] distribution with parameter `mu` (mean).
 
 ```c
 double out = stdlib_base_dists_degenerate_mgf( 1.0, 1.0 );
@@ -244,7 +244,7 @@ int main( void ) {
 
 <section class="links">
 
-[degenerate]: https://en.wikipedia.org/wiki/Degenerate_distribution
+[degenerate-distribution]: https://en.wikipedia.org/wiki/Degenerate_distribution
 
 [mgf]: https://en.wikipedia.org/wiki/Moment-generating_function
 
