@@ -5830,7 +5830,7 @@ Uint32Array.prototype.toLocaleString,"\nUint32Array.prototype.toLocaleString( [l
 Uint32Array.prototype.toString,"\nUint32Array.prototype.toString()\n    Serializes an array as a string.\n"
 Uint32Array.prototype.values,"\nUint32Array.prototype.values()\n    Returns an iterator for iterating over array elements.\n"
 Uint32Vector,"\nUint32Vector( [options:Object] )\n    Returns a one-dimensional unsigned 32-bit integer ndarray.\n\nUint32Vector( length:integer[, options:Object] )\n    Returns a one-dimensional unsigned 32-bit integer ndarray having a specified\n    length.\n\nUint32Vector( obj:Object[, options:Object] )\n    Creates a one-dimensional unsigned 32-bit integer ndarray from an array-like\n    object or iterable.\n\nUint32Vector( buffer:ArrayBuffer[, byteOffset:integer[, length:integer]][, \n  options:Object] )\n    Returns a one-dimensional unsigned 32-bit integer ndarray view of an\n    ArrayBuffer.\n"
-Uint64,"\nUint64( value:number|bigint )\n    64-bit unsigned integer constructor.\n"
+Uint64,"\nUint64( value:integer|bigint )\n    64-bit unsigned integer constructor.\n"
 Uint64.name,"\nUint64.name\n    Constructor name.\n"
 Uint64.from,"\nUint64.from( words:ArrayLikeObject )\n    Creates a new 64-bit unsigned integer from an array-like object containing a\n    high and low word.\n"
 Uint64.of,"\nUint64.of( high:integer, low:integer )\n    Creates a new 64-bit unsigned integer from a high and low word.\n"

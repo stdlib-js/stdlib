@@ -27,14 +27,16 @@
     null
     > r2 = accumulator( 2.0, 1.0 )
     0.0
+    > r2 = accumulator( 1.0, 90.0 )
+    1.0
     > r2 = accumulator( -5.0, NaN )
-    ~0.0
+    ~1.0
     > r2 = accumulator( NaN, NaN )
-    ~0.0
+    ~1.0
     > r2 = accumulator( NaN, -8.0 )
-    ~0.0
+    ~1.0
     > r2 = accumulator()
-    ~0.0
+    ~1.0
 
     See Also
     --------
