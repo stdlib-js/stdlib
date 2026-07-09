@@ -127,24 +127,24 @@ bool = isLossFunction( 'beep' );
 #include "stdlib/ml/base/sgd-classification/loss_functions.h"
 ```
 
-#### STDLIB_ML_SGD_CLASSIFICATION
+#### STDLIB_ML_SGD_CLASSIFICATION_LOSS_FUNCTION
 
 An enumeration of SGD classification loss functions with the following fields:
 
--   **STDLIB_ML_BASE_SGD_CLASSIFICATION_EPSILON_INSENSITIVE**: penalty is the absolute value of the error whenever the absolute error exceeds epsilon and zero otherwise.
--   **STDLIB_ML_BASE_SGD_CLASSIFICATION_HINGE**: corresponds to a soft-margin linear Support Vector Machine (SVM), which can handle non-linearly separable data.
--   **STDLIB_ML_BASE_SGD_CLASSIFICATION_HUBER**: squared-error loss for observations with error smaller than epsilon in magnitude, linear loss otherwise.
--   **STDLIB_ML_BASE_SGD_CLASSIFICATION_LOG**: corresponds to Logistic Regression.
--   **STDLIB_ML_BASE_SGD_CLASSIFICATION_MODIFIED_HUBER**: Huber loss function variant for classification.
--   **STDLIB_ML_BASE_SGD_CLASSIFICATION_PERCEPTRON**: corresponds to the original perceptron by Rosenblatt (1957).
--   **STDLIB_ML_BASE_SGD_CLASSIFICATION_SQUARED_EPSILON_INSENSITIVE**: squared epsilon insensitive loss function.
--   **STDLIB_ML_BASE_SGD_CLASSIFICATION_SQUARED_ERROR**: squared difference of the observed and fitted values.
--   **STDLIB_ML_BASE_SGD_CLASSIFICATION_SQUARED_HINGE**: squared hinge loss function SVM (L2-SVM).
+-   **STDLIB_ML_SGD_CLASSIFICATION_EPSILON_INSENSITIVE**: penalty is the absolute value of the error whenever the absolute error exceeds epsilon and zero otherwise.
+-   **STDLIB_ML_SGD_CLASSIFICATION_HINGE**: corresponds to a soft-margin linear Support Vector Machine (SVM), which can handle non-linearly separable data.
+-   **STDLIB_ML_SGD_CLASSIFICATION_HUBER**: squared-error loss for observations with error smaller than epsilon in magnitude, linear loss otherwise.
+-   **STDLIB_ML_SGD_CLASSIFICATION_LOG**: corresponds to Logistic Regression.
+-   **STDLIB_ML_SGD_CLASSIFICATION_MODIFIED_HUBER**: Huber loss function variant for classification.
+-   **STDLIB_ML_SGD_CLASSIFICATION_PERCEPTRON**: corresponds to the original perceptron by Rosenblatt (1957).
+-   **STDLIB_ML_SGD_CLASSIFICATION_SQUARED_EPSILON_INSENSITIVE**: squared epsilon insensitive loss function.
+-   **STDLIB_ML_SGD_CLASSIFICATION_SQUARED_ERROR**: squared difference of the observed and fitted values.
+-   **STDLIB_ML_SGD_CLASSIFICATION_SQUARED_HINGE**: squared hinge loss function SVM (L2-SVM).
 
 ```c
 #include "stdlib/ml/base/sgd-classification/loss_functions.h"
 
-const enum STDLIB_ML_SGD_CLASSIFICATION_LOSS_FUNCTIONS v = STDLIB_ML_SGD_CLASSIFICATION_HINGE;
+const enum STDLIB_ML_SGD_CLASSIFICATION_LOSS_FUNCTION v = STDLIB_ML_SGD_CLASSIFICATION_HINGE;
 ```
 
 </section>

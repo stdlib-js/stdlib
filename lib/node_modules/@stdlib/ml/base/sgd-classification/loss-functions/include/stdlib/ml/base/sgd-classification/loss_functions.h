@@ -22,33 +22,33 @@
 /**
 * Enumeration of SGD classification loss functions.
 */
-enum STDLIB_ML_BASE_SGD_CLASSIFICATION_LOSS_FUNCTIONS {
+enum STDLIB_ML_SGD_CLASSIFICATION_LOSS_FUNCTION {
 	// Penalty is the absolute value of the error whenever the absolute error exceeds epsilon and zero otherwise:
-	STDLIB_ML_BASE_SGD_CLASSIFICATION_EPSILON_INSENSITIVE = 0,
+	STDLIB_ML_SGD_CLASSIFICATION_EPSILON_INSENSITIVE = 0,
 
 	// Corresponds to a soft-margin linear Support Vector Machine (SVM), which can handle non-linearly separable data:
-	STDLIB_ML_BASE_SGD_CLASSIFICATION_HINGE,
+	STDLIB_ML_SGD_CLASSIFICATION_HINGE,
 
 	// Squared-error loss for observations with error smaller than epsilon in magnitude, linear loss otherwise:
-	STDLIB_ML_BASE_SGD_CLASSIFICATION_HUBER,
+	STDLIB_ML_SGD_CLASSIFICATION_HUBER,
 
 	// Corresponds to Logistic Regression:
-	STDLIB_ML_BASE_SGD_CLASSIFICATION_LOG,
+	STDLIB_ML_SGD_CLASSIFICATION_LOG,
 
 	// Huber loss function variant for classification:
-	STDLIB_ML_BASE_SGD_CLASSIFICATION_MODIFIED_HUBER,
+	STDLIB_ML_SGD_CLASSIFICATION_MODIFIED_HUBER,
 
 	// Corresponds to the original perceptron by Rosenblatt (1957):
-	STDLIB_ML_BASE_SGD_CLASSIFICATION_PERCEPTRON,
+	STDLIB_ML_SGD_CLASSIFICATION_PERCEPTRON,
 
 	// Squared epsilon insensitive loss function:
-	STDLIB_ML_BASE_SGD_CLASSIFICATION_SQUARED_EPSILON_INSENSITIVE,
+	STDLIB_ML_SGD_CLASSIFICATION_SQUARED_EPSILON_INSENSITIVE,
 
 	// Squared difference of the observed and fitted values:
-	STDLIB_ML_BASE_SGD_CLASSIFICATION_SQUARED_ERROR,
+	STDLIB_ML_SGD_CLASSIFICATION_SQUARED_ERROR,
 
 	// Squared hinge loss function SVM (L2-SVM):
-	STDLIB_ML_BASE_SGD_CLASSIFICATION_SQUARED_HINGE
+	STDLIB_ML_SGD_CLASSIFICATION_SQUARED_HINGE
 };
 
 #endif // !STDLIB_ML_BASE_SGD_CLASSIFICATION_LOSS_FUNCTIONS_H
