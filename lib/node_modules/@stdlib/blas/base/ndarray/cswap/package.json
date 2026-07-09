@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/base/ndarray/cswap",
   "version": "0.0.0",
-  "description": "Interchange two one-dimensional complex single-precision floating-point ndarrays.",
+  "description": "Interchange two one-dimensional single-precision complex floating-point ndarrays.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

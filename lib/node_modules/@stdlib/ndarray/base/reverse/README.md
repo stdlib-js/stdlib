@@ -45,6 +45,7 @@ var reverse = require( '@stdlib/ndarray/base/reverse' );
 Returns a view of an input ndarray in which the order of elements along each dimension is reversed.
 
 ```javascript
+var getShape = require( '@stdlib/ndarray/shape' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
 
 var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
@@ -55,13 +56,13 @@ var offset = 0;
 var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
-var sh = x.shape;
+var sh = getShape( x );
 // returns [ 3, 2 ]
 
 var y = reverse( x, false );
 // returns <ndarray>[ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
 
-sh = y.shape;
+sh = getShape( y );
 // returns [ 3, 2 ]
 ```
 

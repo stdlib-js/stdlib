@@ -51,7 +51,7 @@ interface ChebyshevSeries {
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
 	*
-	* var v = chebyshevSeriesf( 1.0, new Float32Array( [ 1.0, 0.5 ] ) ); // 1*T_0(1/2) + 0.5*T_1(1/2)
+	* var v = chebyshevSeriesf( 1.0, new Float32Array( [ 1.0, 0.5 ] ) );
 	* // returns 0.75
 	*/
 	( x: number, c: Collection<number> ): number;
@@ -97,13 +97,13 @@ interface ChebyshevSeries {
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
 *
-* var v = chebyshevSeriesf( 1.0, new Float32Array( [ 1.0, 0.5 ] ) ); // 1*T_0(1/2) + 0.5*T_1(1/2)
+* var v = chebyshevSeriesf( 1.0, new Float32Array( [ 1.0, 0.5 ] ) );
 * // returns 0.75
 *
 * @example
 * var Float32Array = require( '@stdlib/array/float32' );
 *
-* var evaluate = chebyshevSeriesf.factory( new Float32Array( [ 1.0, 0.5 ] ) ); // 1*T_0(1/2) + 0.5*T_1(1/2)
+* var evaluate = chebyshevSeriesf.factory( new Float32Array( [ 1.0, 0.5 ] ) );
 *
 * var v = evaluate( 1.0 );
 * // returns 0.75

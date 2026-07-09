@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Probability Density Function
 
-> [Cauchy][cauchy-distribution] distribution logarithm of probability density function (logPDF).
+> [Cauchy][cauchy-distribution] distribution natural logarithm of probability density function (logPDF).
 
 <section class="intro">
 
