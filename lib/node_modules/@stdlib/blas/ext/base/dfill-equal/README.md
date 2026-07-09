@@ -181,7 +181,7 @@ stdlib_strided_dfill_equal( 8, 0.0, 5.0, x, 1 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **searchElement**: `[in] double` search Element.
+-   **searchElement**: `[in] double` search element.
 -   **alpha**: `[in] double` scalar constant.
 -   **X**: `[inout] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length.
@@ -207,7 +207,7 @@ stdlib_strided_dfill_equal_ndarray( 8, 0.0, 5.0, x, 1, 0 );
 The function accepts the following arguments:
 
 -   **N**: `[in] CBLAS_INT` number of indexed elements.
--   **searchElement**: `[in] double` search Element.
+-   **searchElement**: `[in] double` search element.
 -   **alpha**: `[in] double` scalar constant.
 -   **X**: `[inout] double*` input array.
 -   **strideX**: `[in] CBLAS_INT` stride length.
