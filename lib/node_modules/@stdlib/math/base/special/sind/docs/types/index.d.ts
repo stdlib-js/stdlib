@@ -33,7 +33,7 @@
 * // returns ~0.5
 *
 * @example
-* var v = sind( 90.0);
+* var v = sind( 90.0 );
 * // returns 1.0
 *
 * @example
