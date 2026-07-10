@@ -23,7 +23,7 @@ import standalone2pkg = require( './index' );
 
 // The function returns a string or null...
 {
-	standalone2pkg( 'base.sin' ); // $ExpectType string | null
+	standalone2pkg( '@stdlib/math-base-special-sin' ); // $ExpectType string | null
 }
 
 // The compiler throws an error if the function is not provided a string...
@@ -40,5 +40,5 @@ import standalone2pkg = require( './index' );
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	standalone2pkg( 'base.sin', 'beep' ); // $ExpectError
+	standalone2pkg( '@stdlib/math-base-special-sin', 'beep' ); // $ExpectError
 }

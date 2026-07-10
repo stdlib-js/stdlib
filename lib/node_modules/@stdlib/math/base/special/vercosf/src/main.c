@@ -27,7 +27,7 @@
 *
 * @example
 * float y = stdlib_base_vercosf( 3.141592653589793f / 2.0f );
-* // returns 1.0f
+* // returns ~1.0f
 */
 float stdlib_base_vercosf( const float x ) {
 	return 1.0f + stdlib_base_cosf( x );

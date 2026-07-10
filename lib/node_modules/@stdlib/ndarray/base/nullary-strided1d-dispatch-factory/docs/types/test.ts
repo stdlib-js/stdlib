@@ -36,8 +36,8 @@ import factory = require( './index' );
 		'default': gsorthp
 	};
 
-	factory<number>( table, [ dtypes ], dtypes ); // $ExpectType NullaryFunction<number>
-	factory<number>( table, [ dtypes ], dtypes, {} ); // $ExpectType NullaryFunction<number>
+	factory<unknown, number>( table, [ dtypes ], dtypes ); // $ExpectType NullaryFunction2<unknown, number>
+	factory<unknown, number>( table, [ dtypes ], dtypes, {} ); // $ExpectType NullaryFunction2<unknown, number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a dispatch table...
@@ -72,25 +72,25 @@ import factory = require( './index' );
 		'default': gsorthp
 	};
 
-	factory<number>( table, '5', dtypes ); // $ExpectError
-	factory<number>( table, 5, dtypes ); // $ExpectError
-	factory<number>( table, true, dtypes ); // $ExpectError
-	factory<number>( table, false, dtypes ); // $ExpectError
-	factory<number>( table, null, dtypes ); // $ExpectError
-	factory<number>( table, void 0, dtypes ); // $ExpectError
-	factory<number>( table, 'abc', dtypes ); // $ExpectError
-	factory<number>( table, {}, dtypes ); // $ExpectError
-	factory<number>( table, ( x: number ): number => x, dtypes ); // $ExpectError
+	factory<unknown, number>( table, '5', dtypes ); // $ExpectError
+	factory<unknown, number>( table, 5, dtypes ); // $ExpectError
+	factory<unknown, number>( table, true, dtypes ); // $ExpectError
+	factory<unknown, number>( table, false, dtypes ); // $ExpectError
+	factory<unknown, number>( table, null, dtypes ); // $ExpectError
+	factory<unknown, number>( table, void 0, dtypes ); // $ExpectError
+	factory<unknown, number>( table, 'abc', dtypes ); // $ExpectError
+	factory<unknown, number>( table, {}, dtypes ); // $ExpectError
+	factory<unknown, number>( table, ( x: number ): number => x, dtypes ); // $ExpectError
 
-	factory<number>( table, '5', dtypes, {} ); // $ExpectError
-	factory<number>( table, 5, dtypes, {} ); // $ExpectError
-	factory<number>( table, true, dtypes, {} ); // $ExpectError
-	factory<number>( table, false, dtypes, {} ); // $ExpectError
-	factory<number>( table, null, dtypes, {} ); // $ExpectError
-	factory<number>( table, void 0, dtypes, {} ); // $ExpectError
-	factory<number>( table, 'abc', dtypes, {} ); // $ExpectError
-	factory<number>( table, {}, dtypes, {} ); // $ExpectError
-	factory<number>( table, ( x: number ): number => x, dtypes, {} ); // $ExpectError
+	factory<unknown, number>( table, '5', dtypes, {} ); // $ExpectError
+	factory<unknown, number>( table, 5, dtypes, {} ); // $ExpectError
+	factory<unknown, number>( table, true, dtypes, {} ); // $ExpectError
+	factory<unknown, number>( table, false, dtypes, {} ); // $ExpectError
+	factory<unknown, number>( table, null, dtypes, {} ); // $ExpectError
+	factory<unknown, number>( table, void 0, dtypes, {} ); // $ExpectError
+	factory<unknown, number>( table, 'abc', dtypes, {} ); // $ExpectError
+	factory<unknown, number>( table, {}, dtypes, {} ); // $ExpectError
+	factory<unknown, number>( table, ( x: number ): number => x, dtypes, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not a list of data types...
@@ -100,25 +100,25 @@ import factory = require( './index' );
 		'default': gsorthp
 	};
 
-	factory<number>( table, [ dtypes ], '5' ); // $ExpectError
-	factory<number>( table, [ dtypes ], 5 ); // $ExpectError
-	factory<number>( table, [ dtypes ], true ); // $ExpectError
-	factory<number>( table, [ dtypes ], false ); // $ExpectError
-	factory<number>( table, [ dtypes ], null ); // $ExpectError
-	factory<number>( table, [ dtypes ], void 0 ); // $ExpectError
-	factory<number>( table, [ dtypes ], 'abc' ); // $ExpectError
-	factory<number>( table, [ dtypes ], {} ); // $ExpectError
-	factory<number>( table, [ dtypes ], ( x: number ): number => x ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], '5' ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], 5 ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], true ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], false ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], null ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], void 0 ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], 'abc' ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], {} ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], ( x: number ): number => x ); // $ExpectError
 
-	factory<number>( table, [ dtypes ], '5', {} ); // $ExpectError
-	factory<number>( table, [ dtypes ], 5, {} ); // $ExpectError
-	factory<number>( table, [ dtypes ], true, {} ); // $ExpectError
-	factory<number>( table, [ dtypes ], false, {} ); // $ExpectError
-	factory<number>( table, [ dtypes ], null, {} ); // $ExpectError
-	factory<number>( table, [ dtypes ], void 0, {} ); // $ExpectError
-	factory<number>( table, [ dtypes ], 'abc', {} ); // $ExpectError
-	factory<number>( table, [ dtypes ], {}, {} ); // $ExpectError
-	factory<number>( table, [ dtypes ], ( x: number ): number => x, {} ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], '5', {} ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], 5, {} ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], true, {} ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], false, {} ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], null, {} ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], void 0, {} ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], 'abc', {} ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], {}, {} ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], ( x: number ): number => x, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not an object...
@@ -128,13 +128,13 @@ import factory = require( './index' );
 		'default': gsorthp
 	};
 
-	factory<number>( table, [ dtypes ], dtypes, '5' ); // $ExpectError
-	factory<number>( table, [ dtypes ], dtypes, 5 ); // $ExpectError
-	factory<number>( table, [ dtypes ], dtypes, true ); // $ExpectError
-	factory<number>( table, [ dtypes ], dtypes, false ); // $ExpectError
-	factory<number>( table, [ dtypes ], dtypes, null ); // $ExpectError
-	factory<number>( table, [ dtypes ], dtypes, 'abc' ); // $ExpectError
-	factory<number>( table, [ dtypes ], dtypes, ( x: number ): number => x ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], dtypes, '5' ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], dtypes, 5 ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], dtypes, true ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], dtypes, false ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], dtypes, null ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], dtypes, 'abc' ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], dtypes, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
@@ -145,9 +145,9 @@ import factory = require( './index' );
 	};
 
 	factory(); // $ExpectError
-	factory<number>( table ); // $ExpectError
-	factory<number>( table, [ dtypes ] ); // $ExpectError
-	factory<number>( table, [ dtypes ], dtypes, {}, {} ); // $ExpectError
+	factory<unknown, number>( table ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ] ); // $ExpectError
+	factory<unknown, number>( table, [ dtypes ], dtypes, {}, {} ); // $ExpectError
 }
 
 // The function returns a function which returns an ndarray...
@@ -163,8 +163,7 @@ import factory = require( './index' );
 		'dtype': 'generic'
 	});
 
-	const f = factory<number>( table, [ dtypes ], dtypes );
-	f( x ); // $ExpectType float64ndarray
+	const f = factory<unknown, number>( table, [ dtypes ], dtypes );
 	f( x, o ); // $ExpectType float64ndarray
 }
 
@@ -174,25 +173,28 @@ import factory = require( './index' );
 	const table = {
 		'default': gsorthp
 	};
+	const o = scalar2ndarray( 1.0, {
+		'dtype': 'generic'
+	});
 
-	const f = factory<number>( table, [ dtypes ], dtypes );
-	f( '5' ); // $ExpectError
-	f( 5 ); // $ExpectError
-	f( true ); // $ExpectError
-	f( false ); // $ExpectError
-	f( null ); // $ExpectError
-	f( void 0 ); // $ExpectError
-	f( {} ); // $ExpectError
-	f( ( x: number ): number => x ); // $ExpectError
+	const f = factory<unknown, number>( table, [ dtypes ], dtypes );
+	f( '5', o ); // $ExpectError
+	f( 5, o ); // $ExpectError
+	f( true, o ); // $ExpectError
+	f( false, o ); // $ExpectError
+	f( null, o ); // $ExpectError
+	f( void 0, o ); // $ExpectError
+	f( {}, o ); // $ExpectError
+	f( ( x: number ): number => x, o ); // $ExpectError
 
-	f( '5', {} ); // $ExpectError
-	f( 5, {} ); // $ExpectError
-	f( true, {} ); // $ExpectError
-	f( false, {} ); // $ExpectError
-	f( null, {} ); // $ExpectError
-	f( void 0, {} ); // $ExpectError
-	f( {}, {} ); // $ExpectError
-	f( ( x: number ): number => x, {} ); // $ExpectError
+	f( '5', o, {} ); // $ExpectError
+	f( 5, o, {} ); // $ExpectError
+	f( true, o, {} ); // $ExpectError
+	f( false, o, {} ); // $ExpectError
+	f( null, o, {} ); // $ExpectError
+	f( void 0, o, {} ); // $ExpectError
+	f( {}, o, {} ); // $ExpectError
+	f( ( x: number ): number => x, o, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the returned function is provided an invalid `dims` option...
@@ -208,15 +210,7 @@ import factory = require( './index' );
 		'dtype': 'generic'
 	});
 
-	const f = factory<number>( table, [ dtypes ], dtypes );
-	f( x, { 'dims': '5' } ); // $ExpectError
-	f( x, { 'dims': 5 } ); // $ExpectError
-	f( x, { 'dims': true } ); // $ExpectError
-	f( x, { 'dims': false } ); // $ExpectError
-	f( x, { 'dims': null } ); // $ExpectError
-	f( x, { 'dims': {} } ); // $ExpectError
-	f( x, { 'dims': ( x: number ): number => x } ); // $ExpectError
-
+	const f = factory<unknown, number>( table, [ dtypes ], dtypes );
 	f( x, o, { 'dims': '5' } ); // $ExpectError
 	f( x, o, { 'dims': 5 } ); // $ExpectError
 	f( x, o, { 'dims': true } ); // $ExpectError
@@ -233,6 +227,6 @@ import factory = require( './index' );
 		'default': gsorthp
 	};
 
-	const f = factory<number>( table, [ dtypes ], dtypes );
+	const f = factory<unknown, number>( table, [ dtypes ], dtypes );
 	f(); // $ExpectError
 }
