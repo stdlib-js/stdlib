@@ -54,7 +54,7 @@ import { Collection } from '@stdlib/types/array';
 * var twiddleFactors = workspace.slice( floor( 3*N/2 ) + 1, floor( 5*N/2 ) + 2 );
 * // returns <Float64Array>[ ~0.707, ~0.707, 0, 0, 0, 0, 0, 0 ]
 *
-* var factors = workspace.slice( floor( 5*N/2 ) + 2, floor(5*N/2) + 2 + 4 );
+* var factors = workspace.slice( floor( 5*N/2 ) + 2, floor( 5*N/2 ) + 2 + 4 );
 * // returns <Float64Array>[ 8, 2, 2, 4 ]
 */
 declare function sinti<T extends Collection<number>>( N: number, workspace: T, strideW: number, offsetW: number ): T;

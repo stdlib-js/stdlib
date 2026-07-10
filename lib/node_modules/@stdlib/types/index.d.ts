@@ -35,6 +35,7 @@
 */
 declare module '@stdlib/types/array' {
 	import { ComplexLike, Complex32, Complex64, Complex128 } from '@stdlib/types/complex';
+	import { Uint64 } from '@stdlib/types/number';
 	import { Remap } from '@stdlib/types/utilities';
 
 	/**
@@ -129,7 +130,7 @@ declare module '@stdlib/types/array' {
 	/**
 	* Data type for unsigned integer typed arrays.
 	*/
-	type UnsignedIntegerDataType = 'uint32' | 'uint16' | 'uint8' | 'uint8c'; // "unsigned_integer"
+	type UnsignedIntegerDataType = 'uint64' | 'uint32' | 'uint16' | 'uint8' | 'uint8c'; // "unsigned_integer"
 
 	/**
 	* Data type for unsigned integer typed arrays.
@@ -492,7 +493,7 @@ declare module '@stdlib/types/array' {
 	* @example
 	* const x: UnsignedIntegerTypedArray = new Uint32Array( 10 );
 	*/
-	type UnsignedIntegerTypedArray = Uint8Array | Uint8ClampedArray | Uint16Array | Uint32Array;
+	type UnsignedIntegerTypedArray = Uint8Array | Uint8ClampedArray | Uint16Array | Uint32Array | Uint64Array;
 
 	/**
 	* A boolean typed array.
@@ -609,7 +610,7 @@ declare module '@stdlib/types/array' {
 	* @example
 	* const buf = new Uint8Array( 8 );
 	*
-	* const z: Complex64Array = {
+	* const x: BooleanArray = {
 	*     'byteLength': 8,
 	*     'byteOffset': 0,
 	*     'BYTES_PER_ELEMENT': 1,
@@ -836,6 +837,114 @@ declare module '@stdlib/types/array' {
 	}
 
 	/**
+	* A 64-bit unsigned integer array-like value.
+	*
+	* @example
+	* const buf = new Uint32Array( 8 );
+	*
+	* const z: Uint64ArrayLike = {
+	*     'byteLength': 32,
+	*     'byteOffset': 0,
+	*     'BYTES_PER_ELEMENT': 8,
+	*     'length': 4,
+	*     'get': ( i: number ): obj.Uint64  => {
+	*         return {
+	*             'hi': buf[ (2*i) ],
+	*             'lo': buf[ (2*i)+1 ],
+	*             'byteLength': 8,
+	*             'BYTES_PER_ELEMENT': 8
+	*         };
+	*     },
+	*     'set': ( value: obj.Uint64, i?: number ) => {
+	*         i = ( i ) ? i : 0;
+	*         buf[ (2*i)] = value.hi;
+	*         buf[ (2*i)+1 ] = value.lo;
+	*     }
+	* };
+	*/
+	interface Uint64ArrayLike extends AccessorArrayLike<Uint64> {
+		/**
+		* Length (in bytes) of the array.
+		*/
+		byteLength: number;
+
+		/**
+		* Offset (in bytes) of the array from the start of its underlying `ArrayBuffer`.
+		*/
+		byteOffset: number;
+
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: number;
+
+		/**
+		* Number of array elements.
+		*/
+		length: number;
+
+		/**
+		* Returns an array element.
+		*
+		* @param i - element index
+		* @returns array element
+		*/
+		get( i: number ): Uint64 | void;
+
+		/**
+		* Sets an array element.
+		*
+		* @param value - value(s)
+		* @param i - element index at which to start writing values (default: 0)
+		*/
+		set( value: ArrayLike<Uint64 | bigint | number> | Uint64ArrayLike | Uint64 | bigint | number, i?: number ): void;
+	}
+
+	/**
+	* 64-bit unsigned integer array.
+	*
+	* @example
+	* const buf = new Uint32Array( 8 );
+	*
+	* const z: Uint64Array = {
+	*     'byteLength': 32,
+	*     'byteOffset': 0,
+	*     'BYTES_PER_ELEMENT': 8,
+	*     'length': 4,
+	*     'get': ( i: number ): obj.Uint64 => {
+	*         return {
+	*             'hi': buf[ (2*i) ],
+	*             'lo': buf[ (2*i)+1 ],
+	*             'byteLength': 8,
+	*             'BYTES_PER_ELEMENT': 8
+	*         };
+	*     },
+	*     'set': ( value: obj.Uint64, i?: number ) => {
+	*         i = ( i ) ? i : 0;
+	*         buf[ (2*i) ] = value.hi;
+	*         buf[ (2*i)+1 ] = value.lo;
+	*     }
+	* };
+	*/
+	interface Uint64Array extends Uint64ArrayLike {
+		/**
+		* Returns an array element.
+		*
+		* @param i - element index
+		* @returns array element
+		*/
+		get( i: number ): Uint64 | void;
+
+		/**
+		* Sets an array element.
+		*
+		* @param value - value(s)
+		* @param i - element index at which to start writing values (default: 0)
+		*/
+		set( value: ArrayLike<Uint64 | bigint | number> | Uint64Array | Uint64 | bigint | number, i?: number ): void;
+	}
+
+	/**
 	* A collection, which is defined as either an array, typed array, or an array-like object (excluding strings and functions).
 	*
 	* @example
@@ -939,6 +1048,7 @@ declare module '@stdlib/types/array' {
 	* Mapping of unsigned integer data types to array constructors.
 	*/
 	type UnsignedIntegerDataTypeMap = { // eslint-disable-line @typescript-eslint/consistent-type-definitions
+		'uint64': Uint64Array;
 		'uint32': Uint32Array;
 		'uint16': Uint16Array;
 		'uint8': Uint8Array;

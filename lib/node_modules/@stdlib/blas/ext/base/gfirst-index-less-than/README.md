@@ -98,11 +98,7 @@ var idx = gfirstIndexLessThan( 2, x1, 1, y1, 1 );
 // returns 1
 ```
 
-<!-- lint disable maximum-heading-length -->
-
 #### gfirstIndexLessThan.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
-
-<!-- lint enable maximum-heading-length -->
 
 Returns the index of the first element in a strided array which is less than a corresponding element in another strided array using alternative indexing semantics.
 
@@ -120,8 +116,6 @@ The function has the following additional parameters:
 -   **offsetY**: starting index for `y`.
 
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to access only the last three elements of each strided array:
-
-<!-- eslint-disable max-len -->
 
 ```javascript
 var x = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
