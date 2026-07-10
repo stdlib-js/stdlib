@@ -151,14 +151,14 @@ import erlang = require( './index' );
 	erlang.factory( 2, 2, { 'prng': null } ); // $ExpectError
 	erlang.factory( 2, 2, { 'prng': [] } ); // $ExpectError
 	erlang.factory( 2, 2, { 'prng': {} } ); // $ExpectError
-	erlang.factory( 2, 2, { 'prng': true ); // $ExpectError
+	erlang.factory( 2, 2, { 'prng': true } ); // $ExpectError
 
 	erlang.factory( { 'prng': 123 } ); // $ExpectError
 	erlang.factory( { 'prng': 'abc' } ); // $ExpectError
 	erlang.factory( { 'prng': null } ); // $ExpectError
 	erlang.factory( { 'prng': [] } ); // $ExpectError
 	erlang.factory( { 'prng': {} } ); // $ExpectError
-	erlang.factory( { 'prng': true ); // $ExpectError
+	erlang.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import erlang = require( './index' );
 	erlang.factory( 2, 2, { 'state': null } ); // $ExpectError
 	erlang.factory( 2, 2, { 'state': [] } ); // $ExpectError
 	erlang.factory( 2, 2, { 'state': {} } ); // $ExpectError
-	erlang.factory( 2, 2, { 'state': true ); // $ExpectError
+	erlang.factory( 2, 2, { 'state': true } ); // $ExpectError
 	erlang.factory( 2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	erlang.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import erlang = require( './index' );
 	erlang.factory( { 'state': null } ); // $ExpectError
 	erlang.factory( { 'state': [] } ); // $ExpectError
 	erlang.factory( { 'state': {} } ); // $ExpectError
-	erlang.factory( { 'state': true ); // $ExpectError
+	erlang.factory( { 'state': true } ); // $ExpectError
 	erlang.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

@@ -274,6 +274,8 @@ void stdlib_math_base_napi_dddd_d( napi_env env, napi_callback_info info, double
 Macro for registering a Node-API module exporting an interface invoking a quaternary function accepting a double-precision floating-point number and three signed 32-bit integers and returning a double-precision floating-point number.
 
 ```c
+#include <stdint.h>
+
 static double add( const double x, const int32_t y, const int32_t z, const int32_t w ) {
     return x + y + z + w;
 }
@@ -296,6 +298,7 @@ Invokes a quaternary function accepting a double-precision floating-point number
 
 ```c
 #include <node_api.h>
+#include <stdint.h>
 
 // ...
 

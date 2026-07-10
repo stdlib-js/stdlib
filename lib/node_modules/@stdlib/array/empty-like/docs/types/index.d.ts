@@ -45,7 +45,7 @@ import { AnyArray, DataTypeMap, TypedArray, BooleanTypedArray, ComplexTypedArray
 declare function emptyLike( x: Array<any> ): Array<number>;
 
 /**
-* Creates an uninitialized array having the same length as a provided input array.
+* Creates an uninitialized array having the same length and data type as a provided input array.
 *
 * ## Notes
 *
@@ -61,8 +61,8 @@ declare function emptyLike( x: Array<any> ): Array<number>;
 * var x = zeros( 2, 'float64' );
 * // returns <Float64Array>[ 0.0, 0.0 ]
 *
-* var arr = emptyLike( x, 'float32' );
-* // returns <Float32Array>
+* var arr = emptyLike( x );
+* // returns <Float64Array>
 */
 declare function emptyLike<T extends TypedArray | ComplexTypedArray | BooleanTypedArray>( x: T ): T;
 
