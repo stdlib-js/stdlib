@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/blas/ext/base/dfirst-index-equal",
   "version": "0.0.0",
-  "description": "Return the index of the first element in a strided array equal to a corresponding element in another strided array.",
+  "description": "Return the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

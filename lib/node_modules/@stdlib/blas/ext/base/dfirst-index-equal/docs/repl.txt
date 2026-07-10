@@ -1,8 +1,8 @@
 
 {{alias}}( N, x, strideX, y, strideY )
-    Returns the index of the first element in a strided array equal to a
-    corresponding element in another strided array.
-
+    Returns the index of the first element in a double-precision floating-point
+    strided array equal to a corresponding element in another double-precision
+    floating-point strided array
     The `N` and stride parameters determine which elements in the strided arrays
     are accessed at runtime.
 
@@ -57,9 +57,9 @@
 
 
 {{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
-    Returns the index of the first element in a strided array equal to a
-    corresponding element in another strided array using alternative indexing
-    semantics.
+    Returns the index of the first element in a double-precision floating-point
+    strided array equal to a corresponding element in another double-precision
+    floating-point strided array using alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
     buffer, the offset parameters support indexing semantics based on

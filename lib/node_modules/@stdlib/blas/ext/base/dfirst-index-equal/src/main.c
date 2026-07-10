@@ -21,7 +21,7 @@
 #include "stdlib/blas/base/shared.h"
 
 /**
-* Returns the index of the first element in a strided array equal to a corresponding element in another strided array.
+* Returns the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array.
 *
 * @param N       number of indexed elements
 * @param X       first input array
@@ -37,7 +37,7 @@ CBLAS_INT API_SUFFIX(stdlib_strided_dfirst_index_equal)( const CBLAS_INT N, cons
 }
 
 /**
-* Returns the index of the first element in a strided array equal to a corresponding element in another strided array using alternative indexing semantics.
+* Returns the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array using alternative indexing semantics.
 *
 * @param N       number of indexed elements
 * @param X       first input array
