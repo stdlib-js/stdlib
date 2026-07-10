@@ -57,7 +57,7 @@
     -1
 
 
-{{alias}}( N, x, strideX, offsetX, y, strideY, offsetY )
+{{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
     Returns the index of the first element in a single-precision floating-point
     strided array equal to a corresponding element in another single-precision
     floating-point strided array using alternative indexing semantics.
