@@ -23,7 +23,7 @@
 */
 interface Routine {
 	/**
-	* Returns the index of the first element in a strided array equal to a corresponding element in another strided array.
+	* Returns the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array.
 	*
 	* ## Notes
 	*
@@ -48,7 +48,7 @@ interface Routine {
 	( N: number, x: Float64Array, strideX: number, y: Float64Array, strideY: number ): number;
 
 	/**
-	* Returns the index of the first element in a strided array equal to a corresponding element in another strided array using alternative indexing semantics.
+	* Returns the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array using alternative indexing semantics.
 	*
 	* ## Notes
 	*
@@ -76,7 +76,7 @@ interface Routine {
 }
 
 /**
-* Returns the index of the first element in a strided array equal to a corresponding element in another strided array.
+* Returns the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array.
 *
 * @param N - number of indexed elements
 * @param x - first input array

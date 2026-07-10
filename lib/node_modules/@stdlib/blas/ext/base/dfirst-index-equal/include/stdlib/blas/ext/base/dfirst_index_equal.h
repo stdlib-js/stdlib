@@ -29,12 +29,12 @@ extern "C" {
 #endif
 
 /**
-* Returns the index of the first element in a strided array equal to a corresponding element in another strided array.
+* Returns the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array.
 */
 CBLAS_INT API_SUFFIX(stdlib_strided_dfirst_index_equal)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const double *Y, const CBLAS_INT strideY );
 
 /**
-* Returns the index of the first element in a strided array equal to a corresponding element in another strided array using alternative indexing semantics.
+* Returns the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array using alternative indexing semantics.
 */
 CBLAS_INT API_SUFFIX(stdlib_strided_dfirst_index_equal_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const double *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY );
 

@@ -20,7 +20,7 @@ limitations under the License.
 
 # dfirstIndexEqual
 
-> Return the index of the first element in a strided array equal to a corresponding element in another strided array.
+> Return the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -42,7 +42,7 @@ var dfirstIndexEqual = require( '@stdlib/blas/ext/base/dfirst-index-equal' );
 
 #### dfirstIndexEqual( N, x, strideX, y, strideY )
 
-Returns the index of the first element in a strided array equal to a corresponding element in another strided array.
+Returns the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -106,7 +106,7 @@ var idx = dfirstIndexEqual( 2, x1, 1, y1, 1 );
 
 #### dfirstIndexEqual.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
 
-Returns the index of the first element in a strided array equal to a corresponding element in another strided array using alternative indexing semantics.
+Returns the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array using alternative indexing semantics.
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
@@ -210,7 +210,7 @@ console.log( idx );
 
 #### stdlib_strided_dfirst_index_equal( N, \*X, strideX, \*Y, strideY )
 
-Returns the index of the first element in a strided array equal to a corresponding element in another strided array.
+Returns the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array.
 
 ```c
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
@@ -238,7 +238,7 @@ CBLAS_INT stdlib_strided_dfirst_index_equal( const CBLAS_INT N, const double *X,
 
 <!-- lint enable maximum-heading-length -->
 
-Returns the index of the first element in a strided array equal to a corresponding element in another strided array using alternative indexing semantics.
+Returns the index of the first element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array using alternative indexing semantics.
 
 ```c
 double x[] = { 1.0, 2.0, 3.0, 4.0 };
