@@ -31,7 +31,7 @@
     > var dt = {{alias:@stdlib/strided/dtypes}}();
     > var sigs = {{alias:@stdlib/strided/base/binary-dtype-signatures}}( dt, dt, dt );
     > var t = {
-    ...     'default': {{alias:@stdlib/math/base/ops/add}},
+    ...     'default': {{alias:@stdlib/number/float64/base/add}},
     ...     'complex64': {{alias:@stdlib/complex/float32/base/add}},
     ...     'complex128': {{alias:@stdlib/complex/float64/base/add}}
     ... };

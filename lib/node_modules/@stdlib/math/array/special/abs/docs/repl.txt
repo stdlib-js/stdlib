@@ -1,0 +1,54 @@
+
+{{alias}}( x[, options] )
+    Computes the absolute value for each element in an input array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    options: Object (optional)
+        Function options.
+
+    options.dtype: string (optional)
+        Output array data type.
+
+    Returns
+    -------
+    out: Array|TypedArray
+        Output array.
+
+    Examples
+    --------
+    > var v = {{alias}}( [ -1.0, 2.0, -3.0, 4.0 ] )
+    [ 1.0, 2.0, 3.0, 4.0 ]
+
+
+{{alias}}.assign( x, out )
+    Computes the absolute value for each element in an input array and assigns
+    results to a provided output array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Output array.
+
+    Examples
+    --------
+    > var out = {{alias:@stdlib/array/zeros}}( 4, 'float64' );
+    > var v = {{alias}}.assign( [ -1.0, 2.0, -3.0, 4.0 ], out )
+    <Float64Array>[ 1.0, 2.0, 3.0, 4.0 ]
+    > var bool = ( out === v )
+    true
+
+    See Also
+    --------
+

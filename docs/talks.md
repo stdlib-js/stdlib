@@ -18,11 +18,85 @@ limitations under the License.
 
 -->
 
+<!--lint disable expected-html-sections-->
+
 <!--lint disable no-duplicate-headings-in-section-->
 
 # Talks
 
 > Talks featuring stdlib.
+
+## 2026
+
+### Bringing Complex Computations To Browsers With Open Source
+
+> [Gunj Joshi][gunjjoshi], HPSF Conference, March 2026
+
+<div class="image" align="center">
+    <a title="Bringing Complex Computations To Browsers With Open Source" href="https://youtu.be/rox9LZz_ffI">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@59a6ae8e735cabb5db1603d36ca6d0693f8184b4/docs/assets/talks/hpsf_conference_2026_gunj_joshi.png" alt="Bringing Complex Computations To Browsers With Open Source">
+    </a>
+    <br>
+</div>
+
+### The Compute Revolution You’re Ignoring: JavaScript in Science
+
+> [Gunj Joshi][gunjjoshi], DevConf.IN, February 2026
+
+<div class="image" align="center">
+    <a title="The Compute Revolution You’re Ignoring: JavaScript in Science" href="https://youtu.be/pPjMEzm_R-0">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@56193c7549e4a0576f9636098a7491d2ff1f135d/docs/assets/talks/devconf_pune_2026_gunj_joshi.png" alt="The Compute Revolution You’re Ignoring: JavaScript in Science">
+    </a>
+    <br>
+</div>
+
+## 2025
+
+### The Future of Numerical Computing in JavaScript
+
+> [Gunj Joshi][gunjjoshi], JSNation, June 2025
+
+<div class="image" align="center">
+    <a title="The Future of Numerical Computing in JavaScript" href="https://gitnation.com/contents/the-future-of-numerical-computing-in-javascript">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5bee167f21165026dcf85c79048488ea384a9ede/docs/assets/talks/jsnation_2025_gunj_joshi.png" alt="The Future of Numerical Computing in JavaScript">
+    </a>
+    <br>
+</div>
+
+### Numeric and Scientific Computing inside your Web Browser
+
+> [Gunj Joshi][gunjjoshi], FOSSASIA, March 2025
+
+<div class="image" align="center">
+    <a title="Numeric and Scientific Computing inside your Web Browser" href="https://www.youtube.com/watch?v=hHCiinxsnbo">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@12ca211729e1f82c5e461d62aa28f52d46b12bdf/docs/assets/talks/fossasia_bangkok_2025_gunj_joshi.png" alt="Numeric and Scientific Computing inside your Web Browser">
+    </a>
+    <br>
+</div>
+
+### Exploring stdlib: JavaScript's Answer to Technical Computing
+
+> [Athan Reines][kgryte], Inspiring Computing, February 2025
+
+<div class="image" align="center">
+    <a title="Exploring stdlib: JavaScript's Answer to Technical Computing" href="https://www.inspiringcomputing.com/2107763/episodes/16662797-exploring-stdlib-javascript-s-answer-to-technical-computing">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@a8d27ad54095da3af1830454d0abc0de48948d2f/docs/assets/talks/inspiring_computing_2025_athan_reines.png" alt="Exploring stdlib: JavaScript's Answer to Technical Computing">
+    </a>
+    <br>
+</div>
+
+## 2024
+
+### Advanced Mathematics and Data Analysis with JavaScript
+
+> [Gunj Joshi][gunjjoshi], JSNation US, November 2024
+
+<div class="image" align="center">
+    <a title="Advanced Mathematics and Data Analysis with JavaScript" href="https://gitnation.com/contents/advanced-mathematics-and-data-analysis-with-javascript">
+        <img width="480" src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@fa25196d70829930020772d9e8de37a5a000b396/docs/assets/talks/jsnation_us_2024_gunj_joshi.png" alt="Advanced Mathematics and Data Analysis with JavaScript">
+    </a>
+    <br>
+</div>
 
 ## 2019
 
@@ -170,19 +244,6 @@ limitations under the License.
 <div class="image" align="center">
     <a "Real time machine learning with Node.js" href="https://www.youtube.com/watch?v=fK32__vlVAA">
         <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@5dd2d62d0a53359fe163870da082f0462118d9f5/docs/assets/nodejs_interactive_us_2016_philipp_burckhardt.png" alt="Real Time Machine Learning with Node.js at Node.js Interactive US 2016">
-    </a>
-    <br>
-</div>
-
-## 2024
-
-### Advanced Mathematics and Data Analysis with JavaScript
-
-> [Gunj Joshi][gunjjoshi], JSNation US, November 2024
-
-<div class="image" align="center">
-    <a title="Advanced Mathematics and Data Analysis with JavaScript" href="https://youtu.be/7sejh8DguBU?t=19919">
-        <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@fa25196d70829930020772d9e8de37a5a000b396/docs/assets/talks/jsnation_us_2024_gunj_joshi.png" alt="Advanced Mathematics and Data Analysis with JavaScript">
     </a>
     <br>
 </div>

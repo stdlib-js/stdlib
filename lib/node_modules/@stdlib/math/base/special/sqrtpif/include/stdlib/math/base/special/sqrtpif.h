@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Compute the principal square root of the product of π and a positive single-precision floating-point number.
+* Computes the principal square root of the product of π and a positive single-precision floating-point number.
 */
 float stdlib_base_sqrtpif( const float x );
 

@@ -75,18 +75,18 @@ doUntilAsync( fcn, predicate, done );
 
 The function to invoke is provided two arguments:
 
--   `i`: iteration number (starting from zero)
--   `next`: a callback which must be invoked before proceeding to the next iteration
+-   `i`: iteration number (starting from zero).
+-   `next`: a callback which must be invoked before proceeding to the next iteration.
 
 The `predicate` function is provided two arguments:
 
--   `i`: iteration number (starting from one)
--   `clbk`: a callback indicating whether to invoke `fcn`
+-   `i`: iteration number (starting from one).
+-   `clbk`: a callback indicating whether to invoke `fcn`.
 
 The `clbk` function accepts two arguments:
 
--   `error`: error object
--   `bool`: test result
+-   `error`: error object.
+-   `bool`: test result.
 
 If the test result is falsy, the function continues invoking `fcn`; otherwise, the function invokes the `done` callback.
 

@@ -692,7 +692,7 @@ var out = arr.map( fcn, context );
 var count = context.count;
 // returns 3;
 ```
-  
+
 <a name="method-reduce"></a>
 
 #### TypedArray.prototype.reduce( reducerFn\[, initialValue] )
@@ -758,7 +758,7 @@ var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 0.0, 1.0 ] );
 var out = arr.reduceRight( reducer );
 // returns 0.0
 ```
-  
+
 The reducer function is provided four arguments:
 
 -   **acc**: accumulated result.
@@ -784,7 +784,7 @@ var arr = new Float64ArrayFE( 'little-endian', [ 1.0, 0.0, 1.0 ] );
 var out = arr.reduceRight( reducer, 0 );
 // returns 2
 ```
-  
+
 <a name="method-set"></a>
 
 #### TypedArrayFE.prototype.set( arr\[, offset] )
@@ -947,7 +947,7 @@ var out = arr.with( 0, 0.0 );
 var v = out.get( 0 );
 // returns 0.0
 ```
-  
+
 </section>
 
 <!-- /.usage -->

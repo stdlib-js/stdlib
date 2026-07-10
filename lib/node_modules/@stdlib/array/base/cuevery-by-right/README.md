@@ -66,9 +66,9 @@ var bool = ( out === y );
 
 The invoked `predicate` function is provided three arguments:
 
--   **value**: collection element,
--   **index**: collection index,
--   **collection**: input collection,
+-   **value**: collection element.
+-   **index**: collection index.
+-   **collection**: input collection.
 
 To set the function execution context, provide a `thisArg`.
 

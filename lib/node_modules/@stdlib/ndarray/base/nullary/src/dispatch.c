@@ -166,13 +166,13 @@ static int8_t stdlib_ndarray_nullary_1d_flatten( const ndarrayNullaryFcn f, cons
 * // Create a nullary function dispatch object:
 * struct ndarrayNullaryDispatchObject obj = {
 *     // Array containing nullary ndarray functions:
-*     nullary,
+*     functions,
 *
 *     // Number of nullary ndarray functions:
 *     12,
 *
 *     // Array containing nullary ndarray functions using loop blocking:
-*     blocked_nullary,
+*     blocked_functions,
 *
 *     // Number of nullary ndarray functions using loop blocking:
 *     9
@@ -208,12 +208,12 @@ static int8_t stdlib_ndarray_nullary_1d_flatten( const ndarrayNullaryFcn f, cons
 * }
 */
 int8_t stdlib_ndarray_nullary_dispatch( const struct ndarrayNullaryDispatchObject *obj, struct ndarray *arrays[], void *fcn ) {
+	const int64_t *sh1;
 	struct ndarray *x1;
 	int8_t status;
 	int64_t ndims;
 	int64_t mab1;
 	int64_t mib1;
-	int64_t *sh1;
 	int64_t *s1;
 	int64_t len;
 	int64_t bp1;
@@ -252,7 +252,7 @@ int8_t stdlib_ndarray_nullary_dispatch( const struct ndarrayNullaryDispatchObjec
 	if ( len == 0 ) {
 		return 0;
 	}
-	// Determine whether the ndarray is one-dimensional and thus readily translate to a one-dimensional strided array...
+	// Determine whether the ndarray is one-dimensional and thus readily translates to a one-dimensional strided array...
 	if ( ndims == 1 ) {
 		obj->functions[ 1 ]( arrays, fcn );
 		return 0;

@@ -1,0 +1,26 @@
+
+{{alias}}( x )
+    Tests if an array is sorted in ascending order.
+
+    The function returns `false` if provided an empty array.
+
+    Parameters
+    ----------
+    x: ArrayLikeObject
+        Input array.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating if an array is sorted in ascending order.
+
+    Examples
+    --------
+    > var out = {{alias}}( [ 1, 2, 3 ] )
+    true
+    > out = {{alias}}( [ 3, 2, 1 ] )
+    false
+
+    See Also
+    --------
+

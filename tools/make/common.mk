@@ -28,7 +28,7 @@ endif
 # GENERAL VARIABLES #
 
 # Define supported Node.js versions:
-NODE_VERSIONS ?= '0.10 0.12 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 node'
+NODE_VERSIONS ?= '0.10 0.12 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 node'
 
 # Define a license SPDX identifier whitelist:
 LICENSES_WHITELIST ?= 'Apache-2.0,Artistic-2.0,BSD-2-Clause,BSD-3-Clause,BSL-1.0,CC0-1.0,ISC,MIT,MPL-2.0,Unlicense,WTFPL'
@@ -44,6 +44,17 @@ ifeq ($(FAST_FAIL), 0)
 	FAIL_FAST := false
 else
 	FAIL_FAST := true
+endif
+endif
+
+# Indicate whether to build native add-ons:
+ifndef BUILD_ADDONS
+	BUILD_NATIVE_ADDONS := false
+else
+ifeq ($(BUILD_ADDONS), 1)
+	BUILD_NATIVE_ADDONS := true
+else
+	BUILD_NATIVE_ADDONS := false
 endif
 endif
 
@@ -677,3 +688,14 @@ DEPS_CPPCHECK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/cppcheck_$(deps_cppcheck_version_sl
 
 # Host platform:
 DEPS_CPPCHECK_PLATFORM := $(shell command -v $(NODE) >/dev/null 2>&1 && $(NODE_HOST_PLATFORM))
+
+# FFTPACK...
+
+# Define the PFFFT version:
+DEPS_FFTPACK_VERSION ?= 1.1.0
+
+# Generate a version slug:
+deps_fftpack_version_slug := $(subst .,_,$(DEPS_FFTPACK_VERSION))
+
+# Define the output path when building FFTPACK:
+DEPS_FFTPACK_BUILD_OUT ?= $(DEPS_BUILD_DIR)/pffft-$(DEPS_FFTPACK_VERSION)

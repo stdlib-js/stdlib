@@ -64,7 +64,7 @@ v = kernelSin( NaN, NaN );
 
 -   For increased accuracy, the number for which the [sine][sine] should be evaluated can be supplied as a [double-double number][double-double-arithmetic] (i.e., a non-evaluated sum of two [double-precision floating-point numbers][ieee754] `x` and `y`).
 
--   As components of a [double-double number][double-double-arithmetic], the two [double-precision floating-point numbers][ieee754] `x` and `y` must satisfy 
+-   As components of a [double-double number][double-double-arithmetic], the two [double-precision floating-point numbers][ieee754] `x` and `y` must satisfy
 
     <!-- <equation class="equation" label="eq:double_double_inequality" align="center" raw="|y| \leq \frac{1}{2} \operatorname{ulp}(x)" alt="Inequality for the two components of a double-double number."> -->
 
@@ -88,16 +88,17 @@ v = kernelSin( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var PI = require( '@stdlib/constants/float64/pi' );
 var kernelSin = require( '@stdlib/math/base/special/kernel-sin' );
 
-var x = linspace( -PI/4.0, PI/4.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -PI/4.0, PI/4.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'sine(%d) = %d', x[ i ], kernelSin( x[ i ], 0.0 ) );
-}
+logEachMap( 'sine(%0.4f, %0.4f) = %0.4f', x, 0.0, kernelSin );
 ```
 
 </section>
@@ -179,7 +180,7 @@ double stdlib_base_kernel_sin( const double x, const double y );
 
 int main( void ) {
     const double x[] = { -0.7853981633974483, -0.6108652381980153, -0.4363323129985824, -0.26179938779914946, -0.08726646259971649, 0.08726646259971649, 0.26179938779914935, 0.43633231299858233, 0.6108652381980153, 0.7853981633974483 };
-   
+
     double out;
     int i;
     for ( i = 0; i < 10; i++ ) {

@@ -1,0 +1,23 @@
+
+{{alias}}( value )
+    Returns the Z-test alternative hypothesis string associated with a Z-test
+    alternative hypothesis enumeration constant.
+
+    Parameters
+    ----------
+    value: integer
+        Alternative hypothesis enumeration constant.
+
+    Returns
+    -------
+    out: string|null
+        Alternative hypothesis string.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/stats/base/ztest/alternative-str2enum}}( 'two-sided' ) )
+    'two-sided'
+
+    See Also
+    --------
+

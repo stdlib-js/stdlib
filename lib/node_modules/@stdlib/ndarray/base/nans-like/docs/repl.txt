@@ -1,0 +1,30 @@
+
+{{alias}}( x )
+    Returns a NaN-filled ndarray having the same shape and data type as a
+    provided input ndarray.
+
+    Along with data type, shape, and order, the function infers the "class" of
+    the returned ndarray from the provided ndarray. For example, if provided a
+    "base" ndarray, the function returns a base ndarray. If provided a non-base
+    ndarray, the function returns a non-base ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    Returns
+    -------
+    out: ndarray
+        Output array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/zeros}}( [ 2, 2 ] )
+    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+    > var y = {{alias}}( x )
+    <ndarray>[ [ NaN, NaN ], [ NaN, NaN ] ]
+
+    See Also
+    --------
+

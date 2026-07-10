@@ -27,7 +27,7 @@
 * @return      variance
 *
 * @example
-* double y = stdlib_base_laplace_variance( 0.0, 1.0 );
+* double y = stdlib_base_dists_laplace_variance( 0.0, 1.0 );
 * // returns 2.0
 */
 double stdlib_base_dists_laplace_variance( const double mu, const double b ) {

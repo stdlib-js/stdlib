@@ -23,9 +23,9 @@ import fresnel = require( './index' );
 
 // TESTS //
 
-// The function returns a collection...
+// The function returns a two-element array...
 {
-	fresnel( 1.0 ); // $ExpectType number[]
+	fresnel( 1.0 ); // $ExpectType [number, number]
 }
 
 // The compiler throws an error if the function is provided an argument which is not a number...

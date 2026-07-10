@@ -151,7 +151,7 @@ static double rational_rs( const double x ) {
 *     | IEEE       | -1, 1  | 10^6     | 1.9e-16 | 5.4e-17 |
 *
 * @param x    input value
-* @return	  output value (in radians)
+* @return     output value (in radians)
 *
 * @example
 * double out = stdlib_base_asin( 0.0 );

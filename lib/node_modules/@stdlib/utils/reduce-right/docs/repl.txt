@@ -39,7 +39,7 @@
     Examples
     --------
     // array-like object:
-    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/math/base/ops/add}}, 2 );
+    > var f = {{alias:@stdlib/utils/nary-function}}( {{alias:@stdlib/number/float64/base/add}}, 2 );
     > var arr = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
     > var out = {{alias}}( arr, 0.0, f )
     21.0

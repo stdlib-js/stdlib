@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the  Level 1 routine `isamax`.
 */
-#ifndef ISAMAX_H
-#define ISAMAX_H
+#ifndef STDLIB_BLAS_BASE_ISAMAX_H
+#define STDLIB_BLAS_BASE_ISAMAX_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,5 +45,5 @@ CBLAS_INT API_SUFFIX(c_isamax_ndarray)( const CBLAS_INT N, const float *X, const
 }
 #endif
 
-#endif // !ISAMAX_H
+#endif // !STDLIB_BLAS_BASE_ISAMAX_H
 

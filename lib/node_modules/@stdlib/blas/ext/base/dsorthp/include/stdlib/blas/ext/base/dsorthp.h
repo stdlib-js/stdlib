@@ -19,7 +19,7 @@
 #ifndef STDLIB_BLAS_EXT_BASE_DSORTHP_H
 #define STDLIB_BLAS_EXT_BASE_DSORTHP_H
 
-#include <stdint.h>
+#include "stdlib/blas/base/shared.h"
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -31,7 +31,12 @@ extern "C" {
 /**
 * Sorts a double-precision floating-point strided array using heapsort.
 */
-void c_dsorthp( const int64_t N, const double order, double *X, const int64_t stride );
+void API_SUFFIX(stdlib_strided_dsorthp)( const CBLAS_INT N, const double order, double *X, const CBLAS_INT strideX );
+
+/**
+* Sorts a double-precision floating-point strided array using heapsort and alternative indexing semantics.
+*/
+void API_SUFFIX(stdlib_strided_dsorthp_ndarray)( const CBLAS_INT N, const double order, double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 
 #ifdef __cplusplus
 }

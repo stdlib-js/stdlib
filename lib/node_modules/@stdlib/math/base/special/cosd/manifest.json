@@ -37,10 +37,13 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/unary",
-        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/deg2rad",
-        "@stdlib/math/base/special/cos"
+        "@stdlib/math/base/special/kernel-sin",
+        "@stdlib/math/base/special/kernel-cos",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/fmod"
       ]
     },
     {
@@ -54,10 +57,13 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/deg2rad",
-        "@stdlib/math/base/special/cos"
+        "@stdlib/math/base/special/kernel-sin",
+        "@stdlib/math/base/special/kernel-cos",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/fmod"
       ]
     },
     {
@@ -71,10 +77,13 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/assert/is-integer",
+        "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
         "@stdlib/math/base/special/deg2rad",
-        "@stdlib/math/base/special/cos"
+        "@stdlib/math/base/special/kernel-sin",
+        "@stdlib/math/base/special/kernel-cos",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/fmod"
       ]
     }
   ]
