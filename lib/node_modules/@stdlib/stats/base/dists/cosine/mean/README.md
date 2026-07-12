@@ -111,20 +111,17 @@ y = mean( 0.0, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var mean = require( '@stdlib/stats/base/dists/cosine/mean' );
 
-var mu;
-var s;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var mu = uniform( 10, -5.0, 5.0, opts );
+var s = uniform( 10, 0.0, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    mu = ( randu()*10.0 ) - 5.0;
-    s = randu() * 20.0;
-    y = mean( mu, s );
-    console.log( 'µ: %d, s: %d, E(X;µ,s): %d', mu.toFixed( 4 ), s.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'µ: %0.4f, s: %0.4f, E(X;µ,s): %0.4f', mu, s, mean );
 ```
 
 </section>

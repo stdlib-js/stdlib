@@ -210,8 +210,8 @@ int main( void ) {
     int i;
 
     for ( i = 0; i < 25; i++ ) {
-        x = random_uniform( -5.0, 5.0 );
-        a = random_uniform( 0.0, 20.0 );
+        mu = random_uniform( -5.0, 5.0 );
+        c = random_uniform( 0.0, 20.0 );
         y = stdlib_base_dists_levy_mean( mu, c );
         printf( "µ: %lf, c: %lf, E(X;µ,c): %lf\n", mu, c, y );
     }

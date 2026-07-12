@@ -122,7 +122,7 @@ logEachMap( 'kronecker(%0.4f,%0.4f) = %0.4f', x, 0.0, kroneckerDeltaf );
 ### Usage
 
 ```c
-#include "stdlib/math/base/special/kronecker_deltaf.h
+#include "stdlib/math/base/special/kronecker_deltaf.h"
 ```
 
 #### stdlib_base_kronecker_deltaf( i, j )
@@ -140,7 +140,7 @@ The function accepts the following arguments:
 -   **j**: `[in] float` input value.
 
 ```c
-float stdlib_base_kronecker_delta( const float i, const float j );
+float stdlib_base_kronecker_deltaf( const float i, const float j );
 ```
 
 </section>

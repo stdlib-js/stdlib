@@ -188,21 +188,66 @@ console.log( ndarray2array( B, shape, strides, 0, order ) );
 ### Usage
 
 ```c
-TODO
+#include "stdlib/lapack/base/dlacpy.h"
 ```
 
-#### TODO
+#### c_dlacpy( layout, uplo, M, N, \*A, LDA, \*B, LDB )
 
-TODO.
+Copies all or part of a matrix `A` to another matrix `B`.
 
 ```c
-TODO
+#include "stdlib/lapack/base/shared.h"
+
+const double A[] = { 1.0, 2.0, 3.0, 4.0 };
+double B[] = { 0.0, 0.0, 0.0, 0.0 };
+
+c_dlacpy( LAPACK_ROW_MAJOR, LAPACK_UPPER_TRIANGLE, 2, 2, A, 2, B, 2 );
 ```
 
-TODO
+The function accepts the following arguments:
+
+-   **order**: `[in] LAPACK_LAYOUT` storage layout.
+-   **uplo**: `[in] int` specifies whether to copy the upper or lower triangular/trapezoidal part of a matrix `A`.
+-   **M**: `[in] LAPACK_INT` number of rows in `A`.
+-   **N**: `[in] LAPACK_INT` number of columns in `A`.
+-   **A**: `[in] double*` input matrix.
+-   **LDA**: `[in] LAPACK_INT` stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
+-   **B**: `[out] double*` output matrix.
+-   **LDB**: `[in] LAPACK_INT` stride of the first dimension of `B` (a.k.a., leading dimension of the matrix `B`).
 
 ```c
-TODO
+LAPACK_INT c_dlacpy( const LAPACK_LAYOUT layout, const int uplo, const LAPACK_INT M, const LAPACK_INT N, const double *A, const LAPACK_INT LDA, double *B, const LAPACK_INT LDB );
+```
+
+#### c_dlacpy_ndarray( uplo, M, N, \*A, sa1, sa2, oa, \*B, sb1, sb2, ob )
+
+Copies all or part of a matrix `A` to another matrix `B` using alternative indexing semantics.
+
+```c
+#include "stdlib/lapack/base/shared.h"
+
+const double A[] = { 1.0, 2.0, 3.0, 4.0 };
+double B[] = { 0.0, 0.0, 0.0, 0.0 };
+
+c_dlacpy_ndarray( LAPACK_UPPER_TRIANGLE, 2, 2, A, 2, 1, 0, B, 2, 1, 0 );
+```
+
+The function accepts the following arguments:
+
+-   **uplo**: `[in] int` specifies whether to copy the upper or lower triangular/trapezoidal part of a matrix `A`.
+-   **M**: `[in] LAPACK_INT` number of rows in `A`.
+-   **N**: `[in] LAPACK_INT` number of columns in `A`.
+-   **A**: `[in] double*` input matrix.
+-   **sa1**: `[in] LAPACK_INT` stride of the first dimension of `A`.
+-   **sa2**: `[in] LAPACK_INT` stride of the second dimension of `A`.
+-   **oa**: `[in] LAPACK_INT` starting index for `A`.
+-   **B**: `[out] double*` output matrix.
+-   **sb1**: `[in] LAPACK_INT` stride of the first dimension of `B`.
+-   **sb2**: `[in] LAPACK_INT` stride of the second dimension of `B`.
+-   **ob**: `[in] LAPACK_INT` starting index for `B`.
+
+```c
+LAPACK_INT c_dlacpy_ndarray( const int uplo, const LAPACK_INT M, const LAPACK_INT N, const double *A, const LAPACK_INT strideA1, const LAPACK_INT strideA2, const LAPACK_INT offsetA, double *B, const LAPACK_INT strideB1, const LAPACK_INT strideB2, const LAPACK_INT offsetB );
 ```
 
 </section>
@@ -224,7 +269,49 @@ TODO
 ### Examples
 
 ```c
-TODO
+#include "stdlib/lapack/base/dlacpy.h"
+#include "stdlib/lapack/base/shared.h"
+#include <stdio.h>
+
+int main( void ) {
+    // Define a 3x3 input matrix stored in row-major order:
+    const double A[ 3*3 ] = {
+        1.0, 2.0, 3.0,
+        4.0, 5.0, 6.0,
+        7.0, 8.0, 9.0
+    };
+
+    // Define a 3x3 output matrix:
+    double B[ 3*3 ] = {
+        0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0
+    };
+
+    // Specify the number of elements along each dimension of `A`:
+    const int M = 3;
+    const int N = 3;
+
+    // Copy elements from the upper triangle of `A` to `B`:
+    c_dlacpy( LAPACK_ROW_MAJOR, LAPACK_UPPER_TRIANGLE, M, N, A, N, B, N );
+
+    // Print the result:
+    for ( int i = 0; i < M; i++ ) {
+        for ( int j = 0; j < N; j++ ) {
+            printf( "B[ %i, %i ] = %lf\n", i, j, B[ (i*N)+j ] );
+        }
+    }
+
+    // Copy elements from the lower triangle of `A` to `B` using alternative indexing semantics:
+    c_dlacpy_ndarray( LAPACK_LOWER_TRIANGLE, M, N, A, N, 1, 0, B, N, 1, 0 );
+
+    // Print the result:
+    for ( int i = 0; i < M; i++ ) {
+        for ( int j = 0; j < N; j++ ) {
+            printf( "B[ %i, %i ] = %lf\n", i, j, B[ (i*N)+j ] );
+        }
+    }
+}
 ```
 
 </section>

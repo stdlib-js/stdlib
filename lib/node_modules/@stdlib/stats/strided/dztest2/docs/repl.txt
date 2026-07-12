@@ -1,0 +1,145 @@
+
+{{alias}}( NX, NY, alt, alpha, d, sdx, x, sx, sdy, y, sy, out )
+    Computes a two-sample Z-test for two double-precision floating-point
+    strided arrays.
+
+    The `N` and stride parameters determine which elements in the strided
+    arrays are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    Parameters
+    ----------
+    NX: integer
+        Number of indexed elements in `x`.
+
+    NY: integer
+        Number of indexed elements in `y`.
+
+    alternative: string
+        Alternative hypothesis. Must be one of the following:
+
+        - two-sided: `x` has the same mean as `y`.
+        - greater: `x` has a larger mean than `y`.
+        - less: `x` has a smaller mean than `y`.
+
+    alpha: number
+        Significance level.
+
+    d: number
+        Difference in means under the null hypothesis.
+
+    sdx: number
+        Known standard deviation of `x`.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    sdy: number
+        Known standard deviation of `y`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    out: Object
+        Output results object.
+
+    Returns
+    -------
+    out: Object
+        Results object.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( [ 4.0, 4.0, 6.0, 6.0, 5.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 3.0, 3.0, 5.0, 7.0, 7.0 ] );
+    > var NX = x.length;
+    > var NY = y.length;
+    > var alt = 'two-sided';
+    > var out = new {{alias:@stdlib/stats/base/ztest/two-sample/results/float64}}();
+    > var res = {{alias}}( NX, NY, alt, 0.05, 0.0, 1.0, x, 1, 2.0, y, 1, out );
+    > res.toString()
+
+
+{{alias}}.ndarray( NX, NY, alt, alpha, d, sdx, x, sx, ox, sdy, y, sy, oy, out )
+    Computes a two-sample Z-test for two double-precision floating-point
+    strided arrays using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    NX: integer
+        Number of indexed elements in `x`.
+
+    NY: integer
+        Number of indexed elements in `y`.
+
+    alternative: string
+        Alternative hypothesis. Must be one of the following:
+
+        - two-sided: `x` has the same mean as `y`.
+        - greater: `x` has a larger mean than `y`.
+        - less: `x` has a smaller mean than `y`.
+
+    alpha: number
+        Significance level.
+
+    d: number
+        Difference in means under the null hypothesis.
+
+    sdx: number
+        Known standard deviation of `x`.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    sdy: number
+        Known standard deviation of `y`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    out: Object
+        Output results object.
+
+    Returns
+    -------
+    out: Object
+        Results object.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/array/float64}}( [ 4.0, 4.0, 6.0, 6.0, 5.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 3.0, 3.0, 5.0, 7.0, 7.0 ] );
+    > var NX = x.length;
+    > var NY = y.length;
+    > var alt = 'two-sided';
+    > var out = new {{alias:@stdlib/stats/base/ztest/two-sample/results/float64}}();
+    > var res = {{alias}}.ndarray( NX, NY, alt, 0.05, 0.0, 1.0, x, 1, 0, 2.0, x, 1, 0, out );
+    > res.toString()
+
+    See Also
+    --------
+

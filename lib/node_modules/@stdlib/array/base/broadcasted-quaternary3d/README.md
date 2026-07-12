@@ -116,7 +116,7 @@ var w = filled3dBy( shapes[ 3 ], discreteUniform( -100, 100 ) );
 console.log( w );
 
 var out = zeros3d( shapes[ 4 ] );
-console.log( z );
+console.log( out );
 
 bquaternary3d( [ x, y, z, w, out ], shapes, add );
 console.log( out );

@@ -1,0 +1,22 @@
+
+{{alias}}()
+    Returns a list of matrix orientations.
+
+    The output array contains the following matrix orientations:
+
+    - rows: data is stored along rows.
+    - columns: data is stored along columns.
+
+    Returns
+    -------
+    out: Array<string>
+        List of matrix orientations.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [ 'rows', 'columns' ]
+
+    See Also
+    --------
+

@@ -115,7 +115,7 @@ The function accepts the following arguments:
 -   **x**: `[in] float` input value.
 
 ```c
-float stdlib_base_floor( const float x );
+float stdlib_base_floorf( const float x );
 ```
 
 </section>
