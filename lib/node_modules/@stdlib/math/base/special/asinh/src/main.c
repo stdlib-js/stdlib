@@ -43,7 +43,7 @@ static const double NEAR_ZERO = 1.0 / (1 << 28); // 2**-28
 static const double HUGE = 1 << 28; // 2**28
 
 /**
-* Computes the hyperbolic arcsine of double-precision floating-point number.
+* Computes the hyperbolic arcsine of a double-precision floating-point number.
 *
 * ## Method
 *

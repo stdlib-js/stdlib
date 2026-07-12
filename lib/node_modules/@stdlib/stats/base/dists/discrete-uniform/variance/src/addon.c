@@ -19,5 +19,4 @@
 #include "stdlib/stats/base/dists/discrete-uniform/variance.h"
 #include "stdlib/math/base/napi/binary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_II_D( stdlib_base_dists_discrete_uniform_variance )

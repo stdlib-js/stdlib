@@ -41,7 +41,7 @@ interface Routine {
 	* var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
 	*
 	* gfill( x.length, 5.0, toAccessorArray( x ), 1 );
-	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	* // x => [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
 	<T = unknown, U = unknown>( N: number, alpha: T, x: AccessorArrayLike<U>, strideX: number ): AccessorArrayLike<T | U>;
 
@@ -58,7 +58,7 @@ interface Routine {
 	* var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
 	*
 	* gfill( x.length, 5.0, x, 1 );
-	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	* // x => [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
 	<T = unknown, U = unknown>( N: number, alpha: T, x: Collection<U>, strideX: number ): Collection<T | U>;
 
@@ -78,7 +78,7 @@ interface Routine {
 	* var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
 	*
 	* gfill.ndarray( x.length, 5.0, toAccessorArray( x ), 1, 0 );
-	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	* // x => [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
 	ndarray<T = unknown, U = unknown>( N: number, alpha: T, x: AccessorArrayLike<U>, strideX: number, offsetX: number ): AccessorArrayLike<T | U>;
 
@@ -96,7 +96,7 @@ interface Routine {
 	* var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
 	*
 	* gfill.ndarray( x.length, 5.0, x, 1, 0 );
-	* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+	* // x => [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 	*/
 	ndarray<T = unknown, U = unknown>( N: number, alpha: T, x: Collection<U>, strideX: number, offsetX: number ): Collection<T | U>;
 }
@@ -114,13 +114,13 @@ interface Routine {
 * var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
 *
 * gfill( x.length, 5.0, x, 1 );
-* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+* // x => [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 *
 * @example
 * var x = [ -2.0, 1.0, 3.0, -5.0, 4.0, 0.0, -1.0, -3.0 ];
 *
 * gfill.ndarray( x.length, 5.0, x, 1, 0 );
-* // x => [ 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0, 5.0 ]
+* // x => [ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ]
 */
 declare var gfill: Routine;
 

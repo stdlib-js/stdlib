@@ -99,11 +99,11 @@ static double benchmark1( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 100, -10, 1 };
-	int64_t offset = 90;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 100, -10, 1 };
+	const int64_t offset = 90;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -133,11 +133,11 @@ static double benchmark2( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 1, -10, 100 };
-	int64_t offset = 90;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 1, -10, 100 };
+	const int64_t offset = 90;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -167,11 +167,11 @@ static double benchmark3( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 100, 10, 1 };
-	int64_t offset = 0;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 100, 10, 1 };
+	const int64_t offset = 0;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -201,11 +201,11 @@ static double benchmark4( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 1, 10, 100 };
-	int64_t offset = 0;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 1, 10, 100 };
+	const int64_t offset = 0;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -235,11 +235,11 @@ static double benchmark5( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 100, -10, 1 };
-	int64_t offset = 90;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 100, -10, 1 };
+	const int64_t offset = 90;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -269,11 +269,11 @@ static double benchmark6( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 1, -10, 100 };
-	int64_t offset = 90;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 1, -10, 100 };
+	const int64_t offset = 90;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -303,11 +303,11 @@ static double benchmark7( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 100, 10, 1 };
-	int64_t offset = 0;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 100, 10, 1 };
+	const int64_t offset = 0;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -337,11 +337,11 @@ static double benchmark8( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 1, 10, 100 };
-	int64_t offset = 0;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 1, 10, 100 };
+	const int64_t offset = 0;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -371,11 +371,11 @@ static double benchmark9( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 100, -10, 1 };
-	int64_t offset = 90;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 100, -10, 1 };
+	const int64_t offset = 90;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -405,11 +405,11 @@ static double benchmark10( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 1, -10, 100 };
-	int64_t offset = 90;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 1, -10, 100 };
+	const int64_t offset = 90;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -439,11 +439,11 @@ static double benchmark11( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 100, 10, 1 };
-	int64_t offset = 0;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 100, 10, 1 };
+	const int64_t offset = 0;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -473,11 +473,11 @@ static double benchmark12( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 1, 10, 100 };
-	int64_t offset = 0;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 1, 10, 100 };
+	const int64_t offset = 0;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -507,11 +507,11 @@ static double benchmark13( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 100, -10, 1 };
-	int64_t offset = 90;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 100, -10, 1 };
+	const int64_t offset = 90;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -541,11 +541,11 @@ static double benchmark14( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 1, -10, 100 };
-	int64_t offset = 90;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 1, -10, 100 };
+	const int64_t offset = 90;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -575,11 +575,11 @@ static double benchmark15( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 100, 10, 1 };
-	int64_t offset = 0;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 100, 10, 1 };
+	const int64_t offset = 0;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
@@ -609,11 +609,11 @@ static double benchmark16( void ) {
 	double t;
 	int i;
 
-	int64_t ndims = 3;
-	int64_t shape[] = { 10, 10, 10 };
-	int64_t strides[] = { 1, 10, 100 };
-	int64_t offset = 0;
-	int64_t len = 1000;
+	const int64_t ndims = 3;
+	const int64_t shape[] = { 10, 10, 10 };
+	const int64_t strides[] = { 1, 10, 100 };
+	const int64_t offset = 0;
+	const int64_t len = 1000;
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {

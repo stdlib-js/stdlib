@@ -27,5 +27,15 @@
     > function f( x, y ) { return x + y; };
     > {{alias}}( '%d + %d = %d', x, y, f );
 
+    > var x = [ 0.5, 1.0, 1.5 ];
+    > var y = [ 0.5, 0.75, 1.0 ];
+    > function f( x, y ) { return x * y; };
+    > {{alias}}( '%0.2f * %0.2f = %0.2f', x, y, f );
+
+    > var x = [ 'foo', 'bar' ];
+    > var y = [ 'baz', 'beep' ];
+    > function f( x, y ) { return x + y; };
+    > {{alias}}( '%s+%s = %s', x, y, f );
+
     See Also
     --------

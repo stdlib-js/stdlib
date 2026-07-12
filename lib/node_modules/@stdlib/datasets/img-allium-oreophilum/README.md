@@ -18,13 +18,13 @@ limitations under the License.
 
 -->
 
-# Allium ostrowskianum
+# Allium oreophilum
 
 > [_Allium oreophilum_][@blossfeldt:1928b] (pink lily leek).
 
 <section class="intro">
 
-Image of Karl Blossfeldt's gelatin silver print [_Allium ostrowskianum_][@blossfeldt:1928b].
+Image of Karl Blossfeldt's gelatin silver print [_Allium oreophilum_][@blossfeldt:1928b].
 
 <!-- <image align="center" src="./data/image.jpg" alt="Allium oreophilum"> -->
 

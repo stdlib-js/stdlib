@@ -1,0 +1,29 @@
+
+{{alias}}( value )
+    Returns the enumeration constant associated with a supported Z-test
+    alternative hypothesis value.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `TWO_SIDED == 0`). Instead, the function should be used in an
+    opaque manner.
+
+    Parameters
+    ----------
+    value: any
+        Alternative hypothesis value.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'two-sided' )
+    <number>
+    > out = {{alias}}( {{alias:@stdlib/stats/base/ztest/alternative-str2enum}}( 'two-sided' ) )
+    <number>
+
+    See Also
+    --------
+

@@ -99,7 +99,7 @@ interface Table {
 * var signatures = require( '@stdlib/strided/base/unary-dtype-signatures' );
 * var identity = require( '@stdlib/number/float64/base/identity' );
 * var cidentity = require( '@stdlib/complex/float64/base/identity' );
-* var cidentityf = require( '@stdlib/math/base/special/cidentityf' );
+* var cidentityf = require( '@stdlib/complex/float32/base/identity' );
 *
 * var dtypes = [
 *     'float64',

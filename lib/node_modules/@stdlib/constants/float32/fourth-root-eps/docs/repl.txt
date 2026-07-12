@@ -1,0 +1,11 @@
+
+{{alias}}
+    Fourth root of single-precision floating-point epsilon.
+
+    Examples
+    --------
+    > {{alias}}
+    0.018581360578536987
+
+    See Also
+    --------

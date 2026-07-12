@@ -221,3 +221,30 @@ jobs:
             We recommend opening a new pull request with only the intended changes.
 
             Thank you for your interest in stdlib, and we look forward to your future contributions.
+
+  # Define a job which closes a pull request if proposed changes duplicate already included changes:
+  already_resolved:
+
+    # Define job name:
+    name: 'Check for already resolved label'
+
+    # Only run this job if the pull request has a specific label:
+    if: "${{ github.event.label.name == 'autoclose: Already Resolved' }}"
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the sequence of job steps:
+    steps:
+
+      # Close the pull request:
+      - name: 'Close pull request'
+        run: gh pr close "$NUMBER" --comment "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          BODY: |
+            Thank you for working on this pull request. However, we cannot accept your contribution as the issue this pull request seeks to resolve has already been addressed in a different pull request or commit.
+
+            Thank you again for your interest in stdlib, and we look forward to reviewing your future contributions.
