@@ -1,0 +1,101 @@
+
+{{alias}}( order, uplo, M, N, alpha, beta, A, LDA )
+    Sets the off-diagonal elements and the diagonal elements of a double-
+    precision floating-point matrix to specified values.
+
+    Indexing is relative to the first index. To introduce an offset, use
+    typed array views.
+
+    Parameters
+    ----------
+    order: string
+        Row-major (C-style) or column-major (Fortran-style) order. Must be
+        either 'row-major' or 'column-major'.
+
+    uplo: string
+        Specifies whether to set the upper or lower triangular/trapezoidal
+        part of a matrix `A`.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    alpha: number
+        Value assigned to off-diagonal elements.
+
+    beta: number
+        Value assigned to diagonal elements.
+
+    A: Float64Array
+        Input matrix `A`.
+
+    LDA: integer
+        Stride of the first dimension of `A` (a.k.a., leading dimension of
+        the matrix `A`).
+
+    Returns
+    -------
+    A: Float64Array
+        Output matrix.
+
+    Examples
+    --------
+    > var A = new {{alias:@stdlib/array/float64}}( 4 );
+    > {{alias}}( 'row-major', 'all', 2, 2, 2.0, 1.0, A, 2 )
+    <Float64Array>[ 1.0, 2.0, 2.0, 1.0 ]
+
+
+{{alias}}.ndarray( uplo, M, N, alpha, beta, A, sa1, sa2, oa )
+    Sets the off-diagonal elements and the diagonal elements of a double-
+    precision floating-point matrix to specified values using alternative
+    indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
+
+    Parameters
+    ----------
+    uplo: string
+        Specifies whether to set the upper or lower triangular/trapezoidal
+        part of a matrix `A`.
+
+    M: integer
+        Number of rows in `A`.
+
+    N: integer
+        Number of columns in `A`.
+
+    alpha: number
+        Value assigned to off-diagonal elements.
+
+    beta: number
+        Value assigned to diagonal elements.
+
+    A: Float64Array
+        Input matrix `A`.
+
+    sa1: integer
+        Stride of the first dimension of `A`.
+
+    sa2: integer
+        Stride of the second dimension of `A`.
+
+    oa: integer
+        Starting index for `A`.
+
+    Returns
+    -------
+    A: Float64Array
+        Output matrix.
+
+    Examples
+    --------
+    > var A = new {{alias:@stdlib/array/float64}}( 4 );
+    > {{alias}}.ndarray( 'all', 2, 2, 2.0, 1.0, A, 2, 1, 0 )
+    <Float64Array>[ 1.0, 2.0, 2.0, 1.0 ]
+
+    See Also
+    --------

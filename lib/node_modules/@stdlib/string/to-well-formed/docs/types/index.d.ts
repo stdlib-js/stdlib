@@ -26,15 +26,15 @@
 *
 * @example
 * var result = str2wellformed( '\uDBFF' );
-* // returns �
+* // returns '�'
 *
 * @example
 * var result = str2wellformed( '\uDBFFFF\uDBFF' );
-* // returns �FF�
+* // returns '�FF�'
 *
 * @example
 * var result = str2wellformed( '-5' );
-* // returns -5
+* // returns '-5'
 */
 declare function str2wellformed( str: string ): string;
 

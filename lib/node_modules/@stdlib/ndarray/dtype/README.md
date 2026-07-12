@@ -112,7 +112,7 @@ var s;
 var i;
 for ( i = 0; i < slices.length; i++ ) {
     s = slice( x, slices[ i ] );
-    console.log( '%s => %s', s.dtype, dtype( s ) );
+    console.log( '%s => %s', dtype( x ), dtype( s ) );
 }
 ```
 

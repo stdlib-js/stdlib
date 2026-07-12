@@ -26,11 +26,11 @@
 * Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant.
 *
 * @param N        number of indexed elements
-* @param ca       scalar constant
-* @param CX       input array
-* @param strideX  CX stride length
+* @param alpha       scalar constant
+* @param X       input array
+* @param strideX  X stride length
 */
-void API_SUFFIX(c_cscal)( const CBLAS_INT N, const stdlib_complex64_t ca, void *CX, const CBLAS_INT strideX ) {
+void API_SUFFIX(c_cscal)( const CBLAS_INT N, const stdlib_complex64_t alpha, void *X, const CBLAS_INT strideX ) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	API_SUFFIX(c_cscal_ndarray)( N, ca, CX, strideX, ox );
+	API_SUFFIX(c_cscal_ndarray)( N, alpha, X, strideX, ox );
 }

@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Multiples two single-precision complex floating-point numbers.
+* Multiplies two single-precision complex floating-point numbers.
 */
 stdlib_complex64_t stdlib_base_complex64_mul( const stdlib_complex64_t z1, const stdlib_complex64_t z2 );
 

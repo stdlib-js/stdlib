@@ -19,5 +19,4 @@
 #include "stdlib/math/base/napi/unary.h"
 #include "stdlib/math/base/special/exp2.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_exp2 )

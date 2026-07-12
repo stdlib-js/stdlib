@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the Fortran interface to the BLAS Level 1 routine `drot`.
 */
-#ifndef DROT_FORTRAN_H
-#define DROT_FORTRAN_H
+#ifndef STDLIB_BLAS_BASE_DROT_FORTRAN_H
+#define STDLIB_BLAS_BASE_DROT_FORTRAN_H
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C/Fortran compiler (a Fortran compiler must be configured to not attach underscores).
@@ -38,4 +38,4 @@ void drot( const CBLAS_INT *, double *, const CBLAS_INT *, double *, const CBLAS
 }
 #endif
 
-#endif // !DROT_FORTRAN_H
+#endif // !STDLIB_BLAS_BASE_DROT_FORTRAN_H
