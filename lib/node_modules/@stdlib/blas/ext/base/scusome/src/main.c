@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/ext/base/scusome.h"
+#include "stdlib/math/base/assert/is_nanf.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
 #include <stdbool.h>
@@ -64,7 +65,7 @@ void API_SUFFIX(stdlib_strided_scusome_ndarray)( const CBLAS_INT N, const CBLAS_
 	ix = offsetX;
 	io = offsetOut;
 	for ( i = 0; i < N; i++ ) {
-		if ( !flg && X[ ix ] != 0.0f ) {
+		if ( !flg && X[ ix ] != 0.0f && !stdlib_base_is_nanf( X[ ix ] ) ) {
 			cnt -= 1;
 			if ( cnt <= 0 ) {
 				flg = true;
