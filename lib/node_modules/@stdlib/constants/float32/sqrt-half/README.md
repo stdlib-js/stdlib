@@ -88,7 +88,7 @@ console.log( FLOAT32_SQRT_HALF );
 #include "stdlib/constants/float32/sqrt_half.h"
 ```
 
-#### STDLIB_CONSTANT_FLOAT64_SQRT_HALF
+#### STDLIB_CONSTANT_FLOAT32_SQRT_HALF
 
 Macro for the [square root][@stdlib/math/base/special/sqrtf] of `1/2` as a single-precision floating-point number.
 

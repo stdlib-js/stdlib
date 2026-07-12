@@ -62,5 +62,81 @@
     "natural",
     "logarithm",
     "log"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "ln",
+      "alias": "ln",
+      "pkg_desc": "evaluate the natural logarithm of a double-precision floating-point number",
+      "desc": "evaluates the natural logarithm of a double-precision floating-point number",
+      "short_desc": "natural logarithm",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0,
+              100
+            ]
+          },
+          "example_values": [
+            0,
+            0.01,
+            0.25,
+            0.5,
+            1,
+            2,
+            3,
+            4,
+            9,
+            16,
+            25,
+            36,
+            49,
+            64,
+            81,
+            100,
+            0.1,
+            10,
+            50,
+            99.99
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "natural logarithm",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "ln",
+        "natural",
+        "logarithm",
+        "log"
+      ],
+      "extra_keywords": [
+        "math.log"
+      ]
+    }
+  }
 }

@@ -150,7 +150,7 @@ interface Namespace {
 	* // returns ~-1.079
 	*
 	* y = mylogpmf( 1.0 );
-	* // returns ~-3.54
+	* // returns ~-3.524
 	*/
 	logpmf: typeof logpmf;
 
@@ -266,30 +266,24 @@ interface Namespace {
 	* @returns evaluated PMF
 	*
 	* @example
-	* var y = ns.pmf( 5.0, 20.0, 0.8 );
-	* // returns ~0.157
+	* var y = ns.pmf( 1.0, 8, 4, 2 );
+	* // returns ~0.571
 	*
-	* y = ns.pmf( 21.0, 20.0, 0.5 );
-	* // returns ~0.06
+	* y = ns.pmf( 2.0, 8, 4, 2 );
+	* // returns ~0.214
 	*
-	* y = ns.pmf( 5.0, 10.0, 0.4 );
-	* // returns ~0.016
+	* y = ns.pmf( 0.0, 8, 4, 2 );
+	* // returns ~0.214
 	*
-	* y = ns.pmf( 0.0, 10.0, 0.9 );
-	* // returns ~0.349
+	* y = ns.pmf( 1.5, 8, 4, 2 );
+	* // returns 0.0
 	*
-	* y = ns.pmf( 21.0, 15.5, 0.5 );
-	* // returns ~0.037
+	* var mypmf = ns.pmf.factory( 30, 20, 5 );
+	* y = mypmf( 4.0 );
+	* // returns ~0.34
 	*
-	* y = ns.pmf( 5.0, 7.4, 0.4 );
-	* // returns ~0.051
-	*
-	* var mypmf = ns.pmf.factory( 10, 0.5 );
-	* y = mypmf( 3.0 );
-	* // returns ~0.027
-	*
-	* y = mypmf( 5.0 );
-	* // returns ~0.061
+	* y = mypmf( 1.0 );
+	* // returns ~0.029
 	*/
 	pmf: typeof pmf;
 

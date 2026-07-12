@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_srot`.
 */
-#ifndef SROT_CBLAS_H
-#define SROT_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_SROT_CBLAS_H
+#define STDLIB_BLAS_BASE_SROT_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -40,4 +40,4 @@ void API_SUFFIX(cblas_srot)( const CBLAS_INT N, float *X, const CBLAS_INT stride
 }
 #endif
 
-#endif // !SROT_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_SROT_CBLAS_H

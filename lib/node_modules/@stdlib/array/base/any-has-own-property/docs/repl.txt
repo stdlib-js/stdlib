@@ -1,0 +1,34 @@
+
+{{alias}}( arr, property )
+    Tests whether at least one element in a provided indexed array has a
+    specified own property.
+
+    Parameters
+    ----------
+    arr: Array|TypedArray|Object
+        Input array.
+
+    property: string|symbol|number
+        Property.
+
+    Returns
+    -------
+    bool: boolean
+        Result.
+
+    Examples
+    --------
+    > var o1 = { 'a': 1 };
+    > var o2 = { 'b': 2 };
+    > var o3 = { 'c': 3 };
+    > var x = [ o1, o2, o3 ];
+    > var out = {{alias}}( x, 'a' )
+    true
+    > out = {{alias}}( x, 'd' )
+    false
+    > out = {{alias}}( x, 'toString' )
+    false
+
+    See Also
+    --------
+

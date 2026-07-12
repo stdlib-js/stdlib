@@ -35,24 +35,18 @@ var ztest = require( '@stdlib/stats/ztest' );
 The function performs a one-sample z-test for the null hypothesis that the data in [array][mdn-array] or [typed array][mdn-typed-array] `x` is drawn from a normal distribution with mean zero and known standard deviation `sigma`.
 
 ```javascript
-var normal = require( '@stdlib/random/base/normal' ).factory;
+var normal = require( '@stdlib/random/array/normal' );
 
-var rnorm = normal( 0.0, 2.0, {
-    'seed': 5776
-});
+// Create an array of random numbers:
+var arr = normal( 300, 0.0, 2.0 );
 
-var arr = new Array( 300 );
-var i;
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = rnorm();
-}
-
+// Test whether true mean is equal to 0.0:
 var out = ztest( arr, 2.0 );
 /* e.g., returns
     {
         'rejected': false,
         'pValue': ~0.155,
-        'statistic': -1.422,
+        'statistic': ~-1.422,
         'ci': [~-0.391,~0.062],
         // ...
     }
@@ -90,16 +84,13 @@ The `ztest` function accepts the following `options`:
 By default, the hypothesis test is carried out at a significance level of `0.05`. To choose a different significance level, set the `alpha` option.
 
 ```javascript
-var table;
-var out;
-var arr;
+var arr = [ 2, 4, 3, 1, 0 ];
 
-arr = [ 2, 4, 3, 1, 0 ];
-
-out = ztest( arr, 2.0, {
+var out = ztest( arr, 2.0, {
     'alpha': 0.01
 });
-table = out.print();
+
+var table = out.print();
 /* e.g., returns
     One-sample z-test
 
@@ -132,19 +123,16 @@ table = out.print();
 To test whether the data comes from a distribution with a mean different than zero, set the `mu` option.
 
 ```javascript
-var out;
-var arr;
+var arr = [ 4, 4, 6, 6, 5 ];
 
-arr = [ 4, 4, 6, 6, 5 ];
-
-out = ztest( arr, 1.0, {
+var out = ztest( arr, 1.0, {
     'mu': 5.0
 });
 /* e.g., returns
     {
         'rejected': false,
-        'pValue': 1,
-        'statistic': 0,
+        'pValue': 1.0,
+        'statistic': 0.0,
         'ci': [ ~4.123, ~5.877 ],
         // ...
     }
@@ -154,22 +142,19 @@ out = ztest( arr, 1.0, {
 By default, a two-sided test is performed. To perform either of the one-sided tests, set the `alternative` option to `less` or `greater`.
 
 ```javascript
-var table;
-var out;
-var arr;
+var arr = [ 4, 4, 6, 6, 5 ];
 
-arr = [ 4, 4, 6, 6, 5 ];
-
-out = ztest( arr, 1.0, {
+var out = ztest( arr, 1.0, {
     'alternative': 'less'
 });
-table = out.print();
+
+var table = out.print();
 /* e.g., returns
     One-sample z-test
 
     Alternative hypothesis: True mean is less than 0
 
-        pValue: 1
+        pValue: 1.0
         statistic: 11.1803
         95% confidence interval: [-Infinity,5.7356]
 
@@ -185,7 +170,7 @@ table = out.print();
 
     Alternative hypothesis: True mean is greater than 0
 
-        pValue: 0
+        pValue: 0.0
         statistic: 11.1803
         95% confidence interval: [4.2644,Infinity]
 
@@ -204,38 +189,28 @@ table = out.print();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var normal = require( '@stdlib/random/base/normal' ).factory;
+var normal = require( '@stdlib/random/array/normal' );
 var ztest = require( '@stdlib/stats/ztest' );
 
-var rnorm;
-var arr;
-var out;
-var i;
+// Create an array of random numbers:
+var arr = normal( 500, 5.0, 4.0 );
 
-rnorm = normal( 5.0, 4.0, {
-    'seed': 37827
-});
-arr = new Array( 500 );
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = rnorm();
-}
-
-// Test whether true mean is equal to zero:
-out = ztest( arr, 4.0 );
+// Test whether true mean is equal to 0.0:
+var out = ztest( arr, 4.0 );
 console.log( out.print() );
 /* e.g., =>
     One-sample z-test
 
     Alternative hypothesis: True mean is not equal to 0
 
-        pValue: 0
+        pValue: 0.0
         statistic: 28.6754
         95% confidence interval: [4.779,5.4802]
 
     Test Decision: Reject null in favor of alternative at 5% significance level
 */
 
-// Test whether true mean is equal to five:
+// Test whether true mean is equal to 5.0:
 out = ztest( arr, 4.0, {
     'mu': 5.0
 });

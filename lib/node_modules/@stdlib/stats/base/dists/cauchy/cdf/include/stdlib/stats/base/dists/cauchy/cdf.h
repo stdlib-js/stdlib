@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the cumulative distribution function (CDF) for a Weibull distribution with shape parameter `k` and scale parameter `lambda` at a value `x`.
+* Evaluates the cumulative distribution function (CDF) for a Cauchy distribution with location parameter `x0` and scale parameter `gamma` at a value `x`.
 */
 double stdlib_base_dists_cauchy_cdf( const double x, const double x0, const double gamma );
 
