@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Logistic][logistic-distribution] distribution logarithm of [cumulative distribution function][cdf].
+> [Logistic][logistic-distribution] distribution natural logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 
@@ -55,7 +55,7 @@ var logcdf = require( '@stdlib/stats/base/dists/logistic/logcdf' );
 
 #### logcdf( x, mu, s )
 
-Evaluates the logarithm of the [cumulative distribution function][cdf] (CDF) for a [logistic][logistic-distribution] distribution with parameters `mu` (location parameter) and `s` (scale parameter).
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF) for a [logistic][logistic-distribution] distribution with parameters `mu` (location parameter) and `s` (scale parameter).
 
 ```javascript
 var y = logcdf( 2.0, 0.0, 1.0 );
@@ -182,7 +182,7 @@ logEachMap( 'x: %0.4f, µ: %0.4f, s: %0.4f, ln(F(x;µ,s)): %0.4f', x, mu, s, log
 
 #### stdlib_base_dists_logistic_logcdf( x, mu, s )
 
-Evaluates the logarithm of the cumulative distribution function (CDF) for a logistic distribution with location parameter `mu` and scale parameter `s` at a value `x`.
+Evaluates the natural logarithm of the cumulative distribution function (CDF) for a logistic distribution with location parameter `mu` and scale parameter `s` at a value `x`.
 
 ```c
 double out = stdlib_base_dists_logistic_logcdf( 2.0, 0.0, 1.0 );
