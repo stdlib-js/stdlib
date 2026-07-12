@@ -31,23 +31,12 @@ import { Complex128 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex128 = require( '@stdlib/complex/float64/ctor' );
-* var real = require( '@stdlib/complex/float64/real' );
-* var imag = require( '@stdlib/complex/float64/imag' );
 *
 * var z1 = new Complex128( 5.0, 3.0 );
-* // returns <Complex128>
-*
 * var z2 = new Complex128( -2.0, 1.0 );
-* // returns <Complex128>
 *
 * var out = csub( z1, z2 );
-* // returns <Complex128>
-*
-* var re = real( out );
-* // returns 7.0
-*
-* var im = imag( out );
-* // returns 2.0
+* // returns <Complex128>[ 7.0, 2.0 ]
 */
 declare function csub( z1: Complex128, z2: Complex128 ): Complex128;
 

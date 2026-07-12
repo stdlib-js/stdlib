@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_odd.h"
 #include "stdlib/math/base/assert/is_even.h"
+#include <stdbool.h>
 
 /**
 * Tests if a finite double-precision floating-point number is an odd number.

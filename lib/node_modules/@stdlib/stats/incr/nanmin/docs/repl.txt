@@ -1,0 +1,37 @@
+{{alias}}()
+    Returns an accumulator function which incrementally computes a minimum
+    value, ignoring NaN values.
+
+    If provided a value, the accumulator function returns an updated minimum
+    value. If not provided a value, the accumulator function returns the current
+    minimum value.
+
+    If no valid numbers have been provided (only NaN values), the accumulator
+    function returns null. Unlike incrmin, NaN values are ignored and do not
+    set the minimum to NaN.
+
+    Returns
+    -------
+    acc: Function
+        Accumulator function.
+
+    Examples
+    --------
+    > var accumulator = {{alias}}();
+    > var m = accumulator()
+    null
+    > m = accumulator( 3.14 )
+    3.14
+    > m = accumulator( NaN )
+    3.14
+    > m = accumulator( -5.0 )
+    -5.0
+    > m = accumulator( 10.1 )
+    -5.0
+    > m = accumulator( NaN )
+    -5.0
+    > m = accumulator()
+    -5.0
+
+    See Also
+    --------

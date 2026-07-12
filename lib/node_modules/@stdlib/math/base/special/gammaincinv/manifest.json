@@ -1,0 +1,126 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/export",
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-bool",
+        "@stdlib/napi/create-double",
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float32/smallest-normal",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/erfcinv",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/min",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/constants/float64/ln-sqrt-two-pi",
+        "@stdlib/constants/float64/sqrt-two-pi",
+        "@stdlib/constants/float32/max",
+        "@stdlib/constants/float64/two-pi",
+        "@stdlib/math/base/special/gammainc"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float32/smallest-normal",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/erfcinv",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/min",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/constants/float64/ln-sqrt-two-pi",
+        "@stdlib/constants/float64/sqrt-two-pi",
+        "@stdlib/constants/float32/max",
+        "@stdlib/constants/float64/two-pi",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/math/base/special/gammainc"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nan",
+        "@stdlib/constants/float32/smallest-normal",
+        "@stdlib/constants/float64/pinf",
+        "@stdlib/math/base/special/gammaln",
+        "@stdlib/math/base/special/erfcinv",
+        "@stdlib/math/base/special/gamma",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/exp",
+        "@stdlib/math/base/special/min",
+        "@stdlib/math/base/special/pow",
+        "@stdlib/math/base/special/ln",
+        "@stdlib/constants/float64/ln-sqrt-two-pi",
+        "@stdlib/constants/float64/sqrt-two-pi",
+        "@stdlib/constants/float32/max",
+        "@stdlib/constants/float64/two-pi",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/math/base/special/gammainc"
+      ]
+    }
+  ]
+}

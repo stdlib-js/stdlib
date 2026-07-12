@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the quantile function for a triangular distribution with parameters `a` (lower limit), `b` (upper limit) and `c` (mode).
+* Evaluates the quantile function for a triangular distribution with parameters `a` (lower limit), `b` (upper limit), and `c` (mode).
 */
 double stdlib_base_dists_triangular_quantile( const double p, const double a, const double b, const double c );
 
