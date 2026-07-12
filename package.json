@@ -43,7 +43,7 @@
     "clean": "make clean",
     "check-deps": "make check-deps",
     "check-licenses": "make check-licenses",
-    "postinstall": "test -f tools/scripts/apply_patches && tools/scripts/apply_patches || true"
+    "postinstall": "if test -f tools/scripts/apply_patches; then tools/scripts/apply_patches; fi"
   },
   "homepage": "https://github.com/stdlib-js/stdlib",
   "repository": {
