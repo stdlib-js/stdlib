@@ -20,6 +20,7 @@
 #include "stdlib/math/base/assert/is_prime.h"
 #include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/constants/float64/pinf.h"
+#include <stdbool.h>
 
 /**
 * Returns a boolean indicating whether a number is a composite.
@@ -34,5 +35,10 @@
 * // returns false
 */
 bool stdlib_base_is_composite( double x ) {
-	return ( stdlib_base_is_integer( x ) && ( x > 1 ) && ( x != STDLIB_CONSTANT_FLOAT64_PINF )  && ( !stdlib_base_is_prime( x ) ) );
+	return (
+		stdlib_base_is_integer( x ) &&
+		x > 1 &&
+		x != STDLIB_CONSTANT_FLOAT64_PINF &&
+		!stdlib_base_is_prime( x )
+	);
 }

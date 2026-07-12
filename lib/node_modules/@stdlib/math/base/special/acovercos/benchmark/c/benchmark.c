@@ -96,12 +96,12 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		x[ i ] = ( -2.0*rand_double() ) + 0.0;
+		x[ i ] = 2.0*rand_double();
 	}
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = asin( 1.0 + x[ i%100 ] );
+		y = asin( x[ i%100 ] - 1.0 );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

@@ -99,7 +99,7 @@ int main( void ) {
 
 	printf( "dtype = %d\n", stdlib_ndarray_dtype( x1 ) );
 	printf( "length = %"PRId64"\n", stdlib_ndarray_length( x1 ) );
-	printf( "byteLength = %"PRId64"\n", stdlib_ndarray_bytelength( x1 ) );
+	printf( "byteLength = %"PRId64"\n", stdlib_ndarray_byte_length( x1 ) );
 	printf( "ltr = %u\n", stdlib_ndarray_dtype_char( stdlib_ndarray_dtype( x1 ) ) );
 	printf( "\n" );
 
@@ -112,7 +112,7 @@ int main( void ) {
 
 	printf( "dtype = %d\n", stdlib_ndarray_dtype( x2 ) );
 	printf( "length = %"PRId64"\n", stdlib_ndarray_length( x2 ) );
-	printf( "byteLength = %"PRId64"\n", stdlib_ndarray_bytelength( x2 ) );
+	printf( "byteLength = %"PRId64"\n", stdlib_ndarray_byte_length( x2 ) );
 	printf( "ltr = %u\n", stdlib_ndarray_dtype_char( stdlib_ndarray_dtype( x2 ) ) );
 	printf( "\n" );
 

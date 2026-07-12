@@ -187,7 +187,7 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
 
 ```c
-CBLAS_INT c_isamax( const CBLAS_INT N, const double *X, const CBLAS_INT strideX );
+CBLAS_INT c_isamax( const CBLAS_INT N, const float *X, const CBLAS_INT strideX );
 ```
 
 #### c_isamax_ndarray( N, \*X, strideX, offsetX )
@@ -209,7 +209,7 @@ The function accepts the following arguments:
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 
 ```c
-CBLAS_INT c_isamax_ndarray( const CBLAS_INT N, const double *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
+CBLAS_INT c_isamax_ndarray( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX );
 ```
 
 </section>
@@ -238,7 +238,7 @@ int main( void ) {
     // Create strided array:
     const float x[] = { 1.0f, -2.0f, 3.0f, -4.0f, 5.0f, -6.0f, 7.0f, -8.0f };
 
-    // Specify the number of element:
+    // Specify the number of elements:
     const int N = 8;
 
     // Specify stride:
