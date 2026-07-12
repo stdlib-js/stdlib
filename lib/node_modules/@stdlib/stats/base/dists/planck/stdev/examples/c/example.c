@@ -33,6 +33,6 @@ int main( void ) {
 	for ( i = 0; i < 25; i++ ) {
 		lambda = random_uniform( 0.1, 10.0 );
 		y = stdlib_base_dists_planck_stdev( lambda );
-		printf( "lambda: %lf, stdev: %lf\n", lambda, y );
+		printf( "λ: %lf, SD(X;λ): %lf\n", lambda, y );
 	}
 }

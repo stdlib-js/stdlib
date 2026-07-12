@@ -47,11 +47,11 @@ function accessor( v ) {
     return v;
 }
 
-var x = [ 0.0, -1.57, -0.5, -1.0, -1.25 ];
+var x = [ 0.0, 1.57, 0.5, 1.0, 1.25 ];
 var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
 acovercosBy( x.length, x, 1, y, 1, accessor );
-// y => [ ~1.571, ~-0.607, ~0.524, 0.0, ~-0.253 ]
+// y => [ ~-1.571, ~0.607, ~-0.524, 0.0, ~0.253 ]
 ```
 
 The function accepts the following arguments:
@@ -85,11 +85,11 @@ var context = {
     'count': 0
 };
 
-var x = [ 0.0, -1.57, -0.5, -1.0, -1.25 ];
+var x = [ 0.0, 1.57, 0.5, 1.0, 1.25 ];
 var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
 acovercosBy( x.length, x, 1, y, 1, accessor, context );
-// y => [ ~1.571, ~-0.607, ~0.524, 0.0, ~-0.253 ]
+// y => [ ~-1.571, ~0.607, ~-0.524, 0.0, ~0.253 ]
 
 var cnt = context.count;
 // returns 5
@@ -102,11 +102,11 @@ function accessor( v ) {
     return v;
 }
 
-var x = [ 0.0, -1.57, -0.5, -1.0, -1.25, -0.67 ];
+var x = [ 0.0, 1.57, 0.5, 1.0, 1.25, 0.67 ];
 var y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
 acovercosBy( 3, x, 2, y, -1, accessor );
-// y => [ ~-0.253, ~0.524, ~1.571, 0.0, 0.0, 0.0 ]
+// y => [ ~0.253, ~-0.524, ~-1.571, 0.0, 0.0, 0.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -119,7 +119,7 @@ function accessor( v ) {
 }
 
 // Initial arrays...
-var x0 = new Float64Array( [ 0.0, -1.57, -0.5, -1.0, -1.25, -0.67 ] );
+var x0 = new Float64Array( [ 0.0, 1.57, 0.5, 1.0, 1.25, 0.67 ] );
 var y0 = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 // Create offset views...
@@ -127,7 +127,7 @@ var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd 
 var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 
 acovercosBy( 3, x1, -2, y1, 1, accessor );
-// y0 => <Float64Array>[ 0.0, 0.0, 0.0, ~0.336, 0.0, ~-0.607 ]
+// y0 => <Float64Array>[ 0.0, 0.0, 0.0, ~-0.336, 0.0, ~0.607 ]
 ```
 
 #### acovercosBy.ndarray( N, x, strideX, offsetX, y, strideY, offsetY, clbk\[, thisArg] )
@@ -139,11 +139,11 @@ function accessor( v ) {
     return v;
 }
 
-var x = [ 0.0, -1.57, -0.5, -1.0, -1.25 ];
+var x = [ 0.0, 1.57, 0.5, 1.0, 1.25 ];
 var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
 acovercosBy.ndarray( x.length, x, 1, 0, y, 1, 0, accessor );
-// y => [ ~1.571, ~-0.607, ~0.524, 0.0, ~-0.253 ]
+// y => [ ~-1.571, ~0.607, ~-0.524, 0.0, ~0.253 ]
 ```
 
 The function accepts the following additional arguments:
@@ -158,11 +158,11 @@ function accessor( v ) {
     return v;
 }
 
-var x = [ 0.0, -1.57, -0.5, -1.0, -1.25, -0.67 ];
+var x = [ 0.0, 1.57, 0.5, 1.0, 1.25, 0.67 ];
 var y = [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
 acovercosBy.ndarray( 3, x, 2, 1, y, -1, y.length-1, accessor );
-// y => [ 0.0, 0.0, 0.0, ~0.336, 0.0, ~-0.607 ]
+// y => [ 0.0, 0.0, 0.0, ~-0.336, 0.0, ~0.607 ]
 ```
 
 </section>
@@ -180,7 +180,7 @@ acovercosBy.ndarray( 3, x, 2, 1, y, -1, y.length-1, accessor );
         // No-op...
     }
 
-    var x = [ 0.0, -1.57, -0.5, -1.0, -1.25 ];
+    var x = [ 0.0, 1.57, 0.5, 1.0, 1.25 ];
     var y = [ 0.0, 0.0, 0.0, 0.0, 0.0 ];
 
     acovercosBy( x.length, x, 1, y, 1, accessor );
@@ -211,7 +211,7 @@ function accessor( v, i ) {
     return v;
 }
 
-var x = filledarrayBy( 10, 'generic', uniform( -2.0, 0.0 ) );
+var x = filledarrayBy( 10, 'generic', uniform( 0.0, 2.0 ) );
 console.log( x );
 
 var y = filledarray( null, 10, 'generic' );

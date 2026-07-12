@@ -100,7 +100,7 @@ interface AppendFile {
 	* @returns error object or null
 	*
 	* @example
-	* var err = appendFileSync( './beep/boop.txt', 'data to append\n' );
+	* var err = appendFile.sync( './beep/boop.txt', 'data to append\n' );
 	* if ( err instanceof Error ) {
 	*     throw err;
 	* }

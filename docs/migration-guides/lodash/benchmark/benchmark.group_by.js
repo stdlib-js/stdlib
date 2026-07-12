@@ -23,6 +23,7 @@
 var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var format = require( '@stdlib/string/format' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var groupBy = require( '@stdlib/utils/group-by' );
 var pkg = require( './../package.json' ).name;
@@ -38,7 +39,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:utils/group-by', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:utils/group-by', pkg ), opts, function benchmark( b ) {
 	var vals;
 	var arr;
 	var o;
@@ -72,7 +73,7 @@ bench( pkg+'::stdlib:utils/group-by', opts, function benchmark( b ) {
 	}
 });
 
-bench( pkg+'::lodash:groupBy', opts, function benchmark( b ) {
+bench( format( '%s::lodash:groupBy', pkg ), opts, function benchmark( b ) {
 	var vals;
 	var arr;
 	var o;

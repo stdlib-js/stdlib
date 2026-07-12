@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Returns the number of non-singleton dimensions.
 */
-int64_t stdlib_ndarray_nonsingleton_dimensions( int64_t ndims, int64_t *shape );
+int64_t stdlib_ndarray_nonsingleton_dimensions( const int64_t ndims, const int64_t *shape );
 
 #ifdef __cplusplus
 }

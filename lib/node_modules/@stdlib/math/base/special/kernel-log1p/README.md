@@ -20,7 +20,7 @@ limitations under the License.
 
 # kernelLog1p
 
-> Compute `log(1+f) - f` for `1+f` in `~[sqrt(2)/2, sqrt(2)]`.
+> Evaluate a correction term for double-precision base-2 and base-10 logarithms when `1+f` is in `[√2/2, √2]`.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var kernelLog1p = require( '@stdlib/math/base/special/kernel-log1p' );
 
 #### kernelLog1p( f )
 
-Computes `log(1+f) - f` for `1+f` in `~[sqrt(2)/2, sqrt(2)]`.
+Evaluates a correction term for double-precision base-2 and base-10 logarithms when `1+f` is in `[√2/2, √2]`.
 
 ```javascript
 var v = kernelLog1p( 1.0 );
@@ -111,7 +111,7 @@ logEachMap( 'kernelLog1p(%0.4f) = %0.4f', x, kernelLog1p );
 
 #### stdlib_base_kernel_log1p( f )
 
-Computes `log(1+f) - f` for `1+f` in `~[sqrt(2)/2, sqrt(2)]`.
+Evaluates a correction term for double-precision base-2 and base-10 logarithms when `1+f` is in `[√2/2, √2]`.
 
 ```c
 double out = stdlib_base_kernel_log1p( 1.0 );
