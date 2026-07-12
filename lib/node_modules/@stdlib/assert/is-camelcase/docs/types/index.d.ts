@@ -29,7 +29,7 @@
 * // returns true
 *
 * @example
-* var bool = isCamelcase( 'HelloWorld' );
+* var bool = isCamelcase( 'beepBoop123' );
 * // returns true
 *
 * @example

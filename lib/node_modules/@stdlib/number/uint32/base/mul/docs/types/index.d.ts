@@ -19,19 +19,23 @@
 // TypeScript Version: 4.1
 
 /**
-* Performs C-like multiplication of two unsigned 32-bit integers.
+* Multiples two unsigned 32-bit integers.
 *
-* @param a - unsigned 32-bit integer
-* @param b - Unsigned 32-bit integer
-* @returns product
+* ## Notes
+*
+* -   The function performs C-like multiplication of two unsigned 32-bit integers, including wraparound semantics.
+*
+* @param x - first input value
+* @param y - second input value
+* @returns result
 *
 * @example
-* var v = umul( 10>>>0, 4>>>0 );
+* var v = mul( 10>>>0, 4>>>0 );
 * // returns 40
 */
-declare function umul( a: number, b: number ): number;
+declare function mul( x: number, y: number ): number;
 
 
 // EXPORTS //
 
-export = umul;
+export = mul;

@@ -7,7 +7,7 @@ f: float32
 g: float128
 h: float16
 i: int32
-j:
+j: complex32 (16-bit)
 k: int16
 l: int64
 m: int128

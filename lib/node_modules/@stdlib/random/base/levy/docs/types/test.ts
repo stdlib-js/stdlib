@@ -151,14 +151,14 @@ import levy = require( './index' );
 	levy.factory( -2, 2, { 'prng': null } ); // $ExpectError
 	levy.factory( -2, 2, { 'prng': [] } ); // $ExpectError
 	levy.factory( -2, 2, { 'prng': {} } ); // $ExpectError
-	levy.factory( -2, 2, { 'prng': true ); // $ExpectError
+	levy.factory( -2, 2, { 'prng': true } ); // $ExpectError
 
 	levy.factory( { 'prng': 123 } ); // $ExpectError
 	levy.factory( { 'prng': 'abc' } ); // $ExpectError
 	levy.factory( { 'prng': null } ); // $ExpectError
 	levy.factory( { 'prng': [] } ); // $ExpectError
 	levy.factory( { 'prng': {} } ); // $ExpectError
-	levy.factory( { 'prng': true ); // $ExpectError
+	levy.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import levy = require( './index' );
 	levy.factory( -2, 2, { 'state': null } ); // $ExpectError
 	levy.factory( -2, 2, { 'state': [] } ); // $ExpectError
 	levy.factory( -2, 2, { 'state': {} } ); // $ExpectError
-	levy.factory( -2, 2, { 'state': true ); // $ExpectError
+	levy.factory( -2, 2, { 'state': true } ); // $ExpectError
 	levy.factory( -2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	levy.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import levy = require( './index' );
 	levy.factory( { 'state': null } ); // $ExpectError
 	levy.factory( { 'state': [] } ); // $ExpectError
 	levy.factory( { 'state': {} } ); // $ExpectError
-	levy.factory( { 'state': true ); // $ExpectError
+	levy.factory( { 'state': true } ); // $ExpectError
 	levy.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

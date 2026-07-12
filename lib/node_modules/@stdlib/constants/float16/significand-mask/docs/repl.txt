@@ -1,0 +1,14 @@
+
+{{alias}}
+    Mask for the significand of a half-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    1023
+    > {{alias:@stdlib/number/uint16/base/to-binary-string}}( {{alias}} )
+    '0000001111111111'
+
+    See Also
+    --------
+

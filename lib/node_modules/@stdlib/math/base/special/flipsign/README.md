@@ -127,7 +127,7 @@ Returns a [double-precision floating-point number][ieee754] with the magnitude o
 double v = stdlib_base_flipsign( -3.0, 10.0 );
 // returns -3.0
 
-double v = stdlib_base_flipsign( -3.0, -1.0 );
+v = stdlib_base_flipsign( -3.0, -1.0 );
 // returns 3.0
 ```
 
