@@ -88,7 +88,7 @@ console.log( FLOAT32_MAX_LN );
 #include "stdlib/constants/float32/max_ln.h"
 ```
 
-#### STDLIB_CONSTANT_FLOAT64_MAX_LN
+#### STDLIB_CONSTANT_FLOAT32_MAX_LN
 
 Macro for the [natural logarithm][natural-logarithm] of the maximum [single-precision floating-point number][ieee754].
 

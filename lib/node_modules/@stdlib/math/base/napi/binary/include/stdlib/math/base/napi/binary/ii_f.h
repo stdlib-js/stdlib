@@ -31,7 +31,7 @@
 * @example
 * #include <stdint.h>
 *
-* static float fcn( const int_32 x, const int_32 y ) {
+* static float fcn( const int32_t x, const int32_t y ) {
 *     // ...
 * }
 *
