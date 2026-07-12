@@ -18,6 +18,7 @@
 
 import incrnanmsumabs = require( './index' );
 
+
 // TESTS //
 
 // The function returns an accumulator function...
