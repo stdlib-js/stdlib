@@ -179,7 +179,7 @@ Computes the minimum value of a single-precision floating-point strided array.
 const float x[] = { 1.0f, -2.0f, 3.0f, -4.0f };
 
 float v = stdlib_strided_smin( 4, x, 1 );
-// returns 1.0f
+// returns -4.0f
 ```
 
 The function accepts the following arguments:
@@ -200,7 +200,7 @@ Computes the minimum value of a single-precision floating-point strided array us
 const float x[] = { 1.0f, -2.0f, 3.0f, -4.0f };
 
 float v = stdlib_strided_smin_ndarray( 4, x, 1, 0 );
-// returns 1.0f
+// returns -4.0f
 ```
 
 The function accepts the following arguments:

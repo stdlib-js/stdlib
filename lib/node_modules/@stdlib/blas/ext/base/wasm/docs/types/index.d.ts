@@ -50,7 +50,7 @@ interface Namespace {
 	* var x = new Float64Array( [ 1.0, -2.0, 2.0 ] );
 	*
 	* ns.dapx.main( 3, 5.0, x, 1 );
-	* // x => Float64Array[ 6.0, 3.0, 7.0 ]
+	* // x => <Float64Array>[ 6.0, 3.0, 7.0 ]
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
@@ -58,7 +58,7 @@ interface Namespace {
 	* var x = new Float64Array( [ 2.0, 1.0, 2.0, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 	*
 	* ns.dapx.ndarray( 4, 5.0, x, 2, 1 );
-	* // x => Float64Array[ 7.0, 6.0, 7.0, 3.0, 3.0, 7.0, 8.0, 9.0 ]
+	* // x => <Float64Array>[ 2.0, 6.0, 2.0, 3.0, -2.0, 7.0, 3.0, 9.0 ]
 	*/
 	dapx: typeof dapx;
 
@@ -210,7 +210,7 @@ interface Namespace {
 	* var x = new Float64Array( [ 1.0, -2.0, NaN, 2.0 ] );
 	*
 	* var out = ns.dnanasumors.main( 4, x, 1 );
-	* // returns 1.0
+	* // returns 5.0
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
@@ -218,7 +218,7 @@ interface Namespace {
 	* var x = new Float64Array( [ 2.0, 1.0, NaN, -2.0, -2.0, 2.0, 3.0, 4.0 ] );
 	*
 	* var out = ns.dnanasumors.ndarray( 4, x, 2, 1 );
-	* // returns 5.0
+	* // returns 9.0
 	*/
 	dnanasumors: typeof dnanasumors;
 

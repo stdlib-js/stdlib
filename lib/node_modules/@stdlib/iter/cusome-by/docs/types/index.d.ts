@@ -62,7 +62,7 @@ type Predicate<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U>;
 * Returns an iterator which cumulatively tests whether at least `n` iterated values pass a test implemented by a predicate function.
 *
 * @param iterator - source iterator
-* @param n - minimum number of truthy elements
+* @param n - minimum number of successful values
 * @param predicate - predicate function
 * @param thisArg - execution context
 * @returns iterator
