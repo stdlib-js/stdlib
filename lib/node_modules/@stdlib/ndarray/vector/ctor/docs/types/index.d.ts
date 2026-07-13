@@ -128,6 +128,10 @@ interface TypedVector<T extends keyof TypedDataTypeMap> {
 	/**
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
+	* ## Notes
+	*
+	* -   The returned ndarray view spans the entirety of the underlying ArrayBuffer.
+	*
 	* @param buffer - underlying ArrayBuffer
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
@@ -139,6 +143,10 @@ interface TypedVector<T extends keyof TypedDataTypeMap> {
 
 	/**
 	* Creates a vector (i.e., a one-dimensional ndarray).
+	*
+	* ## Notes
+	*
+	* -   The returned ndarray view spans from the byteOffset to the end of the underlying ArrayBuffer.
 	*
 	* @param buffer - underlying ArrayBuffer
 	* @param byteOffset - integer byte offset specifying the location of the first vector element
@@ -155,7 +163,7 @@ interface TypedVector<T extends keyof TypedDataTypeMap> {
 	*
 	* @param buffer - underlying ArrayBuffer
 	* @param byteOffset - integer byte offset specifying the location of the first vector element
-	* @param length - view length; if not provided, the view spans from the byteOffset to the end of the underlying ArrayBuffer
+	* @param length - view length
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
 	* @param options.mode - specifies how to handle indices which exceed vector dimensions
@@ -401,6 +409,10 @@ interface Vector {
 	/**
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
+	* ## Notes
+	*
+	* -   The returned ndarray view spans the entirety of the underlying ArrayBuffer and the leading dimension of the returned ndarray always has a size of one.
+	*
 	* @param buffer - underlying ArrayBuffer
 	* @param dtype - data type (default: 'float64')
 	* @param options - function options
@@ -459,6 +471,10 @@ interface Vector {
 	/**
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
+	* ## Notes
+	*
+	* -   The returned ndarray view spans the entirety of the underlying ArrayBuffer and the leading dimension of the returned ndarray always has a size of one.
+	*
 	* @param buffer - underlying ArrayBuffer
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
@@ -485,6 +501,10 @@ interface Vector {
 
 	/**
 	* Creates a vector (i.e., a one-dimensional ndarray).
+	*
+	* ## Notes
+	*
+	* -   The returned ndarray view spans from the byteOffset to the end of the underlying ArrayBuffer and the leading dimension of the returned ndarray always has a size of one.
 	*
 	* @param buffer - underlying ArrayBuffer
 	* @param byteOffset - integer byte offset specifying the location of the first vector element (default: 0)
@@ -545,6 +565,10 @@ interface Vector {
 	/**
 	* Creates a vector (i.e., a one-dimensional ndarray).
 	*
+	* ## Notes
+	*
+	* -   The returned ndarray view spans from the byteOffset to the end of the underlying ArrayBuffer and the leading dimension of the returned ndarray always has a size of one.
+	*
 	* @param buffer - underlying ArrayBuffer
 	* @param byteOffset - integer byte offset specifying the location of the first vector element
 	* @param options - function options
@@ -590,7 +614,7 @@ interface Vector {
 	*
 	* @param buffer - underlying ArrayBuffer
 	* @param byteOffset - integer byte offset specifying the location of the first vector element (default: 0)
-	* @param length - view length; if not provided, the view spans from the byteOffset to the end of the underlying ArrayBuffer
+	* @param length - view length
 	* @param dtype - data type (default: 'float64')
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
@@ -649,7 +673,7 @@ interface Vector {
 	*
 	* @param buffer - underlying ArrayBuffer
 	* @param byteOffset - integer byte offset specifying the location of the first vector element
-	* @param length - view length; if not provided, the view spans from the byteOffset to the end of the underlying ArrayBuffer
+	* @param length - view length
 	* @param options - function options
 	* @param options.readonly - boolean indicating whether to return a read-only vector
 	* @param options.mode - specifies how to handle indices which exceed vector dimensions
