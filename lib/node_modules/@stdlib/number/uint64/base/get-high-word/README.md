@@ -32,13 +32,13 @@ var getHighWord = require( '@stdlib/number/uint64/base/get-high-word' );
 
 #### getHighWord( x )
 
-Returns an unsigned 32-bit `integer` corresponding to the high 32-bit word of a [64-bit unsigned integer][@stdlib/number/uint64/ctor].
+Returns an unsigned 32-bit integer corresponding to the high 32-bit word of a [64-bit unsigned integer][@stdlib/number/uint64/ctor].
 
 ```javascript
 var Uint64 = require( '@stdlib/number/uint64/ctor' );
 
-var a = new Uint64( 4294967296 );
-var w = getHighWord( a );
+var x = new Uint64( 4294967296 );
+var w = getHighWord( x );
 // returns 1
 ```
 
@@ -56,20 +56,20 @@ var w = getHighWord( a );
 var Uint64 = require( '@stdlib/number/uint64/ctor' );
 var getHighWord = require( '@stdlib/number/uint64/base/get-high-word' );
 
-var a = new Uint64( 4294967296 );
-console.log( getHighWord( a ) );
+var x = new Uint64( 4294967296 );
+console.log( getHighWord( x ) );
 // => 1
 
-a = new Uint64( 0xffffffff );
-console.log( getHighWord( a ) );
+x = new Uint64( 0xffffffff );
+console.log( getHighWord( x ) );
 // => 0
 
-a = new Uint64( 0x123400005678 );
-console.log( getHighWord( a ) );
+x = new Uint64( 0x123400005678 );
+console.log( getHighWord( x ) );
 // => 4660
 
-a = new Uint64.of( 1234, 5678 );
-console.log( getHighWord( a ) );
+x = Uint64.of( 1234, 5678 );
+console.log( getHighWord( x ) );
 // => 1234
 ```
 

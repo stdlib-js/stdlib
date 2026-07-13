@@ -15,9 +15,9 @@
 
     Examples
     --------
-    > var a = new {{alias:@stdlib/number/uint64/ctor}}( 4294967296 )
+    > var x = new {{alias:@stdlib/number/uint64/ctor}}( 4294967296 )
     <Uint64>[ 4294967296n ]
-    > var w = {{alias}}( a )
+    > var w = {{alias}}( x )
     1
 
     See Also
