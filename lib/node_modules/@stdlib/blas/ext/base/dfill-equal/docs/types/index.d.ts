@@ -87,7 +87,7 @@ interface Routine {
 *
 * var x = new Float64Array( [ 0.0, 0.0, 1.0, 0.0 ] );
 *
-* dfillEqual( x.length, 0.0, 5.0, x, 1, 0 );
+* dfillEqual.ndarray( x.length, 0.0, 5.0, x, 1, 0 );
 * // x => <Float64Array>[ 5.0, 5.0, 1.0, 5.0 ]
 */
 declare var dfillEqual: Routine;
