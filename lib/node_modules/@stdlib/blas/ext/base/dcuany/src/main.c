@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/blas/ext/base/dcuany.h"
+#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
 #include <stdbool.h>
@@ -60,7 +61,7 @@ void API_SUFFIX(stdlib_strided_dcuany_ndarray)( const CBLAS_INT N, const double 
 	ix = offsetX;
 	io = offsetOut;
 	for ( i = 0; i < N; i++ ) {
-		if ( !flg && X[ ix ] != 0.0 ) {
+		if ( !flg && X[ ix ] != 0.0 && !stdlib_base_is_nan( X[ ix ] ) ) {
 			flg = true;
 		}
 		Out[ io ] = flg;
