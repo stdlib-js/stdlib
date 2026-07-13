@@ -118,7 +118,7 @@ var x = discreteUniform( 10, -5, 5, {
 // returns <Int32Array>
 
 var out = reject( x, naryFunction( isPositiveInteger, 1 ) );
-// returns <Int32Array>
+// returns <Array>
 ```
 
 </section>

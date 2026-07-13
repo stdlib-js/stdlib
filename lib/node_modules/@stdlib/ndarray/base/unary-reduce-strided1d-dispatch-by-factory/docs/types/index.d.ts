@@ -234,7 +234,7 @@ interface UnaryFunction<T, U> {
 	* // returns <ndarray>
 	*
 	* var v = y.get();
-	* // returns 2.0
+	* // returns 4.0
 	*/
 	<ThisArg = unknown>( x: InputArray<T>, ...args: Array<InputArray<T> | Options | Callback<T, U, ThisArg> | ThisParameterType<Callback<T, U, ThisArg>>> ): OutputArray<U>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output ndarray data type is dependent on how `x` interacts with output data type policy and whether that policy has been overridden by `options.dtype`. In principle, as well, based on the policy, it is possible to know more exactly which `InputArray` types are actually allowed.
 
@@ -278,7 +278,7 @@ interface UnaryFunction<T, U> {
 	* // returns <ndarray>
 	*
 	* var v = out.get();
-	* // returns 2.0
+	* // returns 4.0
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -326,7 +326,7 @@ interface UnaryFunction<T, U> {
 	* // returns <ndarray>
 	*
 	* var v = out.get();
-	* // returns 2.0
+	* // returns 4.0
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -374,7 +374,7 @@ interface UnaryFunction<T, U> {
 	* // returns <ndarray>
 	*
 	* var v = out.get();
-	* // returns 2.0
+	* // returns 4.0
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -419,7 +419,7 @@ interface UnaryFunction<T, U> {
 * // returns <ndarray>
 *
 * var v = y.get();
-* // returns 2.0
+* // returns 4.0
 */
 declare function factory<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): UnaryFunction<T, U>;
 

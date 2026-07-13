@@ -1,0 +1,13 @@
+
+{{alias}}
+    The minimum biased base 2 exponent for a normalized half-precision
+    floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    -14
+
+    See Also
+    --------
+

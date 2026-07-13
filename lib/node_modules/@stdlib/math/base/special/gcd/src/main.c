@@ -35,7 +35,7 @@ static const int64_t STDLIB_CONSTANT_INT64_MAX = 9223372036854775807;
 * @return     greatest common divisor
 *
 * @example
-* double out = largeIntegers( 1.2676506002282294.0e+30, 9007199254740992.0 );
+* double out = largeIntegers( 1.2676506002282294e+30, 9007199254740992.0 );
 * // returns 9007199254740992.0
 */
 static double largeIntegers( const double a, const double b ) {
