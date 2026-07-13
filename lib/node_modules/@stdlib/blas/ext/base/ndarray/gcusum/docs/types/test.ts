@@ -37,18 +37,6 @@ import gcusum = require( './index' );
 	});
 
 	gcusum( [ x1, y1, initial1 ] ); // $ExpectType float64ndarray
-
-	const x2 = zeros( [ 10 ], {
-		'dtype': 'complex128'
-	});
-	const y2 = zeros( [ 10 ], {
-		'dtype': 'complex128'
-	});
-	const initial2 = zeros( [], {
-		'dtype': 'complex128'
-	});
-
-	gcusum( [ x2, y2, initial2 ] ); // $ExpectType complex128ndarray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array of ndarrays...

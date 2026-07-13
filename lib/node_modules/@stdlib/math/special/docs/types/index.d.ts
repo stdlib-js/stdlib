@@ -34,16 +34,12 @@ interface Namespace {
 	* @returns output ndarray
 	*
 	* @example
-	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 	*
 	* var y = ns.abs( x );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 	*
 	* @example
 	* var ndarray2array = require( '@stdlib/ndarray/to-array' );
@@ -53,13 +49,10 @@ interface Namespace {
 	* var y = array( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );
 	*
 	* var z = ns.abs.assign( x, y );
-	* // returns <ndarray>
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 	*
 	* var bool = ( z === y );
 	* // returns true
-	*
-	* var arr = ndarray2array( y );
-	* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 	*/
 	abs: typeof abs;
 }

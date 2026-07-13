@@ -78,7 +78,7 @@ v = gammasgn( NaN );
 
 </section>
 
-<!-- /. notes -->
+<!-- /.notes -->
 
 <section class="examples">
 
