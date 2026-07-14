@@ -94,10 +94,11 @@ The function has the following parameters:
 
 ## Examples
 
+<!-- eslint-disable max-len -->
+
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-/* eslint-disable max-len */
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var Complex64Matrix = require( '@stdlib/ndarray/matrix/complex64' );
 var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
