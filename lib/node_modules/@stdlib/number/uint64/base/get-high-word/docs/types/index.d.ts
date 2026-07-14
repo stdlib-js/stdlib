@@ -25,17 +25,17 @@ import { Uint64 } from '@stdlib/types/number';
 /**
 * Returns an unsigned 32-bit integer corresponding to the high 32-bit word of a 64-bit unsigned integer.
 *
-* @param a - input value
+* @param x - input value
 * @returns higher order word (unsigned 32-bit integer)
 *
 * @example
 * var Uint64 = require( '@stdlib/number/uint64/ctor' );
 *
-* var a = new Uint64( 4294967296 );
-* var w = getHighWord( a );
+* var x = new Uint64( 4294967296 );
+* var w = getHighWord( x );
 * // returns 1
 */
-declare function getHighWord( a: Uint64 ): number;
+declare function getHighWord( x: Uint64 ): number;
 
 
 // EXPORTS //
