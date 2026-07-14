@@ -79,7 +79,7 @@ var bool = ( w === out );
 ## Notes
 
 -   The input string must be a valid representation of an unsigned 64-bit integer in the specified radix, containing no whitespace, sign symbols, or leading zeros.
--   If the provided string represents a value greater than `2^64-1` or the radix is invalid, then `0` is assigned to both high and low words.
+-   If the provided string represents a value greater than `2^64-1` or the radix is not an integer on the interval `[2, 36]`, the function throws a `RangeError`.
 
 </section>
 
