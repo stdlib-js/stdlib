@@ -40,8 +40,9 @@ var cgemv = require( '@stdlib/blas/base/ndarray/cgemv' );
 
 Performs one of the matrix-vector operations `y = alpha*A*x + beta*y`, `y = alpha*A^T*x + beta*y`, or `y = alpha*A^H*x + beta*y`, where `alpha` and `beta` are scalars, `x` and `y` are one-dimensional ndarrays, and `A` is an `M` by `N` matrix.
 
+<!-- eslint-disable max-len -->
+
 ```javascript
-/* eslint-disable max-len */
 var Complex64Matrix = require( '@stdlib/ndarray/matrix/complex64' );
 var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
