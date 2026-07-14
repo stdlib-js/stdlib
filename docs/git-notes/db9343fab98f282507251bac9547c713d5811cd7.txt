@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+bench: refactor to use string interpolation in `stats/array`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/11392
+Ref: https://github.com/stdlib-js/metr-issue-tracker/issues/324
+Ref: https://github.com/stdlib-js/stdlib/issues/8647
+Reviewed-by: Athan Reines <kgryte@gmail.com>

@@ -29,7 +29,7 @@
 * @return    evaluated quantile function
 *
 * @example
-* double y = stdlib_base_levy_quantile( 0.8, 0.0, 1.0 );
+* double y = stdlib_base_dists_levy_quantile( 0.8, 0.0, 1.0 );
 * // returns ~15.58
 */
 double stdlib_base_dists_levy_quantile( const double p, const double mu, const double c ) {

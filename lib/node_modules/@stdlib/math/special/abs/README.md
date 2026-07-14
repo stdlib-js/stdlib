@@ -45,15 +45,11 @@ var abs = require( '@stdlib/math/special/abs' );
 Computes the [absolute value][@stdlib/math/base/special/abs] for each element in an [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 var y = abs( x );
-// returns <ndarray>
-
-var arr = ndarray2array( y );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+// returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 ```
 
 The function accepts the following arguments:
@@ -69,7 +65,6 @@ The function accepts the following options:
 By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [data type][@stdlib/ndarray/dtypes] determined by the function's output data type [policy][@stdlib/ndarray/output-dtype-policies]. To override the default behavior, set the `dtype` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 var getDType = require( '@stdlib/ndarray/dtype' );
 
@@ -77,19 +72,15 @@ var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 var y = abs( x, {
     'dtype': 'generic'
 });
-// returns <ndarray>
+// returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 
 var dt = getDType( y );
 // returns 'generic'
-
-var arr = ndarray2array( y );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 ```
 
 By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having the same [order][@stdlib/ndarray/orders] as the input [ndarray][@stdlib/ndarray/ctor]. To return an [ndarray][@stdlib/ndarray/ctor] having a specific memory layout irrespective of the memory layout of the input [ndarray][@stdlib/ndarray/ctor], set the `order` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 var getOrder = require( '@stdlib/ndarray/order' );
 
@@ -97,13 +88,10 @@ var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 var y = abs( x, {
     'order': 'column-major'
 });
-// returns <ndarray>
+// returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 
 var ord = getOrder( y );
 // returns 'column-major'
-
-var arr = ndarray2array( y );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 ```
 
 #### abs.assign( x, y )
@@ -111,20 +99,16 @@ var arr = ndarray2array( y );
 Computes the [absolute value][@stdlib/math/base/special/abs] for each element in an [ndarray][@stdlib/ndarray/ctor] and assigns results to a provided output [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var array = require( '@stdlib/ndarray/array' );
 
 var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 var y = array( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );
 
 var out = abs.assign( x, y );
-// returns <ndarray>
+// returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 
 var bool = ( out === y );
 // returns true
-
-var arr = ndarray2array( out );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 ```
 
 The function accepts the following arguments:
@@ -135,7 +119,6 @@ The function accepts the following arguments:
 The function supports broadcasting an input [ndarray][@stdlib/ndarray/ctor] to the shape of the output [ndarray][@stdlib/ndarray/ctor] without performing a physical copy of the input [ndarray][@stdlib/ndarray/ctor]'s underlying data.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var zeros = require( '@stdlib/ndarray/zeros' );
 var array = require( '@stdlib/ndarray/array' );
 
@@ -146,10 +129,7 @@ var x = array( [ [ -1.0, -2.0 ], [ -3.0, -4.0 ] ] );
 var y = zeros( [ 2, 2, 2 ] );
 
 var out = abs.assign( x, y );
-// returns <ndarray>
-
-var arr = ndarray2array( out );
-// returns [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ], [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ]
+// returns <ndarray>[ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ], [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] ]
 ```
 
 </section>
