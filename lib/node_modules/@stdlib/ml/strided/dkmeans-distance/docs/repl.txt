@@ -1,0 +1,117 @@
+
+{{alias}}( N, metric, x, strideX, y, strideY )
+    Computes the distance between two double-precision floating-point strided
+    arrays according to a specified distance metric.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `NaN`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    metric: string
+        Distance metric.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    Returns
+    -------
+    out: number
+        Distance.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 2.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 1.0, 1.0, -4.0 ] );
+    > {{alias}}( x.length, 'sqeuclidean', x, 1, y, 1 )
+    45.0
+
+    // Using N and stride parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 2.0, -7.0, -2.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 2.0, 1.0, 2.0, 1.0, -2.0 ] );
+    > {{alias}}( 3, 'sqeuclidean', x, 2, y, 2 )
+    1.0
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 2.0, 1.0, 2.0, -2.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 8.0, -2.0, 3.0, -2.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 2, 'sqeuclidean', x1, 2, y1, 2 )
+    9.0
+
+
+{{alias}}.ndarray( N, metric, x, strideX, offsetX, y, strideY, offsetY )
+    Computes the distance between two double-precision floating-point strided
+    arrays according to a specified distance metric using alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    metric: string
+        Distance metric.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    Returns
+    -------
+    out: number
+        Distance.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, -4.0, 5.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 5.0, 12.0, -8.0, 15.0 ] );
+    > {{alias}}.ndarray( x.length, 'sqeuclidean', x, 1, 0, y, 1, 0 )
+    328.0
+
+    // Using offset parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ 2.0, 1.0,  2.0, -2.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 8.0, -2.0, 3.0, -2.0 ] );
+    > {{alias}}.ndarray( 2, 'sqeuclidean', x, 2, 1, y, 2, 1 )
+    9.0
+
+    See Also
+    --------
