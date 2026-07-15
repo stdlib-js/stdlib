@@ -28,6 +28,17 @@ function clbk( v: number ): number {
 	return v;
 }
 
+/**
+* Callback function.
+*
+* @param v - argument
+* @param indices - element indices
+* @returns result
+*/
+function clbki( v: number, indices: Array<number> ): number {
+	return v + indices[ 0 ];
+}
+
 
 // TESTS //
 
@@ -40,6 +51,7 @@ function clbk( v: number ): number {
 
 	map5d( arr, clbk ); // $ExpectType number[][][][][]
 	map5d( arr, clbk, {} ); // $ExpectType number[][][][][]
+	map5d( arr, clbki ); // $ExpectType number[][][][][]
 }
 
 // The compiler throws an error if the function is provided a first argument other than a five-dimensional nested array...

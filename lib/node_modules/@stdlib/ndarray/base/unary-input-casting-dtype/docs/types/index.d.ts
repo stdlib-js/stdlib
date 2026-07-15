@@ -31,12 +31,12 @@ import { DataType, InputCastingPolicy } from '@stdlib/types/ndarray';
 * @returns input ndarray casting data type
 *
 * @example
-* var dt = outputDataType( 'float64', 'float64', 'none' );
+* var dt = inputCastingDataType( 'float64', 'float64', 'none' );
 * // returns <string>
 */
-declare function outputDataType( idtype: DataType, odtype: DataType, policy: InputCastingPolicy | DataType ): DataType;
+declare function inputCastingDataType( idtype: DataType, odtype: DataType, policy: InputCastingPolicy | DataType ): DataType;
 
 
 // EXPORTS //
 
-export = outputDataType;
+export = inputCastingDataType;

@@ -248,7 +248,7 @@ TODO
 
 [lapack]: https://www.netlib.org/lapack/explore-html/
 
-[lapack-iladlc]: https://www.netlib.org/lapack/explore-html-3.6.1/d7/d43/group__aux_o_t_h_e_rauxiliary_gab8b3783390380038c9d26de61d7aefb4.html
+[lapack-iladlc]: https://www.netlib.org/lapack/explore-html/dc/df6/group__ilalc_gad8c407910f229795fe7a074b98be9338.html
 
 [mdn-float64array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array
 

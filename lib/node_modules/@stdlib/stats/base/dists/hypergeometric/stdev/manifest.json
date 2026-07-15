@@ -39,7 +39,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/napi/ternary",
-        "@stdlib/math/base/special/sqrt"
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/stats/base/dists/hypergeometric/variance"
       ]
     },
     {
@@ -55,6 +56,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/special/sqrt",
+        "@stdlib/stats/base/dists/hypergeometric/variance",
         "@stdlib/math/base/special/ceil"
       ]
     },
@@ -71,6 +73,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/special/sqrt",
+        "@stdlib/stats/base/dists/hypergeometric/variance",
         "@stdlib/math/base/special/ceil"
       ]
     }
