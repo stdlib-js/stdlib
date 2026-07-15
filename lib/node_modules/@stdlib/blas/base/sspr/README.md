@@ -225,7 +225,7 @@ Performs the symmetric rank 1 operation `A = α*x*x^T + A` where `α` is a scala
 float AP[] = { 1.0f, 2.0f, 3.0f, 1.0f, 2.0f, 1.0f };
 const float x[] = { 1.0f, 2.0f, 3.0f };
 
-c_sspr_ndarray( CblasColMajor, CblasUpper, 3, 1.0f, x, 1, AP, 1, 0 );
+c_sspr_ndarray( CblasColMajor, CblasUpper, 3, 1.0f, x, 1, 0, AP, 1, 0 );
 ```
 
 The function accepts the following arguments:

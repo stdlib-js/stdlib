@@ -1,0 +1,60 @@
+
+{{alias}}( N, workspace, strideW, offsetW )
+    Initializes a workspace array for performing a quarter-wave sine transform.
+
+    The workspace array is divided into four sections:
+
+    1. cosine table: the section ranges from indices 0 to N-1 and is used to
+    store a table of precomputed cosine coefficients used by quarter-wave sine
+    transforms.
+
+    2. scratch/workspace: the section ranges from indices N to 2N-1 and is used
+    while performing transforms. This section is not updated during
+    initialization.
+
+    3. twiddle factors: the section ranges from indices 2N to 3N-1 and stores a
+    table of reusable complex exponential constants as cosine/sine pairs.
+
+    4. radix factor table: the section starts at index 3N and stores the
+    sequence length N, the number of factors into which N was decomposed, and
+    the individual integer radix factors.
+
+    Any remaining array space remains as unused storage.
+
+    Parameters
+    ----------
+    N: integer
+        Length of the sequence.
+
+    workspace: ArrayLikeObject<number>
+        Workspace array.
+
+    strideW: integer
+        Stride length for `workspace`.
+
+    offsetW: integer
+        Starting index for `workspace`.
+
+    Returns
+    -------
+    out: ArrayLikeObject<number>
+        Workspace array.
+
+    Examples
+    --------
+    > var N = 8;
+    > var workspace = new {{alias:@stdlib/array/float64}}( ( 3*N ) + 34 );
+    > var out = {{alias}}( N, workspace, 1, 0 )
+    <Float64Array>
+    > var bool = ( out === workspace )
+    true
+    > var cosineTable = workspace.slice( 0, N )
+    <Float64Array>[ ~0.98, ~0.92, ~0.83, ~0.7, ~0.56, ~0.38, ~0.2, ~0.0 ]
+    > var twiddleFactors = workspace.slice( 2*N, 3*N )
+    <Float64Array>[ 0, ~0.707, ~0.707, 0, 0, 0, 0, 0 ]
+    > var factors = workspace.slice( 3*N, ( 3*N ) + 4 )
+    <Float64Array>[ 8, 2, 2, 4 ]
+
+    See Also
+    --------
+
