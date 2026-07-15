@@ -235,7 +235,7 @@ CBLAS_INT stdlib_strided_sfirst_index_equal( const CBLAS_INT N, const float *X, 
 
 #### stdlib_strided_sfirst_index_equal_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
 
-<!-- lint disable maximum-heading-length -->
+<!-- lint enable maximum-heading-length -->
 
 Returns the index of the first element in a single-precision floating-point strided array equal to a corresponding element in another single-precision floating-point strided array using alternative indexing semantics.
 
