@@ -21,7 +21,7 @@
 /**
 * Interface defining `isWellFormedString` with methods for testing for primitives and objects, respectively.
 */
-interface isWellFormedString {
+interface IsWellFormedString {
 	/**
 	* Tests if a string is well-formed.
 	*
@@ -125,7 +125,7 @@ interface isWellFormedString {
 * var bool = isWellFormedString( null );
 * // returns false
 */
-declare var isWellFormedString: isWellFormedString;
+declare var isWellFormedString: IsWellFormedString;
 
 
 // EXPORTS //

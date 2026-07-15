@@ -31,7 +31,7 @@ static const double ssml = 4.4989137945431964E+161;
 static const double sbig = 1.1113793747425387E-162;
 
 /**
-* Computes the L2-norm of a complex double-precision floating-point vector using alternative indexing semantics.
+* Computes the L2-norm of a double-precision complex floating-point vector using alternative indexing semantics.
 *
 * @param N         number of indexed elements
 * @param X         input array
