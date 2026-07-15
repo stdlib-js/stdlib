@@ -25,15 +25,15 @@
 * @returns boolean indicating whether a value is a string in kebab case
 *
 * @example
-* var bool = isKebabcase( `beep-boop` );
+* var bool = isKebabcase( 'beep-boop' );
 * // returns true
 *
 * @example
-* var bool = isKebabcase( `Beep-boop` );
+* var bool = isKebabcase( 'Beep-boop' );
 * // returns false
 *
 * @example
-* var bool = isKebabcase( `BEEP_BOOP` );
+* var bool = isKebabcase( 'BEEP_BOOP' );
 * // returns false
 *
 * @example

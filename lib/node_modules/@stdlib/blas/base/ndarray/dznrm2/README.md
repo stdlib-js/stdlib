@@ -33,7 +33,7 @@ The [L2-norm][l2-norm] is defined as
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\|\mathbf{x}\|_2 = \sqrt{x_0^2 + x_1^2 + \ldots + x_{N-1}^2}" data-equation="eq:l2_norm">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@f766d7eeb56ff14cbceeeeef03d7f7b88c467515/lib/node_modules/@stdlib/blas/base/dznrm2/docs/img/equation_l2_norm.svg" alt="L2-norm definition.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@f766d7eeb56ff14cbceeeeef03d7f7b88c467515/lib/node_modules/@stdlib/blas/base/ndarray/dznrm2/docs/img/equation_l2_norm.svg" alt="L2-norm definition.">
     <br>
 </div> -->
 
