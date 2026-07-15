@@ -41,7 +41,7 @@
 */
 void API_SUFFIX(stdlib_strided_dsorthp)( const CBLAS_INT N, const double order, double *X, const CBLAS_INT strideX) {
 	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
-	return API_SUFFIX(stdlib_strided_dsorthp_ndarray)( N, order, X, strideX, ox );
+	API_SUFFIX(stdlib_strided_dsorthp_ndarray)( N, order, X, strideX, ox );
 }
 
 /**

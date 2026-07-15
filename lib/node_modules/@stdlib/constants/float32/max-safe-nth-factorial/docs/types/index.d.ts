@@ -23,7 +23,7 @@
 *
 * @example
 * var max = FLOAT32_MAX_SAFE_NTH_FACTORIAL;
-* // returns 34
+* // returns 10
 */
 declare const FLOAT32_MAX_SAFE_NTH_FACTORIAL: number;
 

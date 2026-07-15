@@ -96,15 +96,16 @@ var y = erfcinv( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var erfcinv = require( '@stdlib/math/base/special/erfcinv' );
 
-var x = linspace( 0.0, 2.0, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, 0.0, 2.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( 'x: %d, erfcinv(x): %d', x[ i ], erfcinv( x[ i ] ) );
-}
+logEachMap( 'x: %0.4f, erfcinv(x): %0.4f', x, erfcinv );
 ```
 
 </section>

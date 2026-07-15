@@ -18,6 +18,10 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { DataType } from '@stdlib/types/ndarray';
+
 /**
 * Returns a boolean indicating if a provided ndarray data type can be safely cast to, or is of the same "kind" as, another ndarray data type.
 *
@@ -32,7 +36,7 @@
 * bool = isSameKindCast( 'uint16', 'int16' );
 * // returns false
 */
-declare function isSameKindCast( from: string, to: string ): boolean;
+declare function isSameKindCast( from: DataType, to: DataType ): boolean;
 
 
 // EXPORTS //

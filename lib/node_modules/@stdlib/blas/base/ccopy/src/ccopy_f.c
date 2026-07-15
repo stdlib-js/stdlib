@@ -23,7 +23,7 @@
 #include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
-* Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.
+* Copies values from one single-precision complex floating-point vector to another single-precision complex floating-point vector.
 *
 * @param N        number of indexed elements
 * @param X        input array
@@ -36,7 +36,7 @@ void API_SUFFIX(c_ccopy)( const CBLAS_INT N, const void *X, const CBLAS_INT stri
 }
 
 /**
-* Copies values from one complex single-precision floating-point vector to another complex single-precision floating-point vector using alternative indexing semantics.
+* Copies values from one single-precision complex floating-point vector to another single-precision complex floating-point vector using alternative indexing semantics.
 *
 * @param N        number of indexed elements
 * @param X        input array

@@ -83,16 +83,16 @@ v = expit( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var expit = require( '@stdlib/math/base/special/expit' );
 
-var x;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, 0.0, 1.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = randu();
-    console.log( 'expit(%d) = %d', x, expit( x ) );
-}
+logEachMap( 'expit(%0.4f) = %0.4f', x, expit );
 ```
 
 </section>
