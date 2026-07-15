@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/stats/base/dists/triangular/stdev.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/stats/base/dists/triangular/variance.h"
 
 /**
 * Returns the standard deviation of a triangular distribution.
@@ -33,13 +33,5 @@
 * // returns ~0.204
 */
 double stdlib_base_dists_triangular_stdev( const double a, const double b, const double c ) {
-	if (
-		stdlib_base_is_nan( a ) ||
-		stdlib_base_is_nan( b ) ||
-		stdlib_base_is_nan( c ) ||
-		!( a <= c && c <= b )
-	) {
-		return 0.0/0.0; // NaN
-	}
-	return stdlib_base_sqrt( ( ( a*a ) + ( b*b ) + ( c*c ) - ( a*b ) - ( a*c ) - ( b*c ) ) / 18.0 );
+	return stdlib_base_sqrt( stdlib_base_dists_triangular_variance( a, b, c ) );
 }

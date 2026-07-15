@@ -238,7 +238,7 @@ Computes the square root of the [residual sum of squares][wikipedia-residual-sum
 const double x[] = { 1.0, -2.0, 2.0 };
 const double y[] = { 1.0, 1.0, -4.0 };
 
-double v = stdlib_strided_drrss_ndarray( 3, x, 1, 0, 1, 0 );
+double v = stdlib_strided_drrss_ndarray( 3, x, 1, 0, y, 1, 0 );
 // returns ~6.7
 ```
 

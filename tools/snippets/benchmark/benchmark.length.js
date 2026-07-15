@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2025 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ function createBenchmark( len ) {
 
 	x = [];
 	for ( i = 0; i < len; i++ ) {
-		x.push( null ); // TODO: set values
+		x.push( null ); // TODO: manually set values, or potentially use a function from @stdlib/array/* or @stdlib/random/array/*
 	}
 	return benchmark;
 

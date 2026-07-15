@@ -149,7 +149,7 @@ eslint.rules[ 'no-unused-vars' ] = 'off';
 *
 * @private
 */
-eslint.rules[ 'node/no-unpublished-require' ] = 'off';
+eslint.rules[ 'n/no-unpublished-require' ] = 'off';
 
 
 // EXPORTS //
