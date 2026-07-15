@@ -119,6 +119,8 @@ jobs:
 
       # Lint file names:
       - name: 'Lint file names'
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -127,13 +129,15 @@ jobs:
           lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
 
           # Lint filenames:
-          echo "${{ steps.changed-files.outputs.files }}" || "${lint_filenames}"
+          echo "$FILES" || "${lint_filenames}"
 
       # Lint files against EditorConfig:
       - name: 'Lint against EditorConfig'
         if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          make lint-editorconfig-files EDITORCONFIG_FORMAT=github-actions FILES="${{ steps.changed-files.outputs.files }}"
+          make lint-editorconfig-files EDITORCONFIG_FORMAT=github-actions FILES="$FILES"
 
       # Save cache after editorconfig-checker binary has been downloaded:
       - name: 'Save cache after editorconfig-checker binary has been downloaded'
@@ -146,8 +150,10 @@ jobs:
       # Lint Markdown files:
       - name: 'Lint Markdown files'
         if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '\.md$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep '\.md$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
             # Partition Markdown files by scope to match remark configs:
             pkg_readme_files=$(echo "${files}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib/.*/README\.md$' | tr '\n' ' ' | sed 's/ $//' || true)
@@ -170,8 +176,10 @@ jobs:
       # Lint shell script files:
       - name: 'Lint shell script files'
         if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep -vE '\.(js|md|json|ts|c|h)$' | while read -r file; do head -n1 "$file" | grep -q '^\#\!/usr/bin/env bash' && echo "$file"; done | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             # Install shellcheck:
             make install-deps-shellcheck
@@ -183,12 +191,16 @@ jobs:
       # Lint package.json files:
       - name: 'Lint package.json files'
         if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_package_json_files" "${{ steps.changed-files.outputs.files }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_package_json_files" "$FILES"
 
       # Lint REPL help files...
       - name: 'Lint REPL help files'
         if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -196,7 +208,7 @@ jobs:
           # Define the path to a utility for linting REPL help files:
           lint_repl_help="${root}/lib/node_modules/@stdlib/_tools/lint/repl-txt/bin/cli"
 
-          files=$(echo ${{ steps.changed-files.outputs.files }} | tr ' ' '\n' | grep 'repl\.txt$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep 'repl\.txt$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "${files}" ]; then
             printf "${files}" | "${lint_repl_help}" --split=" "
           fi
@@ -204,6 +216,8 @@ jobs:
       # Lint JavaScript files:
       - name: 'Lint JavaScript files'
         if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -218,7 +232,7 @@ jobs:
           eslint_benchmarks_conf="${root}/etc/eslint/.eslintrc.benchmarks.js"
 
           # Lint JavaScript source files:
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep '\.js$' | grep -v -e '/examples' -e '/test' -e '/benchmark' -e '^dist/' | tr '\n' ' ' | sed 's/ $//')
 
           # Build native addons if present:
           packages=$(echo "${files}" | tr ' ' '\n' | sed 's/^lib\/node_modules\///g' | sed 's/\/lib\/.*//g' | sort | uniq)
@@ -233,25 +247,25 @@ jobs:
           fi
 
           # Lint JavaScript command-line interfaces...
-          file=$(echo ${{ steps.changed-files.outputs.files }} | tr ' ' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ' | sed 's/ $//')
+          file=$(echo "$FILES" | tr ' ' '\n' | grep '\.js$' | grep -E '/bin/cli$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${file}" ]]; then
             make lint-javascript-files FILES="${file}"
           fi
 
           # Lint JavaScript example files:
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep '/examples/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_examples_conf}"
           fi
 
           # Lint JavaScript test files:
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep '/test/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_tests_conf}"
           fi
 
           # Lint JavaScript benchmark files:
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep '/benchmark/.*\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-javascript-files FILES="${files}" ESLINT_CONF="${eslint_benchmarks_conf}"
           fi
@@ -259,8 +273,10 @@ jobs:
       # Lint Python files:
       - name: 'Lint Python files'
         if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.py$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep -E '\.py$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             # Install Python dependencies:
             make install-deps-python
@@ -273,8 +289,10 @@ jobs:
       - name: 'Check for R files'
         if: success() || failure()
         id: check-r-files
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.R$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep -E '\.R$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             # Add space-separated list of R files to output:
             echo "files=${files}" >> $GITHUB_OUTPUT
@@ -294,16 +312,20 @@ jobs:
       # Lint R files:
       - name: 'Lint R files'
         if: ( success() || failure() ) && steps.check-r-files.outputs.files != ''
+        env:
+          R_FILES: ${{ steps.check-r-files.outputs.files }}
         run: |
           # Install R dependencies:
           make install-deps-r
 
           # Lint R files:
-          make lint-r-files FILES="${{ steps.check-r-files.outputs.files }}"
+          make lint-r-files FILES="$R_FILES"
 
       # Lint C files:
       - name: 'Lint C files'
         if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -318,31 +340,31 @@ jobs:
           cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
           # Install cppcheck if C files have changed:
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$|\.h$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep -E '\.c$|\.h$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make install-deps-cppcheck
           fi
 
           # Lint C source files...
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep -E '\.c$' | grep -v -e '/examples' -e '/test' -e '/benchmark' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}"
           fi
 
           # Lint C example files...
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/examples/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep '/examples/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_examples_suppressions_list}"
           fi
 
           # Lint C test fixtures files...
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/test/fixtures/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep '/test/fixtures/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_tests_fixtures_suppressions_list}"
           fi
 
           # Lint C benchmark files...
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep '/benchmark/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep '/benchmark/.*\.c$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-c-files FILES="${files}" CPPCHECK_SUPPRESSIONS_LIST="${cppcheck_benchmarks_suppressions_list}"
           fi
@@ -350,8 +372,10 @@ jobs:
       # Lint TypeScript declarations files:
       - name: 'Lint TypeScript declarations files'
         if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep -E '\.d\.ts$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-typescript-declarations-files FILES="${files}"
           fi
@@ -359,6 +383,8 @@ jobs:
       # Lint TypeScript declarations test files:
       - name: 'Lint TypeScript declarations test files'
         if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -367,7 +393,7 @@ jobs:
           eslint_typescript_tests_conf="${root}/etc/eslint/.eslintrc.typescript.tests.js"
 
           # Get changed files:
-          changed_files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n')
+          changed_files=$(echo "$FILES" | tr ' ' '\n')
 
           # Get directly changed `test.ts` files:
           files=$(echo "${changed_files}" | grep '/docs/types/test\.ts$' | tr '\n' ' ' | sed 's/ $//')
@@ -396,8 +422,10 @@ jobs:
       # Lint license headers:
       - name: 'Lint license headers'
         if: success() || failure()
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -v '\.github/workflows/.*\.md$' | grep -v '\.lock\.yml$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep -v '\.github/workflows/.*\.md$' | grep -v '\.lock\.yml$' | tr '\n' ' ' | sed 's/ $//')
           if [[ -n "${files}" ]]; then
             make lint-license-headers-files FILES="${files}"
           fi

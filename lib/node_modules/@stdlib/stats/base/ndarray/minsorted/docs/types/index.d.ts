@@ -42,7 +42,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var v = minsorted( [ x ] );
 * // returns 1.0
 */
-declare function minsorted<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T ] ): number;
+declare function minsorted( arrays: [ typedndarray<number> ] ): number;
 
 
 // EXPORTS //

@@ -29,7 +29,7 @@ type accumulator = ( x?: number ) => number | null;
 /**
 * Returns an accumulator function which incrementally computes an unbiased sample variance, ignoring `NaN` values.
 *
-* @param mu - known mean
+* @param mean - known mean
 * @returns accumulator function
 *
 * @example
@@ -50,7 +50,7 @@ type accumulator = ( x?: number ) => number | null;
 * s2 = accumulator();
 * // returns 24.5
 */
-declare function incrnanvariance( mu?: number ): accumulator;
+declare function incrnanvariance( mean?: number ): accumulator;
 
 
 // EXPORTS //

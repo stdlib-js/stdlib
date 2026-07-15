@@ -59,8 +59,8 @@ The function has the following parameters:
 -   **prepend**: a [`Float64Array`][@stdlib/array/float64] containing values to prepend after computing differences.
 -   **strideP**: stride length for `prepend`.
 -   **N2**: number of indexed elements to `append`.
--   **append**: a [`Float64Array`][@stdlib/array/float64] containing values to append after computing differences..
--   **strideA**: strides length for `append`.
+-   **append**: a [`Float64Array`][@stdlib/array/float64] containing values to append after computing differences.
+-   **strideA**: stride length for `append`.
 -   **out**: output [`Float64Array`][@stdlib/array/float64]. Must have `N + N1 + N2 - 1` indexed elements.
 -   **strideOut**: stride length for `out`.
 
@@ -241,7 +241,7 @@ The function accepts the following arguments:
 -   **strideP**: `[in] CBLAS_INT` stride length for `Prepend`.
 -   **N2**: `[in] CBLAS_INT` number of indexed elements to append.
 -   **Append**: `[in] double` a [`Float64Array`][@stdlib/array/float64] containing values to append after computing differences.
--   **strideA**: `[in] CBLAS_INT` strides length for `Append`.
+-   **strideA**: `[in] CBLAS_INT` stride length for `Append`.
 -   **Out**: `[out] double` output [`Float64Array`][@stdlib/array/float64]. Must have `N + N1 + N2 - 1` indexed elements.
 -   **strideOut**: `[in] CBLAS_INT` stride length for `Out`.
 
@@ -263,7 +263,7 @@ const double p[] = { 1.0 };
 const double a[] = { 11.0 };
 double out[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
-stdlib_strided_dediff_ndarray( 5, 1, x, 1, 0, 1, p, 1, 0, 1, a, 1, 0, out, 1, 0 );
+stdlib_strided_dediff_ndarray( 5, x, 1, 0, 1, p, 1, 0, 1, a, 1, 0, out, 1, 0 );
 ```
 
 The function accepts the following arguments:
@@ -278,7 +278,7 @@ The function accepts the following arguments:
 -   **offsetP**: `[in] CBLAS_INT` starting index for `Prepend`.
 -   **N2**: `[in] CBLAS_INT` number of indexed elements to append.
 -   **Append**: `[in] double` a [`Float64Array`][@stdlib/array/float64] containing values to append after computing differences.
--   **strideA**: `[in] CBLAS_INT` strides length for `Append`.
+-   **strideA**: `[in] CBLAS_INT` stride length for `Append`.
 -   **offsetA**: `[in] CBLAS_INT` starting index for `Append`.
 -   **Out**: `[out] double` output [`Float64Array`][@stdlib/array/float64]. Must have `N + N1 + N2 - 1` indexed elements.
 -   **strideOut**: `[in] CBLAS_INT` stride length for `Out`.

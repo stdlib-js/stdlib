@@ -82,7 +82,7 @@ interface Routine {
 	* dediff.ndarray( x.length, x, 1, 0, 1, p, 1, 0, 1, a, 1, 0, out, 1, 0 );
 	* // out => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0, 22.0 ]
 	*/
-	ndarray	( N: number, x: Float64Array, strideX: number, offsetX: number, N1: number, prepend: Float64Array, strideP: number, offsetP: number, N2: number, append: Float64Array, strideA: number, offsetA: number, out: Float64Array, strideOut: number, offsetOut: number ): Float64Array;
+	ndarray( N: number, x: Float64Array, strideX: number, offsetX: number, N1: number, prepend: Float64Array, strideP: number, offsetP: number, N2: number, append: Float64Array, strideA: number, offsetA: number, out: Float64Array, strideOut: number, offsetOut: number ): Float64Array;
 }
 
 /**
