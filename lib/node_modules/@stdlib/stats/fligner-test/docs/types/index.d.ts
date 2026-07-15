@@ -99,7 +99,7 @@ interface Results {
 *     'b', 'b', 'b', 'b',
 *     'c', 'c', 'c', 'c', 'c'
 * ];
-* varout = flignerTest( arr, {
+* var out = flignerTest( arr, {
 *     'groups': groups
 * });
 * // returns {...}

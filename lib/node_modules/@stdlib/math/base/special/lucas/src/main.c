@@ -17,7 +17,10 @@
 */
 
 #include "stdlib/math/base/special/lucas.h"
+#include "stdlib/math/base/assert/is_nonnegative_integer.h"
 #include "stdlib/constants/float64/max_safe_nth_lucas.h"
+#include <stdint.h>
+#include <stdlib.h>
 
 static const int64_t lucas_value[ 77 ] = {
 	2,
@@ -106,16 +109,16 @@ static const int64_t lucas_value[ 77 ] = {
 * @return      output value
 *
 * @example
-* double out = stdlib_base_lucas( 1 );
-* // returns 1
+* double out = stdlib_base_lucas( 1.0 );
+* // returns 1.0
 *
 * @example
-* double out = stdlib_base_lucas( -1 );
+* double out = stdlib_base_lucas( -1.0 );
 * // returns NaN
 */
-double stdlib_base_lucas( const int32_t n ) {
-	if ( n < 0 || n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_LUCAS ) {
+double stdlib_base_lucas( const double n ) {
+	if ( !stdlib_base_is_nonnegative_integer( n ) || n > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_LUCAS ) {
 		return 0.0 / 0.0; // NaN
 	}
-	return lucas_value[ n ];
+	return lucas_value[ (size_t)n ];
 }

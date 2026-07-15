@@ -17,8 +17,11 @@
 */
 
 #include "stdlib/math/base/special/negalucas.h"
-#include "stdlib/math/base/special/labs.h"
+#include "stdlib/math/base/assert/is_integer.h"
+#include "stdlib/math/base/special/abs.h"
 #include "stdlib/constants/float64/max_safe_nth_lucas.h"
+#include <stdint.h>
+#include <stdlib.h>
 
 static const int64_t negalucas_value[ 77 ] = {
 	2,
@@ -107,17 +110,17 @@ static const int64_t negalucas_value[ 77 ] = {
 * @return      output value
 *
 * @example
-* double out = stdlib_base_negalucas( -1 );
-* // returns -1
+* double out = stdlib_base_negalucas( -1.0 );
+* // returns -1.0
 *
 * @example
-* double out = stdlib_base_negalucas( 1 );
+* double out = stdlib_base_negalucas( 1.0 );
 * // returns NaN
 */
-double stdlib_base_negalucas( const int32_t n ) {
-	int32_t an = stdlib_base_labs( n );
-	if ( n > 0 || an > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_LUCAS ) {
+double stdlib_base_negalucas( const double n ) {
+	double an = stdlib_base_abs( n );
+	if ( !stdlib_base_is_integer( n ) || n > 0.0 || an > STDLIB_CONSTANT_FLOAT64_MAX_SAFE_NTH_LUCAS ) {
 		return 0.0 / 0.0; // NaN
 	}
-	return negalucas_value[ an ];
+	return negalucas_value[ (size_t)an ];
 }

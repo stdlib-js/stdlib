@@ -1,11 +1,11 @@
 
 {{alias}}()
-    Returns a list of familiar English words.
+    Returns a list of familiar American-English words.
 
     Returns
     -------
     out: Array<string>
-        List of familiar English words.
+        List of familiar American-English words.
 
     Examples
     --------

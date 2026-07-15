@@ -27,7 +27,6 @@
 #define NAME "normal-mgf"
 #define ITERATIONS 1000000
 #define REPEATS 3
-#define LEN 100
 
 /**
 * Prints the TAP version.
@@ -94,15 +93,15 @@ static double random_uniform( const double min, const double max ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
-	double sigma[ LEN ];
-	double mu[ LEN ];
-	double t[ LEN ];
+	double sigma[ 100 ];
+	double mu[ 100 ];
+	double t[ 100 ];
 	double elapsed;
 	double tc;
 	double y;
 	int i;
 
-	for ( i = 0; i < LEN; i++ ) {
+	for ( i = 0; i < 100; i++ ) {
 		t[ i ] = random_uniform( -100.0, 100.0 );
 		mu[ i ] = random_uniform( -50.0, 50.0 );
 		sigma[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
@@ -110,7 +109,7 @@ static double benchmark( void ) {
 
 	tc = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = stdlib_base_dists_normal_mgf( t[ i%LEN ], mu[ i%LEN ], sigma[ i%LEN ] );
+		y = stdlib_base_dists_normal_mgf( t[ i%100 ], mu[ i%100 ], sigma[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

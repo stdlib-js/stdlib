@@ -103,7 +103,7 @@ declare class UnaryFunction<T, U> {
 	* var y = abs.apply( x );
 	* // returns [ 1.0, 2.0, 3.0 ]
 	*/
-	apply( x: InputArray<T>, options?: Options ): OutputArray<U>;
+	apply( x: InputArray<T>, options?: Options ): OutputArray<U>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output array data type is dependent on how `x` interacts with output data type policy and whether that policy has been overridden by `options.dtype`. In principle, as well, based on the policy, it is possible to know more exactly which `InputArray` types are actually allowed.
 
 	/**
 	* Applies a unary function to each element in a provided input array and assigns results to a provided output array.
@@ -131,7 +131,7 @@ declare class UnaryFunction<T, U> {
 	* var bool = ( out === y );
 	* // returns true
 	*/
-	assign( x: InputArray<T>, out: OutputArray<U> ): OutputArray<U>;
+	assign<V extends OutputArray<U> = OutputArray<U>>( x: InputArray<T>, out: V ): V;
 }
 
 /**

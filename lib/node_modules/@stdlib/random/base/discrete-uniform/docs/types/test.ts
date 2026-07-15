@@ -151,14 +151,14 @@ import discreteUniform = require( './index' );
 	discreteUniform.factory( 0, 4, { 'prng': null } ); // $ExpectError
 	discreteUniform.factory( 0, 4, { 'prng': [] } ); // $ExpectError
 	discreteUniform.factory( 0, 4, { 'prng': {} } ); // $ExpectError
-	discreteUniform.factory( 0, 4, { 'prng': true ); // $ExpectError
+	discreteUniform.factory( 0, 4, { 'prng': true } ); // $ExpectError
 
 	discreteUniform.factory( { 'prng': 123 } ); // $ExpectError
 	discreteUniform.factory( { 'prng': 'abc' } ); // $ExpectError
 	discreteUniform.factory( { 'prng': null } ); // $ExpectError
 	discreteUniform.factory( { 'prng': [] } ); // $ExpectError
 	discreteUniform.factory( { 'prng': {} } ); // $ExpectError
-	discreteUniform.factory( { 'prng': true ); // $ExpectError
+	discreteUniform.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import discreteUniform = require( './index' );
 	discreteUniform.factory( 0, 4, { 'state': null } ); // $ExpectError
 	discreteUniform.factory( 0, 4, { 'state': [] } ); // $ExpectError
 	discreteUniform.factory( 0, 4, { 'state': {} } ); // $ExpectError
-	discreteUniform.factory( 0, 4, { 'state': true ); // $ExpectError
+	discreteUniform.factory( 0, 4, { 'state': true } ); // $ExpectError
 	discreteUniform.factory( 0, 4, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	discreteUniform.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import discreteUniform = require( './index' );
 	discreteUniform.factory( { 'state': null } ); // $ExpectError
 	discreteUniform.factory( { 'state': [] } ); // $ExpectError
 	discreteUniform.factory( { 'state': {} } ); // $ExpectError
-	discreteUniform.factory( { 'state': true ); // $ExpectError
+	discreteUniform.factory( { 'state': true } ); // $ExpectError
 	discreteUniform.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

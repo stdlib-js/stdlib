@@ -50,9 +50,11 @@ jobs:
 
   # Define a job for running changed benchmarks...
   process:
-
     # Define a display name:
     name: 'Run affected benchmarks'
+
+    # Only run this job if a pull request does not have a "ci: Skip" label:
+    if: "${{ github.event_name != 'pull_request' || !contains(github.event.pull_request.labels.*.name, 'ci: Skip') }}"
 
     # Define the type of virtual host machine:
     runs-on: ubuntu-latest
@@ -62,7 +64,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
 
           # Specify whether to remove untracked files before checking out the repository:
@@ -81,7 +83,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -89,7 +91,7 @@ jobs:
       # Cache dependencies:
       - name: 'Cache dependencies'
         # Pin action to full length commit SHA
-        uses: actions/cache@d4323d4df104b026a6aa633fdb11d772146be0bf # v4.2.2
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         id: cache
         with:
           path: |
@@ -136,17 +138,22 @@ jobs:
       - name: 'Get list of changed directories (from user input)'
         if: github.event_name == 'workflow_dispatch'
         id: changed-directories-user-input
+        env:
+          DIRECTORIES: ${{ github.event.inputs.directories }}
         run: |
-          echo "directories=${{ github.event.inputs.directories }}" >> $GITHUB_OUTPUT
+          echo "directories=${DIRECTORIES}" >> $GITHUB_OUTPUT
         timeout-minutes: 5
 
       # Run affected benchmarks:
       - name: 'Run affected benchmarks'
+        env:
+          DIRECTORIES_USER_INPUT: ${{ steps.changed-directories-user-input.outputs.directories }}
+          DIRECTORIES_CHANGED: ${{ steps.changed-directories.outputs.directories }}
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            directories="${{ steps.changed-directories-user-input.outputs.directories }}"
+            directories="$DIRECTORIES_USER_INPUT"
           else
-            directories="${{ steps.changed-directories.outputs.directories }}"
+            directories="$DIRECTORIES_CHANGED"
           fi
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_benchmarks" "$directories"
-        timeout-minutes: 30
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_benchmarks/run" "$directories"
+        timeout-minutes: 60
