@@ -1,0 +1,54 @@
+
+{{alias}}( arrays )
+    Performs one of the matrix-vector operations `y = alpha*A*x + beta*y`,
+    `y = alpha*A^T*x + beta*y`, or `y = alpha*A^H*x + beta*y`, where `alpha`
+    and `beta` are scalars, `x` and `y` are one-dimensional ndarrays, and `A`
+    is an `M` by `N` matrix.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a two-dimensional input ndarray corresponding to `A`.
+        - a one-dimensional input ndarray corresponding to `x`.
+        - a one-dimensional input/output ndarray corresponding to `y`.
+        - a zero-dimensional ndarray specifying whether `A` should be
+        transposed, conjugate-transposed, or not transposed.
+        - a zero-dimensional ndarray containing a scalar constant corresponding
+        to `alpha`.
+        - a zero-dimensional ndarray containing a scalar constant corresponding
+        to `beta`.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var abuf = [ [ 1.0, 2.0, 3.0, 4.0 ], [ 5.0, 6.0, 7.0, 8.0 ] ];
+    > var A = new {{alias:@stdlib/ndarray/matrix/complex64}}( abuf );
+
+    > var xbuf = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var x = new {{alias:@stdlib/ndarray/vector/complex64}}( xbuf );
+
+    > var ybuf = [ 1.0, 2.0, 3.0, 4.0 ];
+    > var y = new {{alias:@stdlib/ndarray/vector/complex64}}( ybuf );
+
+    > var opts = { 'dtype': 'complex64' };
+    > var ca = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 0.0 );
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( ca, opts );
+
+    > var cb = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, 0.0 );
+    > var beta = {{alias:@stdlib/ndarray/from-scalar}}( cb, opts );
+
+    > var trans = {{alias:@stdlib/ndarray/from-scalar}}( 'no-transpose' );
+
+    > {{alias}}( [ A, x, y, trans, alpha, beta ] );
+    > y
+    <ndarray>[ <Complex64>[ -9.0, 30.0 ], <Complex64>[ -15.0, 72.0 ] ]
+
+    See Also
+    --------
+

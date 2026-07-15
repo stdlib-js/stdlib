@@ -26,7 +26,7 @@
 * @return     output value
 *
 * @example
-* out = stdlib_base_acoth( 2.0 );
+* double out = stdlib_base_acoth( 2.0 );
 * // returns ~0.5493
 */
 double stdlib_base_acoth( const double x ) {

@@ -1,0 +1,32 @@
+
+{{alias}}( arrays )
+    Multiplies a one-dimensional ndarray by a scalar constant.
+
+    If provided an empty input ndarray, the function returns the input ndarray
+    unchanged.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input/output ndarray.
+        - a zero-dimensional ndarray containing a scalar constant.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 4.0, 2.0, -3.0, 5.0, -1.0 ], 'generic' );
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 5.0, { 'dtype': 'generic' } );
+
+    > {{alias}}( [ x, alpha ] );
+    > x
+    <ndarray>[ 20.0, 10.0, -15.0, 25.0, -5.0 ]
+
+    See Also
+    --------
+

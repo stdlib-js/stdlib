@@ -33,7 +33,7 @@ int main( void ) {
 
 	for ( i = 0; i < 10; i++ ) {
 		mu = random_uniform( -5.0, 5.0 );
-		sigma = random_uniform( 0.0, 20.0 );
+		sigma = random_uniform( 0.1, 20.0 );
 		y = stdlib_base_dists_normal_skewness( mu, sigma );
 		printf( "µ: %.4f, σ: %.4f, skew(X;µ,σ): %.4f\n", mu, sigma, y );
 	}
