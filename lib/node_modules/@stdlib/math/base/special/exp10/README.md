@@ -59,16 +59,16 @@ v = exp10( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var exp10 = require( '@stdlib/math/base/special/exp10' );
 
-var x;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -50.0, 50.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = (randu()*100.0) - 50.0;
-    console.log( '10^%d = %d', x, exp10( x ) );
-}
+logEachMap( '10^%0.4f = %0.4f', x, exp10 );
 ```
 
 </section>

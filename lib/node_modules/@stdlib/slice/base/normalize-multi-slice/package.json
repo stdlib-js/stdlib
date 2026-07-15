@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/slice/base/normalize-multislice",
+  "name": "@stdlib/slice/base/normalize-multi-slice",
   "version": "0.0.0",
   "description": "Normalize a MultiSlice object.",
   "license": "Apache-2.0",

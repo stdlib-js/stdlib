@@ -94,19 +94,17 @@ v = pow( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var pow = require( '@stdlib/math/base/special/pow' );
 
-var b;
-var x;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var b = discreteUniform( 100, 0, 10, opts );
+var x = discreteUniform( 100, -5, 5, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    b = round( randu()*10.0 );
-    x = round( randu()*10.0 ) - 5.0;
-    console.log( '%d^%d = %d', b, x, pow( b, x ) );
-}
+logEachMap( '%d^%d = %0.4f', b, x, pow );
 ```
 
 </section>
