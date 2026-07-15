@@ -29,7 +29,7 @@
 * @return    evaluated quantile function
 *
 * @example
-* var y = quantile( 0.5, 1.0, 1.0 );
+* double y = stdlib_base_dists_kumaraswamy_quantile( 0.5, 1.0, 1.0 );
 * // returns 0.5
 */
 double stdlib_base_dists_kumaraswamy_quantile( const double p, const double a, const double b ) {

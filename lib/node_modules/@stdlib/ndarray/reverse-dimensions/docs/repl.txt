@@ -1,0 +1,30 @@
+
+{{alias}}( x, dims )
+    Returns a read-only view of an input ndarray in which the order of elements
+    along specified dimensions is reversed.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    dims: ArrayLike<integer>
+        Indices of dimensions to reverse. If a dimension index is provided as an
+        integer less than zero, the dimension index is resolved relative to the
+        last dimension, with the last dimension corresponding to the value `-1`.
+
+    Returns
+    -------
+    out: ndarray
+        A read-only view of an input ndarray in which the order of elements
+        along specified dimensions is reversed.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] )
+    <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+    > var y = {{alias}}( x, [ 0, 1 ] )
+    <ndarray>[ [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
+
+    See Also
+    --------
