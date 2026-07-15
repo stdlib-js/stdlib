@@ -174,6 +174,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
+          # Fetch the branch first so that --force-with-lease in the subsequent push has a local tracking reference and can verify the remote state:
+          git fetch origin markdown-insert-equations 2>/dev/null || true
           gh api -X DELETE repos/stdlib-js/stdlib/git/refs/heads/markdown-insert-equations 2>/dev/null || true
         timeout-minutes: 5
 
