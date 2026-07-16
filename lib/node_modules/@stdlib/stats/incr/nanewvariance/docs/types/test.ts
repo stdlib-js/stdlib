@@ -16,38 +16,38 @@
 * limitations under the License.
 */
 
-import nanewvariance = require( './index' );
+import incrnanewvariance = require( './index' );
 
 
 // TESTS //
 
 // The function returns an accumulator function...
 {
-	nanewvariance( 0.5 ); // $ExpectType accumulator
+	incrnanewvariance( 0.5 ); // $ExpectType accumulator
 }
 
 // The compiler throws an error if the function is provided an argument that is not a number...
 {
-	nanewvariance( '5' ); // $ExpectError
-	nanewvariance( true ); // $ExpectError
-	nanewvariance( false ); // $ExpectError
-	nanewvariance( null ); // $ExpectError
-	nanewvariance( undefined ); // $ExpectError
-	nanewvariance( [] ); // $ExpectError
-	nanewvariance( {} ); // $ExpectError
-	nanewvariance( ( x: number ): number => x ); // $ExpectError
+	incrnanewvariance( '5' ); // $ExpectError
+	incrnanewvariance( true ); // $ExpectError
+	incrnanewvariance( false ); // $ExpectError
+	incrnanewvariance( null ); // $ExpectError
+	incrnanewvariance( undefined ); // $ExpectError
+	incrnanewvariance( [] ); // $ExpectError
+	incrnanewvariance( {} ); // $ExpectError
+	incrnanewvariance( ( x: number ): number => x ); // $ExpectError
 }
 
 // The function returns an accumulator function which returns an accumulated result...
 {
-	const acc = nanewvariance( 0.5 );
+	const acc = incrnanewvariance( 0.5 );
 	acc(); // $ExpectType number | null
 	acc( 3.14 ); // $ExpectType number | null
 }
 
 // The compiler throws an error if the returned accumulator function is provided invalid arguments...
 {
-	const acc = nanewvariance( 0.5 );
+	const acc = incrnanewvariance( 0.5 );
 	acc( '5' ); // $ExpectError
 	acc( true ); // $ExpectError
 	acc( false ); // $ExpectError
