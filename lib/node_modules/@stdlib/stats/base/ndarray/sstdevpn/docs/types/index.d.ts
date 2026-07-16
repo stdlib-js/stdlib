@@ -47,7 +47,7 @@ import { float32ndarray, typedndarray } from '@stdlib/types/ndarray';
 * var v = sstdevpn( [ x, correction ] );
 * // returns ~2.0817
 */
-declare function sstdevpn<T extends typedndarray<number> = typedndarray<number>>( arrays: [ float32ndarray, T ] ): number;
+declare function sstdevpn( arrays: [ float32ndarray, typedndarray<number> ] ): number;
 
 
 // EXPORTS //

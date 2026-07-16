@@ -22,6 +22,6 @@
 /**
 * Macro for one half times the natural logarithm of 2 as a single-precision floating-point number.
 */
-#define STDLIB_CONSTANT_FLOAT32_HALF_LN_TWO 0.3465735912322998
+#define STDLIB_CONSTANT_FLOAT32_HALF_LN_TWO 0.3465735912322998f
 
 #endif // !STDLIB_CONSTANTS_FLOAT32_HALF_LN_TWO_H
