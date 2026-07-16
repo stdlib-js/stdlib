@@ -23,7 +23,7 @@
 #include "stdlib/constants/float32/pi.h"
 
 /**
-* Computes the normalized cardinal sine of a single-precision floating-point number (in radians).
+* Computes the normalized cardinal sine of a single-precision floating-point number.
 *
 * ## Method
 *

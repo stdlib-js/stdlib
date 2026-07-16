@@ -28,11 +28,11 @@ import { NumericArray, Collection, AccessorArrayLike } from '@stdlib/types/array
 type InputArray = NumericArray | Collection<number> | AccessorArrayLike<number>;
 
 /**
-* Computes the midrange of an array according to a mask, ignoring `NaN` values.
+* Computes the mid-range of an array according to a mask, ignoring `NaN` values.
 *
 * @param x - input array
 * @param mask - mask array
-* @returns midrange
+* @returns mid-range
 *
 * @example
 * var x = [ 1.0, -2.0, 4.0, 2.0, NaN, NaN ];
