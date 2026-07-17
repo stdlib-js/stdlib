@@ -1,0 +1,106 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2026 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: create_todo_issue
+
+# Workflow triggers:
+on:
+  # Allow the workflow to be triggered by other workflows:
+  workflow_call:
+    # Define the input parameters for the workflow:
+    inputs:
+      source_type:
+        description: 'Source context type: ''pr'' (pull request comment) or ''commit'' (commit comment)'
+        required: true
+        type: string
+      source_ref:
+        description: 'Pull request number when source_type is ''pr''; commit SHA when source_type is ''commit'''
+        required: true
+        type: string
+      comment_body:
+        description: 'Body of the slash command comment'
+        required: true
+        type: string
+      user:
+        description: 'GitHub login of the commenter'
+        required: true
+        type: string
+
+    # Define the secrets accessible by the workflow:
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN:
+        description: 'stdlib-bot GitHub token with permission to create issues and comments'
+        required: true
+
+  # Allow the workflow to be manually triggered:
+  workflow_dispatch:
+    inputs:
+      source_type:
+        description: 'Source context type: ''pr'' (pull request comment) or ''commit'' (commit comment)'
+        required: true
+        type: string
+      source_ref:
+        description: 'Pull request number when source_type is ''pr''; commit SHA when source_type is ''commit'''
+        required: true
+        type: string
+      comment_body:
+        description: 'Body of the slash command comment'
+        required: true
+        type: string
+      user:
+        description: 'GitHub login of the commenter'
+        required: true
+        type: string
+
+# Workflow jobs:
+jobs:
+
+  # Define a job for creating a new todo issue:
+  create_todo_issue:
+
+    # Define a display name:
+    name: 'Create a new todo issue'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Define the job's steps:
+    steps:
+      # Checkout the repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # Ensure we have access to the scripts directory:
+          sparse-checkout: |
+              .github/workflows/scripts
+          sparse-checkout-cone-mode: false
+        timeout-minutes: 10
+
+      # Create a new todo issue:
+      - name: 'Create a new todo issue'
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+          COMMENT_BODY: ${{ inputs.comment_body }}
+          COMMENTER: ${{ inputs.user }}
+          SOURCE_TYPE: ${{ inputs.source_type }}
+          SOURCE_REF: ${{ inputs.source_ref }}
+        run: |
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/create_todo_issue/run"
+        timeout-minutes: 10

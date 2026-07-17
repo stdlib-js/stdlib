@@ -38,7 +38,7 @@
 *     -   `S@`, `i@`, and `d@x#` where `@` corresponds to the loop number, with `0` being the innermost loop.
 *
 * @example
-* STDLIB_NDARRAY_EVERY_ND_LOOP_PREMABLE {
+* STDLIB_NDARRAY_EVERY_ND_LOOP_PREAMBLE {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_EVERY_ND_LOOP_EPILOGUE
@@ -66,7 +66,7 @@
 * Macro containing the epilogue for nested loops which operate on elements of an n-dimensional ndarray.
 *
 * @example
-* STDLIB_NDARRAY_EVERY_ND_LOOP_PREMABLE {
+* STDLIB_NDARRAY_EVERY_ND_LOOP_PREAMBLE {
 *     // Innermost loop body...
 * }
 * STDLIB_NDARRAY_EVERY_ND_LOOP_EPILOGUE
