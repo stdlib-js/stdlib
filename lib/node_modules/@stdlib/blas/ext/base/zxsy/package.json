@@ -74,7 +74,7 @@
     "complex128",
     "complex128array",
     "float64",
-    "single"
+    "double"
   ],
   "__stdlib__": {
     "wasm": false
