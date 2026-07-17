@@ -72,7 +72,7 @@ The function accepts the following arguments:
 -   **x**: input value.
 -   **e**: insensitivity parameter.
 -   **y**: true target value.
--   **p**: predicted value. 
+-   **p**: predicted value.
 
 If any argument is `NaN`, the function returns `NaN`.
 
