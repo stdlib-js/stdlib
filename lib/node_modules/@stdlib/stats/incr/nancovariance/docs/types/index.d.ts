@@ -39,7 +39,7 @@ type accumulator = ( x?: number, y?: number ) => number | null;
 * @returns accumulator function
 *
 * @example
-* var acc = nancovariance();
+* var acc = incrnancovariance();
 *
 * var cov = acc();
 * // returns null
@@ -56,9 +56,9 @@ type accumulator = ( x?: number, y?: number ) => number | null;
 * cov = acc();
 * // returns 4.0
 */
-declare function nancovariance(): accumulator;
+declare function incrnancovariance(): accumulator;
 
 
 // EXPORTS //
 
-export = nancovariance;
+export = incrnancovariance;
