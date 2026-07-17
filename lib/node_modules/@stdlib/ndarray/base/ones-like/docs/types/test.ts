@@ -41,7 +41,7 @@ import onesLike = require( './index' );
 	onesLike( ones( 'generic', sh, ord ) ); // $ExpectType genericndarray<number>
 }
 
-// The compiler throws an error if the function is provided a first argument which is not an ndarray having a recognized/supported data type...
+// The compiler throws an error if the function is provided a first argument which is not an ndarray...
 {
 	onesLike( '10' ); // $ExpectError
 	onesLike( 10 ); // $ExpectError
