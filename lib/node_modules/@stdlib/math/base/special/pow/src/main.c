@@ -377,9 +377,11 @@ static double pow2( uint32_t j, const double hp, const double lp ) {
 * @param o2    destination for output2
 *
 * @example
+* double o1;
+* double o2;
 * logx( 9.0, &o1, &o2 );
 */
-void logx( const double ax, double *o1, double *o2 ) {
+static void logx( const double ax, double *o1, double *o2 ) {
 	double t2;
 	double t1;
 	double t;
@@ -408,9 +410,11 @@ void logx( const double ax, double *o1, double *o2 ) {
 * @param o2     destination for output2
 *
 * @example
+* double o1;
+* double o2;
 * log2ax( 9.0, 1075970048, &o1, &o2 );
 */
-void log2ax( const double ax, const int32_t ahx, double *o1, double *o2 ) {
+static void log2ax( const double ax, const int32_t ahx, double *o1, double *o2 ) {
 	uint32_t ahxcc;
 	uint32_t tmp;
 	int32_t ahxc;
