@@ -348,7 +348,7 @@ var fcns = special;
 -   <span class="signature">[`gamma( x )`][@stdlib/math/base/special/gamma]</span><span class="delimiter">: </span><span class="description">gamma function.</span>
 -   <span class="signature">[`gamma1pm1( x )`][@stdlib/math/base/special/gamma1pm1]</span><span class="delimiter">: </span><span class="description">compute `gamma(x+1) - 1`.</span>
 -   <span class="signature">[`gammainc( x, s[, regularized[, upper ]] )`][@stdlib/math/base/special/gammainc]</span><span class="delimiter">: </span><span class="description">incomplete gamma function.</span>
--   <span class="signature">[`gammaincinv( p, s[, upper ] )`][@stdlib/math/base/special/gammaincinv]</span><span class="delimiter">: </span><span class="description">inverse of incomplete gamma function.</span>
+-   <span class="signature">[`gammaincinv( p, a[, upper ] )`][@stdlib/math/base/special/gammaincinv]</span><span class="delimiter">: </span><span class="description">inverse of incomplete gamma function.</span>
 -   <span class="signature">[`gammaln( x )`][@stdlib/math/base/special/gammaln]</span><span class="delimiter">: </span><span class="description">natural logarithm of the gamma function.</span>
 -   <span class="signature">[`gammasgn( x )`][@stdlib/math/base/special/gammasgn]</span><span class="delimiter">: </span><span class="description">sign of the gamma function.</span>
 -   <span class="signature">[`gammasgnf( x )`][@stdlib/math/base/special/gammasgnf]</span><span class="delimiter">: </span><span class="description">sign of the gamma function for a single-precision floating-point number.</span>
