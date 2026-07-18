@@ -1,0 +1,29 @@
+
+{{alias}}( value )
+    Returns the enumeration constant associated with a supported SGD
+    classification loss function value.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `EPSILON_INSENSITIVE == 0`). Instead, the function should be
+    used in an opaque manner.
+
+    Parameters
+    ----------
+    value: any
+        Loss function value.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'epsilon-insensitive' )
+    <number>
+    > out = {{alias}}( {{alias:@stdlib/ml/base/sgd-classification/loss-function-str2enum}}( 'epsilon-insensitive' ) )
+    <number>
+
+    See Also
+    --------
+
