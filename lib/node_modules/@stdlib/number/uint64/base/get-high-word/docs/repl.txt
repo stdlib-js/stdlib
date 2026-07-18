@@ -11,7 +11,7 @@
     Returns
     -------
     out: integer
-        Higher order word (unsigned 32-bit integer).
+        Higher order word (32-bit unsigned integer).
 
     Examples
     --------

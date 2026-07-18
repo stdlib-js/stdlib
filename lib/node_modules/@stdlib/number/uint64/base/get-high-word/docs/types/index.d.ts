@@ -26,7 +26,7 @@ import { Uint64 } from '@stdlib/types/number';
 * Returns a 32-bit unsigned integer corresponding to the high 32-bit word of a 64-bit unsigned integer.
 *
 * @param x - input value
-* @returns higher order word (unsigned 32-bit integer)
+* @returns higher order word (32-bit unsigned integer)
 *
 * @example
 * var Uint64 = require( '@stdlib/number/uint64/ctor' );
