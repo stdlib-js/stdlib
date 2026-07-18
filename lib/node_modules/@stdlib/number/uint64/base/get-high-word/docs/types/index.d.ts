@@ -23,7 +23,7 @@
 import { Uint64 } from '@stdlib/types/number';
 
 /**
-* Returns an unsigned 32-bit integer corresponding to the high 32-bit word of a 64-bit unsigned integer.
+* Returns a 32-bit unsigned integer corresponding to the high 32-bit word of a 64-bit unsigned integer.
 *
 * @param x - input value
 * @returns higher order word (unsigned 32-bit integer)

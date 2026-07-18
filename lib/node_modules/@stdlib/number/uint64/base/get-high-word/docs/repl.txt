@@ -1,7 +1,7 @@
 
 {{alias}}( x )
-    Returns an unsigned 32-bit integer corresponding to the high 32-bit word of
-    a 64-bit unsigned integer.
+    Returns a 32-bit unsigned integer corresponding to the high 32-bit word of a
+    64-bit unsigned integer.
 
     Parameters
     ----------
