@@ -29,13 +29,13 @@ The [epsilon insensitive loss gradient][epsilon-insensitive-loss-gradient] is de
 <!-- <equation class="equation" label="eq:epsilon_insensitive_loss_gradient" align="center" raw="\frac{\partial \ell}{\partial w} =\begin{cases}-x & \text{if } y - p > \epsilon, \\x & \text{if } p - y > \epsilon, \\0 & \text{otherwise.}\end{cases}" alt="Equation for the epsilon insensitive loss gradient."> -->
 
 ```math
-\frac{\partial \ell}{\partial w} =
-\begin{cases}
--x & \text{if } y - p > \epsilon, \\
-x & \text{if } p - y > \epsilon, \\
-0 & \text{otherwise.}
-\end{cases}
+\frac{\partial \ell}{\partial w} =\begin{cases}-x & \text{if } y - p > \epsilon, \\x & \text{if } p - y > \epsilon, \\0 & \text{otherwise.}\end{cases}
 ```
+
+<!-- <div class="equation" align="center" data-raw-text="\frac{\partial \ell}{\partial w} =\begin{cases}-x &amp; \text{if } y - p &gt; \epsilon, \\x &amp; \text{if } p - y &gt; \epsilon, \\0 &amp; \text{otherwise.}\end{cases}" data-equation="eq:epsilon_insensitive_loss_gradient">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@01b5c399c14dd51bc91890dd5914d443f124bc1d/lib/node_modules/@stdlib/ml/base/loss/float64/epsilon-insensitive-gradient/docs/img/equation_epsilon_insensitive_loss_gradient.svg" alt="Equation for the epsilon insensitive loss gradient.">
+    <br>
+</div> -->
 
 <!-- </equation> -->
 
