@@ -131,7 +131,7 @@ eslint.rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'off';
 *
 * @private
 */
-eslint.rules[ 'stdlib/no-bench-string-concat' ] = 'warn';
+eslint.rules[ 'stdlib/no-bench-string-concat' ] = 'error';
 
 
 // EXPORTS //
