@@ -20,7 +20,7 @@ limitations under the License.
 
 # dsyr2
 
-> Performs the symmetric rank 2 operation `A = alpha*x*y^T + alpha*y*x^T + A`.
+> Perform the symmetric rank 2 operation `A = alpha*x*y^T + alpha*y*x^T + A`.
 
 <section class="intro">
 
