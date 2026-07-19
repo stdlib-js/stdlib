@@ -1997,6 +1997,7 @@
 "@stdlib/array/int32","@stdlib/array-int32"
 "@stdlib/ndarray/matrix/int32","@stdlib/ndarray-matrix-int32"
 "@stdlib/ndarray/vector/int32","@stdlib/ndarray-vector-int32"
+"@stdlib/number/int64/ctor","@stdlib/number-int64-ctor"
 "@stdlib/assert/is-big-endian","@stdlib/assert-is-big-endian"
 "@stdlib/assert/is-browser","@stdlib/assert-is-browser"
 "@stdlib/assert/is-darwin","@stdlib/assert-is-darwin"
