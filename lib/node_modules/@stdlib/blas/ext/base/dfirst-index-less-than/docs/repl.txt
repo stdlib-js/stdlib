@@ -1,0 +1,118 @@
+
+{{alias}}( N, x, strideX, y, strideY )
+    Returns the index of the first element in a double-precision floating-point
+    strided array which is less than a corresponding element in another double-
+    precision floating-point strided array.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `-1`.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    Returns
+    -------
+    idx: integer
+        Index.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 1.0, 0.0 ] );
+    > var idx = {{alias}}( x.length, x, 1, y, 1 )
+    2
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 0.0, 9.0, 0.0, 9.0, 9.0, 9.0 ] );
+    > idx = {{alias}}( 3, x, 2, y, 2 )
+    2
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y0 = new {{alias:@stdlib/array/float64}}( [ 9.0, 0.0, 9.0, 9.0 ] );
+    > var y1 = new {{alias:@stdlib/array/float64}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
+    > var idx = {{alias}}( 2, x1, 1, y1, 1 )
+    1
+
+
+{{alias}}( N, x, strideX, offsetX, y, strideY, offsetY )
+    Returns the index of the first element in a double-precision floating-point
+    strided array which is less than a corresponding element in another double-
+    precision floating-point strided array using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on
+    starting indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    y: Float64Array
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    Returns
+    -------
+    idx: integer
+        Index.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var y = new {{alias:@stdlib/array/float64}}( [ 0.0, 0.0, 1.0, 0.0 ] );
+    > var idx = {{alias}}.ndarray( x.length, x, 1, 0, y, 1, 0 )
+    2
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 0.0, 9.0, 0.0, 9.0, 9.0, 9.0 ] );
+    > idx = {{alias}}.ndarray( 3, x, 2, 0, y, 2, 0 )
+    2
+
+    // Using an index offset:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > y = new {{alias:@stdlib/array/float64}}( [ 9.0, 2.0, 9.0, 9.0 ] );
+    > idx = {{alias}}.ndarray( 2, x, 1, 1, y, 1, 1 )
+    1
+
+    See Also
+    --------
