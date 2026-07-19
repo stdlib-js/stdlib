@@ -232,9 +232,8 @@ The method accepts the following options:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
 var findIndex = require( '@stdlib/blas/ext/find-index' );
 
 // Define a callback function:
@@ -242,13 +241,10 @@ function isEven( v ) {
     return v % 2.0 === 0.0;
 }
 
-// Generate an array of random numbers:
-var xbuf = discreteUniform( 10, 0, 20, {
+// Generate an ndarray of random numbers:
+var x = discreteUniform( [ 5, 2 ], 0, 20, {
     'dtype': 'generic'
 });
-
-// Wrap in an ndarray:
-var x = new ndarray( 'generic', xbuf, [ 5, 2 ], [ 2, 1 ], 0, 'row-major' );
 console.log( ndarray2array( x ) );
 
 var opts = {

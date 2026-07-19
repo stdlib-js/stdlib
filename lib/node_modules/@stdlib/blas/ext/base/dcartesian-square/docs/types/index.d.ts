@@ -18,6 +18,10 @@
 
 // TypeScript Version: 4.1
 
+/// <reference types="@stdlib/types"/>
+
+import { Layout } from '@stdlib/types/blas';
+
 /**
 * Interface describing `dcartesianSquare`.
 */
@@ -46,7 +50,7 @@ interface Routine {
 	* dcartesianSquare( 'row-major', x.length, x, 1, out, 2 );
 	* // out => <Float64Array>[ 1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 2.0, 2.0 ]
 	*/
-	( order: string, N: number, x: Float64Array, strideX: number, out: Float64Array, LDO: number ): Float64Array;
+	( order: Layout, N: number, x: Float64Array, strideX: number, out: Float64Array, LDO: number ): Float64Array;
 
 	/**
 	* Computes the Cartesian square for a double-precision floating-point strided array using alternative indexing semantics.
