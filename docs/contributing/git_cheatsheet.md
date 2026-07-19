@@ -452,17 +452,18 @@ Assuming you've already cloned the repository and set up your identity:
 
     ```bash
     $ git checkout develop
-    $ git pull --ff-only upstream develop # Update local develop first
+    $ git pull upstream develop # Update local develop first
+    $ git push origin develop
     $ git checkout feature/is-even
-    $ git rebase develop # or git merge develop
+    $ git merge develop
     ```
 
-    Resolve any conflicts with the steps mentioned earlier, then continue the rebase:
+    Resolve any conflicts with the steps mentioned earlier, then continue the merge:
 
     <!-- run-disable -->
 
     ```bash
-    $ git rebase --continue
+    $ git merge --continue
     ```
 
     Finally, push your changes:
@@ -470,10 +471,10 @@ Assuming you've already cloned the repository and set up your identity:
     <!-- run-disable -->
 
     ```bash
-    $ git push --force # Force push after rebasing
+    $ git push origin feature/is-even
     ```
 
-    > **Note:** Force pushing is required after rebasing because it rewrites history. This is safe as long as you're the only one working on the branch. If you want to avoid force pushing, use merge instead of rebase.
+    > **Note:** When developing stdlib, we recommend using `merge` instead of `rebase` once a PR is open. Rebasing rewrites your branch history, which usually requires a force-push to update the remote branch. This can disrupt other contributors who are reviewing or collaborating on your PR. Since stdlib uses squash and merge for PRs, we don't require a clean, linear commit history. Merge commits are acceptable as long as your diff only contains relevant changes.
 
 8.  **Repeat**: After resolving conflicts and updating your branch, you can continue making changes, committing, and pushing until your PR is ready to be merged.
 
@@ -481,7 +482,7 @@ Assuming you've already cloned the repository and set up your identity:
 
 Congratulations! You now have all the essential Git commands to navigate your workflow smoothly while contributing to `stdlib`. Whether you're fixing a bug, adding a feature, or just getting started, this cheatsheet will help you stay organized and avoid common pitfalls. Keep practicing, stay curious, and enjoy the process. Happy coding!
 
-To get started with your first contribution, check out the [Contributing Guide][stdlib-contributing] and [Development Guide][stdlib-development]. If you have any further questions, feel free to join our [Gitter][stdlib-gitter] channel to connect with the community and get support.
+To get started with your first contribution, check out the [Contributing Guide][stdlib-contributing] and [Development Guide][stdlib-development]. If you have any further questions, feel free to join our [Zulip][stdlib-zulip] chat to connect with the community and get support.
 
 ## Other Links
 
@@ -494,7 +495,7 @@ To get started with your first contribution, check out the [Contributing Guide][
 
 [stdlib-development]: https://github.com/stdlib-js/stdlib/blob/develop/docs/contributing/development.md
 
-[stdlib-gitter]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [git]: http://git-scm.com/
 

@@ -54,7 +54,7 @@ interface Routine {
 	*
 	* var x = new Float32Array( [ 1.0, -2.0, 2.0 ] );
 	*
-	* var z = snrm2.ndarray( x.length, x, 1, - );
+	* var z = snrm2.ndarray( x.length, x, 1, 0 );
 	* // returns 3.0
 	*/
 	ndarray( N: number, x: Float32Array, stride: number, offset: number ): number;

@@ -56,18 +56,16 @@ r = deg2radf( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var deg2radf = require( '@stdlib/math/base/special/deg2radf' );
 
-var d;
-var r;
-var i;
+var opts = {
+    'dtype': 'float32'
+};
+var d = uniform( 100, -360.0, 360.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    d = (randu()*720.0) - 360.0;
-    r = deg2radf( d );
-    console.log( 'degrees: %d => radians: %d', d, r );
-}
+logEachMap( 'degrees: %0.4f => radians: %0.4f', d, deg2radf );
 ```
 
 </section>

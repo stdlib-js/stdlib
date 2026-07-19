@@ -45,7 +45,7 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/constants/float64/max",
         "@stdlib/constants/float64/pinf",
-        "@stdlib/constants/float64/max-safe-nth-factorial"
+        "@stdlib/constants/float64/max-nth-factorial"
       ]
     },
     {
@@ -67,7 +67,7 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/constants/float64/max",
         "@stdlib/constants/float64/pinf",
-        "@stdlib/constants/float64/max-safe-nth-factorial"
+        "@stdlib/constants/float64/max-nth-factorial"
       ]
     },
     {
@@ -89,7 +89,7 @@
         "@stdlib/math/base/special/abs",
         "@stdlib/constants/float64/max",
         "@stdlib/constants/float64/pinf",
-        "@stdlib/constants/float64/max-safe-nth-factorial"
+        "@stdlib/constants/float64/max-nth-factorial"
       ]
     }
   ]

@@ -45,7 +45,7 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-double",
         "@stdlib/napi/argv-strided-float64array",
-        "@stdlib/stats/base/dnanvariancepn",
+        "@stdlib/stats/strided/dnanvariancepn",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/napi/create-double"
       ]
@@ -65,7 +65,7 @@
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/stats/base/dnanvariancepn"
+        "@stdlib/stats/strided/dnanvariancepn"
       ]
     },
     {
@@ -83,7 +83,7 @@
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/stats/base/dnanvariancepn"
+        "@stdlib/stats/strided/dnanvariancepn"
       ]
     },
     {
@@ -101,7 +101,7 @@
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/stats/base/dnanvariancepn"
+        "@stdlib/stats/strided/dnanvariancepn"
       ]
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/stats/base/dists/geometric/median",
+  "name": "@stdlib/stats/base/dists/planck/median",
   "version": "0.0.0",
   "description": "Planck (discrete exponential) distribution median.",
   "license": "Apache-2.0",

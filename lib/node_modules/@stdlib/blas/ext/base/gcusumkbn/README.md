@@ -128,7 +128,7 @@ gcusumkbn.ndarray( 4, 0.0, x, 2, 1, y, -1, y.length-1 );
 ## Notes
 
 -   If `N <= 0`, both functions return `y` unchanged.
--   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor])
+-   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 -   Depending on the environment, the typed versions ([`dcusum`][@stdlib/blas/ext/base/dcusum], [`scusum`][@stdlib/blas/ext/base/scusum], etc.) are likely to be significantly more performant.
 
 </section>

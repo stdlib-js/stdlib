@@ -1,0 +1,31 @@
+
+{{alias}}( a, high )
+    Sets the high 32-bit word of a 64-bit unsigned integer.
+
+    The function returns a new Uint64 instance without modifying the input.
+
+    Parameters
+    ----------
+    a: Uint64
+        64-bit unsigned integer.
+
+    high: integer
+        32-bit unsigned integer to replace the high 32-bit word.
+
+    Returns
+    -------
+    out: Uint64
+        64-bit unsigned integer.
+
+    Examples
+    --------
+    > var a = new {{alias:@stdlib/number/uint64/ctor}}( 4294967296 )
+    <Uint64>[ 4294967296n ]
+    > var b = {{alias}}( a, 2 )
+    <Uint64>[ 8589934592n ]
+    > var w = {{alias:@stdlib/number/uint64/base/get-high-word}}( b )
+    2
+
+    See Also
+    --------
+

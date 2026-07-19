@@ -95,20 +95,20 @@ static float rand_float( void ) {
 * @return             elapsed time in seconds
 */
 static double benchmark1( int iterations, int len ) {
-	float cx[ len*2 ];
+	float X[ len*2 ];
 	double elapsed;
 	float out;
 	double t;
 	int i;
 
 	for ( i = 0; i < len*2; i += 2 ) {
-		cx[ i ] = ( rand_float()*10000.0f ) - 5000.0f;
-		cx[ i+1 ] = ( rand_float()*10000.0f ) - 5000.0f;
+		X[ i ] = ( rand_float()*10000.0f ) - 5000.0f;
+		X[ i+1 ] = ( rand_float()*10000.0f ) - 5000.0f;
 	}
 	out = 0.0f;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		out = c_scasum( len, (void *)cx, 1 );
+		out = c_scasum( len, (void *)X, 1 );
 		if ( out != out ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -129,20 +129,20 @@ static double benchmark1( int iterations, int len ) {
 * @return             elapsed time in seconds
 */
 static double benchmark2( int iterations, int len ) {
-	float cx[ len*2 ];
+	float X[ len*2 ];
 	double elapsed;
 	float out;
 	double t;
 	int i;
 
 	for ( i = 0; i < len*2; i += 2 ) {
-		cx[ i ] = ( rand_float()*10000.0f ) - 5000.0f;
-		cx[ i+1 ] = ( rand_float()*10000.0f ) - 5000.0f;
+		X[ i ] = ( rand_float()*10000.0f ) - 5000.0f;
+		X[ i+1 ] = ( rand_float()*10000.0f ) - 5000.0f;
 	}
 	out = 0.0f;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		out = c_scasum_ndarray( len, (void *)cx, 1, 0 );
+		out = c_scasum_ndarray( len, (void *)X, 1, 0 );
 		if ( out != out ) {
 			printf( "should not return NaN\n" );
 			break;

@@ -19,5 +19,4 @@
 #include "stdlib/math/base/napi/unary.h"
 #include "stdlib/stats/base/dists/bernoulli/entropy.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_D_D( stdlib_base_dists_bernoulli_entropy )
