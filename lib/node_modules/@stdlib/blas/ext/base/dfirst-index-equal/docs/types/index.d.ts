@@ -103,7 +103,7 @@ interface Routine {
 * var idx = dfirstIndexEqual.ndarray( 4, x, 1, 0, y, 1, 0 );
 * // returns 2
 */
-declare const dfirstIndexEqual: Routine;
+declare var dfirstIndexEqual: Routine;
 
 
 // EXPORTS //

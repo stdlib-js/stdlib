@@ -2,7 +2,8 @@
 {{alias}}( N, x, strideX, y, strideY )
     Returns the index of the first element in a double-precision floating-point
     strided array equal to a corresponding element in another double-precision
-    floating-point strided array
+    floating-point strided array.
+
     The `N` and stride parameters determine which elements in the strided arrays
     are accessed at runtime.
 
