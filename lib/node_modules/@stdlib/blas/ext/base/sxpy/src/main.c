@@ -87,7 +87,7 @@ void API_SUFFIX(stdlib_strided_sxpy_ndarray)( const CBLAS_INT N, const float *X,
 		return;
 	}
 	for ( i = 0; i < N; i++ ) {
-		Y[ iy ] += X[ ix ] ;
+		Y[ iy ] += X[ ix ];
 		ix += strideX;
 		iy += strideY;
 	}
