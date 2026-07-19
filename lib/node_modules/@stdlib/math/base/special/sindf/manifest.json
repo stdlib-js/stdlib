@@ -1,0 +1,93 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/unary",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/deg2radf",
+        "@stdlib/math/base/special/kernel-sinf",
+        "@stdlib/math/base/special/kernel-cosf",
+        "@stdlib/math/base/special/signumf",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/special/fmodf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/deg2radf",
+        "@stdlib/math/base/special/kernel-sinf",
+        "@stdlib/math/base/special/kernel-cosf",
+        "@stdlib/math/base/special/signumf",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/special/fmodf"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/deg2radf",
+        "@stdlib/math/base/special/kernel-sinf",
+        "@stdlib/math/base/special/kernel-cosf",
+        "@stdlib/math/base/special/signumf",
+        "@stdlib/math/base/special/absf",
+        "@stdlib/math/base/special/fmodf"
+      ]
+    }
+  ]
+}

@@ -173,7 +173,7 @@ Returns the [expected value][expected-value] of a [triangular][triangular-distri
 
 ```c
 double out = stdlib_base_dists_triangular_mean( 0.0, 1.0, 0.5 );
-// returns ~0.333
+// returns 0.5
 ```
 
 The function accepts the following arguments:

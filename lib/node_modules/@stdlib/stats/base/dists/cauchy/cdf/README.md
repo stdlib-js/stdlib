@@ -116,23 +116,19 @@ y = mycdf( 12.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var cdf = require( '@stdlib/stats/base/dists/cauchy/cdf' );
 
-var gamma;
-var x0;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var gamma = uniform( 10, EPS, 10.0, opts );
+var x0 = uniform( 10, 0.0, 10.0, opts );
+var x = uniform( 10, 0.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = randu() * 10.0;
-    x0 = randu() * 10.0;
-    gamma = ( randu()*10.0 ) + EPS;
-    y = cdf( x, x0, gamma );
-    console.log( 'x: %d, x0: %d, γ: %d, F(x;x0,γ): %d', x.toFixed( 4 ), x0.toFixed( 4 ), gamma.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, x0: %0.4f, γ: %0.4f, F(x;x0,γ): %0.4f', x, x0, gamma, cdf );
 ```
 
 </section>

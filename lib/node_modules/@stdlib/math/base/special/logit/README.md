@@ -86,16 +86,16 @@ v = logit( -0.2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var logit = require( '@stdlib/math/base/special/logit' );
 
-var p;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var p = uniform( 100, 0.0, 1.0, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    p = randu();
-    console.log( 'logit(%d) = %d', p, logit( p ) );
-}
+logEachMap( 'logit(%0.4f) = %0.4f', p, logit );
 ```
 
 </section>

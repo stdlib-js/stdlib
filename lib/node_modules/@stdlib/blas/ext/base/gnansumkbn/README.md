@@ -109,7 +109,7 @@ var v = gnansumkbn.ndarray( 5, x, 2, 1 );
 ## Notes
 
 -   If `N <= 0`, both functions return `0.0`.
--   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor])
+-   Both functions support array-like objects having getter and setter accessors for array element access (e.g., [`@stdlib/array/base/accessor`][@stdlib/array/base/accessor]).
 -   Depending on the environment, the typed versions ([`dnansumkbn`][@stdlib/blas/ext/base/dnansumkbn], [`snansumkbn`][@stdlib/blas/ext/base/snansumkbn], etc.) are likely to be significantly more performant.
 
 </section>

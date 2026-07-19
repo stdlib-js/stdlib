@@ -1,0 +1,29 @@
+
+{{alias}}( str, start, end )
+    Slices a string based on Unicode code point indices.
+
+    Parameters
+    ----------
+    str: string
+        Input string.
+    start: integer
+        The `ith` Unicode code point to start a slice (inclusive).
+    end: integer
+        The `jth` Unicode code point to end a slice (exclusive).
+
+    Returns
+    -------
+    out: string
+        Output string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'Hello 👋 World', 1, 3 )
+    'el'
+    > out = {{alias}}( '👋👋👋', 1, 2 )
+    '👋'
+    > out = {{alias}}( '六书/六書', 1, 14 )
+    '书/六書'
+
+    See Also
+    --------
