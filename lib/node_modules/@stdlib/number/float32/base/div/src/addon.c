@@ -19,5 +19,4 @@
 #include "stdlib/number/float32/base/div.h"
 #include "stdlib/math/base/napi/binary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_FF_F( stdlib_base_float32_div )

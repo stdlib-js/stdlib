@@ -84,15 +84,16 @@ v = fmodf( NaN, NaN );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var fmodf = require( '@stdlib/math/base/special/fmodf' );
 
-var x = discreteUniform( 10, 0.0, 100.0 );
-var y = discreteUniform( 10, -50.0, 50.0 );
-var i;
+var opts = {
+    'dtype': 'float32'
+};
+var x = discreteUniform( 100, 0, 100, opts );
+var y = discreteUniform( 100, -50, 50, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    console.log( '%f%%%f = %f', x[ i ], y[ i ], fmodf( x[ i ], y[ i ] ) );
-}
+logEachMap( '%d%%%d = %d', x, y, fmodf );
 ```
 
 </section>

@@ -19,5 +19,4 @@
 #include "stdlib/math/base/special/truncb.h"
 #include "stdlib/math/base/napi/ternary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_DII_D( stdlib_base_truncb )

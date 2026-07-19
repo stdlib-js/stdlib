@@ -22,11 +22,7 @@
     Examples
     --------
     > var v = {{alias}}( new {{alias:@stdlib/complex/float64/ctor}}( 5.555, -3.336 ), -2 )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( v )
-    5.56
-    > var im = {{alias:@stdlib/complex/float64/imag}}( v )
-    -3.34
+    <Complex128>[ 5.56, -3.34 ]
 
     See Also
     --------

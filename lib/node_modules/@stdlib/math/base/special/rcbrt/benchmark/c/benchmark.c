@@ -90,15 +90,18 @@ static double rand_double( void ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-	double x;
+	double x[ 100 ];
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = rand_double() * 100000.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = rand_double() * 100000.0;
-		y = 1.0 / cbrt( x );
+		y = 1.0 / cbrt( x[ i%100 ] );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;
