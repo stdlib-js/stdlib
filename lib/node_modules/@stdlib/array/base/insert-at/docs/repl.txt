@@ -1,0 +1,39 @@
+
+{{alias}}( x, index, value )
+    Inserts an element into an array.
+
+    Negative indices are resolved relative to the last array element, with the
+    last element corresponding to `-1`.
+
+    If provided an out-of-bounds index, the function clamps the index to the
+    beginning or end of the array.
+
+    The function mutates the input array.
+
+    Parameters
+    ----------
+    x: Array
+        Input array.
+
+    index: integer
+        Element index.
+
+    value: any
+        Value to insert.
+
+    Returns
+    -------
+    out: Array
+        Input array.
+
+    Examples
+    --------
+    > var x = [ 1, 1, 2, 3, 3 ];
+    > var out = {{alias}}( x, -3, 4 )
+    [ 1, 1, 4, 2, 3, 3 ]
+    > var bool = ( out === x )
+    true
+
+    See Also
+    --------
+

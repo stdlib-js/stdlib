@@ -239,11 +239,11 @@ import Unary = require( './index' );
 	const x = zeros( 10, 'float64' );
 
 	const f1 = new Unary<number, number>( abs, dtypes, dtypes, 'same' );
-	f1.assign( x, x ); // $ExpectType OutputArray<number>
+	f1.assign( x, x ); // $ExpectType Float64Array
 
 	const unary = Unary;
 	const f2 = unary<number, number>( abs, dtypes, dtypes, 'same' );
-	f2.assign( x, x ); // $ExpectType OutputArray<number>
+	f2.assign( x, x ); // $ExpectType Float64Array
 }
 
 // The compiler throws an error if the `assign` method is provided a first argument which is not an array-like object...

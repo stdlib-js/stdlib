@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `drot`.
 */
-#ifndef DROT_H
-#define DROT_H
+#ifndef STDLIB_BLAS_BASE_DROT_H
+#define STDLIB_BLAS_BASE_DROT_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_drot_ndarray)( const CBLAS_INT N, double *X, const CBLAS_INT s
 }
 #endif
 
-#endif // !DROT_H
+#endif // !STDLIB_BLAS_BASE_DROT_H

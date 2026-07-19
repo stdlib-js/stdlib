@@ -39,7 +39,7 @@ compile_wasm_bin := $(TOOLS_DIR)/scripts/compile_wasm
 #
 # ## Notes
 #
-# -   If unable to compile WebAssemby artifacts, the recipe prints an error message and tries compiling WebAssembly artifacts for the next package.
+# -   If unable to compile WebAssembly artifacts, the recipe prints an error message and tries compiling WebAssembly artifacts for the next package.
 #
 # @param {string} [PKGS_WASM_PATTERN] - package pattern (e.g., `blas/base/daxpy-wasm`)
 #

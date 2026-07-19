@@ -35,6 +35,6 @@ int main( void ) {
 		mu = random_uniform( -5.0, 5.0 );
 		beta = random_uniform( 0.0, 20.0 );
 		y = stdlib_base_dists_gumbel_kurtosis( mu, beta );
-		printf( "µ: %lf, β: %lf, Kurt(X;µ,β): %lf\n", mu, beta, y );
+		printf( "μ: %lf, β: %lf, Kurt(X;μ,β): %lf\n", mu, beta, y );
 	}
 }

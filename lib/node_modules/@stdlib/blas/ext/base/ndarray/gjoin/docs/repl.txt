@@ -1,0 +1,27 @@
+
+{{alias}}( arrays )
+    Returns a string created by joining one-dimensional ndarray elements using a
+    specified separator.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing a separator.
+
+    Returns
+    -------
+    out: string
+        Joined string.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, 2.0, 3.0 ], 'generic' );
+    > var v = {{alias:@stdlib/ndarray/from-scalar}}( ',', { 'dtype': 'generic' } );
+    > {{alias}}( [ x, v ] )
+    '1,2,3'
+
+    See Also
+    --------

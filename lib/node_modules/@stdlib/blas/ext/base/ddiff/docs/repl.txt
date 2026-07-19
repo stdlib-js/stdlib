@@ -1,0 +1,188 @@
+
+{{alias}}( N, k, x,sx, N1,p,sp, N2,a,sa, out,so, w,sw )
+    Calculates the k-th discrete forward differences of a double-precision
+    floating-point strided array.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns the output array unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Number of times to recursively compute differences.
+
+    x: Float64Array
+        Input array.
+
+    sx: integer
+        Stride length for `x`.
+
+    N1: integer
+        Number of elements to prepend.
+
+    p: Float64Array
+        Array containing values to prepend prior to computing differences.
+
+    sp: integer
+        Stride length for `p`.
+
+    N2: integer
+        Number of elements to append.
+
+    a: Float64Array
+        Array containing values to append prior to computing differences.
+
+    sa: integer
+        Stride length for `a`.
+
+    out: Float64Array
+        Output array. Must have `N + N1 + N2 - k` indexed elements.
+
+    so: integer
+        Stride length for `out`.
+
+    w: Float64Array
+        Workspace array. Must have `N + N1 + N2 - 1` indexed elements.
+
+    sw: integer
+        Stride length for `w`.
+
+    Returns
+    -------
+    out: Float64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 2.0 ] );
+    > var p = new {{alias:@stdlib/array/float64}}( [ 0.0 ] );
+    > var a = new {{alias:@stdlib/array/float64}}( [ 3.0 ] );
+    > var out = new {{alias:@stdlib/array/float64}}( 4 );
+    > var w = new {{alias:@stdlib/array/float64}}( 4 );
+    > {{alias}}( x.length, 1, x, 1, 1, p, 1, 1, a, 1, out, 1, w, 1 )
+    <Float64Array>[ 1.0, -3.0, 4.0, 1.0 ]
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ 2.0, 4.0, 6.0, 8.0, 10.0 ] );
+    > p = new {{alias:@stdlib/array/float64}}( [ 1.0 ] );
+    > a = new {{alias:@stdlib/array/float64}}( [ 11.0 ] );
+    > out = new {{alias:@stdlib/array/float64}}( 4 );
+    > w = new {{alias:@stdlib/array/float64}}( 4 );
+    > {{alias}}( 3, 1, x, 2, 1, p, 1, 1, a, 1, out, 1, w, 1 )
+    <Float64Array>[ 1.0, 4.0, 4.0, 1.0 ]
+
+    // Using view offsets:
+    > var x0 = new {{alias:@stdlib/array/float64}}( [ 2.0, 4.0, 6.0, 8.0, 10.0 ] );
+    > var x1 = new {{alias:@stdlib/array/float64}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > p = new {{alias:@stdlib/array/float64}}( [ 1.0 ] );
+    > a = new {{alias:@stdlib/array/float64}}( [ 11.0 ] );
+    > out = new {{alias:@stdlib/array/float64}}( 5 );
+    > w = new {{alias:@stdlib/array/float64}}( 5 );
+    > {{alias}}( x1.length, 1, x1, 1, 1, p, 1, 1, a, 1, out, 1, w, 1 )
+    <Float64Array>[ 3.0, 2.0, 2.0, 2.0, 1.0 ]
+
+
+{{alias}}.ndarray( N, k, x,sx,ox, N1, p,sp,op, N2, a,sa,oa, out,so,oo, w,sw,ow )
+    Calculates the k-th discrete forward differences of a double-precision
+    floating-point strided array using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    k: integer
+        Number of times to recursively compute differences.
+
+    x: Float64Array
+        Input array.
+
+    sx: integer
+        Stride length for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    N1: integer
+        Number of elements to prepend.
+
+    p: Float64Array
+        Array containing values to prepend prior to computing differences.
+
+    sp: integer
+        Stride length for `p`.
+
+    op: integer
+        Starting index for `p`.
+
+    N2: integer
+        Number of elements to append.
+
+    a: Float64Array
+        Array containing values to append prior to computing differences.
+
+    sa: integer
+        Stride length for `a`.
+
+    oa: integer
+        Starting index for `a`.
+
+    out: Float64Array
+        Output array. Must have `N + N1 + N2 - k` indexed elements.
+
+    so: integer
+        Stride length for `out`.
+
+    oo: integer
+        Starting index for `out`.
+
+    w: Float64Array
+        Workspace array. Must have `N + N1 + N2 - 1` indexed elements.
+
+    sw: integer
+        Stride length for `w`.
+
+    ow: integer
+        Starting index for `w`.
+
+    Returns
+    -------
+    out: Float64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 2.0 ] );
+    > var p = new {{alias:@stdlib/array/float64}}( [ 0.0 ] );
+    > var a = new {{alias:@stdlib/array/float64}}( [ 3.0 ] );
+    > var out = new {{alias:@stdlib/array/float64}}( 4 );
+    > var w = new {{alias:@stdlib/array/float64}}( 4 );
+    > {{alias}}.ndarray( 3, 1, x,1,0, 1, p,1,0, 1, a,1,0, out,1,0, w,1,0 )
+    <Float64Array>[ 1.0, -3.0, 4.0, 1.0 ]
+
+    // Advanced indexing:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 2.0 ] );
+    > p = new {{alias:@stdlib/array/float64}}( [ 0.0 ] );
+    > a = new {{alias:@stdlib/array/float64}}( [ 3.0 ] );
+    > out = new {{alias:@stdlib/array/float64}}( 3 );
+    > w = new {{alias:@stdlib/array/float64}}( 3 );
+    > {{alias}}.ndarray( 2, 1, x,1,1, 1, p,1,0, 1, a,1,0, out,1,0, w,1,0 )
+    <Float64Array>[ -2.0, 4.0, 1.0 ]
+
+    See Also
+    --------
+

@@ -60,5 +60,78 @@
     "special",
     "elliptic",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "ellipk",
+      "alias": "ellipk",
+      "pkg_desc": "compute the complete elliptic integral of the first kind for a double-precision floating-point number",
+      "desc": "computes the complete elliptic integral of the first kind for a double-precision floating-point number",
+      "short_desc": "complete elliptic integral of the first kind",
+      "parameters": [
+        {
+          "name": "m",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": 1
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -50,
+              0.5
+            ]
+          },
+          "example_values": [
+            -23.74,
+            0.42,
+            -0.81,
+            -17.56,
+            -3.29,
+            -45.91,
+            -12.67,
+            0.07,
+            -31.58,
+            -0.13,
+            -6.94,
+            -0.47,
+            -22.11,
+            -0.26,
+            -9.83,
+            -0.05,
+            -39.62,
+            -4.37,
+            -0.68,
+            -28.45
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "evaluated elliptic integral",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "special",
+        "elliptic",
+        "number"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

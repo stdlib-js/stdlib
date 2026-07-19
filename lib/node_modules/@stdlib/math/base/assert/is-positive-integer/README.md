@@ -32,7 +32,7 @@ var isPositiveInteger = require( '@stdlib/math/base/assert/is-positive-integer' 
 
 #### isPositiveInteger( x )
 
-Tests if a finite [double-precision floating-point number][ieee754] is a positive `integer`.
+Tests if a finite [double-precision floating-point number][ieee754] is a positive integer.
 
 ```javascript
 var bool = isPositiveInteger( 1.0 );
