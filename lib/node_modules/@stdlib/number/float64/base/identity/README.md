@@ -85,17 +85,13 @@ v = identity( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var identity = require( '@stdlib/number/float64/base/identity' );
 
-var rand;
-var i;
+var x = discreteUniform( 100, -50, 50 );
 
-for ( i = 0; i < 100; i++ ) {
-    rand = round( randu() * 100.0 ) - 50.0;
-    console.log( 'identity(%d) = %d', rand, identity( rand ) );
-}
+logEachMap( 'identity(%d) = %d', x, identity );
 ```
 
 </section>

@@ -33,6 +33,6 @@ int main( void ) {
 	for ( i = 0; i < 10; i++ ) {
 		mu = random_uniform( 0.0, 20.0 );
 		m = stdlib_base_dists_degenerate_mode( mu );
-		printf( "µ: %lf, mode(X;µ): %lf\n", mu, m );
+		printf( "μ: %lf, mode(X;μ): %lf\n", mu, m );
 	}
 }

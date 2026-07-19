@@ -49,7 +49,7 @@ var out = dtypeChars();
 // e.g., returns [ 'r', 'j', 'c', 'z', ... ]
 ```
 
-When not provided a data type "kind", the function returns an array containing the single letter character abbreviations for all support ndarray [data types][@stdlib/ndarray/dtypes]. To return the subset of data type single letter character abbreviations belonging to a specified data type kind, provide a `kind` argument.
+When not provided a data type "kind", the function returns an array containing the single letter character abbreviations for all supported ndarray [data types][@stdlib/ndarray/dtypes]. To return the subset of data type single letter character abbreviations belonging to a specified data type kind, provide a `kind` argument.
 
 ```javascript
 var out = dtypeChars( 'floating_point' );

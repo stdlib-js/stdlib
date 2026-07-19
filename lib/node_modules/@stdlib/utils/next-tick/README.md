@@ -55,6 +55,8 @@ nextTick( beep );
 
 </section>
 
+<!-- /.notes -->
+
 <section class="examples">
 
 ## Examples

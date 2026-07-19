@@ -1,0 +1,122 @@
+#!/bin/bash
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2025 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Script to merge all PRs with the "Ready to Merge" label.
+#
+# Usage: merge_ready_prs [--dry-run]
+#
+# Options:
+#
+#   --dry-run    Only print PRs that would be merged without merging them.
+#
+# Environment variables:
+#
+#   GH_TOKEN         GitHub token for gh CLI authentication.
+#   GITHUB_TOKEN     GitHub token for API calls (used by merge_pr script).
+
+# Ensure that the exit status of pipelines is non-zero in the event that at least one of the commands in a pipeline fails:
+set -o pipefail
+
+
+# VARIABLES #
+
+# Determine the script's directory:
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Parse arguments:
+dry_run=false
+if [ "${1}" = "--dry-run" ]; then
+	dry_run=true
+fi
+
+# Track results:
+succeeded=""
+failed=""
+
+
+# FUNCTIONS #
+
+# Main execution sequence.
+main() {
+	local succeeded_count
+	local failed_count
+	local prs
+	local pr
+
+	# Get all PRs with the "Ready to Merge" label:
+	prs=$(gh pr list --label "Ready to Merge" --json number --jq '.[].number')
+
+	if [ -z "${prs}" ]; then
+		echo "No PRs found with 'Ready to Merge' label."
+		exit 0
+	fi
+
+	echo "Found PRs to merge: ${prs}"
+	echo ""
+
+	# If dry run, just print the PRs and exit:
+	if [ "${dry_run}" = true ]; then
+		echo "Dry run mode. PRs that would be merged:"
+		for pr in ${prs}; do
+			echo "  - PR #${pr}"
+		done
+		exit 0
+	fi
+
+	# Merge each PR:
+	for pr in ${prs}; do
+		echo "Merging PR #${pr}..."
+		if "${script_dir}/merge_pr" "${pr}"; then
+			echo "Successfully merged PR #${pr}"
+			succeeded="${succeeded} ${pr}"
+		else
+			echo "Failed to merge PR #${pr}"
+			failed="${failed} ${pr}"
+		fi
+		echo ""
+	done
+
+	# Print summary:
+	echo ""
+	echo "Results"
+	echo "-------"
+
+	# Count results:
+	succeeded_count=0
+	failed_count=0
+	if [ -n "${succeeded}" ]; then
+		succeeded_count=$(echo "${succeeded}" | wc -w | tr -d ' ')
+	fi
+	if [ -n "${failed}" ]; then
+		failed_count=$(echo "${failed}" | wc -w | tr -d ' ')
+	fi
+
+	echo "Succeeded: ${succeeded_count}"
+	echo "Failed:    ${failed_count}"
+
+	if [ -n "${failed}" ]; then
+		echo ""
+		echo "The following PRs failed to merge:${failed}"
+		exit 1
+	fi
+	exit 0
+}
+
+# Call main with all command-line arguments:
+main "${@}"

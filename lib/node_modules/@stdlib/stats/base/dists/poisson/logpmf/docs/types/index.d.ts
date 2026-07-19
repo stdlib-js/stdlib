@@ -104,7 +104,7 @@ interface LogPMF {
 *
 * var mylogpmf = logpmf.factory( 1.0 );
 * y = mylogpmf( 3.0 );
-* // returns ~-2.797
+* // returns ~-2.792
 *
 * y = mylogpmf( 1.0 );
 * // returns ~-1.0
