@@ -127,11 +127,11 @@ eslint.rules[ 'stdlib/jsdoc-doctest' ] = 'off';
 eslint.rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'off';
 
 /**
-* Warn when using string concatenation in benchmark descriptions.
+* Disallow using string concatenation in benchmark descriptions.
 *
 * @private
 */
-eslint.rules[ 'stdlib/no-bench-string-concat' ] = 'warn';
+eslint.rules[ 'stdlib/no-bench-string-concat' ] = 'error';
 
 
 // EXPORTS //
