@@ -405,6 +405,7 @@ interface Routine extends ModuleWrapper {
 * var y = new Float64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 *
 * dswap.ndarray( x.length, x, 1, 0, y, 1, 0 );
+* // x => <Float64Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
 * // y => <Float64Array>[ 1.0, 2.0, 3.0, 4.0, 5.0 ]
 */
 declare var dswap: Routine;

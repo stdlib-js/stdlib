@@ -21,7 +21,7 @@
 /**
 * Evaluates the quantile function for a studentized range distribution.
 *
-* @param q - quantile of the studentized range
+* @param p - input probability
 * @returns evaluated quantile function
 */
 type Unary = ( p: number ) => number;
@@ -56,7 +56,6 @@ interface Quantile {
 	/**
 	* Returns a function for evaluating the quantile function for a studentized range distribution.
 	*
-	* @param v - degrees of freedom
 	* @param r - sample size for range (same for each group; must be greater than or equal to `2`)
 	* @param v - degrees of freedom (must be greater than or equal to `2`)
 	* @param nranges - number of groups whose maximum range is considered (default: 1)

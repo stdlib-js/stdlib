@@ -86,7 +86,7 @@ type Options<U> = BaseOptions & {
 * var y = flatten( x );
 * // returns <ndarray>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
 */
-declare function flatten<T extends ndarray>( x: T, options?: BaseOptions ): T;
+declare function flatten<T extends ndarray = ndarray>( x: T, options?: BaseOptions ): T;
 
 /**
 * Returns a flattened copy of an input ndarray.
