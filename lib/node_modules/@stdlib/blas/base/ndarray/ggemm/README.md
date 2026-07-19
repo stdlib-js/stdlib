@@ -40,8 +40,6 @@ var ggemm = require( '@stdlib/blas/base/ndarray/ggemm' );
 
 Performs the matrix-matrix operation `C = alpha*op(A)*op(B) + beta*C`, where `op(X)` is either `op(X) = X` or `op(X) = X^T`, `alpha` and `beta` are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K` matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
 
-<!-- eslint-disable max-len -->
-
 ```javascript
 var matrix = require( '@stdlib/ndarray/matrix/ctor' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
@@ -96,8 +94,6 @@ The function has the following parameters:
 <section class="examples">
 
 ## Examples
-
-<!-- eslint-disable max-len -->
 
 <!-- eslint no-undef: "error" -->
 
