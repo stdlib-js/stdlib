@@ -193,6 +193,7 @@ int main( void ) {
         stdlib_complex128_reim( v, &re1, &im1 );
         stdlib_complex128_reim( y, &re2, &im2 );
         printf( "cflipsign(%lf + %lfi, %lf) = %lf + %lfi\n", re1, im1, -1.0, re2, im2 );
+    };
 }
 ```
 

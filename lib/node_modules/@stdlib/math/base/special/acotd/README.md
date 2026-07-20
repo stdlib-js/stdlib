@@ -114,7 +114,7 @@ double out = stdlib_base_acotd( 0.0 );
 // returns 90.0
 
 out = stdlib_base_acotd( 3.0 );
-// returns ~30.0
+// returns ~18.43495
 ```
 
 The function accepts the following arguments:

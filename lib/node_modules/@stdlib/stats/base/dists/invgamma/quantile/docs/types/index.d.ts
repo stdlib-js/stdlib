@@ -78,6 +78,7 @@ interface Quantile {
 	* @example
 	* // Non-positive shape parameter:
 	* var y = quantile( 0.5, -1.0, 1.0 );
+	* // returns NaN
 	*
 	* @example
 	* // Non-positive rate parameter:
@@ -109,7 +110,7 @@ interface Quantile {
 *
 * @param p - input value
 * @param alpha - shape parameter
-* @param beta - rate parameter
+* @param beta - scale parameter
 * @returns evaluated quantile function
 *
 * @example

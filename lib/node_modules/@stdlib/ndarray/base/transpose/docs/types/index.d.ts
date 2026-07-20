@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray, typedndarray, genericndarray } from '@stdlib/types/ndarray';
+import { ndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Transposes a matrix (or a stack of matrices).
@@ -46,31 +46,6 @@ import { ndarray, typedndarray, genericndarray } from '@stdlib/types/ndarray';
 * // returns true
 */
 declare function transpose<T extends typedndarray<unknown> = typedndarray<unknown>>( x: T, writable: boolean ): T;
-
-/**
-* Transposes a matrix (or a stack of matrices).
-*
-* @param x - input array
-* @param writable - boolean indicating whether the returned ndarray should be writable
-* @returns ndarray view
-*
-* @example
-* var getData = require( '@stdlib/ndarray/data-buffer' );
-* var array = require( '@stdlib/ndarray/array' );
-*
-* var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], {
-*     'dtype': 'generic',
-*     'casting': 'unsafe'
-* });
-* // returns <ndarray>[ [ 1, 2, 3 ], [ 4, 5, 6 ] ]
-*
-* var y = transpose( x, false );
-* // returns <ndarray>[ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ]
-*
-* var bool = ( getData( x ) === getData( y ) );
-* // returns true
-*/
-declare function transpose<T extends genericndarray<unknown> = genericndarray<unknown>>( x: T, writable: boolean ): T;
 
 /**
 * Transposes a matrix (or a stack of matrices).
