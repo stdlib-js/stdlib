@@ -48,7 +48,7 @@ interface Routine {
 	* gxsy( x.length, x, 1, y, 1 );
 	* // y => [ -4.0, -2.0, 0.0, 2.0, 4.0 ]
 	*/
-	<T extends InputArray, U extends InputArray>( N: number, x: T, strideX: number, y: U, strideY: number ): U;
+	<T extends InputArray = InputArray>( N: number, x: InputArray, strideX: number, y: T, strideY: number ): T;
 
 	/**
 	* Subtracts elements of a strided array `y` from the corresponding elements of a strided array `x` and assigns the results to `y` using alternative indexing semantics.
@@ -69,7 +69,7 @@ interface Routine {
 	* gxsy.ndarray( x.length, x, 1, 0, y, 1, 0 );
 	* // y => [ -4.0, -2.0, 0.0, 2.0, 4.0 ]
 	*/
-	ndarray<T extends InputArray, U extends InputArray>( N: number, x: T, strideX: number, offsetX: number, y: U, strideY: number, offsetY: number ): U;
+	ndarray<T extends InputArray = InputArray>( N: number, x: InputArray, strideX: number, offsetX: number, y: T, strideY: number, offsetY: number ): T;
 }
 
 /**
