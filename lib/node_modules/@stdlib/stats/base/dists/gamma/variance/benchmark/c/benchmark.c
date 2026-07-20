@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/stats/base/dists/gamma/variance.h"
+#include "stdlib/constants/float64/eps.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -100,8 +101,8 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		alpha[ i ] = random_uniform( 0.0, 20.0 );
-		beta[ i ] = random_uniform( 0.0, 20.0 );
+		alpha[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
+		beta[ i ] = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 20.0 );
 	}
 
 	t = tic();

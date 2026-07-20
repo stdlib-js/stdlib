@@ -174,19 +174,19 @@ for ( i = 0; i < 77; i++ ) {
 Computes the nth [Lucas number][lucas-number].
 
 ```c
-double out = stdlib_base_lucas( 0 );
-// returns 2
+double out = stdlib_base_lucas( 0.0 );
+// returns 2.0
 
-out = stdlib_base_lucas( 1 );
-// returns 1
+out = stdlib_base_lucas( 1.0 );
+// returns 1.0
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int32_t` input value.
+-   **n**: `[in] double` input value.
 
 ```c
-double stdlib_base_lucas( const int32_t n );
+double stdlib_base_lucas( const double n );
 ```
 
 </section>
@@ -210,15 +210,14 @@ double stdlib_base_lucas( const int32_t n );
 ```c
 #include "stdlib/math/base/special/lucas.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-    int32_t i;
+    double i;
     double v;
 
-    for ( i = 0; i < 77; i++ ) {
+    for ( i = 0.0; i < 77.0; i++ ) {
         v = stdlib_base_lucas( i );
-        printf( "lucas(%d) = %lf\n", i, v );
+        printf( "lucas(%lf) = %lf\n", i, v );
     }
 }
 ```

@@ -93,15 +93,15 @@ static double random_uniform( const double min, const double max ) {
 */
 static double benchmark( void ) {
 	double elapsed;
-    double mu[ 100 ];
 	double sigma[ 100 ];
+	double mu[ 100 ];
 	double y;
 	double t;
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
 		mu[ i ] = random_uniform( -10.0, 10.0 );
-        sigma[ i ] = random_uniform( 0.1, 10.0 );
+		sigma[ i ] = random_uniform( 0.1, 10.0 );
 	}
 
 	t = tic();

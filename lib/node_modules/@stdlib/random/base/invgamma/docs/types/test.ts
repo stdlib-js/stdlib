@@ -151,14 +151,14 @@ import invgamma = require( './index' );
 	invgamma.factory( 2, 2, { 'prng': null } ); // $ExpectError
 	invgamma.factory( 2, 2, { 'prng': [] } ); // $ExpectError
 	invgamma.factory( 2, 2, { 'prng': {} } ); // $ExpectError
-	invgamma.factory( 2, 2, { 'prng': true ); // $ExpectError
+	invgamma.factory( 2, 2, { 'prng': true } ); // $ExpectError
 
 	invgamma.factory( { 'prng': 123 } ); // $ExpectError
 	invgamma.factory( { 'prng': 'abc' } ); // $ExpectError
 	invgamma.factory( { 'prng': null } ); // $ExpectError
 	invgamma.factory( { 'prng': [] } ); // $ExpectError
 	invgamma.factory( { 'prng': {} } ); // $ExpectError
-	invgamma.factory( { 'prng': true ); // $ExpectError
+	invgamma.factory( { 'prng': true } ); // $ExpectError
 }
 
 // The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
@@ -185,7 +185,7 @@ import invgamma = require( './index' );
 	invgamma.factory( 2, 2, { 'state': null } ); // $ExpectError
 	invgamma.factory( 2, 2, { 'state': [] } ); // $ExpectError
 	invgamma.factory( 2, 2, { 'state': {} } ); // $ExpectError
-	invgamma.factory( 2, 2, { 'state': true ); // $ExpectError
+	invgamma.factory( 2, 2, { 'state': true } ); // $ExpectError
 	invgamma.factory( 2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
 
 	invgamma.factory( { 'state': 123 } ); // $ExpectError
@@ -193,7 +193,7 @@ import invgamma = require( './index' );
 	invgamma.factory( { 'state': null } ); // $ExpectError
 	invgamma.factory( { 'state': [] } ); // $ExpectError
 	invgamma.factory( { 'state': {} } ); // $ExpectError
-	invgamma.factory( { 'state': true ); // $ExpectError
+	invgamma.factory( { 'state': true } ); // $ExpectError
 	invgamma.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
 }
 

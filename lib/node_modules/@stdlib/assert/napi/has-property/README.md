@@ -153,7 +153,7 @@ The function returns a `napi_status` status code indicating success or failure (
 
 ### Notes
 
--   If not provided a typed array, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
+-   If the value does not have the specified property, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
 
 </section>
 

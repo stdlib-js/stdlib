@@ -19,7 +19,6 @@
 #include "stdlib/stats/base/dists/geometric/logcdf.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
 
 static double random_uniform( const double min, const double max ) {
 	double v = (double)rand() / ( (double)RAND_MAX + 1.0 );

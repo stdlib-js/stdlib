@@ -38,7 +38,7 @@
 *
 * @example
 * #include "stdlib/napi/argv_strided_uint8array2d.h"
-* #include "stdlib/napi_argv_int64.h"
+* #include "stdlib/napi/argv_int64.h"
 * #include "stdlib/napi/argv.h"
 * #include <node_api.h>
 * #include <stdint.h>

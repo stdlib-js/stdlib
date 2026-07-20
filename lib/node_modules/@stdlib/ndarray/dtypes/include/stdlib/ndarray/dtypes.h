@@ -49,13 +49,14 @@ enum STDLIB_NDARRAY_DTYPE {
 	// STDLIB_NDARRAY_UINT256,
 
 	// Floating-point data types:
-	// STDLIB_NDARRAY_FLOAT16, // TODO: uncomment once supported
+	STDLIB_NDARRAY_FLOAT16,
 	// STDLIB_NDARRAY_BFLOAT16, // TODO: uncomment once supported
 	STDLIB_NDARRAY_FLOAT32,
 	STDLIB_NDARRAY_FLOAT64,
 	// STDLIB_NDARRAY_FLOAT128 // TODO: uncomment once supported
 
 	// Complex floating-point number data types:
+	STDLIB_NDARRAY_COMPLEX32,
 	STDLIB_NDARRAY_COMPLEX64,
 	STDLIB_NDARRAY_COMPLEX128,
 

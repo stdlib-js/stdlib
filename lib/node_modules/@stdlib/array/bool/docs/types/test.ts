@@ -24,7 +24,6 @@ import BooleanArray = require( './index' );
 /**
 * Callback function.
 *
-* @private
 * @param v - value
 * @returns input value
 */

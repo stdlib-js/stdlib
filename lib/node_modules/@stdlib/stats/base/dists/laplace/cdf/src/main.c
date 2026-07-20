@@ -21,7 +21,7 @@
 #include "stdlib/math/base/special/exp.h"
 
 /**
-* Evaluates the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at value `x`.
+* Evaluates the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
 *
 * @param x    input value
 * @param mu   location parameter

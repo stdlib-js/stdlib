@@ -4,8 +4,8 @@
 
     Parameters
     ----------
-    dtype: string
-        Underlying data type. Must be a numeric data type or "generic".
+    dtype: string|DataType
+        Underlying data type. Must be a numeric or "generic" data type.
 
     shape: ArrayLikeObject<integer>
         Array shape.
@@ -22,11 +22,7 @@
     Examples
     --------
     > var arr = {{alias}}( 'float64', [ 2, 2 ], 'row-major' )
-    <ndarray>
-    > var sh = arr.shape
-    [ 2, 2 ]
-    > var dt = arr.dtype
-    'float64'
+    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
     See Also
     --------

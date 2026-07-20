@@ -40,29 +40,15 @@ var includes = require( '@stdlib/ndarray/includes' );
 
 Tests whether an [`ndarray`][@stdlib/ndarray/ctor] contains a specified value along one or more dimensions.
 
-<!-- eslint-disable max-len -->
-
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
-
-// Create a data buffer:
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
-
-// Define the shape of the input array:
-var sh = [ 3, 1, 2 ];
-
-// Define the array strides:
-var sx = [ 4, 4, 1 ];
-
-// Define the index offset:
-var ox = 1;
+var array = require( '@stdlib/ndarray/array' );
 
 // Create an input ndarray:
-var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
+// returns <ndarray>
 
 // Perform reduction:
-var out = includes( x, 6.0 );
+var out = includes( x, 5.0 );
 // returns <ndarray>
 
 var v = out.get();
@@ -82,98 +68,56 @@ The function accepts the following `options`:
 
 By default, the function performs a reduction over all elements in a provided [`ndarray`][@stdlib/ndarray/ctor]. To reduce specific dimensions, set the `dims` option.
 
-<!-- eslint-disable max-len -->
-
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
+var array = require( '@stdlib/ndarray/array' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
-// Create a data buffer:
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
-
-// Define the shape of the input array:
-var sh = [ 3, 1, 2 ];
-
-// Define the array strides:
-var sx = [ 4, 4, 1 ];
-
-// Define the index offset:
-var ox = 1;
-
 // Create an input ndarray:
-var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
+// returns <ndarray>
 
 // Perform reduction:
-var out = includes( x, 6.0, {
+var out = includes( x, 5.0, {
     'dims': [ 1, 2 ]
 });
 // returns <ndarray>
 
 var v = ndarray2array( out );
-// returns [ false, true, false ]
+// returns [ false, false, true ]
 ```
 
 By default, the function returns an [`ndarray`][@stdlib/ndarray/ctor] having a shape matching only the non-reduced dimensions of the input [`ndarray`][@stdlib/ndarray/ctor] (i.e., the reduced dimensions are dropped). To include the reduced dimensions as singleton dimensions in the output [`ndarray`][@stdlib/ndarray/ctor], set the `keepdims` option to `true`.
 
-<!-- eslint-disable max-len -->
-
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
+var array = require( '@stdlib/ndarray/array' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
-// Create a data buffer:
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
-
-// Define the shape of the input array:
-var sh = [ 3, 1, 2 ];
-
-// Define the array strides:
-var sx = [ 4, 4, 1 ];
-
-// Define the index offset:
-var ox = 1;
-
 // Create an input ndarray:
-var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
+// returns <ndarray>
 
 // Perform reduction:
-var out = includes( x, 6.0, {
+var out = includes( x, 5.0, {
     'dims': [ 1, 2 ],
     'keepdims': true
 });
 // returns <ndarray>
 
 var v = ndarray2array( out );
-// returns [ [ [ false ] ], [ [ true ] ], [ [ false ] ] ]
+// returns [ [ [ false ] ], [ [ false ] ], [ [ true ] ] ]
 ```
 
 #### includes.assign( x, searchElement, out\[, options] )
 
 Tests whether an [`ndarray`][@stdlib/ndarray/ctor] contains a specified value along one or more dimensions and assigns results to a provided output [`ndarray`][@stdlib/ndarray/ctor].
 
-<!-- eslint-disable max-len -->
-
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
+var array = require( '@stdlib/ndarray/array' );
 var empty = require( '@stdlib/ndarray/empty' );
 
-// Create a data buffer:
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
-
-// Define the shape of the input array:
-var sh = [ 3, 1, 2 ];
-
-// Define the array strides:
-var sx = [ 4, 4, 1 ];
-
-// Define the index offset:
-var ox = 1;
-
 // Create an input ndarray:
-var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
+// returns <ndarray>
 
 // Create an output ndarray:
 var y = empty( [], {
@@ -181,7 +125,7 @@ var y = empty( [], {
 });
 
 // Perform reduction:
-var out = includes.assign( x, 6.0, y );
+var out = includes.assign( x, 5.0, y );
 // returns <ndarray>
 
 var bool = ( out === y );
@@ -204,28 +148,14 @@ The function accepts the following `options`:
 
 By default, the function performs a reduction over all elements in a provided [`ndarray`][@stdlib/ndarray/ctor]. To reduce specific dimensions, set the `dims` option.
 
-<!-- eslint-disable max-len -->
-
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
+var array = require( '@stdlib/ndarray/array' );
 var empty = require( '@stdlib/ndarray/empty' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
-// Create a data buffer:
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
-
-// Define the shape of the input array:
-var sh = [ 3, 1, 2 ];
-
-// Define the array strides:
-var sx = [ 4, 4, 1 ];
-
-// Define the index offset:
-var ox = 1;
-
 // Create an input ndarray:
-var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
+// returns <ndarray>
 
 // Create an output ndarray:
 var y = empty( [ 3 ], {
@@ -233,7 +163,7 @@ var y = empty( [ 3 ], {
 });
 
 // Perform reduction:
-var out = includes.assign( x, 6.0, y, {
+var out = includes.assign( x, 5.0, y, {
     'dims': [ 1, 2 ]
 });
 
@@ -241,7 +171,7 @@ var bool = ( out === y );
 // returns true
 
 var v = ndarray2array( y );
-// returns [ false, true, false ]
+// returns [ false, false, true ]
 ```
 
 </section>

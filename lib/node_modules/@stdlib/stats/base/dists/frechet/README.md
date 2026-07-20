@@ -46,8 +46,8 @@ The namespace contains the following distribution functions:
 <div class="namespace-toc">
 
 -   <span class="signature">[`cdf( x, alpha, s, m )`][@stdlib/stats/base/dists/frechet/cdf]</span><span class="delimiter">: </span><span class="description">Fréchet distribution cumulative distribution function.</span>
--   <span class="signature">[`logcdf( x, alpha, s, m )`][@stdlib/stats/base/dists/frechet/logcdf]</span><span class="delimiter">: </span><span class="description">Fréchet distribution logarithm of cumulative distribution function.</span>
--   <span class="signature">[`logpdf( x, alpha, s, m )`][@stdlib/stats/base/dists/frechet/logpdf]</span><span class="delimiter">: </span><span class="description">Fréchet distribution logarithm of probability density function.</span>
+-   <span class="signature">[`logcdf( x, alpha, s, m )`][@stdlib/stats/base/dists/frechet/logcdf]</span><span class="delimiter">: </span><span class="description">Fréchet distribution natural logarithm of cumulative distribution function.</span>
+-   <span class="signature">[`logpdf( x, alpha, s, m )`][@stdlib/stats/base/dists/frechet/logpdf]</span><span class="delimiter">: </span><span class="description">Fréchet distribution natural logarithm of probability density function.</span>
 -   <span class="signature">[`pdf( x, alpha, s, m )`][@stdlib/stats/base/dists/frechet/pdf]</span><span class="delimiter">: </span><span class="description">Fréchet distribution probability density function.</span>
 -   <span class="signature">[`quantile( p, alpha, s, m )`][@stdlib/stats/base/dists/frechet/quantile]</span><span class="delimiter">: </span><span class="description">Fréchet distribution quantile function.</span>
 

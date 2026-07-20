@@ -16,8 +16,8 @@
 * limitations under the License.
 */
 
-#ifndef STDLIB_STATS_BASE_DISTS_LOGCDF_MODE_H
-#define STDLIB_STATS_BASE_DISTS_LOGCDF_MODE_H
+#ifndef STDLIB_STATS_BASE_DISTS_LAPLACE_LOGCDF_H
+#define STDLIB_STATS_BASE_DISTS_LAPLACE_LOGCDF_H
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Returns the logarithm of the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at value `x`.
+* Returns the logarithm of the cumulative distribution function (CDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
 */
 double stdlib_base_dists_laplace_logcdf( const double x, const double mu, const double b );
 
@@ -35,4 +35,4 @@ double stdlib_base_dists_laplace_logcdf( const double x, const double mu, const 
 }
 #endif
 
-#endif // !STDLIB_STATS_BASE_DISTS_LOGCDF_MODE_H
+#endif // !STDLIB_STATS_BASE_DISTS_LAPLACE_LOGCDF_H
