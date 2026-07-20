@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{y} = \mathbf{x} \oslash \mathbf{y}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{y} = \mathbf{x} \oslash \mathbf{y}" data-equation="eq:xdy">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@36161d55e65be0928435fab8edb222944f083cbd/lib/node_modules/@stdlib/blas/ext/base/ndarray/sxdy/docs/img/equation_xdy.svg" alt="Equation for xdy operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
