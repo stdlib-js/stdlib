@@ -41,7 +41,8 @@
         "@stdlib/math/base/napi/ternary",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/sqrt",
-        "@stdlib/math/base/special/erfinv"
+        "@stdlib/math/base/special/erfinv",
+        "@stdlib/constants/float64/sqrt-two"
       ]
     },
     {
@@ -59,7 +60,8 @@
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/math/base/special/erfinv",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/sqrt-two"
       ]
     },
     {
@@ -77,7 +79,8 @@
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/special/sqrt",
         "@stdlib/math/base/special/erfinv",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/sqrt-two"
       ]
     }
   ]

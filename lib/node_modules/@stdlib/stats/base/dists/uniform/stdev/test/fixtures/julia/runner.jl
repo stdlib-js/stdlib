@@ -26,7 +26,6 @@ Generate fixture data and write to file.
 
 # Arguments
 
-* `x`: input value
 * `a`: minimum support
 * `b`: maximum support
 * `name::AbstractString`: output filename

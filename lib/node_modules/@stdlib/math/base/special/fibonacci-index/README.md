@@ -68,7 +68,7 @@ n = fibonacciIndex( 5 );
 // returns 5
 ```
 
-If provided either a non-integer or `F_n <= 1`, the function returns `NaN`. 
+If provided either a non-integer or `F_n <= 1`, the function returns `NaN`.
 
 ```javascript
 var n = fibonacciIndex( -1 );
@@ -156,19 +156,19 @@ for ( i = 3; i < 79; i++ ) {
 Computes the [Fibonacci number][fibonacci-number] index.
 
 ```c
-double out = stdlib_base_fibonacci( 2 );
+double out = stdlib_base_fibonacci_index( 2 );
 // returns 3
 
-out = stdlib_base_fibonacci( 3 );
+out = stdlib_base_fibonacci_index( 3 );
 // returns 4
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] double` input value.
+-   **F**: `[in] double` input value.
 
 ```c
-double stdlib_base_fibonacci( const double F );
+double stdlib_base_fibonacci_index( const double F );
 ```
 
 </section>

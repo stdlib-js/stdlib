@@ -1,0 +1,41 @@
+
+{{alias}}( arrays )
+    Tests whether an ndarray contains a specified value.
+
+    A provided "ndarray" should be an object with the following properties:
+
+    - dtype: data type.
+    - data: data buffer.
+    - shape: dimensions.
+    - strides: stride lengths.
+    - offset: index offset.
+    - order: specifies whether an ndarray is row-major (C-style) or column-major
+    (Fortran-style).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing an input ndarray and a zero-dimensional
+        array containing the search element.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an ndarray contains a specified value.
+
+    Examples
+    --------
+    > var xbuf = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var dt = 'float64';
+    > var sh = [ 2, 2 ];
+    > var sx = [ 2, 1 ];
+    > var ox = 0;
+    > var ord = 'row-major';
+    > var v = {{alias:@stdlib/ndarray/from-scalar}}( 3.0, { 'dtype': dt } );
+    > var x = {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
+    > {{alias}}( [ x, v ] )
+    true
+
+    See Also
+    --------
+

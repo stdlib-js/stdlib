@@ -28,7 +28,7 @@
     {
       "task": "build",
       "src": [
-        "./src/ramp.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -43,7 +43,7 @@
     {
       "task": "benchmark",
       "src": [
-        "./src/ramp.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
@@ -57,7 +57,7 @@
     {
       "task": "examples",
       "src": [
-        "./src/ramp.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"

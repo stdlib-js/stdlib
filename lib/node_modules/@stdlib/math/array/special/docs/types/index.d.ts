@@ -44,6 +44,7 @@ interface Namespace {
 	* // returns [ 1.0, 2.0, 3.0 ]
 	*
 	* var bool = ( out === y );
+	* // returns true
 	*/
 	abs: typeof abs;
 }

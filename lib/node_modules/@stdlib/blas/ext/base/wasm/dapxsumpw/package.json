@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/blas/base/ext/wasm/dapxsumpw",
+  "name": "@stdlib/blas/ext/base/wasm/dapxsumpw",
   "version": "0.0.0",
   "description": "Add a constant to each double-precision floating-point strided array element and compute the sum using pairwise summation.",
   "license": "Apache-2.0",

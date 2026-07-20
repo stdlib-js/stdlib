@@ -84,7 +84,7 @@ interface Options {
 * // returns 0.0
 *
 * v = iter.next().value;
-* // returns 1.0
+* // returns -1.0
 *
 * // ...
 */

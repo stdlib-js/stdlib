@@ -20,6 +20,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
 #include "stdlib/math/base/special/erfinv.h"
+#include "stdlib/constants/float64/sqrt_two.h"
 
 /**
 * Evaluates the quantile function for a normal distribution with mean `mu` and standard deviation `sigma` at a probability `p`.
@@ -47,5 +48,5 @@ double stdlib_base_dists_normal_quantile( const double p, const double mu, const
 	if ( sigma == 0.0 ) {
 		return mu;
 	}
-	return mu + ( ( sigma * stdlib_base_sqrt( 2.0 ) ) * stdlib_base_erfinv( ( 2.0 * p ) - 1.0 ) );
+	return mu + ( ( sigma * STDLIB_CONSTANT_FLOAT64_SQRT2 ) * stdlib_base_erfinv( ( 2.0 * p ) - 1.0 ) );
 }

@@ -423,14 +423,14 @@ import drotm = require( './index' );
 	});
 	const mod = drotm.Module( mem );
 
-	mod.main( 10, 0, 1, 80, 1, '10'); // $ExpectError
-	mod.main( 10, 0, 1, 80, 1, true); // $ExpectError
-	mod.main( 10, 0, 1, 80, 1, false); // $ExpectError
-	mod.main( 10, 0, 1, 80, 1, null); // $ExpectError
-	mod.main( 10, 0, 1, 80, 1, undefined); // $ExpectError
-	mod.main( 10, 0, 1, 80, 1, []); // $ExpectError
-	mod.main( 10, 0, 1, 80, 1, {}); // $ExpectError
-	mod.main( 10, 0, 1, 80, 1, ( x: number ): number => x); // $ExpectError
+	mod.main( 10, 0, 1, 80, 1, '10' ); // $ExpectError
+	mod.main( 10, 0, 1, 80, 1, true ); // $ExpectError
+	mod.main( 10, 0, 1, 80, 1, false ); // $ExpectError
+	mod.main( 10, 0, 1, 80, 1, null ); // $ExpectError
+	mod.main( 10, 0, 1, 80, 1, undefined ); // $ExpectError
+	mod.main( 10, 0, 1, 80, 1, [] ); // $ExpectError
+	mod.main( 10, 0, 1, 80, 1, {} ); // $ExpectError
+	mod.main( 10, 0, 1, 80, 1, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the `main` method of a module instance is provided an unsupported number of arguments...

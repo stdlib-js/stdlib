@@ -52,6 +52,7 @@ var v = sapxsumkbn2( x.length, 5.0, x, 1 );
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
+-   **alpha**: scalar constant.
 -   **x**: input [`Float32Array`][@stdlib/array/float32].
 -   **strideX**: stride length.
 

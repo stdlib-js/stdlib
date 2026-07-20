@@ -18,6 +18,7 @@
 
 #include "stdlib/math/base/assert/is_negative_finite.h"
 #include "stdlib/constants/float64/ninf.h"
+#include <stdbool.h>
 
 /**
 * Tests if a double-precision floating-point numeric value is a negative finite number.
