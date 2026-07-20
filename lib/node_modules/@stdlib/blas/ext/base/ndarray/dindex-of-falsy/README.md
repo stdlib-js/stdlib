@@ -51,9 +51,7 @@ var idx = dindexOfFalsy( [ x ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing the following ndarrays:
-
-    -   a one-dimensional input ndarray.
+-   **arrays**: array-like object containing a one-dimensional input ndarray.
 
 If the function is unable to find a falsy element, the function returns `-1`.
 
