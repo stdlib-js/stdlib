@@ -68,7 +68,6 @@ import dfirstIndexLessThan = require( './index' );
 // The compiler throws an error if the function is provided a fourth argument which is not a Float64Array...
 {
 	var x = new Float64Array( [ 1.0, 2.0, 3.0 ] );
-	var y = new Float64Array( [ 1.0, 2.0, 3.0 ] );
 
 	dfirstIndexLessThan( x.length, x, 1, '1', 1 ); // $ExpectError
 	dfirstIndexLessThan( x.length, x, 1, true, 1 ); // $ExpectError
