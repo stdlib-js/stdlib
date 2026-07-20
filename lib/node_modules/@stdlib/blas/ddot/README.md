@@ -63,10 +63,7 @@ var x = array( new Float64Array( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] ) );
 var y = array( new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );
 
 var z = ddot( x, y );
-// returns <ndarray>
-
-var v = z.get();
-// returns -5.0
+// returns <ndarray>[ -5.0 ]
 ```
 
 The function has the following parameters:
@@ -88,13 +85,7 @@ var x = array( new Float64Array( [ 4.0, 2.0, -3.0, 5.0, -1.0, 3.0 ] ), opts );
 var y = array( new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0, 2.0 ] ), opts );
 
 var z = ddot( x, y );
-// returns <ndarray>
-
-var v1 = z.get( 0 );
-// returns 23.0
-
-var v2 = z.get( 1 );
-// returns -22.0
+// returns <ndarray>[ 23.0, -22.0 ]
 ```
 
 </section>

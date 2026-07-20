@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2025 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@
 */
 static void print_version( void );
 static void print_summary( int total, int passing );
-static void print_results( double elapsed );
+static void print_results( int iterations, double elapsed );
 static double tic( void );
 static float rand_float( void );
 static double rand_double( void );
@@ -117,11 +117,12 @@ static double rand_double( void ) {
 */
 static double benchmark( int iterations, int len ) {
 	double elapsed;
-	double x[ len ];
+	double *x;
 	double y;
 	double t;
 	int i;
 
+	x = (double *) malloc( len * sizeof( double ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( rand_double()*20000.0 ) - 10000.0;
 	}
@@ -137,6 +138,7 @@ static double benchmark( int iterations, int len ) {
 	if ( TODO ) {
 		printf( "unexpected return value\n" );
 	}
+	free( x );
 	return elapsed;
 }
 

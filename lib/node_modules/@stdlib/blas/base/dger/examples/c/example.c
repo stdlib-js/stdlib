@@ -21,34 +21,31 @@
 #include <stdio.h>
 
 int main( void ) {
-	// Define a 4x3 matrix `B` stored in row-major order (i.e., equivalent to the transpose `A^T` of a 3x4 matrix `A` stored in column-major order):
-	double B[ 4*3 ] = {
+	// Define a 3x4 matrix stored in row-major order:
+	double A[ 3*4 ] = {
 		0.0, 0.0, 0.0, 0.0,
 		0.0, 0.0, 0.0, 0.0,
 		0.0, 0.0, 0.0, 0.0
 	};
-	// Define `x^T` and `y` vectors:
-	double x[ 4 ] = { 0.0, 1.0, 2.0, 3.0 }; // M
-	double y[ 3 ] = { 1.0, 4.0, 0.0 };      // N
+	// Define `x` and `y^T` vectors:
+	const double x[ 3 ] = { 1.0, 4.0, 0.0 };      // M
+	const double y[ 4 ] = { 0.0, 1.0, 2.0, 3.0 }; // N
 
 	// Specify the number of rows and columns:
-	const int M = 4;
-	const int N = 3;
+	const int M = 3;
+	const int N = 4;
 
 	// Specify stride lengths:
 	const int strideX = 1;
 	const int strideY = 1;
 
-	// Specify the matrix layout:
-	const CBLAS_LAYOUT layout = CblasRowMajor;
-
-	// Perform operation (note: arguments are reordered as: A_{M,N} = α⋅x_M⋅y^T_N + A_{M,N} => B = A^T = α⋅y⋅x^T + A^T = α⋅y⋅x^T + B):
-	c_dger( layout, N, M, 1.0, y, strideY, x, strideX, B, M );
+	// Perform operation:
+	c_dger( CblasRowMajor, M, N, 1.0, x, strideX, y, strideY, A, N );
 
 	// Print the result:
-	for ( int i = 0; i < N; i++ ) {
-		for ( int j = 0; j < M; j++ ) {
-			printf( "B[%i,%i] = %lf\n", i, j, B[ (i*M)+j ] );
+	for ( int i = 0; i < M; i++ ) {
+		for ( int j = 0; j < N; j++ ) {
+			printf( "A[%i,%i] = %lf\n", i, j, A[ (i*N)+j ] );
 		}
 	}
 }

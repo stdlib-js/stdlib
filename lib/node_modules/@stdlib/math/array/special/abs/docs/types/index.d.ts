@@ -57,7 +57,7 @@ interface Unary {
 	* var out = abs( [ -1.0, -2.0, -3.0 ] );
 	* // returns [ 1.0, 2.0, 3.0 ]
 	*/
-	( x: InputArray<number>, options?: Options ): OutputArray<number>;
+	<T extends InputArray<number>>( x: T, options?: Options ): T;
 
 	/**
 	* Computes the absolute value for each element in an input array and assigns results to a provided output array.
@@ -75,7 +75,7 @@ interface Unary {
 	* var bool = ( out === y );
 	* // returns true
 	*/
-	assign<V extends OutputArray<number>>( x: InputArray<number>, out: V ): V;
+	assign<U extends OutputArray<number>>( x: InputArray<number>, out: U ): U;
 }
 
 /**

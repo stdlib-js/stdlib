@@ -19,5 +19,4 @@
 #include "stdlib/math/base/special/croundn.h"
 #include "stdlib/math/base/napi/binary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_ZI_Z( stdlib_base_croundn )

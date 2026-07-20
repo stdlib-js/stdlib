@@ -1034,7 +1034,7 @@ plugins.push([
 ]);
 
 /**
-* Never allow table indentation. Note that the exception is when a table correspond to a list item.
+* Never allow table indentation. Note that the exception is when a table corresponds to a list item.
 *
 * @see [no-table-indentation]{@link https://github.com/wooorm/remark-lint/tree/master/packages/remark-lint-no-table-indentation}
 *

@@ -30,7 +30,7 @@ static const float CONST_180_DIV_PI = 57.29577951308232f;
 * @example
 * float x = 3.141592653589793f / 2.0f;
 *
-* float out = stdlib_base_rad2deg( x );
+* float out = stdlib_base_rad2degf( x );
 * // returns 90.0f
 */
 float stdlib_base_rad2degf( const float x ) {

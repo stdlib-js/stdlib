@@ -103,19 +103,16 @@ Table of results:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var signumf = require( '@stdlib/math/base/special/signumf' );
 
-var sign;
-var x;
-var i;
+var opts = {
+    'dtype': 'float32'
+};
+var x = discreteUniform( 100, -50, 50, opts );
 
-for ( i = 0; i < 100; i++ ) {
-    x = round( randu()*100.0 ) - 50.0;
-    sign = signumf( x );
-    console.log( 'signum(%d) = %d', x, sign );
-}
+logEachMap( 'signum(%d) = %0.4f', x, signumf );
 ```
 
 </section>

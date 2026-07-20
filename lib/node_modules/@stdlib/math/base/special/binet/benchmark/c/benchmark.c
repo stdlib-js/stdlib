@@ -16,7 +16,6 @@
 * limitations under the License.
 */
 
-#include "stdlib/math/base/special/binet.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
@@ -112,7 +111,7 @@ static double benchmark( void ) {
 
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = stdlib_base_binet( x[ i%100 ] );
+		y = binet( x[ i%100 ] );
 		if ( y < 0 ) {
 			printf( "should return a nonnegative number\n" );
 			break;

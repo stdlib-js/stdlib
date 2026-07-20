@@ -20,7 +20,7 @@
 #include "stdlib/math/base/special/cos.h"
 
 /**
-* Evaluates the cosecant of a number.
+* Evaluates the secant of a number.
 *
 * @param x    input value (in radians)
 * @return     secant

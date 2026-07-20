@@ -1,0 +1,120 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-double",
+        "@stdlib/napi/argv-float64array",
+        "@stdlib/napi/export",
+        "@stdlib/math/base/special/sincos",
+        "@stdlib/math/base/special/ellipk",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/sinh",
+        "@stdlib/math/base/special/cosh",
+        "@stdlib/math/base/special/tanh",
+        "@stdlib/math/base/special/atan",
+        "@stdlib/math/base/special/asin",
+        "@stdlib/math/base/special/sin",
+        "@stdlib/math/base/special/cos",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/sqrt-eps",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/pi"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/sincos",
+        "@stdlib/math/base/special/ellipk",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/sinh",
+        "@stdlib/math/base/special/cosh",
+        "@stdlib/math/base/special/tanh",
+        "@stdlib/math/base/special/atan",
+        "@stdlib/math/base/special/asin",
+        "@stdlib/math/base/special/sin",
+        "@stdlib/math/base/special/cos",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/sqrt-eps",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/pi"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/sincos",
+        "@stdlib/math/base/special/ellipk",
+        "@stdlib/math/base/special/floor",
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/sinh",
+        "@stdlib/math/base/special/cosh",
+        "@stdlib/math/base/special/tanh",
+        "@stdlib/math/base/special/atan",
+        "@stdlib/math/base/special/asin",
+        "@stdlib/math/base/special/sin",
+        "@stdlib/math/base/special/cos",
+        "@stdlib/math/base/special/abs",
+        "@stdlib/constants/float64/sqrt-eps",
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/pi"
+      ]
+    }
+  ]
+}
