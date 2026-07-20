@@ -47,7 +47,8 @@
         "@stdlib/number/float32/base/from-word",
         "@stdlib/number/float32/base/to-word",
         "@stdlib/constants/float32/abs-mask",
-        "@stdlib/constants/float32/exponent-mask"
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -67,7 +68,8 @@
         "@stdlib/number/float32/base/from-word",
         "@stdlib/number/float32/base/to-word",
         "@stdlib/constants/float32/abs-mask",
-        "@stdlib/constants/float32/exponent-mask"
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -87,7 +89,8 @@
         "@stdlib/number/float32/base/from-word",
         "@stdlib/number/float32/base/to-word",
         "@stdlib/constants/float32/abs-mask",
-        "@stdlib/constants/float32/exponent-mask"
+        "@stdlib/constants/float32/exponent-mask",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]
