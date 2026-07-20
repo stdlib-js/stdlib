@@ -205,9 +205,6 @@ The applied function is provided the same arguments as with [`map2`](#fcn-map2).
     ```javascript
     var naryFunction = require( '@stdlib/utils/nary-function' );
     var Complex64Array = require( '@stdlib/array/complex64' );
-    var Complex64 = require( '@stdlib/complex/float32/ctor' );
-    var realf = require( '@stdlib/complex/float32/real' );
-    var imagf = require( '@stdlib/complex/float32/imag' );
     var add = require( '@stdlib/complex/float32/base/add' );
 
     var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
@@ -215,14 +212,7 @@ The applied function is provided the same arguments as with [`map2`](#fcn-map2).
     var z = new Complex64Array( 4 );
 
     map2.assign( x, y, z, naryFunction( add, 2 ) );
-
-    var v = z.get( 0 );
-
-    var re = realf( v );
-    // returns 2.0
-
-    var im = imagf( v );
-    // returns 3.0
+    // z => <Complex64Array>[ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0 ]
     ```
 
 -   When applying a function to [`ndarray`][@stdlib/ndarray/ctor]-like objects, performance will be best for [`ndarray`][@stdlib/ndarray/ctor]-like objects which are single-segment contiguous. For non-contiguous arrays, see [`@stdlib/ndarray/base/binary`][@stdlib/ndarray/base/binary].

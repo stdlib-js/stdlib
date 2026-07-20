@@ -26,7 +26,7 @@
 * -   According to the Gregorian calendar, every year that is exactly divisible by `4` is a leap year, except those years which are also divisible by `100` and not by `400` (e.g., `1900`).
 *
 * @param value - input value
-* @returns boolean whether a value corresponds to a leap year
+* @returns boolean indicating whether a value corresponds to a leap year
 *
 * @example
 * var bool = isLeapYear();

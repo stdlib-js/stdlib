@@ -873,7 +873,7 @@ interface Namespace {
 	* -   Setting the correction parameter to a value other than `0` has the effect of adjusting the divisor during the calculation of the standard deviation according to `N-c` where `c` corresponds to the provided degrees of freedom adjustment. When computing the standard deviation of a population, setting the correction parameter to `0` is the standard choice (i.e., the provided array contains data constituting an entire population). When computing the corrected sample standard deviation, setting the correction parameter to `1` is the standard choice (i.e., the provided array contains data sampled from a larger population; this is commonly referred to as Bessel's correction).
 	*
 	* @param x - input array
-	* @param correction - degrees of freedom adjustment
+	* @param correction - degrees of freedom adjustment (default: 1.0)
 	* @returns standard deviation
 	*
 	* @example
