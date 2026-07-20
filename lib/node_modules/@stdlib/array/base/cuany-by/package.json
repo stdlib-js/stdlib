@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/array/base/cuany",
+  "name": "@stdlib/array/base/cuany-by",
   "version": "0.0.0",
   "description": "Cumulatively test whether at least one element in a provided array passes a test implemented by a predicate function.",
   "license": "Apache-2.0",

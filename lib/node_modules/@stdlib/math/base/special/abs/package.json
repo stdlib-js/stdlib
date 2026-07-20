@@ -120,7 +120,7 @@
           ]
         }
       ],
-      "output_policy": "real_floating_point_and_generic",
+      "output_policy": "same",
       "returns": {
         "desc": "absolute value",
         "type": {

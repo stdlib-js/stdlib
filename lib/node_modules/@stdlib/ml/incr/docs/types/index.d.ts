@@ -167,10 +167,8 @@ interface Namespace {
 	* @returns regression model
 	*
 	* @example
-	* var ns.incrSGDRegression = require( '@stdlib/streams/ml/incr/sgd-regression' );
-	*
 	* var accumulator = ns.incrSGDRegression({
-	*     'intercept': true
+	*     'intercept': true,
 	*     'lambda': 1e-5
 	* });
 	*

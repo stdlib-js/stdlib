@@ -22,7 +22,7 @@
 #include <time.h>
 #include <sys/time.h>
 
-#define NAME "minabs"
+#define NAME "minabsn"
 #define ITERATIONS 1000000
 #define REPEATS 3
 

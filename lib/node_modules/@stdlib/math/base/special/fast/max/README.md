@@ -146,7 +146,7 @@ Returns the maximum value.
 double out = stdlib_base_fast_max( 4.2, 3.14 );
 // returns 4.2
 
-out = stdlib_base_max_fast( 0.0, -0.0 );
+out = stdlib_base_fast_max( 0.0, -0.0 );
 // returns 0.0
 ```
 
@@ -165,7 +165,7 @@ double stdlib_base_fast_max( const double x, const double y );
 
 <!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<section class="notes">    
+<section class="notes">
 
 </section>
 
@@ -173,7 +173,7 @@ double stdlib_base_fast_max( const double x, const double y );
 
 <!-- C API usage examples. -->
 
-<section class="examples">   
+<section class="examples">
 
 ### Examples
 

@@ -921,7 +921,7 @@ not ok 5 This is a failing assertion.
   ---
   operator: fail
   TODO: include stack
-  ... 
+  ...
 ```
 
 <a name="benchmark-pass"></a>
@@ -1230,7 +1230,7 @@ TODO
 
 ### TAP
 
--   Results are output in accordance with the Test Anything Protocol ([TAP][tap]) version [13][tap]. 
+-   Results are output in accordance with the Test Anything Protocol ([TAP][tap]) version [13][tap].
 
 -   Example [TAP][tap] output:
 
@@ -1442,7 +1442,7 @@ Options:
 
     Depending on the preloaded module, a module may support parameterization via environment variables, command-line options, and/or configuration files.
 
--   To perform shell expansion on systems supporting globbing, do not quote provided globs. 
+-   To perform shell expansion on systems supporting globbing, do not quote provided globs.
 
     ```bash
     $ bench benchmark/*.js
