@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/blas/ext/base/dcartesianproduct.h"
+#include "stdlib/blas/ext/base/dcartesian_product.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/napi/export.h"
 #include "stdlib/napi/argv.h"

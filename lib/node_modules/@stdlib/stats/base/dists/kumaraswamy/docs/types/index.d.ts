@@ -135,7 +135,7 @@ interface Namespace {
 	logcdf: typeof logcdf;
 
 	/**
-	* Arcsine distribution logarithm of probability density function (PDF).
+	* Kumaraswamy's double bounded distribution logarithm of probability density function (PDF).
 	*
 	* @param x - input value
 	* @param a - first shape parameter
@@ -314,7 +314,7 @@ interface Namespace {
 	/**
 	* Kumaraswamy's double bounded distribution quantile function.
 	*
-	* @param x - input value
+	* @param p - input probability
 	* @param a - first shape parameter
 	* @param b - second shape parameter
 	* @returns evaluated quantile function

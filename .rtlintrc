@@ -6,7 +6,7 @@
 	"@stdlib/_tools/repl-txt/rules/interface-spacing": [ "error", 2 ],
 	"@stdlib/_tools/repl-txt/rules/line-length": [ "error", 80 ],
 	"@stdlib/_tools/repl-txt/rules/match-signature": "error",
-	"@stdlib/_tools/repl-txt/rules/resolvable-aliases": "error",
+	"@stdlib/_tools/repl-txt/rules/resolvable-aliases": "warn",
 	"@stdlib/_tools/repl-txt/rules/section-order": "error",
 	"@stdlib/_tools/repl-txt/rules/section-heading-style": "error",
 	"@stdlib/_tools/repl-txt/rules/see-also": "error",

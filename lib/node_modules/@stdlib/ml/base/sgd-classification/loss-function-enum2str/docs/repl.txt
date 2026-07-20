@@ -1,0 +1,23 @@
+
+{{alias}}( value )
+    Returns the SGD classification loss function string associated with an SGD
+    classification loss function enumeration constant.
+
+    Parameters
+    ----------
+    value: integer
+        Loss function enumeration constant.
+
+    Returns
+    -------
+    out: string|null
+        Loss function string.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/ml/base/sgd-classification/loss-function-str2enum}}( 'epsilon-insensitive' ) )
+    'epsilon-insensitive'
+
+    See Also
+    --------
+

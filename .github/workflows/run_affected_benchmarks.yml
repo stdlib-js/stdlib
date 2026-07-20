@@ -138,17 +138,22 @@ jobs:
       - name: 'Get list of changed directories (from user input)'
         if: github.event_name == 'workflow_dispatch'
         id: changed-directories-user-input
+        env:
+          DIRECTORIES: ${{ github.event.inputs.directories }}
         run: |
-          echo "directories=${{ github.event.inputs.directories }}" >> $GITHUB_OUTPUT
+          echo "directories=${DIRECTORIES}" >> $GITHUB_OUTPUT
         timeout-minutes: 5
 
       # Run affected benchmarks:
       - name: 'Run affected benchmarks'
+        env:
+          DIRECTORIES_USER_INPUT: ${{ steps.changed-directories-user-input.outputs.directories }}
+          DIRECTORIES_CHANGED: ${{ steps.changed-directories.outputs.directories }}
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            directories="${{ steps.changed-directories-user-input.outputs.directories }}"
+            directories="$DIRECTORIES_USER_INPUT"
           else
-            directories="${{ steps.changed-directories.outputs.directories }}"
+            directories="$DIRECTORIES_CHANGED"
           fi
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_affected_benchmarks/run" "$directories"
         timeout-minutes: 60
