@@ -171,7 +171,7 @@ jobs:
             git commit -m "docs: update Markdown equation elements"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
-        timeout-minutes: 15
+        timeout-minutes: 60
 
       # Delete remote PR branch to ensure a clean push when the branch has diverged:
       - name: 'Delete remote PR branch'
