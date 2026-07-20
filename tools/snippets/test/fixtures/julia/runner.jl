@@ -2,7 +2,7 @@
 #
 # @license Apache-2.0
 #
-# Copyright (c) 2025 The Stdlib Authors.
+# Copyright (c) 2026 The Stdlib Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
 import JSON
 
 """
-    gen( x, name )
+	gen( x, name )
 
 Generate fixture data and write to file.
 
@@ -31,7 +31,7 @@ Generate fixture data and write to file.
 # Examples
 
 ``` julia
-julia> x = linspace( -1000, 1000, 2001 );
+julia> x = range( -1000, stop = 1000, length = 2001 );
 julia> gen( x, \"data.json\" );
 ```
 """

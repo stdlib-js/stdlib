@@ -14,7 +14,7 @@
     }
   ],
   "bin": {
-    "herndon-venus-semidiameter-residuals": "./bin/cli"
+    "herndon-venus-semidiameters": "./bin/cli"
   },
   "main": "./lib",
   "browser": "./lib/browser.js",

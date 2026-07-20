@@ -37,7 +37,7 @@ The [geometric mean][geometric-mean] is defined as the nth root of a product of 
     <br>
 </div> -->
 
-<!-- </equation> --> 
+<!-- </equation> -->
 
 </section>
 

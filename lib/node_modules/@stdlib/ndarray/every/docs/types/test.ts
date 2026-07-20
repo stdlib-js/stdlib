@@ -25,7 +25,7 @@ import every = require( './index' );
 
 // TESTS //
 
-// The function returns an boolean ndarray...
+// The function returns a boolean ndarray...
 {
 	const x = zeros( [ 2, 2 ] );
 

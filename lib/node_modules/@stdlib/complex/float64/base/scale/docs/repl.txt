@@ -21,11 +21,7 @@
     > var z = new {{alias:@stdlib/complex/float64/ctor}}( 5.0, 3.0 )
     <Complex128>
     > var out = {{alias}}( 5.0, z )
-    <Complex128>
-    > var re = {{alias:@stdlib/complex/float64/real}}( out )
-    25.0
-    > var im = {{alias:@stdlib/complex/float64/imag}}( out )
-    15.0
+    <Complex128>[ 25.0, 15.0 ]
 
 
 {{alias}}.assign( alpha, re, im, out, strideOut, offsetOut )

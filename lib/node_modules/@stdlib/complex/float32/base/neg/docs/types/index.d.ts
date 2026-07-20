@@ -30,54 +30,27 @@ import { Complex64 } from '@stdlib/types/complex';
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var z = new Complex64( -4.2, 5.5 );
-* // returns <Complex64>
 *
 * var out = cnegf( z );
-* // returns <Complex64>
-*
-* var re = realf( out );
-* // returns 4.2
-*
-* var im = imagf( out );
-* // returns -5.5
+* // returns <Complex64>[ ~4.2, -5.5 ]
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var z = new Complex64( 0.0, 0.0 );
-* // returns <Complex64>
 *
 * var out = cnegf( z );
-* // returns <Complex64>
-*
-* var re = realf( out );
-* // returns -0.0
-*
-* var im = imagf( out );
-* // returns -0.0
+* // returns <Complex64>[ -0.0, -0.0 ]
 *
 * @example
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
-* var realf = require( '@stdlib/complex/float32/real' );
-* var imagf = require( '@stdlib/complex/float32/imag' );
 *
 * var z = new Complex64( NaN, NaN );
-* // returns <Complex64>
 *
 * var out = cnegf( z );
-* // returns <Complex64>
-*
-* var re = realf( out );
-* // returns NaN
-*
-* var im = imagf( out );
-* // returns NaN
+* // returns <Complex64>[ NaN, NaN ]
 */
 declare function cnegf( z: Complex64 ): Complex64;
 

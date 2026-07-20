@@ -224,7 +224,7 @@ int main( void ) {
         alpha = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
         beta = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
         y = stdlib_base_dists_beta_stdev( alpha, beta );
-        printf( "alpha: %lf, beta: %lf, F(X;a,b): %lf\n", alpha, beta, y );
+        printf( "α: %lf, β: %lf, SD(X;α,β): %lf\n", alpha, beta, y );
     }
 }
 ```

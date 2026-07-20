@@ -1,0 +1,23 @@
+
+{{alias}}( x )
+    Converts an ndarray-like object to a scalar value.
+
+    Parameters
+    ----------
+    x: ndarrayLike
+        Input ndarray-like object.
+
+    Returns
+    -------
+    out: any
+        Scalar value.
+
+    Examples
+    --------
+    > var arr = {{alias:@stdlib/ndarray/from-scalar}}( 1.0 );
+    > var out = {{alias}}( arr )
+    1.0
+
+    See Also
+    --------
+
