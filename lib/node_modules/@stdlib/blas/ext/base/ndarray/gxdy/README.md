@@ -104,7 +104,7 @@ var opts = {
 var x = discreteUniform( [ 10 ], -100, 100, opts );
 console.log( ndarray2array( x ) );
 
-var y = discreteUniform( [ 10 ], -100, 100, opts );
+var y = discreteUniform( [ 10 ], 1, 100, opts );
 console.log( ndarray2array( y ) );
 
 gxdy( [ x, y ] );
