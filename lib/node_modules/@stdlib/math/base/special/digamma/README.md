@@ -97,18 +97,16 @@ var v = digamma( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var digamma = require( '@stdlib/math/base/special/digamma' );
 
-var x;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -5.0, 5.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = (randu()*10.0) - 5.0;
-    v = digamma( x );
-    console.log( 'x: %d, f(x): %d', x, v );
-}
+logEachMap( 'x: %0.4f, f(x): %0.4f', x, digamma );
 ```
 
 </section>

@@ -74,5 +74,95 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "acovercos",
+      "alias": "acovercosf",
+      "pkg_desc": "compute the inverse coversed cosine of a single-precision floating-point number (in radians)",
+      "desc": "computes the inverse coversed cosine of a single-precision floating-point number (in radians)",
+      "short_desc": "inverse coversed cosine",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": 2
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0,
+              2
+            ]
+          },
+          "example_values": [
+            0.84,
+            1.37,
+            0.12,
+            1.93,
+            0.65,
+            1.18,
+            0.48,
+            1.79,
+            0.05,
+            1.66,
+            0.9,
+            1.11,
+            1.52,
+            0.27,
+            0.33,
+            1.74,
+            0,
+            0.71,
+            1.25,
+            0.58
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "inverse coversed cosine",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "acovercos",
+        "acovercosin",
+        "acovercosine",
+        "arccovercos",
+        "arccovercosin",
+        "versed cosine",
+        "acovercosinus",
+        "acvc",
+        "arc",
+        "versed",
+        "coversed",
+        "cosine",
+        "cos",
+        "asin",
+        "trig",
+        "trigonometry",
+        "radians",
+        "angle"
+      ],
+      "extra_keywords": [
+        "math.asin"
+      ]
+    }
+  }
 }

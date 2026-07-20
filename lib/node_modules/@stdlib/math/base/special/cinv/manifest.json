@@ -40,6 +40,7 @@
         "@stdlib/complex/float64/ctor",
         "@stdlib/complex/float64/reim",
         "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/max",
         "@stdlib/constants/float64/max",
         "@stdlib/constants/float64/eps",
         "@stdlib/constants/float64/smallest-normal"
@@ -59,6 +60,7 @@
         "@stdlib/complex/float64/ctor",
         "@stdlib/complex/float64/reim",
         "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/max",
         "@stdlib/constants/float64/max",
         "@stdlib/constants/float64/eps",
         "@stdlib/constants/float64/smallest-normal"
@@ -78,6 +80,7 @@
         "@stdlib/complex/float64/ctor",
         "@stdlib/complex/float64/reim",
         "@stdlib/math/base/special/abs",
+        "@stdlib/math/base/special/max",
         "@stdlib/constants/float64/max",
         "@stdlib/constants/float64/eps",
         "@stdlib/constants/float64/smallest-normal"

@@ -65,15 +65,16 @@ v = secd( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/base/linspace' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var secd = require( '@stdlib/math/base/special/secd' );
 
-var x = linspace( 1.1, 5.1, 100 );
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 100, -10.0, 10.0, opts );
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( secd( x[ i ] ) );
-}
+logEachMap( 'secd(%0.4f) = %0.4f', x, secd );
 ```
 
 </section>

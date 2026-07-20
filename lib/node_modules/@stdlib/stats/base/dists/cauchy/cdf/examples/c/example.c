@@ -27,9 +27,9 @@ static double random_uniform( const double min, const double max ) {
 
 int main( void ) {
 	double gamma;
-	double x;
 	double x0;
 	double y;
+	double x;
 	int i;
 
 	for ( i = 0; i < 25; i++ ) {

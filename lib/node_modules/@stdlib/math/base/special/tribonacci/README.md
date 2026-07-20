@@ -176,19 +176,19 @@ for ( i = 0; i < 64; i++ ) {
 Computes the nth [Tribonacci number][tribonacci-number].
 
 ```c
-double out = stdlib_base_tribonacci( 0 );
-// returns 0
+double out = stdlib_base_tribonacci( 0.0 );
+// returns 0.0
 
-out = stdlib_base_tribonacci( 1 );
-// returns 0
+out = stdlib_base_tribonacci( 1.0 );
+// returns 0.0
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int32_t` input value.
+-   **n**: `[in] double` input value.
 
 ```c
-double stdlib_base_tribonacci( const int32_t n );
+double stdlib_base_tribonacci( const double n );
 ```
 
 </section>
@@ -212,15 +212,14 @@ double stdlib_base_tribonacci( const int32_t n );
 ```c
 #include "stdlib/math/base/special/tribonacci.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-    int32_t i;
+    double i;
     double v;
 
-    for ( i = 0; i < 64; i++ ) {
+    for ( i = 0.0; i < 64.0; i++ ) {
         v = stdlib_base_tribonacci( i );
-        printf( "tribonacci(%d) = %lf\n", i, v );
+        printf( "tribonacci(%lf) = %lf\n", i, v );
     }
 }
 ```

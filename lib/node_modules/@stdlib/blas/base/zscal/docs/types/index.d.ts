@@ -98,7 +98,7 @@ interface Routine {
 * var alpha = new Complex128( 2.0, 2.0 );
 *
 * zscal.ndarray( 2, alpha, x, 1, 1 );
-* // x => <Complex128Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
+* // x => <Complex128Array>[ 1.0, 2.0, -2.0, 14.0, -2.0, 22.0 ]
 */
 declare var zscal: Routine;
 
