@@ -32,6 +32,11 @@ The `dgttrf` routine computes an LU factorization of a real N-by-N tridiagonal m
 A = L U
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="A = L U" data-equation="eq:lu_decomposition">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c4d46b7cc46098480b669a07e94be382a39cff2e/lib/node_modules/@stdlib/lapack/base/dgttrf/docs/img/equation_lu_decomposition.svg" alt="Equation for LU factorization.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 where `L` is a product of permutation and unit lower bidiagonal matrices and `U` is upper triangular with non-zeros in only the main diagonal and first two superdiagonals.
@@ -41,16 +46,13 @@ For a 5-by-5 tridiagonal matrix `A`, elements are stored in three arrays:
 <!-- <equation class="equation" label="eq:matrix_a" align="center" raw="A = \left[\begin{array}{rrrrr}d_1     & du_1     & 0       & 0          & 0 \\dl_1    & d_2      & du_2    & 0          & 0 \\0       & dl_2     & d_3     & du_3       & 0 \\0       & 0        & dl_3    & d_4        & du_4 \\0       & 0        & 0       & dl_4       & d_5\end{array}\right]" alt="Representation of matrix A."> -->
 
 ```math
-A = \left[
-\begin{array}{rrrrr}
-    d_1     & du_1     & 0       & 0          & 0 \\
-    dl_1    & d_2      & du_2    & 0          & 0 \\
-    0       & dl_2     & d_3     & du_3       & 0 \\
-    0       & 0        & dl_3    & d_4        & du_4 \\
-    0       & 0        & 0       & dl_4       & d_5
-    \end{array}
-\right]
+A = \left[\begin{array}{rrrrr}d_1     & du_1     & 0       & 0          & 0 \\dl_1    & d_2      & du_2    & 0          & 0 \\0       & dl_2     & d_3     & du_3       & 0 \\0       & 0        & dl_3    & d_4        & du_4 \\0       & 0        & 0       & dl_4       & d_5\end{array}\right]
 ```
+
+<!-- <div class="equation" align="center" data-raw-text="A = \left[\begin{array}{rrrrr}d_1     &amp; du_1     &amp; 0       &amp; 0          &amp; 0 \\dl_1    &amp; d_2      &amp; du_2    &amp; 0          &amp; 0 \\0       &amp; dl_2     &amp; d_3     &amp; du_3       &amp; 0 \\0       &amp; 0        &amp; dl_3    &amp; d_4        &amp; du_4 \\0       &amp; 0        &amp; 0       &amp; dl_4       &amp; d_5\end{array}\right]" data-equation="eq:matrix_a">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c4d46b7cc46098480b669a07e94be382a39cff2e/lib/node_modules/@stdlib/lapack/base/dgttrf/docs/img/equation_matrix_a.svg" alt="Representation of matrix A.">
+    <br>
+</div> -->
 
 <!-- </equation> -->
 
@@ -71,32 +73,26 @@ The resulting `L` and `U` matrices have the following structure:
 <!-- <equation class="equation" label="eq:matrix_l" align="center" raw="L = \left[\begin{array}{rrrrr}1      & 0      & 0      & 0      & 0 \\l_1    & 1      & 0      & 0      & 0 \\0      & l_2    & 1      & 0      & 0 \\0      & 0      & l_3    & 1      & 0 \\0      & 0      & 0      & l_4    & 1\end{array}\right]" alt="Representation of matrix L as derived from DL."> -->
 
 ```math
-L = \left[
-    \begin{array}{rrrrr}
-    1      & 0      & 0      & 0      & 0 \\
-    l_1    & 1      & 0      & 0      & 0 \\
-    0      & l_2    & 1      & 0      & 0 \\
-    0      & 0      & l_3    & 1      & 0 \\
-    0      & 0      & 0      & l_4    & 1
-    \end{array}
-\right]
+L = \left[\begin{array}{rrrrr}1      & 0      & 0      & 0      & 0 \\l_1    & 1      & 0      & 0      & 0 \\0      & l_2    & 1      & 0      & 0 \\0      & 0      & l_3    & 1      & 0 \\0      & 0      & 0      & l_4    & 1\end{array}\right]
 ```
+
+<!-- <div class="equation" align="center" data-raw-text="L = \left[\begin{array}{rrrrr}1      &amp; 0      &amp; 0      &amp; 0      &amp; 0 \\l_1    &amp; 1      &amp; 0      &amp; 0      &amp; 0 \\0      &amp; l_2    &amp; 1      &amp; 0      &amp; 0 \\0      &amp; 0      &amp; l_3    &amp; 1      &amp; 0 \\0      &amp; 0      &amp; 0      &amp; l_4    &amp; 1\end{array}\right]" data-equation="eq:matrix_l">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c4d46b7cc46098480b669a07e94be382a39cff2e/lib/node_modules/@stdlib/lapack/base/dgttrf/docs/img/equation_matrix_l.svg" alt="Representation of matrix L as derived from DL.">
+    <br>
+</div> -->
 
 <!-- </equation> -->
 
 <!-- <equation class="equation" label="eq:matrix_u" align="center" raw="U = \left[\begin{array}{rrrrr}u_{1,1} & u_{1,2} & u_{1,3} & 0       & 0 \\0       & u_{2,2} & u_{2,3} & u_{2,4} & 0 \\0       & 0       & u_{3,3} & u_{3,4} & u_{3,5} \\0       & 0       & 0       & u_{4,4} & u_{4,5} \\0       & 0       & 0       &  0      & u_{5,5}\end{array}\right]" alt="Representation of matrix U as derived from D, DU, DU2."> -->
 
 ```math
-U = \left[
-    \begin{array}{rrrrr}
-    u_{1,1} & u_{1,2} & u_{1,3} & 0       & 0 \\
-    0       & u_{2,2} & u_{2,3} & u_{2,4} & 0 \\
-    0       & 0       & u_{3,3} & u_{3,4} & u_{3,5} \\
-    0       & 0       & 0       & u_{4,4} & u_{4,5} \\
-    0       & 0       & 0       &  0      & u_{5,5}
-    \end{array}
-\right]
+U = \left[\begin{array}{rrrrr}u_{1,1} & u_{1,2} & u_{1,3} & 0       & 0 \\0       & u_{2,2} & u_{2,3} & u_{2,4} & 0 \\0       & 0       & u_{3,3} & u_{3,4} & u_{3,5} \\0       & 0       & 0       & u_{4,4} & u_{4,5} \\0       & 0       & 0       &  0      & u_{5,5}\end{array}\right]
 ```
+
+<!-- <div class="equation" align="center" data-raw-text="U = \left[\begin{array}{rrrrr}u_{1,1} &amp; u_{1,2} &amp; u_{1,3} &amp; 0       &amp; 0 \\0       &amp; u_{2,2} &amp; u_{2,3} &amp; u_{2,4} &amp; 0 \\0       &amp; 0       &amp; u_{3,3} &amp; u_{3,4} &amp; u_{3,5} \\0       &amp; 0       &amp; 0       &amp; u_{4,4} &amp; u_{4,5} \\0       &amp; 0       &amp; 0       &amp;  0      &amp; u_{5,5}\end{array}\right]" data-equation="eq:matrix_u">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c4d46b7cc46098480b669a07e94be382a39cff2e/lib/node_modules/@stdlib/lapack/base/dgttrf/docs/img/equation_matrix_u.svg" alt="Representation of matrix U as derived from D, DU, DU2.">
+    <br>
+</div> -->
 
 <!-- </equation> -->
 
