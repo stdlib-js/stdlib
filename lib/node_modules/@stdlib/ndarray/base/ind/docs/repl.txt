@@ -51,8 +51,8 @@
 
     The function returns a function which accepts the following arguments:
 
-    - idx: index
-    - max: maximum index value
+    - idx: index.
+    - max: maximum index value.
 
     Parameters
     ----------

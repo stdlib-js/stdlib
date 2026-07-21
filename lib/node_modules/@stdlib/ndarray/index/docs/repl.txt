@@ -1,0 +1,301 @@
+
+{{alias}}( x[, options] )
+    Wraps a provided array as an ndarray index object.
+
+    ndarray index instances have no explicit functionality; however, they are
+    used by "fancy" ndarrays for element retrieval and assignment.
+
+    By default, an instance is invalidated and removed from an internal cache
+    immediately after a consumer resolves the underlying data associated with an
+    instance using the `get` static method. Immediate invalidation and cache
+    removal ensures that references to the underlying ndarray are not the source
+    of memory leaks.
+
+    Because instances leverage an internal cache implementing the Singleton
+    pattern, one must be sure to use the same constructor as consumers. If one
+    uses a different constructor, the consumer will *not* be able to resolve the
+    original wrapped ndarray, as the consumer will attempt to resolve an
+    instance in the wrong internal cache.
+
+    Because non-persisted instances are freed after first use, in order to avoid
+    holding onto memory and to allow garbage collection, one should avoid
+    scenarios in which an instance is never used.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.persist: boolean (optional)
+        Boolean indicating whether to continue persisting an index object after
+        first usage. Default: false.
+
+    options.kind: string (optional)
+        Specifies whether a provided ndarray is a specialized input ndarray
+        "kind". This option is only applicable for integer input ndarrays. Must
+        be one of the following:
+
+        - cartesian: a provided input ndarray contains Cartesian indices.
+        - linear: a provided input ndarray contains indices representing
+          locations in linear memory.
+
+        Default: ''.
+
+    Returns
+    -------
+    out: ndindex
+        Index instance.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = new {{alias}}( x );
+
+
+{{alias}}.free( id )
+    Frees the instance associated with a provided identifier.
+
+    Parameters
+    ----------
+    id: string
+        Instance identifier.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an instance was successfully freed.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = new {{alias}}( x );
+    > {{alias}}.free( idx.id )
+    <boolean>
+
+
+{{alias}}.get( id )
+    Returns the ndarray associated with the instance having a provided
+    identifier.
+
+    Parameters
+    ----------
+    id: string
+        Instance identifier.
+
+    Returns
+    -------
+    out: Object
+        Object containing ndarray data.
+
+    out.data: ndarray
+        The underlying ndarray associated with the provided identifier.
+
+    out.type: string
+        The type of ndarray index.
+
+    out.dtype: string
+        The data type of the underlying ndarray.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = new {{alias}}( x );
+    > {{alias}}.get( idx.id )
+    {...}
+
+
+{{alias}}.cartesianIndex( x[, options] )
+    Returns an ndarray index containing Cartesian indices.
+
+    This is a convenience method for calling `{{alias}}` with `kind` set to
+    'cartesian'.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.persist: boolean (optional)
+        Boolean indicating whether to continue persisting an index object after
+        first usage. Default: false.
+
+    Returns
+    -------
+    out: ndindex
+        Index instance.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = {{alias}}.cartesianIndex( x );
+
+
+{{alias}}.linearIndex( x[, options] )
+    Returns an ndarray index for indices representing locations in linear
+    memory.
+
+    This is a convenience method for calling `{{alias}}` with `kind` set to
+    'linear'.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.persist: boolean (optional)
+        Boolean indicating whether to continue persisting an index object after
+        first usage. Default: false.
+
+    Returns
+    -------
+    out: ndindex
+        Index instance.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 5 ], { 'dtype': 'int32' } );
+    > var idx = {{alias}}.linearIndex( x );
+
+
+{{alias}}.prototype.data
+    Read-only property returning an ndarray view of the underlying index
+    ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Array data.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = new {{alias}}( x );
+    > idx.data
+    <ndarray>
+
+
+{{alias}}.prototype.dtype
+    Read-only property returning the underlying data type of the index ndarray.
+
+    Returns
+    -------
+    out: string
+        Array data type.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = new {{alias}}( x );
+    > idx.dtype
+    'int32'
+
+
+{{alias}}.prototype.id
+    Read-only property returning the unique identifier associated with an
+    instance.
+
+    Returns
+    -------
+    out: string
+        String identifier.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = new {{alias}}( x );
+    > idx.id
+    <string>
+
+
+{{alias}}.prototype.isCached
+    Read-only property returning a boolean indicating whether an ndarray index
+    is actively cached.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether an ndarray index is actively cached.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = new {{alias}}( x );
+    > idx.isCached
+    true
+
+
+{{alias}}.prototype.kind
+    Read-only property returning the ndarray index kind.
+
+    Returns
+    -------
+    out: string
+        Index kind.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = new {{alias}}( x, { 'kind': 'cartesian' } );
+    > idx.kind
+    'cartesian'
+
+
+{{alias}}.prototype.type
+    Read-only property returning the ndarray index type.
+
+    Returns
+    -------
+    out: string
+        Index type.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = new {{alias}}( x );
+    > idx.type
+    <string>
+
+
+{{alias}}.prototype.toString()
+    Serializes an instance as a string.
+
+    Returns
+    -------
+    str: string
+        Serialized string.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = new {{alias}}( x );
+    > idx.toString()
+    <string>
+
+
+{{alias}}.prototype.toJSON()
+    Serializes an instance as a JSON object.
+
+    Returns
+    -------
+    obj: Object
+        JSON object.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/empty}}( [ 2, 2 ], { 'dtype': 'int32' } );
+    > var idx = new {{alias}}( x );
+    > idx.toJSON()
+    { 'type': 'ndindex', ... }
+
+    See Also
+    --------
+

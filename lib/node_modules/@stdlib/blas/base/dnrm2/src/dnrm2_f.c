@@ -19,6 +19,7 @@
 #include "stdlib/blas/base/dnrm2.h"
 #include "stdlib/blas/base/dnrm2_fortran.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Computes the L2-norm of a double-precision floating-point vector.
@@ -30,6 +31,22 @@
 */
 double API_SUFFIX(c_dnrm2)( const CBLAS_INT N, const double *X, const CBLAS_INT stride ) {
 	double nrm2;
+	dnrm2sub( &N, X, &stride, &nrm2 );
+	return nrm2;
+}
+
+/**
+* Computes the L2-norm of a double-precision floating-point vector using alternative indexing semantics.
+*
+* @param N       number of indexed elements
+* @param X       input array
+* @param stride  stride length
+* @param offset  starting index
+* @return        L2-norm
+*/
+double API_SUFFIX(c_dnrm2_ndarray)( const CBLAS_INT N, const double *X, const CBLAS_INT stride, const CBLAS_INT offset ) {
+	double nrm2;
+	X += stdlib_strided_min_view_buffer_index( N, stride, offset ); // adjust array pointer
 	dnrm2sub( &N, X, &stride, &nrm2 );
 	return nrm2;
 }

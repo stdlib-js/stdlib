@@ -1,9 +1,9 @@
 
-{{alias}}( N, x, stride )
+{{alias}}( N, x, strideX )
     Reverses a single-precision floating-point strided array in-place.
 
-    The `N` and `stride` parameters determine which elements in the strided
-    array are accessed at runtime.
+    The `N` and stride parameters determine which elements in the strided array
+    are accessed at runtime.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
@@ -18,8 +18,8 @@
     x: Float32Array
         Input array.
 
-    stride: integer
-        Index increment for `x`.
+    strideX: integer
+        Stride length.
 
     Returns
     -------
@@ -33,7 +33,7 @@
     > {{alias}}( x.length, x, 1 )
     <Float32Array>[ -3.0, -1.0, 4.0, -5.0, 3.0, 1.0, -2.0 ]
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float32}}( [ -2.0, 1.0, 3.0, -5.0, 4.0, -1.0, -3.0 ] );
     > {{alias}}( 3, x, 2 )
     <Float32Array>[ 4.0, 1.0, 3.0, -5.0, -2.0, -1.0, -3.0 ]
@@ -47,13 +47,13 @@
     <Float32Array>[ 1.0, -6.0, 3.0, -4.0, 5.0, -2.0 ]
 
 
-{{alias}}.ndarray( N, x, stride, offset )
+{{alias}}.ndarray( N, x, strideX, offsetX )
     Reverses a single-precision floating-point strided array in-place using
     alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
-    starting index.
+    buffer, the offset parameter supports indexing semantics based on a starting
+    index.
 
     Parameters
     ----------
@@ -63,11 +63,11 @@
     x: Float32Array
         Input array.
 
-    stride: integer
-        Index increment for `x`.
+    strideX: integer
+        Stride length.
 
-    offset: integer
-        Starting index of `x`.
+    offsetX: integer
+        Starting index.
 
     Returns
     -------

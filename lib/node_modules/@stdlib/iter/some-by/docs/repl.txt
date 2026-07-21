@@ -5,8 +5,8 @@
 
     The predicate function is provided two arguments:
 
-    - value: iterated value
-    - index: iteration index
+    - value: iterated value.
+    - index: iteration index.
 
     The function immediately returns upon encountering `n` truthy return values.
 

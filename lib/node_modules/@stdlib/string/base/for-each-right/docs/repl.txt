@@ -1,13 +1,13 @@
 
 {{alias}}( str, clbk[, thisArg] )
-    Invokes a function for each UTF-16 code unit in a string, iterating from 
+    Invokes a function for each UTF-16 code unit in a string, iterating from
     right to left.
 
     When invoked, the provided function is provided three arguments:
 
-    - value: character
-    - index: character index
-    - str: input string
+    - value: character.
+    - index: character index.
+    - str: input string.
 
     Parameters
     ----------

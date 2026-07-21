@@ -40,8 +40,8 @@
         Input array data type.
 
     out.accessorProtocol: boolean
-        Boolean indicating whether the input array use accessors for getting and
-        setting elements.
+        Boolean indicating whether the input array uses accessors for getting
+        and setting elements.
 
     out.accessors: Array<Function>
         A two-element array whose first element is an accessor for retrieving an

@@ -42,7 +42,7 @@ var parseComplex64 = require( '@stdlib/complex/float32/parse' );
 
 #### parseComplex64( str )
 
-Parse a string representation of a 64-bit [complex number][@stdlib/complex/float32/ctor].
+Parses a string representation of a 64-bit [complex number][@stdlib/complex/float32/ctor].
 
 ```javascript
 var parseComplex64 = require( '@stdlib/complex/float32/parse' );

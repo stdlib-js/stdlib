@@ -73,7 +73,7 @@ type MapFunction = Nullary | Unary | Binary | Ternary;
 * Returns an iterator which iterates from right to left over each grapheme cluster in a string.
 *
 * @param src - input value
-* @param mapFc - function to invoke for each iterated value
+* @param mapFcn - function to invoke for each iterated value
 * @param thisArg - execution context
 * @returns iterator
 *

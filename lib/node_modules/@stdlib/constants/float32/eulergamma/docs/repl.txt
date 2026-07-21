@@ -1,0 +1,12 @@
+
+{{alias}}
+    The Euler-Mascheroni constant.
+
+    Examples
+    --------
+    > {{alias}}
+    0.5772156715393066
+
+    See Also
+    --------
+

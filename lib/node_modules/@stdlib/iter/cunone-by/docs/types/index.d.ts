@@ -63,6 +63,7 @@ type Predicate<T, U> = Nullary<U> | Unary<T, U> | Binary<T, U>;
 *
 * @param iterator - source iterator
 * @param predicate - predicate function
+* @param thisArg - execution context
 * @returns iterator
 *
 * @example
@@ -94,4 +95,4 @@ declare function iterCuNoneBy<T, U>( iterator: Iterator<T>, predicate: Predicate
 
 // EXPORTS //
 
-export = iterCuNoneBy ;
+export = iterCuNoneBy;

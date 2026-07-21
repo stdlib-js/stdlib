@@ -23,7 +23,7 @@ import reduce = require( './index' );
 * Callback function.
 *
 * @param acc - accumulated value
-* @param v - array element
+* @param value - array element
 * @returns result
 */
 function clbk( acc: number, value: number ): number {

@@ -45,10 +45,12 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-float",
         "@stdlib/napi/argv-strided-complex64array",
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor"
       ]
     },
     {
@@ -57,7 +59,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/csrot.c"
+        "./src/csrot.c",
+        "./src/csrot_ndarray.c"
       ],
       "include": [
         "./include"
@@ -75,7 +78,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/csrot.c"
+        "./src/csrot.c",
+        "./src/csrot_ndarray.c"
       ],
       "include": [
         "./include"
@@ -107,10 +111,12 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-float",
         "@stdlib/napi/argv-strided-complex64array",
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor"
       ]
     },
     {
@@ -130,7 +136,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
     {
@@ -150,7 +158,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
 
@@ -171,10 +181,12 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-float",
         "@stdlib/napi/argv-strided-complex64array",
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor"
       ]
     },
     {
@@ -183,7 +195,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/csrot.c"
+        "./src/csrot.c",
+        "./src/csrot_ndarray.c"
       ],
       "include": [
         "./include"
@@ -201,7 +214,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/csrot.c"
+        "./src/csrot.c",
+        "./src/csrot_ndarray.c"
       ],
       "include": [
         "./include"
@@ -232,10 +246,12 @@
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-float",
         "@stdlib/napi/argv-strided-complex64array",
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor"
       ]
     },
     {
@@ -254,7 +270,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
     {
@@ -273,7 +291,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
 
@@ -299,7 +319,8 @@
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-float",
         "@stdlib/napi/argv-strided-complex64array",
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/complex/float32/ctor"
       ]
     },
     {
@@ -319,7 +340,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
     {
@@ -339,7 +362,9 @@
       ],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/base/shared"
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
+        "@stdlib/complex/float32/ctor"
       ]
     },
 
@@ -349,7 +374,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/csrot.c"
+        "./src/csrot.c",
+        "./src/csrot_ndarray.c"
       ],
       "include": [
         "./include"
@@ -372,7 +398,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/csrot.c"
+        "./src/csrot.c",
+        "./src/csrot_ndarray.c"
       ],
       "include": [
         "./include"
@@ -390,7 +417,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/csrot.c"
+        "./src/csrot.c",
+        "./src/csrot_ndarray.c"
       ],
       "include": [
         "./include"
@@ -409,7 +437,8 @@
       "blas": "",
       "wasm": true,
       "src": [
-        "./src/csrot.c"
+        "./src/csrot.c",
+        "./src/csrot_ndarray.c"
       ],
       "include": [
         "./include"

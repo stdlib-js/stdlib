@@ -86,6 +86,6 @@ import put = require( './index' );
 	put(); // $ExpectError
 	put( [] ); // $ExpectError
 	put( [], [] ); // $ExpectError
-	put( [], [], [], ); // $ExpectError
+	put( [], [], [] ); // $ExpectError
 	put( [], [], [], 'throw', {} ); // $ExpectError
 }

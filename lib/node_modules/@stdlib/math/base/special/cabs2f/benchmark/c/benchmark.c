@@ -87,7 +87,7 @@ static float rand_float( void ) {
 * Computes the squared absolute value of a complex number.
 *
 * @param z  input value
-* @return squared absolute value
+* @return   squared absolute value
 */
 float cabs2f( float complex z ) {
 	return ( crealf(z)*crealf(z) ) + ( cimagf(z)*cimagf(z) );

@@ -20,7 +20,6 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Collection } from '@stdlib/types/array';
 import { Shape5D } from '@stdlib/types/ndarray';
 
 /**

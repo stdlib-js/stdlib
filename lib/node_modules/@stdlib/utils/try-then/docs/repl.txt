@@ -5,7 +5,7 @@
 
     The function `y` is provided a single argument:
 
-    - error: the error thrown by `x`
+    - error: the error thrown by `x`.
 
     Parameters
     ----------

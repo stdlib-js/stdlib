@@ -16,9 +16,9 @@
 * limitations under the License.
 */
 
-import isComplex = require( './index' );
 import Complex128 = require( '@stdlib/complex/float64/ctor' );
 import Complex64 = require( '@stdlib/complex/float32/ctor' );
+import isComplex = require( './index' );
 
 
 // TESTS //

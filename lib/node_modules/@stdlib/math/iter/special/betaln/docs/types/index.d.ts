@@ -55,7 +55,7 @@ type Iterator = Iter | IterableIterator;
 *
 * // ...
 */
-declare function iterBetaln( y: Iterator | number, x: Iterator | number ): Iterator;
+declare function iterBetaln( x: Iterator | number, y: Iterator | number ): Iterator;
 
 
 // EXPORTS //

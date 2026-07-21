@@ -89,20 +89,22 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double re[ 100 ];
+	double im[ 100 ];
 	double elapsed;
-	double re;
-	double im;
 	double t;
 	int i;
 
 	double complex z;
 
+	for ( i = 0; i < 100; i++ ) {
+		re[ i ] = ( 100.0*rand_double() ) - 50.0;
+		im[ i ] = ( 100.0*rand_double() ) - 50.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		re = ( 100.0*rand_double() ) - 50.0;
-		im = ( 100.0*rand_double() ) - 50.0;
-
-		z = cexp( re + I * im );
+		z = cexp( re[ i%100 ] + I * im[ i%100 ] );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;

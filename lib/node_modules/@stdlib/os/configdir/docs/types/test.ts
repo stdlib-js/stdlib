@@ -23,8 +23,8 @@ import configdir = require( './index' );
 
 // The function returns a string...
 {
-	configdir(); // $ExpectType string
-	configdir( 'appname/config' ); // $ExpectType string
+	configdir(); // $ExpectType string | null
+	configdir( 'appname/config' ); // $ExpectType string | null
 }
 
 // The compiler throws an error if the function is provided a value other than a string...

@@ -28,53 +28,53 @@
     {
       "task": "build",
       "src": [
-        "./src/dnannsum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/ext/base/dnannsumkbn",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-float64array"
+        "@stdlib/napi/argv-strided-float64array",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/dnannsum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/dnannsumkbn"
+        "@stdlib/blas/ext/base/dnannsumkbn",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dnannsum.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/blas/ext/base/dnannsumkbn"
+        "@stdlib/blas/ext/base/dnannsumkbn",
+        "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset"
       ]
     }
   ]

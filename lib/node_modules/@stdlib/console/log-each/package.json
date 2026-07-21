@@ -49,6 +49,16 @@
     "windows"
   ],
   "keywords": [
-    "stdlib"
+    "stdlib",
+    "console",
+    "log",
+    "debug",
+    "logger",
+    "print",
+    "stdout",
+    "array",
+    "each",
+    "element",
+    "format"
   ]
 }

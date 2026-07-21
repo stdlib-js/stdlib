@@ -6,9 +6,9 @@
 
     The callback function is provided the following arguments:
 
-    - value: array element
-    - indices: current array element indices
-    - arrays: input and output arrays
+    - value: array element.
+    - indices: current array element indices.
+    - arrays: input and output arrays.
 
     If the callback function does not return any value (or equivalently,
     explicitly returns `undefined`), the value is ignored.

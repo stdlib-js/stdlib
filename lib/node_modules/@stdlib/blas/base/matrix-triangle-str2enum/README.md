@@ -42,7 +42,7 @@ var str2enum = require( '@stdlib/blas/base/matrix-triangle-str2enum' );
 
 #### str2enum( operation )
 
-Return the enumeration constant associated with a BLAS matrix triangle.
+Returns the enumeration constant associated with a BLAS matrix triangle.
 
 ```javascript
 var v = str2enum( 'upper' );

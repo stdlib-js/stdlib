@@ -1,5 +1,5 @@
 
-{{alias}}( N, x, stride )
+{{alias}}( N, x, strideX )
     Reverses a double-precision floating-point strided array in-place.
 
     The `N` and stride parameters determine which elements in the strided array
@@ -18,8 +18,8 @@
     x: Float64Array
         Input array.
 
-    stride: integer
-        Index increment for `x`.
+    strideX: integer
+        Stride length for `x`.
 
     Returns
     -------
@@ -47,12 +47,12 @@
     <Float64Array>[ 1.0, -6.0, 3.0, -4.0, 5.0, -2.0 ]
 
 
-{{alias}}.ndarray( N, x, stride, offset )
+{{alias}}.ndarray( N, x, strideX, offsetX )
     Reverses a double-precision floating-point strided array in-place using
     alternative indexing semantics.
 
     While typed array views mandate a view offset based on the underlying
-    buffer, the `offset` parameter supports indexing semantics based on a
+    buffer, the offset parameter supports indexing semantics based on a
     starting index.
 
     Parameters
@@ -63,10 +63,10 @@
     x: Float64Array
         Input array.
 
-    stride: integer
-        Index increment for `x`.
+    strideX: integer
+        Stride length for `x`.
 
-    offset: integer
+    offsetX: integer
         Starting index of `x`.
 
     Returns

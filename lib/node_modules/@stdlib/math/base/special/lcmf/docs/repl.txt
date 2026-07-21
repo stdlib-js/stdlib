@@ -1,0 +1,31 @@
+
+{{alias}}( a, b )
+    Computes the least common multiple (lcm) of two single-precision
+    floating-point numbers.
+
+    If either `a` or `b` is `0`, the function returns `0`.
+
+    Both `a` and `b` must have integer values; otherwise, the function returns
+    `NaN`.
+
+    Parameters
+    ----------
+    a: integer
+        First integer.
+
+    b: integer
+        Second integer.
+
+    Returns
+    -------
+    out: integer
+        Least common multiple.
+
+    Examples
+    --------
+    > var v = {{alias}}( 21, 6 )
+    42
+
+    See Also
+    --------
+

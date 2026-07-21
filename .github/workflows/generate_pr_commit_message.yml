@@ -1,0 +1,116 @@
+#/
+# @license Apache-2.0
+#
+# Copyright (c) 2024 The Stdlib Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#/
+
+# Workflow name:
+name: generate_pr_commit_message
+
+# Workflow triggers:
+on:
+  pull_request_target:
+    types:
+      - labeled
+
+# Global permissions:
+permissions:
+  # Allow read-only access to the repository contents:
+  contents: read
+
+# Workflow jobs:
+jobs:
+
+  # Job to generate commit message draft:
+  generate-commit-message:
+
+    # Define a display name:
+    name: 'Generate PR Commit Message Draft'
+
+    # Define the type of virtual host machine:
+    runs-on: ubuntu-latest
+
+    # Ensure the job only runs when the specified label is added:
+    if: github.event.label.name == 'Ready to Merge'
+
+    # Define environment variables:
+    env:
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+
+    # Define the sequence of job steps...
+    steps:
+      # Checkout repository:
+      - name: 'Checkout repository'
+        # Pin action to full length commit SHA
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # Ensure we have access to the scripts directory and .mailmap file for generating the commit message:
+          sparse-checkout: |
+            .github/workflows/scripts
+            .mailmap
+          sparse-checkout-cone-mode: false
+
+      # Generate commit message:
+      - name: 'Generate commit message'
+        id: commit_message
+        shell: bash {0} # Omit -e to avoid triggering a failure if the script returns a non-zero exit code
+        run: |
+          COMMIT_MESSAGE=$($GITHUB_WORKSPACE/.github/workflows/scripts/generate_pr_commit_message/run $PR_NUMBER)
+          EXIT_CODE=$?
+
+          if [ $EXIT_CODE -eq 1 ]; then
+            echo "::error::Failed to generate commit message for PR #$PR_NUMBER"
+            exit 1
+          fi
+
+          echo "commit_message<<EOF" >> $GITHUB_OUTPUT
+          echo "$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          if [ $EXIT_CODE -eq 200 ]; then
+            echo "has_tracking_issue=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_tracking_issue=false" >> $GITHUB_OUTPUT
+          fi
+
+      # Check if the commit message already exists in the PR comments:
+      - name: 'Check if commit message already exists in PR comments'
+        uses: peter-evans/find-comment@b30e6a3c0ed37e7c023ccd3f1db5c6c0b0c23aad # v4.0.0
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body-includes: '<!-- PR_COMMIT_MESSAGE -->'
+
+      # Post commit message as PR comment:
+      - name: 'Post commit message as PR comment'
+        # Pin action to full length commit SHA
+        uses: peter-evans/create-or-update-comment@e8674b075228eee787fea43ef493e45ece1004c9 # v5.0.0
+        with:
+          token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          edit-mode: replace
+          body: |
+            ### PR Commit Message
+
+            ```text
+            ${{ steps.commit_message.outputs.commit_message }}
+            ```
+
+            *Please review the above commit message and make any necessary adjustments.*
+
+            ${{ steps.commit_message.outputs.has_tracking_issue == 'true' && '⚠️ **Action Required**: This PR references tracking issues. Please update the PR description to replace any "Closes", "Fixes", or "Resolves" keywords with "Ref" when referencing these issues.' || '' }}
+
+            <!-- PR_COMMIT_MESSAGE -->

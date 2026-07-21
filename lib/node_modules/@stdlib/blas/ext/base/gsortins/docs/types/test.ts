@@ -16,6 +16,7 @@
 * limitations under the License.
 */
 
+import AccessorArray = require( '@stdlib/array/base/accessor' );
 import gsortins = require( './index' );
 
 
@@ -25,7 +26,8 @@ import gsortins = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	gsortins( x.length, 1, x, 1 ); // $ExpectType NumericArray
+	gsortins( x.length, 1, x, 1 ); // $ExpectType Float64Array
+	gsortins( x.length, 1, new AccessorArray( x ), 1 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a number...
@@ -100,7 +102,8 @@ import gsortins = require( './index' );
 {
 	const x = new Float64Array( 10 );
 
-	gsortins.ndarray( x.length, 1, x, 1, 0 ); // $ExpectType NumericArray
+	gsortins.ndarray( x.length, 1, x, 1, 0 ); // $ExpectType Float64Array
+	gsortins.ndarray( x.length, 1, new AccessorArray( x ), 1, 0 ); // $ExpectType AccessorArray<number>
 }
 
 // The compiler throws an error if the `ndarray` method is provided a first argument which is not a number...

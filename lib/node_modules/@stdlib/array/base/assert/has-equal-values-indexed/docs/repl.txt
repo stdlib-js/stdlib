@@ -1,0 +1,30 @@
+
+{{alias}}( x, y )
+    Tests if two indexed arrays have equal values.
+
+    If provided arrays of unequal length, the function returns `false`.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        First input array.
+
+    y: Array|TypedArray|Object
+        Second input array.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if both arrays have equal values; otherwise,
+        the function returns `false`.
+
+    Examples
+    --------
+    > var x = [ 0, 0, 1, 0 ];
+    > var y = [ 0, 0, 1, 0 ];
+    > var out = {{alias}}( x, y )
+    true
+
+    See Also
+    --------
+

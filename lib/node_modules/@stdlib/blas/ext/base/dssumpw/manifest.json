@@ -28,49 +28,52 @@
     {
       "task": "build",
       "src": [
-        "./src/dssumpw.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
       "dependencies": [
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
-        "@stdlib/napi/argv-strided-float32array"
+        "@stdlib/napi/argv-strided-float32array",
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared",
+        "@stdlib/napi/create-double"
       ]
     },
     {
       "task": "benchmark",
       "src": [
-        "./src/dssumpw.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
+      ]
     },
     {
       "task": "examples",
       "src": [
-        "./src/dssumpw.c"
+        "./src/main.c"
       ],
       "include": [
         "./include"
       ],
-      "libraries": [
-        "-lm"
-      ],
+      "libraries": [],
       "libpath": [],
-      "dependencies": []
+      "dependencies": [
+        "@stdlib/strided/base/stride2offset",
+        "@stdlib/blas/base/shared"
+      ]
     }
   ]
 }

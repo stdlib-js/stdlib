@@ -32,4 +32,13 @@ int main( void ) {
 		printf( "x[ %i ] = %f + %fj\n", i, x[ i*2 ], x[ ( i*2 )+1 ] );
 		printf( "y[ %i ] = %f + %fj\n", i, y[ i*2 ], y[ ( i*2 )+1 ] );
 	}
+
+	// Swap elements using alternative indexing semantics:
+	c_zswap_ndarray( 4, (void *)x, -1, 3, (void *)y, -1, 3 );
+
+	// Print the result:
+	for ( int i = 0; i < 4; i++ ) {
+		printf( "x[ %i ] = %f + %fj\n", i, x[ i*2 ], x[ ( i*2 )+1 ] );
+		printf( "y[ %i ] = %f + %fj\n", i, y[ i*2 ], y[ ( i*2 )+1 ] );
+	}
 }

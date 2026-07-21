@@ -90,18 +90,21 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double x[ 100 ];
 	double elapsed;
 	double rem1;
 	double rem2;
-	double x;
 	double y;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( rand_double() * 200.0 ) - 100.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( rand_double() * 200.0 ) - 100.0;
-		y = stdlib_base_rempio2( x, &rem1, &rem2 );
+		y = stdlib_base_rempio2( x[ i % 100 ], &rem1, &rem2 );
 		if ( y != y ) {
 			printf( "should not return NaN\n" );
 			break;

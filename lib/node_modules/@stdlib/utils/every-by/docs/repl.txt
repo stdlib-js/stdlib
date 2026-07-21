@@ -5,9 +5,9 @@
 
     The predicate function is provided three arguments:
 
-    - `value`: collection value
-    - `index`: collection index
-    - `collection`: the input collection
+    - value: collection value.
+    - index: collection index.
+    - collection: the input collection.
 
     The function immediately returns upon encountering a non-truthy return
     value.

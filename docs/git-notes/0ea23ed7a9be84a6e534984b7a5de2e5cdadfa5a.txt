@@ -1,0 +1,5 @@
+---
+type: amend-message
+---
+bench: add missing docblock in `blas/base/sscal`
+

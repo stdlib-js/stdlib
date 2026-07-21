@@ -1,0 +1,81 @@
+{
+  "options": {
+    "task": "build",
+    "wasm": false
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/stats/base/dists/binomial/variance"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/ceil",
+        "@stdlib/stats/base/dists/binomial/variance"
+      ]
+    },
+    {
+      "task": "examples",
+      "wasm": false,
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/special/sqrt",
+        "@stdlib/math/base/special/ceil",
+        "@stdlib/stats/base/dists/binomial/variance"
+      ]
+    }
+  ]
+}

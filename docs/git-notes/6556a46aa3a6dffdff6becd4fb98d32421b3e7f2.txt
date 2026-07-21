@@ -1,0 +1,10 @@
+---
+type: amend-message
+---
+feat: add math/base/special/cfloorf
+
+PR-URL: stdlib-js#3058
+Ref: stdlib-js#649
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Reviewed-by: Gunj Joshi <gunjjoshi8372@gmail.com>

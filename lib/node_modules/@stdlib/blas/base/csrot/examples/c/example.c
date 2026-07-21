@@ -38,4 +38,12 @@ int main( void ) {
 		printf( "x[ %i ] = %f + %fj\n", i, x[ i*2 ], x[ (i*2)+1 ] );
 		printf( "y[ %i ] = %f + %fj\n", i, y[ i*2 ], y[ (i*2)+1 ] );
 	}
+
+	c_csrot_ndarray( N, (void *)x, -strideX, N-1, (void *)y, strideY, N-1, 0.8f, 0.6f );
+
+	// Print the result:
+	for ( int i = 0; i < N; i++ ) {
+		printf( "x[ %i ] = %f + %fj\n", i, x[ i*2 ], x[ (i*2)+1 ] );
+		printf( "y[ %i ] = %f + %fj\n", i, y[ i*2 ], y[ (i*2)+1 ] );
+	}
 }

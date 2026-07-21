@@ -45,6 +45,7 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -59,7 +60,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/cscal.c"
+        "./src/cscal.c",
+        "./src/cscal_ndarray.c"
       ],
       "include": [
         "./include"
@@ -68,6 +70,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
@@ -78,7 +81,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/cscal.c"
+        "./src/cscal.c",
+        "./src/cscal_ndarray.c"
       ],
       "include": [
         "./include"
@@ -87,6 +91,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
@@ -111,6 +116,7 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -136,6 +142,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -157,6 +164,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -178,6 +186,7 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -191,7 +200,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/cscal.c"
+        "./src/cscal.c",
+        "./src/cscal_ndarray.c"
       ],
       "include": [
         "./include"
@@ -200,6 +210,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
@@ -210,7 +221,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/cscal.c"
+        "./src/cscal.c",
+        "./src/cscal_ndarray.c"
       ],
       "include": [
         "./include"
@@ -219,6 +231,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
@@ -242,6 +255,7 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -266,6 +280,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -286,6 +301,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -309,6 +325,7 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -334,6 +351,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -355,6 +373,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/min-view-buffer-index",
         "@stdlib/complex/float32/ctor"
       ]
     },
@@ -365,7 +384,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/cscal.c"
+        "./src/cscal.c",
+        "./src/cscal_ndarray.c"
       ],
       "include": [
         "./include"
@@ -375,6 +395,7 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/napi/export",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
         "@stdlib/napi/argv-strided-complex64array",
@@ -389,7 +410,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/cscal.c"
+        "./src/cscal.c",
+        "./src/cscal_ndarray.c"
       ],
       "include": [
         "./include"
@@ -398,6 +420,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
@@ -408,7 +431,8 @@
       "blas": "",
       "wasm": false,
       "src": [
-        "./src/cscal.c"
+        "./src/cscal.c",
+        "./src/cscal_ndarray.c"
       ],
       "include": [
         "./include"
@@ -417,6 +441,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]
@@ -428,7 +453,8 @@
       "blas": "",
       "wasm": true,
       "src": [
-        "./src/cscal.c"
+        "./src/cscal.c",
+        "./src/cscal_ndarray.c"
       ],
       "include": [
         "./include"
@@ -437,6 +463,7 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/blas/base/shared",
+        "@stdlib/strided/base/stride2offset",
         "@stdlib/complex/float32/base/mul",
         "@stdlib/complex/float32/ctor"
       ]

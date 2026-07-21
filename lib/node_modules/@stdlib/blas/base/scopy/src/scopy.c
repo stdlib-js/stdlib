@@ -17,6 +17,8 @@
 */
 
 #include "stdlib/blas/base/scopy.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Copies values from `X` into `Y`.
@@ -27,53 +29,8 @@
 * @param Y        output array
 * @param strideY  Y stride length
 */
-void c_scopy( const int N, const float *X, const int strideX, float *Y, const int strideY ) {
-	int ix;
-	int iy;
-	int i;
-	int m;
-
-	if ( N <= 0 ) {
-		return;
-	}
-	// If both strides are equal to `1`, use unrolled loops...
-	if ( strideX == 1 && strideY == 1 ) {
-		m = N % 7;
-
-		// If we have a remainder, do a clean-up loop...
-		if ( m > 0 ) {
-			for ( i = 0; i < m; i++ ) {
-				Y[ i ] = X[ i ];
-			}
-			if ( N < 7 ) {
-				return;
-			}
-		}
-		for ( i = m; i < N; i += 7 ) {
-			Y[ i ] = X[ i ];
-			Y[ i+1 ] = X[ i+1 ];
-			Y[ i+2 ] = X[ i+2 ];
-			Y[ i+3 ] = X[ i+3 ];
-			Y[ i+4 ] = X[ i+4 ];
-			Y[ i+5 ] = X[ i+5 ];
-			Y[ i+6 ] = X[ i+6 ];
-		}
-		return;
-	}
-	if ( strideX < 0 ) {
-		ix = (1-N) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = (1-N) * strideY;
-	} else {
-		iy = 0;
-	}
-	for ( i = 0; i < N; i++ ) {
-		Y[ iy ] = X[ ix ];
-		ix += strideX;
-		iy += strideY;
-	}
-	return;
+void API_SUFFIX(c_scopy)( const CBLAS_INT N, const float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	API_SUFFIX(c_scopy_ndarray)( N, X, strideX, ox, Y, strideY, oy );
 }
