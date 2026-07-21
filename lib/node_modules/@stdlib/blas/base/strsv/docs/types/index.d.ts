@@ -60,7 +60,7 @@ interface Routine {
 	* @param N - number of elements along each dimension in the matrix `A`
 	* @param A - input matrix
 	* @param strideA1 - stride of the first dimension of `A`
-	* @param strideA2 - stride of the first dimension of `A`
+	* @param strideA2 - stride of the second dimension of `A`
 	* @param offsetA - starting index for `A`
 	* @param x - input vector
 	* @param strideX - `x` stride length
@@ -73,7 +73,7 @@ interface Routine {
 	* var A = new Float32Array( [ 1.0, 2.0, 3.0, 0.0, 1.0, 2.0, 0.0, 0.0, 1.0 ] ); // => [ [ 1.0, 2.0, 3.0 ], [ 0.0, 1.0, 2.0 ], [ 0.0, 0.0, 1.0 ] ]
 	* var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 	*
-	* strsv.ndarray( 'lower', 'no-transpose', 'unit', 3, A, 3, 1, 0, x, 1, 0 );
+	* strsv.ndarray( 'upper', 'no-transpose', 'unit', 3, A, 3, 1, 0, x, 1, 0 );
 	* // x => <Float32Array>[ 0.0, -4.0, 3.0 ]
 	*/
 	ndarray( uplo: MatrixTriangle, trans: TransposeOperation, diag: DiagonalType, N: number, A: Float32Array, strideA1: number, strideA2: number, offsetA: number, x: Float32Array, strideX: number, offsetX: number ): Float32Array;

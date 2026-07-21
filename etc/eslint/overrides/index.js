@@ -162,7 +162,7 @@ var overrides = [
 			'stdlib/return-annotations-values': 'off',
 			'strict': 'off',
 			'vars-on-top': 'off',
-			'node/no-unpublished-require': 'off'
+			'n/no-unpublished-require': 'off'
 		}
 	},
 	{
