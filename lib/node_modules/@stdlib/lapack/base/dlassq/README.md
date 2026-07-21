@@ -28,10 +28,14 @@ This routine returns the values $s_{textrm{out}}$ and $\\textrm{ss}_{\\textrm{ou
 
 <!-- <equation class="equation" label="eq:sum_of_squares" align="center" raw="s_{\textrm{out}}^2 \cdot \textrm{ss}_{\textrm{out}} = x_0^2 + \ldots + x_{N-1}^2 + s_{\textrm{in}}^2 \cdot \textrm{ss}_{\textrm{in}}" alt="Sum of squares represented in scaled form"> -->
 
-<div class="equation" align="center" data-raw-text="s_{\textrm{out}}^2 \cdot \textrm{ss}_{\textrm{out}} = x_0^2 + \ldots + x_{N-1}^2 + s_{\textrm{in}}^2 \cdot \textrm{ss}_{\textrm{in}}" data-equation="eq:sum_of_squares">
-    <img src="" alt="Sum of squares represented in scaled form">
+```math
+s_{\textrm{out}}^2 \cdot \textrm{ss}_{\textrm{out}} = x_0^2 + \ldots + x_{N-1}^2 + s_{\textrm{in}}^2 \cdot \textrm{ss}_{\textrm{in}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="s_{\textrm{out}}^2 \cdot \textrm{ss}_{\textrm{out}} = x_0^2 + \ldots + x_{N-1}^2 + s_{\textrm{in}}^2 \cdot \textrm{ss}_{\textrm{in}}" data-equation="eq:sum_of_squares">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c4d46b7cc46098480b669a07e94be382a39cff2e/lib/node_modules/@stdlib/lapack/base/dlassq/docs/img/equation_sum_of_squares.svg" alt="Sum of squares represented in scaled form">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
