@@ -79,7 +79,7 @@ interface Routine {
 * @param x - input array
 * @param strideX - stride length for `x`
 * @param mask - mask array
-* @param strideMask - stride length for `x`
+* @param strideMask - stride length for `mask`
 * @returns range
 *
 * @example

@@ -76,6 +76,7 @@
         "@stdlib/napi/argv-uint32",
         "@stdlib/napi/argv-uint32array",
         "@stdlib/napi/argv-uint64",
+        "@stdlib/napi/create-boolean",
         "@stdlib/napi/create-complex-like",
         "@stdlib/napi/create-double",
         "@stdlib/napi/create-int32",
