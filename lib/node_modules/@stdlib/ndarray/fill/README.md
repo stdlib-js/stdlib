@@ -42,20 +42,16 @@ Fills an input [`ndarray`][@stdlib/ndarray/ctor] with a specified value.
 
 ```javascript
 var zeros = require( '@stdlib/ndarray/zeros' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 var x = zeros( [ 3, 1, 2 ], {
     'dtype': 'float64'
 });
 
 var y = fill( x, 10.0 );
-// returns <ndarray>
+// returns <ndarray>[ [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ] ]
 
 var bool = ( y === x );
 // returns true
-
-var arr = ndarray2array( x );
-// returns [ [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ] ]
 ```
 
 The function accepts the following arguments:
