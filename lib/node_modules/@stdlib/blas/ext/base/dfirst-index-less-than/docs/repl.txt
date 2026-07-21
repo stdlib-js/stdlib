@@ -57,7 +57,7 @@
     1
 
 
-{{alias}}( N, x, strideX, offsetX, y, strideY, offsetY )
+{{alias}}.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
     Returns the index of the first element in a double-precision floating-point
     strided array which is less than a corresponding element in another double-
     precision floating-point strided array using alternative indexing semantics.
