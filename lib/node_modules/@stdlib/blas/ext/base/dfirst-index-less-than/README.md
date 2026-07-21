@@ -129,8 +129,6 @@ The function has the following additional parameters:
 
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to access only the last three elements of each strided array:
 
-<!-- eslint-disable max-len -->
-
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
 
