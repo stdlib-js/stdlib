@@ -6043,8 +6043,8 @@ interface Namespace {
 	* @param x - function input
 	* @param a - function parameter
 	* @param b - function parameter
-	* @param invert - boolean indicating if the function should return the upper tail of the incomplete beta function instead
-	* @param normalized - boolean indicating if the function should evaluate the regularized boolean beta function
+	* @param regularized - boolean indicating if the function should evaluate the regularized incomplete beta function
+	* @param upper - boolean indicating if the function should return the upper tail of the incomplete beta function instead
 	* @returns function value and first derivative
 	*
 	* @example
