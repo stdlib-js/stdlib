@@ -45,50 +45,54 @@ var zerosLike = require( '@stdlib/ndarray/zeros-like' );
 Creates a zero-filled [ndarray][@stdlib/ndarray/ctor] having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 ```javascript
+var getShape = require( '@stdlib/ndarray/shape' );
+var getDType = require( '@stdlib/ndarray/dtype' );
 var zeros = require( '@stdlib/ndarray/zeros' );
 
 var x = zeros( [ 2, 2 ] );
-// returns <ndarray>
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
 var y = zerosLike( x );
-// returns <ndarray>
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
-var sh = y.shape;
+var sh = getShape( y );
 // returns [ 2, 2 ]
 
-var dt = y.dtype;
+var dt = String( getDType( y ) );
 // returns 'float64'
 ```
 
-The function supports the following `options`:
+The function supports the following options:
 
--   **dtype**: output [ndarray][@stdlib/ndarray/ctor] [data type][@stdlib/ndarray/dtypes]. Must be a numeric [data type][@stdlib/ndarray/dtypes] or "generic". Overrides the input ndarray's inferred [data type][@stdlib/ndarray/dtypes].
+-   **dtype**: output [ndarray][@stdlib/ndarray/ctor] [data type][@stdlib/ndarray/dtypes]. Must be a numeric or "generic" [data type][@stdlib/ndarray/dtypes]. Overrides the input ndarray's inferred [data type][@stdlib/ndarray/dtypes].
 -   **shape**: output [ndarray][@stdlib/ndarray/ctor] shape. Overrides the input ndarray's inferred shape.
 -   **order**: specifies whether the output [ndarray][@stdlib/ndarray/ctor] should be `'row-major'` (C-style) or `'column-major'` (Fortran-style). Overrides the input ndarray's inferred order.
--   **mode**: specifies how to handle indices which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). Default: `'throw'`.
--   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions  (see [`ndarray`][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
--   **readonly**: `boolean` indicating whether an array should be **read-only**. Default: `false`.
+-   **mode**: specifies how to handle indices which exceed array dimensions (see [ndarray][@stdlib/ndarray/ctor]). Default: `'throw'`.
+-   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions  (see [ndarray][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
+-   **readonly**: boolean indicating whether an array should be **read-only**. Default: `false`.
 
 To override either the `dtype`, `shape`, or `order`, specify the corresponding option. For example, to override the inferred [data type][@stdlib/ndarray/dtypes],
 
 ```javascript
+var getShape = require( '@stdlib/ndarray/shape' );
+var getDType = require( '@stdlib/ndarray/dtype' );
 var zeros = require( '@stdlib/ndarray/zeros' );
 
 var x = zeros( [ 2, 2 ] );
-// returns <ndarray>
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
-var dt = x.dtype;
+var dt = String( getDType( x ) );
 // returns 'float64'
 
 var y = zerosLike( x, {
     'dtype': 'int32'
 });
-// returns <ndarray>
+// returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 
-var sh = y.shape;
+var sh = getShape( y );
 // returns [ 2, 2 ]
 
-dt = y.dtype;
+dt = String( getDType( y ) );
 // returns 'int32'
 ```
 
@@ -115,10 +119,11 @@ dt = y.dtype;
 ```javascript
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var zeros = require( '@stdlib/ndarray/zeros' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var zerosLike = require( '@stdlib/ndarray/zeros-like' );
 
 // Get a list of data types:
-var dt = dtypes( 'numeric' );
+var dt = dtypes( 'integer_and_generic' );
 
 // Generate zero-filled arrays...
 var x;
@@ -129,7 +134,7 @@ for ( i = 0; i < dt.length; i++ ) {
         'dtype': dt[ i ]
     });
     y = zerosLike( x );
-    console.log( y.data );
+    console.log( ndarray2array( y ) );
 }
 ```
 
