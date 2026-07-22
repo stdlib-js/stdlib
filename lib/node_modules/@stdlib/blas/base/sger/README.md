@@ -335,7 +335,7 @@ int main( void ) {
    }
 
    // Perform operation using alternative indexing semantics:
-   c_sger( CblasRowMajor, M, N, 1.0f, x, strideX, 0, y, 0, strideY, A, N, 1, 0 );
+   c_sger_ndarray( M, N, 1.0f, x, strideX, 0, y, strideY, 0, A, N, 1, 0 );
 
    // Print the result:
    for ( int i = 0; i < M; i++ ) {

@@ -131,10 +131,7 @@ interface FindIndex {
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = findIndex( x, clbk );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 1
+	* // returns <ndarray>[ 1 ]
 	*/
 	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, clbk: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): OutputArray;
 
@@ -161,10 +158,7 @@ interface FindIndex {
 	* var x = array( [ -1.0, 2.0, -3.0 ] );
 	*
 	* var y = findIndex( x, {}, clbk );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 1
+	* // returns <ndarray>[ 1 ]
 	*/
 	<T = unknown, U extends InputArray<T> = InputArray<T>, ThisArg = unknown>( x: U, options: Options, clbk: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): OutputArray;
 
@@ -193,10 +187,7 @@ interface FindIndex {
 	* var y = zeros( [] );
 	*
 	* var out = findIndex.assign( x, y, clbk );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 1
+	* // returns <ndarray>[ 1 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -229,10 +220,7 @@ interface FindIndex {
 	* var y = zeros( [] );
 	*
 	* var out = findIndex.assign( x, y, {}, clbk );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns 1
+	* // returns <ndarray>[ 1 ]
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -263,10 +251,7 @@ interface FindIndex {
 * var x = array( [ -1.0, 2.0, -3.0 ] );
 *
 * var y = findIndex( x, clbk );
-* // returns <ndarray>
-*
-* var v = y.get();
-* // returns 1
+* // returns <ndarray>[ 1 ]
 *
 * @example
 * var array = require( '@stdlib/ndarray/array' );
@@ -280,10 +265,7 @@ interface FindIndex {
 * var y = zeros( [] );
 *
 * var out = findIndex.assign( x, y, clbk );
-* // returns <ndarray>
-*
-* var v = out.get();
-* // returns 1
+* // returns <ndarray>[ 1 ]
 *
 * var bool = ( out === y );
 * // returns true

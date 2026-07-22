@@ -202,7 +202,7 @@ Computes the [arithmetic mean][arithmetic-mean] of a single-precision floating-p
 ```c
 const float x[] = { 1.0f, -2.0f, 0.0f/0.0f, 2.0f };
 
-float v = stdlib_strided_sdsnanmeanors( x.length, x, 1 );
+float v = stdlib_strided_sdsnanmeanors( 4, x, 1 );
 // returns ~0.3333f
 ```
 
@@ -223,7 +223,7 @@ Computes the [arithmetic mean][arithmetic-mean] of a single-precision floating-p
 ```c
 const float x[] = { 1.0f, -2.0f, 0.0f/0.0f, 2.0f };
 
-float v = stdlib_strided_sdsnanmeanors_ndarray( x.length, x, 1, 0 );
+float v = stdlib_strided_sdsnanmeanors_ndarray( 4, x, 1, 0 );
 // returns ~0.3333f
 ```
 

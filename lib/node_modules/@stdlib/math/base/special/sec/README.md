@@ -119,8 +119,8 @@ Evaluates the [secant][trigonometric-functions] of `x` (in radians).
 double out = stdlib_base_sec( 0.0 );
 // returns 1.0
 
-out = stdlib_base_cos( 3.141592653589793 / 2.0 );
-// returns 6.123233995736766e-17
+out = stdlib_base_sec( 3.141592653589793 / 2.0 );
+// returns 16331239353195370.0
 ```
 
 The function accepts the following arguments:

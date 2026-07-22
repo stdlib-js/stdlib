@@ -28,11 +28,11 @@
         - arrays: array containing an output ndarray, followed by any additional
         ndarray arguments.
 
-    idtypes: Array<Array<string>>
+    idtypes: Array<Array<string|DataType>>
         List containing lists of supported input data types for each input
         ndarray argument.
 
-    odtypes: Array<string>
+    odtypes: Array<string|DataType>
         List of supported output data types.
 
     options: Object (optional)
