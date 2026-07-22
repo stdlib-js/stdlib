@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the moment-generating function (MGF) for a Gumbel distribution with location parameter `mu` and scale parameter `b` at a value `t`.
+* Evaluates the moment-generating function (MGF) for a Gumbel distribution with location parameter `mu` and scale parameter `beta` at a value `t`.
 */
 double stdlib_base_dists_gumbel_mgf( const double t, const double mu, const double beta );
 

@@ -24,15 +24,9 @@
 
     Examples
     --------
-    > var xbuf = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 2.0 ] );
-    > var dt = 'float32';
-    > var sh = [ xbuf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
-    > var v = {{alias:@stdlib/ndarray/from-scalar}}( 2.0, { 'dtype': dt } );
-    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ 1.0, 2.0, 2.0 ] );
+    > var v = {{alias:@stdlib/ndarray/from-scalar}}( 2.0, { 'dtype': 'float32' } );
+    > var i = {{alias:@stdlib/ndarray/from-scalar}}( 2, { 'dtype': 'generic' } );
     > {{alias}}( [ x, v, i ] )
     2
 

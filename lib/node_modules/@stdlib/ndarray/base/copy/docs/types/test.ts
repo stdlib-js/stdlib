@@ -43,7 +43,7 @@ import copy = require( './index' );
 	copy( zeros( 'generic', sh, ord ) ); // $ExpectType genericndarray<number>
 }
 
-// The compiler throws an error if the function is provided a first argument is not an ndarray...
+// The compiler throws an error if the function is provided a first argument which is not an ndarray...
 {
 	copy( '10' ); // $ExpectError
 	copy( 10 ); // $ExpectError

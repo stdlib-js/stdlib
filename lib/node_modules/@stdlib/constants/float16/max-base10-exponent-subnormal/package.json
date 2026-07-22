@@ -58,6 +58,7 @@
     "half",
     "floating-point",
     "float",
+    "float16",
     "ieee754",
     "exponent",
     "max",
