@@ -41,10 +41,9 @@ var goneTo = require( '@stdlib/blas/ext/base/ndarray/gone-to' );
 Fills a one-dimensional ndarray with linearly spaced numeric elements which increment by `1` starting from one.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 
-var xbuf = [ 0.0, 0.0, 0.0, 0.0 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 0.0, 0.0, 0.0, 0.0 ], 'generic' );
 // returns <ndarray>[ 0.0, 0.0, 0.0, 0.0 ]
 
 var out = goneTo( [ x ] );
@@ -76,13 +75,15 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var zeros = require( '@stdlib/array/zeros' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var zeros = require( '@stdlib/ndarray/zeros' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var goneTo = require( '@stdlib/blas/ext/base/ndarray/gone-to' );
 
-var xbuf = zeros( 10, 'generic' );
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var opts = {
+    'dtype': 'generic'
+};
+
+var x = zeros( [ 10 ], opts );
 console.log( ndarray2array( x ) );
 
 goneTo( [ x ] );

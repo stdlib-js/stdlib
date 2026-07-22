@@ -29,7 +29,7 @@
 * -   If provided a negative value, the accumulated value is `NaN` for all future invocations.
 *
 * @param x - value
-* @returns geometric mean
+* @returns geometric mean or null
 */
 type accumulator = ( x?: number ) => number | null;
 

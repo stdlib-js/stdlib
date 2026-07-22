@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 /**
-* If provided a value, the accumulator function returns an updated accumulated value. If not provided a value, the accumulator function returns the current accumulated value.
+* If provided input values, the accumulator function returns an updated sample absolute correlation coefficient. If not provided input values, the accumulator function returns the current sample absolute correlation coefficient.
 *
 * @param x - input value
 * @param y - input value
@@ -33,8 +33,8 @@ type accumulator = ( x?: number, y?: number ) => number | null;
 * Returns an accumulator function which incrementally computes a moving sample absolute Pearson product-moment correlation coefficient.
 *
 * @param W - window size
-* @param meanx - mean value
-* @param meany - mean value
+* @param meanx - mean value of `x`
+* @param meany - mean value of `y`
 * @returns accumulator function
 *
 * @example

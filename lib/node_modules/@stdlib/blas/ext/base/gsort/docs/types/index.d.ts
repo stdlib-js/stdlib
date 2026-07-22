@@ -46,7 +46,7 @@ interface Routine {
 	* gsort( x.length, 1, x, 1 );
 	* // x => [ -4.0, -2.0, 1.0, 3.0 ]
 	*/
-	<T extends InputArray>( N: number, order: number, x: T, stride: number ): T;
+	<T extends InputArray>( N: number, order: number, x: T, strideX: number ): T;
 
 	/**
 	* Sorts a strided array using alternative indexing semantics.
@@ -64,7 +64,7 @@ interface Routine {
 	* gsort.ndarray( x.length, 1, x, 1, 0 );
 	* // x => [ -4.0, -2.0, 1.0, 3.0 ]
 	*/
-	ndarray<T extends InputArray>( N: number, order: number, x: T, stride: number, offset: number ): T;
+	ndarray<T extends InputArray>( N: number, order: number, x: T, strideX: number, offsetX: number ): T;
 }
 
 /**
