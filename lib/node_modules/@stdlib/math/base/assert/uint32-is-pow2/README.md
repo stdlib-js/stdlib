@@ -20,7 +20,7 @@ limitations under the License.
 
 # isPow2Uint32
 
-> Test whether an unsigned integer is a power of 2.
+> Test if an unsigned integer is a power of 2.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var isPow2Uint32 = require( '@stdlib/math/base/assert/uint32-is-pow2' );
 
 #### isPow2Uint32( x )
 
-Tests whether `x` is a power of 2.
+Tests if `x` is a power of 2.
 
 ```javascript
 var bool = isPow2Uint32( 2 );
@@ -100,7 +100,7 @@ for ( i = 0; i < 100; i++ ) {
 
 #### stdlib_base_uint32_is_pow2( x )
 
-Tests whether an unsigned integer is a power of 2.
+Tests if an unsigned integer is a power of 2.
 
 ```c
 #include <stdbool.h>

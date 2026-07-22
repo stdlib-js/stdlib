@@ -177,7 +177,7 @@ console.log( v );
 Computes the number of non-`NaN` elements in a double-precision floating-point strided array.
 
 ```c
-const double x[] = { 1.0, 2.0, NaN, 4.0, 5.0, 6.0, NaN, 8.0 };
+const double x[] = { 1.0, 2.0, 0.0/0.0, 4.0, 5.0, 6.0, 0.0/0.0, 8.0 };
 
 int v = stdlib_strided_dnancount( 4, x, 2 );
 // returns 2
@@ -198,7 +198,7 @@ CBLAS_INT stdlib_strided_dnancount( const CBLAS_INT N, const double *X, const CB
 Computes the number of non-`NaN` elements in a double-precision floating-point strided array using alternative indexing semantics.
 
 ```c
-const double x[] = { 2.0, 1.0, NaN, -2.0, 3.0, 4.0, NaN, NaN };
+const double x[] = { 2.0, 1.0, 0.0/0.0, -2.0, 3.0, 4.0, 0.0/0.0, 0.0/0.0 };
 
 int v = stdlib_strided_dnancount_ndarray( 4, x, 2, 1 );
 // returns 3

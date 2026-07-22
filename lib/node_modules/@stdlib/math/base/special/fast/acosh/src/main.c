@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/fast/acosh.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/math/base/special/ln.h"
@@ -35,7 +36,7 @@
 */
 double stdlib_base_fast_acosh( const double x ) {
 	if ( x < 1.0 ) {
-		return 0.0 / 0.0 ; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_infinite( x ) ) {
 		return x;
