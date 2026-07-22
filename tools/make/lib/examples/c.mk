@@ -114,11 +114,13 @@ examples-c-files:
 #/
 examples-random-c: $(NODE_MODULES)
 	$(QUIET) $(MAKE) -f $(this_file) -s list-random-lib-pkgs PACKAGES_PATTERN='binding.gyp' | while read -r pkg; do \
-		echo ""; \
-		echo "Running example: $$pkg"; \
-		NODE_ENV="$(NODE_ENV_EXAMPLES)" \
-		NODE_PATH="$(NODE_PATH_EXAMPLES)" \
-		$(MAKE) -f $(this_file) examples-c EXAMPLES_FILTER="$$pkg/.*" || exit 1; \
+		if find "$$pkg/examples" -name "*.c" 2>/dev/null | grep -q .; then \
+			echo ""; \
+			echo "Running example: $$pkg"; \
+			NODE_ENV="$(NODE_ENV_EXAMPLES)" \
+			NODE_PATH="$(NODE_PATH_EXAMPLES)" \
+			$(MAKE) -f $(this_file) examples-c EXAMPLES_FILTER="$$pkg/.*" || exit 1; \
+		fi; \
 	done
 
 .PHONY: examples-random-c

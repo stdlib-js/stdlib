@@ -41,6 +41,7 @@
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
         "@stdlib/stats/strided/distances/dcosine-similarity",
+        "@stdlib/constants/float64/nan",
         "@stdlib/napi/export",
         "@stdlib/napi/argv",
         "@stdlib/napi/argv-int64",
@@ -62,7 +63,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
-        "@stdlib/stats/strided/distances/dcosine-similarity"
+        "@stdlib/stats/strided/distances/dcosine-similarity",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -79,7 +81,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
-        "@stdlib/stats/strided/distances/dcosine-similarity"
+        "@stdlib/stats/strided/distances/dcosine-similarity",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -96,7 +99,8 @@
       "dependencies": [
         "@stdlib/blas/base/shared",
         "@stdlib/strided/base/stride2offset",
-        "@stdlib/stats/strided/distances/dcosine-similarity"
+        "@stdlib/stats/strided/distances/dcosine-similarity",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

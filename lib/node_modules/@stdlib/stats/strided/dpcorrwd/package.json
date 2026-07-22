@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/stats/strided/dpcorrwd",
   "version": "0.0.0",
-  "description": "Calculate the pearson correlation coefficient of two double-precision floating-point strided arrays using Welford's algorithm.",
+  "description": "Calculate the Pearson correlation coefficient of two double-precision floating-point strided arrays using Welford's algorithm.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
