@@ -44,9 +44,8 @@ Computes the [range][range] of absolute values of a strided array, ignoring `NaN
 
 ```javascript
 var x = [ 1.0, -2.0, NaN, 2.0 ];
-var N = x.length;
 
-var v = nanrangeabs( N, x, 1 );
+var v = nanrangeabs( x.length, x, 1 );
 // returns 1.0
 ```
 
@@ -85,9 +84,8 @@ Computes the [range][range] of absolute values of a strided array, ignoring `NaN
 
 ```javascript
 var x = [ 1.0, -2.0, NaN, 2.0 ];
-var N = x.length;
 
-var v = nanrangeabs.ndarray( N, x, 1, 0 );
+var v = nanrangeabs.ndarray( x.length, x, 1, 0 );
 // returns 1.0
 ```
 

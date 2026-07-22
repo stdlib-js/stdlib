@@ -45,6 +45,8 @@ var scalar2ndarrayLike = require( '@stdlib/ndarray/base/from-scalar-like' );
 Returns a zero-dimensional ndarray containing a provided scalar `value` and having the same [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 ```javascript
+var getShape = require( '@stdlib/ndarray/shape' );
+var getDType = require( '@stdlib/ndarray/dtype' );
 var zeros = require( '@stdlib/ndarray/base/zeros' );
 
 var x = zeros( 'float32', [ 2, 2 ], 'row-major' );
@@ -53,10 +55,10 @@ var x = zeros( 'float32', [ 2, 2 ], 'row-major' );
 var y = scalar2ndarrayLike( x, 1.0 );
 // returns <ndarray>
 
-var sh = y.shape;
+var sh = getShape( y );
 // returns []
 
-var dt = y.dtype;
+var dt = String( getDType( y ) );
 // returns 'float32'
 
 var v = y.get();
@@ -94,7 +96,7 @@ var empty = require( '@stdlib/ndarray/base/empty' );
 var scalar2ndarrayLike = require( '@stdlib/ndarray/base/from-scalar-like' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'integer_and_generic' );
 
 // Generate zero-dimensional arrays...
 var x;
