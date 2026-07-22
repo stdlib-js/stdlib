@@ -66,7 +66,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -100,7 +100,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -119,6 +119,8 @@ jobs:
 
       # Check whether links are included in `docs/links/database.json` and use the correct identifier:
       - name: 'Check links against database'
+        env:
+          ALL_LINKS: ${{ steps.results.outputs.all_links }}
         run: |
           # Determine root directory:
           root=$(git rev-parse --show-toplevel)
@@ -128,7 +130,7 @@ jobs:
 
           echo "## Link Validation" >> $GITHUB_STEP_SUMMARY
 
-          output=$(echo '${{ steps.results.outputs.all_links }}' | ${validate})
+          output=$(echo "$ALL_LINKS" | ${validate})
           if [[ "${output}" != "All links are valid." ]]; then
             echo "| URL | ID | Error |" >> $GITHUB_STEP_SUMMARY
             echo "| --- | -- | ----- |" >> $GITHUB_STEP_SUMMARY
@@ -142,9 +144,12 @@ jobs:
 
       # Log the results:
       - name: 'Log results'
+        env:
+          FAILURES: ${{ steps.results.outputs.failures }}
+          WARNINGS: ${{ steps.results.outputs.warnings }}
         run: |
-          echo ${{ steps.results.outputs.failures }} >> "${{ env.LOG_FILE_FAILURES }}"
-          echo ${{ steps.results.outputs.warnings }} >> "${{ env.LOG_FILE_WARNINGS }}"
+          echo "$FAILURES" >> "${{ env.LOG_FILE_FAILURES }}"
+          echo "$WARNINGS" >> "${{ env.LOG_FILE_WARNINGS }}"
         timeout-minutes: 2
 
       # Fail the workflow if the status is not "success":
@@ -167,16 +172,17 @@ jobs:
         if: failure() && contains(steps.check-status.outcome, 'failure')
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
+          FAILURES: ${{ steps.results.outputs.failures }}
         run: |
           "$GITHUB_WORKSPACE/.github/workflows/scripts/markdown_links/create_broken_link_issues" \
-            '${{ steps.results.outputs.failures }}' \
+            "$FAILURES" \
             "9112"
         timeout-minutes: 30
 
       # Upload the log files:
       - name: 'Upload log files'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: always()
         with:
           # Define a name for the uploaded artifact:
@@ -235,7 +241,7 @@ jobs:
       # Send notification to Zulip:
       - name: 'Send notification'
         # Pin action to full length commit SHA
-        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
+        uses: zulip/github-actions-zulip/send-message@bd8ec52de371d139ae8313661b7d8318c19266aa # v2.0.1
         if: success()
         with:
           api-key: ${{ secrets.ZULIP_API_KEY }}

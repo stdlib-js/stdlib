@@ -48,6 +48,10 @@ SUCCESS=0
 ERROR=1
 TRACKING_ISSUE_FOUND=200
 
+# Configure retries for API calls:
+max_retries=3
+retry_delay=2
+
 
 # FUNCTIONS #
 
@@ -96,7 +100,7 @@ resolve_user() {
 	fi
 }
 
-# Makes GitHub API requests.
+# Performs a GitHub API request.
 #
 # $1 - HTTP method (GET or POST)
 # $2 - API endpoint
@@ -105,6 +109,10 @@ github_api() {
 	local method="$1"
 	local endpoint="$2"
 	local data="$3"
+	local retry_count=0
+	local response=""
+	local status_code
+	local success=false
 
 	# Initialize an array to hold curl headers:
 	local headers=()
@@ -114,39 +122,83 @@ github_api() {
 		headers+=("-H" "Authorization: token $GITHUB_TOKEN")
 	fi
 
-	# Determine the HTTP method and construct the curl command accordingly...
-	case "$method" in
-		GET)
-			curl -s "${headers[@]}" "$GITHUB_API_URL$endpoint"
-			;;
-		POST)
-			# For POST requests, always set the Content-Type header:
-			headers+=("-H" "Content-Type: application/json")
+	# For POST requests, always set the Content-Type header:
+	if [ "$method" != "GET" ]; then
+		headers+=("-H" "Content-Type: application/json")
+	fi
 
-			# If data is provided, include it in the request:
-			if [ -n "$data" ]; then
-				curl -s -X POST "${headers[@]}" -d "$data" "$GITHUB_API_URL$endpoint"
-			else
-				# Handle cases where POST data is required but not provided:
-				echo "POST request requires data."
-				on_error $ERROR
-			fi
-			;;
-		*)
-			echo "Invalid HTTP method: $method"
-			on_error $ERROR
-			;;
-	esac
+	# Add retry logic...
+	while [ $retry_count -lt $max_retries ] && [ "$success" = false ]; do
+		if [ $retry_count -gt 0 ]; then
+			echo "Retrying request (attempt $((retry_count+1))/${max_retries})..." >&2
+			sleep $retry_delay
+		fi
+
+		# Make the API request:
+		if [ -n "${data}" ]; then
+			response=$(curl -s -w "%{http_code}" -X "${method}" "${headers[@]}" -d "${data}" "${GITHUB_API_URL}${endpoint}")
+		else
+			response=$(curl -s -w "%{http_code}" -X "${method}" "${headers[@]}" "${GITHUB_API_URL}${endpoint}")
+		fi
+
+		# Extract status code (last 3 digits) and actual response (everything before):
+		status_code="${response: -3}"
+		response="${response:0:${#response}-3}"
+
+		# Check if we got a successful response:
+		if [[ $status_code -ge 200 && $status_code -lt 300 ]]; then
+			success=true
+		else
+			echo "API request failed with status $status_code: $response" >&2
+			retry_count=$((retry_count+1))
+		fi
+	done
+
+	if [ "$success" = false ]; then
+		echo "Failed to complete API request after $max_retries attempts" >&2
+		return 1
+	fi
+
+	# Validate that response is valid JSON if expected:
+	if ! echo "$response" | jq -e '.' > /dev/null 2>&1; then
+		echo "Warning: Response is not valid JSON: ${response}" >&2
+		# Return empty JSON object as fallback:
+		echo "{}"
+		return 0
+	fi
+
+	# Return the actual response data (without status code):
+	echo "$response"
+	return 0
 }
 
 # Main execution sequence.
 main() {
 	# Fetch pull request details:
 	pr_details=$(github_api "GET" "/repos/$REPO_OWNER/$REPO_NAME/pulls/$pr_number")
+	if [ $? -ne 0 ]; then
+		echo "ERROR: Failed to fetch PR details from GitHub API." >&2
+		on_error $ERROR
+	fi
 	pr_title=$(echo "$pr_details" | jq -r '.title')
 	pr_body=$(echo "$pr_details" | jq -r '.body // ""')
 	pr_url=$(echo "$pr_details" | jq -r '.html_url')
 	pr_author_login=$(echo "$pr_details" | jq -r '.user.login')
+
+	# Validate that critical PR fields were successfully retrieved:
+	if [ -z "$pr_title" ] || [ "$pr_title" = "null" ]; then
+		echo "ERROR: Failed to retrieve PR title from GitHub API." >&2
+		echo "API response: $pr_details" >&2
+		on_error $ERROR
+	fi
+	if [ -z "$pr_url" ] || [ "$pr_url" = "null" ]; then
+		echo "ERROR: Failed to retrieve PR URL from GitHub API." >&2
+		on_error $ERROR
+	fi
+	if [ -z "$pr_author_login" ] || [ "$pr_author_login" = "null" ]; then
+		echo "ERROR: Failed to retrieve PR author login from GitHub API." >&2
+		on_error $ERROR
+	fi
 
 	# Resolve the PR author's name and email using .mailmap:
 	pr_author_resolved=$(resolve_user "$pr_author_login")

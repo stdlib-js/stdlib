@@ -30,6 +30,7 @@
 */
 
 #include "stdlib/math/base/special/sqrt1pm1.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/expm1.h"
 #include "stdlib/math/base/special/log1p.h"
@@ -48,7 +49,7 @@
 */
 double stdlib_base_sqrt1pm1( const double x ) {
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( stdlib_base_abs( x ) > 0.75 ) {
 		return stdlib_base_sqrt( 1.0 + x ) - 1.0;

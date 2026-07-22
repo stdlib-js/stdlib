@@ -182,7 +182,7 @@ int main( void ) {
     int64_t stride = -2;
 
     // Compute the offset:
-    int64_t offset = stdlib_strided_stride2offset( N, stride )
+    int64_t offset = stdlib_strided_stride2offset( N, stride );
 
     // Print the results:
     printf( "stride: %"PRId64" => offset: %"PRId64"\n", stride, offset );
