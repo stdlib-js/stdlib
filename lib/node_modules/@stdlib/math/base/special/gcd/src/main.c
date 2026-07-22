@@ -22,6 +22,7 @@
 #include "stdlib/math/base/assert/is_integer.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 // 2^63 - 1
@@ -155,7 +156,7 @@ double stdlib_base_gcd( const double a, const double b ) {
 	double bc;
 
 	if ( stdlib_base_is_nan( a ) || stdlib_base_is_nan( b ) ) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if (
 		a == STDLIB_CONSTANT_FLOAT64_PINF ||
@@ -163,10 +164,10 @@ double stdlib_base_gcd( const double a, const double b ) {
 		a == STDLIB_CONSTANT_FLOAT64_NINF ||
 		b == STDLIB_CONSTANT_FLOAT64_NINF
 	) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( !( stdlib_base_is_integer( a ) && stdlib_base_is_integer( b ) ) ) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	ac = a;
 	bc = b;
