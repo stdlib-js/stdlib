@@ -20,7 +20,7 @@ limitations under the License.
 
 # cswap
 
-> Interchange two complex single-precision floating-point vectors.
+> Interchange two single-precision complex floating-point vectors.
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var cswap = require( '@stdlib/blas/base/cswap' );
 
 #### cswap( N, x, strideX, y, strideY )
 
-Interchanges two complex single-precision floating-point vectors.
+Interchanges two single-precision complex floating-point vectors.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
@@ -89,7 +89,7 @@ cswap( 2, x1, -2, y1, 1 );
 
 #### cswap.ndarray( N, x, strideX, offsetX, y, strideY, offsetY )
 
-Interchanges two complex single-precision floating-point vectors using alternative indexing semantics.
+Interchanges two single-precision complex floating-point vectors using alternative indexing semantics.
 
 ```javascript
 var Complex64Array = require( '@stdlib/array/complex64' );
@@ -195,7 +195,7 @@ console.log( y.get( y.length-1 ).toString() );
 
 #### c_cswap( N, \*X, strideX, \*Y, strideY )
 
-Interchanges two complex single-precision floating-point vectors.
+Interchanges two single-precision complex floating-point vectors.
 
 ```c
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f }; // interleaved real and imaginary components
@@ -218,7 +218,7 @@ void c_cswap( const CBLAS_INT N, void *X, const CBLAS_INT strideX, void *Y, cons
 
 #### c_cswap_ndarray( N, \*X, strideX, offsetX, \*Y, strideY, offsetY )
 
-Interchanges two complex single-precision floating-point vectors using alternative indexing semantics.
+Interchanges two single-precision complex floating-point vectors using alternative indexing semantics.
 
 ```c
 float x[] = { 1.0f, 2.0f, 3.0f, 4.0f }; // interleaved real and imaginary components
@@ -302,7 +302,7 @@ int main( void ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/blas/base/ccopy`][@stdlib/blas/base/ccopy]</span><span class="delimiter">: </span><span class="description">copy values from one complex single-precision floating-point vector to another complex single-precision floating-point vector.</span>
+-   <span class="package-name">[`@stdlib/blas/base/ccopy`][@stdlib/blas/base/ccopy]</span><span class="delimiter">: </span><span class="description">copy values from one single-precision complex floating-point vector to another single-precision complex floating-point vector.</span>
 
 </section>
 
