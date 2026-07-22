@@ -33,7 +33,7 @@ s_{\textrm{out}}^2 \cdot \textrm{ss}_{\textrm{out}} = x_0^2 + \ldots + x_{N-1}^2
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="s_{\textrm{out}}^2 \cdot \textrm{ss}_{\textrm{out}} = x_0^2 + \ldots + x_{N-1}^2 + s_{\textrm{in}}^2 \cdot \textrm{ss}_{\textrm{in}}" data-equation="eq:sum_of_squares">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@c4d46b7cc46098480b669a07e94be382a39cff2e/lib/node_modules/@stdlib/lapack/base/dlassq/docs/img/equation_sum_of_squares.svg" alt="Sum of squares represented in scaled form">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@f748b45d1e3b17e3ccbd096268bf186fdeaee5ab/lib/node_modules/@stdlib/lapack/base/dlassq/docs/img/equation_sum_of_squares.svg" alt="Sum of squares represented in scaled form">
     <br>
 </div> -->
 
