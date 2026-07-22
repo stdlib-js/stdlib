@@ -1,0 +1,30 @@
+
+{{alias}}()
+    Returns a list of SGD classification learning rate schedulers.
+
+    The output array contains the following learning rate schedulers:
+
+    - basic: basic learning rate function according to the formula `10/(10+t)`
+    where `t` is the current iteration.
+    - constant: constant learning rate function.
+    - invscaling: inverse scaling learning rate function according to the
+    formula `eta0/pow(t, power_t)` where `eta0` is the initial learning rate and
+    `power_t` is the exponent controlling how quickly the learning rate
+    decreases.
+    - pegasos: Pegasos learning rate function according to the formula
+    `1/(lambda*t)` where `t` is the current iteration and `lambda` is the
+    regularization parameter.
+
+    Returns
+    -------
+    out: Array<string>
+        List of learning rate schedulers.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [...]
+
+    See Also
+    --------
+
