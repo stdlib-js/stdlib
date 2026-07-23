@@ -33,7 +33,7 @@ interface Options {
 	mode?: Mode;
 
 	/**
-	* Specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw']).
+	* Specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: [options.mode]).
 	*/
 	submode?: ArrayLike<Mode>;
 
@@ -53,7 +53,7 @@ interface Options {
 * @param x - input ndarray
 * @param options - function options
 * @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
-* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
+* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: [options.mode])
 * @param options.readonly - specifies whether an array should be read-only
 * @returns ndarray
 *

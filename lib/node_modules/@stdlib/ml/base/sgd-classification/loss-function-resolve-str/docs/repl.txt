@@ -1,0 +1,25 @@
+
+{{alias}}( value )
+    Returns the loss function string associated with a supported SGD
+    classification loss function value.
+
+    Parameters
+    ----------
+    value: any
+        Loss function value.
+
+    Returns
+    -------
+    out: string|null
+        Loss function string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'hinge' )
+    'hinge'
+    > out = {{alias}}( {{alias:@stdlib/ml/base/sgd-classification/loss-function-str2enum}}( 'hinge' ) )
+    'hinge'
+
+    See Also
+    --------
+
