@@ -219,10 +219,48 @@ run_lint() {
 	else
 		task_status 'skipped'
 	fi
-	# Lint Markdown files...
+	# Lint package README Markdown files...
+	add_task 'lint_markdown_pkg_readmes'
+	if [[ -z "${skip_markdown}" ]]; then
+		files=$(echo "${changed_files}" | grep '^lib/node_modules/@stdlib/.*/README\.md$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			make FILES="${files}" lint-markdown-package-readme-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
+				echo '' >&2
+				echo 'Markdown lint errors for package README files.' >&2
+				return 1
+			fi
+			task_status 'passed'
+		else
+			task_status 'na'
+		fi
+	else
+		task_status 'skipped'
+	fi
+	# Lint docs Markdown files...
+	add_task 'lint_markdown_docs'
+	if [[ -z "${skip_markdown}" ]]; then
+		files=$(echo "${changed_files}" | grep '\.md$' | grep '^docs/' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			make FILES="${files}" lint-markdown-docs-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
+				echo '' >&2
+				echo 'Markdown lint errors for docs files.' >&2
+				return 1
+			fi
+			task_status 'passed'
+		else
+			task_status 'na'
+		fi
+	else
+		task_status 'skipped'
+	fi
+	# Lint other Markdown files...
 	add_task 'lint_markdown'
 	if [[ -z "${skip_markdown}" ]]; then
-		files=$(echo "${changed_files}" | grep '\.md$' | grep -v '\.github/workflows/.*\.md$' | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep '\.md$' | grep -v '\.github/workflows/.*\.md$' | grep -v 'lib/node_modules/@stdlib/.*/README\.md$' | grep -v '^docs/' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-markdown-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then

@@ -439,7 +439,7 @@ testing,N/A
 tile,(planned)
 timedelta64,N/A
 trace,(planned)
-transpose,(planned)
+transpose,transpose
 trapezoid,(planned)
 trapz,(planned)
 tri,(planned)

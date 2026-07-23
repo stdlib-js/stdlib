@@ -106,7 +106,7 @@ declare function scalar2ndarray( value: number, dtype: Float32DataType, order: O
 * // returns 'complex128'
 *
 * var buf = getData( x );
-* // buf => <Complex128Array>[ 1.0, 2.0 ]
+* // returns <Complex128Array>[ 1.0, 2.0 ]
 */
 declare function scalar2ndarray( value: number | ComplexLike, dtype: Complex128DataType, order: Order ): complex128ndarray;
 
@@ -141,7 +141,7 @@ declare function scalar2ndarray( value: number | ComplexLike, dtype: Complex128D
 * // returns 'complex64'
 *
 * var buf = getData( x );
-* // buf => <Complex64Array>[ 1.0, 2.0 ]
+* // returns <Complex64Array>[ 1.0, 2.0 ]
 */
 declare function scalar2ndarray( value: number | ComplexLike, dtype: Complex64DataType, order: Order ): complex64ndarray;
 

@@ -76,7 +76,7 @@ The function accepts the following arguments:
 -   The returned object has the following properties:
 
     -   **dtype**: [data type][@stdlib/ndarray/dtypes].
-    -   **buffer**: data buffer.
+    -   **data**: data buffer.
     -   **shape**: array shape.
     -   **strides**: array strides.
     -   **offset**: index offset.

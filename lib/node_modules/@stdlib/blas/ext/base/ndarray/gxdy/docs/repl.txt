@@ -1,0 +1,33 @@
+
+{{alias}}( arrays )
+    Divides elements of a one-dimensional ndarray by the corresponding elements
+    of a second one-dimensional ndarray and assigns the results to the second
+    ndarray.
+
+    The output ndarray is modified *in-place* (i.e., the output ndarray is
+    *mutated*).
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var xbuf = [ 4.0, 6.0, 12.0, 20.0 ];
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( xbuf, 'generic' );
+    > var ybuf = [ 2.0, 3.0, 4.0, 5.0 ];
+    > var y = {{alias:@stdlib/ndarray/vector/ctor}}( ybuf, 'generic' );
+    > {{alias}}( [ x, y ] )
+    <ndarray>[ 2.0, 2.0, 3.0, 4.0 ]
+
+    See Also
+    --------

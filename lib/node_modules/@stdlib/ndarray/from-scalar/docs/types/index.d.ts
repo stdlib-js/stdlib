@@ -244,7 +244,7 @@ declare function scalar2ndarray( value: number, options: Float32Options ): float
 * // returns 'complex128'
 *
 * var buf = x.data;
-* // buf => <Complex128Array>[ 1.0, 2.0 ]
+* // returns <Complex128Array>[ 1.0, 2.0 ]
 */
 declare function scalar2ndarray( value: number | ComplexLike, options: Complex128Options ): complex128ndarray;
 
@@ -276,7 +276,7 @@ declare function scalar2ndarray( value: number | ComplexLike, options: Complex12
 * // returns 'complex64'
 *
 * var buf = x.data;
-* // buf => <Complex64Array>[ 1.0, 2.0 ]
+* // returns <Complex64Array>[ 1.0, 2.0 ]
 */
 declare function scalar2ndarray( value: number | ComplexLike, options: Complex64Options ): complex64ndarray;
 
