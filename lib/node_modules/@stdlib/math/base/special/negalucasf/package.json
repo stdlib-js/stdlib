@@ -1,0 +1,146 @@
+{
+  "name": "@stdlib/math/base/special/negalucasf",
+  "version": "0.0.0",
+  "description": "Compute the nth negaLucas number in single-precision floating-point format.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "gypfile": true,
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "include": "./include",
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://github.com/stdlib-js/stdlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stdlib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "special functions",
+    "special",
+    "function",
+    "lucas",
+    "negalucas",
+    "fibonacci",
+    "fib",
+    "fibo",
+    "nlucas",
+    "number"
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "negalucas",
+      "alias": "negalucasf",
+      "pkg_desc": "compute the nth negaLucas number in single-precision floating-point format",
+      "desc": "computes the nth negaLucas number in single-precision floating-point format",
+      "short_desc": "negaLucas number",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": 0
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              -100,
+              0
+            ]
+          },
+          "example_values": [
+            0,
+            -1,
+            -2,
+            -3,
+            -4,
+            -5,
+            -6,
+            -7,
+            -8,
+            -9,
+            -10,
+            -15,
+            -20,
+            -25,
+            -30,
+            -40,
+            -50,
+            -60,
+            -70,
+            -76
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "negaLucas number",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "lucas",
+        "negalucas",
+        "fibonacci",
+        "fib",
+        "fibo",
+        "nlucas"
+      ],
+      "extra_keywords": []
+    }
+  }
+}

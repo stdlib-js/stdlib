@@ -1,8 +1,8 @@
 
 {{alias}}( x, μ, b )
-    Evaluates the logarithm of the probability density function (PDF) for a
-    Laplace distribution with scale parameter `b` and location parameter `μ` at
-    a value `x`.
+    Evaluates the natural logarithm of the probability density function (PDF)
+    for a Laplace distribution with scale parameter `b` and location parameter
+    `μ` at a value `x`.
 
     If provided `NaN` as any argument, the function returns `NaN`.
 

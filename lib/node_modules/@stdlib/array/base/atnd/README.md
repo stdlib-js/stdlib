@@ -42,7 +42,7 @@ var atnd = require( '@stdlib/array/base/atnd' );
 
 #### atnd( x, i0\[, ...indices] )
 
-Return an element from an n-dimensional nested array.
+Returns an element from an n-dimensional nested array.
 
 ```javascript
 var x = [ [ 1, 2 ], [ 3, 4 ] ];

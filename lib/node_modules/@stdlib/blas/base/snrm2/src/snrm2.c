@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/blas/base/snrm2.h"
-#include <math.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the L2-norm of a single-precision floating-point vector.
@@ -27,30 +28,7 @@
 * @param stride  stride length
 * @return        output value
 */
-float c_snrm2( const int N, const float *X, const int stride ) {
-	float scale;
-	float ssq;
-	float ax;
-	int i;
-
-	if ( N <= 0 || stride <= 0 ) {
-		return 0.0f;
-	}
-	if ( N == 1 ) {
-		return fabsf( X[ 0 ] );
-	}
-	scale = 0.0f;
-	ssq = 1.0f;
-	for ( i = 0; i < N*stride; i += stride ) {
-		if ( X[ i ] != 0.0f ) {
-			ax = fabsf( X[ i ] );
-			if ( scale < ax ) {
-				ssq = 1.0f + ( ssq * powf( scale/ax, 2 ) );
-				scale = ax;
-			} else {
-				ssq += powf( ax/scale, 2 );
-			}
-		}
-	}
-	return scale * sqrtf( ssq );
+float API_SUFFIX(c_snrm2)( const CBLAS_INT N, const float *X, const CBLAS_INT stride ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, stride );
+	return API_SUFFIX(c_snrm2_ndarray)( N, X, stride, ox );
 }

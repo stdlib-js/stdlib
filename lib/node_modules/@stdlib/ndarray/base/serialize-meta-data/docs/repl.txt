@@ -8,17 +8,17 @@
 
     where
 
-    -  endianness: byte order (1 byte)
-    -  dt: data type (2 bytes)
-    -  ndims: number of dimensions (8 bytes)
-    -  shape: shape (ndims*8 bytes)
-    -  strides: strides in units of bytes (ndims*8 bytes)
-    -  offset: index offset in units of bytes (8 bytes)
-    -  ord: array order (1 byte)
-    -  mode: index mode (1 byte)
-    -  nsubmodes: number of subscript index modes (8 bytes)
-    -  submodes: subscript index modes (nsubmodes*1 bytes)
-    -  flags: flags (4 bytes)
+    - endianness: byte order (1 byte).
+    - dt: data type (2 bytes).
+    - ndims: number of dimensions (8 bytes).
+    - shape: shape (ndims*8 bytes).
+    - strides: strides in units of bytes (ndims*8 bytes).
+    - offset: index offset in units of bytes (8 bytes).
+    - ord: array order (1 byte).
+    - mode: index mode (1 byte).
+    - nsubmodes: number of subscript index modes (8 bytes).
+    - submodes: subscript index modes (nsubmodes*1 bytes).
+    - flags: flags (4 bytes).
 
     Serialization is performed according to host byte order (endianness).
 

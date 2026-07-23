@@ -26,11 +26,10 @@ import getter = require( './index' );
 /**
 * Returns an array-like object supporting the get/set protocol.
 *
-* @return array-like object
+* @returns array-like object
 */
 function accessorArray(): AccessorArrayLike<number> {
-	let arr: AccessorArrayLike<number>;
-	arr = {
+	const arr: AccessorArrayLike<number> = {
 		'0': 1,
 		'1': 2,
 		'2': 3,

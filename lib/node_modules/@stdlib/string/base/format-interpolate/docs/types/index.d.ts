@@ -54,7 +54,7 @@ type StringOrToken = string | FormatIdentifier;
 * Generates string from a token array by interpolating values.
 *
 * @param tokens - string parts and format identifier objects
-* @param ...args - variable values
+* @param args - variable values
 * @throws invalid flags
 * @returns formatted string
 *

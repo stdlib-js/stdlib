@@ -23,8 +23,8 @@
 import { Collection } from '@stdlib/types/array';
 
 /**
- * Interface describing `toWords`.
- */
+* Interface describing `toWords`.
+*/
 interface ToWords {
 	/**
 	* Splits a double-precision floating-point number into a higher order word (unsigned 32-bit integer) and a lower order word (unsigned 32-bit integer).

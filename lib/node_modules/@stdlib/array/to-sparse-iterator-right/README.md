@@ -168,8 +168,6 @@ var count = ctx.count;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var inmap = require( '@stdlib/utils/inmap' );
 var randu = require( '@stdlib/random/base/randu' );
 var sparsearray2iteratorRight = require( '@stdlib/array/to-sparse-iterator-right' );
 

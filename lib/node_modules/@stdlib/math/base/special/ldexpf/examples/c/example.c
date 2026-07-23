@@ -22,13 +22,13 @@
 
 int main( void ) {
 	float y;
-    int i;
+	int i;
 
 	const float frac[] = { 0.5f, 5.0f, 0.0f, 3.5f, 7.9f };
 	const int32_t exp[] = { 3, -2, 20, 39, 14 };
 
-    for ( i = 0; i < 5; i++ ) {
-        y = stdlib_base_ldexpf( frac[ i ], exp[ i ] );
-        printf( "ldexpf(%f, %d) = %f\n", frac[ i ], exp[ i ], y );
-    }
+	for ( i = 0; i < 5; i++ ) {
+		y = stdlib_base_ldexpf( frac[ i ], exp[ i ] );
+		printf( "ldexpf(%f, %d) = %f\n", frac[ i ], exp[ i ], y );
+	}
 }

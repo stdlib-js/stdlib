@@ -91,7 +91,8 @@ var overrides = [
 			'no-restricted-syntax': restrictedSyntaxConfig,
 			'require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
-			'stdlib/jsdoc-doctest': 'off'
+			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off'
 		}
 	},
 	{
@@ -103,6 +104,7 @@ var overrides = [
 			'require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off',
 			'stdlib/vars-order': 'off'
 		}
 	},
@@ -120,6 +122,7 @@ var overrides = [
 			'require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off',
 			'no-undefined': 'off'
 		}
 	},
@@ -155,15 +158,20 @@ var overrides = [
 			'require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-return-annotations-values': 'off',
+			'stdlib/no-unnecessary-nested-functions': 'off',
 			'stdlib/return-annotations-values': 'off',
 			'strict': 'off',
 			'vars-on-top': 'off',
-			'node/no-unpublished-require': 'off'
+			'n/no-unpublished-require': 'off'
 		}
 	},
 	{
-		'files': [ '*.d.ts', '*.ts', '*.tsx' ],
+		'files': [ '*.d.ts' ],
 		'extends': resolve( __dirname, '..', '.eslintrc.typescript.js' )
+	},
+	{
+		'files': [ '**/test/*.ts' ],
+		'extends': resolve( __dirname, '..', '.eslintrc.typescript.tests.js' )
 	}
 ];
 

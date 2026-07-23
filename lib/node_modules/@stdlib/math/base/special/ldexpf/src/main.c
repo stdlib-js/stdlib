@@ -35,10 +35,15 @@
 #include "stdlib/number/float32/base/from_word.h"
 #include "stdlib/math/base/special/copysignf.h"
 #include "stdlib/constants/float32/pinf.h"
+#include "stdlib/constants/float32/exponent_mask.h"
+#include "stdlib/constants/float32/precision.h"
+#include "stdlib/constants/float32/abs_mask.h"
 #include <stdint.h>
 
 static const float TWO25 = 33554432.0f; // 0x4c000000
 static const float TWOM25 = 2.9802322387695312e-8f; // 0x33000000
+static const int32_t FLOAT32_SIGNIFICAND_MASK_WITH_SIGN = 0x807fffff; // 1 00000000 11111111111111111111111
+static const int32_t ALL_ONES = 0xff; // 0xff = 255 => 11111111
 
 /**
 * Multiplies a single-precision floating-point number by an integer power of two.
@@ -60,52 +65,52 @@ float stdlib_base_ldexpf( const float frac, const int32_t exp ) {
 	stdlib_base_float32_to_word( frac, &uix );
 	ix = (int32_t)uix;
 
-	// Extract exponent
-	k = ( ix & 0x7f800000 ) >> 23;
+	// Extract exponent:
+	k = ( ix & STDLIB_CONSTANT_FLOAT32_EXPONENT_MASK ) >> ( STDLIB_CONSTANT_FLOAT32_PRECISION - 1 );
 
-	// 0 or subnormal frac
+	// 0 or subnormal frac:
 	fracc = frac;
 	if ( k == 0 ) {
-		if ( ( ix & 0x7fffffff ) == 0 ) {
-			// +-0
+		if ( ( ix & STDLIB_CONSTANT_FLOAT32_ABS_MASK ) == 0 ) {
+			// +-0:
 			return frac;
 		}
 		fracc = frac * TWO25;
 		stdlib_base_float32_to_word( fracc, &uix );
 		ix = (int32_t)uix;
-		k = ( ( ix & 0x7f800000 ) >> 23 ) - 25;
+		k = ( ( ix & STDLIB_CONSTANT_FLOAT32_EXPONENT_MASK ) >> ( STDLIB_CONSTANT_FLOAT32_PRECISION - 1 ) ) - 25;
 		if ( exp < -50000 ) {
-			// Underflow
+			// Underflow:
 			return 0.0;
 		}
 	}
 
-	// NaN or Inf
-	if ( k == 0xff ) {
+	// NaN or Inf:
+	if ( k == ALL_ONES ) {
 		return fracc + fracc;
 	}
 	k += exp;
-	if ( k > 0xfe ) {
-		// Overflow
+	if ( k > ALL_ONES - 1 ) {
+		// Overflow:
 		return stdlib_base_copysignf( STDLIB_CONSTANT_FLOAT32_PINF, fracc );
 	}
 	if ( k > 0 ) {
-		// Normal result
-		stdlib_base_float32_from_word( (uint32_t)( ( ix & 0x807fffff ) | ( k << 23 ) ), &fracc );
+		// Normal result:
+		stdlib_base_float32_from_word( (uint32_t)( ( ix & FLOAT32_SIGNIFICAND_MASK_WITH_SIGN ) | ( k << ( STDLIB_CONSTANT_FLOAT32_PRECISION - 1 ) ) ), &fracc );
 		return fracc;
 	}
 	if ( k <= -25 ) {
 		if ( exp > 50000 ) {
-			// In case of integer overflow in n + k
+			// In case of integer overflow in n + k:
 			return stdlib_base_copysignf( STDLIB_CONSTANT_FLOAT32_PINF, fracc );
 		}
 
-		// Underflow
+		// Underflow:
 		return stdlib_base_copysignf( 0.0f, fracc );
 	}
 
-	// Subnormal result
+	// Subnormal result:
 	k += 25;
-	stdlib_base_float32_from_word( (uint32_t)( ( ix & 0x807fffff ) | ( k << 23 ) ), &fracc );
+	stdlib_base_float32_from_word( (uint32_t)( ( ix & FLOAT32_SIGNIFICAND_MASK_WITH_SIGN ) | ( k << ( STDLIB_CONSTANT_FLOAT32_PRECISION - 1 ) ) ), &fracc );
 	return fracc * TWOM25;
 }

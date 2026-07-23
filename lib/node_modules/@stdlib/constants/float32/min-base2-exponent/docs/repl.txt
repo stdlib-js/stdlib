@@ -1,0 +1,13 @@
+
+{{alias}}
+    The minimum biased base 2 exponent for a normalized single-precision
+    floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    -126
+
+    See Also
+    --------
+

@@ -16,54 +16,20 @@
 * limitations under the License.
 */
 
-/// <reference types="@stdlib/types"/>
-
-import { ndarray } from '@stdlib/types/ndarray';
+import zeros = require( '@stdlib/ndarray/zeros' );
 import sswap = require( './index' );
-
-/**
-* Returns an ndarray object.
-*
-* @returns ndarray object
-*/
-function createArray(): ndarray {
-	const arr: ndarray = {
-		'byteLength': null,
-		'BYTES_PER_ELEMENT': null,
-		'data': new Float32Array( [ 1, 2, 3 ] ),
-		'dtype': 'float32',
-		'flags': {
-			'ROW_MAJOR_CONTIGUOUS': true,
-			'COLUMN_MAJOR_CONTIGUOUS': false
-		},
-		'length': 3,
-		'ndims': 1,
-		'offset': 0,
-		'order': 'row-major',
-		'shape': [ 3 ],
-		'strides': [ 1 ],
-		'get': ( i: number ): any => {
-			return arr.data[ i ];
-		},
-		'set': ( i: number, v: any ): ndarray => {
-			arr.data[ i ] = v;
-			return arr;
-		}
-	};
-	return arr;
-}
 
 
 // TESTS //
 
 // The function returns an ndarray...
 {
-	sswap( createArray(), createArray() ); // $ExpectType ndarray
+	sswap( zeros( [ 10 ], { 'dtype': 'float32' } ), zeros( [ 10 ], { 'dtype': 'float32' } ) ); // $ExpectType float32ndarray
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...
 {
-	const y: ndarray = createArray();
+	const y = zeros( [ 10 ], { 'dtype': 'float32' } );
 
 	sswap( 10, y ); // $ExpectError
 	sswap( '10', y ); // $ExpectError
@@ -74,11 +40,21 @@ function createArray(): ndarray {
 	sswap( {}, y ); // $ExpectError
 	sswap( [], y ); // $ExpectError
 	sswap( ( x: number ): number => x, y ); // $ExpectError
+
+	sswap( 10, y, -1 ); // $ExpectError
+	sswap( '10', y, -1 ); // $ExpectError
+	sswap( true, y, -1 ); // $ExpectError
+	sswap( false, y, -1 ); // $ExpectError
+	sswap( null, y, -1 ); // $ExpectError
+	sswap( undefined, y, -1 ); // $ExpectError
+	sswap( {}, y, -1 ); // $ExpectError
+	sswap( [], y, -1 ); // $ExpectError
+	sswap( ( x: number ): number => x, y, -1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not an ndarray...
 {
-	const x: ndarray = createArray();
+	const x = zeros( [ 10 ], { 'dtype': 'float32' } );
 
 	sswap( x, 10 ); // $ExpectError
 	sswap( x, '10' ); // $ExpectError
@@ -89,14 +65,38 @@ function createArray(): ndarray {
 	sswap( x, {} ); // $ExpectError
 	sswap( x, [] ); // $ExpectError
 	sswap( x, ( x: number ): number => x ); // $ExpectError
+
+	sswap( x, 10, -1 ); // $ExpectError
+	sswap( x, '10', -1 ); // $ExpectError
+	sswap( x, true, -1 ); // $ExpectError
+	sswap( x, false, -1 ); // $ExpectError
+	sswap( x, null, -1 ); // $ExpectError
+	sswap( x, undefined, -1 ); // $ExpectError
+	sswap( x, {}, -1 ); // $ExpectError
+	sswap( x, [], -1 ); // $ExpectError
+	sswap( x, ( x: number ): number => x, -1 ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a third argument which is not a number...
+{
+	const x = zeros( [ 10 ], { 'dtype': 'float32' } );
+	const y = zeros( [ 10 ], { 'dtype': 'float32' } );
+
+	sswap( x, y, '10' ); // $ExpectError
+	sswap( x, y, true ); // $ExpectError
+	sswap( x, y, false ); // $ExpectError
+	sswap( x, y, null ); // $ExpectError
+	sswap( x, y, {} ); // $ExpectError
+	sswap( x, y, [] ); // $ExpectError
+	sswap( x, y, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	const x: ndarray = createArray();
-	const y: ndarray = createArray();
+	const x = zeros( [ 10 ], { 'dtype': 'float32' } );
+	const y = zeros( [ 10 ], { 'dtype': 'float32' } );
 
 	sswap(); // $ExpectError
 	sswap( x ); // $ExpectError
-	sswap( x, y, {} ); // $ExpectError
+	sswap( x, y, -1, {} ); // $ExpectError
 }

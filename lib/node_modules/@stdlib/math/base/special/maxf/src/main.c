@@ -37,20 +37,20 @@
 * // returns 0.0f
 */
 float stdlib_base_maxf( const float x, const float y ) {
-    if ( stdlib_base_is_nanf( x ) || stdlib_base_is_nanf( y ) ) {
-        return 0.0f / 0.0f; // NaN
-    }
-    if ( x == STDLIB_CONSTANT_FLOAT32_PINF || y == STDLIB_CONSTANT_FLOAT32_PINF ) {
-        return STDLIB_CONSTANT_FLOAT32_PINF;
-    }
-    if ( x == y && x == 0.0f ) {
-        if ( stdlib_base_is_positive_zerof( x ) ) {
-            return x;
-        }
-        return y;
-    }
-    if ( x > y ) {
-        return x;
-    }
-    return y;
+	if ( stdlib_base_is_nanf( x ) || stdlib_base_is_nanf( y ) ) {
+		return 0.0f / 0.0f; // NaN
+	}
+	if ( x == STDLIB_CONSTANT_FLOAT32_PINF || y == STDLIB_CONSTANT_FLOAT32_PINF ) {
+		return STDLIB_CONSTANT_FLOAT32_PINF;
+	}
+	if ( x == y && x == 0.0f ) {
+		if ( stdlib_base_is_positive_zerof( x ) ) {
+			return x;
+		}
+		return y;
+	}
+	if ( x > y ) {
+		return x;
+	}
+	return y;
 }

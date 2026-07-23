@@ -19,7 +19,7 @@
 #include "stdlib/math/base/special/cphase.h"
 #include "stdlib/complex/float64/ctor.h"
 #include "stdlib/complex/float64/reim.h"
-#include <math.h>
+#include "stdlib/math/base/special/atan2.h"
 
 /**
 * Computes the argument of a complex double-precision complex floating-point number in radians.
@@ -41,5 +41,5 @@ double stdlib_base_cphase( const stdlib_complex128_t z ) {
 	double im;
 
 	stdlib_complex128_reim( z, &re, &im );
-	return atan2( im, re ); // TODO: replace with stdlib function once available
+	return stdlib_base_atan2( im, re );
 }

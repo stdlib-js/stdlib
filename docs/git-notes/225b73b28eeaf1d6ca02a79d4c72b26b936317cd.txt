@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+feat: add C implementation for `stats/base/dists/degenerate/median`
+
+PR-URL: #4579
+Closes: #3541
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

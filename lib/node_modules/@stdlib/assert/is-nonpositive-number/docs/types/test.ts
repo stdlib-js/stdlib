@@ -46,7 +46,6 @@ import isNonPositiveNumber = require( './index' );
 	isNonPositiveNumber.isPrimitive( -2, 123 ); // $ExpectError
 }
 
-
 // Attached to main export is an isPrimitive method which returns a boolean...
 {
 	// eslint-disable-next-line no-new-wrappers

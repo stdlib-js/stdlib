@@ -4,10 +4,10 @@
 
     When invoked, the input function is provided four arguments:
 
-    - value: iterated value
-    - i: input iteration index (zero-based)
-    - n: output (strided) iteration index (zero-based)
-    - curr: current stride
+    - value: iterated value.
+    - i: input iteration index (zero-based).
+    - n: output (strided) iteration index (zero-based).
+    - curr: current stride.
 
     The return value of the input function specifies the next stride.
 

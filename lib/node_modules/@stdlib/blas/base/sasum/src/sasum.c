@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -17,7 +17,8 @@
 */
 
 #include "stdlib/blas/base/sasum.h"
-#include <math.h>
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Computes the sum of absolute values.
@@ -27,35 +28,7 @@
 * @param stride  stride length
 * @return        sum of absolute values
 */
-float c_sasum( const int N, const float *X, const int stride ) {
-	float sum;
-	int m;
-	int i;
-
-	sum = 0.0f;
-	if ( N <= 0 || stride <= 0 ) {
-		return sum;
-	}
-	// If the stride is equal to `1`, use unrolled loops...
-	if ( stride == 1 ) {
-		m = N % 6;
-
-		// If we have a remainder, run a clean-up loop...
-		if ( m > 0 ) {
-			for ( i = 0; i < m; i++ ) {
-				sum += fabsf( X[i] );
-			}
-		}
-		if ( N < 6 ) {
-			return sum;
-		}
-		for ( i = m; i < N; i += 6 ) {
-			sum += fabsf( X[i] ) + fabsf( X[i+1] ) + fabsf( X[i+2] ) + fabsf( X[i+3] ) + fabsf( X[i+4] ) + fabsf( X[i+5] );
-		}
-		return sum;
-	}
-	for ( i = 0; i < N*stride; i += stride ) {
-		sum += fabsf( X[i] );
-	}
-	return sum;
+float API_SUFFIX(c_sasum)( const CBLAS_INT N, const float *X, const CBLAS_INT stride ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, stride );
+	return API_SUFFIX(c_sasum_ndarray)( N, X, stride, ox );
 }

@@ -25,25 +25,23 @@ on:
   # Allow the workflow to be triggered by other workflows
   workflow_call:
     # Define the input parameters for the workflow:
-      inputs:
-        pull_request_number:
-          description: 'PR number'
-          required: true
-          type: number
-      # Define the secrets accessible by the workflow:
-      secrets:
-        STDLIB_BOT_GITHUB_TOKEN:
-          description: 'GitHub token for stdlb-bot'
-          required: true
-        REPO_GITHUB_TOKEN:
-          description: 'GitHub token for accessing the repository'
-          required: true
-        STDLIB_BOT_GPG_PRIVATE_KEY:
-          description: 'GPG private key for stdlb-bot'
-          required: true
-        STDLIB_BOT_GPG_PASSPHRASE:
-          description: 'GPG passphrase for stdlb-bot'
-          required: true
+    inputs:
+      pull_request_number:
+        description: 'PR number'
+        required: true
+        type: number
+
+    # Define the secrets accessible by the workflow:
+    secrets:
+      STDLIB_BOT_GITHUB_TOKEN:
+        description: 'GitHub token for stdlib-bot'
+        required: true
+      STDLIB_BOT_GPG_PRIVATE_KEY:
+        description: 'GPG private key for stdlib-bot'
+        required: true
+      STDLIB_BOT_GPG_PASSPHRASE:
+        description: 'GPG passphrase for stdlib-bot'
+        required: true
 
 # Workflow jobs:
 jobs:
@@ -83,7 +81,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Refers to the branch name of the branch being pushed:
           ref: ${{ steps.pr-details.outputs.branch }}
@@ -92,7 +90,7 @@ jobs:
           repository: ${{ steps.pr-details.outputs.repository }}
 
           # Token for accessing the repository:
-          token: ${{ secrets.REPO_GITHUB_TOKEN }}
+          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
 
           # File path to checkout to:
           path: './'
@@ -100,7 +98,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4.0.3
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -138,22 +136,28 @@ jobs:
       # Fix JavaScript lint errors:
       - name: 'Fix JavaScript lint errors'
         id: fix-lint-errors
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files="${{ steps.changed-files.outputs.files }}"
-          FIX=1 . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_javascript_files" "$files" || true
+          files="$FILES"
+          FIX=1 . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/lint_javascript_files" "$files" || true
 
       # Add missing trailing newlines:
       - name: 'Add missing trailing newlines'
         id: add-trailing-newlines
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files="${{ steps.changed-files.outputs.files }}"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/add_trailing_newlines" "$files"
+          files="$FILES"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_autofix/add_trailing_newlines" "$files"
 
       # Remove related packages from README.md files:
       - name: 'Remove related packages from README.md files'
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files="${{ steps.changed-files.outputs.files }}"
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/remove_related_packages" "$files"
+          files="$FILES"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/lint_autofix/remove_related_packages" "$files"
 
       # Disable Git hooks:
       - name: 'Disable Git hooks'
@@ -163,7 +167,7 @@ jobs:
       # Import GPG key to sign commits:
       - name: 'Import GPG key to sign commits'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-import-gpg@01dd5d3ca463c7f10f7f4f7b4f177225ac661ee4 # v6.1.0
+        uses: crazy-max/ghaction-import-gpg@2dc316deee8e90f13e1a351ab510b4d5bc0c82cd # v7.0.0
         with:
           gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
@@ -173,13 +177,13 @@ jobs:
       # Commit and push changes:
       - name: 'Commit and push changes'
         env:
-            REPO_GITHUB_TOKEN: ${{ secrets.REPO_GITHUB_TOKEN }}
-            USER_NAME: stdlb-bot
+            REPO_GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
+            USER_NAME: stdlib-bot
             BRANCH_NAME: ${{ steps.pr-details.outputs.branch }}
             REPO_NAME: ${{ steps.pr-details.outputs.repository }}
         run: |
           git config --local user.email "82920195+stdlib-bot@users.noreply.github.com"
-          git config --local user.name "stdlib-bot"
+          git config --local user.name "$USER_NAME"
           git add .
           git commit -m "fix: resolve lint errors"
           git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/$REPO_NAME.git" $BRANCH_NAME

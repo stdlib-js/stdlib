@@ -96,17 +96,20 @@ static double rand_double( void ) {
 */
 static double benchmark1( void ) {
 	double elapsed;
-	double x;
-	double y;
+	double x[ 100 ];
+	double y[ 100 ];
 	double z;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 100.0*rand_double() ) - 0.0;
+		y[ i ] = ( 99.9*rand_double() ) + 0.1;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 100.0*rand_double() ) - 0.0;
-		y = ( 99.9*rand_double() ) + 0.1;
-		z = igam( x, y );
+		z = igam( x[ i%100 ], y[ i%100 ] );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;
@@ -126,17 +129,20 @@ static double benchmark1( void ) {
 */
 static double benchmark2( void ) {
 	double elapsed;
-	double x;
-	double y;
+	double x[ 100 ];
+	double y[ 100 ];
 	double z;
 	double t;
 	int i;
 
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = ( 100.0*rand_double() ) - 0.0;
+		y[ i ] = ( 99.9*rand_double() ) + 0.1;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( 100.0*rand_double() ) - 0.0;
-		y = ( 99.9*rand_double() ) + 0.1;
-		z = igamc( x, y );
+		z = igamc( x[ i%100 ], y[ i%100 ] );
 		if ( z != z ) {
 			printf( "should not return NaN\n" );
 			break;

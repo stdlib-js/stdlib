@@ -21,7 +21,7 @@ import fmtprodmsg = require( './index' );
 
 // TESTS //
 
-// The function returns an string...
+// The function returns a string...
 {
 	fmtprodmsg( '1' ); // $ExpectType string
 	fmtprodmsg( '3', 'wrong_type' ); // $ExpectType string

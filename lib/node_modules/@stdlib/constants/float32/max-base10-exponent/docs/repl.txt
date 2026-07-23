@@ -1,0 +1,12 @@
+
+{{alias}}
+    The maximum base 10 exponent for a single-precision floating-point number.
+
+    Examples
+    --------
+    > {{alias}}
+    38
+
+    See Also
+    --------
+

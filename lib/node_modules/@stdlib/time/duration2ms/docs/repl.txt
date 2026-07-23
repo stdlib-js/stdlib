@@ -6,11 +6,11 @@
     unit is a nonnegative integer followed by a unit identifier. The following
     unit identifiers are supported:
 
-    -  d: days
-    -  h: hours
-    -  m: minutes
-    -  s: seconds
-    -  ms: milliseconds
+    - d: days.
+    - h: hours.
+    - m: minutes.
+    - s: seconds.
+    - ms: milliseconds.
 
     For example, the string `1m3s10ms` is a duration string containing three
     time units: `1m` (1 minute), `3s` (3 seconds), and `10ms` (10 milliseconds).

@@ -214,7 +214,7 @@ static double expmulti( const double hi, const double lo, const int32_t k ) {
 * -   The hexadecimal values included in the source code are the intended ones for the used constants. Decimal values may be used, provided that the compiler will convert from decimal to binary accurately enough to produce the intended hexadecimal values.
 *
 * @param x    input value
-* @return	  output value
+* @return     output value
 *
 * @example
 * double out = stdlib_base_exp( 0.0 );

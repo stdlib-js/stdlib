@@ -19,24 +19,24 @@
 // TypeScript Version: 4.1
 
 /**
- * Converts a string to "sticky caps" case.
- *
- * @param str - input string
- * @param p - probability of capitalization (default: 0.5)
- * @returns sticky case string
- *
- * @example
- * var str = stickycase( 'hello world' );
- * // returns <string>
- *
- * @example
- * var str = stickycase( 'hello world', 0.2 );
- * // returns <string>
- *
- * @example
- * var str = stickycase( 'hello world', 0.8 );
- * // returns <string>
- */
+* Converts a string to "sticky caps" case.
+*
+* @param str - input string
+* @param p - probability of capitalization (default: 0.5)
+* @returns sticky case string
+*
+* @example
+* var str = stickycase( 'hello world' );
+* // returns <string>
+*
+* @example
+* var str = stickycase( 'hello world', 0.2 );
+* // returns <string>
+*
+* @example
+* var str = stickycase( 'hello world', 0.8 );
+* // returns <string>
+*/
 declare function stickycase( str: string, p?: number ): string;
 
 

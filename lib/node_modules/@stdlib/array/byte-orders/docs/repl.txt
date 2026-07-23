@@ -1,0 +1,22 @@
+
+{{alias}}()
+    Returns a list of byte orders.
+
+    The output array contains the following orders:
+
+    - little-endian: bytes are ordered from least-to-most significant byte.
+    - big-endian: bytes are ordered from most-to-least significant byte.
+
+    Returns
+    -------
+    out: Array<string>
+        List of byte orders.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [...]
+
+    See Also
+    --------
+

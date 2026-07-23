@@ -88,8 +88,6 @@ declare function promotionRules( dtype1: string, dtype2: string ): null;
 /**
 * Returns a type promotion table displaying complex number data types with the smallest size and closest "kind" to which data types can be safely cast.
 *
-* @param dtype1 - data type
-* @param dtype2 - data type
 * @returns promotion rule table
 *
 * @example

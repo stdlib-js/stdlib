@@ -92,20 +92,23 @@ static double rand_double( void ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double v[ 100 ];
 	double elapsed;
 	double re;
 	double im;
 	double t;
-	double v;
 	int i;
 
 	stdlib_complex128_t x;
 	stdlib_complex128_t y;
 
+	for ( i = 0; i < 100; i++ ) {
+		v[ i ] = ( 1000.0*rand_double() ) - 500.0;
+	}
+
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		v = ( 1000.0*rand_double() ) - 500.0;
-		x = stdlib_complex128( v, v );
+		x = stdlib_complex128( v[ i%100 ], v[ i%100 ] );
 		y = stdlib_base_cinv( x );
 		stdlib_complex128_reim( y, &re, &im );
 		if ( re != re ) {

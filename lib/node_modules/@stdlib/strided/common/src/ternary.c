@@ -62,6 +62,7 @@
 *     ```
 *
 */
+
 #include "stdlib/strided/common/ternary.h"
 #include "stdlib/strided/common/ternary_typedefs.h"
 #include "stdlib/strided/common/ternary_macros.h"

@@ -40,6 +40,18 @@
     out.dtypes.boolean: string
         Default boolean data type.
 
+    out.dtypes.index: string
+        Default index data type.
+
+    out.dtypes.integer_index: string
+        Default integer index data type.
+
+    out.dtypes.boolean_index: string
+        Default boolean index data type.
+
+    out.dtypes.mask_index: string
+        Default mask index data type.
+
     out.order: string
         Default memory layout.
 

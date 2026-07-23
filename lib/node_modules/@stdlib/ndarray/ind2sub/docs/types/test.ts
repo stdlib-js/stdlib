@@ -157,7 +157,7 @@ import ind2sub = require( './index' );
 	const opts = {
 		'order': 'row-major'
 	};
-	ind2sub.assign( shape, true opts, out ); // $ExpectError
+	ind2sub.assign( shape, true, opts, out ); // $ExpectError
 	ind2sub.assign( shape, false opts, out ); // $ExpectError
 	ind2sub.assign( shape, null opts, out ); // $ExpectError
 	ind2sub.assign( shape, undefined opts, out ); // $ExpectError

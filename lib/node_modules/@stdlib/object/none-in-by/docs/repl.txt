@@ -1,0 +1,42 @@
+
+{{alias}}( object, predicate[, thisArg ] )
+    Tests whether every property in an object fails a test implemented by a
+    predicate function.
+
+    The predicate function is provided three arguments:
+
+    - value: object value.
+    - key: object key.
+    - object: the input object.
+
+    The function immediately returns upon encountering a truthy return value.
+
+    If provided an empty object, the function returns `true`.
+
+    Parameters
+    ----------
+    object: Object
+        Input object over which to iterate.
+
+    predicate: Function
+        The test function.
+
+    thisArg: any (optional)
+        Execution context.
+
+    Returns
+    -------
+    bool: boolean
+        The function returns `true` if the predicate function returns a falsy
+        value for all properties; otherwise, the function returns `false`.
+
+    Examples
+    --------
+    > function negative( v ) { return ( v < 0 ); };
+    > var obj = { 'a': 1, 'b': 2, 'c': 4 };
+    > var bool = {{alias}}( obj, negative )
+    true
+
+    See Also
+    --------
+

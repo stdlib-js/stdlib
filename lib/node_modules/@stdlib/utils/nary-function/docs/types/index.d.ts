@@ -20,8 +20,6 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ArrayLike } from '@stdlib/types/array';
-
 /**
 * Returns a function that applies a specified number of arguments to a provided function.
 *

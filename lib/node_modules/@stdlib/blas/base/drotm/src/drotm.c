@@ -18,6 +18,7 @@
 
 #include "stdlib/blas/base/drotm.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
 
 /**
 * Applies a plane rotation.
@@ -30,107 +31,7 @@
 * @param param    parameters for the modified Givens transformation
 */
 void API_SUFFIX(c_drotm)( const CBLAS_INT N, double *X, const CBLAS_INT strideX, double *Y, const CBLAS_INT strideY, const double *param ) {
-	CBLAS_INT ix;
-	CBLAS_INT iy;
-	double dflag;
-	double dh11;
-	double dh12;
-	double dh21;
-	double dh22;
-	CBLAS_INT i;
-	double w;
-	double z;
-
-	dflag = param[ 0 ];
-	if ( N <= 0 || dflag == -2.0 ) {
-		return;
-	}
-	if ( strideX == strideY && strideX > 0 ) {
-		ix = 0;
-		if ( dflag < 0.0 ) {
-			dh11 = param[ 1 ];
-			dh12 = param[ 3 ];
-			dh21 = param[ 2 ];
-			dh22 = param[ 4 ];
-			for ( i = 0; i < N; i++ ) {
-				w = X[ ix ];
-				z = Y[ ix ];
-				X[ ix ] = ( w * dh11 ) + ( z * dh12 );
-				Y[ ix ] = ( w * dh21 ) + ( z * dh22 );
-				ix += strideX;
-			}
-			return;
-		}
-		if ( dflag == 0.0 ) {
-			dh12 = param[ 3 ];
-			dh21 = param[ 2 ];
-			for ( i = 0; i < N; i++ ) {
-				w = X[ ix ];
-				z = Y[ ix ];
-				X[ ix ] = w + ( z * dh12 );
-				Y[ ix ] = ( w * dh21 ) + z;
-				ix += strideX;
-			}
-			return;
-		}
-		dh11 = param[ 1 ];
-		dh22 = param[ 4 ];
-		for ( i = 0; i < N; i++ ) {
-			w = X[ ix ];
-			z = Y[ ix ];
-			X[ ix ] = ( w * dh11 ) + z;
-			Y[ ix ] = -w + ( z * dh22 );
-			ix += strideX;
-		}
-		return;
-	}
-	if ( strideX < 0 ) {
-		ix = ( 1 - N ) * strideX;
-	} else {
-		ix = 0;
-	}
-	if ( strideY < 0 ) {
-		iy = ( 1 - N ) * strideY;
-	} else {
-		iy = 0;
-	}
-	if ( dflag < 0.0 ) {
-		dh11 = param[ 1 ];
-		dh12 = param[ 3 ];
-		dh21 = param[ 2 ];
-		dh22 = param[ 4 ];
-		for ( i = 0; i < N; i++ ) {
-			w = X[ ix ];
-			z = Y[ iy ];
-			X[ ix ] = ( w * dh11 ) + ( z * dh12 );
-			Y[ iy ] = ( w * dh21 ) + ( z * dh22 );
-			ix += strideX;
-			iy += strideY;
-		}
-		return;
-	}
-	if ( dflag == 0.0 ) {
-		dh12 = param[ 3 ];
-		dh21 = param[ 2 ];
-		for ( i = 0; i < N; i++ ) {
-			w = X[ ix ];
-			z = Y[ iy ];
-			X[ ix ] = w + ( z * dh12 );
-			Y[ iy ] = ( w * dh21 ) + z;
-			ix += strideX;
-			iy += strideY;
-		}
-		return;
-	}
-	dh11 = param[ 1 ];
-	dh22 = param[ 4 ];
-	for ( i = 0; i < N; i++ ) {
-		w = X[ ix ];
-		z = Y[ iy ];
-		X[ ix ] = ( w * dh11 ) + z;
-		Y[ iy ] = -w + ( z * dh22 );
-		ix += strideX;
-		iy += strideY;
-	}
-	return;
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	CBLAS_INT oy = stdlib_strided_stride2offset( N, strideY );
+	API_SUFFIX(c_drotm_ndarray)( N, X, strideX, ox, Y, strideY, oy, param );
 }

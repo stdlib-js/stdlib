@@ -86,7 +86,6 @@ indent_style = tab
 [*.{f,f.txt}]
 indent_style = space
 indent_size = 2
-insert_final_newline = false
 
 # Set properties for shell files:
 [*.{sh,sh.txt}]
@@ -121,7 +120,7 @@ indent_style = tab
 [*.{md,md.txt}]
 indent_style = space
 indent_size = 4
-trim_trailing_whitespace = false
+trim_trailing_whitespace = true # Note: this disables using two spaces to force a hard line break, which is permitted in Markdown. As we don't typically follow that practice (TMK), we should be safe to automatically trim.
 
 # Set properties for `usage.txt` files:
 [usage.txt]
@@ -165,6 +164,15 @@ indent_style = tab
 [*.{yml,yml.txt}]
 indent_style = space
 indent_size = 2
+
+# Ignore generated lock files for GitHub Agentic Workflows:
+[*.lock.yml]
+charset = unset
+end_of_line = unset
+indent_style = unset
+indent_size = unset
+trim_trailing_whitespace = unset
+insert_final_newline = unset
 
 # Set properties for GYP files:
 [binding.gyp]

@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/ndarray/base/assign",
   "version": "0.0.0",
-  "description": "Assign elements in a input ndarray to elements in an output ndarray.",
+  "description": "Assign elements in an input ndarray to elements in an output ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

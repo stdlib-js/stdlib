@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Returns the index offset which specifies the location of the first indexed value in a strided array.
 */
-int64_t stdlib_strided_stride2offset( int64_t N, int64_t stride );
+int64_t stdlib_strided_stride2offset( const int64_t N, const int64_t stride );
 
 #ifdef __cplusplus
 }
