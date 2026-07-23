@@ -40,8 +40,6 @@ var dger = require( '@stdlib/blas/base/ndarray/dger' );
 
 Performs the rank 1 operation `A = alpha*x*y^T + A`, where `alpha` is a scalar, `x` and `y` are one-dimensional ndarrays, and `A` is an `M` by `N` matrix.
 
-<!-- eslint-disable max-len -->
-
 ```javascript
 var Float64Matrix = require( '@stdlib/ndarray/matrix/float64' );
 var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
@@ -84,8 +82,6 @@ The function has the following parameters:
 <section class="examples">
 
 ## Examples
-
-<!-- eslint-disable max-len -->
 
 <!-- eslint no-undef: "error" -->
 
