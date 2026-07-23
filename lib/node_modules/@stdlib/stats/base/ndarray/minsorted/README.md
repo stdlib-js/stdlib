@@ -41,10 +41,9 @@ var minsorted = require( '@stdlib/stats/base/ndarray/minsorted' );
 Computes the minimum value of a sorted one-dimensional ndarray.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 
-var xbuf = [ 1.0, 2.0, 3.0, 4.0 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, 2.0, 3.0, 4.0 ], 'generic' );
 
 var v = minsorted( [ x ] );
 // returns 1.0
@@ -76,18 +75,16 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var linspace = require( '@stdlib/blas/ext/linspace' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var minsorted = require( '@stdlib/stats/base/ndarray/minsorted' );
 
-// Create a sorted data buffer:
-var xbuf = linspace( -5.0, 5.0, 10, {
+var opts = {
     'dtype': 'generic'
-});
+};
 
-// Wrap in an ndarray:
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+// Create a sorted ndarray:
+var x = linspace( [ 10 ], -5.0, 5.0, opts );
 console.log( ndarray2array( x ) );
 
 // Compute the minimum of the sorted ndarray:
