@@ -1,0 +1,25 @@
+
+{{alias}}( x )
+    Computes the arithmetic mean of an array, ignoring `NaN` values.
+
+    If provided an empty array, the function returns `NaN`.
+
+    Parameters
+    ----------
+    x: Array<number>|TypedArray
+        Input array.
+
+    Returns
+    -------
+    out: number
+        Arithmetic mean.
+
+    Examples
+    --------
+    > var x = [ 1.0, -2.0, NaN, 2.0 ];
+    > {{alias}}( x )
+    ~0.3333
+
+    See Also
+    --------
+

@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/math/base/special/sincos",
   "version": "0.0.0",
-  "description": "Simultaneously compute the sine and cosine of a number.",
+  "description": "Simultaneously compute the sine and cosine of an angle measured in radians.",
   "license": "Apache-2.0 AND BSL-1.0",
   "author": {
     "name": "The Stdlib Authors",

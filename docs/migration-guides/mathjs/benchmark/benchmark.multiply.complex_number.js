@@ -26,6 +26,7 @@ var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
 var real = require( '@stdlib/complex/float64/real' );
 var imag = require( '@stdlib/complex/float64/imag' );
+var format = require( '@stdlib/string/format' );
 var base = require( '@stdlib/complex/float64/base/mul' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
@@ -41,7 +42,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/base/special/cmul:value=complex_number', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/base/special/cmul:value=complex_number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -73,7 +74,7 @@ bench( pkg+'::stdlib:math/base/special/cmul:value=complex_number', opts, functio
 
 // TODO: add math/special/mul benchmarks
 
-bench( pkg+'::mathjs:multiply:value=complex_number', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:multiply:value=complex_number', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;

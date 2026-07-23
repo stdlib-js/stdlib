@@ -207,7 +207,7 @@ The function accepts the following arguments:
 -   **X**: `[in] float*` input array.
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
 -   **Y**: `[inout] float*` output array.
--   **strideY**: `[in CBLAS_INT` index increment for `Y`.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
 
 ```c
 void c_saxpy( const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, float *Y, const CBLAS_INT strideY );
@@ -232,7 +232,7 @@ The function accepts the following arguments:
 -   **strideX**: `[in] CBLAS_INT` index increment for `X`.
 -   **offsetX**: `[in] CBLAS_INT` starting index for `X`.
 -   **Y**: `[inout] float*` output array.
--   **strideY**: `[in CBLAS_INT` index increment for `Y`.
+-   **strideY**: `[in] CBLAS_INT` index increment for `Y`.
 -   **offsetY**: `[in] CBLAS_INT` starting index for `Y`.
 
 ```c

@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+docs: update `math/base/special` TypeScript declarations
+
+PR-URL: #9117
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>

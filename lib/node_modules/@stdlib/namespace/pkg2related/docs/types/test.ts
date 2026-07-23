@@ -23,7 +23,7 @@ import pkg2related = require( './index' );
 
 // The function returns an array of strings or null...
 {
-	pkg2related( 'base.sin' ); // $ExpectType string[] | null
+	pkg2related( '@stdlib/math/base/special/sin' ); // $ExpectType string[] | null
 }
 
 // The compiler throws an error if the function is not provided a string...
@@ -40,5 +40,5 @@ import pkg2related = require( './index' );
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	pkg2related( 'base.sin', 'beep' ); // $ExpectError
+	pkg2related( '@stdlib/math/base/special/sin', 'beep' ); // $ExpectError
 }

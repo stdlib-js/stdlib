@@ -19,5 +19,4 @@
 #include "stdlib/stats/base/dists/hypergeometric/stdev.h"
 #include "stdlib/math/base/napi/ternary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_III_D( stdlib_base_dists_hypergeometric_stdev )

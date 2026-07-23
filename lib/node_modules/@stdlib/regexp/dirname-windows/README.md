@@ -32,7 +32,7 @@ var reDirnameWindows = require( '@stdlib/regexp/dirname-windows' );
 
 #### reDirnameWindows()
 
-Returns a [regular expression][regexp] to capture a Windows path [dirname][dirname]. 
+Returns a [regular expression][regexp] to capture a Windows path [dirname][dirname].
 
 ```javascript
 var RE_DIRNAME_WINDOWS = reDirnameWindows();
@@ -42,7 +42,7 @@ var dir = RE_DIRNAME_WINDOWS.exec( 'foo\\bar\\index.js' )[ 1 ];
 
 #### reDirnameWindows.REGEXP
 
-[Regular expression][regexp] to capture a Windows path [dirname][dirname]. 
+[Regular expression][regexp] to capture a Windows path [dirname][dirname].
 
 ```javascript
 var dir = reDirnameWindows.REGEXP.exec( 'foo\\bar\\index.js' )[ 1 ];

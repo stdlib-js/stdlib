@@ -113,9 +113,9 @@ Options:
 
     ```bash
     # Not escaped...
-    $ echo -n $'crypto\nndarray' | is-note-builtin --split /\r?\n/
+    $ echo -n $'crypto\nndarray' | is-node-builtin --split /\r?\n/
     # Escaped...
-    $ echo -n $'crypto\nndarray' | is-note-builtin --split /\\r?\\n/
+    $ echo -n $'crypto\nndarray' | is-node-builtin --split /\\r?\\n/
     ```
 
 -   The implementation ignores trailing delimiters.

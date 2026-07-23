@@ -31,7 +31,7 @@ static double complex scale( const double complex x ) {
 
 int main( void ) {
 	// Create an input strided array:
-	double complex X[] = { 1.0+1.0*I, 2.0+2.0*I, 3.0+3.0*I, 4.0+4.0*I, 5.0+5.0*I, 6.0+6.0*I };
+	const double complex X[] = { 1.0+1.0*I, 2.0+2.0*I, 3.0+3.0*I, 4.0+4.0*I, 5.0+5.0*I, 6.0+6.0*I };
 
 	// Create an output strided array:
 	double complex Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };

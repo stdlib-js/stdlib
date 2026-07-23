@@ -373,7 +373,7 @@ interface Routine extends ModuleWrapper {
 	* mod.write( yptr, ones( N, dtype ) );
 	*
 	* // Perform computation:
-	* var ptr = mod.main( N, xptr, 1, yptr, 1 );
+	* var ptr = mod.main( N, xptr, 1, yptr, 1, 0.0, 1.0 );
 	* // returns <number>
 	*
 	* var bool = ( ptr === yptr );

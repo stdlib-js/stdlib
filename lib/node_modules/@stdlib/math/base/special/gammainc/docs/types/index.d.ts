@@ -33,22 +33,27 @@
 * @returns function value
 *
 * @example
-* var y = gammainc( 6.0, 2.0 )
+* var y = gammainc( 6.0, 2.0 );
 * // returns ~0.9826
+*
 * @example
-* var y = gammainc( 1.0, 2.0, true, true )
+* var y = gammainc( 1.0, 2.0, true, true );
 * // returns ~0.7358
+*
 * @example
-* var y = gammainc( 7.0, 5.0 )
+* var y = gammainc( 7.0, 5.0 );
 * // returns ~0.8270
+*
 * @example
-* var y = gammainc( 7.0, 5.0, false )
+* var y = gammainc( 7.0, 5.0, false );
 * // returns ~19.8482
+*
 * @example
-* var y = gammainc( NaN, 2.0 )
+* var y = gammainc( NaN, 2.0 );
 * // returns NaN
+*
 * @example
-* var y = gammainc( 6.0, NaN )
+* var y = gammainc( 6.0, NaN );
 * // returns NaN
 */
 declare function gammainc( x: number, a: number, regularized?: boolean, upper?: boolean ): number;
