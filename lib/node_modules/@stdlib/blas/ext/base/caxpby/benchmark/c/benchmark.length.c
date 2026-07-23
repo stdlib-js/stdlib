@@ -1,0 +1,218 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/blas/ext/base/caxpby.h"
+#include "stdlib/complex/float32/ctor.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include <time.h>
+#include <sys/time.h>
+
+#define NAME "caxpby"
+#define ITERATIONS 10000000
+#define REPEATS 3
+#define MIN 1
+#define MAX 6
+
+/**
+* Prints the TAP version.
+*/
+static void print_version( void ) {
+	printf( "TAP version 13\n" );
+}
+
+/**
+* Prints the TAP summary.
+*
+* @param total     total number of tests
+* @param passing   total number of passing tests
+*/
+static void print_summary( int total, int passing ) {
+	printf( "#\n" );
+	printf( "1..%d\n", total ); // TAP plan
+	printf( "# total %d\n", total );
+	printf( "# pass  %d\n", passing );
+	printf( "#\n" );
+	printf( "# ok\n" );
+}
+
+/**
+* Prints benchmarks results.
+*
+* @param iterations   number of iterations
+* @param elapsed      elapsed time in seconds
+*/
+static void print_results( int iterations, double elapsed ) {
+	double rate = (double)iterations / elapsed;
+	printf( "  ---\n" );
+	printf( "  iterations: %d\n", iterations );
+	printf( "  elapsed: %0.9f\n", elapsed );
+	printf( "  rate: %0.9f\n", rate );
+	printf( "  ...\n" );
+}
+
+/**
+* Returns a clock time.
+*
+* @return clock time
+*/
+static double tic( void ) {
+	struct timeval now;
+	gettimeofday( &now, NULL );
+	return (double)now.tv_sec + (double)now.tv_usec/1.0e6;
+}
+
+/**
+* Generates a random number on the interval [min,max).
+*
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
+*/
+static float random_uniform( const float min, const float max ) {
+	float v = (float)rand() / ( (float)RAND_MAX + 1.0f );
+	return min + ( v*(max-min) );
+}
+
+/**
+* Runs a benchmark.
+*
+* @param iterations   number of iterations
+* @param len          array length
+* @return             elapsed time in seconds
+*/
+static double benchmark1( int iterations, int len ) {
+	stdlib_complex64_t alpha;
+	stdlib_complex64_t beta;
+	double elapsed;
+	double t;
+	float *x;
+	float *y;
+	int i;
+
+	x = (float *)malloc( len * 2 * sizeof( float ) );
+	y = (float *)malloc( len * 2 * sizeof( float ) );
+
+	alpha = stdlib_complex64( 0.5f, 0.5f );
+	beta = stdlib_complex64( 0.5f, -0.5f );
+	for ( i = 0; i < len*2; i++ ) {
+		x[ i ] = random_uniform( -100.0f, 100.0f );
+		y[ i ] = random_uniform( -100.0f, 100.0f );
+	}
+	t = tic();
+	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
+		stdlib_strided_caxpby( len, alpha, (stdlib_complex64_t *)x, 1, beta, (stdlib_complex64_t *)y, 1 );
+		if ( y[ 0 ] != y[ 0 ] ) {
+			printf( "should not return NaN\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( y[ 0 ] != y[ 0 ] ) {
+		printf( "should not return NaN\n" );
+	}
+	free( x );
+	free( y );
+	return elapsed;
+}
+
+/**
+* Runs a benchmark.
+*
+* @param iterations   number of iterations
+* @param len          array length
+* @return             elapsed time in seconds
+*/
+static double benchmark2( int iterations, int len ) {
+	stdlib_complex64_t alpha;
+	stdlib_complex64_t beta;
+	double elapsed;
+	double t;
+	float *x;
+	float *y;
+	int i;
+
+	x = (float *)malloc( len * 2 * sizeof( float ) );
+	y = (float *)malloc( len * 2 * sizeof( float ) );
+
+	alpha = stdlib_complex64( 0.5f, 0.5f );
+	beta = stdlib_complex64( 0.5f, -0.5f );
+	for ( i = 0; i < len*2; i++ ) {
+		x[ i ] = random_uniform( -100.0f, 100.0f );
+		y[ i ] = random_uniform( -100.0f, 100.0f );
+	}
+	t = tic();
+	for ( i = 0; i < iterations; i++ ) {
+		// cppcheck-suppress uninitvar
+		stdlib_strided_caxpby_ndarray( len, alpha, (stdlib_complex64_t *)x, 1, 0, beta, (stdlib_complex64_t *)y, 1, 0 );
+		if ( y[ 0 ] != y[ 0 ] ) {
+			printf( "should not return NaN\n" );
+			break;
+		}
+	}
+	elapsed = tic() - t;
+	if ( y[ 0 ] != y[ 0 ] ) {
+		printf( "should not return NaN\n" );
+	}
+	free( x );
+	free( y );
+	return elapsed;
+}
+
+/**
+* Main execution sequence.
+*/
+int main( void ) {
+	double elapsed;
+	int count;
+	int iter;
+	int len;
+	int i;
+	int j;
+
+	// Use the current time to seed the random number generator:
+	srand( time( NULL ) );
+
+	print_version();
+	count = 0;
+	for ( i = MIN; i <= MAX; i++ ) {
+		len = pow( 10, i );
+		iter = ITERATIONS / pow( 10, i-1 );
+		for ( j = 0; j < REPEATS; j++ ) {
+			count += 1;
+			printf( "# c::%s:len=%d\n", NAME, len );
+			elapsed = benchmark1( iter, len );
+			print_results( iter, elapsed );
+			printf( "ok %d benchmark finished\n", count );
+		}
+	}
+	for ( i = MIN; i <= MAX; i++ ) {
+		len = pow( 10, i );
+		iter = ITERATIONS / pow( 10, i-1 );
+		for ( j = 0; j < REPEATS; j++ ) {
+			count += 1;
+			printf( "# c::%s:ndarray:len=%d\n", NAME, len );
+			elapsed = benchmark2( iter, len );
+			print_results( iter, elapsed );
+			printf( "ok %d benchmark finished\n", count );
+		}
+	}
+	print_summary( count, count );
+}

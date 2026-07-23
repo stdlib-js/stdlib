@@ -41,24 +41,24 @@ var cumax = require( '@stdlib/stats/base/ndarray/cumax' );
 Computes the cumulative maximum value of a one-dimensional ndarray.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 
-var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, 3.0, 4.0, 2.0 ], 'generic' );
+var y = vector( [ 0.0, 0.0, 0.0, 0.0 ], 'generic' );
 
-var ybuf = [ 0.0, 0.0, 0.0, 0.0 ];
-var y = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
-
-var v = cumax( [ x, y ] );
+var z = cumax( [ x, y ] );
 // returns <ndarray>[ 1.0, 3.0, 4.0, 4.0 ]
 
-var bool = ( v === y );
+var bool = ( z === y );
 // returns true
 ```
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing a one-dimensional input ndarray and a one-dimensional output ndarray.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a one-dimensional output ndarray.
 
 </section>
 
@@ -81,16 +81,16 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var zerosLike = require( '@stdlib/ndarray/zeros-like' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var cumax = require( '@stdlib/stats/base/ndarray/cumax' );
 
-var xbuf = discreteUniform( 10, -50, 50, {
+var opts = {
     'dtype': 'generic'
-});
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = discreteUniform( [ 10 ], -50, 50, opts );
 console.log( ndarray2array( x ) );
 
 var y = zerosLike( x );
