@@ -1,0 +1,8 @@
+---
+type: amend-message
+---
+docs: add Git note for commit bc7c322891b1c0b758e6aef323b2f22a3bab1500
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/13610
+Reviewed-by: Athan Reines <kgryte@gmail.com>
+Signed-off-by: Philipp Burckhardt <pburckhardt@outlook.com>
