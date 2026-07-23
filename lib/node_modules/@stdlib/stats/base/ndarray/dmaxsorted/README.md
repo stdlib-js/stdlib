@@ -41,11 +41,9 @@ var dmaxsorted = require( '@stdlib/stats/base/ndarray/dmaxsorted' );
 Computes the maximum value of a sorted one-dimensional double-precision floating-point ndarray.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0 ] );
 
 var v = dmaxsorted( [ x ] );
 // returns 4.0
@@ -77,15 +75,13 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var linspace = require( '@stdlib/blas/ext/linspace' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dmaxsorted = require( '@stdlib/stats/base/ndarray/dmaxsorted' );
 
-var xbuf = linspace( -50, 50, 10, {
+var x = linspace( [ 10 ], -50, 50, true, {
     'dtype': 'float64'
 });
-var x = new ndarray( 'float64', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
 console.log( ndarray2array( x ) );
 
 var v = dmaxsorted( [ x ] );

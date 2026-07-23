@@ -88,7 +88,7 @@ declare function scalar2ndarrayLike<T = unknown, U extends InputArray<T> = Input
 * var dt = String( getDType( y ) );
 * // returns 'complex128'
 *
-* var v = y.get();
+* var z = y.get();
 * // returns <Complex128>[ 1.0, 2.0 ]
 */
 declare function scalar2ndarrayLike<T extends typedndarray<ComplexLike> = typedndarray<ComplexLike>>( x: T, value: number ): T;
