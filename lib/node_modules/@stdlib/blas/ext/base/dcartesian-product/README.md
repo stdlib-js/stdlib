@@ -58,7 +58,7 @@ The function has the following parameters:
 -   **out**: output [`Float64Array`][@stdlib/array/float64].
 -   **LDO**: stride length between successive contiguous vectors of the matrix `out` (a.k.a., leading dimension of `out`).
 
-The `M`, `N` and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compute the Cartesian product of every other element:
+The `M`, `N`, and stride parameters determine which elements in the strided arrays are accessed at runtime. For example, to compute the Cartesian product of every other element:
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );

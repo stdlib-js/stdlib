@@ -44,7 +44,7 @@ interface Routine {
 	*     -   `C` is overwritten by `C * H`.
 	*
 	* @param order - storage layout
-	* @param side - specifies the side of multiplication with `C`.
+	* @param side - specifies the side of multiplication with `C`
 	* @param M - number of rows in `C`
 	* @param N - number of columns in `C`
 	* @param V - the vector `v`

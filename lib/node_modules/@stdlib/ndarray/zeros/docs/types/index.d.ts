@@ -234,7 +234,7 @@ interface OptionsWithDType extends Options {
 }
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -243,7 +243,7 @@ interface OptionsWithDType extends Options {
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -263,7 +263,7 @@ interface OptionsWithDType extends Options {
 declare function zeros( shape: Shape | number, options: Float64Options ): float64ndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -272,7 +272,7 @@ declare function zeros( shape: Shape | number, options: Float64Options ): float6
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -292,7 +292,7 @@ declare function zeros( shape: Shape | number, options: Float64Options ): float6
 declare function zeros( shape: Shape | number, options: Float32Options ): float32ndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -301,7 +301,7 @@ declare function zeros( shape: Shape | number, options: Float32Options ): float3
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -321,7 +321,7 @@ declare function zeros( shape: Shape | number, options: Float32Options ): float3
 declare function zeros( shape: Shape | number, options: Complex128Options ): complex128ndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -330,7 +330,7 @@ declare function zeros( shape: Shape | number, options: Complex128Options ): com
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -350,7 +350,7 @@ declare function zeros( shape: Shape | number, options: Complex128Options ): com
 declare function zeros( shape: Shape | number, options: Complex64Options ): complex64ndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -359,7 +359,7 @@ declare function zeros( shape: Shape | number, options: Complex64Options ): comp
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -379,7 +379,7 @@ declare function zeros( shape: Shape | number, options: Complex64Options ): comp
 declare function zeros( shape: Shape | number, options: Int32Options ): int32ndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -388,7 +388,7 @@ declare function zeros( shape: Shape | number, options: Int32Options ): int32nda
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -408,7 +408,7 @@ declare function zeros( shape: Shape | number, options: Int32Options ): int32nda
 declare function zeros( shape: Shape | number, options: Int16Options ): int16ndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -417,7 +417,7 @@ declare function zeros( shape: Shape | number, options: Int16Options ): int16nda
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -437,7 +437,7 @@ declare function zeros( shape: Shape | number, options: Int16Options ): int16nda
 declare function zeros( shape: Shape | number, options: Int8Options ): int8ndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -446,7 +446,7 @@ declare function zeros( shape: Shape | number, options: Int8Options ): int8ndarr
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -466,7 +466,7 @@ declare function zeros( shape: Shape | number, options: Int8Options ): int8ndarr
 declare function zeros( shape: Shape | number, options: Uint32Options ): uint32ndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -475,7 +475,7 @@ declare function zeros( shape: Shape | number, options: Uint32Options ): uint32n
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -495,7 +495,7 @@ declare function zeros( shape: Shape | number, options: Uint32Options ): uint32n
 declare function zeros( shape: Shape | number, options: Uint16Options ): uint16ndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -504,7 +504,7 @@ declare function zeros( shape: Shape | number, options: Uint16Options ): uint16n
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -524,7 +524,7 @@ declare function zeros( shape: Shape | number, options: Uint16Options ): uint16n
 declare function zeros( shape: Shape | number, options: Uint8Options ): uint8ndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -533,7 +533,7 @@ declare function zeros( shape: Shape | number, options: Uint8Options ): uint8nda
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -553,7 +553,7 @@ declare function zeros( shape: Shape | number, options: Uint8Options ): uint8nda
 declare function zeros( shape: Shape | number, options: Uint8COptions ): uint8cndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -562,7 +562,7 @@ declare function zeros( shape: Shape | number, options: Uint8COptions ): uint8cn
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -582,7 +582,7 @@ declare function zeros( shape: Shape | number, options: Uint8COptions ): uint8cn
 declare function zeros( shape: Shape | number, options: GenericOptions ): genericndarray<number>;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -591,7 +591,7 @@ declare function zeros( shape: Shape | number, options: GenericOptions ): generi
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
@@ -609,7 +609,7 @@ declare function zeros( shape: Shape | number, options: GenericOptions ): generi
 declare function zeros( shape: Shape | number, options?: Options ): float64ndarray;
 
 /**
-* Creates a zero-filled array having a specified shape and data type.
+* Creates a zero-filled ndarray having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -618,7 +618,7 @@ declare function zeros( shape: Shape | number, options?: Options ): float64ndarr
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param options.readonly - boolean indicating whether an array should be read-only
-* @returns zero-filled array
+* @returns zero-filled ndarray
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
