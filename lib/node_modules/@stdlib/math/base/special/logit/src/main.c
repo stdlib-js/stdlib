@@ -22,6 +22,7 @@
 #include "stdlib/math/base/special/ln.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Evaluates the logit function.
@@ -35,10 +36,10 @@
 */
 double stdlib_base_logit( const double p ) {
 	if ( stdlib_base_is_nan( p ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( !stdlib_base_is_probability( p ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( p == 0.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_NINF;

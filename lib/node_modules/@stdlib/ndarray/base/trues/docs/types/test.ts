@@ -25,6 +25,7 @@ import trues = require( './index' );
 {
 	trues( 'bool', [ 2, 2 ], 'row-major' ); // $ExpectType boolndarray
 	trues( 'bool', [ 2, 2 ], 'column-major' ); // $ExpectType boolndarray
+	trues( 'generic', [ 2, 2 ], 'column-major' ); // $ExpectType genericndarray<boolean>
 }
 
 // The compiler throws an error if the function is provided a first argument which is an unrecognized/unsupported data type...

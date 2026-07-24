@@ -71,7 +71,7 @@ interface Namespace {
 	*
 	* ## Notes
 	*
-	* -   If provided `k < 0`, the function returns `NaN`.
+	* -   If provided `k <= 0`, the function returns `NaN`.
 	*
 	* @param k - degrees of freedom
 	* @returns entropy
