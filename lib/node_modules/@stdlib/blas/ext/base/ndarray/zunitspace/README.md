@@ -40,8 +40,6 @@ var zunitspace = require( '@stdlib/blas/ext/base/ndarray/zunitspace' );
 
 Fills a one-dimensional double-precision complex floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from a specified value.
 
-<!-- eslint-disable max-len -->
-
 ```javascript
 var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 var Complex128 = require( '@stdlib/complex/float64/ctor' );

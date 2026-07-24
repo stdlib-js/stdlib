@@ -41,9 +41,9 @@ interface Routine {
 	* @returns index of the last non-zero row
 	*
 	* @example
-	* var Float64array = require( '@stdlib/array/float64' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var A = new Float64array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
+	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
 	*
 	* var out = iladlr( 'row-major', 3, 2, A, 2 );
 	* // returns 1
@@ -65,9 +65,9 @@ interface Routine {
 	* @returns index of the last non-zero row
 	*
 	* @example
-	* var Float64array = require( '@stdlib/array/float64' );
+	* var Float64Array = require( '@stdlib/array/float64' );
 	*
-	* var A = new Float64array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
+	* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
 	*
 	* var out = iladlr.ndarray( 3, 2, A, 2, 1, 0 );
 	* // returns 1
@@ -90,17 +90,17 @@ interface Routine {
 * @returns index of the last non-zero row
 *
 * @example
-* var Float64array = require( '@stdlib/array/float64' );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
-* var A = new Float64array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
+* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
 *
 * var out = iladlr( 'row-major', 3, 2, A, 2 );
 * // returns 1
 *
 * @example
-* var Float64array = require( '@stdlib/array/float64' );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
-* var A = new Float64array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
+* var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 0.0, 0.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 0.0, 0.0 ] ]
 *
 * var out = iladlr.ndarray( 3, 2, A, 2, 1, 0 );
 * // returns 1

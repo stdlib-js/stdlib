@@ -123,7 +123,7 @@ interface Namespace {
 	kurtosis: typeof kurtosis;
 
 	/**
-	* Evaluates the logarithm of the cumulative distribution function (CDF) for a Planck distribution with shape parameter `lambda`.
+	* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Planck distribution with shape parameter `lambda`.
 	*
 	* @param x - input value
 	* @param lambda - shape parameter
