@@ -1,0 +1,120 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/stats/base/dists/binomial/quantile.h"
+#include "stdlib/stats/base/dists/binomial/cdf.h"
+#include "stdlib/math/base/special/erfcinv.h"
+#include "stdlib/math/base/special/round.h"
+#include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/math/base/assert/is_nan.h"
+#include "stdlib/math/base/assert/is_nonnegative_integer.h"
+#include "stdlib/constants/float64/sqrt_two.h"
+#include "stdlib/constants/float64/pinf.h"
+
+/**
+* Performs a search to the left.
+*
+* @param x    starting guess
+* @param r    probability
+* @param n    number of trials
+* @param p    success probability
+* @return     `r` quantile of the specified distribution
+*/
+static double search_left( double x, const double r, const double n, const double p ) {
+	while ( x > 0.0 && stdlib_base_dists_binomial_cdf( x - 1.0, n, p ) >= r ) {
+		x -= 1.0;
+	}
+	return x;
+}
+
+/**
+* Performs a search to the right.
+*
+* @param x    starting guess
+* @param r    probability
+* @param n    number of trials
+* @param p    success probability
+* @return     `r` quantile of the specified distribution
+*/
+static double search_right( double x, const double r, const double n, const double p ) {
+	x += 1.0;
+	while ( stdlib_base_dists_binomial_cdf( x, n, p ) < r ) {
+		x += 1.0;
+	}
+	return x;
+}
+
+/**
+* Evaluates the quantile function for a binomial distribution with number of trials `n` and success probability `p` at a probability `r`.
+*
+* @param r    input probability
+* @param n    number of trials
+* @param p    success probability
+* @return     evaluated quantile
+*
+* @example
+* double y = stdlib_base_dists_binomial_quantile( 0.4, 20.0, 0.2 );
+* // returns 3.0
+*/
+double stdlib_base_dists_binomial_quantile( const double r, const double n, const double p ) {
+	double sigmaInv;
+	double guess;
+	double sigma;
+	double corr;
+	double mu;
+	double x2;
+	double x;
+
+	if (
+		stdlib_base_is_nan( r ) ||
+		stdlib_base_is_nan( n ) ||
+		stdlib_base_is_nan( p ) ||
+		r < 0.0 ||
+		r > 1.0 ||
+		p < 0.0 ||
+		p > 1.0 ||
+		!stdlib_base_is_nonnegative_integer( n ) ||
+		n == STDLIB_CONSTANT_FLOAT64_PINF
+	) {
+		return 0.0 / 0.0; // NaN
+	}
+	if ( r == 1.0 || p == 1.0 ) {
+		return n;
+	}
+	if ( r == 0.0 || p == 0.0 || n == 0.0 ) {
+		return 0.0;
+	}
+	// Cornish-Fisher expansion:
+	mu = n * p;
+	sigma = stdlib_base_sqrt( n * p * ( 1.0 - p ) );
+	sigmaInv = 1.0 / sigma;
+	if ( r < 0.5 ) {
+		x = -stdlib_base_erfcinv( 2.0 * r ) * STDLIB_CONSTANT_FLOAT64_SQRT2;
+	} else {
+		x = stdlib_base_erfcinv( 2.0 * ( 1.0 - r ) ) * STDLIB_CONSTANT_FLOAT64_SQRT2;
+	}
+	x2 = x * x;
+
+	// Skewness correction:
+	corr = x + ( sigmaInv * ( x2 - 1.0 ) / 6.0 );
+	guess = stdlib_base_round( mu + ( sigma * corr ) );
+	if ( stdlib_base_dists_binomial_cdf( guess, n, p ) >= r ) {
+		return search_left( guess, r, n, p );
+	}
+	return search_right( guess, r, n, p );
+}
