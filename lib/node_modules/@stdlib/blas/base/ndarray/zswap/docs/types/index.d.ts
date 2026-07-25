@@ -23,7 +23,7 @@
 import { complex128ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Interchanges two one-dimensional complex double-precision floating-point ndarrays.
+* Interchanges two one-dimensional double-precision complex floating-point ndarrays.
 *
 * ## Notes
 *
