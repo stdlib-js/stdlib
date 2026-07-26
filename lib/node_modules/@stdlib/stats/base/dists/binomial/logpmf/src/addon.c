@@ -19,4 +19,4 @@
 #include "stdlib/stats/base/dists/binomial/logpmf.h"
 #include "stdlib/math/base/napi/ternary.h"
 
-STDLIB_MATH_BASE_NAPI_MODULE_DID_D( stdlib_base_dists_binomial_logpmf );
+STDLIB_MATH_BASE_NAPI_MODULE_DID_D( stdlib_base_dists_binomial_logpmf )
