@@ -24,7 +24,7 @@ limitations under the License.
 
 <section class="intro">
 
-The [modified huber loss gradient][modified-huber-loss-gradient] is defined as
+The [modified Huber loss gradient][modified-huber-loss-gradient] is defined as
 
 <!-- <equation class="equation" label="eq:modified_huber_loss_gradient" align="center" raw="
 \frac{\partial \ell}{\partial w_i} = \begin{cases} -4yx_i & \text{if } yp < -1 \\ -2y(1 - yp)x_i & \text{if } -1 \le yp \le 1 \\ 0 & \text{if } yp > 1 \end{cases}" alt="Equation for the modified Huber loss gradient."> -->
@@ -73,10 +73,13 @@ The function accepts the following arguments:
 If any argument is `NaN`, the function returns `NaN`.
 
 ```javascript
-var v = modifiedHuberGradient( 2.0, NaN, 0.782 );
+var v = modifiedHuberGradient( NaN, 1.0, 0.782 );
 // returns NaN
 
 v = modifiedHuberGradient( 1.0, NaN, 0.782 );
+// returns NaN
+
+v = modifiedHuberGradient( 1.0, 1.0, NaN );
 // returns NaN
 
 v = modifiedHuberGradient( NaN, NaN, NaN );
