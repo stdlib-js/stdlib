@@ -1,0 +1,27 @@
+
+{{alias}}()
+    Returns a list of SGD classification penalties.
+
+    The output array contains the following penalties:
+
+    - elasticnet: regularization method that linearly combines the L1 and L2
+    penalties of the lasso and ridge methods.
+    - l1: L1 regularization (also called LASSO) leads to sparse models by adding
+    a penalty based on the absolute value of coefficients.
+    - l2: L2 regularization (also called ridge regression) encourages smaller,
+    more evenly distributed weights by adding a penalty based on the square of
+    the coefficients.
+
+    Returns
+    -------
+    out: Array<string>
+        List of penalties.
+
+    Examples
+    --------
+    > var out = {{alias}}()
+    [...]
+
+    See Also
+    --------
+
