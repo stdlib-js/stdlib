@@ -30,7 +30,10 @@ enum STDLIB_ML_SGD_CLASSIFICATION_PENALTY {
 	STDLIB_ML_SGD_CLASSIFICATION_L1,
 
 	// L2 regularization (also called ridge regression) encourages smaller, more evenly distributed weights by adding a penalty based on the square of the coefficients:
-	STDLIB_ML_SGD_CLASSIFICATION_L2
+	STDLIB_ML_SGD_CLASSIFICATION_L2,
+
+	// No regularization:
+	STDLIB_ML_SGD_CLASSIFICATION_NONE
 };
 
 #endif // !STDLIB_ML_BASE_SGD_CLASSIFICATION_PENALTIES_H
