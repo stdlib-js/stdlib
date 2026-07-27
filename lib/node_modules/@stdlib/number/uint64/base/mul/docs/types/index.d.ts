@@ -24,7 +24,7 @@ import { Uint64 } from '@stdlib/types/number';
 import { Collection, NumericArray } from '@stdlib/types/array';
 
 /**
-* Interface for adding two 64-bit unsigned integers.
+* Interface for multiplying two 64-bit unsigned integers.
 */
 interface Mul {
 	/**
