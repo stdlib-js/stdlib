@@ -160,7 +160,6 @@ import sfirstIndexEqual = require( './index' );
 // The compiler throws an error if the `ndarray` method is provided a fifth argument which is not a Float32Array...
 {
 	var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
-	var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
 
 	sfirstIndexEqual.ndarray( x.length, x, 1, 0, '1', 1, 0 ); // $ExpectError
 	sfirstIndexEqual.ndarray( x.length, x, 1, 0, true, 1, 0 ); // $ExpectError

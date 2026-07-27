@@ -38,6 +38,7 @@
 #include "stdlib/math/base/special/pow.h"
 #include "stdlib/constants/float64/e.h"
 #include "stdlib/constants/float64/eps.h"
+#include "stdlib/constants/float64/nan.h"
 
 static const double G = 10.90051099999999983936049829935654997826;
 
@@ -109,10 +110,10 @@ double stdlib_base_beta( const double a, const double b ) {
 	double c;
 
 	if ( stdlib_base_is_nan( a ) || stdlib_base_is_nan( b ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( a < 0.0 || b < 0.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( b == 1.0 ) {
 		return 1.0 / a;
