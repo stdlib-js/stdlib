@@ -23,6 +23,7 @@
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/strided/base/stride2offset.h"
 #include "stdlib/complex/float64/ctor.h"
+#include <stdint.h>
 
 /**
 * Computes the Cartesian product for two double-precision complex floating-point strided arrays.
@@ -80,7 +81,7 @@ void API_SUFFIX(stdlib_strided_zcartesian_product)( const CBLAS_LAYOUT order, co
 * @param offsetOut   starting index for Out
 */
 void API_SUFFIX(stdlib_strided_zcartesian_product_ndarray)( const CBLAS_INT M, const CBLAS_INT N, const stdlib_complex128_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, const stdlib_complex128_t *Y, const CBLAS_INT strideY, const CBLAS_INT offsetY, stdlib_complex128_t *Out, const CBLAS_INT strideOut1, const CBLAS_INT strideOut2, const CBLAS_INT offsetOut ) {
-	CBLAS_INT sa[ 2 ];
+	int64_t sa[ 2 ];
 	CBLAS_INT iy;
 	CBLAS_INT ix;
 	CBLAS_INT io;
