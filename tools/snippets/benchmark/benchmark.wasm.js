@@ -22,6 +22,7 @@
 
 var bench = require( '@stdlib/bench' );
 var hasWebAssemblySupport = require( '@stdlib/assert/has-wasm-support' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var TODO = require( './../lib/wasm.js' );
 
@@ -35,7 +36,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::wasm', opts, function benchmark( b ) {
+bench( format( '%s::wasm', pkg ), opts, function benchmark( b ) {
 	var i;
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {

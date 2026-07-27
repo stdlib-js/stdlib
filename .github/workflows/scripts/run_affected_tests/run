@@ -165,7 +165,8 @@ main() {
 	files=$(echo "${files}" | grep -v '/fixtures/') || true
 
 	if [[ -n "${files}" ]]; then
-		make test-javascript-files-min FILES="${files}"
+		# Invoke make in batches to avoid "Argument list too long" errors:
+		printf '%s\n' ${files} | xargs sh -c 'make test-javascript-files-min FILES="$*"' _
 	fi
 
 	cleanup

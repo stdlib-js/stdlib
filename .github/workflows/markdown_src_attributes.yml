@@ -97,9 +97,12 @@ jobs:
 
       # Log the results:
       - name: 'Log results'
+        env:
+          FAILURES: ${{ steps.results.outputs.failures }}
+          WARNINGS: ${{ steps.results.outputs.warnings }}
         run: |
-          echo ${{ steps.results.outputs.failures }} >> "${{ env.LOG_FILE_FAILURES }}"
-          echo ${{ steps.results.outputs.warnings }} >> "${{ env.LOG_FILE_WARNINGS }}"
+          echo "$FAILURES" >> "${{ env.LOG_FILE_FAILURES }}"
+          echo "$WARNINGS" >> "${{ env.LOG_FILE_WARNINGS }}"
         timeout-minutes: 2
 
       # Fail the workflow if the status is not "success":
@@ -119,7 +122,7 @@ jobs:
       # Upload the log files:
       - name: 'Upload log files'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: always()
         with:
           # Define a name for the uploaded artifact:
@@ -178,7 +181,7 @@ jobs:
       # Send notification to Zulip:
       - name: 'Send notification'
         # Pin action to full length commit SHA
-        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
+        uses: zulip/github-actions-zulip/send-message@bd8ec52de371d139ae8313661b7d8318c19266aa # v2.0.1
         if: success()
         with:
           api-key: ${{ secrets.ZULIP_API_KEY }}

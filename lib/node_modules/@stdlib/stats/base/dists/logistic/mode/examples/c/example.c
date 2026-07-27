@@ -35,6 +35,6 @@ int main( void ) {
 		mu = random_uniform( -5.0, 5.0 );
 		s = random_uniform( 0.0, 20.0 );
 		y = stdlib_base_dists_logistic_mode( mu, s );
-		printf( "µ: %lf, s: %lf, mode(X;µ,s): %lf\n", mu, s, y );
+		printf( "μ: %lf, s: %lf, mode(X;μ,s): %lf\n", mu, s, y );
 	}
 }

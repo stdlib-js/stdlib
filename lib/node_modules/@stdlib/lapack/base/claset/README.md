@@ -44,12 +44,7 @@ var alpha = new Complex64( 1.0, 2.0 );
 var beta = new Complex64( 3.0, 4.0 );
 
 claset( 'row-major', 'all', 2, 2, alpha, beta, A, 2 );
-
-var z = A.get( 0 );
-// returns <Complex64>[ 3.0, 4.0 ]
-
-z = A.get( 1 );
-// returns <Complex64>[ 1.0, 2.0 ]
+// A => <Complex64Array>[ 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 ```
 
 The function has the following parameters:
@@ -81,9 +76,7 @@ var alpha = new Complex64( 1.0, 2.0 );
 var beta = new Complex64( 3.0, 4.0 );
 
 claset( 'row-major', 'all', 2, 2, alpha, beta, A1, 2 );
-
-var z = A0.get( 1 );
-// returns <Complex64>[ 3.0, 4.0 ]
+// A0 => <Complex64Array>[ 0.0, 0.0, 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 ```
 
 #### claset.ndarray( uplo, M, N, alpha, beta, A, sa1, sa2, oa )
@@ -100,12 +93,7 @@ var alpha = new Complex64( 1.0, 2.0 );
 var beta = new Complex64( 3.0, 4.0 );
 
 claset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 0 );
-
-var z = A.get( 0 );
-// returns <Complex64>[ 3.0, 4.0 ]
-
-z = A.get( 1 );
-// returns <Complex64>[ 1.0, 2.0 ]
+// A => <Complex64Array>[ 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 ```
 
 The function has the following parameters:
@@ -132,12 +120,7 @@ var alpha = new Complex64( 1.0, 2.0 );
 var beta = new Complex64( 3.0, 4.0 );
 
 claset.ndarray( 'all', 2, 2, alpha, beta, A, 2, 1, 1 );
-
-var z = A.get( 0 );
-// returns <Complex64>[ 0.0, 0.0 ]
-
-z = A.get( 1 );
-// returns <Complex64>[ 3.0, 4.0 ]
+// A => <Complex64Array>[ 0.0, 0.0, 3.0, 4.0, 1.0, 2.0, 1.0, 2.0, 3.0, 4.0 ]
 ```
 
 </section>
