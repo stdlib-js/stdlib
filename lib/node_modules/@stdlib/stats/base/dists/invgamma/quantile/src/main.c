@@ -21,7 +21,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 
 /**
-* Evaluates the quantile function for an inverse gamma distribution.
+* Evaluates the quantile function for an inverse gamma distribution with shape parameter `alpha` and scale parameter `beta` at a probability `p`.
 *
 * @param p        input value
 * @param alpha    shape parameter
