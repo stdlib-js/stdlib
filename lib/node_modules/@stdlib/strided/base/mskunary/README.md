@@ -6293,7 +6293,7 @@ void stdlib_strided_mask_z_z( uint8_t *arrays[], const int64_t *shape, const int
 Macro containing the preamble for a loop which operates on strided array elements according to a strided mask array.
 
 ```c
-STDLIB_STRIDED_MSKUNARY_LOOP_PREMABLE {
+STDLIB_STRIDED_MSKUNARY_LOOP_PREAMBLE {
     // Loop body...
 }
 ```
