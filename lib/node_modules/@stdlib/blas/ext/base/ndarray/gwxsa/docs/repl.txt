@@ -1,0 +1,34 @@
+
+{{alias}}( arrays )
+    Subtracts a scalar constant from each element in an input one-dimensional
+    ndarray and assigns the results to elements in a one-dimensional output
+    ndarray.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional output ndarray.
+        - a zero-dimensional ndarray containing the scalar constant to subtract.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var xbuf = [ -2.0, 1.0, 3.0, -5.0 ];
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( xbuf, 'generic' );
+    > var wbuf = [ 0.0, 0.0, 0.0, 0.0 ];
+    > var w = {{alias:@stdlib/ndarray/vector/ctor}}( wbuf, 'generic' );
+    > var opts = { 'dtype': 'generic' };
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 5.0, opts );
+    > {{alias}}( [ x, w, alpha ] )
+    <ndarray>[ -7.0, -4.0, -2.0, -10.0 ]
+
+    See Also
+    --------
+

@@ -1,0 +1,28 @@
+
+{{alias}}( arrays )
+    Tests whether at least one element in a one-dimensional double-precision
+    floating-point ndarray is truthy.
+
+    If provided an empty ndarray, the function returns `false`.
+
+    The function explicitly treats `NaN` values as falsy.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing a one-dimensional input ndarray.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether at least one element is truthy.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 0.0, 0.0, 1.0 ] );
+    > {{alias}}( [ x ] )
+    true
+
+    See Also
+    --------
+
