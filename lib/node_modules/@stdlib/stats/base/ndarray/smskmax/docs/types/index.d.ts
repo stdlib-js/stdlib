@@ -25,19 +25,22 @@ import { float32ndarray, uint8ndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the maximum value of a one-dimensional single-precision floating-point ndarray according to a mask.
 *
-* @param arrays - array-like object containing an input ndarray and a mask ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a one-dimensional mask ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns maximum value
 *
 * @example
-* var Float32Array = require( '@stdlib/array/float32' );
-* var Uint8Array = require( '@stdlib/array/uint8' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+* var Uint8Vector = require( '@stdlib/ndarray/vector/uint8' );
 *
-* var xbuf = new Float32Array( [ 1.0, -2.0, 4.0, 2.0 ] );
-* var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
-*
-* var mbuf = new Uint8Array( [ 0, 0, 1, 0 ] );
-* var mask = new ndarray( 'uint8', mbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = new Float32Vector( [ 1.0, -2.0, 4.0, 2.0 ] );
+* var mask = new Uint8Vector( [ 0, 0, 1, 0 ] );
 *
 * var v = smskmax( [ x, mask ] );
 * // returns 2.0
