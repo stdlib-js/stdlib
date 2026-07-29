@@ -183,7 +183,7 @@ The callback function is provided the following arguments:
         'dtype': 'complex128'
     };
     var y = filterMap( x, opts, fcn );
-    // returns <ndarray>
+    // returns <ndarray>[ <Complex128>[ 8.0, 0.0 ], <Complex128>[ 9.0, 0.0 ], <Complex128>[ 10.0, 0.0 ] ]
     ```
 
 -   If a provided callback function returns `undefined`, the function skips the respective [ndarray][@stdlib/ndarray/ctor] element. If the callback function returns a value other than `undefined`, the function stores the callback's return value in the output [ndarray][@stdlib/ndarray/ctor].

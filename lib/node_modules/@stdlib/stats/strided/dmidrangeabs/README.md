@@ -20,7 +20,7 @@ limitations under the License.
 
 # dmidrangeabs
 
-> Compute the [mid-range][mid-range] of absolute values of a double-precision floating-point strided array.
+> Calculate the [mid-range][mid-range] of absolute values of a double-precision floating-point strided array.
 
 <section class="intro">
 
