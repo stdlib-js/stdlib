@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the quantile function for an inverse gamma distribution.
+* Evaluates the quantile function for an inverse gamma distribution with shape parameter `alpha` and scale parameter `beta` at a probability `p`.
 */
 double stdlib_base_dists_invgamma_quantile( const double p, const double alpha, const double beta );
 

@@ -25,7 +25,7 @@
 *
 * @example
 * var list = penalties();
-* // e.g., returns [ 'elasticnet', 'l1', 'l2' ]
+* // e.g., returns [ 'elasticnet', 'l1', 'l2', 'none' ]
 */
 declare function penalties(): Array<string>;
 
