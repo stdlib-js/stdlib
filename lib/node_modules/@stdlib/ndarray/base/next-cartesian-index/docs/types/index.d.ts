@@ -97,7 +97,7 @@ interface Routine {
 	* @param idx - current dimension indices
 	* @param dim - index of the dimension from which to start incrementing (inclusive)
 	* @param out - output array
-	* @returns update dimension indices
+	* @returns updated dimension indices
 	*
 	* @example
 	* var shape = [ 12 ];

@@ -29,7 +29,7 @@
 * @return        entropy
 *
 * @example
-* double y = stdlib_base_gumbel_entropy( 0.0, 1.0 );
+* double y = stdlib_base_dists_gumbel_entropy( 0.0, 1.0 );
 * // returns ~1.577
 */
 double stdlib_base_dists_gumbel_entropy( const double mu, const double beta ) {

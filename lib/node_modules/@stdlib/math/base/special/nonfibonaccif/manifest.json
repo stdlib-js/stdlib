@@ -39,7 +39,9 @@
         "@stdlib/math/base/napi/unary",
         "@stdlib/constants/float32/nan",
         "@stdlib/math/base/special/floorf",
-        "@stdlib/math/base/special/lnf"
+        "@stdlib/math/base/special/lnf",
+        "@stdlib/math/base/assert/is-integerf",
+        "@stdlib/constants/float32/pinf"
       ]
     },
     {
@@ -55,7 +57,9 @@
       "dependencies": [
         "@stdlib/constants/float32/nan",
         "@stdlib/math/base/special/floorf",
-        "@stdlib/math/base/special/lnf"
+        "@stdlib/math/base/special/lnf",
+        "@stdlib/math/base/assert/is-integerf",
+        "@stdlib/constants/float32/pinf"
       ]
     },
     {
@@ -71,7 +75,9 @@
       "dependencies": [
         "@stdlib/constants/float32/nan",
         "@stdlib/math/base/special/floorf",
-        "@stdlib/math/base/special/lnf"
+        "@stdlib/math/base/special/lnf",
+        "@stdlib/math/base/assert/is-integerf",
+        "@stdlib/constants/float32/pinf"
       ]
     }
   ]

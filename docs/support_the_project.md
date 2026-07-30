@@ -26,7 +26,7 @@ stdlib is an open-source project which is maintained by members of the community
 
 You can help in the following ways:
 
--   Give developer time to the project. Message us on [Gitter][stdlib-gitter] for guidance.
+-   Give developer time to the project. Message us on [Zulip][stdlib-zulip] for guidance.
 -   Financially sponsor the project.
 
 If you want to be a sponsor 🤗, you can donate to one or more of the following:
@@ -36,7 +36,7 @@ If you want to be a sponsor 🤗, you can donate to one or more of the following
 
 Thank you for your support!
 
-[stdlib-gitter]: https://gitter.im/stdlib-js/stdlib
+[stdlib-zulip]: https://stdlib.zulipchat.com
 
 [open-collective-stdlib]: https://opencollective.com/stdlib
 

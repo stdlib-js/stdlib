@@ -166,7 +166,7 @@ TODO
 
 [lapack]: https://www.netlib.org/lapack/explore-html/
 
-[lapack-dlapy2]: https://www.netlib.org/lapack/explore-html-3.6.1/d7/d43/group__aux_o_t_h_e_rauxiliary_gacf4c47c2f593fb3a4e842bca6df1240b.html
+[lapack-dlapy2]: https://www.netlib.org/lapack/explore-html/d8/d5e/group__lapy2_gab55f5b30b6088a4d6ccd9f073aff1eb7.html
 
 </section>
 
