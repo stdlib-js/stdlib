@@ -163,14 +163,13 @@ var idx = dfirstIndexEqual.ndarray( 3, x, 1, x.length-3, y, 1, y.length-3 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dfirstIndexEqual = require( '@stdlib/blas/ext/base/dfirst-index-equal' );
 
-var x = discreteUniform( 10, 0, 10, {
+var opts = {
     'dtype': 'float64'
-});
+};
+var x = discreteUniform( 10, 0, 10, opts );
 console.log( x );
 
-var y = discreteUniform( 10, 0, 10, {
-    'dtype': 'float64'
-});
+var y = discreteUniform( 10, 0, 10, opts );
 console.log( y );
 
 var idx = dfirstIndexEqual( x.length, x, 1, y, 1 );
