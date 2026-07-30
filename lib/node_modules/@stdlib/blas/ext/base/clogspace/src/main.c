@@ -101,10 +101,12 @@ void API_SUFFIX(stdlib_strided_clogspace_ndarray)( const CBLAS_INT N, const floa
 	CBLAS_INT M;
 	CBLAS_INT i;
 	float lnb;
-	float dre;
-	float dim;
-	float dc;
-	float ds;
+	float sre;
+	float sim;
+	float sc;
+	float ss;
+	float sM;
+	float si;
 
 	if ( N <= 0 ) {
 		return;
@@ -124,20 +126,20 @@ void API_SUFFIX(stdlib_strided_clogspace_ndarray)( const CBLAS_INT N, const floa
 	if ( N == 1 ) {
 		if ( endpoint ) {
 			scale = stdlib_base_powf( base, stop_re );
-			stdlib_base_sincosf( stop_im * lnb, &ds, &dc );
-			X[ ix ] = stdlib_complex64( scale * dc, scale * ds );
+			stdlib_base_sincosf( stop_im * lnb, &ss, &sc );
+			X[ ix ] = stdlib_complex64( scale * sc, scale * ss );
 		} else {
 			scale = stdlib_base_powf( base, start_re );
-			stdlib_base_sincosf( start_im * lnb, &ds, &dc );
-			X[ ix ] = stdlib_complex64( scale * dc, scale * ds );
+			stdlib_base_sincosf( start_im * lnb, &ss, &sc );
+			X[ ix ] = stdlib_complex64( scale * sc, scale * ss );
 		}
 		return;
 	}
 
 	// Write the first value:
 	scale = stdlib_base_powf( base, start_re );
-	stdlib_base_sincosf( start_im * lnb, &ds, &dc );
-	X[ ix ] = stdlib_complex64( scale * dc, scale * ds );
+	stdlib_base_sincosf( start_im * lnb, &ss, &sc );
+	X[ ix ] = stdlib_complex64( scale * sc, scale * ss );
 	ix += strideX;
 
 	// Calculate the complex increment:
@@ -146,23 +148,26 @@ void API_SUFFIX(stdlib_strided_clogspace_ndarray)( const CBLAS_INT N, const floa
 	} else {
 		M = N;
 	}
-	dre = ( stop_re - start_re ) / (float)M;
-	dim = ( stop_im - start_im ) / (float)M;
+	sM = (float)M;
+	sre = ( stop_re - start_re ) / sM;
+	sim = ( stop_im - start_im ) / sM;
 
 	// Generate logarithmically spaced values:
+	si = 1.0f;
 	for ( i = 1; i < M; i++ ) {
-		exp_re = start_re + ( dre * (float)i );
-		exp_im = start_im + ( dim * (float)i );
+		exp_re = start_re + ( sre * si );
+		exp_im = start_im + ( sim * si );
 		scale = stdlib_base_powf( base, exp_re );
-		stdlib_base_sincosf( exp_im * lnb, &ds, &dc );
-		X[ ix ] = stdlib_complex64( scale * dc, scale * ds );
+		stdlib_base_sincosf( exp_im * lnb, &ss, &sc );
+		X[ ix ] = stdlib_complex64( scale * sc, scale * ss );
 		ix += strideX;
+		si += 1.0;
 	}
 	// Check whether to include the `base^stop` value:
 	if ( endpoint ) {
 		scale = stdlib_base_powf( base, stop_re );
-		stdlib_base_sincosf( stop_im * lnb, &ds, &dc );
-		X[ ix ] = stdlib_complex64( scale * dc, scale * ds );
+		stdlib_base_sincosf( stop_im * lnb, &ss, &sc );
+		X[ ix ] = stdlib_complex64( scale * sc, scale * ss );
 	}
 	return;
 }
