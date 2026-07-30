@@ -98,13 +98,13 @@ void API_SUFFIX(stdlib_strided_clogspace_ndarray)( const CBLAS_INT N, const floa
 	float exp_re;
 	float exp_im;
 	float scale;
+	CBLAS_INT M;
+	CBLAS_INT i;
 	float lnb;
 	float dre;
 	float dim;
 	float dc;
 	float ds;
-	float M;
-	float i;
 
 	if ( N <= 0 ) {
 		return;
@@ -142,17 +142,17 @@ void API_SUFFIX(stdlib_strided_clogspace_ndarray)( const CBLAS_INT N, const floa
 
 	// Calculate the complex increment:
 	if ( endpoint ) {
-		M = (float)( N - 1 );
+		M = N - 1;
 	} else {
-		M = (float)N;
+		M = N;
 	}
-	dre = ( stop_re - start_re ) / M;
-	dim = ( stop_im - start_im ) / M;
+	dre = ( stop_re - start_re ) / (float)M;
+	dim = ( stop_im - start_im ) / (float)M;
 
 	// Generate logarithmically spaced values:
-	for ( i = 1.0f; i < M; i += 1.0f ) {
-		exp_re = start_re + ( dre * i );
-		exp_im = start_im + ( dim * i );
+	for ( i = 1; i < M; i++ ) {
+		exp_re = start_re + ( dre * (float)i );
+		exp_im = start_im + ( dim * (float)i );
 		scale = stdlib_base_powf( base, exp_re );
 		stdlib_base_sincosf( exp_im * lnb, &ds, &dc );
 		X[ ix ] = stdlib_complex64( scale * dc, scale * ds );
