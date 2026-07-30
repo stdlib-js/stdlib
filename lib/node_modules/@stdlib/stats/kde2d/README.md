@@ -56,7 +56,7 @@ var out = kde2d( x, y );
 
 The function has the ability to handle [ndarrays][nd-array]. Specifically the `ndarray` must be constructed so that there are two columns present, the first column containing the `x` values and the second column containing the `y` values.
 
-Note that for the output the `x` and `y` properties refer to the equally spaced gridpoints of `X` and `Y` used to calculate `z`. 
+Note that for the output the `x` and `y` properties refer to the equally spaced gridpoints of `X` and `Y` used to calculate `z`.
 
 <!-- eslint-disable array-element-newline -->
 
@@ -95,7 +95,7 @@ The function accepts the following `options`:
 -   **xMax**: a `number` indicating the upper bound of X. Must be strictly greater than `xMin`. Will default to the maximum value of `X`.
 -   **yMin**: a `number` indicating the lower bound of Y. Must be strictly less than `yMax`. Will default to the minimum value of `Y`.
 -   **yMax**: a `number` indicating the upper bound of Y. Must be strictly greater than `yMin`. Will default to the maximum value of `Y`.
--   **kernel**: a `string` or `function` indicating the kernel to be used when calculating the estimation. If a `string` is supplied then it will be matched to a pre-defined kernel function. Otherwise you may supply a function to support custom kernels. Will default to the `gaussian` kernel. 
+-   **kernel**: a `string` or `function` indicating the kernel to be used when calculating the estimation. If a `string` is supplied then it will be matched to a pre-defined kernel function. Otherwise you may supply a function to support custom kernels. Will default to the `gaussian` kernel.
 
 By default, the bandwidth argument is set by a builtin function. To choose different bandwidth values, set the `h` option. Note that if you use a custom bandwidth for one axis, you must also use a custom bandwidth for the other axis.
 

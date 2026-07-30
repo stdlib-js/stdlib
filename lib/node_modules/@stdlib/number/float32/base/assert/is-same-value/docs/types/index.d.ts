@@ -32,30 +32,30 @@
 * @example
 * var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 *
-* var bool = isSameValuef( toFloat32( 3.14 ), toFloat32( 3.14 ) );
+* var bool = isSameValue( toFloat32( 3.14 ), toFloat32( 3.14 ) );
 * // returns true
 *
 * @example
 * var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 *
-* var bool = isSameValuef( toFloat32( -0.0 ), toFloat32( -0.0 ) );
+* var bool = isSameValue( toFloat32( -0.0 ), toFloat32( -0.0 ) );
 * // returns true
 *
 * @example
 * var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 *
-* var bool = isSameValuef( toFloat32( -0.0 ), toFloat32( 0.0 ) );
+* var bool = isSameValue( toFloat32( -0.0 ), toFloat32( 0.0 ) );
 * // returns false
 *
 * @example
 * var toFloat32 = require( '@stdlib/number/float64/base/to-float32' );
 *
-* var bool = isSameValuef( toFloat32( NaN ), toFloat32( NaN ) );
+* var bool = isSameValue( toFloat32( NaN ), toFloat32( NaN ) );
 * // returns true
 */
-declare function isSameValuef( a: number, b: number ): boolean;
+declare function isSameValue( a: number, b: number ): boolean;
 
 
 // EXPORTS //
 
-export = isSameValuef;
+export = isSameValue;

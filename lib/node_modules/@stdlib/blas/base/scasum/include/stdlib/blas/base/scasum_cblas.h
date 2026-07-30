@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the CBLAS Level 1 routine `cblas_scasum`.
 */
-#ifndef SCASUM_CBLAS_H
-#define SCASUM_CBLAS_H
+#ifndef STDLIB_BLAS_BASE_SCASUM_CBLAS_H
+#define STDLIB_BLAS_BASE_SCASUM_CBLAS_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -40,4 +40,4 @@ float API_SUFFIX(cblas_scasum)( const CBLAS_INT N, const void *X, const CBLAS_IN
 }
 #endif
 
-#endif // !SCASUM_CBLAS_H
+#endif // !STDLIB_BLAS_BASE_SCASUM_CBLAS_H

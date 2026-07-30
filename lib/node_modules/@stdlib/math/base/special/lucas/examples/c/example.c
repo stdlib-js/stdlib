@@ -18,14 +18,13 @@
 
 #include "stdlib/math/base/special/lucas.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-	int32_t i;
+	double i;
 	double v;
 
-	for ( i = 0; i < 77; i++ ) {
+	for ( i = 0.0; i < 77.0; i++ ) {
 		v = stdlib_base_lucas( i );
-		printf( "lucas(%d) = %lf\n", i, v );
+		printf( "lucas(%lf) = %lf\n", i, v );
 	}
 }

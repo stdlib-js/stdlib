@@ -52,7 +52,7 @@ type Unary = ( i: number ) => any;
 type Callback = Nullary | Unary;
 
 /**
-* Creates a filled array according to a provided callback function and having a specified data type.
+* Creates a filled array having a specified data type.
 *
 * @param dtype - data type
 * @returns filled array

@@ -1,0 +1,9 @@
+---
+type: amend-message
+---
+docs: improve doctests for complex number instances in `math/base/special/cflipsignf`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/9011
+Ref: https://github.com/stdlib-js/stdlib/issues/8641
+
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

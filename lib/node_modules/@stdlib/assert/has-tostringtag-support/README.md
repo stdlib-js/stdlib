@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Symbol.toStringTag Support
+# hasToStringTagSupport
 
 > Detect native [`Symbol.toStringTag`][mdn-symbol] support.
 

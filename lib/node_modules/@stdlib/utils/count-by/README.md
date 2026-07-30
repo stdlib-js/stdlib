@@ -120,7 +120,7 @@ console.log( context.count );
     // returns { '[object Object]': 4 }
     ```
 
-    while each group identifier is unique, all collection elements resolve to the same group because each group identifier serializes to the same `string`. 
+    while each group identifier is unique, all collection elements resolve to the same group because each group identifier serializes to the same `string`.
 
 </section>
 

@@ -104,11 +104,12 @@ static double benchmark1( int iterations, int N ) {
 	int i;
 	int j;
 
-	for ( i = 0, j = 0; i < N; i++, j += 2 ) {
+	for ( i = 0; i < N; i++ ) {
 		x[ i ] = ( rand_double()*20.0 ) - 10.0;
 		y[ i ] = ( rand_double()*20.0 ) - 10.0;
-		A[ j ] = ( rand_double()*20.0 ) - 10.0;
-		A[ j+1 ] = ( rand_double()*20.0 ) - 10.0;
+		for ( j = 0; j < N; j++ ) {
+			A[ (i*N)+j ] = ( rand_double()*20.0 ) - 10.0;
+		}
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
@@ -142,11 +143,12 @@ static double benchmark2( int iterations, int N ) {
 	int i;
 	int j;
 
-	for ( i = 0, j = 0; i < N; i++, j += 2 ) {
+	for ( i = 0; i < N; i++ ) {
 		x[ i ] = ( rand_double()*20.0 ) - 10.0;
 		y[ i ] = ( rand_double()*20.0 ) - 10.0;
-		A[ j ] = ( rand_double()*20.0 ) - 10.0;
-		A[ j+1 ] = ( rand_double()*20.0 ) - 10.0;
+		for ( j = 0; j < N; j++ ) {
+			A[ (i*N)+j ] = ( rand_double()*20.0 ) - 10.0;
+		}
 	}
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
