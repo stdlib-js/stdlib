@@ -1,0 +1,168 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+#include "stdlib/blas/ext/base/clogspace.h"
+#include "stdlib/complex/float32/ctor.h"
+#include "stdlib/complex/float32/real.h"
+#include "stdlib/complex/float32/imag.h"
+#include "stdlib/blas/base/shared.h"
+#include "stdlib/strided/base/stride2offset.h"
+#include "stdlib/math/base/special/powf.h"
+#include "stdlib/math/base/special/lnf.h"
+#include "stdlib/math/base/special/sincosf.h"
+#include <stdbool.h>
+
+/**
+* Fills a single-precision complex floating-point strided array with logarithmically spaced values over a specified interval.
+*
+* @param N        number of indexed elements
+* @param base     base of the logarithmic scale
+* @param start    exponent of the starting value
+* @param stop     exponent of the final value
+* @param endpoint boolean indicating whether to include the `base^stop` value when writing values to the input array
+* @param X        input array
+* @param strideX  stride length
+*/
+void API_SUFFIX(stdlib_strided_clogspace)( const CBLAS_INT N, const float base, const stdlib_complex64_t start, const stdlib_complex64_t stop, const bool endpoint, stdlib_complex64_t *X, const CBLAS_INT strideX ) {
+	CBLAS_INT ox = stdlib_strided_stride2offset( N, strideX );
+	API_SUFFIX(stdlib_strided_clogspace_ndarray)( N, base, start, stop, endpoint, X, strideX, ox );
+}
+
+/**
+* Fills a single-precision complex floating-point strided array with logarithmically spaced values over a specified interval using alternative indexing semantics.
+*
+* ## Method
+*
+* 1.  If \\( b \\) is a positive real number, exponentiation with base \\( b \\) and complex exponent \\( z \\) is defined by means of the exponential function with a complex argument as
+*
+*     ```tex
+*     b^z = e^{z \ln b}
+*     ```
+*
+*     where \\( \ln b \\) denotes the natural logarithm of \\( b \\).
+*
+* 2.  Euler's formula states that, for any real number \\( y \\), one has
+*
+*     ```tex
+*     e^{iy} = \cos y + i \sin y
+*     ```
+*
+* 3.  Consequently, Euler's formula allows expressing the polar form of \\( b^z \\) in terms of the real and imaginary components of \\( z = x + iy \\).
+*
+*     ```tex
+*     b^{x + iy} = b^x ( \cos(y \ln b) + i \sin(y \ln b) )
+*     ```
+*
+*     which follows from
+*
+*     ```tex
+*     \begin{align*}
+*     b^{x + iy} &= b^x b^{iy} \\
+*                &= b^x e^{iy \ln b} \\
+*                &= b^x ( \cos(y \ln b) + i \sin(y \ln b) ) \\
+*     \end{align*}
+*     ```
+*
+* 4.  Using Euler's formulation thus provides an update equation for generating each logarithmically spaced element in which we compute the sine and cosine of the imaginary component of the exponent and multiply by a real-valued scalar.
+*
+* @param N        number of indexed elements
+* @param base     base of the logarithmic scale
+* @param start    exponent of the starting value
+* @param stop     exponent of the final value
+* @param endpoint boolean indicating whether to include the `base^stop` value when writing values to the input array
+* @param X        input array
+* @param strideX  stride length
+* @param offsetX  starting index
+*/
+void API_SUFFIX(stdlib_strided_clogspace_ndarray)( const CBLAS_INT N, const float base, const stdlib_complex64_t start, const stdlib_complex64_t stop, const bool endpoint, stdlib_complex64_t *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+	float start_re;
+	float start_im;
+	float stop_re;
+	float stop_im;
+	CBLAS_INT ix;
+	float exp_re;
+	float exp_im;
+	float scale;
+	CBLAS_INT M;
+	CBLAS_INT i;
+	float lnb;
+	float dre;
+	float dim;
+	float dc;
+	float ds;
+
+	if ( N <= 0 ) {
+		return;
+	}
+
+	// Decompose the exponent bounds into their real and imaginary components:
+	start_re = stdlib_complex64_real( start );
+	start_im = stdlib_complex64_imag( start );
+	stop_re = stdlib_complex64_real( stop );
+	stop_im = stdlib_complex64_imag( stop );
+
+	// Compute ln(base) for use in base^z = exp(z * ln(base)):
+	lnb = stdlib_base_lnf( base );
+
+	// Set the first value:
+	ix = offsetX;
+	if ( N == 1 ) {
+		if ( endpoint ) {
+			scale = stdlib_base_powf( base, stop_re );
+			stdlib_base_sincosf( stop_im * lnb, &ds, &dc );
+			X[ ix ] = stdlib_complex64( scale * dc, scale * ds );
+		} else {
+			scale = stdlib_base_powf( base, start_re );
+			stdlib_base_sincosf( start_im * lnb, &ds, &dc );
+			X[ ix ] = stdlib_complex64( scale * dc, scale * ds );
+		}
+		return;
+	}
+
+	// Write the first value:
+	scale = stdlib_base_powf( base, start_re );
+	stdlib_base_sincosf( start_im * lnb, &ds, &dc );
+	X[ ix ] = stdlib_complex64( scale * dc, scale * ds );
+	ix += strideX;
+
+	// Calculate the complex increment:
+	if ( endpoint ) {
+		M = N - 1;
+	} else {
+		M = N;
+	}
+	dre = ( stop_re - start_re ) / (float)M;
+	dim = ( stop_im - start_im ) / (float)M;
+
+	// Generate logarithmically spaced values:
+	for ( i = 1; i < M; i++ ) {
+		exp_re = start_re + ( dre * (float)i );
+		exp_im = start_im + ( dim * (float)i );
+		scale = stdlib_base_powf( base, exp_re );
+		stdlib_base_sincosf( exp_im * lnb, &ds, &dc );
+		X[ ix ] = stdlib_complex64( scale * dc, scale * ds );
+		ix += strideX;
+	}
+	// Check whether to include the `base^stop` value:
+	if ( endpoint ) {
+		scale = stdlib_base_powf( base, stop_re );
+		stdlib_base_sincosf( stop_im * lnb, &ds, &dc );
+		X[ ix ] = stdlib_complex64( scale * dc, scale * ds );
+	}
+	return;
+}
