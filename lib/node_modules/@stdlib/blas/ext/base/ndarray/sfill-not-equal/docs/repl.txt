@@ -1,0 +1,38 @@
+
+{{alias}}( arrays )
+    Replaces elements in a one-dimensional single-precision floating-point
+    ndarray not equal to a provided search element with a specified scalar
+    constant.
+
+    The input ndarray is modified *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    When comparing elements, the function checks for equality using the strict
+    equality operator `===`. As a consequence, `NaN` values are considered
+    distinct (i.e., as `NaN !== NaN` always evaluates to `true`, `NaN` elements
+    are always replaced), and `-0` and `+0` are considered the same.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the search element.
+        - a zero-dimensional ndarray containing the scalar constant.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ 0.0, -2.0, 3.0, 0.0, 4.0, -6.0 ] );
+    > var v = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, { 'dtype': 'float32' } );
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 5.0, { 'dtype': 'float32' } );
+    > {{alias}}( [ x, v, alpha ] )
+    <ndarray>[ 0.0, 5.0, 5.0, 0.0, 5.0, 5.0 ]
+
+    See Also
+    --------
