@@ -1,0 +1,54 @@
+
+{{alias}}( arrays )
+    Performs the matrix-matrix operation `C = alpha*op(A)*op(B) + beta*C`,
+    where `op(X)` is either `op(X) = X` or `op(X) = X^T`, `alpha` and `beta`
+    are scalars, `A`, `B`, and `C` are matrices, with `op(A)` an `M` by `K`
+    matrix, `op(B)` a `K` by `N` matrix, and `C` an `M` by `N` matrix.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a two-dimensional input ndarray corresponding to `A`.
+        - a two-dimensional input ndarray corresponding to `B`.
+        - a two-dimensional input/output ndarray corresponding to `C`.
+        - a zero-dimensional ndarray specifying whether `A` should be
+        transposed, conjugate-transposed, or not transposed.
+        - a zero-dimensional ndarray specifying whether `B` should be
+        transposed, conjugate-transposed, or not transposed.
+        - a zero-dimensional ndarray containing a scalar constant corresponding
+        to `alpha`.
+        - a zero-dimensional ndarray containing a scalar constant corresponding
+        to `beta`.
+
+    Returns
+    -------
+    out: ndarray
+        Output ndarray.
+
+    Examples
+    --------
+    > var abuf = [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ];
+    > var A = {{alias:@stdlib/ndarray/matrix/ctor}}( abuf, 'generic' );
+
+    > var bbuf = [ [ 1.0, 1.0 ], [ 0.0, 1.0 ] ];
+    > var B = {{alias:@stdlib/ndarray/matrix/ctor}}( bbuf, 'generic' );
+
+    > var cbuf = [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ];
+    > var C = {{alias:@stdlib/ndarray/matrix/ctor}}( cbuf, 'generic' );
+
+    > var opts = { 'dtype': 'generic' };
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
+    > var beta = {{alias:@stdlib/ndarray/from-scalar}}( 1.0, opts );
+
+    > var transA = {{alias:@stdlib/ndarray/from-scalar}}( 'no-transpose' );
+    > var transB = {{alias:@stdlib/ndarray/from-scalar}}( 'no-transpose' );
+
+    > {{alias}}( [ A, B, C, transA, transB, alpha, beta ] );
+    > C
+    <ndarray>[ [ 2.0, 5.0 ], [ 6.0, 11.0 ] ]
+
+    See Also
+    --------
+

@@ -92,7 +92,7 @@ interface Iterator<T> extends TypedIterator<T> {
 * Returns an iterator for generating pseudorandom numbers drawn from a Weibull distribution.
 *
 * @param k - scale parameter
-* @param lambda  - shape parameter
+* @param lambda - shape parameter
 * @param options - function options
 * @throws `k` must be a positive number
 * @throws `lambda` must be a positive number
