@@ -30,7 +30,7 @@ limitations under the License.
 var dasum = require( '@stdlib/blas/base/wasm/dasum' );
 ```
 
-#### dasum.main( N, x, stride )
+#### dasum.main( N, x, strideX )
 
 Computes the sum of absolute values.
 
