@@ -155,14 +155,13 @@ dwapx.ndarray( 3, 5.0, x, 1, x.length-3, w, 1, w.length-3 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dwapx = require( '@stdlib/blas/ext/base/dwapx' );
 
-var x = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float64'
-});
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( x );
 
-var w = discreteUniform( 10, -100, 100, {
-    'dtype': 'float64'
-});
+var w = discreteUniform( 10, -100, 100, opts );
 console.log( w );
 
 dwapx( x.length, 5.0, x, 1, w, 1 );
