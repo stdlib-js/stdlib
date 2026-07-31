@@ -192,14 +192,14 @@ int main( void ) {
 		iter = ITERATIONS / (int)pow( 10, i-1 );
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
-			printf( "# c::native::%s:len=%d\n", NAME, len );
+			printf( "# c::%s:len=%d\n", NAME, len );
 			elapsed = benchmark1( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
 		}
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
-			printf( "# c::native::%s:ndarray:len=%d\n", NAME, len );
+			printf( "# c::%s:ndarray:len=%d\n", NAME, len );
 			elapsed = benchmark2( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
