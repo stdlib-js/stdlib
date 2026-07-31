@@ -224,9 +224,9 @@ Multiplies elements of a double-precision complex floating-point strided array `
 ```c
 #include "stdlib/complex/float64/ctor.h"
 
-const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
-const float y[] = { 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f, 9.0f };
-float w[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
+const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+const double y[] = { 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0 };
+double w[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 stdlib_strided_zwxmy( 4, (const stdlib_complex128_t *)x, 1, (const stdlib_complex128_t *)y, 1, (stdlib_complex128_t *)w, 1 );
 ```
@@ -256,9 +256,9 @@ Multiplies elements of a double-precision complex floating-point strided array `
 ```c
 #include "stdlib/complex/float64/ctor.h"
 
-const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
-const float y[] = { 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f, 9.0f };
-float w[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
+const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+const double y[] = { 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0 };
+double w[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
 stdlib_strided_zwxmy_ndarray( 4, (const stdlib_complex128_t *)x, 1, 0, (const stdlib_complex128_t *)y, 1, 0, (stdlib_complex128_t *)w, 1, 0 );
 ```
@@ -308,22 +308,22 @@ void stdlib_strided_zwxmy_ndarray( const CBLAS_INT N, const stdlib_complex128_t 
 int main( void ) {
     // Create strided arrays:
     const stdlib_complex128_t x[] = {
-        stdlib_complex128( 1.0f, 2.0f ),
-        stdlib_complex128( 3.0f, 4.0f ),
-        stdlib_complex128( 5.0f, 6.0f ),
-        stdlib_complex128( 7.0f, 8.0f )
+        stdlib_complex128( 1.0, 2.0 ),
+        stdlib_complex128( 3.0, 4.0 ),
+        stdlib_complex128( 5.0, 6.0 ),
+        stdlib_complex128( 7.0, 8.0 )
     };
     const stdlib_complex128_t y[] = {
-        stdlib_complex128( 2.0f, 3.0f ),
-        stdlib_complex128( 4.0f, 5.0f ),
-        stdlib_complex128( 6.0f, 7.0f ),
-        stdlib_complex128( 8.0f, 9.0f )
+        stdlib_complex128( 2.0, 3.0 ),
+        stdlib_complex128( 4.0, 5.0 ),
+        stdlib_complex128( 6.0, 7.0 ),
+        stdlib_complex128( 8.0, 9.0 )
     };
     stdlib_complex128_t w[] = {
-        stdlib_complex128( 0.0f, 0.0f ),
-        stdlib_complex128( 0.0f, 0.0f ),
-        stdlib_complex128( 0.0f, 0.0f ),
-        stdlib_complex128( 0.0f, 0.0f )
+        stdlib_complex128( 0.0, 0.0 ),
+        stdlib_complex128( 0.0, 0.0 ),
+        stdlib_complex128( 0.0, 0.0 ),
+        stdlib_complex128( 0.0, 0.0 )
     };
 
     // Specify the number of indexed elements:
@@ -339,7 +339,7 @@ int main( void ) {
 
     // Print the result:
     for ( int i = 0; i < N; i++ ) {
-        printf( "w[ %i ] = %f + %fi\n", i, stdlib_complex128_real( w[ i ] ), stdlib_complex128_imag( w[ i ] ) );
+        printf( "w[ %i ] = %lf + %lfi\n", i, stdlib_complex128_real( w[ i ] ), stdlib_complex128_imag( w[ i ] ) );
     }
 }
 ```
