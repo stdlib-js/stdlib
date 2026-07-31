@@ -32,6 +32,7 @@
 #include "stdlib/constants/float64/sqrt_eps.h"
 #include "stdlib/constants/float64/eps.h"
 #include "stdlib/constants/float64/pi.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdbool.h>
 #include <stdint.h>
 
@@ -100,7 +101,7 @@ void stdlib_base_ellipj( const double u, const double m, double* sn, double* cn,
 		*sn = ( out[ 0 ] / out[ 2 ] ) / k1inv;
 		*cn = out[ 1 ] / out[ 2 ];
 		*dn = 1.0 / out[ 2 ];
-		*am = 0.0 / 0.0; // NaN
+		*am = STDLIB_CONSTANT_FLOAT64_NAN;
 		return;
 	} else if ( m > 1.0 ) {
 		// A&S 16.11.1 for reciprocal parameter, mapping m > 1 to 0 < mu < 1:
@@ -109,7 +110,7 @@ void stdlib_base_ellipj( const double u, const double m, double* sn, double* cn,
 		*sn = out[ 0 ] / k;
 		*cn = out[ 2 ];
 		*dn = out[ 1 ];
-		*am = 0.0 / 0.0; // NaN
+		*am = STDLIB_CONSTANT_FLOAT64_NAN;
 		return;
 	} else if ( m == 0.0 ) {
 		// A&S table 16.6, limiting case m = 0: circular trigonometric functions:
@@ -179,10 +180,10 @@ void stdlib_base_ellipj( const double u, const double m, double* sn, double* cn,
 			if ( N > 8 ) {
 				// Warning: Overflow encountered in iteration. Returning NaN for all output values:
 				NANFLG = true;
-				*sn = 0.0 / 0.0; // NaN
-				*cn = 0.0 / 0.0; // NaN
-				*dn = 0.0 / 0.0; // NaN
-				*am = 0.0 / 0.0; // NaN
+				*sn = STDLIB_CONSTANT_FLOAT64_NAN;
+				*cn = STDLIB_CONSTANT_FLOAT64_NAN;
+				*dn = STDLIB_CONSTANT_FLOAT64_NAN;
+				*am = STDLIB_CONSTANT_FLOAT64_NAN;
 				break;
 			}
 			atmp = ( a + b ) * 0.5;

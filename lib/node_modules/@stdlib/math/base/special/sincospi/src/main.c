@@ -25,6 +25,7 @@
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float64/pi.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Simultaneously computes the sine and cosine of a number times π.
@@ -47,8 +48,8 @@ void stdlib_base_sincospi( const double x, double* sine, double* cosine ) {
 	double r;
 
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_infinite( x ) ) {
-		*sine = 0.0 / 0.0; // NaN
-		*cosine = 0.0 / 0.0; // NaN
+		*sine = STDLIB_CONSTANT_FLOAT64_NAN;
+		*cosine = STDLIB_CONSTANT_FLOAT64_NAN;
 		return;
 	}
 	r = stdlib_base_fmod( x, 2.0 );
