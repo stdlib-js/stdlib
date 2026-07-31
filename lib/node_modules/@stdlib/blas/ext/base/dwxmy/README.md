@@ -167,19 +167,16 @@ dwxmy.ndarray( 3, x, 1, x.length-3, y, 1, y.length-3, w, 1, w.length-3 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dwxmy = require( '@stdlib/blas/ext/base/dwxmy' );
 
-var x = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float64'
-});
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( x );
 
-var y = discreteUniform( 10, -100, 100, {
-    'dtype': 'float64'
-});
+var y = discreteUniform( 10, -100, 100, opts );
 console.log( y );
 
-var w = discreteUniform( 10, -100, 100, {
-    'dtype': 'float64'
-});
+var w = discreteUniform( 10, -100, 100, opts );
 console.log( w );
 
 dwxmy( x.length, x, 1, y, 1, w, 1 );

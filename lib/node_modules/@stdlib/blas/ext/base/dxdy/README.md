@@ -154,14 +154,13 @@ dxdy.ndarray( 3, x, 1, x.length-3, y, 1, y.length-3 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dxdy = require( '@stdlib/blas/ext/base/dxdy' );
 
-var x = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'float64'
-});
+};
+var x = discreteUniform( 10, -100, 100, opts );
 console.log( x );
 
-var y = discreteUniform( 10, 1, 100, {
-    'dtype': 'float64'
-});
+var y = discreteUniform( 10, 1, 100, opts );
 console.log( y );
 
 dxdy( x.length, x, 1, y, 1 );
