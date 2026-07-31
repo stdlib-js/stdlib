@@ -1,0 +1,26 @@
+
+{{alias}}( value )
+    Returns the penalty string associated with a supported SGD classification
+    penalty value.
+
+    Parameters
+    ----------
+    value: any
+        Penalty value.
+
+    Returns
+    -------
+    out: string|null
+        Penalty string.
+
+    Examples
+    --------
+    > var v = {{alias}}( 'l1' )
+    'l1'
+    > v = {{alias:@stdlib/ml/base/sgd-classification/penalty-str2enum}}( 'l1' );
+    > out = {{alias}}( v )
+    'l1'
+
+    See Also
+    --------
+
