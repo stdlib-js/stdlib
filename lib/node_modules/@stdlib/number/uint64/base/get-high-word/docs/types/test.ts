@@ -24,8 +24,8 @@ import getHighWord = require( './index' );
 
 // The function returns a number...
 {
-	const a = new Uint64( 5 );
-	getHighWord( a ); // $ExpectType number
+	const x = new Uint64( 5 );
+	getHighWord( x ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided an argument that is not a 64-bit unsigned integer...
@@ -41,7 +41,7 @@ import getHighWord = require( './index' );
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	const a = new Uint64( 5 );
+	const x = new Uint64( 5 );
 	getHighWord(); // $ExpectError
-	getHighWord( a, a ); // $ExpectError
+	getHighWord( x, x ); // $ExpectError
 }
