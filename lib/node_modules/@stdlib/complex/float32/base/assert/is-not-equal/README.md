@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# isNotEqualf
+# isNotEqual
 
 > Test whether two single-precision complex floating-point numbers are not equal.
 
@@ -37,10 +37,10 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var isNotEqualf = require( '@stdlib/complex/float32/base/assert/is-not-equal' );
+var isNotEqual = require( '@stdlib/complex/float32/base/assert/is-not-equal' );
 ```
 
-#### isNotEqualf( z1, z2 )
+#### isNotEqual( z1, z2 )
 
 Tests whether two single-precision complex floating-point numbers are not equal.
 
@@ -50,7 +50,7 @@ var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var z1 = new Complex64( 5.0, 3.0 );
 var z2 = new Complex64( 5.0, -3.0 );
 
-var out = isNotEqualf( z1, z2 );
+var out = isNotEqual( z1, z2 );
 // returns true
 ```
 
@@ -76,21 +76,21 @@ var out = isNotEqualf( z1, z2 );
 
 ```javascript
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
-var isNotEqualf = require( '@stdlib/complex/float32/base/assert/is-not-equal' );
+var isNotEqual = require( '@stdlib/complex/float32/base/assert/is-not-equal' );
 
 var z1 = new Complex64( 5.0, 3.0 );
 var z2 = new Complex64( 5.0, 3.0 );
-var out = isNotEqualf( z1, z2 );
+var out = isNotEqual( z1, z2 );
 // returns false
 
 z1 = new Complex64( -5.0, -3.0 );
 z2 = new Complex64( 5.0, 3.0 );
-out = isNotEqualf( z1, z2 );
+out = isNotEqual( z1, z2 );
 // returns true
 
 z1 = new Complex64( NaN, 3.0 );
 z2 = new Complex64( NaN, 3.0 );
-out = isNotEqualf( z1, z2 );
+out = isNotEqual( z1, z2 );
 // returns true
 ```
 
