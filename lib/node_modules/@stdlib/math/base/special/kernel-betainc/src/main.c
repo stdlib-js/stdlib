@@ -42,6 +42,7 @@
 #include "stdlib/constants/float32/smallest_normal.h"
 #include "stdlib/constants/float64/smallest_normal.h"
 #include "stdlib/constants/int32/max.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/abs.h"
 #include "stdlib/math/base/special/asin.h"
@@ -351,7 +352,7 @@ static double ibetaPowerTerms( const double a, const double b, const double x, c
 			if ( l <= STDLIB_CONSTANT_FLOAT64_MIN_LN || l >= STDLIB_CONSTANT_FLOAT64_MAX_LN ) {
 				l += stdlib_base_ln( result );
 				if ( l >= STDLIB_CONSTANT_FLOAT64_MAX_LN ) {
-					return 0.0 / 0.0;
+					return STDLIB_CONSTANT_FLOAT64_NAN;
 				}
 				result = stdlib_base_exp( l );
 			} else {
@@ -363,7 +364,7 @@ static double ibetaPowerTerms( const double a, const double b, const double x, c
 			if ( l <= STDLIB_CONSTANT_FLOAT64_MIN_LN || l >= STDLIB_CONSTANT_FLOAT64_MAX_LN ) {
 				l += stdlib_base_ln( result );
 				if ( l >= STDLIB_CONSTANT_FLOAT64_MAX_LN ) {
-					return 0.0 / 0.0;
+					return STDLIB_CONSTANT_FLOAT64_NAN;
 				}
 				result = stdlib_base_exp( l );
 			} else {
@@ -386,7 +387,7 @@ static double ibetaPowerTerms( const double a, const double b, const double x, c
 				} else {
 					l2 += l1 + stdlib_base_ln( result );
 					if ( l2 >= STDLIB_CONSTANT_FLOAT64_MAX_LN ) {
-						return 0.0 / 0.0;
+						return STDLIB_CONSTANT_FLOAT64_NAN;
 					}
 					result = stdlib_base_exp( l2 );
 				}
@@ -398,7 +399,7 @@ static double ibetaPowerTerms( const double a, const double b, const double x, c
 				} else {
 					l2 += l1 + stdlib_base_ln( result );
 					if ( l2 >= STDLIB_CONSTANT_FLOAT64_MAX_LN ) {
-						return 0.0 / 0.0;
+						return STDLIB_CONSTANT_FLOAT64_NAN;
 					}
 					result = stdlib_base_exp( l2 );
 				}
@@ -789,21 +790,21 @@ void stdlib_base_kernel_betainc( double x, double a, double b, const bool regula
 	// Derivative not set...
 	*derivative = -1;
 	if ( stdlib_base_is_nan( x ) || x < 0.0 || x > 1.0 ) {
-		*out = 0.0 / 0.0;
-		*derivative = 0.0 / 0.0;
+		*out = STDLIB_CONSTANT_FLOAT64_NAN;
+		*derivative = STDLIB_CONSTANT_FLOAT64_NAN;
 		return;
 	}
 	if ( regularized ) {
 		if ( a < 0.0 || b < 0.0 ) {
-			*out = 0.0 / 0.0;
-			*derivative = 0.0 / 0.0;
+			*out = STDLIB_CONSTANT_FLOAT64_NAN;
+			*derivative = STDLIB_CONSTANT_FLOAT64_NAN;
 			return;
 		}
 		// Extend to a few very special cases...
 		if ( a == 0.0 ) {
 			if ( b == 0.0 ) {
-				*out = 0.0 / 0.0;
-				*derivative = 0.0 / 0.0;
+				*out = STDLIB_CONSTANT_FLOAT64_NAN;
+				*derivative = STDLIB_CONSTANT_FLOAT64_NAN;
 				return;
 			}
 			if ( b > 0.0 ) {
@@ -817,8 +818,8 @@ void stdlib_base_kernel_betainc( double x, double a, double b, const bool regula
 			}
 		}
 	} else if ( a <= 0.0 || b <= 0.0 ) {
-		*out = 0.0 / 0.0;
-		*derivative = 0.0 / 0.0;
+		*out = STDLIB_CONSTANT_FLOAT64_NAN;
+		*derivative = STDLIB_CONSTANT_FLOAT64_NAN;
 		return;
 	}
 	if ( x == 0.0 ) {

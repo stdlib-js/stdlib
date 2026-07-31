@@ -20,6 +20,7 @@
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/powm1.h"
 #include "stdlib/constants/float64/ln_two.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/special/riemann_zeta.h"
 
 /**
@@ -34,7 +35,7 @@
 */
 double stdlib_base_eta( const double s ) {
 	if ( stdlib_base_is_nan( s ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( s == 1.0 ) {
 		// Alternating harmonic series...

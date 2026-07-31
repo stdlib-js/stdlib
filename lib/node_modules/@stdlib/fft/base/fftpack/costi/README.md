@@ -141,7 +141,7 @@ var nf = workspace[ (3*N)-1 ];
 
 console.log( '  number of factors: %d', nf );
 idx = zeroTo( nf, 'generic' );
-logEach( '  factor[ %d ]: %d', idx, workspace.slice( (3*N)+2, (3*N)+2+nf ) );
+logEach( '  factor[ %d ]: %d', idx, workspace.slice( 3*N, (3*N)+nf ) );
 ```
 
 </section>
