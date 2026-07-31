@@ -16,32 +16,32 @@
 * limitations under the License.
 */
 
-import nancovariance = require( './index' );
+import incrnancovariance = require( './index' );
 
 
 // TESTS //
 
 // The function returns an accumulator function...
 {
-	nancovariance(); // $ExpectType accumulator
+	incrnancovariance(); // $ExpectType accumulator
 }
 
 // The compiler throws an error if the function is provided any arguments...
 {
-	nancovariance( 3 ); // $ExpectError
-	nancovariance( 3, 0.0 ); // $ExpectError
+	incrnancovariance( 3 ); // $ExpectError
+	incrnancovariance( 3, 0.0 ); // $ExpectError
 }
 
 // The function returns an accumulator function which returns an accumulated result...
 {
-	const acc = nancovariance();
+	const acc = incrnancovariance();
 	acc(); // $ExpectType number | null
 	acc( 2.0, 1.0 ); // $ExpectType number | null
 }
 
 // The compiler throws an error if the returned accumulator function is provided invalid arguments...
 {
-	const acc = nancovariance();
+	const acc = incrnancovariance();
 
 	acc( '5', 2.0 ); // $ExpectError
 	acc( true, 2.0 ); // $ExpectError

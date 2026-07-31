@@ -49,10 +49,12 @@ console.log( PLATFORM );
 
 -   The following values are possible:
 
+    -   `'aix'`
     -   `'win32'`
     -   `'darwin'`
     -   `'linux'`
     -   `'freebsd'`
+    -   `'openbsd'`
     -   `'sunos'`
 
 </section>
