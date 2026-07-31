@@ -27,7 +27,7 @@
 * @return     output value
 *
 * @example
-* double out = stdlib_base_ahaversin( 0.0f );
+* float out = stdlib_base_ahaversinf( 0.0f );
 * // returns 0.0f
 */
 float stdlib_base_ahaversinf( const float x ) {

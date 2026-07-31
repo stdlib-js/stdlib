@@ -1,0 +1,31 @@
+
+{{alias}}( arrays )
+    Computes the maximum value of a one-dimensional double-precision floating-
+    point ndarray according to a mask.
+
+    If provided an empty ndarray or a mask with all elements set to `1`, the
+    function returns `NaN`.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a one-dimensional mask ndarray.
+
+    Returns
+    -------
+    out: number
+        Maximum value.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/float64}}( [ 1.0, -2.0, 4.0, 2.0 ] );
+    > var mask = new {{alias:@stdlib/ndarray/vector/uint8}}( [ 0, 0, 1, 0 ] );
+    > {{alias}}( [ x, mask ] )
+    2.0
+
+    See Also
+    --------
+
