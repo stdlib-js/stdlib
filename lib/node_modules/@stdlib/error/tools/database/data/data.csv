@@ -1281,3 +1281,5 @@
 "Ke","invalid argument. Second argument must be a supported distance metric. Value: `%s`.","TypeError"
 "Kf","invalid argument. Must provide an integer on the interval [-(2^63), 2^63-1]. Value: `%s`.","TypeError"
 "Kg","invalid argument. Must provide an integer on the interval [-(2^53-1), 2^53-1]. Value: `%s`.","TypeError"
+"Kh","invalid argument. First argument must be a string encoding an integer on the interval [0, 2^64). Value: `%s`.","RangeError"
+"Ki","invalid argument. Second argument must be an integer on the interval [2, 36]. Value: `%s`.","RangeError"
