@@ -847,7 +847,7 @@ declare module '@stdlib/types/array' {
 	*     'byteOffset': 0,
 	*     'BYTES_PER_ELEMENT': 8,
 	*     'length': 4,
-	*     'get': ( i: number ): obj.Uint64  => {
+	*     'get': ( i: number ): obj.Uint64 => {
 	*         return {
 	*             'hi': buf[ (2*i) ],
 	*             'lo': buf[ (2*i)+1 ],
@@ -857,7 +857,7 @@ declare module '@stdlib/types/array' {
 	*     },
 	*     'set': ( value: obj.Uint64, i?: number ) => {
 	*         i = ( i ) ? i : 0;
-	*         buf[ (2*i)] = value.hi;
+	*         buf[ (2*i) ] = value.hi;
 	*         buf[ (2*i)+1 ] = value.lo;
 	*     }
 	* };
