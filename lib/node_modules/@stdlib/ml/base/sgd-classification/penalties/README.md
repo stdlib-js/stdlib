@@ -46,7 +46,7 @@ Returns a list of SGD classification penalties.
 
 ```javascript
 var out = penalties();
-// e.g., returns [ 'elasticnet', 'l1', 'l2' ]
+// e.g., returns [ 'elasticnet', 'l1', 'l2', 'none' ]
 ```
 
 The output array contains the following penalties:
@@ -54,6 +54,7 @@ The output array contains the following penalties:
 -   `elasticnet`: regularization method that linearly combines the L1 and L2 penalties of the lasso and ridge methods.
 -   `l1`: L1 regularization (also called LASSO) leads to sparse models by adding a penalty based on the absolute value of coefficients.
 -   `l2`: L2 regularization (also called ridge regression) encourages smaller, more evenly distributed weights by adding a penalty based on the square of the coefficients.
+-   `none`: no regularization.
 
 </section>
 
@@ -128,6 +129,7 @@ An enumeration of SGD classification penalties with the following fields:
 -   **STDLIB_ML_SGD_CLASSIFICATION_ELASTICNET**: regularization method that linearly combines the L1 and L2 penalties of the lasso and ridge methods.
 -   **STDLIB_ML_SGD_CLASSIFICATION_L1**: L1 regularization (also called LASSO) leads to sparse models by adding a penalty based on the absolute value of coefficients.
 -   **STDLIB_ML_SGD_CLASSIFICATION_L2**: L2 regularization (also called ridge regression) encourages smaller, more evenly distributed weights by adding a penalty based on the square of the coefficients.
+-   **STDLIB_ML_SGD_CLASSIFICATION_NONE**: no regularization.
 
 ```c
 #include "stdlib/ml/base/sgd-classification/penalties.h"
