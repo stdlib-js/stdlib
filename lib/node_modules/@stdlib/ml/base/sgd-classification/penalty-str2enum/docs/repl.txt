@@ -1,0 +1,27 @@
+
+{{alias}}( penalty )
+    Returns the enumeration constant associated with an SGD classification
+    penalty string.
+
+    Downstream consumers of this function should *not* rely on specific integer
+    values (e.g., `ELASTICNET == 0`). Instead, the function should be used in
+    an opaque manner.
+
+    Parameters
+    ----------
+    penalty: string
+        Penalty.
+
+    Returns
+    -------
+    out: integer|null
+        Enumeration constant.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'l1' )
+    <number>
+
+    See Also
+    --------
+

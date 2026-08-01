@@ -1,5 +1,5 @@
 
-Usage: stdlib-standalone2pkg [options] <alias>
+Usage: stdlib-standalone2pkg [options] <pkg>
 
 Options:
 
