@@ -35,6 +35,7 @@
 #include "stdlib/math/base/special/log1p.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/ninf.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double NEAR_ZERO = 1.0 / (1 << 28); // 2**-28
@@ -83,7 +84,7 @@ double stdlib_base_atanh( const double x ) {
 	double ax;
 	double t;
 	if ( stdlib_base_is_nan( x ) || x < -1.0 || x > 1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == 1.0 ) {
 		return STDLIB_CONSTANT_FLOAT64_PINF;
