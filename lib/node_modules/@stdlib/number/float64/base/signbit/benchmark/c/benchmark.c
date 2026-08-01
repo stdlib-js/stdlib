@@ -76,13 +76,15 @@ static double tic( void ) {
 }
 
 /**
-* Generates a random number on the interval [0,1).
+* Generates a random number on the interval [min,max).
 *
-* @return random number
+* @param min    minimum value (inclusive)
+* @param max    maximum value (exclusive)
+* @return       random number
 */
-static double rand_double( void ) {
-	int r = rand();
-	return (double)r / ( (double)RAND_MAX + 1.0 );
+static double random_uniform( const double min, const double max ) {
+	double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+	return min + ( v*( max-min ) );
 }
 
 /**
@@ -93,14 +95,17 @@ static double rand_double( void ) {
 static double benchmark( void ) {
 	double elapsed;
 	int8_t out;
-	double x;
+	double *x;
 	double t;
 	int i;
 
+	x = (double *) malloc( 100 * sizeof( double ) );
+	for ( i = 0; i < 100; i++ ) {
+		x[ i ] = random_uniform( -100.0, 100.0 );
+	}
 	t = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		x = ( rand_double()*200.0 ) - 100.0;
-		out = stdlib_base_float64_signbit( x );
+		out = stdlib_base_float64_signbit( x[ i%100 ] );
 		if ( out != 0 && out != 1 ) {
 			printf( "unexpected result\n" );
 			break;
@@ -110,6 +115,7 @@ static double benchmark( void ) {
 	if ( out != 0 && out != 1 ) {
 		printf( "unexpected result\n" );
 	}
+	free( x );
 	return elapsed;
 }
 
