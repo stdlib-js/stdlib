@@ -53,11 +53,11 @@ interface Namespace {
 	* @returns evaluated Chebyshev series
 	*
 	* @example
-	* var v = ns.chebyshevSeries( 1.0, [ 1.0, 0.5 ] ); // 1*T_0(1/2) + 0.5*T_1(1/2)
+	* var v = ns.chebyshevSeries( 1.0, [ 1.0, 0.5 ] );
 	* // returns 0.75
 	*
 	* @example
-	* var evaluate = ns.chebyshevSeries.factory( [ 1.0, 0.5 ] ); // 1*T_0(1/2) + 0.5*T_1(1/2)
+	* var evaluate = ns.chebyshevSeries.factory( [ 1.0, 0.5 ] );
 	*
 	* var v = evaluate( 1.0 );
 	* // returns 0.75
@@ -81,13 +81,13 @@ interface Namespace {
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
 	*
-	* var v = ns.chebyshevSeriesf( 1.0, new Float32Array( [ 1.0, 0.5 ] ) ); // 1*T_0(1/2) + 0.5*T_1(1/2)
+	* var v = ns.chebyshevSeriesf( 1.0, new Float32Array( [ 1.0, 0.5 ] ) );
 	* // returns 0.75
 	*
 	* @example
 	* var Float32Array = require( '@stdlib/array/float32' );
 	*
-	* var evaluate = ns.chebyshevSeriesf.factory( new Float32Array( [ 1.0, 0.5 ] ) ); // 1*T_0(1/2) + 0.5*T_1(1/2)
+	* var evaluate = ns.chebyshevSeriesf.factory( new Float32Array( [ 1.0, 0.5 ] ) );
 	*
 	* var v = evaluate( 1.0 );
 	* // returns 0.75
