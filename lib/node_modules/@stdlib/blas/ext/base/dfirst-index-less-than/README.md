@@ -167,14 +167,13 @@ var idx = dfirstIndexLessThan.ndarray( 3, x, 1, x.length-3, y, 1, y.length-3 );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dfirstIndexLessThan = require( '@stdlib/blas/ext/base/dfirst-index-less-than' );
 
-var x = discreteUniform( 10, 0, 10, {
+var opts = {
     'dtype': 'float64'
-});
+};
+var x = discreteUniform( 10, 0, 10, opts );
 console.log( x );
 
-var y = discreteUniform( 10, 0, 10, {
-    'dtype': 'float64'
-});
+var y = discreteUniform( 10, 0, 10, opts );
 console.log( y );
 
 var idx = dfirstIndexLessThan( x.length, x, 1, y, 1 );
