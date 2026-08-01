@@ -579,7 +579,7 @@ declare function empty( shape: Shape | number, options: Uint8COptions ): uint8cn
 declare function empty( shape: Shape | number, options: BoolOptions ): boolndarray;
 
 /**
-* Creates an uninitialized array having a specified shape and data type.
+* Creates a zero-filled array having a specified shape and data type.
 *
 * @param shape - array shape
 * @param options - options
@@ -587,7 +587,7 @@ declare function empty( shape: Shape | number, options: BoolOptions ): boolndarr
 * @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
 * @param options.mode - specifies how to handle a linear index which exceeds array dimensions
 * @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
-* @returns zero-filled array
+* @returns output array
 *
 * @example
 * var getShape = require( '@stdlib/ndarray/shape' );
