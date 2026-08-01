@@ -163,7 +163,7 @@ import dtriu = require( './index' );
 	dtriu( 'row-major', 2, 2, 0, A, 2, B, 2, 10 ); // $ExpectError
 }
 
-// Attached to main export is an `ndarray` method which returns a collection...
+// Attached to main export is an `ndarray` method which returns a Float64Array...
 {
 	const A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
 	const B = new Float64Array( [ 0.0, 0.0, 0.0, 0.0 ] );
