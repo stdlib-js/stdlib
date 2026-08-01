@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-#include "stdlib/blas/ext/base/scartesiansquare.h"
+#include "stdlib/blas/ext/base/scartesian_square.h"
 #include "stdlib/blas/ext/base/sfill.h"
 #include "stdlib/blas/base/scopy.h"
 #include "stdlib/ndarray/base/assert/is_row_major.h"

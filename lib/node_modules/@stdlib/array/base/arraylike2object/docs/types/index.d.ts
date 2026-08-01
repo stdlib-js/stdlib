@@ -650,7 +650,7 @@ interface GetSetAccessorObject<T> {
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object( x: Float64Array ): Float64AccessorObject;
@@ -678,7 +678,7 @@ declare function arraylike2object( x: Float64Array ): Float64AccessorObject;
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object( x: Float32Array ): Float32AccessorObject;
@@ -706,7 +706,7 @@ declare function arraylike2object( x: Float32Array ): Float32AccessorObject;
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object( x: Int32Array ): Int32AccessorObject;
@@ -734,7 +734,7 @@ declare function arraylike2object( x: Int32Array ): Int32AccessorObject;
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object( x: Int16Array ): Int16AccessorObject;
@@ -762,7 +762,7 @@ declare function arraylike2object( x: Int16Array ): Int16AccessorObject;
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object( x: Int8Array ): Int8AccessorObject;
@@ -790,7 +790,7 @@ declare function arraylike2object( x: Int8Array ): Int8AccessorObject;
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object( x: Uint32Array ): Uint32AccessorObject;
@@ -818,7 +818,7 @@ declare function arraylike2object( x: Uint32Array ): Uint32AccessorObject;
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object( x: Uint16Array ): Uint16AccessorObject;
@@ -846,7 +846,7 @@ declare function arraylike2object( x: Uint16Array ): Uint16AccessorObject;
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object( x: Uint8Array ): Uint8AccessorObject;
@@ -874,7 +874,7 @@ declare function arraylike2object( x: Uint8Array ): Uint8AccessorObject;
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object( x: Uint8ClampedArray ): Uint8cAccessorObject;
@@ -903,7 +903,7 @@ declare function arraylike2object( x: Uint8ClampedArray ): Uint8cAccessorObject;
 * // returns [ <Function>, <Function> ]
 *
 * var v = fcns[ 0 ]( x, 1 );
-* // returns <Complex128>
+* // returns <Complex128>[ 3.0, 4.0 ]
 */
 declare function arraylike2object( x: Complex128Array ): Complex128AccessorObject;
 
@@ -931,7 +931,7 @@ declare function arraylike2object( x: Complex128Array ): Complex128AccessorObjec
 * // returns [ <Function>, <Function> ]
 *
 * var v = fcns[ 0 ]( x, 1 );
-* // returns <Complex64>
+* // returns <Complex64>[ 3.0, 4.0 ]
 */
 declare function arraylike2object( x: Complex64Array ): Complex64AccessorObject;
 
@@ -968,7 +968,7 @@ declare function arraylike2object( x: Complex64Array ): Complex64AccessorObject;
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object<T = unknown>( x: AccessorArrayLike<T> ): GetSetAccessorObject<T>;
@@ -994,7 +994,7 @@ declare function arraylike2object<T = unknown>( x: AccessorArrayLike<T> ): GetSe
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object<T = unknown>( x: Array<T> ): GenericAccessorObject<T>;
@@ -1026,7 +1026,7 @@ declare function arraylike2object<T = unknown>( x: Array<T> ): GenericAccessorOb
 * var fcns = obj.accessors;
 * // returns [ <Function>, <Function> ]
 *
-* var v = fcns[ 0 ]( x.data, 2 );
+* var v = fcns[ 0 ]( x, 2 );
 * // returns 3
 */
 declare function arraylike2object<T = unknown>( x: Collection<T> ): IndexedAccessorObject<T>;
