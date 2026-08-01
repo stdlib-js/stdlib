@@ -400,6 +400,33 @@ declare class Uint64Array implements Uint64ArrayInterface {
 	readonly length: number;
 
 	/**
+	* Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer indices.
+	*
+	* @param i - element index
+	* @throws index argument must be an integer
+	* @returns array element
+	*
+	* @example
+	* var arr = new Uint64Array( 10 );
+	*
+	* var u = arr.at( 0 );
+	* // returns <Uint64>[ 0n ]
+	*
+	* arr.set( 1, 0 );
+	* arr.set( 9, 9 );
+	*
+	* u = arr.at( -1 );
+	* // returns <Uint64>[ 9n ]
+	*
+	* u = arr.at( 100 );
+	* // returns undefined
+	*
+	* u = arr.at( -100 );
+	* // returns undefined
+	*/
+	at( i: number ): Uint64 | void;
+
+	/**
 	* Returns an array element.
 	*
 	* @param i - element index
