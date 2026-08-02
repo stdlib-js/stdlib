@@ -67,7 +67,7 @@ type Ternary<T, U, ThisArg> = ( this: ThisArg, value: T, index: number, array: U
 type Callback<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T, ThisArg> | Ternary<T, U, ThisArg>;
 
 /**
-* Computes the minimum value of a one-dimensional ndarray via a callback function, ignoring NaN values.
+* Computes the minimum value of a one-dimensional ndarray via a callback function, ignoring `NaN` values.
 *
 * ## Notes
 *

@@ -40,7 +40,8 @@
         "@stdlib/math/base/special/log1p",
         "@stdlib/math/base/special/ln",
         "@stdlib/math/base/special/abs",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -57,7 +58,8 @@
         "@stdlib/math/base/special/log1p",
         "@stdlib/math/base/special/ln",
         "@stdlib/math/base/special/abs",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -74,7 +76,8 @@
         "@stdlib/math/base/special/log1p",
         "@stdlib/math/base/special/ln",
         "@stdlib/math/base/special/abs",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/constants/float64/eps",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]
