@@ -30,7 +30,7 @@ limitations under the License.
 var setLowWord = require( '@stdlib/number/uint64/base/set-low-word' );
 ```
 
-#### setLowWord( x, low )
+#### setLowWord( a, low )
 
 Sets the low 32-bit word of a [64-bit unsigned integer][@stdlib/number/uint64/ctor].
 
