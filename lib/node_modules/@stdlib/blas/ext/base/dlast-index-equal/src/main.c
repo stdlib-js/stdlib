@@ -22,7 +22,7 @@
 #include "stdlib/blas/base/shared.h"
 
 /**
-* Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another strided array.
+* Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array.
 *
 * @param N             number of indexed elements
 * @param X             first input array
@@ -38,7 +38,7 @@ CBLAS_INT API_SUFFIX(stdlib_strided_dlast_index_equal)( const CBLAS_INT N, const
 }
 
 /**
-* Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another strided array using alternative indexing semantics.
+* Returns the index of the last element in a double-precision floating-point strided array equal to a corresponding element in another double-precision floating-point strided array using alternative indexing semantics.
 *
 * @param N             number of indexed elements
 * @param X             first input array
