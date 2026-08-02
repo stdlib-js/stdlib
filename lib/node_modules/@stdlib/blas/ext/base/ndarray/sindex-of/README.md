@@ -110,7 +110,7 @@ var idx = sindexOf( [ x, searchElement, fromIndex ] );
 var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
-var ndarraylike2scalar = require( '@stdlib/ndarray/base/ndarraylike2scalar' );
+var ndarraylike2scalar = require( '@stdlib/ndarray/ndarraylike2scalar' );
 var sindexOf = require( '@stdlib/blas/ext/base/ndarray/sindex-of' );
 
 var opts = {

@@ -28,7 +28,7 @@ import maybeBroadcastArrayExceptDimensions = require( './index' );
 {
 	const x = zeros( [ 2, 2 ] );
 
-	maybeBroadcastArrayExceptDimensions( x, [ 2, 2, 2 ], [ -2 ] ); // $ExpectType ndarray
+	maybeBroadcastArrayExceptDimensions( x, [ 2, 2, 2 ], [ -2 ] ); // $ExpectType float64ndarray
 }
 
 // The compiler throws an error if the function is not provided a first argument which is an ndarray...
