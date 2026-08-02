@@ -56,7 +56,7 @@ double stdlib_base_dists_lognormal_logcdf( const double x, const double mu, cons
 	}
 	lx = stdlib_base_ln( x );
 	if ( sigma == 0.0 ) {
-		return (lx < mu) ? STDLIB_CONSTANT_FLOAT64_NINF : 0.0;
+		return ( lx < mu ) ? STDLIB_CONSTANT_FLOAT64_NINF : 0.0;
 	}
 	z = ( lx - mu ) / sigma;
 
