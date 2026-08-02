@@ -36,7 +36,6 @@ import { ArrayLike } from '@stdlib/types/array';
 * @param value - input value
 * @param searchValue - search value
 * @param position - position at which to start searching for `searchValue` (default: 0)
-* @throws second argument must be a primitive string primitive when the first argument is a string
 * @returns boolean indicating whether one value contains another
 *
 * @example
