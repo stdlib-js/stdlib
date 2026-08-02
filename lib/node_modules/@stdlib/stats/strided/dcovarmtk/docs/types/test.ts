@@ -39,7 +39,7 @@ import dcovarmtk = require( './index' );
 	dcovarmtk( undefined, 1, 0.0, x, 1, 0.0, x, 1 ); // $ExpectError
 	dcovarmtk( [], 1, 0.0, x, 1, 0.0, x, 1 ); // $ExpectError
 	dcovarmtk( {}, 1, 0.0, x, 1, 0.0, x, 1 ); // $ExpectError
-	dcovarmtk( ( x: number ): number => x, 1, 0.0, x, 1, 0.0, x, 1, 0.0, x, 1 ); // $ExpectError
+	dcovarmtk( ( x: number ): number => x, 1, 0.0, x, 1, 0.0, x, 1 ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a number...

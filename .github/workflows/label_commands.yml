@@ -50,7 +50,7 @@ jobs:
 
       - name: 'Remove label'
         # Pin action to full length commit SHA
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
@@ -67,7 +67,7 @@ jobs:
 
       - name: 'Add in-progress label'
         # Pin action to full length commit SHA
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
@@ -80,10 +80,12 @@ jobs:
 
       # Add initial reaction to comment with slash command:
       - name: 'Add initial reaction'
+        env:
+          GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
           curl -X POST \
             -H "Accept: application/vnd.github.v3+json" \
-            -H "Authorization: Bearer ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}" \
+            -H "Authorization: Bearer ${GITHUB_TOKEN}" \
             "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/reactions" \
             -d '{"content":"eyes"}'
 
@@ -222,7 +224,7 @@ jobs:
         # Run the step regardless of the outcome of previous steps:
         if: always()
         # Pin action to full length commit SHA
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |

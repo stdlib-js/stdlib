@@ -26,7 +26,6 @@ Generate fixture data and write to file.
 
 # Arguments
 
-* `x`: input value
 * `k`: shape parameter
 * `lambda`: scale parameter
 * `name::AbstractString`: output filename
