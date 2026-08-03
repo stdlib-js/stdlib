@@ -243,6 +243,41 @@ var arr = Uint64Array.of( 1, 2 );
 // returns <Uint64Array>[ 1n, 2n ]
 ```
 
+<a name="method-at"></a>
+
+#### Uint64Array.prototype.at( i )
+
+Returns an array element located at integer position (index) `i`, with support for both nonnegative and negative integer positions.
+
+```javascript
+var arr = new Uint64Array( 10 );
+
+// Set the first, second, and last elements:
+arr.set( 1, 0 );
+arr.set( 2, 1 );
+arr.set( 9, 9 );
+
+// Get the first element:
+var z = arr.at( 0 );
+// returns <Uint64>[ 1n ]
+
+// Get the last element:
+z = arr.at( -1 );
+// returns <Uint64>[ 9n ]
+```
+
+If provided an out-of-bounds index, the method returns `undefined`.
+
+```javascript
+var arr = new Uint64Array( 10 );
+
+var z = arr.at( 100 );
+// returns undefined
+
+z = arr.at( -100 );
+// returns undefined
+```
+
 <a name="method-get"></a>
 
 #### Uint64Array.prototype.get( i )
