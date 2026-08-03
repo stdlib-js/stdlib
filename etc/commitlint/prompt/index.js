@@ -22,7 +22,7 @@
 * Custom prompt configuration.
 *
 * @name config
-* @type {Object
+* @type {Object}
 */
 var config = {
 	'questions': {}

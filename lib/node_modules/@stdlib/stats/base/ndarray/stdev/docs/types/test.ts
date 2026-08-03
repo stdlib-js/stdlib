@@ -30,7 +30,9 @@ import stdev = require( './index' );
 	const x = zeros( [ 10 ], {
 		'dtype': 'float64'
 	});
-	const correction = scalar2ndarray( 1.0, { 'dtype': 'float64' } );
+	const correction = scalar2ndarray( 1.0, {
+		'dtype': 'float64'
+	});
 
 	stdev( [ x, correction ] ); // $ExpectType number
 }
@@ -53,7 +55,9 @@ import stdev = require( './index' );
 	const x = zeros( [ 10 ], {
 		'dtype': 'float64'
 	});
-	const correction = scalar2ndarray( 1.0, { 'dtype': 'float64' } );
+	const correction = scalar2ndarray( 1.0, {
+		'dtype': 'float64'
+	});
 
 	stdev(); // $ExpectError
 	stdev( [ x, correction ], 10 ); // $ExpectError
