@@ -29,7 +29,7 @@
 * // returns true
 *
 * @example
-* var bool = isfinitef( -2.0e64 );
+* var bool = isfinitef( -2.0e24 );
 * // returns true
 *
 * @example

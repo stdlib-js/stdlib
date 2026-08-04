@@ -21,7 +21,7 @@
 /**
 * Tests if a value is PRNG-like.
 *
-* @param v - value to test
+* @param value - value to test
 * @returns boolean indicating if a value is PRNG-like
 *
 * @example
@@ -33,7 +33,7 @@
 * bool = isPRNGLike( [] );
 * // returns false
 */
-declare function isPRNGLike( v: any ): boolean;
+declare function isPRNGLike( value: any ): boolean;
 
 
 // EXPORTS //

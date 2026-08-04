@@ -118,7 +118,14 @@ var dv = serialize( arr );
 
 ```javascript
 var IS_LITTLE_ENDIAN = require( '@stdlib/assert/is-little-endian' );
+var getDType = require( '@stdlib/ndarray/dtype' );
+var getShape = require( '@stdlib/ndarray/shape' );
+var getStrides = require( '@stdlib/ndarray/strides' );
+var getOffset = require( '@stdlib/ndarray/offset' );
+var getOrder = require( '@stdlib/ndarray/order' );
 var array = require( '@stdlib/ndarray/array' );
+var ndims = require( '@stdlib/ndarray/ndims' );
+var join = require( '@stdlib/array/base/join' );
 var Uint8Array = require( '@stdlib/array/uint8' );
 var fromInt64Bytes = require( '@stdlib/number/float64/base/from-int64-bytes' );
 var serialize = require( '@stdlib/ndarray/base/serialize-meta-data' );
@@ -127,12 +134,12 @@ var serialize = require( '@stdlib/ndarray/base/serialize-meta-data' );
 var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 
 // Print various properties:
-console.log( 'dtype: %s', x.dtype );
-console.log( 'ndims: %d', x.ndims );
-console.log( 'shape: [ %s ]', x.shape.join( ', ' ) );
-console.log( 'strides: [ %s ]', x.strides.join( ', ' ) );
-console.log( 'offset: %d', x.offset );
-console.log( 'order: %s', x.order );
+console.log( 'dtype: %s', getDType( x ) );
+console.log( 'ndims: %d', ndims( x ) );
+console.log( 'shape: [ %s ]', join( getShape( x ), ', ' ) );
+console.log( 'strides: [ %s ]', join( getStrides( x ), ', ' ) );
+console.log( 'offset: %d', getOffset( x ) );
+console.log( 'order: %s', getOrder( x ) );
 
 // Serialize ndarray meta data to a DataView:
 var dv = serialize( x );
@@ -146,30 +153,30 @@ var dtype = dv.getInt16( 1, IS_LITTLE_ENDIAN );
 console.log( 'dtype (enum): %d', dtype );
 
 // Extract the number of dimensions:
-var ndims = fromInt64Bytes( bytes, 1, 3 );
-console.log( 'ndims: %d', ndims );
+var N = fromInt64Bytes( bytes, 1, 3 );
+console.log( 'ndims: %d', N );
 
 // Extract the shape:
 var shape = [];
 var i;
-for ( i = 0; i < ndims; i++ ) {
+for ( i = 0; i < N; i++ ) {
     shape.push( fromInt64Bytes( bytes, 1, 11+(i*8) ) );
 }
 console.log( 'shape: [ %s ]', shape.join( ', ' ) );
 
 // Extract the strides (in units of bytes):
 var strides = [];
-for ( i = 0; i < ndims; i++ ) {
-    strides.push( fromInt64Bytes( bytes, 1, 11+(ndims*8)+(i*8) ) );
+for ( i = 0; i < N; i++ ) {
+    strides.push( fromInt64Bytes( bytes, 1, 11+(N*8)+(i*8) ) );
 }
 console.log( 'strides (bytes): [ %s ]', strides.join( ', ' ) );
 
 // Extract the index offset (in bytes):
-var offset = fromInt64Bytes( bytes, 1, 11+(ndims*16) );
+var offset = fromInt64Bytes( bytes, 1, 11+(N*16) );
 console.log( 'offset (bytes): %d', offset );
 
 // Extract the order (enum):
-var order = dv.getInt8( 19+(ndims*16) );
+var order = dv.getInt8( 19+(N*16) );
 console.log( 'order (enum): %d', order );
 ```
 
