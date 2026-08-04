@@ -163,22 +163,18 @@ swxsy.ndarray( 3, x, 1, x.length-3, y, 1, y.length-3, w, 1, w.length-3 );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEach = require( '@stdlib/console/log-each' );
 var swxsy = require( '@stdlib/blas/ext/base/swxsy' );
 
 var opts = {
     'dtype': 'float32'
 };
 var x = discreteUniform( 10, -100, 100, opts );
-console.log( x );
-
 var y = discreteUniform( 10, -100, 100, opts );
-console.log( y );
-
 var w = discreteUniform( 10, -100, 100, opts );
-console.log( w );
 
 swxsy( x.length, x, 1, y, 1, w, 1 );
-console.log( w );
+logEach( '%d - %d = %d', x, y, w );
 ```
 
 </section>
