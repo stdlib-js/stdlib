@@ -210,10 +210,10 @@ static float complex scale( const float complex x ) {
     return ( re+10.0f ) + ( im+10.0f )*I;
 }
 
-float complex X[] = { 1.0f+1.0f*I, 2.0f+2.0f*I, 3.0f+3.0f*I, 4.0f+4.0f*I, 5.0f+5.0f*I, 6.0f+6.0f*I };
+const float complex X[] = { 1.0f+1.0f*I, 2.0f+2.0f*I, 3.0f+3.0f*I, 4.0f+4.0f*I, 5.0f+5.0f*I, 6.0f+6.0f*I };
 float complex Y[] = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
 
-int64_t N = 6;
+const int64_t N = 6;
 
 stdlib_strided_cmap( N, X, 1, Y, 1, scale );
 ```
@@ -265,17 +265,17 @@ static float complex scale( const float complex x ) {
 
 int main( void ) {
     // Create an input strided array:
-    float complex X[] = { 1.0+1.0*I, 2.0+2.0*I, 3.0+3.0*I, 4.0+4.0*I, 5.0+5.0*I, 6.0+6.0*I };
+    const float complex X[] = { 1.0+1.0*I, 2.0+2.0*I, 3.0+3.0*I, 4.0+4.0*I, 5.0+5.0*I, 6.0+6.0*I };
 
     // Create an output strided array:
     float complex Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
     // Specify the number of elements:
-    int64_t N = 6;
+    const int64_t N = 6;
 
     // Define the strides:
-    int64_t strideX = 1;
-    int64_t strideY = -1;
+    const int64_t strideX = 1;
+    const int64_t strideY = -1;
 
     // Apply the callback:
     stdlib_strided_cmap( N, X, strideX, Y, strideY, scale );

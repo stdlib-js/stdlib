@@ -70,7 +70,5 @@
     "float64array",
     "dwxpy"
   ],
-  "__stdlib__": {
-    "wasm": false
-  }
+  "__stdlib__": {}
 }
