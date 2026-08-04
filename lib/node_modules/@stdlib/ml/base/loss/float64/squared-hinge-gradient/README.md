@@ -26,15 +26,16 @@ limitations under the License.
 
 The [squared hinge loss gradient][squared-hinge-loss-gradient] is defined as
 
-<!-- <equation class="equation" label="eq:squared_hinge_loss_gradient" align="center" raw="\frac{\partial \ell}{\partial w_i} = \begin{cases} -2y(t - yp)x_i & \text{if } yp \leq t \\ 0 & \text{otherwise} \end{cases}" alt="Equation for the squared hinge loss gradient."> -->
+<!-- <equation class="equation" label="eq:squared_hinge_loss_gradient" align="center" raw="\frac{\partial \ell}{\partial w} = \begin{cases} -2y(t - yp)x & \text{if } yp \leq t \\ 0 & \text{otherwise} \end{cases}" alt="Equation for the squared hinge loss gradient."> -->
 
 ```math
-\frac{\partial \ell}{\partial w_i} =
-\begin{cases}
--2y(t - yp)x_i & \text{if } yp \leq t \\
-0 & \text{otherwise}
-\end{cases}
+\frac{\partial \ell}{\partial w} = \begin{cases} -2y(t - yp)x & \text{if } yp \leq t \\ 0 & \text{otherwise} \end{cases}
 ```
+
+<!-- <div class="equation" align="center" data-raw-text="\frac{\partial \ell}{\partial w} = \begin{cases} -2y(t - yp)x &amp; \text{if } yp \leq t \\ 0 &amp; \text{otherwise} \end{cases}" data-equation="eq:squared_hinge_loss_gradient">
+    <img src="" alt="Equation for the squared hinge loss gradient.">
+    <br>
+</div> -->
 
 <!-- </equation> -->
 
