@@ -132,7 +132,7 @@
         Stride length for `Out`.
 
     oo: integer
-        Stride length for `Out`.
+        Starting index for `Out`.
 
     Returns
     -------

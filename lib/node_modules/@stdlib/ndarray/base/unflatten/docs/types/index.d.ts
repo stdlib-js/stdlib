@@ -20,6 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
+import { Collection } from '@stdlib/types/array';
 import { ndarray } from '@stdlib/types/ndarray';
 
 /**
@@ -40,7 +41,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var out = unflatten( x, 0, [ 2, 3 ], false );
 * // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ]
 */
-declare function unflatten<U extends ndarray = ndarray>( x: U, dim: number, sizes: ArrayLike<number>, writable: boolean ): U;
+declare function unflatten<U extends ndarray = ndarray>( x: U, dim: number, sizes: Collection<number>, writable: boolean ): U;
 
 
 // EXPORTS //

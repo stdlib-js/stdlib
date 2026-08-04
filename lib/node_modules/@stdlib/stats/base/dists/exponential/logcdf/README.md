@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Exponential][exponential-distribution] distribution logarithm of [cumulative distribution function][cdf].
+> [Exponential][exponential-distribution] distribution natural logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 

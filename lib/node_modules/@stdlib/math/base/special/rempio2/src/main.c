@@ -40,6 +40,7 @@
 #include "stdlib/constants/float64/high_word_abs_mask.h"
 #include "stdlib/constants/float64/high_word_exponent_mask.h"
 #include "stdlib/constants/float64/high_word_significand_mask.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double ZERO =  0.00000000000000000000e+00;       // 0x00000000, 0x00000000
@@ -595,8 +596,8 @@ medium:
 	}
 	// Case: x is NaN or infinity
 	if( ix >= STDLIB_CONSTANT_FLOAT64_HIGH_WORD_EXPONENT_MASK ) {
-		*rem1 = 0.0 / 0.0; // NaN
-		*rem2 = 0.0 / 0.0; // NaN
+		*rem1 = STDLIB_CONSTANT_FLOAT64_NAN;
+		*rem2 = STDLIB_CONSTANT_FLOAT64_NAN;
 		return 0;
 	}
 	// Set z = scalbn(|x|, ilogb(x)-23)...
