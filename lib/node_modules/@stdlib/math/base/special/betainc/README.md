@@ -120,6 +120,106 @@ logEachMap( 'x: %0.4f, \t a: %0.4f, \t b: %0.4f, \t f(x,a,b): %0.4f', x, a, b, b
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/betainc.h"
+```
+
+#### stdlib_base_betainc( x, a, b, regularized, upper )
+
+Evaluates the incomplete beta function.
+
+```c
+double y = stdlib_base_betainc( 0.5, 2.0, 2.0, true, false );
+// returns 0.5
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` function parameter.
+-   **a**: `[in] double` function parameter.
+-   **b**: `[in] double` function parameter.
+-   **regularized**: `[in] bool` indicating if the function should evaluate the regularized incomplete beta function.
+-   **upper**: `[in] bool` indicating if the function should return the upper tail of the incomplete beta function.
+
+```c
+double stdlib_base_betainc( const double x, const double a, const double b, const bool regularized, const bool upper );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/betainc.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double x;
+    double a;
+    double b;
+    double v;
+    int i;
+
+    for ( i = 0; i < 100; i++ ) {
+        x = random_uniform( 0.0, 1.0 );
+        a = random_uniform( 0.0, 10.0 );
+        b = random_uniform( 0.0, 10.0 );
+        v = stdlib_base_betainc( x, a, b, true, false );
+        printf( "x: %lf, a: %lf, b: %lf, f(x,a,b): %lf\n", x, a, b, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
