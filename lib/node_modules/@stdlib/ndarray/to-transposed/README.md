@@ -69,7 +69,7 @@ The function accepts the following arguments:
 ## Notes
 
 -   The function operates on a stack of matrices, transposing the last two dimensions of the input ndarray.
--   The input ndarray must have at least two dimensions.
+-   The input ndarray must have two or more dimensions.
 
 </section>
 
