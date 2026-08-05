@@ -21,6 +21,7 @@
 #include "stdlib/assert/napi/is_type.h"
 #include <node_api.h>
 #include <stdint.h>
+#include <stdbool.h>
 
 /**
 * Converts a Node-API value to an unsigned 32-bit integer.
@@ -55,10 +56,20 @@
 * }
 */
 napi_status stdlib_napi_argv_uint32( const napi_env env, const napi_value value, uint32_t *out, const char *message, napi_value *err ) {
+	bool lossless = true;
+	uint64_t tmp = 0;
+
 	stdlib_assert_napi_value_is_type( env, value, napi_number, message, err );
-	if ( *err != NULL ) {
+	if ( *err == NULL ) {
+		STDLIB_ASSERT_NAPI_STATUS_OK_RET_VALUE( env, napi_get_value_uint32( env, value, out ), "", napi_ok )
 		return napi_ok;
 	}
-	STDLIB_ASSERT_NAPI_STATUS_OK_RET_VALUE( env, napi_get_value_uint32( env, value, out ), "", napi_ok )
+	*err = NULL;
+	stdlib_assert_napi_value_is_type( env, value, napi_bigint, message, err );
+	if ( *err == NULL ) {
+		STDLIB_ASSERT_NAPI_STATUS_OK_RET_VALUE( env, napi_get_value_bigint_uint64( env, value, &tmp, &lossless ), "", napi_ok )
+		*out = (uint32_t)(tmp);
+		return napi_ok;
+	}
 	return napi_ok;
 }

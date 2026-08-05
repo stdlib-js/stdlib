@@ -134,11 +134,11 @@ double y = stdlib_base_ceiln( 3.141592653589793, -2 );
 // returns 3.15
 
 // If n = 0, `ceiln` behaves like `ceil`:
-double y = stdlib_base_ceiln( 3.141592653589793, 0 );
+y = stdlib_base_ceiln( 3.141592653589793, 0 );
 // returns 4.0
 
 // Round a value to the nearest thousand:
-double y = stdlib_base_ceiln( 12368.0, 3 );
+y = stdlib_base_ceiln( 12368.0, 3 );
 // returns 13000.0
 ```
 

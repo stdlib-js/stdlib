@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Tests whether an unsigned integer is a power of 2.
+* Tests if an unsigned integer is a power of 2.
 *
 * @param x - value to test
 * @returns boolean indicating whether a value is a power of 2
