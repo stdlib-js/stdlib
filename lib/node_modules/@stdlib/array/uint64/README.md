@@ -278,6 +278,44 @@ z = arr.at( -100 );
 // returns undefined
 ```
 
+<a name="method-entries"></a>
+
+#### Uint64Array.prototype.entries()
+
+Returns an iterator for iterating over array key-value pairs.
+
+```javascript
+var Uint64 = require( '@stdlib/number/uint64/ctor' );
+
+var arr = [
+    new Uint64( 1 ),
+    new Uint64( 2 ),
+    new Uint64( 3 )
+];
+arr = new Uint64Array( arr );
+
+// Create an iterator:
+var it = arr.entries();
+
+// Iterate over the key-value pairs...
+var v = it.next().value;
+// returns [ 0, <Uint64>[ 1n ] ]
+
+v = it.next().value;
+// returns [ 1, <Uint64>[ 2n ] ]
+
+v = it.next().value;
+// returns [ 2, <Uint64>[ 3n ] ]
+
+var bool = it.next().done;
+// returns true
+```
+
+The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the following properties:
+
+-   **next**: function which returns an [iterator][mdn-iterator-protocol] protocol-compliant object containing the next iterated value (if one exists) assigned to a `value` property and a `done` property having a `boolean` value indicating whether the [iterator][mdn-iterator-protocol] is finished.
+-   **return**: function which closes an [iterator][mdn-iterator-protocol] and returns a single (optional) argument in an [iterator][mdn-iterator-protocol] protocol-compliant object.
+
 <a name="method-get"></a>
 
 #### Uint64Array.prototype.get( i )
@@ -465,6 +503,8 @@ logEach( '%s', out );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
