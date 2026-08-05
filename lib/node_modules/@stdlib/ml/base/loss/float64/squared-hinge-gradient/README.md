@@ -33,7 +33,7 @@ The [squared hinge loss gradient][squared-hinge-loss-gradient] is defined as
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\frac{\partial \ell}{\partial w} = \begin{cases} -2y(t - yp)x &amp; \text{if } yp \leq t \\ 0 &amp; \text{otherwise} \end{cases}" data-equation="eq:squared_hinge_loss_gradient">
-    <img src="" alt="Equation for the squared hinge loss gradient.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e72895028e08bd5faa19a580deaf380c3ff38e42/lib/node_modules/@stdlib/ml/base/loss/float64/squared-hinge-gradient/docs/img/equation_squared_hinge_loss_gradient.svg" alt="Equation for the squared hinge loss gradient.">
     <br>
 </div> -->
 
