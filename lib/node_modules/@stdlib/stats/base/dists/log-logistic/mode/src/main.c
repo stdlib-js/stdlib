@@ -21,7 +21,7 @@
 #include "stdlib/math/base/special/pow.h"
 
 /**
-* Returns the mode of a log logistic distribution with scale parameter `alpha` and shape parameter `beta`.
+* Returns the mode of a log-logistic distribution with scale parameter `alpha` and shape parameter `beta`.
 *
 * @param alpha    scale parameter
 * @param beta     shape parameter
