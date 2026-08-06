@@ -104,7 +104,7 @@ v = hingeGradient( 2.4, 1.0, 0.453, 0.76 );
 
 ## Notes
 
--   When `t = 1.0`, we get the loss used by SVM, where as when `t = 0.0`, we get the loss used by the Perceptron.
+-   When `t = 1.0`, we get the loss used by SVM; whereas, when `t = 0.0`, we get the loss used by the Perceptron.
 
 </section>
 
