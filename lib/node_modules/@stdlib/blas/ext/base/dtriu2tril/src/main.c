@@ -88,7 +88,7 @@ void API_SUFFIX(stdlib_strided_dtriu2tril_ndarray)( const CBLAS_INT M, const CBL
 		// Read A row-by-row (upper triangle); write the transpose into B...
 		for ( i1 = 0; i1 < M; i1++ ) {
 			for ( i0 = MAX( 0, i1+k ); i0 < N; i0++ ) {
-				B[ ib + ( i0*strideB1 ) ] = A[ ia + ( i0*strideA2 ) ];
+				B[ ib+(i0*strideB1) ] = A[ ia+(i0*strideA2) ];
 			}
 			ia += strideA1;
 			ib += strideB2;
@@ -98,7 +98,7 @@ void API_SUFFIX(stdlib_strided_dtriu2tril_ndarray)( const CBLAS_INT M, const CBL
 	// Read A column-by-column (upper triangle); write the transpose into B...
 	for ( i1 = 0; i1 < N; i1++ ) {
 		for ( i0 = 0; i0 <= MIN( i1-k, M-1 ); i0++ ) {
-			B[ ib + ( i0*strideB2 ) ] = A[ ia + ( i0*strideA1 ) ];
+			B[ ib+(i0*strideB2) ] = A[ ia+(i0*strideA1) ];
 		}
 		ia += strideA2;
 		ib += strideB1;
