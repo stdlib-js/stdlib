@@ -1,0 +1,12 @@
+---
+type: amend-message
+---
+test: migrate `math/base/special/factorialln` to ULP-based assertions
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/13962
+Ref: https://github.com/stdlib-js/stdlib/issues/11352
+Ref: https://github.com/stdlib-js/stdlib/issues/2774
+
+Co-authored-by: Claude Opus 5 <noreply@anthropic.com>
+Co-authored-by: kgryte <kgryte+claude@gmail.com>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
