@@ -26,11 +26,16 @@ limitations under the License.
 
 The [hinge loss gradient][hinge-loss-gradient] is defined as
 
-<!-- <equation class="equation" label="eq:hinge_loss_gradient" align="center" raw="\frac{\partial \ell}{\partial w_i} = \begin{cases} -yx_i & \text{if } yp \leq t \\ 0 & \text{otherwise} \end{cases}" alt="Equation for the hinge loss gradient."> -->
+<!-- <equation class="equation" label="eq:hinge_loss_gradient" align="center" raw="\frac{\partial \ell}{\partial w} = \begin{cases} -yx & \text{if } yp \leq t \\ 0 & \text{otherwise} \end{cases}" alt="Equation for the hinge loss gradient."> -->
 
 ```math
-\frac{\partial \ell}{\partial w_i} = \begin{cases} -yx_i & \text{if } yp \leq t \\ 0 & \text{otherwise} \end{cases}
+\frac{\partial \ell}{\partial w} = \begin{cases} -yx & \text{if } yp \leq t \\ 0 & \text{otherwise} \end{cases}
 ```
+
+<!-- <div class="equation" align="center" data-raw-text="\frac{\partial \ell}{\partial w} = \begin{cases} -yx &amp; \text{if } yp \leq t \\ 0 &amp; \text{otherwise} \end{cases}" data-equation="eq:hinge_loss_gradient">
+    <img src="" alt="Equation for the hinge loss gradient.">
+    <br>
+</div> -->
 
 <!-- </equation> -->
 
