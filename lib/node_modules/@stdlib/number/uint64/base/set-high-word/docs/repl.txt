@@ -2,7 +2,8 @@
 {{alias}}( a, high )
     Sets the high 32-bit word of a 64-bit unsigned integer.
 
-    The function returns a new Uint64 instance without modifying the input.
+    The function returns a new Uint64 instance without modifying the input
+    value.
 
     Parameters
     ----------

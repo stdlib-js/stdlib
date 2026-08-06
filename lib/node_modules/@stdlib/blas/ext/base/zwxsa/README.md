@@ -186,7 +186,7 @@ var w = new Complex128Array( wbuf.buffer );
 var alpha = new Complex128( 5.0, 3.0 );
 
 zwxsa( x.length, alpha, x, 1, w, 1 );
-logEach( '%s', w );
+logEach( '(%s) - (%s) = %s', x, alpha, w );
 ```
 
 </section>
