@@ -32,6 +32,11 @@ The natural [exponential function][exponential-function] is defined as
 y = e^x
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="y = e^x" data-equation="eq:natural_exponential_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3a6b2fe467c920a88f281944d6eb9370eb5cc4cb/lib/node_modules/@stdlib/math/base/special/expf/docs/img/equation_natural_exponential_function.svg" alt="Natural exponential function definition">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 where `e` is [Euler's][@stdlib/constants/float32/e] number.
