@@ -21,6 +21,9 @@
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)
 	include $(TOOLS_MAKE_LIB_DIR)/tools-test-cov/istanbul.mk
 endif
+ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), c8)
+	include $(TOOLS_MAKE_LIB_DIR)/tools-test-cov/c8.mk
+endif
 
 
 # TARGETS #
@@ -32,6 +35,9 @@ endif
 tools-test-javascript-cov:
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)
 	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" NODE_FLAGS_TEST="$(NODE_FLAGS_TEST)" $(MAKE) -f $(this_file) tools-test-istanbul
+endif
+ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), c8)
+	$(QUIET) NODE_ENV_TEST="$(NODE_ENV_TEST)" NODE_PATH_TEST="$(NODE_PATH_TEST)" NODE_FLAGS_TEST="$(NODE_FLAGS_TEST)" $(MAKE) -f $(this_file) tools-test-c8
 endif
 
 .PHONY: tools-test-javascript-cov
