@@ -20,9 +20,10 @@
 
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), istanbul)
 	include $(TOOLS_MAKE_LIB_DIR)/tools-test-cov/istanbul.mk
-endif
+else
 ifeq ($(JAVASCRIPT_CODE_INSTRUMENTER), c8)
 	include $(TOOLS_MAKE_LIB_DIR)/tools-test-cov/c8.mk
+endif
 endif
 
 
