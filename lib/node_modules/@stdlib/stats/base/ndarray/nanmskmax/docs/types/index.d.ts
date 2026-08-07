@@ -25,22 +25,26 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Calculates the maximum value of a one-dimensional ndarray according to a mask, ignoring `NaN` values.
 *
-* @param arrays - array-like object containing an input ndarray and a mask ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a one-dimensional mask ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns maximum value
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
-* var xbuf = [ 1.0, -2.0, 4.0, 2.0, NaN ];
-* var x = new ndarray( 'generic', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
-*
-* var mbuf = [ 0, 0, 1, 0, 0 ];
-* var mask = new ndarray( 'generic', mbuf, [ 5 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, -2.0, 4.0, 2.0, NaN ], 'generic' );
+* var mask = vector( [ 0, 0, 1, 0, 0 ], 'uint8' );
 *
 * var v = nanmskmax( [ x, mask ] );
 * // returns 2.0
 */
-declare function nanmskmax<T extends typedndarray<number> = typedndarray<number>>( arrays: [ T, T ] ): number;
+declare function nanmskmax( arrays: [ typedndarray<number>, typedndarray<number> ] ): number;
 
 
 // EXPORTS //
