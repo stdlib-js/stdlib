@@ -131,7 +131,7 @@ jobs:
               files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
             fi
           fi
-          directories=$(for file in $files; do dirname $file; done | uniq | tr '\n' ' ' | sed 's/ $//')
+          directories=$(for file in $files; do dirname $file; done | sort -u | tr '\n' ' ' | sed 's/ $//')
           echo "directories=${directories}" >> $GITHUB_OUTPUT
 
       # Get list of changed directories from workflow dispatch event:
