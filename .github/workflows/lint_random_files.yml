@@ -113,8 +113,21 @@ jobs:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
 
+      # Restore cache if up-to-date:
+      - name: 'Restore cache if up-to-date'
+        # Pin action to full length commit SHA
+        uses: actions/cache/restore@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        id: cache
+        with:
+          path: |
+            ${{ github.workspace }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       # Install dependencies (accounting for possible network failures, etc, when installing node module dependencies):
       - name: 'Install dependencies'
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           make install-node-modules || make install-node-modules || make install-node-modules
         timeout-minutes: 15
@@ -213,6 +226,14 @@ jobs:
           set -o pipefail
           files=$(echo "$FILES" | tr ',' ' ')
           make lint-editorconfig-files FILES="${files}" 2>&1 | tee lint_editorconfig_errors.txt
+
+      # Save cache after editorconfig-checker binary has been downloaded:
+      - name: 'Save cache after editorconfig-checker binary has been downloaded'
+        if: always() && steps.cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
+        with:
+          path: ${{ github.workspace }}/node_modules
+          key: ${{ steps.cache.outputs.cache-primary-key }}
 
       # Create sub-issue for EditorConfig lint failures:
       - name: 'Create sub-issue for EditorConfig lint failures'
