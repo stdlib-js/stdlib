@@ -206,6 +206,9 @@ jobs:
         id: lint-editorconfig
         env:
           FILES: ${{ steps.random-files.outputs.files }}
+
+          # Provide a token so that the editorconfig-checker binary download is authenticated, thus avoiding rate limiting:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           set -o pipefail
           files=$(echo "$FILES" | tr ',' ' ')
@@ -217,6 +220,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
         run: |
+          # Guard against creating spurious issues when the lint step failed due to an infrastructure error (e.g., failing to download the editorconfig-checker binary due to rate limiting) rather than actual lint errors:
+          if grep -q 'Failed to download binary' lint_editorconfig_errors.txt 2>/dev/null; then
+            echo 'EditorConfig lint step failed due to an infrastructure error (e.g., failed binary download). Skipping issue creation.'
+            exit 0
+          fi
+
           strip_ansi() {
             sed -r 's/\x1B\[[0-9;]*[mK]//g'
           }
