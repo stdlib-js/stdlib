@@ -246,8 +246,6 @@ void API_SUFFIX(stdlib_strided_dtriu2tril)( const CBLAS_LAYOUT layout, const CBL
 Reflects the upper triangular part of a double-precision floating-point matrix `A` into the lower triangular part of another matrix `B` using alternative indexing semantics.
 
 ```c
-#include "stdlib/blas/base/shared.h"
-
 const double A[] = { 1.0, 2.0, 3.0, 4.0 };
 double B[] = { 0.0, 0.0, 0.0, 0.0 };
 
