@@ -39,7 +39,7 @@ endif
 #
 # @param {string} [TESTS_FILTER] - file path pattern (e.g., `.*/doctest/compare-values/.*`)
 # @param {string} [JAVASCRIPT_CODE_INSTRUMENTER] - JavaScript code instrumenter
-# @param {*} [FAIL_FAST] - flag indicating whether to stop running tests upon encountering a test failure
+# @param {*} [FAST_FAIL] - flag indicating whether to stop running tests upon encountering a test failure
 #
 # @example
 # make tools-test-javascript-cov
