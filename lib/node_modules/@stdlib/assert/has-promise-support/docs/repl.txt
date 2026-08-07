@@ -1,0 +1,18 @@
+
+{{alias}}()
+    Tests for native Promise support.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating if an environment has native Promise support.
+
+    Examples
+    --------
+    > var bool = {{alias}}()
+    <boolean>
+
+    See Also
+    --------
+
+
