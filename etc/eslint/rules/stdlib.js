@@ -4590,7 +4590,11 @@ rules[ 'stdlib/no-require-index' ] = 'error';
 rules[ 'stdlib/no-self-require' ] = 'error';
 
 /**
-* Enforce that a property is required directly when only a single property of a required module is used. Requiring a property directly reduces bundle sizes during ESM tree-shaking via named imports.
+* Enforce that a property is required directly when only a single property of a required module is used.
+*
+* ## Notes
+*
+* -   Requiring a property directly reduces bundle sizes during ESM tree-shaking via named imports.
 *
 * @name no-single-property-require
 * @memberof rules
