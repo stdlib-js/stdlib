@@ -25,15 +25,19 @@ import { float64ndarray } from '@stdlib/types/ndarray';
 /**
 * Fills a one-dimensional double-precision floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from zero.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns input ndarray
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 *
-* var xbuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0 ] );
-* var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = new Float64Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 * // returns <ndarray>[ 0.0, 0.0, 0.0, 0.0 ]
 *
 * var out = dzeroTo( [ x ] );

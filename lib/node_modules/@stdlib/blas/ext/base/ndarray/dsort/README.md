@@ -41,12 +41,10 @@ var dsort = require( '@stdlib/blas/ext/base/ndarray/dsort' );
 Sorts a one-dimensional double-precision floating-point ndarray.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
-var xbuf = new Float64Array( [ 1.0, -2.0, 3.0, -4.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, -2.0, 3.0, -4.0 ] );
 
 var order = scalar2ndarray( 1.0, {
     'dtype': 'generic'
@@ -61,7 +59,10 @@ var bool = ( out === x );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying the sort order.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a zero-dimensional ndarray specifying the sort order.
 
 </section>
 

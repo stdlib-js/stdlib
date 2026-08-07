@@ -35,7 +35,7 @@
 
     Parameters
     ----------
-    shape: Array<integer>
+    shape: Array<integer>|integer
         Array shape.
 
     start: ndarray|number|Complex

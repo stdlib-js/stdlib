@@ -25,14 +25,19 @@ import { typedndarray } from '@stdlib/types/ndarray';
 /**
 * Fills a one-dimensional ndarray with linearly spaced numeric elements which increment by `1` starting from zero.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns input ndarray
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
-* var xbuf = [ 0.0, 0.0, 0.0, 0.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 0.0, 0.0, 0.0, 0.0 ], 'generic' );
 * // returns <ndarray>[ 0.0, 0.0, 0.0, 0.0 ]
 *
 * var out = gzeroTo( [ x ] );

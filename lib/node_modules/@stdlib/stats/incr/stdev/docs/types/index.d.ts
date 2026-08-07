@@ -35,7 +35,7 @@ type accumulator = ( x?: number ) => number | null;
 /**
 * Returns an accumulator function which incrementally computes a corrected sample standard deviation.
 *
-* @param mu - known mean
+* @param mean - known mean
 * @returns accumulator function
 *
 * @example
@@ -53,7 +53,7 @@ type accumulator = ( x?: number ) => number | null;
 * s = accumulator();
 * // returns ~4.95
 */
-declare function incrstdev( mu?: number ): accumulator;
+declare function incrstdev( mean?: number ): accumulator;
 
 
 // EXPORTS //

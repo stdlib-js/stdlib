@@ -149,6 +149,8 @@ logEachMap( 'shape: (%s). dim: %d. flattened: (%s).', shapes, dims, flattenShape
 Flattens a shape starting from a specified dimension.
 
 ```c
+#include <stdint.h>
+
 const int64_t ndims = 3;
 const int64_t shape[] = { 2, 3, 10 };
 int64_t out[ 2 ];

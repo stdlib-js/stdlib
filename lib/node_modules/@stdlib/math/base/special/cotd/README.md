@@ -177,7 +177,7 @@ int main( void ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/math/base/special/cscd`][@stdlib/math/base/special/cscd]</span><span class="delimiter">: </span><span class="description">compute the cosecant of a degree.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/cscd`][@stdlib/math/base/special/cscd]</span><span class="delimiter">: </span><span class="description">compute the cosecant of an angle measured in degrees.</span>
 -   <span class="package-name">[`@stdlib/math/base/special/secd`][@stdlib/math/base/special/secd]</span><span class="delimiter">: </span><span class="description">compute the secant of an angle measured in degrees.</span>
 -   <span class="package-name">[`@stdlib/math/base/special/tand`][@stdlib/math/base/special/tand]</span><span class="delimiter">: </span><span class="description">compute the tangent of an angle measured in degrees.</span>
 
