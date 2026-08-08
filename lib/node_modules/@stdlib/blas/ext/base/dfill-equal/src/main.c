@@ -24,7 +24,7 @@
 * Replaces double-precision floating-point strided array elements equal to a provided search element with a specified scalar constant.
 *
 * @param N                number of indexed elements
-* @param searchElement    search Element
+* @param searchElement    search element
 * @param alpha            scalar constant
 * @param X                input array
 * @param strideX          stride length
@@ -38,7 +38,7 @@ void API_SUFFIX(stdlib_strided_dfill_equal)( const CBLAS_INT N, const double sea
 * Replaces double-precision floating-point strided array elements equal to a provided search element with a specified scalar constant using alternative indexing semantics.
 *
 * @param N                number of indexed elements
-* @param searchElement    search Element
+* @param searchElement    search element
 * @param alpha            scalar constant
 * @param X                input array
 * @param strideX          stride length
