@@ -99,6 +99,7 @@ interface Routine {
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var A = new Complex64Array( 4 );
 *
@@ -110,6 +111,7 @@ interface Routine {
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
+* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
 * var A = new Complex64Array( 5 );
 *

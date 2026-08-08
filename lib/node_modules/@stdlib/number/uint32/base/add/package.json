@@ -63,6 +63,7 @@
     "number",
     "uint32",
     "integer",
+    "unsigned",
     "c"
   ],
   "__stdlib__": {

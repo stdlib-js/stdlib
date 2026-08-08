@@ -122,6 +122,7 @@ var overrides = [
 			'require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-doctest': 'off',
+			'stdlib/no-single-property-require': 'off',
 			'stdlib/no-unnecessary-nested-functions': 'off',
 			'no-undefined': 'off'
 		}
@@ -158,11 +159,12 @@ var overrides = [
 			'require-jsdoc': 'off',
 			'stdlib/jsdoc-private-annotation': 'off',
 			'stdlib/jsdoc-return-annotations-values': 'off',
+			'stdlib/no-single-property-require': 'off',
 			'stdlib/no-unnecessary-nested-functions': 'off',
 			'stdlib/return-annotations-values': 'off',
 			'strict': 'off',
 			'vars-on-top': 'off',
-			'node/no-unpublished-require': 'off'
+			'n/no-unpublished-require': 'off'
 		}
 	},
 	{
