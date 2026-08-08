@@ -58,10 +58,10 @@ The function accepts the following `options`:
 
 -   **data**: dataset name. The following names are recognized:
 
-    -   **dict**: the main pronouncing dictionary
-    -   **phones**: manners of articulation for each sound
-    -   **symbols**: complete list of ARPABET symbols used by the dictionary
-    -   **vp**: verbal pronunciations of punctuation marks
+    -   **dict**: the main pronouncing dictionary.
+    -   **phones**: manners of articulation for each sound.
+    -   **symbols**: complete list of ARPABET symbols used by the dictionary.
+    -   **vp**: verbal pronunciations of punctuation marks.
 
 To only return the main pronouncing dictionary, set the `data` option to `dict`.
 

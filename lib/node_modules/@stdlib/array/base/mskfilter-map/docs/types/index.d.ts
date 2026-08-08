@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Array2D, Collection } from '@stdlib/types/array';
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Callback invoked for each array element.
@@ -41,7 +41,7 @@ type Unary<T, U, V> = ( this: V, value: T ) => U;
 * Callback invoked for each array element.
 *
 * @param value - array element
-* @param indices - current array element indices
+* @param index - current array element index
 * @returns result
 */
 type Binary<T, U, V> = ( this: V, value: T, index: number ) => U;
@@ -50,17 +50,17 @@ type Binary<T, U, V> = ( this: V, value: T, index: number ) => U;
 * Callback invoked for each array element.
 *
 * @param value - array element
-* @param indices - current array element indices
+* @param index - current array element index
 * @param array - input array
 * @returns result
 */
-type Ternary<T, U, V> = ( this: V, value: T, index: number, array: Array2D<T> ) => U;
+type Ternary<T, U, V> = ( this: V, value: T, index: number, array: Collection<T> ) => U;
 
 /**
 * Callback invoked for each array element.
 *
 * @param value - array element
-* @param indices - current array element indices
+* @param index - current array element index
 * @param array - input array
 * @returns result
 */
@@ -71,12 +71,12 @@ type Callback<T, U, V> = Nullary<U, V> | Unary<T, U, V> | Binary<T, U, V> | Tern
 */
 interface Routine {
 	/**
-	* Applies a mask to a provided input array and returns a new array after applying a mapping function.
+	* Returns a new array after applying a mask and a callback function to a provided input array.
 	*
 	* @param x - input array
 	* @param mask - mask array
-	* @param clbk - callback to invoke
-	* @param thisArg - execution context
+	* @param clbk - callback function
+	* @param thisArg - callback execution context
 	* @returns output array
 	*
 	* @example
@@ -92,15 +92,15 @@ interface Routine {
 	<T = unknown, U = unknown, V = unknown>( x: Collection<T>, mask: Collection, clbk: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): Array<U>;
 
 	/**
-	* Applies a mask and mapping function to an input array and assigns results to elements in an output array.
+	* Applies a mask and a callback function to an input array and assigns results to elements in an output array.
 	*
 	* @param x - input array
 	* @param mask - mask array
 	* @param out - output array
 	* @param stride - output array stride
 	* @param offset - output array offset
-	* @param clbk - callback to invoke
-	* @param thisArg - execution context
+	* @param clbk - callback function
+	* @param thisArg - callback execution context
 	* @returns output array
 	*
 	* @example
@@ -123,12 +123,12 @@ interface Routine {
 }
 
 /**
-* Applies a mask to a provided input array and returns a new array after applying a mapping function.
+* Returns a new array after applying a mask and a callback function to a provided input array.
 *
 * @param x - input array
 * @param mask - mask array
-* @param clbk - callback to invoke
-* @param thisArg - execution context
+* @param clbk - callback function
+* @param thisArg - callback execution context
 * @returns output array
 *
 * @example

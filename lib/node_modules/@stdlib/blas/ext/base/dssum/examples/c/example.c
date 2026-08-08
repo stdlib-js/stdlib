@@ -17,21 +17,20 @@
 */
 
 #include "stdlib/blas/ext/base/dssum.h"
-#include <stdint.h>
 #include <stdio.h>
 
 int main( void ) {
 	// Create a strided array:
-	const float x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+	const float x[] = { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f };
 
 	// Specify the number of elements:
-	const int64_t N = 4;
+	const int N = 5;
 
 	// Specify the stride length:
-	const int64_t stride = 2;
+	const int strideX = 2;
 
 	// Compute the sum:
-	double v = stdlib_strided_dssum( N, x, stride );
+	double v = stdlib_strided_dssum( N, x, strideX );
 
 	// Print the result:
 	printf( "sum: %lf\n", v );

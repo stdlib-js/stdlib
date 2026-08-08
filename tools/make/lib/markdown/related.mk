@@ -19,7 +19,7 @@
 # VARIABLES #
 
 # Define the path to the remark configuration file:
-REMARK_RELATED_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.js
+REMARK_RELATED_CONF ?= $(CONFIG_DIR)/remark/.remarkrc.empty.js
 
 # Define the path to the remark ignore file:
 # REMARK_RELATED_IGNORE ?= $(CONFIG_DIR)/remark/.remarkignore FIXME

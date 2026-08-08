@@ -63,14 +63,14 @@ var Float64Array = require( '@stdlib/array/float64' );
 
 // Initial arrays...
 var A0 = new Float64Array( [ 0.0, 1.0, 2.0, 3.0, 4.0 ] );
-var Out0 = new Float64Array( [ 0.0, 1.0, 2.0, 3.0, 4.0 ] );
+var out0 = new Float64Array( [ 0.0, 1.0, 2.0, 3.0, 4.0 ] );
 
 // Create offset views...
 var A1 = new Float64Array( A0.buffer, A0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
-var Out1 = new Float64Array( Out0.buffer, Out0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
+var out1 = new Float64Array( out0.buffer, out0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
-dgetrans( 'row-major', 2, 2, A1, 2, Out1, 2 );
-// Out0 => <Float64Array>[ 0.0, 1.0, 3.0, 2.0, 4.0 ]
+dgetrans( 'row-major', 2, 2, A1, 2, out1, 2 );
+// out0 => <Float64Array>[ 0.0, 1.0, 3.0, 2.0, 4.0 ]
 ```
 
 #### dgetrans.ndarray( M, N, A, sa1, sa2, oa, out, so1, so2, oo )

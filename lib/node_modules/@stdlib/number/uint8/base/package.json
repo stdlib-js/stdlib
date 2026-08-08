@@ -59,5 +59,10 @@
     "integer",
     "int",
     "8-bit"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "alias_prefix": "stdlib_base_uint8_"
+    }
+  }
 }

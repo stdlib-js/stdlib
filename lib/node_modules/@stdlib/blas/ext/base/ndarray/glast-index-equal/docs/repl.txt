@@ -1,0 +1,31 @@
+
+{{alias}}( arrays )
+    Returns the index of the last element in a one-dimensional ndarray equal to
+    a corresponding element in another one-dimensional ndarray.
+
+    When comparing elements, the function checks for equality using the strict
+    equality operator `===`. As a consequence, `NaN` values are considered
+    distinct, and `-0` and `+0` are considered the same.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - first one-dimensional input ndarray.
+        - second one-dimensional input ndarray.
+
+    Returns
+    -------
+    out: integer
+        Index.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1.0, 2.0, 3.0, 4.0 ], 'generic' );
+    > var y = {{alias:@stdlib/ndarray/vector/ctor}}( [ 0.0, 0.0, 3.0, 0.0 ], 'generic' );
+    > {{alias}}( [ x, y ] )
+    2
+
+    See Also
+    --------

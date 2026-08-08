@@ -74,10 +74,10 @@ declare function removeFirst( str: string, n: number, options?: Options ): strin
 * // returns 'ast man standing'
 *
 * @example
-* var out = removeFirst( '🐶🐮🐷🐰🐸', 2, {
+* var out = removeFirst( '🐶🐮🐷🐰🐸', {
 *     'mode': 'grapheme'
 * });
-* // returns '🐷🐰🐸'
+* // returns '🐮🐷🐰🐸'
 */
 declare function removeFirst( str: string, options?: Options ): string;
 

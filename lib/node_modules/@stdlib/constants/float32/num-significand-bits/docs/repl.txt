@@ -1,0 +1,12 @@
+
+{{alias}}
+    Number of significand bits for a single-precision floating-
+    point number.
+
+    Examples
+    --------
+    > {{alias}}
+    23
+
+    See Also
+    --------

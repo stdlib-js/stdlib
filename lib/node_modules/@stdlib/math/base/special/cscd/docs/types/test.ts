@@ -23,7 +23,7 @@ import cscd = require( './index' );
 
 // The function returns a number...
 {
-	cscd( 8 ); // $ExpectType number
+	cscd( 8.0 ); // $ExpectType number
 }
 
 // The compiler throws an error if the function is provided a value other than a number...

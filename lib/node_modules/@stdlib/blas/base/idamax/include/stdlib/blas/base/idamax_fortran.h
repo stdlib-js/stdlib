@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the Fortran interface to the BLAS Level 1 routine `idamax`.
 */
-#ifndef IDAMAX_FORTRAN_H
-#define IDAMAX_FORTRAN_H
+#ifndef STDLIB_BLAS_BASE_IDAMAX_FORTRAN_H
+#define STDLIB_BLAS_BASE_IDAMAX_FORTRAN_H
 
 /*
 * If C++, prevent name mangling so that the compiler emits a binary file having undecorated names, thus mirroring the behavior of a C compiler.
@@ -38,4 +38,4 @@ void idamaxsub( const int *, const double *, const int *, int * );
 }
 #endif
 
-#endif // !IDAMAX_FORTRAN_H
+#endif // !STDLIB_BLAS_BASE_IDAMAX_FORTRAN_H

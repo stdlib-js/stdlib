@@ -31,7 +31,7 @@ import { Collection } from '@stdlib/types/array';
 * @example
 * var arr = [ 1, 2, 3 ];
 *
-* var out = last( x );
+* var out = last( arr );
 * // returns 3
 */
 declare function last<T = unknown>( arr: Collection<T> ): T;

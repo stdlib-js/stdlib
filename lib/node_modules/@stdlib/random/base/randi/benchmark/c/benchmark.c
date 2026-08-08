@@ -17,7 +17,7 @@
 */
 
 #include "stdlib/random/base/randi.h"
-#include "stdlib/random/base.h"
+#include "stdlib/random/base/shared.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>

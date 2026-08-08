@@ -17,13 +17,13 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Float64Array
         Input array.
 
     strideX: integer
-        Index increment.
+        Stride length.
 
     Returns
     -------
@@ -37,7 +37,7 @@
     > {{alias}}( x.length, 5.0, x, 1 )
     16.0
 
-    // Using `N` and `stride` parameters:
+    // Using `N` and stride parameters:
     > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 1.0, -5.0, 2.0, -1.0 ] );
     > {{alias}}( 3, 5.0, x, 2 )
     16.0
@@ -64,13 +64,13 @@
         Number of indexed elements.
 
     alpha: number
-        Constant.
+        Scalar constant.
 
     x: Float64Array
         Input array.
 
     strideX: integer
-        Index increment.
+        Stride length.
 
     offsetX: integer
         Starting index.

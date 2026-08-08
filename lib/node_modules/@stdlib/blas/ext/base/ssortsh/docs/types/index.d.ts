@@ -28,7 +28,7 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - input array
-	* @param stride - stride length
+	* @param strideX - stride length
 	* @returns `x`
 	*
 	* @example
@@ -39,7 +39,7 @@ interface Routine {
 	* ssortsh( x.length, 1, x, 1 );
 	* // x => <Float32Array>[ -4.0, -2.0, 1.0, 3.0 ]
 	*/
-	( N: number, order: number, x: Float32Array, stride: number ): Float32Array;
+	( N: number, order: number, x: Float32Array, strideX: number ): Float32Array;
 
 	/**
 	* Sorts a single-precision floating-point strided array using Shellsort and alternative indexing semantics.
@@ -47,8 +47,8 @@ interface Routine {
 	* @param N - number of indexed elements
 	* @param order - sort order
 	* @param x - input array
-	* @param stride - stride length
-	* @param offset - starting index
+	* @param strideX - stride length
+	* @param offsetX - starting index
 	* @returns `x`
 	*
 	* @example
@@ -59,7 +59,7 @@ interface Routine {
 	* ssortsh.ndarray( x.length, 1, x, 1, 0 );
 	* // x => <Float32Array>[ -4.0, -2.0, 1.0, 3.0 ]
 	*/
-	ndarray( N: number, order: number, x: Float32Array, stride: number, offset: number ): Float32Array;
+	ndarray( N: number, order: number, x: Float32Array, strideX: number, offsetX: number ): Float32Array;
 }
 
 /**
@@ -68,7 +68,7 @@ interface Routine {
 * @param N - number of indexed elements
 * @param order - sort order
 * @param x - input array
-* @param stride - stride length
+* @param strideX - stride length
 * @returns `x`
 *
 * @example

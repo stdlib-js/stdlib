@@ -64,7 +64,7 @@ Retries a previous commit created using `make commit`.
 $ make retry-commit
 ```
 
-This is particularly useful a commit failed due to lint errors. An example workflow might proceed as follows:
+This is particularly useful if a commit failed due to lint errors. An example workflow might proceed as follows:
 
 <!-- run-disable -->
 

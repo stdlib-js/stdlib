@@ -19,5 +19,4 @@
 #include "stdlib/math/base/special/cabs2.h"
 #include "stdlib/math/base/napi/unary.h"
 
-// cppcheck-suppress shadowFunction
 STDLIB_MATH_BASE_NAPI_MODULE_Z_D( stdlib_base_cabs2 )
