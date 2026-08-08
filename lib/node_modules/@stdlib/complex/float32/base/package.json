@@ -58,5 +58,10 @@
     "ns",
     "float32",
     "base"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "alias_prefix": "stdlib_base_complex64_"
+    }
+  }
 }

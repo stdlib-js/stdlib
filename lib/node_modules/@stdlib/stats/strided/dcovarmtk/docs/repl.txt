@@ -1,5 +1,5 @@
 
-{{alias}}( N, correction, meanx, x, strideX, meany, y, strideY )
+{{alias}}( N, correction, meanx, x, sx, meany, y, sy )
     Computes the covariance of two double-precision floating-point strided
     arrays provided known means and using a one-pass textbook algorithm.
 
@@ -34,7 +34,7 @@
     x: Float64Array
         First input array.
 
-    strideX: integer
+    sx: integer
         Stride length of `x`.
 
     meany: number
@@ -43,7 +43,7 @@
     y: Float64Array
         Second input array.
 
-    strideY: integer
+    sy: integer
         Stride length of `y`.
 
     Returns

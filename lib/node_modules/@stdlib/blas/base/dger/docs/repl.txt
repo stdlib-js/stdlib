@@ -36,7 +36,7 @@
         Stride length for `y`.
 
     A: Float64Array
-        Input Matrix.
+        Input matrix.
 
     lda: integer
         Stride of the first dimension of `A` (a.k.a., leading dimension of the
@@ -45,7 +45,7 @@
     Returns
     -------
     A: Float64Array
-        Input Matrix.
+        Input matrix.
 
     Examples
     --------
@@ -113,7 +113,7 @@
         Starting index for `y`.
 
     A: Float64Array
-        Input Matrix.
+        Input matrix.
 
     sa1: integer
         Stride of the first dimension of `A`.
@@ -127,7 +127,7 @@
     Returns
     -------
     A: Float64Array
-        Input Matrix.
+        Input matrix.
 
     Examples
     --------

@@ -64,5 +64,77 @@
     "combinatorics",
     "gamma",
     "number"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "factorial",
+      "alias": "factorial",
+      "pkg_desc": "compute the factorial",
+      "desc": "computes the factorial",
+      "short_desc": "factorial",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": 0,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/discrete-uniform",
+            "parameters": [
+              0,
+              100
+            ]
+          },
+          "example_values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            21,
+            34,
+            99
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "factorial",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "factorial",
+        "fact"
+      ],
+      "extra_keywords": []
+    }
+  }
 }

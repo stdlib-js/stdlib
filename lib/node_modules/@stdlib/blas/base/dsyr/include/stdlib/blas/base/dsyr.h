@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 2 routine `dsyr`.
 */
-#ifndef DSYR_H
-#define DSYR_H
+#ifndef STDLIB_BLAS_BASE_DSYR_H
+#define STDLIB_BLAS_BASE_DSYR_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_dsyr_ndarray)( const CBLAS_UPLO uplo, const CBLAS_INT N, const
 }
 #endif
 
-#endif // !DSYR_H
+#endif // !STDLIB_BLAS_BASE_DSYR_H

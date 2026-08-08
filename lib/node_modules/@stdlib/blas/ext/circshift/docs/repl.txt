@@ -1,0 +1,50 @@
+
+{{alias}}( x, k[, options] )
+    Circularly shifts the elements of an input ndarray by a specified number
+    of positions along one or more ndarray dimensions.
+
+    When shifting elements along a single dimension, a positive `k` shifts
+    elements to the right (toward higher indices), and a negative `k` shifts
+    elements to the left (toward lower indices). If `k` is zero, the input
+    ndarray is left unchanged.
+
+    The function circularly shifts an input ndarray in-place and thus mutates
+    an input ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    k: ndarray|number
+        Number of positions to shift. May be either a scalar value or an ndarray
+        having a real-valued or "generic" data type. If provided an ndarray, the
+        value must have a shape which is broadcast compatible with the
+        complement of the shape defined by `options.dims`. For example, given
+        the input shape `[2, 3, 4]` and `options.dims=[0]`, an ndarray for `k`
+        must have a shape which is broadcast compatible with the shape `[3, 4]`.
+        Similarly, when performing the operation over all elements in a provided
+        input ndarray, an ndarray for `k` must be a zero-dimensional ndarray.
+
+    options: Object (optional)
+        Function options.
+
+    options.dims: Array<integer> (optional)
+        List of dimensions over which to perform operation. If not provided, the
+        function performs the operation over all elements in a provided input
+        ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Input array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
+    > var y = {{alias}}( x, 2 );
+    > {{alias:@stdlib/ndarray/to-array}}( y )
+    [ 4.0, 5.0, 1.0, 2.0, 3.0 ]
+
+    See Also
+    --------

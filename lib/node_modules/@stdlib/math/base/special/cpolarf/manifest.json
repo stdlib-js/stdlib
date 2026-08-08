@@ -1,0 +1,81 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/napi/argv",
+        "@stdlib/napi/argv-complex64",
+        "@stdlib/napi/argv-float32array",
+        "@stdlib/napi/export",
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/math/base/special/cphasef",
+        "@stdlib/math/base/special/cabsf"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/math/base/special/cphasef",
+        "@stdlib/math/base/special/cabsf"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/complex/float32/ctor",
+        "@stdlib/math/base/special/cphasef",
+        "@stdlib/math/base/special/cabsf"
+      ]
+    }
+  ]
+}

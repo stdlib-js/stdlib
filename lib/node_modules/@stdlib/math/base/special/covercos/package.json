@@ -73,5 +73,90 @@
     "trigonometry",
     "radians",
     "angle"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "covercos",
+      "alias": "covercos",
+      "pkg_desc": "compute the coversed cosine (in radians) of a double-precision floating-point number",
+      "desc": "computes the coversed cosine (in radians) of a double-precision floating-point number",
+      "short_desc": "coversed cosine",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in radians)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "double",
+            "dtype": "float64"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              -50,
+              50
+            ]
+          },
+          "example_values": [
+            -6.1,
+            -3.4,
+            -1.2,
+            -0.49,
+            -0.08,
+            0,
+            0.27,
+            0.95,
+            1.7,
+            2.3,
+            3.6,
+            -2.9,
+            4.8,
+            -5.7,
+            6.9,
+            -7.8,
+            8.4,
+            -9.6,
+            10.3,
+            -11.1
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "coversed cosine",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "double",
+          "dtype": "float64"
+        }
+      },
+      "keywords": [
+        "covercos",
+        "covercosin",
+        "covercosine",
+        "versed cosine",
+        "coversed",
+        "cosinus versus",
+        "covercosinus",
+        "cvc",
+        "versed",
+        "cosine",
+        "cos",
+        "sine",
+        "sin"
+      ],
+      "extra_keywords": [
+        "math.sin"
+      ]
+    }
+  }
 }
