@@ -38,6 +38,7 @@
 #include "stdlib/number/float32/base/to_word.h"
 #include "stdlib/constants/float32/abs_mask.h"
 #include "stdlib/constants/float32/exponent_mask.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double ZERO =  0.00000000000000000000e+00;       // 0x00000000, 0x00000000
@@ -421,7 +422,7 @@ int32_t stdlib_base_rempio2f( const float x, double *rem ) {
 	}
 	// Case: x is NaN or infinity
 	if( ix >= STDLIB_CONSTANT_FLOAT32_EXPONENT_MASK ) {
-		*rem = 0.0 / 0.0; // NaN
+		*rem = STDLIB_CONSTANT_FLOAT64_NAN;
 		return 0;
 	}
 	// Set z = scalbn(|x|, ilogb(|x|)-23)...
