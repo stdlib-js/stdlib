@@ -108,7 +108,7 @@ var onesLike = require( '@stdlib/array/ones-like' );
 var x = zeros( 4, 'complex128' );
 
 // Get a list of array data types:
-var dt = dtypes();
+var dt = dtypes( 'numeric_and_generic' );
 
 // Generate filled arrays...
 var y;
