@@ -38,7 +38,7 @@ interface Routine {
 	* var v = dssumors( x.length, x, 1 );
 	* // returns 1.0
 	*/
-	( N: number, x: Float32Array, stride: number ): number;
+	( N: number, x: Float32Array, strideX: number ): number;
 
 	/**
 	* Computes the sum of single-precision floating-point strided array elements using ordinary recursive summation with extended accumulation and alternative indexing semantics and returning an extended precision result.
@@ -57,7 +57,7 @@ interface Routine {
 	* var v = dssumors.ndarray( x.length, x, 1, 0 );
 	* // returns 1.0
 	*/
-	ndarray( N: number, x: Float32Array, stride: number, offset: number ): number;
+	ndarray( N: number, x: Float32Array, strideX: number, offsetX: number ): number;
 }
 
 /**

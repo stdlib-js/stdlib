@@ -148,7 +148,7 @@ Returns the mean of a Rayleigh distribution.
 
 ```c
 double out = stdlib_base_dists_rayleigh_mean( 9.0 );
-// returns ~11.253
+// returns ~11.28
 ```
 
 The function accepts the following arguments:

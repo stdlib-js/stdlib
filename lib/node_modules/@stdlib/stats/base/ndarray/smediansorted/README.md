@@ -41,11 +41,9 @@ var smediansorted = require( '@stdlib/stats/base/ndarray/smediansorted' );
 Computes the median value of a sorted one-dimensional single-precision floating-point ndarray.
 
 ```javascript
-var Float32Array = require( '@stdlib/array/float32' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 
-var xbuf = new Float32Array( [ 1.0, 2.0, 3.0 ] );
-var x = new ndarray( 'float32', xbuf, [ 3 ], [ 1 ], 0, 'row-major' );
+var x = new Float32Vector( [ 1.0, 2.0, 3.0 ] );
 
 var v = smediansorted( [ x ] );
 // returns 2.0
@@ -77,17 +75,13 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array/linspace' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var linspace = require( '@stdlib/blas/ext/linspace' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var smediansorted = require( '@stdlib/stats/base/ndarray/smediansorted' );
 
-// Create a linearly spaced sorted array:
-var xbuf = linspace( 0.0, 10.0, 11, {
+var x = linspace( [ 11 ], 0.0, 10.0, true, {
     'dtype': 'float32'
 });
-
-var x = new ndarray( 'float32', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
 console.log( ndarray2array( x ) );
 
 var v = smediansorted( [ x ] );

@@ -17,8 +17,8 @@
 */
 
 #include "stdlib/stats/base/dists/bernoulli/stdev.h"
-#include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/special/sqrt.h"
+#include "stdlib/stats/base/dists/bernoulli/variance.h"
 
 /**
 * Returns the standard deviation of a Bernoulli distribution.
@@ -31,12 +31,5 @@
 * // returns ~0.3
 */
 double stdlib_base_dists_bernoulli_stdev( const double p ) {
-	if (
-		stdlib_base_is_nan( p ) ||
-		p < 0.0 ||
-		p > 1.0
-	) {
-		return 0.0/0.0; // NaN
-	}
-	return stdlib_base_sqrt( ( 1.0-p ) * p );
+	return stdlib_base_sqrt( stdlib_base_dists_bernoulli_variance( p ) );
 }

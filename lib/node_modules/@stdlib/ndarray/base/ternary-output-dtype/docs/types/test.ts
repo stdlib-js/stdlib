@@ -23,7 +23,7 @@ import outputDataType = require( './index' );
 
 // The function returns a data type...
 {
-	outputDataType( 'float64', 'float32', 'real' ); // $ExpectType DataType
+	outputDataType( 'float64', 'float32', 'int32', 'real' ); // $ExpectType DataType
 }
 
 // The compiler throws an error if not provided a first argument which is a data type...

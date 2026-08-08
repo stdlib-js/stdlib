@@ -70,6 +70,9 @@
     "finite",
     "nonnegative",
     "isnonnegative",
-    "isfinite"
+    "isfinite",
+    "is",
+    "type",
+    "check"
   ]
 }
