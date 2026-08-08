@@ -17,6 +17,7 @@
 */
 
 #include "stdlib/math/base/special/kronecker_delta.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 
 /**
@@ -36,7 +37,7 @@
 */
 double stdlib_base_kronecker_delta( const double i, const double j ) {
 	if ( stdlib_base_is_nan( i ) || stdlib_base_is_nan( j ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( i == j ) {
 		return 1.0;

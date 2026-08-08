@@ -1,0 +1,33 @@
+
+{{alias}}( length[, dtype] )
+    Returns an array filled with nulls and having a specified length.
+
+    The function supports the following data types:
+
+    - generic: generic JavaScript values
+
+    The default array data type is `generic`.
+
+    Parameters
+    ----------
+    length: integer
+        Array length.
+
+    dtype: string (optional)
+        Data type. Default: 'generic'.
+
+    Returns
+    -------
+    out: Array
+        Output array.
+
+    Examples
+    --------
+    > var arr = {{alias}}( 2 )
+    [ null, null ]
+    > arr = {{alias}}( 2, 'generic' )
+    [ null, null ]
+
+    See Also
+    --------
+

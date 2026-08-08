@@ -42,13 +42,13 @@ Evaluates the [quantile function][quantile-function] for a [studentized range][s
 
 ```javascript
 var y = quantile( 0.5, 3.0, 2.0 );
-// returns ~0.0644
+// returns ~1.908
 
 y = quantile( 0.9, 17.0, 2.0 );
-// returns ~0.913
+// returns ~11.237
 
 y = quantile( 0.5, 3.0, 2.0, 2 );
-// returns ~0.01
+// returns ~2.549
 ```
 
 If provided a probability `p` outside the interval `[0,1]`, the function returns `NaN`.
@@ -86,13 +86,13 @@ y = quantile( 0.4, 3.0, 1.5 );
 Returns a function for evaluating the [quantile function][quantile-function] of an [studentized range][studentized-range] distribution with sample size `r` and `v` degrees of freedom. Optionally, the number of groups whose maximum range is considered can be specified via the `nranges` parameter.
 
 ```javascript
-var myquantile = quantile.factory( 4.0 );
+var myquantile = quantile.factory( 4.0, 3.0 );
 
 var y = myquantile( 0.2 );
-// returns ~-0.941
+// returns ~1.2977
 
 y = myquantile( 0.9 );
-// returns ~1.533
+// returns ~5.199
 ```
 
 </section>

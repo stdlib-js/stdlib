@@ -137,7 +137,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -155,7 +155,7 @@ jobs:
       # Install MSYS2:
       - name: 'Install MSYS2'
         # Pin action to full length commit SHA
-        uses: msys2/setup-msys2@fb197b72ce45fb24f17bf3f807a388985654d1f2 # v2.29.0
+        uses: msys2/setup-msys2@cafece8e6baf9247cf9b1bf95097b0b983cc558d # v2.31.0
         with:
           # Set the MSYS system:
           msystem: MINGW64
@@ -245,7 +245,7 @@ jobs:
       # Install Windows build tools for compiling Node.js native add-ons.
       - name: 'Install Windows build tools'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-chocolatey@2526f467ccbd337d307fe179959cabbeca0bc8c0 # v3.4.0
+        uses: crazy-max/ghaction-chocolatey@dff3862348493b11fba2fbc49147b6d2dfe09b66 # v4.0.0
         with:
           args: install -y visualstudio2019buildtools visualstudio2019-workload-vctools
         timeout-minutes: 10
@@ -273,7 +273,7 @@ jobs:
           TEST_NPM_INSTALL_GITHUB_URL: 'https://github.com/stdlib-js/stdlib'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
@@ -287,7 +287,7 @@ jobs:
       # Upload the log file:
       - name: 'Upload log file'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: always()
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
@@ -344,7 +344,7 @@ jobs:
       # Send notification to Zulip:
       - name: 'Send notification'
         # Pin action to full length commit SHA
-        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
+        uses: zulip/github-actions-zulip/send-message@bd8ec52de371d139ae8313661b7d8318c19266aa # v2.0.1
         if: success()
         with:
           api-key: ${{ secrets.ZULIP_API_KEY }}
