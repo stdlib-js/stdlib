@@ -113,8 +113,8 @@ static double benchmark( int iterations, int len ) {
 	double elapsed;
 	int64_t ndims;
 	float *data;
-	float v;
 	double t;
+	float v;
 	int i;
 
 	ndims = 1;

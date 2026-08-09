@@ -23,7 +23,7 @@
 import { AnyArray, Collection, Complex128Array, Complex64Array, BooleanArray } from '@stdlib/types/array';
 
 /**
-* Converts an array to the same data type as a `Float64Array`.
+* Converts an array to a `Float64Array`.
 *
 * @param x - array to convert
 * @param y - array having the desired output data type

@@ -1,0 +1,64 @@
+
+{{alias}}( a )
+    Splits a 64-bit unsigned integer into a higher order word (32-bit unsigned
+    integer) and a lower order word (32-bit unsigned integer).
+
+    The function returns an array with two elements: a higher order word and a
+    lower order word, respectively. The lower order word contains the less
+    significant bits, while the higher order word contains the more significant
+    bits.
+
+    Parameters
+    ----------
+    a: Uint64
+        64-bit unsigned integer.
+
+    Returns
+    -------
+    out: Array<uinteger>
+        Higher and lower order words.
+
+    Examples
+    --------
+    > var a = new {{alias:@stdlib/number/uint64/ctor}}( 10000000000 )
+    <Uint64>[ 10000000000n ]
+    > var w = {{alias}}( a )
+    [ 2, 1410065408 ]
+
+
+{{alias}}.assign( a, out, stride, offset )
+    Splits a 64-bit unsigned integer into a higher order word (32-bit unsigned
+    integer) and a lower order word (32-bit unsigned integer) and assigns
+    results to a provided output array.
+
+    Parameters
+    ----------
+    a: Uint64
+        64-bit unsigned integer.
+
+    out: Array|TypedArray|Object
+        Output array.
+
+    stride: integer
+        Output array stride.
+
+    offset: integer
+        Output array index offset.
+
+    Returns
+    -------
+    out: Array|TypedArray|Object
+        Higher and lower order words.
+
+    Examples
+    --------
+    > var a = new {{alias:@stdlib/number/uint64/ctor}}( 10000000000 )
+    <Uint64>[ 10000000000n ]
+    > var out = new {{alias:@stdlib/array/uint32}}( 2 );
+    > var w = {{alias}}.assign( a, out, 1, 0 )
+    <Uint32Array>[ 2, 1410065408 ]
+    > var bool = ( w === out )
+    true
+
+    See Also
+    --------

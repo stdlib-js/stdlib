@@ -44,8 +44,8 @@
         "@stdlib/math/base/special/trunc",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
-        "@stdlib/math/base/special/fmod"
-
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -66,7 +66,8 @@
         "@stdlib/math/base/special/trunc",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
-        "@stdlib/math/base/special/fmod"
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -87,7 +88,8 @@
         "@stdlib/math/base/special/trunc",
         "@stdlib/math/base/assert/is-nan",
         "@stdlib/math/base/assert/is-infinite",
-        "@stdlib/math/base/special/fmod"
+        "@stdlib/math/base/special/fmod",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]
