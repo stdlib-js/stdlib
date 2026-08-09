@@ -174,6 +174,7 @@ int64_t stdlib_base_int64_identity( const int64_t x );
 #include "stdlib/number/int64/base/identity.h"
 #include <stdio.h>
 #include <stdint.h>
+#include <inttypes.h>
 
 int main( void ) {
     const int64_t x[] = { 3, 5, 10, 4294967296 };
@@ -182,7 +183,7 @@ int main( void ) {
     int i;
     for ( i = 0; i < 4; i++ ) {
         y = stdlib_base_int64_identity( x[ i ] );
-        printf( "f(%ld) = %ld\n", x[ i ], y );
+        printf( "f(%" PRId64 ") = %" PRId64 "\n", x[ i ], y );
     }
 }
 ```
