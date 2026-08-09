@@ -210,10 +210,10 @@ static double complex scale( const double complex x ) {
     return ( re+10.0 ) + ( im+10.0 )*I;
 }
 
-double complex X[] = { 1.0+1.0*I, 2.0+2.0*I, 3.0+3.0*I, 4.0+4.0*I, 5.0+5.0*I, 6.0+6.0*I };
+const double complex X[] = { 1.0+1.0*I, 2.0+2.0*I, 3.0+3.0*I, 4.0+4.0*I, 5.0+5.0*I, 6.0+6.0*I };
 double complex Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
-int64_t N = 6;
+const int64_t N = 6;
 
 stdlib_strided_zmap( N, X, 1, Y, 1, scale );
 ```
@@ -265,17 +265,17 @@ static double complex scale( const double complex x ) {
 
 int main( void ) {
     // Create an input strided array:
-    double complex X[] = { 1.0+1.0*I, 2.0+2.0*I, 3.0+3.0*I, 4.0+4.0*I, 5.0+5.0*I, 6.0+6.0*I };
+    const double complex X[] = { 1.0+1.0*I, 2.0+2.0*I, 3.0+3.0*I, 4.0+4.0*I, 5.0+5.0*I, 6.0+6.0*I };
 
     // Create an output strided array:
     double complex Y[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
     // Specify the number of elements:
-    int64_t N = 6;
+    const int64_t N = 6;
 
     // Define the strides:
-    int64_t strideX = 1;
-    int64_t strideY = -1;
+    const int64_t strideX = 1;
+    const int64_t strideY = -1;
 
     // Apply the callback:
     stdlib_strided_zmap( N, X, strideX, Y, strideY, scale );
