@@ -38,6 +38,10 @@ import { IterableIterator } from '@stdlib/types/iter';
 * @example
 * var arr = filledarray( 'float32' );
 * // returns <Float32Array>
+*
+* @example
+* var arr = filledarray( 'float16' );
+* // returns <Float16Array>
 */
 declare function filledarray<T = any, U extends keyof DataTypeMap<T> = 'float64'>( dtype?: U ): DataTypeMap<any>[U];
 
@@ -56,6 +60,10 @@ declare function filledarray<T = any, U extends keyof DataTypeMap<T> = 'float64'
 * @example
 * var arr = filledarray( 1.0, 5, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
+*
+* @example
+* var arr = filledarray( 1.0, 5, 'float16' );
+* // returns <Float16Array>[ 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
 declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, length: number, dtype?: U ): DataTypeMap<T>[U];
 
@@ -74,6 +82,10 @@ declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( val
 * @example
 * var arr = filledarray( 1.0, [ 5.0, -3.0, 2.0 ], 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0 ]
+*
+* @example
+* var arr = filledarray( 1.0, [ 5.0, -3.0, 2.0 ], 'float16' );
+* // returns <Float16Array>[ 1.0, 1.0, 1.0 ]
 */
 declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, array: Collection, dtype?: U ): DataTypeMap<T>[U];
 
@@ -102,6 +114,15 @@ declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( val
 * });
 * var arr = filledarray( 1.0, it, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0 ]
+*
+* @example
+* var iterConstant = require( '@stdlib/iter/constant' );
+*
+* var it = iterConstant( 3.0, {
+*     'iter': 3
+* });
+* var arr = filledarray( 1.0, it, 'float16' );
+* // returns <Float16Array>[ 1.0, 1.0, 1.0 ]
 */
 declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, iterable: IterableIterator, dtype?: U ): DataTypeMap<T>[U];
 
@@ -132,6 +153,13 @@ declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( val
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf, 8, 2, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0 ]
+*
+* @example
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
+*
+* var buf = new ArrayBuffer( 32 );
+* var arr = filledarray( 1.0, buf, 8, 2, 'float16' );
+* // returns <Float16Array>[ 1.0, 1.0 ]
 */
 declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, buffer: ArrayBuffer, byteOffset: number, length: number, dtype?: U ): DataTypeMap<T>[U];
 
@@ -161,6 +189,13 @@ declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( val
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf, 8, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+*
+* @example
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
+*
+* var buf = new ArrayBuffer( 32 );
+* var arr = filledarray( 1.0, buf, 8, 'float16' );
+* // returns <Float16Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
 declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, buffer: ArrayBuffer, byteOffset: number, dtype?: U ): DataTypeMap<T>[U];
 
@@ -189,6 +224,13 @@ declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( val
 * var buf = new ArrayBuffer( 32 );
 * var arr = filledarray( 1.0, buf, 'float32' );
 * // returns <Float32Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
+*
+* @example
+* var ArrayBuffer = require( '@stdlib/array/buffer' );
+*
+* var buf = new ArrayBuffer( 16 );
+* var arr = filledarray( 1.0, buf, 'float16' );
+* // returns <Float16Array>[ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ]
 */
 declare function filledarray<T, U extends keyof DataTypeMap<T> = 'float64'>( value: T, buffer: ArrayBuffer, dtype?: U ): DataTypeMap<T>[U];
 

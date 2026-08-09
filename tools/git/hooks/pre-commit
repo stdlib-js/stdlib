@@ -50,6 +50,9 @@ skip_editorconfig="${SKIP_LINT_EDITORCONFIG}"
 # Determine root directory:
 root=$(git rev-parse --show-toplevel)
 
+# Resolve the location of the Git directory:
+git_dir=$(git rev-parse --absolute-git-dir)
+
 # Define the path to a utility for linting filenames:
 lint_filenames="${root}/lib/node_modules/@stdlib/_tools/lint/filenames/bin/cli"
 
@@ -81,7 +84,7 @@ cppcheck_tests_fixtures_suppressions_list="${root}/etc/cppcheck/suppressions.tes
 cppcheck_benchmarks_suppressions_list="${root}/etc/cppcheck/suppressions.benchmarks.txt"
 
 # Define the path to a directory for caching hook results:
-cache_dir="${root}/.git/hooks-cache"
+cache_dir="${git_dir}/hooks-cache"
 
 # Define the path to a file for storing hook results:
 cache_file="${cache_dir}/pre_commit_report.yml"
@@ -216,10 +219,48 @@ run_lint() {
 	else
 		task_status 'skipped'
 	fi
-	# Lint Markdown files...
+	# Lint package README Markdown files...
+	add_task 'lint_markdown_pkg_readmes'
+	if [[ -z "${skip_markdown}" ]]; then
+		files=$(echo "${changed_files}" | grep '^lib/node_modules/@stdlib/.*/README\.md$' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			make FILES="${files}" lint-markdown-package-readme-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
+				echo '' >&2
+				echo 'Markdown lint errors for package README files.' >&2
+				return 1
+			fi
+			task_status 'passed'
+		else
+			task_status 'na'
+		fi
+	else
+		task_status 'skipped'
+	fi
+	# Lint docs Markdown files...
+	add_task 'lint_markdown_docs'
+	if [[ -z "${skip_markdown}" ]]; then
+		files=$(echo "${changed_files}" | grep '\.md$' | grep '^docs/' | tr '\n' ' ')
+		if [[ -n "${files}" ]]; then
+			make FILES="${files}" lint-markdown-docs-files > /dev/null >&2
+			if [[ "$?" -ne 0 ]]; then
+				task_status 'failed'
+				echo '' >&2
+				echo 'Markdown lint errors for docs files.' >&2
+				return 1
+			fi
+			task_status 'passed'
+		else
+			task_status 'na'
+		fi
+	else
+		task_status 'skipped'
+	fi
+	# Lint other Markdown files...
 	add_task 'lint_markdown'
 	if [[ -z "${skip_markdown}" ]]; then
-		files=$(echo "${changed_files}" | grep '\.md$' | grep -v '\.github/workflows/.*\.md$' | tr '\n' ' ')
+		files=$(echo "${changed_files}" | grep '\.md$' | grep -v '\.github/workflows/.*\.md$' | grep -v 'lib/node_modules/@stdlib/.*/README\.md$' | grep -v '^docs/' | tr '\n' ' ')
 		if [[ -n "${files}" ]]; then
 			make FILES="${files}" lint-markdown-files > /dev/null >&2
 			if [[ "$?" -ne 0 ]]; then

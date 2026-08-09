@@ -110,7 +110,7 @@ main() {
 	changed=$(echo "${changed}" | tr ' ' '\n' | grep '^lib/node_modules/@stdlib') || true
 
 	# Find unique package directories:
-	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?$//' | uniq)
+	directories=$(echo "${changed}" | tr ' ' '\n' | sed -E 's/\/(benchmark|bin|data|docs|etc|examples|include|lib|scripts|src|test)(\/.*)?$//' | sort -u)
 
 	if [ -z "${directories}" ]; then
 		echo 'No packages to test.' >&2
@@ -140,6 +140,9 @@ main() {
 	if [ -n "${required_by}" ]; then
 		directories="${directories} ${required_by}"
 	fi
+
+	# Deduplicate the merged list of directories:
+	directories=$(echo "${directories}" | tr ' ' '\n' | sort -u)
 
 	# Build native add-ons for packages (if applicable):
 	for pkg in ${packages}; do

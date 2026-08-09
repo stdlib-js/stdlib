@@ -1,0 +1,27 @@
+
+{{alias}}( x )
+    Evaluates the identity function for a 64-bit signed integer `x`.
+
+    Parameters
+    ----------
+    x: Int64
+        Input value.
+
+    Returns
+    -------
+    y: Int64
+        Input value.
+
+    Examples
+    --------
+    > var y = {{alias}}( new {{alias:@stdlib/number/int64/ctor}}( 1 ) )
+    <Int64>[ 1n ]
+    > y = {{alias}}( new {{alias:@stdlib/number/int64/ctor}}( 0 ) )
+    <Int64>[ 0n ]
+    > y = {{alias}}( new {{alias:@stdlib/number/int64/ctor}}( 4294967296 ) )
+    <Int64>[ 4294967296n ]
+    > y = {{alias}}( new {{alias:@stdlib/number/int64/ctor}}( -1000000000000 ) )
+    <Int64>[ -1000000000000n ]
+
+    See Also
+    --------
