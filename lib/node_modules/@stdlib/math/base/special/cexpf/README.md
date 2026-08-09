@@ -32,6 +32,11 @@ The [exponential][exponential-function] function of a complex number is defined 
 \mathop{\mathrm{exp}}(z) = e^{x + i y} = (\exp{x}) (\cos(y) + i \sin(y))
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{exp}(z) = e^{x + i y} = (\exp{x}) (\cos(y) + i \sin(y))" data-equation="eq:cexp_function">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@daa533d7aef38c7299c0b128584643a952f5b5fa/lib/node_modules/@stdlib/math/base/special/cexpf/docs/img/equation_cexp_function.svg" alt="Complex exponential function">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
