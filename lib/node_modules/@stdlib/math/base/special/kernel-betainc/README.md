@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Kernel Betainc
+# kernelBetainc
 
 > [Incomplete beta function][incomplete-beta-function] and its first derivative.
 
@@ -134,6 +134,111 @@ for ( i = 0; i < 100; i++ ) {
 </section>
 
 <!-- /.examples -->
+
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/kernel_betainc.h"
+```
+
+#### stdlib_base_kernel_betainc( x, a, b, regularized, upper, &out, &derivative )
+
+Evaluates the incomplete beta function and its first derivative.
+
+```c
+double out;
+double derivative;
+
+stdlib_base_kernel_betainc( 0.2, 1.0, 2.0, true, false, &out, &derivative );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` function input.
+-   **a**: `[in] double` function parameter.
+-   **b**: `[in] double` function parameter.
+-   **regularized**: `[in] bool` indicating if the function should evaluate the regularized incomplete beta function.
+-   **upper**: `[in] bool` indicating if the function should return the upper tail of the incomplete beta function.
+-   **out**: `[out] double*` destination pointer to store the function value.
+-   **derivative**: `[out] double*` destination pointer to store the first derivative.
+
+```c
+void stdlib_base_kernel_betainc( double x, double a, double b, const bool regularized, const bool upper, double *out, double *derivative );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/kernel_betainc.h"
+#include "stdlib/random/base/randu.h"
+#include <stdio.h>
+#include <stdint.h>
+#include <stdbool.h>
+
+int main( void ) {
+    struct BasePRNGObject *obj = stdlib_base_random_randu_allocate( 0 );
+    double deriv;
+    double out;
+    int32_t i;
+    double x;
+    double a;
+    double b;
+
+    for ( i = 0; i < 100; i++ ) {
+        x = stdlib_base_random_randu( obj );
+        a = stdlib_base_random_randu( obj ) * 10.0;
+        b = stdlib_base_random_randu( obj ) * 10.0;
+        stdlib_base_kernel_betainc( x, a, b, true, false, &out, &deriv );
+        printf( "x: %lf, a: %lf, b: %lf, f(x,a,b): %lf, f^1(x,a,b): %lf\n", x, a, b, out, deriv );
+    }
+
+    stdlib_base_random_randu_free( obj );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 

@@ -41,14 +41,14 @@ type Nullary = () => void;
 /**
 * Callback invoked upon completion.
 *
-* @param error - encountered error
+* @param error - encountered error or null
 */
-type Unary = ( error: Error ) => void;
+type Unary = ( error: Error | null ) => void;
 
 /**
 * Callback invoked upon completion.
 *
-* @param error - encountered error
+* @param error - encountered error or null
 * @param out - output results
 */
 type Binary<T> = ( error: Error | null, out: Array<T> ) => void;
@@ -157,7 +157,6 @@ interface Parallel {
 	* @param options - function options
 	* @param options.thisArg - function context
 	* @param options.limit - number of functions to execute concurrently
-	* @param clbk - callback to invoke upon completion
 	* @returns parallel function
 	*
 	* @example

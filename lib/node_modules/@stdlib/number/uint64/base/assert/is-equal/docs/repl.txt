@@ -1,0 +1,27 @@
+
+{{alias}}( a, b )
+    Tests whether two 64-bit unsigned integers are equal.
+
+    Parameters
+    ----------
+    a: Uint64
+        First 64-bit unsigned integer.
+
+    b: Uint64
+        Second 64-bit unsigned integer.
+
+    Returns
+    -------
+    out: boolean
+        Result.
+
+    Examples
+    --------
+    > var a = new {{alias:@stdlib/number/uint64/ctor}}( 1234 );
+    > var b = {{alias:@stdlib/number/uint64/ctor}}.of( 0, 1234 );
+    > var v = {{alias}}( a, b )
+    true
+
+    See Also
+    --------
+

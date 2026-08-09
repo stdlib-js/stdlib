@@ -38,7 +38,8 @@
       "dependencies": [
         "@stdlib/math/base/napi/binary",
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/min"
+        "@stdlib/math/base/special/min",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -53,7 +54,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/min"
+        "@stdlib/math/base/special/min",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -68,7 +70,8 @@
       "libpath": [],
       "dependencies": [
         "@stdlib/math/base/assert/is-nan",
-        "@stdlib/math/base/special/min"
+        "@stdlib/math/base/special/min",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]
