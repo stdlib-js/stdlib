@@ -129,6 +129,13 @@ eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 eslint.rules[ 'stdlib/jsdoc-doctest' ] = 'off';
 
 /**
+* When testing, allow requiring the package as a whole even though only a single property is used.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/no-single-property-require' ] = 'off';
+
+/**
 * Do not enforce nested function elevation.
 *
 * @private
