@@ -192,7 +192,7 @@ for ( i = 0; i < 100; i++ ) {
 Evaluates the cumulative distribution function (CDF) for a Fréchet distribution with shape `alpha`, scale `s`, and location `m` at a value `x`.
 
 ```c
-double y = stdlib_base_frechet_cdf( 10.0, 2.0, 3.0, 2.0 );
+double y = stdlib_base_dists_frechet_cdf( 10.0, 2.0, 3.0, 2.0 );
 // returns ~0.869
 ```
 

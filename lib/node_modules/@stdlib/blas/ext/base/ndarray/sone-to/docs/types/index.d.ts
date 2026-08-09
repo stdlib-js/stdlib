@@ -25,15 +25,19 @@ import { float32ndarray } from '@stdlib/types/ndarray';
 /**
 * Fills a one-dimensional single-precision floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from one.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns input ndarray
 *
 * @example
-* var Float32Array = require( '@stdlib/array/float32' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 *
-* var xbuf = new Float32Array( [ 0.0, 0.0, 0.0, 0.0 ] );
-* var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = new Float32Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 * // returns <ndarray>[ 0.0, 0.0, 0.0, 0.0 ]
 *
 * var out = soneTo( [ x ] );

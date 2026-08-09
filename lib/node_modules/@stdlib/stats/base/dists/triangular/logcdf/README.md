@@ -20,7 +20,7 @@ limitations under the License.
 
 # Logarithm of Cumulative Distribution Function
 
-> [Triangular][triangular-distribution] distribution logarithm of [cumulative distribution function][cdf].
+> [Triangular][triangular-distribution] distribution natural logarithm of [cumulative distribution function][cdf].
 
 <section class="intro">
 

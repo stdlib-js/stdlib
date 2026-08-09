@@ -256,6 +256,46 @@ def main():
     # Outliers:
     gen_outliers("outliers.json")
 
+    # Edge Cases #5
+    # d = c - a - b is a negative integer, x > 0.85, a and b are positive integers.
+    pts = [
+        (1.5, 2.5, 3.0, 0.90),
+        (1.5, 2.5, 3.0, 0.95),
+        (2.5, 1.5, 3.0, 0.90),
+        (0.5, 2.5, 2.0, 0.92),
+        (1.5, 2.5, 2.0, 0.91),
+        (0.5, 1.5, 1.0, 0.90),
+        (2.0, 3.0, 4.0, 0.90),
+        (1.5, 3.5, 4.0, 0.88),
+        (2.5, 2.5, 4.0, 0.93),
+        (1.5, 3.5, 3.0, 0.91),
+    ]
+    a, b, c, x = zip(*pts)
+    a = np.array(a)
+    b = np.array(b)
+    c = np.array(c)
+    x = np.array(x)
+    gen(a, b, c, x, "edge_cases5.json")
+
+    # Edge Cases #6
+    # b = c is a negative integer: 2F1(a, b; b; x) -> finite polynomial sum.
+    pts = [
+        (2.0, -1.0, -1.0, 0.5),
+        (2.0, -2.0, -2.0, 0.5),
+        (3.0, -2.0, -2.0, 0.3),
+        (0.5, -3.0, -3.0, 0.7),
+        (1.5, -3.0, -3.0, -0.5),
+        (2.0, -4.0, -4.0, 0.6),
+        (4.0, -2.0, -2.0, 0.8),
+        (0.5, -1.0, -1.0, -0.9),
+    ]
+    a, b, c, x = zip(*pts)
+    a = np.array(a)
+    b = np.array(b)
+    c = np.array(c)
+    x = np.array(x)
+    gen(a, b, c, x, "edge_cases6.json")
+
 
 if __name__ == "__main__":
     main()
