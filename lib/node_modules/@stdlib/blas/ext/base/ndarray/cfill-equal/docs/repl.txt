@@ -1,0 +1,42 @@
+
+{{alias}}( arrays )
+    Replaces elements in a one-dimensional single-precision complex floating-
+    point ndarray equal to a provided search element with a specified scalar
+    constant.
+
+    The input ndarray is modified *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    When comparing elements, the function checks for equality of real and
+    imaginary components using the strict equality operator `===`. As a
+    consequence, `NaN` components are considered distinct (i.e., as
+    `NaN === NaN` always evaluates to `false`, elements having one or more
+    `NaN` components are never replaced), and `-0` and `+0` are considered the
+    same.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing the search element.
+        - a zero-dimensional ndarray containing the scalar constant.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var x = new {{alias:@stdlib/ndarray/vector/complex64}}( [ 0.0, 0.0, -2.0, 3.0 ] );
+    > var s = new {{alias:@stdlib/complex/float32/ctor}}( 0.0, 0.0 );
+    > var v = {{alias:@stdlib/ndarray/from-scalar}}( s, { 'dtype': 'complex64' } );
+    > var a = new {{alias:@stdlib/complex/float32/ctor}}( 5.0, 5.0 );
+    > var alpha = {{alias:@stdlib/ndarray/from-scalar}}( a, { 'dtype': 'complex64' } );
+    > {{alias}}( [ x, v, alpha ] )
+    <ndarray>[ <Complex64>[ 5.0, 5.0 ], <Complex64>[ -2.0, 3.0 ] ]
+
+    See Also
+    --------
