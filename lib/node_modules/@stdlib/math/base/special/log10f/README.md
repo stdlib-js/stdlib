@@ -32,6 +32,11 @@ The [common logarithm][common-logarithm] (logarithm with base 10) is defined for
 \quad \log_{10} \left( x \right) = y \quad \text{such that} \quad 10^y = x
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\quad \log_{10} \left( x \right) = y \quad \text{such that} \quad 10^y = x" data-equation="eq:common_logarithm">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ffd6ded5947d911657cac30a4548743bc210d2a5/lib/node_modules/@stdlib/math/base/special/log10f/docs/img/equation_common_logarithm.svg" alt="Equation for the common logarithm.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>

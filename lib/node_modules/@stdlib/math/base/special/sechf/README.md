@@ -32,6 +32,11 @@ The [hyperbolic secant][hyperbolic-functions] is defined as
 \mathop{\mathrm{sech}}(x) = \frac{1}{\cosh(x)} = \frac{2}{e^x + e^{-x}}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{sech}(x) = \frac{1}{\cosh(x)} = \frac{2}{e^x + e^{-x}}" data-equation="eq:hyperbolic_secant">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ffd6ded5947d911657cac30a4548743bc210d2a5/lib/node_modules/@stdlib/math/base/special/sechf/docs/img/equation_hyperbolic_secant.svg" alt="Hyperbolic secant">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
