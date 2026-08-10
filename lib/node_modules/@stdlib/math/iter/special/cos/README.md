@@ -94,11 +94,11 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/iter/randu' );
+var uniform = require( '@stdlib/random/iter/uniform' );
 var iterCos = require( '@stdlib/math/iter/special/cos' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
-var rand = randu({
+var rand = uniform( 0.0, 6.28, {
     'seed': 1234,
     'iter': 10
 });

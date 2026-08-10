@@ -41,7 +41,7 @@ import transpose = require( './index' );
 	transpose( zeros( 'generic', sh, ord ), false ); // $ExpectType genericndarray<number>
 }
 
-// The compiler throws an error if the function is provided a first argument which is not an ndarray having a recognized/supported data type...
+// The compiler throws an error if the function is provided a first argument which is not an ndarray...
 {
 	transpose( '10', false ); // $ExpectError
 	transpose( 10, false ); // $ExpectError
