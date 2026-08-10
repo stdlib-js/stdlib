@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { Complex128Array, Complex64Array, BooleanArray, AnyArray, DataType } from '@stdlib/types/array';
+import { Complex128Array, Complex64Array, Float16Array, BooleanArray, AnyArray, DataType } from '@stdlib/types/array';
 import { ComplexLike } from '@stdlib/types/complex';
 
 /**
@@ -60,6 +60,25 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'float64' ): Float
 * // returns <Float32Array>[ 1.0, 1.0 ]
 */
 declare function fullLike( x: AnyArray, value: number, dtype: 'float32' ): Float32Array;
+
+/**
+* Creates a filled array having the same length as a provided input array.
+*
+* @param x - input array from which to derive the output array length
+* @param value - fill value
+* @param dtype - data type
+* @returns filled array
+*
+* @example
+* var zeros = require( '@stdlib/array/zeros' );
+*
+* var x = zeros( 2, 'float64' );
+* // returns <Float64Array>[ 0.0, 0.0 ]
+*
+* var y = fullLike( x, 1.0, 'float16' );
+* // returns <Float16Array>[ 1.0, 1.0 ]
+*/
+declare function fullLike( x: AnyArray, value: number, dtype: 'float16' ): Float16Array;
 
 /**
 * Creates a filled array having the same length as a provided input array.
@@ -315,6 +334,25 @@ declare function fullLike( x: Float64Array, value: number, dtype?: DataType ): F
 * // returns <Float32Array>[ 1.0, 1.0 ]
 */
 declare function fullLike( x: Float32Array, value: number, dtype?: DataType ): Float32Array;
+
+/**
+* Creates a filled array having the same length and data type as a provided input array.
+*
+* @param x - input array from which to derive the output array length
+* @param value - fill value
+* @param dtype - data type
+* @returns filled array
+*
+* @example
+* var zeros = require( '@stdlib/array/zeros' );
+*
+* var x = zeros( 2, 'float16' );
+* // returns <Float16Array>[ 0.0, 0.0 ]
+*
+* var y = fullLike( x, 1.0 );
+* // returns <Float16Array>[ 1.0, 1.0 ]
+*/
+declare function fullLike( x: Float16Array, value: number, dtype?: DataType ): Float16Array;
 
 /**
 * Creates a filled array having the same length and data type as a provided input array.
