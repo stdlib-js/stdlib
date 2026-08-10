@@ -1,0 +1,42 @@
+
+{{alias}}( arrays )
+    Performs an in-place copy of elements within a one-dimensional double-
+    precision complex floating-point ndarray.
+
+    The input ndarray is copied *in-place* (i.e., the input ndarray is
+    *mutated*).
+
+    If the `start` and `target` index ranges do not overlap, the `workspace`
+    ndarray is unused and thus ignored.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray specifying a target index.
+        - a zero-dimensional ndarray specifying a source start index
+        (inclusive).
+        - a zero-dimensional ndarray specifying a source end index
+        (exclusive).
+        - a one-dimensional workspace ndarray.
+
+    Returns
+    -------
+    out: ndarray
+        Input ndarray.
+
+    Examples
+    --------
+    > var xbuf = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+    > var x = new {{alias:@stdlib/ndarray/vector/complex128}}( xbuf );
+    > var t = {{alias:@stdlib/ndarray/from-scalar}}( 1, { 'dtype': 'generic' } );
+    > var s = {{alias:@stdlib/ndarray/from-scalar}}( 0, { 'dtype': 'generic' } );
+    > var e = {{alias:@stdlib/ndarray/from-scalar}}( 2, { 'dtype': 'generic' } );
+    > var w = {{alias:@stdlib/ndarray/zeros}}( [ 3 ], { 'dtype': 'complex128' } );
+    > {{alias}}( [ x, t, s, e, w ] )
+    <ndarray>[ <Complex128>[ 1,2 ], <Complex128>[ 1,2 ], <Complex128>[ 3,4 ] ]
+
+    See Also
+    --------
