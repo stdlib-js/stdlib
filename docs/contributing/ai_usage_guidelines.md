@@ -18,7 +18,6 @@ limitations under the License.
 
 -->
 
-
 # Guidelines for Using AI in stdlib Contributions
 
 > Guidelines for using AI tools when contributing to the stdlib project.
