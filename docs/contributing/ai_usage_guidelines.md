@@ -23,6 +23,7 @@ limitations under the License.
 > Guidelines for using AI tools when contributing to the stdlib project.
 
 As described in the our [contributing guidelines][contributing-guide] and [code of conduct][code-of-conduct], the stdlib community values respectful, authentic, empathic engagement across all channels.
+
 Artificial Intelligence (AI) and Large Language Models (LLMs) tools are rapidly evolving, and this _living document_ provides guidance on the appropriate use of such tools when contributing to stdlib.
 
 ## Key Principles
