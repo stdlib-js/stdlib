@@ -358,7 +358,7 @@ logEach( '%f', x4 );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/random/betaprime`][@stdlib/random/betaprime]</span><span class="delimiter">: </span><span class="description">generate pseudorandom numbers drawn from a betaprime distribution.</span>
+-   <span class="package-name">[`@stdlib/random/betaprime`][@stdlib/random/betaprime]</span><span class="delimiter">: </span><span class="description">generate pseudorandom numbers drawn from a beta prime distribution.</span>
 -   <span class="package-name">[`@stdlib/random/base/betaprime`][@stdlib/random/base/betaprime]</span><span class="delimiter">: </span><span class="description">beta prime distributed pseudorandom numbers.</span>
 -   <span class="package-name">[`@stdlib/random/strided/betaprime`][@stdlib/random/strided/betaprime]</span><span class="delimiter">: </span><span class="description">fill a strided array with pseudorandom numbers drawn from a beta prime distribution.</span>
 

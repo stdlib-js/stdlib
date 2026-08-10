@@ -97,17 +97,18 @@ jobs:
 
       # Log the results:
       - name: 'Log results'
-        env:
-          FAILURES: ${{ steps.results.outputs.failures }}
-          WARNINGS: ${{ steps.results.outputs.warnings }}
         run: |
-          echo "$FAILURES" >> "${{ env.LOG_FILE_FAILURES }}"
-          echo "$WARNINGS" >> "${{ env.LOG_FILE_WARNINGS }}"
+          cat >> "${{ env.LOG_FILE_FAILURES }}" <<'STDLIB_FAILURES_EOF'
+          ${{ steps.results.outputs.failures }}
+          STDLIB_FAILURES_EOF
+          cat >> "${{ env.LOG_FILE_WARNINGS }}" <<'STDLIB_WARNINGS_EOF'
+          ${{ steps.results.outputs.warnings }}
+          STDLIB_WARNINGS_EOF
         timeout-minutes: 2
 
       # Fail the workflow if the status is not "success":
       - name: 'Check status'
-        if: ${{ steps.results.outputs.status }} != 'success'
+        if: ${{ steps.results.outputs.status != 'success' }}
         run: |
           exit 1
 
