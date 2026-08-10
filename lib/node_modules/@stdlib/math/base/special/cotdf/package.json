@@ -64,5 +64,86 @@
     "tangent",
     "trig",
     "trigonometry"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "$schema": "math/base@v1.0",
+      "base_alias": "cotd",
+      "alias": "cotdf",
+      "pkg_desc": "evaluate the cotangent of a single-precision floating-point number (in degrees)",
+      "desc": "evaluates the cotangent of a single-precision floating-point number (in degrees)",
+      "short_desc": "cotangent",
+      "parameters": [
+        {
+          "name": "x",
+          "desc": "input value (in degrees)",
+          "type": {
+            "javascript": "number",
+            "jsdoc": "number",
+            "c": "float",
+            "dtype": "float32"
+          },
+          "domain": [
+            {
+              "min": "-infinity",
+              "max": -1.4e-45
+            },
+            {
+              "min": 1.4e-45,
+              "max": "infinity"
+            }
+          ],
+          "rand": {
+            "prng": "random/base/uniform",
+            "parameters": [
+              0.5,
+              180
+            ]
+          },
+          "example_values": [
+            41.7,
+            -149.3,
+            -24.4,
+            0.7,
+            -176.9,
+            -127.6,
+            88.4,
+            -53.3,
+            -161.4,
+            -97.2,
+            -179.6,
+            -145.3,
+            -9.8,
+            -168.2,
+            -118.3,
+            -66.9,
+            -173.2,
+            -109.7,
+            -137.9,
+            -156.1
+          ]
+        }
+      ],
+      "output_policy": "real_floating_point_and_generic",
+      "returns": {
+        "desc": "cotangent",
+        "type": {
+          "javascript": "number",
+          "jsdoc": "number",
+          "c": "float",
+          "dtype": "float32"
+        }
+      },
+      "keywords": [
+        "cot",
+        "cotdf",
+        "cotangent",
+        "tan",
+        "tangent"
+      ],
+      "extra_keywords": [
+        "math.tan"
+      ]
+    }
+  }
 }

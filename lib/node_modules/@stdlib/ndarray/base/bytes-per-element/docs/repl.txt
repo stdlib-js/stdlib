@@ -1,13 +1,13 @@
 
 {{alias}}( dtype )
-    Returns the number of bytes per element provided an underlying array data
-    type.
+    Returns the number of bytes per element for a provided underlying ndarray
+    data type.
 
     If provided an unknown/unsupported data type, the function returns `null`.
 
     Parameters
     ----------
-    dtype: string
+    dtype: string|DataType
         Data type.
 
     Returns

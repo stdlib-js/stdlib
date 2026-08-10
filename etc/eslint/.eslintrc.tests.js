@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable stdlib/no-empty-lines-between-requires */
+
 'use strict';
 
 // MODULES //
@@ -125,6 +127,20 @@ eslint.rules[ 'stdlib/jsdoc-private-annotation' ] = 'off';
 * @private
 */
 eslint.rules[ 'stdlib/jsdoc-doctest' ] = 'off';
+
+/**
+* When testing, allow requiring the package as a whole even though only a single property is used.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/no-single-property-require' ] = 'off';
+
+/**
+* Do not enforce nested function elevation.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/no-unnecessary-nested-functions' ] = 'off';
 
 /**
 * Allow the use of `undefined`.

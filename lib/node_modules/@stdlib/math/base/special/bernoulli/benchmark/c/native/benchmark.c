@@ -97,7 +97,7 @@ static double benchmark( void ) {
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		x[ i ] = ( 500.0 * rand_double() );
+		x[ i ] = round( 500.0 * rand_double() );
 	}
 
 	t = tic();

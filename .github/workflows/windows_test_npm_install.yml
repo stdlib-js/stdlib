@@ -137,7 +137,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
@@ -155,7 +155,7 @@ jobs:
       # Install MSYS2:
       - name: 'Install MSYS2'
         # Pin action to full length commit SHA
-        uses: msys2/setup-msys2@40677d36a502eb2cf0fb808cc9dec31bf6152638 # v2.28.0
+        uses: msys2/setup-msys2@cafece8e6baf9247cf9b1bf95097b0b983cc558d # v2.31.0
         with:
           # Set the MSYS system:
           msystem: MINGW64
@@ -245,7 +245,7 @@ jobs:
       # Install Windows build tools for compiling Node.js native add-ons.
       - name: 'Install Windows build tools'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-chocolatey@2526f467ccbd337d307fe179959cabbeca0bc8c0 # v3.4.0
+        uses: crazy-max/ghaction-chocolatey@dff3862348493b11fba2fbc49147b6d2dfe09b66 # v4.0.0
         with:
           args: install -y visualstudio2019buildtools visualstudio2019-workload-vctools
         timeout-minutes: 10
@@ -273,7 +273,7 @@ jobs:
           TEST_NPM_INSTALL_GITHUB_URL: 'https://github.com/stdlib-js/stdlib'
         run: |
           . "${{ env.NVS_HOME }}/nvs.sh" && nvs use ${{ matrix.NODE_VERSION }}
-          . "$GITHUB_WORKSPACE/.github/workflows/scripts/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
+          . "$GITHUB_WORKSPACE/.github/workflows/scripts/common/task_runner" ${{ matrix.BUILD_TASK }} "${{ env.LOG_FILE_BUILD_TASK }}"
         timeout-minutes: 360
 
       # View the log file if the previous step fails:
@@ -287,7 +287,7 @@ jobs:
       # Upload the log file:
       - name: 'Upload log file'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: always()
         with:
           # Define a name for the uploaded artifact (ensuring a unique name for each job):
@@ -300,11 +300,11 @@ jobs:
           retention-days: 5
         timeout-minutes: 10
 
-  # Define a job for sending notifications to Slack...
-  slack:
+  # Define a job for sending notifications to Zulip...
+  zulip:
 
     # Define a display name:
-    name: 'Slack notification'
+    name: 'Zulip notification'
 
     # Define the type of virtual host machine:
     runs-on: 'ubuntu-latest'
@@ -327,31 +327,34 @@ jobs:
       # Resolve notification data:
       - name: 'Resolve notification data'
         run: |
-          echo 'NOTIFICATION_STATUS=${{ needs.test_npm_install.result}}' >> $GITHUB_ENV
           if [[ "${{ needs.test_npm_install.result }}" = "success" ]]; then
-            echo 'NOTIFICATION_TEXT=**test_npm_install** workflow succeeded (windows)' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Success' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:check:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=succeeded' >> $GITHUB_ENV
           elif [[ "${{ needs.test_npm_install.result }}" = "failure" ]]; then
-            echo 'NOTIFICATION_TEXT=**test_npm_install** workflow failed (windows)' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Failure' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:cross_mark:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=failed' >> $GITHUB_ENV
           elif [[ "${{ needs.test_npm_install.result }}" = "cancelled" ]]; then
-            echo 'NOTIFICATION_TEXT=**test_npm_install** workflow was canceled (windows)' >> $GITHUB_ENV
-            echo 'NOTIFICATION_AUTHOR_NAME=Canceled' >> $GITHUB_ENV
+            echo 'NOTIFICATION_ICON=:warning:' >> $GITHUB_ENV
+            echo 'NOTIFICATION_STATUS=was canceled' >> $GITHUB_ENV
           else
             exit 1
           fi
         timeout-minutes: 5
 
-      # Send notification to Slack:
+      # Send notification to Zulip:
       - name: 'Send notification'
         # Pin action to full length commit SHA
-        uses: 8398a7/action-slack@1750b5085f3ec60384090fb7c52965ef822e869e # v3.18.0
+        uses: zulip/github-actions-zulip/send-message@bd8ec52de371d139ae8313661b7d8318c19266aa # v2.0.1
         if: success()
         with:
-          status: "${{ env.NOTIFICATION_STATUS }}"
-          fields: repo,commit,message
-          text: "${{ env.NOTIFICATION_TEXT }}"
-          author_name: "${{ env.NOTIFICATION_AUTHOR_NAME }}"
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.REPO_SLACK_WEBHOOK_URL }}
+          api-key: ${{ secrets.ZULIP_API_KEY }}
+          email: 'github-actions-bot@stdlib.zulipchat.com'
+          organization-url: 'https://stdlib.zulipchat.com'
+          to: 'workflows'
+          type: 'stream'
+          topic: 'windows-test-npm-install'
+          content: |
+            ${{ env.NOTIFICATION_ICON }} **test_npm_install** workflow ${{ env.NOTIFICATION_STATUS }} (windows)
+
+            **Run:** [View workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
         timeout-minutes: 5

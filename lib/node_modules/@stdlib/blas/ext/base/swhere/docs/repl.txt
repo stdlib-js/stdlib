@@ -1,0 +1,153 @@
+
+{{alias}}( N, condition, strideC, x, strideX, y, strideY, out, strideOut )
+    Takes elements from one of two single-precision floating-point strided
+    arrays depending on a condition.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use a typed
+    array view.
+
+    If `N <= 0`, the function returns `out` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    condition: BooleanArray
+        Condition array.
+
+    strideC: integer
+        Stride length for `condition`.
+
+    x: Float32Array
+        First input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    y: Float32Array
+        Second input array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    out: Float32Array
+        Output array.
+
+    strideOut: integer
+        Stride length for `out`.
+
+    Returns
+    -------
+    out: Float32Array
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var c = new {{alias:@stdlib/array/bool}}( [ true, false, true ] );
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0 ] );
+    > var y = new {{alias:@stdlib/array/float32}}( [ 4.0, 5.0, 6.0 ] );
+    > var out = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0 ] );
+    > {{alias}}( 3, c, 1, x, 1, y, 1, out, 1 )
+    <Float32Array>[ 1.0, 5.0, 3.0 ]
+
+    // Using `N` and stride parameters:
+    > c = new {{alias:@stdlib/array/bool}}( [ true, false, false, true, true, false ] );
+    > x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/float32}}( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+    > out = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0 ] );
+    > {{alias}}( 3, c, 2, x, 2, y, 2, out, 1 )
+    <Float32Array>[ 1.0, 9.0, 5.0 ]
+
+    // Using view offsets:
+    > var c0 = new {{alias:@stdlib/array/bool}}( [ false, true, false, true ] );
+    > var x0 = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y0 = new {{alias:@stdlib/array/float32}}( [ 5.0, 6.0, 7.0, 8.0 ] );
+    > var o0 = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0, 0.0 ] );
+    > var c1 = new {{alias:@stdlib/array/bool}}( c0.buffer, c0.BYTES_PER_ELEMENT*1 );
+    > var x1 = new {{alias:@stdlib/array/float32}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > var y1 = new {{alias:@stdlib/array/float32}}( y0.buffer, y0.BYTES_PER_ELEMENT*1 );
+    > var o1 = new {{alias:@stdlib/array/float32}}( o0.buffer, o0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 2, c1, 1, x1, 1, y1, 1, o1, 1 )
+    <Float32Array>[ 2.0, 7.0, 0.0 ]
+
+
+{{alias}}.ndarray( N, c, sc, oc, x, sx, ox, y, sy, oy, o, so, oo )
+    Takes elements from one of two single-precision floating-point strided
+    arrays depending on a condition using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    c: BooleanArray
+        Condition array.
+
+    sc: integer
+        Stride length for `c`.
+
+    oc: integer
+        Starting index for `c`.
+
+    x: Float32Array
+        First input array.
+
+    sx: integer
+        Stride length for `x`.
+
+    ox: integer
+        Starting index for `x`.
+
+    y: Float32Array
+        Second input array.
+
+    sy: integer
+        Stride length for `y`.
+
+    oy: integer
+        Starting index for `y`.
+
+    o: Float32Array
+        Output array.
+
+    so: integer
+        Stride length for `o`.
+
+    oo: integer
+        Starting index for `o`.
+
+    Returns
+    -------
+    o: Float32Array
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var c = new {{alias:@stdlib/array/bool}}( [ true, false, true ] );
+    > var x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0 ] );
+    > var y = new {{alias:@stdlib/array/float32}}( [ 4.0, 5.0, 6.0 ] );
+    > var o = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( 3, c, 1, 0, x, 1, 0, y, 1, 0, o, 1, 0 )
+    <Float32Array>[ 1.0, 5.0, 3.0 ]
+
+    // Advanced indexing:
+    > c = new {{alias:@stdlib/array/bool}}( [ false, true, false, false, false, true ] );
+    > x = new {{alias:@stdlib/array/float32}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > y = new {{alias:@stdlib/array/float32}}( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+    > o = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0 ] );
+    > {{alias}}.ndarray( 3, c, 2, 1, x, 2, 1, y, 2, 1, o, -1, o.length-1 )
+    <Float32Array>[ 6.0, 10.0, 2.0 ]
+
+    See Also
+    --------
+

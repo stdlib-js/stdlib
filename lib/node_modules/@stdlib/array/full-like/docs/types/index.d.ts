@@ -195,7 +195,7 @@ declare function fullLike( x: AnyArray, value: number, dtype: 'int8' ): Int8Arra
 * var zeros = require( '@stdlib/array/zeros' );
 *
 * var x = zeros( 2, 'float64' );
-* // returns <Float64Array>[ 0, 0 ]
+* // returns <Float64Array>[ 0.0, 0.0 ]
 *
 * var y = fullLike( x, 1, 'uint32' );
 * // returns <Uint32Array>[ 1, 1 ]
@@ -325,10 +325,10 @@ declare function fullLike( x: Float32Array, value: number, dtype?: DataType ): F
 * @returns filled array
 *
 * @example
-* var zeros = require( '@stdlib/array/zeros' );
+* var empty = require( '@stdlib/array/empty' );
 *
-* var x = zeros( 2, 'bool' );
-* // returns <BooleanArray>[ false, false ]
+* var x = empty( 2, 'bool' );
+* // returns <BooleanArray>
 *
 * var y = fullLike( x, true );
 * // returns <BooleanArray>[ true, true ]

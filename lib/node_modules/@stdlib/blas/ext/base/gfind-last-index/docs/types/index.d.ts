@@ -149,7 +149,7 @@ interface Routine {
 	*
 	* var x = [ 1.0, 3.0, -5.0, 4.0, 3.0, -2.0, -3.0 ];
 	*
-	* var idx = gfindLastIndex( x.length, x, 1, 0, isEven );
+	* var idx = gfindLastIndex.ndarray( x.length, x, 1, 0, isEven );
 	* // returns 5
 	*/
 	ndarray<T = unknown, U = unknown, V = unknown>( N: number, x: InputArray<V>, strideX: number, offsetX: number, clbk: Predicate<T, U, V>, thisArg?: ThisParameterType<Predicate<T, U, V>> ): number;
@@ -193,7 +193,7 @@ interface Routine {
 *
 * var x = [ 1.0, 3.0, -5.0, 4.0, 3.0, -2.0, -3.0 ];
 *
-* var idx = gfindLastIndex( x.length, x, 1, 0, isEven );
+* var idx = gfindLastIndex.ndarray( x.length, x, 1, 0, isEven );
 * // returns 5
 */
 declare var gfindLastIndex: Routine;

@@ -20,7 +20,7 @@ limitations under the License.
 
 # ssymv
 
-> Perform the matrix-vector operation `y = α*A*x + β*y` where `α` and `β` are scalars, `x` and `y` are `N` element vectors, and `A` is an `N` by `N` symmetric matrix.
+> Perform the matrix-vector operation `y = α*A*x + β*y`.
 
 <section class="usage">
 
@@ -37,12 +37,12 @@ Performs the matrix-vector operation `y = α*A*x + β*y` where `α` and `β` are
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 
-var A = new Float32Array( [ 1.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 3.0 ] );
+var A = new Float32Array( [ 1.0, 4.0, 5.0, 4.0, 2.0, 6.0, 5.0, 6.0, 3.0 ] );
 var x = new Float32Array( [ 1.0, 1.0, 1.0 ] );
 var y = new Float32Array( [ 0.0, 0.0, 0.0 ] );
 
 ssymv( 'row-major', 'lower', 3, 1.0, A, 3, x, 1, 0.0, y, 1 );
-// y => <Float32Array>[ 1.0, 2.0, 3.0 ]
+// y => <Float32Array>[ 10.0, 12.0, 14.0 ]
 ```
 
 The function has the following parameters:
@@ -54,22 +54,22 @@ The function has the following parameters:
 -   **A**: input matrix stored in linear memory as a [`Float32Array`][mdn-float32array].
 -   **LDA**: stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`).
 -   **x**: input [`Float32Array`][mdn-float32array].
--   **sx**: index increment for `x`.
+-   **sx**: stride length for `x`.
 -   **β**: scalar constant.
 -   **y**: output [`Float32Array`][mdn-float32array].
--   **sy**: index increment for `y`.
+-   **sy**: stride length for `y`.
 
 The stride parameters determine how elements in the input arrays are accessed at runtime. For example, to iterate over the elements of `x` in reverse order,
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 
-var A = new Float32Array( [ 1.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 3.0 ] );
-var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
-var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
+var A = new Float32Array( [ 1.0, 4.0, 5.0, 4.0, 2.0, 6.0, 5.0, 6.0, 3.0 ] );
+var x = new Float32Array( [ 1.0, 1.0, 1.0 ] );
+var y = new Float32Array( [ 0.0, 0.0, 0.0 ] );
 
-ssymv( 'row-major', 'upper', 3, 2.0, A, 3, x, -1, 1.0, y, 1 );
-// y => <Float32Array>[ 7.0, 10.0, 9.0 ]
+ssymv( 'row-major', 'upper', 3, 1.0, A, 3, x, -1, 1.0, y, 1 );
+// y => <Float32Array>[ 10.0, 12.0, 14.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -80,35 +80,38 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 var Float32Array = require( '@stdlib/array/float32' );
 
 // Initial arrays...
-var x0 = new Float32Array( [ 1.0, 1.0, 1.0, 1.0 ] );
-var y0 = new Float32Array( [ 1.0, 1.0, 1.0, 1.0 ] );
-var A = new Float32Array( [ 1.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 3.0 ] );
+var x0 = new Float32Array( [ 0.0, 1.0, 1.0, 1.0 ] );
+var y0 = new Float32Array( [ 0.0, 0.0, 0.0, 0.0 ] );
+var A = new Float32Array( [ 1.0, 4.0, 5.0, 4.0, 2.0, 6.0, 5.0, 6.0, 3.0 ] );
 
 // Create offset views...
 var x1 = new Float32Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float32Array( y0.buffer, y0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 
 ssymv( 'row-major', 'upper', 3, 1.0, A, 3, x1, -1, 1.0, y1, -1 );
-// y0 => <Float32Array>[ 1.0, 4.0, 3.0, 2.0 ]
+// y0 => <Float32Array>[ 0.0, 14.0, 12.0, 10.0 ]
 ```
 
-#### ssymv.ndarray( order, uplo, N, α, A, LDA, x, sx, ox, β, y, sy, oy )
+#### ssymv.ndarray( uplo, N, α, A, sa1, sa2, oa, x, sx, ox, β, y, sy, oy )
 
 Performs the matrix-vector operation `y = α*A*x + β*y` using alternative indexing semantics and where `α` and `β` are scalars, `x` and `y` are `N` element vectors, and `A` is an `N` by `N` symmetric matrix.
 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 
-var A = new Float32Array( [ 1.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 3.0 ] );
-var x = new Float32Array( [ 1.0, 2.0, 3.0 ] );
-var y = new Float32Array( [ 1.0, 2.0, 3.0 ] );
+var A = new Float32Array( [ 1.0, 4.0, 5.0, 4.0, 2.0, 6.0, 5.0, 6.0, 3.0 ] );
+var x = new Float32Array( [ 1.0, 1.0, 1.0 ] );
+var y = new Float32Array( [ 0.0, 0.0, 0.0 ] );
 
-ssymv.ndarray( 'row-major', 'upper', 3, 2.0, A, 3, x, -1, 2, 1.0, y, 1, 0 );
-// y => <Float32Array>[ 7.0, 10.0, 9.0 ]
+ssymv.ndarray( 'upper', 3, 1.0, A, 3, 1, 0, x, -1, 2, 1.0, y, 1, 0 );
+// y => <Float32Array>[ 10.0, 12.0, 14.0 ]
 ```
 
 The function has the following additional parameters:
 
+-   **sa1**: stride for the first dimension of `A`.
+-   **sa2**: stride for the second dimension of `A`.
+-   **oa**: starting index for `A`.
 -   **ox**: starting index for `x`.
 -   **oy**: starting index for `y`.
 
@@ -117,12 +120,12 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 ```javascript
 var Float32Array = require( '@stdlib/array/float32' );
 
-var A = new Float32Array( [ 1.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 3.0 ] );
+var A = new Float32Array( [ 1.0, 4.0, 5.0, 4.0, 2.0, 6.0, 5.0, 6.0, 3.0 ] );
 var x = new Float32Array( [ 1.0, 1.0, 1.0 ] );
-var y = new Float32Array( [ 1.0, 1.0, 1.0 ] );
+var y = new Float32Array( [ 0.0, 0.0, 0.0 ] );
 
-ssymv.ndarray( 'row-major', 'lower', 3, 1.0, A, 3, x, -1, 2, 1.0, y, -1, 2 );
-// y => <Float32Array>[ 4.0, 3.0, 2.0 ]
+ssymv.ndarray( 'lower', 3, 1.0, A, 3, 1, 0, x, -1, 2, 1.0, y, -1, 2 );
+// y => <Float32Array>[ 14.0, 12.0, 10.0 ]
 ```
 
 </section>
@@ -154,13 +157,16 @@ var opts = {
     'dtype': 'float32'
 };
 
-var N = 3;
+var N = 5;
 var A = ones( N*N, opts.dtype );
 
 var x = discreteUniform( N, 0, 255, opts );
 var y = discreteUniform( N, 0, 255, opts );
 
-ssymv.ndarray( 'row-major', 'upper', N, 1.0, A, N, x, 1, 0, 1.0, y, 1, 0 );
+ssymv( 'row-major', 'upper', N, 1.0, A, N, x, 1, 1.0, y, 1 );
+console.log( y );
+
+ssymv.ndarray( 'upper', N, 1.0, A, N, 1, 0, x, 1, 0, 1.0, y, 1, 0 );
 console.log( y );
 ```
 
@@ -252,7 +258,7 @@ TODO
 
 [blas]: http://www.netlib.org/blas
 
-[ssymv]: https://netlib.org/lapack/explore-html/d2/d94/ssymv_8f.html
+[ssymv]: https://www.netlib.org/lapack/explore-html/db/d17/group__hemv_ga8990fe737209f3401522103c85016d27.html#ga8990fe737209f3401522103c85016d27
 
 [mdn-float32array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array
 
