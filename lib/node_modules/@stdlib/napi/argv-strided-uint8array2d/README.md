@@ -151,7 +151,7 @@ The function accepts the following arguments:
 -   **data**: `[out] uint8_t**` pointer for returning a reference to the output array.
 -   **message1**: `[in] char*` error message if a value is not a `Uint8Array`.
 -   **message2**: `[in] char*` error message if a value has insufficient elements.
--   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided a number, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
+-   **err**: `[out] napi_value*` pointer for storing a JavaScript error. If not provided a `Uint8Array` or sufficient elements, the function sets `err` with a JavaScript error; otherwise, `err` is set to `NULL`.
 
 ```c
 napi_status stdlib_napi_argv_strided_uint8array2d( const napi_env env, const int64_t M, const int64_t N, const int64_t strideX1, const int64_t strideX2, const napi_value value, uint8_t **data, const char *message1, const char *message2, napi_value *err );

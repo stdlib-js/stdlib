@@ -22,6 +22,7 @@
 #include "stdlib/math/base/special/gamma.h"
 #include "stdlib/constants/float64/pinf.h"
 #include "stdlib/constants/float64/max_nth_factorial.h"
+#include "stdlib/constants/float64/nan.h"
 #include <stdint.h>
 
 static const double FACTORIALS[ 171 ] = {
@@ -211,11 +212,11 @@ static const double FACTORIALS[ 171 ] = {
 */
 double stdlib_base_factorial( const double x ) {
 	if ( stdlib_base_is_nan( x ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( stdlib_base_is_integer( x ) ) {
 		if ( x < 0.0 ) {
-			return 0.0 / 0.0; // NaN
+			return STDLIB_CONSTANT_FLOAT64_NAN;
 		}
 		if ( x <= STDLIB_CONSTANT_FLOAT64_MAX_NTH_FACTORIAL ) {
 			return FACTORIALS[ (int32_t)x ];
