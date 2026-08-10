@@ -1,0 +1,62 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2026 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+import parseUint64 = require( './index' );
+
+
+// TESTS //
+
+// The function returns a 64-bit unsigned integer...
+{
+	parseUint64( '1234' ); // $ExpectType Uint64
+	parseUint64( '0xabcd' ); // $ExpectType Uint64
+	parseUint64( 'wxyz', 36 ); // $ExpectType Uint64
+}
+
+// The compiler throws an error if the function is provided a first argument which is not a string...
+{
+	parseUint64( true ); // $ExpectError
+	parseUint64( false ); // $ExpectError
+	parseUint64( null ); // $ExpectError
+	parseUint64( 123 ); // $ExpectError
+	parseUint64( {} ); // $ExpectError
+	parseUint64( ( x: number ): number => x ); // $ExpectError
+
+	parseUint64( 5, 36 ); // $ExpectError
+	parseUint64( true, 36 ); // $ExpectError
+	parseUint64( false, 36 ); // $ExpectError
+	parseUint64( null, 36 ); // $ExpectError
+	parseUint64( {}, 36 ); // $ExpectError
+	parseUint64( ( x: number ): number => x, 36 ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a second argument which is not a number...
+{
+	parseUint64( '1234', '5' ); // $ExpectError
+	parseUint64( '1234', true ); // $ExpectError
+	parseUint64( '1234', false ); // $ExpectError
+	parseUint64( '1234', null ); // $ExpectError
+	parseUint64( '1234', {} ); // $ExpectError
+	parseUint64( '1234', ( x: number ): number => x ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided an unsupported number of arguments...
+{
+	parseUint64(); // $ExpectError
+	parseUint64( '1234', 10, 1 ); // $ExpectError
+}

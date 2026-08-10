@@ -4187,6 +4187,27 @@ rules[ 'stdlib/no-dynamic-require' ] = 'error';
 rules[ 'stdlib/no-empty-comments' ] = 'error';
 
 /**
+* Enforce no empty lines between module-level require statements.
+*
+* @name no-empty-lines-between-requires
+* @memberof rules
+* @type {string}
+* @default 'error'
+*
+* @example
+* // Bad...
+* var foo = require( 'foo' );
+*
+* var bar = require( 'bar' );
+*
+* @example
+* // Good...
+* var foo = require( 'foo' );
+* var bar = require( 'bar' );
+*/
+rules[ 'stdlib/no-empty-lines-between-requires' ] = 'error';
+
+/**
 * Disallow string concatenation in error messages.
 *
 * @name no-error-string-concat
@@ -4567,6 +4588,34 @@ rules[ 'stdlib/no-require-index' ] = 'error';
 * var other = require( './other.js' );
 */
 rules[ 'stdlib/no-self-require' ] = 'error';
+
+/**
+* Enforce that a property is required directly when only a single property of a required module is used.
+*
+* ## Notes
+*
+* -   Requiring a property directly reduces bundle sizes during ESM tree-shaking via named imports.
+*
+* @name no-single-property-require
+* @memberof rules
+* @type {string}
+* @default 'warn'
+*
+* @example
+* // Bad...
+* var dcopy = require( '@stdlib/blas/base/dcopy' );
+*
+* dcopy.ndarray( x.length, x, 1, 0, y, 1, 0 );
+* dcopy.ndarray( y.length, y, 1, 0, z, 1, 0 );
+*
+* @example
+* // Good...
+* var dcopy = require( '@stdlib/blas/base/dcopy' ).ndarray;
+*
+* dcopy( x.length, x, 1, 0, y, 1, 0 );
+* dcopy( y.length, y, 1, 0, z, 1, 0 );
+*/
+rules[ 'stdlib/no-single-property-require' ] = 'warn';
 
 /**
 * Never allow unassigned `require()` calls.

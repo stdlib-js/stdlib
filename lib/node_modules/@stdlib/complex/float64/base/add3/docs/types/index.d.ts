@@ -98,7 +98,7 @@ interface Add {
 	* var out = add.strided( z1, 1, 0, z2, 1, 0, z3, 1, 0, new Float64Array( 2 ), 1, 0 );
 	* // returns <Float64Array>[ 15.0, 9.0 ]
 	*/
-	strided<T extends NumericArray | Collection<number>, U extends NumericArray | Collection<number>, V extends NumericArray | Collection<number>>( z1: T, strideZ1: number, offsetZ1: number, z2: U, strideZ2: number, offsetZ2: number, z3: U, strideZ3: number, offsetZ3: number, out: V, strideOut: number, offsetOut: number ): V;
+	strided<T extends NumericArray | Collection<number>, U extends NumericArray | Collection<number>, V extends NumericArray | Collection<number>, W extends NumericArray | Collection<number>>( z1: T, strideZ1: number, offsetZ1: number, z2: U, strideZ2: number, offsetZ2: number, z3: V, strideZ3: number, offsetZ3: number, out: W, strideOut: number, offsetOut: number ): W;
 }
 
 /**
