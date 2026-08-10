@@ -132,7 +132,7 @@ Evaluates the modulus function.
 
 ```c
 double out = stdlib_base_fmod( 8.9, 3.0 );
-// returns 2.9
+// returns ~2.9
 
 out = stdlib_base_fmod( 4.0, 2.0 );
 // returns 0.0

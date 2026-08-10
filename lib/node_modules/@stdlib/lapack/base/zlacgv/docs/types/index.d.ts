@@ -40,9 +40,7 @@ interface Routine {
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* zlacgv( 3, zx, 1 );
-	*
-	* var z = zx.get( 0 );
-	* // returns <Complex128>[ 1.0, -2.0 ]
+	* // zx => <Complex128Array>[ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ]
 	*/
 	( N: number, zx: Complex128Array, strideZX: number ): Complex128Array;
 
@@ -61,9 +59,7 @@ interface Routine {
 	* var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	*
 	* zlacgv.ndarray( 3, zx, 1, 0 );
-	*
-	* var z = zx.get( 0 );
-	* // returns <Complex128>[ 1.0, -2.0 ]
+	* // zx => <Complex128Array>[ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ]
 	*/
 	ndarray( N: number, zx: Complex128Array, strideZX: number, offsetZX: number ): Complex128Array;
 }
@@ -82,9 +78,7 @@ interface Routine {
 * var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
 * zlacgv( 3, zx, 1 );
-*
-* var z = zx.get( 1 );
-* // returns <Complex128>[ 3.0, -4.0 ]
+* // zx => <Complex128Array>[ 1.0, -2.0, 3.0, -4.0, 5.0, -6.0 ]
 *
 * @example
 * var Complex128Array = require( '@stdlib/array/complex128' );
@@ -92,9 +86,7 @@ interface Routine {
 * var zx = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 *
 * zlacgv.ndarray( 2, zx, 1, 1 );
-*
-* var z = zx.get( 1 );
-* // returns <Complex128>[ 3.0, -4.0 ]
+* // zx => <Complex128Array>[ 1.0, 2.0, 3.0, -4.0, 5.0, -6.0 ]
 */
 declare var zlacgv: Routine;
 

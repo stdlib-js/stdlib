@@ -172,6 +172,8 @@ $ echo -n '1s350ms,2s' | duration2ms --split ','
 
 <section class="related">
 
+</section>
+
 <!-- /.related -->
 
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->

@@ -52,10 +52,7 @@ import { float32ndarray } from '@stdlib/types/ndarray';
 * var y = array( new Float32Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] ) );
 *
 * var z = sdot( x, y );
-* // returns <ndarray>
-*
-* var v = z.get();
-* // returns -5.0
+* // returns <ndarray>[ -5.0 ]
 */
 declare function sdot( x: float32ndarray, y: float32ndarray, dim?: number ): float32ndarray;
 

@@ -63,7 +63,7 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         # Pin action to full length commit SHA
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
@@ -98,13 +98,17 @@ jobs:
       # Log the results:
       - name: 'Log results'
         run: |
-          echo ${{ steps.results.outputs.failures }} >> "${{ env.LOG_FILE_FAILURES }}"
-          echo ${{ steps.results.outputs.warnings }} >> "${{ env.LOG_FILE_WARNINGS }}"
+          cat >> "${{ env.LOG_FILE_FAILURES }}" <<'STDLIB_FAILURES_EOF'
+          ${{ steps.results.outputs.failures }}
+          STDLIB_FAILURES_EOF
+          cat >> "${{ env.LOG_FILE_WARNINGS }}" <<'STDLIB_WARNINGS_EOF'
+          ${{ steps.results.outputs.warnings }}
+          STDLIB_WARNINGS_EOF
         timeout-minutes: 2
 
       # Fail the workflow if the status is not "success":
       - name: 'Check status'
-        if: ${{ steps.results.outputs.status }} != 'success'
+        if: ${{ steps.results.outputs.status != 'success' }}
         run: |
           exit 1
 
@@ -119,7 +123,7 @@ jobs:
       # Upload the log files:
       - name: 'Upload log files'
         # Pin action to full length commit SHA
-        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: always()
         with:
           # Define a name for the uploaded artifact:
@@ -178,7 +182,7 @@ jobs:
       # Send notification to Zulip:
       - name: 'Send notification'
         # Pin action to full length commit SHA
-        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
+        uses: zulip/github-actions-zulip/send-message@bd8ec52de371d139ae8313661b7d8318c19266aa # v2.0.1
         if: success()
         with:
           api-key: ${{ secrets.ZULIP_API_KEY }}

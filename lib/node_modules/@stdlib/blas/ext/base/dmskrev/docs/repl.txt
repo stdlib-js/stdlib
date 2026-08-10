@@ -1,0 +1,108 @@
+
+{{alias}}( N, x, strideX, mask, strideMask )
+    Reverses a double-precision floating-point strided array in-place according
+    to a mask.
+
+    The `N` and stride parameters determine which elements in the strided arrays
+    are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `x` unchanged.
+
+    If a `mask` array element is `0`, the corresponding element in `x` is
+    considered valid and included in the reversal.
+
+    If a `mask` array element is `1`, the corresponding element in `x` is
+    considered invalid/missing and excluded from the reversal.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    mask: Uint8Array
+        Mask array.
+
+    strideMask: integer
+        Stride length for `mask`.
+
+    Returns
+    -------
+    x: Float64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0 ] );
+    > var m = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 0, 0 ] );
+    > {{alias}}( x.length, x, 1, m, 1 )
+    <Float64Array>[ -5.0, 3.0, 1.0, -2.0 ]
+
+    // Using `N` and stride parameters:
+    > x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0, 4.0 ] );
+    > m = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 0 ] );
+    > {{alias}}( 3, x, 2, m, 1 )
+    <Float64Array>[ 4.0, 1.0, 3.0, -5.0, -2.0 ]
+
+
+{{alias}}.ndarray( N, x, strideX, offsetX, mask, strideMask, offsetMask )
+    Reverses a double-precision floating-point strided array in-place according
+    to a mask and using alternative indexing semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    x: Float64Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    mask: Uint8Array
+        Mask array.
+
+    strideMask: integer
+        Stride length for `mask`.
+
+    offsetMask: integer
+        Starting index for `mask`.
+
+    Returns
+    -------
+    x: Float64Array
+        Input array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var x = new {{alias:@stdlib/array/float64}}( [ -2.0, 1.0, 3.0, -5.0 ] );
+    > var m = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 0, 0 ] );
+    > {{alias}}.ndarray( x.length, x, 1, 0, m, 1, 0 )
+    <Float64Array>[ -5.0, 3.0, 1.0, -2.0 ]
+
+    // Using an index offset:
+    > x = new {{alias:@stdlib/array/float64}}( [ 1.0, -2.0, 3.0, -4.0 ] );
+    > m = new {{alias:@stdlib/array/uint8}}( [ 0, 0, 0, 0 ] );
+    > {{alias}}.ndarray( 2, x, 1, 2, m, 1, 2 )
+    <Float64Array>[ 1.0, -2.0, -4.0, 3.0 ]
+
+    See Also
+    --------
