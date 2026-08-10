@@ -300,7 +300,6 @@ interface SomeByRightAsync {
 	* -   This function does **not** guarantee that execution is asynchronous. To do so, wrap the `done` callback in a function which either executes at the end of the current stack (e.g., `nextTick`) or during a subsequent turn of the event loop (e.g., `setImmediate`, `setTimeout`).
 	*
 	* @param predicate - predicate function to invoke for each element in a collection
-	* @throws must provide valid options
 	* @returns function which invokes the predicate function once for each element in a collection
 	*
 	* @example
