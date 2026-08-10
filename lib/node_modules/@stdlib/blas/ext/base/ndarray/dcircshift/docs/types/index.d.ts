@@ -25,16 +25,21 @@ import { typedndarray, float64ndarray } from '@stdlib/types/ndarray';
 /**
 * Circularly shifts the elements of a one-dimensional double-precision floating-point ndarray by a specified number of positions.
 *
-* @param arrays - array-like object containing a one-dimensional input ndarray and a zero-dimensional ndarray specifying the number of positions to shift
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a zero-dimensional ndarray specifying the number of positions to shift.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns input ndarray
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
+* var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 * var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
-* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
-* var x = new ndarray( 'float64', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
+* var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 *
 * var k = scalar2ndarray( 2, {
 *    'dtype': 'generic'

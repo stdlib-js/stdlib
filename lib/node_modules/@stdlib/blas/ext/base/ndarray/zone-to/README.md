@@ -41,11 +41,9 @@ var zoneTo = require( '@stdlib/blas/ext/base/ndarray/zone-to' );
 Fills a one-dimensional double-precision complex floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from one.
 
 ```javascript
-var Complex128Array = require( '@stdlib/array/complex128' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 
-var xbuf = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-var x = new ndarray( 'complex128', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Complex128Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 var out = zoneTo( [ x ] );
 // returns <ndarray>[ <Complex128>[ 1.0, 0.0 ], <Complex128>[ 2.0, 0.0 ], <Complex128>[ 3.0, 0.0 ], <Complex128>[ 4.0, 0.0 ] ]
@@ -76,13 +74,11 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var zeros = require( '@stdlib/array/zeros' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Complex128Vector = require( '@stdlib/ndarray/vector/complex128' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var zoneTo = require( '@stdlib/blas/ext/base/ndarray/zone-to' );
 
-var xbuf = zeros( 10, 'complex128' );
-var x = new ndarray( 'complex128', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = new Complex128Vector( 10 );
 console.log( ndarray2array( x ) );
 
 zoneTo( [ x ] );

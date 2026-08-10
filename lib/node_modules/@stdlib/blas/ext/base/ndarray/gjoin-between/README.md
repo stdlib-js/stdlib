@@ -41,11 +41,10 @@ var gjoinBetween = require( '@stdlib/blas/ext/base/ndarray/gjoin-between' );
 Returns a string by joining one-dimensional ndarray elements using a specified separator for each pair of consecutive elements.
 
 ```javascript
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
-var xbuf = [ 1, 2, 3, 4 ];
-var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1, 2, 3, 4 ], 'generic' );
 
 var prefix = scalar2ndarray( 'op: ', {
     'dtype': 'generic'
@@ -55,8 +54,7 @@ var suffix = scalar2ndarray( '', {
     'dtype': 'generic'
 });
 
-var sbuf = [ ' + ', ' - ', ' != ' ];
-var separators = new ndarray( 'generic', sbuf, [ 3 ], [ 1 ], 0, 'row-major' );
+var separators = vector( [ ' + ', ' - ', ' != ' ], 'generic' );
 
 var out = gjoinBetween( [ x, prefix, suffix, separators ] );
 // returns 'op: 1 + 2 - 3 != 4'
@@ -94,29 +92,23 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var filled = require( '@stdlib/array/base/filled' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 var scalar2ndarray = require( '@stdlib/ndarray/from-scalar' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var gjoinBetween = require( '@stdlib/blas/ext/base/ndarray/gjoin-between' );
 
-var xbuf = discreteUniform( 10, -100, 100, {
+var opts = {
     'dtype': 'generic'
-});
-var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+};
+
+var x = discreteUniform( [ 10 ], -100, 100, opts );
 console.log( ndarray2array( x ) );
 
-var prefix = scalar2ndarray( '[ ', {
-    'dtype': 'generic'
-});
-
-var suffix = scalar2ndarray( ' ]', {
-    'dtype': 'generic'
-});
-
-var sbuf = filled( ' | ', xbuf.length - 1 );
-var separators = new ndarray( 'generic', sbuf, [ sbuf.length ], [ 1 ], 0, 'row-major' );
+var prefix = scalar2ndarray( '[ ', opts );
+var suffix = scalar2ndarray( ' ]', opts );
+var separators = vector( filled( ' | ', 9 ), opts.dtype );
 
 var out = gjoinBetween( [ x, prefix, suffix, separators ] );
 console.log( out );

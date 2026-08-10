@@ -27,7 +27,7 @@
     Parameters
     ----------
     arrays: ArrayLikeObject<ndarray>
-        Array-like object containing the following ndarrays in order:
+        Array-like object containing the following ndarrays:
 
         - a one-dimensional input ndarray.
         - a zero-dimensional ndarray specifying the start of the interval.
@@ -43,19 +43,16 @@
     Examples
     --------
     // Create the input ndarray:
-    > var opts = { 'dtype': 'float32' };
-    > var buf = new {{alias:@stdlib/array/float32}}( [ 0.0, 0.0, 0.0, 0.0 ] );
-    > var x = {{alias:@stdlib/ndarray/array}}( buf, opts );
+    > var x = new {{alias:@stdlib/ndarray/vector/float32}}( [ 0.0, 0.0, 0.0, 0.0 ] );
 
     // Specify the start of the interval:
-    > var start = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, opts );
+    > var start = {{alias:@stdlib/ndarray/from-scalar}}( 0.0, { 'dtype': 'float32' } );
 
     // Specify the end of the interval:
-    > var stop = {{alias:@stdlib/ndarray/from-scalar}}( 3.0, opts );
+    > var stop = {{alias:@stdlib/ndarray/from-scalar}}( 3.0, { 'dtype': 'float32' } );
 
     // Specify whether to include the endpoint:
-    > opts = { 'dtype': 'bool' };
-    > var endpoint = {{alias:@stdlib/ndarray/from-scalar}}( true, opts );
+    > var endpoint = {{alias:@stdlib/ndarray/from-scalar}}( true, { 'dtype': 'bool' } );
 
     // Fill the input ndarray:
     > {{alias}}( [ x, start, stop, endpoint ] )

@@ -30,7 +30,7 @@ extern "C" {
 #endif
 
 /**
-* Interchanges two complex single-precision floating-point vectors.
+* Interchanges two single-precision complex floating-point vectors.
 */
 void cswap( const CBLAS_INT *, void *, const CBLAS_INT *, void *, const CBLAS_INT * );
 

@@ -21,6 +21,7 @@
 #include "stdlib/math/base/special/exp.h"
 #include "stdlib/math/base/special/log1p.h"
 #include "stdlib/constants/float64/ln_two.h"
+#include "stdlib/constants/float64/nan.h"
 
 /**
 * Computes the natural logarithm of `exp(x) + exp(y)`.
@@ -36,7 +37,7 @@
 double stdlib_base_logaddexp( const double x, const double y ) {
 	double d;
 	if ( stdlib_base_is_nan( x ) || stdlib_base_is_nan( y ) ) {
-		return 0.0/0.0;
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == y ) {
 		return x + STDLIB_CONSTANT_FLOAT64_LN2;
