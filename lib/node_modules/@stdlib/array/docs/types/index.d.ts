@@ -1033,6 +1033,7 @@ interface Namespace {
 	*
 	* -   `float64`: double-precision floating-point numbers (IEEE 754)
 	* -   `float32`: single-precision floating-point numbers (IEEE 754)
+	* -   `float16`: half-precision floating-point numbers (IEEE 754)
 	* -   `complex128`: double-precision complex floating-point numbers
 	* -   `complex64`: single-precision complex floating-point numbers
 	* -   `generic`: generic JavaScript values
@@ -1171,6 +1172,7 @@ interface Namespace {
 	*
 	* -   `float64`: double-precision floating-point numbers (IEEE 754)
 	* -   `float32`: single-precision floating-point numbers (IEEE 754)
+	* -   `float16`: half-precision floating-point numbers (IEEE 754)
 	* -   `complex128`: double-precision complex floating-point numbers
 	* -   `complex64`: single-precision complex floating-point numbers
 	* -   `int32`: 32-bit two's complement signed integers
@@ -1203,6 +1205,7 @@ interface Namespace {
 	*
 	* -   `float64`: double-precision floating-point numbers (IEEE 754)
 	* -   `float32`: single-precision floating-point numbers (IEEE 754)
+	* -   `float16`: half-precision floating-point numbers (IEEE 754)
 	* -   `complex128`: double-precision complex floating-point numbers
 	* -   `complex64`: single-precision complex floating-point numbers
 	* -   `int32`: 32-bit two's complement signed integers
