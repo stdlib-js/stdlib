@@ -184,7 +184,7 @@ var y = new Complex128Array( ybuf.buffer );
 var w = new Complex128Array( wbuf.buffer );
 
 zwxmy( x.length, x, 1, y, 1, w, 1 );
-logEach( '%s', w );
+logEach( '(%s) * (%s) = %s', x, y, w );
 ```
 
 </section>
