@@ -29,7 +29,7 @@ extern "C" {
 #endif
 
 /**
-* Computes the arithmetic mean of a one-dimensional double-precision floating-point ndarray, ignoring `NaN` values and using a two-pass error correction algorithm..
+* Computes the arithmetic mean of a one-dimensional double-precision floating-point ndarray, ignoring `NaN` values and using a two-pass error correction algorithm.
 */
 double stdlib_stats_dnanmeanpn( const struct ndarray *arrays[] );
 
