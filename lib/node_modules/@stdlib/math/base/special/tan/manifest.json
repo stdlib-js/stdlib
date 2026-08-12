@@ -43,7 +43,8 @@
         "@stdlib/constants/float64/high-word-abs-mask",
         "@stdlib/constants/float64/high-word-exponent-mask",
         "@stdlib/math/base/special/kernel-tan",
-        "@stdlib/math/base/special/rempio2"
+        "@stdlib/math/base/special/rempio2",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -63,7 +64,8 @@
         "@stdlib/constants/float64/high-word-abs-mask",
         "@stdlib/constants/float64/high-word-exponent-mask",
         "@stdlib/math/base/special/kernel-tan",
-        "@stdlib/math/base/special/rempio2"
+        "@stdlib/math/base/special/rempio2",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -83,7 +85,8 @@
         "@stdlib/constants/float64/high-word-abs-mask",
         "@stdlib/constants/float64/high-word-exponent-mask",
         "@stdlib/math/base/special/kernel-tan",
-        "@stdlib/math/base/special/rempio2"
+        "@stdlib/math/base/special/rempio2",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

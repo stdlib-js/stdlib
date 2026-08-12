@@ -35,6 +35,6 @@ int main( void ) {
 		mu = random_uniform( -50.0, 50.0 );
 		sigma = random_uniform( 0.1, 20.0 );
 		y = stdlib_base_dists_anglit_stdev( mu, sigma );
-		printf( "µ: %lf, σ: %lf, SD(X;µ,σ): %lf\n", mu, sigma, y );
+		printf( "μ: %lf, σ: %lf, SD(X;μ,σ): %lf\n", mu, sigma, y );
 	}
 }

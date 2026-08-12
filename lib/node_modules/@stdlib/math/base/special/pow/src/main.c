@@ -44,6 +44,7 @@
 #include "stdlib/constants/float64/ln_two.h"
 #include "stdlib/constants/float64/exponent_bias.h"
 #include "stdlib/constants/float64/high_word_significand_mask.h"
+#include "stdlib/constants/float64/nan.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/math/base/assert/is_infinite.h"
 #include "stdlib/math/base/assert/is_integer.h"
@@ -209,7 +210,7 @@ static double polyval_p( const double x ) {
 */
 static double y_is_infinite( const double x, const double y ) {
 	if ( x == -1.0 ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( x == 1.0 ) {
 		return 1.0;
@@ -569,7 +570,7 @@ double stdlib_base_pow( const double x, const double y ) {
 
 	xc = x;
 	if ( stdlib_base_is_nan( xc ) || stdlib_base_is_nan( y ) ) {
-		return 0.0/0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 
 	// Split `y` into high and low words:
@@ -639,7 +640,7 @@ double stdlib_base_pow( const double x, const double y ) {
 		stdlib_base_is_integer( y ) == false
 	) {
 		// Signal NaN...
-		return 0.0/0.0;
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	ax = stdlib_base_abs( x );
 

@@ -20,7 +20,7 @@ limitations under the License.
 
 # High Word
 
-> Return an unsigned 32-bit integer corresponding to the high 32-bit word of a [64-bit unsigned integer][@stdlib/number/uint64/ctor].
+> Return a 32-bit unsigned integer corresponding to the high 32-bit word of a [64-bit unsigned integer][@stdlib/number/uint64/ctor].
 
 <section class="usage">
 
@@ -32,7 +32,7 @@ var getHighWord = require( '@stdlib/number/uint64/base/get-high-word' );
 
 #### getHighWord( x )
 
-Returns an unsigned 32-bit integer corresponding to the high 32-bit word of a [64-bit unsigned integer][@stdlib/number/uint64/ctor].
+Returns a 32-bit unsigned integer corresponding to the high 32-bit word of a [64-bit unsigned integer][@stdlib/number/uint64/ctor].
 
 ```javascript
 var Uint64 = require( '@stdlib/number/uint64/ctor' );
