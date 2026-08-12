@@ -1212,10 +1212,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.every( x );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*
 	* @example
 	* var Float64Array = require( '@stdlib/array/float64' );
@@ -1244,10 +1241,7 @@ interface Namespace {
 	*
 	* // Perform reduction:
 	* var out = ns.every.assign( x, y );
-	* // returns <ndarray>
-	*
-	* var v = out.get();
-	* // returns true
+	* // returns <ndarray>[ true ]
 	*/
 	every: typeof every;
 
