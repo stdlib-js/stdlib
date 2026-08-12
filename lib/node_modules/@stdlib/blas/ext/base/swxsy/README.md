@@ -32,6 +32,11 @@ This BLAS extension implements the operation
 \mathbf{w} = \mathbf{x} - \mathbf{y}
 ```
 
+<!-- <div class="equation" align="center" data-raw-text="\mathbf{w} = \mathbf{x} - \mathbf{y}" data-equation="eq:wxsy">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e1fa7cf6195cdd2d9ad6db329474f1f7836815d8/lib/node_modules/@stdlib/blas/ext/base/swxsy/docs/img/equation_wxsy.svg" alt="Equation for wxsy operation.">
+    <br>
+</div> -->
+
 <!-- </equation> -->
 
 </section>
