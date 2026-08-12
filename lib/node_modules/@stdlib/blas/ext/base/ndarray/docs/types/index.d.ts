@@ -711,7 +711,7 @@ interface Namespace {
 	* var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	*
 	* var k = scalar2ndarray( 2, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.dcircshift( [ x, k ] );
@@ -742,17 +742,17 @@ interface Namespace {
 	*
 	* var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	* var target = scalar2ndarray( 3, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	* var start = scalar2ndarray( 1, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	* var end = scalar2ndarray( 4, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var w = zeros( [ 6 ], {
-	*    'dtype': 'float64'
+	*     'dtype': 'float64'
 	* });
 	*
 	* var out = ns.dcopyWithin( [ x, target, start, end, w ] );
@@ -1296,11 +1296,11 @@ interface Namespace {
 	* var x = new Float64Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* var start = scalar2ndarray( 0.0, {
-	*    'dtype': 'float64'
+	*     'dtype': 'float64'
 	* });
 	*
 	* var stop = scalar2ndarray( 100.0, {
-	*    'dtype': 'float64'
+	*     'dtype': 'float64'
 	* });
 	*
 	* var endpoint = scalar2ndarray( true, {
@@ -1465,7 +1465,7 @@ interface Namespace {
 	* var x = new Float64Vector( [ 1.0, -2.0, 3.0, -4.0 ] );
 	*
 	* var ord = scalar2ndarray( 1.0, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.dsort( [ x, ord ] );
@@ -1496,7 +1496,7 @@ interface Namespace {
 	* var x = new Float64Vector( [ 1.0, -2.0, 3.0, -4.0 ] );
 	*
 	* var ord = scalar2ndarray( 1.0, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.dsorthp( [ x, ord ] );
@@ -1524,7 +1524,7 @@ interface Namespace {
 	* var x = new Float64Vector( [ 1.0, -2.0, 3.0, -4.0 ] );
 	*
 	* var ord = scalar2ndarray( 1.0, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.dsortins( [ x, ord ] );
@@ -1552,7 +1552,7 @@ interface Namespace {
 	* var x = new Float64Vector( [ 1.0, -2.0, 3.0, -4.0 ] );
 	*
 	* var ord = scalar2ndarray( 1.0, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.dsortsh( [ x, ord ] );
@@ -1692,7 +1692,7 @@ interface Namespace {
 	* var B = new Float64Matrix( [ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ] );
 	*
 	* var k = scalar2ndarray( 0, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.dtriu( [ A, B, k ] );
@@ -2021,7 +2021,7 @@ interface Namespace {
 	* var x = vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ], 'generic' );
 	*
 	* var k = scalar2ndarray( 2, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.gcircshift( [ x, k ] );
@@ -2051,7 +2051,7 @@ interface Namespace {
 	* var zeros = require( '@stdlib/ndarray/zeros' );
 	*
 	* var opts = {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* };
 	* var x = vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], opts.dtype );
 	* var target = scalar2ndarray( 3, opts );
@@ -2684,11 +2684,11 @@ interface Namespace {
 	* var x = vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ], 'generic' );
 	*
 	* var start = scalar2ndarray( 0.0, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var stop = scalar2ndarray( 100.0, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var endpoint = scalar2ndarray( true, {
@@ -2855,7 +2855,7 @@ interface Namespace {
 	* var x = vector( [ 1.0, -2.0, 3.0, -4.0 ], 'generic' );
 	*
 	* var ord = scalar2ndarray( 1.0, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.gsort( [ x, ord ] );
@@ -2885,7 +2885,7 @@ interface Namespace {
 	* var x = vector( [ 1.0, -2.0, 3.0, -4.0 ], 'generic' );
 	*
 	* var ord = scalar2ndarray( 1.0, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.gsorthp( [ x, ord ] );
@@ -3354,7 +3354,7 @@ interface Namespace {
 	* var x = new Float32Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 	*
 	* var k = scalar2ndarray( 2, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.scircshift( [ x, k ] );
@@ -3385,17 +3385,17 @@ interface Namespace {
 	*
 	* var x = new Float32Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 	* var target = scalar2ndarray( 3, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	* var start = scalar2ndarray( 1, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	* var end = scalar2ndarray( 4, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var w = zeros( [ 6 ], {
-	*    'dtype': 'float32'
+	*     'dtype': 'float32'
 	* });
 	*
 	* var out = ns.scopyWithin( [ x, target, start, end, w ] );
@@ -3790,11 +3790,11 @@ interface Namespace {
 	* var x = new Float32Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 	*
 	* var start = scalar2ndarray( 0.0, {
-	*    'dtype': 'float32'
+	*     'dtype': 'float32'
 	* });
 	*
 	* var stop = scalar2ndarray( 100.0, {
-	*    'dtype': 'float32'
+	*     'dtype': 'float32'
 	* });
 	*
 	* var endpoint = scalar2ndarray( true, {
@@ -3961,7 +3961,7 @@ interface Namespace {
 	* var x = new Float32Vector( [ 1.0, -2.0, 3.0, -4.0 ] );
 	*
 	* var ord = scalar2ndarray( 1.0, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.ssort( [ x, ord ] );
@@ -3994,7 +3994,7 @@ interface Namespace {
 	* var x = new Float32Vector( [ 1.0, -2.0, 3.0, -4.0 ] );
 	*
 	* var ord = scalar2ndarray( 1.0, {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	*
 	* var out = ns.ssorthp( [ x, ord ] );
