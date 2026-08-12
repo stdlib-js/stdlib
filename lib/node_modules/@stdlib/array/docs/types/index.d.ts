@@ -561,6 +561,10 @@ interface Namespace {
 	* @example
 	* var arr = ns.empty( 2, 'float32' );
 	* // returns <Float32Array>
+	*
+	* @example
+	* var arr = ns.empty( 2, 'float16' );
+	* // returns <Float16Array>
 	*/
 	empty: typeof empty;
 
