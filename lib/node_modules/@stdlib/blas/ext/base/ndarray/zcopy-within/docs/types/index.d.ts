@@ -45,17 +45,17 @@ import { typedndarray, complex128ndarray } from '@stdlib/types/ndarray';
 *
 * var x = new Complex128Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 * var target = scalar2ndarray( 1, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 * var start = scalar2ndarray( 0, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 * var end = scalar2ndarray( 2, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var w = zeros( [ 3 ], {
-*    'dtype': 'complex128'
+*     'dtype': 'complex128'
 * });
 *
 * var out = zcopyWithin( [ x, target, start, end, w ] );
