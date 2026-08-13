@@ -31,7 +31,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 *
 *     -   a two-dimensional input ndarray corresponding to `A`.
 *     -   a two-dimensional output ndarray corresponding to `B`.
-*     -   a zero-dimensional ndarray specifying the diagonal below which to ignore.
+*     -   a zero-dimensional ndarray specifying the diagonal above which to ignore.
 *
 * @param arrays - array-like object containing ndarrays
 * @returns output ndarray
