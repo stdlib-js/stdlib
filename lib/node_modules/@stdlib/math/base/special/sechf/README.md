@@ -33,7 +33,7 @@ The [hyperbolic secant][hyperbolic-functions] is defined as
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{sech}(x) = \frac{1}{\cosh(x)} = \frac{2}{e^x + e^{-x}}" data-equation="eq:hyperbolic_secant">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@ffd6ded5947d911657cac30a4548743bc210d2a5/lib/node_modules/@stdlib/math/base/special/sechf/docs/img/equation_hyperbolic_secant.svg" alt="Hyperbolic secant">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7044cb6060ff971420a3ae07813849de316c96ae/lib/node_modules/@stdlib/math/base/special/sechf/docs/img/equation_hyperbolic_secant.svg" alt="Hyperbolic secant">
     <br>
 </div> -->
 
