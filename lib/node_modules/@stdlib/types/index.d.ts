@@ -35,7 +35,7 @@
 */
 declare module '@stdlib/types/array' {
 	import { ComplexLike, Complex32, Complex64, Complex128 } from '@stdlib/types/complex';
-	import { Uint64 } from '@stdlib/types/number';
+	import { Int64, Uint64 } from '@stdlib/types/number';
 	import { Remap } from '@stdlib/types/utilities';
 
 	/**
@@ -120,7 +120,7 @@ declare module '@stdlib/types/array' {
 	/**
 	* Data type for signed integer typed arrays.
 	*/
-	type SignedIntegerDataType = 'int32' | 'int16' | 'int8'; // "signed_integer"
+	type SignedIntegerDataType = 'int64' | 'int32' | 'int16' | 'int8'; // "signed_integer"
 
 	/**
 	* Data type for signed integer typed arrays.
@@ -190,7 +190,7 @@ declare module '@stdlib/types/array' {
 	/**
 	* Data type for integer index arrays.
 	*/
-	type IntegerIndexDataType = 'int32'; // "integer_index"
+	type IntegerIndexDataType = 'int64' | 'int32'; // "integer_index"
 
 	/**
 	* Data type for integer index and generic arrays.
@@ -485,7 +485,7 @@ declare module '@stdlib/types/array' {
 	* @example
 	* const x: SignedIntegerTypedArray = new Int32Array( 10 );
 	*/
-	type SignedIntegerTypedArray = Int8Array | Int16Array | Int32Array;
+	type SignedIntegerTypedArray = Int8Array | Int16Array | Int32Array | Int64Array;
 
 	/**
 	* An unsigned integer typed array.
@@ -837,6 +837,114 @@ declare module '@stdlib/types/array' {
 	}
 
 	/**
+	* A 64-bit signed integer array-like value.
+	*
+	* @example
+	* const buf = new Uint32Array( 8 );
+	*
+	* const z: Int64ArrayLike = {
+	*     'byteLength': 32,
+	*     'byteOffset': 0,
+	*     'BYTES_PER_ELEMENT': 8,
+	*     'length': 4,
+	*     'get': ( i: number ): obj.Int64 => {
+	*         return {
+	*             'hi': buf[ (2*i) ],
+	*             'lo': buf[ (2*i)+1 ],
+	*             'byteLength': 8,
+	*             'BYTES_PER_ELEMENT': 8
+	*         };
+	*     },
+	*     'set': ( value: obj.Int64, i?: number ) => {
+	*         i = ( i ) ? i : 0;
+	*         buf[ (2*i) ] = value.hi;
+	*         buf[ (2*i)+1 ] = value.lo;
+	*     }
+	* };
+	*/
+	interface Int64ArrayLike extends AccessorArrayLike<Int64> {
+		/**
+		* Length (in bytes) of the array.
+		*/
+		byteLength: number;
+
+		/**
+		* Offset (in bytes) of the array from the start of its underlying `ArrayBuffer`.
+		*/
+		byteOffset: number;
+
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: number;
+
+		/**
+		* Number of array elements.
+		*/
+		length: number;
+
+		/**
+		* Returns an array element.
+		*
+		* @param i - element index
+		* @returns array element
+		*/
+		get( i: number ): Int64 | void;
+
+		/**
+		* Sets an array element.
+		*
+		* @param value - value(s)
+		* @param i - element index at which to start writing values (default: 0)
+		*/
+		set( value: ArrayLike<Int64 | bigint | number> | Int64ArrayLike | Int64 | bigint | number, i?: number ): void;
+	}
+
+	/**
+	* 64-bit signed integer array.
+	*
+	* @example
+	* const buf = new Uint32Array( 8 );
+	*
+	* const z: Int64Array = {
+	*     'byteLength': 32,
+	*     'byteOffset': 0,
+	*     'BYTES_PER_ELEMENT': 8,
+	*     'length': 4,
+	*     'get': ( i: number ): obj.Int64 => {
+	*         return {
+	*             'hi': buf[ (2*i) ],
+	*             'lo': buf[ (2*i)+1 ],
+	*             'byteLength': 8,
+	*             'BYTES_PER_ELEMENT': 8
+	*         };
+	*     },
+	*     'set': ( value: obj.Int64, i?: number ) => {
+	*         i = ( i ) ? i : 0;
+	*         buf[ (2*i) ] = value.hi;
+	*         buf[ (2*i)+1 ] = value.lo;
+	*     }
+	* };
+	*/
+	interface Int64Array extends Int64ArrayLike {
+		/**
+		* Returns an array element.
+		*
+		* @param i - element index
+		* @returns array element
+		*/
+		get( i: number ): Int64 | void;
+
+		/**
+		* Sets an array element.
+		*
+		* @param value - value(s)
+		* @param i - element index at which to start writing values (default: 0)
+		*/
+		set( value: ArrayLike<Int64 | bigint | number> | Int64Array | Int64 | bigint | number, i?: number ): void;
+	}
+
+	/**
 	* A 64-bit unsigned integer array-like value.
 	*
 	* @example
@@ -1034,6 +1142,7 @@ declare module '@stdlib/types/array' {
 	* Mapping of signed integer data types to array constructors.
 	*/
 	type SignedIntegerDataTypeMap = { // eslint-disable-line @typescript-eslint/consistent-type-definitions
+		'int64': Int64Array;
 		'int32': Int32Array;
 		'int16': Int16Array;
 		'int8': Int8Array;
@@ -1090,7 +1199,7 @@ declare module '@stdlib/types/array' {
 	/**
 	* Strictly typed index array.
 	*/
-	type TypedIndexArray = Uint8Array | BooleanArray | Int32Array;
+	type TypedIndexArray = Uint8Array | BooleanArray | Int32Array | Int64Array;
 
 	/**
 	* Index array.
@@ -1195,6 +1304,26 @@ declare module '@stdlib/types/array' {
 	}
 
 	/**
+	* Interface describing an integer array index object.
+	*/
+	interface Int64ArrayIndex extends BaseArrayIndex {
+		/**
+		* Read-only property returning the array index type.
+		*/
+		type: 'int';
+
+		/**
+		* Read-only property returning the underlying index array data type.
+		*/
+		dtype: 'int64';
+
+		/**
+		* Read-only property returning the underlying array data.
+		*/
+		data: Int64Array;
+	}
+
+	/**
 	* Interface describing a "generic" boolean array index object.
 	*/
 	interface GenericBooleanArrayIndex extends BaseArrayIndex {
@@ -1237,7 +1366,7 @@ declare module '@stdlib/types/array' {
 	/**
 	* Array index object.
 	*/
-	type ArrayIndex = MaskArrayIndex | BooleanArrayIndex | Int32ArrayIndex | GenericBooleanArrayIndex | GenericIntegerArrayIndex;
+	type ArrayIndex = MaskArrayIndex | BooleanArrayIndex | Int32ArrayIndex | Int64ArrayIndex | GenericBooleanArrayIndex | GenericIntegerArrayIndex;
 
 	/**
 	* Interface describing an object containing index array data.
@@ -1320,6 +1449,26 @@ declare module '@stdlib/types/array' {
 	}
 
 	/**
+	* Interface describing an object containing integer index array data.
+	*/
+	interface Int64IndexArrayObject extends BaseIndexArrayObject {
+		/**
+		* The underlying array associated with an index array.
+		*/
+		data: Int64Array;
+
+		/**
+		* The type of index array.
+		*/
+		type: 'int';
+
+		/**
+		* The data type of the underlying array.
+		*/
+		dtype: 'int64';
+	}
+
+	/**
 	* Interface describing an object containing "generic" integer index array data.
 	*/
 	interface GenericIntegerIndexArrayObject extends BaseIndexArrayObject {
@@ -1362,7 +1511,7 @@ declare module '@stdlib/types/array' {
 	/**
 	* Index array data object.
 	*/
-	type IndexArrayObject = MaskIndexArrayObject | BooleanIndexArrayObject | Int32IndexArrayObject | GenericBooleanIndexArrayObject | GenericIntegerIndexArrayObject;
+	type IndexArrayObject = MaskIndexArrayObject | BooleanIndexArrayObject | Int32IndexArrayObject | Int64IndexArrayObject | GenericBooleanIndexArrayObject | GenericIntegerIndexArrayObject;
 }
 
 /**
@@ -1640,8 +1789,10 @@ declare module '@stdlib/types/blas' {
 * };
 */
 declare module '@stdlib/types/ndarray' {
-	import { ArrayLike, AccessorArrayLike, BooleanArray, BooleanTypedArray, Collection, Complex128Array, Complex64Array, RealOrComplexTypedArray, FloatOrComplexTypedArray, RealTypedArray, ComplexTypedArray, IntegerTypedArray, FloatTypedArray, SignedIntegerTypedArray, UnsignedIntegerTypedArray } from '@stdlib/types/array';
-	import { ComplexLike, Complex128, Complex64 } from '@stdlib/types/complex'; // eslint-disable-line no-duplicate-imports
+	import { ArrayLike, AccessorArrayLike, BooleanArray, BooleanTypedArray, Collection, Complex128Array, Complex64Array, Complex32Array, Int64Array, Uint64Array, RealOrComplexTypedArray, FloatOrComplexTypedArray, RealTypedArray, ComplexTypedArray, IntegerTypedArray, FloatTypedArray, SignedIntegerTypedArray, UnsignedIntegerTypedArray } from '@stdlib/types/array';
+	import { Float16Array } from '@stdlib/types/array'; // FIXME: remove me once `Float16Array` is recognized as a built-in type
+	import { ComplexLike, Complex128, Complex64, Complex32 } from '@stdlib/types/complex'; // eslint-disable-line no-duplicate-imports
+	import { Int64, Uint64 } from '@stdlib/types/number';
 	import { Layout } from '@stdlib/types/blas';
 	import { Remap } from '@stdlib/types/utilities'; // eslint-disable-line no-duplicate-imports
 
@@ -1683,7 +1834,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Data type string for signed integer ndarrays.
 	*/
-	type SignedIntegerDataTypeString = 'int32' | 'int16' | 'int8'; // "signed_integer"
+	type SignedIntegerDataTypeString = 'int64' | 'int32' | 'int16' | 'int8'; // "signed_integer"
 
 	/**
 	* Data type string for signed integer ndarrays.
@@ -1693,7 +1844,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Data type string for unsigned integer ndarrays.
 	*/
-	type UnsignedIntegerDataTypeString = 'uint32' | 'uint16' | 'uint8' | 'uint8c'; // "unsigned_integer"
+	type UnsignedIntegerDataTypeString = 'uint64' | 'uint32' | 'uint16' | 'uint8' | 'uint8c'; // "unsigned_integer"
 
 	/**
 	* Data type string for unsigned integer ndarrays.
@@ -1753,7 +1904,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Data type string for integer index arrays.
 	*/
-	type IntegerIndexDataTypeString = 'int32'; // "integer_index"
+	type IntegerIndexDataTypeString = 'int64' | 'int32'; // "integer_index"
 
 	/**
 	* Data type string for integer index and generic arrays.
@@ -2011,6 +2162,31 @@ declare module '@stdlib/types/ndarray' {
 	}
 
 	/**
+	* Signed 64-bit integer data type object.
+	*/
+	interface Int64DataTypeObject extends BaseDataTypeObject {
+		/**
+		* Alignment (in bytes) of the data type.
+		*/
+		alignment: 8;
+
+		/**
+		* Size (in bytes) of the data type.
+		*/
+		byteLength: 8;
+
+		/**
+		* Single letter character abbreviation for the data type.
+		*/
+		char: 'l';
+
+		/**
+		* "Raw" data type value.
+		*/
+		value: 'int64';
+	}
+
+	/**
 	* Signed 32-bit integer data type object.
 	*/
 	interface Int32DataTypeObject extends BaseDataTypeObject {
@@ -2083,6 +2259,31 @@ declare module '@stdlib/types/ndarray' {
 		* "Raw" data type value.
 		*/
 		value: 'int8';
+	}
+
+	/**
+	* Unsigned 64-bit integer data type object.
+	*/
+	interface Uint64DataTypeObject extends BaseDataTypeObject {
+		/**
+		* Alignment (in bytes) of the data type.
+		*/
+		alignment: 8;
+
+		/**
+		* Size (in bytes) of the data type.
+		*/
+		byteLength: 8;
+
+		/**
+		* Single letter character abbreviation for the data type.
+		*/
+		char: 'v';
+
+		/**
+		* "Raw" data type value.
+		*/
+		value: 'uint64';
 	}
 
 	/**
@@ -2291,6 +2492,11 @@ declare module '@stdlib/types/ndarray' {
 	type Complex32DataType = Complex32DataTypeObject | 'complex32';
 
 	/**
+	* Signed 64-bit integer data type.
+	*/
+	type Int64DataType = Int64DataTypeObject | 'int64';
+
+	/**
 	* Signed 32-bit integer data type.
 	*/
 	type Int32DataType = Int32DataTypeObject | 'int32';
@@ -2304,6 +2510,11 @@ declare module '@stdlib/types/ndarray' {
 	* Signed 8-bit integer data type.
 	*/
 	type Int8DataType = Int8DataTypeObject | 'int8';
+
+	/**
+	* Unsigned 64-bit integer data type.
+	*/
+	type Uint64DataType = Uint64DataTypeObject | 'uint64';
 
 	/**
 	* Unsigned 32-bit integer data type.
@@ -2378,7 +2589,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Data type object for signed integer ndarrays.
 	*/
-	type SignedIntegerDataTypeObject = Int32DataTypeObject | Int16DataTypeObject | Int8DataTypeObject; // "signed_integer"
+	type SignedIntegerDataTypeObject = Int64DataTypeObject | Int32DataTypeObject | Int16DataTypeObject | Int8DataTypeObject; // "signed_integer"
 
 	/**
 	* Data type object for signed integer ndarrays.
@@ -2388,7 +2599,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Data type object for unsigned integer ndarrays.
 	*/
-	type UnsignedIntegerDataTypeObject = Uint32DataTypeObject | Uint16DataTypeObject | Uint8DataTypeObject | Uint8cDataTypeObject; // "unsigned_integer"
+	type UnsignedIntegerDataTypeObject = Uint64DataTypeObject | Uint32DataTypeObject | Uint16DataTypeObject | Uint8DataTypeObject | Uint8cDataTypeObject; // "unsigned_integer"
 
 	/**
 	* Data type object for unsigned integer ndarrays.
@@ -2448,7 +2659,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Data type object for integer index arrays.
 	*/
-	type IntegerIndexDataTypeObject = Int32DataTypeObject; // "integer_index"
+	type IntegerIndexDataTypeObject = Int64DataTypeObject | Int32DataTypeObject; // "integer_index"
 
 	/**
 	* Data type object for integer index and generic arrays.
@@ -3485,7 +3696,7 @@ declare module '@stdlib/types/ndarray' {
 	*     }
 	* };
 	*/
-	interface integerndarray extends typedndarray<number> {
+	interface integerndarray extends typedndarray<number | Int64 | Uint64> {
 		/**
 		* Size (in bytes) of the array.
 		*/
@@ -3547,7 +3758,7 @@ declare module '@stdlib/types/ndarray' {
 	*     }
 	* };
 	*/
-	interface signedintegerndarray extends typedndarray<number> {
+	interface signedintegerndarray extends typedndarray<number | Int64> {
 		/**
 		* Size (in bytes) of the array.
 		*/
@@ -3579,6 +3790,75 @@ declare module '@stdlib/types/ndarray' {
 		* @returns ndarray instance
 		*/
 		set( ...args: Array<number> ): signedintegerndarray;
+	}
+
+	/**
+	* Interface describing an ndarray having a signed 64-bit integer data type.
+	*
+	* @example
+	* const arr: int64ndarray = {
+	*     'byteLength': 24,
+	*     'BYTES_PER_ELEMENT': 8,
+	*     'data': new Int64Array( [ 1, 2, 3 ] ),
+	*     'dtype': 'int64',
+	*     'flags': {
+	*         'ROW_MAJOR_CONTIGUOUS': true,
+	*         'COLUMN_MAJOR_CONTIGUOUS': false
+	*     },
+	*     'length': 3,
+	*     'ndims': 1,
+	*     'offset': 0,
+	*     'order': 'row-major',
+	*     'shape': [ 3 ],
+	*     'strides': [ 1 ],
+	*     'get': function get( i ) {
+	*         return this.data[ i ];
+	*     },
+	*     'set': function set( i, v ) {
+	*         this.data[ i ] = v;
+	*         return this;
+	*     }
+	* };
+	*/
+	interface int64ndarray extends signedintegerndarray {
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: 8;
+
+		/**
+		* A reference to the underlying data buffer.
+		*/
+		data: Int64Array;
+
+		/**
+		* Underlying data type.
+		*/
+		dtype: Int64DataType;
+
+		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): Int64;
+
+		/**
+		* Sets an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts and value to set
+		* @returns ndarray instance
+		*/
+		set( ...args: Array<number> ): int64ndarray;
 	}
 
 	/**
@@ -3624,6 +3904,18 @@ declare module '@stdlib/types/ndarray' {
 		* Underlying data type.
 		*/
 		dtype: Int32DataType;
+
+		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): number;
 
 		/**
 		* Sets an array element specified according to provided subscripts.
@@ -3683,6 +3975,18 @@ declare module '@stdlib/types/ndarray' {
 		dtype: Int16DataType;
 
 		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): number;
+
+		/**
 		* Sets an array element specified according to provided subscripts.
 		*
 		* ## Notes
@@ -3740,6 +4044,18 @@ declare module '@stdlib/types/ndarray' {
 		dtype: Int8DataType;
 
 		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): number;
+
+		/**
 		* Sets an array element specified according to provided subscripts.
 		*
 		* ## Notes
@@ -3780,7 +4096,7 @@ declare module '@stdlib/types/ndarray' {
 	*     }
 	* };
 	*/
-	interface unsignedintegerndarray extends typedndarray<number> {
+	interface unsignedintegerndarray extends typedndarray<number | Uint64> {
 		/**
 		* Size (in bytes) of the array.
 		*/
@@ -3812,6 +4128,75 @@ declare module '@stdlib/types/ndarray' {
 		* @returns ndarray instance
 		*/
 		set( ...args: Array<number> ): unsignedintegerndarray;
+	}
+
+	/**
+	* Interface describing an ndarray having an unsigned 64-bit integer data type.
+	*
+	* @example
+	* const arr: uint64ndarray = {
+	*     'byteLength': 24,
+	*     'BYTES_PER_ELEMENT': 8,
+	*     'data': new Uint64Array( [ 1, 2, 3 ] ),
+	*     'dtype': 'uint64',
+	*     'flags': {
+	*         'ROW_MAJOR_CONTIGUOUS': true,
+	*         'COLUMN_MAJOR_CONTIGUOUS': false
+	*     },
+	*     'length': 3,
+	*     'ndims': 1,
+	*     'offset': 0,
+	*     'order': 'row-major',
+	*     'shape': [ 3 ],
+	*     'strides': [ 1 ],
+	*     'get': function get( i ) {
+	*         return this.data[ i ];
+	*     },
+	*     'set': function set( i, v ) {
+	*         this.data[ i ] = v;
+	*         return this;
+	*     }
+	* };
+	*/
+	interface uint64ndarray extends unsignedintegerndarray {
+		/**
+		* Size (in bytes) of each array element.
+		*/
+		BYTES_PER_ELEMENT: 8;
+
+		/**
+		* A reference to the underlying data buffer.
+		*/
+		data: Uint64Array;
+
+		/**
+		* Underlying data type.
+		*/
+		dtype: Uint64DataType;
+
+		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): Uint64;
+
+		/**
+		* Sets an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts and value to set
+		* @returns ndarray instance
+		*/
+		set( ...args: Array<number> ): uint64ndarray;
 	}
 
 	/**
@@ -3857,6 +4242,18 @@ declare module '@stdlib/types/ndarray' {
 		* Underlying data type.
 		*/
 		dtype: Uint32DataType;
+
+		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): number;
 
 		/**
 		* Sets an array element specified according to provided subscripts.
@@ -3916,6 +4313,18 @@ declare module '@stdlib/types/ndarray' {
 		dtype: Uint16DataType;
 
 		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): number;
+
+		/**
 		* Sets an array element specified according to provided subscripts.
 		*
 		* ## Notes
@@ -3973,6 +4382,18 @@ declare module '@stdlib/types/ndarray' {
 		dtype: Uint8DataType;
 
 		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): number;
+
+		/**
 		* Sets an array element specified according to provided subscripts.
 		*
 		* ## Notes
@@ -4028,6 +4449,18 @@ declare module '@stdlib/types/ndarray' {
 		* Underlying data type.
 		*/
 		dtype: Uint8cDataType;
+
+		/**
+		* Returns an array element specified according to provided subscripts.
+		*
+		* ## Notes
+		*
+		* -   The number of provided subscripts should equal the number of dimensions.
+		*
+		* @param args - subscripts
+		* @returns array element
+		*/
+		get( ...args: Array<number> ): number;
 
 		/**
 		* Sets an array element specified according to provided subscripts.
@@ -4184,7 +4617,7 @@ declare module '@stdlib/types/ndarray' {
 	*     }
 	* };
 	*/
-	interface realndarray extends typedndarray<number> {
+	interface realndarray extends typedndarray<number | Int64 | Uint64> {
 		/**
 		* Size (in bytes) of the array.
 		*/
@@ -4246,7 +4679,7 @@ declare module '@stdlib/types/ndarray' {
 	*     }
 	* };
 	*/
-	interface realcomplexndarray extends typedndarray<number | ComplexLike> {
+	interface realcomplexndarray extends typedndarray<number | Int64 | Uint64 | ComplexLike> {
 		/**
 		* Size (in bytes) of the array.
 		*/
@@ -4822,6 +5255,7 @@ declare module '@stdlib/types/ndarray' {
 	* Mapping of signed integer data types to ndarray constructors.
 	*/
 	type SignedIntegerDataTypeMap = { // eslint-disable-line @typescript-eslint/consistent-type-definitions
+		'int64': int64ndarray;
 		'int32': int32ndarray;
 		'int16': int16ndarray;
 		'int8': int8ndarray;
@@ -4836,6 +5270,7 @@ declare module '@stdlib/types/ndarray' {
 	* Mapping of unsigned integer data types to ndarray constructors.
 	*/
 	type UnsignedIntegerDataTypeMap = { // eslint-disable-line @typescript-eslint/consistent-type-definitions
+		'uint64': uint64ndarray;
 		'uint32': uint32ndarray;
 		'uint16': uint16ndarray;
 		'uint8': uint8ndarray;
@@ -4882,12 +5317,12 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Strictly typed index ndarray.
 	*/
-	type TypedIndexArray = uint8ndarray | booleanndarray | int32ndarray;
+	type TypedIndexArray = uint8ndarray | booleanndarray | int64ndarray | int32ndarray;
 
 	/**
 	* Integer index ndarray.
 	*/
-	type IntegerIndexArray = int32ndarray | GenericIntegerIndexArray;
+	type IntegerIndexArray = int64ndarray | int32ndarray | GenericIntegerIndexArray;
 
 	/**
 	* Index ndarray.
@@ -4999,6 +5434,31 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Interface describing an integer ndarray index object.
 	*/
+	interface Int64ArrayIndex extends BaseArrayIndex {
+		/**
+		* Read-only property returning the ndarray index type.
+		*/
+		type: 'int';
+
+		/**
+		* Read-only property returning the ndarray index "kind".
+		*/
+		kind: IndexArrayKinds;
+
+		/**
+		* Read-only property returning the underlying index ndarray data type.
+		*/
+		dtype: Int64DataType;
+
+		/**
+		* Read-only property returning the underlying ndarray data.
+		*/
+		data: int64ndarray;
+	}
+
+	/**
+	* Interface describing an integer ndarray index object.
+	*/
 	interface Int32ArrayIndex extends BaseArrayIndex {
 		/**
 		* Read-only property returning the ndarray index type.
@@ -5024,11 +5484,31 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Interface describing a Cartesian ndarray index object.
 	*/
+	interface CartesianInt64ArrayIndex extends Int64ArrayIndex {
+		/**
+		* Read-only property returning the ndarray index "kind".
+		*/
+		kind: 'cartesian';
+	}
+
+	/**
+	* Interface describing a Cartesian ndarray index object.
+	*/
 	interface CartesianInt32ArrayIndex extends Int32ArrayIndex {
 		/**
 		* Read-only property returning the ndarray index "kind".
 		*/
 		kind: 'cartesian';
+	}
+
+	/**
+	* Interface describing a linear ndarray index object.
+	*/
+	interface LinearInt64ArrayIndex extends Int64ArrayIndex {
+		/**
+		* Read-only property returning the ndarray index "kind".
+		*/
+		kind: 'linear';
 	}
 
 	/**
@@ -5114,7 +5594,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* ndarray index object.
 	*/
-	type ndindex = MaskArrayIndex | BooleanArrayIndex | Int32ArrayIndex | GenericBooleanArrayIndex | GenericIntegerArrayIndex | CartesianInt32ArrayIndex | CartesianGenericArrayIndex | LinearInt32ArrayIndex | LinearGenericArrayIndex;
+	type ndindex = MaskArrayIndex | BooleanArrayIndex | Int64ArrayIndex | Int32ArrayIndex | GenericBooleanArrayIndex | GenericIntegerArrayIndex | CartesianInt64ArrayIndex | CartesianInt32ArrayIndex | CartesianGenericArrayIndex | LinearInt64ArrayIndex | LinearInt32ArrayIndex | LinearGenericArrayIndex;
 
 	/**
 	* Interface describing an object containing index ndarray data.
@@ -5194,6 +5674,31 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Interface describing an object containing integer index ndarray data.
 	*/
+	interface Int64IndexArrayObject extends BaseIndexArrayObject {
+		/**
+		* An ndarray view of the underlying ndarray data associated with an index ndarray.
+		*/
+		data: int64ndarray;
+
+		/**
+		* The index ndarray "kind".
+		*/
+		kind: IndexArrayKinds;
+
+		/**
+		* The type of index ndarray.
+		*/
+		type: 'int';
+
+		/**
+		* The data type of the underlying ndarray.
+		*/
+		dtype: Int64DataType;
+	}
+
+	/**
+	* Interface describing an object containing integer index ndarray data.
+	*/
 	interface Int32IndexArrayObject extends BaseIndexArrayObject {
 		/**
 		* An ndarray view of the underlying ndarray data associated with an index ndarray.
@@ -5219,11 +5724,31 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Interface describing an object containing Cartesian index ndarray data.
 	*/
+	interface CartesianInt64IndexArrayObject extends Int64IndexArrayObject {
+		/**
+		* The index ndarray "kind".
+		*/
+		kind: 'cartesian';
+	}
+
+	/**
+	* Interface describing an object containing Cartesian index ndarray data.
+	*/
 	interface CartesianInt32IndexArrayObject extends Int32IndexArrayObject {
 		/**
 		* The index ndarray "kind".
 		*/
 		kind: 'cartesian';
+	}
+
+	/**
+	* Interface describing an object containing linear index ndarray data.
+	*/
+	interface LinearInt64IndexArrayObject extends Int64IndexArrayObject {
+		/**
+		* The index ndarray "kind".
+		*/
+		kind: 'linear';
 	}
 
 	/**
@@ -5309,7 +5834,7 @@ declare module '@stdlib/types/ndarray' {
 	/**
 	* Index ndarray data object.
 	*/
-	type ndindexObject = MaskIndexArrayObject | BooleanIndexArrayObject | Int32IndexArrayObject | GenericBooleanIndexArrayObject | GenericIntegerIndexArrayObject | CartesianInt32IndexArrayObject | CartesianGenericIndexArrayObject | LinearInt32IndexArrayObject | LinearGenericIndexArrayObject;
+	type ndindexObject = MaskIndexArrayObject | BooleanIndexArrayObject | Int64IndexArrayObject | Int32IndexArrayObject | GenericBooleanIndexArrayObject | GenericIntegerIndexArrayObject | CartesianInt64IndexArrayObject | CartesianInt32IndexArrayObject | CartesianGenericIndexArrayObject | LinearInt64IndexArrayObject | LinearInt32IndexArrayObject | LinearGenericIndexArrayObject;
 }
 
 /**
