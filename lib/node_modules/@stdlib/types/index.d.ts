@@ -1789,10 +1789,9 @@ declare module '@stdlib/types/blas' {
 * };
 */
 declare module '@stdlib/types/ndarray' {
-	import { ArrayLike, AccessorArrayLike, BooleanArray, BooleanTypedArray, Collection, Complex128Array, Complex64Array, Complex32Array, Int64Array, Uint64Array, RealOrComplexTypedArray, FloatOrComplexTypedArray, RealTypedArray, ComplexTypedArray, IntegerTypedArray, FloatTypedArray, SignedIntegerTypedArray, UnsignedIntegerTypedArray } from '@stdlib/types/array';
-	import { Float16Array } from '@stdlib/types/array'; // FIXME: remove me once `Float16Array` is recognized as a built-in type
+	import { ArrayLike, AccessorArrayLike, BooleanArray, BooleanTypedArray, Collection, Complex128Array, Complex64Array, Complex32Array, Int64Array, Uint64Array, RealOrComplexTypedArray, FloatOrComplexTypedArray, RealTypedArray, ComplexTypedArray, IntegerTypedArray, FloatTypedArray, SignedIntegerTypedArray, UnsignedIntegerTypedArray, Float16Array } from '@stdlib/types/array'; // FIXME: remove `Float16Array` once recognized as a built-in type
 	import { ComplexLike, Complex128, Complex64, Complex32 } from '@stdlib/types/complex'; // eslint-disable-line no-duplicate-imports
-	import { Int64, Uint64 } from '@stdlib/types/number';
+	import { Int64, Uint64 } from '@stdlib/types/number'; // eslint-disable-line no-duplicate-imports
 	import { Layout } from '@stdlib/types/blas';
 	import { Remap } from '@stdlib/types/utilities'; // eslint-disable-line no-duplicate-imports
 
