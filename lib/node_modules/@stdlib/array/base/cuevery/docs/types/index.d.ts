@@ -36,7 +36,7 @@ interface CuEvery {
 	* var x = [ true, true, true, false, true ];
 	*
 	* var y = cuevery( x );
-	*  // returns [ true, true, true, false, false ];
+	* // returns [ true, true, true, false, false ];
 	*/
 	( x: Collection | AccessorArrayLike<any> ): Array<boolean>;
 

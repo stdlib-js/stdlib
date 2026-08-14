@@ -103,7 +103,7 @@ Computes the sum of the [absolute values][absolute-value] of the real and imagin
 
 const stdlib_complex128_t c = stdlib_complex128( 5.0, -3.0 );
 
-double y = c_dcabs1( z );
+double y = c_dcabs1( c );
 // returns 8.0
 ```
 
@@ -148,7 +148,7 @@ int main( void ) {
         stdlib_complex128( 0.0/0.0, 0.0/0.0 )
     };
 
-    float y;
+    double y;
     int i;
     for ( i = 0; i < 4; i++ ) {
         y = c_dcabs1( x[ i ] );

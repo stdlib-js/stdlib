@@ -55,7 +55,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * });
 *
 * // Perform reduction:
-* var out = includes( [ x, searchElement ] );
+* var out = includes( [ x, v ] );
 * // returns true
 */
 declare function includes( arrays: ArrayLike<ndarray> ): boolean;

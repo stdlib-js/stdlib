@@ -122,20 +122,17 @@ y = mylogcdf( 1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var logcdf = require( '@stdlib/stats/base/dists/t/logcdf' );
 
-var v;
-var x;
-var y;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var x = uniform( 10, -3.0, 3.0, opts );
+var v = uniform( 10, 0.0, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    x = (randu() * 6.0) - 3.0;
-    v = randu() * 10.0;
-    y = logcdf( x, v );
-    console.log( 'x: %d, v: %d, ln(F(x;v)): %d', x.toFixed( 4 ), v.toFixed( 4 ), y.toFixed( 4 ) );
-}
+logEachMap( 'x: %0.4f, v: %0.4f, ln(F(x;v)): %0.4f', x, v, logcdf );
 ```
 
 </section>

@@ -28,9 +28,9 @@ interface Options {
 	thisArg?: any;
 
 	/**
-	* If `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned.
+	* If `'values'`, values are returned; if `'keys'`, keys are returned; if `'*'`, both keys and values are returned.
 	*/
-	returns?: 'values' | 'indices' | '*';
+	returns?: 'values' | 'keys' | '*';
 }
 
 /**
@@ -127,7 +127,7 @@ declare function groupOwn<T extends object, K extends string | symbol>(
 * @param obj - input object
 * @param options - function options
 * @param options.thisArg - execution context
-* @param options.returns - if `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned (default: 'values')
+* @param options.returns - if `'values'`, values are returned; if `'keys'`, keys are returned; if `'*'`, both keys and values are returned (default: 'values')
 * @param indicator - indicator function indicating which group an element in the input object belongs to
 * @returns group results
 *
@@ -142,14 +142,14 @@ declare function groupOwn<T extends object, K extends string | symbol>(
 *     'd': 'date'
 * };
 * var opts = {
-*     'returns': 'indices'
+*     'returns': 'keys'
 * };
 * var out = groupOwn( obj, opts, indicator );
 * // e.g., returns { 'a': [ 'a' ], 'b': [ 'b' ], 'c': [ 'c' ], 'd': [ 'd' ] }
 */
 declare function groupOwn<T extends object, K extends string | symbol>(
 	obj: T,
-	options: Options & { returns: 'indices' },
+	options: Options & { returns: 'keys' },
 	indicator: Indicator<T[keyof T], K>
 ): { [P in K]: Array<keyof T> };
 
@@ -174,7 +174,7 @@ declare function groupOwn<T extends object, K extends string | symbol>(
 * @param obj - input object
 * @param options - function options
 * @param options.thisArg - execution context
-* @param options.returns - if `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned (default: 'values')
+* @param options.returns - if `'values'`, values are returned; if `'keys'`, keys are returned; if `'*'`, both keys and values are returned (default: 'values')
 * @param indicator - indicator function indicating which group an element in the input object belongs to
 * @returns group results
 *
@@ -221,7 +221,7 @@ declare function groupOwn<T extends object, K extends string | symbol>(
 * @param obj - input object
 * @param options - function options
 * @param options.thisArg - execution context
-* @param options.returns - if `'values'`, values are returned; if `'indices'`, indices are returned; if `'*'`, both indices and values are returned (default: 'values')
+* @param options.returns - if `'values'`, values are returned; if `'keys'`, keys are returned; if `'*'`, both keys and values are returned (default: 'values')
 * @param indicator - indicator function indicating which group an element in the input object belongs to
 * @returns group results
 *

@@ -58,7 +58,7 @@ interface Options {
 *     'url': 'https://stdlib.io/error-decoder.html'
 * };
 *
-* var fcn = factory( opts );
+* var fcn = fmtprodmsgFactory( opts );
 * // returns <Function>
 */
 declare function fmtprodmsgFactory( options?: Options ): FormatProdErrorMsgFunction;

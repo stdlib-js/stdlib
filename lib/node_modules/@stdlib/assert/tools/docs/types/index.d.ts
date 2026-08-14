@@ -36,7 +36,7 @@ interface Namespace {
 	* -   The predicate function should accept a single argument: an array element. If the array element satisfies a test condition, the function should return `true`; otherwise, the function should return `false`.
 	* -   Given an input array, the returned function returns `true` if all elements pass the test and `false` otherwise.
 	* -   The returned function returns `false` if provided an empty array.
-	* -   The returned function returns `false` is not provided an array.
+	* -   The returned function returns `false` if not provided an array.
 	*
 	* @param predicate - function to apply
 	* @returns an array function
@@ -65,7 +65,7 @@ interface Namespace {
 	* -   The predicate function should accept a single argument: an element from an array-like object. If the element satisfies a test condition, the function should return `true`; otherwise, the function should return `false`.
 	* -   Given an input array-like object, the returned function returns `true` if all elements pass the test and `false` otherwise.
 	* -   The returned function returns `false` if provided an empty array-like object.
-	* -   The returned function returns `false` is not provided an array-like object.
+	* -   The returned function returns `false` if not provided an array-like object.
 	*
 	* @param predicate - function to apply
 	* @returns an array-like object function
@@ -94,7 +94,7 @@ interface Namespace {
 	* -   The predicate function should accept a single argument: a typed array element. If the element satisfies a test condition, the function should return `true`; otherwise, the function should return `false`.
 	* -   Given an input typed array, the returned function returns `true` if all elements pass the test and `false` otherwise.
 	* -   The returned function returns `false` if provided an empty typed array.
-	* -   The returned function returns `false` is not provided a typed array.
+	* -   The returned function returns `false` if not provided a typed array.
 	*
 	* @param predicate - function to apply
 	* @returns a typed array function

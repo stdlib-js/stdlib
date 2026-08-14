@@ -115,7 +115,7 @@ logEachMap( 'atanh(%0.4f) = %0.4f', x, atanh );
 
 #### stdlib_base_atanh( x )
 
-Computes the [hyperbolic arctangent][hyperbolic-arctangent] of double-precision floating-point number.
+Computes the [hyperbolic arctangent][hyperbolic-arctangent] of a double-precision floating-point number.
 
 ```c
 double out = stdlib_base_atanh( 0.0 );

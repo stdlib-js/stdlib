@@ -1,8 +1,8 @@
 {
-	"objectMode": false,
-	"encoding": null,
-	"sep": "\n",
-	"copy": true,
-	"siter": 1e308,
-	"name": "improved-ziggurat"
+  "objectMode": false,
+  "encoding": null,
+  "sep": "\n",
+  "copy": true,
+  "siter": 1e308,
+  "name": "improved-ziggurat"
 }

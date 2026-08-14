@@ -261,7 +261,7 @@ interface NoneByAsync {
 	* };
 	*
 	* // Create an `noneByAsync` function which invokes the predicate function for each collection element sequentially:
-	* var noneByAsync = factory( opts, predicate );
+	* var noneBy = noneByAsync.factory( opts, predicate );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -282,7 +282,7 @@ interface NoneByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* noneByAsync( files, done );
+	* noneBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( options: Options<T, V>, predicate: Predicate<T, V> ): FactoryFunction<T>;
 
@@ -316,7 +316,7 @@ interface NoneByAsync {
 	*     }
 	* }
 	*
-	* var noneByAsync = factory( predicate );
+	* var noneBy = noneByAsync.factory( predicate );
 	*
 	* // Create a collection over which to iterate:
 	* var files = [
@@ -337,7 +337,7 @@ interface NoneByAsync {
 	* }
 	*
 	* // Try to read each element in `files`:
-	* noneByAsync( files, done );
+	* noneBy( files, done );
 	*/
 	factory<T = unknown, V = unknown>( predicate: Predicate<T, V> ): FactoryFunction<T>;
 }

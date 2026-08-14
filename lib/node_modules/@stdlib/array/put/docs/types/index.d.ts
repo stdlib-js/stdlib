@@ -59,7 +59,7 @@ interface Options {
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 *
 * var indices = [ 1, 2 ];
-* var values = [ 20, 30 ];
+* var values = new Int32Array( [ 20, 30 ] );
 *
 * var out = put( x, indices, values );
 * // returns <Int32Array>[ 1, 20, 30, 4 ]
@@ -72,7 +72,7 @@ interface Options {
 *
 * var x = new Int32Array( [ 1, 2, 3, 4 ] );
 *
-* var out = put( x, [ 1, 2 ], [ 30 ] );
+* var out = put( x, [ 1, 2 ], new Int32Array( [ 30 ] ) );
 * // returns <Int32Array>[ 1, 30, 30, 4 ]
 *
 * var bool = ( out === x );

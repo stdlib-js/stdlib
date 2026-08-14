@@ -132,8 +132,8 @@ static napi_value addon( napi_env env, napi_callback_info info ) {
 The function accepts the following arguments:
 
 -   **env**: `[in] napi_env` environment under which the function is invoked.
--   **type1**: `[in] napi_valuetype` first data type.
--   **type2**: `[in] napi_valuetype` second data type.
+-   **type1**: `[in] napi_typedarray_type` first data type.
+-   **type2**: `[in] napi_typedarray_type` second data type.
 -   **message**: `[in] char*` error message.
 -   **err**: `[out] napi_value*` pointer for storing a JavaScript error.
 

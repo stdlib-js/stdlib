@@ -1,7 +1,7 @@
 {
   "name": "@stdlib/datasets/savoy-stopwords-ger",
   "version": "0.0.0",
-  "description": "A list German stop words.",
+  "description": "A list of German stop words.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",

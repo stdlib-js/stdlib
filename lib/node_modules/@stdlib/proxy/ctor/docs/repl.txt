@@ -11,7 +11,7 @@
 
     - setPrototypeOf( target, prototype )
         Trap for `Object.setPrototypeOf()`. The method must return a boolean
-        indicating if prototype successfully set.
+        indicating if the prototype was successfully set.
 
     - isExtensible( target )
         Trap for `Object.isExtensible()`. The method must return a boolean.

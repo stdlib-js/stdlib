@@ -17,7 +17,10 @@
 */
 
 #include "stdlib/math/base/special/lucasf.h"
+#include "stdlib/math/base/assert/is_nonnegative_integerf.h"
 #include "stdlib/constants/float32/max_safe_nth_lucas.h"
+#include <stdint.h>
+#include <stdlib.h>
 
 static const int32_t lucas_value[ 35 ] = {
 	2,
@@ -64,16 +67,16 @@ static const int32_t lucas_value[ 35 ] = {
 * @return      output value
 *
 * @example
-* float out = stdlib_base_lucasf( 1 );
+* float out = stdlib_base_lucasf( 1.0f );
 * // returns 1.0f
 *
 * @example
-* float out = stdlib_base_lucasf( -1 );
+* float out = stdlib_base_lucasf( -1.0f );
 * // returns NaN
 */
-float stdlib_base_lucasf( const int32_t n ) {
-	if ( n < 0 || n > STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_LUCAS ) {
+float stdlib_base_lucasf( const float n ) {
+	if ( !stdlib_base_is_nonnegative_integerf( n ) || n > STDLIB_CONSTANT_FLOAT32_MAX_SAFE_NTH_LUCAS ) {
 		return 0.0f / 0.0f; // NaN
 	}
-	return lucas_value[ n ];
+	return lucas_value[ (size_t)n ];
 }

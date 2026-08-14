@@ -26,6 +26,6 @@ int main( void ) {
 	int i;
 	for ( i = 0; i < 5; i++ ) {
 		y = stdlib_base_sinpi( x[ i ] );
-		printf( "sinpi(%lf) = %lf\n", x[ i ], y );
+		printf( "sin( π * %lf ) = %lf\n", x[ i ], y );
 	}
 }

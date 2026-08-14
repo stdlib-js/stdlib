@@ -19,17 +19,17 @@
 !> Wraps `scnrm2` as a subroutine.
 !
 ! @param {integer} N - number of indexed elements
-! @param {Array<complex>} cx - input array
-! @param {integer} strideX - `cx` stride length
+! @param {Array<complex>} x - input array
+! @param {integer} strideX - `x` stride length
 ! @param {real} nrm2 - output variable reference
 !<
-subroutine scnrm2sub( N, cx, strideX, nrm2 )
+subroutine scnrm2sub( N, x, strideX, nrm2 )
   implicit none
   ! ..
   ! External functions:
   interface
-    real function scnrm2( N, cx, strideX )
-      complex :: cx(*)
+    real function scnrm2( N, x, strideX )
+      complex :: x(*)
       integer :: strideX, N
     end function scnrm2
   end interface
@@ -39,9 +39,9 @@ subroutine scnrm2sub( N, cx, strideX, nrm2 )
   real :: nrm2
   ! ..
   ! Array arguments:
-  complex :: cx(*)
+  complex :: x(*)
   ! ..
   ! Compute the L2-norm:
-  nrm2 = scnrm2( N, cx, strideX )
+  nrm2 = scnrm2( N, x, strideX )
   return
 end subroutine scnrm2sub

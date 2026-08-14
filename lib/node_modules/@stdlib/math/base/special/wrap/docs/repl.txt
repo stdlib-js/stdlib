@@ -1,6 +1,6 @@
 
 {{alias}}( v, min, max )
-    Wraps a value on the half-open interval `[min,max)`.
+    Wraps a value to the half-open interval `[min,max)`.
 
     The function does not distinguish between positive and negative zero. Where
     appropriate, the function returns positive zero.

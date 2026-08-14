@@ -11,7 +11,7 @@
 
     Parameters
     ----------
-    dtype: string
+    dtype: string|DataType
         Underlying data type.
 
     shape: ArrayLikeObject<integer>
@@ -30,10 +30,8 @@
     --------
     > var arr = {{alias}}( 'float64', [ 2, 2 ], 'row-major' )
     <ndarray>
-    > var sh = arr.shape
+    > var sh = {{alias:@stdlib/ndarray/shape}}( arr )
     [ 2, 2 ]
-    > var dt = arr.dtype
-    'float64'
 
     See Also
     --------

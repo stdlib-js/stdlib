@@ -4,7 +4,7 @@
 
     Parameters
     ----------
-    dtypeX: string
+    dtypeX: string|DataType
         Array data type.
 
     Returns

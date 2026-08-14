@@ -148,7 +148,7 @@ void rand_array_ui32( unsigned int *out, const unsigned int len, const unsigned 
 * @param x    input array
 * @param len  array length
 */
-void ui32_to_f64( double *out, unsigned int *x, unsigned int len ) {
+void ui32_to_f64( double *out, const unsigned int *x, const unsigned int len ) {
 	unsigned int i;
 
 	for ( i = 0; i < len; i++ ) {
@@ -163,7 +163,7 @@ void ui32_to_f64( double *out, unsigned int *x, unsigned int len ) {
 * @param x    input array
 * @param len  array length
 */
-void f64_to_ui32( unsigned int *out, double *x, unsigned int len ) {
+void f64_to_ui32( unsigned int *out, const double *x, const unsigned int len ) {
 	unsigned int i;
 
 	for ( i = 0; i < len; i++ ) {

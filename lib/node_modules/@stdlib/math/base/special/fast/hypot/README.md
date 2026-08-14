@@ -126,7 +126,7 @@ logEachMap( 'hypot(%d,%d) = %0.4f', x, y, hypot );
 ### Usage
 
 ```c
-#include "stdlib/math/base/special/fast/hypot.h
+#include "stdlib/math/base/special/fast/hypot.h"
 ```
 
 #### stdlib_base_fast_hypot( x, y )

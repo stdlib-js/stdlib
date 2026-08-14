@@ -29,14 +29,8 @@
 #include "stdlib/constants/float64/pinf.h"
 #include <stdint.h>
 
-
-// VARIABLES //
-
 static const double MAX_INT = STDLIB_CONSTANT_FLOAT64_MAX_SAFE_INTEGER + 1.0;
 static const double HUGE_VALUE = 1.0e+308;
-
-
-// MAIN //
 
 /**
 * Rounds a double-precision floating-point number to the nearest multiple of \\(10^n\\) toward positive infinity.

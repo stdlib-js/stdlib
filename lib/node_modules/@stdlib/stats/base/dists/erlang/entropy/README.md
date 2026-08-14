@@ -123,22 +123,19 @@ v = entropy( 2, -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var EPS = require( '@stdlib/constants/float64/eps' );
 var entropy = require( '@stdlib/stats/base/dists/erlang/entropy' );
 
-var lambda;
-var k;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var k = discreteUniform( 10, 0, 10, opts );
+var lambda = uniform( 10, EPS, 10.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    k = round( randu()*10.0 );
-    lambda = ( randu()*10.0 ) + EPS;
-    v = entropy( k, lambda );
-    console.log( 'k: %d, λ: %d, h(X;k,λ): %d', k.toFixed( 4 ), lambda.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'k: %d, λ: %0.4f, h(X;k,λ): %0.4f', k, lambda, entropy );
 ```
 
 </section>

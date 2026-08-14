@@ -27,7 +27,7 @@ import cumin = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	cumin( x.length, x, 1, y, 1 ); // $ExpectType NumericArray
+	cumin( x.length, x, 1, y, 1 ); // $ExpectType Float64Array
 	cumin( x.length, new AccessorArray( x ), 1, new AccessorArray( y ), 1 ); // $ExpectType AccessorArray<number>
 }
 
@@ -125,7 +125,7 @@ import cumin = require( './index' );
 	const x = new Float64Array( 10 );
 	const y = new Float64Array( 10 );
 
-	cumin.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType NumericArray
+	cumin.ndarray( x.length, x, 1, 0, y, 1, 0 ); // $ExpectType Float64Array
 	cumin.ndarray( x.length, new AccessorArray( x ), 1, 0, new AccessorArray( y ), 1, 0 ); // $ExpectType AccessorArray<number>
 }
 

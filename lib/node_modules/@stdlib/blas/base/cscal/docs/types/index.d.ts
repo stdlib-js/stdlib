@@ -31,74 +31,74 @@ interface Routine {
 	* Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant.
 	*
 	* @param N - number of indexed elements
-	* @param ca - scalar constant
-	* @param cx - input array
-	* @param strideX - `cx` stride length
+	* @param alpha - scalar constant
+	* @param x - input array
+	* @param strideX - `x` stride length
 	* @returns input array
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
-	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var ca = new Complex64( 2.0, 2.0 );
+	* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	* var alpha = new Complex64( 2.0, 2.0 );
 	*
-	* cscal( 3, ca, cx, 1 );
-	* // cx => <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
+	* cscal( 3, alpha, x, 1 );
+	* // x => <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 	*/
-	( N: number, ca: Complex64, cx: Complex64Array, strideX: number ): Complex64Array;
+	( N: number, alpha: Complex64, x: Complex64Array, strideX: number ): Complex64Array;
 
 	/**
 	* Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant.
 	*
 	* @param N - number of indexed elements
-	* @param ca - scalar constant
-	* @param cx - input array
-	* @param strideX - `cx` stride length
-	* @param offsetX - starting index for `cx`
+	* @param alpha - scalar constant
+	* @param x - input array
+	* @param strideX - `x` stride length
+	* @param offsetX - starting index for `x`
 	* @returns input array
 	*
 	* @example
 	* var Complex64Array = require( '@stdlib/array/complex64' );
 	* var Complex64 = require( '@stdlib/complex/float32/ctor' );
 	*
-	* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-	* var ca = new Complex64( 2.0, 2.0 );
+	* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	* var alpha = new Complex64( 2.0, 2.0 );
 	*
-	* cscal.ndarray( 3, ca, cx, 1, 0 );
-	* // cx => <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
+	* cscal.ndarray( 3, alpha, x, 1, 0 );
+	* // x => <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 	*/
-	ndarray( N: number, ca: Complex64, cx: Complex64Array, strideX: number, offsetX: number ): Complex64Array;
+	ndarray( N: number, alpha: Complex64, x: Complex64Array, strideX: number, offsetX: number ): Complex64Array;
 }
 
 /**
 * Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant.
 *
 * @param N - number of indexed elements
-* @param ca - scalar constant
-* @param cx - input array
-* @param strideX - `cx` stride length
+* @param alpha - scalar constant
+* @param x - input array
+* @param strideX - `x` stride length
 * @returns input array
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
-* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-* var ca = new Complex64( 2.0, 2.0 );
+* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+* var alpha = new Complex64( 2.0, 2.0 );
 *
-* cscal( 3, ca, cx, 1 );
-* // cx => <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
+* cscal( 3, alpha, x, 1 );
+* // x => <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 * var Complex64 = require( '@stdlib/complex/float32/ctor' );
 *
-* var cx = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-* var ca = new Complex64( 2.0, 2.0 );
+* var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+* var alpha = new Complex64( 2.0, 2.0 );
 *
-* cscal.ndarray( 3, ca, cx, 1, 0 );
-* // cx => <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
+* cscal.ndarray( 3, alpha, x, 1, 0 );
+* // x => <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
 */
 declare var cscal: Routine;
 

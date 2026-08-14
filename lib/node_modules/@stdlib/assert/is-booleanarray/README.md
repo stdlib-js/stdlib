@@ -105,7 +105,7 @@ bool = isBooleanArray( new Uint32Array( 10 ) );
 bool = isBooleanArray( new Float32Array( 10 ) );
 // returns false
 
-bool = isBooleanArray( new Array( 10 ) );
+bool = isBooleanArray( [] );
 // returns false
 
 bool = isBooleanArray( {} );

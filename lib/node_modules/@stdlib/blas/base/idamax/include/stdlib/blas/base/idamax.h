@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the  Level 1 routine `idamax`.
 */
-#ifndef IDAMAX_H
-#define IDAMAX_H
+#ifndef STDLIB_BLAS_BASE_IDAMAX_H
+#define STDLIB_BLAS_BASE_IDAMAX_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,5 +45,5 @@ CBLAS_INT API_SUFFIX(c_idamax_ndarray)( const CBLAS_INT N, const double *X, cons
 }
 #endif
 
-#endif // !IDAMAX_H
+#endif // !STDLIB_BLAS_BASE_IDAMAX_H
 

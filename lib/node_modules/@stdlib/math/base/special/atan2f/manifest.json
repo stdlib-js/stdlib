@@ -1,0 +1,90 @@
+{
+  "options": {
+    "task": "build"
+  },
+  "fields": [
+    {
+      "field": "src",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "include",
+      "resolve": true,
+      "relative": true
+    },
+    {
+      "field": "libraries",
+      "resolve": false,
+      "relative": false
+    },
+    {
+      "field": "libpath",
+      "resolve": true,
+      "relative": false
+    }
+  ],
+  "confs": [
+    {
+      "task": "build",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/napi/binary",
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/copysignf",
+        "@stdlib/number/float32/base/signbit",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/special/atanf",
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/pi"
+      ]
+    },
+    {
+      "task": "benchmark",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/copysignf",
+        "@stdlib/number/float32/base/signbit",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/special/atanf",
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/pi"
+      ]
+    },
+    {
+      "task": "examples",
+      "src": [
+        "./src/main.c"
+      ],
+      "include": [
+        "./include"
+      ],
+      "libraries": [],
+      "libpath": [],
+      "dependencies": [
+        "@stdlib/math/base/assert/is-infinitef",
+        "@stdlib/math/base/special/copysignf",
+        "@stdlib/number/float32/base/signbit",
+        "@stdlib/math/base/assert/is-nanf",
+        "@stdlib/math/base/special/atanf",
+        "@stdlib/constants/float32/pinf",
+        "@stdlib/constants/float32/pi"
+      ]
+    }
+  ]
+}

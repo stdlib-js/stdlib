@@ -32,7 +32,7 @@ interface Options {
 	dtype?: 'double' | 'float';
 
 	/**
-	* Function name. Default: `'evalpoly'`.
+	* Function name. Default: `'evalrational'`.
 	*/
 	name?: string;
 }

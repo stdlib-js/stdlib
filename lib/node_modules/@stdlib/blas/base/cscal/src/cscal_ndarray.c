@@ -26,12 +26,12 @@
 * Scales a single-precision complex floating-point vector by a single-precision complex floating-point constant.
 *
 * @param N        number of indexed elements
-* @param ca       scalar constant
-* @param CX       input array
-* @param strideX  CX stride length
-* @param offsetX  starting index for CX
+* @param alpha    scalar constant
+* @param X        input array
+* @param strideX  X stride length
+* @param offsetX  starting index for X
 */
-void API_SUFFIX(c_cscal_ndarray)( const CBLAS_INT N, const stdlib_complex64_t ca, void *CX, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
+void API_SUFFIX(c_cscal_ndarray)( const CBLAS_INT N, const stdlib_complex64_t alpha, void *X, const CBLAS_INT strideX, const CBLAS_INT offsetX ) {
 	stdlib_complex64_t z;
 	int64_t is1;
 	int64_t i;
@@ -39,12 +39,12 @@ void API_SUFFIX(c_cscal_ndarray)( const CBLAS_INT N, const stdlib_complex64_t ca
 	if ( N <= 0 ) {
 		return;
 	}
-	stdlib_complex64_t *ip1 = (stdlib_complex64_t *)CX;
+	stdlib_complex64_t *ip1 = (stdlib_complex64_t *)X;
 	is1 = (int64_t)strideX;
 	ip1 += offsetX;
 	for ( i = 0; i < N; i++, ip1 += is1 ) {
 		z = *ip1;
-		*ip1 = stdlib_base_complex64_mul( ca, z );
+		*ip1 = stdlib_base_complex64_mul( alpha, z );
 	}
 	return;
 }

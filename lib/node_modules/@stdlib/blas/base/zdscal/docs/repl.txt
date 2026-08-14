@@ -1,15 +1,15 @@
 
-{{alias}}( N, da, zx, strideZX )
+{{alias}}( N, alpha, x, strideX )
     Scales a double-precision complex floating-point vector by a double-
     precision floating-point constant.
 
-    The `N` and stride parameters determine which elements in `zx` are scaled by
-    `da`.
+    The `N` and stride parameters determine which elements in `x` are scaled by
+    `alpha`.
 
     Indexing is relative to the first index. To introduce an offset, use typed
     array views.
 
-    If `N` is less than or equal to `0`, the function returns `zx` unchanged.
+    If `N` is less than or equal to `0`, the function returns `x` unchanged.
 
 
     Parameters
@@ -17,42 +17,42 @@
     N: integer
         Number of indexed elements.
 
-    da: double
+    alpha: double
         Scalar constant.
 
-    zx: Complex128Array
+    x: Complex128Array
         Input array.
 
-    strideZX: integer
-        Stride length for `zx`.
+    strideX: integer
+        Stride length for `x`.
 
     Returns
     -------
-    zx: Complex128Array
+    x: Complex128Array
         Input array.
 
     Examples
     --------
     // Standard usage:
-    > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > {{alias}}( 2, 2.0, zx, 1 )
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > {{alias}}( 2, 2.0, x, 1 )
     <Complex128Array>[ 2.0, 4.0, 6.0, 8.0 ]
 
     // N and stride parameters:
-    > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-    > {{alias}}( 2, 2.0, zx, 2 )
+    > x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > {{alias}}( 2, 2.0, x, 2 )
     <Complex128Array>[ 2.0, 4.0, 3.0, 4.0, 10.0, 12.0 ]
 
     // Using typed array views:
-    > var zx0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-    > var zx1 = new {{alias:@stdlib/array/complex128}}( zx0.buffer, zx0.BYTES_PER_ELEMENT*1 );
-    > {{alias}}( 2, 2.0, zx1, 1 )
+    > var x0 = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+    > var x1 = new {{alias:@stdlib/array/complex128}}( x0.buffer, x0.BYTES_PER_ELEMENT*1 );
+    > {{alias}}( 2, 2.0, x1, 1 )
     <Complex128Array>[ 6.0, 8.0, 10.0, 12.0 ]
-    > zx0
+    > x0
     <Complex128Array>[ 1.0, 2.0, 6.0, 8.0, 10.0, 12.0 ]
 
 
-{{alias}}.ndarray( N, da, zx, strideZX, offsetZX )
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX )
     Scales a double-precision complex floating-point vector by a double-
     precision floating-point constant using alternative indexing semantics.
 
@@ -65,33 +65,33 @@
     N: integer
         Number of indexed elements.
 
-    da: number
+    alpha: number
         Scalar constant.
 
-    zx: Complex128Array
+    x: Complex128Array
         Input array.
 
-    strideZX: integer
-        Stride length for `zx`.
+    strideX: integer
+        Stride length for `x`.
 
-    offsetZX: integer
-        Starting index for `zx`.
+    offsetX: integer
+        Starting index for `x`.
 
     Returns
     -------
-    zx: Complex128Array
+    x: Complex128Array
         Input array.
 
     Examples
     --------
     // Standard usage:
-    > var zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
-    > {{alias}}.ndarray( 2, 2.0, zx, 1, 0 )
+    > var x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > {{alias}}.ndarray( 2, 2.0, x, 1, 0 )
     <Complex128Array>[ 2.0, 4.0, 6.0, 8.0 ]
 
     // Advanced indexing:
-    > zx = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-    > {{alias}}.ndarray( 2, 2.0, zx, 1, 2 )
+    > x = new {{alias:@stdlib/array/complex128}}( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+    > {{alias}}.ndarray( 2, 2.0, x, 1, 2 )
     <Complex128Array>[ 1.0, 2.0, 3.0, 4.0, 10.0, 12.0, 14.0, 16.0 ]
 
     See Also

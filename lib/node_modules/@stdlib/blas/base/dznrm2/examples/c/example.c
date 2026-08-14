@@ -21,7 +21,7 @@
 
 int main( void ) {
 	// Create a strided array of interleaved real and imaginary components:
-	const double zx[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+	const double x[] = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
 
 	// Specify the number of elements:
 	const int N = 4;
@@ -30,13 +30,13 @@ int main( void ) {
 	const int strideX = 1;
 
 	// Compute the L2-norm:
-	double norm = c_dznrm2( N, (void *)zx, strideX );
+	double norm = c_dznrm2( N, (void *)x, strideX );
 
 	// Print the result:
 	printf( "L2-norm: %lf\n", norm );
 
 	// Compute the L2-norm using alternative indexing semantics:
-	norm = c_dznrm2_ndarray( N, (void *)zx, -strideX, N-1 );
+	norm = c_dznrm2_ndarray( N, (void *)x, -strideX, N-1 );
 
 	// Print the result:
 	printf( "L2-norm: %lf\n", norm );

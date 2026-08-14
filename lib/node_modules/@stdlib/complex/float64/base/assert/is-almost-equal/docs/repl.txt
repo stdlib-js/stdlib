@@ -1,0 +1,45 @@
+
+{{alias}}( z1, z2, maxULP )
+    Tests whether two double-precision complex floating-point numbers are
+    approximately equal within a specified number of ULPs (units in the last
+    place).
+
+    The function returns `false` if either input value has a `NaN` real or
+    imaginary component.
+
+    The function does not distinguish between `-0` and `+0`, treating them as
+    equal.
+
+    Parameters
+    ----------
+    z1: Complex128
+        First complex number.
+
+    z2: Complex128
+        Second complex number.
+
+    maxULP: number
+        Maximum allowed ULP difference.
+
+    Returns
+    -------
+    out: boolean
+        Boolean indicating whether two double-precision complex floating-point
+        numbers are approximately equal within a specified number of ULPs.
+
+    Examples
+    --------
+    > var re1 = 1.0;
+    > var im1 = 3.0;
+    > var re2 = 1.0 + {{alias:@stdlib/constants/float64/eps}};
+    > var im2 = 3.0;
+    > var z1 = new {{alias:@stdlib/complex/float64/ctor}}( re1, im1 );
+    > var z2 = new {{alias:@stdlib/complex/float64/ctor}}( re2, im2 );
+    > var v = {{alias}}( z1, z2, 0 )
+    false
+    > v = {{alias}}( z1, z2, 1 )
+    true
+
+    See Also
+    --------
+

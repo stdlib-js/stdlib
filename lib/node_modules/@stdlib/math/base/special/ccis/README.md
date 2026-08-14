@@ -57,30 +57,16 @@ Evaluates the [cis][cis] function for a double-precision complex floating-point 
 
 ```javascript
 var Complex128 = require( '@stdlib/complex/float64/ctor' );
-var real = require( '@stdlib/complex/float64/real' );
-var imag = require( '@stdlib/complex/float64/imag' );
 
 var z = new Complex128( 0.0, 0.0 );
 
 var v = ccis( z );
-// returns <Complex128>
-
-var re = real( v );
-// returns 1.0
-
-var im = imag( v );
-// returns 0.0
+// returns <Complex128>[ 1.0, 0.0 ]
 
 z = new Complex128( 1.0, 0.0 );
 
 v = ccis( z );
-// returns <Complex128>
-
-re = real( v );
-// returns ~0.540
-
-im = imag( v );
-// returns ~0.841
+// returns <Complex128>[ ~0.540, ~0.841 ]
 ```
 
 </section>

@@ -1,0 +1,24 @@
+
+{{alias}}( str1, str2 )
+    Concatenates two strings.
+
+    Parameters
+    ----------
+    str1: string
+        First input string.
+
+    str2: string
+        Second input string.
+
+    Returns
+    -------
+    out: string
+        Concatenated string.
+
+    Examples
+    --------
+    > var out = {{alias}}( 'beep', 'boop' )
+    'beepboop'
+
+    See Also
+    --------

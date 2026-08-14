@@ -34,7 +34,7 @@ type PredicateFunction = ( elem: any ) => boolean;
 * -   The predicate function should accept a single argument: a typed array element. If the element satisfies a test condition, the function should return `true`; otherwise, the function should return `false`.
 * -   Given an input typed array, the returned function returns `true` if all elements pass the test and `false` otherwise.
 * -   The returned function returns `false` if provided an empty typed array.
-* -   The returned function returns `false` is not provided a typed array.
+* -   The returned function returns `false` if not provided a typed array.
 *
 * @param predicate - function to apply
 * @returns a typed array function

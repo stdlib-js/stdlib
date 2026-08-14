@@ -1,0 +1,33 @@
+
+{{alias}}( x, y, maxULP )
+    Tests if two arrays have respective elements which are approximately equal
+    within a specified number of ULPs (units in the last place).
+
+    If provided arrays of unequal length, the function returns `false`.
+
+    Parameters
+    ----------
+    x: Array|TypedArray|Object
+        First input array.
+
+    y: Array|TypedArray|Object
+        Second input array.
+
+    maxULP: integer
+        Maximum allowed ULP difference.
+
+    Returns
+    -------
+    bool: boolean
+        Boolean indicating whether two arrays are approximately equal.
+
+    Examples
+    --------
+    > var x = [ 0, 0, 1, 0 ];
+    > var y = [ 0, 0, 1, 0 ];
+    > var out = {{alias}}( x, y, 0 )
+    true
+
+    See Also
+    --------
+

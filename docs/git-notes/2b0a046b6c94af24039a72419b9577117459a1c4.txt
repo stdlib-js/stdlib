@@ -1,0 +1,7 @@
+---
+type: amend-message
+---
+feat: add C implementation for `stats/base/dists/planck/kurtosis`
+
+Closes: https://github.com/stdlib-js/stdlib/issues/4899
+

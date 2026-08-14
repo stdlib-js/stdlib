@@ -54,7 +54,7 @@ The function has the following parameters:
 -   **N**: number of indexed elements.
 -   **alpha**: scalar constant.
 -   **x**: input [`Float32Array`][@stdlib/array/float32].
--   **stride**: stride length.
+-   **strideX**: stride length.
 
 The `N` and stride parameters determine which elements in the strided array are accessed at runtime. For example, to access every other element:
 

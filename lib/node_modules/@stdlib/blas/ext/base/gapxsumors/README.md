@@ -50,6 +50,7 @@ var v = gapxsumors( x.length, 5.0, x, 1 );
 The function has the following parameters:
 
 -   **N**: number of indexed elements.
+-   **alpha**: scalar constant.
 -   **x**: input [`Array`][mdn-array] or [`typed array`][mdn-typed-array].
 -   **strideX**: stride length.
 

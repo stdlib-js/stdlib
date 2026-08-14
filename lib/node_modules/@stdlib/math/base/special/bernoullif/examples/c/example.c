@@ -18,14 +18,13 @@
 
 #include "stdlib/math/base/special/bernoullif.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-	int32_t i;
+	float i;
 	float v;
 
-	for ( i = 0; i < 70; i++ ) {
+	for ( i = 0.0f; i < 70.0f; i++ ) {
 		v = stdlib_base_bernoullif( i );
-		printf( "bernoullif(%d) = %f\n", i, v );
+		printf( "bernoullif(%f) = %f\n", i, v );
 	}
 }

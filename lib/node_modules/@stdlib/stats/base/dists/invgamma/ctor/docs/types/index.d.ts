@@ -21,7 +21,7 @@
 /**
 * Inverse gamma distribution.
 */
-declare class InverseGamma {
+declare class InvGamma {
 	/**
 	* Inverse gamma distribution constructor.
 	*
@@ -139,4 +139,4 @@ declare class InverseGamma {
 
 // EXPORTS //
 
-export = InverseGamma;
+export = InvGamma;

@@ -75,6 +75,22 @@ declare function nextDataType( dtype: 'float32' ): 'float64';
 * @returns next larger data type
 *
 * @example
+* var dt = nextDataType( 'float16' );
+* // returns 'float32'
+*/
+declare function nextDataType( dtype: 'float16' ): 'float32';
+
+/**
+* Returns the next larger array data type of the same kind.
+*
+* ## Notes
+*
+* -   If a data type does not have a next larger data type or the next larger type is not supported, the function returns `-1`.
+*
+* @param dtype - array data type
+* @returns next larger data type
+*
+* @example
 * var dt = nextDataType( 'int32' );
 * // returns -1
 */

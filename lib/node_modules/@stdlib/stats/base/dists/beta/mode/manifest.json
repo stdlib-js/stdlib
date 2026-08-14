@@ -38,8 +38,7 @@
       "libraries": [],
       "libpath": [],
       "dependencies": [
-        "@stdlib/math/base/napi/binary",
-        "@stdlib/constants/float64/eps"
+        "@stdlib/math/base/napi/binary"
       ]
     },
     {

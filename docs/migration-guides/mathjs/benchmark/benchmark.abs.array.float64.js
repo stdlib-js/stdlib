@@ -30,6 +30,7 @@ var strided = require( '@stdlib/math/strided/special/abs' );
 var dabs = require( '@stdlib/math/strided/special/dabs' );
 var abs = require( '@stdlib/math/special/abs' );
 var tryRequire = require( '@stdlib/utils/try-require' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 
 
@@ -43,7 +44,7 @@ var opts = {
 
 // MAIN //
 
-bench( pkg+'::stdlib:math/strided/special/abs:value=array,dtype=float64,len=100', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/strided/special/abs:value=array,dtype=float64,len=100', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -66,7 +67,7 @@ bench( pkg+'::stdlib:math/strided/special/abs:value=array,dtype=float64,len=100'
 	b.end();
 });
 
-bench( pkg+'::stdlib:math/strided/special/dabs:value=array,dtype=float64,len=100', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/strided/special/dabs:value=array,dtype=float64,len=100', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -89,7 +90,7 @@ bench( pkg+'::stdlib:math/strided/special/dabs:value=array,dtype=float64,len=100
 	b.end();
 });
 
-bench( pkg+'::stdlib:math/special/abs:value=array,dtype=float64,len=100', opts, function benchmark( b ) {
+bench( format( '%s::stdlib:math/special/abs:value=array,dtype=float64,len=100', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;
@@ -115,7 +116,7 @@ bench( pkg+'::stdlib:math/special/abs:value=array,dtype=float64,len=100', opts, 
 opts = {
 	'skip': true
 };
-bench( pkg+'::mathjs:abs:value=array,dtype=float64,len=100', opts, function benchmark( b ) {
+bench( format( '%s::mathjs:abs:value=array,dtype=float64,len=100', pkg ), opts, function benchmark( b ) {
 	var x;
 	var y;
 	var i;

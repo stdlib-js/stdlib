@@ -104,7 +104,7 @@ type Unary<U, V> = ( value: U ) => V;
 * var x = ones3d( shape );
 * var y = zeros3d( shape );
 *
-* unary3dBy( [ x, y ], shape, scale );
+* unary3dBy( [ x, y ], shape, scale, accessor );
 *
 * console.log( y );
 * // => [ [ [ -10.0, -10.0 ], [ -10.0, -10.0 ] ] ]

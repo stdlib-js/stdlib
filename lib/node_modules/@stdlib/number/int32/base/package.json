@@ -59,5 +59,10 @@
     "integer",
     "int",
     "32-bit"
-  ]
+  ],
+  "__stdlib__": {
+    "scaffold": {
+      "alias_prefix": "stdlib_base_int32_"
+    }
+  }
 }

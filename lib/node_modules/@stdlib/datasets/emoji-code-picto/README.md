@@ -117,7 +117,7 @@ Options:
 ### Notes
 
 -   Data is written to `stdout` as comma-separated values ([CSV][csv]), where the first line is a header line.
--   In contrast to the programmatic interface, some codes are **duplicated**, due to the inclusion of both [emoji][@stdlib/datasets/emoji] and [text presentation][@stdlib/datasets/emoji] emoji characters. 
+-   In contrast to the programmatic interface, some codes are **duplicated**, due to the inclusion of both [emoji][@stdlib/datasets/emoji] and [text presentation][@stdlib/datasets/emoji] emoji characters.
 
 </section>
 

@@ -1,3 +1,23 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2025 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
 # JavaScript Style Guide
 
 > _An opinionated style guide for writing JavaScript._
@@ -80,6 +100,7 @@ This project contains an [`.editorconfig`][editorconfig] file to be used in conj
 -   [sublime text][sublime-text-editorconfig]
 -   [atom][atom-editorconfig]
 -   [chrome][chrome-editorconfig]
+-   [vscode][vscode-editorconfig]
 
 <!-- </rule> -->
 
@@ -3602,6 +3623,8 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [chrome-editorconfig]: https://chrome.google.com/webstore/detail/github-editorconfig/bppnolhdpdfmmpeefopdbpmabdpoefjh?hl=en-US
 
+[vscode-editorconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+
 [ecma-262]: http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
 
 [function-statements]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
@@ -3628,7 +3651,7 @@ This document may be reused under a [Creative Commons Attribution-ShareAlike Lic
 
 [idiomatic-js]: https://github.com/rwaldron/idiomatic.js/
 
-[popular-convention]: http://sideeffect.kr/popularconvention/#javascript
+[popular-convention]: https://web.archive.org/web/20150701000000/http://sideeffect.kr/popularconvention/#javascript
 
 [quality-guide]: https://github.com/bevacqua/js
 

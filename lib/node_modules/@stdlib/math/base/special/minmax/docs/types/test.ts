@@ -23,7 +23,7 @@ import minmax = require( './index' );
 
 // The function returns an array of numbers...
 {
-	minmax( 3.0, -0.2 ); // $ExpectType number[]
+	minmax( 3.0, -0.2 ); // $ExpectType [number, number]
 }
 
 // The compiler throws an error if the function is provided an argument which is not a number...

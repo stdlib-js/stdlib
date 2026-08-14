@@ -93,9 +93,9 @@ interface IsNonNegativeNumberArray {
 * var bool = isNonNegativeNumberArray.objects( [ new Number(3.0), new Number(1.0) ] );
 * // returns true
 */
-declare var isnonnegativeNumberArray: IsNonNegativeNumberArray;
+declare var isNonNegativeNumberArray: IsNonNegativeNumberArray;
 
 
 // EXPORTS //
 
-export = isnonnegativeNumberArray;
+export = isNonNegativeNumberArray;

@@ -1,0 +1,25 @@
+
+{{alias}}( x )
+    Returns an unsigned 16-bit integer corresponding to the IEEE 754 binary
+    representation of a half-precision floating-point number.
+
+    Parameters
+    ----------
+    x: number
+        Half-precision floating-point number.
+
+    Returns
+    -------
+    out: integer
+        Unsigned 16-bit integer.
+
+    Examples
+    --------
+    > var f16 = {{alias:@stdlib/number/float64/base/to-float16}}( 1.05 )
+    1.0498046875
+    > var w = {{alias}}( f16 )
+    15411
+
+    See Also
+    --------
+

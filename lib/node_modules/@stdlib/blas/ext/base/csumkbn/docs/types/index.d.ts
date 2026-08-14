@@ -36,7 +36,7 @@ interface Routine {
 	* @returns sum
 	*
 	* @example
-	* var Complex64Array = require( '@stdlib/array/float32' );
+	* var Complex64Array = require( '@stdlib/array/complex64' );
 	*
 	* var x = new Complex64Array( [ 1.0, -2.0, 2.0, 3.0 ] );
 	*
@@ -55,7 +55,7 @@ interface Routine {
 	* @returns sum
 	*
 	* @example
-	* var Complex64Array = require( '@stdlib/array/float32' );
+	* var Complex64Array = require( '@stdlib/array/complex64' );
 	*
 	* var x = new Complex64Array( [ 1.0, -2.0, 2.0, 3.0 ] );
 	*
@@ -74,7 +74,7 @@ interface Routine {
 * @returns sum
 *
 * @example
-* var Complex64Array = require( '@stdlib/array/float32' );
+* var Complex64Array = require( '@stdlib/array/complex64' );
 *
 * var x = new Complex64Array( [ 1.0, -2.0, 2.0, 3.0 ] );
 *
@@ -82,7 +82,7 @@ interface Routine {
 * // returns <Complex64>[ 3.0, 1.0 ]
 *
 * @example
-* var Complex64Array = require( '@stdlib/array/float32' );
+* var Complex64Array = require( '@stdlib/array/complex64' );
 *
 * var x = new Complex64Array( [ 1.0, -2.0, 2.0, 3.0 ] );
 *

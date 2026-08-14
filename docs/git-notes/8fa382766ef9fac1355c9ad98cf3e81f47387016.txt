@@ -1,0 +1,13 @@
+---
+type: amend-message
+---
+feat: add C implementation of `stats/base/dists/cauchy/cdf`
+
+PR-URL: #4389
+Closes: #3479
+Ref: #3478
+
+Signed-off-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Co-authored-by: stdlib-bot <82920195+stdlib-bot@users.noreply.github.com>
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>

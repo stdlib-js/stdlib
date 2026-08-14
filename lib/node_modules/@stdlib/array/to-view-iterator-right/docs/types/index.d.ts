@@ -83,16 +83,16 @@ type MapFunction = Nullary | Unary | Binary | Ternary;
 *     return v * 10.0;
 * }
 *
-* var iter = arrayview2iteratorRight( [ 1, 2, 3, 4 ], fcn );
+* var iter = arrayview2iteratorRight( [ 1.0, 2.0, 3.0, 4.0 ], fcn );
 *
 * var v = iter.next().value;
-* // returns 3
+* // returns 40.0
 *
 * v = iter.next().value;
-* // returns 2
+* // returns 30.0
 *
 * var bool = iter.next().done;
-* // returns true
+* // returns false
 */
 declare function arrayview2iteratorRight( src: ArrayLike<any>, mapFcn?: MapFunction, thisArg?: any ): Iterator;
 
@@ -109,10 +109,10 @@ declare function arrayview2iteratorRight( src: ArrayLike<any>, mapFcn?: MapFunct
 * var iter = arrayview2iteratorRight( [ 1, 2, 3, 4 ], 1 );
 *
 * var v = iter.next().value;
-* // returns 3
+* // returns 4
 *
 * v = iter.next().value;
-* // returns 2
+* // returns 3
 *
 * var bool = iter.next().done;
 * // returns false

@@ -18,114 +18,66 @@
 
 #include "stdlib/blas/base/ssyr.h"
 #include "stdlib/blas/base/shared.h"
+#include "stdlib/blas/base/xerbla.h"
 #include "stdlib/strided/base/stride2offset.h"
-#include "stdlib/ndarray/base/assert/is_row_major.h"
 
 /**
-* Performs the symmetric rank 1 operation `A = α*x*x^T + A`.
+* Performs the symmetric rank 1 operation `A = α*x*x^T + A` where `α` is a scalar, `x` is an `N` element vector, and `A` is an `N` by `N` symmetric matrix.
 *
-* @param order    storage layout
+* @param layout   storage layout
 * @param uplo     specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced
 * @param N        number of elements along each dimension of `A`
-* @param alpha    scalar
+* @param alpha    scalar constant
 * @param X        input vector
 * @param strideX  `X` stride length
 * @param A        input matrix
 * @param LDA      stride of the first dimension of `A` (a.k.a., leading dimension of the matrix `A`)
 */
-void API_SUFFIX(c_ssyr)( const CBLAS_LAYOUT order, const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, float *A, const CBLAS_INT LDA ) {
+void API_SUFFIX(c_ssyr)( const CBLAS_LAYOUT layout, const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, float *A, const CBLAS_INT LDA ) {
+	CBLAS_INT vala;
 	CBLAS_INT sa1;
 	CBLAS_INT sa2;
 	CBLAS_INT ox;
 
+	// Perform input argument validation...
+	if ( layout != CblasRowMajor && layout != CblasColMajor ) {
+		c_xerbla( 1, "c_ssyr", "Error: invalid argument. First argument must be a valid layout. Value: `%d`.", layout );
+		return;
+	}
+	if ( uplo != CblasLower && uplo != CblasUpper ) {
+		c_xerbla( 2, "c_ssyr", "Error: invalid argument. Second argument must specify whether to reference the lower or upper triangular matrix. Value: `%d`.", uplo );
+		return;
+	}
+	if ( N < 0 ) {
+		c_xerbla( 3, "c_ssyr", "Error: invalid argument. Third argument must be a nonnegative integer. Value: `%d`.", N );
+		return;
+	}
+	if ( strideX == 0 ) {
+		c_xerbla( 6, "c_ssyr", "Error: invalid argument. Sixth argument must be nonzero. Value: `%d`.", strideX );
+		return;
+	}
+	// max(1, N)
+	if ( N < 1 ) {
+		vala = 1;
+	} else {
+		vala = N;
+	}
+	if ( LDA < vala ) {
+		c_xerbla( 10, "c_ssyr", "Error: invalid argument. Eighth argument must be greater than or equal to max(1,%d). Value: `%d`.", vala, LDA );
+		return;
+	}
+	// Check whether we can avoid computation altogether...
 	if ( N == 0 || alpha == 0.0f ) {
 		return;
 	}
-	if ( order == CblasColMajor ) {
+	if ( layout == CblasColMajor ) {
 		sa1 = 1;
 		sa2 = LDA;
-	} else { // order === 'row-major'
+	} else { // layout == CblasRowMajor
 		sa1 = LDA;
 		sa2 = 1;
 	}
-	ox = STDLIB_BLAS_BASE_STRIDE2OFFSET( N, strideX );
+	ox = stdlib_strided_stride2offset( N, strideX );
 	API_SUFFIX(c_ssyr_ndarray)( uplo, N, alpha, X, strideX, ox, A, sa1, sa2, 0 );
-	return;
-}
-
-/**
-* Performs the symmetric rank 1 operation `A = α*x*x^T + A` using alternative indexing semantics.
-*
-* @param uplo      specifies whether the upper or lower triangular part of the symmetric matrix `A` should be referenced
-* @param N         number of elements along each dimension of `A`
-* @param alpha     scalar
-* @param X         input vector
-* @param strideX   `X` stride length
-* @param offsetX   starting index of `X`
-* @param A         input matrix
-* @param strideA1  stride of the first dimension of `A`
-* @param strideA2  stride of the second dimension of `A`
-* @param offsetA   starting index of `A`
-*/
-void API_SUFFIX(c_ssyr_ndarray)( const CBLAS_UPLO uplo, const CBLAS_INT N, const float alpha, const float *X, const CBLAS_INT strideX, const CBLAS_INT offsetX, float *A, const CBLAS_INT strideA1, const CBLAS_INT strideA2, const CBLAS_INT offsetA ) {
-	CBLAS_INT isrm;
-	CBLAS_INT ix0;
-	CBLAS_INT ix1;
-	CBLAS_INT sa0;
-	CBLAS_INT sa1;
-	CBLAS_INT i0;
-	CBLAS_INT i1;
-	CBLAS_INT oa;
-	CBLAS_INT ox;
-	float tmp;
-
-	int64_t strides[] = { strideA1, strideA2 };
-	if ( N == 0 || alpha == 0.0f ) {
-		return;
-	}
-	isrm = stdlib_ndarray_is_row_major( 2, strides );
-	if ( isrm ) {
-		// For row-major matrices, the last dimension has the fastest changing index...
-		sa0 = strideA2; // stride for innermost loop
-		sa1 = strideA1; // stride for outermost loop
-	} else { // isColMajor
-		// For column-major matrices, the first dimension has the fastest changing index...
-		sa0 = strideA1; // stride for innermost loop
-		sa1 = strideA2; // stride for outermost loop
-	}
-	ox = offsetX;
-	if (
-		( isrm && uplo == CblasLower ) ||
-		( !isrm && uplo == CblasUpper )
-	) {
-		ix1 = ox;
-		for ( i1 = 0; i1 < N; i1++ ) {
-			if ( X[ ix1 ] != 0.0f ) {
-				tmp = alpha * X[ ix1 ];
-				oa = offsetA + (sa1*i1);
-				ix0 = ox;
-				for ( i0 = 0; i0 <= i1; i0++ ) {
-					A[ oa+(sa0*i0) ] += X[ ix0 ] * tmp;
-					ix0 += strideX;
-				}
-			}
-			ix1 += strideX;
-		}
-		return;
-	}
-	// ( isrm && uplo == 'CblasUpper' ) || ( !isrm && uplo === 'CblasLower' )
-	ix1 = ox;
-	for ( i1 = 0; i1 < N; i1++ ) {
-		if ( X[ ix1 ] != 0.0f ) {
-			tmp = alpha * X[ ix1 ];
-			oa = offsetA + (sa1*i1);
-			ix0 = ix1;
-			for ( i0 = i1; i0 < N; i0++ ) {
-				A[ oa+(sa0*i0) ] += X[ ix0 ] * tmp;
-				ix0 += strideX;
-			}
-		}
-		ix1 += strideX;
-	}
 	return;
 }

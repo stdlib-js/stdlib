@@ -1,0 +1,22 @@
+
+{{alias}}( value )
+    Returns the matrix orientation string associated with a matrix orientation
+    enumeration constant.
+
+    Parameters
+    ----------
+    value: integer
+        Matrix orientation enumeration constant.
+
+    Returns
+    -------
+    out: string|null
+        Matrix orientation string.
+
+    Examples
+    --------
+    > var out = {{alias}}( {{alias:@stdlib/blas/base/matrix-orientation-str2enum}}( 'columns' ) )
+    'columns'
+
+    See Also
+    --------

@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `srotm`.
 */
-#ifndef SROTM_H
-#define SROTM_H
+#ifndef STDLIB_BLAS_BASE_SROTM_H
+#define STDLIB_BLAS_BASE_SROTM_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ void API_SUFFIX(c_srotm_ndarray)( const CBLAS_INT N, float *X, const CBLAS_INT s
 }
 #endif
 
-#endif // !SROTM_H
+#endif // !STDLIB_BLAS_BASE_SROTM_H

@@ -1366,7 +1366,7 @@ rules[ 'import/no-deprecated' ] = 'error';
 * @name import/no-extraneous-dependencies
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [import/no-extraneous-dependencies]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md}
 *
 * @example
@@ -1376,7 +1376,7 @@ rules[ 'import/no-deprecated' ] = 'error';
 * // Bad...
 * import foo from 'some-extranous-module';
 */
-rules[ 'import/no-extraneous-dependencies' ] = 'error';
+rules[ 'import/no-extraneous-dependencies' ] = 'off'; // NOTE: disabled to allow imports of `@stdlib/*` type declarations
 
 /**
 * Prevents importing the submodules of other modules.
@@ -1384,14 +1384,20 @@ rules[ 'import/no-extraneous-dependencies' ] = 'error';
 * @name import/no-internal-modules
 * @memberof rules
 * @type {string}
-* @default 'error'
+* @default 'off'
 * @see [import/no-internal-modules]{@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-internal-modules.md}
 *
 * @example
 * // Bad...
 * import something from 'module/some/internal/path';
 */
-rules[ 'import/no-internal-modules' ] = 'error';
+rules[ 'import/no-internal-modules' ] = [
+	'error', {
+		'allow': [
+			'@stdlib/**'
+		]
+	}
+];
 
 /**
 * Forbids import statements that import nothing.
@@ -2705,6 +2711,17 @@ rules[ 'yoda' ] = 'error';
 * const val = 9001; // $ExpectType number
 */
 rules[ 'expect-type/expect' ] = 'error';
+
+/**
+* Ensures return annotations in TSDoc examples match the actual output.
+*
+* @name stdlib/tsdoc-declarations-doctest
+* @memberof rules
+* @type {string}
+* @default 'error'
+* @see {@link module:@stdlib/_tools/eslint/rules/tsdoc-declarations-doctest}
+*/
+rules[ 'stdlib/tsdoc-declarations-doctest' ] = 'error';
 
 
 // EXPORTS //

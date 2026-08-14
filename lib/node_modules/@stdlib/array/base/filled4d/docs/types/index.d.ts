@@ -25,7 +25,7 @@ import { Shape4D } from '@stdlib/types/ndarray';
 /**
 * Four-dimensional nested array.
 */
-type Array4D<T> = Array<Array<Array<T>>>;
+type Array4D<T> = Array<Array<Array<Array<T>>>>;
 
 /**
 * Returns a filled four-dimensional nested array.

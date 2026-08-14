@@ -73,10 +73,10 @@ list-lib-pkgs:
 # make list-random-lib-pkgs RANDOM_SELECTION_SIZE=10
 #/
 list-random-lib-pkgs:
-	@if command -v shuf > /dev/null; then \
-		make list-lib-pkgs | shuf -n $(RANDOM_SELECTION_SIZE) ; \
+	$(QUIET) if command -v shuf > /dev/null; then \
+		$(MAKE) -f $(this_file) list-lib-pkgs | shuf -n $(RANDOM_SELECTION_SIZE) ; \
 	else \
-		make list-lib-pkgs | sort -R | head -n $(RANDOM_SELECTION_SIZE) ; \
+		$(MAKE) -f $(this_file) list-lib-pkgs | sort -R | head -n $(RANDOM_SELECTION_SIZE) ; \
 	fi
 
 .PHONY: list-random-lib-pkgs

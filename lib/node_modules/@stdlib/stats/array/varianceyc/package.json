@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/stats/array/varianceyv",
+  "name": "@stdlib/stats/array/varianceyc",
   "version": "0.0.0",
   "description": "Calculate the variance of an array using a one-pass algorithm proposed by Youngs and Cramer.",
   "license": "Apache-2.0",

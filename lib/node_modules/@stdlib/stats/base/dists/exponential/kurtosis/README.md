@@ -95,19 +95,16 @@ var v = kurtosis( -1.0 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random/base/randu' );
-var round = require( '@stdlib/math/base/special/round' );
+var uniform = require( '@stdlib/random/array/uniform' );
+var logEachMap = require( '@stdlib/console/log-each-map' );
 var kurtosis = require( '@stdlib/stats/base/dists/exponential/kurtosis' );
 
-var lambda;
-var v;
-var i;
+var opts = {
+    'dtype': 'float64'
+};
+var lambda = uniform( 10, 0.0, 20.0, opts );
 
-for ( i = 0; i < 10; i++ ) {
-    lambda = randu() * 20.0;
-    v = kurtosis( lambda );
-    console.log( 'λ: %d, Kurt(X;λ): %d', lambda.toFixed( 4 ), v.toFixed( 4 ) );
-}
+logEachMap( 'λ: %0.4f, Kurt(X;λ): %0.4f', lambda, kurtosis );
 ```
 
 </section>

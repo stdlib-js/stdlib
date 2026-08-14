@@ -141,7 +141,7 @@ console.log( m );
 
 #### stdlib_base_nanmax( x, y )
 
-Returns the minimum value, ignoring NaN.
+Returns the maximum value, ignoring NaN.
 
 ```c
 double out = stdlib_base_nanmax( 4.2, 3.14 );

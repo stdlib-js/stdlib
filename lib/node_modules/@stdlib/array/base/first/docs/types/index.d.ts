@@ -31,7 +31,7 @@ import { Collection } from '@stdlib/types/array';
 * @example
 * var arr = [ 1, 2, 3 ];
 *
-* var out = first( x );
+* var out = first( arr );
 * // returns 1
 */
 declare function first<T = unknown>( arr: Collection<T> ): T;

@@ -145,7 +145,7 @@ interface Linspace {
 	* var opts = {
 	*     'dtype': 'float32'
 	* };
-	* var arr = linspace( 0.0, 100.0, 6 );
+	* var arr = linspace( 0.0, 100.0, 6, opts );
 	* // returns <Float32Array>[ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
 	( start: number, stop: number, len: number, options: Float32Options ): Float32Array;
@@ -165,7 +165,7 @@ interface Linspace {
 	* var opts = {
 	*     'dtype': 'generic'
 	* };
-	* var arr = linspace( 0.0, 100.0, 6 );
+	* var arr = linspace( 0.0, 100.0, 6, opts );
 	* // returns [ 0.0, 20.0, 40.0, 60.0, 80.0, 100.0 ]
 	*/
 	( start: number, stop: number, len: number, options: GenericOptions ): Array<number>;

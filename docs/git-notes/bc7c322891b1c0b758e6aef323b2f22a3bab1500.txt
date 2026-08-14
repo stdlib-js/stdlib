@@ -1,0 +1,10 @@
+---
+type: amend-message
+---
+feat: add `blas/ext/base/ndarray/gfirst-index-less-than`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/13596
+Co-authored-by: Athan Reines <kgryte@gmail.com>
+Reviewed-by: Athan Reines <kgryte@gmail.com>
+Signed-off-by: Athan Reines <kgryte@gmail.com>
+Closes: https://github.com/stdlib-js/metr-issue-tracker/issues/1022

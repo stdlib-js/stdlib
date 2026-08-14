@@ -19,8 +19,8 @@
 /**
 * Header file containing function declarations for the C interface to the BLAS Level 1 routine `c_dsdot`.
 */
-#ifndef DSDOT_H
-#define DSDOT_H
+#ifndef STDLIB_BLAS_BASE_DSDOT_H
+#define STDLIB_BLAS_BASE_DSDOT_H
 
 #include "stdlib/blas/base/shared.h"
 
@@ -45,4 +45,4 @@ double API_SUFFIX(c_dsdot_ndarray)( const CBLAS_INT N, const float *X, const CBL
 }
 #endif
 
-#endif // !DSDOT_H
+#endif // !STDLIB_BLAS_BASE_DSDOT_H

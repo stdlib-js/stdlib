@@ -21,6 +21,7 @@
 #include "stdlib/math/base/special/floor.h"
 #include "stdlib/constants/float64/max_safe_integer.h"
 #include "stdlib/math/base/special/fmod.h"
+#include <stdbool.h>
 #include <stdint.h>
 
 static const double WHEEL_PRIMES[45] = {

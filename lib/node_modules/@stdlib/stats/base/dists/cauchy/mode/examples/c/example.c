@@ -36,6 +36,6 @@ int main( void ) {
 		x0 = random_uniform( 0.0, 100.0 );
 		gamma = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
 		y = stdlib_base_dists_cauchy_mode( x0, gamma );
-		printf( "x0: %lf, gamma: %lf, mode(X;x0,gamma): %lf\n", x0, gamma, y );
+		printf( "x0: %lf, γ: %lf, mode(X;x0,γ): %lf\n", x0, gamma, y );
 	}
 }

@@ -156,19 +156,19 @@ logEachMap( 'bernoullif(%d) = %0.4f', x, bernoullif );
 Computes the nth [Bernoulli number][bernoulli-number] as a single-precision floating-point number.
 
 ```c
-float out = stdlib_base_bernoullif( 0 );
+float out = stdlib_base_bernoullif( 0.0f );
 // returns 1.0f
 
-out = stdlib_base_bernoullif( 1 );
+out = stdlib_base_bernoullif( 1.0f );
 // returns 0.5f
 ```
 
 The function accepts the following arguments:
 
--   **n**: `[in] int32_t` input value.
+-   **n**: `[in] float` input value.
 
 ```c
-float stdlib_base_bernoullif( const int32_t n );
+float stdlib_base_bernoullif( const float n );
 ```
 
 </section>
@@ -192,15 +192,14 @@ float stdlib_base_bernoullif( const int32_t n );
 ```c
 #include "stdlib/math/base/special/bernoullif.h"
 #include <stdio.h>
-#include <stdint.h>
 
 int main( void ) {
-    int32_t i;
+    float i;
     float v;
 
-    for ( i = 0; i < 70; i++ ) {
+    for ( i = 0.0f; i < 70.0f; i++ ) {
         v = stdlib_base_bernoullif( i );
-        printf( "bernoullif(%d) = %f\n", i, v );
+        printf( "bernoullif(%f) = %f\n", i, v );
     }
 }
 ```

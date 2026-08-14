@@ -63,7 +63,7 @@ bool = isProbabilityArray( [ 3.14, 0.0 ] );
 
 #### isProbabilityArray.primitives( value )
 
-Tests if a `value` is an array-like object `array` containing **only** primitive probabilities.
+Tests if a `value` is an array-like object containing **only** primitive probabilities.
 
 <!-- eslint-disable no-new-wrappers -->
 
@@ -79,7 +79,7 @@ bool = isProbabilityArray.primitives( [ 0.9, new Number(1.0) ] );
 
 #### isProbabilityArray.objects( value )
 
-Tests if a `value` is an array-like object `array` containing **only** `Number` objects whose values are probabilities.
+Tests if a `value` is an array-like object containing **only** `Number` objects whose values are probabilities.
 
 <!-- eslint-disable no-new-wrappers -->
 

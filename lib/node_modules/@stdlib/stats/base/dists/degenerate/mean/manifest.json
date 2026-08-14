@@ -53,9 +53,7 @@
       ],
       "libraries": [],
       "libpath": [],
-      "dependencies": [
-        "@stdlib/math/base/assert/is-nan"
-      ]
+      "dependencies": []
     },
     {
       "task": "examples",

@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Symbol Support
+# hasSymbolSupport
 
 > Detect native [`Symbol`][mdn-symbol] support.
 

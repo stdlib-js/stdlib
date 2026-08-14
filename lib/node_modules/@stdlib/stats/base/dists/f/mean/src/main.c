@@ -19,7 +19,6 @@
 #include "stdlib/stats/base/dists/f/mean.h"
 #include "stdlib/math/base/assert/is_nan.h"
 
-
 /**
 * Returns the expected value of an F distribution.
 *

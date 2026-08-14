@@ -62,7 +62,7 @@ The following `encodings` are supported:
 -   `hex`
 -   `binary`
 -   `ascii`
--   `ucs2`
+-   `ucs2` (`ucs-2`)
 -   `base64`
 
 </section>
