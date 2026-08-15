@@ -128,7 +128,7 @@ The function has the following parameters:
     // returns <Complex64>[ ~3.162, 0.0 ]
     ```
 
-    where `arr[1]` is only guaranteed to be approximately equal to the square root of `10`.
+    where `v` is only guaranteed to be approximately equal to the square root of `10`.
 
 -   When `N = 1` and `endpoint` is `false`, only the `base^start` value is written to a provided input ndarray. When `N = 1` and `endpoint` is `true`, only the `base^stop` value is written to a provided input ndarray.
 
