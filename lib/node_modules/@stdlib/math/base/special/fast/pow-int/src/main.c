@@ -19,6 +19,7 @@
 #include "stdlib/math/base/special/fast/pow_int.h"
 #include "stdlib/math/base/assert/is_nan.h"
 #include "stdlib/constants/float64/pinf.h"
+#include "stdlib/constants/float64/nan.h"
 
 int32_t ONE = 1;
 int32_t ZERO = 0;
@@ -42,7 +43,7 @@ double stdlib_base_fast_pow( const double x, const int32_t y ) {
 	xc = x;
 	yc = y;
 	if ( stdlib_base_is_nan( xc ) ) {
-		return 0.0 / 0.0; // NaN
+		return STDLIB_CONSTANT_FLOAT64_NAN;
 	}
 	if ( yc < ZERO ) {
 		yc = -yc;

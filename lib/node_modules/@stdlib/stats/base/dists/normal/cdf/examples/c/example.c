@@ -38,6 +38,6 @@ int main( void ) {
 		mu = random_uniform( -5.0, 5.0 );
 		sigma = random_uniform( 0.1, 20.0 );
 		y = stdlib_base_dists_normal_cdf( x, mu, sigma );
-		printf( "x: %lf, µ: %lf, σ: %lf, F(x;µ,σ): %lf\n", x, mu, sigma, y );
+		printf( "x: %lf, μ: %lf, σ: %lf, F(x;μ,σ): %lf\n", x, mu, sigma, y );
 	}
 }

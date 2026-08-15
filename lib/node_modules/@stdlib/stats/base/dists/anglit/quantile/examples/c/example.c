@@ -37,6 +37,6 @@ int main( void ) {
 		mu = random_uniform( -5.0, 5.0 );
 		sigma = random_uniform( 0.0, 5.0 );
 		y = stdlib_base_dists_anglit_quantile( p, mu, sigma );
-		printf( "p: %lf, µ: %lf, σ: %lf, Q(p;µ,σ): %lf\n", p, mu, sigma, y );
+		printf( "p: %lf, μ: %lf, σ: %lf, Q(p;μ,σ): %lf\n", p, mu, sigma, y );
 	}
 }
