@@ -133,8 +133,10 @@ jobs:
 
       # Run JavaScript examples:
       - name: 'Run JavaScript examples'
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep -E '\.js$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
             make examples-javascript-files FILES="${files}"
           fi
@@ -142,8 +144,10 @@ jobs:
 
       # Run C examples:
       - name: 'Run C examples'
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.c$' | sed "s|^|${GITHUB_WORKSPACE}/|" | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep -E '\.c$' | sed "s|^|${GITHUB_WORKSPACE}/|" | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
             make examples-c-files FILES="${files}"
           fi
@@ -151,8 +155,10 @@ jobs:
 
       # Run examples in Markdown files:
       - name: 'Run examples in Markdown files'
+        env:
+          FILES: ${{ steps.changed-files.outputs.files }}
         run: |
-          files=$(echo "${{ steps.changed-files.outputs.files }}" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//')
+          files=$(echo "$FILES" | tr ' ' '\n' | grep -E '\.md$' | tr '\n' ' ' | sed 's/ $//')
           if [ -n "$files" ]; then
             make markdown-examples-javascript-files FILES="${files}"
           fi

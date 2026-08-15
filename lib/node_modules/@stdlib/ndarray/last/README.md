@@ -22,7 +22,7 @@ limitations under the License.
 
 > Return a read-only view of the last element (or subarray) along one or more [`ndarray`][@stdlib/ndarray/ctor] dimensions.
 
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro section element. -->
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 

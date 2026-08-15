@@ -65,6 +65,7 @@
 #include "stdlib/napi/argv_uint32.h"
 #include "stdlib/napi/argv_uint32array.h"
 #include "stdlib/napi/argv_uint64.h"
+#include "stdlib/napi/create_boolean.h"
 #include "stdlib/napi/create_complex_like.h"
 #include "stdlib/napi/create_double.h"
 #include "stdlib/napi/create_int32.h"

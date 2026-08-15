@@ -38,7 +38,7 @@ var factory = require( './factory.js' );
 * @param {*} [options.dtype] - output ndarray data type
 * @param {string} [options.order="row-major"] - memory layout (either row-major or column-major)
 * @param {string} [options.mode="throw"] - specifies how to handle indices which exceed ndarray dimensions
-* @param {StringArray} [options.submode=["throw"]] - specifies how to handle subscripts which exceed ndarray dimensions on a per dimension basis
+* @param {StringArray} [options.submode=[options.mode]] - specifies how to handle subscripts which exceed ndarray dimensions on a per dimension basis
 * @param {boolean} [options.readonly=false] - boolean indicating whether an ndarray should be read-only
 * @throws {TypeError} first argument must be a valid shape
 * @throws {TypeError} must provide valid distribution parameters

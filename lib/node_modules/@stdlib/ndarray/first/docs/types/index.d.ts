@@ -65,7 +65,7 @@ interface Options {
 * });
 * // returns <ndarray>[ 1.0, 2.0 ]
 */
-declare function first<T extends ndarray>( x: T, options?: Options ): T;
+declare function first<T extends ndarray = ndarray>( x: T, options?: Options ): T;
 
 
 // EXPORTS //

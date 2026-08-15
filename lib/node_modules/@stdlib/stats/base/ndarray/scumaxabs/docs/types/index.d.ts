@@ -25,18 +25,21 @@ import { float32ndarray } from '@stdlib/types/ndarray';
 /**
 * Computes the cumulative maximum absolute value of a one-dimensional single-precision floating-point ndarray.
 *
-* @param arrays - array-like object containing an input ndarray and an output ndarray
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a one-dimensional output ndarray.
+*
+* @param arrays - array-like object containing ndarrays
 * @returns output ndarray
 *
 * @example
-* var Float32Array = require( '@stdlib/array/float32' );
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 *
-* var xbuf = new Float32Array( [ 1.0, 3.0, 4.0, 2.0 ] );
-* var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
-*
-* var ybuf = new Float32Array( [ 0.0, 0.0, 0.0, 0.0 ] );
-* var y = new ndarray( 'float32', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = new Float32Vector( [ 1.0, 3.0, 4.0, 2.0 ] );
+* var y = new Float32Vector( [ 0.0, 0.0, 0.0, 0.0 ] );
 *
 * var v = scumaxabs( [ x, y ] );
 * // returns <ndarray>[ 1.0, 3.0, 4.0, 4.0 ]
