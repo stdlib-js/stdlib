@@ -45,17 +45,17 @@ import { typedndarray, float64ndarray } from '@stdlib/types/ndarray';
 *
 * var x = new Float64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 * var target = scalar2ndarray( 3, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 * var start = scalar2ndarray( 1, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 * var end = scalar2ndarray( 4, {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 *
 * var w = zeros( [ 6 ], {
-*    'dtype': 'float64'
+*     'dtype': 'float64'
 * });
 *
 * var out = dcopyWithin( [ x, target, start, end, w ] );
