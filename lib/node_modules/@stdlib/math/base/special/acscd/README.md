@@ -181,7 +181,7 @@ int main( void ) {
 -   <span class="package-name">[`@stdlib/math/base/special/acsch`][@stdlib/math/base/special/acsch]</span><span class="delimiter">: </span><span class="description">compute the hyperbolic arccosecant of a number.</span>
 -   <span class="package-name">[`@stdlib/math/base/special/asecd`][@stdlib/math/base/special/asecd]</span><span class="delimiter">: </span><span class="description">compute the arcsecant (in degrees) of a double-precision floating-point number.</span>
 -   <span class="package-name">[`@stdlib/math/base/special/asind`][@stdlib/math/base/special/asind]</span><span class="delimiter">: </span><span class="description">compute the arcsine (in degrees) of a double-precision floating-point number.</span>
--   <span class="package-name">[`@stdlib/math/base/special/cscd`][@stdlib/math/base/special/cscd]</span><span class="delimiter">: </span><span class="description">compute the cosecant of a degree.</span>
+-   <span class="package-name">[`@stdlib/math/base/special/cscd`][@stdlib/math/base/special/cscd]</span><span class="delimiter">: </span><span class="description">compute the cosecant of an angle measured in degrees.</span>
 
 </section>
 

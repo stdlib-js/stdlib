@@ -44,7 +44,8 @@
         "@stdlib/constants/float64/pinf",
         "@stdlib/constants/float64/ninf",
         "@stdlib/constants/float64/pi",
-        "@stdlib/constants/float64/sqrt-pi"
+        "@stdlib/constants/float64/sqrt-pi",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -65,7 +66,8 @@
         "@stdlib/constants/float64/pinf",
         "@stdlib/constants/float64/ninf",
         "@stdlib/constants/float64/pi",
-        "@stdlib/constants/float64/sqrt-pi"
+        "@stdlib/constants/float64/sqrt-pi",
+        "@stdlib/constants/float64/nan"
       ]
     },
     {
@@ -86,7 +88,8 @@
         "@stdlib/constants/float64/pinf",
         "@stdlib/constants/float64/ninf",
         "@stdlib/constants/float64/pi",
-        "@stdlib/constants/float64/sqrt-pi"
+        "@stdlib/constants/float64/sqrt-pi",
+        "@stdlib/constants/float64/nan"
       ]
     }
   ]

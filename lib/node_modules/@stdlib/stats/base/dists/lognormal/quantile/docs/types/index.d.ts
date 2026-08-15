@@ -104,8 +104,8 @@ interface Quantile {
 * Lognormal distribution quantile function.
 *
 * @param p - input value
-* @param mu - mean
-* @param sigma - standard deviation
+* @param mu - location parameter
+* @param sigma - scale parameter
 * @returns evaluated quantile function
 *
 * @example

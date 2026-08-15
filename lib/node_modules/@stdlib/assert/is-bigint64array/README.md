@@ -98,7 +98,7 @@ bool = isBigInt64Array( new Float64Array( 10 ) );
 bool = isBigInt64Array( new Float32Array( 10 ) );
 // returns false
 
-bool = isBigInt64Array( new Array( 10 ) );
+bool = isBigInt64Array( [] );
 // returns false
 
 bool = isBigInt64Array( {} );

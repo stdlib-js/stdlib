@@ -23,7 +23,7 @@
 *
 * @param fcn - input function
 * @param thisArg - function context
-* @returns reverse arguments function
+* @returns function wrapper
 *
 * @example
 * function foo( a, b, c ) {

@@ -73,6 +73,7 @@
     "frac",
     "signficand",
     "mantissa",
-    "ieee754"
+    "ieee754",
+    "number"
   ]
 }

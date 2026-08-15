@@ -1,7 +1,8 @@
 
 {{alias}}( x, p )
-    Evaluates the logarithm of the cumulative distribution function (CDF) for a
-    geometric distribution with success probability `p` at a value `x`.
+    Evaluates the natural logarithm of the cumulative distribution function
+    (CDF) for a geometric distribution with success probability `p` at a value
+    `x`.
 
     If provided `NaN` as any argument, the function returns `NaN`.
 
@@ -26,7 +27,7 @@
     ~-0.134
     > y = {{alias}}( 2.0, 0.1 )
     ~-1.306
-    > y = {{alias}}( -1.0, 4.0 )
+    > y = {{alias}}( -1.0, 0.4 )
     -Infinity
     > y = {{alias}}( NaN, 0.5 )
     NaN

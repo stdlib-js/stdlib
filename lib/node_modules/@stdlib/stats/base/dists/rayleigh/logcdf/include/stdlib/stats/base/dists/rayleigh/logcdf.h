@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /**
-* Evaluates the logarithm of the cumulative distribution function (CDF) for a Rayleigh distribution with scale parameter `sigma` at a value `x`.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a Rayleigh distribution with scale parameter `sigma` at a value `x`.
 */
 double stdlib_base_dists_rayleigh_logcdf( const double x, const double sigma );
 
