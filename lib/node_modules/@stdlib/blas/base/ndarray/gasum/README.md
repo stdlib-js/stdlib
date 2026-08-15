@@ -56,10 +56,9 @@ var gasum = require( '@stdlib/blas/base/ndarray/gasum' );
 Computes the sum of absolute values for all elements in a one-dimensional ndarray.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var vector = require( '@stdlib/ndarray/vector/ctor' );
 
-var xbuf = [ 1.0, -2.0, 3.0, -4.0, 5.0 ];
-var x = new ndarray( 'generic', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
+var x = vector( [ 1.0, -2.0, 3.0, -4.0, 5.0 ], 'generic' );
 
 var y = gasum( [ x ] );
 // returns 15.0
@@ -86,8 +85,7 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var gasum = require( '@stdlib/blas/base/ndarray/gasum' );
 
@@ -95,8 +93,7 @@ var opts = {
     'dtype': 'generic'
 };
 
-var xbuf = discreteUniform( 10, -500, 500, opts );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = discreteUniform( [ 10 ], -500, 500, opts );
 console.log( ndarray2array( x ) );
 
 var out = gasum( [ x ] );

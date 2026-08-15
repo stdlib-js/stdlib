@@ -71,22 +71,25 @@ type Predicate<T, U, ThisArg> = Nullary<ThisArg> | Unary<T, ThisArg> | Binary<T,
 *
 * ## Notes
 *
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
 * -   If no element passes a test implemented by a predicate function, the function returns `-1`.
 *
-* @param arrays - array-like object containing an input ndarray
+* @param arrays - array-like object containing ndarrays
 * @param clbk - predicate function
 * @param thisArg - predicate function execution context
 * @returns index
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray/base/ctor' );
+* var vector = require( '@stdlib/ndarray/vector/ctor' );
 *
 * function clbk( v ) {
 *     return v % 2.0 === 0.0;
 * }
 *
-* var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
-* var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var x = vector( [ 1.0, 3.0, 4.0, 2.0 ], 'generic' );
 *
 * var v = gfindIndex( [ x ], clbk );
 * // returns 2

@@ -66,7 +66,7 @@ The function accepts the following arguments:
 
 ## Notes
 
--   If a provided ndarray has fewer dimensions than `ndims`, the returned ndarray is a view on the input ndarray data buffer. The view is typically **not** contiguous. As more than one element of a returned view may refer to the same memory location, writing to the view may affect multiple elements. If you need to write to the returned ndarray, copy the ndarray **before** performing operations which may mutate elements.
+-   If a provided ndarray has fewer dimensions than `ndims`, the function prepends singleton dimensions, and the returned ndarray is a view on the input ndarray data buffer.
 
 -   The returned ndarray is a "base" [ndarray][@stdlib/ndarray/base/ctor], and, thus, the returned [ndarray][@stdlib/ndarray/base/ctor] does not perform bounds checking or afford any of the guarantees of the non-base [ndarray][@stdlib/ndarray/ctor] constructor. The primary intent of this function is to broadcast an ndarray-like object within internal implementations and to do so with minimal overhead.
 

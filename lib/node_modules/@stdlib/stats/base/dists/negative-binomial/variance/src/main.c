@@ -27,7 +27,7 @@
 * @return     variance
 *
 * @example
-* double v = stdlib_base_dists_negative_binomial_variance( 10, 0.5 );
+* double v = stdlib_base_dists_negative_binomial_variance( 10.0, 0.5 );
 * // returns 20.0
 */
 double stdlib_base_dists_negative_binomial_variance( const double r, const double p ) {

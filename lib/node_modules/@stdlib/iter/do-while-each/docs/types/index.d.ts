@@ -93,7 +93,7 @@ type Predicate = nullaryPredicate | unaryPredicate | binaryPredicate;
 
 /**
 * Returns an iterator which invokes a function for each iterated value **before** returning the iterated value until either a predicate function returns `false` or the iterator has iterated over all values.
-* The condition is evaluated *after* executing the provided function; thus, fcn` *always* executes at least once.
+* The condition is evaluated *after* executing the provided function; thus, `fcn` *always* executes at least once.
 *
 * ## Notes
 *

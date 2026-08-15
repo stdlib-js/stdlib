@@ -161,7 +161,7 @@ for ( y = 0; y < 309; y++ ) {
 ### Usage
 
 ```c
-#include "stdlib/math/base/special/fast/pow.h"
+#include "stdlib/math/base/special/fast/pow_int.h"
 ```
 
 #### stdlib_base_fast_pow( x, y )
@@ -204,7 +204,7 @@ double stdlib_base_fast_pow( const double x, const int32_t y );
 ### Examples
 
 ```c
-#include "stdlib/math/base/special/fast/pow.h"
+#include "stdlib/math/base/special/fast/pow_int.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdint.h>

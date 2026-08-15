@@ -204,7 +204,7 @@ double stdlib_base_dists_poisson_logpmf( const double x, const double lambda );
 
 ```c
 #include "stdlib/stats/base/dists/poisson/logpmf.h"
-#include "stdlib/random/base/ceil.h"
+#include "stdlib/math/base/special/ceil.h"
 #include <stdlib.h>
 #include <stdio.h>
 
