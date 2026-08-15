@@ -88,6 +88,12 @@ jobs:
           make benchmark-random-javascript RANDOM_SELECTION_SIZE=50 BUILD_ADDONS=1
         timeout-minutes: 60
 
+      # Install Cephes dependencies (required by C benchmarks which compare against the Cephes math library; accounting for possible network failures when downloading):
+      - name: 'Install Cephes dependencies'
+        run: |
+          make install-deps-cephes || make install-deps-cephes || make install-deps-cephes
+        timeout-minutes: 15
+
       # Run C benchmarks:
       - name: 'Run C benchmarks'
         run: |
