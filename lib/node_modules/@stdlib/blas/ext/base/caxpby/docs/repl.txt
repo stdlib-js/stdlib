@@ -1,0 +1,149 @@
+
+{{alias}}( N, alpha, x, strideX, beta, y, strideY )
+    Multiplies a single-precision complex floating-point strided array `x` by a
+    constant and adds the result to a single-precision complex floating-point
+    strided array `y` multiplied by a constant.
+
+    The `N` and stride parameters determine which elements in the strided
+    arrays are accessed at runtime.
+
+    Indexing is relative to the first index. To introduce an offset, use typed
+    array views.
+
+    If `N <= 0`, the function returns `y` unchanged.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: Complex64
+        Scalar constant for `x`.
+
+    x: Complex64Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    beta: Complex64
+        Scalar constant for `y`.
+
+    y: Complex64Array
+        Output array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    Returns
+    -------
+    y: Complex64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var bufX = [ 1.0, 2.0, 3.0, -1.0, 0.0, 1.0 ];
+    > var bufY = [ 2.0, 1.0, -1.0, 3.0, 4.0, 0.0 ];
+    > var x = new {{alias:@stdlib/array/complex64}}( bufX );
+    > var y = new {{alias:@stdlib/array/complex64}}( bufY );
+    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 1.0 );
+    > var beta = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 );
+    > {{alias}}( x.length, alpha, x, 1, beta, y, 1 )
+    <Complex64Array>[ 3.0, 4.0, 9.0, 5.0, 3.0, -2.0 ]
+
+    // Using `N` and stride parameters:
+    > bufX = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ];
+    > x = new {{alias:@stdlib/array/complex64}}( bufX );
+    > bufY = [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0 ];
+    > y = new {{alias:@stdlib/array/complex64}}( bufY );
+    > alpha = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 1.0 );
+    > beta = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 );
+    > {{alias}}( 2, alpha, x, 2, beta, y, 2 )
+    <Complex64Array>[ 15.0, 6.0, 9.0, 10.0, 27.0, 18.0, 13.0, 14.0 ]
+
+    // Using view offsets:
+    > var bufX = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0 ];
+    > var bufY = [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0 ];
+    > var x0 = new {{alias:@stdlib/array/complex64}}( bufX );
+    > var y0 = new {{alias:@stdlib/array/complex64}}( bufY );
+    > var offsetX = x0.BYTES_PER_ELEMENT * 1;
+    > var offsetY = y0.BYTES_PER_ELEMENT * 2;
+    > var x1 = new {{alias:@stdlib/array/complex64}}( x0.buffer, offsetX );
+    > var y1 = new {{alias:@stdlib/array/complex64}}( y0.buffer, offsetY );
+    > alpha = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 1.0 );
+    > beta = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 );
+    > {{alias}}( 3, alpha, x1, 1, beta, y1, 1 )
+    <Complex64Array>[ 25.0, 12.0, 31.0, 18.0, 37.0, 24.0 ]
+    > y0
+    <Complex64Array>[ 7.0, 8.0, 9.0, 10.0, 25.0, 12.0, 31.0, 18.0, 37.0, 24.0 ]
+
+
+{{alias}}.ndarray( N, alpha, x, strideX, offsetX, beta, y, strideY, offsetY )
+    Multiplies a single-precision complex floating-point strided array `x` by a
+    constant and adds the result to a single-precision complex floating-point
+    strided array `y` multiplied by a constant using alternative indexing
+    semantics.
+
+    While typed array views mandate a view offset based on the underlying
+    buffer, the offset parameters support indexing semantics based on starting
+    indices.
+
+    Parameters
+    ----------
+    N: integer
+        Number of indexed elements.
+
+    alpha: Complex64
+        Scalar constant for `x`.
+
+    x: Complex64Array
+        Input array.
+
+    strideX: integer
+        Stride length for `x`.
+
+    offsetX: integer
+        Starting index for `x`.
+
+    beta: Complex64
+        Scalar constant for `y`.
+
+    y: Complex64Array
+        Output array.
+
+    strideY: integer
+        Stride length for `y`.
+
+    offsetY: integer
+        Starting index for `y`.
+
+    Returns
+    -------
+    y: Complex64Array
+        Output array.
+
+    Examples
+    --------
+    // Standard Usage:
+    > var bufX = [ 1.0, 2.0, 3.0, -1.0, 0.0, 1.0 ];
+    > var bufY = [ 2.0, 1.0, -1.0, 3.0, 4.0, 0.0 ];
+    > var x = new {{alias:@stdlib/array/complex64}}( bufX );
+    > var y = new {{alias:@stdlib/array/complex64}}( bufY );
+    > var alpha = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 1.0 );
+    > var beta = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 );
+    > {{alias}}.ndarray( x.length, alpha, x, 1, 0, beta, y, 1, 0 )
+    <Complex64Array>[ 3.0, 4.0, 9.0, 5.0, 3.0, -2.0 ]
+
+    // Using index offsets:
+    > bufX = [ 1.0, 0.0, 2.0, 0.0, 3.0, 0.0, 4.0, 0.0, 5.0, 0.0 ];
+    > x = new {{alias:@stdlib/array/complex64}}( bufX );
+    > bufY = [ 6.0, 0.0, 7.0, 0.0, 8.0, 0.0, 9.0, 0.0, 10.0, 0.0 ];
+    > y = new {{alias:@stdlib/array/complex64}}( bufY );
+    > alpha = new {{alias:@stdlib/complex/float32/ctor}}( 2.0, 1.0 );
+    > beta = new {{alias:@stdlib/complex/float32/ctor}}( 1.0, -1.0 );
+    > {{alias}}.ndarray( 3, alpha, x, 1, x.length-3, beta, y, 1, y.length-3 )
+    <Complex64Array>[ 6.0, 0.0, 7.0, 0.0, 14.0, -5.0, 17.0, -5.0, 20.0, -5.0 ]
+
+    See Also
+    --------

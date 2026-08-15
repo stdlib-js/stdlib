@@ -35,10 +35,11 @@ var isComplex128VectorLike = require( '@stdlib/assert/is-complex128vector-like' 
 Tests if a value is a 1-dimensional [ndarray][@stdlib/ndarray/ctor]-like object whose underlying data type is `complex128`.
 
 ```javascript
-var Complex128Array = require( '@stdlib/array/complex128' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
+var zeros = require( '@stdlib/ndarray/zeros' );
 
-var arr = ndarray( 'complex128', new Complex128Array( [ 0, 0, 0, 0, 0, 0, 0, 0 ] ), [ 4 ], [ 1 ], 0, 'row-major' );
+var arr = zeros( [ 4 ], {
+    'dtype': 'complex128'
+});
 
 var bool = isComplex128VectorLike( arr );
 // returns true
@@ -55,12 +56,12 @@ var bool = isComplex128VectorLike( arr );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray/ctor' );
-var Complex128Array = require( '@stdlib/array/complex128' );
+var zeros = require( '@stdlib/ndarray/zeros' );
 var isComplex128VectorLike = require( '@stdlib/assert/is-complex128vector-like' );
 
-var buffer = new Complex128Array( [ 0, 0, 0, 0, 0, 0, 0, 0 ] );
-var arr = ndarray( 'complex128', buffer, [ 4 ], [ 1 ], 0, 'row-major' );
+var arr = zeros( [ 4 ], {
+    'dtype': 'complex128'
+});
 
 var out = isComplex128VectorLike( arr );
 // returns true

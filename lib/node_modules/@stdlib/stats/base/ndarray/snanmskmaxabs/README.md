@@ -41,15 +41,11 @@ var snanmskmaxabs = require( '@stdlib/stats/base/ndarray/snanmskmaxabs' );
 Computes the maximum absolute value of a one-dimensional single-precision floating-point ndarray according to a mask, ignoring `NaN` values.
 
 ```javascript
-var Float32Array = require( '@stdlib/array/float32' );
-var Uint8Array = require( '@stdlib/array/uint8' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
+var Uint8Vector = require( '@stdlib/ndarray/vector/uint8' );
 
-var xbuf = new Float32Array( [ 1.0, -2.0, 4.0, 2.0 ] );
-var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
-
-var maskbuf = new Uint8Array( [ 0, 0, 1, 0 ] );
-var mask = new ndarray( 'uint8', maskbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Float32Vector( [ 1.0, -2.0, 4.0, 2.0 ] );
+var mask = new Uint8Vector( [ 0, 0, 1, 0 ] );
 
 var v = snanmskmaxabs( [ x, mask ] );
 // returns 2.0
@@ -57,7 +53,10 @@ var v = snanmskmaxabs( [ x, mask ] );
 
 The function has the following parameters:
 
--   **arrays**: array-like object containing a one-dimensional input ndarray and a one-dimensional mask ndarray.
+-   **arrays**: array-like object containing the following ndarrays:
+
+    -   a one-dimensional input ndarray.
+    -   a one-dimensional mask ndarray.
 
 </section>
 
@@ -81,22 +80,19 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random/array/uniform' );
-var bernoulli = require( '@stdlib/random/array/bernoulli' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var uniform = require( '@stdlib/random/uniform' );
+var bernoulli = require( '@stdlib/random/bernoulli' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var snanmskmaxabs = require( '@stdlib/stats/base/ndarray/snanmskmaxabs' );
 
-var xbuf = uniform( 10, -50.0, 50.0, {
+var x = uniform( [ 10 ], -50.0, 50.0, {
     'dtype': 'float32'
 });
-var x = new ndarray( 'float32', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
 console.log( ndarray2array( x ) );
 
-var maskbuf = bernoulli( xbuf.length, 0.2, {
+var mask = bernoulli( [ 10 ], 0.2, {
     'dtype': 'uint8'
 });
-var mask = new ndarray( 'uint8', maskbuf, [ maskbuf.length ], [ 1 ], 0, 'row-major' );
 console.log( ndarray2array( mask ) );
 
 var v = snanmskmaxabs( [ x, mask ] );

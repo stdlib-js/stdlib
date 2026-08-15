@@ -320,6 +320,8 @@ console.log( str );
 
 Structure for holding double-precision floating-point test results.
 
+<!-- run-disable -->
+
 ```c
 #include <stdbool.h>
 #include <stdint.h>

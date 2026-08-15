@@ -174,7 +174,7 @@ int main( void ) {
 		iter = ITERATIONS / pow( 10, i-1 );
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
-			printf( "# c::%s:unsorted,random:len=%d\n", NAME, len );
+			printf( "# c::%s::unsorted,random:len=%d\n", NAME, len );
 			elapsed = benchmark1( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
@@ -185,7 +185,7 @@ int main( void ) {
 		iter = ITERATIONS / pow( 10, i-1 );
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
-			printf( "# c::%s:ndarray:unsorted,random:len=%d\n", NAME, len );
+			printf( "# c::%s::unsorted,random:ndarray:len=%d\n", NAME, len );
 			elapsed = benchmark2( iter, len );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );

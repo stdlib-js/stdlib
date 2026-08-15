@@ -20,6 +20,7 @@
 #include "stdlib/blas/base/zscal_cblas.h"
 #include "stdlib/blas/base/shared.h"
 #include "stdlib/complex/float64/ctor.h"
+#include "stdlib/strided/base/min_view_buffer_index.h"
 
 /**
 * Scales a double-precision complex floating-point vector by a double-precision complex floating-point constant.
