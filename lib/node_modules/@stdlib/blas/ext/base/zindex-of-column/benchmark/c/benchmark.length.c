@@ -205,14 +205,14 @@ int main( void ) {
 		iter = ITERATIONS / pow( 10, i-1 );
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
-			printf( "# c::native::%s:square_matrix:order=column-major,size=%d\n", NAME, N*N );
+			printf( "# c::%s::square_matrix:order=column-major,size=%d\n", NAME, N*N );
 			elapsed = benchmark1( iter, N );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );
 		}
 		for ( j = 0; j < REPEATS; j++ ) {
 			count += 1;
-			printf( "# c::native::%s:ndarray:square_matrix:order=column-major,size=%d\n", NAME, N*N );
+			printf( "# c::%s::square_matrix:ndarray:order=column-major,size=%d\n", NAME, N*N );
 			elapsed = benchmark2( iter, N );
 			print_results( iter, elapsed );
 			printf( "ok %d benchmark finished\n", count );

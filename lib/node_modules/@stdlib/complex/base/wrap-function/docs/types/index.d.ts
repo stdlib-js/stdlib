@@ -281,13 +281,7 @@ declare function wrap( fcn: Binary, nargs: 2, ctor: Constructor ): WrappedBinary
 * // ...
 *
 * var z = f( 3.0, 4.0, 5.0 );
-* // returns <Complex64>
-*
-* var re = realf( z );
-* // returns 12.0
-*
-* var im = imagf( z );
-* // returns 0.0
+* // returns <Complex64>[ 12.0, 0.0 ]
 */
 declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTernary;
 
@@ -321,13 +315,7 @@ declare function wrap( fcn: Ternary, nargs: 3, ctor: Constructor ): WrappedTerna
 * // ...
 *
 * var z = f( 3.0, 4.0, 5.0, 6.0 );
-* // returns <Complex64>
-*
-* var re = realf( z );
-* // returns 18.0
-*
-* var im = imagf( z );
-* // returns 0.0
+* // returns <Complex64>[ 18.0, 0.0 ]
 */
 declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQuaternary;
 
@@ -361,13 +349,7 @@ declare function wrap( fcn: Quaternary, nargs: 4, ctor: Constructor ): WrappedQu
 * // ...
 *
 * var z = f( 3.0, 4.0, 5.0, 6.0, 7.0 );
-* // returns <Complex64>
-*
-* var re = realf( z );
-* // returns 25.0
-*
-* var im = imagf( z );
-* // returns 0.0
+* // returns <Complex64>[ 25.0, 0.0 ]
 */
 declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuinary;
 
@@ -401,13 +383,7 @@ declare function wrap( fcn: Quinary, nargs: 5, ctor: Constructor ): WrappedQuina
 * // ...
 *
 * var z = f( 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 );
-* // returns <Complex64>
-*
-* var re = realf( z );
-* // returns 33.0
-*
-* var im = imagf( z );
-* // returns 0.0
+* // returns <Complex64>[ 33.0, 0.0 ]
 */
 declare function wrap( fcn: Nary, nargs: number, ctor: Constructor ): WrappedNary;
 

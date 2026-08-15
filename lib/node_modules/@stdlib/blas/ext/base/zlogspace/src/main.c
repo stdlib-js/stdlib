@@ -98,13 +98,15 @@ void API_SUFFIX(stdlib_strided_zlogspace_ndarray)( const CBLAS_INT N, const doub
 	double exp_im;
 	double scale;
 	CBLAS_INT ix;
+	CBLAS_INT M;
+	CBLAS_INT i;
 	double lnb;
 	double dre;
 	double dim;
 	double dc;
 	double ds;
-	double M;
-	double i;
+	double dM;
+	double di;
 
 	if ( N <= 0 ) {
 		return;
@@ -142,21 +144,24 @@ void API_SUFFIX(stdlib_strided_zlogspace_ndarray)( const CBLAS_INT N, const doub
 
 	// Calculate the complex increment:
 	if ( endpoint ) {
-		M = (double)( N - 1 );
+		M = N - 1;
 	} else {
-		M = (double)N;
+		M = N;
 	}
-	dre = ( stop_re - start_re ) / M;
-	dim = ( stop_im - start_im ) / M;
+	dM = (double)M;
+	dre = ( stop_re - start_re ) / dM;
+	dim = ( stop_im - start_im ) / dM;
 
 	// Generate logarithmically spaced values:
-	for ( i = 1.0; i < M; i += 1.0 ) {
-		exp_re = start_re + ( dre * i );
-		exp_im = start_im + ( dim * i );
+	di = 1.0;
+	for ( i = 1; i < M; i++ ) {
+		exp_re = start_re + ( dre * di );
+		exp_im = start_im + ( dim * di );
 		scale = stdlib_base_pow( base, exp_re );
 		stdlib_base_sincos( exp_im * lnb, &ds, &dc );
 		X[ ix ] = stdlib_complex128( scale * dc, scale * ds );
 		ix += strideX;
+		di += 1.0;
 	}
 	// Check whether to include the `base^stop` value:
 	if ( endpoint ) {

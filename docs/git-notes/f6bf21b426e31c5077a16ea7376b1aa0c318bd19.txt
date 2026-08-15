@@ -1,0 +1,20 @@
+---
+type: amend-message
+---
+feat: add `math/base/special/expf`
+
+PR-URL: https://github.com/stdlib-js/stdlib/pull/3318
+Co-authored-by: Athan Reines <kgryte@gmail.com>
+Reviewed-by: Athan Reines <kgryte@gmail.com>
+Reviewed-by: Karan Anand <anandkarancompsci@gmail.com>
+Reviewed-by: Gunj Joshi <gunjjoshi8372@gmail.com>
+Reviewed-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Co-authored-by: Gunj Joshi <gunjjoshi8372@gmail.com>
+Co-authored-by: Karan Anand <anandkarancompsci@gmail.com>
+Co-authored-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: Gunj Joshi <gunjjoshi8372@gmail.com>
+Signed-off-by: Vivek maurya <155618190+vivekmaurya001@users.noreply.github.com>
+Signed-off-by: Philipp Burckhardt <pburckhardt@outlook.com>
+Signed-off-by: Karan Anand <anandkarancompsci@gmail.com>
+Signed-off-by: Athan Reines <kgryte@gmail.com>
+Ref: https://github.com/stdlib-js/stdlib/issues/649
