@@ -1,0 +1,56 @@
+
+{{alias}}( N, r, strideR, offsetR, w, strideW, offsetW )
+    Computes the forward discrete Fourier transform (DFT) of a real-valued
+    sequence.
+
+    Before calling this function, one must first initialize the workspace array
+    using the corresponding initialization function with the same sequence
+    length and workspace layout.
+
+    This transform is unnormalized as a call to this function followed by a call
+    performing a backward transform will multiply the input array by `N`.
+
+    Parameters
+    ----------
+    N: integer
+        Length of the sequence to transform. The function is most efficient when
+        this value is a product of small prime numbers.
+
+    r: ArrayLikeObject<number>
+        Input array.
+
+    strideR: integer
+        Stride length for `r`.
+
+    offsetR: integer
+        Starting index for `r`.
+
+    w: ArrayLikeObject<number>
+        Workspace array containing pre-computed values.
+
+    strideW: integer
+        Stride length for `w`.
+
+    offsetW: integer
+        Starting index for `w`.
+
+    Returns
+    -------
+    r: ArrayLikeObject<number>
+        Input array.
+
+    Examples
+    --------
+    > var N = 4;
+    > var r = new {{alias:@stdlib/array/float64}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var w = new {{alias:@stdlib/array/float64}}( ( 2*N ) + 34 );
+    > {{alias:@stdlib/fft/base/fftpack/rffti}}( N, w, 1, 0 )
+    <Float64Array>
+    > var out = {{alias}}( N, r, 1, 0, w, 1, 0 )
+    <Float64Array>[ 10.0, -2.0, 2.0, -2.0 ]
+    > var bool = ( out === r )
+    true
+
+    See Also
+    --------
+
