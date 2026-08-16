@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray } from '@stdlib/types/ndarray';
+import { typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Tests whether at least one element in a one-dimensional ndarray is truthy.
@@ -44,7 +44,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var v = gany( [ x ] );
 * // returns true
 */
-declare function gany( arrays: [ ndarray ] ): boolean;
+declare function gany( arrays: [ typedndarray<unknown> ] ): boolean;
 
 
 // EXPORTS //

@@ -59,8 +59,11 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: true
 
-          # Limit clone depth to the most recent 100 commits:
-          fetch-depth: 100
+          # Fetch full history to find when SVGs were last modified:
+          fetch-depth: 0
+
+          # Use a blobless clone to speed up the checkout:
+          filter: blob:none
 
           # Specify whether to download Git-LFS files:
           lfs: false
@@ -171,7 +174,7 @@ jobs:
             git commit -m "docs: update Markdown equation elements"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
-        timeout-minutes: 15
+        timeout-minutes: 60
 
       # Delete remote PR branch to ensure a clean push when the branch has diverged:
       - name: 'Delete remote PR branch'
