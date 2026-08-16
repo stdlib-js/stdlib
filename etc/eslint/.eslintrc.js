@@ -62,7 +62,7 @@ eslint.rules = require( './rules' );
 * @memberof eslint
 * @type {Array}
 */
-eslint.overrides = require( './overrides/repl_namespace.js' );
+eslint.overrides = require( './overrides/source.js' );
 
 /**
 * Parser options.

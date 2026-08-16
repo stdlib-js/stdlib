@@ -21,7 +21,7 @@
 // MAIN //
 
 /**
-* ESLint overrides.
+* ESLint overrides for JavaScript source files.
 *
 * @namespace overrides
 */
