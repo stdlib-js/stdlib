@@ -44,7 +44,7 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var y = removeSingletonDimensions( x, false );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function removeSingletonDimensions( x: ndarray, writable: boolean ): ndarray;
+declare function removeSingletonDimensions<T extends ndarray = ndarray>( x: T, writable: boolean ): T;
 
 
 // EXPORTS //

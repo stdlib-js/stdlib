@@ -64,7 +64,7 @@ int main( void ) {
 	const struct ndarray *arrays[] = { x };
 
 	// Compute the sum:
-	float v = stdlib_blas_ssum( arrays );
+	float v = stdlib_blas_ext_ssum( arrays );
 
 	// Print the result:
 	printf( "sum: %f\n", v );

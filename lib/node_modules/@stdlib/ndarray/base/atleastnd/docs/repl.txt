@@ -5,7 +5,7 @@
 
     Parameters
     ----------
-    ndims: number
+    ndims: integer
         Minimum number of dimensions.
 
     arrays: ArrayLikeObject

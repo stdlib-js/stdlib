@@ -32,18 +32,18 @@ import replaceAfter = require( './index' );
 // The compiler throws an error if the function is provided arguments having invalid types...
 {
 	replaceAfter( true, 'd', 'foo', 0 ); // $ExpectError
-	replaceAfter( false, 'd' , 'foo', 0 ); // $ExpectError
-	replaceAfter( 3, 'd' , 'foo', 0 ); // $ExpectError
-	replaceAfter( [], 'd' , 'foo', 0 ); // $ExpectError
-	replaceAfter( {}, 'd' , 'foo', 0 ); // $ExpectError
+	replaceAfter( false, 'd', 'foo', 0 ); // $ExpectError
+	replaceAfter( 3, 'd', 'foo', 0 ); // $ExpectError
+	replaceAfter( [], 'd', 'foo', 0 ); // $ExpectError
+	replaceAfter( {}, 'd', 'foo', 0 ); // $ExpectError
 	replaceAfter( ( x: number ): number => x, 'd', 'foo', 0 ); // $ExpectError
 
 	replaceAfter( 'abc', true, 'foo', 0 ); // $ExpectError
 	replaceAfter( 'abc', false, 'foo', 0 ); // $ExpectError
-	replaceAfter( 'abc', 5 , 'foo', 0 ); // $ExpectError
+	replaceAfter( 'abc', 5, 'foo', 0 ); // $ExpectError
 	replaceAfter( 'abc', [], 'foo', 0 ); // $ExpectError
-	replaceAfter( 'abc', {} , 'foo', 0 ); // $ExpectError
-	replaceAfter( 'abc', ( x: number ): number => x , 'foo', 0 ); // $ExpectError
+	replaceAfter( 'abc', {}, 'foo', 0 ); // $ExpectError
+	replaceAfter( 'abc', ( x: number ): number => x, 'foo', 0 ); // $ExpectError
 
 	replaceAfter( 'abc', 'd', true, 0 ); // $ExpectError
 	replaceAfter( 'abc', 'd', false, 0 ); // $ExpectError

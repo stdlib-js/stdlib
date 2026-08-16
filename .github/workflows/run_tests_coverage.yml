@@ -92,7 +92,7 @@ jobs:
       # Install Node.js:
       - name: 'Install Node.js'
         # Pin action to full length commit SHA
-        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: '20' # 'lts/*'
         timeout-minutes: 5
@@ -100,7 +100,7 @@ jobs:
       # Cache dependencies:
       - name: 'Cache dependencies'
         # Pin action to full length commit SHA
-        uses: actions/cache@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         id: cache
         with:
           path: |
@@ -134,23 +134,27 @@ jobs:
           else
             files=$(git diff --diff-filter=AM --name-only ${{ github.event.before }} ${{ github.event.after }})
           fi
-          directories=$(for file in $files; do dirname $file; done | uniq | tr '\n' ' ' | sed 's/ $//')
+          directories=$(for file in $files; do dirname $file; done | sort -u | tr '\n' ' ' | sed 's/ $//')
           echo "directories=${directories}" >> $GITHUB_OUTPUT
 
       # Get list of changed directories from workflow dispatch event:
       - name: 'Get list of changed directories (from user input)'
         if: github.event_name == 'workflow_dispatch'
         id: changed-directories-user-input
+        env:
+          DIRECTORIES: ${{ github.event.inputs.directories }}
         run: |
-          echo "directories=${{ github.event.inputs.directories }}" >> $GITHUB_OUTPUT
+          echo "directories=${DIRECTORIES}" >> $GITHUB_OUTPUT
         timeout-minutes: 5
 
       # Exit early if non-package directories are changed:
       - name: 'Exit early if non-package directories are changed'
         id: check-changed
         if: github.event_name != 'workflow_dispatch'
+        env:
+          DIRECTORIES: ${{ steps.changed-directories.outputs.directories }}
         run: |
-          directories="${{ steps.changed-directories.outputs.directories }}"
+          directories="$DIRECTORIES"
           skip="false"
           for directory in $directories; do
             if [[ "$directory" != "lib/node_modules/@stdlib"* ]]; then
@@ -169,11 +173,13 @@ jobs:
           GITHUB_REPO: ${{ github.repository }}
           GITHUB_REF: ${{ github.ref }}
           COVERAGE_BASE_URL: 'https://coverage.stdlib.io'
+          DIRECTORIES_USER_INPUT: ${{ steps.changed-directories-user-input.outputs.directories }}
+          DIRECTORIES_CHANGED: ${{ steps.changed-directories.outputs.directories }}
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            directories="${{ steps.changed-directories-user-input.outputs.directories }}"
+            directories="$DIRECTORIES_USER_INPUT"
           else
-            directories="${{ steps.changed-directories.outputs.directories }}"
+            directories="$DIRECTORIES_CHANGED"
           fi
 
           . "$GITHUB_WORKSPACE/.github/workflows/scripts/run_tests_coverage/run" "$directories"
@@ -183,8 +189,10 @@ jobs:
       - name: 'Create final coverage report'
         id: create-report
         if: steps.check-changed.outputs.skip == 'false'
+        env:
+          TABLE: ${{ steps.extract-coverage.outputs.table }}
         run: |
-          table="${{ steps.extract-coverage.outputs.table }}"
+          table="$TABLE"
           if [ -z "$table" ]; then
             report="## Coverage Report\n\nNo coverage information available."
           else
@@ -202,7 +210,9 @@ jobs:
       - name: 'Post report as comment to commit'
         if: github.event_name == 'push' && steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
-        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          REPORT: ${{ steps.create-report.outputs.report }}
         with:
           github-token: ${{ secrets.STDLIB_BOT_PAT_REPO_WRITE }}
           script: |
@@ -210,7 +220,7 @@ jobs:
               'commit_sha': context.sha,
               'owner': context.repo.owner,
               'repo': context.repo.repo,
-              'body': '${{ steps.create-report.outputs.report }}'
+              'body': process.env.REPORT.replace( /\\n/g, '\n' )
             })
 
       # Checkout coverage repository:
@@ -228,8 +238,8 @@ jobs:
           # Specify whether to remove untracked files before checking out the repository:
           clean: false
 
-          # Limit clone depth to the most recent commit:
-          fetch-depth: 1
+          # Fetch extra history so `git pull --rebase` can find a common ancestor:
+          fetch-depth: 20
 
           # Token for accessing the repository:
           token: ${{ secrets.STDLIB_BOT_FGPAT_REPO_READ }}
@@ -263,7 +273,7 @@ jobs:
       - name: 'Import GPG key to sign commits'
         if: steps.check-changed.outputs.skip == 'false'
         # Pin action to full length commit SHA
-        uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
+        uses: crazy-max/ghaction-import-gpg@2dc316deee8e90f13e1a351ab510b4d5bc0c82cd # v7.0.0
         with:
           gpg_private_key: ${{ secrets.STDLIB_BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.STDLIB_BOT_GPG_PASSPHRASE }}
@@ -282,4 +292,22 @@ jobs:
           git config --local user.name "stdlib-bot"
           git add .
           git commit -m "Update artifacts" || exit 0
-          git push "https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git" main
+
+          REMOTE_URL="https://$USER_NAME:$REPO_GITHUB_TOKEN@github.com/stdlib-js/www-test-code-coverage.git"
+          MAX_ATTEMPTS=5
+          for i in $(seq 1 $MAX_ATTEMPTS); do
+            if git push "$REMOTE_URL" main; then
+              echo "Push succeeded on attempt $i."
+              break
+            fi
+            if [ "$i" -eq "$MAX_ATTEMPTS" ]; then
+              echo "Push failed after $MAX_ATTEMPTS attempts."
+              exit 1
+            fi
+            echo "Push failed on attempt $i. Pulling and retrying..."
+            git pull --rebase "$REMOTE_URL" main || {
+              echo "Rebase failed due to conflict. Falling back to merge..."
+              git rebase --abort
+              git pull --no-rebase "$REMOTE_URL" main
+            }
+          done

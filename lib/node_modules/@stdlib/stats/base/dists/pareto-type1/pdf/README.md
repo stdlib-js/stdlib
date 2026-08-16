@@ -153,6 +153,105 @@ logEachMap( 'x: %0.4f, α: %0.4f, β: %0.4f, f(x;α,β): %0.4f', x, alpha, beta,
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/pareto-type1/pdf.h"
+```
+
+#### stdlib_base_dists_pareto_type1_pdf( x, alpha, beta )
+
+Evaluates the probability density function (PDF) for a Pareto (Type I) distribution with shape parameter `alpha` and scale parameter `beta` at a value `x`.
+
+```c
+double out = stdlib_base_dists_pareto_type1_pdf( 4.0, 1.0, 1.0 );
+// returns ~0.063
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+-   **alpha**: `[in] double` shape parameter.
+-   **beta**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_pareto_type1_pdf( const double x, const double alpha, const double beta );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/pareto-type1/pdf.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double alpha;
+    double beta;
+    double x;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        alpha = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 5.0 );
+        beta = random_uniform( 1.0, 5.0 );
+        x = random_uniform( beta, beta + 10.0 );
+        y = stdlib_base_dists_pareto_type1_pdf( x, alpha, beta );
+        printf( "x: %lf, α: %lf, β: %lf, f(x;α,β): %lf\n", x, alpha, beta, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">

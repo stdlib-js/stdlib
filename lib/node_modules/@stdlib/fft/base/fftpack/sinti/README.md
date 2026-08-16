@@ -1,0 +1,175 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2026 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# sinti
+
+> Initialize a workspace array for performing a sine transform.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- Package usage documentation. -->
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var sinti = require( '@stdlib/fft/base/fftpack/sinti' );
+```
+
+#### sinti( N, workspace, strideW, offsetW )
+
+Initializes a workspace array for performing a sine transform.
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+var floor = require( '@stdlib/math/base/special/floor' );
+
+var N = 7;
+var workspace = new Float64Array( floor( 2.5*N ) + 34 );
+
+var out = sinti( N, workspace, 1, 0 );
+// returns <Float64Array>
+
+var bool = ( out === workspace );
+// returns true
+
+var sineTable = workspace.slice( 0, floor( N/2 ) );
+// returns <Float64Array>[ ~0.765, ~1.414, ~1.848 ]
+
+var twiddleFactors = workspace.slice( floor( 3*N/2 ) + 1, floor( 5*N/2 ) + 2 );
+// returns <Float64Array>[ ~0.707, ~0.707, 0, 0, 0, 0, 0, 0 ]
+
+var factors = workspace.slice( floor( 5*N/2 ) + 2, floor( 5*N/2 ) + 2 + 4 );
+// returns <Float64Array>[ 8, 2, 2, 4 ]
+```
+
+The function accepts the following arguments:
+
+-   **N**: length of the sequence to transform.
+-   **workspace**: workspace array.
+-   **strideW**: stride length for `workspace`.
+-   **offsetW**: starting index for `workspace`.
+
+</section>
+
+<!-- /.usage -->
+
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+## Notes
+
+-   The workspace array is divided into four sections:
+
+    ```text
+          size = N/2          N+1                N+1         2+ceil(log2(N+1)/2)
+               ↓               ↓                  ↓                  ↓
+        | sine table | scratch/workspace | twiddle factors | radix factor table |
+               ↑               ↑                  ↑                  ↑
+    i = 0     ...    N/2      ...     (3N/2)+1   ...     (5N/2)+2   ...
+    ```
+
+    -   **sine table**: a table of precomputed sine coefficients used by sine transforms.
+    -   **scratch/workspace**: used as a scratch space when performing transforms. This section is not updated during initialization.
+    -   **twiddle factors**: a table of reusable complex-exponential constants stored as cosine/sine pairs.
+    -   **radix factor table**: a table containing the sequence length `N+1`, the number of factors into which `N+1` was decomposed, and the individual integer radix factors.
+
+-   In general, a workspace array should have `2.5N + 34` indexed elements (as `log2(N+1)/2 ≤ 32` for all `2^64`). During initialization, only the sections for storing the sine coefficients, twiddle factors, and the factorization of `N+1` are updated.
+
+-   The radix factor table is comprised as follows:
+
+    ```text
+    | sequence_length | number_of_factors | integer_factors |
+    ```
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var Float64Array = require( '@stdlib/array/float64' );
+var zeroTo = require( '@stdlib/array/zero-to' );
+var logEach = require( '@stdlib/console/log-each' );
+var floor = require( '@stdlib/math/base/special/floor' );
+var sinti = require( '@stdlib/fft/base/fftpack/sinti' );
+
+var N = 7;
+var workspace = new Float64Array( floor( 2.5*N ) + 34 );
+
+sinti( N, workspace, 1, 0 );
+console.log( 'Sequence length: %d', N );
+
+console.log( 'Sine table:' );
+var idx = zeroTo( floor( N/2 ), 'generic' );
+logEach( '  workspace[ %d ] = %0.4f', idx, workspace.slice( 0, floor( N/2 ) ) );
+
+console.log( 'Twiddle factors:' );
+idx = zeroTo( N+1, 'generic' );
+logEach( '  workspace[ %d ] = %0.4f', idx, workspace.slice( floor( 3*N/2 ) + 1, floor( 5*N/2 ) + 2 ) );
+
+console.log( 'Factorization:' );
+var nf = workspace[ floor( 5*N/2 ) + 3 ];
+
+console.log( '  number of factors: %d', nf );
+idx = zeroTo( nf, 'generic' );
+logEach( '  factor[ %d ]: %d', idx, workspace.slice( floor( 5*N/2 ) + 4, floor( 5*N/2 ) + 4 + nf ) );
+```
+
+</section>
+
+<!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+</section>
+
+<!-- /.links -->

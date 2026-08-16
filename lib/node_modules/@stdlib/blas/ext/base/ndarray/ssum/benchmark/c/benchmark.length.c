@@ -137,7 +137,7 @@ static double benchmark( int iterations, int len ) {
 	v = 0.0f;
 	t = tic();
 	for ( i = 0; i < iterations; i++ ) {
-		v = stdlib_blas_ssum( arrays );
+		v = stdlib_blas_ext_ssum( arrays );
 		if ( v != v ) {
 			printf( "should not return NaN\n" );
 			break;

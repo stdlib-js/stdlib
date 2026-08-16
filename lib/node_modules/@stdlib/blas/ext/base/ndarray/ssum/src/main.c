@@ -27,7 +27,7 @@
 * @param arrays    list containing an input ndarray
 * @return          sum
 */
-float stdlib_blas_ssum( const struct ndarray *arrays[] ) {
+float stdlib_blas_ext_ssum( const struct ndarray *arrays[] ) {
 	const struct ndarray *x = arrays[ 0 ];
 	return API_SUFFIX(stdlib_strided_ssum_ndarray)( stdlib_ndarray_dimension( x, 0 ), (const float *)stdlib_ndarray_data( x ), stdlib_ndarray_stride_elements( x, 0 ), stdlib_ndarray_offset_elements( x ) );
 }

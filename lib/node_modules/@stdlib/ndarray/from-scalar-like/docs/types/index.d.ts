@@ -222,7 +222,7 @@ declare function scalar2ndarrayLike( x: float64ndarray, value: number, options?:
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, 1.0, {
-*    'dtype': 'float64'
+*     'dtype': 'float64'
 * });
 * // returns <ndarray>[ 1.0 ]
 *
@@ -248,7 +248,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: number, options: Float64
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'float32'
+*     'dtype': 'float32'
 * });
 * // returns <ndarray>
 *
@@ -280,7 +280,7 @@ declare function scalar2ndarrayLike( x: float32ndarray, value: number, options?:
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, 1.0, {
-*    'dtype': 'float32'
+*     'dtype': 'float32'
 * });
 * // returns <ndarray>[ 1.0 ]
 *
@@ -306,7 +306,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: number, options: Float32
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'complex128'
+*     'dtype': 'complex128'
 * });
 * // returns <ndarray>
 *
@@ -338,7 +338,7 @@ declare function scalar2ndarrayLike( x: complex128ndarray, value: number | Compl
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, 1.0, {
-*    'dtype': 'complex128'
+*     'dtype': 'complex128'
 * });
 * // returns <ndarray>[ <Complex128>[ 1.0, 0.0 ] ]
 *
@@ -364,7 +364,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: number | ComplexLike, op
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'complex64'
+*     'dtype': 'complex64'
 * });
 * // returns <ndarray>
 *
@@ -396,7 +396,7 @@ declare function scalar2ndarrayLike( x: complex64ndarray, value: number | Comple
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, 1.0, {
-*    'dtype': 'complex64'
+*     'dtype': 'complex64'
 * });
 * // returns <ndarray>[ <Complex64>[ 1.0, 0.0 ] ]
 *
@@ -422,7 +422,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: number | ComplexLike, op
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'bool'
+*     'dtype': 'bool'
 * });
 * // returns <ndarray>
 *
@@ -454,7 +454,7 @@ declare function scalar2ndarrayLike( x: boolndarray, value: boolean, options?: B
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, true, {
-*    'dtype': 'bool'
+*     'dtype': 'bool'
 * });
 * // returns <ndarray>[ true ]
 *
@@ -480,7 +480,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: boolean, options: BoolOp
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'int32'
+*     'dtype': 'int32'
 * });
 * // returns <ndarray>
 *
@@ -512,7 +512,7 @@ declare function scalar2ndarrayLike( x: int32ndarray, value: number, options?: B
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, 1.0, {
-*    'dtype': 'int32'
+*     'dtype': 'int32'
 * });
 * // returns <ndarray>[ 1 ]
 *
@@ -538,7 +538,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: number, options: Int32Op
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'int16'
+*     'dtype': 'int16'
 * });
 * // returns <ndarray>
 *
@@ -570,7 +570,7 @@ declare function scalar2ndarrayLike( x: int16ndarray, value: number, options?: B
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, 1.0, {
-*    'dtype': 'int16'
+*     'dtype': 'int16'
 * });
 * // returns <ndarray>[ 1 ]
 *
@@ -596,7 +596,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: number, options: Int16Op
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'int8'
+*     'dtype': 'int8'
 * });
 * // returns <ndarray>
 *
@@ -628,7 +628,7 @@ declare function scalar2ndarrayLike( x: int8ndarray, value: number, options?: Ba
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, 1.0, {
-*    'dtype': 'int8'
+*     'dtype': 'int8'
 * });
 * // returns <ndarray>[ 1 ]
 *
@@ -654,7 +654,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: number, options: Int8Opt
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'uint32'
+*     'dtype': 'uint32'
 * });
 * // returns <ndarray>
 *
@@ -686,7 +686,7 @@ declare function scalar2ndarrayLike( x: uint32ndarray, value: number, options?: 
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, 1.0, {
-*    'dtype': 'uint32'
+*     'dtype': 'uint32'
 * });
 * // returns <ndarray>[ 1 ]
 *
@@ -712,7 +712,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: number, options: Uint32O
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'uint16'
+*     'dtype': 'uint16'
 * });
 * // returns <ndarray>
 *
@@ -744,7 +744,7 @@ declare function scalar2ndarrayLike( x: uint16ndarray, value: number, options?: 
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, 1.0, {
-*    'dtype': 'uint16'
+*     'dtype': 'uint16'
 * });
 * // returns <ndarray>[ 1 ]
 *
@@ -770,7 +770,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: number, options: Uint16O
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'uint8'
+*     'dtype': 'uint8'
 * });
 * // returns <ndarray>
 *
@@ -802,7 +802,7 @@ declare function scalar2ndarrayLike( x: uint8ndarray, value: number, options?: B
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, 1.0, {
-*    'dtype': 'uint8'
+*     'dtype': 'uint8'
 * });
 * // returns <ndarray>[ 1 ]
 *
@@ -828,7 +828,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: number, options: Uint8Op
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'uint8c'
+*     'dtype': 'uint8c'
 * });
 * // returns <ndarray>
 *
@@ -860,7 +860,7 @@ declare function scalar2ndarrayLike( x: uint8cndarray, value: number, options?: 
 * // returns <ndarray>
 *
 * var out = scalar2ndarrayLike( x, 1.0, {
-*    'dtype': 'uint8c'
+*     'dtype': 'uint8c'
 * });
 * // returns <ndarray>[ 1 ]
 *
@@ -886,7 +886,7 @@ declare function scalar2ndarrayLike( x: ndarray, value: number, options: Uint8cO
 * var empty = require( '@stdlib/ndarray/empty' );
 *
 * var x = empty( [ 2 ], {
-*    'dtype': 'generic'
+*     'dtype': 'generic'
 * });
 * // returns <ndarray>
 *

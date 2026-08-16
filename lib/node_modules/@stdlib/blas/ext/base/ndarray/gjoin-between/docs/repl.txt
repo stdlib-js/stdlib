@@ -1,0 +1,38 @@
+
+{{alias}}( arrays )
+    Returns a string by joining one-dimensional ndarray elements using a
+    specified separator for each pair of consecutive elements.
+
+    If the input ndarray is empty, the function returns the prefix and suffix
+    joined together.
+
+    If an array element is either `null` or `undefined`, the function serializes
+    the element as an empty string.
+
+    Parameters
+    ----------
+    arrays: ArrayLikeObject<ndarray>
+        Array-like object containing the following ndarrays:
+
+        - a one-dimensional input ndarray.
+        - a zero-dimensional ndarray containing a prefix string.
+        - a zero-dimensional ndarray containing a suffix string.
+        - a one-dimensional ndarray containing separator strings.
+
+    Returns
+    -------
+    out: string
+        Joined string.
+
+    Examples
+    --------
+    > var opts = { 'dtype': 'generic' };
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1, 2, 3, 4 ], opts.dtype );
+    > var p = {{alias:@stdlib/ndarray/from-scalar}}( '', opts );
+    > var s = {{alias:@stdlib/ndarray/from-scalar}}( '', opts );
+    > var sep = {{alias:@stdlib/ndarray/vector/ctor}}( [ ',', '-', '|' ], opts.dtype );
+    > {{alias}}( [ x, p, s, sep ] )
+    '1,2-3|4'
+
+    See Also
+    --------

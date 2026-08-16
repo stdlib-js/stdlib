@@ -31,7 +31,7 @@ extern "C" {
 /**
 * Computes the sum of all elements in a one-dimensional single-precision floating-point ndarray.
 */
-float stdlib_blas_ssum( const struct ndarray *arrays[] );
+float stdlib_blas_ext_ssum( const struct ndarray *arrays[] );
 
 #ifdef __cplusplus
 }
