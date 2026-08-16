@@ -56,11 +56,9 @@ var dasum = require( '@stdlib/blas/base/ndarray/dasum' );
 Computes the sum of absolute values for all elements in a one-dimensional double-precision floating-point ndarray.
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Float64Vector = require( '@stdlib/ndarray/vector/float64' );
 
-var xbuf = new Float64Array( [ 1.0, -2.0, 3.0, -4.0, 5.0 ] );
-var x = new ndarray( 'float64', xbuf, [ 5 ], [ 1 ], 0, 'row-major' );
+var x = new Float64Vector( [ 1.0, -2.0, 3.0, -4.0, 5.0 ] );
 
 var y = dasum( [ x ] );
 // returns 15.0
@@ -87,8 +85,7 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var dasum = require( '@stdlib/blas/base/ndarray/dasum' );
 
@@ -96,8 +93,7 @@ var opts = {
     'dtype': 'float64'
 };
 
-var xbuf = discreteUniform( 10, -500, 500, opts );
-var x = new ndarray( opts.dtype, xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = discreteUniform( [ 10 ], -500, 500, opts );
 console.log( ndarray2array( x ) );
 
 var out = dasum( [ x ] );

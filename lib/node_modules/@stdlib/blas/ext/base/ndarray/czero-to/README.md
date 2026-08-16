@@ -41,11 +41,9 @@ var czeroTo = require( '@stdlib/blas/ext/base/ndarray/czero-to' );
 Fills a one-dimensional single-precision complex floating-point ndarray with linearly spaced numeric elements which increment by `1` starting from zero.
 
 ```javascript
-var Complex64Array = require( '@stdlib/array/complex64' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
 
-var xbuf = new Complex64Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-var x = new ndarray( 'complex64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+var x = new Complex64Vector( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
 
 var out = czeroTo( [ x ] );
 // returns <ndarray>[ <Complex64>[ 0.0, 0.0 ], <Complex64>[ 1.0, 0.0 ], <Complex64>[ 2.0, 0.0 ], <Complex64>[ 3.0, 0.0 ] ]
@@ -76,13 +74,11 @@ The function has the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var zeros = require( '@stdlib/array/zeros' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var Complex64Vector = require( '@stdlib/ndarray/vector/complex64' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var czeroTo = require( '@stdlib/blas/ext/base/ndarray/czero-to' );
 
-var xbuf = zeros( 10, 'complex64' );
-var x = new ndarray( 'complex64', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
+var x = new Complex64Vector( 10 );
 console.log( ndarray2array( x ) );
 
 czeroTo( [ x ] );

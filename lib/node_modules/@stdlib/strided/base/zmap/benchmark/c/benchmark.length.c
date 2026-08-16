@@ -106,12 +106,14 @@ static double complex identity( const double complex x ) {
 * @return             elapsed time in seconds
 */
 static double benchmark( int iterations, int len ) {
-	double complex x[ len ];
-	double complex y[ len ];
+	double complex *x;
+	double complex *y;
 	double elapsed;
 	double t;
 	int i;
 
+	x = (double complex *)malloc( len * sizeof( double complex ) );
+	y = (double complex *)malloc( len * sizeof( double complex ) );
 	for ( i = 0; i < len; i++ ) {
 		x[ i ] = ( ( rand_double()*200.0 ) - 100.0 ) + ( ( rand_double()*200.0 ) - 100.0 )*I;
 		y[ i ] = 0.0 + 0.0*I;
@@ -129,6 +131,8 @@ static double benchmark( int iterations, int len ) {
 	if ( y[ i%len ] != y[ i%len ] ) {
 		printf( "should not return NaN\n" );
 	}
+	free( x );
+	free( y );
 	return elapsed;
 }
 

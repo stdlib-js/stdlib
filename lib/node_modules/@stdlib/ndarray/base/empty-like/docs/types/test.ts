@@ -43,7 +43,7 @@ import emptyLike = require( './index' );
 	emptyLike( zeros( 'generic', sh, ord ) ); // $ExpectType typedndarray<number>
 }
 
-// The compiler throws an error if the function is provided a first argument which is not an ndarray having a recognized/supported data type...
+// The compiler throws an error if the function is provided a first argument which is not an ndarray...
 {
 	emptyLike( '10' ); // $ExpectError
 	emptyLike( 10 ); // $ExpectError

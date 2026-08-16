@@ -26,18 +26,11 @@
 
     Examples
     --------
-    > var xbuf = [ 1, 2, 3, 4 ];
-    > var dt = 'generic';
-    > var sh = [ xbuf.length ];
-    > var sx = [ 1 ];
-    > var ox = 0;
-    > var ord = 'row-major';
-    > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, xbuf, sh, sx, ox, ord );
-    > var p = {{alias:@stdlib/ndarray/from-scalar}}( '', { 'dtype': dt } );
-    > var s = {{alias:@stdlib/ndarray/from-scalar}}( '', { 'dtype': dt } );
-    > var sbuf = [ ',', '-', '|' ];
-    > var sh2 = [ sbuf.length ];
-    > var sep = new {{alias:@stdlib/ndarray/ctor}}( dt, sbuf, sh2, sx, ox, ord );
+    > var opts = { 'dtype': 'generic' };
+    > var x = {{alias:@stdlib/ndarray/vector/ctor}}( [ 1, 2, 3, 4 ], opts.dtype );
+    > var p = {{alias:@stdlib/ndarray/from-scalar}}( '', opts );
+    > var s = {{alias:@stdlib/ndarray/from-scalar}}( '', opts );
+    > var sep = {{alias:@stdlib/ndarray/vector/ctor}}( [ ',', '-', '|' ], opts.dtype );
     > {{alias}}( [ x, p, s, sep ] )
     '1,2-3|4'
 
