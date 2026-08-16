@@ -31,8 +31,8 @@
     end: ndarray|integer (optional)
         Source end index (exclusive). May be either an integer or an ndarray
         having an integer index or "generic" data type and following the same
-        broadcasting semantics as the `target` argument. Default: `N + 1` where
-        `N` is the number of elements along the operation dimension.
+        broadcasting semantics as the `target` argument. Default: `N` where `N`
+        is the number of elements along the operation dimension.
 
     options: Object (optional)
         Function options.
