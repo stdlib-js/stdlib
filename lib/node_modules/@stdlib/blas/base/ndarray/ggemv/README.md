@@ -40,8 +40,6 @@ var ggemv = require( '@stdlib/blas/base/ndarray/ggemv' );
 
 Performs one of the matrix-vector operations `y = alpha*A*x + beta*y` or `y = alpha*A^T*x + beta*y`, where `alpha` and `beta` are scalars, `x` and `y` are one-dimensional ndarrays, and `A` is an `M` by `N` matrix.
 
-<!-- eslint-disable max-len -->
-
 ```javascript
 var matrix = require( '@stdlib/ndarray/matrix/ctor' );
 var vector = require( '@stdlib/ndarray/vector/ctor' );
@@ -93,8 +91,6 @@ The function has the following parameters:
 <section class="examples">
 
 ## Examples
-
-<!-- eslint-disable max-len -->
 
 <!-- eslint no-undef: "error" -->
 

@@ -35,6 +35,6 @@ int main( void ) {
 		mu = random_uniform( -5.0, 5.0 );
 		b = random_uniform( 0.0, 20.0 );
 		y = stdlib_base_dists_laplace_entropy( mu, b );
-		printf( "µ: %lf, b: %lf, h(X;µ,b): %lf\n", mu, b, y );
+		printf( "μ: %lf, b: %lf, h(X;μ,b): %lf\n", mu, b, y );
 	}
 }

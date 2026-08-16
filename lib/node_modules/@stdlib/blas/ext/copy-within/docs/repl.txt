@@ -1,0 +1,61 @@
+
+{{alias}}( x, target, start[, end][, options] )
+    Performs an in-place copy of elements within an ndarray along an ndarray
+    dimension.
+
+    When a `target`, `start`, and/or `end` index is negative, the respective
+    index is determined relative to the last indexed element, with out-of-bounds
+    indices clamped to index bounds.
+
+    The function copies elements within an input ndarray in-place and thus
+    mutates an input ndarray.
+
+    Parameters
+    ----------
+    x: ndarray
+        Input array.
+
+    target: ndarray|integer
+        Target index. May be either an integer or an ndarray having an integer
+        index or "generic" data type. If provided an ndarray, the value must
+        have a shape which is broadcast compatible with the complement of the
+        shape defined by `options.dim`. For example, given the input shape
+        `[2, 3, 4]` and `options.dim=0`, an ndarray target index must have a
+        shape which is broadcast compatible with the shape `[3, 4]`.
+
+    start: ndarray|integer
+        Source start index (inclusive). May be either an integer or an ndarray
+        having an integer index or "generic" data type and following the same
+        broadcasting semantics as the `target` argument.
+
+    end: ndarray|integer (optional)
+        Source end index (exclusive). May be either an integer or an ndarray
+        having an integer index or "generic" data type and following the same
+        broadcasting semantics as the `target` argument. Default: `N + 1` where
+        `N` is the number of elements along the operation dimension.
+
+    options: Object (optional)
+        Function options.
+
+    options.dim: integer (optional)
+        Dimension over which to perform operation. If provided a negative
+        integer, the dimension along which to perform the operation is
+        determined by counting backward from the last dimension (where `-1`
+        refers to the last dimension). Default: `-1`.
+
+    Returns
+    -------
+    out: ndarray
+        Input array.
+
+    Examples
+    --------
+    > var x = {{alias:@stdlib/ndarray/array}}( [ 1.0, 2.0, 3.0, 4.0 ] );
+    > var y = {{alias}}( x, 2, 0 )
+    <ndarray>[ 1.0, 2.0, 1.0, 2.0 ]
+    > var bool = ( x === y )
+    true
+
+    See Also
+    --------
+

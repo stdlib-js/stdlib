@@ -18,8 +18,6 @@
 
 /* eslint-disable space-in-parens */
 
-/// <reference types="@stdlib/types"/>
-
 import zeros = require( '@stdlib/ndarray/zeros' );
 import empty = require( '@stdlib/ndarray/empty' );
 import nrm2 = require( './index' );

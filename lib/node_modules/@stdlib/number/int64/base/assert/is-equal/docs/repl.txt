@@ -1,0 +1,27 @@
+
+{{alias}}( a, b )
+    Tests whether two 64-bit signed integers are equal.
+
+    Parameters
+    ----------
+    a: Int64
+        First 64-bit signed integer.
+
+    b: Int64
+        Second 64-bit signed integer.
+
+    Returns
+    -------
+    out: boolean
+        Result.
+
+    Examples
+    --------
+    > var a = new {{alias:@stdlib/number/int64/ctor}}( 1234 );
+    > var b = {{alias:@stdlib/number/int64/ctor}}.of( 0, 1234 );
+    > var v = {{alias}}( a, b )
+    true
+
+    See Also
+    --------
+

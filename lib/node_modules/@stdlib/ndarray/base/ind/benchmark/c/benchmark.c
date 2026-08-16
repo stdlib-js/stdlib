@@ -210,28 +210,28 @@ int main( void ) {
 	print_version();
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=error\n", NAME );
+		printf( "# c::%s:mode=error\n", NAME );
 		elapsed = benchmark1();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=clamp\n", NAME );
+		printf( "# c::%s:mode=clamp\n", NAME );
 		elapsed = benchmark2();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=wrap\n", NAME );
+		printf( "# c::%s:mode=wrap\n", NAME );
 		elapsed = benchmark3();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
 	}
 	for ( i = 0; i < REPEATS; i++ ) {
 		count += 1;
-		printf( "# c::native::%s:mode=normalize\n", NAME );
+		printf( "# c::%s:mode=normalize\n", NAME );
 		elapsed = benchmark4();
 		print_results( elapsed );
 		printf( "ok %d benchmark finished\n", count );
