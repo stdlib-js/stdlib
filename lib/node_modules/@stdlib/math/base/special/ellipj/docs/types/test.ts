@@ -24,23 +24,34 @@ import ellipj = require( './index' );
 
 // The function returns an array of numbers...
 {
-	ellipj( 8 ); // $ExpectType number[]
-	ellipj( 8, 2 ); // $ExpectType number[]
+	ellipj( 8, 2 ); // $ExpectType [number, number, number, number]
 }
 
-// The compiler throws an error if the function is provided a value other than a number...
+// The compiler throws an error if the function is provided a first argument which is not a number...
 {
-	ellipj( true ); // $ExpectError
-	ellipj( false ); // $ExpectError
-	ellipj( null ); // $ExpectError
-	ellipj( undefined ); // $ExpectError
-	ellipj( '5' ); // $ExpectError
-	ellipj( [] ); // $ExpectError
-	ellipj( {} ); // $ExpectError
-	ellipj( ( x: number ): number => x ); // $ExpectError
+	ellipj( true, 2 ); // $ExpectError
+	ellipj( false, 2 ); // $ExpectError
+	ellipj( null, 2 ); // $ExpectError
+	ellipj( undefined, 2 ); // $ExpectError
+	ellipj( '5', 2 ); // $ExpectError
+	ellipj( [], 2 ); // $ExpectError
+	ellipj( {}, 2 ); // $ExpectError
+	ellipj( ( x: number ): number => x, 2 ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a second argument which is not a number...
+{
+	ellipj( 8, true ); // $ExpectError
+	ellipj( 8, false ); // $ExpectError
+	ellipj( 8, null ); // $ExpectError
+	ellipj( 8, '5' ); // $ExpectError
+	ellipj( 8, [] ); // $ExpectError
+	ellipj( 8, {} ); // $ExpectError
+	ellipj( 8, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided insufficient arguments...
 {
 	ellipj(); // $ExpectError
+	ellipj( 8 ); // $ExpectError
 }

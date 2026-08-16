@@ -37,7 +37,7 @@ interface Options {
 	alternative?: 'two-sided' | 'less' | 'greater';
 
 	/**
-	* Boolean indicating if the input array is already in sorted orde (default: false).
+	* Boolean indicating if the input array is already in sorted order (default: false).
 	*/
 	sorted?: boolean;
 }

@@ -23,7 +23,7 @@
 #include <time.h>
 #include <sys/time.h>
 
-#define NAME "dindexof"
+#define NAME "dindex_of"
 #define ITERATIONS 10000000
 #define REPEATS 3
 #define MIN 1

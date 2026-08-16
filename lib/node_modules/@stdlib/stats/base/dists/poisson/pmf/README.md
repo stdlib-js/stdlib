@@ -55,7 +55,7 @@ var pmf = require( '@stdlib/stats/base/dists/poisson/pmf' );
 
 #### pmf( x, lambda )
 
-Evaluates the [probability mass function][pmf] (PMF) of a [Poisson][poisson-distribution] distribution with mean parameter `lambda` at value `x`.
+Evaluates the [probability mass function][pmf] (PMF) of a [Poisson][poisson-distribution] distribution with mean parameter `lambda`.
 
 ```javascript
 var y = pmf( 4.0, 3.0 );
@@ -168,7 +168,7 @@ logEachMap( 'x: %d, λ: %0.4f, P(X=x;λ): %0.4f', x, lambda, pmf );
 
 #### stdlib_base_dists_poisson_pmf( x, lambda )
 
-Evaluates the [probability mass function][pmf] (PMF) of a [Poisson][poisson-distribution] distribution with mean parameter `lambda` at value `x`.
+Evaluates the [probability mass function][pmf] (PMF) of a [Poisson][poisson-distribution] distribution with mean parameter `lambda`.
 
 ```c
 double out = stdlib_base_dists_poisson_pmf( 4.0, 3.0 );

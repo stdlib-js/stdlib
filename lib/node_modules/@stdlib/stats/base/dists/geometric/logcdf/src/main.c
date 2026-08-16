@@ -25,7 +25,7 @@
 #include "stdlib/math/base/special/pow.h"
 
 /**
-* Evaluates the logarithm of the cumulative distribution function (CDF) for a geometric distribution with success probability `p` at a value `x`.
+* Evaluates the natural logarithm of the cumulative distribution function (CDF) for a geometric distribution with success probability `p` at a value `x`.
 *
 * @param x   input value
 * @param p   success probability

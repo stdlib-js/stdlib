@@ -30,8 +30,8 @@ import setProps = require( './index' );
 	};
 	const dtypes = [ 'float64', 'float64' ];
 
-	setProps( meta, dtypes, {} ); // $ExpectType any
-	setProps( meta, dtypes, {} ); // $ExpectType any
+	setProps( meta, dtypes, {} ); // $ExpectType {}
+	setProps( meta, dtypes, {} ); // $ExpectType {}
 }
 
 // The compiler throws an error if not provided a first argument which is a meta data object...
