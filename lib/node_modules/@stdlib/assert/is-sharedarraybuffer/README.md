@@ -114,7 +114,7 @@ bool = isSharedArrayBuffer( new Uint32Array( 10 ) );
 bool = isSharedArrayBuffer( new Float64Array( 10 ) );
 // returns false
 
-bool = isSharedArrayBuffer( new Array( 10 ) );
+bool = isSharedArrayBuffer( [ 1, 2, 3, 4 ] );
 // returns false
 
 bool = isSharedArrayBuffer( {} );
@@ -137,7 +137,7 @@ bool = isSharedArrayBuffer( null );
 ## See Also
 
 -   <span class="package-name">[`@stdlib/assert/is-arraybuffer`][@stdlib/assert/is-arraybuffer]</span><span class="delimiter">: </span><span class="description">test if a value is an ArrayBuffer.</span>
--   <span class="package-name">[`@stdlib/assert/is-typed-array`][@stdlib/assert/is-typed-array]</span><span class="delimiter">: </span><span class="description">test if a value is a typed array.</span>
+-   <span class="package-name">[`@stdlib/assert/is-typed-array`][@stdlib/assert/is-typed-array]</span><span class="delimiter">: </span><span class="description">test if a value is a built-in typed array.</span>
 
 </section>
 

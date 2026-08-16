@@ -34,7 +34,7 @@ import scalar2ndarray = require( './index' );
 	scalar2ndarray( 1.0, 'uint16', 'row-major' ); // $ExpectType uint16ndarray
 	scalar2ndarray( 1.0, 'uint8', 'row-major' ); // $ExpectType uint8ndarray
 	scalar2ndarray( 1.0, 'uint8c', 'row-major' ); // $ExpectType uint8cndarray
-	scalar2ndarray( 1.0, 'generic', 'row-major' ); // $ExpectType ndarray
+	scalar2ndarray( 1.0, 'generic', 'row-major' ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a second argument which is not a recognized/supported data type...

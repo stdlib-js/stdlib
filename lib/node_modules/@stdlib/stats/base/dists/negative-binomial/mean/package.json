@@ -60,6 +60,9 @@
     "dist",
     "parameter",
     "discrete",
+    "mean",
+    "average",
+    "avg",
     "negative",
     "binomial",
     "univariate"

@@ -131,6 +131,13 @@ eslint.rules[ 'stdlib/jsdoc-return-annotations-values' ] = 'off'; // FIXME: remo
 eslint.rules[ 'stdlib/no-empty-lines-between-requires' ] = 'off';
 
 /**
+* Allow requiring the package as a whole even though only a single property is used.
+*
+* @private
+*/
+eslint.rules[ 'stdlib/no-single-property-require' ] = 'off';
+
+/**
 * Allow use of undeclared variables, as variables may be defined in previous code blocks or be implied.
 *
 * @private
@@ -149,7 +156,7 @@ eslint.rules[ 'no-unused-vars' ] = 'off';
 *
 * @private
 */
-eslint.rules[ 'node/no-unpublished-require' ] = 'off';
+eslint.rules[ 'n/no-unpublished-require' ] = 'off';
 
 
 // EXPORTS //

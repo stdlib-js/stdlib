@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Evaluates the logarithm of the probability density function (PDF) for a Laplace distribution.
+* Evaluates the natural logarithm of the probability density function (PDF) for a Laplace distribution.
 *
 * @param x - input value
 * @returns evaluated logPDF
@@ -31,7 +31,7 @@ type Unary = ( x: number ) => number;
 */
 interface LogPDF {
 	/**
-	* Evaluates the logarithm of the probability density function (PDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
+	* Evaluates the natural logarithm of the probability density function (PDF) for a Laplace distribution with location parameter `mu` and scale parameter `b` at a value `x`.
 	*
 	* ## Notes
 	*
